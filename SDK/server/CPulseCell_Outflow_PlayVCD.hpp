@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_PlayVCD : public CS2::server::CPulseCell_Outflow_PlaySceneBase {
 		public:
-			public:
 			GlobalTypes::CUtlString m_vcdFilename; // 0xf0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlayVCD, m_vcdFilename) == 0xF0, "m_vcdFilename in CPulseCell_Outflow_PlayVCD should be at offset 0xF0");

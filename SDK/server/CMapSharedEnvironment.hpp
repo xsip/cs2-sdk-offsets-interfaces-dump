@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMapSharedEnvironment : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_targetMapName; // 0x4f0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};

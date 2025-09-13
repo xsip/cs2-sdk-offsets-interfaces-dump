@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CDynamicNavConnectionsVolume : public CS2::server::CTriggerMultiple {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszConnectionTarget; // 0x9e0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< server::DynamicVolumeDef_t > m_vecConnections; // 0x9e8 | Schema_Atomic | Size: 0x18
 			char  m_vecConnections[0x18]; // 0x9e8 | Schema_Atomic | Size: 0x18

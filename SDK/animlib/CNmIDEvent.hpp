@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmIDEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_ID; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_secondaryID; // 0x28 | Schema_Atomic | Size: 0x8
 		};

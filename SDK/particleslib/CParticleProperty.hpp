@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleProperty  {
 		public:
-			public:
 			S2_PAD(0x28);
 		};
 		static_assert(sizeof(CS2::particleslib::CParticleProperty) == 0x28, "CParticleProperty size should be 0x28");

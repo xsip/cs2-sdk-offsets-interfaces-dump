@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class CastSphereSATParams_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vRayStart; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vRayDelta; // 0xc | Schema_Atomic | Size: 0xc
 			float32 m_flRadius; // 0x18 | Schema_Builtin | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixDiffusorDesc_t  {
 		public:
-			public:
 			float32 m_flSize; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flComplexity; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flFeedback; // 0x8 | Schema_Builtin | Size: 0x4

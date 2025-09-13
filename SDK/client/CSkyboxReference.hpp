@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CSkyboxReference : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			GlobalTypes::WorldGroupId_t m_worldGroupId; // 0x5f8 | Schema_Atomic | Size: 0x4
 			// client::CHandle< client::C_SkyCamera > m_hSkyCamera; // 0x5fc | Schema_Atomic | Size: 0x4
 			char  m_hSkyCamera[0x4]; // 0x5fc | Schema_Atomic | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerGranulator : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			public:
 			float32 m_flGrainLength; // 0xb8 | Schema_Builtin | Size: 0x4
 			float32 m_flGrainCrossfadeAmount; // 0xbc | Schema_Builtin | Size: 0x4
 			float32 m_flStartJitter; // 0xc0 | Schema_Builtin | Size: 0x4

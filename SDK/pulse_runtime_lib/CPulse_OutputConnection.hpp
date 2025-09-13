@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_OutputConnection  {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_SourceOutput; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t m_TargetEntity; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t m_TargetInput; // 0x20 | Schema_Atomic | Size: 0x10

@@ -19,7 +19,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class COrientationWarpUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x4);
 			animgraphlib::OrientationWarpMode_t m_eMode; // 0x74 | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::CAnimParamHandle m_hTargetParam; // 0x78 | Schema_DeclaredClass | Size: 0x2

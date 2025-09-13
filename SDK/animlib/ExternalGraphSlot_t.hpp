@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class ExternalGraphSlot_t  {
 		public:
-			public:
 			int16_t m_nNodeIdx; // 0x0 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);
 			GlobalTypes::CGlobalSymbol m_slotID; // 0x8 | Schema_Atomic | Size: 0x8

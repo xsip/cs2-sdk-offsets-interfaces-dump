@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropFilter_SurfaceAngle : public CS2::smartprops::CSmartPropFilter {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeFloat m_flSurfaceSlopeMin; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flSurfaceSlopeMax; // 0x90 | Schema_Atomic | Size: 0x40
 		};

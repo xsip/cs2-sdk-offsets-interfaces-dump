@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LocalAccelerationForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			int32_t m_nCP; // 0x1d0 | Schema_Builtin | Size: 0x4
 			int32_t m_nScaleCP; // 0x1d4 | Schema_Builtin | Size: 0x4
 			particleslib::CParticleCollectionVecInput m_vecAccel; // 0x1d8 | Schema_DeclaredClass | Size: 0x678

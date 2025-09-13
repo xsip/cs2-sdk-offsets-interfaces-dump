@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class AggregateVertexAlbedoStreamOnDiskData_t  {
 		public:
-			public:
 			GlobalTypes::CUtlBinaryBlock m_BufferData; // 0x0 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t, m_BufferData) == 0x0, "m_BufferData in AggregateVertexAlbedoStreamOnDiskData_t should be at offset 0x0");

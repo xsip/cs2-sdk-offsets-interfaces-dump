@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ControlpointLight : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			float32 m_flScale; // 0x1c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x48c);
 			int32_t m_nControlPoint1; // 0x650 | Schema_Builtin | Size: 0x4

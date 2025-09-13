@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapTransformOrientationToRotations : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
 			GlobalTypes::Vector m_vecRotation; // 0x230 | Schema_Atomic | Size: 0xc
 			bool m_bUseQuat; // 0x23c | Schema_Builtin | Size: 0x1

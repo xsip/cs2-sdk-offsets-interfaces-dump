@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class CBaseTrailRenderer : public CS2::particles::CBaseRendererSource2 {
 		public:
-			public:
 			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x2c18 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nOrientationControlPoint; // 0x2c1c | Schema_Builtin | Size: 0x4
 			float32 m_flMinSize; // 0x2c20 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_Group : public CS2::smartprops::CSmartPropElement {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< CSmartPropElement >* m_Children; // 0x88 | Schema_Atomic | Size: 0x18
 			char  m_Children[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 		};

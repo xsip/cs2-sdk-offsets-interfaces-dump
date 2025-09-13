@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace mathlib_extended {
 		class CFuseProgram  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< uint8 > m_programBuffer; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_programBuffer[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< mathlib_extended::FuseVariableIndex_t > m_variablesRead; // 0x18 | Schema_Atomic | Size: 0x18

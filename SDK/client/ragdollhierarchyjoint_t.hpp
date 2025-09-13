@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class ragdollhierarchyjoint_t  {
 		public:
-			public:
 			int32_t parentIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t childIndex; // 0x4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding

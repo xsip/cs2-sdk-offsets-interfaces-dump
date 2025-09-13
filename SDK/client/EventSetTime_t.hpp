@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class EventSetTime_t  {
 		public:
-			public:
 			client::EngineLoopState_t m_LoopState; // 0x0 | Schema_DeclaredClass | Size: 0x28
 			int32_t m_nClientOutputFrames; // 0x28 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropRoot  {
 		public:
-			public:
 			int32_t m_nContentVersion; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CSmartPropAttributeInt m_nMaxDepth; // 0x8 | Schema_Atomic | Size: 0x40

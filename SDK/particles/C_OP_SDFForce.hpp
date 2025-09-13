@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SDFForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			float32 m_flForceScale; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

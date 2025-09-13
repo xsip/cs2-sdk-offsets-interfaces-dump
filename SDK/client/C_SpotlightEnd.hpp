@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SpotlightEnd : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			float32 m_flLightScale; // 0xec0 | Schema_Builtin | Size: 0x4
 			float32 m_Radius; // 0xec4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding

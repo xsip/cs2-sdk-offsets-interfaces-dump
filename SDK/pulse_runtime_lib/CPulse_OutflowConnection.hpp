@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_OutflowConnection  {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_SourceOutflowName; // 0x0 | Schema_Atomic | Size: 0x10
 			pulse_runtime_lib::PulseRuntimeChunkIndex_t m_nDestChunk; // 0x10 | Schema_DeclaredClass | Size: 0x4
 			int32_t m_nInstruction; // 0x14 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundEventParameter : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			GlobalTypes::CUtlSymbolLarge m_iszParamName; // 0x508 | Schema_Atomic | Size: 0x8
 			float32 m_flFloatValue; // 0x510 | Schema_Builtin | Size: 0x4

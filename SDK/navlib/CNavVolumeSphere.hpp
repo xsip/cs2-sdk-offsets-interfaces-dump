@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace navlib {
 		class CNavVolumeSphere : public CS2::navlib::CNavVolume {
 		public:
-			public:
 			GlobalTypes::Vector m_vCenter; // 0x70 | Schema_Atomic | Size: 0xc
 			float32 m_flRadius; // 0x7c | Schema_Builtin | Size: 0x4
 		};

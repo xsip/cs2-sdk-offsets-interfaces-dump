@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Inflow_Wait : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0x48 | Schema_DeclaredClass | Size: 0x48
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Wait, m_WakeResume) == 0x48, "m_WakeResume in CPulseCell_Inflow_Wait should be at offset 0x48");

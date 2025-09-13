@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBodyGroupSetting  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_BodyGroupName; // 0x0 | Schema_Atomic | Size: 0x8
 			int32_t m_nBodyGroupOption; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

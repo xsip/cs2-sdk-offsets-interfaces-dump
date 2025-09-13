@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CPointChildModifier : public CS2::client::C_PointEntity {
 		public:
-			public:
 			bool m_bOrphanInsteadOfDeletingChildrenOnRemove; // 0x5f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

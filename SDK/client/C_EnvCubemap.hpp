@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvCubemap : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x80);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hCubemapTexture; // 0x678 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hCubemapTexture[0x8]; // 0x678 | Schema_Atomic | Size: 0x8

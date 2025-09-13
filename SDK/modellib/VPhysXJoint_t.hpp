@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysXJoint_t  {
 		public:
-			public:
 			uint16_t m_nType; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t m_nBody1; // 0x2 | Schema_Builtin | Size: 0x2
 			uint16_t m_nBody2; // 0x4 | Schema_Builtin | Size: 0x2

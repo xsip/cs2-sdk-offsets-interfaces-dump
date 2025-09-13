@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseRegisterMap_t  {
 		public:
-			public:
 			GlobalTypes::KeyValues3 m_Inparams; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CKV3MemberNameSet m_InparamsWhichCanBeMoved; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::KeyValues3 m_Outparams; // 0x20 | Schema_Atomic | Size: 0x10

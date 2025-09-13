@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CBoneConstraintRbf : public CS2::modellib::CBoneConstraintBase {
 		public:
-			public:
 			// GlobalTypes::pair< CUtlString, uint32 > > m_inputBones; // 0x20 | Schema_Atomic | Size: 0x18
 			char  m_inputBones[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::pair< CUtlString, uint32 > > m_outputBones; // 0x38 | Schema_Atomic | Size: 0x18

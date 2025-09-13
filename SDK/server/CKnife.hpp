@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CKnife : public CS2::server::CCSWeaponBase {
 		public:
-			public:
 			bool m_bFirstAttack; // 0x1030 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

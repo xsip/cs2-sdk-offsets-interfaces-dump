@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class GameAmmoTypeInfo_t : public CS2::client::AmmoTypeInfo_t {
 		public:
-			public:
 			int32_t m_nBuySize; // 0x38 | Schema_Builtin | Size: 0x4
 			int32_t m_nCost; // 0x3c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x10); // End padding

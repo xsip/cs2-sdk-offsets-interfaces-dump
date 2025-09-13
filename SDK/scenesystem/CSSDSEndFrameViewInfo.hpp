@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class CSSDSEndFrameViewInfo  {
 		public:
-			public:
 			uint64_t m_nViewId; // 0x0 | Schema_Builtin | Size: 0x8
 			GlobalTypes::CUtlString m_ViewName; // 0x8 | Schema_Atomic | Size: 0x8
 		};

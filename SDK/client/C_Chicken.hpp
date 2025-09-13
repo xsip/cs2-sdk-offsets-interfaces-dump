@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_Chicken : public CS2::client::C_DynamicProp {
 		public:
-			public:
 			S2_PAD(0x8);
 			// client::CHandle< client::CBaseAnimGraph > m_hHolidayHatAddon; // 0x1438 | Schema_Atomic | Size: 0x4
 			char  m_hHolidayHatAddon[0x4]; // 0x1438 | Schema_Atomic | Size: 0x4

@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderSprites : public CS2::particles::CBaseRendererSource2 {
 		public:
-			public:
 			particleslib::CParticleCollectionRendererFloatInput m_nSequenceOverride; // 0x2c18 | Schema_DeclaredClass | Size: 0x160
 			bool m_bSequenceNumbersAreRawSequenceIndices; // 0x2d78 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

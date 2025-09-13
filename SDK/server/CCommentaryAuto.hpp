@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCommentaryAuto : public CS2::server::CBaseEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnCommentaryNewGame; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnCommentaryMidGame; // 0x518 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnCommentaryMultiplayerSpawn; // 0x540 | Schema_DeclaredClass | Size: 0x28

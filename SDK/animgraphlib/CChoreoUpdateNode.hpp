@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CChoreoUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::animgraphlib::CChoreoUpdateNode) == 0x78, "CChoreoUpdateNode size should be 0x78");

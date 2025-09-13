@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmBoneWeightList  {
 		public:
-			public:
 			GlobalTypes::CResourceName m_skeletonName; // 0x0 | Schema_Atomic | Size: 0xe0
 			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_boneIDs; // 0xe0 | Schema_Atomic | Size: 0x18
 			char  m_boneIDs[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18

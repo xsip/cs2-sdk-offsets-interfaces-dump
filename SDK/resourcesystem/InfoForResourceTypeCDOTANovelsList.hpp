@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCDOTANovelsList  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCDOTANovelsList) == 0x1, "InfoForResourceTypeCDOTANovelsList size should be 0x1");

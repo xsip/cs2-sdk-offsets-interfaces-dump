@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMultiplayer_Expresser : public CS2::server::CAI_ExpresserWithFollowup {
 		public:
-			public:
 			bool m_bAllowMultipleScenes; // 0xa0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

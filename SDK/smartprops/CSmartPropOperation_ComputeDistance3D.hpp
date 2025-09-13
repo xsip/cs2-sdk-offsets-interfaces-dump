@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_ComputeDistance3D : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			GlobalTypes::CUtlString m_OutputVariableName; // 0x50 | Schema_Atomic | Size: 0x8
 			smartprops::CSmartPropAttributeCoordinateSpace m_OutputCoordinateSpace; // 0x58 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_InputPositionA; // 0x98 | Schema_Atomic | Size: 0x40

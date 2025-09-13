@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_WaterServices : public CS2::client::CPlayer_WaterServices {
 		public:
-			public:
 			float32 m_flWaterJumpTime; // 0x40 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecWaterJumpVel; // 0x44 | Schema_Atomic | Size: 0xc
 			float32 m_flSwimSoundTime; // 0x50 | Schema_Builtin | Size: 0x4

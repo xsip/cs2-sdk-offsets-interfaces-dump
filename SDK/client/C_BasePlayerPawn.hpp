@@ -28,7 +28,6 @@ namespace CS2 {
 	namespace client {
 		class C_BasePlayerPawn : public CS2::client::C_BaseCombatCharacter {
 		public:
-			public:
 			client::CPlayer_WeaponServices* m_pWeaponServices; // 0x1400 | Schema_Ptr | Size: 0x8
 			client::CPlayer_ItemServices* m_pItemServices; // 0x1408 | Schema_Ptr | Size: 0x8
 			client::CPlayer_AutoaimServices* m_pAutoaimServices; // 0x1410 | Schema_Ptr | Size: 0x8

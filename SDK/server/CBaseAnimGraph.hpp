@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseAnimGraph : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x80);
 			bool m_bInitiallyPopulateInterpHistory; // 0x868 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

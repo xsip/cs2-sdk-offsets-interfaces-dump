@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseFlexAlias_funCBaseFlex : public CS2::server::CBaseFlex {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CBaseFlexAlias_funCBaseFlex) == 0xB08, "CBaseFlexAlias_funCBaseFlex size should be 0xB08");
 	}

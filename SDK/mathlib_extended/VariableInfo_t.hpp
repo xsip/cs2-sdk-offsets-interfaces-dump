@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace mathlib_extended {
 		class VariableInfo_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_nameToken; // 0x8 | Schema_Atomic | Size: 0x4
 			mathlib_extended::FuseVariableIndex_t m_nIndex; // 0xc | Schema_DeclaredClass | Size: 0x2

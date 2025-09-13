@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CEconEntity : public CS2::server::CBaseFlex {
 		public:
-			public:
 			S2_PAD(0x10);
 			server::CAttributeContainer m_AttributeManager; // 0xb18 | Schema_DeclaredClass | Size: 0x2f8
 			uint32_t m_OriginalOwnerXuidLow; // 0xe10 | Schema_Builtin | Size: 0x4

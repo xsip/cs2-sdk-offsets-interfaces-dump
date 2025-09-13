@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CPulseCell_LerpCameraSettings : public CS2::pulse_runtime_lib::CPulseCell_BaseLerp {
 		public:
-			public:
 			float32 m_flSeconds; // 0x90 | Schema_Builtin | Size: 0x4
 			client::PointCameraSettings_t m_Start; // 0x94 | Schema_DeclaredClass | Size: 0x10
 			client::PointCameraSettings_t m_End; // 0xa4 | Schema_DeclaredClass | Size: 0x10

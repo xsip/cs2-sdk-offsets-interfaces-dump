@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_Sprite : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSpriteMaterial; // 0xec0 | Schema_Atomic | Size: 0x8
 			char  m_hSpriteMaterial[0x8]; // 0xec0 | Schema_Atomic | Size: 0x8
 			// client::CHandle< client::C_BaseEntity > m_hAttachedToEntity; // 0xec8 | Schema_Atomic | Size: 0x4

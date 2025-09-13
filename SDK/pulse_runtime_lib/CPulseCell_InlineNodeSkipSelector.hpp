@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_InlineNodeSkipSelector : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			pulse_runtime_lib::PulseDocNodeID_t m_nFlowNodeID; // 0x48 | Schema_DeclaredClass | Size: 0x4
 			bool m_bAnd; // 0x4c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

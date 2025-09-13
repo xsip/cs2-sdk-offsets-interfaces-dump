@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_VelocityFromCP : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleCollectionVecInput m_velocityInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CParticleTransformInput m_transformInput; // 0x840 | Schema_DeclaredClass | Size: 0x68
 			float32 m_flVelocityScale; // 0x8a8 | Schema_Builtin | Size: 0x4

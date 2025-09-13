@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncNavObstruction : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x10);
 			bool m_bDisabled; // 0x7f8 | Schema_Builtin | Size: 0x1
 			bool m_bUseAsyncObstacleUpdate; // 0x7f9 | Schema_Builtin | Size: 0x1

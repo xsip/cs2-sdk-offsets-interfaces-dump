@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CInferno : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_firePositions[64]; // 0x7e8 | Schema_FixedArray | Size: 0x300
 			GlobalTypes::Vector m_fireParentPositions[64]; // 0xae8 | Schema_FixedArray | Size: 0x300
 			bool m_bFireIsBurning[64]; // 0xde8 | Schema_FixedArray | Size: 0x40

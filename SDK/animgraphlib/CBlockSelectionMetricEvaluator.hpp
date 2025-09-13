@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBlockSelectionMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::animgraphlib::CBlockSelectionMetricEvaluator) == 0x50, "CBlockSelectionMetricEvaluator size should be 0x50");
 	}

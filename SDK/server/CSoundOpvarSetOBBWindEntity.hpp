@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetOBBWindEntity : public CS2::server::CSoundOpvarSetPointBase {
 		public:
-			public:
 			GlobalTypes::Vector m_vMins; // 0x598 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxs; // 0x5a4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vDistanceMins; // 0x5b0 | Schema_Atomic | Size: 0xc

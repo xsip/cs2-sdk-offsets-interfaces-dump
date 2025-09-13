@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderMaterialProxy : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			int32_t m_nMaterialControlPoint; // 0x210 | Schema_Builtin | Size: 0x4
 			particles::MaterialProxyType_t m_nProxyType; // 0x214 | Schema_DeclaredEnum | Size: 0x4
 			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x218 | Schema_Atomic | Size: 0x18

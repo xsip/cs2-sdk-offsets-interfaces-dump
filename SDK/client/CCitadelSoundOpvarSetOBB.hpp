@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCitadelSoundOpvarSetOBB : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x610 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x618 | Schema_Atomic | Size: 0x8

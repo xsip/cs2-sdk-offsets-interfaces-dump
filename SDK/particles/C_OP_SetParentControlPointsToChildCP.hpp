@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetParentControlPointsToChildCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nChildGroupID; // 0x1c8 | Schema_Builtin | Size: 0x4
 			int32_t m_nChildControlPoint; // 0x1cc | Schema_Builtin | Size: 0x4
 			int32_t m_nNumControlPoints; // 0x1d0 | Schema_Builtin | Size: 0x4

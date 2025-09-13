@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class ResponseParams  {
 		public:
-			public:
 			S2_PAD(0x10);
 			int16_t odds; // 0x10 | Schema_Builtin | Size: 0x2
 			int16_t flags; // 0x12 | Schema_Builtin | Size: 0x2

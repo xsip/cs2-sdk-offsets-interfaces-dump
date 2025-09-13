@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CFootstepTableHandle  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::client::CFootstepTableHandle) == 0x8, "CFootstepTableHandle size should be 0x8");

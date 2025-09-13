@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CTestPulseIOAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CTestPulseIOAPI) == 0x8, "CTestPulseIOAPI size should be 0x8");

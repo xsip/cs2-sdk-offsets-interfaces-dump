@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_SoundEventStart : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			server::SoundEventStartType_t m_Type; // 0x48 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

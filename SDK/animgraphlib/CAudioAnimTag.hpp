@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAudioAnimTag : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_clipName; // 0x58 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_attachmentName; // 0x60 | Schema_Atomic | Size: 0x8

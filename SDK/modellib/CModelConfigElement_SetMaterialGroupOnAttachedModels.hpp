@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_SetMaterialGroupOnAttachedModels : public CS2::modellib::CModelConfigElement {
 		public:
-			public:
 			GlobalTypes::CUtlString m_MaterialGroupName; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_SetMaterialGroupOnAttachedModels, m_MaterialGroupName) == 0x48, "m_MaterialGroupName in CModelConfigElement_SetMaterialGroupOnAttachedModels should be at offset 0x48");

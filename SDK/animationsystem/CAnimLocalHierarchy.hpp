@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimLocalHierarchy  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_sBone; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CBufferString m_sNewParent; // 0x10 | Schema_Atomic | Size: 0x10
 			int32_t m_nStartFrame; // 0x20 | Schema_Builtin | Size: 0x4

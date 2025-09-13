@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Unknown : public CS2::pulse_runtime_lib::CPulseCell_Base {
 		public:
-			public:
 			GlobalTypes::KeyValues3 m_UnknownKeys; // 0x48 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Unknown, m_UnknownKeys) == 0x48, "m_UnknownKeys in CPulseCell_Unknown should be at offset 0x48");

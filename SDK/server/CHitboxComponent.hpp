@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CHitboxComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			S2_PAD(0x1c);
 			uint32_t m_bvDisabledHitGroups[1]; // 0x24 | Schema_FixedArray | Size: 0x4
 		};

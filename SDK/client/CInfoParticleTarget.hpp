@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CInfoParticleTarget : public CS2::client::C_PointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CInfoParticleTarget) == 0x5F8, "CInfoParticleTarget size should be 0x5F8");
 	}

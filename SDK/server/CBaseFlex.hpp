@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseFlex : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			// GlobalTypes::CNetworkUtlVectorBase< float32 > m_flexWeight; // 0xa78 | Schema_Atomic | Size: 0x18
 			char  m_flexWeight[0x18]; // 0xa78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector m_vLookTargetPosition; // 0xa90 | Schema_Atomic | Size: 0xc

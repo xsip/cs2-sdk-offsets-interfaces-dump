@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SaveSurfaceNormal : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x50 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CUtlString m_VariableName; // 0x90 | Schema_Atomic | Size: 0x8
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSGameModeRules_Noop : public CS2::server::CCSGameModeRules {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CCSGameModeRules_Noop) == 0x30, "CCSGameModeRules_Noop size should be 0x30");
 	}

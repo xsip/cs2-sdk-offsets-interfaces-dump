@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace entity2 {
 		class CNetworkVarChainer  {
 		public:
-			public:
 			S2_PAD(0x20);
 			networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x20 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class MaterialResourceData_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_materialName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_shaderName; // 0x8 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< materialsystem2::MaterialParamInt_t > m_intParams; // 0x10 | Schema_Atomic | Size: 0x18

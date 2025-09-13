@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicBranchList : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_nLogicBranchNames[16]; // 0x4f0 | Schema_FixedArray | Size: 0x80
 			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_LogicBranchList; // 0x570 | Schema_Atomic | Size: 0x18
 			char  m_LogicBranchList[0x18]; // 0x570 | Schema_Atomic | Size: 0x18

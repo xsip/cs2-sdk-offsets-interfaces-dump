@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsProp : public CS2::server::CBreakableProp {
 		public:
-			public:
 			S2_PAD(0x8);
 			entity2::CEntityIOOutput m_MotionEnabled; // 0xc48 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnAwakened; // 0xc70 | Schema_DeclaredClass | Size: 0x28

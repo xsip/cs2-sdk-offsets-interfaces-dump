@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeStiffHingeBuild_t  {
 		public:
-			public:
 			float32 flMaxAngle; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 flStrength; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flMotionBias[3]; // 0x8 | Schema_FixedArray | Size: 0xc

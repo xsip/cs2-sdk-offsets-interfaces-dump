@@ -31,7 +31,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseEntity : public CS2::entity2::CEntityInstance {
 		public:
-			public:
 			client::CBodyComponent* m_CBodyComponent; // 0x38 | Schema_Ptr | Size: 0x8
 			client::CNetworkTransmitComponent m_NetworkTransmitComponent; // 0x40 | Schema_DeclaredClass | Size: 0x1c8
 			S2_PAD(0x120);

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSplineConstraint : public CS2::server::CPhysConstraint {
 		public:
-			public:
 			S2_PAD(0x50);
 			GlobalTypes::Vector m_vAnchorOffsetRestore; // 0x5b0 | Schema_Atomic | Size: 0xc
 			// server::CHandle< server::CBaseEntity > m_hSplineEntity; // 0x5bc | Schema_Atomic | Size: 0x4

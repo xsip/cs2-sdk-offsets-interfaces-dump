@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CVPhysXSurfacePropertiesList  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< CPhysSurfaceProperties >* m_surfacePropertiesList; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_surfacePropertiesList[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

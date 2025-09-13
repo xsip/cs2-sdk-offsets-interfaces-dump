@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class Parameterization_t  {
 		public:
-			public:
 			// GlobalTypes::BlendRange_t, 5 > m_blendRanges; // 0x0 | Schema_Atomic | Size: 0x48
 			char  m_blendRanges[0x48]; // 0x0 | Schema_Atomic | Size: 0x48
 			GlobalTypes::Range_t m_parameterRange; // 0x48 | Schema_Atomic | Size: 0x8

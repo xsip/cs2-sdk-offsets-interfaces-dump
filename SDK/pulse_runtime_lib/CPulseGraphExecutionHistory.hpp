@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseGraphExecutionHistory  {
 		public:
-			public:
 			pulse_runtime_lib::PulseGraphInstanceID_t m_nInstanceID; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_strFileName; // 0x8 | Schema_Atomic | Size: 0x8

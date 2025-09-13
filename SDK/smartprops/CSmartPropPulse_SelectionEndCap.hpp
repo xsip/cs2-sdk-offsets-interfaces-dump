@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_SelectionEndCap : public CS2::pulse_runtime_lib::CPulseCell_BaseRequirement {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_SelectionEndCap) == 0x48, "CSmartPropPulse_SelectionEndCap size should be 0x48");
 	}

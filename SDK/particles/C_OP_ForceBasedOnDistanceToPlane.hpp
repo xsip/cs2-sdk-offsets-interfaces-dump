@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ForceBasedOnDistanceToPlane : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			float32 m_flMinDist; // 0x1d0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecForceAtMinDist; // 0x1d4 | Schema_Atomic | Size: 0xc
 			float32 m_flMaxDist; // 0x1e0 | Schema_Builtin | Size: 0x4

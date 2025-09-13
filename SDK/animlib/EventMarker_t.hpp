@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class EventMarker_t  {
 		public:
-			public:
 			animlib::NmPercent_t m_startTime; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CGlobalSymbol m_ID; // 0x8 | Schema_Atomic | Size: 0x8

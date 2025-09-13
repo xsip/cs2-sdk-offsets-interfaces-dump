@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_WaterServices : public CS2::server::CPlayer_WaterServices {
 		public:
-			public:
 			entity2::GameTime_t m_NextDrownDamageTime; // 0x40 | Schema_DeclaredClass | Size: 0x4
 			int32_t m_nDrownDmgRate; // 0x44 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_AirFinishedTime; // 0x48 | Schema_DeclaredClass | Size: 0x4

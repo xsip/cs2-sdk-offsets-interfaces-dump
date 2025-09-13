@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_PlaySequence : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_SequenceName; // 0x48 | Schema_Atomic | Size: 0x8
 			pulse_runtime_lib::PulseNodeDynamicOutflows_t m_PulseAnimEvents; // 0x50 | Schema_DeclaredClass | Size: 0x18
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x68 | Schema_DeclaredClass | Size: 0x48

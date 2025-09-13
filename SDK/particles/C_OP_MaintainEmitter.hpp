@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MaintainEmitter : public CS2::particles::CParticleFunctionEmitter {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_nParticlesToMaintain; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			float32 m_flStartTime; // 0x328 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_TriggerVolume : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_TriggerVolume) == 0xEC0, "C_TriggerVolume size should be 0xEC0");
 	}

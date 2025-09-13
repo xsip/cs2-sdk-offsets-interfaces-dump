@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class ModelSkeletonData_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneName; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_boneName[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int16 > m_nParent; // 0x18 | Schema_Atomic | Size: 0x18

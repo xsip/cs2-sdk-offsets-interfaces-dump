@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysXBodyPart_t  {
 		public:
-			public:
 			uint32_t m_nFlags; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flMass; // 0x4 | Schema_Builtin | Size: 0x4
 			modellib::VPhysics2ShapeDef_t m_rnShape; // 0x8 | Schema_DeclaredClass | Size: 0x78

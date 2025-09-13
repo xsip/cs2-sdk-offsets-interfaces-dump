@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleModelInput : public CS2::particleslib::CParticleInput {
 		public:
-			public:
 			particleslib::ParticleModelType_t m_nType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CParticleNamedValueRef m_NamedValue; // 0x18 | Schema_Atomic | Size: 0x40

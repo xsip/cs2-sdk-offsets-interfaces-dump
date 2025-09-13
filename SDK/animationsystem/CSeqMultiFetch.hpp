@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqMultiFetch  {
 		public:
-			public:
 			animationsystem::CSeqMultiFetchFlag m_flags; // 0x0 | Schema_DeclaredClass | Size: 0x6
 			S2_PAD(0x2);
 			// GlobalTypes::CUtlVector< int16 > m_localReferenceArray; // 0x8 | Schema_Atomic | Size: 0x18

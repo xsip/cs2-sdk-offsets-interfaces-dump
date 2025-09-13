@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFollowTargetUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::FollowTargetOpFixedSettings_t m_opFixedData; // 0x70 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0x8);
 			animgraphlib::CAnimParamHandle m_hParameterPosition; // 0x88 | Schema_DeclaredClass | Size: 0x2

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmGraphDefinition  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_variationID; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmSkeleton > m_skeleton; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_skeleton[0x8]; // 0x8 | Schema_Atomic | Size: 0x8

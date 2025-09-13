@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBtActionMoveTo : public CS2::server::CBtNode {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_szDestinationInputKey; // 0x60 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_szHidingSpotInputKey; // 0x68 | Schema_Atomic | Size: 0x8

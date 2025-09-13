@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CLeanMatrixUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
-			public:
 			S2_PAD(0x4);
 			int32_t m_frameCorners[3]; // 0x5c | Schema_FixedArray | Size: 0x0
 			S2_PAD(0x24);

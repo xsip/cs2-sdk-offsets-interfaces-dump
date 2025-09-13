@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_MovementServices_Humanoid : public CS2::server::CPlayer_MovementServices {
 		public:
-			public:
 			float32 m_flStepSoundTime; // 0x240 | Schema_Builtin | Size: 0x4
 			float32 m_flFallVelocity; // 0x244 | Schema_Builtin | Size: 0x4
 			bool m_bInCrouch; // 0x248 | Schema_Builtin | Size: 0x1

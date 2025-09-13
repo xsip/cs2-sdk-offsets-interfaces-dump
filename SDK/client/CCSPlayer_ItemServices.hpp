@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_ItemServices : public CS2::client::CPlayer_ItemServices {
 		public:
-			public:
 			bool m_bHasDefuser; // 0x40 | Schema_Builtin | Size: 0x1
 			bool m_bHasHelmet; // 0x41 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding

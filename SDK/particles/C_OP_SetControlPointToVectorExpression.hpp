@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointToVectorExpression : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			particles::VectorExpressionType_t m_nExpression; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nOutputCP; // 0x1cc | Schema_Builtin | Size: 0x4
 			particleslib::CParticleCollectionVecInput m_vInput1; // 0x1d0 | Schema_DeclaredClass | Size: 0x678

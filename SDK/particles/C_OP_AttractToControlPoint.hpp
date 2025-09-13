@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_AttractToControlPoint : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			GlobalTypes::Vector m_vecComponentScale; // 0x1d0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
 			particleslib::CPerParticleFloatInput m_fForceAmount; // 0x1e0 | Schema_DeclaredClass | Size: 0x160

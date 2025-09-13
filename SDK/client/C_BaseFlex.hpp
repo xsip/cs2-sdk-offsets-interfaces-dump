@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseFlex : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x10);
 			// GlobalTypes::C_NetworkUtlVectorBase< float32 > m_flexWeight; // 0x1178 | Schema_Atomic | Size: 0x18
 			char  m_flexWeight[0x18]; // 0x1178 | Schema_Atomic | Size: 0x18

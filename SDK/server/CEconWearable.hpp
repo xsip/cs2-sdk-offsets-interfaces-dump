@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEconWearable : public CS2::server::CEconEntity {
 		public:
-			public:
 			int32_t m_nForceSkin; // 0xe30 | Schema_Builtin | Size: 0x4
 			bool m_bAlwaysAllow; // 0xe34 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding

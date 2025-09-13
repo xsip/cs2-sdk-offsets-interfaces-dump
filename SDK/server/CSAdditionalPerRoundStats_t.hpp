@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CSAdditionalPerRoundStats_t  {
 		public:
-			public:
 			int32_t m_numChickensKilled; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_killsWhileBlind; // 0x4 | Schema_Builtin | Size: 0x4
 			int32_t m_bombCarrierkills; // 0x8 | Schema_Builtin | Size: 0x4

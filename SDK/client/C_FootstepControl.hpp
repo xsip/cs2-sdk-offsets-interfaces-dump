@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_FootstepControl : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_source; // 0x1000 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_destination; // 0x1008 | Schema_Atomic | Size: 0x8
 		};

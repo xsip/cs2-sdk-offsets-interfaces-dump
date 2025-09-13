@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseGrenade : public CS2::client::C_BaseFlex {
 		public:
-			public:
 			bool m_bHasWarnedAI; // 0x1378 | Schema_Builtin | Size: 0x1
 			bool m_bIsSmokeGrenade; // 0x1379 | Schema_Builtin | Size: 0x1
 			bool m_bIsLive; // 0x137a | Schema_Builtin | Size: 0x1

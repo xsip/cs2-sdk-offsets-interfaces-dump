@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqPoseParamDesc  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_sName; // 0x0 | Schema_Atomic | Size: 0x10
 			float32 m_flStart; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flEnd; // 0x14 | Schema_Builtin | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class SceneViewId_t  {
 		public:
-			public:
 			uint64_t m_nViewId; // 0x0 | Schema_Builtin | Size: 0x8
 			uint64_t m_nFrameCount; // 0x8 | Schema_Builtin | Size: 0x8
 		};

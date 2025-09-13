@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrackTrain : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			// server::CHandle< server::CPathTrack > m_ppath; // 0x7e8 | Schema_Atomic | Size: 0x4
 			char  m_ppath[0x4]; // 0x7e8 | Schema_Atomic | Size: 0x4
 			float32 m_length; // 0x7ec | Schema_Builtin | Size: 0x4

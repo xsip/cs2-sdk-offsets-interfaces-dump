@@ -19,7 +19,6 @@ namespace CS2 {
 	namespace server {
 		class CCSWeaponBase : public CS2::server::CBasePlayerWeapon {
 		public:
-			public:
 			bool m_bRemoveable; // 0xe78 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// GlobalTypes::CUtlVector< animationsystem::HSequence > m_thirdPersonFireSequences; // 0xe80 | Schema_Atomic | Size: 0x18

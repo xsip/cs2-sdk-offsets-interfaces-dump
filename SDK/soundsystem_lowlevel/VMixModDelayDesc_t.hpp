@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixModDelayDesc_t  {
 		public:
-			public:
 			soundsystem_lowlevel::VMixFilterDesc_t m_feedbackFilter; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			bool m_bPhaseInvert; // 0x10 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

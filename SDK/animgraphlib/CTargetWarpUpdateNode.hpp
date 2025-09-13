@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CTargetWarpUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x4);
 			animgraphlib::TargetWarpAngleMode_t m_eAngleMode; // 0x74 | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::CAnimParamHandle m_hTargetPositionParameter; // 0x78 | Schema_DeclaredClass | Size: 0x2

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeWorld_t  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeWorld_t) == 0x1, "InfoForResourceTypeWorld_t size should be 0x1");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_PlayerSprayDecal : public CS2::client::C_ModelPointEntity {
 		public:
-			public:
 			int32_t m_nUniqueID; // 0xec0 | Schema_Builtin | Size: 0x4
 			uint32_t m_unAccountID; // 0xec4 | Schema_Builtin | Size: 0x4
 			uint32_t m_unTraceID; // 0xec8 | Schema_Builtin | Size: 0x4

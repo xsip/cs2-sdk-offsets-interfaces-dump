@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseCell_Outflow_TestExplicitYesNo : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_OutflowConnection m_Yes; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_OutflowConnection m_No; // 0x90 | Schema_DeclaredClass | Size: 0x48
 		};

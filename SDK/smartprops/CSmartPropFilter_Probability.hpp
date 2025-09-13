@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropFilter_Probability : public CS2::smartprops::CSmartPropFilter {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeFloat m_flProbability; // 0x50 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_Probability, m_flProbability) == 0x50, "m_flProbability in CSmartPropFilter_Probability should be at offset 0x50");

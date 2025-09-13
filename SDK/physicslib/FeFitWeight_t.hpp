@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeFitWeight_t  {
 		public:
-			public:
 			float32 flWeight; // 0x0 | Schema_Builtin | Size: 0x4
 			uint16_t nNode; // 0x4 | Schema_Builtin | Size: 0x2
 			uint16_t nDummy; // 0x6 | Schema_Builtin | Size: 0x2

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSingleplayRules : public CS2::server::CGameRules {
 		public:
-			public:
 			bool m_bSinglePlayerGameEnding; // 0xc0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

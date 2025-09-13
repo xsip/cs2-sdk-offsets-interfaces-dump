@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace compositematerialslib {
 		class GeneratedTextureHandle_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strBitmapName; // 0x0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x48); // End padding
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_NormalOffset : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			GlobalTypes::Vector m_OffsetMin; // 0x1c8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_OffsetMax; // 0x1d4 | Schema_Atomic | Size: 0xc
 			int32_t m_nControlPointNumber; // 0x1e0 | Schema_Builtin | Size: 0x4

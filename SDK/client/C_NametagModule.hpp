@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_NametagModule : public CS2::client::C_CS2WeaponModuleBase {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strNametagString; // 0x1170 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::C_NametagModule, m_strNametagString) == 0x1170, "m_strNametagString in C_NametagModule should be at offset 0x1170");

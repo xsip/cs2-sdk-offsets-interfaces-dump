@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderStatusEffect : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureColorWarp; // 0x210 | Schema_Atomic | Size: 0x8
 			char  m_pTextureColorWarp[0x8]; // 0x210 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureDetail2; // 0x218 | Schema_Atomic | Size: 0x8

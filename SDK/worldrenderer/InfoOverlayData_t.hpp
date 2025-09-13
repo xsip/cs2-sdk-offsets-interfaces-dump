@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class InfoOverlayData_t  {
 		public:
-			public:
 			GlobalTypes::matrix3x4_t m_transform; // 0x0 | Schema_Atomic | Size: 0x30
 			float32 m_flWidth; // 0x30 | Schema_Builtin | Size: 0x4
 			float32 m_flHeight; // 0x34 | Schema_Builtin | Size: 0x4

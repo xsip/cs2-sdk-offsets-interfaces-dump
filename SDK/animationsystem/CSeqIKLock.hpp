@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqIKLock  {
 		public:
-			public:
 			float32 m_flPosWeight; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flAngleWeight; // 0x4 | Schema_Builtin | Size: 0x4
 			int16_t m_nLocalBone; // 0x8 | Schema_Builtin | Size: 0x2

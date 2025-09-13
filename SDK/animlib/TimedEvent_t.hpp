@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class TimedEvent_t  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_ID; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 m_flTimeValueSeconds; // 0x8 | Schema_Builtin | Size: 0x4
 			animlib::Comparison_t m_comparisionOperator; // 0xc | Schema_DeclaredEnum | Size: 0x1

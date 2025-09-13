@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_TextureBasedAnimatable : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			bool m_bLoop; // 0xec0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flFPS; // 0xec4 | Schema_Builtin | Size: 0x4

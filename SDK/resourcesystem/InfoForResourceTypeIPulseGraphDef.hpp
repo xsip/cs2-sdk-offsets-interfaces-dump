@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeIPulseGraphDef  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeIPulseGraphDef) == 0x1, "InfoForResourceTypeIPulseGraphDef size should be 0x1");

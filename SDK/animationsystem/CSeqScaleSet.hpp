@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqScaleSet  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_sName; // 0x0 | Schema_Atomic | Size: 0x10
 			bool m_bRootOffset; // 0x10 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

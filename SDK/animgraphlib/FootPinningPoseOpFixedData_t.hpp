@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class FootPinningPoseOpFixedData_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::FootFixedData_t > m_footInfo; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_footInfo[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			float32 m_flBlendTime; // 0x18 | Schema_Builtin | Size: 0x4

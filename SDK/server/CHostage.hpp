@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace server {
 		class CHostage : public CS2::server::CHostageExpresserShim {
 		public:
-			public:
 			S2_PAD(0x10);
 			entity2::CEntityIOOutput m_OnHostageBeginGrab; // 0xbe8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnFirstPickedUp; // 0xc10 | Schema_DeclaredClass | Size: 0x28

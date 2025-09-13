@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CItemKevlar : public CS2::server::CItem {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CItemKevlar) == 0xB50, "CItemKevlar size should be 0xB50");
 	}

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CItemGeneric : public CS2::server::CItem {
 		public:
-			public:
 			S2_PAD(0x14);
 			bool m_bHasTriggerRadius; // 0xb64 | Schema_Builtin | Size: 0x1
 			bool m_bHasPickupRadius; // 0xb65 | Schema_Builtin | Size: 0x1

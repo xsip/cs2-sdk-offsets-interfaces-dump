@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class EventServerAdvanceTick_t : public CS2::client::EventAdvanceTick_t {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::EventServerAdvanceTick_t) == 0x40, "EventServerAdvanceTick_t size should be 0x40");
 	}

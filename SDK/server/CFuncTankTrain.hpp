@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncTankTrain : public CS2::server::CFuncTrackTrain {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnDeath; // 0x940 | Schema_DeclaredClass | Size: 0x28
 		};
 		static_assert(offsetof(CS2::server::CFuncTankTrain, m_OnDeath) == 0x940, "m_OnDeath in CFuncTankTrain should be at offset 0x940");

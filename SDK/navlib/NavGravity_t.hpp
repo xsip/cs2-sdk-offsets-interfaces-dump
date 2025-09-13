@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace navlib {
 		class NavGravity_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vGravity; // 0x0 | Schema_Atomic | Size: 0xc
 			bool m_bDefault; // 0xc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding

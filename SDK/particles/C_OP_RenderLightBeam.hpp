@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderLightBeam : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particleslib::CParticleCollectionVecInput m_vColorBlend; // 0x210 | Schema_DeclaredClass | Size: 0x678
 			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x888 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);

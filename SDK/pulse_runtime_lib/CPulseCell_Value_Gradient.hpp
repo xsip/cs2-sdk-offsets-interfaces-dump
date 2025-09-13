@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Value_Gradient : public CS2::pulse_runtime_lib::CPulseCell_BaseValue {
 		public:
-			public:
 			GlobalTypes::CColorGradient m_Gradient; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Value_Gradient, m_Gradient) == 0x48, "m_Gradient in CPulseCell_Value_Gradient should be at offset 0x48");

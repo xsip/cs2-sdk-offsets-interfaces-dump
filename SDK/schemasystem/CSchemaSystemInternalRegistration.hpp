@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace schemasystem {
 		class CSchemaSystemInternalRegistration  {
 		public:
-			public:
 			GlobalTypes::Vector2D m_Vector2D; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_Vector; // 0x8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0xc);

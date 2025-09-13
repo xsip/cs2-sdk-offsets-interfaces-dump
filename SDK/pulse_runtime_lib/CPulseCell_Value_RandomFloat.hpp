@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Value_RandomFloat : public CS2::pulse_runtime_lib::CPulseCell_BaseValue {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Value_RandomFloat) == 0x48, "CPulseCell_Value_RandomFloat size should be 0x48");
 	}

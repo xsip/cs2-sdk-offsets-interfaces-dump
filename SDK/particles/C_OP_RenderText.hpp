@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderText : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			GlobalTypes::Color m_OutlineColor; // 0x210 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_DefaultText; // 0x218 | Schema_Atomic | Size: 0x8

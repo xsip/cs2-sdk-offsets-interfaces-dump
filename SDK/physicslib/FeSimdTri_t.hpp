@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSimdTri_t  {
 		public:
-			public:
 			uint32_t nNode[4]; // 0x0 | Schema_FixedArray | Size: 0x0
 			S2_PAD(0x30);
 			GlobalTypes::fltx4 w1; // 0x30 | Schema_Atomic | Size: 0x10

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayerPing : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			// server::CHandle< server::CCSPlayerPawn > m_hPlayer; // 0x4f8 | Schema_Atomic | Size: 0x4
 			char  m_hPlayer[0x4]; // 0x4f8 | Schema_Atomic | Size: 0x4

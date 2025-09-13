@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class CFeVertexMapBuildArray  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< FeVertexMapBuild_t >* m_Array; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_Array[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

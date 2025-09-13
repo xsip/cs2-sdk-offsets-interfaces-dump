@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CAttributeContainer : public CS2::server::CAttributeManager {
 		public:
-			public:
 			server::CEconItemView m_Item; // 0x50 | Schema_DeclaredClass | Size: 0x2a8
 		};
 		static_assert(offsetof(CS2::server::CAttributeContainer, m_Item) == 0x50, "m_Item in CAttributeContainer should be at offset 0x50");

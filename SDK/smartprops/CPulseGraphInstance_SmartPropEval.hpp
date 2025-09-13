@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CPulseGraphInstance_SmartPropEval : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
-			public:
 			S2_PAD(0x10);
 		};
 		static_assert(sizeof(CS2::smartprops::CPulseGraphInstance_SmartPropEval) == 0x120, "CPulseGraphInstance_SmartPropEval size should be 0x120");

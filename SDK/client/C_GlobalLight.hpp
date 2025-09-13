@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_GlobalLight : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x4c8);
 			uint16_t m_WindClothForceHandle; // 0xac0 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2e); // End padding

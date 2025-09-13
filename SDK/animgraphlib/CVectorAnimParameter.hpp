@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CVectorAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {
 		public:
-			public:
 			GlobalTypes::Vector m_defaultValue; // 0x80 | Schema_Atomic | Size: 0xc
 			bool m_bInterpolate; // 0x8c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding

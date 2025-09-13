@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_MapPreviewCameraPathNode : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_szParentPathUniqueID; // 0x5f8 | Schema_Atomic | Size: 0x8
 			int32_t m_nPathIndex; // 0x600 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vInTangentLocal; // 0x604 | Schema_Atomic | Size: 0xc

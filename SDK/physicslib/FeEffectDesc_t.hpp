@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeEffectDesc_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString sName; // 0x0 | Schema_Atomic | Size: 0x8
 			uint32_t nNameHash; // 0x8 | Schema_Builtin | Size: 0x4
 			int32_t nType; // 0xc | Schema_Builtin | Size: 0x4

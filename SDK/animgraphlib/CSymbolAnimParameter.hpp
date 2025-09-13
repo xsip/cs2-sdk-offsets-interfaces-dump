@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSymbolAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_defaultValue; // 0x80 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::animgraphlib::CSymbolAnimParameter, m_defaultValue) == 0x80, "m_defaultValue in CSymbolAnimParameter should be at offset 0x80");

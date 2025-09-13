@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_NoiseEmitter : public CS2::particles::CParticleFunctionEmitter {
 		public:
-			public:
 			float32 m_flEmissionDuration; // 0x1c8 | Schema_Builtin | Size: 0x4
 			float32 m_flStartTime; // 0x1cc | Schema_Builtin | Size: 0x4
 			float32 m_flEmissionScale; // 0x1d0 | Schema_Builtin | Size: 0x4

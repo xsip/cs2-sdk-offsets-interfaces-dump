@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeWithRef : public CS2::server::CMarkupVolumeTagged {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bUseRef; // 0x830 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

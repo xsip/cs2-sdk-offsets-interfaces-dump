@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class CSceneEventInfo  {
 		public:
-			public:
 			int32_t m_iLayer; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_iPriority; // 0x4 | Schema_Builtin | Size: 0x4
 			animationsystem::HSequence m_hSequence; // 0x8 | Schema_DeclaredClass | Size: 0x4

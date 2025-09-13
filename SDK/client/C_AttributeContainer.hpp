@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_AttributeContainer : public CS2::client::CAttributeManager {
 		public:
-			public:
 			client::C_EconItemView m_Item; // 0x50 | Schema_DeclaredClass | Size: 0x478
 			int32_t m_iExternalItemProviderRegisteredToken; // 0x4c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPathQueryComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			S2_PAD(0x98);
 		};
 		static_assert(sizeof(CS2::server::CPathQueryComponent) == 0xA0, "CPathQueryComponent size should be 0xA0");

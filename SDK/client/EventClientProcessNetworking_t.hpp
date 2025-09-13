@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventClientProcessNetworking_t  {
 		public:
-			public:
 			int32_t m_nTickCount; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::EventClientProcessNetworking_t, m_nTickCount) == 0x0, "m_nTickCount in EventClientProcessNetworking_t should be at offset 0x0");

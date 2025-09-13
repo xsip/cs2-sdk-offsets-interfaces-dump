@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_SmartProp : public CS2::smartprops::CSmartPropElement {
 		public:
-			public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCSmartProp > > m_sSmartProp; // 0x88 | Schema_Atomic | Size: 0xe0
 			char  m_sSmartProp[0xe0]; // 0x88 | Schema_Atomic | Size: 0xe0
 			bool m_bLocalEvaluationState; // 0x168 | Schema_Builtin | Size: 0x1

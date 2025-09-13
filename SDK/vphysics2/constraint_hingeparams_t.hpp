@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace vphysics2 {
 		class constraint_hingeparams_t  {
 		public:
-			public:
 			GlobalTypes::Vector worldPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector worldAxisDirection; // 0xc | Schema_Atomic | Size: 0xc
 			vphysics2::constraint_axislimit_t hingeAxis; // 0x18 | Schema_DeclaredClass | Size: 0x10

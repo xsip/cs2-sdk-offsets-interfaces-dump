@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointClientUIDialog : public CS2::client::C_BaseClientUIEntity {
 		public:
-			public:
 			// client::CHandle< client::C_BaseEntity > m_hActivator; // 0xef0 | Schema_Atomic | Size: 0x4
 			char  m_hActivator[0x4]; // 0xef0 | Schema_Atomic | Size: 0x4
 			bool m_bStartEnabled; // 0xef4 | Schema_Builtin | Size: 0x1

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CFuncWater : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			client::CBuoyancyHelper m_BuoyancyHelper; // 0xec0 | Schema_DeclaredClass | Size: 0x118
 		};
 		static_assert(offsetof(CS2::client::CFuncWater, m_BuoyancyHelper) == 0xEC0, "m_BuoyancyHelper in CFuncWater should be at offset 0xEC0");

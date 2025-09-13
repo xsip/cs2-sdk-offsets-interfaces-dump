@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CFilterMassGreater : public CS2::client::CBaseFilter {
 		public:
-			public:
 			float32 m_fFilterMass; // 0x650 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

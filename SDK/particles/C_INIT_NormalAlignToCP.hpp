@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_NormalAlignToCP : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleTransformInput m_transformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
 			particles::ParticleControlPointAxis_t m_nControlPointAxis; // 0x230 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding

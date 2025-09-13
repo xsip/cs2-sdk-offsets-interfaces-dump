@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CWeaponGlock : public CS2::server::CCSWeaponBaseGun {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CWeaponGlock) == 0x1050, "CWeaponGlock size should be 0x1050");
 	}

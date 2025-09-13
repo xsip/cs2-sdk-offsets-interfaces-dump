@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace vphysics2 {
 		class constraint_axislimit_t  {
 		public:
-			public:
 			float32 flMinRotation; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 flMaxRotation; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flMotorTargetAngSpeed; // 0x8 | Schema_Builtin | Size: 0x4

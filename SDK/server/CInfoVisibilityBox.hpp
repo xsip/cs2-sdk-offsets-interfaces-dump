@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoVisibilityBox : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x4);
 			int32_t m_nMode; // 0x4f4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vBoxSize; // 0x4f8 | Schema_Atomic | Size: 0xc

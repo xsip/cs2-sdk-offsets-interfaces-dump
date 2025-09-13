@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvViewPunch : public CS2::server::CPointEntity {
 		public:
-			public:
 			float32 m_flRadius; // 0x4f0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::QAngle m_angViewPunch; // 0x4f4 | Schema_Atomic | Size: 0xc
 		};

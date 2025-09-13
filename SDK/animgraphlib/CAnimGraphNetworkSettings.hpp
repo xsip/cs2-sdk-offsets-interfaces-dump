@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimGraphNetworkSettings : public CS2::animgraphlib::CAnimGraphSettingsGroup {
 		public:
-			public:
 			bool m_bNetworkingEnabled; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

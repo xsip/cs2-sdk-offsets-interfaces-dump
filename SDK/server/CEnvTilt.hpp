@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvTilt : public CS2::server::CPointEntity {
 		public:
-			public:
 			float32 m_Duration; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_Radius; // 0x4f4 | Schema_Builtin | Size: 0x4
 			float32 m_TiltTime; // 0x4f8 | Schema_Builtin | Size: 0x4

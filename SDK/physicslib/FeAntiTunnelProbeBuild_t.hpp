@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeAntiTunnelProbeBuild_t  {
 		public:
-			public:
 			float32 flWeight; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 flActivationDistance; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flBias; // 0x8 | Schema_Builtin | Size: 0x4

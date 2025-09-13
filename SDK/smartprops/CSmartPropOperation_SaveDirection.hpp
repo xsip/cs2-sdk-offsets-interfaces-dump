@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SaveDirection : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			smartprops::CSmartPropAttributeDirection m_DirectionVector; // 0x50 | Schema_DeclaredClass | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x90 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CUtlString m_VariableName; // 0xd0 | Schema_Atomic | Size: 0x8

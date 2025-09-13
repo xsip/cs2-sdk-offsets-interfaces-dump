@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CTwoBoneIKUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::TwoBoneIKSettings_t m_opFixedData; // 0x70 | Schema_DeclaredClass | Size: 0x160
 			S2_PAD(0x10); // End padding
 		};

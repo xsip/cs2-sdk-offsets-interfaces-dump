@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class PermModelInfo_t  {
 		public:
-			public:
 			uint32_t m_nFlags; // 0x0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vHullMin; // 0x4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vHullMax; // 0x10 | Schema_Atomic | Size: 0xc

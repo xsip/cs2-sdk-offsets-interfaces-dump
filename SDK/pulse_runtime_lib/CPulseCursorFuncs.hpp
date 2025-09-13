@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCursorFuncs  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCursorFuncs) == 0x1, "CPulseCursorFuncs size should be 0x1");

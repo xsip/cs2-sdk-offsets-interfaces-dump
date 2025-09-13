@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_Item : public CS2::client::C_EconEntity {
 		public:
-			public:
 			char m_pReticleHintTextName[256]; // 0x18f0 | Schema_FixedArray | Size: 0x100
 		};
 		static_assert(offsetof(CS2::client::C_Item, m_pReticleHintTextName) == 0x18F0, "m_pReticleHintTextName in C_Item should be at offset 0x18F0");

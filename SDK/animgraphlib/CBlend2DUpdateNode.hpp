@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBlend2DUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			// GlobalTypes::CUtlVector< animgraphlib::BlendItem_t > m_items; // 0x60 | Schema_Atomic | Size: 0x18
 			char  m_items[0x18]; // 0x60 | Schema_Atomic | Size: 0x18

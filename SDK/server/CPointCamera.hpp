@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointCamera : public CS2::server::CBaseEntity {
 		public:
-			public:
 			float32 m_FOV; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_Resolution; // 0x4f4 | Schema_Builtin | Size: 0x4
 			bool m_bFogEnable; // 0x4f8 | Schema_Builtin | Size: 0x1

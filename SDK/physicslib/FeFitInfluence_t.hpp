@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeFitInfluence_t  {
 		public:
-			public:
 			uint32_t nVertexNode; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 flWeight; // 0x4 | Schema_Builtin | Size: 0x4
 			uint32_t nMatrixNode; // 0x8 | Schema_Builtin | Size: 0x4

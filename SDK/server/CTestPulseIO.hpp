@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTestPulseIO : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnVariantVoid; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnVariantBool; // 0x518 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnVariantInt; // 0x540 | Schema_DeclaredClass | Size: 0x28

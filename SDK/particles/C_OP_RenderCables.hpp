@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderCables : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_flRadiusScale; // 0x210 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionFloatInput m_flAlphaScale; // 0x370 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x4d0 | Schema_DeclaredClass | Size: 0x678

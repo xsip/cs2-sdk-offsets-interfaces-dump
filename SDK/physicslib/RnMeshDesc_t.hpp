@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnMeshDesc_t : public CS2::physicslib::RnShapeDesc_t {
 		public:
-			public:
 			physicslib::RnMesh_t m_Mesh; // 0x18 | Schema_DeclaredClass | Size: 0xc0
 		};
 		static_assert(offsetof(CS2::physicslib::RnMeshDesc_t, m_Mesh) == 0x18, "m_Mesh in RnMeshDesc_t should be at offset 0x18");

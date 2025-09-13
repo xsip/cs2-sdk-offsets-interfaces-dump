@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderSimpleModelCollection : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			bool m_bCenterOffset; // 0x210 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x218 | Schema_Atomic | Size: 0x8

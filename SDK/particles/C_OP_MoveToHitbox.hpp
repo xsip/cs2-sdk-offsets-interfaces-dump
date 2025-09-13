@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MoveToHitbox : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CParticleModelInput m_modelInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x60
 			particleslib::CParticleTransformInput m_transformInput; // 0x220 | Schema_DeclaredClass | Size: 0x68
 			S2_PAD(0x4);

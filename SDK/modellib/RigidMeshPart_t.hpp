@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class RigidMeshPart_t  {
 		public:
-			public:
 			uint16_t m_nRigidBLASIndex; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nBoneIndex; // 0x2 | Schema_Builtin | Size: 0x2
 			uint32_t m_nStartIndexOffset; // 0x4 | Schema_Builtin | Size: 0x4

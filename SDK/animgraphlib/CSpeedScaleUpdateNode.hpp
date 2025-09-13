@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSpeedScaleUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_paramIndex; // 0x70 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};

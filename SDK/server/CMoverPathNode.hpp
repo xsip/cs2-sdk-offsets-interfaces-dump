@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CMoverPathNode : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vInTangentLocal; // 0x4f0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vOutTangentLocal; // 0x4fc | Schema_Atomic | Size: 0xc
 			GlobalTypes::CUtlSymbolLarge m_szParentPathUniqueID; // 0x508 | Schema_Atomic | Size: 0x8

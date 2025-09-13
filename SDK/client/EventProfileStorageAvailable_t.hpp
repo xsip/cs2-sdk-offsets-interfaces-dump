@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventProfileStorageAvailable_t  {
 		public:
-			public:
 			GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; // 0x0 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::EventProfileStorageAvailable_t, m_nSplitScreenSlot) == 0x0, "m_nSplitScreenSlot in EventProfileStorageAvailable_t should be at offset 0x0");

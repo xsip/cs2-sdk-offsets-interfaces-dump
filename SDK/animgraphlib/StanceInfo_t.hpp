@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class StanceInfo_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_flDirection; // 0xc | Schema_Builtin | Size: 0x4
 		};

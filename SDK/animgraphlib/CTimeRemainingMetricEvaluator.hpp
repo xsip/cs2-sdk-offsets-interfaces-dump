@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CTimeRemainingMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
-			public:
 			bool m_bMatchByTimeRemaining; // 0x50 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flMaxTimeRemaining; // 0x54 | Schema_Builtin | Size: 0x4

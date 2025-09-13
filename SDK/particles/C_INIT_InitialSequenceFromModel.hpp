@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitialSequenceFromModel : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1cc | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldOutputAnim; // 0x1d0 | Schema_DeclaredClass | Size: 0x4

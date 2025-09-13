@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class ChainToSolveData_t  {
 		public:
-			public:
 			int32_t m_nChainIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			animgraphlib::IKSolverSettings_t m_SolverSettings; // 0x4 | Schema_DeclaredClass | Size: 0xc
 			animgraphlib::IKTargetSettings_t m_TargetSettings; // 0x10 | Schema_DeclaredClass | Size: 0x28

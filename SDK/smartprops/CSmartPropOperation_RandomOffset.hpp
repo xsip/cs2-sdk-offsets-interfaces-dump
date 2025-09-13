@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_RandomOffset : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeVector m_vRandomPositionMin; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_vRandomPositionMax; // 0x90 | Schema_Atomic | Size: 0x40
 		};

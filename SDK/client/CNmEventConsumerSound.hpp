@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CNmEventConsumerSound : public CS2::client::CNmEventConsumer {
 		public:
-			public:
 			S2_PAD(0x20);
 		};
 		static_assert(sizeof(CS2::client::CNmEventConsumerSound) == 0x30, "CNmEventConsumerSound size should be 0x30");

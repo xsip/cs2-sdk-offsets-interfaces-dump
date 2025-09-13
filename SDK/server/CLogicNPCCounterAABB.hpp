@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicNPCCounterAABB : public CS2::server::CLogicNPCCounter {
 		public:
-			public:
 			GlobalTypes::Vector m_vDistanceOuterMins; // 0x830 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vDistanceOuterMaxs; // 0x83c | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vOuterMins; // 0x848 | Schema_Atomic | Size: 0xc

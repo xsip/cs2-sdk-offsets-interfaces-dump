@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_KeychainModule : public CS2::client::C_CS2WeaponModuleBase {
 		public:
-			public:
 			uint32_t m_nKeychainDefID; // 0x1170 | Schema_Builtin | Size: 0x4
 			uint32_t m_nKeychainSeed; // 0x1174 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding

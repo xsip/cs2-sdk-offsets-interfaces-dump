@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class BoneDemoCaptureSettings_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_boneName; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 m_flErrorSplineRotationMax; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flErrorSplineTranslationMax; // 0xc | Schema_Builtin | Size: 0x4

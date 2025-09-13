@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CActionComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimActionUpdater > > m_actions; // 0x30 | Schema_Atomic | Size: 0x18
 			char  m_actions[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_UpdateLightSource : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			GlobalTypes::Color m_vColorTint; // 0x1c0 | Schema_Atomic | Size: 0x4
 			float32 m_flBrightnessScale; // 0x1c4 | Schema_Builtin | Size: 0x4
 			float32 m_flRadiusScale; // 0x1c8 | Schema_Builtin | Size: 0x4

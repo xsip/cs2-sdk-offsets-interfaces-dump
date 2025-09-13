@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CCycleBase  {
 		public:
-			public:
 			float32 m_flCycle; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::modellib::CCycleBase, m_flCycle) == 0x0, "m_flCycle in CCycleBase should be at offset 0x0");

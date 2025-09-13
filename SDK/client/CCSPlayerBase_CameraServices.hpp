@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayerBase_CameraServices : public CS2::client::CPlayer_CameraServices {
 		public:
-			public:
 			uint32_t m_iFOV; // 0x288 | Schema_Builtin | Size: 0x4
 			uint32_t m_iFOVStart; // 0x28c | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flFOVTime; // 0x290 | Schema_DeclaredClass | Size: 0x4

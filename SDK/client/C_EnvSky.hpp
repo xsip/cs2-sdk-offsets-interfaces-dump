@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvSky : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0xec0 | Schema_Atomic | Size: 0x8
 			char  m_hSkyMaterial[0x8]; // 0xec0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterialLightingOnly; // 0xec8 | Schema_Atomic | Size: 0x8

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CC4 : public CS2::server::CCSWeaponBase {
 		public:
-			public:
 			S2_PAD(0x30);
 			GlobalTypes::Vector m_vecLastValidPlayerHeldPosition; // 0x1060 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecLastValidDroppedPosition; // 0x106c | Schema_Atomic | Size: 0xc

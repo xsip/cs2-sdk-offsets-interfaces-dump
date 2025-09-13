@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoDeathmatchSpawn : public CS2::server::SpawnPoint {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CInfoDeathmatchSpawn) == 0x500, "CInfoDeathmatchSpawn size should be 0x500");
 	}

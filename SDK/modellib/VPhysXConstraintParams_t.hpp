@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysXConstraintParams_t  {
 		public:
-			public:
 			int8_t m_nType; // 0x0 | Schema_Builtin | Size: 0x1
 			int8_t m_nTranslateMotion; // 0x1 | Schema_Builtin | Size: 0x1
 			int8_t m_nRotateMotion; // 0x2 | Schema_Builtin | Size: 0x1

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CBombTarget : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 			bool m_bBombPlantedHere; // 0x1000 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

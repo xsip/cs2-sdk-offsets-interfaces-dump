@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerGameEvent : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strStartTouchEventName; // 0x9b8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strEndTouchEventName; // 0x9c0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strTriggerID; // 0x9c8 | Schema_Atomic | Size: 0x8

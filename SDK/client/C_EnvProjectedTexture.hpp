@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvProjectedTexture : public CS2::client::C_ModelPointEntity {
 		public:
-			public:
 			S2_PAD(0x2e8);
 		};
 		static_assert(sizeof(CS2::client::C_EnvProjectedTexture) == 0x11A8, "C_EnvProjectedTexture size should be 0x11A8");

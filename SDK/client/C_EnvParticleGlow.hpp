@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvParticleGlow : public CS2::client::C_ParticleSystem {
 		public:
-			public:
 			float32 m_flAlphaScale; // 0x1470 | Schema_Builtin | Size: 0x4
 			float32 m_flRadiusScale; // 0x1474 | Schema_Builtin | Size: 0x4
 			float32 m_flSelfIllumScale; // 0x1478 | Schema_Builtin | Size: 0x4

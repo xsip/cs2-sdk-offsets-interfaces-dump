@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRagdollPropAttached : public CS2::server::CRagdollProp {
 		public:
-			public:
 			uint32_t m_boneIndexAttached; // 0xc48 | Schema_Builtin | Size: 0x4
 			uint32_t m_ragdollAttachedObjectIndex; // 0xc4c | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_attachmentPointBoneSpace; // 0xc50 | Schema_Atomic | Size: 0xc

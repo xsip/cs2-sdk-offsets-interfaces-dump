@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionLimitSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			int32_t m_nMaxCount; // 0x18 | Schema_Builtin | Size: 0x4
 			soundsystem::SosActionStopType_t m_nStopType; // 0x1c | Schema_DeclaredEnum | Size: 0x4
 			soundsystem::SosActionSortType_t m_nSortType; // 0x20 | Schema_DeclaredEnum | Size: 0x4

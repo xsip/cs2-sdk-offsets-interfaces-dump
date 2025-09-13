@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SetMateraialGroupChoice : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			GlobalTypes::CUtlString m_VariableName; // 0x50 | Schema_Atomic | Size: 0x8
 			smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; // 0x58 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeInt m_ChoiceSelection; // 0x98 | Schema_Atomic | Size: 0x40

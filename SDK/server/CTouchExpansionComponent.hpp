@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTouchExpansionComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			S2_PAD(0x48);
 		};
 		static_assert(sizeof(CS2::server::CTouchExpansionComponent) == 0x50, "CTouchExpansionComponent size should be 0x50");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBodyComponentSkeletonInstance : public CS2::server::CBodyComponent {
 		public:
-			public:
 			S2_PAD(0x8);
 			server::CSkeletonInstance m_skeletonInstance; // 0x80 | Schema_DeclaredClass | Size: 0x490
 		};

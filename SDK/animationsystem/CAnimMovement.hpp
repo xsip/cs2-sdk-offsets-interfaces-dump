@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimMovement  {
 		public:
-			public:
 			int32_t endframe; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t motionflags; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 v0; // 0x8 | Schema_Builtin | Size: 0x4

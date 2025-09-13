@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvSoundscapeProxyAlias_snd_soundscape_proxy : public CS2::server::CEnvSoundscapeProxy {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CEnvSoundscapeProxyAlias_snd_soundscape_proxy) == 0x598, "CEnvSoundscapeProxyAlias_snd_soundscape_proxy size should be 0x598");
 	}

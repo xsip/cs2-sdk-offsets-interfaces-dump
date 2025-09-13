@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class PermModelDataAnimatedMaterialAttribute_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_AttributeName; // 0x0 | Schema_Atomic | Size: 0x8
 			int32_t m_nNumChannels; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

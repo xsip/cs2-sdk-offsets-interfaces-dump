@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseCSGrenadeProjectile : public CS2::client::C_BaseGrenade {
 		public:
-			public:
 			GlobalTypes::Vector m_vInitialPosition; // 0x13c8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vInitialVelocity; // 0x13d4 | Schema_Atomic | Size: 0xc
 			int32_t m_nBounces; // 0x13e0 | Schema_Builtin | Size: 0x4

@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrackChange : public CS2::server::CFuncPlatRot {
 		public:
-			public:
 			server::CPathTrack* m_trackTop; // 0x8b0 | Schema_Ptr | Size: 0x8
 			server::CPathTrack* m_trackBottom; // 0x8b8 | Schema_Ptr | Size: 0x8
 			server::CFuncTrackTrain* m_train; // 0x8c0 | Schema_Ptr | Size: 0x8

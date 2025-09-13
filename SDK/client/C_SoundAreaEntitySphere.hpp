@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundAreaEntitySphere : public CS2::client::C_SoundAreaEntityBase {
 		public:
-			public:
 			float32 m_flRadius; // 0x620 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CCycleControlClipUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
-			public:
 			S2_PAD(0x8);
 			// GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x60 | Schema_Atomic | Size: 0x18
 			char  m_tags[0x18]; // 0x60 | Schema_Atomic | Size: 0x18

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CGameText : public CS2::server::CRulePointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x7f8 | Schema_Atomic | Size: 0x8
 			client::hudtextparms_t m_textParms; // 0x800 | Schema_DeclaredClass | Size: 0x14
 			S2_PAD(0x4); // End padding

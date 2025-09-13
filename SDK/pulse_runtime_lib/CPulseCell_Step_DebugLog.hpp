@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Step_DebugLog : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Step_DebugLog) == 0x48, "CPulseCell_Step_DebugLog size should be 0x48");
 	}

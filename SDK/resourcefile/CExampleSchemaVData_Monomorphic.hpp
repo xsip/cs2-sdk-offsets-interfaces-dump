@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcefile {
 		class CExampleSchemaVData_Monomorphic  {
 		public:
-			public:
 			int32_t m_nExample1; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nExample2; // 0x4 | Schema_Builtin | Size: 0x4
 		};

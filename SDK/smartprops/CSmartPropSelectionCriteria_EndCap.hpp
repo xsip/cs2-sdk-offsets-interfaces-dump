@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropSelectionCriteria_EndCap : public CS2::smartprops::CSmartPropSelectionCriteria {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeBool m_bStart; // 0x48 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bEnd; // 0x88 | Schema_Atomic | Size: 0x40
 		};

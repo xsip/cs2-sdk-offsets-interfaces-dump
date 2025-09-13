@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFilterEnemy : public CS2::server::CBaseFilter {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszEnemyName; // 0x548 | Schema_Atomic | Size: 0x8
 			float32 m_flRadius; // 0x550 | Schema_Builtin | Size: 0x4
 			float32 m_flOuterRadius; // 0x554 | Schema_Builtin | Size: 0x4

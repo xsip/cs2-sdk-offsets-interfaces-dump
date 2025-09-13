@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBoneMaskUpdateNode : public CS2::animgraphlib::CBinaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x4);
 			int32_t m_nWeightListIndex; // 0x94 | Schema_Builtin | Size: 0x4
 			float32 m_flRootMotionBlend; // 0x98 | Schema_Builtin | Size: 0x4

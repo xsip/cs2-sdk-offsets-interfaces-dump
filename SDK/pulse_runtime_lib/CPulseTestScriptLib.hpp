@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseTestScriptLib  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseTestScriptLib) == 0x1, "CPulseTestScriptLib size should be 0x1");

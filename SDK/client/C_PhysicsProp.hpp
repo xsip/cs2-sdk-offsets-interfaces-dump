@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PhysicsProp : public CS2::client::C_BreakableProp {
 		public:
-			public:
 			bool m_bAwake; // 0x1310 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};

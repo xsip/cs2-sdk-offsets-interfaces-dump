@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_ScriptedSequence : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_szSyncGroup; // 0x48 | Schema_Atomic | Size: 0x8
 			int32_t m_nExpectedNumSequencesInSyncGroup; // 0x50 | Schema_Builtin | Size: 0x4
 			bool m_bEnsureOnNavmeshOnFinish; // 0x54 | Schema_Builtin | Size: 0x1

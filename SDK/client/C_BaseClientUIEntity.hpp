@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseClientUIEntity : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bEnabled; // 0xec8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

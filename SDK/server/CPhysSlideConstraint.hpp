@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysSlideConstraint : public CS2::server::CPhysConstraint {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::Vector m_axisEnd; // 0x568 | Schema_Atomic | Size: 0xc
 			float32 m_slideFriction; // 0x574 | Schema_Builtin | Size: 0x4

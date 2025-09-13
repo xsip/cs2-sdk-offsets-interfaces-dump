@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerLook : public CS2::server::CTriggerOnce {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hLookTarget; // 0x9e0 | Schema_Atomic | Size: 0x4
 			char  m_hLookTarget[0x4]; // 0x9e0 | Schema_Atomic | Size: 0x4
 			float32 m_flFieldOfView; // 0x9e4 | Schema_Builtin | Size: 0x4

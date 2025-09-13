@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace navlib {
 		class CNavVolumeSphericalShell : public CS2::navlib::CNavVolumeSphere {
 		public:
-			public:
 			float32 m_flRadiusInner; // 0x80 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

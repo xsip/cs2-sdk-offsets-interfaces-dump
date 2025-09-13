@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimFrameBlockAnim  {
 		public:
-			public:
 			int32_t m_nStartFrame; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nEndFrame; // 0x4 | Schema_Builtin | Size: 0x4
 			// GlobalTypes::CUtlVector< int32 > m_segmentIndexArray; // 0x8 | Schema_Atomic | Size: 0x18

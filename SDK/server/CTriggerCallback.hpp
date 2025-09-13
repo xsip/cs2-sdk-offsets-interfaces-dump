@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerCallback : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CTriggerCallback) == 0x9C0, "CTriggerCallback size should be 0x9C0");

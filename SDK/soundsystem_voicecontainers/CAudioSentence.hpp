@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CAudioSentence  {
 		public:
-			public:
 			bool m_bShouldVoiceDuck; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioPhonemeTag > m_RunTimePhonemes; // 0x8 | Schema_Atomic | Size: 0x18

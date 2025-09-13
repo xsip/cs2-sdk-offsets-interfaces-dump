@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSGameModeRules_ArmsRace : public CS2::client::CCSGameModeRules {
 		public:
-			public:
 			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_WeaponSequence; // 0x30 | Schema_Atomic | Size: 0x18
 			char  m_WeaponSequence[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};

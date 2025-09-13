@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CGameEnd : public CS2::server::CRulePointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CGameEnd) == 0x7F8, "CGameEnd size should be 0x7F8");
 	}

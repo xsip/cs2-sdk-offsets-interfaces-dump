@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace server {
 		class CCSGameRules : public CS2::server::CTeamplayRules {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bFreezePeriod; // 0xc8 | Schema_Builtin | Size: 0x1
 			bool m_bWarmupPeriod; // 0xc9 | Schema_Builtin | Size: 0x1

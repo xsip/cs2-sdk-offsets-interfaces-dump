@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmEntityAttributeFloatEvent : public CS2::animlib::CNmEntityAttributeEventBase {
 		public:
-			public:
 			GlobalTypes::CPiecewiseCurve m_FloatValue; // 0x38 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::animlib::CNmEntityAttributeFloatEvent, m_FloatValue) == 0x38, "m_FloatValue in CNmEntityAttributeFloatEvent should be at offset 0x38");

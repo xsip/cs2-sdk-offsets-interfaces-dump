@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particleslib {
 		class ParticleNamedValueSource_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Name; // 0x0 | Schema_Atomic | Size: 0x8
 			bool m_IsPublic; // 0x8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

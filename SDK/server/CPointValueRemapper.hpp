@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace server {
 		class CPointValueRemapper : public CS2::server::CBaseEntity {
 		public:
-			public:
 			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
 			bool m_bUpdateOnClient; // 0x4f1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

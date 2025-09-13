@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CHitReactUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::HitReactFixedSettings_t m_opFixedSettings; // 0x70 | Schema_DeclaredClass | Size: 0x44
 			S2_PAD(0x8);
 			animgraphlib::CAnimParamHandle m_triggerParam; // 0xbc | Schema_DeclaredClass | Size: 0x2

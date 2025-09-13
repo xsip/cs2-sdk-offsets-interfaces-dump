@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace mathlib_extended {
 		class ConstantInfo_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_nameToken; // 0x8 | Schema_Atomic | Size: 0x4
 			float32 m_flValue; // 0xc | Schema_Builtin | Size: 0x4

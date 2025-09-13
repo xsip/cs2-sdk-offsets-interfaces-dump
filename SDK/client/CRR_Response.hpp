@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CRR_Response  {
 		public:
-			public:
 			uint8_t m_Type; // 0x0 | Schema_Builtin | Size: 0x1
 			char m_szResponseName[192]; // 0x1 | Schema_FixedArray | Size: 0xc0
 			char m_szMatchingRule[128]; // 0xc1 | Schema_FixedArray | Size: 0x80

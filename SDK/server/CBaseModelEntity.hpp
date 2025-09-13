@@ -29,7 +29,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseModelEntity : public CS2::server::CBaseEntity {
 		public:
-			public:
 			server::CRenderComponent* m_CRenderComponent; // 0x4f0 | Schema_Ptr | Size: 0x8
 			server::CHitboxComponent m_CHitboxComponent; // 0x4f8 | Schema_DeclaredClass | Size: 0x28
 			client::HitGroup_t m_nDestructiblePartInitialStateDestructed0; // 0x520 | Schema_DeclaredEnum | Size: 0x4

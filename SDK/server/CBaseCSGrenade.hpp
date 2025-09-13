@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseCSGrenade : public CS2::server::CCSWeaponBase {
 		public:
-			public:
 			bool m_bRedraw; // 0x1030 | Schema_Builtin | Size: 0x1
 			bool m_bIsHeldByPlayer; // 0x1031 | Schema_Builtin | Size: 0x1
 			bool m_bPinPulled; // 0x1032 | Schema_Builtin | Size: 0x1

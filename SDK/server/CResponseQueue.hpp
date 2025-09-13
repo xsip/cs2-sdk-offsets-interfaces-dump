@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CResponseQueue  {
 		public:
-			public:
 			S2_PAD(0x38);
 			// GlobalTypes::CUtlVector< CAI_Expresser >* m_ExpresserTargets; // 0x38 | Schema_Atomic | Size: 0x18
 			char  m_ExpresserTargets[0x18]; // 0x38 | Schema_Atomic | Size: 0x18

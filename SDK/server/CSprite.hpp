@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CSprite : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSpriteMaterial; // 0x7e8 | Schema_Atomic | Size: 0x8
 			char  m_hSpriteMaterial[0x8]; // 0x7e8 | Schema_Atomic | Size: 0x8
 			// server::CHandle< server::CBaseEntity > m_hAttachedToEntity; // 0x7f0 | Schema_Atomic | Size: 0x4

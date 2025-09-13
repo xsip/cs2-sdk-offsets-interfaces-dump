@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreationNoise : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
 			bool m_bAbsVal; // 0x1cc | Schema_Builtin | Size: 0x1
 			bool m_bAbsValInv; // 0x1cd | Schema_Builtin | Size: 0x1

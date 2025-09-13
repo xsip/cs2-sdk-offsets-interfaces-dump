@@ -19,7 +19,6 @@ namespace CS2 {
 	namespace client {
 		class CBodyComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			client::CGameSceneNode* m_pSceneNode; // 0x8 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x38);
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x48 | Schema_DeclaredClass | Size: 0x28

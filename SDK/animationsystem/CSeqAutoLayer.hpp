@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqAutoLayer  {
 		public:
-			public:
 			int16_t m_nLocalReference; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nLocalPose; // 0x2 | Schema_Builtin | Size: 0x2
 			animationsystem::CSeqAutoLayerFlag m_flags; // 0x4 | Schema_DeclaredClass | Size: 0x8

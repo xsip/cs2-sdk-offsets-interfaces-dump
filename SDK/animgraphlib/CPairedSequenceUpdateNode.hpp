@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CPairedSequenceUpdateNode : public CS2::animgraphlib::CSequenceUpdateNodeBase {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_sPairedSequenceRole; // 0x78 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};

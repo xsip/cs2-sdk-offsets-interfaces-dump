@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_PositionLock : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x68
 			float32 m_flStartTime_min; // 0x228 | Schema_Builtin | Size: 0x4
 			float32 m_flStartTime_max; // 0x22c | Schema_Builtin | Size: 0x4

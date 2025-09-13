@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_PickBestOutflowSelector : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			pulse_runtime_lib::PulseBestOutflowRules_t m_nCheckType; // 0x48 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x50 | Schema_DeclaredClass | Size: 0x18

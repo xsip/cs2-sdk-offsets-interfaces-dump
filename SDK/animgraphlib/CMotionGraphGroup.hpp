@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMotionGraphGroup  {
 		public:
-			public:
 			animgraphlib::CMotionSearchDB m_searchDB; // 0x0 | Schema_DeclaredClass | Size: 0xb8
 			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CMotionGraph > > m_motionGraphs; // 0xb8 | Schema_Atomic | Size: 0x18
 			char  m_motionGraphs[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18

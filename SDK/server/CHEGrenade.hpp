@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CHEGrenade : public CS2::server::CBaseCSGrenade {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CHEGrenade) == 0x1070, "CHEGrenade size should be 0x1070");
 	}

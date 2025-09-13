@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class VertexPositionNormal_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vNormal; // 0xc | Schema_Atomic | Size: 0xc
 		};

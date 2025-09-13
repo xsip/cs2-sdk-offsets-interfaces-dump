@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCTextureBase  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCTextureBase) == 0x1, "InfoForResourceTypeCTextureBase size should be 0x1");

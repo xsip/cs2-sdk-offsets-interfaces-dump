@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CDebugHistory : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x3e8040);
 			int32_t m_nNpcEvents; // 0x3e8530 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xfa4); // End padding

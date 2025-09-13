@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_FuncTrackTrain : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			int32_t m_nLongAxis; // 0xec0 | Schema_Builtin | Size: 0x4
 			float32 m_flRadius; // 0xec4 | Schema_Builtin | Size: 0x4
 			float32 m_flLineLength; // 0xec8 | Schema_Builtin | Size: 0x4

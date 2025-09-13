@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmFrameSnapEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			animlib::NmFrameSnapEventMode_t m_frameSnapMode; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

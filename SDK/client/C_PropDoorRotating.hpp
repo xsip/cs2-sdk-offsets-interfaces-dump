@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PropDoorRotating : public CS2::client::C_BasePropDoor {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_PropDoorRotating) == 0x1470, "C_PropDoorRotating size should be 0x1470");
 	}

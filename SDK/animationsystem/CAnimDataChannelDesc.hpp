@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimDataChannelDesc  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_szChannelClass; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CBufferString m_szVariableName; // 0x10 | Schema_Atomic | Size: 0x10
 			int32_t m_nFlags; // 0x20 | Schema_Builtin | Size: 0x4

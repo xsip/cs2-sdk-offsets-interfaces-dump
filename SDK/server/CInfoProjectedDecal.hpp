@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoProjectedDecal : public CS2::server::CPointEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x4f0 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_sSequenceName; // 0x4f8 | Schema_Atomic | Size: 0x4

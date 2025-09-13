@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCS_PortraitWorldCallbackHandler : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::client::CCS_PortraitWorldCallbackHandler) == 0x600, "CCS_PortraitWorldCallbackHandler size should be 0x600");

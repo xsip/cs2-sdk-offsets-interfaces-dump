@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapTransformOrientationToYaw : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x68
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x228 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flRotOffset; // 0x22c | Schema_Builtin | Size: 0x4

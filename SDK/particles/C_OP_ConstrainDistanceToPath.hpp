@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ConstrainDistanceToPath : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			float32 m_fMinDistance; // 0x1c0 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxDistance0; // 0x1c4 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxDistanceMid; // 0x1c8 | Schema_Builtin | Size: 0x4

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointWorldText : public CS2::client::C_ModelPointEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bForceRecreateNextUpdate; // 0xec8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17);

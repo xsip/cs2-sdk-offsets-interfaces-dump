@@ -21,7 +21,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderModels : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			bool m_bOnlyRenderInEffectsBloomPass; // 0x210 | Schema_Builtin | Size: 0x1
 			bool m_bOnlyRenderInEffectsWaterPass; // 0x211 | Schema_Builtin | Size: 0x1
 			bool m_bUseMixedResolutionRendering; // 0x212 | Schema_Builtin | Size: 0x1

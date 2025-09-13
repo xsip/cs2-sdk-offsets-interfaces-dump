@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CPhysicsBodyGameMarkupData  {
 		public:
-			public:
 			// GlobalTypes::CUtlOrderedMap< CUtlString, CPhysicsBodyGameMarkup > m_PhysicsBodyMarkupByBoneName; // 0x0 | Schema_Atomic | Size: 0x28
 			char  m_PhysicsBodyMarkupByBoneName[0x28]; // 0x0 | Schema_Atomic | Size: 0x28
 		};

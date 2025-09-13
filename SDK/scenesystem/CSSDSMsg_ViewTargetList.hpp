@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_ViewTargetList  {
 		public:
-			public:
 			scenesystem::SceneViewId_t m_viewId; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			GlobalTypes::CUtlString m_ViewName; // 0x10 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< scenesystem::CSSDSMsg_ViewTarget > m_Targets; // 0x18 | Schema_Atomic | Size: 0x18

@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace client {
 		class C_Beam : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			float32 m_flFrameRate; // 0xec0 | Schema_Builtin | Size: 0x4
 			float32 m_flHDRColorScale; // 0xec4 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flFireTime; // 0xec8 | Schema_DeclaredClass | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSDFRigid_t  {
 		public:
-			public:
 			GlobalTypes::Vector vLocalMin; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector vLocalMax; // 0xc | Schema_Atomic | Size: 0xc
 			float32 flBounciness; // 0x18 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PropPhysics : public CS2::smartprops::CSmartPropElement {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeModelName m_sModelName; // 0x88 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeMaterialGroup m_MaterialGroupName; // 0xc8 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bStartAsleep; // 0x108 | Schema_Atomic | Size: 0x40

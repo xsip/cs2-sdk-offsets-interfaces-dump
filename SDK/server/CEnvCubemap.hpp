@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvCubemap : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x80);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hCubemapTexture; // 0x570 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hCubemapTexture[0x8]; // 0x570 | Schema_Atomic | Size: 0x8

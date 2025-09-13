@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Step_CallExternalMethod : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_MethodName; // 0x48 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t m_GameBlackboard; // 0x58 | Schema_Atomic | Size: 0x10
 			// GlobalTypes::CUtlLeanVector< pulse_runtime_lib::CPulseRuntimeMethodArg > m_ExpectedArgs; // 0x68 | Schema_Atomic | Size: 0x10

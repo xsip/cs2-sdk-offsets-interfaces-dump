@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerActiveWeaponDetect : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnTouchedActiveWeapon; // 0x9b8 | Schema_DeclaredClass | Size: 0x28
 			GlobalTypes::CUtlSymbolLarge m_iszWeaponClassName; // 0x9e0 | Schema_Atomic | Size: 0x8
 		};

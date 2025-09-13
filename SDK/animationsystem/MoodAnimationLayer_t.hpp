@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class MoodAnimationLayer_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_sName; // 0x0 | Schema_Atomic | Size: 0x8
 			bool m_bActiveListening; // 0x8 | Schema_Builtin | Size: 0x1
 			bool m_bActiveTalking; // 0x9 | Schema_Builtin | Size: 0x1

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CRenderBufferBinding  {
 		public:
-			public:
 			uint64_t m_hBuffer; // 0x0 | Schema_Builtin | Size: 0x8
 			S2_PAD(0x8);
 			uint32_t m_nBindOffsetBytes; // 0x10 | Schema_Builtin | Size: 0x4

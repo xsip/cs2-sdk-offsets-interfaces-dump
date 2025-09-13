@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionRenderer : public CS2::particles::CParticleFunction {
 		public:
-			public:
 			particles::CParticleVisibilityInputs VisibilityInputs; // 0x1c0 | Schema_DeclaredClass | Size: 0x48
 			bool m_bCannotBeRefracted; // 0x208 | Schema_Builtin | Size: 0x1
 			bool m_bSkipRenderingOnMobile; // 0x209 | Schema_Builtin | Size: 0x1

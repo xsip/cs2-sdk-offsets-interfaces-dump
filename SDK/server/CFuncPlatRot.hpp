@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncPlatRot : public CS2::server::CFuncPlat {
 		public:
-			public:
 			GlobalTypes::QAngle m_end; // 0x898 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_start; // 0x8a4 | Schema_Atomic | Size: 0xc
 		};

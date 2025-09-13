@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimDecoder  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_szName; // 0x0 | Schema_Atomic | Size: 0x10
 			int32_t m_nVersion; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nType; // 0x14 | Schema_Builtin | Size: 0x4

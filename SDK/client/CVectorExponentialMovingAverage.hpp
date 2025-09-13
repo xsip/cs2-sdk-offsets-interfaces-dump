@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CVectorExponentialMovingAverage  {
 		public:
-			public:
 			S2_PAD(0x2c);
 		};
 		static_assert(sizeof(CS2::client::CVectorExponentialMovingAverage) == 0x2C, "CVectorExponentialMovingAverage size should be 0x2C");

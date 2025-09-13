@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Outflow_IntSwitch : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_OutflowConnection m_DefaultCaseOutflow; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			// server::CUtlVector< pulse_runtime_lib::CPulse_OutflowConnection > m_CaseOutflows; // 0x90 | Schema_Atomic | Size: 0x18
 			char  m_CaseOutflows[0x18]; // 0x90 | Schema_Atomic | Size: 0x18

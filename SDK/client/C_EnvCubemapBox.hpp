@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvCubemapBox : public CS2::client::C_EnvCubemap {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_EnvCubemapBox) == 0x6E0, "C_EnvCubemapBox size should be 0x6E0");
 	}

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particles {
 		class CPathParameters  {
 		public:
-			public:
 			int32_t m_nStartControlPointNumber; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nEndControlPointNumber; // 0x4 | Schema_Builtin | Size: 0x4
 			int32_t m_nBulgeControl; // 0x8 | Schema_Builtin | Size: 0x4

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmSoundEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			animlib::CNmEventRelevance_t m_relevance; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			animlib::Type_t m_type; // 0x24 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CUtlString m_name; // 0x28 | Schema_Atomic | Size: 0x8

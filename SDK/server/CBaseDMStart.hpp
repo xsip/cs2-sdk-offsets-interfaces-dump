@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseDMStart : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_Master; // 0x4f0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CBaseDMStart, m_Master) == 0x4F0, "m_Master in CBaseDMStart should be at offset 0x4F0");

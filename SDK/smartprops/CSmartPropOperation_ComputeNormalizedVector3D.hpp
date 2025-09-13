@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_ComputeNormalizedVector3D : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			GlobalTypes::CUtlString m_OutputVariableName; // 0x50 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CSmartPropAttributeVector m_InputVector; // 0x58 | Schema_Atomic | Size: 0x40
 		};

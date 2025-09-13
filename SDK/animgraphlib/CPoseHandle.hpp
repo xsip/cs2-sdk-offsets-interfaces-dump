@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CPoseHandle  {
 		public:
-			public:
 			uint16_t m_nIndex; // 0x0 | Schema_Builtin | Size: 0x2
 			animgraphlib::PoseType_t m_eType; // 0x2 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x1); // End padding

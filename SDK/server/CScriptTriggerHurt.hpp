@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CScriptTriggerHurt : public CS2::server::CTriggerHurt {
 		public:
-			public:
 			GlobalTypes::Vector m_vExtent; // 0xa58 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace compositematerialslib {
 		class CompositeMaterialEditorPoint_t  {
 		public:
-			public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_ModelName; // 0x0 | Schema_Atomic | Size: 0xe0
 			char  m_ModelName[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
 			int32_t m_nSequenceIndex; // 0xe0 | Schema_Builtin | Size: 0x4

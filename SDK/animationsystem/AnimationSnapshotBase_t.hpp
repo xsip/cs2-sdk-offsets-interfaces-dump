@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class AnimationSnapshotBase_t  {
 		public:
-			public:
 			float32 m_flRealTime; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
 			GlobalTypes::matrix3x4a_t m_rootToWorld; // 0x10 | Schema_Atomic | Size: 0x30

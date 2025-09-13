@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CPlayer_MovementServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			int32_t m_nImpulse; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			client::CInButtonState m_nButtons; // 0x48 | Schema_DeclaredClass | Size: 0x20

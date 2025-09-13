@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CVoteController : public CS2::server::CBaseEntity {
 		public:
-			public:
 			int32_t m_iActiveIssueIndex; // 0x4f0 | Schema_Builtin | Size: 0x4
 			int32_t m_iOnlyTeamToVote; // 0x4f4 | Schema_Builtin | Size: 0x4
 			int32_t m_nVoteOptionCount[5]; // 0x4f8 | Schema_FixedArray | Size: 0x14

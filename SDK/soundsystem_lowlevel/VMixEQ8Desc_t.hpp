@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixEQ8Desc_t  {
 		public:
-			public:
 			soundsystem_lowlevel::VMixFilterDesc_t m_stages[8]; // 0x0 | Schema_FixedArray | Size: 0x400
 		};
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEQ8Desc_t, m_stages) == 0x0, "m_stages in VMixEQ8Desc_t should be at offset 0x0");

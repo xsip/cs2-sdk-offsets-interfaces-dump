@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixDynamicsDesc_t  {
 		public:
-			public:
 			float32 m_fldbGain; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_fldbNoiseGateThreshold; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_fldbCompressionThreshold; // 0x8 | Schema_Builtin | Size: 0x4

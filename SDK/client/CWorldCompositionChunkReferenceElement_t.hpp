@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CWorldCompositionChunkReferenceElement_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strMapToLoad; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strLandmarkName; // 0x8 | Schema_Atomic | Size: 0x8
 		};

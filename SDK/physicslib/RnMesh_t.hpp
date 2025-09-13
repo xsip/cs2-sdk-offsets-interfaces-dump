@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnMesh_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vMin; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMax; // 0xc | Schema_Atomic | Size: 0xc
 			// GlobalTypes::CUtlVector< physicslib::RnNode_t > m_Nodes; // 0x18 | Schema_Atomic | Size: 0x18

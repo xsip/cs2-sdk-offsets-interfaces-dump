@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvMuzzleFlash : public CS2::server::CPointEntity {
 		public:
-			public:
 			float32 m_flScale; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszParentAttachment; // 0x4f8 | Schema_Atomic | Size: 0x8

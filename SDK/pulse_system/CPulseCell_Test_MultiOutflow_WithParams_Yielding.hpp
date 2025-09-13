@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseCell_Test_MultiOutflow_WithParams_Yielding : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			pulse_runtime_lib::SignatureOutflow_Continue m_Out1; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild1; // 0x90 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild2; // 0xd8 | Schema_DeclaredClass | Size: 0x48

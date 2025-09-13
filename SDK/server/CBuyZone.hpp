@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CBuyZone : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			int32_t m_LegacyTeamNum; // 0x9b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPathTrack : public CS2::server::CPointEntity {
 		public:
-			public:
 			server::CPathTrack* m_pnext; // 0x4f0 | Schema_Ptr | Size: 0x8
 			server::CPathTrack* m_pprevious; // 0x4f8 | Schema_Ptr | Size: 0x8
 			server::CPathTrack* m_paltpath; // 0x500 | Schema_Ptr | Size: 0x8

@@ -21,7 +21,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PGDInstruction_t  {
 		public:
-			public:
 			pulse_runtime_lib::PulseInstructionCode_t m_nCode; // 0x0 | Schema_DeclaredEnum | Size: 0x2
 			S2_PAD(0x2);
 			pulse_runtime_lib::PulseRuntimeVarIndex_t m_nVar; // 0x4 | Schema_DeclaredClass | Size: 0x4

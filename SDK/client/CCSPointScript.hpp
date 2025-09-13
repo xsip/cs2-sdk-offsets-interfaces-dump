@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPointScript : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
-			public:
 			S2_PAD(0x8);
 			client::CCSPointScriptEntity* m_pParent; // 0x118 | Schema_Ptr | Size: 0x8
 		};

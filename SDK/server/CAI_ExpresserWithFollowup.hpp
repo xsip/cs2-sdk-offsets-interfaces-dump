@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CAI_ExpresserWithFollowup : public CS2::server::CAI_Expresser {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CAI_ExpresserWithFollowup) == 0xA0, "CAI_ExpresserWithFollowup size should be 0xA0");
 	}

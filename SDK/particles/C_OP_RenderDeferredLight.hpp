@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderDeferredLight : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			bool m_bUseAlphaTestWindow; // 0x210 | Schema_Builtin | Size: 0x1
 			bool m_bUseTexture; // 0x211 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

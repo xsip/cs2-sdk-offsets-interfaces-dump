@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_CallInfo  {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_PortName; // 0x0 | Schema_Atomic | Size: 0x10
 			pulse_runtime_lib::PulseDocNodeID_t m_nEditorNodeID; // 0x10 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);

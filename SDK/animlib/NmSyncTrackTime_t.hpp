@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class NmSyncTrackTime_t  {
 		public:
-			public:
 			int32_t m_nEventIdx; // 0x0 | Schema_Builtin | Size: 0x4
 			animlib::NmPercent_t m_percentageThrough; // 0x4 | Schema_DeclaredClass | Size: 0x4
 		};

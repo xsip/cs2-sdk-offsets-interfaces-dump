@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointClientUIWorldTextPanel : public CS2::server::CPointClientUIWorldPanel {
 		public:
-			public:
 			char m_messageText[512]; // 0x9f0 | Schema_FixedArray | Size: 0x200
 		};
 		static_assert(offsetof(CS2::server::CPointClientUIWorldTextPanel, m_messageText) == 0x9F0, "m_messageText in CPointClientUIWorldTextPanel should be at offset 0x9F0");

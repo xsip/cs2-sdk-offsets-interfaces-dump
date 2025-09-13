@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CTaskStatusAnimTag : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::animgraphlib::CTaskStatusAnimTag) == 0x58, "CTaskStatusAnimTag size should be 0x58");

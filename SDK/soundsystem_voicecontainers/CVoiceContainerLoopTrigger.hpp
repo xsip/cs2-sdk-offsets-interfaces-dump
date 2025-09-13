@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerLoopTrigger : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			public:
 			soundsystem_voicecontainers::CSoundContainerReference m_sound; // 0xb8 | Schema_DeclaredClass | Size: 0x18
 			float32 m_flRetriggerTimeMin; // 0xd0 | Schema_Builtin | Size: 0x4
 			float32 m_flRetriggerTimeMax; // 0xd4 | Schema_Builtin | Size: 0x4

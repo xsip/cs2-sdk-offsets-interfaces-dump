@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CSMatchStats_t : public CS2::client::CSPerRoundStats_t {
 		public:
-			public:
 			int32_t m_iEnemy5Ks; // 0x68 | Schema_Builtin | Size: 0x4
 			int32_t m_iEnemy4Ks; // 0x6c | Schema_Builtin | Size: 0x4
 			int32_t m_iEnemy3Ks; // 0x70 | Schema_Builtin | Size: 0x4

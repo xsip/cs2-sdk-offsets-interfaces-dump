@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSObserver_MovementServices : public CS2::client::CPlayer_MovementServices {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CCSObserver_MovementServices) == 0x240, "CCSObserver_MovementServices size should be 0x240");
 	}

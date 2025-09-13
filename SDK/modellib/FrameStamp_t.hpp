@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class FrameStamp_t  {
 		public:
-			public:
 			float32 m_flTime; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flEntitySimTime; // 0x4 | Schema_Builtin | Size: 0x4
 			bool m_bTeleportTick; // 0x8 | Schema_Builtin | Size: 0x1

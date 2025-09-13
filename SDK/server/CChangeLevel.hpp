@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CChangeLevel : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			GlobalTypes::CUtlString m_sMapName; // 0x9b8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_sLandmarkName; // 0x9c0 | Schema_Atomic | Size: 0x8
 			entity2::CEntityIOOutput m_OnChangeLevel; // 0x9c8 | Schema_DeclaredClass | Size: 0x28

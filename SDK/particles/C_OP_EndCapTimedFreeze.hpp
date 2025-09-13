@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_EndCapTimedFreeze : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_flFreezeTime; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 		};
 		static_assert(offsetof(CS2::particles::C_OP_EndCapTimedFreeze, m_flFreezeTime) == 0x1C0, "m_flFreezeTime in C_OP_EndCapTimedFreeze should be at offset 0x1C0");

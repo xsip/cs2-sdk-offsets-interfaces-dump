@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmReferencePoseTask : public CS2::animlib::CNmPoseTask {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::animlib::CNmReferencePoseTask) == 0x50, "CNmReferencePoseTask size should be 0x50");
 	}

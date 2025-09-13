@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CMolotovProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
-			public:
 			bool m_bIsIncGrenade; // 0xc20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17);
 			bool m_bDetonated; // 0xc38 | Schema_Builtin | Size: 0x1

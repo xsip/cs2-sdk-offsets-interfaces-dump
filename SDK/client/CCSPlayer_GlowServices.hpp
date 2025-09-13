@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_GlowServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::client::CCSPlayer_GlowServices) == 0x48, "CCSPlayer_GlowServices size should be 0x48");

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CDSPMixgroupModifier  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_mixgroup; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 m_flModifier; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flModifierMin; // 0xc | Schema_Builtin | Size: 0x4

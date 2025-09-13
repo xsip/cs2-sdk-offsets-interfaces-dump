@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CSimTimer : public CS2::client::CSimpleSimTimer {
 		public:
-			public:
 			float32 m_flInterval; // 0x8 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::CSimTimer, m_flInterval) == 0x8, "m_flInterval in CSimTimer should be at offset 0x8");

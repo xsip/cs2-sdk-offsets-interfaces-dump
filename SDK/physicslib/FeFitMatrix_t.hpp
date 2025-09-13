@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeFitMatrix_t  {
 		public:
-			public:
 			GlobalTypes::CTransform bone; // 0x0 | Schema_Atomic | Size: 0x20
 			GlobalTypes::Vector vCenter; // 0x20 | Schema_Atomic | Size: 0xc
 			uint16_t nEnd; // 0x2c | Schema_Builtin | Size: 0x2

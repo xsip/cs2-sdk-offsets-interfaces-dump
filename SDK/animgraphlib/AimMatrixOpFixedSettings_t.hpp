@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class AimMatrixOpFixedSettings_t  {
 		public:
-			public:
 			modellib::CAnimAttachment m_attachment; // 0x0 | Schema_DeclaredClass | Size: 0x80
 			animgraphlib::CAnimInputDamping m_damping; // 0x80 | Schema_DeclaredClass | Size: 0x18
 			animgraphlib::CPoseHandle m_poseCacheHandles[10]; // 0x98 | Schema_FixedArray | Size: 0x190

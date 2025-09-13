@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CPathMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< float32 > m_pathTimeSamples; // 0x50 | Schema_Atomic | Size: 0x18
 			char  m_pathTimeSamples[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			float32 m_flDistance; // 0x68 | Schema_Builtin | Size: 0x4

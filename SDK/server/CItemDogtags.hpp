@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CItemDogtags : public CS2::server::CItem {
 		public:
-			public:
 			// server::CHandle< server::CCSPlayerPawn > m_OwningPlayer; // 0xb50 | Schema_Atomic | Size: 0x4
 			char  m_OwningPlayer[0x4]; // 0xb50 | Schema_Atomic | Size: 0x4
 			// server::CHandle< server::CCSPlayerPawn > m_KillingPlayer; // 0xb54 | Schema_Atomic | Size: 0x4

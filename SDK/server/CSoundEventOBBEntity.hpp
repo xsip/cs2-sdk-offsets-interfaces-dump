@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundEventOBBEntity : public CS2::server::CSoundEventEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vMins; // 0x5b8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxs; // 0x5c4 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x10); // End padding

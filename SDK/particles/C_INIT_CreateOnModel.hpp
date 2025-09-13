@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateOnModel : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleModelInput m_modelInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x60
 			particleslib::CParticleTransformInput m_transformInput; // 0x228 | Schema_DeclaredClass | Size: 0x68
 			int32_t m_nForceInModel; // 0x290 | Schema_Builtin | Size: 0x4

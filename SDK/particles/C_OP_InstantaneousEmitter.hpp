@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_InstantaneousEmitter : public CS2::particles::CParticleFunctionEmitter {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_nParticlesToEmit; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionFloatInput m_flStartTime; // 0x328 | Schema_DeclaredClass | Size: 0x160
 			float32 m_flInitFromKilledParentParticles; // 0x488 | Schema_Builtin | Size: 0x4

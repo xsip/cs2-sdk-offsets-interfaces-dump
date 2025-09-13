@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseFuncs_GameParticleManager  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::server::CPulseFuncs_GameParticleManager) == 0x1, "CPulseFuncs_GameParticleManager size should be 0x1");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderScreenShake : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			float32 m_flDurationScale; // 0x210 | Schema_Builtin | Size: 0x4
 			float32 m_flRadiusScale; // 0x214 | Schema_Builtin | Size: 0x4
 			float32 m_flFrequencyScale; // 0x218 | Schema_Builtin | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace compositematerialslib {
 		class CompositeMaterialAssemblyProcedure_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CResourceNameTyped< CWeakHandle< InfoForResourceTypeCCompositeMaterialKit > > > m_vecCompMatIncludes; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_vecCompMatIncludes[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialMatchFilter_t > m_vecMatchFilters; // 0x18 | Schema_Atomic | Size: 0x18

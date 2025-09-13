@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncMonitor : public CS2::server::CFuncBrush {
 		public:
-			public:
 			GlobalTypes::CUtlString m_targetCamera; // 0x808 | Schema_Atomic | Size: 0x8
 			int32_t m_nResolutionEnum; // 0x810 | Schema_Builtin | Size: 0x4
 			bool m_bRenderShadows; // 0x814 | Schema_Builtin | Size: 0x1

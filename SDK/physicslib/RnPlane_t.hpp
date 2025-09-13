@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnPlane_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vNormal; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_flOffset; // 0xc | Schema_Builtin | Size: 0x4
 		};

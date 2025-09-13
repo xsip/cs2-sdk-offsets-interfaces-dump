@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class HullFlags_t  {
 		public:
-			public:
 			bool m_bHull_Human; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bHull_SmallCentered; // 0x1 | Schema_Builtin | Size: 0x1
 			bool m_bHull_WideHuman; // 0x2 | Schema_Builtin | Size: 0x1

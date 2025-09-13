@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CChoiceUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x58 | Schema_Atomic | Size: 0x18
 			char  m_children[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_weights; // 0x70 | Schema_Atomic | Size: 0x18

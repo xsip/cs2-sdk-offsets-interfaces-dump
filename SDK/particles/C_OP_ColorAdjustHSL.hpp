@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ColorAdjustHSL : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flHueAdjust; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flSaturationAdjust; // 0x320 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flLightnessAdjust; // 0x480 | Schema_DeclaredClass | Size: 0x160

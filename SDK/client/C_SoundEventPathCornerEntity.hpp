@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundEventPathCornerEntity : public CS2::client::C_SoundEventEntity {
 		public:
-			public:
 			// GlobalTypes::C_NetworkUtlVectorBase< client::SoundeventPathCornerPairNetworked_t > m_vecCornerPairsNetworked; // 0x6c0 | Schema_Atomic | Size: 0x18
 			char  m_vecCornerPairsNetworked[0x18]; // 0x6c0 | Schema_Atomic | Size: 0x18
 		};

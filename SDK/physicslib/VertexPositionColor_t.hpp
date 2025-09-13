@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class VertexPositionColor_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};

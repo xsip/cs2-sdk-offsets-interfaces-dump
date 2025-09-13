@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_FuncElectrifiedVolume : public CS2::client::C_FuncBrush {
 		public:
-			public:
 			client::ParticleIndex_t m_nAmbientEffect; // 0xec0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_EffectName; // 0xec8 | Schema_Atomic | Size: 0x8

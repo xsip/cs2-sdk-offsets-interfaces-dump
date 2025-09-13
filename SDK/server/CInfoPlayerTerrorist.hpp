@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoPlayerTerrorist : public CS2::server::SpawnPoint {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CInfoPlayerTerrorist) == 0x500, "CInfoPlayerTerrorist size should be 0x500");
 	}

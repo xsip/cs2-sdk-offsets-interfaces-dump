@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable : public CS2::smartprops::CSmartPropParameter {
 		public:
-			public:
 			GlobalTypes::CUtlString m_VariableName; // 0x10 | Schema_Atomic | Size: 0x8
 			bool m_bExposeAsParameter; // 0x18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPathMover : public CS2::server::CPathSimple {
 		public:
-			public:
 			// server::CUtlVector< server.dll::CHandle< CMoverPathNode > > m_vecPathNodes; // 0x600 | Schema_Atomic | Size: 0x18
 			char  m_vecPathNodes[0x18]; // 0x600 | Schema_Atomic | Size: 0x18
 			// server::CUtlVector< server.dll::CHandle< CFuncMover > > m_vecMovers; // 0x618 | Schema_Atomic | Size: 0x18

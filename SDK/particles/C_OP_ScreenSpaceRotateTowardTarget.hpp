@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ScreenSpaceRotateTowardTarget : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleVecInput m_vecTargetPosition; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x838 | Schema_DeclaredClass | Size: 0x160
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x998 | Schema_DeclaredEnum | Size: 0x4

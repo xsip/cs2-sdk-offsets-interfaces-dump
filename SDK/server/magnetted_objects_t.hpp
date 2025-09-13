@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class magnetted_objects_t  {
 		public:
-			public:
 			S2_PAD(0x8);
 			// server::CHandle< server::CBaseEntity > hEntity; // 0x8 | Schema_Atomic | Size: 0x4
 			char  hEntity[0x4]; // 0x8 | Schema_Atomic | Size: 0x4

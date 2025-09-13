@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeRodConstraint_t  {
 		public:
-			public:
 			uint16_t nNode[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 			float32 flMaxDist; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flMinDist; // 0x8 | Schema_Builtin | Size: 0x4

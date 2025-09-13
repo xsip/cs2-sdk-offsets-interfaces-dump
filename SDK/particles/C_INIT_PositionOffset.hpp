@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionOffset : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CPerParticleVecInput m_OffsetMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CPerParticleVecInput m_OffsetMax; // 0x840 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CParticleTransformInput m_TransformInput; // 0xeb8 | Schema_DeclaredClass | Size: 0x68

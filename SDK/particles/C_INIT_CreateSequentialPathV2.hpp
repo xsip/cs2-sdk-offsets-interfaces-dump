@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateSequentialPathV2 : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_fMaxDistance; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionFloatInput m_flNumToAssign; // 0x328 | Schema_DeclaredClass | Size: 0x160
 			bool m_bLoop; // 0x488 | Schema_Builtin | Size: 0x1

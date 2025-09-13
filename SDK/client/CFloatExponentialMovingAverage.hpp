@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CFloatExponentialMovingAverage  {
 		public:
-			public:
 			S2_PAD(0x14);
 		};
 		static_assert(sizeof(CS2::client::CFloatExponentialMovingAverage) == 0x14, "CFloatExponentialMovingAverage size should be 0x14");

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicRelayAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CLogicRelayAPI) == 0x8, "CLogicRelayAPI size should be 0x8");

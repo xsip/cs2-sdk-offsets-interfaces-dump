@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_Variable  {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_Name; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlString m_Description; // 0x10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CPulseValueFullType m_Type; // 0x18 | Schema_Atomic | Size: 0x18

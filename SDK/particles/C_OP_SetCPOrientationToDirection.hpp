@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetCPOrientationToDirection : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			int32_t m_nInputControlPoint; // 0x1c0 | Schema_Builtin | Size: 0x4
 			int32_t m_nOutputControlPoint; // 0x1c4 | Schema_Builtin | Size: 0x4
 		};

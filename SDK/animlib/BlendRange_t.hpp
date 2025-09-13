@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class BlendRange_t  {
 		public:
-			public:
 			int16_t m_nInputIdx0; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nInputIdx1; // 0x2 | Schema_Builtin | Size: 0x2
 			GlobalTypes::Range_t m_parameterValueRange; // 0x4 | Schema_Atomic | Size: 0x8

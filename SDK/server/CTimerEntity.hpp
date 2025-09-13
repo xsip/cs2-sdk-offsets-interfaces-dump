@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTimerEntity : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnTimer; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnTimerHigh; // 0x518 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnTimerLow; // 0x540 | Schema_DeclaredClass | Size: 0x28

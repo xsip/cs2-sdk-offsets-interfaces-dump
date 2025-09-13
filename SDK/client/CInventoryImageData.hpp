@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CInventoryImageData  {
 		public:
-			public:
 			client::InventoryNodeType_t m_nNodeType; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString name; // 0x8 | Schema_Atomic | Size: 0x8

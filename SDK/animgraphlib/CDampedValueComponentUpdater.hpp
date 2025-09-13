@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CDampedValueComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::CDampedValueUpdateItem > m_items; // 0x30 | Schema_Atomic | Size: 0x18
 			char  m_items[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};

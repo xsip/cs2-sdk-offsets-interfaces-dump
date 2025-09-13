@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapNamedModelElementOnceTimed : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x1c0 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0x1c0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_inNames; // 0x1c8 | Schema_Atomic | Size: 0x18

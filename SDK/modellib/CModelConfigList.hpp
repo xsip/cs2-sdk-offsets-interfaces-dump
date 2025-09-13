@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfigList  {
 		public:
-			public:
 			bool m_bHideMaterialGroupInTools; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bHideRenderColorInTools; // 0x1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);

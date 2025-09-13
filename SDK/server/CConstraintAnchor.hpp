@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CConstraintAnchor : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			float32 m_massScale; // 0xa78 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

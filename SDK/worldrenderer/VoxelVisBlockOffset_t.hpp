@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class VoxelVisBlockOffset_t  {
 		public:
-			public:
 			uint32_t m_nOffset; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nElementCount; // 0x4 | Schema_Builtin | Size: 0x4
 		};

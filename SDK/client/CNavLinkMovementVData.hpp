@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CNavLinkMovementVData  {
 		public:
-			public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName; // 0x0 | Schema_Atomic | Size: 0xe0
 			char  m_sToolsOnlyOwnerModelName[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
 			bool m_bIsInterpolated; // 0xe0 | Schema_Builtin | Size: 0x1

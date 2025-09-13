@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvWindClientside : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			client::C_EnvWindShared m_EnvWindShared; // 0x5f8 | Schema_DeclaredClass | Size: 0xf8
 		};
 		static_assert(offsetof(CS2::client::C_EnvWindClientside, m_EnvWindShared) == 0x5F8, "m_EnvWindShared in C_EnvWindClientside should be at offset 0x5F8");

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeAntiTunnelGroupBuild_t  {
 		public:
-			public:
 			uint32_t m_nVertexMapHash; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nCollisionMask; // 0x4 | Schema_Builtin | Size: 0x4
 		};

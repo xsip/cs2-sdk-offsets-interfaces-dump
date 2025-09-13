@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTankTrainAI : public CS2::server::CPointEntity {
 		public:
-			public:
 			// server::CHandle< server::CFuncTrackTrain > m_hTrain; // 0x4f0 | Schema_Atomic | Size: 0x4
 			char  m_hTrain[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x4f4 | Schema_Atomic | Size: 0x4

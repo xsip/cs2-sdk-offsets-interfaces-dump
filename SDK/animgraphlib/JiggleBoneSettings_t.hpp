@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class JiggleBoneSettings_t  {
 		public:
-			public:
 			int32_t m_nBoneIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flSpringStrength; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxTimeStep; // 0x8 | Schema_Builtin | Size: 0x4

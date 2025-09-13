@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayerResource : public CS2::server::CBaseEntity {
 		public:
-			public:
 			bool m_bHostageAlive[12]; // 0x4f0 | Schema_FixedArray | Size: 0xc
 			bool m_isHostageFollowingSomeone[12]; // 0x4fc | Schema_FixedArray | Size: 0xc
 			GlobalTypes::CEntityIndex m_iHostageEntityIDs[12]; // 0x508 | Schema_FixedArray | Size: 0x30

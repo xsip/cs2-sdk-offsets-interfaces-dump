@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class EventServerBeginAsyncPostTickWork_t : public CS2::client::EventPostAdvanceTick_t {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::EventServerBeginAsyncPostTickWork_t) == 0x40, "EventServerBeginAsyncPostTickWork_t size should be 0x40");
 	}

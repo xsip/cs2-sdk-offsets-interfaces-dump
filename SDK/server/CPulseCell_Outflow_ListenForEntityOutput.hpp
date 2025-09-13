@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_ListenForEntityOutput : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			pulse_runtime_lib::SignatureOutflow_Resume m_OnFired; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0x90 | Schema_DeclaredClass | Size: 0x48
 			GlobalTypes::CGlobalSymbol m_strEntityOutput; // 0xd8 | Schema_Atomic | Size: 0x8

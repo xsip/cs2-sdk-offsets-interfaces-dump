@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeFollowNode_t  {
 		public:
-			public:
 			uint16_t nParentNode; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t nChildNode; // 0x2 | Schema_Builtin | Size: 0x2
 			float32 flWeight; // 0x4 | Schema_Builtin | Size: 0x4

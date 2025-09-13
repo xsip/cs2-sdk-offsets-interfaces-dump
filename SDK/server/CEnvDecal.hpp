@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvDecal : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0x7e8 | Schema_Atomic | Size: 0x8
 			char  m_hDecalMaterial[0x8]; // 0x7e8 | Schema_Atomic | Size: 0x8
 			float32 m_flWidth; // 0x7f0 | Schema_Builtin | Size: 0x4

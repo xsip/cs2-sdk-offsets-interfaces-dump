@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_StattrakModule : public CS2::client::C_CS2WeaponModuleBase {
 		public:
-			public:
 			bool m_bKnife; // 0x1170 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

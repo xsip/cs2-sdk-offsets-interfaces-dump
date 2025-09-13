@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particles {
 		class ControlPointReference_t  {
 		public:
-			public:
 			int32_t m_controlPointNameString; // 0x0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vOffsetFromControlPoint; // 0x4 | Schema_Atomic | Size: 0xc
 			bool m_bOffsetInLocalSpace; // 0x10 | Schema_Builtin | Size: 0x1

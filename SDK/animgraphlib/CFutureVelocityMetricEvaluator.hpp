@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFutureVelocityMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
-			public:
 			float32 m_flDistance; // 0x50 | Schema_Builtin | Size: 0x4
 			float32 m_flStoppingDistance; // 0x54 | Schema_Builtin | Size: 0x4
 			float32 m_flTargetSpeed; // 0x58 | Schema_Builtin | Size: 0x4

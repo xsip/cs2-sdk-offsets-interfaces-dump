@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicEventListener : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			S2_PAD(0x10);
 			GlobalTypes::CUtlString m_strEventName; // 0x500 | Schema_Atomic | Size: 0x8
 			bool m_bIsEnabled; // 0x508 | Schema_Builtin | Size: 0x1

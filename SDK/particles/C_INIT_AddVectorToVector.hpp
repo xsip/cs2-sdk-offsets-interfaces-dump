@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_AddVectorToVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			GlobalTypes::Vector m_vecScale; // 0x1c8 | Schema_Atomic | Size: 0xc
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4

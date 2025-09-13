@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerDecayingSineWave : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			public:
 			float32 m_flFrequency; // 0xb8 | Schema_Builtin | Size: 0x4
 			float32 m_flDecayTime; // 0xbc | Schema_Builtin | Size: 0x4
 		};

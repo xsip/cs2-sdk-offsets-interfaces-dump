@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionPlaceOnGround : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flOffset; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flMaxTraceLength; // 0x328 | Schema_DeclaredClass | Size: 0x160
 			char m_CollisionGroupName[128]; // 0x488 | Schema_FixedArray | Size: 0x80

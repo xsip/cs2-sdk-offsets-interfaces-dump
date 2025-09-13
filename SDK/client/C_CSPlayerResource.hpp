@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSPlayerResource : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			bool m_bHostageAlive[12]; // 0x5f8 | Schema_FixedArray | Size: 0xc
 			bool m_isHostageFollowingSomeone[12]; // 0x604 | Schema_FixedArray | Size: 0xc
 			GlobalTypes::CEntityIndex m_iHostageEntityIDs[12]; // 0x610 | Schema_FixedArray | Size: 0x30

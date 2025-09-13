@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PlayerPing : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x30);
 			// client::CHandle< client::C_CSPlayerPawn > m_hPlayer; // 0x628 | Schema_Atomic | Size: 0x4
 			char  m_hPlayer[0x4]; // 0x628 | Schema_Atomic | Size: 0x4

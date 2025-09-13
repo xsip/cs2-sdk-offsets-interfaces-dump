@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_TurbulenceForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			float32 m_flNoiseCoordScale0; // 0x1d0 | Schema_Builtin | Size: 0x4
 			float32 m_flNoiseCoordScale1; // 0x1d4 | Schema_Builtin | Size: 0x4
 			float32 m_flNoiseCoordScale2; // 0x1d8 | Schema_Builtin | Size: 0x4

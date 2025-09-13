@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CGameRulesProxy : public CS2::server::CBaseEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CGameRulesProxy) == 0x4F0, "CGameRulesProxy size should be 0x4F0");
 	}

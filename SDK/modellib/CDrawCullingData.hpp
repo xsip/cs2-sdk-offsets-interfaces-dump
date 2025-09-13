@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CDrawCullingData  {
 		public:
-			public:
 			int8_t m_ConeAxis[3]; // 0x0 | Schema_FixedArray | Size: 0x3
 			int8_t m_ConeCutoff; // 0x3 | Schema_Builtin | Size: 0x1
 		};

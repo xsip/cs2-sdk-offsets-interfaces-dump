@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPropDoorRotating : public CS2::server::CBasePropDoor {
 		public:
-			public:
 			GlobalTypes::Vector m_vecAxis; // 0xfe0 | Schema_Atomic | Size: 0xc
 			float32 m_flDistance; // 0xfec | Schema_Builtin | Size: 0x4
 			server::PropDoorRotatingSpawnPos_t m_eSpawnPosition; // 0xff0 | Schema_DeclaredEnum | Size: 0x4

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseFilter : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			bool m_bNegated; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			entity2::CEntityIOOutput m_OnPass; // 0x4f8 | Schema_DeclaredClass | Size: 0x28

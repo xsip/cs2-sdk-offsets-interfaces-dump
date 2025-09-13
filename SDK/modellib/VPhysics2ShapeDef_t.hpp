@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysics2ShapeDef_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< physicslib::RnSphereDesc_t > m_spheres; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_spheres[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< physicslib::RnCapsuleDesc_t > m_capsules; // 0x18 | Schema_Atomic | Size: 0x18

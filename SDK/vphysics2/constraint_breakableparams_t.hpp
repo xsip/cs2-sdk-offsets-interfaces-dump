@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace vphysics2 {
 		class constraint_breakableparams_t  {
 		public:
-			public:
 			float32 strength; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 forceLimit; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 torqueLimit; // 0x8 | Schema_Builtin | Size: 0x4

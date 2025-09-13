@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerAmpedDecayingSineWave : public CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave {
 		public:
-			public:
 			float32 m_flGainAmount; // 0xc0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

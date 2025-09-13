@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CDirectionalBlendUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
-			public:
 			S2_PAD(0x4);
 			animationsystem::HSequence m_hSequences[8]; // 0x5c | Schema_FixedArray | Size: 0x100
 			animgraphlib::CAnimInputDamping m_damping; // 0x80 | Schema_DeclaredClass | Size: 0x18

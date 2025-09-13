@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CLookComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			S2_PAD(0x4);
 			animgraphlib::CAnimParamHandle m_hLookHeading; // 0x34 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_hLookHeadingNormalized; // 0x36 | Schema_DeclaredClass | Size: 0x2

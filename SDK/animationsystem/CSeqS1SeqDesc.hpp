@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqS1SeqDesc  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_sName; // 0x0 | Schema_Atomic | Size: 0x10
 			animationsystem::CSeqSeqDescFlag m_flags; // 0x10 | Schema_DeclaredClass | Size: 0xb
 			S2_PAD(0x5);

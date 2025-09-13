@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_IntervalTimer : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_ResumePoint m_Completed; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::SignatureOutflow_Continue m_OnInterval; // 0x90 | Schema_DeclaredClass | Size: 0x48
 		};

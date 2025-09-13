@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_InfoVisibilityBox : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x4);
 			int32_t m_nMode; // 0x5fc | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vBoxSize; // 0x600 | Schema_Atomic | Size: 0xc

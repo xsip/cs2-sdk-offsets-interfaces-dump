@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			GlobalTypes::Vector m_vecMin; // 0x1c8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecMax; // 0x1d4 | Schema_Atomic | Size: 0xc
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e0 | Schema_DeclaredClass | Size: 0x4

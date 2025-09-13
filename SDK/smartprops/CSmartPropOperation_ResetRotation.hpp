@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_ResetRotation : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeBool m_bIgnoreObjectRotation; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bResetPitch; // 0x90 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bResetYaw; // 0xd0 | Schema_Atomic | Size: 0x40

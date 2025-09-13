@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CPhysSurfacePropertiesVehicle  {
 		public:
-			public:
 			float32 m_wheelDrag; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_wheelFrictionScale; // 0x4 | Schema_Builtin | Size: 0x4
 		};

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace modellib {
 		class CMaterialDrawDescriptor  {
 		public:
-			public:
 			float32 m_flUvDensity; // 0x0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vTintColor; // 0x4 | Schema_Atomic | Size: 0xc
 			float32 m_flAlpha; // 0x10 | Schema_Builtin | Size: 0x4

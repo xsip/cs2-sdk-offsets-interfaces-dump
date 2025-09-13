@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBinaryUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			animgraphlib::CAnimUpdateNodeRef m_pChild1; // 0x60 | Schema_DeclaredClass | Size: 0x10
 			animgraphlib::CAnimUpdateNodeRef m_pChild2; // 0x70 | Schema_DeclaredClass | Size: 0x10

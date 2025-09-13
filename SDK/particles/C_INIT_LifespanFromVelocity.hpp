@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_LifespanFromVelocity : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			GlobalTypes::Vector m_vecComponentScale; // 0x1c8 | Schema_Atomic | Size: 0xc
 			float32 m_flTraceOffset; // 0x1d4 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxTraceLength; // 0x1d8 | Schema_Builtin | Size: 0x4

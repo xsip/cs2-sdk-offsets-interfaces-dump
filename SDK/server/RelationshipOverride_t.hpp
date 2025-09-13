@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class RelationshipOverride_t : public CS2::server::Relationship_t {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > entity; // 0x8 | Schema_Atomic | Size: 0x4
 			char  entity[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
 			client::Class_T classType; // 0xc | Schema_DeclaredEnum | Size: 0x4

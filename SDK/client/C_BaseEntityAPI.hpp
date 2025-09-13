@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseEntityAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::client::C_BaseEntityAPI) == 0x8, "C_BaseEntityAPI size should be 0x8");

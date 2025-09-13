@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoDynamicShadowHintBox : public CS2::server::CInfoDynamicShadowHint {
 		public:
-			public:
 			GlobalTypes::Vector m_vBoxMins; // 0x508 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vBoxMaxs; // 0x514 | Schema_Atomic | Size: 0xc
 		};

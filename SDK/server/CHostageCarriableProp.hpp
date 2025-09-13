@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CHostageCarriableProp : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CHostageCarriableProp) == 0xA78, "CHostageCarriableProp size should be 0xA78");
 	}

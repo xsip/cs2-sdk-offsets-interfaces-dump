@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicAchievement : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CUtlSymbolLarge m_iszAchievementEventID; // 0x4f8 | Schema_Atomic | Size: 0x8

@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGameRules : public CS2::client::C_TeamplayRules {
 		public:
-			public:
 			bool m_bFreezePeriod; // 0x40 | Schema_Builtin | Size: 0x1
 			bool m_bWarmupPeriod; // 0x41 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

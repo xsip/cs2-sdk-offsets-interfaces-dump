@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class RenderHairStrandInfo_t  {
 		public:
-			public:
 			uint32_t m_nGuideHairIndices_nSurfaceTriIndex[2]; // 0x0 | Schema_FixedArray | Size: 0x8
 			uint16_t m_vGuideBary_vBaseBary[4]; // 0x8 | Schema_FixedArray | Size: 0x8
 			uint16_t m_vRootOffset_flLengthScale[4]; // 0x10 | Schema_FixedArray | Size: 0x8

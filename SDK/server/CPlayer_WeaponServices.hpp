@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_WeaponServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBasePlayerWeapon > > m_hMyWeapons; // 0x40 | Schema_Atomic | Size: 0x18
 			char  m_hMyWeapons[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			// server::CHandle< server::CBasePlayerWeapon > m_hActiveWeapon; // 0x58 | Schema_Atomic | Size: 0x4

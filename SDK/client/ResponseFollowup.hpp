@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class ResponseFollowup  {
 		public:
-			public:
 			char* followup_concept; // 0x0 | Schema_Ptr | Size: 0x8
 			char* followup_contexts; // 0x8 | Schema_Ptr | Size: 0x8
 			float32 followup_delay; // 0x10 | Schema_Builtin | Size: 0x4

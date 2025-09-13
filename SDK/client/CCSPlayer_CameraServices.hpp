@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_CameraServices : public CS2::client::CCSPlayerBase_CameraServices {
 		public:
-			public:
 			float32 m_flDeathCamTilt; // 0x2a0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::Vector m_vClientScopeInaccuracy; // 0x2a8 | Schema_Atomic | Size: 0xc

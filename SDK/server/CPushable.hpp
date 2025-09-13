@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPushable : public CS2::server::CBreakable {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPushable) == 0x8C0, "CPushable size should be 0x8C0");
 	}

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitFloatCollection : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_InputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particles::ParticleAttributeIndex_t m_nOutputField; // 0x328 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding

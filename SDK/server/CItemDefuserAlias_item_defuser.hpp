@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CItemDefuserAlias_item_defuser : public CS2::server::CItemDefuser {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CItemDefuserAlias_item_defuser) == 0xB70, "CItemDefuserAlias_item_defuser size should be 0xB70");
 	}

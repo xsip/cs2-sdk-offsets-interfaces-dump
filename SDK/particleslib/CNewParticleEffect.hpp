@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CNewParticleEffect : public CS2::particleslib::IParticleEffect {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CNewParticleEffect* m_pNext; // 0x10 | Schema_Ptr | Size: 0x8
 			GlobalTypes::CNewParticleEffect* m_pPrev; // 0x18 | Schema_Ptr | Size: 0x8

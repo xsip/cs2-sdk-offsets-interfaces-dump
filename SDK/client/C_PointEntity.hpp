@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointEntity : public CS2::client::C_BaseEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_PointEntity) == 0x5F8, "C_PointEntity size should be 0x5F8");
 	}

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseButton : public CS2::server::CBaseToggle {
 		public:
-			public:
 			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x868 | Schema_Atomic | Size: 0xc
 			bool m_fStayPushed; // 0x874 | Schema_Builtin | Size: 0x1
 			bool m_fRotating; // 0x875 | Schema_Builtin | Size: 0x1

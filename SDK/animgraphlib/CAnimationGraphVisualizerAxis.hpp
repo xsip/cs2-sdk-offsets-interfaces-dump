@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimationGraphVisualizerAxis : public CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase {
 		public:
-			public:
 			GlobalTypes::CTransform m_xWsTransform; // 0x40 | Schema_Atomic | Size: 0x20
 			float32 m_flAxisSize; // 0x60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding

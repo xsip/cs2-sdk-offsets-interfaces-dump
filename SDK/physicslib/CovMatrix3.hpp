@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class CovMatrix3  {
 		public:
-			public:
 			GlobalTypes::Vector m_vDiag; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_flXY; // 0xc | Schema_Builtin | Size: 0x4
 			float32 m_flXZ; // 0x10 | Schema_Builtin | Size: 0x4

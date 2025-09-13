@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapNamedModelMeshGroupEndCap : public CS2::particles::C_OP_RemapNamedModelElementEndCap {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::C_OP_RemapNamedModelMeshGroupEndCap) == 0x220, "C_OP_RemapNamedModelMeshGroupEndCap size should be 0x220");
 	}

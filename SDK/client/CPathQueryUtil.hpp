@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CPathQueryUtil  {
 		public:
-			public:
 			S2_PAD(0x10);
 			GlobalTypes::CTransform m_PathToEntityTransform; // 0x10 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vecPathSamplePositions; // 0x30 | Schema_Atomic | Size: 0x18

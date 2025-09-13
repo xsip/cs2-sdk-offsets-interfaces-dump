@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropSelectionCriteria_PathPosition : public CS2::smartprops::CSmartPropSelectionCriteria {
 		public:
-			public:
 			smartprops::CSmartPropAttributePathPositions m_PlaceAtPositions; // 0x48 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeInt m_nPlaceEveryNthPosition; // 0x88 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeInt m_nNthPositionIndexOffset; // 0xc8 | Schema_Atomic | Size: 0x40

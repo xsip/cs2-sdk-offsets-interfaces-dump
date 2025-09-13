@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace client {
 		class CPlayer_CameraServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			GlobalTypes::QAngle m_vecCsViewPunchAngle; // 0x40 | Schema_Atomic | Size: 0xc
 			entity2::GameTick_t m_nCsViewPunchAngleTick; // 0x4c | Schema_DeclaredClass | Size: 0x4
 			float32 m_flCsViewPunchAngleTickRatio; // 0x50 | Schema_Builtin | Size: 0x4

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderLights : public CS2::particles::C_OP_RenderPoints {
 		public:
-			public:
 			float32 m_flAnimationRate; // 0x218 | Schema_Builtin | Size: 0x4
 			particles::AnimationType_t m_nAnimationType; // 0x21c | Schema_DeclaredEnum | Size: 0x4
 			bool m_bAnimateInFPS; // 0x220 | Schema_Builtin | Size: 0x1

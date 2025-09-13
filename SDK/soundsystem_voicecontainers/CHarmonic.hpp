@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CHarmonic  {
 		public:
-			public:
 			soundsystem_voicecontainers::EWaveform m_nWaveform; // 0x0 | Schema_DeclaredEnum | Size: 0x1
 			soundsystem_voicecontainers::EMidiNote m_nFundamental; // 0x1 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x2);

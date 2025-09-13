@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_World : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_World) == 0xEC0, "C_World size should be 0xEC0");
 	}

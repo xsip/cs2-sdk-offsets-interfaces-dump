@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseCombatCharacter : public CS2::server::CBaseFlex {
 		public:
-			public:
 			bool m_bForceServerRagdoll; // 0xb08 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// server::CNetworkUtlVectorBase< server.dll::CHandle< CEconWearable > > m_hMyWearables; // 0xb10 | Schema_Atomic | Size: 0x18

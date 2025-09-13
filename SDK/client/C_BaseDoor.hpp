@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseDoor : public CS2::client::C_BaseToggle {
 		public:
-			public:
 			bool m_bIsUsable; // 0xec0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

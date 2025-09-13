@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnHalfEdge_t  {
 		public:
-			public:
 			uint8_t m_nNext; // 0x0 | Schema_Builtin | Size: 0x1
 			uint8_t m_nTwin; // 0x1 | Schema_Builtin | Size: 0x1
 			uint8_t m_nOrigin; // 0x2 | Schema_Builtin | Size: 0x1

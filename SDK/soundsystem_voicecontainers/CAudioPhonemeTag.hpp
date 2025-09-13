@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CAudioPhonemeTag  {
 		public:
-			public:
 			float32 m_flStartTime; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flEndTime; // 0x4 | Schema_Builtin | Size: 0x4
 			int32_t m_nPhonemeCode; // 0x8 | Schema_Builtin | Size: 0x4

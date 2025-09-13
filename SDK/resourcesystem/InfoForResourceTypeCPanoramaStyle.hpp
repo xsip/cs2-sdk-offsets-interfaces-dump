@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCPanoramaStyle  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCPanoramaStyle) == 0x1, "InfoForResourceTypeCPanoramaStyle size should be 0x1");

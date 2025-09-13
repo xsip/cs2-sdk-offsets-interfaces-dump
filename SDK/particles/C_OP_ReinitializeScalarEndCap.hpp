@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ReinitializeScalarEndCap : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flOutputMin; // 0x1c4 | Schema_Builtin | Size: 0x4
 			float32 m_flOutputMax; // 0x1c8 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointPrefab : public CS2::server::CServerOnlyPointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_targetMapName; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_forceWorldGroupID; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_associatedRelayTargetName; // 0x500 | Schema_Atomic | Size: 0x8

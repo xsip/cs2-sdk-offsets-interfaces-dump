@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSlowDownOnSlopesUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			float32 m_flSlowDownStrength; // 0x70 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSoundeventPrioritySchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			GlobalTypes::CUtlString m_priorityValue; // 0x18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_priorityVolumeScalar; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_priorityContributeButDontRead; // 0x28 | Schema_Atomic | Size: 0x8

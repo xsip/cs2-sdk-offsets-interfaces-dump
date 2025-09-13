@@ -22,7 +22,6 @@ namespace CS2 {
 	namespace client {
 		class C_Hostage : public CS2::client::C_BaseCombatCharacter {
 		public:
-			public:
 			client::EntitySpottedState_t m_entitySpottedState; // 0x1400 | Schema_DeclaredClass | Size: 0x18
 			// client::CHandle< client::C_BaseEntity > m_leader; // 0x1418 | Schema_Atomic | Size: 0x4
 			char  m_leader[0x4]; // 0x1418 | Schema_Atomic | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_RandomScale : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeFloat m_flRandomScaleMin; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flRandomScaleMax; // 0x90 | Schema_Atomic | Size: 0x40
 		};

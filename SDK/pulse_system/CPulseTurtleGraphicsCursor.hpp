@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseTurtleGraphicsCursor : public CS2::pulse_runtime_lib::CPulseExecCursor {
 		public:
-			public:
 			GlobalTypes::Color m_Color; // 0xd0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector2D m_vPos; // 0xd4 | Schema_Atomic | Size: 0x8
 			float32 m_flHeadingDeg; // 0xdc | Schema_Builtin | Size: 0x4

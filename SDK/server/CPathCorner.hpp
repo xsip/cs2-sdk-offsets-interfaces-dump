@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPathCorner : public CS2::server::CPointEntity {
 		public:
-			public:
 			float32 m_flWait; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_flRadius; // 0x4f4 | Schema_Builtin | Size: 0x4
 			entity2::CEntityIOOutput m_OnPass; // 0x4f8 | Schema_DeclaredClass | Size: 0x28

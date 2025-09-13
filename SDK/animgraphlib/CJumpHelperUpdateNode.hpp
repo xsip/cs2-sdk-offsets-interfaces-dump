@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CJumpHelperUpdateNode : public CS2::animgraphlib::CSequenceUpdateNode {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_hTargetParam; // 0xb0 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x2);
 			GlobalTypes::Vector m_flOriginalJumpMovement; // 0xb4 | Schema_Atomic | Size: 0xc

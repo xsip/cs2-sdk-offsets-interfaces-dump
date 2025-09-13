@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CPointOrient : public CS2::server::CBaseEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszSpawnTargetName; // 0x4f0 | Schema_Atomic | Size: 0x8
 			// server::CHandle< server::CBaseEntity > m_hTarget; // 0x4f8 | Schema_Atomic | Size: 0x4
 			char  m_hTarget[0x4]; // 0x4f8 | Schema_Atomic | Size: 0x4

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace client {
 		class CDestructiblePartsSystemData_DamageLevel  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_sName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_sBreakablePieceName; // 0x8 | Schema_Atomic | Size: 0x8
 			int32_t m_nBodyGroupValue; // 0x10 | Schema_Builtin | Size: 0x4

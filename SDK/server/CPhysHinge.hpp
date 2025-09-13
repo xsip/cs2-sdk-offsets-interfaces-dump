@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysHinge : public CS2::server::CPhysConstraint {
 		public:
-			public:
 			S2_PAD(0x8);
 			server::ConstraintSoundInfo m_soundInfo; // 0x568 | Schema_DeclaredClass | Size: 0x98
 			entity2::CEntityIOOutput m_NotifyMinLimitReached; // 0x600 | Schema_DeclaredClass | Size: 0x28

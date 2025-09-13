@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace modellib {
 		class CPhysSurfaceProperties  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			uint32_t m_nameHash; // 0x8 | Schema_Builtin | Size: 0x4
 			uint32_t m_baseNameHash; // 0xc | Schema_Builtin | Size: 0x4

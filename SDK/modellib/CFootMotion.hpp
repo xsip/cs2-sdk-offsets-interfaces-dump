@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CFootMotion  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< modellib::CFootStride > m_strides; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_strides[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_name; // 0x18 | Schema_Atomic | Size: 0x8

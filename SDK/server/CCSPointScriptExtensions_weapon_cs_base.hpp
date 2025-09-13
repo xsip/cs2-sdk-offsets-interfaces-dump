@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPointScriptExtensions_weapon_cs_base  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CCSPointScriptExtensions_weapon_cs_base) == 0x8, "CCSPointScriptExtensions_weapon_cs_base size should be 0x8");

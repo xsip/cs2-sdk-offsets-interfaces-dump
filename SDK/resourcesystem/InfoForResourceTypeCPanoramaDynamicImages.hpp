@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCPanoramaDynamicImages  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCPanoramaDynamicImages) == 0x1, "InfoForResourceTypeCPanoramaDynamicImages size should be 0x1");

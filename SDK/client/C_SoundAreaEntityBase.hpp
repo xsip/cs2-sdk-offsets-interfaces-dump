@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundAreaEntityBase : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			bool m_bDisabled; // 0x5f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			bool m_bWasEnabled; // 0x600 | Schema_Builtin | Size: 0x1

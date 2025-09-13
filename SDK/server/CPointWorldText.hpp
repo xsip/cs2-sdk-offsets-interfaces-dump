@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CPointWorldText : public CS2::server::CModelPointEntity {
 		public:
-			public:
 			char m_messageText[512]; // 0x7e8 | Schema_FixedArray | Size: 0x200
 			char m_FontName[64]; // 0x9e8 | Schema_FixedArray | Size: 0x40
 			char m_BackgroundMaterialName[64]; // 0xa28 | Schema_FixedArray | Size: 0x40

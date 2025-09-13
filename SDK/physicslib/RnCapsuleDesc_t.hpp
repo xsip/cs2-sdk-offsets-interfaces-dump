@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnCapsuleDesc_t : public CS2::physicslib::RnShapeDesc_t {
 		public:
-			public:
 			physicslib::RnCapsule_t m_Capsule; // 0x18 | Schema_DeclaredClass | Size: 0x1c
 			S2_PAD(0x4); // End padding
 		};

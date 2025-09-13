@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_FitOnLine : public CS2::smartprops::CSmartPropElement_Group {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeVector m_vStart; // 0xa0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_vEnd; // 0xe0 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_PointSpace; // 0x120 | Schema_DeclaredClass | Size: 0x40

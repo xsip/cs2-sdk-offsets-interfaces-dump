@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_MovementServices : public CS2::server::CPlayer_MovementServices_Humanoid {
 		public:
-			public:
 			GlobalTypes::Vector m_vecLadderNormal; // 0x288 | Schema_Atomic | Size: 0xc
 			int32_t m_nLadderSurfacePropIndex; // 0x294 | Schema_Builtin | Size: 0x4
 			float32 m_flDuckAmount; // 0x298 | Schema_Builtin | Size: 0x4

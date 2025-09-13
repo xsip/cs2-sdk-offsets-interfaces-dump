@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSequenceUpdateNodeBase : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
-			public:
 			S2_PAD(0x14);
 			float32 m_playbackSpeed; // 0x6c | Schema_Builtin | Size: 0x4
 			bool m_bLoop; // 0x70 | Schema_Builtin | Size: 0x1

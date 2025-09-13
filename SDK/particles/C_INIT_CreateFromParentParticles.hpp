@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateFromParentParticles : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			float32 m_flVelocityScale; // 0x1c8 | Schema_Builtin | Size: 0x4
 			float32 m_flIncrement; // 0x1cc | Schema_Builtin | Size: 0x4
 			bool m_bRandomDistribution; // 0x1d0 | Schema_Builtin | Size: 0x1

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class PermModelExtPart_t  {
 		public:
-			public:
 			GlobalTypes::CTransform m_Transform; // 0x0 | Schema_Atomic | Size: 0x20
 			GlobalTypes::CUtlString m_Name; // 0x20 | Schema_Atomic | Size: 0x8
 			int32_t m_nParent; // 0x28 | Schema_Builtin | Size: 0x4

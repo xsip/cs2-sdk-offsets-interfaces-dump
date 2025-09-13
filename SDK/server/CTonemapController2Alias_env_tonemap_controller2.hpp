@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTonemapController2Alias_env_tonemap_controller2 : public CS2::server::CTonemapController2 {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CTonemapController2Alias_env_tonemap_controller2) == 0x508, "CTonemapController2Alias_env_tonemap_controller2 size should be 0x508");
 	}

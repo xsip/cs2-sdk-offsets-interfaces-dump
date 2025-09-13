@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixEffectChainDesc_t  {
 		public:
-			public:
 			float32 m_flCrossfadeTime; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEffectChainDesc_t, m_flCrossfadeTime) == 0x0, "m_flCrossfadeTime in VMixEffectChainDesc_t should be at offset 0x0");

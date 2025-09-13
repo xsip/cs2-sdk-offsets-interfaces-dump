@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerTeleport : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iLandmark; // 0x9b8 | Schema_Atomic | Size: 0x8
 			bool m_bUseLandmarkAngles; // 0x9c0 | Schema_Builtin | Size: 0x1
 			bool m_bMirrorPlayer; // 0x9c1 | Schema_Builtin | Size: 0x1

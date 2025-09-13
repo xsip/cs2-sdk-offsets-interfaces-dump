@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_WaitForCursorsWithTag : public CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase {
 		public:
-			public:
 			bool m_bTagSelfWhenComplete; // 0x98 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			pulse_runtime_lib::PulseCursorCancelPriority_t m_nDesiredKillPriority; // 0x9c | Schema_DeclaredEnum | Size: 0x4

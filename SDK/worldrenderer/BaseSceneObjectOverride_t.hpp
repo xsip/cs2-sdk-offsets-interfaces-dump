@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class BaseSceneObjectOverride_t  {
 		public:
-			public:
 			uint32_t m_nSceneObjectIndex; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::worldrenderer::BaseSceneObjectOverride_t, m_nSceneObjectIndex) == 0x0, "m_nSceneObjectIndex in BaseSceneObjectOverride_t should be at offset 0x0");

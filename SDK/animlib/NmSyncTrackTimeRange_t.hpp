@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class NmSyncTrackTimeRange_t  {
 		public:
-			public:
 			animlib::NmSyncTrackTime_t m_startTime; // 0x0 | Schema_DeclaredClass | Size: 0x8
 			animlib::NmSyncTrackTime_t m_endTime; // 0x8 | Schema_DeclaredClass | Size: 0x8
 		};

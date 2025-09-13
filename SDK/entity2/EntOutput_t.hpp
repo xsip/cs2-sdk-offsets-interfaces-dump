@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace entity2 {
 		class EntOutput_t  {
 		public:
-			public:
 			S2_PAD(0x10);
 		};
 		static_assert(sizeof(CS2::entity2::EntOutput_t) == 0x10, "EntOutput_t size should be 0x10");

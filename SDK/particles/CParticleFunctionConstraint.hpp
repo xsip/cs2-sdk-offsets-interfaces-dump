@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionConstraint : public CS2::particles::CParticleFunction {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::CParticleFunctionConstraint) == 0x1C0, "CParticleFunctionConstraint size should be 0x1C0");
 	}

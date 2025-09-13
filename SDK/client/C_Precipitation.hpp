@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_Precipitation : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 			float32 m_flDensity; // 0x1000 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
 			float32 m_flParticleInnerDist; // 0x1010 | Schema_Builtin | Size: 0x4

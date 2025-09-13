@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_TimeVaryingForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			float32 m_flStartLerpTime; // 0x1d0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_StartingForce; // 0x1d4 | Schema_Atomic | Size: 0xc
 			float32 m_flEndLerpTime; // 0x1e0 | Schema_Builtin | Size: 0x4

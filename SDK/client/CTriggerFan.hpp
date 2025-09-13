@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CTriggerFan : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 			GlobalTypes::Vector m_vFanOrigin; // 0x1000 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vFanOriginOffset; // 0x100c | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vFanEnd; // 0x1018 | Schema_Atomic | Size: 0xc

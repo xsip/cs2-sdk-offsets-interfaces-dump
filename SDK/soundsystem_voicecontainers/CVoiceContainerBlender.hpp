@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerBlender : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			public:
 			soundsystem_voicecontainers::CSoundContainerReference m_firstSound; // 0xb8 | Schema_DeclaredClass | Size: 0x18
 			soundsystem_voicecontainers::CSoundContainerReference m_secondSound; // 0xd0 | Schema_DeclaredClass | Size: 0x18
 			float32 m_flBlendFactor; // 0xe8 | Schema_Builtin | Size: 0x4

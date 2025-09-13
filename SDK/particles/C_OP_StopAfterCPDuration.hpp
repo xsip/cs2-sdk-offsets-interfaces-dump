@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_StopAfterCPDuration : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_flDuration; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			bool m_bDestroyImmediately; // 0x328 | Schema_Builtin | Size: 0x1
 			bool m_bPlayEndCap; // 0x329 | Schema_Builtin | Size: 0x1

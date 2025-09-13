@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Model : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0xe0
 			char  m_DefaultValue[0xe0]; // 0x38 | Schema_Atomic | Size: 0xe0
 		};

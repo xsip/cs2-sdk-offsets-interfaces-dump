@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvCombinedLightProbeVolume : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x1078);
 			GlobalTypes::Color m_Entity_Color; // 0x1670 | Schema_Atomic | Size: 0x4
 			float32 m_Entity_flBrightness; // 0x1674 | Schema_Builtin | Size: 0x4

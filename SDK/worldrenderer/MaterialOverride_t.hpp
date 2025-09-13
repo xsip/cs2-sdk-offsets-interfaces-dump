@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class MaterialOverride_t : public CS2::worldrenderer::BaseSceneObjectOverride_t {
 		public:
-			public:
 			uint32_t m_nSubSceneObject; // 0x4 | Schema_Builtin | Size: 0x4
 			uint32_t m_nDrawCallIndex; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

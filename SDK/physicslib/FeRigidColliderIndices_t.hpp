@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeRigidColliderIndices_t  {
 		public:
-			public:
 			uint16_t m_nTaperedCapsuleRigidIndex; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t m_nSphereRigidIndex; // 0x2 | Schema_Builtin | Size: 0x2
 			uint16_t m_nBoxRigidIndex; // 0x4 | Schema_Builtin | Size: 0x2

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PhysMagnet : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< int32 > m_aAttachedObjectsFromServer; // 0x1168 | Schema_Atomic | Size: 0x18
 			char  m_aAttachedObjectsFromServer[0x18]; // 0x1168 | Schema_Atomic | Size: 0x18
 			// client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_aAttachedObjects; // 0x1180 | Schema_Atomic | Size: 0x18

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnBodyDesc_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_sDebugName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_vPosition; // 0x8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QuaternionStorage m_qOrientation; // 0x14 | Schema_Atomic | Size: 0x10

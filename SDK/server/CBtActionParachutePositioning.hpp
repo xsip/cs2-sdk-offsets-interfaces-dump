@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBtActionParachutePositioning : public CS2::server::CBtNode {
 		public:
-			public:
 			server::CountdownTimer m_ActionTimer; // 0x58 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

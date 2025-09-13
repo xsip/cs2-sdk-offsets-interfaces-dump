@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class ReferencedGraphSlot_t  {
 		public:
-			public:
 			int16_t m_nNodeIdx; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_dataSlotIdx; // 0x2 | Schema_Builtin | Size: 0x2
 		};

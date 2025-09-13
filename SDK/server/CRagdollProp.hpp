@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CRagdollProp : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x8);
 			client::ragdoll_t m_ragdoll; // 0xa80 | Schema_DeclaredClass | Size: 0x50
 			bool m_bStartDisabled; // 0xad0 | Schema_Builtin | Size: 0x1

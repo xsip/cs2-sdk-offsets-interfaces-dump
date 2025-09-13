@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInstancedSceneEntity : public CS2::server::CSceneEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hOwner; // 0xa50 | Schema_Atomic | Size: 0x4
 			char  m_hOwner[0x4]; // 0xa50 | Schema_Atomic | Size: 0x4
 			bool m_bHadOwner; // 0xa54 | Schema_Builtin | Size: 0x1

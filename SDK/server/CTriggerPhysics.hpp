@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerPhysics : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			S2_PAD(0x10);
 			float32 m_gravityScale; // 0x9c8 | Schema_Builtin | Size: 0x4
 			float32 m_linearLimit; // 0x9cc | Schema_Builtin | Size: 0x4

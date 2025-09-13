@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_DistanceToNeighborCull : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flDistance; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			bool m_bIncludeRadii; // 0x328 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

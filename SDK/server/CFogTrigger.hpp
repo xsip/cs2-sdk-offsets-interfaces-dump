@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFogTrigger : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			server::fogparams_t m_fog; // 0x9b8 | Schema_DeclaredClass | Size: 0x68
 		};
 		static_assert(offsetof(CS2::server::CFogTrigger, m_fog) == 0x9B8, "m_fog in CFogTrigger should be at offset 0x9B8");

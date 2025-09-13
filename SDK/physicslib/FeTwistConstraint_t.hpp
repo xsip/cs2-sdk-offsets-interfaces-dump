@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeTwistConstraint_t  {
 		public:
-			public:
 			uint16_t nNodeOrient; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t nNodeEnd; // 0x2 | Schema_Builtin | Size: 0x2
 			float32 flTwistRelax; // 0x4 | Schema_Builtin | Size: 0x4

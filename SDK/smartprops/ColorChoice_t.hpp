@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace smartprops {
 		class ColorChoice_t  {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeColor m_Color; // 0x0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flWeight; // 0x40 | Schema_Atomic | Size: 0x40
 		};

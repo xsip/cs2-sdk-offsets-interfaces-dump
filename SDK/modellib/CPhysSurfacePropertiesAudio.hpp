@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CPhysSurfacePropertiesAudio  {
 		public:
-			public:
 			float32 m_reflectivity; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_hardnessFactor; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_roughnessFactor; // 0x8 | Schema_Builtin | Size: 0x4

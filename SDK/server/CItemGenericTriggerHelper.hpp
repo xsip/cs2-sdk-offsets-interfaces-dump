@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CItemGenericTriggerHelper : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			// server::CHandle< server::CItemGeneric > m_hParentItem; // 0x7e8 | Schema_Atomic | Size: 0x4
 			char  m_hParentItem[0x4]; // 0x7e8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding

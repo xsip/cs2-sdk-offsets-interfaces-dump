@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncMoveLinear : public CS2::server::CBaseToggle {
 		public:
-			public:
 			server::MoveLinearAuthoredPos_t m_authoredPosition; // 0x868 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x86c | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecMoveDirParentSpace; // 0x878 | Schema_Atomic | Size: 0xc

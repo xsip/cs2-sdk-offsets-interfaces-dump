@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CEnvSoundscapeProxy : public CS2::client::CEnvSoundscape {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_MainSoundscapeName; // 0x698 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CEnvSoundscapeProxy, m_MainSoundscapeName) == 0x698, "m_MainSoundscapeName in CEnvSoundscapeProxy should be at offset 0x698");

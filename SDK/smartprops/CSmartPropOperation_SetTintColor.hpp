@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SetTintColor : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; // 0x50 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeInt m_ColorSelection; // 0x90 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeApplyColorMode m_Mode; // 0xd0 | Schema_DeclaredClass | Size: 0x40

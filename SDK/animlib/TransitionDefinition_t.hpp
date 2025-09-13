@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class TransitionDefinition_t  {
 		public:
-			public:
 			int16_t m_nTargetStateIdx; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nConditionNodeIdx; // 0x2 | Schema_Builtin | Size: 0x2
 			int16_t m_nTransitionNodeIdx; // 0x4 | Schema_Builtin | Size: 0x2

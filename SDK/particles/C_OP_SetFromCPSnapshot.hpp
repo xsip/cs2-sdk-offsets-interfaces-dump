@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetFromCPSnapshot : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x1c8 | Schema_Atomic | Size: 0x8

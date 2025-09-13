@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_Team : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			// client::C_NetworkUtlVectorBase< client.dll::CHandle< CBasePlayerController > > m_aPlayerControllers; // 0x5f8 | Schema_Atomic | Size: 0x18
 			char  m_aPlayerControllers[0x18]; // 0x5f8 | Schema_Atomic | Size: 0x18
 			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BasePlayerPawn > > m_aPlayers; // 0x610 | Schema_Atomic | Size: 0x18

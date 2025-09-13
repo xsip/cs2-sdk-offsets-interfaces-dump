@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqBoneMaskList  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_sName; // 0x0 | Schema_Atomic | Size: 0x10
 			// GlobalTypes::CUtlVector< int16 > m_nLocalBoneArray; // 0x10 | Schema_Atomic | Size: 0x18
 			char  m_nLocalBoneArray[0x18]; // 0x10 | Schema_Atomic | Size: 0x18

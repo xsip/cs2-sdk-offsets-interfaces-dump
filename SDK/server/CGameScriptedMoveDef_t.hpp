@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CGameScriptedMoveDef_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vDestOffset; // 0x0 | Schema_Atomic | Size: 0xc
 			// server::CHandle< server::CBaseEntity > m_hDestEntity; // 0xc | Schema_Atomic | Size: 0x4
 			char  m_hDestEntity[0x4]; // 0xc | Schema_Atomic | Size: 0x4

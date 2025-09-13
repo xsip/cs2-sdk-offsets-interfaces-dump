@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class inv_image_light_fill_t  {
 		public:
-			public:
 			GlobalTypes::Vector color; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle angle; // 0xc | Schema_Atomic | Size: 0xc
 			float32 brightness; // 0x18 | Schema_Builtin | Size: 0x4

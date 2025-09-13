@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_SetRenderColor : public CS2::modellib::CModelConfigElement {
 		public:
-			public:
 			GlobalTypes::Color m_Color; // 0x48 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

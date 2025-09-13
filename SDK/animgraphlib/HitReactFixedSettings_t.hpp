@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class HitReactFixedSettings_t  {
 		public:
-			public:
 			int32_t m_nWeightListIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nEffectedBoneCount; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxImpactForce; // 0x8 | Schema_Builtin | Size: 0x4

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PlaceOnPath : public CS2::smartprops::CSmartPropElement_Group {
 		public:
-			public:
 			GlobalTypes::CUtlString m_PathName; // 0xa0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CSmartPropAttributeFloat m_flSpacing; // 0xa8 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flOffsetAlongPath; // 0xe8 | Schema_Atomic | Size: 0x40

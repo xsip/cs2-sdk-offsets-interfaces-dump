@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmMaterialAttributeEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			GlobalTypes::CUtlString m_attributeName; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_attributeNameToken; // 0x28 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);

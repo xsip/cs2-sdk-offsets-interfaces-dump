@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropTransformOperation : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::smartprops::CSmartPropTransformOperation) == 0x50, "CSmartPropTransformOperation size should be 0x50");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointServerCommand : public CS2::server::CPointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPointServerCommand) == 0x4F0, "CPointServerCommand size should be 0x4F0");
 	}

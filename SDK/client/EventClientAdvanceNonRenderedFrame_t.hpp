@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventClientAdvanceNonRenderedFrame_t  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::client::EventClientAdvanceNonRenderedFrame_t) == 0x1, "EventClientAdvanceNonRenderedFrame_t size should be 0x1");

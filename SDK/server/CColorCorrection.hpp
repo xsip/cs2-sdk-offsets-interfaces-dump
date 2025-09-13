@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CColorCorrection : public CS2::server::CBaseEntity {
 		public:
-			public:
 			float32 m_flFadeInDuration; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_flFadeOutDuration; // 0x4f4 | Schema_Builtin | Size: 0x4
 			float32 m_flStartFadeInWeight; // 0x4f8 | Schema_Builtin | Size: 0x4

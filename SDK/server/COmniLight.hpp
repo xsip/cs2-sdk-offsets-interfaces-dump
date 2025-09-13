@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class COmniLight : public CS2::server::CBarnLight {
 		public:
-			public:
 			float32 m_flInnerAngle; // 0xb10 | Schema_Builtin | Size: 0x4
 			float32 m_flOuterAngle; // 0xb14 | Schema_Builtin | Size: 0x4
 			bool m_bShowLight; // 0xb18 | Schema_Builtin | Size: 0x1

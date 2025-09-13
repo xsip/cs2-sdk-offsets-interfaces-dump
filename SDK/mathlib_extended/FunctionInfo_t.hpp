@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace mathlib_extended {
 		class FunctionInfo_t  {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_name; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_nameToken; // 0x10 | Schema_Atomic | Size: 0x4

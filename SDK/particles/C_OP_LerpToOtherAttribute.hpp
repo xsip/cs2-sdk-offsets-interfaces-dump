@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LerpToOtherAttribute : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particles::ParticleAttributeIndex_t m_nFieldInputFrom; // 0x320 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x324 | Schema_DeclaredClass | Size: 0x4

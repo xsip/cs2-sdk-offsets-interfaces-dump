@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CNavVolumeMarkupVolume : public CS2::navlib::CNavVolume {
 		public:
-			public:
 			S2_PAD(0x68);
 		};
 		static_assert(sizeof(CS2::server::CNavVolumeMarkupVolume) == 0xD8, "CNavVolumeMarkupVolume size should be 0xD8");

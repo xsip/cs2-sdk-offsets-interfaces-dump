@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeQuad_t  {
 		public:
-			public:
 			uint16_t nNode[4]; // 0x0 | Schema_FixedArray | Size: 0x8
 			float32 flSlack; // 0x8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector4D vShape[4]; // 0xc | Schema_FixedArray | Size: 0x40

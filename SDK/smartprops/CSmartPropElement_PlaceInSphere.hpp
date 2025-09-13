@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PlaceInSphere : public CS2::smartprops::CSmartPropElement_Group {
 		public:
-			public:
 			smartprops::CSmartPropAttributeRadiusPlacementMode m_PlacementMode; // 0xa0 | Schema_DeclaredClass | Size: 0x40
 			smartprops::CSmartPropAttributeDistributionMode m_DistributionMode; // 0xe0 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flRandomness; // 0x120 | Schema_Atomic | Size: 0x40

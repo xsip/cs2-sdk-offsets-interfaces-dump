@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_SetBodygroupOnAttachedModels : public CS2::modellib::CModelConfigElement {
 		public:
-			public:
 			GlobalTypes::CUtlString m_GroupName; // 0x48 | Schema_Atomic | Size: 0x8
 			int32_t m_nChoice; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

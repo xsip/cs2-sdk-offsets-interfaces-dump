@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetVariable : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			particleslib::CParticleVariableRef m_variableReference; // 0x1c8 | Schema_DeclaredClass | Size: 0x40
 			particleslib::CParticleTransformInput m_transformInput; // 0x208 | Schema_DeclaredClass | Size: 0x68
 			GlobalTypes::Vector m_positionOffset; // 0x270 | Schema_Atomic | Size: 0xc

@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerPush : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			GlobalTypes::QAngle m_angPushEntitySpace; // 0x9b8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecPushDirEntitySpace; // 0x9c4 | Schema_Atomic | Size: 0xc
 			bool m_bTriggerOnStartTouch; // 0x9d0 | Schema_Builtin | Size: 0x1

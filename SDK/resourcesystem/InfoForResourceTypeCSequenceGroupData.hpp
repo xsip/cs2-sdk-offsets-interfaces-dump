@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCSequenceGroupData  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCSequenceGroupData) == 0x1, "InfoForResourceTypeCSequenceGroupData size should be 0x1");

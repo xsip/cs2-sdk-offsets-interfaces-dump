@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CBasePlatTrain : public CS2::server::CBaseToggle {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_NoiseMoving; // 0x868 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_NoiseArrived; // 0x870 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8);

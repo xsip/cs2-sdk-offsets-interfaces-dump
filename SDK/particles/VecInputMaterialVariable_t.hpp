@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class VecInputMaterialVariable_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strVariable; // 0x0 | Schema_Atomic | Size: 0x8
 			particleslib::CParticleCollectionVecInput m_vecInput; // 0x8 | Schema_DeclaredClass | Size: 0x678
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CBtNodeCondition : public CS2::server::CBtNodeDecorator {
 		public:
-			public:
 			bool m_bNegated; // 0x58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

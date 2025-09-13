@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CTargetSelectorUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			animgraphlib::TargetSelectorAngleMode_t m_eAngleMode; // 0x60 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);

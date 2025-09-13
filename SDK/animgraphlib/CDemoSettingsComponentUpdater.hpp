@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CDemoSettingsComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			animgraphlib::CAnimDemoCaptureSettings m_settings; // 0x30 | Schema_DeclaredClass | Size: 0x80
 		};
 		static_assert(offsetof(CS2::animgraphlib::CDemoSettingsComponentUpdater, m_settings) == 0x30, "m_settings in CDemoSettingsComponentUpdater should be at offset 0x30");

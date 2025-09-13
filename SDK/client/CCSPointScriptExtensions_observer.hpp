@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPointScriptExtensions_observer  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::client::CCSPointScriptExtensions_observer) == 0x8, "CCSPointScriptExtensions_observer size should be 0x8");

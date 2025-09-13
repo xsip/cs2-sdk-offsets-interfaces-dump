@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_PickOneSelector : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			smartprops::ConfigurationHandleShape_t m_HandleShape; // 0x48 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x50 | Schema_DeclaredClass | Size: 0x18

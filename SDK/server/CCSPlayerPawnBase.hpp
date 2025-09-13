@@ -21,7 +21,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayerPawnBase : public CS2::server::CBasePlayerPawn {
 		public:
-			public:
 			S2_PAD(0x8);
 			server::CTouchExpansionComponent m_CTouchExpansionComponent; // 0xd88 | Schema_DeclaredClass | Size: 0x50
 			server::CCSPlayer_PingServices* m_pPingServices; // 0xdd8 | Schema_Ptr | Size: 0x8

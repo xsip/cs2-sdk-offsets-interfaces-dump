@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ConstrainDistance : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_fMinDistance; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionFloatInput m_fMaxDistance; // 0x320 | Schema_DeclaredClass | Size: 0x160
 			int32_t m_nControlPointNumber; // 0x480 | Schema_Builtin | Size: 0x4

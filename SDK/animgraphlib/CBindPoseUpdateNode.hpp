@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBindPoseUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::animgraphlib::CBindPoseUpdateNode) == 0x60, "CBindPoseUpdateNode size should be 0x60");

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayerVisibility : public CS2::server::CBaseEntity {
 		public:
-			public:
 			float32 m_flVisibilityStrength; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_flFogDistanceMultiplier; // 0x4f4 | Schema_Builtin | Size: 0x4
 			float32 m_flFogMaxDensityMultiplier; // 0x4f8 | Schema_Builtin | Size: 0x4

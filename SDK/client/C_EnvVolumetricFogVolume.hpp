@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvVolumetricFogVolume : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			bool m_bActive; // 0x5f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::Vector m_vBoxMins; // 0x5fc | Schema_Atomic | Size: 0xc

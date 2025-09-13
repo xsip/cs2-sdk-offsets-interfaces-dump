@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysMagnet : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnMagnetAttach; // 0xa78 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnMagnetDetach; // 0xaa0 | Schema_DeclaredClass | Size: 0x28
 			float32 m_massScale; // 0xac8 | Schema_Builtin | Size: 0x4

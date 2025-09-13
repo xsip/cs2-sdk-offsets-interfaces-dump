@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class ParticleIndex_t  {
 		public:
-			public:
 			int32_t m_Value; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::ParticleIndex_t, m_Value) == 0x0, "m_Value in ParticleIndex_t should be at offset 0x0");

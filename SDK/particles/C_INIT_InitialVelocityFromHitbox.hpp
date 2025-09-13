@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitialVelocityFromHitbox : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			float32 m_flVelocityMin; // 0x1c8 | Schema_Builtin | Size: 0x4
 			float32 m_flVelocityMax; // 0x1cc | Schema_Builtin | Size: 0x4
 			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4

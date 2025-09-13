@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class SosEditItemInfo_t  {
 		public:
-			public:
 			soundsystem::SosEditItemType_t itemType; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString itemName; // 0x8 | Schema_Atomic | Size: 0x8

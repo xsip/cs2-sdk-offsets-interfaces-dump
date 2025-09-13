@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_ViewTarget  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Name; // 0x0 | Schema_Atomic | Size: 0x8
 			uint64_t m_TextureId; // 0x8 | Schema_Builtin | Size: 0x8
 			int32_t m_nWidth; // 0x10 | Schema_Builtin | Size: 0x4

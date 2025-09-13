@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderGpuImplicit : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			bool m_bUsePerParticleRadius; // 0x210 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			uint32_t m_nVertexCountKb; // 0x214 | Schema_Builtin | Size: 0x4

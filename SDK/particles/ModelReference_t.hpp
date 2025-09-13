@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particles {
 		class ModelReference_t  {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_model; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_model[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 m_flRelativeProbabilityOfSpawn; // 0x8 | Schema_Builtin | Size: 0x4

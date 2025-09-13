@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CHostageRescueZoneShim : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CHostageRescueZoneShim) == 0x1000, "CHostageRescueZoneShim size should be 0x1000");
 	}

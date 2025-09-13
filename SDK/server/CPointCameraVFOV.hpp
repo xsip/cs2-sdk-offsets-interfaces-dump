@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointCameraVFOV : public CS2::server::CPointCamera {
 		public:
-			public:
 			float32 m_flVerticalFOV; // 0x550 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

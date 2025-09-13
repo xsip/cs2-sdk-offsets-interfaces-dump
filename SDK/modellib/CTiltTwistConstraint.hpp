@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CTiltTwistConstraint : public CS2::modellib::CBaseConstraint {
 		public:
-			public:
 			int32_t m_nTargetAxis; // 0x60 | Schema_Builtin | Size: 0x4
 			int32_t m_nSlaveAxis; // 0x64 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x28); // End padding

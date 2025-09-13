@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_RandomColor : public CS2::modellib::CModelConfigElement {
 		public:
-			public:
 			GlobalTypes::CColorGradient m_Gradient; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_RandomColor, m_Gradient) == 0x48, "m_Gradient in CModelConfigElement_RandomColor should be at offset 0x48");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFogController : public CS2::server::CBaseEntity {
 		public:
-			public:
 			server::fogparams_t m_fog; // 0x4f0 | Schema_DeclaredClass | Size: 0x68
 			bool m_bUseAngles; // 0x558 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

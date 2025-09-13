@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CGamePlayerZone : public CS2::server::CRuleBrushEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnPlayerInZone; // 0x7f0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnPlayerOutZone; // 0x818 | Schema_DeclaredClass | Size: 0x28
 			// GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersInCount; // 0x840 | Schema_Atomic | Size: 0x28

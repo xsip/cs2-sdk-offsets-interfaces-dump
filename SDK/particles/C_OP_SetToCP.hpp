@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetToCP : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecOffset; // 0x1c4 | Schema_Atomic | Size: 0xc
 			bool m_bOffsetLocal; // 0x1d0 | Schema_Builtin | Size: 0x1

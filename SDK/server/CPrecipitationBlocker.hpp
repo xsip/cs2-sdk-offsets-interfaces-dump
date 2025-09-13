@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPrecipitationBlocker : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPrecipitationBlocker) == 0x7E8, "CPrecipitationBlocker size should be 0x7E8");
 	}

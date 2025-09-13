@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_VelocityRadialRandom : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CPerParticleFloatInput m_fSpeedMin; // 0x1d0 | Schema_DeclaredClass | Size: 0x160

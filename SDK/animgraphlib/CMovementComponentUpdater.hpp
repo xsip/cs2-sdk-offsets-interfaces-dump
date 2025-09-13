@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMovementComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimMotorUpdaterBase > > m_motors; // 0x30 | Schema_Atomic | Size: 0x18
 			char  m_motors[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimInputDamping m_facingDamping; // 0x48 | Schema_DeclaredClass | Size: 0x18

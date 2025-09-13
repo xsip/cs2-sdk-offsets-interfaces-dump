@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateFromPlaneCache : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			GlobalTypes::Vector m_vecOffsetMin; // 0x1c8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecOffsetMax; // 0x1d4 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x1);

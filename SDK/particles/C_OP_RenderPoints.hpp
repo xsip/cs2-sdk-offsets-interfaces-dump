@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderPoints : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x210 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x210 | Schema_Atomic | Size: 0x8
 		};

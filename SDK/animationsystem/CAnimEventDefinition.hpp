@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimEventDefinition  {
 		public:
-			public:
 			S2_PAD(0x8);
 			int32_t m_nFrame; // 0x8 | Schema_Builtin | Size: 0x4
 			int32_t m_nEndFrame; // 0xc | Schema_Builtin | Size: 0x4

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace modellib {
 		class PermModelData_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			modellib::PermModelInfo_t m_modelInfo; // 0x8 | Schema_DeclaredClass | Size: 0x58
 			// GlobalTypes::CUtlVector< modellib::PermModelExtPart_t > m_ExtParts; // 0x60 | Schema_Atomic | Size: 0x18

@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSPlayerPawnBase : public CS2::client::C_BasePlayerPawn {
 		public:
-			public:
 			S2_PAD(0x10);
 			client::CCSPlayer_PingServices* m_pPingServices; // 0x15e8 | Schema_Ptr | Size: 0x8
 			client::CSPlayerState m_previousPlayerState; // 0x15f0 | Schema_DeclaredEnum | Size: 0x4

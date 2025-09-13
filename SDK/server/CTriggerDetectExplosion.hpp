@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerDetectExplosion : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			S2_PAD(0x20);
 			entity2::CEntityIOOutput m_OnDetectedExplosion; // 0x9d8 | Schema_DeclaredClass | Size: 0x28
 		};

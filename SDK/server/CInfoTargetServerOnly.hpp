@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoTargetServerOnly : public CS2::server::CServerOnlyPointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CInfoTargetServerOnly) == 0x4F0, "CInfoTargetServerOnly size should be 0x4F0");
 	}

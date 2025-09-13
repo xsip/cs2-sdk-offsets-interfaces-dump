@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class CPointTemplate : public CS2::client::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszWorldName; // 0x5f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszSource2EntityLumpName; // 0x600 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszEntityFilterName; // 0x608 | Schema_Atomic | Size: 0x8

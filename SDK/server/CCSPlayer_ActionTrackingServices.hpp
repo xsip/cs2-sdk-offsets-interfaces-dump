@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_ActionTrackingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			S2_PAD(0x1b0);
 			// server::CHandle< server::CBasePlayerWeapon > m_hLastWeaponBeforeC4AutoSwitch; // 0x1f0 | Schema_Atomic | Size: 0x4
 			char  m_hLastWeaponBeforeC4AutoSwitch[0x4]; // 0x1f0 | Schema_Atomic | Size: 0x4

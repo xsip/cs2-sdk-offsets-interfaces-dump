@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerControllerAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CBasePlayerControllerAPI) == 0x8, "CBasePlayerControllerAPI size should be 0x8");

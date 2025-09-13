@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class InfoForResourceTypeVMapResourceData_t  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::worldrenderer::InfoForResourceTypeVMapResourceData_t) == 0x1, "InfoForResourceTypeVMapResourceData_t size should be 0x1");

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_SetHitboxToModel : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
 			int32_t m_nForceInModel; // 0x1cc | Schema_Builtin | Size: 0x4
 			bool m_bEvenDistribution; // 0x1d0 | Schema_Builtin | Size: 0x1

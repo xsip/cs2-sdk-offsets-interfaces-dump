@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmLegacyEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			GlobalTypes::CUtlString m_animEventClassName; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::KeyValues3 m_KV; // 0x28 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8); // End padding

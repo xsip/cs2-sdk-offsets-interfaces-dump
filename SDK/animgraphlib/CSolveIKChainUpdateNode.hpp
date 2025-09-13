@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSolveIKChainUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::CSolveIKTargetHandle_t > m_targetHandles; // 0x70 | Schema_Atomic | Size: 0x18
 			char  m_targetHandles[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			animgraphlib::SolveIKChainPoseOpFixedSettings_t m_opFixedData; // 0x88 | Schema_DeclaredClass | Size: 0x18

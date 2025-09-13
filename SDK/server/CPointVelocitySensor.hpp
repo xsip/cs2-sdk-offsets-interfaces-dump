@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointVelocitySensor : public CS2::server::CPointEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
 			char  m_hTargetEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vecAxis; // 0x4f4 | Schema_Atomic | Size: 0xc

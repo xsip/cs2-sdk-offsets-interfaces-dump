@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicPlayerProxy : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hPlayer; // 0x4f0 | Schema_Atomic | Size: 0x4
 			char  m_hPlayer[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);

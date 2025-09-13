@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Inflow_EntOutputHandler : public CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_SourceEntity; // 0x80 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t m_SourceOutput; // 0x90 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CPulseValueFullType m_ExpectedParamType; // 0xa0 | Schema_Atomic | Size: 0x18

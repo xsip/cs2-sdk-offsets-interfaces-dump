@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleCollectionVecInput : public CS2::particleslib::CParticleVecInput {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particleslib::CParticleCollectionVecInput) == 0x678, "CParticleCollectionVecInput size should be 0x678");
 	}

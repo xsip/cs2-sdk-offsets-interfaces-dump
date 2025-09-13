@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CAnimAttachment  {
 		public:
-			public:
 			GlobalTypes::Quaternion m_influenceRotations[3]; // 0x0 | Schema_FixedArray | Size: 0x30
 			GlobalTypes::VectorAligned m_influenceOffsets[3]; // 0x30 | Schema_FixedArray | Size: 0x30
 			int32_t m_influenceIndices[3]; // 0x60 | Schema_FixedArray | Size: 0xc

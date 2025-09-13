@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateAlongPath : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			float32 m_fMaxDistance; // 0x1c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			particles::CPathParameters m_PathParams; // 0x1d0 | Schema_DeclaredClass | Size: 0x40

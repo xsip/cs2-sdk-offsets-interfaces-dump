@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncRotator : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hRotatorTarget; // 0x7e8 | Schema_Atomic | Size: 0x4
 			char  m_hRotatorTarget[0x4]; // 0x7e8 | Schema_Atomic | Size: 0x4
 			bool m_bIsRotating; // 0x7ec | Schema_Builtin | Size: 0x1

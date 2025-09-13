@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixFilterDesc_t  {
 		public:
-			public:
 			soundsystem_lowlevel::VMixFilterType_t m_nFilterType; // 0x0 | Schema_DeclaredEnum | Size: 0x2
 			soundsystem_lowlevel::VMixFilterSlope_t m_nFilterSlope; // 0x2 | Schema_DeclaredEnum | Size: 0x1
 			bool m_bEnabled; // 0x3 | Schema_Builtin | Size: 0x1

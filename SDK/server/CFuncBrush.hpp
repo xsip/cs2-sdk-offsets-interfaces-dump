@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncBrush : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			client::BrushSolidities_e m_iSolidity; // 0x7e8 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_iDisabled; // 0x7ec | Schema_Builtin | Size: 0x4
 			bool m_bSolidBsp; // 0x7f0 | Schema_Builtin | Size: 0x1

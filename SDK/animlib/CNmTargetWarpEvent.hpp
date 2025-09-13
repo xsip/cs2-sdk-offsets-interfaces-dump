@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmTargetWarpEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			animlib::NmTargetWarpRule_t m_rule; // 0x20 | Schema_DeclaredEnum | Size: 0x1
 			animlib::NmTargetWarpAlgorithm_t m_algorithm; // 0x21 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x6); // End padding

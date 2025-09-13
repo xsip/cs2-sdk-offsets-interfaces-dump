@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnShapeDesc_t  {
 		public:
-			public:
 			uint32_t m_nCollisionAttributeIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nSurfacePropertyIndex; // 0x4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlString m_UserFriendlyName; // 0x8 | Schema_Atomic | Size: 0x8

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_Fish : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			GlobalTypes::Vector m_pos; // 0x1168 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vel; // 0x1174 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angles; // 0x1180 | Schema_Atomic | Size: 0xc

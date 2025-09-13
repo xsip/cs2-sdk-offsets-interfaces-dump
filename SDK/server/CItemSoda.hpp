@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CItemSoda : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CItemSoda) == 0xA78, "CItemSoda size should be 0xA78");
 	}

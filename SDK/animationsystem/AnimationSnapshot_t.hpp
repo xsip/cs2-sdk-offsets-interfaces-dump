@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class AnimationSnapshot_t : public CS2::animationsystem::AnimationSnapshotBase_t {
 		public:
-			public:
 			int32_t m_nEntIndex; // 0x110 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_modelName; // 0x118 | Schema_Atomic | Size: 0x8

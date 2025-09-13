@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleMassCalculationParameters  {
 		public:
-			public:
 			particles::ParticleMassMode_t m_nMassMode; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CPerParticleFloatInput m_flRadius; // 0x8 | Schema_DeclaredClass | Size: 0x160

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CSoundContainerReferenceArray  {
 		public:
-			public:
 			bool m_bUseReference; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_sounds; // 0x8 | Schema_Atomic | Size: 0x18

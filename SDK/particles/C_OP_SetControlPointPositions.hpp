@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointPositions : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			bool m_bUseWorldLocation; // 0x1c8 | Schema_Builtin | Size: 0x1
 			bool m_bOrient; // 0x1c9 | Schema_Builtin | Size: 0x1
 			bool m_bSetOnce; // 0x1ca | Schema_Builtin | Size: 0x1

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointTeleport : public CS2::server::CServerOnlyPointEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vSaveOrigin; // 0x4f0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_vSaveAngles; // 0x4fc | Schema_Atomic | Size: 0xc
 			bool m_bTeleportParentedEntities; // 0x508 | Schema_Builtin | Size: 0x1

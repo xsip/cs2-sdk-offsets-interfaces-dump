@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace server {
 		class CPlantedC4 : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bBombTicking; // 0xa80 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_BasePropDoor : public CS2::client::C_DynamicProp {
 		public:
-			public:
 			S2_PAD(0x10);
 			client::DoorState_t m_eDoorState; // 0x1440 | Schema_DeclaredEnum | Size: 0x4
 			bool m_modelChanged; // 0x1444 | Schema_Builtin | Size: 0x1

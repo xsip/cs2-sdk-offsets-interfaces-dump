@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncRotating : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnStopped; // 0x7e8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnStarted; // 0x810 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnReachedStart; // 0x838 | Schema_DeclaredClass | Size: 0x28

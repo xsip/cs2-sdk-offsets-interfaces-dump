@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_BooleanSwitchState : public CS2::pulse_runtime_lib::CPulseCell_BaseState {
 		public:
-			public:
 			pulse_runtime_lib::PulseObservableBoolExpression_t m_Condition; // 0x48 | Schema_DeclaredClass | Size: 0x78
 			pulse_runtime_lib::CPulse_OutflowConnection m_SubGraph; // 0xc0 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_OutflowConnection m_WhenTrue; // 0x108 | Schema_DeclaredClass | Size: 0x48

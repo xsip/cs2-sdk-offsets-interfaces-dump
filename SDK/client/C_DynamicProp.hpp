@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_DynamicProp : public CS2::client::C_BreakableProp {
 		public:
-			public:
 			bool m_bUseHitboxesForRenderBox; // 0x1310 | Schema_Builtin | Size: 0x1
 			bool m_bUseAnimGraph; // 0x1311 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);

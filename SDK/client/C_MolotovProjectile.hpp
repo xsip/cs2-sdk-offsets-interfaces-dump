@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_MolotovProjectile : public CS2::client::C_BaseCSGrenadeProjectile {
 		public:
-			public:
 			bool m_bIsIncGrenade; // 0x1460 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x27); // End padding
 		};

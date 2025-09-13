@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBlendCurve  {
 		public:
-			public:
 			float32 m_flControlPoint1; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flControlPoint2; // 0x4 | Schema_Builtin | Size: 0x4
 		};

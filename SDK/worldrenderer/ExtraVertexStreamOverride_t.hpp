@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class ExtraVertexStreamOverride_t : public CS2::worldrenderer::BaseSceneObjectOverride_t {
 		public:
-			public:
 			uint32_t m_nSubSceneObject; // 0x4 | Schema_Builtin | Size: 0x4
 			uint32_t m_nDrawCallIndex; // 0x8 | Schema_Builtin | Size: 0x4
 			modellib::MeshDrawPrimitiveFlags_t m_nAdditionalMeshDrawPrimitiveFlags; // 0xc | Schema_DeclaredEnum | Size: 0x4

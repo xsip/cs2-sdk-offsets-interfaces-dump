@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMathColorBlend : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			float32 m_flInMin; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_flInMax; // 0x4f4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_OutColor1; // 0x4f8 | Schema_Atomic | Size: 0x4

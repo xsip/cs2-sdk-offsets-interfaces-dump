@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class AutoRoomDoorwayPairs_t  {
 		public:
-			public:
 			GlobalTypes::Vector vP1; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector vP2; // 0xc | Schema_Atomic | Size: 0xc
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_CreateRotator : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Name; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateRotator, m_Name) == 0x48, "m_Name in CSmartPropPulse_CreateRotator should be at offset 0x48");

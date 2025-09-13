@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysXAggregateData_t  {
 		public:
-			public:
 			uint16_t m_nFlags; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t m_nRefCounter; // 0x2 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4);

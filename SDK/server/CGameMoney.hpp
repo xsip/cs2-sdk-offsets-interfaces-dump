@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CGameMoney : public CS2::server::CRulePointEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnMoneySpent; // 0x7f8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnMoneySpentFail; // 0x820 | Schema_DeclaredClass | Size: 0x28
 			int32_t m_nMoney; // 0x848 | Schema_Builtin | Size: 0x4

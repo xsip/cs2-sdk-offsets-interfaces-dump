@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRevertSaved : public CS2::server::CModelPointEntity {
 		public:
-			public:
 			float32 m_loadTime; // 0x7e8 | Schema_Builtin | Size: 0x4
 			float32 m_Duration; // 0x7ec | Schema_Builtin | Size: 0x4
 			float32 m_HoldTime; // 0x7f0 | Schema_Builtin | Size: 0x4

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapTransformToVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vInputMin; // 0x1cc | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vInputMax; // 0x1d8 | Schema_Atomic | Size: 0xc

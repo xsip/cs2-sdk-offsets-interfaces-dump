@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicNPCCounter : public CS2::server::CBaseEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnMinCountAll; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnMaxCountAll; // 0x518 | Schema_DeclaredClass | Size: 0x28
 			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnFactorAll; // 0x540 | Schema_Atomic | Size: 0x28

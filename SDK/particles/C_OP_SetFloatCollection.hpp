@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetFloatCollection : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_InputValue; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particles::ParticleAttributeIndex_t m_nOutputField; // 0x320 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x324 | Schema_DeclaredEnum | Size: 0x4

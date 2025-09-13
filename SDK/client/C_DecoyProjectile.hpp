@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_DecoyProjectile : public CS2::client::C_BaseCSGrenadeProjectile {
 		public:
-			public:
 			int32_t m_nDecoyShotTick; // 0x1460 | Schema_Builtin | Size: 0x4
 			int32_t m_nClientLastKnownDecoyShotTick; // 0x1464 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x20);

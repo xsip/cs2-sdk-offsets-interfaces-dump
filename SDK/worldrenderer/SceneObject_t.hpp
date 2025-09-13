@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class SceneObject_t  {
 		public:
-			public:
 			uint32_t m_nObjectID; // 0x0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector4D m_vTransform[3]; // 0x4 | Schema_FixedArray | Size: 0x30
 			float32 m_flFadeStartDistance; // 0x34 | Schema_Builtin | Size: 0x4

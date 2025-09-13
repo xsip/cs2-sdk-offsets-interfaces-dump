@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSequenceUpdateNode : public CS2::animgraphlib::CSequenceUpdateNodeBase {
 		public:
-			public:
 			animationsystem::HSequence m_hSequence; // 0x78 | Schema_DeclaredClass | Size: 0x4
 			float32 m_duration; // 0x7c | Schema_Builtin | Size: 0x4
 			animgraphlib::CParamSpanUpdater m_paramSpans; // 0x80 | Schema_DeclaredClass | Size: 0x18

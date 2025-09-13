@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimParamHandleMap  {
 		public:
-			public:
 			// GlobalTypes::CUtlHashtable< uint16, int16 > m_list; // 0x0 | Schema_Atomic | Size: 0x20
 			char  m_list[0x20]; // 0x0 | Schema_Atomic | Size: 0x20
 		};

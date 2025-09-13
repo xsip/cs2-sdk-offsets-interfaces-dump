@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseModelEntityAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CBaseModelEntityAPI) == 0x8, "CBaseModelEntityAPI size should be 0x8");

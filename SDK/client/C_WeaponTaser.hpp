@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_WeaponTaser : public CS2::client::C_CSWeaponBaseGun {
 		public:
-			public:
 			entity2::GameTime_t m_fFireTime; // 0x1e40 | Schema_DeclaredClass | Size: 0x4
 			int32_t m_nLastAttackTick; // 0x1e44 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding

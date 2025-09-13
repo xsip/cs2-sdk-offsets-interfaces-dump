@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_FlashbangProjectile : public CS2::client::C_BaseCSGrenadeProjectile {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_FlashbangProjectile) == 0x1460, "C_FlashbangProjectile size should be 0x1460");
 	}

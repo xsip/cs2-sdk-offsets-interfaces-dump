@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetCPOrientationToPointAtCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nInputCP; // 0x1c8 | Schema_Builtin | Size: 0x4
 			int32_t m_nOutputCP; // 0x1cc | Schema_Builtin | Size: 0x4
 			particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x1d0 | Schema_DeclaredClass | Size: 0x160

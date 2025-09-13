@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleCollectionRendererFloatInput : public CS2::particleslib::CParticleCollectionFloatInput {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particleslib::CParticleCollectionRendererFloatInput) == 0x160, "CParticleCollectionRendererFloatInput size should be 0x160");
 	}

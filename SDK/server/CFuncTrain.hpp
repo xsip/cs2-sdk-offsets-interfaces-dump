@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrain : public CS2::server::CBasePlatTrain {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hCurrentTarget; // 0x890 | Schema_Atomic | Size: 0x4
 			char  m_hCurrentTarget[0x4]; // 0x890 | Schema_Atomic | Size: 0x4
 			bool m_activated; // 0x894 | Schema_Builtin | Size: 0x1

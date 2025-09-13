@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_OmniLight : public CS2::client::C_BarnLight {
 		public:
-			public:
 			float32 m_flInnerAngle; // 0x1210 | Schema_Builtin | Size: 0x4
 			float32 m_flOuterAngle; // 0x1214 | Schema_Builtin | Size: 0x4
 			bool m_bShowLight; // 0x1218 | Schema_Builtin | Size: 0x1

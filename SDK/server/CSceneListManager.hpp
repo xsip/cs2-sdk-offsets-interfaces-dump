@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CSceneListManager : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			// server::CUtlVector< server.dll::CHandle< CSceneListManager > > m_hListManagers; // 0x4f0 | Schema_Atomic | Size: 0x18
 			char  m_hListManagers[0x18]; // 0x4f0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszScenes[16]; // 0x508 | Schema_FixedArray | Size: 0x80

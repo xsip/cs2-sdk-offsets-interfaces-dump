@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class PostProcessingResource_t  {
 		public:
-			public:
 			bool m_bHasTonemapParams; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			materialsystem2::PostProcessingTonemapParameters_t m_toneMapParams; // 0x4 | Schema_DeclaredClass | Size: 0x3c

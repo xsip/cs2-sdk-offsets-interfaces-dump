@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class VsInputSignatureElement_t  {
 		public:
-			public:
 			char m_pName[64]; // 0x0 | Schema_FixedArray | Size: 0x40
 			char m_pSemantic[64]; // 0x40 | Schema_FixedArray | Size: 0x40
 			char m_pD3DSemanticName[64]; // 0x80 | Schema_FixedArray | Size: 0x40

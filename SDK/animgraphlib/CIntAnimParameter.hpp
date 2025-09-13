@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CIntAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {
 		public:
-			public:
 			int32_t m_defaultValue; // 0x80 | Schema_Builtin | Size: 0x4
 			int32_t m_minValue; // 0x84 | Schema_Builtin | Size: 0x4
 			int32_t m_maxValue; // 0x88 | Schema_Builtin | Size: 0x4

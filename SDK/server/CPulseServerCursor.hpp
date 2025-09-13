@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseServerCursor : public CS2::pulse_runtime_lib::CPulseExecCursor {
 		public:
-			public:
 			S2_PAD(0x8);
 			// server::CHandle< server::CBaseEntity > m_hActivator; // 0xd8 | Schema_Atomic | Size: 0x4
 			char  m_hActivator[0x4]; // 0xd8 | Schema_Atomic | Size: 0x4

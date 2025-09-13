@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class MaterialParamBuffer_t : public CS2::materialsystem2::MaterialParam_t {
 		public:
-			public:
 			GlobalTypes::CUtlBinaryBlock m_value; // 0x8 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::materialsystem2::MaterialParamBuffer_t, m_value) == 0x8, "m_value in MaterialParamBuffer_t should be at offset 0x8");

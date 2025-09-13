@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFootstepControl : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_source; // 0x9b8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_destination; // 0x9c0 | Schema_Atomic | Size: 0x8
 		};

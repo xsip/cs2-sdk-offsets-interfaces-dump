@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPointCommentaryNode : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszPreCommands; // 0xa78 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszPostCommands; // 0xa80 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszCommentaryFile; // 0xa88 | Schema_Atomic | Size: 0x8

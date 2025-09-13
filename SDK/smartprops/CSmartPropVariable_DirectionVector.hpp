@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_DirectionVector : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			smartprops::SmartPropDirection_t m_DefaultValue; // 0x38 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

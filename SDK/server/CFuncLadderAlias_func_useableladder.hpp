@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncLadderAlias_func_useableladder : public CS2::server::CFuncLadder {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CFuncLadderAlias_func_useableladder) == 0x898, "CFuncLadderAlias_func_useableladder size should be 0x898");
 	}

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeTaperedCapsuleStretch_t  {
 		public:
-			public:
 			uint16_t nNode[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 			uint16_t nCollisionMask; // 0x4 | Schema_Builtin | Size: 0x2
 			uint16_t nDummy; // 0x6 | Schema_Builtin | Size: 0x2

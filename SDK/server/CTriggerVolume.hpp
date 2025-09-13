@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerVolume : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x7e8 | Schema_Atomic | Size: 0x8
 			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x7f0 | Schema_Atomic | Size: 0x4
 			char  m_hFilter[0x4]; // 0x7f0 | Schema_Atomic | Size: 0x4

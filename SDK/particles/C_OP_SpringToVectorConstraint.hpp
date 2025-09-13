@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SpringToVectorConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flRestLength; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flMinDistance; // 0x320 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flMaxDistance; // 0x480 | Schema_DeclaredClass | Size: 0x160

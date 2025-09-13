@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSourceEdge_t  {
 		public:
-			public:
 			uint16_t nNode[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 		};
 		static_assert(offsetof(CS2::physicslib::FeSourceEdge_t, nNode) == 0x0, "nNode in FeSourceEdge_t should be at offset 0x0");

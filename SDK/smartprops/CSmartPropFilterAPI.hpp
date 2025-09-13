@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropFilterAPI  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilterAPI) == 0x1, "CSmartPropFilterAPI size should be 0x1");

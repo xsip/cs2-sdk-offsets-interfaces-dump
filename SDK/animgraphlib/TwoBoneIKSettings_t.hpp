@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class TwoBoneIKSettings_t  {
 		public:
-			public:
 			animgraphlib::IkEndEffectorType m_endEffectorType; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xc);
 			modellib::CAnimAttachment m_endEffectorAttachment; // 0x10 | Schema_DeclaredClass | Size: 0x80

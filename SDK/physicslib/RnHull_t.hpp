@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnHull_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vCentroid; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_flMaxAngularRadius; // 0xc | Schema_Builtin | Size: 0x4
 			mathlib_extended::AABB_t m_Bounds; // 0x10 | Schema_DeclaredClass | Size: 0x18

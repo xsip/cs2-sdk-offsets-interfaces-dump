@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicGameEventListener : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			S2_PAD(0x10);
 			entity2::CEntityIOOutput m_OnEventFired; // 0x500 | Schema_DeclaredClass | Size: 0x28
 			GlobalTypes::CUtlSymbolLarge m_iszGameEventName; // 0x528 | Schema_Atomic | Size: 0x8

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTimeline : public CS2::server::IntervalTimer {
 		public:
-			public:
 			float32 m_flValues[64]; // 0x10 | Schema_FixedArray | Size: 0x100
 			int32_t m_nValueCounts[64]; // 0x110 | Schema_FixedArray | Size: 0x100
 			int32_t m_nBucketCount; // 0x210 | Schema_Builtin | Size: 0x4

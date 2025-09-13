@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class Bone_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Name; // 0x0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8);
 			GlobalTypes::CTransform m_BindPose; // 0x10 | Schema_Atomic | Size: 0x20

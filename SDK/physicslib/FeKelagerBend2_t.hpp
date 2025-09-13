@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeKelagerBend2_t  {
 		public:
-			public:
 			float32 flWeight[3]; // 0x0 | Schema_FixedArray | Size: 0xc
 			float32 flHeight0; // 0xc | Schema_Builtin | Size: 0x4
 			uint16_t nNode[3]; // 0x10 | Schema_FixedArray | Size: 0x6

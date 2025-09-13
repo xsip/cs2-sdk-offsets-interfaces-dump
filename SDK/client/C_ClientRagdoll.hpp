@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_ClientRagdoll : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			bool m_bFadeOut; // 0x1168 | Schema_Builtin | Size: 0x1
 			bool m_bImportant; // 0x1169 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

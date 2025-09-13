@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeDynKinLink_t  {
 		public:
-			public:
 			uint16_t m_nParent; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t m_nChild; // 0x2 | Schema_Builtin | Size: 0x2
 		};

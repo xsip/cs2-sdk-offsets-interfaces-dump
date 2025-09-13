@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropMaterialReplacement  {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeMaterialName m_OriginalMaterial; // 0x0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeMaterialName m_ReplacementMaterial; // 0x40 | Schema_Atomic | Size: 0x40
 		};

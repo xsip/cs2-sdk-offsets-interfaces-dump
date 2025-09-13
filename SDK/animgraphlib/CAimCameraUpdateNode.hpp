@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAimCameraUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_hParameterPosition; // 0x70 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_hParameterOrientation; // 0x72 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_hParameterSpineRotationWeight; // 0x74 | Schema_DeclaredClass | Size: 0x2

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseRuntimeConstantIndex_t  {
 		public:
-			public:
 			int16_t m_Value; // 0x0 | Schema_Builtin | Size: 0x2
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseRuntimeConstantIndex_t, m_Value) == 0x0, "m_Value in PulseRuntimeConstantIndex_t should be at offset 0x0");

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomColor : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			S2_PAD(0x1c);
 			GlobalTypes::Color m_ColorMin; // 0x1e4 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Color m_ColorMax; // 0x1e8 | Schema_Atomic | Size: 0x4

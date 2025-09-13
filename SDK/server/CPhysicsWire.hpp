@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsWire : public CS2::server::CBaseEntity {
 		public:
-			public:
 			int32_t m_nDensity; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

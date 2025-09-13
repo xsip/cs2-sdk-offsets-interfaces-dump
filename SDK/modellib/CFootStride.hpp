@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace modellib {
 		class CFootStride  {
 		public:
-			public:
 			modellib::CFootCycleDefinition m_definition; // 0x0 | Schema_DeclaredClass | Size: 0x3c
 			S2_PAD(0x4);
 			modellib::CFootTrajectories m_trajectories; // 0x40 | Schema_DeclaredClass | Size: 0x18

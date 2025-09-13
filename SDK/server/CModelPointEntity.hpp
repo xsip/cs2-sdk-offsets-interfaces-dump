@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CModelPointEntity : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CModelPointEntity) == 0x7E8, "CModelPointEntity size should be 0x7E8");
 	}

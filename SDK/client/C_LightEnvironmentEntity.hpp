@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_LightEnvironmentEntity : public CS2::client::C_LightDirectionalEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_LightEnvironmentEntity) == 0xEC8, "C_LightEnvironmentEntity size should be 0xEC8");
 	}

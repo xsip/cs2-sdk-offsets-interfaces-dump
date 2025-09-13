@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Bool : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			bool m_DefaultValue; // 0x38 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

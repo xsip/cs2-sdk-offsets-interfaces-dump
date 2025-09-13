@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CParamSpanUpdater  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::ParamSpan_t > m_spans; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_spans[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

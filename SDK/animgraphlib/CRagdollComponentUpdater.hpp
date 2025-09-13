@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CRagdollComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_ragdollNodePaths; // 0x30 | Schema_Atomic | Size: 0x18
 			char  m_ragdollNodePaths[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_followAttachmentNodePaths; // 0x48 | Schema_Atomic | Size: 0x18

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class IKTargetSettings_t  {
 		public:
-			public:
 			animgraphlib::IKTargetSource m_TargetSource; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			animgraphlib::IKBoneNameAndIndex_t m_Bone; // 0x8 | Schema_DeclaredClass | Size: 0x10

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CWeaponCZ75a : public CS2::server::CCSWeaponBaseGun {
 		public:
-			public:
 			bool m_bMagazineRemoved; // 0x1050 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

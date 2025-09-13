@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CStopwatch : public CS2::client::CStopwatchBase {
 		public:
-			public:
 			float32 m_flInterval; // 0xc | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::CStopwatch, m_flInterval) == 0xC, "m_flInterval in CStopwatch should be at offset 0xC");

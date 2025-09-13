@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSoundeventCountSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			bool m_bExcludeStoppedSounds; // 0x18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CUtlString m_strCountKeyName; // 0x20 | Schema_Atomic | Size: 0x8

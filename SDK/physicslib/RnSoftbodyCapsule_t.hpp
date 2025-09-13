@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnSoftbodyCapsule_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vCenter[2]; // 0x0 | Schema_FixedArray | Size: 0x18
 			float32 m_flRadius; // 0x18 | Schema_Builtin | Size: 0x4
 			uint16_t m_nParticle[2]; // 0x1c | Schema_FixedArray | Size: 0x4

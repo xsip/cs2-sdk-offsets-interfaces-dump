@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmBitFlags  {
 		public:
-			public:
 			uint32_t m_flags; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::animlib::CNmBitFlags, m_flags) == 0x0, "m_flags in CNmBitFlags should be at offset 0x0");

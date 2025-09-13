@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CItemDefuser : public CS2::server::CItem {
 		public:
-			public:
 			server::EntitySpottedState_t m_entitySpottedState; // 0xb50 | Schema_DeclaredClass | Size: 0x18
 			int32_t m_nSpotRules; // 0xb68 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

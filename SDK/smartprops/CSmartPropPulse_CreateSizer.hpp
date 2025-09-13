@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_CreateSizer : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Name; // 0x48 | Schema_Atomic | Size: 0x8
 			bool m_bHACK_ProvideResultMinX; // 0x50 | Schema_Builtin | Size: 0x1
 			bool m_bHACK_ProvideResultMaxX; // 0x51 | Schema_Builtin | Size: 0x1

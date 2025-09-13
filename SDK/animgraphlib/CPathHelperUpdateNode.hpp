@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CPathHelperUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			float32 m_flStoppingRadius; // 0x70 | Schema_Builtin | Size: 0x4
 			float32 m_flStoppingSpeedScale; // 0x74 | Schema_Builtin | Size: 0x4
 		};

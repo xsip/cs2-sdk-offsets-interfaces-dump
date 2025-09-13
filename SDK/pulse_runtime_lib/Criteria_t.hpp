@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class Criteria_t  {
 		public:
-			public:
 			bool m_bLimitCountPasses; // 0x0 | Schema_Builtin | Size: 0x1
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::Criteria_t, m_bLimitCountPasses) == 0x0, "m_bLimitCountPasses in CPulseCell_LimitCount::Criteria_t should be at offset 0x0");

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCChoreoSceneFileData  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCChoreoSceneFileData) == 0x1, "InfoForResourceTypeCChoreoSceneFileData size should be 0x1");

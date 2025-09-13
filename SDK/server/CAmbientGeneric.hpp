@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CAmbientGeneric : public CS2::server::CPointEntity {
 		public:
-			public:
 			float32 m_radius; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxRadius; // 0x4f4 | Schema_Builtin | Size: 0x4
 			soundsystem::soundlevel_t m_iSoundLevel; // 0x4f8 | Schema_DeclaredEnum | Size: 0x4

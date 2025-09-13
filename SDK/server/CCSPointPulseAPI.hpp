@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPointPulseAPI  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::server::CCSPointPulseAPI) == 0x1, "CCSPointPulseAPI size should be 0x1");

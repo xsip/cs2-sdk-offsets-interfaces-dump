@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitialVelocityNoise : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			GlobalTypes::Vector m_vecAbsVal; // 0x1c8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecAbsValInv; // 0x1d4 | Schema_Atomic | Size: 0xc
 			particleslib::CPerParticleVecInput m_vecOffsetLoc; // 0x1e0 | Schema_DeclaredClass | Size: 0x678

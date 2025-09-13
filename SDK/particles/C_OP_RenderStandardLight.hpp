@@ -22,7 +22,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderStandardLight : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particles::ParticleLightTypeChoiceList_t m_nLightType; // 0x210 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x218 | Schema_DeclaredClass | Size: 0x678

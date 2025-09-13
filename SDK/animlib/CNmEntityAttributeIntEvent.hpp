@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmEntityAttributeIntEvent : public CS2::animlib::CNmEntityAttributeEventBase {
 		public:
-			public:
 			int32_t m_nIntValue; // 0x38 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CDampedValueUpdateItem  {
 		public:
-			public:
 			animgraphlib::CAnimInputDamping m_damping; // 0x0 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8);
 			animgraphlib::CAnimParamHandle m_hParamIn; // 0x20 | Schema_DeclaredClass | Size: 0x2

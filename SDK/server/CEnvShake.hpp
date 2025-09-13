@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvShake : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_limitToEntity; // 0x4f0 | Schema_Atomic | Size: 0x8
 			float32 m_Amplitude; // 0x4f8 | Schema_Builtin | Size: 0x4
 			float32 m_Frequency; // 0x4fc | Schema_Builtin | Size: 0x4

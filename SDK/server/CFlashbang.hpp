@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFlashbang : public CS2::server::CBaseCSGrenade {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CFlashbang) == 0x1070, "CFlashbang size should be 0x1070");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_WeaponCZ75a : public CS2::client::C_CSWeaponBaseGun {
 		public:
-			public:
 			bool m_bMagazineRemoved; // 0x1e40 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};

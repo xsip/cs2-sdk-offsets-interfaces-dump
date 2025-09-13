@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitSkinnedPositionFromCPSnapshot : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			int32_t m_nSnapshotControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
 			int32_t m_nControlPointNumber; // 0x1cc | Schema_Builtin | Size: 0x4
 			bool m_bRandom; // 0x1d0 | Schema_Builtin | Size: 0x1

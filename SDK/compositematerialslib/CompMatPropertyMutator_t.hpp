@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace compositematerialslib {
 		class CompMatPropertyMutator_t  {
 		public:
-			public:
 			bool m_bEnabled; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			compositematerialslib::CompMatPropertyMutatorType_t m_nMutatorCommandType; // 0x4 | Schema_DeclaredEnum | Size: 0x4

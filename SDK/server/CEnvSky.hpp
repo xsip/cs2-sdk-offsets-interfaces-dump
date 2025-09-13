@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvSky : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0x7e8 | Schema_Atomic | Size: 0x8
 			char  m_hSkyMaterial[0x8]; // 0x7e8 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterialLightingOnly; // 0x7f0 | Schema_Atomic | Size: 0x8

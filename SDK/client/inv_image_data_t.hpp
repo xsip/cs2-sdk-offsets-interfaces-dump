@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace client {
 		class inv_image_data_t  {
 		public:
-			public:
 			client::inv_image_map_t map; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			client::inv_image_item_t item; // 0x10 | Schema_DeclaredClass | Size: 0x20
 			client::inv_image_camera_t camera; // 0x30 | Schema_DeclaredClass | Size: 0x34

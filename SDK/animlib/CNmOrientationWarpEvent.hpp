@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmOrientationWarpEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::animlib::CNmOrientationWarpEvent) == 0x20, "CNmOrientationWarpEvent size should be 0x20");
 	}

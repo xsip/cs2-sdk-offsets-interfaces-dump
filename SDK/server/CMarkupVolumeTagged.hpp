@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged : public CS2::server::CMarkupVolume {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_GroupNames; // 0x7f0 | Schema_Atomic | Size: 0x18
 			char  m_GroupNames[0x18]; // 0x7f0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_Tags; // 0x808 | Schema_Atomic | Size: 0x18

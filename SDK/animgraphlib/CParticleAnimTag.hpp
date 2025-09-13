@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CParticleAnimTag : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hParticleSystem; // 0x58 | Schema_Atomic | Size: 0x8
 			char  m_hParticleSystem[0x8]; // 0x58 | Schema_Atomic | Size: 0x8

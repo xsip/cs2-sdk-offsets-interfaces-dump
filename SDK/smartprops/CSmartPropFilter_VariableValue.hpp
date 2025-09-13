@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropFilter_VariableValue : public CS2::smartprops::CSmartPropFilter {
 		public:
-			public:
 			GlobalTypes::CSmartPropVariableComparison m_VariableComparison; // 0x50 | Schema_Atomic | Size: 0x20
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_VariableValue, m_VariableComparison) == 0x50, "m_VariableComparison in CSmartPropFilter_VariableValue should be at offset 0x50");

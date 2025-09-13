@@ -17,22 +17,6 @@ using float64 = double;
 #define S2_PAD(size) char S2_PAD_DEFINE(padding_, __LINE__)[size]
 #endif
 
-
-
-#define STRINGIFY_DETAIL(x) #x
-#define STRINGIFY(x) STRINGIFY_DETAIL(x)
-
-#define STATIC_ASSERT_OFFSET(type, member, expected) \
-    static_assert(offsetof(type, member) == expected, \
-    "Offset of " #member " is " STRINGIFY(OFFSETOF(type, member)) \
-    " but expected " STRINGIFY(expected))
-
-#define STATIC_ASSERT_SIZE(type, expected) \
-    static_assert(sizeof(type) == expected, \
-    "Size of " #type " is " STRINGIFY(sizeof(type)) \
-    " but expected " STRINGIFY(expected))
-
-
 namespace GlobalTypes {
 	using CUtlSymbolLarge /*CUtlSymbolLarge*/ = char[0x8]; //  Schema_Atomic
 	using Vector /*Vector*/ = char[0xc]; //  Schema_Atomic

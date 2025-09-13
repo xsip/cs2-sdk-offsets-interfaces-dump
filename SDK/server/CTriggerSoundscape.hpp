@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSoundscape : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			// server::CHandle< server::CEnvSoundscapeTriggerable > m_hSoundscape; // 0x9b8 | Schema_Atomic | Size: 0x4
 			char  m_hSoundscape[0x4]; // 0x9b8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class SoundOpvarTraceResult_t  {
 		public:
-			public:
 			GlobalTypes::Vector vPos; // 0x0 | Schema_Atomic | Size: 0xc
 			bool bDidHit; // 0xc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

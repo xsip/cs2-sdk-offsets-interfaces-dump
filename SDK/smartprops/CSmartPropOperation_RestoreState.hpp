@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_RestoreState : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeStateName m_StateName; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bDiscardIfUknown; // 0x90 | Schema_Atomic | Size: 0x40
 		};

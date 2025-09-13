@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeIVectorGraphic  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeIVectorGraphic) == 0x1, "InfoForResourceTypeIVectorGraphic size should be 0x1");

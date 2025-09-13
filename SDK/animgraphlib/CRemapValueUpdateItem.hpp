@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CRemapValueUpdateItem  {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_hParamIn; // 0x0 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_hParamOut; // 0x2 | Schema_DeclaredClass | Size: 0x2
 			float32 m_flMinInputValue; // 0x4 | Schema_Builtin | Size: 0x4

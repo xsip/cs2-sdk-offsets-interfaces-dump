@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysicalButton : public CS2::server::CBaseButton {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPhysicalButton) == 0x9B8, "CPhysicalButton size should be 0x9B8");
 	}

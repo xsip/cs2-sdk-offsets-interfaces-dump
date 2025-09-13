@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicProximity : public CS2::server::CPointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CLogicProximity) == 0x4F0, "CLogicProximity size should be 0x4F0");
 	}

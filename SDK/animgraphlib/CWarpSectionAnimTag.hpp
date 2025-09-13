@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CWarpSectionAnimTag : public CS2::animgraphlib::CWarpSectionAnimTagBase {
 		public:
-			public:
 			bool m_bWarpPosition; // 0x50 | Schema_Builtin | Size: 0x1
 			bool m_bWarpOrientation; // 0x51 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMultiplayRules : public CS2::server::CGameRules {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CMultiplayRules) == 0xC0, "CMultiplayRules size should be 0xC0");
 	}

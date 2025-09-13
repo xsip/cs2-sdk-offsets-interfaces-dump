@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTonemapTrigger : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_tonemapControllerName; // 0x9b8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CEntityHandle m_hTonemapController; // 0x9c0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding

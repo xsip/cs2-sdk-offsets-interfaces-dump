@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventSplitScreenStateChanged_t  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::client::EventSplitScreenStateChanged_t) == 0x1, "EventSplitScreenStateChanged_t size should be 0x1");

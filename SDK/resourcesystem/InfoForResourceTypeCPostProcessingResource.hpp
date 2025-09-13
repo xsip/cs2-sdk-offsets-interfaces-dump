@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCPostProcessingResource  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCPostProcessingResource) == 0x1, "InfoForResourceTypeCPostProcessingResource size should be 0x1");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysForce : public CS2::server::CPointEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4f8 | Schema_Atomic | Size: 0x8
 			float32 m_force; // 0x500 | Schema_Builtin | Size: 0x4

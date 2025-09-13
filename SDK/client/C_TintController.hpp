@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_TintController : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 		};
 		static_assert(sizeof(CS2::client::C_TintController) == 0x610, "C_TintController size should be 0x610");

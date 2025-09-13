@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class BakedShadowAssignment_t  {
 		public:
-			public:
 			uint32_t m_nLightHash; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nMapHash; // 0x4 | Schema_Builtin | Size: 0x4
 			int8_t m_nShadowChannel; // 0x8 | Schema_Builtin | Size: 0x1

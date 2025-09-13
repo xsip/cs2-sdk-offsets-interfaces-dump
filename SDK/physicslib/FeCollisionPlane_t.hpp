@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeCollisionPlane_t  {
 		public:
-			public:
 			uint16_t nCtrlParent; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t nChildNode; // 0x2 | Schema_Builtin | Size: 0x2
 			physicslib::RnPlane_t m_Plane; // 0x4 | Schema_DeclaredClass | Size: 0x10

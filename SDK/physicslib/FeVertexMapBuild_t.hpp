@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeVertexMapBuild_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_VertexMapName; // 0x0 | Schema_Atomic | Size: 0x8
 			uint32_t m_nNameHash; // 0x8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_Color; // 0xc | Schema_Atomic | Size: 0x4

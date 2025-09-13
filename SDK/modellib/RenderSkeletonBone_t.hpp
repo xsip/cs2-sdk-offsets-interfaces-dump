@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class RenderSkeletonBone_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_boneName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_parentName; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::matrix3x4_t m_invBindPose; // 0x10 | Schema_Atomic | Size: 0x30

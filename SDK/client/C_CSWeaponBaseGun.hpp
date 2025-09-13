@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSWeaponBaseGun : public CS2::client::C_CSWeaponBase {
 		public:
-			public:
 			int32_t m_zoomLevel; // 0x1e10 | Schema_Builtin | Size: 0x4
 			int32_t m_iBurstShotsRemaining; // 0x1e14 | Schema_Builtin | Size: 0x4
 			int32_t m_iSilencerBodygroup; // 0x1e18 | Schema_Builtin | Size: 0x4

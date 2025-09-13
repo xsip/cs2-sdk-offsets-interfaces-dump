@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EconWearable : public CS2::client::C_EconEntity {
 		public:
-			public:
 			int32_t m_nForceSkin; // 0x18f0 | Schema_Builtin | Size: 0x4
 			bool m_bAlwaysAllow; // 0x18f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding

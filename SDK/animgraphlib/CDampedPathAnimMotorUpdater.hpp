@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CDampedPathAnimMotorUpdater : public CS2::animgraphlib::CPathAnimMotorUpdaterBase {
 		public:
-			public:
 			S2_PAD(0x4);
 			float32 m_flAnticipationTime; // 0x2c | Schema_Builtin | Size: 0x4
 			float32 m_flMinSpeedScale; // 0x30 | Schema_Builtin | Size: 0x4

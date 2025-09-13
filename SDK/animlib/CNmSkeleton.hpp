@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmSkeleton  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_ID; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlLeanVector< GlobalTypes::CGlobalSymbol > m_boneIDs; // 0x8 | Schema_Atomic | Size: 0x10
 			char  m_boneIDs[0x10]; // 0x8 | Schema_Atomic | Size: 0x10

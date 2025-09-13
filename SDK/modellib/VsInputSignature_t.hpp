@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class VsInputSignature_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< modellib::VsInputSignatureElement_t > m_elems; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_elems[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::VsInputSignatureElement_t > m_depth_elems; // 0x18 | Schema_Atomic | Size: 0x18

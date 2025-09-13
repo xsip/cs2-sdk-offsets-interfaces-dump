@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseGraphExecutionHistoryNodeDesc_t  {
 		public:
-			public:
 			GlobalTypes::CBufferString strCellDesc; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t strBindingName; // 0x10 | Schema_Atomic | Size: 0x10
 		};

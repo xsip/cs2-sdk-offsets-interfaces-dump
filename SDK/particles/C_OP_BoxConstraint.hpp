@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_BoxConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			particleslib::CParticleCollectionVecInput m_vecMin; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CParticleCollectionVecInput m_vecMax; // 0x838 | Schema_DeclaredClass | Size: 0x678
 			int32_t m_nCP; // 0xeb0 | Schema_Builtin | Size: 0x4

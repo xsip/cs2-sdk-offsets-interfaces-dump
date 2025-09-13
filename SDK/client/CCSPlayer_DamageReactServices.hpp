@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_DamageReactServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::client::CCSPlayer_DamageReactServices) == 0x48, "CCSPlayer_DamageReactServices size should be 0x48");

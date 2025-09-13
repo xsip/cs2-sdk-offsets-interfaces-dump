@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmRootMotionData  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_transforms; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_transforms[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			int32_t m_nNumFrames; // 0x18 | Schema_Builtin | Size: 0x4

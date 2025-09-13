@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPathParticleRope : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bStartActive; // 0x4f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

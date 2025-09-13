@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CLogicalEntity : public CS2::client::C_BaseEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CLogicalEntity) == 0x5F8, "CLogicalEntity size should be 0x5F8");
 	}

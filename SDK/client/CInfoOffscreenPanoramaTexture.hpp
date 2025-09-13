@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CInfoOffscreenPanoramaTexture : public CS2::client::C_PointEntity {
 		public:
-			public:
 			bool m_bDisabled; // 0x5f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			int32_t m_nResolutionX; // 0x5fc | Schema_Builtin | Size: 0x4

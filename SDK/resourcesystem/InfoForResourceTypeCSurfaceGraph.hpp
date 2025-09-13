@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCSurfaceGraph  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCSurfaceGraph) == 0x1, "InfoForResourceTypeCSurfaceGraph size should be 0x1");

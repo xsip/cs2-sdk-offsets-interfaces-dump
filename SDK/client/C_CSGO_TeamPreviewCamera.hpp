@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_TeamPreviewCamera : public CS2::client::C_CSGO_MapPreviewCameraPath {
 		public:
-			public:
 			int32_t m_nVariant; // 0x680 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

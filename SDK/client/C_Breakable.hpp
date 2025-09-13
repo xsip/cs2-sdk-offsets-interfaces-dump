@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_Breakable : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_Breakable) == 0xEC0, "C_Breakable size should be 0xEC0");
 	}

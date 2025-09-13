@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CurlNoiseForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			particles::ParticleDirectionNoiseType_t m_nNoiseType; // 0x1d0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CPerParticleVecInput m_vecNoiseFreq; // 0x1d8 | Schema_DeclaredClass | Size: 0x678

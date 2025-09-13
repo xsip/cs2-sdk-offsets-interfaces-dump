@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class NmCompressionSettings_t  {
 		public:
-			public:
 			animlib::QuantizationRange_t m_translationRangeX; // 0x0 | Schema_DeclaredClass | Size: 0x8
 			animlib::QuantizationRange_t m_translationRangeY; // 0x8 | Schema_DeclaredClass | Size: 0x8
 			animlib::QuantizationRange_t m_translationRangeZ; // 0x10 | Schema_DeclaredClass | Size: 0x8

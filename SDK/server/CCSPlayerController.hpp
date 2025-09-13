@@ -24,7 +24,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayerController : public CS2::server::CBasePlayerController {
 		public:
-			public:
 			S2_PAD(0x10);
 			server::CCSPlayerController_InGameMoneyServices* m_pInGameMoneyServices; // 0x800 | Schema_Ptr | Size: 0x8
 			server::CCSPlayerController_InventoryServices* m_pInventoryServices; // 0x808 | Schema_Ptr | Size: 0x8

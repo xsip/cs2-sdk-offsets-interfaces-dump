@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundEventSphereEntity : public CS2::client::C_SoundEventEntity {
 		public:
-			public:
 			float32 m_flRadius; // 0x6c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

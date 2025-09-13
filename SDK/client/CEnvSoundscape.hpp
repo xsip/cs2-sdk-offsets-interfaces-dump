@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CEnvSoundscape : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnPlay; // 0x5f8 | Schema_DeclaredClass | Size: 0x28
 			float32 m_flRadius; // 0x620 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

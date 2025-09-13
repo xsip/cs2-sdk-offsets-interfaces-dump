@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncLadder : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vecLadderDir; // 0x7e8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
 			// server::CUtlVector< server.dll::CHandle< CInfoLadderDismount > > m_Dismounts; // 0x7f8 | Schema_Atomic | Size: 0x18

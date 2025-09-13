@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_ListenForAnimgraphTag : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_ResumePoint m_OnStart; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_OnEnd; // 0x90 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xd8 | Schema_DeclaredClass | Size: 0x48

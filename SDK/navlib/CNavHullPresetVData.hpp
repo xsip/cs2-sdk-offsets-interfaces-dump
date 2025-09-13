@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace navlib {
 		class CNavHullPresetVData  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_vecNavHulls; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_vecNavHulls[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

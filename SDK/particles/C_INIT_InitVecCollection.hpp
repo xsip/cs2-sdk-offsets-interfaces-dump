@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitVecCollection : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleCollectionVecInput m_InputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
 			particles::ParticleAttributeIndex_t m_nOutputField; // 0x840 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointToImpactPoint : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nCPOut; // 0x1c8 | Schema_Builtin | Size: 0x4
 			int32_t m_nCPIn; // 0x1cc | Schema_Builtin | Size: 0x4
 			float32 m_flUpdateRate; // 0x1d0 | Schema_Builtin | Size: 0x4

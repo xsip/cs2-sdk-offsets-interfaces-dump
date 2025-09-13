@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleVariableRef  {
 		public:
-			public:
 			GlobalTypes::CKV3MemberNameWithStorage m_variableName; // 0x0 | Schema_Atomic | Size: 0x38
 			pulse_runtime_lib::PulseValueType_t m_variableType; // 0x38 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding

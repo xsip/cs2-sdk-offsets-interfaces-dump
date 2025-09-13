@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicBranch : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			bool m_bInValue; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_Listeners; // 0x4f8 | Schema_Atomic | Size: 0x18

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_WeaponServices : public CS2::client::CPlayer_WeaponServices {
 		public:
-			public:
 			S2_PAD(0x28);
 			entity2::GameTime_t m_flNextAttack; // 0xc8 | Schema_DeclaredClass | Size: 0x4
 			bool m_bIsLookingAtWeapon; // 0xcc | Schema_Builtin | Size: 0x1

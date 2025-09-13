@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_Rotate : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeAngles m_vRotation; // 0x50 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Rotate, m_vRotation) == 0x50, "m_vRotation in CSmartPropOperation_Rotate should be at offset 0x50");

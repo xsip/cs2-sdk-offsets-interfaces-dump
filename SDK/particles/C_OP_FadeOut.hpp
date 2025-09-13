@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_FadeOut : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			float32 m_flFadeOutTimeMin; // 0x1c0 | Schema_Builtin | Size: 0x4
 			float32 m_flFadeOutTimeMax; // 0x1c4 | Schema_Builtin | Size: 0x4
 			float32 m_flFadeOutTimeExp; // 0x1c8 | Schema_Builtin | Size: 0x4

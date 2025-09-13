@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundOpvarSetPointBase : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x5f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x600 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x608 | Schema_Atomic | Size: 0x8

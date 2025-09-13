@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CSceneEntity : public CS2::server::CPointEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlSymbolLarge m_iszSceneFile; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszResumeSceneFile; // 0x500 | Schema_Atomic | Size: 0x8

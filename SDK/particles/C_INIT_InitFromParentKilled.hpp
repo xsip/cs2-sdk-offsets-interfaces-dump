@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitFromParentKilled : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nAttributeToCopy; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
 			particles::EventTypeSelection_t m_nEventType; // 0x1cc | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x80); // End padding

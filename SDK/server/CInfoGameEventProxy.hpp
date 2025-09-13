@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoGameEventProxy : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszEventName; // 0x4f0 | Schema_Atomic | Size: 0x8
 			float32 m_flRange; // 0x4f8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

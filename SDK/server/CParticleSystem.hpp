@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CParticleSystem : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			char m_szSnapshotFileName[512]; // 0x7e8 | Schema_FixedArray | Size: 0x200
 			bool m_bActive; // 0x9e8 | Schema_Builtin | Size: 0x1
 			bool m_bFrozen; // 0x9e9 | Schema_Builtin | Size: 0x1

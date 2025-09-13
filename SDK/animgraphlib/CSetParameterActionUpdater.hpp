@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSetParameterActionUpdater : public CS2::animgraphlib::CAnimActionUpdater {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_hParam; // 0x18 | Schema_DeclaredClass | Size: 0x2
 			GlobalTypes::CAnimVariant m_value; // 0x1a | Schema_Atomic | Size: 0x11
 			S2_PAD(0x5); // End padding

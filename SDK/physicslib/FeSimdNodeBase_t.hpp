@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSimdNodeBase_t  {
 		public:
-			public:
 			uint16_t nNode[4]; // 0x0 | Schema_FixedArray | Size: 0x8
 			uint16_t nNodeX0[4]; // 0x8 | Schema_FixedArray | Size: 0x8
 			uint16_t nNodeX1[4]; // 0x10 | Schema_FixedArray | Size: 0x8

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class AttachmentHandle_t  {
 		public:
-			public:
 			uint8_t m_Value; // 0x0 | Schema_Builtin | Size: 0x1
 		};
 		static_assert(offsetof(CS2::modellib::AttachmentHandle_t, m_Value) == 0x0, "m_Value in AttachmentHandle_t should be at offset 0x0");

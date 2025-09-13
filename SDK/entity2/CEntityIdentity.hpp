@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace entity2 {
 		class CEntityIdentity  {
 		public:
-			public:
 			S2_PAD(0x14);
 			int32_t m_nameStringableIndex; // 0x14 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_name; // 0x18 | Schema_Atomic | Size: 0x8

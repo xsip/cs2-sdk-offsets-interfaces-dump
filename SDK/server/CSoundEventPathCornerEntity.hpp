@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundEventPathCornerEntity : public CS2::server::CSoundEventEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszPathCorner; // 0x5b8 | Schema_Atomic | Size: 0x8
 			int32_t m_iCountMax; // 0x5c0 | Schema_Builtin | Size: 0x4
 			float32 m_flDistanceMax; // 0x5c4 | Schema_Builtin | Size: 0x4

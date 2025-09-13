@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class InstanceState_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVectorFixedGrowable< uint8, 8 > m_Shuffle; // 0x0 | Schema_Atomic | Size: 0x20
 			char  m_Shuffle[0x20]; // 0x0 | Schema_Atomic | Size: 0x20
 			int32_t m_nNextShuffle; // 0x20 | Schema_Builtin | Size: 0x4

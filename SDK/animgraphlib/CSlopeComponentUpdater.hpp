@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSlopeComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			S2_PAD(0x4);
 			float32 m_flTraceDistance; // 0x34 | Schema_Builtin | Size: 0x4
 			animgraphlib::CAnimParamHandle m_hSlopeAngle; // 0x38 | Schema_DeclaredClass | Size: 0x2

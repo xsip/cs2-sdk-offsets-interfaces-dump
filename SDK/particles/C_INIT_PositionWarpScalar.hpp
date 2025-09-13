@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionWarpScalar : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			GlobalTypes::Vector m_vecWarpMin; // 0x1c8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecWarpMax; // 0x1d4 | Schema_Atomic | Size: 0xc
 			particleslib::CPerParticleFloatInput m_InputValue; // 0x1e0 | Schema_DeclaredClass | Size: 0x160

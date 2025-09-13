@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvProjectedTexture : public CS2::server::CModelPointEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x7e8 | Schema_Atomic | Size: 0x4
 			char  m_hTargetEntity[0x4]; // 0x7e8 | Schema_Atomic | Size: 0x4
 			bool m_bState; // 0x7ec | Schema_Builtin | Size: 0x1

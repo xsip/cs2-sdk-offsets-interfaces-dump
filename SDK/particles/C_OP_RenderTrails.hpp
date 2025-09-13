@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderTrails : public CS2::particles::CBaseTrailRenderer {
 		public:
-			public:
 			bool m_bEnableFadingAndClamping; // 0x2ef0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flStartFadeDot; // 0x2ef4 | Schema_Builtin | Size: 0x4

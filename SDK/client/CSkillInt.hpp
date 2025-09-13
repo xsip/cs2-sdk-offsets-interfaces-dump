@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CSkillInt  {
 		public:
-			public:
 			int32_t m_pValue[4]; // 0x0 | Schema_FixedArray | Size: 0x10
 		};
 		static_assert(offsetof(CS2::client::CSkillInt, m_pValue) == 0x0, "m_pValue in CSkillInt should be at offset 0x0");

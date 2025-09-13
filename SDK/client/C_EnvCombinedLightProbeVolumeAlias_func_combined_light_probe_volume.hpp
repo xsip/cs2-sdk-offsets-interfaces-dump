@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume : public CS2::client::C_EnvCombinedLightProbeVolume {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_EnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume) == 0x1740, "C_EnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume size should be 0x1740");
 	}

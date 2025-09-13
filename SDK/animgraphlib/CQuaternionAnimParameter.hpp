@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CQuaternionAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {
 		public:
-			public:
 			GlobalTypes::Quaternion m_defaultValue; // 0x80 | Schema_Atomic | Size: 0x10
 			bool m_bInterpolate; // 0x90 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding

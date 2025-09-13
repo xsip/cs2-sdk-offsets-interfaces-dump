@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicCase : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_nCase[32]; // 0x4f0 | Schema_FixedArray | Size: 0x100
 			int32_t m_nShuffleCases; // 0x5f0 | Schema_Builtin | Size: 0x4
 			int32_t m_nLastShuffleCase; // 0x5f4 | Schema_Builtin | Size: 0x4

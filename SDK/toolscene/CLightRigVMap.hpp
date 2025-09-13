@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CLightRigVMap  {
 		public:
-			public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeVMapResourceData_t > > m_MapName; // 0x0 | Schema_Atomic | Size: 0xe0
 			char  m_MapName[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
 			bool m_bRender3DSkybox; // 0xe0 | Schema_Builtin | Size: 0x1

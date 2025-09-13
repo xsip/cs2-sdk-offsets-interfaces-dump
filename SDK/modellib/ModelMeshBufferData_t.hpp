@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class ModelMeshBufferData_t  {
 		public:
-			public:
 			int32_t m_nBlockIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nElementCount; // 0x4 | Schema_Builtin | Size: 0x4
 			uint32_t m_nElementSizeInBytes; // 0x8 | Schema_Builtin | Size: 0x4

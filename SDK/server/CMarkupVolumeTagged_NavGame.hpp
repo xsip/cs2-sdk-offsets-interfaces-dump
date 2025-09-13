@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged_NavGame : public CS2::server::CMarkupVolumeWithRef {
 		public:
-			public:
 			server::NavScopeFlags_t m_nScopes; // 0x850 | Schema_DeclaredEnum | Size: 0x1
 			bool m_bFloodFillAttribute; // 0x851 | Schema_Builtin | Size: 0x1
 			bool m_bSplitNavSpace; // 0x852 | Schema_Builtin | Size: 0x1

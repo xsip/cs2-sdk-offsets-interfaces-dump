@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class ClutterTile_t  {
 		public:
-			public:
 			uint32_t m_nFirstInstance; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nLastInstance; // 0x4 | Schema_Builtin | Size: 0x4
 			mathlib_extended::AABB_t m_BoundsWs; // 0x8 | Schema_DeclaredClass | Size: 0x18

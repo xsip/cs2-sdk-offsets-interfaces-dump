@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_PreviewModel_GraphController : public CS2::client::CBaseAnimGraphAnimGraphController {
 		public:
-			public:
 			// GlobalTypes::CAnimGraphParamOptionalRef< char >* m_pszCharacterMode; // 0x268 | Schema_Atomic | Size: 0x28
 			char  m_pszCharacterMode[0x28]; // 0x268 | Schema_Atomic | Size: 0x28
 			// GlobalTypes::CAnimGraphParamOptionalRef< char >* m_pszWeaponState; // 0x290 | Schema_Atomic | Size: 0x28

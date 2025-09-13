@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class CVoxelVisibility  {
 		public:
-			public:
 			S2_PAD(0x40);
 			uint32_t m_nBaseClusterCount; // 0x40 | Schema_Builtin | Size: 0x4
 			uint32_t m_nPVSBytesPerCluster; // 0x44 | Schema_Builtin | Size: 0x4

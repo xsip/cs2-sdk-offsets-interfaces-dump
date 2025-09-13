@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimNodePath  {
 		public:
-			public:
 			modellib::AnimNodeID m_path[11]; // 0x0 | Schema_FixedArray | Size: 0x1e4
 			int32_t m_nCount; // 0x2c | Schema_Builtin | Size: 0x4
 		};

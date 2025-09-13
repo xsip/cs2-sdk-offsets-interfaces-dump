@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleVisibilityInputs  {
 		public:
-			public:
 			float32 m_flCameraBias; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nCPin; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flProxyRadius; // 0x8 | Schema_Builtin | Size: 0x4

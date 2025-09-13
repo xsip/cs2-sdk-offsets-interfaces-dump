@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RandomForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			GlobalTypes::Vector m_MinForce; // 0x1d0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_MaxForce; // 0x1dc | Schema_Atomic | Size: 0xc
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PlayerVisibility : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			float32 m_flVisibilityStrength; // 0x5f8 | Schema_Builtin | Size: 0x4
 			float32 m_flFogDistanceMultiplier; // 0x5fc | Schema_Builtin | Size: 0x4
 			float32 m_flFogMaxDensityMultiplier; // 0x600 | Schema_Builtin | Size: 0x4

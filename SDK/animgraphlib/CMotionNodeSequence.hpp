@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMotionNodeSequence : public CS2::animgraphlib::CMotionNode {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x28 | Schema_Atomic | Size: 0x18
 			char  m_tags[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			animationsystem::HSequence m_hSequence; // 0x40 | Schema_DeclaredClass | Size: 0x4

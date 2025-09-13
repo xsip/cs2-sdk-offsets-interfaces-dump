@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CDestructiblePartsSystemData_HitGroupInfoAndDamageLevels  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_DebugName; // 0x0 | Schema_Atomic | Size: 0x8
 			client::HitGroup_t m_nHitGroup; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bDisableHitGroupWhenDestroyed; // 0xc | Schema_Builtin | Size: 0x1

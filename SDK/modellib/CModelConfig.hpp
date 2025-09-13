@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfig  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_ConfigName; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< CModelConfigElement >* m_Elements; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_Elements[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

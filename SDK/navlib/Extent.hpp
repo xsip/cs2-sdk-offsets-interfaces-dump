@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace navlib {
 		class Extent  {
 		public:
-			public:
 			GlobalTypes::Vector lo; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector hi; // 0xc | Schema_Atomic | Size: 0xc
 		};

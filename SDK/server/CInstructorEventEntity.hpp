@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInstructorEventEntity : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszName; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszHintTargetEntity; // 0x4f8 | Schema_Atomic | Size: 0x8
 			// server::CHandle< server::CBasePlayerPawn > m_hTargetPlayer; // 0x500 | Schema_Atomic | Size: 0x4

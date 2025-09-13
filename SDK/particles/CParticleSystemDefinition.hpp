@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleSystemDefinition : public CS2::particles::IParticleSystemDefinition {
 		public:
-			public:
 			int32_t m_nBehaviorVersion; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CUtlVector< CParticleFunctionPreEmission >* m_PreEmissionOperators; // 0x10 | Schema_Atomic | Size: 0x18

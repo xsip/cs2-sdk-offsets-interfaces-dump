@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_WaitForCursorsWithTagBase : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			public:
 			int32_t m_nCursorsAllowedToWait; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			pulse_runtime_lib::CPulse_ResumePoint m_WaitComplete; // 0x50 | Schema_DeclaredClass | Size: 0x48

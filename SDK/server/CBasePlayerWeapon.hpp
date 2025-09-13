@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerWeapon : public CS2::server::CEconEntity {
 		public:
-			public:
 			entity2::GameTick_t m_nNextPrimaryAttackTick; // 0xe30 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flNextPrimaryAttackTickRatio; // 0xe34 | Schema_Builtin | Size: 0x4
 			entity2::GameTick_t m_nNextSecondaryAttackTick; // 0xe38 | Schema_DeclaredClass | Size: 0x4

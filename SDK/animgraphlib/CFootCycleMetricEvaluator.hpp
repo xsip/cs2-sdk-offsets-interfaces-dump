@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFootCycleMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< int32 > m_footIndices; // 0x50 | Schema_Atomic | Size: 0x18
 			char  m_footIndices[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 		};

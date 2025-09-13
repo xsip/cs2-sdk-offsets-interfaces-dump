@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimEnum  {
 		public:
-			public:
 			uint8_t m_value; // 0x0 | Schema_Builtin | Size: 0x1
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimEnum, m_value) == 0x0, "m_value in CAnimEnum should be at offset 0x0");

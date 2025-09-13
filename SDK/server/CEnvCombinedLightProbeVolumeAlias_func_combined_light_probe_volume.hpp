@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume : public CS2::server::CEnvCombinedLightProbeVolume {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume) == 0x1638, "CEnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume size should be 0x1638");
 	}

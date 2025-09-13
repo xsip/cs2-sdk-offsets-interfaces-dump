@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerWeaponVData : public CS2::client::CEntitySubclassVDataBase {
 		public:
-			public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_szWorldModel; // 0x28 | Schema_Atomic | Size: 0xe0
 			char  m_szWorldModel[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName; // 0x108 | Schema_Atomic | Size: 0xe0

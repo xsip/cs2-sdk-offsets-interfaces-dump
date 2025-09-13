@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventPreDataUpdate_t  {
 		public:
-			public:
 			int32_t m_nCount; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};

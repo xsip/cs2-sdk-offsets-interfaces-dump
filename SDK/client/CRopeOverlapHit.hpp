@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CRopeOverlapHit  {
 		public:
-			public:
 			// client::CHandle< client::C_BaseEntity > m_hEntity; // 0x0 | Schema_Atomic | Size: 0x4
 			char  m_hEntity[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);

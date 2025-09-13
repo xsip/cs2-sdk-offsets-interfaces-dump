@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapSDFDistanceToVectorAttribute : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nVectorFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nVectorFieldInput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
 			particleslib::CParticleCollectionFloatInput m_flMinDistance; // 0x1c8 | Schema_DeclaredClass | Size: 0x160

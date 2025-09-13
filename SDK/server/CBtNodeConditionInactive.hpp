@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBtNodeConditionInactive : public CS2::server::CBtNodeCondition {
 		public:
-			public:
 			S2_PAD(0x18);
 			float32 m_flRoundStartThresholdSeconds; // 0x78 | Schema_Builtin | Size: 0x4
 			float32 m_flSensorInactivityThresholdSeconds; // 0x7c | Schema_Builtin | Size: 0x4

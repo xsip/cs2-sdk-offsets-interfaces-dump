@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerBrush : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnStartTouch; // 0x7e8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnEndTouch; // 0x810 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnUse; // 0x838 | Schema_DeclaredClass | Size: 0x28

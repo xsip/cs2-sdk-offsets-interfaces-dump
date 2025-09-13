@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysPulley : public CS2::server::CPhysConstraint {
 		public:
-			public:
 			GlobalTypes::Vector m_position2; // 0x560 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_offset[2]; // 0x56c | Schema_FixedArray | Size: 0x18
 			float32 m_addLength; // 0x584 | Schema_Builtin | Size: 0x4

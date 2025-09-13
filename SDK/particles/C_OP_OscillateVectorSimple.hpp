@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_OscillateVectorSimple : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			GlobalTypes::Vector m_Rate; // 0x1c0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_Frequency; // 0x1cc | Schema_Atomic | Size: 0xc
 			particles::ParticleAttributeIndex_t m_nField; // 0x1d8 | Schema_DeclaredClass | Size: 0x4

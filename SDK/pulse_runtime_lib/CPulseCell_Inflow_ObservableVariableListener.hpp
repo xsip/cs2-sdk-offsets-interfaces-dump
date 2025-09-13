@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Inflow_ObservableVariableListener : public CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint {
 		public:
-			public:
 			pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t m_nBlackboardReference; // 0x80 | Schema_DeclaredClass | Size: 0x2
 			bool m_bSelfReference; // 0x82 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding

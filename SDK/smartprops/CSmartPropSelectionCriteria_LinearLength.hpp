@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropSelectionCriteria_LinearLength : public CS2::smartprops::CSmartPropSelectionCriteria {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeFloat m_flLength; // 0x48 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bAllowScale; // 0x88 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flMinLength; // 0xc8 | Schema_Atomic | Size: 0x40

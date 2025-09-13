@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapInitialVisibilityScalar : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			S2_PAD(0x4);
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1cc | Schema_DeclaredClass | Size: 0x4
 			float32 m_flInputMin; // 0x1d0 | Schema_Builtin | Size: 0x4

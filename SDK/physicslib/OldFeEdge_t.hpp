@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class OldFeEdge_t  {
 		public:
-			public:
 			float32 m_flK[3]; // 0x0 | Schema_FixedArray | Size: 0xc
 			float32 invA; // 0xc | Schema_Builtin | Size: 0x4
 			float32 t; // 0x10 | Schema_Builtin | Size: 0x4

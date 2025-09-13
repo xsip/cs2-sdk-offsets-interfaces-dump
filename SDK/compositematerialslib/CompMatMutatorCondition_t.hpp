@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace compositematerialslib {
 		class CompMatMutatorCondition_t  {
 		public:
-			public:
 			compositematerialslib::CompMatPropertyMutatorConditionType_t m_nMutatorCondition; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_strMutatorConditionContainerName; // 0x8 | Schema_Atomic | Size: 0x8

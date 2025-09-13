@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropFilter : public CS2::smartprops::CSmartPropModifier {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilter) == 0x50, "CSmartPropFilter size should be 0x50");
 	}

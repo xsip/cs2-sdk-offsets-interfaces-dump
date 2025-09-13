@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayerController_InGameMoneyServices : public CS2::client::CPlayerControllerComponent {
 		public:
-			public:
 			int32_t m_iAccount; // 0x40 | Schema_Builtin | Size: 0x4
 			int32_t m_iStartAccount; // 0x44 | Schema_Builtin | Size: 0x4
 			int32_t m_iTotalCashSpent; // 0x48 | Schema_Builtin | Size: 0x4

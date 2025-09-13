@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CDynamicPropAlias_cable_dynamic : public CS2::server::CDynamicProp {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CDynamicPropAlias_cable_dynamic) == 0xD40, "CDynamicPropAlias_cable_dynamic size should be 0xD40");
 	}

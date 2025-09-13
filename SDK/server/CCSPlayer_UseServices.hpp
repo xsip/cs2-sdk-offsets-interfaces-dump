@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_UseServices : public CS2::server::CPlayer_UseServices {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hLastKnownUseEntity; // 0x40 | Schema_Atomic | Size: 0x4
 			char  m_hLastKnownUseEntity[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_flLastUseTimeStamp; // 0x44 | Schema_DeclaredClass | Size: 0x4

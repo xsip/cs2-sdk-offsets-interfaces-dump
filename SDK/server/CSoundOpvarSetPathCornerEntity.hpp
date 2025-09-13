@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetPathCornerEntity : public CS2::server::CSoundOpvarSetPointEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			float32 m_flDistMinSqr; // 0x6c0 | Schema_Builtin | Size: 0x4
 			float32 m_flDistMaxSqr; // 0x6c4 | Schema_Builtin | Size: 0x4

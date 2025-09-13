@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_HostageServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			// client::CHandle< client::C_BaseEntity > m_hCarriedHostage; // 0x40 | Schema_Atomic | Size: 0x4
 			char  m_hCarriedHostage[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
 			// client::CHandle< client::C_BaseEntity > m_hCarriedHostageProp; // 0x44 | Schema_Atomic | Size: 0x4

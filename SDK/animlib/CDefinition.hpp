@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CDefinition : public CS2::animlib::CDefinition {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::animlib::CDefinition) == 0x10, "CNmZeroPoseNode::CDefinition size should be 0x10");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseObservableBoolExpression_t  {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_OutflowConnection m_EvaluateConnection; // 0x0 | Schema_DeclaredClass | Size: 0x48
 			// GlobalTypes::CUtlVector< pulse_runtime_lib::PulseRuntimeVarIndex_t > m_DependentObservableVars; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_DependentObservableVars[0x18]; // 0x48 | Schema_Atomic | Size: 0x18

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicNavigation : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_isOn; // 0x4f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

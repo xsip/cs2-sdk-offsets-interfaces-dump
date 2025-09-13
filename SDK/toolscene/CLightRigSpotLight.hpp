@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CLightRigSpotLight : public CS2::toolscene::CLightRigLight {
 		public:
-			public:
 			float32 m_flOuterConeAngle; // 0x40 | Schema_Builtin | Size: 0x4
 			float32 m_flInnerConeAngle; // 0x44 | Schema_Builtin | Size: 0x4
 			bool m_bCastShadows; // 0x48 | Schema_Builtin | Size: 0x1

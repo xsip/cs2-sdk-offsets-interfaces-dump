@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrainControls : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CFuncTrainControls) == 0x7E8, "CFuncTrainControls size should be 0x7E8");
 	}

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_RopeKeyframe : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			// GlobalTypes::CBitVec< 10 > m_LinksTouchingSomething; // 0xec8 | Schema_Atomic | Size: 0x4
 			char  m_LinksTouchingSomething[0x4]; // 0xec8 | Schema_Atomic | Size: 0x4

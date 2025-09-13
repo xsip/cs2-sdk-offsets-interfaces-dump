@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseCSGrenadeProjectile : public CS2::server::CBaseGrenade {
 		public:
-			public:
 			GlobalTypes::Vector m_vInitialPosition; // 0xbb0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vInitialVelocity; // 0xbbc | Schema_Atomic | Size: 0xc
 			int32_t m_nBounces; // 0xbc8 | Schema_Builtin | Size: 0x4

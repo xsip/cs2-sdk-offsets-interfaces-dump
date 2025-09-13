@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCGcExportableExternalData  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCGcExportableExternalData) == 0x1, "InfoForResourceTypeCGcExportableExternalData size should be 0x1");

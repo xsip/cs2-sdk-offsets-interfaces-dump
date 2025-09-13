@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CToggleComponentActionUpdater : public CS2::animgraphlib::CAnimActionUpdater {
 		public:
-			public:
 			modellib::AnimComponentID m_componentID; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			bool m_bSetEnabled; // 0x1c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding

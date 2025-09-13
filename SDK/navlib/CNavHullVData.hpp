@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace navlib {
 		class CNavHullVData  {
 		public:
-			public:
 			bool m_bAgentEnabled; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_agentRadius; // 0x4 | Schema_Builtin | Size: 0x4

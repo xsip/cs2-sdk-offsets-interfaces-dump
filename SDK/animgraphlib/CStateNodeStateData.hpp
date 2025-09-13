@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CStateNodeStateData  {
 		public:
-			public:
 			animgraphlib::CAnimUpdateNodeRef m_pChild; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0x8); // End padding
 		};

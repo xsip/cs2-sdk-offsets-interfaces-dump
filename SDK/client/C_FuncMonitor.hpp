@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_FuncMonitor : public CS2::client::C_FuncBrush {
 		public:
-			public:
 			GlobalTypes::CUtlString m_targetCamera; // 0xec0 | Schema_Atomic | Size: 0x8
 			int32_t m_nResolutionEnum; // 0xec8 | Schema_Builtin | Size: 0x4
 			bool m_bRenderShadows; // 0xecc | Schema_Builtin | Size: 0x1

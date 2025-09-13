@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSimdRodConstraint_t  {
 		public:
-			public:
 			uint16_t nNode[4]; // 0x0 | Schema_FixedArray | Size: 0x0
 			S2_PAD(0x10);
 			GlobalTypes::fltx4 f4MaxDist; // 0x10 | Schema_Atomic | Size: 0x10

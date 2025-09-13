@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Int : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			int32_t m_DefaultValue; // 0x38 | Schema_Builtin | Size: 0x4
 			int32_t m_nParamaterMinValue; // 0x3c | Schema_Builtin | Size: 0x4
 			int32_t m_nParamaterMaxValue; // 0x40 | Schema_Builtin | Size: 0x4

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_EconEntity : public CS2::client::C_BaseFlex {
 		public:
-			public:
 			S2_PAD(0x10);
 			float32 m_flFlexDelayTime; // 0x1388 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

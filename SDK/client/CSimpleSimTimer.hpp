@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CSimpleSimTimer  {
 		public:
-			public:
 			entity2::GameTime_t m_flNext; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::WorldGroupId_t m_nWorldGroupId; // 0x4 | Schema_Atomic | Size: 0x4
 		};

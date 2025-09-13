@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DragRelativeToPlane : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_flDragAtPlane; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionFloatInput m_flFalloff; // 0x320 | Schema_DeclaredClass | Size: 0x160
 			bool m_bDirectional; // 0x480 | Schema_Builtin | Size: 0x1

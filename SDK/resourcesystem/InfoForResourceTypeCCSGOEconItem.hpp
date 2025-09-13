@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCCSGOEconItem  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCCSGOEconItem) == 0x1, "InfoForResourceTypeCCSGOEconItem size should be 0x1");

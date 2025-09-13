@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CSimpleStopwatch : public CS2::client::CStopwatchBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CSimpleStopwatch) == 0xC, "CSimpleStopwatch size should be 0xC");
 	}

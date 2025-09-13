@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace mathlib_extended {
 		class AABB_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vMinBounds; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxBounds; // 0xc | Schema_Atomic | Size: 0xc
 		};

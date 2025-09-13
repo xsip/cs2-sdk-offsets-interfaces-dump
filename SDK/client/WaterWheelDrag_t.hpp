@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class WaterWheelDrag_t  {
 		public:
-			public:
 			float32 m_flFractionOfWheelSubmerged; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flWheelDrag; // 0x4 | Schema_Builtin | Size: 0x4
 		};

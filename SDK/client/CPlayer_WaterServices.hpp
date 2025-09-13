@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CPlayer_WaterServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CPlayer_WaterServices) == 0x40, "CPlayer_WaterServices size should be 0x40");
 	}

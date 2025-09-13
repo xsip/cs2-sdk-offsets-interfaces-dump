@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CSkeletonInstance : public CS2::server::CGameSceneNode {
 		public:
-			public:
 			S2_PAD(0x10);
 			server::CModelState m_modelState; // 0x170 | Schema_DeclaredClass | Size: 0x280
 			bool m_bIsAnimationEnabled; // 0x3f0 | Schema_Builtin | Size: 0x1

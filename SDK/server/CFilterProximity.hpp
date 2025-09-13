@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFilterProximity : public CS2::server::CBaseFilter {
 		public:
-			public:
 			float32 m_flRadius; // 0x548 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

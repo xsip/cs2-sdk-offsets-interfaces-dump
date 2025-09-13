@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeWorldCollisionParams_t  {
 		public:
-			public:
 			float32 flWorldFriction; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 flGroundFriction; // 0x4 | Schema_Builtin | Size: 0x4
 			uint16_t nListBegin; // 0x8 | Schema_Builtin | Size: 0x2

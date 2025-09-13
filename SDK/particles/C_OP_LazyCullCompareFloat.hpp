@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LazyCullCompareFloat : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flComparsion1; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flComparsion2; // 0x320 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flCullTime; // 0x480 | Schema_DeclaredClass | Size: 0x160

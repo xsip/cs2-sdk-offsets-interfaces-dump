@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnBlendVertex_t  {
 		public:
-			public:
 			uint16_t m_nWeight0; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t m_nIndex0; // 0x2 | Schema_Builtin | Size: 0x2
 			uint16_t m_nWeight1; // 0x4 | Schema_Builtin | Size: 0x2

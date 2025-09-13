@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SetOrientation : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeVector m_vForwardVector; // 0x50 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_ForwardDirectionSpace; // 0x90 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_vUpVector; // 0xd0 | Schema_Atomic | Size: 0x40

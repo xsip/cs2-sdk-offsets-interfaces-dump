@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CInfoWorldLayer : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x5f8 | Schema_DeclaredClass | Size: 0x28
 			GlobalTypes::CUtlSymbolLarge m_worldName; // 0x620 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_layerName; // 0x628 | Schema_Atomic | Size: 0x8

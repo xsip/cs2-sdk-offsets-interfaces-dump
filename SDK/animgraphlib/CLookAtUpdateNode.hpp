@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CLookAtUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::LookAtOpFixedSettings_t m_opFixedSettings; // 0x70 | Schema_DeclaredClass | Size: 0xd0
 			S2_PAD(0x8);
 			animgraphlib::AnimVectorSource m_target; // 0x148 | Schema_DeclaredEnum | Size: 0x4

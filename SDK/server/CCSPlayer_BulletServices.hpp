@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_BulletServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			int32_t m_totalHitsOnServer; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ParentVortices : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			float32 m_flForceScale; // 0x1d0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecTwistAxis; // 0x1d4 | Schema_Atomic | Size: 0xc
 			bool m_bFlipBasedOnYaw; // 0x1e0 | Schema_Builtin | Size: 0x1

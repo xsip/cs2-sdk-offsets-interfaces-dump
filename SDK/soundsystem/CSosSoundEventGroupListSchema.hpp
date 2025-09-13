@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosSoundEventGroupListSchema  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< soundsystem::CSosSoundEventGroupSchema > m_groupList; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_groupList[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

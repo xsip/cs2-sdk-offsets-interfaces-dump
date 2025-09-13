@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace navlib {
 		class CNavVolumeVector : public CS2::navlib::CNavVolume {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bHasBeenPreFiltered; // 0x78 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f); // End padding

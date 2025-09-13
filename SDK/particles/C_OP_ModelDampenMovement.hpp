@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ModelDampenMovement : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
 			bool m_bBoundBox; // 0x1c4 | Schema_Builtin | Size: 0x1
 			bool m_bOutside; // 0x1c5 | Schema_Builtin | Size: 0x1

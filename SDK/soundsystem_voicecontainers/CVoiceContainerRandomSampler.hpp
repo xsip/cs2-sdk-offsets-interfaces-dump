@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerRandomSampler : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			public:
 			float32 m_flAmplitude; // 0xb8 | Schema_Builtin | Size: 0x4
 			float32 m_flAmplitudeJitter; // 0xbc | Schema_Builtin | Size: 0x4
 			float32 m_flTimeJitter; // 0xc0 | Schema_Builtin | Size: 0x4

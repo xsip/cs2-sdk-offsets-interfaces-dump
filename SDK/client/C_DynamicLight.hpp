@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_DynamicLight : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			uint8_t m_Flags; // 0xec0 | Schema_Builtin | Size: 0x1
 			uint8_t m_LightStyle; // 0xec1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

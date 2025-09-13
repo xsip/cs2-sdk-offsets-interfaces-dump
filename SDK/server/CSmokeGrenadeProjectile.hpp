@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CSmokeGrenadeProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
-			public:
 			S2_PAD(0x28);
 			int32_t m_nSmokeEffectTickBegin; // 0xc48 | Schema_Builtin | Size: 0x4
 			bool m_bDidSmokeEffect; // 0xc4c | Schema_Builtin | Size: 0x1

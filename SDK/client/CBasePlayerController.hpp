@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class CBasePlayerController : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			client::C_CommandContext m_CommandContext; // 0x600 | Schema_DeclaredClass | Size: 0xa8
 			uint64_t m_nInButtonsWhichAreToggles; // 0x6a8 | Schema_Builtin | Size: 0x8

@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace client {
 		class C_BreakableProp : public CS2::client::CBaseProp {
 		public:
-			public:
 			client::CPropDataComponent m_CPropDataComponent; // 0x11a0 | Schema_DeclaredClass | Size: 0x40
 			entity2::CEntityIOOutput m_OnStartDeath; // 0x11e0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnBreak; // 0x1208 | Schema_DeclaredClass | Size: 0x28

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmFootEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			animlib::NmFootPhase_t m_phase; // 0x20 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

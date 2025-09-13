@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CHostageExpresserShim : public CS2::server::CBaseCombatCharacter {
 		public:
-			public:
 			GlobalTypes::CAI_Expresser* m_pExpresser; // 0xbd0 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CHostageExpresserShim, m_pExpresser) == 0xBD0, "m_pExpresser in CHostageExpresserShim should be at offset 0xBD0");

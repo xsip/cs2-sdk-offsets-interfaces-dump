@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class inv_image_camera_t  {
 		public:
-			public:
 			GlobalTypes::QAngle angle; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 fov; // 0xc | Schema_Builtin | Size: 0x4
 			float32 znear; // 0x10 | Schema_Builtin | Size: 0x4

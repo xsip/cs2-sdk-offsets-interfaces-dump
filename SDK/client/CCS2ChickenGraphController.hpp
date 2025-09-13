@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCS2ChickenGraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
-			public:
 			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_action; // 0x80 | Schema_Atomic | Size: 0x20
 			char  m_action[0x20]; // 0x80 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_actionSubtype; // 0xa0 | Schema_Atomic | Size: 0x20

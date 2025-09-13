@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CWaterSplasher : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CWaterSplasher) == 0xEC0, "CWaterSplasher size should be 0xEC0");
 	}

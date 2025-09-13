@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CItem : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x8);
 			entity2::CEntityIOOutput m_OnPlayerTouch; // 0xa80 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xaa8 | Schema_DeclaredClass | Size: 0x28

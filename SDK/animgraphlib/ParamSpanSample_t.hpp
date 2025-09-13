@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class ParamSpanSample_t  {
 		public:
-			public:
 			GlobalTypes::CAnimVariant m_value; // 0x0 | Schema_Atomic | Size: 0x11
 			S2_PAD(0x3);
 			float32 m_flCycle; // 0x14 | Schema_Builtin | Size: 0x4

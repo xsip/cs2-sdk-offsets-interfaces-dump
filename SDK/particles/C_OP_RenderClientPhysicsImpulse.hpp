@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderClientPhysicsImpulse : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flRadius; // 0x210 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flMagnitude; // 0x370 | Schema_DeclaredClass | Size: 0x160
 			int32_t m_nSimIdFilter; // 0x4d0 | Schema_Builtin | Size: 0x4

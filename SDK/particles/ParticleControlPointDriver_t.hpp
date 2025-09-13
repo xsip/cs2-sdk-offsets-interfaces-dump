@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class ParticleControlPointDriver_t  {
 		public:
-			public:
 			int32_t m_iControlPoint; // 0x0 | Schema_Builtin | Size: 0x4
 			animationsystem::ParticleAttachment_t m_iAttachType; // 0x4 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CUtlString m_attachmentName; // 0x8 | Schema_Atomic | Size: 0x8

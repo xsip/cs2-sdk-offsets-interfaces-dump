@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundAreaEntityOrientedBox : public CS2::client::C_SoundAreaEntityBase {
 		public:
-			public:
 			GlobalTypes::Vector m_vMin; // 0x620 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMax; // 0x62c | Schema_Atomic | Size: 0xc
 		};

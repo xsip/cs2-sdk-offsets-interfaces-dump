@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Angles : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			GlobalTypes::QAngle m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};

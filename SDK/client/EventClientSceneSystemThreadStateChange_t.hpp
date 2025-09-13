@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventClientSceneSystemThreadStateChange_t  {
 		public:
-			public:
 			bool m_bThreadsActive; // 0x0 | Schema_Builtin | Size: 0x1
 		};
 		static_assert(offsetof(CS2::client::EventClientSceneSystemThreadStateChange_t, m_bThreadsActive) == 0x0, "m_bThreadsActive in EventClientSceneSystemThreadStateChange_t should be at offset 0x0");

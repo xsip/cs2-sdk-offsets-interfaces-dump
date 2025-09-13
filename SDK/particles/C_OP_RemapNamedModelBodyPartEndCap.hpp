@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapNamedModelBodyPartEndCap : public CS2::particles::C_OP_RemapNamedModelElementEndCap {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::C_OP_RemapNamedModelBodyPartEndCap) == 0x220, "C_OP_RemapNamedModelBodyPartEndCap size should be 0x220");
 	}

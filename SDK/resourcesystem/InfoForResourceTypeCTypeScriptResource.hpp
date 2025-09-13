@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCTypeScriptResource  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCTypeScriptResource) == 0x1, "InfoForResourceTypeCTypeScriptResource size should be 0x1");

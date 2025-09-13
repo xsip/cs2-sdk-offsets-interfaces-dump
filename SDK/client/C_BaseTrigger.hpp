@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseTrigger : public CS2::client::C_BaseToggle {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnStartTouch; // 0xec0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnStartTouchAll; // 0xee8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnEndTouch; // 0xf10 | Schema_DeclaredClass | Size: 0x28

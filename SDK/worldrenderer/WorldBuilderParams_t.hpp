@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class WorldBuilderParams_t  {
 		public:
-			public:
 			float32 m_flMinDrawVolumeSize; // 0x0 | Schema_Builtin | Size: 0x4
 			bool m_bBuildBakedLighting; // 0x4 | Schema_Builtin | Size: 0x1
 			bool m_bAggregateInstanceStreams; // 0x5 | Schema_Builtin | Size: 0x1

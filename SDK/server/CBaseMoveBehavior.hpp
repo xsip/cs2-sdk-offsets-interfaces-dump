@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseMoveBehavior : public CS2::server::CPathKeyFrame {
 		public:
-			public:
 			int32_t m_iPositionInterpolator; // 0x550 | Schema_Builtin | Size: 0x4
 			int32_t m_iRotationInterpolator; // 0x554 | Schema_Builtin | Size: 0x4
 			float32 m_flAnimStartTime; // 0x558 | Schema_Builtin | Size: 0x4

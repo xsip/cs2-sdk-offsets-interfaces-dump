@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CursorState_t  {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_scriptedSequence; // 0x0 | Schema_Atomic | Size: 0x4
 			char  m_scriptedSequence[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 		};

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmTarget  {
 		public:
-			public:
 			GlobalTypes::CTransform m_transform; // 0x0 | Schema_Atomic | Size: 0x20
 			GlobalTypes::CGlobalSymbol m_boneID; // 0x20 | Schema_Atomic | Size: 0x8
 			bool m_bIsBoneTarget; // 0x28 | Schema_Builtin | Size: 0x1

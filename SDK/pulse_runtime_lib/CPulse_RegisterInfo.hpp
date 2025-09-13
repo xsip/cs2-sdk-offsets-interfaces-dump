@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_RegisterInfo  {
 		public:
-			public:
 			pulse_runtime_lib::PulseRuntimeRegisterIndex_t m_nReg; // 0x0 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x6);
 			GlobalTypes::CPulseValueFullType m_Type; // 0x8 | Schema_Atomic | Size: 0x18

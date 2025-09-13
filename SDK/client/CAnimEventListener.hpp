@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CAnimEventListener : public CS2::client::CAnimEventListenerBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CAnimEventListener) == 0x20, "CAnimEventListener size should be 0x20");
 	}

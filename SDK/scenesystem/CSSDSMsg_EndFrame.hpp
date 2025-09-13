@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_EndFrame  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< scenesystem::CSSDSEndFrameViewInfo > m_Views; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_Views[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_TeamPreviewCharacterPosition : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			int32_t m_nVariant; // 0x5f8 | Schema_Builtin | Size: 0x4
 			int32_t m_nRandom; // 0x5fc | Schema_Builtin | Size: 0x4
 			int32_t m_nOrdinal; // 0x600 | Schema_Builtin | Size: 0x4

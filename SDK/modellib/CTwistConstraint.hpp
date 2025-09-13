@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CTwistConstraint : public CS2::modellib::CBaseConstraint {
 		public:
-			public:
 			bool m_bInverse; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf);
 			GlobalTypes::Quaternion m_qParentBindRotation; // 0x70 | Schema_Atomic | Size: 0x10

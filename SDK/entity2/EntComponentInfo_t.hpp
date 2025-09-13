@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace entity2 {
 		class EntComponentInfo_t  {
 		public:
-			public:
 			char* m_pName; // 0x0 | Schema_Ptr | Size: 0x8
 			char* m_pCPPClassname; // 0x8 | Schema_Ptr | Size: 0x8
 			char* m_pNetworkDataReferencedDescription; // 0x10 | Schema_Ptr | Size: 0x8

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSGameModeRules_ArmsRace : public CS2::server::CCSGameModeRules {
 		public:
-			public:
 			// GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::CUtlString > m_WeaponSequence; // 0x30 | Schema_Atomic | Size: 0x18
 			char  m_WeaponSequence[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x40); // End padding

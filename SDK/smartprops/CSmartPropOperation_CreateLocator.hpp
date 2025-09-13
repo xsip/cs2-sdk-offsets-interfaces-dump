@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_CreateLocator : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CUtlString m_LocatorName; // 0x50 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CSmartPropAttributeVector m_vOffset; // 0x58 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flDisplayScale; // 0x98 | Schema_Atomic | Size: 0x40

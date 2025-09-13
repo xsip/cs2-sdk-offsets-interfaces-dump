@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseDoor : public CS2::server::CBaseToggle {
 		public:
-			public:
 			S2_PAD(0x10);
 			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x878 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecMoveDirParentSpace; // 0x884 | Schema_Atomic | Size: 0xc

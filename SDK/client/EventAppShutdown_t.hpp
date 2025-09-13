@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventAppShutdown_t  {
 		public:
-			public:
 			int32_t m_nDummy0; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::EventAppShutdown_t, m_nDummy0) == 0x0, "m_nDummy0 in EventAppShutdown_t should be at offset 0x0");

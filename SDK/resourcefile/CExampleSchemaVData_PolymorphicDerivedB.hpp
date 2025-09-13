@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace resourcefile {
 		class CExampleSchemaVData_PolymorphicDerivedB : public CS2::resourcefile::CExampleSchemaVData_PolymorphicBase {
 		public:
-			public:
 			int32_t m_nDerivedB; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

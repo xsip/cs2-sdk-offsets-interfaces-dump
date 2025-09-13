@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class TraceSettings_t  {
 		public:
-			public:
 			float32 m_flTraceHeight; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flTraceRadius; // 0x4 | Schema_Builtin | Size: 0x4
 		};

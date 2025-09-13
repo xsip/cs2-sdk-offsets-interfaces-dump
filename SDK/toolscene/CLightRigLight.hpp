@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CLightRigLight  {
 		public:
-			public:
 			GlobalTypes::Vector m_vPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vDirection; // 0xc | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vLookAt; // 0x18 | Schema_Atomic | Size: 0xc

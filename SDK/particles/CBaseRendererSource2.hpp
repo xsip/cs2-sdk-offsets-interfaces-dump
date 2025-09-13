@@ -27,7 +27,6 @@ namespace CS2 {
 	namespace particles {
 		class CBaseRendererSource2 : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particleslib::CParticleCollectionRendererFloatInput m_flRadiusScale; // 0x210 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionRendererFloatInput m_flAlphaScale; // 0x370 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionRendererFloatInput m_flRollScale; // 0x4d0 | Schema_DeclaredClass | Size: 0x160

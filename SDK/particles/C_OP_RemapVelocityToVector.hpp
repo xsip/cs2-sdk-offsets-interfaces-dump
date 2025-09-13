@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapVelocityToVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flScale; // 0x1c4 | Schema_Builtin | Size: 0x4
 			bool m_bNormalize; // 0x1c8 | Schema_Builtin | Size: 0x1

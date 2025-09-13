@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class NodeData_t  {
 		public:
-			public:
 			int32_t m_nParent; // 0x0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vOrigin; // 0x4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMinBounds; // 0x10 | Schema_Atomic | Size: 0xc

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPathCornerCrash : public CS2::server::CPathCorner {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPathCornerCrash) == 0x520, "CPathCornerCrash size should be 0x520");
 	}

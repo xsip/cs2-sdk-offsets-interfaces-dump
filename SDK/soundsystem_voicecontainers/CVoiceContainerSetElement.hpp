@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerSetElement  {
 		public:
-			public:
 			soundsystem_voicecontainers::CSoundContainerReference m_sound; // 0x0 | Schema_DeclaredClass | Size: 0x18
 			float32 m_flVolumeDB; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CScriptItem : public CS2::server::CItem {
 		public:
-			public:
 			client::MoveType_t m_MoveTypeOverride; // 0xb50 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

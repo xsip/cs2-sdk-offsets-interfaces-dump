@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerBombReset : public CS2::server::CBaseTrigger {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CTriggerBombReset) == 0x9B8, "CTriggerBombReset size should be 0x9B8");
 	}

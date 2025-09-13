@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmRootMotionEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			float32 m_flBlendTimeSeconds; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayerSprayDecal : public CS2::server::CModelPointEntity {
 		public:
-			public:
 			int32_t m_nUniqueID; // 0x7e8 | Schema_Builtin | Size: 0x4
 			uint32_t m_unAccountID; // 0x7ec | Schema_Builtin | Size: 0x4
 			uint32_t m_unTraceID; // 0x7f0 | Schema_Builtin | Size: 0x4

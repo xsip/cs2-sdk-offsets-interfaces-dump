@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseCursorYieldToken_t  {
 		public:
-			public:
 			int32_t m_Value; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseCursorYieldToken_t, m_Value) == 0x0, "m_Value in PulseCursorYieldToken_t should be at offset 0x0");

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CZeroPoseUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::animgraphlib::CZeroPoseUpdateNode) == 0x60, "CZeroPoseUpdateNode size should be 0x60");

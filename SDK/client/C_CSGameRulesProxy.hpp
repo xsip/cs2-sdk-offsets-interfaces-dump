@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGameRulesProxy : public CS2::client::C_GameRulesProxy {
 		public:
-			public:
 			client::C_CSGameRules* m_pGameRules; // 0x5f8 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::C_CSGameRulesProxy, m_pGameRules) == 0x5F8, "m_pGameRules in C_CSGameRulesProxy should be at offset 0x5F8");

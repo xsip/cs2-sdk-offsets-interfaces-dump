@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetEntity : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x508 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x510 | Schema_Atomic | Size: 0x8

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Step_FollowEntity : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_ParamBoneOrAttachName; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_ParamBoneOrAttachNameChild; // 0x50 | Schema_Atomic | Size: 0x8
 		};

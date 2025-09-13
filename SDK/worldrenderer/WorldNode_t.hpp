@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class WorldNode_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< worldrenderer::SceneObject_t > m_sceneObjects; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_sceneObjects[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< worldrenderer::InfoOverlayData_t > m_infoOverlays; // 0x18 | Schema_Atomic | Size: 0x18

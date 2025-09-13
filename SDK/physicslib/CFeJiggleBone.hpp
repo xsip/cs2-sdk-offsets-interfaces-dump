@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class CFeJiggleBone  {
 		public:
-			public:
 			uint32_t m_nFlags; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flLength; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flTipMass; // 0x8 | Schema_Builtin | Size: 0x4

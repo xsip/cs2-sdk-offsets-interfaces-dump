@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSoundeventClusterSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			int32_t m_nMinNearby; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flClusterEpsilon; // 0x1c | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlString m_shouldPlayOpvar; // 0x20 | Schema_Atomic | Size: 0x8

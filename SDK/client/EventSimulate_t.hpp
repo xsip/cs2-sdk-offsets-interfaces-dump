@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class EventSimulate_t  {
 		public:
-			public:
 			client::EngineLoopState_t m_LoopState; // 0x0 | Schema_DeclaredClass | Size: 0x28
 			bool m_bFirstTick; // 0x28 | Schema_Builtin | Size: 0x1
 			bool m_bLastTick; // 0x29 | Schema_Builtin | Size: 0x1

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class ManifestTestResource_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeManifestTestResource_t > m_child; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_child[0x8]; // 0x8 | Schema_Atomic | Size: 0x8

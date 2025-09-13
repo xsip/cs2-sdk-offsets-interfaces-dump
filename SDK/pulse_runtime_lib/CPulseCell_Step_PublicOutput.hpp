@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Step_PublicOutput : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			pulse_runtime_lib::PulseRuntimeOutputIndex_t m_OutputIndex; // 0x48 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

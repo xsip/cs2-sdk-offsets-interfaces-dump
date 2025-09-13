@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCredits : public CS2::server::CPointEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnCreditsDone; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
 			bool m_bRolledOutroCredits; // 0x518 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

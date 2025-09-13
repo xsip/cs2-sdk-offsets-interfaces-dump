@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_PreLayer : public CS2::scenesystem::CSSDSMsg_LayerBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::scenesystem::CSSDSMsg_PreLayer) == 0x30, "CSSDSMsg_PreLayer size should be 0x30");
 	}

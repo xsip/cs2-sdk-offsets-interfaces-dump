@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class SpawnPoint : public CS2::server::CServerOnlyPointEntity {
 		public:
-			public:
 			int32_t m_iPriority; // 0x4f0 | Schema_Builtin | Size: 0x4
 			bool m_bEnabled; // 0x4f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

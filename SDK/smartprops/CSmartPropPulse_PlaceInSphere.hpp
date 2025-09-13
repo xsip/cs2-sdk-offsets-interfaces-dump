@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_PlaceInSphere : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_OutflowConnection m_Place; // 0x48 | Schema_DeclaredClass | Size: 0x48
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_PlaceInSphere, m_Place) == 0x48, "m_Place in CSmartPropPulse_PlaceInSphere should be at offset 0x48");

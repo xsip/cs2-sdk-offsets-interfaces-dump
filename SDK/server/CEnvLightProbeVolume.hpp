@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvLightProbeVolume : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0xff8);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture_AmbientCube; // 0x14e8 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeTexture_AmbientCube[0x8]; // 0x14e8 | Schema_Atomic | Size: 0x8

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CDspPresetModifierList  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_dspName; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< soundsystem::CDSPMixgroupModifier > m_modifiers; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_modifiers[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

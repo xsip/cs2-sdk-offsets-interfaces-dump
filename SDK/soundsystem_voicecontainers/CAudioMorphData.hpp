@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CAudioMorphData  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< float32 > m_times; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_times[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint32 > m_nameHashCodes; // 0x18 | Schema_Atomic | Size: 0x18

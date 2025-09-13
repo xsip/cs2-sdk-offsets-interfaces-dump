@@ -21,7 +21,6 @@ namespace CS2 {
 	namespace client {
 		class C_PlantedC4 : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bBombTicking; // 0x1170 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

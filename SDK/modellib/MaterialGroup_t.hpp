@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class MaterialGroup_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeIMaterial2 > > m_materials; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_materials[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

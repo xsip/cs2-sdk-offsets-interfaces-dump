@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_ColorLitPerParticle : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			S2_PAD(0x18);
 			GlobalTypes::Color m_ColorMin; // 0x1e0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Color m_ColorMax; // 0x1e4 | Schema_Atomic | Size: 0x4

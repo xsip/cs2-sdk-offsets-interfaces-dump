@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionOperator : public CS2::particles::CParticleFunction {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::CParticleFunctionOperator) == 0x1C0, "CParticleFunctionOperator size should be 0x1C0");
 	}

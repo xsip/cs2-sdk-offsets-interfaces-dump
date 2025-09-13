@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcefile {
 		class InfoForResourceTypeCResourceManifestInternal  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcefile::InfoForResourceTypeCResourceManifestInternal) == 0x1, "InfoForResourceTypeCResourceManifestInternal size should be 0x1");

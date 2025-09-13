@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSolveIKTargetHandle_t  {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_positionHandle; // 0x0 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_orientationHandle; // 0x2 | Schema_DeclaredClass | Size: 0x2
 		};

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_StatusEffect : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particles::Detail2Combo_t m_nDetail2Combo; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flDetail2Rotation; // 0x1cc | Schema_Builtin | Size: 0x4
 			float32 m_flDetail2Scale; // 0x1d0 | Schema_Builtin | Size: 0x4

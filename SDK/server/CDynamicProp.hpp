@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CDynamicProp : public CS2::server::CBreakableProp {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bCreateNavObstacle; // 0xc48 | Schema_Builtin | Size: 0x1
 			bool m_bNavObstacleUpdatesOverridden; // 0xc49 | Schema_Builtin | Size: 0x1

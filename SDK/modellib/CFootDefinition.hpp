@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CFootDefinition  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_ankleBoneName; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_toeBoneName; // 0x10 | Schema_Atomic | Size: 0x8

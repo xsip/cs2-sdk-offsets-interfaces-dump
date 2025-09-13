@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class EventPostAdvanceTick_t : public CS2::client::EventSimulate_t {
 		public:
-			public:
 			int32_t m_nCurrentTick; // 0x30 | Schema_Builtin | Size: 0x4
 			int32_t m_nCurrentTickThisFrame; // 0x34 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalTicksThisFrame; // 0x38 | Schema_Builtin | Size: 0x4

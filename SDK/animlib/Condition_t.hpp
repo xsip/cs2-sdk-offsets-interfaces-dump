@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class Condition_t  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_eventID; // 0x0 | Schema_Atomic | Size: 0x8
 			animlib::NmGraphEventTypeCondition_t m_eventTypeCondition; // 0x8 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSetSoundeventParameterSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			int32_t m_nMaxCount; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flMinValue; // 0x1c | Schema_Builtin | Size: 0x4
 			float32 m_flMaxValue; // 0x20 | Schema_Builtin | Size: 0x4

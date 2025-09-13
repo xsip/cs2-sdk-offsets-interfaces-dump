@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRuleBrushEntity : public CS2::server::CRuleEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CRuleBrushEntity) == 0x7F0, "CRuleBrushEntity size should be 0x7F0");
 	}

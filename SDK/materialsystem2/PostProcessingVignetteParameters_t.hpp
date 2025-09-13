@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class PostProcessingVignetteParameters_t  {
 		public:
-			public:
 			float32 m_flVignetteStrength; // 0x0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector2D m_vCenter; // 0x4 | Schema_Atomic | Size: 0x8
 			float32 m_flRadius; // 0xc | Schema_Builtin | Size: 0x4

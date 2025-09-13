@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_ApplyColorMode : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			smartprops::ApplyColorMode_t m_DefaultValue; // 0x38 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncConveyor : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_szConveyorModels; // 0x7e8 | Schema_Atomic | Size: 0x8
 			float32 m_flTransitionDurationSeconds; // 0x7f0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x7f4 | Schema_Atomic | Size: 0xc

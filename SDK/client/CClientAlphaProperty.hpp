@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CClientAlphaProperty : public CS2::client::IClientAlphaProperty {
 		public:
-			public:
 			S2_PAD(0x8);
 			uint8_t m_nRenderFX; // 0x10 | Schema_Builtin | Size: 0x1
 			uint8_t m_nRenderMode; // 0x11 | Schema_Builtin | Size: 0x1

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBtActionAim : public CS2::server::CBtNode {
 		public:
-			public:
 			S2_PAD(0x10);
 			GlobalTypes::CUtlString m_szSensorInputKey; // 0x68 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x10);

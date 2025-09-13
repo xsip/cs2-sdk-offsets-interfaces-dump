@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeNodeIntegrator_t  {
 		public:
-			public:
 			float32 flPointDamping; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 flAnimationForceAttraction; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flAnimationVertexAttraction; // 0x8 | Schema_Builtin | Size: 0x4

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvBeam : public CS2::server::CBeam {
 		public:
-			public:
 			int32_t m_active; // 0x888 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_spriteTexture; // 0x890 | Schema_Atomic | Size: 0x8

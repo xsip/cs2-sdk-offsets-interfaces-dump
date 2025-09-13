@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundEventAABBEntity : public CS2::client::C_SoundEventEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vMins; // 0x6c0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxs; // 0x6cc | Schema_Atomic | Size: 0xc
 		};

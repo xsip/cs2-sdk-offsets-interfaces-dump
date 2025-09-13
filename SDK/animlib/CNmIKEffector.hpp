@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmIKEffector  {
 		public:
-			public:
 			int32_t m_nBodyIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			bool m_bEnabled; // 0x4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

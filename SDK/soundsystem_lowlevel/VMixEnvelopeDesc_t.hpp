@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixEnvelopeDesc_t  {
 		public:
-			public:
 			float32 m_flAttackTimeMS; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flHoldTimeMS; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flReleaseTimeMS; // 0x8 | Schema_Builtin | Size: 0x4

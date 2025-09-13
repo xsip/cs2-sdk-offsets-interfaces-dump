@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoLandmark : public CS2::server::CPointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CInfoLandmark) == 0x4F0, "CInfoLandmark size should be 0x4F0");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace host {
 		class EmptyTestScript : public CS2::host::CAnimScriptBase {
 		public:
-			public:
 			// GlobalTypes::CAnimScriptParam< float32 > m_hTest; // 0x10 | Schema_Atomic | Size: 0x10
 			char  m_hTest[0x10]; // 0x10 | Schema_Atomic | Size: 0x10
 		};

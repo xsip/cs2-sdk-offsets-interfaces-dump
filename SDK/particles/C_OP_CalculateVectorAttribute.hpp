@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CalculateVectorAttribute : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			GlobalTypes::Vector m_vStartValue; // 0x1c0 | Schema_Atomic | Size: 0xc
 			particles::ParticleAttributeIndex_t m_nFieldInput1; // 0x1cc | Schema_DeclaredClass | Size: 0x4
 			float32 m_flInputScale1; // 0x1d0 | Schema_Builtin | Size: 0x4

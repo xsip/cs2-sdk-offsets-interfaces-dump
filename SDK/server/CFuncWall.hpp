@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncWall : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			int32_t m_nState; // 0x7e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

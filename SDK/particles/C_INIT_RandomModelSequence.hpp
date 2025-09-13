@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomModelSequence : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			char m_ActivityName[256]; // 0x1c8 | Schema_FixedArray | Size: 0x100
 			char m_SequenceName[256]; // 0x2c8 | Schema_FixedArray | Size: 0x100
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x3c8 | Schema_Atomic | Size: 0x8

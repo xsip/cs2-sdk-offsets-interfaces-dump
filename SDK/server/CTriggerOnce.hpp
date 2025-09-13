@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerOnce : public CS2::server::CTriggerMultiple {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CTriggerOnce) == 0x9E0, "CTriggerOnce size should be 0x9E0");
 	}

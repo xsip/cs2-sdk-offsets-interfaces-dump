@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysXRange_t  {
 		public:
-			public:
 			float32 m_flMin; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flMax; // 0x4 | Schema_Builtin | Size: 0x4
 		};

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class IKSolverSettings_t  {
 		public:
-			public:
 			animgraphlib::IKSolverType m_SolverType; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nNumIterations; // 0x4 | Schema_Builtin | Size: 0x4
 			animgraphlib::EIKEndEffectorRotationFixUpMode m_EndEffectorRotationFixUpMode; // 0x8 | Schema_DeclaredEnum | Size: 0x4

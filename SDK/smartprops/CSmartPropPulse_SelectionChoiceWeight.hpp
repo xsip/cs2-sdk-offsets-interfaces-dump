@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_SelectionChoiceWeight : public CS2::pulse_runtime_lib::CPulseCell_BaseRequirement {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_SelectionChoiceWeight) == 0x48, "CSmartPropPulse_SelectionChoiceWeight size should be 0x48");
 	}

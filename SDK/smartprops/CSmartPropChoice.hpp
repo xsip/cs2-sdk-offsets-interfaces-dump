@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropChoice : public CS2::smartprops::CSmartPropParameter {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Name; // 0x10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_DefaultOption; // 0x18 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< smartprops::CSmartPropChoiceOption > m_Options; // 0x20 | Schema_Atomic | Size: 0x18

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvFade : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::Color m_fadeColor; // 0x4f0 | Schema_Atomic | Size: 0x4
 			float32 m_Duration; // 0x4f4 | Schema_Builtin | Size: 0x4
 			float32 m_HoldDuration; // 0x4f8 | Schema_Builtin | Size: 0x4

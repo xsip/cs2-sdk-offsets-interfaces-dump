@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCSGO_TeamPreviewCharacterPosition : public CS2::server::CBaseEntity {
 		public:
-			public:
 			int32_t m_nVariant; // 0x4f0 | Schema_Builtin | Size: 0x4
 			int32_t m_nRandom; // 0x4f4 | Schema_Builtin | Size: 0x4
 			int32_t m_nOrdinal; // 0x4f8 | Schema_Builtin | Size: 0x4

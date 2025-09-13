@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CVectorQuantizer  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< float32 > m_centroidVectors; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_centroidVectors[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			int32_t m_nCentroids; // 0x18 | Schema_Builtin | Size: 0x4

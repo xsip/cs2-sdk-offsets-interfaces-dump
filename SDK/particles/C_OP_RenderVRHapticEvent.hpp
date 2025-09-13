@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderVRHapticEvent : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particles::ParticleVRHandChoiceList_t m_nHand; // 0x210 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nOutputHandCP; // 0x214 | Schema_Builtin | Size: 0x4
 			int32_t m_nOutputField; // 0x218 | Schema_Builtin | Size: 0x4

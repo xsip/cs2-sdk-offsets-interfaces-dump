@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class SummaryTakeDamageInfo_t  {
 		public:
-			public:
 			int32_t nSummarisedCount; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			client::CTakeDamageInfo info; // 0x8 | Schema_DeclaredClass | Size: 0x110

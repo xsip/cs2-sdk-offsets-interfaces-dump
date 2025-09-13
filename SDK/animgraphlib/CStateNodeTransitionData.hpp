@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CStateNodeTransitionData  {
 		public:
-			public:
 			animgraphlib::CBlendCurve m_curve; // 0x0 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x14); // End padding
 			S2_PAD(0x8);

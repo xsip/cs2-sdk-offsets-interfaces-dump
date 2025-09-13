@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSimpleMarkupVolumeTagged : public CS2::server::CMarkupVolumeTagged {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CSimpleMarkupVolumeTagged) == 0x828, "CSimpleMarkupVolumeTagged size should be 0x828");
 	}

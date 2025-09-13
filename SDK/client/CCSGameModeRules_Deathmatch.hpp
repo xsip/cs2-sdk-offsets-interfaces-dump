@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CCSGameModeRules_Deathmatch : public CS2::client::CCSGameModeRules {
 		public:
-			public:
 			entity2::GameTime_t m_flDMBonusStartTime; // 0x30 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flDMBonusTimeLength; // 0x34 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlString m_sDMBonusWeapon; // 0x38 | Schema_Atomic | Size: 0x8

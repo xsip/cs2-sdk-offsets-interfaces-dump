@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CDynamicLight : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			uint8_t m_ActualFlags; // 0x7e8 | Schema_Builtin | Size: 0x1
 			uint8_t m_Flags; // 0x7e9 | Schema_Builtin | Size: 0x1
 			uint8_t m_LightStyle; // 0x7ea | Schema_Builtin | Size: 0x1

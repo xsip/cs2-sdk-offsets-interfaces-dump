@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class QuestProgress  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::client::QuestProgress) == 0x1, "QuestProgress size should be 0x1");

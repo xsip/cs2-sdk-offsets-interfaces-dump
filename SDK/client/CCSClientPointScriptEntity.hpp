@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSClientPointScriptEntity : public CS2::client::CCSPointScriptEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CCSClientPointScriptEntity) == 0x600, "CCSClientPointScriptEntity size should be 0x600");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTeam : public CS2::server::CBaseEntity {
 		public:
-			public:
 			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBasePlayerController > > m_aPlayerControllers; // 0x4f0 | Schema_Atomic | Size: 0x18
 			char  m_aPlayerControllers[0x18]; // 0x4f0 | Schema_Atomic | Size: 0x18
 			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBasePlayerPawn > > m_aPlayers; // 0x508 | Schema_Atomic | Size: 0x18

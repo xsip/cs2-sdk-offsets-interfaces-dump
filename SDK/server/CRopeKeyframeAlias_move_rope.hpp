@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRopeKeyframeAlias_move_rope : public CS2::server::CRopeKeyframe {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CRopeKeyframeAlias_move_rope) == 0x840, "CRopeKeyframeAlias_move_rope size should be 0x840");
 	}

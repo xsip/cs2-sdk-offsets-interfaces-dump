@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class ParticleControlPointConfiguration_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< particles::ParticleControlPointDriver_t > m_drivers; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_drivers[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_IsRequirementValid : public CS2::pulse_runtime_lib::CPulseCell_BaseRequirement {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_IsRequirementValid) == 0x48, "CPulseCell_IsRequirementValid size should be 0x48");
 	}

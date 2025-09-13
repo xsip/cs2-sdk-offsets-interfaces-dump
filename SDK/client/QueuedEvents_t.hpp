@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class QueuedEvents_t  {
 		public:
-			public:
 			float32 starttime; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x14); // End padding
 		};

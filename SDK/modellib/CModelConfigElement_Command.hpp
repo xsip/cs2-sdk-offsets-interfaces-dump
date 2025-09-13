@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_Command : public CS2::modellib::CModelConfigElement {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Command; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::KeyValues3 m_Args; // 0x50 | Schema_Atomic | Size: 0x10
 		};

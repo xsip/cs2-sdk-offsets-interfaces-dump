@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseCombatCharacter : public CS2::client::C_BaseFlex {
 		public:
-			public:
 			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_EconWearable > > m_hMyWearables; // 0x1378 | Schema_Atomic | Size: 0x18
 			char  m_hMyWearables[0x18]; // 0x1378 | Schema_Atomic | Size: 0x18
 			modellib::AttachmentHandle_t m_leftFootAttachment; // 0x1390 | Schema_DeclaredClass | Size: 0x1

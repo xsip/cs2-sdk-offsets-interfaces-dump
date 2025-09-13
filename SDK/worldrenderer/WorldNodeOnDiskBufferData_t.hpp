@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class WorldNodeOnDiskBufferData_t  {
 		public:
-			public:
 			int32_t m_nElementCount; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nElementSizeInBytes; // 0x4 | Schema_Builtin | Size: 0x4
 			// GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x8 | Schema_Atomic | Size: 0x18

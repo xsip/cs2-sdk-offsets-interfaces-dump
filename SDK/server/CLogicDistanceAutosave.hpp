@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicDistanceAutosave : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x8
 			float32 m_flDistanceToPlayer; // 0x4f8 | Schema_Builtin | Size: 0x4
 			bool m_bForceNewLevelUnit; // 0x4fc | Schema_Builtin | Size: 0x1

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapDistanceToLineSegmentToScalar : public CS2::particles::C_OP_RemapDistanceToLineSegmentBase {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flMinOutputValue; // 0x1dc | Schema_Builtin | Size: 0x4
 			float32 m_flMaxOutputValue; // 0x1e0 | Schema_Builtin | Size: 0x4

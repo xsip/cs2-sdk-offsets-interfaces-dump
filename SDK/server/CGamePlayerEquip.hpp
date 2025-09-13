@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CGamePlayerEquip : public CS2::server::CRulePointEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 		};
 		static_assert(sizeof(CS2::server::CGamePlayerEquip) == 0x810, "CGamePlayerEquip size should be 0x810");

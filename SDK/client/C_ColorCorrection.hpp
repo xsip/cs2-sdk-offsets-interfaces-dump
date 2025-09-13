@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_ColorCorrection : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vecOrigin; // 0x5f8 | Schema_Atomic | Size: 0xc
 			float32 m_MinFalloff; // 0x604 | Schema_Builtin | Size: 0x4
 			float32 m_MaxFalloff; // 0x608 | Schema_Builtin | Size: 0x4

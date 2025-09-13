@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_GlobalLight : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			float32 m_flScale; // 0x1c0 | Schema_Builtin | Size: 0x4
 			bool m_bClampLowerRange; // 0x1c4 | Schema_Builtin | Size: 0x1
 			bool m_bClampUpperRange; // 0x1c5 | Schema_Builtin | Size: 0x1

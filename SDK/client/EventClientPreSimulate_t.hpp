@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class EventClientPreSimulate_t : public CS2::client::EventSimulate_t {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::EventClientPreSimulate_t) == 0x30, "EventClientPreSimulate_t size should be 0x30");
 	}

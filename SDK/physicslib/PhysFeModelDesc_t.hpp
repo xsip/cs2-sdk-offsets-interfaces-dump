@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class PhysFeModelDesc_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< uint32 > m_CtrlHash; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_CtrlHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_CtrlName; // 0x18 | Schema_Atomic | Size: 0x18

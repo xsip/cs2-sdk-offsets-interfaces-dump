@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysBallSocket : public CS2::server::CPhysConstraint {
 		public:
-			public:
 			float32 m_flJointFriction; // 0x560 | Schema_Builtin | Size: 0x4
 			bool m_bEnableSwingLimit; // 0x564 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

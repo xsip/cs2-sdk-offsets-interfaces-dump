@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CNPCPhysicsHull  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_sName; // 0x0 | Schema_Atomic | Size: 0x8
 			modellib::NPCPhysicsHullType_t m_eType; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flCapsuleHeight; // 0xc | Schema_Builtin | Size: 0x4

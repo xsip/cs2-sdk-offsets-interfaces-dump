@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class SolveIKChainPoseOpFixedSettings_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::ChainToSolveData_t > m_ChainsToSolveData; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_ChainsToSolveData[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

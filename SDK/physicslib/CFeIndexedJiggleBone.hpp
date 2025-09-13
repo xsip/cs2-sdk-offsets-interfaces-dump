@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class CFeIndexedJiggleBone  {
 		public:
-			public:
 			uint32_t m_nNode; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nJiggleParent; // 0x4 | Schema_Builtin | Size: 0x4
 			physicslib::CFeJiggleBone m_jiggleBone; // 0x8 | Schema_DeclaredClass | Size: 0x9c

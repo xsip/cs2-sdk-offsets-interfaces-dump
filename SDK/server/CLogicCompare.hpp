@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicCompare : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			float32 m_flInValue; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_flCompareValue; // 0x4f4 | Schema_Builtin | Size: 0x4
 			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnLessThan; // 0x4f8 | Schema_Atomic | Size: 0x28

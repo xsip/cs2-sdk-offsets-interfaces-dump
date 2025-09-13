@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_EconItemView : public CS2::client::IEconItemInterface {
 		public:
-			public:
 			S2_PAD(0x58);
 			bool m_bInventoryImageRgbaRequested; // 0x60 | Schema_Builtin | Size: 0x1
 			bool m_bInventoryImageTriedCache; // 0x61 | Schema_Builtin | Size: 0x1

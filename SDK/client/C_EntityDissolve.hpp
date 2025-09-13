@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_EntityDissolve : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			entity2::GameTime_t m_flStartTime; // 0xec8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flFadeInStart; // 0xecc | Schema_Builtin | Size: 0x4

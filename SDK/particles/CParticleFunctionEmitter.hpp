@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionEmitter : public CS2::particles::CParticleFunction {
 		public:
-			public:
 			int32_t m_nEmitterIndex; // 0x1c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

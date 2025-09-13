@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CHandshakeAnimTagBase : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			bool m_bIsDisableTag; // 0x50 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

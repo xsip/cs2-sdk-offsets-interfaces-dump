@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ColorInterpolate : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			GlobalTypes::Color m_ColorFade; // 0x1c0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
 			float32 m_flFadeStartTime; // 0x1d0 | Schema_Builtin | Size: 0x4

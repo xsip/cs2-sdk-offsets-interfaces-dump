@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMotionGraphConfig  {
 		public:
-			public:
 			float32 m_paramValues[4]; // 0x0 | Schema_FixedArray | Size: 0x10
 			float32 m_flDuration; // 0x10 | Schema_Builtin | Size: 0x4
 			animgraphlib::MotionIndex m_nMotionIndex; // 0x14 | Schema_DeclaredClass | Size: 0x4

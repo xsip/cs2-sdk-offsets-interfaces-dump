@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_Group : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48 | Schema_DeclaredClass | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_Group, m_OutflowList) == 0x48, "m_OutflowList in CSmartPropPulse_Group should be at offset 0x48");

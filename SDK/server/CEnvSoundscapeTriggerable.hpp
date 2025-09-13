@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvSoundscapeTriggerable : public CS2::server::CEnvSoundscape {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CEnvSoundscapeTriggerable) == 0x590, "CEnvSoundscapeTriggerable size should be 0x590");
 	}

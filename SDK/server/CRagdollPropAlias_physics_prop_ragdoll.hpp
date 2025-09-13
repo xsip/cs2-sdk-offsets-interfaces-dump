@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRagdollPropAlias_physics_prop_ragdoll : public CS2::server::CRagdollProp {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CRagdollPropAlias_physics_prop_ragdoll) == 0xC48, "CRagdollPropAlias_physics_prop_ragdoll size should be 0xC48");
 	}

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CSceneObjectData  {
 		public:
-			public:
 			GlobalTypes::Vector m_vMinBounds; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxBounds; // 0xc | Schema_Atomic | Size: 0xc
 			// GlobalTypes::CUtlLeanVector< modellib::CMaterialDrawDescriptor > m_drawCalls; // 0x18 | Schema_Atomic | Size: 0x10

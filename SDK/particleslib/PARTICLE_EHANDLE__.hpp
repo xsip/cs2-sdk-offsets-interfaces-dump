@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particleslib {
 		class PARTICLE_EHANDLE__  {
 		public:
-			public:
 			int32_t unused; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::particleslib::PARTICLE_EHANDLE__, unused) == 0x0, "unused in PARTICLE_EHANDLE__ should be at offset 0x0");

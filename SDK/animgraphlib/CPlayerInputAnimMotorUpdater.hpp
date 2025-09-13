@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CPlayerInputAnimMotorUpdater : public CS2::animgraphlib::CAnimMotorUpdaterBase {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< float32 > m_sampleTimes; // 0x20 | Schema_Atomic | Size: 0x18
 			char  m_sampleTimes[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);

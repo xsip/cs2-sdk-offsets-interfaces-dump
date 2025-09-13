@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateInEpitrochoid : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			int32_t m_nComponent1; // 0x1c8 | Schema_Builtin | Size: 0x4
 			int32_t m_nComponent2; // 0x1cc | Schema_Builtin | Size: 0x4
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1d0 | Schema_DeclaredClass | Size: 0x68

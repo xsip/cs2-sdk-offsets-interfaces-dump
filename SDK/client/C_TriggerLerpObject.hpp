@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_TriggerLerpObject : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_TriggerLerpObject) == 0x1000, "C_TriggerLerpObject size should be 0x1000");
 	}

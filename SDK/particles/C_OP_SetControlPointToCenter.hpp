@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointToCenter : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nCP1; // 0x1c8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecCP1Pos; // 0x1cc | Schema_Atomic | Size: 0xc
 			bool m_bUseAvgParticlePos; // 0x1d8 | Schema_Builtin | Size: 0x1

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class Camera_t  {
 		public:
-			public:
 			GlobalTypes::CTransform m_tmCamera; // 0x0 | Schema_Atomic | Size: 0x20
 			float32 m_flTime; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding

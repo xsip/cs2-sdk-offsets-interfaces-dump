@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_BulletHitModel : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			GlobalTypes::matrix3x4_t m_matLocal; // 0x1168 | Schema_Atomic | Size: 0x30
 			int32_t m_iBoneIndex; // 0x1198 | Schema_Builtin | Size: 0x4
 			// client::CHandle< client::C_BaseEntity > m_hPlayerParent; // 0x119c | Schema_Atomic | Size: 0x4

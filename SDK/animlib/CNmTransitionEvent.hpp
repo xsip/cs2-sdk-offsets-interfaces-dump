@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmTransitionEvent : public CS2::animlib::CNmEvent {
 		public:
-			public:
 			animlib::NmTransitionRule_t m_rule; // 0x20 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CGlobalSymbol m_ID; // 0x28 | Schema_Atomic | Size: 0x8

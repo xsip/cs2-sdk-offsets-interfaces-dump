@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleVecInput : public CS2::particleslib::CParticleInput {
 		public:
-			public:
 			particleslib::ParticleVecType_t m_nType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::Vector m_vLiteralValue; // 0x14 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Color m_LiteralColor; // 0x20 | Schema_Atomic | Size: 0x4

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_VectorNoise : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vecOutputMin; // 0x1c4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecOutputMax; // 0x1d0 | Schema_Atomic | Size: 0xc

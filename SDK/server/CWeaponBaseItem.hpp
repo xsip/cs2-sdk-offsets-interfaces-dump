@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CWeaponBaseItem : public CS2::server::CCSWeaponBase {
 		public:
-			public:
 			bool m_bSequenceInProgress; // 0x1030 | Schema_Builtin | Size: 0x1
 			bool m_bRedraw; // 0x1031 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding

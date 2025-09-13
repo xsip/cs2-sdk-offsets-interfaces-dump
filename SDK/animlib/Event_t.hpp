@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class Event_t  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_ID; // 0x0 | Schema_Atomic | Size: 0x8
 			animlib::NmPercent_t m_startTime; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			animlib::NmPercent_t m_duration; // 0xc | Schema_DeclaredClass | Size: 0x4

@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetVec : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleVecInput m_InputValue; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
 			particles::ParticleAttributeIndex_t m_nOutputField; // 0x838 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x83c | Schema_DeclaredEnum | Size: 0x4

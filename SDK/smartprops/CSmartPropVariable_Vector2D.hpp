@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Vector2D : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			GlobalTypes::Vector2D m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Vector2D, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_Vector2D should be at offset 0x38");

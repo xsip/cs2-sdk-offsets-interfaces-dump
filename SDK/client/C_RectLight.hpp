@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_RectLight : public CS2::client::C_BarnLight {
 		public:
-			public:
 			bool m_bShowLight; // 0x1210 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerController : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			uint64_t m_nInButtonsWhichAreToggles; // 0x4f8 | Schema_Builtin | Size: 0x8
 			uint32_t m_nTickBase; // 0x500 | Schema_Builtin | Size: 0x4

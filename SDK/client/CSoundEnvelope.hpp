@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CSoundEnvelope  {
 		public:
-			public:
 			float32 m_current; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_target; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_rate; // 0x8 | Schema_Builtin | Size: 0x4

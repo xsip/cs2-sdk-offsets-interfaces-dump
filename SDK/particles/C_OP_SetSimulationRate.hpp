@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetSimulationRate : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_flSimulationScale; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 		};
 		static_assert(offsetof(CS2::particles::C_OP_SetSimulationRate, m_flSimulationScale) == 0x1C8, "m_flSimulationScale in C_OP_SetSimulationRate should be at offset 0x1C8");

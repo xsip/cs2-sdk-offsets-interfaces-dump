@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CPointConstraint : public CS2::modellib::CBaseConstraint {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::modellib::CPointConstraint) == 0x60, "CPointConstraint size should be 0x60");
 	}

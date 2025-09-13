@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CLightRigPostProcessing  {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostProcessing; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_hPostProcessing[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 		};

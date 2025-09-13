@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particles {
 		class CRandomNumberGeneratorParameters  {
 		public:
-			public:
 			bool m_bDistributeEvenly; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			int32_t m_nSeed; // 0x4 | Schema_Builtin | Size: 0x4

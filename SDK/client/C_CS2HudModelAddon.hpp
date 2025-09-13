@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CS2HudModelAddon : public CS2::client::C_LateUpdatedAnimating {
 		public:
-			public:
 			S2_PAD(0x10);
 		};
 		static_assert(sizeof(CS2::client::C_CS2HudModelAddon) == 0x1210, "C_CS2HudModelAddon size should be 0x1210");

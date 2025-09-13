@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFish : public CS2::server::CBaseAnimGraph {
 		public:
-			public:
 			// server::CHandle< server::CFishPool > m_pool; // 0xa78 | Schema_Atomic | Size: 0x4
 			char  m_pool[0x4]; // 0xa78 | Schema_Atomic | Size: 0x4
 			uint32_t m_id; // 0xa7c | Schema_Builtin | Size: 0x4

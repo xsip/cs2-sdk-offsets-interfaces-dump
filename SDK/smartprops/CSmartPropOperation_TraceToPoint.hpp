@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_TraceToPoint : public CS2::smartprops::CSmartPropOperation_Trace {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeVector m_TargetPoint; // 0x350 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_TargetPointSpace; // 0x390 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bTraceAway; // 0x3d0 | Schema_Atomic | Size: 0x40

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPropDoorRotatingBreakable : public CS2::server::CPropDoorRotating {
 		public:
-			public:
 			bool m_bBreakable; // 0x1080 | Schema_Builtin | Size: 0x1
 			bool m_isAbleToCloseAreaPortals; // 0x1081 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

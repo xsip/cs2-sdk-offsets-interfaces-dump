@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CLightRigSky  {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_hSkyMaterial[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 		};

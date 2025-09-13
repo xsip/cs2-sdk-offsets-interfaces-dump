@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_PlaySequence : public CS2::server::CPulseCell_Outflow_PlaySceneBase {
 		public:
-			public:
 			GlobalTypes::CUtlString m_ParamSequenceName; // 0xf0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlaySequence, m_ParamSequenceName) == 0xF0, "m_ParamSequenceName in CPulseCell_Outflow_PlaySequence should be at offset 0xF0");

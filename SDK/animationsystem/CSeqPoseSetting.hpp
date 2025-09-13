@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqPoseSetting  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_sPoseParameter; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CBufferString m_sAttachment; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CBufferString m_sReferenceSequence; // 0x20 | Schema_Atomic | Size: 0x10

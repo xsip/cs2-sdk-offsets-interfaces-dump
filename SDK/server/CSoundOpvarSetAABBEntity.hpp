@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetAABBEntity : public CS2::server::CSoundOpvarSetPointEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vDistanceInnerMins; // 0x6a8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vDistanceInnerMaxs; // 0x6b4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vDistanceOuterMins; // 0x6c0 | Schema_Atomic | Size: 0xc

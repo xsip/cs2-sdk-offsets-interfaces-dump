@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class FootFixedData_t  {
 		public:
-			public:
 			GlobalTypes::VectorAligned m_vToeOffset; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::VectorAligned m_vHeelOffset; // 0x10 | Schema_Atomic | Size: 0x10
 			int32_t m_nTargetBoneIndex; // 0x20 | Schema_Builtin | Size: 0x4

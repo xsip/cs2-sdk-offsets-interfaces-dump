@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPathParticleRopeAlias_path_particle_rope_clientside : public CS2::server::CPathParticleRope {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPathParticleRopeAlias_path_particle_rope_clientside) == 0x5D8, "CPathParticleRopeAlias_path_particle_rope_clientside size should be 0x5D8");
 	}

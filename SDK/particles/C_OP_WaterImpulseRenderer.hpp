@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_WaterImpulseRenderer : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particleslib::CPerParticleVecInput m_vecPos; // 0x210 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CPerParticleFloatInput m_flRadius; // 0x888 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flMagnitude; // 0x9e8 | Schema_DeclaredClass | Size: 0x160

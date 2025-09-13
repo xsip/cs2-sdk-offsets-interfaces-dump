@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_QuantizeCPComponent : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_flInputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			int32_t m_nCPOutput; // 0x328 | Schema_Builtin | Size: 0x4
 			int32_t m_nOutVectorField; // 0x32c | Schema_Builtin | Size: 0x4

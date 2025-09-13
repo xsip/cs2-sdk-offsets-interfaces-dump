@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeEdgeDesc_t  {
 		public:
-			public:
 			uint16_t nEdge[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 			uint16_t nSide[2]; // 0x4 | Schema_FixedArray | Size: 0x0
 			S2_PAD(0x8);

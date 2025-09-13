@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CTransitionUpdateData  {
 		public:
-			public:
 			uint8_t m_srcStateIndex; // 0x0 | Schema_Builtin | Size: 0x1
 			uint8_t m_destStateIndex; // 0x1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CConstraintSlave  {
 		public:
-			public:
 			GlobalTypes::Quaternion m_qBaseOrientation; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Vector m_vBasePosition; // 0x10 | Schema_Atomic | Size: 0xc
 			uint32_t m_nBoneHash; // 0x1c | Schema_Builtin | Size: 0x4

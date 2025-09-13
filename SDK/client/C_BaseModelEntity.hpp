@@ -27,7 +27,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseModelEntity : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x4e8);
 			client::CRenderComponent* m_CRenderComponent; // 0xae0 | Schema_Ptr | Size: 0x8
 			client::CHitboxComponent m_CHitboxComponent; // 0xae8 | Schema_DeclaredClass | Size: 0x28

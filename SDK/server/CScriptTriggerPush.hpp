@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CScriptTriggerPush : public CS2::server::CTriggerPush {
 		public:
-			public:
 			GlobalTypes::Vector m_vExtent; // 0x9f0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};

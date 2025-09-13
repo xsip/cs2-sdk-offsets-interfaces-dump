@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysBox : public CS2::server::CBreakable {
 		public:
-			public:
 			int32_t m_damageType; // 0x8c0 | Schema_Builtin | Size: 0x4
 			int32_t m_damageToEnableMotion; // 0x8c4 | Schema_Builtin | Size: 0x4
 			float32 m_flForceToEnableMotion; // 0x8c8 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CSkillDamage  {
 		public:
-			public:
 			client::CSkillFloat m_flDamage; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			float32 m_flNPCDamageScalarVsNPC; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flPhysicsForceDamage; // 0x14 | Schema_Builtin | Size: 0x4

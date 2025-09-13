@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CItemAssaultSuit : public CS2::server::CItem {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CItemAssaultSuit) == 0xB50, "CItemAssaultSuit size should be 0xB50");
 	}

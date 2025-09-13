@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_ScaleVelocity : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleCollectionVecInput m_vecScale; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
 		};
 		static_assert(offsetof(CS2::particles::C_INIT_ScaleVelocity, m_vecScale) == 0x1C8, "m_vecScale in C_INIT_ScaleVelocity should be at offset 0x1C8");

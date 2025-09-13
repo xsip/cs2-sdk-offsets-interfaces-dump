@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class FilterHealth : public CS2::server::CBaseFilter {
 		public:
-			public:
 			bool m_bAdrenalineActive; // 0x548 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			int32_t m_iHealthMin; // 0x54c | Schema_Builtin | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseTestFuncs_LibraryA  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::pulse_system::CPulseTestFuncs_LibraryA) == 0x1, "CPulseTestFuncs_LibraryA size should be 0x1");

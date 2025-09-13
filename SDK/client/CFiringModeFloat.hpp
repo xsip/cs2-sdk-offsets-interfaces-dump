@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CFiringModeFloat  {
 		public:
-			public:
 			float32 m_flValues[2]; // 0x0 | Schema_FixedArray | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CFiringModeFloat, m_flValues) == 0x0, "m_flValues in CFiringModeFloat should be at offset 0x0");

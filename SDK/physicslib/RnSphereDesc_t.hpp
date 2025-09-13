@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnSphereDesc_t : public CS2::physicslib::RnShapeDesc_t {
 		public:
-			public:
 			// GlobalTypes::SphereBase_t< float32 > m_Sphere; // 0x18 | Schema_Atomic | Size: 0x10
 			char  m_Sphere[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
 		};

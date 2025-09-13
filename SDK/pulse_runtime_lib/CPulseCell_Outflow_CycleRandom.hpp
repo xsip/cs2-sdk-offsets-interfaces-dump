@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Outflow_CycleRandom : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			// server::CUtlVector< pulse_runtime_lib::CPulse_OutflowConnection > m_Outputs; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_Outputs[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};

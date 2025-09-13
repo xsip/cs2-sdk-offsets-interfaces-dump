@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysMotor : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAnchor; // 0x4f8 | Schema_Atomic | Size: 0x8
 			// server::CHandle< server::CBaseEntity > m_hAttachedObject; // 0x500 | Schema_Atomic | Size: 0x4

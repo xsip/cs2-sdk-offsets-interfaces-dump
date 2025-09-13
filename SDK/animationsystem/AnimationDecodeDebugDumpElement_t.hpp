@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class AnimationDecodeDebugDumpElement_t  {
 		public:
-			public:
 			int32_t m_nEntityIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_modelName; // 0x8 | Schema_Atomic | Size: 0x8

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ClientPhysics : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strPhysicsType; // 0x210 | Schema_Atomic | Size: 0x8
 			bool m_bStartAsleep; // 0x218 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

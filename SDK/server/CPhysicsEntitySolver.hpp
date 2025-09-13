@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsEntitySolver : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			// server::CHandle< server::CBaseEntity > m_hMovingEntity; // 0x508 | Schema_Atomic | Size: 0x4
 			char  m_hMovingEntity[0x4]; // 0x508 | Schema_Atomic | Size: 0x4

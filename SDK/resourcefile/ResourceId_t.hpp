@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcefile {
 		class ResourceId_t  {
 		public:
-			public:
 			uint64_t m_Value; // 0x0 | Schema_Builtin | Size: 0x8
 		};
 		static_assert(offsetof(CS2::resourcefile::ResourceId_t, m_Value) == 0x0, "m_Value in ResourceId_t should be at offset 0x0");

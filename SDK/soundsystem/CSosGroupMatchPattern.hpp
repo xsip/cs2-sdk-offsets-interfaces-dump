@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupMatchPattern : public CS2::soundsystem::CSosGroupBranchPattern {
 		public:
-			public:
 			GlobalTypes::CUtlString m_matchSoundEventName; // 0x10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_matchSoundEventSubString; // 0x18 | Schema_Atomic | Size: 0x8
 			float32 m_flEntIndex; // 0x20 | Schema_Builtin | Size: 0x4

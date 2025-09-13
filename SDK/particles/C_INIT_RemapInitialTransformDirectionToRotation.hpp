@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapInitialTransformDirectionToRotation : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x230 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flOffsetRot; // 0x234 | Schema_Builtin | Size: 0x4

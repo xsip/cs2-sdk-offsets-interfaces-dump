@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_BuyServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			// client::C_UtlVectorEmbeddedNetworkVar< client::SellbackPurchaseEntry_t > m_vecSellbackPurchaseEntries; // 0x40 | Schema_Atomic | Size: 0x68
 			char  m_vecSellbackPurchaseEntries[0x68]; // 0x40 | Schema_Atomic | Size: 0x68
 		};

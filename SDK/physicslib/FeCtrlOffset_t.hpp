@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeCtrlOffset_t  {
 		public:
-			public:
 			GlobalTypes::Vector vOffset; // 0x0 | Schema_Atomic | Size: 0xc
 			uint16_t nCtrlParent; // 0xc | Schema_Builtin | Size: 0x2
 			uint16_t nCtrlChild; // 0xe | Schema_Builtin | Size: 0x2

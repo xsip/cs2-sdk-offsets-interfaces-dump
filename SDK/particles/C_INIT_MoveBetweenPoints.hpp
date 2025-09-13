@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_MoveBetweenPoints : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flSpeedMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flSpeedMax; // 0x328 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flEndSpread; // 0x488 | Schema_DeclaredClass | Size: 0x160

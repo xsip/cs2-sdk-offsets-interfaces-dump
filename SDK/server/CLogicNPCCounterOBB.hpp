@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicNPCCounterOBB : public CS2::server::CLogicNPCCounterAABB {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CLogicNPCCounterOBB) == 0x860, "CLogicNPCCounterOBB size should be 0x860");
 	}

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class PostProcessingTonemapParameters_t  {
 		public:
-			public:
 			float32 m_flExposureBias; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flShoulderStrength; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flLinearStrength; // 0x8 | Schema_Builtin | Size: 0x4

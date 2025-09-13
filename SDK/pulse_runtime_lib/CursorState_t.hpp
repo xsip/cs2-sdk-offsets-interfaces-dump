@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CursorState_t  {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_TagName; // 0x0 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x20); // End padding
 		};

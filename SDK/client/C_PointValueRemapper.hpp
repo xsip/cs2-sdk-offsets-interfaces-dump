@@ -19,7 +19,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointValueRemapper : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			bool m_bDisabled; // 0x5f8 | Schema_Builtin | Size: 0x1
 			bool m_bDisabledOld; // 0x5f9 | Schema_Builtin | Size: 0x1
 			bool m_bUpdateOnClient; // 0x5fa | Schema_Builtin | Size: 0x1

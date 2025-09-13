@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CNetworkOriginCellCoordQuantizedVector  {
 		public:
-			public:
 			S2_PAD(0x10);
 			uint16_t m_cellX; // 0x10 | Schema_Builtin | Size: 0x2
 			uint16_t m_cellY; // 0x12 | Schema_Builtin | Size: 0x2

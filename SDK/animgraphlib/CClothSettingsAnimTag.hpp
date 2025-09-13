@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CClothSettingsAnimTag : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			float32 m_flStiffness; // 0x58 | Schema_Builtin | Size: 0x4
 			float32 m_flEaseIn; // 0x5c | Schema_Builtin | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class TimedEvent  {
 		public:
-			public:
 			float32 m_TimeBetweenEvents; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_fNextEvent; // 0x4 | Schema_Builtin | Size: 0x4
 		};

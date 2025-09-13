@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFlashbangProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
-			public:
 			float32 m_flTimeToDetonate; // 0xc20 | Schema_Builtin | Size: 0x4
 			uint8_t m_numOpponentsHit; // 0xc24 | Schema_Builtin | Size: 0x1
 			uint8_t m_numTeammatesHit; // 0xc25 | Schema_Builtin | Size: 0x1

@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace server {
 		class CCSWeaponBaseVData : public CS2::server::CBasePlayerWeaponVData {
 		public:
-			public:
 			client::CSWeaponType m_WeaponType; // 0x440 | Schema_DeclaredEnum | Size: 0x4
 			client::CSWeaponCategory m_WeaponCategory; // 0x444 | Schema_DeclaredEnum | Size: 0x4
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_szModel_AG2; // 0x448 | Schema_Atomic | Size: 0xe0

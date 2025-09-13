@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicLineToEntity : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::Vector > m_Line; // 0x4f0 | Schema_Atomic | Size: 0x28
 			char  m_Line[0x28]; // 0x4f0 | Schema_Atomic | Size: 0x28
 			GlobalTypes::CUtlSymbolLarge m_SourceName; // 0x518 | Schema_Atomic | Size: 0x8

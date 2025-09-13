@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CMorphRectData  {
 		public:
-			public:
 			int16_t m_nXLeftDst; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nYTopDst; // 0x2 | Schema_Builtin | Size: 0x2
 			float32 m_flUWidthSrc; // 0x4 | Schema_Builtin | Size: 0x4

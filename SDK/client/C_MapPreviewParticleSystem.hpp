@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_MapPreviewParticleSystem : public CS2::client::C_ParticleSystem {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_MapPreviewParticleSystem) == 0x1470, "C_MapPreviewParticleSystem size should be 0x1470");
 	}

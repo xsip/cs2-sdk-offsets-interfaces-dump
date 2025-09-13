@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_Deformer : public CS2::smartprops::CSmartPropElement_Group {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_Deformer) == 0xA0, "CSmartPropElement_Deformer size should be 0xA0");
 	}

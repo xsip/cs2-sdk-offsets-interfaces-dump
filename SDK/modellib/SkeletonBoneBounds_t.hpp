@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class SkeletonBoneBounds_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vecCenter; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecSize; // 0xc | Schema_Atomic | Size: 0xc
 		};

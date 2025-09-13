@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerSelector : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			public:
 			soundsystem_voicecontainers::PlayBackMode_t m_mode; // 0xb8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xc0 | Schema_DeclaredClass | Size: 0x38

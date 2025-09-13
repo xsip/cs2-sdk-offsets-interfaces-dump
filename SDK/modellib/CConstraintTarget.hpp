@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CConstraintTarget  {
 		public:
-			public:
 			S2_PAD(0x20);
 			GlobalTypes::Quaternion m_qOffset; // 0x20 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Vector m_vOffset; // 0x30 | Schema_Atomic | Size: 0xc

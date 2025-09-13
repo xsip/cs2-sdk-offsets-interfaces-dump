@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CLODComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			int32_t m_nServerLOD; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

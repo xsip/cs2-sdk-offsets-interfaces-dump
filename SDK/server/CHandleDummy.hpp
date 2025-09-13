@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CHandleDummy : public CS2::server::CBaseEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CHandleDummy) == 0x4F0, "CHandleDummy size should be 0x4F0");
 	}

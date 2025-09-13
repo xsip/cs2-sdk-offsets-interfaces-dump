@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseServerFuncs  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::server::CPulseServerFuncs) == 0x1, "CPulseServerFuncs size should be 0x1");

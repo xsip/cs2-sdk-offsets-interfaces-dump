@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class MaterialParamInt_t : public CS2::materialsystem2::MaterialParam_t {
 		public:
-			public:
 			int32_t m_nValue; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

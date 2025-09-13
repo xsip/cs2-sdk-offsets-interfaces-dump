@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseToggle : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			server::TOGGLE_STATE m_toggle_state; // 0x7e8 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flMoveDistance; // 0x7ec | Schema_Builtin | Size: 0x4
 			float32 m_flWait; // 0x7f0 | Schema_Builtin | Size: 0x4

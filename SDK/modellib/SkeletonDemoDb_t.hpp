@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class SkeletonDemoDb_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< SkeletonAnimCapture_t >* m_AnimCaptures; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_AnimCaptures[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::Camera_t > m_CameraTrack; // 0x18 | Schema_Atomic | Size: 0x18

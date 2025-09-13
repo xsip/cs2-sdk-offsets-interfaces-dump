@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_TriggerPhysics : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 			float32 m_gravityScale; // 0x1000 | Schema_Builtin | Size: 0x4
 			float32 m_linearLimit; // 0x1004 | Schema_Builtin | Size: 0x4
 			float32 m_linearDamping; // 0x1008 | Schema_Builtin | Size: 0x4

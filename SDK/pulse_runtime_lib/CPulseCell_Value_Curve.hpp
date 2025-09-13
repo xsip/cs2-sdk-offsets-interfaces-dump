@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Value_Curve : public CS2::pulse_runtime_lib::CPulseCell_BaseValue {
 		public:
-			public:
 			GlobalTypes::CPiecewiseCurve m_Curve; // 0x48 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Value_Curve, m_Curve) == 0x48, "m_Curve in CPulseCell_Value_Curve should be at offset 0x48");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseGraphExecutionHistoryEntry_t  {
 		public:
-			public:
 			pulse_runtime_lib::PulseCursorID_t nCursorID; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			pulse_runtime_lib::PulseDocNodeID_t nEditorID; // 0x4 | Schema_DeclaredClass | Size: 0x4
 			float32 flExecTime; // 0x8 | Schema_Builtin | Size: 0x4

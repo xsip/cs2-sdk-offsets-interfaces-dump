@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnNode_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vMin; // 0x0 | Schema_Atomic | Size: 0xc
 			uint32_t m_nChildren; // 0xc | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vMax; // 0x10 | Schema_Atomic | Size: 0xc

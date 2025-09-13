@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderAsModels : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< particles::ModelReference_t > m_ModelList; // 0x210 | Schema_Atomic | Size: 0x18
 			char  m_ModelList[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);

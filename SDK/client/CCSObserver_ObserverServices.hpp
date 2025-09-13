@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CCSObserver_ObserverServices : public CS2::client::CPlayer_ObserverServices {
 		public:
-			public:
 			GlobalTypes::CEntityHandle m_hLastObserverTarget; // 0x58 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vecObserverInterpolateOffset; // 0x5c | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecObserverInterpStartPos; // 0x68 | Schema_Atomic | Size: 0xc

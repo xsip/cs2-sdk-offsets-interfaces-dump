@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CDynamicPropAlias_prop_dynamic_override : public CS2::server::CDynamicProp {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CDynamicPropAlias_prop_dynamic_override) == 0xD40, "CDynamicPropAlias_prop_dynamic_override size should be 0xD40");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CStaticPoseCacheBuilder : public CS2::animgraphlib::CStaticPoseCache {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::animgraphlib::CStaticPoseCacheBuilder) == 0x38, "CStaticPoseCacheBuilder size should be 0x38");

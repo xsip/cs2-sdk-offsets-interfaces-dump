@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicActiveAutosave : public CS2::server::CLogicAutosave {
 		public:
-			public:
 			int32_t m_TriggerHitPoints; // 0x500 | Schema_Builtin | Size: 0x4
 			float32 m_flTimeToTrigger; // 0x504 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flStartTime; // 0x508 | Schema_DeclaredClass | Size: 0x4

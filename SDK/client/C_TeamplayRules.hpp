@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_TeamplayRules : public CS2::client::C_MultiplayRules {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_TeamplayRules) == 0x40, "C_TeamplayRules size should be 0x40");
 	}

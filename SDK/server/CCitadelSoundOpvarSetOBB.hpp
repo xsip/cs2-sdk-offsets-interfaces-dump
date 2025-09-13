@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCitadelSoundOpvarSetOBB : public CS2::server::CBaseEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x500 | Schema_Atomic | Size: 0x8

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRulePointEntity : public CS2::server::CRuleEntity {
 		public:
-			public:
 			int32_t m_Score; // 0x7f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_ParticleSystem : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			char m_szSnapshotFileName[512]; // 0xec0 | Schema_FixedArray | Size: 0x200
 			bool m_bActive; // 0x10c0 | Schema_Builtin | Size: 0x1
 			bool m_bFrozen; // 0x10c1 | Schema_Builtin | Size: 0x1

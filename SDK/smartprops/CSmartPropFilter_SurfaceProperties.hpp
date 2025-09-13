@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropFilter_SurfaceProperties : public CS2::smartprops::CSmartPropFilter {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_AllowedSurfaceProperties; // 0x50 | Schema_Atomic | Size: 0x18
 			char  m_AllowedSurfaceProperties[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_DisallowedSurfaceProperties; // 0x68 | Schema_Atomic | Size: 0x18

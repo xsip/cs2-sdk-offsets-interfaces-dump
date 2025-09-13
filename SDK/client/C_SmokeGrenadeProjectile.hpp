@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SmokeGrenadeProjectile : public CS2::client::C_BaseCSGrenadeProjectile {
 		public:
-			public:
 			S2_PAD(0x18);
 			int32_t m_nSmokeEffectTickBegin; // 0x1478 | Schema_Builtin | Size: 0x4
 			bool m_bDidSmokeEffect; // 0x147c | Schema_Builtin | Size: 0x1

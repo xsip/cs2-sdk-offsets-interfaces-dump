@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace mathlib_extended {
 		class CFuseSymbolTable  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< mathlib_extended::ConstantInfo_t > m_constants; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_constants[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< mathlib_extended::VariableInfo_t > m_variables; // 0x18 | Schema_Atomic | Size: 0x18

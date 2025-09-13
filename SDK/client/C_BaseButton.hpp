@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseButton : public CS2::client::C_BaseToggle {
 		public:
-			public:
 			// client::CHandle< client::C_BaseModelEntity > m_glowEntity; // 0xec0 | Schema_Atomic | Size: 0x4
 			char  m_glowEntity[0x4]; // 0xec0 | Schema_Atomic | Size: 0x4
 			bool m_usable; // 0xec4 | Schema_Builtin | Size: 0x1

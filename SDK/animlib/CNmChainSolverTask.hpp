@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmChainSolverTask : public CS2::animlib::CNmPoseTask {
 		public:
-			public:
 			int32_t m_nEffectorBoneIdx; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
 			GlobalTypes::CTransform m_targetTransform; // 0x60 | Schema_Atomic | Size: 0x20

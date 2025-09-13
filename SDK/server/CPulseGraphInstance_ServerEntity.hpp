@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseGraphInstance_ServerEntity : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
-			public:
 			S2_PAD(0x78);
 			// server::CHandle< server::CBaseEntity > m_hOwner; // 0x188 | Schema_Atomic | Size: 0x4
 			char  m_hOwner[0x4]; // 0x188 | Schema_Atomic | Size: 0x4

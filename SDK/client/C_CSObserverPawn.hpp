@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSObserverPawn : public CS2::client::C_CSPlayerPawnBase {
 		public:
-			public:
 			GlobalTypes::CEntityHandle m_hDetectParentChange; // 0x1678 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

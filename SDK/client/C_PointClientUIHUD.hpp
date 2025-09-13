@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointClientUIHUD : public CS2::client::C_BaseClientUIEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bCheckCSSClasses; // 0xef8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17f);

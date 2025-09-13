@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvLaser : public CS2::server::CBeam {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszLaserTarget; // 0x888 | Schema_Atomic | Size: 0x8
 			server::CSprite* m_pSprite; // 0x890 | Schema_Ptr | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszSpriteName; // 0x898 | Schema_Atomic | Size: 0x8

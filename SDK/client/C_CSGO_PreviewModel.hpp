@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_PreviewModel : public CS2::client::C_BaseFlex {
 		public:
-			public:
 			GlobalTypes::CUtlString m_animgraph; // 0x1378 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_animgraphCharacterModeString; // 0x1380 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_defaultAnim; // 0x1388 | Schema_Atomic | Size: 0x8

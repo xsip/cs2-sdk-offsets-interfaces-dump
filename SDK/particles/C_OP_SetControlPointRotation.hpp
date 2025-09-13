@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointRotation : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			particleslib::CParticleCollectionVecInput m_vecRotAxis; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CParticleCollectionFloatInput m_flRotRate; // 0x840 | Schema_DeclaredClass | Size: 0x160
 			int32_t m_nCP; // 0x9a0 | Schema_Builtin | Size: 0x4

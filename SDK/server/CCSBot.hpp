@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CCSBot : public CS2::server::CBot {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::Vector m_eyePosition; // 0x108 | Schema_Atomic | Size: 0xc
 			char m_name[64]; // 0x114 | Schema_FixedArray | Size: 0x40

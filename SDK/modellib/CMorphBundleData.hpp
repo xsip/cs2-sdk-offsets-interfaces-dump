@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CMorphBundleData  {
 		public:
-			public:
 			float32 m_flULeftSrc; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flVTopSrc; // 0x4 | Schema_Builtin | Size: 0x4
 			// GlobalTypes::CUtlVector< float32 > m_offsets; // 0x8 | Schema_Atomic | Size: 0x18

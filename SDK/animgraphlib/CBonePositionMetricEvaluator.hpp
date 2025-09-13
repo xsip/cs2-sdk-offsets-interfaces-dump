@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBonePositionMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
-			public:
 			int32_t m_nBoneIndex; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

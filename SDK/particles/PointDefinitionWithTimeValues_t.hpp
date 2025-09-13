@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class PointDefinitionWithTimeValues_t : public CS2::particles::PointDefinition_t {
 		public:
-			public:
 			float32 m_flTimeDuration; // 0x14 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::particles::PointDefinitionWithTimeValues_t, m_flTimeDuration) == 0x14, "m_flTimeDuration in PointDefinitionWithTimeValues_t should be at offset 0x14");

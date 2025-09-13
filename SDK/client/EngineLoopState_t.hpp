@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EngineLoopState_t  {
 		public:
-			public:
 			S2_PAD(0x18);
 			int32_t m_nPlatWindowWidth; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nPlatWindowHeight; // 0x1c | Schema_Builtin | Size: 0x4

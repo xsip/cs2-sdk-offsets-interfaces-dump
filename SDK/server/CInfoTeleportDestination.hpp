@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoTeleportDestination : public CS2::server::CPointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CInfoTeleportDestination) == 0x4F0, "CInfoTeleportDestination size should be 0x4F0");
 	}

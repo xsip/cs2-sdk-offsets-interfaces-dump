@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_MaterialTint : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeMaterialName m_Material; // 0x50 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeColorSelectionMode m_SelectionMode; // 0x90 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeColor m_Color; // 0xd0 | Schema_Atomic | Size: 0x40

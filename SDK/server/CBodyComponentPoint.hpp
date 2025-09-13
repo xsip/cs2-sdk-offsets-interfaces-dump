@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBodyComponentPoint : public CS2::server::CBodyComponent {
 		public:
-			public:
 			S2_PAD(0x8);
 			server::CGameSceneNode m_sceneNode; // 0x80 | Schema_DeclaredClass | Size: 0x160
 		};

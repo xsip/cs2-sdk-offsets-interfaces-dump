@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class hudtextparms_t  {
 		public:
-			public:
 			GlobalTypes::Color color1; // 0x0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Color color2; // 0x4 | Schema_Atomic | Size: 0x4
 			uint8_t effect; // 0x8 | Schema_Builtin | Size: 0x1

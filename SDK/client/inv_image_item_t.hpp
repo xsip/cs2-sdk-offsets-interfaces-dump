@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class inv_image_item_t  {
 		public:
-			public:
 			GlobalTypes::Vector position; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle angle; // 0xc | Schema_Atomic | Size: 0xc
 			GlobalTypes::CUtlString pose_sequence; // 0x18 | Schema_Atomic | Size: 0x8

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_SoundEventEntity : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			bool m_bStartOnSpawn; // 0x5f8 | Schema_Builtin | Size: 0x1
 			bool m_bToLocalPlayer; // 0x5f9 | Schema_Builtin | Size: 0x1
 			bool m_bStopOnNew; // 0x5fa | Schema_Builtin | Size: 0x1

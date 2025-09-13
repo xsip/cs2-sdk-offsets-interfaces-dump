@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropSelectionCriteria_ChoiceWeight : public CS2::smartprops::CSmartPropSelectionCriteria {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeFloat m_flWeight; // 0x48 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_ChoiceWeight, m_flWeight) == 0x48, "m_flWeight in CSmartPropSelectionCriteria_ChoiceWeight should be at offset 0x48");

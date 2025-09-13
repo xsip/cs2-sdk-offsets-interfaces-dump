@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderRopes : public CS2::particles::CBaseRendererSource2 {
 		public:
-			public:
 			bool m_bEnableFadingAndClamping; // 0x2c18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flMinSize; // 0x2c1c | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayerController_DamageServices : public CS2::client::CPlayerControllerComponent {
 		public:
-			public:
 			int32_t m_nSendUpdate; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// server::CUtlVectorEmbeddedNetworkVar< server::CDamageRecord > m_DamageList; // 0x48 | Schema_Atomic | Size: 0x88

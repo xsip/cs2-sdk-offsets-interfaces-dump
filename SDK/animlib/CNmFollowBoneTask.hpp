@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmFollowBoneTask : public CS2::animlib::CNmPoseTask {
 		public:
-			public:
 			S2_PAD(0x20);
 		};
 		static_assert(sizeof(CS2::animlib::CNmFollowBoneTask) == 0x70, "CNmFollowBoneTask size should be 0x70");

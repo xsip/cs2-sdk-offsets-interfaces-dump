@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CLightRigGrid  {
 		public:
-			public:
 			bool m_bEnabled; // 0x0 | Schema_Builtin | Size: 0x1
 			GlobalTypes::Color m_Color; // 0x1 | Schema_Atomic | Size: 0x4
 		};

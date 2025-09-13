@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CRenderComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			S2_PAD(0x8);
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x10 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x18);

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class C_CommandContext  {
 		public:
-			public:
 			bool needsprocessing; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x9f);
 			int32_t command_number; // 0xa0 | Schema_Builtin | Size: 0x4

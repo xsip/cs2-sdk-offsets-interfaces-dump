@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CDecoyProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
-			public:
 			S2_PAD(0x18);
 			int32_t m_nDecoyShotTick; // 0xc38 | Schema_Builtin | Size: 0x4
 			int32_t m_shotsRemaining; // 0xc3c | Schema_Builtin | Size: 0x4

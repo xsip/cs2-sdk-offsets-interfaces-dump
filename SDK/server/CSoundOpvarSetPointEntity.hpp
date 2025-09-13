@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetPointEntity : public CS2::server::CSoundOpvarSetPointBase {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnEnter; // 0x598 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnExit; // 0x5c0 | Schema_DeclaredClass | Size: 0x28
 			bool m_bAutoDisable; // 0x5e8 | Schema_Builtin | Size: 0x1

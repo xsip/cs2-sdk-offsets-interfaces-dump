@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CStateMachineUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
-			public:
 			S2_PAD(0x18);
 			animgraphlib::CAnimStateMachineUpdater m_stateMachine; // 0x70 | Schema_DeclaredClass | Size: 0x58
 			// GlobalTypes::CUtlVector< animgraphlib::CStateNodeStateData > m_stateData; // 0xc8 | Schema_Atomic | Size: 0x18

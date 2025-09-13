@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CLightRigSunLight : public CS2::toolscene::CLightRigLight {
 		public:
-			public:
 			float32 m_flShadowCascadeDistance0; // 0x40 | Schema_Builtin | Size: 0x4
 			float32 m_flShadowCascadeDistance1; // 0x44 | Schema_Builtin | Size: 0x4
 			float32 m_flShadowCascadeDistance2; // 0x48 | Schema_Builtin | Size: 0x4

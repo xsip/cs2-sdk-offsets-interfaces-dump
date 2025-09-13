@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MovementPlaceOnGround : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flOffset; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			float32 m_flMaxTraceLength; // 0x320 | Schema_Builtin | Size: 0x4
 			float32 m_flTolerance; // 0x324 | Schema_Builtin | Size: 0x4

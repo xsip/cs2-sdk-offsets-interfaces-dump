@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CGameChoreoServices : public CS2::client::IChoreoServices {
 		public:
-			public:
 			// server::CHandle< server::CBaseAnimGraph > m_hOwner; // 0x8 | Schema_Atomic | Size: 0x4
 			char  m_hOwner[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
 			// server::CHandle< server::CScriptedSequence > m_hScriptedSequence; // 0xc | Schema_Atomic | Size: 0x4

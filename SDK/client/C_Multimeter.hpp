@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_Multimeter : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x8);
 			// client::CHandle< client::C_PlantedC4 > m_hTargetC4; // 0x1170 | Schema_Atomic | Size: 0x4
 			char  m_hTargetC4[0x4]; // 0x1170 | Schema_Atomic | Size: 0x4

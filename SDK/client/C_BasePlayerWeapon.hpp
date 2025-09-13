@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_BasePlayerWeapon : public CS2::client::C_EconEntity {
 		public:
-			public:
 			entity2::GameTick_t m_nNextPrimaryAttackTick; // 0x18f0 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flNextPrimaryAttackTickRatio; // 0x18f4 | Schema_Builtin | Size: 0x4
 			entity2::GameTick_t m_nNextSecondaryAttackTick; // 0x18f8 | Schema_DeclaredClass | Size: 0x4

@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace server {
 		class CBeam : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			float32 m_flFrameRate; // 0x7e8 | Schema_Builtin | Size: 0x4
 			float32 m_flHDRColorScale; // 0x7ec | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flFireTime; // 0x7f0 | Schema_DeclaredClass | Size: 0x4

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CRagdollUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			int32_t m_nWeightListIndex; // 0x70 | Schema_Builtin | Size: 0x4
 			animgraphlib::RagdollPoseControl m_poseControlMethod; // 0x74 | Schema_DeclaredEnum | Size: 0x4
 		};

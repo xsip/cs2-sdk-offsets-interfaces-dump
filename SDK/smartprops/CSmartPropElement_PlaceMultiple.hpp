@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PlaceMultiple : public CS2::smartprops::CSmartPropElement_Group {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeInt m_nCount; // 0xa0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CUtlString m_Expression; // 0xe0 | Schema_Atomic | Size: 0x8
 		};

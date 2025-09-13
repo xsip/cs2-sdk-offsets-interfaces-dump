@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CPulseCell_Step_EntFire : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Input; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CPulseCell_Step_EntFire, m_Input) == 0x48, "m_Input in CPulseCell_Step_EntFire should be at offset 0x48");

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FourCovMatrices3  {
 		public:
-			public:
 			GlobalTypes::FourVectors m_vDiag; // 0x0 | Schema_Atomic | Size: 0x30
 			GlobalTypes::fltx4 m_flXY; // 0x30 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 m_flXZ; // 0x40 | Schema_Atomic | Size: 0x10

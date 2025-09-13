@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRuleEntity : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszMaster; // 0x7e8 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CRuleEntity, m_iszMaster) == 0x7E8, "m_iszMaster in CRuleEntity should be at offset 0x7E8");

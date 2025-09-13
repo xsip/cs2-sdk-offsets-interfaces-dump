@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFollowAttachmentUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::FollowAttachmentSettings_t m_opFixedData; // 0x70 | Schema_DeclaredClass | Size: 0x90
 			S2_PAD(0x10); // End padding
 		};

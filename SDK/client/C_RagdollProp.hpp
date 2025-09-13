@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_RagdollProp : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x8);
 			// GlobalTypes::C_NetworkUtlVectorBase< bool > m_ragEnabled; // 0x1170 | Schema_Atomic | Size: 0x18
 			char  m_ragEnabled[0x18]; // 0x1170 | Schema_Atomic | Size: 0x18

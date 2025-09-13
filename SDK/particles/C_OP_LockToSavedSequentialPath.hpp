@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LockToSavedSequentialPath : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			S2_PAD(0x4);
 			float32 m_flFadeStart; // 0x1c4 | Schema_Builtin | Size: 0x4
 			float32 m_flFadeEnd; // 0x1c8 | Schema_Builtin | Size: 0x4

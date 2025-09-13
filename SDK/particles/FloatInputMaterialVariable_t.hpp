@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class FloatInputMaterialVariable_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strVariable; // 0x0 | Schema_Atomic | Size: 0x8
 			particleslib::CParticleCollectionFloatInput m_flInput; // 0x8 | Schema_DeclaredClass | Size: 0x160
 		};

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerHurt : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			float32 m_flOriginalDamage; // 0x9b8 | Schema_Builtin | Size: 0x4
 			float32 m_flDamage; // 0x9bc | Schema_Builtin | Size: 0x4
 			float32 m_flDamageCap; // 0x9c0 | Schema_Builtin | Size: 0x4

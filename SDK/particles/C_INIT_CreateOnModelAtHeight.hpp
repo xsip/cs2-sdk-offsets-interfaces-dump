@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateOnModelAtHeight : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			bool m_bUseBones; // 0x1c8 | Schema_Builtin | Size: 0x1
 			bool m_bForceZ; // 0x1c9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

@@ -28,7 +28,6 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerPawn : public CS2::server::CBaseCombatCharacter {
 		public:
-			public:
 			server::CPlayer_WeaponServices* m_pWeaponServices; // 0xbd0 | Schema_Ptr | Size: 0x8
 			server::CPlayer_ItemServices* m_pItemServices; // 0xbd8 | Schema_Ptr | Size: 0x8
 			server::CPlayer_AutoaimServices* m_pAutoaimServices; // 0xbe0 | Schema_Ptr | Size: 0x8

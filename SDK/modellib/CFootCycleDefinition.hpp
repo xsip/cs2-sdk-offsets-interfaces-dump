@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace modellib {
 		class CFootCycleDefinition  {
 		public:
-			public:
 			GlobalTypes::Vector m_vStancePositionMS; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMidpointPositionMS; // 0xc | Schema_Atomic | Size: 0xc
 			float32 m_flStanceDirectionMS; // 0x18 | Schema_Builtin | Size: 0x4

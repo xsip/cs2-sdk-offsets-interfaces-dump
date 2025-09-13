@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderTreeShake : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			float32 m_flPeakStrength; // 0x210 | Schema_Builtin | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; // 0x214 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flRadius; // 0x218 | Schema_Builtin | Size: 0x4

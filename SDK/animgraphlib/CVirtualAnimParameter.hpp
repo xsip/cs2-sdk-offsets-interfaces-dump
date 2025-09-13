@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CVirtualAnimParameter : public CS2::animgraphlib::CAnimParameterBase {
 		public:
-			public:
 			GlobalTypes::CUtlString m_expressionString; // 0x70 | Schema_Atomic | Size: 0x8
 			animgraphlib::AnimParamType_t m_eParamType; // 0x78 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding

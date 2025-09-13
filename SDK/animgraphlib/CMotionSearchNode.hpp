@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMotionSearchNode  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< CMotionSearchNode >* m_children; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_children[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			animgraphlib::CVectorQuantizer m_quantizer; // 0x18 | Schema_DeclaredClass | Size: 0x20

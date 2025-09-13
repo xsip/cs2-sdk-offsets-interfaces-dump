@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace entity2 {
 		class CEmptyEntityInstance  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::entity2::CEmptyEntityInstance) == 0x1, "CEmptyEntityInstance size should be 0x1");

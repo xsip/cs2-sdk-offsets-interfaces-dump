@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSPetPlacement : public CS2::client::C_BaseEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_CSPetPlacement) == 0x5F8, "C_CSPetPlacement size should be 0x5F8");
 	}

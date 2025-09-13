@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimEncodeDifference  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animationsystem::CAnimBoneDifference > m_boneArray; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_boneArray[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimMorphDifference > m_morphArray; // 0x18 | Schema_Atomic | Size: 0x18

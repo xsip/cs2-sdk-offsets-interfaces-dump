@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CRandSimTimer : public CS2::client::CSimpleSimTimer {
 		public:
-			public:
 			float32 m_flMinInterval; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxInterval; // 0xc | Schema_Builtin | Size: 0x4
 		};

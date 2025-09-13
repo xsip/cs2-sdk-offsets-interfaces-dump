@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPropDataComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			S2_PAD(0x8);
 			float32 m_flDmgModBullet; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flDmgModClub; // 0x14 | Schema_Builtin | Size: 0x4

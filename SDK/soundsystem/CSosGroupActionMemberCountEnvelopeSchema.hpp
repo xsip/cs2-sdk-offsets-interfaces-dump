@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionMemberCountEnvelopeSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			int32_t m_nBaseCount; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nTargetCount; // 0x1c | Schema_Builtin | Size: 0x4
 			float32 m_flBaseValue; // 0x20 | Schema_Builtin | Size: 0x4

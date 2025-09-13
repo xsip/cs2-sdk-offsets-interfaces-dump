@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class AggregateMeshInfo_t  {
 		public:
-			public:
 			uint32_t m_nVisClusterMemberOffset; // 0x0 | Schema_Builtin | Size: 0x4
 			uint8_t m_nVisClusterMemberCount; // 0x4 | Schema_Builtin | Size: 0x1
 			bool m_bHasTransform; // 0x5 | Schema_Builtin | Size: 0x1

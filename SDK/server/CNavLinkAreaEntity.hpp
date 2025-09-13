@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CNavLinkAreaEntity : public CS2::server::CPointEntity {
 		public:
-			public:
 			float32 m_flWidth; // 0x4f0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vLocatorOffset; // 0x4f4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_qLocatorAnglesOffset; // 0x500 | Schema_Atomic | Size: 0xc

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CCycleControlUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::AnimValueSource m_valueSource; // 0x70 | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::CAnimParamHandle m_paramIndex; // 0x74 | Schema_DeclaredClass | Size: 0x2
 			bool m_bLockWhenWaning; // 0x76 | Schema_Builtin | Size: 0x1

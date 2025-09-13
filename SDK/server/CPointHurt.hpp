@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPointHurt : public CS2::server::CPointEntity {
 		public:
-			public:
 			int32_t m_nDamage; // 0x4f0 | Schema_Builtin | Size: 0x4
 			client::DamageTypes_t m_bitsDamageType; // 0x4f4 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flRadius; // 0x4f8 | Schema_Builtin | Size: 0x4

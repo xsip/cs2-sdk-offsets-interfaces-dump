@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class TextureControls_t  {
 		public:
-			public:
 			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureScaleU; // 0x0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureScaleV; // 0x160 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureOffsetU; // 0x2c0 | Schema_DeclaredClass | Size: 0x160

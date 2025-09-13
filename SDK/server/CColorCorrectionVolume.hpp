@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CColorCorrectionVolume : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			float32 m_MaxWeight; // 0x9b8 | Schema_Builtin | Size: 0x4
 			float32 m_FadeDuration; // 0x9bc | Schema_Builtin | Size: 0x4
 			float32 m_Weight; // 0x9c0 | Schema_Builtin | Size: 0x4

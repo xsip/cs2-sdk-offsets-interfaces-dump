@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapNamedModelBodyPartOnceTimed : public CS2::particles::C_OP_RemapNamedModelElementOnceTimed {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::C_OP_RemapNamedModelBodyPartOnceTimed) == 0x220, "C_OP_RemapNamedModelBodyPartOnceTimed size should be 0x220");
 	}

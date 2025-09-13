@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class ScriptInfo_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_code; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_paramsModified; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_paramsModified[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

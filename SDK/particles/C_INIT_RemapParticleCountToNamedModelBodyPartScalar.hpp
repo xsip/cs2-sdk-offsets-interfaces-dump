@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapParticleCountToNamedModelBodyPartScalar : public CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::C_INIT_RemapParticleCountToNamedModelBodyPartScalar) == 0x218, "C_INIT_RemapParticleCountToNamedModelBodyPartScalar size should be 0x218");
 	}

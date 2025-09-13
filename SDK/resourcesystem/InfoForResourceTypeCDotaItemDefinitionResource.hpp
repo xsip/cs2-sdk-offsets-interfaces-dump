@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCDotaItemDefinitionResource  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCDotaItemDefinitionResource) == 0x1, "InfoForResourceTypeCDotaItemDefinitionResource size should be 0x1");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_AttachedModel : public CS2::modellib::CModelConfigElement {
 		public:
-			public:
 			GlobalTypes::CUtlString m_InstanceName; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_EntityClass; // 0x50 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x58 | Schema_Atomic | Size: 0x8

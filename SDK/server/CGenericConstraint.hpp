@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CGenericConstraint : public CS2::server::CPhysConstraint {
 		public:
-			public:
 			S2_PAD(0x8);
 			physicslib::JointMotion_t m_nLinearMotionX; // 0x568 | Schema_DeclaredEnum | Size: 0x4
 			physicslib::JointMotion_t m_nLinearMotionY; // 0x56c | Schema_DeclaredEnum | Size: 0x4

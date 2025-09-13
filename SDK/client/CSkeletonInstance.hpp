@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CSkeletonInstance : public CS2::client::CGameSceneNode {
 		public:
-			public:
 			S2_PAD(0x10);
 			client::CModelState m_modelState; // 0x190 | Schema_DeclaredClass | Size: 0x300
 			bool m_bIsAnimationEnabled; // 0x490 | Schema_Builtin | Size: 0x1

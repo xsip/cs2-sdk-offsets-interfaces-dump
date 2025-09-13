@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSceneEntityAlias_logic_choreographed_scene : public CS2::server::CSceneEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CSceneEntityAlias_logic_choreographed_scene) == 0xA50, "CSceneEntityAlias_logic_choreographed_scene size should be 0xA50");
 	}

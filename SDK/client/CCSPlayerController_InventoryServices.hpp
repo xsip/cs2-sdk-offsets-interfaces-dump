@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayerController_InventoryServices : public CS2::client::CPlayerControllerComponent {
 		public:
-			public:
 			uint16_t m_unMusicID; // 0x40 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
 			GlobalTypes::MedalRank_t m_rank[6]; // 0x44 | Schema_FixedArray | Size: 0x120

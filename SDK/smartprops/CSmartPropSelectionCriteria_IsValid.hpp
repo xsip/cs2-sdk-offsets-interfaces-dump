@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropSelectionCriteria_IsValid : public CS2::smartprops::CSmartPropSelectionCriteria {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Expression; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_IsValid, m_Expression) == 0x48, "m_Expression in CSmartPropSelectionCriteria_IsValid should be at offset 0x48");

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class DynamicMeshDeformParams_t  {
 		public:
-			public:
 			float32 m_flTensionCompressScale; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flTensionStretchScale; // 0x4 | Schema_Builtin | Size: 0x4
 			bool m_bRecomputeSmoothNormalsAfterAnimation; // 0x8 | Schema_Builtin | Size: 0x1

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RampScalarLinear : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			float32 m_RateMin; // 0x1c0 | Schema_Builtin | Size: 0x4
 			float32 m_RateMax; // 0x1c4 | Schema_Builtin | Size: 0x4
 			float32 m_flStartTime_min; // 0x1c8 | Schema_Builtin | Size: 0x4

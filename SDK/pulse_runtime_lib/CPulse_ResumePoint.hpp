@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_ResumePoint : public CS2::pulse_runtime_lib::CPulse_OutflowConnection {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_ResumePoint) == 0x48, "CPulse_ResumePoint size should be 0x48");
 	}

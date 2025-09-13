@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsSpring : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			float32 m_flFrequency; // 0x4f8 | Schema_Builtin | Size: 0x4
 			float32 m_flDampingRatio; // 0x4fc | Schema_Builtin | Size: 0x4

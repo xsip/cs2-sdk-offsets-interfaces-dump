@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CsmFovOverride : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			GlobalTypes::CUtlString m_cameraName; // 0x5f8 | Schema_Atomic | Size: 0x8
 			float32 m_flCsmFovOverrideValue; // 0x600 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

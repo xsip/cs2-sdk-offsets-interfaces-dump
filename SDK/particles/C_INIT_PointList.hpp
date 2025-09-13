@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PointList : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CUtlVector< particles::PointDefinition_t > m_pointList; // 0x1d0 | Schema_Atomic | Size: 0x18

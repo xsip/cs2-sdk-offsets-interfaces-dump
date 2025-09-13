@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_WindForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			GlobalTypes::Vector m_vForce; // 0x1d0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};

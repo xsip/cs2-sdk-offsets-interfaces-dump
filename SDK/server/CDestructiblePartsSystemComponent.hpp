@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CDestructiblePartsSystemComponent  {
 		public:
-			public:
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x0 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x20);
 			// GlobalTypes::CNetworkUtlVectorBase< uint16 > m_DamageLevelTakenByHitGroup; // 0x48 | Schema_Atomic | Size: 0x18

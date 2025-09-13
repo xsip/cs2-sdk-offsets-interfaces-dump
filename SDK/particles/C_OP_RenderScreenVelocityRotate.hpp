@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderScreenVelocityRotate : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			float32 m_flRotateRateDegrees; // 0x210 | Schema_Builtin | Size: 0x4
 			float32 m_flForwardDegrees; // 0x214 | Schema_Builtin | Size: 0x4
 		};

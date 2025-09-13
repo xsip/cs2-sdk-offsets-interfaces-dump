@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class Emphasized_Phoneme  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_sClassName; // 0x0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x10);
 			float32 m_flAmount; // 0x18 | Schema_Builtin | Size: 0x4

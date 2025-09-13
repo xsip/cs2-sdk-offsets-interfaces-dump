@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRagdollMagnet : public CS2::server::CPointEntity {
 		public:
-			public:
 			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_radius; // 0x4f4 | Schema_Builtin | Size: 0x4

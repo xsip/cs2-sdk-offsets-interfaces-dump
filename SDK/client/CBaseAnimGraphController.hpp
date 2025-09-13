@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace client {
 		class CBaseAnimGraphController : public CS2::client::CSkeletonAnimationController {
 		public:
-			public:
 			S2_PAD(0x8);
 			client::CAnimGraphNetworkedVariables m_animGraphNetworkedVars; // 0x18 | Schema_DeclaredClass | Size: 0x1490
 			bool m_bSequenceFinished; // 0x14a8 | Schema_Builtin | Size: 0x1

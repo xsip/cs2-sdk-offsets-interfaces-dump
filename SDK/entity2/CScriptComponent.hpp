@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace entity2 {
 		class CScriptComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			S2_PAD(0x28);
 			GlobalTypes::CUtlSymbolLarge m_scriptClassName; // 0x30 | Schema_Atomic | Size: 0x8
 		};

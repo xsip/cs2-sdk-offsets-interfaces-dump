@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsPropMultiplayer : public CS2::server::CPhysicsProp {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPhysicsPropMultiplayer) == 0xDF0, "CPhysicsPropMultiplayer size should be 0xDF0");
 	}

@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace server {
 		class CChicken : public CS2::server::CDynamicProp {
 		public:
-			public:
 			S2_PAD(0x20);
 			server::CAttributeContainer m_AttributeManager; // 0xd60 | Schema_DeclaredClass | Size: 0x2f8
 			server::CountdownTimer m_updateTimer; // 0x1058 | Schema_DeclaredClass | Size: 0x18

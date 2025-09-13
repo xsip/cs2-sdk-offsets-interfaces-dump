@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CStopwatchBase : public CS2::client::CSimpleSimTimer {
 		public:
-			public:
 			bool m_fIsRunning; // 0x8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};

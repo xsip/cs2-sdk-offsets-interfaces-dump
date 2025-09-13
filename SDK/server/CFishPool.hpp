@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CFishPool : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x10);
 			int32_t m_fishCount; // 0x500 | Schema_Builtin | Size: 0x4
 			float32 m_maxRange; // 0x504 | Schema_Builtin | Size: 0x4

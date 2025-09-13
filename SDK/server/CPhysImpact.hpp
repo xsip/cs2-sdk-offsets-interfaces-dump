@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysImpact : public CS2::server::CPointEntity {
 		public:
-			public:
 			float32 m_damage; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_distance; // 0x4f4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_directionEntityName; // 0x4f8 | Schema_Atomic | Size: 0x8

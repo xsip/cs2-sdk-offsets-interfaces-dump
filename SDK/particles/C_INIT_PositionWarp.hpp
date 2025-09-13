@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionWarp : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleCollectionVecInput m_vecWarpMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CParticleCollectionVecInput m_vecWarpMax; // 0x840 | Schema_DeclaredClass | Size: 0x678
 			int32_t m_nScaleControlPointNumber; // 0xeb8 | Schema_Builtin | Size: 0x4

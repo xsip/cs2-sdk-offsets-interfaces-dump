@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CPhysSurfacePropertiesPhysics  {
 		public:
-			public:
 			float32 m_friction; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_elasticity; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_density; // 0x8 | Schema_Builtin | Size: 0x4

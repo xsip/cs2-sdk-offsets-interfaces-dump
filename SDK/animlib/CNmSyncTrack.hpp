@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmSyncTrack  {
 		public:
-			public:
 			// GlobalTypes::Event_t, 10 > m_syncEvents; // 0x0 | Schema_Atomic | Size: 0xa8
 			char  m_syncEvents[0xa8]; // 0x0 | Schema_Atomic | Size: 0xa8
 			int32_t m_nStartEventOffset; // 0xa8 | Schema_Builtin | Size: 0x4

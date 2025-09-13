@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CPhysicsBodyGameMarkup  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_TargetBody; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_Tag; // 0x8 | Schema_Atomic | Size: 0x8
 		};

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace entity2 {
 		class EntInput_t  {
 		public:
-			public:
 			S2_PAD(0x30);
 		};
 		static_assert(sizeof(CS2::entity2::EntInput_t) == 0x30, "EntInput_t size should be 0x30");

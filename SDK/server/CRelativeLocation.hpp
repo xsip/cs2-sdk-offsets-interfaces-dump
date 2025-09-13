@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRelativeLocation  {
 		public:
-			public:
 			S2_PAD(0x18);
 			server::RelativeLocationType_t m_Type; // 0x18 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);

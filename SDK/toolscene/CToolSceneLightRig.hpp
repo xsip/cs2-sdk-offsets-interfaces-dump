@@ -19,7 +19,6 @@ namespace CS2 {
 	namespace toolscene {
 		class CToolSceneLightRig  {
 		public:
-			public:
 			S2_PAD(0x8);
 			toolscene::LightRigType_t m_nRigType; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);

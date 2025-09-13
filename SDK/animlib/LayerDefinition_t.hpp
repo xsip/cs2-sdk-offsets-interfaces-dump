@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class LayerDefinition_t  {
 		public:
-			public:
 			int16_t m_nInputNodeIdx; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nWeightValueNodeIdx; // 0x2 | Schema_Builtin | Size: 0x2
 			int16_t m_nBoneMaskValueNodeIdx; // 0x4 | Schema_Builtin | Size: 0x2

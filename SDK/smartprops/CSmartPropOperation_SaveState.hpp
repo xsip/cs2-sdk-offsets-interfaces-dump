@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SaveState : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			GlobalTypes::CUtlString m_StateName; // 0x50 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SaveState, m_StateName) == 0x50, "m_StateName in CSmartPropOperation_SaveState should be at offset 0x50");

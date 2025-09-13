@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ChooseRandomChildrenInGroup : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nChildGroupID; // 0x1c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionFloatInput m_flNumberOfChildren; // 0x1d0 | Schema_DeclaredClass | Size: 0x160

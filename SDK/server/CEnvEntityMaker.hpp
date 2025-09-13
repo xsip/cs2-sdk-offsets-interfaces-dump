@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvEntityMaker : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vecEntityMins; // 0x4f0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecEntityMaxs; // 0x4fc | Schema_Atomic | Size: 0xc
 			// server::CHandle< server::CBaseEntity > m_hCurrentInstance; // 0x508 | Schema_Atomic | Size: 0x4

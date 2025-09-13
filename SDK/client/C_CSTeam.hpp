@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSTeam : public CS2::client::C_Team {
 		public:
-			public:
 			char m_szTeamMatchStat[512]; // 0x6b0 | Schema_FixedArray | Size: 0x200
 			int32_t m_numMapVictories; // 0x8b0 | Schema_Builtin | Size: 0x4
 			bool m_bSurrendered; // 0x8b4 | Schema_Builtin | Size: 0x1

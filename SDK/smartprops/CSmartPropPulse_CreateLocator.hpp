@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_CreateLocator : public CS2::smartprops::CSmartPropPulse_BaseQueryableFlow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_LocatorName; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateLocator, m_LocatorName) == 0x48, "m_LocatorName in CSmartPropPulse_CreateLocator should be at offset 0x48");

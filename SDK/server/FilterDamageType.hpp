@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class FilterDamageType : public CS2::server::CBaseFilter {
 		public:
-			public:
 			int32_t m_iDamageType; // 0x548 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

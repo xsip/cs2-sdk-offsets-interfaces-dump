@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CollideWithParentParticles : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flParentRadiusScale; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x320 | Schema_DeclaredClass | Size: 0x160
 		};

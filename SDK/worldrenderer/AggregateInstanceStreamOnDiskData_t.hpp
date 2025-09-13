@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class AggregateInstanceStreamOnDiskData_t  {
 		public:
-			public:
 			uint32_t m_DecodedSize; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlBinaryBlock m_BufferData; // 0x8 | Schema_Atomic | Size: 0x10

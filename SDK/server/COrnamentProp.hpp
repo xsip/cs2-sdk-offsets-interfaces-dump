@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class COrnamentProp : public CS2::server::CDynamicProp {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_initialOwner; // 0xd40 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};

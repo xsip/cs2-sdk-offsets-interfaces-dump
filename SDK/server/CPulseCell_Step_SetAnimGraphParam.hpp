@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Step_SetAnimGraphParam : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 			GlobalTypes::CUtlString m_ParamName; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CPulseCell_Step_SetAnimGraphParam, m_ParamName) == 0x48, "m_ParamName in CPulseCell_Step_SetAnimGraphParam should be at offset 0x48");

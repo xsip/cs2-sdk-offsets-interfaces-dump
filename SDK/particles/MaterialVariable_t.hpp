@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class MaterialVariable_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strVariable; // 0x0 | Schema_Atomic | Size: 0x8
 			particles::ParticleAttributeIndex_t m_nVariableField; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flScale; // 0xc | Schema_Builtin | Size: 0x4

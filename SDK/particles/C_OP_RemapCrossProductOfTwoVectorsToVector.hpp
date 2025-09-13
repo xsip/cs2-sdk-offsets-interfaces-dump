@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapCrossProductOfTwoVectorsToVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleVecInput m_InputVec1; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CPerParticleVecInput m_InputVec2; // 0x838 | Schema_DeclaredClass | Size: 0x678
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xeb0 | Schema_DeclaredClass | Size: 0x4

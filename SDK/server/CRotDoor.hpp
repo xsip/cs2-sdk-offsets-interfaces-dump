@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRotDoor : public CS2::server::CBaseDoor {
 		public:
-			public:
 			bool m_bSolidBsp; // 0xa78 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

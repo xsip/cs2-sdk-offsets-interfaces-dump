@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCVSoundStackScriptList  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::resourcesystem::InfoForResourceTypeCVSoundStackScriptList) == 0x1, "InfoForResourceTypeCVSoundStackScriptList size should be 0x1");

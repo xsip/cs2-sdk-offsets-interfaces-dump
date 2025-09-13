@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_LimitCount : public CS2::pulse_runtime_lib::CPulseCell_BaseRequirement {
 		public:
-			public:
 			int32_t m_nLimitCount; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

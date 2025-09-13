@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particleslib {
 		class ParticleNamedValueConfiguration_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_ConfigName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::KeyValues3 m_ConfigValue; // 0x8 | Schema_Atomic | Size: 0x10
 			animationsystem::ParticleAttachment_t m_iAttachType; // 0x18 | Schema_DeclaredEnum | Size: 0x4

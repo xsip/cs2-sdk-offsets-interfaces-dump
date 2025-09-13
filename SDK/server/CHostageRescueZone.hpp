@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CHostageRescueZone : public CS2::server::CHostageRescueZoneShim {
 		public:
-			public:
 			S2_PAD(0x20);
 		};
 		static_assert(sizeof(CS2::server::CHostageRescueZone) == 0x9D8, "CHostageRescueZone size should be 0x9D8");

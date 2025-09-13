@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_SkyCamera : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			client::sky3dparams_t m_skyboxData; // 0x5f8 | Schema_DeclaredClass | Size: 0x90
 			GlobalTypes::CUtlStringToken m_skyboxSlotToken; // 0x688 | Schema_Atomic | Size: 0x4
 			bool m_bUseAngles; // 0x68c | Schema_Builtin | Size: 0x1

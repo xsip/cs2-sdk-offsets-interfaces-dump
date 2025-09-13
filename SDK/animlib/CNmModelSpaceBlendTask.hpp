@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmModelSpaceBlendTask : public CS2::animlib::CNmBlendTaskBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::animlib::CNmModelSpaceBlendTask) == 0xD8, "CNmModelSpaceBlendTask size should be 0xD8");
 	}

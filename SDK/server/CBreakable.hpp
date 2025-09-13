@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace server {
 		class CBreakable : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			server::CPropDataComponent m_CPropDataComponent; // 0x7f0 | Schema_DeclaredClass | Size: 0x40
 			server::Materials m_Material; // 0x830 | Schema_DeclaredEnum | Size: 0x4

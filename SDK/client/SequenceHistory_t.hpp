@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class SequenceHistory_t  {
 		public:
-			public:
 			animationsystem::HSequence m_hSequence; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flSeqStartTime; // 0x4 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flSeqFixedCycle; // 0x8 | Schema_Builtin | Size: 0x4

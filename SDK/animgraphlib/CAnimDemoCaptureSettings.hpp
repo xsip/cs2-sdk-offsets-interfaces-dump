@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimDemoCaptureSettings  {
 		public:
-			public:
 			GlobalTypes::Vector2D m_vecErrorRangeSplineRotation; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector2D m_vecErrorRangeSplineTranslation; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector2D m_vecErrorRangeSplineScale; // 0x10 | Schema_Atomic | Size: 0x8

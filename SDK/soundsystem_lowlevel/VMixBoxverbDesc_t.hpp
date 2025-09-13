@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixBoxverbDesc_t  {
 		public:
-			public:
 			float32 m_flSizeMax; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flSizeMin; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flComplexity; // 0x8 | Schema_Builtin | Size: 0x4

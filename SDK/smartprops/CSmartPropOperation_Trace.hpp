@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_Trace : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeVector m_Origin; // 0x50 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_OriginSpace; // 0x90 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flOriginOffset; // 0xd0 | Schema_Atomic | Size: 0x40

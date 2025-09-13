@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CNetworkOriginQuantizedVector  {
 		public:
-			public:
 			S2_PAD(0x10);
 			GlobalTypes::CNetworkedQuantizedFloat m_vecX; // 0x10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CNetworkedQuantizedFloat m_vecY; // 0x18 | Schema_Atomic | Size: 0x8

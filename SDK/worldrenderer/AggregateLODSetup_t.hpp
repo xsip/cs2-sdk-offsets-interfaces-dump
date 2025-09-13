@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class AggregateLODSetup_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vLODOrigin; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_fMaxObjectScale; // 0xc | Schema_Builtin | Size: 0x4
 			// GlobalTypes::CUtlVector< float32 > m_fSwitchDistances; // 0x10 | Schema_Atomic | Size: 0x18

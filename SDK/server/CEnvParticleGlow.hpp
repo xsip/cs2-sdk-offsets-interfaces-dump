@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvParticleGlow : public CS2::server::CParticleSystem {
 		public:
-			public:
 			float32 m_flAlphaScale; // 0xd60 | Schema_Builtin | Size: 0x4
 			float32 m_flRadiusScale; // 0xd64 | Schema_Builtin | Size: 0x4
 			float32 m_flSelfIllumScale; // 0xd68 | Schema_Builtin | Size: 0x4

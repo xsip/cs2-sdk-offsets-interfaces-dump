@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CMultiSource : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			// server::CHandle< CBaseEntity > m_rgEntities[32]; // 0x4f0 | Schema_FixedArray | Size: 0x80
 			char  m_rgEntities[0x4]; // 0x4f0 | Schema_FixedArray | Size: 0x4
 			int32_t m_rgTriggered[32]; // 0x570 | Schema_FixedArray | Size: 0x80

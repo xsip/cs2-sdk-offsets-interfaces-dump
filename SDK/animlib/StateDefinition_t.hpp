@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class StateDefinition_t  {
 		public:
-			public:
 			int16_t m_nStateNodeIdx; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nEntryConditionNodeIdx; // 0x2 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4);

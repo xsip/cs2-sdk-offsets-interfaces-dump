@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace vphysics2 {
 		class vphysics_save_cphysicsbody_t : public CS2::physicslib::RnBodyDesc_t {
 		public:
-			public:
 			uint64_t m_nOldPointer; // 0xe0 | Schema_Builtin | Size: 0x8
 		};
 		static_assert(offsetof(CS2::vphysics2::vphysics_save_cphysicsbody_t, m_nOldPointer) == 0xE0, "m_nOldPointer in vphysics_save_cphysicsbody_t should be at offset 0xE0");

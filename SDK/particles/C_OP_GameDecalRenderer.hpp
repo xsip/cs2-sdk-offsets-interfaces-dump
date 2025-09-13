@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_GameDecalRenderer : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_sDecalGroupName; // 0x210 | Schema_Atomic | Size: 0x8
 			particles::EventTypeSelection_t m_nEventType; // 0x218 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);

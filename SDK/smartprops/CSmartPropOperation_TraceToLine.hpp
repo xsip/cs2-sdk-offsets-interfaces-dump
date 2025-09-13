@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_TraceToLine : public CS2::smartprops::CSmartPropOperation_Trace {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeVector m_EndPointA; // 0x350 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_EndPointSpaceA; // 0x390 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_EndPointB; // 0x3d0 | Schema_Atomic | Size: 0x40

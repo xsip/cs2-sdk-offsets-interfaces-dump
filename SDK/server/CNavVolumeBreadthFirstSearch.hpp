@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CNavVolumeBreadthFirstSearch : public CS2::server::CNavVolumeCalculatedVector {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::Vector m_vStartPos; // 0xa0 | Schema_Atomic | Size: 0xc
 			float32 m_flSearchDist; // 0xac | Schema_Builtin | Size: 0x4

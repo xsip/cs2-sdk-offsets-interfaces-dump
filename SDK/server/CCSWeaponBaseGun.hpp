@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSWeaponBaseGun : public CS2::server::CCSWeaponBase {
 		public:
-			public:
 			int32_t m_zoomLevel; // 0x1030 | Schema_Builtin | Size: 0x4
 			int32_t m_iBurstShotsRemaining; // 0x1034 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);

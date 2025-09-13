@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PostProcessingVolume : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 			S2_PAD(0x10);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x1010 | Schema_Atomic | Size: 0x8
 			char  m_hPostSettings[0x8]; // 0x1010 | Schema_Atomic | Size: 0x8

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetRandomControlPointPosition : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			bool m_bUseWorldLocation; // 0x1c8 | Schema_Builtin | Size: 0x1
 			bool m_bOrient; // 0x1c9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

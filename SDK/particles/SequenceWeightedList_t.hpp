@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particles {
 		class SequenceWeightedList_t  {
 		public:
-			public:
 			int32_t m_nSequence; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flRelativeWeight; // 0x4 | Schema_Builtin | Size: 0x4
 		};

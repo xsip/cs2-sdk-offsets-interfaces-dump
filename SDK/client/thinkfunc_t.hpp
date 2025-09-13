@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class thinkfunc_t  {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::HSCRIPT m_hFn; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_nContext; // 0x10 | Schema_Atomic | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Inflow_EventHandler : public CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint {
 		public:
-			public:
 			GlobalTypes::PulseSymbol_t m_EventName; // 0x80 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_EventHandler, m_EventName) == 0x80, "m_EventName in CPulseCell_Inflow_EventHandler should be at offset 0x80");

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class EventModInitialized_t  {
 		public:
-			public:
 			S2_PAD(0x1);
 		};
 		static_assert(sizeof(CS2::client::EventModInitialized_t) == 0x1, "EventModInitialized_t size should be 0x1");

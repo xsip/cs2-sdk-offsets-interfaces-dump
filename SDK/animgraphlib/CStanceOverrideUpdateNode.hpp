@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CStanceOverrideUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::StanceInfo_t > m_footStanceInfo; // 0x70 | Schema_Atomic | Size: 0x18
 			char  m_footStanceInfo[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimUpdateNodeRef m_pStanceSourceNode; // 0x88 | Schema_DeclaredClass | Size: 0x10

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitialRepulsionVelocity : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			char m_CollisionGroupName[128]; // 0x1c8 | Schema_FixedArray | Size: 0x80
 			particles::ParticleTraceSet_t m_nTraceSet; // 0x248 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::Vector m_vecOutputMin; // 0x24c | Schema_Atomic | Size: 0xc

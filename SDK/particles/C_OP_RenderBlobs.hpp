@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderBlobs : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particleslib::CParticleCollectionRendererFloatInput m_cubeWidth; // 0x210 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionRendererFloatInput m_cutoffRadius; // 0x370 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionRendererFloatInput m_renderRadius; // 0x4d0 | Schema_DeclaredClass | Size: 0x160

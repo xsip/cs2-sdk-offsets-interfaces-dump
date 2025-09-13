@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysXCollisionAttributes_t  {
 		public:
-			public:
 			uint32_t m_CollisionGroup; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CUtlVector< uint32 > m_InteractAs; // 0x8 | Schema_Atomic | Size: 0x18

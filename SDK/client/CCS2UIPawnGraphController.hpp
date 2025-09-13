@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CCS2UIPawnGraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::CCS2UIPawnGraphController) == 0x80, "CCS2UIPawnGraphController size should be 0x80");
 	}

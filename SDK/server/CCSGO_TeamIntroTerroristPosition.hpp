@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSGO_TeamIntroTerroristPosition : public CS2::server::CCSGO_TeamIntroCharacterPosition {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CCSGO_TeamIntroTerroristPosition) == 0xD08, "CCSGO_TeamIntroTerroristPosition size should be 0xD08");
 	}

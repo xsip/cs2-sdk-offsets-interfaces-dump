@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CBombTarget : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnBombExplode; // 0x9b8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnBombPlanted; // 0x9e0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnBombDefused; // 0xa08 | Schema_DeclaredClass | Size: 0x28

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeTri_t  {
 		public:
-			public:
 			uint16_t nNode[3]; // 0x0 | Schema_FixedArray | Size: 0x6
 			S2_PAD(0x2);
 			float32 w1; // 0x8 | Schema_Builtin | Size: 0x4

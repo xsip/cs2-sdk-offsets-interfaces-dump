@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class RagdollCreationParams_t  {
 		public:
-			public:
 			GlobalTypes::Vector m_vForce; // 0x0 | Schema_Atomic | Size: 0xc
 			int32_t m_nForceBone; // 0xc | Schema_Builtin | Size: 0x4
 			bool m_bForceCurrentWorldTransform; // 0x10 | Schema_Builtin | Size: 0x1

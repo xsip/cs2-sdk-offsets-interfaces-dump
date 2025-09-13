@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicCollisionPair : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_nameAttach1; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAttach2; // 0x4f8 | Schema_Atomic | Size: 0x8
 			bool m_supportMultipleEntitiesWithSameName; // 0x500 | Schema_Builtin | Size: 0x1

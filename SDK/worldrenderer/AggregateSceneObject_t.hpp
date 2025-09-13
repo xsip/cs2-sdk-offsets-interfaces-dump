@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class AggregateSceneObject_t  {
 		public:
-			public:
 			worldrenderer::ObjectTypeFlags_t m_allFlags; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			worldrenderer::ObjectTypeFlags_t m_anyFlags; // 0x4 | Schema_DeclaredEnum | Size: 0x4
 			int16_t m_nLayer; // 0x8 | Schema_Builtin | Size: 0x2

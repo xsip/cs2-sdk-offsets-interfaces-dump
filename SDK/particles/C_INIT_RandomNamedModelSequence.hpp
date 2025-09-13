@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomNamedModelSequence : public CS2::particles::C_INIT_RandomNamedModelElement {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::C_INIT_RandomNamedModelSequence) == 0x1F0, "C_INIT_RandomNamedModelSequence size should be 0x1F0");
 	}

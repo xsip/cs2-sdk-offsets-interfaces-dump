@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class OutflowWithRequirements_t  {
 		public:
-			public:
 			pulse_runtime_lib::CPulse_OutflowConnection m_Connection; // 0x0 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::PulseDocNodeID_t m_DestinationFlowNodeID; // 0x48 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);

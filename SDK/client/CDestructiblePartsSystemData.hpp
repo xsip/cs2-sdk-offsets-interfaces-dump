@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CDestructiblePartsSystemData  {
 		public:
-			public:
 			// GlobalTypes::CUtlOrderedMap< HitGroup_t, CDestructiblePartsSystemData_HitGroupInfoAndDamageLevels > m_PartsDataByHitGroup; // 0x0 | Schema_Atomic | Size: 0x28
 			char  m_PartsDataByHitGroup[0x28]; // 0x0 | Schema_Atomic | Size: 0x28
 			tier2::CRangeInt m_nMinMaxNumberHitGroupsToDestroyWhenGibbing; // 0x28 | Schema_DeclaredClass | Size: 0x8

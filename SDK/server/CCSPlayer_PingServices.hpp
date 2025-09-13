@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_PingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			entity2::GameTime_t m_flPlayerPingTokens[5]; // 0x40 | Schema_FixedArray | Size: 0x64
 			// server::CHandle< server::CBaseEntity > m_hPlayerPing; // 0x54 | Schema_Atomic | Size: 0x4
 			char  m_hPlayerPing[0x4]; // 0x54 | Schema_Atomic | Size: 0x4

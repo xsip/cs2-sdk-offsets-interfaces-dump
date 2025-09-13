@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class lerpdata_t  {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hEnt; // 0x0 | Schema_Atomic | Size: 0x4
 			char  m_hEnt[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 			client::MoveType_t m_MoveType; // 0x4 | Schema_DeclaredEnum | Size: 0x1

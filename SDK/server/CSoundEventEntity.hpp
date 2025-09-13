@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundEventEntity : public CS2::server::CBaseEntity {
 		public:
-			public:
 			bool m_bStartOnSpawn; // 0x4f0 | Schema_Builtin | Size: 0x1
 			bool m_bToLocalPlayer; // 0x4f1 | Schema_Builtin | Size: 0x1
 			bool m_bStopOnNew; // 0x4f2 | Schema_Builtin | Size: 0x1

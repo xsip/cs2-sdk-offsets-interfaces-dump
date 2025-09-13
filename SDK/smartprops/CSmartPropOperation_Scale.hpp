@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_Scale : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeFloat m_flScale; // 0x50 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Scale, m_flScale) == 0x50, "m_flScale in CSmartPropOperation_Scale should be at offset 0x50");

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMotionSearchDB  {
 		public:
-			public:
 			animgraphlib::CMotionSearchNode m_rootNode; // 0x0 | Schema_DeclaredClass | Size: 0x80
 			animgraphlib::CProductQuantizer m_residualQuantizer; // 0x80 | Schema_DeclaredClass | Size: 0x20
 			// GlobalTypes::CUtlVector< animgraphlib::MotionDBIndex > m_codeIndices; // 0xa0 | Schema_Atomic | Size: 0x18

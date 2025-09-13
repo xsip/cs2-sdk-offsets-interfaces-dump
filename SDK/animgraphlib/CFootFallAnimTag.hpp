@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFootFallAnimTag : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			animgraphlib::FootFallTagFoot_t m_foot; // 0x58 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding

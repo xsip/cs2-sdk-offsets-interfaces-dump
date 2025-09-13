@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseGraphInstance_TurtleGraphics : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
-			public:
 			S2_PAD(0x28);
 		};
 		static_assert(sizeof(CS2::pulse_system::CPulseGraphInstance_TurtleGraphics) == 0x138, "CPulseGraphInstance_TurtleGraphics size should be 0x138");

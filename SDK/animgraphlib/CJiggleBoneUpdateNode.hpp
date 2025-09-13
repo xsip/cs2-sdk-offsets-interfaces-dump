@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CJiggleBoneUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::JiggleBoneSettingsList_t m_opFixedData; // 0x70 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

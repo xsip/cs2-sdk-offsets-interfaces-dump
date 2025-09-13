@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderPostProcessing : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flPostProcessStrength; // 0x210 | Schema_DeclaredClass | Size: 0x160
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostTexture; // 0x370 | Schema_Atomic | Size: 0x8
 			char  m_hPostTexture[0x8]; // 0x370 | Schema_Atomic | Size: 0x8

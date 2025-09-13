@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeBuildTaperedCapsuleRigid_t : public CS2::physicslib::FeTaperedCapsuleRigid_t {
 		public:
-			public:
 			int32_t m_nPriority; // 0x30 | Schema_Builtin | Size: 0x4
 			uint32_t m_nVertexMapHash; // 0x34 | Schema_Builtin | Size: 0x4
 			uint32_t m_nAntitunnelGroupBits; // 0x38 | Schema_Builtin | Size: 0x4

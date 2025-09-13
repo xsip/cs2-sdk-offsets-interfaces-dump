@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_PlanarConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			GlobalTypes::Vector m_PointOnPlane; // 0x1c0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_PlaneNormal; // 0x1cc | Schema_Atomic | Size: 0xc
 			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMessageEntity : public CS2::server::CPointEntity {
 		public:
-			public:
 			int32_t m_radius; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_messageText; // 0x4f8 | Schema_Atomic | Size: 0x8

@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_InheritFromParentParticlesV2 : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flScale; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x320 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);

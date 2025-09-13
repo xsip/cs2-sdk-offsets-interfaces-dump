@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysConstraint : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlSymbolLarge m_nameAttach1; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAttach2; // 0x500 | Schema_Atomic | Size: 0x8

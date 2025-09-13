@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_RandomColorTintColor : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; // 0x50 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_ColorPosition; // 0x90 | Schema_Atomic | Size: 0x40
 			smartprops::ApplyColorMode_t m_Mode; // 0xd0 | Schema_DeclaredEnum | Size: 0x4

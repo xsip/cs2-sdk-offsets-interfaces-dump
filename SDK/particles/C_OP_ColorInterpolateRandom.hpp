@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ColorInterpolateRandom : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			GlobalTypes::Color m_ColorFadeMin; // 0x1c0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x18);
 			GlobalTypes::Color m_ColorFadeMax; // 0x1dc | Schema_Atomic | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class ConfigIndex  {
 		public:
-			public:
 			uint16_t m_nGroup; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t m_nConfig; // 0x2 | Schema_Builtin | Size: 0x2
 		};

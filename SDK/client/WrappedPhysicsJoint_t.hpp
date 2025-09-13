@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class WrappedPhysicsJoint_t  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::client::WrappedPhysicsJoint_t) == 0x8, "WrappedPhysicsJoint_t size should be 0x8");

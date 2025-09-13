@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CGradientFog : public CS2::server::CBaseEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hGradientFogTexture; // 0x4f0 | Schema_Atomic | Size: 0x8
 			char  m_hGradientFogTexture[0x8]; // 0x4f0 | Schema_Atomic | Size: 0x8
 			float32 m_flFogStartDistance; // 0x4f8 | Schema_Builtin | Size: 0x4

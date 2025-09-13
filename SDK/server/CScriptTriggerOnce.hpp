@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CScriptTriggerOnce : public CS2::server::CTriggerOnce {
 		public:
-			public:
 			GlobalTypes::Vector m_vExtent; // 0x9e0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};

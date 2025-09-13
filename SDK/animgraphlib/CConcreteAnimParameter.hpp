@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CConcreteAnimParameter : public CS2::animgraphlib::CAnimParameterBase {
 		public:
-			public:
 			animgraphlib::AnimParamButton_t m_previewButton; // 0x70 | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::AnimParamNetworkSetting m_eNetworkSetting; // 0x74 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bUseMostRecentValue; // 0x78 | Schema_Builtin | Size: 0x1

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class ParticlePreviewState_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_previewModel; // 0x0 | Schema_Atomic | Size: 0x8
 			uint32_t m_nModSpecificData; // 0x8 | Schema_Builtin | Size: 0x4
 			particles::PetGroundType_t m_groundType; // 0xc | Schema_DeclaredEnum | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class PostProcessingLocalContrastParameters_t  {
 		public:
-			public:
 			float32 m_flLocalContrastStrength; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flLocalContrastEdgeStrength; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flLocalContrastVignetteStart; // 0x8 | Schema_Builtin | Size: 0x4

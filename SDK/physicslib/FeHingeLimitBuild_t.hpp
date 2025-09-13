@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeHingeLimitBuild_t  {
 		public:
-			public:
 			uint16_t nNode[6]; // 0x0 | Schema_FixedArray | Size: 0xc
 			uint32_t nFlags; // 0xc | Schema_Builtin | Size: 0x4
 			float32 flLimitCW; // 0x10 | Schema_Builtin | Size: 0x4

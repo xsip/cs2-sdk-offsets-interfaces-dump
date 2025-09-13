@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CTakeDamageResult  {
 		public:
-			public:
 			GlobalTypes::CTakeDamageInfo* m_pOriginatingInfo; // 0x0 | Schema_Ptr | Size: 0x8
 			int32_t m_nHealthLost; // 0x8 | Schema_Builtin | Size: 0x4
 			int32_t m_nDamageTaken; // 0xc | Schema_Builtin | Size: 0x4

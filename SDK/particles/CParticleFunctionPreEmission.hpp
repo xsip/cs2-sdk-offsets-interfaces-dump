@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionPreEmission : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			bool m_bRunOnce; // 0x1c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

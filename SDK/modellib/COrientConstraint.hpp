@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class COrientConstraint : public CS2::modellib::CBaseConstraint {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::modellib::COrientConstraint) == 0x60, "COrientConstraint size should be 0x60");
 	}

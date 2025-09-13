@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseGrenade : public CS2::server::CBaseFlex {
 		public:
-			public:
 			S2_PAD(0x8);
 			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xb10 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnExplode; // 0xb38 | Schema_DeclaredClass | Size: 0x28

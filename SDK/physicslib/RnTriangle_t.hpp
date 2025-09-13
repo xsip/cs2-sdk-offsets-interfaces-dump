@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnTriangle_t  {
 		public:
-			public:
 			int32_t m_nIndex[3]; // 0x0 | Schema_FixedArray | Size: 0xc
 		};
 		static_assert(offsetof(CS2::physicslib::RnTriangle_t, m_nIndex) == 0x0, "m_nIndex in RnTriangle_t should be at offset 0x0");

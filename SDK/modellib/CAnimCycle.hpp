@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CAnimCycle : public CS2::modellib::CCycleBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::modellib::CAnimCycle) == 0x4, "CAnimCycle size should be 0x4");
 	}

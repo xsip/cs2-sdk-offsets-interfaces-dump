@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapQAnglesToRotation : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
 		};
 		static_assert(offsetof(CS2::particles::C_INIT_RemapQAnglesToRotation, m_TransformInput) == 0x1C8, "m_TransformInput in C_INIT_RemapQAnglesToRotation should be at offset 0x1C8");

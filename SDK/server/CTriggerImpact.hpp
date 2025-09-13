@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerImpact : public CS2::server::CTriggerMultiple {
 		public:
-			public:
 			float32 m_flMagnitude; // 0x9e0 | Schema_Builtin | Size: 0x4
 			float32 m_flNoise; // 0x9e4 | Schema_Builtin | Size: 0x4
 			float32 m_flViewkick; // 0x9e8 | Schema_Builtin | Size: 0x4

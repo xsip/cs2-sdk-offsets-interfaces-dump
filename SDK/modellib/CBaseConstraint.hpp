@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CBaseConstraint : public CS2::modellib::CBoneConstraintBase {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_vUpVector; // 0x28 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);

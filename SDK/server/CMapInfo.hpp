@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMapInfo : public CS2::server::CPointEntity {
 		public:
-			public:
 			int32_t m_iBuyingStatus; // 0x4f0 | Schema_Builtin | Size: 0x4
 			float32 m_flBombRadius; // 0x4f4 | Schema_Builtin | Size: 0x4
 			int32_t m_iPetPopulation; // 0x4f8 | Schema_Builtin | Size: 0x4

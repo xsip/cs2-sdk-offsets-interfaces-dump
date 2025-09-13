@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsPropRespawnable : public CS2::server::CPhysicsProp {
 		public:
-			public:
 			GlobalTypes::Vector m_vOriginalSpawnOrigin; // 0xdf0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_vOriginalSpawnAngles; // 0xdfc | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vOriginalMins; // 0xe08 | Schema_Atomic | Size: 0xc

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_RadioServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			entity2::GameTime_t m_flGotHostageTalkTimer; // 0x40 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flDefusingTalkTimer; // 0x44 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flC4PlantTalkTimer; // 0x48 | Schema_DeclaredClass | Size: 0x4

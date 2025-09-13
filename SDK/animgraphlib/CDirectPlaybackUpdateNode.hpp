@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CDirectPlaybackUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x4);
 			bool m_bFinishEarly; // 0x74 | Schema_Builtin | Size: 0x1
 			bool m_bResetOnFinish; // 0x75 | Schema_Builtin | Size: 0x1

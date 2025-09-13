@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetUserEvent : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_flRisingEdge; // 0x320 | Schema_DeclaredClass | Size: 0x160
 			particles::EventTypeSelection_t m_nRisingEventType; // 0x480 | Schema_DeclaredEnum | Size: 0x4

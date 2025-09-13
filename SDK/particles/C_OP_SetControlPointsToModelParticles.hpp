@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointsToModelParticles : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			char m_HitboxSetName[128]; // 0x1c0 | Schema_FixedArray | Size: 0x80
 			char m_AttachmentName[128]; // 0x240 | Schema_FixedArray | Size: 0x80
 			int32_t m_nFirstControlPoint; // 0x2c0 | Schema_Builtin | Size: 0x4

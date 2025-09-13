@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ShapeMatchingConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			float32 m_flShapeRestorationTime; // 0x1c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

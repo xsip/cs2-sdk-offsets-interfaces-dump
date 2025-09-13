@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleCollectionBindingInstance : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
-			public:
 			S2_PAD(0x20);
 		};
 		static_assert(sizeof(CS2::particleslib::CParticleCollectionBindingInstance) == 0x130, "CParticleCollectionBindingInstance size should be 0x130");

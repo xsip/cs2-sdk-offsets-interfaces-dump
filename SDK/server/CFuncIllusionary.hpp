@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncIllusionary : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CFuncIllusionary) == 0x7E8, "CFuncIllusionary size should be 0x7E8");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncPlat : public CS2::server::CBasePlatTrain {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_sNoise; // 0x890 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CFuncPlat, m_sNoise) == 0x890, "m_sNoise in CFuncPlat should be at offset 0x890");

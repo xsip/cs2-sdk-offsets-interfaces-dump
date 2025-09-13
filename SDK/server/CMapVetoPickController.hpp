@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CMapVetoPickController : public CS2::server::CBaseEntity {
 		public:
-			public:
 			bool m_bPlayedIntroVcd; // 0x4f0 | Schema_Builtin | Size: 0x1
 			bool m_bNeedToPlayFiveSecondsRemaining; // 0x4f1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1e);

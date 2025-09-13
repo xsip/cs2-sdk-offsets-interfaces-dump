@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPointAngularVelocitySensor : public CS2::server::CPointEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
 			char  m_hTargetEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			float32 m_flThreshold; // 0x4f4 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmAdditiveBlendTask : public CS2::animlib::CNmBlendTaskBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::animlib::CNmAdditiveBlendTask) == 0xD8, "CNmAdditiveBlendTask size should be 0xD8");
 	}

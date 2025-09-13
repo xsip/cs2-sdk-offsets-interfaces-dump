@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_MapVetoPickController : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x10);
 			int32_t m_nDraftType; // 0x608 | Schema_Builtin | Size: 0x4
 			int32_t m_nTeamWinningCoinToss; // 0x60c | Schema_Builtin | Size: 0x4

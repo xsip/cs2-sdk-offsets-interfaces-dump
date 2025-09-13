@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvVolumetricFogController : public CS2::server::CBaseEntity {
 		public:
-			public:
 			float32 m_flScattering; // 0x4f0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_TintColor; // 0x4f4 | Schema_Atomic | Size: 0x4
 			float32 m_flAnisotropy; // 0x4f8 | Schema_Builtin | Size: 0x4

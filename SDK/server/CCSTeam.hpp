@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSTeam : public CS2::server::CTeam {
 		public:
-			public:
 			int32_t m_nLastRecievedShorthandedRoundBonus; // 0x5a8 | Schema_Builtin | Size: 0x4
 			int32_t m_nShorthandedRoundBonusStartRound; // 0x5ac | Schema_Builtin | Size: 0x4
 			bool m_bSurrendered; // 0x5b0 | Schema_Builtin | Size: 0x1

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CDefinition : public CS2::animlib::CDefinition {
 		public:
-			public:
 			int16_t m_nVerticalAngleNodeIdx; // 0x18 | Schema_Builtin | Size: 0x2
 			int16_t m_nHorizontalAngleNodeIdx; // 0x1a | Schema_Builtin | Size: 0x2
 			int16_t m_nEnabledNodeIdx; // 0x1c | Schema_Builtin | Size: 0x2

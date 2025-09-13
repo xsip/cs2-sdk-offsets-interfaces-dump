@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimScriptComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			modellib::AnimScriptHandle m_hScript; // 0x30 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

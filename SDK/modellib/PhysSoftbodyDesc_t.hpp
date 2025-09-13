@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class PhysSoftbodyDesc_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< uint32 > m_ParticleBoneHash; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_ParticleBoneHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< physicslib::RnSoftbodyParticle_t > m_Particles; // 0x18 | Schema_Atomic | Size: 0x18

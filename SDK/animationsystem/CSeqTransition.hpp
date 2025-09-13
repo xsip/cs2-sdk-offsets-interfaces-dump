@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqTransition  {
 		public:
-			public:
 			float32 m_flFadeInTime; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flFadeOutTime; // 0x4 | Schema_Builtin | Size: 0x4
 		};

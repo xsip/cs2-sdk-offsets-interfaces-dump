@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CPointOffScreenIndicatorUi : public CS2::client::C_PointClientUIWorldPanel {
 		public:
-			public:
 			bool m_bBeenEnabled; // 0x1120 | Schema_Builtin | Size: 0x1
 			bool m_bHide; // 0x1121 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CHitBoxSetList  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< modellib::CHitBoxSet > m_HitBoxSets; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_HitBoxSets[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

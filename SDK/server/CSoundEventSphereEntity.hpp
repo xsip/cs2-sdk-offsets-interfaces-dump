@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSoundEventSphereEntity : public CS2::server::CSoundEventEntity {
 		public:
-			public:
 			float32 m_flRadius; // 0x5b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

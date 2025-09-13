@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class RenderInputLayoutField_t  {
 		public:
-			public:
 			char m_pSemanticName[32]; // 0x0 | Schema_FixedArray | Size: 0x20
 			int8_t m_nSemanticIndex; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

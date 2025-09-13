@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CRagdollManager : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			int8_t m_iCurrentMaxRagdollCount; // 0x5f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

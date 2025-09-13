@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionTimeLimitSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			float32 m_flMaxDuration; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

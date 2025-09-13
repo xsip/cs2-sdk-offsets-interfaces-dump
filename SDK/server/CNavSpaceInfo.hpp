@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CNavSpaceInfo : public CS2::server::CPointEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CNavSpaceInfo) == 0x4F0, "CNavSpaceInfo size should be 0x4F0");
 	}

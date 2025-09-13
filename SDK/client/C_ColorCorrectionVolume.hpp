@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_ColorCorrectionVolume : public CS2::client::C_BaseTrigger {
 		public:
-			public:
 			float32 m_LastEnterWeight; // 0x1000 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_LastEnterTime; // 0x1004 | Schema_DeclaredClass | Size: 0x4
 			float32 m_LastExitWeight; // 0x1008 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointCameraVFOV : public CS2::client::C_PointCamera {
 		public:
-			public:
 			float32 m_flVerticalFOV; // 0x658 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

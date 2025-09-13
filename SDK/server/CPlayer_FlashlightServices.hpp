@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_FlashlightServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPlayer_FlashlightServices) == 0x40, "CPlayer_FlashlightServices size should be 0x40");
 	}

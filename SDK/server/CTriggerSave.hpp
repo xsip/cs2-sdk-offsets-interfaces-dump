@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSave : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			bool m_bForceNewLevelUnit; // 0x9b8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_fDangerousTimer; // 0x9bc | Schema_Builtin | Size: 0x4

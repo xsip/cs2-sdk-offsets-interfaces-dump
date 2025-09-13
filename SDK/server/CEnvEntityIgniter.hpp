@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvEntityIgniter : public CS2::server::CBaseEntity {
 		public:
-			public:
 			float32 m_flLifetime; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

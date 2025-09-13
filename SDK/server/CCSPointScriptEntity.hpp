@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPointScriptEntity : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CCSPointScriptEntity) == 0x4F8, "CCSPointScriptEntity size should be 0x4F8");

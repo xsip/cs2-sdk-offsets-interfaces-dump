@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeAxialEdgeBend_t  {
 		public:
-			public:
 			float32 te; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 tv; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flDist; // 0x8 | Schema_Builtin | Size: 0x4

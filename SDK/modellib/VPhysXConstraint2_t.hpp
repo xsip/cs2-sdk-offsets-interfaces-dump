@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class VPhysXConstraint2_t  {
 		public:
-			public:
 			uint32_t m_nFlags; // 0x0 | Schema_Builtin | Size: 0x4
 			uint16_t m_nParent; // 0x4 | Schema_Builtin | Size: 0x2
 			uint16_t m_nChild; // 0x6 | Schema_Builtin | Size: 0x2

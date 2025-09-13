@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointToHand : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nCP1; // 0x1c8 | Schema_Builtin | Size: 0x4
 			int32_t m_nHand; // 0x1cc | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecCP1Pos; // 0x1d0 | Schema_Atomic | Size: 0xc

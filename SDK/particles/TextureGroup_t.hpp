@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class TextureGroup_t  {
 		public:
-			public:
 			bool m_bEnabled; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bReplaceTextureWithGradient; // 0x1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);

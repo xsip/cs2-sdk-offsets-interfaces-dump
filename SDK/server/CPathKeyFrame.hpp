@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPathKeyFrame : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_Origin; // 0x4f0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_Angles; // 0x4fc | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8);

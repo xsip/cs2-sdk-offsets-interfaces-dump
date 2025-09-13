@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Color : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			GlobalTypes::Color m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

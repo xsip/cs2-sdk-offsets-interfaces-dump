@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged_Nav : public CS2::server::CMarkupVolumeTagged {
 		public:
-			public:
 			server::NavScopeFlags_t m_nScopes; // 0x828 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

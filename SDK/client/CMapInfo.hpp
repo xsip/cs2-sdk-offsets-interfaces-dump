@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CMapInfo : public CS2::client::C_PointEntity {
 		public:
-			public:
 			int32_t m_iBuyingStatus; // 0x5f8 | Schema_Builtin | Size: 0x4
 			float32 m_flBombRadius; // 0x5fc | Schema_Builtin | Size: 0x4
 			int32_t m_iPetPopulation; // 0x600 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_BaseToggle : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_BaseToggle) == 0xEC0, "C_BaseToggle size should be 0xEC0");
 	}

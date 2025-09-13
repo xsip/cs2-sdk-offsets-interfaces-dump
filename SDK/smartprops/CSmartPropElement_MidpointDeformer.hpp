@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_MidpointDeformer : public CS2::smartprops::CSmartPropElement_Deformer {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeBool m_bDeformationEnabled; // 0xa0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_vStart; // 0xe0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_vEnd; // 0x120 | Schema_Atomic | Size: 0x40

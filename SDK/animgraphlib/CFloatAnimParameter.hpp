@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFloatAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {
 		public:
-			public:
 			float32 m_fDefaultValue; // 0x80 | Schema_Builtin | Size: 0x4
 			float32 m_fMinValue; // 0x84 | Schema_Builtin | Size: 0x4
 			float32 m_fMaxValue; // 0x88 | Schema_Builtin | Size: 0x4

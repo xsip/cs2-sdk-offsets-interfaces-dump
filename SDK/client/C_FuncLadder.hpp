@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_FuncLadder : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			GlobalTypes::Vector m_vecLadderDir; // 0xec0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
 			// client::CUtlVector< client.dll::CHandle< C_InfoLadderDismount > > m_Dismounts; // 0xed0 | Schema_Atomic | Size: 0x18

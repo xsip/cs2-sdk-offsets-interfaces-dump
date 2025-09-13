@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapBoundingVolumetoCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nOutControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
 			float32 m_flInputMin; // 0x1cc | Schema_Builtin | Size: 0x4
 			float32 m_flInputMax; // 0x1d0 | Schema_Builtin | Size: 0x4

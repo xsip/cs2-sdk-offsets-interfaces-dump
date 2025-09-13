@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CGameGibManager : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			bool m_bAllowNewGibs; // 0x508 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

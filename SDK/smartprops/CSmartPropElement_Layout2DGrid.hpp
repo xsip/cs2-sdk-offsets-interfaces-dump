@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_Layout2DGrid : public CS2::smartprops::CSmartPropElement_Group {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeFloat m_flWidth; // 0xa0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flLength; // 0xe0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bVerticalLength; // 0x120 | Schema_Atomic | Size: 0x40

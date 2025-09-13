@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_FuncConveyor : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::Vector m_vecMoveDirEntitySpace; // 0xec8 | Schema_Atomic | Size: 0xc
 			float32 m_flTargetSpeed; // 0xed4 | Schema_Builtin | Size: 0x4

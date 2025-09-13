@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncVPhysicsClip : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			bool m_bDisabled; // 0x7e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

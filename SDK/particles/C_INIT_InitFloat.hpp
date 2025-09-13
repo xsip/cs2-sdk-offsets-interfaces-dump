@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitFloat : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_InputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particles::ParticleAttributeIndex_t m_nOutputField; // 0x328 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x32c | Schema_DeclaredEnum | Size: 0x4

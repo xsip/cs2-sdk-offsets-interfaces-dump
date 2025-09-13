@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DampenToCP : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
 			float32 m_flRange; // 0x1c4 | Schema_Builtin | Size: 0x4
 			float32 m_flScale; // 0x1c8 | Schema_Builtin | Size: 0x4

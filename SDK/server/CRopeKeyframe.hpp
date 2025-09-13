@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CRopeKeyframe : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			uint16_t m_RopeFlags; // 0x7f0 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);

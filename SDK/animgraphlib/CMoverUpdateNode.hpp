@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMoverUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x8);
 			animgraphlib::CAnimInputDamping m_damping; // 0x78 | Schema_DeclaredClass | Size: 0x18
 			animgraphlib::AnimValueSource m_facingTarget; // 0x90 | Schema_DeclaredEnum | Size: 0x4

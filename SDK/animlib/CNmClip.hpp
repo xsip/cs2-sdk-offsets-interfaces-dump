@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmClip  {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmSkeleton > m_skeleton; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_skeleton[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			uint32_t m_nNumFrames; // 0x8 | Schema_Builtin | Size: 0x4

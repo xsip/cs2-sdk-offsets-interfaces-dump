@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimationGraphVisualizerSphere : public CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase {
 		public:
-			public:
 			GlobalTypes::VectorAligned m_vWsPosition; // 0x40 | Schema_Atomic | Size: 0x10
 			float32 m_flRadius; // 0x50 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_Color; // 0x54 | Schema_Atomic | Size: 0x4

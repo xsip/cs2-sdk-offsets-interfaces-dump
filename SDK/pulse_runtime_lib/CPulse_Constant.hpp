@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_Constant  {
 		public:
-			public:
 			GlobalTypes::CPulseValueFullType m_Type; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::KeyValues3 m_Value; // 0x18 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8); // End padding

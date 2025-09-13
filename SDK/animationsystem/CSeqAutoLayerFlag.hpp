@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqAutoLayerFlag  {
 		public:
-			public:
 			bool m_bPost; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bSpline; // 0x1 | Schema_Builtin | Size: 0x1
 			bool m_bXFade; // 0x2 | Schema_Builtin | Size: 0x1

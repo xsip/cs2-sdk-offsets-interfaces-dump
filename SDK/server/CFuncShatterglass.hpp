@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncShatterglass : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			GlobalTypes::matrix3x4_t m_matPanelTransform; // 0x7e8 | Schema_Atomic | Size: 0x30
 			GlobalTypes::matrix3x4_t m_matPanelTransformWsTemp; // 0x818 | Schema_Atomic | Size: 0x30
 			// GlobalTypes::CUtlVector< uint32 > m_vecShatterGlassShards; // 0x848 | Schema_Atomic | Size: 0x18

@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace server {
 		class CBreakableProp : public CS2::server::CBaseProp {
 		public:
-			public:
 			S2_PAD(0x8);
 			server::CPropDataComponent m_CPropDataComponent; // 0xab8 | Schema_DeclaredClass | Size: 0x40
 			entity2::CEntityIOOutput m_OnStartDeath; // 0xaf8 | Schema_DeclaredClass | Size: 0x28

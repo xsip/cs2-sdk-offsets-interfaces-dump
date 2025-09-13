@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_LayerBase  {
 		public:
-			public:
 			scenesystem::SceneViewId_t m_viewId; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			GlobalTypes::CUtlString m_ViewName; // 0x10 | Schema_Atomic | Size: 0x8
 			uint64_t m_nLayerId; // 0x18 | Schema_Builtin | Size: 0x8

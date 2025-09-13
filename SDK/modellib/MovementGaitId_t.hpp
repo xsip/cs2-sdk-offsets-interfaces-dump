@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class MovementGaitId_t  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_sId; // 0x0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::MovementGaitId_t, m_sId) == 0x0, "m_sId in MovementGaitId_t should be at offset 0x0");

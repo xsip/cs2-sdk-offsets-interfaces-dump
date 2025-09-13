@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class RotatorQueueEntry_t  {
 		public:
-			public:
 			GlobalTypes::Quaternion qTarget; // 0x0 | Schema_Atomic | Size: 0x10
 			server::RotatorTargetSpace_t eSpace; // 0x10 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xc); // End padding

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmCachedPoseReadTask : public CS2::animlib::CNmPoseTask {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::animlib::CNmCachedPoseReadTask) == 0x58, "CNmCachedPoseReadTask size should be 0x58");

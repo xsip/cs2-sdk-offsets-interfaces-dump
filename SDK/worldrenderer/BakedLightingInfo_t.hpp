@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class BakedLightingInfo_t  {
 		public:
-			public:
 			uint32_t m_nLightmapVersionNumber; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nLightmapGameVersionNumber; // 0x4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector2D m_vLightmapUvScale; // 0x8 | Schema_Atomic | Size: 0x8

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixSubgraphSwitchDesc_t  {
 		public:
-			public:
 			soundsystem_lowlevel::VMixSubgraphSwitchInterpolationType_t m_interpolationMode; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bOnlyTailsOnFadeOut; // 0x4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

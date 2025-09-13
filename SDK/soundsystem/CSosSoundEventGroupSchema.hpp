@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosSoundEventGroupSchema  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			soundsystem::SosGroupType_t m_nType; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bIsBlocking; // 0xc | Schema_Builtin | Size: 0x1

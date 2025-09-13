@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimParamHandle  {
 		public:
-			public:
 			animgraphlib::AnimParamType_t m_type; // 0x0 | Schema_DeclaredEnum | Size: 0x1
 			uint8_t m_index; // 0x1 | Schema_Builtin | Size: 0x1
 		};

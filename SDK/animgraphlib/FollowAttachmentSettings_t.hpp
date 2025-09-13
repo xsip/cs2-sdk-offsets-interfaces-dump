@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class FollowAttachmentSettings_t  {
 		public:
-			public:
 			modellib::CAnimAttachment m_attachment; // 0x0 | Schema_DeclaredClass | Size: 0x80
 			int32_t m_boneIndex; // 0x80 | Schema_Builtin | Size: 0x4
 			modellib::AttachmentHandle_t m_attachmentHandle; // 0x84 | Schema_DeclaredClass | Size: 0x1

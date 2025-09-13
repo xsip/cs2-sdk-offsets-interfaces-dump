@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerLerpObject : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszLerpTarget; // 0x9b8 | Schema_Atomic | Size: 0x8
 			// server::CHandle< server::CBaseEntity > m_hLerpTarget; // 0x9c0 | Schema_Atomic | Size: 0x4
 			char  m_hLerpTarget[0x4]; // 0x9c0 | Schema_Atomic | Size: 0x4

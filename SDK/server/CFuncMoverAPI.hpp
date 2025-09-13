@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncMoverAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CFuncMoverAPI) == 0x8, "CFuncMoverAPI size should be 0x8");

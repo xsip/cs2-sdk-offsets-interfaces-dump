@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixFreeverbDesc_t  {
 		public:
-			public:
 			float32 m_flRoomSize; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flDamp; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flWidth; // 0x8 | Schema_Builtin | Size: 0x4

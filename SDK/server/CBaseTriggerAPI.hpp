@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CBaseTriggerAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CBaseTriggerAPI) == 0x8, "CBaseTriggerAPI size should be 0x8");

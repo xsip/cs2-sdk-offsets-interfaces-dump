@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace smartprops {
 		class MaterialGroupChoice_t  {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeMaterialGroup m_MaterialGroupName; // 0x0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flWeight; // 0x40 | Schema_Atomic | Size: 0x40
 		};

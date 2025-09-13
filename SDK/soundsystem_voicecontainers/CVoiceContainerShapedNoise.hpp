@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerShapedNoise : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			public:
 			bool m_bUseCurveForFrequency; // 0xb8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flFrequency; // 0xbc | Schema_Builtin | Size: 0x4

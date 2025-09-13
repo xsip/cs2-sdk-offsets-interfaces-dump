@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseNodeDynamicOutflows_t  {
 		public:
-			public:
 			// assetpreview::DynamicOutflow_t > m_Outflows; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_Outflows[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointClientUIWorldPanel : public CS2::client::C_BaseClientUIEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bForceRecreateNextUpdate; // 0xef8 | Schema_Builtin | Size: 0x1
 			bool m_bMoveViewToPlayerNextThink; // 0xef9 | Schema_Builtin | Size: 0x1

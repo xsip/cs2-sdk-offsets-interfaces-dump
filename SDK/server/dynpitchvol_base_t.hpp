@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class dynpitchvol_base_t  {
 		public:
-			public:
 			int32_t preset; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t pitchrun; // 0x4 | Schema_Builtin | Size: 0x4
 			int32_t pitchstart; // 0x8 | Schema_Builtin | Size: 0x4

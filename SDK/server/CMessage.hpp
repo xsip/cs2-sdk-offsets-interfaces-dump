@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CMessage : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x4f0 | Schema_Atomic | Size: 0x8
 			float32 m_MessageVolume; // 0x4f8 | Schema_Builtin | Size: 0x4
 			int32_t m_MessageAttenuation; // 0x4fc | Schema_Builtin | Size: 0x4

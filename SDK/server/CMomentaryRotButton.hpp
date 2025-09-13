@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CMomentaryRotButton : public CS2::server::CRotButton {
 		public:
-			public:
 			// GlobalTypes::CEntityOutputTemplate< float32 > m_Position; // 0x9b8 | Schema_Atomic | Size: 0x28
 			char  m_Position[0x28]; // 0x9b8 | Schema_Atomic | Size: 0x28
 			entity2::CEntityIOOutput m_OnUnpressed; // 0x9e0 | Schema_DeclaredClass | Size: 0x28

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class WeightList  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CUtlVector< float32 > m_weights; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_weights[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

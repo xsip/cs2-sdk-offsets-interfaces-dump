@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ConnectParentParticleToNearest : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			int32_t m_nFirstControlPoint; // 0x1c0 | Schema_Builtin | Size: 0x4
 			int32_t m_nSecondControlPoint; // 0x1c4 | Schema_Builtin | Size: 0x4
 			bool m_bUseRadius; // 0x1c8 | Schema_Builtin | Size: 0x1

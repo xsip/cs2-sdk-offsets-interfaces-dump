@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CWeaponTaser : public CS2::server::CCSWeaponBaseGun {
 		public:
-			public:
 			entity2::GameTime_t m_fFireTime; // 0x1050 | Schema_DeclaredClass | Size: 0x4
 			int32_t m_nLastAttackTick; // 0x1054 | Schema_Builtin | Size: 0x4
 		};

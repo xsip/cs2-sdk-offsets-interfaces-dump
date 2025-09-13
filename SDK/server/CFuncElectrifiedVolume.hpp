@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncElectrifiedVolume : public CS2::server::CFuncBrush {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_EffectName; // 0x808 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_EffectInterpenetrateName; // 0x810 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_EffectZapName; // 0x818 | Schema_Atomic | Size: 0x8

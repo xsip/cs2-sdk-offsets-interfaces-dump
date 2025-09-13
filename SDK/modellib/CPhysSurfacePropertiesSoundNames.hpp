@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CPhysSurfacePropertiesSoundNames  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_impactSoft; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_impactHard; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_scrapeSmooth; // 0x10 | Schema_Atomic | Size: 0x8

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class FootFixedSettings  {
 		public:
-			public:
 			animgraphlib::TraceSettings_t m_traceSettings; // 0x0 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x8);
 			GlobalTypes::VectorAligned m_vFootBaseBindPosePositionMS; // 0x10 | Schema_Atomic | Size: 0x10

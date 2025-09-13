@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace particles {
 		class RenderProjectedMaterial_t  {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 		};

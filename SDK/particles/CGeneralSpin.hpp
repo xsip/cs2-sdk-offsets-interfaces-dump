@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class CGeneralSpin : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			int32_t m_nSpinRateDegrees; // 0x1c0 | Schema_Builtin | Size: 0x4
 			int32_t m_nSpinRateMinDegrees; // 0x1c4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

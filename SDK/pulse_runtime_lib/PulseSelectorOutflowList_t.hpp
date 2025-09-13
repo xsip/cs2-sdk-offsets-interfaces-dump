@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseSelectorOutflowList_t  {
 		public:
-			public:
 			// server::CUtlVector< pulse_runtime_lib::OutflowWithRequirements_t > m_Outflows; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_Outflows[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

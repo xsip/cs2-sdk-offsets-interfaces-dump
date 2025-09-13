@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMaterialAttributeAnimTag : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_AttributeName; // 0x58 | Schema_Atomic | Size: 0x8
 			animgraphlib::MatterialAttributeTagType_t m_AttributeType; // 0x60 | Schema_DeclaredEnum | Size: 0x4

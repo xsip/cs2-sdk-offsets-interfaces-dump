@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CInfoFan : public CS2::server::CPointEntity {
 		public:
-			public:
 			S2_PAD(0x40);
 			float32 m_fFanForceMaxRadius; // 0x530 | Schema_Builtin | Size: 0x4
 			float32 m_fFanForceMinRadius; // 0x534 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_InfoLadderDismount : public CS2::client::C_BaseEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_InfoLadderDismount) == 0x5F8, "C_InfoLadderDismount size should be 0x5F8");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvDecal : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0xec0 | Schema_Atomic | Size: 0x8
 			char  m_hDecalMaterial[0x8]; // 0xec0 | Schema_Atomic | Size: 0x8
 			float32 m_flWidth; // 0xec8 | Schema_Builtin | Size: 0x4

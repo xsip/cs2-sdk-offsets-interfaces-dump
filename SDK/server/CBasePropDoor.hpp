@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace server {
 		class CBasePropDoor : public CS2::server::CDynamicProp {
 		public:
-			public:
 			S2_PAD(0x10);
 			float32 m_flAutoReturnDelay; // 0xd50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

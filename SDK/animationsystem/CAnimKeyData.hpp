@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimKeyData  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_name; // 0x0 | Schema_Atomic | Size: 0x10
 			// GlobalTypes::CUtlVector< animationsystem::CAnimBone > m_boneArray; // 0x10 | Schema_Atomic | Size: 0x18
 			char  m_boneArray[0x18]; // 0x10 | Schema_Atomic | Size: 0x18

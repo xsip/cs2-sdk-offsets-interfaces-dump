@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CBoolAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {
 		public:
-			public:
 			bool m_bDefaultValue; // 0x80 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CEconItemView : public CS2::client::IEconItemInterface {
 		public:
-			public:
 			S2_PAD(0x30);
 			uint16_t m_iItemDefinitionIndex; // 0x38 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);

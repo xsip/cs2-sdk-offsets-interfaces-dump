@@ -16,7 +16,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CExpressionActionUpdater : public CS2::animgraphlib::CAnimActionUpdater {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_hParam; // 0x18 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::AnimParamType_t m_eParamType; // 0x1a | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x1);

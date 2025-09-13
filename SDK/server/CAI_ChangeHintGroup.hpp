@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CAI_ChangeHintGroup : public CS2::server::CBaseEntity {
 		public:
-			public:
 			int32_t m_iSearchType; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_strSearchName; // 0x4f8 | Schema_Atomic | Size: 0x8

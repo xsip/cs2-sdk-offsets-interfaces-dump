@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqMultiFetchFlag  {
 		public:
-			public:
 			bool m_bRealtime; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bCylepose; // 0x1 | Schema_Builtin | Size: 0x1
 			bool m_b0D; // 0x2 | Schema_Builtin | Size: 0x1

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnSoftbodySpring_t  {
 		public:
-			public:
 			uint16_t m_nParticle[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 			float32 m_flLength; // 0x4 | Schema_Builtin | Size: 0x4
 		};

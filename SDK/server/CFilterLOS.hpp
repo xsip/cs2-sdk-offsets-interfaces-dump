@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFilterLOS : public CS2::server::CBaseFilter {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CFilterLOS) == 0x548, "CFilterLOS size should be 0x548");
 	}

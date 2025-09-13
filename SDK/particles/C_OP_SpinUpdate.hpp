@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SpinUpdate : public CS2::particles::CSpinUpdateBase {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::C_OP_SpinUpdate) == 0x1C0, "C_OP_SpinUpdate size should be 0x1C0");
 	}

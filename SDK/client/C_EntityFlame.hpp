@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_EntityFlame : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			// client::CHandle< client::C_BaseEntity > m_hEntAttached; // 0x5f8 | Schema_Atomic | Size: 0x4
 			char  m_hEntAttached[0x4]; // 0x5f8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x24);

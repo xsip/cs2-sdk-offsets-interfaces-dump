@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class MaterialParam_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::materialsystem2::MaterialParam_t, m_name) == 0x0, "m_name in MaterialParam_t should be at offset 0x0");

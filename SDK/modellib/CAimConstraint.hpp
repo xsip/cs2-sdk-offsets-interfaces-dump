@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CAimConstraint : public CS2::modellib::CBaseConstraint {
 		public:
-			public:
 			GlobalTypes::Quaternion m_qAimOffset; // 0x60 | Schema_Atomic | Size: 0x10
 			uint32_t m_nUpType; // 0x70 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding

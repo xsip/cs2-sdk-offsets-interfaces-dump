@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class PhysShapeMarkup_t  {
 		public:
-			public:
 			int32_t m_nBodyInAggregate; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nShapeInBody; // 0x4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CGlobalSymbol m_sHitGroup; // 0x8 | Schema_Atomic | Size: 0x8

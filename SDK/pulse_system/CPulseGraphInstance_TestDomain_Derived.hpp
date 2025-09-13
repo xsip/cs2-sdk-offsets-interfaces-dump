@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseGraphInstance_TestDomain_Derived : public CS2::pulse_system::CPulseGraphInstance_TestDomain {
 		public:
-			public:
 			int32_t m_nInstanceValueX; // 0x148 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

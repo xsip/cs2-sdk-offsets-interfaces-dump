@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class EventClientPreOutput_t  {
 		public:
-			public:
 			client::EngineLoopState_t m_LoopState; // 0x0 | Schema_DeclaredClass | Size: 0x28
 			float64 m_flRenderTime; // 0x28 | Schema_Builtin | Size: 0x8
 			float64 m_flRenderFrameTime; // 0x30 | Schema_Builtin | Size: 0x8

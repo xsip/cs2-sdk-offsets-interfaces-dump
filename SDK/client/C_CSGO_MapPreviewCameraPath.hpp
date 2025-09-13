@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_MapPreviewCameraPath : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			float32 m_flZFar; // 0x5f8 | Schema_Builtin | Size: 0x4
 			float32 m_flZNear; // 0x5fc | Schema_Builtin | Size: 0x4
 			bool m_bLoop; // 0x600 | Schema_Builtin | Size: 0x1

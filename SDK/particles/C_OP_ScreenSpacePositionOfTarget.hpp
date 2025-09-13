@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ScreenSpacePositionOfTarget : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CPerParticleVecInput m_vecTargetPosition; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
 			bool m_bOututBehindness; // 0x838 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

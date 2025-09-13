@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSpotlightEnd : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			float32 m_flLightScale; // 0x7e8 | Schema_Builtin | Size: 0x4
 			float32 m_Radius; // 0x7ec | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vSpotlightDir; // 0x7f0 | Schema_Atomic | Size: 0xc

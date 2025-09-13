@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CDynamicPropAlias_dynamic_prop : public CS2::server::CDynamicProp {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CDynamicPropAlias_dynamic_prop) == 0xD40, "CDynamicPropAlias_dynamic_prop size should be 0xD40");
 	}

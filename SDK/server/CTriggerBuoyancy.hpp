@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerBuoyancy : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			server::CBuoyancyHelper m_BuoyancyHelper; // 0x9b8 | Schema_DeclaredClass | Size: 0x118
 			float32 m_flFluidDensity; // 0xad0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

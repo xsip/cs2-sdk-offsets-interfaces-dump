@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateOnGrid : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CParticleCollectionFloatInput m_nXCount; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionFloatInput m_nYCount; // 0x328 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CParticleCollectionFloatInput m_nZCount; // 0x488 | Schema_DeclaredClass | Size: 0x160

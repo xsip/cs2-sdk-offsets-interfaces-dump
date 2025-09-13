@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicGameEvent : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszEventName; // 0x4f0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CLogicGameEvent, m_iszEventName) == 0x4F0, "m_iszEventName in CLogicGameEvent should be at offset 0x4F0");

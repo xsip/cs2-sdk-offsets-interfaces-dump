@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseRuntimeMethodArg  {
 		public:
-			public:
 			GlobalTypes::CKV3MemberNameWithStorage m_Name; // 0x0 | Schema_Atomic | Size: 0x38
 			GlobalTypes::CUtlString m_Description; // 0x38 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CPulseValueFullType m_Type; // 0x40 | Schema_Atomic | Size: 0x18

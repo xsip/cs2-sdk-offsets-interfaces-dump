@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CFilterMultipleAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::server::CFilterMultipleAPI) == 0x8, "CFilterMultipleAPI size should be 0x8");

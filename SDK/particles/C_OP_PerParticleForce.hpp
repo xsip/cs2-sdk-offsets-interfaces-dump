@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_PerParticleForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flForceScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleVecInput m_vForce; // 0x330 | Schema_DeclaredClass | Size: 0x678
 			int32_t m_nCP; // 0x9a8 | Schema_Builtin | Size: 0x4

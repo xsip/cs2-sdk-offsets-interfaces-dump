@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace compositematerialslib {
 		class CompositeMaterial_t  {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::KeyValues3 m_TargetKVs; // 0x8 | Schema_Atomic | Size: 0x10
 			GlobalTypes::KeyValues3 m_PreGenerationKVs; // 0x18 | Schema_Atomic | Size: 0x10

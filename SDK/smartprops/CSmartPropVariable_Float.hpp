@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Float : public CS2::smartprops::CSmartPropVariable {
 		public:
-			public:
 			float32 m_DefaultValue; // 0x38 | Schema_Builtin | Size: 0x4
 			float32 m_flParamaterMinValue; // 0x3c | Schema_Builtin | Size: 0x4
 			float32 m_flParamaterMaxValue; // 0x40 | Schema_Builtin | Size: 0x4

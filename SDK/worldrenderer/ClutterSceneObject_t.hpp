@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class ClutterSceneObject_t  {
 		public:
-			public:
 			mathlib_extended::AABB_t m_Bounds; // 0x0 | Schema_DeclaredClass | Size: 0x18
 			worldrenderer::ObjectTypeFlags_t m_flags; // 0x18 | Schema_DeclaredEnum | Size: 0x4
 			int16_t m_nLayer; // 0x1c | Schema_Builtin | Size: 0x2

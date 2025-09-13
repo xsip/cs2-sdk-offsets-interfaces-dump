@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class PostProcessingBloomParameters_t  {
 		public:
-			public:
 			materialsystem2::BloomBlendMode_t m_blendMode; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flBloomStrength; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flScreenBloomStrength; // 0x8 | Schema_Builtin | Size: 0x4

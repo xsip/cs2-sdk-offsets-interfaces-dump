@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSSprite : public CS2::server::CSprite {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CCSSprite) == 0x858, "CCSSprite size should be 0x858");
 	}

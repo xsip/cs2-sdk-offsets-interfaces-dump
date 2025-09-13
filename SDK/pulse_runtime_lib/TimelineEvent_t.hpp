@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class TimelineEvent_t  {
 		public:
-			public:
 			float32 m_flTimeFromPrevious; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			pulse_runtime_lib::CPulse_OutflowConnection m_EventOutflow; // 0x8 | Schema_DeclaredClass | Size: 0x48

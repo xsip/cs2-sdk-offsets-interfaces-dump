@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class QuantizationRange_t  {
 		public:
-			public:
 			float32 m_flRangeStart; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flRangeLength; // 0x4 | Schema_Builtin | Size: 0x4
 		};

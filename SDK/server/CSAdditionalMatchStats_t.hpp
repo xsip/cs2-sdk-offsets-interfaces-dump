@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CSAdditionalMatchStats_t : public CS2::server::CSAdditionalPerRoundStats_t {
 		public:
-			public:
 			int32_t m_numRoundsSurvived; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_maxNumRoundsSurvived; // 0x1c | Schema_Builtin | Size: 0x4
 			int32_t m_numRoundsSurvivedTotal; // 0x20 | Schema_Builtin | Size: 0x4

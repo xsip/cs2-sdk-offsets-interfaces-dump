@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CStanceScaleUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::CAnimParamHandle m_hParam; // 0x70 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};

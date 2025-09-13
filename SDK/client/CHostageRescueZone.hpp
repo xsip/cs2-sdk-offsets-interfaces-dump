@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CHostageRescueZone : public CS2::client::CHostageRescueZoneShim {
 		public:
-			public:
 			S2_PAD(0x18);
 		};
 		static_assert(sizeof(CS2::client::CHostageRescueZone) == 0x1018, "CHostageRescueZone size should be 0x1018");

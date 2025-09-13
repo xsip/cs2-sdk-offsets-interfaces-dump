@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_ObserverServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 			uint8_t m_iObserverMode; // 0x40 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			// server::CHandle< server::CBaseEntity > m_hObserverTarget; // 0x44 | Schema_Atomic | Size: 0x4

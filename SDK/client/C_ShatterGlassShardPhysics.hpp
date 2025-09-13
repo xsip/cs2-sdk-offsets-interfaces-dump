@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_ShatterGlassShardPhysics : public CS2::client::C_PhysicsProp {
 		public:
-			public:
 			S2_PAD(0x8);
 			client::shard_model_desc_t m_ShardDesc; // 0x1328 | Schema_DeclaredClass | Size: 0x80
 			S2_PAD(0x8); // End padding

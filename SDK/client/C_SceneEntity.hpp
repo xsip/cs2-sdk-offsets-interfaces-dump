@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_SceneEntity : public CS2::client::C_PointEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bIsPlayingBack; // 0x600 | Schema_Builtin | Size: 0x1
 			bool m_bPaused; // 0x601 | Schema_Builtin | Size: 0x1

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseCell_Test_NoInflow : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Test_NoInflow) == 0x48, "CPulseCell_Test_NoInflow size should be 0x48");
 	}

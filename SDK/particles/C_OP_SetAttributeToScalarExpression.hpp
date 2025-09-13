@@ -18,7 +18,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetAttributeToScalarExpression : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particles::ScalarExpressionType_t m_nExpression; // 0x1c0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CPerParticleFloatInput m_flInput1; // 0x1c8 | Schema_DeclaredClass | Size: 0x160

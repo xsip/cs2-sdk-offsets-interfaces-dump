@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CRotatorTarget : public CS2::server::CPointEntity {
 		public:
-			public:
 			entity2::CEntityIOOutput m_OnArrivedAt; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
 			server::RotatorTargetSpace_t m_eSpace; // 0x518 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CRagdollConstraint : public CS2::server::CPhysConstraint {
 		public:
-			public:
 			float32 m_xmin; // 0x560 | Schema_Builtin | Size: 0x4
 			float32 m_xmax; // 0x564 | Schema_Builtin | Size: 0x4
 			float32 m_ymin; // 0x568 | Schema_Builtin | Size: 0x4

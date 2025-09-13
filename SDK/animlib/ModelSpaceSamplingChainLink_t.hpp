@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class ModelSpaceSamplingChainLink_t  {
 		public:
-			public:
 			int32_t m_nBoneIdx; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nParentBoneIdx; // 0x4 | Schema_Builtin | Size: 0x4
 			int32_t m_nParentChainLinkIdx; // 0x8 | Schema_Builtin | Size: 0x4

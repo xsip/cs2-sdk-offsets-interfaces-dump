@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_PointCommentaryNode : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			S2_PAD(0x18);
 			bool m_bActive; // 0x1180 | Schema_Builtin | Size: 0x1
 			bool m_bWasActive; // 0x1181 | Schema_Builtin | Size: 0x1

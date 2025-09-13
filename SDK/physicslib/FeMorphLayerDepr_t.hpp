@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeMorphLayerDepr_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_Name; // 0x0 | Schema_Atomic | Size: 0x8
 			uint32_t m_nNameHash; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

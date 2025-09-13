@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CBaseProp : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			bool m_bModelOverrodeBlockLOS; // 0x1168 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			int32_t m_iShapeType; // 0x116c | Schema_Builtin | Size: 0x4

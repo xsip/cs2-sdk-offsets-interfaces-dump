@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CPointEntityFinder : public CS2::server::CBaseEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_hEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
 			char  m_hEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);

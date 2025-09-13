@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ExternalGameImpulseForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_flForceScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
 			bool m_bRopes; // 0x330 | Schema_Builtin | Size: 0x1
 			bool m_bRopesZOnly; // 0x331 | Schema_Builtin | Size: 0x1

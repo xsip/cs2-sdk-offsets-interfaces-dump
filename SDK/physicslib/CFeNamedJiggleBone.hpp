@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class CFeNamedJiggleBone  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strParentBone; // 0x0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8);
 			GlobalTypes::CTransform m_transform; // 0x10 | Schema_Atomic | Size: 0x20

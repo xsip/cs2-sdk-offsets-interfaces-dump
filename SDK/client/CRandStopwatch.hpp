@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CRandStopwatch : public CS2::client::CStopwatchBase {
 		public:
-			public:
 			float32 m_flMinInterval; // 0xc | Schema_Builtin | Size: 0x4
 			float32 m_flMaxInterval; // 0x10 | Schema_Builtin | Size: 0x4
 		};

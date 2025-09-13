@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PickOne : public CS2::smartprops::CSmartPropElement_Group {
 		public:
-			public:
 			smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; // 0xa0 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeInt m_SpecificChildIndex; // 0xe0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CUtlString m_OutputChoiceVariableName; // 0x120 | Schema_Atomic | Size: 0x8

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CPairedSequenceComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::animgraphlib::CPairedSequenceComponentUpdater) == 0x38, "CPairedSequenceComponentUpdater size should be 0x38");

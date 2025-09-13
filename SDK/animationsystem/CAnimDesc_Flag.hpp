@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimDesc_Flag  {
 		public:
-			public:
 			bool m_bLooping; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bAllZeros; // 0x1 | Schema_Builtin | Size: 0x1
 			bool m_bHidden; // 0x2 | Schema_Builtin | Size: 0x1

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class C_PhysPropClientside : public CS2::client::C_BreakableProp {
 		public:
-			public:
 			entity2::GameTime_t m_flTouchDelta; // 0x1310 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_fDeathTime; // 0x1314 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vecDamagePosition; // 0x1318 | Schema_Atomic | Size: 0xc

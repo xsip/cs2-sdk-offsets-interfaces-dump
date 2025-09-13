@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateWithinSphereTransform : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particleslib::CPerParticleFloatInput m_fRadiusMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleFloatInput m_fRadiusMax; // 0x328 | Schema_DeclaredClass | Size: 0x160
 			particleslib::CPerParticleVecInput m_vecDistanceBias; // 0x488 | Schema_DeclaredClass | Size: 0x678

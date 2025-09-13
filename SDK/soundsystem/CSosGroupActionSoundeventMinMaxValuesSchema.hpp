@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSoundeventMinMaxValuesSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			public:
 			GlobalTypes::CUtlString m_strQueryPublicFieldName; // 0x18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strDelayPublicFieldName; // 0x20 | Schema_Atomic | Size: 0x8
 			bool m_bExcludeStoppedSounds; // 0x28 | Schema_Builtin | Size: 0x1

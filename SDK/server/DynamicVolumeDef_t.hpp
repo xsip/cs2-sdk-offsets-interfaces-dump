@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class DynamicVolumeDef_t  {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_source; // 0x0 | Schema_Atomic | Size: 0x4
 			char  m_source[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 			// server::CHandle< server::CBaseEntity > m_target; // 0x4 | Schema_Atomic | Size: 0x4

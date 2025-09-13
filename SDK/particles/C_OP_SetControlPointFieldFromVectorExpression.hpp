@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointFieldFromVectorExpression : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			particles::VectorFloatExpressionType_t m_nExpression; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionVecInput m_vecInput1; // 0x1d0 | Schema_DeclaredClass | Size: 0x678

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CKeepUpright : public CS2::server::CPointEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::Vector m_worldGoalAxis; // 0x4f8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_localTestAxis; // 0x504 | Schema_Atomic | Size: 0xc

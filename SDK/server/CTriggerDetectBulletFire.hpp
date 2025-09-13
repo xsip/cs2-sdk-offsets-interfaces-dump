@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CTriggerDetectBulletFire : public CS2::server::CBaseTrigger {
 		public:
-			public:
 			bool m_bPlayerFireOnly; // 0x9b8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			entity2::CEntityIOOutput m_OnDetectedBulletFire; // 0x9c0 | Schema_DeclaredClass | Size: 0x28

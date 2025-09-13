@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace modellib {
 		class CMeshletDescriptor  {
 		public:
-			public:
 			mathlib_extended::PackedAABB_t m_PackedAABB; // 0x0 | Schema_DeclaredClass | Size: 0x8
 			modellib::CDrawCullingData m_CullingData; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			uint32_t m_nVertexOffset; // 0xc | Schema_Builtin | Size: 0x4

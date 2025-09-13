@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimDesc  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_name; // 0x0 | Schema_Atomic | Size: 0x10
 			animationsystem::CAnimDesc_Flag m_flags; // 0x10 | Schema_DeclaredClass | Size: 0x8
 			float32 fps; // 0x18 | Schema_Builtin | Size: 0x4

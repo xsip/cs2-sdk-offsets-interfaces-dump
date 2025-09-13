@@ -19,7 +19,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSWeaponBase : public CS2::client::C_BasePlayerWeapon {
 		public:
-			public:
 			S2_PAD(0x40);
 			// GlobalTypes::CUtlVector< animationsystem::HSequence > m_thirdPersonFireSequences; // 0x1968 | Schema_Atomic | Size: 0x18
 			char  m_thirdPersonFireSequences[0x18]; // 0x1968 | Schema_Atomic | Size: 0x18

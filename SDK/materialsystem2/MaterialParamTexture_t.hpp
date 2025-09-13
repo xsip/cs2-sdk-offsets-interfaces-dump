@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace materialsystem2 {
 		class MaterialParamTexture_t : public CS2::materialsystem2::MaterialParam_t {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pValue; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_pValue[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 		};

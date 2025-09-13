@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CGunTarget : public CS2::server::CBaseToggle {
 		public:
-			public:
 			bool m_on; // 0x868 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			// server::CHandle< server::CBaseEntity > m_hTargetEnt; // 0x86c | Schema_Atomic | Size: 0x4

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace client {
 		class CFilterMultiple : public CS2::client::CBaseFilter {
 		public:
-			public:
 			client::filter_t m_nFilterType; // 0x650 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iFilterName[10]; // 0x658 | Schema_FixedArray | Size: 0x50

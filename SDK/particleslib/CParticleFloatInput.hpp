@@ -23,7 +23,6 @@ namespace CS2 {
 	namespace particleslib {
 		class CParticleFloatInput : public CS2::particleslib::CParticleInput {
 		public:
-			public:
 			particleslib::ParticleFloatType_t m_nType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
 			particleslib::ParticleFloatMapType_t m_nMapType; // 0x14 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flLiteralValue; // 0x18 | Schema_Builtin | Size: 0x4

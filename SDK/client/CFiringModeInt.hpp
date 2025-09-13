@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class CFiringModeInt  {
 		public:
-			public:
 			int32_t m_nValues[2]; // 0x0 | Schema_FixedArray | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CFiringModeInt, m_nValues) == 0x0, "m_nValues in CFiringModeInt should be at offset 0x0");

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmChainLookatTask : public CS2::animlib::CNmPoseTask {
 		public:
-			public:
 			int32_t m_nChainEndBoneIdx; // 0x50 | Schema_Builtin | Size: 0x4
 			int32_t m_nNumBonesInChain; // 0x54 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_chainForwardDir; // 0x58 | Schema_Atomic | Size: 0xc

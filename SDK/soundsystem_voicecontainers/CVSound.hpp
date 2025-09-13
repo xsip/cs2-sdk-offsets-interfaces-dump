@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVSound  {
 		public:
-			public:
 			int32_t m_nRate; // 0x0 | Schema_Builtin | Size: 0x4
 			soundsystem_voicecontainers::CVSoundFormat_t m_nFormat; // 0x4 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);

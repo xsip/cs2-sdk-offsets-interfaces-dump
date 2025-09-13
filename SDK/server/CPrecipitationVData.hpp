@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CPrecipitationVData : public CS2::client::CEntitySubclassVDataBase {
 		public:
-			public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szParticlePrecipitationEffect; // 0x28 | Schema_Atomic | Size: 0xe0
 			char  m_szParticlePrecipitationEffect[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
 			float32 m_flInnerDistance; // 0x108 | Schema_Builtin | Size: 0x4

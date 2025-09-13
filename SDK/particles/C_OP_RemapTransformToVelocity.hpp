@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapTransformToVelocity : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x68
 		};
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformToVelocity, m_TransformInput) == 0x1C0, "m_TransformInput in C_OP_RemapTransformToVelocity should be at offset 0x1C0");

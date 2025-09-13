@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysThruster : public CS2::server::CPhysForce {
 		public:
-			public:
 			GlobalTypes::Vector m_localOrigin; // 0x550 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};

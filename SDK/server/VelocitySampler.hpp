@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class VelocitySampler  {
 		public:
-			public:
 			GlobalTypes::Vector m_prevSample; // 0x0 | Schema_Atomic | Size: 0xc
 			entity2::GameTime_t m_fPrevSampleTime; // 0xc | Schema_DeclaredClass | Size: 0x4
 			float32 m_fIdealSampleRate; // 0x10 | Schema_Builtin | Size: 0x4

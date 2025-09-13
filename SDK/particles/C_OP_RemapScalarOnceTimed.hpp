@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapScalarOnceTimed : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			bool m_bProportional; // 0x1c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4

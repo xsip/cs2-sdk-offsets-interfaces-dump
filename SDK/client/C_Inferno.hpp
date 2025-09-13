@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_Inferno : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x40);
 			client::ParticleIndex_t m_nfxFireDamageEffect; // 0xf00 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);

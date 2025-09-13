@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class FollowAttachmentData  {
 		public:
-			public:
 			int32_t m_boneIndex; // 0x0 | Schema_Builtin | Size: 0x4
 			modellib::AttachmentHandle_t m_attachmentHandle; // 0x4 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3); // End padding

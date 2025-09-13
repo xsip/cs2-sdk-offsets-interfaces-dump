@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvCombinedLightProbeVolume : public CS2::server::CBaseEntity {
 		public:
-			public:
 			S2_PAD(0x1078);
 			GlobalTypes::Color m_Entity_Color; // 0x1568 | Schema_Atomic | Size: 0x4
 			float32 m_Entity_flBrightness; // 0x156c | Schema_Builtin | Size: 0x4

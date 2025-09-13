@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_FireCrackerBlast : public CS2::client::C_Inferno {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_FireCrackerBlast) == 0x84D0, "C_FireCrackerBlast size should be 0x84D0");
 	}

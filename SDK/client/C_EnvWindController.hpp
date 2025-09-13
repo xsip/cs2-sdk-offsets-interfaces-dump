@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_EnvWindController : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			client::C_EnvWindShared m_EnvWindShared; // 0x5f8 | Schema_DeclaredClass | Size: 0xf8
 			float32 m_fDirectionVariation; // 0x6f0 | Schema_Builtin | Size: 0x4
 			float32 m_fSpeedVariation; // 0x6f4 | Schema_Builtin | Size: 0x4

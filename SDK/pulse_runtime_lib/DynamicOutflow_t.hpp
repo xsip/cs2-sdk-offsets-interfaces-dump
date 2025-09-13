@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class DynamicOutflow_t  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_OutflowID; // 0x0 | Schema_Atomic | Size: 0x8
 			pulse_runtime_lib::CPulse_OutflowConnection m_Connection; // 0x8 | Schema_DeclaredClass | Size: 0x48
 		};

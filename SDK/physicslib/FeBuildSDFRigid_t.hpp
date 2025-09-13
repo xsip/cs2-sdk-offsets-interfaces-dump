@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeBuildSDFRigid_t : public CS2::physicslib::FeSDFRigid_t {
 		public:
-			public:
 			int32_t m_nPriority; // 0x50 | Schema_Builtin | Size: 0x4
 			uint32_t m_nVertexMapHash; // 0x54 | Schema_Builtin | Size: 0x4
 			uint32_t m_nAntitunnelGroupBits; // 0x58 | Schema_Builtin | Size: 0x4

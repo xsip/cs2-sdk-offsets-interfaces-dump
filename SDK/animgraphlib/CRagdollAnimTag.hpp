@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CRagdollAnimTag : public CS2::animgraphlib::CAnimTagBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			GlobalTypes::CGlobalSymbol m_profileName; // 0x58 | Schema_Atomic | Size: 0x8
 		};

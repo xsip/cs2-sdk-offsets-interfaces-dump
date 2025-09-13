@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class AttachedModelData_t  {
 		public:
-			public:
 			int32_t m_iModelDisplayFlags; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::AttachedModelData_t, m_iModelDisplayFlags) == 0x0, "m_iModelDisplayFlags in C_EconEntity::AttachedModelData_t should be at offset 0x0");

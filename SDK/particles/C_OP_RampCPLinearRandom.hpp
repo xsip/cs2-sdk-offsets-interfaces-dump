@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RampCPLinearRandom : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			public:
 			int32_t m_nOutControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecRateMin; // 0x1cc | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecRateMax; // 0x1d8 | Schema_Atomic | Size: 0xc

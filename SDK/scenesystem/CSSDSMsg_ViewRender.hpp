@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_ViewRender  {
 		public:
-			public:
 			scenesystem::SceneViewId_t m_viewId; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			GlobalTypes::CUtlString m_ViewName; // 0x10 | Schema_Atomic | Size: 0x8
 		};

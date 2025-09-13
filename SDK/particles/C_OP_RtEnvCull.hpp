@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RtEnvCull : public CS2::particles::CParticleFunctionOperator {
 		public:
-			public:
 			GlobalTypes::Vector m_vecTestDir; // 0x1c0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecTestNormal; // 0x1cc | Schema_Atomic | Size: 0xc
 			bool m_bCullOnMiss; // 0x1d8 | Schema_Builtin | Size: 0x1

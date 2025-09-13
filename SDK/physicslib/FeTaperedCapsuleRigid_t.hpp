@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeTaperedCapsuleRigid_t  {
 		public:
-			public:
 			GlobalTypes::fltx4 vSphere[2]; // 0x0 | Schema_FixedArray | Size: 0x20
 			uint16_t nNode; // 0x20 | Schema_Builtin | Size: 0x2
 			uint16_t nCollisionMask; // 0x22 | Schema_Builtin | Size: 0x2

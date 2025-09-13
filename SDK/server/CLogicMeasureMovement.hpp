@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CLogicMeasureMovement : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_strMeasureTarget; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_strMeasureReference; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_strTargetReference; // 0x500 | Schema_Atomic | Size: 0x8

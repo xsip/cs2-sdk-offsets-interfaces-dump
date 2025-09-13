@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_ItemDogtags : public CS2::client::C_Item {
 		public:
-			public:
 			// client::CHandle< client::C_CSPlayerPawn > m_OwningPlayer; // 0x19f0 | Schema_Atomic | Size: 0x4
 			char  m_OwningPlayer[0x4]; // 0x19f0 | Schema_Atomic | Size: 0x4
 			// client::CHandle< client::C_CSPlayerPawn > m_KillingPlayer; // 0x19f4 | Schema_Atomic | Size: 0x4

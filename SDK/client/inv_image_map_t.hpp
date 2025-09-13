@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class inv_image_map_t  {
 		public:
-			public:
 			GlobalTypes::CUtlString map_name; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 map_rotation; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

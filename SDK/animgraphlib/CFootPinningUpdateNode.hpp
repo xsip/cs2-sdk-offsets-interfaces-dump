@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFootPinningUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x8);
 			animgraphlib::FootPinningPoseOpFixedData_t m_poseOpFixedData; // 0x78 | Schema_DeclaredClass | Size: 0x30
 			animgraphlib::FootPinningTimingSource m_eTimingSource; // 0xa8 | Schema_DeclaredEnum | Size: 0x4

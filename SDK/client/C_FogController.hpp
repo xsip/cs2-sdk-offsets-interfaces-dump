@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_FogController : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			client::fogparams_t m_fog; // 0x5f8 | Schema_DeclaredClass | Size: 0x68
 			bool m_bUseAngles; // 0x660 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

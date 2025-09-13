@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CAnimFoot  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_vBallOffset; // 0x8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vHeelOffset; // 0x14 | Schema_Atomic | Size: 0xc

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class LookAtBone_t  {
 		public:
-			public:
 			int32_t m_index; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_weight; // 0x4 | Schema_Builtin | Size: 0x4
 		};

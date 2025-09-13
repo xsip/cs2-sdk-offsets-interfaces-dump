@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSoftParent_t  {
 		public:
-			public:
 			int32_t nParent; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 flAlpha; // 0x4 | Schema_Builtin | Size: 0x4
 		};

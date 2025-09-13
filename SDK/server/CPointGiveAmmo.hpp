@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointGiveAmmo : public CS2::server::CPointEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_pActivator; // 0x4f0 | Schema_Atomic | Size: 0x4
 			char  m_pActivator[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding

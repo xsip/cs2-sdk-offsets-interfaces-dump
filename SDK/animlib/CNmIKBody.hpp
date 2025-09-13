@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animlib {
 		class CNmIKBody  {
 		public:
-			public:
 			float32 m_flMass; // 0x0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vLocalMassCenter; // 0x4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vRadius; // 0x10 | Schema_Atomic | Size: 0xc

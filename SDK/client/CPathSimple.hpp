@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CPathSimple : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			client::CPathQueryComponent m_CPathQueryComponent; // 0x600 | Schema_DeclaredClass | Size: 0xa0
 			S2_PAD(0x50);

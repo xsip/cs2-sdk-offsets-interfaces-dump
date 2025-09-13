@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CAnimBoneDifference  {
 		public:
-			public:
 			GlobalTypes::CBufferString m_name; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CBufferString m_parent; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Vector m_posError; // 0x20 | Schema_Atomic | Size: 0xc

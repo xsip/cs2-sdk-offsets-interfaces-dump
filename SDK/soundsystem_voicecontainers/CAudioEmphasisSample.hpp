@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CAudioEmphasisSample  {
 		public:
-			public:
 			float32 m_flTime; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flValue; // 0x4 | Schema_Builtin | Size: 0x4
 		};

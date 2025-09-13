@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class Relationship_t  {
 		public:
-			public:
 			client::Disposition_t disposition; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			int32_t priority; // 0x4 | Schema_Builtin | Size: 0x4
 		};

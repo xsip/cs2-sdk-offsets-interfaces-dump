@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixVocoderDesc_t  {
 		public:
-			public:
 			int32_t m_nBandCount; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flBandwidth; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_fldBModGain; // 0x8 | Schema_Builtin | Size: 0x4

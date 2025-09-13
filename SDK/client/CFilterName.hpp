@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class CFilterName : public CS2::client::CBaseFilter {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x650 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CFilterName, m_iFilterName) == 0x650, "m_iFilterName in CFilterName should be at offset 0x650");

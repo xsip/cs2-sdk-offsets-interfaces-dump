@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CTestDomainDerived_Cursor : public CS2::pulse_runtime_lib::CPulseExecCursor {
 		public:
-			public:
 			int32_t m_nCursorValueA; // 0xd0 | Schema_Builtin | Size: 0x4
 			int32_t m_nCursorValueB; // 0xd4 | Schema_Builtin | Size: 0x4
 		};

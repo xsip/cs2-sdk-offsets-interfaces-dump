@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CEmitTagActionUpdater : public CS2::animgraphlib::CAnimActionUpdater {
 		public:
-			public:
 			int32_t m_nTagIndex; // 0x18 | Schema_Builtin | Size: 0x4
 			bool m_bIsZeroDuration; // 0x1c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding

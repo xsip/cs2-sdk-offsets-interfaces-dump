@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnVertex_t  {
 		public:
-			public:
 			uint8_t m_nEdge; // 0x0 | Schema_Builtin | Size: 0x1
 		};
 		static_assert(offsetof(CS2::physicslib::RnVertex_t, m_nEdge) == 0x0, "m_nEdge in RnVertex_t should be at offset 0x0");

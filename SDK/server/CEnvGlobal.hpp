@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvGlobal : public CS2::server::CLogicalEntity {
 		public:
-			public:
 			// GlobalTypes::CEntityOutputTemplate< int32 > m_outCounter; // 0x4f0 | Schema_Atomic | Size: 0x28
 			char  m_outCounter[0x28]; // 0x4f0 | Schema_Atomic | Size: 0x28
 			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x518 | Schema_Atomic | Size: 0x8

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_AutoaimServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPlayer_AutoaimServices) == 0x40, "CPlayer_AutoaimServices size should be 0x40");
 	}

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_LightOrthoEntity : public CS2::client::C_LightEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_LightOrthoEntity) == 0xEC8, "C_LightOrthoEntity size should be 0xEC8");
 	}

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixPlateverbDesc_t  {
 		public:
-			public:
 			float32 m_flPrefilter; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flInputDiffusion1; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flInputDiffusion2; // 0x8 | Schema_Builtin | Size: 0x4

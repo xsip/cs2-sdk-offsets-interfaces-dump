@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace worldrenderer {
 		class World_t  {
 		public:
-			public:
 			worldrenderer::WorldBuilderParams_t m_builderParams; // 0x0 | Schema_DeclaredClass | Size: 0x60
 			// GlobalTypes::CUtlVector< worldrenderer::NodeData_t > m_worldNodes; // 0x60 | Schema_Atomic | Size: 0x18
 			char  m_worldNodes[0x18]; // 0x60 | Schema_Atomic | Size: 0x18

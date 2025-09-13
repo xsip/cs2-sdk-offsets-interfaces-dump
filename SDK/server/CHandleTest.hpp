@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CHandleTest : public CS2::server::CBaseEntity {
 		public:
-			public:
 			// server::CHandle< server::CBaseEntity > m_Handle; // 0x4f0 | Schema_Atomic | Size: 0x4
 			char  m_Handle[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			bool m_bSendHandle; // 0x4f4 | Schema_Builtin | Size: 0x1

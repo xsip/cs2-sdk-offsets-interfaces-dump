@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_TerroristWingmanIntroCamera : public CS2::client::C_CSGO_TeamPreviewCamera {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_CSGO_TerroristWingmanIntroCamera) == 0x688, "C_CSGO_TerroristWingmanIntroCamera size should be 0x688");
 	}

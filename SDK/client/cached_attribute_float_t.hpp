@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class cached_attribute_float_t  {
 		public:
-			public:
 			float32 flIn; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge iAttribHook; // 0x8 | Schema_Atomic | Size: 0x8

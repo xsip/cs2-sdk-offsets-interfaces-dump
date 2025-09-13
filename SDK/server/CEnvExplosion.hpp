@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvExplosion : public CS2::server::CModelPointEntity {
 		public:
-			public:
 			int32_t m_iMagnitude; // 0x7e8 | Schema_Builtin | Size: 0x4
 			float32 m_flPlayerDamage; // 0x7ec | Schema_Builtin | Size: 0x4
 			int32_t m_iRadiusOverride; // 0x7f0 | Schema_Builtin | Size: 0x4

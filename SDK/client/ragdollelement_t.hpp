@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class ragdollelement_t  {
 		public:
-			public:
 			GlobalTypes::Vector originParentSpace; // 0x0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x14);
 			int32_t parentIndex; // 0x20 | Schema_Builtin | Size: 0x4

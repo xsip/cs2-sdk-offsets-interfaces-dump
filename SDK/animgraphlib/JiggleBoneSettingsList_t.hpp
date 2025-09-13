@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class JiggleBoneSettingsList_t  {
 		public:
-			public:
 			// GlobalTypes::CUtlVector< animgraphlib::JiggleBoneSettings_t > m_boneSettings; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_boneSettings[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};

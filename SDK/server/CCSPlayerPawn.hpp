@@ -29,7 +29,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayerPawn : public CS2::server::CCSPlayerPawnBase {
 		public:
-			public:
 			S2_PAD(0x8);
 			server::CCSPlayer_BulletServices* m_pBulletServices; // 0xec8 | Schema_Ptr | Size: 0x8
 			server::CCSPlayer_HostageServices* m_pHostageServices; // 0xed0 | Schema_Ptr | Size: 0x8

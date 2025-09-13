@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_Item_Healthshot : public CS2::client::C_WeaponBaseItem {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::client::C_Item_Healthshot) == 0x1E20, "C_Item_Healthshot size should be 0x1E20");
 	}

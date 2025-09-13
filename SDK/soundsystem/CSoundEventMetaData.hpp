@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSoundEventMetaData  {
 		public:
-			public:
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVMixListResource > m_soundEventVMix; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_soundEventVMix[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 		};

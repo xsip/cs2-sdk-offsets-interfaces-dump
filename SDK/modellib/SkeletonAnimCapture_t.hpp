@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class SkeletonAnimCapture_t  {
 		public:
-			public:
 			GlobalTypes::CEntityIndex m_nEntIndex; // 0x0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CEntityIndex m_nEntParent; // 0x4 | Schema_Atomic | Size: 0x4
 			// GlobalTypes::CUtlVector< GlobalTypes::CEntityIndex > m_ImportedCollision; // 0x8 | Schema_Atomic | Size: 0x18

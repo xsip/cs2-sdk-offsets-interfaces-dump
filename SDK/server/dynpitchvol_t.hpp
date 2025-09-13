@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class dynpitchvol_t : public CS2::server::dynpitchvol_base_t {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::dynpitchvol_t) == 0x64, "dynpitchvol_t size should be 0x64");
 	}

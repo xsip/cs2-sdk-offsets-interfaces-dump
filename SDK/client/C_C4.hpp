@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace client {
 		class C_C4 : public CS2::client::C_CSWeaponBase {
 		public:
-			public:
 			client::ParticleIndex_t m_activeLightParticleIndex; // 0x1e10 | Schema_DeclaredClass | Size: 0x4
 			client::C4LightEffect_t m_eActiveLightEffect; // 0x1e14 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bStartedArming; // 0x1e18 | Schema_Builtin | Size: 0x1

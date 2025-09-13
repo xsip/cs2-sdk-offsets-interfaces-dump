@@ -32,7 +32,6 @@ namespace CS2 {
 	namespace client {
 		class C_CSPlayerPawn : public CS2::client::C_CSPlayerPawnBase {
 		public:
-			public:
 			S2_PAD(0x10);
 			client::CCSPlayer_BulletServices* m_pBulletServices; // 0x1688 | Schema_Ptr | Size: 0x8
 			client::CCSPlayer_HostageServices* m_pHostageServices; // 0x1690 | Schema_Ptr | Size: 0x8

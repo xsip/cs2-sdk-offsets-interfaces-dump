@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CWorld : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CWorld) == 0x7E8, "CWorld size should be 0x7E8");
 	}

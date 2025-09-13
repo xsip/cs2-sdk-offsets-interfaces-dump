@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CFogVolume : public CS2::server::CServerOnlyModelEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_fogName; // 0x7e8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_postProcessName; // 0x7f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_colorCorrectionName; // 0x7f8 | Schema_Atomic | Size: 0x8

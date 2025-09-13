@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class MotionDBIndex  {
 		public:
-			public:
 			uint32_t m_nIndex; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::animgraphlib::MotionDBIndex, m_nIndex) == 0x0, "m_nIndex in MotionDBIndex should be at offset 0x0");

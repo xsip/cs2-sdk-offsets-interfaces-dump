@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class CPulseGraphInstance_TestDomain : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bIsRunningUnitTests; // 0x118 | Schema_Builtin | Size: 0x1
 			bool m_bExplicitTimeStepping; // 0x119 | Schema_Builtin | Size: 0x1

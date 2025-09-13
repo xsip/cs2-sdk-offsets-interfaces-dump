@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace particles {
 		class CGeneralRandomRotation : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flDegrees; // 0x1cc | Schema_Builtin | Size: 0x4
 			float32 m_flDegreesMin; // 0x1d0 | Schema_Builtin | Size: 0x4

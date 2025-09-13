@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace server {
 		class CHintMessage  {
 		public:
-			public:
 			char* m_hintString; // 0x0 | Schema_Ptr | Size: 0x8
 			// GlobalTypes::CUtlVector< char >* m_args; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_args[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace client {
 		class SoundeventPathCornerPairNetworked_t  {
 		public:
-			public:
 			GlobalTypes::Vector vP1; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector vP2; // 0xc | Schema_Atomic | Size: 0xc
 			float32 flPathLengthSqr; // 0x18 | Schema_Builtin | Size: 0x4

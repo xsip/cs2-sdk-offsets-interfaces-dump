@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CAttachment  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_influenceNames[3]; // 0x8 | Schema_FixedArray | Size: 0x18
 			GlobalTypes::Quaternion m_vInfluenceRotations[3]; // 0x20 | Schema_FixedArray | Size: 0x30

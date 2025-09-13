@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace modellib {
 		class CMorphConstraint : public CS2::modellib::CBaseConstraint {
 		public:
-			public:
 			GlobalTypes::CUtlString m_sTargetMorph; // 0x60 | Schema_Atomic | Size: 0x8
 			int32_t m_nSlaveChannel; // 0x68 | Schema_Builtin | Size: 0x4
 			float32 m_flMin; // 0x6c | Schema_Builtin | Size: 0x4

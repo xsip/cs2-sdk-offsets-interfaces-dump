@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSphereRigid_t  {
 		public:
-			public:
 			GlobalTypes::fltx4 vSphere; // 0x0 | Schema_Atomic | Size: 0x10
 			uint16_t nNode; // 0x10 | Schema_Builtin | Size: 0x2
 			uint16_t nCollisionMask; // 0x12 | Schema_Builtin | Size: 0x2

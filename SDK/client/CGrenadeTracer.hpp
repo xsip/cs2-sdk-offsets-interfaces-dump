@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CGrenadeTracer : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			float32 m_flTracerDuration; // 0xed8 | Schema_Builtin | Size: 0x4
 			client::GrenadeType_t m_nType; // 0xedc | Schema_DeclaredEnum | Size: 0x4

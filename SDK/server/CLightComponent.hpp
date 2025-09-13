@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace server {
 		class CLightComponent : public CS2::entity2::CEntityComponent {
 		public:
-			public:
 			S2_PAD(0x28);
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x30 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x15);

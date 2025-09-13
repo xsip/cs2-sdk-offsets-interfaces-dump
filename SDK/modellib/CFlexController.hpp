@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class CFlexController  {
 		public:
-			public:
 			GlobalTypes::CUtlString m_szName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_szType; // 0x8 | Schema_Atomic | Size: 0x8
 			float32 min; // 0x10 | Schema_Builtin | Size: 0x4

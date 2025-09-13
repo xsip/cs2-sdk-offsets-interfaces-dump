@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_InvokeBinding  {
 		public:
-			public:
 			pulse_runtime_lib::PulseRegisterMap_t m_RegisterMap; // 0x0 | Schema_DeclaredClass | Size: 0x30
 			GlobalTypes::PulseSymbol_t m_FuncName; // 0x30 | Schema_Atomic | Size: 0x10
 			pulse_runtime_lib::PulseRuntimeCellIndex_t m_nCellIndex; // 0x40 | Schema_DeclaredClass | Size: 0x4

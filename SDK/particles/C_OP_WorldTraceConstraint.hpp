@@ -17,7 +17,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_WorldTraceConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			public:
 			int32_t m_nCP; // 0x1c0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecCpOffset; // 0x1c4 | Schema_Atomic | Size: 0xc
 			particles::ParticleCollisionMode_t m_nCollisionMode; // 0x1d0 | Schema_DeclaredEnum | Size: 0x4

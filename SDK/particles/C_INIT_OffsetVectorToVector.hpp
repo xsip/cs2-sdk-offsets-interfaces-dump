@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_OffsetVectorToVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			public:
 			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1cc | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vecOutputMin; // 0x1d0 | Schema_Atomic | Size: 0xc

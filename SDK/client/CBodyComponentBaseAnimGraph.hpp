@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CBodyComponentBaseAnimGraph : public CS2::client::CBodyComponentSkeletonInstance {
 		public:
-			public:
 			client::CBaseAnimGraphController m_animationController; // 0x5b0 | Schema_DeclaredClass | Size: 0x18e0
 		};
 		static_assert(offsetof(CS2::client::CBodyComponentBaseAnimGraph, m_animationController) == 0x5B0, "m_animationController in CBodyComponentBaseAnimGraph should be at offset 0x5B0");

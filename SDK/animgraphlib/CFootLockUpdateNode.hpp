@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CFootLockUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
-			public:
 			animgraphlib::FootLockPoseOpFixedSettings m_opFixedSettings; // 0x70 | Schema_DeclaredClass | Size: 0x68
 			S2_PAD(0x8);
 			// GlobalTypes::CUtlVector< animgraphlib::FootFixedSettings > m_footSettings; // 0xe0 | Schema_Atomic | Size: 0x18

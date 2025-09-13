@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace animlib {
 		class NmBoneMaskSetDefinition_t  {
 		public:
-			public:
 			GlobalTypes::CGlobalSymbol m_ID; // 0x0 | Schema_Atomic | Size: 0x8
 			animlib::CNmBoneWeightList m_primaryWeightList; // 0x8 | Schema_DeclaredClass | Size: 0x110
 			// GlobalTypes::CUtlLeanVector< animlib::CNmBoneWeightList > m_secondaryWeightLists; // 0x118 | Schema_Atomic | Size: 0x10

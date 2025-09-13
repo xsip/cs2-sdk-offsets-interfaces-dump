@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class RnSoftbodyParticle_t  {
 		public:
-			public:
 			float32 m_flMassInv; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::physicslib::RnSoftbodyParticle_t, m_flMassInv) == 0x0, "m_flMassInv in RnSoftbodyParticle_t should be at offset 0x0");

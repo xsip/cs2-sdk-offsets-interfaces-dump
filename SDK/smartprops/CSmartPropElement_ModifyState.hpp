@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_ModifyState : public CS2::smartprops::CSmartPropElement {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_ModifyState) == 0x88, "CSmartPropElement_ModifyState size should be 0x88");
 	}

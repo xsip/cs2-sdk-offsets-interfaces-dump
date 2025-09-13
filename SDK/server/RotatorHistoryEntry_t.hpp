@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class RotatorHistoryEntry_t  {
 		public:
-			public:
 			GlobalTypes::Quaternion qInvChange; // 0x0 | Schema_Atomic | Size: 0x10
 			entity2::GameTime_t flTimeRotationStart; // 0x10 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0xc); // End padding

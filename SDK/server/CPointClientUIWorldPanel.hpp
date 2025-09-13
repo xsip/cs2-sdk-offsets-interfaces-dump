@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPointClientUIWorldPanel : public CS2::server::CBaseClientUIEntity {
 		public:
-			public:
 			bool m_bIgnoreInput; // 0x998 | Schema_Builtin | Size: 0x1
 			bool m_bLit; // 0x999 | Schema_Builtin | Size: 0x1
 			bool m_bFollowPlayerAcrossTeleport; // 0x99a | Schema_Builtin | Size: 0x1

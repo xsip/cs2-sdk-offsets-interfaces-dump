@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CCSPlace : public CS2::server::CServerOnlyModelEntity {
 		public:
-			public:
 			S2_PAD(0x18);
 			GlobalTypes::CUtlSymbolLarge m_name; // 0x800 | Schema_Atomic | Size: 0x8
 		};

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CPhysHingeAlias_phys_hinge_local : public CS2::server::CPhysHinge {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::server::CPhysHingeAlias_phys_hinge_local) == 0x710, "CPhysHingeAlias_phys_hinge_local size should be 0x710");
 	}

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class CBaseAnimGraph : public CS2::client::C_BaseModelEntity {
 		public:
-			public:
 			S2_PAD(0x80);
 			bool m_bInitiallyPopulateInterpHistory; // 0xf40 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);

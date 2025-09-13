@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_Knife : public CS2::client::C_CSWeaponBase {
 		public:
-			public:
 			bool m_bFirstAttack; // 0x1e10 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};

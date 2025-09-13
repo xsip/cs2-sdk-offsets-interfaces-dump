@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeTreeChildren_t  {
 		public:
-			public:
 			uint16_t nChild[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 		};
 		static_assert(offsetof(CS2::physicslib::FeTreeChildren_t, nChild) == 0x0, "nChild in FeTreeChildren_t should be at offset 0x0");

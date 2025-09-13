@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace physicslib {
 		class FeWeightedNode_t  {
 		public:
-			public:
 			uint16_t nNode; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t nWeight; // 0x2 | Schema_Builtin | Size: 0x2
 		};

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class CSeqCmdLayer  {
 		public:
-			public:
 			int16_t m_cmd; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nLocalReference; // 0x2 | Schema_Builtin | Size: 0x2
 			int16_t m_nLocalBonemask; // 0x4 | Schema_Builtin | Size: 0x2

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace client {
 		class C_PathParticleRope : public CS2::client::C_BaseEntity {
 		public:
-			public:
 			S2_PAD(0x8);
 			bool m_bStartActive; // 0x600 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace client {
 		class C_LocalTempEntity : public CS2::client::CBaseAnimGraph {
 		public:
-			public:
 			int32_t flags; // 0x1168 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t die; // 0x116c | Schema_DeclaredClass | Size: 0x4
 			float32 m_flFrameMax; // 0x1170 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvHudHint : public CS2::server::CPointEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x4f0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CEnvHudHint, m_iszMessage) == 0x4F0, "m_iszMessage in CEnvHudHint should be at offset 0x4F0");

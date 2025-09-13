@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderClothForce : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			public:
 		};
 		static_assert(sizeof(CS2::particles::C_OP_RenderClothForce) == 0x210, "C_OP_RenderClothForce size should be 0x210");
 	}

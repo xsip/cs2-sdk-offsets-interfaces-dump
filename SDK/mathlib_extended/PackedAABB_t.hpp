@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace mathlib_extended {
 		class PackedAABB_t  {
 		public:
-			public:
 			uint32_t m_nPackedMin; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nPackedMax; // 0x4 | Schema_Builtin | Size: 0x4
 		};

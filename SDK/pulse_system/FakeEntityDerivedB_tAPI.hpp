@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace pulse_system {
 		class FakeEntityDerivedB_tAPI  {
 		public:
-			public:
 			S2_PAD(0x8);
 		};
 		static_assert(sizeof(CS2::pulse_system::FakeEntityDerivedB_tAPI) == 0x8, "FakeEntityDerivedB_tAPI size should be 0x8");

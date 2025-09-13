@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace animationsystem {
 		class HSequence  {
 		public:
-			public:
 			int32_t m_Value; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::animationsystem::HSequence, m_Value) == 0x0, "m_Value in HSequence should be at offset 0x0");

@@ -13,7 +13,6 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SetVariable : public CS2::smartprops::CSmartPropOperation {
 		public:
-			public:
 			GlobalTypes::CSmartPropAttributeVariableValue m_VariableValue; // 0x50 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetVariable, m_VariableValue) == 0x50, "m_VariableValue in CSmartPropOperation_SetVariable should be at offset 0x50");

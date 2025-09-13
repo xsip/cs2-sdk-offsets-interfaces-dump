@@ -20,7 +20,6 @@ namespace CS2 {
 	namespace server {
 		class CFuncMover : public CS2::server::CBaseModelEntity {
 		public:
-			public:
 			GlobalTypes::CUtlSymbolLarge m_iszPathName; // 0x7e8 | Schema_Atomic | Size: 0x8
 			// server::CHandle< server::CPathMover > m_hPathMover; // 0x7f0 | Schema_Atomic | Size: 0x4
 			char  m_hPathMover[0x4]; // 0x7f0 | Schema_Atomic | Size: 0x4

@@ -15,7 +15,6 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ExternalWindForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			public:
 			particleslib::CPerParticleVecInput m_vecSamplePosition; // 0x1d0 | Schema_DeclaredClass | Size: 0x678
 			particleslib::CPerParticleVecInput m_vecScale; // 0x848 | Schema_DeclaredClass | Size: 0x678
 			bool m_bSampleWind; // 0xec0 | Schema_Builtin | Size: 0x1

@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CSubtractUpdateNode : public CS2::animgraphlib::CBinaryUpdateNode {
 		public:
-			public:
 			S2_PAD(0x4);
 			animgraphlib::BinaryNodeChildOption m_footMotionTiming; // 0x94 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bApplyToFootMotion; // 0x98 | Schema_Builtin | Size: 0x1

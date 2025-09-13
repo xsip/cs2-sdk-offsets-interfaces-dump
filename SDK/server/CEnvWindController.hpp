@@ -14,7 +14,6 @@ namespace CS2 {
 	namespace server {
 		class CEnvWindController : public CS2::server::CBaseEntity {
 		public:
-			public:
 			server::CEnvWindShared m_EnvWindShared; // 0x4f0 | Schema_DeclaredClass | Size: 0x150
 			float32 m_fDirectionVariation; // 0x640 | Schema_Builtin | Size: 0x4
 			float32 m_fSpeedVariation; // 0x644 | Schema_Builtin | Size: 0x4

@@ -12,7 +12,6 @@ namespace CS2 {
 	namespace modellib {
 		class AnimNodeID  {
 		public:
-			public:
 			uint32_t m_id; // 0x0 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::modellib::AnimNodeID, m_id) == 0x0, "m_id in AnimNodeID should be at offset 0x0");
