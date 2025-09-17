@@ -14,37 +14,37 @@ namespace CS2 {
 	namespace server {
 		class CMomentaryRotButton : public CS2::server::CRotButton {
 		public:
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_Position; // 0x9b8 | Schema_Atomic | Size: 0x28
-			char  m_Position[0x28]; // 0x9b8 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_OnUnpressed; // 0x9e0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFullyOpen; // 0xa08 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFullyClosed; // 0xa30 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnReachedPosition; // 0xa58 | Schema_DeclaredClass | Size: 0x28
-			int32_t m_lastUsed; // 0xa80 | Schema_Builtin | Size: 0x4
-			GlobalTypes::QAngle m_start; // 0xa84 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_end; // 0xa90 | Schema_Atomic | Size: 0xc
-			float32 m_IdealYaw; // 0xa9c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_sNoise; // 0xaa0 | Schema_Atomic | Size: 0x8
-			bool m_bUpdateTarget; // 0xaa8 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CEntityOutputTemplate< float32 > m_Position; // 0x9c0 | Schema_Atomic | Size: 0x28
+			char  m_Position[0x28]; // 0x9c0 | Schema_Atomic | Size: 0x28
+			entity2::CEntityIOOutput m_OnUnpressed; // 0x9e8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnFullyOpen; // 0xa10 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnFullyClosed; // 0xa38 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnReachedPosition; // 0xa60 | Schema_DeclaredClass | Size: 0x28
+			int32_t m_lastUsed; // 0xa88 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_start; // 0xa8c | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_end; // 0xa98 | Schema_Atomic | Size: 0xc
+			float32 m_IdealYaw; // 0xaa4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_sNoise; // 0xaa8 | Schema_Atomic | Size: 0x8
+			bool m_bUpdateTarget; // 0xab0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_direction; // 0xaac | Schema_Builtin | Size: 0x4
-			float32 m_returnSpeed; // 0xab0 | Schema_Builtin | Size: 0x4
-			float32 m_flStartPosition; // 0xab4 | Schema_Builtin | Size: 0x4
+			int32_t m_direction; // 0xab4 | Schema_Builtin | Size: 0x4
+			float32 m_returnSpeed; // 0xab8 | Schema_Builtin | Size: 0x4
+			float32 m_flStartPosition; // 0xabc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_Position) == 0x9B8, "m_Position in CMomentaryRotButton should be at offset 0x9B8");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnUnpressed) == 0x9E0, "m_OnUnpressed in CMomentaryRotButton should be at offset 0x9E0");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnFullyOpen) == 0xA08, "m_OnFullyOpen in CMomentaryRotButton should be at offset 0xA08");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnFullyClosed) == 0xA30, "m_OnFullyClosed in CMomentaryRotButton should be at offset 0xA30");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnReachedPosition) == 0xA58, "m_OnReachedPosition in CMomentaryRotButton should be at offset 0xA58");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_lastUsed) == 0xA80, "m_lastUsed in CMomentaryRotButton should be at offset 0xA80");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_start) == 0xA84, "m_start in CMomentaryRotButton should be at offset 0xA84");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_end) == 0xA90, "m_end in CMomentaryRotButton should be at offset 0xA90");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_IdealYaw) == 0xA9C, "m_IdealYaw in CMomentaryRotButton should be at offset 0xA9C");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_sNoise) == 0xAA0, "m_sNoise in CMomentaryRotButton should be at offset 0xAA0");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_bUpdateTarget) == 0xAA8, "m_bUpdateTarget in CMomentaryRotButton should be at offset 0xAA8");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_direction) == 0xAAC, "m_direction in CMomentaryRotButton should be at offset 0xAAC");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_returnSpeed) == 0xAB0, "m_returnSpeed in CMomentaryRotButton should be at offset 0xAB0");
-		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_flStartPosition) == 0xAB4, "m_flStartPosition in CMomentaryRotButton should be at offset 0xAB4");
-		static_assert(sizeof(CS2::server::CMomentaryRotButton) == 0xAB8, "CMomentaryRotButton size should be 0xAB8");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_Position) == 0x9C0, "m_Position in CMomentaryRotButton should be at offset 0x9C0");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnUnpressed) == 0x9E8, "m_OnUnpressed in CMomentaryRotButton should be at offset 0x9E8");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnFullyOpen) == 0xA10, "m_OnFullyOpen in CMomentaryRotButton should be at offset 0xA10");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnFullyClosed) == 0xA38, "m_OnFullyClosed in CMomentaryRotButton should be at offset 0xA38");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnReachedPosition) == 0xA60, "m_OnReachedPosition in CMomentaryRotButton should be at offset 0xA60");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_lastUsed) == 0xA88, "m_lastUsed in CMomentaryRotButton should be at offset 0xA88");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_start) == 0xA8C, "m_start in CMomentaryRotButton should be at offset 0xA8C");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_end) == 0xA98, "m_end in CMomentaryRotButton should be at offset 0xA98");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_IdealYaw) == 0xAA4, "m_IdealYaw in CMomentaryRotButton should be at offset 0xAA4");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_sNoise) == 0xAA8, "m_sNoise in CMomentaryRotButton should be at offset 0xAA8");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_bUpdateTarget) == 0xAB0, "m_bUpdateTarget in CMomentaryRotButton should be at offset 0xAB0");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_direction) == 0xAB4, "m_direction in CMomentaryRotButton should be at offset 0xAB4");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_returnSpeed) == 0xAB8, "m_returnSpeed in CMomentaryRotButton should be at offset 0xAB8");
+		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_flStartPosition) == 0xABC, "m_flStartPosition in CMomentaryRotButton should be at offset 0xABC");
+		static_assert(sizeof(CS2::server::CMomentaryRotButton) == 0xAC0, "CMomentaryRotButton size should be 0xAC0");
 	}
 }

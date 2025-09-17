@@ -21,8 +21,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iUtility_Enemies = 0x88; // int32_t m_iUtility_Enemies; |  0x88 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iFlash_Count = 0x8c; // int32_t m_iFlash_Count; |  0x8c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iFlash_Successes = 0x90; // int32_t m_iFlash_Successes; |  0x90 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nHealthPointsRemovedTotal = 0x94; // int32_t m_nHealthPointsRemovedTotal; |  0x94 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nHealthPointsDealtTotal = 0x98; // int32_t m_nHealthPointsDealtTotal; |  0x98 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHealthPointsRemovedTotal = 0x94; // float32 m_flHealthPointsRemovedTotal; |  0x94 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHealthPointsDealtTotal = 0x98; // float32 m_flHealthPointsDealtTotal; |  0x98 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nShotsFiredTotal = 0x9c; // int32_t m_nShotsFiredTotal; |  0x9c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nShotsOnTargetTotal = 0xa0; // int32_t m_nShotsOnTargetTotal; |  0xa0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_i1v1Count = 0xa4; // int32_t m_i1v1Count; |  0xa4 | Schema_Builtin | Size: 0x4

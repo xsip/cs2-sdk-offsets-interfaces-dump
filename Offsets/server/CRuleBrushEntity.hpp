@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7F0
+			// Class size: 0x7F8
 			namespace CRuleBrushEntity /*: public CS2::server::CRuleEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

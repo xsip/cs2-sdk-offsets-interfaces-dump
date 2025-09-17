@@ -24,8 +24,8 @@ namespace CS2 {
 			int32_t m_iUtility_Enemies; // 0x88 | Schema_Builtin | Size: 0x4
 			int32_t m_iFlash_Count; // 0x8c | Schema_Builtin | Size: 0x4
 			int32_t m_iFlash_Successes; // 0x90 | Schema_Builtin | Size: 0x4
-			int32_t m_nHealthPointsRemovedTotal; // 0x94 | Schema_Builtin | Size: 0x4
-			int32_t m_nHealthPointsDealtTotal; // 0x98 | Schema_Builtin | Size: 0x4
+			float32 m_flHealthPointsRemovedTotal; // 0x94 | Schema_Builtin | Size: 0x4
+			float32 m_flHealthPointsDealtTotal; // 0x98 | Schema_Builtin | Size: 0x4
 			int32_t m_nShotsFiredTotal; // 0x9c | Schema_Builtin | Size: 0x4
 			int32_t m_nShotsOnTargetTotal; // 0xa0 | Schema_Builtin | Size: 0x4
 			int32_t m_i1v1Count; // 0xa4 | Schema_Builtin | Size: 0x4
@@ -47,8 +47,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iUtility_Enemies) == 0x88, "m_iUtility_Enemies in CSMatchStats_t should be at offset 0x88");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iFlash_Count) == 0x8C, "m_iFlash_Count in CSMatchStats_t should be at offset 0x8C");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iFlash_Successes) == 0x90, "m_iFlash_Successes in CSMatchStats_t should be at offset 0x90");
-		static_assert(offsetof(CS2::server::CSMatchStats_t, m_nHealthPointsRemovedTotal) == 0x94, "m_nHealthPointsRemovedTotal in CSMatchStats_t should be at offset 0x94");
-		static_assert(offsetof(CS2::server::CSMatchStats_t, m_nHealthPointsDealtTotal) == 0x98, "m_nHealthPointsDealtTotal in CSMatchStats_t should be at offset 0x98");
+		static_assert(offsetof(CS2::server::CSMatchStats_t, m_flHealthPointsRemovedTotal) == 0x94, "m_flHealthPointsRemovedTotal in CSMatchStats_t should be at offset 0x94");
+		static_assert(offsetof(CS2::server::CSMatchStats_t, m_flHealthPointsDealtTotal) == 0x98, "m_flHealthPointsDealtTotal in CSMatchStats_t should be at offset 0x98");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_nShotsFiredTotal) == 0x9C, "m_nShotsFiredTotal in CSMatchStats_t should be at offset 0x9C");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_nShotsOnTargetTotal) == 0xA0, "m_nShotsOnTargetTotal in CSMatchStats_t should be at offset 0xA0");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_i1v1Count) == 0xA4, "m_i1v1Count in CSMatchStats_t should be at offset 0xA4");

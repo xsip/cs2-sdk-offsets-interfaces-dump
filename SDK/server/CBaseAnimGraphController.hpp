@@ -45,8 +45,9 @@ namespace CS2 {
 			// GlobalTypes::CNetworkUtlVectorBase< uint8 > m_serializedPoseRecipeAG2; // 0x598 | Schema_Atomic | Size: 0x18
 			char  m_serializedPoseRecipeAG2[0x18]; // 0x598 | Schema_Atomic | Size: 0x18
 			int32_t m_nSerializePoseRecipeSizeAG2; // 0x5b0 | Schema_Builtin | Size: 0x4
-			uint8_t m_nGraphCreationFlagsAG2; // 0x5b4 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x43);
+			int32_t m_nSerializePoseRecipeVersionAG2; // 0x5b4 | Schema_Builtin | Size: 0x4
+			uint8_t m_nGraphCreationFlagsAG2; // 0x5b8 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3f);
 			int32_t m_nServerGraphDefReloadCountAG2; // 0x5f8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
@@ -68,7 +69,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_bIsUsingAG2) == 0x590, "m_bIsUsingAG2 in CBaseAnimGraphController should be at offset 0x590");
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_serializedPoseRecipeAG2) == 0x598, "m_serializedPoseRecipeAG2 in CBaseAnimGraphController should be at offset 0x598");
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_nSerializePoseRecipeSizeAG2) == 0x5B0, "m_nSerializePoseRecipeSizeAG2 in CBaseAnimGraphController should be at offset 0x5B0");
-		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_nGraphCreationFlagsAG2) == 0x5B4, "m_nGraphCreationFlagsAG2 in CBaseAnimGraphController should be at offset 0x5B4");
+		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_nSerializePoseRecipeVersionAG2) == 0x5B4, "m_nSerializePoseRecipeVersionAG2 in CBaseAnimGraphController should be at offset 0x5B4");
+		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_nGraphCreationFlagsAG2) == 0x5B8, "m_nGraphCreationFlagsAG2 in CBaseAnimGraphController should be at offset 0x5B8");
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_nServerGraphDefReloadCountAG2) == 0x5F8, "m_nServerGraphDefReloadCountAG2 in CBaseAnimGraphController should be at offset 0x5F8");
 		static_assert(sizeof(CS2::server::CBaseAnimGraphController) == 0x600, "CBaseAnimGraphController size should be 0x600");
 	}

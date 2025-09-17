@@ -14,19 +14,19 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSetSoundeventParameterSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			int32_t m_nMaxCount; // 0x18 | Schema_Builtin | Size: 0x4
-			float32 m_flMinValue; // 0x1c | Schema_Builtin | Size: 0x4
-			float32 m_flMaxValue; // 0x20 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxCount; // 0x8 | Schema_Builtin | Size: 0x4
+			float32 m_flMinValue; // 0xc | Schema_Builtin | Size: 0x4
+			float32 m_flMaxValue; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_opvarName; // 0x28 | Schema_Atomic | Size: 0x8
-			soundsystem::SosActionSortType_t m_nSortType; // 0x30 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlString m_opvarName; // 0x18 | Schema_Atomic | Size: 0x8
+			soundsystem::SosActionSortType_t m_nSortType; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_nMaxCount) == 0x18, "m_nMaxCount in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x18");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_flMinValue) == 0x1C, "m_flMinValue in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x1C");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_flMaxValue) == 0x20, "m_flMaxValue in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x20");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_opvarName) == 0x28, "m_opvarName in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x28");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_nSortType) == 0x30, "m_nSortType in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x30");
-		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema) == 0x38, "CSosGroupActionSetSoundeventParameterSchema size should be 0x38");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_nMaxCount) == 0x8, "m_nMaxCount in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x8");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_flMinValue) == 0xC, "m_flMinValue in CSosGroupActionSetSoundeventParameterSchema should be at offset 0xC");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_flMaxValue) == 0x10, "m_flMaxValue in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x10");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_opvarName) == 0x18, "m_opvarName in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x18");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_nSortType) == 0x20, "m_nSortType in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x20");
+		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema) == 0x28, "CSosGroupActionSetSoundeventParameterSchema size should be 0x28");
 	}
 }

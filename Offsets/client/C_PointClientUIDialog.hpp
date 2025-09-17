@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEF8
+			// Class size: 0xF00
 			namespace C_PointClientUIDialog /*: public CS2::client::C_BaseClientUIEntity*/ {
-				constexpr std::ptrdiff_t m_hActivator = 0xef0; // client::CHandle< client::C_BaseEntity > m_hActivator; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bStartEnabled = 0xef4; // bool m_bStartEnabled; |  0xef4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hActivator = 0xef8; // client::CHandle< client::C_BaseEntity > m_hActivator; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bStartEnabled = 0xefc; // bool m_bStartEnabled; |  0xefc | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

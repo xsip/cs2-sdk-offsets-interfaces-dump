@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9E8
+			// Class size: 0x9F0
 			namespace CTriggerActiveWeaponDetect /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_OnTouchedActiveWeapon = 0x9b8; // entity2::CEntityIOOutput m_OnTouchedActiveWeapon; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_iszWeaponClassName = 0x9e0; // GlobalTypes::CUtlSymbolLarge m_iszWeaponClassName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnTouchedActiveWeapon = 0x9c0; // entity2::CEntityIOOutput m_OnTouchedActiveWeapon; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_iszWeaponClassName = 0x9e8; // GlobalTypes::CUtlSymbolLarge m_iszWeaponClassName; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

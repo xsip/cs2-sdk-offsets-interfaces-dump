@@ -20,7 +20,7 @@
 namespace CS2 {
 	namespace client {
 		class CRenderComponent;
-		class CDestructiblePartsSystemComponent;
+		class CDestructiblePartsComponent;
 	}
 }
 namespace CS2 {
@@ -30,7 +30,7 @@ namespace CS2 {
 			S2_PAD(0x4e8);
 			client::CRenderComponent* m_CRenderComponent; // 0xae0 | Schema_Ptr | Size: 0x8
 			client::CHitboxComponent m_CHitboxComponent; // 0xae8 | Schema_DeclaredClass | Size: 0x28
-			client::CDestructiblePartsSystemComponent* m_pDestructiblePartsSystemComponent; // 0xb10 | Schema_Ptr | Size: 0x8
+			client::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; // 0xb10 | Schema_Ptr | Size: 0x8
 			client::HitGroup_t m_LastHitGroup; // 0xb18 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; // 0xb20 | Schema_Atomic | Size: 0x8
@@ -79,7 +79,9 @@ namespace CS2 {
 			GlobalTypes::CClientAlphaProperty* m_pClientAlphaProperty; // 0xe78 | Schema_Ptr | Size: 0x8
 			GlobalTypes::Color m_ClientOverrideTint; // 0xe80 | Schema_Atomic | Size: 0x4
 			bool m_bUseClientOverrideTint; // 0xe84 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3b); // End padding
+			S2_PAD(0x3b);
+			uint32_t m_bvDisabledHitGroups[1]; // 0xec0 | Schema_FixedArray | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_CRenderComponent) == 0xAE0, "m_CRenderComponent in C_BaseModelEntity should be at offset 0xAE0");
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_CHitboxComponent) == 0xAE8, "m_CHitboxComponent in C_BaseModelEntity should be at offset 0xAE8");
@@ -119,6 +121,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_pClientAlphaProperty) == 0xE78, "m_pClientAlphaProperty in C_BaseModelEntity should be at offset 0xE78");
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_ClientOverrideTint) == 0xE80, "m_ClientOverrideTint in C_BaseModelEntity should be at offset 0xE80");
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bUseClientOverrideTint) == 0xE84, "m_bUseClientOverrideTint in C_BaseModelEntity should be at offset 0xE84");
-		static_assert(sizeof(CS2::client::C_BaseModelEntity) == 0xEC0, "C_BaseModelEntity size should be 0xEC0");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bvDisabledHitGroups) == 0xEC0, "m_bvDisabledHitGroups in C_BaseModelEntity should be at offset 0xEC0");
+		static_assert(sizeof(CS2::client::C_BaseModelEntity) == 0xEC8, "C_BaseModelEntity size should be 0xEC8");
 	}
 }

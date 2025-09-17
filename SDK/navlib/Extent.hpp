@@ -12,8 +12,8 @@ namespace CS2 {
 	namespace navlib {
 		class Extent  {
 		public:
-			GlobalTypes::Vector lo; // 0x0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector hi; // 0xc | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS lo; // 0x0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS hi; // 0xc | Schema_Atomic | Size: 0xc
 		};
 		static_assert(offsetof(CS2::navlib::Extent, lo) == 0x0, "lo in Extent should be at offset 0x0");
 		static_assert(offsetof(CS2::navlib::Extent, hi) == 0xC, "hi in Extent should be at offset 0xC");

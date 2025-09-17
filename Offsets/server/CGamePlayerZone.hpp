@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x890
+			// Class size: 0x898
 			namespace CGamePlayerZone /*: public CS2::server::CRuleBrushEntity*/ {
-				constexpr std::ptrdiff_t m_OnPlayerInZone = 0x7f0; // entity2::CEntityIOOutput m_OnPlayerInZone; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPlayerOutZone = 0x818; // entity2::CEntityIOOutput m_OnPlayerOutZone; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_PlayersInCount = 0x840; // GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersInCount; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_PlayersOutCount = 0x868; // GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersOutCount; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPlayerInZone = 0x7f8; // entity2::CEntityIOOutput m_OnPlayerInZone; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPlayerOutZone = 0x820; // entity2::CEntityIOOutput m_OnPlayerOutZone; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_PlayersInCount = 0x848; // GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersInCount; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_PlayersOutCount = 0x870; // GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersOutCount; |  Schema_Atomic | Size: 0x28
 			}
 		}
 	}

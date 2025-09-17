@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace scenesystem {
-			constexpr std::ptrdiff_t RenderingPipelines_001 = 0x61e9c0; 
-			constexpr std::ptrdiff_t SceneSystem_002 = 0x841820; 
-			constexpr std::ptrdiff_t SceneUtils_001 = 0x61f1f0; 
+			constexpr std::ptrdiff_t RenderingPipelines_001 = 0x615ad0; 
+			constexpr std::ptrdiff_t SceneSystem_002 = 0x837f40; 
+			constexpr std::ptrdiff_t SceneUtils_001 = 0x6163d0; 
 		}
 	}
 }

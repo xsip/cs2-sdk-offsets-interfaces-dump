@@ -15,36 +15,36 @@ namespace CS2 {
 		class CSmokeGrenadeProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
 			S2_PAD(0x28);
-			int32_t m_nSmokeEffectTickBegin; // 0xc48 | Schema_Builtin | Size: 0x4
-			bool m_bDidSmokeEffect; // 0xc4c | Schema_Builtin | Size: 0x1
+			int32_t m_nSmokeEffectTickBegin; // 0xc50 | Schema_Builtin | Size: 0x4
+			bool m_bDidSmokeEffect; // 0xc54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nRandomSeed; // 0xc50 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vSmokeColor; // 0xc54 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vSmokeDetonationPos; // 0xc60 | Schema_Atomic | Size: 0xc
+			int32_t m_nRandomSeed; // 0xc58 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vSmokeColor; // 0xc5c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vSmokeDetonationPos; // 0xc68 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			// GlobalTypes::CNetworkUtlVectorBase< uint8 > m_VoxelFrameData; // 0xc70 | Schema_Atomic | Size: 0x18
-			char  m_VoxelFrameData[0x18]; // 0xc70 | Schema_Atomic | Size: 0x18
-			int32_t m_nVoxelFrameDataSize; // 0xc88 | Schema_Builtin | Size: 0x4
-			int32_t m_nVoxelUpdate; // 0xc8c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLastBounce; // 0xc90 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_fllastSimulationTime; // 0xc94 | Schema_DeclaredClass | Size: 0x4
+			// GlobalTypes::CNetworkUtlVectorBase< uint8 > m_VoxelFrameData; // 0xc78 | Schema_Atomic | Size: 0x18
+			char  m_VoxelFrameData[0x18]; // 0xc78 | Schema_Atomic | Size: 0x18
+			int32_t m_nVoxelFrameDataSize; // 0xc90 | Schema_Builtin | Size: 0x4
+			int32_t m_nVoxelUpdate; // 0xc94 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastBounce; // 0xc98 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_fllastSimulationTime; // 0xc9c | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x2280);
-			bool m_bExplodeFromInferno; // 0x2f18 | Schema_Builtin | Size: 0x1
-			bool m_bDidGroundScorch; // 0x2f19 | Schema_Builtin | Size: 0x1
+			bool m_bExplodeFromInferno; // 0x2f20 | Schema_Builtin | Size: 0x1
+			bool m_bDidGroundScorch; // 0x2f21 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nSmokeEffectTickBegin) == 0xC48, "m_nSmokeEffectTickBegin in CSmokeGrenadeProjectile should be at offset 0xC48");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_bDidSmokeEffect) == 0xC4C, "m_bDidSmokeEffect in CSmokeGrenadeProjectile should be at offset 0xC4C");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nRandomSeed) == 0xC50, "m_nRandomSeed in CSmokeGrenadeProjectile should be at offset 0xC50");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_vSmokeColor) == 0xC54, "m_vSmokeColor in CSmokeGrenadeProjectile should be at offset 0xC54");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_vSmokeDetonationPos) == 0xC60, "m_vSmokeDetonationPos in CSmokeGrenadeProjectile should be at offset 0xC60");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_VoxelFrameData) == 0xC70, "m_VoxelFrameData in CSmokeGrenadeProjectile should be at offset 0xC70");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nVoxelFrameDataSize) == 0xC88, "m_nVoxelFrameDataSize in CSmokeGrenadeProjectile should be at offset 0xC88");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nVoxelUpdate) == 0xC8C, "m_nVoxelUpdate in CSmokeGrenadeProjectile should be at offset 0xC8C");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_flLastBounce) == 0xC90, "m_flLastBounce in CSmokeGrenadeProjectile should be at offset 0xC90");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_fllastSimulationTime) == 0xC94, "m_fllastSimulationTime in CSmokeGrenadeProjectile should be at offset 0xC94");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_bExplodeFromInferno) == 0x2F18, "m_bExplodeFromInferno in CSmokeGrenadeProjectile should be at offset 0x2F18");
-		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_bDidGroundScorch) == 0x2F19, "m_bDidGroundScorch in CSmokeGrenadeProjectile should be at offset 0x2F19");
-		static_assert(sizeof(CS2::server::CSmokeGrenadeProjectile) == 0x2F20, "CSmokeGrenadeProjectile size should be 0x2F20");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nSmokeEffectTickBegin) == 0xC50, "m_nSmokeEffectTickBegin in CSmokeGrenadeProjectile should be at offset 0xC50");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_bDidSmokeEffect) == 0xC54, "m_bDidSmokeEffect in CSmokeGrenadeProjectile should be at offset 0xC54");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nRandomSeed) == 0xC58, "m_nRandomSeed in CSmokeGrenadeProjectile should be at offset 0xC58");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_vSmokeColor) == 0xC5C, "m_vSmokeColor in CSmokeGrenadeProjectile should be at offset 0xC5C");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_vSmokeDetonationPos) == 0xC68, "m_vSmokeDetonationPos in CSmokeGrenadeProjectile should be at offset 0xC68");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_VoxelFrameData) == 0xC78, "m_VoxelFrameData in CSmokeGrenadeProjectile should be at offset 0xC78");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nVoxelFrameDataSize) == 0xC90, "m_nVoxelFrameDataSize in CSmokeGrenadeProjectile should be at offset 0xC90");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_nVoxelUpdate) == 0xC94, "m_nVoxelUpdate in CSmokeGrenadeProjectile should be at offset 0xC94");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_flLastBounce) == 0xC98, "m_flLastBounce in CSmokeGrenadeProjectile should be at offset 0xC98");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_fllastSimulationTime) == 0xC9C, "m_fllastSimulationTime in CSmokeGrenadeProjectile should be at offset 0xC9C");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_bExplodeFromInferno) == 0x2F20, "m_bExplodeFromInferno in CSmokeGrenadeProjectile should be at offset 0x2F20");
+		static_assert(offsetof(CS2::server::CSmokeGrenadeProjectile, m_bDidGroundScorch) == 0x2F21, "m_bDidGroundScorch in CSmokeGrenadeProjectile should be at offset 0x2F21");
+		static_assert(sizeof(CS2::server::CSmokeGrenadeProjectile) == 0x2F28, "CSmokeGrenadeProjectile size should be 0x2F28");
 	}
 }

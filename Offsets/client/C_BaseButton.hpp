@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xED0
+			// Class size: 0xED8
 			namespace C_BaseButton /*: public CS2::client::C_BaseToggle*/ {
-				constexpr std::ptrdiff_t m_glowEntity = 0xec0; // client::CHandle< client::C_BaseModelEntity > m_glowEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_usable = 0xec4; // bool m_usable; |  0xec4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_szDisplayText = 0xec8; // GlobalTypes::CUtlSymbolLarge m_szDisplayText; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_glowEntity = 0xec8; // client::CHandle< client::C_BaseModelEntity > m_glowEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_usable = 0xecc; // bool m_usable; |  0xecc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_szDisplayText = 0xed0; // GlobalTypes::CUtlSymbolLarge m_szDisplayText; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

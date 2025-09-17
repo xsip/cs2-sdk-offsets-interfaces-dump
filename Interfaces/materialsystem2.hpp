@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace materialsystem2 {
-			constexpr std::ptrdiff_t FontManager_001 = 0x144500; 
-			constexpr std::ptrdiff_t MaterialUtils_001 = 0x139280; 
-			constexpr std::ptrdiff_t PostProcessingSystem_001 = 0x139190; 
-			constexpr std::ptrdiff_t TextLayout_001 = 0x139210; 
-			constexpr std::ptrdiff_t VMaterialSystem2_001 = 0x143b70; 
+			constexpr std::ptrdiff_t FontManager_001 = 0x169fa0; 
+			constexpr std::ptrdiff_t MaterialUtils_001 = 0x152430; 
+			constexpr std::ptrdiff_t PostProcessingSystem_001 = 0x152340; 
+			constexpr std::ptrdiff_t TextLayout_001 = 0x1523c0; 
+			constexpr std::ptrdiff_t VMaterialSystem2_001 = 0x169600; 
 		}
 	}
 }

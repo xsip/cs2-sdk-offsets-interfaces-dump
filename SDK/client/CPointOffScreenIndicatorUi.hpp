@@ -13,16 +13,16 @@ namespace CS2 {
 	namespace client {
 		class CPointOffScreenIndicatorUi : public CS2::client::C_PointClientUIWorldPanel {
 		public:
-			bool m_bBeenEnabled; // 0x1120 | Schema_Builtin | Size: 0x1
-			bool m_bHide; // 0x1121 | Schema_Builtin | Size: 0x1
+			bool m_bBeenEnabled; // 0x1130 | Schema_Builtin | Size: 0x1
+			bool m_bHide; // 0x1131 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flSeenTargetTime; // 0x1124 | Schema_Builtin | Size: 0x4
-			client::C_PointClientUIWorldPanel* m_pTargetPanel; // 0x1128 | Schema_Ptr | Size: 0x8
+			float32 m_flSeenTargetTime; // 0x1134 | Schema_Builtin | Size: 0x4
+			client::C_PointClientUIWorldPanel* m_pTargetPanel; // 0x1138 | Schema_Ptr | Size: 0x8
 		};
-		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_bBeenEnabled) == 0x1120, "m_bBeenEnabled in CPointOffScreenIndicatorUi should be at offset 0x1120");
-		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_bHide) == 0x1121, "m_bHide in CPointOffScreenIndicatorUi should be at offset 0x1121");
-		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_flSeenTargetTime) == 0x1124, "m_flSeenTargetTime in CPointOffScreenIndicatorUi should be at offset 0x1124");
-		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_pTargetPanel) == 0x1128, "m_pTargetPanel in CPointOffScreenIndicatorUi should be at offset 0x1128");
-		static_assert(sizeof(CS2::client::CPointOffScreenIndicatorUi) == 0x1130, "CPointOffScreenIndicatorUi size should be 0x1130");
+		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_bBeenEnabled) == 0x1130, "m_bBeenEnabled in CPointOffScreenIndicatorUi should be at offset 0x1130");
+		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_bHide) == 0x1131, "m_bHide in CPointOffScreenIndicatorUi should be at offset 0x1131");
+		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_flSeenTargetTime) == 0x1134, "m_flSeenTargetTime in CPointOffScreenIndicatorUi should be at offset 0x1134");
+		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_pTargetPanel) == 0x1138, "m_pTargetPanel in CPointOffScreenIndicatorUi should be at offset 0x1138");
+		static_assert(sizeof(CS2::client::CPointOffScreenIndicatorUi) == 0x1140, "CPointOffScreenIndicatorUi size should be 0x1140");
 	}
 }

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x808
+			// Class size: 0x810
 			namespace CSpotlightEnd /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_flLightScale = 0x7e8; // float32 m_flLightScale; |  0x7e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Radius = 0x7ec; // float32 m_Radius; |  0x7ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vSpotlightDir = 0x7f0; // GlobalTypes::Vector m_vSpotlightDir; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vSpotlightOrg = 0x7fc; // GlobalTypes::Vector m_vSpotlightOrg; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flLightScale = 0x7f0; // float32 m_flLightScale; |  0x7f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Radius = 0x7f4; // float32 m_Radius; |  0x7f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vSpotlightDir = 0x7f8; // GlobalTypes::Vector m_vSpotlightDir; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vSpotlightOrg = 0x804; // GlobalTypes::Vector m_vSpotlightOrg; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}

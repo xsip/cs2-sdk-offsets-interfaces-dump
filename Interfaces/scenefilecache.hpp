@@ -8,8 +8,8 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace scenefilecache {
-			constexpr std::ptrdiff_t ResponseRulesCache001 = 0x7a190; 
-			constexpr std::ptrdiff_t SceneFileCache002 = 0x7a2e0; 
+			constexpr std::ptrdiff_t ResponseRulesCache001 = 0x76190; 
+			constexpr std::ptrdiff_t SceneFileCache002 = 0x762e0; 
 		}
 	}
 }

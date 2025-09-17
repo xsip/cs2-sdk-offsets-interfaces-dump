@@ -48,10 +48,13 @@ namespace CS2 {
 			bool m_bReverseOrder; // 0x3090 | Schema_Builtin | Size: 0x1
 			bool m_bClosedLoop; // 0x3091 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x3094 | Schema_DeclaredEnum | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nVectorFieldForOrientation; // 0x3098 | Schema_DeclaredClass | Size: 0x4
-			bool m_bDrawAsOpaque; // 0x309c | Schema_Builtin | Size: 0x1
-			bool m_bGenerateNormals; // 0x309d | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nSplitField; // 0x3094 | Schema_DeclaredClass | Size: 0x4
+			bool m_bSortBySegmentID; // 0x3098 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3);
+			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x309c | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nVectorFieldForOrientation; // 0x30a0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bDrawAsOpaque; // 0x30a4 | Schema_Builtin | Size: 0x1
+			bool m_bGenerateNormals; // 0x30a5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bEnableFadingAndClamping) == 0x2C18, "m_bEnableFadingAndClamping in C_OP_RenderRopes should be at offset 0x2C18");
@@ -80,10 +83,12 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScalarAttributeTextureCoordScale) == 0x308C, "m_flScalarAttributeTextureCoordScale in C_OP_RenderRopes should be at offset 0x308C");
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bReverseOrder) == 0x3090, "m_bReverseOrder in C_OP_RenderRopes should be at offset 0x3090");
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bClosedLoop) == 0x3091, "m_bClosedLoop in C_OP_RenderRopes should be at offset 0x3091");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nOrientationType) == 0x3094, "m_nOrientationType in C_OP_RenderRopes should be at offset 0x3094");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nVectorFieldForOrientation) == 0x3098, "m_nVectorFieldForOrientation in C_OP_RenderRopes should be at offset 0x3098");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bDrawAsOpaque) == 0x309C, "m_bDrawAsOpaque in C_OP_RenderRopes should be at offset 0x309C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bGenerateNormals) == 0x309D, "m_bGenerateNormals in C_OP_RenderRopes should be at offset 0x309D");
-		static_assert(sizeof(CS2::particles::C_OP_RenderRopes) == 0x30A0, "C_OP_RenderRopes size should be 0x30A0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nSplitField) == 0x3094, "m_nSplitField in C_OP_RenderRopes should be at offset 0x3094");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bSortBySegmentID) == 0x3098, "m_bSortBySegmentID in C_OP_RenderRopes should be at offset 0x3098");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nOrientationType) == 0x309C, "m_nOrientationType in C_OP_RenderRopes should be at offset 0x309C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nVectorFieldForOrientation) == 0x30A0, "m_nVectorFieldForOrientation in C_OP_RenderRopes should be at offset 0x30A0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bDrawAsOpaque) == 0x30A4, "m_bDrawAsOpaque in C_OP_RenderRopes should be at offset 0x30A4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bGenerateNormals) == 0x30A5, "m_bGenerateNormals in C_OP_RenderRopes should be at offset 0x30A5");
+		static_assert(sizeof(CS2::particles::C_OP_RenderRopes) == 0x30A8, "C_OP_RenderRopes size should be 0x30A8");
 	}
 }

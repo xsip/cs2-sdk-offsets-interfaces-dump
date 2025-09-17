@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA78
+			// Class size: 0xA80
 			namespace CWaterBullet /*: public CS2::server::CBaseAnimGraph*/ {
 				// NO SCHEMA DATA FOUND!
 			}

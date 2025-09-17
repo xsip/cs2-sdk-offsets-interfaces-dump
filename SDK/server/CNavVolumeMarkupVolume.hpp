@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x68);
 		};
-		static_assert(sizeof(CS2::server::CNavVolumeMarkupVolume) == 0xD8, "CNavVolumeMarkupVolume size should be 0xD8");
+		static_assert(sizeof(CS2::server::CNavVolumeMarkupVolume) == 0xE0, "CNavVolumeMarkupVolume size should be 0xE0");
 	}
 }

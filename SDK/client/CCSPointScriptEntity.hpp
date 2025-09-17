@@ -13,8 +13,8 @@ namespace CS2 {
 	namespace client {
 		class CCSPointScriptEntity : public CS2::client::C_BaseEntity {
 		public:
-			S2_PAD(0x8);
+			S2_PAD(0xf0);
 		};
-		static_assert(sizeof(CS2::client::CCSPointScriptEntity) == 0x600, "CCSPointScriptEntity size should be 0x600");
+		static_assert(sizeof(CS2::client::CCSPointScriptEntity) == 0x6E8, "CCSPointScriptEntity size should be 0x6E8");
 	}
 }

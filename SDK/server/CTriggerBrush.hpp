@@ -14,17 +14,17 @@ namespace CS2 {
 	namespace server {
 		class CTriggerBrush : public CS2::server::CBaseModelEntity {
 		public:
-			entity2::CEntityIOOutput m_OnStartTouch; // 0x7e8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEndTouch; // 0x810 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnUse; // 0x838 | Schema_DeclaredClass | Size: 0x28
-			int32_t m_iInputFilter; // 0x860 | Schema_Builtin | Size: 0x4
-			int32_t m_iDontMessageParent; // 0x864 | Schema_Builtin | Size: 0x4
+			entity2::CEntityIOOutput m_OnStartTouch; // 0x7f0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnEndTouch; // 0x818 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnUse; // 0x840 | Schema_DeclaredClass | Size: 0x28
+			int32_t m_iInputFilter; // 0x868 | Schema_Builtin | Size: 0x4
+			int32_t m_iDontMessageParent; // 0x86c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnStartTouch) == 0x7E8, "m_OnStartTouch in CTriggerBrush should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnEndTouch) == 0x810, "m_OnEndTouch in CTriggerBrush should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnUse) == 0x838, "m_OnUse in CTriggerBrush should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CTriggerBrush, m_iInputFilter) == 0x860, "m_iInputFilter in CTriggerBrush should be at offset 0x860");
-		static_assert(offsetof(CS2::server::CTriggerBrush, m_iDontMessageParent) == 0x864, "m_iDontMessageParent in CTriggerBrush should be at offset 0x864");
-		static_assert(sizeof(CS2::server::CTriggerBrush) == 0x868, "CTriggerBrush size should be 0x868");
+		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnStartTouch) == 0x7F0, "m_OnStartTouch in CTriggerBrush should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnEndTouch) == 0x818, "m_OnEndTouch in CTriggerBrush should be at offset 0x818");
+		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnUse) == 0x840, "m_OnUse in CTriggerBrush should be at offset 0x840");
+		static_assert(offsetof(CS2::server::CTriggerBrush, m_iInputFilter) == 0x868, "m_iInputFilter in CTriggerBrush should be at offset 0x868");
+		static_assert(offsetof(CS2::server::CTriggerBrush, m_iDontMessageParent) == 0x86C, "m_iDontMessageParent in CTriggerBrush should be at offset 0x86C");
+		static_assert(sizeof(CS2::server::CTriggerBrush) == 0x870, "CTriggerBrush size should be 0x870");
 	}
 }

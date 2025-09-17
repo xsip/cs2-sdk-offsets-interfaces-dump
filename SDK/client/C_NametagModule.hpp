@@ -13,9 +13,9 @@ namespace CS2 {
 	namespace client {
 		class C_NametagModule : public CS2::client::C_CS2WeaponModuleBase {
 		public:
-			GlobalTypes::CUtlString m_strNametagString; // 0x1170 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strNametagString; // 0x1178 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::client::C_NametagModule, m_strNametagString) == 0x1170, "m_strNametagString in C_NametagModule should be at offset 0x1170");
-		static_assert(sizeof(CS2::client::C_NametagModule) == 0x1178, "C_NametagModule size should be 0x1178");
+		static_assert(offsetof(CS2::client::C_NametagModule, m_strNametagString) == 0x1178, "m_strNametagString in C_NametagModule should be at offset 0x1178");
+		static_assert(sizeof(CS2::client::C_NametagModule) == 0x1180, "C_NametagModule size should be 0x1180");
 	}
 }

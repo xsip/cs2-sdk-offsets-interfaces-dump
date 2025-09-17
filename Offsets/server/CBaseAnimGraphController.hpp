@@ -28,7 +28,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bIsUsingAG2 = 0x590; // bool m_bIsUsingAG2; |  0x590 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_serializedPoseRecipeAG2 = 0x598; // GlobalTypes::CNetworkUtlVectorBase< uint8 > m_serializedPoseRecipeAG2; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nSerializePoseRecipeSizeAG2 = 0x5b0; // int32_t m_nSerializePoseRecipeSizeAG2; |  0x5b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nGraphCreationFlagsAG2 = 0x5b4; // uint8_t m_nGraphCreationFlagsAG2; |  0x5b4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nSerializePoseRecipeVersionAG2 = 0x5b4; // int32_t m_nSerializePoseRecipeVersionAG2; |  0x5b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nGraphCreationFlagsAG2 = 0x5b8; // uint8_t m_nGraphCreationFlagsAG2; |  0x5b8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nServerGraphDefReloadCountAG2 = 0x5f8; // int32_t m_nServerGraphDefReloadCountAG2; |  0x5f8 | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -6,8 +6,10 @@
 namespace CS2 {
 	namespace particles {
 		enum ParticleOrientationSetMode_t : std::uint32_t {
-			ParticleOrientationSetMode_t_PARTICLE_ORIENTATION_SET_FROM_ROTATIONS = 0x1,
-			ParticleOrientationSetMode_t_PARTICLE_ORIENTATION_SET_FROM_VELOCITY = 0x0
+			ParticleOrientationSetMode_t_PARTICLE_ORIENTATION_SET_FROM_NORMAL = 0x1,
+			ParticleOrientationSetMode_t_PARTICLE_ORIENTATION_SET_FROM_ROTATIONS = 0x2,
+			ParticleOrientationSetMode_t_PARTICLE_ORIENTATION_SET_FROM_VELOCITY = 0x0,
+			ParticleOrientationSetMode_t_PARTICLE_ORIENTATION_SET_NONE = 0xffffffff
 		};
 	}
 }

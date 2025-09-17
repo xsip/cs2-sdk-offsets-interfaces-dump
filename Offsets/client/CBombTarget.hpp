@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1008
+			// Class size: 0x1010
 			namespace CBombTarget /*: public CS2::client::C_BaseTrigger*/ {
-				constexpr std::ptrdiff_t m_bBombPlantedHere = 0x1000; // bool m_bBombPlantedHere; |  0x1000 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bBombPlantedHere = 0x1008; // bool m_bBombPlantedHere; |  0x1008 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

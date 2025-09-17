@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x2E0
+			// Class size: 0x330
 			namespace CSNetworkableLoadout_t /**/ {
-				constexpr std::ptrdiff_t m_Item = 0x30; // server::CEconItemView m_Item; |  Schema_DeclaredClass | Size: 0x2a8
-				constexpr std::ptrdiff_t m_unTeam = 0x2d8; // uint16_t m_unTeam; |  0x2d8 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_unSlot = 0x2da; // uint16_t m_unSlot; |  0x2da | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_ItemAttributeContainer = 0x30; // server::CAttributeContainer m_ItemAttributeContainer; |  Schema_DeclaredClass | Size: 0x2f8
+				constexpr std::ptrdiff_t m_unTeam = 0x328; // uint16_t m_unTeam; |  0x328 | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_unSlot = 0x32a; // uint16_t m_unSlot; |  0x32a | Schema_Builtin | Size: 0x2
 			}
 		}
 	}

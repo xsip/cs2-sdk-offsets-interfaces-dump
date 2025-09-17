@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x153E0
+			// Class size: 0x113D8
 			namespace CCSGameRules /*: public CS2::server::CTeamplayRules*/ {
 				constexpr std::ptrdiff_t m_bFreezePeriod = 0xc8; // bool m_bFreezePeriod; |  0xc8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bWarmupPeriod = 0xc9; // bool m_bWarmupPeriod; |  0xc9 | Schema_Builtin | Size: 0x1

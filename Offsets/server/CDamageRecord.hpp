@@ -18,9 +18,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_szPlayerRecipientName = 0x48; // GlobalTypes::CUtlString m_szPlayerRecipientName; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_DamagerXuid = 0x50; // uint64_t m_DamagerXuid; |  0x50 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_RecipientXuid = 0x58; // uint64_t m_RecipientXuid; |  0x58 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_iBulletsDamage = 0x60; // int32_t m_iBulletsDamage; |  0x60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iDamage = 0x64; // int32_t m_iDamage; |  0x64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iActualHealthRemoved = 0x68; // int32_t m_iActualHealthRemoved; |  0x68 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBulletsDamage = 0x60; // float32 m_flBulletsDamage; |  0x60 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDamage = 0x64; // float32 m_flDamage; |  0x64 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flActualHealthRemoved = 0x68; // float32 m_flActualHealthRemoved; |  0x68 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumHits = 0x6c; // int32_t m_iNumHits; |  0x6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iLastBulletUpdate = 0x70; // int32_t m_iLastBulletUpdate; |  0x70 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsOtherEnemy = 0x74; // bool m_bIsOtherEnemy; |  0x74 | Schema_Builtin | Size: 0x1

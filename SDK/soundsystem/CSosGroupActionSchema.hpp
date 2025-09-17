@@ -5,7 +5,6 @@
 
 #include <SDK/GlobalTypes.hpp>
 
-#include <SDK/soundsystem/ActionType_t.hpp>
 
 
 
@@ -14,13 +13,7 @@ namespace CS2 {
 		class CSosGroupActionSchema  {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CUtlString m_name; // 0x8 | Schema_Atomic | Size: 0x8
-			soundsystem::ActionType_t m_actionType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
-			soundsystem::ActionType_t m_actionInstanceType; // 0x14 | Schema_DeclaredEnum | Size: 0x4
 		};
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSchema, m_name) == 0x8, "m_name in CSosGroupActionSchema should be at offset 0x8");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSchema, m_actionType) == 0x10, "m_actionType in CSosGroupActionSchema should be at offset 0x10");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSchema, m_actionInstanceType) == 0x14, "m_actionInstanceType in CSosGroupActionSchema should be at offset 0x14");
-		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSchema) == 0x18, "CSosGroupActionSchema size should be 0x18");
+		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSchema) == 0x8, "CSosGroupActionSchema size should be 0x8");
 	}
 }

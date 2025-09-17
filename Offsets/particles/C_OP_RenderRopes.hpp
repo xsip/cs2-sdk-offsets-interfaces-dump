@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x30A0
+			// Class size: 0x30A8
 			namespace C_OP_RenderRopes /*: public CS2::particles::CBaseRendererSource2*/ {
 				constexpr std::ptrdiff_t m_bEnableFadingAndClamping = 0x2c18; // bool m_bEnableFadingAndClamping; |  0x2c18 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMinSize = 0x2c1c; // float32 m_flMinSize; |  0x2c1c | Schema_Builtin | Size: 0x4
@@ -36,10 +36,12 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flScalarAttributeTextureCoordScale = 0x308c; // float32 m_flScalarAttributeTextureCoordScale; |  0x308c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bReverseOrder = 0x3090; // bool m_bReverseOrder; |  0x3090 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bClosedLoop = 0x3091; // bool m_bClosedLoop; |  0x3091 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOrientationType = 0x3094; // particles::ParticleOrientationChoiceList_t m_nOrientationType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nVectorFieldForOrientation = 0x3098; // particles::ParticleAttributeIndex_t m_nVectorFieldForOrientation; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bDrawAsOpaque = 0x309c; // bool m_bDrawAsOpaque; |  0x309c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGenerateNormals = 0x309d; // bool m_bGenerateNormals; |  0x309d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nSplitField = 0x3094; // particles::ParticleAttributeIndex_t m_nSplitField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bSortBySegmentID = 0x3098; // bool m_bSortBySegmentID; |  0x3098 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nOrientationType = 0x309c; // particles::ParticleOrientationChoiceList_t m_nOrientationType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nVectorFieldForOrientation = 0x30a0; // particles::ParticleAttributeIndex_t m_nVectorFieldForOrientation; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bDrawAsOpaque = 0x30a4; // bool m_bDrawAsOpaque; |  0x30a4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGenerateNormals = 0x30a5; // bool m_bGenerateNormals; |  0x30a5 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -8,8 +8,8 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace vphysics2 {
-			constexpr std::ptrdiff_t VPhysics2_Handle_Interface_001 = 0x3dd000; 
-			constexpr std::ptrdiff_t VPhysics2_Interface_001 = 0x3dd040; 
+			constexpr std::ptrdiff_t VPhysics2_Handle_Interface_001 = 0x3e00e0; 
+			constexpr std::ptrdiff_t VPhysics2_Interface_001 = 0x3e0120; 
 		}
 	}
 }

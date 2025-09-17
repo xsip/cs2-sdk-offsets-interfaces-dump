@@ -8,17 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem {
-			// Class size: 0xE0
+			// Class size: 0x70
 			namespace CSosSoundEventGroupSchema /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nType = 0x8; // soundsystem::SosGroupType_t m_nType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsBlocking = 0xc; // bool m_bIsBlocking; |  0xc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nGroupType = 0x8; // soundsystem::SosGroupType_t m_nGroupType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bBlocksEvents = 0xc; // bool m_bBlocksEvents; |  0xc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nBlockMaxCount = 0x10; // int32_t m_nBlockMaxCount; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bInvertMatch = 0x14; // bool m_bInvertMatch; |  0x14 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_matchPattern = 0x18; // soundsystem::CSosGroupMatchPattern m_matchPattern; |  Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_branchPattern = 0x48; // soundsystem::CSosGroupBranchPattern m_branchPattern; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_flLifeSpanTime = 0x58; // float32 m_flLifeSpanTime; |  0x58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vActions = 0xc0; // soundsystem::CSosGroupActionSchema* m_vActions[4]; |  Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_flMemberLifespanTime = 0x14; // float32 m_flMemberLifespanTime; |  0x14 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bInvertMatch = 0x18; // bool m_bInvertMatch; |  0x18 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Behavior_EventName = 0x1c; // soundsystem::SosGroupFieldBehavior_t m_Behavior_EventName; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_matchSoundEventName = 0x20; // GlobalTypes::CUtlString m_matchSoundEventName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bMatchEventSubString = 0x28; // bool m_bMatchEventSubString; |  0x28 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_matchSoundEventSubString = 0x30; // GlobalTypes::CUtlString m_matchSoundEventSubString; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Behavior_EntIndex = 0x38; // soundsystem::SosGroupFieldBehavior_t m_Behavior_EntIndex; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flEntIndex = 0x3c; // float32 m_flEntIndex; |  0x3c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Behavior_Opvar = 0x40; // soundsystem::SosGroupFieldBehavior_t m_Behavior_Opvar; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flOpvar = 0x44; // float32 m_flOpvar; |  0x44 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Behavior_String = 0x48; // soundsystem::SosGroupFieldBehavior_t m_Behavior_String; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_opvarString = 0x50; // GlobalTypes::CUtlString m_opvarString; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vActions = 0x58; // GlobalTypes::CUtlVector< CSosGroupActionSchema >* m_vActions; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

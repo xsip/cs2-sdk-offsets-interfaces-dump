@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7E8
+			// Class size: 0x7F0
 			namespace CBaseModelEntity /*: public CS2::server::CBaseEntity*/ {
 				constexpr std::ptrdiff_t m_CRenderComponent = 0x4f0; // server::CRenderComponent* m_CRenderComponent; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_CHitboxComponent = 0x4f8; // server::CHitboxComponent m_CHitboxComponent; |  Schema_DeclaredClass | Size: 0x28
@@ -22,7 +22,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed2_PartIndex = 0x53c; // int32_t m_nDestructiblePartInitialStateDestructed2_PartIndex; |  0x53c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed3_PartIndex = 0x540; // int32_t m_nDestructiblePartInitialStateDestructed3_PartIndex; |  0x540 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed4_PartIndex = 0x544; // int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex; |  0x544 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0x548; // server::CDestructiblePartsSystemComponent* m_pDestructiblePartsSystemComponent; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0x548; // server::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_LastHitGroup = 0x550; // client::HitGroup_t m_LastHitGroup; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_sLastDamageSourceName = 0x558; // GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_vLastDamagePosition = 0x560; // GlobalTypes::Vector m_vLastDamagePosition; |  Schema_Atomic | Size: 0xc
@@ -52,6 +52,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nRequiredDecalMode = 0x775; // client::DecalMode_t m_nRequiredDecalMode; |  Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_ConfigEntitiesToPropagateMaterialDecalsTo = 0x778; // server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_vecViewOffset = 0x7b8; // client::CNetworkViewOffsetVector m_vecViewOffset; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0x7e8; // uint32_t m_bvDisabledHitGroups[1]; |  0x7e8 | Schema_FixedArray | Size: 0x4
 			}
 		}
 	}

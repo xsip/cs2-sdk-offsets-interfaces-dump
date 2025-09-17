@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1230
+			// Class size: 0x1238
 			namespace C_RagdollPropAttached /*: public CS2::client::C_RagdollProp*/ {
-				constexpr std::ptrdiff_t m_boneIndexAttached = 0x11f8; // uint32_t m_boneIndexAttached; |  0x11f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ragdollAttachedObjectIndex = 0x11fc; // uint32_t m_ragdollAttachedObjectIndex; |  0x11fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentPointBoneSpace = 0x1200; // GlobalTypes::Vector m_attachmentPointBoneSpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_attachmentPointRagdollSpace = 0x120c; // GlobalTypes::Vector m_attachmentPointRagdollSpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOffset = 0x1218; // GlobalTypes::Vector m_vecOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_parentTime = 0x1224; // float32 m_parentTime; |  0x1224 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bHasParent = 0x1228; // bool m_bHasParent; |  0x1228 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_boneIndexAttached = 0x1200; // uint32_t m_boneIndexAttached; |  0x1200 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_ragdollAttachedObjectIndex = 0x1204; // uint32_t m_ragdollAttachedObjectIndex; |  0x1204 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_attachmentPointBoneSpace = 0x1208; // GlobalTypes::Vector m_attachmentPointBoneSpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_attachmentPointRagdollSpace = 0x1214; // GlobalTypes::Vector m_attachmentPointRagdollSpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffset = 0x1220; // GlobalTypes::Vector m_vecOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_parentTime = 0x122c; // float32 m_parentTime; |  0x122c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bHasParent = 0x1230; // bool m_bHasParent; |  0x1230 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

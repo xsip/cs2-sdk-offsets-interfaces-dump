@@ -6,9 +6,7 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/soundsystem/SosGroupType_t.hpp>
-#include <SDK/soundsystem/CSosGroupMatchPattern.hpp>
-#include <SDK/soundsystem/CSosGroupBranchPattern.hpp>
-#include <SDK/soundsystem/CSosGroupActionSchema.hpp>
+#include <SDK/soundsystem/SosGroupFieldBehavior_t.hpp>
 
 
 
@@ -16,28 +14,45 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosSoundEventGroupSchema  {
 		public:
-			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
-			soundsystem::SosGroupType_t m_nType; // 0x8 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bIsBlocking; // 0xc | Schema_Builtin | Size: 0x1
+			S2_PAD(0x8);
+			soundsystem::SosGroupType_t m_nGroupType; // 0x8 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bBlocksEvents; // 0xc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			int32_t m_nBlockMaxCount; // 0x10 | Schema_Builtin | Size: 0x4
-			bool m_bInvertMatch; // 0x14 | Schema_Builtin | Size: 0x1
+			float32 m_flMemberLifespanTime; // 0x14 | Schema_Builtin | Size: 0x4
+			bool m_bInvertMatch; // 0x18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			soundsystem::CSosGroupMatchPattern m_matchPattern; // 0x18 | Schema_DeclaredClass | Size: 0x30
-			soundsystem::CSosGroupBranchPattern m_branchPattern; // 0x48 | Schema_DeclaredClass | Size: 0x10
-			float32 m_flLifeSpanTime; // 0x58 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x64);
-			soundsystem::CSosGroupActionSchema* m_vActions[4]; // 0xc0 | Schema_FixedArray | Size: 0x80
+			soundsystem::SosGroupFieldBehavior_t m_Behavior_EventName; // 0x1c | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlString m_matchSoundEventName; // 0x20 | Schema_Atomic | Size: 0x8
+			bool m_bMatchEventSubString; // 0x28 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x7);
+			GlobalTypes::CUtlString m_matchSoundEventSubString; // 0x30 | Schema_Atomic | Size: 0x8
+			soundsystem::SosGroupFieldBehavior_t m_Behavior_EntIndex; // 0x38 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flEntIndex; // 0x3c | Schema_Builtin | Size: 0x4
+			soundsystem::SosGroupFieldBehavior_t m_Behavior_Opvar; // 0x40 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flOpvar; // 0x44 | Schema_Builtin | Size: 0x4
+			soundsystem::SosGroupFieldBehavior_t m_Behavior_String; // 0x48 | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x4);
+			GlobalTypes::CUtlString m_opvarString; // 0x50 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CUtlVector< CSosGroupActionSchema >* m_vActions; // 0x58 | Schema_Atomic | Size: 0x18
+			char  m_vActions[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_name) == 0x0, "m_name in CSosSoundEventGroupSchema should be at offset 0x0");
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_nType) == 0x8, "m_nType in CSosSoundEventGroupSchema should be at offset 0x8");
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_bIsBlocking) == 0xC, "m_bIsBlocking in CSosSoundEventGroupSchema should be at offset 0xC");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_nGroupType) == 0x8, "m_nGroupType in CSosSoundEventGroupSchema should be at offset 0x8");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_bBlocksEvents) == 0xC, "m_bBlocksEvents in CSosSoundEventGroupSchema should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_nBlockMaxCount) == 0x10, "m_nBlockMaxCount in CSosSoundEventGroupSchema should be at offset 0x10");
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_bInvertMatch) == 0x14, "m_bInvertMatch in CSosSoundEventGroupSchema should be at offset 0x14");
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_matchPattern) == 0x18, "m_matchPattern in CSosSoundEventGroupSchema should be at offset 0x18");
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_branchPattern) == 0x48, "m_branchPattern in CSosSoundEventGroupSchema should be at offset 0x48");
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_flLifeSpanTime) == 0x58, "m_flLifeSpanTime in CSosSoundEventGroupSchema should be at offset 0x58");
-		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_vActions) == 0xC0, "m_vActions in CSosSoundEventGroupSchema should be at offset 0xC0");
-		static_assert(sizeof(CS2::soundsystem::CSosSoundEventGroupSchema) == 0xE0, "CSosSoundEventGroupSchema size should be 0xE0");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_flMemberLifespanTime) == 0x14, "m_flMemberLifespanTime in CSosSoundEventGroupSchema should be at offset 0x14");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_bInvertMatch) == 0x18, "m_bInvertMatch in CSosSoundEventGroupSchema should be at offset 0x18");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_Behavior_EventName) == 0x1C, "m_Behavior_EventName in CSosSoundEventGroupSchema should be at offset 0x1C");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_matchSoundEventName) == 0x20, "m_matchSoundEventName in CSosSoundEventGroupSchema should be at offset 0x20");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_bMatchEventSubString) == 0x28, "m_bMatchEventSubString in CSosSoundEventGroupSchema should be at offset 0x28");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_matchSoundEventSubString) == 0x30, "m_matchSoundEventSubString in CSosSoundEventGroupSchema should be at offset 0x30");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_Behavior_EntIndex) == 0x38, "m_Behavior_EntIndex in CSosSoundEventGroupSchema should be at offset 0x38");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_flEntIndex) == 0x3C, "m_flEntIndex in CSosSoundEventGroupSchema should be at offset 0x3C");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_Behavior_Opvar) == 0x40, "m_Behavior_Opvar in CSosSoundEventGroupSchema should be at offset 0x40");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_flOpvar) == 0x44, "m_flOpvar in CSosSoundEventGroupSchema should be at offset 0x44");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_Behavior_String) == 0x48, "m_Behavior_String in CSosSoundEventGroupSchema should be at offset 0x48");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_opvarString) == 0x50, "m_opvarString in CSosSoundEventGroupSchema should be at offset 0x50");
+		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_vActions) == 0x58, "m_vActions in CSosSoundEventGroupSchema should be at offset 0x58");
+		static_assert(sizeof(CS2::soundsystem::CSosSoundEventGroupSchema) == 0x70, "CSosSoundEventGroupSchema size should be 0x70");
 	}
 }

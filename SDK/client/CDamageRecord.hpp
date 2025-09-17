@@ -26,9 +26,9 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_szPlayerRecipientName; // 0x48 | Schema_Atomic | Size: 0x8
 			uint64_t m_DamagerXuid; // 0x50 | Schema_Builtin | Size: 0x8
 			uint64_t m_RecipientXuid; // 0x58 | Schema_Builtin | Size: 0x8
-			int32_t m_iBulletsDamage; // 0x60 | Schema_Builtin | Size: 0x4
-			int32_t m_iDamage; // 0x64 | Schema_Builtin | Size: 0x4
-			int32_t m_iActualHealthRemoved; // 0x68 | Schema_Builtin | Size: 0x4
+			float32 m_flBulletsDamage; // 0x60 | Schema_Builtin | Size: 0x4
+			float32 m_flDamage; // 0x64 | Schema_Builtin | Size: 0x4
+			float32 m_flActualHealthRemoved; // 0x68 | Schema_Builtin | Size: 0x4
 			int32_t m_iNumHits; // 0x6c | Schema_Builtin | Size: 0x4
 			int32_t m_iLastBulletUpdate; // 0x70 | Schema_Builtin | Size: 0x4
 			bool m_bIsOtherEnemy; // 0x74 | Schema_Builtin | Size: 0x1
@@ -43,9 +43,9 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CDamageRecord, m_szPlayerRecipientName) == 0x48, "m_szPlayerRecipientName in CDamageRecord should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_DamagerXuid) == 0x50, "m_DamagerXuid in CDamageRecord should be at offset 0x50");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_RecipientXuid) == 0x58, "m_RecipientXuid in CDamageRecord should be at offset 0x58");
-		static_assert(offsetof(CS2::client::CDamageRecord, m_iBulletsDamage) == 0x60, "m_iBulletsDamage in CDamageRecord should be at offset 0x60");
-		static_assert(offsetof(CS2::client::CDamageRecord, m_iDamage) == 0x64, "m_iDamage in CDamageRecord should be at offset 0x64");
-		static_assert(offsetof(CS2::client::CDamageRecord, m_iActualHealthRemoved) == 0x68, "m_iActualHealthRemoved in CDamageRecord should be at offset 0x68");
+		static_assert(offsetof(CS2::client::CDamageRecord, m_flBulletsDamage) == 0x60, "m_flBulletsDamage in CDamageRecord should be at offset 0x60");
+		static_assert(offsetof(CS2::client::CDamageRecord, m_flDamage) == 0x64, "m_flDamage in CDamageRecord should be at offset 0x64");
+		static_assert(offsetof(CS2::client::CDamageRecord, m_flActualHealthRemoved) == 0x68, "m_flActualHealthRemoved in CDamageRecord should be at offset 0x68");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_iNumHits) == 0x6C, "m_iNumHits in CDamageRecord should be at offset 0x6C");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_iLastBulletUpdate) == 0x70, "m_iLastBulletUpdate in CDamageRecord should be at offset 0x70");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_bIsOtherEnemy) == 0x74, "m_bIsOtherEnemy in CDamageRecord should be at offset 0x74");

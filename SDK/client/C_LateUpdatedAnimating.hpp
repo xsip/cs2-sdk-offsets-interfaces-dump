@@ -13,8 +13,8 @@ namespace CS2 {
 	namespace client {
 		class C_LateUpdatedAnimating : public CS2::client::CBaseAnimGraph {
 		public:
-			S2_PAD(0x98);
+			S2_PAD(0xa0);
 		};
-		static_assert(sizeof(CS2::client::C_LateUpdatedAnimating) == 0x1200, "C_LateUpdatedAnimating size should be 0x1200");
+		static_assert(sizeof(CS2::client::C_LateUpdatedAnimating) == 0x1210, "C_LateUpdatedAnimating size should be 0x1210");
 	}
 }

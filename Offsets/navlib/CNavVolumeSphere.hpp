@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace navlib {
-			// Class size: 0x80
+			// Class size: 0x88
 			namespace CNavVolumeSphere /*: public CS2::navlib::CNavVolume*/ {
-				constexpr std::ptrdiff_t m_vCenter = 0x70; // GlobalTypes::Vector m_vCenter; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flRadius = 0x7c; // float32 m_flRadius; |  0x7c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vCenter = 0x78; // GlobalTypes::Vector m_vCenter; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flRadius = 0x84; // float32 m_flRadius; |  0x84 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

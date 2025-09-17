@@ -19,13 +19,15 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nRandomSeed; // 0x1d4 | Schema_Builtin | Size: 0x4
 			bool m_bSubFrame; // 0x1d8 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x7); // End padding
+			bool m_bSetRopeSegmentID; // 0x1d9 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6); // End padding
 		};
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_flVelocityScale) == 0x1C8, "m_flVelocityScale in C_INIT_CreateFromParentParticles should be at offset 0x1C8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_flIncrement) == 0x1CC, "m_flIncrement in C_INIT_CreateFromParentParticles should be at offset 0x1CC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_bRandomDistribution) == 0x1D0, "m_bRandomDistribution in C_INIT_CreateFromParentParticles should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_nRandomSeed) == 0x1D4, "m_nRandomSeed in C_INIT_CreateFromParentParticles should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_bSubFrame) == 0x1D8, "m_bSubFrame in C_INIT_CreateFromParentParticles should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_bSetRopeSegmentID) == 0x1D9, "m_bSetRopeSegmentID in C_INIT_CreateFromParentParticles should be at offset 0x1D9");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateFromParentParticles) == 0x1E0, "C_INIT_CreateFromParentParticles size should be 0x1E0");
 	}
 }

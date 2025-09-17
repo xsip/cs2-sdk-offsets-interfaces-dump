@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB70
+			// Class size: 0xB78
 			namespace CItemDefuser /*: public CS2::server::CItem*/ {
-				constexpr std::ptrdiff_t m_entitySpottedState = 0xb50; // server::EntitySpottedState_t m_entitySpottedState; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_nSpotRules = 0xb68; // int32_t m_nSpotRules; |  0xb68 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_entitySpottedState = 0xb58; // server::EntitySpottedState_t m_entitySpottedState; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_nSpotRules = 0xb70; // int32_t m_nSpotRules; |  0xb70 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

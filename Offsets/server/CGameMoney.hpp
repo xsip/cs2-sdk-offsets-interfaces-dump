@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x858
+			// Class size: 0x860
 			namespace CGameMoney /*: public CS2::server::CRulePointEntity*/ {
-				constexpr std::ptrdiff_t m_OnMoneySpent = 0x7f8; // entity2::CEntityIOOutput m_OnMoneySpent; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMoneySpentFail = 0x820; // entity2::CEntityIOOutput m_OnMoneySpentFail; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_nMoney = 0x848; // int32_t m_nMoney; |  0x848 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_strAwardText = 0x850; // GlobalTypes::CUtlString m_strAwardText; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnMoneySpent = 0x800; // entity2::CEntityIOOutput m_OnMoneySpent; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnMoneySpentFail = 0x828; // entity2::CEntityIOOutput m_OnMoneySpentFail; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_nMoney = 0x850; // int32_t m_nMoney; |  0x850 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_strAwardText = 0x858; // GlobalTypes::CUtlString m_strAwardText; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

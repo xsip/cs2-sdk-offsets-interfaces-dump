@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA20
+			// Class size: 0xA28
 			namespace CFogTrigger /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_fog = 0x9b8; // server::fogparams_t m_fog; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_fog = 0x9c0; // server::fogparams_t m_fog; |  Schema_DeclaredClass | Size: 0x68
 			}
 		}
 	}

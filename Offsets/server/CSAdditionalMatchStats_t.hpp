@@ -21,7 +21,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_numSniperKills = 0x38; // int32_t m_numSniperKills; |  0x38 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumSuicides = 0x3c; // int32_t m_iNumSuicides; |  0x3c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumTeamKills = 0x40; // int32_t m_iNumTeamKills; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iTeamDamage = 0x44; // int32_t m_iTeamDamage; |  0x44 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTeamDamage = 0x44; // float32 m_flTeamDamage; |  0x44 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

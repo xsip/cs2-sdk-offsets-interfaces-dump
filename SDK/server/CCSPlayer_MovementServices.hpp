@@ -36,32 +36,30 @@ namespace CS2 {
 			int32_t m_StuckLast; // 0x4dc | Schema_Builtin | Size: 0x4
 			bool m_bSpeedCropped; // 0x4e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flGroundMoveEfficiency; // 0x4e4 | Schema_Builtin | Size: 0x4
-			int32_t m_nOldWaterLevel; // 0x4e8 | Schema_Builtin | Size: 0x4
-			float32 m_flWaterEntryTime; // 0x4ec | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecForward; // 0x4f0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecLeft; // 0x4fc | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecUp; // 0x508 | Schema_Atomic | Size: 0xc
-			int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x514 | Schema_Builtin | Size: 0x4
-			bool m_bMadeFootstepNoise; // 0x518 | Schema_Builtin | Size: 0x1
+			int32_t m_nOldWaterLevel; // 0x4e4 | Schema_Builtin | Size: 0x4
+			float32 m_flWaterEntryTime; // 0x4e8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecForward; // 0x4ec | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLeft; // 0x4f8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecUp; // 0x504 | Schema_Atomic | Size: 0xc
+			int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x510 | Schema_Builtin | Size: 0x4
+			bool m_bMadeFootstepNoise; // 0x514 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iFootsteps; // 0x51c | Schema_Builtin | Size: 0x4
-			bool m_bOldJumpPressed; // 0x520 | Schema_Builtin | Size: 0x1
+			int32_t m_iFootsteps; // 0x518 | Schema_Builtin | Size: 0x4
+			bool m_bOldJumpPressed; // 0x51c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flJumpPressedTime; // 0x524 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_fStashGrenadeParameterWhen; // 0x528 | Schema_DeclaredClass | Size: 0x4
-			S2_PAD(0x4);
-			uint64_t m_nButtonDownMaskPrev; // 0x530 | Schema_Builtin | Size: 0x8
-			float32 m_flOffsetTickCompleteTime; // 0x538 | Schema_Builtin | Size: 0x4
-			float32 m_flOffsetTickStashedSpeed; // 0x53c | Schema_Builtin | Size: 0x4
-			float32 m_flStamina; // 0x540 | Schema_Builtin | Size: 0x4
-			float32 m_flHeightAtJumpStart; // 0x544 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxJumpHeightThisJump; // 0x548 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxJumpHeightLastJump; // 0x54c | Schema_Builtin | Size: 0x4
-			float32 m_flStaminaAtJumpStart; // 0x550 | Schema_Builtin | Size: 0x4
-			float32 m_flAccumulatedJumpError; // 0x554 | Schema_Builtin | Size: 0x4
-			float32 m_flTicksSinceLastSurfingDetected; // 0x558 | Schema_Builtin | Size: 0x4
-			bool m_bWasSurfing; // 0x55c | Schema_Builtin | Size: 0x1
+			float32 m_flJumpPressedTime; // 0x520 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_fStashGrenadeParameterWhen; // 0x524 | Schema_DeclaredClass | Size: 0x4
+			uint64_t m_nButtonDownMaskPrev; // 0x528 | Schema_Builtin | Size: 0x8
+			float32 m_flOffsetTickCompleteTime; // 0x530 | Schema_Builtin | Size: 0x4
+			float32 m_flOffsetTickStashedSpeed; // 0x534 | Schema_Builtin | Size: 0x4
+			float32 m_flStamina; // 0x538 | Schema_Builtin | Size: 0x4
+			float32 m_flHeightAtJumpStart; // 0x53c | Schema_Builtin | Size: 0x4
+			float32 m_flMaxJumpHeightThisJump; // 0x540 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxJumpHeightLastJump; // 0x544 | Schema_Builtin | Size: 0x4
+			float32 m_flStaminaAtJumpStart; // 0x548 | Schema_Builtin | Size: 0x4
+			float32 m_flAccumulatedJumpError; // 0x54c | Schema_Builtin | Size: 0x4
+			float32 m_flTicksSinceLastSurfingDetected; // 0x550 | Schema_Builtin | Size: 0x4
+			bool m_bWasSurfing; // 0x554 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x93); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecLadderNormal) == 0x288, "m_vecLadderNormal in CCSPlayer_MovementServices should be at offset 0x288");
@@ -82,29 +80,28 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nTraceCount) == 0x4D8, "m_nTraceCount in CCSPlayer_MovementServices should be at offset 0x4D8");
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_StuckLast) == 0x4DC, "m_StuckLast in CCSPlayer_MovementServices should be at offset 0x4DC");
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bSpeedCropped) == 0x4E0, "m_bSpeedCropped in CCSPlayer_MovementServices should be at offset 0x4E0");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flGroundMoveEfficiency) == 0x4E4, "m_flGroundMoveEfficiency in CCSPlayer_MovementServices should be at offset 0x4E4");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nOldWaterLevel) == 0x4E8, "m_nOldWaterLevel in CCSPlayer_MovementServices should be at offset 0x4E8");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flWaterEntryTime) == 0x4EC, "m_flWaterEntryTime in CCSPlayer_MovementServices should be at offset 0x4EC");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecForward) == 0x4F0, "m_vecForward in CCSPlayer_MovementServices should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecLeft) == 0x4FC, "m_vecLeft in CCSPlayer_MovementServices should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecUp) == 0x508, "m_vecUp in CCSPlayer_MovementServices should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nGameCodeHasMovedPlayerAfterCommand) == 0x514, "m_nGameCodeHasMovedPlayerAfterCommand in CCSPlayer_MovementServices should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bMadeFootstepNoise) == 0x518, "m_bMadeFootstepNoise in CCSPlayer_MovementServices should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_iFootsteps) == 0x51C, "m_iFootsteps in CCSPlayer_MovementServices should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bOldJumpPressed) == 0x520, "m_bOldJumpPressed in CCSPlayer_MovementServices should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flJumpPressedTime) == 0x524, "m_flJumpPressedTime in CCSPlayer_MovementServices should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_fStashGrenadeParameterWhen) == 0x528, "m_fStashGrenadeParameterWhen in CCSPlayer_MovementServices should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nButtonDownMaskPrev) == 0x530, "m_nButtonDownMaskPrev in CCSPlayer_MovementServices should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flOffsetTickCompleteTime) == 0x538, "m_flOffsetTickCompleteTime in CCSPlayer_MovementServices should be at offset 0x538");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flOffsetTickStashedSpeed) == 0x53C, "m_flOffsetTickStashedSpeed in CCSPlayer_MovementServices should be at offset 0x53C");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flStamina) == 0x540, "m_flStamina in CCSPlayer_MovementServices should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flHeightAtJumpStart) == 0x544, "m_flHeightAtJumpStart in CCSPlayer_MovementServices should be at offset 0x544");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flMaxJumpHeightThisJump) == 0x548, "m_flMaxJumpHeightThisJump in CCSPlayer_MovementServices should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flMaxJumpHeightLastJump) == 0x54C, "m_flMaxJumpHeightLastJump in CCSPlayer_MovementServices should be at offset 0x54C");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flStaminaAtJumpStart) == 0x550, "m_flStaminaAtJumpStart in CCSPlayer_MovementServices should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flAccumulatedJumpError) == 0x554, "m_flAccumulatedJumpError in CCSPlayer_MovementServices should be at offset 0x554");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flTicksSinceLastSurfingDetected) == 0x558, "m_flTicksSinceLastSurfingDetected in CCSPlayer_MovementServices should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bWasSurfing) == 0x55C, "m_bWasSurfing in CCSPlayer_MovementServices should be at offset 0x55C");
-		static_assert(sizeof(CS2::server::CCSPlayer_MovementServices) == 0x5F0, "CCSPlayer_MovementServices size should be 0x5F0");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nOldWaterLevel) == 0x4E4, "m_nOldWaterLevel in CCSPlayer_MovementServices should be at offset 0x4E4");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flWaterEntryTime) == 0x4E8, "m_flWaterEntryTime in CCSPlayer_MovementServices should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecForward) == 0x4EC, "m_vecForward in CCSPlayer_MovementServices should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecLeft) == 0x4F8, "m_vecLeft in CCSPlayer_MovementServices should be at offset 0x4F8");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecUp) == 0x504, "m_vecUp in CCSPlayer_MovementServices should be at offset 0x504");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nGameCodeHasMovedPlayerAfterCommand) == 0x510, "m_nGameCodeHasMovedPlayerAfterCommand in CCSPlayer_MovementServices should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bMadeFootstepNoise) == 0x514, "m_bMadeFootstepNoise in CCSPlayer_MovementServices should be at offset 0x514");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_iFootsteps) == 0x518, "m_iFootsteps in CCSPlayer_MovementServices should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bOldJumpPressed) == 0x51C, "m_bOldJumpPressed in CCSPlayer_MovementServices should be at offset 0x51C");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flJumpPressedTime) == 0x520, "m_flJumpPressedTime in CCSPlayer_MovementServices should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_fStashGrenadeParameterWhen) == 0x524, "m_fStashGrenadeParameterWhen in CCSPlayer_MovementServices should be at offset 0x524");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nButtonDownMaskPrev) == 0x528, "m_nButtonDownMaskPrev in CCSPlayer_MovementServices should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flOffsetTickCompleteTime) == 0x530, "m_flOffsetTickCompleteTime in CCSPlayer_MovementServices should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flOffsetTickStashedSpeed) == 0x534, "m_flOffsetTickStashedSpeed in CCSPlayer_MovementServices should be at offset 0x534");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flStamina) == 0x538, "m_flStamina in CCSPlayer_MovementServices should be at offset 0x538");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flHeightAtJumpStart) == 0x53C, "m_flHeightAtJumpStart in CCSPlayer_MovementServices should be at offset 0x53C");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flMaxJumpHeightThisJump) == 0x540, "m_flMaxJumpHeightThisJump in CCSPlayer_MovementServices should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flMaxJumpHeightLastJump) == 0x544, "m_flMaxJumpHeightLastJump in CCSPlayer_MovementServices should be at offset 0x544");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flStaminaAtJumpStart) == 0x548, "m_flStaminaAtJumpStart in CCSPlayer_MovementServices should be at offset 0x548");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flAccumulatedJumpError) == 0x54C, "m_flAccumulatedJumpError in CCSPlayer_MovementServices should be at offset 0x54C");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flTicksSinceLastSurfingDetected) == 0x550, "m_flTicksSinceLastSurfingDetected in CCSPlayer_MovementServices should be at offset 0x550");
+		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bWasSurfing) == 0x554, "m_bWasSurfing in CCSPlayer_MovementServices should be at offset 0x554");
+		static_assert(sizeof(CS2::server::CCSPlayer_MovementServices) == 0x5E8, "CCSPlayer_MovementServices size should be 0x5E8");
 	}
 }

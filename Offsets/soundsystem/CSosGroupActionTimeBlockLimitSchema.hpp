@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem {
-			// Class size: 0x20
+			// Class size: 0x10
 			namespace CSosGroupActionTimeBlockLimitSchema /*: public CS2::soundsystem::CSosGroupActionSchema*/ {
-				constexpr std::ptrdiff_t m_nMaxCount = 0x18; // int32_t m_nMaxCount; |  0x18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxDuration = 0x1c; // float32 m_flMaxDuration; |  0x1c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxCount = 0x8; // int32_t m_nMaxCount; |  0x8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxDuration = 0xc; // float32 m_flMaxDuration; |  0xc | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

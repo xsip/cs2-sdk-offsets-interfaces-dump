@@ -23,7 +23,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bFirstBlocked = 0xd9c; // bool m_bFirstBlocked; |  0xd9c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_ls = 0xda0; // server::locksound_t m_ls; |  Schema_DeclaredClass | Size: 0x20
 				constexpr std::ptrdiff_t m_bForceClosed = 0xdc0; // bool m_bForceClosed; |  0xdc0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecLatchWorldPosition = 0xdc4; // GlobalTypes::Vector m_vecLatchWorldPosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLatchWorldPosition = 0xdc4; // GlobalTypes::VectorWS m_vecLatchWorldPosition; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_hActivator = 0xdd0; // server::CHandle< server::CBaseEntity > m_hActivator; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_SoundMoving = 0xde8; // GlobalTypes::CUtlSymbolLarge m_SoundMoving; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_SoundOpen = 0xdf0; // GlobalTypes::CUtlSymbolLarge m_SoundOpen; |  Schema_Atomic | Size: 0x8

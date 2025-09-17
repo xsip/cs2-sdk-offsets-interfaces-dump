@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_matchStats = 0xa8; // client::CSMatchStats_t m_matchStats; |  Schema_DeclaredClass | Size: 0x80
 				constexpr std::ptrdiff_t m_iNumRoundKills = 0x128; // int32_t m_iNumRoundKills; |  0x128 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumRoundKillsHeadshots = 0x12c; // int32_t m_iNumRoundKillsHeadshots; |  0x12c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unTotalRoundDamageDealt = 0x130; // uint32_t m_unTotalRoundDamageDealt; |  0x130 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTotalRoundDamageDealt = 0x130; // float32 m_flTotalRoundDamageDealt; |  0x130 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

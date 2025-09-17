@@ -5,9 +5,9 @@
 
 namespace CS2 {
 	namespace navlib {
-		enum NavAttributeEnum : std::uint32_t {
+		enum NavAttributeEnum : std::uint64_t {
 			NavAttributeEnum_NAV_ATTR_FIRST_GAME_INDEX = 0x13,
-			NavAttributeEnum_NAV_ATTR_LAST_INDEX = 0x1f,
+			NavAttributeEnum_NAV_ATTR_LAST_INDEX = 0x3f,
 			NavAttributeEnum_NAV_MESH_AVOID = 0x80,
 			NavAttributeEnum_NAV_MESH_CRAWL_HEIGHT = 0x40000,
 			NavAttributeEnum_NAV_MESH_CROUCH = 0x10000,
@@ -20,7 +20,6 @@ namespace CS2 {
 			NavAttributeEnum_NAV_MESH_NO_JUMP = 0x8,
 			NavAttributeEnum_NAV_MESH_NO_MERGE = 0x2000,
 			NavAttributeEnum_NAV_MESH_OBSTACLE_TOP = 0x4000,
-			NavAttributeEnum_NAV_MESH_PRECISE = 0x4,
 			NavAttributeEnum_NAV_MESH_RUN = 0x20,
 			NavAttributeEnum_NAV_MESH_STAIRS = 0x1000,
 			NavAttributeEnum_NAV_MESH_STAND = 0x400,

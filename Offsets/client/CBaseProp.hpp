@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x11A0
 			namespace CBaseProp /*: public CS2::client::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_bModelOverrodeBlockLOS = 0x1168; // bool m_bModelOverrodeBlockLOS; |  0x1168 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iShapeType = 0x116c; // int32_t m_iShapeType; |  0x116c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bConformToCollisionBounds = 0x1170; // bool m_bConformToCollisionBounds; |  0x1170 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bModelOverrodeBlockLOS = 0x1170; // bool m_bModelOverrodeBlockLOS; |  0x1170 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iShapeType = 0x1174; // int32_t m_iShapeType; |  0x1174 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bConformToCollisionBounds = 0x1178; // bool m_bConformToCollisionBounds; |  0x1178 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_mPreferredCatchTransform = 0x1180; // GlobalTypes::CTransform m_mPreferredCatchTransform; |  Schema_Atomic | Size: 0x20
 			}
 		}

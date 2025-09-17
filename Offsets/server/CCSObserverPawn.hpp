@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xEE8
+			// Class size: 0xEF0
 			namespace CCSObserverPawn /*: public CS2::server::CCSPlayerPawnBase*/ {
 				// NO SCHEMA DATA FOUND!
 			}

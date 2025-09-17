@@ -103,7 +103,7 @@ namespace CS2 {
 			S2_PAD(0x47);
 			// GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; // 0x370 | Schema_Atomic | Size: 0x18
 			char  m_controlPointConfigurations[0x18]; // 0x370 | Schema_Atomic | Size: 0x18
-			S2_PAD(0x68); // End padding
+			S2_PAD(0x58); // End padding
 		};
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nBehaviorVersion) == 0x8, "m_nBehaviorVersion in CParticleSystemDefinition should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_PreEmissionOperators) == 0x10, "m_PreEmissionOperators in CParticleSystemDefinition should be at offset 0x10");
@@ -170,6 +170,6 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nAllowRenderControlPoint) == 0x324, "m_nAllowRenderControlPoint in CParticleSystemDefinition should be at offset 0x324");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldSort) == 0x328, "m_bShouldSort in CParticleSystemDefinition should be at offset 0x328");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_controlPointConfigurations) == 0x370, "m_controlPointConfigurations in CParticleSystemDefinition should be at offset 0x370");
-		static_assert(sizeof(CS2::particles::CParticleSystemDefinition) == 0x3F0, "CParticleSystemDefinition size should be 0x3F0");
+		static_assert(sizeof(CS2::particles::CParticleSystemDefinition) == 0x3E0, "CParticleSystemDefinition size should be 0x3E0");
 	}
 }

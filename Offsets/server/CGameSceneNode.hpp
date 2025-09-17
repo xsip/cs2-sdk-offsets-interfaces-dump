@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x160
 			namespace CGameSceneNode /**/ {
-				constexpr std::ptrdiff_t m_nodeToWorld = 0x10; // GlobalTypes::CTransform m_nodeToWorld; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_nodeToWorld = 0x10; // GlobalTypes::CTransformWS m_nodeToWorld; |  Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_pOwner = 0x30; // entity2::CEntityInstance* m_pOwner; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_pParent = 0x38; // server::CGameSceneNode* m_pParent; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_pChild = 0x40; // server::CGameSceneNode* m_pChild; |  Schema_Ptr | Size: 0x8
@@ -19,7 +19,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_vecOrigin = 0x88; // client::CNetworkOriginCellCoordQuantizedVector m_vecOrigin; |  Schema_DeclaredClass | Size: 0x30
 				constexpr std::ptrdiff_t m_angRotation = 0xc0; // GlobalTypes::QAngle m_angRotation; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flScale = 0xcc; // float32 m_flScale; |  0xcc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAbsOrigin = 0xd0; // GlobalTypes::Vector m_vecAbsOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecAbsOrigin = 0xd0; // GlobalTypes::VectorWS m_vecAbsOrigin; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_angAbsRotation = 0xdc; // GlobalTypes::QAngle m_angAbsRotation; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flAbsScale = 0xe8; // float32 m_flAbsScale; |  0xe8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nParentAttachmentOrBone = 0xec; // int16_t m_nParentAttachmentOrBone; |  0xec | Schema_Builtin | Size: 0x2

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x98
+			// Class size: 0xA0
 			namespace CNavVolumeCalculatedVector /*: public CS2::navlib::CNavVolume*/ {
 				// NO SCHEMA DATA FOUND!
 			}

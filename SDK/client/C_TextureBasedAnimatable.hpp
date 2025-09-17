@@ -13,26 +13,26 @@ namespace CS2 {
 	namespace client {
 		class C_TextureBasedAnimatable : public CS2::client::C_BaseModelEntity {
 		public:
-			bool m_bLoop; // 0xec0 | Schema_Builtin | Size: 0x1
+			bool m_bLoop; // 0xec8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flFPS; // 0xec4 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hPositionKeys; // 0xec8 | Schema_Atomic | Size: 0x8
-			char  m_hPositionKeys[0x8]; // 0xec8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hRotationKeys; // 0xed0 | Schema_Atomic | Size: 0x8
-			char  m_hRotationKeys[0x8]; // 0xed0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_vAnimationBoundsMin; // 0xed8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vAnimationBoundsMax; // 0xee4 | Schema_Atomic | Size: 0xc
-			float32 m_flStartTime; // 0xef0 | Schema_Builtin | Size: 0x4
-			float32 m_flStartFrame; // 0xef4 | Schema_Builtin | Size: 0x4
+			float32 m_flFPS; // 0xecc | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hPositionKeys; // 0xed0 | Schema_Atomic | Size: 0x8
+			char  m_hPositionKeys[0x8]; // 0xed0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hRotationKeys; // 0xed8 | Schema_Atomic | Size: 0x8
+			char  m_hRotationKeys[0x8]; // 0xed8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector m_vAnimationBoundsMin; // 0xee0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vAnimationBoundsMax; // 0xeec | Schema_Atomic | Size: 0xc
+			float32 m_flStartTime; // 0xef8 | Schema_Builtin | Size: 0x4
+			float32 m_flStartFrame; // 0xefc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_bLoop) == 0xEC0, "m_bLoop in C_TextureBasedAnimatable should be at offset 0xEC0");
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_flFPS) == 0xEC4, "m_flFPS in C_TextureBasedAnimatable should be at offset 0xEC4");
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_hPositionKeys) == 0xEC8, "m_hPositionKeys in C_TextureBasedAnimatable should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_hRotationKeys) == 0xED0, "m_hRotationKeys in C_TextureBasedAnimatable should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_vAnimationBoundsMin) == 0xED8, "m_vAnimationBoundsMin in C_TextureBasedAnimatable should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_vAnimationBoundsMax) == 0xEE4, "m_vAnimationBoundsMax in C_TextureBasedAnimatable should be at offset 0xEE4");
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_flStartTime) == 0xEF0, "m_flStartTime in C_TextureBasedAnimatable should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_flStartFrame) == 0xEF4, "m_flStartFrame in C_TextureBasedAnimatable should be at offset 0xEF4");
-		static_assert(sizeof(CS2::client::C_TextureBasedAnimatable) == 0xEF8, "C_TextureBasedAnimatable size should be 0xEF8");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_bLoop) == 0xEC8, "m_bLoop in C_TextureBasedAnimatable should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_flFPS) == 0xECC, "m_flFPS in C_TextureBasedAnimatable should be at offset 0xECC");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_hPositionKeys) == 0xED0, "m_hPositionKeys in C_TextureBasedAnimatable should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_hRotationKeys) == 0xED8, "m_hRotationKeys in C_TextureBasedAnimatable should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_vAnimationBoundsMin) == 0xEE0, "m_vAnimationBoundsMin in C_TextureBasedAnimatable should be at offset 0xEE0");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_vAnimationBoundsMax) == 0xEEC, "m_vAnimationBoundsMax in C_TextureBasedAnimatable should be at offset 0xEEC");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_flStartTime) == 0xEF8, "m_flStartTime in C_TextureBasedAnimatable should be at offset 0xEF8");
+		static_assert(offsetof(CS2::client::C_TextureBasedAnimatable, m_flStartFrame) == 0xEFC, "m_flStartFrame in C_TextureBasedAnimatable should be at offset 0xEFC");
+		static_assert(sizeof(CS2::client::C_TextureBasedAnimatable) == 0xF00, "C_TextureBasedAnimatable size should be 0xF00");
 	}
 }

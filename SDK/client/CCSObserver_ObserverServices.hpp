@@ -14,25 +14,11 @@ namespace CS2 {
 	namespace client {
 		class CCSObserver_ObserverServices : public CS2::client::CPlayer_ObserverServices {
 		public:
-			GlobalTypes::CEntityHandle m_hLastObserverTarget; // 0x58 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Vector m_vecObserverInterpolateOffset; // 0x5c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecObserverInterpStartPos; // 0x68 | Schema_Atomic | Size: 0xc
-			float32 m_flObsInterp_PathLength; // 0x74 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x8);
-			GlobalTypes::Quaternion m_qObsInterp_OrientationStart; // 0x80 | Schema_Atomic | Size: 0x10
-			GlobalTypes::Quaternion m_qObsInterp_OrientationTravelDir; // 0x90 | Schema_Atomic | Size: 0x10
-			client::ObserverInterpState_t m_obsInterpState; // 0xa0 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bObserverInterpolationNeedsDeferredSetup; // 0xa4 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xb); // End padding
+			S2_PAD(0x4);
+			client::ObserverInterpState_t m_obsInterpState; // 0x5c | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x80); // End padding
 		};
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_hLastObserverTarget) == 0x58, "m_hLastObserverTarget in CCSObserver_ObserverServices should be at offset 0x58");
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_vecObserverInterpolateOffset) == 0x5C, "m_vecObserverInterpolateOffset in CCSObserver_ObserverServices should be at offset 0x5C");
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_vecObserverInterpStartPos) == 0x68, "m_vecObserverInterpStartPos in CCSObserver_ObserverServices should be at offset 0x68");
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_flObsInterp_PathLength) == 0x74, "m_flObsInterp_PathLength in CCSObserver_ObserverServices should be at offset 0x74");
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_qObsInterp_OrientationStart) == 0x80, "m_qObsInterp_OrientationStart in CCSObserver_ObserverServices should be at offset 0x80");
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_qObsInterp_OrientationTravelDir) == 0x90, "m_qObsInterp_OrientationTravelDir in CCSObserver_ObserverServices should be at offset 0x90");
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_obsInterpState) == 0xA0, "m_obsInterpState in CCSObserver_ObserverServices should be at offset 0xA0");
-		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_bObserverInterpolationNeedsDeferredSetup) == 0xA4, "m_bObserverInterpolationNeedsDeferredSetup in CCSObserver_ObserverServices should be at offset 0xA4");
-		static_assert(sizeof(CS2::client::CCSObserver_ObserverServices) == 0xB0, "CCSObserver_ObserverServices size should be 0xB0");
+		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_obsInterpState) == 0x5C, "m_obsInterpState in CCSObserver_ObserverServices should be at offset 0x5C");
+		static_assert(sizeof(CS2::client::CCSObserver_ObserverServices) == 0xE0, "CCSObserver_ObserverServices size should be 0xE0");
 	}
 }

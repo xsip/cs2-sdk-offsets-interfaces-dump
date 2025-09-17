@@ -15,6 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bRandomDistribution = 0x1d0; // bool m_bRandomDistribution; |  0x1d0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nRandomSeed = 0x1d4; // int32_t m_nRandomSeed; |  0x1d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSubFrame = 0x1d8; // bool m_bSubFrame; |  0x1d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSetRopeSegmentID = 0x1d9; // bool m_bSetRopeSegmentID; |  0x1d9 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

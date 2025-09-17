@@ -8,32 +8,32 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB80
+			// Class size: 0xB88
 			namespace CFish /*: public CS2::server::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_pool = 0xa78; // server::CHandle< server::CFishPool > m_pool; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_id = 0xa7c; // uint32_t m_id; |  0xa7c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_x = 0xa80; // float32 m_x; |  0xa80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_y = 0xa84; // float32 m_y; |  0xa84 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_z = 0xa88; // float32 m_z; |  0xa88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_angle = 0xa8c; // float32 m_angle; |  0xa8c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_angleChange = 0xa90; // float32 m_angleChange; |  0xa90 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_forward = 0xa94; // GlobalTypes::Vector m_forward; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_perp = 0xaa0; // GlobalTypes::Vector m_perp; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_poolOrigin = 0xaac; // GlobalTypes::Vector m_poolOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_waterLevel = 0xab8; // float32 m_waterLevel; |  0xab8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_speed = 0xabc; // float32 m_speed; |  0xabc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_desiredSpeed = 0xac0; // float32 m_desiredSpeed; |  0xac0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_calmSpeed = 0xac4; // float32 m_calmSpeed; |  0xac4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_panicSpeed = 0xac8; // float32 m_panicSpeed; |  0xac8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_avoidRange = 0xacc; // float32 m_avoidRange; |  0xacc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_turnTimer = 0xad0; // server::CountdownTimer m_turnTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_turnClockwise = 0xae8; // bool m_turnClockwise; |  0xae8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_goTimer = 0xaf0; // server::CountdownTimer m_goTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_moveTimer = 0xb08; // server::CountdownTimer m_moveTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_panicTimer = 0xb20; // server::CountdownTimer m_panicTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_disperseTimer = 0xb38; // server::CountdownTimer m_disperseTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_proximityTimer = 0xb50; // server::CountdownTimer m_proximityTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_visible = 0xb68; // server::CUtlVector< CFish >* m_visible; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pool = 0xa80; // server::CHandle< server::CFishPool > m_pool; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_id = 0xa84; // uint32_t m_id; |  0xa84 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_x = 0xa88; // float32 m_x; |  0xa88 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_y = 0xa8c; // float32 m_y; |  0xa8c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_z = 0xa90; // float32 m_z; |  0xa90 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_angle = 0xa94; // float32 m_angle; |  0xa94 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_angleChange = 0xa98; // float32 m_angleChange; |  0xa98 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_forward = 0xa9c; // GlobalTypes::Vector m_forward; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_perp = 0xaa8; // GlobalTypes::Vector m_perp; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_poolOrigin = 0xab4; // GlobalTypes::Vector m_poolOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_waterLevel = 0xac0; // float32 m_waterLevel; |  0xac0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_speed = 0xac4; // float32 m_speed; |  0xac4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_desiredSpeed = 0xac8; // float32 m_desiredSpeed; |  0xac8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_calmSpeed = 0xacc; // float32 m_calmSpeed; |  0xacc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_panicSpeed = 0xad0; // float32 m_panicSpeed; |  0xad0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_avoidRange = 0xad4; // float32 m_avoidRange; |  0xad4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_turnTimer = 0xad8; // server::CountdownTimer m_turnTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_turnClockwise = 0xaf0; // bool m_turnClockwise; |  0xaf0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_goTimer = 0xaf8; // server::CountdownTimer m_goTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_moveTimer = 0xb10; // server::CountdownTimer m_moveTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_panicTimer = 0xb28; // server::CountdownTimer m_panicTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_disperseTimer = 0xb40; // server::CountdownTimer m_disperseTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_proximityTimer = 0xb58; // server::CountdownTimer m_proximityTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_visible = 0xb70; // server::CUtlVector< CFish >* m_visible; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -15,14 +15,18 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionLimitSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			int32_t m_nMaxCount; // 0x18 | Schema_Builtin | Size: 0x4
-			soundsystem::SosActionStopType_t m_nStopType; // 0x1c | Schema_DeclaredEnum | Size: 0x4
-			soundsystem::SosActionSortType_t m_nSortType; // 0x20 | Schema_DeclaredEnum | Size: 0x4
-			S2_PAD(0x4); // End padding
+			int32_t m_nMaxCount; // 0x8 | Schema_Builtin | Size: 0x4
+			soundsystem::SosActionStopType_t m_nStopType; // 0xc | Schema_DeclaredEnum | Size: 0x4
+			soundsystem::SosActionSortType_t m_nSortType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bStopImmediate; // 0x14 | Schema_Builtin | Size: 0x1
+			bool m_bCountStopped; // 0x15 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nMaxCount) == 0x18, "m_nMaxCount in CSosGroupActionLimitSchema should be at offset 0x18");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nStopType) == 0x1C, "m_nStopType in CSosGroupActionLimitSchema should be at offset 0x1C");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nSortType) == 0x20, "m_nSortType in CSosGroupActionLimitSchema should be at offset 0x20");
-		static_assert(sizeof(CS2::soundsystem::CSosGroupActionLimitSchema) == 0x28, "CSosGroupActionLimitSchema size should be 0x28");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nMaxCount) == 0x8, "m_nMaxCount in CSosGroupActionLimitSchema should be at offset 0x8");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nStopType) == 0xC, "m_nStopType in CSosGroupActionLimitSchema should be at offset 0xC");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nSortType) == 0x10, "m_nSortType in CSosGroupActionLimitSchema should be at offset 0x10");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_bStopImmediate) == 0x14, "m_bStopImmediate in CSosGroupActionLimitSchema should be at offset 0x14");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_bCountStopped) == 0x15, "m_bCountStopped in CSosGroupActionLimitSchema should be at offset 0x15");
+		static_assert(sizeof(CS2::soundsystem::CSosGroupActionLimitSchema) == 0x18, "CSosGroupActionLimitSchema size should be 0x18");
 	}
 }

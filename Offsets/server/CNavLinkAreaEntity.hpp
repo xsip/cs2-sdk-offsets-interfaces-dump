@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x5C0
 			namespace CNavLinkAreaEntity /*: public CS2::server::CPointEntity*/ {
 				constexpr std::ptrdiff_t m_flWidth = 0x4f0; // float32 m_flWidth; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLocatorOffset = 0x4f4; // GlobalTypes::Vector m_vLocatorOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLocatorOffset = 0x4f4; // GlobalTypes::VectorWS m_vLocatorOffset; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_qLocatorAnglesOffset = 0x500; // GlobalTypes::QAngle m_qLocatorAnglesOffset; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_strMovementForward = 0x510; // GlobalTypes::CUtlSymbolLarge m_strMovementForward; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_strMovementReverse = 0x518; // GlobalTypes::CUtlSymbolLarge m_strMovementReverse; |  Schema_Atomic | Size: 0x8

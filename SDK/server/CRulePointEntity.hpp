@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CRulePointEntity : public CS2::server::CRuleEntity {
 		public:
-			int32_t m_Score; // 0x7f0 | Schema_Builtin | Size: 0x4
+			int32_t m_Score; // 0x7f8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CRulePointEntity, m_Score) == 0x7F0, "m_Score in CRulePointEntity should be at offset 0x7F0");
-		static_assert(sizeof(CS2::server::CRulePointEntity) == 0x7F8, "CRulePointEntity size should be 0x7F8");
+		static_assert(offsetof(CS2::server::CRulePointEntity, m_Score) == 0x7F8, "m_Score in CRulePointEntity should be at offset 0x7F8");
+		static_assert(sizeof(CS2::server::CRulePointEntity) == 0x800, "CRulePointEntity size should be 0x800");
 	}
 }

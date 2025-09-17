@@ -7,8 +7,9 @@ namespace CS2 {
 	namespace client {
 		enum ObserverInterpState_t : std::uint32_t {
 			ObserverInterpState_t_OBSERVER_INTERP_NONE = 0x0,
-			ObserverInterpState_t_OBSERVER_INTERP_SETTLING = 0x2,
-			ObserverInterpState_t_OBSERVER_INTERP_TRAVELING = 0x1
+			ObserverInterpState_t_OBSERVER_INTERP_SETTLING = 0x3,
+			ObserverInterpState_t_OBSERVER_INTERP_STARTING = 0x1,
+			ObserverInterpState_t_OBSERVER_INTERP_TRAVELING = 0x2
 		};
 	}
 }

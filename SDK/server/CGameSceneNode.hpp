@@ -20,7 +20,7 @@ namespace CS2 {
 		class CGameSceneNode  {
 		public:
 			S2_PAD(0x10);
-			GlobalTypes::CTransform m_nodeToWorld; // 0x10 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CTransformWS m_nodeToWorld; // 0x10 | Schema_Atomic | Size: 0x20
 			entity2::CEntityInstance* m_pOwner; // 0x30 | Schema_Ptr | Size: 0x8
 			server::CGameSceneNode* m_pParent; // 0x38 | Schema_Ptr | Size: 0x8
 			server::CGameSceneNode* m_pChild; // 0x40 | Schema_Ptr | Size: 0x8
@@ -31,7 +31,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::QAngle m_angRotation; // 0xc0 | Schema_Atomic | Size: 0xc
 			float32 m_flScale; // 0xcc | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecAbsOrigin; // 0xd0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecAbsOrigin; // 0xd0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angAbsRotation; // 0xdc | Schema_Atomic | Size: 0xc
 			float32 m_flAbsScale; // 0xe8 | Schema_Builtin | Size: 0x4
 			int16_t m_nParentAttachmentOrBone; // 0xec | Schema_Builtin | Size: 0x2

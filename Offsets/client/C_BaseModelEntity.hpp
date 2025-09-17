@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEC0
+			// Class size: 0xEC8
 			namespace C_BaseModelEntity /*: public CS2::client::C_BaseEntity*/ {
 				constexpr std::ptrdiff_t m_CRenderComponent = 0xae0; // client::CRenderComponent* m_CRenderComponent; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_CHitboxComponent = 0xae8; // client::CHitboxComponent m_CHitboxComponent; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0xb10; // client::CDestructiblePartsSystemComponent* m_pDestructiblePartsSystemComponent; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0xb10; // client::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_LastHitGroup = 0xb18; // client::HitGroup_t m_LastHitGroup; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_sLastDamageSourceName = 0xb20; // GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_vLastDamagePosition = 0xb28; // GlobalTypes::Vector m_vLastDamagePosition; |  Schema_Atomic | Size: 0xc
@@ -48,6 +48,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_pClientAlphaProperty = 0xe78; // GlobalTypes::CClientAlphaProperty* m_pClientAlphaProperty; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_ClientOverrideTint = 0xe80; // GlobalTypes::Color m_ClientOverrideTint; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseClientOverrideTint = 0xe84; // bool m_bUseClientOverrideTint; |  0xe84 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0xec0; // uint32_t m_bvDisabledHitGroups[1]; |  0xec0 | Schema_FixedArray | Size: 0x4
 			}
 		}
 	}

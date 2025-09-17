@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x968
+			// Class size: 0x970
 			namespace CFuncTankTrain /*: public CS2::server::CFuncTrackTrain*/ {
-				constexpr std::ptrdiff_t m_OnDeath = 0x940; // entity2::CEntityIOOutput m_OnDeath; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnDeath = 0x948; // entity2::CEntityIOOutput m_OnDeath; |  Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

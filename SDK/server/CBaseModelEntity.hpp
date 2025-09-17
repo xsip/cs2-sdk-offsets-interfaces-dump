@@ -22,7 +22,7 @@
 namespace CS2 {
 	namespace server {
 		class CRenderComponent;
-		class CDestructiblePartsSystemComponent;
+		class CDestructiblePartsComponent;
 	}
 }
 namespace CS2 {
@@ -41,7 +41,7 @@ namespace CS2 {
 			int32_t m_nDestructiblePartInitialStateDestructed2_PartIndex; // 0x53c | Schema_Builtin | Size: 0x4
 			int32_t m_nDestructiblePartInitialStateDestructed3_PartIndex; // 0x540 | Schema_Builtin | Size: 0x4
 			int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex; // 0x544 | Schema_Builtin | Size: 0x4
-			server::CDestructiblePartsSystemComponent* m_pDestructiblePartsSystemComponent; // 0x548 | Schema_Ptr | Size: 0x8
+			server::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; // 0x548 | Schema_Ptr | Size: 0x8
 			client::HitGroup_t m_LastHitGroup; // 0x550 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; // 0x558 | Schema_Atomic | Size: 0x8
@@ -80,7 +80,9 @@ namespace CS2 {
 			char  m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18]; // 0x778 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28);
 			client::CNetworkViewOffsetVector m_vecViewOffset; // 0x7b8 | Schema_DeclaredClass | Size: 0x28
-			S2_PAD(0x8); // End padding
+			S2_PAD(0x8);
+			uint32_t m_bvDisabledHitGroups[1]; // 0x7e8 | Schema_FixedArray | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CBaseModelEntity, m_CRenderComponent) == 0x4F0, "m_CRenderComponent in CBaseModelEntity should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CBaseModelEntity, m_CHitboxComponent) == 0x4F8, "m_CHitboxComponent in CBaseModelEntity should be at offset 0x4F8");
@@ -124,6 +126,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nRequiredDecalMode) == 0x775, "m_nRequiredDecalMode in CBaseModelEntity should be at offset 0x775");
 		static_assert(offsetof(CS2::server::CBaseModelEntity, m_ConfigEntitiesToPropagateMaterialDecalsTo) == 0x778, "m_ConfigEntitiesToPropagateMaterialDecalsTo in CBaseModelEntity should be at offset 0x778");
 		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vecViewOffset) == 0x7B8, "m_vecViewOffset in CBaseModelEntity should be at offset 0x7B8");
-		static_assert(sizeof(CS2::server::CBaseModelEntity) == 0x7E8, "CBaseModelEntity size should be 0x7E8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bvDisabledHitGroups) == 0x7E8, "m_bvDisabledHitGroups in CBaseModelEntity should be at offset 0x7E8");
+		static_assert(sizeof(CS2::server::CBaseModelEntity) == 0x7F0, "CBaseModelEntity size should be 0x7F0");
 	}
 }

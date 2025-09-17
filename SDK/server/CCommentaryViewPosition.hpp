@@ -14,6 +14,6 @@ namespace CS2 {
 		class CCommentaryViewPosition : public CS2::server::CSprite {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CCommentaryViewPosition) == 0x858, "CCommentaryViewPosition size should be 0x858");
+		static_assert(sizeof(CS2::server::CCommentaryViewPosition) == 0x860, "CCommentaryViewPosition size should be 0x860");
 	}
 }

@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace host {
-			constexpr std::ptrdiff_t DebugDrawQueueManager001 = 0x138e30; 
-			constexpr std::ptrdiff_t GameModelInfo001 = 0x138e70; 
-			constexpr std::ptrdiff_t GameSystem2HostHook = 0x138eb0; 
-			constexpr std::ptrdiff_t HostUtils001 = 0x138ee0; 
-			constexpr std::ptrdiff_t PredictionDiffManager001 = 0x1390d0; 
-			constexpr std::ptrdiff_t SaveRestoreDataVersion001 = 0x139200; 
-			constexpr std::ptrdiff_t SinglePlayerSharedMemory001 = 0x139230; 
-			constexpr std::ptrdiff_t Source2Host001 = 0x1392a0; 
+			constexpr std::ptrdiff_t DebugDrawQueueManager001 = 0x138ef0; 
+			constexpr std::ptrdiff_t GameModelInfo001 = 0x138f30; 
+			constexpr std::ptrdiff_t GameSystem2HostHook = 0x138f70; 
+			constexpr std::ptrdiff_t HostUtils001 = 0x1466e0; 
+			constexpr std::ptrdiff_t PredictionDiffManager001 = 0x139080; 
+			constexpr std::ptrdiff_t SaveRestoreDataVersion001 = 0x1391b0; 
+			constexpr std::ptrdiff_t SinglePlayerSharedMemory001 = 0x1391e0; 
+			constexpr std::ptrdiff_t Source2Host001 = 0x139250; 
 		}
 	}
 }

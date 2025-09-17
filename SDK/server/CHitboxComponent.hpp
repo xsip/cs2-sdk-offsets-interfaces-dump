@@ -13,10 +13,11 @@ namespace CS2 {
 	namespace server {
 		class CHitboxComponent : public CS2::entity2::CEntityComponent {
 		public:
-			S2_PAD(0x1c);
-			uint32_t m_bvDisabledHitGroups[1]; // 0x24 | Schema_FixedArray | Size: 0x4
+			S2_PAD(0x18);
+			float32 m_flBoundsExpandRadius; // 0x20 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CHitboxComponent, m_bvDisabledHitGroups) == 0x24, "m_bvDisabledHitGroups in CHitboxComponent should be at offset 0x24");
+		static_assert(offsetof(CS2::server::CHitboxComponent, m_flBoundsExpandRadius) == 0x20, "m_flBoundsExpandRadius in CHitboxComponent should be at offset 0x20");
 		static_assert(sizeof(CS2::server::CHitboxComponent) == 0x28, "CHitboxComponent size should be 0x28");
 	}
 }

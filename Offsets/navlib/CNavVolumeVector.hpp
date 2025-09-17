@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace navlib {
-			// Class size: 0x98
+			// Class size: 0xA0
 			namespace CNavVolumeVector /*: public CS2::navlib::CNavVolume*/ {
-				constexpr std::ptrdiff_t m_bHasBeenPreFiltered = 0x78; // bool m_bHasBeenPreFiltered; |  0x78 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasBeenPreFiltered = 0x80; // bool m_bHasBeenPreFiltered; |  0x80 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

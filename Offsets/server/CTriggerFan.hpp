@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xA70
 			namespace CTriggerFan /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_vFanOrigin = 0x9b8; // GlobalTypes::Vector m_vFanOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vFanOriginOffset = 0x9c4; // GlobalTypes::Vector m_vFanOriginOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vFanEnd = 0x9d0; // GlobalTypes::Vector m_vFanEnd; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vNoiseDirectionTarget = 0x9dc; // GlobalTypes::Vector m_vNoiseDirectionTarget; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDirection = 0x9e8; // GlobalTypes::Vector m_vDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bPushTowardsInfoTarget = 0x9f4; // bool m_bPushTowardsInfoTarget; |  0x9f4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPushAwayFromInfoTarget = 0x9f5; // bool m_bPushAwayFromInfoTarget; |  0x9f5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vFanOrigin = 0x9c0; // GlobalTypes::VectorWS m_vFanOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanOriginOffset = 0x9cc; // GlobalTypes::Vector m_vFanOriginOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanEnd = 0x9d8; // GlobalTypes::Vector m_vFanEnd; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vNoiseDirectionTarget = 0x9e4; // GlobalTypes::Vector m_vNoiseDirectionTarget; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDirection = 0x9f0; // GlobalTypes::Vector m_vDirection; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bPushTowardsInfoTarget = 0x9fc; // bool m_bPushTowardsInfoTarget; |  0x9fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPushAwayFromInfoTarget = 0x9fd; // bool m_bPushAwayFromInfoTarget; |  0x9fd | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_qNoiseDelta = 0xa00; // GlobalTypes::Quaternion m_qNoiseDelta; |  Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_hInfoFan = 0xa10; // server::CHandle< server::CInfoFan > m_hInfoFan; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flForce = 0xa14; // float32 m_flForce; |  0xa14 | Schema_Builtin | Size: 0x4

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB08
+			// Class size: 0xB10
 			namespace CBaseFlexAlias_funCBaseFlex /*: public CS2::server::CBaseFlex*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -50,7 +50,7 @@ namespace CS2 {
 			bool m_bNoClipEnabled; // 0x750 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			uint32_t m_iDesiredFOV; // 0x754 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x98); // End padding
+			S2_PAD(0xb8); // End padding
 		};
 		static_assert(offsetof(CS2::server::CBasePlayerController, m_nInButtonsWhichAreToggles) == 0x4F8, "m_nInButtonsWhichAreToggles in CBasePlayerController should be at offset 0x4F8");
 		static_assert(offsetof(CS2::server::CBasePlayerController, m_nTickBase) == 0x500, "m_nTickBase in CBasePlayerController should be at offset 0x500");
@@ -76,6 +76,6 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBasePlayerController, m_steamID) == 0x748, "m_steamID in CBasePlayerController should be at offset 0x748");
 		static_assert(offsetof(CS2::server::CBasePlayerController, m_bNoClipEnabled) == 0x750, "m_bNoClipEnabled in CBasePlayerController should be at offset 0x750");
 		static_assert(offsetof(CS2::server::CBasePlayerController, m_iDesiredFOV) == 0x754, "m_iDesiredFOV in CBasePlayerController should be at offset 0x754");
-		static_assert(sizeof(CS2::server::CBasePlayerController) == 0x7F0, "CBasePlayerController size should be 0x7F0");
+		static_assert(sizeof(CS2::server::CBasePlayerController) == 0x810, "CBasePlayerController size should be 0x810");
 	}
 }

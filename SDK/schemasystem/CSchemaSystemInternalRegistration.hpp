@@ -14,7 +14,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector2D m_Vector2D; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_Vector; // 0x8 | Schema_Atomic | Size: 0xc
-			S2_PAD(0xc);
+			GlobalTypes::VectorWS m_VectorWS; // 0x14 | Schema_Atomic | Size: 0xc
 			GlobalTypes::VectorAligned m_VectorAligned; // 0x20 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Quaternion m_Quaternion; // 0x30 | Schema_Atomic | Size: 0x10
 			GlobalTypes::QAngle m_QAngle; // 0x40 | Schema_Atomic | Size: 0xc
@@ -42,6 +42,7 @@ namespace CS2 {
 		};
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_Vector2D) == 0x0, "m_Vector2D in CSchemaSystemInternalRegistration should be at offset 0x0");
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_Vector) == 0x8, "m_Vector in CSchemaSystemInternalRegistration should be at offset 0x8");
+		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_VectorWS) == 0x14, "m_VectorWS in CSchemaSystemInternalRegistration should be at offset 0x14");
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_VectorAligned) == 0x20, "m_VectorAligned in CSchemaSystemInternalRegistration should be at offset 0x20");
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_Quaternion) == 0x30, "m_Quaternion in CSchemaSystemInternalRegistration should be at offset 0x30");
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_QAngle) == 0x40, "m_QAngle in CSchemaSystemInternalRegistration should be at offset 0x40");

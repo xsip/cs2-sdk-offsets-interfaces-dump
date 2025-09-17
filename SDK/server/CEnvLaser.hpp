@@ -18,17 +18,17 @@ namespace CS2 {
 	namespace server {
 		class CEnvLaser : public CS2::server::CBeam {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszLaserTarget; // 0x888 | Schema_Atomic | Size: 0x8
-			server::CSprite* m_pSprite; // 0x890 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSpriteName; // 0x898 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_firePosition; // 0x8a0 | Schema_Atomic | Size: 0xc
-			float32 m_flStartFrame; // 0x8ac | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszLaserTarget; // 0x890 | Schema_Atomic | Size: 0x8
+			server::CSprite* m_pSprite; // 0x898 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSpriteName; // 0x8a0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector m_firePosition; // 0x8a8 | Schema_Atomic | Size: 0xc
+			float32 m_flStartFrame; // 0x8b4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CEnvLaser, m_iszLaserTarget) == 0x888, "m_iszLaserTarget in CEnvLaser should be at offset 0x888");
-		static_assert(offsetof(CS2::server::CEnvLaser, m_pSprite) == 0x890, "m_pSprite in CEnvLaser should be at offset 0x890");
-		static_assert(offsetof(CS2::server::CEnvLaser, m_iszSpriteName) == 0x898, "m_iszSpriteName in CEnvLaser should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CEnvLaser, m_firePosition) == 0x8A0, "m_firePosition in CEnvLaser should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CEnvLaser, m_flStartFrame) == 0x8AC, "m_flStartFrame in CEnvLaser should be at offset 0x8AC");
-		static_assert(sizeof(CS2::server::CEnvLaser) == 0x8B0, "CEnvLaser size should be 0x8B0");
+		static_assert(offsetof(CS2::server::CEnvLaser, m_iszLaserTarget) == 0x890, "m_iszLaserTarget in CEnvLaser should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CEnvLaser, m_pSprite) == 0x898, "m_pSprite in CEnvLaser should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CEnvLaser, m_iszSpriteName) == 0x8A0, "m_iszSpriteName in CEnvLaser should be at offset 0x8A0");
+		static_assert(offsetof(CS2::server::CEnvLaser, m_firePosition) == 0x8A8, "m_firePosition in CEnvLaser should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CEnvLaser, m_flStartFrame) == 0x8B4, "m_flStartFrame in CEnvLaser should be at offset 0x8B4");
+		static_assert(sizeof(CS2::server::CEnvLaser) == 0x8B8, "CEnvLaser size should be 0x8B8");
 	}
 }

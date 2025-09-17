@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace navlib {
 		class CNavVolumeSphere : public CS2::navlib::CNavVolume {
 		public:
-			GlobalTypes::Vector m_vCenter; // 0x70 | Schema_Atomic | Size: 0xc
-			float32 m_flRadius; // 0x7c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vCenter; // 0x78 | Schema_Atomic | Size: 0xc
+			float32 m_flRadius; // 0x84 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::navlib::CNavVolumeSphere, m_vCenter) == 0x70, "m_vCenter in CNavVolumeSphere should be at offset 0x70");
-		static_assert(offsetof(CS2::navlib::CNavVolumeSphere, m_flRadius) == 0x7C, "m_flRadius in CNavVolumeSphere should be at offset 0x7C");
-		static_assert(sizeof(CS2::navlib::CNavVolumeSphere) == 0x80, "CNavVolumeSphere size should be 0x80");
+		static_assert(offsetof(CS2::navlib::CNavVolumeSphere, m_vCenter) == 0x78, "m_vCenter in CNavVolumeSphere should be at offset 0x78");
+		static_assert(offsetof(CS2::navlib::CNavVolumeSphere, m_flRadius) == 0x84, "m_flRadius in CNavVolumeSphere should be at offset 0x84");
+		static_assert(sizeof(CS2::navlib::CNavVolumeSphere) == 0x88, "CNavVolumeSphere size should be 0x88");
 	}
 }

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1000
+			// Class size: 0x1008
 			namespace C_TriggerLerpObject /*: public CS2::client::C_BaseTrigger*/ {
 				// NO SCHEMA DATA FOUND!
 			}

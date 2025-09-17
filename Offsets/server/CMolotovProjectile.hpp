@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xD28
+			// Class size: 0xD30
 			namespace CMolotovProjectile /*: public CS2::server::CBaseCSGrenadeProjectile*/ {
-				constexpr std::ptrdiff_t m_bIsIncGrenade = 0xc20; // bool m_bIsIncGrenade; |  0xc20 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDetonated = 0xc38; // bool m_bDetonated; |  0xc38 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_stillTimer = 0xc40; // server::IntervalTimer m_stillTimer; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_bHasBouncedOffPlayer = 0xd20; // bool m_bHasBouncedOffPlayer; |  0xd20 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsIncGrenade = 0xc28; // bool m_bIsIncGrenade; |  0xc28 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDetonated = 0xc40; // bool m_bDetonated; |  0xc40 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_stillTimer = 0xc48; // server::IntervalTimer m_stillTimer; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_bHasBouncedOffPlayer = 0xd28; // bool m_bHasBouncedOffPlayer; |  0xd28 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace meshsystem {
-			constexpr std::ptrdiff_t MeshSystem001 = 0x1ca550; 
+			constexpr std::ptrdiff_t MeshSystem001 = 0x1c74d0; 
 		}
 	}
 }

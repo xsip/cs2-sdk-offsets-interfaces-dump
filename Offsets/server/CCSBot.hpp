@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x6D50
 			namespace CCSBot /*: public CS2::server::CBot*/ {
-				constexpr std::ptrdiff_t m_eyePosition = 0x108; // GlobalTypes::Vector m_eyePosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_eyePosition = 0x108; // GlobalTypes::VectorWS m_eyePosition; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_name = 0x114; // char m_name[64]; |  0x114 | Schema_FixedArray | Size: 0x40
 				constexpr std::ptrdiff_t m_combatRange = 0x154; // float32 m_combatRange; |  0x154 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_isRogue = 0x158; // bool m_isRogue; |  0x158 | Schema_Builtin | Size: 0x1

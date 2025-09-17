@@ -11,7 +11,8 @@ namespace CS2 {
 			EDestructibleParts_DestroyParameterFlags_ForceDamageApply = 0x4,
 			EDestructibleParts_DestroyParameterFlags_GenerateBreakpieces = 0x1,
 			EDestructibleParts_DestroyParameterFlags_IgnoreHealthCheck = 0x10,
-			EDestructibleParts_DestroyParameterFlags_IgnoreKillEntityFlag = 0x8
+			EDestructibleParts_DestroyParameterFlags_IgnoreKillEntityFlag = 0x8,
+			EDestructibleParts_DestroyParameterFlags_None = 0x0
 		};
 	}
 }

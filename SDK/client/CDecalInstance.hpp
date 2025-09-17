@@ -34,14 +34,13 @@ namespace CS2 {
 			float32 m_flFadeStartTime; // 0x5c | Schema_Builtin | Size: 0x4
 			float32 m_flFadeDuration; // 0x60 | Schema_Builtin | Size: 0x4
 			float32 m_flLightingOriginOffset; // 0x64 | Schema_Builtin | Size: 0x4
-			int32_t m_nVBSlot; // 0x68 | Schema_Builtin | Size: 0x4
-			S2_PAD(0xc);
-			float32 m_flBoundingRadiusSqr; // 0x78 | Schema_Builtin | Size: 0x4
-			int16_t m_nSequenceIndex; // 0x7c | Schema_Builtin | Size: 0x2
-			bool m_bIsAdjacent; // 0x7e | Schema_Builtin | Size: 0x1
-			bool m_bDoDecalLightmapping; // 0x7f | Schema_Builtin | Size: 0x1
-			GlobalTypes::CDecalInstance* m_pNext; // 0x80 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CDecalInstance* m_pPrev; // 0x88 | Schema_Ptr | Size: 0x8
+			S2_PAD(0x8);
+			float32 m_flBoundingRadiusSqr; // 0x70 | Schema_Builtin | Size: 0x4
+			int16_t m_nSequenceIndex; // 0x74 | Schema_Builtin | Size: 0x2
+			bool m_bIsAdjacent; // 0x76 | Schema_Builtin | Size: 0x1
+			bool m_bDoDecalLightmapping; // 0x77 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CDecalInstance* m_pNext; // 0x78 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CDecalInstance* m_pPrev; // 0x80 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CDecalInstance, m_sDecalGroup) == 0x0, "m_sDecalGroup in CDecalInstance should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_hMaterial) == 0x8, "m_hMaterial in CDecalInstance should be at offset 0x8");
@@ -61,13 +60,12 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CDecalInstance, m_flFadeStartTime) == 0x5C, "m_flFadeStartTime in CDecalInstance should be at offset 0x5C");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_flFadeDuration) == 0x60, "m_flFadeDuration in CDecalInstance should be at offset 0x60");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_flLightingOriginOffset) == 0x64, "m_flLightingOriginOffset in CDecalInstance should be at offset 0x64");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_nVBSlot) == 0x68, "m_nVBSlot in CDecalInstance should be at offset 0x68");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flBoundingRadiusSqr) == 0x78, "m_flBoundingRadiusSqr in CDecalInstance should be at offset 0x78");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_nSequenceIndex) == 0x7C, "m_nSequenceIndex in CDecalInstance should be at offset 0x7C");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_bIsAdjacent) == 0x7E, "m_bIsAdjacent in CDecalInstance should be at offset 0x7E");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_bDoDecalLightmapping) == 0x7F, "m_bDoDecalLightmapping in CDecalInstance should be at offset 0x7F");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_pNext) == 0x80, "m_pNext in CDecalInstance should be at offset 0x80");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_pPrev) == 0x88, "m_pPrev in CDecalInstance should be at offset 0x88");
-		static_assert(sizeof(CS2::client::CDecalInstance) == 0x90, "CDecalInstance size should be 0x90");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flBoundingRadiusSqr) == 0x70, "m_flBoundingRadiusSqr in CDecalInstance should be at offset 0x70");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_nSequenceIndex) == 0x74, "m_nSequenceIndex in CDecalInstance should be at offset 0x74");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_bIsAdjacent) == 0x76, "m_bIsAdjacent in CDecalInstance should be at offset 0x76");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_bDoDecalLightmapping) == 0x77, "m_bDoDecalLightmapping in CDecalInstance should be at offset 0x77");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_pNext) == 0x78, "m_pNext in CDecalInstance should be at offset 0x78");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_pPrev) == 0x80, "m_pPrev in CDecalInstance should be at offset 0x80");
+		static_assert(sizeof(CS2::client::CDecalInstance) == 0x88, "CDecalInstance size should be 0x88");
 	}
 }

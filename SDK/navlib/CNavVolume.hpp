@@ -12,8 +12,8 @@ namespace CS2 {
 	namespace navlib {
 		class CNavVolume  {
 		public:
-			S2_PAD(0x70);
+			S2_PAD(0x78);
 		};
-		static_assert(sizeof(CS2::navlib::CNavVolume) == 0x70, "CNavVolume size should be 0x70");
+		static_assert(sizeof(CS2::navlib::CNavVolume) == 0x78, "CNavVolume size should be 0x78");
 	}
 }

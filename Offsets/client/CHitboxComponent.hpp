@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x28
 			namespace CHitboxComponent /*: public CS2::entity2::CEntityComponent*/ {
-				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0x24; // uint32_t m_bvDisabledHitGroups[1]; |  0x24 | Schema_FixedArray | Size: 0x4
+				constexpr std::ptrdiff_t m_flBoundsExpandRadius = 0x20; // float32 m_flBoundsExpandRadius; |  0x20 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

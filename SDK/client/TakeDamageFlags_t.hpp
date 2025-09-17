@@ -10,20 +10,21 @@ namespace CS2 {
 			TakeDamageFlags_t_DFLAG_ALWAYS_GIB = 0x20,
 			TakeDamageFlags_t_DFLAG_FORCEREDUCEARMOR_DMG = 0x800,
 			TakeDamageFlags_t_DFLAG_FORCE_DEATH = 0x10,
-			TakeDamageFlags_t_DFLAG_IGNORE_ARMOR = 0x4000,
+			TakeDamageFlags_t_DFLAG_IGNORE_ARMOR = 0x8000,
 			TakeDamageFlags_t_DFLAG_IGNORE_DESTRUCTIBLE_PARTS = 0x2000,
 			TakeDamageFlags_t_DFLAG_NEVER_GIB = 0x40,
 			TakeDamageFlags_t_DFLAG_NONE = 0x0,
 			TakeDamageFlags_t_DFLAG_PREVENT_DEATH = 0x8,
 			TakeDamageFlags_t_DFLAG_RADIUS_DMG = 0x400,
 			TakeDamageFlags_t_DFLAG_REMOVE_NO_RAGDOLL = 0x80,
+			TakeDamageFlags_t_DFLAG_SUPPRESS_BREAKABLES = 0x4000,
 			TakeDamageFlags_t_DFLAG_SUPPRESS_DAMAGE_MODIFICATION = 0x100,
 			TakeDamageFlags_t_DFLAG_SUPPRESS_EFFECTS = 0x4,
 			TakeDamageFlags_t_DFLAG_SUPPRESS_HEALTH_CHANGES = 0x1,
 			TakeDamageFlags_t_DFLAG_SUPPRESS_INTERRUPT_FLINCH = 0x1000,
 			TakeDamageFlags_t_DFLAG_SUPPRESS_PHYSICS_FORCE = 0x2,
-			TakeDamageFlags_t_DFLAG_SUPPRESS_UTILREMOVE = 0x8000,
-			TakeDamageFlags_t_DMG_LASTDFLAG = 0x2000
+			TakeDamageFlags_t_DFLAG_SUPPRESS_UTILREMOVE = 0x10000,
+			TakeDamageFlags_t_DMG_LASTDFLAG = 0x4000
 		};
 	}
 }

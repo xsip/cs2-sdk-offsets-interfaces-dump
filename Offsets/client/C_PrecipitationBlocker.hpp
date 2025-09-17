@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEC0
+			// Class size: 0xEC8
 			namespace C_PrecipitationBlocker /*: public CS2::client::C_BaseModelEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

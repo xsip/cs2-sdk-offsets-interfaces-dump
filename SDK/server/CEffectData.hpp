@@ -14,8 +14,8 @@ namespace CS2 {
 		class CEffectData  {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::Vector m_vOrigin; // 0x8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vStart; // 0x14 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vOrigin; // 0x8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vStart; // 0x14 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vNormal; // 0x20 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_vAngles; // 0x2c | Schema_Atomic | Size: 0xc
 			GlobalTypes::CEntityHandle m_hEntity; // 0x38 | Schema_Atomic | Size: 0x4

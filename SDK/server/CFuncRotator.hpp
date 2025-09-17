@@ -17,17 +17,17 @@ namespace CS2 {
 	namespace server {
 		class CFuncRotator : public CS2::server::CBaseModelEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hRotatorTarget; // 0x7e8 | Schema_Atomic | Size: 0x4
-			char  m_hRotatorTarget[0x4]; // 0x7e8 | Schema_Atomic | Size: 0x4
-			bool m_bIsRotating; // 0x7ec | Schema_Builtin | Size: 0x1
-			bool m_bIsReversing; // 0x7ed | Schema_Builtin | Size: 0x1
+			// server::CHandle< server::CBaseEntity > m_hRotatorTarget; // 0x7f0 | Schema_Atomic | Size: 0x4
+			char  m_hRotatorTarget[0x4]; // 0x7f0 | Schema_Atomic | Size: 0x4
+			bool m_bIsRotating; // 0x7f4 | Schema_Builtin | Size: 0x1
+			bool m_bIsReversing; // 0x7f5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flTimeToReachMaxSpeed; // 0x7f0 | Schema_Builtin | Size: 0x4
-			float32 m_flTimeToReachZeroSpeed; // 0x7f4 | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceAlongArcTraveled; // 0x7f8 | Schema_Builtin | Size: 0x4
-			float32 m_flTimeToWaitOscillate; // 0x7fc | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flTimeRotationStart; // 0x800 | Schema_DeclaredClass | Size: 0x4
-			S2_PAD(0xc);
+			float32 m_flTimeToReachMaxSpeed; // 0x7f8 | Schema_Builtin | Size: 0x4
+			float32 m_flTimeToReachZeroSpeed; // 0x7fc | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceAlongArcTraveled; // 0x800 | Schema_Builtin | Size: 0x4
+			float32 m_flTimeToWaitOscillate; // 0x804 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flTimeRotationStart; // 0x808 | Schema_DeclaredClass | Size: 0x4
+			S2_PAD(0x4);
 			GlobalTypes::Quaternion m_qLSPrevChange; // 0x810 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Quaternion m_qWSPrev; // 0x820 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Quaternion m_qWSInit; // 0x830 | Schema_Atomic | Size: 0x10
@@ -64,14 +64,14 @@ namespace CS2 {
 			// GlobalTypes::CUtlVector< server::RotatorHistoryEntry_t > m_vecRotatorQueueHistory; // 0xa08 | Schema_Atomic | Size: 0x18
 			char  m_vecRotatorQueueHistory[0x18]; // 0xa08 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CFuncRotator, m_hRotatorTarget) == 0x7E8, "m_hRotatorTarget in CFuncRotator should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CFuncRotator, m_bIsRotating) == 0x7EC, "m_bIsRotating in CFuncRotator should be at offset 0x7EC");
-		static_assert(offsetof(CS2::server::CFuncRotator, m_bIsReversing) == 0x7ED, "m_bIsReversing in CFuncRotator should be at offset 0x7ED");
-		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeToReachMaxSpeed) == 0x7F0, "m_flTimeToReachMaxSpeed in CFuncRotator should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeToReachZeroSpeed) == 0x7F4, "m_flTimeToReachZeroSpeed in CFuncRotator should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CFuncRotator, m_flDistanceAlongArcTraveled) == 0x7F8, "m_flDistanceAlongArcTraveled in CFuncRotator should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeToWaitOscillate) == 0x7FC, "m_flTimeToWaitOscillate in CFuncRotator should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeRotationStart) == 0x800, "m_flTimeRotationStart in CFuncRotator should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_hRotatorTarget) == 0x7F0, "m_hRotatorTarget in CFuncRotator should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_bIsRotating) == 0x7F4, "m_bIsRotating in CFuncRotator should be at offset 0x7F4");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_bIsReversing) == 0x7F5, "m_bIsReversing in CFuncRotator should be at offset 0x7F5");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeToReachMaxSpeed) == 0x7F8, "m_flTimeToReachMaxSpeed in CFuncRotator should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeToReachZeroSpeed) == 0x7FC, "m_flTimeToReachZeroSpeed in CFuncRotator should be at offset 0x7FC");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_flDistanceAlongArcTraveled) == 0x800, "m_flDistanceAlongArcTraveled in CFuncRotator should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeToWaitOscillate) == 0x804, "m_flTimeToWaitOscillate in CFuncRotator should be at offset 0x804");
+		static_assert(offsetof(CS2::server::CFuncRotator, m_flTimeRotationStart) == 0x808, "m_flTimeRotationStart in CFuncRotator should be at offset 0x808");
 		static_assert(offsetof(CS2::server::CFuncRotator, m_qLSPrevChange) == 0x810, "m_qLSPrevChange in CFuncRotator should be at offset 0x810");
 		static_assert(offsetof(CS2::server::CFuncRotator, m_qWSPrev) == 0x820, "m_qWSPrev in CFuncRotator should be at offset 0x820");
 		static_assert(offsetof(CS2::server::CFuncRotator, m_qWSInit) == 0x830, "m_qWSInit in CFuncRotator should be at offset 0x830");

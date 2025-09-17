@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1180
 			namespace C_KeychainModule /*: public CS2::client::C_CS2WeaponModuleBase*/ {
-				constexpr std::ptrdiff_t m_nKeychainDefID = 0x1170; // uint32_t m_nKeychainDefID; |  0x1170 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nKeychainSeed = 0x1174; // uint32_t m_nKeychainSeed; |  0x1174 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nKeychainDefID = 0x1178; // uint32_t m_nKeychainDefID; |  0x1178 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nKeychainSeed = 0x117c; // uint32_t m_nKeychainSeed; |  0x117c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

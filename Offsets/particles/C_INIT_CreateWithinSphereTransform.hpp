@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1B40
+			// Class size: 0x1B38
 			namespace C_INIT_CreateWithinSphereTransform /*: public CS2::particles::CParticleFunctionInitializer*/ {
 				constexpr std::ptrdiff_t m_fRadiusMin = 0x1c8; // particleslib::CPerParticleFloatInput m_fRadiusMin; |  Schema_DeclaredClass | Size: 0x160
 				constexpr std::ptrdiff_t m_fRadiusMax = 0x328; // particleslib::CPerParticleFloatInput m_fRadiusMax; |  Schema_DeclaredClass | Size: 0x160
@@ -19,11 +19,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_fSpeedMax = 0xcd8; // particleslib::CPerParticleFloatInput m_fSpeedMax; |  Schema_DeclaredClass | Size: 0x160
 				constexpr std::ptrdiff_t m_fSpeedRandExp = 0xe38; // float32 m_fSpeedRandExp; |  0xe38 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bLocalCoords = 0xe3c; // bool m_bLocalCoords; |  0xe3c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flEndCPGrowthTime = 0xe40; // float32 m_flEndCPGrowthTime; |  0xe40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LocalCoordinateSystemSpeedMin = 0xe48; // particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_LocalCoordinateSystemSpeedMax = 0x14c0; // particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1b38; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldVelocity = 0x1b3c; // particles::ParticleAttributeIndex_t m_nFieldVelocity; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_LocalCoordinateSystemSpeedMin = 0xe40; // particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_LocalCoordinateSystemSpeedMax = 0x14b8; // particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1b30; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldVelocity = 0x1b34; // particles::ParticleAttributeIndex_t m_nFieldVelocity; |  Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

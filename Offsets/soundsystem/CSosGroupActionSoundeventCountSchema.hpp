@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem {
-			// Class size: 0x28
+			// Class size: 0x18
 			namespace CSosGroupActionSoundeventCountSchema /*: public CS2::soundsystem::CSosGroupActionSchema*/ {
-				constexpr std::ptrdiff_t m_bExcludeStoppedSounds = 0x18; // bool m_bExcludeStoppedSounds; |  0x18 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_strCountKeyName = 0x20; // GlobalTypes::CUtlString m_strCountKeyName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bExcludeStoppedSounds = 0x8; // bool m_bExcludeStoppedSounds; |  0x8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_strCountKeyName = 0x10; // GlobalTypes::CUtlString m_strCountKeyName; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

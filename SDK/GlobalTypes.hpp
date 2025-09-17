@@ -31,6 +31,7 @@ namespace GlobalTypes {
 	using CEntityHandle /*CEntityHandle*/ = char[0x4]; //  Schema_Atomic
 	using CAnimGraphTagRef /*CAnimGraphTagRef*/ = char[0x18]; //  Schema_Atomic
 	using RotationVector /*RotationVector*/ = char[0xc]; //  Schema_Atomic
+	using VectorWS /*VectorWS*/ = char[0xc]; //  Schema_Atomic
 	using Vector2D /*Vector2D*/ = char[0x8]; //  Schema_Atomic
 	using CEntityIndex /*CEntityIndex*/ = char[0x4]; //  Schema_Atomic
 	using CSplitScreenSlot /*CSplitScreenSlot*/ = char[0x4]; //  Schema_Atomic
@@ -39,6 +40,7 @@ namespace GlobalTypes {
 	using KeyValues3 /*KeyValues3*/ = char[0x10]; //  Schema_Atomic
 	using CPlayerSlot /*CPlayerSlot*/ = char[0x4]; //  Schema_Atomic
 	using matrix3x4_t /*matrix3x4_t*/ = char[0x30]; //  Schema_Atomic
+	using CTransformWS /*CTransformWS*/ = char[0x20]; //  Schema_Atomic
 	using HSCRIPT /*HSCRIPT*/ = char[0x8]; //  Schema_Atomic
 	using WorldGroupId_t /*WorldGroupId_t*/ = char[0x4]; //  Schema_Atomic
 	using CUtlBinaryBlock /*CUtlBinaryBlock*/ = char[0x10]; //  Schema_Atomic

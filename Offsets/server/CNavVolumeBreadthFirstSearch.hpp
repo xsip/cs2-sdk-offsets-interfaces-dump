@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB8
+			// Class size: 0xC0
 			namespace CNavVolumeBreadthFirstSearch /*: public CS2::server::CNavVolumeCalculatedVector*/ {
-				constexpr std::ptrdiff_t m_vStartPos = 0xa0; // GlobalTypes::Vector m_vStartPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flSearchDist = 0xac; // float32 m_flSearchDist; |  0xac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vStartPos = 0xa8; // GlobalTypes::Vector m_vStartPos; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flSearchDist = 0xb4; // float32 m_flSearchDist; |  0xb4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

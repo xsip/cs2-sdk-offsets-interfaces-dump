@@ -5,21 +5,17 @@
 
 #include <SDK/GlobalTypes.hpp>
 
-#include <SDK/smartprops/CSmartPropElement.hpp>
+#include <SDK/smartprops/CSmartPropElement_ModelEntity.hpp>
 
 
 
 namespace CS2 {
 	namespace smartprops {
-		class CSmartPropElement_PropPhysics : public CS2::smartprops::CSmartPropElement {
+		class CSmartPropElement_PropPhysics : public CS2::smartprops::CSmartPropElement_ModelEntity {
 		public:
-			GlobalTypes::CSmartPropAttributeModelName m_sModelName; // 0x88 | Schema_Atomic | Size: 0x40
-			GlobalTypes::CSmartPropAttributeMaterialGroup m_MaterialGroupName; // 0xc8 | Schema_Atomic | Size: 0x40
-			GlobalTypes::CSmartPropAttributeBool m_bStartAsleep; // 0x108 | Schema_Atomic | Size: 0x40
+			GlobalTypes::CSmartPropAttributeBool m_bStartAsleep; // 0x190 | Schema_Atomic | Size: 0x40
 		};
-		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PropPhysics, m_sModelName) == 0x88, "m_sModelName in CSmartPropElement_PropPhysics should be at offset 0x88");
-		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PropPhysics, m_MaterialGroupName) == 0xC8, "m_MaterialGroupName in CSmartPropElement_PropPhysics should be at offset 0xC8");
-		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PropPhysics, m_bStartAsleep) == 0x108, "m_bStartAsleep in CSmartPropElement_PropPhysics should be at offset 0x108");
-		static_assert(sizeof(CS2::smartprops::CSmartPropElement_PropPhysics) == 0x148, "CSmartPropElement_PropPhysics size should be 0x148");
+		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PropPhysics, m_bStartAsleep) == 0x190, "m_bStartAsleep in CSmartPropElement_PropPhysics should be at offset 0x190");
+		static_assert(sizeof(CS2::smartprops::CSmartPropElement_PropPhysics) == 0x1D0, "CSmartPropElement_PropPhysics size should be 0x1D0");
 	}
 }

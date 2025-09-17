@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace navlib {
 		class CNavVolumeSphericalShell : public CS2::navlib::CNavVolumeSphere {
 		public:
-			float32 m_flRadiusInner; // 0x80 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusInner; // 0x88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::navlib::CNavVolumeSphericalShell, m_flRadiusInner) == 0x80, "m_flRadiusInner in CNavVolumeSphericalShell should be at offset 0x80");
-		static_assert(sizeof(CS2::navlib::CNavVolumeSphericalShell) == 0x88, "CNavVolumeSphericalShell size should be 0x88");
+		static_assert(offsetof(CS2::navlib::CNavVolumeSphericalShell, m_flRadiusInner) == 0x88, "m_flRadiusInner in CNavVolumeSphericalShell should be at offset 0x88");
+		static_assert(sizeof(CS2::navlib::CNavVolumeSphericalShell) == 0x90, "CNavVolumeSphericalShell size should be 0x90");
 	}
 }

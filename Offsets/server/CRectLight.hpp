@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB18
+			// Class size: 0xB20
 			namespace CRectLight /*: public CS2::server::CBarnLight*/ {
-				constexpr std::ptrdiff_t m_bShowLight = 0xb10; // bool m_bShowLight; |  0xb10 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bShowLight = 0xb18; // bool m_bShowLight; |  0xb18 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

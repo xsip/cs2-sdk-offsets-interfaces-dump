@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7F0
+			// Class size: 0x810
 			namespace CBasePlayerController /*: public CS2::server::CBaseEntity*/ {
 				constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x4f8; // uint64_t m_nInButtonsWhichAreToggles; |  0x4f8 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_nTickBase = 0x500; // uint32_t m_nTickBase; |  0x500 | Schema_Builtin | Size: 0x4

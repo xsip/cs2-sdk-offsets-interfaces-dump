@@ -14,6 +14,6 @@ namespace CS2 {
 		class CDecoyGrenade : public CS2::server::CBaseCSGrenade {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CDecoyGrenade) == 0x1070, "CDecoyGrenade size should be 0x1070");
+		static_assert(sizeof(CS2::server::CDecoyGrenade) == 0x11E8, "CDecoyGrenade size should be 0x11E8");
 	}
 }

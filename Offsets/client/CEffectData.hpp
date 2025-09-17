@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x78
 			namespace CEffectData /**/ {
-				constexpr std::ptrdiff_t m_vOrigin = 0x8; // GlobalTypes::Vector m_vOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vStart = 0x14; // GlobalTypes::Vector m_vStart; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOrigin = 0x8; // GlobalTypes::VectorWS m_vOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vStart = 0x14; // GlobalTypes::VectorWS m_vStart; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vNormal = 0x20; // GlobalTypes::Vector m_vNormal; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vAngles = 0x2c; // GlobalTypes::QAngle m_vAngles; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_hEntity = 0x38; // GlobalTypes::CEntityHandle m_hEntity; |  Schema_Atomic | Size: 0x4

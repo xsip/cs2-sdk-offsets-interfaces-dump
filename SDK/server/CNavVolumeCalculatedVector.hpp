@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x28);
 		};
-		static_assert(sizeof(CS2::server::CNavVolumeCalculatedVector) == 0x98, "CNavVolumeCalculatedVector size should be 0x98");
+		static_assert(sizeof(CS2::server::CNavVolumeCalculatedVector) == 0xA0, "CNavVolumeCalculatedVector size should be 0xA0");
 	}
 }

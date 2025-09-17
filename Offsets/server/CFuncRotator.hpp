@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xA20
 			namespace CFuncRotator /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_hRotatorTarget = 0x7e8; // server::CHandle< server::CBaseEntity > m_hRotatorTarget; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsRotating = 0x7ec; // bool m_bIsRotating; |  0x7ec | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsReversing = 0x7ed; // bool m_bIsReversing; |  0x7ed | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flTimeToReachMaxSpeed = 0x7f0; // float32 m_flTimeToReachMaxSpeed; |  0x7f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeToReachZeroSpeed = 0x7f4; // float32 m_flTimeToReachZeroSpeed; |  0x7f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistanceAlongArcTraveled = 0x7f8; // float32 m_flDistanceAlongArcTraveled; |  0x7f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeToWaitOscillate = 0x7fc; // float32 m_flTimeToWaitOscillate; |  0x7fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeRotationStart = 0x800; // entity2::GameTime_t m_flTimeRotationStart; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hRotatorTarget = 0x7f0; // server::CHandle< server::CBaseEntity > m_hRotatorTarget; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsRotating = 0x7f4; // bool m_bIsRotating; |  0x7f4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsReversing = 0x7f5; // bool m_bIsReversing; |  0x7f5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flTimeToReachMaxSpeed = 0x7f8; // float32 m_flTimeToReachMaxSpeed; |  0x7f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeToReachZeroSpeed = 0x7fc; // float32 m_flTimeToReachZeroSpeed; |  0x7fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistanceAlongArcTraveled = 0x800; // float32 m_flDistanceAlongArcTraveled; |  0x800 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeToWaitOscillate = 0x804; // float32 m_flTimeToWaitOscillate; |  0x804 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeRotationStart = 0x808; // entity2::GameTime_t m_flTimeRotationStart; |  Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_qLSPrevChange = 0x810; // GlobalTypes::Quaternion m_qLSPrevChange; |  Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_qWSPrev = 0x820; // GlobalTypes::Quaternion m_qWSPrev; |  Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_qWSInit = 0x830; // GlobalTypes::Quaternion m_qWSInit; |  Schema_Atomic | Size: 0x10

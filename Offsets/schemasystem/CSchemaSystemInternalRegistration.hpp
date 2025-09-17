@@ -12,6 +12,7 @@ namespace CS2 {
 			namespace CSchemaSystemInternalRegistration /**/ {
 				constexpr std::ptrdiff_t m_Vector2D = 0x0; // GlobalTypes::Vector2D m_Vector2D; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_Vector = 0x8; // GlobalTypes::Vector m_Vector; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_VectorWS = 0x14; // GlobalTypes::VectorWS m_VectorWS; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_VectorAligned = 0x20; // GlobalTypes::VectorAligned m_VectorAligned; |  Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_Quaternion = 0x30; // GlobalTypes::Quaternion m_Quaternion; |  Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_QAngle = 0x40; // GlobalTypes::QAngle m_QAngle; |  Schema_Atomic | Size: 0xc

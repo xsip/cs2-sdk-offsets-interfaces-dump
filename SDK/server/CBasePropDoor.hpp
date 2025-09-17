@@ -37,7 +37,7 @@ namespace CS2 {
 			server::locksound_t m_ls; // 0xda0 | Schema_DeclaredClass | Size: 0x20
 			bool m_bForceClosed; // 0xdc0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vecLatchWorldPosition; // 0xdc4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecLatchWorldPosition; // 0xdc4 | Schema_Atomic | Size: 0xc
 			// server::CHandle< server::CBaseEntity > m_hActivator; // 0xdd0 | Schema_Atomic | Size: 0x4
 			char  m_hActivator[0x4]; // 0xdd0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);

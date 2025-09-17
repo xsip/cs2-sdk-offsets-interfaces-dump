@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1400
+			// Class size: 0x1408
 			namespace C_NetTestBaseCombatCharacter /*: public CS2::client::C_BaseCombatCharacter*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -14,6 +14,6 @@ namespace CS2 {
 		class CWeaponMP5SD : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CWeaponMP5SD) == 0x1050, "CWeaponMP5SD size should be 0x1050");
+		static_assert(sizeof(CS2::server::CWeaponMP5SD) == 0x11C8, "CWeaponMP5SD size should be 0x11C8");
 	}
 }

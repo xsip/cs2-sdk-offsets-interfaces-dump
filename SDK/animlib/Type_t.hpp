@@ -6,8 +6,8 @@
 namespace CS2 {
 	namespace animlib {
 		enum Type_t : std::uint32_t {
-			Type_t_Play = 0x0,
-			Type_t_Stop = 0x1
+			Type_t_Create = 0x0,
+			Type_t_Create_CFG = 0x1
 		};
 	}
 }

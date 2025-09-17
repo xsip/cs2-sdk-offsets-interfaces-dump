@@ -7,7 +7,6 @@
 
 #include <SDK/animlib/CNmEvent.hpp>
 #include <SDK/animlib/CNmEventRelevance_t.hpp>
-#include <SDK/animlib/Type_t.hpp>
 #include <SDK/animlib/Position_t.hpp>
 
 
@@ -17,25 +16,22 @@ namespace CS2 {
 		class CNmSoundEvent : public CS2::animlib::CNmEvent {
 		public:
 			animlib::CNmEventRelevance_t m_relevance; // 0x20 | Schema_DeclaredEnum | Size: 0x4
-			animlib::Type_t m_type; // 0x24 | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_name; // 0x28 | Schema_Atomic | Size: 0x8
 			animlib::Position_t m_position; // 0x30 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_attachmentName; // 0x38 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_tags; // 0x40 | Schema_Atomic | Size: 0x8
-			bool m_bIsServerOnly; // 0x48 | Schema_Builtin | Size: 0x1
-			bool m_bContinuePlayingSoundAtDurationEnd; // 0x49 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x2);
+			bool m_bContinuePlayingSoundAtDurationEnd; // 0x48 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3);
 			float32 m_flDurationInterruptionThreshold; // 0x4c | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_relevance) == 0x20, "m_relevance in CNmSoundEvent should be at offset 0x20");
-		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_type) == 0x24, "m_type in CNmSoundEvent should be at offset 0x24");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_name) == 0x28, "m_name in CNmSoundEvent should be at offset 0x28");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_position) == 0x30, "m_position in CNmSoundEvent should be at offset 0x30");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_attachmentName) == 0x38, "m_attachmentName in CNmSoundEvent should be at offset 0x38");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_tags) == 0x40, "m_tags in CNmSoundEvent should be at offset 0x40");
-		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_bIsServerOnly) == 0x48, "m_bIsServerOnly in CNmSoundEvent should be at offset 0x48");
-		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_bContinuePlayingSoundAtDurationEnd) == 0x49, "m_bContinuePlayingSoundAtDurationEnd in CNmSoundEvent should be at offset 0x49");
+		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_bContinuePlayingSoundAtDurationEnd) == 0x48, "m_bContinuePlayingSoundAtDurationEnd in CNmSoundEvent should be at offset 0x48");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_flDurationInterruptionThreshold) == 0x4C, "m_flDurationInterruptionThreshold in CNmSoundEvent should be at offset 0x4C");
 		static_assert(sizeof(CS2::animlib::CNmSoundEvent) == 0x50, "CNmSoundEvent size should be 0x50");
 	}

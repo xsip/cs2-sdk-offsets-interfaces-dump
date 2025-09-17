@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1E50
+			// Class size: 0x1FD0
 			namespace C_WeaponCZ75a /*: public CS2::client::C_CSWeaponBaseGun*/ {
-				constexpr std::ptrdiff_t m_bMagazineRemoved = 0x1e40; // bool m_bMagazineRemoved; |  0x1e40 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bMagazineRemoved = 0x1fc0; // bool m_bMagazineRemoved; |  0x1fc0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

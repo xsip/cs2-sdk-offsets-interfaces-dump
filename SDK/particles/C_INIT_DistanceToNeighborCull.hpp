@@ -7,6 +7,8 @@
 
 #include <SDK/particles/CParticleFunctionInitializer.hpp>
 #include <SDK/particleslib/CPerParticleFloatInput.hpp>
+#include <SDK/particles/ParticleAttributeIndex_t.hpp>
+#include <SDK/particles/ParticleSetMethod_t.hpp>
 
 
 
@@ -18,10 +20,20 @@ namespace CS2 {
 			bool m_bIncludeRadii; // 0x328 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			particleslib::CPerParticleFloatInput m_flLifespanOverlap; // 0x330 | Schema_DeclaredClass | Size: 0x160
+			particles::ParticleAttributeIndex_t m_nFieldModify; // 0x490 | Schema_DeclaredClass | Size: 0x4
+			S2_PAD(0x4);
+			particleslib::CPerParticleFloatInput m_flModify; // 0x498 | Schema_DeclaredClass | Size: 0x160
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x5f8 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bUseNeighbor; // 0x5fc | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3); // End padding
 		};
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_flDistance) == 0x1C8, "m_flDistance in C_INIT_DistanceToNeighborCull should be at offset 0x1C8");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_bIncludeRadii) == 0x328, "m_bIncludeRadii in C_INIT_DistanceToNeighborCull should be at offset 0x328");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_flLifespanOverlap) == 0x330, "m_flLifespanOverlap in C_INIT_DistanceToNeighborCull should be at offset 0x330");
-		static_assert(sizeof(CS2::particles::C_INIT_DistanceToNeighborCull) == 0x490, "C_INIT_DistanceToNeighborCull size should be 0x490");
+		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_nFieldModify) == 0x490, "m_nFieldModify in C_INIT_DistanceToNeighborCull should be at offset 0x490");
+		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_flModify) == 0x498, "m_flModify in C_INIT_DistanceToNeighborCull should be at offset 0x498");
+		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_nSetMethod) == 0x5F8, "m_nSetMethod in C_INIT_DistanceToNeighborCull should be at offset 0x5F8");
+		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_bUseNeighbor) == 0x5FC, "m_bUseNeighbor in C_INIT_DistanceToNeighborCull should be at offset 0x5FC");
+		static_assert(sizeof(CS2::particles::C_INIT_DistanceToNeighborCull) == 0x600, "C_INIT_DistanceToNeighborCull size should be 0x600");
 	}
 }

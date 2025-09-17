@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x858
+			// Class size: 0x860
 			namespace CSpriteAlias_env_glow /*: public CS2::server::CSprite*/ {
 				// NO SCHEMA DATA FOUND!
 			}

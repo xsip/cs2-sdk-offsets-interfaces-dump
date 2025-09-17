@@ -15,9 +15,11 @@ namespace CS2 {
 		public:
 			GlobalTypes::CSmartPropAttributeVector m_vRandomPositionMin; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_vRandomPositionMax; // 0x90 | Schema_Atomic | Size: 0x40
+			GlobalTypes::CSmartPropAttributeVector m_vSnapIncrement; // 0xd0 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomOffset, m_vRandomPositionMin) == 0x50, "m_vRandomPositionMin in CSmartPropOperation_RandomOffset should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomOffset, m_vRandomPositionMax) == 0x90, "m_vRandomPositionMax in CSmartPropOperation_RandomOffset should be at offset 0x90");
-		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RandomOffset) == 0xD0, "CSmartPropOperation_RandomOffset size should be 0xD0");
+		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomOffset, m_vSnapIncrement) == 0xD0, "m_vSnapIncrement in CSmartPropOperation_RandomOffset should be at offset 0xD0");
+		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RandomOffset) == 0x110, "CSmartPropOperation_RandomOffset size should be 0x110");
 	}
 }

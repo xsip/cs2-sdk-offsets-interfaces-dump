@@ -14,7 +14,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CTakeDamageInfo* m_pOriginatingInfo; // 0x0 | Schema_Ptr | Size: 0x8
 			int32_t m_nHealthLost; // 0x8 | Schema_Builtin | Size: 0x4
-			int32_t m_nDamageTaken; // 0xc | Schema_Builtin | Size: 0x4
+			int32_t m_nDamageDealt; // 0xc | Schema_Builtin | Size: 0x4
 			float32 m_flPreModifiedDamage; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalledHealthLost; // 0x14 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalledDamageDealt; // 0x18 | Schema_Builtin | Size: 0x4
@@ -22,7 +22,7 @@ namespace CS2 {
 		};
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_pOriginatingInfo) == 0x0, "m_pOriginatingInfo in CTakeDamageResult should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nHealthLost) == 0x8, "m_nHealthLost in CTakeDamageResult should be at offset 0x8");
-		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nDamageTaken) == 0xC, "m_nDamageTaken in CTakeDamageResult should be at offset 0xC");
+		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nDamageDealt) == 0xC, "m_nDamageDealt in CTakeDamageResult should be at offset 0xC");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_flPreModifiedDamage) == 0x10, "m_flPreModifiedDamage in CTakeDamageResult should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nTotalledHealthLost) == 0x14, "m_nTotalledHealthLost in CTakeDamageResult should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nTotalledDamageDealt) == 0x18, "m_nTotalledDamageDealt in CTakeDamageResult should be at offset 0x18");

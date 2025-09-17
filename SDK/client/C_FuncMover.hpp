@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_FuncMover : public CS2::client::C_BaseToggle {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_FuncMover) == 0xEC0, "C_FuncMover size should be 0xEC0");
+		static_assert(sizeof(CS2::client::C_FuncMover) == 0xEC8, "C_FuncMover size should be 0xEC8");
 	}
 }

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xF38
+			// Class size: 0xF40
 			namespace CSpriteOriented /*: public CS2::client::C_Sprite*/ {
 				// NO SCHEMA DATA FOUND!
 			}

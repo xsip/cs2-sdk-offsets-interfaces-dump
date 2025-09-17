@@ -8,23 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xEC0
+			// Class size: 0xEC8
 			namespace CCSPlayerPawnBase /*: public CS2::server::CBasePlayerPawn*/ {
-				constexpr std::ptrdiff_t m_CTouchExpansionComponent = 0xd88; // server::CTouchExpansionComponent m_CTouchExpansionComponent; |  Schema_DeclaredClass | Size: 0x50
-				constexpr std::ptrdiff_t m_pPingServices = 0xdd8; // server::CCSPlayer_PingServices* m_pPingServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_blindUntilTime = 0xde0; // entity2::GameTime_t m_blindUntilTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_blindStartTime = 0xde4; // entity2::GameTime_t m_blindStartTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_iPlayerState = 0xde8; // client::CSPlayerState m_iPlayerState; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bRespawning = 0xe98; // bool m_bRespawning; |  0xe98 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasMovedSinceSpawn = 0xe99; // bool m_bHasMovedSinceSpawn; |  0xe99 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iNumSpawns = 0xe9c; // int32_t m_iNumSpawns; |  0xe9c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flIdleTimeSinceLastAction = 0xea4; // float32 m_flIdleTimeSinceLastAction; |  0xea4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fNextRadarUpdateTime = 0xea8; // float32 m_fNextRadarUpdateTime; |  0xea8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlashDuration = 0xeac; // float32 m_flFlashDuration; |  0xeac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlashMaxAlpha = 0xeb0; // float32 m_flFlashMaxAlpha; |  0xeb0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flProgressBarStartTime = 0xeb4; // float32 m_flProgressBarStartTime; |  0xeb4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iProgressBarDuration = 0xeb8; // int32_t m_iProgressBarDuration; |  0xeb8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hOriginalController = 0xebc; // server::CHandle< server::CCSPlayerController > m_hOriginalController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_CTouchExpansionComponent = 0xd90; // server::CTouchExpansionComponent m_CTouchExpansionComponent; |  Schema_DeclaredClass | Size: 0x50
+				constexpr std::ptrdiff_t m_pPingServices = 0xde0; // server::CCSPlayer_PingServices* m_pPingServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_blindUntilTime = 0xde8; // entity2::GameTime_t m_blindUntilTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_blindStartTime = 0xdec; // entity2::GameTime_t m_blindStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_iPlayerState = 0xdf0; // client::CSPlayerState m_iPlayerState; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bRespawning = 0xea0; // bool m_bRespawning; |  0xea0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasMovedSinceSpawn = 0xea1; // bool m_bHasMovedSinceSpawn; |  0xea1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iNumSpawns = 0xea4; // int32_t m_iNumSpawns; |  0xea4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flIdleTimeSinceLastAction = 0xeac; // float32 m_flIdleTimeSinceLastAction; |  0xeac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fNextRadarUpdateTime = 0xeb0; // float32 m_fNextRadarUpdateTime; |  0xeb0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlashDuration = 0xeb4; // float32 m_flFlashDuration; |  0xeb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlashMaxAlpha = 0xeb8; // float32 m_flFlashMaxAlpha; |  0xeb8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flProgressBarStartTime = 0xebc; // float32 m_flProgressBarStartTime; |  0xebc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iProgressBarDuration = 0xec0; // int32_t m_iProgressBarDuration; |  0xec0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hOriginalController = 0xec4; // server::CHandle< server::CCSPlayerController > m_hOriginalController; |  Schema_Atomic | Size: 0x4
 			}
 		}
 	}

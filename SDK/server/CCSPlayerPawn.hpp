@@ -8,6 +8,7 @@
 #include <SDK/server/CCSPlayerPawnBase.hpp>
 #include <SDK/client/loadout_slot_t.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
+#include <SDK/entity2/GameTick_t.hpp>
 #include <SDK/server/CEconItemView.hpp>
 #include <SDK/server/EntitySpottedState_t.hpp>
 #include <SDK/client/CSPlayerBlockingUseAction_t.hpp>
@@ -30,44 +31,44 @@ namespace CS2 {
 		class CCSPlayerPawn : public CS2::server::CCSPlayerPawnBase {
 		public:
 			S2_PAD(0x8);
-			server::CCSPlayer_BulletServices* m_pBulletServices; // 0xec8 | Schema_Ptr | Size: 0x8
-			server::CCSPlayer_HostageServices* m_pHostageServices; // 0xed0 | Schema_Ptr | Size: 0x8
-			server::CCSPlayer_BuyServices* m_pBuyServices; // 0xed8 | Schema_Ptr | Size: 0x8
-			server::CCSPlayer_ActionTrackingServices* m_pActionTrackingServices; // 0xee0 | Schema_Ptr | Size: 0x8
-			server::CCSPlayer_RadioServices* m_pRadioServices; // 0xee8 | Schema_Ptr | Size: 0x8
-			server::CCSPlayer_DamageReactServices* m_pDamageReactServices; // 0xef0 | Schema_Ptr | Size: 0x8
-			uint16_t m_nCharacterDefIndex; // 0xef8 | Schema_Builtin | Size: 0x2
-			bool m_bHasFemaleVoice; // 0xefa | Schema_Builtin | Size: 0x1
+			server::CCSPlayer_BulletServices* m_pBulletServices; // 0xed0 | Schema_Ptr | Size: 0x8
+			server::CCSPlayer_HostageServices* m_pHostageServices; // 0xed8 | Schema_Ptr | Size: 0x8
+			server::CCSPlayer_BuyServices* m_pBuyServices; // 0xee0 | Schema_Ptr | Size: 0x8
+			server::CCSPlayer_ActionTrackingServices* m_pActionTrackingServices; // 0xee8 | Schema_Ptr | Size: 0x8
+			server::CCSPlayer_RadioServices* m_pRadioServices; // 0xef0 | Schema_Ptr | Size: 0x8
+			server::CCSPlayer_DamageReactServices* m_pDamageReactServices; // 0xef8 | Schema_Ptr | Size: 0x8
+			uint16_t m_nCharacterDefIndex; // 0xf00 | Schema_Builtin | Size: 0x2
+			bool m_bHasFemaleVoice; // 0xf02 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			GlobalTypes::CUtlString m_strVOPrefix; // 0xf00 | Schema_Atomic | Size: 0x8
-			char m_szLastPlaceName[18]; // 0xf08 | Schema_FixedArray | Size: 0x12
+			GlobalTypes::CUtlString m_strVOPrefix; // 0xf08 | Schema_Atomic | Size: 0x8
+			char m_szLastPlaceName[18]; // 0xf10 | Schema_FixedArray | Size: 0x12
 			S2_PAD(0xae);
-			bool m_bInHostageResetZone; // 0xfc8 | Schema_Builtin | Size: 0x1
-			bool m_bInBuyZone; // 0xfc9 | Schema_Builtin | Size: 0x1
+			bool m_bInHostageResetZone; // 0xfd0 | Schema_Builtin | Size: 0x1
+			bool m_bInBuyZone; // 0xfd1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_TouchingBuyZones; // 0xfd0 | Schema_Atomic | Size: 0x18
-			char  m_TouchingBuyZones[0x18]; // 0xfd0 | Schema_Atomic | Size: 0x18
-			bool m_bWasInBuyZone; // 0xfe8 | Schema_Builtin | Size: 0x1
-			bool m_bInHostageRescueZone; // 0xfe9 | Schema_Builtin | Size: 0x1
-			bool m_bInBombZone; // 0xfea | Schema_Builtin | Size: 0x1
-			bool m_bWasInHostageRescueZone; // 0xfeb | Schema_Builtin | Size: 0x1
-			int32_t m_iRetakesOffering; // 0xfec | Schema_Builtin | Size: 0x4
-			int32_t m_iRetakesOfferingCard; // 0xff0 | Schema_Builtin | Size: 0x4
-			bool m_bRetakesHasDefuseKit; // 0xff4 | Schema_Builtin | Size: 0x1
-			bool m_bRetakesMVPLastRound; // 0xff5 | Schema_Builtin | Size: 0x1
+			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_TouchingBuyZones; // 0xfd8 | Schema_Atomic | Size: 0x18
+			char  m_TouchingBuyZones[0x18]; // 0xfd8 | Schema_Atomic | Size: 0x18
+			bool m_bWasInBuyZone; // 0xff0 | Schema_Builtin | Size: 0x1
+			bool m_bInHostageRescueZone; // 0xff1 | Schema_Builtin | Size: 0x1
+			bool m_bInBombZone; // 0xff2 | Schema_Builtin | Size: 0x1
+			bool m_bWasInHostageRescueZone; // 0xff3 | Schema_Builtin | Size: 0x1
+			int32_t m_iRetakesOffering; // 0xff4 | Schema_Builtin | Size: 0x4
+			int32_t m_iRetakesOfferingCard; // 0xff8 | Schema_Builtin | Size: 0x4
+			bool m_bRetakesHasDefuseKit; // 0xffc | Schema_Builtin | Size: 0x1
+			bool m_bRetakesMVPLastRound; // 0xffd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iRetakesMVPBoostItem; // 0xff8 | Schema_Builtin | Size: 0x4
-			client::loadout_slot_t m_RetakesMVPBoostExtraUtility; // 0xffc | Schema_DeclaredEnum | Size: 0x4
-			entity2::GameTime_t m_flHealthShotBoostExpirationTime; // 0x1000 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flLandingTimeSeconds; // 0x1004 | Schema_Builtin | Size: 0x4
-			GlobalTypes::QAngle m_aimPunchAngle; // 0x1008 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_aimPunchAngleVel; // 0x1014 | Schema_Atomic | Size: 0xc
-			int32_t m_aimPunchTickBase; // 0x1020 | Schema_Builtin | Size: 0x4
-			float32 m_aimPunchTickFraction; // 0x1024 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1028 | Schema_Atomic | Size: 0x18
-			char  m_aimPunchCache[0x18]; // 0x1028 | Schema_Atomic | Size: 0x18
-			bool m_bIsBuyMenuOpen; // 0x1040 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x6af);
+			int32_t m_iRetakesMVPBoostItem; // 0x1000 | Schema_Builtin | Size: 0x4
+			client::loadout_slot_t m_RetakesMVPBoostExtraUtility; // 0x1004 | Schema_DeclaredEnum | Size: 0x4
+			entity2::GameTime_t m_flHealthShotBoostExpirationTime; // 0x1008 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flLandingTimeSeconds; // 0x100c | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_aimPunchAngle; // 0x1010 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_aimPunchAngleVel; // 0x101c | Schema_Atomic | Size: 0xc
+			entity2::GameTick_t m_aimPunchTickBase; // 0x1028 | Schema_DeclaredClass | Size: 0x4
+			float32 m_aimPunchTickFraction; // 0x102c | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1030 | Schema_Atomic | Size: 0x18
+			char  m_aimPunchCache[0x18]; // 0x1030 | Schema_Atomic | Size: 0x18
+			bool m_bIsBuyMenuOpen; // 0x1048 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6a7);
 			GlobalTypes::CTransform m_xLastHeadBoneTransform; // 0x16f0 | Schema_Atomic | Size: 0x20
 			bool m_bLastHeadBoneTransformIsValid; // 0x1710 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -188,37 +189,37 @@ namespace CS2 {
 			GlobalTypes::QAngle m_angEyeAngles; // 0x1c7c | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pBulletServices) == 0xEC8, "m_pBulletServices in CCSPlayerPawn should be at offset 0xEC8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pHostageServices) == 0xED0, "m_pHostageServices in CCSPlayerPawn should be at offset 0xED0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pBuyServices) == 0xED8, "m_pBuyServices in CCSPlayerPawn should be at offset 0xED8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pActionTrackingServices) == 0xEE0, "m_pActionTrackingServices in CCSPlayerPawn should be at offset 0xEE0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pRadioServices) == 0xEE8, "m_pRadioServices in CCSPlayerPawn should be at offset 0xEE8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pDamageReactServices) == 0xEF0, "m_pDamageReactServices in CCSPlayerPawn should be at offset 0xEF0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_nCharacterDefIndex) == 0xEF8, "m_nCharacterDefIndex in CCSPlayerPawn should be at offset 0xEF8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bHasFemaleVoice) == 0xEFA, "m_bHasFemaleVoice in CCSPlayerPawn should be at offset 0xEFA");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_strVOPrefix) == 0xF00, "m_strVOPrefix in CCSPlayerPawn should be at offset 0xF00");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_szLastPlaceName) == 0xF08, "m_szLastPlaceName in CCSPlayerPawn should be at offset 0xF08");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInHostageResetZone) == 0xFC8, "m_bInHostageResetZone in CCSPlayerPawn should be at offset 0xFC8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInBuyZone) == 0xFC9, "m_bInBuyZone in CCSPlayerPawn should be at offset 0xFC9");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_TouchingBuyZones) == 0xFD0, "m_TouchingBuyZones in CCSPlayerPawn should be at offset 0xFD0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bWasInBuyZone) == 0xFE8, "m_bWasInBuyZone in CCSPlayerPawn should be at offset 0xFE8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInHostageRescueZone) == 0xFE9, "m_bInHostageRescueZone in CCSPlayerPawn should be at offset 0xFE9");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInBombZone) == 0xFEA, "m_bInBombZone in CCSPlayerPawn should be at offset 0xFEA");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bWasInHostageRescueZone) == 0xFEB, "m_bWasInHostageRescueZone in CCSPlayerPawn should be at offset 0xFEB");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_iRetakesOffering) == 0xFEC, "m_iRetakesOffering in CCSPlayerPawn should be at offset 0xFEC");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_iRetakesOfferingCard) == 0xFF0, "m_iRetakesOfferingCard in CCSPlayerPawn should be at offset 0xFF0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bRetakesHasDefuseKit) == 0xFF4, "m_bRetakesHasDefuseKit in CCSPlayerPawn should be at offset 0xFF4");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bRetakesMVPLastRound) == 0xFF5, "m_bRetakesMVPLastRound in CCSPlayerPawn should be at offset 0xFF5");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_iRetakesMVPBoostItem) == 0xFF8, "m_iRetakesMVPBoostItem in CCSPlayerPawn should be at offset 0xFF8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_RetakesMVPBoostExtraUtility) == 0xFFC, "m_RetakesMVPBoostExtraUtility in CCSPlayerPawn should be at offset 0xFFC");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_flHealthShotBoostExpirationTime) == 0x1000, "m_flHealthShotBoostExpirationTime in CCSPlayerPawn should be at offset 0x1000");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_flLandingTimeSeconds) == 0x1004, "m_flLandingTimeSeconds in CCSPlayerPawn should be at offset 0x1004");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchAngle) == 0x1008, "m_aimPunchAngle in CCSPlayerPawn should be at offset 0x1008");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchAngleVel) == 0x1014, "m_aimPunchAngleVel in CCSPlayerPawn should be at offset 0x1014");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchTickBase) == 0x1020, "m_aimPunchTickBase in CCSPlayerPawn should be at offset 0x1020");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchTickFraction) == 0x1024, "m_aimPunchTickFraction in CCSPlayerPawn should be at offset 0x1024");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchCache) == 0x1028, "m_aimPunchCache in CCSPlayerPawn should be at offset 0x1028");
-		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bIsBuyMenuOpen) == 0x1040, "m_bIsBuyMenuOpen in CCSPlayerPawn should be at offset 0x1040");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pBulletServices) == 0xED0, "m_pBulletServices in CCSPlayerPawn should be at offset 0xED0");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pHostageServices) == 0xED8, "m_pHostageServices in CCSPlayerPawn should be at offset 0xED8");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pBuyServices) == 0xEE0, "m_pBuyServices in CCSPlayerPawn should be at offset 0xEE0");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pActionTrackingServices) == 0xEE8, "m_pActionTrackingServices in CCSPlayerPawn should be at offset 0xEE8");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pRadioServices) == 0xEF0, "m_pRadioServices in CCSPlayerPawn should be at offset 0xEF0");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pDamageReactServices) == 0xEF8, "m_pDamageReactServices in CCSPlayerPawn should be at offset 0xEF8");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_nCharacterDefIndex) == 0xF00, "m_nCharacterDefIndex in CCSPlayerPawn should be at offset 0xF00");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bHasFemaleVoice) == 0xF02, "m_bHasFemaleVoice in CCSPlayerPawn should be at offset 0xF02");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_strVOPrefix) == 0xF08, "m_strVOPrefix in CCSPlayerPawn should be at offset 0xF08");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_szLastPlaceName) == 0xF10, "m_szLastPlaceName in CCSPlayerPawn should be at offset 0xF10");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInHostageResetZone) == 0xFD0, "m_bInHostageResetZone in CCSPlayerPawn should be at offset 0xFD0");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInBuyZone) == 0xFD1, "m_bInBuyZone in CCSPlayerPawn should be at offset 0xFD1");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_TouchingBuyZones) == 0xFD8, "m_TouchingBuyZones in CCSPlayerPawn should be at offset 0xFD8");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bWasInBuyZone) == 0xFF0, "m_bWasInBuyZone in CCSPlayerPawn should be at offset 0xFF0");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInHostageRescueZone) == 0xFF1, "m_bInHostageRescueZone in CCSPlayerPawn should be at offset 0xFF1");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bInBombZone) == 0xFF2, "m_bInBombZone in CCSPlayerPawn should be at offset 0xFF2");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bWasInHostageRescueZone) == 0xFF3, "m_bWasInHostageRescueZone in CCSPlayerPawn should be at offset 0xFF3");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_iRetakesOffering) == 0xFF4, "m_iRetakesOffering in CCSPlayerPawn should be at offset 0xFF4");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_iRetakesOfferingCard) == 0xFF8, "m_iRetakesOfferingCard in CCSPlayerPawn should be at offset 0xFF8");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bRetakesHasDefuseKit) == 0xFFC, "m_bRetakesHasDefuseKit in CCSPlayerPawn should be at offset 0xFFC");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bRetakesMVPLastRound) == 0xFFD, "m_bRetakesMVPLastRound in CCSPlayerPawn should be at offset 0xFFD");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_iRetakesMVPBoostItem) == 0x1000, "m_iRetakesMVPBoostItem in CCSPlayerPawn should be at offset 0x1000");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_RetakesMVPBoostExtraUtility) == 0x1004, "m_RetakesMVPBoostExtraUtility in CCSPlayerPawn should be at offset 0x1004");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_flHealthShotBoostExpirationTime) == 0x1008, "m_flHealthShotBoostExpirationTime in CCSPlayerPawn should be at offset 0x1008");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_flLandingTimeSeconds) == 0x100C, "m_flLandingTimeSeconds in CCSPlayerPawn should be at offset 0x100C");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchAngle) == 0x1010, "m_aimPunchAngle in CCSPlayerPawn should be at offset 0x1010");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchAngleVel) == 0x101C, "m_aimPunchAngleVel in CCSPlayerPawn should be at offset 0x101C");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchTickBase) == 0x1028, "m_aimPunchTickBase in CCSPlayerPawn should be at offset 0x1028");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchTickFraction) == 0x102C, "m_aimPunchTickFraction in CCSPlayerPawn should be at offset 0x102C");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_aimPunchCache) == 0x1030, "m_aimPunchCache in CCSPlayerPawn should be at offset 0x1030");
+		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bIsBuyMenuOpen) == 0x1048, "m_bIsBuyMenuOpen in CCSPlayerPawn should be at offset 0x1048");
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_xLastHeadBoneTransform) == 0x16F0, "m_xLastHeadBoneTransform in CCSPlayerPawn should be at offset 0x16F0");
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_bLastHeadBoneTransformIsValid) == 0x1710, "m_bLastHeadBoneTransformIsValid in CCSPlayerPawn should be at offset 0x1710");
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_lastLandTime) == 0x1714, "m_lastLandTime in CCSPlayerPawn should be at offset 0x1714");

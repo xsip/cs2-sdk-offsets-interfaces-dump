@@ -136,7 +136,6 @@ namespace CS2 {
 			uint8_t m_nRoundStartCount; // 0xf0c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x400b);
 			float64 m_flLastPerfSampleTime; // 0x4f18 | Schema_Builtin | Size: 0x8
-			S2_PAD(0x4008); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_bFreezePeriod) == 0x40, "m_bFreezePeriod in C_CSGameRules should be at offset 0x40");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_bWarmupPeriod) == 0x41, "m_bWarmupPeriod in C_CSGameRules should be at offset 0x41");
@@ -235,6 +234,6 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_iRoundStartRoundNumber) == 0xF08, "m_iRoundStartRoundNumber in C_CSGameRules should be at offset 0xF08");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_nRoundStartCount) == 0xF0C, "m_nRoundStartCount in C_CSGameRules should be at offset 0xF0C");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_flLastPerfSampleTime) == 0x4F18, "m_flLastPerfSampleTime in C_CSGameRules should be at offset 0x4F18");
-		static_assert(sizeof(CS2::client::C_CSGameRules) == 0x8F28, "C_CSGameRules size should be 0x8F28");
+		static_assert(sizeof(CS2::client::C_CSGameRules) == 0x4F20, "C_CSGameRules size should be 0x4F20");
 	}
 }

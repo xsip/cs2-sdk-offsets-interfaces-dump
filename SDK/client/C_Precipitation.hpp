@@ -14,27 +14,27 @@ namespace CS2 {
 	namespace client {
 		class C_Precipitation : public CS2::client::C_BaseTrigger {
 		public:
-			float32 m_flDensity; // 0x1000 | Schema_Builtin | Size: 0x4
+			float32 m_flDensity; // 0x1008 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
-			float32 m_flParticleInnerDist; // 0x1010 | Schema_Builtin | Size: 0x4
+			float32 m_flParticleInnerDist; // 0x1018 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			char* m_pParticleDef; // 0x1018 | Schema_Ptr | Size: 0x8
+			char* m_pParticleDef; // 0x1020 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x20);
-			client::TimedEvent m_tParticlePrecipTraceTimer[1]; // 0x1040 | Schema_FixedArray | Size: 0x10
-			bool m_bActiveParticlePrecipEmitter[1]; // 0x1048 | Schema_FixedArray | Size: 0x1
-			bool m_bParticlePrecipInitialized; // 0x1049 | Schema_Builtin | Size: 0x1
-			bool m_bHasSimulatedSinceLastSceneObjectUpdate; // 0x104a | Schema_Builtin | Size: 0x1
+			client::TimedEvent m_tParticlePrecipTraceTimer[1]; // 0x1048 | Schema_FixedArray | Size: 0x10
+			bool m_bActiveParticlePrecipEmitter[1]; // 0x1050 | Schema_FixedArray | Size: 0x1
+			bool m_bParticlePrecipInitialized; // 0x1051 | Schema_Builtin | Size: 0x1
+			bool m_bHasSimulatedSinceLastSceneObjectUpdate; // 0x1052 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			int32_t m_nAvailableSheetSequencesMaxIndex; // 0x104c | Schema_Builtin | Size: 0x4
+			int32_t m_nAvailableSheetSequencesMaxIndex; // 0x1054 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_Precipitation, m_flDensity) == 0x1000, "m_flDensity in C_Precipitation should be at offset 0x1000");
-		static_assert(offsetof(CS2::client::C_Precipitation, m_flParticleInnerDist) == 0x1010, "m_flParticleInnerDist in C_Precipitation should be at offset 0x1010");
-		static_assert(offsetof(CS2::client::C_Precipitation, m_pParticleDef) == 0x1018, "m_pParticleDef in C_Precipitation should be at offset 0x1018");
-		static_assert(offsetof(CS2::client::C_Precipitation, m_tParticlePrecipTraceTimer) == 0x1040, "m_tParticlePrecipTraceTimer in C_Precipitation should be at offset 0x1040");
-		static_assert(offsetof(CS2::client::C_Precipitation, m_bActiveParticlePrecipEmitter) == 0x1048, "m_bActiveParticlePrecipEmitter in C_Precipitation should be at offset 0x1048");
-		static_assert(offsetof(CS2::client::C_Precipitation, m_bParticlePrecipInitialized) == 0x1049, "m_bParticlePrecipInitialized in C_Precipitation should be at offset 0x1049");
-		static_assert(offsetof(CS2::client::C_Precipitation, m_bHasSimulatedSinceLastSceneObjectUpdate) == 0x104A, "m_bHasSimulatedSinceLastSceneObjectUpdate in C_Precipitation should be at offset 0x104A");
-		static_assert(offsetof(CS2::client::C_Precipitation, m_nAvailableSheetSequencesMaxIndex) == 0x104C, "m_nAvailableSheetSequencesMaxIndex in C_Precipitation should be at offset 0x104C");
-		static_assert(sizeof(CS2::client::C_Precipitation) == 0x1050, "C_Precipitation size should be 0x1050");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_flDensity) == 0x1008, "m_flDensity in C_Precipitation should be at offset 0x1008");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_flParticleInnerDist) == 0x1018, "m_flParticleInnerDist in C_Precipitation should be at offset 0x1018");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_pParticleDef) == 0x1020, "m_pParticleDef in C_Precipitation should be at offset 0x1020");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_tParticlePrecipTraceTimer) == 0x1048, "m_tParticlePrecipTraceTimer in C_Precipitation should be at offset 0x1048");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_bActiveParticlePrecipEmitter) == 0x1050, "m_bActiveParticlePrecipEmitter in C_Precipitation should be at offset 0x1050");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_bParticlePrecipInitialized) == 0x1051, "m_bParticlePrecipInitialized in C_Precipitation should be at offset 0x1051");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_bHasSimulatedSinceLastSceneObjectUpdate) == 0x1052, "m_bHasSimulatedSinceLastSceneObjectUpdate in C_Precipitation should be at offset 0x1052");
+		static_assert(offsetof(CS2::client::C_Precipitation, m_nAvailableSheetSequencesMaxIndex) == 0x1054, "m_nAvailableSheetSequencesMaxIndex in C_Precipitation should be at offset 0x1054");
+		static_assert(sizeof(CS2::client::C_Precipitation) == 0x1058, "C_Precipitation size should be 0x1058");
 	}
 }

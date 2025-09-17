@@ -13,29 +13,30 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSoundeventMinMaxValuesSchema : public CS2::soundsystem::CSosGroupActionSchema {
 		public:
-			GlobalTypes::CUtlString m_strQueryPublicFieldName; // 0x18 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strDelayPublicFieldName; // 0x20 | Schema_Atomic | Size: 0x8
-			bool m_bExcludeStoppedSounds; // 0x28 | Schema_Builtin | Size: 0x1
-			bool m_bExcludeDelayedSounds; // 0x29 | Schema_Builtin | Size: 0x1
-			bool m_bExcludeSoundsBelowThreshold; // 0x2a | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_strQueryPublicFieldName; // 0x8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strDelayPublicFieldName; // 0x10 | Schema_Atomic | Size: 0x8
+			bool m_bExcludeStoppedSounds; // 0x18 | Schema_Builtin | Size: 0x1
+			bool m_bExcludeDelayedSounds; // 0x19 | Schema_Builtin | Size: 0x1
+			bool m_bExcludeSoundsBelowThreshold; // 0x1a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flExcludeSoundsMinThresholdValue; // 0x2c | Schema_Builtin | Size: 0x4
-			bool m_bExcludSoundsAboveThreshold; // 0x30 | Schema_Builtin | Size: 0x1
+			float32 m_flExcludeSoundsMinThresholdValue; // 0x1c | Schema_Builtin | Size: 0x4
+			bool m_bExcludSoundsAboveThreshold; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flExcludeSoundsMaxThresholdValue; // 0x34 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlString m_strMinValueName; // 0x38 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strMaxValueName; // 0x40 | Schema_Atomic | Size: 0x8
+			float32 m_flExcludeSoundsMaxThresholdValue; // 0x24 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_strMinValueName; // 0x28 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strMaxValueName; // 0x30 | Schema_Atomic | Size: 0x8
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strQueryPublicFieldName) == 0x18, "m_strQueryPublicFieldName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x18");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strDelayPublicFieldName) == 0x20, "m_strDelayPublicFieldName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x20");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludeStoppedSounds) == 0x28, "m_bExcludeStoppedSounds in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x28");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludeDelayedSounds) == 0x29, "m_bExcludeDelayedSounds in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x29");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludeSoundsBelowThreshold) == 0x2A, "m_bExcludeSoundsBelowThreshold in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x2A");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_flExcludeSoundsMinThresholdValue) == 0x2C, "m_flExcludeSoundsMinThresholdValue in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x2C");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludSoundsAboveThreshold) == 0x30, "m_bExcludSoundsAboveThreshold in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x30");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_flExcludeSoundsMaxThresholdValue) == 0x34, "m_flExcludeSoundsMaxThresholdValue in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x34");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strMinValueName) == 0x38, "m_strMinValueName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x38");
-		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strMaxValueName) == 0x40, "m_strMaxValueName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x40");
-		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema) == 0x48, "CSosGroupActionSoundeventMinMaxValuesSchema size should be 0x48");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strQueryPublicFieldName) == 0x8, "m_strQueryPublicFieldName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x8");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strDelayPublicFieldName) == 0x10, "m_strDelayPublicFieldName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x10");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludeStoppedSounds) == 0x18, "m_bExcludeStoppedSounds in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x18");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludeDelayedSounds) == 0x19, "m_bExcludeDelayedSounds in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x19");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludeSoundsBelowThreshold) == 0x1A, "m_bExcludeSoundsBelowThreshold in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x1A");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_flExcludeSoundsMinThresholdValue) == 0x1C, "m_flExcludeSoundsMinThresholdValue in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x1C");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludSoundsAboveThreshold) == 0x20, "m_bExcludSoundsAboveThreshold in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x20");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_flExcludeSoundsMaxThresholdValue) == 0x24, "m_flExcludeSoundsMaxThresholdValue in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x24");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strMinValueName) == 0x28, "m_strMinValueName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x28");
+		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strMaxValueName) == 0x30, "m_strMaxValueName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x30");
+		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema) == 0x40, "CSosGroupActionSoundeventMinMaxValuesSchema size should be 0x40");
 	}
 }

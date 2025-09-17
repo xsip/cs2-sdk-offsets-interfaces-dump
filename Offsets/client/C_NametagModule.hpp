@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1178
+			// Class size: 0x1180
 			namespace C_NametagModule /*: public CS2::client::C_CS2WeaponModuleBase*/ {
-				constexpr std::ptrdiff_t m_strNametagString = 0x1170; // GlobalTypes::CUtlString m_strNametagString; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strNametagString = 0x1178; // GlobalTypes::CUtlString m_strNametagString; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

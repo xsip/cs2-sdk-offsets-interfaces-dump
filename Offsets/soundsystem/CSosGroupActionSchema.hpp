@@ -8,11 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem {
-			// Class size: 0x18
+			// Class size: 0x8
 			namespace CSosGroupActionSchema /**/ {
-				constexpr std::ptrdiff_t m_name = 0x8; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_actionType = 0x10; // soundsystem::ActionType_t m_actionType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_actionInstanceType = 0x14; // soundsystem::ActionType_t m_actionInstanceType; |  Schema_DeclaredEnum | Size: 0x4
+				// NO SCHEMA DATA FOUND!
 			}
 		}
 	}

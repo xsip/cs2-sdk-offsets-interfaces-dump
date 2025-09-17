@@ -19,14 +19,14 @@ namespace CS2 {
 			client::CSMatchStats_t m_matchStats; // 0xa8 | Schema_DeclaredClass | Size: 0x80
 			int32_t m_iNumRoundKills; // 0x128 | Schema_Builtin | Size: 0x4
 			int32_t m_iNumRoundKillsHeadshots; // 0x12c | Schema_Builtin | Size: 0x4
-			uint32_t m_unTotalRoundDamageDealt; // 0x130 | Schema_Builtin | Size: 0x4
+			float32 m_flTotalRoundDamageDealt; // 0x130 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::CCSPlayerController_ActionTrackingServices, m_perRoundStats) == 0x40, "m_perRoundStats in CCSPlayerController_ActionTrackingServices should be at offset 0x40");
 		static_assert(offsetof(CS2::client::CCSPlayerController_ActionTrackingServices, m_matchStats) == 0xA8, "m_matchStats in CCSPlayerController_ActionTrackingServices should be at offset 0xA8");
 		static_assert(offsetof(CS2::client::CCSPlayerController_ActionTrackingServices, m_iNumRoundKills) == 0x128, "m_iNumRoundKills in CCSPlayerController_ActionTrackingServices should be at offset 0x128");
 		static_assert(offsetof(CS2::client::CCSPlayerController_ActionTrackingServices, m_iNumRoundKillsHeadshots) == 0x12C, "m_iNumRoundKillsHeadshots in CCSPlayerController_ActionTrackingServices should be at offset 0x12C");
-		static_assert(offsetof(CS2::client::CCSPlayerController_ActionTrackingServices, m_unTotalRoundDamageDealt) == 0x130, "m_unTotalRoundDamageDealt in CCSPlayerController_ActionTrackingServices should be at offset 0x130");
+		static_assert(offsetof(CS2::client::CCSPlayerController_ActionTrackingServices, m_flTotalRoundDamageDealt) == 0x130, "m_flTotalRoundDamageDealt in CCSPlayerController_ActionTrackingServices should be at offset 0x130");
 		static_assert(sizeof(CS2::client::CCSPlayerController_ActionTrackingServices) == 0x138, "CCSPlayerController_ActionTrackingServices size should be 0x138");
 	}
 }

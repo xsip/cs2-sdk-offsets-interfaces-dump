@@ -23,18 +23,26 @@ namespace CS2 {
 			char  m_trackCompressionSettings[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint32 > m_compressedPoseOffsets; // 0x38 | Schema_Atomic | Size: 0x18
 			char  m_compressedPoseOffsets[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_floatCurveIDs; // 0x50 | Schema_Atomic | Size: 0x18
+			char  m_floatCurveIDs[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< animlib::NmFloatCurveCompressionSettings_t > m_floatCurveDefs; // 0x68 | Schema_Atomic | Size: 0x18
+			char  m_floatCurveDefs[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< uint16 > m_compressedFloatCurveData; // 0x80 | Schema_Atomic | Size: 0x18
+			char  m_compressedFloatCurveData[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< uint32 > m_compressedFloatCurveOffsets; // 0x98 | Schema_Atomic | Size: 0x18
+			char  m_compressedFloatCurveOffsets[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28);
-			// GlobalTypes::CUtlVectorFixedGrowable< CNmClip, 1 >* m_secondaryAnimations; // 0x78 | Schema_Atomic | Size: 0x20
-			char  m_secondaryAnimations[0x20]; // 0x78 | Schema_Atomic | Size: 0x20
-			animlib::CNmSyncTrack m_syncTrack; // 0x98 | Schema_DeclaredClass | Size: 0xb0
+			// GlobalTypes::CUtlVectorFixedGrowable< CNmClip, 1 >* m_secondaryAnimations; // 0xd8 | Schema_Atomic | Size: 0x20
+			char  m_secondaryAnimations[0x20]; // 0xd8 | Schema_Atomic | Size: 0x20
+			animlib::CNmSyncTrack m_syncTrack; // 0xf8 | Schema_DeclaredClass | Size: 0xb0
 			S2_PAD(0x8);
-			animlib::CNmRootMotionData m_rootMotion; // 0x150 | Schema_DeclaredClass | Size: 0x50
-			bool m_bIsAdditive; // 0x1a0 | Schema_Builtin | Size: 0x1
+			animlib::CNmRootMotionData m_rootMotion; // 0x1b0 | Schema_DeclaredClass | Size: 0x50
+			bool m_bIsAdditive; // 0x200 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::ModelSpaceSamplingChainLink_t > m_modelSpaceSamplingChain; // 0x1a8 | Schema_Atomic | Size: 0x18
-			char  m_modelSpaceSamplingChain[0x18]; // 0x1a8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_modelSpaceBoneSamplingIndices; // 0x1c0 | Schema_Atomic | Size: 0x18
-			char  m_modelSpaceBoneSamplingIndices[0x18]; // 0x1c0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::ModelSpaceSamplingChainLink_t > m_modelSpaceSamplingChain; // 0x208 | Schema_Atomic | Size: 0x18
+			char  m_modelSpaceSamplingChain[0x18]; // 0x208 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< int32 > m_modelSpaceBoneSamplingIndices; // 0x220 | Schema_Atomic | Size: 0x18
+			char  m_modelSpaceBoneSamplingIndices[0x18]; // 0x220 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::animlib::CNmClip, m_skeleton) == 0x0, "m_skeleton in CNmClip should be at offset 0x0");
@@ -43,12 +51,16 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmClip, m_compressedPoseData) == 0x10, "m_compressedPoseData in CNmClip should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmClip, m_trackCompressionSettings) == 0x20, "m_trackCompressionSettings in CNmClip should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmClip, m_compressedPoseOffsets) == 0x38, "m_compressedPoseOffsets in CNmClip should be at offset 0x38");
-		static_assert(offsetof(CS2::animlib::CNmClip, m_secondaryAnimations) == 0x78, "m_secondaryAnimations in CNmClip should be at offset 0x78");
-		static_assert(offsetof(CS2::animlib::CNmClip, m_syncTrack) == 0x98, "m_syncTrack in CNmClip should be at offset 0x98");
-		static_assert(offsetof(CS2::animlib::CNmClip, m_rootMotion) == 0x150, "m_rootMotion in CNmClip should be at offset 0x150");
-		static_assert(offsetof(CS2::animlib::CNmClip, m_bIsAdditive) == 0x1A0, "m_bIsAdditive in CNmClip should be at offset 0x1A0");
-		static_assert(offsetof(CS2::animlib::CNmClip, m_modelSpaceSamplingChain) == 0x1A8, "m_modelSpaceSamplingChain in CNmClip should be at offset 0x1A8");
-		static_assert(offsetof(CS2::animlib::CNmClip, m_modelSpaceBoneSamplingIndices) == 0x1C0, "m_modelSpaceBoneSamplingIndices in CNmClip should be at offset 0x1C0");
-		static_assert(sizeof(CS2::animlib::CNmClip) == 0x1E0, "CNmClip size should be 0x1E0");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_floatCurveIDs) == 0x50, "m_floatCurveIDs in CNmClip should be at offset 0x50");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_floatCurveDefs) == 0x68, "m_floatCurveDefs in CNmClip should be at offset 0x68");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_compressedFloatCurveData) == 0x80, "m_compressedFloatCurveData in CNmClip should be at offset 0x80");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_compressedFloatCurveOffsets) == 0x98, "m_compressedFloatCurveOffsets in CNmClip should be at offset 0x98");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_secondaryAnimations) == 0xD8, "m_secondaryAnimations in CNmClip should be at offset 0xD8");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_syncTrack) == 0xF8, "m_syncTrack in CNmClip should be at offset 0xF8");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_rootMotion) == 0x1B0, "m_rootMotion in CNmClip should be at offset 0x1B0");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_bIsAdditive) == 0x200, "m_bIsAdditive in CNmClip should be at offset 0x200");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_modelSpaceSamplingChain) == 0x208, "m_modelSpaceSamplingChain in CNmClip should be at offset 0x208");
+		static_assert(offsetof(CS2::animlib::CNmClip, m_modelSpaceBoneSamplingIndices) == 0x220, "m_modelSpaceBoneSamplingIndices in CNmClip should be at offset 0x220");
+		static_assert(sizeof(CS2::animlib::CNmClip) == 0x240, "CNmClip size should be 0x240");
 	}
 }

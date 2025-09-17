@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace client {
 		class C_WeaponCZ75a : public CS2::client::C_CSWeaponBaseGun {
 		public:
-			bool m_bMagazineRemoved; // 0x1e40 | Schema_Builtin | Size: 0x1
+			bool m_bMagazineRemoved; // 0x1fc0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_WeaponCZ75a, m_bMagazineRemoved) == 0x1E40, "m_bMagazineRemoved in C_WeaponCZ75a should be at offset 0x1E40");
-		static_assert(sizeof(CS2::client::C_WeaponCZ75a) == 0x1E50, "C_WeaponCZ75a size should be 0x1E50");
+		static_assert(offsetof(CS2::client::C_WeaponCZ75a, m_bMagazineRemoved) == 0x1FC0, "m_bMagazineRemoved in C_WeaponCZ75a should be at offset 0x1FC0");
+		static_assert(sizeof(CS2::client::C_WeaponCZ75a) == 0x1FD0, "C_WeaponCZ75a size should be 0x1FD0");
 	}
 }

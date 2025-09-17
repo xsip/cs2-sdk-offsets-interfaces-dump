@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xD8
+			// Class size: 0xE0
 			namespace CNavVolumeMarkupVolume /*: public CS2::navlib::CNavVolume*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -5,7 +5,7 @@
 
 #include <SDK/GlobalTypes.hpp>
 
-#include <SDK/client/C_EconItemView.hpp>
+#include <SDK/client/C_AttributeContainer.hpp>
 
 
 
@@ -14,14 +14,14 @@ namespace CS2 {
 		class CSNetworkableLoadout_t  {
 		public:
 			S2_PAD(0x30);
-			client::C_EconItemView m_Item; // 0x30 | Schema_DeclaredClass | Size: 0x478
-			uint16_t m_unTeam; // 0x4a8 | Schema_Builtin | Size: 0x2
-			uint16_t m_unSlot; // 0x4aa | Schema_Builtin | Size: 0x2
+			client::C_AttributeContainer m_ItemAttributeContainer; // 0x30 | Schema_DeclaredClass | Size: 0x4d8
+			uint16_t m_unTeam; // 0x508 | Schema_Builtin | Size: 0x2
+			uint16_t m_unSlot; // 0x50a | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::CSNetworkableLoadout_t, m_Item) == 0x30, "m_Item in CSNetworkableLoadout_t should be at offset 0x30");
-		static_assert(offsetof(CS2::client::CSNetworkableLoadout_t, m_unTeam) == 0x4A8, "m_unTeam in CSNetworkableLoadout_t should be at offset 0x4A8");
-		static_assert(offsetof(CS2::client::CSNetworkableLoadout_t, m_unSlot) == 0x4AA, "m_unSlot in CSNetworkableLoadout_t should be at offset 0x4AA");
-		static_assert(sizeof(CS2::client::CSNetworkableLoadout_t) == 0x4B0, "CSNetworkableLoadout_t size should be 0x4B0");
+		static_assert(offsetof(CS2::client::CSNetworkableLoadout_t, m_ItemAttributeContainer) == 0x30, "m_ItemAttributeContainer in CSNetworkableLoadout_t should be at offset 0x30");
+		static_assert(offsetof(CS2::client::CSNetworkableLoadout_t, m_unTeam) == 0x508, "m_unTeam in CSNetworkableLoadout_t should be at offset 0x508");
+		static_assert(offsetof(CS2::client::CSNetworkableLoadout_t, m_unSlot) == 0x50A, "m_unSlot in CSNetworkableLoadout_t should be at offset 0x50A");
+		static_assert(sizeof(CS2::client::CSNetworkableLoadout_t) == 0x510, "CSNetworkableLoadout_t size should be 0x510");
 	}
 }

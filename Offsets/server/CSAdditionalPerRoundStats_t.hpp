@@ -13,8 +13,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_numChickensKilled = 0x0; // int32_t m_numChickensKilled; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_killsWhileBlind = 0x4; // int32_t m_killsWhileBlind; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bombCarrierkills = 0x8; // int32_t m_bombCarrierkills; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iBurnDamageInflicted = 0xc; // int32_t m_iBurnDamageInflicted; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iBlastDamageInflicted = 0x10; // int32_t m_iBlastDamageInflicted; |  0x10 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBurnDamageInflicted = 0xc; // float32 m_flBurnDamageInflicted; |  0xc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBlastDamageInflicted = 0x10; // float32 m_flBlastDamageInflicted; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iDinks = 0x14; // int32_t m_iDinks; |  0x14 | Schema_Builtin | Size: 0x4
 			}
 		}

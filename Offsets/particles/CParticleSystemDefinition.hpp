@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x3F0
+			// Class size: 0x3E0
 			namespace CParticleSystemDefinition /*: public CS2::particles::IParticleSystemDefinition*/ {
 				constexpr std::ptrdiff_t m_nBehaviorVersion = 0x8; // int32_t m_nBehaviorVersion; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_PreEmissionOperators = 0x10; // GlobalTypes::CUtlVector< CParticleFunctionPreEmission >* m_PreEmissionOperators; |  Schema_Atomic | Size: 0x18

@@ -14,6 +14,6 @@ namespace CS2 {
 		class CPrecipitation : public CS2::server::CBaseTrigger {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CPrecipitation) == 0x9B8, "CPrecipitation size should be 0x9B8");
+		static_assert(sizeof(CS2::server::CPrecipitation) == 0x9C0, "CPrecipitation size should be 0x9C0");
 	}
 }

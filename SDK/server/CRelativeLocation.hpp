@@ -17,7 +17,7 @@ namespace CS2 {
 			server::RelativeLocationType_t m_Type; // 0x18 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::Vector m_vRelativeOffset; // 0x1c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vWorldSpacePos; // 0x28 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vWorldSpacePos; // 0x28 | Schema_Atomic | Size: 0xc
 			// server::CHandle< server::CBaseEntity > m_hEntity; // 0x34 | Schema_Atomic | Size: 0x4
 			char  m_hEntity[0x4]; // 0x34 | Schema_Atomic | Size: 0x4
 		};

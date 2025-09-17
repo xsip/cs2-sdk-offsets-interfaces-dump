@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace rendersystemdx11 {
-			constexpr std::ptrdiff_t RenderDeviceMgr001 = 0x42c4f0; 
-			constexpr std::ptrdiff_t RenderUtils_001 = 0x42cde8; 
-			constexpr std::ptrdiff_t VRenderDeviceMgrBackdoor001 = 0x42c590; 
+			constexpr std::ptrdiff_t RenderDeviceMgr001 = 0x42fbc0; 
+			constexpr std::ptrdiff_t RenderUtils_001 = 0x4304b8; 
+			constexpr std::ptrdiff_t VRenderDeviceMgrBackdoor001 = 0x42fc60; 
 		}
 	}
 }
