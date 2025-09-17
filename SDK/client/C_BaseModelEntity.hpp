@@ -14,6 +14,7 @@
 #include <SDK/client/CGlowProperty.hpp>
 #include <SDK/client/DecalMode_t.hpp>
 #include <SDK/client/CNetworkViewOffsetVector.hpp>
+#include <SDK/client/CClientAlphaProperty.hpp>
 
 
 
@@ -76,7 +77,7 @@ namespace CS2 {
 			S2_PAD(0x28);
 			client::CNetworkViewOffsetVector m_vecViewOffset; // 0xd98 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0xb8);
-			GlobalTypes::CClientAlphaProperty* m_pClientAlphaProperty; // 0xe78 | Schema_Ptr | Size: 0x8
+			client::CClientAlphaProperty* m_pClientAlphaProperty; // 0xe78 | Schema_Ptr | Size: 0x8
 			GlobalTypes::Color m_ClientOverrideTint; // 0xe80 | Schema_Atomic | Size: 0x4
 			bool m_bUseClientOverrideTint; // 0xe84 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3b);
