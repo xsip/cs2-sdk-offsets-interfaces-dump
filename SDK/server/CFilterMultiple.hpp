@@ -7,7 +7,6 @@
 
 #include <SDK/server/CBaseFilter.hpp>
 #include <SDK/client/filter_t.hpp>
-#include <SDK/server/CHandle< CBaseEntity >.hpp>
 
 
 

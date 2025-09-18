@@ -14,7 +14,6 @@
 #include <SDK/client/CGlowProperty.hpp>
 #include <SDK/client/DecalMode_t.hpp>
 #include <SDK/client/CNetworkViewOffsetVector.hpp>
-#include <SDK/client/CClientAlphaProperty.hpp>
 
 
 
@@ -22,6 +21,7 @@ namespace CS2 {
 	namespace client {
 		class CRenderComponent;
 		class CDestructiblePartsComponent;
+		class CClientAlphaProperty;
 	}
 }
 namespace CS2 {

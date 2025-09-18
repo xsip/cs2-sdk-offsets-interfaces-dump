@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bUseUV2ForCharting = 0x1b4; // bool m_bUseUV2ForCharting; |  0x1b4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEmbeddedMapMesh = 0x1b5; // bool m_bEmbeddedMapMesh; |  0x1b5 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_meshDeformParams = 0x1d8; // modellib::DynamicMeshDeformParams_t m_meshDeformParams; |  Schema_DeclaredClass | Size: 0xc
-				constexpr std::ptrdiff_t m_pGroomData = 0x1e8; // GlobalTypes::CRenderGroom* m_pGroomData; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pGroomData = 0x1e8; // modellib::CRenderGroom* m_pGroomData; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

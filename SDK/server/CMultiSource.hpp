@@ -6,7 +6,6 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/server/CLogicalEntity.hpp>
-#include <SDK/server/CHandle< CBaseEntity >.hpp>
 #include <SDK/entity2/CEntityIOOutput.hpp>
 
 

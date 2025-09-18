@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0xA80
 			namespace CBaseAnimGraph /*: public CS2::server::CBaseModelEntity*/ {
 				constexpr std::ptrdiff_t m_bInitiallyPopulateInterpHistory = 0x870; // bool m_bInitiallyPopulateInterpHistory; |  0x870 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pChoreoServices = 0x878; // GlobalTypes::IChoreoServices* m_pChoreoServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pChoreoServices = 0x878; // client::IChoreoServices* m_pChoreoServices; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_bAnimGraphUpdateEnabled = 0x880; // bool m_bAnimGraphUpdateEnabled; |  0x880 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMaxSlopeDistance = 0x884; // float32 m_flMaxSlopeDistance; |  0x884 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_vLastSlopeCheckPos = 0x888; // GlobalTypes::Vector m_vLastSlopeCheckPos; |  Schema_Atomic | Size: 0xc

@@ -28,7 +28,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flDeathTime = 0xd44; // entity2::GameTime_t m_flDeathTime; |  Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_fNextSuicideTime = 0xd48; // entity2::GameTime_t m_fNextSuicideTime; |  Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_fInitHUD = 0xd4c; // bool m_fInitHUD; |  0xd4c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pExpresser = 0xd50; // GlobalTypes::CAI_Expresser* m_pExpresser; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pExpresser = 0xd50; // server::CAI_Expresser* m_pExpresser; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_hController = 0xd58; // server::CHandle< server::CBasePlayerController > m_hController; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_hDefaultController = 0xd5c; // server::CHandle< server::CBasePlayerController > m_hDefaultController; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_fHltvReplayDelay = 0xd64; // float32 m_fHltvReplayDelay; |  0xd64 | Schema_Builtin | Size: 0x4

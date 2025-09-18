@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace particleslib {
 			// Class size: 0xD8
 			namespace CNewParticleEffect /*: public CS2::particleslib::IParticleEffect*/ {
-				constexpr std::ptrdiff_t m_pNext = 0x10; // GlobalTypes::CNewParticleEffect* m_pNext; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pPrev = 0x18; // GlobalTypes::CNewParticleEffect* m_pPrev; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pParticles = 0x20; // GlobalTypes::IParticleCollection* m_pParticles; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNext = 0x10; // particleslib::CNewParticleEffect* m_pNext; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPrev = 0x18; // particleslib::CNewParticleEffect* m_pPrev; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pParticles = 0x20; // particles::IParticleCollection* m_pParticles; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_pDebugName = 0x28; // char* m_pDebugName; |  0x28 | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_vSortOrigin = 0x40; // GlobalTypes::Vector m_vSortOrigin; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flScale = 0x4c; // float32 m_flScale; |  0x4c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hOwner = 0x50; // GlobalTypes::PARTICLE_EHANDLE__* m_hOwner; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pOwningParticleProperty = 0x58; // GlobalTypes::CParticleProperty* m_pOwningParticleProperty; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_hOwner = 0x50; // particleslib::PARTICLE_EHANDLE__* m_hOwner; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pOwningParticleProperty = 0x58; // particleslib::CParticleProperty* m_pOwningParticleProperty; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_flFreezeTransitionStart = 0x70; // float32 m_flFreezeTransitionStart; |  0x70 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFreezeTransitionDuration = 0x74; // float32 m_flFreezeTransitionDuration; |  0x74 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFreezeTransitionOverride = 0x78; // float32 m_flFreezeTransitionOverride; |  0x78 | Schema_Builtin | Size: 0x4

@@ -10,13 +10,18 @@
 
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
+		class CVoiceContainerBase;
+	}
+}
+namespace CS2 {
+	namespace soundsystem_voicecontainers {
 		class CSoundContainerReference  {
 		public:
 			bool m_bUseReference; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_sound; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_sound[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CVoiceContainerBase* m_pSound; // 0x10 | Schema_Ptr | Size: 0x8
+			soundsystem_voicecontainers::CVoiceContainerBase* m_pSound; // 0x10 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CSoundContainerReference, m_bUseReference) == 0x0, "m_bUseReference in CSoundContainerReference should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CSoundContainerReference, m_sound) == 0x8, "m_sound in CSoundContainerReference should be at offset 0x8");

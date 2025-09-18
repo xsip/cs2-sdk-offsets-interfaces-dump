@@ -8,6 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace server {
+			constexpr std::ptrdiff_t  = 0x123963c; 
 			constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x16f8820; 
 			constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0x16a4f90; 
 			constexpr std::ptrdiff_t NavGameTest001 = 0x179fdb0; 

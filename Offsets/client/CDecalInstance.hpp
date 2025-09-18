@@ -32,8 +32,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nSequenceIndex = 0x74; // int16_t m_nSequenceIndex; |  0x74 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_bIsAdjacent = 0x76; // bool m_bIsAdjacent; |  0x76 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDoDecalLightmapping = 0x77; // bool m_bDoDecalLightmapping; |  0x77 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pNext = 0x78; // GlobalTypes::CDecalInstance* m_pNext; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pPrev = 0x80; // GlobalTypes::CDecalInstance* m_pPrev; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNext = 0x78; // client::CDecalInstance* m_pNext; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPrev = 0x80; // client::CDecalInstance* m_pPrev; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

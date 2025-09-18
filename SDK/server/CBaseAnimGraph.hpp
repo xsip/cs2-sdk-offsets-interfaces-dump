@@ -11,13 +11,18 @@
 
 
 namespace CS2 {
+	namespace client {
+		class IChoreoServices;
+	}
+}
+namespace CS2 {
 	namespace server {
 		class CBaseAnimGraph : public CS2::server::CBaseModelEntity {
 		public:
 			S2_PAD(0x80);
 			bool m_bInitiallyPopulateInterpHistory; // 0x870 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::IChoreoServices* m_pChoreoServices; // 0x878 | Schema_Ptr | Size: 0x8
+			client::IChoreoServices* m_pChoreoServices; // 0x878 | Schema_Ptr | Size: 0x8
 			bool m_bAnimGraphUpdateEnabled; // 0x880 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flMaxSlopeDistance; // 0x884 | Schema_Builtin | Size: 0x4

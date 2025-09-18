@@ -21,7 +21,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_shapeMarkups = 0x98; // GlobalTypes::CUtlVector< modellib::PhysShapeMarkup_t > m_shapeMarkups; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_constraints2 = 0xb0; // GlobalTypes::CUtlVector< modellib::VPhysXConstraint2_t > m_constraints2; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_joints = 0xc8; // GlobalTypes::CUtlVector< modellib::VPhysXJoint_t > m_joints; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pFeModel = 0xe0; // GlobalTypes::PhysFeModelDesc_t* m_pFeModel; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pFeModel = 0xe0; // physicslib::PhysFeModelDesc_t* m_pFeModel; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_boneParents = 0xe8; // GlobalTypes::CUtlVector< uint16 > m_boneParents; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_surfacePropertyHashes = 0x100; // GlobalTypes::CUtlVector< uint32 > m_surfacePropertyHashes; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_collisionAttributes = 0x118; // GlobalTypes::CUtlVector< modellib::VPhysXCollisionAttributes_t > m_collisionAttributes; |  Schema_Atomic | Size: 0x18

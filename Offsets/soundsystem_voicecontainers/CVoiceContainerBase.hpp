@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0xB8
 			namespace CVoiceContainerBase /**/ {
 				constexpr std::ptrdiff_t m_vSound = 0x38; // soundsystem_voicecontainers::CVSound m_vSound; |  Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_pEnvelopeAnalyzer = 0xb0; // GlobalTypes::CVoiceContainerAnalysisBase* m_pEnvelopeAnalyzer; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pEnvelopeAnalyzer = 0xb0; // soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_pEnvelopeAnalyzer; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

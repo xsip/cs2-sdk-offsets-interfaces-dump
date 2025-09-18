@@ -10,19 +10,28 @@
 
 
 namespace CS2 {
+	namespace particles {
+		class IParticleCollection;
+	}
+	namespace particleslib {
+		class PARTICLE_EHANDLE__;
+		class CParticleProperty;
+	}
+}
+namespace CS2 {
 	namespace particleslib {
 		class CNewParticleEffect : public CS2::particleslib::IParticleEffect {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CNewParticleEffect* m_pNext; // 0x10 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CNewParticleEffect* m_pPrev; // 0x18 | Schema_Ptr | Size: 0x8
-			GlobalTypes::IParticleCollection* m_pParticles; // 0x20 | Schema_Ptr | Size: 0x8
+			particleslib::CNewParticleEffect* m_pNext; // 0x10 | Schema_Ptr | Size: 0x8
+			particleslib::CNewParticleEffect* m_pPrev; // 0x18 | Schema_Ptr | Size: 0x8
+			particles::IParticleCollection* m_pParticles; // 0x20 | Schema_Ptr | Size: 0x8
 			char* m_pDebugName; // 0x28 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x10);
 			GlobalTypes::Vector m_vSortOrigin; // 0x40 | Schema_Atomic | Size: 0xc
 			float32 m_flScale; // 0x4c | Schema_Builtin | Size: 0x4
-			GlobalTypes::PARTICLE_EHANDLE__* m_hOwner; // 0x50 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CParticleProperty* m_pOwningParticleProperty; // 0x58 | Schema_Ptr | Size: 0x8
+			particleslib::PARTICLE_EHANDLE__* m_hOwner; // 0x50 | Schema_Ptr | Size: 0x8
+			particleslib::CParticleProperty* m_pOwningParticleProperty; // 0x58 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x10);
 			float32 m_flFreezeTransitionStart; // 0x70 | Schema_Builtin | Size: 0x4
 			float32 m_flFreezeTransitionDuration; // 0x74 | Schema_Builtin | Size: 0x4

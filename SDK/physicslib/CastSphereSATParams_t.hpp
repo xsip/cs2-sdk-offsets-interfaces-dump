@@ -10,6 +10,11 @@
 
 namespace CS2 {
 	namespace physicslib {
+		class RnHull_t;
+	}
+}
+namespace CS2 {
+	namespace physicslib {
 		class CastSphereSATParams_t  {
 		public:
 			GlobalTypes::Vector m_vRayStart; // 0x0 | Schema_Atomic | Size: 0xc
@@ -18,7 +23,7 @@ namespace CS2 {
 			float32 m_flMaxFraction; // 0x1c | Schema_Builtin | Size: 0x4
 			float32 m_flScale; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::RnHull_t* m_pHull; // 0x28 | Schema_Ptr | Size: 0x8
+			physicslib::RnHull_t* m_pHull; // 0x28 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::physicslib::CastSphereSATParams_t, m_vRayStart) == 0x0, "m_vRayStart in CastSphereSATParams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CastSphereSATParams_t, m_vRayDelta) == 0xC, "m_vRayDelta in CastSphereSATParams_t should be at offset 0xC");

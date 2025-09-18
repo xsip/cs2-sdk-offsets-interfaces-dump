@@ -10,9 +10,14 @@
 
 namespace CS2 {
 	namespace client {
+		class CTakeDamageInfo;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class CTakeDamageResult  {
 		public:
-			GlobalTypes::CTakeDamageInfo* m_pOriginatingInfo; // 0x0 | Schema_Ptr | Size: 0x8
+			client::CTakeDamageInfo* m_pOriginatingInfo; // 0x0 | Schema_Ptr | Size: 0x8
 			int32_t m_nHealthLost; // 0x8 | Schema_Builtin | Size: 0x4
 			int32_t m_nDamageDealt; // 0xc | Schema_Builtin | Size: 0x4
 			float32 m_flPreModifiedDamage; // 0x10 | Schema_Builtin | Size: 0x4

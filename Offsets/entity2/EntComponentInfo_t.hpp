@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_pNetworkDataReferencedPtrPropDescription = 0x18; // char* m_pNetworkDataReferencedPtrPropDescription; |  0x18 | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_nRuntimeIndex = 0x20; // int32_t m_nRuntimeIndex; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFlags = 0x24; // uint32_t m_nFlags; |  0x24 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pBaseClassComponentHelper = 0x60; // GlobalTypes::CEntityComponentHelper* m_pBaseClassComponentHelper; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pBaseClassComponentHelper = 0x60; // entity2::CEntityComponentHelper* m_pBaseClassComponentHelper; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

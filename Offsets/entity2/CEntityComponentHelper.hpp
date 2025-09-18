@@ -11,9 +11,9 @@ namespace CS2 {
 			// Class size: 0x28
 			namespace CEntityComponentHelper /**/ {
 				constexpr std::ptrdiff_t m_flags = 0x8; // uint32_t m_flags; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pInfo = 0x10; // GlobalTypes::EntComponentInfo_t* m_pInfo; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pInfo = 0x10; // entity2::EntComponentInfo_t* m_pInfo; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_nPriority = 0x18; // int32_t m_nPriority; |  0x18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pNext = 0x20; // GlobalTypes::CEntityComponentHelper* m_pNext; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNext = 0x20; // entity2::CEntityComponentHelper* m_pNext; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

@@ -9,6 +9,11 @@
 
 
 namespace CS2 {
+	namespace physicslib {
+		class PhysFeModelDesc_t;
+	}
+}
+namespace CS2 {
 	namespace modellib {
 		class VPhysXAggregateData_t  {
 		public:
@@ -33,7 +38,7 @@ namespace CS2 {
 			char  m_constraints2[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::VPhysXJoint_t > m_joints; // 0xc8 | Schema_Atomic | Size: 0x18
 			char  m_joints[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::PhysFeModelDesc_t* m_pFeModel; // 0xe0 | Schema_Ptr | Size: 0x8
+			physicslib::PhysFeModelDesc_t* m_pFeModel; // 0xe0 | Schema_Ptr | Size: 0x8
 			// GlobalTypes::CUtlVector< uint16 > m_boneParents; // 0xe8 | Schema_Atomic | Size: 0x18
 			char  m_boneParents[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint32 > m_surfacePropertyHashes; // 0x100 | Schema_Atomic | Size: 0x18

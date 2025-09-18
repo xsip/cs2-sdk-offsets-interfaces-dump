@@ -45,7 +45,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nRequiredDecalMode = 0xd55; // client::DecalMode_t m_nRequiredDecalMode; |  Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_ConfigEntitiesToPropagateMaterialDecalsTo = 0xd58; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_vecViewOffset = 0xd98; // client::CNetworkViewOffsetVector m_vecViewOffset; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pClientAlphaProperty = 0xe78; // GlobalTypes::CClientAlphaProperty* m_pClientAlphaProperty; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pClientAlphaProperty = 0xe78; // client::CClientAlphaProperty* m_pClientAlphaProperty; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_ClientOverrideTint = 0xe80; // GlobalTypes::Color m_ClientOverrideTint; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseClientOverrideTint = 0xe84; // bool m_bUseClientOverrideTint; |  0xe84 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0xec0; // uint32_t m_bvDisabledHitGroups[1]; |  0xec0 | Schema_FixedArray | Size: 0x4

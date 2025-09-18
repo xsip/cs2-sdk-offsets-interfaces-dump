@@ -10,15 +10,20 @@
 
 namespace CS2 {
 	namespace entity2 {
+		class EntComponentInfo_t;
+	}
+}
+namespace CS2 {
+	namespace entity2 {
 		class CEntityComponentHelper  {
 		public:
 			S2_PAD(0x8);
 			uint32_t m_flags; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::EntComponentInfo_t* m_pInfo; // 0x10 | Schema_Ptr | Size: 0x8
+			entity2::EntComponentInfo_t* m_pInfo; // 0x10 | Schema_Ptr | Size: 0x8
 			int32_t m_nPriority; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CEntityComponentHelper* m_pNext; // 0x20 | Schema_Ptr | Size: 0x8
+			entity2::CEntityComponentHelper* m_pNext; // 0x20 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::entity2::CEntityComponentHelper, m_flags) == 0x8, "m_flags in CEntityComponentHelper should be at offset 0x8");
 		static_assert(offsetof(CS2::entity2::CEntityComponentHelper, m_pInfo) == 0x10, "m_pInfo in CEntityComponentHelper should be at offset 0x10");

@@ -11,11 +11,16 @@
 
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
+		class CVoiceContainerAnalysisBase;
+	}
+}
+namespace CS2 {
+	namespace soundsystem_voicecontainers {
 		class CVoiceContainerBase  {
 		public:
 			S2_PAD(0x38);
 			soundsystem_voicecontainers::CVSound m_vSound; // 0x38 | Schema_DeclaredClass | Size: 0x78
-			GlobalTypes::CVoiceContainerAnalysisBase* m_pEnvelopeAnalyzer; // 0xb0 | Schema_Ptr | Size: 0x8
+			soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_pEnvelopeAnalyzer; // 0xb0 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerBase, m_vSound) == 0x38, "m_vSound in CVoiceContainerBase should be at offset 0x38");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerBase, m_pEnvelopeAnalyzer) == 0xB0, "m_pEnvelopeAnalyzer in CVoiceContainerBase should be at offset 0xB0");

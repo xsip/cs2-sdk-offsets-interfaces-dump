@@ -39,8 +39,8 @@ namespace CS2 {
 			int16_t m_nSequenceIndex; // 0x74 | Schema_Builtin | Size: 0x2
 			bool m_bIsAdjacent; // 0x76 | Schema_Builtin | Size: 0x1
 			bool m_bDoDecalLightmapping; // 0x77 | Schema_Builtin | Size: 0x1
-			GlobalTypes::CDecalInstance* m_pNext; // 0x78 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CDecalInstance* m_pPrev; // 0x80 | Schema_Ptr | Size: 0x8
+			client::CDecalInstance* m_pNext; // 0x78 | Schema_Ptr | Size: 0x8
+			client::CDecalInstance* m_pPrev; // 0x80 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CDecalInstance, m_sDecalGroup) == 0x0, "m_sDecalGroup in CDecalInstance should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_hMaterial) == 0x8, "m_hMaterial in CDecalInstance should be at offset 0x8");

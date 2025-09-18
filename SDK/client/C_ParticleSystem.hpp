@@ -7,7 +7,6 @@
 
 #include <SDK/client/C_BaseModelEntity.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/CHandle< C_BaseEntity >.hpp>
 
 
 

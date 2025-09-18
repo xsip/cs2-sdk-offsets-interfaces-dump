@@ -29,7 +29,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_remappingTable = 0x230; // GlobalTypes::CUtlVector< int16 > m_remappingTable; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_remappingTableStarts = 0x248; // GlobalTypes::CUtlVector< uint16 > m_remappingTableStarts; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_boneFlexDrivers = 0x260; // GlobalTypes::CUtlVector< modellib::ModelBoneFlexDriver_t > m_boneFlexDrivers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pModelConfigList = 0x278; // GlobalTypes::CModelConfigList* m_pModelConfigList; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pModelConfigList = 0x278; // modellib::CModelConfigList* m_pModelConfigList; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_BodyGroupsHiddenInTools = 0x280; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_BodyGroupsHiddenInTools; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_refAnimIncludeModels = 0x298; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCModel > > m_refAnimIncludeModels; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_AnimatedMaterialAttributes = 0x2b0; // GlobalTypes::CUtlVector< modellib::PermModelDataAnimatedMaterialAttribute_t > m_AnimatedMaterialAttributes; |  Schema_Atomic | Size: 0x18

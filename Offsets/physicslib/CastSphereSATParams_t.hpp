@@ -15,7 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flRadius = 0x18; // float32 m_flRadius; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxFraction = 0x1c; // float32 m_flMaxFraction; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flScale = 0x20; // float32 m_flScale; |  0x20 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pHull = 0x28; // GlobalTypes::RnHull_t* m_pHull; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pHull = 0x28; // physicslib::RnHull_t* m_pHull; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

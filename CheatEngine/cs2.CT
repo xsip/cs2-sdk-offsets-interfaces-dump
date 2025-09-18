@@ -645,69 +645,76 @@
 			<CheatEntries>
 				<CheatEntry>
 					<ID>93</ID>
+					<Description>""</Description>
+					<ShowAsSigned>0</ShowAsSigned>
+					 <VariableType>4 Bytes</VariableType>
+					 <Address>server.dll + 0x123963c</Address>
+				</CheatEntry>
+				<CheatEntry>
+					<ID>94</ID>
 					<Description>"EmptyWorldService001_Server"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x16f8820</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>94</ID>
+					<ID>95</ID>
 					<Description>"EntitySubclassUtilsV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x16a4f90</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>95</ID>
+					<ID>96</ID>
 					<Description>"NavGameTest001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x179fdb0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>96</ID>
+					<ID>97</ID>
 					<Description>"ServerToolsInfo_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x174fce8</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>97</ID>
+					<ID>98</ID>
 					<Description>"Source2GameClients001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x174b6a0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>98</ID>
+					<ID>99</ID>
 					<Description>"Source2GameDirector001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x18a9210</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>99</ID>
+					<ID>100</ID>
 					<Description>"Source2GameEntities001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x174f3f0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>100</ID>
+					<ID>101</ID>
 					<Description>"Source2Server001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x174f250</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>101</ID>
+					<ID>102</ID>
 					<Description>"Source2ServerConfig001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>server.dll + 0x197a668</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>102</ID>
+					<ID>103</ID>
 					<Description>"customnavsystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
@@ -716,33 +723,33 @@
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>103</ID>
+			<ID>104</ID>
 			<Description>"soundsystem"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>104</ID>
+					<ID>105</ID>
 					<Description>"SoundOpSystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>soundsystem.dll + 0x3e4420</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>105</ID>
+					<ID>106</ID>
 					<Description>"SoundOpSystemEdit001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>soundsystem.dll + 0x3e4300</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>106</ID>
+					<ID>107</ID>
 					<Description>"SoundSystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>soundsystem.dll + 0x3e3e30</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>107</ID>
+					<ID>108</ID>
 					<Description>"VMixEditTool001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
@@ -751,33 +758,33 @@
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>108</ID>
+			<ID>109</ID>
 			<Description>"tier0"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>109</ID>
+					<ID>110</ID>
 					<Description>"TestScriptMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>tier0.dll + 0x3906a0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>110</ID>
+					<ID>111</ID>
 					<Description>"VEngineCvar007"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>tier0.dll + 0x39b540</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>111</ID>
+					<ID>112</ID>
 					<Description>"VProcessUtils002"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>tier0.dll + 0x390530</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>112</ID>
+					<ID>113</ID>
 					<Description>"VStringTokenSystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
@@ -786,19 +793,19 @@
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>113</ID>
+			<ID>114</ID>
 			<Description>"vphysics2"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>114</ID>
+					<ID>115</ID>
 					<Description>"VPhysics2_Handle_Interface_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
 					 <Address>vphysics2.dll + 0x3e00e0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>115</ID>
+					<ID>116</ID>
 					<Description>"VPhysics2_Interface_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
@@ -807,12 +814,12 @@
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>116</ID>
+			<ID>117</ID>
 			<Description>"worldrenderer"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>117</ID>
+					<ID>118</ID>
 					<Description>"WorldRendererMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>

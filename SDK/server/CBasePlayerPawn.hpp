@@ -22,6 +22,7 @@ namespace CS2 {
 		class CPlayer_FlashlightServices;
 		class CPlayer_CameraServices;
 		class CPlayer_MovementServices;
+		class CAI_Expresser;
 	}
 }
 namespace CS2 {
@@ -50,7 +51,7 @@ namespace CS2 {
 			entity2::GameTime_t m_fNextSuicideTime; // 0xd48 | Schema_DeclaredClass | Size: 0x4
 			bool m_fInitHUD; // 0xd4c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CAI_Expresser* m_pExpresser; // 0xd50 | Schema_Ptr | Size: 0x8
+			server::CAI_Expresser* m_pExpresser; // 0xd50 | Schema_Ptr | Size: 0x8
 			// server::CHandle< server::CBasePlayerController > m_hController; // 0xd58 | Schema_Atomic | Size: 0x4
 			char  m_hController[0x4]; // 0xd58 | Schema_Atomic | Size: 0x4
 			// server::CHandle< server::CBasePlayerController > m_hDefaultController; // 0xd5c | Schema_Atomic | Size: 0x4

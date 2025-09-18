@@ -12,6 +12,11 @@
 
 namespace CS2 {
 	namespace modellib {
+		class CRenderGroom;
+	}
+}
+namespace CS2 {
+	namespace modellib {
 		class CRenderMesh  {
 		public:
 			S2_PAD(0x10);
@@ -26,7 +31,7 @@ namespace CS2 {
 			S2_PAD(0x22);
 			modellib::DynamicMeshDeformParams_t m_meshDeformParams; // 0x1d8 | Schema_DeclaredClass | Size: 0xc
 			S2_PAD(0x4);
-			GlobalTypes::CRenderGroom* m_pGroomData; // 0x1e8 | Schema_Ptr | Size: 0x8
+			modellib::CRenderGroom* m_pGroomData; // 0x1e8 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_sceneObjects) == 0x10, "m_sceneObjects in CRenderMesh should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_constraints) == 0xA8, "m_constraints in CRenderMesh should be at offset 0xA8");

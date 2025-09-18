@@ -23,7 +23,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_Faces = 0xb8; // GlobalTypes::CUtlVector< physicslib::RnFace_t > m_Faces; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_FacePlanes = 0xd0; // GlobalTypes::CUtlVector< physicslib::RnPlane_t > m_FacePlanes; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nFlags = 0xe8; // uint32_t m_nFlags; |  0xe8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pRegionSVM = 0xf0; // GlobalTypes::CRegionSVM* m_pRegionSVM; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pRegionSVM = 0xf0; // physicslib::CRegionSVM* m_pRegionSVM; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

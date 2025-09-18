@@ -12,6 +12,11 @@
 
 namespace CS2 {
 	namespace modellib {
+		class CModelConfigList;
+	}
+}
+namespace CS2 {
+	namespace modellib {
 		class PermModelData_t  {
 		public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
@@ -48,7 +53,7 @@ namespace CS2 {
 			char  m_remappingTableStarts[0x18]; // 0x248 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::ModelBoneFlexDriver_t > m_boneFlexDrivers; // 0x260 | Schema_Atomic | Size: 0x18
 			char  m_boneFlexDrivers[0x18]; // 0x260 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CModelConfigList* m_pModelConfigList; // 0x278 | Schema_Ptr | Size: 0x8
+			modellib::CModelConfigList* m_pModelConfigList; // 0x278 | Schema_Ptr | Size: 0x8
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_BodyGroupsHiddenInTools; // 0x280 | Schema_Atomic | Size: 0x18
 			char  m_BodyGroupsHiddenInTools[0x18]; // 0x280 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCModel > > m_refAnimIncludeModels; // 0x298 | Schema_Atomic | Size: 0x18

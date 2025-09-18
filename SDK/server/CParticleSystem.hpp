@@ -7,7 +7,6 @@
 
 #include <SDK/server/CBaseModelEntity.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/server/CHandle< CBaseEntity >.hpp>
 
 
 

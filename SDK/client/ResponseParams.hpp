@@ -10,13 +10,18 @@
 
 namespace CS2 {
 	namespace client {
+		class ResponseFollowup;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class ResponseParams  {
 		public:
 			S2_PAD(0x10);
 			int16_t odds; // 0x10 | Schema_Builtin | Size: 0x2
 			int16_t flags; // 0x12 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4);
-			GlobalTypes::ResponseFollowup* m_pFollowup; // 0x18 | Schema_Ptr | Size: 0x8
+			client::ResponseFollowup* m_pFollowup; // 0x18 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::ResponseParams, odds) == 0x10, "odds in ResponseParams should be at offset 0x10");
 		static_assert(offsetof(CS2::client::ResponseParams, flags) == 0x12, "flags in ResponseParams should be at offset 0x12");

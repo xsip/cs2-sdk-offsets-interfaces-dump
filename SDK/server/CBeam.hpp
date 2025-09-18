@@ -8,7 +8,6 @@
 #include <SDK/server/CBaseModelEntity.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
 #include <SDK/client/BeamType_t.hpp>
-#include <SDK/server/CHandle< CBaseEntity >.hpp>
 #include <SDK/modellib/AttachmentHandle_t.hpp>
 #include <SDK/client/BeamClipStyle_t.hpp>
 
