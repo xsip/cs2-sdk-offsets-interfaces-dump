@@ -24,10 +24,9 @@ namespace CS2 {
 			S2_PAD(0xed8);
 			uint32_t m_unEquippedPlayerSprayIDs[1]; // 0xf48 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar< client::ServerAuthoritativeWeaponSlot_t > m_vecServerAuthoritativeWeaponSlots; // 0xf50 | Schema_Atomic | Size: 0x88
-			char  m_vecServerAuthoritativeWeaponSlots[0x88]; // 0xf50 | Schema_Atomic | Size: 0x88
-			// server::CUtlVectorEmbeddedNetworkVar< server::CSNetworkableLoadout_t > m_vecNetworkableLoadout; // 0xfd8 | Schema_Atomic | Size: 0x88
-			char  m_vecNetworkableLoadout[0x88]; // 0xfd8 | Schema_Atomic | Size: 0x88
+			uint64_t m_unCurrentLoadoutHash; // 0xf50 | Schema_Builtin | Size: 0x8
+			// GlobalTypes::CUtlVectorEmbeddedNetworkVar< client::ServerAuthoritativeWeaponSlot_t > m_vecServerAuthoritativeWeaponSlots; // 0xf58 | Schema_Atomic | Size: 0x88
+			char  m_vecServerAuthoritativeWeaponSlots[0x88]; // 0xf58 | Schema_Atomic | Size: 0x88
 		};
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_unMusicID) == 0x40, "m_unMusicID in CCSPlayerController_InventoryServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_rank) == 0x44, "m_rank in CCSPlayerController_InventoryServices should be at offset 0x44");
@@ -37,8 +36,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_nPersonaDataPublicCommendsFriendly) == 0x68, "m_nPersonaDataPublicCommendsFriendly in CCSPlayerController_InventoryServices should be at offset 0x68");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_nPersonaDataXpTrailLevel) == 0x6C, "m_nPersonaDataXpTrailLevel in CCSPlayerController_InventoryServices should be at offset 0x6C");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_unEquippedPlayerSprayIDs) == 0xF48, "m_unEquippedPlayerSprayIDs in CCSPlayerController_InventoryServices should be at offset 0xF48");
-		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_vecServerAuthoritativeWeaponSlots) == 0xF50, "m_vecServerAuthoritativeWeaponSlots in CCSPlayerController_InventoryServices should be at offset 0xF50");
-		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_vecNetworkableLoadout) == 0xFD8, "m_vecNetworkableLoadout in CCSPlayerController_InventoryServices should be at offset 0xFD8");
-		static_assert(sizeof(CS2::server::CCSPlayerController_InventoryServices) == 0x1060, "CCSPlayerController_InventoryServices size should be 0x1060");
+		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_unCurrentLoadoutHash) == 0xF50, "m_unCurrentLoadoutHash in CCSPlayerController_InventoryServices should be at offset 0xF50");
+		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_vecServerAuthoritativeWeaponSlots) == 0xF58, "m_vecServerAuthoritativeWeaponSlots in CCSPlayerController_InventoryServices should be at offset 0xF58");
+		static_assert(sizeof(CS2::server::CCSPlayerController_InventoryServices) == 0xFE0, "CCSPlayerController_InventoryServices size should be 0xFE0");
 	}
 }

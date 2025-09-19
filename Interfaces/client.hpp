@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace client {
-			constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x1bd6a90; 
-			constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x1b91e10; 
-			constexpr std::ptrdiff_t GameClientExports001 = 0x1bd3770; 
-			constexpr std::ptrdiff_t LegacyGameUI001 = 0x1bf2260; 
-			constexpr std::ptrdiff_t Source2Client002 = 0x1e19230; 
-			constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1db3030; 
-			constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x1bddd40; 
-			constexpr std::ptrdiff_t Source2ClientUI001 = 0x1bf06f0; 
+			constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x1bd9b20; 
+			constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x1b94ea0; 
+			constexpr std::ptrdiff_t GameClientExports001 = 0x1bd6800; 
+			constexpr std::ptrdiff_t LegacyGameUI001 = 0x1bf52c0; 
+			constexpr std::ptrdiff_t Source2Client002 = 0x1e1c5f0; 
+			constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1db64c0; 
+			constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x1be0dc0; 
+			constexpr std::ptrdiff_t Source2ClientUI001 = 0x1bf3750; 
 		}
 	}
 }

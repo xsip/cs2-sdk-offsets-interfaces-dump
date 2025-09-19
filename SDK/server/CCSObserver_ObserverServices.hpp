@@ -13,7 +13,8 @@ namespace CS2 {
 	namespace server {
 		class CCSObserver_ObserverServices : public CS2::server::CPlayer_ObserverServices {
 		public:
+			S2_PAD(0x28);
 		};
-		static_assert(sizeof(CS2::server::CCSObserver_ObserverServices) == 0x50, "CCSObserver_ObserverServices size should be 0x50");
+		static_assert(sizeof(CS2::server::CCSObserver_ObserverServices) == 0x78, "CCSObserver_ObserverServices size should be 0x78");
 	}
 }
