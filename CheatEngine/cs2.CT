@@ -60,7 +60,7 @@
 					<Description>"Source2Client002"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1e1c5f0</Address>
+					 <Address>client.dll + 0x1e1c670</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>10</ID>
@@ -648,70 +648,70 @@
 					<Description>"EmptyWorldService001_Server"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x16fe8a0</Address>
+					 <Address>server.dll + 0x16fe8b0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>94</ID>
 					<Description>"EntitySubclassUtilsV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x16aafa0</Address>
+					 <Address>server.dll + 0x16aafb0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>95</ID>
 					<Description>"NavGameTest001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x17a5e10</Address>
+					 <Address>server.dll + 0x17a5e20</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>96</ID>
 					<Description>"ServerToolsInfo_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x1755d68</Address>
+					 <Address>server.dll + 0x1755d78</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>97</ID>
 					<Description>"Source2GameClients001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x1751720</Address>
+					 <Address>server.dll + 0x1751730</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>98</ID>
 					<Description>"Source2GameDirector001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x18af510</Address>
+					 <Address>server.dll + 0x18af520</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>99</ID>
 					<Description>"Source2GameEntities001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x1755470</Address>
+					 <Address>server.dll + 0x1755480</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>100</ID>
 					<Description>"Source2Server001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x17552d0</Address>
+					 <Address>server.dll + 0x17552e0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>101</ID>
 					<Description>"Source2ServerConfig001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x1980938</Address>
+					 <Address>server.dll + 0x1980948</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>102</ID>
 					<Description>"customnavsystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x168aaa8</Address>
+					 <Address>server.dll + 0x168aab8</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>

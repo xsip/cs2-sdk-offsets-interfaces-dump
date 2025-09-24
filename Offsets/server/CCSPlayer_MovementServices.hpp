@@ -43,14 +43,14 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flOffsetTickCompleteTime = 0x530; // float32 m_flOffsetTickCompleteTime; |  0x530 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOffsetTickStashedSpeed = 0x534; // float32 m_flOffsetTickStashedSpeed; |  0x534 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStamina = 0x538; // float32 m_flStamina; |  0x538 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecInputRotated = 0x53c; // GlobalTypes::Vector m_vecInputRotated; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flHeightAtJumpStart = 0x548; // float32 m_flHeightAtJumpStart; |  0x548 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxJumpHeightThisJump = 0x54c; // float32 m_flMaxJumpHeightThisJump; |  0x54c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxJumpHeightLastJump = 0x550; // float32 m_flMaxJumpHeightLastJump; |  0x550 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStaminaAtJumpStart = 0x554; // float32 m_flStaminaAtJumpStart; |  0x554 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAccumulatedJumpError = 0x558; // float32 m_flAccumulatedJumpError; |  0x558 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTicksSinceLastSurfingDetected = 0x55c; // float32 m_flTicksSinceLastSurfingDetected; |  0x55c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bWasSurfing = 0x560; // bool m_bWasSurfing; |  0x560 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flHeightAtJumpStart = 0x53c; // float32 m_flHeightAtJumpStart; |  0x53c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxJumpHeightThisJump = 0x540; // float32 m_flMaxJumpHeightThisJump; |  0x540 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxJumpHeightLastJump = 0x544; // float32 m_flMaxJumpHeightLastJump; |  0x544 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStaminaAtJumpStart = 0x548; // float32 m_flStaminaAtJumpStart; |  0x548 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAccumulatedJumpError = 0x54c; // float32 m_flAccumulatedJumpError; |  0x54c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTicksSinceLastSurfingDetected = 0x550; // float32 m_flTicksSinceLastSurfingDetected; |  0x550 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bWasSurfing = 0x554; // bool m_bWasSurfing; |  0x554 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecInputRotated = 0x5e4; // GlobalTypes::Vector m_vecInputRotated; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}
