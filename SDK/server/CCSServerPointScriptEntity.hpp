@@ -14,6 +14,6 @@ namespace CS2 {
 		class CCSServerPointScriptEntity : public CS2::server::CCSPointScriptEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CCSServerPointScriptEntity) == 0x5E0, "CCSServerPointScriptEntity size should be 0x5E0");
+		static_assert(sizeof(CS2::server::CCSServerPointScriptEntity) == 0x620, "CCSServerPointScriptEntity size should be 0x620");
 	}
 }

@@ -32,9 +32,8 @@ namespace CS2 {
 			float32 m_flUpMove; // 0x1b4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecLastMovementImpulses; // 0x1b8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x5c);
-			GlobalTypes::QAngle m_vecLastFinishTickViewAngles; // 0x220 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecOldViewAngles; // 0x22c | Schema_Atomic | Size: 0xc
-			S2_PAD(0x8); // End padding
+			GlobalTypes::QAngle m_vecOldViewAngles; // 0x220 | Schema_Atomic | Size: 0xc
+			S2_PAD(0xc); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_nImpulse) == 0x40, "m_nImpulse in CPlayer_MovementServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_nButtons) == 0x48, "m_nButtons in CPlayer_MovementServices should be at offset 0x48");
@@ -50,8 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_flLeftMove) == 0x1B0, "m_flLeftMove in CPlayer_MovementServices should be at offset 0x1B0");
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_flUpMove) == 0x1B4, "m_flUpMove in CPlayer_MovementServices should be at offset 0x1B4");
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_vecLastMovementImpulses) == 0x1B8, "m_vecLastMovementImpulses in CPlayer_MovementServices should be at offset 0x1B8");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_vecLastFinishTickViewAngles) == 0x220, "m_vecLastFinishTickViewAngles in CPlayer_MovementServices should be at offset 0x220");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_vecOldViewAngles) == 0x22C, "m_vecOldViewAngles in CPlayer_MovementServices should be at offset 0x22C");
-		static_assert(sizeof(CS2::server::CPlayer_MovementServices) == 0x240, "CPlayer_MovementServices size should be 0x240");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices, m_vecOldViewAngles) == 0x220, "m_vecOldViewAngles in CPlayer_MovementServices should be at offset 0x220");
+		static_assert(sizeof(CS2::server::CPlayer_MovementServices) == 0x238, "CPlayer_MovementServices size should be 0x238");
 	}
 }

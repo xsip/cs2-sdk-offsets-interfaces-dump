@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5E0
+			// Class size: 0x620
 			namespace CCSServerPointScriptEntity /*: public CS2::server::CCSPointScriptEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

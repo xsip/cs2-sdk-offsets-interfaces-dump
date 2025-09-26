@@ -8,49 +8,49 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5F0
+			// Class size: 0x5E8
 			namespace CCSPlayer_MovementServices /*: public CS2::server::CPlayer_MovementServices_Humanoid*/ {
-				constexpr std::ptrdiff_t m_vecLadderNormal = 0x288; // GlobalTypes::Vector m_vecLadderNormal; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nLadderSurfacePropIndex = 0x294; // int32_t m_nLadderSurfacePropIndex; |  0x294 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDuckAmount = 0x298; // float32 m_flDuckAmount; |  0x298 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDuckSpeed = 0x29c; // float32 m_flDuckSpeed; |  0x29c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDuckOverride = 0x2a0; // bool m_bDuckOverride; |  0x2a0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDesiresDuck = 0x2a1; // bool m_bDesiresDuck; |  0x2a1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDuckOffset = 0x2a4; // float32 m_flDuckOffset; |  0x2a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDuckTimeMsecs = 0x2a8; // uint32_t m_nDuckTimeMsecs; |  0x2a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDuckJumpTimeMsecs = 0x2ac; // uint32_t m_nDuckJumpTimeMsecs; |  0x2ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nJumpTimeMsecs = 0x2b0; // uint32_t m_nJumpTimeMsecs; |  0x2b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastDuckTime = 0x2b4; // float32 m_flLastDuckTime; |  0x2b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecLastPositionAtFullCrouchSpeed = 0x2c0; // GlobalTypes::Vector2D m_vecLastPositionAtFullCrouchSpeed; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_duckUntilOnGround = 0x2c8; // bool m_duckUntilOnGround; |  0x2c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasWalkMovedSinceLastJump = 0x2c9; // bool m_bHasWalkMovedSinceLastJump; |  0x2c9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bInStuckTest = 0x2ca; // bool m_bInStuckTest; |  0x2ca | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nTraceCount = 0x4d8; // int32_t m_nTraceCount; |  0x4d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_StuckLast = 0x4dc; // int32_t m_StuckLast; |  0x4dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSpeedCropped = 0x4e0; // bool m_bSpeedCropped; |  0x4e0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOldWaterLevel = 0x4e4; // int32_t m_nOldWaterLevel; |  0x4e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flWaterEntryTime = 0x4e8; // float32 m_flWaterEntryTime; |  0x4e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecForward = 0x4ec; // GlobalTypes::Vector m_vecForward; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecLeft = 0x4f8; // GlobalTypes::Vector m_vecLeft; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecUp = 0x504; // GlobalTypes::Vector m_vecUp; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nGameCodeHasMovedPlayerAfterCommand = 0x510; // int32_t m_nGameCodeHasMovedPlayerAfterCommand; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bMadeFootstepNoise = 0x514; // bool m_bMadeFootstepNoise; |  0x514 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iFootsteps = 0x518; // int32_t m_iFootsteps; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bOldJumpPressed = 0x51c; // bool m_bOldJumpPressed; |  0x51c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flJumpPressedTime = 0x520; // float32 m_flJumpPressedTime; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fStashGrenadeParameterWhen = 0x524; // entity2::GameTime_t m_fStashGrenadeParameterWhen; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nButtonDownMaskPrev = 0x528; // uint64_t m_nButtonDownMaskPrev; |  0x528 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_flOffsetTickCompleteTime = 0x530; // float32 m_flOffsetTickCompleteTime; |  0x530 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOffsetTickStashedSpeed = 0x534; // float32 m_flOffsetTickStashedSpeed; |  0x534 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStamina = 0x538; // float32 m_flStamina; |  0x538 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHeightAtJumpStart = 0x53c; // float32 m_flHeightAtJumpStart; |  0x53c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxJumpHeightThisJump = 0x540; // float32 m_flMaxJumpHeightThisJump; |  0x540 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxJumpHeightLastJump = 0x544; // float32 m_flMaxJumpHeightLastJump; |  0x544 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStaminaAtJumpStart = 0x548; // float32 m_flStaminaAtJumpStart; |  0x548 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAccumulatedJumpError = 0x54c; // float32 m_flAccumulatedJumpError; |  0x54c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTicksSinceLastSurfingDetected = 0x550; // float32 m_flTicksSinceLastSurfingDetected; |  0x550 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bWasSurfing = 0x554; // bool m_bWasSurfing; |  0x554 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecInputRotated = 0x5e4; // GlobalTypes::Vector m_vecInputRotated; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLadderNormal = 0x280; // GlobalTypes::Vector m_vecLadderNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nLadderSurfacePropIndex = 0x28c; // int32_t m_nLadderSurfacePropIndex; |  0x28c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDuckAmount = 0x290; // float32 m_flDuckAmount; |  0x290 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDuckSpeed = 0x294; // float32 m_flDuckSpeed; |  0x294 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDuckOverride = 0x298; // bool m_bDuckOverride; |  0x298 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDesiresDuck = 0x299; // bool m_bDesiresDuck; |  0x299 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDuckOffset = 0x29c; // float32 m_flDuckOffset; |  0x29c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDuckTimeMsecs = 0x2a0; // uint32_t m_nDuckTimeMsecs; |  0x2a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDuckJumpTimeMsecs = 0x2a4; // uint32_t m_nDuckJumpTimeMsecs; |  0x2a4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nJumpTimeMsecs = 0x2a8; // uint32_t m_nJumpTimeMsecs; |  0x2a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastDuckTime = 0x2ac; // float32 m_flLastDuckTime; |  0x2ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecLastPositionAtFullCrouchSpeed = 0x2b8; // GlobalTypes::Vector2D m_vecLastPositionAtFullCrouchSpeed; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_duckUntilOnGround = 0x2c0; // bool m_duckUntilOnGround; |  0x2c0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasWalkMovedSinceLastJump = 0x2c1; // bool m_bHasWalkMovedSinceLastJump; |  0x2c1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bInStuckTest = 0x2c2; // bool m_bInStuckTest; |  0x2c2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nTraceCount = 0x4d0; // int32_t m_nTraceCount; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_StuckLast = 0x4d4; // int32_t m_StuckLast; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSpeedCropped = 0x4d8; // bool m_bSpeedCropped; |  0x4d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nOldWaterLevel = 0x4dc; // int32_t m_nOldWaterLevel; |  0x4dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flWaterEntryTime = 0x4e0; // float32 m_flWaterEntryTime; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecForward = 0x4e4; // GlobalTypes::Vector m_vecForward; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLeft = 0x4f0; // GlobalTypes::Vector m_vecLeft; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecUp = 0x4fc; // GlobalTypes::Vector m_vecUp; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nGameCodeHasMovedPlayerAfterCommand = 0x508; // int32_t m_nGameCodeHasMovedPlayerAfterCommand; |  0x508 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bMadeFootstepNoise = 0x50c; // bool m_bMadeFootstepNoise; |  0x50c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iFootsteps = 0x510; // int32_t m_iFootsteps; |  0x510 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bOldJumpPressed = 0x514; // bool m_bOldJumpPressed; |  0x514 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flJumpPressedTime = 0x518; // float32 m_flJumpPressedTime; |  0x518 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fStashGrenadeParameterWhen = 0x51c; // entity2::GameTime_t m_fStashGrenadeParameterWhen; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nButtonDownMaskPrev = 0x520; // uint64_t m_nButtonDownMaskPrev; |  0x520 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_flOffsetTickCompleteTime = 0x528; // float32 m_flOffsetTickCompleteTime; |  0x528 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOffsetTickStashedSpeed = 0x52c; // float32 m_flOffsetTickStashedSpeed; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStamina = 0x530; // float32 m_flStamina; |  0x530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHeightAtJumpStart = 0x534; // float32 m_flHeightAtJumpStart; |  0x534 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxJumpHeightThisJump = 0x538; // float32 m_flMaxJumpHeightThisJump; |  0x538 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxJumpHeightLastJump = 0x53c; // float32 m_flMaxJumpHeightLastJump; |  0x53c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStaminaAtJumpStart = 0x540; // float32 m_flStaminaAtJumpStart; |  0x540 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAccumulatedJumpError = 0x544; // float32 m_flAccumulatedJumpError; |  0x544 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTicksSinceLastSurfingDetected = 0x548; // float32 m_flTicksSinceLastSurfingDetected; |  0x548 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bWasSurfing = 0x54c; // bool m_bWasSurfing; |  0x54c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecInputRotated = 0x5dc; // GlobalTypes::Vector m_vecInputRotated; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}

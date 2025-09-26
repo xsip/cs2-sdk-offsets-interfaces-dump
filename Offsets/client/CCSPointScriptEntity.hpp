@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x6E8
+			// Class size: 0x728
 			namespace CCSPointScriptEntity /*: public CS2::client::C_BaseEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -14,36 +14,36 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_MovementServices_Humanoid : public CS2::server::CPlayer_MovementServices {
 		public:
-			float32 m_flStepSoundTime; // 0x240 | Schema_Builtin | Size: 0x4
-			float32 m_flFallVelocity; // 0x244 | Schema_Builtin | Size: 0x4
-			bool m_bInCrouch; // 0x248 | Schema_Builtin | Size: 0x1
+			float32 m_flStepSoundTime; // 0x238 | Schema_Builtin | Size: 0x4
+			float32 m_flFallVelocity; // 0x23c | Schema_Builtin | Size: 0x4
+			bool m_bInCrouch; // 0x240 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			uint32_t m_nCrouchState; // 0x24c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flCrouchTransitionStartTime; // 0x250 | Schema_DeclaredClass | Size: 0x4
-			bool m_bDucked; // 0x254 | Schema_Builtin | Size: 0x1
-			bool m_bDucking; // 0x255 | Schema_Builtin | Size: 0x1
-			bool m_bInDuckJump; // 0x256 | Schema_Builtin | Size: 0x1
+			uint32_t m_nCrouchState; // 0x244 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flCrouchTransitionStartTime; // 0x248 | Schema_DeclaredClass | Size: 0x4
+			bool m_bDucked; // 0x24c | Schema_Builtin | Size: 0x1
+			bool m_bDucking; // 0x24d | Schema_Builtin | Size: 0x1
+			bool m_bInDuckJump; // 0x24e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			GlobalTypes::Vector m_groundNormal; // 0x258 | Schema_Atomic | Size: 0xc
-			float32 m_flSurfaceFriction; // 0x264 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlStringToken m_surfaceProps; // 0x268 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Vector m_groundNormal; // 0x250 | Schema_Atomic | Size: 0xc
+			float32 m_flSurfaceFriction; // 0x25c | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlStringToken m_surfaceProps; // 0x260 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
-			int32_t m_nStepside; // 0x278 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecSmoothedVelocity; // 0x27c | Schema_Atomic | Size: 0xc
+			int32_t m_nStepside; // 0x270 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecSmoothedVelocity; // 0x274 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flStepSoundTime) == 0x240, "m_flStepSoundTime in CPlayer_MovementServices_Humanoid should be at offset 0x240");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flFallVelocity) == 0x244, "m_flFallVelocity in CPlayer_MovementServices_Humanoid should be at offset 0x244");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bInCrouch) == 0x248, "m_bInCrouch in CPlayer_MovementServices_Humanoid should be at offset 0x248");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_nCrouchState) == 0x24C, "m_nCrouchState in CPlayer_MovementServices_Humanoid should be at offset 0x24C");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flCrouchTransitionStartTime) == 0x250, "m_flCrouchTransitionStartTime in CPlayer_MovementServices_Humanoid should be at offset 0x250");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bDucked) == 0x254, "m_bDucked in CPlayer_MovementServices_Humanoid should be at offset 0x254");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bDucking) == 0x255, "m_bDucking in CPlayer_MovementServices_Humanoid should be at offset 0x255");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bInDuckJump) == 0x256, "m_bInDuckJump in CPlayer_MovementServices_Humanoid should be at offset 0x256");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_groundNormal) == 0x258, "m_groundNormal in CPlayer_MovementServices_Humanoid should be at offset 0x258");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flSurfaceFriction) == 0x264, "m_flSurfaceFriction in CPlayer_MovementServices_Humanoid should be at offset 0x264");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_surfaceProps) == 0x268, "m_surfaceProps in CPlayer_MovementServices_Humanoid should be at offset 0x268");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_nStepside) == 0x278, "m_nStepside in CPlayer_MovementServices_Humanoid should be at offset 0x278");
-		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_vecSmoothedVelocity) == 0x27C, "m_vecSmoothedVelocity in CPlayer_MovementServices_Humanoid should be at offset 0x27C");
-		static_assert(sizeof(CS2::server::CPlayer_MovementServices_Humanoid) == 0x288, "CPlayer_MovementServices_Humanoid size should be 0x288");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flStepSoundTime) == 0x238, "m_flStepSoundTime in CPlayer_MovementServices_Humanoid should be at offset 0x238");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flFallVelocity) == 0x23C, "m_flFallVelocity in CPlayer_MovementServices_Humanoid should be at offset 0x23C");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bInCrouch) == 0x240, "m_bInCrouch in CPlayer_MovementServices_Humanoid should be at offset 0x240");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_nCrouchState) == 0x244, "m_nCrouchState in CPlayer_MovementServices_Humanoid should be at offset 0x244");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flCrouchTransitionStartTime) == 0x248, "m_flCrouchTransitionStartTime in CPlayer_MovementServices_Humanoid should be at offset 0x248");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bDucked) == 0x24C, "m_bDucked in CPlayer_MovementServices_Humanoid should be at offset 0x24C");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bDucking) == 0x24D, "m_bDucking in CPlayer_MovementServices_Humanoid should be at offset 0x24D");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_bInDuckJump) == 0x24E, "m_bInDuckJump in CPlayer_MovementServices_Humanoid should be at offset 0x24E");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_groundNormal) == 0x250, "m_groundNormal in CPlayer_MovementServices_Humanoid should be at offset 0x250");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flSurfaceFriction) == 0x25C, "m_flSurfaceFriction in CPlayer_MovementServices_Humanoid should be at offset 0x25C");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_surfaceProps) == 0x260, "m_surfaceProps in CPlayer_MovementServices_Humanoid should be at offset 0x260");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_nStepside) == 0x270, "m_nStepside in CPlayer_MovementServices_Humanoid should be at offset 0x270");
+		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_vecSmoothedVelocity) == 0x274, "m_vecSmoothedVelocity in CPlayer_MovementServices_Humanoid should be at offset 0x274");
+		static_assert(sizeof(CS2::server::CPlayer_MovementServices_Humanoid) == 0x280, "CPlayer_MovementServices_Humanoid size should be 0x280");
 	}
 }

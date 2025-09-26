@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x240
+			// Class size: 0x238
 			namespace CPlayer_MovementServices /*: public CS2::client::CPlayerPawnComponent*/ {
 				constexpr std::ptrdiff_t m_nImpulse = 0x40; // int32_t m_nImpulse; |  0x40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nButtons = 0x48; // client::CInButtonState m_nButtons; |  Schema_DeclaredClass | Size: 0x20
@@ -24,8 +24,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flLeftMove = 0x1b0; // float32 m_flLeftMove; |  0x1b0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flUpMove = 0x1b4; // float32 m_flUpMove; |  0x1b4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_vecLastMovementImpulses = 0x1b8; // GlobalTypes::Vector m_vecLastMovementImpulses; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecLastFinishTickViewAngles = 0x220; // GlobalTypes::QAngle m_vecLastFinishTickViewAngles; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOldViewAngles = 0x22c; // GlobalTypes::QAngle m_vecOldViewAngles; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOldViewAngles = 0x220; // GlobalTypes::QAngle m_vecOldViewAngles; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}
