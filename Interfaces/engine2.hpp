@@ -8,27 +8,28 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace engine2 {
+			constexpr std::ptrdiff_t  = 0x6bc5d786; 
 			constexpr std::ptrdiff_t BenchmarkService001 = 0x5f15a0; 
-			constexpr std::ptrdiff_t BugService001 = 0x8a5be0; 
-			constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x8e71d0; 
+			constexpr std::ptrdiff_t BugService001 = 0x8a5bc0; 
+			constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x8e71b0; 
 			constexpr std::ptrdiff_t EngineGameUI001 = 0x5ef2c0; 
-			constexpr std::ptrdiff_t EngineServiceMgr001 = 0x8e6ad0; 
-			constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x8e6da0; 
-			constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x8e6ec0; 
+			constexpr std::ptrdiff_t EngineServiceMgr001 = 0x8e6ab0; 
+			constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x8e6d80; 
+			constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x8e6ea0; 
 			constexpr std::ptrdiff_t GameResourceServiceClientV001 = 0x5f16a0; 
 			constexpr std::ptrdiff_t GameResourceServiceServerV001 = 0x5f1700; 
-			constexpr std::ptrdiff_t GameUIService_001 = 0x8a6010; 
+			constexpr std::ptrdiff_t GameUIService_001 = 0x8a5ff0; 
 			constexpr std::ptrdiff_t HostStateMgr001 = 0x5f2090; 
 			constexpr std::ptrdiff_t INETSUPPORT_001 = 0x5ea860; 
-			constexpr std::ptrdiff_t InputService_001 = 0x8a6300; 
+			constexpr std::ptrdiff_t InputService_001 = 0x8a62e0; 
 			constexpr std::ptrdiff_t KeyValueCache001 = 0x5f2140; 
-			constexpr std::ptrdiff_t MapListService_001 = 0x8e5280; 
-			constexpr std::ptrdiff_t NetworkClientService_001 = 0x8e5410; 
+			constexpr std::ptrdiff_t MapListService_001 = 0x8e5260; 
+			constexpr std::ptrdiff_t NetworkClientService_001 = 0x8e53f0; 
 			constexpr std::ptrdiff_t NetworkP2PService_001 = 0x5f1850; 
-			constexpr std::ptrdiff_t NetworkServerService_001 = 0x8e5790; 
+			constexpr std::ptrdiff_t NetworkServerService_001 = 0x8e5770; 
 			constexpr std::ptrdiff_t NetworkService_001 = 0x5f19a0; 
-			constexpr std::ptrdiff_t RenderService_001 = 0x8e59f0; 
-			constexpr std::ptrdiff_t ScreenshotService001 = 0x8e5ca0; 
+			constexpr std::ptrdiff_t RenderService_001 = 0x8e59d0; 
+			constexpr std::ptrdiff_t ScreenshotService001 = 0x8e5c80; 
 			constexpr std::ptrdiff_t SimpleEngineLoopService_001 = 0x5f21a0; 
 			constexpr std::ptrdiff_t SoundService_001 = 0x5f19e0; 
 			constexpr std::ptrdiff_t Source2EngineToClient001 = 0x5ee950; 
@@ -36,7 +37,7 @@ namespace CS2 {
 			constexpr std::ptrdiff_t Source2EngineToServer001 = 0x5eea28; 
 			constexpr std::ptrdiff_t Source2EngineToServerStringTable001 = 0x5eea50; 
 			constexpr std::ptrdiff_t SplitScreenService_001 = 0x5f1ce0; 
-			constexpr std::ptrdiff_t StatsService_001 = 0x8e60a0; 
+			constexpr std::ptrdiff_t StatsService_001 = 0x8e6080; 
 			constexpr std::ptrdiff_t ToolService_001 = 0x5f1ea0; 
 			constexpr std::ptrdiff_t VENGINE_GAMEUIFUNCS_VERSION005 = 0x5ef350; 
 			constexpr std::ptrdiff_t VProfService_001 = 0x5f1ee0; 

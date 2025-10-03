@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0xFE0
 			namespace CCSPlayerController_InventoryServices /*: public CS2::client::CPlayerControllerComponent*/ {
 				constexpr std::ptrdiff_t m_unMusicID = 0x40; // uint16_t m_unMusicID; |  0x40 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_rank = 0x44; // GlobalTypes::MedalRank_t m_rank[6]; |  Schema_FixedArray | Size: 0x120
+				constexpr std::ptrdiff_t m_rank = 0x44; // client::MedalRank_t m_rank[6]; |  Schema_FixedArray | Size: 0x120
 				constexpr std::ptrdiff_t m_nPersonaDataPublicLevel = 0x5c; // int32_t m_nPersonaDataPublicLevel; |  0x5c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPersonaDataPublicCommendsLeader = 0x60; // int32_t m_nPersonaDataPublicCommendsLeader; |  0x60 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPersonaDataPublicCommendsTeacher = 0x64; // int32_t m_nPersonaDataPublicCommendsTeacher; |  0x64 | Schema_Builtin | Size: 0x4

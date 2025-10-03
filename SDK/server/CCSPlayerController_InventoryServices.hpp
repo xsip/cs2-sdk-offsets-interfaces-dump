@@ -6,6 +6,7 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/client/CPlayerControllerComponent.hpp>
+#include <SDK/client/MedalRank_t.hpp>
 
 
 
@@ -15,7 +16,7 @@ namespace CS2 {
 		public:
 			uint16_t m_unMusicID; // 0x40 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
-			GlobalTypes::MedalRank_t m_rank[6]; // 0x44 | Schema_FixedArray | Size: 0x120
+			client::MedalRank_t m_rank[6]; // 0x44 | Schema_FixedArray | Size: 0x120
 			int32_t m_nPersonaDataPublicLevel; // 0x5c | Schema_Builtin | Size: 0x4
 			int32_t m_nPersonaDataPublicCommendsLeader; // 0x60 | Schema_Builtin | Size: 0x4
 			int32_t m_nPersonaDataPublicCommendsTeacher; // 0x64 | Schema_Builtin | Size: 0x4

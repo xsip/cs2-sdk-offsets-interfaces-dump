@@ -5,13 +5,13 @@
 
 #include <SDK/GlobalTypes.hpp>
 
-#include <SDK/server/CCSWeaponBase.hpp>
+#include <SDK/server/CCSWeaponBaseShotgun.hpp>
 
 
 
 namespace CS2 {
 	namespace server {
-		class CWeaponSawedoff : public CS2::server::CCSWeaponBase {
+		class CWeaponSawedoff : public CS2::server::CCSWeaponBaseShotgun {
 		public:
 		};
 		static_assert(sizeof(CS2::server::CWeaponSawedoff) == 0x11A8, "CWeaponSawedoff size should be 0x11A8");
