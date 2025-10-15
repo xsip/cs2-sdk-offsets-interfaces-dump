@@ -15,17 +15,17 @@ namespace CS2 {
 		class CDecoyProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
 			S2_PAD(0x18);
-			int32_t m_nDecoyShotTick; // 0xc40 | Schema_Builtin | Size: 0x4
-			int32_t m_shotsRemaining; // 0xc44 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_fExpireTime; // 0xc48 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nDecoyShotTick; // 0xc58 | Schema_Builtin | Size: 0x4
+			int32_t m_shotsRemaining; // 0xc5c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_fExpireTime; // 0xc60 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0xc);
-			uint16_t m_decoyWeaponDefIndex; // 0xc58 | Schema_Builtin | Size: 0x2
-			S2_PAD(0x6); // End padding
+			uint16_t m_decoyWeaponDefIndex; // 0xc70 | Schema_Builtin | Size: 0x2
+			S2_PAD(0xe); // End padding
 		};
-		static_assert(offsetof(CS2::server::CDecoyProjectile, m_nDecoyShotTick) == 0xC40, "m_nDecoyShotTick in CDecoyProjectile should be at offset 0xC40");
-		static_assert(offsetof(CS2::server::CDecoyProjectile, m_shotsRemaining) == 0xC44, "m_shotsRemaining in CDecoyProjectile should be at offset 0xC44");
-		static_assert(offsetof(CS2::server::CDecoyProjectile, m_fExpireTime) == 0xC48, "m_fExpireTime in CDecoyProjectile should be at offset 0xC48");
-		static_assert(offsetof(CS2::server::CDecoyProjectile, m_decoyWeaponDefIndex) == 0xC58, "m_decoyWeaponDefIndex in CDecoyProjectile should be at offset 0xC58");
-		static_assert(sizeof(CS2::server::CDecoyProjectile) == 0xC60, "CDecoyProjectile size should be 0xC60");
+		static_assert(offsetof(CS2::server::CDecoyProjectile, m_nDecoyShotTick) == 0xC58, "m_nDecoyShotTick in CDecoyProjectile should be at offset 0xC58");
+		static_assert(offsetof(CS2::server::CDecoyProjectile, m_shotsRemaining) == 0xC5C, "m_shotsRemaining in CDecoyProjectile should be at offset 0xC5C");
+		static_assert(offsetof(CS2::server::CDecoyProjectile, m_fExpireTime) == 0xC60, "m_fExpireTime in CDecoyProjectile should be at offset 0xC60");
+		static_assert(offsetof(CS2::server::CDecoyProjectile, m_decoyWeaponDefIndex) == 0xC70, "m_decoyWeaponDefIndex in CDecoyProjectile should be at offset 0xC70");
+		static_assert(sizeof(CS2::server::CDecoyProjectile) == 0xC80, "CDecoyProjectile size should be 0xC80");
 	}
 }

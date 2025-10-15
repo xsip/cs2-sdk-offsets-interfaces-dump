@@ -14,6 +14,6 @@ namespace CS2 {
 		class CDEagle : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CDEagle) == 0x11C8, "CDEagle size should be 0x11C8");
+		static_assert(sizeof(CS2::server::CDEagle) == 0x11F0, "CDEagle size should be 0x11F0");
 	}
 }

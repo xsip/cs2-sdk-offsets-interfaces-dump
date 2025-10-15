@@ -17,16 +17,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ScreenSpaceRotateTowardTarget : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CPerParticleVecInput m_vecTargetPosition; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x838 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x998 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleVecInput m_vecTargetPosition; // 0x1d0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x888 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x9f8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flScreenEdgeAlignmentDistance; // 0x9a0 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flScreenEdgeAlignmentDistance; // 0xa00 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_vecTargetPosition) == 0x1C0, "m_vecTargetPosition in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_flOutputRemap) == 0x838, "m_flOutputRemap in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x838");
-		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_nSetMethod) == 0x998, "m_nSetMethod in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x998");
-		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_flScreenEdgeAlignmentDistance) == 0x9A0, "m_flScreenEdgeAlignmentDistance in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x9A0");
-		static_assert(sizeof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget) == 0xB00, "C_OP_ScreenSpaceRotateTowardTarget size should be 0xB00");
+		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_vecTargetPosition) == 0x1D0, "m_vecTargetPosition in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_flOutputRemap) == 0x888, "m_flOutputRemap in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x888");
+		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_nSetMethod) == 0x9F8, "m_nSetMethod in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x9F8");
+		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_flScreenEdgeAlignmentDistance) == 0xA00, "m_flScreenEdgeAlignmentDistance in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0xA00");
+		static_assert(sizeof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget) == 0xB70, "C_OP_ScreenSpaceRotateTowardTarget size should be 0xB70");
 	}
 }

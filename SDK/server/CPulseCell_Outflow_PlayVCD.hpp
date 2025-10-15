@@ -13,9 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_PlayVCD : public CS2::server::CPulseCell_Outflow_PlaySceneBase {
 		public:
-			GlobalTypes::CUtlString m_vcdFilename; // 0xf0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCChoreoSceneResource > m_hChoreoScene; // 0xf0 | Schema_Atomic | Size: 0x8
+			char  m_hChoreoScene[0x8]; // 0xf0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlayVCD, m_vcdFilename) == 0xF0, "m_vcdFilename in CPulseCell_Outflow_PlayVCD should be at offset 0xF0");
+		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlayVCD, m_hChoreoScene) == 0xF0, "m_hChoreoScene in CPulseCell_Outflow_PlayVCD should be at offset 0xF0");
 		static_assert(sizeof(CS2::server::CPulseCell_Outflow_PlayVCD) == 0xF8, "CPulseCell_Outflow_PlayVCD size should be 0xF8");
 	}
 }

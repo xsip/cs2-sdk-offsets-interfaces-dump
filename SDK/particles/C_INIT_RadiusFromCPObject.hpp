@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RadiusFromCPObject : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPoint; // 0x1c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPoint; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RadiusFromCPObject, m_nControlPoint) == 0x1C8, "m_nControlPoint in C_INIT_RadiusFromCPObject should be at offset 0x1C8");
-		static_assert(sizeof(CS2::particles::C_INIT_RadiusFromCPObject) == 0x1D0, "C_INIT_RadiusFromCPObject size should be 0x1D0");
+		static_assert(offsetof(CS2::particles::C_INIT_RadiusFromCPObject, m_nControlPoint) == 0x1D8, "m_nControlPoint in C_INIT_RadiusFromCPObject should be at offset 0x1D8");
+		static_assert(sizeof(CS2::particles::C_INIT_RadiusFromCPObject) == 0x1E0, "C_INIT_RadiusFromCPObject size should be 0x1E0");
 	}
 }

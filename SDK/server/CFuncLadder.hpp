@@ -14,34 +14,34 @@ namespace CS2 {
 	namespace server {
 		class CFuncLadder : public CS2::server::CBaseModelEntity {
 		public:
-			GlobalTypes::Vector m_vecLadderDir; // 0x7f0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLadderDir; // 0x7d8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			// server::CUtlVector< server.dll::CHandle< CInfoLadderDismount > > m_Dismounts; // 0x800 | Schema_Atomic | Size: 0x18
-			char  m_Dismounts[0x18]; // 0x800 | Schema_Atomic | Size: 0x18
-			GlobalTypes::Vector m_vecLocalTop; // 0x818 | Schema_Atomic | Size: 0xc
-			GlobalTypes::VectorWS m_vecPlayerMountPositionTop; // 0x824 | Schema_Atomic | Size: 0xc
-			GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; // 0x830 | Schema_Atomic | Size: 0xc
-			float32 m_flAutoRideSpeed; // 0x83c | Schema_Builtin | Size: 0x4
-			bool m_bDisabled; // 0x840 | Schema_Builtin | Size: 0x1
-			bool m_bFakeLadder; // 0x841 | Schema_Builtin | Size: 0x1
-			bool m_bHasSlack; // 0x842 | Schema_Builtin | Size: 0x1
+			// server::CUtlVector< server.dll::CHandle< CInfoLadderDismount > > m_Dismounts; // 0x7e8 | Schema_Atomic | Size: 0x18
+			char  m_Dismounts[0x18]; // 0x7e8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::Vector m_vecLocalTop; // 0x800 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecPlayerMountPositionTop; // 0x80c | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; // 0x818 | Schema_Atomic | Size: 0xc
+			float32 m_flAutoRideSpeed; // 0x824 | Schema_Builtin | Size: 0x4
+			bool m_bDisabled; // 0x828 | Schema_Builtin | Size: 0x1
+			bool m_bFakeLadder; // 0x829 | Schema_Builtin | Size: 0x1
+			bool m_bHasSlack; // 0x82a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			GlobalTypes::CUtlSymbolLarge m_surfacePropName; // 0x848 | Schema_Atomic | Size: 0x8
-			entity2::CEntityIOOutput m_OnPlayerGotOnLadder; // 0x850 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPlayerGotOffLadder; // 0x878 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_surfacePropName; // 0x830 | Schema_Atomic | Size: 0x8
+			entity2::CEntityIOOutput m_OnPlayerGotOnLadder; // 0x838 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnPlayerGotOffLadder; // 0x860 | Schema_DeclaredClass | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CFuncLadder, m_vecLadderDir) == 0x7F0, "m_vecLadderDir in CFuncLadder should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_Dismounts) == 0x800, "m_Dismounts in CFuncLadder should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_vecLocalTop) == 0x818, "m_vecLocalTop in CFuncLadder should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_vecPlayerMountPositionTop) == 0x824, "m_vecPlayerMountPositionTop in CFuncLadder should be at offset 0x824");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_vecPlayerMountPositionBottom) == 0x830, "m_vecPlayerMountPositionBottom in CFuncLadder should be at offset 0x830");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_flAutoRideSpeed) == 0x83C, "m_flAutoRideSpeed in CFuncLadder should be at offset 0x83C");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_bDisabled) == 0x840, "m_bDisabled in CFuncLadder should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_bFakeLadder) == 0x841, "m_bFakeLadder in CFuncLadder should be at offset 0x841");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_bHasSlack) == 0x842, "m_bHasSlack in CFuncLadder should be at offset 0x842");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_surfacePropName) == 0x848, "m_surfacePropName in CFuncLadder should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_OnPlayerGotOnLadder) == 0x850, "m_OnPlayerGotOnLadder in CFuncLadder should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CFuncLadder, m_OnPlayerGotOffLadder) == 0x878, "m_OnPlayerGotOffLadder in CFuncLadder should be at offset 0x878");
-		static_assert(sizeof(CS2::server::CFuncLadder) == 0x8A0, "CFuncLadder size should be 0x8A0");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_vecLadderDir) == 0x7D8, "m_vecLadderDir in CFuncLadder should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_Dismounts) == 0x7E8, "m_Dismounts in CFuncLadder should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_vecLocalTop) == 0x800, "m_vecLocalTop in CFuncLadder should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_vecPlayerMountPositionTop) == 0x80C, "m_vecPlayerMountPositionTop in CFuncLadder should be at offset 0x80C");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_vecPlayerMountPositionBottom) == 0x818, "m_vecPlayerMountPositionBottom in CFuncLadder should be at offset 0x818");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_flAutoRideSpeed) == 0x824, "m_flAutoRideSpeed in CFuncLadder should be at offset 0x824");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_bDisabled) == 0x828, "m_bDisabled in CFuncLadder should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_bFakeLadder) == 0x829, "m_bFakeLadder in CFuncLadder should be at offset 0x829");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_bHasSlack) == 0x82A, "m_bHasSlack in CFuncLadder should be at offset 0x82A");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_surfacePropName) == 0x830, "m_surfacePropName in CFuncLadder should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_OnPlayerGotOnLadder) == 0x838, "m_OnPlayerGotOnLadder in CFuncLadder should be at offset 0x838");
+		static_assert(offsetof(CS2::server::CFuncLadder, m_OnPlayerGotOffLadder) == 0x860, "m_OnPlayerGotOffLadder in CFuncLadder should be at offset 0x860");
+		static_assert(sizeof(CS2::server::CFuncLadder) == 0x888, "CFuncLadder size should be 0x888");
 	}
 }

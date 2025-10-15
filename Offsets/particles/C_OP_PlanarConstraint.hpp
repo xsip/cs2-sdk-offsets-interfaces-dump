@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x4A8
+			// Class size: 0x4D8
 			namespace C_OP_PlanarConstraint /*: public CS2::particles::CParticleFunctionConstraint*/ {
-				constexpr std::ptrdiff_t m_PointOnPlane = 0x1c0; // GlobalTypes::Vector m_PointOnPlane; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_PlaneNormal = 0x1cc; // GlobalTypes::Vector m_PlaneNormal; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1d8; // int32_t m_nControlPointNumber; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bGlobalOrigin = 0x1dc; // bool m_bGlobalOrigin; |  0x1dc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGlobalNormal = 0x1dd; // bool m_bGlobalNormal; |  0x1dd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flRadiusScale = 0x1e0; // particleslib::CPerParticleFloatInput m_flRadiusScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flMaximumDistanceToCP = 0x340; // particleslib::CParticleCollectionFloatInput m_flMaximumDistanceToCP; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bUseOldCode = 0x4a0; // bool m_bUseOldCode; |  0x4a0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_PointOnPlane = 0x1d0; // GlobalTypes::Vector m_PointOnPlane; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_PlaneNormal = 0x1dc; // GlobalTypes::Vector m_PlaneNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1e8; // int32_t m_nControlPointNumber; |  0x1e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bGlobalOrigin = 0x1ec; // bool m_bGlobalOrigin; |  0x1ec | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGlobalNormal = 0x1ed; // bool m_bGlobalNormal; |  0x1ed | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flRadiusScale = 0x1f0; // particleslib::CPerParticleFloatInput m_flRadiusScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMaximumDistanceToCP = 0x360; // particleslib::CParticleCollectionFloatInput m_flMaximumDistanceToCP; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bUseOldCode = 0x4d0; // bool m_bUseOldCode; |  0x4d0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

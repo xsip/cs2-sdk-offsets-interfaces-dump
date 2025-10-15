@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x808
+			// Class size: 0x7F0
 			namespace CDynamicLight /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_ActualFlags = 0x7f0; // uint8_t m_ActualFlags; |  0x7f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Flags = 0x7f1; // uint8_t m_Flags; |  0x7f1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_LightStyle = 0x7f2; // uint8_t m_LightStyle; |  0x7f2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_On = 0x7f3; // bool m_On; |  0x7f3 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Radius = 0x7f4; // float32 m_Radius; |  0x7f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Exponent = 0x7f8; // int32_t m_Exponent; |  0x7f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_InnerAngle = 0x7fc; // float32 m_InnerAngle; |  0x7fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OuterAngle = 0x800; // float32 m_OuterAngle; |  0x800 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_SpotRadius = 0x804; // float32 m_SpotRadius; |  0x804 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_ActualFlags = 0x7d8; // uint8_t m_ActualFlags; |  0x7d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Flags = 0x7d9; // uint8_t m_Flags; |  0x7d9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_LightStyle = 0x7da; // uint8_t m_LightStyle; |  0x7da | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_On = 0x7db; // bool m_On; |  0x7db | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Radius = 0x7dc; // float32 m_Radius; |  0x7dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Exponent = 0x7e0; // int32_t m_Exponent; |  0x7e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_InnerAngle = 0x7e4; // float32 m_InnerAngle; |  0x7e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OuterAngle = 0x7e8; // float32 m_OuterAngle; |  0x7e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_SpotRadius = 0x7ec; // float32 m_SpotRadius; |  0x7ec | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

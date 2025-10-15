@@ -16,79 +16,79 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderRopes : public CS2::particles::CBaseRendererSource2 {
 		public:
-			bool m_bEnableFadingAndClamping; // 0x2c18 | Schema_Builtin | Size: 0x1
+			bool m_bEnableFadingAndClamping; // 0x2de8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMinSize; // 0x2c1c | Schema_Builtin | Size: 0x4
-			float32 m_flMaxSize; // 0x2c20 | Schema_Builtin | Size: 0x4
-			float32 m_flStartFadeSize; // 0x2c24 | Schema_Builtin | Size: 0x4
-			float32 m_flEndFadeSize; // 0x2c28 | Schema_Builtin | Size: 0x4
-			float32 m_flStartFadeDot; // 0x2c2c | Schema_Builtin | Size: 0x4
-			float32 m_flEndFadeDot; // 0x2c30 | Schema_Builtin | Size: 0x4
-			float32 m_flRadiusTaper; // 0x2c34 | Schema_Builtin | Size: 0x4
-			int32_t m_nMinTesselation; // 0x2c38 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxTesselation; // 0x2c3c | Schema_Builtin | Size: 0x4
-			float32 m_flTessScale; // 0x2c40 | Schema_Builtin | Size: 0x4
+			float32 m_flMinSize; // 0x2dec | Schema_Builtin | Size: 0x4
+			float32 m_flMaxSize; // 0x2df0 | Schema_Builtin | Size: 0x4
+			float32 m_flStartFadeSize; // 0x2df4 | Schema_Builtin | Size: 0x4
+			float32 m_flEndFadeSize; // 0x2df8 | Schema_Builtin | Size: 0x4
+			float32 m_flStartFadeDot; // 0x2dfc | Schema_Builtin | Size: 0x4
+			float32 m_flEndFadeDot; // 0x2e00 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusTaper; // 0x2e04 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinTesselation; // 0x2e08 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxTesselation; // 0x2e0c | Schema_Builtin | Size: 0x4
+			float32 m_flTessScale; // 0x2e10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionRendererFloatInput m_flTextureVWorldSize; // 0x2c48 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flTextureVScrollRate; // 0x2da8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flTextureVOffset; // 0x2f08 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nTextureVParamsCP; // 0x3068 | Schema_Builtin | Size: 0x4
-			bool m_bClampV; // 0x306c | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererFloatInput m_flTextureVWorldSize; // 0x2e18 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flTextureVScrollRate; // 0x2f88 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flTextureVOffset; // 0x30f8 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nTextureVParamsCP; // 0x3268 | Schema_Builtin | Size: 0x4
+			bool m_bClampV; // 0x326c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nScaleCP1; // 0x3070 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleCP2; // 0x3074 | Schema_Builtin | Size: 0x4
-			float32 m_flScaleVSizeByControlPointDistance; // 0x3078 | Schema_Builtin | Size: 0x4
-			float32 m_flScaleVScrollByControlPointDistance; // 0x307c | Schema_Builtin | Size: 0x4
-			float32 m_flScaleVOffsetByControlPointDistance; // 0x3080 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleCP1; // 0x3270 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleCP2; // 0x3274 | Schema_Builtin | Size: 0x4
+			float32 m_flScaleVSizeByControlPointDistance; // 0x3278 | Schema_Builtin | Size: 0x4
+			float32 m_flScaleVScrollByControlPointDistance; // 0x327c | Schema_Builtin | Size: 0x4
+			float32 m_flScaleVOffsetByControlPointDistance; // 0x3280 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x1);
-			bool m_bUseScalarForTextureCoordinate; // 0x3085 | Schema_Builtin | Size: 0x1
+			bool m_bUseScalarForTextureCoordinate; // 0x3285 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nScalarFieldForTextureCoordinate; // 0x3088 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flScalarAttributeTextureCoordScale; // 0x308c | Schema_Builtin | Size: 0x4
-			bool m_bReverseOrder; // 0x3090 | Schema_Builtin | Size: 0x1
-			bool m_bClosedLoop; // 0x3091 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nScalarFieldForTextureCoordinate; // 0x3288 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flScalarAttributeTextureCoordScale; // 0x328c | Schema_Builtin | Size: 0x4
+			bool m_bReverseOrder; // 0x3290 | Schema_Builtin | Size: 0x1
+			bool m_bClosedLoop; // 0x3291 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nSplitField; // 0x3094 | Schema_DeclaredClass | Size: 0x4
-			bool m_bSortBySegmentID; // 0x3098 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nSplitField; // 0x3294 | Schema_DeclaredClass | Size: 0x4
+			bool m_bSortBySegmentID; // 0x3298 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x309c | Schema_DeclaredEnum | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nVectorFieldForOrientation; // 0x30a0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bDrawAsOpaque; // 0x30a4 | Schema_Builtin | Size: 0x1
-			bool m_bGenerateNormals; // 0x30a5 | Schema_Builtin | Size: 0x1
+			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x329c | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nVectorFieldForOrientation; // 0x32a0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bDrawAsOpaque; // 0x32a4 | Schema_Builtin | Size: 0x1
+			bool m_bGenerateNormals; // 0x32a5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bEnableFadingAndClamping) == 0x2C18, "m_bEnableFadingAndClamping in C_OP_RenderRopes should be at offset 0x2C18");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flMinSize) == 0x2C1C, "m_flMinSize in C_OP_RenderRopes should be at offset 0x2C1C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flMaxSize) == 0x2C20, "m_flMaxSize in C_OP_RenderRopes should be at offset 0x2C20");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flStartFadeSize) == 0x2C24, "m_flStartFadeSize in C_OP_RenderRopes should be at offset 0x2C24");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flEndFadeSize) == 0x2C28, "m_flEndFadeSize in C_OP_RenderRopes should be at offset 0x2C28");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flStartFadeDot) == 0x2C2C, "m_flStartFadeDot in C_OP_RenderRopes should be at offset 0x2C2C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flEndFadeDot) == 0x2C30, "m_flEndFadeDot in C_OP_RenderRopes should be at offset 0x2C30");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flRadiusTaper) == 0x2C34, "m_flRadiusTaper in C_OP_RenderRopes should be at offset 0x2C34");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nMinTesselation) == 0x2C38, "m_nMinTesselation in C_OP_RenderRopes should be at offset 0x2C38");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nMaxTesselation) == 0x2C3C, "m_nMaxTesselation in C_OP_RenderRopes should be at offset 0x2C3C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTessScale) == 0x2C40, "m_flTessScale in C_OP_RenderRopes should be at offset 0x2C40");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTextureVWorldSize) == 0x2C48, "m_flTextureVWorldSize in C_OP_RenderRopes should be at offset 0x2C48");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTextureVScrollRate) == 0x2DA8, "m_flTextureVScrollRate in C_OP_RenderRopes should be at offset 0x2DA8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTextureVOffset) == 0x2F08, "m_flTextureVOffset in C_OP_RenderRopes should be at offset 0x2F08");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nTextureVParamsCP) == 0x3068, "m_nTextureVParamsCP in C_OP_RenderRopes should be at offset 0x3068");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bClampV) == 0x306C, "m_bClampV in C_OP_RenderRopes should be at offset 0x306C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nScaleCP1) == 0x3070, "m_nScaleCP1 in C_OP_RenderRopes should be at offset 0x3070");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nScaleCP2) == 0x3074, "m_nScaleCP2 in C_OP_RenderRopes should be at offset 0x3074");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScaleVSizeByControlPointDistance) == 0x3078, "m_flScaleVSizeByControlPointDistance in C_OP_RenderRopes should be at offset 0x3078");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScaleVScrollByControlPointDistance) == 0x307C, "m_flScaleVScrollByControlPointDistance in C_OP_RenderRopes should be at offset 0x307C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScaleVOffsetByControlPointDistance) == 0x3080, "m_flScaleVOffsetByControlPointDistance in C_OP_RenderRopes should be at offset 0x3080");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bUseScalarForTextureCoordinate) == 0x3085, "m_bUseScalarForTextureCoordinate in C_OP_RenderRopes should be at offset 0x3085");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nScalarFieldForTextureCoordinate) == 0x3088, "m_nScalarFieldForTextureCoordinate in C_OP_RenderRopes should be at offset 0x3088");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScalarAttributeTextureCoordScale) == 0x308C, "m_flScalarAttributeTextureCoordScale in C_OP_RenderRopes should be at offset 0x308C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bReverseOrder) == 0x3090, "m_bReverseOrder in C_OP_RenderRopes should be at offset 0x3090");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bClosedLoop) == 0x3091, "m_bClosedLoop in C_OP_RenderRopes should be at offset 0x3091");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nSplitField) == 0x3094, "m_nSplitField in C_OP_RenderRopes should be at offset 0x3094");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bSortBySegmentID) == 0x3098, "m_bSortBySegmentID in C_OP_RenderRopes should be at offset 0x3098");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nOrientationType) == 0x309C, "m_nOrientationType in C_OP_RenderRopes should be at offset 0x309C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nVectorFieldForOrientation) == 0x30A0, "m_nVectorFieldForOrientation in C_OP_RenderRopes should be at offset 0x30A0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bDrawAsOpaque) == 0x30A4, "m_bDrawAsOpaque in C_OP_RenderRopes should be at offset 0x30A4");
-		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bGenerateNormals) == 0x30A5, "m_bGenerateNormals in C_OP_RenderRopes should be at offset 0x30A5");
-		static_assert(sizeof(CS2::particles::C_OP_RenderRopes) == 0x30A8, "C_OP_RenderRopes size should be 0x30A8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bEnableFadingAndClamping) == 0x2DE8, "m_bEnableFadingAndClamping in C_OP_RenderRopes should be at offset 0x2DE8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flMinSize) == 0x2DEC, "m_flMinSize in C_OP_RenderRopes should be at offset 0x2DEC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flMaxSize) == 0x2DF0, "m_flMaxSize in C_OP_RenderRopes should be at offset 0x2DF0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flStartFadeSize) == 0x2DF4, "m_flStartFadeSize in C_OP_RenderRopes should be at offset 0x2DF4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flEndFadeSize) == 0x2DF8, "m_flEndFadeSize in C_OP_RenderRopes should be at offset 0x2DF8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flStartFadeDot) == 0x2DFC, "m_flStartFadeDot in C_OP_RenderRopes should be at offset 0x2DFC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flEndFadeDot) == 0x2E00, "m_flEndFadeDot in C_OP_RenderRopes should be at offset 0x2E00");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flRadiusTaper) == 0x2E04, "m_flRadiusTaper in C_OP_RenderRopes should be at offset 0x2E04");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nMinTesselation) == 0x2E08, "m_nMinTesselation in C_OP_RenderRopes should be at offset 0x2E08");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nMaxTesselation) == 0x2E0C, "m_nMaxTesselation in C_OP_RenderRopes should be at offset 0x2E0C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTessScale) == 0x2E10, "m_flTessScale in C_OP_RenderRopes should be at offset 0x2E10");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTextureVWorldSize) == 0x2E18, "m_flTextureVWorldSize in C_OP_RenderRopes should be at offset 0x2E18");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTextureVScrollRate) == 0x2F88, "m_flTextureVScrollRate in C_OP_RenderRopes should be at offset 0x2F88");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flTextureVOffset) == 0x30F8, "m_flTextureVOffset in C_OP_RenderRopes should be at offset 0x30F8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nTextureVParamsCP) == 0x3268, "m_nTextureVParamsCP in C_OP_RenderRopes should be at offset 0x3268");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bClampV) == 0x326C, "m_bClampV in C_OP_RenderRopes should be at offset 0x326C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nScaleCP1) == 0x3270, "m_nScaleCP1 in C_OP_RenderRopes should be at offset 0x3270");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nScaleCP2) == 0x3274, "m_nScaleCP2 in C_OP_RenderRopes should be at offset 0x3274");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScaleVSizeByControlPointDistance) == 0x3278, "m_flScaleVSizeByControlPointDistance in C_OP_RenderRopes should be at offset 0x3278");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScaleVScrollByControlPointDistance) == 0x327C, "m_flScaleVScrollByControlPointDistance in C_OP_RenderRopes should be at offset 0x327C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScaleVOffsetByControlPointDistance) == 0x3280, "m_flScaleVOffsetByControlPointDistance in C_OP_RenderRopes should be at offset 0x3280");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bUseScalarForTextureCoordinate) == 0x3285, "m_bUseScalarForTextureCoordinate in C_OP_RenderRopes should be at offset 0x3285");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nScalarFieldForTextureCoordinate) == 0x3288, "m_nScalarFieldForTextureCoordinate in C_OP_RenderRopes should be at offset 0x3288");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flScalarAttributeTextureCoordScale) == 0x328C, "m_flScalarAttributeTextureCoordScale in C_OP_RenderRopes should be at offset 0x328C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bReverseOrder) == 0x3290, "m_bReverseOrder in C_OP_RenderRopes should be at offset 0x3290");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bClosedLoop) == 0x3291, "m_bClosedLoop in C_OP_RenderRopes should be at offset 0x3291");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nSplitField) == 0x3294, "m_nSplitField in C_OP_RenderRopes should be at offset 0x3294");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bSortBySegmentID) == 0x3298, "m_bSortBySegmentID in C_OP_RenderRopes should be at offset 0x3298");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nOrientationType) == 0x329C, "m_nOrientationType in C_OP_RenderRopes should be at offset 0x329C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_nVectorFieldForOrientation) == 0x32A0, "m_nVectorFieldForOrientation in C_OP_RenderRopes should be at offset 0x32A0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bDrawAsOpaque) == 0x32A4, "m_bDrawAsOpaque in C_OP_RenderRopes should be at offset 0x32A4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bGenerateNormals) == 0x32A5, "m_bGenerateNormals in C_OP_RenderRopes should be at offset 0x32A5");
+		static_assert(sizeof(CS2::particles::C_OP_RenderRopes) == 0x32A8, "C_OP_RenderRopes size should be 0x32A8");
 	}
 }

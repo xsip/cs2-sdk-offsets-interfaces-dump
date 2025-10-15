@@ -15,47 +15,47 @@ namespace CS2 {
 	namespace client {
 		class C_BaseCSGrenadeProjectile : public CS2::client::C_BaseGrenade {
 		public:
-			GlobalTypes::Vector m_vInitialPosition; // 0x13d0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vInitialVelocity; // 0x13dc | Schema_Atomic | Size: 0xc
-			int32_t m_nBounces; // 0x13e8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vInitialPosition; // 0x13b8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vInitialVelocity; // 0x13c4 | Schema_Atomic | Size: 0xc
+			int32_t m_nBounces; // 0x13d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_nExplodeEffectIndex; // 0x13f0 | Schema_Atomic | Size: 0x8
-			char  m_nExplodeEffectIndex[0x8]; // 0x13f0 | Schema_Atomic | Size: 0x8
-			int32_t m_nExplodeEffectTickBegin; // 0x13f8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecExplodeEffectOrigin; // 0x13fc | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flSpawnTime; // 0x1408 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector vecLastTrailLinePos; // 0x140c | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t flNextTrailLineTime; // 0x1418 | Schema_DeclaredClass | Size: 0x4
-			bool m_bExplodeEffectBegan; // 0x141c | Schema_Builtin | Size: 0x1
-			bool m_bCanCreateGrenadeTrail; // 0x141d | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_nExplodeEffectIndex; // 0x13d8 | Schema_Atomic | Size: 0x8
+			char  m_nExplodeEffectIndex[0x8]; // 0x13d8 | Schema_Atomic | Size: 0x8
+			int32_t m_nExplodeEffectTickBegin; // 0x13e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecExplodeEffectOrigin; // 0x13e4 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flSpawnTime; // 0x13f0 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector vecLastTrailLinePos; // 0x13f4 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t flNextTrailLineTime; // 0x1400 | Schema_DeclaredClass | Size: 0x4
+			bool m_bExplodeEffectBegan; // 0x1404 | Schema_Builtin | Size: 0x1
+			bool m_bCanCreateGrenadeTrail; // 0x1405 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			client::ParticleIndex_t m_nSnapshotTrajectoryEffectIndex; // 0x1420 | Schema_DeclaredClass | Size: 0x4
+			client::ParticleIndex_t m_nSnapshotTrajectoryEffectIndex; // 0x1408 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hSnapshotTrajectoryParticleSnapshot; // 0x1428 | Schema_Atomic | Size: 0x8
-			char  m_hSnapshotTrajectoryParticleSnapshot[0x8]; // 0x1428 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_arrTrajectoryTrailPoints; // 0x1430 | Schema_Atomic | Size: 0x18
-			char  m_arrTrajectoryTrailPoints[0x18]; // 0x1430 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_arrTrajectoryTrailPointCreationTimes; // 0x1448 | Schema_Atomic | Size: 0x18
-			char  m_arrTrajectoryTrailPointCreationTimes[0x18]; // 0x1448 | Schema_Atomic | Size: 0x18
-			float32 m_flTrajectoryTrailEffectCreationTime; // 0x1460 | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hSnapshotTrajectoryParticleSnapshot; // 0x1410 | Schema_Atomic | Size: 0x8
+			char  m_hSnapshotTrajectoryParticleSnapshot[0x8]; // 0x1410 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_arrTrajectoryTrailPoints; // 0x1418 | Schema_Atomic | Size: 0x18
+			char  m_arrTrajectoryTrailPoints[0x18]; // 0x1418 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< float32 > m_arrTrajectoryTrailPointCreationTimes; // 0x1430 | Schema_Atomic | Size: 0x18
+			char  m_arrTrajectoryTrailPointCreationTimes[0x18]; // 0x1430 | Schema_Atomic | Size: 0x18
+			float32 m_flTrajectoryTrailEffectCreationTime; // 0x1448 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vInitialPosition) == 0x13D0, "m_vInitialPosition in C_BaseCSGrenadeProjectile should be at offset 0x13D0");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vInitialVelocity) == 0x13DC, "m_vInitialVelocity in C_BaseCSGrenadeProjectile should be at offset 0x13DC");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nBounces) == 0x13E8, "m_nBounces in C_BaseCSGrenadeProjectile should be at offset 0x13E8");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nExplodeEffectIndex) == 0x13F0, "m_nExplodeEffectIndex in C_BaseCSGrenadeProjectile should be at offset 0x13F0");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nExplodeEffectTickBegin) == 0x13F8, "m_nExplodeEffectTickBegin in C_BaseCSGrenadeProjectile should be at offset 0x13F8");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vecExplodeEffectOrigin) == 0x13FC, "m_vecExplodeEffectOrigin in C_BaseCSGrenadeProjectile should be at offset 0x13FC");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_flSpawnTime) == 0x1408, "m_flSpawnTime in C_BaseCSGrenadeProjectile should be at offset 0x1408");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, vecLastTrailLinePos) == 0x140C, "vecLastTrailLinePos in C_BaseCSGrenadeProjectile should be at offset 0x140C");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, flNextTrailLineTime) == 0x1418, "flNextTrailLineTime in C_BaseCSGrenadeProjectile should be at offset 0x1418");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_bExplodeEffectBegan) == 0x141C, "m_bExplodeEffectBegan in C_BaseCSGrenadeProjectile should be at offset 0x141C");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_bCanCreateGrenadeTrail) == 0x141D, "m_bCanCreateGrenadeTrail in C_BaseCSGrenadeProjectile should be at offset 0x141D");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nSnapshotTrajectoryEffectIndex) == 0x1420, "m_nSnapshotTrajectoryEffectIndex in C_BaseCSGrenadeProjectile should be at offset 0x1420");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_hSnapshotTrajectoryParticleSnapshot) == 0x1428, "m_hSnapshotTrajectoryParticleSnapshot in C_BaseCSGrenadeProjectile should be at offset 0x1428");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_arrTrajectoryTrailPoints) == 0x1430, "m_arrTrajectoryTrailPoints in C_BaseCSGrenadeProjectile should be at offset 0x1430");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_arrTrajectoryTrailPointCreationTimes) == 0x1448, "m_arrTrajectoryTrailPointCreationTimes in C_BaseCSGrenadeProjectile should be at offset 0x1448");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_flTrajectoryTrailEffectCreationTime) == 0x1460, "m_flTrajectoryTrailEffectCreationTime in C_BaseCSGrenadeProjectile should be at offset 0x1460");
-		static_assert(sizeof(CS2::client::C_BaseCSGrenadeProjectile) == 0x1468, "C_BaseCSGrenadeProjectile size should be 0x1468");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vInitialPosition) == 0x13B8, "m_vInitialPosition in C_BaseCSGrenadeProjectile should be at offset 0x13B8");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vInitialVelocity) == 0x13C4, "m_vInitialVelocity in C_BaseCSGrenadeProjectile should be at offset 0x13C4");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nBounces) == 0x13D0, "m_nBounces in C_BaseCSGrenadeProjectile should be at offset 0x13D0");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nExplodeEffectIndex) == 0x13D8, "m_nExplodeEffectIndex in C_BaseCSGrenadeProjectile should be at offset 0x13D8");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nExplodeEffectTickBegin) == 0x13E0, "m_nExplodeEffectTickBegin in C_BaseCSGrenadeProjectile should be at offset 0x13E0");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vecExplodeEffectOrigin) == 0x13E4, "m_vecExplodeEffectOrigin in C_BaseCSGrenadeProjectile should be at offset 0x13E4");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_flSpawnTime) == 0x13F0, "m_flSpawnTime in C_BaseCSGrenadeProjectile should be at offset 0x13F0");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, vecLastTrailLinePos) == 0x13F4, "vecLastTrailLinePos in C_BaseCSGrenadeProjectile should be at offset 0x13F4");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, flNextTrailLineTime) == 0x1400, "flNextTrailLineTime in C_BaseCSGrenadeProjectile should be at offset 0x1400");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_bExplodeEffectBegan) == 0x1404, "m_bExplodeEffectBegan in C_BaseCSGrenadeProjectile should be at offset 0x1404");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_bCanCreateGrenadeTrail) == 0x1405, "m_bCanCreateGrenadeTrail in C_BaseCSGrenadeProjectile should be at offset 0x1405");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nSnapshotTrajectoryEffectIndex) == 0x1408, "m_nSnapshotTrajectoryEffectIndex in C_BaseCSGrenadeProjectile should be at offset 0x1408");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_hSnapshotTrajectoryParticleSnapshot) == 0x1410, "m_hSnapshotTrajectoryParticleSnapshot in C_BaseCSGrenadeProjectile should be at offset 0x1410");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_arrTrajectoryTrailPoints) == 0x1418, "m_arrTrajectoryTrailPoints in C_BaseCSGrenadeProjectile should be at offset 0x1418");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_arrTrajectoryTrailPointCreationTimes) == 0x1430, "m_arrTrajectoryTrailPointCreationTimes in C_BaseCSGrenadeProjectile should be at offset 0x1430");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_flTrajectoryTrailEffectCreationTime) == 0x1448, "m_flTrajectoryTrailEffectCreationTime in C_BaseCSGrenadeProjectile should be at offset 0x1448");
+		static_assert(sizeof(CS2::client::C_BaseCSGrenadeProjectile) == 0x1450, "C_BaseCSGrenadeProjectile size should be 0x1450");
 	}
 }

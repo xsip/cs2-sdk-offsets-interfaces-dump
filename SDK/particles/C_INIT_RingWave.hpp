@@ -16,30 +16,30 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RingWave : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CParticleTransformInput m_TransformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CParticleCollectionFloatInput m_flParticlesPerOrbit; // 0x230 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInitialRadius; // 0x390 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flThickness; // 0x4f0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInitialSpeedMin; // 0x650 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInitialSpeedMax; // 0x7b0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRoll; // 0x910 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flPitch; // 0xa70 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flYaw; // 0xbd0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bEvenDistribution; // 0xd30 | Schema_Builtin | Size: 0x1
-			bool m_bXYVelocityOnly; // 0xd31 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CParticleCollectionFloatInput m_flParticlesPerOrbit; // 0x240 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInitialRadius; // 0x3b0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flThickness; // 0x520 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInitialSpeedMin; // 0x690 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInitialSpeedMax; // 0x800 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRoll; // 0x970 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flPitch; // 0xae0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flYaw; // 0xc50 | Schema_DeclaredClass | Size: 0x170
+			bool m_bEvenDistribution; // 0xdc0 | Schema_Builtin | Size: 0x1
+			bool m_bXYVelocityOnly; // 0xdc1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_TransformInput) == 0x1C8, "m_TransformInput in C_INIT_RingWave should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flParticlesPerOrbit) == 0x230, "m_flParticlesPerOrbit in C_INIT_RingWave should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flInitialRadius) == 0x390, "m_flInitialRadius in C_INIT_RingWave should be at offset 0x390");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flThickness) == 0x4F0, "m_flThickness in C_INIT_RingWave should be at offset 0x4F0");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flInitialSpeedMin) == 0x650, "m_flInitialSpeedMin in C_INIT_RingWave should be at offset 0x650");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flInitialSpeedMax) == 0x7B0, "m_flInitialSpeedMax in C_INIT_RingWave should be at offset 0x7B0");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flRoll) == 0x910, "m_flRoll in C_INIT_RingWave should be at offset 0x910");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flPitch) == 0xA70, "m_flPitch in C_INIT_RingWave should be at offset 0xA70");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flYaw) == 0xBD0, "m_flYaw in C_INIT_RingWave should be at offset 0xBD0");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_bEvenDistribution) == 0xD30, "m_bEvenDistribution in C_INIT_RingWave should be at offset 0xD30");
-		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_bXYVelocityOnly) == 0xD31, "m_bXYVelocityOnly in C_INIT_RingWave should be at offset 0xD31");
-		static_assert(sizeof(CS2::particles::C_INIT_RingWave) == 0xD38, "C_INIT_RingWave size should be 0xD38");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_TransformInput) == 0x1D8, "m_TransformInput in C_INIT_RingWave should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flParticlesPerOrbit) == 0x240, "m_flParticlesPerOrbit in C_INIT_RingWave should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flInitialRadius) == 0x3B0, "m_flInitialRadius in C_INIT_RingWave should be at offset 0x3B0");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flThickness) == 0x520, "m_flThickness in C_INIT_RingWave should be at offset 0x520");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flInitialSpeedMin) == 0x690, "m_flInitialSpeedMin in C_INIT_RingWave should be at offset 0x690");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flInitialSpeedMax) == 0x800, "m_flInitialSpeedMax in C_INIT_RingWave should be at offset 0x800");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flRoll) == 0x970, "m_flRoll in C_INIT_RingWave should be at offset 0x970");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flPitch) == 0xAE0, "m_flPitch in C_INIT_RingWave should be at offset 0xAE0");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flYaw) == 0xC50, "m_flYaw in C_INIT_RingWave should be at offset 0xC50");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_bEvenDistribution) == 0xDC0, "m_bEvenDistribution in C_INIT_RingWave should be at offset 0xDC0");
+		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_bXYVelocityOnly) == 0xDC1, "m_bXYVelocityOnly in C_INIT_RingWave should be at offset 0xDC1");
+		static_assert(sizeof(CS2::particles::C_INIT_RingWave) == 0xDC8, "C_INIT_RingWave size should be 0xDC8");
 	}
 }

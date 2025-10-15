@@ -14,19 +14,19 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ColorInterpolate : public CS2::particles::CParticleFunctionOperator {
 		public:
-			GlobalTypes::Color m_ColorFade; // 0x1c0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_ColorFade; // 0x1d0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
-			float32 m_flFadeStartTime; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeEndTime; // 0x1d4 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bEaseInOut; // 0x1dc | Schema_Builtin | Size: 0x1
+			float32 m_flFadeStartTime; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeEndTime; // 0x1e4 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e8 | Schema_DeclaredClass | Size: 0x4
+			bool m_bEaseInOut; // 0x1ec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_ColorFade) == 0x1C0, "m_ColorFade in C_OP_ColorInterpolate should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_flFadeStartTime) == 0x1D0, "m_flFadeStartTime in C_OP_ColorInterpolate should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_flFadeEndTime) == 0x1D4, "m_flFadeEndTime in C_OP_ColorInterpolate should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_OP_ColorInterpolate should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_bEaseInOut) == 0x1DC, "m_bEaseInOut in C_OP_ColorInterpolate should be at offset 0x1DC");
-		static_assert(sizeof(CS2::particles::C_OP_ColorInterpolate) == 0x1E0, "C_OP_ColorInterpolate size should be 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_ColorFade) == 0x1D0, "m_ColorFade in C_OP_ColorInterpolate should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_flFadeStartTime) == 0x1E0, "m_flFadeStartTime in C_OP_ColorInterpolate should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_flFadeEndTime) == 0x1E4, "m_flFadeEndTime in C_OP_ColorInterpolate should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_nFieldOutput) == 0x1E8, "m_nFieldOutput in C_OP_ColorInterpolate should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_bEaseInOut) == 0x1EC, "m_bEaseInOut in C_OP_ColorInterpolate should be at offset 0x1EC");
+		static_assert(sizeof(CS2::particles::C_OP_ColorInterpolate) == 0x1F0, "C_OP_ColorInterpolate size should be 0x1F0");
 	}
 }

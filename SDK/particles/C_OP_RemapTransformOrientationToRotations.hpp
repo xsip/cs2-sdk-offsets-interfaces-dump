@@ -14,16 +14,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapTransformOrientationToRotations : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CParticleTransformInput m_TransformInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x68
-			GlobalTypes::Vector m_vecRotation; // 0x228 | Schema_Atomic | Size: 0xc
-			bool m_bUseQuat; // 0x234 | Schema_Builtin | Size: 0x1
-			bool m_bWriteNormal; // 0x235 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformInput; // 0x1d0 | Schema_DeclaredClass | Size: 0x68
+			GlobalTypes::Vector m_vecRotation; // 0x238 | Schema_Atomic | Size: 0xc
+			bool m_bUseQuat; // 0x244 | Schema_Builtin | Size: 0x1
+			bool m_bWriteNormal; // 0x245 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_TransformInput) == 0x1C0, "m_TransformInput in C_OP_RemapTransformOrientationToRotations should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_vecRotation) == 0x228, "m_vecRotation in C_OP_RemapTransformOrientationToRotations should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_bUseQuat) == 0x234, "m_bUseQuat in C_OP_RemapTransformOrientationToRotations should be at offset 0x234");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_bWriteNormal) == 0x235, "m_bWriteNormal in C_OP_RemapTransformOrientationToRotations should be at offset 0x235");
-		static_assert(sizeof(CS2::particles::C_OP_RemapTransformOrientationToRotations) == 0x238, "C_OP_RemapTransformOrientationToRotations size should be 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_TransformInput) == 0x1D0, "m_TransformInput in C_OP_RemapTransformOrientationToRotations should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_vecRotation) == 0x238, "m_vecRotation in C_OP_RemapTransformOrientationToRotations should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_bUseQuat) == 0x244, "m_bUseQuat in C_OP_RemapTransformOrientationToRotations should be at offset 0x244");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_bWriteNormal) == 0x245, "m_bWriteNormal in C_OP_RemapTransformOrientationToRotations should be at offset 0x245");
+		static_assert(sizeof(CS2::particles::C_OP_RemapTransformOrientationToRotations) == 0x248, "C_OP_RemapTransformOrientationToRotations size should be 0x248");
 	}
 }

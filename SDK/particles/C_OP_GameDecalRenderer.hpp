@@ -18,42 +18,42 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_GameDecalRenderer : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			GlobalTypes::CGlobalSymbol m_sDecalGroupName; // 0x210 | Schema_Atomic | Size: 0x8
-			particles::EventTypeSelection_t m_nEventType; // 0x218 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CGlobalSymbol m_sDecalGroupName; // 0x220 | Schema_Atomic | Size: 0x8
+			particles::EventTypeSelection_t m_nEventType; // 0x228 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particles::ParticleCollisionMask_t m_nInteractionMask; // 0x220 | Schema_DeclaredEnum | Size: 0x8
-			particles::ParticleCollisionGroup_t m_nCollisionGroup; // 0x228 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleCollisionMask_t m_nInteractionMask; // 0x230 | Schema_DeclaredEnum | Size: 0x8
+			particles::ParticleCollisionGroup_t m_nCollisionGroup; // 0x238 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleVecInput m_vecStartPos; // 0x230 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecEndPos; // 0x8a8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flTraceBloat; // 0xf20 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flDecalSize; // 0x1080 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_nDecalGroupIndex; // 0x11e0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flDecalRotation; // 0x1340 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleVecInput m_vModulationColor; // 0x14a0 | Schema_DeclaredClass | Size: 0x678
-			bool m_bUseGameDefaultDecalSize; // 0x1b18 | Schema_Builtin | Size: 0x1
-			bool m_bRandomDecalRotation; // 0x1b19 | Schema_Builtin | Size: 0x1
-			bool m_bRandomlySelectDecalInGroup; // 0x1b1a | Schema_Builtin | Size: 0x1
-			bool m_bNoDecalsOnOwner; // 0x1b1b | Schema_Builtin | Size: 0x1
-			bool m_bVisualizeTraces; // 0x1b1c | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vecStartPos; // 0x240 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecEndPos; // 0x8f8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flTraceBloat; // 0xfb0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flDecalSize; // 0x1120 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_nDecalGroupIndex; // 0x1290 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flDecalRotation; // 0x1400 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleVecInput m_vModulationColor; // 0x1570 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bUseGameDefaultDecalSize; // 0x1c28 | Schema_Builtin | Size: 0x1
+			bool m_bRandomDecalRotation; // 0x1c29 | Schema_Builtin | Size: 0x1
+			bool m_bRandomlySelectDecalInGroup; // 0x1c2a | Schema_Builtin | Size: 0x1
+			bool m_bNoDecalsOnOwner; // 0x1c2b | Schema_Builtin | Size: 0x1
+			bool m_bVisualizeTraces; // 0x1c2c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_sDecalGroupName) == 0x210, "m_sDecalGroupName in C_OP_GameDecalRenderer should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nEventType) == 0x218, "m_nEventType in C_OP_GameDecalRenderer should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nInteractionMask) == 0x220, "m_nInteractionMask in C_OP_GameDecalRenderer should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nCollisionGroup) == 0x228, "m_nCollisionGroup in C_OP_GameDecalRenderer should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_vecStartPos) == 0x230, "m_vecStartPos in C_OP_GameDecalRenderer should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_vecEndPos) == 0x8A8, "m_vecEndPos in C_OP_GameDecalRenderer should be at offset 0x8A8");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_flTraceBloat) == 0xF20, "m_flTraceBloat in C_OP_GameDecalRenderer should be at offset 0xF20");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_flDecalSize) == 0x1080, "m_flDecalSize in C_OP_GameDecalRenderer should be at offset 0x1080");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nDecalGroupIndex) == 0x11E0, "m_nDecalGroupIndex in C_OP_GameDecalRenderer should be at offset 0x11E0");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_flDecalRotation) == 0x1340, "m_flDecalRotation in C_OP_GameDecalRenderer should be at offset 0x1340");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_vModulationColor) == 0x14A0, "m_vModulationColor in C_OP_GameDecalRenderer should be at offset 0x14A0");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bUseGameDefaultDecalSize) == 0x1B18, "m_bUseGameDefaultDecalSize in C_OP_GameDecalRenderer should be at offset 0x1B18");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bRandomDecalRotation) == 0x1B19, "m_bRandomDecalRotation in C_OP_GameDecalRenderer should be at offset 0x1B19");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bRandomlySelectDecalInGroup) == 0x1B1A, "m_bRandomlySelectDecalInGroup in C_OP_GameDecalRenderer should be at offset 0x1B1A");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bNoDecalsOnOwner) == 0x1B1B, "m_bNoDecalsOnOwner in C_OP_GameDecalRenderer should be at offset 0x1B1B");
-		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bVisualizeTraces) == 0x1B1C, "m_bVisualizeTraces in C_OP_GameDecalRenderer should be at offset 0x1B1C");
-		static_assert(sizeof(CS2::particles::C_OP_GameDecalRenderer) == 0x1B20, "C_OP_GameDecalRenderer size should be 0x1B20");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_sDecalGroupName) == 0x220, "m_sDecalGroupName in C_OP_GameDecalRenderer should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nEventType) == 0x228, "m_nEventType in C_OP_GameDecalRenderer should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nInteractionMask) == 0x230, "m_nInteractionMask in C_OP_GameDecalRenderer should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nCollisionGroup) == 0x238, "m_nCollisionGroup in C_OP_GameDecalRenderer should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_vecStartPos) == 0x240, "m_vecStartPos in C_OP_GameDecalRenderer should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_vecEndPos) == 0x8F8, "m_vecEndPos in C_OP_GameDecalRenderer should be at offset 0x8F8");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_flTraceBloat) == 0xFB0, "m_flTraceBloat in C_OP_GameDecalRenderer should be at offset 0xFB0");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_flDecalSize) == 0x1120, "m_flDecalSize in C_OP_GameDecalRenderer should be at offset 0x1120");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nDecalGroupIndex) == 0x1290, "m_nDecalGroupIndex in C_OP_GameDecalRenderer should be at offset 0x1290");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_flDecalRotation) == 0x1400, "m_flDecalRotation in C_OP_GameDecalRenderer should be at offset 0x1400");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_vModulationColor) == 0x1570, "m_vModulationColor in C_OP_GameDecalRenderer should be at offset 0x1570");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bUseGameDefaultDecalSize) == 0x1C28, "m_bUseGameDefaultDecalSize in C_OP_GameDecalRenderer should be at offset 0x1C28");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bRandomDecalRotation) == 0x1C29, "m_bRandomDecalRotation in C_OP_GameDecalRenderer should be at offset 0x1C29");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bRandomlySelectDecalInGroup) == 0x1C2A, "m_bRandomlySelectDecalInGroup in C_OP_GameDecalRenderer should be at offset 0x1C2A");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bNoDecalsOnOwner) == 0x1C2B, "m_bNoDecalsOnOwner in C_OP_GameDecalRenderer should be at offset 0x1C2B");
+		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bVisualizeTraces) == 0x1C2C, "m_bVisualizeTraces in C_OP_GameDecalRenderer should be at offset 0x1C2C");
+		static_assert(sizeof(CS2::particles::C_OP_GameDecalRenderer) == 0x1C30, "C_OP_GameDecalRenderer size should be 0x1C30");
 	}
 }

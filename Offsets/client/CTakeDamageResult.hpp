@@ -16,6 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flPreModifiedDamage = 0x10; // float32 m_flPreModifiedDamage; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTotalledHealthLost = 0x14; // int32_t m_nTotalledHealthLost; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTotalledDamageDealt = 0x18; // int32_t m_nTotalledDamageDealt; |  0x18 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bWasDamageSuppressed = 0x1c; // bool m_bWasDamageSuppressed; |  0x1c | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

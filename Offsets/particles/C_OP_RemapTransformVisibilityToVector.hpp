@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x258
+			// Class size: 0x268
 			namespace C_OP_RemapTransformVisibilityToVector /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nSetMethod = 0x1c0; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_TransformInput = 0x1c8; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x230; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMin = 0x234; // float32 m_flInputMin; |  0x234 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMax = 0x238; // float32 m_flInputMax; |  0x238 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOutputMin = 0x23c; // GlobalTypes::Vector m_vecOutputMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOutputMax = 0x248; // GlobalTypes::Vector m_vecOutputMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flRadius = 0x254; // float32 m_flRadius; |  0x254 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x1d0; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_TransformInput = 0x1d8; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x240; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputMin = 0x244; // float32 m_flInputMin; |  0x244 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputMax = 0x248; // float32 m_flInputMax; |  0x248 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOutputMin = 0x24c; // GlobalTypes::Vector m_vecOutputMin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOutputMax = 0x258; // GlobalTypes::Vector m_vecOutputMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flRadius = 0x264; // float32 m_flRadius; |  0x264 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -14,6 +14,6 @@ namespace CS2 {
 		class CLightEnvironmentEntity : public CS2::server::CLightDirectionalEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CLightEnvironmentEntity) == 0x7F8, "CLightEnvironmentEntity size should be 0x7F8");
+		static_assert(sizeof(CS2::server::CLightEnvironmentEntity) == 0x7E0, "CLightEnvironmentEntity size should be 0x7E0");
 	}
 }

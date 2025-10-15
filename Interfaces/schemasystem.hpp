@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace schemasystem {
-			constexpr std::ptrdiff_t SchemaSystem_001 = 0x786f0; 
+			constexpr std::ptrdiff_t SchemaSystem_001 = 0x756f0; 
 		}
 	}
 }

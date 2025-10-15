@@ -14,12 +14,12 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ChooseRandomChildrenInGroup : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nChildGroupID; // 0x1c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nChildGroupID; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flNumberOfChildren; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flNumberOfChildren; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ChooseRandomChildrenInGroup, m_nChildGroupID) == 0x1C8, "m_nChildGroupID in C_OP_ChooseRandomChildrenInGroup should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_ChooseRandomChildrenInGroup, m_flNumberOfChildren) == 0x1D0, "m_flNumberOfChildren in C_OP_ChooseRandomChildrenInGroup should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_OP_ChooseRandomChildrenInGroup) == 0x330, "C_OP_ChooseRandomChildrenInGroup size should be 0x330");
+		static_assert(offsetof(CS2::particles::C_OP_ChooseRandomChildrenInGroup, m_nChildGroupID) == 0x1D8, "m_nChildGroupID in C_OP_ChooseRandomChildrenInGroup should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_ChooseRandomChildrenInGroup, m_flNumberOfChildren) == 0x1E0, "m_flNumberOfChildren in C_OP_ChooseRandomChildrenInGroup should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_OP_ChooseRandomChildrenInGroup) == 0x350, "C_OP_ChooseRandomChildrenInGroup size should be 0x350");
 	}
 }

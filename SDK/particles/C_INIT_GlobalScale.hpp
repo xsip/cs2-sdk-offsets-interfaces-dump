@@ -13,20 +13,20 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_GlobalScale : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			float32 m_flScale; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleControlPointNumber; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
-			bool m_bScaleRadius; // 0x1d4 | Schema_Builtin | Size: 0x1
-			bool m_bScalePosition; // 0x1d5 | Schema_Builtin | Size: 0x1
-			bool m_bScaleVelocity; // 0x1d6 | Schema_Builtin | Size: 0x1
+			float32 m_flScale; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleControlPointNumber; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1e0 | Schema_Builtin | Size: 0x4
+			bool m_bScaleRadius; // 0x1e4 | Schema_Builtin | Size: 0x1
+			bool m_bScalePosition; // 0x1e5 | Schema_Builtin | Size: 0x1
+			bool m_bScaleVelocity; // 0x1e6 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_flScale) == 0x1C8, "m_flScale in C_INIT_GlobalScale should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_nScaleControlPointNumber) == 0x1CC, "m_nScaleControlPointNumber in C_INIT_GlobalScale should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_INIT_GlobalScale should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScaleRadius) == 0x1D4, "m_bScaleRadius in C_INIT_GlobalScale should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScalePosition) == 0x1D5, "m_bScalePosition in C_INIT_GlobalScale should be at offset 0x1D5");
-		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScaleVelocity) == 0x1D6, "m_bScaleVelocity in C_INIT_GlobalScale should be at offset 0x1D6");
-		static_assert(sizeof(CS2::particles::C_INIT_GlobalScale) == 0x1D8, "C_INIT_GlobalScale size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_flScale) == 0x1D8, "m_flScale in C_INIT_GlobalScale should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_nScaleControlPointNumber) == 0x1DC, "m_nScaleControlPointNumber in C_INIT_GlobalScale should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_nControlPointNumber) == 0x1E0, "m_nControlPointNumber in C_INIT_GlobalScale should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScaleRadius) == 0x1E4, "m_bScaleRadius in C_INIT_GlobalScale should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScalePosition) == 0x1E5, "m_bScalePosition in C_INIT_GlobalScale should be at offset 0x1E5");
+		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScaleVelocity) == 0x1E6, "m_bScaleVelocity in C_INIT_GlobalScale should be at offset 0x1E6");
+		static_assert(sizeof(CS2::particles::C_INIT_GlobalScale) == 0x1E8, "C_INIT_GlobalScale size should be 0x1E8");
 	}
 }

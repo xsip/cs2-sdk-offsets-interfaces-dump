@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x8B0
+			// Class size: 0x900
 			namespace C_INIT_VelocityFromCP /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_velocityInput = 0x1c8; // particleslib::CParticleCollectionVecInput m_velocityInput; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_transformInput = 0x840; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_flVelocityScale = 0x8a8; // float32 m_flVelocityScale; |  0x8a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDirectionOnly = 0x8ac; // bool m_bDirectionOnly; |  0x8ac | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_velocityInput = 0x1d8; // particleslib::CParticleCollectionVecInput m_velocityInput; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_transformInput = 0x890; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_flVelocityScale = 0x8f8; // float32 m_flVelocityScale; |  0x8f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDirectionOnly = 0x8fc; // bool m_bDirectionOnly; |  0x8fc | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -14,16 +14,16 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_SetRigidAttachment : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1cc | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bLocalSpace; // 0x1d4 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1dc | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bLocalSpace; // 0x1e4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_SetRigidAttachment should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_nFieldInput) == 0x1CC, "m_nFieldInput in C_INIT_SetRigidAttachment should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_INIT_SetRigidAttachment should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_bLocalSpace) == 0x1D4, "m_bLocalSpace in C_INIT_SetRigidAttachment should be at offset 0x1D4");
-		static_assert(sizeof(CS2::particles::C_INIT_SetRigidAttachment) == 0x1D8, "C_INIT_SetRigidAttachment size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_SetRigidAttachment should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_nFieldInput) == 0x1DC, "m_nFieldInput in C_INIT_SetRigidAttachment should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_nFieldOutput) == 0x1E0, "m_nFieldOutput in C_INIT_SetRigidAttachment should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetRigidAttachment, m_bLocalSpace) == 0x1E4, "m_bLocalSpace in C_INIT_SetRigidAttachment should be at offset 0x1E4");
+		static_assert(sizeof(CS2::particles::C_INIT_SetRigidAttachment) == 0x1E8, "C_INIT_SetRigidAttachment size should be 0x1E8");
 	}
 }

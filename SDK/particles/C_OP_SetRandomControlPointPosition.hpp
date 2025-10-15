@@ -14,25 +14,25 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetRandomControlPointPosition : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			bool m_bUseWorldLocation; // 0x1c8 | Schema_Builtin | Size: 0x1
-			bool m_bOrient; // 0x1c9 | Schema_Builtin | Size: 0x1
+			bool m_bUseWorldLocation; // 0x1d8 | Schema_Builtin | Size: 0x1
+			bool m_bOrient; // 0x1d9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nCP1; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nHeadLocation; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nCP1; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nHeadLocation; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flReRandomRate; // 0x1d8 | Schema_DeclaredClass | Size: 0x160
-			GlobalTypes::Vector m_vecCPMinPos; // 0x338 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecCPMaxPos; // 0x344 | Schema_Atomic | Size: 0xc
-			particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x350 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flReRandomRate; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
+			GlobalTypes::Vector m_vecCPMinPos; // 0x358 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecCPMaxPos; // 0x364 | Schema_Atomic | Size: 0xc
+			particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x370 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_bUseWorldLocation) == 0x1C8, "m_bUseWorldLocation in C_OP_SetRandomControlPointPosition should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_bOrient) == 0x1C9, "m_bOrient in C_OP_SetRandomControlPointPosition should be at offset 0x1C9");
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_nCP1) == 0x1CC, "m_nCP1 in C_OP_SetRandomControlPointPosition should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_nHeadLocation) == 0x1D0, "m_nHeadLocation in C_OP_SetRandomControlPointPosition should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_flReRandomRate) == 0x1D8, "m_flReRandomRate in C_OP_SetRandomControlPointPosition should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_vecCPMinPos) == 0x338, "m_vecCPMinPos in C_OP_SetRandomControlPointPosition should be at offset 0x338");
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_vecCPMaxPos) == 0x344, "m_vecCPMaxPos in C_OP_SetRandomControlPointPosition should be at offset 0x344");
-		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_flInterpolation) == 0x350, "m_flInterpolation in C_OP_SetRandomControlPointPosition should be at offset 0x350");
-		static_assert(sizeof(CS2::particles::C_OP_SetRandomControlPointPosition) == 0x4B0, "C_OP_SetRandomControlPointPosition size should be 0x4B0");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_bUseWorldLocation) == 0x1D8, "m_bUseWorldLocation in C_OP_SetRandomControlPointPosition should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_bOrient) == 0x1D9, "m_bOrient in C_OP_SetRandomControlPointPosition should be at offset 0x1D9");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_nCP1) == 0x1DC, "m_nCP1 in C_OP_SetRandomControlPointPosition should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_nHeadLocation) == 0x1E0, "m_nHeadLocation in C_OP_SetRandomControlPointPosition should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_flReRandomRate) == 0x1E8, "m_flReRandomRate in C_OP_SetRandomControlPointPosition should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_vecCPMinPos) == 0x358, "m_vecCPMinPos in C_OP_SetRandomControlPointPosition should be at offset 0x358");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_vecCPMaxPos) == 0x364, "m_vecCPMaxPos in C_OP_SetRandomControlPointPosition should be at offset 0x364");
+		static_assert(offsetof(CS2::particles::C_OP_SetRandomControlPointPosition, m_flInterpolation) == 0x370, "m_flInterpolation in C_OP_SetRandomControlPointPosition should be at offset 0x370");
+		static_assert(sizeof(CS2::particles::C_OP_SetRandomControlPointPosition) == 0x4E0, "C_OP_SetRandomControlPointPosition size should be 0x4E0");
 	}
 }

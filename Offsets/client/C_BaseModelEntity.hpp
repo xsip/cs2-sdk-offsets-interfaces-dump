@@ -8,47 +8,45 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEC8
+			// Class size: 0xEB0
 			namespace C_BaseModelEntity /*: public CS2::client::C_BaseEntity*/ {
 				constexpr std::ptrdiff_t m_CRenderComponent = 0xae0; // client::CRenderComponent* m_CRenderComponent; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_CHitboxComponent = 0xae8; // client::CHitboxComponent m_CHitboxComponent; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0xb10; // client::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_LastHitGroup = 0xb18; // client::HitGroup_t m_LastHitGroup; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_sLastDamageSourceName = 0xb20; // GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vLastDamagePosition = 0xb28; // GlobalTypes::Vector m_vLastDamagePosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bInitModelEffects = 0xb50; // bool m_bInitModelEffects; |  0xb50 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsStaticProp = 0xb51; // bool m_bIsStaticProp; |  0xb51 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nLastAddDecal = 0xb54; // int32_t m_nLastAddDecal; |  0xb54 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDecalsAdded = 0xb58; // int32_t m_nDecalsAdded; |  0xb58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iOldHealth = 0xb5c; // int32_t m_iOldHealth; |  0xb5c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRenderMode = 0xb60; // client::RenderMode_t m_nRenderMode; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_nRenderFX = 0xb61; // client::RenderFx_t m_nRenderFX; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_bAllowFadeInView = 0xb62; // bool m_bAllowFadeInView; |  0xb62 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_clrRender = 0xb80; // GlobalTypes::Color m_clrRender; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecRenderAttributes = 0xb88; // client::C_UtlVectorEmbeddedNetworkVar< client::EntityRenderAttribute_t > m_vecRenderAttributes; |  Schema_Atomic | Size: 0x68
-				constexpr std::ptrdiff_t m_bRenderToCubemaps = 0xc08; // bool m_bRenderToCubemaps; |  0xc08 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNoInterpolate = 0xc09; // bool m_bNoInterpolate; |  0xc09 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Collision = 0xc10; // client::CCollisionProperty m_Collision; |  Schema_DeclaredClass | Size: 0xb0
-				constexpr std::ptrdiff_t m_Glow = 0xcc0; // client::CGlowProperty m_Glow; |  Schema_DeclaredClass | Size: 0x58
-				constexpr std::ptrdiff_t m_flGlowBackfaceMult = 0xd18; // float32 m_flGlowBackfaceMult; |  0xd18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fadeMinDist = 0xd1c; // float32 m_fadeMinDist; |  0xd1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fadeMaxDist = 0xd20; // float32 m_fadeMaxDist; |  0xd20 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeScale = 0xd24; // float32 m_flFadeScale; |  0xd24 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flShadowStrength = 0xd28; // float32 m_flShadowStrength; |  0xd28 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nObjectCulling = 0xd2c; // uint8_t m_nObjectCulling; |  0xd2c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nAddDecal = 0xd30; // int32_t m_nAddDecal; |  0xd30 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vDecalPosition = 0xd34; // GlobalTypes::Vector m_vDecalPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDecalForwardAxis = 0xd40; // GlobalTypes::Vector m_vDecalForwardAxis; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flDecalHealBloodRate = 0xd4c; // float32 m_flDecalHealBloodRate; |  0xd4c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDecalHealHeightRate = 0xd50; // float32 m_flDecalHealHeightRate; |  0xd50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDecalMode = 0xd54; // client::DecalMode_t m_nDecalMode; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_nRequiredDecalMode = 0xd55; // client::DecalMode_t m_nRequiredDecalMode; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_ConfigEntitiesToPropagateMaterialDecalsTo = 0xd58; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecViewOffset = 0xd98; // client::CNetworkViewOffsetVector m_vecViewOffset; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pClientAlphaProperty = 0xe78; // client::CClientAlphaProperty* m_pClientAlphaProperty; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_ClientOverrideTint = 0xe80; // GlobalTypes::Color m_ClientOverrideTint; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseClientOverrideTint = 0xe84; // bool m_bUseClientOverrideTint; |  0xe84 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0xec0; // uint32_t m_bvDisabledHitGroups[1]; |  0xec0 | Schema_FixedArray | Size: 0x4
+				constexpr std::ptrdiff_t m_CHitboxComponent = 0xae8; // client::CHitboxComponent m_CHitboxComponent; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0xb00; // client::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_LastHitGroup = 0xb08; // client::HitGroup_t m_LastHitGroup; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_sLastDamageSourceName = 0xb10; // GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vLastDamagePosition = 0xb18; // GlobalTypes::VectorWS m_vLastDamagePosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bInitModelEffects = 0xb40; // bool m_bInitModelEffects; |  0xb40 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsStaticProp = 0xb41; // bool m_bIsStaticProp; |  0xb41 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nLastAddDecal = 0xb44; // int32_t m_nLastAddDecal; |  0xb44 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDecalsAdded = 0xb48; // int32_t m_nDecalsAdded; |  0xb48 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iOldHealth = 0xb4c; // int32_t m_iOldHealth; |  0xb4c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRenderMode = 0xb50; // client::RenderMode_t m_nRenderMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nRenderFX = 0xb51; // client::RenderFx_t m_nRenderFX; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_bAllowFadeInView = 0xb52; // bool m_bAllowFadeInView; |  0xb52 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_clrRender = 0xb70; // GlobalTypes::Color m_clrRender; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecRenderAttributes = 0xb78; // client::C_UtlVectorEmbeddedNetworkVar< client::EntityRenderAttribute_t > m_vecRenderAttributes; |  Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_bRenderToCubemaps = 0xbf8; // bool m_bRenderToCubemaps; |  0xbf8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNoInterpolate = 0xbf9; // bool m_bNoInterpolate; |  0xbf9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Collision = 0xc00; // client::CCollisionProperty m_Collision; |  Schema_DeclaredClass | Size: 0xb0
+				constexpr std::ptrdiff_t m_Glow = 0xcb0; // client::CGlowProperty m_Glow; |  Schema_DeclaredClass | Size: 0x58
+				constexpr std::ptrdiff_t m_flGlowBackfaceMult = 0xd08; // float32 m_flGlowBackfaceMult; |  0xd08 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fadeMinDist = 0xd0c; // float32 m_fadeMinDist; |  0xd0c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fadeMaxDist = 0xd10; // float32 m_fadeMaxDist; |  0xd10 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeScale = 0xd14; // float32 m_flFadeScale; |  0xd14 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flShadowStrength = 0xd18; // float32 m_flShadowStrength; |  0xd18 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nObjectCulling = 0xd1c; // uint8_t m_nObjectCulling; |  0xd1c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nAddDecal = 0xd20; // int32_t m_nAddDecal; |  0xd20 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vDecalPosition = 0xd24; // GlobalTypes::Vector m_vDecalPosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDecalForwardAxis = 0xd30; // GlobalTypes::Vector m_vDecalForwardAxis; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nDecalMode = 0xd3c; // client::DecalMode_t m_nDecalMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nRequiredDecalMode = 0xd3d; // client::DecalMode_t m_nRequiredDecalMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_ConfigEntitiesToPropagateMaterialDecalsTo = 0xd40; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecViewOffset = 0xd80; // client::CNetworkViewOffsetVector m_vecViewOffset; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_pClientAlphaProperty = 0xe60; // client::CClientAlphaProperty* m_pClientAlphaProperty; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_ClientOverrideTint = 0xe68; // GlobalTypes::Color m_ClientOverrideTint; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseClientOverrideTint = 0xe6c; // bool m_bUseClientOverrideTint; |  0xe6c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0xea8; // uint32_t m_bvDisabledHitGroups[1]; |  0xea8 | Schema_FixedArray | Size: 0x4
 			}
 		}
 	}

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x898
+			// Class size: 0x8A0
 			namespace CCSWeaponBaseVData /*: public CS2::client::CBasePlayerWeaponVData*/ {
 				constexpr std::ptrdiff_t m_WeaponType = 0x440; // client::CSWeaponType m_WeaponType; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_WeaponCategory = 0x444; // client::CSWeaponCategory m_WeaponCategory; |  Schema_DeclaredEnum | Size: 0x4
@@ -55,42 +55,44 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flInaccuracyReload = 0x7c0; // float32 m_flInaccuracyReload; |  0x7c0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDeployDuration = 0x7c4; // float32 m_flDeployDuration; |  0x7c4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDisallowAttackAfterReloadStartDuration = 0x7c8; // float32 m_flDisallowAttackAfterReloadStartDuration; |  0x7c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRecoilSeed = 0x7cc; // int32_t m_nRecoilSeed; |  0x7cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSpreadSeed = 0x7d0; // int32_t m_nSpreadSeed; |  0x7d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAttackMovespeedFactor = 0x7d4; // float32 m_flAttackMovespeedFactor; |  0x7d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInaccuracyPitchShift = 0x7d8; // float32 m_flInaccuracyPitchShift; |  0x7d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInaccuracyAltSoundThreshold = 0x7dc; // float32 m_flInaccuracyAltSoundThreshold; |  0x7dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szUseRadioSubtitle = 0x7e0; // GlobalTypes::CUtlString m_szUseRadioSubtitle; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bUnzoomsAfterShot = 0x7e8; // bool m_bUnzoomsAfterShot; |  0x7e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHideViewModelWhenZoomed = 0x7e9; // bool m_bHideViewModelWhenZoomed; |  0x7e9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nZoomLevels = 0x7ec; // int32_t m_nZoomLevels; |  0x7ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nZoomFOV1 = 0x7f0; // int32_t m_nZoomFOV1; |  0x7f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nZoomFOV2 = 0x7f4; // int32_t m_nZoomFOV2; |  0x7f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flZoomTime0 = 0x7f8; // float32 m_flZoomTime0; |  0x7f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flZoomTime1 = 0x7fc; // float32 m_flZoomTime1; |  0x7fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flZoomTime2 = 0x800; // float32 m_flZoomTime2; |  0x800 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flIronSightPullUpSpeed = 0x804; // float32 m_flIronSightPullUpSpeed; |  0x804 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flIronSightPutDownSpeed = 0x808; // float32 m_flIronSightPutDownSpeed; |  0x808 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flIronSightFOV = 0x80c; // float32 m_flIronSightFOV; |  0x80c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flIronSightPivotForward = 0x810; // float32 m_flIronSightPivotForward; |  0x810 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flIronSightLooseness = 0x814; // float32 m_flIronSightLooseness; |  0x814 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDamage = 0x818; // int32_t m_nDamage; |  0x818 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHeadshotMultiplier = 0x81c; // float32 m_flHeadshotMultiplier; |  0x81c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flArmorRatio = 0x820; // float32 m_flArmorRatio; |  0x820 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPenetration = 0x824; // float32 m_flPenetration; |  0x824 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRange = 0x828; // float32 m_flRange; |  0x828 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRangeModifier = 0x82c; // float32 m_flRangeModifier; |  0x82c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlinchVelocityModifierLarge = 0x830; // float32 m_flFlinchVelocityModifierLarge; |  0x830 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlinchVelocityModifierSmall = 0x834; // float32 m_flFlinchVelocityModifierSmall; |  0x834 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRecoveryTimeCrouch = 0x838; // float32 m_flRecoveryTimeCrouch; |  0x838 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRecoveryTimeStand = 0x83c; // float32 m_flRecoveryTimeStand; |  0x83c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRecoveryTimeCrouchFinal = 0x840; // float32 m_flRecoveryTimeCrouchFinal; |  0x840 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRecoveryTimeStandFinal = 0x844; // float32 m_flRecoveryTimeStandFinal; |  0x844 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRecoveryTransitionStartBullet = 0x848; // int32_t m_nRecoveryTransitionStartBullet; |  0x848 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRecoveryTransitionEndBullet = 0x84c; // int32_t m_nRecoveryTransitionEndBullet; |  0x84c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flThrowVelocity = 0x850; // float32 m_flThrowVelocity; |  0x850 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vSmokeColor = 0x854; // GlobalTypes::Vector m_vSmokeColor; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_szAnimClass = 0x860; // GlobalTypes::CGlobalSymbol m_szAnimClass; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nBurstShotCount = 0x7cc; // int32_t m_nBurstShotCount; |  0x7cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAllowBurstHolster = 0x7d0; // bool m_bAllowBurstHolster; |  0x7d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nRecoilSeed = 0x7d4; // int32_t m_nRecoilSeed; |  0x7d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nSpreadSeed = 0x7d8; // int32_t m_nSpreadSeed; |  0x7d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAttackMovespeedFactor = 0x7dc; // float32 m_flAttackMovespeedFactor; |  0x7dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInaccuracyPitchShift = 0x7e0; // float32 m_flInaccuracyPitchShift; |  0x7e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInaccuracyAltSoundThreshold = 0x7e4; // float32 m_flInaccuracyAltSoundThreshold; |  0x7e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_szUseRadioSubtitle = 0x7e8; // GlobalTypes::CUtlString m_szUseRadioSubtitle; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bUnzoomsAfterShot = 0x7f0; // bool m_bUnzoomsAfterShot; |  0x7f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHideViewModelWhenZoomed = 0x7f1; // bool m_bHideViewModelWhenZoomed; |  0x7f1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nZoomLevels = 0x7f4; // int32_t m_nZoomLevels; |  0x7f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nZoomFOV1 = 0x7f8; // int32_t m_nZoomFOV1; |  0x7f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nZoomFOV2 = 0x7fc; // int32_t m_nZoomFOV2; |  0x7fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZoomTime0 = 0x800; // float32 m_flZoomTime0; |  0x800 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZoomTime1 = 0x804; // float32 m_flZoomTime1; |  0x804 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZoomTime2 = 0x808; // float32 m_flZoomTime2; |  0x808 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flIronSightPullUpSpeed = 0x80c; // float32 m_flIronSightPullUpSpeed; |  0x80c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flIronSightPutDownSpeed = 0x810; // float32 m_flIronSightPutDownSpeed; |  0x810 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flIronSightFOV = 0x814; // float32 m_flIronSightFOV; |  0x814 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flIronSightPivotForward = 0x818; // float32 m_flIronSightPivotForward; |  0x818 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flIronSightLooseness = 0x81c; // float32 m_flIronSightLooseness; |  0x81c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDamage = 0x820; // int32_t m_nDamage; |  0x820 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHeadshotMultiplier = 0x824; // float32 m_flHeadshotMultiplier; |  0x824 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flArmorRatio = 0x828; // float32 m_flArmorRatio; |  0x828 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPenetration = 0x82c; // float32 m_flPenetration; |  0x82c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRange = 0x830; // float32 m_flRange; |  0x830 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRangeModifier = 0x834; // float32 m_flRangeModifier; |  0x834 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlinchVelocityModifierLarge = 0x838; // float32 m_flFlinchVelocityModifierLarge; |  0x838 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlinchVelocityModifierSmall = 0x83c; // float32 m_flFlinchVelocityModifierSmall; |  0x83c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRecoveryTimeCrouch = 0x840; // float32 m_flRecoveryTimeCrouch; |  0x840 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRecoveryTimeStand = 0x844; // float32 m_flRecoveryTimeStand; |  0x844 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRecoveryTimeCrouchFinal = 0x848; // float32 m_flRecoveryTimeCrouchFinal; |  0x848 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRecoveryTimeStandFinal = 0x84c; // float32 m_flRecoveryTimeStandFinal; |  0x84c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRecoveryTransitionStartBullet = 0x850; // int32_t m_nRecoveryTransitionStartBullet; |  0x850 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRecoveryTransitionEndBullet = 0x854; // int32_t m_nRecoveryTransitionEndBullet; |  0x854 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flThrowVelocity = 0x858; // float32 m_flThrowVelocity; |  0x858 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vSmokeColor = 0x85c; // GlobalTypes::Vector m_vSmokeColor; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_szAnimClass = 0x868; // GlobalTypes::CGlobalSymbol m_szAnimClass; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

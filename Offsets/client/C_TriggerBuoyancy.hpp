@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1128
+			// Class size: 0x1110
 			namespace C_TriggerBuoyancy /*: public CS2::client::C_BaseTrigger*/ {
-				constexpr std::ptrdiff_t m_BuoyancyHelper = 0x1008; // client::CBuoyancyHelper m_BuoyancyHelper; |  Schema_DeclaredClass | Size: 0x118
-				constexpr std::ptrdiff_t m_flFluidDensity = 0x1120; // float32 m_flFluidDensity; |  0x1120 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_BuoyancyHelper = 0xff0; // client::CBuoyancyHelper m_BuoyancyHelper; |  Schema_DeclaredClass | Size: 0x118
+				constexpr std::ptrdiff_t m_flFluidDensity = 0x1108; // float32 m_flFluidDensity; |  0x1108 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

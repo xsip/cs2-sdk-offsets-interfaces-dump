@@ -15,173 +15,173 @@ namespace CS2 {
 	namespace client {
 		class C_BarnLight : public CS2::client::C_BaseModelEntity {
 		public:
-			bool m_bEnabled; // 0xec8 | Schema_Builtin | Size: 0x1
+			bool m_bEnabled; // 0xeb0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nColorMode; // 0xecc | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_Color; // 0xed0 | Schema_Atomic | Size: 0x4
-			float32 m_flColorTemperature; // 0xed4 | Schema_Builtin | Size: 0x4
-			float32 m_flBrightness; // 0xed8 | Schema_Builtin | Size: 0x4
-			float32 m_flBrightnessScale; // 0xedc | Schema_Builtin | Size: 0x4
-			int32_t m_nDirectLight; // 0xee0 | Schema_Builtin | Size: 0x4
-			int32_t m_nBakedShadowIndex; // 0xee4 | Schema_Builtin | Size: 0x4
-			int32_t m_nLightPathUniqueId; // 0xee8 | Schema_Builtin | Size: 0x4
-			int32_t m_nLightMapUniqueId; // 0xeec | Schema_Builtin | Size: 0x4
-			int32_t m_nLuminaireShape; // 0xef0 | Schema_Builtin | Size: 0x4
-			float32 m_flLuminaireSize; // 0xef4 | Schema_Builtin | Size: 0x4
-			float32 m_flLuminaireAnisotropy; // 0xef8 | Schema_Builtin | Size: 0x4
+			int32_t m_nColorMode; // 0xeb4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_Color; // 0xeb8 | Schema_Atomic | Size: 0x4
+			float32 m_flColorTemperature; // 0xebc | Schema_Builtin | Size: 0x4
+			float32 m_flBrightness; // 0xec0 | Schema_Builtin | Size: 0x4
+			float32 m_flBrightnessScale; // 0xec4 | Schema_Builtin | Size: 0x4
+			int32_t m_nDirectLight; // 0xec8 | Schema_Builtin | Size: 0x4
+			int32_t m_nBakedShadowIndex; // 0xecc | Schema_Builtin | Size: 0x4
+			int32_t m_nLightPathUniqueId; // 0xed0 | Schema_Builtin | Size: 0x4
+			int32_t m_nLightMapUniqueId; // 0xed4 | Schema_Builtin | Size: 0x4
+			int32_t m_nLuminaireShape; // 0xed8 | Schema_Builtin | Size: 0x4
+			float32 m_flLuminaireSize; // 0xedc | Schema_Builtin | Size: 0x4
+			float32 m_flLuminaireAnisotropy; // 0xee0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_LightStyleString; // 0xf00 | Schema_Atomic | Size: 0x8
-			entity2::GameTime_t m_flLightStyleStartTime; // 0xf08 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CUtlString m_LightStyleString; // 0xee8 | Schema_Atomic | Size: 0x8
+			entity2::GameTime_t m_flLightStyleStartTime; // 0xef0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_QueuedLightStyleStrings; // 0xf10 | Schema_Atomic | Size: 0x18
-			char  m_QueuedLightStyleStrings[0x18]; // 0xf10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_LightStyleEvents; // 0xf28 | Schema_Atomic | Size: 0x18
-			char  m_LightStyleEvents[0x18]; // 0xf28 | Schema_Atomic | Size: 0x18
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_LightStyleTargets; // 0xf40 | Schema_Atomic | Size: 0x18
-			char  m_LightStyleTargets[0x18]; // 0xf40 | Schema_Atomic | Size: 0x18
-			entity2::CEntityIOOutput m_StyleEvent[4]; // 0xf58 | Schema_FixedArray | Size: 0x280
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; // 0xff8 | Schema_Atomic | Size: 0x8
-			char  m_hLightCookie[0x8]; // 0xff8 | Schema_Atomic | Size: 0x8
-			float32 m_flShape; // 0x1000 | Schema_Builtin | Size: 0x4
-			float32 m_flSoftX; // 0x1004 | Schema_Builtin | Size: 0x4
-			float32 m_flSoftY; // 0x1008 | Schema_Builtin | Size: 0x4
-			float32 m_flSkirt; // 0x100c | Schema_Builtin | Size: 0x4
-			float32 m_flSkirtNear; // 0x1010 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vSizeParams; // 0x1014 | Schema_Atomic | Size: 0xc
-			float32 m_flRange; // 0x1020 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vShear; // 0x1024 | Schema_Atomic | Size: 0xc
-			int32_t m_nBakeSpecularToCubemaps; // 0x1030 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vBakeSpecularToCubemapsSize; // 0x1034 | Schema_Atomic | Size: 0xc
-			int32_t m_nCastShadows; // 0x1040 | Schema_Builtin | Size: 0x4
-			int32_t m_nShadowMapSize; // 0x1044 | Schema_Builtin | Size: 0x4
-			int32_t m_nShadowPriority; // 0x1048 | Schema_Builtin | Size: 0x4
-			bool m_bContactShadow; // 0x104c | Schema_Builtin | Size: 0x1
-			bool m_bForceShadowsEnabled; // 0x104d | Schema_Builtin | Size: 0x1
+			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_QueuedLightStyleStrings; // 0xef8 | Schema_Atomic | Size: 0x18
+			char  m_QueuedLightStyleStrings[0x18]; // 0xef8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_LightStyleEvents; // 0xf10 | Schema_Atomic | Size: 0x18
+			char  m_LightStyleEvents[0x18]; // 0xf10 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_LightStyleTargets; // 0xf28 | Schema_Atomic | Size: 0x18
+			char  m_LightStyleTargets[0x18]; // 0xf28 | Schema_Atomic | Size: 0x18
+			entity2::CEntityIOOutput m_StyleEvent[4]; // 0xf40 | Schema_FixedArray | Size: 0x280
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; // 0xfe0 | Schema_Atomic | Size: 0x8
+			char  m_hLightCookie[0x8]; // 0xfe0 | Schema_Atomic | Size: 0x8
+			float32 m_flShape; // 0xfe8 | Schema_Builtin | Size: 0x4
+			float32 m_flSoftX; // 0xfec | Schema_Builtin | Size: 0x4
+			float32 m_flSoftY; // 0xff0 | Schema_Builtin | Size: 0x4
+			float32 m_flSkirt; // 0xff4 | Schema_Builtin | Size: 0x4
+			float32 m_flSkirtNear; // 0xff8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vSizeParams; // 0xffc | Schema_Atomic | Size: 0xc
+			float32 m_flRange; // 0x1008 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vShear; // 0x100c | Schema_Atomic | Size: 0xc
+			int32_t m_nBakeSpecularToCubemaps; // 0x1018 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vBakeSpecularToCubemapsSize; // 0x101c | Schema_Atomic | Size: 0xc
+			int32_t m_nCastShadows; // 0x1028 | Schema_Builtin | Size: 0x4
+			int32_t m_nShadowMapSize; // 0x102c | Schema_Builtin | Size: 0x4
+			int32_t m_nShadowPriority; // 0x1030 | Schema_Builtin | Size: 0x4
+			bool m_bContactShadow; // 0x1034 | Schema_Builtin | Size: 0x1
+			bool m_bForceShadowsEnabled; // 0x1035 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nBounceLight; // 0x1050 | Schema_Builtin | Size: 0x4
-			float32 m_flBounceScale; // 0x1054 | Schema_Builtin | Size: 0x4
-			float32 m_flMinRoughness; // 0x1058 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vAlternateColor; // 0x105c | Schema_Atomic | Size: 0xc
-			float32 m_fAlternateColorBrightness; // 0x1068 | Schema_Builtin | Size: 0x4
-			int32_t m_nFog; // 0x106c | Schema_Builtin | Size: 0x4
-			float32 m_flFogStrength; // 0x1070 | Schema_Builtin | Size: 0x4
-			int32_t m_nFogShadows; // 0x1074 | Schema_Builtin | Size: 0x4
-			float32 m_flFogScale; // 0x1078 | Schema_Builtin | Size: 0x4
-			bool m_bFogMixedShadows; // 0x107c | Schema_Builtin | Size: 0x1
+			int32_t m_nBounceLight; // 0x1038 | Schema_Builtin | Size: 0x4
+			float32 m_flBounceScale; // 0x103c | Schema_Builtin | Size: 0x4
+			float32 m_flMinRoughness; // 0x1040 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vAlternateColor; // 0x1044 | Schema_Atomic | Size: 0xc
+			float32 m_fAlternateColorBrightness; // 0x1050 | Schema_Builtin | Size: 0x4
+			int32_t m_nFog; // 0x1054 | Schema_Builtin | Size: 0x4
+			float32 m_flFogStrength; // 0x1058 | Schema_Builtin | Size: 0x4
+			int32_t m_nFogShadows; // 0x105c | Schema_Builtin | Size: 0x4
+			float32 m_flFogScale; // 0x1060 | Schema_Builtin | Size: 0x4
+			bool m_bFogMixedShadows; // 0x1064 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flFadeSizeStart; // 0x1080 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeSizeEnd; // 0x1084 | Schema_Builtin | Size: 0x4
-			float32 m_flShadowFadeSizeStart; // 0x1088 | Schema_Builtin | Size: 0x4
-			float32 m_flShadowFadeSizeEnd; // 0x108c | Schema_Builtin | Size: 0x4
-			bool m_bPrecomputedFieldsValid; // 0x1090 | Schema_Builtin | Size: 0x1
+			float32 m_flFadeSizeStart; // 0x1068 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeSizeEnd; // 0x106c | Schema_Builtin | Size: 0x4
+			float32 m_flShadowFadeSizeStart; // 0x1070 | Schema_Builtin | Size: 0x4
+			float32 m_flShadowFadeSizeEnd; // 0x1074 | Schema_Builtin | Size: 0x4
+			bool m_bPrecomputedFieldsValid; // 0x1078 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vPrecomputedBoundsMins; // 0x1094 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedBoundsMaxs; // 0x10a0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBOrigin; // 0x10ac | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vPrecomputedOBBAngles; // 0x10b8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBExtent; // 0x10c4 | Schema_Atomic | Size: 0xc
-			int32_t m_nPrecomputedSubFrusta; // 0x10d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vPrecomputedOBBOrigin0; // 0x10d4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vPrecomputedOBBAngles0; // 0x10e0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBExtent0; // 0x10ec | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBOrigin1; // 0x10f8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vPrecomputedOBBAngles1; // 0x1104 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBExtent1; // 0x1110 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBOrigin2; // 0x111c | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vPrecomputedOBBAngles2; // 0x1128 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBExtent2; // 0x1134 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBOrigin3; // 0x1140 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vPrecomputedOBBAngles3; // 0x114c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBExtent3; // 0x1158 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBOrigin4; // 0x1164 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vPrecomputedOBBAngles4; // 0x1170 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBExtent4; // 0x117c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBOrigin5; // 0x1188 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vPrecomputedOBBAngles5; // 0x1194 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPrecomputedOBBExtent5; // 0x11a0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedBoundsMins; // 0x107c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedBoundsMaxs; // 0x1088 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBOrigin; // 0x1094 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vPrecomputedOBBAngles; // 0x10a0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBExtent; // 0x10ac | Schema_Atomic | Size: 0xc
+			int32_t m_nPrecomputedSubFrusta; // 0x10b8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vPrecomputedOBBOrigin0; // 0x10bc | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vPrecomputedOBBAngles0; // 0x10c8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBExtent0; // 0x10d4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBOrigin1; // 0x10e0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vPrecomputedOBBAngles1; // 0x10ec | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBExtent1; // 0x10f8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBOrigin2; // 0x1104 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vPrecomputedOBBAngles2; // 0x1110 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBExtent2; // 0x111c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBOrigin3; // 0x1128 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vPrecomputedOBBAngles3; // 0x1134 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBExtent3; // 0x1140 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBOrigin4; // 0x114c | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vPrecomputedOBBAngles4; // 0x1158 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBExtent4; // 0x1164 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBOrigin5; // 0x1170 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vPrecomputedOBBAngles5; // 0x117c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPrecomputedOBBExtent5; // 0x1188 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x44);
-			bool m_bInitialBoneSetup; // 0x11f0 | Schema_Builtin | Size: 0x1
+			bool m_bInitialBoneSetup; // 0x11d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::C_NetworkUtlVectorBase< uint16 > m_VisClusters; // 0x11f8 | Schema_Atomic | Size: 0x18
-			char  m_VisClusters[0x18]; // 0x11f8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase< uint16 > m_VisClusters; // 0x11e0 | Schema_Atomic | Size: 0x18
+			char  m_VisClusters[0x18]; // 0x11e0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BarnLight, m_bEnabled) == 0xEC8, "m_bEnabled in C_BarnLight should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nColorMode) == 0xECC, "m_nColorMode in C_BarnLight should be at offset 0xECC");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_Color) == 0xED0, "m_Color in C_BarnLight should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flColorTemperature) == 0xED4, "m_flColorTemperature in C_BarnLight should be at offset 0xED4");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flBrightness) == 0xED8, "m_flBrightness in C_BarnLight should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flBrightnessScale) == 0xEDC, "m_flBrightnessScale in C_BarnLight should be at offset 0xEDC");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nDirectLight) == 0xEE0, "m_nDirectLight in C_BarnLight should be at offset 0xEE0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nBakedShadowIndex) == 0xEE4, "m_nBakedShadowIndex in C_BarnLight should be at offset 0xEE4");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nLightPathUniqueId) == 0xEE8, "m_nLightPathUniqueId in C_BarnLight should be at offset 0xEE8");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nLightMapUniqueId) == 0xEEC, "m_nLightMapUniqueId in C_BarnLight should be at offset 0xEEC");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nLuminaireShape) == 0xEF0, "m_nLuminaireShape in C_BarnLight should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flLuminaireSize) == 0xEF4, "m_flLuminaireSize in C_BarnLight should be at offset 0xEF4");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flLuminaireAnisotropy) == 0xEF8, "m_flLuminaireAnisotropy in C_BarnLight should be at offset 0xEF8");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_LightStyleString) == 0xF00, "m_LightStyleString in C_BarnLight should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flLightStyleStartTime) == 0xF08, "m_flLightStyleStartTime in C_BarnLight should be at offset 0xF08");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_QueuedLightStyleStrings) == 0xF10, "m_QueuedLightStyleStrings in C_BarnLight should be at offset 0xF10");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_LightStyleEvents) == 0xF28, "m_LightStyleEvents in C_BarnLight should be at offset 0xF28");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_LightStyleTargets) == 0xF40, "m_LightStyleTargets in C_BarnLight should be at offset 0xF40");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_StyleEvent) == 0xF58, "m_StyleEvent in C_BarnLight should be at offset 0xF58");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_hLightCookie) == 0xFF8, "m_hLightCookie in C_BarnLight should be at offset 0xFF8");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flShape) == 0x1000, "m_flShape in C_BarnLight should be at offset 0x1000");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flSoftX) == 0x1004, "m_flSoftX in C_BarnLight should be at offset 0x1004");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flSoftY) == 0x1008, "m_flSoftY in C_BarnLight should be at offset 0x1008");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flSkirt) == 0x100C, "m_flSkirt in C_BarnLight should be at offset 0x100C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flSkirtNear) == 0x1010, "m_flSkirtNear in C_BarnLight should be at offset 0x1010");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vSizeParams) == 0x1014, "m_vSizeParams in C_BarnLight should be at offset 0x1014");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flRange) == 0x1020, "m_flRange in C_BarnLight should be at offset 0x1020");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vShear) == 0x1024, "m_vShear in C_BarnLight should be at offset 0x1024");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nBakeSpecularToCubemaps) == 0x1030, "m_nBakeSpecularToCubemaps in C_BarnLight should be at offset 0x1030");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vBakeSpecularToCubemapsSize) == 0x1034, "m_vBakeSpecularToCubemapsSize in C_BarnLight should be at offset 0x1034");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nCastShadows) == 0x1040, "m_nCastShadows in C_BarnLight should be at offset 0x1040");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nShadowMapSize) == 0x1044, "m_nShadowMapSize in C_BarnLight should be at offset 0x1044");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nShadowPriority) == 0x1048, "m_nShadowPriority in C_BarnLight should be at offset 0x1048");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_bContactShadow) == 0x104C, "m_bContactShadow in C_BarnLight should be at offset 0x104C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_bForceShadowsEnabled) == 0x104D, "m_bForceShadowsEnabled in C_BarnLight should be at offset 0x104D");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nBounceLight) == 0x1050, "m_nBounceLight in C_BarnLight should be at offset 0x1050");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flBounceScale) == 0x1054, "m_flBounceScale in C_BarnLight should be at offset 0x1054");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flMinRoughness) == 0x1058, "m_flMinRoughness in C_BarnLight should be at offset 0x1058");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vAlternateColor) == 0x105C, "m_vAlternateColor in C_BarnLight should be at offset 0x105C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_fAlternateColorBrightness) == 0x1068, "m_fAlternateColorBrightness in C_BarnLight should be at offset 0x1068");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nFog) == 0x106C, "m_nFog in C_BarnLight should be at offset 0x106C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flFogStrength) == 0x1070, "m_flFogStrength in C_BarnLight should be at offset 0x1070");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nFogShadows) == 0x1074, "m_nFogShadows in C_BarnLight should be at offset 0x1074");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flFogScale) == 0x1078, "m_flFogScale in C_BarnLight should be at offset 0x1078");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_bFogMixedShadows) == 0x107C, "m_bFogMixedShadows in C_BarnLight should be at offset 0x107C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flFadeSizeStart) == 0x1080, "m_flFadeSizeStart in C_BarnLight should be at offset 0x1080");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flFadeSizeEnd) == 0x1084, "m_flFadeSizeEnd in C_BarnLight should be at offset 0x1084");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flShadowFadeSizeStart) == 0x1088, "m_flShadowFadeSizeStart in C_BarnLight should be at offset 0x1088");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_flShadowFadeSizeEnd) == 0x108C, "m_flShadowFadeSizeEnd in C_BarnLight should be at offset 0x108C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_bPrecomputedFieldsValid) == 0x1090, "m_bPrecomputedFieldsValid in C_BarnLight should be at offset 0x1090");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedBoundsMins) == 0x1094, "m_vPrecomputedBoundsMins in C_BarnLight should be at offset 0x1094");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedBoundsMaxs) == 0x10A0, "m_vPrecomputedBoundsMaxs in C_BarnLight should be at offset 0x10A0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin) == 0x10AC, "m_vPrecomputedOBBOrigin in C_BarnLight should be at offset 0x10AC");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles) == 0x10B8, "m_vPrecomputedOBBAngles in C_BarnLight should be at offset 0x10B8");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent) == 0x10C4, "m_vPrecomputedOBBExtent in C_BarnLight should be at offset 0x10C4");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_nPrecomputedSubFrusta) == 0x10D0, "m_nPrecomputedSubFrusta in C_BarnLight should be at offset 0x10D0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin0) == 0x10D4, "m_vPrecomputedOBBOrigin0 in C_BarnLight should be at offset 0x10D4");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles0) == 0x10E0, "m_vPrecomputedOBBAngles0 in C_BarnLight should be at offset 0x10E0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent0) == 0x10EC, "m_vPrecomputedOBBExtent0 in C_BarnLight should be at offset 0x10EC");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin1) == 0x10F8, "m_vPrecomputedOBBOrigin1 in C_BarnLight should be at offset 0x10F8");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles1) == 0x1104, "m_vPrecomputedOBBAngles1 in C_BarnLight should be at offset 0x1104");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent1) == 0x1110, "m_vPrecomputedOBBExtent1 in C_BarnLight should be at offset 0x1110");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin2) == 0x111C, "m_vPrecomputedOBBOrigin2 in C_BarnLight should be at offset 0x111C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles2) == 0x1128, "m_vPrecomputedOBBAngles2 in C_BarnLight should be at offset 0x1128");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent2) == 0x1134, "m_vPrecomputedOBBExtent2 in C_BarnLight should be at offset 0x1134");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin3) == 0x1140, "m_vPrecomputedOBBOrigin3 in C_BarnLight should be at offset 0x1140");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles3) == 0x114C, "m_vPrecomputedOBBAngles3 in C_BarnLight should be at offset 0x114C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent3) == 0x1158, "m_vPrecomputedOBBExtent3 in C_BarnLight should be at offset 0x1158");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin4) == 0x1164, "m_vPrecomputedOBBOrigin4 in C_BarnLight should be at offset 0x1164");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles4) == 0x1170, "m_vPrecomputedOBBAngles4 in C_BarnLight should be at offset 0x1170");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent4) == 0x117C, "m_vPrecomputedOBBExtent4 in C_BarnLight should be at offset 0x117C");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin5) == 0x1188, "m_vPrecomputedOBBOrigin5 in C_BarnLight should be at offset 0x1188");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles5) == 0x1194, "m_vPrecomputedOBBAngles5 in C_BarnLight should be at offset 0x1194");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent5) == 0x11A0, "m_vPrecomputedOBBExtent5 in C_BarnLight should be at offset 0x11A0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_bInitialBoneSetup) == 0x11F0, "m_bInitialBoneSetup in C_BarnLight should be at offset 0x11F0");
-		static_assert(offsetof(CS2::client::C_BarnLight, m_VisClusters) == 0x11F8, "m_VisClusters in C_BarnLight should be at offset 0x11F8");
-		static_assert(sizeof(CS2::client::C_BarnLight) == 0x1218, "C_BarnLight size should be 0x1218");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_bEnabled) == 0xEB0, "m_bEnabled in C_BarnLight should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nColorMode) == 0xEB4, "m_nColorMode in C_BarnLight should be at offset 0xEB4");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_Color) == 0xEB8, "m_Color in C_BarnLight should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flColorTemperature) == 0xEBC, "m_flColorTemperature in C_BarnLight should be at offset 0xEBC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flBrightness) == 0xEC0, "m_flBrightness in C_BarnLight should be at offset 0xEC0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flBrightnessScale) == 0xEC4, "m_flBrightnessScale in C_BarnLight should be at offset 0xEC4");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nDirectLight) == 0xEC8, "m_nDirectLight in C_BarnLight should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nBakedShadowIndex) == 0xECC, "m_nBakedShadowIndex in C_BarnLight should be at offset 0xECC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nLightPathUniqueId) == 0xED0, "m_nLightPathUniqueId in C_BarnLight should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nLightMapUniqueId) == 0xED4, "m_nLightMapUniqueId in C_BarnLight should be at offset 0xED4");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nLuminaireShape) == 0xED8, "m_nLuminaireShape in C_BarnLight should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flLuminaireSize) == 0xEDC, "m_flLuminaireSize in C_BarnLight should be at offset 0xEDC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flLuminaireAnisotropy) == 0xEE0, "m_flLuminaireAnisotropy in C_BarnLight should be at offset 0xEE0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_LightStyleString) == 0xEE8, "m_LightStyleString in C_BarnLight should be at offset 0xEE8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flLightStyleStartTime) == 0xEF0, "m_flLightStyleStartTime in C_BarnLight should be at offset 0xEF0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_QueuedLightStyleStrings) == 0xEF8, "m_QueuedLightStyleStrings in C_BarnLight should be at offset 0xEF8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_LightStyleEvents) == 0xF10, "m_LightStyleEvents in C_BarnLight should be at offset 0xF10");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_LightStyleTargets) == 0xF28, "m_LightStyleTargets in C_BarnLight should be at offset 0xF28");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_StyleEvent) == 0xF40, "m_StyleEvent in C_BarnLight should be at offset 0xF40");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_hLightCookie) == 0xFE0, "m_hLightCookie in C_BarnLight should be at offset 0xFE0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flShape) == 0xFE8, "m_flShape in C_BarnLight should be at offset 0xFE8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flSoftX) == 0xFEC, "m_flSoftX in C_BarnLight should be at offset 0xFEC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flSoftY) == 0xFF0, "m_flSoftY in C_BarnLight should be at offset 0xFF0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flSkirt) == 0xFF4, "m_flSkirt in C_BarnLight should be at offset 0xFF4");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flSkirtNear) == 0xFF8, "m_flSkirtNear in C_BarnLight should be at offset 0xFF8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vSizeParams) == 0xFFC, "m_vSizeParams in C_BarnLight should be at offset 0xFFC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flRange) == 0x1008, "m_flRange in C_BarnLight should be at offset 0x1008");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vShear) == 0x100C, "m_vShear in C_BarnLight should be at offset 0x100C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nBakeSpecularToCubemaps) == 0x1018, "m_nBakeSpecularToCubemaps in C_BarnLight should be at offset 0x1018");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vBakeSpecularToCubemapsSize) == 0x101C, "m_vBakeSpecularToCubemapsSize in C_BarnLight should be at offset 0x101C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nCastShadows) == 0x1028, "m_nCastShadows in C_BarnLight should be at offset 0x1028");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nShadowMapSize) == 0x102C, "m_nShadowMapSize in C_BarnLight should be at offset 0x102C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nShadowPriority) == 0x1030, "m_nShadowPriority in C_BarnLight should be at offset 0x1030");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_bContactShadow) == 0x1034, "m_bContactShadow in C_BarnLight should be at offset 0x1034");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_bForceShadowsEnabled) == 0x1035, "m_bForceShadowsEnabled in C_BarnLight should be at offset 0x1035");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nBounceLight) == 0x1038, "m_nBounceLight in C_BarnLight should be at offset 0x1038");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flBounceScale) == 0x103C, "m_flBounceScale in C_BarnLight should be at offset 0x103C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flMinRoughness) == 0x1040, "m_flMinRoughness in C_BarnLight should be at offset 0x1040");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vAlternateColor) == 0x1044, "m_vAlternateColor in C_BarnLight should be at offset 0x1044");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_fAlternateColorBrightness) == 0x1050, "m_fAlternateColorBrightness in C_BarnLight should be at offset 0x1050");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nFog) == 0x1054, "m_nFog in C_BarnLight should be at offset 0x1054");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flFogStrength) == 0x1058, "m_flFogStrength in C_BarnLight should be at offset 0x1058");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nFogShadows) == 0x105C, "m_nFogShadows in C_BarnLight should be at offset 0x105C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flFogScale) == 0x1060, "m_flFogScale in C_BarnLight should be at offset 0x1060");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_bFogMixedShadows) == 0x1064, "m_bFogMixedShadows in C_BarnLight should be at offset 0x1064");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flFadeSizeStart) == 0x1068, "m_flFadeSizeStart in C_BarnLight should be at offset 0x1068");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flFadeSizeEnd) == 0x106C, "m_flFadeSizeEnd in C_BarnLight should be at offset 0x106C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flShadowFadeSizeStart) == 0x1070, "m_flShadowFadeSizeStart in C_BarnLight should be at offset 0x1070");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_flShadowFadeSizeEnd) == 0x1074, "m_flShadowFadeSizeEnd in C_BarnLight should be at offset 0x1074");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_bPrecomputedFieldsValid) == 0x1078, "m_bPrecomputedFieldsValid in C_BarnLight should be at offset 0x1078");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedBoundsMins) == 0x107C, "m_vPrecomputedBoundsMins in C_BarnLight should be at offset 0x107C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedBoundsMaxs) == 0x1088, "m_vPrecomputedBoundsMaxs in C_BarnLight should be at offset 0x1088");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin) == 0x1094, "m_vPrecomputedOBBOrigin in C_BarnLight should be at offset 0x1094");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles) == 0x10A0, "m_vPrecomputedOBBAngles in C_BarnLight should be at offset 0x10A0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent) == 0x10AC, "m_vPrecomputedOBBExtent in C_BarnLight should be at offset 0x10AC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_nPrecomputedSubFrusta) == 0x10B8, "m_nPrecomputedSubFrusta in C_BarnLight should be at offset 0x10B8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin0) == 0x10BC, "m_vPrecomputedOBBOrigin0 in C_BarnLight should be at offset 0x10BC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles0) == 0x10C8, "m_vPrecomputedOBBAngles0 in C_BarnLight should be at offset 0x10C8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent0) == 0x10D4, "m_vPrecomputedOBBExtent0 in C_BarnLight should be at offset 0x10D4");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin1) == 0x10E0, "m_vPrecomputedOBBOrigin1 in C_BarnLight should be at offset 0x10E0");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles1) == 0x10EC, "m_vPrecomputedOBBAngles1 in C_BarnLight should be at offset 0x10EC");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent1) == 0x10F8, "m_vPrecomputedOBBExtent1 in C_BarnLight should be at offset 0x10F8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin2) == 0x1104, "m_vPrecomputedOBBOrigin2 in C_BarnLight should be at offset 0x1104");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles2) == 0x1110, "m_vPrecomputedOBBAngles2 in C_BarnLight should be at offset 0x1110");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent2) == 0x111C, "m_vPrecomputedOBBExtent2 in C_BarnLight should be at offset 0x111C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin3) == 0x1128, "m_vPrecomputedOBBOrigin3 in C_BarnLight should be at offset 0x1128");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles3) == 0x1134, "m_vPrecomputedOBBAngles3 in C_BarnLight should be at offset 0x1134");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent3) == 0x1140, "m_vPrecomputedOBBExtent3 in C_BarnLight should be at offset 0x1140");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin4) == 0x114C, "m_vPrecomputedOBBOrigin4 in C_BarnLight should be at offset 0x114C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles4) == 0x1158, "m_vPrecomputedOBBAngles4 in C_BarnLight should be at offset 0x1158");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent4) == 0x1164, "m_vPrecomputedOBBExtent4 in C_BarnLight should be at offset 0x1164");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBOrigin5) == 0x1170, "m_vPrecomputedOBBOrigin5 in C_BarnLight should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBAngles5) == 0x117C, "m_vPrecomputedOBBAngles5 in C_BarnLight should be at offset 0x117C");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_vPrecomputedOBBExtent5) == 0x1188, "m_vPrecomputedOBBExtent5 in C_BarnLight should be at offset 0x1188");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_bInitialBoneSetup) == 0x11D8, "m_bInitialBoneSetup in C_BarnLight should be at offset 0x11D8");
+		static_assert(offsetof(CS2::client::C_BarnLight, m_VisClusters) == 0x11E0, "m_VisClusters in C_BarnLight should be at offset 0x11E0");
+		static_assert(sizeof(CS2::client::C_BarnLight) == 0x1200, "C_BarnLight size should be 0x1200");
 	}
 }

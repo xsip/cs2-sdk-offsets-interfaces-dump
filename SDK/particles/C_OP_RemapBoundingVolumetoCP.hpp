@@ -13,18 +13,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapBoundingVolumetoCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nOutControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMin; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMin; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_nOutControlPointNumber) == 0x1C8, "m_nOutControlPointNumber in C_OP_RemapBoundingVolumetoCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flInputMin) == 0x1CC, "m_flInputMin in C_OP_RemapBoundingVolumetoCP should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flInputMax) == 0x1D0, "m_flInputMax in C_OP_RemapBoundingVolumetoCP should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flOutputMin) == 0x1D4, "m_flOutputMin in C_OP_RemapBoundingVolumetoCP should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flOutputMax) == 0x1D8, "m_flOutputMax in C_OP_RemapBoundingVolumetoCP should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_OP_RemapBoundingVolumetoCP) == 0x1E0, "C_OP_RemapBoundingVolumetoCP size should be 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_nOutControlPointNumber) == 0x1D8, "m_nOutControlPointNumber in C_OP_RemapBoundingVolumetoCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flInputMin) == 0x1DC, "m_flInputMin in C_OP_RemapBoundingVolumetoCP should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flInputMax) == 0x1E0, "m_flInputMax in C_OP_RemapBoundingVolumetoCP should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flOutputMin) == 0x1E4, "m_flOutputMin in C_OP_RemapBoundingVolumetoCP should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_OP_RemapBoundingVolumetoCP should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_OP_RemapBoundingVolumetoCP) == 0x1F0, "C_OP_RemapBoundingVolumetoCP size should be 0x1F0");
 	}
 }

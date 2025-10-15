@@ -13,9 +13,9 @@ namespace CS2 {
 	namespace server {
 		class CPointClientUIWorldTextPanel : public CS2::server::CPointClientUIWorldPanel {
 		public:
-			char m_messageText[512]; // 0x9f8 | Schema_FixedArray | Size: 0x200
+			char m_messageText[512]; // 0x9e0 | Schema_FixedArray | Size: 0x200
 		};
-		static_assert(offsetof(CS2::server::CPointClientUIWorldTextPanel, m_messageText) == 0x9F8, "m_messageText in CPointClientUIWorldTextPanel should be at offset 0x9F8");
-		static_assert(sizeof(CS2::server::CPointClientUIWorldTextPanel) == 0xBF8, "CPointClientUIWorldTextPanel size should be 0xBF8");
+		static_assert(offsetof(CS2::server::CPointClientUIWorldTextPanel, m_messageText) == 0x9E0, "m_messageText in CPointClientUIWorldTextPanel should be at offset 0x9E0");
+		static_assert(sizeof(CS2::server::CPointClientUIWorldTextPanel) == 0xBE0, "CPointClientUIWorldTextPanel size should be 0xBE0");
 	}
 }

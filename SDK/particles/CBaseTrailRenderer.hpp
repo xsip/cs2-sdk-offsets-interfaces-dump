@@ -15,22 +15,22 @@ namespace CS2 {
 	namespace particles {
 		class CBaseTrailRenderer : public CS2::particles::CBaseRendererSource2 {
 		public:
-			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x2c18 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nOrientationControlPoint; // 0x2c1c | Schema_Builtin | Size: 0x4
-			float32 m_flMinSize; // 0x2c20 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxSize; // 0x2c24 | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionRendererFloatInput m_flStartFadeSize; // 0x2c28 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flEndFadeSize; // 0x2d88 | Schema_DeclaredClass | Size: 0x160
-			bool m_bClampV; // 0x2ee8 | Schema_Builtin | Size: 0x1
+			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x2de8 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nOrientationControlPoint; // 0x2dec | Schema_Builtin | Size: 0x4
+			float32 m_flMinSize; // 0x2df0 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxSize; // 0x2df4 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionRendererFloatInput m_flStartFadeSize; // 0x2df8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flEndFadeSize; // 0x2f68 | Schema_DeclaredClass | Size: 0x170
+			bool m_bClampV; // 0x30d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_nOrientationType) == 0x2C18, "m_nOrientationType in CBaseTrailRenderer should be at offset 0x2C18");
-		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_nOrientationControlPoint) == 0x2C1C, "m_nOrientationControlPoint in CBaseTrailRenderer should be at offset 0x2C1C");
-		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flMinSize) == 0x2C20, "m_flMinSize in CBaseTrailRenderer should be at offset 0x2C20");
-		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flMaxSize) == 0x2C24, "m_flMaxSize in CBaseTrailRenderer should be at offset 0x2C24");
-		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flStartFadeSize) == 0x2C28, "m_flStartFadeSize in CBaseTrailRenderer should be at offset 0x2C28");
-		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flEndFadeSize) == 0x2D88, "m_flEndFadeSize in CBaseTrailRenderer should be at offset 0x2D88");
-		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_bClampV) == 0x2EE8, "m_bClampV in CBaseTrailRenderer should be at offset 0x2EE8");
-		static_assert(sizeof(CS2::particles::CBaseTrailRenderer) == 0x2EF0, "CBaseTrailRenderer size should be 0x2EF0");
+		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_nOrientationType) == 0x2DE8, "m_nOrientationType in CBaseTrailRenderer should be at offset 0x2DE8");
+		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_nOrientationControlPoint) == 0x2DEC, "m_nOrientationControlPoint in CBaseTrailRenderer should be at offset 0x2DEC");
+		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flMinSize) == 0x2DF0, "m_flMinSize in CBaseTrailRenderer should be at offset 0x2DF0");
+		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flMaxSize) == 0x2DF4, "m_flMaxSize in CBaseTrailRenderer should be at offset 0x2DF4");
+		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flStartFadeSize) == 0x2DF8, "m_flStartFadeSize in CBaseTrailRenderer should be at offset 0x2DF8");
+		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flEndFadeSize) == 0x2F68, "m_flEndFadeSize in CBaseTrailRenderer should be at offset 0x2F68");
+		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_bClampV) == 0x30D8, "m_bClampV in CBaseTrailRenderer should be at offset 0x30D8");
+		static_assert(sizeof(CS2::particles::CBaseTrailRenderer) == 0x30E0, "CBaseTrailRenderer size should be 0x30E0");
 	}
 }

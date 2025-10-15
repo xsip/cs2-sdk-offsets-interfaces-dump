@@ -17,51 +17,51 @@ namespace CS2 {
 		class C_BaseFlex : public CS2::client::CBaseAnimGraph {
 		public:
 			S2_PAD(0x10);
-			// GlobalTypes::C_NetworkUtlVectorBase< float32 > m_flexWeight; // 0x1180 | Schema_Atomic | Size: 0x18
-			char  m_flexWeight[0x18]; // 0x1180 | Schema_Atomic | Size: 0x18
-			GlobalTypes::Vector m_vLookTargetPosition; // 0x1198 | Schema_Atomic | Size: 0xc
+			// GlobalTypes::C_NetworkUtlVectorBase< float32 > m_flexWeight; // 0x1168 | Schema_Atomic | Size: 0x18
+			char  m_flexWeight[0x18]; // 0x1168 | Schema_Atomic | Size: 0x18
+			GlobalTypes::VectorWS m_vLookTargetPosition; // 0x1180 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84);
-			bool m_blinktoggle; // 0x1228 | Schema_Builtin | Size: 0x1
+			bool m_blinktoggle; // 0x1210 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5f);
-			int32_t m_nLastFlexUpdateFrameCount; // 0x1288 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_CachedViewTarget; // 0x128c | Schema_Atomic | Size: 0xc
-			client::SceneEventId_t m_nNextSceneEventId; // 0x1298 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_iBlink; // 0x129c | Schema_Builtin | Size: 0x4
-			float32 m_blinktime; // 0x12a0 | Schema_Builtin | Size: 0x4
-			bool m_prevblinktoggle; // 0x12a4 | Schema_Builtin | Size: 0x1
+			int32_t m_nLastFlexUpdateFrameCount; // 0x1270 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_CachedViewTarget; // 0x1274 | Schema_Atomic | Size: 0xc
+			client::SceneEventId_t m_nNextSceneEventId; // 0x1280 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_iBlink; // 0x1284 | Schema_Builtin | Size: 0x4
+			float32 m_blinktime; // 0x1288 | Schema_Builtin | Size: 0x4
+			bool m_prevblinktoggle; // 0x128c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iJawOpen; // 0x12a8 | Schema_Builtin | Size: 0x4
-			float32 m_flJawOpenAmount; // 0x12ac | Schema_Builtin | Size: 0x4
-			float32 m_flBlinkAmount; // 0x12b0 | Schema_Builtin | Size: 0x4
-			modellib::AttachmentHandle_t m_iMouthAttachment; // 0x12b4 | Schema_DeclaredClass | Size: 0x1
-			modellib::AttachmentHandle_t m_iEyeAttachment; // 0x12b5 | Schema_DeclaredClass | Size: 0x1
-			bool m_bResetFlexWeightsOnModelChange; // 0x12b6 | Schema_Builtin | Size: 0x1
+			int32_t m_iJawOpen; // 0x1290 | Schema_Builtin | Size: 0x4
+			float32 m_flJawOpenAmount; // 0x1294 | Schema_Builtin | Size: 0x4
+			float32 m_flBlinkAmount; // 0x1298 | Schema_Builtin | Size: 0x4
+			modellib::AttachmentHandle_t m_iMouthAttachment; // 0x129c | Schema_DeclaredClass | Size: 0x1
+			modellib::AttachmentHandle_t m_iEyeAttachment; // 0x129d | Schema_DeclaredClass | Size: 0x1
+			bool m_bResetFlexWeightsOnModelChange; // 0x129e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x19);
-			int32_t m_nEyeOcclusionRendererBone; // 0x12d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0x12d4 | Schema_Atomic | Size: 0x30
-			GlobalTypes::Vector m_vEyeOcclusionRendererHalfExtent; // 0x1304 | Schema_Atomic | Size: 0xc
+			int32_t m_nEyeOcclusionRendererBone; // 0x12b8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0x12bc | Schema_Atomic | Size: 0x30
+			GlobalTypes::Vector m_vEyeOcclusionRendererHalfExtent; // 0x12ec | Schema_Atomic | Size: 0xc
 			S2_PAD(0x10);
-			client::Emphasized_Phoneme m_PhonemeClasses[3]; // 0x1320 | Schema_FixedArray | Size: 0x120
+			client::Emphasized_Phoneme m_PhonemeClasses[3]; // 0x1308 | Schema_FixedArray | Size: 0x120
 		};
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_flexWeight) == 0x1180, "m_flexWeight in C_BaseFlex should be at offset 0x1180");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_vLookTargetPosition) == 0x1198, "m_vLookTargetPosition in C_BaseFlex should be at offset 0x1198");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_blinktoggle) == 0x1228, "m_blinktoggle in C_BaseFlex should be at offset 0x1228");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_nLastFlexUpdateFrameCount) == 0x1288, "m_nLastFlexUpdateFrameCount in C_BaseFlex should be at offset 0x1288");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_CachedViewTarget) == 0x128C, "m_CachedViewTarget in C_BaseFlex should be at offset 0x128C");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_nNextSceneEventId) == 0x1298, "m_nNextSceneEventId in C_BaseFlex should be at offset 0x1298");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_iBlink) == 0x129C, "m_iBlink in C_BaseFlex should be at offset 0x129C");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_blinktime) == 0x12A0, "m_blinktime in C_BaseFlex should be at offset 0x12A0");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_prevblinktoggle) == 0x12A4, "m_prevblinktoggle in C_BaseFlex should be at offset 0x12A4");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_iJawOpen) == 0x12A8, "m_iJawOpen in C_BaseFlex should be at offset 0x12A8");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_flJawOpenAmount) == 0x12AC, "m_flJawOpenAmount in C_BaseFlex should be at offset 0x12AC");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_flBlinkAmount) == 0x12B0, "m_flBlinkAmount in C_BaseFlex should be at offset 0x12B0");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_iMouthAttachment) == 0x12B4, "m_iMouthAttachment in C_BaseFlex should be at offset 0x12B4");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_iEyeAttachment) == 0x12B5, "m_iEyeAttachment in C_BaseFlex should be at offset 0x12B5");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_bResetFlexWeightsOnModelChange) == 0x12B6, "m_bResetFlexWeightsOnModelChange in C_BaseFlex should be at offset 0x12B6");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_nEyeOcclusionRendererBone) == 0x12D0, "m_nEyeOcclusionRendererBone in C_BaseFlex should be at offset 0x12D0");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_mEyeOcclusionRendererCameraToBoneTransform) == 0x12D4, "m_mEyeOcclusionRendererCameraToBoneTransform in C_BaseFlex should be at offset 0x12D4");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_vEyeOcclusionRendererHalfExtent) == 0x1304, "m_vEyeOcclusionRendererHalfExtent in C_BaseFlex should be at offset 0x1304");
-		static_assert(offsetof(CS2::client::C_BaseFlex, m_PhonemeClasses) == 0x1320, "m_PhonemeClasses in C_BaseFlex should be at offset 0x1320");
-		static_assert(sizeof(CS2::client::C_BaseFlex) == 0x1380, "C_BaseFlex size should be 0x1380");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_flexWeight) == 0x1168, "m_flexWeight in C_BaseFlex should be at offset 0x1168");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_vLookTargetPosition) == 0x1180, "m_vLookTargetPosition in C_BaseFlex should be at offset 0x1180");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_blinktoggle) == 0x1210, "m_blinktoggle in C_BaseFlex should be at offset 0x1210");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_nLastFlexUpdateFrameCount) == 0x1270, "m_nLastFlexUpdateFrameCount in C_BaseFlex should be at offset 0x1270");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_CachedViewTarget) == 0x1274, "m_CachedViewTarget in C_BaseFlex should be at offset 0x1274");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_nNextSceneEventId) == 0x1280, "m_nNextSceneEventId in C_BaseFlex should be at offset 0x1280");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_iBlink) == 0x1284, "m_iBlink in C_BaseFlex should be at offset 0x1284");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_blinktime) == 0x1288, "m_blinktime in C_BaseFlex should be at offset 0x1288");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_prevblinktoggle) == 0x128C, "m_prevblinktoggle in C_BaseFlex should be at offset 0x128C");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_iJawOpen) == 0x1290, "m_iJawOpen in C_BaseFlex should be at offset 0x1290");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_flJawOpenAmount) == 0x1294, "m_flJawOpenAmount in C_BaseFlex should be at offset 0x1294");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_flBlinkAmount) == 0x1298, "m_flBlinkAmount in C_BaseFlex should be at offset 0x1298");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_iMouthAttachment) == 0x129C, "m_iMouthAttachment in C_BaseFlex should be at offset 0x129C");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_iEyeAttachment) == 0x129D, "m_iEyeAttachment in C_BaseFlex should be at offset 0x129D");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_bResetFlexWeightsOnModelChange) == 0x129E, "m_bResetFlexWeightsOnModelChange in C_BaseFlex should be at offset 0x129E");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_nEyeOcclusionRendererBone) == 0x12B8, "m_nEyeOcclusionRendererBone in C_BaseFlex should be at offset 0x12B8");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_mEyeOcclusionRendererCameraToBoneTransform) == 0x12BC, "m_mEyeOcclusionRendererCameraToBoneTransform in C_BaseFlex should be at offset 0x12BC");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_vEyeOcclusionRendererHalfExtent) == 0x12EC, "m_vEyeOcclusionRendererHalfExtent in C_BaseFlex should be at offset 0x12EC");
+		static_assert(offsetof(CS2::client::C_BaseFlex, m_PhonemeClasses) == 0x1308, "m_PhonemeClasses in C_BaseFlex should be at offset 0x1308");
+		static_assert(sizeof(CS2::client::C_BaseFlex) == 0x1368, "C_BaseFlex size should be 0x1368");
 	}
 }

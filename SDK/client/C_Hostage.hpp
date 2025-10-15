@@ -22,62 +22,62 @@ namespace CS2 {
 	namespace client {
 		class C_Hostage : public CS2::client::C_BaseCombatCharacter {
 		public:
-			client::EntitySpottedState_t m_entitySpottedState; // 0x1408 | Schema_DeclaredClass | Size: 0x18
-			// client::CHandle< client::C_BaseEntity > m_leader; // 0x1420 | Schema_Atomic | Size: 0x4
-			char  m_leader[0x4]; // 0x1420 | Schema_Atomic | Size: 0x4
+			client::EntitySpottedState_t m_entitySpottedState; // 0x13f0 | Schema_DeclaredClass | Size: 0x18
+			// client::CHandle< client::C_BaseEntity > m_leader; // 0x1408 | Schema_Atomic | Size: 0x4
+			char  m_leader[0x4]; // 0x1408 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			client::CountdownTimer m_reuseTimer; // 0x1428 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::Vector m_vel; // 0x1440 | Schema_Atomic | Size: 0xc
-			bool m_isRescued; // 0x144c | Schema_Builtin | Size: 0x1
-			bool m_jumpedThisFrame; // 0x144d | Schema_Builtin | Size: 0x1
+			client::CountdownTimer m_reuseTimer; // 0x1410 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::Vector m_vel; // 0x1428 | Schema_Atomic | Size: 0xc
+			bool m_isRescued; // 0x1434 | Schema_Builtin | Size: 0x1
+			bool m_jumpedThisFrame; // 0x1435 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nHostageState; // 0x1450 | Schema_Builtin | Size: 0x4
-			bool m_bHandsHaveBeenCut; // 0x1454 | Schema_Builtin | Size: 0x1
+			int32_t m_nHostageState; // 0x1438 | Schema_Builtin | Size: 0x4
+			bool m_bHandsHaveBeenCut; // 0x143c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// client::CHandle< client::C_CSPlayerPawn > m_hHostageGrabber; // 0x1458 | Schema_Atomic | Size: 0x4
-			char  m_hHostageGrabber[0x4]; // 0x1458 | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_fLastGrabTime; // 0x145c | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecGrabbedPos; // 0x1460 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flRescueStartTime; // 0x146c | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flGrabSuccessTime; // 0x1470 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flDropStartTime; // 0x1474 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flDeadOrRescuedTime; // 0x1478 | Schema_DeclaredClass | Size: 0x4
+			// client::CHandle< client::C_CSPlayerPawn > m_hHostageGrabber; // 0x1440 | Schema_Atomic | Size: 0x4
+			char  m_hHostageGrabber[0x4]; // 0x1440 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_fLastGrabTime; // 0x1444 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecGrabbedPos; // 0x1448 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flRescueStartTime; // 0x1454 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flGrabSuccessTime; // 0x1458 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flDropStartTime; // 0x145c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flDeadOrRescuedTime; // 0x1460 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			client::CountdownTimer m_blinkTimer; // 0x1480 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::Vector m_lookAt; // 0x1498 | Schema_Atomic | Size: 0xc
+			client::CountdownTimer m_blinkTimer; // 0x1468 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::Vector m_lookAt; // 0x1480 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			client::CountdownTimer m_lookAroundTimer; // 0x14a8 | Schema_DeclaredClass | Size: 0x18
-			bool m_isInit; // 0x14c0 | Schema_Builtin | Size: 0x1
-			modellib::AttachmentHandle_t m_eyeAttachment; // 0x14c1 | Schema_DeclaredClass | Size: 0x1
-			modellib::AttachmentHandle_t m_chestAttachment; // 0x14c2 | Schema_DeclaredClass | Size: 0x1
+			client::CountdownTimer m_lookAroundTimer; // 0x1490 | Schema_DeclaredClass | Size: 0x18
+			bool m_isInit; // 0x14a8 | Schema_Builtin | Size: 0x1
+			modellib::AttachmentHandle_t m_eyeAttachment; // 0x14a9 | Schema_DeclaredClass | Size: 0x1
+			modellib::AttachmentHandle_t m_chestAttachment; // 0x14aa | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x5);
-			client::CBasePlayerController* m_pPredictionOwner; // 0x14c8 | Schema_Ptr | Size: 0x8
-			entity2::GameTime_t m_fNewestAlphaThinkTime; // 0x14d0 | Schema_DeclaredClass | Size: 0x4
+			client::CBasePlayerController* m_pPredictionOwner; // 0x14b0 | Schema_Ptr | Size: 0x8
+			entity2::GameTime_t m_fNewestAlphaThinkTime; // 0x14b8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_Hostage, m_entitySpottedState) == 0x1408, "m_entitySpottedState in C_Hostage should be at offset 0x1408");
-		static_assert(offsetof(CS2::client::C_Hostage, m_leader) == 0x1420, "m_leader in C_Hostage should be at offset 0x1420");
-		static_assert(offsetof(CS2::client::C_Hostage, m_reuseTimer) == 0x1428, "m_reuseTimer in C_Hostage should be at offset 0x1428");
-		static_assert(offsetof(CS2::client::C_Hostage, m_vel) == 0x1440, "m_vel in C_Hostage should be at offset 0x1440");
-		static_assert(offsetof(CS2::client::C_Hostage, m_isRescued) == 0x144C, "m_isRescued in C_Hostage should be at offset 0x144C");
-		static_assert(offsetof(CS2::client::C_Hostage, m_jumpedThisFrame) == 0x144D, "m_jumpedThisFrame in C_Hostage should be at offset 0x144D");
-		static_assert(offsetof(CS2::client::C_Hostage, m_nHostageState) == 0x1450, "m_nHostageState in C_Hostage should be at offset 0x1450");
-		static_assert(offsetof(CS2::client::C_Hostage, m_bHandsHaveBeenCut) == 0x1454, "m_bHandsHaveBeenCut in C_Hostage should be at offset 0x1454");
-		static_assert(offsetof(CS2::client::C_Hostage, m_hHostageGrabber) == 0x1458, "m_hHostageGrabber in C_Hostage should be at offset 0x1458");
-		static_assert(offsetof(CS2::client::C_Hostage, m_fLastGrabTime) == 0x145C, "m_fLastGrabTime in C_Hostage should be at offset 0x145C");
-		static_assert(offsetof(CS2::client::C_Hostage, m_vecGrabbedPos) == 0x1460, "m_vecGrabbedPos in C_Hostage should be at offset 0x1460");
-		static_assert(offsetof(CS2::client::C_Hostage, m_flRescueStartTime) == 0x146C, "m_flRescueStartTime in C_Hostage should be at offset 0x146C");
-		static_assert(offsetof(CS2::client::C_Hostage, m_flGrabSuccessTime) == 0x1470, "m_flGrabSuccessTime in C_Hostage should be at offset 0x1470");
-		static_assert(offsetof(CS2::client::C_Hostage, m_flDropStartTime) == 0x1474, "m_flDropStartTime in C_Hostage should be at offset 0x1474");
-		static_assert(offsetof(CS2::client::C_Hostage, m_flDeadOrRescuedTime) == 0x1478, "m_flDeadOrRescuedTime in C_Hostage should be at offset 0x1478");
-		static_assert(offsetof(CS2::client::C_Hostage, m_blinkTimer) == 0x1480, "m_blinkTimer in C_Hostage should be at offset 0x1480");
-		static_assert(offsetof(CS2::client::C_Hostage, m_lookAt) == 0x1498, "m_lookAt in C_Hostage should be at offset 0x1498");
-		static_assert(offsetof(CS2::client::C_Hostage, m_lookAroundTimer) == 0x14A8, "m_lookAroundTimer in C_Hostage should be at offset 0x14A8");
-		static_assert(offsetof(CS2::client::C_Hostage, m_isInit) == 0x14C0, "m_isInit in C_Hostage should be at offset 0x14C0");
-		static_assert(offsetof(CS2::client::C_Hostage, m_eyeAttachment) == 0x14C1, "m_eyeAttachment in C_Hostage should be at offset 0x14C1");
-		static_assert(offsetof(CS2::client::C_Hostage, m_chestAttachment) == 0x14C2, "m_chestAttachment in C_Hostage should be at offset 0x14C2");
-		static_assert(offsetof(CS2::client::C_Hostage, m_pPredictionOwner) == 0x14C8, "m_pPredictionOwner in C_Hostage should be at offset 0x14C8");
-		static_assert(offsetof(CS2::client::C_Hostage, m_fNewestAlphaThinkTime) == 0x14D0, "m_fNewestAlphaThinkTime in C_Hostage should be at offset 0x14D0");
-		static_assert(sizeof(CS2::client::C_Hostage) == 0x14D8, "C_Hostage size should be 0x14D8");
+		static_assert(offsetof(CS2::client::C_Hostage, m_entitySpottedState) == 0x13F0, "m_entitySpottedState in C_Hostage should be at offset 0x13F0");
+		static_assert(offsetof(CS2::client::C_Hostage, m_leader) == 0x1408, "m_leader in C_Hostage should be at offset 0x1408");
+		static_assert(offsetof(CS2::client::C_Hostage, m_reuseTimer) == 0x1410, "m_reuseTimer in C_Hostage should be at offset 0x1410");
+		static_assert(offsetof(CS2::client::C_Hostage, m_vel) == 0x1428, "m_vel in C_Hostage should be at offset 0x1428");
+		static_assert(offsetof(CS2::client::C_Hostage, m_isRescued) == 0x1434, "m_isRescued in C_Hostage should be at offset 0x1434");
+		static_assert(offsetof(CS2::client::C_Hostage, m_jumpedThisFrame) == 0x1435, "m_jumpedThisFrame in C_Hostage should be at offset 0x1435");
+		static_assert(offsetof(CS2::client::C_Hostage, m_nHostageState) == 0x1438, "m_nHostageState in C_Hostage should be at offset 0x1438");
+		static_assert(offsetof(CS2::client::C_Hostage, m_bHandsHaveBeenCut) == 0x143C, "m_bHandsHaveBeenCut in C_Hostage should be at offset 0x143C");
+		static_assert(offsetof(CS2::client::C_Hostage, m_hHostageGrabber) == 0x1440, "m_hHostageGrabber in C_Hostage should be at offset 0x1440");
+		static_assert(offsetof(CS2::client::C_Hostage, m_fLastGrabTime) == 0x1444, "m_fLastGrabTime in C_Hostage should be at offset 0x1444");
+		static_assert(offsetof(CS2::client::C_Hostage, m_vecGrabbedPos) == 0x1448, "m_vecGrabbedPos in C_Hostage should be at offset 0x1448");
+		static_assert(offsetof(CS2::client::C_Hostage, m_flRescueStartTime) == 0x1454, "m_flRescueStartTime in C_Hostage should be at offset 0x1454");
+		static_assert(offsetof(CS2::client::C_Hostage, m_flGrabSuccessTime) == 0x1458, "m_flGrabSuccessTime in C_Hostage should be at offset 0x1458");
+		static_assert(offsetof(CS2::client::C_Hostage, m_flDropStartTime) == 0x145C, "m_flDropStartTime in C_Hostage should be at offset 0x145C");
+		static_assert(offsetof(CS2::client::C_Hostage, m_flDeadOrRescuedTime) == 0x1460, "m_flDeadOrRescuedTime in C_Hostage should be at offset 0x1460");
+		static_assert(offsetof(CS2::client::C_Hostage, m_blinkTimer) == 0x1468, "m_blinkTimer in C_Hostage should be at offset 0x1468");
+		static_assert(offsetof(CS2::client::C_Hostage, m_lookAt) == 0x1480, "m_lookAt in C_Hostage should be at offset 0x1480");
+		static_assert(offsetof(CS2::client::C_Hostage, m_lookAroundTimer) == 0x1490, "m_lookAroundTimer in C_Hostage should be at offset 0x1490");
+		static_assert(offsetof(CS2::client::C_Hostage, m_isInit) == 0x14A8, "m_isInit in C_Hostage should be at offset 0x14A8");
+		static_assert(offsetof(CS2::client::C_Hostage, m_eyeAttachment) == 0x14A9, "m_eyeAttachment in C_Hostage should be at offset 0x14A9");
+		static_assert(offsetof(CS2::client::C_Hostage, m_chestAttachment) == 0x14AA, "m_chestAttachment in C_Hostage should be at offset 0x14AA");
+		static_assert(offsetof(CS2::client::C_Hostage, m_pPredictionOwner) == 0x14B0, "m_pPredictionOwner in C_Hostage should be at offset 0x14B0");
+		static_assert(offsetof(CS2::client::C_Hostage, m_fNewestAlphaThinkTime) == 0x14B8, "m_fNewestAlphaThinkTime in C_Hostage should be at offset 0x14B8");
+		static_assert(sizeof(CS2::client::C_Hostage) == 0x14C0, "C_Hostage size should be 0x14C0");
 	}
 }

@@ -22,13 +22,13 @@ namespace CS2 {
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_modelSpaceReferencePose; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_modelSpaceReferencePose[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			int32_t m_numBonesToSampleAtLowLOD; // 0x60 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4);
-			// GlobalTypes::CUtlLeanVector< animlib::NmBoneMaskSetDefinition_t > m_maskDefinitions; // 0x68 | Schema_Atomic | Size: 0x10
-			char  m_maskDefinitions[0x10]; // 0x68 | Schema_Atomic | Size: 0x10
+			S2_PAD(0x24);
+			// GlobalTypes::CUtlLeanVector< animlib::NmBoneMaskSetDefinition_t > m_maskDefinitions; // 0x88 | Schema_Atomic | Size: 0x10
+			char  m_maskDefinitions[0x10]; // 0x88 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10);
-			// GlobalTypes::SecondarySkeleton_t > m_secondarySkeletons; // 0x88 | Schema_Atomic | Size: 0x10
-			char  m_secondarySkeletons[0x10]; // 0x88 | Schema_Atomic | Size: 0x10
-			bool m_bIsPropSkeleton; // 0x98 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::SecondarySkeleton_t > m_secondarySkeletons; // 0xa8 | Schema_Atomic | Size: 0x10
+			char  m_secondarySkeletons[0x10]; // 0xa8 | Schema_Atomic | Size: 0x10
+			bool m_bIsPropSkeleton; // 0xb8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_ID) == 0x0, "m_ID in CNmSkeleton should be at offset 0x0");
@@ -37,9 +37,9 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_parentSpaceReferencePose) == 0x30, "m_parentSpaceReferencePose in CNmSkeleton should be at offset 0x30");
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_modelSpaceReferencePose) == 0x48, "m_modelSpaceReferencePose in CNmSkeleton should be at offset 0x48");
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_numBonesToSampleAtLowLOD) == 0x60, "m_numBonesToSampleAtLowLOD in CNmSkeleton should be at offset 0x60");
-		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_maskDefinitions) == 0x68, "m_maskDefinitions in CNmSkeleton should be at offset 0x68");
-		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_secondarySkeletons) == 0x88, "m_secondarySkeletons in CNmSkeleton should be at offset 0x88");
-		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_bIsPropSkeleton) == 0x98, "m_bIsPropSkeleton in CNmSkeleton should be at offset 0x98");
-		static_assert(sizeof(CS2::animlib::CNmSkeleton) == 0xA0, "CNmSkeleton size should be 0xA0");
+		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_maskDefinitions) == 0x88, "m_maskDefinitions in CNmSkeleton should be at offset 0x88");
+		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_secondarySkeletons) == 0xA8, "m_secondarySkeletons in CNmSkeleton should be at offset 0xA8");
+		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_bIsPropSkeleton) == 0xB8, "m_bIsPropSkeleton in CNmSkeleton should be at offset 0xB8");
+		static_assert(sizeof(CS2::animlib::CNmSkeleton) == 0xC0, "CNmSkeleton size should be 0xC0");
 	}
 }

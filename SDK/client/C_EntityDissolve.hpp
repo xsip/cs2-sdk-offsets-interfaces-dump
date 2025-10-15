@@ -16,34 +16,34 @@ namespace CS2 {
 		class C_EntityDissolve : public CS2::client::C_BaseModelEntity {
 		public:
 			S2_PAD(0x8);
-			entity2::GameTime_t m_flStartTime; // 0xed0 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flFadeInStart; // 0xed4 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeInLength; // 0xed8 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutModelStart; // 0xedc | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutModelLength; // 0xee0 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutStart; // 0xee4 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutLength; // 0xee8 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flNextSparkTime; // 0xeec | Schema_DeclaredClass | Size: 0x4
-			client::EntityDisolveType_t m_nDissolveType; // 0xef0 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::Vector m_vDissolverOrigin; // 0xef4 | Schema_Atomic | Size: 0xc
-			uint32_t m_nMagnitude; // 0xf00 | Schema_Builtin | Size: 0x4
-			bool m_bCoreExplode; // 0xf04 | Schema_Builtin | Size: 0x1
-			bool m_bLinkedToServerEnt; // 0xf05 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flStartTime; // 0xeb8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flFadeInStart; // 0xebc | Schema_Builtin | Size: 0x4
+			float32 m_flFadeInLength; // 0xec0 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutModelStart; // 0xec4 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutModelLength; // 0xec8 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutStart; // 0xecc | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutLength; // 0xed0 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flNextSparkTime; // 0xed4 | Schema_DeclaredClass | Size: 0x4
+			client::EntityDisolveType_t m_nDissolveType; // 0xed8 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::Vector m_vDissolverOrigin; // 0xedc | Schema_Atomic | Size: 0xc
+			uint32_t m_nMagnitude; // 0xee8 | Schema_Builtin | Size: 0x4
+			bool m_bCoreExplode; // 0xeec | Schema_Builtin | Size: 0x1
+			bool m_bLinkedToServerEnt; // 0xeed | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flStartTime) == 0xED0, "m_flStartTime in C_EntityDissolve should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeInStart) == 0xED4, "m_flFadeInStart in C_EntityDissolve should be at offset 0xED4");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeInLength) == 0xED8, "m_flFadeInLength in C_EntityDissolve should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutModelStart) == 0xEDC, "m_flFadeOutModelStart in C_EntityDissolve should be at offset 0xEDC");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutModelLength) == 0xEE0, "m_flFadeOutModelLength in C_EntityDissolve should be at offset 0xEE0");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutStart) == 0xEE4, "m_flFadeOutStart in C_EntityDissolve should be at offset 0xEE4");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutLength) == 0xEE8, "m_flFadeOutLength in C_EntityDissolve should be at offset 0xEE8");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flNextSparkTime) == 0xEEC, "m_flNextSparkTime in C_EntityDissolve should be at offset 0xEEC");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_nDissolveType) == 0xEF0, "m_nDissolveType in C_EntityDissolve should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_vDissolverOrigin) == 0xEF4, "m_vDissolverOrigin in C_EntityDissolve should be at offset 0xEF4");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_nMagnitude) == 0xF00, "m_nMagnitude in C_EntityDissolve should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_bCoreExplode) == 0xF04, "m_bCoreExplode in C_EntityDissolve should be at offset 0xF04");
-		static_assert(offsetof(CS2::client::C_EntityDissolve, m_bLinkedToServerEnt) == 0xF05, "m_bLinkedToServerEnt in C_EntityDissolve should be at offset 0xF05");
-		static_assert(sizeof(CS2::client::C_EntityDissolve) == 0xF10, "C_EntityDissolve size should be 0xF10");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flStartTime) == 0xEB8, "m_flStartTime in C_EntityDissolve should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeInStart) == 0xEBC, "m_flFadeInStart in C_EntityDissolve should be at offset 0xEBC");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeInLength) == 0xEC0, "m_flFadeInLength in C_EntityDissolve should be at offset 0xEC0");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutModelStart) == 0xEC4, "m_flFadeOutModelStart in C_EntityDissolve should be at offset 0xEC4");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutModelLength) == 0xEC8, "m_flFadeOutModelLength in C_EntityDissolve should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutStart) == 0xECC, "m_flFadeOutStart in C_EntityDissolve should be at offset 0xECC");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeOutLength) == 0xED0, "m_flFadeOutLength in C_EntityDissolve should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flNextSparkTime) == 0xED4, "m_flNextSparkTime in C_EntityDissolve should be at offset 0xED4");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_nDissolveType) == 0xED8, "m_nDissolveType in C_EntityDissolve should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_vDissolverOrigin) == 0xEDC, "m_vDissolverOrigin in C_EntityDissolve should be at offset 0xEDC");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_nMagnitude) == 0xEE8, "m_nMagnitude in C_EntityDissolve should be at offset 0xEE8");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_bCoreExplode) == 0xEEC, "m_bCoreExplode in C_EntityDissolve should be at offset 0xEEC");
+		static_assert(offsetof(CS2::client::C_EntityDissolve, m_bLinkedToServerEnt) == 0xEED, "m_bLinkedToServerEnt in C_EntityDissolve should be at offset 0xEED");
+		static_assert(sizeof(CS2::client::C_EntityDissolve) == 0xEF8, "C_EntityDissolve size should be 0xEF8");
 	}
 }

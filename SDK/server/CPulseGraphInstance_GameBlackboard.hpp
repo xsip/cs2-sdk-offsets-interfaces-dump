@@ -13,7 +13,8 @@ namespace CS2 {
 	namespace server {
 		class CPulseGraphInstance_GameBlackboard : public CS2::server::CPulseGraphInstance_ServerEntity {
 		public:
+			S2_PAD(0x10);
 		};
-		static_assert(sizeof(CS2::server::CPulseGraphInstance_GameBlackboard) == 0x1B0, "CPulseGraphInstance_GameBlackboard size should be 0x1B0");
+		static_assert(sizeof(CS2::server::CPulseGraphInstance_GameBlackboard) == 0x1C8, "CPulseGraphInstance_GameBlackboard size should be 0x1C8");
 	}
 }

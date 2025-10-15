@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x220
+			// Class size: 0x230
 			namespace C_OP_RemapNamedModelBodyPartOnceTimed /*: public CS2::particles::C_OP_RemapNamedModelElementOnceTimed*/ {
 				// NO SCHEMA DATA FOUND!
 			}

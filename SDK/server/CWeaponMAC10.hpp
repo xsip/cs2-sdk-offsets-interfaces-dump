@@ -14,6 +14,6 @@ namespace CS2 {
 		class CWeaponMAC10 : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CWeaponMAC10) == 0x11C8, "CWeaponMAC10 size should be 0x11C8");
+		static_assert(sizeof(CS2::server::CWeaponMAC10) == 0x11F0, "CWeaponMAC10 size should be 0x11F0");
 	}
 }

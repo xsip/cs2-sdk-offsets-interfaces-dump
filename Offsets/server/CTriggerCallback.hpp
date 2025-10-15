@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9C8
+			// Class size: 0x9B0
 			namespace CTriggerCallback /*: public CS2::server::CBaseTrigger*/ {
 				// NO SCHEMA DATA FOUND!
 			}

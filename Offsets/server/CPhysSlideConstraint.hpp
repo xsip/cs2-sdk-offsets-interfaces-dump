@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x628
 			namespace CPhysSlideConstraint /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_axisEnd = 0x568; // GlobalTypes::Vector m_axisEnd; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_axisEnd = 0x568; // GlobalTypes::VectorWS m_axisEnd; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_slideFriction = 0x574; // float32 m_slideFriction; |  0x574 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_systemLoadScale = 0x578; // float32 m_systemLoadScale; |  0x578 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_initialOffset = 0x57c; // float32 m_initialOffset; |  0x57c | Schema_Builtin | Size: 0x4

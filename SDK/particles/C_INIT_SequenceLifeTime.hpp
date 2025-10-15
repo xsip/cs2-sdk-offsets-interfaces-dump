@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_SequenceLifeTime : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			float32 m_flFramerate; // 0x1c8 | Schema_Builtin | Size: 0x4
+			float32 m_flFramerate; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_SequenceLifeTime, m_flFramerate) == 0x1C8, "m_flFramerate in C_INIT_SequenceLifeTime should be at offset 0x1C8");
-		static_assert(sizeof(CS2::particles::C_INIT_SequenceLifeTime) == 0x1D0, "C_INIT_SequenceLifeTime size should be 0x1D0");
+		static_assert(offsetof(CS2::particles::C_INIT_SequenceLifeTime, m_flFramerate) == 0x1D8, "m_flFramerate in C_INIT_SequenceLifeTime should be at offset 0x1D8");
+		static_assert(sizeof(CS2::particles::C_INIT_SequenceLifeTime) == 0x1E0, "C_INIT_SequenceLifeTime size should be 0x1E0");
 	}
 }

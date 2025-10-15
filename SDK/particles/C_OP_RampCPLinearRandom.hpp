@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RampCPLinearRandom : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nOutControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecRateMin; // 0x1cc | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecRateMax; // 0x1d8 | Schema_Atomic | Size: 0xc
+			int32_t m_nOutControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecRateMin; // 0x1dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecRateMax; // 0x1e8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RampCPLinearRandom, m_nOutControlPointNumber) == 0x1C8, "m_nOutControlPointNumber in C_OP_RampCPLinearRandom should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RampCPLinearRandom, m_vecRateMin) == 0x1CC, "m_vecRateMin in C_OP_RampCPLinearRandom should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RampCPLinearRandom, m_vecRateMax) == 0x1D8, "m_vecRateMax in C_OP_RampCPLinearRandom should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_OP_RampCPLinearRandom) == 0x1E8, "C_OP_RampCPLinearRandom size should be 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RampCPLinearRandom, m_nOutControlPointNumber) == 0x1D8, "m_nOutControlPointNumber in C_OP_RampCPLinearRandom should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RampCPLinearRandom, m_vecRateMin) == 0x1DC, "m_vecRateMin in C_OP_RampCPLinearRandom should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RampCPLinearRandom, m_vecRateMax) == 0x1E8, "m_vecRateMax in C_OP_RampCPLinearRandom should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_OP_RampCPLinearRandom) == 0x1F8, "C_OP_RampCPLinearRandom size should be 0x1F8");
 	}
 }

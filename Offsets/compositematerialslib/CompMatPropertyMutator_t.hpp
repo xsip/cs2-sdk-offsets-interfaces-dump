@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace compositematerialslib {
-			// Class size: 0x380
+			// Class size: 0x390
 			namespace CompMatPropertyMutator_t /**/ {
 				constexpr std::ptrdiff_t m_bEnabled = 0x0; // bool m_bEnabled; |  0x0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nMutatorCommandType = 0x4; // compositematerialslib::CompMatPropertyMutatorType_t m_nMutatorCommandType; |  Schema_DeclaredEnum | Size: 0x4
@@ -27,17 +27,18 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_strGenerateTexture_InitialContainer = 0x2f8; // GlobalTypes::CUtlString m_strGenerateTexture_InitialContainer; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nResolution = 0x300; // int32_t m_nResolution; |  0x300 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsScratchTarget = 0x304; // bool m_bIsScratchTarget; |  0x304 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSplatDebugInfo = 0x305; // bool m_bSplatDebugInfo; |  0x305 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCaptureInRenderDoc = 0x306; // bool m_bCaptureInRenderDoc; |  0x306 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecTexGenInstructions = 0x308; // GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecTexGenInstructions; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecConditionalMutators = 0x320; // GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecConditionalMutators; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_strPopInputQueue_Container = 0x338; // GlobalTypes::CUtlString m_strPopInputQueue_Container; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strDrawText_InputContainerSrc = 0x340; // GlobalTypes::CUtlString m_strDrawText_InputContainerSrc; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strDrawText_InputContainerProperty = 0x348; // GlobalTypes::CUtlString m_strDrawText_InputContainerProperty; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecDrawText_Position = 0x350; // GlobalTypes::Vector2D m_vecDrawText_Position; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_colDrawText_Color = 0x358; // GlobalTypes::Color m_colDrawText_Color; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_strDrawText_Font = 0x360; // GlobalTypes::CUtlString m_strDrawText_Font; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecConditions = 0x368; // GlobalTypes::CUtlVector< compositematerialslib::CompMatMutatorCondition_t > m_vecConditions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_strCompressionFormat = 0x308; // GlobalTypes::CUtlString m_strCompressionFormat; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bSplatDebugInfo = 0x310; // bool m_bSplatDebugInfo; |  0x310 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCaptureInRenderDoc = 0x311; // bool m_bCaptureInRenderDoc; |  0x311 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecTexGenInstructions = 0x318; // GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecTexGenInstructions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecConditionalMutators = 0x330; // GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecConditionalMutators; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_strPopInputQueue_Container = 0x348; // GlobalTypes::CUtlString m_strPopInputQueue_Container; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strDrawText_InputContainerSrc = 0x350; // GlobalTypes::CUtlString m_strDrawText_InputContainerSrc; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strDrawText_InputContainerProperty = 0x358; // GlobalTypes::CUtlString m_strDrawText_InputContainerProperty; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecDrawText_Position = 0x360; // GlobalTypes::Vector2D m_vecDrawText_Position; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_colDrawText_Color = 0x368; // GlobalTypes::Color m_colDrawText_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_strDrawText_Font = 0x370; // GlobalTypes::CUtlString m_strDrawText_Font; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecConditions = 0x378; // GlobalTypes::CUtlVector< compositematerialslib::CompMatMutatorCondition_t > m_vecConditions; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

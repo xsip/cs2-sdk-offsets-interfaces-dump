@@ -14,27 +14,27 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderAsModels : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			// GlobalTypes::CUtlVector< particles::ModelReference_t > m_ModelList; // 0x210 | Schema_Atomic | Size: 0x18
-			char  m_ModelList[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< particles::ModelReference_t > m_ModelList; // 0x220 | Schema_Atomic | Size: 0x18
+			char  m_ModelList[0x18]; // 0x220 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
-			float32 m_flModelScale; // 0x22c | Schema_Builtin | Size: 0x4
-			bool m_bFitToModelSize; // 0x230 | Schema_Builtin | Size: 0x1
-			bool m_bNonUniformScaling; // 0x231 | Schema_Builtin | Size: 0x1
+			float32 m_flModelScale; // 0x23c | Schema_Builtin | Size: 0x4
+			bool m_bFitToModelSize; // 0x240 | Schema_Builtin | Size: 0x1
+			bool m_bNonUniformScaling; // 0x241 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nXAxisScalingAttribute; // 0x234 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nYAxisScalingAttribute; // 0x238 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nZAxisScalingAttribute; // 0x23c | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nSizeCullBloat; // 0x240 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nXAxisScalingAttribute; // 0x244 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nYAxisScalingAttribute; // 0x248 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nZAxisScalingAttribute; // 0x24c | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nSizeCullBloat; // 0x250 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_ModelList) == 0x210, "m_ModelList in C_OP_RenderAsModels should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_flModelScale) == 0x22C, "m_flModelScale in C_OP_RenderAsModels should be at offset 0x22C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_bFitToModelSize) == 0x230, "m_bFitToModelSize in C_OP_RenderAsModels should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_bNonUniformScaling) == 0x231, "m_bNonUniformScaling in C_OP_RenderAsModels should be at offset 0x231");
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nXAxisScalingAttribute) == 0x234, "m_nXAxisScalingAttribute in C_OP_RenderAsModels should be at offset 0x234");
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nYAxisScalingAttribute) == 0x238, "m_nYAxisScalingAttribute in C_OP_RenderAsModels should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nZAxisScalingAttribute) == 0x23C, "m_nZAxisScalingAttribute in C_OP_RenderAsModels should be at offset 0x23C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nSizeCullBloat) == 0x240, "m_nSizeCullBloat in C_OP_RenderAsModels should be at offset 0x240");
-		static_assert(sizeof(CS2::particles::C_OP_RenderAsModels) == 0x248, "C_OP_RenderAsModels size should be 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_ModelList) == 0x220, "m_ModelList in C_OP_RenderAsModels should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_flModelScale) == 0x23C, "m_flModelScale in C_OP_RenderAsModels should be at offset 0x23C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_bFitToModelSize) == 0x240, "m_bFitToModelSize in C_OP_RenderAsModels should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_bNonUniformScaling) == 0x241, "m_bNonUniformScaling in C_OP_RenderAsModels should be at offset 0x241");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nXAxisScalingAttribute) == 0x244, "m_nXAxisScalingAttribute in C_OP_RenderAsModels should be at offset 0x244");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nYAxisScalingAttribute) == 0x248, "m_nYAxisScalingAttribute in C_OP_RenderAsModels should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nZAxisScalingAttribute) == 0x24C, "m_nZAxisScalingAttribute in C_OP_RenderAsModels should be at offset 0x24C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nSizeCullBloat) == 0x250, "m_nSizeCullBloat in C_OP_RenderAsModels should be at offset 0x250");
+		static_assert(sizeof(CS2::particles::C_OP_RenderAsModels) == 0x258, "C_OP_RenderAsModels size should be 0x258");
 	}
 }

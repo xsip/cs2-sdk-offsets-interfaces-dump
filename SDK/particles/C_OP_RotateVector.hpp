@@ -15,22 +15,22 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RotateVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecRotAxisMin; // 0x1c4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecRotAxisMax; // 0x1d0 | Schema_Atomic | Size: 0xc
-			float32 m_flRotRateMin; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flRotRateMax; // 0x1e0 | Schema_Builtin | Size: 0x4
-			bool m_bNormalize; // 0x1e4 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecRotAxisMin; // 0x1d4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecRotAxisMax; // 0x1e0 | Schema_Atomic | Size: 0xc
+			float32 m_flRotRateMin; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flRotRateMax; // 0x1f0 | Schema_Builtin | Size: 0x4
+			bool m_bNormalize; // 0x1f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particleslib::CPerParticleFloatInput m_flScale; // 0x1e8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flScale; // 0x1f8 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_RotateVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_vecRotAxisMin) == 0x1C4, "m_vecRotAxisMin in C_OP_RotateVector should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_vecRotAxisMax) == 0x1D0, "m_vecRotAxisMax in C_OP_RotateVector should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_flRotRateMin) == 0x1DC, "m_flRotRateMin in C_OP_RotateVector should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_flRotRateMax) == 0x1E0, "m_flRotRateMax in C_OP_RotateVector should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_bNormalize) == 0x1E4, "m_bNormalize in C_OP_RotateVector should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_flScale) == 0x1E8, "m_flScale in C_OP_RotateVector should be at offset 0x1E8");
-		static_assert(sizeof(CS2::particles::C_OP_RotateVector) == 0x348, "C_OP_RotateVector size should be 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_RotateVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_vecRotAxisMin) == 0x1D4, "m_vecRotAxisMin in C_OP_RotateVector should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_vecRotAxisMax) == 0x1E0, "m_vecRotAxisMax in C_OP_RotateVector should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_flRotRateMin) == 0x1EC, "m_flRotRateMin in C_OP_RotateVector should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_flRotRateMax) == 0x1F0, "m_flRotRateMax in C_OP_RotateVector should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_bNormalize) == 0x1F4, "m_bNormalize in C_OP_RotateVector should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_flScale) == 0x1F8, "m_flScale in C_OP_RotateVector should be at offset 0x1F8");
+		static_assert(sizeof(CS2::particles::C_OP_RotateVector) == 0x368, "C_OP_RotateVector size should be 0x368");
 	}
 }

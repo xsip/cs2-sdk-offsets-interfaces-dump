@@ -17,39 +17,39 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_PositionLock : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CParticleTransformInput m_TransformInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x68
-			float32 m_flStartTime_min; // 0x228 | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime_max; // 0x22c | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime_exp; // 0x230 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_min; // 0x234 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_max; // 0x238 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_exp; // 0x23c | Schema_Builtin | Size: 0x4
-			float32 m_flRange; // 0x240 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleTransformInput m_TransformInput; // 0x1d0 | Schema_DeclaredClass | Size: 0x68
+			float32 m_flStartTime_min; // 0x238 | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime_max; // 0x23c | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime_exp; // 0x240 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_min; // 0x244 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_max; // 0x248 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_exp; // 0x24c | Schema_Builtin | Size: 0x4
+			float32 m_flRange; // 0x250 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flRangeBias; // 0x248 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flJumpThreshold; // 0x3a8 | Schema_Builtin | Size: 0x4
-			float32 m_flPrevPosScale; // 0x3ac | Schema_Builtin | Size: 0x4
-			bool m_bLockRot; // 0x3b0 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flRangeBias; // 0x258 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flJumpThreshold; // 0x3c8 | Schema_Builtin | Size: 0x4
+			float32 m_flPrevPosScale; // 0x3cc | Schema_Builtin | Size: 0x4
+			bool m_bLockRot; // 0x3d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CParticleCollectionVecInput m_vecScale; // 0x3b8 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xa30 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutputPrev; // 0xa34 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecScale; // 0x3d8 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xa90 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutputPrev; // 0xa94 | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_TransformInput) == 0x1C0, "m_TransformInput in C_OP_PositionLock should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_min) == 0x228, "m_flStartTime_min in C_OP_PositionLock should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_max) == 0x22C, "m_flStartTime_max in C_OP_PositionLock should be at offset 0x22C");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_exp) == 0x230, "m_flStartTime_exp in C_OP_PositionLock should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flEndTime_min) == 0x234, "m_flEndTime_min in C_OP_PositionLock should be at offset 0x234");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flEndTime_max) == 0x238, "m_flEndTime_max in C_OP_PositionLock should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flEndTime_exp) == 0x23C, "m_flEndTime_exp in C_OP_PositionLock should be at offset 0x23C");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flRange) == 0x240, "m_flRange in C_OP_PositionLock should be at offset 0x240");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flRangeBias) == 0x248, "m_flRangeBias in C_OP_PositionLock should be at offset 0x248");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flJumpThreshold) == 0x3A8, "m_flJumpThreshold in C_OP_PositionLock should be at offset 0x3A8");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flPrevPosScale) == 0x3AC, "m_flPrevPosScale in C_OP_PositionLock should be at offset 0x3AC");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_bLockRot) == 0x3B0, "m_bLockRot in C_OP_PositionLock should be at offset 0x3B0");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_vecScale) == 0x3B8, "m_vecScale in C_OP_PositionLock should be at offset 0x3B8");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_nFieldOutput) == 0xA30, "m_nFieldOutput in C_OP_PositionLock should be at offset 0xA30");
-		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_nFieldOutputPrev) == 0xA34, "m_nFieldOutputPrev in C_OP_PositionLock should be at offset 0xA34");
-		static_assert(sizeof(CS2::particles::C_OP_PositionLock) == 0xA38, "C_OP_PositionLock size should be 0xA38");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_TransformInput) == 0x1D0, "m_TransformInput in C_OP_PositionLock should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_min) == 0x238, "m_flStartTime_min in C_OP_PositionLock should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_max) == 0x23C, "m_flStartTime_max in C_OP_PositionLock should be at offset 0x23C");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_exp) == 0x240, "m_flStartTime_exp in C_OP_PositionLock should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flEndTime_min) == 0x244, "m_flEndTime_min in C_OP_PositionLock should be at offset 0x244");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flEndTime_max) == 0x248, "m_flEndTime_max in C_OP_PositionLock should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flEndTime_exp) == 0x24C, "m_flEndTime_exp in C_OP_PositionLock should be at offset 0x24C");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flRange) == 0x250, "m_flRange in C_OP_PositionLock should be at offset 0x250");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flRangeBias) == 0x258, "m_flRangeBias in C_OP_PositionLock should be at offset 0x258");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flJumpThreshold) == 0x3C8, "m_flJumpThreshold in C_OP_PositionLock should be at offset 0x3C8");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flPrevPosScale) == 0x3CC, "m_flPrevPosScale in C_OP_PositionLock should be at offset 0x3CC");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_bLockRot) == 0x3D0, "m_bLockRot in C_OP_PositionLock should be at offset 0x3D0");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_vecScale) == 0x3D8, "m_vecScale in C_OP_PositionLock should be at offset 0x3D8");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_nFieldOutput) == 0xA90, "m_nFieldOutput in C_OP_PositionLock should be at offset 0xA90");
+		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_nFieldOutputPrev) == 0xA94, "m_nFieldOutputPrev in C_OP_PositionLock should be at offset 0xA94");
+		static_assert(sizeof(CS2::particles::C_OP_PositionLock) == 0xA98, "C_OP_PositionLock size should be 0xA98");
 	}
 }

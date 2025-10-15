@@ -17,87 +17,87 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrackTrain : public CS2::server::CBaseModelEntity {
 		public:
-			// server::CHandle< server::CPathTrack > m_ppath; // 0x7f0 | Schema_Atomic | Size: 0x4
-			char  m_ppath[0x4]; // 0x7f0 | Schema_Atomic | Size: 0x4
-			float32 m_length; // 0x7f4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vPosPrev; // 0x7f8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angPrev; // 0x804 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_controlMins; // 0x810 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_controlMaxs; // 0x81c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_lastBlockPos; // 0x828 | Schema_Atomic | Size: 0xc
-			int32_t m_lastBlockTick; // 0x834 | Schema_Builtin | Size: 0x4
-			float32 m_flVolume; // 0x838 | Schema_Builtin | Size: 0x4
-			float32 m_flBank; // 0x83c | Schema_Builtin | Size: 0x4
-			float32 m_oldSpeed; // 0x840 | Schema_Builtin | Size: 0x4
-			float32 m_flBlockDamage; // 0x844 | Schema_Builtin | Size: 0x4
-			float32 m_height; // 0x848 | Schema_Builtin | Size: 0x4
-			float32 m_maxSpeed; // 0x84c | Schema_Builtin | Size: 0x4
-			float32 m_dir; // 0x850 | Schema_Builtin | Size: 0x4
+			// server::CHandle< server::CPathTrack > m_ppath; // 0x7d8 | Schema_Atomic | Size: 0x4
+			char  m_ppath[0x4]; // 0x7d8 | Schema_Atomic | Size: 0x4
+			float32 m_length; // 0x7dc | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vPosPrev; // 0x7e0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angPrev; // 0x7ec | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_controlMins; // 0x7f8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_controlMaxs; // 0x804 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_lastBlockPos; // 0x810 | Schema_Atomic | Size: 0xc
+			int32_t m_lastBlockTick; // 0x81c | Schema_Builtin | Size: 0x4
+			float32 m_flVolume; // 0x820 | Schema_Builtin | Size: 0x4
+			float32 m_flBank; // 0x824 | Schema_Builtin | Size: 0x4
+			float32 m_oldSpeed; // 0x828 | Schema_Builtin | Size: 0x4
+			float32 m_flBlockDamage; // 0x82c | Schema_Builtin | Size: 0x4
+			float32 m_height; // 0x830 | Schema_Builtin | Size: 0x4
+			float32 m_maxSpeed; // 0x834 | Schema_Builtin | Size: 0x4
+			float32 m_dir; // 0x838 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszSoundMove; // 0x858 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSoundMovePing; // 0x860 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSoundStart; // 0x868 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSoundStop; // 0x870 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_strPathTarget; // 0x878 | Schema_Atomic | Size: 0x8
-			float32 m_flMoveSoundMinDuration; // 0x880 | Schema_Builtin | Size: 0x4
-			float32 m_flMoveSoundMaxDuration; // 0x884 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flNextMoveSoundTime; // 0x888 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flMoveSoundMinPitch; // 0x88c | Schema_Builtin | Size: 0x4
-			float32 m_flMoveSoundMaxPitch; // 0x890 | Schema_Builtin | Size: 0x4
-			server::TrainOrientationType_t m_eOrientationType; // 0x894 | Schema_DeclaredEnum | Size: 0x4
-			server::TrainVelocityType_t m_eVelocityType; // 0x898 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszSoundMove; // 0x840 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSoundMovePing; // 0x848 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSoundStart; // 0x850 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSoundStop; // 0x858 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_strPathTarget; // 0x860 | Schema_Atomic | Size: 0x8
+			float32 m_flMoveSoundMinDuration; // 0x868 | Schema_Builtin | Size: 0x4
+			float32 m_flMoveSoundMaxDuration; // 0x86c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flNextMoveSoundTime; // 0x870 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flMoveSoundMinPitch; // 0x874 | Schema_Builtin | Size: 0x4
+			float32 m_flMoveSoundMaxPitch; // 0x878 | Schema_Builtin | Size: 0x4
+			server::TrainOrientationType_t m_eOrientationType; // 0x87c | Schema_DeclaredEnum | Size: 0x4
+			server::TrainVelocityType_t m_eVelocityType; // 0x880 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x14);
-			entity2::CEntityIOOutput m_OnStart; // 0x8b0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnNext; // 0x8d8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnArrivedAtDestinationNode; // 0x900 | Schema_DeclaredClass | Size: 0x28
-			bool m_bManualSpeedChanges; // 0x928 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnStart; // 0x898 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnNext; // 0x8c0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnArrivedAtDestinationNode; // 0x8e8 | Schema_DeclaredClass | Size: 0x28
+			bool m_bManualSpeedChanges; // 0x910 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flDesiredSpeed; // 0x92c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flSpeedChangeTime; // 0x930 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flAccelSpeed; // 0x934 | Schema_Builtin | Size: 0x4
-			float32 m_flDecelSpeed; // 0x938 | Schema_Builtin | Size: 0x4
-			bool m_bAccelToSpeed; // 0x93c | Schema_Builtin | Size: 0x1
+			float32 m_flDesiredSpeed; // 0x914 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flSpeedChangeTime; // 0x918 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flAccelSpeed; // 0x91c | Schema_Builtin | Size: 0x4
+			float32 m_flDecelSpeed; // 0x920 | Schema_Builtin | Size: 0x4
+			bool m_bAccelToSpeed; // 0x924 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_flNextMPSoundTime; // 0x940 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flNextMPSoundTime; // 0x928 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_ppath) == 0x7F0, "m_ppath in CFuncTrackTrain should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_length) == 0x7F4, "m_length in CFuncTrackTrain should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_vPosPrev) == 0x7F8, "m_vPosPrev in CFuncTrackTrain should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_angPrev) == 0x804, "m_angPrev in CFuncTrackTrain should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_controlMins) == 0x810, "m_controlMins in CFuncTrackTrain should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_controlMaxs) == 0x81C, "m_controlMaxs in CFuncTrackTrain should be at offset 0x81C");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_lastBlockPos) == 0x828, "m_lastBlockPos in CFuncTrackTrain should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_lastBlockTick) == 0x834, "m_lastBlockTick in CFuncTrackTrain should be at offset 0x834");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flVolume) == 0x838, "m_flVolume in CFuncTrackTrain should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flBank) == 0x83C, "m_flBank in CFuncTrackTrain should be at offset 0x83C");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_oldSpeed) == 0x840, "m_oldSpeed in CFuncTrackTrain should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flBlockDamage) == 0x844, "m_flBlockDamage in CFuncTrackTrain should be at offset 0x844");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_height) == 0x848, "m_height in CFuncTrackTrain should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_maxSpeed) == 0x84C, "m_maxSpeed in CFuncTrackTrain should be at offset 0x84C");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_dir) == 0x850, "m_dir in CFuncTrackTrain should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundMove) == 0x858, "m_iszSoundMove in CFuncTrackTrain should be at offset 0x858");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundMovePing) == 0x860, "m_iszSoundMovePing in CFuncTrackTrain should be at offset 0x860");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundStart) == 0x868, "m_iszSoundStart in CFuncTrackTrain should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundStop) == 0x870, "m_iszSoundStop in CFuncTrackTrain should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_strPathTarget) == 0x878, "m_strPathTarget in CFuncTrackTrain should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMinDuration) == 0x880, "m_flMoveSoundMinDuration in CFuncTrackTrain should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMaxDuration) == 0x884, "m_flMoveSoundMaxDuration in CFuncTrackTrain should be at offset 0x884");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flNextMoveSoundTime) == 0x888, "m_flNextMoveSoundTime in CFuncTrackTrain should be at offset 0x888");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMinPitch) == 0x88C, "m_flMoveSoundMinPitch in CFuncTrackTrain should be at offset 0x88C");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMaxPitch) == 0x890, "m_flMoveSoundMaxPitch in CFuncTrackTrain should be at offset 0x890");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_eOrientationType) == 0x894, "m_eOrientationType in CFuncTrackTrain should be at offset 0x894");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_eVelocityType) == 0x898, "m_eVelocityType in CFuncTrackTrain should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_OnStart) == 0x8B0, "m_OnStart in CFuncTrackTrain should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_OnNext) == 0x8D8, "m_OnNext in CFuncTrackTrain should be at offset 0x8D8");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_OnArrivedAtDestinationNode) == 0x900, "m_OnArrivedAtDestinationNode in CFuncTrackTrain should be at offset 0x900");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_bManualSpeedChanges) == 0x928, "m_bManualSpeedChanges in CFuncTrackTrain should be at offset 0x928");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flDesiredSpeed) == 0x92C, "m_flDesiredSpeed in CFuncTrackTrain should be at offset 0x92C");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flSpeedChangeTime) == 0x930, "m_flSpeedChangeTime in CFuncTrackTrain should be at offset 0x930");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flAccelSpeed) == 0x934, "m_flAccelSpeed in CFuncTrackTrain should be at offset 0x934");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flDecelSpeed) == 0x938, "m_flDecelSpeed in CFuncTrackTrain should be at offset 0x938");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_bAccelToSpeed) == 0x93C, "m_bAccelToSpeed in CFuncTrackTrain should be at offset 0x93C");
-		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flNextMPSoundTime) == 0x940, "m_flNextMPSoundTime in CFuncTrackTrain should be at offset 0x940");
-		static_assert(sizeof(CS2::server::CFuncTrackTrain) == 0x948, "CFuncTrackTrain size should be 0x948");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_ppath) == 0x7D8, "m_ppath in CFuncTrackTrain should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_length) == 0x7DC, "m_length in CFuncTrackTrain should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_vPosPrev) == 0x7E0, "m_vPosPrev in CFuncTrackTrain should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_angPrev) == 0x7EC, "m_angPrev in CFuncTrackTrain should be at offset 0x7EC");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_controlMins) == 0x7F8, "m_controlMins in CFuncTrackTrain should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_controlMaxs) == 0x804, "m_controlMaxs in CFuncTrackTrain should be at offset 0x804");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_lastBlockPos) == 0x810, "m_lastBlockPos in CFuncTrackTrain should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_lastBlockTick) == 0x81C, "m_lastBlockTick in CFuncTrackTrain should be at offset 0x81C");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flVolume) == 0x820, "m_flVolume in CFuncTrackTrain should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flBank) == 0x824, "m_flBank in CFuncTrackTrain should be at offset 0x824");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_oldSpeed) == 0x828, "m_oldSpeed in CFuncTrackTrain should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flBlockDamage) == 0x82C, "m_flBlockDamage in CFuncTrackTrain should be at offset 0x82C");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_height) == 0x830, "m_height in CFuncTrackTrain should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_maxSpeed) == 0x834, "m_maxSpeed in CFuncTrackTrain should be at offset 0x834");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_dir) == 0x838, "m_dir in CFuncTrackTrain should be at offset 0x838");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundMove) == 0x840, "m_iszSoundMove in CFuncTrackTrain should be at offset 0x840");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundMovePing) == 0x848, "m_iszSoundMovePing in CFuncTrackTrain should be at offset 0x848");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundStart) == 0x850, "m_iszSoundStart in CFuncTrackTrain should be at offset 0x850");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_iszSoundStop) == 0x858, "m_iszSoundStop in CFuncTrackTrain should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_strPathTarget) == 0x860, "m_strPathTarget in CFuncTrackTrain should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMinDuration) == 0x868, "m_flMoveSoundMinDuration in CFuncTrackTrain should be at offset 0x868");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMaxDuration) == 0x86C, "m_flMoveSoundMaxDuration in CFuncTrackTrain should be at offset 0x86C");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flNextMoveSoundTime) == 0x870, "m_flNextMoveSoundTime in CFuncTrackTrain should be at offset 0x870");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMinPitch) == 0x874, "m_flMoveSoundMinPitch in CFuncTrackTrain should be at offset 0x874");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flMoveSoundMaxPitch) == 0x878, "m_flMoveSoundMaxPitch in CFuncTrackTrain should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_eOrientationType) == 0x87C, "m_eOrientationType in CFuncTrackTrain should be at offset 0x87C");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_eVelocityType) == 0x880, "m_eVelocityType in CFuncTrackTrain should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_OnStart) == 0x898, "m_OnStart in CFuncTrackTrain should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_OnNext) == 0x8C0, "m_OnNext in CFuncTrackTrain should be at offset 0x8C0");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_OnArrivedAtDestinationNode) == 0x8E8, "m_OnArrivedAtDestinationNode in CFuncTrackTrain should be at offset 0x8E8");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_bManualSpeedChanges) == 0x910, "m_bManualSpeedChanges in CFuncTrackTrain should be at offset 0x910");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flDesiredSpeed) == 0x914, "m_flDesiredSpeed in CFuncTrackTrain should be at offset 0x914");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flSpeedChangeTime) == 0x918, "m_flSpeedChangeTime in CFuncTrackTrain should be at offset 0x918");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flAccelSpeed) == 0x91C, "m_flAccelSpeed in CFuncTrackTrain should be at offset 0x91C");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flDecelSpeed) == 0x920, "m_flDecelSpeed in CFuncTrackTrain should be at offset 0x920");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_bAccelToSpeed) == 0x924, "m_bAccelToSpeed in CFuncTrackTrain should be at offset 0x924");
+		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flNextMPSoundTime) == 0x928, "m_flNextMPSoundTime in CFuncTrackTrain should be at offset 0x928");
+		static_assert(sizeof(CS2::server::CFuncTrackTrain) == 0x930, "CFuncTrackTrain size should be 0x930");
 	}
 }

@@ -8,41 +8,41 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x6D0
+			// Class size: 0x6E0
 			namespace C_OP_ControlpointLight /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flScale = 0x1c0; // float32 m_flScale; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nControlPoint1 = 0x650; // int32_t m_nControlPoint1; |  0x650 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nControlPoint2 = 0x654; // int32_t m_nControlPoint2; |  0x654 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nControlPoint3 = 0x658; // int32_t m_nControlPoint3; |  0x658 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nControlPoint4 = 0x65c; // int32_t m_nControlPoint4; |  0x65c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCPOffset1 = 0x660; // GlobalTypes::Vector m_vecCPOffset1; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCPOffset2 = 0x66c; // GlobalTypes::Vector m_vecCPOffset2; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCPOffset3 = 0x678; // GlobalTypes::Vector m_vecCPOffset3; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCPOffset4 = 0x684; // GlobalTypes::Vector m_vecCPOffset4; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_LightFiftyDist1 = 0x690; // float32 m_LightFiftyDist1; |  0x690 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightZeroDist1 = 0x694; // float32 m_LightZeroDist1; |  0x694 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightFiftyDist2 = 0x698; // float32 m_LightFiftyDist2; |  0x698 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightZeroDist2 = 0x69c; // float32 m_LightZeroDist2; |  0x69c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightFiftyDist3 = 0x6a0; // float32 m_LightFiftyDist3; |  0x6a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightZeroDist3 = 0x6a4; // float32 m_LightZeroDist3; |  0x6a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightFiftyDist4 = 0x6a8; // float32 m_LightFiftyDist4; |  0x6a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightZeroDist4 = 0x6ac; // float32 m_LightZeroDist4; |  0x6ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightColor1 = 0x6b0; // GlobalTypes::Color m_LightColor1; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_LightColor2 = 0x6b4; // GlobalTypes::Color m_LightColor2; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_LightColor3 = 0x6b8; // GlobalTypes::Color m_LightColor3; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_LightColor4 = 0x6bc; // GlobalTypes::Color m_LightColor4; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bLightType1 = 0x6c0; // bool m_bLightType1; |  0x6c0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLightType2 = 0x6c1; // bool m_bLightType2; |  0x6c1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLightType3 = 0x6c2; // bool m_bLightType3; |  0x6c2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLightType4 = 0x6c3; // bool m_bLightType4; |  0x6c3 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLightDynamic1 = 0x6c4; // bool m_bLightDynamic1; |  0x6c4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLightDynamic2 = 0x6c5; // bool m_bLightDynamic2; |  0x6c5 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLightDynamic3 = 0x6c6; // bool m_bLightDynamic3; |  0x6c6 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLightDynamic4 = 0x6c7; // bool m_bLightDynamic4; |  0x6c7 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseNormal = 0x6c8; // bool m_bUseNormal; |  0x6c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseHLambert = 0x6c9; // bool m_bUseHLambert; |  0x6c9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bClampLowerRange = 0x6ce; // bool m_bClampLowerRange; |  0x6ce | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bClampUpperRange = 0x6cf; // bool m_bClampUpperRange; |  0x6cf | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flScale = 0x1d0; // float32 m_flScale; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPoint1 = 0x660; // int32_t m_nControlPoint1; |  0x660 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPoint2 = 0x664; // int32_t m_nControlPoint2; |  0x664 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPoint3 = 0x668; // int32_t m_nControlPoint3; |  0x668 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPoint4 = 0x66c; // int32_t m_nControlPoint4; |  0x66c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecCPOffset1 = 0x670; // GlobalTypes::Vector m_vecCPOffset1; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCPOffset2 = 0x67c; // GlobalTypes::Vector m_vecCPOffset2; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCPOffset3 = 0x688; // GlobalTypes::Vector m_vecCPOffset3; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCPOffset4 = 0x694; // GlobalTypes::Vector m_vecCPOffset4; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_LightFiftyDist1 = 0x6a0; // float32 m_LightFiftyDist1; |  0x6a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightZeroDist1 = 0x6a4; // float32 m_LightZeroDist1; |  0x6a4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightFiftyDist2 = 0x6a8; // float32 m_LightFiftyDist2; |  0x6a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightZeroDist2 = 0x6ac; // float32 m_LightZeroDist2; |  0x6ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightFiftyDist3 = 0x6b0; // float32 m_LightFiftyDist3; |  0x6b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightZeroDist3 = 0x6b4; // float32 m_LightZeroDist3; |  0x6b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightFiftyDist4 = 0x6b8; // float32 m_LightFiftyDist4; |  0x6b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightZeroDist4 = 0x6bc; // float32 m_LightZeroDist4; |  0x6bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LightColor1 = 0x6c0; // GlobalTypes::Color m_LightColor1; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_LightColor2 = 0x6c4; // GlobalTypes::Color m_LightColor2; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_LightColor3 = 0x6c8; // GlobalTypes::Color m_LightColor3; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_LightColor4 = 0x6cc; // GlobalTypes::Color m_LightColor4; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bLightType1 = 0x6d0; // bool m_bLightType1; |  0x6d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLightType2 = 0x6d1; // bool m_bLightType2; |  0x6d1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLightType3 = 0x6d2; // bool m_bLightType3; |  0x6d2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLightType4 = 0x6d3; // bool m_bLightType4; |  0x6d3 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLightDynamic1 = 0x6d4; // bool m_bLightDynamic1; |  0x6d4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLightDynamic2 = 0x6d5; // bool m_bLightDynamic2; |  0x6d5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLightDynamic3 = 0x6d6; // bool m_bLightDynamic3; |  0x6d6 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLightDynamic4 = 0x6d7; // bool m_bLightDynamic4; |  0x6d7 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseNormal = 0x6d8; // bool m_bUseNormal; |  0x6d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseHLambert = 0x6d9; // bool m_bUseHLambert; |  0x6d9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bClampLowerRange = 0x6de; // bool m_bClampLowerRange; |  0x6de | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bClampUpperRange = 0x6df; // bool m_bClampUpperRange; |  0x6df | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

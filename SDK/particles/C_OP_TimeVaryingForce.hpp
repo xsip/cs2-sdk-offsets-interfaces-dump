@@ -13,15 +13,15 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_TimeVaryingForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			float32 m_flStartLerpTime; // 0x1d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_StartingForce; // 0x1d4 | Schema_Atomic | Size: 0xc
-			float32 m_flEndLerpTime; // 0x1e0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_EndingForce; // 0x1e4 | Schema_Atomic | Size: 0xc
+			float32 m_flStartLerpTime; // 0x1e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_StartingForce; // 0x1e4 | Schema_Atomic | Size: 0xc
+			float32 m_flEndLerpTime; // 0x1f0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_EndingForce; // 0x1f4 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_flStartLerpTime) == 0x1D0, "m_flStartLerpTime in C_OP_TimeVaryingForce should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_StartingForce) == 0x1D4, "m_StartingForce in C_OP_TimeVaryingForce should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_flEndLerpTime) == 0x1E0, "m_flEndLerpTime in C_OP_TimeVaryingForce should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_EndingForce) == 0x1E4, "m_EndingForce in C_OP_TimeVaryingForce should be at offset 0x1E4");
-		static_assert(sizeof(CS2::particles::C_OP_TimeVaryingForce) == 0x1F0, "C_OP_TimeVaryingForce size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_flStartLerpTime) == 0x1E0, "m_flStartLerpTime in C_OP_TimeVaryingForce should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_StartingForce) == 0x1E4, "m_StartingForce in C_OP_TimeVaryingForce should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_flEndLerpTime) == 0x1F0, "m_flEndLerpTime in C_OP_TimeVaryingForce should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_TimeVaryingForce, m_EndingForce) == 0x1F4, "m_EndingForce in C_OP_TimeVaryingForce should be at offset 0x1F4");
+		static_assert(sizeof(CS2::particles::C_OP_TimeVaryingForce) == 0x200, "C_OP_TimeVaryingForce size should be 0x200");
 	}
 }

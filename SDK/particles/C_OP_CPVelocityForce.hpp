@@ -14,12 +14,12 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CPVelocityForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flScale; // 0x1d8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flScale; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_CPVelocityForce, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_CPVelocityForce should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_CPVelocityForce, m_flScale) == 0x1D8, "m_flScale in C_OP_CPVelocityForce should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_OP_CPVelocityForce) == 0x338, "C_OP_CPVelocityForce size should be 0x338");
+		static_assert(offsetof(CS2::particles::C_OP_CPVelocityForce, m_nControlPointNumber) == 0x1E0, "m_nControlPointNumber in C_OP_CPVelocityForce should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_CPVelocityForce, m_flScale) == 0x1E8, "m_flScale in C_OP_CPVelocityForce should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_OP_CPVelocityForce) == 0x358, "C_OP_CPVelocityForce size should be 0x358");
 	}
 }

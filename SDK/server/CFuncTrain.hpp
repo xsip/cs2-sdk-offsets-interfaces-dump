@@ -14,23 +14,23 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrain : public CS2::server::CBasePlatTrain {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hCurrentTarget; // 0x898 | Schema_Atomic | Size: 0x4
-			char  m_hCurrentTarget[0x4]; // 0x898 | Schema_Atomic | Size: 0x4
-			bool m_activated; // 0x89c | Schema_Builtin | Size: 0x1
+			// server::CHandle< server::CBaseEntity > m_hCurrentTarget; // 0x880 | Schema_Atomic | Size: 0x4
+			char  m_hCurrentTarget[0x4]; // 0x880 | Schema_Atomic | Size: 0x4
+			bool m_activated; // 0x884 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CBaseEntity > m_hEnemy; // 0x8a0 | Schema_Atomic | Size: 0x4
-			char  m_hEnemy[0x4]; // 0x8a0 | Schema_Atomic | Size: 0x4
-			float32 m_flBlockDamage; // 0x8a4 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flNextBlockTime; // 0x8a8 | Schema_DeclaredClass | Size: 0x4
+			// server::CHandle< server::CBaseEntity > m_hEnemy; // 0x888 | Schema_Atomic | Size: 0x4
+			char  m_hEnemy[0x4]; // 0x888 | Schema_Atomic | Size: 0x4
+			float32 m_flBlockDamage; // 0x88c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flNextBlockTime; // 0x890 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszLastTarget; // 0x8b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszLastTarget; // 0x898 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CFuncTrain, m_hCurrentTarget) == 0x898, "m_hCurrentTarget in CFuncTrain should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CFuncTrain, m_activated) == 0x89C, "m_activated in CFuncTrain should be at offset 0x89C");
-		static_assert(offsetof(CS2::server::CFuncTrain, m_hEnemy) == 0x8A0, "m_hEnemy in CFuncTrain should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CFuncTrain, m_flBlockDamage) == 0x8A4, "m_flBlockDamage in CFuncTrain should be at offset 0x8A4");
-		static_assert(offsetof(CS2::server::CFuncTrain, m_flNextBlockTime) == 0x8A8, "m_flNextBlockTime in CFuncTrain should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CFuncTrain, m_iszLastTarget) == 0x8B0, "m_iszLastTarget in CFuncTrain should be at offset 0x8B0");
-		static_assert(sizeof(CS2::server::CFuncTrain) == 0x8B8, "CFuncTrain size should be 0x8B8");
+		static_assert(offsetof(CS2::server::CFuncTrain, m_hCurrentTarget) == 0x880, "m_hCurrentTarget in CFuncTrain should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CFuncTrain, m_activated) == 0x884, "m_activated in CFuncTrain should be at offset 0x884");
+		static_assert(offsetof(CS2::server::CFuncTrain, m_hEnemy) == 0x888, "m_hEnemy in CFuncTrain should be at offset 0x888");
+		static_assert(offsetof(CS2::server::CFuncTrain, m_flBlockDamage) == 0x88C, "m_flBlockDamage in CFuncTrain should be at offset 0x88C");
+		static_assert(offsetof(CS2::server::CFuncTrain, m_flNextBlockTime) == 0x890, "m_flNextBlockTime in CFuncTrain should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CFuncTrain, m_iszLastTarget) == 0x898, "m_iszLastTarget in CFuncTrain should be at offset 0x898");
+		static_assert(sizeof(CS2::server::CFuncTrain) == 0x8A0, "CFuncTrain size should be 0x8A0");
 	}
 }

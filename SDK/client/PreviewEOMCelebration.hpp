@@ -15,6 +15,7 @@ namespace CS2 {
 			PreviewEOMCelebration_GENDARMERIE_DEFEAT = 0xd,
 			PreviewEOMCelebration_GUERILLA = 0x7,
 			PreviewEOMCelebration_GUERILLA02 = 0x8,
+			PreviewEOMCelebration_INVALID = 0xffffffff,
 			PreviewEOMCelebration_MAE_DEFEAT = 0xe,
 			PreviewEOMCelebration_MASK_F = 0x6,
 			PreviewEOMCelebration_MUHLIK_DEFEAT = 0x15,

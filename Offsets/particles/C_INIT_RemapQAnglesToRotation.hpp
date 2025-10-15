@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x230
+			// Class size: 0x240
 			namespace C_INIT_RemapQAnglesToRotation /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_TransformInput = 0x1c8; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_TransformInput = 0x1d8; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
 			}
 		}
 	}

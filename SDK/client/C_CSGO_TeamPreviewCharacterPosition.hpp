@@ -23,7 +23,7 @@ namespace CS2 {
 			client::C_EconItemView m_agentItem; // 0x618 | Schema_DeclaredClass | Size: 0x478
 			client::C_EconItemView m_glovesItem; // 0xa90 | Schema_DeclaredClass | Size: 0x478
 			client::C_EconItemView m_weaponItem; // 0xf08 | Schema_DeclaredClass | Size: 0x478
-			S2_PAD(0x38); // End padding
+			S2_PAD(0x30); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_CSGO_TeamPreviewCharacterPosition, m_nVariant) == 0x5F8, "m_nVariant in C_CSGO_TeamPreviewCharacterPosition should be at offset 0x5F8");
 		static_assert(offsetof(CS2::client::C_CSGO_TeamPreviewCharacterPosition, m_nRandom) == 0x5FC, "m_nRandom in C_CSGO_TeamPreviewCharacterPosition should be at offset 0x5FC");
@@ -33,6 +33,6 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSGO_TeamPreviewCharacterPosition, m_agentItem) == 0x618, "m_agentItem in C_CSGO_TeamPreviewCharacterPosition should be at offset 0x618");
 		static_assert(offsetof(CS2::client::C_CSGO_TeamPreviewCharacterPosition, m_glovesItem) == 0xA90, "m_glovesItem in C_CSGO_TeamPreviewCharacterPosition should be at offset 0xA90");
 		static_assert(offsetof(CS2::client::C_CSGO_TeamPreviewCharacterPosition, m_weaponItem) == 0xF08, "m_weaponItem in C_CSGO_TeamPreviewCharacterPosition should be at offset 0xF08");
-		static_assert(sizeof(CS2::client::C_CSGO_TeamPreviewCharacterPosition) == 0x13B8, "C_CSGO_TeamPreviewCharacterPosition size should be 0x13B8");
+		static_assert(sizeof(CS2::client::C_CSGO_TeamPreviewCharacterPosition) == 0x13B0, "C_CSGO_TeamPreviewCharacterPosition size should be 0x13B0");
 	}
 }

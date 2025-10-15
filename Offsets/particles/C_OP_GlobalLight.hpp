@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1C8
+			// Class size: 0x1D8
 			namespace C_OP_GlobalLight /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flScale = 0x1c0; // float32 m_flScale; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bClampLowerRange = 0x1c4; // bool m_bClampLowerRange; |  0x1c4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bClampUpperRange = 0x1c5; // bool m_bClampUpperRange; |  0x1c5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flScale = 0x1d0; // float32 m_flScale; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bClampLowerRange = 0x1d4; // bool m_bClampLowerRange; |  0x1d4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bClampUpperRange = 0x1d5; // bool m_bClampUpperRange; |  0x1d5 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

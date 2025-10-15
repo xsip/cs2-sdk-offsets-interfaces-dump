@@ -13,15 +13,15 @@ namespace CS2 {
 	namespace particles {
 		class CGeneralSpin : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nSpinRateDegrees; // 0x1c0 | Schema_Builtin | Size: 0x4
-			int32_t m_nSpinRateMinDegrees; // 0x1c4 | Schema_Builtin | Size: 0x4
+			int32_t m_nSpinRateDegrees; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nSpinRateMinDegrees; // 0x1d4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_fSpinRateStopTime; // 0x1cc | Schema_Builtin | Size: 0x4
+			float32 m_fSpinRateStopTime; // 0x1dc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::particles::CGeneralSpin, m_nSpinRateDegrees) == 0x1C0, "m_nSpinRateDegrees in CGeneralSpin should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::CGeneralSpin, m_nSpinRateMinDegrees) == 0x1C4, "m_nSpinRateMinDegrees in CGeneralSpin should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::CGeneralSpin, m_fSpinRateStopTime) == 0x1CC, "m_fSpinRateStopTime in CGeneralSpin should be at offset 0x1CC");
-		static_assert(sizeof(CS2::particles::CGeneralSpin) == 0x1D8, "CGeneralSpin size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::CGeneralSpin, m_nSpinRateDegrees) == 0x1D0, "m_nSpinRateDegrees in CGeneralSpin should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::CGeneralSpin, m_nSpinRateMinDegrees) == 0x1D4, "m_nSpinRateMinDegrees in CGeneralSpin should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::CGeneralSpin, m_fSpinRateStopTime) == 0x1DC, "m_fSpinRateStopTime in CGeneralSpin should be at offset 0x1DC");
+		static_assert(sizeof(CS2::particles::CGeneralSpin) == 0x1E8, "CGeneralSpin size should be 0x1E8");
 	}
 }

@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x200
+			// Class size: 0x210
 			namespace C_OP_ColorInterpolateRandom /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_ColorFadeMin = 0x1c0; // GlobalTypes::Color m_ColorFadeMin; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_ColorFadeMax = 0x1dc; // GlobalTypes::Color m_ColorFadeMax; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeStartTime = 0x1ec; // float32 m_flFadeStartTime; |  0x1ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeEndTime = 0x1f0; // float32 m_flFadeEndTime; |  0x1f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1f4; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bEaseInOut = 0x1f8; // bool m_bEaseInOut; |  0x1f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_ColorFadeMin = 0x1d0; // GlobalTypes::Color m_ColorFadeMin; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_ColorFadeMax = 0x1ec; // GlobalTypes::Color m_ColorFadeMax; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeStartTime = 0x1fc; // float32 m_flFadeStartTime; |  0x1fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeEndTime = 0x200; // float32 m_flFadeEndTime; |  0x200 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x204; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bEaseInOut = 0x208; // bool m_bEaseInOut; |  0x208 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

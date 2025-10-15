@@ -14,18 +14,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_OscillateScalarSimple : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_Rate; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_Frequency; // 0x1c4 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nField; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flOscMult; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flOscAdd; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_Rate; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_Frequency; // 0x1d4 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nField; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flOscMult; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flOscAdd; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x2c); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_Rate) == 0x1C0, "m_Rate in C_OP_OscillateScalarSimple should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_Frequency) == 0x1C4, "m_Frequency in C_OP_OscillateScalarSimple should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_nField) == 0x1C8, "m_nField in C_OP_OscillateScalarSimple should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_flOscMult) == 0x1CC, "m_flOscMult in C_OP_OscillateScalarSimple should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_flOscAdd) == 0x1D0, "m_flOscAdd in C_OP_OscillateScalarSimple should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_OP_OscillateScalarSimple) == 0x200, "C_OP_OscillateScalarSimple size should be 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_Rate) == 0x1D0, "m_Rate in C_OP_OscillateScalarSimple should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_Frequency) == 0x1D4, "m_Frequency in C_OP_OscillateScalarSimple should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_nField) == 0x1D8, "m_nField in C_OP_OscillateScalarSimple should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_flOscMult) == 0x1DC, "m_flOscMult in C_OP_OscillateScalarSimple should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalarSimple, m_flOscAdd) == 0x1E0, "m_flOscAdd in C_OP_OscillateScalarSimple should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_OP_OscillateScalarSimple) == 0x210, "C_OP_OscillateScalarSimple size should be 0x210");
 	}
 }

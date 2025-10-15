@@ -16,17 +16,17 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MovementLoopInsideSphere : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nCP; // 0x1c0 | Schema_Builtin | Size: 0x4
+			int32_t m_nCP; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionVecInput m_vecScale; // 0x328 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleAttributeIndex_t m_nDistSqrAttr; // 0x9a0 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionVecInput m_vecScale; // 0x348 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleAttributeIndex_t m_nDistSqrAttr; // 0xa00 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_nCP) == 0x1C0, "m_nCP in C_OP_MovementLoopInsideSphere should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_flDistance) == 0x1C8, "m_flDistance in C_OP_MovementLoopInsideSphere should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_vecScale) == 0x328, "m_vecScale in C_OP_MovementLoopInsideSphere should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_nDistSqrAttr) == 0x9A0, "m_nDistSqrAttr in C_OP_MovementLoopInsideSphere should be at offset 0x9A0");
-		static_assert(sizeof(CS2::particles::C_OP_MovementLoopInsideSphere) == 0x9A8, "C_OP_MovementLoopInsideSphere size should be 0x9A8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_nCP) == 0x1D0, "m_nCP in C_OP_MovementLoopInsideSphere should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_flDistance) == 0x1D8, "m_flDistance in C_OP_MovementLoopInsideSphere should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_vecScale) == 0x348, "m_vecScale in C_OP_MovementLoopInsideSphere should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_nDistSqrAttr) == 0xA00, "m_nDistSqrAttr in C_OP_MovementLoopInsideSphere should be at offset 0xA00");
+		static_assert(sizeof(CS2::particles::C_OP_MovementLoopInsideSphere) == 0xA08, "C_OP_MovementLoopInsideSphere size should be 0xA08");
 	}
 }

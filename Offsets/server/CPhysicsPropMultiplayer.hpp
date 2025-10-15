@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xDF0
+			// Class size: 0xE00
 			namespace CPhysicsPropMultiplayer /*: public CS2::server::CPhysicsProp*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -14,9 +14,9 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetSimulationRate : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particleslib::CParticleCollectionFloatInput m_flSimulationScale; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flSimulationScale; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetSimulationRate, m_flSimulationScale) == 0x1C8, "m_flSimulationScale in C_OP_SetSimulationRate should be at offset 0x1C8");
-		static_assert(sizeof(CS2::particles::C_OP_SetSimulationRate) == 0x328, "C_OP_SetSimulationRate size should be 0x328");
+		static_assert(offsetof(CS2::particles::C_OP_SetSimulationRate, m_flSimulationScale) == 0x1D8, "m_flSimulationScale in C_OP_SetSimulationRate should be at offset 0x1D8");
+		static_assert(sizeof(CS2::particles::C_OP_SetSimulationRate) == 0x348, "C_OP_SetSimulationRate size should be 0x348");
 	}
 }

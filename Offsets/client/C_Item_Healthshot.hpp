@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1FA0
+			// Class size: 0x1F90
 			namespace C_Item_Healthshot /*: public CS2::client::C_WeaponBaseItem*/ {
 				// NO SCHEMA DATA FOUND!
 			}

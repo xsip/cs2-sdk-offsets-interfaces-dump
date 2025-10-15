@@ -22,78 +22,78 @@ namespace CS2 {
 		class C_PlantedC4 : public CS2::client::CBaseAnimGraph {
 		public:
 			S2_PAD(0x8);
-			bool m_bBombTicking; // 0x1178 | Schema_Builtin | Size: 0x1
+			bool m_bBombTicking; // 0x1160 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nBombSite; // 0x117c | Schema_Builtin | Size: 0x4
-			int32_t m_nSourceSoundscapeHash; // 0x1180 | Schema_Builtin | Size: 0x4
+			int32_t m_nBombSite; // 0x1164 | Schema_Builtin | Size: 0x4
+			int32_t m_nSourceSoundscapeHash; // 0x1168 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			client::EntitySpottedState_t m_entitySpottedState; // 0x1188 | Schema_DeclaredClass | Size: 0x18
-			entity2::GameTime_t m_flNextGlow; // 0x11a0 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flNextBeep; // 0x11a4 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flC4Blow; // 0x11a8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bCannotBeDefused; // 0x11ac | Schema_Builtin | Size: 0x1
-			bool m_bHasExploded; // 0x11ad | Schema_Builtin | Size: 0x1
+			client::EntitySpottedState_t m_entitySpottedState; // 0x1170 | Schema_DeclaredClass | Size: 0x18
+			entity2::GameTime_t m_flNextGlow; // 0x1188 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flNextBeep; // 0x118c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flC4Blow; // 0x1190 | Schema_DeclaredClass | Size: 0x4
+			bool m_bCannotBeDefused; // 0x1194 | Schema_Builtin | Size: 0x1
+			bool m_bHasExploded; // 0x1195 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flTimerLength; // 0x11b0 | Schema_Builtin | Size: 0x4
-			bool m_bBeingDefused; // 0x11b4 | Schema_Builtin | Size: 0x1
+			float32 m_flTimerLength; // 0x1198 | Schema_Builtin | Size: 0x4
+			bool m_bBeingDefused; // 0x119c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_bTriggerWarning; // 0x11b8 | Schema_Builtin | Size: 0x4
-			float32 m_bExplodeWarning; // 0x11bc | Schema_Builtin | Size: 0x4
-			bool m_bC4Activated; // 0x11c0 | Schema_Builtin | Size: 0x1
-			bool m_bTenSecWarning; // 0x11c1 | Schema_Builtin | Size: 0x1
+			float32 m_bTriggerWarning; // 0x11a0 | Schema_Builtin | Size: 0x4
+			float32 m_bExplodeWarning; // 0x11a4 | Schema_Builtin | Size: 0x4
+			bool m_bC4Activated; // 0x11a8 | Schema_Builtin | Size: 0x1
+			bool m_bTenSecWarning; // 0x11a9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flDefuseLength; // 0x11c4 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flDefuseCountDown; // 0x11c8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bBombDefused; // 0x11cc | Schema_Builtin | Size: 0x1
+			float32 m_flDefuseLength; // 0x11ac | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flDefuseCountDown; // 0x11b0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bBombDefused; // 0x11b4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// client::CHandle< client::C_CSPlayerPawn > m_hBombDefuser; // 0x11d0 | Schema_Atomic | Size: 0x4
-			char  m_hBombDefuser[0x4]; // 0x11d0 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_CSPlayerPawn > m_hBombDefuser; // 0x11b8 | Schema_Atomic | Size: 0x4
+			char  m_hBombDefuser[0x4]; // 0x11b8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			client::C_AttributeContainer m_AttributeManager; // 0x11d8 | Schema_DeclaredClass | Size: 0x4d8
-			// client::CHandle< client::C_Multimeter > m_hDefuserMultimeter; // 0x16b0 | Schema_Atomic | Size: 0x4
-			char  m_hDefuserMultimeter[0x4]; // 0x16b0 | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_flNextRadarFlashTime; // 0x16b4 | Schema_DeclaredClass | Size: 0x4
-			bool m_bRadarFlash; // 0x16b8 | Schema_Builtin | Size: 0x1
+			client::C_AttributeContainer m_AttributeManager; // 0x11c0 | Schema_DeclaredClass | Size: 0x4d8
+			// client::CHandle< client::C_Multimeter > m_hDefuserMultimeter; // 0x1698 | Schema_Atomic | Size: 0x4
+			char  m_hDefuserMultimeter[0x4]; // 0x1698 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_flNextRadarFlashTime; // 0x169c | Schema_DeclaredClass | Size: 0x4
+			bool m_bRadarFlash; // 0x16a0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// client::CHandle< client::C_CSPlayerPawn > m_pBombDefuser; // 0x16bc | Schema_Atomic | Size: 0x4
-			char  m_pBombDefuser[0x4]; // 0x16bc | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_fLastDefuseTime; // 0x16c0 | Schema_DeclaredClass | Size: 0x4
+			// client::CHandle< client::C_CSPlayerPawn > m_pBombDefuser; // 0x16a4 | Schema_Atomic | Size: 0x4
+			char  m_pBombDefuser[0x4]; // 0x16a4 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_fLastDefuseTime; // 0x16a8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			client::CBasePlayerController* m_pPredictionOwner; // 0x16c8 | Schema_Ptr | Size: 0x8
-			GlobalTypes::Vector m_vecC4ExplodeSpectatePos; // 0x16d0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecC4ExplodeSpectateAng; // 0x16dc | Schema_Atomic | Size: 0xc
-			float32 m_flC4ExplodeSpectateDuration; // 0x16e8 | Schema_Builtin | Size: 0x4
+			client::CBasePlayerController* m_pPredictionOwner; // 0x16b0 | Schema_Ptr | Size: 0x8
+			GlobalTypes::Vector m_vecC4ExplodeSpectatePos; // 0x16b8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecC4ExplodeSpectateAng; // 0x16c4 | Schema_Atomic | Size: 0xc
+			float32 m_flC4ExplodeSpectateDuration; // 0x16d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bBombTicking) == 0x1178, "m_bBombTicking in C_PlantedC4 should be at offset 0x1178");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_nBombSite) == 0x117C, "m_nBombSite in C_PlantedC4 should be at offset 0x117C");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_nSourceSoundscapeHash) == 0x1180, "m_nSourceSoundscapeHash in C_PlantedC4 should be at offset 0x1180");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_entitySpottedState) == 0x1188, "m_entitySpottedState in C_PlantedC4 should be at offset 0x1188");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flNextGlow) == 0x11A0, "m_flNextGlow in C_PlantedC4 should be at offset 0x11A0");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flNextBeep) == 0x11A4, "m_flNextBeep in C_PlantedC4 should be at offset 0x11A4");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flC4Blow) == 0x11A8, "m_flC4Blow in C_PlantedC4 should be at offset 0x11A8");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bCannotBeDefused) == 0x11AC, "m_bCannotBeDefused in C_PlantedC4 should be at offset 0x11AC");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bHasExploded) == 0x11AD, "m_bHasExploded in C_PlantedC4 should be at offset 0x11AD");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flTimerLength) == 0x11B0, "m_flTimerLength in C_PlantedC4 should be at offset 0x11B0");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bBeingDefused) == 0x11B4, "m_bBeingDefused in C_PlantedC4 should be at offset 0x11B4");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bTriggerWarning) == 0x11B8, "m_bTriggerWarning in C_PlantedC4 should be at offset 0x11B8");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bExplodeWarning) == 0x11BC, "m_bExplodeWarning in C_PlantedC4 should be at offset 0x11BC");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bC4Activated) == 0x11C0, "m_bC4Activated in C_PlantedC4 should be at offset 0x11C0");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bTenSecWarning) == 0x11C1, "m_bTenSecWarning in C_PlantedC4 should be at offset 0x11C1");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flDefuseLength) == 0x11C4, "m_flDefuseLength in C_PlantedC4 should be at offset 0x11C4");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flDefuseCountDown) == 0x11C8, "m_flDefuseCountDown in C_PlantedC4 should be at offset 0x11C8");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bBombDefused) == 0x11CC, "m_bBombDefused in C_PlantedC4 should be at offset 0x11CC");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_hBombDefuser) == 0x11D0, "m_hBombDefuser in C_PlantedC4 should be at offset 0x11D0");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_AttributeManager) == 0x11D8, "m_AttributeManager in C_PlantedC4 should be at offset 0x11D8");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_hDefuserMultimeter) == 0x16B0, "m_hDefuserMultimeter in C_PlantedC4 should be at offset 0x16B0");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flNextRadarFlashTime) == 0x16B4, "m_flNextRadarFlashTime in C_PlantedC4 should be at offset 0x16B4");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_bRadarFlash) == 0x16B8, "m_bRadarFlash in C_PlantedC4 should be at offset 0x16B8");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_pBombDefuser) == 0x16BC, "m_pBombDefuser in C_PlantedC4 should be at offset 0x16BC");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_fLastDefuseTime) == 0x16C0, "m_fLastDefuseTime in C_PlantedC4 should be at offset 0x16C0");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_pPredictionOwner) == 0x16C8, "m_pPredictionOwner in C_PlantedC4 should be at offset 0x16C8");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_vecC4ExplodeSpectatePos) == 0x16D0, "m_vecC4ExplodeSpectatePos in C_PlantedC4 should be at offset 0x16D0");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_vecC4ExplodeSpectateAng) == 0x16DC, "m_vecC4ExplodeSpectateAng in C_PlantedC4 should be at offset 0x16DC");
-		static_assert(offsetof(CS2::client::C_PlantedC4, m_flC4ExplodeSpectateDuration) == 0x16E8, "m_flC4ExplodeSpectateDuration in C_PlantedC4 should be at offset 0x16E8");
-		static_assert(sizeof(CS2::client::C_PlantedC4) == 0x16F0, "C_PlantedC4 size should be 0x16F0");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bBombTicking) == 0x1160, "m_bBombTicking in C_PlantedC4 should be at offset 0x1160");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_nBombSite) == 0x1164, "m_nBombSite in C_PlantedC4 should be at offset 0x1164");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_nSourceSoundscapeHash) == 0x1168, "m_nSourceSoundscapeHash in C_PlantedC4 should be at offset 0x1168");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_entitySpottedState) == 0x1170, "m_entitySpottedState in C_PlantedC4 should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flNextGlow) == 0x1188, "m_flNextGlow in C_PlantedC4 should be at offset 0x1188");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flNextBeep) == 0x118C, "m_flNextBeep in C_PlantedC4 should be at offset 0x118C");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flC4Blow) == 0x1190, "m_flC4Blow in C_PlantedC4 should be at offset 0x1190");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bCannotBeDefused) == 0x1194, "m_bCannotBeDefused in C_PlantedC4 should be at offset 0x1194");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bHasExploded) == 0x1195, "m_bHasExploded in C_PlantedC4 should be at offset 0x1195");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flTimerLength) == 0x1198, "m_flTimerLength in C_PlantedC4 should be at offset 0x1198");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bBeingDefused) == 0x119C, "m_bBeingDefused in C_PlantedC4 should be at offset 0x119C");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bTriggerWarning) == 0x11A0, "m_bTriggerWarning in C_PlantedC4 should be at offset 0x11A0");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bExplodeWarning) == 0x11A4, "m_bExplodeWarning in C_PlantedC4 should be at offset 0x11A4");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bC4Activated) == 0x11A8, "m_bC4Activated in C_PlantedC4 should be at offset 0x11A8");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bTenSecWarning) == 0x11A9, "m_bTenSecWarning in C_PlantedC4 should be at offset 0x11A9");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flDefuseLength) == 0x11AC, "m_flDefuseLength in C_PlantedC4 should be at offset 0x11AC");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flDefuseCountDown) == 0x11B0, "m_flDefuseCountDown in C_PlantedC4 should be at offset 0x11B0");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bBombDefused) == 0x11B4, "m_bBombDefused in C_PlantedC4 should be at offset 0x11B4");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_hBombDefuser) == 0x11B8, "m_hBombDefuser in C_PlantedC4 should be at offset 0x11B8");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_AttributeManager) == 0x11C0, "m_AttributeManager in C_PlantedC4 should be at offset 0x11C0");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_hDefuserMultimeter) == 0x1698, "m_hDefuserMultimeter in C_PlantedC4 should be at offset 0x1698");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flNextRadarFlashTime) == 0x169C, "m_flNextRadarFlashTime in C_PlantedC4 should be at offset 0x169C");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_bRadarFlash) == 0x16A0, "m_bRadarFlash in C_PlantedC4 should be at offset 0x16A0");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_pBombDefuser) == 0x16A4, "m_pBombDefuser in C_PlantedC4 should be at offset 0x16A4");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_fLastDefuseTime) == 0x16A8, "m_fLastDefuseTime in C_PlantedC4 should be at offset 0x16A8");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_pPredictionOwner) == 0x16B0, "m_pPredictionOwner in C_PlantedC4 should be at offset 0x16B0");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_vecC4ExplodeSpectatePos) == 0x16B8, "m_vecC4ExplodeSpectatePos in C_PlantedC4 should be at offset 0x16B8");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_vecC4ExplodeSpectateAng) == 0x16C4, "m_vecC4ExplodeSpectateAng in C_PlantedC4 should be at offset 0x16C4");
+		static_assert(offsetof(CS2::client::C_PlantedC4, m_flC4ExplodeSpectateDuration) == 0x16D0, "m_flC4ExplodeSpectateDuration in C_PlantedC4 should be at offset 0x16D0");
+		static_assert(sizeof(CS2::client::C_PlantedC4) == 0x16D8, "C_PlantedC4 size should be 0x16D8");
 	}
 }

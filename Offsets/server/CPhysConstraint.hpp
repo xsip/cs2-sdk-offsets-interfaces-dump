@@ -21,6 +21,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_torqueLimit = 0x52c; // float32 m_torqueLimit; |  0x52c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_minTeleportDistance = 0x530; // float32 m_minTeleportDistance; |  0x530 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSnapObjectPositions = 0x534; // bool m_bSnapObjectPositions; |  0x534 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bTreatEntity1AsInfiniteMass = 0x535; // bool m_bTreatEntity1AsInfiniteMass; |  0x535 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_OnBreak = 0x538; // entity2::CEntityIOOutput m_OnBreak; |  Schema_DeclaredClass | Size: 0x28
 			}
 		}

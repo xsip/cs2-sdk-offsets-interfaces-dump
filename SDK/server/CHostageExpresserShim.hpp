@@ -18,9 +18,10 @@ namespace CS2 {
 	namespace server {
 		class CHostageExpresserShim : public CS2::server::CBaseCombatCharacter {
 		public:
-			server::CAI_Expresser* m_pExpresser; // 0xbd8 | Schema_Ptr | Size: 0x8
+			server::CAI_Expresser* m_pExpresser; // 0xbe0 | Schema_Ptr | Size: 0x8
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CHostageExpresserShim, m_pExpresser) == 0xBD8, "m_pExpresser in CHostageExpresserShim should be at offset 0xBD8");
-		static_assert(sizeof(CS2::server::CHostageExpresserShim) == 0xBE0, "CHostageExpresserShim size should be 0xBE0");
+		static_assert(offsetof(CS2::server::CHostageExpresserShim, m_pExpresser) == 0xBE0, "m_pExpresser in CHostageExpresserShim should be at offset 0xBE0");
+		static_assert(sizeof(CS2::server::CHostageExpresserShim) == 0xBF0, "CHostageExpresserShim size should be 0xBF0");
 	}
 }

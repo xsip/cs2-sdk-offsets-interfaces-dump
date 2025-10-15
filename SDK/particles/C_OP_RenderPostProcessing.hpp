@@ -15,15 +15,15 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderPostProcessing : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particleslib::CPerParticleFloatInput m_flPostProcessStrength; // 0x210 | Schema_DeclaredClass | Size: 0x160
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostTexture; // 0x370 | Schema_Atomic | Size: 0x8
-			char  m_hPostTexture[0x8]; // 0x370 | Schema_Atomic | Size: 0x8
-			particles::ParticlePostProcessPriorityGroup_t m_nPriority; // 0x378 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flPostProcessStrength; // 0x220 | Schema_DeclaredClass | Size: 0x170
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostTexture; // 0x390 | Schema_Atomic | Size: 0x8
+			char  m_hPostTexture[0x8]; // 0x390 | Schema_Atomic | Size: 0x8
+			particles::ParticlePostProcessPriorityGroup_t m_nPriority; // 0x398 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_flPostProcessStrength) == 0x210, "m_flPostProcessStrength in C_OP_RenderPostProcessing should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_hPostTexture) == 0x370, "m_hPostTexture in C_OP_RenderPostProcessing should be at offset 0x370");
-		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_nPriority) == 0x378, "m_nPriority in C_OP_RenderPostProcessing should be at offset 0x378");
-		static_assert(sizeof(CS2::particles::C_OP_RenderPostProcessing) == 0x380, "C_OP_RenderPostProcessing size should be 0x380");
+		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_flPostProcessStrength) == 0x220, "m_flPostProcessStrength in C_OP_RenderPostProcessing should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_hPostTexture) == 0x390, "m_hPostTexture in C_OP_RenderPostProcessing should be at offset 0x390");
+		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_nPriority) == 0x398, "m_nPriority in C_OP_RenderPostProcessing should be at offset 0x398");
+		static_assert(sizeof(CS2::particles::C_OP_RenderPostProcessing) == 0x3A0, "C_OP_RenderPostProcessing size should be 0x3A0");
 	}
 }

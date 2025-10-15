@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace animgraphlib {
-			// Class size: 0xB8
+			// Class size: 0xC0
 			namespace CChoiceUpdateNode /*: public CS2::animgraphlib::CAnimUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_children = 0x58; // GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_weights = 0x70; // GlobalTypes::CUtlVector< float32 > m_weights; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_blendTimes = 0x88; // GlobalTypes::CUtlVector< float32 > m_blendTimes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_choiceMethod = 0xa0; // animgraphlib::ChoiceMethod m_choiceMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_choiceChangeMethod = 0xa4; // animgraphlib::ChoiceChangeMethod m_choiceChangeMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_blendMethod = 0xa8; // animgraphlib::ChoiceBlendMethod m_blendMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_blendTime = 0xac; // float32 m_blendTime; |  0xac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bCrossFade = 0xb0; // bool m_bCrossFade; |  0xb0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bResetChosen = 0xb1; // bool m_bResetChosen; |  0xb1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDontResetSameSelection = 0xb2; // bool m_bDontResetSameSelection; |  0xb2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_children = 0x60; // GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_weights = 0x78; // GlobalTypes::CUtlVector< float32 > m_weights; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_blendTimes = 0x90; // GlobalTypes::CUtlVector< float32 > m_blendTimes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_choiceMethod = 0xa8; // animgraphlib::ChoiceMethod m_choiceMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_choiceChangeMethod = 0xac; // animgraphlib::ChoiceChangeMethod m_choiceChangeMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_blendMethod = 0xb0; // animgraphlib::ChoiceBlendMethod m_blendMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_blendTime = 0xb4; // float32 m_blendTime; |  0xb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bCrossFade = 0xb8; // bool m_bCrossFade; |  0xb8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bResetChosen = 0xb9; // bool m_bResetChosen; |  0xb9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDontResetSameSelection = 0xba; // bool m_bDontResetSameSelection; |  0xba | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

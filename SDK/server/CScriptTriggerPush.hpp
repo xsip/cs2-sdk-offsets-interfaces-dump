@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CScriptTriggerPush : public CS2::server::CTriggerPush {
 		public:
-			GlobalTypes::Vector m_vExtent; // 0x9f8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vExtent; // 0x9e0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CScriptTriggerPush, m_vExtent) == 0x9F8, "m_vExtent in CScriptTriggerPush should be at offset 0x9F8");
-		static_assert(sizeof(CS2::server::CScriptTriggerPush) == 0xA08, "CScriptTriggerPush size should be 0xA08");
+		static_assert(offsetof(CS2::server::CScriptTriggerPush, m_vExtent) == 0x9E0, "m_vExtent in CScriptTriggerPush should be at offset 0x9E0");
+		static_assert(sizeof(CS2::server::CScriptTriggerPush) == 0x9F0, "CScriptTriggerPush size should be 0x9F0");
 	}
 }

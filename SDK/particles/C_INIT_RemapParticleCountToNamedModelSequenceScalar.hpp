@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_INIT_RemapParticleCountToNamedModelSequenceScalar : public CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar {
 		public:
 		};
-		static_assert(sizeof(CS2::particles::C_INIT_RemapParticleCountToNamedModelSequenceScalar) == 0x218, "C_INIT_RemapParticleCountToNamedModelSequenceScalar size should be 0x218");
+		static_assert(sizeof(CS2::particles::C_INIT_RemapParticleCountToNamedModelSequenceScalar) == 0x228, "C_INIT_RemapParticleCountToNamedModelSequenceScalar size should be 0x228");
 	}
 }

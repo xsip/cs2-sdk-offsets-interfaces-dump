@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9C0
+			// Class size: 0x9A8
 			namespace CRotButton /*: public CS2::server::CBaseButton*/ {
 				// NO SCHEMA DATA FOUND!
 			}

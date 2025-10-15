@@ -18,20 +18,20 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_SetFloatAttributeToVectorExpression : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particles::VectorFloatExpressionType_t m_nExpression; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
+			particles::VectorFloatExpressionType_t m_nExpression; // 0x1d8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleVecInput m_vInput1; // 0x1d0 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vInput2; // 0x848 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0xec0 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x1020 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x1024 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleVecInput m_vInput1; // 0x1e0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vInput2; // 0x898 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0xf50 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x10c0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x10c4 | Schema_DeclaredEnum | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_nExpression) == 0x1C8, "m_nExpression in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_vInput1) == 0x1D0, "m_vInput1 in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_vInput2) == 0x848, "m_vInput2 in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x848");
-		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_flOutputRemap) == 0xEC0, "m_flOutputRemap in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0xEC0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_nOutputField) == 0x1020, "m_nOutputField in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x1020");
-		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_nSetMethod) == 0x1024, "m_nSetMethod in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x1024");
-		static_assert(sizeof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression) == 0x1028, "C_INIT_SetFloatAttributeToVectorExpression size should be 0x1028");
+		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_nExpression) == 0x1D8, "m_nExpression in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_vInput1) == 0x1E0, "m_vInput1 in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_vInput2) == 0x898, "m_vInput2 in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_flOutputRemap) == 0xF50, "m_flOutputRemap in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0xF50");
+		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_nOutputField) == 0x10C0, "m_nOutputField in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x10C0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression, m_nSetMethod) == 0x10C4, "m_nSetMethod in C_INIT_SetFloatAttributeToVectorExpression should be at offset 0x10C4");
+		static_assert(sizeof(CS2::particles::C_INIT_SetFloatAttributeToVectorExpression) == 0x10C8, "C_INIT_SetFloatAttributeToVectorExpression size should be 0x10C8");
 	}
 }

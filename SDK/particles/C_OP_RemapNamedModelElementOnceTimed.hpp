@@ -14,30 +14,30 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapNamedModelElementOnceTimed : public CS2::particles::CParticleFunctionOperator {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x1c0 | Schema_Atomic | Size: 0x8
-			char  m_hModel[0x8]; // 0x1c0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_inNames; // 0x1c8 | Schema_Atomic | Size: 0x18
-			char  m_inNames[0x18]; // 0x1c8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_outNames; // 0x1e0 | Schema_Atomic | Size: 0x18
-			char  m_outNames[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_fallbackNames; // 0x1f8 | Schema_Atomic | Size: 0x18
-			char  m_fallbackNames[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
-			bool m_bModelFromRenderer; // 0x210 | Schema_Builtin | Size: 0x1
-			bool m_bProportional; // 0x211 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x1d0 | Schema_Atomic | Size: 0x8
+			char  m_hModel[0x8]; // 0x1d0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_inNames; // 0x1d8 | Schema_Atomic | Size: 0x18
+			char  m_inNames[0x18]; // 0x1d8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_outNames; // 0x1f0 | Schema_Atomic | Size: 0x18
+			char  m_outNames[0x18]; // 0x1f0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_fallbackNames; // 0x208 | Schema_Atomic | Size: 0x18
+			char  m_fallbackNames[0x18]; // 0x208 | Schema_Atomic | Size: 0x18
+			bool m_bModelFromRenderer; // 0x220 | Schema_Builtin | Size: 0x1
+			bool m_bProportional; // 0x221 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x214 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x218 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flRemapTime; // 0x21c | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x224 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x228 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flRemapTime; // 0x22c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_hModel) == 0x1C0, "m_hModel in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_inNames) == 0x1C8, "m_inNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_outNames) == 0x1E0, "m_outNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_fallbackNames) == 0x1F8, "m_fallbackNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1F8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_bModelFromRenderer) == 0x210, "m_bModelFromRenderer in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_bProportional) == 0x211, "m_bProportional in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x211");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_nFieldInput) == 0x214, "m_nFieldInput in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_nFieldOutput) == 0x218, "m_nFieldOutput in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_flRemapTime) == 0x21C, "m_flRemapTime in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x21C");
-		static_assert(sizeof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed) == 0x220, "C_OP_RemapNamedModelElementOnceTimed size should be 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_hModel) == 0x1D0, "m_hModel in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_inNames) == 0x1D8, "m_inNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_outNames) == 0x1F0, "m_outNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_fallbackNames) == 0x208, "m_fallbackNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x208");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_bModelFromRenderer) == 0x220, "m_bModelFromRenderer in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_bProportional) == 0x221, "m_bProportional in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x221");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_nFieldInput) == 0x224, "m_nFieldInput in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_nFieldOutput) == 0x228, "m_nFieldOutput in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_flRemapTime) == 0x22C, "m_flRemapTime in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x22C");
+		static_assert(sizeof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed) == 0x230, "C_OP_RemapNamedModelElementOnceTimed size should be 0x230");
 	}
 }

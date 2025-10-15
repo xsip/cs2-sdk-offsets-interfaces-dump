@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_MapPreviewParticleSystem : public CS2::client::C_ParticleSystem {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_MapPreviewParticleSystem) == 0x1478, "C_MapPreviewParticleSystem size should be 0x1478");
+		static_assert(sizeof(CS2::client::C_MapPreviewParticleSystem) == 0x1460, "C_MapPreviewParticleSystem size should be 0x1460");
 	}
 }

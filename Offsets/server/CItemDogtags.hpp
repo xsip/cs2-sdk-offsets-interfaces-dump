@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB60
+			// Class size: 0xB80
 			namespace CItemDogtags /*: public CS2::server::CItem*/ {
-				constexpr std::ptrdiff_t m_OwningPlayer = 0xb58; // server::CHandle< server::CCSPlayerPawn > m_OwningPlayer; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_KillingPlayer = 0xb5c; // server::CHandle< server::CCSPlayerPawn > m_KillingPlayer; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OwningPlayer = 0xb70; // server::CHandle< server::CCSPlayerPawn > m_OwningPlayer; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_KillingPlayer = 0xb74; // server::CHandle< server::CCSPlayerPawn > m_KillingPlayer; |  Schema_Atomic | Size: 0x4
 			}
 		}
 	}

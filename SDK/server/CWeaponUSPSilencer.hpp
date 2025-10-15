@@ -14,6 +14,6 @@ namespace CS2 {
 		class CWeaponUSPSilencer : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CWeaponUSPSilencer) == 0x11C8, "CWeaponUSPSilencer size should be 0x11C8");
+		static_assert(sizeof(CS2::server::CWeaponUSPSilencer) == 0x11F0, "CWeaponUSPSilencer size should be 0x11F0");
 	}
 }

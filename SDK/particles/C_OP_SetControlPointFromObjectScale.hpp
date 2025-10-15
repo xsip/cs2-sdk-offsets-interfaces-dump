@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointFromObjectScale : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nCPInput; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nCPOutput; // 0x1cc | Schema_Builtin | Size: 0x4
+			int32_t m_nCPInput; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nCPOutput; // 0x1dc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFromObjectScale, m_nCPInput) == 0x1C8, "m_nCPInput in C_OP_SetControlPointFromObjectScale should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFromObjectScale, m_nCPOutput) == 0x1CC, "m_nCPOutput in C_OP_SetControlPointFromObjectScale should be at offset 0x1CC");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFromObjectScale) == 0x1D0, "C_OP_SetControlPointFromObjectScale size should be 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFromObjectScale, m_nCPInput) == 0x1D8, "m_nCPInput in C_OP_SetControlPointFromObjectScale should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFromObjectScale, m_nCPOutput) == 0x1DC, "m_nCPOutput in C_OP_SetControlPointFromObjectScale should be at offset 0x1DC");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFromObjectScale) == 0x1E0, "C_OP_SetControlPointFromObjectScale size should be 0x1E0");
 	}
 }

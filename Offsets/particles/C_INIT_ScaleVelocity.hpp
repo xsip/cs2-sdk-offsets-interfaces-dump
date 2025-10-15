@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x840
+			// Class size: 0x890
 			namespace C_INIT_ScaleVelocity /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecScale = 0x1c8; // particleslib::CParticleCollectionVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_vecScale = 0x1d8; // particleslib::CParticleCollectionVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

@@ -8,7 +8,7 @@ namespace CS2 {
 		enum ParticleParentSetMode_t : std::uint32_t {
 			ParticleParentSetMode_t_PARTICLE_SET_PARENT_IMMEDIATE = 0x1,
 			ParticleParentSetMode_t_PARTICLE_SET_PARENT_NO = 0x0,
-			ParticleParentSetMode_t_PARTICLE_SET_PARENT_ROOT = 0x1
+			ParticleParentSetMode_t_PARTICLE_SET_PARENT_ROOT = 0x2
 		};
 	}
 }

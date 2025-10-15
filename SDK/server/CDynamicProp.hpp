@@ -16,53 +16,53 @@ namespace CS2 {
 		class CDynamicProp : public CS2::server::CBreakableProp {
 		public:
 			S2_PAD(0x8);
-			bool m_bCreateNavObstacle; // 0xc48 | Schema_Builtin | Size: 0x1
-			bool m_bNavObstacleUpdatesOverridden; // 0xc49 | Schema_Builtin | Size: 0x1
-			bool m_bUseHitboxesForRenderBox; // 0xc4a | Schema_Builtin | Size: 0x1
-			bool m_bUseAnimGraph; // 0xc4b | Schema_Builtin | Size: 0x1
+			bool m_bCreateNavObstacle; // 0xc58 | Schema_Builtin | Size: 0x1
+			bool m_bNavObstacleUpdatesOverridden; // 0xc59 | Schema_Builtin | Size: 0x1
+			bool m_bUseHitboxesForRenderBox; // 0xc5a | Schema_Builtin | Size: 0x1
+			bool m_bUseAnimGraph; // 0xc5b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xc50 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_pOutputAnimOver; // 0xc78 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xca0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xcc8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xcf0 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_iszIdleAnim; // 0xd18 | Schema_Atomic | Size: 0x8
-			client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xd20 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bRandomizeCycle; // 0xd24 | Schema_Builtin | Size: 0x1
-			bool m_bStartDisabled; // 0xd25 | Schema_Builtin | Size: 0x1
-			bool m_bFiredStartEndOutput; // 0xd26 | Schema_Builtin | Size: 0x1
-			bool m_bForceNpcExclude; // 0xd27 | Schema_Builtin | Size: 0x1
-			bool m_bCreateNonSolid; // 0xd28 | Schema_Builtin | Size: 0x1
-			bool m_bIsOverrideProp; // 0xd29 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xc60 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_pOutputAnimOver; // 0xc88 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xcb0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xcd8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xd00 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_iszIdleAnim; // 0xd28 | Schema_Atomic | Size: 0x8
+			client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xd30 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bRandomizeCycle; // 0xd34 | Schema_Builtin | Size: 0x1
+			bool m_bStartDisabled; // 0xd35 | Schema_Builtin | Size: 0x1
+			bool m_bFiredStartEndOutput; // 0xd36 | Schema_Builtin | Size: 0x1
+			bool m_bForceNpcExclude; // 0xd37 | Schema_Builtin | Size: 0x1
+			bool m_bCreateNonSolid; // 0xd38 | Schema_Builtin | Size: 0x1
+			bool m_bIsOverrideProp; // 0xd39 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iInitialGlowState; // 0xd2c | Schema_Builtin | Size: 0x4
-			int32_t m_nGlowRange; // 0xd30 | Schema_Builtin | Size: 0x4
-			int32_t m_nGlowRangeMin; // 0xd34 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_glowColor; // 0xd38 | Schema_Atomic | Size: 0x4
-			int32_t m_nGlowTeam; // 0xd3c | Schema_Builtin | Size: 0x4
+			int32_t m_iInitialGlowState; // 0xd3c | Schema_Builtin | Size: 0x4
+			int32_t m_nGlowRange; // 0xd40 | Schema_Builtin | Size: 0x4
+			int32_t m_nGlowRangeMin; // 0xd44 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_glowColor; // 0xd48 | Schema_Atomic | Size: 0x4
+			int32_t m_nGlowTeam; // 0xd4c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bCreateNavObstacle) == 0xC48, "m_bCreateNavObstacle in CDynamicProp should be at offset 0xC48");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bNavObstacleUpdatesOverridden) == 0xC49, "m_bNavObstacleUpdatesOverridden in CDynamicProp should be at offset 0xC49");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bUseHitboxesForRenderBox) == 0xC4A, "m_bUseHitboxesForRenderBox in CDynamicProp should be at offset 0xC4A");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bUseAnimGraph) == 0xC4B, "m_bUseAnimGraph in CDynamicProp should be at offset 0xC4B");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_pOutputAnimBegun) == 0xC50, "m_pOutputAnimBegun in CDynamicProp should be at offset 0xC50");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_pOutputAnimOver) == 0xC78, "m_pOutputAnimOver in CDynamicProp should be at offset 0xC78");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_pOutputAnimLoopCycleOver) == 0xCA0, "m_pOutputAnimLoopCycleOver in CDynamicProp should be at offset 0xCA0");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_OnAnimReachedStart) == 0xCC8, "m_OnAnimReachedStart in CDynamicProp should be at offset 0xCC8");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_OnAnimReachedEnd) == 0xCF0, "m_OnAnimReachedEnd in CDynamicProp should be at offset 0xCF0");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_iszIdleAnim) == 0xD18, "m_iszIdleAnim in CDynamicProp should be at offset 0xD18");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_nIdleAnimLoopMode) == 0xD20, "m_nIdleAnimLoopMode in CDynamicProp should be at offset 0xD20");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bRandomizeCycle) == 0xD24, "m_bRandomizeCycle in CDynamicProp should be at offset 0xD24");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bStartDisabled) == 0xD25, "m_bStartDisabled in CDynamicProp should be at offset 0xD25");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bFiredStartEndOutput) == 0xD26, "m_bFiredStartEndOutput in CDynamicProp should be at offset 0xD26");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bForceNpcExclude) == 0xD27, "m_bForceNpcExclude in CDynamicProp should be at offset 0xD27");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bCreateNonSolid) == 0xD28, "m_bCreateNonSolid in CDynamicProp should be at offset 0xD28");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_bIsOverrideProp) == 0xD29, "m_bIsOverrideProp in CDynamicProp should be at offset 0xD29");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_iInitialGlowState) == 0xD2C, "m_iInitialGlowState in CDynamicProp should be at offset 0xD2C");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_nGlowRange) == 0xD30, "m_nGlowRange in CDynamicProp should be at offset 0xD30");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_nGlowRangeMin) == 0xD34, "m_nGlowRangeMin in CDynamicProp should be at offset 0xD34");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_glowColor) == 0xD38, "m_glowColor in CDynamicProp should be at offset 0xD38");
-		static_assert(offsetof(CS2::server::CDynamicProp, m_nGlowTeam) == 0xD3C, "m_nGlowTeam in CDynamicProp should be at offset 0xD3C");
-		static_assert(sizeof(CS2::server::CDynamicProp) == 0xD40, "CDynamicProp size should be 0xD40");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bCreateNavObstacle) == 0xC58, "m_bCreateNavObstacle in CDynamicProp should be at offset 0xC58");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bNavObstacleUpdatesOverridden) == 0xC59, "m_bNavObstacleUpdatesOverridden in CDynamicProp should be at offset 0xC59");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bUseHitboxesForRenderBox) == 0xC5A, "m_bUseHitboxesForRenderBox in CDynamicProp should be at offset 0xC5A");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bUseAnimGraph) == 0xC5B, "m_bUseAnimGraph in CDynamicProp should be at offset 0xC5B");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_pOutputAnimBegun) == 0xC60, "m_pOutputAnimBegun in CDynamicProp should be at offset 0xC60");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_pOutputAnimOver) == 0xC88, "m_pOutputAnimOver in CDynamicProp should be at offset 0xC88");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_pOutputAnimLoopCycleOver) == 0xCB0, "m_pOutputAnimLoopCycleOver in CDynamicProp should be at offset 0xCB0");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_OnAnimReachedStart) == 0xCD8, "m_OnAnimReachedStart in CDynamicProp should be at offset 0xCD8");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_OnAnimReachedEnd) == 0xD00, "m_OnAnimReachedEnd in CDynamicProp should be at offset 0xD00");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_iszIdleAnim) == 0xD28, "m_iszIdleAnim in CDynamicProp should be at offset 0xD28");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_nIdleAnimLoopMode) == 0xD30, "m_nIdleAnimLoopMode in CDynamicProp should be at offset 0xD30");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bRandomizeCycle) == 0xD34, "m_bRandomizeCycle in CDynamicProp should be at offset 0xD34");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bStartDisabled) == 0xD35, "m_bStartDisabled in CDynamicProp should be at offset 0xD35");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bFiredStartEndOutput) == 0xD36, "m_bFiredStartEndOutput in CDynamicProp should be at offset 0xD36");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bForceNpcExclude) == 0xD37, "m_bForceNpcExclude in CDynamicProp should be at offset 0xD37");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bCreateNonSolid) == 0xD38, "m_bCreateNonSolid in CDynamicProp should be at offset 0xD38");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_bIsOverrideProp) == 0xD39, "m_bIsOverrideProp in CDynamicProp should be at offset 0xD39");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_iInitialGlowState) == 0xD3C, "m_iInitialGlowState in CDynamicProp should be at offset 0xD3C");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_nGlowRange) == 0xD40, "m_nGlowRange in CDynamicProp should be at offset 0xD40");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_nGlowRangeMin) == 0xD44, "m_nGlowRangeMin in CDynamicProp should be at offset 0xD44");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_glowColor) == 0xD48, "m_glowColor in CDynamicProp should be at offset 0xD48");
+		static_assert(offsetof(CS2::server::CDynamicProp, m_nGlowTeam) == 0xD4C, "m_nGlowTeam in CDynamicProp should be at offset 0xD4C");
+		static_assert(sizeof(CS2::server::CDynamicProp) == 0xD50, "CDynamicProp size should be 0xD50");
 	}
 }

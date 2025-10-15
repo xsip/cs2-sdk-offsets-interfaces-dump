@@ -14,33 +14,33 @@ namespace CS2 {
 		class CPostProcessingVolume : public CS2::server::CBaseTrigger {
 		public:
 			S2_PAD(0x10);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x9d0 | Schema_Atomic | Size: 0x8
-			char  m_hPostSettings[0x8]; // 0x9d0 | Schema_Atomic | Size: 0x8
-			float32 m_flFadeDuration; // 0x9d8 | Schema_Builtin | Size: 0x4
-			float32 m_flMinLogExposure; // 0x9dc | Schema_Builtin | Size: 0x4
-			float32 m_flMaxLogExposure; // 0x9e0 | Schema_Builtin | Size: 0x4
-			float32 m_flMinExposure; // 0x9e4 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxExposure; // 0x9e8 | Schema_Builtin | Size: 0x4
-			float32 m_flExposureCompensation; // 0x9ec | Schema_Builtin | Size: 0x4
-			float32 m_flExposureFadeSpeedUp; // 0x9f0 | Schema_Builtin | Size: 0x4
-			float32 m_flExposureFadeSpeedDown; // 0x9f4 | Schema_Builtin | Size: 0x4
-			float32 m_flTonemapEVSmoothingRange; // 0x9f8 | Schema_Builtin | Size: 0x4
-			bool m_bMaster; // 0x9fc | Schema_Builtin | Size: 0x1
-			bool m_bExposureControl; // 0x9fd | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x9b8 | Schema_Atomic | Size: 0x8
+			char  m_hPostSettings[0x8]; // 0x9b8 | Schema_Atomic | Size: 0x8
+			float32 m_flFadeDuration; // 0x9c0 | Schema_Builtin | Size: 0x4
+			float32 m_flMinLogExposure; // 0x9c4 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxLogExposure; // 0x9c8 | Schema_Builtin | Size: 0x4
+			float32 m_flMinExposure; // 0x9cc | Schema_Builtin | Size: 0x4
+			float32 m_flMaxExposure; // 0x9d0 | Schema_Builtin | Size: 0x4
+			float32 m_flExposureCompensation; // 0x9d4 | Schema_Builtin | Size: 0x4
+			float32 m_flExposureFadeSpeedUp; // 0x9d8 | Schema_Builtin | Size: 0x4
+			float32 m_flExposureFadeSpeedDown; // 0x9dc | Schema_Builtin | Size: 0x4
+			float32 m_flTonemapEVSmoothingRange; // 0x9e0 | Schema_Builtin | Size: 0x4
+			bool m_bMaster; // 0x9e4 | Schema_Builtin | Size: 0x1
+			bool m_bExposureControl; // 0x9e5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_hPostSettings) == 0x9D0, "m_hPostSettings in CPostProcessingVolume should be at offset 0x9D0");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flFadeDuration) == 0x9D8, "m_flFadeDuration in CPostProcessingVolume should be at offset 0x9D8");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMinLogExposure) == 0x9DC, "m_flMinLogExposure in CPostProcessingVolume should be at offset 0x9DC");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMaxLogExposure) == 0x9E0, "m_flMaxLogExposure in CPostProcessingVolume should be at offset 0x9E0");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMinExposure) == 0x9E4, "m_flMinExposure in CPostProcessingVolume should be at offset 0x9E4");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMaxExposure) == 0x9E8, "m_flMaxExposure in CPostProcessingVolume should be at offset 0x9E8");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flExposureCompensation) == 0x9EC, "m_flExposureCompensation in CPostProcessingVolume should be at offset 0x9EC");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flExposureFadeSpeedUp) == 0x9F0, "m_flExposureFadeSpeedUp in CPostProcessingVolume should be at offset 0x9F0");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flExposureFadeSpeedDown) == 0x9F4, "m_flExposureFadeSpeedDown in CPostProcessingVolume should be at offset 0x9F4");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flTonemapEVSmoothingRange) == 0x9F8, "m_flTonemapEVSmoothingRange in CPostProcessingVolume should be at offset 0x9F8");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_bMaster) == 0x9FC, "m_bMaster in CPostProcessingVolume should be at offset 0x9FC");
-		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_bExposureControl) == 0x9FD, "m_bExposureControl in CPostProcessingVolume should be at offset 0x9FD");
-		static_assert(sizeof(CS2::server::CPostProcessingVolume) == 0xA00, "CPostProcessingVolume size should be 0xA00");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_hPostSettings) == 0x9B8, "m_hPostSettings in CPostProcessingVolume should be at offset 0x9B8");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flFadeDuration) == 0x9C0, "m_flFadeDuration in CPostProcessingVolume should be at offset 0x9C0");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMinLogExposure) == 0x9C4, "m_flMinLogExposure in CPostProcessingVolume should be at offset 0x9C4");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMaxLogExposure) == 0x9C8, "m_flMaxLogExposure in CPostProcessingVolume should be at offset 0x9C8");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMinExposure) == 0x9CC, "m_flMinExposure in CPostProcessingVolume should be at offset 0x9CC");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flMaxExposure) == 0x9D0, "m_flMaxExposure in CPostProcessingVolume should be at offset 0x9D0");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flExposureCompensation) == 0x9D4, "m_flExposureCompensation in CPostProcessingVolume should be at offset 0x9D4");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flExposureFadeSpeedUp) == 0x9D8, "m_flExposureFadeSpeedUp in CPostProcessingVolume should be at offset 0x9D8");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flExposureFadeSpeedDown) == 0x9DC, "m_flExposureFadeSpeedDown in CPostProcessingVolume should be at offset 0x9DC");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_flTonemapEVSmoothingRange) == 0x9E0, "m_flTonemapEVSmoothingRange in CPostProcessingVolume should be at offset 0x9E0");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_bMaster) == 0x9E4, "m_bMaster in CPostProcessingVolume should be at offset 0x9E4");
+		static_assert(offsetof(CS2::server::CPostProcessingVolume, m_bExposureControl) == 0x9E5, "m_bExposureControl in CPostProcessingVolume should be at offset 0x9E5");
+		static_assert(sizeof(CS2::server::CPostProcessingVolume) == 0x9E8, "CPostProcessingVolume size should be 0x9E8");
 	}
 }

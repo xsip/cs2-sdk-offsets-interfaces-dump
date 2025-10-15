@@ -14,30 +14,30 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapModelVolumetoCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particles::BBoxVolumeType_t m_nBBoxType; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nInControlPointNumber; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nOutControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutControlPointMaxNumber; // 0x1d4 | Schema_Builtin | Size: 0x4
-			int32_t m_nField; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMin; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1e4 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
-			bool m_bBBoxOnly; // 0x1ec | Schema_Builtin | Size: 0x1
-			bool m_bCubeRoot; // 0x1ed | Schema_Builtin | Size: 0x1
+			particles::BBoxVolumeType_t m_nBBoxType; // 0x1d8 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nInControlPointNumber; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nOutControlPointNumber; // 0x1e0 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutControlPointMaxNumber; // 0x1e4 | Schema_Builtin | Size: 0x4
+			int32_t m_nField; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMin; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1f0 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1f4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1f8 | Schema_Builtin | Size: 0x4
+			bool m_bBBoxOnly; // 0x1fc | Schema_Builtin | Size: 0x1
+			bool m_bCubeRoot; // 0x1fd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nBBoxType) == 0x1C8, "m_nBBoxType in C_OP_RemapModelVolumetoCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nInControlPointNumber) == 0x1CC, "m_nInControlPointNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nOutControlPointNumber) == 0x1D0, "m_nOutControlPointNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nOutControlPointMaxNumber) == 0x1D4, "m_nOutControlPointMaxNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nField) == 0x1D8, "m_nField in C_OP_RemapModelVolumetoCP should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flInputMin) == 0x1DC, "m_flInputMin in C_OP_RemapModelVolumetoCP should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flInputMax) == 0x1E0, "m_flInputMax in C_OP_RemapModelVolumetoCP should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flOutputMin) == 0x1E4, "m_flOutputMin in C_OP_RemapModelVolumetoCP should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_OP_RemapModelVolumetoCP should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_bBBoxOnly) == 0x1EC, "m_bBBoxOnly in C_OP_RemapModelVolumetoCP should be at offset 0x1EC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_bCubeRoot) == 0x1ED, "m_bCubeRoot in C_OP_RemapModelVolumetoCP should be at offset 0x1ED");
-		static_assert(sizeof(CS2::particles::C_OP_RemapModelVolumetoCP) == 0x1F0, "C_OP_RemapModelVolumetoCP size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nBBoxType) == 0x1D8, "m_nBBoxType in C_OP_RemapModelVolumetoCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nInControlPointNumber) == 0x1DC, "m_nInControlPointNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nOutControlPointNumber) == 0x1E0, "m_nOutControlPointNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nOutControlPointMaxNumber) == 0x1E4, "m_nOutControlPointMaxNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nField) == 0x1E8, "m_nField in C_OP_RemapModelVolumetoCP should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flInputMin) == 0x1EC, "m_flInputMin in C_OP_RemapModelVolumetoCP should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flInputMax) == 0x1F0, "m_flInputMax in C_OP_RemapModelVolumetoCP should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flOutputMin) == 0x1F4, "m_flOutputMin in C_OP_RemapModelVolumetoCP should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_flOutputMax) == 0x1F8, "m_flOutputMax in C_OP_RemapModelVolumetoCP should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_bBBoxOnly) == 0x1FC, "m_bBBoxOnly in C_OP_RemapModelVolumetoCP should be at offset 0x1FC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_bCubeRoot) == 0x1FD, "m_bCubeRoot in C_OP_RemapModelVolumetoCP should be at offset 0x1FD");
+		static_assert(sizeof(CS2::particles::C_OP_RemapModelVolumetoCP) == 0x200, "C_OP_RemapModelVolumetoCP size should be 0x200");
 	}
 }

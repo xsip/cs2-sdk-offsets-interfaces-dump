@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x8B0
+			// Class size: 0x900
 			namespace C_OP_SetSingleControlPointPosition /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_bSetOnce = 0x1c8; // bool m_bSetOnce; |  0x1c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nCP1 = 0x1cc; // int32_t m_nCP1; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCP1Pos = 0x1d0; // particleslib::CParticleCollectionVecInput m_vecCP1Pos; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_transformInput = 0x848; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_bSetOnce = 0x1d8; // bool m_bSetOnce; |  0x1d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nCP1 = 0x1dc; // int32_t m_nCP1; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecCP1Pos = 0x1e0; // particleslib::CParticleCollectionVecInput m_vecCP1Pos; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_transformInput = 0x898; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
 			}
 		}
 	}

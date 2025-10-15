@@ -23,11 +23,11 @@ namespace CS2 {
 			GlobalTypes::WorldGroupId_t m_worldGroupId; // 0x38 | Schema_Atomic | Size: 0x4
 			uint32_t m_fDataObjectTypes; // 0x3c | Schema_Builtin | Size: 0x4
 			networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x40 | Schema_DeclaredClass | Size: 0x4
-			S2_PAD(0x14);
-			entity2::CEntityIdentity* m_pPrev; // 0x58 | Schema_Ptr | Size: 0x8
-			entity2::CEntityIdentity* m_pNext; // 0x60 | Schema_Ptr | Size: 0x8
-			entity2::CEntityIdentity* m_pPrevByClass; // 0x68 | Schema_Ptr | Size: 0x8
-			entity2::CEntityIdentity* m_pNextByClass; // 0x70 | Schema_Ptr | Size: 0x8
+			S2_PAD(0xc);
+			entity2::CEntityIdentity* m_pPrev; // 0x50 | Schema_Ptr | Size: 0x8
+			entity2::CEntityIdentity* m_pNext; // 0x58 | Schema_Ptr | Size: 0x8
+			entity2::CEntityIdentity* m_pPrevByClass; // 0x60 | Schema_Ptr | Size: 0x8
+			entity2::CEntityIdentity* m_pNextByClass; // 0x68 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_nameStringableIndex) == 0x14, "m_nameStringableIndex in CEntityIdentity should be at offset 0x14");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_name) == 0x18, "m_name in CEntityIdentity should be at offset 0x18");
@@ -36,10 +36,10 @@ namespace CS2 {
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_worldGroupId) == 0x38, "m_worldGroupId in CEntityIdentity should be at offset 0x38");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_fDataObjectTypes) == 0x3C, "m_fDataObjectTypes in CEntityIdentity should be at offset 0x3C");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_PathIndex) == 0x40, "m_PathIndex in CEntityIdentity should be at offset 0x40");
-		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pPrev) == 0x58, "m_pPrev in CEntityIdentity should be at offset 0x58");
-		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pNext) == 0x60, "m_pNext in CEntityIdentity should be at offset 0x60");
-		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pPrevByClass) == 0x68, "m_pPrevByClass in CEntityIdentity should be at offset 0x68");
-		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pNextByClass) == 0x70, "m_pNextByClass in CEntityIdentity should be at offset 0x70");
-		static_assert(sizeof(CS2::entity2::CEntityIdentity) == 0x78, "CEntityIdentity size should be 0x78");
+		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pPrev) == 0x50, "m_pPrev in CEntityIdentity should be at offset 0x50");
+		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pNext) == 0x58, "m_pNext in CEntityIdentity should be at offset 0x58");
+		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pPrevByClass) == 0x60, "m_pPrevByClass in CEntityIdentity should be at offset 0x60");
+		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pNextByClass) == 0x68, "m_pNextByClass in CEntityIdentity should be at offset 0x68");
+		static_assert(sizeof(CS2::entity2::CEntityIdentity) == 0x70, "CEntityIdentity size should be 0x70");
 	}
 }

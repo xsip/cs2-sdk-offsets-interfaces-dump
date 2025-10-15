@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xDB8
+			// Class size: 0xE48
 			namespace C_OP_SpringToVectorConstraint /*: public CS2::particles::CParticleFunctionConstraint*/ {
-				constexpr std::ptrdiff_t m_flRestLength = 0x1c0; // particleslib::CPerParticleFloatInput m_flRestLength; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flMinDistance = 0x320; // particleslib::CPerParticleFloatInput m_flMinDistance; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flMaxDistance = 0x480; // particleslib::CPerParticleFloatInput m_flMaxDistance; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flRestingLength = 0x5e0; // particleslib::CPerParticleFloatInput m_flRestingLength; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vecAnchorVector = 0x740; // particleslib::CPerParticleVecInput m_vecAnchorVector; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_flRestLength = 0x1d0; // particleslib::CPerParticleFloatInput m_flRestLength; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMinDistance = 0x340; // particleslib::CPerParticleFloatInput m_flMinDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMaxDistance = 0x4b0; // particleslib::CPerParticleFloatInput m_flMaxDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRestingLength = 0x620; // particleslib::CPerParticleFloatInput m_flRestingLength; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecAnchorVector = 0x790; // particleslib::CPerParticleVecInput m_vecAnchorVector; |  Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

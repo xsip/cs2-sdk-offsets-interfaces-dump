@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x8B8
+			// Class size: 0x8A0
 			namespace CEnvLaser /*: public CS2::server::CBeam*/ {
-				constexpr std::ptrdiff_t m_iszLaserTarget = 0x890; // GlobalTypes::CUtlSymbolLarge m_iszLaserTarget; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pSprite = 0x898; // server::CSprite* m_pSprite; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSpriteName = 0x8a0; // GlobalTypes::CUtlSymbolLarge m_iszSpriteName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_firePosition = 0x8a8; // GlobalTypes::Vector m_firePosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flStartFrame = 0x8b4; // float32 m_flStartFrame; |  0x8b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszLaserTarget = 0x878; // GlobalTypes::CUtlSymbolLarge m_iszLaserTarget; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pSprite = 0x880; // server::CSprite* m_pSprite; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSpriteName = 0x888; // GlobalTypes::CUtlSymbolLarge m_iszSpriteName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_firePosition = 0x890; // GlobalTypes::Vector m_firePosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flStartFrame = 0x89c; // float32 m_flStartFrame; |  0x89c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

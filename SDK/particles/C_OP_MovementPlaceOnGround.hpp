@@ -16,45 +16,45 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MovementPlaceOnGround : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CPerParticleFloatInput m_flOffset; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flMaxTraceLength; // 0x320 | Schema_Builtin | Size: 0x4
-			float32 m_flTolerance; // 0x324 | Schema_Builtin | Size: 0x4
-			float32 m_flTraceOffset; // 0x328 | Schema_Builtin | Size: 0x4
-			float32 m_flLerpRate; // 0x32c | Schema_Builtin | Size: 0x4
-			char m_CollisionGroupName[128]; // 0x330 | Schema_FixedArray | Size: 0x80
-			particles::ParticleTraceSet_t m_nTraceSet; // 0x3b0 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nRefCP1; // 0x3b4 | Schema_Builtin | Size: 0x4
-			int32_t m_nRefCP2; // 0x3b8 | Schema_Builtin | Size: 0x4
-			int32_t m_nLerpCP; // 0x3bc | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flOffset; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flMaxTraceLength; // 0x340 | Schema_Builtin | Size: 0x4
+			float32 m_flTolerance; // 0x344 | Schema_Builtin | Size: 0x4
+			float32 m_flTraceOffset; // 0x348 | Schema_Builtin | Size: 0x4
+			float32 m_flLerpRate; // 0x34c | Schema_Builtin | Size: 0x4
+			char m_CollisionGroupName[128]; // 0x350 | Schema_FixedArray | Size: 0x80
+			particles::ParticleTraceSet_t m_nTraceSet; // 0x3d0 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nRefCP1; // 0x3d4 | Schema_Builtin | Size: 0x4
+			int32_t m_nRefCP2; // 0x3d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nLerpCP; // 0x3dc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);
-			particles::ParticleTraceMissBehavior_t m_nTraceMissBehavior; // 0x3c8 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bIncludeShotHull; // 0x3cc | Schema_Builtin | Size: 0x1
-			bool m_bIncludeWater; // 0x3cd | Schema_Builtin | Size: 0x1
+			particles::ParticleTraceMissBehavior_t m_nTraceMissBehavior; // 0x3e8 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bIncludeShotHull; // 0x3ec | Schema_Builtin | Size: 0x1
+			bool m_bIncludeWater; // 0x3ed | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			bool m_bSetNormal; // 0x3d0 | Schema_Builtin | Size: 0x1
-			bool m_bScaleOffset; // 0x3d1 | Schema_Builtin | Size: 0x1
+			bool m_bSetNormal; // 0x3f0 | Schema_Builtin | Size: 0x1
+			bool m_bScaleOffset; // 0x3f1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nPreserveOffsetCP; // 0x3d4 | Schema_Builtin | Size: 0x4
-			int32_t m_nIgnoreCP; // 0x3d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nPreserveOffsetCP; // 0x3f4 | Schema_Builtin | Size: 0x4
+			int32_t m_nIgnoreCP; // 0x3f8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flOffset) == 0x1C0, "m_flOffset in C_OP_MovementPlaceOnGround should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flMaxTraceLength) == 0x320, "m_flMaxTraceLength in C_OP_MovementPlaceOnGround should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flTolerance) == 0x324, "m_flTolerance in C_OP_MovementPlaceOnGround should be at offset 0x324");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flTraceOffset) == 0x328, "m_flTraceOffset in C_OP_MovementPlaceOnGround should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flLerpRate) == 0x32C, "m_flLerpRate in C_OP_MovementPlaceOnGround should be at offset 0x32C");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_CollisionGroupName) == 0x330, "m_CollisionGroupName in C_OP_MovementPlaceOnGround should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nTraceSet) == 0x3B0, "m_nTraceSet in C_OP_MovementPlaceOnGround should be at offset 0x3B0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nRefCP1) == 0x3B4, "m_nRefCP1 in C_OP_MovementPlaceOnGround should be at offset 0x3B4");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nRefCP2) == 0x3B8, "m_nRefCP2 in C_OP_MovementPlaceOnGround should be at offset 0x3B8");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nLerpCP) == 0x3BC, "m_nLerpCP in C_OP_MovementPlaceOnGround should be at offset 0x3BC");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nTraceMissBehavior) == 0x3C8, "m_nTraceMissBehavior in C_OP_MovementPlaceOnGround should be at offset 0x3C8");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bIncludeShotHull) == 0x3CC, "m_bIncludeShotHull in C_OP_MovementPlaceOnGround should be at offset 0x3CC");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bIncludeWater) == 0x3CD, "m_bIncludeWater in C_OP_MovementPlaceOnGround should be at offset 0x3CD");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bSetNormal) == 0x3D0, "m_bSetNormal in C_OP_MovementPlaceOnGround should be at offset 0x3D0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bScaleOffset) == 0x3D1, "m_bScaleOffset in C_OP_MovementPlaceOnGround should be at offset 0x3D1");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nPreserveOffsetCP) == 0x3D4, "m_nPreserveOffsetCP in C_OP_MovementPlaceOnGround should be at offset 0x3D4");
-		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nIgnoreCP) == 0x3D8, "m_nIgnoreCP in C_OP_MovementPlaceOnGround should be at offset 0x3D8");
-		static_assert(sizeof(CS2::particles::C_OP_MovementPlaceOnGround) == 0x3E0, "C_OP_MovementPlaceOnGround size should be 0x3E0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flOffset) == 0x1D0, "m_flOffset in C_OP_MovementPlaceOnGround should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flMaxTraceLength) == 0x340, "m_flMaxTraceLength in C_OP_MovementPlaceOnGround should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flTolerance) == 0x344, "m_flTolerance in C_OP_MovementPlaceOnGround should be at offset 0x344");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flTraceOffset) == 0x348, "m_flTraceOffset in C_OP_MovementPlaceOnGround should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flLerpRate) == 0x34C, "m_flLerpRate in C_OP_MovementPlaceOnGround should be at offset 0x34C");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_CollisionGroupName) == 0x350, "m_CollisionGroupName in C_OP_MovementPlaceOnGround should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nTraceSet) == 0x3D0, "m_nTraceSet in C_OP_MovementPlaceOnGround should be at offset 0x3D0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nRefCP1) == 0x3D4, "m_nRefCP1 in C_OP_MovementPlaceOnGround should be at offset 0x3D4");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nRefCP2) == 0x3D8, "m_nRefCP2 in C_OP_MovementPlaceOnGround should be at offset 0x3D8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nLerpCP) == 0x3DC, "m_nLerpCP in C_OP_MovementPlaceOnGround should be at offset 0x3DC");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nTraceMissBehavior) == 0x3E8, "m_nTraceMissBehavior in C_OP_MovementPlaceOnGround should be at offset 0x3E8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bIncludeShotHull) == 0x3EC, "m_bIncludeShotHull in C_OP_MovementPlaceOnGround should be at offset 0x3EC");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bIncludeWater) == 0x3ED, "m_bIncludeWater in C_OP_MovementPlaceOnGround should be at offset 0x3ED");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bSetNormal) == 0x3F0, "m_bSetNormal in C_OP_MovementPlaceOnGround should be at offset 0x3F0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_bScaleOffset) == 0x3F1, "m_bScaleOffset in C_OP_MovementPlaceOnGround should be at offset 0x3F1");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nPreserveOffsetCP) == 0x3F4, "m_nPreserveOffsetCP in C_OP_MovementPlaceOnGround should be at offset 0x3F4");
+		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nIgnoreCP) == 0x3F8, "m_nIgnoreCP in C_OP_MovementPlaceOnGround should be at offset 0x3F8");
+		static_assert(sizeof(CS2::particles::C_OP_MovementPlaceOnGround) == 0x400, "C_OP_MovementPlaceOnGround size should be 0x400");
 	}
 }

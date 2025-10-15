@@ -8,22 +8,22 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1370
+			// Class size: 0x1430
 			namespace C_INIT_CreateOnModelAtHeight /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_bUseBones = 0x1c8; // bool m_bUseBones; |  0x1c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bForceZ = 0x1c9; // bool m_bForceZ; |  0x1c9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1cc; // int32_t m_nControlPointNumber; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nHeightCP = 0x1d0; // int32_t m_nHeightCP; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseWaterHeight = 0x1d4; // bool m_bUseWaterHeight; |  0x1d4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDesiredHeight = 0x1d8; // particleslib::CParticleCollectionFloatInput m_flDesiredHeight; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vecHitBoxScale = 0x338; // particleslib::CParticleCollectionVecInput m_vecHitBoxScale; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecDirectionBias = 0x9b0; // particleslib::CParticleCollectionVecInput m_vecDirectionBias; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_nBiasType = 0x1028; // particles::ParticleHitboxBiasType_t m_nBiasType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bLocalCoords = 0x102c; // bool m_bLocalCoords; |  0x102c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPreferMovingBoxes = 0x102d; // bool m_bPreferMovingBoxes; |  0x102d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_HitboxSetName = 0x102e; // char m_HitboxSetName[128]; |  0x102e | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_flHitboxVelocityScale = 0x10b0; // particleslib::CParticleCollectionFloatInput m_flHitboxVelocityScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flMaxBoneVelocity = 0x1210; // particleslib::CParticleCollectionFloatInput m_flMaxBoneVelocity; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_bUseBones = 0x1d8; // bool m_bUseBones; |  0x1d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bForceZ = 0x1d9; // bool m_bForceZ; |  0x1d9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1dc; // int32_t m_nControlPointNumber; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nHeightCP = 0x1e0; // int32_t m_nHeightCP; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseWaterHeight = 0x1e4; // bool m_bUseWaterHeight; |  0x1e4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDesiredHeight = 0x1e8; // particleslib::CParticleCollectionFloatInput m_flDesiredHeight; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecHitBoxScale = 0x358; // particleslib::CParticleCollectionVecInput m_vecHitBoxScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecDirectionBias = 0xa10; // particleslib::CParticleCollectionVecInput m_vecDirectionBias; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nBiasType = 0x10c8; // particles::ParticleHitboxBiasType_t m_nBiasType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bLocalCoords = 0x10cc; // bool m_bLocalCoords; |  0x10cc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPreferMovingBoxes = 0x10cd; // bool m_bPreferMovingBoxes; |  0x10cd | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_HitboxSetName = 0x10ce; // char m_HitboxSetName[128]; |  0x10ce | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_flHitboxVelocityScale = 0x1150; // particleslib::CParticleCollectionFloatInput m_flHitboxVelocityScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMaxBoneVelocity = 0x12c0; // particleslib::CParticleCollectionFloatInput m_flMaxBoneVelocity; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

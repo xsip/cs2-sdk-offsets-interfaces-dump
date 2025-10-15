@@ -14,16 +14,16 @@ namespace CS2 {
 		class CMarkupVolumeWithRef : public CS2::server::CMarkupVolumeTagged {
 		public:
 			S2_PAD(0x8);
-			bool m_bUseRef; // 0x838 | Schema_Builtin | Size: 0x1
+			bool m_bUseRef; // 0x820 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vRefPosEntitySpace; // 0x83c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vRefPosWorldSpace; // 0x848 | Schema_Atomic | Size: 0xc
-			float32 m_flRefDot; // 0x854 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vRefPosEntitySpace; // 0x824 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vRefPosWorldSpace; // 0x830 | Schema_Atomic | Size: 0xc
+			float32 m_flRefDot; // 0x83c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_bUseRef) == 0x838, "m_bUseRef in CMarkupVolumeWithRef should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_vRefPosEntitySpace) == 0x83C, "m_vRefPosEntitySpace in CMarkupVolumeWithRef should be at offset 0x83C");
-		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_vRefPosWorldSpace) == 0x848, "m_vRefPosWorldSpace in CMarkupVolumeWithRef should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_flRefDot) == 0x854, "m_flRefDot in CMarkupVolumeWithRef should be at offset 0x854");
-		static_assert(sizeof(CS2::server::CMarkupVolumeWithRef) == 0x858, "CMarkupVolumeWithRef size should be 0x858");
+		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_bUseRef) == 0x820, "m_bUseRef in CMarkupVolumeWithRef should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_vRefPosEntitySpace) == 0x824, "m_vRefPosEntitySpace in CMarkupVolumeWithRef should be at offset 0x824");
+		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_vRefPosWorldSpace) == 0x830, "m_vRefPosWorldSpace in CMarkupVolumeWithRef should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_flRefDot) == 0x83C, "m_flRefDot in CMarkupVolumeWithRef should be at offset 0x83C");
+		static_assert(sizeof(CS2::server::CMarkupVolumeWithRef) == 0x840, "CMarkupVolumeWithRef size should be 0x840");
 	}
 }

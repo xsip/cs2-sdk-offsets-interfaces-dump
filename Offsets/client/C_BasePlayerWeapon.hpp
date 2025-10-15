@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1930
+			// Class size: 0x1918
 			namespace C_BasePlayerWeapon /*: public CS2::client::C_EconEntity*/ {
-				constexpr std::ptrdiff_t m_nNextPrimaryAttackTick = 0x18f8; // entity2::GameTick_t m_nNextPrimaryAttackTick; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flNextPrimaryAttackTickRatio = 0x18fc; // float32 m_flNextPrimaryAttackTickRatio; |  0x18fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNextSecondaryAttackTick = 0x1900; // entity2::GameTick_t m_nNextSecondaryAttackTick; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flNextSecondaryAttackTickRatio = 0x1904; // float32 m_flNextSecondaryAttackTickRatio; |  0x1904 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iClip1 = 0x1908; // int32_t m_iClip1; |  0x1908 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iClip2 = 0x190c; // int32_t m_iClip2; |  0x190c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pReserveAmmo = 0x1910; // int32_t m_pReserveAmmo[2]; |  0x1910 | Schema_FixedArray | Size: 0x8
+				constexpr std::ptrdiff_t m_nNextPrimaryAttackTick = 0x18e0; // entity2::GameTick_t m_nNextPrimaryAttackTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextPrimaryAttackTickRatio = 0x18e4; // float32 m_flNextPrimaryAttackTickRatio; |  0x18e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nNextSecondaryAttackTick = 0x18e8; // entity2::GameTick_t m_nNextSecondaryAttackTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextSecondaryAttackTickRatio = 0x18ec; // float32 m_flNextSecondaryAttackTickRatio; |  0x18ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iClip1 = 0x18f0; // int32_t m_iClip1; |  0x18f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iClip2 = 0x18f4; // int32_t m_iClip2; |  0x18f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pReserveAmmo = 0x18f8; // int32_t m_pReserveAmmo[2]; |  0x18f8 | Schema_FixedArray | Size: 0x8
 			}
 		}
 	}

@@ -13,22 +13,22 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointsToModelParticles : public CS2::particles::CParticleFunctionOperator {
 		public:
-			char m_HitboxSetName[128]; // 0x1c0 | Schema_FixedArray | Size: 0x80
-			char m_AttachmentName[128]; // 0x240 | Schema_FixedArray | Size: 0x80
-			int32_t m_nFirstControlPoint; // 0x2c0 | Schema_Builtin | Size: 0x4
-			int32_t m_nNumControlPoints; // 0x2c4 | Schema_Builtin | Size: 0x4
-			int32_t m_nFirstSourcePoint; // 0x2c8 | Schema_Builtin | Size: 0x4
-			bool m_bSkin; // 0x2cc | Schema_Builtin | Size: 0x1
-			bool m_bAttachment; // 0x2cd | Schema_Builtin | Size: 0x1
+			char m_HitboxSetName[128]; // 0x1d0 | Schema_FixedArray | Size: 0x80
+			char m_AttachmentName[128]; // 0x250 | Schema_FixedArray | Size: 0x80
+			int32_t m_nFirstControlPoint; // 0x2d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nNumControlPoints; // 0x2d4 | Schema_Builtin | Size: 0x4
+			int32_t m_nFirstSourcePoint; // 0x2d8 | Schema_Builtin | Size: 0x4
+			bool m_bSkin; // 0x2dc | Schema_Builtin | Size: 0x1
+			bool m_bAttachment; // 0x2dd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_HitboxSetName) == 0x1C0, "m_HitboxSetName in C_OP_SetControlPointsToModelParticles should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_AttachmentName) == 0x240, "m_AttachmentName in C_OP_SetControlPointsToModelParticles should be at offset 0x240");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_nFirstControlPoint) == 0x2C0, "m_nFirstControlPoint in C_OP_SetControlPointsToModelParticles should be at offset 0x2C0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_nNumControlPoints) == 0x2C4, "m_nNumControlPoints in C_OP_SetControlPointsToModelParticles should be at offset 0x2C4");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_nFirstSourcePoint) == 0x2C8, "m_nFirstSourcePoint in C_OP_SetControlPointsToModelParticles should be at offset 0x2C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_bSkin) == 0x2CC, "m_bSkin in C_OP_SetControlPointsToModelParticles should be at offset 0x2CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_bAttachment) == 0x2CD, "m_bAttachment in C_OP_SetControlPointsToModelParticles should be at offset 0x2CD");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointsToModelParticles) == 0x2D0, "C_OP_SetControlPointsToModelParticles size should be 0x2D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_HitboxSetName) == 0x1D0, "m_HitboxSetName in C_OP_SetControlPointsToModelParticles should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_AttachmentName) == 0x250, "m_AttachmentName in C_OP_SetControlPointsToModelParticles should be at offset 0x250");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_nFirstControlPoint) == 0x2D0, "m_nFirstControlPoint in C_OP_SetControlPointsToModelParticles should be at offset 0x2D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_nNumControlPoints) == 0x2D4, "m_nNumControlPoints in C_OP_SetControlPointsToModelParticles should be at offset 0x2D4");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_nFirstSourcePoint) == 0x2D8, "m_nFirstSourcePoint in C_OP_SetControlPointsToModelParticles should be at offset 0x2D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_bSkin) == 0x2DC, "m_bSkin in C_OP_SetControlPointsToModelParticles should be at offset 0x2DC");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_bAttachment) == 0x2DD, "m_bAttachment in C_OP_SetControlPointsToModelParticles should be at offset 0x2DD");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointsToModelParticles) == 0x2E0, "C_OP_SetControlPointsToModelParticles size should be 0x2E0");
 	}
 }

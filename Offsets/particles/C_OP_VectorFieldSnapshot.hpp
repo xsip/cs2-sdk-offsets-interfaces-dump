@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x9B8
+			// Class size: 0xA18
 			namespace C_OP_VectorFieldSnapshot /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1c0; // int32_t m_nControlPointNumber; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAttributeToWrite = 0x1c4; // particles::ParticleAttributeIndex_t m_nAttributeToWrite; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nLocalSpaceCP = 0x1c8; // int32_t m_nLocalSpaceCP; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInterpolation = 0x1d0; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vecScale = 0x330; // particleslib::CPerParticleVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flBoundaryDampening = 0x9a8; // float32 m_flBoundaryDampening; |  0x9a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSetVelocity = 0x9ac; // bool m_bSetVelocity; |  0x9ac | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLockToSurface = 0x9ad; // bool m_bLockToSurface; |  0x9ad | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flGridSpacing = 0x9b0; // float32 m_flGridSpacing; |  0x9b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1d0; // int32_t m_nControlPointNumber; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nAttributeToWrite = 0x1d4; // particles::ParticleAttributeIndex_t m_nAttributeToWrite; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nLocalSpaceCP = 0x1d8; // int32_t m_nLocalSpaceCP; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInterpolation = 0x1e0; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecScale = 0x350; // particleslib::CPerParticleVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flBoundaryDampening = 0xa08; // float32 m_flBoundaryDampening; |  0xa08 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSetVelocity = 0xa0c; // bool m_bSetVelocity; |  0xa0c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLockToSurface = 0xa0d; // bool m_bLockToSurface; |  0xa0d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flGridSpacing = 0xa10; // float32 m_flGridSpacing; |  0xa10 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

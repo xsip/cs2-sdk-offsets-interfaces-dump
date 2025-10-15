@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xA08
+			// Class size: 0xA68
 			namespace C_OP_MovementRotateParticleAroundAxis /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_vecRotAxis = 0x1c0; // particleslib::CParticleCollectionVecInput m_vecRotAxis; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flRotRate = 0x838; // particleslib::CParticleCollectionFloatInput m_flRotRate; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_TransformInput = 0x998; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_bLocalSpace = 0xa00; // bool m_bLocalSpace; |  0xa00 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecRotAxis = 0x1d0; // particleslib::CParticleCollectionVecInput m_vecRotAxis; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flRotRate = 0x888; // particleslib::CParticleCollectionFloatInput m_flRotRate; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_TransformInput = 0x9f8; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_bLocalSpace = 0xa60; // bool m_bLocalSpace; |  0xa60 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

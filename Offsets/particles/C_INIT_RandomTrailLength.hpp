@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1D8
+			// Class size: 0x1E8
 			namespace C_INIT_RandomTrailLength /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_flMinLength = 0x1c8; // float32 m_flMinLength; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxLength = 0x1cc; // float32 m_flMaxLength; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLengthRandExponent = 0x1d0; // float32 m_flLengthRandExponent; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMinLength = 0x1d8; // float32 m_flMinLength; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxLength = 0x1dc; // float32 m_flMaxLength; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLengthRandExponent = 0x1e0; // float32 m_flLengthRandExponent; |  0x1e0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -6,6 +6,7 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/server/CPhysConstraint.hpp>
+#include <SDK/entity2/GameTime_t.hpp>
 
 
 
@@ -27,8 +28,11 @@ namespace CS2 {
 			float32 m_flLinearFrequency; // 0x5d0 | Schema_Builtin | Size: 0x4
 			float32 m_flLinarDampingRatio; // 0x5d4 | Schema_Builtin | Size: 0x4
 			float32 m_flJointFriction; // 0x5d8 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x24);
-			GlobalTypes::Vector m_vPreSolveAnchorPos; // 0x600 | Schema_Atomic | Size: 0xc
+			float32 m_flTransitionTime; // 0x5dc | Schema_Builtin | Size: 0x4
+			S2_PAD(0x20);
+			GlobalTypes::VectorWS m_vPreSolveAnchorPos; // 0x600 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_StartTransitionTime; // 0x60c | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vTangentSpaceAnchorAtTransitionStart; // 0x610 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_vAnchorOffsetRestore) == 0x5B0, "m_vAnchorOffsetRestore in CSplineConstraint should be at offset 0x5B0");
@@ -41,7 +45,10 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_flLinearFrequency) == 0x5D0, "m_flLinearFrequency in CSplineConstraint should be at offset 0x5D0");
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_flLinarDampingRatio) == 0x5D4, "m_flLinarDampingRatio in CSplineConstraint should be at offset 0x5D4");
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_flJointFriction) == 0x5D8, "m_flJointFriction in CSplineConstraint should be at offset 0x5D8");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_flTransitionTime) == 0x5DC, "m_flTransitionTime in CSplineConstraint should be at offset 0x5DC");
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_vPreSolveAnchorPos) == 0x600, "m_vPreSolveAnchorPos in CSplineConstraint should be at offset 0x600");
-		static_assert(sizeof(CS2::server::CSplineConstraint) == 0x610, "CSplineConstraint size should be 0x610");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_StartTransitionTime) == 0x60C, "m_StartTransitionTime in CSplineConstraint should be at offset 0x60C");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_vTangentSpaceAnchorAtTransitionStart) == 0x610, "m_vTangentSpaceAnchorAtTransitionStart in CSplineConstraint should be at offset 0x610");
+		static_assert(sizeof(CS2::server::CSplineConstraint) == 0x620, "CSplineConstraint size should be 0x620");
 	}
 }

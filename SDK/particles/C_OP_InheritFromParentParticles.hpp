@@ -14,16 +14,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_InheritFromParentParticles : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_flScale; // 0x1c0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nIncrement; // 0x1c8 | Schema_Builtin | Size: 0x4
-			bool m_bRandomDistribution; // 0x1cc | Schema_Builtin | Size: 0x1
+			float32 m_flScale; // 0x1d0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nIncrement; // 0x1d8 | Schema_Builtin | Size: 0x4
+			bool m_bRandomDistribution; // 0x1dc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_flScale) == 0x1C0, "m_flScale in C_OP_InheritFromParentParticles should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_nFieldOutput) == 0x1C4, "m_nFieldOutput in C_OP_InheritFromParentParticles should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_nIncrement) == 0x1C8, "m_nIncrement in C_OP_InheritFromParentParticles should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_bRandomDistribution) == 0x1CC, "m_bRandomDistribution in C_OP_InheritFromParentParticles should be at offset 0x1CC");
-		static_assert(sizeof(CS2::particles::C_OP_InheritFromParentParticles) == 0x1D0, "C_OP_InheritFromParentParticles size should be 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_flScale) == 0x1D0, "m_flScale in C_OP_InheritFromParentParticles should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_InheritFromParentParticles should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_nIncrement) == 0x1D8, "m_nIncrement in C_OP_InheritFromParentParticles should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticles, m_bRandomDistribution) == 0x1DC, "m_bRandomDistribution in C_OP_InheritFromParentParticles should be at offset 0x1DC");
+		static_assert(sizeof(CS2::particles::C_OP_InheritFromParentParticles) == 0x1E0, "C_OP_InheritFromParentParticles size should be 0x1E0");
 	}
 }

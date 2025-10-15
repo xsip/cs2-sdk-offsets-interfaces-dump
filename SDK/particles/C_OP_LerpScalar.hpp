@@ -15,16 +15,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LerpScalar : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flStartTime; // 0x328 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime; // 0x32c | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flOutput; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flStartTime; // 0x348 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime; // 0x34c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_LerpScalar should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flOutput) == 0x1C8, "m_flOutput in C_OP_LerpScalar should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flStartTime) == 0x328, "m_flStartTime in C_OP_LerpScalar should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flEndTime) == 0x32C, "m_flEndTime in C_OP_LerpScalar should be at offset 0x32C");
-		static_assert(sizeof(CS2::particles::C_OP_LerpScalar) == 0x330, "C_OP_LerpScalar size should be 0x330");
+		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_LerpScalar should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flOutput) == 0x1D8, "m_flOutput in C_OP_LerpScalar should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flStartTime) == 0x348, "m_flStartTime in C_OP_LerpScalar should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flEndTime) == 0x34C, "m_flEndTime in C_OP_LerpScalar should be at offset 0x34C");
+		static_assert(sizeof(CS2::particles::C_OP_LerpScalar) == 0x350, "C_OP_LerpScalar size should be 0x350");
 	}
 }

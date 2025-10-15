@@ -14,12 +14,12 @@ namespace CS2 {
 	namespace client {
 		class C_WeaponTaser : public CS2::client::C_CSWeaponBaseGun {
 		public:
-			entity2::GameTime_t m_fFireTime; // 0x1fc0 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nLastAttackTick; // 0x1fc4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_fFireTime; // 0x1fb0 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nLastAttackTick; // 0x1fb4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_WeaponTaser, m_fFireTime) == 0x1FC0, "m_fFireTime in C_WeaponTaser should be at offset 0x1FC0");
-		static_assert(offsetof(CS2::client::C_WeaponTaser, m_nLastAttackTick) == 0x1FC4, "m_nLastAttackTick in C_WeaponTaser should be at offset 0x1FC4");
-		static_assert(sizeof(CS2::client::C_WeaponTaser) == 0x1FD0, "C_WeaponTaser size should be 0x1FD0");
+		static_assert(offsetof(CS2::client::C_WeaponTaser, m_fFireTime) == 0x1FB0, "m_fFireTime in C_WeaponTaser should be at offset 0x1FB0");
+		static_assert(offsetof(CS2::client::C_WeaponTaser, m_nLastAttackTick) == 0x1FB4, "m_nLastAttackTick in C_WeaponTaser should be at offset 0x1FB4");
+		static_assert(sizeof(CS2::client::C_WeaponTaser) == 0x1FC0, "C_WeaponTaser size should be 0x1FC0");
 	}
 }

@@ -14,16 +14,16 @@ namespace CS2 {
 	namespace server {
 		class CGameMoney : public CS2::server::CRulePointEntity {
 		public:
-			entity2::CEntityIOOutput m_OnMoneySpent; // 0x800 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMoneySpentFail; // 0x828 | Schema_DeclaredClass | Size: 0x28
-			int32_t m_nMoney; // 0x850 | Schema_Builtin | Size: 0x4
+			entity2::CEntityIOOutput m_OnMoneySpent; // 0x7e8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnMoneySpentFail; // 0x810 | Schema_DeclaredClass | Size: 0x28
+			int32_t m_nMoney; // 0x838 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_strAwardText; // 0x858 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strAwardText; // 0x840 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CGameMoney, m_OnMoneySpent) == 0x800, "m_OnMoneySpent in CGameMoney should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CGameMoney, m_OnMoneySpentFail) == 0x828, "m_OnMoneySpentFail in CGameMoney should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CGameMoney, m_nMoney) == 0x850, "m_nMoney in CGameMoney should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CGameMoney, m_strAwardText) == 0x858, "m_strAwardText in CGameMoney should be at offset 0x858");
-		static_assert(sizeof(CS2::server::CGameMoney) == 0x860, "CGameMoney size should be 0x860");
+		static_assert(offsetof(CS2::server::CGameMoney, m_OnMoneySpent) == 0x7E8, "m_OnMoneySpent in CGameMoney should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CGameMoney, m_OnMoneySpentFail) == 0x810, "m_OnMoneySpentFail in CGameMoney should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CGameMoney, m_nMoney) == 0x838, "m_nMoney in CGameMoney should be at offset 0x838");
+		static_assert(offsetof(CS2::server::CGameMoney, m_strAwardText) == 0x840, "m_strAwardText in CGameMoney should be at offset 0x840");
+		static_assert(sizeof(CS2::server::CGameMoney) == 0x848, "CGameMoney size should be 0x848");
 	}
 }

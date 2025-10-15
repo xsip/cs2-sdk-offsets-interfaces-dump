@@ -15,16 +15,16 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			GlobalTypes::Vector m_vecMin; // 0x1c8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecMax; // 0x1d4 | Schema_Atomic | Size: 0xc
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e0 | Schema_DeclaredClass | Size: 0x4
-			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1e4 | Schema_DeclaredClass | Size: 0x8
+			GlobalTypes::Vector m_vecMin; // 0x1d8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecMax; // 0x1e4 | Schema_Atomic | Size: 0xc
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1f0 | Schema_DeclaredClass | Size: 0x4
+			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1f4 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_vecMin) == 0x1C8, "m_vecMin in C_INIT_RandomVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_vecMax) == 0x1D4, "m_vecMax in C_INIT_RandomVector should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_nFieldOutput) == 0x1E0, "m_nFieldOutput in C_INIT_RandomVector should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_randomnessParameters) == 0x1E4, "m_randomnessParameters in C_INIT_RandomVector should be at offset 0x1E4");
-		static_assert(sizeof(CS2::particles::C_INIT_RandomVector) == 0x1F0, "C_INIT_RandomVector size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_vecMin) == 0x1D8, "m_vecMin in C_INIT_RandomVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_vecMax) == 0x1E4, "m_vecMax in C_INIT_RandomVector should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_nFieldOutput) == 0x1F0, "m_nFieldOutput in C_INIT_RandomVector should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVector, m_randomnessParameters) == 0x1F4, "m_randomnessParameters in C_INIT_RandomVector should be at offset 0x1F4");
+		static_assert(sizeof(CS2::particles::C_INIT_RandomVector) == 0x200, "C_INIT_RandomVector size should be 0x200");
 	}
 }

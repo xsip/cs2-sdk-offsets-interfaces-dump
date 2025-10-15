@@ -34,76 +34,76 @@ namespace CS2 {
 			char  m_Children[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0xa8);
 			int32_t m_nFirstMultipleOverride_BackwardCompat; // 0x178 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x94);
-			int32_t m_nInitialParticles; // 0x210 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxParticles; // 0x214 | Schema_Builtin | Size: 0x4
-			int32_t m_nGroupID; // 0x218 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_BoundingBoxMin; // 0x21c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_BoundingBoxMax; // 0x228 | Schema_Atomic | Size: 0xc
-			float32 m_flDepthSortBias; // 0x234 | Schema_Builtin | Size: 0x4
-			int32_t m_nSortOverridePositionCP; // 0x238 | Schema_Builtin | Size: 0x4
-			bool m_bInfiniteBounds; // 0x23c | Schema_Builtin | Size: 0x1
-			bool m_bEnableNamedValues; // 0x23d | Schema_Builtin | Size: 0x1
+			S2_PAD(0xdc);
+			int32_t m_nInitialParticles; // 0x258 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxParticles; // 0x25c | Schema_Builtin | Size: 0x4
+			int32_t m_nGroupID; // 0x260 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_BoundingBoxMin; // 0x264 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_BoundingBoxMax; // 0x270 | Schema_Atomic | Size: 0xc
+			float32 m_flDepthSortBias; // 0x27c | Schema_Builtin | Size: 0x4
+			int32_t m_nSortOverridePositionCP; // 0x280 | Schema_Builtin | Size: 0x4
+			bool m_bInfiniteBounds; // 0x284 | Schema_Builtin | Size: 0x1
+			bool m_bEnableNamedValues; // 0x285 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CUtlString m_NamedValueDomain; // 0x240 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlVector< ParticleNamedValueSource_t >* m_NamedValueLocals; // 0x248 | Schema_Atomic | Size: 0x18
-			char  m_NamedValueLocals[0x18]; // 0x248 | Schema_Atomic | Size: 0x18
-			GlobalTypes::Color m_ConstantColor; // 0x260 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Vector m_ConstantNormal; // 0x264 | Schema_Atomic | Size: 0xc
-			float32 m_flConstantRadius; // 0x270 | Schema_Builtin | Size: 0x4
-			float32 m_flConstantRotation; // 0x274 | Schema_Builtin | Size: 0x4
-			float32 m_flConstantRotationSpeed; // 0x278 | Schema_Builtin | Size: 0x4
-			float32 m_flConstantLifespan; // 0x27c | Schema_Builtin | Size: 0x4
-			int32_t m_nConstantSequenceNumber; // 0x280 | Schema_Builtin | Size: 0x4
-			int32_t m_nConstantSequenceNumber1; // 0x284 | Schema_Builtin | Size: 0x4
-			int32_t m_nSnapshotControlPoint; // 0x288 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_NamedValueDomain; // 0x288 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CUtlVector< ParticleNamedValueSource_t >* m_NamedValueLocals; // 0x290 | Schema_Atomic | Size: 0x18
+			char  m_NamedValueLocals[0x18]; // 0x290 | Schema_Atomic | Size: 0x18
+			GlobalTypes::Color m_ConstantColor; // 0x2a8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Vector m_ConstantNormal; // 0x2ac | Schema_Atomic | Size: 0xc
+			float32 m_flConstantRadius; // 0x2b8 | Schema_Builtin | Size: 0x4
+			float32 m_flConstantRotation; // 0x2bc | Schema_Builtin | Size: 0x4
+			float32 m_flConstantRotationSpeed; // 0x2c0 | Schema_Builtin | Size: 0x4
+			float32 m_flConstantLifespan; // 0x2c4 | Schema_Builtin | Size: 0x4
+			int32_t m_nConstantSequenceNumber; // 0x2c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nConstantSequenceNumber1; // 0x2cc | Schema_Builtin | Size: 0x4
+			int32_t m_nSnapshotControlPoint; // 0x2d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hSnapshot; // 0x290 | Schema_Atomic | Size: 0x8
-			char  m_hSnapshot[0x8]; // 0x290 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_pszCullReplacementName; // 0x298 | Schema_Atomic | Size: 0x8
-			char  m_pszCullReplacementName[0x8]; // 0x298 | Schema_Atomic | Size: 0x8
-			float32 m_flCullRadius; // 0x2a0 | Schema_Builtin | Size: 0x4
-			float32 m_flCullFillCost; // 0x2a4 | Schema_Builtin | Size: 0x4
-			int32_t m_nCullControlPoint; // 0x2a8 | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hSnapshot; // 0x2d8 | Schema_Atomic | Size: 0x8
+			char  m_hSnapshot[0x8]; // 0x2d8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_pszCullReplacementName; // 0x2e0 | Schema_Atomic | Size: 0x8
+			char  m_pszCullReplacementName[0x8]; // 0x2e0 | Schema_Atomic | Size: 0x8
+			float32 m_flCullRadius; // 0x2e8 | Schema_Builtin | Size: 0x4
+			float32 m_flCullFillCost; // 0x2ec | Schema_Builtin | Size: 0x4
+			int32_t m_nCullControlPoint; // 0x2f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hFallback; // 0x2b0 | Schema_Atomic | Size: 0x8
-			char  m_hFallback[0x8]; // 0x2b0 | Schema_Atomic | Size: 0x8
-			int32_t m_nFallbackMaxCount; // 0x2b8 | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hFallback; // 0x2f8 | Schema_Atomic | Size: 0x8
+			char  m_hFallback[0x8]; // 0x2f8 | Schema_Atomic | Size: 0x8
+			int32_t m_nFallbackMaxCount; // 0x300 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hLowViolenceDef; // 0x2c0 | Schema_Atomic | Size: 0x8
-			char  m_hLowViolenceDef[0x8]; // 0x2c0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hReferenceReplacement; // 0x2c8 | Schema_Atomic | Size: 0x8
-			char  m_hReferenceReplacement[0x8]; // 0x2c8 | Schema_Atomic | Size: 0x8
-			float32 m_flPreSimulationTime; // 0x2d0 | Schema_Builtin | Size: 0x4
-			float32 m_flStopSimulationAfterTime; // 0x2d4 | Schema_Builtin | Size: 0x4
-			float32 m_flMaximumTimeStep; // 0x2d8 | Schema_Builtin | Size: 0x4
-			float32 m_flMaximumSimTime; // 0x2dc | Schema_Builtin | Size: 0x4
-			float32 m_flMinimumSimTime; // 0x2e0 | Schema_Builtin | Size: 0x4
-			float32 m_flMinimumTimeStep; // 0x2e4 | Schema_Builtin | Size: 0x4
-			int32_t m_nMinimumFrames; // 0x2e8 | Schema_Builtin | Size: 0x4
-			int32_t m_nMinCPULevel; // 0x2ec | Schema_Builtin | Size: 0x4
-			int32_t m_nMinGPULevel; // 0x2f0 | Schema_Builtin | Size: 0x4
-			float32 m_flNoDrawTimeToGoToSleep; // 0x2f4 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxDrawDistance; // 0x2f8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartFadeDistance; // 0x2fc | Schema_Builtin | Size: 0x4
-			float32 m_flMaxCreationDistance; // 0x300 | Schema_Builtin | Size: 0x4
-			int32_t m_nAggregationMinAvailableParticles; // 0x304 | Schema_Builtin | Size: 0x4
-			float32 m_flAggregateRadius; // 0x308 | Schema_Builtin | Size: 0x4
-			bool m_bShouldBatch; // 0x30c | Schema_Builtin | Size: 0x1
-			bool m_bShouldHitboxesFallbackToRenderBounds; // 0x30d | Schema_Builtin | Size: 0x1
-			bool m_bShouldHitboxesFallbackToSnapshot; // 0x30e | Schema_Builtin | Size: 0x1
-			bool m_bShouldHitboxesFallbackToCollisionHulls; // 0x30f | Schema_Builtin | Size: 0x1
-			particles::InheritableBoolType_t m_nViewModelEffect; // 0x310 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bScreenSpaceEffect; // 0x314 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hLowViolenceDef; // 0x308 | Schema_Atomic | Size: 0x8
+			char  m_hLowViolenceDef[0x8]; // 0x308 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hReferenceReplacement; // 0x310 | Schema_Atomic | Size: 0x8
+			char  m_hReferenceReplacement[0x8]; // 0x310 | Schema_Atomic | Size: 0x8
+			float32 m_flPreSimulationTime; // 0x318 | Schema_Builtin | Size: 0x4
+			float32 m_flStopSimulationAfterTime; // 0x31c | Schema_Builtin | Size: 0x4
+			float32 m_flMaximumTimeStep; // 0x320 | Schema_Builtin | Size: 0x4
+			float32 m_flMaximumSimTime; // 0x324 | Schema_Builtin | Size: 0x4
+			float32 m_flMinimumSimTime; // 0x328 | Schema_Builtin | Size: 0x4
+			float32 m_flMinimumTimeStep; // 0x32c | Schema_Builtin | Size: 0x4
+			int32_t m_nMinimumFrames; // 0x330 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinCPULevel; // 0x334 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinGPULevel; // 0x338 | Schema_Builtin | Size: 0x4
+			float32 m_flNoDrawTimeToGoToSleep; // 0x33c | Schema_Builtin | Size: 0x4
+			float32 m_flMaxDrawDistance; // 0x340 | Schema_Builtin | Size: 0x4
+			float32 m_flStartFadeDistance; // 0x344 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxCreationDistance; // 0x348 | Schema_Builtin | Size: 0x4
+			int32_t m_nAggregationMinAvailableParticles; // 0x34c | Schema_Builtin | Size: 0x4
+			float32 m_flAggregateRadius; // 0x350 | Schema_Builtin | Size: 0x4
+			bool m_bShouldBatch; // 0x354 | Schema_Builtin | Size: 0x1
+			bool m_bShouldHitboxesFallbackToRenderBounds; // 0x355 | Schema_Builtin | Size: 0x1
+			bool m_bShouldHitboxesFallbackToSnapshot; // 0x356 | Schema_Builtin | Size: 0x1
+			bool m_bShouldHitboxesFallbackToCollisionHulls; // 0x357 | Schema_Builtin | Size: 0x1
+			particles::InheritableBoolType_t m_nViewModelEffect; // 0x358 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bScreenSpaceEffect; // 0x35c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CUtlSymbolLarge m_pszTargetLayerID; // 0x318 | Schema_Atomic | Size: 0x8
-			int32_t m_nSkipRenderControlPoint; // 0x320 | Schema_Builtin | Size: 0x4
-			int32_t m_nAllowRenderControlPoint; // 0x324 | Schema_Builtin | Size: 0x4
-			bool m_bShouldSort; // 0x328 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_pszTargetLayerID; // 0x360 | Schema_Atomic | Size: 0x8
+			int32_t m_nSkipRenderControlPoint; // 0x368 | Schema_Builtin | Size: 0x4
+			int32_t m_nAllowRenderControlPoint; // 0x36c | Schema_Builtin | Size: 0x4
+			bool m_bShouldSort; // 0x370 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x47);
-			// GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; // 0x370 | Schema_Atomic | Size: 0x18
-			char  m_controlPointConfigurations[0x18]; // 0x370 | Schema_Atomic | Size: 0x18
-			S2_PAD(0x58); // End padding
+			// GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; // 0x3b8 | Schema_Atomic | Size: 0x18
+			char  m_controlPointConfigurations[0x18]; // 0x3b8 | Schema_Atomic | Size: 0x18
+			S2_PAD(0x70); // End padding
 		};
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nBehaviorVersion) == 0x8, "m_nBehaviorVersion in CParticleSystemDefinition should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_PreEmissionOperators) == 0x10, "m_PreEmissionOperators in CParticleSystemDefinition should be at offset 0x10");
@@ -115,61 +115,61 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_Renderers) == 0xA0, "m_Renderers in CParticleSystemDefinition should be at offset 0xA0");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_Children) == 0xB8, "m_Children in CParticleSystemDefinition should be at offset 0xB8");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nFirstMultipleOverride_BackwardCompat) == 0x178, "m_nFirstMultipleOverride_BackwardCompat in CParticleSystemDefinition should be at offset 0x178");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nInitialParticles) == 0x210, "m_nInitialParticles in CParticleSystemDefinition should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMaxParticles) == 0x214, "m_nMaxParticles in CParticleSystemDefinition should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nGroupID) == 0x218, "m_nGroupID in CParticleSystemDefinition should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_BoundingBoxMin) == 0x21C, "m_BoundingBoxMin in CParticleSystemDefinition should be at offset 0x21C");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_BoundingBoxMax) == 0x228, "m_BoundingBoxMax in CParticleSystemDefinition should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flDepthSortBias) == 0x234, "m_flDepthSortBias in CParticleSystemDefinition should be at offset 0x234");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nSortOverridePositionCP) == 0x238, "m_nSortOverridePositionCP in CParticleSystemDefinition should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bInfiniteBounds) == 0x23C, "m_bInfiniteBounds in CParticleSystemDefinition should be at offset 0x23C");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bEnableNamedValues) == 0x23D, "m_bEnableNamedValues in CParticleSystemDefinition should be at offset 0x23D");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_NamedValueDomain) == 0x240, "m_NamedValueDomain in CParticleSystemDefinition should be at offset 0x240");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_NamedValueLocals) == 0x248, "m_NamedValueLocals in CParticleSystemDefinition should be at offset 0x248");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_ConstantColor) == 0x260, "m_ConstantColor in CParticleSystemDefinition should be at offset 0x260");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_ConstantNormal) == 0x264, "m_ConstantNormal in CParticleSystemDefinition should be at offset 0x264");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantRadius) == 0x270, "m_flConstantRadius in CParticleSystemDefinition should be at offset 0x270");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantRotation) == 0x274, "m_flConstantRotation in CParticleSystemDefinition should be at offset 0x274");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantRotationSpeed) == 0x278, "m_flConstantRotationSpeed in CParticleSystemDefinition should be at offset 0x278");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantLifespan) == 0x27C, "m_flConstantLifespan in CParticleSystemDefinition should be at offset 0x27C");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nConstantSequenceNumber) == 0x280, "m_nConstantSequenceNumber in CParticleSystemDefinition should be at offset 0x280");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nConstantSequenceNumber1) == 0x284, "m_nConstantSequenceNumber1 in CParticleSystemDefinition should be at offset 0x284");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nSnapshotControlPoint) == 0x288, "m_nSnapshotControlPoint in CParticleSystemDefinition should be at offset 0x288");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hSnapshot) == 0x290, "m_hSnapshot in CParticleSystemDefinition should be at offset 0x290");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_pszCullReplacementName) == 0x298, "m_pszCullReplacementName in CParticleSystemDefinition should be at offset 0x298");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flCullRadius) == 0x2A0, "m_flCullRadius in CParticleSystemDefinition should be at offset 0x2A0");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flCullFillCost) == 0x2A4, "m_flCullFillCost in CParticleSystemDefinition should be at offset 0x2A4");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nCullControlPoint) == 0x2A8, "m_nCullControlPoint in CParticleSystemDefinition should be at offset 0x2A8");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hFallback) == 0x2B0, "m_hFallback in CParticleSystemDefinition should be at offset 0x2B0");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nFallbackMaxCount) == 0x2B8, "m_nFallbackMaxCount in CParticleSystemDefinition should be at offset 0x2B8");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hLowViolenceDef) == 0x2C0, "m_hLowViolenceDef in CParticleSystemDefinition should be at offset 0x2C0");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hReferenceReplacement) == 0x2C8, "m_hReferenceReplacement in CParticleSystemDefinition should be at offset 0x2C8");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flPreSimulationTime) == 0x2D0, "m_flPreSimulationTime in CParticleSystemDefinition should be at offset 0x2D0");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flStopSimulationAfterTime) == 0x2D4, "m_flStopSimulationAfterTime in CParticleSystemDefinition should be at offset 0x2D4");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaximumTimeStep) == 0x2D8, "m_flMaximumTimeStep in CParticleSystemDefinition should be at offset 0x2D8");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaximumSimTime) == 0x2DC, "m_flMaximumSimTime in CParticleSystemDefinition should be at offset 0x2DC");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMinimumSimTime) == 0x2E0, "m_flMinimumSimTime in CParticleSystemDefinition should be at offset 0x2E0");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMinimumTimeStep) == 0x2E4, "m_flMinimumTimeStep in CParticleSystemDefinition should be at offset 0x2E4");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMinimumFrames) == 0x2E8, "m_nMinimumFrames in CParticleSystemDefinition should be at offset 0x2E8");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMinCPULevel) == 0x2EC, "m_nMinCPULevel in CParticleSystemDefinition should be at offset 0x2EC");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMinGPULevel) == 0x2F0, "m_nMinGPULevel in CParticleSystemDefinition should be at offset 0x2F0");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flNoDrawTimeToGoToSleep) == 0x2F4, "m_flNoDrawTimeToGoToSleep in CParticleSystemDefinition should be at offset 0x2F4");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaxDrawDistance) == 0x2F8, "m_flMaxDrawDistance in CParticleSystemDefinition should be at offset 0x2F8");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flStartFadeDistance) == 0x2FC, "m_flStartFadeDistance in CParticleSystemDefinition should be at offset 0x2FC");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaxCreationDistance) == 0x300, "m_flMaxCreationDistance in CParticleSystemDefinition should be at offset 0x300");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nAggregationMinAvailableParticles) == 0x304, "m_nAggregationMinAvailableParticles in CParticleSystemDefinition should be at offset 0x304");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flAggregateRadius) == 0x308, "m_flAggregateRadius in CParticleSystemDefinition should be at offset 0x308");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldBatch) == 0x30C, "m_bShouldBatch in CParticleSystemDefinition should be at offset 0x30C");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldHitboxesFallbackToRenderBounds) == 0x30D, "m_bShouldHitboxesFallbackToRenderBounds in CParticleSystemDefinition should be at offset 0x30D");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldHitboxesFallbackToSnapshot) == 0x30E, "m_bShouldHitboxesFallbackToSnapshot in CParticleSystemDefinition should be at offset 0x30E");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldHitboxesFallbackToCollisionHulls) == 0x30F, "m_bShouldHitboxesFallbackToCollisionHulls in CParticleSystemDefinition should be at offset 0x30F");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nViewModelEffect) == 0x310, "m_nViewModelEffect in CParticleSystemDefinition should be at offset 0x310");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bScreenSpaceEffect) == 0x314, "m_bScreenSpaceEffect in CParticleSystemDefinition should be at offset 0x314");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_pszTargetLayerID) == 0x318, "m_pszTargetLayerID in CParticleSystemDefinition should be at offset 0x318");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nSkipRenderControlPoint) == 0x320, "m_nSkipRenderControlPoint in CParticleSystemDefinition should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nAllowRenderControlPoint) == 0x324, "m_nAllowRenderControlPoint in CParticleSystemDefinition should be at offset 0x324");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldSort) == 0x328, "m_bShouldSort in CParticleSystemDefinition should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_controlPointConfigurations) == 0x370, "m_controlPointConfigurations in CParticleSystemDefinition should be at offset 0x370");
-		static_assert(sizeof(CS2::particles::CParticleSystemDefinition) == 0x3E0, "CParticleSystemDefinition size should be 0x3E0");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nInitialParticles) == 0x258, "m_nInitialParticles in CParticleSystemDefinition should be at offset 0x258");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMaxParticles) == 0x25C, "m_nMaxParticles in CParticleSystemDefinition should be at offset 0x25C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nGroupID) == 0x260, "m_nGroupID in CParticleSystemDefinition should be at offset 0x260");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_BoundingBoxMin) == 0x264, "m_BoundingBoxMin in CParticleSystemDefinition should be at offset 0x264");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_BoundingBoxMax) == 0x270, "m_BoundingBoxMax in CParticleSystemDefinition should be at offset 0x270");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flDepthSortBias) == 0x27C, "m_flDepthSortBias in CParticleSystemDefinition should be at offset 0x27C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nSortOverridePositionCP) == 0x280, "m_nSortOverridePositionCP in CParticleSystemDefinition should be at offset 0x280");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bInfiniteBounds) == 0x284, "m_bInfiniteBounds in CParticleSystemDefinition should be at offset 0x284");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bEnableNamedValues) == 0x285, "m_bEnableNamedValues in CParticleSystemDefinition should be at offset 0x285");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_NamedValueDomain) == 0x288, "m_NamedValueDomain in CParticleSystemDefinition should be at offset 0x288");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_NamedValueLocals) == 0x290, "m_NamedValueLocals in CParticleSystemDefinition should be at offset 0x290");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_ConstantColor) == 0x2A8, "m_ConstantColor in CParticleSystemDefinition should be at offset 0x2A8");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_ConstantNormal) == 0x2AC, "m_ConstantNormal in CParticleSystemDefinition should be at offset 0x2AC");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantRadius) == 0x2B8, "m_flConstantRadius in CParticleSystemDefinition should be at offset 0x2B8");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantRotation) == 0x2BC, "m_flConstantRotation in CParticleSystemDefinition should be at offset 0x2BC");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantRotationSpeed) == 0x2C0, "m_flConstantRotationSpeed in CParticleSystemDefinition should be at offset 0x2C0");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flConstantLifespan) == 0x2C4, "m_flConstantLifespan in CParticleSystemDefinition should be at offset 0x2C4");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nConstantSequenceNumber) == 0x2C8, "m_nConstantSequenceNumber in CParticleSystemDefinition should be at offset 0x2C8");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nConstantSequenceNumber1) == 0x2CC, "m_nConstantSequenceNumber1 in CParticleSystemDefinition should be at offset 0x2CC");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nSnapshotControlPoint) == 0x2D0, "m_nSnapshotControlPoint in CParticleSystemDefinition should be at offset 0x2D0");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hSnapshot) == 0x2D8, "m_hSnapshot in CParticleSystemDefinition should be at offset 0x2D8");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_pszCullReplacementName) == 0x2E0, "m_pszCullReplacementName in CParticleSystemDefinition should be at offset 0x2E0");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flCullRadius) == 0x2E8, "m_flCullRadius in CParticleSystemDefinition should be at offset 0x2E8");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flCullFillCost) == 0x2EC, "m_flCullFillCost in CParticleSystemDefinition should be at offset 0x2EC");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nCullControlPoint) == 0x2F0, "m_nCullControlPoint in CParticleSystemDefinition should be at offset 0x2F0");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hFallback) == 0x2F8, "m_hFallback in CParticleSystemDefinition should be at offset 0x2F8");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nFallbackMaxCount) == 0x300, "m_nFallbackMaxCount in CParticleSystemDefinition should be at offset 0x300");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hLowViolenceDef) == 0x308, "m_hLowViolenceDef in CParticleSystemDefinition should be at offset 0x308");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_hReferenceReplacement) == 0x310, "m_hReferenceReplacement in CParticleSystemDefinition should be at offset 0x310");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flPreSimulationTime) == 0x318, "m_flPreSimulationTime in CParticleSystemDefinition should be at offset 0x318");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flStopSimulationAfterTime) == 0x31C, "m_flStopSimulationAfterTime in CParticleSystemDefinition should be at offset 0x31C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaximumTimeStep) == 0x320, "m_flMaximumTimeStep in CParticleSystemDefinition should be at offset 0x320");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaximumSimTime) == 0x324, "m_flMaximumSimTime in CParticleSystemDefinition should be at offset 0x324");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMinimumSimTime) == 0x328, "m_flMinimumSimTime in CParticleSystemDefinition should be at offset 0x328");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMinimumTimeStep) == 0x32C, "m_flMinimumTimeStep in CParticleSystemDefinition should be at offset 0x32C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMinimumFrames) == 0x330, "m_nMinimumFrames in CParticleSystemDefinition should be at offset 0x330");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMinCPULevel) == 0x334, "m_nMinCPULevel in CParticleSystemDefinition should be at offset 0x334");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nMinGPULevel) == 0x338, "m_nMinGPULevel in CParticleSystemDefinition should be at offset 0x338");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flNoDrawTimeToGoToSleep) == 0x33C, "m_flNoDrawTimeToGoToSleep in CParticleSystemDefinition should be at offset 0x33C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaxDrawDistance) == 0x340, "m_flMaxDrawDistance in CParticleSystemDefinition should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flStartFadeDistance) == 0x344, "m_flStartFadeDistance in CParticleSystemDefinition should be at offset 0x344");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flMaxCreationDistance) == 0x348, "m_flMaxCreationDistance in CParticleSystemDefinition should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nAggregationMinAvailableParticles) == 0x34C, "m_nAggregationMinAvailableParticles in CParticleSystemDefinition should be at offset 0x34C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_flAggregateRadius) == 0x350, "m_flAggregateRadius in CParticleSystemDefinition should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldBatch) == 0x354, "m_bShouldBatch in CParticleSystemDefinition should be at offset 0x354");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldHitboxesFallbackToRenderBounds) == 0x355, "m_bShouldHitboxesFallbackToRenderBounds in CParticleSystemDefinition should be at offset 0x355");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldHitboxesFallbackToSnapshot) == 0x356, "m_bShouldHitboxesFallbackToSnapshot in CParticleSystemDefinition should be at offset 0x356");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldHitboxesFallbackToCollisionHulls) == 0x357, "m_bShouldHitboxesFallbackToCollisionHulls in CParticleSystemDefinition should be at offset 0x357");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nViewModelEffect) == 0x358, "m_nViewModelEffect in CParticleSystemDefinition should be at offset 0x358");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bScreenSpaceEffect) == 0x35C, "m_bScreenSpaceEffect in CParticleSystemDefinition should be at offset 0x35C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_pszTargetLayerID) == 0x360, "m_pszTargetLayerID in CParticleSystemDefinition should be at offset 0x360");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nSkipRenderControlPoint) == 0x368, "m_nSkipRenderControlPoint in CParticleSystemDefinition should be at offset 0x368");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nAllowRenderControlPoint) == 0x36C, "m_nAllowRenderControlPoint in CParticleSystemDefinition should be at offset 0x36C");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldSort) == 0x370, "m_bShouldSort in CParticleSystemDefinition should be at offset 0x370");
+		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_controlPointConfigurations) == 0x3B8, "m_controlPointConfigurations in CParticleSystemDefinition should be at offset 0x3B8");
+		static_assert(sizeof(CS2::particles::CParticleSystemDefinition) == 0x440, "CParticleSystemDefinition size should be 0x440");
 	}
 }

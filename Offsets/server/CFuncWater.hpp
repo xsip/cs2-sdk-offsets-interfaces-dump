@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x908
+			// Class size: 0x8F0
 			namespace CFuncWater /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_BuoyancyHelper = 0x7f0; // server::CBuoyancyHelper m_BuoyancyHelper; |  Schema_DeclaredClass | Size: 0x118
+				constexpr std::ptrdiff_t m_BuoyancyHelper = 0x7d8; // server::CBuoyancyHelper m_BuoyancyHelper; |  Schema_DeclaredClass | Size: 0x118
 			}
 		}
 	}

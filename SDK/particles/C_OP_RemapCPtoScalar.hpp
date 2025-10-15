@@ -15,30 +15,30 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapCPtoScalar : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nCPInput; // 0x1c0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nField; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMin; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime; // 0x1e0 | Schema_Builtin | Size: 0x4
-			float32 m_flInterpRate; // 0x1e4 | Schema_Builtin | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x1e8 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nCPInput; // 0x1d0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nField; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMin; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime; // 0x1f0 | Schema_Builtin | Size: 0x4
+			float32 m_flInterpRate; // 0x1f4 | Schema_Builtin | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x1f8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nCPInput) == 0x1C0, "m_nCPInput in C_OP_RemapCPtoScalar should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nFieldOutput) == 0x1C4, "m_nFieldOutput in C_OP_RemapCPtoScalar should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nField) == 0x1C8, "m_nField in C_OP_RemapCPtoScalar should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flInputMin) == 0x1CC, "m_flInputMin in C_OP_RemapCPtoScalar should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flInputMax) == 0x1D0, "m_flInputMax in C_OP_RemapCPtoScalar should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flOutputMin) == 0x1D4, "m_flOutputMin in C_OP_RemapCPtoScalar should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flOutputMax) == 0x1D8, "m_flOutputMax in C_OP_RemapCPtoScalar should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flStartTime) == 0x1DC, "m_flStartTime in C_OP_RemapCPtoScalar should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flEndTime) == 0x1E0, "m_flEndTime in C_OP_RemapCPtoScalar should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flInterpRate) == 0x1E4, "m_flInterpRate in C_OP_RemapCPtoScalar should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nSetMethod) == 0x1E8, "m_nSetMethod in C_OP_RemapCPtoScalar should be at offset 0x1E8");
-		static_assert(sizeof(CS2::particles::C_OP_RemapCPtoScalar) == 0x1F0, "C_OP_RemapCPtoScalar size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nCPInput) == 0x1D0, "m_nCPInput in C_OP_RemapCPtoScalar should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapCPtoScalar should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nField) == 0x1D8, "m_nField in C_OP_RemapCPtoScalar should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flInputMin) == 0x1DC, "m_flInputMin in C_OP_RemapCPtoScalar should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flInputMax) == 0x1E0, "m_flInputMax in C_OP_RemapCPtoScalar should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flOutputMin) == 0x1E4, "m_flOutputMin in C_OP_RemapCPtoScalar should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_OP_RemapCPtoScalar should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flStartTime) == 0x1EC, "m_flStartTime in C_OP_RemapCPtoScalar should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flEndTime) == 0x1F0, "m_flEndTime in C_OP_RemapCPtoScalar should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_flInterpRate) == 0x1F4, "m_flInterpRate in C_OP_RemapCPtoScalar should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoScalar, m_nSetMethod) == 0x1F8, "m_nSetMethod in C_OP_RemapCPtoScalar should be at offset 0x1F8");
+		static_assert(sizeof(CS2::particles::C_OP_RemapCPtoScalar) == 0x200, "C_OP_RemapCPtoScalar size should be 0x200");
 	}
 }

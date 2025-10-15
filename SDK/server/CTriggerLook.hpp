@@ -15,39 +15,39 @@ namespace CS2 {
 	namespace server {
 		class CTriggerLook : public CS2::server::CTriggerOnce {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hLookTarget; // 0x9e8 | Schema_Atomic | Size: 0x4
-			char  m_hLookTarget[0x4]; // 0x9e8 | Schema_Atomic | Size: 0x4
-			float32 m_flFieldOfView; // 0x9ec | Schema_Builtin | Size: 0x4
-			float32 m_flLookTime; // 0x9f0 | Schema_Builtin | Size: 0x4
-			float32 m_flLookTimeTotal; // 0x9f4 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLookTimeLast; // 0x9f8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flTimeoutDuration; // 0x9fc | Schema_Builtin | Size: 0x4
-			bool m_bTimeoutFired; // 0xa00 | Schema_Builtin | Size: 0x1
-			bool m_bIsLooking; // 0xa01 | Schema_Builtin | Size: 0x1
-			bool m_b2DFOV; // 0xa02 | Schema_Builtin | Size: 0x1
-			bool m_bUseVelocity; // 0xa03 | Schema_Builtin | Size: 0x1
-			bool m_bTestOcclusion; // 0xa04 | Schema_Builtin | Size: 0x1
-			bool m_bTestAllVisibleOcclusion; // 0xa05 | Schema_Builtin | Size: 0x1
+			// server::CHandle< server::CBaseEntity > m_hLookTarget; // 0x9d0 | Schema_Atomic | Size: 0x4
+			char  m_hLookTarget[0x4]; // 0x9d0 | Schema_Atomic | Size: 0x4
+			float32 m_flFieldOfView; // 0x9d4 | Schema_Builtin | Size: 0x4
+			float32 m_flLookTime; // 0x9d8 | Schema_Builtin | Size: 0x4
+			float32 m_flLookTimeTotal; // 0x9dc | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLookTimeLast; // 0x9e0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flTimeoutDuration; // 0x9e4 | Schema_Builtin | Size: 0x4
+			bool m_bTimeoutFired; // 0x9e8 | Schema_Builtin | Size: 0x1
+			bool m_bIsLooking; // 0x9e9 | Schema_Builtin | Size: 0x1
+			bool m_b2DFOV; // 0x9ea | Schema_Builtin | Size: 0x1
+			bool m_bUseVelocity; // 0x9eb | Schema_Builtin | Size: 0x1
+			bool m_bTestOcclusion; // 0x9ec | Schema_Builtin | Size: 0x1
+			bool m_bTestAllVisibleOcclusion; // 0x9ed | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::CEntityIOOutput m_OnTimeout; // 0xa08 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStartLook; // 0xa30 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEndLook; // 0xa58 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnTimeout; // 0x9f0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnStartLook; // 0xa18 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnEndLook; // 0xa40 | Schema_DeclaredClass | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CTriggerLook, m_hLookTarget) == 0x9E8, "m_hLookTarget in CTriggerLook should be at offset 0x9E8");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_flFieldOfView) == 0x9EC, "m_flFieldOfView in CTriggerLook should be at offset 0x9EC");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_flLookTime) == 0x9F0, "m_flLookTime in CTriggerLook should be at offset 0x9F0");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_flLookTimeTotal) == 0x9F4, "m_flLookTimeTotal in CTriggerLook should be at offset 0x9F4");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_flLookTimeLast) == 0x9F8, "m_flLookTimeLast in CTriggerLook should be at offset 0x9F8");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_flTimeoutDuration) == 0x9FC, "m_flTimeoutDuration in CTriggerLook should be at offset 0x9FC");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_bTimeoutFired) == 0xA00, "m_bTimeoutFired in CTriggerLook should be at offset 0xA00");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_bIsLooking) == 0xA01, "m_bIsLooking in CTriggerLook should be at offset 0xA01");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_b2DFOV) == 0xA02, "m_b2DFOV in CTriggerLook should be at offset 0xA02");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_bUseVelocity) == 0xA03, "m_bUseVelocity in CTriggerLook should be at offset 0xA03");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_bTestOcclusion) == 0xA04, "m_bTestOcclusion in CTriggerLook should be at offset 0xA04");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_bTestAllVisibleOcclusion) == 0xA05, "m_bTestAllVisibleOcclusion in CTriggerLook should be at offset 0xA05");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_OnTimeout) == 0xA08, "m_OnTimeout in CTriggerLook should be at offset 0xA08");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_OnStartLook) == 0xA30, "m_OnStartLook in CTriggerLook should be at offset 0xA30");
-		static_assert(offsetof(CS2::server::CTriggerLook, m_OnEndLook) == 0xA58, "m_OnEndLook in CTriggerLook should be at offset 0xA58");
-		static_assert(sizeof(CS2::server::CTriggerLook) == 0xA80, "CTriggerLook size should be 0xA80");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_hLookTarget) == 0x9D0, "m_hLookTarget in CTriggerLook should be at offset 0x9D0");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_flFieldOfView) == 0x9D4, "m_flFieldOfView in CTriggerLook should be at offset 0x9D4");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_flLookTime) == 0x9D8, "m_flLookTime in CTriggerLook should be at offset 0x9D8");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_flLookTimeTotal) == 0x9DC, "m_flLookTimeTotal in CTriggerLook should be at offset 0x9DC");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_flLookTimeLast) == 0x9E0, "m_flLookTimeLast in CTriggerLook should be at offset 0x9E0");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_flTimeoutDuration) == 0x9E4, "m_flTimeoutDuration in CTriggerLook should be at offset 0x9E4");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_bTimeoutFired) == 0x9E8, "m_bTimeoutFired in CTriggerLook should be at offset 0x9E8");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_bIsLooking) == 0x9E9, "m_bIsLooking in CTriggerLook should be at offset 0x9E9");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_b2DFOV) == 0x9EA, "m_b2DFOV in CTriggerLook should be at offset 0x9EA");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_bUseVelocity) == 0x9EB, "m_bUseVelocity in CTriggerLook should be at offset 0x9EB");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_bTestOcclusion) == 0x9EC, "m_bTestOcclusion in CTriggerLook should be at offset 0x9EC");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_bTestAllVisibleOcclusion) == 0x9ED, "m_bTestAllVisibleOcclusion in CTriggerLook should be at offset 0x9ED");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_OnTimeout) == 0x9F0, "m_OnTimeout in CTriggerLook should be at offset 0x9F0");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_OnStartLook) == 0xA18, "m_OnStartLook in CTriggerLook should be at offset 0xA18");
+		static_assert(offsetof(CS2::server::CTriggerLook, m_OnEndLook) == 0xA40, "m_OnEndLook in CTriggerLook should be at offset 0xA40");
+		static_assert(sizeof(CS2::server::CTriggerLook) == 0xA68, "CTriggerLook size should be 0xA68");
 	}
 }

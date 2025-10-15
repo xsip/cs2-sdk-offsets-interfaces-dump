@@ -14,20 +14,20 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MovementRigidAttachToCP : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleControlPoint; // 0x1c4 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleCPField; // 0x1c8 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1cc | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bOffsetLocal; // 0x1d4 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleControlPoint; // 0x1d4 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleCPField; // 0x1d8 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1dc | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bOffsetLocal; // 0x1e4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nControlPointNumber) == 0x1C0, "m_nControlPointNumber in C_OP_MovementRigidAttachToCP should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nScaleControlPoint) == 0x1C4, "m_nScaleControlPoint in C_OP_MovementRigidAttachToCP should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nScaleCPField) == 0x1C8, "m_nScaleCPField in C_OP_MovementRigidAttachToCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nFieldInput) == 0x1CC, "m_nFieldInput in C_OP_MovementRigidAttachToCP should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_MovementRigidAttachToCP should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_bOffsetLocal) == 0x1D4, "m_bOffsetLocal in C_OP_MovementRigidAttachToCP should be at offset 0x1D4");
-		static_assert(sizeof(CS2::particles::C_OP_MovementRigidAttachToCP) == 0x1D8, "C_OP_MovementRigidAttachToCP size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_MovementRigidAttachToCP should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nScaleControlPoint) == 0x1D4, "m_nScaleControlPoint in C_OP_MovementRigidAttachToCP should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nScaleCPField) == 0x1D8, "m_nScaleCPField in C_OP_MovementRigidAttachToCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nFieldInput) == 0x1DC, "m_nFieldInput in C_OP_MovementRigidAttachToCP should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nFieldOutput) == 0x1E0, "m_nFieldOutput in C_OP_MovementRigidAttachToCP should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_bOffsetLocal) == 0x1E4, "m_bOffsetLocal in C_OP_MovementRigidAttachToCP should be at offset 0x1E4");
+		static_assert(sizeof(CS2::particles::C_OP_MovementRigidAttachToCP) == 0x1E8, "C_OP_MovementRigidAttachToCP size should be 0x1E8");
 	}
 }

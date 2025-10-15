@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x10);
 		};
-		static_assert(sizeof(CS2::particles::CParticleFunctionForce) == 0x1D0, "CParticleFunctionForce size should be 0x1D0");
+		static_assert(sizeof(CS2::particles::CParticleFunctionForce) == 0x1E0, "CParticleFunctionForce size should be 0x1E0");
 	}
 }

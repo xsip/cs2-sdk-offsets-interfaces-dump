@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x338
+			// Class size: 0x358
 			namespace C_INIT_PlaneCull /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nControlPoint = 0x1c8; // int32_t m_nControlPoint; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistance = 0x1d0; // particleslib::CParticleCollectionFloatInput m_flDistance; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bCullInside = 0x330; // bool m_bCullInside; |  0x330 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nControlPoint = 0x1d8; // int32_t m_nControlPoint; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistance = 0x1e0; // particleslib::CParticleCollectionFloatInput m_flDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bCullInside = 0x350; // bool m_bCullInside; |  0x350 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

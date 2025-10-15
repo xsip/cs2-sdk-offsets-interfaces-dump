@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x198
+			// Class size: 0x190
 			namespace CRetakeGameRules /**/ {
 				constexpr std::ptrdiff_t m_nMatchSeed = 0xf8; // int32_t m_nMatchSeed; |  0xf8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bBlockersPresent = 0xfc; // bool m_bBlockersPresent; |  0xfc | Schema_Builtin | Size: 0x1

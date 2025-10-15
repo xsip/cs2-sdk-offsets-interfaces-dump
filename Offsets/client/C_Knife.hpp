@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1FA0
+			// Class size: 0x1F90
 			namespace C_Knife /*: public CS2::client::C_CSWeaponBase*/ {
-				constexpr std::ptrdiff_t m_bFirstAttack = 0x1f90; // bool m_bFirstAttack; |  0x1f90 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFirstAttack = 0x1f80; // bool m_bFirstAttack; |  0x1f80 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

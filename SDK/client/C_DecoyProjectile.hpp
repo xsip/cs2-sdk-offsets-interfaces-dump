@@ -14,15 +14,15 @@ namespace CS2 {
 	namespace client {
 		class C_DecoyProjectile : public CS2::client::C_BaseCSGrenadeProjectile {
 		public:
-			int32_t m_nDecoyShotTick; // 0x1468 | Schema_Builtin | Size: 0x4
-			int32_t m_nClientLastKnownDecoyShotTick; // 0x146c | Schema_Builtin | Size: 0x4
+			int32_t m_nDecoyShotTick; // 0x1450 | Schema_Builtin | Size: 0x4
+			int32_t m_nClientLastKnownDecoyShotTick; // 0x1454 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x20);
-			entity2::GameTime_t m_flTimeParticleEffectSpawn; // 0x1490 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flTimeParticleEffectSpawn; // 0x1478 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_nDecoyShotTick) == 0x1468, "m_nDecoyShotTick in C_DecoyProjectile should be at offset 0x1468");
-		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_nClientLastKnownDecoyShotTick) == 0x146C, "m_nClientLastKnownDecoyShotTick in C_DecoyProjectile should be at offset 0x146C");
-		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_flTimeParticleEffectSpawn) == 0x1490, "m_flTimeParticleEffectSpawn in C_DecoyProjectile should be at offset 0x1490");
-		static_assert(sizeof(CS2::client::C_DecoyProjectile) == 0x1498, "C_DecoyProjectile size should be 0x1498");
+		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_nDecoyShotTick) == 0x1450, "m_nDecoyShotTick in C_DecoyProjectile should be at offset 0x1450");
+		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_nClientLastKnownDecoyShotTick) == 0x1454, "m_nClientLastKnownDecoyShotTick in C_DecoyProjectile should be at offset 0x1454");
+		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_flTimeParticleEffectSpawn) == 0x1478, "m_flTimeParticleEffectSpawn in C_DecoyProjectile should be at offset 0x1478");
+		static_assert(sizeof(CS2::client::C_DecoyProjectile) == 0x1480, "C_DecoyProjectile size should be 0x1480");
 	}
 }

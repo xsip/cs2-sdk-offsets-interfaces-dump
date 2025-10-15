@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x830
+			// Class size: 0x818
 			namespace CMarkupVolumeTagged /*: public CS2::server::CMarkupVolume*/ {
-				constexpr std::ptrdiff_t m_GroupNames = 0x7f8; // GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_GroupNames; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Tags = 0x810; // GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_Tags; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bIsGroup = 0x828; // bool m_bIsGroup; |  0x828 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGroupByPrefab = 0x829; // bool m_bGroupByPrefab; |  0x829 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGroupByVolume = 0x82a; // bool m_bGroupByVolume; |  0x82a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGroupOtherGroups = 0x82b; // bool m_bGroupOtherGroups; |  0x82b | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsInGroup = 0x82c; // bool m_bIsInGroup; |  0x82c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_GroupNames = 0x7e0; // GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_GroupNames; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Tags = 0x7f8; // GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_Tags; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bIsGroup = 0x810; // bool m_bIsGroup; |  0x810 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGroupByPrefab = 0x811; // bool m_bGroupByPrefab; |  0x811 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGroupByVolume = 0x812; // bool m_bGroupByVolume; |  0x812 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGroupOtherGroups = 0x813; // bool m_bGroupOtherGroups; |  0x813 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsInGroup = 0x814; // bool m_bIsInGroup; |  0x814 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

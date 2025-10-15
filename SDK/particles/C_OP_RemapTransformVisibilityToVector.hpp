@@ -16,24 +16,24 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapTransformVisibilityToVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x1c0 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x1d0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleTransformInput m_TransformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x230 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flInputMin; // 0x234 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x238 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecOutputMin; // 0x23c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecOutputMax; // 0x248 | Schema_Atomic | Size: 0xc
-			float32 m_flRadius; // 0x254 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleTransformInput m_TransformInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x68
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x240 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flInputMin; // 0x244 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x248 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecOutputMin; // 0x24c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecOutputMax; // 0x258 | Schema_Atomic | Size: 0xc
+			float32 m_flRadius; // 0x264 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_nSetMethod) == 0x1C0, "m_nSetMethod in C_OP_RemapTransformVisibilityToVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_TransformInput) == 0x1C8, "m_TransformInput in C_OP_RemapTransformVisibilityToVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_nFieldOutput) == 0x230, "m_nFieldOutput in C_OP_RemapTransformVisibilityToVector should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_flInputMin) == 0x234, "m_flInputMin in C_OP_RemapTransformVisibilityToVector should be at offset 0x234");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_flInputMax) == 0x238, "m_flInputMax in C_OP_RemapTransformVisibilityToVector should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_vecOutputMin) == 0x23C, "m_vecOutputMin in C_OP_RemapTransformVisibilityToVector should be at offset 0x23C");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_vecOutputMax) == 0x248, "m_vecOutputMax in C_OP_RemapTransformVisibilityToVector should be at offset 0x248");
-		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_flRadius) == 0x254, "m_flRadius in C_OP_RemapTransformVisibilityToVector should be at offset 0x254");
-		static_assert(sizeof(CS2::particles::C_OP_RemapTransformVisibilityToVector) == 0x258, "C_OP_RemapTransformVisibilityToVector size should be 0x258");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_nSetMethod) == 0x1D0, "m_nSetMethod in C_OP_RemapTransformVisibilityToVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_TransformInput) == 0x1D8, "m_TransformInput in C_OP_RemapTransformVisibilityToVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_nFieldOutput) == 0x240, "m_nFieldOutput in C_OP_RemapTransformVisibilityToVector should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_flInputMin) == 0x244, "m_flInputMin in C_OP_RemapTransformVisibilityToVector should be at offset 0x244");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_flInputMax) == 0x248, "m_flInputMax in C_OP_RemapTransformVisibilityToVector should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_vecOutputMin) == 0x24C, "m_vecOutputMin in C_OP_RemapTransformVisibilityToVector should be at offset 0x24C");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_vecOutputMax) == 0x258, "m_vecOutputMax in C_OP_RemapTransformVisibilityToVector should be at offset 0x258");
+		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToVector, m_flRadius) == 0x264, "m_flRadius in C_OP_RemapTransformVisibilityToVector should be at offset 0x264");
+		static_assert(sizeof(CS2::particles::C_OP_RemapTransformVisibilityToVector) == 0x268, "C_OP_RemapTransformVisibilityToVector size should be 0x268");
 	}
 }

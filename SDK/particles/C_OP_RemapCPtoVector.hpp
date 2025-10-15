@@ -15,34 +15,34 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapCPtoVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nCPInput; // 0x1c0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nLocalSpaceCP; // 0x1c8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vInputMin; // 0x1cc | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vInputMax; // 0x1d8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOutputMin; // 0x1e4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOutputMax; // 0x1f0 | Schema_Atomic | Size: 0xc
-			float32 m_flStartTime; // 0x1fc | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime; // 0x200 | Schema_Builtin | Size: 0x4
-			float32 m_flInterpRate; // 0x204 | Schema_Builtin | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x208 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bOffset; // 0x20c | Schema_Builtin | Size: 0x1
-			bool m_bAccelerate; // 0x20d | Schema_Builtin | Size: 0x1
+			int32_t m_nCPInput; // 0x1d0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nLocalSpaceCP; // 0x1d8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vInputMin; // 0x1dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vInputMax; // 0x1e8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOutputMin; // 0x1f4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOutputMax; // 0x200 | Schema_Atomic | Size: 0xc
+			float32 m_flStartTime; // 0x20c | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime; // 0x210 | Schema_Builtin | Size: 0x4
+			float32 m_flInterpRate; // 0x214 | Schema_Builtin | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x218 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bOffset; // 0x21c | Schema_Builtin | Size: 0x1
+			bool m_bAccelerate; // 0x21d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nCPInput) == 0x1C0, "m_nCPInput in C_OP_RemapCPtoVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nFieldOutput) == 0x1C4, "m_nFieldOutput in C_OP_RemapCPtoVector should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nLocalSpaceCP) == 0x1C8, "m_nLocalSpaceCP in C_OP_RemapCPtoVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vInputMin) == 0x1CC, "m_vInputMin in C_OP_RemapCPtoVector should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vInputMax) == 0x1D8, "m_vInputMax in C_OP_RemapCPtoVector should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vOutputMin) == 0x1E4, "m_vOutputMin in C_OP_RemapCPtoVector should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vOutputMax) == 0x1F0, "m_vOutputMax in C_OP_RemapCPtoVector should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_flStartTime) == 0x1FC, "m_flStartTime in C_OP_RemapCPtoVector should be at offset 0x1FC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_flEndTime) == 0x200, "m_flEndTime in C_OP_RemapCPtoVector should be at offset 0x200");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_flInterpRate) == 0x204, "m_flInterpRate in C_OP_RemapCPtoVector should be at offset 0x204");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nSetMethod) == 0x208, "m_nSetMethod in C_OP_RemapCPtoVector should be at offset 0x208");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_bOffset) == 0x20C, "m_bOffset in C_OP_RemapCPtoVector should be at offset 0x20C");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_bAccelerate) == 0x20D, "m_bAccelerate in C_OP_RemapCPtoVector should be at offset 0x20D");
-		static_assert(sizeof(CS2::particles::C_OP_RemapCPtoVector) == 0x210, "C_OP_RemapCPtoVector size should be 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nCPInput) == 0x1D0, "m_nCPInput in C_OP_RemapCPtoVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapCPtoVector should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nLocalSpaceCP) == 0x1D8, "m_nLocalSpaceCP in C_OP_RemapCPtoVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vInputMin) == 0x1DC, "m_vInputMin in C_OP_RemapCPtoVector should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vInputMax) == 0x1E8, "m_vInputMax in C_OP_RemapCPtoVector should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vOutputMin) == 0x1F4, "m_vOutputMin in C_OP_RemapCPtoVector should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_vOutputMax) == 0x200, "m_vOutputMax in C_OP_RemapCPtoVector should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_flStartTime) == 0x20C, "m_flStartTime in C_OP_RemapCPtoVector should be at offset 0x20C");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_flEndTime) == 0x210, "m_flEndTime in C_OP_RemapCPtoVector should be at offset 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_flInterpRate) == 0x214, "m_flInterpRate in C_OP_RemapCPtoVector should be at offset 0x214");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nSetMethod) == 0x218, "m_nSetMethod in C_OP_RemapCPtoVector should be at offset 0x218");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_bOffset) == 0x21C, "m_bOffset in C_OP_RemapCPtoVector should be at offset 0x21C");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_bAccelerate) == 0x21D, "m_bAccelerate in C_OP_RemapCPtoVector should be at offset 0x21D");
+		static_assert(sizeof(CS2::particles::C_OP_RemapCPtoVector) == 0x220, "C_OP_RemapCPtoVector size should be 0x220");
 	}
 }

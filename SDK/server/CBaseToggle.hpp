@@ -14,42 +14,42 @@ namespace CS2 {
 	namespace server {
 		class CBaseToggle : public CS2::server::CBaseModelEntity {
 		public:
-			server::TOGGLE_STATE m_toggle_state; // 0x7f0 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flMoveDistance; // 0x7f4 | Schema_Builtin | Size: 0x4
-			float32 m_flWait; // 0x7f8 | Schema_Builtin | Size: 0x4
-			float32 m_flLip; // 0x7fc | Schema_Builtin | Size: 0x4
-			bool m_bAlwaysFireBlockedOutputs; // 0x800 | Schema_Builtin | Size: 0x1
+			server::TOGGLE_STATE m_toggle_state; // 0x7d8 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flMoveDistance; // 0x7dc | Schema_Builtin | Size: 0x4
+			float32 m_flWait; // 0x7e0 | Schema_Builtin | Size: 0x4
+			float32 m_flLip; // 0x7e4 | Schema_Builtin | Size: 0x4
+			bool m_bAlwaysFireBlockedOutputs; // 0x7e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vecPosition1; // 0x804 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecPosition2; // 0x810 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecMoveAng; // 0x81c | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecAngle1; // 0x828 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecAngle2; // 0x834 | Schema_Atomic | Size: 0xc
-			float32 m_flHeight; // 0x840 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hActivator; // 0x844 | Schema_Atomic | Size: 0x4
-			char  m_hActivator[0x4]; // 0x844 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Vector m_vecFinalDest; // 0x848 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecFinalAngle; // 0x854 | Schema_Atomic | Size: 0xc
-			int32_t m_movementType; // 0x860 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecPosition1; // 0x7ec | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecPosition2; // 0x7f8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecMoveAng; // 0x804 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecAngle1; // 0x810 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecAngle2; // 0x81c | Schema_Atomic | Size: 0xc
+			float32 m_flHeight; // 0x828 | Schema_Builtin | Size: 0x4
+			// server::CHandle< server::CBaseEntity > m_hActivator; // 0x82c | Schema_Atomic | Size: 0x4
+			char  m_hActivator[0x4]; // 0x82c | Schema_Atomic | Size: 0x4
+			GlobalTypes::Vector m_vecFinalDest; // 0x830 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecFinalAngle; // 0x83c | Schema_Atomic | Size: 0xc
+			int32_t m_movementType; // 0x848 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_sMaster; // 0x868 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sMaster; // 0x850 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CBaseToggle, m_toggle_state) == 0x7F0, "m_toggle_state in CBaseToggle should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_flMoveDistance) == 0x7F4, "m_flMoveDistance in CBaseToggle should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_flWait) == 0x7F8, "m_flWait in CBaseToggle should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_flLip) == 0x7FC, "m_flLip in CBaseToggle should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_bAlwaysFireBlockedOutputs) == 0x800, "m_bAlwaysFireBlockedOutputs in CBaseToggle should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_vecPosition1) == 0x804, "m_vecPosition1 in CBaseToggle should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_vecPosition2) == 0x810, "m_vecPosition2 in CBaseToggle should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_vecMoveAng) == 0x81C, "m_vecMoveAng in CBaseToggle should be at offset 0x81C");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_vecAngle1) == 0x828, "m_vecAngle1 in CBaseToggle should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_vecAngle2) == 0x834, "m_vecAngle2 in CBaseToggle should be at offset 0x834");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_flHeight) == 0x840, "m_flHeight in CBaseToggle should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_hActivator) == 0x844, "m_hActivator in CBaseToggle should be at offset 0x844");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_vecFinalDest) == 0x848, "m_vecFinalDest in CBaseToggle should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_vecFinalAngle) == 0x854, "m_vecFinalAngle in CBaseToggle should be at offset 0x854");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_movementType) == 0x860, "m_movementType in CBaseToggle should be at offset 0x860");
-		static_assert(offsetof(CS2::server::CBaseToggle, m_sMaster) == 0x868, "m_sMaster in CBaseToggle should be at offset 0x868");
-		static_assert(sizeof(CS2::server::CBaseToggle) == 0x870, "CBaseToggle size should be 0x870");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_toggle_state) == 0x7D8, "m_toggle_state in CBaseToggle should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_flMoveDistance) == 0x7DC, "m_flMoveDistance in CBaseToggle should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_flWait) == 0x7E0, "m_flWait in CBaseToggle should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_flLip) == 0x7E4, "m_flLip in CBaseToggle should be at offset 0x7E4");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_bAlwaysFireBlockedOutputs) == 0x7E8, "m_bAlwaysFireBlockedOutputs in CBaseToggle should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_vecPosition1) == 0x7EC, "m_vecPosition1 in CBaseToggle should be at offset 0x7EC");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_vecPosition2) == 0x7F8, "m_vecPosition2 in CBaseToggle should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_vecMoveAng) == 0x804, "m_vecMoveAng in CBaseToggle should be at offset 0x804");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_vecAngle1) == 0x810, "m_vecAngle1 in CBaseToggle should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_vecAngle2) == 0x81C, "m_vecAngle2 in CBaseToggle should be at offset 0x81C");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_flHeight) == 0x828, "m_flHeight in CBaseToggle should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_hActivator) == 0x82C, "m_hActivator in CBaseToggle should be at offset 0x82C");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_vecFinalDest) == 0x830, "m_vecFinalDest in CBaseToggle should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_vecFinalAngle) == 0x83C, "m_vecFinalAngle in CBaseToggle should be at offset 0x83C");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_movementType) == 0x848, "m_movementType in CBaseToggle should be at offset 0x848");
+		static_assert(offsetof(CS2::server::CBaseToggle, m_sMaster) == 0x850, "m_sMaster in CBaseToggle should be at offset 0x850");
+		static_assert(sizeof(CS2::server::CBaseToggle) == 0x858, "CBaseToggle size should be 0x858");
 	}
 }

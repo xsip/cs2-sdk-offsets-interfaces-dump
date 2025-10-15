@@ -16,27 +16,27 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_SetHitboxToClosest : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nDesiredHitbox; // 0x1cc | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x678
-			char m_HitboxSetName[128]; // 0x848 | Schema_FixedArray | Size: 0x80
-			bool m_bUseBones; // 0x8c8 | Schema_Builtin | Size: 0x1
-			bool m_bUseClosestPointOnHitbox; // 0x8c9 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nDesiredHitbox; // 0x1dc | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x1e0 | Schema_DeclaredClass | Size: 0x6b8
+			char m_HitboxSetName[128]; // 0x898 | Schema_FixedArray | Size: 0x80
+			bool m_bUseBones; // 0x918 | Schema_Builtin | Size: 0x1
+			bool m_bUseClosestPointOnHitbox; // 0x919 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ClosestPointTestType_t m_nTestType; // 0x8cc | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CParticleCollectionFloatInput m_flHybridRatio; // 0x8d0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bUpdatePosition; // 0xa30 | Schema_Builtin | Size: 0x1
+			particles::ClosestPointTestType_t m_nTestType; // 0x91c | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flHybridRatio; // 0x920 | Schema_DeclaredClass | Size: 0x170
+			bool m_bUpdatePosition; // 0xa90 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_SetHitboxToClosest should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nDesiredHitbox) == 0x1CC, "m_nDesiredHitbox in C_INIT_SetHitboxToClosest should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_vecHitBoxScale) == 0x1D0, "m_vecHitBoxScale in C_INIT_SetHitboxToClosest should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_HitboxSetName) == 0x848, "m_HitboxSetName in C_INIT_SetHitboxToClosest should be at offset 0x848");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_bUseBones) == 0x8C8, "m_bUseBones in C_INIT_SetHitboxToClosest should be at offset 0x8C8");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_bUseClosestPointOnHitbox) == 0x8C9, "m_bUseClosestPointOnHitbox in C_INIT_SetHitboxToClosest should be at offset 0x8C9");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nTestType) == 0x8CC, "m_nTestType in C_INIT_SetHitboxToClosest should be at offset 0x8CC");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_flHybridRatio) == 0x8D0, "m_flHybridRatio in C_INIT_SetHitboxToClosest should be at offset 0x8D0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_bUpdatePosition) == 0xA30, "m_bUpdatePosition in C_INIT_SetHitboxToClosest should be at offset 0xA30");
-		static_assert(sizeof(CS2::particles::C_INIT_SetHitboxToClosest) == 0xA38, "C_INIT_SetHitboxToClosest size should be 0xA38");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_SetHitboxToClosest should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nDesiredHitbox) == 0x1DC, "m_nDesiredHitbox in C_INIT_SetHitboxToClosest should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_vecHitBoxScale) == 0x1E0, "m_vecHitBoxScale in C_INIT_SetHitboxToClosest should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_HitboxSetName) == 0x898, "m_HitboxSetName in C_INIT_SetHitboxToClosest should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_bUseBones) == 0x918, "m_bUseBones in C_INIT_SetHitboxToClosest should be at offset 0x918");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_bUseClosestPointOnHitbox) == 0x919, "m_bUseClosestPointOnHitbox in C_INIT_SetHitboxToClosest should be at offset 0x919");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nTestType) == 0x91C, "m_nTestType in C_INIT_SetHitboxToClosest should be at offset 0x91C");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_flHybridRatio) == 0x920, "m_flHybridRatio in C_INIT_SetHitboxToClosest should be at offset 0x920");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_bUpdatePosition) == 0xA90, "m_bUpdatePosition in C_INIT_SetHitboxToClosest should be at offset 0xA90");
+		static_assert(sizeof(CS2::particles::C_INIT_SetHitboxToClosest) == 0xA98, "C_INIT_SetHitboxToClosest size should be 0xA98");
 	}
 }

@@ -15,35 +15,35 @@ namespace CS2 {
 	namespace server {
 		class CPhysMagnet : public CS2::server::CBaseAnimGraph {
 		public:
-			entity2::CEntityIOOutput m_OnMagnetAttach; // 0xa80 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMagnetDetach; // 0xaa8 | Schema_DeclaredClass | Size: 0x28
-			float32 m_massScale; // 0xad0 | Schema_Builtin | Size: 0x4
-			float32 m_forceLimit; // 0xad4 | Schema_Builtin | Size: 0x4
-			float32 m_torqueLimit; // 0xad8 | Schema_Builtin | Size: 0x4
+			entity2::CEntityIOOutput m_OnMagnetAttach; // 0xa90 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnMagnetDetach; // 0xab8 | Schema_DeclaredClass | Size: 0x28
+			float32 m_massScale; // 0xae0 | Schema_Builtin | Size: 0x4
+			float32 m_forceLimit; // 0xae4 | Schema_Builtin | Size: 0x4
+			float32 m_torqueLimit; // 0xae8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< server::magnetted_objects_t > m_MagnettedEntities; // 0xae0 | Schema_Atomic | Size: 0x18
-			char  m_MagnettedEntities[0x18]; // 0xae0 | Schema_Atomic | Size: 0x18
-			bool m_bActive; // 0xaf8 | Schema_Builtin | Size: 0x1
-			bool m_bHasHitSomething; // 0xaf9 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CUtlVector< server::magnetted_objects_t > m_MagnettedEntities; // 0xaf0 | Schema_Atomic | Size: 0x18
+			char  m_MagnettedEntities[0x18]; // 0xaf0 | Schema_Atomic | Size: 0x18
+			bool m_bActive; // 0xb08 | Schema_Builtin | Size: 0x1
+			bool m_bHasHitSomething; // 0xb09 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flTotalMass; // 0xafc | Schema_Builtin | Size: 0x4
-			float32 m_flRadius; // 0xb00 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flNextSuckTime; // 0xb04 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_iMaxObjectsAttached; // 0xb08 | Schema_Builtin | Size: 0x4
+			float32 m_flTotalMass; // 0xb0c | Schema_Builtin | Size: 0x4
+			float32 m_flRadius; // 0xb10 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flNextSuckTime; // 0xb14 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_iMaxObjectsAttached; // 0xb18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_OnMagnetAttach) == 0xA80, "m_OnMagnetAttach in CPhysMagnet should be at offset 0xA80");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_OnMagnetDetach) == 0xAA8, "m_OnMagnetDetach in CPhysMagnet should be at offset 0xAA8");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_massScale) == 0xAD0, "m_massScale in CPhysMagnet should be at offset 0xAD0");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_forceLimit) == 0xAD4, "m_forceLimit in CPhysMagnet should be at offset 0xAD4");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_torqueLimit) == 0xAD8, "m_torqueLimit in CPhysMagnet should be at offset 0xAD8");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_MagnettedEntities) == 0xAE0, "m_MagnettedEntities in CPhysMagnet should be at offset 0xAE0");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_bActive) == 0xAF8, "m_bActive in CPhysMagnet should be at offset 0xAF8");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_bHasHitSomething) == 0xAF9, "m_bHasHitSomething in CPhysMagnet should be at offset 0xAF9");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_flTotalMass) == 0xAFC, "m_flTotalMass in CPhysMagnet should be at offset 0xAFC");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_flRadius) == 0xB00, "m_flRadius in CPhysMagnet should be at offset 0xB00");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_flNextSuckTime) == 0xB04, "m_flNextSuckTime in CPhysMagnet should be at offset 0xB04");
-		static_assert(offsetof(CS2::server::CPhysMagnet, m_iMaxObjectsAttached) == 0xB08, "m_iMaxObjectsAttached in CPhysMagnet should be at offset 0xB08");
-		static_assert(sizeof(CS2::server::CPhysMagnet) == 0xB10, "CPhysMagnet size should be 0xB10");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_OnMagnetAttach) == 0xA90, "m_OnMagnetAttach in CPhysMagnet should be at offset 0xA90");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_OnMagnetDetach) == 0xAB8, "m_OnMagnetDetach in CPhysMagnet should be at offset 0xAB8");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_massScale) == 0xAE0, "m_massScale in CPhysMagnet should be at offset 0xAE0");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_forceLimit) == 0xAE4, "m_forceLimit in CPhysMagnet should be at offset 0xAE4");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_torqueLimit) == 0xAE8, "m_torqueLimit in CPhysMagnet should be at offset 0xAE8");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_MagnettedEntities) == 0xAF0, "m_MagnettedEntities in CPhysMagnet should be at offset 0xAF0");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_bActive) == 0xB08, "m_bActive in CPhysMagnet should be at offset 0xB08");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_bHasHitSomething) == 0xB09, "m_bHasHitSomething in CPhysMagnet should be at offset 0xB09");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_flTotalMass) == 0xB0C, "m_flTotalMass in CPhysMagnet should be at offset 0xB0C");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_flRadius) == 0xB10, "m_flRadius in CPhysMagnet should be at offset 0xB10");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_flNextSuckTime) == 0xB14, "m_flNextSuckTime in CPhysMagnet should be at offset 0xB14");
+		static_assert(offsetof(CS2::server::CPhysMagnet, m_iMaxObjectsAttached) == 0xB18, "m_iMaxObjectsAttached in CPhysMagnet should be at offset 0xB18");
+		static_assert(sizeof(CS2::server::CPhysMagnet) == 0xB20, "CPhysMagnet size should be 0xB20");
 	}
 }

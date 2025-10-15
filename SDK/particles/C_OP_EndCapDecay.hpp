@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_OP_EndCapDecay : public CS2::particles::CParticleFunctionOperator {
 		public:
 		};
-		static_assert(sizeof(CS2::particles::C_OP_EndCapDecay) == 0x1C0, "C_OP_EndCapDecay size should be 0x1C0");
+		static_assert(sizeof(CS2::particles::C_OP_EndCapDecay) == 0x1D0, "C_OP_EndCapDecay size should be 0x1D0");
 	}
 }

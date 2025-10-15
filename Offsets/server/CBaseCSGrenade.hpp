@@ -8,21 +8,21 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x11E8
+			// Class size: 0x1210
 			namespace CBaseCSGrenade /*: public CS2::server::CCSWeaponBase*/ {
-				constexpr std::ptrdiff_t m_bRedraw = 0x11a8; // bool m_bRedraw; |  0x11a8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsHeldByPlayer = 0x11a9; // bool m_bIsHeldByPlayer; |  0x11a9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPinPulled = 0x11aa; // bool m_bPinPulled; |  0x11aa | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bJumpThrow = 0x11ab; // bool m_bJumpThrow; |  0x11ab | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bThrowAnimating = 0x11ac; // bool m_bThrowAnimating; |  0x11ac | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fThrowTime = 0x11b0; // entity2::GameTime_t m_fThrowTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flThrowStrength = 0x11b4; // float32 m_flThrowStrength; |  0x11b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fDropTime = 0x11b8; // entity2::GameTime_t m_fDropTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_fPinPullTime = 0x11bc; // entity2::GameTime_t m_fPinPullTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bJustPulledPin = 0x11c0; // bool m_bJustPulledPin; |  0x11c0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nNextHoldTick = 0x11c4; // entity2::GameTick_t m_nNextHoldTick; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flNextHoldFrac = 0x11c8; // float32 m_flNextHoldFrac; |  0x11c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSwitchToWeaponAfterThrow = 0x11cc; // server::CHandle< server::CCSWeaponBase > m_hSwitchToWeaponAfterThrow; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bRedraw = 0x11d0; // bool m_bRedraw; |  0x11d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsHeldByPlayer = 0x11d1; // bool m_bIsHeldByPlayer; |  0x11d1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPinPulled = 0x11d2; // bool m_bPinPulled; |  0x11d2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bJumpThrow = 0x11d3; // bool m_bJumpThrow; |  0x11d3 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bThrowAnimating = 0x11d4; // bool m_bThrowAnimating; |  0x11d4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fThrowTime = 0x11d8; // entity2::GameTime_t m_fThrowTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flThrowStrength = 0x11dc; // float32 m_flThrowStrength; |  0x11dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fDropTime = 0x11e0; // entity2::GameTime_t m_fDropTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fPinPullTime = 0x11e4; // entity2::GameTime_t m_fPinPullTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bJustPulledPin = 0x11e8; // bool m_bJustPulledPin; |  0x11e8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nNextHoldTick = 0x11ec; // entity2::GameTick_t m_nNextHoldTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextHoldFrac = 0x11f0; // float32 m_flNextHoldFrac; |  0x11f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hSwitchToWeaponAfterThrow = 0x11f4; // server::CHandle< server::CCSWeaponBase > m_hSwitchToWeaponAfterThrow; |  Schema_Atomic | Size: 0x4
 			}
 		}
 	}

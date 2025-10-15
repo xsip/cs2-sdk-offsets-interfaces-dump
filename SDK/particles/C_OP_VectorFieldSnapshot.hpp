@@ -16,28 +16,28 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_VectorFieldSnapshot : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAttributeToWrite; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nLocalSpaceCP; // 0x1c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAttributeToWrite; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nLocalSpaceCP; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleVecInput m_vecScale; // 0x330 | Schema_DeclaredClass | Size: 0x678
-			float32 m_flBoundaryDampening; // 0x9a8 | Schema_Builtin | Size: 0x4
-			bool m_bSetVelocity; // 0x9ac | Schema_Builtin | Size: 0x1
-			bool m_bLockToSurface; // 0x9ad | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleVecInput m_vecScale; // 0x350 | Schema_DeclaredClass | Size: 0x6b8
+			float32 m_flBoundaryDampening; // 0xa08 | Schema_Builtin | Size: 0x4
+			bool m_bSetVelocity; // 0xa0c | Schema_Builtin | Size: 0x1
+			bool m_bLockToSurface; // 0xa0d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flGridSpacing; // 0x9b0 | Schema_Builtin | Size: 0x4
+			float32 m_flGridSpacing; // 0xa10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nControlPointNumber) == 0x1C0, "m_nControlPointNumber in C_OP_VectorFieldSnapshot should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nAttributeToWrite) == 0x1C4, "m_nAttributeToWrite in C_OP_VectorFieldSnapshot should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nLocalSpaceCP) == 0x1C8, "m_nLocalSpaceCP in C_OP_VectorFieldSnapshot should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_flInterpolation) == 0x1D0, "m_flInterpolation in C_OP_VectorFieldSnapshot should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_vecScale) == 0x330, "m_vecScale in C_OP_VectorFieldSnapshot should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_flBoundaryDampening) == 0x9A8, "m_flBoundaryDampening in C_OP_VectorFieldSnapshot should be at offset 0x9A8");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_bSetVelocity) == 0x9AC, "m_bSetVelocity in C_OP_VectorFieldSnapshot should be at offset 0x9AC");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_bLockToSurface) == 0x9AD, "m_bLockToSurface in C_OP_VectorFieldSnapshot should be at offset 0x9AD");
-		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_flGridSpacing) == 0x9B0, "m_flGridSpacing in C_OP_VectorFieldSnapshot should be at offset 0x9B0");
-		static_assert(sizeof(CS2::particles::C_OP_VectorFieldSnapshot) == 0x9B8, "C_OP_VectorFieldSnapshot size should be 0x9B8");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_VectorFieldSnapshot should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nAttributeToWrite) == 0x1D4, "m_nAttributeToWrite in C_OP_VectorFieldSnapshot should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nLocalSpaceCP) == 0x1D8, "m_nLocalSpaceCP in C_OP_VectorFieldSnapshot should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_flInterpolation) == 0x1E0, "m_flInterpolation in C_OP_VectorFieldSnapshot should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_vecScale) == 0x350, "m_vecScale in C_OP_VectorFieldSnapshot should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_flBoundaryDampening) == 0xA08, "m_flBoundaryDampening in C_OP_VectorFieldSnapshot should be at offset 0xA08");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_bSetVelocity) == 0xA0C, "m_bSetVelocity in C_OP_VectorFieldSnapshot should be at offset 0xA0C");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_bLockToSurface) == 0xA0D, "m_bLockToSurface in C_OP_VectorFieldSnapshot should be at offset 0xA0D");
+		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_flGridSpacing) == 0xA10, "m_flGridSpacing in C_OP_VectorFieldSnapshot should be at offset 0xA10");
+		static_assert(sizeof(CS2::particles::C_OP_VectorFieldSnapshot) == 0xA18, "C_OP_VectorFieldSnapshot size should be 0xA18");
 	}
 }

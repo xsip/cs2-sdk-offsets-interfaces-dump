@@ -14,9 +14,9 @@ namespace CS2 {
 	namespace server {
 		class CTriggerMultiple : public CS2::server::CBaseTrigger {
 		public:
-			entity2::CEntityIOOutput m_OnTrigger; // 0x9c0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnTrigger; // 0x9a8 | Schema_DeclaredClass | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CTriggerMultiple, m_OnTrigger) == 0x9C0, "m_OnTrigger in CTriggerMultiple should be at offset 0x9C0");
-		static_assert(sizeof(CS2::server::CTriggerMultiple) == 0x9E8, "CTriggerMultiple size should be 0x9E8");
+		static_assert(offsetof(CS2::server::CTriggerMultiple, m_OnTrigger) == 0x9A8, "m_OnTrigger in CTriggerMultiple should be at offset 0x9A8");
+		static_assert(sizeof(CS2::server::CTriggerMultiple) == 0x9D0, "CTriggerMultiple size should be 0x9D0");
 	}
 }

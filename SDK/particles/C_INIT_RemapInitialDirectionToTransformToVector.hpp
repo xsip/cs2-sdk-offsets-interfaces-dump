@@ -15,20 +15,20 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapInitialDirectionToTransformToVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CParticleTransformInput m_TransformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x230 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flScale; // 0x234 | Schema_Builtin | Size: 0x4
-			float32 m_flOffsetRot; // 0x238 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecOffsetAxis; // 0x23c | Schema_Atomic | Size: 0xc
-			bool m_bNormalize; // 0x248 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x68
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x240 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flScale; // 0x244 | Schema_Builtin | Size: 0x4
+			float32 m_flOffsetRot; // 0x248 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecOffsetAxis; // 0x24c | Schema_Atomic | Size: 0xc
+			bool m_bNormalize; // 0x258 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_TransformInput) == 0x1C8, "m_TransformInput in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_nFieldOutput) == 0x230, "m_nFieldOutput in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_flScale) == 0x234, "m_flScale in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x234");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_flOffsetRot) == 0x238, "m_flOffsetRot in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_vecOffsetAxis) == 0x23C, "m_vecOffsetAxis in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x23C");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_bNormalize) == 0x248, "m_bNormalize in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x248");
-		static_assert(sizeof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector) == 0x250, "C_INIT_RemapInitialDirectionToTransformToVector size should be 0x250");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_TransformInput) == 0x1D8, "m_TransformInput in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_nFieldOutput) == 0x240, "m_nFieldOutput in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_flScale) == 0x244, "m_flScale in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x244");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_flOffsetRot) == 0x248, "m_flOffsetRot in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_vecOffsetAxis) == 0x24C, "m_vecOffsetAxis in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x24C");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector, m_bNormalize) == 0x258, "m_bNormalize in C_INIT_RemapInitialDirectionToTransformToVector should be at offset 0x258");
+		static_assert(sizeof(CS2::particles::C_INIT_RemapInitialDirectionToTransformToVector) == 0x260, "C_INIT_RemapInitialDirectionToTransformToVector size should be 0x260");
 	}
 }

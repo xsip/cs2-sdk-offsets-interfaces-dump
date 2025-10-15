@@ -18,43 +18,43 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderOmni2Light : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particles::ParticleOmni2LightTypeChoiceList_t m_nLightType; // 0x210 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleOmni2LightTypeChoiceList_t m_nLightType; // 0x220 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionVecInput m_vColorBlend; // 0x218 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x890 | Schema_DeclaredEnum | Size: 0x4
-			particles::ParticleLightUnitChoiceList_t m_nBrightnessUnit; // 0x894 | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CPerParticleFloatInput m_flBrightnessLumens; // 0x898 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flBrightnessCandelas; // 0x9f8 | Schema_DeclaredClass | Size: 0x160
-			bool m_bCastShadows; // 0xb58 | Schema_Builtin | Size: 0x1
-			bool m_bFog; // 0xb59 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionVecInput m_vColorBlend; // 0x228 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x8e0 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleLightUnitChoiceList_t m_nBrightnessUnit; // 0x8e4 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flBrightnessLumens; // 0x8e8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flBrightnessCandelas; // 0xa58 | Schema_DeclaredClass | Size: 0x170
+			bool m_bCastShadows; // 0xbc8 | Schema_Builtin | Size: 0x1
+			bool m_bFog; // 0xbc9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			particleslib::CPerParticleFloatInput m_flFogScale; // 0xb60 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flLuminaireRadius; // 0xcc0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flSkirt; // 0xe20 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRange; // 0xf80 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInnerConeAngle; // 0x10e0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOuterConeAngle; // 0x1240 | Schema_DeclaredClass | Size: 0x160
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x13a0 | Schema_Atomic | Size: 0x8
-			char  m_hLightCookie[0x8]; // 0x13a0 | Schema_Atomic | Size: 0x8
-			bool m_bSphericalCookie; // 0x13a8 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleFloatInput m_flFogScale; // 0xbd0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flLuminaireRadius; // 0xd40 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flSkirt; // 0xeb0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRange; // 0x1020 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInnerConeAngle; // 0x1190 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOuterConeAngle; // 0x1300 | Schema_DeclaredClass | Size: 0x170
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x1470 | Schema_Atomic | Size: 0x8
+			char  m_hLightCookie[0x8]; // 0x1470 | Schema_Atomic | Size: 0x8
+			bool m_bSphericalCookie; // 0x1478 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nLightType) == 0x210, "m_nLightType in C_OP_RenderOmni2Light should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_vColorBlend) == 0x218, "m_vColorBlend in C_OP_RenderOmni2Light should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nColorBlendType) == 0x890, "m_nColorBlendType in C_OP_RenderOmni2Light should be at offset 0x890");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nBrightnessUnit) == 0x894, "m_nBrightnessUnit in C_OP_RenderOmni2Light should be at offset 0x894");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flBrightnessLumens) == 0x898, "m_flBrightnessLumens in C_OP_RenderOmni2Light should be at offset 0x898");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flBrightnessCandelas) == 0x9F8, "m_flBrightnessCandelas in C_OP_RenderOmni2Light should be at offset 0x9F8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_bCastShadows) == 0xB58, "m_bCastShadows in C_OP_RenderOmni2Light should be at offset 0xB58");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_bFog) == 0xB59, "m_bFog in C_OP_RenderOmni2Light should be at offset 0xB59");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flFogScale) == 0xB60, "m_flFogScale in C_OP_RenderOmni2Light should be at offset 0xB60");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flLuminaireRadius) == 0xCC0, "m_flLuminaireRadius in C_OP_RenderOmni2Light should be at offset 0xCC0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flSkirt) == 0xE20, "m_flSkirt in C_OP_RenderOmni2Light should be at offset 0xE20");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flRange) == 0xF80, "m_flRange in C_OP_RenderOmni2Light should be at offset 0xF80");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flInnerConeAngle) == 0x10E0, "m_flInnerConeAngle in C_OP_RenderOmni2Light should be at offset 0x10E0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flOuterConeAngle) == 0x1240, "m_flOuterConeAngle in C_OP_RenderOmni2Light should be at offset 0x1240");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_hLightCookie) == 0x13A0, "m_hLightCookie in C_OP_RenderOmni2Light should be at offset 0x13A0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_bSphericalCookie) == 0x13A8, "m_bSphericalCookie in C_OP_RenderOmni2Light should be at offset 0x13A8");
-		static_assert(sizeof(CS2::particles::C_OP_RenderOmni2Light) == 0x13B8, "C_OP_RenderOmni2Light size should be 0x13B8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nLightType) == 0x220, "m_nLightType in C_OP_RenderOmni2Light should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_vColorBlend) == 0x228, "m_vColorBlend in C_OP_RenderOmni2Light should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nColorBlendType) == 0x8E0, "m_nColorBlendType in C_OP_RenderOmni2Light should be at offset 0x8E0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nBrightnessUnit) == 0x8E4, "m_nBrightnessUnit in C_OP_RenderOmni2Light should be at offset 0x8E4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flBrightnessLumens) == 0x8E8, "m_flBrightnessLumens in C_OP_RenderOmni2Light should be at offset 0x8E8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flBrightnessCandelas) == 0xA58, "m_flBrightnessCandelas in C_OP_RenderOmni2Light should be at offset 0xA58");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_bCastShadows) == 0xBC8, "m_bCastShadows in C_OP_RenderOmni2Light should be at offset 0xBC8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_bFog) == 0xBC9, "m_bFog in C_OP_RenderOmni2Light should be at offset 0xBC9");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flFogScale) == 0xBD0, "m_flFogScale in C_OP_RenderOmni2Light should be at offset 0xBD0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flLuminaireRadius) == 0xD40, "m_flLuminaireRadius in C_OP_RenderOmni2Light should be at offset 0xD40");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flSkirt) == 0xEB0, "m_flSkirt in C_OP_RenderOmni2Light should be at offset 0xEB0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flRange) == 0x1020, "m_flRange in C_OP_RenderOmni2Light should be at offset 0x1020");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flInnerConeAngle) == 0x1190, "m_flInnerConeAngle in C_OP_RenderOmni2Light should be at offset 0x1190");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_flOuterConeAngle) == 0x1300, "m_flOuterConeAngle in C_OP_RenderOmni2Light should be at offset 0x1300");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_hLightCookie) == 0x1470, "m_hLightCookie in C_OP_RenderOmni2Light should be at offset 0x1470");
+		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_bSphericalCookie) == 0x1478, "m_bSphericalCookie in C_OP_RenderOmni2Light should be at offset 0x1478");
+		static_assert(sizeof(CS2::particles::C_OP_RenderOmni2Light) == 0x1488, "C_OP_RenderOmni2Light size should be 0x1488");
 	}
 }

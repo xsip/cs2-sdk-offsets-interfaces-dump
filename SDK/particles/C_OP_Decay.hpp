@@ -13,12 +13,12 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_Decay : public CS2::particles::CParticleFunctionOperator {
 		public:
-			bool m_bRopeDecay; // 0x1c0 | Schema_Builtin | Size: 0x1
-			bool m_bForcePreserveParticleOrder; // 0x1c1 | Schema_Builtin | Size: 0x1
+			bool m_bRopeDecay; // 0x1d0 | Schema_Builtin | Size: 0x1
+			bool m_bForcePreserveParticleOrder; // 0x1d1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_Decay, m_bRopeDecay) == 0x1C0, "m_bRopeDecay in C_OP_Decay should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_Decay, m_bForcePreserveParticleOrder) == 0x1C1, "m_bForcePreserveParticleOrder in C_OP_Decay should be at offset 0x1C1");
-		static_assert(sizeof(CS2::particles::C_OP_Decay) == 0x1C8, "C_OP_Decay size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::C_OP_Decay, m_bRopeDecay) == 0x1D0, "m_bRopeDecay in C_OP_Decay should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_Decay, m_bForcePreserveParticleOrder) == 0x1D1, "m_bForcePreserveParticleOrder in C_OP_Decay should be at offset 0x1D1");
+		static_assert(sizeof(CS2::particles::C_OP_Decay) == 0x1D8, "C_OP_Decay size should be 0x1D8");
 	}
 }

@@ -13,22 +13,22 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ForceBasedOnDistanceToPlane : public CS2::particles::CParticleFunctionForce {
 		public:
-			float32 m_flMinDist; // 0x1d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecForceAtMinDist; // 0x1d4 | Schema_Atomic | Size: 0xc
-			float32 m_flMaxDist; // 0x1e0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecForceAtMaxDist; // 0x1e4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecPlaneNormal; // 0x1f0 | Schema_Atomic | Size: 0xc
-			int32_t m_nControlPointNumber; // 0x1fc | Schema_Builtin | Size: 0x4
-			float32 m_flExponent; // 0x200 | Schema_Builtin | Size: 0x4
+			float32 m_flMinDist; // 0x1e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecForceAtMinDist; // 0x1e4 | Schema_Atomic | Size: 0xc
+			float32 m_flMaxDist; // 0x1f0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecForceAtMaxDist; // 0x1f4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecPlaneNormal; // 0x200 | Schema_Atomic | Size: 0xc
+			int32_t m_nControlPointNumber; // 0x20c | Schema_Builtin | Size: 0x4
+			float32 m_flExponent; // 0x210 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flMinDist) == 0x1D0, "m_flMinDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_vecForceAtMinDist) == 0x1D4, "m_vecForceAtMinDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flMaxDist) == 0x1E0, "m_flMaxDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_vecForceAtMaxDist) == 0x1E4, "m_vecForceAtMaxDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_vecPlaneNormal) == 0x1F0, "m_vecPlaneNormal in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_nControlPointNumber) == 0x1FC, "m_nControlPointNumber in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1FC");
-		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flExponent) == 0x200, "m_flExponent in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x200");
-		static_assert(sizeof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane) == 0x208, "C_OP_ForceBasedOnDistanceToPlane size should be 0x208");
+		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flMinDist) == 0x1E0, "m_flMinDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_vecForceAtMinDist) == 0x1E4, "m_vecForceAtMinDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flMaxDist) == 0x1F0, "m_flMaxDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_vecForceAtMaxDist) == 0x1F4, "m_vecForceAtMaxDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_vecPlaneNormal) == 0x200, "m_vecPlaneNormal in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_nControlPointNumber) == 0x20C, "m_nControlPointNumber in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x20C");
+		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flExponent) == 0x210, "m_flExponent in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x210");
+		static_assert(sizeof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane) == 0x218, "C_OP_ForceBasedOnDistanceToPlane size should be 0x218");
 	}
 }

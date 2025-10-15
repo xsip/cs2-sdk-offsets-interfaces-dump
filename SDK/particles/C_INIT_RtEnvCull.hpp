@@ -13,25 +13,25 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RtEnvCull : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			GlobalTypes::Vector m_vecTestDir; // 0x1c8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecTestNormal; // 0x1d4 | Schema_Atomic | Size: 0xc
-			bool m_bUseVelocity; // 0x1e0 | Schema_Builtin | Size: 0x1
-			bool m_bCullOnMiss; // 0x1e1 | Schema_Builtin | Size: 0x1
-			bool m_bLifeAdjust; // 0x1e2 | Schema_Builtin | Size: 0x1
-			char m_RtEnvName[128]; // 0x1e3 | Schema_FixedArray | Size: 0x80
+			GlobalTypes::Vector m_vecTestDir; // 0x1d8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecTestNormal; // 0x1e4 | Schema_Atomic | Size: 0xc
+			bool m_bUseVelocity; // 0x1f0 | Schema_Builtin | Size: 0x1
+			bool m_bCullOnMiss; // 0x1f1 | Schema_Builtin | Size: 0x1
+			bool m_bLifeAdjust; // 0x1f2 | Schema_Builtin | Size: 0x1
+			char m_RtEnvName[128]; // 0x1f3 | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x1);
-			int32_t m_nRTEnvCP; // 0x264 | Schema_Builtin | Size: 0x4
-			int32_t m_nComponent; // 0x268 | Schema_Builtin | Size: 0x4
+			int32_t m_nRTEnvCP; // 0x274 | Schema_Builtin | Size: 0x4
+			int32_t m_nComponent; // 0x278 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_vecTestDir) == 0x1C8, "m_vecTestDir in C_INIT_RtEnvCull should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_vecTestNormal) == 0x1D4, "m_vecTestNormal in C_INIT_RtEnvCull should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_bUseVelocity) == 0x1E0, "m_bUseVelocity in C_INIT_RtEnvCull should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_bCullOnMiss) == 0x1E1, "m_bCullOnMiss in C_INIT_RtEnvCull should be at offset 0x1E1");
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_bLifeAdjust) == 0x1E2, "m_bLifeAdjust in C_INIT_RtEnvCull should be at offset 0x1E2");
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_RtEnvName) == 0x1E3, "m_RtEnvName in C_INIT_RtEnvCull should be at offset 0x1E3");
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_nRTEnvCP) == 0x264, "m_nRTEnvCP in C_INIT_RtEnvCull should be at offset 0x264");
-		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_nComponent) == 0x268, "m_nComponent in C_INIT_RtEnvCull should be at offset 0x268");
-		static_assert(sizeof(CS2::particles::C_INIT_RtEnvCull) == 0x270, "C_INIT_RtEnvCull size should be 0x270");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_vecTestDir) == 0x1D8, "m_vecTestDir in C_INIT_RtEnvCull should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_vecTestNormal) == 0x1E4, "m_vecTestNormal in C_INIT_RtEnvCull should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_bUseVelocity) == 0x1F0, "m_bUseVelocity in C_INIT_RtEnvCull should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_bCullOnMiss) == 0x1F1, "m_bCullOnMiss in C_INIT_RtEnvCull should be at offset 0x1F1");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_bLifeAdjust) == 0x1F2, "m_bLifeAdjust in C_INIT_RtEnvCull should be at offset 0x1F2");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_RtEnvName) == 0x1F3, "m_RtEnvName in C_INIT_RtEnvCull should be at offset 0x1F3");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_nRTEnvCP) == 0x274, "m_nRTEnvCP in C_INIT_RtEnvCull should be at offset 0x274");
+		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_nComponent) == 0x278, "m_nComponent in C_INIT_RtEnvCull should be at offset 0x278");
+		static_assert(sizeof(CS2::particles::C_INIT_RtEnvCull) == 0x280, "C_INIT_RtEnvCull size should be 0x280");
 	}
 }

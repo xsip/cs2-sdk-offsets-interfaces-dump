@@ -14,12 +14,12 @@ namespace CS2 {
 	namespace server {
 		class CTriggerBuoyancy : public CS2::server::CBaseTrigger {
 		public:
-			server::CBuoyancyHelper m_BuoyancyHelper; // 0x9c0 | Schema_DeclaredClass | Size: 0x118
-			float32 m_flFluidDensity; // 0xad8 | Schema_Builtin | Size: 0x4
+			server::CBuoyancyHelper m_BuoyancyHelper; // 0x9a8 | Schema_DeclaredClass | Size: 0x118
+			float32 m_flFluidDensity; // 0xac0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTriggerBuoyancy, m_BuoyancyHelper) == 0x9C0, "m_BuoyancyHelper in CTriggerBuoyancy should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTriggerBuoyancy, m_flFluidDensity) == 0xAD8, "m_flFluidDensity in CTriggerBuoyancy should be at offset 0xAD8");
-		static_assert(sizeof(CS2::server::CTriggerBuoyancy) == 0xAE0, "CTriggerBuoyancy size should be 0xAE0");
+		static_assert(offsetof(CS2::server::CTriggerBuoyancy, m_BuoyancyHelper) == 0x9A8, "m_BuoyancyHelper in CTriggerBuoyancy should be at offset 0x9A8");
+		static_assert(offsetof(CS2::server::CTriggerBuoyancy, m_flFluidDensity) == 0xAC0, "m_flFluidDensity in CTriggerBuoyancy should be at offset 0xAC0");
+		static_assert(sizeof(CS2::server::CTriggerBuoyancy) == 0xAC8, "CTriggerBuoyancy size should be 0xAC8");
 	}
 }

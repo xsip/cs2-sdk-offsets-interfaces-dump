@@ -8,22 +8,22 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x10A0
+			// Class size: 0x1150
 			namespace C_OP_PinParticleToCP /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1c0; // int32_t m_nControlPointNumber; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOffset = 0x1c8; // particleslib::CParticleCollectionVecInput m_vecOffset; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_bOffsetLocal = 0x840; // bool m_bOffsetLocal; |  0x840 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nParticleSelection = 0x844; // particles::ParticleSelection_t m_nParticleSelection; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nParticleNumber = 0x848; // particleslib::CParticleCollectionFloatInput m_nParticleNumber; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nPinBreakType = 0x9a8; // particles::ParticlePinDistance_t m_nPinBreakType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakDistance = 0x9b0; // particleslib::CParticleCollectionFloatInput m_flBreakDistance; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flBreakSpeed = 0xb10; // particleslib::CParticleCollectionFloatInput m_flBreakSpeed; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flAge = 0xc70; // particleslib::CParticleCollectionFloatInput m_flAge; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nBreakControlPointNumber = 0xdd0; // int32_t m_nBreakControlPointNumber; |  0xdd0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nBreakControlPointNumber2 = 0xdd4; // int32_t m_nBreakControlPointNumber2; |  0xdd4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakValue = 0xdd8; // particleslib::CParticleCollectionFloatInput m_flBreakValue; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flInterpolation = 0xf38; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bRetainInitialVelocity = 0x1098; // bool m_bRetainInitialVelocity; |  0x1098 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1d0; // int32_t m_nControlPointNumber; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOffset = 0x1d8; // particleslib::CParticleCollectionVecInput m_vecOffset; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_bOffsetLocal = 0x890; // bool m_bOffsetLocal; |  0x890 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nParticleSelection = 0x894; // particles::ParticleSelection_t m_nParticleSelection; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nParticleNumber = 0x898; // particleslib::CParticleCollectionFloatInput m_nParticleNumber; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nPinBreakType = 0xa08; // particles::ParticlePinDistance_t m_nPinBreakType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakDistance = 0xa10; // particleslib::CParticleCollectionFloatInput m_flBreakDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flBreakSpeed = 0xb80; // particleslib::CParticleCollectionFloatInput m_flBreakSpeed; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flAge = 0xcf0; // particleslib::CParticleCollectionFloatInput m_flAge; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nBreakControlPointNumber = 0xe60; // int32_t m_nBreakControlPointNumber; |  0xe60 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nBreakControlPointNumber2 = 0xe64; // int32_t m_nBreakControlPointNumber2; |  0xe64 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakValue = 0xe68; // particleslib::CParticleCollectionFloatInput m_flBreakValue; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInterpolation = 0xfd8; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bRetainInitialVelocity = 0x1148; // bool m_bRetainInitialVelocity; |  0x1148 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

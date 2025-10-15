@@ -17,29 +17,29 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderSimpleModelCollection : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			bool m_bCenterOffset; // 0x210 | Schema_Builtin | Size: 0x1
+			bool m_bCenterOffset; // 0x220 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x218 | Schema_Atomic | Size: 0x8
-			char  m_hModel[0x8]; // 0x218 | Schema_Atomic | Size: 0x8
-			particleslib::CParticleModelInput m_modelInput; // 0x220 | Schema_DeclaredClass | Size: 0x60
-			particleslib::CParticleCollectionFloatInput m_fSizeCullScale; // 0x280 | Schema_DeclaredClass | Size: 0x160
-			bool m_bDisableShadows; // 0x3e0 | Schema_Builtin | Size: 0x1
-			bool m_bDisableMotionBlur; // 0x3e1 | Schema_Builtin | Size: 0x1
-			bool m_bAcceptsDecals; // 0x3e2 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x228 | Schema_Atomic | Size: 0x8
+			char  m_hModel[0x8]; // 0x228 | Schema_Atomic | Size: 0x8
+			particleslib::CParticleModelInput m_modelInput; // 0x230 | Schema_DeclaredClass | Size: 0x60
+			particleslib::CParticleCollectionFloatInput m_fSizeCullScale; // 0x290 | Schema_DeclaredClass | Size: 0x170
+			bool m_bDisableShadows; // 0x400 | Schema_Builtin | Size: 0x1
+			bool m_bDisableMotionBlur; // 0x401 | Schema_Builtin | Size: 0x1
+			bool m_bAcceptsDecals; // 0x402 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			particleslib::CPerParticleFloatInput m_fDrawFilter; // 0x3e8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nAngularVelocityField; // 0x548 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CPerParticleFloatInput m_fDrawFilter; // 0x408 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nAngularVelocityField; // 0x578 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x14); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bCenterOffset) == 0x210, "m_bCenterOffset in C_OP_RenderSimpleModelCollection should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_hModel) == 0x218, "m_hModel in C_OP_RenderSimpleModelCollection should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_modelInput) == 0x220, "m_modelInput in C_OP_RenderSimpleModelCollection should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_fSizeCullScale) == 0x280, "m_fSizeCullScale in C_OP_RenderSimpleModelCollection should be at offset 0x280");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bDisableShadows) == 0x3E0, "m_bDisableShadows in C_OP_RenderSimpleModelCollection should be at offset 0x3E0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bDisableMotionBlur) == 0x3E1, "m_bDisableMotionBlur in C_OP_RenderSimpleModelCollection should be at offset 0x3E1");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bAcceptsDecals) == 0x3E2, "m_bAcceptsDecals in C_OP_RenderSimpleModelCollection should be at offset 0x3E2");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_fDrawFilter) == 0x3E8, "m_fDrawFilter in C_OP_RenderSimpleModelCollection should be at offset 0x3E8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_nAngularVelocityField) == 0x548, "m_nAngularVelocityField in C_OP_RenderSimpleModelCollection should be at offset 0x548");
-		static_assert(sizeof(CS2::particles::C_OP_RenderSimpleModelCollection) == 0x560, "C_OP_RenderSimpleModelCollection size should be 0x560");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bCenterOffset) == 0x220, "m_bCenterOffset in C_OP_RenderSimpleModelCollection should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_hModel) == 0x228, "m_hModel in C_OP_RenderSimpleModelCollection should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_modelInput) == 0x230, "m_modelInput in C_OP_RenderSimpleModelCollection should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_fSizeCullScale) == 0x290, "m_fSizeCullScale in C_OP_RenderSimpleModelCollection should be at offset 0x290");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bDisableShadows) == 0x400, "m_bDisableShadows in C_OP_RenderSimpleModelCollection should be at offset 0x400");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bDisableMotionBlur) == 0x401, "m_bDisableMotionBlur in C_OP_RenderSimpleModelCollection should be at offset 0x401");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bAcceptsDecals) == 0x402, "m_bAcceptsDecals in C_OP_RenderSimpleModelCollection should be at offset 0x402");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_fDrawFilter) == 0x408, "m_fDrawFilter in C_OP_RenderSimpleModelCollection should be at offset 0x408");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_nAngularVelocityField) == 0x578, "m_nAngularVelocityField in C_OP_RenderSimpleModelCollection should be at offset 0x578");
+		static_assert(sizeof(CS2::particles::C_OP_RenderSimpleModelCollection) == 0x590, "C_OP_RenderSimpleModelCollection size should be 0x590");
 	}
 }

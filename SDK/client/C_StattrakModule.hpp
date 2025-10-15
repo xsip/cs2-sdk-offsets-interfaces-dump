@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace client {
 		class C_StattrakModule : public CS2::client::C_CS2WeaponModuleBase {
 		public:
-			bool m_bKnife; // 0x1178 | Schema_Builtin | Size: 0x1
+			bool m_bKnife; // 0x1160 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_StattrakModule, m_bKnife) == 0x1178, "m_bKnife in C_StattrakModule should be at offset 0x1178");
-		static_assert(sizeof(CS2::client::C_StattrakModule) == 0x1180, "C_StattrakModule size should be 0x1180");
+		static_assert(offsetof(CS2::client::C_StattrakModule, m_bKnife) == 0x1160, "m_bKnife in C_StattrakModule should be at offset 0x1160");
+		static_assert(sizeof(CS2::client::C_StattrakModule) == 0x1168, "C_StattrakModule size should be 0x1168");
 	}
 }

@@ -14,6 +14,6 @@ namespace CS2 {
 		class CWaterSplasher : public CS2::client::C_BaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::client::CWaterSplasher) == 0xEC8, "CWaterSplasher size should be 0xEC8");
+		static_assert(sizeof(CS2::client::CWaterSplasher) == 0xEB0, "CWaterSplasher size should be 0xEB0");
 	}
 }

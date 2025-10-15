@@ -13,17 +13,17 @@ namespace CS2 {
 	namespace client {
 		class CBaseProp : public CS2::client::CBaseAnimGraph {
 		public:
-			bool m_bModelOverrodeBlockLOS; // 0x1170 | Schema_Builtin | Size: 0x1
+			bool m_bModelOverrodeBlockLOS; // 0x1158 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iShapeType; // 0x1174 | Schema_Builtin | Size: 0x4
-			bool m_bConformToCollisionBounds; // 0x1178 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x7);
-			GlobalTypes::CTransform m_mPreferredCatchTransform; // 0x1180 | Schema_Atomic | Size: 0x20
+			int32_t m_iShapeType; // 0x115c | Schema_Builtin | Size: 0x4
+			bool m_bConformToCollisionBounds; // 0x1160 | Schema_Builtin | Size: 0x1
+			S2_PAD(0xf);
+			GlobalTypes::CTransform m_mPreferredCatchTransform; // 0x1170 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::client::CBaseProp, m_bModelOverrodeBlockLOS) == 0x1170, "m_bModelOverrodeBlockLOS in CBaseProp should be at offset 0x1170");
-		static_assert(offsetof(CS2::client::CBaseProp, m_iShapeType) == 0x1174, "m_iShapeType in CBaseProp should be at offset 0x1174");
-		static_assert(offsetof(CS2::client::CBaseProp, m_bConformToCollisionBounds) == 0x1178, "m_bConformToCollisionBounds in CBaseProp should be at offset 0x1178");
-		static_assert(offsetof(CS2::client::CBaseProp, m_mPreferredCatchTransform) == 0x1180, "m_mPreferredCatchTransform in CBaseProp should be at offset 0x1180");
-		static_assert(sizeof(CS2::client::CBaseProp) == 0x11A0, "CBaseProp size should be 0x11A0");
+		static_assert(offsetof(CS2::client::CBaseProp, m_bModelOverrodeBlockLOS) == 0x1158, "m_bModelOverrodeBlockLOS in CBaseProp should be at offset 0x1158");
+		static_assert(offsetof(CS2::client::CBaseProp, m_iShapeType) == 0x115C, "m_iShapeType in CBaseProp should be at offset 0x115C");
+		static_assert(offsetof(CS2::client::CBaseProp, m_bConformToCollisionBounds) == 0x1160, "m_bConformToCollisionBounds in CBaseProp should be at offset 0x1160");
+		static_assert(offsetof(CS2::client::CBaseProp, m_mPreferredCatchTransform) == 0x1170, "m_mPreferredCatchTransform in CBaseProp should be at offset 0x1170");
+		static_assert(sizeof(CS2::client::CBaseProp) == 0x1190, "CBaseProp size should be 0x1190");
 	}
 }

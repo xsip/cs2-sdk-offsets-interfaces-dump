@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x750
+			// Class size: 0x7A0
 			namespace C_OP_RemapParticleCountToScalar /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nInputMin = 0x1c8; // particleslib::CParticleCollectionFloatInput m_nInputMin; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nInputMax = 0x328; // particleslib::CParticleCollectionFloatInput m_nInputMax; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOutputMin = 0x488; // particleslib::CParticleCollectionFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOutputMax = 0x5e8; // particleslib::CParticleCollectionFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bActiveRange = 0x748; // bool m_bActiveRange; |  0x748 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nSetMethod = 0x74c; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nInputMin = 0x1d8; // particleslib::CParticleCollectionFloatInput m_nInputMin; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nInputMax = 0x348; // particleslib::CParticleCollectionFloatInput m_nInputMax; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMin = 0x4b8; // particleslib::CParticleCollectionFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMax = 0x628; // particleslib::CParticleCollectionFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bActiveRange = 0x798; // bool m_bActiveRange; |  0x798 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nSetMethod = 0x79c; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

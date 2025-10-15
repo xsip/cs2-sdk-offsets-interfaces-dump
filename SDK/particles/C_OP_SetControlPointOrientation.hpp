@@ -14,25 +14,25 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointOrientation : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			bool m_bUseWorldLocation; // 0x1c8 | Schema_Builtin | Size: 0x1
+			bool m_bUseWorldLocation; // 0x1d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			bool m_bRandomize; // 0x1ca | Schema_Builtin | Size: 0x1
-			bool m_bSetOnce; // 0x1cb | Schema_Builtin | Size: 0x1
-			int32_t m_nCP; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nHeadLocation; // 0x1d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::QAngle m_vecRotation; // 0x1d4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecRotationB; // 0x1e0 | Schema_Atomic | Size: 0xc
+			bool m_bRandomize; // 0x1da | Schema_Builtin | Size: 0x1
+			bool m_bSetOnce; // 0x1db | Schema_Builtin | Size: 0x1
+			int32_t m_nCP; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nHeadLocation; // 0x1e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_vecRotation; // 0x1e4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecRotationB; // 0x1f0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x1f0 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x200 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bUseWorldLocation) == 0x1C8, "m_bUseWorldLocation in C_OP_SetControlPointOrientation should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bRandomize) == 0x1CA, "m_bRandomize in C_OP_SetControlPointOrientation should be at offset 0x1CA");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bSetOnce) == 0x1CB, "m_bSetOnce in C_OP_SetControlPointOrientation should be at offset 0x1CB");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_nCP) == 0x1CC, "m_nCP in C_OP_SetControlPointOrientation should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_nHeadLocation) == 0x1D0, "m_nHeadLocation in C_OP_SetControlPointOrientation should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_vecRotation) == 0x1D4, "m_vecRotation in C_OP_SetControlPointOrientation should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_vecRotationB) == 0x1E0, "m_vecRotationB in C_OP_SetControlPointOrientation should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_flInterpolation) == 0x1F0, "m_flInterpolation in C_OP_SetControlPointOrientation should be at offset 0x1F0");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointOrientation) == 0x350, "C_OP_SetControlPointOrientation size should be 0x350");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bUseWorldLocation) == 0x1D8, "m_bUseWorldLocation in C_OP_SetControlPointOrientation should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bRandomize) == 0x1DA, "m_bRandomize in C_OP_SetControlPointOrientation should be at offset 0x1DA");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bSetOnce) == 0x1DB, "m_bSetOnce in C_OP_SetControlPointOrientation should be at offset 0x1DB");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_nCP) == 0x1DC, "m_nCP in C_OP_SetControlPointOrientation should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_nHeadLocation) == 0x1E0, "m_nHeadLocation in C_OP_SetControlPointOrientation should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_vecRotation) == 0x1E4, "m_vecRotation in C_OP_SetControlPointOrientation should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_vecRotationB) == 0x1F0, "m_vecRotationB in C_OP_SetControlPointOrientation should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_flInterpolation) == 0x200, "m_flInterpolation in C_OP_SetControlPointOrientation should be at offset 0x200");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointOrientation) == 0x370, "C_OP_SetControlPointOrientation size should be 0x370");
 	}
 }

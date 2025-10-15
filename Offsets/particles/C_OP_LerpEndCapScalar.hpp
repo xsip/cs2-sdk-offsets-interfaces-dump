@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1D0
+			// Class size: 0x1E0
 			namespace C_OP_LerpEndCapScalar /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutput = 0x1c4; // float32 m_flOutput; |  0x1c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLerpTime = 0x1c8; // float32 m_flLerpTime; |  0x1c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutput = 0x1d4; // float32 m_flOutput; |  0x1d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLerpTime = 0x1d8; // float32 m_flLerpTime; |  0x1d8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

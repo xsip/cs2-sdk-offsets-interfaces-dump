@@ -16,15 +16,15 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitFloat : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleFloatInput m_InputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x328 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x32c | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CPerParticleFloatInput m_InputStrength; // 0x330 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_InputValue; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x348 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x34c | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_InputStrength; // 0x350 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_InputValue) == 0x1C8, "m_InputValue in C_INIT_InitFloat should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_nOutputField) == 0x328, "m_nOutputField in C_INIT_InitFloat should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_nSetMethod) == 0x32C, "m_nSetMethod in C_INIT_InitFloat should be at offset 0x32C");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_InputStrength) == 0x330, "m_InputStrength in C_INIT_InitFloat should be at offset 0x330");
-		static_assert(sizeof(CS2::particles::C_INIT_InitFloat) == 0x490, "C_INIT_InitFloat size should be 0x490");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_InputValue) == 0x1D8, "m_InputValue in C_INIT_InitFloat should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_nOutputField) == 0x348, "m_nOutputField in C_INIT_InitFloat should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_nSetMethod) == 0x34C, "m_nSetMethod in C_INIT_InitFloat should be at offset 0x34C");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_InputStrength) == 0x350, "m_InputStrength in C_INIT_InitFloat should be at offset 0x350");
+		static_assert(sizeof(CS2::particles::C_INIT_InitFloat) == 0x4C0, "C_INIT_InitFloat size should be 0x4C0");
 	}
 }

@@ -18,8 +18,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_pCollision = 0x340; // client::CCollisionProperty* m_pCollision; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_iMaxHealth = 0x348; // int32_t m_iMaxHealth; |  0x348 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iHealth = 0x34c; // int32_t m_iHealth; |  0x34c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_lifeState = 0x350; // uint8_t m_lifeState; |  0x350 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bTakesDamage = 0x351; // bool m_bTakesDamage; |  0x351 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDamageAccumulator = 0x350; // float32 m_flDamageAccumulator; |  0x350 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_lifeState = 0x354; // uint8_t m_lifeState; |  0x354 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bTakesDamage = 0x355; // bool m_bTakesDamage; |  0x355 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nTakeDamageFlags = 0x358; // client::TakeDamageFlags_t m_nTakeDamageFlags; |  Schema_DeclaredEnum | Size: 0x8
 				constexpr std::ptrdiff_t m_nPlatformType = 0x360; // client::EntityPlatformTypes_t m_nPlatformType; |  Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_ubInterpolationFrame = 0x361; // uint8_t m_ubInterpolationFrame; |  0x361 | Schema_Builtin | Size: 0x1

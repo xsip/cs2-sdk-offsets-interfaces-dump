@@ -19,39 +19,39 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LockToBone : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CParticleModelInput m_modelInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x60
-			particleslib::CParticleTransformInput m_transformInput; // 0x220 | Schema_DeclaredClass | Size: 0x68
-			float32 m_flLifeTimeFadeStart; // 0x288 | Schema_Builtin | Size: 0x4
-			float32 m_flLifeTimeFadeEnd; // 0x28c | Schema_Builtin | Size: 0x4
-			float32 m_flJumpThreshold; // 0x290 | Schema_Builtin | Size: 0x4
-			float32 m_flPrevPosScale; // 0x294 | Schema_Builtin | Size: 0x4
-			char m_HitboxSetName[128]; // 0x298 | Schema_FixedArray | Size: 0x80
-			bool m_bRigid; // 0x318 | Schema_Builtin | Size: 0x1
-			bool m_bUseBones; // 0x319 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleModelInput m_modelInput; // 0x1d0 | Schema_DeclaredClass | Size: 0x60
+			particleslib::CParticleTransformInput m_transformInput; // 0x230 | Schema_DeclaredClass | Size: 0x68
+			float32 m_flLifeTimeFadeStart; // 0x298 | Schema_Builtin | Size: 0x4
+			float32 m_flLifeTimeFadeEnd; // 0x29c | Schema_Builtin | Size: 0x4
+			float32 m_flJumpThreshold; // 0x2a0 | Schema_Builtin | Size: 0x4
+			float32 m_flPrevPosScale; // 0x2a4 | Schema_Builtin | Size: 0x4
+			char m_HitboxSetName[128]; // 0x2a8 | Schema_FixedArray | Size: 0x80
+			bool m_bRigid; // 0x328 | Schema_Builtin | Size: 0x1
+			bool m_bUseBones; // 0x329 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x31c | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutputPrev; // 0x320 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleRotationLockType_t m_nRotationSetType; // 0x324 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bRigidRotationLock; // 0x328 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x32c | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutputPrev; // 0x330 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleRotationLockType_t m_nRotationSetType; // 0x334 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bRigidRotationLock; // 0x338 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CPerParticleVecInput m_vecRotation; // 0x330 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flRotLerp; // 0x9a8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleVecInput m_vecRotation; // 0x340 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flRotLerp; // 0x9f8 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_modelInput) == 0x1C0, "m_modelInput in C_OP_LockToBone should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_transformInput) == 0x220, "m_transformInput in C_OP_LockToBone should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flLifeTimeFadeStart) == 0x288, "m_flLifeTimeFadeStart in C_OP_LockToBone should be at offset 0x288");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flLifeTimeFadeEnd) == 0x28C, "m_flLifeTimeFadeEnd in C_OP_LockToBone should be at offset 0x28C");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flJumpThreshold) == 0x290, "m_flJumpThreshold in C_OP_LockToBone should be at offset 0x290");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flPrevPosScale) == 0x294, "m_flPrevPosScale in C_OP_LockToBone should be at offset 0x294");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_HitboxSetName) == 0x298, "m_HitboxSetName in C_OP_LockToBone should be at offset 0x298");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_bRigid) == 0x318, "m_bRigid in C_OP_LockToBone should be at offset 0x318");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_bUseBones) == 0x319, "m_bUseBones in C_OP_LockToBone should be at offset 0x319");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_nFieldOutput) == 0x31C, "m_nFieldOutput in C_OP_LockToBone should be at offset 0x31C");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_nFieldOutputPrev) == 0x320, "m_nFieldOutputPrev in C_OP_LockToBone should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_nRotationSetType) == 0x324, "m_nRotationSetType in C_OP_LockToBone should be at offset 0x324");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_bRigidRotationLock) == 0x328, "m_bRigidRotationLock in C_OP_LockToBone should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_vecRotation) == 0x330, "m_vecRotation in C_OP_LockToBone should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flRotLerp) == 0x9A8, "m_flRotLerp in C_OP_LockToBone should be at offset 0x9A8");
-		static_assert(sizeof(CS2::particles::C_OP_LockToBone) == 0xB08, "C_OP_LockToBone size should be 0xB08");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_modelInput) == 0x1D0, "m_modelInput in C_OP_LockToBone should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_transformInput) == 0x230, "m_transformInput in C_OP_LockToBone should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flLifeTimeFadeStart) == 0x298, "m_flLifeTimeFadeStart in C_OP_LockToBone should be at offset 0x298");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flLifeTimeFadeEnd) == 0x29C, "m_flLifeTimeFadeEnd in C_OP_LockToBone should be at offset 0x29C");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flJumpThreshold) == 0x2A0, "m_flJumpThreshold in C_OP_LockToBone should be at offset 0x2A0");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flPrevPosScale) == 0x2A4, "m_flPrevPosScale in C_OP_LockToBone should be at offset 0x2A4");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_HitboxSetName) == 0x2A8, "m_HitboxSetName in C_OP_LockToBone should be at offset 0x2A8");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_bRigid) == 0x328, "m_bRigid in C_OP_LockToBone should be at offset 0x328");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_bUseBones) == 0x329, "m_bUseBones in C_OP_LockToBone should be at offset 0x329");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_nFieldOutput) == 0x32C, "m_nFieldOutput in C_OP_LockToBone should be at offset 0x32C");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_nFieldOutputPrev) == 0x330, "m_nFieldOutputPrev in C_OP_LockToBone should be at offset 0x330");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_nRotationSetType) == 0x334, "m_nRotationSetType in C_OP_LockToBone should be at offset 0x334");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_bRigidRotationLock) == 0x338, "m_bRigidRotationLock in C_OP_LockToBone should be at offset 0x338");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_vecRotation) == 0x340, "m_vecRotation in C_OP_LockToBone should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flRotLerp) == 0x9F8, "m_flRotLerp in C_OP_LockToBone should be at offset 0x9F8");
+		static_assert(sizeof(CS2::particles::C_OP_LockToBone) == 0xB68, "C_OP_LockToBone size should be 0xB68");
 	}
 }

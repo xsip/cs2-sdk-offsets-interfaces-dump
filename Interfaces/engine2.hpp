@@ -8,39 +8,39 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace engine2 {
-			constexpr std::ptrdiff_t  = 0x6bc5d786; 
-			constexpr std::ptrdiff_t BenchmarkService001 = 0x5f15a0; 
-			constexpr std::ptrdiff_t BugService001 = 0x8a5bc0; 
-			constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x8e71b0; 
-			constexpr std::ptrdiff_t EngineGameUI001 = 0x5ef2c0; 
-			constexpr std::ptrdiff_t EngineServiceMgr001 = 0x8e6ab0; 
-			constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x8e6d80; 
-			constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x8e6ea0; 
-			constexpr std::ptrdiff_t GameResourceServiceClientV001 = 0x5f16a0; 
-			constexpr std::ptrdiff_t GameResourceServiceServerV001 = 0x5f1700; 
-			constexpr std::ptrdiff_t GameUIService_001 = 0x8a5ff0; 
-			constexpr std::ptrdiff_t HostStateMgr001 = 0x5f2090; 
-			constexpr std::ptrdiff_t INETSUPPORT_001 = 0x5ea860; 
-			constexpr std::ptrdiff_t InputService_001 = 0x8a62e0; 
-			constexpr std::ptrdiff_t KeyValueCache001 = 0x5f2140; 
-			constexpr std::ptrdiff_t MapListService_001 = 0x8e5260; 
-			constexpr std::ptrdiff_t NetworkClientService_001 = 0x8e53f0; 
-			constexpr std::ptrdiff_t NetworkP2PService_001 = 0x5f1850; 
-			constexpr std::ptrdiff_t NetworkServerService_001 = 0x8e5770; 
-			constexpr std::ptrdiff_t NetworkService_001 = 0x5f19a0; 
-			constexpr std::ptrdiff_t RenderService_001 = 0x8e59d0; 
-			constexpr std::ptrdiff_t ScreenshotService001 = 0x8e5c80; 
-			constexpr std::ptrdiff_t SimpleEngineLoopService_001 = 0x5f21a0; 
-			constexpr std::ptrdiff_t SoundService_001 = 0x5f19e0; 
-			constexpr std::ptrdiff_t Source2EngineToClient001 = 0x5ee950; 
-			constexpr std::ptrdiff_t Source2EngineToClientStringTable001 = 0x5ee9b0; 
-			constexpr std::ptrdiff_t Source2EngineToServer001 = 0x5eea28; 
-			constexpr std::ptrdiff_t Source2EngineToServerStringTable001 = 0x5eea50; 
-			constexpr std::ptrdiff_t SplitScreenService_001 = 0x5f1ce0; 
-			constexpr std::ptrdiff_t StatsService_001 = 0x8e6080; 
-			constexpr std::ptrdiff_t ToolService_001 = 0x5f1ea0; 
-			constexpr std::ptrdiff_t VENGINE_GAMEUIFUNCS_VERSION005 = 0x5ef350; 
-			constexpr std::ptrdiff_t VProfService_001 = 0x5f1ee0; 
+			constexpr std::ptrdiff_t  = 0x63b743e6; 
+			constexpr std::ptrdiff_t BenchmarkService001 = 0x5f55f0; 
+			constexpr std::ptrdiff_t BugService001 = 0x8a9a70; 
+			constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x8eb180; 
+			constexpr std::ptrdiff_t EngineGameUI001 = 0x5f32d0; 
+			constexpr std::ptrdiff_t EngineServiceMgr001 = 0x8eaa80; 
+			constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x8ead50; 
+			constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x8eae70; 
+			constexpr std::ptrdiff_t GameResourceServiceClientV001 = 0x5f56f0; 
+			constexpr std::ptrdiff_t GameResourceServiceServerV001 = 0x5f5750; 
+			constexpr std::ptrdiff_t GameUIService_001 = 0x8a9ea0; 
+			constexpr std::ptrdiff_t HostStateMgr001 = 0x5f5fb0; 
+			constexpr std::ptrdiff_t INETSUPPORT_001 = 0x5ee860; 
+			constexpr std::ptrdiff_t InputService_001 = 0x8aa190; 
+			constexpr std::ptrdiff_t KeyValueCache001 = 0x5f6060; 
+			constexpr std::ptrdiff_t MapListService_001 = 0x8e9100; 
+			constexpr std::ptrdiff_t NetworkClientService_001 = 0x8e9290; 
+			constexpr std::ptrdiff_t NetworkP2PService_001 = 0x8e95b0; 
+			constexpr std::ptrdiff_t NetworkServerService_001 = 0x8e9740; 
+			constexpr std::ptrdiff_t NetworkService_001 = 0x5f58c0; 
+			constexpr std::ptrdiff_t RenderService_001 = 0x8e99a0; 
+			constexpr std::ptrdiff_t ScreenshotService001 = 0x8e9c50; 
+			constexpr std::ptrdiff_t SimpleEngineLoopService_001 = 0x5f60c0; 
+			constexpr std::ptrdiff_t SoundService_001 = 0x5f5900; 
+			constexpr std::ptrdiff_t Source2EngineToClient001 = 0x5f2960; 
+			constexpr std::ptrdiff_t Source2EngineToClientStringTable001 = 0x5f29c0; 
+			constexpr std::ptrdiff_t Source2EngineToServer001 = 0x5f2a38; 
+			constexpr std::ptrdiff_t Source2EngineToServerStringTable001 = 0x5f2a60; 
+			constexpr std::ptrdiff_t SplitScreenService_001 = 0x5f5c00; 
+			constexpr std::ptrdiff_t StatsService_001 = 0x8ea050; 
+			constexpr std::ptrdiff_t ToolService_001 = 0x5f5dc0; 
+			constexpr std::ptrdiff_t VENGINE_GAMEUIFUNCS_VERSION005 = 0x5f3360; 
+			constexpr std::ptrdiff_t VProfService_001 = 0x5f5e00; 
 		}
 	}
 }

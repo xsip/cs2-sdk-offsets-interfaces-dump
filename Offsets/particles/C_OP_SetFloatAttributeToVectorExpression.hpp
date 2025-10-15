@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1020
+			// Class size: 0x10C0
 			namespace C_OP_SetFloatAttributeToVectorExpression /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nExpression = 0x1c0; // particles::VectorFloatExpressionType_t m_nExpression; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vInput1 = 0x1c8; // particleslib::CPerParticleVecInput m_vInput1; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vInput2 = 0x840; // particleslib::CPerParticleVecInput m_vInput2; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flOutputRemap = 0xeb8; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nOutputField = 0x1018; // particles::ParticleAttributeIndex_t m_nOutputField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x101c; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nExpression = 0x1d0; // particles::VectorFloatExpressionType_t m_nExpression; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vInput1 = 0x1d8; // particleslib::CPerParticleVecInput m_vInput1; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vInput2 = 0x890; // particleslib::CPerParticleVecInput m_vInput2; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flOutputRemap = 0xf48; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nOutputField = 0x10b8; // particles::ParticleAttributeIndex_t m_nOutputField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x10bc; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -17,35 +17,35 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateWithinSphereTransform : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleFloatInput m_fRadiusMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_fRadiusMax; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleVecInput m_vecDistanceBias; // 0x488 | Schema_DeclaredClass | Size: 0x678
-			GlobalTypes::Vector m_vecDistanceBiasAbs; // 0xb00 | Schema_Atomic | Size: 0xc
+			particleslib::CPerParticleFloatInput m_fRadiusMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_fRadiusMax; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleVecInput m_vecDistanceBias; // 0x4b8 | Schema_DeclaredClass | Size: 0x6b8
+			GlobalTypes::Vector m_vecDistanceBiasAbs; // 0xb70 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			particleslib::CParticleTransformInput m_TransformInput; // 0xb10 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CPerParticleFloatInput m_fSpeedMin; // 0xb78 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_fSpeedMax; // 0xcd8 | Schema_DeclaredClass | Size: 0x160
-			float32 m_fSpeedRandExp; // 0xe38 | Schema_Builtin | Size: 0x4
-			bool m_bLocalCoords; // 0xe3c | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformInput; // 0xb80 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CPerParticleFloatInput m_fSpeedMin; // 0xbe8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_fSpeedMax; // 0xd58 | Schema_DeclaredClass | Size: 0x170
+			float32 m_fSpeedRandExp; // 0xec8 | Schema_Builtin | Size: 0x4
+			bool m_bLocalCoords; // 0xecc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0xe40 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0x14b8 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1b30 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldVelocity; // 0x1b34 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0xed0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0x1588 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c40 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldVelocity; // 0x1c44 | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fRadiusMin) == 0x1C8, "m_fRadiusMin in C_INIT_CreateWithinSphereTransform should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fRadiusMax) == 0x328, "m_fRadiusMax in C_INIT_CreateWithinSphereTransform should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_vecDistanceBias) == 0x488, "m_vecDistanceBias in C_INIT_CreateWithinSphereTransform should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_vecDistanceBiasAbs) == 0xB00, "m_vecDistanceBiasAbs in C_INIT_CreateWithinSphereTransform should be at offset 0xB00");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_TransformInput) == 0xB10, "m_TransformInput in C_INIT_CreateWithinSphereTransform should be at offset 0xB10");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fSpeedMin) == 0xB78, "m_fSpeedMin in C_INIT_CreateWithinSphereTransform should be at offset 0xB78");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fSpeedMax) == 0xCD8, "m_fSpeedMax in C_INIT_CreateWithinSphereTransform should be at offset 0xCD8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fSpeedRandExp) == 0xE38, "m_fSpeedRandExp in C_INIT_CreateWithinSphereTransform should be at offset 0xE38");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_bLocalCoords) == 0xE3C, "m_bLocalCoords in C_INIT_CreateWithinSphereTransform should be at offset 0xE3C");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_LocalCoordinateSystemSpeedMin) == 0xE40, "m_LocalCoordinateSystemSpeedMin in C_INIT_CreateWithinSphereTransform should be at offset 0xE40");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_LocalCoordinateSystemSpeedMax) == 0x14B8, "m_LocalCoordinateSystemSpeedMax in C_INIT_CreateWithinSphereTransform should be at offset 0x14B8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_nFieldOutput) == 0x1B30, "m_nFieldOutput in C_INIT_CreateWithinSphereTransform should be at offset 0x1B30");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_nFieldVelocity) == 0x1B34, "m_nFieldVelocity in C_INIT_CreateWithinSphereTransform should be at offset 0x1B34");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateWithinSphereTransform) == 0x1B38, "C_INIT_CreateWithinSphereTransform size should be 0x1B38");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fRadiusMin) == 0x1D8, "m_fRadiusMin in C_INIT_CreateWithinSphereTransform should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fRadiusMax) == 0x348, "m_fRadiusMax in C_INIT_CreateWithinSphereTransform should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_vecDistanceBias) == 0x4B8, "m_vecDistanceBias in C_INIT_CreateWithinSphereTransform should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_vecDistanceBiasAbs) == 0xB70, "m_vecDistanceBiasAbs in C_INIT_CreateWithinSphereTransform should be at offset 0xB70");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_TransformInput) == 0xB80, "m_TransformInput in C_INIT_CreateWithinSphereTransform should be at offset 0xB80");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fSpeedMin) == 0xBE8, "m_fSpeedMin in C_INIT_CreateWithinSphereTransform should be at offset 0xBE8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fSpeedMax) == 0xD58, "m_fSpeedMax in C_INIT_CreateWithinSphereTransform should be at offset 0xD58");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_fSpeedRandExp) == 0xEC8, "m_fSpeedRandExp in C_INIT_CreateWithinSphereTransform should be at offset 0xEC8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_bLocalCoords) == 0xECC, "m_bLocalCoords in C_INIT_CreateWithinSphereTransform should be at offset 0xECC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_LocalCoordinateSystemSpeedMin) == 0xED0, "m_LocalCoordinateSystemSpeedMin in C_INIT_CreateWithinSphereTransform should be at offset 0xED0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_LocalCoordinateSystemSpeedMax) == 0x1588, "m_LocalCoordinateSystemSpeedMax in C_INIT_CreateWithinSphereTransform should be at offset 0x1588");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_nFieldOutput) == 0x1C40, "m_nFieldOutput in C_INIT_CreateWithinSphereTransform should be at offset 0x1C40");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinSphereTransform, m_nFieldVelocity) == 0x1C44, "m_nFieldVelocity in C_INIT_CreateWithinSphereTransform should be at offset 0x1C44");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateWithinSphereTransform) == 0x1C48, "C_INIT_CreateWithinSphereTransform size should be 0x1C48");
 	}
 }

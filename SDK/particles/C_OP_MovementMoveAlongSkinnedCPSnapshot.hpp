@@ -14,20 +14,20 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MovementMoveAlongSkinnedCPSnapshot : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
-			int32_t m_nSnapshotControlPointNumber; // 0x1c4 | Schema_Builtin | Size: 0x4
-			bool m_bSetNormal; // 0x1c8 | Schema_Builtin | Size: 0x1
-			bool m_bSetRadius; // 0x1c9 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nSnapshotControlPointNumber; // 0x1d4 | Schema_Builtin | Size: 0x4
+			bool m_bSetNormal; // 0x1d8 | Schema_Builtin | Size: 0x1
+			bool m_bSetRadius; // 0x1d9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flTValue; // 0x330 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flTValue; // 0x350 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_nControlPointNumber) == 0x1C0, "m_nControlPointNumber in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_nSnapshotControlPointNumber) == 0x1C4, "m_nSnapshotControlPointNumber in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_bSetNormal) == 0x1C8, "m_bSetNormal in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_bSetRadius) == 0x1C9, "m_bSetRadius in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1C9");
-		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_flInterpolation) == 0x1D0, "m_flInterpolation in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_flTValue) == 0x330, "m_flTValue in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x330");
-		static_assert(sizeof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot) == 0x490, "C_OP_MovementMoveAlongSkinnedCPSnapshot size should be 0x490");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_nSnapshotControlPointNumber) == 0x1D4, "m_nSnapshotControlPointNumber in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_bSetNormal) == 0x1D8, "m_bSetNormal in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_bSetRadius) == 0x1D9, "m_bSetRadius in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1D9");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_flInterpolation) == 0x1E0, "m_flInterpolation in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot, m_flTValue) == 0x350, "m_flTValue in C_OP_MovementMoveAlongSkinnedCPSnapshot should be at offset 0x350");
+		static_assert(sizeof(CS2::particles::C_OP_MovementMoveAlongSkinnedCPSnapshot) == 0x4C0, "C_OP_MovementMoveAlongSkinnedCPSnapshot size should be 0x4C0");
 	}
 }

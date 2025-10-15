@@ -14,47 +14,47 @@ namespace CS2 {
 	namespace server {
 		class CFuncRotating : public CS2::server::CBaseModelEntity {
 		public:
-			entity2::CEntityIOOutput m_OnStopped; // 0x7f0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStarted; // 0x818 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnReachedStart; // 0x840 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::RotationVector m_localRotationVector; // 0x868 | Schema_Atomic | Size: 0xc
-			float32 m_flFanFriction; // 0x874 | Schema_Builtin | Size: 0x4
-			float32 m_flAttenuation; // 0x878 | Schema_Builtin | Size: 0x4
-			float32 m_flVolume; // 0x87c | Schema_Builtin | Size: 0x4
-			float32 m_flTargetSpeed; // 0x880 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxSpeed; // 0x884 | Schema_Builtin | Size: 0x4
-			float32 m_flBlockDamage; // 0x888 | Schema_Builtin | Size: 0x4
+			entity2::CEntityIOOutput m_OnStopped; // 0x7d8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnStarted; // 0x800 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnReachedStart; // 0x828 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::RotationVector m_localRotationVector; // 0x850 | Schema_Atomic | Size: 0xc
+			float32 m_flFanFriction; // 0x85c | Schema_Builtin | Size: 0x4
+			float32 m_flAttenuation; // 0x860 | Schema_Builtin | Size: 0x4
+			float32 m_flVolume; // 0x864 | Schema_Builtin | Size: 0x4
+			float32 m_flTargetSpeed; // 0x868 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxSpeed; // 0x86c | Schema_Builtin | Size: 0x4
+			float32 m_flBlockDamage; // 0x870 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_NoiseRunning; // 0x890 | Schema_Atomic | Size: 0x8
-			bool m_bReversed; // 0x898 | Schema_Builtin | Size: 0x1
-			bool m_bAccelDecel; // 0x899 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_NoiseRunning; // 0x878 | Schema_Atomic | Size: 0x8
+			bool m_bReversed; // 0x880 | Schema_Builtin | Size: 0x1
+			bool m_bAccelDecel; // 0x881 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x16);
-			GlobalTypes::QAngle m_prevLocalAngles; // 0x8b0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angStart; // 0x8bc | Schema_Atomic | Size: 0xc
-			bool m_bStopAtStartPos; // 0x8c8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::QAngle m_prevLocalAngles; // 0x898 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angStart; // 0x8a4 | Schema_Atomic | Size: 0xc
+			bool m_bStopAtStartPos; // 0x8b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vecClientOrigin; // 0x8cc | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecClientAngles; // 0x8d8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecClientOrigin; // 0x8b4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecClientAngles; // 0x8c0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncRotating, m_OnStopped) == 0x7F0, "m_OnStopped in CFuncRotating should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_OnStarted) == 0x818, "m_OnStarted in CFuncRotating should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_OnReachedStart) == 0x840, "m_OnReachedStart in CFuncRotating should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_localRotationVector) == 0x868, "m_localRotationVector in CFuncRotating should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_flFanFriction) == 0x874, "m_flFanFriction in CFuncRotating should be at offset 0x874");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_flAttenuation) == 0x878, "m_flAttenuation in CFuncRotating should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_flVolume) == 0x87C, "m_flVolume in CFuncRotating should be at offset 0x87C");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_flTargetSpeed) == 0x880, "m_flTargetSpeed in CFuncRotating should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_flMaxSpeed) == 0x884, "m_flMaxSpeed in CFuncRotating should be at offset 0x884");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_flBlockDamage) == 0x888, "m_flBlockDamage in CFuncRotating should be at offset 0x888");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_NoiseRunning) == 0x890, "m_NoiseRunning in CFuncRotating should be at offset 0x890");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_bReversed) == 0x898, "m_bReversed in CFuncRotating should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_bAccelDecel) == 0x899, "m_bAccelDecel in CFuncRotating should be at offset 0x899");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_prevLocalAngles) == 0x8B0, "m_prevLocalAngles in CFuncRotating should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_angStart) == 0x8BC, "m_angStart in CFuncRotating should be at offset 0x8BC");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_bStopAtStartPos) == 0x8C8, "m_bStopAtStartPos in CFuncRotating should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_vecClientOrigin) == 0x8CC, "m_vecClientOrigin in CFuncRotating should be at offset 0x8CC");
-		static_assert(offsetof(CS2::server::CFuncRotating, m_vecClientAngles) == 0x8D8, "m_vecClientAngles in CFuncRotating should be at offset 0x8D8");
-		static_assert(sizeof(CS2::server::CFuncRotating) == 0x8E8, "CFuncRotating size should be 0x8E8");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_OnStopped) == 0x7D8, "m_OnStopped in CFuncRotating should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_OnStarted) == 0x800, "m_OnStarted in CFuncRotating should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_OnReachedStart) == 0x828, "m_OnReachedStart in CFuncRotating should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_localRotationVector) == 0x850, "m_localRotationVector in CFuncRotating should be at offset 0x850");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_flFanFriction) == 0x85C, "m_flFanFriction in CFuncRotating should be at offset 0x85C");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_flAttenuation) == 0x860, "m_flAttenuation in CFuncRotating should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_flVolume) == 0x864, "m_flVolume in CFuncRotating should be at offset 0x864");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_flTargetSpeed) == 0x868, "m_flTargetSpeed in CFuncRotating should be at offset 0x868");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_flMaxSpeed) == 0x86C, "m_flMaxSpeed in CFuncRotating should be at offset 0x86C");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_flBlockDamage) == 0x870, "m_flBlockDamage in CFuncRotating should be at offset 0x870");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_NoiseRunning) == 0x878, "m_NoiseRunning in CFuncRotating should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_bReversed) == 0x880, "m_bReversed in CFuncRotating should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_bAccelDecel) == 0x881, "m_bAccelDecel in CFuncRotating should be at offset 0x881");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_prevLocalAngles) == 0x898, "m_prevLocalAngles in CFuncRotating should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_angStart) == 0x8A4, "m_angStart in CFuncRotating should be at offset 0x8A4");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_bStopAtStartPos) == 0x8B0, "m_bStopAtStartPos in CFuncRotating should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_vecClientOrigin) == 0x8B4, "m_vecClientOrigin in CFuncRotating should be at offset 0x8B4");
+		static_assert(offsetof(CS2::server::CFuncRotating, m_vecClientAngles) == 0x8C0, "m_vecClientAngles in CFuncRotating should be at offset 0x8C0");
+		static_assert(sizeof(CS2::server::CFuncRotating) == 0x8D0, "CFuncRotating size should be 0x8D0");
 	}
 }

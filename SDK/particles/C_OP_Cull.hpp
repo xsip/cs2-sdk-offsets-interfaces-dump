@@ -13,15 +13,15 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_Cull : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_flCullPerc; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flCullStart; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flCullEnd; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flCullExp; // 0x1cc | Schema_Builtin | Size: 0x4
+			float32 m_flCullPerc; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flCullStart; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flCullEnd; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flCullExp; // 0x1dc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullPerc) == 0x1C0, "m_flCullPerc in C_OP_Cull should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullStart) == 0x1C4, "m_flCullStart in C_OP_Cull should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullEnd) == 0x1C8, "m_flCullEnd in C_OP_Cull should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullExp) == 0x1CC, "m_flCullExp in C_OP_Cull should be at offset 0x1CC");
-		static_assert(sizeof(CS2::particles::C_OP_Cull) == 0x1D0, "C_OP_Cull size should be 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullPerc) == 0x1D0, "m_flCullPerc in C_OP_Cull should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullStart) == 0x1D4, "m_flCullStart in C_OP_Cull should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullEnd) == 0x1D8, "m_flCullEnd in C_OP_Cull should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullExp) == 0x1DC, "m_flCullExp in C_OP_Cull should be at offset 0x1DC");
+		static_assert(sizeof(CS2::particles::C_OP_Cull) == 0x1E0, "C_OP_Cull size should be 0x1E0");
 	}
 }

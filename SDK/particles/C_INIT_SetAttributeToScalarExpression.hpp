@@ -18,21 +18,21 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_SetAttributeToScalarExpression : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particles::ScalarExpressionType_t m_nExpression; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
+			particles::ScalarExpressionType_t m_nExpression; // 0x1d8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flInput1; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInput2; // 0x330 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x490 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x5f0 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x5f4 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flInput1; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInput2; // 0x350 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x4c0 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x630 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x634 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x28); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nExpression) == 0x1C8, "m_nExpression in C_INIT_SetAttributeToScalarExpression should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flInput1) == 0x1D0, "m_flInput1 in C_INIT_SetAttributeToScalarExpression should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flInput2) == 0x330, "m_flInput2 in C_INIT_SetAttributeToScalarExpression should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flOutputRemap) == 0x490, "m_flOutputRemap in C_INIT_SetAttributeToScalarExpression should be at offset 0x490");
-		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nOutputField) == 0x5F0, "m_nOutputField in C_INIT_SetAttributeToScalarExpression should be at offset 0x5F0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nSetMethod) == 0x5F4, "m_nSetMethod in C_INIT_SetAttributeToScalarExpression should be at offset 0x5F4");
-		static_assert(sizeof(CS2::particles::C_INIT_SetAttributeToScalarExpression) == 0x620, "C_INIT_SetAttributeToScalarExpression size should be 0x620");
+		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nExpression) == 0x1D8, "m_nExpression in C_INIT_SetAttributeToScalarExpression should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flInput1) == 0x1E0, "m_flInput1 in C_INIT_SetAttributeToScalarExpression should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flInput2) == 0x350, "m_flInput2 in C_INIT_SetAttributeToScalarExpression should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flOutputRemap) == 0x4C0, "m_flOutputRemap in C_INIT_SetAttributeToScalarExpression should be at offset 0x4C0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nOutputField) == 0x630, "m_nOutputField in C_INIT_SetAttributeToScalarExpression should be at offset 0x630");
+		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nSetMethod) == 0x634, "m_nSetMethod in C_INIT_SetAttributeToScalarExpression should be at offset 0x634");
+		static_assert(sizeof(CS2::particles::C_INIT_SetAttributeToScalarExpression) == 0x660, "C_INIT_SetAttributeToScalarExpression size should be 0x660");
 	}
 }

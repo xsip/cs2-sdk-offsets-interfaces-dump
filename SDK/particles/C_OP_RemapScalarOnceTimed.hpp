@@ -14,24 +14,24 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapScalarOnceTimed : public CS2::particles::CParticleFunctionOperator {
 		public:
-			bool m_bProportional; // 0x1c0 | Schema_Builtin | Size: 0x1
+			bool m_bProportional; // 0x1d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flInputMin; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flRemapTime; // 0x1dc | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flInputMin; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flRemapTime; // 0x1ec | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_bProportional) == 0x1C0, "m_bProportional in C_OP_RemapScalarOnceTimed should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_nFieldInput) == 0x1C4, "m_nFieldInput in C_OP_RemapScalarOnceTimed should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_nFieldOutput) == 0x1C8, "m_nFieldOutput in C_OP_RemapScalarOnceTimed should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flInputMin) == 0x1CC, "m_flInputMin in C_OP_RemapScalarOnceTimed should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flInputMax) == 0x1D0, "m_flInputMax in C_OP_RemapScalarOnceTimed should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flOutputMin) == 0x1D4, "m_flOutputMin in C_OP_RemapScalarOnceTimed should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flOutputMax) == 0x1D8, "m_flOutputMax in C_OP_RemapScalarOnceTimed should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flRemapTime) == 0x1DC, "m_flRemapTime in C_OP_RemapScalarOnceTimed should be at offset 0x1DC");
-		static_assert(sizeof(CS2::particles::C_OP_RemapScalarOnceTimed) == 0x1E0, "C_OP_RemapScalarOnceTimed size should be 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_bProportional) == 0x1D0, "m_bProportional in C_OP_RemapScalarOnceTimed should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_nFieldInput) == 0x1D4, "m_nFieldInput in C_OP_RemapScalarOnceTimed should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_OP_RemapScalarOnceTimed should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flInputMin) == 0x1DC, "m_flInputMin in C_OP_RemapScalarOnceTimed should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flInputMax) == 0x1E0, "m_flInputMax in C_OP_RemapScalarOnceTimed should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flOutputMin) == 0x1E4, "m_flOutputMin in C_OP_RemapScalarOnceTimed should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_OP_RemapScalarOnceTimed should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flRemapTime) == 0x1EC, "m_flRemapTime in C_OP_RemapScalarOnceTimed should be at offset 0x1EC");
+		static_assert(sizeof(CS2::particles::C_OP_RemapScalarOnceTimed) == 0x1F0, "C_OP_RemapScalarOnceTimed size should be 0x1F0");
 	}
 }

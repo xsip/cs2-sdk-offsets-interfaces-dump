@@ -19,40 +19,40 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DistanceToTransform : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flInputMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInputMax; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x488 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x5e8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleTransformInput m_TransformStart; // 0x748 | Schema_DeclaredClass | Size: 0x68
-			bool m_bLOS; // 0x7b0 | Schema_Builtin | Size: 0x1
-			char m_CollisionGroupName[128]; // 0x7b1 | Schema_FixedArray | Size: 0x80
+			particleslib::CPerParticleFloatInput m_flInputMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInputMax; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x4b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x628 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleTransformInput m_TransformStart; // 0x798 | Schema_DeclaredClass | Size: 0x68
+			bool m_bLOS; // 0x800 | Schema_Builtin | Size: 0x1
+			char m_CollisionGroupName[128]; // 0x801 | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x3);
-			particles::ParticleTraceSet_t m_nTraceSet; // 0x834 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flMaxTraceLength; // 0x838 | Schema_Builtin | Size: 0x4
-			float32 m_flLOSScale; // 0x83c | Schema_Builtin | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x840 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bActiveRange; // 0x844 | Schema_Builtin | Size: 0x1
-			bool m_bAdditive; // 0x845 | Schema_Builtin | Size: 0x1
+			particles::ParticleTraceSet_t m_nTraceSet; // 0x884 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flMaxTraceLength; // 0x888 | Schema_Builtin | Size: 0x4
+			float32 m_flLOSScale; // 0x88c | Schema_Builtin | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x890 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bActiveRange; // 0x894 | Schema_Builtin | Size: 0x1
+			bool m_bAdditive; // 0x895 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particleslib::CPerParticleVecInput m_vecComponentScale; // 0x848 | Schema_DeclaredClass | Size: 0x678
+			particleslib::CPerParticleVecInput m_vecComponentScale; // 0x898 | Schema_DeclaredClass | Size: 0x6b8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_DistanceToTransform should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flInputMin) == 0x1C8, "m_flInputMin in C_OP_DistanceToTransform should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flInputMax) == 0x328, "m_flInputMax in C_OP_DistanceToTransform should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flOutputMin) == 0x488, "m_flOutputMin in C_OP_DistanceToTransform should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flOutputMax) == 0x5E8, "m_flOutputMax in C_OP_DistanceToTransform should be at offset 0x5E8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_TransformStart) == 0x748, "m_TransformStart in C_OP_DistanceToTransform should be at offset 0x748");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_bLOS) == 0x7B0, "m_bLOS in C_OP_DistanceToTransform should be at offset 0x7B0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_CollisionGroupName) == 0x7B1, "m_CollisionGroupName in C_OP_DistanceToTransform should be at offset 0x7B1");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_nTraceSet) == 0x834, "m_nTraceSet in C_OP_DistanceToTransform should be at offset 0x834");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flMaxTraceLength) == 0x838, "m_flMaxTraceLength in C_OP_DistanceToTransform should be at offset 0x838");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flLOSScale) == 0x83C, "m_flLOSScale in C_OP_DistanceToTransform should be at offset 0x83C");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_nSetMethod) == 0x840, "m_nSetMethod in C_OP_DistanceToTransform should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_bActiveRange) == 0x844, "m_bActiveRange in C_OP_DistanceToTransform should be at offset 0x844");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_bAdditive) == 0x845, "m_bAdditive in C_OP_DistanceToTransform should be at offset 0x845");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_vecComponentScale) == 0x848, "m_vecComponentScale in C_OP_DistanceToTransform should be at offset 0x848");
-		static_assert(sizeof(CS2::particles::C_OP_DistanceToTransform) == 0xEC0, "C_OP_DistanceToTransform size should be 0xEC0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_DistanceToTransform should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flInputMin) == 0x1D8, "m_flInputMin in C_OP_DistanceToTransform should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flInputMax) == 0x348, "m_flInputMax in C_OP_DistanceToTransform should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flOutputMin) == 0x4B8, "m_flOutputMin in C_OP_DistanceToTransform should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flOutputMax) == 0x628, "m_flOutputMax in C_OP_DistanceToTransform should be at offset 0x628");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_TransformStart) == 0x798, "m_TransformStart in C_OP_DistanceToTransform should be at offset 0x798");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_bLOS) == 0x800, "m_bLOS in C_OP_DistanceToTransform should be at offset 0x800");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_CollisionGroupName) == 0x801, "m_CollisionGroupName in C_OP_DistanceToTransform should be at offset 0x801");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_nTraceSet) == 0x884, "m_nTraceSet in C_OP_DistanceToTransform should be at offset 0x884");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flMaxTraceLength) == 0x888, "m_flMaxTraceLength in C_OP_DistanceToTransform should be at offset 0x888");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flLOSScale) == 0x88C, "m_flLOSScale in C_OP_DistanceToTransform should be at offset 0x88C");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_nSetMethod) == 0x890, "m_nSetMethod in C_OP_DistanceToTransform should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_bActiveRange) == 0x894, "m_bActiveRange in C_OP_DistanceToTransform should be at offset 0x894");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_bAdditive) == 0x895, "m_bAdditive in C_OP_DistanceToTransform should be at offset 0x895");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_vecComponentScale) == 0x898, "m_vecComponentScale in C_OP_DistanceToTransform should be at offset 0x898");
+		static_assert(sizeof(CS2::particles::C_OP_DistanceToTransform) == 0xF50, "C_OP_DistanceToTransform size should be 0xF50");
 	}
 }

@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x850
+			// Class size: 0x8A0
 			namespace C_OP_RemapExternalWindToCP /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nCP = 0x1c8; // int32_t m_nCP; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPOutput = 0x1cc; // int32_t m_nCPOutput; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecScale = 0x1d0; // particleslib::CParticleCollectionVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_bSetMagnitude = 0x848; // bool m_bSetMagnitude; |  0x848 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOutVectorField = 0x84c; // int32_t m_nOutVectorField; |  0x84c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCP = 0x1d8; // int32_t m_nCP; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPOutput = 0x1dc; // int32_t m_nCPOutput; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecScale = 0x1e0; // particleslib::CParticleCollectionVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_bSetMagnitude = 0x898; // bool m_bSetMagnitude; |  0x898 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nOutVectorField = 0x89c; // int32_t m_nOutVectorField; |  0x89c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

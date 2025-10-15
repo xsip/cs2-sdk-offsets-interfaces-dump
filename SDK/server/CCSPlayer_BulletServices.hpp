@@ -14,9 +14,9 @@ namespace CS2 {
 		class CCSPlayer_BulletServices : public CS2::client::CPlayerPawnComponent {
 		public:
 			int32_t m_totalHitsOnServer; // 0x40 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4); // End padding
+			S2_PAD(0x24); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSPlayer_BulletServices, m_totalHitsOnServer) == 0x40, "m_totalHitsOnServer in CCSPlayer_BulletServices should be at offset 0x40");
-		static_assert(sizeof(CS2::server::CCSPlayer_BulletServices) == 0x48, "CCSPlayer_BulletServices size should be 0x48");
+		static_assert(sizeof(CS2::server::CCSPlayer_BulletServices) == 0x68, "CCSPlayer_BulletServices size should be 0x68");
 	}
 }

@@ -14,13 +14,13 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ColorAdjustHSL : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CPerParticleFloatInput m_flHueAdjust; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flSaturationAdjust; // 0x320 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flLightnessAdjust; // 0x480 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flHueAdjust; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flSaturationAdjust; // 0x340 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flLightnessAdjust; // 0x4b0 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ColorAdjustHSL, m_flHueAdjust) == 0x1C0, "m_flHueAdjust in C_OP_ColorAdjustHSL should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ColorAdjustHSL, m_flSaturationAdjust) == 0x320, "m_flSaturationAdjust in C_OP_ColorAdjustHSL should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::C_OP_ColorAdjustHSL, m_flLightnessAdjust) == 0x480, "m_flLightnessAdjust in C_OP_ColorAdjustHSL should be at offset 0x480");
-		static_assert(sizeof(CS2::particles::C_OP_ColorAdjustHSL) == 0x5E0, "C_OP_ColorAdjustHSL size should be 0x5E0");
+		static_assert(offsetof(CS2::particles::C_OP_ColorAdjustHSL, m_flHueAdjust) == 0x1D0, "m_flHueAdjust in C_OP_ColorAdjustHSL should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ColorAdjustHSL, m_flSaturationAdjust) == 0x340, "m_flSaturationAdjust in C_OP_ColorAdjustHSL should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::C_OP_ColorAdjustHSL, m_flLightnessAdjust) == 0x4B0, "m_flLightnessAdjust in C_OP_ColorAdjustHSL should be at offset 0x4B0");
+		static_assert(sizeof(CS2::particles::C_OP_ColorAdjustHSL) == 0x620, "C_OP_ColorAdjustHSL size should be 0x620");
 	}
 }

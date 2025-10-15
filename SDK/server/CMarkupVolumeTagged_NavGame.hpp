@@ -14,14 +14,14 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged_NavGame : public CS2::server::CMarkupVolumeWithRef {
 		public:
-			server::NavScopeFlags_t m_nScopes; // 0x858 | Schema_DeclaredEnum | Size: 0x1
-			bool m_bFloodFillAttribute; // 0x859 | Schema_Builtin | Size: 0x1
-			bool m_bSplitNavSpace; // 0x85a | Schema_Builtin | Size: 0x1
+			server::NavScopeFlags_t m_nScopes; // 0x840 | Schema_DeclaredEnum | Size: 0x1
+			bool m_bFloodFillAttribute; // 0x841 | Schema_Builtin | Size: 0x1
+			bool m_bSplitNavSpace; // 0x842 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_nScopes) == 0x858, "m_nScopes in CMarkupVolumeTagged_NavGame should be at offset 0x858");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_bFloodFillAttribute) == 0x859, "m_bFloodFillAttribute in CMarkupVolumeTagged_NavGame should be at offset 0x859");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_bSplitNavSpace) == 0x85A, "m_bSplitNavSpace in CMarkupVolumeTagged_NavGame should be at offset 0x85A");
-		static_assert(sizeof(CS2::server::CMarkupVolumeTagged_NavGame) == 0x860, "CMarkupVolumeTagged_NavGame size should be 0x860");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_nScopes) == 0x840, "m_nScopes in CMarkupVolumeTagged_NavGame should be at offset 0x840");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_bFloodFillAttribute) == 0x841, "m_bFloodFillAttribute in CMarkupVolumeTagged_NavGame should be at offset 0x841");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_bSplitNavSpace) == 0x842, "m_bSplitNavSpace in CMarkupVolumeTagged_NavGame should be at offset 0x842");
+		static_assert(sizeof(CS2::server::CMarkupVolumeTagged_NavGame) == 0x848, "CMarkupVolumeTagged_NavGame size should be 0x848");
 	}
 }

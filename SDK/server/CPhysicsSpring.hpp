@@ -20,8 +20,8 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_nameAttachStart; // 0x508 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAttachEnd; // 0x510 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_start; // 0x518 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_end; // 0x524 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_start; // 0x518 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_end; // 0x524 | Schema_Atomic | Size: 0xc
 			uint32_t m_teleportTick; // 0x530 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

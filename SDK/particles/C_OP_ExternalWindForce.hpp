@@ -15,31 +15,31 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ExternalWindForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			particleslib::CPerParticleVecInput m_vecSamplePosition; // 0x1d0 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecScale; // 0x848 | Schema_DeclaredClass | Size: 0x678
-			bool m_bSampleWind; // 0xec0 | Schema_Builtin | Size: 0x1
-			bool m_bSampleWater; // 0xec1 | Schema_Builtin | Size: 0x1
-			bool m_bDampenNearWaterPlane; // 0xec2 | Schema_Builtin | Size: 0x1
-			bool m_bSampleGravity; // 0xec3 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vecSamplePosition; // 0x1e0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecScale; // 0x898 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bSampleWind; // 0xf50 | Schema_Builtin | Size: 0x1
+			bool m_bSampleWater; // 0xf51 | Schema_Builtin | Size: 0x1
+			bool m_bDampenNearWaterPlane; // 0xf52 | Schema_Builtin | Size: 0x1
+			bool m_bSampleGravity; // 0xf53 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4);
-			particleslib::CPerParticleVecInput m_vecGravityForce; // 0xec8 | Schema_DeclaredClass | Size: 0x678
-			bool m_bUseBasicMovementGravity; // 0x1540 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vecGravityForce; // 0xf58 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bUseBasicMovementGravity; // 0x1610 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CPerParticleFloatInput m_flLocalGravityScale; // 0x1548 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flLocalBuoyancyScale; // 0x16a8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleVecInput m_vecBuoyancyForce; // 0x1808 | Schema_DeclaredClass | Size: 0x678
+			particleslib::CPerParticleFloatInput m_flLocalGravityScale; // 0x1618 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flLocalBuoyancyScale; // 0x1788 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleVecInput m_vecBuoyancyForce; // 0x18f8 | Schema_DeclaredClass | Size: 0x6b8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecSamplePosition) == 0x1D0, "m_vecSamplePosition in C_OP_ExternalWindForce should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecScale) == 0x848, "m_vecScale in C_OP_ExternalWindForce should be at offset 0x848");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bSampleWind) == 0xEC0, "m_bSampleWind in C_OP_ExternalWindForce should be at offset 0xEC0");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bSampleWater) == 0xEC1, "m_bSampleWater in C_OP_ExternalWindForce should be at offset 0xEC1");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bDampenNearWaterPlane) == 0xEC2, "m_bDampenNearWaterPlane in C_OP_ExternalWindForce should be at offset 0xEC2");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bSampleGravity) == 0xEC3, "m_bSampleGravity in C_OP_ExternalWindForce should be at offset 0xEC3");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecGravityForce) == 0xEC8, "m_vecGravityForce in C_OP_ExternalWindForce should be at offset 0xEC8");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bUseBasicMovementGravity) == 0x1540, "m_bUseBasicMovementGravity in C_OP_ExternalWindForce should be at offset 0x1540");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_flLocalGravityScale) == 0x1548, "m_flLocalGravityScale in C_OP_ExternalWindForce should be at offset 0x1548");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_flLocalBuoyancyScale) == 0x16A8, "m_flLocalBuoyancyScale in C_OP_ExternalWindForce should be at offset 0x16A8");
-		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecBuoyancyForce) == 0x1808, "m_vecBuoyancyForce in C_OP_ExternalWindForce should be at offset 0x1808");
-		static_assert(sizeof(CS2::particles::C_OP_ExternalWindForce) == 0x1E80, "C_OP_ExternalWindForce size should be 0x1E80");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecSamplePosition) == 0x1E0, "m_vecSamplePosition in C_OP_ExternalWindForce should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecScale) == 0x898, "m_vecScale in C_OP_ExternalWindForce should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bSampleWind) == 0xF50, "m_bSampleWind in C_OP_ExternalWindForce should be at offset 0xF50");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bSampleWater) == 0xF51, "m_bSampleWater in C_OP_ExternalWindForce should be at offset 0xF51");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bDampenNearWaterPlane) == 0xF52, "m_bDampenNearWaterPlane in C_OP_ExternalWindForce should be at offset 0xF52");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bSampleGravity) == 0xF53, "m_bSampleGravity in C_OP_ExternalWindForce should be at offset 0xF53");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecGravityForce) == 0xF58, "m_vecGravityForce in C_OP_ExternalWindForce should be at offset 0xF58");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bUseBasicMovementGravity) == 0x1610, "m_bUseBasicMovementGravity in C_OP_ExternalWindForce should be at offset 0x1610");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_flLocalGravityScale) == 0x1618, "m_flLocalGravityScale in C_OP_ExternalWindForce should be at offset 0x1618");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_flLocalBuoyancyScale) == 0x1788, "m_flLocalBuoyancyScale in C_OP_ExternalWindForce should be at offset 0x1788");
+		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecBuoyancyForce) == 0x18F8, "m_vecBuoyancyForce in C_OP_ExternalWindForce should be at offset 0x18F8");
+		static_assert(sizeof(CS2::particles::C_OP_ExternalWindForce) == 0x1FB0, "C_OP_ExternalWindForce size should be 0x1FB0");
 	}
 }

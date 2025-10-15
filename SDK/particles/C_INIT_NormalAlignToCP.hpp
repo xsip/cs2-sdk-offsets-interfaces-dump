@@ -15,12 +15,12 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_NormalAlignToCP : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CParticleTransformInput m_transformInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
-			particles::ParticleControlPointAxis_t m_nControlPointAxis; // 0x230 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleTransformInput m_transformInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x68
+			particles::ParticleControlPointAxis_t m_nControlPointAxis; // 0x240 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_NormalAlignToCP, m_transformInput) == 0x1C8, "m_transformInput in C_INIT_NormalAlignToCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_NormalAlignToCP, m_nControlPointAxis) == 0x230, "m_nControlPointAxis in C_INIT_NormalAlignToCP should be at offset 0x230");
-		static_assert(sizeof(CS2::particles::C_INIT_NormalAlignToCP) == 0x238, "C_INIT_NormalAlignToCP size should be 0x238");
+		static_assert(offsetof(CS2::particles::C_INIT_NormalAlignToCP, m_transformInput) == 0x1D8, "m_transformInput in C_INIT_NormalAlignToCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_NormalAlignToCP, m_nControlPointAxis) == 0x240, "m_nControlPointAxis in C_INIT_NormalAlignToCP should be at offset 0x240");
+		static_assert(sizeof(CS2::particles::C_INIT_NormalAlignToCP) == 0x248, "C_INIT_NormalAlignToCP size should be 0x248");
 	}
 }

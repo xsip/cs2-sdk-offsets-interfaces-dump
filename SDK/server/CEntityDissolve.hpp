@@ -15,27 +15,27 @@ namespace CS2 {
 	namespace server {
 		class CEntityDissolve : public CS2::server::CBaseModelEntity {
 		public:
-			float32 m_flFadeInStart; // 0x7f0 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeInLength; // 0x7f4 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutModelStart; // 0x7f8 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutModelLength; // 0x7fc | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutStart; // 0x800 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutLength; // 0x804 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flStartTime; // 0x808 | Schema_DeclaredClass | Size: 0x4
-			client::EntityDisolveType_t m_nDissolveType; // 0x80c | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::Vector m_vDissolverOrigin; // 0x810 | Schema_Atomic | Size: 0xc
-			uint32_t m_nMagnitude; // 0x81c | Schema_Builtin | Size: 0x4
+			float32 m_flFadeInStart; // 0x7d8 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeInLength; // 0x7dc | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutModelStart; // 0x7e0 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutModelLength; // 0x7e4 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutStart; // 0x7e8 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutLength; // 0x7ec | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flStartTime; // 0x7f0 | Schema_DeclaredClass | Size: 0x4
+			client::EntityDisolveType_t m_nDissolveType; // 0x7f4 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::Vector m_vDissolverOrigin; // 0x7f8 | Schema_Atomic | Size: 0xc
+			uint32_t m_nMagnitude; // 0x804 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeInStart) == 0x7F0, "m_flFadeInStart in CEntityDissolve should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeInLength) == 0x7F4, "m_flFadeInLength in CEntityDissolve should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutModelStart) == 0x7F8, "m_flFadeOutModelStart in CEntityDissolve should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutModelLength) == 0x7FC, "m_flFadeOutModelLength in CEntityDissolve should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutStart) == 0x800, "m_flFadeOutStart in CEntityDissolve should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutLength) == 0x804, "m_flFadeOutLength in CEntityDissolve should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_flStartTime) == 0x808, "m_flStartTime in CEntityDissolve should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_nDissolveType) == 0x80C, "m_nDissolveType in CEntityDissolve should be at offset 0x80C");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_vDissolverOrigin) == 0x810, "m_vDissolverOrigin in CEntityDissolve should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CEntityDissolve, m_nMagnitude) == 0x81C, "m_nMagnitude in CEntityDissolve should be at offset 0x81C");
-		static_assert(sizeof(CS2::server::CEntityDissolve) == 0x820, "CEntityDissolve size should be 0x820");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeInStart) == 0x7D8, "m_flFadeInStart in CEntityDissolve should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeInLength) == 0x7DC, "m_flFadeInLength in CEntityDissolve should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutModelStart) == 0x7E0, "m_flFadeOutModelStart in CEntityDissolve should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutModelLength) == 0x7E4, "m_flFadeOutModelLength in CEntityDissolve should be at offset 0x7E4");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutStart) == 0x7E8, "m_flFadeOutStart in CEntityDissolve should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutLength) == 0x7EC, "m_flFadeOutLength in CEntityDissolve should be at offset 0x7EC");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_flStartTime) == 0x7F0, "m_flStartTime in CEntityDissolve should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_nDissolveType) == 0x7F4, "m_nDissolveType in CEntityDissolve should be at offset 0x7F4");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_vDissolverOrigin) == 0x7F8, "m_vDissolverOrigin in CEntityDissolve should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CEntityDissolve, m_nMagnitude) == 0x804, "m_nMagnitude in CEntityDissolve should be at offset 0x804");
+		static_assert(sizeof(CS2::server::CEntityDissolve) == 0x808, "CEntityDissolve size should be 0x808");
 	}
 }

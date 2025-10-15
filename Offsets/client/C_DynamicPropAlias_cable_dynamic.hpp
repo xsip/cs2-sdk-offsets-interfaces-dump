@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1430
+			// Class size: 0x1420
 			namespace C_DynamicPropAlias_cable_dynamic /*: public CS2::client::C_DynamicProp*/ {
 				// NO SCHEMA DATA FOUND!
 			}

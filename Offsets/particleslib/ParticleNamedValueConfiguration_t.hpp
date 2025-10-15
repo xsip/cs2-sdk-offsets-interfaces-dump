@@ -12,8 +12,8 @@ namespace CS2 {
 			namespace ParticleNamedValueConfiguration_t /**/ {
 				constexpr std::ptrdiff_t m_ConfigName = 0x0; // GlobalTypes::CUtlString m_ConfigName; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_ConfigValue = 0x8; // GlobalTypes::KeyValues3 m_ConfigValue; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_iAttachType = 0x18; // animationsystem::ParticleAttachment_t m_iAttachType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_BoundEntityPath = 0x20; // GlobalTypes::CUtlString m_BoundEntityPath; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_BoundValuePath = 0x18; // GlobalTypes::CUtlString m_BoundValuePath; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iAttachType = 0x20; // animationsystem::ParticleAttachment_t m_iAttachType; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_strEntityScope = 0x28; // GlobalTypes::CUtlString m_strEntityScope; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_strAttachmentName = 0x30; // GlobalTypes::CUtlString m_strAttachmentName; |  Schema_Atomic | Size: 0x8
 			}

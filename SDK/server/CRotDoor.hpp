@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CRotDoor : public CS2::server::CBaseDoor {
 		public:
-			bool m_bSolidBsp; // 0xa80 | Schema_Builtin | Size: 0x1
+			bool m_bSolidBsp; // 0xa68 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CRotDoor, m_bSolidBsp) == 0xA80, "m_bSolidBsp in CRotDoor should be at offset 0xA80");
-		static_assert(sizeof(CS2::server::CRotDoor) == 0xA88, "CRotDoor size should be 0xA88");
+		static_assert(offsetof(CS2::server::CRotDoor, m_bSolidBsp) == 0xA68, "m_bSolidBsp in CRotDoor should be at offset 0xA68");
+		static_assert(sizeof(CS2::server::CRotDoor) == 0xA70, "CRotDoor size should be 0xA70");
 	}
 }

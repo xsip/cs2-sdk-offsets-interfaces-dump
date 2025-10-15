@@ -14,12 +14,12 @@ namespace CS2 {
 		class CFuncNavObstruction : public CS2::server::CBaseModelEntity {
 		public:
 			S2_PAD(0x18);
-			bool m_bDisabled; // 0x808 | Schema_Builtin | Size: 0x1
-			bool m_bUseAsyncObstacleUpdate; // 0x809 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x7f0 | Schema_Builtin | Size: 0x1
+			bool m_bUseAsyncObstacleUpdate; // 0x7f1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncNavObstruction, m_bDisabled) == 0x808, "m_bDisabled in CFuncNavObstruction should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CFuncNavObstruction, m_bUseAsyncObstacleUpdate) == 0x809, "m_bUseAsyncObstacleUpdate in CFuncNavObstruction should be at offset 0x809");
-		static_assert(sizeof(CS2::server::CFuncNavObstruction) == 0x810, "CFuncNavObstruction size should be 0x810");
+		static_assert(offsetof(CS2::server::CFuncNavObstruction, m_bDisabled) == 0x7F0, "m_bDisabled in CFuncNavObstruction should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CFuncNavObstruction, m_bUseAsyncObstacleUpdate) == 0x7F1, "m_bUseAsyncObstacleUpdate in CFuncNavObstruction should be at offset 0x7F1");
+		static_assert(sizeof(CS2::server::CFuncNavObstruction) == 0x7F8, "CFuncNavObstruction size should be 0x7F8");
 	}
 }

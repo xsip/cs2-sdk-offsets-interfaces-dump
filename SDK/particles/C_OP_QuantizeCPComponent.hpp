@@ -14,15 +14,15 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_QuantizeCPComponent : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particleslib::CParticleCollectionFloatInput m_flInputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nCPOutput; // 0x328 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutVectorField; // 0x32c | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionFloatInput m_flQuantizeValue; // 0x330 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flInputValue; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nCPOutput; // 0x348 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutVectorField; // 0x34c | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flQuantizeValue; // 0x350 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_flInputValue) == 0x1C8, "m_flInputValue in C_OP_QuantizeCPComponent should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_nCPOutput) == 0x328, "m_nCPOutput in C_OP_QuantizeCPComponent should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_nOutVectorField) == 0x32C, "m_nOutVectorField in C_OP_QuantizeCPComponent should be at offset 0x32C");
-		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_flQuantizeValue) == 0x330, "m_flQuantizeValue in C_OP_QuantizeCPComponent should be at offset 0x330");
-		static_assert(sizeof(CS2::particles::C_OP_QuantizeCPComponent) == 0x490, "C_OP_QuantizeCPComponent size should be 0x490");
+		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_flInputValue) == 0x1D8, "m_flInputValue in C_OP_QuantizeCPComponent should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_nCPOutput) == 0x348, "m_nCPOutput in C_OP_QuantizeCPComponent should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_nOutVectorField) == 0x34C, "m_nOutVectorField in C_OP_QuantizeCPComponent should be at offset 0x34C");
+		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_flQuantizeValue) == 0x350, "m_flQuantizeValue in C_OP_QuantizeCPComponent should be at offset 0x350");
+		static_assert(sizeof(CS2::particles::C_OP_QuantizeCPComponent) == 0x4C0, "C_OP_QuantizeCPComponent size should be 0x4C0");
 	}
 }

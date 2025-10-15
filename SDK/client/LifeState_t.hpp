@@ -10,7 +10,8 @@ namespace CS2 {
 			LifeState_t_LIFE_DEAD = 0x2,
 			LifeState_t_LIFE_DYING = 0x1,
 			LifeState_t_LIFE_RESPAWNABLE = 0x3,
-			LifeState_t_LIFE_RESPAWNING = 0x4
+			LifeState_t_LIFE_RESPAWNING = 0x4,
+			LifeState_t_NUM_LIFESTATES = 0x5
 		};
 	}
 }

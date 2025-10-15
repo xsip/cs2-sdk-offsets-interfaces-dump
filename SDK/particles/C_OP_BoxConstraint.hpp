@@ -14,18 +14,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_BoxConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			particleslib::CParticleCollectionVecInput m_vecMin; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleCollectionVecInput m_vecMax; // 0x838 | Schema_DeclaredClass | Size: 0x678
-			int32_t m_nCP; // 0xeb0 | Schema_Builtin | Size: 0x4
-			bool m_bLocalSpace; // 0xeb4 | Schema_Builtin | Size: 0x1
-			bool m_bAccountForRadius; // 0xeb5 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionVecInput m_vecMin; // 0x1d0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleCollectionVecInput m_vecMax; // 0x888 | Schema_DeclaredClass | Size: 0x6b8
+			int32_t m_nCP; // 0xf40 | Schema_Builtin | Size: 0x4
+			bool m_bLocalSpace; // 0xf44 | Schema_Builtin | Size: 0x1
+			bool m_bAccountForRadius; // 0xf45 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_vecMin) == 0x1C0, "m_vecMin in C_OP_BoxConstraint should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_vecMax) == 0x838, "m_vecMax in C_OP_BoxConstraint should be at offset 0x838");
-		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_nCP) == 0xEB0, "m_nCP in C_OP_BoxConstraint should be at offset 0xEB0");
-		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_bLocalSpace) == 0xEB4, "m_bLocalSpace in C_OP_BoxConstraint should be at offset 0xEB4");
-		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_bAccountForRadius) == 0xEB5, "m_bAccountForRadius in C_OP_BoxConstraint should be at offset 0xEB5");
-		static_assert(sizeof(CS2::particles::C_OP_BoxConstraint) == 0xEB8, "C_OP_BoxConstraint size should be 0xEB8");
+		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_vecMin) == 0x1D0, "m_vecMin in C_OP_BoxConstraint should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_vecMax) == 0x888, "m_vecMax in C_OP_BoxConstraint should be at offset 0x888");
+		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_nCP) == 0xF40, "m_nCP in C_OP_BoxConstraint should be at offset 0xF40");
+		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_bLocalSpace) == 0xF44, "m_bLocalSpace in C_OP_BoxConstraint should be at offset 0xF44");
+		static_assert(offsetof(CS2::particles::C_OP_BoxConstraint, m_bAccountForRadius) == 0xF45, "m_bAccountForRadius in C_OP_BoxConstraint should be at offset 0xF45");
+		static_assert(sizeof(CS2::particles::C_OP_BoxConstraint) == 0xF48, "C_OP_BoxConstraint size should be 0xF48");
 	}
 }

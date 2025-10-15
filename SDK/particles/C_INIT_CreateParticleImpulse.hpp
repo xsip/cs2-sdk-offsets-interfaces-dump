@@ -16,19 +16,19 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateParticleImpulse : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleFloatInput m_InputRadius; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_InputMagnitude; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleFalloffFunction_t m_nFalloffFunction; // 0x488 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_InputRadius; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_InputMagnitude; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleFalloffFunction_t m_nFalloffFunction; // 0x4b8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_InputFalloffExp; // 0x490 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleImpulseType_t m_nImpulseType; // 0x5f0 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_InputFalloffExp; // 0x4c0 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleImpulseType_t m_nImpulseType; // 0x630 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputRadius) == 0x1C8, "m_InputRadius in C_INIT_CreateParticleImpulse should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputMagnitude) == 0x328, "m_InputMagnitude in C_INIT_CreateParticleImpulse should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_nFalloffFunction) == 0x488, "m_nFalloffFunction in C_INIT_CreateParticleImpulse should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputFalloffExp) == 0x490, "m_InputFalloffExp in C_INIT_CreateParticleImpulse should be at offset 0x490");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_nImpulseType) == 0x5F0, "m_nImpulseType in C_INIT_CreateParticleImpulse should be at offset 0x5F0");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateParticleImpulse) == 0x5F8, "C_INIT_CreateParticleImpulse size should be 0x5F8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputRadius) == 0x1D8, "m_InputRadius in C_INIT_CreateParticleImpulse should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputMagnitude) == 0x348, "m_InputMagnitude in C_INIT_CreateParticleImpulse should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_nFalloffFunction) == 0x4B8, "m_nFalloffFunction in C_INIT_CreateParticleImpulse should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputFalloffExp) == 0x4C0, "m_InputFalloffExp in C_INIT_CreateParticleImpulse should be at offset 0x4C0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_nImpulseType) == 0x630, "m_nImpulseType in C_INIT_CreateParticleImpulse should be at offset 0x630");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateParticleImpulse) == 0x638, "C_INIT_CreateParticleImpulse size should be 0x638");
 	}
 }

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x9A8
+			// Class size: 0xA08
 			namespace C_OP_SetControlPointRotation /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_vecRotAxis = 0x1c8; // particleslib::CParticleCollectionVecInput m_vecRotAxis; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flRotRate = 0x840; // particleslib::CParticleCollectionFloatInput m_flRotRate; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nCP = 0x9a0; // int32_t m_nCP; |  0x9a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nLocalCP = 0x9a4; // int32_t m_nLocalCP; |  0x9a4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecRotAxis = 0x1d8; // particleslib::CParticleCollectionVecInput m_vecRotAxis; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flRotRate = 0x890; // particleslib::CParticleCollectionFloatInput m_flRotRate; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nCP = 0xa00; // int32_t m_nCP; |  0xa00 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nLocalCP = 0xa04; // int32_t m_nLocalCP; |  0xa04 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

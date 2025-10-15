@@ -14,6 +14,6 @@ namespace CS2 {
 		class CFuncIllusionary : public CS2::server::CBaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFuncIllusionary) == 0x7F0, "CFuncIllusionary size should be 0x7F0");
+		static_assert(sizeof(CS2::server::CFuncIllusionary) == 0x7D8, "CFuncIllusionary size should be 0x7D8");
 	}
 }

@@ -15,26 +15,27 @@ namespace CS2 {
 		class CEconEntity : public CS2::server::CBaseFlex {
 		public:
 			S2_PAD(0x10);
-			server::CAttributeContainer m_AttributeManager; // 0xb20 | Schema_DeclaredClass | Size: 0x2f8
-			uint32_t m_OriginalOwnerXuidLow; // 0xe18 | Schema_Builtin | Size: 0x4
-			uint32_t m_OriginalOwnerXuidHigh; // 0xe1c | Schema_Builtin | Size: 0x4
-			int32_t m_nFallbackPaintKit; // 0xe20 | Schema_Builtin | Size: 0x4
-			int32_t m_nFallbackSeed; // 0xe24 | Schema_Builtin | Size: 0x4
-			float32 m_flFallbackWear; // 0xe28 | Schema_Builtin | Size: 0x4
-			int32_t m_nFallbackStatTrak; // 0xe2c | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hOldProvidee; // 0xe30 | Schema_Atomic | Size: 0x4
-			char  m_hOldProvidee[0x4]; // 0xe30 | Schema_Atomic | Size: 0x4
-			int32_t m_iOldOwnerClass; // 0xe34 | Schema_Builtin | Size: 0x4
+			server::CAttributeContainer m_AttributeManager; // 0xb30 | Schema_DeclaredClass | Size: 0x2f8
+			uint32_t m_OriginalOwnerXuidLow; // 0xe28 | Schema_Builtin | Size: 0x4
+			uint32_t m_OriginalOwnerXuidHigh; // 0xe2c | Schema_Builtin | Size: 0x4
+			int32_t m_nFallbackPaintKit; // 0xe30 | Schema_Builtin | Size: 0x4
+			int32_t m_nFallbackSeed; // 0xe34 | Schema_Builtin | Size: 0x4
+			float32 m_flFallbackWear; // 0xe38 | Schema_Builtin | Size: 0x4
+			int32_t m_nFallbackStatTrak; // 0xe3c | Schema_Builtin | Size: 0x4
+			// server::CHandle< server::CBaseEntity > m_hOldProvidee; // 0xe40 | Schema_Atomic | Size: 0x4
+			char  m_hOldProvidee[0x4]; // 0xe40 | Schema_Atomic | Size: 0x4
+			int32_t m_iOldOwnerClass; // 0xe44 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEconEntity, m_AttributeManager) == 0xB20, "m_AttributeManager in CEconEntity should be at offset 0xB20");
-		static_assert(offsetof(CS2::server::CEconEntity, m_OriginalOwnerXuidLow) == 0xE18, "m_OriginalOwnerXuidLow in CEconEntity should be at offset 0xE18");
-		static_assert(offsetof(CS2::server::CEconEntity, m_OriginalOwnerXuidHigh) == 0xE1C, "m_OriginalOwnerXuidHigh in CEconEntity should be at offset 0xE1C");
-		static_assert(offsetof(CS2::server::CEconEntity, m_nFallbackPaintKit) == 0xE20, "m_nFallbackPaintKit in CEconEntity should be at offset 0xE20");
-		static_assert(offsetof(CS2::server::CEconEntity, m_nFallbackSeed) == 0xE24, "m_nFallbackSeed in CEconEntity should be at offset 0xE24");
-		static_assert(offsetof(CS2::server::CEconEntity, m_flFallbackWear) == 0xE28, "m_flFallbackWear in CEconEntity should be at offset 0xE28");
-		static_assert(offsetof(CS2::server::CEconEntity, m_nFallbackStatTrak) == 0xE2C, "m_nFallbackStatTrak in CEconEntity should be at offset 0xE2C");
-		static_assert(offsetof(CS2::server::CEconEntity, m_hOldProvidee) == 0xE30, "m_hOldProvidee in CEconEntity should be at offset 0xE30");
-		static_assert(offsetof(CS2::server::CEconEntity, m_iOldOwnerClass) == 0xE34, "m_iOldOwnerClass in CEconEntity should be at offset 0xE34");
-		static_assert(sizeof(CS2::server::CEconEntity) == 0xE38, "CEconEntity size should be 0xE38");
+		static_assert(offsetof(CS2::server::CEconEntity, m_AttributeManager) == 0xB30, "m_AttributeManager in CEconEntity should be at offset 0xB30");
+		static_assert(offsetof(CS2::server::CEconEntity, m_OriginalOwnerXuidLow) == 0xE28, "m_OriginalOwnerXuidLow in CEconEntity should be at offset 0xE28");
+		static_assert(offsetof(CS2::server::CEconEntity, m_OriginalOwnerXuidHigh) == 0xE2C, "m_OriginalOwnerXuidHigh in CEconEntity should be at offset 0xE2C");
+		static_assert(offsetof(CS2::server::CEconEntity, m_nFallbackPaintKit) == 0xE30, "m_nFallbackPaintKit in CEconEntity should be at offset 0xE30");
+		static_assert(offsetof(CS2::server::CEconEntity, m_nFallbackSeed) == 0xE34, "m_nFallbackSeed in CEconEntity should be at offset 0xE34");
+		static_assert(offsetof(CS2::server::CEconEntity, m_flFallbackWear) == 0xE38, "m_flFallbackWear in CEconEntity should be at offset 0xE38");
+		static_assert(offsetof(CS2::server::CEconEntity, m_nFallbackStatTrak) == 0xE3C, "m_nFallbackStatTrak in CEconEntity should be at offset 0xE3C");
+		static_assert(offsetof(CS2::server::CEconEntity, m_hOldProvidee) == 0xE40, "m_hOldProvidee in CEconEntity should be at offset 0xE40");
+		static_assert(offsetof(CS2::server::CEconEntity, m_iOldOwnerClass) == 0xE44, "m_iOldOwnerClass in CEconEntity should be at offset 0xE44");
+		static_assert(sizeof(CS2::server::CEconEntity) == 0xE50, "CEconEntity size should be 0xE50");
 	}
 }

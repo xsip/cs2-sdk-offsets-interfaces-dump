@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xF20
+			// Class size: 0xF08
 			namespace C_FuncLadder /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_vecLadderDir = 0xec8; // GlobalTypes::Vector m_vecLadderDir; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Dismounts = 0xed8; // client::CUtlVector< client.dll::CHandle< C_InfoLadderDismount > > m_Dismounts; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecLocalTop = 0xef0; // GlobalTypes::Vector m_vecLocalTop; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPlayerMountPositionTop = 0xefc; // GlobalTypes::VectorWS m_vecPlayerMountPositionTop; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPlayerMountPositionBottom = 0xf08; // GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flAutoRideSpeed = 0xf14; // float32 m_flAutoRideSpeed; |  0xf14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDisabled = 0xf18; // bool m_bDisabled; |  0xf18 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFakeLadder = 0xf19; // bool m_bFakeLadder; |  0xf19 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasSlack = 0xf1a; // bool m_bHasSlack; |  0xf1a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecLadderDir = 0xeb0; // GlobalTypes::Vector m_vecLadderDir; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Dismounts = 0xec0; // client::CUtlVector< client.dll::CHandle< C_InfoLadderDismount > > m_Dismounts; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecLocalTop = 0xed8; // GlobalTypes::Vector m_vecLocalTop; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPlayerMountPositionTop = 0xee4; // GlobalTypes::VectorWS m_vecPlayerMountPositionTop; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPlayerMountPositionBottom = 0xef0; // GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flAutoRideSpeed = 0xefc; // float32 m_flAutoRideSpeed; |  0xefc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDisabled = 0xf00; // bool m_bDisabled; |  0xf00 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFakeLadder = 0xf01; // bool m_bFakeLadder; |  0xf01 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasSlack = 0xf02; // bool m_bHasSlack; |  0xf02 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

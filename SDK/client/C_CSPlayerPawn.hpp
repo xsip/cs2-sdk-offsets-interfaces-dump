@@ -33,306 +33,303 @@ namespace CS2 {
 		class C_CSPlayerPawn : public CS2::client::C_CSPlayerPawnBase {
 		public:
 			S2_PAD(0x10);
-			client::CCSPlayer_BulletServices* m_pBulletServices; // 0x1690 | Schema_Ptr | Size: 0x8
-			client::CCSPlayer_HostageServices* m_pHostageServices; // 0x1698 | Schema_Ptr | Size: 0x8
-			client::CCSPlayer_BuyServices* m_pBuyServices; // 0x16a0 | Schema_Ptr | Size: 0x8
-			client::CCSPlayer_GlowServices* m_pGlowServices; // 0x16a8 | Schema_Ptr | Size: 0x8
-			client::CCSPlayer_ActionTrackingServices* m_pActionTrackingServices; // 0x16b0 | Schema_Ptr | Size: 0x8
-			client::CCSPlayer_DamageReactServices* m_pDamageReactServices; // 0x16b8 | Schema_Ptr | Size: 0x8
-			entity2::GameTime_t m_flHealthShotBoostExpirationTime; // 0x16c0 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flLastFiredWeaponTime; // 0x16c4 | Schema_DeclaredClass | Size: 0x4
-			bool m_bHasFemaleVoice; // 0x16c8 | Schema_Builtin | Size: 0x1
+			client::CCSPlayer_BulletServices* m_pBulletServices; // 0x1678 | Schema_Ptr | Size: 0x8
+			client::CCSPlayer_HostageServices* m_pHostageServices; // 0x1680 | Schema_Ptr | Size: 0x8
+			client::CCSPlayer_BuyServices* m_pBuyServices; // 0x1688 | Schema_Ptr | Size: 0x8
+			client::CCSPlayer_GlowServices* m_pGlowServices; // 0x1690 | Schema_Ptr | Size: 0x8
+			client::CCSPlayer_ActionTrackingServices* m_pActionTrackingServices; // 0x1698 | Schema_Ptr | Size: 0x8
+			client::CCSPlayer_DamageReactServices* m_pDamageReactServices; // 0x16a0 | Schema_Ptr | Size: 0x8
+			entity2::GameTime_t m_flHealthShotBoostExpirationTime; // 0x16a8 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flLastFiredWeaponTime; // 0x16ac | Schema_DeclaredClass | Size: 0x4
+			bool m_bHasFemaleVoice; // 0x16b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flLandingTimeSeconds; // 0x16cc | Schema_Builtin | Size: 0x4
-			float32 m_flOldFallVelocity; // 0x16d0 | Schema_Builtin | Size: 0x4
-			char m_szLastPlaceName[18]; // 0x16d4 | Schema_FixedArray | Size: 0x12
-			bool m_bPrevDefuser; // 0x16e6 | Schema_Builtin | Size: 0x1
-			bool m_bPrevHelmet; // 0x16e7 | Schema_Builtin | Size: 0x1
-			int32_t m_nPrevArmorVal; // 0x16e8 | Schema_Builtin | Size: 0x4
-			int32_t m_nPrevGrenadeAmmoCount; // 0x16ec | Schema_Builtin | Size: 0x4
-			uint32_t m_unPreviousWeaponHash; // 0x16f0 | Schema_Builtin | Size: 0x4
-			uint32_t m_unWeaponHash; // 0x16f4 | Schema_Builtin | Size: 0x4
-			bool m_bInBuyZone; // 0x16f8 | Schema_Builtin | Size: 0x1
-			bool m_bPreviouslyInBuyZone; // 0x16f9 | Schema_Builtin | Size: 0x1
+			float32 m_flLandingTimeSeconds; // 0x16b4 | Schema_Builtin | Size: 0x4
+			float32 m_flOldFallVelocity; // 0x16b8 | Schema_Builtin | Size: 0x4
+			char m_szLastPlaceName[18]; // 0x16bc | Schema_FixedArray | Size: 0x12
+			bool m_bPrevDefuser; // 0x16ce | Schema_Builtin | Size: 0x1
+			bool m_bPrevHelmet; // 0x16cf | Schema_Builtin | Size: 0x1
+			int32_t m_nPrevArmorVal; // 0x16d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nPrevGrenadeAmmoCount; // 0x16d4 | Schema_Builtin | Size: 0x4
+			uint32_t m_unPreviousWeaponHash; // 0x16d8 | Schema_Builtin | Size: 0x4
+			uint32_t m_unWeaponHash; // 0x16dc | Schema_Builtin | Size: 0x4
+			bool m_bInBuyZone; // 0x16e0 | Schema_Builtin | Size: 0x1
+			bool m_bPreviouslyInBuyZone; // 0x16e1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::QAngle m_aimPunchAngle; // 0x16fc | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_aimPunchAngleVel; // 0x1708 | Schema_Atomic | Size: 0xc
-			entity2::GameTick_t m_aimPunchTickBase; // 0x1714 | Schema_DeclaredClass | Size: 0x4
-			float32 m_aimPunchTickFraction; // 0x1718 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_aimPunchAngle; // 0x16e4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_aimPunchAngleVel; // 0x16f0 | Schema_Atomic | Size: 0xc
+			entity2::GameTick_t m_aimPunchTickBase; // 0x16fc | Schema_DeclaredClass | Size: 0x4
+			float32 m_aimPunchTickFraction; // 0x1700 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1720 | Schema_Atomic | Size: 0x18
-			char  m_aimPunchCache[0x18]; // 0x1720 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1708 | Schema_Atomic | Size: 0x18
+			char  m_aimPunchCache[0x18]; // 0x1708 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8);
-			bool m_bInLanding; // 0x1740 | Schema_Builtin | Size: 0x1
+			bool m_bInLanding; // 0x1728 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flLandingStartTime; // 0x1744 | Schema_Builtin | Size: 0x4
-			bool m_bInHostageRescueZone; // 0x1748 | Schema_Builtin | Size: 0x1
-			bool m_bInBombZone; // 0x1749 | Schema_Builtin | Size: 0x1
-			bool m_bIsBuyMenuOpen; // 0x174a | Schema_Builtin | Size: 0x1
+			float32 m_flLandingStartTime; // 0x172c | Schema_Builtin | Size: 0x4
+			bool m_bInHostageRescueZone; // 0x1730 | Schema_Builtin | Size: 0x1
+			bool m_bInBombZone; // 0x1731 | Schema_Builtin | Size: 0x1
+			bool m_bIsBuyMenuOpen; // 0x1732 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			entity2::GameTime_t m_flTimeOfLastInjury; // 0x174c | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flNextSprayDecalTime; // 0x1750 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flTimeOfLastInjury; // 0x1734 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flNextSprayDecalTime; // 0x1738 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x154);
-			int32_t m_iRetakesOffering; // 0x18a8 | Schema_Builtin | Size: 0x4
-			int32_t m_iRetakesOfferingCard; // 0x18ac | Schema_Builtin | Size: 0x4
-			bool m_bRetakesHasDefuseKit; // 0x18b0 | Schema_Builtin | Size: 0x1
-			bool m_bRetakesMVPLastRound; // 0x18b1 | Schema_Builtin | Size: 0x1
+			int32_t m_iRetakesOffering; // 0x1890 | Schema_Builtin | Size: 0x4
+			int32_t m_iRetakesOfferingCard; // 0x1894 | Schema_Builtin | Size: 0x4
+			bool m_bRetakesHasDefuseKit; // 0x1898 | Schema_Builtin | Size: 0x1
+			bool m_bRetakesMVPLastRound; // 0x1899 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iRetakesMVPBoostItem; // 0x18b4 | Schema_Builtin | Size: 0x4
-			client::loadout_slot_t m_RetakesMVPBoostExtraUtility; // 0x18b8 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_iRetakesMVPBoostItem; // 0x189c | Schema_Builtin | Size: 0x4
+			client::loadout_slot_t m_RetakesMVPBoostExtraUtility; // 0x18a0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x1);
-			bool m_bNeedToReApplyGloves; // 0x18bd | Schema_Builtin | Size: 0x1
+			bool m_bNeedToReApplyGloves; // 0x18a5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			client::C_EconItemView m_EconGloves; // 0x18c0 | Schema_DeclaredClass | Size: 0x478
-			uint8_t m_nEconGlovesChanged; // 0x1d38 | Schema_Builtin | Size: 0x1
-			bool m_bMustSyncRagdollState; // 0x1d39 | Schema_Builtin | Size: 0x1
+			client::C_EconItemView m_EconGloves; // 0x18a8 | Schema_DeclaredClass | Size: 0x478
+			uint8_t m_nEconGlovesChanged; // 0x1d20 | Schema_Builtin | Size: 0x1
+			bool m_bMustSyncRagdollState; // 0x1d21 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nRagdollDamageBone; // 0x1d3c | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vRagdollDamageForce; // 0x1d40 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vRagdollDamagePosition; // 0x1d4c | Schema_Atomic | Size: 0xc
-			char m_szRagdollDamageWeaponName[64]; // 0x1d58 | Schema_FixedArray | Size: 0x40
-			bool m_bRagdollDamageHeadshot; // 0x1d98 | Schema_Builtin | Size: 0x1
+			int32_t m_nRagdollDamageBone; // 0x1d24 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vRagdollDamageForce; // 0x1d28 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vRagdollDamagePosition; // 0x1d34 | Schema_Atomic | Size: 0xc
+			char m_szRagdollDamageWeaponName[64]; // 0x1d40 | Schema_FixedArray | Size: 0x40
+			bool m_bRagdollDamageHeadshot; // 0x1d80 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vRagdollServerOrigin; // 0x1d9c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vRagdollServerOrigin; // 0x1d84 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x670);
-			bool m_bLastHeadBoneTransformIsValid; // 0x2418 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
-			entity2::GameTime_t m_lastLandTime; // 0x241c | Schema_DeclaredClass | Size: 0x4
-			bool m_bOnGroundLastTick; // 0x2420 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_lastLandTime; // 0x2400 | Schema_DeclaredClass | Size: 0x4
+			bool m_bOnGroundLastTick; // 0x2404 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1b);
-			// client::CHandle< client::C_CS2HudModelArms > m_hHudModelArms; // 0x243c | Schema_Atomic | Size: 0x4
-			char  m_hHudModelArms[0x4]; // 0x243c | Schema_Atomic | Size: 0x4
-			GlobalTypes::QAngle m_qDeathEyeAngles; // 0x2440 | Schema_Atomic | Size: 0xc
-			bool m_bSkipOneHeadConstraintUpdate; // 0x244c | Schema_Builtin | Size: 0x1
-			bool m_bLeftHanded; // 0x244d | Schema_Builtin | Size: 0x1
+			// client::CHandle< client::C_CS2HudModelArms > m_hHudModelArms; // 0x2420 | Schema_Atomic | Size: 0x4
+			char  m_hHudModelArms[0x4]; // 0x2420 | Schema_Atomic | Size: 0x4
+			GlobalTypes::QAngle m_qDeathEyeAngles; // 0x2424 | Schema_Atomic | Size: 0xc
+			bool m_bSkipOneHeadConstraintUpdate; // 0x2430 | Schema_Builtin | Size: 0x1
+			bool m_bLeftHanded; // 0x2431 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_fSwitchedHandednessTime; // 0x2450 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flViewmodelOffsetX; // 0x2454 | Schema_Builtin | Size: 0x4
-			float32 m_flViewmodelOffsetY; // 0x2458 | Schema_Builtin | Size: 0x4
-			float32 m_flViewmodelOffsetZ; // 0x245c | Schema_Builtin | Size: 0x4
-			float32 m_flViewmodelFOV; // 0x2460 | Schema_Builtin | Size: 0x4
-			uint32_t m_vecPlayerPatchEconIndices[5]; // 0x2464 | Schema_FixedArray | Size: 0x14
-			S2_PAD(0x20);
-			GlobalTypes::Color m_GunGameImmunityColor; // 0x2498 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_fSwitchedHandednessTime; // 0x2434 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flViewmodelOffsetX; // 0x2438 | Schema_Builtin | Size: 0x4
+			float32 m_flViewmodelOffsetY; // 0x243c | Schema_Builtin | Size: 0x4
+			float32 m_flViewmodelOffsetZ; // 0x2440 | Schema_Builtin | Size: 0x4
+			float32 m_flViewmodelFOV; // 0x2444 | Schema_Builtin | Size: 0x4
+			uint32_t m_vecPlayerPatchEconIndices[5]; // 0x2448 | Schema_FixedArray | Size: 0x14
+			S2_PAD(0x24);
+			GlobalTypes::Color m_GunGameImmunityColor; // 0x2480 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4c);
-			// client::CUtlVector< C_BulletHitModel >* m_vecBulletHitModels; // 0x24e8 | Schema_Atomic | Size: 0x18
-			char  m_vecBulletHitModels[0x18]; // 0x24e8 | Schema_Atomic | Size: 0x18
-			bool m_bIsWalking; // 0x2500 | Schema_Builtin | Size: 0x1
+			// client::CUtlVector< C_BulletHitModel >* m_vecBulletHitModels; // 0x24d0 | Schema_Atomic | Size: 0x18
+			char  m_vecBulletHitModels[0x18]; // 0x24d0 | Schema_Atomic | Size: 0x18
+			bool m_bIsWalking; // 0x24e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::QAngle m_thirdPersonHeading; // 0x2508 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_thirdPersonHeading; // 0x24f0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84);
-			float32 m_flSlopeDropOffset; // 0x2598 | Schema_Builtin | Size: 0x4
+			float32 m_flSlopeDropOffset; // 0x2580 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x74);
-			float32 m_flSlopeDropHeight; // 0x2610 | Schema_Builtin | Size: 0x4
+			float32 m_flSlopeDropHeight; // 0x25f8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x74);
-			GlobalTypes::Vector m_vHeadConstraintOffset; // 0x2688 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vHeadConstraintOffset; // 0x2670 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84);
-			client::EntitySpottedState_t m_entitySpottedState; // 0x2718 | Schema_DeclaredClass | Size: 0x18
-			bool m_bIsScoped; // 0x2730 | Schema_Builtin | Size: 0x1
-			bool m_bResumeZoom; // 0x2731 | Schema_Builtin | Size: 0x1
-			bool m_bIsDefusing; // 0x2732 | Schema_Builtin | Size: 0x1
-			bool m_bIsGrabbingHostage; // 0x2733 | Schema_Builtin | Size: 0x1
-			client::CSPlayerBlockingUseAction_t m_iBlockingUseActionInProgress; // 0x2734 | Schema_DeclaredEnum | Size: 0x4
-			entity2::GameTime_t m_flEmitSoundTime; // 0x2738 | Schema_DeclaredClass | Size: 0x4
-			bool m_bInNoDefuseArea; // 0x273c | Schema_Builtin | Size: 0x1
+			client::EntitySpottedState_t m_entitySpottedState; // 0x2700 | Schema_DeclaredClass | Size: 0x18
+			bool m_bIsScoped; // 0x2718 | Schema_Builtin | Size: 0x1
+			bool m_bResumeZoom; // 0x2719 | Schema_Builtin | Size: 0x1
+			bool m_bIsDefusing; // 0x271a | Schema_Builtin | Size: 0x1
+			bool m_bIsGrabbingHostage; // 0x271b | Schema_Builtin | Size: 0x1
+			client::CSPlayerBlockingUseAction_t m_iBlockingUseActionInProgress; // 0x271c | Schema_DeclaredEnum | Size: 0x4
+			entity2::GameTime_t m_flEmitSoundTime; // 0x2720 | Schema_DeclaredClass | Size: 0x4
+			bool m_bInNoDefuseArea; // 0x2724 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nWhichBombZone; // 0x2740 | Schema_Builtin | Size: 0x4
-			int32_t m_iShotsFired; // 0x2744 | Schema_Builtin | Size: 0x4
-			float32 m_flFlinchStack; // 0x2748 | Schema_Builtin | Size: 0x4
-			float32 m_flVelocityModifier; // 0x274c | Schema_Builtin | Size: 0x4
-			float32 m_flHitHeading; // 0x2750 | Schema_Builtin | Size: 0x4
-			int32_t m_nHitBodyPart; // 0x2754 | Schema_Builtin | Size: 0x4
-			bool m_bWaitForNoAttack; // 0x2758 | Schema_Builtin | Size: 0x1
+			int32_t m_nWhichBombZone; // 0x2728 | Schema_Builtin | Size: 0x4
+			int32_t m_iShotsFired; // 0x272c | Schema_Builtin | Size: 0x4
+			float32 m_flFlinchStack; // 0x2730 | Schema_Builtin | Size: 0x4
+			float32 m_flVelocityModifier; // 0x2734 | Schema_Builtin | Size: 0x4
+			float32 m_flHitHeading; // 0x2738 | Schema_Builtin | Size: 0x4
+			int32_t m_nHitBodyPart; // 0x273c | Schema_Builtin | Size: 0x4
+			bool m_bWaitForNoAttack; // 0x2740 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_ignoreLadderJumpTime; // 0x275c | Schema_Builtin | Size: 0x4
+			float32 m_ignoreLadderJumpTime; // 0x2744 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x1);
-			bool m_bKilledByHeadshot; // 0x2761 | Schema_Builtin | Size: 0x1
+			bool m_bKilledByHeadshot; // 0x2749 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_ArmorValue; // 0x2764 | Schema_Builtin | Size: 0x4
-			uint16_t m_unCurrentEquipmentValue; // 0x2768 | Schema_Builtin | Size: 0x2
-			uint16_t m_unRoundStartEquipmentValue; // 0x276a | Schema_Builtin | Size: 0x2
-			uint16_t m_unFreezetimeEndEquipmentValue; // 0x276c | Schema_Builtin | Size: 0x2
+			int32_t m_ArmorValue; // 0x274c | Schema_Builtin | Size: 0x4
+			uint16_t m_unCurrentEquipmentValue; // 0x2750 | Schema_Builtin | Size: 0x2
+			uint16_t m_unRoundStartEquipmentValue; // 0x2752 | Schema_Builtin | Size: 0x2
+			uint16_t m_unFreezetimeEndEquipmentValue; // 0x2754 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
-			GlobalTypes::CEntityIndex m_nLastKillerIndex; // 0x2770 | Schema_Atomic | Size: 0x4
-			bool m_bOldIsScoped; // 0x2774 | Schema_Builtin | Size: 0x1
-			bool m_bHasDeathInfo; // 0x2775 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CEntityIndex m_nLastKillerIndex; // 0x2758 | Schema_Atomic | Size: 0x4
+			bool m_bOldIsScoped; // 0x275c | Schema_Builtin | Size: 0x1
+			bool m_bHasDeathInfo; // 0x275d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flDeathInfoTime; // 0x2778 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecDeathInfoOrigin; // 0x277c | Schema_Atomic | Size: 0xc
+			float32 m_flDeathInfoTime; // 0x2760 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecDeathInfoOrigin; // 0x2764 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			entity2::GameTime_t m_grenadeParameterStashTime; // 0x278c | Schema_DeclaredClass | Size: 0x4
-			bool m_bGrenadeParametersStashed; // 0x2790 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_grenadeParameterStashTime; // 0x2774 | Schema_DeclaredClass | Size: 0x4
+			bool m_bGrenadeParametersStashed; // 0x2778 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::QAngle m_angStashedShootAngles; // 0x2794 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecStashedGrenadeThrowPosition; // 0x27a0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecStashedVelocity; // 0x27ac | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angShootAngleHistory[2]; // 0x27b8 | Schema_FixedArray | Size: 0x18
-			GlobalTypes::Vector m_vecThrowPositionHistory[2]; // 0x27d0 | Schema_FixedArray | Size: 0x18
-			GlobalTypes::Vector m_vecVelocityHistory[2]; // 0x27e8 | Schema_FixedArray | Size: 0x18
-			// client::C_UtlVectorEmbeddedNetworkVar< client::PredictedDamageTag_t > m_PredictedDamageTags; // 0x2800 | Schema_Atomic | Size: 0x68
-			char  m_PredictedDamageTags[0x68]; // 0x2800 | Schema_Atomic | Size: 0x68
-			entity2::GameTick_t m_nPrevHighestReceivedDamageTagTick; // 0x2868 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nHighestAppliedDamageTagTick; // 0x286c | Schema_Builtin | Size: 0x4
-			S2_PAD(0x152c);
-			bool m_bShouldAutobuyDMWeapons; // 0x3d9c | Schema_Builtin | Size: 0x1
+			GlobalTypes::QAngle m_angStashedShootAngles; // 0x277c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecStashedGrenadeThrowPosition; // 0x2788 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecStashedVelocity; // 0x2794 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angShootAngleHistory[2]; // 0x27a0 | Schema_FixedArray | Size: 0x18
+			GlobalTypes::Vector m_vecThrowPositionHistory[2]; // 0x27b8 | Schema_FixedArray | Size: 0x18
+			GlobalTypes::Vector m_vecVelocityHistory[2]; // 0x27d0 | Schema_FixedArray | Size: 0x18
+			// client::C_UtlVectorEmbeddedNetworkVar< client::PredictedDamageTag_t > m_PredictedDamageTags; // 0x27e8 | Schema_Atomic | Size: 0x68
+			char  m_PredictedDamageTags[0x68]; // 0x27e8 | Schema_Atomic | Size: 0x68
+			entity2::GameTick_t m_nPrevHighestReceivedDamageTagTick; // 0x2850 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nHighestAppliedDamageTagTick; // 0x2854 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x1534);
+			bool m_bShouldAutobuyDMWeapons; // 0x3d8c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_fImmuneToGunGameDamageTime; // 0x3da0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bGunGameImmunity; // 0x3da4 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_fImmuneToGunGameDamageTime; // 0x3d90 | Schema_DeclaredClass | Size: 0x4
+			bool m_bGunGameImmunity; // 0x3d94 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_fImmuneToGunGameDamageTimeLast; // 0x3da8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_fMolotovDamageTime; // 0x3dac | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_fImmuneToGunGameDamageTimeLast; // 0x3d98 | Schema_DeclaredClass | Size: 0x4
+			float32 m_fMolotovDamageTime; // 0x3d9c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::Vector m_vecLastAliveLocalVelocity; // 0x3db4 | Schema_Atomic | Size: 0xc
-			float32 m_fRenderingClipPlane[4]; // 0x3dc0 | Schema_FixedArray | Size: 0x10
-			int32_t m_nLastClipPlaneSetupFrame; // 0x3dd0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecLastClipCameraPos; // 0x3dd4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecLastClipCameraForward; // 0x3de0 | Schema_Atomic | Size: 0xc
-			bool m_bClipHitStaticWorld; // 0x3dec | Schema_Builtin | Size: 0x1
-			bool m_bCachedPlaneIsValid; // 0x3ded | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vecLastAliveLocalVelocity; // 0x3da4 | Schema_Atomic | Size: 0xc
+			float32 m_fRenderingClipPlane[4]; // 0x3db0 | Schema_FixedArray | Size: 0x10
+			int32_t m_nLastClipPlaneSetupFrame; // 0x3dc0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecLastClipCameraPos; // 0x3dc4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLastClipCameraForward; // 0x3dd0 | Schema_Atomic | Size: 0xc
+			bool m_bClipHitStaticWorld; // 0x3ddc | Schema_Builtin | Size: 0x1
+			bool m_bCachedPlaneIsValid; // 0x3ddd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			client::C_CSWeaponBase* m_pClippingWeapon; // 0x3df0 | Schema_Ptr | Size: 0x8
-			client::ParticleIndex_t m_nPlayerInfernoBodyFx; // 0x3df8 | Schema_DeclaredClass | Size: 0x4
+			client::C_CSWeaponBase* m_pClippingWeapon; // 0x3de0 | Schema_Ptr | Size: 0x8
+			client::ParticleIndex_t m_nPlayerInfernoBodyFx; // 0x3de8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::QAngle m_angEyeAngles; // 0x3e00 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angEyeAngles; // 0x3df0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84);
-			entity2::GameTime_t m_arrOldEyeAnglesTimes[4]; // 0x3e90 | Schema_FixedArray | Size: 0x40
-			GlobalTypes::QAngle m_arrOldEyeAngles[4]; // 0x3ea0 | Schema_FixedArray | Size: 0x30
-			GlobalTypes::QAngle m_angEyeAnglesVelocity; // 0x3ed0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CEntityIndex m_iIDEntIndex; // 0x3edc | Schema_Atomic | Size: 0x4
-			client::CountdownTimer m_delayTargetIDTimer; // 0x3ee0 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::CEntityIndex m_iTargetItemEntIdx; // 0x3ef8 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CEntityIndex m_iOldIDEntIndex; // 0x3efc | Schema_Atomic | Size: 0x4
-			client::CountdownTimer m_holdTargetIDTimer; // 0x3f00 | Schema_DeclaredClass | Size: 0x18
+			entity2::GameTime_t m_arrOldEyeAnglesTimes[4]; // 0x3e80 | Schema_FixedArray | Size: 0x40
+			GlobalTypes::QAngle m_arrOldEyeAngles[4]; // 0x3e90 | Schema_FixedArray | Size: 0x30
+			GlobalTypes::QAngle m_angEyeAnglesVelocity; // 0x3ec0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CEntityIndex m_iIDEntIndex; // 0x3ecc | Schema_Atomic | Size: 0x4
+			client::CountdownTimer m_delayTargetIDTimer; // 0x3ed0 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CEntityIndex m_iTargetItemEntIdx; // 0x3ee8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CEntityIndex m_iOldIDEntIndex; // 0x3eec | Schema_Atomic | Size: 0x4
+			client::CountdownTimer m_holdTargetIDTimer; // 0x3ef0 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pBulletServices) == 0x1690, "m_pBulletServices in C_CSPlayerPawn should be at offset 0x1690");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pHostageServices) == 0x1698, "m_pHostageServices in C_CSPlayerPawn should be at offset 0x1698");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pBuyServices) == 0x16A0, "m_pBuyServices in C_CSPlayerPawn should be at offset 0x16A0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pGlowServices) == 0x16A8, "m_pGlowServices in C_CSPlayerPawn should be at offset 0x16A8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pActionTrackingServices) == 0x16B0, "m_pActionTrackingServices in C_CSPlayerPawn should be at offset 0x16B0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pDamageReactServices) == 0x16B8, "m_pDamageReactServices in C_CSPlayerPawn should be at offset 0x16B8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flHealthShotBoostExpirationTime) == 0x16C0, "m_flHealthShotBoostExpirationTime in C_CSPlayerPawn should be at offset 0x16C0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flLastFiredWeaponTime) == 0x16C4, "m_flLastFiredWeaponTime in C_CSPlayerPawn should be at offset 0x16C4");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bHasFemaleVoice) == 0x16C8, "m_bHasFemaleVoice in C_CSPlayerPawn should be at offset 0x16C8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flLandingTimeSeconds) == 0x16CC, "m_flLandingTimeSeconds in C_CSPlayerPawn should be at offset 0x16CC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flOldFallVelocity) == 0x16D0, "m_flOldFallVelocity in C_CSPlayerPawn should be at offset 0x16D0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_szLastPlaceName) == 0x16D4, "m_szLastPlaceName in C_CSPlayerPawn should be at offset 0x16D4");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bPrevDefuser) == 0x16E6, "m_bPrevDefuser in C_CSPlayerPawn should be at offset 0x16E6");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bPrevHelmet) == 0x16E7, "m_bPrevHelmet in C_CSPlayerPawn should be at offset 0x16E7");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPrevArmorVal) == 0x16E8, "m_nPrevArmorVal in C_CSPlayerPawn should be at offset 0x16E8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPrevGrenadeAmmoCount) == 0x16EC, "m_nPrevGrenadeAmmoCount in C_CSPlayerPawn should be at offset 0x16EC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unPreviousWeaponHash) == 0x16F0, "m_unPreviousWeaponHash in C_CSPlayerPawn should be at offset 0x16F0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unWeaponHash) == 0x16F4, "m_unWeaponHash in C_CSPlayerPawn should be at offset 0x16F4");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInBuyZone) == 0x16F8, "m_bInBuyZone in C_CSPlayerPawn should be at offset 0x16F8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bPreviouslyInBuyZone) == 0x16F9, "m_bPreviouslyInBuyZone in C_CSPlayerPawn should be at offset 0x16F9");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchAngle) == 0x16FC, "m_aimPunchAngle in C_CSPlayerPawn should be at offset 0x16FC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchAngleVel) == 0x1708, "m_aimPunchAngleVel in C_CSPlayerPawn should be at offset 0x1708");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchTickBase) == 0x1714, "m_aimPunchTickBase in C_CSPlayerPawn should be at offset 0x1714");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchTickFraction) == 0x1718, "m_aimPunchTickFraction in C_CSPlayerPawn should be at offset 0x1718");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchCache) == 0x1720, "m_aimPunchCache in C_CSPlayerPawn should be at offset 0x1720");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInLanding) == 0x1740, "m_bInLanding in C_CSPlayerPawn should be at offset 0x1740");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flLandingStartTime) == 0x1744, "m_flLandingStartTime in C_CSPlayerPawn should be at offset 0x1744");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInHostageRescueZone) == 0x1748, "m_bInHostageRescueZone in C_CSPlayerPawn should be at offset 0x1748");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInBombZone) == 0x1749, "m_bInBombZone in C_CSPlayerPawn should be at offset 0x1749");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsBuyMenuOpen) == 0x174A, "m_bIsBuyMenuOpen in C_CSPlayerPawn should be at offset 0x174A");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flTimeOfLastInjury) == 0x174C, "m_flTimeOfLastInjury in C_CSPlayerPawn should be at offset 0x174C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flNextSprayDecalTime) == 0x1750, "m_flNextSprayDecalTime in C_CSPlayerPawn should be at offset 0x1750");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iRetakesOffering) == 0x18A8, "m_iRetakesOffering in C_CSPlayerPawn should be at offset 0x18A8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iRetakesOfferingCard) == 0x18AC, "m_iRetakesOfferingCard in C_CSPlayerPawn should be at offset 0x18AC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bRetakesHasDefuseKit) == 0x18B0, "m_bRetakesHasDefuseKit in C_CSPlayerPawn should be at offset 0x18B0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bRetakesMVPLastRound) == 0x18B1, "m_bRetakesMVPLastRound in C_CSPlayerPawn should be at offset 0x18B1");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iRetakesMVPBoostItem) == 0x18B4, "m_iRetakesMVPBoostItem in C_CSPlayerPawn should be at offset 0x18B4");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_RetakesMVPBoostExtraUtility) == 0x18B8, "m_RetakesMVPBoostExtraUtility in C_CSPlayerPawn should be at offset 0x18B8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bNeedToReApplyGloves) == 0x18BD, "m_bNeedToReApplyGloves in C_CSPlayerPawn should be at offset 0x18BD");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_EconGloves) == 0x18C0, "m_EconGloves in C_CSPlayerPawn should be at offset 0x18C0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nEconGlovesChanged) == 0x1D38, "m_nEconGlovesChanged in C_CSPlayerPawn should be at offset 0x1D38");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bMustSyncRagdollState) == 0x1D39, "m_bMustSyncRagdollState in C_CSPlayerPawn should be at offset 0x1D39");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nRagdollDamageBone) == 0x1D3C, "m_nRagdollDamageBone in C_CSPlayerPawn should be at offset 0x1D3C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vRagdollDamageForce) == 0x1D40, "m_vRagdollDamageForce in C_CSPlayerPawn should be at offset 0x1D40");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vRagdollDamagePosition) == 0x1D4C, "m_vRagdollDamagePosition in C_CSPlayerPawn should be at offset 0x1D4C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_szRagdollDamageWeaponName) == 0x1D58, "m_szRagdollDamageWeaponName in C_CSPlayerPawn should be at offset 0x1D58");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bRagdollDamageHeadshot) == 0x1D98, "m_bRagdollDamageHeadshot in C_CSPlayerPawn should be at offset 0x1D98");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vRagdollServerOrigin) == 0x1D9C, "m_vRagdollServerOrigin in C_CSPlayerPawn should be at offset 0x1D9C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bLastHeadBoneTransformIsValid) == 0x2418, "m_bLastHeadBoneTransformIsValid in C_CSPlayerPawn should be at offset 0x2418");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_lastLandTime) == 0x241C, "m_lastLandTime in C_CSPlayerPawn should be at offset 0x241C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bOnGroundLastTick) == 0x2420, "m_bOnGroundLastTick in C_CSPlayerPawn should be at offset 0x2420");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_hHudModelArms) == 0x243C, "m_hHudModelArms in C_CSPlayerPawn should be at offset 0x243C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_qDeathEyeAngles) == 0x2440, "m_qDeathEyeAngles in C_CSPlayerPawn should be at offset 0x2440");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bSkipOneHeadConstraintUpdate) == 0x244C, "m_bSkipOneHeadConstraintUpdate in C_CSPlayerPawn should be at offset 0x244C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bLeftHanded) == 0x244D, "m_bLeftHanded in C_CSPlayerPawn should be at offset 0x244D");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fSwitchedHandednessTime) == 0x2450, "m_fSwitchedHandednessTime in C_CSPlayerPawn should be at offset 0x2450");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelOffsetX) == 0x2454, "m_flViewmodelOffsetX in C_CSPlayerPawn should be at offset 0x2454");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelOffsetY) == 0x2458, "m_flViewmodelOffsetY in C_CSPlayerPawn should be at offset 0x2458");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelOffsetZ) == 0x245C, "m_flViewmodelOffsetZ in C_CSPlayerPawn should be at offset 0x245C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelFOV) == 0x2460, "m_flViewmodelFOV in C_CSPlayerPawn should be at offset 0x2460");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecPlayerPatchEconIndices) == 0x2464, "m_vecPlayerPatchEconIndices in C_CSPlayerPawn should be at offset 0x2464");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_GunGameImmunityColor) == 0x2498, "m_GunGameImmunityColor in C_CSPlayerPawn should be at offset 0x2498");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecBulletHitModels) == 0x24E8, "m_vecBulletHitModels in C_CSPlayerPawn should be at offset 0x24E8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsWalking) == 0x2500, "m_bIsWalking in C_CSPlayerPawn should be at offset 0x2500");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_thirdPersonHeading) == 0x2508, "m_thirdPersonHeading in C_CSPlayerPawn should be at offset 0x2508");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flSlopeDropOffset) == 0x2598, "m_flSlopeDropOffset in C_CSPlayerPawn should be at offset 0x2598");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flSlopeDropHeight) == 0x2610, "m_flSlopeDropHeight in C_CSPlayerPawn should be at offset 0x2610");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vHeadConstraintOffset) == 0x2688, "m_vHeadConstraintOffset in C_CSPlayerPawn should be at offset 0x2688");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_entitySpottedState) == 0x2718, "m_entitySpottedState in C_CSPlayerPawn should be at offset 0x2718");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsScoped) == 0x2730, "m_bIsScoped in C_CSPlayerPawn should be at offset 0x2730");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bResumeZoom) == 0x2731, "m_bResumeZoom in C_CSPlayerPawn should be at offset 0x2731");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsDefusing) == 0x2732, "m_bIsDefusing in C_CSPlayerPawn should be at offset 0x2732");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsGrabbingHostage) == 0x2733, "m_bIsGrabbingHostage in C_CSPlayerPawn should be at offset 0x2733");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iBlockingUseActionInProgress) == 0x2734, "m_iBlockingUseActionInProgress in C_CSPlayerPawn should be at offset 0x2734");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flEmitSoundTime) == 0x2738, "m_flEmitSoundTime in C_CSPlayerPawn should be at offset 0x2738");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInNoDefuseArea) == 0x273C, "m_bInNoDefuseArea in C_CSPlayerPawn should be at offset 0x273C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nWhichBombZone) == 0x2740, "m_nWhichBombZone in C_CSPlayerPawn should be at offset 0x2740");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iShotsFired) == 0x2744, "m_iShotsFired in C_CSPlayerPawn should be at offset 0x2744");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flFlinchStack) == 0x2748, "m_flFlinchStack in C_CSPlayerPawn should be at offset 0x2748");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flVelocityModifier) == 0x274C, "m_flVelocityModifier in C_CSPlayerPawn should be at offset 0x274C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flHitHeading) == 0x2750, "m_flHitHeading in C_CSPlayerPawn should be at offset 0x2750");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nHitBodyPart) == 0x2754, "m_nHitBodyPart in C_CSPlayerPawn should be at offset 0x2754");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bWaitForNoAttack) == 0x2758, "m_bWaitForNoAttack in C_CSPlayerPawn should be at offset 0x2758");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_ignoreLadderJumpTime) == 0x275C, "m_ignoreLadderJumpTime in C_CSPlayerPawn should be at offset 0x275C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bKilledByHeadshot) == 0x2761, "m_bKilledByHeadshot in C_CSPlayerPawn should be at offset 0x2761");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_ArmorValue) == 0x2764, "m_ArmorValue in C_CSPlayerPawn should be at offset 0x2764");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unCurrentEquipmentValue) == 0x2768, "m_unCurrentEquipmentValue in C_CSPlayerPawn should be at offset 0x2768");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unRoundStartEquipmentValue) == 0x276A, "m_unRoundStartEquipmentValue in C_CSPlayerPawn should be at offset 0x276A");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unFreezetimeEndEquipmentValue) == 0x276C, "m_unFreezetimeEndEquipmentValue in C_CSPlayerPawn should be at offset 0x276C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nLastKillerIndex) == 0x2770, "m_nLastKillerIndex in C_CSPlayerPawn should be at offset 0x2770");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bOldIsScoped) == 0x2774, "m_bOldIsScoped in C_CSPlayerPawn should be at offset 0x2774");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bHasDeathInfo) == 0x2775, "m_bHasDeathInfo in C_CSPlayerPawn should be at offset 0x2775");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flDeathInfoTime) == 0x2778, "m_flDeathInfoTime in C_CSPlayerPawn should be at offset 0x2778");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecDeathInfoOrigin) == 0x277C, "m_vecDeathInfoOrigin in C_CSPlayerPawn should be at offset 0x277C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_grenadeParameterStashTime) == 0x278C, "m_grenadeParameterStashTime in C_CSPlayerPawn should be at offset 0x278C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bGrenadeParametersStashed) == 0x2790, "m_bGrenadeParametersStashed in C_CSPlayerPawn should be at offset 0x2790");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angStashedShootAngles) == 0x2794, "m_angStashedShootAngles in C_CSPlayerPawn should be at offset 0x2794");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecStashedGrenadeThrowPosition) == 0x27A0, "m_vecStashedGrenadeThrowPosition in C_CSPlayerPawn should be at offset 0x27A0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecStashedVelocity) == 0x27AC, "m_vecStashedVelocity in C_CSPlayerPawn should be at offset 0x27AC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angShootAngleHistory) == 0x27B8, "m_angShootAngleHistory in C_CSPlayerPawn should be at offset 0x27B8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecThrowPositionHistory) == 0x27D0, "m_vecThrowPositionHistory in C_CSPlayerPawn should be at offset 0x27D0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecVelocityHistory) == 0x27E8, "m_vecVelocityHistory in C_CSPlayerPawn should be at offset 0x27E8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_PredictedDamageTags) == 0x2800, "m_PredictedDamageTags in C_CSPlayerPawn should be at offset 0x2800");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPrevHighestReceivedDamageTagTick) == 0x2868, "m_nPrevHighestReceivedDamageTagTick in C_CSPlayerPawn should be at offset 0x2868");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nHighestAppliedDamageTagTick) == 0x286C, "m_nHighestAppliedDamageTagTick in C_CSPlayerPawn should be at offset 0x286C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bShouldAutobuyDMWeapons) == 0x3D9C, "m_bShouldAutobuyDMWeapons in C_CSPlayerPawn should be at offset 0x3D9C");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fImmuneToGunGameDamageTime) == 0x3DA0, "m_fImmuneToGunGameDamageTime in C_CSPlayerPawn should be at offset 0x3DA0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bGunGameImmunity) == 0x3DA4, "m_bGunGameImmunity in C_CSPlayerPawn should be at offset 0x3DA4");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fImmuneToGunGameDamageTimeLast) == 0x3DA8, "m_fImmuneToGunGameDamageTimeLast in C_CSPlayerPawn should be at offset 0x3DA8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fMolotovDamageTime) == 0x3DAC, "m_fMolotovDamageTime in C_CSPlayerPawn should be at offset 0x3DAC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecLastAliveLocalVelocity) == 0x3DB4, "m_vecLastAliveLocalVelocity in C_CSPlayerPawn should be at offset 0x3DB4");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fRenderingClipPlane) == 0x3DC0, "m_fRenderingClipPlane in C_CSPlayerPawn should be at offset 0x3DC0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nLastClipPlaneSetupFrame) == 0x3DD0, "m_nLastClipPlaneSetupFrame in C_CSPlayerPawn should be at offset 0x3DD0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecLastClipCameraPos) == 0x3DD4, "m_vecLastClipCameraPos in C_CSPlayerPawn should be at offset 0x3DD4");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecLastClipCameraForward) == 0x3DE0, "m_vecLastClipCameraForward in C_CSPlayerPawn should be at offset 0x3DE0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bClipHitStaticWorld) == 0x3DEC, "m_bClipHitStaticWorld in C_CSPlayerPawn should be at offset 0x3DEC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bCachedPlaneIsValid) == 0x3DED, "m_bCachedPlaneIsValid in C_CSPlayerPawn should be at offset 0x3DED");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pClippingWeapon) == 0x3DF0, "m_pClippingWeapon in C_CSPlayerPawn should be at offset 0x3DF0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPlayerInfernoBodyFx) == 0x3DF8, "m_nPlayerInfernoBodyFx in C_CSPlayerPawn should be at offset 0x3DF8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angEyeAngles) == 0x3E00, "m_angEyeAngles in C_CSPlayerPawn should be at offset 0x3E00");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_arrOldEyeAnglesTimes) == 0x3E90, "m_arrOldEyeAnglesTimes in C_CSPlayerPawn should be at offset 0x3E90");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_arrOldEyeAngles) == 0x3EA0, "m_arrOldEyeAngles in C_CSPlayerPawn should be at offset 0x3EA0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angEyeAnglesVelocity) == 0x3ED0, "m_angEyeAnglesVelocity in C_CSPlayerPawn should be at offset 0x3ED0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iIDEntIndex) == 0x3EDC, "m_iIDEntIndex in C_CSPlayerPawn should be at offset 0x3EDC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_delayTargetIDTimer) == 0x3EE0, "m_delayTargetIDTimer in C_CSPlayerPawn should be at offset 0x3EE0");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iTargetItemEntIdx) == 0x3EF8, "m_iTargetItemEntIdx in C_CSPlayerPawn should be at offset 0x3EF8");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iOldIDEntIndex) == 0x3EFC, "m_iOldIDEntIndex in C_CSPlayerPawn should be at offset 0x3EFC");
-		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_holdTargetIDTimer) == 0x3F00, "m_holdTargetIDTimer in C_CSPlayerPawn should be at offset 0x3F00");
-		static_assert(sizeof(CS2::client::C_CSPlayerPawn) == 0x3F20, "C_CSPlayerPawn size should be 0x3F20");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pBulletServices) == 0x1678, "m_pBulletServices in C_CSPlayerPawn should be at offset 0x1678");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pHostageServices) == 0x1680, "m_pHostageServices in C_CSPlayerPawn should be at offset 0x1680");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pBuyServices) == 0x1688, "m_pBuyServices in C_CSPlayerPawn should be at offset 0x1688");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pGlowServices) == 0x1690, "m_pGlowServices in C_CSPlayerPawn should be at offset 0x1690");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pActionTrackingServices) == 0x1698, "m_pActionTrackingServices in C_CSPlayerPawn should be at offset 0x1698");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pDamageReactServices) == 0x16A0, "m_pDamageReactServices in C_CSPlayerPawn should be at offset 0x16A0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flHealthShotBoostExpirationTime) == 0x16A8, "m_flHealthShotBoostExpirationTime in C_CSPlayerPawn should be at offset 0x16A8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flLastFiredWeaponTime) == 0x16AC, "m_flLastFiredWeaponTime in C_CSPlayerPawn should be at offset 0x16AC");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bHasFemaleVoice) == 0x16B0, "m_bHasFemaleVoice in C_CSPlayerPawn should be at offset 0x16B0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flLandingTimeSeconds) == 0x16B4, "m_flLandingTimeSeconds in C_CSPlayerPawn should be at offset 0x16B4");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flOldFallVelocity) == 0x16B8, "m_flOldFallVelocity in C_CSPlayerPawn should be at offset 0x16B8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_szLastPlaceName) == 0x16BC, "m_szLastPlaceName in C_CSPlayerPawn should be at offset 0x16BC");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bPrevDefuser) == 0x16CE, "m_bPrevDefuser in C_CSPlayerPawn should be at offset 0x16CE");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bPrevHelmet) == 0x16CF, "m_bPrevHelmet in C_CSPlayerPawn should be at offset 0x16CF");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPrevArmorVal) == 0x16D0, "m_nPrevArmorVal in C_CSPlayerPawn should be at offset 0x16D0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPrevGrenadeAmmoCount) == 0x16D4, "m_nPrevGrenadeAmmoCount in C_CSPlayerPawn should be at offset 0x16D4");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unPreviousWeaponHash) == 0x16D8, "m_unPreviousWeaponHash in C_CSPlayerPawn should be at offset 0x16D8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unWeaponHash) == 0x16DC, "m_unWeaponHash in C_CSPlayerPawn should be at offset 0x16DC");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInBuyZone) == 0x16E0, "m_bInBuyZone in C_CSPlayerPawn should be at offset 0x16E0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bPreviouslyInBuyZone) == 0x16E1, "m_bPreviouslyInBuyZone in C_CSPlayerPawn should be at offset 0x16E1");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchAngle) == 0x16E4, "m_aimPunchAngle in C_CSPlayerPawn should be at offset 0x16E4");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchAngleVel) == 0x16F0, "m_aimPunchAngleVel in C_CSPlayerPawn should be at offset 0x16F0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchTickBase) == 0x16FC, "m_aimPunchTickBase in C_CSPlayerPawn should be at offset 0x16FC");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchTickFraction) == 0x1700, "m_aimPunchTickFraction in C_CSPlayerPawn should be at offset 0x1700");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_aimPunchCache) == 0x1708, "m_aimPunchCache in C_CSPlayerPawn should be at offset 0x1708");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInLanding) == 0x1728, "m_bInLanding in C_CSPlayerPawn should be at offset 0x1728");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flLandingStartTime) == 0x172C, "m_flLandingStartTime in C_CSPlayerPawn should be at offset 0x172C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInHostageRescueZone) == 0x1730, "m_bInHostageRescueZone in C_CSPlayerPawn should be at offset 0x1730");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInBombZone) == 0x1731, "m_bInBombZone in C_CSPlayerPawn should be at offset 0x1731");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsBuyMenuOpen) == 0x1732, "m_bIsBuyMenuOpen in C_CSPlayerPawn should be at offset 0x1732");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flTimeOfLastInjury) == 0x1734, "m_flTimeOfLastInjury in C_CSPlayerPawn should be at offset 0x1734");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flNextSprayDecalTime) == 0x1738, "m_flNextSprayDecalTime in C_CSPlayerPawn should be at offset 0x1738");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iRetakesOffering) == 0x1890, "m_iRetakesOffering in C_CSPlayerPawn should be at offset 0x1890");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iRetakesOfferingCard) == 0x1894, "m_iRetakesOfferingCard in C_CSPlayerPawn should be at offset 0x1894");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bRetakesHasDefuseKit) == 0x1898, "m_bRetakesHasDefuseKit in C_CSPlayerPawn should be at offset 0x1898");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bRetakesMVPLastRound) == 0x1899, "m_bRetakesMVPLastRound in C_CSPlayerPawn should be at offset 0x1899");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iRetakesMVPBoostItem) == 0x189C, "m_iRetakesMVPBoostItem in C_CSPlayerPawn should be at offset 0x189C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_RetakesMVPBoostExtraUtility) == 0x18A0, "m_RetakesMVPBoostExtraUtility in C_CSPlayerPawn should be at offset 0x18A0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bNeedToReApplyGloves) == 0x18A5, "m_bNeedToReApplyGloves in C_CSPlayerPawn should be at offset 0x18A5");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_EconGloves) == 0x18A8, "m_EconGloves in C_CSPlayerPawn should be at offset 0x18A8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nEconGlovesChanged) == 0x1D20, "m_nEconGlovesChanged in C_CSPlayerPawn should be at offset 0x1D20");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bMustSyncRagdollState) == 0x1D21, "m_bMustSyncRagdollState in C_CSPlayerPawn should be at offset 0x1D21");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nRagdollDamageBone) == 0x1D24, "m_nRagdollDamageBone in C_CSPlayerPawn should be at offset 0x1D24");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vRagdollDamageForce) == 0x1D28, "m_vRagdollDamageForce in C_CSPlayerPawn should be at offset 0x1D28");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vRagdollDamagePosition) == 0x1D34, "m_vRagdollDamagePosition in C_CSPlayerPawn should be at offset 0x1D34");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_szRagdollDamageWeaponName) == 0x1D40, "m_szRagdollDamageWeaponName in C_CSPlayerPawn should be at offset 0x1D40");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bRagdollDamageHeadshot) == 0x1D80, "m_bRagdollDamageHeadshot in C_CSPlayerPawn should be at offset 0x1D80");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vRagdollServerOrigin) == 0x1D84, "m_vRagdollServerOrigin in C_CSPlayerPawn should be at offset 0x1D84");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_lastLandTime) == 0x2400, "m_lastLandTime in C_CSPlayerPawn should be at offset 0x2400");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bOnGroundLastTick) == 0x2404, "m_bOnGroundLastTick in C_CSPlayerPawn should be at offset 0x2404");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_hHudModelArms) == 0x2420, "m_hHudModelArms in C_CSPlayerPawn should be at offset 0x2420");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_qDeathEyeAngles) == 0x2424, "m_qDeathEyeAngles in C_CSPlayerPawn should be at offset 0x2424");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bSkipOneHeadConstraintUpdate) == 0x2430, "m_bSkipOneHeadConstraintUpdate in C_CSPlayerPawn should be at offset 0x2430");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bLeftHanded) == 0x2431, "m_bLeftHanded in C_CSPlayerPawn should be at offset 0x2431");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fSwitchedHandednessTime) == 0x2434, "m_fSwitchedHandednessTime in C_CSPlayerPawn should be at offset 0x2434");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelOffsetX) == 0x2438, "m_flViewmodelOffsetX in C_CSPlayerPawn should be at offset 0x2438");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelOffsetY) == 0x243C, "m_flViewmodelOffsetY in C_CSPlayerPawn should be at offset 0x243C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelOffsetZ) == 0x2440, "m_flViewmodelOffsetZ in C_CSPlayerPawn should be at offset 0x2440");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flViewmodelFOV) == 0x2444, "m_flViewmodelFOV in C_CSPlayerPawn should be at offset 0x2444");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecPlayerPatchEconIndices) == 0x2448, "m_vecPlayerPatchEconIndices in C_CSPlayerPawn should be at offset 0x2448");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_GunGameImmunityColor) == 0x2480, "m_GunGameImmunityColor in C_CSPlayerPawn should be at offset 0x2480");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecBulletHitModels) == 0x24D0, "m_vecBulletHitModels in C_CSPlayerPawn should be at offset 0x24D0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsWalking) == 0x24E8, "m_bIsWalking in C_CSPlayerPawn should be at offset 0x24E8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_thirdPersonHeading) == 0x24F0, "m_thirdPersonHeading in C_CSPlayerPawn should be at offset 0x24F0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flSlopeDropOffset) == 0x2580, "m_flSlopeDropOffset in C_CSPlayerPawn should be at offset 0x2580");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flSlopeDropHeight) == 0x25F8, "m_flSlopeDropHeight in C_CSPlayerPawn should be at offset 0x25F8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vHeadConstraintOffset) == 0x2670, "m_vHeadConstraintOffset in C_CSPlayerPawn should be at offset 0x2670");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_entitySpottedState) == 0x2700, "m_entitySpottedState in C_CSPlayerPawn should be at offset 0x2700");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsScoped) == 0x2718, "m_bIsScoped in C_CSPlayerPawn should be at offset 0x2718");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bResumeZoom) == 0x2719, "m_bResumeZoom in C_CSPlayerPawn should be at offset 0x2719");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsDefusing) == 0x271A, "m_bIsDefusing in C_CSPlayerPawn should be at offset 0x271A");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bIsGrabbingHostage) == 0x271B, "m_bIsGrabbingHostage in C_CSPlayerPawn should be at offset 0x271B");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iBlockingUseActionInProgress) == 0x271C, "m_iBlockingUseActionInProgress in C_CSPlayerPawn should be at offset 0x271C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flEmitSoundTime) == 0x2720, "m_flEmitSoundTime in C_CSPlayerPawn should be at offset 0x2720");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bInNoDefuseArea) == 0x2724, "m_bInNoDefuseArea in C_CSPlayerPawn should be at offset 0x2724");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nWhichBombZone) == 0x2728, "m_nWhichBombZone in C_CSPlayerPawn should be at offset 0x2728");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iShotsFired) == 0x272C, "m_iShotsFired in C_CSPlayerPawn should be at offset 0x272C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flFlinchStack) == 0x2730, "m_flFlinchStack in C_CSPlayerPawn should be at offset 0x2730");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flVelocityModifier) == 0x2734, "m_flVelocityModifier in C_CSPlayerPawn should be at offset 0x2734");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flHitHeading) == 0x2738, "m_flHitHeading in C_CSPlayerPawn should be at offset 0x2738");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nHitBodyPart) == 0x273C, "m_nHitBodyPart in C_CSPlayerPawn should be at offset 0x273C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bWaitForNoAttack) == 0x2740, "m_bWaitForNoAttack in C_CSPlayerPawn should be at offset 0x2740");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_ignoreLadderJumpTime) == 0x2744, "m_ignoreLadderJumpTime in C_CSPlayerPawn should be at offset 0x2744");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bKilledByHeadshot) == 0x2749, "m_bKilledByHeadshot in C_CSPlayerPawn should be at offset 0x2749");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_ArmorValue) == 0x274C, "m_ArmorValue in C_CSPlayerPawn should be at offset 0x274C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unCurrentEquipmentValue) == 0x2750, "m_unCurrentEquipmentValue in C_CSPlayerPawn should be at offset 0x2750");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unRoundStartEquipmentValue) == 0x2752, "m_unRoundStartEquipmentValue in C_CSPlayerPawn should be at offset 0x2752");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_unFreezetimeEndEquipmentValue) == 0x2754, "m_unFreezetimeEndEquipmentValue in C_CSPlayerPawn should be at offset 0x2754");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nLastKillerIndex) == 0x2758, "m_nLastKillerIndex in C_CSPlayerPawn should be at offset 0x2758");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bOldIsScoped) == 0x275C, "m_bOldIsScoped in C_CSPlayerPawn should be at offset 0x275C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bHasDeathInfo) == 0x275D, "m_bHasDeathInfo in C_CSPlayerPawn should be at offset 0x275D");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_flDeathInfoTime) == 0x2760, "m_flDeathInfoTime in C_CSPlayerPawn should be at offset 0x2760");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecDeathInfoOrigin) == 0x2764, "m_vecDeathInfoOrigin in C_CSPlayerPawn should be at offset 0x2764");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_grenadeParameterStashTime) == 0x2774, "m_grenadeParameterStashTime in C_CSPlayerPawn should be at offset 0x2774");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bGrenadeParametersStashed) == 0x2778, "m_bGrenadeParametersStashed in C_CSPlayerPawn should be at offset 0x2778");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angStashedShootAngles) == 0x277C, "m_angStashedShootAngles in C_CSPlayerPawn should be at offset 0x277C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecStashedGrenadeThrowPosition) == 0x2788, "m_vecStashedGrenadeThrowPosition in C_CSPlayerPawn should be at offset 0x2788");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecStashedVelocity) == 0x2794, "m_vecStashedVelocity in C_CSPlayerPawn should be at offset 0x2794");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angShootAngleHistory) == 0x27A0, "m_angShootAngleHistory in C_CSPlayerPawn should be at offset 0x27A0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecThrowPositionHistory) == 0x27B8, "m_vecThrowPositionHistory in C_CSPlayerPawn should be at offset 0x27B8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecVelocityHistory) == 0x27D0, "m_vecVelocityHistory in C_CSPlayerPawn should be at offset 0x27D0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_PredictedDamageTags) == 0x27E8, "m_PredictedDamageTags in C_CSPlayerPawn should be at offset 0x27E8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPrevHighestReceivedDamageTagTick) == 0x2850, "m_nPrevHighestReceivedDamageTagTick in C_CSPlayerPawn should be at offset 0x2850");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nHighestAppliedDamageTagTick) == 0x2854, "m_nHighestAppliedDamageTagTick in C_CSPlayerPawn should be at offset 0x2854");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bShouldAutobuyDMWeapons) == 0x3D8C, "m_bShouldAutobuyDMWeapons in C_CSPlayerPawn should be at offset 0x3D8C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fImmuneToGunGameDamageTime) == 0x3D90, "m_fImmuneToGunGameDamageTime in C_CSPlayerPawn should be at offset 0x3D90");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bGunGameImmunity) == 0x3D94, "m_bGunGameImmunity in C_CSPlayerPawn should be at offset 0x3D94");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fImmuneToGunGameDamageTimeLast) == 0x3D98, "m_fImmuneToGunGameDamageTimeLast in C_CSPlayerPawn should be at offset 0x3D98");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fMolotovDamageTime) == 0x3D9C, "m_fMolotovDamageTime in C_CSPlayerPawn should be at offset 0x3D9C");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecLastAliveLocalVelocity) == 0x3DA4, "m_vecLastAliveLocalVelocity in C_CSPlayerPawn should be at offset 0x3DA4");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_fRenderingClipPlane) == 0x3DB0, "m_fRenderingClipPlane in C_CSPlayerPawn should be at offset 0x3DB0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nLastClipPlaneSetupFrame) == 0x3DC0, "m_nLastClipPlaneSetupFrame in C_CSPlayerPawn should be at offset 0x3DC0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecLastClipCameraPos) == 0x3DC4, "m_vecLastClipCameraPos in C_CSPlayerPawn should be at offset 0x3DC4");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_vecLastClipCameraForward) == 0x3DD0, "m_vecLastClipCameraForward in C_CSPlayerPawn should be at offset 0x3DD0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bClipHitStaticWorld) == 0x3DDC, "m_bClipHitStaticWorld in C_CSPlayerPawn should be at offset 0x3DDC");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_bCachedPlaneIsValid) == 0x3DDD, "m_bCachedPlaneIsValid in C_CSPlayerPawn should be at offset 0x3DDD");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pClippingWeapon) == 0x3DE0, "m_pClippingWeapon in C_CSPlayerPawn should be at offset 0x3DE0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_nPlayerInfernoBodyFx) == 0x3DE8, "m_nPlayerInfernoBodyFx in C_CSPlayerPawn should be at offset 0x3DE8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angEyeAngles) == 0x3DF0, "m_angEyeAngles in C_CSPlayerPawn should be at offset 0x3DF0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_arrOldEyeAnglesTimes) == 0x3E80, "m_arrOldEyeAnglesTimes in C_CSPlayerPawn should be at offset 0x3E80");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_arrOldEyeAngles) == 0x3E90, "m_arrOldEyeAngles in C_CSPlayerPawn should be at offset 0x3E90");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_angEyeAnglesVelocity) == 0x3EC0, "m_angEyeAnglesVelocity in C_CSPlayerPawn should be at offset 0x3EC0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iIDEntIndex) == 0x3ECC, "m_iIDEntIndex in C_CSPlayerPawn should be at offset 0x3ECC");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_delayTargetIDTimer) == 0x3ED0, "m_delayTargetIDTimer in C_CSPlayerPawn should be at offset 0x3ED0");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iTargetItemEntIdx) == 0x3EE8, "m_iTargetItemEntIdx in C_CSPlayerPawn should be at offset 0x3EE8");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iOldIDEntIndex) == 0x3EEC, "m_iOldIDEntIndex in C_CSPlayerPawn should be at offset 0x3EEC");
+		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_holdTargetIDTimer) == 0x3EF0, "m_holdTargetIDTimer in C_CSPlayerPawn should be at offset 0x3EF0");
+		static_assert(sizeof(CS2::client::C_CSPlayerPawn) == 0x3F10, "C_CSPlayerPawn size should be 0x3F10");
 	}
 }

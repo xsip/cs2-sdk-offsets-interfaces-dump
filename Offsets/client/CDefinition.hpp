@@ -8,12 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x28
+			// Class size: 0x20
 			namespace CDefinition /*: public CS2::animlib::CDefinition*/ {
-				constexpr std::ptrdiff_t m_nVerticalAngleNodeIdx = 0x18; // int16_t m_nVerticalAngleNodeIdx; |  0x18 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_nHorizontalAngleNodeIdx = 0x1a; // int16_t m_nHorizontalAngleNodeIdx; |  0x1a | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_nEnabledNodeIdx = 0x1c; // int16_t m_nEnabledNodeIdx; |  0x1c | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_flBlendTimeSeconds = 0x20; // float32 m_flBlendTimeSeconds; |  0x20 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nEnabledNodeIdx = 0x18; // int16_t m_nEnabledNodeIdx; |  0x18 | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_nLockLeftHandNodeIdx = 0x1a; // int16_t m_nLockLeftHandNodeIdx; |  0x1a | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_flBlendTimeSeconds = 0x1c; // float32 m_flBlendTimeSeconds; |  0x1c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

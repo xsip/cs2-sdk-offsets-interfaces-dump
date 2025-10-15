@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1C0
+			// Class size: 0x1D0
 			namespace CSpinUpdateBase /*: public CS2::particles::CParticleFunctionOperator*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace animlib {
-			// Class size: 0xA0
+			// Class size: 0xC0
 			namespace CNmSkeleton /**/ {
 				constexpr std::ptrdiff_t m_ID = 0x0; // GlobalTypes::CGlobalSymbol m_ID; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_boneIDs = 0x8; // GlobalTypes::CUtlLeanVector< GlobalTypes::CGlobalSymbol > m_boneIDs; |  Schema_Atomic | Size: 0x10
@@ -16,9 +16,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_parentSpaceReferencePose = 0x30; // GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_parentSpaceReferencePose; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_modelSpaceReferencePose = 0x48; // GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_modelSpaceReferencePose; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_numBonesToSampleAtLowLOD = 0x60; // int32_t m_numBonesToSampleAtLowLOD; |  0x60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_maskDefinitions = 0x68; // GlobalTypes::CUtlLeanVector< animlib::NmBoneMaskSetDefinition_t > m_maskDefinitions; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_secondarySkeletons = 0x88; // GlobalTypes::SecondarySkeleton_t > m_secondarySkeletons; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_bIsPropSkeleton = 0x98; // bool m_bIsPropSkeleton; |  0x98 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_maskDefinitions = 0x88; // GlobalTypes::CUtlLeanVector< animlib::NmBoneMaskSetDefinition_t > m_maskDefinitions; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_secondarySkeletons = 0xa8; // GlobalTypes::SecondarySkeleton_t > m_secondarySkeletons; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_bIsPropSkeleton = 0xb8; // bool m_bIsPropSkeleton; |  0xb8 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

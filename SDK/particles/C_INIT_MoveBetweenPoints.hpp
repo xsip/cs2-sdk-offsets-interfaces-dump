@@ -14,22 +14,22 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_MoveBetweenPoints : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleFloatInput m_flSpeedMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flSpeedMax; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flEndSpread; // 0x488 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flStartOffset; // 0x5e8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flEndOffset; // 0x748 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nEndControlPointNumber; // 0x8a8 | Schema_Builtin | Size: 0x4
-			bool m_bTrailBias; // 0x8ac | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleFloatInput m_flSpeedMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flSpeedMax; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flEndSpread; // 0x4b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flStartOffset; // 0x628 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flEndOffset; // 0x798 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nEndControlPointNumber; // 0x908 | Schema_Builtin | Size: 0x4
+			bool m_bTrailBias; // 0x90c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flSpeedMin) == 0x1C8, "m_flSpeedMin in C_INIT_MoveBetweenPoints should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flSpeedMax) == 0x328, "m_flSpeedMax in C_INIT_MoveBetweenPoints should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flEndSpread) == 0x488, "m_flEndSpread in C_INIT_MoveBetweenPoints should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flStartOffset) == 0x5E8, "m_flStartOffset in C_INIT_MoveBetweenPoints should be at offset 0x5E8");
-		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flEndOffset) == 0x748, "m_flEndOffset in C_INIT_MoveBetweenPoints should be at offset 0x748");
-		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_nEndControlPointNumber) == 0x8A8, "m_nEndControlPointNumber in C_INIT_MoveBetweenPoints should be at offset 0x8A8");
-		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_bTrailBias) == 0x8AC, "m_bTrailBias in C_INIT_MoveBetweenPoints should be at offset 0x8AC");
-		static_assert(sizeof(CS2::particles::C_INIT_MoveBetweenPoints) == 0x8B0, "C_INIT_MoveBetweenPoints size should be 0x8B0");
+		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flSpeedMin) == 0x1D8, "m_flSpeedMin in C_INIT_MoveBetweenPoints should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flSpeedMax) == 0x348, "m_flSpeedMax in C_INIT_MoveBetweenPoints should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flEndSpread) == 0x4B8, "m_flEndSpread in C_INIT_MoveBetweenPoints should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flStartOffset) == 0x628, "m_flStartOffset in C_INIT_MoveBetweenPoints should be at offset 0x628");
+		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flEndOffset) == 0x798, "m_flEndOffset in C_INIT_MoveBetweenPoints should be at offset 0x798");
+		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_nEndControlPointNumber) == 0x908, "m_nEndControlPointNumber in C_INIT_MoveBetweenPoints should be at offset 0x908");
+		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_bTrailBias) == 0x90C, "m_bTrailBias in C_INIT_MoveBetweenPoints should be at offset 0x90C");
+		static_assert(sizeof(CS2::particles::C_INIT_MoveBetweenPoints) == 0x910, "C_INIT_MoveBetweenPoints size should be 0x910");
 	}
 }

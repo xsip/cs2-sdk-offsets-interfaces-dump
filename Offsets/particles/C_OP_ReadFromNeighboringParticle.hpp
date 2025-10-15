@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x490
+			// Class size: 0x4C0
 			namespace C_OP_ReadFromNeighboringParticle /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldInput = 0x1c0; // particles::ParticleAttributeIndex_t m_nFieldInput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c4; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nIncrement = 0x1c8; // int32_t m_nIncrement; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_DistanceCheck = 0x1d0; // particleslib::CPerParticleFloatInput m_DistanceCheck; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flInterpolation = 0x330; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_nFieldInput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldInput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d4; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nIncrement = 0x1d8; // int32_t m_nIncrement; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_DistanceCheck = 0x1e0; // particleslib::CPerParticleFloatInput m_DistanceCheck; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInterpolation = 0x350; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

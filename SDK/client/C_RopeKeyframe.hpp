@@ -16,92 +16,92 @@ namespace CS2 {
 		class C_RopeKeyframe : public CS2::client::C_BaseModelEntity {
 		public:
 			S2_PAD(0x8);
-			// GlobalTypes::CBitVec< 10 > m_LinksTouchingSomething; // 0xed0 | Schema_Atomic | Size: 0x4
-			char  m_LinksTouchingSomething[0x4]; // 0xed0 | Schema_Atomic | Size: 0x4
-			int32_t m_nLinksTouchingSomething; // 0xed4 | Schema_Builtin | Size: 0x4
-			bool m_bApplyWind; // 0xed8 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CBitVec< 10 > m_LinksTouchingSomething; // 0xeb8 | Schema_Atomic | Size: 0x4
+			char  m_LinksTouchingSomething[0x4]; // 0xeb8 | Schema_Atomic | Size: 0x4
+			int32_t m_nLinksTouchingSomething; // 0xebc | Schema_Builtin | Size: 0x4
+			bool m_bApplyWind; // 0xec0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_fPrevLockedPoints; // 0xedc | Schema_Builtin | Size: 0x4
-			int32_t m_iForcePointMoveCounter; // 0xee0 | Schema_Builtin | Size: 0x4
-			bool m_bPrevEndPointPos[2]; // 0xee4 | Schema_FixedArray | Size: 0x2
+			int32_t m_fPrevLockedPoints; // 0xec4 | Schema_Builtin | Size: 0x4
+			int32_t m_iForcePointMoveCounter; // 0xec8 | Schema_Builtin | Size: 0x4
+			bool m_bPrevEndPointPos[2]; // 0xecc | Schema_FixedArray | Size: 0x2
 			S2_PAD(0x2);
-			GlobalTypes::Vector m_vPrevEndPointPos[2]; // 0xee8 | Schema_FixedArray | Size: 0x18
-			float32 m_flCurScroll; // 0xf00 | Schema_Builtin | Size: 0x4
-			float32 m_flScrollSpeed; // 0xf04 | Schema_Builtin | Size: 0x4
-			uint16_t m_RopeFlags; // 0xf08 | Schema_Builtin | Size: 0x2
+			GlobalTypes::Vector m_vPrevEndPointPos[2]; // 0xed0 | Schema_FixedArray | Size: 0x18
+			float32 m_flCurScroll; // 0xee8 | Schema_Builtin | Size: 0x4
+			float32 m_flScrollSpeed; // 0xeec | Schema_Builtin | Size: 0x4
+			uint16_t m_RopeFlags; // 0xef0 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0xf10 | Schema_Atomic | Size: 0x8
-			char  m_iRopeMaterialModelIndex[0x8]; // 0xf10 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0xef8 | Schema_Atomic | Size: 0x8
+			char  m_iRopeMaterialModelIndex[0x8]; // 0xef8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x270);
-			uint8_t m_nSegments; // 0x1188 | Schema_Builtin | Size: 0x1
+			uint8_t m_nSegments; // 0x1170 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// client::CHandle< client::C_BaseEntity > m_hStartPoint; // 0x118c | Schema_Atomic | Size: 0x4
-			char  m_hStartPoint[0x4]; // 0x118c | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEndPoint; // 0x1190 | Schema_Atomic | Size: 0x4
-			char  m_hEndPoint[0x4]; // 0x1190 | Schema_Atomic | Size: 0x4
-			modellib::AttachmentHandle_t m_iStartAttachment; // 0x1194 | Schema_DeclaredClass | Size: 0x1
-			modellib::AttachmentHandle_t m_iEndAttachment; // 0x1195 | Schema_DeclaredClass | Size: 0x1
-			uint8_t m_Subdiv; // 0x1196 | Schema_Builtin | Size: 0x1
+			// client::CHandle< client::C_BaseEntity > m_hStartPoint; // 0x1174 | Schema_Atomic | Size: 0x4
+			char  m_hStartPoint[0x4]; // 0x1174 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hEndPoint; // 0x1178 | Schema_Atomic | Size: 0x4
+			char  m_hEndPoint[0x4]; // 0x1178 | Schema_Atomic | Size: 0x4
+			modellib::AttachmentHandle_t m_iStartAttachment; // 0x117c | Schema_DeclaredClass | Size: 0x1
+			modellib::AttachmentHandle_t m_iEndAttachment; // 0x117d | Schema_DeclaredClass | Size: 0x1
+			uint8_t m_Subdiv; // 0x117e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			int16_t m_RopeLength; // 0x1198 | Schema_Builtin | Size: 0x2
-			int16_t m_Slack; // 0x119a | Schema_Builtin | Size: 0x2
-			float32 m_TextureScale; // 0x119c | Schema_Builtin | Size: 0x4
-			uint8_t m_fLockedPoints; // 0x11a0 | Schema_Builtin | Size: 0x1
-			uint8_t m_nChangeCount; // 0x11a1 | Schema_Builtin | Size: 0x1
+			int16_t m_RopeLength; // 0x1180 | Schema_Builtin | Size: 0x2
+			int16_t m_Slack; // 0x1182 | Schema_Builtin | Size: 0x2
+			float32 m_TextureScale; // 0x1184 | Schema_Builtin | Size: 0x4
+			uint8_t m_fLockedPoints; // 0x1188 | Schema_Builtin | Size: 0x1
+			uint8_t m_nChangeCount; // 0x1189 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_Width; // 0x11a4 | Schema_Builtin | Size: 0x4
-			client::CPhysicsDelegate m_PhysicsDelegate; // 0x11a8 | Schema_DeclaredClass | Size: 0x10
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x11b8 | Schema_Atomic | Size: 0x8
-			char  m_hMaterial[0x8]; // 0x11b8 | Schema_Atomic | Size: 0x8
-			int32_t m_TextureHeight; // 0x11c0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecImpulse; // 0x11c4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecPreviousImpulse; // 0x11d0 | Schema_Atomic | Size: 0xc
-			float32 m_flCurrentGustTimer; // 0x11dc | Schema_Builtin | Size: 0x4
-			float32 m_flCurrentGustLifetime; // 0x11e0 | Schema_Builtin | Size: 0x4
-			float32 m_flTimeToNextGust; // 0x11e4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vWindDir; // 0x11e8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vColorMod; // 0x11f4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vCachedEndPointAttachmentPos[2]; // 0x1200 | Schema_FixedArray | Size: 0x18
-			GlobalTypes::QAngle m_vCachedEndPointAttachmentAngle[2]; // 0x1218 | Schema_FixedArray | Size: 0x18
-			bool m_bConstrainBetweenEndpoints; // 0x1230 | Schema_Builtin | Size: 0x1
+			float32 m_Width; // 0x118c | Schema_Builtin | Size: 0x4
+			client::CPhysicsDelegate m_PhysicsDelegate; // 0x1190 | Schema_DeclaredClass | Size: 0x10
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x11a0 | Schema_Atomic | Size: 0x8
+			char  m_hMaterial[0x8]; // 0x11a0 | Schema_Atomic | Size: 0x8
+			int32_t m_TextureHeight; // 0x11a8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecImpulse; // 0x11ac | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecPreviousImpulse; // 0x11b8 | Schema_Atomic | Size: 0xc
+			float32 m_flCurrentGustTimer; // 0x11c4 | Schema_Builtin | Size: 0x4
+			float32 m_flCurrentGustLifetime; // 0x11c8 | Schema_Builtin | Size: 0x4
+			float32 m_flTimeToNextGust; // 0x11cc | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vWindDir; // 0x11d0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vColorMod; // 0x11dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vCachedEndPointAttachmentPos[2]; // 0x11e8 | Schema_FixedArray | Size: 0x18
+			GlobalTypes::QAngle m_vCachedEndPointAttachmentAngle[2]; // 0x1200 | Schema_FixedArray | Size: 0x18
+			bool m_bConstrainBetweenEndpoints; // 0x1218 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_LinksTouchingSomething) == 0xED0, "m_LinksTouchingSomething in C_RopeKeyframe should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_nLinksTouchingSomething) == 0xED4, "m_nLinksTouchingSomething in C_RopeKeyframe should be at offset 0xED4");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bApplyWind) == 0xED8, "m_bApplyWind in C_RopeKeyframe should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_fPrevLockedPoints) == 0xEDC, "m_fPrevLockedPoints in C_RopeKeyframe should be at offset 0xEDC");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iForcePointMoveCounter) == 0xEE0, "m_iForcePointMoveCounter in C_RopeKeyframe should be at offset 0xEE0");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bPrevEndPointPos) == 0xEE4, "m_bPrevEndPointPos in C_RopeKeyframe should be at offset 0xEE4");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vPrevEndPointPos) == 0xEE8, "m_vPrevEndPointPos in C_RopeKeyframe should be at offset 0xEE8");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flCurScroll) == 0xF00, "m_flCurScroll in C_RopeKeyframe should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flScrollSpeed) == 0xF04, "m_flScrollSpeed in C_RopeKeyframe should be at offset 0xF04");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_RopeFlags) == 0xF08, "m_RopeFlags in C_RopeKeyframe should be at offset 0xF08");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iRopeMaterialModelIndex) == 0xF10, "m_iRopeMaterialModelIndex in C_RopeKeyframe should be at offset 0xF10");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_nSegments) == 0x1188, "m_nSegments in C_RopeKeyframe should be at offset 0x1188");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_hStartPoint) == 0x118C, "m_hStartPoint in C_RopeKeyframe should be at offset 0x118C");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_hEndPoint) == 0x1190, "m_hEndPoint in C_RopeKeyframe should be at offset 0x1190");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iStartAttachment) == 0x1194, "m_iStartAttachment in C_RopeKeyframe should be at offset 0x1194");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iEndAttachment) == 0x1195, "m_iEndAttachment in C_RopeKeyframe should be at offset 0x1195");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_Subdiv) == 0x1196, "m_Subdiv in C_RopeKeyframe should be at offset 0x1196");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_RopeLength) == 0x1198, "m_RopeLength in C_RopeKeyframe should be at offset 0x1198");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_Slack) == 0x119A, "m_Slack in C_RopeKeyframe should be at offset 0x119A");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_TextureScale) == 0x119C, "m_TextureScale in C_RopeKeyframe should be at offset 0x119C");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_fLockedPoints) == 0x11A0, "m_fLockedPoints in C_RopeKeyframe should be at offset 0x11A0");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_nChangeCount) == 0x11A1, "m_nChangeCount in C_RopeKeyframe should be at offset 0x11A1");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_Width) == 0x11A4, "m_Width in C_RopeKeyframe should be at offset 0x11A4");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_PhysicsDelegate) == 0x11A8, "m_PhysicsDelegate in C_RopeKeyframe should be at offset 0x11A8");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_hMaterial) == 0x11B8, "m_hMaterial in C_RopeKeyframe should be at offset 0x11B8");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_TextureHeight) == 0x11C0, "m_TextureHeight in C_RopeKeyframe should be at offset 0x11C0");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vecImpulse) == 0x11C4, "m_vecImpulse in C_RopeKeyframe should be at offset 0x11C4");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vecPreviousImpulse) == 0x11D0, "m_vecPreviousImpulse in C_RopeKeyframe should be at offset 0x11D0");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flCurrentGustTimer) == 0x11DC, "m_flCurrentGustTimer in C_RopeKeyframe should be at offset 0x11DC");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flCurrentGustLifetime) == 0x11E0, "m_flCurrentGustLifetime in C_RopeKeyframe should be at offset 0x11E0");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flTimeToNextGust) == 0x11E4, "m_flTimeToNextGust in C_RopeKeyframe should be at offset 0x11E4");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vWindDir) == 0x11E8, "m_vWindDir in C_RopeKeyframe should be at offset 0x11E8");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vColorMod) == 0x11F4, "m_vColorMod in C_RopeKeyframe should be at offset 0x11F4");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vCachedEndPointAttachmentPos) == 0x1200, "m_vCachedEndPointAttachmentPos in C_RopeKeyframe should be at offset 0x1200");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vCachedEndPointAttachmentAngle) == 0x1218, "m_vCachedEndPointAttachmentAngle in C_RopeKeyframe should be at offset 0x1218");
-		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bConstrainBetweenEndpoints) == 0x1230, "m_bConstrainBetweenEndpoints in C_RopeKeyframe should be at offset 0x1230");
-		static_assert(sizeof(CS2::client::C_RopeKeyframe) == 0x1238, "C_RopeKeyframe size should be 0x1238");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_LinksTouchingSomething) == 0xEB8, "m_LinksTouchingSomething in C_RopeKeyframe should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_nLinksTouchingSomething) == 0xEBC, "m_nLinksTouchingSomething in C_RopeKeyframe should be at offset 0xEBC");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bApplyWind) == 0xEC0, "m_bApplyWind in C_RopeKeyframe should be at offset 0xEC0");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_fPrevLockedPoints) == 0xEC4, "m_fPrevLockedPoints in C_RopeKeyframe should be at offset 0xEC4");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iForcePointMoveCounter) == 0xEC8, "m_iForcePointMoveCounter in C_RopeKeyframe should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bPrevEndPointPos) == 0xECC, "m_bPrevEndPointPos in C_RopeKeyframe should be at offset 0xECC");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vPrevEndPointPos) == 0xED0, "m_vPrevEndPointPos in C_RopeKeyframe should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flCurScroll) == 0xEE8, "m_flCurScroll in C_RopeKeyframe should be at offset 0xEE8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flScrollSpeed) == 0xEEC, "m_flScrollSpeed in C_RopeKeyframe should be at offset 0xEEC");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_RopeFlags) == 0xEF0, "m_RopeFlags in C_RopeKeyframe should be at offset 0xEF0");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iRopeMaterialModelIndex) == 0xEF8, "m_iRopeMaterialModelIndex in C_RopeKeyframe should be at offset 0xEF8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_nSegments) == 0x1170, "m_nSegments in C_RopeKeyframe should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_hStartPoint) == 0x1174, "m_hStartPoint in C_RopeKeyframe should be at offset 0x1174");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_hEndPoint) == 0x1178, "m_hEndPoint in C_RopeKeyframe should be at offset 0x1178");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iStartAttachment) == 0x117C, "m_iStartAttachment in C_RopeKeyframe should be at offset 0x117C");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_iEndAttachment) == 0x117D, "m_iEndAttachment in C_RopeKeyframe should be at offset 0x117D");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_Subdiv) == 0x117E, "m_Subdiv in C_RopeKeyframe should be at offset 0x117E");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_RopeLength) == 0x1180, "m_RopeLength in C_RopeKeyframe should be at offset 0x1180");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_Slack) == 0x1182, "m_Slack in C_RopeKeyframe should be at offset 0x1182");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_TextureScale) == 0x1184, "m_TextureScale in C_RopeKeyframe should be at offset 0x1184");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_fLockedPoints) == 0x1188, "m_fLockedPoints in C_RopeKeyframe should be at offset 0x1188");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_nChangeCount) == 0x1189, "m_nChangeCount in C_RopeKeyframe should be at offset 0x1189");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_Width) == 0x118C, "m_Width in C_RopeKeyframe should be at offset 0x118C");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_PhysicsDelegate) == 0x1190, "m_PhysicsDelegate in C_RopeKeyframe should be at offset 0x1190");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_hMaterial) == 0x11A0, "m_hMaterial in C_RopeKeyframe should be at offset 0x11A0");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_TextureHeight) == 0x11A8, "m_TextureHeight in C_RopeKeyframe should be at offset 0x11A8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vecImpulse) == 0x11AC, "m_vecImpulse in C_RopeKeyframe should be at offset 0x11AC");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vecPreviousImpulse) == 0x11B8, "m_vecPreviousImpulse in C_RopeKeyframe should be at offset 0x11B8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flCurrentGustTimer) == 0x11C4, "m_flCurrentGustTimer in C_RopeKeyframe should be at offset 0x11C4");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flCurrentGustLifetime) == 0x11C8, "m_flCurrentGustLifetime in C_RopeKeyframe should be at offset 0x11C8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_flTimeToNextGust) == 0x11CC, "m_flTimeToNextGust in C_RopeKeyframe should be at offset 0x11CC");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vWindDir) == 0x11D0, "m_vWindDir in C_RopeKeyframe should be at offset 0x11D0");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vColorMod) == 0x11DC, "m_vColorMod in C_RopeKeyframe should be at offset 0x11DC");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vCachedEndPointAttachmentPos) == 0x11E8, "m_vCachedEndPointAttachmentPos in C_RopeKeyframe should be at offset 0x11E8");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vCachedEndPointAttachmentAngle) == 0x1200, "m_vCachedEndPointAttachmentAngle in C_RopeKeyframe should be at offset 0x1200");
+		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bConstrainBetweenEndpoints) == 0x1218, "m_bConstrainBetweenEndpoints in C_RopeKeyframe should be at offset 0x1218");
+		static_assert(sizeof(CS2::client::C_RopeKeyframe) == 0x1220, "C_RopeKeyframe size should be 0x1220");
 	}
 }

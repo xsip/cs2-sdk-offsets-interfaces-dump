@@ -14,27 +14,27 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderTreeShake : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			float32 m_flPeakStrength; // 0x210 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; // 0x214 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flRadius; // 0x218 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nRadiusFieldOverride; // 0x21c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flShakeDuration; // 0x220 | Schema_Builtin | Size: 0x4
-			float32 m_flTransitionTime; // 0x224 | Schema_Builtin | Size: 0x4
-			float32 m_flTwistAmount; // 0x228 | Schema_Builtin | Size: 0x4
-			float32 m_flRadialAmount; // 0x22c | Schema_Builtin | Size: 0x4
-			float32 m_flControlPointOrientationAmount; // 0x230 | Schema_Builtin | Size: 0x4
-			int32_t m_nControlPointForLinearDirection; // 0x234 | Schema_Builtin | Size: 0x4
+			float32 m_flPeakStrength; // 0x220 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; // 0x224 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flRadius; // 0x228 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nRadiusFieldOverride; // 0x22c | Schema_DeclaredClass | Size: 0x4
+			float32 m_flShakeDuration; // 0x230 | Schema_Builtin | Size: 0x4
+			float32 m_flTransitionTime; // 0x234 | Schema_Builtin | Size: 0x4
+			float32 m_flTwistAmount; // 0x238 | Schema_Builtin | Size: 0x4
+			float32 m_flRadialAmount; // 0x23c | Schema_Builtin | Size: 0x4
+			float32 m_flControlPointOrientationAmount; // 0x240 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointForLinearDirection; // 0x244 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flPeakStrength) == 0x210, "m_flPeakStrength in C_OP_RenderTreeShake should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_nPeakStrengthFieldOverride) == 0x214, "m_nPeakStrengthFieldOverride in C_OP_RenderTreeShake should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flRadius) == 0x218, "m_flRadius in C_OP_RenderTreeShake should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_nRadiusFieldOverride) == 0x21C, "m_nRadiusFieldOverride in C_OP_RenderTreeShake should be at offset 0x21C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flShakeDuration) == 0x220, "m_flShakeDuration in C_OP_RenderTreeShake should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flTransitionTime) == 0x224, "m_flTransitionTime in C_OP_RenderTreeShake should be at offset 0x224");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flTwistAmount) == 0x228, "m_flTwistAmount in C_OP_RenderTreeShake should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flRadialAmount) == 0x22C, "m_flRadialAmount in C_OP_RenderTreeShake should be at offset 0x22C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flControlPointOrientationAmount) == 0x230, "m_flControlPointOrientationAmount in C_OP_RenderTreeShake should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_nControlPointForLinearDirection) == 0x234, "m_nControlPointForLinearDirection in C_OP_RenderTreeShake should be at offset 0x234");
-		static_assert(sizeof(CS2::particles::C_OP_RenderTreeShake) == 0x238, "C_OP_RenderTreeShake size should be 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flPeakStrength) == 0x220, "m_flPeakStrength in C_OP_RenderTreeShake should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_nPeakStrengthFieldOverride) == 0x224, "m_nPeakStrengthFieldOverride in C_OP_RenderTreeShake should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flRadius) == 0x228, "m_flRadius in C_OP_RenderTreeShake should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_nRadiusFieldOverride) == 0x22C, "m_nRadiusFieldOverride in C_OP_RenderTreeShake should be at offset 0x22C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flShakeDuration) == 0x230, "m_flShakeDuration in C_OP_RenderTreeShake should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flTransitionTime) == 0x234, "m_flTransitionTime in C_OP_RenderTreeShake should be at offset 0x234");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flTwistAmount) == 0x238, "m_flTwistAmount in C_OP_RenderTreeShake should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flRadialAmount) == 0x23C, "m_flRadialAmount in C_OP_RenderTreeShake should be at offset 0x23C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_flControlPointOrientationAmount) == 0x240, "m_flControlPointOrientationAmount in C_OP_RenderTreeShake should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTreeShake, m_nControlPointForLinearDirection) == 0x244, "m_nControlPointForLinearDirection in C_OP_RenderTreeShake should be at offset 0x244");
+		static_assert(sizeof(CS2::particles::C_OP_RenderTreeShake) == 0x248, "C_OP_RenderTreeShake size should be 0x248");
 	}
 }

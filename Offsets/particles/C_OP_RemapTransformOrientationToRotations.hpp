@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x238
+			// Class size: 0x248
 			namespace C_OP_RemapTransformOrientationToRotations /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_TransformInput = 0x1c0; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_vecRotation = 0x228; // GlobalTypes::Vector m_vecRotation; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bUseQuat = 0x234; // bool m_bUseQuat; |  0x234 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bWriteNormal = 0x235; // bool m_bWriteNormal; |  0x235 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_TransformInput = 0x1d0; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_vecRotation = 0x238; // GlobalTypes::Vector m_vecRotation; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bUseQuat = 0x244; // bool m_bUseQuat; |  0x244 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bWriteNormal = 0x245; // bool m_bWriteNormal; |  0x245 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

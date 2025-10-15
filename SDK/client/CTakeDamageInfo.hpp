@@ -18,8 +18,8 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			GlobalTypes::Vector m_vecDamageForce; // 0x8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecDamagePosition; // 0x14 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecReportedPosition; // 0x20 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecDamagePosition; // 0x14 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecReportedPosition; // 0x20 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecDamageDirection; // 0x2c | Schema_Atomic | Size: 0xc
 			// client::CHandle< client::C_BaseEntity > m_hInflictor; // 0x38 | Schema_Atomic | Size: 0x4
 			char  m_hInflictor[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
@@ -42,9 +42,11 @@ namespace CS2 {
 			client::HitGroup_t m_iHitGroupId; // 0x80 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nNumObjectsPenetrated; // 0x84 | Schema_Builtin | Size: 0x4
 			float32 m_flFriendlyFireDamageReductionRatio; // 0x88 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x78);
-			bool m_bInTakeDamageFlow; // 0x104 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xb); // End padding
+			S2_PAD(0x7c);
+			// GlobalTypes::CUtlVector< client::DestructibleHitGroupToDestroy_t > m_nDestructibleHitGroupsToForceDestroy; // 0x108 | Schema_Atomic | Size: 0x18
+			char  m_nDestructibleHitGroupsToForceDestroy[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
+			bool m_bInTakeDamageFlow; // 0x120 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x7); // End padding
 		};
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_vecDamageForce) == 0x8, "m_vecDamageForce in CTakeDamageInfo should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_vecDamagePosition) == 0x14, "m_vecDamagePosition in CTakeDamageInfo should be at offset 0x14");
@@ -66,7 +68,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_iHitGroupId) == 0x80, "m_iHitGroupId in CTakeDamageInfo should be at offset 0x80");
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_nNumObjectsPenetrated) == 0x84, "m_nNumObjectsPenetrated in CTakeDamageInfo should be at offset 0x84");
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_flFriendlyFireDamageReductionRatio) == 0x88, "m_flFriendlyFireDamageReductionRatio in CTakeDamageInfo should be at offset 0x88");
-		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_bInTakeDamageFlow) == 0x104, "m_bInTakeDamageFlow in CTakeDamageInfo should be at offset 0x104");
-		static_assert(sizeof(CS2::client::CTakeDamageInfo) == 0x110, "CTakeDamageInfo size should be 0x110");
+		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_nDestructibleHitGroupsToForceDestroy) == 0x108, "m_nDestructibleHitGroupsToForceDestroy in CTakeDamageInfo should be at offset 0x108");
+		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_bInTakeDamageFlow) == 0x120, "m_bInTakeDamageFlow in CTakeDamageInfo should be at offset 0x120");
+		static_assert(sizeof(CS2::client::CTakeDamageInfo) == 0x128, "CTakeDamageInfo size should be 0x128");
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iDefaultClip2 = 0x3f4; // int32_t m_iDefaultClip2; |  0x3f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bReserveAmmoAsClips = 0x3f8; // bool m_bReserveAmmoAsClips; |  0x3f8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTreatAsSingleClip = 0x3f9; // bool m_bTreatAsSingleClip; |  0x3f9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bKeepLoadedAmmo = 0x3fa; // bool m_bKeepLoadedAmmo; |  0x3fa | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iWeight = 0x3fc; // int32_t m_iWeight; |  0x3fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAutoSwitchTo = 0x400; // bool m_bAutoSwitchTo; |  0x400 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAutoSwitchFrom = 0x401; // bool m_bAutoSwitchFrom; |  0x401 | Schema_Builtin | Size: 0x1

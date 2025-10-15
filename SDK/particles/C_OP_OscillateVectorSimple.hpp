@@ -14,20 +14,20 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_OscillateVectorSimple : public CS2::particles::CParticleFunctionOperator {
 		public:
-			GlobalTypes::Vector m_Rate; // 0x1c0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_Frequency; // 0x1cc | Schema_Atomic | Size: 0xc
-			particles::ParticleAttributeIndex_t m_nField; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flOscMult; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flOscAdd; // 0x1e0 | Schema_Builtin | Size: 0x4
-			bool m_bOffset; // 0x1e4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_Rate; // 0x1d0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_Frequency; // 0x1dc | Schema_Atomic | Size: 0xc
+			particles::ParticleAttributeIndex_t m_nField; // 0x1e8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flOscMult; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flOscAdd; // 0x1f0 | Schema_Builtin | Size: 0x4
+			bool m_bOffset; // 0x1f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_Rate) == 0x1C0, "m_Rate in C_OP_OscillateVectorSimple should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_Frequency) == 0x1CC, "m_Frequency in C_OP_OscillateVectorSimple should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_nField) == 0x1D8, "m_nField in C_OP_OscillateVectorSimple should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_flOscMult) == 0x1DC, "m_flOscMult in C_OP_OscillateVectorSimple should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_flOscAdd) == 0x1E0, "m_flOscAdd in C_OP_OscillateVectorSimple should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_bOffset) == 0x1E4, "m_bOffset in C_OP_OscillateVectorSimple should be at offset 0x1E4");
-		static_assert(sizeof(CS2::particles::C_OP_OscillateVectorSimple) == 0x1E8, "C_OP_OscillateVectorSimple size should be 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_Rate) == 0x1D0, "m_Rate in C_OP_OscillateVectorSimple should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_Frequency) == 0x1DC, "m_Frequency in C_OP_OscillateVectorSimple should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_nField) == 0x1E8, "m_nField in C_OP_OscillateVectorSimple should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_flOscMult) == 0x1EC, "m_flOscMult in C_OP_OscillateVectorSimple should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_flOscAdd) == 0x1F0, "m_flOscAdd in C_OP_OscillateVectorSimple should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_bOffset) == 0x1F4, "m_bOffset in C_OP_OscillateVectorSimple should be at offset 0x1F4");
+		static_assert(sizeof(CS2::particles::C_OP_OscillateVectorSimple) == 0x1F8, "C_OP_OscillateVectorSimple size should be 0x1F8");
 	}
 }

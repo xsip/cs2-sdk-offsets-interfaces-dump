@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InheritVelocity : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flVelocityScale; // 0x1cc | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flVelocityScale; // 0x1dc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_InheritVelocity, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_InheritVelocity should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_InheritVelocity, m_flVelocityScale) == 0x1CC, "m_flVelocityScale in C_INIT_InheritVelocity should be at offset 0x1CC");
-		static_assert(sizeof(CS2::particles::C_INIT_InheritVelocity) == 0x1D0, "C_INIT_InheritVelocity size should be 0x1D0");
+		static_assert(offsetof(CS2::particles::C_INIT_InheritVelocity, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_InheritVelocity should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_InheritVelocity, m_flVelocityScale) == 0x1DC, "m_flVelocityScale in C_INIT_InheritVelocity should be at offset 0x1DC");
+		static_assert(sizeof(CS2::particles::C_INIT_InheritVelocity) == 0x1E0, "C_INIT_InheritVelocity size should be 0x1E0");
 	}
 }

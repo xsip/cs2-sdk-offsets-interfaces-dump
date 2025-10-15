@@ -14,11 +14,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CollideWithSelf : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flMinimumSpeed; // 0x320 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flMinimumSpeed; // 0x340 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_CollideWithSelf, m_flRadiusScale) == 0x1C0, "m_flRadiusScale in C_OP_CollideWithSelf should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_CollideWithSelf, m_flMinimumSpeed) == 0x320, "m_flMinimumSpeed in C_OP_CollideWithSelf should be at offset 0x320");
-		static_assert(sizeof(CS2::particles::C_OP_CollideWithSelf) == 0x480, "C_OP_CollideWithSelf size should be 0x480");
+		static_assert(offsetof(CS2::particles::C_OP_CollideWithSelf, m_flRadiusScale) == 0x1D0, "m_flRadiusScale in C_OP_CollideWithSelf should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_CollideWithSelf, m_flMinimumSpeed) == 0x340, "m_flMinimumSpeed in C_OP_CollideWithSelf should be at offset 0x340");
+		static_assert(sizeof(CS2::particles::C_OP_CollideWithSelf) == 0x4B0, "C_OP_CollideWithSelf size should be 0x4B0");
 	}
 }

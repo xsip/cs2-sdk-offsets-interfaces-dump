@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_CSGO_EndOfMatchCharacterPosition : public CS2::client::C_CSGO_TeamPreviewCharacterPosition {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_CSGO_EndOfMatchCharacterPosition) == 0x13B8, "C_CSGO_EndOfMatchCharacterPosition size should be 0x13B8");
+		static_assert(sizeof(CS2::client::C_CSGO_EndOfMatchCharacterPosition) == 0x13B0, "C_CSGO_EndOfMatchCharacterPosition size should be 0x13B0");
 	}
 }

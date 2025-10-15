@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xF00
+			// Class size: 0xEE8
 			namespace C_TextureBasedAnimatable /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_bLoop = 0xec8; // bool m_bLoop; |  0xec8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flFPS = 0xecc; // float32 m_flFPS; |  0xecc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hPositionKeys = 0xed0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hPositionKeys; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hRotationKeys = 0xed8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hRotationKeys; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vAnimationBoundsMin = 0xee0; // GlobalTypes::Vector m_vAnimationBoundsMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vAnimationBoundsMax = 0xeec; // GlobalTypes::Vector m_vAnimationBoundsMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flStartTime = 0xef8; // float32 m_flStartTime; |  0xef8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartFrame = 0xefc; // float32 m_flStartFrame; |  0xefc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bLoop = 0xeb0; // bool m_bLoop; |  0xeb0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFPS = 0xeb4; // float32 m_flFPS; |  0xeb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hPositionKeys = 0xeb8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hPositionKeys; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hRotationKeys = 0xec0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hRotationKeys; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vAnimationBoundsMin = 0xec8; // GlobalTypes::Vector m_vAnimationBoundsMin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vAnimationBoundsMax = 0xed4; // GlobalTypes::Vector m_vAnimationBoundsMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flStartTime = 0xee0; // float32 m_flStartTime; |  0xee0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartFrame = 0xee4; // float32 m_flStartFrame; |  0xee4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

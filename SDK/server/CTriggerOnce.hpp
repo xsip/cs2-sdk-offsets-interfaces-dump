@@ -14,6 +14,6 @@ namespace CS2 {
 		class CTriggerOnce : public CS2::server::CTriggerMultiple {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CTriggerOnce) == 0x9E8, "CTriggerOnce size should be 0x9E8");
+		static_assert(sizeof(CS2::server::CTriggerOnce) == 0x9D0, "CTriggerOnce size should be 0x9D0");
 	}
 }

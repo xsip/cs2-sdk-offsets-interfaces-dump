@@ -17,17 +17,17 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CheckParticleForWater : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleFloatInput m_flRadius; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x328 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flRadius; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x348 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x330 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x490 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x350 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x4c0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_flRadius) == 0x1C8, "m_flRadius in C_INIT_CheckParticleForWater should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_nFieldOutput) == 0x328, "m_nFieldOutput in C_INIT_CheckParticleForWater should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_flOutputRemap) == 0x330, "m_flOutputRemap in C_INIT_CheckParticleForWater should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_nSetMethod) == 0x490, "m_nSetMethod in C_INIT_CheckParticleForWater should be at offset 0x490");
-		static_assert(sizeof(CS2::particles::C_INIT_CheckParticleForWater) == 0x498, "C_INIT_CheckParticleForWater size should be 0x498");
+		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_flRadius) == 0x1D8, "m_flRadius in C_INIT_CheckParticleForWater should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_nFieldOutput) == 0x348, "m_nFieldOutput in C_INIT_CheckParticleForWater should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_flOutputRemap) == 0x350, "m_flOutputRemap in C_INIT_CheckParticleForWater should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_nSetMethod) == 0x4C0, "m_nSetMethod in C_INIT_CheckParticleForWater should be at offset 0x4C0");
+		static_assert(sizeof(CS2::particles::C_INIT_CheckParticleForWater) == 0x4C8, "C_INIT_CheckParticleForWater size should be 0x4C8");
 	}
 }

@@ -13,25 +13,25 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderStatusEffectCitadel : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureColorWarp; // 0x210 | Schema_Atomic | Size: 0x8
-			char  m_pTextureColorWarp[0x8]; // 0x210 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureNormal; // 0x218 | Schema_Atomic | Size: 0x8
-			char  m_pTextureNormal[0x8]; // 0x218 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureMetalness; // 0x220 | Schema_Atomic | Size: 0x8
-			char  m_pTextureMetalness[0x8]; // 0x220 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureRoughness; // 0x228 | Schema_Atomic | Size: 0x8
-			char  m_pTextureRoughness[0x8]; // 0x228 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureSelfIllum; // 0x230 | Schema_Atomic | Size: 0x8
-			char  m_pTextureSelfIllum[0x8]; // 0x230 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureDetail; // 0x238 | Schema_Atomic | Size: 0x8
-			char  m_pTextureDetail[0x8]; // 0x238 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureColorWarp; // 0x220 | Schema_Atomic | Size: 0x8
+			char  m_pTextureColorWarp[0x8]; // 0x220 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureNormal; // 0x228 | Schema_Atomic | Size: 0x8
+			char  m_pTextureNormal[0x8]; // 0x228 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureMetalness; // 0x230 | Schema_Atomic | Size: 0x8
+			char  m_pTextureMetalness[0x8]; // 0x230 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureRoughness; // 0x238 | Schema_Atomic | Size: 0x8
+			char  m_pTextureRoughness[0x8]; // 0x238 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureSelfIllum; // 0x240 | Schema_Atomic | Size: 0x8
+			char  m_pTextureSelfIllum[0x8]; // 0x240 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureDetail; // 0x248 | Schema_Atomic | Size: 0x8
+			char  m_pTextureDetail[0x8]; // 0x248 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureColorWarp) == 0x210, "m_pTextureColorWarp in C_OP_RenderStatusEffectCitadel should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureNormal) == 0x218, "m_pTextureNormal in C_OP_RenderStatusEffectCitadel should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureMetalness) == 0x220, "m_pTextureMetalness in C_OP_RenderStatusEffectCitadel should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureRoughness) == 0x228, "m_pTextureRoughness in C_OP_RenderStatusEffectCitadel should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureSelfIllum) == 0x230, "m_pTextureSelfIllum in C_OP_RenderStatusEffectCitadel should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureDetail) == 0x238, "m_pTextureDetail in C_OP_RenderStatusEffectCitadel should be at offset 0x238");
-		static_assert(sizeof(CS2::particles::C_OP_RenderStatusEffectCitadel) == 0x240, "C_OP_RenderStatusEffectCitadel size should be 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureColorWarp) == 0x220, "m_pTextureColorWarp in C_OP_RenderStatusEffectCitadel should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureNormal) == 0x228, "m_pTextureNormal in C_OP_RenderStatusEffectCitadel should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureMetalness) == 0x230, "m_pTextureMetalness in C_OP_RenderStatusEffectCitadel should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureRoughness) == 0x238, "m_pTextureRoughness in C_OP_RenderStatusEffectCitadel should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureSelfIllum) == 0x240, "m_pTextureSelfIllum in C_OP_RenderStatusEffectCitadel should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureDetail) == 0x248, "m_pTextureDetail in C_OP_RenderStatusEffectCitadel should be at offset 0x248");
+		static_assert(sizeof(CS2::particles::C_OP_RenderStatusEffectCitadel) == 0x250, "C_OP_RenderStatusEffectCitadel size should be 0x250");
 	}
 }

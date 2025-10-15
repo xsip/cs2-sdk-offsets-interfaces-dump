@@ -15,10 +15,10 @@ namespace CS2 {
 		class C_ShatterGlassShardPhysics : public CS2::client::C_PhysicsProp {
 		public:
 			S2_PAD(0x8);
-			client::shard_model_desc_t m_ShardDesc; // 0x1328 | Schema_DeclaredClass | Size: 0x80
+			client::shard_model_desc_t m_ShardDesc; // 0x1318 | Schema_DeclaredClass | Size: 0x80
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_ShatterGlassShardPhysics, m_ShardDesc) == 0x1328, "m_ShardDesc in C_ShatterGlassShardPhysics should be at offset 0x1328");
-		static_assert(sizeof(CS2::client::C_ShatterGlassShardPhysics) == 0x13B0, "C_ShatterGlassShardPhysics size should be 0x13B0");
+		static_assert(offsetof(CS2::client::C_ShatterGlassShardPhysics, m_ShardDesc) == 0x1318, "m_ShardDesc in C_ShatterGlassShardPhysics should be at offset 0x1318");
+		static_assert(sizeof(CS2::client::C_ShatterGlassShardPhysics) == 0x13A0, "C_ShatterGlassShardPhysics size should be 0x13A0");
 	}
 }

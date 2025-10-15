@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace pulse_system {
-			// Class size: 0x148
+			// Class size: 0x160
 			namespace CPulseGraphInstance_TestDomain /*: public CS2::pulse_runtime_lib::CBasePulseGraphInstance*/ {
-				constexpr std::ptrdiff_t m_bIsRunningUnitTests = 0x118; // bool m_bIsRunningUnitTests; |  0x118 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bExplicitTimeStepping = 0x119; // bool m_bExplicitTimeStepping; |  0x119 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bExpectingToDestroyWithYieldedCursors = 0x11a; // bool m_bExpectingToDestroyWithYieldedCursors; |  0x11a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bQuietTracepoints = 0x11b; // bool m_bQuietTracepoints; |  0x11b | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bExpectingCursorTerminatedDueToMaxInstructions = 0x11c; // bool m_bExpectingCursorTerminatedDueToMaxInstructions; |  0x11c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nCursorsTerminatedDueToMaxInstructions = 0x120; // int32_t m_nCursorsTerminatedDueToMaxInstructions; |  0x120 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNextValidateIndex = 0x124; // int32_t m_nNextValidateIndex; |  0x124 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Tracepoints = 0x128; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Tracepoints; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bTestYesOrNoPath = 0x140; // bool m_bTestYesOrNoPath; |  0x140 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsRunningUnitTests = 0x130; // bool m_bIsRunningUnitTests; |  0x130 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bExplicitTimeStepping = 0x131; // bool m_bExplicitTimeStepping; |  0x131 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bExpectingToDestroyWithYieldedCursors = 0x132; // bool m_bExpectingToDestroyWithYieldedCursors; |  0x132 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bQuietTracepoints = 0x133; // bool m_bQuietTracepoints; |  0x133 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bExpectingCursorTerminatedDueToMaxInstructions = 0x134; // bool m_bExpectingCursorTerminatedDueToMaxInstructions; |  0x134 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nCursorsTerminatedDueToMaxInstructions = 0x138; // int32_t m_nCursorsTerminatedDueToMaxInstructions; |  0x138 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nNextValidateIndex = 0x13c; // int32_t m_nNextValidateIndex; |  0x13c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Tracepoints = 0x140; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Tracepoints; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bTestYesOrNoPath = 0x158; // bool m_bTestYesOrNoPath; |  0x158 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

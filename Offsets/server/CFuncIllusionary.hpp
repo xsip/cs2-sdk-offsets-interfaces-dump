@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7F0
+			// Class size: 0x7D8
 			namespace CFuncIllusionary /*: public CS2::server::CBaseModelEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

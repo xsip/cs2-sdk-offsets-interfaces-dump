@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1118
+			// Class size: 0x11C8
 			namespace CReplicationParameters /**/ {
 				constexpr std::ptrdiff_t m_nReplicationMode = 0x0; // particles::ParticleReplicationMode_t m_nReplicationMode; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bScaleChildParticleRadii = 0x4; // bool m_bScaleChildParticleRadii; |  0x4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMinRandomRadiusScale = 0x8; // particleslib::CParticleCollectionFloatInput m_flMinRandomRadiusScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flMaxRandomRadiusScale = 0x168; // particleslib::CParticleCollectionFloatInput m_flMaxRandomRadiusScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vMinRandomDisplacement = 0x2c8; // particleslib::CParticleCollectionVecInput m_vMinRandomDisplacement; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vMaxRandomDisplacement = 0x940; // particleslib::CParticleCollectionVecInput m_vMaxRandomDisplacement; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flModellingScale = 0xfb8; // particleslib::CParticleCollectionFloatInput m_flModellingScale; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_flMinRandomRadiusScale = 0x8; // particleslib::CParticleCollectionFloatInput m_flMinRandomRadiusScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMaxRandomRadiusScale = 0x178; // particleslib::CParticleCollectionFloatInput m_flMaxRandomRadiusScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vMinRandomDisplacement = 0x2e8; // particleslib::CParticleCollectionVecInput m_vMinRandomDisplacement; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vMaxRandomDisplacement = 0x9a0; // particleslib::CParticleCollectionVecInput m_vMaxRandomDisplacement; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flModellingScale = 0x1058; // particleslib::CParticleCollectionFloatInput m_flModellingScale; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

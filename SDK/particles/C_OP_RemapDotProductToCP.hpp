@@ -14,23 +14,23 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapDotProductToCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nInputCP1; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nInputCP2; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nOutputCP; // 0x1d0 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutVectorField; // 0x1d4 | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionFloatInput m_flInputMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flInputMax; // 0x338 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flOutputMin; // 0x498 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flOutputMax; // 0x5f8 | Schema_DeclaredClass | Size: 0x160
+			int32_t m_nInputCP1; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nInputCP2; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nOutputCP; // 0x1e0 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutVectorField; // 0x1e4 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flInputMin; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flInputMax; // 0x358 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flOutputMin; // 0x4c8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flOutputMax; // 0x638 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nInputCP1) == 0x1C8, "m_nInputCP1 in C_OP_RemapDotProductToCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nInputCP2) == 0x1CC, "m_nInputCP2 in C_OP_RemapDotProductToCP should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nOutputCP) == 0x1D0, "m_nOutputCP in C_OP_RemapDotProductToCP should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nOutVectorField) == 0x1D4, "m_nOutVectorField in C_OP_RemapDotProductToCP should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flInputMin) == 0x1D8, "m_flInputMin in C_OP_RemapDotProductToCP should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flInputMax) == 0x338, "m_flInputMax in C_OP_RemapDotProductToCP should be at offset 0x338");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flOutputMin) == 0x498, "m_flOutputMin in C_OP_RemapDotProductToCP should be at offset 0x498");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flOutputMax) == 0x5F8, "m_flOutputMax in C_OP_RemapDotProductToCP should be at offset 0x5F8");
-		static_assert(sizeof(CS2::particles::C_OP_RemapDotProductToCP) == 0x758, "C_OP_RemapDotProductToCP size should be 0x758");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nInputCP1) == 0x1D8, "m_nInputCP1 in C_OP_RemapDotProductToCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nInputCP2) == 0x1DC, "m_nInputCP2 in C_OP_RemapDotProductToCP should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nOutputCP) == 0x1E0, "m_nOutputCP in C_OP_RemapDotProductToCP should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nOutVectorField) == 0x1E4, "m_nOutVectorField in C_OP_RemapDotProductToCP should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flInputMin) == 0x1E8, "m_flInputMin in C_OP_RemapDotProductToCP should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flInputMax) == 0x358, "m_flInputMax in C_OP_RemapDotProductToCP should be at offset 0x358");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flOutputMin) == 0x4C8, "m_flOutputMin in C_OP_RemapDotProductToCP should be at offset 0x4C8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flOutputMax) == 0x638, "m_flOutputMax in C_OP_RemapDotProductToCP should be at offset 0x638");
+		static_assert(sizeof(CS2::particles::C_OP_RemapDotProductToCP) == 0x7A8, "C_OP_RemapDotProductToCP size should be 0x7A8");
 	}
 }

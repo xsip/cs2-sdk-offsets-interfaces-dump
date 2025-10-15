@@ -13,35 +13,35 @@ namespace CS2 {
 	namespace client {
 		class C_EnvSky : public CS2::client::C_BaseModelEntity {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0xec8 | Schema_Atomic | Size: 0x8
-			char  m_hSkyMaterial[0x8]; // 0xec8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterialLightingOnly; // 0xed0 | Schema_Atomic | Size: 0x8
-			char  m_hSkyMaterialLightingOnly[0x8]; // 0xed0 | Schema_Atomic | Size: 0x8
-			bool m_bStartDisabled; // 0xed8 | Schema_Builtin | Size: 0x1
-			GlobalTypes::Color m_vTintColor; // 0xed9 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Color m_vTintColorLightingOnly; // 0xedd | Schema_Atomic | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0xeb0 | Schema_Atomic | Size: 0x8
+			char  m_hSkyMaterial[0x8]; // 0xeb0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterialLightingOnly; // 0xeb8 | Schema_Atomic | Size: 0x8
+			char  m_hSkyMaterialLightingOnly[0x8]; // 0xeb8 | Schema_Atomic | Size: 0x8
+			bool m_bStartDisabled; // 0xec0 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Color m_vTintColor; // 0xec1 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_vTintColorLightingOnly; // 0xec5 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x3);
-			float32 m_flBrightnessScale; // 0xee4 | Schema_Builtin | Size: 0x4
-			int32_t m_nFogType; // 0xee8 | Schema_Builtin | Size: 0x4
-			float32 m_flFogMinStart; // 0xeec | Schema_Builtin | Size: 0x4
-			float32 m_flFogMinEnd; // 0xef0 | Schema_Builtin | Size: 0x4
-			float32 m_flFogMaxStart; // 0xef4 | Schema_Builtin | Size: 0x4
-			float32 m_flFogMaxEnd; // 0xef8 | Schema_Builtin | Size: 0x4
-			bool m_bEnabled; // 0xefc | Schema_Builtin | Size: 0x1
+			float32 m_flBrightnessScale; // 0xecc | Schema_Builtin | Size: 0x4
+			int32_t m_nFogType; // 0xed0 | Schema_Builtin | Size: 0x4
+			float32 m_flFogMinStart; // 0xed4 | Schema_Builtin | Size: 0x4
+			float32 m_flFogMinEnd; // 0xed8 | Schema_Builtin | Size: 0x4
+			float32 m_flFogMaxStart; // 0xedc | Schema_Builtin | Size: 0x4
+			float32 m_flFogMaxEnd; // 0xee0 | Schema_Builtin | Size: 0x4
+			bool m_bEnabled; // 0xee4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2b); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_EnvSky, m_hSkyMaterial) == 0xEC8, "m_hSkyMaterial in C_EnvSky should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_hSkyMaterialLightingOnly) == 0xED0, "m_hSkyMaterialLightingOnly in C_EnvSky should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_bStartDisabled) == 0xED8, "m_bStartDisabled in C_EnvSky should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_vTintColor) == 0xED9, "m_vTintColor in C_EnvSky should be at offset 0xED9");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_vTintColorLightingOnly) == 0xEDD, "m_vTintColorLightingOnly in C_EnvSky should be at offset 0xEDD");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_flBrightnessScale) == 0xEE4, "m_flBrightnessScale in C_EnvSky should be at offset 0xEE4");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_nFogType) == 0xEE8, "m_nFogType in C_EnvSky should be at offset 0xEE8");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMinStart) == 0xEEC, "m_flFogMinStart in C_EnvSky should be at offset 0xEEC");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMinEnd) == 0xEF0, "m_flFogMinEnd in C_EnvSky should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMaxStart) == 0xEF4, "m_flFogMaxStart in C_EnvSky should be at offset 0xEF4");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMaxEnd) == 0xEF8, "m_flFogMaxEnd in C_EnvSky should be at offset 0xEF8");
-		static_assert(offsetof(CS2::client::C_EnvSky, m_bEnabled) == 0xEFC, "m_bEnabled in C_EnvSky should be at offset 0xEFC");
-		static_assert(sizeof(CS2::client::C_EnvSky) == 0xF28, "C_EnvSky size should be 0xF28");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_hSkyMaterial) == 0xEB0, "m_hSkyMaterial in C_EnvSky should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_hSkyMaterialLightingOnly) == 0xEB8, "m_hSkyMaterialLightingOnly in C_EnvSky should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_bStartDisabled) == 0xEC0, "m_bStartDisabled in C_EnvSky should be at offset 0xEC0");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_vTintColor) == 0xEC1, "m_vTintColor in C_EnvSky should be at offset 0xEC1");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_vTintColorLightingOnly) == 0xEC5, "m_vTintColorLightingOnly in C_EnvSky should be at offset 0xEC5");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_flBrightnessScale) == 0xECC, "m_flBrightnessScale in C_EnvSky should be at offset 0xECC");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_nFogType) == 0xED0, "m_nFogType in C_EnvSky should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMinStart) == 0xED4, "m_flFogMinStart in C_EnvSky should be at offset 0xED4");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMinEnd) == 0xED8, "m_flFogMinEnd in C_EnvSky should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMaxStart) == 0xEDC, "m_flFogMaxStart in C_EnvSky should be at offset 0xEDC");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_flFogMaxEnd) == 0xEE0, "m_flFogMaxEnd in C_EnvSky should be at offset 0xEE0");
+		static_assert(offsetof(CS2::client::C_EnvSky, m_bEnabled) == 0xEE4, "m_bEnabled in C_EnvSky should be at offset 0xEE4");
+		static_assert(sizeof(CS2::client::C_EnvSky) == 0xF10, "C_EnvSky size should be 0xF10");
 	}
 }

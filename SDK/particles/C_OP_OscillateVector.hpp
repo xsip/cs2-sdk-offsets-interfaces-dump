@@ -15,38 +15,38 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_OscillateVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			GlobalTypes::Vector m_RateMin; // 0x1c0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_RateMax; // 0x1cc | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_FrequencyMin; // 0x1d8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_FrequencyMax; // 0x1e4 | Schema_Atomic | Size: 0xc
-			particles::ParticleAttributeIndex_t m_nField; // 0x1f0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bProportional; // 0x1f4 | Schema_Builtin | Size: 0x1
-			bool m_bProportionalOp; // 0x1f5 | Schema_Builtin | Size: 0x1
-			bool m_bOffset; // 0x1f6 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_RateMin; // 0x1d0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_RateMax; // 0x1dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_FrequencyMin; // 0x1e8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_FrequencyMax; // 0x1f4 | Schema_Atomic | Size: 0xc
+			particles::ParticleAttributeIndex_t m_nField; // 0x200 | Schema_DeclaredClass | Size: 0x4
+			bool m_bProportional; // 0x204 | Schema_Builtin | Size: 0x1
+			bool m_bProportionalOp; // 0x205 | Schema_Builtin | Size: 0x1
+			bool m_bOffset; // 0x206 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flStartTime_min; // 0x1f8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime_max; // 0x1fc | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_min; // 0x200 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_max; // 0x204 | Schema_Builtin | Size: 0x4
-			particleslib::CPerParticleFloatInput m_flOscMult; // 0x208 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOscAdd; // 0x368 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRateScale; // 0x4c8 | Schema_DeclaredClass | Size: 0x160
+			float32 m_flStartTime_min; // 0x208 | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime_max; // 0x20c | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_min; // 0x210 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_max; // 0x214 | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flOscMult; // 0x218 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOscAdd; // 0x388 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRateScale; // 0x4f8 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_RateMin) == 0x1C0, "m_RateMin in C_OP_OscillateVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_RateMax) == 0x1CC, "m_RateMax in C_OP_OscillateVector should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_FrequencyMin) == 0x1D8, "m_FrequencyMin in C_OP_OscillateVector should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_FrequencyMax) == 0x1E4, "m_FrequencyMax in C_OP_OscillateVector should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_nField) == 0x1F0, "m_nField in C_OP_OscillateVector should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_bProportional) == 0x1F4, "m_bProportional in C_OP_OscillateVector should be at offset 0x1F4");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_bProportionalOp) == 0x1F5, "m_bProportionalOp in C_OP_OscillateVector should be at offset 0x1F5");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_bOffset) == 0x1F6, "m_bOffset in C_OP_OscillateVector should be at offset 0x1F6");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flStartTime_min) == 0x1F8, "m_flStartTime_min in C_OP_OscillateVector should be at offset 0x1F8");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flStartTime_max) == 0x1FC, "m_flStartTime_max in C_OP_OscillateVector should be at offset 0x1FC");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flEndTime_min) == 0x200, "m_flEndTime_min in C_OP_OscillateVector should be at offset 0x200");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flEndTime_max) == 0x204, "m_flEndTime_max in C_OP_OscillateVector should be at offset 0x204");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flOscMult) == 0x208, "m_flOscMult in C_OP_OscillateVector should be at offset 0x208");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flOscAdd) == 0x368, "m_flOscAdd in C_OP_OscillateVector should be at offset 0x368");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flRateScale) == 0x4C8, "m_flRateScale in C_OP_OscillateVector should be at offset 0x4C8");
-		static_assert(sizeof(CS2::particles::C_OP_OscillateVector) == 0x628, "C_OP_OscillateVector size should be 0x628");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_RateMin) == 0x1D0, "m_RateMin in C_OP_OscillateVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_RateMax) == 0x1DC, "m_RateMax in C_OP_OscillateVector should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_FrequencyMin) == 0x1E8, "m_FrequencyMin in C_OP_OscillateVector should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_FrequencyMax) == 0x1F4, "m_FrequencyMax in C_OP_OscillateVector should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_nField) == 0x200, "m_nField in C_OP_OscillateVector should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_bProportional) == 0x204, "m_bProportional in C_OP_OscillateVector should be at offset 0x204");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_bProportionalOp) == 0x205, "m_bProportionalOp in C_OP_OscillateVector should be at offset 0x205");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_bOffset) == 0x206, "m_bOffset in C_OP_OscillateVector should be at offset 0x206");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flStartTime_min) == 0x208, "m_flStartTime_min in C_OP_OscillateVector should be at offset 0x208");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flStartTime_max) == 0x20C, "m_flStartTime_max in C_OP_OscillateVector should be at offset 0x20C");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flEndTime_min) == 0x210, "m_flEndTime_min in C_OP_OscillateVector should be at offset 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flEndTime_max) == 0x214, "m_flEndTime_max in C_OP_OscillateVector should be at offset 0x214");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flOscMult) == 0x218, "m_flOscMult in C_OP_OscillateVector should be at offset 0x218");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flOscAdd) == 0x388, "m_flOscAdd in C_OP_OscillateVector should be at offset 0x388");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flRateScale) == 0x4F8, "m_flRateScale in C_OP_OscillateVector should be at offset 0x4F8");
+		static_assert(sizeof(CS2::particles::C_OP_OscillateVector) == 0x668, "C_OP_OscillateVector size should be 0x668");
 	}
 }

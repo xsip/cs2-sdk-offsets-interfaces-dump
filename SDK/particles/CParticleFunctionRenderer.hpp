@@ -14,14 +14,14 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionRenderer : public CS2::particles::CParticleFunction {
 		public:
-			particles::CParticleVisibilityInputs VisibilityInputs; // 0x1c0 | Schema_DeclaredClass | Size: 0x48
-			bool m_bCannotBeRefracted; // 0x208 | Schema_Builtin | Size: 0x1
-			bool m_bSkipRenderingOnMobile; // 0x209 | Schema_Builtin | Size: 0x1
+			particles::CParticleVisibilityInputs VisibilityInputs; // 0x1d0 | Schema_DeclaredClass | Size: 0x48
+			bool m_bCannotBeRefracted; // 0x218 | Schema_Builtin | Size: 0x1
+			bool m_bSkipRenderingOnMobile; // 0x219 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, VisibilityInputs) == 0x1C0, "VisibilityInputs in CParticleFunctionRenderer should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, m_bCannotBeRefracted) == 0x208, "m_bCannotBeRefracted in CParticleFunctionRenderer should be at offset 0x208");
-		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, m_bSkipRenderingOnMobile) == 0x209, "m_bSkipRenderingOnMobile in CParticleFunctionRenderer should be at offset 0x209");
-		static_assert(sizeof(CS2::particles::CParticleFunctionRenderer) == 0x210, "CParticleFunctionRenderer size should be 0x210");
+		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, VisibilityInputs) == 0x1D0, "VisibilityInputs in CParticleFunctionRenderer should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, m_bCannotBeRefracted) == 0x218, "m_bCannotBeRefracted in CParticleFunctionRenderer should be at offset 0x218");
+		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, m_bSkipRenderingOnMobile) == 0x219, "m_bSkipRenderingOnMobile in CParticleFunctionRenderer should be at offset 0x219");
+		static_assert(sizeof(CS2::particles::CParticleFunctionRenderer) == 0x220, "CParticleFunctionRenderer size should be 0x220");
 	}
 }

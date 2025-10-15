@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xE40
+			// Class size: 0xE60
 			namespace CEconWearable /*: public CS2::server::CEconEntity*/ {
-				constexpr std::ptrdiff_t m_nForceSkin = 0xe38; // int32_t m_nForceSkin; |  0xe38 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bAlwaysAllow = 0xe3c; // bool m_bAlwaysAllow; |  0xe3c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nForceSkin = 0xe50; // int32_t m_nForceSkin; |  0xe50 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAlwaysAllow = 0xe54; // bool m_bAlwaysAllow; |  0xe54 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -12,9 +12,8 @@ namespace CS2 {
 			namespace ParticleNamedValueSource_t /**/ {
 				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_IsPublic = 0x8; // bool m_IsPublic; |  0x8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_ValueType = 0xc; // pulse_runtime_lib::PulseValueType_t m_ValueType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_DefaultConfig = 0x10; // particleslib::ParticleNamedValueConfiguration_t m_DefaultConfig; |  Schema_DeclaredClass | Size: 0x38
-				constexpr std::ptrdiff_t m_NamedConfigs = 0x48; // GlobalTypes::CUtlVector< particleslib::ParticleNamedValueConfiguration_t > m_NamedConfigs; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ValueType = 0x10; // GlobalTypes::CPulseValueFullType m_ValueType; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_DefaultConfig = 0x28; // particleslib::ParticleNamedValueConfiguration_t m_DefaultConfig; |  Schema_DeclaredClass | Size: 0x38
 			}
 		}
 	}

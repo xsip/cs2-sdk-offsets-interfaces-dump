@@ -6,6 +6,7 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/particles/CParticleFunctionInitializer.hpp>
+#include <SDK/particleslib/CPerParticleVecInput.hpp>
 #include <SDK/particleslib/CPerParticleFloatInput.hpp>
 
 
@@ -14,20 +15,26 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_VelocityRadialRandom : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_fSpeedMin; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_fSpeedMax; // 0x330 | Schema_DeclaredClass | Size: 0x160
-			GlobalTypes::Vector m_vecLocalCoordinateSystemSpeedScale; // 0x490 | Schema_Atomic | Size: 0xc
+			bool m_bPerParticleCenter; // 0x1d8 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3);
+			int32_t m_nControlPointNumber; // 0x1dc | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleVecInput m_vecPosition; // 0x1e0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecFwd; // 0x898 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_fSpeedMin; // 0xf50 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_fSpeedMax; // 0x10c0 | Schema_DeclaredClass | Size: 0x170
+			GlobalTypes::Vector m_vecLocalCoordinateSystemSpeedScale; // 0x1230 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x1);
-			bool m_bIgnoreDelta; // 0x49d | Schema_Builtin | Size: 0x1
+			bool m_bIgnoreDelta; // 0x123d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_VelocityRadialRandom should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_fSpeedMin) == 0x1D0, "m_fSpeedMin in C_INIT_VelocityRadialRandom should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_fSpeedMax) == 0x330, "m_fSpeedMax in C_INIT_VelocityRadialRandom should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_vecLocalCoordinateSystemSpeedScale) == 0x490, "m_vecLocalCoordinateSystemSpeedScale in C_INIT_VelocityRadialRandom should be at offset 0x490");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_bIgnoreDelta) == 0x49D, "m_bIgnoreDelta in C_INIT_VelocityRadialRandom should be at offset 0x49D");
-		static_assert(sizeof(CS2::particles::C_INIT_VelocityRadialRandom) == 0x4A0, "C_INIT_VelocityRadialRandom size should be 0x4A0");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_bPerParticleCenter) == 0x1D8, "m_bPerParticleCenter in C_INIT_VelocityRadialRandom should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_nControlPointNumber) == 0x1DC, "m_nControlPointNumber in C_INIT_VelocityRadialRandom should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_vecPosition) == 0x1E0, "m_vecPosition in C_INIT_VelocityRadialRandom should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_vecFwd) == 0x898, "m_vecFwd in C_INIT_VelocityRadialRandom should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_fSpeedMin) == 0xF50, "m_fSpeedMin in C_INIT_VelocityRadialRandom should be at offset 0xF50");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_fSpeedMax) == 0x10C0, "m_fSpeedMax in C_INIT_VelocityRadialRandom should be at offset 0x10C0");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_vecLocalCoordinateSystemSpeedScale) == 0x1230, "m_vecLocalCoordinateSystemSpeedScale in C_INIT_VelocityRadialRandom should be at offset 0x1230");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_bIgnoreDelta) == 0x123D, "m_bIgnoreDelta in C_INIT_VelocityRadialRandom should be at offset 0x123D");
+		static_assert(sizeof(CS2::particles::C_INIT_VelocityRadialRandom) == 0x1240, "C_INIT_VelocityRadialRandom size should be 0x1240");
 	}
 }

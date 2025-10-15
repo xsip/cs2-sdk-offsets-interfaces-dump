@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x350
+			// Class size: 0x370
 			namespace C_OP_SetControlPointOrientation /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_bUseWorldLocation = 0x1c8; // bool m_bUseWorldLocation; |  0x1c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRandomize = 0x1ca; // bool m_bRandomize; |  0x1ca | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSetOnce = 0x1cb; // bool m_bSetOnce; |  0x1cb | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nCP = 0x1cc; // int32_t m_nCP; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nHeadLocation = 0x1d0; // int32_t m_nHeadLocation; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecRotation = 0x1d4; // GlobalTypes::QAngle m_vecRotation; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecRotationB = 0x1e0; // GlobalTypes::QAngle m_vecRotationB; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flInterpolation = 0x1f0; // particleslib::CParticleCollectionFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_bUseWorldLocation = 0x1d8; // bool m_bUseWorldLocation; |  0x1d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRandomize = 0x1da; // bool m_bRandomize; |  0x1da | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSetOnce = 0x1db; // bool m_bSetOnce; |  0x1db | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nCP = 0x1dc; // int32_t m_nCP; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nHeadLocation = 0x1e0; // int32_t m_nHeadLocation; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecRotation = 0x1e4; // GlobalTypes::QAngle m_vecRotation; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecRotationB = 0x1f0; // GlobalTypes::QAngle m_vecRotationB; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flInterpolation = 0x200; // particleslib::CParticleCollectionFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

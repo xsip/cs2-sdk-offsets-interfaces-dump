@@ -15,12 +15,12 @@ namespace CS2 {
 		class CGrenadeTracer : public CS2::client::C_BaseModelEntity {
 		public:
 			S2_PAD(0x18);
-			float32 m_flTracerDuration; // 0xee0 | Schema_Builtin | Size: 0x4
-			client::GrenadeType_t m_nType; // 0xee4 | Schema_DeclaredEnum | Size: 0x4
-			S2_PAD(0x4b8); // End padding
+			float32 m_flTracerDuration; // 0xec8 | Schema_Builtin | Size: 0x4
+			client::GrenadeType_t m_nType; // 0xecc | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x4c0); // End padding
 		};
-		static_assert(offsetof(CS2::client::CGrenadeTracer, m_flTracerDuration) == 0xEE0, "m_flTracerDuration in CGrenadeTracer should be at offset 0xEE0");
-		static_assert(offsetof(CS2::client::CGrenadeTracer, m_nType) == 0xEE4, "m_nType in CGrenadeTracer should be at offset 0xEE4");
-		static_assert(sizeof(CS2::client::CGrenadeTracer) == 0x13A0, "CGrenadeTracer size should be 0x13A0");
+		static_assert(offsetof(CS2::client::CGrenadeTracer, m_flTracerDuration) == 0xEC8, "m_flTracerDuration in CGrenadeTracer should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::CGrenadeTracer, m_nType) == 0xECC, "m_nType in CGrenadeTracer should be at offset 0xECC");
+		static_assert(sizeof(CS2::client::CGrenadeTracer) == 0x1390, "CGrenadeTracer size should be 0x1390");
 	}
 }

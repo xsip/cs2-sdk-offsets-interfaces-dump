@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEF0
+			// Class size: 0xED8
 			namespace C_DynamicLight /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_Flags = 0xec8; // uint8_t m_Flags; |  0xec8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_LightStyle = 0xec9; // uint8_t m_LightStyle; |  0xec9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Radius = 0xecc; // float32 m_Radius; |  0xecc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Exponent = 0xed0; // int32_t m_Exponent; |  0xed0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_InnerAngle = 0xed4; // float32 m_InnerAngle; |  0xed4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OuterAngle = 0xed8; // float32 m_OuterAngle; |  0xed8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_SpotRadius = 0xedc; // float32 m_SpotRadius; |  0xedc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Flags = 0xeb0; // uint8_t m_Flags; |  0xeb0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_LightStyle = 0xeb1; // uint8_t m_LightStyle; |  0xeb1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Radius = 0xeb4; // float32 m_Radius; |  0xeb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Exponent = 0xeb8; // int32_t m_Exponent; |  0xeb8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_InnerAngle = 0xebc; // float32 m_InnerAngle; |  0xebc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OuterAngle = 0xec0; // float32 m_OuterAngle; |  0xec0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_SpotRadius = 0xec4; // float32 m_SpotRadius; |  0xec4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

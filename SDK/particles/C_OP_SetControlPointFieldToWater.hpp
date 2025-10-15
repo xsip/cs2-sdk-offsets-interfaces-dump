@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointFieldToWater : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nSourceCP; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nDestCP; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nCPField; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nSourceCP; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nDestCP; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nCPField; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToWater, m_nSourceCP) == 0x1C8, "m_nSourceCP in C_OP_SetControlPointFieldToWater should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToWater, m_nDestCP) == 0x1CC, "m_nDestCP in C_OP_SetControlPointFieldToWater should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToWater, m_nCPField) == 0x1D0, "m_nCPField in C_OP_SetControlPointFieldToWater should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFieldToWater) == 0x1D8, "C_OP_SetControlPointFieldToWater size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToWater, m_nSourceCP) == 0x1D8, "m_nSourceCP in C_OP_SetControlPointFieldToWater should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToWater, m_nDestCP) == 0x1DC, "m_nDestCP in C_OP_SetControlPointFieldToWater should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToWater, m_nCPField) == 0x1E0, "m_nCPField in C_OP_SetControlPointFieldToWater should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFieldToWater) == 0x1E8, "C_OP_SetControlPointFieldToWater size should be 0x1E8");
 	}
 }

@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace networksystem {
-			constexpr std::ptrdiff_t FlattenedSerializersVersion001 = 0x261280; 
-			constexpr std::ptrdiff_t NetworkMessagesVersion001 = 0x299390; 
-			constexpr std::ptrdiff_t NetworkSystemVersion001 = 0x28ab60; 
-			constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0x28ac70; 
+			constexpr std::ptrdiff_t FlattenedSerializersVersion001 = 0x2632d0; 
+			constexpr std::ptrdiff_t NetworkMessagesVersion001 = 0x28b1d0; 
+			constexpr std::ptrdiff_t NetworkSystemVersion001 = 0x27c9b0; 
+			constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0x27cac0; 
 		}
 	}
 }

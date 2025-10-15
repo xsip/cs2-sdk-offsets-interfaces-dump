@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x84D0
+			// Class size: 0x84C0
 			namespace C_FireCrackerBlast /*: public CS2::client::C_Inferno*/ {
 				// NO SCHEMA DATA FOUND!
 			}

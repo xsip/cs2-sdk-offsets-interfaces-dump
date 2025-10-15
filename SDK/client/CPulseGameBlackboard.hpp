@@ -13,11 +13,12 @@ namespace CS2 {
 	namespace client {
 		class CPulseGameBlackboard : public CS2::client::C_BaseEntity {
 		public:
-			GlobalTypes::CUtlString m_strGraphName; // 0x5f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strStateBlob; // 0x600 | Schema_Atomic | Size: 0x8
+			S2_PAD(0x8);
+			GlobalTypes::CUtlString m_strGraphName; // 0x600 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strStateBlob; // 0x608 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::client::CPulseGameBlackboard, m_strGraphName) == 0x5F8, "m_strGraphName in CPulseGameBlackboard should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::CPulseGameBlackboard, m_strStateBlob) == 0x600, "m_strStateBlob in CPulseGameBlackboard should be at offset 0x600");
-		static_assert(sizeof(CS2::client::CPulseGameBlackboard) == 0x608, "CPulseGameBlackboard size should be 0x608");
+		static_assert(offsetof(CS2::client::CPulseGameBlackboard, m_strGraphName) == 0x600, "m_strGraphName in CPulseGameBlackboard should be at offset 0x600");
+		static_assert(offsetof(CS2::client::CPulseGameBlackboard, m_strStateBlob) == 0x608, "m_strStateBlob in CPulseGameBlackboard should be at offset 0x608");
+		static_assert(sizeof(CS2::client::CPulseGameBlackboard) == 0x610, "CPulseGameBlackboard size should be 0x610");
 	}
 }

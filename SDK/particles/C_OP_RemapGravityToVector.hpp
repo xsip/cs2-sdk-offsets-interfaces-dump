@@ -16,16 +16,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapGravityToVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CPerParticleVecInput m_vInput1; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x838 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x83c | Schema_DeclaredEnum | Size: 0x4
-			bool m_bNormalizedOutput; // 0x840 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vInput1; // 0x1d0 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x888 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x88c | Schema_DeclaredEnum | Size: 0x4
+			bool m_bNormalizedOutput; // 0x890 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6f); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_vInput1) == 0x1C0, "m_vInput1 in C_OP_RemapGravityToVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_nOutputField) == 0x838, "m_nOutputField in C_OP_RemapGravityToVector should be at offset 0x838");
-		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_nSetMethod) == 0x83C, "m_nSetMethod in C_OP_RemapGravityToVector should be at offset 0x83C");
-		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_bNormalizedOutput) == 0x840, "m_bNormalizedOutput in C_OP_RemapGravityToVector should be at offset 0x840");
-		static_assert(sizeof(CS2::particles::C_OP_RemapGravityToVector) == 0x8B0, "C_OP_RemapGravityToVector size should be 0x8B0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_vInput1) == 0x1D0, "m_vInput1 in C_OP_RemapGravityToVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_nOutputField) == 0x888, "m_nOutputField in C_OP_RemapGravityToVector should be at offset 0x888");
+		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_nSetMethod) == 0x88C, "m_nSetMethod in C_OP_RemapGravityToVector should be at offset 0x88C");
+		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_bNormalizedOutput) == 0x890, "m_bNormalizedOutput in C_OP_RemapGravityToVector should be at offset 0x890");
+		static_assert(sizeof(CS2::particles::C_OP_RemapGravityToVector) == 0x900, "C_OP_RemapGravityToVector size should be 0x900");
 	}
 }

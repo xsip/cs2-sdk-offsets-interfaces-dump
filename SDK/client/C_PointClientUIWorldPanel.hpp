@@ -19,73 +19,72 @@ namespace CS2 {
 		class C_PointClientUIWorldPanel : public CS2::client::C_BaseClientUIEntity {
 		public:
 			S2_PAD(0x8);
-			bool m_bForceRecreateNextUpdate; // 0xf00 | Schema_Builtin | Size: 0x1
-			bool m_bMoveViewToPlayerNextThink; // 0xf01 | Schema_Builtin | Size: 0x1
-			bool m_bCheckCSSClasses; // 0xf02 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xd);
-			GlobalTypes::CTransform m_anchorDeltaTransform; // 0xf10 | Schema_Atomic | Size: 0x20
-			S2_PAD(0x178);
-			client::CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // 0x10a8 | Schema_Ptr | Size: 0x8
+			bool m_bForceRecreateNextUpdate; // 0xee8 | Schema_Builtin | Size: 0x1
+			bool m_bMoveViewToPlayerNextThink; // 0xee9 | Schema_Builtin | Size: 0x1
+			bool m_bCheckCSSClasses; // 0xeea | Schema_Builtin | Size: 0x1
+			S2_PAD(0x5);
+			GlobalTypes::CTransform m_anchorDeltaTransform; // 0xef0 | Schema_Atomic | Size: 0x20
+			S2_PAD(0x170);
+			client::CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // 0x1080 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x20);
-			bool m_bIgnoreInput; // 0x10d0 | Schema_Builtin | Size: 0x1
-			bool m_bLit; // 0x10d1 | Schema_Builtin | Size: 0x1
-			bool m_bFollowPlayerAcrossTeleport; // 0x10d2 | Schema_Builtin | Size: 0x1
+			bool m_bIgnoreInput; // 0x10a8 | Schema_Builtin | Size: 0x1
+			bool m_bLit; // 0x10a9 | Schema_Builtin | Size: 0x1
+			bool m_bFollowPlayerAcrossTeleport; // 0x10aa | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flWidth; // 0x10d4 | Schema_Builtin | Size: 0x4
-			float32 m_flHeight; // 0x10d8 | Schema_Builtin | Size: 0x4
-			float32 m_flDPI; // 0x10dc | Schema_Builtin | Size: 0x4
-			float32 m_flInteractDistance; // 0x10e0 | Schema_Builtin | Size: 0x4
-			float32 m_flDepthOffset; // 0x10e4 | Schema_Builtin | Size: 0x4
-			uint32_t m_unOwnerContext; // 0x10e8 | Schema_Builtin | Size: 0x4
-			uint32_t m_unHorizontalAlign; // 0x10ec | Schema_Builtin | Size: 0x4
-			uint32_t m_unVerticalAlign; // 0x10f0 | Schema_Builtin | Size: 0x4
-			uint32_t m_unOrientation; // 0x10f4 | Schema_Builtin | Size: 0x4
-			bool m_bAllowInteractionFromAllSceneWorlds; // 0x10f8 | Schema_Builtin | Size: 0x1
+			float32 m_flWidth; // 0x10ac | Schema_Builtin | Size: 0x4
+			float32 m_flHeight; // 0x10b0 | Schema_Builtin | Size: 0x4
+			float32 m_flDPI; // 0x10b4 | Schema_Builtin | Size: 0x4
+			float32 m_flInteractDistance; // 0x10b8 | Schema_Builtin | Size: 0x4
+			float32 m_flDepthOffset; // 0x10bc | Schema_Builtin | Size: 0x4
+			uint32_t m_unOwnerContext; // 0x10c0 | Schema_Builtin | Size: 0x4
+			uint32_t m_unHorizontalAlign; // 0x10c4 | Schema_Builtin | Size: 0x4
+			uint32_t m_unVerticalAlign; // 0x10c8 | Schema_Builtin | Size: 0x4
+			uint32_t m_unOrientation; // 0x10cc | Schema_Builtin | Size: 0x4
+			bool m_bAllowInteractionFromAllSceneWorlds; // 0x10d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x1100 | Schema_Atomic | Size: 0x18
-			char  m_vecCSSClasses[0x18]; // 0x1100 | Schema_Atomic | Size: 0x18
-			bool m_bOpaque; // 0x1118 | Schema_Builtin | Size: 0x1
-			bool m_bNoDepth; // 0x1119 | Schema_Builtin | Size: 0x1
-			bool m_bVisibleWhenParentNoDraw; // 0x111a | Schema_Builtin | Size: 0x1
-			bool m_bRenderBackface; // 0x111b | Schema_Builtin | Size: 0x1
-			bool m_bUseOffScreenIndicator; // 0x111c | Schema_Builtin | Size: 0x1
-			bool m_bExcludeFromSaveGames; // 0x111d | Schema_Builtin | Size: 0x1
-			bool m_bGrabbable; // 0x111e | Schema_Builtin | Size: 0x1
-			bool m_bOnlyRenderToTexture; // 0x111f | Schema_Builtin | Size: 0x1
-			bool m_bDisableMipGen; // 0x1120 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x10d8 | Schema_Atomic | Size: 0x18
+			char  m_vecCSSClasses[0x18]; // 0x10d8 | Schema_Atomic | Size: 0x18
+			bool m_bOpaque; // 0x10f0 | Schema_Builtin | Size: 0x1
+			bool m_bNoDepth; // 0x10f1 | Schema_Builtin | Size: 0x1
+			bool m_bVisibleWhenParentNoDraw; // 0x10f2 | Schema_Builtin | Size: 0x1
+			bool m_bRenderBackface; // 0x10f3 | Schema_Builtin | Size: 0x1
+			bool m_bUseOffScreenIndicator; // 0x10f4 | Schema_Builtin | Size: 0x1
+			bool m_bExcludeFromSaveGames; // 0x10f5 | Schema_Builtin | Size: 0x1
+			bool m_bGrabbable; // 0x10f6 | Schema_Builtin | Size: 0x1
+			bool m_bOnlyRenderToTexture; // 0x10f7 | Schema_Builtin | Size: 0x1
+			bool m_bDisableMipGen; // 0x10f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nExplicitImageLayout; // 0x1124 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x8); // End padding
+			int32_t m_nExplicitImageLayout; // 0x10fc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bForceRecreateNextUpdate) == 0xF00, "m_bForceRecreateNextUpdate in C_PointClientUIWorldPanel should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bMoveViewToPlayerNextThink) == 0xF01, "m_bMoveViewToPlayerNextThink in C_PointClientUIWorldPanel should be at offset 0xF01");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bCheckCSSClasses) == 0xF02, "m_bCheckCSSClasses in C_PointClientUIWorldPanel should be at offset 0xF02");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_anchorDeltaTransform) == 0xF10, "m_anchorDeltaTransform in C_PointClientUIWorldPanel should be at offset 0xF10");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_pOffScreenIndicator) == 0x10A8, "m_pOffScreenIndicator in C_PointClientUIWorldPanel should be at offset 0x10A8");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bIgnoreInput) == 0x10D0, "m_bIgnoreInput in C_PointClientUIWorldPanel should be at offset 0x10D0");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bLit) == 0x10D1, "m_bLit in C_PointClientUIWorldPanel should be at offset 0x10D1");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bFollowPlayerAcrossTeleport) == 0x10D2, "m_bFollowPlayerAcrossTeleport in C_PointClientUIWorldPanel should be at offset 0x10D2");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flWidth) == 0x10D4, "m_flWidth in C_PointClientUIWorldPanel should be at offset 0x10D4");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flHeight) == 0x10D8, "m_flHeight in C_PointClientUIWorldPanel should be at offset 0x10D8");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flDPI) == 0x10DC, "m_flDPI in C_PointClientUIWorldPanel should be at offset 0x10DC");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flInteractDistance) == 0x10E0, "m_flInteractDistance in C_PointClientUIWorldPanel should be at offset 0x10E0");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flDepthOffset) == 0x10E4, "m_flDepthOffset in C_PointClientUIWorldPanel should be at offset 0x10E4");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unOwnerContext) == 0x10E8, "m_unOwnerContext in C_PointClientUIWorldPanel should be at offset 0x10E8");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unHorizontalAlign) == 0x10EC, "m_unHorizontalAlign in C_PointClientUIWorldPanel should be at offset 0x10EC");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unVerticalAlign) == 0x10F0, "m_unVerticalAlign in C_PointClientUIWorldPanel should be at offset 0x10F0");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unOrientation) == 0x10F4, "m_unOrientation in C_PointClientUIWorldPanel should be at offset 0x10F4");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bAllowInteractionFromAllSceneWorlds) == 0x10F8, "m_bAllowInteractionFromAllSceneWorlds in C_PointClientUIWorldPanel should be at offset 0x10F8");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_vecCSSClasses) == 0x1100, "m_vecCSSClasses in C_PointClientUIWorldPanel should be at offset 0x1100");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bOpaque) == 0x1118, "m_bOpaque in C_PointClientUIWorldPanel should be at offset 0x1118");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bNoDepth) == 0x1119, "m_bNoDepth in C_PointClientUIWorldPanel should be at offset 0x1119");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bVisibleWhenParentNoDraw) == 0x111A, "m_bVisibleWhenParentNoDraw in C_PointClientUIWorldPanel should be at offset 0x111A");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bRenderBackface) == 0x111B, "m_bRenderBackface in C_PointClientUIWorldPanel should be at offset 0x111B");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bUseOffScreenIndicator) == 0x111C, "m_bUseOffScreenIndicator in C_PointClientUIWorldPanel should be at offset 0x111C");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bExcludeFromSaveGames) == 0x111D, "m_bExcludeFromSaveGames in C_PointClientUIWorldPanel should be at offset 0x111D");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bGrabbable) == 0x111E, "m_bGrabbable in C_PointClientUIWorldPanel should be at offset 0x111E");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bOnlyRenderToTexture) == 0x111F, "m_bOnlyRenderToTexture in C_PointClientUIWorldPanel should be at offset 0x111F");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bDisableMipGen) == 0x1120, "m_bDisableMipGen in C_PointClientUIWorldPanel should be at offset 0x1120");
-		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_nExplicitImageLayout) == 0x1124, "m_nExplicitImageLayout in C_PointClientUIWorldPanel should be at offset 0x1124");
-		static_assert(sizeof(CS2::client::C_PointClientUIWorldPanel) == 0x1130, "C_PointClientUIWorldPanel size should be 0x1130");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bForceRecreateNextUpdate) == 0xEE8, "m_bForceRecreateNextUpdate in C_PointClientUIWorldPanel should be at offset 0xEE8");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bMoveViewToPlayerNextThink) == 0xEE9, "m_bMoveViewToPlayerNextThink in C_PointClientUIWorldPanel should be at offset 0xEE9");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bCheckCSSClasses) == 0xEEA, "m_bCheckCSSClasses in C_PointClientUIWorldPanel should be at offset 0xEEA");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_anchorDeltaTransform) == 0xEF0, "m_anchorDeltaTransform in C_PointClientUIWorldPanel should be at offset 0xEF0");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_pOffScreenIndicator) == 0x1080, "m_pOffScreenIndicator in C_PointClientUIWorldPanel should be at offset 0x1080");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bIgnoreInput) == 0x10A8, "m_bIgnoreInput in C_PointClientUIWorldPanel should be at offset 0x10A8");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bLit) == 0x10A9, "m_bLit in C_PointClientUIWorldPanel should be at offset 0x10A9");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bFollowPlayerAcrossTeleport) == 0x10AA, "m_bFollowPlayerAcrossTeleport in C_PointClientUIWorldPanel should be at offset 0x10AA");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flWidth) == 0x10AC, "m_flWidth in C_PointClientUIWorldPanel should be at offset 0x10AC");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flHeight) == 0x10B0, "m_flHeight in C_PointClientUIWorldPanel should be at offset 0x10B0");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flDPI) == 0x10B4, "m_flDPI in C_PointClientUIWorldPanel should be at offset 0x10B4");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flInteractDistance) == 0x10B8, "m_flInteractDistance in C_PointClientUIWorldPanel should be at offset 0x10B8");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_flDepthOffset) == 0x10BC, "m_flDepthOffset in C_PointClientUIWorldPanel should be at offset 0x10BC");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unOwnerContext) == 0x10C0, "m_unOwnerContext in C_PointClientUIWorldPanel should be at offset 0x10C0");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unHorizontalAlign) == 0x10C4, "m_unHorizontalAlign in C_PointClientUIWorldPanel should be at offset 0x10C4");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unVerticalAlign) == 0x10C8, "m_unVerticalAlign in C_PointClientUIWorldPanel should be at offset 0x10C8");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_unOrientation) == 0x10CC, "m_unOrientation in C_PointClientUIWorldPanel should be at offset 0x10CC");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bAllowInteractionFromAllSceneWorlds) == 0x10D0, "m_bAllowInteractionFromAllSceneWorlds in C_PointClientUIWorldPanel should be at offset 0x10D0");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_vecCSSClasses) == 0x10D8, "m_vecCSSClasses in C_PointClientUIWorldPanel should be at offset 0x10D8");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bOpaque) == 0x10F0, "m_bOpaque in C_PointClientUIWorldPanel should be at offset 0x10F0");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bNoDepth) == 0x10F1, "m_bNoDepth in C_PointClientUIWorldPanel should be at offset 0x10F1");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bVisibleWhenParentNoDraw) == 0x10F2, "m_bVisibleWhenParentNoDraw in C_PointClientUIWorldPanel should be at offset 0x10F2");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bRenderBackface) == 0x10F3, "m_bRenderBackface in C_PointClientUIWorldPanel should be at offset 0x10F3");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bUseOffScreenIndicator) == 0x10F4, "m_bUseOffScreenIndicator in C_PointClientUIWorldPanel should be at offset 0x10F4");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bExcludeFromSaveGames) == 0x10F5, "m_bExcludeFromSaveGames in C_PointClientUIWorldPanel should be at offset 0x10F5");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bGrabbable) == 0x10F6, "m_bGrabbable in C_PointClientUIWorldPanel should be at offset 0x10F6");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bOnlyRenderToTexture) == 0x10F7, "m_bOnlyRenderToTexture in C_PointClientUIWorldPanel should be at offset 0x10F7");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_bDisableMipGen) == 0x10F8, "m_bDisableMipGen in C_PointClientUIWorldPanel should be at offset 0x10F8");
+		static_assert(offsetof(CS2::client::C_PointClientUIWorldPanel, m_nExplicitImageLayout) == 0x10FC, "m_nExplicitImageLayout in C_PointClientUIWorldPanel should be at offset 0x10FC");
+		static_assert(sizeof(CS2::client::C_PointClientUIWorldPanel) == 0x1100, "C_PointClientUIWorldPanel size should be 0x1100");
 	}
 }

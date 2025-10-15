@@ -14,9 +14,9 @@ namespace CS2 {
 		class CCSPlace : public CS2::server::CServerOnlyModelEntity {
 		public:
 			S2_PAD(0x18);
-			GlobalTypes::CUtlSymbolLarge m_name; // 0x808 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_name; // 0x7f0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CCSPlace, m_name) == 0x808, "m_name in CCSPlace should be at offset 0x808");
-		static_assert(sizeof(CS2::server::CCSPlace) == 0x810, "CCSPlace size should be 0x810");
+		static_assert(offsetof(CS2::server::CCSPlace, m_name) == 0x7F0, "m_name in CCSPlace should be at offset 0x7F0");
+		static_assert(sizeof(CS2::server::CCSPlace) == 0x7F8, "CCSPlace size should be 0x7F8");
 	}
 }

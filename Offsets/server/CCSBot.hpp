@@ -33,7 +33,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_isAttacking = 0x4d4; // bool m_isAttacking; |  0x4d4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_isOpeningDoor = 0x4d5; // bool m_isOpeningDoor; |  0x4d5 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_taskEntity = 0x4dc; // server::CHandle< server::CBaseEntity > m_taskEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_goalPosition = 0x4ec; // GlobalTypes::Vector m_goalPosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_goalPosition = 0x4ec; // GlobalTypes::VectorWS m_goalPosition; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_goalEntity = 0x4f8; // server::CHandle< server::CBaseEntity > m_goalEntity; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_avoid = 0x4fc; // server::CHandle< server::CBaseEntity > m_avoid; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_avoidTimestamp = 0x500; // float32 m_avoidTimestamp; |  0x500 | Schema_Builtin | Size: 0x4

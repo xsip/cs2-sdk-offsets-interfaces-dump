@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x600
+			// Class size: 0x640
 			namespace C_INIT_DistanceToNeighborCull /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_flDistance = 0x1c8; // particleslib::CPerParticleFloatInput m_flDistance; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bIncludeRadii = 0x328; // bool m_bIncludeRadii; |  0x328 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLifespanOverlap = 0x330; // particleslib::CPerParticleFloatInput m_flLifespanOverlap; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nFieldModify = 0x490; // particles::ParticleAttributeIndex_t m_nFieldModify; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flModify = 0x498; // particleslib::CPerParticleFloatInput m_flModify; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nSetMethod = 0x5f8; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseNeighbor = 0x5fc; // bool m_bUseNeighbor; |  0x5fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDistance = 0x1d8; // particleslib::CPerParticleFloatInput m_flDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bIncludeRadii = 0x348; // bool m_bIncludeRadii; |  0x348 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLifespanOverlap = 0x350; // particleslib::CPerParticleFloatInput m_flLifespanOverlap; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nFieldModify = 0x4c0; // particles::ParticleAttributeIndex_t m_nFieldModify; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flModify = 0x4c8; // particleslib::CPerParticleFloatInput m_flModify; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nSetMethod = 0x638; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseNeighbor = 0x63c; // bool m_bUseNeighbor; |  0x63c | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

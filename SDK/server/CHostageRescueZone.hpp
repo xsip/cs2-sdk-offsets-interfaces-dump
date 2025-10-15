@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x20);
 		};
-		static_assert(sizeof(CS2::server::CHostageRescueZone) == 0x9E0, "CHostageRescueZone size should be 0x9E0");
+		static_assert(sizeof(CS2::server::CHostageRescueZone) == 0x9C8, "CHostageRescueZone size should be 0x9C8");
 	}
 }

@@ -15,16 +15,18 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_nameAttach1; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAttach2; // 0x4f8 | Schema_Atomic | Size: 0x8
-			bool m_supportMultipleEntitiesWithSameName; // 0x500 | Schema_Builtin | Size: 0x1
-			bool m_disabled; // 0x501 | Schema_Builtin | Size: 0x1
-			bool m_succeeded; // 0x502 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x5); // End padding
+			bool m_includeHierarchy; // 0x500 | Schema_Builtin | Size: 0x1
+			bool m_supportMultipleEntitiesWithSameName; // 0x501 | Schema_Builtin | Size: 0x1
+			bool m_disabled; // 0x502 | Schema_Builtin | Size: 0x1
+			bool m_succeeded; // 0x503 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_nameAttach1) == 0x4F0, "m_nameAttach1 in CLogicCollisionPair should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_nameAttach2) == 0x4F8, "m_nameAttach2 in CLogicCollisionPair should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_supportMultipleEntitiesWithSameName) == 0x500, "m_supportMultipleEntitiesWithSameName in CLogicCollisionPair should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_disabled) == 0x501, "m_disabled in CLogicCollisionPair should be at offset 0x501");
-		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_succeeded) == 0x502, "m_succeeded in CLogicCollisionPair should be at offset 0x502");
+		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_includeHierarchy) == 0x500, "m_includeHierarchy in CLogicCollisionPair should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_supportMultipleEntitiesWithSameName) == 0x501, "m_supportMultipleEntitiesWithSameName in CLogicCollisionPair should be at offset 0x501");
+		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_disabled) == 0x502, "m_disabled in CLogicCollisionPair should be at offset 0x502");
+		static_assert(offsetof(CS2::server::CLogicCollisionPair, m_succeeded) == 0x503, "m_succeeded in CLogicCollisionPair should be at offset 0x503");
 		static_assert(sizeof(CS2::server::CLogicCollisionPair) == 0x508, "CLogicCollisionPair size should be 0x508");
 	}
 }

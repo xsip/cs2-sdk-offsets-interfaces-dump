@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x328
+			// Class size: 0x348
 			namespace C_OP_SetSimulationRate /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_flSimulationScale = 0x1c8; // particleslib::CParticleCollectionFloatInput m_flSimulationScale; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_flSimulationScale = 0x1d8; // particleslib::CParticleCollectionFloatInput m_flSimulationScale; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x19D8
+			// Class size: 0x1AD8
 			namespace C_INIT_InitialVelocityNoise /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecAbsVal = 0x1c8; // GlobalTypes::Vector m_vecAbsVal; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecAbsValInv = 0x1d4; // GlobalTypes::Vector m_vecAbsValInv; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOffsetLoc = 0x1e0; // particleslib::CPerParticleVecInput m_vecOffsetLoc; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flOffset = 0x858; // particleslib::CPerParticleFloatInput m_flOffset; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vecOutputMin = 0x9b8; // particleslib::CPerParticleVecInput m_vecOutputMin; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecOutputMax = 0x1030; // particleslib::CPerParticleVecInput m_vecOutputMax; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flNoiseScale = 0x16a8; // particleslib::CPerParticleFloatInput m_flNoiseScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flNoiseScaleLoc = 0x1808; // particleslib::CPerParticleFloatInput m_flNoiseScaleLoc; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_TransformInput = 0x1968; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_bIgnoreDt = 0x19d0; // bool m_bIgnoreDt; |  0x19d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecAbsVal = 0x1d8; // GlobalTypes::Vector m_vecAbsVal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecAbsValInv = 0x1e4; // GlobalTypes::Vector m_vecAbsValInv; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffsetLoc = 0x1f0; // particleslib::CPerParticleVecInput m_vecOffsetLoc; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flOffset = 0x8a8; // particleslib::CPerParticleFloatInput m_flOffset; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecOutputMin = 0xa18; // particleslib::CPerParticleVecInput m_vecOutputMin; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecOutputMax = 0x10d0; // particleslib::CPerParticleVecInput m_vecOutputMax; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flNoiseScale = 0x1788; // particleslib::CPerParticleFloatInput m_flNoiseScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flNoiseScaleLoc = 0x18f8; // particleslib::CPerParticleFloatInput m_flNoiseScaleLoc; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_TransformInput = 0x1a68; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_bIgnoreDt = 0x1ad0; // bool m_bIgnoreDt; |  0x1ad0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_ModelPointEntity : public CS2::client::C_BaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_ModelPointEntity) == 0xEC8, "C_ModelPointEntity size should be 0xEC8");
+		static_assert(sizeof(CS2::client::C_ModelPointEntity) == 0xEB0, "C_ModelPointEntity size should be 0xEB0");
 	}
 }

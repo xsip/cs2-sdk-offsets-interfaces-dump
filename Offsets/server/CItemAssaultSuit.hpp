@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB58
+			// Class size: 0xB70
 			namespace CItemAssaultSuit /*: public CS2::server::CItem*/ {
 				// NO SCHEMA DATA FOUND!
 			}

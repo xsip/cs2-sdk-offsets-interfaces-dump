@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x13B8
+			// Class size: 0x1488
 			namespace C_OP_RenderOmni2Light /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_nLightType = 0x210; // particles::ParticleOmni2LightTypeChoiceList_t m_nLightType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vColorBlend = 0x218; // particleslib::CParticleCollectionVecInput m_vColorBlend; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_nColorBlendType = 0x890; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nBrightnessUnit = 0x894; // particles::ParticleLightUnitChoiceList_t m_nBrightnessUnit; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flBrightnessLumens = 0x898; // particleslib::CPerParticleFloatInput m_flBrightnessLumens; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flBrightnessCandelas = 0x9f8; // particleslib::CPerParticleFloatInput m_flBrightnessCandelas; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bCastShadows = 0xb58; // bool m_bCastShadows; |  0xb58 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFog = 0xb59; // bool m_bFog; |  0xb59 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flFogScale = 0xb60; // particleslib::CPerParticleFloatInput m_flFogScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flLuminaireRadius = 0xcc0; // particleslib::CPerParticleFloatInput m_flLuminaireRadius; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flSkirt = 0xe20; // particleslib::CPerParticleFloatInput m_flSkirt; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flRange = 0xf80; // particleslib::CPerParticleFloatInput m_flRange; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flInnerConeAngle = 0x10e0; // particleslib::CPerParticleFloatInput m_flInnerConeAngle; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOuterConeAngle = 0x1240; // particleslib::CPerParticleFloatInput m_flOuterConeAngle; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_hLightCookie = 0x13a0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bSphericalCookie = 0x13a8; // bool m_bSphericalCookie; |  0x13a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nLightType = 0x220; // particles::ParticleOmni2LightTypeChoiceList_t m_nLightType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vColorBlend = 0x228; // particleslib::CParticleCollectionVecInput m_vColorBlend; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nColorBlendType = 0x8e0; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nBrightnessUnit = 0x8e4; // particles::ParticleLightUnitChoiceList_t m_nBrightnessUnit; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flBrightnessLumens = 0x8e8; // particleslib::CPerParticleFloatInput m_flBrightnessLumens; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flBrightnessCandelas = 0xa58; // particleslib::CPerParticleFloatInput m_flBrightnessCandelas; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bCastShadows = 0xbc8; // bool m_bCastShadows; |  0xbc8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFog = 0xbc9; // bool m_bFog; |  0xbc9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFogScale = 0xbd0; // particleslib::CPerParticleFloatInput m_flFogScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flLuminaireRadius = 0xd40; // particleslib::CPerParticleFloatInput m_flLuminaireRadius; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flSkirt = 0xeb0; // particleslib::CPerParticleFloatInput m_flSkirt; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRange = 0x1020; // particleslib::CPerParticleFloatInput m_flRange; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInnerConeAngle = 0x1190; // particleslib::CPerParticleFloatInput m_flInnerConeAngle; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOuterConeAngle = 0x1300; // particleslib::CPerParticleFloatInput m_flOuterConeAngle; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_hLightCookie = 0x1470; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bSphericalCookie = 0x1478; // bool m_bSphericalCookie; |  0x1478 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

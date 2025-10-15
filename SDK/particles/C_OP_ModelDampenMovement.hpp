@@ -14,23 +14,23 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ModelDampenMovement : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
-			bool m_bBoundBox; // 0x1c4 | Schema_Builtin | Size: 0x1
-			bool m_bOutside; // 0x1c5 | Schema_Builtin | Size: 0x1
-			bool m_bUseBones; // 0x1c6 | Schema_Builtin | Size: 0x1
-			char m_HitboxSetName[128]; // 0x1c7 | Schema_FixedArray | Size: 0x80
+			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
+			bool m_bBoundBox; // 0x1d4 | Schema_Builtin | Size: 0x1
+			bool m_bOutside; // 0x1d5 | Schema_Builtin | Size: 0x1
+			bool m_bUseBones; // 0x1d6 | Schema_Builtin | Size: 0x1
+			char m_HitboxSetName[128]; // 0x1d7 | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x1);
-			particleslib::CPerParticleVecInput m_vecPosOffset; // 0x248 | Schema_DeclaredClass | Size: 0x678
-			float32 m_fDrag; // 0x8c0 | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleVecInput m_vecPosOffset; // 0x258 | Schema_DeclaredClass | Size: 0x6b8
+			float32 m_fDrag; // 0x910 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_nControlPointNumber) == 0x1C0, "m_nControlPointNumber in C_OP_ModelDampenMovement should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bBoundBox) == 0x1C4, "m_bBoundBox in C_OP_ModelDampenMovement should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bOutside) == 0x1C5, "m_bOutside in C_OP_ModelDampenMovement should be at offset 0x1C5");
-		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bUseBones) == 0x1C6, "m_bUseBones in C_OP_ModelDampenMovement should be at offset 0x1C6");
-		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_HitboxSetName) == 0x1C7, "m_HitboxSetName in C_OP_ModelDampenMovement should be at offset 0x1C7");
-		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_vecPosOffset) == 0x248, "m_vecPosOffset in C_OP_ModelDampenMovement should be at offset 0x248");
-		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_fDrag) == 0x8C0, "m_fDrag in C_OP_ModelDampenMovement should be at offset 0x8C0");
-		static_assert(sizeof(CS2::particles::C_OP_ModelDampenMovement) == 0x8C8, "C_OP_ModelDampenMovement size should be 0x8C8");
+		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_ModelDampenMovement should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bBoundBox) == 0x1D4, "m_bBoundBox in C_OP_ModelDampenMovement should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bOutside) == 0x1D5, "m_bOutside in C_OP_ModelDampenMovement should be at offset 0x1D5");
+		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bUseBones) == 0x1D6, "m_bUseBones in C_OP_ModelDampenMovement should be at offset 0x1D6");
+		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_HitboxSetName) == 0x1D7, "m_HitboxSetName in C_OP_ModelDampenMovement should be at offset 0x1D7");
+		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_vecPosOffset) == 0x258, "m_vecPosOffset in C_OP_ModelDampenMovement should be at offset 0x258");
+		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_fDrag) == 0x910, "m_fDrag in C_OP_ModelDampenMovement should be at offset 0x910");
+		static_assert(sizeof(CS2::particles::C_OP_ModelDampenMovement) == 0x918, "C_OP_ModelDampenMovement size should be 0x918");
 	}
 }

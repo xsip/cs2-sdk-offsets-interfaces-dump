@@ -20,9 +20,9 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_sBreakablePieceName; // 0x8 | Schema_Atomic | Size: 0x8
 			int32_t m_nBodyGroupValue; // 0x10 | Schema_Builtin | Size: 0x4
 			client::CSkillInt m_nHealth; // 0x14 | Schema_DeclaredClass | Size: 0x10
-			client::EDestructiblePartDamagePassThroughType m_nDamagePassthroughType; // 0x24 | Schema_DeclaredEnum | Size: 0x4
-			client::DestructiblePartDestructionDeathBehavior_t m_nDestructionDeathBehavior; // 0x28 | Schema_DeclaredEnum | Size: 0x4
-			S2_PAD(0x4);
+			float32 m_flCriticalDamagePercent; // 0x24 | Schema_Builtin | Size: 0x4
+			client::EDestructiblePartDamagePassThroughType m_nDamagePassthroughType; // 0x28 | Schema_DeclaredEnum | Size: 0x4
+			client::DestructiblePartDestructionDeathBehavior_t m_nDestructionDeathBehavior; // 0x2c | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CGlobalSymbol m_sCustomDeathHandshake; // 0x30 | Schema_Atomic | Size: 0x8
 			bool m_bShouldDestroyOnDeath; // 0x38 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -33,8 +33,9 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_sBreakablePieceName) == 0x8, "m_sBreakablePieceName in CDestructiblePart_DamageLevel should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_nBodyGroupValue) == 0x10, "m_nBodyGroupValue in CDestructiblePart_DamageLevel should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_nHealth) == 0x14, "m_nHealth in CDestructiblePart_DamageLevel should be at offset 0x14");
-		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_nDamagePassthroughType) == 0x24, "m_nDamagePassthroughType in CDestructiblePart_DamageLevel should be at offset 0x24");
-		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_nDestructionDeathBehavior) == 0x28, "m_nDestructionDeathBehavior in CDestructiblePart_DamageLevel should be at offset 0x28");
+		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_flCriticalDamagePercent) == 0x24, "m_flCriticalDamagePercent in CDestructiblePart_DamageLevel should be at offset 0x24");
+		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_nDamagePassthroughType) == 0x28, "m_nDamagePassthroughType in CDestructiblePart_DamageLevel should be at offset 0x28");
+		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_nDestructionDeathBehavior) == 0x2C, "m_nDestructionDeathBehavior in CDestructiblePart_DamageLevel should be at offset 0x2C");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_sCustomDeathHandshake) == 0x30, "m_sCustomDeathHandshake in CDestructiblePart_DamageLevel should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_bShouldDestroyOnDeath) == 0x38, "m_bShouldDestroyOnDeath in CDestructiblePart_DamageLevel should be at offset 0x38");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_flDeathDestroyTime) == 0x3C, "m_flDeathDestroyTime in CDestructiblePart_DamageLevel should be at offset 0x3C");

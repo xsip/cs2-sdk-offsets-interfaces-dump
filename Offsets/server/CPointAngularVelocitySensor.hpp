@@ -18,7 +18,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFireInterval = 0x504; // float32 m_flFireInterval; |  0x504 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLastAngVelocity = 0x508; // float32 m_flLastAngVelocity; |  0x508 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_lastOrientation = 0x50c; // GlobalTypes::QAngle m_lastOrientation; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecAxis = 0x518; // GlobalTypes::Vector m_vecAxis; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecAxis = 0x518; // GlobalTypes::VectorWS m_vecAxis; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bUseHelper = 0x524; // bool m_bUseHelper; |  0x524 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_AngularVelocity = 0x528; // GlobalTypes::CEntityOutputTemplate< float32 > m_AngularVelocity; |  Schema_Atomic | Size: 0x28
 				constexpr std::ptrdiff_t m_OnLessThan = 0x550; // entity2::CEntityIOOutput m_OnLessThan; |  Schema_DeclaredClass | Size: 0x28

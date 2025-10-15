@@ -14,6 +14,6 @@ namespace CS2 {
 		class CParticleCollectionFloatInput : public CS2::particleslib::CParticleFloatInput {
 		public:
 		};
-		static_assert(sizeof(CS2::particleslib::CParticleCollectionFloatInput) == 0x160, "CParticleCollectionFloatInput size should be 0x160");
+		static_assert(sizeof(CS2::particleslib::CParticleCollectionFloatInput) == 0x170, "CParticleCollectionFloatInput size should be 0x170");
 	}
 }

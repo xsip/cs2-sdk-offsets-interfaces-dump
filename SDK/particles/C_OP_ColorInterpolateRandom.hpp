@@ -14,22 +14,22 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ColorInterpolateRandom : public CS2::particles::CParticleFunctionOperator {
 		public:
-			GlobalTypes::Color m_ColorFadeMin; // 0x1c0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_ColorFadeMin; // 0x1d0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x18);
-			GlobalTypes::Color m_ColorFadeMax; // 0x1dc | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_ColorFadeMax; // 0x1ec | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
-			float32 m_flFadeStartTime; // 0x1ec | Schema_Builtin | Size: 0x4
-			float32 m_flFadeEndTime; // 0x1f0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1f4 | Schema_DeclaredClass | Size: 0x4
-			bool m_bEaseInOut; // 0x1f8 | Schema_Builtin | Size: 0x1
+			float32 m_flFadeStartTime; // 0x1fc | Schema_Builtin | Size: 0x4
+			float32 m_flFadeEndTime; // 0x200 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x204 | Schema_DeclaredClass | Size: 0x4
+			bool m_bEaseInOut; // 0x208 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_ColorFadeMin) == 0x1C0, "m_ColorFadeMin in C_OP_ColorInterpolateRandom should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_ColorFadeMax) == 0x1DC, "m_ColorFadeMax in C_OP_ColorInterpolateRandom should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_flFadeStartTime) == 0x1EC, "m_flFadeStartTime in C_OP_ColorInterpolateRandom should be at offset 0x1EC");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_flFadeEndTime) == 0x1F0, "m_flFadeEndTime in C_OP_ColorInterpolateRandom should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_nFieldOutput) == 0x1F4, "m_nFieldOutput in C_OP_ColorInterpolateRandom should be at offset 0x1F4");
-		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_bEaseInOut) == 0x1F8, "m_bEaseInOut in C_OP_ColorInterpolateRandom should be at offset 0x1F8");
-		static_assert(sizeof(CS2::particles::C_OP_ColorInterpolateRandom) == 0x200, "C_OP_ColorInterpolateRandom size should be 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_ColorFadeMin) == 0x1D0, "m_ColorFadeMin in C_OP_ColorInterpolateRandom should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_ColorFadeMax) == 0x1EC, "m_ColorFadeMax in C_OP_ColorInterpolateRandom should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_flFadeStartTime) == 0x1FC, "m_flFadeStartTime in C_OP_ColorInterpolateRandom should be at offset 0x1FC");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_flFadeEndTime) == 0x200, "m_flFadeEndTime in C_OP_ColorInterpolateRandom should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_nFieldOutput) == 0x204, "m_nFieldOutput in C_OP_ColorInterpolateRandom should be at offset 0x204");
+		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_bEaseInOut) == 0x208, "m_bEaseInOut in C_OP_ColorInterpolateRandom should be at offset 0x208");
+		static_assert(sizeof(CS2::particles::C_OP_ColorInterpolateRandom) == 0x210, "C_OP_ColorInterpolateRandom size should be 0x210");
 	}
 }

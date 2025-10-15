@@ -8,19 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1E80
+			// Class size: 0x1FB0
 			namespace C_OP_ExternalWindForce /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_vecSamplePosition = 0x1d0; // particleslib::CPerParticleVecInput m_vecSamplePosition; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecScale = 0x848; // particleslib::CPerParticleVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_bSampleWind = 0xec0; // bool m_bSampleWind; |  0xec0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSampleWater = 0xec1; // bool m_bSampleWater; |  0xec1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDampenNearWaterPlane = 0xec2; // bool m_bDampenNearWaterPlane; |  0xec2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSampleGravity = 0xec3; // bool m_bSampleGravity; |  0xec3 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecGravityForce = 0xec8; // particleslib::CPerParticleVecInput m_vecGravityForce; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_bUseBasicMovementGravity = 0x1540; // bool m_bUseBasicMovementGravity; |  0x1540 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLocalGravityScale = 0x1548; // particleslib::CPerParticleFloatInput m_flLocalGravityScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flLocalBuoyancyScale = 0x16a8; // particleslib::CPerParticleFloatInput m_flLocalBuoyancyScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vecBuoyancyForce = 0x1808; // particleslib::CPerParticleVecInput m_vecBuoyancyForce; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_vecSamplePosition = 0x1e0; // particleslib::CPerParticleVecInput m_vecSamplePosition; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecScale = 0x898; // particleslib::CPerParticleVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_bSampleWind = 0xf50; // bool m_bSampleWind; |  0xf50 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSampleWater = 0xf51; // bool m_bSampleWater; |  0xf51 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDampenNearWaterPlane = 0xf52; // bool m_bDampenNearWaterPlane; |  0xf52 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSampleGravity = 0xf53; // bool m_bSampleGravity; |  0xf53 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecGravityForce = 0xf58; // particleslib::CPerParticleVecInput m_vecGravityForce; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_bUseBasicMovementGravity = 0x1610; // bool m_bUseBasicMovementGravity; |  0x1610 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLocalGravityScale = 0x1618; // particleslib::CPerParticleFloatInput m_flLocalGravityScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flLocalBuoyancyScale = 0x1788; // particleslib::CPerParticleFloatInput m_flLocalBuoyancyScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecBuoyancyForce = 0x18f8; // particleslib::CPerParticleVecInput m_vecBuoyancyForce; |  Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

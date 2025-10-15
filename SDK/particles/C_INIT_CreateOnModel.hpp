@@ -17,42 +17,42 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateOnModel : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CParticleModelInput m_modelInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x60
-			particleslib::CParticleTransformInput m_transformInput; // 0x228 | Schema_DeclaredClass | Size: 0x68
-			int32_t m_nForceInModel; // 0x290 | Schema_Builtin | Size: 0x4
-			bool m_bScaleToVolume; // 0x294 | Schema_Builtin | Size: 0x1
-			bool m_bEvenDistribution; // 0x295 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleModelInput m_modelInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x60
+			particleslib::CParticleTransformInput m_transformInput; // 0x238 | Schema_DeclaredClass | Size: 0x68
+			int32_t m_nForceInModel; // 0x2a0 | Schema_Builtin | Size: 0x4
+			bool m_bScaleToVolume; // 0x2a4 | Schema_Builtin | Size: 0x1
+			bool m_bEvenDistribution; // 0x2a5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particleslib::CParticleCollectionFloatInput m_nDesiredHitbox; // 0x298 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nHitboxValueFromControlPointIndex; // 0x3f8 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_nDesiredHitbox; // 0x2a8 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nHitboxValueFromControlPointIndex; // 0x418 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x400 | Schema_DeclaredClass | Size: 0x678
-			float32 m_flBoneVelocity; // 0xa78 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxBoneVelocity; // 0xa7c | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionVecInput m_vecDirectionBias; // 0xa80 | Schema_DeclaredClass | Size: 0x678
-			char m_HitboxSetName[128]; // 0x10f8 | Schema_FixedArray | Size: 0x80
-			bool m_bLocalCoords; // 0x1178 | Schema_Builtin | Size: 0x1
-			bool m_bUseBones; // 0x1179 | Schema_Builtin | Size: 0x1
-			bool m_bUseMesh; // 0x117a | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x420 | Schema_DeclaredClass | Size: 0x6b8
+			float32 m_flBoneVelocity; // 0xad8 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxBoneVelocity; // 0xadc | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecDirectionBias; // 0xae0 | Schema_DeclaredClass | Size: 0x6b8
+			char m_HitboxSetName[128]; // 0x1198 | Schema_FixedArray | Size: 0x80
+			bool m_bLocalCoords; // 0x1218 | Schema_Builtin | Size: 0x1
+			bool m_bUseBones; // 0x1219 | Schema_Builtin | Size: 0x1
+			bool m_bUseMesh; // 0x121a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x1180 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x1220 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_modelInput) == 0x1C8, "m_modelInput in C_INIT_CreateOnModel should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_transformInput) == 0x228, "m_transformInput in C_INIT_CreateOnModel should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_nForceInModel) == 0x290, "m_nForceInModel in C_INIT_CreateOnModel should be at offset 0x290");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bScaleToVolume) == 0x294, "m_bScaleToVolume in C_INIT_CreateOnModel should be at offset 0x294");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bEvenDistribution) == 0x295, "m_bEvenDistribution in C_INIT_CreateOnModel should be at offset 0x295");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_nDesiredHitbox) == 0x298, "m_nDesiredHitbox in C_INIT_CreateOnModel should be at offset 0x298");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_nHitboxValueFromControlPointIndex) == 0x3F8, "m_nHitboxValueFromControlPointIndex in C_INIT_CreateOnModel should be at offset 0x3F8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_vecHitBoxScale) == 0x400, "m_vecHitBoxScale in C_INIT_CreateOnModel should be at offset 0x400");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_flBoneVelocity) == 0xA78, "m_flBoneVelocity in C_INIT_CreateOnModel should be at offset 0xA78");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_flMaxBoneVelocity) == 0xA7C, "m_flMaxBoneVelocity in C_INIT_CreateOnModel should be at offset 0xA7C");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_vecDirectionBias) == 0xA80, "m_vecDirectionBias in C_INIT_CreateOnModel should be at offset 0xA80");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_HitboxSetName) == 0x10F8, "m_HitboxSetName in C_INIT_CreateOnModel should be at offset 0x10F8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bLocalCoords) == 0x1178, "m_bLocalCoords in C_INIT_CreateOnModel should be at offset 0x1178");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bUseBones) == 0x1179, "m_bUseBones in C_INIT_CreateOnModel should be at offset 0x1179");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bUseMesh) == 0x117A, "m_bUseMesh in C_INIT_CreateOnModel should be at offset 0x117A");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_flShellSize) == 0x1180, "m_flShellSize in C_INIT_CreateOnModel should be at offset 0x1180");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateOnModel) == 0x12E0, "C_INIT_CreateOnModel size should be 0x12E0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_modelInput) == 0x1D8, "m_modelInput in C_INIT_CreateOnModel should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_transformInput) == 0x238, "m_transformInput in C_INIT_CreateOnModel should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_nForceInModel) == 0x2A0, "m_nForceInModel in C_INIT_CreateOnModel should be at offset 0x2A0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bScaleToVolume) == 0x2A4, "m_bScaleToVolume in C_INIT_CreateOnModel should be at offset 0x2A4");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bEvenDistribution) == 0x2A5, "m_bEvenDistribution in C_INIT_CreateOnModel should be at offset 0x2A5");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_nDesiredHitbox) == 0x2A8, "m_nDesiredHitbox in C_INIT_CreateOnModel should be at offset 0x2A8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_nHitboxValueFromControlPointIndex) == 0x418, "m_nHitboxValueFromControlPointIndex in C_INIT_CreateOnModel should be at offset 0x418");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_vecHitBoxScale) == 0x420, "m_vecHitBoxScale in C_INIT_CreateOnModel should be at offset 0x420");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_flBoneVelocity) == 0xAD8, "m_flBoneVelocity in C_INIT_CreateOnModel should be at offset 0xAD8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_flMaxBoneVelocity) == 0xADC, "m_flMaxBoneVelocity in C_INIT_CreateOnModel should be at offset 0xADC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_vecDirectionBias) == 0xAE0, "m_vecDirectionBias in C_INIT_CreateOnModel should be at offset 0xAE0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_HitboxSetName) == 0x1198, "m_HitboxSetName in C_INIT_CreateOnModel should be at offset 0x1198");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bLocalCoords) == 0x1218, "m_bLocalCoords in C_INIT_CreateOnModel should be at offset 0x1218");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bUseBones) == 0x1219, "m_bUseBones in C_INIT_CreateOnModel should be at offset 0x1219");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bUseMesh) == 0x121A, "m_bUseMesh in C_INIT_CreateOnModel should be at offset 0x121A");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_flShellSize) == 0x1220, "m_flShellSize in C_INIT_CreateOnModel should be at offset 0x1220");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateOnModel) == 0x1390, "C_INIT_CreateOnModel size should be 0x1390");
 	}
 }

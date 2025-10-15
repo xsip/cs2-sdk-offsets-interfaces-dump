@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace client {
 		class C_CSObserverPawn : public CS2::client::C_CSPlayerPawnBase {
 		public:
-			GlobalTypes::CEntityHandle m_hDetectParentChange; // 0x1680 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CEntityHandle m_hDetectParentChange; // 0x1668 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CSObserverPawn, m_hDetectParentChange) == 0x1680, "m_hDetectParentChange in C_CSObserverPawn should be at offset 0x1680");
-		static_assert(sizeof(CS2::client::C_CSObserverPawn) == 0x1688, "C_CSObserverPawn size should be 0x1688");
+		static_assert(offsetof(CS2::client::C_CSObserverPawn, m_hDetectParentChange) == 0x1668, "m_hDetectParentChange in C_CSObserverPawn should be at offset 0x1668");
+		static_assert(sizeof(CS2::client::C_CSObserverPawn) == 0x1670, "C_CSObserverPawn size should be 0x1670");
 	}
 }

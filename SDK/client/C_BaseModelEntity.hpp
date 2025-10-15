@@ -30,99 +30,95 @@ namespace CS2 {
 		public:
 			S2_PAD(0x4e8);
 			client::CRenderComponent* m_CRenderComponent; // 0xae0 | Schema_Ptr | Size: 0x8
-			client::CHitboxComponent m_CHitboxComponent; // 0xae8 | Schema_DeclaredClass | Size: 0x28
-			client::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; // 0xb10 | Schema_Ptr | Size: 0x8
-			client::HitGroup_t m_LastHitGroup; // 0xb18 | Schema_DeclaredEnum | Size: 0x4
+			client::CHitboxComponent m_CHitboxComponent; // 0xae8 | Schema_DeclaredClass | Size: 0x18
+			client::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; // 0xb00 | Schema_Ptr | Size: 0x8
+			client::HitGroup_t m_LastHitGroup; // 0xb08 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; // 0xb20 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_vLastDamagePosition; // 0xb28 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; // 0xb10 | Schema_Atomic | Size: 0x8
+			GlobalTypes::VectorWS m_vLastDamagePosition; // 0xb18 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x1c);
-			bool m_bInitModelEffects; // 0xb50 | Schema_Builtin | Size: 0x1
-			bool m_bIsStaticProp; // 0xb51 | Schema_Builtin | Size: 0x1
+			bool m_bInitModelEffects; // 0xb40 | Schema_Builtin | Size: 0x1
+			bool m_bIsStaticProp; // 0xb41 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nLastAddDecal; // 0xb54 | Schema_Builtin | Size: 0x4
-			int32_t m_nDecalsAdded; // 0xb58 | Schema_Builtin | Size: 0x4
-			int32_t m_iOldHealth; // 0xb5c | Schema_Builtin | Size: 0x4
-			client::RenderMode_t m_nRenderMode; // 0xb60 | Schema_DeclaredEnum | Size: 0x1
-			client::RenderFx_t m_nRenderFX; // 0xb61 | Schema_DeclaredEnum | Size: 0x1
-			bool m_bAllowFadeInView; // 0xb62 | Schema_Builtin | Size: 0x1
+			int32_t m_nLastAddDecal; // 0xb44 | Schema_Builtin | Size: 0x4
+			int32_t m_nDecalsAdded; // 0xb48 | Schema_Builtin | Size: 0x4
+			int32_t m_iOldHealth; // 0xb4c | Schema_Builtin | Size: 0x4
+			client::RenderMode_t m_nRenderMode; // 0xb50 | Schema_DeclaredEnum | Size: 0x1
+			client::RenderFx_t m_nRenderFX; // 0xb51 | Schema_DeclaredEnum | Size: 0x1
+			bool m_bAllowFadeInView; // 0xb52 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1d);
-			GlobalTypes::Color m_clrRender; // 0xb80 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_clrRender; // 0xb70 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			// client::C_UtlVectorEmbeddedNetworkVar< client::EntityRenderAttribute_t > m_vecRenderAttributes; // 0xb88 | Schema_Atomic | Size: 0x68
-			char  m_vecRenderAttributes[0x68]; // 0xb88 | Schema_Atomic | Size: 0x68
+			// client::C_UtlVectorEmbeddedNetworkVar< client::EntityRenderAttribute_t > m_vecRenderAttributes; // 0xb78 | Schema_Atomic | Size: 0x68
+			char  m_vecRenderAttributes[0x68]; // 0xb78 | Schema_Atomic | Size: 0x68
 			S2_PAD(0x18);
-			bool m_bRenderToCubemaps; // 0xc08 | Schema_Builtin | Size: 0x1
-			bool m_bNoInterpolate; // 0xc09 | Schema_Builtin | Size: 0x1
+			bool m_bRenderToCubemaps; // 0xbf8 | Schema_Builtin | Size: 0x1
+			bool m_bNoInterpolate; // 0xbf9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			client::CCollisionProperty m_Collision; // 0xc10 | Schema_DeclaredClass | Size: 0xb0
-			client::CGlowProperty m_Glow; // 0xcc0 | Schema_DeclaredClass | Size: 0x58
-			float32 m_flGlowBackfaceMult; // 0xd18 | Schema_Builtin | Size: 0x4
-			float32 m_fadeMinDist; // 0xd1c | Schema_Builtin | Size: 0x4
-			float32 m_fadeMaxDist; // 0xd20 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeScale; // 0xd24 | Schema_Builtin | Size: 0x4
-			float32 m_flShadowStrength; // 0xd28 | Schema_Builtin | Size: 0x4
-			uint8_t m_nObjectCulling; // 0xd2c | Schema_Builtin | Size: 0x1
+			client::CCollisionProperty m_Collision; // 0xc00 | Schema_DeclaredClass | Size: 0xb0
+			client::CGlowProperty m_Glow; // 0xcb0 | Schema_DeclaredClass | Size: 0x58
+			float32 m_flGlowBackfaceMult; // 0xd08 | Schema_Builtin | Size: 0x4
+			float32 m_fadeMinDist; // 0xd0c | Schema_Builtin | Size: 0x4
+			float32 m_fadeMaxDist; // 0xd10 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeScale; // 0xd14 | Schema_Builtin | Size: 0x4
+			float32 m_flShadowStrength; // 0xd18 | Schema_Builtin | Size: 0x4
+			uint8_t m_nObjectCulling; // 0xd1c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nAddDecal; // 0xd30 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vDecalPosition; // 0xd34 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDecalForwardAxis; // 0xd40 | Schema_Atomic | Size: 0xc
-			float32 m_flDecalHealBloodRate; // 0xd4c | Schema_Builtin | Size: 0x4
-			float32 m_flDecalHealHeightRate; // 0xd50 | Schema_Builtin | Size: 0x4
-			client::DecalMode_t m_nDecalMode; // 0xd54 | Schema_DeclaredEnum | Size: 0x1
-			client::DecalMode_t m_nRequiredDecalMode; // 0xd55 | Schema_DeclaredEnum | Size: 0x1
+			int32_t m_nAddDecal; // 0xd20 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vDecalPosition; // 0xd24 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDecalForwardAxis; // 0xd30 | Schema_Atomic | Size: 0xc
+			client::DecalMode_t m_nDecalMode; // 0xd3c | Schema_DeclaredEnum | Size: 0x1
+			client::DecalMode_t m_nRequiredDecalMode; // 0xd3d | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x2);
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0xd58 | Schema_Atomic | Size: 0x18
-			char  m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18]; // 0xd58 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0xd40 | Schema_Atomic | Size: 0x18
+			char  m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18]; // 0xd40 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28);
-			client::CNetworkViewOffsetVector m_vecViewOffset; // 0xd98 | Schema_DeclaredClass | Size: 0x28
+			client::CNetworkViewOffsetVector m_vecViewOffset; // 0xd80 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0xb8);
-			client::CClientAlphaProperty* m_pClientAlphaProperty; // 0xe78 | Schema_Ptr | Size: 0x8
-			GlobalTypes::Color m_ClientOverrideTint; // 0xe80 | Schema_Atomic | Size: 0x4
-			bool m_bUseClientOverrideTint; // 0xe84 | Schema_Builtin | Size: 0x1
+			client::CClientAlphaProperty* m_pClientAlphaProperty; // 0xe60 | Schema_Ptr | Size: 0x8
+			GlobalTypes::Color m_ClientOverrideTint; // 0xe68 | Schema_Atomic | Size: 0x4
+			bool m_bUseClientOverrideTint; // 0xe6c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3b);
-			uint32_t m_bvDisabledHitGroups[1]; // 0xec0 | Schema_FixedArray | Size: 0x4
+			uint32_t m_bvDisabledHitGroups[1]; // 0xea8 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_CRenderComponent) == 0xAE0, "m_CRenderComponent in C_BaseModelEntity should be at offset 0xAE0");
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_CHitboxComponent) == 0xAE8, "m_CHitboxComponent in C_BaseModelEntity should be at offset 0xAE8");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_pDestructiblePartsSystemComponent) == 0xB10, "m_pDestructiblePartsSystemComponent in C_BaseModelEntity should be at offset 0xB10");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_LastHitGroup) == 0xB18, "m_LastHitGroup in C_BaseModelEntity should be at offset 0xB18");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_sLastDamageSourceName) == 0xB20, "m_sLastDamageSourceName in C_BaseModelEntity should be at offset 0xB20");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vLastDamagePosition) == 0xB28, "m_vLastDamagePosition in C_BaseModelEntity should be at offset 0xB28");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bInitModelEffects) == 0xB50, "m_bInitModelEffects in C_BaseModelEntity should be at offset 0xB50");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bIsStaticProp) == 0xB51, "m_bIsStaticProp in C_BaseModelEntity should be at offset 0xB51");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nLastAddDecal) == 0xB54, "m_nLastAddDecal in C_BaseModelEntity should be at offset 0xB54");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nDecalsAdded) == 0xB58, "m_nDecalsAdded in C_BaseModelEntity should be at offset 0xB58");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_iOldHealth) == 0xB5C, "m_iOldHealth in C_BaseModelEntity should be at offset 0xB5C");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nRenderMode) == 0xB60, "m_nRenderMode in C_BaseModelEntity should be at offset 0xB60");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nRenderFX) == 0xB61, "m_nRenderFX in C_BaseModelEntity should be at offset 0xB61");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bAllowFadeInView) == 0xB62, "m_bAllowFadeInView in C_BaseModelEntity should be at offset 0xB62");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_clrRender) == 0xB80, "m_clrRender in C_BaseModelEntity should be at offset 0xB80");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vecRenderAttributes) == 0xB88, "m_vecRenderAttributes in C_BaseModelEntity should be at offset 0xB88");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bRenderToCubemaps) == 0xC08, "m_bRenderToCubemaps in C_BaseModelEntity should be at offset 0xC08");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bNoInterpolate) == 0xC09, "m_bNoInterpolate in C_BaseModelEntity should be at offset 0xC09");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_Collision) == 0xC10, "m_Collision in C_BaseModelEntity should be at offset 0xC10");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_Glow) == 0xCC0, "m_Glow in C_BaseModelEntity should be at offset 0xCC0");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flGlowBackfaceMult) == 0xD18, "m_flGlowBackfaceMult in C_BaseModelEntity should be at offset 0xD18");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_fadeMinDist) == 0xD1C, "m_fadeMinDist in C_BaseModelEntity should be at offset 0xD1C");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_fadeMaxDist) == 0xD20, "m_fadeMaxDist in C_BaseModelEntity should be at offset 0xD20");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flFadeScale) == 0xD24, "m_flFadeScale in C_BaseModelEntity should be at offset 0xD24");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flShadowStrength) == 0xD28, "m_flShadowStrength in C_BaseModelEntity should be at offset 0xD28");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nObjectCulling) == 0xD2C, "m_nObjectCulling in C_BaseModelEntity should be at offset 0xD2C");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nAddDecal) == 0xD30, "m_nAddDecal in C_BaseModelEntity should be at offset 0xD30");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vDecalPosition) == 0xD34, "m_vDecalPosition in C_BaseModelEntity should be at offset 0xD34");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vDecalForwardAxis) == 0xD40, "m_vDecalForwardAxis in C_BaseModelEntity should be at offset 0xD40");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flDecalHealBloodRate) == 0xD4C, "m_flDecalHealBloodRate in C_BaseModelEntity should be at offset 0xD4C");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flDecalHealHeightRate) == 0xD50, "m_flDecalHealHeightRate in C_BaseModelEntity should be at offset 0xD50");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nDecalMode) == 0xD54, "m_nDecalMode in C_BaseModelEntity should be at offset 0xD54");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nRequiredDecalMode) == 0xD55, "m_nRequiredDecalMode in C_BaseModelEntity should be at offset 0xD55");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_ConfigEntitiesToPropagateMaterialDecalsTo) == 0xD58, "m_ConfigEntitiesToPropagateMaterialDecalsTo in C_BaseModelEntity should be at offset 0xD58");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vecViewOffset) == 0xD98, "m_vecViewOffset in C_BaseModelEntity should be at offset 0xD98");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_pClientAlphaProperty) == 0xE78, "m_pClientAlphaProperty in C_BaseModelEntity should be at offset 0xE78");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_ClientOverrideTint) == 0xE80, "m_ClientOverrideTint in C_BaseModelEntity should be at offset 0xE80");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bUseClientOverrideTint) == 0xE84, "m_bUseClientOverrideTint in C_BaseModelEntity should be at offset 0xE84");
-		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bvDisabledHitGroups) == 0xEC0, "m_bvDisabledHitGroups in C_BaseModelEntity should be at offset 0xEC0");
-		static_assert(sizeof(CS2::client::C_BaseModelEntity) == 0xEC8, "C_BaseModelEntity size should be 0xEC8");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_pDestructiblePartsSystemComponent) == 0xB00, "m_pDestructiblePartsSystemComponent in C_BaseModelEntity should be at offset 0xB00");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_LastHitGroup) == 0xB08, "m_LastHitGroup in C_BaseModelEntity should be at offset 0xB08");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_sLastDamageSourceName) == 0xB10, "m_sLastDamageSourceName in C_BaseModelEntity should be at offset 0xB10");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vLastDamagePosition) == 0xB18, "m_vLastDamagePosition in C_BaseModelEntity should be at offset 0xB18");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bInitModelEffects) == 0xB40, "m_bInitModelEffects in C_BaseModelEntity should be at offset 0xB40");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bIsStaticProp) == 0xB41, "m_bIsStaticProp in C_BaseModelEntity should be at offset 0xB41");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nLastAddDecal) == 0xB44, "m_nLastAddDecal in C_BaseModelEntity should be at offset 0xB44");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nDecalsAdded) == 0xB48, "m_nDecalsAdded in C_BaseModelEntity should be at offset 0xB48");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_iOldHealth) == 0xB4C, "m_iOldHealth in C_BaseModelEntity should be at offset 0xB4C");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nRenderMode) == 0xB50, "m_nRenderMode in C_BaseModelEntity should be at offset 0xB50");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nRenderFX) == 0xB51, "m_nRenderFX in C_BaseModelEntity should be at offset 0xB51");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bAllowFadeInView) == 0xB52, "m_bAllowFadeInView in C_BaseModelEntity should be at offset 0xB52");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_clrRender) == 0xB70, "m_clrRender in C_BaseModelEntity should be at offset 0xB70");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vecRenderAttributes) == 0xB78, "m_vecRenderAttributes in C_BaseModelEntity should be at offset 0xB78");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bRenderToCubemaps) == 0xBF8, "m_bRenderToCubemaps in C_BaseModelEntity should be at offset 0xBF8");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bNoInterpolate) == 0xBF9, "m_bNoInterpolate in C_BaseModelEntity should be at offset 0xBF9");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_Collision) == 0xC00, "m_Collision in C_BaseModelEntity should be at offset 0xC00");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_Glow) == 0xCB0, "m_Glow in C_BaseModelEntity should be at offset 0xCB0");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flGlowBackfaceMult) == 0xD08, "m_flGlowBackfaceMult in C_BaseModelEntity should be at offset 0xD08");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_fadeMinDist) == 0xD0C, "m_fadeMinDist in C_BaseModelEntity should be at offset 0xD0C");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_fadeMaxDist) == 0xD10, "m_fadeMaxDist in C_BaseModelEntity should be at offset 0xD10");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flFadeScale) == 0xD14, "m_flFadeScale in C_BaseModelEntity should be at offset 0xD14");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_flShadowStrength) == 0xD18, "m_flShadowStrength in C_BaseModelEntity should be at offset 0xD18");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nObjectCulling) == 0xD1C, "m_nObjectCulling in C_BaseModelEntity should be at offset 0xD1C");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nAddDecal) == 0xD20, "m_nAddDecal in C_BaseModelEntity should be at offset 0xD20");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vDecalPosition) == 0xD24, "m_vDecalPosition in C_BaseModelEntity should be at offset 0xD24");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vDecalForwardAxis) == 0xD30, "m_vDecalForwardAxis in C_BaseModelEntity should be at offset 0xD30");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nDecalMode) == 0xD3C, "m_nDecalMode in C_BaseModelEntity should be at offset 0xD3C");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nRequiredDecalMode) == 0xD3D, "m_nRequiredDecalMode in C_BaseModelEntity should be at offset 0xD3D");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_ConfigEntitiesToPropagateMaterialDecalsTo) == 0xD40, "m_ConfigEntitiesToPropagateMaterialDecalsTo in C_BaseModelEntity should be at offset 0xD40");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_vecViewOffset) == 0xD80, "m_vecViewOffset in C_BaseModelEntity should be at offset 0xD80");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_pClientAlphaProperty) == 0xE60, "m_pClientAlphaProperty in C_BaseModelEntity should be at offset 0xE60");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_ClientOverrideTint) == 0xE68, "m_ClientOverrideTint in C_BaseModelEntity should be at offset 0xE68");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bUseClientOverrideTint) == 0xE6C, "m_bUseClientOverrideTint in C_BaseModelEntity should be at offset 0xE6C");
+		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bvDisabledHitGroups) == 0xEA8, "m_bvDisabledHitGroups in C_BaseModelEntity should be at offset 0xEA8");
+		static_assert(sizeof(CS2::client::C_BaseModelEntity) == 0xEB0, "C_BaseModelEntity size should be 0xEB0");
 	}
 }

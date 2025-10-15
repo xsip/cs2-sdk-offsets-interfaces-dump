@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace client {
 		class C_MolotovProjectile : public CS2::client::C_BaseCSGrenadeProjectile {
 		public:
-			bool m_bIsIncGrenade; // 0x1468 | Schema_Builtin | Size: 0x1
+			bool m_bIsIncGrenade; // 0x1450 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x27); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_MolotovProjectile, m_bIsIncGrenade) == 0x1468, "m_bIsIncGrenade in C_MolotovProjectile should be at offset 0x1468");
-		static_assert(sizeof(CS2::client::C_MolotovProjectile) == 0x1490, "C_MolotovProjectile size should be 0x1490");
+		static_assert(offsetof(CS2::client::C_MolotovProjectile, m_bIsIncGrenade) == 0x1450, "m_bIsIncGrenade in C_MolotovProjectile should be at offset 0x1450");
+		static_assert(sizeof(CS2::client::C_MolotovProjectile) == 0x1478, "C_MolotovProjectile size should be 0x1478");
 	}
 }

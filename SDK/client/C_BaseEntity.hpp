@@ -41,9 +41,10 @@ namespace CS2 {
 			client::CCollisionProperty* m_pCollision; // 0x340 | Schema_Ptr | Size: 0x8
 			int32_t m_iMaxHealth; // 0x348 | Schema_Builtin | Size: 0x4
 			int32_t m_iHealth; // 0x34c | Schema_Builtin | Size: 0x4
-			uint8_t m_lifeState; // 0x350 | Schema_Builtin | Size: 0x1
-			bool m_bTakesDamage; // 0x351 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x6);
+			float32 m_flDamageAccumulator; // 0x350 | Schema_Builtin | Size: 0x4
+			uint8_t m_lifeState; // 0x354 | Schema_Builtin | Size: 0x1
+			bool m_bTakesDamage; // 0x355 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2);
 			client::TakeDamageFlags_t m_nTakeDamageFlags; // 0x358 | Schema_DeclaredEnum | Size: 0x8
 			client::EntityPlatformTypes_t m_nPlatformType; // 0x360 | Schema_DeclaredEnum | Size: 0x1
 			uint8_t m_ubInterpolationFrame; // 0x361 | Schema_Builtin | Size: 0x1
@@ -147,8 +148,9 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_pCollision) == 0x340, "m_pCollision in C_BaseEntity should be at offset 0x340");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_iMaxHealth) == 0x348, "m_iMaxHealth in C_BaseEntity should be at offset 0x348");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_iHealth) == 0x34C, "m_iHealth in C_BaseEntity should be at offset 0x34C");
-		static_assert(offsetof(CS2::client::C_BaseEntity, m_lifeState) == 0x350, "m_lifeState in C_BaseEntity should be at offset 0x350");
-		static_assert(offsetof(CS2::client::C_BaseEntity, m_bTakesDamage) == 0x351, "m_bTakesDamage in C_BaseEntity should be at offset 0x351");
+		static_assert(offsetof(CS2::client::C_BaseEntity, m_flDamageAccumulator) == 0x350, "m_flDamageAccumulator in C_BaseEntity should be at offset 0x350");
+		static_assert(offsetof(CS2::client::C_BaseEntity, m_lifeState) == 0x354, "m_lifeState in C_BaseEntity should be at offset 0x354");
+		static_assert(offsetof(CS2::client::C_BaseEntity, m_bTakesDamage) == 0x355, "m_bTakesDamage in C_BaseEntity should be at offset 0x355");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_nTakeDamageFlags) == 0x358, "m_nTakeDamageFlags in C_BaseEntity should be at offset 0x358");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_nPlatformType) == 0x360, "m_nPlatformType in C_BaseEntity should be at offset 0x360");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_ubInterpolationFrame) == 0x361, "m_ubInterpolationFrame in C_BaseEntity should be at offset 0x361");

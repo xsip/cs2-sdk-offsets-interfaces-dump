@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x330
+			// Class size: 0x350
 			namespace C_OP_ChooseRandomChildrenInGroup /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nChildGroupID = 0x1c8; // int32_t m_nChildGroupID; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNumberOfChildren = 0x1d0; // particleslib::CParticleCollectionFloatInput m_flNumberOfChildren; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_nChildGroupID = 0x1d8; // int32_t m_nChildGroupID; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNumberOfChildren = 0x1e0; // particleslib::CParticleCollectionFloatInput m_flNumberOfChildren; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

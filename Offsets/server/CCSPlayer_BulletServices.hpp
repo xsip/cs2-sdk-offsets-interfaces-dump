@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x48
+			// Class size: 0x68
 			namespace CCSPlayer_BulletServices /*: public CS2::client::CPlayerPawnComponent*/ {
 				constexpr std::ptrdiff_t m_totalHitsOnServer = 0x40; // int32_t m_totalHitsOnServer; |  0x40 | Schema_Builtin | Size: 0x4
 			}

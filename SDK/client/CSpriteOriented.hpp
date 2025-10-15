@@ -14,6 +14,6 @@ namespace CS2 {
 		class CSpriteOriented : public CS2::client::C_Sprite {
 		public:
 		};
-		static_assert(sizeof(CS2::client::CSpriteOriented) == 0xF40, "CSpriteOriented size should be 0xF40");
+		static_assert(sizeof(CS2::client::CSpriteOriented) == 0xF28, "CSpriteOriented size should be 0xF28");
 	}
 }

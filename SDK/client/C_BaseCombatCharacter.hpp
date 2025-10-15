@@ -15,22 +15,22 @@ namespace CS2 {
 	namespace client {
 		class C_BaseCombatCharacter : public CS2::client::C_BaseFlex {
 		public:
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_EconWearable > > m_hMyWearables; // 0x1380 | Schema_Atomic | Size: 0x18
-			char  m_hMyWearables[0x18]; // 0x1380 | Schema_Atomic | Size: 0x18
-			modellib::AttachmentHandle_t m_leftFootAttachment; // 0x1398 | Schema_DeclaredClass | Size: 0x1
-			modellib::AttachmentHandle_t m_rightFootAttachment; // 0x1399 | Schema_DeclaredClass | Size: 0x1
+			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_EconWearable > > m_hMyWearables; // 0x1368 | Schema_Atomic | Size: 0x18
+			char  m_hMyWearables[0x18]; // 0x1368 | Schema_Atomic | Size: 0x18
+			modellib::AttachmentHandle_t m_leftFootAttachment; // 0x1380 | Schema_DeclaredClass | Size: 0x1
+			modellib::AttachmentHandle_t m_rightFootAttachment; // 0x1381 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x2);
-			client::WaterWakeMode_t m_nWaterWakeMode; // 0x139c | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flWaterWorldZ; // 0x13a0 | Schema_Builtin | Size: 0x4
-			float32 m_flWaterNextTraceTime; // 0x13a4 | Schema_Builtin | Size: 0x4
+			client::WaterWakeMode_t m_nWaterWakeMode; // 0x1384 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flWaterWorldZ; // 0x1388 | Schema_Builtin | Size: 0x4
+			float32 m_flWaterNextTraceTime; // 0x138c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x60); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_hMyWearables) == 0x1380, "m_hMyWearables in C_BaseCombatCharacter should be at offset 0x1380");
-		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_leftFootAttachment) == 0x1398, "m_leftFootAttachment in C_BaseCombatCharacter should be at offset 0x1398");
-		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_rightFootAttachment) == 0x1399, "m_rightFootAttachment in C_BaseCombatCharacter should be at offset 0x1399");
-		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_nWaterWakeMode) == 0x139C, "m_nWaterWakeMode in C_BaseCombatCharacter should be at offset 0x139C");
-		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_flWaterWorldZ) == 0x13A0, "m_flWaterWorldZ in C_BaseCombatCharacter should be at offset 0x13A0");
-		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_flWaterNextTraceTime) == 0x13A4, "m_flWaterNextTraceTime in C_BaseCombatCharacter should be at offset 0x13A4");
-		static_assert(sizeof(CS2::client::C_BaseCombatCharacter) == 0x1408, "C_BaseCombatCharacter size should be 0x1408");
+		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_hMyWearables) == 0x1368, "m_hMyWearables in C_BaseCombatCharacter should be at offset 0x1368");
+		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_leftFootAttachment) == 0x1380, "m_leftFootAttachment in C_BaseCombatCharacter should be at offset 0x1380");
+		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_rightFootAttachment) == 0x1381, "m_rightFootAttachment in C_BaseCombatCharacter should be at offset 0x1381");
+		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_nWaterWakeMode) == 0x1384, "m_nWaterWakeMode in C_BaseCombatCharacter should be at offset 0x1384");
+		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_flWaterWorldZ) == 0x1388, "m_flWaterWorldZ in C_BaseCombatCharacter should be at offset 0x1388");
+		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_flWaterNextTraceTime) == 0x138C, "m_flWaterNextTraceTime in C_BaseCombatCharacter should be at offset 0x138C");
+		static_assert(sizeof(CS2::client::C_BaseCombatCharacter) == 0x13F0, "C_BaseCombatCharacter size should be 0x13F0");
 	}
 }

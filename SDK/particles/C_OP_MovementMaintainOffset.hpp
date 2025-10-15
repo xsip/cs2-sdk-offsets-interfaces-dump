@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MovementMaintainOffset : public CS2::particles::CParticleFunctionOperator {
 		public:
-			GlobalTypes::Vector m_vecOffset; // 0x1c0 | Schema_Atomic | Size: 0xc
-			int32_t m_nCP; // 0x1cc | Schema_Builtin | Size: 0x4
-			bool m_bRadiusScale; // 0x1d0 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vecOffset; // 0x1d0 | Schema_Atomic | Size: 0xc
+			int32_t m_nCP; // 0x1dc | Schema_Builtin | Size: 0x4
+			bool m_bRadiusScale; // 0x1e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_vecOffset) == 0x1C0, "m_vecOffset in C_OP_MovementMaintainOffset should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_nCP) == 0x1CC, "m_nCP in C_OP_MovementMaintainOffset should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_bRadiusScale) == 0x1D0, "m_bRadiusScale in C_OP_MovementMaintainOffset should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_OP_MovementMaintainOffset) == 0x1D8, "C_OP_MovementMaintainOffset size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_vecOffset) == 0x1D0, "m_vecOffset in C_OP_MovementMaintainOffset should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_nCP) == 0x1DC, "m_nCP in C_OP_MovementMaintainOffset should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_bRadiusScale) == 0x1E0, "m_bRadiusScale in C_OP_MovementMaintainOffset should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_OP_MovementMaintainOffset) == 0x1E8, "C_OP_MovementMaintainOffset size should be 0x1E8");
 	}
 }

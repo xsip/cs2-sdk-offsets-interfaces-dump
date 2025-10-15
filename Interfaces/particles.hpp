@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace particles {
-			constexpr std::ptrdiff_t ParticleSystemMgr003 = 0x586870; 
+			constexpr std::ptrdiff_t ParticleSystemMgr003 = 0x555680; 
 		}
 	}
 }

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x858
+			// Class size: 0x840
 			namespace CMarkupVolumeWithRef /*: public CS2::server::CMarkupVolumeTagged*/ {
-				constexpr std::ptrdiff_t m_bUseRef = 0x838; // bool m_bUseRef; |  0x838 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vRefPosEntitySpace = 0x83c; // GlobalTypes::Vector m_vRefPosEntitySpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vRefPosWorldSpace = 0x848; // GlobalTypes::Vector m_vRefPosWorldSpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flRefDot = 0x854; // float32 m_flRefDot; |  0x854 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseRef = 0x820; // bool m_bUseRef; |  0x820 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vRefPosEntitySpace = 0x824; // GlobalTypes::Vector m_vRefPosEntitySpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vRefPosWorldSpace = 0x830; // GlobalTypes::VectorWS m_vRefPosWorldSpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flRefDot = 0x83c; // float32 m_flRefDot; |  0x83c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

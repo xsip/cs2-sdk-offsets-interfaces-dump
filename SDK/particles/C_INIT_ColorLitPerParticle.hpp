@@ -15,22 +15,22 @@ namespace CS2 {
 		class C_INIT_ColorLitPerParticle : public CS2::particles::CParticleFunctionInitializer {
 		public:
 			S2_PAD(0x18);
-			GlobalTypes::Color m_ColorMin; // 0x1e0 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Color m_ColorMax; // 0x1e4 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Color m_TintMin; // 0x1e8 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Color m_TintMax; // 0x1ec | Schema_Atomic | Size: 0x4
-			float32 m_flTintPerc; // 0x1f0 | Schema_Builtin | Size: 0x4
-			particles::ParticleColorBlendMode_t m_nTintBlendMode; // 0x1f4 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flLightAmplification; // 0x1f8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_ColorMin; // 0x1f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_ColorMax; // 0x1f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_TintMin; // 0x1f8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_TintMax; // 0x1fc | Schema_Atomic | Size: 0x4
+			float32 m_flTintPerc; // 0x200 | Schema_Builtin | Size: 0x4
+			particles::ParticleColorBlendMode_t m_nTintBlendMode; // 0x204 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flLightAmplification; // 0x208 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_ColorMin) == 0x1E0, "m_ColorMin in C_INIT_ColorLitPerParticle should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_ColorMax) == 0x1E4, "m_ColorMax in C_INIT_ColorLitPerParticle should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_TintMin) == 0x1E8, "m_TintMin in C_INIT_ColorLitPerParticle should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_TintMax) == 0x1EC, "m_TintMax in C_INIT_ColorLitPerParticle should be at offset 0x1EC");
-		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_flTintPerc) == 0x1F0, "m_flTintPerc in C_INIT_ColorLitPerParticle should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_nTintBlendMode) == 0x1F4, "m_nTintBlendMode in C_INIT_ColorLitPerParticle should be at offset 0x1F4");
-		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_flLightAmplification) == 0x1F8, "m_flLightAmplification in C_INIT_ColorLitPerParticle should be at offset 0x1F8");
-		static_assert(sizeof(CS2::particles::C_INIT_ColorLitPerParticle) == 0x200, "C_INIT_ColorLitPerParticle size should be 0x200");
+		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_ColorMin) == 0x1F0, "m_ColorMin in C_INIT_ColorLitPerParticle should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_ColorMax) == 0x1F4, "m_ColorMax in C_INIT_ColorLitPerParticle should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_TintMin) == 0x1F8, "m_TintMin in C_INIT_ColorLitPerParticle should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_TintMax) == 0x1FC, "m_TintMax in C_INIT_ColorLitPerParticle should be at offset 0x1FC");
+		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_flTintPerc) == 0x200, "m_flTintPerc in C_INIT_ColorLitPerParticle should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_nTintBlendMode) == 0x204, "m_nTintBlendMode in C_INIT_ColorLitPerParticle should be at offset 0x204");
+		static_assert(offsetof(CS2::particles::C_INIT_ColorLitPerParticle, m_flLightAmplification) == 0x208, "m_flLightAmplification in C_INIT_ColorLitPerParticle should be at offset 0x208");
+		static_assert(sizeof(CS2::particles::C_INIT_ColorLitPerParticle) == 0x210, "C_INIT_ColorLitPerParticle size should be 0x210");
 	}
 }

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x13B8
+			// Class size: 0x13B0
 			namespace C_CSGO_TeamPreviewCharacterPosition /*: public CS2::client::C_BaseEntity*/ {
 				constexpr std::ptrdiff_t m_nVariant = 0x5f8; // int32_t m_nVariant; |  0x5f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nRandom = 0x5fc; // int32_t m_nRandom; |  0x5fc | Schema_Builtin | Size: 0x4

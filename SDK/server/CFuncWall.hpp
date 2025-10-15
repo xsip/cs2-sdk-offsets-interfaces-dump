@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CFuncWall : public CS2::server::CBaseModelEntity {
 		public:
-			int32_t m_nState; // 0x7f0 | Schema_Builtin | Size: 0x4
+			int32_t m_nState; // 0x7d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncWall, m_nState) == 0x7F0, "m_nState in CFuncWall should be at offset 0x7F0");
-		static_assert(sizeof(CS2::server::CFuncWall) == 0x7F8, "CFuncWall size should be 0x7F8");
+		static_assert(offsetof(CS2::server::CFuncWall, m_nState) == 0x7D8, "m_nState in CFuncWall should be at offset 0x7D8");
+		static_assert(sizeof(CS2::server::CFuncWall) == 0x7E0, "CFuncWall size should be 0x7E0");
 	}
 }

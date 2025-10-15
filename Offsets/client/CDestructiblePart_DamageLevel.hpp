@@ -14,8 +14,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_sBreakablePieceName = 0x8; // GlobalTypes::CGlobalSymbol m_sBreakablePieceName; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nBodyGroupValue = 0x10; // int32_t m_nBodyGroupValue; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHealth = 0x14; // client::CSkillInt m_nHealth; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_nDamagePassthroughType = 0x24; // client::EDestructiblePartDamagePassThroughType m_nDamagePassthroughType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructionDeathBehavior = 0x28; // client::DestructiblePartDestructionDeathBehavior_t m_nDestructionDeathBehavior; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flCriticalDamagePercent = 0x24; // float32 m_flCriticalDamagePercent; |  0x24 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDamagePassthroughType = 0x28; // client::EDestructiblePartDamagePassThroughType m_nDamagePassthroughType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructionDeathBehavior = 0x2c; // client::DestructiblePartDestructionDeathBehavior_t m_nDestructionDeathBehavior; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_sCustomDeathHandshake = 0x30; // GlobalTypes::CGlobalSymbol m_sCustomDeathHandshake; |  Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bShouldDestroyOnDeath = 0x38; // bool m_bShouldDestroyOnDeath; |  0x38 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flDeathDestroyTime = 0x3c; // tier2::CRangeFloat m_flDeathDestroyTime; |  Schema_DeclaredClass | Size: 0x8

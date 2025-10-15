@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xFD8
+			// Class size: 0xFC0
 			namespace C_PlayerSprayDecal /*: public CS2::client::C_ModelPointEntity*/ {
-				constexpr std::ptrdiff_t m_nUniqueID = 0xec8; // int32_t m_nUniqueID; |  0xec8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unAccountID = 0xecc; // uint32_t m_unAccountID; |  0xecc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unTraceID = 0xed0; // uint32_t m_unTraceID; |  0xed0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_rtGcTime = 0xed4; // uint32_t m_rtGcTime; |  0xed4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecEndPos = 0xed8; // GlobalTypes::Vector m_vecEndPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecStart = 0xee4; // GlobalTypes::Vector m_vecStart; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecLeft = 0xef0; // GlobalTypes::Vector m_vecLeft; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecNormal = 0xefc; // GlobalTypes::Vector m_vecNormal; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nPlayer = 0xf08; // int32_t m_nPlayer; |  0xf08 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nEntity = 0xf0c; // int32_t m_nEntity; |  0xf0c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nHitbox = 0xf10; // int32_t m_nHitbox; |  0xf10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCreationTime = 0xf14; // float32 m_flCreationTime; |  0xf14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTintID = 0xf18; // int32_t m_nTintID; |  0xf18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nVersion = 0xf1c; // uint8_t m_nVersion; |  0xf1c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_ubSignature = 0xf1d; // uint8_t m_ubSignature[128]; |  0xf1d | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_SprayRenderHelper = 0xfa8; // client::CPlayerSprayDecalRenderHelper m_SprayRenderHelper; |  Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_nUniqueID = 0xeb0; // int32_t m_nUniqueID; |  0xeb0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_unAccountID = 0xeb4; // uint32_t m_unAccountID; |  0xeb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_unTraceID = 0xeb8; // uint32_t m_unTraceID; |  0xeb8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_rtGcTime = 0xebc; // uint32_t m_rtGcTime; |  0xebc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecEndPos = 0xec0; // GlobalTypes::Vector m_vecEndPos; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecStart = 0xecc; // GlobalTypes::Vector m_vecStart; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLeft = 0xed8; // GlobalTypes::Vector m_vecLeft; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNormal = 0xee4; // GlobalTypes::Vector m_vecNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nPlayer = 0xef0; // int32_t m_nPlayer; |  0xef0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nEntity = 0xef4; // int32_t m_nEntity; |  0xef4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nHitbox = 0xef8; // int32_t m_nHitbox; |  0xef8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCreationTime = 0xefc; // float32 m_flCreationTime; |  0xefc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTintID = 0xf00; // int32_t m_nTintID; |  0xf00 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nVersion = 0xf04; // uint8_t m_nVersion; |  0xf04 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_ubSignature = 0xf05; // uint8_t m_ubSignature[128]; |  0xf05 | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_SprayRenderHelper = 0xf90; // client::CPlayerSprayDecalRenderHelper m_SprayRenderHelper; |  Schema_DeclaredClass | Size: 0x30
 			}
 		}
 	}

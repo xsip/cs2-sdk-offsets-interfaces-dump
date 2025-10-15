@@ -16,32 +16,32 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitFromCPSnapshot : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x1d0 | Schema_Atomic | Size: 0x8
-			particles::ParticleAttributeIndex_t m_nAttributeToRead; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAttributeToWrite; // 0x1dc | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nLocalSpaceCP; // 0x1e0 | Schema_Builtin | Size: 0x4
-			bool m_bRandom; // 0x1e4 | Schema_Builtin | Size: 0x1
-			bool m_bReverse; // 0x1e5 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x1e0 | Schema_Atomic | Size: 0x8
+			particles::ParticleAttributeIndex_t m_nAttributeToRead; // 0x1e8 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAttributeToWrite; // 0x1ec | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nLocalSpaceCP; // 0x1f0 | Schema_Builtin | Size: 0x4
+			bool m_bRandom; // 0x1f4 | Schema_Builtin | Size: 0x1
+			bool m_bReverse; // 0x1f5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particleslib::CParticleCollectionFloatInput m_nSnapShotIncrement; // 0x1e8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_nManualSnapshotIndex; // 0x348 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nRandomSeed; // 0x4a8 | Schema_Builtin | Size: 0x4
-			bool m_bLocalSpaceAngles; // 0x4ac | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_nSnapShotIncrement; // 0x1f8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_nManualSnapshotIndex; // 0x368 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nRandomSeed; // 0x4d8 | Schema_Builtin | Size: 0x4
+			bool m_bLocalSpaceAngles; // 0x4dc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_InitFromCPSnapshot should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_strSnapshotSubset) == 0x1D0, "m_strSnapshotSubset in C_INIT_InitFromCPSnapshot should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nAttributeToRead) == 0x1D8, "m_nAttributeToRead in C_INIT_InitFromCPSnapshot should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nAttributeToWrite) == 0x1DC, "m_nAttributeToWrite in C_INIT_InitFromCPSnapshot should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nLocalSpaceCP) == 0x1E0, "m_nLocalSpaceCP in C_INIT_InitFromCPSnapshot should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_bRandom) == 0x1E4, "m_bRandom in C_INIT_InitFromCPSnapshot should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_bReverse) == 0x1E5, "m_bReverse in C_INIT_InitFromCPSnapshot should be at offset 0x1E5");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nSnapShotIncrement) == 0x1E8, "m_nSnapShotIncrement in C_INIT_InitFromCPSnapshot should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nManualSnapshotIndex) == 0x348, "m_nManualSnapshotIndex in C_INIT_InitFromCPSnapshot should be at offset 0x348");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nRandomSeed) == 0x4A8, "m_nRandomSeed in C_INIT_InitFromCPSnapshot should be at offset 0x4A8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_bLocalSpaceAngles) == 0x4AC, "m_bLocalSpaceAngles in C_INIT_InitFromCPSnapshot should be at offset 0x4AC");
-		static_assert(sizeof(CS2::particles::C_INIT_InitFromCPSnapshot) == 0x4B0, "C_INIT_InitFromCPSnapshot size should be 0x4B0");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_InitFromCPSnapshot should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_strSnapshotSubset) == 0x1E0, "m_strSnapshotSubset in C_INIT_InitFromCPSnapshot should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nAttributeToRead) == 0x1E8, "m_nAttributeToRead in C_INIT_InitFromCPSnapshot should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nAttributeToWrite) == 0x1EC, "m_nAttributeToWrite in C_INIT_InitFromCPSnapshot should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nLocalSpaceCP) == 0x1F0, "m_nLocalSpaceCP in C_INIT_InitFromCPSnapshot should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_bRandom) == 0x1F4, "m_bRandom in C_INIT_InitFromCPSnapshot should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_bReverse) == 0x1F5, "m_bReverse in C_INIT_InitFromCPSnapshot should be at offset 0x1F5");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nSnapShotIncrement) == 0x1F8, "m_nSnapShotIncrement in C_INIT_InitFromCPSnapshot should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nManualSnapshotIndex) == 0x368, "m_nManualSnapshotIndex in C_INIT_InitFromCPSnapshot should be at offset 0x368");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nRandomSeed) == 0x4D8, "m_nRandomSeed in C_INIT_InitFromCPSnapshot should be at offset 0x4D8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_bLocalSpaceAngles) == 0x4DC, "m_bLocalSpaceAngles in C_INIT_InitFromCPSnapshot should be at offset 0x4DC");
+		static_assert(sizeof(CS2::particles::C_INIT_InitFromCPSnapshot) == 0x4E0, "C_INIT_InitFromCPSnapshot size should be 0x4E0");
 	}
 }

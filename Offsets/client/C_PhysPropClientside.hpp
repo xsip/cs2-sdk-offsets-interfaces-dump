@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1340
+			// Class size: 0x1330
 			namespace C_PhysPropClientside /*: public CS2::client::C_BreakableProp*/ {
-				constexpr std::ptrdiff_t m_flTouchDelta = 0x1310; // entity2::GameTime_t m_flTouchDelta; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_fDeathTime = 0x1314; // entity2::GameTime_t m_fDeathTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecDamagePosition = 0x1318; // GlobalTypes::Vector m_vecDamagePosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecDamageDirection = 0x1324; // GlobalTypes::Vector m_vecDamageDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nDamageType = 0x1330; // client::DamageTypes_t m_nDamageType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flTouchDelta = 0x1300; // entity2::GameTime_t m_flTouchDelta; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fDeathTime = 0x1304; // entity2::GameTime_t m_fDeathTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecDamagePosition = 0x1308; // GlobalTypes::Vector m_vecDamagePosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecDamageDirection = 0x1314; // GlobalTypes::Vector m_vecDamageDirection; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nDamageType = 0x1320; // client::DamageTypes_t m_nDamageType; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

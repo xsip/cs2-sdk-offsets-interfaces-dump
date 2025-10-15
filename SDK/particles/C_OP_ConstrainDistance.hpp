@@ -14,18 +14,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ConstrainDistance : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			particleslib::CParticleCollectionFloatInput m_fMinDistance; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_fMaxDistance; // 0x320 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nControlPointNumber; // 0x480 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_CenterOffset; // 0x484 | Schema_Atomic | Size: 0xc
-			bool m_bGlobalCenter; // 0x490 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_fMinDistance; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_fMaxDistance; // 0x340 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nControlPointNumber; // 0x4b0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_CenterOffset; // 0x4b4 | Schema_Atomic | Size: 0xc
+			bool m_bGlobalCenter; // 0x4c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_fMinDistance) == 0x1C0, "m_fMinDistance in C_OP_ConstrainDistance should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_fMaxDistance) == 0x320, "m_fMaxDistance in C_OP_ConstrainDistance should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_nControlPointNumber) == 0x480, "m_nControlPointNumber in C_OP_ConstrainDistance should be at offset 0x480");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_CenterOffset) == 0x484, "m_CenterOffset in C_OP_ConstrainDistance should be at offset 0x484");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_bGlobalCenter) == 0x490, "m_bGlobalCenter in C_OP_ConstrainDistance should be at offset 0x490");
-		static_assert(sizeof(CS2::particles::C_OP_ConstrainDistance) == 0x498, "C_OP_ConstrainDistance size should be 0x498");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_fMinDistance) == 0x1D0, "m_fMinDistance in C_OP_ConstrainDistance should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_fMaxDistance) == 0x340, "m_fMaxDistance in C_OP_ConstrainDistance should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_nControlPointNumber) == 0x4B0, "m_nControlPointNumber in C_OP_ConstrainDistance should be at offset 0x4B0");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_CenterOffset) == 0x4B4, "m_CenterOffset in C_OP_ConstrainDistance should be at offset 0x4B4");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_bGlobalCenter) == 0x4C0, "m_bGlobalCenter in C_OP_ConstrainDistance should be at offset 0x4C0");
+		static_assert(sizeof(CS2::particles::C_OP_ConstrainDistance) == 0x4C8, "C_OP_ConstrainDistance size should be 0x4C8");
 	}
 }

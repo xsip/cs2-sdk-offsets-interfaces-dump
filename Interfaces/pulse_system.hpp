@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace pulse_system {
-			constexpr std::ptrdiff_t IPulseSystem_001 = 0x1ebc00; 
+			constexpr std::ptrdiff_t IPulseSystem_001 = 0x1f0e30; 
 		}
 	}
 }

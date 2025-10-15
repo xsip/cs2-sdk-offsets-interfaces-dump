@@ -13,17 +13,17 @@ namespace CS2 {
 	namespace server {
 		class CTriggerImpact : public CS2::server::CTriggerMultiple {
 		public:
-			float32 m_flMagnitude; // 0x9e8 | Schema_Builtin | Size: 0x4
-			float32 m_flNoise; // 0x9ec | Schema_Builtin | Size: 0x4
-			float32 m_flViewkick; // 0x9f0 | Schema_Builtin | Size: 0x4
+			float32 m_flMagnitude; // 0x9d0 | Schema_Builtin | Size: 0x4
+			float32 m_flNoise; // 0x9d4 | Schema_Builtin | Size: 0x4
+			float32 m_flViewkick; // 0x9d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::Vector > m_pOutputForce; // 0x9f8 | Schema_Atomic | Size: 0x28
-			char  m_pOutputForce[0x28]; // 0x9f8 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::Vector > m_pOutputForce; // 0x9e0 | Schema_Atomic | Size: 0x28
+			char  m_pOutputForce[0x28]; // 0x9e0 | Schema_Atomic | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CTriggerImpact, m_flMagnitude) == 0x9E8, "m_flMagnitude in CTriggerImpact should be at offset 0x9E8");
-		static_assert(offsetof(CS2::server::CTriggerImpact, m_flNoise) == 0x9EC, "m_flNoise in CTriggerImpact should be at offset 0x9EC");
-		static_assert(offsetof(CS2::server::CTriggerImpact, m_flViewkick) == 0x9F0, "m_flViewkick in CTriggerImpact should be at offset 0x9F0");
-		static_assert(offsetof(CS2::server::CTriggerImpact, m_pOutputForce) == 0x9F8, "m_pOutputForce in CTriggerImpact should be at offset 0x9F8");
-		static_assert(sizeof(CS2::server::CTriggerImpact) == 0xA20, "CTriggerImpact size should be 0xA20");
+		static_assert(offsetof(CS2::server::CTriggerImpact, m_flMagnitude) == 0x9D0, "m_flMagnitude in CTriggerImpact should be at offset 0x9D0");
+		static_assert(offsetof(CS2::server::CTriggerImpact, m_flNoise) == 0x9D4, "m_flNoise in CTriggerImpact should be at offset 0x9D4");
+		static_assert(offsetof(CS2::server::CTriggerImpact, m_flViewkick) == 0x9D8, "m_flViewkick in CTriggerImpact should be at offset 0x9D8");
+		static_assert(offsetof(CS2::server::CTriggerImpact, m_pOutputForce) == 0x9E0, "m_pOutputForce in CTriggerImpact should be at offset 0x9E0");
+		static_assert(sizeof(CS2::server::CTriggerImpact) == 0xA08, "CTriggerImpact size should be 0xA08");
 	}
 }

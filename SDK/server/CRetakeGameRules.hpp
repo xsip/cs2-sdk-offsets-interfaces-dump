@@ -19,13 +19,13 @@ namespace CS2 {
 			S2_PAD(0x2);
 			int32_t m_iFirstSecondHalfRound; // 0x100 | Schema_Builtin | Size: 0x4
 			int32_t m_iBombSite; // 0x104 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x90); // End padding
+			S2_PAD(0x88); // End padding
 		};
 		static_assert(offsetof(CS2::server::CRetakeGameRules, m_nMatchSeed) == 0xF8, "m_nMatchSeed in CRetakeGameRules should be at offset 0xF8");
 		static_assert(offsetof(CS2::server::CRetakeGameRules, m_bBlockersPresent) == 0xFC, "m_bBlockersPresent in CRetakeGameRules should be at offset 0xFC");
 		static_assert(offsetof(CS2::server::CRetakeGameRules, m_bRoundInProgress) == 0xFD, "m_bRoundInProgress in CRetakeGameRules should be at offset 0xFD");
 		static_assert(offsetof(CS2::server::CRetakeGameRules, m_iFirstSecondHalfRound) == 0x100, "m_iFirstSecondHalfRound in CRetakeGameRules should be at offset 0x100");
 		static_assert(offsetof(CS2::server::CRetakeGameRules, m_iBombSite) == 0x104, "m_iBombSite in CRetakeGameRules should be at offset 0x104");
-		static_assert(sizeof(CS2::server::CRetakeGameRules) == 0x198, "CRetakeGameRules size should be 0x198");
+		static_assert(sizeof(CS2::server::CRetakeGameRules) == 0x190, "CRetakeGameRules size should be 0x190");
 	}
 }

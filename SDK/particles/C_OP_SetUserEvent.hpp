@@ -15,19 +15,19 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetUserEvent : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CPerParticleFloatInput m_flInput; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRisingEdge; // 0x320 | Schema_DeclaredClass | Size: 0x160
-			particles::EventTypeSelection_t m_nRisingEventType; // 0x480 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flInput; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRisingEdge; // 0x340 | Schema_DeclaredClass | Size: 0x170
+			particles::EventTypeSelection_t m_nRisingEventType; // 0x4b0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flFallingEdge; // 0x488 | Schema_DeclaredClass | Size: 0x160
-			particles::EventTypeSelection_t m_nFallingEventType; // 0x5e8 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flFallingEdge; // 0x4b8 | Schema_DeclaredClass | Size: 0x170
+			particles::EventTypeSelection_t m_nFallingEventType; // 0x628 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flInput) == 0x1C0, "m_flInput in C_OP_SetUserEvent should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flRisingEdge) == 0x320, "m_flRisingEdge in C_OP_SetUserEvent should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_nRisingEventType) == 0x480, "m_nRisingEventType in C_OP_SetUserEvent should be at offset 0x480");
-		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flFallingEdge) == 0x488, "m_flFallingEdge in C_OP_SetUserEvent should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_nFallingEventType) == 0x5E8, "m_nFallingEventType in C_OP_SetUserEvent should be at offset 0x5E8");
-		static_assert(sizeof(CS2::particles::C_OP_SetUserEvent) == 0x5F0, "C_OP_SetUserEvent size should be 0x5F0");
+		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flInput) == 0x1D0, "m_flInput in C_OP_SetUserEvent should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flRisingEdge) == 0x340, "m_flRisingEdge in C_OP_SetUserEvent should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_nRisingEventType) == 0x4B0, "m_nRisingEventType in C_OP_SetUserEvent should be at offset 0x4B0");
+		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flFallingEdge) == 0x4B8, "m_flFallingEdge in C_OP_SetUserEvent should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_nFallingEventType) == 0x628, "m_nFallingEventType in C_OP_SetUserEvent should be at offset 0x628");
+		static_assert(sizeof(CS2::particles::C_OP_SetUserEvent) == 0x630, "C_OP_SetUserEvent size should be 0x630");
 	}
 }

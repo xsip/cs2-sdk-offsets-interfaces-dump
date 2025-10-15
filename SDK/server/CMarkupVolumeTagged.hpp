@@ -13,24 +13,24 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged : public CS2::server::CMarkupVolume {
 		public:
-			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_GroupNames; // 0x7f8 | Schema_Atomic | Size: 0x18
-			char  m_GroupNames[0x18]; // 0x7f8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_Tags; // 0x810 | Schema_Atomic | Size: 0x18
-			char  m_Tags[0x18]; // 0x810 | Schema_Atomic | Size: 0x18
-			bool m_bIsGroup; // 0x828 | Schema_Builtin | Size: 0x1
-			bool m_bGroupByPrefab; // 0x829 | Schema_Builtin | Size: 0x1
-			bool m_bGroupByVolume; // 0x82a | Schema_Builtin | Size: 0x1
-			bool m_bGroupOtherGroups; // 0x82b | Schema_Builtin | Size: 0x1
-			bool m_bIsInGroup; // 0x82c | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_GroupNames; // 0x7e0 | Schema_Atomic | Size: 0x18
+			char  m_GroupNames[0x18]; // 0x7e0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_Tags; // 0x7f8 | Schema_Atomic | Size: 0x18
+			char  m_Tags[0x18]; // 0x7f8 | Schema_Atomic | Size: 0x18
+			bool m_bIsGroup; // 0x810 | Schema_Builtin | Size: 0x1
+			bool m_bGroupByPrefab; // 0x811 | Schema_Builtin | Size: 0x1
+			bool m_bGroupByVolume; // 0x812 | Schema_Builtin | Size: 0x1
+			bool m_bGroupOtherGroups; // 0x813 | Schema_Builtin | Size: 0x1
+			bool m_bIsInGroup; // 0x814 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_GroupNames) == 0x7F8, "m_GroupNames in CMarkupVolumeTagged should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_Tags) == 0x810, "m_Tags in CMarkupVolumeTagged should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bIsGroup) == 0x828, "m_bIsGroup in CMarkupVolumeTagged should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bGroupByPrefab) == 0x829, "m_bGroupByPrefab in CMarkupVolumeTagged should be at offset 0x829");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bGroupByVolume) == 0x82A, "m_bGroupByVolume in CMarkupVolumeTagged should be at offset 0x82A");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bGroupOtherGroups) == 0x82B, "m_bGroupOtherGroups in CMarkupVolumeTagged should be at offset 0x82B");
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bIsInGroup) == 0x82C, "m_bIsInGroup in CMarkupVolumeTagged should be at offset 0x82C");
-		static_assert(sizeof(CS2::server::CMarkupVolumeTagged) == 0x830, "CMarkupVolumeTagged size should be 0x830");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_GroupNames) == 0x7E0, "m_GroupNames in CMarkupVolumeTagged should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_Tags) == 0x7F8, "m_Tags in CMarkupVolumeTagged should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bIsGroup) == 0x810, "m_bIsGroup in CMarkupVolumeTagged should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bGroupByPrefab) == 0x811, "m_bGroupByPrefab in CMarkupVolumeTagged should be at offset 0x811");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bGroupByVolume) == 0x812, "m_bGroupByVolume in CMarkupVolumeTagged should be at offset 0x812");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bGroupOtherGroups) == 0x813, "m_bGroupOtherGroups in CMarkupVolumeTagged should be at offset 0x813");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bIsInGroup) == 0x814, "m_bIsInGroup in CMarkupVolumeTagged should be at offset 0x814");
+		static_assert(sizeof(CS2::server::CMarkupVolumeTagged) == 0x818, "CMarkupVolumeTagged size should be 0x818");
 	}
 }

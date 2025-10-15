@@ -16,31 +16,32 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CChoiceUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
-			// GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x58 | Schema_Atomic | Size: 0x18
-			char  m_children[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_weights; // 0x70 | Schema_Atomic | Size: 0x18
-			char  m_weights[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_blendTimes; // 0x88 | Schema_Atomic | Size: 0x18
-			char  m_blendTimes[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
-			animgraphlib::ChoiceMethod m_choiceMethod; // 0xa0 | Schema_DeclaredEnum | Size: 0x4
-			animgraphlib::ChoiceChangeMethod m_choiceChangeMethod; // 0xa4 | Schema_DeclaredEnum | Size: 0x4
-			animgraphlib::ChoiceBlendMethod m_blendMethod; // 0xa8 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_blendTime; // 0xac | Schema_Builtin | Size: 0x4
-			bool m_bCrossFade; // 0xb0 | Schema_Builtin | Size: 0x1
-			bool m_bResetChosen; // 0xb1 | Schema_Builtin | Size: 0x1
-			bool m_bDontResetSameSelection; // 0xb2 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x8);
+			// GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x60 | Schema_Atomic | Size: 0x18
+			char  m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< float32 > m_weights; // 0x78 | Schema_Atomic | Size: 0x18
+			char  m_weights[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< float32 > m_blendTimes; // 0x90 | Schema_Atomic | Size: 0x18
+			char  m_blendTimes[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			animgraphlib::ChoiceMethod m_choiceMethod; // 0xa8 | Schema_DeclaredEnum | Size: 0x4
+			animgraphlib::ChoiceChangeMethod m_choiceChangeMethod; // 0xac | Schema_DeclaredEnum | Size: 0x4
+			animgraphlib::ChoiceBlendMethod m_blendMethod; // 0xb0 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_blendTime; // 0xb4 | Schema_Builtin | Size: 0x4
+			bool m_bCrossFade; // 0xb8 | Schema_Builtin | Size: 0x1
+			bool m_bResetChosen; // 0xb9 | Schema_Builtin | Size: 0x1
+			bool m_bDontResetSameSelection; // 0xba | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_children) == 0x58, "m_children in CChoiceUpdateNode should be at offset 0x58");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_weights) == 0x70, "m_weights in CChoiceUpdateNode should be at offset 0x70");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_blendTimes) == 0x88, "m_blendTimes in CChoiceUpdateNode should be at offset 0x88");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_choiceMethod) == 0xA0, "m_choiceMethod in CChoiceUpdateNode should be at offset 0xA0");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_choiceChangeMethod) == 0xA4, "m_choiceChangeMethod in CChoiceUpdateNode should be at offset 0xA4");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_blendMethod) == 0xA8, "m_blendMethod in CChoiceUpdateNode should be at offset 0xA8");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_blendTime) == 0xAC, "m_blendTime in CChoiceUpdateNode should be at offset 0xAC");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bCrossFade) == 0xB0, "m_bCrossFade in CChoiceUpdateNode should be at offset 0xB0");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bResetChosen) == 0xB1, "m_bResetChosen in CChoiceUpdateNode should be at offset 0xB1");
-		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bDontResetSameSelection) == 0xB2, "m_bDontResetSameSelection in CChoiceUpdateNode should be at offset 0xB2");
-		static_assert(sizeof(CS2::animgraphlib::CChoiceUpdateNode) == 0xB8, "CChoiceUpdateNode size should be 0xB8");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_children) == 0x60, "m_children in CChoiceUpdateNode should be at offset 0x60");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_weights) == 0x78, "m_weights in CChoiceUpdateNode should be at offset 0x78");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_blendTimes) == 0x90, "m_blendTimes in CChoiceUpdateNode should be at offset 0x90");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_choiceMethod) == 0xA8, "m_choiceMethod in CChoiceUpdateNode should be at offset 0xA8");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_choiceChangeMethod) == 0xAC, "m_choiceChangeMethod in CChoiceUpdateNode should be at offset 0xAC");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_blendMethod) == 0xB0, "m_blendMethod in CChoiceUpdateNode should be at offset 0xB0");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_blendTime) == 0xB4, "m_blendTime in CChoiceUpdateNode should be at offset 0xB4");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bCrossFade) == 0xB8, "m_bCrossFade in CChoiceUpdateNode should be at offset 0xB8");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bResetChosen) == 0xB9, "m_bResetChosen in CChoiceUpdateNode should be at offset 0xB9");
+		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bDontResetSameSelection) == 0xBA, "m_bDontResetSameSelection in CChoiceUpdateNode should be at offset 0xBA");
+		static_assert(sizeof(CS2::animgraphlib::CChoiceUpdateNode) == 0xC0, "CChoiceUpdateNode size should be 0xC0");
 	}
 }

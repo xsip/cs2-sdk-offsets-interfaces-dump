@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1E0
+			// Class size: 0x1F0
 			namespace C_INIT_RandomAlpha /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nAlphaMin = 0x1cc; // int32_t m_nAlphaMin; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAlphaMax = 0x1d0; // int32_t m_nAlphaMax; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAlphaRandExponent = 0x1dc; // float32 m_flAlphaRandExponent; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nAlphaMin = 0x1dc; // int32_t m_nAlphaMin; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nAlphaMax = 0x1e0; // int32_t m_nAlphaMax; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAlphaRandExponent = 0x1ec; // float32 m_flAlphaRandExponent; |  0x1ec | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

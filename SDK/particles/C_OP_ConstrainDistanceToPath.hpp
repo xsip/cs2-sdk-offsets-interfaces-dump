@@ -15,24 +15,24 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ConstrainDistanceToPath : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			float32 m_fMinDistance; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxDistance0; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxDistanceMid; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxDistance1; // 0x1cc | Schema_Builtin | Size: 0x4
-			particles::CPathParameters m_PathParameters; // 0x1d0 | Schema_DeclaredClass | Size: 0x40
-			float32 m_flTravelTime; // 0x210 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldScale; // 0x214 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nManualTField; // 0x218 | Schema_DeclaredClass | Size: 0x4
+			float32 m_fMinDistance; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxDistance0; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxDistanceMid; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxDistance1; // 0x1dc | Schema_Builtin | Size: 0x4
+			particles::CPathParameters m_PathParameters; // 0x1e0 | Schema_DeclaredClass | Size: 0x40
+			float32 m_flTravelTime; // 0x220 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldScale; // 0x224 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nManualTField; // 0x228 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_fMinDistance) == 0x1C0, "m_fMinDistance in C_OP_ConstrainDistanceToPath should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistance0) == 0x1C4, "m_flMaxDistance0 in C_OP_ConstrainDistanceToPath should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistanceMid) == 0x1C8, "m_flMaxDistanceMid in C_OP_ConstrainDistanceToPath should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistance1) == 0x1CC, "m_flMaxDistance1 in C_OP_ConstrainDistanceToPath should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_PathParameters) == 0x1D0, "m_PathParameters in C_OP_ConstrainDistanceToPath should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flTravelTime) == 0x210, "m_flTravelTime in C_OP_ConstrainDistanceToPath should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_nFieldScale) == 0x214, "m_nFieldScale in C_OP_ConstrainDistanceToPath should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_nManualTField) == 0x218, "m_nManualTField in C_OP_ConstrainDistanceToPath should be at offset 0x218");
-		static_assert(sizeof(CS2::particles::C_OP_ConstrainDistanceToPath) == 0x220, "C_OP_ConstrainDistanceToPath size should be 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_fMinDistance) == 0x1D0, "m_fMinDistance in C_OP_ConstrainDistanceToPath should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistance0) == 0x1D4, "m_flMaxDistance0 in C_OP_ConstrainDistanceToPath should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistanceMid) == 0x1D8, "m_flMaxDistanceMid in C_OP_ConstrainDistanceToPath should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistance1) == 0x1DC, "m_flMaxDistance1 in C_OP_ConstrainDistanceToPath should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_PathParameters) == 0x1E0, "m_PathParameters in C_OP_ConstrainDistanceToPath should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flTravelTime) == 0x220, "m_flTravelTime in C_OP_ConstrainDistanceToPath should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_nFieldScale) == 0x224, "m_nFieldScale in C_OP_ConstrainDistanceToPath should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_nManualTField) == 0x228, "m_nManualTField in C_OP_ConstrainDistanceToPath should be at offset 0x228");
+		static_assert(sizeof(CS2::particles::C_OP_ConstrainDistanceToPath) == 0x230, "C_OP_ConstrainDistanceToPath size should be 0x230");
 	}
 }

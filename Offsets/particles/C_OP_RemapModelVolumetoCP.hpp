@@ -8,19 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1F0
+			// Class size: 0x200
 			namespace C_OP_RemapModelVolumetoCP /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nBBoxType = 0x1c8; // particles::BBoxVolumeType_t m_nBBoxType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nInControlPointNumber = 0x1cc; // int32_t m_nInControlPointNumber; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nOutControlPointNumber = 0x1d0; // int32_t m_nOutControlPointNumber; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nOutControlPointMaxNumber = 0x1d4; // int32_t m_nOutControlPointMaxNumber; |  0x1d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nField = 0x1d8; // int32_t m_nField; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMin = 0x1dc; // float32 m_flInputMin; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMax = 0x1e0; // float32 m_flInputMax; |  0x1e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputMin = 0x1e4; // float32 m_flOutputMin; |  0x1e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputMax = 0x1e8; // float32 m_flOutputMax; |  0x1e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bBBoxOnly = 0x1ec; // bool m_bBBoxOnly; |  0x1ec | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCubeRoot = 0x1ed; // bool m_bCubeRoot; |  0x1ed | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nBBoxType = 0x1d8; // particles::BBoxVolumeType_t m_nBBoxType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nInControlPointNumber = 0x1dc; // int32_t m_nInControlPointNumber; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nOutControlPointNumber = 0x1e0; // int32_t m_nOutControlPointNumber; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nOutControlPointMaxNumber = 0x1e4; // int32_t m_nOutControlPointMaxNumber; |  0x1e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nField = 0x1e8; // int32_t m_nField; |  0x1e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputMin = 0x1ec; // float32 m_flInputMin; |  0x1ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputMax = 0x1f0; // float32 m_flInputMax; |  0x1f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputMin = 0x1f4; // float32 m_flOutputMin; |  0x1f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputMax = 0x1f8; // float32 m_flOutputMax; |  0x1f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bBBoxOnly = 0x1fc; // bool m_bBBoxOnly; |  0x1fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCubeRoot = 0x1fd; // bool m_bCubeRoot; |  0x1fd | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

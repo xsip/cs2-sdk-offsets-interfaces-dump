@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x498
+			// Class size: 0x4C8
 			namespace C_INIT_CheckParticleForWater /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_flRadius = 0x1c8; // particleslib::CPerParticleFloatInput m_flRadius; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x328; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputRemap = 0x330; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nSetMethod = 0x490; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadius = 0x1d8; // particleslib::CPerParticleFloatInput m_flRadius; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x348; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputRemap = 0x350; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nSetMethod = 0x4c0; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

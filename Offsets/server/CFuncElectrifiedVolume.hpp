@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x848
+			// Class size: 0x830
 			namespace CFuncElectrifiedVolume /*: public CS2::server::CFuncBrush*/ {
-				constexpr std::ptrdiff_t m_EffectName = 0x810; // GlobalTypes::CUtlSymbolLarge m_EffectName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_EffectInterpenetrateName = 0x818; // GlobalTypes::CUtlSymbolLarge m_EffectInterpenetrateName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_EffectZapName = 0x820; // GlobalTypes::CUtlSymbolLarge m_EffectZapName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszEffectSource = 0x828; // GlobalTypes::CUtlSymbolLarge m_iszEffectSource; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_EffectName = 0x7f8; // GlobalTypes::CUtlSymbolLarge m_EffectName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_EffectInterpenetrateName = 0x800; // GlobalTypes::CUtlSymbolLarge m_EffectInterpenetrateName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_EffectZapName = 0x808; // GlobalTypes::CUtlSymbolLarge m_EffectZapName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEffectSource = 0x810; // GlobalTypes::CUtlSymbolLarge m_iszEffectSource; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

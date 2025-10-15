@@ -14,18 +14,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RopeSpringConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			particleslib::CParticleCollectionFloatInput m_flRestLength; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flMinDistance; // 0x320 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flMaxDistance; // 0x480 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flAdjustmentScale; // 0x5e0 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flRestLength; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flMinDistance; // 0x340 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flMaxDistance; // 0x4b0 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flAdjustmentScale; // 0x620 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flInitialRestingLength; // 0x5e8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flInitialRestingLength; // 0x628 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flRestLength) == 0x1C0, "m_flRestLength in C_OP_RopeSpringConstraint should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flMinDistance) == 0x320, "m_flMinDistance in C_OP_RopeSpringConstraint should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flMaxDistance) == 0x480, "m_flMaxDistance in C_OP_RopeSpringConstraint should be at offset 0x480");
-		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flAdjustmentScale) == 0x5E0, "m_flAdjustmentScale in C_OP_RopeSpringConstraint should be at offset 0x5E0");
-		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flInitialRestingLength) == 0x5E8, "m_flInitialRestingLength in C_OP_RopeSpringConstraint should be at offset 0x5E8");
-		static_assert(sizeof(CS2::particles::C_OP_RopeSpringConstraint) == 0x748, "C_OP_RopeSpringConstraint size should be 0x748");
+		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flRestLength) == 0x1D0, "m_flRestLength in C_OP_RopeSpringConstraint should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flMinDistance) == 0x340, "m_flMinDistance in C_OP_RopeSpringConstraint should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flMaxDistance) == 0x4B0, "m_flMaxDistance in C_OP_RopeSpringConstraint should be at offset 0x4B0");
+		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flAdjustmentScale) == 0x620, "m_flAdjustmentScale in C_OP_RopeSpringConstraint should be at offset 0x620");
+		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flInitialRestingLength) == 0x628, "m_flInitialRestingLength in C_OP_RopeSpringConstraint should be at offset 0x628");
+		static_assert(sizeof(CS2::particles::C_OP_RopeSpringConstraint) == 0x798, "C_OP_RopeSpringConstraint size should be 0x798");
 	}
 }

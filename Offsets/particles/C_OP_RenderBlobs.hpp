@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x678
+			// Class size: 0x6B8
 			namespace C_OP_RenderBlobs /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_cubeWidth = 0x210; // particleslib::CParticleCollectionRendererFloatInput m_cubeWidth; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_cutoffRadius = 0x370; // particleslib::CParticleCollectionRendererFloatInput m_cutoffRadius; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_renderRadius = 0x4d0; // particleslib::CParticleCollectionRendererFloatInput m_renderRadius; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nVertexCountKb = 0x630; // uint32_t m_nVertexCountKb; |  0x630 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nIndexCountKb = 0x634; // uint32_t m_nIndexCountKb; |  0x634 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nScaleCP = 0x638; // int32_t m_nScaleCP; |  0x638 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_MaterialVars = 0x640; // GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hMaterial = 0x670; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_cubeWidth = 0x220; // particleslib::CParticleCollectionRendererFloatInput m_cubeWidth; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_cutoffRadius = 0x390; // particleslib::CParticleCollectionRendererFloatInput m_cutoffRadius; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_renderRadius = 0x500; // particleslib::CParticleCollectionRendererFloatInput m_renderRadius; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nVertexCountKb = 0x670; // uint32_t m_nVertexCountKb; |  0x670 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nIndexCountKb = 0x674; // uint32_t m_nIndexCountKb; |  0x674 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nScaleCP = 0x678; // int32_t m_nScaleCP; |  0x678 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_MaterialVars = 0x680; // GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hMaterial = 0x6b0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

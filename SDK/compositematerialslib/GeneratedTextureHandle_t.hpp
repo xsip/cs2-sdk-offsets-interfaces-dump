@@ -13,9 +13,9 @@ namespace CS2 {
 		class GeneratedTextureHandle_t  {
 		public:
 			GlobalTypes::CUtlString m_strBitmapName; // 0x0 | Schema_Atomic | Size: 0x8
-			S2_PAD(0x48); // End padding
+			S2_PAD(0x58); // End padding
 		};
 		static_assert(offsetof(CS2::compositematerialslib::GeneratedTextureHandle_t, m_strBitmapName) == 0x0, "m_strBitmapName in GeneratedTextureHandle_t should be at offset 0x0");
-		static_assert(sizeof(CS2::compositematerialslib::GeneratedTextureHandle_t) == 0x50, "GeneratedTextureHandle_t size should be 0x50");
+		static_assert(sizeof(CS2::compositematerialslib::GeneratedTextureHandle_t) == 0x60, "GeneratedTextureHandle_t size should be 0x60");
 	}
 }

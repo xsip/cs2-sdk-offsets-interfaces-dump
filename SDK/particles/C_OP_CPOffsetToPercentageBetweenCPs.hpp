@@ -13,30 +13,30 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CPOffsetToPercentageBetweenCPs : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_flInputMin; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flInputBias; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nStartCP; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nEndCP; // 0x1d0 | Schema_Builtin | Size: 0x4
-			int32_t m_nOffsetCP; // 0x1d4 | Schema_Builtin | Size: 0x4
-			int32_t m_nOuputCP; // 0x1d8 | Schema_Builtin | Size: 0x4
-			int32_t m_nInputCP; // 0x1dc | Schema_Builtin | Size: 0x4
-			bool m_bRadialCheck; // 0x1e0 | Schema_Builtin | Size: 0x1
-			bool m_bScaleOffset; // 0x1e1 | Schema_Builtin | Size: 0x1
+			float32 m_flInputMin; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flInputBias; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nStartCP; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nEndCP; // 0x1e0 | Schema_Builtin | Size: 0x4
+			int32_t m_nOffsetCP; // 0x1e4 | Schema_Builtin | Size: 0x4
+			int32_t m_nOuputCP; // 0x1e8 | Schema_Builtin | Size: 0x4
+			int32_t m_nInputCP; // 0x1ec | Schema_Builtin | Size: 0x4
+			bool m_bRadialCheck; // 0x1f0 | Schema_Builtin | Size: 0x1
+			bool m_bScaleOffset; // 0x1f1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::Vector m_vecOffset; // 0x1e4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecOffset; // 0x1f4 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputMin) == 0x1C0, "m_flInputMin in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputMax) == 0x1C4, "m_flInputMax in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputBias) == 0x1C8, "m_flInputBias in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nStartCP) == 0x1CC, "m_nStartCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nEndCP) == 0x1D0, "m_nEndCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nOffsetCP) == 0x1D4, "m_nOffsetCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nOuputCP) == 0x1D8, "m_nOuputCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nInputCP) == 0x1DC, "m_nInputCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_bRadialCheck) == 0x1E0, "m_bRadialCheck in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_bScaleOffset) == 0x1E1, "m_bScaleOffset in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1E1");
-		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_vecOffset) == 0x1E4, "m_vecOffset in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1E4");
-		static_assert(sizeof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs) == 0x1F0, "C_OP_CPOffsetToPercentageBetweenCPs size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputMin) == 0x1D0, "m_flInputMin in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputMax) == 0x1D4, "m_flInputMax in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputBias) == 0x1D8, "m_flInputBias in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nStartCP) == 0x1DC, "m_nStartCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nEndCP) == 0x1E0, "m_nEndCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nOffsetCP) == 0x1E4, "m_nOffsetCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nOuputCP) == 0x1E8, "m_nOuputCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_nInputCP) == 0x1EC, "m_nInputCP in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_bRadialCheck) == 0x1F0, "m_bRadialCheck in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_bScaleOffset) == 0x1F1, "m_bScaleOffset in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1F1");
+		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_vecOffset) == 0x1F4, "m_vecOffset in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1F4");
+		static_assert(sizeof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs) == 0x200, "C_OP_CPOffsetToPercentageBetweenCPs size should be 0x200");
 	}
 }

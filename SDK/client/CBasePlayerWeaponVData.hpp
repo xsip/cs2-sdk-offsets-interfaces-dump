@@ -43,7 +43,8 @@ namespace CS2 {
 			int32_t m_iDefaultClip2; // 0x3f4 | Schema_Builtin | Size: 0x4
 			bool m_bReserveAmmoAsClips; // 0x3f8 | Schema_Builtin | Size: 0x1
 			bool m_bTreatAsSingleClip; // 0x3f9 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x2);
+			bool m_bKeepLoadedAmmo; // 0x3fa | Schema_Builtin | Size: 0x1
+			S2_PAD(0x1);
 			int32_t m_iWeight; // 0x3fc | Schema_Builtin | Size: 0x4
 			bool m_bAutoSwitchTo; // 0x400 | Schema_Builtin | Size: 0x1
 			bool m_bAutoSwitchFrom; // 0x401 | Schema_Builtin | Size: 0x1
@@ -77,6 +78,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iDefaultClip2) == 0x3F4, "m_iDefaultClip2 in CBasePlayerWeaponVData should be at offset 0x3F4");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bReserveAmmoAsClips) == 0x3F8, "m_bReserveAmmoAsClips in CBasePlayerWeaponVData should be at offset 0x3F8");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bTreatAsSingleClip) == 0x3F9, "m_bTreatAsSingleClip in CBasePlayerWeaponVData should be at offset 0x3F9");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bKeepLoadedAmmo) == 0x3FA, "m_bKeepLoadedAmmo in CBasePlayerWeaponVData should be at offset 0x3FA");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iWeight) == 0x3FC, "m_iWeight in CBasePlayerWeaponVData should be at offset 0x3FC");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bAutoSwitchTo) == 0x400, "m_bAutoSwitchTo in CBasePlayerWeaponVData should be at offset 0x400");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bAutoSwitchFrom) == 0x401, "m_bAutoSwitchFrom in CBasePlayerWeaponVData should be at offset 0x401");

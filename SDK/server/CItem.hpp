@@ -15,25 +15,25 @@ namespace CS2 {
 		class CItem : public CS2::server::CBaseAnimGraph {
 		public:
 			S2_PAD(0x8);
-			entity2::CEntityIOOutput m_OnPlayerTouch; // 0xa88 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xab0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bActivateWhenAtRest; // 0xad8 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnPlayerTouch; // 0xa98 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xac0 | Schema_DeclaredClass | Size: 0x28
+			bool m_bActivateWhenAtRest; // 0xae8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			entity2::CEntityIOOutput m_OnCacheInteraction; // 0xae0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnGlovePulled; // 0xb08 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::Vector m_vOriginalSpawnOrigin; // 0xb30 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vOriginalSpawnAngles; // 0xb3c | Schema_Atomic | Size: 0xc
-			bool m_bPhysStartAsleep; // 0xb48 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xf); // End padding
+			entity2::CEntityIOOutput m_OnCacheInteraction; // 0xaf0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnGlovePulled; // 0xb18 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::VectorWS m_vOriginalSpawnOrigin; // 0xb40 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vOriginalSpawnAngles; // 0xb4c | Schema_Atomic | Size: 0xc
+			bool m_bPhysStartAsleep; // 0xb58 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x17); // End padding
 		};
-		static_assert(offsetof(CS2::server::CItem, m_OnPlayerTouch) == 0xA88, "m_OnPlayerTouch in CItem should be at offset 0xA88");
-		static_assert(offsetof(CS2::server::CItem, m_OnPlayerPickup) == 0xAB0, "m_OnPlayerPickup in CItem should be at offset 0xAB0");
-		static_assert(offsetof(CS2::server::CItem, m_bActivateWhenAtRest) == 0xAD8, "m_bActivateWhenAtRest in CItem should be at offset 0xAD8");
-		static_assert(offsetof(CS2::server::CItem, m_OnCacheInteraction) == 0xAE0, "m_OnCacheInteraction in CItem should be at offset 0xAE0");
-		static_assert(offsetof(CS2::server::CItem, m_OnGlovePulled) == 0xB08, "m_OnGlovePulled in CItem should be at offset 0xB08");
-		static_assert(offsetof(CS2::server::CItem, m_vOriginalSpawnOrigin) == 0xB30, "m_vOriginalSpawnOrigin in CItem should be at offset 0xB30");
-		static_assert(offsetof(CS2::server::CItem, m_vOriginalSpawnAngles) == 0xB3C, "m_vOriginalSpawnAngles in CItem should be at offset 0xB3C");
-		static_assert(offsetof(CS2::server::CItem, m_bPhysStartAsleep) == 0xB48, "m_bPhysStartAsleep in CItem should be at offset 0xB48");
-		static_assert(sizeof(CS2::server::CItem) == 0xB58, "CItem size should be 0xB58");
+		static_assert(offsetof(CS2::server::CItem, m_OnPlayerTouch) == 0xA98, "m_OnPlayerTouch in CItem should be at offset 0xA98");
+		static_assert(offsetof(CS2::server::CItem, m_OnPlayerPickup) == 0xAC0, "m_OnPlayerPickup in CItem should be at offset 0xAC0");
+		static_assert(offsetof(CS2::server::CItem, m_bActivateWhenAtRest) == 0xAE8, "m_bActivateWhenAtRest in CItem should be at offset 0xAE8");
+		static_assert(offsetof(CS2::server::CItem, m_OnCacheInteraction) == 0xAF0, "m_OnCacheInteraction in CItem should be at offset 0xAF0");
+		static_assert(offsetof(CS2::server::CItem, m_OnGlovePulled) == 0xB18, "m_OnGlovePulled in CItem should be at offset 0xB18");
+		static_assert(offsetof(CS2::server::CItem, m_vOriginalSpawnOrigin) == 0xB40, "m_vOriginalSpawnOrigin in CItem should be at offset 0xB40");
+		static_assert(offsetof(CS2::server::CItem, m_vOriginalSpawnAngles) == 0xB4C, "m_vOriginalSpawnAngles in CItem should be at offset 0xB4C");
+		static_assert(offsetof(CS2::server::CItem, m_bPhysStartAsleep) == 0xB58, "m_bPhysStartAsleep in CItem should be at offset 0xB58");
+		static_assert(sizeof(CS2::server::CItem) == 0xB70, "CItem size should be 0xB70");
 	}
 }

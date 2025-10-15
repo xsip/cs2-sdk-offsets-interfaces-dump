@@ -14,18 +14,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapExternalWindToCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nCP; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nCPOutput; // 0x1cc | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionVecInput m_vecScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x678
-			bool m_bSetMagnitude; // 0x848 | Schema_Builtin | Size: 0x1
+			int32_t m_nCP; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nCPOutput; // 0x1dc | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecScale; // 0x1e0 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bSetMagnitude; // 0x898 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nOutVectorField; // 0x84c | Schema_Builtin | Size: 0x4
+			int32_t m_nOutVectorField; // 0x89c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nCP) == 0x1C8, "m_nCP in C_OP_RemapExternalWindToCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nCPOutput) == 0x1CC, "m_nCPOutput in C_OP_RemapExternalWindToCP should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_vecScale) == 0x1D0, "m_vecScale in C_OP_RemapExternalWindToCP should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_bSetMagnitude) == 0x848, "m_bSetMagnitude in C_OP_RemapExternalWindToCP should be at offset 0x848");
-		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nOutVectorField) == 0x84C, "m_nOutVectorField in C_OP_RemapExternalWindToCP should be at offset 0x84C");
-		static_assert(sizeof(CS2::particles::C_OP_RemapExternalWindToCP) == 0x850, "C_OP_RemapExternalWindToCP size should be 0x850");
+		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nCP) == 0x1D8, "m_nCP in C_OP_RemapExternalWindToCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nCPOutput) == 0x1DC, "m_nCPOutput in C_OP_RemapExternalWindToCP should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_vecScale) == 0x1E0, "m_vecScale in C_OP_RemapExternalWindToCP should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_bSetMagnitude) == 0x898, "m_bSetMagnitude in C_OP_RemapExternalWindToCP should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nOutVectorField) == 0x89C, "m_nOutVectorField in C_OP_RemapExternalWindToCP should be at offset 0x89C");
+		static_assert(sizeof(CS2::particles::C_OP_RemapExternalWindToCP) == 0x8A0, "C_OP_RemapExternalWindToCP size should be 0x8A0");
 	}
 }

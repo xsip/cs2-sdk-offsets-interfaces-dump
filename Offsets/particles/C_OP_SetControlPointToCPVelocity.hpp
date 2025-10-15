@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x858
+			// Class size: 0x8A8
 			namespace C_OP_SetControlPointToCPVelocity /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nCPInput = 0x1c8; // int32_t m_nCPInput; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPOutputVel = 0x1cc; // int32_t m_nCPOutputVel; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bNormalize = 0x1d0; // bool m_bNormalize; |  0x1d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nCPOutputMag = 0x1d4; // int32_t m_nCPOutputMag; |  0x1d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPField = 0x1d8; // int32_t m_nCPField; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecComparisonVelocity = 0x1e0; // particleslib::CParticleCollectionVecInput m_vecComparisonVelocity; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_nCPInput = 0x1d8; // int32_t m_nCPInput; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPOutputVel = 0x1dc; // int32_t m_nCPOutputVel; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bNormalize = 0x1e0; // bool m_bNormalize; |  0x1e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nCPOutputMag = 0x1e4; // int32_t m_nCPOutputMag; |  0x1e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPField = 0x1e8; // int32_t m_nCPField; |  0x1e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecComparisonVelocity = 0x1f0; // particleslib::CParticleCollectionVecInput m_vecComparisonVelocity; |  Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

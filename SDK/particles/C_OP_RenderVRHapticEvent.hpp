@@ -15,16 +15,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderVRHapticEvent : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particles::ParticleVRHandChoiceList_t m_nHand; // 0x210 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nOutputHandCP; // 0x214 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutputField; // 0x218 | Schema_Builtin | Size: 0x4
+			particles::ParticleVRHandChoiceList_t m_nHand; // 0x220 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nOutputHandCP; // 0x224 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutputField; // 0x228 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flAmplitude; // 0x220 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flAmplitude; // 0x230 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_nHand) == 0x210, "m_nHand in C_OP_RenderVRHapticEvent should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_nOutputHandCP) == 0x214, "m_nOutputHandCP in C_OP_RenderVRHapticEvent should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_nOutputField) == 0x218, "m_nOutputField in C_OP_RenderVRHapticEvent should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_flAmplitude) == 0x220, "m_flAmplitude in C_OP_RenderVRHapticEvent should be at offset 0x220");
-		static_assert(sizeof(CS2::particles::C_OP_RenderVRHapticEvent) == 0x380, "C_OP_RenderVRHapticEvent size should be 0x380");
+		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_nHand) == 0x220, "m_nHand in C_OP_RenderVRHapticEvent should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_nOutputHandCP) == 0x224, "m_nOutputHandCP in C_OP_RenderVRHapticEvent should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_nOutputField) == 0x228, "m_nOutputField in C_OP_RenderVRHapticEvent should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderVRHapticEvent, m_flAmplitude) == 0x230, "m_flAmplitude in C_OP_RenderVRHapticEvent should be at offset 0x230");
+		static_assert(sizeof(CS2::particles::C_OP_RenderVRHapticEvent) == 0x3A0, "C_OP_RenderVRHapticEvent size should be 0x3A0");
 	}
 }

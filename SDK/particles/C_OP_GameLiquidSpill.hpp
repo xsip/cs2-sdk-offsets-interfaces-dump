@@ -15,14 +15,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_GameLiquidSpill : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particleslib::CParticleCollectionFloatInput m_flLiquidContentsField; // 0x210 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flExpirationTime; // 0x370 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nAmountAttribute; // 0x4d0 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flLiquidContentsField; // 0x220 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flExpirationTime; // 0x390 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nAmountAttribute; // 0x500 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_flLiquidContentsField) == 0x210, "m_flLiquidContentsField in C_OP_GameLiquidSpill should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_flExpirationTime) == 0x370, "m_flExpirationTime in C_OP_GameLiquidSpill should be at offset 0x370");
-		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_nAmountAttribute) == 0x4D0, "m_nAmountAttribute in C_OP_GameLiquidSpill should be at offset 0x4D0");
-		static_assert(sizeof(CS2::particles::C_OP_GameLiquidSpill) == 0x4D8, "C_OP_GameLiquidSpill size should be 0x4D8");
+		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_flLiquidContentsField) == 0x220, "m_flLiquidContentsField in C_OP_GameLiquidSpill should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_flExpirationTime) == 0x390, "m_flExpirationTime in C_OP_GameLiquidSpill should be at offset 0x390");
+		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_nAmountAttribute) == 0x500, "m_nAmountAttribute in C_OP_GameLiquidSpill should be at offset 0x500");
+		static_assert(sizeof(CS2::particles::C_OP_GameLiquidSpill) == 0x508, "C_OP_GameLiquidSpill size should be 0x508");
 	}
 }

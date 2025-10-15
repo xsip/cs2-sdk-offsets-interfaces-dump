@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x210
+			// Class size: 0x220
 			namespace C_INIT_RemapNamedModelElementToScalar /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_hModel = 0x1c8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_names = 0x1d0; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_values = 0x1e8; // GlobalTypes::CUtlVector< float32 > m_values; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nFieldInput = 0x200; // particles::ParticleAttributeIndex_t m_nFieldInput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x204; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x208; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bModelFromRenderer = 0x20c; // bool m_bModelFromRenderer; |  0x20c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hModel = 0x1d8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_names = 0x1e0; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_values = 0x1f8; // GlobalTypes::CUtlVector< float32 > m_values; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nFieldInput = 0x210; // particles::ParticleAttributeIndex_t m_nFieldInput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x214; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x218; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bModelFromRenderer = 0x21c; // bool m_bModelFromRenderer; |  0x21c | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

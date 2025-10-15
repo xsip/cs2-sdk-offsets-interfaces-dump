@@ -13,16 +13,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_TwistAroundAxis : public CS2::particles::CParticleFunctionForce {
 		public:
-			float32 m_fForceAmount; // 0x1d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_TwistAxis; // 0x1d4 | Schema_Atomic | Size: 0xc
-			bool m_bLocalSpace; // 0x1e0 | Schema_Builtin | Size: 0x1
+			float32 m_fForceAmount; // 0x1e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_TwistAxis; // 0x1e4 | Schema_Atomic | Size: 0xc
+			bool m_bLocalSpace; // 0x1f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nControlPointNumber; // 0x1e4 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1f4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_fForceAmount) == 0x1D0, "m_fForceAmount in C_OP_TwistAroundAxis should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_TwistAxis) == 0x1D4, "m_TwistAxis in C_OP_TwistAroundAxis should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_bLocalSpace) == 0x1E0, "m_bLocalSpace in C_OP_TwistAroundAxis should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_nControlPointNumber) == 0x1E4, "m_nControlPointNumber in C_OP_TwistAroundAxis should be at offset 0x1E4");
-		static_assert(sizeof(CS2::particles::C_OP_TwistAroundAxis) == 0x1E8, "C_OP_TwistAroundAxis size should be 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_fForceAmount) == 0x1E0, "m_fForceAmount in C_OP_TwistAroundAxis should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_TwistAxis) == 0x1E4, "m_TwistAxis in C_OP_TwistAroundAxis should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_bLocalSpace) == 0x1F0, "m_bLocalSpace in C_OP_TwistAroundAxis should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_nControlPointNumber) == 0x1F4, "m_nControlPointNumber in C_OP_TwistAroundAxis should be at offset 0x1F4");
+		static_assert(sizeof(CS2::particles::C_OP_TwistAroundAxis) == 0x1F8, "C_OP_TwistAroundAxis size should be 0x1F8");
 	}
 }

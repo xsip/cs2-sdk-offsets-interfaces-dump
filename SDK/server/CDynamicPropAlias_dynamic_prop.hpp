@@ -14,6 +14,6 @@ namespace CS2 {
 		class CDynamicPropAlias_dynamic_prop : public CS2::server::CDynamicProp {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CDynamicPropAlias_dynamic_prop) == 0xD40, "CDynamicPropAlias_dynamic_prop size should be 0xD40");
+		static_assert(sizeof(CS2::server::CDynamicPropAlias_dynamic_prop) == 0xD50, "CDynamicPropAlias_dynamic_prop size should be 0xD50");
 	}
 }

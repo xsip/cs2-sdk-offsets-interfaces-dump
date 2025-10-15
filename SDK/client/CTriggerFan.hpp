@@ -14,35 +14,29 @@ namespace CS2 {
 	namespace client {
 		class CTriggerFan : public CS2::client::C_BaseTrigger {
 		public:
-			GlobalTypes::VectorWS m_vFanOrigin; // 0x1008 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vFanOriginOffset; // 0x1014 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vFanEnd; // 0x1020 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vNoiseDirectionTarget; // 0x102c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDirection; // 0x1038 | Schema_Atomic | Size: 0xc
-			bool m_bPushTowardsInfoTarget; // 0x1044 | Schema_Builtin | Size: 0x1
-			bool m_bPushAwayFromInfoTarget; // 0x1045 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xa);
-			GlobalTypes::Quaternion m_qNoiseDelta; // 0x1050 | Schema_Atomic | Size: 0x10
-			// client::CHandle< client::CInfoFan > m_hInfoFan; // 0x1060 | Schema_Atomic | Size: 0x4
-			char  m_hInfoFan[0x4]; // 0x1060 | Schema_Atomic | Size: 0x4
-			float32 m_flForce; // 0x1064 | Schema_Builtin | Size: 0x4
-			bool m_bFalloff; // 0x1068 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vFanOriginOffset; // 0xff0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDirection; // 0xffc | Schema_Atomic | Size: 0xc
+			bool m_bPushTowardsInfoTarget; // 0x1008 | Schema_Builtin | Size: 0x1
+			bool m_bPushAwayFromInfoTarget; // 0x1009 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6);
+			GlobalTypes::Quaternion m_qNoiseDelta; // 0x1010 | Schema_Atomic | Size: 0x10
+			// client::CHandle< client::CInfoFan > m_hInfoFan; // 0x1020 | Schema_Atomic | Size: 0x4
+			char  m_hInfoFan[0x4]; // 0x1020 | Schema_Atomic | Size: 0x4
+			float32 m_flForce; // 0x1024 | Schema_Builtin | Size: 0x4
+			bool m_bFalloff; // 0x1028 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			client::CountdownTimer m_RampTimer; // 0x1070 | Schema_DeclaredClass | Size: 0x18
+			client::CountdownTimer m_RampTimer; // 0x1030 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::CTriggerFan, m_vFanOrigin) == 0x1008, "m_vFanOrigin in CTriggerFan should be at offset 0x1008");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_vFanOriginOffset) == 0x1014, "m_vFanOriginOffset in CTriggerFan should be at offset 0x1014");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_vFanEnd) == 0x1020, "m_vFanEnd in CTriggerFan should be at offset 0x1020");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_vNoiseDirectionTarget) == 0x102C, "m_vNoiseDirectionTarget in CTriggerFan should be at offset 0x102C");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_vDirection) == 0x1038, "m_vDirection in CTriggerFan should be at offset 0x1038");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_bPushTowardsInfoTarget) == 0x1044, "m_bPushTowardsInfoTarget in CTriggerFan should be at offset 0x1044");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_bPushAwayFromInfoTarget) == 0x1045, "m_bPushAwayFromInfoTarget in CTriggerFan should be at offset 0x1045");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_qNoiseDelta) == 0x1050, "m_qNoiseDelta in CTriggerFan should be at offset 0x1050");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_hInfoFan) == 0x1060, "m_hInfoFan in CTriggerFan should be at offset 0x1060");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_flForce) == 0x1064, "m_flForce in CTriggerFan should be at offset 0x1064");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_bFalloff) == 0x1068, "m_bFalloff in CTriggerFan should be at offset 0x1068");
-		static_assert(offsetof(CS2::client::CTriggerFan, m_RampTimer) == 0x1070, "m_RampTimer in CTriggerFan should be at offset 0x1070");
-		static_assert(sizeof(CS2::client::CTriggerFan) == 0x1090, "CTriggerFan size should be 0x1090");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_vFanOriginOffset) == 0xFF0, "m_vFanOriginOffset in CTriggerFan should be at offset 0xFF0");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_vDirection) == 0xFFC, "m_vDirection in CTriggerFan should be at offset 0xFFC");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_bPushTowardsInfoTarget) == 0x1008, "m_bPushTowardsInfoTarget in CTriggerFan should be at offset 0x1008");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_bPushAwayFromInfoTarget) == 0x1009, "m_bPushAwayFromInfoTarget in CTriggerFan should be at offset 0x1009");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_qNoiseDelta) == 0x1010, "m_qNoiseDelta in CTriggerFan should be at offset 0x1010");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_hInfoFan) == 0x1020, "m_hInfoFan in CTriggerFan should be at offset 0x1020");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_flForce) == 0x1024, "m_flForce in CTriggerFan should be at offset 0x1024");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_bFalloff) == 0x1028, "m_bFalloff in CTriggerFan should be at offset 0x1028");
+		static_assert(offsetof(CS2::client::CTriggerFan, m_RampTimer) == 0x1030, "m_RampTimer in CTriggerFan should be at offset 0x1030");
+		static_assert(sizeof(CS2::client::CTriggerFan) == 0x1050, "CTriggerFan size should be 0x1050");
 	}
 }

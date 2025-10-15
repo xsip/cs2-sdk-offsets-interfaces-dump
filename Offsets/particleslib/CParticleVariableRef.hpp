@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particleslib {
-			// Class size: 0x40
+			// Class size: 0x50
 			namespace CParticleVariableRef /**/ {
 				constexpr std::ptrdiff_t m_variableName = 0x0; // GlobalTypes::CKV3MemberNameWithStorage m_variableName; |  Schema_Atomic | Size: 0x38
-				constexpr std::ptrdiff_t m_variableType = 0x38; // pulse_runtime_lib::PulseValueType_t m_variableType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_variableType = 0x38; // GlobalTypes::CPulseValueFullType m_variableType; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

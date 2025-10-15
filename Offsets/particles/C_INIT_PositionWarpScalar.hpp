@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x350
+			// Class size: 0x370
 			namespace C_INIT_PositionWarpScalar /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecWarpMin = 0x1c8; // GlobalTypes::Vector m_vecWarpMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecWarpMax = 0x1d4; // GlobalTypes::Vector m_vecWarpMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_InputValue = 0x1e0; // particleslib::CPerParticleFloatInput m_InputValue; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flPrevPosScale = 0x340; // float32 m_flPrevPosScale; |  0x340 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nScaleControlPointNumber = 0x344; // int32_t m_nScaleControlPointNumber; |  0x344 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nControlPointNumber = 0x348; // int32_t m_nControlPointNumber; |  0x348 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecWarpMin = 0x1d8; // GlobalTypes::Vector m_vecWarpMin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecWarpMax = 0x1e4; // GlobalTypes::Vector m_vecWarpMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_InputValue = 0x1f0; // particleslib::CPerParticleFloatInput m_InputValue; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flPrevPosScale = 0x360; // float32 m_flPrevPosScale; |  0x360 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nScaleControlPointNumber = 0x364; // int32_t m_nScaleControlPointNumber; |  0x364 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPointNumber = 0x368; // int32_t m_nControlPointNumber; |  0x368 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

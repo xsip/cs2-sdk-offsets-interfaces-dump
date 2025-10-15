@@ -13,11 +13,10 @@ namespace CS2 {
 	namespace client {
 		class CHitboxComponent : public CS2::entity2::CEntityComponent {
 		public:
-			S2_PAD(0x18);
-			float32 m_flBoundsExpandRadius; // 0x20 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4); // End padding
+			S2_PAD(0xc);
+			float32 m_flBoundsExpandRadius; // 0x14 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::CHitboxComponent, m_flBoundsExpandRadius) == 0x20, "m_flBoundsExpandRadius in CHitboxComponent should be at offset 0x20");
-		static_assert(sizeof(CS2::client::CHitboxComponent) == 0x28, "CHitboxComponent size should be 0x28");
+		static_assert(offsetof(CS2::client::CHitboxComponent, m_flBoundsExpandRadius) == 0x14, "m_flBoundsExpandRadius in CHitboxComponent should be at offset 0x14");
+		static_assert(sizeof(CS2::client::CHitboxComponent) == 0x18, "CHitboxComponent size should be 0x18");
 	}
 }

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x4B0
+			// Class size: 0x4E0
 			namespace C_OP_SetFloat /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_InputValue = 0x1c0; // particleslib::CPerParticleFloatInput m_InputValue; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nOutputField = 0x320; // particles::ParticleAttributeIndex_t m_nOutputField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x324; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_Lerp = 0x328; // particleslib::CPerParticleFloatInput m_Lerp; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_InputValue = 0x1d0; // particleslib::CPerParticleFloatInput m_InputValue; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nOutputField = 0x340; // particles::ParticleAttributeIndex_t m_nOutputField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x344; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Lerp = 0x348; // particleslib::CPerParticleFloatInput m_Lerp; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

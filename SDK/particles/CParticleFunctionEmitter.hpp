@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionEmitter : public CS2::particles::CParticleFunction {
 		public:
-			int32_t m_nEmitterIndex; // 0x1c0 | Schema_Builtin | Size: 0x4
+			int32_t m_nEmitterIndex; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::CParticleFunctionEmitter, m_nEmitterIndex) == 0x1C0, "m_nEmitterIndex in CParticleFunctionEmitter should be at offset 0x1C0");
-		static_assert(sizeof(CS2::particles::CParticleFunctionEmitter) == 0x1C8, "CParticleFunctionEmitter size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::CParticleFunctionEmitter, m_nEmitterIndex) == 0x1D0, "m_nEmitterIndex in CParticleFunctionEmitter should be at offset 0x1D0");
+		static_assert(sizeof(CS2::particles::CParticleFunctionEmitter) == 0x1D8, "CParticleFunctionEmitter size should be 0x1D8");
 	}
 }

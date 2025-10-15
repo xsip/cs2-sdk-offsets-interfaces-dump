@@ -14,21 +14,21 @@ namespace CS2 {
 		class CPulseGraphInstance_ServerEntity : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
 			S2_PAD(0x78);
-			// server::CHandle< server::CBaseEntity > m_hOwner; // 0x188 | Schema_Atomic | Size: 0x4
-			char  m_hOwner[0x4]; // 0x188 | Schema_Atomic | Size: 0x4
-			bool m_bActivated; // 0x18c | Schema_Builtin | Size: 0x1
+			// server::CHandle< server::CBaseEntity > m_hOwner; // 0x190 | Schema_Atomic | Size: 0x4
+			char  m_hOwner[0x4]; // 0x190 | Schema_Atomic | Size: 0x4
+			bool m_bActivated; // 0x194 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CUtlSymbolLarge m_sNameFixupStaticPrefix; // 0x190 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sNameFixupParent; // 0x198 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sNameFixupLocal; // 0x1a0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sProceduralWorldNameForRelays; // 0x1a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sNameFixupStaticPrefix; // 0x198 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sNameFixupParent; // 0x1a0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sNameFixupLocal; // 0x1a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sProceduralWorldNameForRelays; // 0x1b0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_hOwner) == 0x188, "m_hOwner in CPulseGraphInstance_ServerEntity should be at offset 0x188");
-		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_bActivated) == 0x18C, "m_bActivated in CPulseGraphInstance_ServerEntity should be at offset 0x18C");
-		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sNameFixupStaticPrefix) == 0x190, "m_sNameFixupStaticPrefix in CPulseGraphInstance_ServerEntity should be at offset 0x190");
-		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sNameFixupParent) == 0x198, "m_sNameFixupParent in CPulseGraphInstance_ServerEntity should be at offset 0x198");
-		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sNameFixupLocal) == 0x1A0, "m_sNameFixupLocal in CPulseGraphInstance_ServerEntity should be at offset 0x1A0");
-		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sProceduralWorldNameForRelays) == 0x1A8, "m_sProceduralWorldNameForRelays in CPulseGraphInstance_ServerEntity should be at offset 0x1A8");
-		static_assert(sizeof(CS2::server::CPulseGraphInstance_ServerEntity) == 0x1B0, "CPulseGraphInstance_ServerEntity size should be 0x1B0");
+		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_hOwner) == 0x190, "m_hOwner in CPulseGraphInstance_ServerEntity should be at offset 0x190");
+		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_bActivated) == 0x194, "m_bActivated in CPulseGraphInstance_ServerEntity should be at offset 0x194");
+		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sNameFixupStaticPrefix) == 0x198, "m_sNameFixupStaticPrefix in CPulseGraphInstance_ServerEntity should be at offset 0x198");
+		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sNameFixupParent) == 0x1A0, "m_sNameFixupParent in CPulseGraphInstance_ServerEntity should be at offset 0x1A0");
+		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sNameFixupLocal) == 0x1A8, "m_sNameFixupLocal in CPulseGraphInstance_ServerEntity should be at offset 0x1A8");
+		static_assert(offsetof(CS2::server::CPulseGraphInstance_ServerEntity, m_sProceduralWorldNameForRelays) == 0x1B0, "m_sProceduralWorldNameForRelays in CPulseGraphInstance_ServerEntity should be at offset 0x1B0");
+		static_assert(sizeof(CS2::server::CPulseGraphInstance_ServerEntity) == 0x1B8, "CPulseGraphInstance_ServerEntity size should be 0x1B8");
 	}
 }

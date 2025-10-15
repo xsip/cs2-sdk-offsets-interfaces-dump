@@ -30,7 +30,8 @@ namespace CS2 {
 			bool m_bShouldDrawAttachmentNames; // 0x52 | Schema_Builtin | Size: 0x1
 			bool m_bShouldDrawControlPointAxes; // 0x53 | Schema_Builtin | Size: 0x1
 			bool m_bAnimationNonLooping; // 0x54 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
+			bool m_bSequenceNameIsAnimClipPath; // 0x55 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2);
 			GlobalTypes::Vector m_vecPreviewGravity; // 0x58 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
@@ -49,6 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_bShouldDrawAttachmentNames) == 0x52, "m_bShouldDrawAttachmentNames in ParticlePreviewState_t should be at offset 0x52");
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_bShouldDrawControlPointAxes) == 0x53, "m_bShouldDrawControlPointAxes in ParticlePreviewState_t should be at offset 0x53");
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_bAnimationNonLooping) == 0x54, "m_bAnimationNonLooping in ParticlePreviewState_t should be at offset 0x54");
+		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_bSequenceNameIsAnimClipPath) == 0x55, "m_bSequenceNameIsAnimClipPath in ParticlePreviewState_t should be at offset 0x55");
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_vecPreviewGravity) == 0x58, "m_vecPreviewGravity in ParticlePreviewState_t should be at offset 0x58");
 		static_assert(sizeof(CS2::particles::ParticlePreviewState_t) == 0x68, "ParticlePreviewState_t size should be 0x68");
 	}

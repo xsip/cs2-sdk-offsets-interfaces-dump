@@ -13,22 +13,22 @@ namespace CS2 {
 	namespace client {
 		class C_BulletHitModel : public CS2::client::CBaseAnimGraph {
 		public:
-			GlobalTypes::matrix3x4_t m_matLocal; // 0x1170 | Schema_Atomic | Size: 0x30
-			int32_t m_iBoneIndex; // 0x11a0 | Schema_Builtin | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hPlayerParent; // 0x11a4 | Schema_Atomic | Size: 0x4
-			char  m_hPlayerParent[0x4]; // 0x11a4 | Schema_Atomic | Size: 0x4
-			bool m_bIsHit; // 0x11a8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::matrix3x4_t m_matLocal; // 0x1158 | Schema_Atomic | Size: 0x30
+			int32_t m_iBoneIndex; // 0x1188 | Schema_Builtin | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hPlayerParent; // 0x118c | Schema_Atomic | Size: 0x4
+			char  m_hPlayerParent[0x4]; // 0x118c | Schema_Atomic | Size: 0x4
+			bool m_bIsHit; // 0x1190 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flTimeCreated; // 0x11ac | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecStartPos; // 0x11b0 | Schema_Atomic | Size: 0xc
+			float32 m_flTimeCreated; // 0x1194 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecStartPos; // 0x1198 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BulletHitModel, m_matLocal) == 0x1170, "m_matLocal in C_BulletHitModel should be at offset 0x1170");
-		static_assert(offsetof(CS2::client::C_BulletHitModel, m_iBoneIndex) == 0x11A0, "m_iBoneIndex in C_BulletHitModel should be at offset 0x11A0");
-		static_assert(offsetof(CS2::client::C_BulletHitModel, m_hPlayerParent) == 0x11A4, "m_hPlayerParent in C_BulletHitModel should be at offset 0x11A4");
-		static_assert(offsetof(CS2::client::C_BulletHitModel, m_bIsHit) == 0x11A8, "m_bIsHit in C_BulletHitModel should be at offset 0x11A8");
-		static_assert(offsetof(CS2::client::C_BulletHitModel, m_flTimeCreated) == 0x11AC, "m_flTimeCreated in C_BulletHitModel should be at offset 0x11AC");
-		static_assert(offsetof(CS2::client::C_BulletHitModel, m_vecStartPos) == 0x11B0, "m_vecStartPos in C_BulletHitModel should be at offset 0x11B0");
-		static_assert(sizeof(CS2::client::C_BulletHitModel) == 0x11C0, "C_BulletHitModel size should be 0x11C0");
+		static_assert(offsetof(CS2::client::C_BulletHitModel, m_matLocal) == 0x1158, "m_matLocal in C_BulletHitModel should be at offset 0x1158");
+		static_assert(offsetof(CS2::client::C_BulletHitModel, m_iBoneIndex) == 0x1188, "m_iBoneIndex in C_BulletHitModel should be at offset 0x1188");
+		static_assert(offsetof(CS2::client::C_BulletHitModel, m_hPlayerParent) == 0x118C, "m_hPlayerParent in C_BulletHitModel should be at offset 0x118C");
+		static_assert(offsetof(CS2::client::C_BulletHitModel, m_bIsHit) == 0x1190, "m_bIsHit in C_BulletHitModel should be at offset 0x1190");
+		static_assert(offsetof(CS2::client::C_BulletHitModel, m_flTimeCreated) == 0x1194, "m_flTimeCreated in C_BulletHitModel should be at offset 0x1194");
+		static_assert(offsetof(CS2::client::C_BulletHitModel, m_vecStartPos) == 0x1198, "m_vecStartPos in C_BulletHitModel should be at offset 0x1198");
+		static_assert(sizeof(CS2::client::C_BulletHitModel) == 0x11A8, "C_BulletHitModel size should be 0x11A8");
 	}
 }

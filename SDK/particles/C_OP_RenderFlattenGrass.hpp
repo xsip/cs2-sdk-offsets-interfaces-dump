@@ -14,14 +14,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderFlattenGrass : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			float32 m_flFlattenStrength; // 0x210 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nStrengthFieldOverride; // 0x214 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flRadiusScale; // 0x218 | Schema_Builtin | Size: 0x4
+			float32 m_flFlattenStrength; // 0x220 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nStrengthFieldOverride; // 0x224 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flRadiusScale; // 0x228 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_flFlattenStrength) == 0x210, "m_flFlattenStrength in C_OP_RenderFlattenGrass should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_nStrengthFieldOverride) == 0x214, "m_nStrengthFieldOverride in C_OP_RenderFlattenGrass should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_flRadiusScale) == 0x218, "m_flRadiusScale in C_OP_RenderFlattenGrass should be at offset 0x218");
-		static_assert(sizeof(CS2::particles::C_OP_RenderFlattenGrass) == 0x220, "C_OP_RenderFlattenGrass size should be 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_flFlattenStrength) == 0x220, "m_flFlattenStrength in C_OP_RenderFlattenGrass should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_nStrengthFieldOverride) == 0x224, "m_nStrengthFieldOverride in C_OP_RenderFlattenGrass should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_flRadiusScale) == 0x228, "m_flRadiusScale in C_OP_RenderFlattenGrass should be at offset 0x228");
+		static_assert(sizeof(CS2::particles::C_OP_RenderFlattenGrass) == 0x230, "C_OP_RenderFlattenGrass size should be 0x230");
 	}
 }

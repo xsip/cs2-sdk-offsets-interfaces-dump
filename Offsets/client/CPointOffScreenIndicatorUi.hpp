@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1140
+			// Class size: 0x1110
 			namespace CPointOffScreenIndicatorUi /*: public CS2::client::C_PointClientUIWorldPanel*/ {
-				constexpr std::ptrdiff_t m_bBeenEnabled = 0x1130; // bool m_bBeenEnabled; |  0x1130 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHide = 0x1131; // bool m_bHide; |  0x1131 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flSeenTargetTime = 0x1134; // float32 m_flSeenTargetTime; |  0x1134 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pTargetPanel = 0x1138; // client::C_PointClientUIWorldPanel* m_pTargetPanel; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_bBeenEnabled = 0x1100; // bool m_bBeenEnabled; |  0x1100 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHide = 0x1101; // bool m_bHide; |  0x1101 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flSeenTargetTime = 0x1104; // float32 m_flSeenTargetTime; |  0x1104 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pTargetPanel = 0x1108; // client::C_PointClientUIWorldPanel* m_pTargetPanel; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

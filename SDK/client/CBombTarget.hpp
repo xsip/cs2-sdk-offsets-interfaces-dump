@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace client {
 		class CBombTarget : public CS2::client::C_BaseTrigger {
 		public:
-			bool m_bBombPlantedHere; // 0x1008 | Schema_Builtin | Size: 0x1
+			bool m_bBombPlantedHere; // 0xff0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::CBombTarget, m_bBombPlantedHere) == 0x1008, "m_bBombPlantedHere in CBombTarget should be at offset 0x1008");
-		static_assert(sizeof(CS2::client::CBombTarget) == 0x1010, "CBombTarget size should be 0x1010");
+		static_assert(offsetof(CS2::client::CBombTarget, m_bBombPlantedHere) == 0xFF0, "m_bBombPlantedHere in CBombTarget should be at offset 0xFF0");
+		static_assert(sizeof(CS2::client::CBombTarget) == 0xFF8, "CBombTarget size should be 0xFF8");
 	}
 }

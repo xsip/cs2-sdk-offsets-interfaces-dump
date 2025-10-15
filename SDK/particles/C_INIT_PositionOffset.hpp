@@ -16,21 +16,21 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionOffset : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleVecInput m_OffsetMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_OffsetMax; // 0x840 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleTransformInput m_TransformInput; // 0xeb8 | Schema_DeclaredClass | Size: 0x68
-			bool m_bLocalCoords; // 0xf20 | Schema_Builtin | Size: 0x1
-			bool m_bProportional; // 0xf21 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_OffsetMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_OffsetMax; // 0x890 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleTransformInput m_TransformInput; // 0xf48 | Schema_DeclaredClass | Size: 0x68
+			bool m_bLocalCoords; // 0xfb0 | Schema_Builtin | Size: 0x1
+			bool m_bProportional; // 0xfb1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0xf24 | Schema_DeclaredClass | Size: 0x8
+			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0xfb4 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_OffsetMin) == 0x1C8, "m_OffsetMin in C_INIT_PositionOffset should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_OffsetMax) == 0x840, "m_OffsetMax in C_INIT_PositionOffset should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_TransformInput) == 0xEB8, "m_TransformInput in C_INIT_PositionOffset should be at offset 0xEB8");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_bLocalCoords) == 0xF20, "m_bLocalCoords in C_INIT_PositionOffset should be at offset 0xF20");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_bProportional) == 0xF21, "m_bProportional in C_INIT_PositionOffset should be at offset 0xF21");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_randomnessParameters) == 0xF24, "m_randomnessParameters in C_INIT_PositionOffset should be at offset 0xF24");
-		static_assert(sizeof(CS2::particles::C_INIT_PositionOffset) == 0xF30, "C_INIT_PositionOffset size should be 0xF30");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_OffsetMin) == 0x1D8, "m_OffsetMin in C_INIT_PositionOffset should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_OffsetMax) == 0x890, "m_OffsetMax in C_INIT_PositionOffset should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_TransformInput) == 0xF48, "m_TransformInput in C_INIT_PositionOffset should be at offset 0xF48");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_bLocalCoords) == 0xFB0, "m_bLocalCoords in C_INIT_PositionOffset should be at offset 0xFB0");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_bProportional) == 0xFB1, "m_bProportional in C_INIT_PositionOffset should be at offset 0xFB1");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_randomnessParameters) == 0xFB4, "m_randomnessParameters in C_INIT_PositionOffset should be at offset 0xFB4");
+		static_assert(sizeof(CS2::particles::C_INIT_PositionOffset) == 0xFC0, "C_INIT_PositionOffset size should be 0xFC0");
 	}
 }

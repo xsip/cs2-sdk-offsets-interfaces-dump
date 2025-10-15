@@ -18,39 +18,39 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_PinParticleToCP : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionVecInput m_vecOffset; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			bool m_bOffsetLocal; // 0x840 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionVecInput m_vecOffset; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bOffsetLocal; // 0x890 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleSelection_t m_nParticleSelection; // 0x844 | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CParticleCollectionFloatInput m_nParticleNumber; // 0x848 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticlePinDistance_t m_nPinBreakType; // 0x9a8 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleSelection_t m_nParticleSelection; // 0x894 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_nParticleNumber; // 0x898 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticlePinDistance_t m_nPinBreakType; // 0xa08 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flBreakDistance; // 0x9b0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flBreakSpeed; // 0xb10 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flAge; // 0xc70 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nBreakControlPointNumber; // 0xdd0 | Schema_Builtin | Size: 0x4
-			int32_t m_nBreakControlPointNumber2; // 0xdd4 | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionFloatInput m_flBreakValue; // 0xdd8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInterpolation; // 0xf38 | Schema_DeclaredClass | Size: 0x160
-			bool m_bRetainInitialVelocity; // 0x1098 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flBreakDistance; // 0xa10 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flBreakSpeed; // 0xb80 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flAge; // 0xcf0 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nBreakControlPointNumber; // 0xe60 | Schema_Builtin | Size: 0x4
+			int32_t m_nBreakControlPointNumber2; // 0xe64 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flBreakValue; // 0xe68 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInterpolation; // 0xfd8 | Schema_DeclaredClass | Size: 0x170
+			bool m_bRetainInitialVelocity; // 0x1148 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nControlPointNumber) == 0x1C0, "m_nControlPointNumber in C_OP_PinParticleToCP should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_vecOffset) == 0x1C8, "m_vecOffset in C_OP_PinParticleToCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_bOffsetLocal) == 0x840, "m_bOffsetLocal in C_OP_PinParticleToCP should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nParticleSelection) == 0x844, "m_nParticleSelection in C_OP_PinParticleToCP should be at offset 0x844");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nParticleNumber) == 0x848, "m_nParticleNumber in C_OP_PinParticleToCP should be at offset 0x848");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nPinBreakType) == 0x9A8, "m_nPinBreakType in C_OP_PinParticleToCP should be at offset 0x9A8");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flBreakDistance) == 0x9B0, "m_flBreakDistance in C_OP_PinParticleToCP should be at offset 0x9B0");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flBreakSpeed) == 0xB10, "m_flBreakSpeed in C_OP_PinParticleToCP should be at offset 0xB10");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flAge) == 0xC70, "m_flAge in C_OP_PinParticleToCP should be at offset 0xC70");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nBreakControlPointNumber) == 0xDD0, "m_nBreakControlPointNumber in C_OP_PinParticleToCP should be at offset 0xDD0");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nBreakControlPointNumber2) == 0xDD4, "m_nBreakControlPointNumber2 in C_OP_PinParticleToCP should be at offset 0xDD4");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flBreakValue) == 0xDD8, "m_flBreakValue in C_OP_PinParticleToCP should be at offset 0xDD8");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flInterpolation) == 0xF38, "m_flInterpolation in C_OP_PinParticleToCP should be at offset 0xF38");
-		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_bRetainInitialVelocity) == 0x1098, "m_bRetainInitialVelocity in C_OP_PinParticleToCP should be at offset 0x1098");
-		static_assert(sizeof(CS2::particles::C_OP_PinParticleToCP) == 0x10A0, "C_OP_PinParticleToCP size should be 0x10A0");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_PinParticleToCP should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_vecOffset) == 0x1D8, "m_vecOffset in C_OP_PinParticleToCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_bOffsetLocal) == 0x890, "m_bOffsetLocal in C_OP_PinParticleToCP should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nParticleSelection) == 0x894, "m_nParticleSelection in C_OP_PinParticleToCP should be at offset 0x894");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nParticleNumber) == 0x898, "m_nParticleNumber in C_OP_PinParticleToCP should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nPinBreakType) == 0xA08, "m_nPinBreakType in C_OP_PinParticleToCP should be at offset 0xA08");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flBreakDistance) == 0xA10, "m_flBreakDistance in C_OP_PinParticleToCP should be at offset 0xA10");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flBreakSpeed) == 0xB80, "m_flBreakSpeed in C_OP_PinParticleToCP should be at offset 0xB80");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flAge) == 0xCF0, "m_flAge in C_OP_PinParticleToCP should be at offset 0xCF0");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nBreakControlPointNumber) == 0xE60, "m_nBreakControlPointNumber in C_OP_PinParticleToCP should be at offset 0xE60");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_nBreakControlPointNumber2) == 0xE64, "m_nBreakControlPointNumber2 in C_OP_PinParticleToCP should be at offset 0xE64");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flBreakValue) == 0xE68, "m_flBreakValue in C_OP_PinParticleToCP should be at offset 0xE68");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_flInterpolation) == 0xFD8, "m_flInterpolation in C_OP_PinParticleToCP should be at offset 0xFD8");
+		static_assert(offsetof(CS2::particles::C_OP_PinParticleToCP, m_bRetainInitialVelocity) == 0x1148, "m_bRetainInitialVelocity in C_OP_PinParticleToCP should be at offset 0x1148");
+		static_assert(sizeof(CS2::particles::C_OP_PinParticleToCP) == 0x1150, "C_OP_PinParticleToCP size should be 0x1150");
 	}
 }

@@ -16,33 +16,33 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_PercentageBetweenTransformLerpCPs : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flInputMin; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1c8 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flInputMin; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleTransformInput m_TransformStart; // 0x1d0 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CParticleTransformInput m_TransformEnd; // 0x238 | Schema_DeclaredClass | Size: 0x68
-			int32_t m_nOutputStartCP; // 0x2a0 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutputStartField; // 0x2a4 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutputEndCP; // 0x2a8 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutputEndField; // 0x2ac | Schema_Builtin | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x2b0 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bActiveRange; // 0x2b4 | Schema_Builtin | Size: 0x1
-			bool m_bRadialCheck; // 0x2b5 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformStart; // 0x1e0 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CParticleTransformInput m_TransformEnd; // 0x248 | Schema_DeclaredClass | Size: 0x68
+			int32_t m_nOutputStartCP; // 0x2b0 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutputStartField; // 0x2b4 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutputEndCP; // 0x2b8 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutputEndField; // 0x2bc | Schema_Builtin | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x2c0 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bActiveRange; // 0x2c4 | Schema_Builtin | Size: 0x1
+			bool m_bRadialCheck; // 0x2c5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_flInputMin) == 0x1C4, "m_flInputMin in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_flInputMax) == 0x1C8, "m_flInputMax in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_TransformStart) == 0x1D0, "m_TransformStart in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_TransformEnd) == 0x238, "m_TransformEnd in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputStartCP) == 0x2A0, "m_nOutputStartCP in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2A0");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputStartField) == 0x2A4, "m_nOutputStartField in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2A4");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputEndCP) == 0x2A8, "m_nOutputEndCP in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2A8");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputEndField) == 0x2AC, "m_nOutputEndField in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2AC");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nSetMethod) == 0x2B0, "m_nSetMethod in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2B0");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_bActiveRange) == 0x2B4, "m_bActiveRange in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2B4");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_bRadialCheck) == 0x2B5, "m_bRadialCheck in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2B5");
-		static_assert(sizeof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs) == 0x2B8, "C_OP_PercentageBetweenTransformLerpCPs size should be 0x2B8");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_flInputMin) == 0x1D4, "m_flInputMin in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_flInputMax) == 0x1D8, "m_flInputMax in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_TransformStart) == 0x1E0, "m_TransformStart in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_TransformEnd) == 0x248, "m_TransformEnd in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputStartCP) == 0x2B0, "m_nOutputStartCP in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2B0");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputStartField) == 0x2B4, "m_nOutputStartField in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2B4");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputEndCP) == 0x2B8, "m_nOutputEndCP in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2B8");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nOutputEndField) == 0x2BC, "m_nOutputEndField in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2BC");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_nSetMethod) == 0x2C0, "m_nSetMethod in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2C0");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_bActiveRange) == 0x2C4, "m_bActiveRange in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2C4");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs, m_bRadialCheck) == 0x2C5, "m_bRadialCheck in C_OP_PercentageBetweenTransformLerpCPs should be at offset 0x2C5");
+		static_assert(sizeof(CS2::particles::C_OP_PercentageBetweenTransformLerpCPs) == 0x2C8, "C_OP_PercentageBetweenTransformLerpCPs size should be 0x2C8");
 	}
 }

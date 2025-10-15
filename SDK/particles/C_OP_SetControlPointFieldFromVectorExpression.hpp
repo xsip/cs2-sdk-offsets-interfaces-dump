@@ -17,22 +17,22 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointFieldFromVectorExpression : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particles::VectorFloatExpressionType_t m_nExpression; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
+			particles::VectorFloatExpressionType_t m_nExpression; // 0x1d8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionVecInput m_vecInput1; // 0x1d0 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleCollectionVecInput m_vecInput2; // 0x848 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flLerp; // 0xec0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x1020 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nOutputCP; // 0x1180 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutVectorField; // 0x1184 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecInput1; // 0x1e0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleCollectionVecInput m_vecInput2; // 0x898 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flLerp; // 0xf50 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x10c0 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nOutputCP; // 0x1230 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutVectorField; // 0x1234 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nExpression) == 0x1C8, "m_nExpression in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_vecInput1) == 0x1D0, "m_vecInput1 in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_vecInput2) == 0x848, "m_vecInput2 in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x848");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_flLerp) == 0xEC0, "m_flLerp in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0xEC0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_flOutputRemap) == 0x1020, "m_flOutputRemap in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1020");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nOutputCP) == 0x1180, "m_nOutputCP in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1180");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nOutVectorField) == 0x1184, "m_nOutVectorField in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1184");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression) == 0x1188, "C_OP_SetControlPointFieldFromVectorExpression size should be 0x1188");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nExpression) == 0x1D8, "m_nExpression in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_vecInput1) == 0x1E0, "m_vecInput1 in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_vecInput2) == 0x898, "m_vecInput2 in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_flLerp) == 0xF50, "m_flLerp in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0xF50");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_flOutputRemap) == 0x10C0, "m_flOutputRemap in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x10C0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nOutputCP) == 0x1230, "m_nOutputCP in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1230");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nOutVectorField) == 0x1234, "m_nOutVectorField in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1234");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression) == 0x1238, "C_OP_SetControlPointFieldFromVectorExpression size should be 0x1238");
 	}
 }

@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_INIT_RandomNamedModelBodyPart : public CS2::particles::C_INIT_RandomNamedModelElement {
 		public:
 		};
-		static_assert(sizeof(CS2::particles::C_INIT_RandomNamedModelBodyPart) == 0x1F0, "C_INIT_RandomNamedModelBodyPart size should be 0x1F0");
+		static_assert(sizeof(CS2::particles::C_INIT_RandomNamedModelBodyPart) == 0x200, "C_INIT_RandomNamedModelBodyPart size should be 0x200");
 	}
 }

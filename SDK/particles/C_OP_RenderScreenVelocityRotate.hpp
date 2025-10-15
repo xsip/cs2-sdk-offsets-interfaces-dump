@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderScreenVelocityRotate : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			float32 m_flRotateRateDegrees; // 0x210 | Schema_Builtin | Size: 0x4
-			float32 m_flForwardDegrees; // 0x214 | Schema_Builtin | Size: 0x4
+			float32 m_flRotateRateDegrees; // 0x220 | Schema_Builtin | Size: 0x4
+			float32 m_flForwardDegrees; // 0x224 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenVelocityRotate, m_flRotateRateDegrees) == 0x210, "m_flRotateRateDegrees in C_OP_RenderScreenVelocityRotate should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenVelocityRotate, m_flForwardDegrees) == 0x214, "m_flForwardDegrees in C_OP_RenderScreenVelocityRotate should be at offset 0x214");
-		static_assert(sizeof(CS2::particles::C_OP_RenderScreenVelocityRotate) == 0x218, "C_OP_RenderScreenVelocityRotate size should be 0x218");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenVelocityRotate, m_flRotateRateDegrees) == 0x220, "m_flRotateRateDegrees in C_OP_RenderScreenVelocityRotate should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenVelocityRotate, m_flForwardDegrees) == 0x224, "m_flForwardDegrees in C_OP_RenderScreenVelocityRotate should be at offset 0x224");
+		static_assert(sizeof(CS2::particles::C_OP_RenderScreenVelocityRotate) == 0x228, "C_OP_RenderScreenVelocityRotate size should be 0x228");
 	}
 }

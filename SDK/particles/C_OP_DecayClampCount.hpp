@@ -14,9 +14,9 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DecayClampCount : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CParticleCollectionFloatInput m_nCount; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_nCount; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DecayClampCount, m_nCount) == 0x1C0, "m_nCount in C_OP_DecayClampCount should be at offset 0x1C0");
-		static_assert(sizeof(CS2::particles::C_OP_DecayClampCount) == 0x320, "C_OP_DecayClampCount size should be 0x320");
+		static_assert(offsetof(CS2::particles::C_OP_DecayClampCount, m_nCount) == 0x1D0, "m_nCount in C_OP_DecayClampCount should be at offset 0x1D0");
+		static_assert(sizeof(CS2::particles::C_OP_DecayClampCount) == 0x340, "C_OP_DecayClampCount size should be 0x340");
 	}
 }

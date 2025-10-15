@@ -13,12 +13,12 @@ namespace CS2 {
 	namespace client {
 		class C_SpotlightEnd : public CS2::client::C_BaseModelEntity {
 		public:
-			float32 m_flLightScale; // 0xec8 | Schema_Builtin | Size: 0x4
-			float32 m_Radius; // 0xecc | Schema_Builtin | Size: 0x4
+			float32 m_flLightScale; // 0xeb0 | Schema_Builtin | Size: 0x4
+			float32 m_Radius; // 0xeb4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_SpotlightEnd, m_flLightScale) == 0xEC8, "m_flLightScale in C_SpotlightEnd should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_SpotlightEnd, m_Radius) == 0xECC, "m_Radius in C_SpotlightEnd should be at offset 0xECC");
-		static_assert(sizeof(CS2::client::C_SpotlightEnd) == 0xED8, "C_SpotlightEnd size should be 0xED8");
+		static_assert(offsetof(CS2::client::C_SpotlightEnd, m_flLightScale) == 0xEB0, "m_flLightScale in C_SpotlightEnd should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_SpotlightEnd, m_Radius) == 0xEB4, "m_Radius in C_SpotlightEnd should be at offset 0xEB4");
+		static_assert(sizeof(CS2::client::C_SpotlightEnd) == 0xEC0, "C_SpotlightEnd size should be 0xEC0");
 	}
 }

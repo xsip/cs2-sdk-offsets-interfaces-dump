@@ -13,24 +13,24 @@ namespace CS2 {
 	namespace client {
 		class C_CSWeaponBaseGun : public CS2::client::C_CSWeaponBase {
 		public:
-			int32_t m_zoomLevel; // 0x1f90 | Schema_Builtin | Size: 0x4
-			int32_t m_iBurstShotsRemaining; // 0x1f94 | Schema_Builtin | Size: 0x4
-			int32_t m_iSilencerBodygroup; // 0x1f98 | Schema_Builtin | Size: 0x4
+			int32_t m_zoomLevel; // 0x1f80 | Schema_Builtin | Size: 0x4
+			int32_t m_iBurstShotsRemaining; // 0x1f84 | Schema_Builtin | Size: 0x4
+			int32_t m_iSilencerBodygroup; // 0x1f88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
-			int32_t m_silencedModelIndex; // 0x1fa8 | Schema_Builtin | Size: 0x4
-			bool m_inPrecache; // 0x1fac | Schema_Builtin | Size: 0x1
-			bool m_bNeedsBoltAction; // 0x1fad | Schema_Builtin | Size: 0x1
+			int32_t m_silencedModelIndex; // 0x1f98 | Schema_Builtin | Size: 0x4
+			bool m_inPrecache; // 0x1f9c | Schema_Builtin | Size: 0x1
+			bool m_bNeedsBoltAction; // 0x1f9d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nRevolverCylinderIdx; // 0x1fb0 | Schema_Builtin | Size: 0x4
+			int32_t m_nRevolverCylinderIdx; // 0x1fa0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_zoomLevel) == 0x1F90, "m_zoomLevel in C_CSWeaponBaseGun should be at offset 0x1F90");
-		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_iBurstShotsRemaining) == 0x1F94, "m_iBurstShotsRemaining in C_CSWeaponBaseGun should be at offset 0x1F94");
-		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_iSilencerBodygroup) == 0x1F98, "m_iSilencerBodygroup in C_CSWeaponBaseGun should be at offset 0x1F98");
-		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_silencedModelIndex) == 0x1FA8, "m_silencedModelIndex in C_CSWeaponBaseGun should be at offset 0x1FA8");
-		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_inPrecache) == 0x1FAC, "m_inPrecache in C_CSWeaponBaseGun should be at offset 0x1FAC");
-		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_bNeedsBoltAction) == 0x1FAD, "m_bNeedsBoltAction in C_CSWeaponBaseGun should be at offset 0x1FAD");
-		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_nRevolverCylinderIdx) == 0x1FB0, "m_nRevolverCylinderIdx in C_CSWeaponBaseGun should be at offset 0x1FB0");
-		static_assert(sizeof(CS2::client::C_CSWeaponBaseGun) == 0x1FC0, "C_CSWeaponBaseGun size should be 0x1FC0");
+		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_zoomLevel) == 0x1F80, "m_zoomLevel in C_CSWeaponBaseGun should be at offset 0x1F80");
+		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_iBurstShotsRemaining) == 0x1F84, "m_iBurstShotsRemaining in C_CSWeaponBaseGun should be at offset 0x1F84");
+		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_iSilencerBodygroup) == 0x1F88, "m_iSilencerBodygroup in C_CSWeaponBaseGun should be at offset 0x1F88");
+		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_silencedModelIndex) == 0x1F98, "m_silencedModelIndex in C_CSWeaponBaseGun should be at offset 0x1F98");
+		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_inPrecache) == 0x1F9C, "m_inPrecache in C_CSWeaponBaseGun should be at offset 0x1F9C");
+		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_bNeedsBoltAction) == 0x1F9D, "m_bNeedsBoltAction in C_CSWeaponBaseGun should be at offset 0x1F9D");
+		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_nRevolverCylinderIdx) == 0x1FA0, "m_nRevolverCylinderIdx in C_CSWeaponBaseGun should be at offset 0x1FA0");
+		static_assert(sizeof(CS2::client::C_CSWeaponBaseGun) == 0x1FB0, "C_CSWeaponBaseGun size should be 0x1FB0");
 	}
 }

@@ -40,43 +40,45 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nRandomSeed; // 0x80 | Schema_Builtin | Size: 0x4
 			particleslib::ParticleFloatRandomMode_t m_nRandomMode; // 0x84 | Schema_DeclaredEnum | Size: 0x4
-			S2_PAD(0x4);
-			float32 m_flLOD0; // 0x8c | Schema_Builtin | Size: 0x4
-			float32 m_flLOD1; // 0x90 | Schema_Builtin | Size: 0x4
-			float32 m_flLOD2; // 0x94 | Schema_Builtin | Size: 0x4
-			float32 m_flLOD3; // 0x98 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nNoiseInputVectorAttribute; // 0x9c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flNoiseOutputMin; // 0xa0 | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseOutputMax; // 0xa4 | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseScale; // 0xa8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecNoiseOffsetRate; // 0xac | Schema_Atomic | Size: 0xc
-			float32 m_flNoiseOffset; // 0xb8 | Schema_Builtin | Size: 0x4
-			int32_t m_nNoiseOctaves; // 0xbc | Schema_Builtin | Size: 0x4
-			particleslib::PFNoiseTurbulence_t m_nNoiseTurbulence; // 0xc0 | Schema_DeclaredEnum | Size: 0x4
-			particleslib::PFNoiseType_t m_nNoiseType; // 0xc4 | Schema_DeclaredEnum | Size: 0x4
-			particleslib::PFNoiseModifier_t m_nNoiseModifier; // 0xc8 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flNoiseTurbulenceScale; // 0xcc | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseTurbulenceMix; // 0xd0 | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseImgPreviewScale; // 0xd4 | Schema_Builtin | Size: 0x4
-			bool m_bNoiseImgPreviewLive; // 0xd8 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x8);
+			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x90 | Schema_Atomic | Size: 0x8
+			float32 m_flLOD0; // 0x98 | Schema_Builtin | Size: 0x4
+			float32 m_flLOD1; // 0x9c | Schema_Builtin | Size: 0x4
+			float32 m_flLOD2; // 0xa0 | Schema_Builtin | Size: 0x4
+			float32 m_flLOD3; // 0xa4 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nNoiseInputVectorAttribute; // 0xa8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flNoiseOutputMin; // 0xac | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseOutputMax; // 0xb0 | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseScale; // 0xb4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecNoiseOffsetRate; // 0xb8 | Schema_Atomic | Size: 0xc
+			float32 m_flNoiseOffset; // 0xc4 | Schema_Builtin | Size: 0x4
+			int32_t m_nNoiseOctaves; // 0xc8 | Schema_Builtin | Size: 0x4
+			particleslib::PFNoiseTurbulence_t m_nNoiseTurbulence; // 0xcc | Schema_DeclaredEnum | Size: 0x4
+			particleslib::PFNoiseType_t m_nNoiseType; // 0xd0 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::PFNoiseModifier_t m_nNoiseModifier; // 0xd4 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flNoiseTurbulenceScale; // 0xd8 | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseTurbulenceMix; // 0xdc | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseImgPreviewScale; // 0xe0 | Schema_Builtin | Size: 0x4
+			bool m_bNoiseImgPreviewLive; // 0xe4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb);
-			float32 m_flNoCameraFallback; // 0xe4 | Schema_Builtin | Size: 0x4
-			bool m_bUseBoundsCenter; // 0xe8 | Schema_Builtin | Size: 0x1
+			float32 m_flNoCameraFallback; // 0xf0 | Schema_Builtin | Size: 0x4
+			bool m_bUseBoundsCenter; // 0xf4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particleslib::ParticleFloatInputMode_t m_nInputMode; // 0xec | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flMultFactor; // 0xf0 | Schema_Builtin | Size: 0x4
-			float32 m_flInput0; // 0xf4 | Schema_Builtin | Size: 0x4
-			float32 m_flInput1; // 0xf8 | Schema_Builtin | Size: 0x4
-			float32 m_flOutput0; // 0xfc | Schema_Builtin | Size: 0x4
-			float32 m_flOutput1; // 0x100 | Schema_Builtin | Size: 0x4
-			float32 m_flNotchedRangeMin; // 0x104 | Schema_Builtin | Size: 0x4
-			float32 m_flNotchedRangeMax; // 0x108 | Schema_Builtin | Size: 0x4
-			float32 m_flNotchedOutputOutside; // 0x10c | Schema_Builtin | Size: 0x4
-			float32 m_flNotchedOutputInside; // 0x110 | Schema_Builtin | Size: 0x4
-			particleslib::ParticleFloatRoundType_t m_nRoundType; // 0x114 | Schema_DeclaredEnum | Size: 0x4
-			particleslib::ParticleFloatBiasType_t m_nBiasType; // 0x118 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flBiasParameter; // 0x11c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CPiecewiseCurve m_Curve; // 0x120 | Schema_Atomic | Size: 0x40
+			particleslib::ParticleFloatInputMode_t m_nInputMode; // 0xf8 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flMultFactor; // 0xfc | Schema_Builtin | Size: 0x4
+			float32 m_flInput0; // 0x100 | Schema_Builtin | Size: 0x4
+			float32 m_flInput1; // 0x104 | Schema_Builtin | Size: 0x4
+			float32 m_flOutput0; // 0x108 | Schema_Builtin | Size: 0x4
+			float32 m_flOutput1; // 0x10c | Schema_Builtin | Size: 0x4
+			float32 m_flNotchedRangeMin; // 0x110 | Schema_Builtin | Size: 0x4
+			float32 m_flNotchedRangeMax; // 0x114 | Schema_Builtin | Size: 0x4
+			float32 m_flNotchedOutputOutside; // 0x118 | Schema_Builtin | Size: 0x4
+			float32 m_flNotchedOutputInside; // 0x11c | Schema_Builtin | Size: 0x4
+			particleslib::ParticleFloatRoundType_t m_nRoundType; // 0x120 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::ParticleFloatBiasType_t m_nBiasType; // 0x124 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flBiasParameter; // 0x128 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4);
+			GlobalTypes::CPiecewiseCurve m_Curve; // 0x130 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nType) == 0x10, "m_nType in CParticleFloatInput should be at offset 0x10");
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nMapType) == 0x14, "m_nMapType in CParticleFloatInput should be at offset 0x14");
@@ -92,40 +94,41 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_bHasRandomSignFlip) == 0x7C, "m_bHasRandomSignFlip in CParticleFloatInput should be at offset 0x7C");
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nRandomSeed) == 0x80, "m_nRandomSeed in CParticleFloatInput should be at offset 0x80");
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nRandomMode) == 0x84, "m_nRandomMode in CParticleFloatInput should be at offset 0x84");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD0) == 0x8C, "m_flLOD0 in CParticleFloatInput should be at offset 0x8C");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD1) == 0x90, "m_flLOD1 in CParticleFloatInput should be at offset 0x90");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD2) == 0x94, "m_flLOD2 in CParticleFloatInput should be at offset 0x94");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD3) == 0x98, "m_flLOD3 in CParticleFloatInput should be at offset 0x98");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseInputVectorAttribute) == 0x9C, "m_nNoiseInputVectorAttribute in CParticleFloatInput should be at offset 0x9C");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseOutputMin) == 0xA0, "m_flNoiseOutputMin in CParticleFloatInput should be at offset 0xA0");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseOutputMax) == 0xA4, "m_flNoiseOutputMax in CParticleFloatInput should be at offset 0xA4");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseScale) == 0xA8, "m_flNoiseScale in CParticleFloatInput should be at offset 0xA8");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_vecNoiseOffsetRate) == 0xAC, "m_vecNoiseOffsetRate in CParticleFloatInput should be at offset 0xAC");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseOffset) == 0xB8, "m_flNoiseOffset in CParticleFloatInput should be at offset 0xB8");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseOctaves) == 0xBC, "m_nNoiseOctaves in CParticleFloatInput should be at offset 0xBC");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseTurbulence) == 0xC0, "m_nNoiseTurbulence in CParticleFloatInput should be at offset 0xC0");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseType) == 0xC4, "m_nNoiseType in CParticleFloatInput should be at offset 0xC4");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseModifier) == 0xC8, "m_nNoiseModifier in CParticleFloatInput should be at offset 0xC8");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseTurbulenceScale) == 0xCC, "m_flNoiseTurbulenceScale in CParticleFloatInput should be at offset 0xCC");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseTurbulenceMix) == 0xD0, "m_flNoiseTurbulenceMix in CParticleFloatInput should be at offset 0xD0");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseImgPreviewScale) == 0xD4, "m_flNoiseImgPreviewScale in CParticleFloatInput should be at offset 0xD4");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_bNoiseImgPreviewLive) == 0xD8, "m_bNoiseImgPreviewLive in CParticleFloatInput should be at offset 0xD8");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoCameraFallback) == 0xE4, "m_flNoCameraFallback in CParticleFloatInput should be at offset 0xE4");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_bUseBoundsCenter) == 0xE8, "m_bUseBoundsCenter in CParticleFloatInput should be at offset 0xE8");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nInputMode) == 0xEC, "m_nInputMode in CParticleFloatInput should be at offset 0xEC");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flMultFactor) == 0xF0, "m_flMultFactor in CParticleFloatInput should be at offset 0xF0");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flInput0) == 0xF4, "m_flInput0 in CParticleFloatInput should be at offset 0xF4");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flInput1) == 0xF8, "m_flInput1 in CParticleFloatInput should be at offset 0xF8");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flOutput0) == 0xFC, "m_flOutput0 in CParticleFloatInput should be at offset 0xFC");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flOutput1) == 0x100, "m_flOutput1 in CParticleFloatInput should be at offset 0x100");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedRangeMin) == 0x104, "m_flNotchedRangeMin in CParticleFloatInput should be at offset 0x104");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedRangeMax) == 0x108, "m_flNotchedRangeMax in CParticleFloatInput should be at offset 0x108");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedOutputOutside) == 0x10C, "m_flNotchedOutputOutside in CParticleFloatInput should be at offset 0x10C");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedOutputInside) == 0x110, "m_flNotchedOutputInside in CParticleFloatInput should be at offset 0x110");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nRoundType) == 0x114, "m_nRoundType in CParticleFloatInput should be at offset 0x114");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nBiasType) == 0x118, "m_nBiasType in CParticleFloatInput should be at offset 0x118");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flBiasParameter) == 0x11C, "m_flBiasParameter in CParticleFloatInput should be at offset 0x11C");
-		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_Curve) == 0x120, "m_Curve in CParticleFloatInput should be at offset 0x120");
-		static_assert(sizeof(CS2::particleslib::CParticleFloatInput) == 0x160, "CParticleFloatInput size should be 0x160");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_strSnapshotSubset) == 0x90, "m_strSnapshotSubset in CParticleFloatInput should be at offset 0x90");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD0) == 0x98, "m_flLOD0 in CParticleFloatInput should be at offset 0x98");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD1) == 0x9C, "m_flLOD1 in CParticleFloatInput should be at offset 0x9C");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD2) == 0xA0, "m_flLOD2 in CParticleFloatInput should be at offset 0xA0");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLOD3) == 0xA4, "m_flLOD3 in CParticleFloatInput should be at offset 0xA4");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseInputVectorAttribute) == 0xA8, "m_nNoiseInputVectorAttribute in CParticleFloatInput should be at offset 0xA8");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseOutputMin) == 0xAC, "m_flNoiseOutputMin in CParticleFloatInput should be at offset 0xAC");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseOutputMax) == 0xB0, "m_flNoiseOutputMax in CParticleFloatInput should be at offset 0xB0");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseScale) == 0xB4, "m_flNoiseScale in CParticleFloatInput should be at offset 0xB4");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_vecNoiseOffsetRate) == 0xB8, "m_vecNoiseOffsetRate in CParticleFloatInput should be at offset 0xB8");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseOffset) == 0xC4, "m_flNoiseOffset in CParticleFloatInput should be at offset 0xC4");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseOctaves) == 0xC8, "m_nNoiseOctaves in CParticleFloatInput should be at offset 0xC8");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseTurbulence) == 0xCC, "m_nNoiseTurbulence in CParticleFloatInput should be at offset 0xCC");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseType) == 0xD0, "m_nNoiseType in CParticleFloatInput should be at offset 0xD0");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nNoiseModifier) == 0xD4, "m_nNoiseModifier in CParticleFloatInput should be at offset 0xD4");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseTurbulenceScale) == 0xD8, "m_flNoiseTurbulenceScale in CParticleFloatInput should be at offset 0xD8");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseTurbulenceMix) == 0xDC, "m_flNoiseTurbulenceMix in CParticleFloatInput should be at offset 0xDC");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoiseImgPreviewScale) == 0xE0, "m_flNoiseImgPreviewScale in CParticleFloatInput should be at offset 0xE0");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_bNoiseImgPreviewLive) == 0xE4, "m_bNoiseImgPreviewLive in CParticleFloatInput should be at offset 0xE4");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNoCameraFallback) == 0xF0, "m_flNoCameraFallback in CParticleFloatInput should be at offset 0xF0");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_bUseBoundsCenter) == 0xF4, "m_bUseBoundsCenter in CParticleFloatInput should be at offset 0xF4");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nInputMode) == 0xF8, "m_nInputMode in CParticleFloatInput should be at offset 0xF8");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flMultFactor) == 0xFC, "m_flMultFactor in CParticleFloatInput should be at offset 0xFC");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flInput0) == 0x100, "m_flInput0 in CParticleFloatInput should be at offset 0x100");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flInput1) == 0x104, "m_flInput1 in CParticleFloatInput should be at offset 0x104");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flOutput0) == 0x108, "m_flOutput0 in CParticleFloatInput should be at offset 0x108");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flOutput1) == 0x10C, "m_flOutput1 in CParticleFloatInput should be at offset 0x10C");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedRangeMin) == 0x110, "m_flNotchedRangeMin in CParticleFloatInput should be at offset 0x110");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedRangeMax) == 0x114, "m_flNotchedRangeMax in CParticleFloatInput should be at offset 0x114");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedOutputOutside) == 0x118, "m_flNotchedOutputOutside in CParticleFloatInput should be at offset 0x118");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flNotchedOutputInside) == 0x11C, "m_flNotchedOutputInside in CParticleFloatInput should be at offset 0x11C");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nRoundType) == 0x120, "m_nRoundType in CParticleFloatInput should be at offset 0x120");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nBiasType) == 0x124, "m_nBiasType in CParticleFloatInput should be at offset 0x124");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flBiasParameter) == 0x128, "m_flBiasParameter in CParticleFloatInput should be at offset 0x128");
+		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_Curve) == 0x130, "m_Curve in CParticleFloatInput should be at offset 0x130");
+		static_assert(sizeof(CS2::particleslib::CParticleFloatInput) == 0x170, "CParticleFloatInput size should be 0x170");
 	}
 }

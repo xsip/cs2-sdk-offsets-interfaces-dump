@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DensityForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			float32 m_flRadiusScale; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flForceScale; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flTargetDensity; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusScale; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flForceScale; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flTargetDensity; // 0x1e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DensityForce, m_flRadiusScale) == 0x1D0, "m_flRadiusScale in C_OP_DensityForce should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_DensityForce, m_flForceScale) == 0x1D4, "m_flForceScale in C_OP_DensityForce should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_DensityForce, m_flTargetDensity) == 0x1D8, "m_flTargetDensity in C_OP_DensityForce should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_OP_DensityForce) == 0x1E0, "C_OP_DensityForce size should be 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_DensityForce, m_flRadiusScale) == 0x1E0, "m_flRadiusScale in C_OP_DensityForce should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_DensityForce, m_flForceScale) == 0x1E4, "m_flForceScale in C_OP_DensityForce should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_DensityForce, m_flTargetDensity) == 0x1E8, "m_flTargetDensity in C_OP_DensityForce should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_OP_DensityForce) == 0x1F0, "C_OP_DensityForce size should be 0x1F0");
 	}
 }

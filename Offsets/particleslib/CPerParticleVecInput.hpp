@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particleslib {
-			// Class size: 0x678
+			// Class size: 0x6B8
 			namespace CPerParticleVecInput /*: public CS2::particleslib::CParticleVecInput*/ {
 				// NO SCHEMA DATA FOUND!
 			}

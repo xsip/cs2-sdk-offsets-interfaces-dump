@@ -14,32 +14,32 @@ namespace CS2 {
 	namespace client {
 		class C_BaseTrigger : public CS2::client::C_BaseToggle {
 		public:
-			entity2::CEntityIOOutput m_OnStartTouch; // 0xec8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStartTouchAll; // 0xef0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEndTouch; // 0xf18 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEndTouchAll; // 0xf40 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTouching; // 0xf68 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0xf90 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnNotTouching; // 0xfb8 | Schema_DeclaredClass | Size: 0x28
-			// client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_hTouchingEntities; // 0xfe0 | Schema_Atomic | Size: 0x18
-			char  m_hTouchingEntities[0x18]; // 0xfe0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0xff8 | Schema_Atomic | Size: 0x8
-			// client::CHandle< client::CBaseFilter > m_hFilter; // 0x1000 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x1000 | Schema_Atomic | Size: 0x4
-			bool m_bDisabled; // 0x1004 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnStartTouch; // 0xeb0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnStartTouchAll; // 0xed8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnEndTouch; // 0xf00 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnEndTouchAll; // 0xf28 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnTouching; // 0xf50 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0xf78 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnNotTouching; // 0xfa0 | Schema_DeclaredClass | Size: 0x28
+			// client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_hTouchingEntities; // 0xfc8 | Schema_Atomic | Size: 0x18
+			char  m_hTouchingEntities[0x18]; // 0xfc8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0xfe0 | Schema_Atomic | Size: 0x8
+			// client::CHandle< client::CBaseFilter > m_hFilter; // 0xfe8 | Schema_Atomic | Size: 0x4
+			char  m_hFilter[0x4]; // 0xfe8 | Schema_Atomic | Size: 0x4
+			bool m_bDisabled; // 0xfec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnStartTouch) == 0xEC8, "m_OnStartTouch in C_BaseTrigger should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnStartTouchAll) == 0xEF0, "m_OnStartTouchAll in C_BaseTrigger should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnEndTouch) == 0xF18, "m_OnEndTouch in C_BaseTrigger should be at offset 0xF18");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnEndTouchAll) == 0xF40, "m_OnEndTouchAll in C_BaseTrigger should be at offset 0xF40");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnTouching) == 0xF68, "m_OnTouching in C_BaseTrigger should be at offset 0xF68");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnTouchingEachEntity) == 0xF90, "m_OnTouchingEachEntity in C_BaseTrigger should be at offset 0xF90");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnNotTouching) == 0xFB8, "m_OnNotTouching in C_BaseTrigger should be at offset 0xFB8");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_hTouchingEntities) == 0xFE0, "m_hTouchingEntities in C_BaseTrigger should be at offset 0xFE0");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_iFilterName) == 0xFF8, "m_iFilterName in C_BaseTrigger should be at offset 0xFF8");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_hFilter) == 0x1000, "m_hFilter in C_BaseTrigger should be at offset 0x1000");
-		static_assert(offsetof(CS2::client::C_BaseTrigger, m_bDisabled) == 0x1004, "m_bDisabled in C_BaseTrigger should be at offset 0x1004");
-		static_assert(sizeof(CS2::client::C_BaseTrigger) == 0x1008, "C_BaseTrigger size should be 0x1008");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnStartTouch) == 0xEB0, "m_OnStartTouch in C_BaseTrigger should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnStartTouchAll) == 0xED8, "m_OnStartTouchAll in C_BaseTrigger should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnEndTouch) == 0xF00, "m_OnEndTouch in C_BaseTrigger should be at offset 0xF00");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnEndTouchAll) == 0xF28, "m_OnEndTouchAll in C_BaseTrigger should be at offset 0xF28");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnTouching) == 0xF50, "m_OnTouching in C_BaseTrigger should be at offset 0xF50");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnTouchingEachEntity) == 0xF78, "m_OnTouchingEachEntity in C_BaseTrigger should be at offset 0xF78");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnNotTouching) == 0xFA0, "m_OnNotTouching in C_BaseTrigger should be at offset 0xFA0");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_hTouchingEntities) == 0xFC8, "m_hTouchingEntities in C_BaseTrigger should be at offset 0xFC8");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_iFilterName) == 0xFE0, "m_iFilterName in C_BaseTrigger should be at offset 0xFE0");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_hFilter) == 0xFE8, "m_hFilter in C_BaseTrigger should be at offset 0xFE8");
+		static_assert(offsetof(CS2::client::C_BaseTrigger, m_bDisabled) == 0xFEC, "m_bDisabled in C_BaseTrigger should be at offset 0xFEC");
+		static_assert(sizeof(CS2::client::C_BaseTrigger) == 0xFF0, "C_BaseTrigger size should be 0xFF0");
 	}
 }

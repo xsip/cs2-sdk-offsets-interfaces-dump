@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace client {
 		class C_RectLight : public CS2::client::C_BarnLight {
 		public:
-			bool m_bShowLight; // 0x1218 | Schema_Builtin | Size: 0x1
+			bool m_bShowLight; // 0x1200 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_RectLight, m_bShowLight) == 0x1218, "m_bShowLight in C_RectLight should be at offset 0x1218");
-		static_assert(sizeof(CS2::client::C_RectLight) == 0x1220, "C_RectLight size should be 0x1220");
+		static_assert(offsetof(CS2::client::C_RectLight, m_bShowLight) == 0x1200, "m_bShowLight in C_RectLight should be at offset 0x1200");
+		static_assert(sizeof(CS2::client::C_RectLight) == 0x1208, "C_RectLight size should be 0x1208");
 	}
 }

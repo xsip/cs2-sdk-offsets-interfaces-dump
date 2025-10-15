@@ -17,7 +17,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_radius; // 0x4f4 | Schema_Builtin | Size: 0x4
 			float32 m_force; // 0x4f8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_axis; // 0x4fc | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_axis; // 0x4fc | Schema_Atomic | Size: 0xc
 		};
 		static_assert(offsetof(CS2::server::CRagdollMagnet, m_bDisabled) == 0x4F0, "m_bDisabled in CRagdollMagnet should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CRagdollMagnet, m_radius) == 0x4F4, "m_radius in CRagdollMagnet should be at offset 0x4F4");

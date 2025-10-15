@@ -23,7 +23,8 @@ namespace CS2 {
 			float32 m_flPreModifiedDamage; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalledHealthLost; // 0x14 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalledDamageDealt; // 0x18 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4); // End padding
+			bool m_bWasDamageSuppressed; // 0x1c | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3); // End padding
 		};
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_pOriginatingInfo) == 0x0, "m_pOriginatingInfo in CTakeDamageResult should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nHealthLost) == 0x8, "m_nHealthLost in CTakeDamageResult should be at offset 0x8");
@@ -31,6 +32,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_flPreModifiedDamage) == 0x10, "m_flPreModifiedDamage in CTakeDamageResult should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nTotalledHealthLost) == 0x14, "m_nTotalledHealthLost in CTakeDamageResult should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nTotalledDamageDealt) == 0x18, "m_nTotalledDamageDealt in CTakeDamageResult should be at offset 0x18");
+		static_assert(offsetof(CS2::client::CTakeDamageResult, m_bWasDamageSuppressed) == 0x1C, "m_bWasDamageSuppressed in CTakeDamageResult should be at offset 0x1C");
 		static_assert(sizeof(CS2::client::CTakeDamageResult) == 0x20, "CTakeDamageResult size should be 0x20");
 	}
 }

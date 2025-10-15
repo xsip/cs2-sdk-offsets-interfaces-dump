@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x338
+			// Class size: 0x358
 			namespace C_OP_SetChildControlPoints /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nChildGroupID = 0x1c0; // int32_t m_nChildGroupID; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFirstControlPoint = 0x1c4; // int32_t m_nFirstControlPoint; |  0x1c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNumControlPoints = 0x1c8; // int32_t m_nNumControlPoints; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFirstSourcePoint = 0x1d0; // particleslib::CParticleCollectionFloatInput m_nFirstSourcePoint; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bReverse = 0x330; // bool m_bReverse; |  0x330 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSetOrientation = 0x331; // bool m_bSetOrientation; |  0x331 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOrientation = 0x334; // particles::ParticleOrientationType_t m_nOrientation; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nChildGroupID = 0x1d0; // int32_t m_nChildGroupID; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFirstControlPoint = 0x1d4; // int32_t m_nFirstControlPoint; |  0x1d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nNumControlPoints = 0x1d8; // int32_t m_nNumControlPoints; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFirstSourcePoint = 0x1e0; // particleslib::CParticleCollectionFloatInput m_nFirstSourcePoint; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bReverse = 0x350; // bool m_bReverse; |  0x350 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSetOrientation = 0x351; // bool m_bSetOrientation; |  0x351 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nOrientation = 0x354; // particles::ParticleOrientationType_t m_nOrientation; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

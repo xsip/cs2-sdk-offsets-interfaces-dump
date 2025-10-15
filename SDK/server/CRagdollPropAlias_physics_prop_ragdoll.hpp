@@ -14,6 +14,6 @@ namespace CS2 {
 		class CRagdollPropAlias_physics_prop_ragdoll : public CS2::server::CRagdollProp {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CRagdollPropAlias_physics_prop_ragdoll) == 0xBD0, "CRagdollPropAlias_physics_prop_ragdoll size should be 0xBD0");
+		static_assert(sizeof(CS2::server::CRagdollPropAlias_physics_prop_ragdoll) == 0xBE0, "CRagdollPropAlias_physics_prop_ragdoll size should be 0xBE0");
 	}
 }

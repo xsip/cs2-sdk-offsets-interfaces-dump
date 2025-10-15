@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1E8
+			// Class size: 0x1F8
 			namespace C_OP_HSVShiftToCP /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nColorCP = 0x1c8; // int32_t m_nColorCP; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nColorGemEnableCP = 0x1cc; // int32_t m_nColorGemEnableCP; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nOutputCP = 0x1d0; // int32_t m_nOutputCP; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_DefaultHSVColor = 0x1d4; // GlobalTypes::Color m_DefaultHSVColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nColorCP = 0x1d8; // int32_t m_nColorCP; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nColorGemEnableCP = 0x1dc; // int32_t m_nColorGemEnableCP; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nOutputCP = 0x1e0; // int32_t m_nOutputCP; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_DefaultHSVColor = 0x1e4; // GlobalTypes::Color m_DefaultHSVColor; |  Schema_Atomic | Size: 0x4
 			}
 		}
 	}

@@ -16,37 +16,37 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ClientPhysics : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			GlobalTypes::CUtlString m_strPhysicsType; // 0x210 | Schema_Atomic | Size: 0x8
-			bool m_bStartAsleep; // 0x218 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_strPhysicsType; // 0x220 | Schema_Atomic | Size: 0x8
+			bool m_bStartAsleep; // 0x228 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CParticleCollectionFloatInput m_flPlayerWakeRadius; // 0x220 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flVehicleWakeRadius; // 0x380 | Schema_DeclaredClass | Size: 0x160
-			bool m_bUseHighQualitySimulation; // 0x4e0 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flPlayerWakeRadius; // 0x230 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flVehicleWakeRadius; // 0x3a0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bUseHighQualitySimulation; // 0x510 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nMaxParticleCount; // 0x4e4 | Schema_Builtin | Size: 0x4
-			bool m_bRespectExclusionVolumes; // 0x4e8 | Schema_Builtin | Size: 0x1
-			bool m_bKillParticles; // 0x4e9 | Schema_Builtin | Size: 0x1
-			bool m_bDeleteSim; // 0x4ea | Schema_Builtin | Size: 0x1
+			int32_t m_nMaxParticleCount; // 0x514 | Schema_Builtin | Size: 0x4
+			bool m_bRespectExclusionVolumes; // 0x518 | Schema_Builtin | Size: 0x1
+			bool m_bKillParticles; // 0x519 | Schema_Builtin | Size: 0x1
+			bool m_bDeleteSim; // 0x51a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			int32_t m_nControlPoint; // 0x4ec | Schema_Builtin | Size: 0x4
-			int32_t m_nForcedSimId; // 0x4f0 | Schema_Builtin | Size: 0x4
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x4f4 | Schema_DeclaredEnum | Size: 0x4
-			particles::ParticleAttrBoxFlags_t m_nForcedStatusEffects; // 0x4f8 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nControlPoint; // 0x51c | Schema_Builtin | Size: 0x4
+			int32_t m_nForcedSimId; // 0x520 | Schema_Builtin | Size: 0x4
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x524 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleAttrBoxFlags_t m_nForcedStatusEffects; // 0x528 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_strPhysicsType) == 0x210, "m_strPhysicsType in C_OP_ClientPhysics should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bStartAsleep) == 0x218, "m_bStartAsleep in C_OP_ClientPhysics should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_flPlayerWakeRadius) == 0x220, "m_flPlayerWakeRadius in C_OP_ClientPhysics should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_flVehicleWakeRadius) == 0x380, "m_flVehicleWakeRadius in C_OP_ClientPhysics should be at offset 0x380");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bUseHighQualitySimulation) == 0x4E0, "m_bUseHighQualitySimulation in C_OP_ClientPhysics should be at offset 0x4E0");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nMaxParticleCount) == 0x4E4, "m_nMaxParticleCount in C_OP_ClientPhysics should be at offset 0x4E4");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bRespectExclusionVolumes) == 0x4E8, "m_bRespectExclusionVolumes in C_OP_ClientPhysics should be at offset 0x4E8");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bKillParticles) == 0x4E9, "m_bKillParticles in C_OP_ClientPhysics should be at offset 0x4E9");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bDeleteSim) == 0x4EA, "m_bDeleteSim in C_OP_ClientPhysics should be at offset 0x4EA");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nControlPoint) == 0x4EC, "m_nControlPoint in C_OP_ClientPhysics should be at offset 0x4EC");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nForcedSimId) == 0x4F0, "m_nForcedSimId in C_OP_ClientPhysics should be at offset 0x4F0");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nColorBlendType) == 0x4F4, "m_nColorBlendType in C_OP_ClientPhysics should be at offset 0x4F4");
-		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nForcedStatusEffects) == 0x4F8, "m_nForcedStatusEffects in C_OP_ClientPhysics should be at offset 0x4F8");
-		static_assert(sizeof(CS2::particles::C_OP_ClientPhysics) == 0x500, "C_OP_ClientPhysics size should be 0x500");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_strPhysicsType) == 0x220, "m_strPhysicsType in C_OP_ClientPhysics should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bStartAsleep) == 0x228, "m_bStartAsleep in C_OP_ClientPhysics should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_flPlayerWakeRadius) == 0x230, "m_flPlayerWakeRadius in C_OP_ClientPhysics should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_flVehicleWakeRadius) == 0x3A0, "m_flVehicleWakeRadius in C_OP_ClientPhysics should be at offset 0x3A0");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bUseHighQualitySimulation) == 0x510, "m_bUseHighQualitySimulation in C_OP_ClientPhysics should be at offset 0x510");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nMaxParticleCount) == 0x514, "m_nMaxParticleCount in C_OP_ClientPhysics should be at offset 0x514");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bRespectExclusionVolumes) == 0x518, "m_bRespectExclusionVolumes in C_OP_ClientPhysics should be at offset 0x518");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bKillParticles) == 0x519, "m_bKillParticles in C_OP_ClientPhysics should be at offset 0x519");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bDeleteSim) == 0x51A, "m_bDeleteSim in C_OP_ClientPhysics should be at offset 0x51A");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nControlPoint) == 0x51C, "m_nControlPoint in C_OP_ClientPhysics should be at offset 0x51C");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nForcedSimId) == 0x520, "m_nForcedSimId in C_OP_ClientPhysics should be at offset 0x520");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nColorBlendType) == 0x524, "m_nColorBlendType in C_OP_ClientPhysics should be at offset 0x524");
+		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nForcedStatusEffects) == 0x528, "m_nForcedStatusEffects in C_OP_ClientPhysics should be at offset 0x528");
+		static_assert(sizeof(CS2::particles::C_OP_ClientPhysics) == 0x530, "C_OP_ClientPhysics size should be 0x530");
 	}
 }

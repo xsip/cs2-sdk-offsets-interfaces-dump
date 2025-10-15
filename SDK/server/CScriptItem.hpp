@@ -14,10 +14,10 @@ namespace CS2 {
 	namespace server {
 		class CScriptItem : public CS2::server::CItem {
 		public:
-			client::MoveType_t m_MoveTypeOverride; // 0xb58 | Schema_DeclaredEnum | Size: 0x1
-			S2_PAD(0x7); // End padding
+			client::MoveType_t m_MoveTypeOverride; // 0xb70 | Schema_DeclaredEnum | Size: 0x1
+			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::server::CScriptItem, m_MoveTypeOverride) == 0xB58, "m_MoveTypeOverride in CScriptItem should be at offset 0xB58");
-		static_assert(sizeof(CS2::server::CScriptItem) == 0xB60, "CScriptItem size should be 0xB60");
+		static_assert(offsetof(CS2::server::CScriptItem, m_MoveTypeOverride) == 0xB70, "m_MoveTypeOverride in CScriptItem should be at offset 0xB70");
+		static_assert(sizeof(CS2::server::CScriptItem) == 0xB80, "CScriptItem size should be 0xB80");
 	}
 }

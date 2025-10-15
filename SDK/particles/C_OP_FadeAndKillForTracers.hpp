@@ -13,19 +13,19 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_FadeAndKillForTracers : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_flStartFadeInTime; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flEndFadeInTime; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flStartFadeOutTime; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flEndFadeOutTime; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flStartAlpha; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flEndAlpha; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flStartFadeInTime; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flEndFadeInTime; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flStartFadeOutTime; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flEndFadeOutTime; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flStartAlpha; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flEndAlpha; // 0x1e4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flStartFadeInTime) == 0x1C0, "m_flStartFadeInTime in C_OP_FadeAndKillForTracers should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flEndFadeInTime) == 0x1C4, "m_flEndFadeInTime in C_OP_FadeAndKillForTracers should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flStartFadeOutTime) == 0x1C8, "m_flStartFadeOutTime in C_OP_FadeAndKillForTracers should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flEndFadeOutTime) == 0x1CC, "m_flEndFadeOutTime in C_OP_FadeAndKillForTracers should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flStartAlpha) == 0x1D0, "m_flStartAlpha in C_OP_FadeAndKillForTracers should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flEndAlpha) == 0x1D4, "m_flEndAlpha in C_OP_FadeAndKillForTracers should be at offset 0x1D4");
-		static_assert(sizeof(CS2::particles::C_OP_FadeAndKillForTracers) == 0x1D8, "C_OP_FadeAndKillForTracers size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flStartFadeInTime) == 0x1D0, "m_flStartFadeInTime in C_OP_FadeAndKillForTracers should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flEndFadeInTime) == 0x1D4, "m_flEndFadeInTime in C_OP_FadeAndKillForTracers should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flStartFadeOutTime) == 0x1D8, "m_flStartFadeOutTime in C_OP_FadeAndKillForTracers should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flEndFadeOutTime) == 0x1DC, "m_flEndFadeOutTime in C_OP_FadeAndKillForTracers should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flStartAlpha) == 0x1E0, "m_flStartAlpha in C_OP_FadeAndKillForTracers should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_FadeAndKillForTracers, m_flEndAlpha) == 0x1E4, "m_flEndAlpha in C_OP_FadeAndKillForTracers should be at offset 0x1E4");
+		static_assert(sizeof(CS2::particles::C_OP_FadeAndKillForTracers) == 0x1E8, "C_OP_FadeAndKillForTracers size should be 0x1E8");
 	}
 }

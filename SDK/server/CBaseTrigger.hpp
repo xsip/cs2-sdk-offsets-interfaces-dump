@@ -14,35 +14,35 @@ namespace CS2 {
 	namespace server {
 		class CBaseTrigger : public CS2::server::CBaseToggle {
 		public:
-			entity2::CEntityIOOutput m_OnStartTouch; // 0x870 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStartTouchAll; // 0x898 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEndTouch; // 0x8c0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEndTouchAll; // 0x8e8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTouching; // 0x910 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0x938 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnNotTouching; // 0x960 | Schema_DeclaredClass | Size: 0x28
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTouchingEntities; // 0x988 | Schema_Atomic | Size: 0x18
-			char  m_hTouchingEntities[0x18]; // 0x988 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x9a0 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x9a8 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
-			bool m_bDisabled; // 0x9ac | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnStartTouch; // 0x858 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnStartTouchAll; // 0x880 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnEndTouch; // 0x8a8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnEndTouchAll; // 0x8d0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnTouching; // 0x8f8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0x920 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnNotTouching; // 0x948 | Schema_DeclaredClass | Size: 0x28
+			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTouchingEntities; // 0x970 | Schema_Atomic | Size: 0x18
+			char  m_hTouchingEntities[0x18]; // 0x970 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x988 | Schema_Atomic | Size: 0x8
+			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x990 | Schema_Atomic | Size: 0x4
+			char  m_hFilter[0x4]; // 0x990 | Schema_Atomic | Size: 0x4
+			bool m_bDisabled; // 0x994 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb);
-			bool m_bUseAsyncQueries; // 0x9b8 | Schema_Builtin | Size: 0x1
+			bool m_bUseAsyncQueries; // 0x9a0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnStartTouch) == 0x870, "m_OnStartTouch in CBaseTrigger should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnStartTouchAll) == 0x898, "m_OnStartTouchAll in CBaseTrigger should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnEndTouch) == 0x8C0, "m_OnEndTouch in CBaseTrigger should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnEndTouchAll) == 0x8E8, "m_OnEndTouchAll in CBaseTrigger should be at offset 0x8E8");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnTouching) == 0x910, "m_OnTouching in CBaseTrigger should be at offset 0x910");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnTouchingEachEntity) == 0x938, "m_OnTouchingEachEntity in CBaseTrigger should be at offset 0x938");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnNotTouching) == 0x960, "m_OnNotTouching in CBaseTrigger should be at offset 0x960");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_hTouchingEntities) == 0x988, "m_hTouchingEntities in CBaseTrigger should be at offset 0x988");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_iFilterName) == 0x9A0, "m_iFilterName in CBaseTrigger should be at offset 0x9A0");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_hFilter) == 0x9A8, "m_hFilter in CBaseTrigger should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_bDisabled) == 0x9AC, "m_bDisabled in CBaseTrigger should be at offset 0x9AC");
-		static_assert(offsetof(CS2::server::CBaseTrigger, m_bUseAsyncQueries) == 0x9B8, "m_bUseAsyncQueries in CBaseTrigger should be at offset 0x9B8");
-		static_assert(sizeof(CS2::server::CBaseTrigger) == 0x9C0, "CBaseTrigger size should be 0x9C0");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnStartTouch) == 0x858, "m_OnStartTouch in CBaseTrigger should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnStartTouchAll) == 0x880, "m_OnStartTouchAll in CBaseTrigger should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnEndTouch) == 0x8A8, "m_OnEndTouch in CBaseTrigger should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnEndTouchAll) == 0x8D0, "m_OnEndTouchAll in CBaseTrigger should be at offset 0x8D0");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnTouching) == 0x8F8, "m_OnTouching in CBaseTrigger should be at offset 0x8F8");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnTouchingEachEntity) == 0x920, "m_OnTouchingEachEntity in CBaseTrigger should be at offset 0x920");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnNotTouching) == 0x948, "m_OnNotTouching in CBaseTrigger should be at offset 0x948");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_hTouchingEntities) == 0x970, "m_hTouchingEntities in CBaseTrigger should be at offset 0x970");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_iFilterName) == 0x988, "m_iFilterName in CBaseTrigger should be at offset 0x988");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_hFilter) == 0x990, "m_hFilter in CBaseTrigger should be at offset 0x990");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_bDisabled) == 0x994, "m_bDisabled in CBaseTrigger should be at offset 0x994");
+		static_assert(offsetof(CS2::server::CBaseTrigger, m_bUseAsyncQueries) == 0x9A0, "m_bUseAsyncQueries in CBaseTrigger should be at offset 0x9A0");
+		static_assert(sizeof(CS2::server::CBaseTrigger) == 0x9A8, "CBaseTrigger size should be 0x9A8");
 	}
 }

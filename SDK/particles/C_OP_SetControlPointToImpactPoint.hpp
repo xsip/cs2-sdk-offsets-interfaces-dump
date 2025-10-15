@@ -15,33 +15,33 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointToImpactPoint : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nCPOut; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nCPIn; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flUpdateRate; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nCPOut; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nCPIn; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flUpdateRate; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flTraceLength; // 0x1d8 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flStartOffset; // 0x338 | Schema_Builtin | Size: 0x4
-			float32 m_flOffset; // 0x33c | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecTraceDir; // 0x340 | Schema_Atomic | Size: 0xc
-			char m_CollisionGroupName[128]; // 0x34c | Schema_FixedArray | Size: 0x80
-			particles::ParticleTraceSet_t m_nTraceSet; // 0x3cc | Schema_DeclaredEnum | Size: 0x4
-			bool m_bSetToEndpoint; // 0x3d0 | Schema_Builtin | Size: 0x1
-			bool m_bTraceToClosestSurface; // 0x3d1 | Schema_Builtin | Size: 0x1
-			bool m_bIncludeWater; // 0x3d2 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flTraceLength; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flStartOffset; // 0x358 | Schema_Builtin | Size: 0x4
+			float32 m_flOffset; // 0x35c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecTraceDir; // 0x360 | Schema_Atomic | Size: 0xc
+			char m_CollisionGroupName[128]; // 0x36c | Schema_FixedArray | Size: 0x80
+			particles::ParticleTraceSet_t m_nTraceSet; // 0x3ec | Schema_DeclaredEnum | Size: 0x4
+			bool m_bSetToEndpoint; // 0x3f0 | Schema_Builtin | Size: 0x1
+			bool m_bTraceToClosestSurface; // 0x3f1 | Schema_Builtin | Size: 0x1
+			bool m_bIncludeWater; // 0x3f2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nCPOut) == 0x1C8, "m_nCPOut in C_OP_SetControlPointToImpactPoint should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nCPIn) == 0x1CC, "m_nCPIn in C_OP_SetControlPointToImpactPoint should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flUpdateRate) == 0x1D0, "m_flUpdateRate in C_OP_SetControlPointToImpactPoint should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flTraceLength) == 0x1D8, "m_flTraceLength in C_OP_SetControlPointToImpactPoint should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flStartOffset) == 0x338, "m_flStartOffset in C_OP_SetControlPointToImpactPoint should be at offset 0x338");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flOffset) == 0x33C, "m_flOffset in C_OP_SetControlPointToImpactPoint should be at offset 0x33C");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_vecTraceDir) == 0x340, "m_vecTraceDir in C_OP_SetControlPointToImpactPoint should be at offset 0x340");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_CollisionGroupName) == 0x34C, "m_CollisionGroupName in C_OP_SetControlPointToImpactPoint should be at offset 0x34C");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nTraceSet) == 0x3CC, "m_nTraceSet in C_OP_SetControlPointToImpactPoint should be at offset 0x3CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bSetToEndpoint) == 0x3D0, "m_bSetToEndpoint in C_OP_SetControlPointToImpactPoint should be at offset 0x3D0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bTraceToClosestSurface) == 0x3D1, "m_bTraceToClosestSurface in C_OP_SetControlPointToImpactPoint should be at offset 0x3D1");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bIncludeWater) == 0x3D2, "m_bIncludeWater in C_OP_SetControlPointToImpactPoint should be at offset 0x3D2");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToImpactPoint) == 0x3D8, "C_OP_SetControlPointToImpactPoint size should be 0x3D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nCPOut) == 0x1D8, "m_nCPOut in C_OP_SetControlPointToImpactPoint should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nCPIn) == 0x1DC, "m_nCPIn in C_OP_SetControlPointToImpactPoint should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flUpdateRate) == 0x1E0, "m_flUpdateRate in C_OP_SetControlPointToImpactPoint should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flTraceLength) == 0x1E8, "m_flTraceLength in C_OP_SetControlPointToImpactPoint should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flStartOffset) == 0x358, "m_flStartOffset in C_OP_SetControlPointToImpactPoint should be at offset 0x358");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flOffset) == 0x35C, "m_flOffset in C_OP_SetControlPointToImpactPoint should be at offset 0x35C");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_vecTraceDir) == 0x360, "m_vecTraceDir in C_OP_SetControlPointToImpactPoint should be at offset 0x360");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_CollisionGroupName) == 0x36C, "m_CollisionGroupName in C_OP_SetControlPointToImpactPoint should be at offset 0x36C");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nTraceSet) == 0x3EC, "m_nTraceSet in C_OP_SetControlPointToImpactPoint should be at offset 0x3EC");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bSetToEndpoint) == 0x3F0, "m_bSetToEndpoint in C_OP_SetControlPointToImpactPoint should be at offset 0x3F0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bTraceToClosestSurface) == 0x3F1, "m_bTraceToClosestSurface in C_OP_SetControlPointToImpactPoint should be at offset 0x3F1");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bIncludeWater) == 0x3F2, "m_bIncludeWater in C_OP_SetControlPointToImpactPoint should be at offset 0x3F2");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToImpactPoint) == 0x3F8, "C_OP_SetControlPointToImpactPoint size should be 0x3F8");
 	}
 }

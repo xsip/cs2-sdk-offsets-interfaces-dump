@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1E8
+			// Class size: 0x1F8
 			namespace C_OP_TwistAroundAxis /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_fForceAmount = 0x1d0; // float32 m_fForceAmount; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TwistAxis = 0x1d4; // GlobalTypes::Vector m_TwistAxis; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bLocalSpace = 0x1e0; // bool m_bLocalSpace; |  0x1e0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1e4; // int32_t m_nControlPointNumber; |  0x1e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fForceAmount = 0x1e0; // float32 m_fForceAmount; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_TwistAxis = 0x1e4; // GlobalTypes::Vector m_TwistAxis; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bLocalSpace = 0x1f0; // bool m_bLocalSpace; |  0x1f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1f4; // int32_t m_nControlPointNumber; |  0x1f4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

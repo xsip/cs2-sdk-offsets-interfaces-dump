@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_OP_SpinYaw : public CS2::particles::CGeneralSpin {
 		public:
 		};
-		static_assert(sizeof(CS2::particles::C_OP_SpinYaw) == 0x1D8, "C_OP_SpinYaw size should be 0x1D8");
+		static_assert(sizeof(CS2::particles::C_OP_SpinYaw) == 0x1E8, "C_OP_SpinYaw size should be 0x1E8");
 	}
 }

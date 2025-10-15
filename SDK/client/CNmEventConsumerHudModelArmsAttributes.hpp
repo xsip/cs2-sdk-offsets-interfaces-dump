@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 		};
-		static_assert(sizeof(CS2::client::CNmEventConsumerHudModelArmsAttributes) == 0x40, "CNmEventConsumerHudModelArmsAttributes size should be 0x40");
+		static_assert(sizeof(CS2::client::CNmEventConsumerHudModelArmsAttributes) == 0x58, "CNmEventConsumerHudModelArmsAttributes size should be 0x58");
 	}
 }

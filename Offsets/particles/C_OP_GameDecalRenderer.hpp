@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1B20
+			// Class size: 0x1C30
 			namespace C_OP_GameDecalRenderer /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_sDecalGroupName = 0x210; // GlobalTypes::CGlobalSymbol m_sDecalGroupName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nEventType = 0x218; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nInteractionMask = 0x220; // particles::ParticleCollisionMask_t m_nInteractionMask; |  Schema_DeclaredEnum | Size: 0x8
-				constexpr std::ptrdiff_t m_nCollisionGroup = 0x228; // particles::ParticleCollisionGroup_t m_nCollisionGroup; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vecStartPos = 0x230; // particleslib::CPerParticleVecInput m_vecStartPos; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecEndPos = 0x8a8; // particleslib::CPerParticleVecInput m_vecEndPos; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flTraceBloat = 0xf20; // particleslib::CPerParticleFloatInput m_flTraceBloat; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flDecalSize = 0x1080; // particleslib::CPerParticleFloatInput m_flDecalSize; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nDecalGroupIndex = 0x11e0; // particleslib::CPerParticleFloatInput m_nDecalGroupIndex; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flDecalRotation = 0x1340; // particleslib::CPerParticleFloatInput m_flDecalRotation; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vModulationColor = 0x14a0; // particleslib::CPerParticleVecInput m_vModulationColor; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_bUseGameDefaultDecalSize = 0x1b18; // bool m_bUseGameDefaultDecalSize; |  0x1b18 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRandomDecalRotation = 0x1b19; // bool m_bRandomDecalRotation; |  0x1b19 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRandomlySelectDecalInGroup = 0x1b1a; // bool m_bRandomlySelectDecalInGroup; |  0x1b1a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNoDecalsOnOwner = 0x1b1b; // bool m_bNoDecalsOnOwner; |  0x1b1b | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bVisualizeTraces = 0x1b1c; // bool m_bVisualizeTraces; |  0x1b1c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_sDecalGroupName = 0x220; // GlobalTypes::CGlobalSymbol m_sDecalGroupName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nEventType = 0x228; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nInteractionMask = 0x230; // particles::ParticleCollisionMask_t m_nInteractionMask; |  Schema_DeclaredEnum | Size: 0x8
+				constexpr std::ptrdiff_t m_nCollisionGroup = 0x238; // particles::ParticleCollisionGroup_t m_nCollisionGroup; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vecStartPos = 0x240; // particleslib::CPerParticleVecInput m_vecStartPos; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecEndPos = 0x8f8; // particleslib::CPerParticleVecInput m_vecEndPos; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flTraceBloat = 0xfb0; // particleslib::CPerParticleFloatInput m_flTraceBloat; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flDecalSize = 0x1120; // particleslib::CPerParticleFloatInput m_flDecalSize; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nDecalGroupIndex = 0x1290; // particleslib::CPerParticleFloatInput m_nDecalGroupIndex; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flDecalRotation = 0x1400; // particleslib::CPerParticleFloatInput m_flDecalRotation; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vModulationColor = 0x1570; // particleslib::CPerParticleVecInput m_vModulationColor; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_bUseGameDefaultDecalSize = 0x1c28; // bool m_bUseGameDefaultDecalSize; |  0x1c28 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRandomDecalRotation = 0x1c29; // bool m_bRandomDecalRotation; |  0x1c29 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRandomlySelectDecalInGroup = 0x1c2a; // bool m_bRandomlySelectDecalInGroup; |  0x1c2a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNoDecalsOnOwner = 0x1c2b; // bool m_bNoDecalsOnOwner; |  0x1c2b | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bVisualizeTraces = 0x1c2c; // bool m_bVisualizeTraces; |  0x1c2c | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

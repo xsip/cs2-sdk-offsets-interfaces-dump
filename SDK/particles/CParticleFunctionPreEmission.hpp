@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace particles {
 		class CParticleFunctionPreEmission : public CS2::particles::CParticleFunctionOperator {
 		public:
-			bool m_bRunOnce; // 0x1c0 | Schema_Builtin | Size: 0x1
+			bool m_bRunOnce; // 0x1d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::CParticleFunctionPreEmission, m_bRunOnce) == 0x1C0, "m_bRunOnce in CParticleFunctionPreEmission should be at offset 0x1C0");
-		static_assert(sizeof(CS2::particles::CParticleFunctionPreEmission) == 0x1C8, "CParticleFunctionPreEmission size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::CParticleFunctionPreEmission, m_bRunOnce) == 0x1D0, "m_bRunOnce in CParticleFunctionPreEmission should be at offset 0x1D0");
+		static_assert(sizeof(CS2::particles::CParticleFunctionPreEmission) == 0x1D8, "CParticleFunctionPreEmission size should be 0x1D8");
 	}
 }

@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x8B8
+			// Class size: 0x8A0
 			namespace CFuncTrain /*: public CS2::server::CBasePlatTrain*/ {
-				constexpr std::ptrdiff_t m_hCurrentTarget = 0x898; // server::CHandle< server::CBaseEntity > m_hCurrentTarget; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_activated = 0x89c; // bool m_activated; |  0x89c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hEnemy = 0x8a0; // server::CHandle< server::CBaseEntity > m_hEnemy; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flBlockDamage = 0x8a4; // float32 m_flBlockDamage; |  0x8a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNextBlockTime = 0x8a8; // entity2::GameTime_t m_flNextBlockTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_iszLastTarget = 0x8b0; // GlobalTypes::CUtlSymbolLarge m_iszLastTarget; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hCurrentTarget = 0x880; // server::CHandle< server::CBaseEntity > m_hCurrentTarget; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_activated = 0x884; // bool m_activated; |  0x884 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hEnemy = 0x888; // server::CHandle< server::CBaseEntity > m_hEnemy; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flBlockDamage = 0x88c; // float32 m_flBlockDamage; |  0x88c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextBlockTime = 0x890; // entity2::GameTime_t m_flNextBlockTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_iszLastTarget = 0x898; // GlobalTypes::CUtlSymbolLarge m_iszLastTarget; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

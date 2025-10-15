@@ -14,12 +14,12 @@ namespace CS2 {
 	namespace server {
 		class CTriggerDetectBulletFire : public CS2::server::CBaseTrigger {
 		public:
-			bool m_bPlayerFireOnly; // 0x9c0 | Schema_Builtin | Size: 0x1
+			bool m_bPlayerFireOnly; // 0x9a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			entity2::CEntityIOOutput m_OnDetectedBulletFire; // 0x9c8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnDetectedBulletFire; // 0x9b0 | Schema_DeclaredClass | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CTriggerDetectBulletFire, m_bPlayerFireOnly) == 0x9C0, "m_bPlayerFireOnly in CTriggerDetectBulletFire should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTriggerDetectBulletFire, m_OnDetectedBulletFire) == 0x9C8, "m_OnDetectedBulletFire in CTriggerDetectBulletFire should be at offset 0x9C8");
-		static_assert(sizeof(CS2::server::CTriggerDetectBulletFire) == 0x9F0, "CTriggerDetectBulletFire size should be 0x9F0");
+		static_assert(offsetof(CS2::server::CTriggerDetectBulletFire, m_bPlayerFireOnly) == 0x9A8, "m_bPlayerFireOnly in CTriggerDetectBulletFire should be at offset 0x9A8");
+		static_assert(offsetof(CS2::server::CTriggerDetectBulletFire, m_OnDetectedBulletFire) == 0x9B0, "m_OnDetectedBulletFire in CTriggerDetectBulletFire should be at offset 0x9B0");
+		static_assert(sizeof(CS2::server::CTriggerDetectBulletFire) == 0x9D8, "CTriggerDetectBulletFire size should be 0x9D8");
 	}
 }

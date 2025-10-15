@@ -15,36 +15,36 @@ namespace CS2 {
 	namespace server {
 		class CFuncMoveLinear : public CS2::server::CBaseToggle {
 		public:
-			server::MoveLinearAuthoredPos_t m_authoredPosition; // 0x870 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x874 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecMoveDirParentSpace; // 0x880 | Schema_Atomic | Size: 0xc
+			server::MoveLinearAuthoredPos_t m_authoredPosition; // 0x858 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x85c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecMoveDirParentSpace; // 0x868 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_soundStart; // 0x890 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_soundStop; // 0x898 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_currentSound; // 0x8a0 | Schema_Atomic | Size: 0x8
-			float32 m_flBlockDamage; // 0x8a8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartPosition; // 0x8ac | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_soundStart; // 0x878 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_soundStop; // 0x880 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_currentSound; // 0x888 | Schema_Atomic | Size: 0x8
+			float32 m_flBlockDamage; // 0x890 | Schema_Builtin | Size: 0x4
+			float32 m_flStartPosition; // 0x894 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);
-			entity2::CEntityIOOutput m_OnFullyOpen; // 0x8b8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFullyClosed; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bCreateMovableNavMesh; // 0x908 | Schema_Builtin | Size: 0x1
-			bool m_bAllowMovableNavMeshDockingOnEntireEntity; // 0x909 | Schema_Builtin | Size: 0x1
-			bool m_bCreateNavObstacle; // 0x90a | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnFullyOpen; // 0x8a0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnFullyClosed; // 0x8c8 | Schema_DeclaredClass | Size: 0x28
+			bool m_bCreateMovableNavMesh; // 0x8f0 | Schema_Builtin | Size: 0x1
+			bool m_bAllowMovableNavMeshDockingOnEntireEntity; // 0x8f1 | Schema_Builtin | Size: 0x1
+			bool m_bCreateNavObstacle; // 0x8f2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xd); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_authoredPosition) == 0x870, "m_authoredPosition in CFuncMoveLinear should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_angMoveEntitySpace) == 0x874, "m_angMoveEntitySpace in CFuncMoveLinear should be at offset 0x874");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_vecMoveDirParentSpace) == 0x880, "m_vecMoveDirParentSpace in CFuncMoveLinear should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_soundStart) == 0x890, "m_soundStart in CFuncMoveLinear should be at offset 0x890");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_soundStop) == 0x898, "m_soundStop in CFuncMoveLinear should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_currentSound) == 0x8A0, "m_currentSound in CFuncMoveLinear should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_flBlockDamage) == 0x8A8, "m_flBlockDamage in CFuncMoveLinear should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_flStartPosition) == 0x8AC, "m_flStartPosition in CFuncMoveLinear should be at offset 0x8AC");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_OnFullyOpen) == 0x8B8, "m_OnFullyOpen in CFuncMoveLinear should be at offset 0x8B8");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_OnFullyClosed) == 0x8E0, "m_OnFullyClosed in CFuncMoveLinear should be at offset 0x8E0");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bCreateMovableNavMesh) == 0x908, "m_bCreateMovableNavMesh in CFuncMoveLinear should be at offset 0x908");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bAllowMovableNavMeshDockingOnEntireEntity) == 0x909, "m_bAllowMovableNavMeshDockingOnEntireEntity in CFuncMoveLinear should be at offset 0x909");
-		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bCreateNavObstacle) == 0x90A, "m_bCreateNavObstacle in CFuncMoveLinear should be at offset 0x90A");
-		static_assert(sizeof(CS2::server::CFuncMoveLinear) == 0x918, "CFuncMoveLinear size should be 0x918");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_authoredPosition) == 0x858, "m_authoredPosition in CFuncMoveLinear should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_angMoveEntitySpace) == 0x85C, "m_angMoveEntitySpace in CFuncMoveLinear should be at offset 0x85C");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_vecMoveDirParentSpace) == 0x868, "m_vecMoveDirParentSpace in CFuncMoveLinear should be at offset 0x868");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_soundStart) == 0x878, "m_soundStart in CFuncMoveLinear should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_soundStop) == 0x880, "m_soundStop in CFuncMoveLinear should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_currentSound) == 0x888, "m_currentSound in CFuncMoveLinear should be at offset 0x888");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_flBlockDamage) == 0x890, "m_flBlockDamage in CFuncMoveLinear should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_flStartPosition) == 0x894, "m_flStartPosition in CFuncMoveLinear should be at offset 0x894");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_OnFullyOpen) == 0x8A0, "m_OnFullyOpen in CFuncMoveLinear should be at offset 0x8A0");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_OnFullyClosed) == 0x8C8, "m_OnFullyClosed in CFuncMoveLinear should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bCreateMovableNavMesh) == 0x8F0, "m_bCreateMovableNavMesh in CFuncMoveLinear should be at offset 0x8F0");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bAllowMovableNavMeshDockingOnEntireEntity) == 0x8F1, "m_bAllowMovableNavMeshDockingOnEntireEntity in CFuncMoveLinear should be at offset 0x8F1");
+		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bCreateNavObstacle) == 0x8F2, "m_bCreateNavObstacle in CFuncMoveLinear should be at offset 0x8F2");
+		static_assert(sizeof(CS2::server::CFuncMoveLinear) == 0x900, "CFuncMoveLinear size should be 0x900");
 	}
 }

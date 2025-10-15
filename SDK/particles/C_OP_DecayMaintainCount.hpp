@@ -14,21 +14,24 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DecayMaintainCount : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nParticlesToMaintain; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flDecayDelay; // 0x1c4 | Schema_Builtin | Size: 0x4
-			int32_t m_nSnapshotControlPoint; // 0x1c8 | Schema_Builtin | Size: 0x4
-			bool m_bLifespanDecay; // 0x1cc | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
-			particleslib::CParticleCollectionFloatInput m_flScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bKillNewest; // 0x330 | Schema_Builtin | Size: 0x1
+			int32_t m_nParticlesToMaintain; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flDecayDelay; // 0x1d4 | Schema_Builtin | Size: 0x4
+			int32_t m_nSnapshotControlPoint; // 0x1d8 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4);
+			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x1e0 | Schema_Atomic | Size: 0x8
+			bool m_bLifespanDecay; // 0x1e8 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x7);
+			particleslib::CParticleCollectionFloatInput m_flScale; // 0x1f0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bKillNewest; // 0x360 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_nParticlesToMaintain) == 0x1C0, "m_nParticlesToMaintain in C_OP_DecayMaintainCount should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_flDecayDelay) == 0x1C4, "m_flDecayDelay in C_OP_DecayMaintainCount should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_nSnapshotControlPoint) == 0x1C8, "m_nSnapshotControlPoint in C_OP_DecayMaintainCount should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_bLifespanDecay) == 0x1CC, "m_bLifespanDecay in C_OP_DecayMaintainCount should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_flScale) == 0x1D0, "m_flScale in C_OP_DecayMaintainCount should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_bKillNewest) == 0x330, "m_bKillNewest in C_OP_DecayMaintainCount should be at offset 0x330");
-		static_assert(sizeof(CS2::particles::C_OP_DecayMaintainCount) == 0x338, "C_OP_DecayMaintainCount size should be 0x338");
+		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_nParticlesToMaintain) == 0x1D0, "m_nParticlesToMaintain in C_OP_DecayMaintainCount should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_flDecayDelay) == 0x1D4, "m_flDecayDelay in C_OP_DecayMaintainCount should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_nSnapshotControlPoint) == 0x1D8, "m_nSnapshotControlPoint in C_OP_DecayMaintainCount should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_strSnapshotSubset) == 0x1E0, "m_strSnapshotSubset in C_OP_DecayMaintainCount should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_bLifespanDecay) == 0x1E8, "m_bLifespanDecay in C_OP_DecayMaintainCount should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_flScale) == 0x1F0, "m_flScale in C_OP_DecayMaintainCount should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_bKillNewest) == 0x360, "m_bKillNewest in C_OP_DecayMaintainCount should be at offset 0x360");
+		static_assert(sizeof(CS2::particles::C_OP_DecayMaintainCount) == 0x368, "C_OP_DecayMaintainCount size should be 0x368");
 	}
 }

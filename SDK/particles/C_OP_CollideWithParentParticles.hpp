@@ -14,11 +14,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CollideWithParentParticles : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			particleslib::CPerParticleFloatInput m_flParentRadiusScale; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x320 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flParentRadiusScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x340 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_CollideWithParentParticles, m_flParentRadiusScale) == 0x1C0, "m_flParentRadiusScale in C_OP_CollideWithParentParticles should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_CollideWithParentParticles, m_flRadiusScale) == 0x320, "m_flRadiusScale in C_OP_CollideWithParentParticles should be at offset 0x320");
-		static_assert(sizeof(CS2::particles::C_OP_CollideWithParentParticles) == 0x480, "C_OP_CollideWithParentParticles size should be 0x480");
+		static_assert(offsetof(CS2::particles::C_OP_CollideWithParentParticles, m_flParentRadiusScale) == 0x1D0, "m_flParentRadiusScale in C_OP_CollideWithParentParticles should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_CollideWithParentParticles, m_flRadiusScale) == 0x340, "m_flRadiusScale in C_OP_CollideWithParentParticles should be at offset 0x340");
+		static_assert(sizeof(CS2::particles::C_OP_CollideWithParentParticles) == 0x4B0, "C_OP_CollideWithParentParticles size should be 0x4B0");
 	}
 }

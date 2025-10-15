@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xD50
+			// Class size: 0xD60
 			namespace COrnamentProp /*: public CS2::server::CDynamicProp*/ {
-				constexpr std::ptrdiff_t m_initialOwner = 0xd40; // GlobalTypes::CUtlSymbolLarge m_initialOwner; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_initialOwner = 0xd50; // GlobalTypes::CUtlSymbolLarge m_initialOwner; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

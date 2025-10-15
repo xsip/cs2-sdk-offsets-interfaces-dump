@@ -15,16 +15,16 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_VelocityFromCP : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CParticleCollectionVecInput m_velocityInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleTransformInput m_transformInput; // 0x840 | Schema_DeclaredClass | Size: 0x68
-			float32 m_flVelocityScale; // 0x8a8 | Schema_Builtin | Size: 0x4
-			bool m_bDirectionOnly; // 0x8ac | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionVecInput m_velocityInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleTransformInput m_transformInput; // 0x890 | Schema_DeclaredClass | Size: 0x68
+			float32 m_flVelocityScale; // 0x8f8 | Schema_Builtin | Size: 0x4
+			bool m_bDirectionOnly; // 0x8fc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_velocityInput) == 0x1C8, "m_velocityInput in C_INIT_VelocityFromCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_transformInput) == 0x840, "m_transformInput in C_INIT_VelocityFromCP should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_flVelocityScale) == 0x8A8, "m_flVelocityScale in C_INIT_VelocityFromCP should be at offset 0x8A8");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_bDirectionOnly) == 0x8AC, "m_bDirectionOnly in C_INIT_VelocityFromCP should be at offset 0x8AC");
-		static_assert(sizeof(CS2::particles::C_INIT_VelocityFromCP) == 0x8B0, "C_INIT_VelocityFromCP size should be 0x8B0");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_velocityInput) == 0x1D8, "m_velocityInput in C_INIT_VelocityFromCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_transformInput) == 0x890, "m_transformInput in C_INIT_VelocityFromCP should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_flVelocityScale) == 0x8F8, "m_flVelocityScale in C_INIT_VelocityFromCP should be at offset 0x8F8");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityFromCP, m_bDirectionOnly) == 0x8FC, "m_bDirectionOnly in C_INIT_VelocityFromCP should be at offset 0x8FC");
+		static_assert(sizeof(CS2::particles::C_INIT_VelocityFromCP) == 0x900, "C_INIT_VelocityFromCP size should be 0x900");
 	}
 }

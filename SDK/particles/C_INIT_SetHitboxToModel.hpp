@@ -15,29 +15,29 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_SetHitboxToModel : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nForceInModel; // 0x1cc | Schema_Builtin | Size: 0x4
-			bool m_bEvenDistribution; // 0x1d0 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nForceInModel; // 0x1dc | Schema_Builtin | Size: 0x4
+			bool m_bEvenDistribution; // 0x1e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nDesiredHitbox; // 0x1d4 | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x1d8 | Schema_DeclaredClass | Size: 0x678
-			GlobalTypes::Vector m_vecDirectionBias; // 0x850 | Schema_Atomic | Size: 0xc
-			bool m_bMaintainHitbox; // 0x85c | Schema_Builtin | Size: 0x1
-			bool m_bUseBones; // 0x85d | Schema_Builtin | Size: 0x1
-			char m_HitboxSetName[128]; // 0x85e | Schema_FixedArray | Size: 0x80
+			int32_t m_nDesiredHitbox; // 0x1e4 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x1e8 | Schema_DeclaredClass | Size: 0x6b8
+			GlobalTypes::Vector m_vecDirectionBias; // 0x8a0 | Schema_Atomic | Size: 0xc
+			bool m_bMaintainHitbox; // 0x8ac | Schema_Builtin | Size: 0x1
+			bool m_bUseBones; // 0x8ad | Schema_Builtin | Size: 0x1
+			char m_HitboxSetName[128]; // 0x8ae | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x2);
-			particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x8e0 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x930 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_SetHitboxToModel should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nForceInModel) == 0x1CC, "m_nForceInModel in C_INIT_SetHitboxToModel should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_bEvenDistribution) == 0x1D0, "m_bEvenDistribution in C_INIT_SetHitboxToModel should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nDesiredHitbox) == 0x1D4, "m_nDesiredHitbox in C_INIT_SetHitboxToModel should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_vecHitBoxScale) == 0x1D8, "m_vecHitBoxScale in C_INIT_SetHitboxToModel should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_vecDirectionBias) == 0x850, "m_vecDirectionBias in C_INIT_SetHitboxToModel should be at offset 0x850");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_bMaintainHitbox) == 0x85C, "m_bMaintainHitbox in C_INIT_SetHitboxToModel should be at offset 0x85C");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_bUseBones) == 0x85D, "m_bUseBones in C_INIT_SetHitboxToModel should be at offset 0x85D");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_HitboxSetName) == 0x85E, "m_HitboxSetName in C_INIT_SetHitboxToModel should be at offset 0x85E");
-		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_flShellSize) == 0x8E0, "m_flShellSize in C_INIT_SetHitboxToModel should be at offset 0x8E0");
-		static_assert(sizeof(CS2::particles::C_INIT_SetHitboxToModel) == 0xA40, "C_INIT_SetHitboxToModel size should be 0xA40");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_SetHitboxToModel should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nForceInModel) == 0x1DC, "m_nForceInModel in C_INIT_SetHitboxToModel should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_bEvenDistribution) == 0x1E0, "m_bEvenDistribution in C_INIT_SetHitboxToModel should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nDesiredHitbox) == 0x1E4, "m_nDesiredHitbox in C_INIT_SetHitboxToModel should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_vecHitBoxScale) == 0x1E8, "m_vecHitBoxScale in C_INIT_SetHitboxToModel should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_vecDirectionBias) == 0x8A0, "m_vecDirectionBias in C_INIT_SetHitboxToModel should be at offset 0x8A0");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_bMaintainHitbox) == 0x8AC, "m_bMaintainHitbox in C_INIT_SetHitboxToModel should be at offset 0x8AC");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_bUseBones) == 0x8AD, "m_bUseBones in C_INIT_SetHitboxToModel should be at offset 0x8AD");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_HitboxSetName) == 0x8AE, "m_HitboxSetName in C_INIT_SetHitboxToModel should be at offset 0x8AE");
+		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_flShellSize) == 0x930, "m_flShellSize in C_INIT_SetHitboxToModel should be at offset 0x930");
+		static_assert(sizeof(CS2::particles::C_INIT_SetHitboxToModel) == 0xAA0, "C_INIT_SetHitboxToModel size should be 0xAA0");
 	}
 }

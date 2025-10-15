@@ -13,38 +13,38 @@ namespace CS2 {
 	namespace server {
 		class CPlayerSprayDecal : public CS2::server::CModelPointEntity {
 		public:
-			int32_t m_nUniqueID; // 0x7f0 | Schema_Builtin | Size: 0x4
-			uint32_t m_unAccountID; // 0x7f4 | Schema_Builtin | Size: 0x4
-			uint32_t m_unTraceID; // 0x7f8 | Schema_Builtin | Size: 0x4
-			uint32_t m_rtGcTime; // 0x7fc | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecEndPos; // 0x800 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecStart; // 0x80c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecLeft; // 0x818 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecNormal; // 0x824 | Schema_Atomic | Size: 0xc
-			int32_t m_nPlayer; // 0x830 | Schema_Builtin | Size: 0x4
-			int32_t m_nEntity; // 0x834 | Schema_Builtin | Size: 0x4
-			int32_t m_nHitbox; // 0x838 | Schema_Builtin | Size: 0x4
-			float32 m_flCreationTime; // 0x83c | Schema_Builtin | Size: 0x4
-			int32_t m_nTintID; // 0x840 | Schema_Builtin | Size: 0x4
-			uint8_t m_nVersion; // 0x844 | Schema_Builtin | Size: 0x1
-			uint8_t m_ubSignature[128]; // 0x845 | Schema_FixedArray | Size: 0x80
+			int32_t m_nUniqueID; // 0x7d8 | Schema_Builtin | Size: 0x4
+			uint32_t m_unAccountID; // 0x7dc | Schema_Builtin | Size: 0x4
+			uint32_t m_unTraceID; // 0x7e0 | Schema_Builtin | Size: 0x4
+			uint32_t m_rtGcTime; // 0x7e4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecEndPos; // 0x7e8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecStart; // 0x7f4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLeft; // 0x800 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecNormal; // 0x80c | Schema_Atomic | Size: 0xc
+			int32_t m_nPlayer; // 0x818 | Schema_Builtin | Size: 0x4
+			int32_t m_nEntity; // 0x81c | Schema_Builtin | Size: 0x4
+			int32_t m_nHitbox; // 0x820 | Schema_Builtin | Size: 0x4
+			float32 m_flCreationTime; // 0x824 | Schema_Builtin | Size: 0x4
+			int32_t m_nTintID; // 0x828 | Schema_Builtin | Size: 0x4
+			uint8_t m_nVersion; // 0x82c | Schema_Builtin | Size: 0x1
+			uint8_t m_ubSignature[128]; // 0x82d | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nUniqueID) == 0x7F0, "m_nUniqueID in CPlayerSprayDecal should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_unAccountID) == 0x7F4, "m_unAccountID in CPlayerSprayDecal should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_unTraceID) == 0x7F8, "m_unTraceID in CPlayerSprayDecal should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_rtGcTime) == 0x7FC, "m_rtGcTime in CPlayerSprayDecal should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecEndPos) == 0x800, "m_vecEndPos in CPlayerSprayDecal should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecStart) == 0x80C, "m_vecStart in CPlayerSprayDecal should be at offset 0x80C");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecLeft) == 0x818, "m_vecLeft in CPlayerSprayDecal should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecNormal) == 0x824, "m_vecNormal in CPlayerSprayDecal should be at offset 0x824");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nPlayer) == 0x830, "m_nPlayer in CPlayerSprayDecal should be at offset 0x830");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nEntity) == 0x834, "m_nEntity in CPlayerSprayDecal should be at offset 0x834");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nHitbox) == 0x838, "m_nHitbox in CPlayerSprayDecal should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_flCreationTime) == 0x83C, "m_flCreationTime in CPlayerSprayDecal should be at offset 0x83C");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nTintID) == 0x840, "m_nTintID in CPlayerSprayDecal should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nVersion) == 0x844, "m_nVersion in CPlayerSprayDecal should be at offset 0x844");
-		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_ubSignature) == 0x845, "m_ubSignature in CPlayerSprayDecal should be at offset 0x845");
-		static_assert(sizeof(CS2::server::CPlayerSprayDecal) == 0x8C8, "CPlayerSprayDecal size should be 0x8C8");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nUniqueID) == 0x7D8, "m_nUniqueID in CPlayerSprayDecal should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_unAccountID) == 0x7DC, "m_unAccountID in CPlayerSprayDecal should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_unTraceID) == 0x7E0, "m_unTraceID in CPlayerSprayDecal should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_rtGcTime) == 0x7E4, "m_rtGcTime in CPlayerSprayDecal should be at offset 0x7E4");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecEndPos) == 0x7E8, "m_vecEndPos in CPlayerSprayDecal should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecStart) == 0x7F4, "m_vecStart in CPlayerSprayDecal should be at offset 0x7F4");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecLeft) == 0x800, "m_vecLeft in CPlayerSprayDecal should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_vecNormal) == 0x80C, "m_vecNormal in CPlayerSprayDecal should be at offset 0x80C");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nPlayer) == 0x818, "m_nPlayer in CPlayerSprayDecal should be at offset 0x818");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nEntity) == 0x81C, "m_nEntity in CPlayerSprayDecal should be at offset 0x81C");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nHitbox) == 0x820, "m_nHitbox in CPlayerSprayDecal should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_flCreationTime) == 0x824, "m_flCreationTime in CPlayerSprayDecal should be at offset 0x824");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nTintID) == 0x828, "m_nTintID in CPlayerSprayDecal should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nVersion) == 0x82C, "m_nVersion in CPlayerSprayDecal should be at offset 0x82C");
+		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_ubSignature) == 0x82D, "m_ubSignature in CPlayerSprayDecal should be at offset 0x82D");
+		static_assert(sizeof(CS2::server::CPlayerSprayDecal) == 0x8B0, "CPlayerSprayDecal size should be 0x8B0");
 	}
 }

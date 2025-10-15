@@ -15,22 +15,22 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_AttractToControlPoint : public CS2::particles::CParticleFunctionForce {
 		public:
-			GlobalTypes::Vector m_vecComponentScale; // 0x1d0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecComponentScale; // 0x1e0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_fForceAmount; // 0x1e0 | Schema_DeclaredClass | Size: 0x160
-			float32 m_fFalloffPower; // 0x340 | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleFloatInput m_fForceAmount; // 0x1f0 | Schema_DeclaredClass | Size: 0x170
+			float32 m_fFalloffPower; // 0x360 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleTransformInput m_TransformInput; // 0x348 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CPerParticleFloatInput m_fForceAmountMin; // 0x3b0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bApplyMinForce; // 0x510 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformInput; // 0x368 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CPerParticleFloatInput m_fForceAmountMin; // 0x3d0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bApplyMinForce; // 0x540 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_vecComponentScale) == 0x1D0, "m_vecComponentScale in C_OP_AttractToControlPoint should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fForceAmount) == 0x1E0, "m_fForceAmount in C_OP_AttractToControlPoint should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fFalloffPower) == 0x340, "m_fFalloffPower in C_OP_AttractToControlPoint should be at offset 0x340");
-		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_TransformInput) == 0x348, "m_TransformInput in C_OP_AttractToControlPoint should be at offset 0x348");
-		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fForceAmountMin) == 0x3B0, "m_fForceAmountMin in C_OP_AttractToControlPoint should be at offset 0x3B0");
-		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_bApplyMinForce) == 0x510, "m_bApplyMinForce in C_OP_AttractToControlPoint should be at offset 0x510");
-		static_assert(sizeof(CS2::particles::C_OP_AttractToControlPoint) == 0x518, "C_OP_AttractToControlPoint size should be 0x518");
+		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_vecComponentScale) == 0x1E0, "m_vecComponentScale in C_OP_AttractToControlPoint should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fForceAmount) == 0x1F0, "m_fForceAmount in C_OP_AttractToControlPoint should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fFalloffPower) == 0x360, "m_fFalloffPower in C_OP_AttractToControlPoint should be at offset 0x360");
+		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_TransformInput) == 0x368, "m_TransformInput in C_OP_AttractToControlPoint should be at offset 0x368");
+		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fForceAmountMin) == 0x3D0, "m_fForceAmountMin in C_OP_AttractToControlPoint should be at offset 0x3D0");
+		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_bApplyMinForce) == 0x540, "m_bApplyMinForce in C_OP_AttractToControlPoint should be at offset 0x540");
+		static_assert(sizeof(CS2::particles::C_OP_AttractToControlPoint) == 0x548, "C_OP_AttractToControlPoint size should be 0x548");
 	}
 }

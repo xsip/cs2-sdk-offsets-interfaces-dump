@@ -14,59 +14,59 @@ namespace CS2 {
 	namespace client {
 		class C_LocalTempEntity : public CS2::client::CBaseAnimGraph {
 		public:
-			int32_t flags; // 0x1170 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t die; // 0x1174 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flFrameMax; // 0x1178 | Schema_Builtin | Size: 0x4
-			float32 x; // 0x117c | Schema_Builtin | Size: 0x4
-			float32 y; // 0x1180 | Schema_Builtin | Size: 0x4
-			float32 fadeSpeed; // 0x1184 | Schema_Builtin | Size: 0x4
-			float32 bounceFactor; // 0x1188 | Schema_Builtin | Size: 0x4
-			int32_t hitSound; // 0x118c | Schema_Builtin | Size: 0x4
-			int32_t priority; // 0x1190 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector tentOffset; // 0x1194 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecTempEntAngVelocity; // 0x11a0 | Schema_Atomic | Size: 0xc
-			int32_t tempent_renderamt; // 0x11ac | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecNormal; // 0x11b0 | Schema_Atomic | Size: 0xc
-			float32 m_flSpriteScale; // 0x11bc | Schema_Builtin | Size: 0x4
-			int32_t m_nFlickerFrame; // 0x11c0 | Schema_Builtin | Size: 0x4
-			float32 m_flFrameRate; // 0x11c4 | Schema_Builtin | Size: 0x4
-			float32 m_flFrame; // 0x11c8 | Schema_Builtin | Size: 0x4
+			int32_t flags; // 0x1158 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t die; // 0x115c | Schema_DeclaredClass | Size: 0x4
+			float32 m_flFrameMax; // 0x1160 | Schema_Builtin | Size: 0x4
+			float32 x; // 0x1164 | Schema_Builtin | Size: 0x4
+			float32 y; // 0x1168 | Schema_Builtin | Size: 0x4
+			float32 fadeSpeed; // 0x116c | Schema_Builtin | Size: 0x4
+			float32 bounceFactor; // 0x1170 | Schema_Builtin | Size: 0x4
+			int32_t hitSound; // 0x1174 | Schema_Builtin | Size: 0x4
+			int32_t priority; // 0x1178 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector tentOffset; // 0x117c | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecTempEntAngVelocity; // 0x1188 | Schema_Atomic | Size: 0xc
+			int32_t tempent_renderamt; // 0x1194 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecNormal; // 0x1198 | Schema_Atomic | Size: 0xc
+			float32 m_flSpriteScale; // 0x11a4 | Schema_Builtin | Size: 0x4
+			int32_t m_nFlickerFrame; // 0x11a8 | Schema_Builtin | Size: 0x4
+			float32 m_flFrameRate; // 0x11ac | Schema_Builtin | Size: 0x4
+			float32 m_flFrame; // 0x11b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			char* m_pszImpactEffect; // 0x11d0 | Schema_Ptr | Size: 0x8
-			char* m_pszParticleEffect; // 0x11d8 | Schema_Ptr | Size: 0x8
-			bool m_bParticleCollision; // 0x11e0 | Schema_Builtin | Size: 0x1
+			char* m_pszImpactEffect; // 0x11b8 | Schema_Ptr | Size: 0x8
+			char* m_pszParticleEffect; // 0x11c0 | Schema_Ptr | Size: 0x8
+			bool m_bParticleCollision; // 0x11c8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iLastCollisionFrame; // 0x11e4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vLastCollisionOrigin; // 0x11e8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecTempEntVelocity; // 0x11f4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecPrevAbsOrigin; // 0x1200 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecTempEntAcceleration; // 0x120c | Schema_Atomic | Size: 0xc
+			int32_t m_iLastCollisionFrame; // 0x11cc | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vLastCollisionOrigin; // 0x11d0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecTempEntVelocity; // 0x11dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecPrevAbsOrigin; // 0x11e8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecTempEntAcceleration; // 0x11f4 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, flags) == 0x1170, "flags in C_LocalTempEntity should be at offset 0x1170");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, die) == 0x1174, "die in C_LocalTempEntity should be at offset 0x1174");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flFrameMax) == 0x1178, "m_flFrameMax in C_LocalTempEntity should be at offset 0x1178");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, x) == 0x117C, "x in C_LocalTempEntity should be at offset 0x117C");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, y) == 0x1180, "y in C_LocalTempEntity should be at offset 0x1180");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, fadeSpeed) == 0x1184, "fadeSpeed in C_LocalTempEntity should be at offset 0x1184");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, bounceFactor) == 0x1188, "bounceFactor in C_LocalTempEntity should be at offset 0x1188");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, hitSound) == 0x118C, "hitSound in C_LocalTempEntity should be at offset 0x118C");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, priority) == 0x1190, "priority in C_LocalTempEntity should be at offset 0x1190");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, tentOffset) == 0x1194, "tentOffset in C_LocalTempEntity should be at offset 0x1194");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecTempEntAngVelocity) == 0x11A0, "m_vecTempEntAngVelocity in C_LocalTempEntity should be at offset 0x11A0");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, tempent_renderamt) == 0x11AC, "tempent_renderamt in C_LocalTempEntity should be at offset 0x11AC");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecNormal) == 0x11B0, "m_vecNormal in C_LocalTempEntity should be at offset 0x11B0");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flSpriteScale) == 0x11BC, "m_flSpriteScale in C_LocalTempEntity should be at offset 0x11BC");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_nFlickerFrame) == 0x11C0, "m_nFlickerFrame in C_LocalTempEntity should be at offset 0x11C0");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flFrameRate) == 0x11C4, "m_flFrameRate in C_LocalTempEntity should be at offset 0x11C4");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flFrame) == 0x11C8, "m_flFrame in C_LocalTempEntity should be at offset 0x11C8");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_pszImpactEffect) == 0x11D0, "m_pszImpactEffect in C_LocalTempEntity should be at offset 0x11D0");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_pszParticleEffect) == 0x11D8, "m_pszParticleEffect in C_LocalTempEntity should be at offset 0x11D8");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_bParticleCollision) == 0x11E0, "m_bParticleCollision in C_LocalTempEntity should be at offset 0x11E0");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_iLastCollisionFrame) == 0x11E4, "m_iLastCollisionFrame in C_LocalTempEntity should be at offset 0x11E4");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vLastCollisionOrigin) == 0x11E8, "m_vLastCollisionOrigin in C_LocalTempEntity should be at offset 0x11E8");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecTempEntVelocity) == 0x11F4, "m_vecTempEntVelocity in C_LocalTempEntity should be at offset 0x11F4");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecPrevAbsOrigin) == 0x1200, "m_vecPrevAbsOrigin in C_LocalTempEntity should be at offset 0x1200");
-		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecTempEntAcceleration) == 0x120C, "m_vecTempEntAcceleration in C_LocalTempEntity should be at offset 0x120C");
-		static_assert(sizeof(CS2::client::C_LocalTempEntity) == 0x1218, "C_LocalTempEntity size should be 0x1218");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, flags) == 0x1158, "flags in C_LocalTempEntity should be at offset 0x1158");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, die) == 0x115C, "die in C_LocalTempEntity should be at offset 0x115C");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flFrameMax) == 0x1160, "m_flFrameMax in C_LocalTempEntity should be at offset 0x1160");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, x) == 0x1164, "x in C_LocalTempEntity should be at offset 0x1164");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, y) == 0x1168, "y in C_LocalTempEntity should be at offset 0x1168");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, fadeSpeed) == 0x116C, "fadeSpeed in C_LocalTempEntity should be at offset 0x116C");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, bounceFactor) == 0x1170, "bounceFactor in C_LocalTempEntity should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, hitSound) == 0x1174, "hitSound in C_LocalTempEntity should be at offset 0x1174");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, priority) == 0x1178, "priority in C_LocalTempEntity should be at offset 0x1178");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, tentOffset) == 0x117C, "tentOffset in C_LocalTempEntity should be at offset 0x117C");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecTempEntAngVelocity) == 0x1188, "m_vecTempEntAngVelocity in C_LocalTempEntity should be at offset 0x1188");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, tempent_renderamt) == 0x1194, "tempent_renderamt in C_LocalTempEntity should be at offset 0x1194");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecNormal) == 0x1198, "m_vecNormal in C_LocalTempEntity should be at offset 0x1198");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flSpriteScale) == 0x11A4, "m_flSpriteScale in C_LocalTempEntity should be at offset 0x11A4");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_nFlickerFrame) == 0x11A8, "m_nFlickerFrame in C_LocalTempEntity should be at offset 0x11A8");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flFrameRate) == 0x11AC, "m_flFrameRate in C_LocalTempEntity should be at offset 0x11AC");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flFrame) == 0x11B0, "m_flFrame in C_LocalTempEntity should be at offset 0x11B0");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_pszImpactEffect) == 0x11B8, "m_pszImpactEffect in C_LocalTempEntity should be at offset 0x11B8");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_pszParticleEffect) == 0x11C0, "m_pszParticleEffect in C_LocalTempEntity should be at offset 0x11C0");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_bParticleCollision) == 0x11C8, "m_bParticleCollision in C_LocalTempEntity should be at offset 0x11C8");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_iLastCollisionFrame) == 0x11CC, "m_iLastCollisionFrame in C_LocalTempEntity should be at offset 0x11CC");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vLastCollisionOrigin) == 0x11D0, "m_vLastCollisionOrigin in C_LocalTempEntity should be at offset 0x11D0");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecTempEntVelocity) == 0x11DC, "m_vecTempEntVelocity in C_LocalTempEntity should be at offset 0x11DC");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecPrevAbsOrigin) == 0x11E8, "m_vecPrevAbsOrigin in C_LocalTempEntity should be at offset 0x11E8");
+		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecTempEntAcceleration) == 0x11F4, "m_vecTempEntAcceleration in C_LocalTempEntity should be at offset 0x11F4");
+		static_assert(sizeof(CS2::client::C_LocalTempEntity) == 0x1200, "C_LocalTempEntity size should be 0x1200");
 	}
 }

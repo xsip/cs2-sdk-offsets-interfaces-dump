@@ -14,55 +14,55 @@ namespace CS2 {
 	namespace client {
 		class C_Fish : public CS2::client::CBaseAnimGraph {
 		public:
-			GlobalTypes::Vector m_pos; // 0x1170 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vel; // 0x117c | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angles; // 0x1188 | Schema_Atomic | Size: 0xc
-			int32_t m_localLifeState; // 0x1194 | Schema_Builtin | Size: 0x4
-			float32 m_deathDepth; // 0x1198 | Schema_Builtin | Size: 0x4
-			float32 m_deathAngle; // 0x119c | Schema_Builtin | Size: 0x4
-			float32 m_buoyancy; // 0x11a0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_pos; // 0x1158 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vel; // 0x1164 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angles; // 0x1170 | Schema_Atomic | Size: 0xc
+			int32_t m_localLifeState; // 0x117c | Schema_Builtin | Size: 0x4
+			float32 m_deathDepth; // 0x1180 | Schema_Builtin | Size: 0x4
+			float32 m_deathAngle; // 0x1184 | Schema_Builtin | Size: 0x4
+			float32 m_buoyancy; // 0x1188 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			client::CountdownTimer m_wiggleTimer; // 0x11a8 | Schema_DeclaredClass | Size: 0x18
-			float32 m_wigglePhase; // 0x11c0 | Schema_Builtin | Size: 0x4
-			float32 m_wiggleRate; // 0x11c4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_actualPos; // 0x11c8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_actualAngles; // 0x11d4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_poolOrigin; // 0x11e0 | Schema_Atomic | Size: 0xc
-			float32 m_waterLevel; // 0x11ec | Schema_Builtin | Size: 0x4
-			bool m_gotUpdate; // 0x11f0 | Schema_Builtin | Size: 0x1
+			client::CountdownTimer m_wiggleTimer; // 0x1190 | Schema_DeclaredClass | Size: 0x18
+			float32 m_wigglePhase; // 0x11a8 | Schema_Builtin | Size: 0x4
+			float32 m_wiggleRate; // 0x11ac | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_actualPos; // 0x11b0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_actualAngles; // 0x11bc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_poolOrigin; // 0x11c8 | Schema_Atomic | Size: 0xc
+			float32 m_waterLevel; // 0x11d4 | Schema_Builtin | Size: 0x4
+			bool m_gotUpdate; // 0x11d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_x; // 0x11f4 | Schema_Builtin | Size: 0x4
-			float32 m_y; // 0x11f8 | Schema_Builtin | Size: 0x4
-			float32 m_z; // 0x11fc | Schema_Builtin | Size: 0x4
-			float32 m_angle; // 0x1200 | Schema_Builtin | Size: 0x4
-			float32 m_errorHistory[20]; // 0x1204 | Schema_FixedArray | Size: 0x50
-			int32_t m_errorHistoryIndex; // 0x1254 | Schema_Builtin | Size: 0x4
-			int32_t m_errorHistoryCount; // 0x1258 | Schema_Builtin | Size: 0x4
-			float32 m_averageError; // 0x125c | Schema_Builtin | Size: 0x4
+			float32 m_x; // 0x11dc | Schema_Builtin | Size: 0x4
+			float32 m_y; // 0x11e0 | Schema_Builtin | Size: 0x4
+			float32 m_z; // 0x11e4 | Schema_Builtin | Size: 0x4
+			float32 m_angle; // 0x11e8 | Schema_Builtin | Size: 0x4
+			float32 m_errorHistory[20]; // 0x11ec | Schema_FixedArray | Size: 0x50
+			int32_t m_errorHistoryIndex; // 0x123c | Schema_Builtin | Size: 0x4
+			int32_t m_errorHistoryCount; // 0x1240 | Schema_Builtin | Size: 0x4
+			float32 m_averageError; // 0x1244 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_Fish, m_pos) == 0x1170, "m_pos in C_Fish should be at offset 0x1170");
-		static_assert(offsetof(CS2::client::C_Fish, m_vel) == 0x117C, "m_vel in C_Fish should be at offset 0x117C");
-		static_assert(offsetof(CS2::client::C_Fish, m_angles) == 0x1188, "m_angles in C_Fish should be at offset 0x1188");
-		static_assert(offsetof(CS2::client::C_Fish, m_localLifeState) == 0x1194, "m_localLifeState in C_Fish should be at offset 0x1194");
-		static_assert(offsetof(CS2::client::C_Fish, m_deathDepth) == 0x1198, "m_deathDepth in C_Fish should be at offset 0x1198");
-		static_assert(offsetof(CS2::client::C_Fish, m_deathAngle) == 0x119C, "m_deathAngle in C_Fish should be at offset 0x119C");
-		static_assert(offsetof(CS2::client::C_Fish, m_buoyancy) == 0x11A0, "m_buoyancy in C_Fish should be at offset 0x11A0");
-		static_assert(offsetof(CS2::client::C_Fish, m_wiggleTimer) == 0x11A8, "m_wiggleTimer in C_Fish should be at offset 0x11A8");
-		static_assert(offsetof(CS2::client::C_Fish, m_wigglePhase) == 0x11C0, "m_wigglePhase in C_Fish should be at offset 0x11C0");
-		static_assert(offsetof(CS2::client::C_Fish, m_wiggleRate) == 0x11C4, "m_wiggleRate in C_Fish should be at offset 0x11C4");
-		static_assert(offsetof(CS2::client::C_Fish, m_actualPos) == 0x11C8, "m_actualPos in C_Fish should be at offset 0x11C8");
-		static_assert(offsetof(CS2::client::C_Fish, m_actualAngles) == 0x11D4, "m_actualAngles in C_Fish should be at offset 0x11D4");
-		static_assert(offsetof(CS2::client::C_Fish, m_poolOrigin) == 0x11E0, "m_poolOrigin in C_Fish should be at offset 0x11E0");
-		static_assert(offsetof(CS2::client::C_Fish, m_waterLevel) == 0x11EC, "m_waterLevel in C_Fish should be at offset 0x11EC");
-		static_assert(offsetof(CS2::client::C_Fish, m_gotUpdate) == 0x11F0, "m_gotUpdate in C_Fish should be at offset 0x11F0");
-		static_assert(offsetof(CS2::client::C_Fish, m_x) == 0x11F4, "m_x in C_Fish should be at offset 0x11F4");
-		static_assert(offsetof(CS2::client::C_Fish, m_y) == 0x11F8, "m_y in C_Fish should be at offset 0x11F8");
-		static_assert(offsetof(CS2::client::C_Fish, m_z) == 0x11FC, "m_z in C_Fish should be at offset 0x11FC");
-		static_assert(offsetof(CS2::client::C_Fish, m_angle) == 0x1200, "m_angle in C_Fish should be at offset 0x1200");
-		static_assert(offsetof(CS2::client::C_Fish, m_errorHistory) == 0x1204, "m_errorHistory in C_Fish should be at offset 0x1204");
-		static_assert(offsetof(CS2::client::C_Fish, m_errorHistoryIndex) == 0x1254, "m_errorHistoryIndex in C_Fish should be at offset 0x1254");
-		static_assert(offsetof(CS2::client::C_Fish, m_errorHistoryCount) == 0x1258, "m_errorHistoryCount in C_Fish should be at offset 0x1258");
-		static_assert(offsetof(CS2::client::C_Fish, m_averageError) == 0x125C, "m_averageError in C_Fish should be at offset 0x125C");
-		static_assert(sizeof(CS2::client::C_Fish) == 0x1260, "C_Fish size should be 0x1260");
+		static_assert(offsetof(CS2::client::C_Fish, m_pos) == 0x1158, "m_pos in C_Fish should be at offset 0x1158");
+		static_assert(offsetof(CS2::client::C_Fish, m_vel) == 0x1164, "m_vel in C_Fish should be at offset 0x1164");
+		static_assert(offsetof(CS2::client::C_Fish, m_angles) == 0x1170, "m_angles in C_Fish should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_Fish, m_localLifeState) == 0x117C, "m_localLifeState in C_Fish should be at offset 0x117C");
+		static_assert(offsetof(CS2::client::C_Fish, m_deathDepth) == 0x1180, "m_deathDepth in C_Fish should be at offset 0x1180");
+		static_assert(offsetof(CS2::client::C_Fish, m_deathAngle) == 0x1184, "m_deathAngle in C_Fish should be at offset 0x1184");
+		static_assert(offsetof(CS2::client::C_Fish, m_buoyancy) == 0x1188, "m_buoyancy in C_Fish should be at offset 0x1188");
+		static_assert(offsetof(CS2::client::C_Fish, m_wiggleTimer) == 0x1190, "m_wiggleTimer in C_Fish should be at offset 0x1190");
+		static_assert(offsetof(CS2::client::C_Fish, m_wigglePhase) == 0x11A8, "m_wigglePhase in C_Fish should be at offset 0x11A8");
+		static_assert(offsetof(CS2::client::C_Fish, m_wiggleRate) == 0x11AC, "m_wiggleRate in C_Fish should be at offset 0x11AC");
+		static_assert(offsetof(CS2::client::C_Fish, m_actualPos) == 0x11B0, "m_actualPos in C_Fish should be at offset 0x11B0");
+		static_assert(offsetof(CS2::client::C_Fish, m_actualAngles) == 0x11BC, "m_actualAngles in C_Fish should be at offset 0x11BC");
+		static_assert(offsetof(CS2::client::C_Fish, m_poolOrigin) == 0x11C8, "m_poolOrigin in C_Fish should be at offset 0x11C8");
+		static_assert(offsetof(CS2::client::C_Fish, m_waterLevel) == 0x11D4, "m_waterLevel in C_Fish should be at offset 0x11D4");
+		static_assert(offsetof(CS2::client::C_Fish, m_gotUpdate) == 0x11D8, "m_gotUpdate in C_Fish should be at offset 0x11D8");
+		static_assert(offsetof(CS2::client::C_Fish, m_x) == 0x11DC, "m_x in C_Fish should be at offset 0x11DC");
+		static_assert(offsetof(CS2::client::C_Fish, m_y) == 0x11E0, "m_y in C_Fish should be at offset 0x11E0");
+		static_assert(offsetof(CS2::client::C_Fish, m_z) == 0x11E4, "m_z in C_Fish should be at offset 0x11E4");
+		static_assert(offsetof(CS2::client::C_Fish, m_angle) == 0x11E8, "m_angle in C_Fish should be at offset 0x11E8");
+		static_assert(offsetof(CS2::client::C_Fish, m_errorHistory) == 0x11EC, "m_errorHistory in C_Fish should be at offset 0x11EC");
+		static_assert(offsetof(CS2::client::C_Fish, m_errorHistoryIndex) == 0x123C, "m_errorHistoryIndex in C_Fish should be at offset 0x123C");
+		static_assert(offsetof(CS2::client::C_Fish, m_errorHistoryCount) == 0x1240, "m_errorHistoryCount in C_Fish should be at offset 0x1240");
+		static_assert(offsetof(CS2::client::C_Fish, m_averageError) == 0x1244, "m_averageError in C_Fish should be at offset 0x1244");
+		static_assert(sizeof(CS2::client::C_Fish) == 0x1248, "C_Fish size should be 0x1248");
 	}
 }

@@ -14,19 +14,19 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RampScalarSplineSimple : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_Rate; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime; // 0x1c8 | Schema_Builtin | Size: 0x4
+			float32 m_Rate; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x24);
-			particles::ParticleAttributeIndex_t m_nField; // 0x1f0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bEaseOut; // 0x1f4 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nField; // 0x200 | Schema_DeclaredClass | Size: 0x4
+			bool m_bEaseOut; // 0x204 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_Rate) == 0x1C0, "m_Rate in C_OP_RampScalarSplineSimple should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_flStartTime) == 0x1C4, "m_flStartTime in C_OP_RampScalarSplineSimple should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_flEndTime) == 0x1C8, "m_flEndTime in C_OP_RampScalarSplineSimple should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_nField) == 0x1F0, "m_nField in C_OP_RampScalarSplineSimple should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_bEaseOut) == 0x1F4, "m_bEaseOut in C_OP_RampScalarSplineSimple should be at offset 0x1F4");
-		static_assert(sizeof(CS2::particles::C_OP_RampScalarSplineSimple) == 0x200, "C_OP_RampScalarSplineSimple size should be 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_Rate) == 0x1D0, "m_Rate in C_OP_RampScalarSplineSimple should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_flStartTime) == 0x1D4, "m_flStartTime in C_OP_RampScalarSplineSimple should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_flEndTime) == 0x1D8, "m_flEndTime in C_OP_RampScalarSplineSimple should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_nField) == 0x200, "m_nField in C_OP_RampScalarSplineSimple should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_bEaseOut) == 0x204, "m_bEaseOut in C_OP_RampScalarSplineSimple should be at offset 0x204");
+		static_assert(sizeof(CS2::particles::C_OP_RampScalarSplineSimple) == 0x210, "C_OP_RampScalarSplineSimple size should be 0x210");
 	}
 }

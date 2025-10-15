@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xEB8
+			// Class size: 0xF48
 			namespace C_OP_DirectionBetweenVecsToVec /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecPoint1 = 0x1c8; // particleslib::CPerParticleVecInput m_vecPoint1; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecPoint2 = 0x840; // particleslib::CPerParticleVecInput m_vecPoint2; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecPoint1 = 0x1d8; // particleslib::CPerParticleVecInput m_vecPoint1; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecPoint2 = 0x890; // particleslib::CPerParticleVecInput m_vecPoint2; |  Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

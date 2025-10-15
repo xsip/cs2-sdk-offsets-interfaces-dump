@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CScriptNavBlocker : public CS2::server::CFuncNavBlocker {
 		public:
-			GlobalTypes::Vector m_vExtent; // 0x808 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vExtent; // 0x7f0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CScriptNavBlocker, m_vExtent) == 0x808, "m_vExtent in CScriptNavBlocker should be at offset 0x808");
-		static_assert(sizeof(CS2::server::CScriptNavBlocker) == 0x818, "CScriptNavBlocker size should be 0x818");
+		static_assert(offsetof(CS2::server::CScriptNavBlocker, m_vExtent) == 0x7F0, "m_vExtent in CScriptNavBlocker should be at offset 0x7F0");
+		static_assert(sizeof(CS2::server::CScriptNavBlocker) == 0x800, "CScriptNavBlocker size should be 0x800");
 	}
 }

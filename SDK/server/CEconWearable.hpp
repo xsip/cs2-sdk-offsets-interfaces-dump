@@ -13,12 +13,12 @@ namespace CS2 {
 	namespace server {
 		class CEconWearable : public CS2::server::CEconEntity {
 		public:
-			int32_t m_nForceSkin; // 0xe38 | Schema_Builtin | Size: 0x4
-			bool m_bAlwaysAllow; // 0xe3c | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3); // End padding
+			int32_t m_nForceSkin; // 0xe50 | Schema_Builtin | Size: 0x4
+			bool m_bAlwaysAllow; // 0xe54 | Schema_Builtin | Size: 0x1
+			S2_PAD(0xb); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEconWearable, m_nForceSkin) == 0xE38, "m_nForceSkin in CEconWearable should be at offset 0xE38");
-		static_assert(offsetof(CS2::server::CEconWearable, m_bAlwaysAllow) == 0xE3C, "m_bAlwaysAllow in CEconWearable should be at offset 0xE3C");
-		static_assert(sizeof(CS2::server::CEconWearable) == 0xE40, "CEconWearable size should be 0xE40");
+		static_assert(offsetof(CS2::server::CEconWearable, m_nForceSkin) == 0xE50, "m_nForceSkin in CEconWearable should be at offset 0xE50");
+		static_assert(offsetof(CS2::server::CEconWearable, m_bAlwaysAllow) == 0xE54, "m_bAlwaysAllow in CEconWearable should be at offset 0xE54");
+		static_assert(sizeof(CS2::server::CEconWearable) == 0xE60, "CEconWearable size should be 0xE60");
 	}
 }

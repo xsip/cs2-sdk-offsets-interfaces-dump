@@ -20,11 +20,12 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeVector m_vModelScale; // 0x148 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flUniformModelScale; // 0x188 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeInt m_nLodLevel; // 0x1c8 | Schema_Atomic | Size: 0x40
-			smartprops::SmartPropDetailFadeLevel_t m_nDetailObjectFadeLevel; // 0x208 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CSmartPropAttributeSurfaceProperty m_SurfacePropertyOverride; // 0x208 | Schema_Atomic | Size: 0x40
+			smartprops::SmartPropDetailFadeLevel_t m_nDetailObjectFadeLevel; // 0x248 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CSmartPropAttributeBool m_bCastShadows; // 0x210 | Schema_Atomic | Size: 0x40
-			GlobalTypes::CSmartPropAttributeBool m_bRigidDeformation; // 0x250 | Schema_Atomic | Size: 0x40
-			GlobalTypes::CSmartPropAttributeBool m_bDisableDynamicDeformable; // 0x290 | Schema_Atomic | Size: 0x40
+			GlobalTypes::CSmartPropAttributeBool m_bCastShadows; // 0x250 | Schema_Atomic | Size: 0x40
+			GlobalTypes::CSmartPropAttributeBool m_bRigidDeformation; // 0x290 | Schema_Atomic | Size: 0x40
+			GlobalTypes::CSmartPropAttributeBool m_bDisableDynamicDeformable; // 0x2d0 | Schema_Atomic | Size: 0x40
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_sModelName) == 0x88, "m_sModelName in CSmartPropElement_Model should be at offset 0x88");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_MaterialGroupName) == 0xC8, "m_MaterialGroupName in CSmartPropElement_Model should be at offset 0xC8");
@@ -32,10 +33,11 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_vModelScale) == 0x148, "m_vModelScale in CSmartPropElement_Model should be at offset 0x148");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_flUniformModelScale) == 0x188, "m_flUniformModelScale in CSmartPropElement_Model should be at offset 0x188");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_nLodLevel) == 0x1C8, "m_nLodLevel in CSmartPropElement_Model should be at offset 0x1C8");
-		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_nDetailObjectFadeLevel) == 0x208, "m_nDetailObjectFadeLevel in CSmartPropElement_Model should be at offset 0x208");
-		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bCastShadows) == 0x210, "m_bCastShadows in CSmartPropElement_Model should be at offset 0x210");
-		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bRigidDeformation) == 0x250, "m_bRigidDeformation in CSmartPropElement_Model should be at offset 0x250");
-		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bDisableDynamicDeformable) == 0x290, "m_bDisableDynamicDeformable in CSmartPropElement_Model should be at offset 0x290");
-		static_assert(sizeof(CS2::smartprops::CSmartPropElement_Model) == 0x2D0, "CSmartPropElement_Model size should be 0x2D0");
+		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_SurfacePropertyOverride) == 0x208, "m_SurfacePropertyOverride in CSmartPropElement_Model should be at offset 0x208");
+		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_nDetailObjectFadeLevel) == 0x248, "m_nDetailObjectFadeLevel in CSmartPropElement_Model should be at offset 0x248");
+		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bCastShadows) == 0x250, "m_bCastShadows in CSmartPropElement_Model should be at offset 0x250");
+		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bRigidDeformation) == 0x290, "m_bRigidDeformation in CSmartPropElement_Model should be at offset 0x290");
+		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bDisableDynamicDeformable) == 0x2D0, "m_bDisableDynamicDeformable in CSmartPropElement_Model should be at offset 0x2D0");
+		static_assert(sizeof(CS2::smartprops::CSmartPropElement_Model) == 0x310, "CSmartPropElement_Model size should be 0x310");
 	}
 }

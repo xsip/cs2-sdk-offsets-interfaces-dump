@@ -21,13 +21,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFreezeTransitionStart = 0x70; // float32 m_flFreezeTransitionStart; |  0x70 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFreezeTransitionDuration = 0x74; // float32 m_flFreezeTransitionDuration; |  0x74 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFreezeTransitionOverride = 0x78; // float32 m_flFreezeTransitionOverride; |  0x78 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bFreezeTransitionActive = 0x7c; // bool m_bFreezeTransitionActive; |  0x7c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFreezeTargetState = 0x7d; // bool m_bFreezeTargetState; |  0x7d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCanFreeze = 0x7e; // bool m_bCanFreeze; |  0x7e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_LastMin = 0x80; // GlobalTypes::Vector m_LastMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_LastMax = 0x8c; // GlobalTypes::Vector m_LastMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nSplitScreenUser = 0x98; // GlobalTypes::CSplitScreenSlot m_nSplitScreenUser; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAggregationCenter = 0x9c; // GlobalTypes::Vector m_vecAggregationCenter; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_LastMin = 0x7c; // GlobalTypes::Vector m_LastMin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_LastMax = 0x88; // GlobalTypes::Vector m_LastMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nSplitScreenUser = 0x94; // GlobalTypes::CSplitScreenSlot m_nSplitScreenUser; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecAggregationCenter = 0x98; // GlobalTypes::Vector m_vecAggregationCenter; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_RefCount = 0xd0; // int32_t m_RefCount; |  0xd0 | Schema_Builtin | Size: 0x4
 			}
 		}

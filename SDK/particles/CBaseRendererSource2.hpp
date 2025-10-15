@@ -27,145 +27,145 @@ namespace CS2 {
 	namespace particles {
 		class CBaseRendererSource2 : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particleslib::CParticleCollectionRendererFloatInput m_flRadiusScale; // 0x210 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flAlphaScale; // 0x370 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flRollScale; // 0x4d0 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x630 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CParticleCollectionRendererFloatInput m_flRadiusScale; // 0x220 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flAlphaScale; // 0x390 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flRollScale; // 0x500 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x670 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionRendererVecInput m_vecColorScale; // 0x638 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xcb0 | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardShaderType_t m_nShaderType; // 0xcb4 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CUtlString m_strShaderOverride; // 0xcb8 | Schema_Atomic | Size: 0x8
-			particleslib::CParticleCollectionRendererFloatInput m_flCenterXOffset; // 0xcc0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flCenterYOffset; // 0xe20 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flBumpStrength; // 0xf80 | Schema_Builtin | Size: 0x4
-			particles::ParticleSequenceCropOverride_t m_nCropTextureOverride; // 0xf84 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CUtlLeanVector< particles::TextureGroup_t > m_vecTexturesInput; // 0xf88 | Schema_Atomic | Size: 0x10
-			char  m_vecTexturesInput[0x10]; // 0xf88 | Schema_Atomic | Size: 0x10
-			float32 m_flAnimationRate; // 0xf98 | Schema_Builtin | Size: 0x4
-			particles::AnimationType_t m_nAnimationType; // 0xf9c | Schema_DeclaredEnum | Size: 0x4
-			bool m_bAnimateInFPS; // 0xfa0 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererVecInput m_vecColorScale; // 0x678 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xd30 | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardShaderType_t m_nShaderType; // 0xd34 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlString m_strShaderOverride; // 0xd38 | Schema_Atomic | Size: 0x8
+			particleslib::CParticleCollectionRendererFloatInput m_flCenterXOffset; // 0xd40 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flCenterYOffset; // 0xeb0 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flBumpStrength; // 0x1020 | Schema_Builtin | Size: 0x4
+			particles::ParticleSequenceCropOverride_t m_nCropTextureOverride; // 0x1024 | Schema_DeclaredEnum | Size: 0x4
+			// GlobalTypes::CUtlLeanVector< particles::TextureGroup_t > m_vecTexturesInput; // 0x1028 | Schema_Atomic | Size: 0x10
+			char  m_vecTexturesInput[0x10]; // 0x1028 | Schema_Atomic | Size: 0x10
+			float32 m_flAnimationRate; // 0x1038 | Schema_Builtin | Size: 0x4
+			particles::AnimationType_t m_nAnimationType; // 0x103c | Schema_DeclaredEnum | Size: 0x4
+			bool m_bAnimateInFPS; // 0x1040 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CParticleCollectionRendererFloatInput m_flMotionVectorScaleU; // 0xfa8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flMotionVectorScaleV; // 0x1108 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flSelfIllumAmount; // 0x1268 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flDiffuseAmount; // 0x13c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flDiffuseClamp; // 0x1528 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nLightingControlPoint; // 0x1688 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nSelfIllumPerParticle; // 0x168c | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleOutputBlendMode_t m_nOutputBlendMode; // 0x1690 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bGammaCorrectVertexColors; // 0x1694 | Schema_Builtin | Size: 0x1
-			bool m_bSaturateColorPreAlphaBlend; // 0x1695 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererFloatInput m_flMotionVectorScaleU; // 0x1048 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flMotionVectorScaleV; // 0x11b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flSelfIllumAmount; // 0x1328 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flDiffuseAmount; // 0x1498 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flDiffuseClamp; // 0x1608 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nLightingControlPoint; // 0x1778 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nSelfIllumPerParticle; // 0x177c | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleOutputBlendMode_t m_nOutputBlendMode; // 0x1780 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bGammaCorrectVertexColors; // 0x1784 | Schema_Builtin | Size: 0x1
+			bool m_bSaturateColorPreAlphaBlend; // 0x1785 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particleslib::CParticleCollectionRendererFloatInput m_flAddSelfAmount; // 0x1698 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flDesaturation; // 0x17f8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flOverbrightFactor; // 0x1958 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nHSVShiftControlPoint; // 0x1ab8 | Schema_Builtin | Size: 0x4
-			particles::ParticleFogType_t m_nFogType; // 0x1abc | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CParticleCollectionRendererFloatInput m_flFogAmount; // 0x1ac0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bTintByFOW; // 0x1c20 | Schema_Builtin | Size: 0x1
-			bool m_bTintByGlobalLight; // 0x1c21 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererFloatInput m_flAddSelfAmount; // 0x1788 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flDesaturation; // 0x18f8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flOverbrightFactor; // 0x1a68 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nHSVShiftControlPoint; // 0x1bd8 | Schema_Builtin | Size: 0x4
+			particles::ParticleFogType_t m_nFogType; // 0x1bdc | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionRendererFloatInput m_flFogAmount; // 0x1be0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bTintByFOW; // 0x1d50 | Schema_Builtin | Size: 0x1
+			bool m_bTintByGlobalLight; // 0x1d51 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::SpriteCardPerParticleScale_t m_nPerParticleAlphaReference; // 0x1c24 | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardPerParticleScale_t m_nPerParticleAlphaRefWindow; // 0x1c28 | Schema_DeclaredEnum | Size: 0x4
-			particles::ParticleAlphaReferenceType_t m_nAlphaReferenceType; // 0x1c2c | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CParticleCollectionRendererFloatInput m_flAlphaReferenceSoftness; // 0x1c30 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flSourceAlphaValueToMapToZero; // 0x1d90 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flSourceAlphaValueToMapToOne; // 0x1ef0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bRefract; // 0x2050 | Schema_Builtin | Size: 0x1
-			bool m_bRefractSolid; // 0x2051 | Schema_Builtin | Size: 0x1
+			particles::SpriteCardPerParticleScale_t m_nPerParticleAlphaReference; // 0x1d54 | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleAlphaRefWindow; // 0x1d58 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleAlphaReferenceType_t m_nAlphaReferenceType; // 0x1d5c | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionRendererFloatInput m_flAlphaReferenceSoftness; // 0x1d60 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flSourceAlphaValueToMapToZero; // 0x1ed0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flSourceAlphaValueToMapToOne; // 0x2040 | Schema_DeclaredClass | Size: 0x170
+			bool m_bRefract; // 0x21b0 | Schema_Builtin | Size: 0x1
+			bool m_bRefractSolid; // 0x21b1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			particleslib::CParticleCollectionRendererFloatInput m_flRefractAmount; // 0x2058 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nRefractBlurRadius; // 0x21b8 | Schema_Builtin | Size: 0x4
-			particles::BlurFilterType_t m_nRefractBlurType; // 0x21bc | Schema_DeclaredEnum | Size: 0x4
-			bool m_bOnlyRenderInEffectsBloomPass; // 0x21c0 | Schema_Builtin | Size: 0x1
-			bool m_bOnlyRenderInEffectsWaterPass; // 0x21c1 | Schema_Builtin | Size: 0x1
-			bool m_bUseMixedResolutionRendering; // 0x21c2 | Schema_Builtin | Size: 0x1
-			bool m_bOnlyRenderInEffecsGameOverlay; // 0x21c3 | Schema_Builtin | Size: 0x1
-			char m_stencilTestID[128]; // 0x21c4 | Schema_FixedArray | Size: 0x80
-			bool m_bStencilTestExclude; // 0x2244 | Schema_Builtin | Size: 0x1
-			char m_stencilWriteID[128]; // 0x2245 | Schema_FixedArray | Size: 0x80
-			bool m_bWriteStencilOnDepthPass; // 0x22c5 | Schema_Builtin | Size: 0x1
-			bool m_bWriteStencilOnDepthFail; // 0x22c6 | Schema_Builtin | Size: 0x1
-			bool m_bReverseZBuffering; // 0x22c7 | Schema_Builtin | Size: 0x1
-			bool m_bDisableZBuffering; // 0x22c8 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererFloatInput m_flRefractAmount; // 0x21b8 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nRefractBlurRadius; // 0x2328 | Schema_Builtin | Size: 0x4
+			particles::BlurFilterType_t m_nRefractBlurType; // 0x232c | Schema_DeclaredEnum | Size: 0x4
+			bool m_bOnlyRenderInEffectsBloomPass; // 0x2330 | Schema_Builtin | Size: 0x1
+			bool m_bOnlyRenderInEffectsWaterPass; // 0x2331 | Schema_Builtin | Size: 0x1
+			bool m_bUseMixedResolutionRendering; // 0x2332 | Schema_Builtin | Size: 0x1
+			bool m_bOnlyRenderInEffecsGameOverlay; // 0x2333 | Schema_Builtin | Size: 0x1
+			char m_stencilTestID[128]; // 0x2334 | Schema_FixedArray | Size: 0x80
+			bool m_bStencilTestExclude; // 0x23b4 | Schema_Builtin | Size: 0x1
+			char m_stencilWriteID[128]; // 0x23b5 | Schema_FixedArray | Size: 0x80
+			bool m_bWriteStencilOnDepthPass; // 0x2435 | Schema_Builtin | Size: 0x1
+			bool m_bWriteStencilOnDepthFail; // 0x2436 | Schema_Builtin | Size: 0x1
+			bool m_bReverseZBuffering; // 0x2437 | Schema_Builtin | Size: 0x1
+			bool m_bDisableZBuffering; // 0x2438 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleDepthFeatheringMode_t m_nFeatheringMode; // 0x22cc | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringMinDist; // 0x22d0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringMaxDist; // 0x2430 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringFilter; // 0x2590 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringDepthMapFilter; // 0x26f0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flDepthBias; // 0x2850 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleSortingChoiceList_t m_nSortMethod; // 0x29b0 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bBlendFramesSeq0; // 0x29b4 | Schema_Builtin | Size: 0x1
-			bool m_bMaxLuminanceBlendingSequence0; // 0x29b5 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x262); // End padding
+			particles::ParticleDepthFeatheringMode_t m_nFeatheringMode; // 0x243c | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringMinDist; // 0x2440 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringMaxDist; // 0x25b0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringFilter; // 0x2720 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flFeatheringDepthMapFilter; // 0x2890 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flDepthBias; // 0x2a00 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleSortingChoiceList_t m_nSortMethod; // 0x2b70 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bBlendFramesSeq0; // 0x2b74 | Schema_Builtin | Size: 0x1
+			bool m_bMaxLuminanceBlendingSequence0; // 0x2b75 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x272); // End padding
 		};
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRadiusScale) == 0x210, "m_flRadiusScale in CBaseRendererSource2 should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAlphaScale) == 0x370, "m_flAlphaScale in CBaseRendererSource2 should be at offset 0x370");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRollScale) == 0x4D0, "m_flRollScale in CBaseRendererSource2 should be at offset 0x4D0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nAlpha2Field) == 0x630, "m_nAlpha2Field in CBaseRendererSource2 should be at offset 0x630");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_vecColorScale) == 0x638, "m_vecColorScale in CBaseRendererSource2 should be at offset 0x638");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nColorBlendType) == 0xCB0, "m_nColorBlendType in CBaseRendererSource2 should be at offset 0xCB0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nShaderType) == 0xCB4, "m_nShaderType in CBaseRendererSource2 should be at offset 0xCB4");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_strShaderOverride) == 0xCB8, "m_strShaderOverride in CBaseRendererSource2 should be at offset 0xCB8");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flCenterXOffset) == 0xCC0, "m_flCenterXOffset in CBaseRendererSource2 should be at offset 0xCC0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flCenterYOffset) == 0xE20, "m_flCenterYOffset in CBaseRendererSource2 should be at offset 0xE20");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flBumpStrength) == 0xF80, "m_flBumpStrength in CBaseRendererSource2 should be at offset 0xF80");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nCropTextureOverride) == 0xF84, "m_nCropTextureOverride in CBaseRendererSource2 should be at offset 0xF84");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_vecTexturesInput) == 0xF88, "m_vecTexturesInput in CBaseRendererSource2 should be at offset 0xF88");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAnimationRate) == 0xF98, "m_flAnimationRate in CBaseRendererSource2 should be at offset 0xF98");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nAnimationType) == 0xF9C, "m_nAnimationType in CBaseRendererSource2 should be at offset 0xF9C");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bAnimateInFPS) == 0xFA0, "m_bAnimateInFPS in CBaseRendererSource2 should be at offset 0xFA0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flMotionVectorScaleU) == 0xFA8, "m_flMotionVectorScaleU in CBaseRendererSource2 should be at offset 0xFA8");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flMotionVectorScaleV) == 0x1108, "m_flMotionVectorScaleV in CBaseRendererSource2 should be at offset 0x1108");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flSelfIllumAmount) == 0x1268, "m_flSelfIllumAmount in CBaseRendererSource2 should be at offset 0x1268");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDiffuseAmount) == 0x13C8, "m_flDiffuseAmount in CBaseRendererSource2 should be at offset 0x13C8");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDiffuseClamp) == 0x1528, "m_flDiffuseClamp in CBaseRendererSource2 should be at offset 0x1528");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nLightingControlPoint) == 0x1688, "m_nLightingControlPoint in CBaseRendererSource2 should be at offset 0x1688");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nSelfIllumPerParticle) == 0x168C, "m_nSelfIllumPerParticle in CBaseRendererSource2 should be at offset 0x168C");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nOutputBlendMode) == 0x1690, "m_nOutputBlendMode in CBaseRendererSource2 should be at offset 0x1690");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bGammaCorrectVertexColors) == 0x1694, "m_bGammaCorrectVertexColors in CBaseRendererSource2 should be at offset 0x1694");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bSaturateColorPreAlphaBlend) == 0x1695, "m_bSaturateColorPreAlphaBlend in CBaseRendererSource2 should be at offset 0x1695");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAddSelfAmount) == 0x1698, "m_flAddSelfAmount in CBaseRendererSource2 should be at offset 0x1698");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDesaturation) == 0x17F8, "m_flDesaturation in CBaseRendererSource2 should be at offset 0x17F8");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flOverbrightFactor) == 0x1958, "m_flOverbrightFactor in CBaseRendererSource2 should be at offset 0x1958");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nHSVShiftControlPoint) == 0x1AB8, "m_nHSVShiftControlPoint in CBaseRendererSource2 should be at offset 0x1AB8");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nFogType) == 0x1ABC, "m_nFogType in CBaseRendererSource2 should be at offset 0x1ABC");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFogAmount) == 0x1AC0, "m_flFogAmount in CBaseRendererSource2 should be at offset 0x1AC0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bTintByFOW) == 0x1C20, "m_bTintByFOW in CBaseRendererSource2 should be at offset 0x1C20");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bTintByGlobalLight) == 0x1C21, "m_bTintByGlobalLight in CBaseRendererSource2 should be at offset 0x1C21");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nPerParticleAlphaReference) == 0x1C24, "m_nPerParticleAlphaReference in CBaseRendererSource2 should be at offset 0x1C24");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nPerParticleAlphaRefWindow) == 0x1C28, "m_nPerParticleAlphaRefWindow in CBaseRendererSource2 should be at offset 0x1C28");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nAlphaReferenceType) == 0x1C2C, "m_nAlphaReferenceType in CBaseRendererSource2 should be at offset 0x1C2C");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAlphaReferenceSoftness) == 0x1C30, "m_flAlphaReferenceSoftness in CBaseRendererSource2 should be at offset 0x1C30");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flSourceAlphaValueToMapToZero) == 0x1D90, "m_flSourceAlphaValueToMapToZero in CBaseRendererSource2 should be at offset 0x1D90");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flSourceAlphaValueToMapToOne) == 0x1EF0, "m_flSourceAlphaValueToMapToOne in CBaseRendererSource2 should be at offset 0x1EF0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bRefract) == 0x2050, "m_bRefract in CBaseRendererSource2 should be at offset 0x2050");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bRefractSolid) == 0x2051, "m_bRefractSolid in CBaseRendererSource2 should be at offset 0x2051");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRefractAmount) == 0x2058, "m_flRefractAmount in CBaseRendererSource2 should be at offset 0x2058");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nRefractBlurRadius) == 0x21B8, "m_nRefractBlurRadius in CBaseRendererSource2 should be at offset 0x21B8");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nRefractBlurType) == 0x21BC, "m_nRefractBlurType in CBaseRendererSource2 should be at offset 0x21BC");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bOnlyRenderInEffectsBloomPass) == 0x21C0, "m_bOnlyRenderInEffectsBloomPass in CBaseRendererSource2 should be at offset 0x21C0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bOnlyRenderInEffectsWaterPass) == 0x21C1, "m_bOnlyRenderInEffectsWaterPass in CBaseRendererSource2 should be at offset 0x21C1");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bUseMixedResolutionRendering) == 0x21C2, "m_bUseMixedResolutionRendering in CBaseRendererSource2 should be at offset 0x21C2");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bOnlyRenderInEffecsGameOverlay) == 0x21C3, "m_bOnlyRenderInEffecsGameOverlay in CBaseRendererSource2 should be at offset 0x21C3");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_stencilTestID) == 0x21C4, "m_stencilTestID in CBaseRendererSource2 should be at offset 0x21C4");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bStencilTestExclude) == 0x2244, "m_bStencilTestExclude in CBaseRendererSource2 should be at offset 0x2244");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_stencilWriteID) == 0x2245, "m_stencilWriteID in CBaseRendererSource2 should be at offset 0x2245");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bWriteStencilOnDepthPass) == 0x22C5, "m_bWriteStencilOnDepthPass in CBaseRendererSource2 should be at offset 0x22C5");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bWriteStencilOnDepthFail) == 0x22C6, "m_bWriteStencilOnDepthFail in CBaseRendererSource2 should be at offset 0x22C6");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bReverseZBuffering) == 0x22C7, "m_bReverseZBuffering in CBaseRendererSource2 should be at offset 0x22C7");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bDisableZBuffering) == 0x22C8, "m_bDisableZBuffering in CBaseRendererSource2 should be at offset 0x22C8");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nFeatheringMode) == 0x22CC, "m_nFeatheringMode in CBaseRendererSource2 should be at offset 0x22CC");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringMinDist) == 0x22D0, "m_flFeatheringMinDist in CBaseRendererSource2 should be at offset 0x22D0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringMaxDist) == 0x2430, "m_flFeatheringMaxDist in CBaseRendererSource2 should be at offset 0x2430");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringFilter) == 0x2590, "m_flFeatheringFilter in CBaseRendererSource2 should be at offset 0x2590");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringDepthMapFilter) == 0x26F0, "m_flFeatheringDepthMapFilter in CBaseRendererSource2 should be at offset 0x26F0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDepthBias) == 0x2850, "m_flDepthBias in CBaseRendererSource2 should be at offset 0x2850");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nSortMethod) == 0x29B0, "m_nSortMethod in CBaseRendererSource2 should be at offset 0x29B0");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bBlendFramesSeq0) == 0x29B4, "m_bBlendFramesSeq0 in CBaseRendererSource2 should be at offset 0x29B4");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bMaxLuminanceBlendingSequence0) == 0x29B5, "m_bMaxLuminanceBlendingSequence0 in CBaseRendererSource2 should be at offset 0x29B5");
-		static_assert(sizeof(CS2::particles::CBaseRendererSource2) == 0x2C18, "CBaseRendererSource2 size should be 0x2C18");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRadiusScale) == 0x220, "m_flRadiusScale in CBaseRendererSource2 should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAlphaScale) == 0x390, "m_flAlphaScale in CBaseRendererSource2 should be at offset 0x390");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRollScale) == 0x500, "m_flRollScale in CBaseRendererSource2 should be at offset 0x500");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nAlpha2Field) == 0x670, "m_nAlpha2Field in CBaseRendererSource2 should be at offset 0x670");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_vecColorScale) == 0x678, "m_vecColorScale in CBaseRendererSource2 should be at offset 0x678");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nColorBlendType) == 0xD30, "m_nColorBlendType in CBaseRendererSource2 should be at offset 0xD30");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nShaderType) == 0xD34, "m_nShaderType in CBaseRendererSource2 should be at offset 0xD34");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_strShaderOverride) == 0xD38, "m_strShaderOverride in CBaseRendererSource2 should be at offset 0xD38");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flCenterXOffset) == 0xD40, "m_flCenterXOffset in CBaseRendererSource2 should be at offset 0xD40");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flCenterYOffset) == 0xEB0, "m_flCenterYOffset in CBaseRendererSource2 should be at offset 0xEB0");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flBumpStrength) == 0x1020, "m_flBumpStrength in CBaseRendererSource2 should be at offset 0x1020");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nCropTextureOverride) == 0x1024, "m_nCropTextureOverride in CBaseRendererSource2 should be at offset 0x1024");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_vecTexturesInput) == 0x1028, "m_vecTexturesInput in CBaseRendererSource2 should be at offset 0x1028");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAnimationRate) == 0x1038, "m_flAnimationRate in CBaseRendererSource2 should be at offset 0x1038");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nAnimationType) == 0x103C, "m_nAnimationType in CBaseRendererSource2 should be at offset 0x103C");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bAnimateInFPS) == 0x1040, "m_bAnimateInFPS in CBaseRendererSource2 should be at offset 0x1040");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flMotionVectorScaleU) == 0x1048, "m_flMotionVectorScaleU in CBaseRendererSource2 should be at offset 0x1048");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flMotionVectorScaleV) == 0x11B8, "m_flMotionVectorScaleV in CBaseRendererSource2 should be at offset 0x11B8");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flSelfIllumAmount) == 0x1328, "m_flSelfIllumAmount in CBaseRendererSource2 should be at offset 0x1328");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDiffuseAmount) == 0x1498, "m_flDiffuseAmount in CBaseRendererSource2 should be at offset 0x1498");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDiffuseClamp) == 0x1608, "m_flDiffuseClamp in CBaseRendererSource2 should be at offset 0x1608");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nLightingControlPoint) == 0x1778, "m_nLightingControlPoint in CBaseRendererSource2 should be at offset 0x1778");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nSelfIllumPerParticle) == 0x177C, "m_nSelfIllumPerParticle in CBaseRendererSource2 should be at offset 0x177C");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nOutputBlendMode) == 0x1780, "m_nOutputBlendMode in CBaseRendererSource2 should be at offset 0x1780");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bGammaCorrectVertexColors) == 0x1784, "m_bGammaCorrectVertexColors in CBaseRendererSource2 should be at offset 0x1784");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bSaturateColorPreAlphaBlend) == 0x1785, "m_bSaturateColorPreAlphaBlend in CBaseRendererSource2 should be at offset 0x1785");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAddSelfAmount) == 0x1788, "m_flAddSelfAmount in CBaseRendererSource2 should be at offset 0x1788");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDesaturation) == 0x18F8, "m_flDesaturation in CBaseRendererSource2 should be at offset 0x18F8");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flOverbrightFactor) == 0x1A68, "m_flOverbrightFactor in CBaseRendererSource2 should be at offset 0x1A68");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nHSVShiftControlPoint) == 0x1BD8, "m_nHSVShiftControlPoint in CBaseRendererSource2 should be at offset 0x1BD8");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nFogType) == 0x1BDC, "m_nFogType in CBaseRendererSource2 should be at offset 0x1BDC");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFogAmount) == 0x1BE0, "m_flFogAmount in CBaseRendererSource2 should be at offset 0x1BE0");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bTintByFOW) == 0x1D50, "m_bTintByFOW in CBaseRendererSource2 should be at offset 0x1D50");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bTintByGlobalLight) == 0x1D51, "m_bTintByGlobalLight in CBaseRendererSource2 should be at offset 0x1D51");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nPerParticleAlphaReference) == 0x1D54, "m_nPerParticleAlphaReference in CBaseRendererSource2 should be at offset 0x1D54");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nPerParticleAlphaRefWindow) == 0x1D58, "m_nPerParticleAlphaRefWindow in CBaseRendererSource2 should be at offset 0x1D58");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nAlphaReferenceType) == 0x1D5C, "m_nAlphaReferenceType in CBaseRendererSource2 should be at offset 0x1D5C");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAlphaReferenceSoftness) == 0x1D60, "m_flAlphaReferenceSoftness in CBaseRendererSource2 should be at offset 0x1D60");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flSourceAlphaValueToMapToZero) == 0x1ED0, "m_flSourceAlphaValueToMapToZero in CBaseRendererSource2 should be at offset 0x1ED0");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flSourceAlphaValueToMapToOne) == 0x2040, "m_flSourceAlphaValueToMapToOne in CBaseRendererSource2 should be at offset 0x2040");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bRefract) == 0x21B0, "m_bRefract in CBaseRendererSource2 should be at offset 0x21B0");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bRefractSolid) == 0x21B1, "m_bRefractSolid in CBaseRendererSource2 should be at offset 0x21B1");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRefractAmount) == 0x21B8, "m_flRefractAmount in CBaseRendererSource2 should be at offset 0x21B8");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nRefractBlurRadius) == 0x2328, "m_nRefractBlurRadius in CBaseRendererSource2 should be at offset 0x2328");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nRefractBlurType) == 0x232C, "m_nRefractBlurType in CBaseRendererSource2 should be at offset 0x232C");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bOnlyRenderInEffectsBloomPass) == 0x2330, "m_bOnlyRenderInEffectsBloomPass in CBaseRendererSource2 should be at offset 0x2330");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bOnlyRenderInEffectsWaterPass) == 0x2331, "m_bOnlyRenderInEffectsWaterPass in CBaseRendererSource2 should be at offset 0x2331");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bUseMixedResolutionRendering) == 0x2332, "m_bUseMixedResolutionRendering in CBaseRendererSource2 should be at offset 0x2332");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bOnlyRenderInEffecsGameOverlay) == 0x2333, "m_bOnlyRenderInEffecsGameOverlay in CBaseRendererSource2 should be at offset 0x2333");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_stencilTestID) == 0x2334, "m_stencilTestID in CBaseRendererSource2 should be at offset 0x2334");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bStencilTestExclude) == 0x23B4, "m_bStencilTestExclude in CBaseRendererSource2 should be at offset 0x23B4");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_stencilWriteID) == 0x23B5, "m_stencilWriteID in CBaseRendererSource2 should be at offset 0x23B5");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bWriteStencilOnDepthPass) == 0x2435, "m_bWriteStencilOnDepthPass in CBaseRendererSource2 should be at offset 0x2435");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bWriteStencilOnDepthFail) == 0x2436, "m_bWriteStencilOnDepthFail in CBaseRendererSource2 should be at offset 0x2436");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bReverseZBuffering) == 0x2437, "m_bReverseZBuffering in CBaseRendererSource2 should be at offset 0x2437");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bDisableZBuffering) == 0x2438, "m_bDisableZBuffering in CBaseRendererSource2 should be at offset 0x2438");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nFeatheringMode) == 0x243C, "m_nFeatheringMode in CBaseRendererSource2 should be at offset 0x243C");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringMinDist) == 0x2440, "m_flFeatheringMinDist in CBaseRendererSource2 should be at offset 0x2440");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringMaxDist) == 0x25B0, "m_flFeatheringMaxDist in CBaseRendererSource2 should be at offset 0x25B0");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringFilter) == 0x2720, "m_flFeatheringFilter in CBaseRendererSource2 should be at offset 0x2720");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flFeatheringDepthMapFilter) == 0x2890, "m_flFeatheringDepthMapFilter in CBaseRendererSource2 should be at offset 0x2890");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDepthBias) == 0x2A00, "m_flDepthBias in CBaseRendererSource2 should be at offset 0x2A00");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nSortMethod) == 0x2B70, "m_nSortMethod in CBaseRendererSource2 should be at offset 0x2B70");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bBlendFramesSeq0) == 0x2B74, "m_bBlendFramesSeq0 in CBaseRendererSource2 should be at offset 0x2B74");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bMaxLuminanceBlendingSequence0) == 0x2B75, "m_bMaxLuminanceBlendingSequence0 in CBaseRendererSource2 should be at offset 0x2B75");
+		static_assert(sizeof(CS2::particles::CBaseRendererSource2) == 0x2DE8, "CBaseRendererSource2 size should be 0x2DE8");
 	}
 }

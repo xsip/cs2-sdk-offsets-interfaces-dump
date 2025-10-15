@@ -14,6 +14,6 @@ namespace CS2 {
 		class CFuncVehicleClip : public CS2::server::CBaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFuncVehicleClip) == 0x7F0, "CFuncVehicleClip size should be 0x7F0");
+		static_assert(sizeof(CS2::server::CFuncVehicleClip) == 0x7D8, "CFuncVehicleClip size should be 0x7D8");
 	}
 }

@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1940
+			// Class size: 0x1930
 			namespace C_Chicken /*: public CS2::client::C_DynamicProp*/ {
-				constexpr std::ptrdiff_t m_hHolidayHatAddon = 0x1438; // client::CHandle< client::CBaseAnimGraph > m_hHolidayHatAddon; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_jumpedThisFrame = 0x143c; // bool m_jumpedThisFrame; |  0x143c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_leader = 0x1440; // client::CHandle< client::C_CSPlayerPawn > m_leader; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_AttributeManager = 0x1448; // client::C_AttributeContainer m_AttributeManager; |  Schema_DeclaredClass | Size: 0x4d8
-				constexpr std::ptrdiff_t m_bAttributesInitialized = 0x1920; // bool m_bAttributesInitialized; |  0x1920 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hWaterWakeParticles = 0x1924; // client::ParticleIndex_t m_hWaterWakeParticles; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsPreviewModel = 0x1928; // bool m_bIsPreviewModel; |  0x1928 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hHolidayHatAddon = 0x1428; // client::CHandle< client::CBaseAnimGraph > m_hHolidayHatAddon; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_jumpedThisFrame = 0x142c; // bool m_jumpedThisFrame; |  0x142c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_leader = 0x1430; // client::CHandle< client::C_CSPlayerPawn > m_leader; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_AttributeManager = 0x1438; // client::C_AttributeContainer m_AttributeManager; |  Schema_DeclaredClass | Size: 0x4d8
+				constexpr std::ptrdiff_t m_bAttributesInitialized = 0x1910; // bool m_bAttributesInitialized; |  0x1910 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hWaterWakeParticles = 0x1914; // client::ParticleIndex_t m_hWaterWakeParticles; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsPreviewModel = 0x1918; // bool m_bIsPreviewModel; |  0x1918 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -14,27 +14,27 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_MaintainEmitter : public CS2::particles::CParticleFunctionEmitter {
 		public:
-			particleslib::CParticleCollectionFloatInput m_nParticlesToMaintain; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flStartTime; // 0x328 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_nParticlesToMaintain; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flStartTime; // 0x348 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flEmissionDuration; // 0x330 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flEmissionRate; // 0x490 | Schema_Builtin | Size: 0x4
-			int32_t m_nSnapshotControlPoint; // 0x494 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x498 | Schema_Atomic | Size: 0x8
-			bool m_bEmitInstantaneously; // 0x4a0 | Schema_Builtin | Size: 0x1
-			bool m_bFinalEmitOnStop; // 0x4a1 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flEmissionDuration; // 0x350 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flEmissionRate; // 0x4c0 | Schema_Builtin | Size: 0x4
+			int32_t m_nSnapshotControlPoint; // 0x4c4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x4c8 | Schema_Atomic | Size: 0x8
+			bool m_bEmitInstantaneously; // 0x4d0 | Schema_Builtin | Size: 0x1
+			bool m_bFinalEmitOnStop; // 0x4d1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			particleslib::CParticleCollectionFloatInput m_flScale; // 0x4a8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flScale; // 0x4d8 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_nParticlesToMaintain) == 0x1C8, "m_nParticlesToMaintain in C_OP_MaintainEmitter should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flStartTime) == 0x328, "m_flStartTime in C_OP_MaintainEmitter should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flEmissionDuration) == 0x330, "m_flEmissionDuration in C_OP_MaintainEmitter should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flEmissionRate) == 0x490, "m_flEmissionRate in C_OP_MaintainEmitter should be at offset 0x490");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_nSnapshotControlPoint) == 0x494, "m_nSnapshotControlPoint in C_OP_MaintainEmitter should be at offset 0x494");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_strSnapshotSubset) == 0x498, "m_strSnapshotSubset in C_OP_MaintainEmitter should be at offset 0x498");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_bEmitInstantaneously) == 0x4A0, "m_bEmitInstantaneously in C_OP_MaintainEmitter should be at offset 0x4A0");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_bFinalEmitOnStop) == 0x4A1, "m_bFinalEmitOnStop in C_OP_MaintainEmitter should be at offset 0x4A1");
-		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flScale) == 0x4A8, "m_flScale in C_OP_MaintainEmitter should be at offset 0x4A8");
-		static_assert(sizeof(CS2::particles::C_OP_MaintainEmitter) == 0x608, "C_OP_MaintainEmitter size should be 0x608");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_nParticlesToMaintain) == 0x1D8, "m_nParticlesToMaintain in C_OP_MaintainEmitter should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flStartTime) == 0x348, "m_flStartTime in C_OP_MaintainEmitter should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flEmissionDuration) == 0x350, "m_flEmissionDuration in C_OP_MaintainEmitter should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flEmissionRate) == 0x4C0, "m_flEmissionRate in C_OP_MaintainEmitter should be at offset 0x4C0");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_nSnapshotControlPoint) == 0x4C4, "m_nSnapshotControlPoint in C_OP_MaintainEmitter should be at offset 0x4C4");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_strSnapshotSubset) == 0x4C8, "m_strSnapshotSubset in C_OP_MaintainEmitter should be at offset 0x4C8");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_bEmitInstantaneously) == 0x4D0, "m_bEmitInstantaneously in C_OP_MaintainEmitter should be at offset 0x4D0");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_bFinalEmitOnStop) == 0x4D1, "m_bFinalEmitOnStop in C_OP_MaintainEmitter should be at offset 0x4D1");
+		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flScale) == 0x4D8, "m_flScale in C_OP_MaintainEmitter should be at offset 0x4D8");
+		static_assert(sizeof(CS2::particles::C_OP_MaintainEmitter) == 0x648, "C_OP_MaintainEmitter size should be 0x648");
 	}
 }

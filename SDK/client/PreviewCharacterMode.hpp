@@ -10,6 +10,7 @@ namespace CS2 {
 			PreviewCharacterMode_BUY_MENU = 0x2,
 			PreviewCharacterMode_DIORAMA = 0x0,
 			PreviewCharacterMode_END_OF_MATCH = 0x4,
+			PreviewCharacterMode_INVALID = 0xffffffff,
 			PreviewCharacterMode_INVENTORY_INSPECT = 0x5,
 			PreviewCharacterMode_MAIN_MENU = 0x1,
 			PreviewCharacterMode_TEAM_INTRO = 0x7,

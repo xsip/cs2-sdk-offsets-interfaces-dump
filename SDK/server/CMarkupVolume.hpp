@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolume : public CS2::server::CBaseModelEntity {
 		public:
-			bool m_bDisabled; // 0x7f0 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x7d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CMarkupVolume, m_bDisabled) == 0x7F0, "m_bDisabled in CMarkupVolume should be at offset 0x7F0");
-		static_assert(sizeof(CS2::server::CMarkupVolume) == 0x7F8, "CMarkupVolume size should be 0x7F8");
+		static_assert(offsetof(CS2::server::CMarkupVolume, m_bDisabled) == 0x7D8, "m_bDisabled in CMarkupVolume should be at offset 0x7D8");
+		static_assert(sizeof(CS2::server::CMarkupVolume) == 0x7E0, "CMarkupVolume size should be 0x7E0");
 	}
 }

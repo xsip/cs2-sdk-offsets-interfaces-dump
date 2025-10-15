@@ -14,29 +14,29 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreationNoise : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bAbsVal; // 0x1cc | Schema_Builtin | Size: 0x1
-			bool m_bAbsValInv; // 0x1cd | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
+			bool m_bAbsVal; // 0x1dc | Schema_Builtin | Size: 0x1
+			bool m_bAbsValInv; // 0x1dd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flOffset; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseScale; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseScaleLoc; // 0x1e0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecOffsetLoc; // 0x1e4 | Schema_Atomic | Size: 0xc
-			float32 m_flWorldTimeScale; // 0x1f0 | Schema_Builtin | Size: 0x4
+			float32 m_flOffset; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseScale; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseScaleLoc; // 0x1f0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecOffsetLoc; // 0x1f4 | Schema_Atomic | Size: 0xc
+			float32 m_flWorldTimeScale; // 0x200 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_nFieldOutput) == 0x1C8, "m_nFieldOutput in C_INIT_CreationNoise should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_bAbsVal) == 0x1CC, "m_bAbsVal in C_INIT_CreationNoise should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_bAbsValInv) == 0x1CD, "m_bAbsValInv in C_INIT_CreationNoise should be at offset 0x1CD");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flOffset) == 0x1D0, "m_flOffset in C_INIT_CreationNoise should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flOutputMin) == 0x1D4, "m_flOutputMin in C_INIT_CreationNoise should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flOutputMax) == 0x1D8, "m_flOutputMax in C_INIT_CreationNoise should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flNoiseScale) == 0x1DC, "m_flNoiseScale in C_INIT_CreationNoise should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flNoiseScaleLoc) == 0x1E0, "m_flNoiseScaleLoc in C_INIT_CreationNoise should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_vecOffsetLoc) == 0x1E4, "m_vecOffsetLoc in C_INIT_CreationNoise should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flWorldTimeScale) == 0x1F0, "m_flWorldTimeScale in C_INIT_CreationNoise should be at offset 0x1F0");
-		static_assert(sizeof(CS2::particles::C_INIT_CreationNoise) == 0x1F8, "C_INIT_CreationNoise size should be 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_INIT_CreationNoise should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_bAbsVal) == 0x1DC, "m_bAbsVal in C_INIT_CreationNoise should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_bAbsValInv) == 0x1DD, "m_bAbsValInv in C_INIT_CreationNoise should be at offset 0x1DD");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flOffset) == 0x1E0, "m_flOffset in C_INIT_CreationNoise should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flOutputMin) == 0x1E4, "m_flOutputMin in C_INIT_CreationNoise should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_INIT_CreationNoise should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flNoiseScale) == 0x1EC, "m_flNoiseScale in C_INIT_CreationNoise should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flNoiseScaleLoc) == 0x1F0, "m_flNoiseScaleLoc in C_INIT_CreationNoise should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_vecOffsetLoc) == 0x1F4, "m_vecOffsetLoc in C_INIT_CreationNoise should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flWorldTimeScale) == 0x200, "m_flWorldTimeScale in C_INIT_CreationNoise should be at offset 0x200");
+		static_assert(sizeof(CS2::particles::C_INIT_CreationNoise) == 0x208, "C_INIT_CreationNoise size should be 0x208");
 	}
 }

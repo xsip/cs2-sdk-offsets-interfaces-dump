@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x11E8
+			// Class size: 0x1210
 			namespace CIncendiaryGrenade /*: public CS2::server::CMolotovGrenade*/ {
 				// NO SCHEMA DATA FOUND!
 			}

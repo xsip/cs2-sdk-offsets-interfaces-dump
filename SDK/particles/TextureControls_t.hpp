@@ -14,40 +14,40 @@ namespace CS2 {
 	namespace particles {
 		class TextureControls_t  {
 		public:
-			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureScaleU; // 0x0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureScaleV; // 0x160 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureOffsetU; // 0x2c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureOffsetV; // 0x420 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureUVRotation; // 0x580 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flZoomScale; // 0x6e0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flDistortion; // 0x840 | Schema_DeclaredClass | Size: 0x160
-			bool m_bRandomizeOffsets; // 0x9a0 | Schema_Builtin | Size: 0x1
-			bool m_bClampUVs; // 0x9a1 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureScaleU; // 0x0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureScaleV; // 0x170 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureOffsetU; // 0x2e0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureOffsetV; // 0x450 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flFinalTextureUVRotation; // 0x5c0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flZoomScale; // 0x730 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flDistortion; // 0x8a0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bRandomizeOffsets; // 0xa10 | Schema_Builtin | Size: 0x1
+			bool m_bClampUVs; // 0xa11 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::SpriteCardPerParticleScale_t m_nPerParticleBlend; // 0x9a4 | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardPerParticleScale_t m_nPerParticleScale; // 0x9a8 | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardPerParticleScale_t m_nPerParticleOffsetU; // 0x9ac | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardPerParticleScale_t m_nPerParticleOffsetV; // 0x9b0 | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardPerParticleScale_t m_nPerParticleRotation; // 0x9b4 | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardPerParticleScale_t m_nPerParticleZoom; // 0x9b8 | Schema_DeclaredEnum | Size: 0x4
-			particles::SpriteCardPerParticleScale_t m_nPerParticleDistortion; // 0x9bc | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleBlend; // 0xa14 | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleScale; // 0xa18 | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleOffsetU; // 0xa1c | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleOffsetV; // 0xa20 | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleRotation; // 0xa24 | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleZoom; // 0xa28 | Schema_DeclaredEnum | Size: 0x4
+			particles::SpriteCardPerParticleScale_t m_nPerParticleDistortion; // 0xa2c | Schema_DeclaredEnum | Size: 0x4
 		};
 		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureScaleU) == 0x0, "m_flFinalTextureScaleU in TextureControls_t should be at offset 0x0");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureScaleV) == 0x160, "m_flFinalTextureScaleV in TextureControls_t should be at offset 0x160");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureOffsetU) == 0x2C0, "m_flFinalTextureOffsetU in TextureControls_t should be at offset 0x2C0");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureOffsetV) == 0x420, "m_flFinalTextureOffsetV in TextureControls_t should be at offset 0x420");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureUVRotation) == 0x580, "m_flFinalTextureUVRotation in TextureControls_t should be at offset 0x580");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_flZoomScale) == 0x6E0, "m_flZoomScale in TextureControls_t should be at offset 0x6E0");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_flDistortion) == 0x840, "m_flDistortion in TextureControls_t should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_bRandomizeOffsets) == 0x9A0, "m_bRandomizeOffsets in TextureControls_t should be at offset 0x9A0");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_bClampUVs) == 0x9A1, "m_bClampUVs in TextureControls_t should be at offset 0x9A1");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleBlend) == 0x9A4, "m_nPerParticleBlend in TextureControls_t should be at offset 0x9A4");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleScale) == 0x9A8, "m_nPerParticleScale in TextureControls_t should be at offset 0x9A8");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleOffsetU) == 0x9AC, "m_nPerParticleOffsetU in TextureControls_t should be at offset 0x9AC");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleOffsetV) == 0x9B0, "m_nPerParticleOffsetV in TextureControls_t should be at offset 0x9B0");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleRotation) == 0x9B4, "m_nPerParticleRotation in TextureControls_t should be at offset 0x9B4");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleZoom) == 0x9B8, "m_nPerParticleZoom in TextureControls_t should be at offset 0x9B8");
-		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleDistortion) == 0x9BC, "m_nPerParticleDistortion in TextureControls_t should be at offset 0x9BC");
-		static_assert(sizeof(CS2::particles::TextureControls_t) == 0x9C0, "TextureControls_t size should be 0x9C0");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureScaleV) == 0x170, "m_flFinalTextureScaleV in TextureControls_t should be at offset 0x170");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureOffsetU) == 0x2E0, "m_flFinalTextureOffsetU in TextureControls_t should be at offset 0x2E0");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureOffsetV) == 0x450, "m_flFinalTextureOffsetV in TextureControls_t should be at offset 0x450");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureUVRotation) == 0x5C0, "m_flFinalTextureUVRotation in TextureControls_t should be at offset 0x5C0");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_flZoomScale) == 0x730, "m_flZoomScale in TextureControls_t should be at offset 0x730");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_flDistortion) == 0x8A0, "m_flDistortion in TextureControls_t should be at offset 0x8A0");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_bRandomizeOffsets) == 0xA10, "m_bRandomizeOffsets in TextureControls_t should be at offset 0xA10");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_bClampUVs) == 0xA11, "m_bClampUVs in TextureControls_t should be at offset 0xA11");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleBlend) == 0xA14, "m_nPerParticleBlend in TextureControls_t should be at offset 0xA14");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleScale) == 0xA18, "m_nPerParticleScale in TextureControls_t should be at offset 0xA18");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleOffsetU) == 0xA1C, "m_nPerParticleOffsetU in TextureControls_t should be at offset 0xA1C");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleOffsetV) == 0xA20, "m_nPerParticleOffsetV in TextureControls_t should be at offset 0xA20");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleRotation) == 0xA24, "m_nPerParticleRotation in TextureControls_t should be at offset 0xA24");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleZoom) == 0xA28, "m_nPerParticleZoom in TextureControls_t should be at offset 0xA28");
+		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleDistortion) == 0xA2C, "m_nPerParticleDistortion in TextureControls_t should be at offset 0xA2C");
+		static_assert(sizeof(CS2::particles::TextureControls_t) == 0xA30, "TextureControls_t size should be 0xA30");
 	}
 }

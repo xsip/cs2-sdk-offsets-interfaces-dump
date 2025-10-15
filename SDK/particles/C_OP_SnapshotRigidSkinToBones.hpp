@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SnapshotRigidSkinToBones : public CS2::particles::CParticleFunctionOperator {
 		public:
-			bool m_bTransformNormals; // 0x1c0 | Schema_Builtin | Size: 0x1
-			bool m_bTransformRadii; // 0x1c1 | Schema_Builtin | Size: 0x1
+			bool m_bTransformNormals; // 0x1d0 | Schema_Builtin | Size: 0x1
+			bool m_bTransformRadii; // 0x1d1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nControlPointNumber; // 0x1c4 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1d4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SnapshotRigidSkinToBones, m_bTransformNormals) == 0x1C0, "m_bTransformNormals in C_OP_SnapshotRigidSkinToBones should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_SnapshotRigidSkinToBones, m_bTransformRadii) == 0x1C1, "m_bTransformRadii in C_OP_SnapshotRigidSkinToBones should be at offset 0x1C1");
-		static_assert(offsetof(CS2::particles::C_OP_SnapshotRigidSkinToBones, m_nControlPointNumber) == 0x1C4, "m_nControlPointNumber in C_OP_SnapshotRigidSkinToBones should be at offset 0x1C4");
-		static_assert(sizeof(CS2::particles::C_OP_SnapshotRigidSkinToBones) == 0x1C8, "C_OP_SnapshotRigidSkinToBones size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::C_OP_SnapshotRigidSkinToBones, m_bTransformNormals) == 0x1D0, "m_bTransformNormals in C_OP_SnapshotRigidSkinToBones should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SnapshotRigidSkinToBones, m_bTransformRadii) == 0x1D1, "m_bTransformRadii in C_OP_SnapshotRigidSkinToBones should be at offset 0x1D1");
+		static_assert(offsetof(CS2::particles::C_OP_SnapshotRigidSkinToBones, m_nControlPointNumber) == 0x1D4, "m_nControlPointNumber in C_OP_SnapshotRigidSkinToBones should be at offset 0x1D4");
+		static_assert(sizeof(CS2::particles::C_OP_SnapshotRigidSkinToBones) == 0x1D8, "C_OP_SnapshotRigidSkinToBones size should be 0x1D8");
 	}
 }

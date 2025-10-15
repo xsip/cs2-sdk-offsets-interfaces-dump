@@ -24,7 +24,7 @@ namespace CS2 {
 			float32 m_flFireInterval; // 0x504 | Schema_Builtin | Size: 0x4
 			float32 m_flLastAngVelocity; // 0x508 | Schema_Builtin | Size: 0x4
 			GlobalTypes::QAngle m_lastOrientation; // 0x50c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecAxis; // 0x518 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecAxis; // 0x518 | Schema_Atomic | Size: 0xc
 			bool m_bUseHelper; // 0x524 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			// GlobalTypes::CEntityOutputTemplate< float32 > m_AngularVelocity; // 0x528 | Schema_Atomic | Size: 0x28

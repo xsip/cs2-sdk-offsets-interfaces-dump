@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xB58
+			// Class size: 0xBD8
 			namespace TextureGroup_t /**/ {
 				constexpr std::ptrdiff_t m_bEnabled = 0x0; // bool m_bEnabled; |  0x0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bReplaceTextureWithGradient = 0x1; // bool m_bReplaceTextureWithGradient; |  0x1 | Schema_Builtin | Size: 0x1
@@ -17,8 +17,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nTextureType = 0x28; // particles::SpriteCardTextureType_t m_nTextureType; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nTextureChannels = 0x2c; // particles::SpriteCardTextureChannel_t m_nTextureChannels; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nTextureBlendMode = 0x30; // particles::ParticleTextureLayerBlendType_t m_nTextureBlendMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flTextureBlend = 0x38; // particleslib::CParticleCollectionRendererFloatInput m_flTextureBlend; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_TextureControls = 0x198; // particles::TextureControls_t m_TextureControls; |  Schema_DeclaredClass | Size: 0x9c0
+				constexpr std::ptrdiff_t m_flTextureBlend = 0x38; // particleslib::CParticleCollectionRendererFloatInput m_flTextureBlend; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_TextureControls = 0x1a8; // particles::TextureControls_t m_TextureControls; |  Schema_DeclaredClass | Size: 0xa30
 			}
 		}
 	}

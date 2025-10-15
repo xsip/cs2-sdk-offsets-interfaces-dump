@@ -15,12 +15,12 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_QuantizeFloat : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleFloatInput m_InputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x328 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CPerParticleFloatInput m_InputValue; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x348 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_QuantizeFloat, m_InputValue) == 0x1C8, "m_InputValue in C_INIT_QuantizeFloat should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_QuantizeFloat, m_nOutputField) == 0x328, "m_nOutputField in C_INIT_QuantizeFloat should be at offset 0x328");
-		static_assert(sizeof(CS2::particles::C_INIT_QuantizeFloat) == 0x330, "C_INIT_QuantizeFloat size should be 0x330");
+		static_assert(offsetof(CS2::particles::C_INIT_QuantizeFloat, m_InputValue) == 0x1D8, "m_InputValue in C_INIT_QuantizeFloat should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_QuantizeFloat, m_nOutputField) == 0x348, "m_nOutputField in C_INIT_QuantizeFloat should be at offset 0x348");
+		static_assert(sizeof(CS2::particles::C_INIT_QuantizeFloat) == 0x350, "C_INIT_QuantizeFloat size should be 0x350");
 	}
 }

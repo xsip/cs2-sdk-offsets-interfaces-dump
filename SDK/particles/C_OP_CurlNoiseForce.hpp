@@ -16,22 +16,22 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CurlNoiseForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			particles::ParticleDirectionNoiseType_t m_nNoiseType; // 0x1d0 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleDirectionNoiseType_t m_nNoiseType; // 0x1e0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleVecInput m_vecNoiseFreq; // 0x1d8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecNoiseScale; // 0x850 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecOffset; // 0xec8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecOffsetRate; // 0x1540 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flWorleySeed; // 0x1bb8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flWorleyJitter; // 0x1d18 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleVecInput m_vecNoiseFreq; // 0x1e8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecNoiseScale; // 0x8a0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecOffset; // 0xf58 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecOffsetRate; // 0x1610 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flWorleySeed; // 0x1cc8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flWorleyJitter; // 0x1e38 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_nNoiseType) == 0x1D0, "m_nNoiseType in C_OP_CurlNoiseForce should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecNoiseFreq) == 0x1D8, "m_vecNoiseFreq in C_OP_CurlNoiseForce should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecNoiseScale) == 0x850, "m_vecNoiseScale in C_OP_CurlNoiseForce should be at offset 0x850");
-		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecOffset) == 0xEC8, "m_vecOffset in C_OP_CurlNoiseForce should be at offset 0xEC8");
-		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecOffsetRate) == 0x1540, "m_vecOffsetRate in C_OP_CurlNoiseForce should be at offset 0x1540");
-		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_flWorleySeed) == 0x1BB8, "m_flWorleySeed in C_OP_CurlNoiseForce should be at offset 0x1BB8");
-		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_flWorleyJitter) == 0x1D18, "m_flWorleyJitter in C_OP_CurlNoiseForce should be at offset 0x1D18");
-		static_assert(sizeof(CS2::particles::C_OP_CurlNoiseForce) == 0x1E78, "C_OP_CurlNoiseForce size should be 0x1E78");
+		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_nNoiseType) == 0x1E0, "m_nNoiseType in C_OP_CurlNoiseForce should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecNoiseFreq) == 0x1E8, "m_vecNoiseFreq in C_OP_CurlNoiseForce should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecNoiseScale) == 0x8A0, "m_vecNoiseScale in C_OP_CurlNoiseForce should be at offset 0x8A0");
+		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecOffset) == 0xF58, "m_vecOffset in C_OP_CurlNoiseForce should be at offset 0xF58");
+		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecOffsetRate) == 0x1610, "m_vecOffsetRate in C_OP_CurlNoiseForce should be at offset 0x1610");
+		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_flWorleySeed) == 0x1CC8, "m_flWorleySeed in C_OP_CurlNoiseForce should be at offset 0x1CC8");
+		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_flWorleyJitter) == 0x1E38, "m_flWorleyJitter in C_OP_CurlNoiseForce should be at offset 0x1E38");
+		static_assert(sizeof(CS2::particles::C_OP_CurlNoiseForce) == 0x1FA8, "C_OP_CurlNoiseForce size should be 0x1FA8");
 	}
 }

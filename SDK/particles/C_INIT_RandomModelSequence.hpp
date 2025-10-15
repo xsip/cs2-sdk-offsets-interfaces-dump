@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomModelSequence : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			char m_ActivityName[256]; // 0x1c8 | Schema_FixedArray | Size: 0x100
-			char m_SequenceName[256]; // 0x2c8 | Schema_FixedArray | Size: 0x100
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x3c8 | Schema_Atomic | Size: 0x8
-			char  m_hModel[0x8]; // 0x3c8 | Schema_Atomic | Size: 0x8
+			char m_ActivityName[256]; // 0x1d8 | Schema_FixedArray | Size: 0x100
+			char m_SequenceName[256]; // 0x2d8 | Schema_FixedArray | Size: 0x100
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x3d8 | Schema_Atomic | Size: 0x8
+			char  m_hModel[0x8]; // 0x3d8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_ActivityName) == 0x1C8, "m_ActivityName in C_INIT_RandomModelSequence should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_SequenceName) == 0x2C8, "m_SequenceName in C_INIT_RandomModelSequence should be at offset 0x2C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_hModel) == 0x3C8, "m_hModel in C_INIT_RandomModelSequence should be at offset 0x3C8");
-		static_assert(sizeof(CS2::particles::C_INIT_RandomModelSequence) == 0x3D0, "C_INIT_RandomModelSequence size should be 0x3D0");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_ActivityName) == 0x1D8, "m_ActivityName in C_INIT_RandomModelSequence should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_SequenceName) == 0x2D8, "m_SequenceName in C_INIT_RandomModelSequence should be at offset 0x2D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_hModel) == 0x3D8, "m_hModel in C_INIT_RandomModelSequence should be at offset 0x3D8");
+		static_assert(sizeof(CS2::particles::C_INIT_RandomModelSequence) == 0x3E0, "C_INIT_RandomModelSequence size should be 0x3E0");
 	}
 }

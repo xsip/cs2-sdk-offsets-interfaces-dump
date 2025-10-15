@@ -14,15 +14,15 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomVectorComponent : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			float32 m_flMin; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flMax; // 0x1cc | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nComponent; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flMin; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flMax; // 0x1dc | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e0 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nComponent; // 0x1e4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_flMin) == 0x1C8, "m_flMin in C_INIT_RandomVectorComponent should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_flMax) == 0x1CC, "m_flMax in C_INIT_RandomVectorComponent should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_INIT_RandomVectorComponent should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_nComponent) == 0x1D4, "m_nComponent in C_INIT_RandomVectorComponent should be at offset 0x1D4");
-		static_assert(sizeof(CS2::particles::C_INIT_RandomVectorComponent) == 0x1D8, "C_INIT_RandomVectorComponent size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_flMin) == 0x1D8, "m_flMin in C_INIT_RandomVectorComponent should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_flMax) == 0x1DC, "m_flMax in C_INIT_RandomVectorComponent should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_nFieldOutput) == 0x1E0, "m_nFieldOutput in C_INIT_RandomVectorComponent should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomVectorComponent, m_nComponent) == 0x1E4, "m_nComponent in C_INIT_RandomVectorComponent should be at offset 0x1E4");
+		static_assert(sizeof(CS2::particles::C_INIT_RandomVectorComponent) == 0x1E8, "C_INIT_RandomVectorComponent size should be 0x1E8");
 	}
 }

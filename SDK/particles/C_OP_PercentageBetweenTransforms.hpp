@@ -16,29 +16,29 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_PercentageBetweenTransforms : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flInputMin; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1d0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flInputMin; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleTransformInput m_TransformStart; // 0x1d8 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CParticleTransformInput m_TransformEnd; // 0x240 | Schema_DeclaredClass | Size: 0x68
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x2a8 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bActiveRange; // 0x2ac | Schema_Builtin | Size: 0x1
-			bool m_bRadialCheck; // 0x2ad | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformStart; // 0x1e8 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CParticleTransformInput m_TransformEnd; // 0x250 | Schema_DeclaredClass | Size: 0x68
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x2b8 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bActiveRange; // 0x2bc | Schema_Builtin | Size: 0x1
+			bool m_bRadialCheck; // 0x2bd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_PercentageBetweenTransforms should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flInputMin) == 0x1C4, "m_flInputMin in C_OP_PercentageBetweenTransforms should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flInputMax) == 0x1C8, "m_flInputMax in C_OP_PercentageBetweenTransforms should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flOutputMin) == 0x1CC, "m_flOutputMin in C_OP_PercentageBetweenTransforms should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flOutputMax) == 0x1D0, "m_flOutputMax in C_OP_PercentageBetweenTransforms should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_TransformStart) == 0x1D8, "m_TransformStart in C_OP_PercentageBetweenTransforms should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_TransformEnd) == 0x240, "m_TransformEnd in C_OP_PercentageBetweenTransforms should be at offset 0x240");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_nSetMethod) == 0x2A8, "m_nSetMethod in C_OP_PercentageBetweenTransforms should be at offset 0x2A8");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_bActiveRange) == 0x2AC, "m_bActiveRange in C_OP_PercentageBetweenTransforms should be at offset 0x2AC");
-		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_bRadialCheck) == 0x2AD, "m_bRadialCheck in C_OP_PercentageBetweenTransforms should be at offset 0x2AD");
-		static_assert(sizeof(CS2::particles::C_OP_PercentageBetweenTransforms) == 0x2B0, "C_OP_PercentageBetweenTransforms size should be 0x2B0");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_PercentageBetweenTransforms should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flInputMin) == 0x1D4, "m_flInputMin in C_OP_PercentageBetweenTransforms should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flInputMax) == 0x1D8, "m_flInputMax in C_OP_PercentageBetweenTransforms should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flOutputMin) == 0x1DC, "m_flOutputMin in C_OP_PercentageBetweenTransforms should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flOutputMax) == 0x1E0, "m_flOutputMax in C_OP_PercentageBetweenTransforms should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_TransformStart) == 0x1E8, "m_TransformStart in C_OP_PercentageBetweenTransforms should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_TransformEnd) == 0x250, "m_TransformEnd in C_OP_PercentageBetweenTransforms should be at offset 0x250");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_nSetMethod) == 0x2B8, "m_nSetMethod in C_OP_PercentageBetweenTransforms should be at offset 0x2B8");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_bActiveRange) == 0x2BC, "m_bActiveRange in C_OP_PercentageBetweenTransforms should be at offset 0x2BC");
+		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_bRadialCheck) == 0x2BD, "m_bRadialCheck in C_OP_PercentageBetweenTransforms should be at offset 0x2BD");
+		static_assert(sizeof(CS2::particles::C_OP_PercentageBetweenTransforms) == 0x2C0, "C_OP_PercentageBetweenTransforms size should be 0x2C0");
 	}
 }

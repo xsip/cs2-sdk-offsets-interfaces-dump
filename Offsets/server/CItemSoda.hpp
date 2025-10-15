@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA80
+			// Class size: 0xA90
 			namespace CItemSoda /*: public CS2::server::CBaseAnimGraph*/ {
 				// NO SCHEMA DATA FOUND!
 			}

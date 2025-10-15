@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_FuncMoveLinear : public CS2::client::C_BaseToggle {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_FuncMoveLinear) == 0xEC8, "C_FuncMoveLinear size should be 0xEC8");
+		static_assert(sizeof(CS2::client::C_FuncMoveLinear) == 0xEB0, "C_FuncMoveLinear size should be 0xEB0");
 	}
 }

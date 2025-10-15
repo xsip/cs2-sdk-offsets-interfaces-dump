@@ -15,17 +15,17 @@ namespace CS2 {
 		class C_INIT_RemapInitialVisibilityScalar : public CS2::particles::CParticleFunctionInitializer {
 		public:
 			S2_PAD(0x4);
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1cc | Schema_DeclaredClass | Size: 0x4
-			float32 m_flInputMin; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1dc | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc | Schema_DeclaredClass | Size: 0x4
+			float32 m_flInputMin; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1ec | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_nFieldOutput) == 0x1CC, "m_nFieldOutput in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flInputMin) == 0x1D0, "m_flInputMin in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flInputMax) == 0x1D4, "m_flInputMax in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flOutputMin) == 0x1D8, "m_flOutputMin in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flOutputMax) == 0x1DC, "m_flOutputMax in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1DC");
-		static_assert(sizeof(CS2::particles::C_INIT_RemapInitialVisibilityScalar) == 0x1E0, "C_INIT_RemapInitialVisibilityScalar size should be 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_nFieldOutput) == 0x1DC, "m_nFieldOutput in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flInputMin) == 0x1E0, "m_flInputMin in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flInputMax) == 0x1E4, "m_flInputMax in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flOutputMin) == 0x1E8, "m_flOutputMin in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialVisibilityScalar, m_flOutputMax) == 0x1EC, "m_flOutputMax in C_INIT_RemapInitialVisibilityScalar should be at offset 0x1EC");
+		static_assert(sizeof(CS2::particles::C_INIT_RemapInitialVisibilityScalar) == 0x1F0, "C_INIT_RemapInitialVisibilityScalar size should be 0x1F0");
 	}
 }

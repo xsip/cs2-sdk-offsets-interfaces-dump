@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particleslib {
-			// Class size: 0x160
+			// Class size: 0x170
 			namespace CParticleCollectionRendererFloatInput /*: public CS2::particleslib::CParticleCollectionFloatInput*/ {
 				// NO SCHEMA DATA FOUND!
 			}

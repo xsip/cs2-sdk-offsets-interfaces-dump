@@ -16,24 +16,24 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_WaterImpulseRenderer : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particleslib::CPerParticleVecInput m_vecPos; // 0x210 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flRadius; // 0x888 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flMagnitude; // 0x9e8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flShape; // 0xb48 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flWindSpeed; // 0xca8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flWobble; // 0xe08 | Schema_DeclaredClass | Size: 0x160
-			bool m_bIsRadialWind; // 0xf68 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vecPos; // 0x220 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flRadius; // 0x8d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flMagnitude; // 0xa48 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flShape; // 0xbb8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flWindSpeed; // 0xd28 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flWobble; // 0xe98 | Schema_DeclaredClass | Size: 0x170
+			bool m_bIsRadialWind; // 0x1008 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::EventTypeSelection_t m_nEventType; // 0xf6c | Schema_DeclaredEnum | Size: 0x4
+			particles::EventTypeSelection_t m_nEventType; // 0x100c | Schema_DeclaredEnum | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_vecPos) == 0x210, "m_vecPos in C_OP_WaterImpulseRenderer should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flRadius) == 0x888, "m_flRadius in C_OP_WaterImpulseRenderer should be at offset 0x888");
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flMagnitude) == 0x9E8, "m_flMagnitude in C_OP_WaterImpulseRenderer should be at offset 0x9E8");
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flShape) == 0xB48, "m_flShape in C_OP_WaterImpulseRenderer should be at offset 0xB48");
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flWindSpeed) == 0xCA8, "m_flWindSpeed in C_OP_WaterImpulseRenderer should be at offset 0xCA8");
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flWobble) == 0xE08, "m_flWobble in C_OP_WaterImpulseRenderer should be at offset 0xE08");
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_bIsRadialWind) == 0xF68, "m_bIsRadialWind in C_OP_WaterImpulseRenderer should be at offset 0xF68");
-		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_nEventType) == 0xF6C, "m_nEventType in C_OP_WaterImpulseRenderer should be at offset 0xF6C");
-		static_assert(sizeof(CS2::particles::C_OP_WaterImpulseRenderer) == 0xF70, "C_OP_WaterImpulseRenderer size should be 0xF70");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_vecPos) == 0x220, "m_vecPos in C_OP_WaterImpulseRenderer should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flRadius) == 0x8D8, "m_flRadius in C_OP_WaterImpulseRenderer should be at offset 0x8D8");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flMagnitude) == 0xA48, "m_flMagnitude in C_OP_WaterImpulseRenderer should be at offset 0xA48");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flShape) == 0xBB8, "m_flShape in C_OP_WaterImpulseRenderer should be at offset 0xBB8");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flWindSpeed) == 0xD28, "m_flWindSpeed in C_OP_WaterImpulseRenderer should be at offset 0xD28");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flWobble) == 0xE98, "m_flWobble in C_OP_WaterImpulseRenderer should be at offset 0xE98");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_bIsRadialWind) == 0x1008, "m_bIsRadialWind in C_OP_WaterImpulseRenderer should be at offset 0x1008");
+		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_nEventType) == 0x100C, "m_nEventType in C_OP_WaterImpulseRenderer should be at offset 0x100C");
+		static_assert(sizeof(CS2::particles::C_OP_WaterImpulseRenderer) == 0x1010, "C_OP_WaterImpulseRenderer size should be 0x1010");
 	}
 }

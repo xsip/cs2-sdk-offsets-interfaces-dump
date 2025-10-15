@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x898
+			// Class size: 0x880
 			namespace CBasePlatTrain /*: public CS2::server::CBaseToggle*/ {
-				constexpr std::ptrdiff_t m_NoiseMoving = 0x870; // GlobalTypes::CUtlSymbolLarge m_NoiseMoving; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_NoiseArrived = 0x878; // GlobalTypes::CUtlSymbolLarge m_NoiseArrived; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_volume = 0x888; // float32 m_volume; |  0x888 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTWidth = 0x88c; // float32 m_flTWidth; |  0x88c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTLength = 0x890; // float32 m_flTLength; |  0x890 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_NoiseMoving = 0x858; // GlobalTypes::CUtlSymbolLarge m_NoiseMoving; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_NoiseArrived = 0x860; // GlobalTypes::CUtlSymbolLarge m_NoiseArrived; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_volume = 0x870; // float32 m_volume; |  0x870 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTWidth = 0x874; // float32 m_flTWidth; |  0x874 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTLength = 0x878; // float32 m_flTLength; |  0x878 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

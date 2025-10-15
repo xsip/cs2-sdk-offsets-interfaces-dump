@@ -16,38 +16,38 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateOnModelAtHeight : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			bool m_bUseBones; // 0x1c8 | Schema_Builtin | Size: 0x1
-			bool m_bForceZ; // 0x1c9 | Schema_Builtin | Size: 0x1
+			bool m_bUseBones; // 0x1d8 | Schema_Builtin | Size: 0x1
+			bool m_bForceZ; // 0x1d9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nControlPointNumber; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nHeightCP; // 0x1d0 | Schema_Builtin | Size: 0x4
-			bool m_bUseWaterHeight; // 0x1d4 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumber; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nHeightCP; // 0x1e0 | Schema_Builtin | Size: 0x4
+			bool m_bUseWaterHeight; // 0x1e4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particleslib::CParticleCollectionFloatInput m_flDesiredHeight; // 0x1d8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x338 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleCollectionVecInput m_vecDirectionBias; // 0x9b0 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleHitboxBiasType_t m_nBiasType; // 0x1028 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bLocalCoords; // 0x102c | Schema_Builtin | Size: 0x1
-			bool m_bPreferMovingBoxes; // 0x102d | Schema_Builtin | Size: 0x1
-			char m_HitboxSetName[128]; // 0x102e | Schema_FixedArray | Size: 0x80
+			particleslib::CParticleCollectionFloatInput m_flDesiredHeight; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionVecInput m_vecHitBoxScale; // 0x358 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleCollectionVecInput m_vecDirectionBias; // 0xa10 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleHitboxBiasType_t m_nBiasType; // 0x10c8 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bLocalCoords; // 0x10cc | Schema_Builtin | Size: 0x1
+			bool m_bPreferMovingBoxes; // 0x10cd | Schema_Builtin | Size: 0x1
+			char m_HitboxSetName[128]; // 0x10ce | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x2);
-			particleslib::CParticleCollectionFloatInput m_flHitboxVelocityScale; // 0x10b0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flMaxBoneVelocity; // 0x1210 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flHitboxVelocityScale; // 0x1150 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flMaxBoneVelocity; // 0x12c0 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bUseBones) == 0x1C8, "m_bUseBones in C_INIT_CreateOnModelAtHeight should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bForceZ) == 0x1C9, "m_bForceZ in C_INIT_CreateOnModelAtHeight should be at offset 0x1C9");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_nControlPointNumber) == 0x1CC, "m_nControlPointNumber in C_INIT_CreateOnModelAtHeight should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_nHeightCP) == 0x1D0, "m_nHeightCP in C_INIT_CreateOnModelAtHeight should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bUseWaterHeight) == 0x1D4, "m_bUseWaterHeight in C_INIT_CreateOnModelAtHeight should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flDesiredHeight) == 0x1D8, "m_flDesiredHeight in C_INIT_CreateOnModelAtHeight should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_vecHitBoxScale) == 0x338, "m_vecHitBoxScale in C_INIT_CreateOnModelAtHeight should be at offset 0x338");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_vecDirectionBias) == 0x9B0, "m_vecDirectionBias in C_INIT_CreateOnModelAtHeight should be at offset 0x9B0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_nBiasType) == 0x1028, "m_nBiasType in C_INIT_CreateOnModelAtHeight should be at offset 0x1028");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bLocalCoords) == 0x102C, "m_bLocalCoords in C_INIT_CreateOnModelAtHeight should be at offset 0x102C");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bPreferMovingBoxes) == 0x102D, "m_bPreferMovingBoxes in C_INIT_CreateOnModelAtHeight should be at offset 0x102D");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_HitboxSetName) == 0x102E, "m_HitboxSetName in C_INIT_CreateOnModelAtHeight should be at offset 0x102E");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flHitboxVelocityScale) == 0x10B0, "m_flHitboxVelocityScale in C_INIT_CreateOnModelAtHeight should be at offset 0x10B0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flMaxBoneVelocity) == 0x1210, "m_flMaxBoneVelocity in C_INIT_CreateOnModelAtHeight should be at offset 0x1210");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateOnModelAtHeight) == 0x1370, "C_INIT_CreateOnModelAtHeight size should be 0x1370");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bUseBones) == 0x1D8, "m_bUseBones in C_INIT_CreateOnModelAtHeight should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bForceZ) == 0x1D9, "m_bForceZ in C_INIT_CreateOnModelAtHeight should be at offset 0x1D9");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_nControlPointNumber) == 0x1DC, "m_nControlPointNumber in C_INIT_CreateOnModelAtHeight should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_nHeightCP) == 0x1E0, "m_nHeightCP in C_INIT_CreateOnModelAtHeight should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bUseWaterHeight) == 0x1E4, "m_bUseWaterHeight in C_INIT_CreateOnModelAtHeight should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flDesiredHeight) == 0x1E8, "m_flDesiredHeight in C_INIT_CreateOnModelAtHeight should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_vecHitBoxScale) == 0x358, "m_vecHitBoxScale in C_INIT_CreateOnModelAtHeight should be at offset 0x358");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_vecDirectionBias) == 0xA10, "m_vecDirectionBias in C_INIT_CreateOnModelAtHeight should be at offset 0xA10");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_nBiasType) == 0x10C8, "m_nBiasType in C_INIT_CreateOnModelAtHeight should be at offset 0x10C8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bLocalCoords) == 0x10CC, "m_bLocalCoords in C_INIT_CreateOnModelAtHeight should be at offset 0x10CC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bPreferMovingBoxes) == 0x10CD, "m_bPreferMovingBoxes in C_INIT_CreateOnModelAtHeight should be at offset 0x10CD");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_HitboxSetName) == 0x10CE, "m_HitboxSetName in C_INIT_CreateOnModelAtHeight should be at offset 0x10CE");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flHitboxVelocityScale) == 0x1150, "m_flHitboxVelocityScale in C_INIT_CreateOnModelAtHeight should be at offset 0x1150");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flMaxBoneVelocity) == 0x12C0, "m_flMaxBoneVelocity in C_INIT_CreateOnModelAtHeight should be at offset 0x12C0");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateOnModelAtHeight) == 0x1430, "C_INIT_CreateOnModelAtHeight size should be 0x1430");
 	}
 }

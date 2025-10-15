@@ -15,51 +15,51 @@ namespace CS2 {
 	namespace server {
 		class CEnvBeam : public CS2::server::CBeam {
 		public:
-			int32_t m_active; // 0x890 | Schema_Builtin | Size: 0x4
+			int32_t m_active; // 0x878 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_spriteTexture; // 0x898 | Schema_Atomic | Size: 0x8
-			char  m_spriteTexture[0x8]; // 0x898 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszStartEntity; // 0x8a0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszEndEntity; // 0x8a8 | Schema_Atomic | Size: 0x8
-			float32 m_life; // 0x8b0 | Schema_Builtin | Size: 0x4
-			float32 m_boltWidth; // 0x8b4 | Schema_Builtin | Size: 0x4
-			float32 m_noiseAmplitude; // 0x8b8 | Schema_Builtin | Size: 0x4
-			int32_t m_speed; // 0x8bc | Schema_Builtin | Size: 0x4
-			float32 m_restrike; // 0x8c0 | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_spriteTexture; // 0x880 | Schema_Atomic | Size: 0x8
+			char  m_spriteTexture[0x8]; // 0x880 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszStartEntity; // 0x888 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszEndEntity; // 0x890 | Schema_Atomic | Size: 0x8
+			float32 m_life; // 0x898 | Schema_Builtin | Size: 0x4
+			float32 m_boltWidth; // 0x89c | Schema_Builtin | Size: 0x4
+			float32 m_noiseAmplitude; // 0x8a0 | Schema_Builtin | Size: 0x4
+			int32_t m_speed; // 0x8a4 | Schema_Builtin | Size: 0x4
+			float32 m_restrike; // 0x8a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszSpriteName; // 0x8c8 | Schema_Atomic | Size: 0x8
-			int32_t m_frameStart; // 0x8d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vEndPointWorld; // 0x8d4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vEndPointRelative; // 0x8e0 | Schema_Atomic | Size: 0xc
-			float32 m_radius; // 0x8ec | Schema_Builtin | Size: 0x4
-			server::Touch_t m_TouchType; // 0x8f0 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszSpriteName; // 0x8b0 | Schema_Atomic | Size: 0x8
+			int32_t m_frameStart; // 0x8b8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::VectorWS m_vEndPointWorld; // 0x8bc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vEndPointRelative; // 0x8c8 | Schema_Atomic | Size: 0xc
+			float32 m_radius; // 0x8d4 | Schema_Builtin | Size: 0x4
+			server::Touch_t m_TouchType; // 0x8d8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x8f8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hFilter; // 0x900 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x900 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x8e0 | Schema_Atomic | Size: 0x8
+			// server::CHandle< server::CBaseEntity > m_hFilter; // 0x8e8 | Schema_Atomic | Size: 0x4
+			char  m_hFilter[0x4]; // 0x8e8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszDecal; // 0x908 | Schema_Atomic | Size: 0x8
-			entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x910 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_iszDecal; // 0x8f0 | Schema_Atomic | Size: 0x8
+			entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x8f8 | Schema_DeclaredClass | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CEnvBeam, m_active) == 0x890, "m_active in CEnvBeam should be at offset 0x890");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_spriteTexture) == 0x898, "m_spriteTexture in CEnvBeam should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_iszStartEntity) == 0x8A0, "m_iszStartEntity in CEnvBeam should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_iszEndEntity) == 0x8A8, "m_iszEndEntity in CEnvBeam should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_life) == 0x8B0, "m_life in CEnvBeam should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_boltWidth) == 0x8B4, "m_boltWidth in CEnvBeam should be at offset 0x8B4");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_noiseAmplitude) == 0x8B8, "m_noiseAmplitude in CEnvBeam should be at offset 0x8B8");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_speed) == 0x8BC, "m_speed in CEnvBeam should be at offset 0x8BC");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_restrike) == 0x8C0, "m_restrike in CEnvBeam should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_iszSpriteName) == 0x8C8, "m_iszSpriteName in CEnvBeam should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_frameStart) == 0x8D0, "m_frameStart in CEnvBeam should be at offset 0x8D0");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_vEndPointWorld) == 0x8D4, "m_vEndPointWorld in CEnvBeam should be at offset 0x8D4");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_vEndPointRelative) == 0x8E0, "m_vEndPointRelative in CEnvBeam should be at offset 0x8E0");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_radius) == 0x8EC, "m_radius in CEnvBeam should be at offset 0x8EC");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_TouchType) == 0x8F0, "m_TouchType in CEnvBeam should be at offset 0x8F0");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_iFilterName) == 0x8F8, "m_iFilterName in CEnvBeam should be at offset 0x8F8");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_hFilter) == 0x900, "m_hFilter in CEnvBeam should be at offset 0x900");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_iszDecal) == 0x908, "m_iszDecal in CEnvBeam should be at offset 0x908");
-		static_assert(offsetof(CS2::server::CEnvBeam, m_OnTouchedByEntity) == 0x910, "m_OnTouchedByEntity in CEnvBeam should be at offset 0x910");
-		static_assert(sizeof(CS2::server::CEnvBeam) == 0x938, "CEnvBeam size should be 0x938");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_active) == 0x878, "m_active in CEnvBeam should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_spriteTexture) == 0x880, "m_spriteTexture in CEnvBeam should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_iszStartEntity) == 0x888, "m_iszStartEntity in CEnvBeam should be at offset 0x888");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_iszEndEntity) == 0x890, "m_iszEndEntity in CEnvBeam should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_life) == 0x898, "m_life in CEnvBeam should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_boltWidth) == 0x89C, "m_boltWidth in CEnvBeam should be at offset 0x89C");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_noiseAmplitude) == 0x8A0, "m_noiseAmplitude in CEnvBeam should be at offset 0x8A0");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_speed) == 0x8A4, "m_speed in CEnvBeam should be at offset 0x8A4");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_restrike) == 0x8A8, "m_restrike in CEnvBeam should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_iszSpriteName) == 0x8B0, "m_iszSpriteName in CEnvBeam should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_frameStart) == 0x8B8, "m_frameStart in CEnvBeam should be at offset 0x8B8");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_vEndPointWorld) == 0x8BC, "m_vEndPointWorld in CEnvBeam should be at offset 0x8BC");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_vEndPointRelative) == 0x8C8, "m_vEndPointRelative in CEnvBeam should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_radius) == 0x8D4, "m_radius in CEnvBeam should be at offset 0x8D4");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_TouchType) == 0x8D8, "m_TouchType in CEnvBeam should be at offset 0x8D8");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_iFilterName) == 0x8E0, "m_iFilterName in CEnvBeam should be at offset 0x8E0");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_hFilter) == 0x8E8, "m_hFilter in CEnvBeam should be at offset 0x8E8");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_iszDecal) == 0x8F0, "m_iszDecal in CEnvBeam should be at offset 0x8F0");
+		static_assert(offsetof(CS2::server::CEnvBeam, m_OnTouchedByEntity) == 0x8F8, "m_OnTouchedByEntity in CEnvBeam should be at offset 0x8F8");
+		static_assert(sizeof(CS2::server::CEnvBeam) == 0x920, "CEnvBeam size should be 0x920");
 	}
 }

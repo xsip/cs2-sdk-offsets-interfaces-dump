@@ -8,23 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x960
+			// Class size: 0x9C0
 			namespace C_INIT_DistanceToCPInit /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMin = 0x1d0; // particleslib::CPerParticleFloatInput m_flInputMin; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flInputMax = 0x330; // particleslib::CPerParticleFloatInput m_flInputMax; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOutputMin = 0x490; // particleslib::CPerParticleFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOutputMax = 0x5f0; // particleslib::CPerParticleFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nStartCP = 0x750; // int32_t m_nStartCP; |  0x750 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bLOS = 0x754; // bool m_bLOS; |  0x754 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_CollisionGroupName = 0x755; // char m_CollisionGroupName[128]; |  0x755 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nTraceSet = 0x7d8; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxTraceLength = 0x7e0; // particleslib::CPerParticleFloatInput m_flMaxTraceLength; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flLOSScale = 0x940; // float32 m_flLOSScale; |  0x940 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x944; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bActiveRange = 0x948; // bool m_bActiveRange; |  0x948 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecDistanceScale = 0x94c; // GlobalTypes::Vector m_vecDistanceScale; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flRemapBias = 0x958; // float32 m_flRemapBias; |  0x958 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputMin = 0x1e0; // particleslib::CPerParticleFloatInput m_flInputMin; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInputMax = 0x350; // particleslib::CPerParticleFloatInput m_flInputMax; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMin = 0x4c0; // particleslib::CPerParticleFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMax = 0x630; // particleslib::CPerParticleFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nStartCP = 0x7a0; // int32_t m_nStartCP; |  0x7a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bLOS = 0x7a4; // bool m_bLOS; |  0x7a4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_CollisionGroupName = 0x7a5; // char m_CollisionGroupName[128]; |  0x7a5 | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_nTraceSet = 0x828; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxTraceLength = 0x830; // particleslib::CPerParticleFloatInput m_flMaxTraceLength; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flLOSScale = 0x9a0; // float32 m_flLOSScale; |  0x9a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x9a4; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bActiveRange = 0x9a8; // bool m_bActiveRange; |  0x9a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecDistanceScale = 0x9ac; // GlobalTypes::Vector m_vecDistanceScale; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flRemapBias = 0x9b8; // float32 m_flRemapBias; |  0x9b8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CKnife : public CS2::server::CCSWeaponBase {
 		public:
-			bool m_bFirstAttack; // 0x11a8 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x7); // End padding
+			bool m_bFirstAttack; // 0x11d0 | Schema_Builtin | Size: 0x1
+			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::server::CKnife, m_bFirstAttack) == 0x11A8, "m_bFirstAttack in CKnife should be at offset 0x11A8");
-		static_assert(sizeof(CS2::server::CKnife) == 0x11B0, "CKnife size should be 0x11B0");
+		static_assert(offsetof(CS2::server::CKnife, m_bFirstAttack) == 0x11D0, "m_bFirstAttack in CKnife should be at offset 0x11D0");
+		static_assert(sizeof(CS2::server::CKnife) == 0x11E0, "CKnife size should be 0x11E0");
 	}
 }

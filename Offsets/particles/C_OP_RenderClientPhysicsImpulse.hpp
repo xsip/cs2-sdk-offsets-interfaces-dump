@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x4D8
+			// Class size: 0x508
 			namespace C_OP_RenderClientPhysicsImpulse /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_flRadius = 0x210; // particleslib::CPerParticleFloatInput m_flRadius; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flMagnitude = 0x370; // particleslib::CPerParticleFloatInput m_flMagnitude; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nSimIdFilter = 0x4d0; // int32_t m_nSimIdFilter; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadius = 0x220; // particleslib::CPerParticleFloatInput m_flRadius; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMagnitude = 0x390; // particleslib::CPerParticleFloatInput m_flMagnitude; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nSimIdFilter = 0x500; // int32_t m_nSimIdFilter; |  0x500 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

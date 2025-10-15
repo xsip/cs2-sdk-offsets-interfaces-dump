@@ -14,7 +14,7 @@ namespace CS2 {
 		class CPhysLength : public CS2::server::CPhysConstraint {
 		public:
 			GlobalTypes::Vector m_offset[2]; // 0x560 | Schema_FixedArray | Size: 0x18
-			GlobalTypes::Vector m_vecAttach; // 0x578 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecAttach; // 0x578 | Schema_Atomic | Size: 0xc
 			float32 m_addLength; // 0x584 | Schema_Builtin | Size: 0x4
 			float32 m_minLength; // 0x588 | Schema_Builtin | Size: 0x4
 			float32 m_totalLength; // 0x58c | Schema_Builtin | Size: 0x4

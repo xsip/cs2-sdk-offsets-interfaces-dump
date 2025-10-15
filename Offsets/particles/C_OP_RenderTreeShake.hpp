@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x238
+			// Class size: 0x248
 			namespace C_OP_RenderTreeShake /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_flPeakStrength = 0x210; // float32 m_flPeakStrength; |  0x210 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nPeakStrengthFieldOverride = 0x214; // particles::ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadius = 0x218; // float32 m_flRadius; |  0x218 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRadiusFieldOverride = 0x21c; // particles::ParticleAttributeIndex_t m_nRadiusFieldOverride; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flShakeDuration = 0x220; // float32 m_flShakeDuration; |  0x220 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTransitionTime = 0x224; // float32 m_flTransitionTime; |  0x224 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTwistAmount = 0x228; // float32 m_flTwistAmount; |  0x228 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadialAmount = 0x22c; // float32 m_flRadialAmount; |  0x22c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flControlPointOrientationAmount = 0x230; // float32 m_flControlPointOrientationAmount; |  0x230 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nControlPointForLinearDirection = 0x234; // int32_t m_nControlPointForLinearDirection; |  0x234 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPeakStrength = 0x220; // float32 m_flPeakStrength; |  0x220 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nPeakStrengthFieldOverride = 0x224; // particles::ParticleAttributeIndex_t m_nPeakStrengthFieldOverride; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadius = 0x228; // float32 m_flRadius; |  0x228 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRadiusFieldOverride = 0x22c; // particles::ParticleAttributeIndex_t m_nRadiusFieldOverride; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flShakeDuration = 0x230; // float32 m_flShakeDuration; |  0x230 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTransitionTime = 0x234; // float32 m_flTransitionTime; |  0x234 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTwistAmount = 0x238; // float32 m_flTwistAmount; |  0x238 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadialAmount = 0x23c; // float32 m_flRadialAmount; |  0x23c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flControlPointOrientationAmount = 0x240; // float32 m_flControlPointOrientationAmount; |  0x240 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPointForLinearDirection = 0x244; // int32_t m_nControlPointForLinearDirection; |  0x244 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

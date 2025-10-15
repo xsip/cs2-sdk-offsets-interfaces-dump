@@ -16,23 +16,23 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderLightBeam : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particleslib::CParticleCollectionVecInput m_vColorBlend; // 0x210 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x888 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vColorBlend; // 0x220 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x8d8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flBrightnessLumensPerMeter; // 0x890 | Schema_DeclaredClass | Size: 0x160
-			bool m_bCastShadows; // 0x9f0 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flBrightnessLumensPerMeter; // 0x8e0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bCastShadows; // 0xa50 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CParticleCollectionFloatInput m_flSkirt; // 0x9f8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flRange; // 0xb58 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flThickness; // 0xcb8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flSkirt; // 0xa58 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flRange; // 0xbc8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flThickness; // 0xd38 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_vColorBlend) == 0x210, "m_vColorBlend in C_OP_RenderLightBeam should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_nColorBlendType) == 0x888, "m_nColorBlendType in C_OP_RenderLightBeam should be at offset 0x888");
-		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flBrightnessLumensPerMeter) == 0x890, "m_flBrightnessLumensPerMeter in C_OP_RenderLightBeam should be at offset 0x890");
-		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_bCastShadows) == 0x9F0, "m_bCastShadows in C_OP_RenderLightBeam should be at offset 0x9F0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flSkirt) == 0x9F8, "m_flSkirt in C_OP_RenderLightBeam should be at offset 0x9F8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flRange) == 0xB58, "m_flRange in C_OP_RenderLightBeam should be at offset 0xB58");
-		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flThickness) == 0xCB8, "m_flThickness in C_OP_RenderLightBeam should be at offset 0xCB8");
-		static_assert(sizeof(CS2::particles::C_OP_RenderLightBeam) == 0xE18, "C_OP_RenderLightBeam size should be 0xE18");
+		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_vColorBlend) == 0x220, "m_vColorBlend in C_OP_RenderLightBeam should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_nColorBlendType) == 0x8D8, "m_nColorBlendType in C_OP_RenderLightBeam should be at offset 0x8D8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flBrightnessLumensPerMeter) == 0x8E0, "m_flBrightnessLumensPerMeter in C_OP_RenderLightBeam should be at offset 0x8E0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_bCastShadows) == 0xA50, "m_bCastShadows in C_OP_RenderLightBeam should be at offset 0xA50");
+		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flSkirt) == 0xA58, "m_flSkirt in C_OP_RenderLightBeam should be at offset 0xA58");
+		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flRange) == 0xBC8, "m_flRange in C_OP_RenderLightBeam should be at offset 0xBC8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flThickness) == 0xD38, "m_flThickness in C_OP_RenderLightBeam should be at offset 0xD38");
+		static_assert(sizeof(CS2::particles::C_OP_RenderLightBeam) == 0xEA8, "C_OP_RenderLightBeam size should be 0xEA8");
 	}
 }

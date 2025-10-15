@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x590
 			namespace CPhysPulley /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_position2 = 0x560; // GlobalTypes::Vector m_position2; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_position2 = 0x560; // GlobalTypes::VectorWS m_position2; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_offset = 0x56c; // GlobalTypes::Vector m_offset[2]; |  Schema_FixedArray | Size: 0x18
 				constexpr std::ptrdiff_t m_addLength = 0x584; // float32 m_addLength; |  0x584 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_gearRatio = 0x588; // float32 m_gearRatio; |  0x588 | Schema_Builtin | Size: 0x4

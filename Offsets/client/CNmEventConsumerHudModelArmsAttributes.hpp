@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x40
+			// Class size: 0x58
 			namespace CNmEventConsumerHudModelArmsAttributes /*: public CS2::client::CNmEventConsumerAttributes*/ {
 				// NO SCHEMA DATA FOUND!
 			}

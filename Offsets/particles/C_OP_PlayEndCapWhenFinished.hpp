@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1D0
+			// Class size: 0x1E0
 			namespace C_OP_PlayEndCapWhenFinished /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_bFireOnEmissionEnd = 0x1c8; // bool m_bFireOnEmissionEnd; |  0x1c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIncludeChildren = 0x1c9; // bool m_bIncludeChildren; |  0x1c9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFireOnEmissionEnd = 0x1d8; // bool m_bFireOnEmissionEnd; |  0x1d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIncludeChildren = 0x1d9; // bool m_bIncludeChildren; |  0x1d9 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

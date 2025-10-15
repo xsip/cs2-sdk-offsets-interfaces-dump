@@ -8,8 +8,8 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace animationsystem {
-			constexpr std::ptrdiff_t AnimationSystemUtils_001 = 0x7c5830; 
-			constexpr std::ptrdiff_t AnimationSystem_001 = 0x7bd750; 
+			constexpr std::ptrdiff_t AnimationSystemUtils_001 = 0x7c2b30; 
+			constexpr std::ptrdiff_t AnimationSystem_001 = 0x7baa50; 
 		}
 	}
 }

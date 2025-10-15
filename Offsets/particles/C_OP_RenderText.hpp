@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x220
+			// Class size: 0x230
 			namespace C_OP_RenderText /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_OutlineColor = 0x210; // GlobalTypes::Color m_OutlineColor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_DefaultText = 0x218; // GlobalTypes::CUtlString m_DefaultText; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OutlineColor = 0x220; // GlobalTypes::Color m_OutlineColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_DefaultText = 0x228; // GlobalTypes::CUtlString m_DefaultText; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

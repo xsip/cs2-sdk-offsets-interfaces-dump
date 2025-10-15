@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB58
+			// Class size: 0xB70
 			namespace CItem /*: public CS2::server::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_OnPlayerTouch = 0xa88; // entity2::CEntityIOOutput m_OnPlayerTouch; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPlayerPickup = 0xab0; // entity2::CEntityIOOutput m_OnPlayerPickup; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bActivateWhenAtRest = 0xad8; // bool m_bActivateWhenAtRest; |  0xad8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnCacheInteraction = 0xae0; // entity2::CEntityIOOutput m_OnCacheInteraction; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnGlovePulled = 0xb08; // entity2::CEntityIOOutput m_OnGlovePulled; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_vOriginalSpawnOrigin = 0xb30; // GlobalTypes::Vector m_vOriginalSpawnOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOriginalSpawnAngles = 0xb3c; // GlobalTypes::QAngle m_vOriginalSpawnAngles; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bPhysStartAsleep = 0xb48; // bool m_bPhysStartAsleep; |  0xb48 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnPlayerTouch = 0xa98; // entity2::CEntityIOOutput m_OnPlayerTouch; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPlayerPickup = 0xac0; // entity2::CEntityIOOutput m_OnPlayerPickup; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_bActivateWhenAtRest = 0xae8; // bool m_bActivateWhenAtRest; |  0xae8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnCacheInteraction = 0xaf0; // entity2::CEntityIOOutput m_OnCacheInteraction; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnGlovePulled = 0xb18; // entity2::CEntityIOOutput m_OnGlovePulled; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_vOriginalSpawnOrigin = 0xb40; // GlobalTypes::VectorWS m_vOriginalSpawnOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOriginalSpawnAngles = 0xb4c; // GlobalTypes::QAngle m_vOriginalSpawnAngles; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bPhysStartAsleep = 0xb58; // bool m_bPhysStartAsleep; |  0xb58 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

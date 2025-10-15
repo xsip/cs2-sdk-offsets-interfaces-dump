@@ -14,46 +14,46 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_StatusEffectCitadel : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			float32 m_flSFXColorWarpAmount; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXNormalAmount; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flSFXMetalnessAmount; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXRoughnessAmount; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSelfIllumAmount; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSScale; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSScrollX; // 0x1e0 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSScrollY; // 0x1e4 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSScrollZ; // 0x1e8 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSOffsetX; // 0x1ec | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSOffsetY; // 0x1f0 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSOffsetZ; // 0x1f4 | Schema_Builtin | Size: 0x4
-			particles::DetailCombo_t m_nDetailCombo; // 0x1f8 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flSFXSDetailAmount; // 0x1fc | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSDetailScale; // 0x200 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSDetailScrollX; // 0x204 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSDetailScrollY; // 0x208 | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSDetailScrollZ; // 0x20c | Schema_Builtin | Size: 0x4
-			float32 m_flSFXSUseModelUVs; // 0x210 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXColorWarpAmount; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXNormalAmount; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flSFXMetalnessAmount; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXRoughnessAmount; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSelfIllumAmount; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSScale; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSScrollX; // 0x1f0 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSScrollY; // 0x1f4 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSScrollZ; // 0x1f8 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSOffsetX; // 0x1fc | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSOffsetY; // 0x200 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSOffsetZ; // 0x204 | Schema_Builtin | Size: 0x4
+			particles::DetailCombo_t m_nDetailCombo; // 0x208 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flSFXSDetailAmount; // 0x20c | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSDetailScale; // 0x210 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSDetailScrollX; // 0x214 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSDetailScrollY; // 0x218 | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSDetailScrollZ; // 0x21c | Schema_Builtin | Size: 0x4
+			float32 m_flSFXSUseModelUVs; // 0x220 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXColorWarpAmount) == 0x1C8, "m_flSFXColorWarpAmount in C_INIT_StatusEffectCitadel should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXNormalAmount) == 0x1CC, "m_flSFXNormalAmount in C_INIT_StatusEffectCitadel should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXMetalnessAmount) == 0x1D0, "m_flSFXMetalnessAmount in C_INIT_StatusEffectCitadel should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXRoughnessAmount) == 0x1D4, "m_flSFXRoughnessAmount in C_INIT_StatusEffectCitadel should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSelfIllumAmount) == 0x1D8, "m_flSFXSelfIllumAmount in C_INIT_StatusEffectCitadel should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScale) == 0x1DC, "m_flSFXSScale in C_INIT_StatusEffectCitadel should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScrollX) == 0x1E0, "m_flSFXSScrollX in C_INIT_StatusEffectCitadel should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScrollY) == 0x1E4, "m_flSFXSScrollY in C_INIT_StatusEffectCitadel should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScrollZ) == 0x1E8, "m_flSFXSScrollZ in C_INIT_StatusEffectCitadel should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSOffsetX) == 0x1EC, "m_flSFXSOffsetX in C_INIT_StatusEffectCitadel should be at offset 0x1EC");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSOffsetY) == 0x1F0, "m_flSFXSOffsetY in C_INIT_StatusEffectCitadel should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSOffsetZ) == 0x1F4, "m_flSFXSOffsetZ in C_INIT_StatusEffectCitadel should be at offset 0x1F4");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_nDetailCombo) == 0x1F8, "m_nDetailCombo in C_INIT_StatusEffectCitadel should be at offset 0x1F8");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailAmount) == 0x1FC, "m_flSFXSDetailAmount in C_INIT_StatusEffectCitadel should be at offset 0x1FC");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScale) == 0x200, "m_flSFXSDetailScale in C_INIT_StatusEffectCitadel should be at offset 0x200");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScrollX) == 0x204, "m_flSFXSDetailScrollX in C_INIT_StatusEffectCitadel should be at offset 0x204");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScrollY) == 0x208, "m_flSFXSDetailScrollY in C_INIT_StatusEffectCitadel should be at offset 0x208");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScrollZ) == 0x20C, "m_flSFXSDetailScrollZ in C_INIT_StatusEffectCitadel should be at offset 0x20C");
-		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSUseModelUVs) == 0x210, "m_flSFXSUseModelUVs in C_INIT_StatusEffectCitadel should be at offset 0x210");
-		static_assert(sizeof(CS2::particles::C_INIT_StatusEffectCitadel) == 0x218, "C_INIT_StatusEffectCitadel size should be 0x218");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXColorWarpAmount) == 0x1D8, "m_flSFXColorWarpAmount in C_INIT_StatusEffectCitadel should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXNormalAmount) == 0x1DC, "m_flSFXNormalAmount in C_INIT_StatusEffectCitadel should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXMetalnessAmount) == 0x1E0, "m_flSFXMetalnessAmount in C_INIT_StatusEffectCitadel should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXRoughnessAmount) == 0x1E4, "m_flSFXRoughnessAmount in C_INIT_StatusEffectCitadel should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSelfIllumAmount) == 0x1E8, "m_flSFXSelfIllumAmount in C_INIT_StatusEffectCitadel should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScale) == 0x1EC, "m_flSFXSScale in C_INIT_StatusEffectCitadel should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScrollX) == 0x1F0, "m_flSFXSScrollX in C_INIT_StatusEffectCitadel should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScrollY) == 0x1F4, "m_flSFXSScrollY in C_INIT_StatusEffectCitadel should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSScrollZ) == 0x1F8, "m_flSFXSScrollZ in C_INIT_StatusEffectCitadel should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSOffsetX) == 0x1FC, "m_flSFXSOffsetX in C_INIT_StatusEffectCitadel should be at offset 0x1FC");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSOffsetY) == 0x200, "m_flSFXSOffsetY in C_INIT_StatusEffectCitadel should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSOffsetZ) == 0x204, "m_flSFXSOffsetZ in C_INIT_StatusEffectCitadel should be at offset 0x204");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_nDetailCombo) == 0x208, "m_nDetailCombo in C_INIT_StatusEffectCitadel should be at offset 0x208");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailAmount) == 0x20C, "m_flSFXSDetailAmount in C_INIT_StatusEffectCitadel should be at offset 0x20C");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScale) == 0x210, "m_flSFXSDetailScale in C_INIT_StatusEffectCitadel should be at offset 0x210");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScrollX) == 0x214, "m_flSFXSDetailScrollX in C_INIT_StatusEffectCitadel should be at offset 0x214");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScrollY) == 0x218, "m_flSFXSDetailScrollY in C_INIT_StatusEffectCitadel should be at offset 0x218");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScrollZ) == 0x21C, "m_flSFXSDetailScrollZ in C_INIT_StatusEffectCitadel should be at offset 0x21C");
+		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSUseModelUVs) == 0x220, "m_flSFXSUseModelUVs in C_INIT_StatusEffectCitadel should be at offset 0x220");
+		static_assert(sizeof(CS2::particles::C_INIT_StatusEffectCitadel) == 0x228, "C_INIT_StatusEffectCitadel size should be 0x228");
 	}
 }

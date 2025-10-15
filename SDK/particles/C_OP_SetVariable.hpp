@@ -17,19 +17,19 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetVariable : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particleslib::CParticleVariableRef m_variableReference; // 0x1c8 | Schema_DeclaredClass | Size: 0x40
-			particleslib::CParticleTransformInput m_transformInput; // 0x208 | Schema_DeclaredClass | Size: 0x68
-			GlobalTypes::Vector m_positionOffset; // 0x270 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_rotationOffset; // 0x27c | Schema_Atomic | Size: 0xc
-			particleslib::CParticleCollectionVecInput m_vecInput; // 0x288 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleCollectionFloatInput m_floatInput; // 0x900 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleVariableRef m_variableReference; // 0x1d8 | Schema_DeclaredClass | Size: 0x50
+			particleslib::CParticleTransformInput m_transformInput; // 0x228 | Schema_DeclaredClass | Size: 0x68
+			GlobalTypes::Vector m_positionOffset; // 0x290 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_rotationOffset; // 0x29c | Schema_Atomic | Size: 0xc
+			particleslib::CParticleCollectionVecInput m_vecInput; // 0x2a8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleCollectionFloatInput m_floatInput; // 0x960 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_variableReference) == 0x1C8, "m_variableReference in C_OP_SetVariable should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_transformInput) == 0x208, "m_transformInput in C_OP_SetVariable should be at offset 0x208");
-		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_positionOffset) == 0x270, "m_positionOffset in C_OP_SetVariable should be at offset 0x270");
-		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_rotationOffset) == 0x27C, "m_rotationOffset in C_OP_SetVariable should be at offset 0x27C");
-		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_vecInput) == 0x288, "m_vecInput in C_OP_SetVariable should be at offset 0x288");
-		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_floatInput) == 0x900, "m_floatInput in C_OP_SetVariable should be at offset 0x900");
-		static_assert(sizeof(CS2::particles::C_OP_SetVariable) == 0xA60, "C_OP_SetVariable size should be 0xA60");
+		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_variableReference) == 0x1D8, "m_variableReference in C_OP_SetVariable should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_transformInput) == 0x228, "m_transformInput in C_OP_SetVariable should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_positionOffset) == 0x290, "m_positionOffset in C_OP_SetVariable should be at offset 0x290");
+		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_rotationOffset) == 0x29C, "m_rotationOffset in C_OP_SetVariable should be at offset 0x29C");
+		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_vecInput) == 0x2A8, "m_vecInput in C_OP_SetVariable should be at offset 0x2A8");
+		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_floatInput) == 0x960, "m_floatInput in C_OP_SetVariable should be at offset 0x960");
+		static_assert(sizeof(CS2::particles::C_OP_SetVariable) == 0xAD0, "C_OP_SetVariable size should be 0xAD0");
 	}
 }

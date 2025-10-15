@@ -16,50 +16,50 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderTrails : public CS2::particles::CBaseTrailRenderer {
 		public:
-			bool m_bEnableFadingAndClamping; // 0x2ef0 | Schema_Builtin | Size: 0x1
+			bool m_bEnableFadingAndClamping; // 0x30e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flStartFadeDot; // 0x2ef4 | Schema_Builtin | Size: 0x4
-			float32 m_flEndFadeDot; // 0x2ef8 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nPrevPntSource; // 0x2efc | Schema_DeclaredClass | Size: 0x4
-			float32 m_flMaxLength; // 0x2f00 | Schema_Builtin | Size: 0x4
-			float32 m_flMinLength; // 0x2f04 | Schema_Builtin | Size: 0x4
-			bool m_bIgnoreDT; // 0x2f08 | Schema_Builtin | Size: 0x1
+			float32 m_flStartFadeDot; // 0x30e4 | Schema_Builtin | Size: 0x4
+			float32 m_flEndFadeDot; // 0x30e8 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nPrevPntSource; // 0x30ec | Schema_DeclaredClass | Size: 0x4
+			float32 m_flMaxLength; // 0x30f0 | Schema_Builtin | Size: 0x4
+			float32 m_flMinLength; // 0x30f4 | Schema_Builtin | Size: 0x4
+			bool m_bIgnoreDT; // 0x30f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flConstrainRadiusToLengthRatio; // 0x2f0c | Schema_Builtin | Size: 0x4
-			float32 m_flLengthScale; // 0x2f10 | Schema_Builtin | Size: 0x4
-			float32 m_flLengthFadeInTime; // 0x2f14 | Schema_Builtin | Size: 0x4
-			particleslib::CPerParticleFloatInput m_flRadiusHeadTaper; // 0x2f18 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionVecInput m_vecHeadColorScale; // 0x3078 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flHeadAlphaScale; // 0x36f0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRadiusTaper; // 0x3850 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionVecInput m_vecTailColorScale; // 0x39b0 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flTailAlphaScale; // 0x4028 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nHorizCropField; // 0x4188 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nVertCropField; // 0x418c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flForwardShift; // 0x4190 | Schema_Builtin | Size: 0x4
-			bool m_bFlipUVBasedOnPitchYaw; // 0x4194 | Schema_Builtin | Size: 0x1
+			float32 m_flConstrainRadiusToLengthRatio; // 0x30fc | Schema_Builtin | Size: 0x4
+			float32 m_flLengthScale; // 0x3100 | Schema_Builtin | Size: 0x4
+			float32 m_flLengthFadeInTime; // 0x3104 | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flRadiusHeadTaper; // 0x3108 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionVecInput m_vecHeadColorScale; // 0x3278 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flHeadAlphaScale; // 0x3930 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRadiusTaper; // 0x3aa0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionVecInput m_vecTailColorScale; // 0x3c10 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flTailAlphaScale; // 0x42c8 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nHorizCropField; // 0x4438 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nVertCropField; // 0x443c | Schema_DeclaredClass | Size: 0x4
+			float32 m_flForwardShift; // 0x4440 | Schema_Builtin | Size: 0x4
+			bool m_bFlipUVBasedOnPitchYaw; // 0x4444 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bEnableFadingAndClamping) == 0x2EF0, "m_bEnableFadingAndClamping in C_OP_RenderTrails should be at offset 0x2EF0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flStartFadeDot) == 0x2EF4, "m_flStartFadeDot in C_OP_RenderTrails should be at offset 0x2EF4");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flEndFadeDot) == 0x2EF8, "m_flEndFadeDot in C_OP_RenderTrails should be at offset 0x2EF8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_nPrevPntSource) == 0x2EFC, "m_nPrevPntSource in C_OP_RenderTrails should be at offset 0x2EFC");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flMaxLength) == 0x2F00, "m_flMaxLength in C_OP_RenderTrails should be at offset 0x2F00");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flMinLength) == 0x2F04, "m_flMinLength in C_OP_RenderTrails should be at offset 0x2F04");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bIgnoreDT) == 0x2F08, "m_bIgnoreDT in C_OP_RenderTrails should be at offset 0x2F08");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flConstrainRadiusToLengthRatio) == 0x2F0C, "m_flConstrainRadiusToLengthRatio in C_OP_RenderTrails should be at offset 0x2F0C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flLengthScale) == 0x2F10, "m_flLengthScale in C_OP_RenderTrails should be at offset 0x2F10");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flLengthFadeInTime) == 0x2F14, "m_flLengthFadeInTime in C_OP_RenderTrails should be at offset 0x2F14");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flRadiusHeadTaper) == 0x2F18, "m_flRadiusHeadTaper in C_OP_RenderTrails should be at offset 0x2F18");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_vecHeadColorScale) == 0x3078, "m_vecHeadColorScale in C_OP_RenderTrails should be at offset 0x3078");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flHeadAlphaScale) == 0x36F0, "m_flHeadAlphaScale in C_OP_RenderTrails should be at offset 0x36F0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flRadiusTaper) == 0x3850, "m_flRadiusTaper in C_OP_RenderTrails should be at offset 0x3850");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_vecTailColorScale) == 0x39B0, "m_vecTailColorScale in C_OP_RenderTrails should be at offset 0x39B0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flTailAlphaScale) == 0x4028, "m_flTailAlphaScale in C_OP_RenderTrails should be at offset 0x4028");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_nHorizCropField) == 0x4188, "m_nHorizCropField in C_OP_RenderTrails should be at offset 0x4188");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_nVertCropField) == 0x418C, "m_nVertCropField in C_OP_RenderTrails should be at offset 0x418C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flForwardShift) == 0x4190, "m_flForwardShift in C_OP_RenderTrails should be at offset 0x4190");
-		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bFlipUVBasedOnPitchYaw) == 0x4194, "m_bFlipUVBasedOnPitchYaw in C_OP_RenderTrails should be at offset 0x4194");
-		static_assert(sizeof(CS2::particles::C_OP_RenderTrails) == 0x4198, "C_OP_RenderTrails size should be 0x4198");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bEnableFadingAndClamping) == 0x30E0, "m_bEnableFadingAndClamping in C_OP_RenderTrails should be at offset 0x30E0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flStartFadeDot) == 0x30E4, "m_flStartFadeDot in C_OP_RenderTrails should be at offset 0x30E4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flEndFadeDot) == 0x30E8, "m_flEndFadeDot in C_OP_RenderTrails should be at offset 0x30E8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_nPrevPntSource) == 0x30EC, "m_nPrevPntSource in C_OP_RenderTrails should be at offset 0x30EC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flMaxLength) == 0x30F0, "m_flMaxLength in C_OP_RenderTrails should be at offset 0x30F0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flMinLength) == 0x30F4, "m_flMinLength in C_OP_RenderTrails should be at offset 0x30F4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bIgnoreDT) == 0x30F8, "m_bIgnoreDT in C_OP_RenderTrails should be at offset 0x30F8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flConstrainRadiusToLengthRatio) == 0x30FC, "m_flConstrainRadiusToLengthRatio in C_OP_RenderTrails should be at offset 0x30FC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flLengthScale) == 0x3100, "m_flLengthScale in C_OP_RenderTrails should be at offset 0x3100");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flLengthFadeInTime) == 0x3104, "m_flLengthFadeInTime in C_OP_RenderTrails should be at offset 0x3104");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flRadiusHeadTaper) == 0x3108, "m_flRadiusHeadTaper in C_OP_RenderTrails should be at offset 0x3108");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_vecHeadColorScale) == 0x3278, "m_vecHeadColorScale in C_OP_RenderTrails should be at offset 0x3278");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flHeadAlphaScale) == 0x3930, "m_flHeadAlphaScale in C_OP_RenderTrails should be at offset 0x3930");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flRadiusTaper) == 0x3AA0, "m_flRadiusTaper in C_OP_RenderTrails should be at offset 0x3AA0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_vecTailColorScale) == 0x3C10, "m_vecTailColorScale in C_OP_RenderTrails should be at offset 0x3C10");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flTailAlphaScale) == 0x42C8, "m_flTailAlphaScale in C_OP_RenderTrails should be at offset 0x42C8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_nHorizCropField) == 0x4438, "m_nHorizCropField in C_OP_RenderTrails should be at offset 0x4438");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_nVertCropField) == 0x443C, "m_nVertCropField in C_OP_RenderTrails should be at offset 0x443C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flForwardShift) == 0x4440, "m_flForwardShift in C_OP_RenderTrails should be at offset 0x4440");
+		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bFlipUVBasedOnPitchYaw) == 0x4444, "m_bFlipUVBasedOnPitchYaw in C_OP_RenderTrails should be at offset 0x4444");
+		static_assert(sizeof(CS2::particles::C_OP_RenderTrails) == 0x4448, "C_OP_RenderTrails size should be 0x4448");
 	}
 }

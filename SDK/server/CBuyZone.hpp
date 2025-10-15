@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class CBuyZone : public CS2::server::CBaseTrigger {
 		public:
-			int32_t m_LegacyTeamNum; // 0x9c0 | Schema_Builtin | Size: 0x4
+			int32_t m_LegacyTeamNum; // 0x9a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBuyZone, m_LegacyTeamNum) == 0x9C0, "m_LegacyTeamNum in CBuyZone should be at offset 0x9C0");
-		static_assert(sizeof(CS2::server::CBuyZone) == 0x9C8, "CBuyZone size should be 0x9C8");
+		static_assert(offsetof(CS2::server::CBuyZone, m_LegacyTeamNum) == 0x9A8, "m_LegacyTeamNum in CBuyZone should be at offset 0x9A8");
+		static_assert(sizeof(CS2::server::CBuyZone) == 0x9B0, "CBuyZone size should be 0x9B0");
 	}
 }

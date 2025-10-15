@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_PhysBox : public CS2::client::C_Breakable {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_PhysBox) == 0xEC8, "C_PhysBox size should be 0xEC8");
+		static_assert(sizeof(CS2::client::C_PhysBox) == 0xEB0, "C_PhysBox size should be 0xEB0");
 	}
 }

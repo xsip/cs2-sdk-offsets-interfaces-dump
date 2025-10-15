@@ -14,12 +14,12 @@ namespace CS2 {
 	namespace server {
 		class CGameText : public CS2::server::CRulePointEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x800 | Schema_Atomic | Size: 0x8
-			client::hudtextparms_t m_textParms; // 0x808 | Schema_DeclaredClass | Size: 0x14
+			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x7e8 | Schema_Atomic | Size: 0x8
+			client::hudtextparms_t m_textParms; // 0x7f0 | Schema_DeclaredClass | Size: 0x14
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CGameText, m_iszMessage) == 0x800, "m_iszMessage in CGameText should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CGameText, m_textParms) == 0x808, "m_textParms in CGameText should be at offset 0x808");
-		static_assert(sizeof(CS2::server::CGameText) == 0x820, "CGameText size should be 0x820");
+		static_assert(offsetof(CS2::server::CGameText, m_iszMessage) == 0x7E8, "m_iszMessage in CGameText should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CGameText, m_textParms) == 0x7F0, "m_textParms in CGameText should be at offset 0x7F0");
+		static_assert(sizeof(CS2::server::CGameText) == 0x808, "CGameText size should be 0x808");
 	}
 }

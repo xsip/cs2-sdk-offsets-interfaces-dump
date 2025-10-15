@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x320
+			// Class size: 0x340
 			namespace C_OP_DecayClampCount /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nCount = 0x1c0; // particleslib::CParticleCollectionFloatInput m_nCount; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_nCount = 0x1d0; // particleslib::CParticleCollectionFloatInput m_nCount; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

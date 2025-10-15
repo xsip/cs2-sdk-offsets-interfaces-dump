@@ -14,6 +14,6 @@ namespace CS2 {
 		class CServerRagdollTrigger : public CS2::server::CBaseTrigger {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CServerRagdollTrigger) == 0x9C0, "CServerRagdollTrigger size should be 0x9C0");
+		static_assert(sizeof(CS2::server::CServerRagdollTrigger) == 0x9A8, "CServerRagdollTrigger size should be 0x9A8");
 	}
 }

@@ -14,26 +14,26 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderScreenShake : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			float32 m_flDurationScale; // 0x210 | Schema_Builtin | Size: 0x4
-			float32 m_flRadiusScale; // 0x214 | Schema_Builtin | Size: 0x4
-			float32 m_flFrequencyScale; // 0x218 | Schema_Builtin | Size: 0x4
-			float32 m_flAmplitudeScale; // 0x21c | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nRadiusField; // 0x220 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nDurationField; // 0x224 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFrequencyField; // 0x228 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAmplitudeField; // 0x22c | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nFilterCP; // 0x230 | Schema_Builtin | Size: 0x4
+			float32 m_flDurationScale; // 0x220 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusScale; // 0x224 | Schema_Builtin | Size: 0x4
+			float32 m_flFrequencyScale; // 0x228 | Schema_Builtin | Size: 0x4
+			float32 m_flAmplitudeScale; // 0x22c | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nRadiusField; // 0x230 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nDurationField; // 0x234 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFrequencyField; // 0x238 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAmplitudeField; // 0x23c | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nFilterCP; // 0x240 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flDurationScale) == 0x210, "m_flDurationScale in C_OP_RenderScreenShake should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flRadiusScale) == 0x214, "m_flRadiusScale in C_OP_RenderScreenShake should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flFrequencyScale) == 0x218, "m_flFrequencyScale in C_OP_RenderScreenShake should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flAmplitudeScale) == 0x21C, "m_flAmplitudeScale in C_OP_RenderScreenShake should be at offset 0x21C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nRadiusField) == 0x220, "m_nRadiusField in C_OP_RenderScreenShake should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nDurationField) == 0x224, "m_nDurationField in C_OP_RenderScreenShake should be at offset 0x224");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nFrequencyField) == 0x228, "m_nFrequencyField in C_OP_RenderScreenShake should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nAmplitudeField) == 0x22C, "m_nAmplitudeField in C_OP_RenderScreenShake should be at offset 0x22C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nFilterCP) == 0x230, "m_nFilterCP in C_OP_RenderScreenShake should be at offset 0x230");
-		static_assert(sizeof(CS2::particles::C_OP_RenderScreenShake) == 0x238, "C_OP_RenderScreenShake size should be 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flDurationScale) == 0x220, "m_flDurationScale in C_OP_RenderScreenShake should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flRadiusScale) == 0x224, "m_flRadiusScale in C_OP_RenderScreenShake should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flFrequencyScale) == 0x228, "m_flFrequencyScale in C_OP_RenderScreenShake should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flAmplitudeScale) == 0x22C, "m_flAmplitudeScale in C_OP_RenderScreenShake should be at offset 0x22C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nRadiusField) == 0x230, "m_nRadiusField in C_OP_RenderScreenShake should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nDurationField) == 0x234, "m_nDurationField in C_OP_RenderScreenShake should be at offset 0x234");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nFrequencyField) == 0x238, "m_nFrequencyField in C_OP_RenderScreenShake should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nAmplitudeField) == 0x23C, "m_nAmplitudeField in C_OP_RenderScreenShake should be at offset 0x23C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nFilterCP) == 0x240, "m_nFilterCP in C_OP_RenderScreenShake should be at offset 0x240");
+		static_assert(sizeof(CS2::particles::C_OP_RenderScreenShake) == 0x248, "C_OP_RenderScreenShake size should be 0x248");
 	}
 }

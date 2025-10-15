@@ -17,27 +17,27 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DistanceBetweenVecs : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleVecInput m_vecPoint1; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecPoint2; // 0x840 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flInputMin; // 0xeb8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInputMax; // 0x1018 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x1178 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x12d8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x1438 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bDeltaTime; // 0x143c | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vecPoint1; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecPoint2; // 0x890 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flInputMin; // 0xf48 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInputMax; // 0x10b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x1228 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x1398 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x1508 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bDeltaTime; // 0x150c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_DistanceBetweenVecs should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_vecPoint1) == 0x1C8, "m_vecPoint1 in C_OP_DistanceBetweenVecs should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_vecPoint2) == 0x840, "m_vecPoint2 in C_OP_DistanceBetweenVecs should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flInputMin) == 0xEB8, "m_flInputMin in C_OP_DistanceBetweenVecs should be at offset 0xEB8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flInputMax) == 0x1018, "m_flInputMax in C_OP_DistanceBetweenVecs should be at offset 0x1018");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flOutputMin) == 0x1178, "m_flOutputMin in C_OP_DistanceBetweenVecs should be at offset 0x1178");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flOutputMax) == 0x12D8, "m_flOutputMax in C_OP_DistanceBetweenVecs should be at offset 0x12D8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_nSetMethod) == 0x1438, "m_nSetMethod in C_OP_DistanceBetweenVecs should be at offset 0x1438");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_bDeltaTime) == 0x143C, "m_bDeltaTime in C_OP_DistanceBetweenVecs should be at offset 0x143C");
-		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenVecs) == 0x1440, "C_OP_DistanceBetweenVecs size should be 0x1440");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_DistanceBetweenVecs should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_vecPoint1) == 0x1D8, "m_vecPoint1 in C_OP_DistanceBetweenVecs should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_vecPoint2) == 0x890, "m_vecPoint2 in C_OP_DistanceBetweenVecs should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flInputMin) == 0xF48, "m_flInputMin in C_OP_DistanceBetweenVecs should be at offset 0xF48");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flInputMax) == 0x10B8, "m_flInputMax in C_OP_DistanceBetweenVecs should be at offset 0x10B8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flOutputMin) == 0x1228, "m_flOutputMin in C_OP_DistanceBetweenVecs should be at offset 0x1228");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_flOutputMax) == 0x1398, "m_flOutputMax in C_OP_DistanceBetweenVecs should be at offset 0x1398");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_nSetMethod) == 0x1508, "m_nSetMethod in C_OP_DistanceBetweenVecs should be at offset 0x1508");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_bDeltaTime) == 0x150C, "m_bDeltaTime in C_OP_DistanceBetweenVecs should be at offset 0x150C");
+		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenVecs) == 0x1510, "C_OP_DistanceBetweenVecs size should be 0x1510");
 	}
 }

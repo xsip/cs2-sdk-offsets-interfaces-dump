@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace client {
 		class C_FuncTrackTrain : public CS2::client::C_BaseModelEntity {
 		public:
-			int32_t m_nLongAxis; // 0xec8 | Schema_Builtin | Size: 0x4
-			float32 m_flRadius; // 0xecc | Schema_Builtin | Size: 0x4
-			float32 m_flLineLength; // 0xed0 | Schema_Builtin | Size: 0x4
+			int32_t m_nLongAxis; // 0xeb0 | Schema_Builtin | Size: 0x4
+			float32 m_flRadius; // 0xeb4 | Schema_Builtin | Size: 0x4
+			float32 m_flLineLength; // 0xeb8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_nLongAxis) == 0xEC8, "m_nLongAxis in C_FuncTrackTrain should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_flRadius) == 0xECC, "m_flRadius in C_FuncTrackTrain should be at offset 0xECC");
-		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_flLineLength) == 0xED0, "m_flLineLength in C_FuncTrackTrain should be at offset 0xED0");
-		static_assert(sizeof(CS2::client::C_FuncTrackTrain) == 0xED8, "C_FuncTrackTrain size should be 0xED8");
+		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_nLongAxis) == 0xEB0, "m_nLongAxis in C_FuncTrackTrain should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_flRadius) == 0xEB4, "m_flRadius in C_FuncTrackTrain should be at offset 0xEB4");
+		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_flLineLength) == 0xEB8, "m_flLineLength in C_FuncTrackTrain should be at offset 0xEB8");
+		static_assert(sizeof(CS2::client::C_FuncTrackTrain) == 0xEC0, "C_FuncTrackTrain size should be 0xEC0");
 	}
 }

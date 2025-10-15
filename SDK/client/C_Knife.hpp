@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace client {
 		class C_Knife : public CS2::client::C_CSWeaponBase {
 		public:
-			bool m_bFirstAttack; // 0x1f90 | Schema_Builtin | Size: 0x1
+			bool m_bFirstAttack; // 0x1f80 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_Knife, m_bFirstAttack) == 0x1F90, "m_bFirstAttack in C_Knife should be at offset 0x1F90");
-		static_assert(sizeof(CS2::client::C_Knife) == 0x1FA0, "C_Knife size should be 0x1FA0");
+		static_assert(offsetof(CS2::client::C_Knife, m_bFirstAttack) == 0x1F80, "m_bFirstAttack in C_Knife should be at offset 0x1F80");
+		static_assert(sizeof(CS2::client::C_Knife) == 0x1F90, "C_Knife size should be 0x1F90");
 	}
 }

@@ -13,28 +13,28 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderStatusEffect : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureColorWarp; // 0x210 | Schema_Atomic | Size: 0x8
-			char  m_pTextureColorWarp[0x8]; // 0x210 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureDetail2; // 0x218 | Schema_Atomic | Size: 0x8
-			char  m_pTextureDetail2[0x8]; // 0x218 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureDiffuseWarp; // 0x220 | Schema_Atomic | Size: 0x8
-			char  m_pTextureDiffuseWarp[0x8]; // 0x220 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureFresnelColorWarp; // 0x228 | Schema_Atomic | Size: 0x8
-			char  m_pTextureFresnelColorWarp[0x8]; // 0x228 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureFresnelWarp; // 0x230 | Schema_Atomic | Size: 0x8
-			char  m_pTextureFresnelWarp[0x8]; // 0x230 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureSpecularWarp; // 0x238 | Schema_Atomic | Size: 0x8
-			char  m_pTextureSpecularWarp[0x8]; // 0x238 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureEnvMap; // 0x240 | Schema_Atomic | Size: 0x8
-			char  m_pTextureEnvMap[0x8]; // 0x240 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureColorWarp; // 0x220 | Schema_Atomic | Size: 0x8
+			char  m_pTextureColorWarp[0x8]; // 0x220 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureDetail2; // 0x228 | Schema_Atomic | Size: 0x8
+			char  m_pTextureDetail2[0x8]; // 0x228 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureDiffuseWarp; // 0x230 | Schema_Atomic | Size: 0x8
+			char  m_pTextureDiffuseWarp[0x8]; // 0x230 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureFresnelColorWarp; // 0x238 | Schema_Atomic | Size: 0x8
+			char  m_pTextureFresnelColorWarp[0x8]; // 0x238 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureFresnelWarp; // 0x240 | Schema_Atomic | Size: 0x8
+			char  m_pTextureFresnelWarp[0x8]; // 0x240 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureSpecularWarp; // 0x248 | Schema_Atomic | Size: 0x8
+			char  m_pTextureSpecularWarp[0x8]; // 0x248 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureEnvMap; // 0x250 | Schema_Atomic | Size: 0x8
+			char  m_pTextureEnvMap[0x8]; // 0x250 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureColorWarp) == 0x210, "m_pTextureColorWarp in C_OP_RenderStatusEffect should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureDetail2) == 0x218, "m_pTextureDetail2 in C_OP_RenderStatusEffect should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureDiffuseWarp) == 0x220, "m_pTextureDiffuseWarp in C_OP_RenderStatusEffect should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureFresnelColorWarp) == 0x228, "m_pTextureFresnelColorWarp in C_OP_RenderStatusEffect should be at offset 0x228");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureFresnelWarp) == 0x230, "m_pTextureFresnelWarp in C_OP_RenderStatusEffect should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureSpecularWarp) == 0x238, "m_pTextureSpecularWarp in C_OP_RenderStatusEffect should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureEnvMap) == 0x240, "m_pTextureEnvMap in C_OP_RenderStatusEffect should be at offset 0x240");
-		static_assert(sizeof(CS2::particles::C_OP_RenderStatusEffect) == 0x248, "C_OP_RenderStatusEffect size should be 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureColorWarp) == 0x220, "m_pTextureColorWarp in C_OP_RenderStatusEffect should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureDetail2) == 0x228, "m_pTextureDetail2 in C_OP_RenderStatusEffect should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureDiffuseWarp) == 0x230, "m_pTextureDiffuseWarp in C_OP_RenderStatusEffect should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureFresnelColorWarp) == 0x238, "m_pTextureFresnelColorWarp in C_OP_RenderStatusEffect should be at offset 0x238");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureFresnelWarp) == 0x240, "m_pTextureFresnelWarp in C_OP_RenderStatusEffect should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureSpecularWarp) == 0x248, "m_pTextureSpecularWarp in C_OP_RenderStatusEffect should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureEnvMap) == 0x250, "m_pTextureEnvMap in C_OP_RenderStatusEffect should be at offset 0x250");
+		static_assert(sizeof(CS2::particles::C_OP_RenderStatusEffect) == 0x258, "C_OP_RenderStatusEffect size should be 0x258");
 	}
 }

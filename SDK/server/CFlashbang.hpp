@@ -14,6 +14,6 @@ namespace CS2 {
 		class CFlashbang : public CS2::server::CBaseCSGrenade {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFlashbang) == 0x11E8, "CFlashbang size should be 0x11E8");
+		static_assert(sizeof(CS2::server::CFlashbang) == 0x1210, "CFlashbang size should be 0x1210");
 	}
 }

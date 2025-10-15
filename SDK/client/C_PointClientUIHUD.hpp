@@ -14,37 +14,37 @@ namespace CS2 {
 		class C_PointClientUIHUD : public CS2::client::C_BaseClientUIEntity {
 		public:
 			S2_PAD(0x8);
-			bool m_bCheckCSSClasses; // 0xf00 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x17f);
-			bool m_bIgnoreInput; // 0x1080 | Schema_Builtin | Size: 0x1
+			bool m_bCheckCSSClasses; // 0xee8 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x177);
+			bool m_bIgnoreInput; // 0x1060 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flWidth; // 0x1084 | Schema_Builtin | Size: 0x4
-			float32 m_flHeight; // 0x1088 | Schema_Builtin | Size: 0x4
-			float32 m_flDPI; // 0x108c | Schema_Builtin | Size: 0x4
-			float32 m_flInteractDistance; // 0x1090 | Schema_Builtin | Size: 0x4
-			float32 m_flDepthOffset; // 0x1094 | Schema_Builtin | Size: 0x4
-			uint32_t m_unOwnerContext; // 0x1098 | Schema_Builtin | Size: 0x4
-			uint32_t m_unHorizontalAlign; // 0x109c | Schema_Builtin | Size: 0x4
-			uint32_t m_unVerticalAlign; // 0x10a0 | Schema_Builtin | Size: 0x4
-			uint32_t m_unOrientation; // 0x10a4 | Schema_Builtin | Size: 0x4
-			bool m_bAllowInteractionFromAllSceneWorlds; // 0x10a8 | Schema_Builtin | Size: 0x1
+			float32 m_flWidth; // 0x1064 | Schema_Builtin | Size: 0x4
+			float32 m_flHeight; // 0x1068 | Schema_Builtin | Size: 0x4
+			float32 m_flDPI; // 0x106c | Schema_Builtin | Size: 0x4
+			float32 m_flInteractDistance; // 0x1070 | Schema_Builtin | Size: 0x4
+			float32 m_flDepthOffset; // 0x1074 | Schema_Builtin | Size: 0x4
+			uint32_t m_unOwnerContext; // 0x1078 | Schema_Builtin | Size: 0x4
+			uint32_t m_unHorizontalAlign; // 0x107c | Schema_Builtin | Size: 0x4
+			uint32_t m_unVerticalAlign; // 0x1080 | Schema_Builtin | Size: 0x4
+			uint32_t m_unOrientation; // 0x1084 | Schema_Builtin | Size: 0x4
+			bool m_bAllowInteractionFromAllSceneWorlds; // 0x1088 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x10b0 | Schema_Atomic | Size: 0x18
-			char  m_vecCSSClasses[0x18]; // 0x10b0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x1090 | Schema_Atomic | Size: 0x18
+			char  m_vecCSSClasses[0x18]; // 0x1090 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bCheckCSSClasses) == 0xF00, "m_bCheckCSSClasses in C_PointClientUIHUD should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bIgnoreInput) == 0x1080, "m_bIgnoreInput in C_PointClientUIHUD should be at offset 0x1080");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flWidth) == 0x1084, "m_flWidth in C_PointClientUIHUD should be at offset 0x1084");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flHeight) == 0x1088, "m_flHeight in C_PointClientUIHUD should be at offset 0x1088");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flDPI) == 0x108C, "m_flDPI in C_PointClientUIHUD should be at offset 0x108C");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flInteractDistance) == 0x1090, "m_flInteractDistance in C_PointClientUIHUD should be at offset 0x1090");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flDepthOffset) == 0x1094, "m_flDepthOffset in C_PointClientUIHUD should be at offset 0x1094");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unOwnerContext) == 0x1098, "m_unOwnerContext in C_PointClientUIHUD should be at offset 0x1098");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unHorizontalAlign) == 0x109C, "m_unHorizontalAlign in C_PointClientUIHUD should be at offset 0x109C");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unVerticalAlign) == 0x10A0, "m_unVerticalAlign in C_PointClientUIHUD should be at offset 0x10A0");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unOrientation) == 0x10A4, "m_unOrientation in C_PointClientUIHUD should be at offset 0x10A4");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bAllowInteractionFromAllSceneWorlds) == 0x10A8, "m_bAllowInteractionFromAllSceneWorlds in C_PointClientUIHUD should be at offset 0x10A8");
-		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_vecCSSClasses) == 0x10B0, "m_vecCSSClasses in C_PointClientUIHUD should be at offset 0x10B0");
-		static_assert(sizeof(CS2::client::C_PointClientUIHUD) == 0x10C8, "C_PointClientUIHUD size should be 0x10C8");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bCheckCSSClasses) == 0xEE8, "m_bCheckCSSClasses in C_PointClientUIHUD should be at offset 0xEE8");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bIgnoreInput) == 0x1060, "m_bIgnoreInput in C_PointClientUIHUD should be at offset 0x1060");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flWidth) == 0x1064, "m_flWidth in C_PointClientUIHUD should be at offset 0x1064");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flHeight) == 0x1068, "m_flHeight in C_PointClientUIHUD should be at offset 0x1068");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flDPI) == 0x106C, "m_flDPI in C_PointClientUIHUD should be at offset 0x106C");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flInteractDistance) == 0x1070, "m_flInteractDistance in C_PointClientUIHUD should be at offset 0x1070");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flDepthOffset) == 0x1074, "m_flDepthOffset in C_PointClientUIHUD should be at offset 0x1074");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unOwnerContext) == 0x1078, "m_unOwnerContext in C_PointClientUIHUD should be at offset 0x1078");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unHorizontalAlign) == 0x107C, "m_unHorizontalAlign in C_PointClientUIHUD should be at offset 0x107C");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unVerticalAlign) == 0x1080, "m_unVerticalAlign in C_PointClientUIHUD should be at offset 0x1080");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_unOrientation) == 0x1084, "m_unOrientation in C_PointClientUIHUD should be at offset 0x1084");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bAllowInteractionFromAllSceneWorlds) == 0x1088, "m_bAllowInteractionFromAllSceneWorlds in C_PointClientUIHUD should be at offset 0x1088");
+		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_vecCSSClasses) == 0x1090, "m_vecCSSClasses in C_PointClientUIHUD should be at offset 0x1090");
+		static_assert(sizeof(CS2::client::C_PointClientUIHUD) == 0x10A8, "C_PointClientUIHUD size should be 0x10A8");
 	}
 }

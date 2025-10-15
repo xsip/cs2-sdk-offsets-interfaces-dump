@@ -27,8 +27,8 @@ namespace CS2 {
 			particles::SpriteCardTextureChannel_t m_nTextureChannels; // 0x2c | Schema_DeclaredEnum | Size: 0x4
 			particles::ParticleTextureLayerBlendType_t m_nTextureBlendMode; // 0x30 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionRendererFloatInput m_flTextureBlend; // 0x38 | Schema_DeclaredClass | Size: 0x160
-			particles::TextureControls_t m_TextureControls; // 0x198 | Schema_DeclaredClass | Size: 0x9c0
+			particleslib::CParticleCollectionRendererFloatInput m_flTextureBlend; // 0x38 | Schema_DeclaredClass | Size: 0x170
+			particles::TextureControls_t m_TextureControls; // 0x1a8 | Schema_DeclaredClass | Size: 0xa30
 		};
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_bEnabled) == 0x0, "m_bEnabled in TextureGroup_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_bReplaceTextureWithGradient) == 0x1, "m_bReplaceTextureWithGradient in TextureGroup_t should be at offset 0x1");
@@ -38,7 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_nTextureChannels) == 0x2C, "m_nTextureChannels in TextureGroup_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_nTextureBlendMode) == 0x30, "m_nTextureBlendMode in TextureGroup_t should be at offset 0x30");
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_flTextureBlend) == 0x38, "m_flTextureBlend in TextureGroup_t should be at offset 0x38");
-		static_assert(offsetof(CS2::particles::TextureGroup_t, m_TextureControls) == 0x198, "m_TextureControls in TextureGroup_t should be at offset 0x198");
-		static_assert(sizeof(CS2::particles::TextureGroup_t) == 0xB58, "TextureGroup_t size should be 0xB58");
+		static_assert(offsetof(CS2::particles::TextureGroup_t, m_TextureControls) == 0x1A8, "m_TextureControls in TextureGroup_t should be at offset 0x1A8");
+		static_assert(sizeof(CS2::particles::TextureGroup_t) == 0xBD8, "TextureGroup_t size should be 0xBD8");
 	}
 }

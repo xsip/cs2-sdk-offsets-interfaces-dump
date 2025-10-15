@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9F8
+			// Class size: 0x9E0
 			namespace CTriggerPush /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_angPushEntitySpace = 0x9c0; // GlobalTypes::QAngle m_angPushEntitySpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPushDirEntitySpace = 0x9cc; // GlobalTypes::Vector m_vecPushDirEntitySpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bTriggerOnStartTouch = 0x9d8; // bool m_bTriggerOnStartTouch; |  0x9d8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUsePathSimple = 0x9d9; // bool m_bUsePathSimple; |  0x9d9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszPathSimpleName = 0x9e0; // GlobalTypes::CUtlSymbolLarge m_iszPathSimpleName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PathSimple = 0x9e8; // server::CPathSimple* m_PathSimple; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_splinePushType = 0x9f0; // uint32_t m_splinePushType; |  0x9f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_angPushEntitySpace = 0x9a8; // GlobalTypes::QAngle m_angPushEntitySpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPushDirEntitySpace = 0x9b4; // GlobalTypes::Vector m_vecPushDirEntitySpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bTriggerOnStartTouch = 0x9c0; // bool m_bTriggerOnStartTouch; |  0x9c0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUsePathSimple = 0x9c1; // bool m_bUsePathSimple; |  0x9c1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iszPathSimpleName = 0x9c8; // GlobalTypes::CUtlSymbolLarge m_iszPathSimpleName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PathSimple = 0x9d0; // server::CPathSimple* m_PathSimple; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_splinePushType = 0x9d8; // uint32_t m_splinePushType; |  0x9d8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

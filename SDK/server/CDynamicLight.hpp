@@ -13,25 +13,25 @@ namespace CS2 {
 	namespace server {
 		class CDynamicLight : public CS2::server::CBaseModelEntity {
 		public:
-			uint8_t m_ActualFlags; // 0x7f0 | Schema_Builtin | Size: 0x1
-			uint8_t m_Flags; // 0x7f1 | Schema_Builtin | Size: 0x1
-			uint8_t m_LightStyle; // 0x7f2 | Schema_Builtin | Size: 0x1
-			bool m_On; // 0x7f3 | Schema_Builtin | Size: 0x1
-			float32 m_Radius; // 0x7f4 | Schema_Builtin | Size: 0x4
-			int32_t m_Exponent; // 0x7f8 | Schema_Builtin | Size: 0x4
-			float32 m_InnerAngle; // 0x7fc | Schema_Builtin | Size: 0x4
-			float32 m_OuterAngle; // 0x800 | Schema_Builtin | Size: 0x4
-			float32 m_SpotRadius; // 0x804 | Schema_Builtin | Size: 0x4
+			uint8_t m_ActualFlags; // 0x7d8 | Schema_Builtin | Size: 0x1
+			uint8_t m_Flags; // 0x7d9 | Schema_Builtin | Size: 0x1
+			uint8_t m_LightStyle; // 0x7da | Schema_Builtin | Size: 0x1
+			bool m_On; // 0x7db | Schema_Builtin | Size: 0x1
+			float32 m_Radius; // 0x7dc | Schema_Builtin | Size: 0x4
+			int32_t m_Exponent; // 0x7e0 | Schema_Builtin | Size: 0x4
+			float32 m_InnerAngle; // 0x7e4 | Schema_Builtin | Size: 0x4
+			float32 m_OuterAngle; // 0x7e8 | Schema_Builtin | Size: 0x4
+			float32 m_SpotRadius; // 0x7ec | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CDynamicLight, m_ActualFlags) == 0x7F0, "m_ActualFlags in CDynamicLight should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_Flags) == 0x7F1, "m_Flags in CDynamicLight should be at offset 0x7F1");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_LightStyle) == 0x7F2, "m_LightStyle in CDynamicLight should be at offset 0x7F2");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_On) == 0x7F3, "m_On in CDynamicLight should be at offset 0x7F3");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_Radius) == 0x7F4, "m_Radius in CDynamicLight should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_Exponent) == 0x7F8, "m_Exponent in CDynamicLight should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_InnerAngle) == 0x7FC, "m_InnerAngle in CDynamicLight should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_OuterAngle) == 0x800, "m_OuterAngle in CDynamicLight should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CDynamicLight, m_SpotRadius) == 0x804, "m_SpotRadius in CDynamicLight should be at offset 0x804");
-		static_assert(sizeof(CS2::server::CDynamicLight) == 0x808, "CDynamicLight size should be 0x808");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_ActualFlags) == 0x7D8, "m_ActualFlags in CDynamicLight should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_Flags) == 0x7D9, "m_Flags in CDynamicLight should be at offset 0x7D9");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_LightStyle) == 0x7DA, "m_LightStyle in CDynamicLight should be at offset 0x7DA");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_On) == 0x7DB, "m_On in CDynamicLight should be at offset 0x7DB");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_Radius) == 0x7DC, "m_Radius in CDynamicLight should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_Exponent) == 0x7E0, "m_Exponent in CDynamicLight should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_InnerAngle) == 0x7E4, "m_InnerAngle in CDynamicLight should be at offset 0x7E4");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_OuterAngle) == 0x7E8, "m_OuterAngle in CDynamicLight should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CDynamicLight, m_SpotRadius) == 0x7EC, "m_SpotRadius in CDynamicLight should be at offset 0x7EC");
+		static_assert(sizeof(CS2::server::CDynamicLight) == 0x7F0, "CDynamicLight size should be 0x7F0");
 	}
 }

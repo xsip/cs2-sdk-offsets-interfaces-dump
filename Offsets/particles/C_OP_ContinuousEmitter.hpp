@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x618
+			// Class size: 0x658
 			namespace C_OP_ContinuousEmitter /*: public CS2::particles::CParticleFunctionEmitter*/ {
-				constexpr std::ptrdiff_t m_flEmissionDuration = 0x1c8; // particleslib::CParticleCollectionFloatInput m_flEmissionDuration; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flStartTime = 0x328; // particleslib::CParticleCollectionFloatInput m_flStartTime; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flEmitRate = 0x488; // particleslib::CParticleCollectionFloatInput m_flEmitRate; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flEmissionScale = 0x5e8; // float32 m_flEmissionScale; |  0x5e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flScalePerParentParticle = 0x5ec; // float32 m_flScalePerParentParticle; |  0x5ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bInitFromKilledParentParticles = 0x5f0; // bool m_bInitFromKilledParentParticles; |  0x5f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nEventType = 0x5f4; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x5f8; // int32_t m_nSnapshotControlPoint; |  0x5f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x600; // GlobalTypes::CUtlString m_strSnapshotSubset; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nLimitPerUpdate = 0x608; // int32_t m_nLimitPerUpdate; |  0x608 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bForceEmitOnFirstUpdate = 0x60c; // bool m_bForceEmitOnFirstUpdate; |  0x60c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bForceEmitOnLastUpdate = 0x60d; // bool m_bForceEmitOnLastUpdate; |  0x60d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flEmissionDuration = 0x1d8; // particleslib::CParticleCollectionFloatInput m_flEmissionDuration; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flStartTime = 0x348; // particleslib::CParticleCollectionFloatInput m_flStartTime; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flEmitRate = 0x4b8; // particleslib::CParticleCollectionFloatInput m_flEmitRate; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flEmissionScale = 0x628; // float32 m_flEmissionScale; |  0x628 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flScalePerParentParticle = 0x62c; // float32 m_flScalePerParentParticle; |  0x62c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bInitFromKilledParentParticles = 0x630; // bool m_bInitFromKilledParentParticles; |  0x630 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nEventType = 0x634; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x638; // int32_t m_nSnapshotControlPoint; |  0x638 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x640; // GlobalTypes::CUtlString m_strSnapshotSubset; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nLimitPerUpdate = 0x648; // int32_t m_nLimitPerUpdate; |  0x648 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bForceEmitOnFirstUpdate = 0x64c; // bool m_bForceEmitOnFirstUpdate; |  0x64c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bForceEmitOnLastUpdate = 0x64d; // bool m_bForceEmitOnLastUpdate; |  0x64d | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

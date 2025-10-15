@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RandomForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			GlobalTypes::Vector m_MinForce; // 0x1d0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_MaxForce; // 0x1dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_MinForce; // 0x1e0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_MaxForce; // 0x1ec | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RandomForce, m_MinForce) == 0x1D0, "m_MinForce in C_OP_RandomForce should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RandomForce, m_MaxForce) == 0x1DC, "m_MaxForce in C_OP_RandomForce should be at offset 0x1DC");
-		static_assert(sizeof(CS2::particles::C_OP_RandomForce) == 0x1E8, "C_OP_RandomForce size should be 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RandomForce, m_MinForce) == 0x1E0, "m_MinForce in C_OP_RandomForce should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RandomForce, m_MaxForce) == 0x1EC, "m_MaxForce in C_OP_RandomForce should be at offset 0x1EC");
+		static_assert(sizeof(CS2::particles::C_OP_RandomForce) == 0x1F8, "C_OP_RandomForce size should be 0x1F8");
 	}
 }

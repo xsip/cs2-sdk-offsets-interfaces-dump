@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x20);
 		};
-		static_assert(sizeof(CS2::particleslib::CParticleCollectionBindingInstance) == 0x130, "CParticleCollectionBindingInstance size should be 0x130");
+		static_assert(sizeof(CS2::particleslib::CParticleCollectionBindingInstance) == 0x138, "CParticleCollectionBindingInstance size should be 0x138");
 	}
 }

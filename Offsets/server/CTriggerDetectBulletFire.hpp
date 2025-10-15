@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9F0
+			// Class size: 0x9D8
 			namespace CTriggerDetectBulletFire /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_bPlayerFireOnly = 0x9c0; // bool m_bPlayerFireOnly; |  0x9c0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnDetectedBulletFire = 0x9c8; // entity2::CEntityIOOutput m_OnDetectedBulletFire; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_bPlayerFireOnly = 0x9a8; // bool m_bPlayerFireOnly; |  0x9a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnDetectedBulletFire = 0x9b0; // entity2::CEntityIOOutput m_OnDetectedBulletFire; |  Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

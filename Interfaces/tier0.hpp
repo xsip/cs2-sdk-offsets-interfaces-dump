@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace tier0 {
-			constexpr std::ptrdiff_t TestScriptMgr001 = 0x3906a0; 
-			constexpr std::ptrdiff_t VEngineCvar007 = 0x39b540; 
-			constexpr std::ptrdiff_t VProcessUtils002 = 0x390530; 
-			constexpr std::ptrdiff_t VStringTokenSystem001 = 0x3c23b0; 
+			constexpr std::ptrdiff_t TestScriptMgr001 = 0x3975a0; 
+			constexpr std::ptrdiff_t VEngineCvar007 = 0x3a2440; 
+			constexpr std::ptrdiff_t VProcessUtils002 = 0x3974e0; 
+			constexpr std::ptrdiff_t VStringTokenSystem001 = 0x3c9310; 
 		}
 	}
 }

@@ -15,39 +15,39 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LightningSnapshotGenerator : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nCPSnapshot; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nCPStartPnt; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nCPEndPnt; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nCPSnapshot; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nCPStartPnt; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nCPEndPnt; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flSegments; // 0x1d8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flOffset; // 0x338 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flOffsetDecay; // 0x498 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flRecalcRate; // 0x5f8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flUVScale; // 0x758 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flUVOffset; // 0x8b8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flSplitRate; // 0xa18 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flBranchTwist; // 0xb78 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleLightnintBranchBehavior_t m_nBranchBehavior; // 0xcd8 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flSegments; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flOffset; // 0x358 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flOffsetDecay; // 0x4c8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flRecalcRate; // 0x638 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flUVScale; // 0x7a8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flUVOffset; // 0x918 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flSplitRate; // 0xa88 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flBranchTwist; // 0xbf8 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleLightnintBranchBehavior_t m_nBranchBehavior; // 0xd68 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flRadiusStart; // 0xce0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flRadiusEnd; // 0xe40 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flDedicatedPool; // 0xfa0 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flRadiusStart; // 0xd70 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flRadiusEnd; // 0xee0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flDedicatedPool; // 0x1050 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPSnapshot) == 0x1C8, "m_nCPSnapshot in C_OP_LightningSnapshotGenerator should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPStartPnt) == 0x1CC, "m_nCPStartPnt in C_OP_LightningSnapshotGenerator should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPEndPnt) == 0x1D0, "m_nCPEndPnt in C_OP_LightningSnapshotGenerator should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flSegments) == 0x1D8, "m_flSegments in C_OP_LightningSnapshotGenerator should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flOffset) == 0x338, "m_flOffset in C_OP_LightningSnapshotGenerator should be at offset 0x338");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flOffsetDecay) == 0x498, "m_flOffsetDecay in C_OP_LightningSnapshotGenerator should be at offset 0x498");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flRecalcRate) == 0x5F8, "m_flRecalcRate in C_OP_LightningSnapshotGenerator should be at offset 0x5F8");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flUVScale) == 0x758, "m_flUVScale in C_OP_LightningSnapshotGenerator should be at offset 0x758");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flUVOffset) == 0x8B8, "m_flUVOffset in C_OP_LightningSnapshotGenerator should be at offset 0x8B8");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flSplitRate) == 0xA18, "m_flSplitRate in C_OP_LightningSnapshotGenerator should be at offset 0xA18");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flBranchTwist) == 0xB78, "m_flBranchTwist in C_OP_LightningSnapshotGenerator should be at offset 0xB78");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nBranchBehavior) == 0xCD8, "m_nBranchBehavior in C_OP_LightningSnapshotGenerator should be at offset 0xCD8");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flRadiusStart) == 0xCE0, "m_flRadiusStart in C_OP_LightningSnapshotGenerator should be at offset 0xCE0");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flRadiusEnd) == 0xE40, "m_flRadiusEnd in C_OP_LightningSnapshotGenerator should be at offset 0xE40");
-		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flDedicatedPool) == 0xFA0, "m_flDedicatedPool in C_OP_LightningSnapshotGenerator should be at offset 0xFA0");
-		static_assert(sizeof(CS2::particles::C_OP_LightningSnapshotGenerator) == 0x1100, "C_OP_LightningSnapshotGenerator size should be 0x1100");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPSnapshot) == 0x1D8, "m_nCPSnapshot in C_OP_LightningSnapshotGenerator should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPStartPnt) == 0x1DC, "m_nCPStartPnt in C_OP_LightningSnapshotGenerator should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPEndPnt) == 0x1E0, "m_nCPEndPnt in C_OP_LightningSnapshotGenerator should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flSegments) == 0x1E8, "m_flSegments in C_OP_LightningSnapshotGenerator should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flOffset) == 0x358, "m_flOffset in C_OP_LightningSnapshotGenerator should be at offset 0x358");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flOffsetDecay) == 0x4C8, "m_flOffsetDecay in C_OP_LightningSnapshotGenerator should be at offset 0x4C8");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flRecalcRate) == 0x638, "m_flRecalcRate in C_OP_LightningSnapshotGenerator should be at offset 0x638");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flUVScale) == 0x7A8, "m_flUVScale in C_OP_LightningSnapshotGenerator should be at offset 0x7A8");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flUVOffset) == 0x918, "m_flUVOffset in C_OP_LightningSnapshotGenerator should be at offset 0x918");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flSplitRate) == 0xA88, "m_flSplitRate in C_OP_LightningSnapshotGenerator should be at offset 0xA88");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flBranchTwist) == 0xBF8, "m_flBranchTwist in C_OP_LightningSnapshotGenerator should be at offset 0xBF8");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nBranchBehavior) == 0xD68, "m_nBranchBehavior in C_OP_LightningSnapshotGenerator should be at offset 0xD68");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flRadiusStart) == 0xD70, "m_flRadiusStart in C_OP_LightningSnapshotGenerator should be at offset 0xD70");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flRadiusEnd) == 0xEE0, "m_flRadiusEnd in C_OP_LightningSnapshotGenerator should be at offset 0xEE0");
+		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flDedicatedPool) == 0x1050, "m_flDedicatedPool in C_OP_LightningSnapshotGenerator should be at offset 0x1050");
+		static_assert(sizeof(CS2::particles::C_OP_LightningSnapshotGenerator) == 0x11C0, "C_OP_LightningSnapshotGenerator size should be 0x11C0");
 	}
 }

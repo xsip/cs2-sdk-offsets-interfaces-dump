@@ -13,19 +13,19 @@ namespace CS2 {
 	namespace server {
 		class CBasePlatTrain : public CS2::server::CBaseToggle {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_NoiseMoving; // 0x870 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_NoiseArrived; // 0x878 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_NoiseMoving; // 0x858 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_NoiseArrived; // 0x860 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8);
-			float32 m_volume; // 0x888 | Schema_Builtin | Size: 0x4
-			float32 m_flTWidth; // 0x88c | Schema_Builtin | Size: 0x4
-			float32 m_flTLength; // 0x890 | Schema_Builtin | Size: 0x4
+			float32 m_volume; // 0x870 | Schema_Builtin | Size: 0x4
+			float32 m_flTWidth; // 0x874 | Schema_Builtin | Size: 0x4
+			float32 m_flTLength; // 0x878 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBasePlatTrain, m_NoiseMoving) == 0x870, "m_NoiseMoving in CBasePlatTrain should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CBasePlatTrain, m_NoiseArrived) == 0x878, "m_NoiseArrived in CBasePlatTrain should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CBasePlatTrain, m_volume) == 0x888, "m_volume in CBasePlatTrain should be at offset 0x888");
-		static_assert(offsetof(CS2::server::CBasePlatTrain, m_flTWidth) == 0x88C, "m_flTWidth in CBasePlatTrain should be at offset 0x88C");
-		static_assert(offsetof(CS2::server::CBasePlatTrain, m_flTLength) == 0x890, "m_flTLength in CBasePlatTrain should be at offset 0x890");
-		static_assert(sizeof(CS2::server::CBasePlatTrain) == 0x898, "CBasePlatTrain size should be 0x898");
+		static_assert(offsetof(CS2::server::CBasePlatTrain, m_NoiseMoving) == 0x858, "m_NoiseMoving in CBasePlatTrain should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CBasePlatTrain, m_NoiseArrived) == 0x860, "m_NoiseArrived in CBasePlatTrain should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CBasePlatTrain, m_volume) == 0x870, "m_volume in CBasePlatTrain should be at offset 0x870");
+		static_assert(offsetof(CS2::server::CBasePlatTrain, m_flTWidth) == 0x874, "m_flTWidth in CBasePlatTrain should be at offset 0x874");
+		static_assert(offsetof(CS2::server::CBasePlatTrain, m_flTLength) == 0x878, "m_flTLength in CBasePlatTrain should be at offset 0x878");
+		static_assert(sizeof(CS2::server::CBasePlatTrain) == 0x880, "CBasePlatTrain size should be 0x880");
 	}
 }

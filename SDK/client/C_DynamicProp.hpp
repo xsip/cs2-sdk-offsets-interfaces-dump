@@ -15,56 +15,56 @@ namespace CS2 {
 	namespace client {
 		class C_DynamicProp : public CS2::client::C_BreakableProp {
 		public:
-			bool m_bUseHitboxesForRenderBox; // 0x1310 | Schema_Builtin | Size: 0x1
-			bool m_bUseAnimGraph; // 0x1311 | Schema_Builtin | Size: 0x1
+			bool m_bUseHitboxesForRenderBox; // 0x1300 | Schema_Builtin | Size: 0x1
+			bool m_bUseAnimGraph; // 0x1301 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			entity2::CEntityIOOutput m_pOutputAnimBegun; // 0x1318 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_pOutputAnimOver; // 0x1340 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0x1368 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAnimReachedStart; // 0x1390 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0x13b8 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_iszIdleAnim; // 0x13e0 | Schema_Atomic | Size: 0x8
-			client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0x13e8 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bRandomizeCycle; // 0x13ec | Schema_Builtin | Size: 0x1
-			bool m_bStartDisabled; // 0x13ed | Schema_Builtin | Size: 0x1
-			bool m_bFiredStartEndOutput; // 0x13ee | Schema_Builtin | Size: 0x1
-			bool m_bForceNpcExclude; // 0x13ef | Schema_Builtin | Size: 0x1
-			bool m_bCreateNonSolid; // 0x13f0 | Schema_Builtin | Size: 0x1
-			bool m_bIsOverrideProp; // 0x13f1 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_pOutputAnimBegun; // 0x1308 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_pOutputAnimOver; // 0x1330 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0x1358 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnAnimReachedStart; // 0x1380 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0x13a8 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_iszIdleAnim; // 0x13d0 | Schema_Atomic | Size: 0x8
+			client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0x13d8 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bRandomizeCycle; // 0x13dc | Schema_Builtin | Size: 0x1
+			bool m_bStartDisabled; // 0x13dd | Schema_Builtin | Size: 0x1
+			bool m_bFiredStartEndOutput; // 0x13de | Schema_Builtin | Size: 0x1
+			bool m_bForceNpcExclude; // 0x13df | Schema_Builtin | Size: 0x1
+			bool m_bCreateNonSolid; // 0x13e0 | Schema_Builtin | Size: 0x1
+			bool m_bIsOverrideProp; // 0x13e1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iInitialGlowState; // 0x13f4 | Schema_Builtin | Size: 0x4
-			int32_t m_nGlowRange; // 0x13f8 | Schema_Builtin | Size: 0x4
-			int32_t m_nGlowRangeMin; // 0x13fc | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_glowColor; // 0x1400 | Schema_Atomic | Size: 0x4
-			int32_t m_nGlowTeam; // 0x1404 | Schema_Builtin | Size: 0x4
-			int32_t m_iCachedFrameCount; // 0x1408 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecCachedRenderMins; // 0x140c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecCachedRenderMaxs; // 0x1418 | Schema_Atomic | Size: 0xc
+			int32_t m_iInitialGlowState; // 0x13e4 | Schema_Builtin | Size: 0x4
+			int32_t m_nGlowRange; // 0x13e8 | Schema_Builtin | Size: 0x4
+			int32_t m_nGlowRangeMin; // 0x13ec | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_glowColor; // 0x13f0 | Schema_Atomic | Size: 0x4
+			int32_t m_nGlowTeam; // 0x13f4 | Schema_Builtin | Size: 0x4
+			int32_t m_iCachedFrameCount; // 0x13f8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecCachedRenderMins; // 0x13fc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecCachedRenderMaxs; // 0x1408 | Schema_Atomic | Size: 0xc
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bUseHitboxesForRenderBox) == 0x1310, "m_bUseHitboxesForRenderBox in C_DynamicProp should be at offset 0x1310");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bUseAnimGraph) == 0x1311, "m_bUseAnimGraph in C_DynamicProp should be at offset 0x1311");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_pOutputAnimBegun) == 0x1318, "m_pOutputAnimBegun in C_DynamicProp should be at offset 0x1318");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_pOutputAnimOver) == 0x1340, "m_pOutputAnimOver in C_DynamicProp should be at offset 0x1340");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_pOutputAnimLoopCycleOver) == 0x1368, "m_pOutputAnimLoopCycleOver in C_DynamicProp should be at offset 0x1368");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_OnAnimReachedStart) == 0x1390, "m_OnAnimReachedStart in C_DynamicProp should be at offset 0x1390");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_OnAnimReachedEnd) == 0x13B8, "m_OnAnimReachedEnd in C_DynamicProp should be at offset 0x13B8");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_iszIdleAnim) == 0x13E0, "m_iszIdleAnim in C_DynamicProp should be at offset 0x13E0");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_nIdleAnimLoopMode) == 0x13E8, "m_nIdleAnimLoopMode in C_DynamicProp should be at offset 0x13E8");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bRandomizeCycle) == 0x13EC, "m_bRandomizeCycle in C_DynamicProp should be at offset 0x13EC");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bStartDisabled) == 0x13ED, "m_bStartDisabled in C_DynamicProp should be at offset 0x13ED");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bFiredStartEndOutput) == 0x13EE, "m_bFiredStartEndOutput in C_DynamicProp should be at offset 0x13EE");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bForceNpcExclude) == 0x13EF, "m_bForceNpcExclude in C_DynamicProp should be at offset 0x13EF");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bCreateNonSolid) == 0x13F0, "m_bCreateNonSolid in C_DynamicProp should be at offset 0x13F0");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_bIsOverrideProp) == 0x13F1, "m_bIsOverrideProp in C_DynamicProp should be at offset 0x13F1");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_iInitialGlowState) == 0x13F4, "m_iInitialGlowState in C_DynamicProp should be at offset 0x13F4");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_nGlowRange) == 0x13F8, "m_nGlowRange in C_DynamicProp should be at offset 0x13F8");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_nGlowRangeMin) == 0x13FC, "m_nGlowRangeMin in C_DynamicProp should be at offset 0x13FC");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_glowColor) == 0x1400, "m_glowColor in C_DynamicProp should be at offset 0x1400");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_nGlowTeam) == 0x1404, "m_nGlowTeam in C_DynamicProp should be at offset 0x1404");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_iCachedFrameCount) == 0x1408, "m_iCachedFrameCount in C_DynamicProp should be at offset 0x1408");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_vecCachedRenderMins) == 0x140C, "m_vecCachedRenderMins in C_DynamicProp should be at offset 0x140C");
-		static_assert(offsetof(CS2::client::C_DynamicProp, m_vecCachedRenderMaxs) == 0x1418, "m_vecCachedRenderMaxs in C_DynamicProp should be at offset 0x1418");
-		static_assert(sizeof(CS2::client::C_DynamicProp) == 0x1430, "C_DynamicProp size should be 0x1430");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bUseHitboxesForRenderBox) == 0x1300, "m_bUseHitboxesForRenderBox in C_DynamicProp should be at offset 0x1300");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bUseAnimGraph) == 0x1301, "m_bUseAnimGraph in C_DynamicProp should be at offset 0x1301");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_pOutputAnimBegun) == 0x1308, "m_pOutputAnimBegun in C_DynamicProp should be at offset 0x1308");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_pOutputAnimOver) == 0x1330, "m_pOutputAnimOver in C_DynamicProp should be at offset 0x1330");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_pOutputAnimLoopCycleOver) == 0x1358, "m_pOutputAnimLoopCycleOver in C_DynamicProp should be at offset 0x1358");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_OnAnimReachedStart) == 0x1380, "m_OnAnimReachedStart in C_DynamicProp should be at offset 0x1380");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_OnAnimReachedEnd) == 0x13A8, "m_OnAnimReachedEnd in C_DynamicProp should be at offset 0x13A8");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_iszIdleAnim) == 0x13D0, "m_iszIdleAnim in C_DynamicProp should be at offset 0x13D0");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_nIdleAnimLoopMode) == 0x13D8, "m_nIdleAnimLoopMode in C_DynamicProp should be at offset 0x13D8");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bRandomizeCycle) == 0x13DC, "m_bRandomizeCycle in C_DynamicProp should be at offset 0x13DC");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bStartDisabled) == 0x13DD, "m_bStartDisabled in C_DynamicProp should be at offset 0x13DD");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bFiredStartEndOutput) == 0x13DE, "m_bFiredStartEndOutput in C_DynamicProp should be at offset 0x13DE");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bForceNpcExclude) == 0x13DF, "m_bForceNpcExclude in C_DynamicProp should be at offset 0x13DF");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bCreateNonSolid) == 0x13E0, "m_bCreateNonSolid in C_DynamicProp should be at offset 0x13E0");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_bIsOverrideProp) == 0x13E1, "m_bIsOverrideProp in C_DynamicProp should be at offset 0x13E1");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_iInitialGlowState) == 0x13E4, "m_iInitialGlowState in C_DynamicProp should be at offset 0x13E4");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_nGlowRange) == 0x13E8, "m_nGlowRange in C_DynamicProp should be at offset 0x13E8");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_nGlowRangeMin) == 0x13EC, "m_nGlowRangeMin in C_DynamicProp should be at offset 0x13EC");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_glowColor) == 0x13F0, "m_glowColor in C_DynamicProp should be at offset 0x13F0");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_nGlowTeam) == 0x13F4, "m_nGlowTeam in C_DynamicProp should be at offset 0x13F4");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_iCachedFrameCount) == 0x13F8, "m_iCachedFrameCount in C_DynamicProp should be at offset 0x13F8");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_vecCachedRenderMins) == 0x13FC, "m_vecCachedRenderMins in C_DynamicProp should be at offset 0x13FC");
+		static_assert(offsetof(CS2::client::C_DynamicProp, m_vecCachedRenderMaxs) == 0x1408, "m_vecCachedRenderMaxs in C_DynamicProp should be at offset 0x1408");
+		static_assert(sizeof(CS2::client::C_DynamicProp) == 0x1420, "C_DynamicProp size should be 0x1420");
 	}
 }

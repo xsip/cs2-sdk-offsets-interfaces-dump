@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x270
+			// Class size: 0x280
 			namespace C_INIT_RtEnvCull /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecTestDir = 0x1c8; // GlobalTypes::Vector m_vecTestDir; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecTestNormal = 0x1d4; // GlobalTypes::Vector m_vecTestNormal; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bUseVelocity = 0x1e0; // bool m_bUseVelocity; |  0x1e0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCullOnMiss = 0x1e1; // bool m_bCullOnMiss; |  0x1e1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLifeAdjust = 0x1e2; // bool m_bLifeAdjust; |  0x1e2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RtEnvName = 0x1e3; // char m_RtEnvName[128]; |  0x1e3 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nRTEnvCP = 0x264; // int32_t m_nRTEnvCP; |  0x264 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nComponent = 0x268; // int32_t m_nComponent; |  0x268 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecTestDir = 0x1d8; // GlobalTypes::Vector m_vecTestDir; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecTestNormal = 0x1e4; // GlobalTypes::Vector m_vecTestNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bUseVelocity = 0x1f0; // bool m_bUseVelocity; |  0x1f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCullOnMiss = 0x1f1; // bool m_bCullOnMiss; |  0x1f1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLifeAdjust = 0x1f2; // bool m_bLifeAdjust; |  0x1f2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_RtEnvName = 0x1f3; // char m_RtEnvName[128]; |  0x1f3 | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_nRTEnvCP = 0x274; // int32_t m_nRTEnvCP; |  0x274 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nComponent = 0x278; // int32_t m_nComponent; |  0x278 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

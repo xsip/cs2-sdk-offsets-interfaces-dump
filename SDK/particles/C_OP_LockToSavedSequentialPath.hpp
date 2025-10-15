@@ -15,16 +15,16 @@ namespace CS2 {
 		class C_OP_LockToSavedSequentialPath : public CS2::particles::CParticleFunctionOperator {
 		public:
 			S2_PAD(0x4);
-			float32 m_flFadeStart; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeEnd; // 0x1c8 | Schema_Builtin | Size: 0x4
-			bool m_bCPPairs; // 0x1cc | Schema_Builtin | Size: 0x1
+			float32 m_flFadeStart; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeEnd; // 0x1d8 | Schema_Builtin | Size: 0x4
+			bool m_bCPPairs; // 0x1dc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::CPathParameters m_PathParams; // 0x1d0 | Schema_DeclaredClass | Size: 0x40
+			particles::CPathParameters m_PathParams; // 0x1e0 | Schema_DeclaredClass | Size: 0x40
 		};
-		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_flFadeStart) == 0x1C4, "m_flFadeStart in C_OP_LockToSavedSequentialPath should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_flFadeEnd) == 0x1C8, "m_flFadeEnd in C_OP_LockToSavedSequentialPath should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_bCPPairs) == 0x1CC, "m_bCPPairs in C_OP_LockToSavedSequentialPath should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_PathParams) == 0x1D0, "m_PathParams in C_OP_LockToSavedSequentialPath should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_OP_LockToSavedSequentialPath) == 0x210, "C_OP_LockToSavedSequentialPath size should be 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_flFadeStart) == 0x1D4, "m_flFadeStart in C_OP_LockToSavedSequentialPath should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_flFadeEnd) == 0x1D8, "m_flFadeEnd in C_OP_LockToSavedSequentialPath should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_bCPPairs) == 0x1DC, "m_bCPPairs in C_OP_LockToSavedSequentialPath should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_LockToSavedSequentialPath, m_PathParams) == 0x1E0, "m_PathParams in C_OP_LockToSavedSequentialPath should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_OP_LockToSavedSequentialPath) == 0x220, "C_OP_LockToSavedSequentialPath size should be 0x220");
 	}
 }

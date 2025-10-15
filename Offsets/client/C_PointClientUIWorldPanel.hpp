@@ -8,37 +8,37 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1130
+			// Class size: 0x1100
 			namespace C_PointClientUIWorldPanel /*: public CS2::client::C_BaseClientUIEntity*/ {
-				constexpr std::ptrdiff_t m_bForceRecreateNextUpdate = 0xf00; // bool m_bForceRecreateNextUpdate; |  0xf00 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bMoveViewToPlayerNextThink = 0xf01; // bool m_bMoveViewToPlayerNextThink; |  0xf01 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCheckCSSClasses = 0xf02; // bool m_bCheckCSSClasses; |  0xf02 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_anchorDeltaTransform = 0xf10; // GlobalTypes::CTransform m_anchorDeltaTransform; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_pOffScreenIndicator = 0x10a8; // client::CPointOffScreenIndicatorUi* m_pOffScreenIndicator; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_bIgnoreInput = 0x10d0; // bool m_bIgnoreInput; |  0x10d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLit = 0x10d1; // bool m_bLit; |  0x10d1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFollowPlayerAcrossTeleport = 0x10d2; // bool m_bFollowPlayerAcrossTeleport; |  0x10d2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flWidth = 0x10d4; // float32 m_flWidth; |  0x10d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHeight = 0x10d8; // float32 m_flHeight; |  0x10d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDPI = 0x10dc; // float32 m_flDPI; |  0x10dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInteractDistance = 0x10e0; // float32 m_flInteractDistance; |  0x10e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDepthOffset = 0x10e4; // float32 m_flDepthOffset; |  0x10e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unOwnerContext = 0x10e8; // uint32_t m_unOwnerContext; |  0x10e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unHorizontalAlign = 0x10ec; // uint32_t m_unHorizontalAlign; |  0x10ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unVerticalAlign = 0x10f0; // uint32_t m_unVerticalAlign; |  0x10f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unOrientation = 0x10f4; // uint32_t m_unOrientation; |  0x10f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bAllowInteractionFromAllSceneWorlds = 0x10f8; // bool m_bAllowInteractionFromAllSceneWorlds; |  0x10f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecCSSClasses = 0x1100; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bOpaque = 0x1118; // bool m_bOpaque; |  0x1118 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNoDepth = 0x1119; // bool m_bNoDepth; |  0x1119 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bVisibleWhenParentNoDraw = 0x111a; // bool m_bVisibleWhenParentNoDraw; |  0x111a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRenderBackface = 0x111b; // bool m_bRenderBackface; |  0x111b | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseOffScreenIndicator = 0x111c; // bool m_bUseOffScreenIndicator; |  0x111c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bExcludeFromSaveGames = 0x111d; // bool m_bExcludeFromSaveGames; |  0x111d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGrabbable = 0x111e; // bool m_bGrabbable; |  0x111e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bOnlyRenderToTexture = 0x111f; // bool m_bOnlyRenderToTexture; |  0x111f | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDisableMipGen = 0x1120; // bool m_bDisableMipGen; |  0x1120 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nExplicitImageLayout = 0x1124; // int32_t m_nExplicitImageLayout; |  0x1124 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bForceRecreateNextUpdate = 0xee8; // bool m_bForceRecreateNextUpdate; |  0xee8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bMoveViewToPlayerNextThink = 0xee9; // bool m_bMoveViewToPlayerNextThink; |  0xee9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCheckCSSClasses = 0xeea; // bool m_bCheckCSSClasses; |  0xeea | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_anchorDeltaTransform = 0xef0; // GlobalTypes::CTransform m_anchorDeltaTransform; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_pOffScreenIndicator = 0x1080; // client::CPointOffScreenIndicatorUi* m_pOffScreenIndicator; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_bIgnoreInput = 0x10a8; // bool m_bIgnoreInput; |  0x10a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLit = 0x10a9; // bool m_bLit; |  0x10a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFollowPlayerAcrossTeleport = 0x10aa; // bool m_bFollowPlayerAcrossTeleport; |  0x10aa | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flWidth = 0x10ac; // float32 m_flWidth; |  0x10ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHeight = 0x10b0; // float32 m_flHeight; |  0x10b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDPI = 0x10b4; // float32 m_flDPI; |  0x10b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInteractDistance = 0x10b8; // float32 m_flInteractDistance; |  0x10b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDepthOffset = 0x10bc; // float32 m_flDepthOffset; |  0x10bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_unOwnerContext = 0x10c0; // uint32_t m_unOwnerContext; |  0x10c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_unHorizontalAlign = 0x10c4; // uint32_t m_unHorizontalAlign; |  0x10c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_unVerticalAlign = 0x10c8; // uint32_t m_unVerticalAlign; |  0x10c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_unOrientation = 0x10cc; // uint32_t m_unOrientation; |  0x10cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAllowInteractionFromAllSceneWorlds = 0x10d0; // bool m_bAllowInteractionFromAllSceneWorlds; |  0x10d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecCSSClasses = 0x10d8; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bOpaque = 0x10f0; // bool m_bOpaque; |  0x10f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNoDepth = 0x10f1; // bool m_bNoDepth; |  0x10f1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bVisibleWhenParentNoDraw = 0x10f2; // bool m_bVisibleWhenParentNoDraw; |  0x10f2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRenderBackface = 0x10f3; // bool m_bRenderBackface; |  0x10f3 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseOffScreenIndicator = 0x10f4; // bool m_bUseOffScreenIndicator; |  0x10f4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bExcludeFromSaveGames = 0x10f5; // bool m_bExcludeFromSaveGames; |  0x10f5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGrabbable = 0x10f6; // bool m_bGrabbable; |  0x10f6 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bOnlyRenderToTexture = 0x10f7; // bool m_bOnlyRenderToTexture; |  0x10f7 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDisableMipGen = 0x10f8; // bool m_bDisableMipGen; |  0x10f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nExplicitImageLayout = 0x10fc; // int32_t m_nExplicitImageLayout; |  0x10fc | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

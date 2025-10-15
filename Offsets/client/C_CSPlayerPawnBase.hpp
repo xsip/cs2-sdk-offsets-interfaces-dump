@@ -8,34 +8,34 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1680
+			// Class size: 0x1668
 			namespace C_CSPlayerPawnBase /*: public CS2::client::C_BasePlayerPawn*/ {
-				constexpr std::ptrdiff_t m_pPingServices = 0x15f0; // client::CCSPlayer_PingServices* m_pPingServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_previousPlayerState = 0x15f8; // client::CSPlayerState m_previousPlayerState; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iPlayerState = 0x15fc; // client::CSPlayerState m_iPlayerState; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bHasMovedSinceSpawn = 0x1600; // bool m_bHasMovedSinceSpawn; |  0x1600 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLastSpawnTimeIndex = 0x1604; // entity2::GameTime_t m_flLastSpawnTimeIndex; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_iProgressBarDuration = 0x1608; // int32_t m_iProgressBarDuration; |  0x1608 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flProgressBarStartTime = 0x160c; // float32 m_flProgressBarStartTime; |  0x160c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flClientDeathTime = 0x1610; // entity2::GameTime_t m_flClientDeathTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlashBangTime = 0x1614; // float32 m_flFlashBangTime; |  0x1614 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlashScreenshotAlpha = 0x1618; // float32 m_flFlashScreenshotAlpha; |  0x1618 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlashOverlayAlpha = 0x161c; // float32 m_flFlashOverlayAlpha; |  0x161c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bFlashBuildUp = 0x1620; // bool m_bFlashBuildUp; |  0x1620 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFlashDspHasBeenCleared = 0x1621; // bool m_bFlashDspHasBeenCleared; |  0x1621 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFlashScreenshotHasBeenGrabbed = 0x1622; // bool m_bFlashScreenshotHasBeenGrabbed; |  0x1622 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flFlashMaxAlpha = 0x1624; // float32 m_flFlashMaxAlpha; |  0x1624 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFlashDuration = 0x1628; // float32 m_flFlashDuration; |  0x1628 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flClientHealthFadeChangeTimestamp = 0x162c; // entity2::GameTime_t m_flClientHealthFadeChangeTimestamp; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nClientHealthFadeParityValue = 0x1630; // int32_t m_nClientHealthFadeParityValue; |  0x1630 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fNextThinkPushAway = 0x1634; // float32 m_fNextThinkPushAway; |  0x1634 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCurrentMusicStartTime = 0x163c; // float32 m_flCurrentMusicStartTime; |  0x163c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMusicRoundStartTime = 0x1640; // float32 m_flMusicRoundStartTime; |  0x1640 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDeferStartMusicOnWarmup = 0x1644; // bool m_bDeferStartMusicOnWarmup; |  0x1644 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLastSmokeOverlayAlpha = 0x1648; // float32 m_flLastSmokeOverlayAlpha; |  0x1648 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastSmokeAge = 0x164c; // float32 m_flLastSmokeAge; |  0x164c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLastSmokeOverlayColor = 0x1650; // GlobalTypes::Vector m_vLastSmokeOverlayColor; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hOriginalController = 0x1678; // client::CHandle< client::CCSPlayerController > m_hOriginalController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_pPingServices = 0x15d8; // client::CCSPlayer_PingServices* m_pPingServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_previousPlayerState = 0x15e0; // client::CSPlayerState m_previousPlayerState; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iPlayerState = 0x15e4; // client::CSPlayerState m_iPlayerState; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bHasMovedSinceSpawn = 0x15e8; // bool m_bHasMovedSinceSpawn; |  0x15e8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLastSpawnTimeIndex = 0x15ec; // entity2::GameTime_t m_flLastSpawnTimeIndex; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_iProgressBarDuration = 0x15f0; // int32_t m_iProgressBarDuration; |  0x15f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flProgressBarStartTime = 0x15f4; // float32 m_flProgressBarStartTime; |  0x15f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flClientDeathTime = 0x15f8; // entity2::GameTime_t m_flClientDeathTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlashBangTime = 0x15fc; // float32 m_flFlashBangTime; |  0x15fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlashScreenshotAlpha = 0x1600; // float32 m_flFlashScreenshotAlpha; |  0x1600 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlashOverlayAlpha = 0x1604; // float32 m_flFlashOverlayAlpha; |  0x1604 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bFlashBuildUp = 0x1608; // bool m_bFlashBuildUp; |  0x1608 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFlashDspHasBeenCleared = 0x1609; // bool m_bFlashDspHasBeenCleared; |  0x1609 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFlashScreenshotHasBeenGrabbed = 0x160a; // bool m_bFlashScreenshotHasBeenGrabbed; |  0x160a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFlashMaxAlpha = 0x160c; // float32 m_flFlashMaxAlpha; |  0x160c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFlashDuration = 0x1610; // float32 m_flFlashDuration; |  0x1610 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flClientHealthFadeChangeTimestamp = 0x1614; // entity2::GameTime_t m_flClientHealthFadeChangeTimestamp; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nClientHealthFadeParityValue = 0x1618; // int32_t m_nClientHealthFadeParityValue; |  0x1618 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fNextThinkPushAway = 0x161c; // float32 m_fNextThinkPushAway; |  0x161c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCurrentMusicStartTime = 0x1624; // float32 m_flCurrentMusicStartTime; |  0x1624 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMusicRoundStartTime = 0x1628; // float32 m_flMusicRoundStartTime; |  0x1628 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDeferStartMusicOnWarmup = 0x162c; // bool m_bDeferStartMusicOnWarmup; |  0x162c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLastSmokeOverlayAlpha = 0x1630; // float32 m_flLastSmokeOverlayAlpha; |  0x1630 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastSmokeAge = 0x1634; // float32 m_flLastSmokeAge; |  0x1634 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vLastSmokeOverlayColor = 0x1638; // GlobalTypes::Vector m_vLastSmokeOverlayColor; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hOriginalController = 0x1660; // client::CHandle< client::CCSPlayerController > m_hOriginalController; |  Schema_Atomic | Size: 0x4
 			}
 		}
 	}

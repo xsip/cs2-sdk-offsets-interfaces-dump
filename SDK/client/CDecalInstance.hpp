@@ -7,6 +7,7 @@
 
 #include <SDK/client/DecalFlags_t.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
+#include <SDK/client/DecalMode_t.hpp>
 
 
 
@@ -21,51 +22,52 @@ namespace CS2 {
 			// client::CHandle< client::C_BaseEntity > m_hEntity; // 0x14 | Schema_Atomic | Size: 0x4
 			char  m_hEntity[0x4]; // 0x14 | Schema_Atomic | Size: 0x4
 			int32_t m_nBoneIndex; // 0x18 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vPositionLS; // 0x1c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vNormalLS; // 0x28 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vSAxisLS; // 0x34 | Schema_Atomic | Size: 0xc
-			client::DecalFlags_t m_nFlags; // 0x40 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::Color m_Color; // 0x44 | Schema_Atomic | Size: 0x4
-			float32 m_flWidth; // 0x48 | Schema_Builtin | Size: 0x4
-			float32 m_flHeight; // 0x4c | Schema_Builtin | Size: 0x4
-			float32 m_flDepth; // 0x50 | Schema_Builtin | Size: 0x4
-			float32 m_flAnimationScale; // 0x54 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flPlaceTime; // 0x58 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flFadeStartTime; // 0x5c | Schema_Builtin | Size: 0x4
-			float32 m_flFadeDuration; // 0x60 | Schema_Builtin | Size: 0x4
-			float32 m_flLightingOriginOffset; // 0x64 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x8);
-			float32 m_flBoundingRadiusSqr; // 0x70 | Schema_Builtin | Size: 0x4
-			int16_t m_nSequenceIndex; // 0x74 | Schema_Builtin | Size: 0x2
-			bool m_bIsAdjacent; // 0x76 | Schema_Builtin | Size: 0x1
-			bool m_bDoDecalLightmapping; // 0x77 | Schema_Builtin | Size: 0x1
-			client::CDecalInstance* m_pNext; // 0x78 | Schema_Ptr | Size: 0x8
-			client::CDecalInstance* m_pPrev; // 0x80 | Schema_Ptr | Size: 0x8
+			int32_t m_nTriangleIndex; // 0x1c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vPositionLS; // 0x20 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vNormalLS; // 0x2c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vSAxisLS; // 0x38 | Schema_Atomic | Size: 0xc
+			client::DecalFlags_t m_nFlags; // 0x44 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::Color m_Color; // 0x48 | Schema_Atomic | Size: 0x4
+			float32 m_flWidth; // 0x4c | Schema_Builtin | Size: 0x4
+			float32 m_flHeight; // 0x50 | Schema_Builtin | Size: 0x4
+			float32 m_flDepth; // 0x54 | Schema_Builtin | Size: 0x4
+			float32 m_flAnimationScale; // 0x58 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flPlaceTime; // 0x5c | Schema_DeclaredClass | Size: 0x4
+			float32 m_flFadeStartTime; // 0x60 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeDuration; // 0x64 | Schema_Builtin | Size: 0x4
+			float32 m_flLightingOriginOffset; // 0x68 | Schema_Builtin | Size: 0x4
+			S2_PAD(0xc);
+			float32 m_flBoundingRadiusSqr; // 0x78 | Schema_Builtin | Size: 0x4
+			int16_t m_nSequenceIndex; // 0x7c | Schema_Builtin | Size: 0x2
+			bool m_bIsAdjacent; // 0x7e | Schema_Builtin | Size: 0x1
+			bool m_bDoDecalLightmapping; // 0x7f | Schema_Builtin | Size: 0x1
+			client::DecalMode_t m_nSkinnedModelMode; // 0x80 | Schema_DeclaredEnum | Size: 0x1
+			S2_PAD(0x7); // End padding
 		};
 		static_assert(offsetof(CS2::client::CDecalInstance, m_sDecalGroup) == 0x0, "m_sDecalGroup in CDecalInstance should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_hMaterial) == 0x8, "m_hMaterial in CDecalInstance should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_sSequenceName) == 0x10, "m_sSequenceName in CDecalInstance should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_hEntity) == 0x14, "m_hEntity in CDecalInstance should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_nBoneIndex) == 0x18, "m_nBoneIndex in CDecalInstance should be at offset 0x18");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_vPositionLS) == 0x1C, "m_vPositionLS in CDecalInstance should be at offset 0x1C");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_vNormalLS) == 0x28, "m_vNormalLS in CDecalInstance should be at offset 0x28");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_vSAxisLS) == 0x34, "m_vSAxisLS in CDecalInstance should be at offset 0x34");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_nFlags) == 0x40, "m_nFlags in CDecalInstance should be at offset 0x40");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_Color) == 0x44, "m_Color in CDecalInstance should be at offset 0x44");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flWidth) == 0x48, "m_flWidth in CDecalInstance should be at offset 0x48");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flHeight) == 0x4C, "m_flHeight in CDecalInstance should be at offset 0x4C");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flDepth) == 0x50, "m_flDepth in CDecalInstance should be at offset 0x50");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flAnimationScale) == 0x54, "m_flAnimationScale in CDecalInstance should be at offset 0x54");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flPlaceTime) == 0x58, "m_flPlaceTime in CDecalInstance should be at offset 0x58");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flFadeStartTime) == 0x5C, "m_flFadeStartTime in CDecalInstance should be at offset 0x5C");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flFadeDuration) == 0x60, "m_flFadeDuration in CDecalInstance should be at offset 0x60");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flLightingOriginOffset) == 0x64, "m_flLightingOriginOffset in CDecalInstance should be at offset 0x64");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_flBoundingRadiusSqr) == 0x70, "m_flBoundingRadiusSqr in CDecalInstance should be at offset 0x70");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_nSequenceIndex) == 0x74, "m_nSequenceIndex in CDecalInstance should be at offset 0x74");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_bIsAdjacent) == 0x76, "m_bIsAdjacent in CDecalInstance should be at offset 0x76");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_bDoDecalLightmapping) == 0x77, "m_bDoDecalLightmapping in CDecalInstance should be at offset 0x77");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_pNext) == 0x78, "m_pNext in CDecalInstance should be at offset 0x78");
-		static_assert(offsetof(CS2::client::CDecalInstance, m_pPrev) == 0x80, "m_pPrev in CDecalInstance should be at offset 0x80");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_nTriangleIndex) == 0x1C, "m_nTriangleIndex in CDecalInstance should be at offset 0x1C");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_vPositionLS) == 0x20, "m_vPositionLS in CDecalInstance should be at offset 0x20");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_vNormalLS) == 0x2C, "m_vNormalLS in CDecalInstance should be at offset 0x2C");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_vSAxisLS) == 0x38, "m_vSAxisLS in CDecalInstance should be at offset 0x38");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_nFlags) == 0x44, "m_nFlags in CDecalInstance should be at offset 0x44");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_Color) == 0x48, "m_Color in CDecalInstance should be at offset 0x48");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flWidth) == 0x4C, "m_flWidth in CDecalInstance should be at offset 0x4C");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flHeight) == 0x50, "m_flHeight in CDecalInstance should be at offset 0x50");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flDepth) == 0x54, "m_flDepth in CDecalInstance should be at offset 0x54");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flAnimationScale) == 0x58, "m_flAnimationScale in CDecalInstance should be at offset 0x58");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flPlaceTime) == 0x5C, "m_flPlaceTime in CDecalInstance should be at offset 0x5C");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flFadeStartTime) == 0x60, "m_flFadeStartTime in CDecalInstance should be at offset 0x60");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flFadeDuration) == 0x64, "m_flFadeDuration in CDecalInstance should be at offset 0x64");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flLightingOriginOffset) == 0x68, "m_flLightingOriginOffset in CDecalInstance should be at offset 0x68");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_flBoundingRadiusSqr) == 0x78, "m_flBoundingRadiusSqr in CDecalInstance should be at offset 0x78");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_nSequenceIndex) == 0x7C, "m_nSequenceIndex in CDecalInstance should be at offset 0x7C");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_bIsAdjacent) == 0x7E, "m_bIsAdjacent in CDecalInstance should be at offset 0x7E");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_bDoDecalLightmapping) == 0x7F, "m_bDoDecalLightmapping in CDecalInstance should be at offset 0x7F");
+		static_assert(offsetof(CS2::client::CDecalInstance, m_nSkinnedModelMode) == 0x80, "m_nSkinnedModelMode in CDecalInstance should be at offset 0x80");
 		static_assert(sizeof(CS2::client::CDecalInstance) == 0x88, "CDecalInstance size should be 0x88");
 	}
 }

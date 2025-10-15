@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace server {
 		class COrnamentProp : public CS2::server::CDynamicProp {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_initialOwner; // 0xd40 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_initialOwner; // 0xd50 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::COrnamentProp, m_initialOwner) == 0xD40, "m_initialOwner in COrnamentProp should be at offset 0xD40");
-		static_assert(sizeof(CS2::server::COrnamentProp) == 0xD50, "COrnamentProp size should be 0xD50");
+		static_assert(offsetof(CS2::server::COrnamentProp, m_initialOwner) == 0xD50, "m_initialOwner in COrnamentProp should be at offset 0xD50");
+		static_assert(sizeof(CS2::server::COrnamentProp) == 0xD60, "COrnamentProp size should be 0xD60");
 	}
 }

@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1F8
+			// Class size: 0x208
 			namespace C_OP_RemapDistanceToLineSegmentToVector /*: public CS2::particles::C_OP_RemapDistanceToLineSegmentBase*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vMinOutputValue = 0x1dc; // GlobalTypes::Vector m_vMinOutputValue; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxOutputValue = 0x1e8; // GlobalTypes::Vector m_vMaxOutputValue; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1e8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vMinOutputValue = 0x1ec; // GlobalTypes::Vector m_vMinOutputValue; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxOutputValue = 0x1f8; // GlobalTypes::Vector m_vMaxOutputValue; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}

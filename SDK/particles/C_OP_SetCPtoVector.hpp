@@ -14,11 +14,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetCPtoVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nCPInput; // 0x1c0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nCPInput; // 0x1d0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetCPtoVector, m_nCPInput) == 0x1C0, "m_nCPInput in C_OP_SetCPtoVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_SetCPtoVector, m_nFieldOutput) == 0x1C4, "m_nFieldOutput in C_OP_SetCPtoVector should be at offset 0x1C4");
-		static_assert(sizeof(CS2::particles::C_OP_SetCPtoVector) == 0x1C8, "C_OP_SetCPtoVector size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::C_OP_SetCPtoVector, m_nCPInput) == 0x1D0, "m_nCPInput in C_OP_SetCPtoVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetCPtoVector, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_SetCPtoVector should be at offset 0x1D4");
+		static_assert(sizeof(CS2::particles::C_OP_SetCPtoVector) == 0x1D8, "C_OP_SetCPtoVector size should be 0x1D8");
 	}
 }

@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xB08
+			// Class size: 0xB78
 			namespace C_OP_LerpToInitialPosition /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1c0; // int32_t m_nControlPointNumber; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInterpolation = 0x1c8; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nCacheField = 0x328; // particles::ParticleAttributeIndex_t m_nCacheField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flScale = 0x330; // particleslib::CParticleCollectionFloatInput m_flScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vecScale = 0x490; // particleslib::CParticleCollectionVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x678
+				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1d0; // int32_t m_nControlPointNumber; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInterpolation = 0x1d8; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nCacheField = 0x348; // particles::ParticleAttributeIndex_t m_nCacheField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flScale = 0x350; // particleslib::CParticleCollectionFloatInput m_flScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecScale = 0x4c0; // particleslib::CParticleCollectionVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x3D8
+			// Class size: 0x3F8
 			namespace C_OP_SetControlPointToImpactPoint /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nCPOut = 0x1c8; // int32_t m_nCPOut; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPIn = 0x1cc; // int32_t m_nCPIn; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flUpdateRate = 0x1d0; // float32 m_flUpdateRate; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTraceLength = 0x1d8; // particleslib::CParticleCollectionFloatInput m_flTraceLength; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flStartOffset = 0x338; // float32 m_flStartOffset; |  0x338 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOffset = 0x33c; // float32 m_flOffset; |  0x33c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecTraceDir = 0x340; // GlobalTypes::Vector m_vecTraceDir; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_CollisionGroupName = 0x34c; // char m_CollisionGroupName[128]; |  0x34c | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nTraceSet = 0x3cc; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bSetToEndpoint = 0x3d0; // bool m_bSetToEndpoint; |  0x3d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bTraceToClosestSurface = 0x3d1; // bool m_bTraceToClosestSurface; |  0x3d1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIncludeWater = 0x3d2; // bool m_bIncludeWater; |  0x3d2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nCPOut = 0x1d8; // int32_t m_nCPOut; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPIn = 0x1dc; // int32_t m_nCPIn; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flUpdateRate = 0x1e0; // float32 m_flUpdateRate; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTraceLength = 0x1e8; // particleslib::CParticleCollectionFloatInput m_flTraceLength; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flStartOffset = 0x358; // float32 m_flStartOffset; |  0x358 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOffset = 0x35c; // float32 m_flOffset; |  0x35c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecTraceDir = 0x360; // GlobalTypes::Vector m_vecTraceDir; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_CollisionGroupName = 0x36c; // char m_CollisionGroupName[128]; |  0x36c | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_nTraceSet = 0x3ec; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bSetToEndpoint = 0x3f0; // bool m_bSetToEndpoint; |  0x3f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bTraceToClosestSurface = 0x3f1; // bool m_bTraceToClosestSurface; |  0x3f1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIncludeWater = 0x3f2; // bool m_bIncludeWater; |  0x3f2 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -17,19 +17,19 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LerpToInitialPosition : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c0 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nCacheField; // 0x328 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nCacheField; // 0x348 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flScale; // 0x330 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionVecInput m_vecScale; // 0x490 | Schema_DeclaredClass | Size: 0x678
+			particleslib::CParticleCollectionFloatInput m_flScale; // 0x350 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionVecInput m_vecScale; // 0x4c0 | Schema_DeclaredClass | Size: 0x6b8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_nControlPointNumber) == 0x1C0, "m_nControlPointNumber in C_OP_LerpToInitialPosition should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_flInterpolation) == 0x1C8, "m_flInterpolation in C_OP_LerpToInitialPosition should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_nCacheField) == 0x328, "m_nCacheField in C_OP_LerpToInitialPosition should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_flScale) == 0x330, "m_flScale in C_OP_LerpToInitialPosition should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_vecScale) == 0x490, "m_vecScale in C_OP_LerpToInitialPosition should be at offset 0x490");
-		static_assert(sizeof(CS2::particles::C_OP_LerpToInitialPosition) == 0xB08, "C_OP_LerpToInitialPosition size should be 0xB08");
+		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_LerpToInitialPosition should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_flInterpolation) == 0x1D8, "m_flInterpolation in C_OP_LerpToInitialPosition should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_nCacheField) == 0x348, "m_nCacheField in C_OP_LerpToInitialPosition should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_flScale) == 0x350, "m_flScale in C_OP_LerpToInitialPosition should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_vecScale) == 0x4C0, "m_vecScale in C_OP_LerpToInitialPosition should be at offset 0x4C0");
+		static_assert(sizeof(CS2::particles::C_OP_LerpToInitialPosition) == 0xB78, "C_OP_LerpToInitialPosition size should be 0xB78");
 	}
 }

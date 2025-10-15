@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x8C8
+			// Class size: 0x918
 			namespace C_OP_RenderDeferredLight /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_bUseAlphaTestWindow = 0x210; // bool m_bUseAlphaTestWindow; |  0x210 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseTexture = 0x211; // bool m_bUseTexture; |  0x211 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flRadiusScale = 0x214; // float32 m_flRadiusScale; |  0x214 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAlphaScale = 0x218; // float32 m_flAlphaScale; |  0x218 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAlpha2Field = 0x21c; // particles::ParticleAttributeIndex_t m_nAlpha2Field; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecColorScale = 0x220; // particleslib::CParticleCollectionVecInput m_vecColorScale; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_nColorBlendType = 0x898; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flLightDistance = 0x89c; // float32 m_flLightDistance; |  0x89c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartFalloff = 0x8a0; // float32 m_flStartFalloff; |  0x8a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistanceFalloff = 0x8a4; // float32 m_flDistanceFalloff; |  0x8a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSpotFoV = 0x8a8; // float32 m_flSpotFoV; |  0x8a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAlphaTestPointField = 0x8ac; // particles::ParticleAttributeIndex_t m_nAlphaTestPointField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nAlphaTestRangeField = 0x8b0; // particles::ParticleAttributeIndex_t m_nAlphaTestRangeField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nAlphaTestSharpnessField = 0x8b4; // particles::ParticleAttributeIndex_t m_nAlphaTestSharpnessField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_hTexture = 0x8b8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTexture; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nHSVShiftControlPoint = 0x8c0; // int32_t m_nHSVShiftControlPoint; |  0x8c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseAlphaTestWindow = 0x220; // bool m_bUseAlphaTestWindow; |  0x220 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseTexture = 0x221; // bool m_bUseTexture; |  0x221 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flRadiusScale = 0x224; // float32 m_flRadiusScale; |  0x224 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAlphaScale = 0x228; // float32 m_flAlphaScale; |  0x228 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nAlpha2Field = 0x22c; // particles::ParticleAttributeIndex_t m_nAlpha2Field; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecColorScale = 0x230; // particleslib::CParticleCollectionVecInput m_vecColorScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nColorBlendType = 0x8e8; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flLightDistance = 0x8ec; // float32 m_flLightDistance; |  0x8ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartFalloff = 0x8f0; // float32 m_flStartFalloff; |  0x8f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistanceFalloff = 0x8f4; // float32 m_flDistanceFalloff; |  0x8f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSpotFoV = 0x8f8; // float32 m_flSpotFoV; |  0x8f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nAlphaTestPointField = 0x8fc; // particles::ParticleAttributeIndex_t m_nAlphaTestPointField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nAlphaTestRangeField = 0x900; // particles::ParticleAttributeIndex_t m_nAlphaTestRangeField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nAlphaTestSharpnessField = 0x904; // particles::ParticleAttributeIndex_t m_nAlphaTestSharpnessField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hTexture = 0x908; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTexture; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nHSVShiftControlPoint = 0x910; // int32_t m_nHSVShiftControlPoint; |  0x910 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

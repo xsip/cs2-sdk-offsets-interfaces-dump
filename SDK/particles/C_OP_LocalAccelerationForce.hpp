@@ -14,13 +14,13 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_LocalAccelerationForce : public CS2::particles::CParticleFunctionForce {
 		public:
-			int32_t m_nCP; // 0x1d0 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleCP; // 0x1d4 | Schema_Builtin | Size: 0x4
-			particleslib::CParticleCollectionVecInput m_vecAccel; // 0x1d8 | Schema_DeclaredClass | Size: 0x678
+			int32_t m_nCP; // 0x1e0 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleCP; // 0x1e4 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecAccel; // 0x1e8 | Schema_DeclaredClass | Size: 0x6b8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_LocalAccelerationForce, m_nCP) == 0x1D0, "m_nCP in C_OP_LocalAccelerationForce should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_LocalAccelerationForce, m_nScaleCP) == 0x1D4, "m_nScaleCP in C_OP_LocalAccelerationForce should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_LocalAccelerationForce, m_vecAccel) == 0x1D8, "m_vecAccel in C_OP_LocalAccelerationForce should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_OP_LocalAccelerationForce) == 0x850, "C_OP_LocalAccelerationForce size should be 0x850");
+		static_assert(offsetof(CS2::particles::C_OP_LocalAccelerationForce, m_nCP) == 0x1E0, "m_nCP in C_OP_LocalAccelerationForce should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_LocalAccelerationForce, m_nScaleCP) == 0x1E4, "m_nScaleCP in C_OP_LocalAccelerationForce should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_LocalAccelerationForce, m_vecAccel) == 0x1E8, "m_vecAccel in C_OP_LocalAccelerationForce should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_OP_LocalAccelerationForce) == 0x8A0, "C_OP_LocalAccelerationForce size should be 0x8A0");
 	}
 }

@@ -12,10 +12,10 @@ namespace CS2 {
 	namespace server {
 		class CursorState_t  {
 		public:
-			// server::CHandle< server::CBaseEntity > m_scriptedSequence; // 0x0 | Schema_Atomic | Size: 0x4
-			char  m_scriptedSequence[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
+			// server::CHandle< server::CBaseAnimGraph > m_hTarget; // 0x0 | Schema_Atomic | Size: 0x4
+			char  m_hTarget[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CursorState_t, m_scriptedSequence) == 0x0, "m_scriptedSequence in CPulseCell_Outflow_ScriptedSequence::CursorState_t should be at offset 0x0");
-		static_assert(sizeof(CS2::server::CursorState_t) == 0x4, "CPulseCell_Outflow_ScriptedSequence::CursorState_t size should be 0x4");
+		static_assert(offsetof(CS2::server::CursorState_t, m_hTarget) == 0x0, "m_hTarget in CPulseCell_PlaySequence::CursorState_t should be at offset 0x0");
+		static_assert(sizeof(CS2::server::CursorState_t) == 0x4, "CPulseCell_PlaySequence::CursorState_t size should be 0x4");
 	}
 }

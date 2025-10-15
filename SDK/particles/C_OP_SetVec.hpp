@@ -17,18 +17,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetVec : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CPerParticleVecInput m_InputValue; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x838 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x83c | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CPerParticleFloatInput m_Lerp; // 0x840 | Schema_DeclaredClass | Size: 0x160
-			bool m_bNormalizedOutput; // 0x9a0 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_InputValue; // 0x1d0 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x888 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x88c | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_Lerp; // 0x890 | Schema_DeclaredClass | Size: 0x170
+			bool m_bNormalizedOutput; // 0xa00 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_InputValue) == 0x1C0, "m_InputValue in C_OP_SetVec should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_nOutputField) == 0x838, "m_nOutputField in C_OP_SetVec should be at offset 0x838");
-		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_nSetMethod) == 0x83C, "m_nSetMethod in C_OP_SetVec should be at offset 0x83C");
-		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_Lerp) == 0x840, "m_Lerp in C_OP_SetVec should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_bNormalizedOutput) == 0x9A0, "m_bNormalizedOutput in C_OP_SetVec should be at offset 0x9A0");
-		static_assert(sizeof(CS2::particles::C_OP_SetVec) == 0x9A8, "C_OP_SetVec size should be 0x9A8");
+		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_InputValue) == 0x1D0, "m_InputValue in C_OP_SetVec should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_nOutputField) == 0x888, "m_nOutputField in C_OP_SetVec should be at offset 0x888");
+		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_nSetMethod) == 0x88C, "m_nSetMethod in C_OP_SetVec should be at offset 0x88C");
+		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_Lerp) == 0x890, "m_Lerp in C_OP_SetVec should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_bNormalizedOutput) == 0xA00, "m_bNormalizedOutput in C_OP_SetVec should be at offset 0xA00");
+		static_assert(sizeof(CS2::particles::C_OP_SetVec) == 0xA08, "C_OP_SetVec size should be 0xA08");
 	}
 }

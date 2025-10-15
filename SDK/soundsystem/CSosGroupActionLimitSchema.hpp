@@ -7,7 +7,7 @@
 
 #include <SDK/soundsystem/CSosGroupActionSchema.hpp>
 #include <SDK/soundsystem/SosActionStopType_t.hpp>
-#include <SDK/soundsystem/SosActionSortType_t.hpp>
+#include <SDK/soundsystem/SosActionLimitSortType_t.hpp>
 
 
 
@@ -17,7 +17,7 @@ namespace CS2 {
 		public:
 			int32_t m_nMaxCount; // 0x8 | Schema_Builtin | Size: 0x4
 			soundsystem::SosActionStopType_t m_nStopType; // 0xc | Schema_DeclaredEnum | Size: 0x4
-			soundsystem::SosActionSortType_t m_nSortType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
+			soundsystem::SosActionLimitSortType_t m_nSortType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bStopImmediate; // 0x14 | Schema_Builtin | Size: 0x1
 			bool m_bCountStopped; // 0x15 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding

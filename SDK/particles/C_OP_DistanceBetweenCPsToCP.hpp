@@ -15,39 +15,39 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DistanceBetweenCPsToCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nStartCP; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nEndCP; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nOutputCP; // 0x1d0 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutputCPField; // 0x1d4 | Schema_Builtin | Size: 0x4
-			bool m_bSetOnce; // 0x1d8 | Schema_Builtin | Size: 0x1
+			int32_t m_nStartCP; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nEndCP; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nOutputCP; // 0x1e0 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutputCPField; // 0x1e4 | Schema_Builtin | Size: 0x4
+			bool m_bSetOnce; // 0x1e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flInputMin; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flInputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1e4 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxTraceLength; // 0x1ec | Schema_Builtin | Size: 0x4
-			float32 m_flLOSScale; // 0x1f0 | Schema_Builtin | Size: 0x4
-			bool m_bLOS; // 0x1f4 | Schema_Builtin | Size: 0x1
-			char m_CollisionGroupName[128]; // 0x1f5 | Schema_FixedArray | Size: 0x80
+			float32 m_flInputMin; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flInputMax; // 0x1f0 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1f4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1f8 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxTraceLength; // 0x1fc | Schema_Builtin | Size: 0x4
+			float32 m_flLOSScale; // 0x200 | Schema_Builtin | Size: 0x4
+			bool m_bLOS; // 0x204 | Schema_Builtin | Size: 0x1
+			char m_CollisionGroupName[128]; // 0x205 | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x3);
-			particles::ParticleTraceSet_t m_nTraceSet; // 0x278 | Schema_DeclaredEnum | Size: 0x4
-			particles::ParticleParentSetMode_t m_nSetParent; // 0x27c | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleTraceSet_t m_nTraceSet; // 0x288 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleParentSetMode_t m_nSetParent; // 0x28c | Schema_DeclaredEnum | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nStartCP) == 0x1C8, "m_nStartCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nEndCP) == 0x1CC, "m_nEndCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nOutputCP) == 0x1D0, "m_nOutputCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nOutputCPField) == 0x1D4, "m_nOutputCPField in C_OP_DistanceBetweenCPsToCP should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_bSetOnce) == 0x1D8, "m_bSetOnce in C_OP_DistanceBetweenCPsToCP should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flInputMin) == 0x1DC, "m_flInputMin in C_OP_DistanceBetweenCPsToCP should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flInputMax) == 0x1E0, "m_flInputMax in C_OP_DistanceBetweenCPsToCP should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flOutputMin) == 0x1E4, "m_flOutputMin in C_OP_DistanceBetweenCPsToCP should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_OP_DistanceBetweenCPsToCP should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flMaxTraceLength) == 0x1EC, "m_flMaxTraceLength in C_OP_DistanceBetweenCPsToCP should be at offset 0x1EC");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flLOSScale) == 0x1F0, "m_flLOSScale in C_OP_DistanceBetweenCPsToCP should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_bLOS) == 0x1F4, "m_bLOS in C_OP_DistanceBetweenCPsToCP should be at offset 0x1F4");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_CollisionGroupName) == 0x1F5, "m_CollisionGroupName in C_OP_DistanceBetweenCPsToCP should be at offset 0x1F5");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nTraceSet) == 0x278, "m_nTraceSet in C_OP_DistanceBetweenCPsToCP should be at offset 0x278");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nSetParent) == 0x27C, "m_nSetParent in C_OP_DistanceBetweenCPsToCP should be at offset 0x27C");
-		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenCPsToCP) == 0x280, "C_OP_DistanceBetweenCPsToCP size should be 0x280");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nStartCP) == 0x1D8, "m_nStartCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nEndCP) == 0x1DC, "m_nEndCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nOutputCP) == 0x1E0, "m_nOutputCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nOutputCPField) == 0x1E4, "m_nOutputCPField in C_OP_DistanceBetweenCPsToCP should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_bSetOnce) == 0x1E8, "m_bSetOnce in C_OP_DistanceBetweenCPsToCP should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flInputMin) == 0x1EC, "m_flInputMin in C_OP_DistanceBetweenCPsToCP should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flInputMax) == 0x1F0, "m_flInputMax in C_OP_DistanceBetweenCPsToCP should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flOutputMin) == 0x1F4, "m_flOutputMin in C_OP_DistanceBetweenCPsToCP should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flOutputMax) == 0x1F8, "m_flOutputMax in C_OP_DistanceBetweenCPsToCP should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flMaxTraceLength) == 0x1FC, "m_flMaxTraceLength in C_OP_DistanceBetweenCPsToCP should be at offset 0x1FC");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_flLOSScale) == 0x200, "m_flLOSScale in C_OP_DistanceBetweenCPsToCP should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_bLOS) == 0x204, "m_bLOS in C_OP_DistanceBetweenCPsToCP should be at offset 0x204");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_CollisionGroupName) == 0x205, "m_CollisionGroupName in C_OP_DistanceBetweenCPsToCP should be at offset 0x205");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nTraceSet) == 0x288, "m_nTraceSet in C_OP_DistanceBetweenCPsToCP should be at offset 0x288");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nSetParent) == 0x28C, "m_nSetParent in C_OP_DistanceBetweenCPsToCP should be at offset 0x28C");
+		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenCPsToCP) == 0x290, "C_OP_DistanceBetweenCPsToCP size should be 0x290");
 	}
 }

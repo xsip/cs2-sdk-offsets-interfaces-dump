@@ -18,68 +18,71 @@ namespace CS2 {
 		class CPlantedC4 : public CS2::server::CBaseAnimGraph {
 		public:
 			S2_PAD(0x8);
-			bool m_bBombTicking; // 0xa88 | Schema_Builtin | Size: 0x1
+			bool m_bBombTicking; // 0xa98 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_flC4Blow; // 0xa8c | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nBombSite; // 0xa90 | Schema_Builtin | Size: 0x4
-			int32_t m_nSourceSoundscapeHash; // 0xa94 | Schema_Builtin | Size: 0x4
-			server::CAttributeContainer m_AttributeManager; // 0xa98 | Schema_DeclaredClass | Size: 0x2f8
-			entity2::CEntityIOOutput m_OnBombDefused; // 0xd90 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBombBeginDefuse; // 0xdb8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBombDefuseAborted; // 0xde0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bCannotBeDefused; // 0xe08 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flC4Blow; // 0xa9c | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nBombSite; // 0xaa0 | Schema_Builtin | Size: 0x4
+			int32_t m_nSourceSoundscapeHash; // 0xaa4 | Schema_Builtin | Size: 0x4
+			bool m_bAbortDetonationBecauseWorldIsFrozen; // 0xaa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			server::EntitySpottedState_t m_entitySpottedState; // 0xe10 | Schema_DeclaredClass | Size: 0x18
-			int32_t m_nSpotRules; // 0xe28 | Schema_Builtin | Size: 0x4
-			bool m_bTrainingPlacedByPlayer; // 0xe2c | Schema_Builtin | Size: 0x1
-			bool m_bHasExploded; // 0xe2d | Schema_Builtin | Size: 0x1
+			server::CAttributeContainer m_AttributeManager; // 0xab0 | Schema_DeclaredClass | Size: 0x2f8
+			entity2::CEntityIOOutput m_OnBombDefused; // 0xda8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnBombBeginDefuse; // 0xdd0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnBombDefuseAborted; // 0xdf8 | Schema_DeclaredClass | Size: 0x28
+			bool m_bCannotBeDefused; // 0xe20 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x7);
+			server::EntitySpottedState_t m_entitySpottedState; // 0xe28 | Schema_DeclaredClass | Size: 0x18
+			int32_t m_nSpotRules; // 0xe40 | Schema_Builtin | Size: 0x4
+			bool m_bTrainingPlacedByPlayer; // 0xe44 | Schema_Builtin | Size: 0x1
+			bool m_bHasExploded; // 0xe45 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flTimerLength; // 0xe30 | Schema_Builtin | Size: 0x4
-			bool m_bBeingDefused; // 0xe34 | Schema_Builtin | Size: 0x1
+			float32 m_flTimerLength; // 0xe48 | Schema_Builtin | Size: 0x4
+			bool m_bBeingDefused; // 0xe4c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			entity2::GameTime_t m_fLastDefuseTime; // 0xe3c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_fLastDefuseTime; // 0xe54 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_flDefuseLength; // 0xe44 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flDefuseCountDown; // 0xe48 | Schema_DeclaredClass | Size: 0x4
-			bool m_bBombDefused; // 0xe4c | Schema_Builtin | Size: 0x1
+			float32 m_flDefuseLength; // 0xe5c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flDefuseCountDown; // 0xe60 | Schema_DeclaredClass | Size: 0x4
+			bool m_bBombDefused; // 0xe64 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CCSPlayerPawn > m_hBombDefuser; // 0xe50 | Schema_Atomic | Size: 0x4
-			char  m_hBombDefuser[0x4]; // 0xe50 | Schema_Atomic | Size: 0x4
-			int32_t m_iProgressBarTime; // 0xe54 | Schema_Builtin | Size: 0x4
-			bool m_bVoiceAlertFired; // 0xe58 | Schema_Builtin | Size: 0x1
-			bool m_bVoiceAlertPlayed[4]; // 0xe59 | Schema_FixedArray | Size: 0x4
+			// server::CHandle< server::CCSPlayerPawn > m_hBombDefuser; // 0xe68 | Schema_Atomic | Size: 0x4
+			char  m_hBombDefuser[0x4]; // 0xe68 | Schema_Atomic | Size: 0x4
+			int32_t m_iProgressBarTime; // 0xe6c | Schema_Builtin | Size: 0x4
+			bool m_bVoiceAlertFired; // 0xe70 | Schema_Builtin | Size: 0x1
+			bool m_bVoiceAlertPlayed[4]; // 0xe71 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x3);
-			entity2::GameTime_t m_flNextBotBeepTime; // 0xe60 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flNextBotBeepTime; // 0xe78 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::QAngle m_angCatchUpToPlayerEye; // 0xe68 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flLastSpinDetectionTime; // 0xe74 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::QAngle m_angCatchUpToPlayerEye; // 0xe80 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flLastSpinDetectionTime; // 0xe8c | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bBombTicking) == 0xA88, "m_bBombTicking in CPlantedC4 should be at offset 0xA88");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_flC4Blow) == 0xA8C, "m_flC4Blow in CPlantedC4 should be at offset 0xA8C");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_nBombSite) == 0xA90, "m_nBombSite in CPlantedC4 should be at offset 0xA90");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_nSourceSoundscapeHash) == 0xA94, "m_nSourceSoundscapeHash in CPlantedC4 should be at offset 0xA94");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_AttributeManager) == 0xA98, "m_AttributeManager in CPlantedC4 should be at offset 0xA98");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_OnBombDefused) == 0xD90, "m_OnBombDefused in CPlantedC4 should be at offset 0xD90");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_OnBombBeginDefuse) == 0xDB8, "m_OnBombBeginDefuse in CPlantedC4 should be at offset 0xDB8");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_OnBombDefuseAborted) == 0xDE0, "m_OnBombDefuseAborted in CPlantedC4 should be at offset 0xDE0");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bCannotBeDefused) == 0xE08, "m_bCannotBeDefused in CPlantedC4 should be at offset 0xE08");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_entitySpottedState) == 0xE10, "m_entitySpottedState in CPlantedC4 should be at offset 0xE10");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_nSpotRules) == 0xE28, "m_nSpotRules in CPlantedC4 should be at offset 0xE28");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bTrainingPlacedByPlayer) == 0xE2C, "m_bTrainingPlacedByPlayer in CPlantedC4 should be at offset 0xE2C");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bHasExploded) == 0xE2D, "m_bHasExploded in CPlantedC4 should be at offset 0xE2D");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_flTimerLength) == 0xE30, "m_flTimerLength in CPlantedC4 should be at offset 0xE30");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bBeingDefused) == 0xE34, "m_bBeingDefused in CPlantedC4 should be at offset 0xE34");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_fLastDefuseTime) == 0xE3C, "m_fLastDefuseTime in CPlantedC4 should be at offset 0xE3C");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_flDefuseLength) == 0xE44, "m_flDefuseLength in CPlantedC4 should be at offset 0xE44");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_flDefuseCountDown) == 0xE48, "m_flDefuseCountDown in CPlantedC4 should be at offset 0xE48");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bBombDefused) == 0xE4C, "m_bBombDefused in CPlantedC4 should be at offset 0xE4C");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_hBombDefuser) == 0xE50, "m_hBombDefuser in CPlantedC4 should be at offset 0xE50");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_iProgressBarTime) == 0xE54, "m_iProgressBarTime in CPlantedC4 should be at offset 0xE54");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bVoiceAlertFired) == 0xE58, "m_bVoiceAlertFired in CPlantedC4 should be at offset 0xE58");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_bVoiceAlertPlayed) == 0xE59, "m_bVoiceAlertPlayed in CPlantedC4 should be at offset 0xE59");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_flNextBotBeepTime) == 0xE60, "m_flNextBotBeepTime in CPlantedC4 should be at offset 0xE60");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_angCatchUpToPlayerEye) == 0xE68, "m_angCatchUpToPlayerEye in CPlantedC4 should be at offset 0xE68");
-		static_assert(offsetof(CS2::server::CPlantedC4, m_flLastSpinDetectionTime) == 0xE74, "m_flLastSpinDetectionTime in CPlantedC4 should be at offset 0xE74");
-		static_assert(sizeof(CS2::server::CPlantedC4) == 0xE78, "CPlantedC4 size should be 0xE78");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bBombTicking) == 0xA98, "m_bBombTicking in CPlantedC4 should be at offset 0xA98");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_flC4Blow) == 0xA9C, "m_flC4Blow in CPlantedC4 should be at offset 0xA9C");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_nBombSite) == 0xAA0, "m_nBombSite in CPlantedC4 should be at offset 0xAA0");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_nSourceSoundscapeHash) == 0xAA4, "m_nSourceSoundscapeHash in CPlantedC4 should be at offset 0xAA4");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bAbortDetonationBecauseWorldIsFrozen) == 0xAA8, "m_bAbortDetonationBecauseWorldIsFrozen in CPlantedC4 should be at offset 0xAA8");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_AttributeManager) == 0xAB0, "m_AttributeManager in CPlantedC4 should be at offset 0xAB0");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_OnBombDefused) == 0xDA8, "m_OnBombDefused in CPlantedC4 should be at offset 0xDA8");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_OnBombBeginDefuse) == 0xDD0, "m_OnBombBeginDefuse in CPlantedC4 should be at offset 0xDD0");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_OnBombDefuseAborted) == 0xDF8, "m_OnBombDefuseAborted in CPlantedC4 should be at offset 0xDF8");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bCannotBeDefused) == 0xE20, "m_bCannotBeDefused in CPlantedC4 should be at offset 0xE20");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_entitySpottedState) == 0xE28, "m_entitySpottedState in CPlantedC4 should be at offset 0xE28");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_nSpotRules) == 0xE40, "m_nSpotRules in CPlantedC4 should be at offset 0xE40");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bTrainingPlacedByPlayer) == 0xE44, "m_bTrainingPlacedByPlayer in CPlantedC4 should be at offset 0xE44");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bHasExploded) == 0xE45, "m_bHasExploded in CPlantedC4 should be at offset 0xE45");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_flTimerLength) == 0xE48, "m_flTimerLength in CPlantedC4 should be at offset 0xE48");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bBeingDefused) == 0xE4C, "m_bBeingDefused in CPlantedC4 should be at offset 0xE4C");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_fLastDefuseTime) == 0xE54, "m_fLastDefuseTime in CPlantedC4 should be at offset 0xE54");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_flDefuseLength) == 0xE5C, "m_flDefuseLength in CPlantedC4 should be at offset 0xE5C");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_flDefuseCountDown) == 0xE60, "m_flDefuseCountDown in CPlantedC4 should be at offset 0xE60");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bBombDefused) == 0xE64, "m_bBombDefused in CPlantedC4 should be at offset 0xE64");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_hBombDefuser) == 0xE68, "m_hBombDefuser in CPlantedC4 should be at offset 0xE68");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_iProgressBarTime) == 0xE6C, "m_iProgressBarTime in CPlantedC4 should be at offset 0xE6C");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bVoiceAlertFired) == 0xE70, "m_bVoiceAlertFired in CPlantedC4 should be at offset 0xE70");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_bVoiceAlertPlayed) == 0xE71, "m_bVoiceAlertPlayed in CPlantedC4 should be at offset 0xE71");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_flNextBotBeepTime) == 0xE78, "m_flNextBotBeepTime in CPlantedC4 should be at offset 0xE78");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_angCatchUpToPlayerEye) == 0xE80, "m_angCatchUpToPlayerEye in CPlantedC4 should be at offset 0xE80");
+		static_assert(offsetof(CS2::server::CPlantedC4, m_flLastSpinDetectionTime) == 0xE8C, "m_flLastSpinDetectionTime in CPlantedC4 should be at offset 0xE8C");
+		static_assert(sizeof(CS2::server::CPlantedC4) == 0xE90, "CPlantedC4 size should be 0xE90");
 	}
 }

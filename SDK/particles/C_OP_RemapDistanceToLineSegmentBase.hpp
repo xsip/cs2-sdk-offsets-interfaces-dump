@@ -13,18 +13,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapDistanceToLineSegmentBase : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nCP0; // 0x1c0 | Schema_Builtin | Size: 0x4
-			int32_t m_nCP1; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flMinInputValue; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxInputValue; // 0x1cc | Schema_Builtin | Size: 0x4
-			bool m_bInfiniteLine; // 0x1d0 | Schema_Builtin | Size: 0x1
+			int32_t m_nCP0; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nCP1; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flMinInputValue; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxInputValue; // 0x1dc | Schema_Builtin | Size: 0x4
+			bool m_bInfiniteLine; // 0x1e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_nCP0) == 0x1C0, "m_nCP0 in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_nCP1) == 0x1C4, "m_nCP1 in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_flMinInputValue) == 0x1C8, "m_flMinInputValue in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_flMaxInputValue) == 0x1CC, "m_flMaxInputValue in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_bInfiniteLine) == 0x1D0, "m_bInfiniteLine in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase) == 0x1D8, "C_OP_RemapDistanceToLineSegmentBase size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_nCP0) == 0x1D0, "m_nCP0 in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_nCP1) == 0x1D4, "m_nCP1 in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_flMinInputValue) == 0x1D8, "m_flMinInputValue in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_flMaxInputValue) == 0x1DC, "m_flMaxInputValue in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase, m_bInfiniteLine) == 0x1E0, "m_bInfiniteLine in C_OP_RemapDistanceToLineSegmentBase should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_OP_RemapDistanceToLineSegmentBase) == 0x1E8, "C_OP_RemapDistanceToLineSegmentBase size should be 0x1E8");
 	}
 }

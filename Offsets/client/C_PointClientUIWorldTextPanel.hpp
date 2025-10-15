@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1330
+			// Class size: 0x1300
 			namespace C_PointClientUIWorldTextPanel /*: public CS2::client::C_PointClientUIWorldPanel*/ {
-				constexpr std::ptrdiff_t m_messageText = 0x1130; // char m_messageText[512]; |  0x1130 | Schema_FixedArray | Size: 0x200
+				constexpr std::ptrdiff_t m_messageText = 0x1100; // char m_messageText[512]; |  0x1100 | Schema_FixedArray | Size: 0x200
 			}
 		}
 	}

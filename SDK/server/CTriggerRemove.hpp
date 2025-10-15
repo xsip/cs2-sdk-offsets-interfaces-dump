@@ -14,9 +14,9 @@ namespace CS2 {
 	namespace server {
 		class CTriggerRemove : public CS2::server::CBaseTrigger {
 		public:
-			entity2::CEntityIOOutput m_OnRemove; // 0x9c0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnRemove; // 0x9a8 | Schema_DeclaredClass | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CTriggerRemove, m_OnRemove) == 0x9C0, "m_OnRemove in CTriggerRemove should be at offset 0x9C0");
-		static_assert(sizeof(CS2::server::CTriggerRemove) == 0x9E8, "CTriggerRemove size should be 0x9E8");
+		static_assert(offsetof(CS2::server::CTriggerRemove, m_OnRemove) == 0x9A8, "m_OnRemove in CTriggerRemove should be at offset 0x9A8");
+		static_assert(sizeof(CS2::server::CTriggerRemove) == 0x9D0, "CTriggerRemove size should be 0x9D0");
 	}
 }

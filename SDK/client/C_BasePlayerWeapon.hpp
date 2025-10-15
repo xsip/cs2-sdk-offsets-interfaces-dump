@@ -14,22 +14,22 @@ namespace CS2 {
 	namespace client {
 		class C_BasePlayerWeapon : public CS2::client::C_EconEntity {
 		public:
-			entity2::GameTick_t m_nNextPrimaryAttackTick; // 0x18f8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flNextPrimaryAttackTickRatio; // 0x18fc | Schema_Builtin | Size: 0x4
-			entity2::GameTick_t m_nNextSecondaryAttackTick; // 0x1900 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flNextSecondaryAttackTickRatio; // 0x1904 | Schema_Builtin | Size: 0x4
-			int32_t m_iClip1; // 0x1908 | Schema_Builtin | Size: 0x4
-			int32_t m_iClip2; // 0x190c | Schema_Builtin | Size: 0x4
-			int32_t m_pReserveAmmo[2]; // 0x1910 | Schema_FixedArray | Size: 0x8
+			entity2::GameTick_t m_nNextPrimaryAttackTick; // 0x18e0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flNextPrimaryAttackTickRatio; // 0x18e4 | Schema_Builtin | Size: 0x4
+			entity2::GameTick_t m_nNextSecondaryAttackTick; // 0x18e8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flNextSecondaryAttackTickRatio; // 0x18ec | Schema_Builtin | Size: 0x4
+			int32_t m_iClip1; // 0x18f0 | Schema_Builtin | Size: 0x4
+			int32_t m_iClip2; // 0x18f4 | Schema_Builtin | Size: 0x4
+			int32_t m_pReserveAmmo[2]; // 0x18f8 | Schema_FixedArray | Size: 0x8
 			S2_PAD(0x18); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_nNextPrimaryAttackTick) == 0x18F8, "m_nNextPrimaryAttackTick in C_BasePlayerWeapon should be at offset 0x18F8");
-		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_flNextPrimaryAttackTickRatio) == 0x18FC, "m_flNextPrimaryAttackTickRatio in C_BasePlayerWeapon should be at offset 0x18FC");
-		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_nNextSecondaryAttackTick) == 0x1900, "m_nNextSecondaryAttackTick in C_BasePlayerWeapon should be at offset 0x1900");
-		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_flNextSecondaryAttackTickRatio) == 0x1904, "m_flNextSecondaryAttackTickRatio in C_BasePlayerWeapon should be at offset 0x1904");
-		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_iClip1) == 0x1908, "m_iClip1 in C_BasePlayerWeapon should be at offset 0x1908");
-		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_iClip2) == 0x190C, "m_iClip2 in C_BasePlayerWeapon should be at offset 0x190C");
-		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_pReserveAmmo) == 0x1910, "m_pReserveAmmo in C_BasePlayerWeapon should be at offset 0x1910");
-		static_assert(sizeof(CS2::client::C_BasePlayerWeapon) == 0x1930, "C_BasePlayerWeapon size should be 0x1930");
+		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_nNextPrimaryAttackTick) == 0x18E0, "m_nNextPrimaryAttackTick in C_BasePlayerWeapon should be at offset 0x18E0");
+		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_flNextPrimaryAttackTickRatio) == 0x18E4, "m_flNextPrimaryAttackTickRatio in C_BasePlayerWeapon should be at offset 0x18E4");
+		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_nNextSecondaryAttackTick) == 0x18E8, "m_nNextSecondaryAttackTick in C_BasePlayerWeapon should be at offset 0x18E8");
+		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_flNextSecondaryAttackTickRatio) == 0x18EC, "m_flNextSecondaryAttackTickRatio in C_BasePlayerWeapon should be at offset 0x18EC");
+		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_iClip1) == 0x18F0, "m_iClip1 in C_BasePlayerWeapon should be at offset 0x18F0");
+		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_iClip2) == 0x18F4, "m_iClip2 in C_BasePlayerWeapon should be at offset 0x18F4");
+		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_pReserveAmmo) == 0x18F8, "m_pReserveAmmo in C_BasePlayerWeapon should be at offset 0x18F8");
+		static_assert(sizeof(CS2::client::C_BasePlayerWeapon) == 0x1918, "C_BasePlayerWeapon size should be 0x1918");
 	}
 }

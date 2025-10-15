@@ -16,32 +16,32 @@ namespace CS2 {
 		class CC4 : public CS2::server::CCSWeaponBase {
 		public:
 			S2_PAD(0x30);
-			GlobalTypes::Vector m_vecLastValidPlayerHeldPosition; // 0x11d8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecLastValidDroppedPosition; // 0x11e4 | Schema_Atomic | Size: 0xc
-			bool m_bDoValidDroppedPositionCheck; // 0x11f0 | Schema_Builtin | Size: 0x1
-			bool m_bStartedArming; // 0x11f1 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vecLastValidPlayerHeldPosition; // 0x1200 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLastValidDroppedPosition; // 0x120c | Schema_Atomic | Size: 0xc
+			bool m_bDoValidDroppedPositionCheck; // 0x1218 | Schema_Builtin | Size: 0x1
+			bool m_bStartedArming; // 0x1219 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_fArmedTime; // 0x11f4 | Schema_DeclaredClass | Size: 0x4
-			bool m_bBombPlacedAnimation; // 0x11f8 | Schema_Builtin | Size: 0x1
-			bool m_bIsPlantingViaUse; // 0x11f9 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_fArmedTime; // 0x121c | Schema_DeclaredClass | Size: 0x4
+			bool m_bBombPlacedAnimation; // 0x1220 | Schema_Builtin | Size: 0x1
+			bool m_bIsPlantingViaUse; // 0x1221 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			server::EntitySpottedState_t m_entitySpottedState; // 0x1200 | Schema_DeclaredClass | Size: 0x18
-			int32_t m_nSpotRules; // 0x1218 | Schema_Builtin | Size: 0x4
-			bool m_bPlayedArmingBeeps[7]; // 0x121c | Schema_FixedArray | Size: 0x7
-			bool m_bBombPlanted; // 0x1223 | Schema_Builtin | Size: 0x1
+			server::EntitySpottedState_t m_entitySpottedState; // 0x1228 | Schema_DeclaredClass | Size: 0x18
+			int32_t m_nSpotRules; // 0x1240 | Schema_Builtin | Size: 0x4
+			bool m_bPlayedArmingBeeps[7]; // 0x1244 | Schema_FixedArray | Size: 0x7
+			bool m_bBombPlanted; // 0x124b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CC4, m_vecLastValidPlayerHeldPosition) == 0x11D8, "m_vecLastValidPlayerHeldPosition in CC4 should be at offset 0x11D8");
-		static_assert(offsetof(CS2::server::CC4, m_vecLastValidDroppedPosition) == 0x11E4, "m_vecLastValidDroppedPosition in CC4 should be at offset 0x11E4");
-		static_assert(offsetof(CS2::server::CC4, m_bDoValidDroppedPositionCheck) == 0x11F0, "m_bDoValidDroppedPositionCheck in CC4 should be at offset 0x11F0");
-		static_assert(offsetof(CS2::server::CC4, m_bStartedArming) == 0x11F1, "m_bStartedArming in CC4 should be at offset 0x11F1");
-		static_assert(offsetof(CS2::server::CC4, m_fArmedTime) == 0x11F4, "m_fArmedTime in CC4 should be at offset 0x11F4");
-		static_assert(offsetof(CS2::server::CC4, m_bBombPlacedAnimation) == 0x11F8, "m_bBombPlacedAnimation in CC4 should be at offset 0x11F8");
-		static_assert(offsetof(CS2::server::CC4, m_bIsPlantingViaUse) == 0x11F9, "m_bIsPlantingViaUse in CC4 should be at offset 0x11F9");
-		static_assert(offsetof(CS2::server::CC4, m_entitySpottedState) == 0x1200, "m_entitySpottedState in CC4 should be at offset 0x1200");
-		static_assert(offsetof(CS2::server::CC4, m_nSpotRules) == 0x1218, "m_nSpotRules in CC4 should be at offset 0x1218");
-		static_assert(offsetof(CS2::server::CC4, m_bPlayedArmingBeeps) == 0x121C, "m_bPlayedArmingBeeps in CC4 should be at offset 0x121C");
-		static_assert(offsetof(CS2::server::CC4, m_bBombPlanted) == 0x1223, "m_bBombPlanted in CC4 should be at offset 0x1223");
-		static_assert(sizeof(CS2::server::CC4) == 0x1228, "CC4 size should be 0x1228");
+		static_assert(offsetof(CS2::server::CC4, m_vecLastValidPlayerHeldPosition) == 0x1200, "m_vecLastValidPlayerHeldPosition in CC4 should be at offset 0x1200");
+		static_assert(offsetof(CS2::server::CC4, m_vecLastValidDroppedPosition) == 0x120C, "m_vecLastValidDroppedPosition in CC4 should be at offset 0x120C");
+		static_assert(offsetof(CS2::server::CC4, m_bDoValidDroppedPositionCheck) == 0x1218, "m_bDoValidDroppedPositionCheck in CC4 should be at offset 0x1218");
+		static_assert(offsetof(CS2::server::CC4, m_bStartedArming) == 0x1219, "m_bStartedArming in CC4 should be at offset 0x1219");
+		static_assert(offsetof(CS2::server::CC4, m_fArmedTime) == 0x121C, "m_fArmedTime in CC4 should be at offset 0x121C");
+		static_assert(offsetof(CS2::server::CC4, m_bBombPlacedAnimation) == 0x1220, "m_bBombPlacedAnimation in CC4 should be at offset 0x1220");
+		static_assert(offsetof(CS2::server::CC4, m_bIsPlantingViaUse) == 0x1221, "m_bIsPlantingViaUse in CC4 should be at offset 0x1221");
+		static_assert(offsetof(CS2::server::CC4, m_entitySpottedState) == 0x1228, "m_entitySpottedState in CC4 should be at offset 0x1228");
+		static_assert(offsetof(CS2::server::CC4, m_nSpotRules) == 0x1240, "m_nSpotRules in CC4 should be at offset 0x1240");
+		static_assert(offsetof(CS2::server::CC4, m_bPlayedArmingBeeps) == 0x1244, "m_bPlayedArmingBeeps in CC4 should be at offset 0x1244");
+		static_assert(offsetof(CS2::server::CC4, m_bBombPlanted) == 0x124B, "m_bBombPlanted in CC4 should be at offset 0x124B");
+		static_assert(sizeof(CS2::server::CC4) == 0x1250, "CC4 size should be 0x1250");
 	}
 }

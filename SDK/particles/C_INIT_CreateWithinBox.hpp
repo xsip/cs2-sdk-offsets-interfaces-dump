@@ -15,21 +15,21 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateWithinBox : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleVecInput m_vecMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecMax; // 0x840 | Schema_DeclaredClass | Size: 0x678
-			int32_t m_nControlPointNumber; // 0xeb8 | Schema_Builtin | Size: 0x4
-			bool m_bLocalSpace; // 0xebc | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vecMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecMax; // 0x890 | Schema_DeclaredClass | Size: 0x6b8
+			int32_t m_nControlPointNumber; // 0xf48 | Schema_Builtin | Size: 0x4
+			bool m_bLocalSpace; // 0xf4c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0xec0 | Schema_DeclaredClass | Size: 0x8
-			bool m_bUseNewCode; // 0xec8 | Schema_Builtin | Size: 0x1
+			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0xf50 | Schema_DeclaredClass | Size: 0x8
+			bool m_bUseNewCode; // 0xf58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_vecMin) == 0x1C8, "m_vecMin in C_INIT_CreateWithinBox should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_vecMax) == 0x840, "m_vecMax in C_INIT_CreateWithinBox should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_nControlPointNumber) == 0xEB8, "m_nControlPointNumber in C_INIT_CreateWithinBox should be at offset 0xEB8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_bLocalSpace) == 0xEBC, "m_bLocalSpace in C_INIT_CreateWithinBox should be at offset 0xEBC");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_randomnessParameters) == 0xEC0, "m_randomnessParameters in C_INIT_CreateWithinBox should be at offset 0xEC0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_bUseNewCode) == 0xEC8, "m_bUseNewCode in C_INIT_CreateWithinBox should be at offset 0xEC8");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateWithinBox) == 0xED0, "C_INIT_CreateWithinBox size should be 0xED0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_vecMin) == 0x1D8, "m_vecMin in C_INIT_CreateWithinBox should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_vecMax) == 0x890, "m_vecMax in C_INIT_CreateWithinBox should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_nControlPointNumber) == 0xF48, "m_nControlPointNumber in C_INIT_CreateWithinBox should be at offset 0xF48");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_bLocalSpace) == 0xF4C, "m_bLocalSpace in C_INIT_CreateWithinBox should be at offset 0xF4C");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_randomnessParameters) == 0xF50, "m_randomnessParameters in C_INIT_CreateWithinBox should be at offset 0xF50");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_bUseNewCode) == 0xF58, "m_bUseNewCode in C_INIT_CreateWithinBox should be at offset 0xF58");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateWithinBox) == 0xF60, "C_INIT_CreateWithinBox size should be 0xF60");
 	}
 }

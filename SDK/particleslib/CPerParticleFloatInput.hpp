@@ -14,6 +14,6 @@ namespace CS2 {
 		class CPerParticleFloatInput : public CS2::particleslib::CParticleFloatInput {
 		public:
 		};
-		static_assert(sizeof(CS2::particleslib::CPerParticleFloatInput) == 0x160, "CPerParticleFloatInput size should be 0x160");
+		static_assert(sizeof(CS2::particleslib::CPerParticleFloatInput) == 0x170, "CPerParticleFloatInput size should be 0x170");
 	}
 }

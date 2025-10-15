@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_CSGO_PreviewModelAlias_csgo_item_previewmodel : public CS2::client::C_CSGO_PreviewModel {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_CSGO_PreviewModelAlias_csgo_item_previewmodel) == 0x18B8, "C_CSGO_PreviewModelAlias_csgo_item_previewmodel size should be 0x18B8");
+		static_assert(sizeof(CS2::client::C_CSGO_PreviewModelAlias_csgo_item_previewmodel) == 0x1880, "C_CSGO_PreviewModelAlias_csgo_item_previewmodel size should be 0x1880");
 	}
 }

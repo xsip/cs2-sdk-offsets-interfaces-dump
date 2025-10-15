@@ -15,30 +15,30 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CalculateVectorAttribute : public CS2::particles::CParticleFunctionOperator {
 		public:
-			GlobalTypes::Vector m_vStartValue; // 0x1c0 | Schema_Atomic | Size: 0xc
-			particles::ParticleAttributeIndex_t m_nFieldInput1; // 0x1cc | Schema_DeclaredClass | Size: 0x4
-			float32 m_flInputScale1; // 0x1d0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldInput2; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flInputScale2; // 0x1d8 | Schema_Builtin | Size: 0x4
-			particles::ControlPointReference_t m_nControlPointInput1; // 0x1dc | Schema_DeclaredClass | Size: 0x14
-			float32 m_flControlPointScale1; // 0x1f0 | Schema_Builtin | Size: 0x4
-			particles::ControlPointReference_t m_nControlPointInput2; // 0x1f4 | Schema_DeclaredClass | Size: 0x14
-			float32 m_flControlPointScale2; // 0x208 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x20c | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vFinalOutputScale; // 0x210 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vStartValue; // 0x1d0 | Schema_Atomic | Size: 0xc
+			particles::ParticleAttributeIndex_t m_nFieldInput1; // 0x1dc | Schema_DeclaredClass | Size: 0x4
+			float32 m_flInputScale1; // 0x1e0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldInput2; // 0x1e4 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flInputScale2; // 0x1e8 | Schema_Builtin | Size: 0x4
+			particles::ControlPointReference_t m_nControlPointInput1; // 0x1ec | Schema_DeclaredClass | Size: 0x14
+			float32 m_flControlPointScale1; // 0x200 | Schema_Builtin | Size: 0x4
+			particles::ControlPointReference_t m_nControlPointInput2; // 0x204 | Schema_DeclaredClass | Size: 0x14
+			float32 m_flControlPointScale2; // 0x218 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x21c | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vFinalOutputScale; // 0x220 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_vStartValue) == 0x1C0, "m_vStartValue in C_OP_CalculateVectorAttribute should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldInput1) == 0x1CC, "m_nFieldInput1 in C_OP_CalculateVectorAttribute should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flInputScale1) == 0x1D0, "m_flInputScale1 in C_OP_CalculateVectorAttribute should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldInput2) == 0x1D4, "m_nFieldInput2 in C_OP_CalculateVectorAttribute should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flInputScale2) == 0x1D8, "m_flInputScale2 in C_OP_CalculateVectorAttribute should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nControlPointInput1) == 0x1DC, "m_nControlPointInput1 in C_OP_CalculateVectorAttribute should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flControlPointScale1) == 0x1F0, "m_flControlPointScale1 in C_OP_CalculateVectorAttribute should be at offset 0x1F0");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nControlPointInput2) == 0x1F4, "m_nControlPointInput2 in C_OP_CalculateVectorAttribute should be at offset 0x1F4");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flControlPointScale2) == 0x208, "m_flControlPointScale2 in C_OP_CalculateVectorAttribute should be at offset 0x208");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldOutput) == 0x20C, "m_nFieldOutput in C_OP_CalculateVectorAttribute should be at offset 0x20C");
-		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_vFinalOutputScale) == 0x210, "m_vFinalOutputScale in C_OP_CalculateVectorAttribute should be at offset 0x210");
-		static_assert(sizeof(CS2::particles::C_OP_CalculateVectorAttribute) == 0x220, "C_OP_CalculateVectorAttribute size should be 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_vStartValue) == 0x1D0, "m_vStartValue in C_OP_CalculateVectorAttribute should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldInput1) == 0x1DC, "m_nFieldInput1 in C_OP_CalculateVectorAttribute should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flInputScale1) == 0x1E0, "m_flInputScale1 in C_OP_CalculateVectorAttribute should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldInput2) == 0x1E4, "m_nFieldInput2 in C_OP_CalculateVectorAttribute should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flInputScale2) == 0x1E8, "m_flInputScale2 in C_OP_CalculateVectorAttribute should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nControlPointInput1) == 0x1EC, "m_nControlPointInput1 in C_OP_CalculateVectorAttribute should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flControlPointScale1) == 0x200, "m_flControlPointScale1 in C_OP_CalculateVectorAttribute should be at offset 0x200");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nControlPointInput2) == 0x204, "m_nControlPointInput2 in C_OP_CalculateVectorAttribute should be at offset 0x204");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flControlPointScale2) == 0x218, "m_flControlPointScale2 in C_OP_CalculateVectorAttribute should be at offset 0x218");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldOutput) == 0x21C, "m_nFieldOutput in C_OP_CalculateVectorAttribute should be at offset 0x21C");
+		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_vFinalOutputScale) == 0x220, "m_vFinalOutputScale in C_OP_CalculateVectorAttribute should be at offset 0x220");
+		static_assert(sizeof(CS2::particles::C_OP_CalculateVectorAttribute) == 0x230, "C_OP_CalculateVectorAttribute size should be 0x230");
 	}
 }

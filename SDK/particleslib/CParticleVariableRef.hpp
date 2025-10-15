@@ -5,7 +5,6 @@
 
 #include <SDK/GlobalTypes.hpp>
 
-#include <SDK/pulse_runtime_lib/PulseValueType_t.hpp>
 
 
 
@@ -14,11 +13,10 @@ namespace CS2 {
 		class CParticleVariableRef  {
 		public:
 			GlobalTypes::CKV3MemberNameWithStorage m_variableName; // 0x0 | Schema_Atomic | Size: 0x38
-			pulse_runtime_lib::PulseValueType_t m_variableType; // 0x38 | Schema_DeclaredEnum | Size: 0x4
-			S2_PAD(0x4); // End padding
+			GlobalTypes::CPulseValueFullType m_variableType; // 0x38 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::particleslib::CParticleVariableRef, m_variableName) == 0x0, "m_variableName in CParticleVariableRef should be at offset 0x0");
 		static_assert(offsetof(CS2::particleslib::CParticleVariableRef, m_variableType) == 0x38, "m_variableType in CParticleVariableRef should be at offset 0x38");
-		static_assert(sizeof(CS2::particleslib::CParticleVariableRef) == 0x40, "CParticleVariableRef size should be 0x40");
+		static_assert(sizeof(CS2::particleslib::CParticleVariableRef) == 0x50, "CParticleVariableRef size should be 0x50");
 	}
 }

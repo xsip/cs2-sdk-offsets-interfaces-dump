@@ -8,23 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xB08
+			// Class size: 0xB68
 			namespace C_OP_LockToBone /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_modelInput = 0x1c0; // particleslib::CParticleModelInput m_modelInput; |  Schema_DeclaredClass | Size: 0x60
-				constexpr std::ptrdiff_t m_transformInput = 0x220; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_flLifeTimeFadeStart = 0x288; // float32 m_flLifeTimeFadeStart; |  0x288 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLifeTimeFadeEnd = 0x28c; // float32 m_flLifeTimeFadeEnd; |  0x28c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flJumpThreshold = 0x290; // float32 m_flJumpThreshold; |  0x290 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPrevPosScale = 0x294; // float32 m_flPrevPosScale; |  0x294 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_HitboxSetName = 0x298; // char m_HitboxSetName[128]; |  0x298 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_bRigid = 0x318; // bool m_bRigid; |  0x318 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseBones = 0x319; // bool m_bUseBones; |  0x319 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x31c; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutputPrev = 0x320; // particles::ParticleAttributeIndex_t m_nFieldOutputPrev; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nRotationSetType = 0x324; // particles::ParticleRotationLockType_t m_nRotationSetType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bRigidRotationLock = 0x328; // bool m_bRigidRotationLock; |  0x328 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecRotation = 0x330; // particleslib::CPerParticleVecInput m_vecRotation; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flRotLerp = 0x9a8; // particleslib::CPerParticleFloatInput m_flRotLerp; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_modelInput = 0x1d0; // particleslib::CParticleModelInput m_modelInput; |  Schema_DeclaredClass | Size: 0x60
+				constexpr std::ptrdiff_t m_transformInput = 0x230; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_flLifeTimeFadeStart = 0x298; // float32 m_flLifeTimeFadeStart; |  0x298 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLifeTimeFadeEnd = 0x29c; // float32 m_flLifeTimeFadeEnd; |  0x29c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flJumpThreshold = 0x2a0; // float32 m_flJumpThreshold; |  0x2a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPrevPosScale = 0x2a4; // float32 m_flPrevPosScale; |  0x2a4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_HitboxSetName = 0x2a8; // char m_HitboxSetName[128]; |  0x2a8 | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_bRigid = 0x328; // bool m_bRigid; |  0x328 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseBones = 0x329; // bool m_bUseBones; |  0x329 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x32c; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutputPrev = 0x330; // particles::ParticleAttributeIndex_t m_nFieldOutputPrev; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nRotationSetType = 0x334; // particles::ParticleRotationLockType_t m_nRotationSetType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bRigidRotationLock = 0x338; // bool m_bRigidRotationLock; |  0x338 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecRotation = 0x340; // particleslib::CPerParticleVecInput m_vecRotation; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flRotLerp = 0x9f8; // particleslib::CPerParticleFloatInput m_flRotLerp; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

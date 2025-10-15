@@ -16,63 +16,63 @@ namespace CS2 {
 	namespace server {
 		class CBaseButton : public CS2::server::CBaseToggle {
 		public:
-			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x870 | Schema_Atomic | Size: 0xc
-			bool m_fStayPushed; // 0x87c | Schema_Builtin | Size: 0x1
-			bool m_fRotating; // 0x87d | Schema_Builtin | Size: 0x1
+			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x858 | Schema_Atomic | Size: 0xc
+			bool m_fStayPushed; // 0x864 | Schema_Builtin | Size: 0x1
+			bool m_fRotating; // 0x865 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			server::locksound_t m_ls; // 0x880 | Schema_DeclaredClass | Size: 0x20
-			GlobalTypes::CUtlSymbolLarge m_sUseSound; // 0x8a0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sLockedSound; // 0x8a8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sUnlockedSound; // 0x8b0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sOverrideAnticipationName; // 0x8b8 | Schema_Atomic | Size: 0x8
-			bool m_bLocked; // 0x8c0 | Schema_Builtin | Size: 0x1
-			bool m_bDisabled; // 0x8c1 | Schema_Builtin | Size: 0x1
+			server::locksound_t m_ls; // 0x868 | Schema_DeclaredClass | Size: 0x20
+			GlobalTypes::CUtlSymbolLarge m_sUseSound; // 0x888 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sLockedSound; // 0x890 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sUnlockedSound; // 0x898 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sOverrideAnticipationName; // 0x8a0 | Schema_Atomic | Size: 0x8
+			bool m_bLocked; // 0x8a8 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x8a9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_flUseLockedTime; // 0x8c4 | Schema_DeclaredClass | Size: 0x4
-			bool m_bSolidBsp; // 0x8c8 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flUseLockedTime; // 0x8ac | Schema_DeclaredClass | Size: 0x4
+			bool m_bSolidBsp; // 0x8b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			entity2::CEntityIOOutput m_OnDamaged; // 0x8d0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPressed; // 0x8f8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnUseLocked; // 0x920 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnIn; // 0x948 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnOut; // 0x970 | Schema_DeclaredClass | Size: 0x28
-			int32_t m_nState; // 0x998 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CEntityHandle m_hConstraint; // 0x99c | Schema_Atomic | Size: 0x4
-			GlobalTypes::CEntityHandle m_hConstraintParent; // 0x9a0 | Schema_Atomic | Size: 0x4
-			bool m_bForceNpcExclude; // 0x9a4 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnDamaged; // 0x8b8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnPressed; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnUseLocked; // 0x908 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnIn; // 0x930 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnOut; // 0x958 | Schema_DeclaredClass | Size: 0x28
+			int32_t m_nState; // 0x980 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CEntityHandle m_hConstraint; // 0x984 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CEntityHandle m_hConstraintParent; // 0x988 | Schema_Atomic | Size: 0x4
+			bool m_bForceNpcExclude; // 0x98c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CUtlSymbolLarge m_sGlowEntity; // 0x9a8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseModelEntity > m_glowEntity; // 0x9b0 | Schema_Atomic | Size: 0x4
-			char  m_glowEntity[0x4]; // 0x9b0 | Schema_Atomic | Size: 0x4
-			bool m_usable; // 0x9b4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_sGlowEntity; // 0x990 | Schema_Atomic | Size: 0x8
+			// server::CHandle< server::CBaseModelEntity > m_glowEntity; // 0x998 | Schema_Atomic | Size: 0x4
+			char  m_glowEntity[0x4]; // 0x998 | Schema_Atomic | Size: 0x4
+			bool m_usable; // 0x99c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CUtlSymbolLarge m_szDisplayText; // 0x9b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_szDisplayText; // 0x9a0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CBaseButton, m_angMoveEntitySpace) == 0x870, "m_angMoveEntitySpace in CBaseButton should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CBaseButton, m_fStayPushed) == 0x87C, "m_fStayPushed in CBaseButton should be at offset 0x87C");
-		static_assert(offsetof(CS2::server::CBaseButton, m_fRotating) == 0x87D, "m_fRotating in CBaseButton should be at offset 0x87D");
-		static_assert(offsetof(CS2::server::CBaseButton, m_ls) == 0x880, "m_ls in CBaseButton should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CBaseButton, m_sUseSound) == 0x8A0, "m_sUseSound in CBaseButton should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CBaseButton, m_sLockedSound) == 0x8A8, "m_sLockedSound in CBaseButton should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CBaseButton, m_sUnlockedSound) == 0x8B0, "m_sUnlockedSound in CBaseButton should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CBaseButton, m_sOverrideAnticipationName) == 0x8B8, "m_sOverrideAnticipationName in CBaseButton should be at offset 0x8B8");
-		static_assert(offsetof(CS2::server::CBaseButton, m_bLocked) == 0x8C0, "m_bLocked in CBaseButton should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CBaseButton, m_bDisabled) == 0x8C1, "m_bDisabled in CBaseButton should be at offset 0x8C1");
-		static_assert(offsetof(CS2::server::CBaseButton, m_flUseLockedTime) == 0x8C4, "m_flUseLockedTime in CBaseButton should be at offset 0x8C4");
-		static_assert(offsetof(CS2::server::CBaseButton, m_bSolidBsp) == 0x8C8, "m_bSolidBsp in CBaseButton should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CBaseButton, m_OnDamaged) == 0x8D0, "m_OnDamaged in CBaseButton should be at offset 0x8D0");
-		static_assert(offsetof(CS2::server::CBaseButton, m_OnPressed) == 0x8F8, "m_OnPressed in CBaseButton should be at offset 0x8F8");
-		static_assert(offsetof(CS2::server::CBaseButton, m_OnUseLocked) == 0x920, "m_OnUseLocked in CBaseButton should be at offset 0x920");
-		static_assert(offsetof(CS2::server::CBaseButton, m_OnIn) == 0x948, "m_OnIn in CBaseButton should be at offset 0x948");
-		static_assert(offsetof(CS2::server::CBaseButton, m_OnOut) == 0x970, "m_OnOut in CBaseButton should be at offset 0x970");
-		static_assert(offsetof(CS2::server::CBaseButton, m_nState) == 0x998, "m_nState in CBaseButton should be at offset 0x998");
-		static_assert(offsetof(CS2::server::CBaseButton, m_hConstraint) == 0x99C, "m_hConstraint in CBaseButton should be at offset 0x99C");
-		static_assert(offsetof(CS2::server::CBaseButton, m_hConstraintParent) == 0x9A0, "m_hConstraintParent in CBaseButton should be at offset 0x9A0");
-		static_assert(offsetof(CS2::server::CBaseButton, m_bForceNpcExclude) == 0x9A4, "m_bForceNpcExclude in CBaseButton should be at offset 0x9A4");
-		static_assert(offsetof(CS2::server::CBaseButton, m_sGlowEntity) == 0x9A8, "m_sGlowEntity in CBaseButton should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CBaseButton, m_glowEntity) == 0x9B0, "m_glowEntity in CBaseButton should be at offset 0x9B0");
-		static_assert(offsetof(CS2::server::CBaseButton, m_usable) == 0x9B4, "m_usable in CBaseButton should be at offset 0x9B4");
-		static_assert(offsetof(CS2::server::CBaseButton, m_szDisplayText) == 0x9B8, "m_szDisplayText in CBaseButton should be at offset 0x9B8");
-		static_assert(sizeof(CS2::server::CBaseButton) == 0x9C0, "CBaseButton size should be 0x9C0");
+		static_assert(offsetof(CS2::server::CBaseButton, m_angMoveEntitySpace) == 0x858, "m_angMoveEntitySpace in CBaseButton should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CBaseButton, m_fStayPushed) == 0x864, "m_fStayPushed in CBaseButton should be at offset 0x864");
+		static_assert(offsetof(CS2::server::CBaseButton, m_fRotating) == 0x865, "m_fRotating in CBaseButton should be at offset 0x865");
+		static_assert(offsetof(CS2::server::CBaseButton, m_ls) == 0x868, "m_ls in CBaseButton should be at offset 0x868");
+		static_assert(offsetof(CS2::server::CBaseButton, m_sUseSound) == 0x888, "m_sUseSound in CBaseButton should be at offset 0x888");
+		static_assert(offsetof(CS2::server::CBaseButton, m_sLockedSound) == 0x890, "m_sLockedSound in CBaseButton should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CBaseButton, m_sUnlockedSound) == 0x898, "m_sUnlockedSound in CBaseButton should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CBaseButton, m_sOverrideAnticipationName) == 0x8A0, "m_sOverrideAnticipationName in CBaseButton should be at offset 0x8A0");
+		static_assert(offsetof(CS2::server::CBaseButton, m_bLocked) == 0x8A8, "m_bLocked in CBaseButton should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CBaseButton, m_bDisabled) == 0x8A9, "m_bDisabled in CBaseButton should be at offset 0x8A9");
+		static_assert(offsetof(CS2::server::CBaseButton, m_flUseLockedTime) == 0x8AC, "m_flUseLockedTime in CBaseButton should be at offset 0x8AC");
+		static_assert(offsetof(CS2::server::CBaseButton, m_bSolidBsp) == 0x8B0, "m_bSolidBsp in CBaseButton should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CBaseButton, m_OnDamaged) == 0x8B8, "m_OnDamaged in CBaseButton should be at offset 0x8B8");
+		static_assert(offsetof(CS2::server::CBaseButton, m_OnPressed) == 0x8E0, "m_OnPressed in CBaseButton should be at offset 0x8E0");
+		static_assert(offsetof(CS2::server::CBaseButton, m_OnUseLocked) == 0x908, "m_OnUseLocked in CBaseButton should be at offset 0x908");
+		static_assert(offsetof(CS2::server::CBaseButton, m_OnIn) == 0x930, "m_OnIn in CBaseButton should be at offset 0x930");
+		static_assert(offsetof(CS2::server::CBaseButton, m_OnOut) == 0x958, "m_OnOut in CBaseButton should be at offset 0x958");
+		static_assert(offsetof(CS2::server::CBaseButton, m_nState) == 0x980, "m_nState in CBaseButton should be at offset 0x980");
+		static_assert(offsetof(CS2::server::CBaseButton, m_hConstraint) == 0x984, "m_hConstraint in CBaseButton should be at offset 0x984");
+		static_assert(offsetof(CS2::server::CBaseButton, m_hConstraintParent) == 0x988, "m_hConstraintParent in CBaseButton should be at offset 0x988");
+		static_assert(offsetof(CS2::server::CBaseButton, m_bForceNpcExclude) == 0x98C, "m_bForceNpcExclude in CBaseButton should be at offset 0x98C");
+		static_assert(offsetof(CS2::server::CBaseButton, m_sGlowEntity) == 0x990, "m_sGlowEntity in CBaseButton should be at offset 0x990");
+		static_assert(offsetof(CS2::server::CBaseButton, m_glowEntity) == 0x998, "m_glowEntity in CBaseButton should be at offset 0x998");
+		static_assert(offsetof(CS2::server::CBaseButton, m_usable) == 0x99C, "m_usable in CBaseButton should be at offset 0x99C");
+		static_assert(offsetof(CS2::server::CBaseButton, m_szDisplayText) == 0x9A0, "m_szDisplayText in CBaseButton should be at offset 0x9A0");
+		static_assert(sizeof(CS2::server::CBaseButton) == 0x9A8, "CBaseButton size should be 0x9A8");
 	}
 }

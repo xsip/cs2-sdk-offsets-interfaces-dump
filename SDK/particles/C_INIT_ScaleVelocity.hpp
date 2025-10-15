@@ -14,9 +14,9 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_ScaleVelocity : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CParticleCollectionVecInput m_vecScale; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
+			particleslib::CParticleCollectionVecInput m_vecScale; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_ScaleVelocity, m_vecScale) == 0x1C8, "m_vecScale in C_INIT_ScaleVelocity should be at offset 0x1C8");
-		static_assert(sizeof(CS2::particles::C_INIT_ScaleVelocity) == 0x840, "C_INIT_ScaleVelocity size should be 0x840");
+		static_assert(offsetof(CS2::particles::C_INIT_ScaleVelocity, m_vecScale) == 0x1D8, "m_vecScale in C_INIT_ScaleVelocity should be at offset 0x1D8");
+		static_assert(sizeof(CS2::particles::C_INIT_ScaleVelocity) == 0x890, "C_INIT_ScaleVelocity size should be 0x890");
 	}
 }

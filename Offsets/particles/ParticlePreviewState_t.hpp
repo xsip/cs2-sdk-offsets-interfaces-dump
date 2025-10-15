@@ -25,6 +25,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bShouldDrawAttachmentNames = 0x52; // bool m_bShouldDrawAttachmentNames; |  0x52 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bShouldDrawControlPointAxes = 0x53; // bool m_bShouldDrawControlPointAxes; |  0x53 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAnimationNonLooping = 0x54; // bool m_bAnimationNonLooping; |  0x54 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSequenceNameIsAnimClipPath = 0x55; // bool m_bSequenceNameIsAnimClipPath; |  0x55 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_vecPreviewGravity = 0x58; // GlobalTypes::Vector m_vecPreviewGravity; |  Schema_Atomic | Size: 0xc
 			}
 		}

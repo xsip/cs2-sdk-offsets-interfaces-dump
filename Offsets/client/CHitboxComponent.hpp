@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x28
+			// Class size: 0x18
 			namespace CHitboxComponent /*: public CS2::entity2::CEntityComponent*/ {
-				constexpr std::ptrdiff_t m_flBoundsExpandRadius = 0x20; // float32 m_flBoundsExpandRadius; |  0x20 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBoundsExpandRadius = 0x14; // float32 m_flBoundsExpandRadius; |  0x14 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

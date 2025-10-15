@@ -13,22 +13,22 @@ namespace CS2 {
 	namespace client {
 		class C_RagdollPropAttached : public CS2::client::C_RagdollProp {
 		public:
-			uint32_t m_boneIndexAttached; // 0x1200 | Schema_Builtin | Size: 0x4
-			uint32_t m_ragdollAttachedObjectIndex; // 0x1204 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_attachmentPointBoneSpace; // 0x1208 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_attachmentPointRagdollSpace; // 0x1214 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecOffset; // 0x1220 | Schema_Atomic | Size: 0xc
-			float32 m_parentTime; // 0x122c | Schema_Builtin | Size: 0x4
-			bool m_bHasParent; // 0x1230 | Schema_Builtin | Size: 0x1
+			uint32_t m_boneIndexAttached; // 0x11e8 | Schema_Builtin | Size: 0x4
+			uint32_t m_ragdollAttachedObjectIndex; // 0x11ec | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_attachmentPointBoneSpace; // 0x11f0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_attachmentPointRagdollSpace; // 0x11fc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecOffset; // 0x1208 | Schema_Atomic | Size: 0xc
+			float32 m_parentTime; // 0x1214 | Schema_Builtin | Size: 0x4
+			bool m_bHasParent; // 0x1218 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_boneIndexAttached) == 0x1200, "m_boneIndexAttached in C_RagdollPropAttached should be at offset 0x1200");
-		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_ragdollAttachedObjectIndex) == 0x1204, "m_ragdollAttachedObjectIndex in C_RagdollPropAttached should be at offset 0x1204");
-		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_attachmentPointBoneSpace) == 0x1208, "m_attachmentPointBoneSpace in C_RagdollPropAttached should be at offset 0x1208");
-		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_attachmentPointRagdollSpace) == 0x1214, "m_attachmentPointRagdollSpace in C_RagdollPropAttached should be at offset 0x1214");
-		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_vecOffset) == 0x1220, "m_vecOffset in C_RagdollPropAttached should be at offset 0x1220");
-		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_parentTime) == 0x122C, "m_parentTime in C_RagdollPropAttached should be at offset 0x122C");
-		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_bHasParent) == 0x1230, "m_bHasParent in C_RagdollPropAttached should be at offset 0x1230");
-		static_assert(sizeof(CS2::client::C_RagdollPropAttached) == 0x1238, "C_RagdollPropAttached size should be 0x1238");
+		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_boneIndexAttached) == 0x11E8, "m_boneIndexAttached in C_RagdollPropAttached should be at offset 0x11E8");
+		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_ragdollAttachedObjectIndex) == 0x11EC, "m_ragdollAttachedObjectIndex in C_RagdollPropAttached should be at offset 0x11EC");
+		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_attachmentPointBoneSpace) == 0x11F0, "m_attachmentPointBoneSpace in C_RagdollPropAttached should be at offset 0x11F0");
+		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_attachmentPointRagdollSpace) == 0x11FC, "m_attachmentPointRagdollSpace in C_RagdollPropAttached should be at offset 0x11FC");
+		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_vecOffset) == 0x1208, "m_vecOffset in C_RagdollPropAttached should be at offset 0x1208");
+		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_parentTime) == 0x1214, "m_parentTime in C_RagdollPropAttached should be at offset 0x1214");
+		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_bHasParent) == 0x1218, "m_bHasParent in C_RagdollPropAttached should be at offset 0x1218");
+		static_assert(sizeof(CS2::client::C_RagdollPropAttached) == 0x1220, "C_RagdollPropAttached size should be 0x1220");
 	}
 }

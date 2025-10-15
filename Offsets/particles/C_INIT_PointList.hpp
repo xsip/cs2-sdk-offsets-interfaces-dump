@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1F0
+			// Class size: 0x200
 			namespace C_INIT_PointList /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_pointList = 0x1d0; // GlobalTypes::CUtlVector< particles::PointDefinition_t > m_pointList; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bPlaceAlongPath = 0x1e8; // bool m_bPlaceAlongPath; |  0x1e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bClosedLoop = 0x1e9; // bool m_bClosedLoop; |  0x1e9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nNumPointsAlongPath = 0x1ec; // int32_t m_nNumPointsAlongPath; |  0x1ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_pointList = 0x1e0; // GlobalTypes::CUtlVector< particles::PointDefinition_t > m_pointList; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bPlaceAlongPath = 0x1f8; // bool m_bPlaceAlongPath; |  0x1f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bClosedLoop = 0x1f9; // bool m_bClosedLoop; |  0x1f9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nNumPointsAlongPath = 0x1fc; // int32_t m_nNumPointsAlongPath; |  0x1fc | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

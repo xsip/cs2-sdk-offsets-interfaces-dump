@@ -17,30 +17,30 @@ namespace CS2 {
 	namespace client {
 		class C_C4 : public CS2::client::C_CSWeaponBase {
 		public:
-			client::ParticleIndex_t m_activeLightParticleIndex; // 0x1f90 | Schema_DeclaredClass | Size: 0x4
-			client::C4LightEffect_t m_eActiveLightEffect; // 0x1f94 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bStartedArming; // 0x1f98 | Schema_Builtin | Size: 0x1
+			client::ParticleIndex_t m_activeLightParticleIndex; // 0x1f80 | Schema_DeclaredClass | Size: 0x4
+			client::C4LightEffect_t m_eActiveLightEffect; // 0x1f84 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bStartedArming; // 0x1f88 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_fArmedTime; // 0x1f9c | Schema_DeclaredClass | Size: 0x4
-			bool m_bBombPlacedAnimation; // 0x1fa0 | Schema_Builtin | Size: 0x1
-			bool m_bIsPlantingViaUse; // 0x1fa1 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_fArmedTime; // 0x1f8c | Schema_DeclaredClass | Size: 0x4
+			bool m_bBombPlacedAnimation; // 0x1f90 | Schema_Builtin | Size: 0x1
+			bool m_bIsPlantingViaUse; // 0x1f91 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			client::EntitySpottedState_t m_entitySpottedState; // 0x1fa8 | Schema_DeclaredClass | Size: 0x18
-			int32_t m_nSpotRules; // 0x1fc0 | Schema_Builtin | Size: 0x4
-			bool m_bPlayedArmingBeeps[7]; // 0x1fc4 | Schema_FixedArray | Size: 0x7
-			bool m_bBombPlanted; // 0x1fcb | Schema_Builtin | Size: 0x1
+			client::EntitySpottedState_t m_entitySpottedState; // 0x1f98 | Schema_DeclaredClass | Size: 0x18
+			int32_t m_nSpotRules; // 0x1fb0 | Schema_Builtin | Size: 0x4
+			bool m_bPlayedArmingBeeps[7]; // 0x1fb4 | Schema_FixedArray | Size: 0x7
+			bool m_bBombPlanted; // 0x1fbb | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_C4, m_activeLightParticleIndex) == 0x1F90, "m_activeLightParticleIndex in C_C4 should be at offset 0x1F90");
-		static_assert(offsetof(CS2::client::C_C4, m_eActiveLightEffect) == 0x1F94, "m_eActiveLightEffect in C_C4 should be at offset 0x1F94");
-		static_assert(offsetof(CS2::client::C_C4, m_bStartedArming) == 0x1F98, "m_bStartedArming in C_C4 should be at offset 0x1F98");
-		static_assert(offsetof(CS2::client::C_C4, m_fArmedTime) == 0x1F9C, "m_fArmedTime in C_C4 should be at offset 0x1F9C");
-		static_assert(offsetof(CS2::client::C_C4, m_bBombPlacedAnimation) == 0x1FA0, "m_bBombPlacedAnimation in C_C4 should be at offset 0x1FA0");
-		static_assert(offsetof(CS2::client::C_C4, m_bIsPlantingViaUse) == 0x1FA1, "m_bIsPlantingViaUse in C_C4 should be at offset 0x1FA1");
-		static_assert(offsetof(CS2::client::C_C4, m_entitySpottedState) == 0x1FA8, "m_entitySpottedState in C_C4 should be at offset 0x1FA8");
-		static_assert(offsetof(CS2::client::C_C4, m_nSpotRules) == 0x1FC0, "m_nSpotRules in C_C4 should be at offset 0x1FC0");
-		static_assert(offsetof(CS2::client::C_C4, m_bPlayedArmingBeeps) == 0x1FC4, "m_bPlayedArmingBeeps in C_C4 should be at offset 0x1FC4");
-		static_assert(offsetof(CS2::client::C_C4, m_bBombPlanted) == 0x1FCB, "m_bBombPlanted in C_C4 should be at offset 0x1FCB");
-		static_assert(sizeof(CS2::client::C_C4) == 0x1FD0, "C_C4 size should be 0x1FD0");
+		static_assert(offsetof(CS2::client::C_C4, m_activeLightParticleIndex) == 0x1F80, "m_activeLightParticleIndex in C_C4 should be at offset 0x1F80");
+		static_assert(offsetof(CS2::client::C_C4, m_eActiveLightEffect) == 0x1F84, "m_eActiveLightEffect in C_C4 should be at offset 0x1F84");
+		static_assert(offsetof(CS2::client::C_C4, m_bStartedArming) == 0x1F88, "m_bStartedArming in C_C4 should be at offset 0x1F88");
+		static_assert(offsetof(CS2::client::C_C4, m_fArmedTime) == 0x1F8C, "m_fArmedTime in C_C4 should be at offset 0x1F8C");
+		static_assert(offsetof(CS2::client::C_C4, m_bBombPlacedAnimation) == 0x1F90, "m_bBombPlacedAnimation in C_C4 should be at offset 0x1F90");
+		static_assert(offsetof(CS2::client::C_C4, m_bIsPlantingViaUse) == 0x1F91, "m_bIsPlantingViaUse in C_C4 should be at offset 0x1F91");
+		static_assert(offsetof(CS2::client::C_C4, m_entitySpottedState) == 0x1F98, "m_entitySpottedState in C_C4 should be at offset 0x1F98");
+		static_assert(offsetof(CS2::client::C_C4, m_nSpotRules) == 0x1FB0, "m_nSpotRules in C_C4 should be at offset 0x1FB0");
+		static_assert(offsetof(CS2::client::C_C4, m_bPlayedArmingBeeps) == 0x1FB4, "m_bPlayedArmingBeeps in C_C4 should be at offset 0x1FB4");
+		static_assert(offsetof(CS2::client::C_C4, m_bBombPlanted) == 0x1FBB, "m_bBombPlanted in C_C4 should be at offset 0x1FBB");
+		static_assert(sizeof(CS2::client::C_C4) == 0x1FC0, "C_C4 size should be 0x1FC0");
 	}
 }

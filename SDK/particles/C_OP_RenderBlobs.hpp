@@ -14,27 +14,27 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderBlobs : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particleslib::CParticleCollectionRendererFloatInput m_cubeWidth; // 0x210 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_cutoffRadius; // 0x370 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_renderRadius; // 0x4d0 | Schema_DeclaredClass | Size: 0x160
-			uint32_t m_nVertexCountKb; // 0x630 | Schema_Builtin | Size: 0x4
-			uint32_t m_nIndexCountKb; // 0x634 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleCP; // 0x638 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionRendererFloatInput m_cubeWidth; // 0x220 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_cutoffRadius; // 0x390 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_renderRadius; // 0x500 | Schema_DeclaredClass | Size: 0x170
+			uint32_t m_nVertexCountKb; // 0x670 | Schema_Builtin | Size: 0x4
+			uint32_t m_nIndexCountKb; // 0x674 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleCP; // 0x678 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x640 | Schema_Atomic | Size: 0x18
-			char  m_MaterialVars[0x18]; // 0x640 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x680 | Schema_Atomic | Size: 0x18
+			char  m_MaterialVars[0x18]; // 0x680 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x670 | Schema_Atomic | Size: 0x8
-			char  m_hMaterial[0x8]; // 0x670 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x6b0 | Schema_Atomic | Size: 0x8
+			char  m_hMaterial[0x8]; // 0x6b0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cubeWidth) == 0x210, "m_cubeWidth in C_OP_RenderBlobs should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cutoffRadius) == 0x370, "m_cutoffRadius in C_OP_RenderBlobs should be at offset 0x370");
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_renderRadius) == 0x4D0, "m_renderRadius in C_OP_RenderBlobs should be at offset 0x4D0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_nVertexCountKb) == 0x630, "m_nVertexCountKb in C_OP_RenderBlobs should be at offset 0x630");
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_nIndexCountKb) == 0x634, "m_nIndexCountKb in C_OP_RenderBlobs should be at offset 0x634");
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_nScaleCP) == 0x638, "m_nScaleCP in C_OP_RenderBlobs should be at offset 0x638");
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_MaterialVars) == 0x640, "m_MaterialVars in C_OP_RenderBlobs should be at offset 0x640");
-		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_hMaterial) == 0x670, "m_hMaterial in C_OP_RenderBlobs should be at offset 0x670");
-		static_assert(sizeof(CS2::particles::C_OP_RenderBlobs) == 0x678, "C_OP_RenderBlobs size should be 0x678");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cubeWidth) == 0x220, "m_cubeWidth in C_OP_RenderBlobs should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cutoffRadius) == 0x390, "m_cutoffRadius in C_OP_RenderBlobs should be at offset 0x390");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_renderRadius) == 0x500, "m_renderRadius in C_OP_RenderBlobs should be at offset 0x500");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_nVertexCountKb) == 0x670, "m_nVertexCountKb in C_OP_RenderBlobs should be at offset 0x670");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_nIndexCountKb) == 0x674, "m_nIndexCountKb in C_OP_RenderBlobs should be at offset 0x674");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_nScaleCP) == 0x678, "m_nScaleCP in C_OP_RenderBlobs should be at offset 0x678");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_MaterialVars) == 0x680, "m_MaterialVars in C_OP_RenderBlobs should be at offset 0x680");
+		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_hMaterial) == 0x6B0, "m_hMaterial in C_OP_RenderBlobs should be at offset 0x6B0");
+		static_assert(sizeof(CS2::particles::C_OP_RenderBlobs) == 0x6B8, "C_OP_RenderBlobs size should be 0x6B8");
 	}
 }

@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1C8
+			// Class size: 0x1D8
 			namespace CParticleFunctionInitializer /*: public CS2::particles::CParticleFunction*/ {
-				constexpr std::ptrdiff_t m_nAssociatedEmitterIndex = 0x1c0; // int32_t m_nAssociatedEmitterIndex; |  0x1c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nAssociatedEmitterIndex = 0x1d0; // int32_t m_nAssociatedEmitterIndex; |  0x1d0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

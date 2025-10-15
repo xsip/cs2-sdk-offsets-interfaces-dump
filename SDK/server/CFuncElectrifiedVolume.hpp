@@ -13,16 +13,16 @@ namespace CS2 {
 	namespace server {
 		class CFuncElectrifiedVolume : public CS2::server::CFuncBrush {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_EffectName; // 0x810 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_EffectInterpenetrateName; // 0x818 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_EffectZapName; // 0x820 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszEffectSource; // 0x828 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_EffectName; // 0x7f8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_EffectInterpenetrateName; // 0x800 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_EffectZapName; // 0x808 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszEffectSource; // 0x810 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x18); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_EffectName) == 0x810, "m_EffectName in CFuncElectrifiedVolume should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_EffectInterpenetrateName) == 0x818, "m_EffectInterpenetrateName in CFuncElectrifiedVolume should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_EffectZapName) == 0x820, "m_EffectZapName in CFuncElectrifiedVolume should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_iszEffectSource) == 0x828, "m_iszEffectSource in CFuncElectrifiedVolume should be at offset 0x828");
-		static_assert(sizeof(CS2::server::CFuncElectrifiedVolume) == 0x848, "CFuncElectrifiedVolume size should be 0x848");
+		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_EffectName) == 0x7F8, "m_EffectName in CFuncElectrifiedVolume should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_EffectInterpenetrateName) == 0x800, "m_EffectInterpenetrateName in CFuncElectrifiedVolume should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_EffectZapName) == 0x808, "m_EffectZapName in CFuncElectrifiedVolume should be at offset 0x808");
+		static_assert(offsetof(CS2::server::CFuncElectrifiedVolume, m_iszEffectSource) == 0x810, "m_iszEffectSource in CFuncElectrifiedVolume should be at offset 0x810");
+		static_assert(sizeof(CS2::server::CFuncElectrifiedVolume) == 0x830, "CFuncElectrifiedVolume size should be 0x830");
 	}
 }

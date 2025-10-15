@@ -14,15 +14,15 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PlaneCull : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPoint; // 0x1c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPoint; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bCullInside; // 0x330 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bCullInside; // 0x350 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_PlaneCull, m_nControlPoint) == 0x1C8, "m_nControlPoint in C_INIT_PlaneCull should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_PlaneCull, m_flDistance) == 0x1D0, "m_flDistance in C_INIT_PlaneCull should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_PlaneCull, m_bCullInside) == 0x330, "m_bCullInside in C_INIT_PlaneCull should be at offset 0x330");
-		static_assert(sizeof(CS2::particles::C_INIT_PlaneCull) == 0x338, "C_INIT_PlaneCull size should be 0x338");
+		static_assert(offsetof(CS2::particles::C_INIT_PlaneCull, m_nControlPoint) == 0x1D8, "m_nControlPoint in C_INIT_PlaneCull should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_PlaneCull, m_flDistance) == 0x1E0, "m_flDistance in C_INIT_PlaneCull should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_PlaneCull, m_bCullInside) == 0x350, "m_bCullInside in C_INIT_PlaneCull should be at offset 0x350");
+		static_assert(sizeof(CS2::particles::C_INIT_PlaneCull) == 0x358, "C_INIT_PlaneCull size should be 0x358");
 	}
 }

@@ -15,23 +15,25 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointsToParticle : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nChildGroupID; // 0x1c0 | Schema_Builtin | Size: 0x4
-			int32_t m_nFirstControlPoint; // 0x1c4 | Schema_Builtin | Size: 0x4
-			int32_t m_nNumControlPoints; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nFirstSourcePoint; // 0x1cc | Schema_Builtin | Size: 0x4
-			bool m_bSetOrientation; // 0x1d0 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
-			particles::ParticleOrientationSetMode_t m_nOrientationMode; // 0x1d4 | Schema_DeclaredEnum | Size: 0x4
-			particles::ParticleParentSetMode_t m_nSetParent; // 0x1d8 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nChildGroupID; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nFirstControlPoint; // 0x1d4 | Schema_Builtin | Size: 0x4
+			int32_t m_nNumControlPoints; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nFirstSourcePoint; // 0x1dc | Schema_Builtin | Size: 0x4
+			bool m_bReverse; // 0x1e0 | Schema_Builtin | Size: 0x1
+			bool m_bSetOrientation; // 0x1e1 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2);
+			particles::ParticleOrientationSetMode_t m_nOrientationMode; // 0x1e4 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleParentSetMode_t m_nSetParent; // 0x1e8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nChildGroupID) == 0x1C0, "m_nChildGroupID in C_OP_SetControlPointsToParticle should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nFirstControlPoint) == 0x1C4, "m_nFirstControlPoint in C_OP_SetControlPointsToParticle should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nNumControlPoints) == 0x1C8, "m_nNumControlPoints in C_OP_SetControlPointsToParticle should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nFirstSourcePoint) == 0x1CC, "m_nFirstSourcePoint in C_OP_SetControlPointsToParticle should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_bSetOrientation) == 0x1D0, "m_bSetOrientation in C_OP_SetControlPointsToParticle should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nOrientationMode) == 0x1D4, "m_nOrientationMode in C_OP_SetControlPointsToParticle should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nSetParent) == 0x1D8, "m_nSetParent in C_OP_SetControlPointsToParticle should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointsToParticle) == 0x1E0, "C_OP_SetControlPointsToParticle size should be 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nChildGroupID) == 0x1D0, "m_nChildGroupID in C_OP_SetControlPointsToParticle should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nFirstControlPoint) == 0x1D4, "m_nFirstControlPoint in C_OP_SetControlPointsToParticle should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nNumControlPoints) == 0x1D8, "m_nNumControlPoints in C_OP_SetControlPointsToParticle should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nFirstSourcePoint) == 0x1DC, "m_nFirstSourcePoint in C_OP_SetControlPointsToParticle should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_bReverse) == 0x1E0, "m_bReverse in C_OP_SetControlPointsToParticle should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_bSetOrientation) == 0x1E1, "m_bSetOrientation in C_OP_SetControlPointsToParticle should be at offset 0x1E1");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nOrientationMode) == 0x1E4, "m_nOrientationMode in C_OP_SetControlPointsToParticle should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToParticle, m_nSetParent) == 0x1E8, "m_nSetParent in C_OP_SetControlPointsToParticle should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointsToParticle) == 0x1F0, "C_OP_SetControlPointsToParticle size should be 0x1F0");
 	}
 }

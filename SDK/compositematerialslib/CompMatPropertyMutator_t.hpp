@@ -33,22 +33,24 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_strGenerateTexture_InitialContainer; // 0x2f8 | Schema_Atomic | Size: 0x8
 			int32_t m_nResolution; // 0x300 | Schema_Builtin | Size: 0x4
 			bool m_bIsScratchTarget; // 0x304 | Schema_Builtin | Size: 0x1
-			bool m_bSplatDebugInfo; // 0x305 | Schema_Builtin | Size: 0x1
-			bool m_bCaptureInRenderDoc; // 0x306 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x1);
-			// GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecTexGenInstructions; // 0x308 | Schema_Atomic | Size: 0x18
-			char  m_vecTexGenInstructions[0x18]; // 0x308 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecConditionalMutators; // 0x320 | Schema_Atomic | Size: 0x18
-			char  m_vecConditionalMutators[0x18]; // 0x320 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlString m_strPopInputQueue_Container; // 0x338 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strDrawText_InputContainerSrc; // 0x340 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strDrawText_InputContainerProperty; // 0x348 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector2D m_vecDrawText_Position; // 0x350 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Color m_colDrawText_Color; // 0x358 | Schema_Atomic | Size: 0x4
+			S2_PAD(0x3);
+			GlobalTypes::CUtlString m_strCompressionFormat; // 0x308 | Schema_Atomic | Size: 0x8
+			bool m_bSplatDebugInfo; // 0x310 | Schema_Builtin | Size: 0x1
+			bool m_bCaptureInRenderDoc; // 0x311 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6);
+			// GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecTexGenInstructions; // 0x318 | Schema_Atomic | Size: 0x18
+			char  m_vecTexGenInstructions[0x18]; // 0x318 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecConditionalMutators; // 0x330 | Schema_Atomic | Size: 0x18
+			char  m_vecConditionalMutators[0x18]; // 0x330 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlString m_strPopInputQueue_Container; // 0x348 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strDrawText_InputContainerSrc; // 0x350 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strDrawText_InputContainerProperty; // 0x358 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector2D m_vecDrawText_Position; // 0x360 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Color m_colDrawText_Color; // 0x368 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_strDrawText_Font; // 0x360 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlVector< compositematerialslib::CompMatMutatorCondition_t > m_vecConditions; // 0x368 | Schema_Atomic | Size: 0x18
-			char  m_vecConditions[0x18]; // 0x368 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlString m_strDrawText_Font; // 0x370 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CUtlVector< compositematerialslib::CompMatMutatorCondition_t > m_vecConditions; // 0x378 | Schema_Atomic | Size: 0x18
+			char  m_vecConditions[0x18]; // 0x378 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bEnabled) == 0x0, "m_bEnabled in CompMatPropertyMutator_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_nMutatorCommandType) == 0x4, "m_nMutatorCommandType in CompMatPropertyMutator_t should be at offset 0x4");
@@ -67,17 +69,18 @@ namespace CS2 {
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strGenerateTexture_InitialContainer) == 0x2F8, "m_strGenerateTexture_InitialContainer in CompMatPropertyMutator_t should be at offset 0x2F8");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_nResolution) == 0x300, "m_nResolution in CompMatPropertyMutator_t should be at offset 0x300");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bIsScratchTarget) == 0x304, "m_bIsScratchTarget in CompMatPropertyMutator_t should be at offset 0x304");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bSplatDebugInfo) == 0x305, "m_bSplatDebugInfo in CompMatPropertyMutator_t should be at offset 0x305");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bCaptureInRenderDoc) == 0x306, "m_bCaptureInRenderDoc in CompMatPropertyMutator_t should be at offset 0x306");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecTexGenInstructions) == 0x308, "m_vecTexGenInstructions in CompMatPropertyMutator_t should be at offset 0x308");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecConditionalMutators) == 0x320, "m_vecConditionalMutators in CompMatPropertyMutator_t should be at offset 0x320");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strPopInputQueue_Container) == 0x338, "m_strPopInputQueue_Container in CompMatPropertyMutator_t should be at offset 0x338");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strDrawText_InputContainerSrc) == 0x340, "m_strDrawText_InputContainerSrc in CompMatPropertyMutator_t should be at offset 0x340");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strDrawText_InputContainerProperty) == 0x348, "m_strDrawText_InputContainerProperty in CompMatPropertyMutator_t should be at offset 0x348");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecDrawText_Position) == 0x350, "m_vecDrawText_Position in CompMatPropertyMutator_t should be at offset 0x350");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_colDrawText_Color) == 0x358, "m_colDrawText_Color in CompMatPropertyMutator_t should be at offset 0x358");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strDrawText_Font) == 0x360, "m_strDrawText_Font in CompMatPropertyMutator_t should be at offset 0x360");
-		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecConditions) == 0x368, "m_vecConditions in CompMatPropertyMutator_t should be at offset 0x368");
-		static_assert(sizeof(CS2::compositematerialslib::CompMatPropertyMutator_t) == 0x380, "CompMatPropertyMutator_t size should be 0x380");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strCompressionFormat) == 0x308, "m_strCompressionFormat in CompMatPropertyMutator_t should be at offset 0x308");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bSplatDebugInfo) == 0x310, "m_bSplatDebugInfo in CompMatPropertyMutator_t should be at offset 0x310");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bCaptureInRenderDoc) == 0x311, "m_bCaptureInRenderDoc in CompMatPropertyMutator_t should be at offset 0x311");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecTexGenInstructions) == 0x318, "m_vecTexGenInstructions in CompMatPropertyMutator_t should be at offset 0x318");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecConditionalMutators) == 0x330, "m_vecConditionalMutators in CompMatPropertyMutator_t should be at offset 0x330");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strPopInputQueue_Container) == 0x348, "m_strPopInputQueue_Container in CompMatPropertyMutator_t should be at offset 0x348");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strDrawText_InputContainerSrc) == 0x350, "m_strDrawText_InputContainerSrc in CompMatPropertyMutator_t should be at offset 0x350");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strDrawText_InputContainerProperty) == 0x358, "m_strDrawText_InputContainerProperty in CompMatPropertyMutator_t should be at offset 0x358");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecDrawText_Position) == 0x360, "m_vecDrawText_Position in CompMatPropertyMutator_t should be at offset 0x360");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_colDrawText_Color) == 0x368, "m_colDrawText_Color in CompMatPropertyMutator_t should be at offset 0x368");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strDrawText_Font) == 0x370, "m_strDrawText_Font in CompMatPropertyMutator_t should be at offset 0x370");
+		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecConditions) == 0x378, "m_vecConditions in CompMatPropertyMutator_t should be at offset 0x378");
+		static_assert(sizeof(CS2::compositematerialslib::CompMatPropertyMutator_t) == 0x390, "CompMatPropertyMutator_t size should be 0x390");
 	}
 }

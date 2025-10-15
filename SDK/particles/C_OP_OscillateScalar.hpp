@@ -14,34 +14,34 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_OscillateScalar : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_RateMin; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_RateMax; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_FrequencyMin; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_FrequencyMax; // 0x1cc | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nField; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bProportional; // 0x1d4 | Schema_Builtin | Size: 0x1
-			bool m_bProportionalOp; // 0x1d5 | Schema_Builtin | Size: 0x1
+			float32 m_RateMin; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_RateMax; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_FrequencyMin; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_FrequencyMax; // 0x1dc | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nField; // 0x1e0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bProportional; // 0x1e4 | Schema_Builtin | Size: 0x1
+			bool m_bProportionalOp; // 0x1e5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flStartTime_min; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime_max; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_min; // 0x1e0 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_max; // 0x1e4 | Schema_Builtin | Size: 0x4
-			float32 m_flOscMult; // 0x1e8 | Schema_Builtin | Size: 0x4
-			float32 m_flOscAdd; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime_min; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime_max; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_min; // 0x1f0 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_max; // 0x1f4 | Schema_Builtin | Size: 0x4
+			float32 m_flOscMult; // 0x1f8 | Schema_Builtin | Size: 0x4
+			float32 m_flOscAdd; // 0x1fc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_RateMin) == 0x1C0, "m_RateMin in C_OP_OscillateScalar should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_RateMax) == 0x1C4, "m_RateMax in C_OP_OscillateScalar should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_FrequencyMin) == 0x1C8, "m_FrequencyMin in C_OP_OscillateScalar should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_FrequencyMax) == 0x1CC, "m_FrequencyMax in C_OP_OscillateScalar should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_nField) == 0x1D0, "m_nField in C_OP_OscillateScalar should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_bProportional) == 0x1D4, "m_bProportional in C_OP_OscillateScalar should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_bProportionalOp) == 0x1D5, "m_bProportionalOp in C_OP_OscillateScalar should be at offset 0x1D5");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flStartTime_min) == 0x1D8, "m_flStartTime_min in C_OP_OscillateScalar should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flStartTime_max) == 0x1DC, "m_flStartTime_max in C_OP_OscillateScalar should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flEndTime_min) == 0x1E0, "m_flEndTime_min in C_OP_OscillateScalar should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flEndTime_max) == 0x1E4, "m_flEndTime_max in C_OP_OscillateScalar should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flOscMult) == 0x1E8, "m_flOscMult in C_OP_OscillateScalar should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flOscAdd) == 0x1EC, "m_flOscAdd in C_OP_OscillateScalar should be at offset 0x1EC");
-		static_assert(sizeof(CS2::particles::C_OP_OscillateScalar) == 0x1F0, "C_OP_OscillateScalar size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_RateMin) == 0x1D0, "m_RateMin in C_OP_OscillateScalar should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_RateMax) == 0x1D4, "m_RateMax in C_OP_OscillateScalar should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_FrequencyMin) == 0x1D8, "m_FrequencyMin in C_OP_OscillateScalar should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_FrequencyMax) == 0x1DC, "m_FrequencyMax in C_OP_OscillateScalar should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_nField) == 0x1E0, "m_nField in C_OP_OscillateScalar should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_bProportional) == 0x1E4, "m_bProportional in C_OP_OscillateScalar should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_bProportionalOp) == 0x1E5, "m_bProportionalOp in C_OP_OscillateScalar should be at offset 0x1E5");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flStartTime_min) == 0x1E8, "m_flStartTime_min in C_OP_OscillateScalar should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flStartTime_max) == 0x1EC, "m_flStartTime_max in C_OP_OscillateScalar should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flEndTime_min) == 0x1F0, "m_flEndTime_min in C_OP_OscillateScalar should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flEndTime_max) == 0x1F4, "m_flEndTime_max in C_OP_OscillateScalar should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flOscMult) == 0x1F8, "m_flOscMult in C_OP_OscillateScalar should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flOscAdd) == 0x1FC, "m_flOscAdd in C_OP_OscillateScalar should be at offset 0x1FC");
+		static_assert(sizeof(CS2::particles::C_OP_OscillateScalar) == 0x200, "C_OP_OscillateScalar size should be 0x200");
 	}
 }

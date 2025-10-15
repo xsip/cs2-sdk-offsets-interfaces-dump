@@ -13,17 +13,17 @@ namespace CS2 {
 	namespace server {
 		class CPropDoorRotatingBreakable : public CS2::server::CPropDoorRotating {
 		public:
-			bool m_bBreakable; // 0x1080 | Schema_Builtin | Size: 0x1
-			bool m_isAbleToCloseAreaPortals; // 0x1081 | Schema_Builtin | Size: 0x1
+			bool m_bBreakable; // 0x1090 | Schema_Builtin | Size: 0x1
+			bool m_isAbleToCloseAreaPortals; // 0x1091 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_currentDamageState; // 0x1084 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_damageStates; // 0x1088 | Schema_Atomic | Size: 0x18
-			char  m_damageStates[0x18]; // 0x1088 | Schema_Atomic | Size: 0x18
+			int32_t m_currentDamageState; // 0x1094 | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_damageStates; // 0x1098 | Schema_Atomic | Size: 0x18
+			char  m_damageStates[0x18]; // 0x1098 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_bBreakable) == 0x1080, "m_bBreakable in CPropDoorRotatingBreakable should be at offset 0x1080");
-		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_isAbleToCloseAreaPortals) == 0x1081, "m_isAbleToCloseAreaPortals in CPropDoorRotatingBreakable should be at offset 0x1081");
-		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_currentDamageState) == 0x1084, "m_currentDamageState in CPropDoorRotatingBreakable should be at offset 0x1084");
-		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_damageStates) == 0x1088, "m_damageStates in CPropDoorRotatingBreakable should be at offset 0x1088");
-		static_assert(sizeof(CS2::server::CPropDoorRotatingBreakable) == 0x10A0, "CPropDoorRotatingBreakable size should be 0x10A0");
+		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_bBreakable) == 0x1090, "m_bBreakable in CPropDoorRotatingBreakable should be at offset 0x1090");
+		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_isAbleToCloseAreaPortals) == 0x1091, "m_isAbleToCloseAreaPortals in CPropDoorRotatingBreakable should be at offset 0x1091");
+		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_currentDamageState) == 0x1094, "m_currentDamageState in CPropDoorRotatingBreakable should be at offset 0x1094");
+		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_damageStates) == 0x1098, "m_damageStates in CPropDoorRotatingBreakable should be at offset 0x1098");
+		static_assert(sizeof(CS2::server::CPropDoorRotatingBreakable) == 0x10B0, "CPropDoorRotatingBreakable size should be 0x10B0");
 	}
 }

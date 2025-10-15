@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1D8
+			// Class size: 0x1E8
 			namespace C_INIT_VelocityFromNormal /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_fSpeedMin = 0x1c8; // float32 m_fSpeedMin; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fSpeedMax = 0x1cc; // float32 m_fSpeedMax; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bIgnoreDt = 0x1d0; // bool m_bIgnoreDt; |  0x1d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fSpeedMin = 0x1d8; // float32 m_fSpeedMin; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fSpeedMax = 0x1dc; // float32 m_fSpeedMax; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bIgnoreDt = 0x1e0; // bool m_bIgnoreDt; |  0x1e0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

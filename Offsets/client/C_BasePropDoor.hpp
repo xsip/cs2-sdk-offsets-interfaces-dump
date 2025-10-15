@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1470
+			// Class size: 0x1460
 			namespace C_BasePropDoor /*: public CS2::client::C_DynamicProp*/ {
-				constexpr std::ptrdiff_t m_eDoorState = 0x1440; // client::DoorState_t m_eDoorState; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_modelChanged = 0x1444; // bool m_modelChanged; |  0x1444 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLocked = 0x1445; // bool m_bLocked; |  0x1445 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNoNPCs = 0x1446; // bool m_bNoNPCs; |  0x1446 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_closedPosition = 0x1448; // GlobalTypes::Vector m_closedPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_closedAngles = 0x1454; // GlobalTypes::QAngle m_closedAngles; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hMaster = 0x1460; // client::CHandle< client::C_BasePropDoor > m_hMaster; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vWhereToSetLightingOrigin = 0x1464; // GlobalTypes::Vector m_vWhereToSetLightingOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_eDoorState = 0x1430; // client::DoorState_t m_eDoorState; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_modelChanged = 0x1434; // bool m_modelChanged; |  0x1434 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLocked = 0x1435; // bool m_bLocked; |  0x1435 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNoNPCs = 0x1436; // bool m_bNoNPCs; |  0x1436 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_closedPosition = 0x1438; // GlobalTypes::Vector m_closedPosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_closedAngles = 0x1444; // GlobalTypes::QAngle m_closedAngles; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hMaster = 0x1450; // client::CHandle< client::C_BasePropDoor > m_hMaster; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vWhereToSetLightingOrigin = 0x1454; // GlobalTypes::Vector m_vWhereToSetLightingOrigin; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}

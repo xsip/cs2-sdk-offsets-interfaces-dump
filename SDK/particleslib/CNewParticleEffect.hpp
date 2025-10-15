@@ -36,15 +36,11 @@ namespace CS2 {
 			float32 m_flFreezeTransitionStart; // 0x70 | Schema_Builtin | Size: 0x4
 			float32 m_flFreezeTransitionDuration; // 0x74 | Schema_Builtin | Size: 0x4
 			float32 m_flFreezeTransitionOverride; // 0x78 | Schema_Builtin | Size: 0x4
-			bool m_bFreezeTransitionActive; // 0x7c | Schema_Builtin | Size: 0x1
-			bool m_bFreezeTargetState; // 0x7d | Schema_Builtin | Size: 0x1
-			bool m_bCanFreeze; // 0x7e | Schema_Builtin | Size: 0x1
-			S2_PAD(0x1);
-			GlobalTypes::Vector m_LastMin; // 0x80 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_LastMax; // 0x8c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CSplitScreenSlot m_nSplitScreenUser; // 0x98 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Vector m_vecAggregationCenter; // 0x9c | Schema_Atomic | Size: 0xc
-			S2_PAD(0x28);
+			GlobalTypes::Vector m_LastMin; // 0x7c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_LastMax; // 0x88 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CSplitScreenSlot m_nSplitScreenUser; // 0x94 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Vector m_vecAggregationCenter; // 0x98 | Schema_Atomic | Size: 0xc
+			S2_PAD(0x2c);
 			int32_t m_RefCount; // 0xd0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
@@ -59,13 +55,10 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_flFreezeTransitionStart) == 0x70, "m_flFreezeTransitionStart in CNewParticleEffect should be at offset 0x70");
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_flFreezeTransitionDuration) == 0x74, "m_flFreezeTransitionDuration in CNewParticleEffect should be at offset 0x74");
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_flFreezeTransitionOverride) == 0x78, "m_flFreezeTransitionOverride in CNewParticleEffect should be at offset 0x78");
-		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_bFreezeTransitionActive) == 0x7C, "m_bFreezeTransitionActive in CNewParticleEffect should be at offset 0x7C");
-		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_bFreezeTargetState) == 0x7D, "m_bFreezeTargetState in CNewParticleEffect should be at offset 0x7D");
-		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_bCanFreeze) == 0x7E, "m_bCanFreeze in CNewParticleEffect should be at offset 0x7E");
-		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_LastMin) == 0x80, "m_LastMin in CNewParticleEffect should be at offset 0x80");
-		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_LastMax) == 0x8C, "m_LastMax in CNewParticleEffect should be at offset 0x8C");
-		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_nSplitScreenUser) == 0x98, "m_nSplitScreenUser in CNewParticleEffect should be at offset 0x98");
-		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_vecAggregationCenter) == 0x9C, "m_vecAggregationCenter in CNewParticleEffect should be at offset 0x9C");
+		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_LastMin) == 0x7C, "m_LastMin in CNewParticleEffect should be at offset 0x7C");
+		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_LastMax) == 0x88, "m_LastMax in CNewParticleEffect should be at offset 0x88");
+		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_nSplitScreenUser) == 0x94, "m_nSplitScreenUser in CNewParticleEffect should be at offset 0x94");
+		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_vecAggregationCenter) == 0x98, "m_vecAggregationCenter in CNewParticleEffect should be at offset 0x98");
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_RefCount) == 0xD0, "m_RefCount in CNewParticleEffect should be at offset 0xD0");
 		static_assert(sizeof(CS2::particleslib::CNewParticleEffect) == 0xD8, "CNewParticleEffect size should be 0xD8");
 	}

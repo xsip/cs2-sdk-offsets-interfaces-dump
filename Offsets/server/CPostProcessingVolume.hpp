@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA00
+			// Class size: 0x9E8
 			namespace CPostProcessingVolume /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_hPostSettings = 0x9d0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flFadeDuration = 0x9d8; // float32 m_flFadeDuration; |  0x9d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMinLogExposure = 0x9dc; // float32 m_flMinLogExposure; |  0x9dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxLogExposure = 0x9e0; // float32 m_flMaxLogExposure; |  0x9e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMinExposure = 0x9e4; // float32 m_flMinExposure; |  0x9e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxExposure = 0x9e8; // float32 m_flMaxExposure; |  0x9e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flExposureCompensation = 0x9ec; // float32 m_flExposureCompensation; |  0x9ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flExposureFadeSpeedUp = 0x9f0; // float32 m_flExposureFadeSpeedUp; |  0x9f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flExposureFadeSpeedDown = 0x9f4; // float32 m_flExposureFadeSpeedDown; |  0x9f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTonemapEVSmoothingRange = 0x9f8; // float32 m_flTonemapEVSmoothingRange; |  0x9f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bMaster = 0x9fc; // bool m_bMaster; |  0x9fc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bExposureControl = 0x9fd; // bool m_bExposureControl; |  0x9fd | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hPostSettings = 0x9b8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flFadeDuration = 0x9c0; // float32 m_flFadeDuration; |  0x9c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMinLogExposure = 0x9c4; // float32 m_flMinLogExposure; |  0x9c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxLogExposure = 0x9c8; // float32 m_flMaxLogExposure; |  0x9c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMinExposure = 0x9cc; // float32 m_flMinExposure; |  0x9cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxExposure = 0x9d0; // float32 m_flMaxExposure; |  0x9d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flExposureCompensation = 0x9d4; // float32 m_flExposureCompensation; |  0x9d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flExposureFadeSpeedUp = 0x9d8; // float32 m_flExposureFadeSpeedUp; |  0x9d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flExposureFadeSpeedDown = 0x9dc; // float32 m_flExposureFadeSpeedDown; |  0x9dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTonemapEVSmoothingRange = 0x9e0; // float32 m_flTonemapEVSmoothingRange; |  0x9e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bMaster = 0x9e4; // bool m_bMaster; |  0x9e4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bExposureControl = 0x9e5; // bool m_bExposureControl; |  0x9e5 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -14,20 +14,20 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateAlongPath : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			float32 m_fMaxDistance; // 0x1c8 | Schema_Builtin | Size: 0x4
+			float32 m_fMaxDistance; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particles::CPathParameters m_PathParams; // 0x1d0 | Schema_DeclaredClass | Size: 0x40
-			bool m_bUseRandomCPs; // 0x210 | Schema_Builtin | Size: 0x1
+			particles::CPathParameters m_PathParams; // 0x1e0 | Schema_DeclaredClass | Size: 0x40
+			bool m_bUseRandomCPs; // 0x220 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vEndOffset; // 0x214 | Schema_Atomic | Size: 0xc
-			bool m_bSaveOffset; // 0x220 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vEndOffset; // 0x224 | Schema_Atomic | Size: 0xc
+			bool m_bSaveOffset; // 0x230 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_fMaxDistance) == 0x1C8, "m_fMaxDistance in C_INIT_CreateAlongPath should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_PathParams) == 0x1D0, "m_PathParams in C_INIT_CreateAlongPath should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_bUseRandomCPs) == 0x210, "m_bUseRandomCPs in C_INIT_CreateAlongPath should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_vEndOffset) == 0x214, "m_vEndOffset in C_INIT_CreateAlongPath should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_bSaveOffset) == 0x220, "m_bSaveOffset in C_INIT_CreateAlongPath should be at offset 0x220");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateAlongPath) == 0x230, "C_INIT_CreateAlongPath size should be 0x230");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_fMaxDistance) == 0x1D8, "m_fMaxDistance in C_INIT_CreateAlongPath should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_PathParams) == 0x1E0, "m_PathParams in C_INIT_CreateAlongPath should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_bUseRandomCPs) == 0x220, "m_bUseRandomCPs in C_INIT_CreateAlongPath should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_vEndOffset) == 0x224, "m_vEndOffset in C_INIT_CreateAlongPath should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_bSaveOffset) == 0x230, "m_bSaveOffset in C_INIT_CreateAlongPath should be at offset 0x230");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateAlongPath) == 0x240, "C_INIT_CreateAlongPath size should be 0x240");
 	}
 }

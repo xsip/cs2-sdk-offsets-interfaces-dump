@@ -17,44 +17,44 @@ namespace CS2 {
 		class C_PointWorldText : public CS2::client::C_ModelPointEntity {
 		public:
 			S2_PAD(0x8);
-			bool m_bForceRecreateNextUpdate; // 0xed0 | Schema_Builtin | Size: 0x1
+			bool m_bForceRecreateNextUpdate; // 0xeb8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17);
-			char m_messageText[512]; // 0xee8 | Schema_FixedArray | Size: 0x200
-			char m_FontName[64]; // 0x10e8 | Schema_FixedArray | Size: 0x40
-			char m_BackgroundMaterialName[64]; // 0x1128 | Schema_FixedArray | Size: 0x40
-			bool m_bEnabled; // 0x1168 | Schema_Builtin | Size: 0x1
-			bool m_bFullbright; // 0x1169 | Schema_Builtin | Size: 0x1
+			char m_messageText[512]; // 0xed0 | Schema_FixedArray | Size: 0x200
+			char m_FontName[64]; // 0x10d0 | Schema_FixedArray | Size: 0x40
+			char m_BackgroundMaterialName[64]; // 0x1110 | Schema_FixedArray | Size: 0x40
+			bool m_bEnabled; // 0x1150 | Schema_Builtin | Size: 0x1
+			bool m_bFullbright; // 0x1151 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flWorldUnitsPerPx; // 0x116c | Schema_Builtin | Size: 0x4
-			float32 m_flFontSize; // 0x1170 | Schema_Builtin | Size: 0x4
-			float32 m_flDepthOffset; // 0x1174 | Schema_Builtin | Size: 0x4
-			bool m_bDrawBackground; // 0x1178 | Schema_Builtin | Size: 0x1
+			float32 m_flWorldUnitsPerPx; // 0x1154 | Schema_Builtin | Size: 0x4
+			float32 m_flFontSize; // 0x1158 | Schema_Builtin | Size: 0x4
+			float32 m_flDepthOffset; // 0x115c | Schema_Builtin | Size: 0x4
+			bool m_bDrawBackground; // 0x1160 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flBackgroundBorderWidth; // 0x117c | Schema_Builtin | Size: 0x4
-			float32 m_flBackgroundBorderHeight; // 0x1180 | Schema_Builtin | Size: 0x4
-			float32 m_flBackgroundWorldToUV; // 0x1184 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_Color; // 0x1188 | Schema_Atomic | Size: 0x4
-			client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0x118c | Schema_DeclaredEnum | Size: 0x4
-			client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0x1190 | Schema_DeclaredEnum | Size: 0x4
-			client::PointWorldTextReorientMode_t m_nReorientMode; // 0x1194 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flBackgroundBorderWidth; // 0x1164 | Schema_Builtin | Size: 0x4
+			float32 m_flBackgroundBorderHeight; // 0x1168 | Schema_Builtin | Size: 0x4
+			float32 m_flBackgroundWorldToUV; // 0x116c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_Color; // 0x1170 | Schema_Atomic | Size: 0x4
+			client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0x1174 | Schema_DeclaredEnum | Size: 0x4
+			client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0x1178 | Schema_DeclaredEnum | Size: 0x4
+			client::PointWorldTextReorientMode_t m_nReorientMode; // 0x117c | Schema_DeclaredEnum | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_bForceRecreateNextUpdate) == 0xED0, "m_bForceRecreateNextUpdate in C_PointWorldText should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_messageText) == 0xEE8, "m_messageText in C_PointWorldText should be at offset 0xEE8");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_FontName) == 0x10E8, "m_FontName in C_PointWorldText should be at offset 0x10E8");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_BackgroundMaterialName) == 0x1128, "m_BackgroundMaterialName in C_PointWorldText should be at offset 0x1128");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_bEnabled) == 0x1168, "m_bEnabled in C_PointWorldText should be at offset 0x1168");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_bFullbright) == 0x1169, "m_bFullbright in C_PointWorldText should be at offset 0x1169");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_flWorldUnitsPerPx) == 0x116C, "m_flWorldUnitsPerPx in C_PointWorldText should be at offset 0x116C");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_flFontSize) == 0x1170, "m_flFontSize in C_PointWorldText should be at offset 0x1170");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_flDepthOffset) == 0x1174, "m_flDepthOffset in C_PointWorldText should be at offset 0x1174");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_bDrawBackground) == 0x1178, "m_bDrawBackground in C_PointWorldText should be at offset 0x1178");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_flBackgroundBorderWidth) == 0x117C, "m_flBackgroundBorderWidth in C_PointWorldText should be at offset 0x117C");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_flBackgroundBorderHeight) == 0x1180, "m_flBackgroundBorderHeight in C_PointWorldText should be at offset 0x1180");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_flBackgroundWorldToUV) == 0x1184, "m_flBackgroundWorldToUV in C_PointWorldText should be at offset 0x1184");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_Color) == 0x1188, "m_Color in C_PointWorldText should be at offset 0x1188");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_nJustifyHorizontal) == 0x118C, "m_nJustifyHorizontal in C_PointWorldText should be at offset 0x118C");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_nJustifyVertical) == 0x1190, "m_nJustifyVertical in C_PointWorldText should be at offset 0x1190");
-		static_assert(offsetof(CS2::client::C_PointWorldText, m_nReorientMode) == 0x1194, "m_nReorientMode in C_PointWorldText should be at offset 0x1194");
-		static_assert(sizeof(CS2::client::C_PointWorldText) == 0x1198, "C_PointWorldText size should be 0x1198");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_bForceRecreateNextUpdate) == 0xEB8, "m_bForceRecreateNextUpdate in C_PointWorldText should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_messageText) == 0xED0, "m_messageText in C_PointWorldText should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_FontName) == 0x10D0, "m_FontName in C_PointWorldText should be at offset 0x10D0");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_BackgroundMaterialName) == 0x1110, "m_BackgroundMaterialName in C_PointWorldText should be at offset 0x1110");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_bEnabled) == 0x1150, "m_bEnabled in C_PointWorldText should be at offset 0x1150");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_bFullbright) == 0x1151, "m_bFullbright in C_PointWorldText should be at offset 0x1151");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_flWorldUnitsPerPx) == 0x1154, "m_flWorldUnitsPerPx in C_PointWorldText should be at offset 0x1154");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_flFontSize) == 0x1158, "m_flFontSize in C_PointWorldText should be at offset 0x1158");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_flDepthOffset) == 0x115C, "m_flDepthOffset in C_PointWorldText should be at offset 0x115C");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_bDrawBackground) == 0x1160, "m_bDrawBackground in C_PointWorldText should be at offset 0x1160");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_flBackgroundBorderWidth) == 0x1164, "m_flBackgroundBorderWidth in C_PointWorldText should be at offset 0x1164");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_flBackgroundBorderHeight) == 0x1168, "m_flBackgroundBorderHeight in C_PointWorldText should be at offset 0x1168");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_flBackgroundWorldToUV) == 0x116C, "m_flBackgroundWorldToUV in C_PointWorldText should be at offset 0x116C");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_Color) == 0x1170, "m_Color in C_PointWorldText should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_nJustifyHorizontal) == 0x1174, "m_nJustifyHorizontal in C_PointWorldText should be at offset 0x1174");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_nJustifyVertical) == 0x1178, "m_nJustifyVertical in C_PointWorldText should be at offset 0x1178");
+		static_assert(offsetof(CS2::client::C_PointWorldText, m_nReorientMode) == 0x117C, "m_nReorientMode in C_PointWorldText should be at offset 0x117C");
+		static_assert(sizeof(CS2::client::C_PointWorldText) == 0x1180, "C_PointWorldText size should be 0x1180");
 	}
 }

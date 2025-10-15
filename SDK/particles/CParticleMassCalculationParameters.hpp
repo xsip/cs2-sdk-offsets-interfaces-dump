@@ -16,14 +16,14 @@ namespace CS2 {
 		public:
 			particles::ParticleMassMode_t m_nMassMode; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flRadius; // 0x8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flNominalRadius; // 0x168 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flScale; // 0x2c8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CPerParticleFloatInput m_flRadius; // 0x8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flNominalRadius; // 0x178 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flScale; // 0x2e8 | Schema_DeclaredClass | Size: 0x170
 		};
 		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_nMassMode) == 0x0, "m_nMassMode in CParticleMassCalculationParameters should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flRadius) == 0x8, "m_flRadius in CParticleMassCalculationParameters should be at offset 0x8");
-		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flNominalRadius) == 0x168, "m_flNominalRadius in CParticleMassCalculationParameters should be at offset 0x168");
-		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flScale) == 0x2C8, "m_flScale in CParticleMassCalculationParameters should be at offset 0x2C8");
-		static_assert(sizeof(CS2::particles::CParticleMassCalculationParameters) == 0x428, "CParticleMassCalculationParameters size should be 0x428");
+		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flNominalRadius) == 0x178, "m_flNominalRadius in CParticleMassCalculationParameters should be at offset 0x178");
+		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flScale) == 0x2E8, "m_flScale in CParticleMassCalculationParameters should be at offset 0x2E8");
+		static_assert(sizeof(CS2::particles::CParticleMassCalculationParameters) == 0x458, "CParticleMassCalculationParameters size should be 0x458");
 	}
 }

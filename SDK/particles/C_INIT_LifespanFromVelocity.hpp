@@ -14,26 +14,26 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_LifespanFromVelocity : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			GlobalTypes::Vector m_vecComponentScale; // 0x1c8 | Schema_Atomic | Size: 0xc
-			float32 m_flTraceOffset; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxTraceLength; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flTraceTolerance; // 0x1dc | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxPlanes; // 0x1e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecComponentScale; // 0x1d8 | Schema_Atomic | Size: 0xc
+			float32 m_flTraceOffset; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxTraceLength; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flTraceTolerance; // 0x1ec | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxPlanes; // 0x1f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			char m_CollisionGroupName[128]; // 0x1e8 | Schema_FixedArray | Size: 0x80
-			particles::ParticleTraceSet_t m_nTraceSet; // 0x268 | Schema_DeclaredEnum | Size: 0x4
+			char m_CollisionGroupName[128]; // 0x1f8 | Schema_FixedArray | Size: 0x80
+			particles::ParticleTraceSet_t m_nTraceSet; // 0x278 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xc);
-			bool m_bIncludeWater; // 0x278 | Schema_Builtin | Size: 0x1
+			bool m_bIncludeWater; // 0x288 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_vecComponentScale) == 0x1C8, "m_vecComponentScale in C_INIT_LifespanFromVelocity should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_flTraceOffset) == 0x1D4, "m_flTraceOffset in C_INIT_LifespanFromVelocity should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_flMaxTraceLength) == 0x1D8, "m_flMaxTraceLength in C_INIT_LifespanFromVelocity should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_flTraceTolerance) == 0x1DC, "m_flTraceTolerance in C_INIT_LifespanFromVelocity should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_nMaxPlanes) == 0x1E0, "m_nMaxPlanes in C_INIT_LifespanFromVelocity should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_CollisionGroupName) == 0x1E8, "m_CollisionGroupName in C_INIT_LifespanFromVelocity should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_nTraceSet) == 0x268, "m_nTraceSet in C_INIT_LifespanFromVelocity should be at offset 0x268");
-		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_bIncludeWater) == 0x278, "m_bIncludeWater in C_INIT_LifespanFromVelocity should be at offset 0x278");
-		static_assert(sizeof(CS2::particles::C_INIT_LifespanFromVelocity) == 0x280, "C_INIT_LifespanFromVelocity size should be 0x280");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_vecComponentScale) == 0x1D8, "m_vecComponentScale in C_INIT_LifespanFromVelocity should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_flTraceOffset) == 0x1E4, "m_flTraceOffset in C_INIT_LifespanFromVelocity should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_flMaxTraceLength) == 0x1E8, "m_flMaxTraceLength in C_INIT_LifespanFromVelocity should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_flTraceTolerance) == 0x1EC, "m_flTraceTolerance in C_INIT_LifespanFromVelocity should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_nMaxPlanes) == 0x1F0, "m_nMaxPlanes in C_INIT_LifespanFromVelocity should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_CollisionGroupName) == 0x1F8, "m_CollisionGroupName in C_INIT_LifespanFromVelocity should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_nTraceSet) == 0x278, "m_nTraceSet in C_INIT_LifespanFromVelocity should be at offset 0x278");
+		static_assert(offsetof(CS2::particles::C_INIT_LifespanFromVelocity, m_bIncludeWater) == 0x288, "m_bIncludeWater in C_INIT_LifespanFromVelocity should be at offset 0x288");
+		static_assert(sizeof(CS2::particles::C_INIT_LifespanFromVelocity) == 0x290, "C_INIT_LifespanFromVelocity size should be 0x290");
 	}
 }

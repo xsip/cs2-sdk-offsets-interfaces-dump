@@ -13,18 +13,18 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_NormalOffset : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			GlobalTypes::Vector m_OffsetMin; // 0x1c8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_OffsetMax; // 0x1d4 | Schema_Atomic | Size: 0xc
-			int32_t m_nControlPointNumber; // 0x1e0 | Schema_Builtin | Size: 0x4
-			bool m_bLocalCoords; // 0x1e4 | Schema_Builtin | Size: 0x1
-			bool m_bNormalize; // 0x1e5 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_OffsetMin; // 0x1d8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_OffsetMax; // 0x1e4 | Schema_Atomic | Size: 0xc
+			int32_t m_nControlPointNumber; // 0x1f0 | Schema_Builtin | Size: 0x4
+			bool m_bLocalCoords; // 0x1f4 | Schema_Builtin | Size: 0x1
+			bool m_bNormalize; // 0x1f5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_OffsetMin) == 0x1C8, "m_OffsetMin in C_INIT_NormalOffset should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_OffsetMax) == 0x1D4, "m_OffsetMax in C_INIT_NormalOffset should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_nControlPointNumber) == 0x1E0, "m_nControlPointNumber in C_INIT_NormalOffset should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_bLocalCoords) == 0x1E4, "m_bLocalCoords in C_INIT_NormalOffset should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_bNormalize) == 0x1E5, "m_bNormalize in C_INIT_NormalOffset should be at offset 0x1E5");
-		static_assert(sizeof(CS2::particles::C_INIT_NormalOffset) == 0x1E8, "C_INIT_NormalOffset size should be 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_OffsetMin) == 0x1D8, "m_OffsetMin in C_INIT_NormalOffset should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_OffsetMax) == 0x1E4, "m_OffsetMax in C_INIT_NormalOffset should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_nControlPointNumber) == 0x1F0, "m_nControlPointNumber in C_INIT_NormalOffset should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_bLocalCoords) == 0x1F4, "m_bLocalCoords in C_INIT_NormalOffset should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_INIT_NormalOffset, m_bNormalize) == 0x1F5, "m_bNormalize in C_INIT_NormalOffset should be at offset 0x1F5");
+		static_assert(sizeof(CS2::particles::C_INIT_NormalOffset) == 0x1F8, "C_INIT_NormalOffset size should be 0x1F8");
 	}
 }

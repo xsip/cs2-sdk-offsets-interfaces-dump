@@ -14,23 +14,23 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapDirectionToCPToVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nCP; // 0x1c0 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flScale; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flOffsetRot; // 0x1cc | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecOffsetAxis; // 0x1d0 | Schema_Atomic | Size: 0xc
-			bool m_bNormalize; // 0x1dc | Schema_Builtin | Size: 0x1
+			int32_t m_nCP; // 0x1d0 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flScale; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flOffsetRot; // 0x1dc | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecOffsetAxis; // 0x1e0 | Schema_Atomic | Size: 0xc
+			bool m_bNormalize; // 0x1ec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleAttributeIndex_t m_nFieldStrength; // 0x1e0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldStrength; // 0x1f0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_nCP) == 0x1C0, "m_nCP in C_OP_RemapDirectionToCPToVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_nFieldOutput) == 0x1C4, "m_nFieldOutput in C_OP_RemapDirectionToCPToVector should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_flScale) == 0x1C8, "m_flScale in C_OP_RemapDirectionToCPToVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_flOffsetRot) == 0x1CC, "m_flOffsetRot in C_OP_RemapDirectionToCPToVector should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_vecOffsetAxis) == 0x1D0, "m_vecOffsetAxis in C_OP_RemapDirectionToCPToVector should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_bNormalize) == 0x1DC, "m_bNormalize in C_OP_RemapDirectionToCPToVector should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_nFieldStrength) == 0x1E0, "m_nFieldStrength in C_OP_RemapDirectionToCPToVector should be at offset 0x1E0");
-		static_assert(sizeof(CS2::particles::C_OP_RemapDirectionToCPToVector) == 0x1E8, "C_OP_RemapDirectionToCPToVector size should be 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_nCP) == 0x1D0, "m_nCP in C_OP_RemapDirectionToCPToVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapDirectionToCPToVector should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_flScale) == 0x1D8, "m_flScale in C_OP_RemapDirectionToCPToVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_flOffsetRot) == 0x1DC, "m_flOffsetRot in C_OP_RemapDirectionToCPToVector should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_vecOffsetAxis) == 0x1E0, "m_vecOffsetAxis in C_OP_RemapDirectionToCPToVector should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_bNormalize) == 0x1EC, "m_bNormalize in C_OP_RemapDirectionToCPToVector should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_OP_RemapDirectionToCPToVector, m_nFieldStrength) == 0x1F0, "m_nFieldStrength in C_OP_RemapDirectionToCPToVector should be at offset 0x1F0");
+		static_assert(sizeof(CS2::particles::C_OP_RemapDirectionToCPToVector) == 0x1F8, "C_OP_RemapDirectionToCPToVector size should be 0x1F8");
 	}
 }

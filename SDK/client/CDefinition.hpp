@@ -13,17 +13,13 @@ namespace CS2 {
 	namespace client {
 		class CDefinition : public CS2::animlib::CDefinition {
 		public:
-			int16_t m_nVerticalAngleNodeIdx; // 0x18 | Schema_Builtin | Size: 0x2
-			int16_t m_nHorizontalAngleNodeIdx; // 0x1a | Schema_Builtin | Size: 0x2
-			int16_t m_nEnabledNodeIdx; // 0x1c | Schema_Builtin | Size: 0x2
-			S2_PAD(0x2);
-			float32 m_flBlendTimeSeconds; // 0x20 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4); // End padding
+			int16_t m_nEnabledNodeIdx; // 0x18 | Schema_Builtin | Size: 0x2
+			int16_t m_nLockLeftHandNodeIdx; // 0x1a | Schema_Builtin | Size: 0x2
+			float32 m_flBlendTimeSeconds; // 0x1c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::CDefinition, m_nVerticalAngleNodeIdx) == 0x18, "m_nVerticalAngleNodeIdx in CNmAimCSNode::CDefinition should be at offset 0x18");
-		static_assert(offsetof(CS2::client::CDefinition, m_nHorizontalAngleNodeIdx) == 0x1A, "m_nHorizontalAngleNodeIdx in CNmAimCSNode::CDefinition should be at offset 0x1A");
-		static_assert(offsetof(CS2::client::CDefinition, m_nEnabledNodeIdx) == 0x1C, "m_nEnabledNodeIdx in CNmAimCSNode::CDefinition should be at offset 0x1C");
-		static_assert(offsetof(CS2::client::CDefinition, m_flBlendTimeSeconds) == 0x20, "m_flBlendTimeSeconds in CNmAimCSNode::CDefinition should be at offset 0x20");
-		static_assert(sizeof(CS2::client::CDefinition) == 0x28, "CNmAimCSNode::CDefinition size should be 0x28");
+		static_assert(offsetof(CS2::client::CDefinition, m_nEnabledNodeIdx) == 0x18, "m_nEnabledNodeIdx in CNmSnapWeaponNode::CDefinition should be at offset 0x18");
+		static_assert(offsetof(CS2::client::CDefinition, m_nLockLeftHandNodeIdx) == 0x1A, "m_nLockLeftHandNodeIdx in CNmSnapWeaponNode::CDefinition should be at offset 0x1A");
+		static_assert(offsetof(CS2::client::CDefinition, m_flBlendTimeSeconds) == 0x1C, "m_flBlendTimeSeconds in CNmSnapWeaponNode::CDefinition should be at offset 0x1C");
+		static_assert(sizeof(CS2::client::CDefinition) == 0x20, "CNmSnapWeaponNode::CDefinition size should be 0x20");
 	}
 }

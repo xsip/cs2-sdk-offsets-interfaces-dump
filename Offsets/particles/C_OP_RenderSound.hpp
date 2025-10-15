@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x340
+			// Class size: 0x350
 			namespace C_OP_RenderSound /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_flDurationScale = 0x210; // float32 m_flDurationScale; |  0x210 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSndLvlScale = 0x214; // float32 m_flSndLvlScale; |  0x214 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPitchScale = 0x218; // float32 m_flPitchScale; |  0x218 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flVolumeScale = 0x21c; // float32 m_flVolumeScale; |  0x21c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSndLvlField = 0x220; // particles::ParticleAttributeIndex_t m_nSndLvlField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nDurationField = 0x224; // particles::ParticleAttributeIndex_t m_nDurationField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nPitchField = 0x228; // particles::ParticleAttributeIndex_t m_nPitchField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nVolumeField = 0x22c; // particles::ParticleAttributeIndex_t m_nVolumeField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nChannel = 0x230; // int32_t m_nChannel; |  0x230 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPReference = 0x234; // int32_t m_nCPReference; |  0x234 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pszSoundName = 0x238; // char m_pszSoundName[256]; |  0x238 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_bSuppressStopSoundEvent = 0x338; // bool m_bSuppressStopSoundEvent; |  0x338 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDurationScale = 0x220; // float32 m_flDurationScale; |  0x220 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSndLvlScale = 0x224; // float32 m_flSndLvlScale; |  0x224 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPitchScale = 0x228; // float32 m_flPitchScale; |  0x228 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flVolumeScale = 0x22c; // float32 m_flVolumeScale; |  0x22c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nSndLvlField = 0x230; // particles::ParticleAttributeIndex_t m_nSndLvlField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nDurationField = 0x234; // particles::ParticleAttributeIndex_t m_nDurationField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nPitchField = 0x238; // particles::ParticleAttributeIndex_t m_nPitchField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nVolumeField = 0x23c; // particles::ParticleAttributeIndex_t m_nVolumeField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nChannel = 0x240; // int32_t m_nChannel; |  0x240 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPReference = 0x244; // int32_t m_nCPReference; |  0x244 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pszSoundName = 0x248; // char m_pszSoundName[256]; |  0x248 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_bSuppressStopSoundEvent = 0x348; // bool m_bSuppressStopSoundEvent; |  0x348 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1E78
+			// Class size: 0x1FA8
 			namespace C_OP_CurlNoiseForce /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_nNoiseType = 0x1d0; // particles::ParticleDirectionNoiseType_t m_nNoiseType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vecNoiseFreq = 0x1d8; // particleslib::CPerParticleVecInput m_vecNoiseFreq; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecNoiseScale = 0x850; // particleslib::CPerParticleVecInput m_vecNoiseScale; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecOffset = 0xec8; // particleslib::CPerParticleVecInput m_vecOffset; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_vecOffsetRate = 0x1540; // particleslib::CPerParticleVecInput m_vecOffsetRate; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flWorleySeed = 0x1bb8; // particleslib::CPerParticleFloatInput m_flWorleySeed; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flWorleyJitter = 0x1d18; // particleslib::CPerParticleFloatInput m_flWorleyJitter; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_nNoiseType = 0x1e0; // particles::ParticleDirectionNoiseType_t m_nNoiseType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vecNoiseFreq = 0x1e8; // particleslib::CPerParticleVecInput m_vecNoiseFreq; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecNoiseScale = 0x8a0; // particleslib::CPerParticleVecInput m_vecNoiseScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecOffset = 0xf58; // particleslib::CPerParticleVecInput m_vecOffset; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecOffsetRate = 0x1610; // particleslib::CPerParticleVecInput m_vecOffsetRate; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flWorleySeed = 0x1cc8; // particleslib::CPerParticleFloatInput m_flWorleySeed; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flWorleyJitter = 0x1e38; // particleslib::CPerParticleFloatInput m_flWorleyJitter; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

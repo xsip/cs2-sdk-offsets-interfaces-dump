@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace server {
 		class CPlatTrigger : public CS2::server::CBaseModelEntity {
 		public:
-			// server::CHandle< server::CFuncPlat > m_pPlatform; // 0x7f0 | Schema_Atomic | Size: 0x4
-			char  m_pPlatform[0x4]; // 0x7f0 | Schema_Atomic | Size: 0x4
+			// server::CHandle< server::CFuncPlat > m_pPlatform; // 0x7d8 | Schema_Atomic | Size: 0x4
+			char  m_pPlatform[0x4]; // 0x7d8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPlatTrigger, m_pPlatform) == 0x7F0, "m_pPlatform in CPlatTrigger should be at offset 0x7F0");
-		static_assert(sizeof(CS2::server::CPlatTrigger) == 0x7F8, "CPlatTrigger size should be 0x7F8");
+		static_assert(offsetof(CS2::server::CPlatTrigger, m_pPlatform) == 0x7D8, "m_pPlatform in CPlatTrigger should be at offset 0x7D8");
+		static_assert(sizeof(CS2::server::CPlatTrigger) == 0x7E0, "CPlatTrigger size should be 0x7E0");
 	}
 }

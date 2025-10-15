@@ -21,131 +21,131 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderModels : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			bool m_bOnlyRenderInEffectsBloomPass; // 0x210 | Schema_Builtin | Size: 0x1
-			bool m_bOnlyRenderInEffectsWaterPass; // 0x211 | Schema_Builtin | Size: 0x1
-			bool m_bUseMixedResolutionRendering; // 0x212 | Schema_Builtin | Size: 0x1
-			bool m_bOnlyRenderInEffecsGameOverlay; // 0x213 | Schema_Builtin | Size: 0x1
+			bool m_bOnlyRenderInEffectsBloomPass; // 0x220 | Schema_Builtin | Size: 0x1
+			bool m_bOnlyRenderInEffectsWaterPass; // 0x221 | Schema_Builtin | Size: 0x1
+			bool m_bUseMixedResolutionRendering; // 0x222 | Schema_Builtin | Size: 0x1
+			bool m_bOnlyRenderInEffecsGameOverlay; // 0x223 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< particles::ModelReference_t > m_ModelList; // 0x218 | Schema_Atomic | Size: 0x18
-			char  m_ModelList[0x18]; // 0x218 | Schema_Atomic | Size: 0x18
-			particles::ParticleAttributeIndex_t m_nBodyGroupField; // 0x230 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nSubModelField; // 0x234 | Schema_DeclaredClass | Size: 0x4
-			bool m_bIgnoreNormal; // 0x238 | Schema_Builtin | Size: 0x1
-			bool m_bOrientZ; // 0x239 | Schema_Builtin | Size: 0x1
-			bool m_bCenterOffset; // 0x23a | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CUtlVector< particles::ModelReference_t > m_ModelList; // 0x228 | Schema_Atomic | Size: 0x18
+			char  m_ModelList[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
+			particles::ParticleAttributeIndex_t m_nBodyGroupField; // 0x240 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nSubModelField; // 0x244 | Schema_DeclaredClass | Size: 0x4
+			bool m_bIgnoreNormal; // 0x248 | Schema_Builtin | Size: 0x1
+			bool m_bOrientZ; // 0x249 | Schema_Builtin | Size: 0x1
+			bool m_bCenterOffset; // 0x24a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			particleslib::CPerParticleVecInput m_vecLocalOffset; // 0x240 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecLocalRotation; // 0x8b8 | Schema_DeclaredClass | Size: 0x678
-			bool m_bIgnoreRadius; // 0xf30 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vecLocalOffset; // 0x250 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecLocalRotation; // 0x908 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bIgnoreRadius; // 0xfc0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nModelScaleCP; // 0xf34 | Schema_Builtin | Size: 0x4
-			particleslib::CPerParticleVecInput m_vecComponentScale; // 0xf38 | Schema_DeclaredClass | Size: 0x678
-			bool m_bLocalScale; // 0x15b0 | Schema_Builtin | Size: 0x1
+			int32_t m_nModelScaleCP; // 0xfc4 | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleVecInput m_vecComponentScale; // 0xfc8 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bLocalScale; // 0x1680 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nSizeCullBloat; // 0x15b4 | Schema_Builtin | Size: 0x4
-			bool m_bAnimated; // 0x15b8 | Schema_Builtin | Size: 0x1
+			int32_t m_nSizeCullBloat; // 0x1684 | Schema_Builtin | Size: 0x4
+			bool m_bAnimated; // 0x1688 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CPerParticleFloatInput m_flAnimationRate; // 0x15c0 | Schema_DeclaredClass | Size: 0x160
-			bool m_bScaleAnimationRate; // 0x1720 | Schema_Builtin | Size: 0x1
-			bool m_bForceLoopingAnimation; // 0x1721 | Schema_Builtin | Size: 0x1
-			bool m_bResetAnimOnStop; // 0x1722 | Schema_Builtin | Size: 0x1
-			bool m_bManualAnimFrame; // 0x1723 | Schema_Builtin | Size: 0x1
-			particles::ParticleAttributeIndex_t m_nAnimationScaleField; // 0x1724 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAnimationField; // 0x1728 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nManualFrameField; // 0x172c | Schema_DeclaredClass | Size: 0x4
-			char m_ActivityName[256]; // 0x1730 | Schema_FixedArray | Size: 0x100
-			char m_SequenceName[256]; // 0x1830 | Schema_FixedArray | Size: 0x100
-			bool m_bEnableClothSimulation; // 0x1930 | Schema_Builtin | Size: 0x1
-			char m_ClothEffectName[64]; // 0x1931 | Schema_FixedArray | Size: 0x40
+			particleslib::CPerParticleFloatInput m_flAnimationRate; // 0x1690 | Schema_DeclaredClass | Size: 0x170
+			bool m_bScaleAnimationRate; // 0x1800 | Schema_Builtin | Size: 0x1
+			bool m_bForceLoopingAnimation; // 0x1801 | Schema_Builtin | Size: 0x1
+			bool m_bResetAnimOnStop; // 0x1802 | Schema_Builtin | Size: 0x1
+			bool m_bManualAnimFrame; // 0x1803 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nAnimationScaleField; // 0x1804 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAnimationField; // 0x1808 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nManualFrameField; // 0x180c | Schema_DeclaredClass | Size: 0x4
+			char m_ActivityName[256]; // 0x1810 | Schema_FixedArray | Size: 0x100
+			char m_SequenceName[256]; // 0x1910 | Schema_FixedArray | Size: 0x100
+			bool m_bEnableClothSimulation; // 0x1a10 | Schema_Builtin | Size: 0x1
+			char m_ClothEffectName[64]; // 0x1a11 | Schema_FixedArray | Size: 0x40
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hOverrideMaterial; // 0x1978 | Schema_Atomic | Size: 0x8
-			char  m_hOverrideMaterial[0x8]; // 0x1978 | Schema_Atomic | Size: 0x8
-			bool m_bOverrideTranslucentMaterials; // 0x1980 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hOverrideMaterial; // 0x1a58 | Schema_Atomic | Size: 0x8
+			char  m_hOverrideMaterial[0x8]; // 0x1a58 | Schema_Atomic | Size: 0x8
+			bool m_bOverrideTranslucentMaterials; // 0x1a60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CPerParticleFloatInput m_nSkin; // 0x1988 | Schema_DeclaredClass | Size: 0x160
-			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x1ae8 | Schema_Atomic | Size: 0x18
-			char  m_MaterialVars[0x18]; // 0x1ae8 | Schema_Atomic | Size: 0x18
-			particleslib::CPerParticleFloatInput m_flRenderFilter; // 0x1b00 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flManualModelSelection; // 0x1c60 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleModelInput m_modelInput; // 0x1dc0 | Schema_DeclaredClass | Size: 0x60
-			int32_t m_nLOD; // 0x1e20 | Schema_Builtin | Size: 0x4
-			char m_EconSlotName[256]; // 0x1e24 | Schema_FixedArray | Size: 0x100
-			bool m_bOriginalModel; // 0x1f24 | Schema_Builtin | Size: 0x1
-			bool m_bSuppressTint; // 0x1f25 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleFloatInput m_nSkin; // 0x1a68 | Schema_DeclaredClass | Size: 0x170
+			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x1bd8 | Schema_Atomic | Size: 0x18
+			char  m_MaterialVars[0x18]; // 0x1bd8 | Schema_Atomic | Size: 0x18
+			particleslib::CPerParticleFloatInput m_flRenderFilter; // 0x1bf0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flManualModelSelection; // 0x1d60 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleModelInput m_modelInput; // 0x1ed0 | Schema_DeclaredClass | Size: 0x60
+			int32_t m_nLOD; // 0x1f30 | Schema_Builtin | Size: 0x4
+			char m_EconSlotName[256]; // 0x1f34 | Schema_FixedArray | Size: 0x100
+			bool m_bOriginalModel; // 0x2034 | Schema_Builtin | Size: 0x1
+			bool m_bSuppressTint; // 0x2035 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::RenderModelSubModelFieldType_t m_nSubModelFieldType; // 0x1f28 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bDisableShadows; // 0x1f2c | Schema_Builtin | Size: 0x1
-			bool m_bDisableDepthPrepass; // 0x1f2d | Schema_Builtin | Size: 0x1
-			bool m_bAcceptsDecals; // 0x1f2e | Schema_Builtin | Size: 0x1
-			bool m_bForceDrawInterlevedWithSiblings; // 0x1f2f | Schema_Builtin | Size: 0x1
-			bool m_bDoNotDrawInParticlePass; // 0x1f30 | Schema_Builtin | Size: 0x1
-			bool m_bAllowApproximateTransforms; // 0x1f31 | Schema_Builtin | Size: 0x1
-			char m_szRenderAttribute[260]; // 0x1f32 | Schema_FixedArray | Size: 0x104
+			particles::RenderModelSubModelFieldType_t m_nSubModelFieldType; // 0x2038 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bDisableShadows; // 0x203c | Schema_Builtin | Size: 0x1
+			bool m_bDisableDepthPrepass; // 0x203d | Schema_Builtin | Size: 0x1
+			bool m_bAcceptsDecals; // 0x203e | Schema_Builtin | Size: 0x1
+			bool m_bForceDrawInterlevedWithSiblings; // 0x203f | Schema_Builtin | Size: 0x1
+			bool m_bDoNotDrawInParticlePass; // 0x2040 | Schema_Builtin | Size: 0x1
+			bool m_bAllowApproximateTransforms; // 0x2041 | Schema_Builtin | Size: 0x1
+			char m_szRenderAttribute[260]; // 0x2042 | Schema_FixedArray | Size: 0x104
 			S2_PAD(0x2);
-			particleslib::CParticleCollectionFloatInput m_flRadiusScale; // 0x2038 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flAlphaScale; // 0x2198 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flRollScale; // 0x22f8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x2458 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flRadiusScale; // 0x2148 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flAlphaScale; // 0x22b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flRollScale; // 0x2428 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x2598 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x2460 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x2ad8 | Schema_DeclaredEnum | Size: 0x4
-			S2_PAD(0x3c); // End padding
+			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x25a0 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x2c58 | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x44); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffectsBloomPass) == 0x210, "m_bOnlyRenderInEffectsBloomPass in C_OP_RenderModels should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffectsWaterPass) == 0x211, "m_bOnlyRenderInEffectsWaterPass in C_OP_RenderModels should be at offset 0x211");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bUseMixedResolutionRendering) == 0x212, "m_bUseMixedResolutionRendering in C_OP_RenderModels should be at offset 0x212");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffecsGameOverlay) == 0x213, "m_bOnlyRenderInEffecsGameOverlay in C_OP_RenderModels should be at offset 0x213");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_ModelList) == 0x218, "m_ModelList in C_OP_RenderModels should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nBodyGroupField) == 0x230, "m_nBodyGroupField in C_OP_RenderModels should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSubModelField) == 0x234, "m_nSubModelField in C_OP_RenderModels should be at offset 0x234");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bIgnoreNormal) == 0x238, "m_bIgnoreNormal in C_OP_RenderModels should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOrientZ) == 0x239, "m_bOrientZ in C_OP_RenderModels should be at offset 0x239");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bCenterOffset) == 0x23A, "m_bCenterOffset in C_OP_RenderModels should be at offset 0x23A");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecLocalOffset) == 0x240, "m_vecLocalOffset in C_OP_RenderModels should be at offset 0x240");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecLocalRotation) == 0x8B8, "m_vecLocalRotation in C_OP_RenderModels should be at offset 0x8B8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bIgnoreRadius) == 0xF30, "m_bIgnoreRadius in C_OP_RenderModels should be at offset 0xF30");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nModelScaleCP) == 0xF34, "m_nModelScaleCP in C_OP_RenderModels should be at offset 0xF34");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecComponentScale) == 0xF38, "m_vecComponentScale in C_OP_RenderModels should be at offset 0xF38");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bLocalScale) == 0x15B0, "m_bLocalScale in C_OP_RenderModels should be at offset 0x15B0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSizeCullBloat) == 0x15B4, "m_nSizeCullBloat in C_OP_RenderModels should be at offset 0x15B4");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bAnimated) == 0x15B8, "m_bAnimated in C_OP_RenderModels should be at offset 0x15B8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flAnimationRate) == 0x15C0, "m_flAnimationRate in C_OP_RenderModels should be at offset 0x15C0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bScaleAnimationRate) == 0x1720, "m_bScaleAnimationRate in C_OP_RenderModels should be at offset 0x1720");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bForceLoopingAnimation) == 0x1721, "m_bForceLoopingAnimation in C_OP_RenderModels should be at offset 0x1721");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bResetAnimOnStop) == 0x1722, "m_bResetAnimOnStop in C_OP_RenderModels should be at offset 0x1722");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bManualAnimFrame) == 0x1723, "m_bManualAnimFrame in C_OP_RenderModels should be at offset 0x1723");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nAnimationScaleField) == 0x1724, "m_nAnimationScaleField in C_OP_RenderModels should be at offset 0x1724");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nAnimationField) == 0x1728, "m_nAnimationField in C_OP_RenderModels should be at offset 0x1728");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nManualFrameField) == 0x172C, "m_nManualFrameField in C_OP_RenderModels should be at offset 0x172C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_ActivityName) == 0x1730, "m_ActivityName in C_OP_RenderModels should be at offset 0x1730");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_SequenceName) == 0x1830, "m_SequenceName in C_OP_RenderModels should be at offset 0x1830");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bEnableClothSimulation) == 0x1930, "m_bEnableClothSimulation in C_OP_RenderModels should be at offset 0x1930");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_ClothEffectName) == 0x1931, "m_ClothEffectName in C_OP_RenderModels should be at offset 0x1931");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_hOverrideMaterial) == 0x1978, "m_hOverrideMaterial in C_OP_RenderModels should be at offset 0x1978");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOverrideTranslucentMaterials) == 0x1980, "m_bOverrideTranslucentMaterials in C_OP_RenderModels should be at offset 0x1980");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSkin) == 0x1988, "m_nSkin in C_OP_RenderModels should be at offset 0x1988");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_MaterialVars) == 0x1AE8, "m_MaterialVars in C_OP_RenderModels should be at offset 0x1AE8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flRenderFilter) == 0x1B00, "m_flRenderFilter in C_OP_RenderModels should be at offset 0x1B00");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flManualModelSelection) == 0x1C60, "m_flManualModelSelection in C_OP_RenderModels should be at offset 0x1C60");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_modelInput) == 0x1DC0, "m_modelInput in C_OP_RenderModels should be at offset 0x1DC0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nLOD) == 0x1E20, "m_nLOD in C_OP_RenderModels should be at offset 0x1E20");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_EconSlotName) == 0x1E24, "m_EconSlotName in C_OP_RenderModels should be at offset 0x1E24");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOriginalModel) == 0x1F24, "m_bOriginalModel in C_OP_RenderModels should be at offset 0x1F24");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bSuppressTint) == 0x1F25, "m_bSuppressTint in C_OP_RenderModels should be at offset 0x1F25");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSubModelFieldType) == 0x1F28, "m_nSubModelFieldType in C_OP_RenderModels should be at offset 0x1F28");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bDisableShadows) == 0x1F2C, "m_bDisableShadows in C_OP_RenderModels should be at offset 0x1F2C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bDisableDepthPrepass) == 0x1F2D, "m_bDisableDepthPrepass in C_OP_RenderModels should be at offset 0x1F2D");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bAcceptsDecals) == 0x1F2E, "m_bAcceptsDecals in C_OP_RenderModels should be at offset 0x1F2E");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bForceDrawInterlevedWithSiblings) == 0x1F2F, "m_bForceDrawInterlevedWithSiblings in C_OP_RenderModels should be at offset 0x1F2F");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bDoNotDrawInParticlePass) == 0x1F30, "m_bDoNotDrawInParticlePass in C_OP_RenderModels should be at offset 0x1F30");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bAllowApproximateTransforms) == 0x1F31, "m_bAllowApproximateTransforms in C_OP_RenderModels should be at offset 0x1F31");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_szRenderAttribute) == 0x1F32, "m_szRenderAttribute in C_OP_RenderModels should be at offset 0x1F32");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flRadiusScale) == 0x2038, "m_flRadiusScale in C_OP_RenderModels should be at offset 0x2038");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flAlphaScale) == 0x2198, "m_flAlphaScale in C_OP_RenderModels should be at offset 0x2198");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flRollScale) == 0x22F8, "m_flRollScale in C_OP_RenderModels should be at offset 0x22F8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nAlpha2Field) == 0x2458, "m_nAlpha2Field in C_OP_RenderModels should be at offset 0x2458");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecColorScale) == 0x2460, "m_vecColorScale in C_OP_RenderModels should be at offset 0x2460");
-		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nColorBlendType) == 0x2AD8, "m_nColorBlendType in C_OP_RenderModels should be at offset 0x2AD8");
-		static_assert(sizeof(CS2::particles::C_OP_RenderModels) == 0x2B18, "C_OP_RenderModels size should be 0x2B18");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffectsBloomPass) == 0x220, "m_bOnlyRenderInEffectsBloomPass in C_OP_RenderModels should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffectsWaterPass) == 0x221, "m_bOnlyRenderInEffectsWaterPass in C_OP_RenderModels should be at offset 0x221");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bUseMixedResolutionRendering) == 0x222, "m_bUseMixedResolutionRendering in C_OP_RenderModels should be at offset 0x222");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffecsGameOverlay) == 0x223, "m_bOnlyRenderInEffecsGameOverlay in C_OP_RenderModels should be at offset 0x223");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_ModelList) == 0x228, "m_ModelList in C_OP_RenderModels should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nBodyGroupField) == 0x240, "m_nBodyGroupField in C_OP_RenderModels should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSubModelField) == 0x244, "m_nSubModelField in C_OP_RenderModels should be at offset 0x244");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bIgnoreNormal) == 0x248, "m_bIgnoreNormal in C_OP_RenderModels should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOrientZ) == 0x249, "m_bOrientZ in C_OP_RenderModels should be at offset 0x249");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bCenterOffset) == 0x24A, "m_bCenterOffset in C_OP_RenderModels should be at offset 0x24A");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecLocalOffset) == 0x250, "m_vecLocalOffset in C_OP_RenderModels should be at offset 0x250");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecLocalRotation) == 0x908, "m_vecLocalRotation in C_OP_RenderModels should be at offset 0x908");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bIgnoreRadius) == 0xFC0, "m_bIgnoreRadius in C_OP_RenderModels should be at offset 0xFC0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nModelScaleCP) == 0xFC4, "m_nModelScaleCP in C_OP_RenderModels should be at offset 0xFC4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecComponentScale) == 0xFC8, "m_vecComponentScale in C_OP_RenderModels should be at offset 0xFC8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bLocalScale) == 0x1680, "m_bLocalScale in C_OP_RenderModels should be at offset 0x1680");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSizeCullBloat) == 0x1684, "m_nSizeCullBloat in C_OP_RenderModels should be at offset 0x1684");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bAnimated) == 0x1688, "m_bAnimated in C_OP_RenderModels should be at offset 0x1688");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flAnimationRate) == 0x1690, "m_flAnimationRate in C_OP_RenderModels should be at offset 0x1690");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bScaleAnimationRate) == 0x1800, "m_bScaleAnimationRate in C_OP_RenderModels should be at offset 0x1800");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bForceLoopingAnimation) == 0x1801, "m_bForceLoopingAnimation in C_OP_RenderModels should be at offset 0x1801");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bResetAnimOnStop) == 0x1802, "m_bResetAnimOnStop in C_OP_RenderModels should be at offset 0x1802");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bManualAnimFrame) == 0x1803, "m_bManualAnimFrame in C_OP_RenderModels should be at offset 0x1803");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nAnimationScaleField) == 0x1804, "m_nAnimationScaleField in C_OP_RenderModels should be at offset 0x1804");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nAnimationField) == 0x1808, "m_nAnimationField in C_OP_RenderModels should be at offset 0x1808");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nManualFrameField) == 0x180C, "m_nManualFrameField in C_OP_RenderModels should be at offset 0x180C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_ActivityName) == 0x1810, "m_ActivityName in C_OP_RenderModels should be at offset 0x1810");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_SequenceName) == 0x1910, "m_SequenceName in C_OP_RenderModels should be at offset 0x1910");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bEnableClothSimulation) == 0x1A10, "m_bEnableClothSimulation in C_OP_RenderModels should be at offset 0x1A10");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_ClothEffectName) == 0x1A11, "m_ClothEffectName in C_OP_RenderModels should be at offset 0x1A11");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_hOverrideMaterial) == 0x1A58, "m_hOverrideMaterial in C_OP_RenderModels should be at offset 0x1A58");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOverrideTranslucentMaterials) == 0x1A60, "m_bOverrideTranslucentMaterials in C_OP_RenderModels should be at offset 0x1A60");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSkin) == 0x1A68, "m_nSkin in C_OP_RenderModels should be at offset 0x1A68");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_MaterialVars) == 0x1BD8, "m_MaterialVars in C_OP_RenderModels should be at offset 0x1BD8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flRenderFilter) == 0x1BF0, "m_flRenderFilter in C_OP_RenderModels should be at offset 0x1BF0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flManualModelSelection) == 0x1D60, "m_flManualModelSelection in C_OP_RenderModels should be at offset 0x1D60");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_modelInput) == 0x1ED0, "m_modelInput in C_OP_RenderModels should be at offset 0x1ED0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nLOD) == 0x1F30, "m_nLOD in C_OP_RenderModels should be at offset 0x1F30");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_EconSlotName) == 0x1F34, "m_EconSlotName in C_OP_RenderModels should be at offset 0x1F34");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOriginalModel) == 0x2034, "m_bOriginalModel in C_OP_RenderModels should be at offset 0x2034");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bSuppressTint) == 0x2035, "m_bSuppressTint in C_OP_RenderModels should be at offset 0x2035");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nSubModelFieldType) == 0x2038, "m_nSubModelFieldType in C_OP_RenderModels should be at offset 0x2038");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bDisableShadows) == 0x203C, "m_bDisableShadows in C_OP_RenderModels should be at offset 0x203C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bDisableDepthPrepass) == 0x203D, "m_bDisableDepthPrepass in C_OP_RenderModels should be at offset 0x203D");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bAcceptsDecals) == 0x203E, "m_bAcceptsDecals in C_OP_RenderModels should be at offset 0x203E");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bForceDrawInterlevedWithSiblings) == 0x203F, "m_bForceDrawInterlevedWithSiblings in C_OP_RenderModels should be at offset 0x203F");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bDoNotDrawInParticlePass) == 0x2040, "m_bDoNotDrawInParticlePass in C_OP_RenderModels should be at offset 0x2040");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bAllowApproximateTransforms) == 0x2041, "m_bAllowApproximateTransforms in C_OP_RenderModels should be at offset 0x2041");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_szRenderAttribute) == 0x2042, "m_szRenderAttribute in C_OP_RenderModels should be at offset 0x2042");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flRadiusScale) == 0x2148, "m_flRadiusScale in C_OP_RenderModels should be at offset 0x2148");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flAlphaScale) == 0x22B8, "m_flAlphaScale in C_OP_RenderModels should be at offset 0x22B8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_flRollScale) == 0x2428, "m_flRollScale in C_OP_RenderModels should be at offset 0x2428");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nAlpha2Field) == 0x2598, "m_nAlpha2Field in C_OP_RenderModels should be at offset 0x2598");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecColorScale) == 0x25A0, "m_vecColorScale in C_OP_RenderModels should be at offset 0x25A0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nColorBlendType) == 0x2C58, "m_nColorBlendType in C_OP_RenderModels should be at offset 0x2C58");
+		static_assert(sizeof(CS2::particles::C_OP_RenderModels) == 0x2CA0, "C_OP_RenderModels size should be 0x2CA0");
 	}
 }

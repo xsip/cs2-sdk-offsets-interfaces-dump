@@ -15,44 +15,44 @@ namespace CS2 {
 	namespace server {
 		class CTriggerLerpObject : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszLerpTarget; // 0x9c0 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hLerpTarget; // 0x9c8 | Schema_Atomic | Size: 0x4
-			char  m_hLerpTarget[0x4]; // 0x9c8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszLerpTarget; // 0x9a8 | Schema_Atomic | Size: 0x8
+			// server::CHandle< server::CBaseEntity > m_hLerpTarget; // 0x9b0 | Schema_Atomic | Size: 0x4
+			char  m_hLerpTarget[0x4]; // 0x9b0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszLerpTargetAttachment; // 0x9d0 | Schema_Atomic | Size: 0x8
-			modellib::AttachmentHandle_t m_hLerpTargetAttachment; // 0x9d8 | Schema_DeclaredClass | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszLerpTargetAttachment; // 0x9b8 | Schema_Atomic | Size: 0x8
+			modellib::AttachmentHandle_t m_hLerpTargetAttachment; // 0x9c0 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flLerpDuration; // 0x9dc | Schema_Builtin | Size: 0x4
-			bool m_bLerpRestoreMoveType; // 0x9e0 | Schema_Builtin | Size: 0x1
-			bool m_bSingleLerpObject; // 0x9e1 | Schema_Builtin | Size: 0x1
+			float32 m_flLerpDuration; // 0x9c4 | Schema_Builtin | Size: 0x4
+			bool m_bLerpRestoreMoveType; // 0x9c8 | Schema_Builtin | Size: 0x1
+			bool m_bSingleLerpObject; // 0x9c9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			// GlobalTypes::CUtlVector< server::lerpdata_t > m_vecLerpingObjects; // 0x9e8 | Schema_Atomic | Size: 0x18
-			char  m_vecLerpingObjects[0x18]; // 0x9e8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlSymbolLarge m_iszLerpEffect; // 0xa00 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszLerpSound; // 0xa08 | Schema_Atomic | Size: 0x8
-			bool m_bAttachTouchingObject; // 0xa10 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CUtlVector< server::lerpdata_t > m_vecLerpingObjects; // 0x9d0 | Schema_Atomic | Size: 0x18
+			char  m_vecLerpingObjects[0x18]; // 0x9d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_iszLerpEffect; // 0x9e8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszLerpSound; // 0x9f0 | Schema_Atomic | Size: 0x8
+			bool m_bAttachTouchingObject; // 0x9f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CBaseEntity > m_hEntityToWaitForDisconnect; // 0xa14 | Schema_Atomic | Size: 0x4
-			char  m_hEntityToWaitForDisconnect[0x4]; // 0xa14 | Schema_Atomic | Size: 0x4
-			entity2::CEntityIOOutput m_OnLerpStarted; // 0xa18 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnLerpFinished; // 0xa40 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnDetached; // 0xa68 | Schema_DeclaredClass | Size: 0x28
+			// server::CHandle< server::CBaseEntity > m_hEntityToWaitForDisconnect; // 0x9fc | Schema_Atomic | Size: 0x4
+			char  m_hEntityToWaitForDisconnect[0x4]; // 0x9fc | Schema_Atomic | Size: 0x4
+			entity2::CEntityIOOutput m_OnLerpStarted; // 0xa00 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnLerpFinished; // 0xa28 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnDetached; // 0xa50 | Schema_DeclaredClass | Size: 0x28
 		};
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpTarget) == 0x9C0, "m_iszLerpTarget in CTriggerLerpObject should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_hLerpTarget) == 0x9C8, "m_hLerpTarget in CTriggerLerpObject should be at offset 0x9C8");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpTargetAttachment) == 0x9D0, "m_iszLerpTargetAttachment in CTriggerLerpObject should be at offset 0x9D0");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_hLerpTargetAttachment) == 0x9D8, "m_hLerpTargetAttachment in CTriggerLerpObject should be at offset 0x9D8");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_flLerpDuration) == 0x9DC, "m_flLerpDuration in CTriggerLerpObject should be at offset 0x9DC");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_bLerpRestoreMoveType) == 0x9E0, "m_bLerpRestoreMoveType in CTriggerLerpObject should be at offset 0x9E0");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_bSingleLerpObject) == 0x9E1, "m_bSingleLerpObject in CTriggerLerpObject should be at offset 0x9E1");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_vecLerpingObjects) == 0x9E8, "m_vecLerpingObjects in CTriggerLerpObject should be at offset 0x9E8");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpEffect) == 0xA00, "m_iszLerpEffect in CTriggerLerpObject should be at offset 0xA00");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpSound) == 0xA08, "m_iszLerpSound in CTriggerLerpObject should be at offset 0xA08");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_bAttachTouchingObject) == 0xA10, "m_bAttachTouchingObject in CTriggerLerpObject should be at offset 0xA10");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_hEntityToWaitForDisconnect) == 0xA14, "m_hEntityToWaitForDisconnect in CTriggerLerpObject should be at offset 0xA14");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnLerpStarted) == 0xA18, "m_OnLerpStarted in CTriggerLerpObject should be at offset 0xA18");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnLerpFinished) == 0xA40, "m_OnLerpFinished in CTriggerLerpObject should be at offset 0xA40");
-		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnDetached) == 0xA68, "m_OnDetached in CTriggerLerpObject should be at offset 0xA68");
-		static_assert(sizeof(CS2::server::CTriggerLerpObject) == 0xA90, "CTriggerLerpObject size should be 0xA90");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpTarget) == 0x9A8, "m_iszLerpTarget in CTriggerLerpObject should be at offset 0x9A8");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_hLerpTarget) == 0x9B0, "m_hLerpTarget in CTriggerLerpObject should be at offset 0x9B0");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpTargetAttachment) == 0x9B8, "m_iszLerpTargetAttachment in CTriggerLerpObject should be at offset 0x9B8");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_hLerpTargetAttachment) == 0x9C0, "m_hLerpTargetAttachment in CTriggerLerpObject should be at offset 0x9C0");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_flLerpDuration) == 0x9C4, "m_flLerpDuration in CTriggerLerpObject should be at offset 0x9C4");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_bLerpRestoreMoveType) == 0x9C8, "m_bLerpRestoreMoveType in CTriggerLerpObject should be at offset 0x9C8");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_bSingleLerpObject) == 0x9C9, "m_bSingleLerpObject in CTriggerLerpObject should be at offset 0x9C9");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_vecLerpingObjects) == 0x9D0, "m_vecLerpingObjects in CTriggerLerpObject should be at offset 0x9D0");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpEffect) == 0x9E8, "m_iszLerpEffect in CTriggerLerpObject should be at offset 0x9E8");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpSound) == 0x9F0, "m_iszLerpSound in CTriggerLerpObject should be at offset 0x9F0");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_bAttachTouchingObject) == 0x9F8, "m_bAttachTouchingObject in CTriggerLerpObject should be at offset 0x9F8");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_hEntityToWaitForDisconnect) == 0x9FC, "m_hEntityToWaitForDisconnect in CTriggerLerpObject should be at offset 0x9FC");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnLerpStarted) == 0xA00, "m_OnLerpStarted in CTriggerLerpObject should be at offset 0xA00");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnLerpFinished) == 0xA28, "m_OnLerpFinished in CTriggerLerpObject should be at offset 0xA28");
+		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnDetached) == 0xA50, "m_OnDetached in CTriggerLerpObject should be at offset 0xA50");
+		static_assert(sizeof(CS2::server::CTriggerLerpObject) == 0xA78, "CTriggerLerpObject size should be 0xA78");
 	}
 }

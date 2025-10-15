@@ -15,25 +15,25 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapNamedModelElementToScalar : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x1c8 | Schema_Atomic | Size: 0x8
-			char  m_hModel[0x8]; // 0x1c8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; // 0x1d0 | Schema_Atomic | Size: 0x18
-			char  m_names[0x18]; // 0x1d0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_values; // 0x1e8 | Schema_Atomic | Size: 0x18
-			char  m_values[0x18]; // 0x1e8 | Schema_Atomic | Size: 0x18
-			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x200 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x204 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x208 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bModelFromRenderer; // 0x20c | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x1d8 | Schema_Atomic | Size: 0x8
+			char  m_hModel[0x8]; // 0x1d8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; // 0x1e0 | Schema_Atomic | Size: 0x18
+			char  m_names[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< float32 > m_values; // 0x1f8 | Schema_Atomic | Size: 0x18
+			char  m_values[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
+			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x210 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x214 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x218 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bModelFromRenderer; // 0x21c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_hModel) == 0x1C8, "m_hModel in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_names) == 0x1D0, "m_names in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_values) == 0x1E8, "m_values in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_nFieldInput) == 0x200, "m_nFieldInput in C_INIT_RemapNamedModelElementToScalar should be at offset 0x200");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_nFieldOutput) == 0x204, "m_nFieldOutput in C_INIT_RemapNamedModelElementToScalar should be at offset 0x204");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_nSetMethod) == 0x208, "m_nSetMethod in C_INIT_RemapNamedModelElementToScalar should be at offset 0x208");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_bModelFromRenderer) == 0x20C, "m_bModelFromRenderer in C_INIT_RemapNamedModelElementToScalar should be at offset 0x20C");
-		static_assert(sizeof(CS2::particles::C_INIT_RemapNamedModelElementToScalar) == 0x210, "C_INIT_RemapNamedModelElementToScalar size should be 0x210");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_hModel) == 0x1D8, "m_hModel in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_names) == 0x1E0, "m_names in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_values) == 0x1F8, "m_values in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_nFieldInput) == 0x210, "m_nFieldInput in C_INIT_RemapNamedModelElementToScalar should be at offset 0x210");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_nFieldOutput) == 0x214, "m_nFieldOutput in C_INIT_RemapNamedModelElementToScalar should be at offset 0x214");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_nSetMethod) == 0x218, "m_nSetMethod in C_INIT_RemapNamedModelElementToScalar should be at offset 0x218");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_bModelFromRenderer) == 0x21C, "m_bModelFromRenderer in C_INIT_RemapNamedModelElementToScalar should be at offset 0x21C");
+		static_assert(sizeof(CS2::particles::C_INIT_RemapNamedModelElementToScalar) == 0x220, "C_INIT_RemapNamedModelElementToScalar size should be 0x220");
 	}
 }

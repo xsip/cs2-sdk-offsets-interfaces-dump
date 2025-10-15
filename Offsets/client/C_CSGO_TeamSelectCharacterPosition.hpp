@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x13B8
+			// Class size: 0x13B0
 			namespace C_CSGO_TeamSelectCharacterPosition /*: public CS2::client::C_CSGO_TeamPreviewCharacterPosition*/ {
 				// NO SCHEMA DATA FOUND!
 			}

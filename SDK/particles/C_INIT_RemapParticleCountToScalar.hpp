@@ -15,33 +15,33 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapParticleCountToScalar : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nInputMin; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nInputMax; // 0x1d0 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleControlPoint; // 0x1d4 | Schema_Builtin | Size: 0x4
-			int32_t m_nScaleControlPointField; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMin; // 0x1dc | Schema_Builtin | Size: 0x4
-			float32 m_flOutputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x1e4 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bActiveRange; // 0x1e8 | Schema_Builtin | Size: 0x1
-			bool m_bInvert; // 0x1e9 | Schema_Builtin | Size: 0x1
-			bool m_bWrap; // 0x1ea | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nInputMin; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nInputMax; // 0x1e0 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleControlPoint; // 0x1e4 | Schema_Builtin | Size: 0x4
+			int32_t m_nScaleControlPointField; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMin; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flOutputMax; // 0x1f0 | Schema_Builtin | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x1f4 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bActiveRange; // 0x1f8 | Schema_Builtin | Size: 0x1
+			bool m_bInvert; // 0x1f9 | Schema_Builtin | Size: 0x1
+			bool m_bWrap; // 0x1fa | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flRemapBias; // 0x1ec | Schema_Builtin | Size: 0x4
+			float32 m_flRemapBias; // 0x1fc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nFieldOutput) == 0x1C8, "m_nFieldOutput in C_INIT_RemapParticleCountToScalar should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nInputMin) == 0x1CC, "m_nInputMin in C_INIT_RemapParticleCountToScalar should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nInputMax) == 0x1D0, "m_nInputMax in C_INIT_RemapParticleCountToScalar should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nScaleControlPoint) == 0x1D4, "m_nScaleControlPoint in C_INIT_RemapParticleCountToScalar should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nScaleControlPointField) == 0x1D8, "m_nScaleControlPointField in C_INIT_RemapParticleCountToScalar should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_flOutputMin) == 0x1DC, "m_flOutputMin in C_INIT_RemapParticleCountToScalar should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_flOutputMax) == 0x1E0, "m_flOutputMax in C_INIT_RemapParticleCountToScalar should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nSetMethod) == 0x1E4, "m_nSetMethod in C_INIT_RemapParticleCountToScalar should be at offset 0x1E4");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_bActiveRange) == 0x1E8, "m_bActiveRange in C_INIT_RemapParticleCountToScalar should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_bInvert) == 0x1E9, "m_bInvert in C_INIT_RemapParticleCountToScalar should be at offset 0x1E9");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_bWrap) == 0x1EA, "m_bWrap in C_INIT_RemapParticleCountToScalar should be at offset 0x1EA");
-		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_flRemapBias) == 0x1EC, "m_flRemapBias in C_INIT_RemapParticleCountToScalar should be at offset 0x1EC");
-		static_assert(sizeof(CS2::particles::C_INIT_RemapParticleCountToScalar) == 0x1F8, "C_INIT_RemapParticleCountToScalar size should be 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_INIT_RemapParticleCountToScalar should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nInputMin) == 0x1DC, "m_nInputMin in C_INIT_RemapParticleCountToScalar should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nInputMax) == 0x1E0, "m_nInputMax in C_INIT_RemapParticleCountToScalar should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nScaleControlPoint) == 0x1E4, "m_nScaleControlPoint in C_INIT_RemapParticleCountToScalar should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nScaleControlPointField) == 0x1E8, "m_nScaleControlPointField in C_INIT_RemapParticleCountToScalar should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_flOutputMin) == 0x1EC, "m_flOutputMin in C_INIT_RemapParticleCountToScalar should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_flOutputMax) == 0x1F0, "m_flOutputMax in C_INIT_RemapParticleCountToScalar should be at offset 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_nSetMethod) == 0x1F4, "m_nSetMethod in C_INIT_RemapParticleCountToScalar should be at offset 0x1F4");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_bActiveRange) == 0x1F8, "m_bActiveRange in C_INIT_RemapParticleCountToScalar should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_bInvert) == 0x1F9, "m_bInvert in C_INIT_RemapParticleCountToScalar should be at offset 0x1F9");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_bWrap) == 0x1FA, "m_bWrap in C_INIT_RemapParticleCountToScalar should be at offset 0x1FA");
+		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToScalar, m_flRemapBias) == 0x1FC, "m_flRemapBias in C_INIT_RemapParticleCountToScalar should be at offset 0x1FC");
+		static_assert(sizeof(CS2::particles::C_INIT_RemapParticleCountToScalar) == 0x208, "C_INIT_RemapParticleCountToScalar size should be 0x208");
 	}
 }

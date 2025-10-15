@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x18E0
+			// Class size: 0x1A90
 			namespace CBaseAnimGraphController /*: public CS2::client::CSkeletonAnimationController*/ {
 				constexpr std::ptrdiff_t m_animGraphNetworkedVars = 0x18; // client::CAnimGraphNetworkedVariables m_animGraphNetworkedVars; |  Schema_DeclaredClass | Size: 0x1490
 				constexpr std::ptrdiff_t m_bSequenceFinished = 0x14a8; // bool m_bSequenceFinished; |  0x14a8 | Schema_Builtin | Size: 0x1
@@ -30,7 +30,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nSerializePoseRecipeSizeAG2 = 0x1888; // int32_t m_nSerializePoseRecipeSizeAG2; |  0x1888 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSerializePoseRecipeVersionAG2 = 0x188c; // int32_t m_nSerializePoseRecipeVersionAG2; |  0x188c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGraphCreationFlagsAG2 = 0x1890; // uint8_t m_nGraphCreationFlagsAG2; |  0x1890 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nServerGraphDefReloadCountAG2 = 0x18d4; // int32_t m_nServerGraphDefReloadCountAG2; |  0x18d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nServerGraphDefReloadCountAG2 = 0x1a7c; // int32_t m_nServerGraphDefReloadCountAG2; |  0x1a7c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nServerSerializationContextIteration = 0x1a84; // int32_t m_nServerSerializationContextIteration; |  0x1a84 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xAA0
+			// Class size: 0xA88
 			namespace CPointWorldText /*: public CS2::server::CModelPointEntity*/ {
-				constexpr std::ptrdiff_t m_messageText = 0x7f0; // char m_messageText[512]; |  0x7f0 | Schema_FixedArray | Size: 0x200
-				constexpr std::ptrdiff_t m_FontName = 0x9f0; // char m_FontName[64]; |  0x9f0 | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_BackgroundMaterialName = 0xa30; // char m_BackgroundMaterialName[64]; |  0xa30 | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_bEnabled = 0xa70; // bool m_bEnabled; |  0xa70 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFullbright = 0xa71; // bool m_bFullbright; |  0xa71 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flWorldUnitsPerPx = 0xa74; // float32 m_flWorldUnitsPerPx; |  0xa74 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFontSize = 0xa78; // float32 m_flFontSize; |  0xa78 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDepthOffset = 0xa7c; // float32 m_flDepthOffset; |  0xa7c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDrawBackground = 0xa80; // bool m_bDrawBackground; |  0xa80 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0xa84; // float32 m_flBackgroundBorderWidth; |  0xa84 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0xa88; // float32 m_flBackgroundBorderHeight; |  0xa88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0xa8c; // float32 m_flBackgroundWorldToUV; |  0xa8c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Color = 0xa90; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0xa94; // client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyVertical = 0xa98; // client::PointWorldTextJustifyVertical_t m_nJustifyVertical; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nReorientMode = 0xa9c; // client::PointWorldTextReorientMode_t m_nReorientMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_messageText = 0x7d8; // char m_messageText[512]; |  0x7d8 | Schema_FixedArray | Size: 0x200
+				constexpr std::ptrdiff_t m_FontName = 0x9d8; // char m_FontName[64]; |  0x9d8 | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_BackgroundMaterialName = 0xa18; // char m_BackgroundMaterialName[64]; |  0xa18 | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_bEnabled = 0xa58; // bool m_bEnabled; |  0xa58 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFullbright = 0xa59; // bool m_bFullbright; |  0xa59 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flWorldUnitsPerPx = 0xa5c; // float32 m_flWorldUnitsPerPx; |  0xa5c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFontSize = 0xa60; // float32 m_flFontSize; |  0xa60 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDepthOffset = 0xa64; // float32 m_flDepthOffset; |  0xa64 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDrawBackground = 0xa68; // bool m_bDrawBackground; |  0xa68 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0xa6c; // float32 m_flBackgroundBorderWidth; |  0xa6c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0xa70; // float32 m_flBackgroundBorderHeight; |  0xa70 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0xa74; // float32 m_flBackgroundWorldToUV; |  0xa74 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0xa78; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0xa7c; // client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyVertical = 0xa80; // client::PointWorldTextJustifyVertical_t m_nJustifyVertical; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nReorientMode = 0xa84; // client::PointWorldTextReorientMode_t m_nReorientMode; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

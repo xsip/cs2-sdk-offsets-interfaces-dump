@@ -15,41 +15,41 @@ namespace CS2 {
 	namespace server {
 		class CPhysBox : public CS2::server::CBreakable {
 		public:
-			int32_t m_damageType; // 0x8c8 | Schema_Builtin | Size: 0x4
-			int32_t m_damageToEnableMotion; // 0x8cc | Schema_Builtin | Size: 0x4
-			float32 m_flForceToEnableMotion; // 0x8d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vHoverPosePosition; // 0x8d4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angHoverPoseAngles; // 0x8e0 | Schema_Atomic | Size: 0xc
-			bool m_bNotSolidToWorld; // 0x8ec | Schema_Builtin | Size: 0x1
-			bool m_bEnableUseOutput; // 0x8ed | Schema_Builtin | Size: 0x1
-			server::HoverPoseFlags_t m_nHoverPoseFlags; // 0x8ee | Schema_DeclaredEnum | Size: 0x1
+			int32_t m_damageType; // 0x8b0 | Schema_Builtin | Size: 0x4
+			int32_t m_damageToEnableMotion; // 0x8b4 | Schema_Builtin | Size: 0x4
+			float32 m_flForceToEnableMotion; // 0x8b8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vHoverPosePosition; // 0x8bc | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angHoverPoseAngles; // 0x8c8 | Schema_Atomic | Size: 0xc
+			bool m_bNotSolidToWorld; // 0x8d4 | Schema_Builtin | Size: 0x1
+			bool m_bEnableUseOutput; // 0x8d5 | Schema_Builtin | Size: 0x1
+			server::HoverPoseFlags_t m_nHoverPoseFlags; // 0x8d6 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flTouchOutputPerEntityDelay; // 0x8f0 | Schema_Builtin | Size: 0x4
+			float32 m_flTouchOutputPerEntityDelay; // 0x8d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnDamaged; // 0x8f8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAwakened; // 0x920 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMotionEnabled; // 0x948 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPlayerUse; // 0x970 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStartTouch; // 0x998 | Schema_DeclaredClass | Size: 0x28
-			// server::CHandle< server::CBasePlayerPawn > m_hCarryingPlayer; // 0x9c0 | Schema_Atomic | Size: 0x4
-			char  m_hCarryingPlayer[0x4]; // 0x9c0 | Schema_Atomic | Size: 0x4
+			entity2::CEntityIOOutput m_OnDamaged; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnAwakened; // 0x908 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnMotionEnabled; // 0x930 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnPlayerUse; // 0x958 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnStartTouch; // 0x980 | Schema_DeclaredClass | Size: 0x28
+			// server::CHandle< server::CBasePlayerPawn > m_hCarryingPlayer; // 0x9a8 | Schema_Atomic | Size: 0x4
+			char  m_hCarryingPlayer[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysBox, m_damageType) == 0x8C8, "m_damageType in CPhysBox should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CPhysBox, m_damageToEnableMotion) == 0x8CC, "m_damageToEnableMotion in CPhysBox should be at offset 0x8CC");
-		static_assert(offsetof(CS2::server::CPhysBox, m_flForceToEnableMotion) == 0x8D0, "m_flForceToEnableMotion in CPhysBox should be at offset 0x8D0");
-		static_assert(offsetof(CS2::server::CPhysBox, m_vHoverPosePosition) == 0x8D4, "m_vHoverPosePosition in CPhysBox should be at offset 0x8D4");
-		static_assert(offsetof(CS2::server::CPhysBox, m_angHoverPoseAngles) == 0x8E0, "m_angHoverPoseAngles in CPhysBox should be at offset 0x8E0");
-		static_assert(offsetof(CS2::server::CPhysBox, m_bNotSolidToWorld) == 0x8EC, "m_bNotSolidToWorld in CPhysBox should be at offset 0x8EC");
-		static_assert(offsetof(CS2::server::CPhysBox, m_bEnableUseOutput) == 0x8ED, "m_bEnableUseOutput in CPhysBox should be at offset 0x8ED");
-		static_assert(offsetof(CS2::server::CPhysBox, m_nHoverPoseFlags) == 0x8EE, "m_nHoverPoseFlags in CPhysBox should be at offset 0x8EE");
-		static_assert(offsetof(CS2::server::CPhysBox, m_flTouchOutputPerEntityDelay) == 0x8F0, "m_flTouchOutputPerEntityDelay in CPhysBox should be at offset 0x8F0");
-		static_assert(offsetof(CS2::server::CPhysBox, m_OnDamaged) == 0x8F8, "m_OnDamaged in CPhysBox should be at offset 0x8F8");
-		static_assert(offsetof(CS2::server::CPhysBox, m_OnAwakened) == 0x920, "m_OnAwakened in CPhysBox should be at offset 0x920");
-		static_assert(offsetof(CS2::server::CPhysBox, m_OnMotionEnabled) == 0x948, "m_OnMotionEnabled in CPhysBox should be at offset 0x948");
-		static_assert(offsetof(CS2::server::CPhysBox, m_OnPlayerUse) == 0x970, "m_OnPlayerUse in CPhysBox should be at offset 0x970");
-		static_assert(offsetof(CS2::server::CPhysBox, m_OnStartTouch) == 0x998, "m_OnStartTouch in CPhysBox should be at offset 0x998");
-		static_assert(offsetof(CS2::server::CPhysBox, m_hCarryingPlayer) == 0x9C0, "m_hCarryingPlayer in CPhysBox should be at offset 0x9C0");
-		static_assert(sizeof(CS2::server::CPhysBox) == 0x9E0, "CPhysBox size should be 0x9E0");
+		static_assert(offsetof(CS2::server::CPhysBox, m_damageType) == 0x8B0, "m_damageType in CPhysBox should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CPhysBox, m_damageToEnableMotion) == 0x8B4, "m_damageToEnableMotion in CPhysBox should be at offset 0x8B4");
+		static_assert(offsetof(CS2::server::CPhysBox, m_flForceToEnableMotion) == 0x8B8, "m_flForceToEnableMotion in CPhysBox should be at offset 0x8B8");
+		static_assert(offsetof(CS2::server::CPhysBox, m_vHoverPosePosition) == 0x8BC, "m_vHoverPosePosition in CPhysBox should be at offset 0x8BC");
+		static_assert(offsetof(CS2::server::CPhysBox, m_angHoverPoseAngles) == 0x8C8, "m_angHoverPoseAngles in CPhysBox should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CPhysBox, m_bNotSolidToWorld) == 0x8D4, "m_bNotSolidToWorld in CPhysBox should be at offset 0x8D4");
+		static_assert(offsetof(CS2::server::CPhysBox, m_bEnableUseOutput) == 0x8D5, "m_bEnableUseOutput in CPhysBox should be at offset 0x8D5");
+		static_assert(offsetof(CS2::server::CPhysBox, m_nHoverPoseFlags) == 0x8D6, "m_nHoverPoseFlags in CPhysBox should be at offset 0x8D6");
+		static_assert(offsetof(CS2::server::CPhysBox, m_flTouchOutputPerEntityDelay) == 0x8D8, "m_flTouchOutputPerEntityDelay in CPhysBox should be at offset 0x8D8");
+		static_assert(offsetof(CS2::server::CPhysBox, m_OnDamaged) == 0x8E0, "m_OnDamaged in CPhysBox should be at offset 0x8E0");
+		static_assert(offsetof(CS2::server::CPhysBox, m_OnAwakened) == 0x908, "m_OnAwakened in CPhysBox should be at offset 0x908");
+		static_assert(offsetof(CS2::server::CPhysBox, m_OnMotionEnabled) == 0x930, "m_OnMotionEnabled in CPhysBox should be at offset 0x930");
+		static_assert(offsetof(CS2::server::CPhysBox, m_OnPlayerUse) == 0x958, "m_OnPlayerUse in CPhysBox should be at offset 0x958");
+		static_assert(offsetof(CS2::server::CPhysBox, m_OnStartTouch) == 0x980, "m_OnStartTouch in CPhysBox should be at offset 0x980");
+		static_assert(offsetof(CS2::server::CPhysBox, m_hCarryingPlayer) == 0x9A8, "m_hCarryingPlayer in CPhysBox should be at offset 0x9A8");
+		static_assert(sizeof(CS2::server::CPhysBox) == 0x9C8, "CPhysBox size should be 0x9C8");
 	}
 }

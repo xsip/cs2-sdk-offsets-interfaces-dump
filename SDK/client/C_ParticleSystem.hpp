@@ -14,61 +14,61 @@ namespace CS2 {
 	namespace client {
 		class C_ParticleSystem : public CS2::client::C_BaseModelEntity {
 		public:
-			char m_szSnapshotFileName[512]; // 0xec8 | Schema_FixedArray | Size: 0x200
-			bool m_bActive; // 0x10c8 | Schema_Builtin | Size: 0x1
-			bool m_bFrozen; // 0x10c9 | Schema_Builtin | Size: 0x1
+			char m_szSnapshotFileName[512]; // 0xeb0 | Schema_FixedArray | Size: 0x200
+			bool m_bActive; // 0x10b0 | Schema_Builtin | Size: 0x1
+			bool m_bFrozen; // 0x10b1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flFreezeTransitionDuration; // 0x10cc | Schema_Builtin | Size: 0x4
-			int32_t m_nStopType; // 0x10d0 | Schema_Builtin | Size: 0x4
-			bool m_bAnimateDuringGameplayPause; // 0x10d4 | Schema_Builtin | Size: 0x1
+			float32 m_flFreezeTransitionDuration; // 0x10b4 | Schema_Builtin | Size: 0x4
+			int32_t m_nStopType; // 0x10b8 | Schema_Builtin | Size: 0x4
+			bool m_bAnimateDuringGameplayPause; // 0x10bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x10d8 | Schema_Atomic | Size: 0x8
-			char  m_iEffectIndex[0x8]; // 0x10d8 | Schema_Atomic | Size: 0x8
-			entity2::GameTime_t m_flStartTime; // 0x10e0 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flPreSimTime; // 0x10e4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vServerControlPoints[4]; // 0x10e8 | Schema_FixedArray | Size: 0x30
-			uint8_t m_iServerControlPointAssignments[4]; // 0x1118 | Schema_FixedArray | Size: 0x4
-			// client::CHandle< C_BaseEntity > m_hControlPointEnts[64]; // 0x111c | Schema_FixedArray | Size: 0x100
-			char  m_hControlPointEnts[0x4]; // 0x111c | Schema_FixedArray | Size: 0x4
-			bool m_bNoSave; // 0x121c | Schema_Builtin | Size: 0x1
-			bool m_bNoFreeze; // 0x121d | Schema_Builtin | Size: 0x1
-			bool m_bNoRamp; // 0x121e | Schema_Builtin | Size: 0x1
-			bool m_bStartActive; // 0x121f | Schema_Builtin | Size: 0x1
-			GlobalTypes::CUtlSymbolLarge m_iszEffectName; // 0x1220 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszControlPointNames[64]; // 0x1228 | Schema_FixedArray | Size: 0x200
-			int32_t m_nDataCP; // 0x1428 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecDataCPValue; // 0x142c | Schema_Atomic | Size: 0xc
-			int32_t m_nTintCP; // 0x1438 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_clrTint; // 0x143c | Schema_Atomic | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x10c0 | Schema_Atomic | Size: 0x8
+			char  m_iEffectIndex[0x8]; // 0x10c0 | Schema_Atomic | Size: 0x8
+			entity2::GameTime_t m_flStartTime; // 0x10c8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flPreSimTime; // 0x10cc | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vServerControlPoints[4]; // 0x10d0 | Schema_FixedArray | Size: 0x30
+			uint8_t m_iServerControlPointAssignments[4]; // 0x1100 | Schema_FixedArray | Size: 0x4
+			// client::CHandle< C_BaseEntity > m_hControlPointEnts[64]; // 0x1104 | Schema_FixedArray | Size: 0x100
+			char  m_hControlPointEnts[0x4]; // 0x1104 | Schema_FixedArray | Size: 0x4
+			bool m_bNoSave; // 0x1204 | Schema_Builtin | Size: 0x1
+			bool m_bNoFreeze; // 0x1205 | Schema_Builtin | Size: 0x1
+			bool m_bNoRamp; // 0x1206 | Schema_Builtin | Size: 0x1
+			bool m_bStartActive; // 0x1207 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszEffectName; // 0x1208 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszControlPointNames[64]; // 0x1210 | Schema_FixedArray | Size: 0x200
+			int32_t m_nDataCP; // 0x1410 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecDataCPValue; // 0x1414 | Schema_Atomic | Size: 0xc
+			int32_t m_nTintCP; // 0x1420 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_clrTint; // 0x1424 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x20);
-			bool m_bOldActive; // 0x1460 | Schema_Builtin | Size: 0x1
-			bool m_bOldFrozen; // 0x1461 | Schema_Builtin | Size: 0x1
+			bool m_bOldActive; // 0x1448 | Schema_Builtin | Size: 0x1
+			bool m_bOldFrozen; // 0x1449 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x16); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_szSnapshotFileName) == 0xEC8, "m_szSnapshotFileName in C_ParticleSystem should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bActive) == 0x10C8, "m_bActive in C_ParticleSystem should be at offset 0x10C8");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bFrozen) == 0x10C9, "m_bFrozen in C_ParticleSystem should be at offset 0x10C9");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_flFreezeTransitionDuration) == 0x10CC, "m_flFreezeTransitionDuration in C_ParticleSystem should be at offset 0x10CC");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_nStopType) == 0x10D0, "m_nStopType in C_ParticleSystem should be at offset 0x10D0");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bAnimateDuringGameplayPause) == 0x10D4, "m_bAnimateDuringGameplayPause in C_ParticleSystem should be at offset 0x10D4");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iEffectIndex) == 0x10D8, "m_iEffectIndex in C_ParticleSystem should be at offset 0x10D8");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_flStartTime) == 0x10E0, "m_flStartTime in C_ParticleSystem should be at offset 0x10E0");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_flPreSimTime) == 0x10E4, "m_flPreSimTime in C_ParticleSystem should be at offset 0x10E4");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_vServerControlPoints) == 0x10E8, "m_vServerControlPoints in C_ParticleSystem should be at offset 0x10E8");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iServerControlPointAssignments) == 0x1118, "m_iServerControlPointAssignments in C_ParticleSystem should be at offset 0x1118");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_hControlPointEnts) == 0x111C, "m_hControlPointEnts in C_ParticleSystem should be at offset 0x111C");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bNoSave) == 0x121C, "m_bNoSave in C_ParticleSystem should be at offset 0x121C");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bNoFreeze) == 0x121D, "m_bNoFreeze in C_ParticleSystem should be at offset 0x121D");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bNoRamp) == 0x121E, "m_bNoRamp in C_ParticleSystem should be at offset 0x121E");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bStartActive) == 0x121F, "m_bStartActive in C_ParticleSystem should be at offset 0x121F");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iszEffectName) == 0x1220, "m_iszEffectName in C_ParticleSystem should be at offset 0x1220");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iszControlPointNames) == 0x1228, "m_iszControlPointNames in C_ParticleSystem should be at offset 0x1228");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_nDataCP) == 0x1428, "m_nDataCP in C_ParticleSystem should be at offset 0x1428");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_vecDataCPValue) == 0x142C, "m_vecDataCPValue in C_ParticleSystem should be at offset 0x142C");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_nTintCP) == 0x1438, "m_nTintCP in C_ParticleSystem should be at offset 0x1438");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_clrTint) == 0x143C, "m_clrTint in C_ParticleSystem should be at offset 0x143C");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bOldActive) == 0x1460, "m_bOldActive in C_ParticleSystem should be at offset 0x1460");
-		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bOldFrozen) == 0x1461, "m_bOldFrozen in C_ParticleSystem should be at offset 0x1461");
-		static_assert(sizeof(CS2::client::C_ParticleSystem) == 0x1478, "C_ParticleSystem size should be 0x1478");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_szSnapshotFileName) == 0xEB0, "m_szSnapshotFileName in C_ParticleSystem should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bActive) == 0x10B0, "m_bActive in C_ParticleSystem should be at offset 0x10B0");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bFrozen) == 0x10B1, "m_bFrozen in C_ParticleSystem should be at offset 0x10B1");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_flFreezeTransitionDuration) == 0x10B4, "m_flFreezeTransitionDuration in C_ParticleSystem should be at offset 0x10B4");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_nStopType) == 0x10B8, "m_nStopType in C_ParticleSystem should be at offset 0x10B8");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bAnimateDuringGameplayPause) == 0x10BC, "m_bAnimateDuringGameplayPause in C_ParticleSystem should be at offset 0x10BC");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iEffectIndex) == 0x10C0, "m_iEffectIndex in C_ParticleSystem should be at offset 0x10C0");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_flStartTime) == 0x10C8, "m_flStartTime in C_ParticleSystem should be at offset 0x10C8");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_flPreSimTime) == 0x10CC, "m_flPreSimTime in C_ParticleSystem should be at offset 0x10CC");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_vServerControlPoints) == 0x10D0, "m_vServerControlPoints in C_ParticleSystem should be at offset 0x10D0");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iServerControlPointAssignments) == 0x1100, "m_iServerControlPointAssignments in C_ParticleSystem should be at offset 0x1100");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_hControlPointEnts) == 0x1104, "m_hControlPointEnts in C_ParticleSystem should be at offset 0x1104");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bNoSave) == 0x1204, "m_bNoSave in C_ParticleSystem should be at offset 0x1204");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bNoFreeze) == 0x1205, "m_bNoFreeze in C_ParticleSystem should be at offset 0x1205");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bNoRamp) == 0x1206, "m_bNoRamp in C_ParticleSystem should be at offset 0x1206");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bStartActive) == 0x1207, "m_bStartActive in C_ParticleSystem should be at offset 0x1207");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iszEffectName) == 0x1208, "m_iszEffectName in C_ParticleSystem should be at offset 0x1208");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_iszControlPointNames) == 0x1210, "m_iszControlPointNames in C_ParticleSystem should be at offset 0x1210");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_nDataCP) == 0x1410, "m_nDataCP in C_ParticleSystem should be at offset 0x1410");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_vecDataCPValue) == 0x1414, "m_vecDataCPValue in C_ParticleSystem should be at offset 0x1414");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_nTintCP) == 0x1420, "m_nTintCP in C_ParticleSystem should be at offset 0x1420");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_clrTint) == 0x1424, "m_clrTint in C_ParticleSystem should be at offset 0x1424");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bOldActive) == 0x1448, "m_bOldActive in C_ParticleSystem should be at offset 0x1448");
+		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bOldFrozen) == 0x1449, "m_bOldFrozen in C_ParticleSystem should be at offset 0x1449");
+		static_assert(sizeof(CS2::client::C_ParticleSystem) == 0x1460, "C_ParticleSystem size should be 0x1460");
 	}
 }

@@ -15,14 +15,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ClampVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleVecInput m_vecOutputMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecOutputMax; // 0x840 | Schema_DeclaredClass | Size: 0x678
+			particleslib::CPerParticleVecInput m_vecOutputMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecOutputMax; // 0x890 | Schema_DeclaredClass | Size: 0x6b8
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ClampVector, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_ClampVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ClampVector, m_vecOutputMin) == 0x1C8, "m_vecOutputMin in C_OP_ClampVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_ClampVector, m_vecOutputMax) == 0x840, "m_vecOutputMax in C_OP_ClampVector should be at offset 0x840");
-		static_assert(sizeof(CS2::particles::C_OP_ClampVector) == 0xEB8, "C_OP_ClampVector size should be 0xEB8");
+		static_assert(offsetof(CS2::particles::C_OP_ClampVector, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_ClampVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ClampVector, m_vecOutputMin) == 0x1D8, "m_vecOutputMin in C_OP_ClampVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_ClampVector, m_vecOutputMax) == 0x890, "m_vecOutputMax in C_OP_ClampVector should be at offset 0x890");
+		static_assert(sizeof(CS2::particles::C_OP_ClampVector) == 0xF48, "C_OP_ClampVector size should be 0xF48");
 	}
 }

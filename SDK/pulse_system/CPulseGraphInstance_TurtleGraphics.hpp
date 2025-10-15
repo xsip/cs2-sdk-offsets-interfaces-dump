@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x28);
 		};
-		static_assert(sizeof(CS2::pulse_system::CPulseGraphInstance_TurtleGraphics) == 0x138, "CPulseGraphInstance_TurtleGraphics size should be 0x138");
+		static_assert(sizeof(CS2::pulse_system::CPulseGraphInstance_TurtleGraphics) == 0x140, "CPulseGraphInstance_TurtleGraphics size should be 0x140");
 	}
 }

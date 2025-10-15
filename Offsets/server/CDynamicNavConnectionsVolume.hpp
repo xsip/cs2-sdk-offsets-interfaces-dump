@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA20
+			// Class size: 0xA08
 			namespace CDynamicNavConnectionsVolume /*: public CS2::server::CTriggerMultiple*/ {
-				constexpr std::ptrdiff_t m_iszConnectionTarget = 0x9e8; // GlobalTypes::CUtlSymbolLarge m_iszConnectionTarget; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecConnections = 0x9f0; // GlobalTypes::CUtlVector< server::DynamicVolumeDef_t > m_vecConnections; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_sTransitionType = 0xa08; // GlobalTypes::CGlobalSymbol m_sTransitionType; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bConnectionsEnabled = 0xa10; // bool m_bConnectionsEnabled; |  0xa10 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flTargetAreaSearchRadius = 0xa14; // float32 m_flTargetAreaSearchRadius; |  0xa14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flUpdateDistance = 0xa18; // float32 m_flUpdateDistance; |  0xa18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxConnectionDistance = 0xa1c; // float32 m_flMaxConnectionDistance; |  0xa1c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszConnectionTarget = 0x9d0; // GlobalTypes::CUtlSymbolLarge m_iszConnectionTarget; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecConnections = 0x9d8; // GlobalTypes::CUtlVector< server::DynamicVolumeDef_t > m_vecConnections; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sTransitionType = 0x9f0; // GlobalTypes::CGlobalSymbol m_sTransitionType; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bConnectionsEnabled = 0x9f8; // bool m_bConnectionsEnabled; |  0x9f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flTargetAreaSearchRadius = 0x9fc; // float32 m_flTargetAreaSearchRadius; |  0x9fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flUpdateDistance = 0xa00; // float32 m_flUpdateDistance; |  0xa00 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxConnectionDistance = 0xa04; // float32 m_flMaxConnectionDistance; |  0xa04 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -6,6 +6,7 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/particles/CParticleFunctionOperator.hpp>
+#include <SDK/particleslib/CParticleCollectionFloatInput.hpp>
 #include <SDK/particles/ParticleAttributeIndex_t.hpp>
 
 
@@ -14,19 +15,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DistanceCull : public CS2::particles::CParticleFunctionOperator {
 		public:
-			int32_t m_nControlPoint; // 0x1c0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecPointOffset; // 0x1c4 | Schema_Atomic | Size: 0xc
-			float32 m_flDistance; // 0x1d0 | Schema_Builtin | Size: 0x4
-			bool m_bCullInside; // 0x1d4 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPoint; // 0x1d0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecPointOffset; // 0x1d4 | Schema_Atomic | Size: 0xc
+			particleslib::CParticleCollectionFloatInput m_flDistance; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
+			bool m_bCullInside; // 0x350 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleAttributeIndex_t m_nAttribute; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
-			S2_PAD(0x4); // End padding
+			particles::ParticleAttributeIndex_t m_nAttribute; // 0x354 | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_nControlPoint) == 0x1C0, "m_nControlPoint in C_OP_DistanceCull should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_vecPointOffset) == 0x1C4, "m_vecPointOffset in C_OP_DistanceCull should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_flDistance) == 0x1D0, "m_flDistance in C_OP_DistanceCull should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_bCullInside) == 0x1D4, "m_bCullInside in C_OP_DistanceCull should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_nAttribute) == 0x1D8, "m_nAttribute in C_OP_DistanceCull should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_OP_DistanceCull) == 0x1E0, "C_OP_DistanceCull size should be 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_nControlPoint) == 0x1D0, "m_nControlPoint in C_OP_DistanceCull should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_vecPointOffset) == 0x1D4, "m_vecPointOffset in C_OP_DistanceCull should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_flDistance) == 0x1E0, "m_flDistance in C_OP_DistanceCull should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_bCullInside) == 0x350, "m_bCullInside in C_OP_DistanceCull should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_nAttribute) == 0x354, "m_nAttribute in C_OP_DistanceCull should be at offset 0x354");
+		static_assert(sizeof(CS2::particles::C_OP_DistanceCull) == 0x358, "C_OP_DistanceCull size should be 0x358");
 	}
 }

@@ -16,42 +16,42 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderDeferredLight : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			bool m_bUseAlphaTestWindow; // 0x210 | Schema_Builtin | Size: 0x1
-			bool m_bUseTexture; // 0x211 | Schema_Builtin | Size: 0x1
+			bool m_bUseAlphaTestWindow; // 0x220 | Schema_Builtin | Size: 0x1
+			bool m_bUseTexture; // 0x221 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flRadiusScale; // 0x214 | Schema_Builtin | Size: 0x4
-			float32 m_flAlphaScale; // 0x218 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x21c | Schema_DeclaredClass | Size: 0x4
-			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x220 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x898 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flLightDistance; // 0x89c | Schema_Builtin | Size: 0x4
-			float32 m_flStartFalloff; // 0x8a0 | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceFalloff; // 0x8a4 | Schema_Builtin | Size: 0x4
-			float32 m_flSpotFoV; // 0x8a8 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAlphaTestPointField; // 0x8ac | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAlphaTestRangeField; // 0x8b0 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nAlphaTestSharpnessField; // 0x8b4 | Schema_DeclaredClass | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTexture; // 0x8b8 | Schema_Atomic | Size: 0x8
-			char  m_hTexture[0x8]; // 0x8b8 | Schema_Atomic | Size: 0x8
-			int32_t m_nHSVShiftControlPoint; // 0x8c0 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusScale; // 0x224 | Schema_Builtin | Size: 0x4
+			float32 m_flAlphaScale; // 0x228 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x22c | Schema_DeclaredClass | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x230 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x8e8 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flLightDistance; // 0x8ec | Schema_Builtin | Size: 0x4
+			float32 m_flStartFalloff; // 0x8f0 | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceFalloff; // 0x8f4 | Schema_Builtin | Size: 0x4
+			float32 m_flSpotFoV; // 0x8f8 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAlphaTestPointField; // 0x8fc | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAlphaTestRangeField; // 0x900 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAlphaTestSharpnessField; // 0x904 | Schema_DeclaredClass | Size: 0x4
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTexture; // 0x908 | Schema_Atomic | Size: 0x8
+			char  m_hTexture[0x8]; // 0x908 | Schema_Atomic | Size: 0x8
+			int32_t m_nHSVShiftControlPoint; // 0x910 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_bUseAlphaTestWindow) == 0x210, "m_bUseAlphaTestWindow in C_OP_RenderDeferredLight should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_bUseTexture) == 0x211, "m_bUseTexture in C_OP_RenderDeferredLight should be at offset 0x211");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flRadiusScale) == 0x214, "m_flRadiusScale in C_OP_RenderDeferredLight should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flAlphaScale) == 0x218, "m_flAlphaScale in C_OP_RenderDeferredLight should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlpha2Field) == 0x21C, "m_nAlpha2Field in C_OP_RenderDeferredLight should be at offset 0x21C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_vecColorScale) == 0x220, "m_vecColorScale in C_OP_RenderDeferredLight should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nColorBlendType) == 0x898, "m_nColorBlendType in C_OP_RenderDeferredLight should be at offset 0x898");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flLightDistance) == 0x89C, "m_flLightDistance in C_OP_RenderDeferredLight should be at offset 0x89C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flStartFalloff) == 0x8A0, "m_flStartFalloff in C_OP_RenderDeferredLight should be at offset 0x8A0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flDistanceFalloff) == 0x8A4, "m_flDistanceFalloff in C_OP_RenderDeferredLight should be at offset 0x8A4");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flSpotFoV) == 0x8A8, "m_flSpotFoV in C_OP_RenderDeferredLight should be at offset 0x8A8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlphaTestPointField) == 0x8AC, "m_nAlphaTestPointField in C_OP_RenderDeferredLight should be at offset 0x8AC");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlphaTestRangeField) == 0x8B0, "m_nAlphaTestRangeField in C_OP_RenderDeferredLight should be at offset 0x8B0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlphaTestSharpnessField) == 0x8B4, "m_nAlphaTestSharpnessField in C_OP_RenderDeferredLight should be at offset 0x8B4");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_hTexture) == 0x8B8, "m_hTexture in C_OP_RenderDeferredLight should be at offset 0x8B8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nHSVShiftControlPoint) == 0x8C0, "m_nHSVShiftControlPoint in C_OP_RenderDeferredLight should be at offset 0x8C0");
-		static_assert(sizeof(CS2::particles::C_OP_RenderDeferredLight) == 0x8C8, "C_OP_RenderDeferredLight size should be 0x8C8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_bUseAlphaTestWindow) == 0x220, "m_bUseAlphaTestWindow in C_OP_RenderDeferredLight should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_bUseTexture) == 0x221, "m_bUseTexture in C_OP_RenderDeferredLight should be at offset 0x221");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flRadiusScale) == 0x224, "m_flRadiusScale in C_OP_RenderDeferredLight should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flAlphaScale) == 0x228, "m_flAlphaScale in C_OP_RenderDeferredLight should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlpha2Field) == 0x22C, "m_nAlpha2Field in C_OP_RenderDeferredLight should be at offset 0x22C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_vecColorScale) == 0x230, "m_vecColorScale in C_OP_RenderDeferredLight should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nColorBlendType) == 0x8E8, "m_nColorBlendType in C_OP_RenderDeferredLight should be at offset 0x8E8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flLightDistance) == 0x8EC, "m_flLightDistance in C_OP_RenderDeferredLight should be at offset 0x8EC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flStartFalloff) == 0x8F0, "m_flStartFalloff in C_OP_RenderDeferredLight should be at offset 0x8F0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flDistanceFalloff) == 0x8F4, "m_flDistanceFalloff in C_OP_RenderDeferredLight should be at offset 0x8F4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flSpotFoV) == 0x8F8, "m_flSpotFoV in C_OP_RenderDeferredLight should be at offset 0x8F8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlphaTestPointField) == 0x8FC, "m_nAlphaTestPointField in C_OP_RenderDeferredLight should be at offset 0x8FC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlphaTestRangeField) == 0x900, "m_nAlphaTestRangeField in C_OP_RenderDeferredLight should be at offset 0x900");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nAlphaTestSharpnessField) == 0x904, "m_nAlphaTestSharpnessField in C_OP_RenderDeferredLight should be at offset 0x904");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_hTexture) == 0x908, "m_hTexture in C_OP_RenderDeferredLight should be at offset 0x908");
+		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nHSVShiftControlPoint) == 0x910, "m_nHSVShiftControlPoint in C_OP_RenderDeferredLight should be at offset 0x910");
+		static_assert(sizeof(CS2::particles::C_OP_RenderDeferredLight) == 0x918, "C_OP_RenderDeferredLight size should be 0x918");
 	}
 }

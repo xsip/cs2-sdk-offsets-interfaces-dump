@@ -13,35 +13,35 @@ namespace CS2 {
 	namespace client {
 		class C_TriggerPhysics : public CS2::client::C_BaseTrigger {
 		public:
-			float32 m_gravityScale; // 0x1008 | Schema_Builtin | Size: 0x4
-			float32 m_linearLimit; // 0x100c | Schema_Builtin | Size: 0x4
-			float32 m_linearDamping; // 0x1010 | Schema_Builtin | Size: 0x4
-			float32 m_angularLimit; // 0x1014 | Schema_Builtin | Size: 0x4
-			float32 m_angularDamping; // 0x1018 | Schema_Builtin | Size: 0x4
-			float32 m_linearForce; // 0x101c | Schema_Builtin | Size: 0x4
-			float32 m_flFrequency; // 0x1020 | Schema_Builtin | Size: 0x4
-			float32 m_flDampingRatio; // 0x1024 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecLinearForcePointAt; // 0x1028 | Schema_Atomic | Size: 0xc
-			bool m_bCollapseToForcePoint; // 0x1034 | Schema_Builtin | Size: 0x1
+			float32 m_gravityScale; // 0xff0 | Schema_Builtin | Size: 0x4
+			float32 m_linearLimit; // 0xff4 | Schema_Builtin | Size: 0x4
+			float32 m_linearDamping; // 0xff8 | Schema_Builtin | Size: 0x4
+			float32 m_angularLimit; // 0xffc | Schema_Builtin | Size: 0x4
+			float32 m_angularDamping; // 0x1000 | Schema_Builtin | Size: 0x4
+			float32 m_linearForce; // 0x1004 | Schema_Builtin | Size: 0x4
+			float32 m_flFrequency; // 0x1008 | Schema_Builtin | Size: 0x4
+			float32 m_flDampingRatio; // 0x100c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecLinearForcePointAt; // 0x1010 | Schema_Atomic | Size: 0xc
+			bool m_bCollapseToForcePoint; // 0x101c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vecLinearForcePointAtWorld; // 0x1038 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecLinearForceDirection; // 0x1044 | Schema_Atomic | Size: 0xc
-			bool m_bConvertToDebrisWhenPossible; // 0x1050 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vecLinearForcePointAtWorld; // 0x1020 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLinearForceDirection; // 0x102c | Schema_Atomic | Size: 0xc
+			bool m_bConvertToDebrisWhenPossible; // 0x1038 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_gravityScale) == 0x1008, "m_gravityScale in C_TriggerPhysics should be at offset 0x1008");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearLimit) == 0x100C, "m_linearLimit in C_TriggerPhysics should be at offset 0x100C");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearDamping) == 0x1010, "m_linearDamping in C_TriggerPhysics should be at offset 0x1010");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_angularLimit) == 0x1014, "m_angularLimit in C_TriggerPhysics should be at offset 0x1014");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_angularDamping) == 0x1018, "m_angularDamping in C_TriggerPhysics should be at offset 0x1018");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearForce) == 0x101C, "m_linearForce in C_TriggerPhysics should be at offset 0x101C");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_flFrequency) == 0x1020, "m_flFrequency in C_TriggerPhysics should be at offset 0x1020");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_flDampingRatio) == 0x1024, "m_flDampingRatio in C_TriggerPhysics should be at offset 0x1024");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_vecLinearForcePointAt) == 0x1028, "m_vecLinearForcePointAt in C_TriggerPhysics should be at offset 0x1028");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_bCollapseToForcePoint) == 0x1034, "m_bCollapseToForcePoint in C_TriggerPhysics should be at offset 0x1034");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_vecLinearForcePointAtWorld) == 0x1038, "m_vecLinearForcePointAtWorld in C_TriggerPhysics should be at offset 0x1038");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_vecLinearForceDirection) == 0x1044, "m_vecLinearForceDirection in C_TriggerPhysics should be at offset 0x1044");
-		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_bConvertToDebrisWhenPossible) == 0x1050, "m_bConvertToDebrisWhenPossible in C_TriggerPhysics should be at offset 0x1050");
-		static_assert(sizeof(CS2::client::C_TriggerPhysics) == 0x1058, "C_TriggerPhysics size should be 0x1058");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_gravityScale) == 0xFF0, "m_gravityScale in C_TriggerPhysics should be at offset 0xFF0");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearLimit) == 0xFF4, "m_linearLimit in C_TriggerPhysics should be at offset 0xFF4");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearDamping) == 0xFF8, "m_linearDamping in C_TriggerPhysics should be at offset 0xFF8");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_angularLimit) == 0xFFC, "m_angularLimit in C_TriggerPhysics should be at offset 0xFFC");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_angularDamping) == 0x1000, "m_angularDamping in C_TriggerPhysics should be at offset 0x1000");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearForce) == 0x1004, "m_linearForce in C_TriggerPhysics should be at offset 0x1004");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_flFrequency) == 0x1008, "m_flFrequency in C_TriggerPhysics should be at offset 0x1008");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_flDampingRatio) == 0x100C, "m_flDampingRatio in C_TriggerPhysics should be at offset 0x100C");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_vecLinearForcePointAt) == 0x1010, "m_vecLinearForcePointAt in C_TriggerPhysics should be at offset 0x1010");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_bCollapseToForcePoint) == 0x101C, "m_bCollapseToForcePoint in C_TriggerPhysics should be at offset 0x101C");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_vecLinearForcePointAtWorld) == 0x1020, "m_vecLinearForcePointAtWorld in C_TriggerPhysics should be at offset 0x1020");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_vecLinearForceDirection) == 0x102C, "m_vecLinearForceDirection in C_TriggerPhysics should be at offset 0x102C");
+		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_bConvertToDebrisWhenPossible) == 0x1038, "m_bConvertToDebrisWhenPossible in C_TriggerPhysics should be at offset 0x1038");
+		static_assert(sizeof(CS2::client::C_TriggerPhysics) == 0x1040, "C_TriggerPhysics size should be 0x1040");
 	}
 }

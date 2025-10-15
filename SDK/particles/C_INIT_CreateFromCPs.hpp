@@ -14,16 +14,16 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateFromCPs : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nIncrement; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nMinCP; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxCP; // 0x1d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nIncrement; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinCP; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxCP; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_nDynamicCPCount; // 0x1d8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_nDynamicCPCount; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nIncrement) == 0x1C8, "m_nIncrement in C_INIT_CreateFromCPs should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nMinCP) == 0x1CC, "m_nMinCP in C_INIT_CreateFromCPs should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nMaxCP) == 0x1D0, "m_nMaxCP in C_INIT_CreateFromCPs should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nDynamicCPCount) == 0x1D8, "m_nDynamicCPCount in C_INIT_CreateFromCPs should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateFromCPs) == 0x338, "C_INIT_CreateFromCPs size should be 0x338");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nIncrement) == 0x1D8, "m_nIncrement in C_INIT_CreateFromCPs should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nMinCP) == 0x1DC, "m_nMinCP in C_INIT_CreateFromCPs should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nMaxCP) == 0x1E0, "m_nMaxCP in C_INIT_CreateFromCPs should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nDynamicCPCount) == 0x1E8, "m_nDynamicCPCount in C_INIT_CreateFromCPs should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateFromCPs) == 0x358, "C_INIT_CreateFromCPs size should be 0x358");
 	}
 }

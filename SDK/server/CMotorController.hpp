@@ -15,7 +15,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			float32 m_speed; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_maxTorque; // 0xc | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_axis; // 0x10 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_axis; // 0x10 | Schema_Atomic | Size: 0xc
 			float32 m_inertiaFactor; // 0x1c | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CMotorController, m_speed) == 0x8, "m_speed in CMotorController should be at offset 0x8");

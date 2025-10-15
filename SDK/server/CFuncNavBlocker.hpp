@@ -14,13 +14,13 @@ namespace CS2 {
 		class CFuncNavBlocker : public CS2::server::CBaseModelEntity {
 		public:
 			S2_PAD(0x8);
-			bool m_bDisabled; // 0x7f8 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x7e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nBlockedTeamNumber; // 0x7fc | Schema_Builtin | Size: 0x4
+			int32_t m_nBlockedTeamNumber; // 0x7e4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncNavBlocker, m_bDisabled) == 0x7F8, "m_bDisabled in CFuncNavBlocker should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CFuncNavBlocker, m_nBlockedTeamNumber) == 0x7FC, "m_nBlockedTeamNumber in CFuncNavBlocker should be at offset 0x7FC");
-		static_assert(sizeof(CS2::server::CFuncNavBlocker) == 0x808, "CFuncNavBlocker size should be 0x808");
+		static_assert(offsetof(CS2::server::CFuncNavBlocker, m_bDisabled) == 0x7E0, "m_bDisabled in CFuncNavBlocker should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CFuncNavBlocker, m_nBlockedTeamNumber) == 0x7E4, "m_nBlockedTeamNumber in CFuncNavBlocker should be at offset 0x7E4");
+		static_assert(sizeof(CS2::server::CFuncNavBlocker) == 0x7F0, "CFuncNavBlocker size should be 0x7F0");
 	}
 }

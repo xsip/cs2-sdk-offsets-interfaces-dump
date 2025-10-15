@@ -8,23 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1100
+			// Class size: 0x11C0
 			namespace C_OP_LightningSnapshotGenerator /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nCPSnapshot = 0x1c8; // int32_t m_nCPSnapshot; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPStartPnt = 0x1cc; // int32_t m_nCPStartPnt; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPEndPnt = 0x1d0; // int32_t m_nCPEndPnt; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSegments = 0x1d8; // particleslib::CParticleCollectionFloatInput m_flSegments; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOffset = 0x338; // particleslib::CParticleCollectionFloatInput m_flOffset; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOffsetDecay = 0x498; // particleslib::CParticleCollectionFloatInput m_flOffsetDecay; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flRecalcRate = 0x5f8; // particleslib::CParticleCollectionFloatInput m_flRecalcRate; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flUVScale = 0x758; // particleslib::CParticleCollectionFloatInput m_flUVScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flUVOffset = 0x8b8; // particleslib::CParticleCollectionFloatInput m_flUVOffset; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flSplitRate = 0xa18; // particleslib::CParticleCollectionFloatInput m_flSplitRate; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flBranchTwist = 0xb78; // particleslib::CParticleCollectionFloatInput m_flBranchTwist; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nBranchBehavior = 0xcd8; // particles::ParticleLightnintBranchBehavior_t m_nBranchBehavior; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadiusStart = 0xce0; // particleslib::CParticleCollectionFloatInput m_flRadiusStart; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flRadiusEnd = 0xe40; // particleslib::CParticleCollectionFloatInput m_flRadiusEnd; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flDedicatedPool = 0xfa0; // particleslib::CParticleCollectionFloatInput m_flDedicatedPool; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_nCPSnapshot = 0x1d8; // int32_t m_nCPSnapshot; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPStartPnt = 0x1dc; // int32_t m_nCPStartPnt; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPEndPnt = 0x1e0; // int32_t m_nCPEndPnt; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSegments = 0x1e8; // particleslib::CParticleCollectionFloatInput m_flSegments; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOffset = 0x358; // particleslib::CParticleCollectionFloatInput m_flOffset; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOffsetDecay = 0x4c8; // particleslib::CParticleCollectionFloatInput m_flOffsetDecay; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRecalcRate = 0x638; // particleslib::CParticleCollectionFloatInput m_flRecalcRate; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flUVScale = 0x7a8; // particleslib::CParticleCollectionFloatInput m_flUVScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flUVOffset = 0x918; // particleslib::CParticleCollectionFloatInput m_flUVOffset; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flSplitRate = 0xa88; // particleslib::CParticleCollectionFloatInput m_flSplitRate; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flBranchTwist = 0xbf8; // particleslib::CParticleCollectionFloatInput m_flBranchTwist; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nBranchBehavior = 0xd68; // particles::ParticleLightnintBranchBehavior_t m_nBranchBehavior; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadiusStart = 0xd70; // particleslib::CParticleCollectionFloatInput m_flRadiusStart; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRadiusEnd = 0xee0; // particleslib::CParticleCollectionFloatInput m_flRadiusEnd; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flDedicatedPool = 0x1050; // particleslib::CParticleCollectionFloatInput m_flDedicatedPool; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

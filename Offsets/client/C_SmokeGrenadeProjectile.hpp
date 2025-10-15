@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1620
+			// Class size: 0x1608
 			namespace C_SmokeGrenadeProjectile /*: public CS2::client::C_BaseCSGrenadeProjectile*/ {
-				constexpr std::ptrdiff_t m_nSmokeEffectTickBegin = 0x1480; // int32_t m_nSmokeEffectTickBegin; |  0x1480 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDidSmokeEffect = 0x1484; // bool m_bDidSmokeEffect; |  0x1484 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nRandomSeed = 0x1488; // int32_t m_nRandomSeed; |  0x1488 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vSmokeColor = 0x148c; // GlobalTypes::Vector m_vSmokeColor; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1498; // GlobalTypes::Vector m_vSmokeDetonationPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_VoxelFrameData = 0x14a8; // GlobalTypes::C_NetworkUtlVectorBase< uint8 > m_VoxelFrameData; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nVoxelFrameDataSize = 0x14c0; // int32_t m_nVoxelFrameDataSize; |  0x14c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nVoxelUpdate = 0x14c4; // int32_t m_nVoxelUpdate; |  0x14c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x14c8; // bool m_bSmokeVolumeDataReceived; |  0x14c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x14c9; // bool m_bSmokeEffectSpawned; |  0x14c9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nSmokeEffectTickBegin = 0x1468; // int32_t m_nSmokeEffectTickBegin; |  0x1468 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDidSmokeEffect = 0x146c; // bool m_bDidSmokeEffect; |  0x146c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nRandomSeed = 0x1470; // int32_t m_nRandomSeed; |  0x1470 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vSmokeColor = 0x1474; // GlobalTypes::Vector m_vSmokeColor; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1480; // GlobalTypes::Vector m_vSmokeDetonationPos; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_VoxelFrameData = 0x1490; // GlobalTypes::C_NetworkUtlVectorBase< uint8 > m_VoxelFrameData; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nVoxelFrameDataSize = 0x14a8; // int32_t m_nVoxelFrameDataSize; |  0x14a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nVoxelUpdate = 0x14ac; // int32_t m_nVoxelUpdate; |  0x14ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x14b0; // bool m_bSmokeVolumeDataReceived; |  0x14b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x14b1; // bool m_bSmokeEffectSpawned; |  0x14b1 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

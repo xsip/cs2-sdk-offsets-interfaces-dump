@@ -18,23 +18,23 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetVectorAttributeToVectorExpression : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::VectorExpressionType_t m_nExpression; // 0x1c0 | Schema_DeclaredEnum | Size: 0x4
+			particles::VectorExpressionType_t m_nExpression; // 0x1d0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleVecInput m_vInput1; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vInput2; // 0x840 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flLerp; // 0xeb8 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x1018 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x101c | Schema_DeclaredEnum | Size: 0x4
-			bool m_bNormalizedOutput; // 0x1020 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_vInput1; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vInput2; // 0x890 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flLerp; // 0xf48 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x10b8 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x10bc | Schema_DeclaredEnum | Size: 0x4
+			bool m_bNormalizedOutput; // 0x10c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6f); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nExpression) == 0x1C0, "m_nExpression in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_vInput1) == 0x1C8, "m_vInput1 in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_vInput2) == 0x840, "m_vInput2 in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_flLerp) == 0xEB8, "m_flLerp in C_OP_SetVectorAttributeToVectorExpression should be at offset 0xEB8");
-		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nOutputField) == 0x1018, "m_nOutputField in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1018");
-		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nSetMethod) == 0x101C, "m_nSetMethod in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x101C");
-		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_bNormalizedOutput) == 0x1020, "m_bNormalizedOutput in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1020");
-		static_assert(sizeof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression) == 0x1090, "C_OP_SetVectorAttributeToVectorExpression size should be 0x1090");
+		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nExpression) == 0x1D0, "m_nExpression in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_vInput1) == 0x1D8, "m_vInput1 in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_vInput2) == 0x890, "m_vInput2 in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_flLerp) == 0xF48, "m_flLerp in C_OP_SetVectorAttributeToVectorExpression should be at offset 0xF48");
+		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nOutputField) == 0x10B8, "m_nOutputField in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x10B8");
+		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nSetMethod) == 0x10BC, "m_nSetMethod in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x10BC");
+		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_bNormalizedOutput) == 0x10C0, "m_bNormalizedOutput in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x10C0");
+		static_assert(sizeof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression) == 0x1130, "C_OP_SetVectorAttributeToVectorExpression size should be 0x1130");
 	}
 }

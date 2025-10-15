@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1FD0
+			// Class size: 0x1FC0
 			namespace C_WeaponTaser /*: public CS2::client::C_CSWeaponBaseGun*/ {
-				constexpr std::ptrdiff_t m_fFireTime = 0x1fc0; // entity2::GameTime_t m_fFireTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nLastAttackTick = 0x1fc4; // int32_t m_nLastAttackTick; |  0x1fc4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fFireTime = 0x1fb0; // entity2::GameTime_t m_fFireTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nLastAttackTick = 0x1fb4; // int32_t m_nLastAttackTick; |  0x1fb4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

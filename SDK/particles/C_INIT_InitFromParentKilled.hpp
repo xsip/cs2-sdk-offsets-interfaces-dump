@@ -15,12 +15,12 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitFromParentKilled : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particles::ParticleAttributeIndex_t m_nAttributeToCopy; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
-			particles::EventTypeSelection_t m_nEventType; // 0x1cc | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nAttributeToCopy; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
+			particles::EventTypeSelection_t m_nEventType; // 0x1dc | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x80); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromParentKilled, m_nAttributeToCopy) == 0x1C8, "m_nAttributeToCopy in C_INIT_InitFromParentKilled should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromParentKilled, m_nEventType) == 0x1CC, "m_nEventType in C_INIT_InitFromParentKilled should be at offset 0x1CC");
-		static_assert(sizeof(CS2::particles::C_INIT_InitFromParentKilled) == 0x250, "C_INIT_InitFromParentKilled size should be 0x250");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromParentKilled, m_nAttributeToCopy) == 0x1D8, "m_nAttributeToCopy in C_INIT_InitFromParentKilled should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromParentKilled, m_nEventType) == 0x1DC, "m_nEventType in C_INIT_InitFromParentKilled should be at offset 0x1DC");
+		static_assert(sizeof(CS2::particles::C_INIT_InitFromParentKilled) == 0x260, "C_INIT_InitFromParentKilled size should be 0x260");
 	}
 }

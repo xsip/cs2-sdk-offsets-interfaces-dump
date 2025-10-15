@@ -14,10 +14,10 @@ namespace CS2 {
 		class VecInputMaterialVariable_t  {
 		public:
 			GlobalTypes::CUtlString m_strVariable; // 0x0 | Schema_Atomic | Size: 0x8
-			particleslib::CParticleCollectionVecInput m_vecInput; // 0x8 | Schema_DeclaredClass | Size: 0x678
+			particleslib::CParticleCollectionVecInput m_vecInput; // 0x8 | Schema_DeclaredClass | Size: 0x6b8
 		};
 		static_assert(offsetof(CS2::particles::VecInputMaterialVariable_t, m_strVariable) == 0x0, "m_strVariable in VecInputMaterialVariable_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::VecInputMaterialVariable_t, m_vecInput) == 0x8, "m_vecInput in VecInputMaterialVariable_t should be at offset 0x8");
-		static_assert(sizeof(CS2::particles::VecInputMaterialVariable_t) == 0x680, "VecInputMaterialVariable_t size should be 0x680");
+		static_assert(sizeof(CS2::particles::VecInputMaterialVariable_t) == 0x6C0, "VecInputMaterialVariable_t size should be 0x6C0");
 	}
 }

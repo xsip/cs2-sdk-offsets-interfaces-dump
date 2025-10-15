@@ -13,21 +13,21 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_FadeOut : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_flFadeOutTimeMin; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutTimeMax; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutTimeExp; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeBias; // 0x1cc | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutTimeMin; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutTimeMax; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutTimeExp; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeBias; // 0x1dc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x30);
-			bool m_bProportional; // 0x200 | Schema_Builtin | Size: 0x1
-			bool m_bEaseInAndOut; // 0x201 | Schema_Builtin | Size: 0x1
+			bool m_bProportional; // 0x210 | Schema_Builtin | Size: 0x1
+			bool m_bEaseInAndOut; // 0x211 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xe); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeMin) == 0x1C0, "m_flFadeOutTimeMin in C_OP_FadeOut should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeMax) == 0x1C4, "m_flFadeOutTimeMax in C_OP_FadeOut should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeExp) == 0x1C8, "m_flFadeOutTimeExp in C_OP_FadeOut should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeBias) == 0x1CC, "m_flFadeBias in C_OP_FadeOut should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_bProportional) == 0x200, "m_bProportional in C_OP_FadeOut should be at offset 0x200");
-		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_bEaseInAndOut) == 0x201, "m_bEaseInAndOut in C_OP_FadeOut should be at offset 0x201");
-		static_assert(sizeof(CS2::particles::C_OP_FadeOut) == 0x210, "C_OP_FadeOut size should be 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeMin) == 0x1D0, "m_flFadeOutTimeMin in C_OP_FadeOut should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeMax) == 0x1D4, "m_flFadeOutTimeMax in C_OP_FadeOut should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeExp) == 0x1D8, "m_flFadeOutTimeExp in C_OP_FadeOut should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeBias) == 0x1DC, "m_flFadeBias in C_OP_FadeOut should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_bProportional) == 0x210, "m_bProportional in C_OP_FadeOut should be at offset 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_bEaseInAndOut) == 0x211, "m_bEaseInAndOut in C_OP_FadeOut should be at offset 0x211");
+		static_assert(sizeof(CS2::particles::C_OP_FadeOut) == 0x220, "C_OP_FadeOut size should be 0x220");
 	}
 }

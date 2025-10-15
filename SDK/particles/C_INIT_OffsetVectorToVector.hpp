@@ -15,17 +15,17 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_OffsetVectorToVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1c8 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1cc | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecOutputMin; // 0x1d0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecOutputMax; // 0x1dc | Schema_Atomic | Size: 0xc
-			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1e8 | Schema_DeclaredClass | Size: 0x8
+			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecOutputMin; // 0x1e0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecOutputMax; // 0x1ec | Schema_Atomic | Size: 0xc
+			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1f8 | Schema_DeclaredClass | Size: 0x8
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_nFieldInput) == 0x1C8, "m_nFieldInput in C_INIT_OffsetVectorToVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_nFieldOutput) == 0x1CC, "m_nFieldOutput in C_INIT_OffsetVectorToVector should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_vecOutputMin) == 0x1D0, "m_vecOutputMin in C_INIT_OffsetVectorToVector should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_vecOutputMax) == 0x1DC, "m_vecOutputMax in C_INIT_OffsetVectorToVector should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_randomnessParameters) == 0x1E8, "m_randomnessParameters in C_INIT_OffsetVectorToVector should be at offset 0x1E8");
-		static_assert(sizeof(CS2::particles::C_INIT_OffsetVectorToVector) == 0x1F0, "C_INIT_OffsetVectorToVector size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_nFieldInput) == 0x1D8, "m_nFieldInput in C_INIT_OffsetVectorToVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_nFieldOutput) == 0x1DC, "m_nFieldOutput in C_INIT_OffsetVectorToVector should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_vecOutputMin) == 0x1E0, "m_vecOutputMin in C_INIT_OffsetVectorToVector should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_vecOutputMax) == 0x1EC, "m_vecOutputMax in C_INIT_OffsetVectorToVector should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_OffsetVectorToVector, m_randomnessParameters) == 0x1F8, "m_randomnessParameters in C_INIT_OffsetVectorToVector should be at offset 0x1F8");
+		static_assert(sizeof(CS2::particles::C_INIT_OffsetVectorToVector) == 0x200, "C_INIT_OffsetVectorToVector size should be 0x200");
 	}
 }

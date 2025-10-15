@@ -14,11 +14,11 @@ namespace CS2 {
 		class C_Multimeter : public CS2::client::CBaseAnimGraph {
 		public:
 			S2_PAD(0x8);
-			// client::CHandle< client::C_PlantedC4 > m_hTargetC4; // 0x1178 | Schema_Atomic | Size: 0x4
-			char  m_hTargetC4[0x4]; // 0x1178 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_PlantedC4 > m_hTargetC4; // 0x1160 | Schema_Atomic | Size: 0x4
+			char  m_hTargetC4[0x4]; // 0x1160 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_Multimeter, m_hTargetC4) == 0x1178, "m_hTargetC4 in C_Multimeter should be at offset 0x1178");
-		static_assert(sizeof(CS2::client::C_Multimeter) == 0x1180, "C_Multimeter size should be 0x1180");
+		static_assert(offsetof(CS2::client::C_Multimeter, m_hTargetC4) == 0x1160, "m_hTargetC4 in C_Multimeter should be at offset 0x1160");
+		static_assert(sizeof(CS2::client::C_Multimeter) == 0x1168, "C_Multimeter size should be 0x1168");
 	}
 }

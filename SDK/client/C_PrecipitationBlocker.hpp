@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_PrecipitationBlocker : public CS2::client::C_BaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_PrecipitationBlocker) == 0xEC8, "C_PrecipitationBlocker size should be 0xEC8");
+		static_assert(sizeof(CS2::client::C_PrecipitationBlocker) == 0xEB0, "C_PrecipitationBlocker size should be 0xEB0");
 	}
 }

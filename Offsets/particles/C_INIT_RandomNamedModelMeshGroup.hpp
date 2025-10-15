@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1F0
+			// Class size: 0x200
 			namespace C_INIT_RandomNamedModelMeshGroup /*: public CS2::particles::C_INIT_RandomNamedModelElement*/ {
 				// NO SCHEMA DATA FOUND!
 			}

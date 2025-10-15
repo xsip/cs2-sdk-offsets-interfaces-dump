@@ -14,19 +14,19 @@ namespace CS2 {
 	namespace server {
 		class CMolotovProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
-			bool m_bIsIncGrenade; // 0xc28 | Schema_Builtin | Size: 0x1
+			bool m_bIsIncGrenade; // 0xc40 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17);
-			bool m_bDetonated; // 0xc40 | Schema_Builtin | Size: 0x1
+			bool m_bDetonated; // 0xc58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			server::IntervalTimer m_stillTimer; // 0xc48 | Schema_DeclaredClass | Size: 0x10
+			server::IntervalTimer m_stillTimer; // 0xc60 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0xd0);
-			bool m_bHasBouncedOffPlayer; // 0xd28 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x7); // End padding
+			bool m_bHasBouncedOffPlayer; // 0xd40 | Schema_Builtin | Size: 0x1
+			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bIsIncGrenade) == 0xC28, "m_bIsIncGrenade in CMolotovProjectile should be at offset 0xC28");
-		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bDetonated) == 0xC40, "m_bDetonated in CMolotovProjectile should be at offset 0xC40");
-		static_assert(offsetof(CS2::server::CMolotovProjectile, m_stillTimer) == 0xC48, "m_stillTimer in CMolotovProjectile should be at offset 0xC48");
-		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bHasBouncedOffPlayer) == 0xD28, "m_bHasBouncedOffPlayer in CMolotovProjectile should be at offset 0xD28");
-		static_assert(sizeof(CS2::server::CMolotovProjectile) == 0xD30, "CMolotovProjectile size should be 0xD30");
+		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bIsIncGrenade) == 0xC40, "m_bIsIncGrenade in CMolotovProjectile should be at offset 0xC40");
+		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bDetonated) == 0xC58, "m_bDetonated in CMolotovProjectile should be at offset 0xC58");
+		static_assert(offsetof(CS2::server::CMolotovProjectile, m_stillTimer) == 0xC60, "m_stillTimer in CMolotovProjectile should be at offset 0xC60");
+		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bHasBouncedOffPlayer) == 0xD40, "m_bHasBouncedOffPlayer in CMolotovProjectile should be at offset 0xD40");
+		static_assert(sizeof(CS2::server::CMolotovProjectile) == 0xD50, "CMolotovProjectile size should be 0xD50");
 	}
 }

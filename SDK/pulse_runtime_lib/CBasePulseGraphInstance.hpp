@@ -12,8 +12,8 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CBasePulseGraphInstance  {
 		public:
-			S2_PAD(0x110);
+			S2_PAD(0x118);
 		};
-		static_assert(sizeof(CS2::pulse_runtime_lib::CBasePulseGraphInstance) == 0x110, "CBasePulseGraphInstance size should be 0x110");
+		static_assert(sizeof(CS2::pulse_runtime_lib::CBasePulseGraphInstance) == 0x118, "CBasePulseGraphInstance size should be 0x118");
 	}
 }

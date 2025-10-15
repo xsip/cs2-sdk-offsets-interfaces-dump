@@ -51,7 +51,7 @@ namespace CS2 {
 			// server::CHandle< server::CBaseEntity > m_taskEntity; // 0x4dc | Schema_Atomic | Size: 0x4
 			char  m_taskEntity[0x4]; // 0x4dc | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
-			GlobalTypes::Vector m_goalPosition; // 0x4ec | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_goalPosition; // 0x4ec | Schema_Atomic | Size: 0xc
 			// server::CHandle< server::CBaseEntity > m_goalEntity; // 0x4f8 | Schema_Atomic | Size: 0x4
 			char  m_goalEntity[0x4]; // 0x4f8 | Schema_Atomic | Size: 0x4
 			// server::CHandle< server::CBaseEntity > m_avoid; // 0x4fc | Schema_Atomic | Size: 0x4

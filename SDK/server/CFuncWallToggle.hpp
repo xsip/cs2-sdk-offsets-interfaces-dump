@@ -14,6 +14,6 @@ namespace CS2 {
 		class CFuncWallToggle : public CS2::server::CFuncWall {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFuncWallToggle) == 0x7F8, "CFuncWallToggle size should be 0x7F8");
+		static_assert(sizeof(CS2::server::CFuncWallToggle) == 0x7E0, "CFuncWallToggle size should be 0x7E0");
 	}
 }

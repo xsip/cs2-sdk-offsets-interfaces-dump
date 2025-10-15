@@ -17,29 +17,29 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ChladniWave : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_flInputMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInputMax; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x488 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x5e8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleVecInput m_vecWaveLength; // 0x748 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_vecHarmonics; // 0xdc0 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x1438 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nLocalSpaceControlPoint; // 0x143c | Schema_Builtin | Size: 0x4
-			bool m_b3D; // 0x1440 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleFloatInput m_flInputMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInputMax; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x4b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x628 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleVecInput m_vecWaveLength; // 0x798 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_vecHarmonics; // 0xe50 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x1508 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nLocalSpaceControlPoint; // 0x150c | Schema_Builtin | Size: 0x4
+			bool m_b3D; // 0x1510 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_ChladniWave should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flInputMin) == 0x1C8, "m_flInputMin in C_OP_ChladniWave should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flInputMax) == 0x328, "m_flInputMax in C_OP_ChladniWave should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flOutputMin) == 0x488, "m_flOutputMin in C_OP_ChladniWave should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flOutputMax) == 0x5E8, "m_flOutputMax in C_OP_ChladniWave should be at offset 0x5E8");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_vecWaveLength) == 0x748, "m_vecWaveLength in C_OP_ChladniWave should be at offset 0x748");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_vecHarmonics) == 0xDC0, "m_vecHarmonics in C_OP_ChladniWave should be at offset 0xDC0");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_nSetMethod) == 0x1438, "m_nSetMethod in C_OP_ChladniWave should be at offset 0x1438");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_nLocalSpaceControlPoint) == 0x143C, "m_nLocalSpaceControlPoint in C_OP_ChladniWave should be at offset 0x143C");
-		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_b3D) == 0x1440, "m_b3D in C_OP_ChladniWave should be at offset 0x1440");
-		static_assert(sizeof(CS2::particles::C_OP_ChladniWave) == 0x1448, "C_OP_ChladniWave size should be 0x1448");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_ChladniWave should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flInputMin) == 0x1D8, "m_flInputMin in C_OP_ChladniWave should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flInputMax) == 0x348, "m_flInputMax in C_OP_ChladniWave should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flOutputMin) == 0x4B8, "m_flOutputMin in C_OP_ChladniWave should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_flOutputMax) == 0x628, "m_flOutputMax in C_OP_ChladniWave should be at offset 0x628");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_vecWaveLength) == 0x798, "m_vecWaveLength in C_OP_ChladniWave should be at offset 0x798");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_vecHarmonics) == 0xE50, "m_vecHarmonics in C_OP_ChladniWave should be at offset 0xE50");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_nSetMethod) == 0x1508, "m_nSetMethod in C_OP_ChladniWave should be at offset 0x1508");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_nLocalSpaceControlPoint) == 0x150C, "m_nLocalSpaceControlPoint in C_OP_ChladniWave should be at offset 0x150C");
+		static_assert(offsetof(CS2::particles::C_OP_ChladniWave, m_b3D) == 0x1510, "m_b3D in C_OP_ChladniWave should be at offset 0x1510");
+		static_assert(sizeof(CS2::particles::C_OP_ChladniWave) == 0x1518, "C_OP_ChladniWave size should be 0x1518");
 	}
 }

@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_INIT_RandomRotation : public CS2::particles::CGeneralRandomRotation {
 		public:
 		};
-		static_assert(sizeof(CS2::particles::C_INIT_RandomRotation) == 0x1E8, "C_INIT_RandomRotation size should be 0x1E8");
+		static_assert(sizeof(CS2::particles::C_INIT_RandomRotation) == 0x1F8, "C_INIT_RandomRotation size should be 0x1F8");
 	}
 }

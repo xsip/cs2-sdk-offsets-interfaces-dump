@@ -15,66 +15,66 @@ namespace CS2 {
 	namespace server {
 		class CFuncShatterglass : public CS2::server::CBaseModelEntity {
 		public:
-			GlobalTypes::matrix3x4_t m_matPanelTransform; // 0x7f0 | Schema_Atomic | Size: 0x30
-			GlobalTypes::matrix3x4_t m_matPanelTransformWsTemp; // 0x820 | Schema_Atomic | Size: 0x30
-			// GlobalTypes::CUtlVector< uint32 > m_vecShatterGlassShards; // 0x850 | Schema_Atomic | Size: 0x18
-			char  m_vecShatterGlassShards[0x18]; // 0x850 | Schema_Atomic | Size: 0x18
-			GlobalTypes::Vector2D m_PanelSize; // 0x868 | Schema_Atomic | Size: 0x8
-			entity2::GameTime_t m_flLastShatterSoundEmitTime; // 0x870 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flLastCleanupTime; // 0x874 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flInitAtTime; // 0x878 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flGlassThickness; // 0x87c | Schema_Builtin | Size: 0x4
-			float32 m_flSpawnInvulnerability; // 0x880 | Schema_Builtin | Size: 0x4
-			bool m_bBreakSilent; // 0x884 | Schema_Builtin | Size: 0x1
-			bool m_bBreakShardless; // 0x885 | Schema_Builtin | Size: 0x1
-			bool m_bBroken; // 0x886 | Schema_Builtin | Size: 0x1
-			bool m_bGlassNavIgnore; // 0x887 | Schema_Builtin | Size: 0x1
-			bool m_bGlassInFrame; // 0x888 | Schema_Builtin | Size: 0x1
-			bool m_bStartBroken; // 0x889 | Schema_Builtin | Size: 0x1
-			uint8_t m_iInitialDamageType; // 0x88a | Schema_Builtin | Size: 0x1
+			GlobalTypes::matrix3x4_t m_matPanelTransform; // 0x7d8 | Schema_Atomic | Size: 0x30
+			GlobalTypes::matrix3x4_t m_matPanelTransformWsTemp; // 0x808 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CUtlVector< uint32 > m_vecShatterGlassShards; // 0x838 | Schema_Atomic | Size: 0x18
+			char  m_vecShatterGlassShards[0x18]; // 0x838 | Schema_Atomic | Size: 0x18
+			GlobalTypes::Vector2D m_PanelSize; // 0x850 | Schema_Atomic | Size: 0x8
+			entity2::GameTime_t m_flLastShatterSoundEmitTime; // 0x858 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flLastCleanupTime; // 0x85c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flInitAtTime; // 0x860 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flGlassThickness; // 0x864 | Schema_Builtin | Size: 0x4
+			float32 m_flSpawnInvulnerability; // 0x868 | Schema_Builtin | Size: 0x4
+			bool m_bBreakSilent; // 0x86c | Schema_Builtin | Size: 0x1
+			bool m_bBreakShardless; // 0x86d | Schema_Builtin | Size: 0x1
+			bool m_bBroken; // 0x86e | Schema_Builtin | Size: 0x1
+			bool m_bGlassNavIgnore; // 0x86f | Schema_Builtin | Size: 0x1
+			bool m_bGlassInFrame; // 0x870 | Schema_Builtin | Size: 0x1
+			bool m_bStartBroken; // 0x871 | Schema_Builtin | Size: 0x1
+			uint8_t m_iInitialDamageType; // 0x872 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName01; // 0x890 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName02; // 0x898 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName03; // 0x8a0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName04; // 0x8a8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vInitialDamagePositions; // 0x8b0 | Schema_Atomic | Size: 0x18
-			char  m_vInitialDamagePositions[0x18]; // 0x8b0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vExtraDamagePositions; // 0x8c8 | Schema_Atomic | Size: 0x18
-			char  m_vExtraDamagePositions[0x18]; // 0x8c8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::Vector4D > m_vInitialPanelVertices; // 0x8e0 | Schema_Atomic | Size: 0x18
-			char  m_vInitialPanelVertices[0x18]; // 0x8e0 | Schema_Atomic | Size: 0x18
-			entity2::CEntityIOOutput m_OnBroken; // 0x8f8 | Schema_DeclaredClass | Size: 0x28
-			uint8_t m_iSurfaceType; // 0x920 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName01; // 0x878 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName02; // 0x880 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName03; // 0x888 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName04; // 0x890 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vInitialDamagePositions; // 0x898 | Schema_Atomic | Size: 0x18
+			char  m_vInitialDamagePositions[0x18]; // 0x898 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vExtraDamagePositions; // 0x8b0 | Schema_Atomic | Size: 0x18
+			char  m_vExtraDamagePositions[0x18]; // 0x8b0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector< GlobalTypes::Vector4D > m_vInitialPanelVertices; // 0x8c8 | Schema_Atomic | Size: 0x18
+			char  m_vInitialPanelVertices[0x18]; // 0x8c8 | Schema_Atomic | Size: 0x18
+			entity2::CEntityIOOutput m_OnBroken; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
+			uint8_t m_iSurfaceType; // 0x908 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterialDamageBase; // 0x928 | Schema_Atomic | Size: 0x8
-			char  m_hMaterialDamageBase[0x8]; // 0x928 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterialDamageBase; // 0x910 | Schema_Atomic | Size: 0x8
+			char  m_hMaterialDamageBase[0x8]; // 0x910 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_matPanelTransform) == 0x7F0, "m_matPanelTransform in CFuncShatterglass should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_matPanelTransformWsTemp) == 0x820, "m_matPanelTransformWsTemp in CFuncShatterglass should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vecShatterGlassShards) == 0x850, "m_vecShatterGlassShards in CFuncShatterglass should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_PanelSize) == 0x868, "m_PanelSize in CFuncShatterglass should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flLastShatterSoundEmitTime) == 0x870, "m_flLastShatterSoundEmitTime in CFuncShatterglass should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flLastCleanupTime) == 0x874, "m_flLastCleanupTime in CFuncShatterglass should be at offset 0x874");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flInitAtTime) == 0x878, "m_flInitAtTime in CFuncShatterglass should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flGlassThickness) == 0x87C, "m_flGlassThickness in CFuncShatterglass should be at offset 0x87C");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flSpawnInvulnerability) == 0x880, "m_flSpawnInvulnerability in CFuncShatterglass should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bBreakSilent) == 0x884, "m_bBreakSilent in CFuncShatterglass should be at offset 0x884");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bBreakShardless) == 0x885, "m_bBreakShardless in CFuncShatterglass should be at offset 0x885");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bBroken) == 0x886, "m_bBroken in CFuncShatterglass should be at offset 0x886");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bGlassNavIgnore) == 0x887, "m_bGlassNavIgnore in CFuncShatterglass should be at offset 0x887");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bGlassInFrame) == 0x888, "m_bGlassInFrame in CFuncShatterglass should be at offset 0x888");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bStartBroken) == 0x889, "m_bStartBroken in CFuncShatterglass should be at offset 0x889");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_iInitialDamageType) == 0x88A, "m_iInitialDamageType in CFuncShatterglass should be at offset 0x88A");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName01) == 0x890, "m_szDamagePositioningEntityName01 in CFuncShatterglass should be at offset 0x890");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName02) == 0x898, "m_szDamagePositioningEntityName02 in CFuncShatterglass should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName03) == 0x8A0, "m_szDamagePositioningEntityName03 in CFuncShatterglass should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName04) == 0x8A8, "m_szDamagePositioningEntityName04 in CFuncShatterglass should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vInitialDamagePositions) == 0x8B0, "m_vInitialDamagePositions in CFuncShatterglass should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vExtraDamagePositions) == 0x8C8, "m_vExtraDamagePositions in CFuncShatterglass should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vInitialPanelVertices) == 0x8E0, "m_vInitialPanelVertices in CFuncShatterglass should be at offset 0x8E0");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_OnBroken) == 0x8F8, "m_OnBroken in CFuncShatterglass should be at offset 0x8F8");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_iSurfaceType) == 0x920, "m_iSurfaceType in CFuncShatterglass should be at offset 0x920");
-		static_assert(offsetof(CS2::server::CFuncShatterglass, m_hMaterialDamageBase) == 0x928, "m_hMaterialDamageBase in CFuncShatterglass should be at offset 0x928");
-		static_assert(sizeof(CS2::server::CFuncShatterglass) == 0x930, "CFuncShatterglass size should be 0x930");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_matPanelTransform) == 0x7D8, "m_matPanelTransform in CFuncShatterglass should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_matPanelTransformWsTemp) == 0x808, "m_matPanelTransformWsTemp in CFuncShatterglass should be at offset 0x808");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vecShatterGlassShards) == 0x838, "m_vecShatterGlassShards in CFuncShatterglass should be at offset 0x838");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_PanelSize) == 0x850, "m_PanelSize in CFuncShatterglass should be at offset 0x850");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flLastShatterSoundEmitTime) == 0x858, "m_flLastShatterSoundEmitTime in CFuncShatterglass should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flLastCleanupTime) == 0x85C, "m_flLastCleanupTime in CFuncShatterglass should be at offset 0x85C");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flInitAtTime) == 0x860, "m_flInitAtTime in CFuncShatterglass should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flGlassThickness) == 0x864, "m_flGlassThickness in CFuncShatterglass should be at offset 0x864");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_flSpawnInvulnerability) == 0x868, "m_flSpawnInvulnerability in CFuncShatterglass should be at offset 0x868");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bBreakSilent) == 0x86C, "m_bBreakSilent in CFuncShatterglass should be at offset 0x86C");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bBreakShardless) == 0x86D, "m_bBreakShardless in CFuncShatterglass should be at offset 0x86D");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bBroken) == 0x86E, "m_bBroken in CFuncShatterglass should be at offset 0x86E");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bGlassNavIgnore) == 0x86F, "m_bGlassNavIgnore in CFuncShatterglass should be at offset 0x86F");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bGlassInFrame) == 0x870, "m_bGlassInFrame in CFuncShatterglass should be at offset 0x870");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_bStartBroken) == 0x871, "m_bStartBroken in CFuncShatterglass should be at offset 0x871");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_iInitialDamageType) == 0x872, "m_iInitialDamageType in CFuncShatterglass should be at offset 0x872");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName01) == 0x878, "m_szDamagePositioningEntityName01 in CFuncShatterglass should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName02) == 0x880, "m_szDamagePositioningEntityName02 in CFuncShatterglass should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName03) == 0x888, "m_szDamagePositioningEntityName03 in CFuncShatterglass should be at offset 0x888");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_szDamagePositioningEntityName04) == 0x890, "m_szDamagePositioningEntityName04 in CFuncShatterglass should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vInitialDamagePositions) == 0x898, "m_vInitialDamagePositions in CFuncShatterglass should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vExtraDamagePositions) == 0x8B0, "m_vExtraDamagePositions in CFuncShatterglass should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vInitialPanelVertices) == 0x8C8, "m_vInitialPanelVertices in CFuncShatterglass should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_OnBroken) == 0x8E0, "m_OnBroken in CFuncShatterglass should be at offset 0x8E0");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_iSurfaceType) == 0x908, "m_iSurfaceType in CFuncShatterglass should be at offset 0x908");
+		static_assert(offsetof(CS2::server::CFuncShatterglass, m_hMaterialDamageBase) == 0x910, "m_hMaterialDamageBase in CFuncShatterglass should be at offset 0x910");
+		static_assert(sizeof(CS2::server::CFuncShatterglass) == 0x918, "CFuncShatterglass size should be 0x918");
 	}
 }

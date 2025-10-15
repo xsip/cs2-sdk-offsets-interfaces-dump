@@ -15,34 +15,34 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ContinuousEmitter : public CS2::particles::CParticleFunctionEmitter {
 		public:
-			particleslib::CParticleCollectionFloatInput m_flEmissionDuration; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flStartTime; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flEmitRate; // 0x488 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flEmissionScale; // 0x5e8 | Schema_Builtin | Size: 0x4
-			float32 m_flScalePerParentParticle; // 0x5ec | Schema_Builtin | Size: 0x4
-			bool m_bInitFromKilledParentParticles; // 0x5f0 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flEmissionDuration; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flStartTime; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flEmitRate; // 0x4b8 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flEmissionScale; // 0x628 | Schema_Builtin | Size: 0x4
+			float32 m_flScalePerParentParticle; // 0x62c | Schema_Builtin | Size: 0x4
+			bool m_bInitFromKilledParentParticles; // 0x630 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::EventTypeSelection_t m_nEventType; // 0x5f4 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nSnapshotControlPoint; // 0x5f8 | Schema_Builtin | Size: 0x4
+			particles::EventTypeSelection_t m_nEventType; // 0x634 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nSnapshotControlPoint; // 0x638 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x600 | Schema_Atomic | Size: 0x8
-			int32_t m_nLimitPerUpdate; // 0x608 | Schema_Builtin | Size: 0x4
-			bool m_bForceEmitOnFirstUpdate; // 0x60c | Schema_Builtin | Size: 0x1
-			bool m_bForceEmitOnLastUpdate; // 0x60d | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x640 | Schema_Atomic | Size: 0x8
+			int32_t m_nLimitPerUpdate; // 0x648 | Schema_Builtin | Size: 0x4
+			bool m_bForceEmitOnFirstUpdate; // 0x64c | Schema_Builtin | Size: 0x1
+			bool m_bForceEmitOnLastUpdate; // 0x64d | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmissionDuration) == 0x1C8, "m_flEmissionDuration in C_OP_ContinuousEmitter should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flStartTime) == 0x328, "m_flStartTime in C_OP_ContinuousEmitter should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmitRate) == 0x488, "m_flEmitRate in C_OP_ContinuousEmitter should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmissionScale) == 0x5E8, "m_flEmissionScale in C_OP_ContinuousEmitter should be at offset 0x5E8");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flScalePerParentParticle) == 0x5EC, "m_flScalePerParentParticle in C_OP_ContinuousEmitter should be at offset 0x5EC");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bInitFromKilledParentParticles) == 0x5F0, "m_bInitFromKilledParentParticles in C_OP_ContinuousEmitter should be at offset 0x5F0");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_nEventType) == 0x5F4, "m_nEventType in C_OP_ContinuousEmitter should be at offset 0x5F4");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_nSnapshotControlPoint) == 0x5F8, "m_nSnapshotControlPoint in C_OP_ContinuousEmitter should be at offset 0x5F8");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_strSnapshotSubset) == 0x600, "m_strSnapshotSubset in C_OP_ContinuousEmitter should be at offset 0x600");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_nLimitPerUpdate) == 0x608, "m_nLimitPerUpdate in C_OP_ContinuousEmitter should be at offset 0x608");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bForceEmitOnFirstUpdate) == 0x60C, "m_bForceEmitOnFirstUpdate in C_OP_ContinuousEmitter should be at offset 0x60C");
-		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bForceEmitOnLastUpdate) == 0x60D, "m_bForceEmitOnLastUpdate in C_OP_ContinuousEmitter should be at offset 0x60D");
-		static_assert(sizeof(CS2::particles::C_OP_ContinuousEmitter) == 0x618, "C_OP_ContinuousEmitter size should be 0x618");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmissionDuration) == 0x1D8, "m_flEmissionDuration in C_OP_ContinuousEmitter should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flStartTime) == 0x348, "m_flStartTime in C_OP_ContinuousEmitter should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmitRate) == 0x4B8, "m_flEmitRate in C_OP_ContinuousEmitter should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmissionScale) == 0x628, "m_flEmissionScale in C_OP_ContinuousEmitter should be at offset 0x628");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flScalePerParentParticle) == 0x62C, "m_flScalePerParentParticle in C_OP_ContinuousEmitter should be at offset 0x62C");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bInitFromKilledParentParticles) == 0x630, "m_bInitFromKilledParentParticles in C_OP_ContinuousEmitter should be at offset 0x630");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_nEventType) == 0x634, "m_nEventType in C_OP_ContinuousEmitter should be at offset 0x634");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_nSnapshotControlPoint) == 0x638, "m_nSnapshotControlPoint in C_OP_ContinuousEmitter should be at offset 0x638");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_strSnapshotSubset) == 0x640, "m_strSnapshotSubset in C_OP_ContinuousEmitter should be at offset 0x640");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_nLimitPerUpdate) == 0x648, "m_nLimitPerUpdate in C_OP_ContinuousEmitter should be at offset 0x648");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bForceEmitOnFirstUpdate) == 0x64C, "m_bForceEmitOnFirstUpdate in C_OP_ContinuousEmitter should be at offset 0x64C");
+		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bForceEmitOnLastUpdate) == 0x64D, "m_bForceEmitOnLastUpdate in C_OP_ContinuousEmitter should be at offset 0x64D");
+		static_assert(sizeof(CS2::particles::C_OP_ContinuousEmitter) == 0x658, "C_OP_ContinuousEmitter size should be 0x658");
 	}
 }

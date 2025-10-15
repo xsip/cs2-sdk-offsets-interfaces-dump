@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7F8
+			// Class size: 0x7E0
 			namespace CFuncWallToggle /*: public CS2::server::CFuncWall*/ {
 				// NO SCHEMA DATA FOUND!
 			}

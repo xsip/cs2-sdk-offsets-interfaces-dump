@@ -5,7 +5,6 @@
 
 #include <SDK/GlobalTypes.hpp>
 
-#include <SDK/pulse_runtime_lib/PulseValueType_t.hpp>
 #include <SDK/particleslib/ParticleNamedValueConfiguration_t.hpp>
 
 
@@ -16,17 +15,14 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_Name; // 0x0 | Schema_Atomic | Size: 0x8
 			bool m_IsPublic; // 0x8 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
-			pulse_runtime_lib::PulseValueType_t m_ValueType; // 0xc | Schema_DeclaredEnum | Size: 0x4
-			particleslib::ParticleNamedValueConfiguration_t m_DefaultConfig; // 0x10 | Schema_DeclaredClass | Size: 0x38
-			// GlobalTypes::CUtlVector< particleslib::ParticleNamedValueConfiguration_t > m_NamedConfigs; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_NamedConfigs[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			S2_PAD(0x7);
+			GlobalTypes::CPulseValueFullType m_ValueType; // 0x10 | Schema_Atomic | Size: 0x18
+			particleslib::ParticleNamedValueConfiguration_t m_DefaultConfig; // 0x28 | Schema_DeclaredClass | Size: 0x38
 		};
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueSource_t, m_Name) == 0x0, "m_Name in ParticleNamedValueSource_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueSource_t, m_IsPublic) == 0x8, "m_IsPublic in ParticleNamedValueSource_t should be at offset 0x8");
-		static_assert(offsetof(CS2::particleslib::ParticleNamedValueSource_t, m_ValueType) == 0xC, "m_ValueType in ParticleNamedValueSource_t should be at offset 0xC");
-		static_assert(offsetof(CS2::particleslib::ParticleNamedValueSource_t, m_DefaultConfig) == 0x10, "m_DefaultConfig in ParticleNamedValueSource_t should be at offset 0x10");
-		static_assert(offsetof(CS2::particleslib::ParticleNamedValueSource_t, m_NamedConfigs) == 0x48, "m_NamedConfigs in ParticleNamedValueSource_t should be at offset 0x48");
+		static_assert(offsetof(CS2::particleslib::ParticleNamedValueSource_t, m_ValueType) == 0x10, "m_ValueType in ParticleNamedValueSource_t should be at offset 0x10");
+		static_assert(offsetof(CS2::particleslib::ParticleNamedValueSource_t, m_DefaultConfig) == 0x28, "m_DefaultConfig in ParticleNamedValueSource_t should be at offset 0x28");
 		static_assert(sizeof(CS2::particleslib::ParticleNamedValueSource_t) == 0x60, "ParticleNamedValueSource_t size should be 0x60");
 	}
 }

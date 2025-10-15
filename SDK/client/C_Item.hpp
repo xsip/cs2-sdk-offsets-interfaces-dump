@@ -13,9 +13,9 @@ namespace CS2 {
 	namespace client {
 		class C_Item : public CS2::client::C_EconEntity {
 		public:
-			char m_pReticleHintTextName[256]; // 0x18f8 | Schema_FixedArray | Size: 0x100
+			char m_pReticleHintTextName[256]; // 0x18e0 | Schema_FixedArray | Size: 0x100
 		};
-		static_assert(offsetof(CS2::client::C_Item, m_pReticleHintTextName) == 0x18F8, "m_pReticleHintTextName in C_Item should be at offset 0x18F8");
-		static_assert(sizeof(CS2::client::C_Item) == 0x19F8, "C_Item size should be 0x19F8");
+		static_assert(offsetof(CS2::client::C_Item, m_pReticleHintTextName) == 0x18E0, "m_pReticleHintTextName in C_Item should be at offset 0x18E0");
+		static_assert(sizeof(CS2::client::C_Item) == 0x19E0, "C_Item size should be 0x19E0");
 	}
 }

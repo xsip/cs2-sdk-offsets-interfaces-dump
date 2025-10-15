@@ -14,18 +14,18 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SelectivelyEnableChildren : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particleslib::CParticleCollectionFloatInput m_nChildGroupID; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_nFirstChild; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_nNumChildrenToEnable; // 0x488 | Schema_DeclaredClass | Size: 0x160
-			bool m_bPlayEndcapOnStop; // 0x5e8 | Schema_Builtin | Size: 0x1
-			bool m_bDestroyImmediately; // 0x5e9 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_nChildGroupID; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_nFirstChild; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_nNumChildrenToEnable; // 0x4b8 | Schema_DeclaredClass | Size: 0x170
+			bool m_bPlayEndcapOnStop; // 0x628 | Schema_Builtin | Size: 0x1
+			bool m_bDestroyImmediately; // 0x629 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nChildGroupID) == 0x1C8, "m_nChildGroupID in C_OP_SelectivelyEnableChildren should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nFirstChild) == 0x328, "m_nFirstChild in C_OP_SelectivelyEnableChildren should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nNumChildrenToEnable) == 0x488, "m_nNumChildrenToEnable in C_OP_SelectivelyEnableChildren should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_bPlayEndcapOnStop) == 0x5E8, "m_bPlayEndcapOnStop in C_OP_SelectivelyEnableChildren should be at offset 0x5E8");
-		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_bDestroyImmediately) == 0x5E9, "m_bDestroyImmediately in C_OP_SelectivelyEnableChildren should be at offset 0x5E9");
-		static_assert(sizeof(CS2::particles::C_OP_SelectivelyEnableChildren) == 0x5F0, "C_OP_SelectivelyEnableChildren size should be 0x5F0");
+		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nChildGroupID) == 0x1D8, "m_nChildGroupID in C_OP_SelectivelyEnableChildren should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nFirstChild) == 0x348, "m_nFirstChild in C_OP_SelectivelyEnableChildren should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nNumChildrenToEnable) == 0x4B8, "m_nNumChildrenToEnable in C_OP_SelectivelyEnableChildren should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_bPlayEndcapOnStop) == 0x628, "m_bPlayEndcapOnStop in C_OP_SelectivelyEnableChildren should be at offset 0x628");
+		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_bDestroyImmediately) == 0x629, "m_bDestroyImmediately in C_OP_SelectivelyEnableChildren should be at offset 0x629");
+		static_assert(sizeof(CS2::particles::C_OP_SelectivelyEnableChildren) == 0x630, "C_OP_SelectivelyEnableChildren size should be 0x630");
 	}
 }

@@ -16,42 +16,42 @@ namespace CS2 {
 		class CBaseGrenade : public CS2::server::CBaseFlex {
 		public:
 			S2_PAD(0x8);
-			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xb18 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnExplode; // 0xb40 | Schema_DeclaredClass | Size: 0x28
-			bool m_bHasWarnedAI; // 0xb68 | Schema_Builtin | Size: 0x1
-			bool m_bIsSmokeGrenade; // 0xb69 | Schema_Builtin | Size: 0x1
-			bool m_bIsLive; // 0xb6a | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xb28 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnExplode; // 0xb50 | Schema_DeclaredClass | Size: 0x28
+			bool m_bHasWarnedAI; // 0xb78 | Schema_Builtin | Size: 0x1
+			bool m_bIsSmokeGrenade; // 0xb79 | Schema_Builtin | Size: 0x1
+			bool m_bIsLive; // 0xb7a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_DmgRadius; // 0xb6c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flDetonateTime; // 0xb70 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flWarnAITime; // 0xb74 | Schema_Builtin | Size: 0x4
-			float32 m_flDamage; // 0xb78 | Schema_Builtin | Size: 0x4
+			float32 m_DmgRadius; // 0xb7c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flDetonateTime; // 0xb80 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flWarnAITime; // 0xb84 | Schema_Builtin | Size: 0x4
+			float32 m_flDamage; // 0xb88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszBounceSound; // 0xb80 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_ExplosionSound; // 0xb88 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszBounceSound; // 0xb90 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_ExplosionSound; // 0xb98 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x4);
-			// server::CHandle< server::CCSPlayerPawn > m_hThrower; // 0xb94 | Schema_Atomic | Size: 0x4
-			char  m_hThrower[0x4]; // 0xb94 | Schema_Atomic | Size: 0x4
+			// server::CHandle< server::CCSPlayerPawn > m_hThrower; // 0xba4 | Schema_Atomic | Size: 0x4
+			char  m_hThrower[0x4]; // 0xba4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
-			entity2::GameTime_t m_flNextAttack; // 0xbac | Schema_DeclaredClass | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_hOriginalThrower; // 0xbb0 | Schema_Atomic | Size: 0x4
-			char  m_hOriginalThrower[0x4]; // 0xbb0 | Schema_Atomic | Size: 0x4
-			S2_PAD(0x4); // End padding
+			entity2::GameTime_t m_flNextAttack; // 0xbbc | Schema_DeclaredClass | Size: 0x4
+			// server::CHandle< server::CCSPlayerPawn > m_hOriginalThrower; // 0xbc0 | Schema_Atomic | Size: 0x4
+			char  m_hOriginalThrower[0x4]; // 0xbc0 | Schema_Atomic | Size: 0x4
+			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_OnPlayerPickup) == 0xB18, "m_OnPlayerPickup in CBaseGrenade should be at offset 0xB18");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_OnExplode) == 0xB40, "m_OnExplode in CBaseGrenade should be at offset 0xB40");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_bHasWarnedAI) == 0xB68, "m_bHasWarnedAI in CBaseGrenade should be at offset 0xB68");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_bIsSmokeGrenade) == 0xB69, "m_bIsSmokeGrenade in CBaseGrenade should be at offset 0xB69");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_bIsLive) == 0xB6A, "m_bIsLive in CBaseGrenade should be at offset 0xB6A");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_DmgRadius) == 0xB6C, "m_DmgRadius in CBaseGrenade should be at offset 0xB6C");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_flDetonateTime) == 0xB70, "m_flDetonateTime in CBaseGrenade should be at offset 0xB70");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_flWarnAITime) == 0xB74, "m_flWarnAITime in CBaseGrenade should be at offset 0xB74");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_flDamage) == 0xB78, "m_flDamage in CBaseGrenade should be at offset 0xB78");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_iszBounceSound) == 0xB80, "m_iszBounceSound in CBaseGrenade should be at offset 0xB80");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_ExplosionSound) == 0xB88, "m_ExplosionSound in CBaseGrenade should be at offset 0xB88");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_hThrower) == 0xB94, "m_hThrower in CBaseGrenade should be at offset 0xB94");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_flNextAttack) == 0xBAC, "m_flNextAttack in CBaseGrenade should be at offset 0xBAC");
-		static_assert(offsetof(CS2::server::CBaseGrenade, m_hOriginalThrower) == 0xBB0, "m_hOriginalThrower in CBaseGrenade should be at offset 0xBB0");
-		static_assert(sizeof(CS2::server::CBaseGrenade) == 0xBB8, "CBaseGrenade size should be 0xBB8");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_OnPlayerPickup) == 0xB28, "m_OnPlayerPickup in CBaseGrenade should be at offset 0xB28");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_OnExplode) == 0xB50, "m_OnExplode in CBaseGrenade should be at offset 0xB50");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_bHasWarnedAI) == 0xB78, "m_bHasWarnedAI in CBaseGrenade should be at offset 0xB78");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_bIsSmokeGrenade) == 0xB79, "m_bIsSmokeGrenade in CBaseGrenade should be at offset 0xB79");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_bIsLive) == 0xB7A, "m_bIsLive in CBaseGrenade should be at offset 0xB7A");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_DmgRadius) == 0xB7C, "m_DmgRadius in CBaseGrenade should be at offset 0xB7C");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_flDetonateTime) == 0xB80, "m_flDetonateTime in CBaseGrenade should be at offset 0xB80");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_flWarnAITime) == 0xB84, "m_flWarnAITime in CBaseGrenade should be at offset 0xB84");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_flDamage) == 0xB88, "m_flDamage in CBaseGrenade should be at offset 0xB88");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_iszBounceSound) == 0xB90, "m_iszBounceSound in CBaseGrenade should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_ExplosionSound) == 0xB98, "m_ExplosionSound in CBaseGrenade should be at offset 0xB98");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_hThrower) == 0xBA4, "m_hThrower in CBaseGrenade should be at offset 0xBA4");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_flNextAttack) == 0xBBC, "m_flNextAttack in CBaseGrenade should be at offset 0xBBC");
+		static_assert(offsetof(CS2::server::CBaseGrenade, m_hOriginalThrower) == 0xBC0, "m_hOriginalThrower in CBaseGrenade should be at offset 0xBC0");
+		static_assert(sizeof(CS2::server::CBaseGrenade) == 0xBD0, "CBaseGrenade size should be 0xBD0");
 	}
 }

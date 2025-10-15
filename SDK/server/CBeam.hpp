@@ -17,61 +17,61 @@ namespace CS2 {
 	namespace server {
 		class CBeam : public CS2::server::CBaseModelEntity {
 		public:
-			float32 m_flFrameRate; // 0x7f0 | Schema_Builtin | Size: 0x4
-			float32 m_flHDRColorScale; // 0x7f4 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flFireTime; // 0x7f8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flDamage; // 0x7fc | Schema_Builtin | Size: 0x4
-			uint8_t m_nNumBeamEnts; // 0x800 | Schema_Builtin | Size: 0x1
+			float32 m_flFrameRate; // 0x7d8 | Schema_Builtin | Size: 0x4
+			float32 m_flHDRColorScale; // 0x7dc | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flFireTime; // 0x7e0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flDamage; // 0x7e4 | Schema_Builtin | Size: 0x4
+			uint8_t m_nNumBeamEnts; // 0x7e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hBaseMaterial; // 0x808 | Schema_Atomic | Size: 0x8
-			char  m_hBaseMaterial[0x8]; // 0x808 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_nHaloIndex; // 0x810 | Schema_Atomic | Size: 0x8
-			char  m_nHaloIndex[0x8]; // 0x810 | Schema_Atomic | Size: 0x8
-			client::BeamType_t m_nBeamType; // 0x818 | Schema_DeclaredEnum | Size: 0x4
-			uint32_t m_nBeamFlags; // 0x81c | Schema_Builtin | Size: 0x4
-			// server::CHandle< CBaseEntity > m_hAttachEntity[10]; // 0x820 | Schema_FixedArray | Size: 0x28
-			char  m_hAttachEntity[0x4]; // 0x820 | Schema_FixedArray | Size: 0x4
-			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0x848 | Schema_FixedArray | Size: 0x64
-			float32 m_fWidth; // 0x854 | Schema_Builtin | Size: 0x4
-			float32 m_fEndWidth; // 0x858 | Schema_Builtin | Size: 0x4
-			float32 m_fFadeLength; // 0x85c | Schema_Builtin | Size: 0x4
-			float32 m_fHaloScale; // 0x860 | Schema_Builtin | Size: 0x4
-			float32 m_fAmplitude; // 0x864 | Schema_Builtin | Size: 0x4
-			float32 m_fStartFrame; // 0x868 | Schema_Builtin | Size: 0x4
-			float32 m_fSpeed; // 0x86c | Schema_Builtin | Size: 0x4
-			float32 m_flFrame; // 0x870 | Schema_Builtin | Size: 0x4
-			client::BeamClipStyle_t m_nClipStyle; // 0x874 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bTurnedOff; // 0x878 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hBaseMaterial; // 0x7f0 | Schema_Atomic | Size: 0x8
+			char  m_hBaseMaterial[0x8]; // 0x7f0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_nHaloIndex; // 0x7f8 | Schema_Atomic | Size: 0x8
+			char  m_nHaloIndex[0x8]; // 0x7f8 | Schema_Atomic | Size: 0x8
+			client::BeamType_t m_nBeamType; // 0x800 | Schema_DeclaredEnum | Size: 0x4
+			uint32_t m_nBeamFlags; // 0x804 | Schema_Builtin | Size: 0x4
+			// server::CHandle< CBaseEntity > m_hAttachEntity[10]; // 0x808 | Schema_FixedArray | Size: 0x28
+			char  m_hAttachEntity[0x4]; // 0x808 | Schema_FixedArray | Size: 0x4
+			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0x830 | Schema_FixedArray | Size: 0x64
+			float32 m_fWidth; // 0x83c | Schema_Builtin | Size: 0x4
+			float32 m_fEndWidth; // 0x840 | Schema_Builtin | Size: 0x4
+			float32 m_fFadeLength; // 0x844 | Schema_Builtin | Size: 0x4
+			float32 m_fHaloScale; // 0x848 | Schema_Builtin | Size: 0x4
+			float32 m_fAmplitude; // 0x84c | Schema_Builtin | Size: 0x4
+			float32 m_fStartFrame; // 0x850 | Schema_Builtin | Size: 0x4
+			float32 m_fSpeed; // 0x854 | Schema_Builtin | Size: 0x4
+			float32 m_flFrame; // 0x858 | Schema_Builtin | Size: 0x4
+			client::BeamClipStyle_t m_nClipStyle; // 0x85c | Schema_DeclaredEnum | Size: 0x4
+			bool m_bTurnedOff; // 0x860 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::VectorWS m_vecEndPos; // 0x87c | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hEndEntity; // 0x888 | Schema_Atomic | Size: 0x4
-			char  m_hEndEntity[0x4]; // 0x888 | Schema_Atomic | Size: 0x4
-			int32_t m_nDissolveType; // 0x88c | Schema_Builtin | Size: 0x4
+			GlobalTypes::VectorWS m_vecEndPos; // 0x864 | Schema_Atomic | Size: 0xc
+			// server::CHandle< server::CBaseEntity > m_hEndEntity; // 0x870 | Schema_Atomic | Size: 0x4
+			char  m_hEndEntity[0x4]; // 0x870 | Schema_Atomic | Size: 0x4
+			int32_t m_nDissolveType; // 0x874 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CBeam, m_flFrameRate) == 0x7F0, "m_flFrameRate in CBeam should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CBeam, m_flHDRColorScale) == 0x7F4, "m_flHDRColorScale in CBeam should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CBeam, m_flFireTime) == 0x7F8, "m_flFireTime in CBeam should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CBeam, m_flDamage) == 0x7FC, "m_flDamage in CBeam should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CBeam, m_nNumBeamEnts) == 0x800, "m_nNumBeamEnts in CBeam should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CBeam, m_hBaseMaterial) == 0x808, "m_hBaseMaterial in CBeam should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CBeam, m_nHaloIndex) == 0x810, "m_nHaloIndex in CBeam should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CBeam, m_nBeamType) == 0x818, "m_nBeamType in CBeam should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CBeam, m_nBeamFlags) == 0x81C, "m_nBeamFlags in CBeam should be at offset 0x81C");
-		static_assert(offsetof(CS2::server::CBeam, m_hAttachEntity) == 0x820, "m_hAttachEntity in CBeam should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CBeam, m_nAttachIndex) == 0x848, "m_nAttachIndex in CBeam should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CBeam, m_fWidth) == 0x854, "m_fWidth in CBeam should be at offset 0x854");
-		static_assert(offsetof(CS2::server::CBeam, m_fEndWidth) == 0x858, "m_fEndWidth in CBeam should be at offset 0x858");
-		static_assert(offsetof(CS2::server::CBeam, m_fFadeLength) == 0x85C, "m_fFadeLength in CBeam should be at offset 0x85C");
-		static_assert(offsetof(CS2::server::CBeam, m_fHaloScale) == 0x860, "m_fHaloScale in CBeam should be at offset 0x860");
-		static_assert(offsetof(CS2::server::CBeam, m_fAmplitude) == 0x864, "m_fAmplitude in CBeam should be at offset 0x864");
-		static_assert(offsetof(CS2::server::CBeam, m_fStartFrame) == 0x868, "m_fStartFrame in CBeam should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CBeam, m_fSpeed) == 0x86C, "m_fSpeed in CBeam should be at offset 0x86C");
-		static_assert(offsetof(CS2::server::CBeam, m_flFrame) == 0x870, "m_flFrame in CBeam should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CBeam, m_nClipStyle) == 0x874, "m_nClipStyle in CBeam should be at offset 0x874");
-		static_assert(offsetof(CS2::server::CBeam, m_bTurnedOff) == 0x878, "m_bTurnedOff in CBeam should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CBeam, m_vecEndPos) == 0x87C, "m_vecEndPos in CBeam should be at offset 0x87C");
-		static_assert(offsetof(CS2::server::CBeam, m_hEndEntity) == 0x888, "m_hEndEntity in CBeam should be at offset 0x888");
-		static_assert(offsetof(CS2::server::CBeam, m_nDissolveType) == 0x88C, "m_nDissolveType in CBeam should be at offset 0x88C");
-		static_assert(sizeof(CS2::server::CBeam) == 0x890, "CBeam size should be 0x890");
+		static_assert(offsetof(CS2::server::CBeam, m_flFrameRate) == 0x7D8, "m_flFrameRate in CBeam should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CBeam, m_flHDRColorScale) == 0x7DC, "m_flHDRColorScale in CBeam should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CBeam, m_flFireTime) == 0x7E0, "m_flFireTime in CBeam should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CBeam, m_flDamage) == 0x7E4, "m_flDamage in CBeam should be at offset 0x7E4");
+		static_assert(offsetof(CS2::server::CBeam, m_nNumBeamEnts) == 0x7E8, "m_nNumBeamEnts in CBeam should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CBeam, m_hBaseMaterial) == 0x7F0, "m_hBaseMaterial in CBeam should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CBeam, m_nHaloIndex) == 0x7F8, "m_nHaloIndex in CBeam should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CBeam, m_nBeamType) == 0x800, "m_nBeamType in CBeam should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CBeam, m_nBeamFlags) == 0x804, "m_nBeamFlags in CBeam should be at offset 0x804");
+		static_assert(offsetof(CS2::server::CBeam, m_hAttachEntity) == 0x808, "m_hAttachEntity in CBeam should be at offset 0x808");
+		static_assert(offsetof(CS2::server::CBeam, m_nAttachIndex) == 0x830, "m_nAttachIndex in CBeam should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CBeam, m_fWidth) == 0x83C, "m_fWidth in CBeam should be at offset 0x83C");
+		static_assert(offsetof(CS2::server::CBeam, m_fEndWidth) == 0x840, "m_fEndWidth in CBeam should be at offset 0x840");
+		static_assert(offsetof(CS2::server::CBeam, m_fFadeLength) == 0x844, "m_fFadeLength in CBeam should be at offset 0x844");
+		static_assert(offsetof(CS2::server::CBeam, m_fHaloScale) == 0x848, "m_fHaloScale in CBeam should be at offset 0x848");
+		static_assert(offsetof(CS2::server::CBeam, m_fAmplitude) == 0x84C, "m_fAmplitude in CBeam should be at offset 0x84C");
+		static_assert(offsetof(CS2::server::CBeam, m_fStartFrame) == 0x850, "m_fStartFrame in CBeam should be at offset 0x850");
+		static_assert(offsetof(CS2::server::CBeam, m_fSpeed) == 0x854, "m_fSpeed in CBeam should be at offset 0x854");
+		static_assert(offsetof(CS2::server::CBeam, m_flFrame) == 0x858, "m_flFrame in CBeam should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CBeam, m_nClipStyle) == 0x85C, "m_nClipStyle in CBeam should be at offset 0x85C");
+		static_assert(offsetof(CS2::server::CBeam, m_bTurnedOff) == 0x860, "m_bTurnedOff in CBeam should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CBeam, m_vecEndPos) == 0x864, "m_vecEndPos in CBeam should be at offset 0x864");
+		static_assert(offsetof(CS2::server::CBeam, m_hEndEntity) == 0x870, "m_hEndEntity in CBeam should be at offset 0x870");
+		static_assert(offsetof(CS2::server::CBeam, m_nDissolveType) == 0x874, "m_nDissolveType in CBeam should be at offset 0x874");
+		static_assert(sizeof(CS2::server::CBeam) == 0x878, "CBeam size should be 0x878");
 	}
 }

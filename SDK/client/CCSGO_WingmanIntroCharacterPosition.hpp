@@ -14,6 +14,6 @@ namespace CS2 {
 		class CCSGO_WingmanIntroCharacterPosition : public CS2::client::C_CSGO_TeamIntroCharacterPosition {
 		public:
 		};
-		static_assert(sizeof(CS2::client::CCSGO_WingmanIntroCharacterPosition) == 0x13B8, "CCSGO_WingmanIntroCharacterPosition size should be 0x13B8");
+		static_assert(sizeof(CS2::client::CCSGO_WingmanIntroCharacterPosition) == 0x13B0, "CCSGO_WingmanIntroCharacterPosition size should be 0x13B0");
 	}
 }

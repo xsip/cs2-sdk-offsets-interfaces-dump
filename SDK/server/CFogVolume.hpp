@@ -13,19 +13,19 @@ namespace CS2 {
 	namespace server {
 		class CFogVolume : public CS2::server::CServerOnlyModelEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_fogName; // 0x7f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_postProcessName; // 0x7f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_colorCorrectionName; // 0x800 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_fogName; // 0x7d8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_postProcessName; // 0x7e0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_colorCorrectionName; // 0x7e8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8);
-			bool m_bDisabled; // 0x810 | Schema_Builtin | Size: 0x1
-			bool m_bInFogVolumesList; // 0x811 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x7f8 | Schema_Builtin | Size: 0x1
+			bool m_bInFogVolumesList; // 0x7f9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFogVolume, m_fogName) == 0x7F0, "m_fogName in CFogVolume should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFogVolume, m_postProcessName) == 0x7F8, "m_postProcessName in CFogVolume should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CFogVolume, m_colorCorrectionName) == 0x800, "m_colorCorrectionName in CFogVolume should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CFogVolume, m_bDisabled) == 0x810, "m_bDisabled in CFogVolume should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CFogVolume, m_bInFogVolumesList) == 0x811, "m_bInFogVolumesList in CFogVolume should be at offset 0x811");
-		static_assert(sizeof(CS2::server::CFogVolume) == 0x818, "CFogVolume size should be 0x818");
+		static_assert(offsetof(CS2::server::CFogVolume, m_fogName) == 0x7D8, "m_fogName in CFogVolume should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CFogVolume, m_postProcessName) == 0x7E0, "m_postProcessName in CFogVolume should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CFogVolume, m_colorCorrectionName) == 0x7E8, "m_colorCorrectionName in CFogVolume should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CFogVolume, m_bDisabled) == 0x7F8, "m_bDisabled in CFogVolume should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CFogVolume, m_bInFogVolumesList) == 0x7F9, "m_bInFogVolumesList in CFogVolume should be at offset 0x7F9");
+		static_assert(sizeof(CS2::server::CFogVolume) == 0x800, "CFogVolume size should be 0x800");
 	}
 }

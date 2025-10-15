@@ -13,15 +13,15 @@ namespace CS2 {
 	namespace server {
 		class CSpotlightEnd : public CS2::server::CBaseModelEntity {
 		public:
-			float32 m_flLightScale; // 0x7f0 | Schema_Builtin | Size: 0x4
-			float32 m_Radius; // 0x7f4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vSpotlightDir; // 0x7f8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vSpotlightOrg; // 0x804 | Schema_Atomic | Size: 0xc
+			float32 m_flLightScale; // 0x7d8 | Schema_Builtin | Size: 0x4
+			float32 m_Radius; // 0x7dc | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vSpotlightDir; // 0x7e0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vSpotlightOrg; // 0x7ec | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::server::CSpotlightEnd, m_flLightScale) == 0x7F0, "m_flLightScale in CSpotlightEnd should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CSpotlightEnd, m_Radius) == 0x7F4, "m_Radius in CSpotlightEnd should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CSpotlightEnd, m_vSpotlightDir) == 0x7F8, "m_vSpotlightDir in CSpotlightEnd should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CSpotlightEnd, m_vSpotlightOrg) == 0x804, "m_vSpotlightOrg in CSpotlightEnd should be at offset 0x804");
-		static_assert(sizeof(CS2::server::CSpotlightEnd) == 0x810, "CSpotlightEnd size should be 0x810");
+		static_assert(offsetof(CS2::server::CSpotlightEnd, m_flLightScale) == 0x7D8, "m_flLightScale in CSpotlightEnd should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CSpotlightEnd, m_Radius) == 0x7DC, "m_Radius in CSpotlightEnd should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CSpotlightEnd, m_vSpotlightDir) == 0x7E0, "m_vSpotlightDir in CSpotlightEnd should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CSpotlightEnd, m_vSpotlightOrg) == 0x7EC, "m_vSpotlightOrg in CSpotlightEnd should be at offset 0x7EC");
+		static_assert(sizeof(CS2::server::CSpotlightEnd) == 0x7F8, "CSpotlightEnd size should be 0x7F8");
 	}
 }

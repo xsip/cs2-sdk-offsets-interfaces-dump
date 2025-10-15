@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1F8
+			// Class size: 0x208
 			namespace C_INIT_RemapParticleCountToScalar /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nInputMin = 0x1cc; // int32_t m_nInputMin; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nInputMax = 0x1d0; // int32_t m_nInputMax; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nScaleControlPoint = 0x1d4; // int32_t m_nScaleControlPoint; |  0x1d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nScaleControlPointField = 0x1d8; // int32_t m_nScaleControlPointField; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputMin = 0x1dc; // float32 m_flOutputMin; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputMax = 0x1e0; // float32 m_flOutputMax; |  0x1e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x1e4; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bActiveRange = 0x1e8; // bool m_bActiveRange; |  0x1e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bInvert = 0x1e9; // bool m_bInvert; |  0x1e9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bWrap = 0x1ea; // bool m_bWrap; |  0x1ea | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flRemapBias = 0x1ec; // float32 m_flRemapBias; |  0x1ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nInputMin = 0x1dc; // int32_t m_nInputMin; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nInputMax = 0x1e0; // int32_t m_nInputMax; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nScaleControlPoint = 0x1e4; // int32_t m_nScaleControlPoint; |  0x1e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nScaleControlPointField = 0x1e8; // int32_t m_nScaleControlPointField; |  0x1e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputMin = 0x1ec; // float32 m_flOutputMin; |  0x1ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputMax = 0x1f0; // float32 m_flOutputMax; |  0x1f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x1f4; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bActiveRange = 0x1f8; // bool m_bActiveRange; |  0x1f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bInvert = 0x1f9; // bool m_bInvert; |  0x1f9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bWrap = 0x1fa; // bool m_bWrap; |  0x1fa | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flRemapBias = 0x1fc; // float32 m_flRemapBias; |  0x1fc | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

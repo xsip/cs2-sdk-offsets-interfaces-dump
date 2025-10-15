@@ -18,49 +18,49 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderProjected : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			bool m_bProjectCharacter; // 0x210 | Schema_Builtin | Size: 0x1
-			bool m_bProjectWorld; // 0x211 | Schema_Builtin | Size: 0x1
-			bool m_bProjectWater; // 0x212 | Schema_Builtin | Size: 0x1
-			bool m_bFlipHorizontal; // 0x213 | Schema_Builtin | Size: 0x1
-			bool m_bEnableProjectedDepthControls; // 0x214 | Schema_Builtin | Size: 0x1
+			bool m_bProjectCharacter; // 0x220 | Schema_Builtin | Size: 0x1
+			bool m_bProjectWorld; // 0x221 | Schema_Builtin | Size: 0x1
+			bool m_bProjectWater; // 0x222 | Schema_Builtin | Size: 0x1
+			bool m_bFlipHorizontal; // 0x223 | Schema_Builtin | Size: 0x1
+			bool m_bEnableProjectedDepthControls; // 0x224 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMinProjectionDepth; // 0x218 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxProjectionDepth; // 0x21c | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< particles::RenderProjectedMaterial_t > m_vecProjectedMaterials; // 0x220 | Schema_Atomic | Size: 0x18
-			char  m_vecProjectedMaterials[0x18]; // 0x220 | Schema_Atomic | Size: 0x18
-			particleslib::CPerParticleFloatInput m_flMaterialSelection; // 0x238 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flAnimationTimeScale; // 0x398 | Schema_Builtin | Size: 0x4
-			bool m_bOrientToNormal; // 0x39c | Schema_Builtin | Size: 0x1
+			float32 m_flMinProjectionDepth; // 0x228 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxProjectionDepth; // 0x22c | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CUtlVector< particles::RenderProjectedMaterial_t > m_vecProjectedMaterials; // 0x230 | Schema_Atomic | Size: 0x18
+			char  m_vecProjectedMaterials[0x18]; // 0x230 | Schema_Atomic | Size: 0x18
+			particleslib::CPerParticleFloatInput m_flMaterialSelection; // 0x248 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flAnimationTimeScale; // 0x3b8 | Schema_Builtin | Size: 0x4
+			bool m_bOrientToNormal; // 0x3bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x3a0 | Schema_Atomic | Size: 0x18
-			char  m_MaterialVars[0x18]; // 0x3a0 | Schema_Atomic | Size: 0x18
-			particleslib::CParticleCollectionFloatInput m_flRadiusScale; // 0x3b8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flAlphaScale; // 0x518 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flRollScale; // 0x678 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x7d8 | Schema_DeclaredClass | Size: 0x4
+			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x3c0 | Schema_Atomic | Size: 0x18
+			char  m_MaterialVars[0x18]; // 0x3c0 | Schema_Atomic | Size: 0x18
+			particleslib::CParticleCollectionFloatInput m_flRadiusScale; // 0x3d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flAlphaScale; // 0x548 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flRollScale; // 0x6b8 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleAttributeIndex_t m_nAlpha2Field; // 0x828 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x7e0 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xe58 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x830 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xee8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectCharacter) == 0x210, "m_bProjectCharacter in C_OP_RenderProjected should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectWorld) == 0x211, "m_bProjectWorld in C_OP_RenderProjected should be at offset 0x211");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectWater) == 0x212, "m_bProjectWater in C_OP_RenderProjected should be at offset 0x212");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bFlipHorizontal) == 0x213, "m_bFlipHorizontal in C_OP_RenderProjected should be at offset 0x213");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bEnableProjectedDepthControls) == 0x214, "m_bEnableProjectedDepthControls in C_OP_RenderProjected should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flMinProjectionDepth) == 0x218, "m_flMinProjectionDepth in C_OP_RenderProjected should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flMaxProjectionDepth) == 0x21C, "m_flMaxProjectionDepth in C_OP_RenderProjected should be at offset 0x21C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_vecProjectedMaterials) == 0x220, "m_vecProjectedMaterials in C_OP_RenderProjected should be at offset 0x220");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flMaterialSelection) == 0x238, "m_flMaterialSelection in C_OP_RenderProjected should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flAnimationTimeScale) == 0x398, "m_flAnimationTimeScale in C_OP_RenderProjected should be at offset 0x398");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bOrientToNormal) == 0x39C, "m_bOrientToNormal in C_OP_RenderProjected should be at offset 0x39C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_MaterialVars) == 0x3A0, "m_MaterialVars in C_OP_RenderProjected should be at offset 0x3A0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flRadiusScale) == 0x3B8, "m_flRadiusScale in C_OP_RenderProjected should be at offset 0x3B8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flAlphaScale) == 0x518, "m_flAlphaScale in C_OP_RenderProjected should be at offset 0x518");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flRollScale) == 0x678, "m_flRollScale in C_OP_RenderProjected should be at offset 0x678");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_nAlpha2Field) == 0x7D8, "m_nAlpha2Field in C_OP_RenderProjected should be at offset 0x7D8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_vecColorScale) == 0x7E0, "m_vecColorScale in C_OP_RenderProjected should be at offset 0x7E0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_nColorBlendType) == 0xE58, "m_nColorBlendType in C_OP_RenderProjected should be at offset 0xE58");
-		static_assert(sizeof(CS2::particles::C_OP_RenderProjected) == 0xE78, "C_OP_RenderProjected size should be 0xE78");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectCharacter) == 0x220, "m_bProjectCharacter in C_OP_RenderProjected should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectWorld) == 0x221, "m_bProjectWorld in C_OP_RenderProjected should be at offset 0x221");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectWater) == 0x222, "m_bProjectWater in C_OP_RenderProjected should be at offset 0x222");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bFlipHorizontal) == 0x223, "m_bFlipHorizontal in C_OP_RenderProjected should be at offset 0x223");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bEnableProjectedDepthControls) == 0x224, "m_bEnableProjectedDepthControls in C_OP_RenderProjected should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flMinProjectionDepth) == 0x228, "m_flMinProjectionDepth in C_OP_RenderProjected should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flMaxProjectionDepth) == 0x22C, "m_flMaxProjectionDepth in C_OP_RenderProjected should be at offset 0x22C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_vecProjectedMaterials) == 0x230, "m_vecProjectedMaterials in C_OP_RenderProjected should be at offset 0x230");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flMaterialSelection) == 0x248, "m_flMaterialSelection in C_OP_RenderProjected should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flAnimationTimeScale) == 0x3B8, "m_flAnimationTimeScale in C_OP_RenderProjected should be at offset 0x3B8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bOrientToNormal) == 0x3BC, "m_bOrientToNormal in C_OP_RenderProjected should be at offset 0x3BC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_MaterialVars) == 0x3C0, "m_MaterialVars in C_OP_RenderProjected should be at offset 0x3C0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flRadiusScale) == 0x3D8, "m_flRadiusScale in C_OP_RenderProjected should be at offset 0x3D8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flAlphaScale) == 0x548, "m_flAlphaScale in C_OP_RenderProjected should be at offset 0x548");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_flRollScale) == 0x6B8, "m_flRollScale in C_OP_RenderProjected should be at offset 0x6B8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_nAlpha2Field) == 0x828, "m_nAlpha2Field in C_OP_RenderProjected should be at offset 0x828");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_vecColorScale) == 0x830, "m_vecColorScale in C_OP_RenderProjected should be at offset 0x830");
+		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_nColorBlendType) == 0xEE8, "m_nColorBlendType in C_OP_RenderProjected should be at offset 0xEE8");
+		static_assert(sizeof(CS2::particles::C_OP_RenderProjected) == 0xF08, "C_OP_RenderProjected size should be 0xF08");
 	}
 }

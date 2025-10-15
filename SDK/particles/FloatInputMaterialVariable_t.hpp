@@ -14,10 +14,10 @@ namespace CS2 {
 		class FloatInputMaterialVariable_t  {
 		public:
 			GlobalTypes::CUtlString m_strVariable; // 0x0 | Schema_Atomic | Size: 0x8
-			particleslib::CParticleCollectionFloatInput m_flInput; // 0x8 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleCollectionFloatInput m_flInput; // 0x8 | Schema_DeclaredClass | Size: 0x170
 		};
 		static_assert(offsetof(CS2::particles::FloatInputMaterialVariable_t, m_strVariable) == 0x0, "m_strVariable in FloatInputMaterialVariable_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::FloatInputMaterialVariable_t, m_flInput) == 0x8, "m_flInput in FloatInputMaterialVariable_t should be at offset 0x8");
-		static_assert(sizeof(CS2::particles::FloatInputMaterialVariable_t) == 0x168, "FloatInputMaterialVariable_t size should be 0x168");
+		static_assert(sizeof(CS2::particles::FloatInputMaterialVariable_t) == 0x178, "FloatInputMaterialVariable_t size should be 0x178");
 	}
 }

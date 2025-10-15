@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionOffsetToCP : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumberStart; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nControlPointNumberEnd; // 0x1cc | Schema_Builtin | Size: 0x4
-			bool m_bLocalCoords; // 0x1d0 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumberStart; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumberEnd; // 0x1dc | Schema_Builtin | Size: 0x4
+			bool m_bLocalCoords; // 0x1e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffsetToCP, m_nControlPointNumberStart) == 0x1C8, "m_nControlPointNumberStart in C_INIT_PositionOffsetToCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffsetToCP, m_nControlPointNumberEnd) == 0x1CC, "m_nControlPointNumberEnd in C_INIT_PositionOffsetToCP should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionOffsetToCP, m_bLocalCoords) == 0x1D0, "m_bLocalCoords in C_INIT_PositionOffsetToCP should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_INIT_PositionOffsetToCP) == 0x1D8, "C_INIT_PositionOffsetToCP size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffsetToCP, m_nControlPointNumberStart) == 0x1D8, "m_nControlPointNumberStart in C_INIT_PositionOffsetToCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffsetToCP, m_nControlPointNumberEnd) == 0x1DC, "m_nControlPointNumberEnd in C_INIT_PositionOffsetToCP should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionOffsetToCP, m_bLocalCoords) == 0x1E0, "m_bLocalCoords in C_INIT_PositionOffsetToCP should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_INIT_PositionOffsetToCP) == 0x1E8, "C_INIT_PositionOffsetToCP size should be 0x1E8");
 	}
 }

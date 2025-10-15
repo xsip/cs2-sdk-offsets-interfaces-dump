@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xED8
+			// Class size: 0xEC0
 			namespace C_SpotlightEnd /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_flLightScale = 0xec8; // float32 m_flLightScale; |  0xec8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Radius = 0xecc; // float32 m_Radius; |  0xecc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLightScale = 0xeb0; // float32 m_flLightScale; |  0xeb0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Radius = 0xeb4; // float32 m_Radius; |  0xeb4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

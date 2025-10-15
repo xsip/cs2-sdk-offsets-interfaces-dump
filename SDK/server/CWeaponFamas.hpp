@@ -14,6 +14,6 @@ namespace CS2 {
 		class CWeaponFamas : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CWeaponFamas) == 0x11C8, "CWeaponFamas size should be 0x11C8");
+		static_assert(sizeof(CS2::server::CWeaponFamas) == 0x11F0, "CWeaponFamas size should be 0x11F0");
 	}
 }

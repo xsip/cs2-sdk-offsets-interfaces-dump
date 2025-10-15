@@ -15,20 +15,20 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_AddVectorToVector : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			GlobalTypes::Vector m_vecScale; // 0x1c8 | Schema_Atomic | Size: 0xc
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d4 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vOffsetMin; // 0x1dc | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOffsetMax; // 0x1e8 | Schema_Atomic | Size: 0xc
-			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1f4 | Schema_DeclaredClass | Size: 0x8
+			GlobalTypes::Vector m_vecScale; // 0x1d8 | Schema_Atomic | Size: 0xc
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1e4 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x1e8 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vOffsetMin; // 0x1ec | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOffsetMax; // 0x1f8 | Schema_Atomic | Size: 0xc
+			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x204 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_vecScale) == 0x1C8, "m_vecScale in C_INIT_AddVectorToVector should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_INIT_AddVectorToVector should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_nFieldInput) == 0x1D8, "m_nFieldInput in C_INIT_AddVectorToVector should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_vOffsetMin) == 0x1DC, "m_vOffsetMin in C_INIT_AddVectorToVector should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_vOffsetMax) == 0x1E8, "m_vOffsetMax in C_INIT_AddVectorToVector should be at offset 0x1E8");
-		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_randomnessParameters) == 0x1F4, "m_randomnessParameters in C_INIT_AddVectorToVector should be at offset 0x1F4");
-		static_assert(sizeof(CS2::particles::C_INIT_AddVectorToVector) == 0x200, "C_INIT_AddVectorToVector size should be 0x200");
+		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_vecScale) == 0x1D8, "m_vecScale in C_INIT_AddVectorToVector should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_nFieldOutput) == 0x1E4, "m_nFieldOutput in C_INIT_AddVectorToVector should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_nFieldInput) == 0x1E8, "m_nFieldInput in C_INIT_AddVectorToVector should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_vOffsetMin) == 0x1EC, "m_vOffsetMin in C_INIT_AddVectorToVector should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_vOffsetMax) == 0x1F8, "m_vOffsetMax in C_INIT_AddVectorToVector should be at offset 0x1F8");
+		static_assert(offsetof(CS2::particles::C_INIT_AddVectorToVector, m_randomnessParameters) == 0x204, "m_randomnessParameters in C_INIT_AddVectorToVector should be at offset 0x204");
+		static_assert(sizeof(CS2::particles::C_INIT_AddVectorToVector) == 0x210, "C_INIT_AddVectorToVector size should be 0x210");
 	}
 }

@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_SetControlPointPositionToTimeOfDayValue : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			char m_pszTimeOfDayParameter[128]; // 0x1cc | Schema_FixedArray | Size: 0x80
-			GlobalTypes::Vector m_vecDefaultValue; // 0x24c | Schema_Atomic | Size: 0xc
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			char m_pszTimeOfDayParameter[128]; // 0x1dc | Schema_FixedArray | Size: 0x80
+			GlobalTypes::Vector m_vecDefaultValue; // 0x25c | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_pszTimeOfDayParameter) == 0x1CC, "m_pszTimeOfDayParameter in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_vecDefaultValue) == 0x24C, "m_vecDefaultValue in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x24C");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue) == 0x260, "C_OP_SetControlPointPositionToTimeOfDayValue size should be 0x260");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_pszTimeOfDayParameter) == 0x1DC, "m_pszTimeOfDayParameter in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_vecDefaultValue) == 0x25C, "m_vecDefaultValue in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x25C");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue) == 0x270, "C_OP_SetControlPointPositionToTimeOfDayValue size should be 0x270");
 	}
 }

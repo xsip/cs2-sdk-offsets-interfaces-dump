@@ -8,33 +8,33 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xD88
+			// Class size: 0xD90
 			namespace CBasePlayerPawn /*: public CS2::server::CBaseCombatCharacter*/ {
-				constexpr std::ptrdiff_t m_pWeaponServices = 0xbd8; // server::CPlayer_WeaponServices* m_pWeaponServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pItemServices = 0xbe0; // server::CPlayer_ItemServices* m_pItemServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pAutoaimServices = 0xbe8; // server::CPlayer_AutoaimServices* m_pAutoaimServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pObserverServices = 0xbf0; // server::CPlayer_ObserverServices* m_pObserverServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pWaterServices = 0xbf8; // server::CPlayer_WaterServices* m_pWaterServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pUseServices = 0xc00; // server::CPlayer_UseServices* m_pUseServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pFlashlightServices = 0xc08; // server::CPlayer_FlashlightServices* m_pFlashlightServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pCameraServices = 0xc10; // server::CPlayer_CameraServices* m_pCameraServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pMovementServices = 0xc18; // server::CPlayer_MovementServices* m_pMovementServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_ServerViewAngleChanges = 0xc28; // server::CUtlVectorEmbeddedNetworkVar< server::ViewAngleServerChange_t > m_ServerViewAngleChanges; |  Schema_Atomic | Size: 0x68
-				constexpr std::ptrdiff_t v_angle = 0xc90; // GlobalTypes::QAngle v_angle; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t v_anglePrevious = 0xc9c; // GlobalTypes::QAngle v_anglePrevious; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_iHideHUD = 0xca8; // uint32_t m_iHideHUD; |  0xca8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_skybox3d = 0xcb0; // server::sky3dparams_t m_skybox3d; |  Schema_DeclaredClass | Size: 0x90
-				constexpr std::ptrdiff_t m_fTimeLastHurt = 0xd40; // entity2::GameTime_t m_fTimeLastHurt; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flDeathTime = 0xd44; // entity2::GameTime_t m_flDeathTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_fNextSuicideTime = 0xd48; // entity2::GameTime_t m_fNextSuicideTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_fInitHUD = 0xd4c; // bool m_fInitHUD; |  0xd4c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pExpresser = 0xd50; // server::CAI_Expresser* m_pExpresser; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_hController = 0xd58; // server::CHandle< server::CBasePlayerController > m_hController; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hDefaultController = 0xd5c; // server::CHandle< server::CBasePlayerController > m_hDefaultController; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_fHltvReplayDelay = 0xd64; // float32 m_fHltvReplayDelay; |  0xd64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fHltvReplayEnd = 0xd68; // float32 m_fHltvReplayEnd; |  0xd68 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iHltvReplayEntity = 0xd6c; // GlobalTypes::CEntityIndex m_iHltvReplayEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_sndOpvarLatchData = 0xd70; // GlobalTypes::CUtlVector< client::sndopvarlatchdata_t > m_sndOpvarLatchData; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pWeaponServices = 0xbe0; // server::CPlayer_WeaponServices* m_pWeaponServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pItemServices = 0xbe8; // server::CPlayer_ItemServices* m_pItemServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pAutoaimServices = 0xbf0; // server::CPlayer_AutoaimServices* m_pAutoaimServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pObserverServices = 0xbf8; // server::CPlayer_ObserverServices* m_pObserverServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pWaterServices = 0xc00; // server::CPlayer_WaterServices* m_pWaterServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pUseServices = 0xc08; // server::CPlayer_UseServices* m_pUseServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pFlashlightServices = 0xc10; // server::CPlayer_FlashlightServices* m_pFlashlightServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pCameraServices = 0xc18; // server::CPlayer_CameraServices* m_pCameraServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pMovementServices = 0xc20; // server::CPlayer_MovementServices* m_pMovementServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_ServerViewAngleChanges = 0xc30; // server::CUtlVectorEmbeddedNetworkVar< server::ViewAngleServerChange_t > m_ServerViewAngleChanges; |  Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t v_angle = 0xc98; // GlobalTypes::QAngle v_angle; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t v_anglePrevious = 0xca4; // GlobalTypes::QAngle v_anglePrevious; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_iHideHUD = 0xcb0; // uint32_t m_iHideHUD; |  0xcb0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_skybox3d = 0xcb8; // server::sky3dparams_t m_skybox3d; |  Schema_DeclaredClass | Size: 0x90
+				constexpr std::ptrdiff_t m_fTimeLastHurt = 0xd48; // entity2::GameTime_t m_fTimeLastHurt; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDeathTime = 0xd4c; // entity2::GameTime_t m_flDeathTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fNextSuicideTime = 0xd50; // entity2::GameTime_t m_fNextSuicideTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fInitHUD = 0xd54; // bool m_fInitHUD; |  0xd54 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_pExpresser = 0xd58; // server::CAI_Expresser* m_pExpresser; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_hController = 0xd60; // server::CHandle< server::CBasePlayerController > m_hController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hDefaultController = 0xd64; // server::CHandle< server::CBasePlayerController > m_hDefaultController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_fHltvReplayDelay = 0xd6c; // float32 m_fHltvReplayDelay; |  0xd6c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fHltvReplayEnd = 0xd70; // float32 m_fHltvReplayEnd; |  0xd70 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iHltvReplayEntity = 0xd74; // GlobalTypes::CEntityIndex m_iHltvReplayEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_sndOpvarLatchData = 0xd78; // GlobalTypes::CUtlVector< client::sndopvarlatchdata_t > m_sndOpvarLatchData; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x8A0
+			// Class size: 0x888
 			namespace CGunTarget /*: public CS2::server::CBaseToggle*/ {
-				constexpr std::ptrdiff_t m_on = 0x870; // bool m_on; |  0x870 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hTargetEnt = 0x874; // server::CHandle< server::CBaseEntity > m_hTargetEnt; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OnDeath = 0x878; // entity2::CEntityIOOutput m_OnDeath; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_on = 0x858; // bool m_on; |  0x858 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hTargetEnt = 0x85c; // server::CHandle< server::CBaseEntity > m_hTargetEnt; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OnDeath = 0x860; // entity2::CEntityIOOutput m_OnDeath; |  Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

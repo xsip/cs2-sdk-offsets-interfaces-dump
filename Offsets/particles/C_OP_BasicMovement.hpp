@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xDC8
+			// Class size: 0xE58
 			namespace C_OP_BasicMovement /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_Gravity = 0x1c0; // particleslib::CParticleCollectionVecInput m_Gravity; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_fDrag = 0x838; // particleslib::CParticleCollectionFloatInput m_fDrag; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_massControls = 0x998; // particles::CParticleMassCalculationParameters m_massControls; |  Schema_DeclaredClass | Size: 0x428
-				constexpr std::ptrdiff_t m_nMaxConstraintPasses = 0xdc0; // int32_t m_nMaxConstraintPasses; |  0xdc0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseNewCode = 0xdc4; // bool m_bUseNewCode; |  0xdc4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Gravity = 0x1d0; // particleslib::CParticleCollectionVecInput m_Gravity; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_fDrag = 0x888; // particleslib::CParticleCollectionFloatInput m_fDrag; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_massControls = 0x9f8; // particles::CParticleMassCalculationParameters m_massControls; |  Schema_DeclaredClass | Size: 0x458
+				constexpr std::ptrdiff_t m_nMaxConstraintPasses = 0xe50; // int32_t m_nMaxConstraintPasses; |  0xe50 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseNewCode = 0xe54; // bool m_bUseNewCode; |  0xe54 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

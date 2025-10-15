@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1E8
+			// Class size: 0x1F8
 			namespace C_OP_ParentVortices /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_flForceScale = 0x1d0; // float32 m_flForceScale; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecTwistAxis = 0x1d4; // GlobalTypes::Vector m_vecTwistAxis; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bFlipBasedOnYaw = 0x1e0; // bool m_bFlipBasedOnYaw; |  0x1e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flForceScale = 0x1e0; // float32 m_flForceScale; |  0x1e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecTwistAxis = 0x1e4; // GlobalTypes::Vector m_vecTwistAxis; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bFlipBasedOnYaw = 0x1f0; // bool m_bFlipBasedOnYaw; |  0x1f0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

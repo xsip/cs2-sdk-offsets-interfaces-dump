@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x830
+			// Class size: 0x818
 			namespace CFuncMonitor /*: public CS2::server::CFuncBrush*/ {
-				constexpr std::ptrdiff_t m_targetCamera = 0x810; // GlobalTypes::CUtlString m_targetCamera; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nResolutionEnum = 0x818; // int32_t m_nResolutionEnum; |  0x818 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bRenderShadows = 0x81c; // bool m_bRenderShadows; |  0x81c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseUniqueColorTarget = 0x81d; // bool m_bUseUniqueColorTarget; |  0x81d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_brushModelName = 0x820; // GlobalTypes::CUtlString m_brushModelName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hTargetCamera = 0x828; // server::CHandle< server::CBaseEntity > m_hTargetCamera; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnabled = 0x82c; // bool m_bEnabled; |  0x82c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDraw3DSkybox = 0x82d; // bool m_bDraw3DSkybox; |  0x82d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bStartEnabled = 0x82e; // bool m_bStartEnabled; |  0x82e | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_targetCamera = 0x7f8; // GlobalTypes::CUtlString m_targetCamera; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nResolutionEnum = 0x800; // int32_t m_nResolutionEnum; |  0x800 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bRenderShadows = 0x804; // bool m_bRenderShadows; |  0x804 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseUniqueColorTarget = 0x805; // bool m_bUseUniqueColorTarget; |  0x805 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_brushModelName = 0x808; // GlobalTypes::CUtlString m_brushModelName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTargetCamera = 0x810; // server::CHandle< server::CBaseEntity > m_hTargetCamera; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnabled = 0x814; // bool m_bEnabled; |  0x814 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDraw3DSkybox = 0x815; // bool m_bDraw3DSkybox; |  0x815 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bStartEnabled = 0x816; // bool m_bStartEnabled; |  0x816 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

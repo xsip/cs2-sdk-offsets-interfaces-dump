@@ -17,42 +17,42 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionPlaceOnGround : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleFloatInput m_flOffset; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flMaxTraceLength; // 0x328 | Schema_DeclaredClass | Size: 0x160
-			char m_CollisionGroupName[128]; // 0x488 | Schema_FixedArray | Size: 0x80
-			particles::ParticleTraceSet_t m_nTraceSet; // 0x508 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flOffset; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flMaxTraceLength; // 0x348 | Schema_DeclaredClass | Size: 0x170
+			char m_CollisionGroupName[128]; // 0x4b8 | Schema_FixedArray | Size: 0x80
+			particles::ParticleTraceSet_t m_nTraceSet; // 0x538 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xc);
-			particles::ParticleTraceMissBehavior_t m_nTraceMissBehavior; // 0x518 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bIncludeWater; // 0x51c | Schema_Builtin | Size: 0x1
-			bool m_bSetNormal; // 0x51d | Schema_Builtin | Size: 0x1
+			particles::ParticleTraceMissBehavior_t m_nTraceMissBehavior; // 0x548 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bIncludeWater; // 0x54c | Schema_Builtin | Size: 0x1
+			bool m_bSetNormal; // 0x54d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nAttribute; // 0x520 | Schema_DeclaredClass | Size: 0x4
-			bool m_bSetPXYZOnly; // 0x524 | Schema_Builtin | Size: 0x1
-			bool m_bTraceAlongNormal; // 0x525 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nAttribute; // 0x550 | Schema_DeclaredClass | Size: 0x4
+			bool m_bSetPXYZOnly; // 0x554 | Schema_Builtin | Size: 0x1
+			bool m_bTraceAlongNormal; // 0x555 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nTraceDirectionAttribute; // 0x528 | Schema_DeclaredClass | Size: 0x4
-			bool m_bOffsetonColOnly; // 0x52c | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nTraceDirectionAttribute; // 0x558 | Schema_DeclaredClass | Size: 0x4
+			bool m_bOffsetonColOnly; // 0x55c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flOffsetByRadiusFactor; // 0x530 | Schema_Builtin | Size: 0x4
-			int32_t m_nPreserveOffsetCP; // 0x534 | Schema_Builtin | Size: 0x4
-			int32_t m_nIgnoreCP; // 0x538 | Schema_Builtin | Size: 0x4
+			float32 m_flOffsetByRadiusFactor; // 0x560 | Schema_Builtin | Size: 0x4
+			int32_t m_nPreserveOffsetCP; // 0x564 | Schema_Builtin | Size: 0x4
+			int32_t m_nIgnoreCP; // 0x568 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flOffset) == 0x1C8, "m_flOffset in C_INIT_PositionPlaceOnGround should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flMaxTraceLength) == 0x328, "m_flMaxTraceLength in C_INIT_PositionPlaceOnGround should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_CollisionGroupName) == 0x488, "m_CollisionGroupName in C_INIT_PositionPlaceOnGround should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nTraceSet) == 0x508, "m_nTraceSet in C_INIT_PositionPlaceOnGround should be at offset 0x508");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nTraceMissBehavior) == 0x518, "m_nTraceMissBehavior in C_INIT_PositionPlaceOnGround should be at offset 0x518");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bIncludeWater) == 0x51C, "m_bIncludeWater in C_INIT_PositionPlaceOnGround should be at offset 0x51C");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bSetNormal) == 0x51D, "m_bSetNormal in C_INIT_PositionPlaceOnGround should be at offset 0x51D");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nAttribute) == 0x520, "m_nAttribute in C_INIT_PositionPlaceOnGround should be at offset 0x520");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bSetPXYZOnly) == 0x524, "m_bSetPXYZOnly in C_INIT_PositionPlaceOnGround should be at offset 0x524");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bTraceAlongNormal) == 0x525, "m_bTraceAlongNormal in C_INIT_PositionPlaceOnGround should be at offset 0x525");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nTraceDirectionAttribute) == 0x528, "m_nTraceDirectionAttribute in C_INIT_PositionPlaceOnGround should be at offset 0x528");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bOffsetonColOnly) == 0x52C, "m_bOffsetonColOnly in C_INIT_PositionPlaceOnGround should be at offset 0x52C");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flOffsetByRadiusFactor) == 0x530, "m_flOffsetByRadiusFactor in C_INIT_PositionPlaceOnGround should be at offset 0x530");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nPreserveOffsetCP) == 0x534, "m_nPreserveOffsetCP in C_INIT_PositionPlaceOnGround should be at offset 0x534");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nIgnoreCP) == 0x538, "m_nIgnoreCP in C_INIT_PositionPlaceOnGround should be at offset 0x538");
-		static_assert(sizeof(CS2::particles::C_INIT_PositionPlaceOnGround) == 0x540, "C_INIT_PositionPlaceOnGround size should be 0x540");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flOffset) == 0x1D8, "m_flOffset in C_INIT_PositionPlaceOnGround should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flMaxTraceLength) == 0x348, "m_flMaxTraceLength in C_INIT_PositionPlaceOnGround should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_CollisionGroupName) == 0x4B8, "m_CollisionGroupName in C_INIT_PositionPlaceOnGround should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nTraceSet) == 0x538, "m_nTraceSet in C_INIT_PositionPlaceOnGround should be at offset 0x538");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nTraceMissBehavior) == 0x548, "m_nTraceMissBehavior in C_INIT_PositionPlaceOnGround should be at offset 0x548");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bIncludeWater) == 0x54C, "m_bIncludeWater in C_INIT_PositionPlaceOnGround should be at offset 0x54C");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bSetNormal) == 0x54D, "m_bSetNormal in C_INIT_PositionPlaceOnGround should be at offset 0x54D");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nAttribute) == 0x550, "m_nAttribute in C_INIT_PositionPlaceOnGround should be at offset 0x550");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bSetPXYZOnly) == 0x554, "m_bSetPXYZOnly in C_INIT_PositionPlaceOnGround should be at offset 0x554");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bTraceAlongNormal) == 0x555, "m_bTraceAlongNormal in C_INIT_PositionPlaceOnGround should be at offset 0x555");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nTraceDirectionAttribute) == 0x558, "m_nTraceDirectionAttribute in C_INIT_PositionPlaceOnGround should be at offset 0x558");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_bOffsetonColOnly) == 0x55C, "m_bOffsetonColOnly in C_INIT_PositionPlaceOnGround should be at offset 0x55C");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flOffsetByRadiusFactor) == 0x560, "m_flOffsetByRadiusFactor in C_INIT_PositionPlaceOnGround should be at offset 0x560");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nPreserveOffsetCP) == 0x564, "m_nPreserveOffsetCP in C_INIT_PositionPlaceOnGround should be at offset 0x564");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nIgnoreCP) == 0x568, "m_nIgnoreCP in C_INIT_PositionPlaceOnGround should be at offset 0x568");
+		static_assert(sizeof(CS2::particles::C_INIT_PositionPlaceOnGround) == 0x570, "C_INIT_PositionPlaceOnGround size should be 0x570");
 	}
 }

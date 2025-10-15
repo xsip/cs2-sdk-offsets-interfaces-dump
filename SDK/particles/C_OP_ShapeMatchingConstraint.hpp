@@ -13,10 +13,10 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ShapeMatchingConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			float32 m_flShapeRestorationTime; // 0x1c0 | Schema_Builtin | Size: 0x4
+			float32 m_flShapeRestorationTime; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ShapeMatchingConstraint, m_flShapeRestorationTime) == 0x1C0, "m_flShapeRestorationTime in C_OP_ShapeMatchingConstraint should be at offset 0x1C0");
-		static_assert(sizeof(CS2::particles::C_OP_ShapeMatchingConstraint) == 0x1C8, "C_OP_ShapeMatchingConstraint size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::C_OP_ShapeMatchingConstraint, m_flShapeRestorationTime) == 0x1D0, "m_flShapeRestorationTime in C_OP_ShapeMatchingConstraint should be at offset 0x1D0");
+		static_assert(sizeof(CS2::particles::C_OP_ShapeMatchingConstraint) == 0x1D8, "C_OP_ShapeMatchingConstraint size should be 0x1D8");
 	}
 }

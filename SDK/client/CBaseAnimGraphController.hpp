@@ -47,8 +47,10 @@ namespace CS2 {
 			int32_t m_nSerializePoseRecipeSizeAG2; // 0x1888 | Schema_Builtin | Size: 0x4
 			int32_t m_nSerializePoseRecipeVersionAG2; // 0x188c | Schema_Builtin | Size: 0x4
 			uint8_t m_nGraphCreationFlagsAG2; // 0x1890 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x43);
-			int32_t m_nServerGraphDefReloadCountAG2; // 0x18d4 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x1eb);
+			int32_t m_nServerGraphDefReloadCountAG2; // 0x1a7c | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4);
+			int32_t m_nServerSerializationContextIteration; // 0x1a84 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_animGraphNetworkedVars) == 0x18, "m_animGraphNetworkedVars in CBaseAnimGraphController should be at offset 0x18");
@@ -71,7 +73,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nSerializePoseRecipeSizeAG2) == 0x1888, "m_nSerializePoseRecipeSizeAG2 in CBaseAnimGraphController should be at offset 0x1888");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nSerializePoseRecipeVersionAG2) == 0x188C, "m_nSerializePoseRecipeVersionAG2 in CBaseAnimGraphController should be at offset 0x188C");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nGraphCreationFlagsAG2) == 0x1890, "m_nGraphCreationFlagsAG2 in CBaseAnimGraphController should be at offset 0x1890");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nServerGraphDefReloadCountAG2) == 0x18D4, "m_nServerGraphDefReloadCountAG2 in CBaseAnimGraphController should be at offset 0x18D4");
-		static_assert(sizeof(CS2::client::CBaseAnimGraphController) == 0x18E0, "CBaseAnimGraphController size should be 0x18E0");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nServerGraphDefReloadCountAG2) == 0x1A7C, "m_nServerGraphDefReloadCountAG2 in CBaseAnimGraphController should be at offset 0x1A7C");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nServerSerializationContextIteration) == 0x1A84, "m_nServerSerializationContextIteration in CBaseAnimGraphController should be at offset 0x1A84");
+		static_assert(sizeof(CS2::client::CBaseAnimGraphController) == 0x1A90, "CBaseAnimGraphController size should be 0x1A90");
 	}
 }

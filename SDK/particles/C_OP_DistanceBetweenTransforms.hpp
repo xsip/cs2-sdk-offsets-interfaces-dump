@@ -18,36 +18,36 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DistanceBetweenTransforms : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleTransformInput m_TransformStart; // 0x1c8 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CParticleTransformInput m_TransformEnd; // 0x230 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CPerParticleFloatInput m_flInputMin; // 0x298 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flInputMax; // 0x3f8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x558 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x6b8 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flMaxTraceLength; // 0x818 | Schema_Builtin | Size: 0x4
-			float32 m_flLOSScale; // 0x81c | Schema_Builtin | Size: 0x4
-			char m_CollisionGroupName[128]; // 0x820 | Schema_FixedArray | Size: 0x80
-			particles::ParticleTraceSet_t m_nTraceSet; // 0x8a0 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bLOS; // 0x8a4 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleTransformInput m_TransformStart; // 0x1d8 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CParticleTransformInput m_TransformEnd; // 0x240 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CPerParticleFloatInput m_flInputMin; // 0x2a8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flInputMax; // 0x418 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x588 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x6f8 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flMaxTraceLength; // 0x868 | Schema_Builtin | Size: 0x4
+			float32 m_flLOSScale; // 0x86c | Schema_Builtin | Size: 0x4
+			char m_CollisionGroupName[128]; // 0x870 | Schema_FixedArray | Size: 0x80
+			particles::ParticleTraceSet_t m_nTraceSet; // 0x8f0 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bLOS; // 0x8f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x8a8 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x8f8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_DistanceBetweenTransforms should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_TransformStart) == 0x1C8, "m_TransformStart in C_OP_DistanceBetweenTransforms should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_TransformEnd) == 0x230, "m_TransformEnd in C_OP_DistanceBetweenTransforms should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flInputMin) == 0x298, "m_flInputMin in C_OP_DistanceBetweenTransforms should be at offset 0x298");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flInputMax) == 0x3F8, "m_flInputMax in C_OP_DistanceBetweenTransforms should be at offset 0x3F8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flOutputMin) == 0x558, "m_flOutputMin in C_OP_DistanceBetweenTransforms should be at offset 0x558");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flOutputMax) == 0x6B8, "m_flOutputMax in C_OP_DistanceBetweenTransforms should be at offset 0x6B8");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flMaxTraceLength) == 0x818, "m_flMaxTraceLength in C_OP_DistanceBetweenTransforms should be at offset 0x818");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flLOSScale) == 0x81C, "m_flLOSScale in C_OP_DistanceBetweenTransforms should be at offset 0x81C");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_CollisionGroupName) == 0x820, "m_CollisionGroupName in C_OP_DistanceBetweenTransforms should be at offset 0x820");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nTraceSet) == 0x8A0, "m_nTraceSet in C_OP_DistanceBetweenTransforms should be at offset 0x8A0");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_bLOS) == 0x8A4, "m_bLOS in C_OP_DistanceBetweenTransforms should be at offset 0x8A4");
-		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nSetMethod) == 0x8A8, "m_nSetMethod in C_OP_DistanceBetweenTransforms should be at offset 0x8A8");
-		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenTransforms) == 0x8B0, "C_OP_DistanceBetweenTransforms size should be 0x8B0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_DistanceBetweenTransforms should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_TransformStart) == 0x1D8, "m_TransformStart in C_OP_DistanceBetweenTransforms should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_TransformEnd) == 0x240, "m_TransformEnd in C_OP_DistanceBetweenTransforms should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flInputMin) == 0x2A8, "m_flInputMin in C_OP_DistanceBetweenTransforms should be at offset 0x2A8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flInputMax) == 0x418, "m_flInputMax in C_OP_DistanceBetweenTransforms should be at offset 0x418");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flOutputMin) == 0x588, "m_flOutputMin in C_OP_DistanceBetweenTransforms should be at offset 0x588");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flOutputMax) == 0x6F8, "m_flOutputMax in C_OP_DistanceBetweenTransforms should be at offset 0x6F8");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flMaxTraceLength) == 0x868, "m_flMaxTraceLength in C_OP_DistanceBetweenTransforms should be at offset 0x868");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_flLOSScale) == 0x86C, "m_flLOSScale in C_OP_DistanceBetweenTransforms should be at offset 0x86C");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_CollisionGroupName) == 0x870, "m_CollisionGroupName in C_OP_DistanceBetweenTransforms should be at offset 0x870");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nTraceSet) == 0x8F0, "m_nTraceSet in C_OP_DistanceBetweenTransforms should be at offset 0x8F0");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_bLOS) == 0x8F4, "m_bLOS in C_OP_DistanceBetweenTransforms should be at offset 0x8F4");
+		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nSetMethod) == 0x8F8, "m_nSetMethod in C_OP_DistanceBetweenTransforms should be at offset 0x8F8");
+		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenTransforms) == 0x900, "C_OP_DistanceBetweenTransforms size should be 0x900");
 	}
 }

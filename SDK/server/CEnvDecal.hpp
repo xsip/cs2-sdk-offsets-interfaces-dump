@@ -13,27 +13,27 @@ namespace CS2 {
 	namespace server {
 		class CEnvDecal : public CS2::server::CBaseModelEntity {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0x7f0 | Schema_Atomic | Size: 0x8
-			char  m_hDecalMaterial[0x8]; // 0x7f0 | Schema_Atomic | Size: 0x8
-			float32 m_flWidth; // 0x7f8 | Schema_Builtin | Size: 0x4
-			float32 m_flHeight; // 0x7fc | Schema_Builtin | Size: 0x4
-			float32 m_flDepth; // 0x800 | Schema_Builtin | Size: 0x4
-			uint32_t m_nRenderOrder; // 0x804 | Schema_Builtin | Size: 0x4
-			bool m_bProjectOnWorld; // 0x808 | Schema_Builtin | Size: 0x1
-			bool m_bProjectOnCharacters; // 0x809 | Schema_Builtin | Size: 0x1
-			bool m_bProjectOnWater; // 0x80a | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0x7d8 | Schema_Atomic | Size: 0x8
+			char  m_hDecalMaterial[0x8]; // 0x7d8 | Schema_Atomic | Size: 0x8
+			float32 m_flWidth; // 0x7e0 | Schema_Builtin | Size: 0x4
+			float32 m_flHeight; // 0x7e4 | Schema_Builtin | Size: 0x4
+			float32 m_flDepth; // 0x7e8 | Schema_Builtin | Size: 0x4
+			uint32_t m_nRenderOrder; // 0x7ec | Schema_Builtin | Size: 0x4
+			bool m_bProjectOnWorld; // 0x7f0 | Schema_Builtin | Size: 0x1
+			bool m_bProjectOnCharacters; // 0x7f1 | Schema_Builtin | Size: 0x1
+			bool m_bProjectOnWater; // 0x7f2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flDepthSortBias; // 0x80c | Schema_Builtin | Size: 0x4
+			float32 m_flDepthSortBias; // 0x7f4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CEnvDecal, m_hDecalMaterial) == 0x7F0, "m_hDecalMaterial in CEnvDecal should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_flWidth) == 0x7F8, "m_flWidth in CEnvDecal should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_flHeight) == 0x7FC, "m_flHeight in CEnvDecal should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_flDepth) == 0x800, "m_flDepth in CEnvDecal should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_nRenderOrder) == 0x804, "m_nRenderOrder in CEnvDecal should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_bProjectOnWorld) == 0x808, "m_bProjectOnWorld in CEnvDecal should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_bProjectOnCharacters) == 0x809, "m_bProjectOnCharacters in CEnvDecal should be at offset 0x809");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_bProjectOnWater) == 0x80A, "m_bProjectOnWater in CEnvDecal should be at offset 0x80A");
-		static_assert(offsetof(CS2::server::CEnvDecal, m_flDepthSortBias) == 0x80C, "m_flDepthSortBias in CEnvDecal should be at offset 0x80C");
-		static_assert(sizeof(CS2::server::CEnvDecal) == 0x810, "CEnvDecal size should be 0x810");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_hDecalMaterial) == 0x7D8, "m_hDecalMaterial in CEnvDecal should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_flWidth) == 0x7E0, "m_flWidth in CEnvDecal should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_flHeight) == 0x7E4, "m_flHeight in CEnvDecal should be at offset 0x7E4");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_flDepth) == 0x7E8, "m_flDepth in CEnvDecal should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_nRenderOrder) == 0x7EC, "m_nRenderOrder in CEnvDecal should be at offset 0x7EC");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_bProjectOnWorld) == 0x7F0, "m_bProjectOnWorld in CEnvDecal should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_bProjectOnCharacters) == 0x7F1, "m_bProjectOnCharacters in CEnvDecal should be at offset 0x7F1");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_bProjectOnWater) == 0x7F2, "m_bProjectOnWater in CEnvDecal should be at offset 0x7F2");
+		static_assert(offsetof(CS2::server::CEnvDecal, m_flDepthSortBias) == 0x7F4, "m_flDepthSortBias in CEnvDecal should be at offset 0x7F4");
+		static_assert(sizeof(CS2::server::CEnvDecal) == 0x7F8, "CEnvDecal size should be 0x7F8");
 	}
 }

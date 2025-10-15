@@ -15,28 +15,28 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_CreateInEpitrochoid : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nComponent1; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nComponent2; // 0x1cc | Schema_Builtin | Size: 0x4
-			particleslib::CParticleTransformInput m_TransformInput; // 0x1d0 | Schema_DeclaredClass | Size: 0x68
-			particleslib::CPerParticleFloatInput m_flParticleDensity; // 0x238 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flOffset; // 0x398 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRadius1; // 0x4f8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flRadius2; // 0x658 | Schema_DeclaredClass | Size: 0x160
-			bool m_bUseCount; // 0x7b8 | Schema_Builtin | Size: 0x1
-			bool m_bUseLocalCoords; // 0x7b9 | Schema_Builtin | Size: 0x1
-			bool m_bOffsetExistingPos; // 0x7ba | Schema_Builtin | Size: 0x1
+			int32_t m_nComponent1; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nComponent2; // 0x1dc | Schema_Builtin | Size: 0x4
+			particleslib::CParticleTransformInput m_TransformInput; // 0x1e0 | Schema_DeclaredClass | Size: 0x68
+			particleslib::CPerParticleFloatInput m_flParticleDensity; // 0x248 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flOffset; // 0x3b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRadius1; // 0x528 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flRadius2; // 0x698 | Schema_DeclaredClass | Size: 0x170
+			bool m_bUseCount; // 0x808 | Schema_Builtin | Size: 0x1
+			bool m_bUseLocalCoords; // 0x809 | Schema_Builtin | Size: 0x1
+			bool m_bOffsetExistingPos; // 0x80a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_nComponent1) == 0x1C8, "m_nComponent1 in C_INIT_CreateInEpitrochoid should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_nComponent2) == 0x1CC, "m_nComponent2 in C_INIT_CreateInEpitrochoid should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_TransformInput) == 0x1D0, "m_TransformInput in C_INIT_CreateInEpitrochoid should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flParticleDensity) == 0x238, "m_flParticleDensity in C_INIT_CreateInEpitrochoid should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flOffset) == 0x398, "m_flOffset in C_INIT_CreateInEpitrochoid should be at offset 0x398");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flRadius1) == 0x4F8, "m_flRadius1 in C_INIT_CreateInEpitrochoid should be at offset 0x4F8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flRadius2) == 0x658, "m_flRadius2 in C_INIT_CreateInEpitrochoid should be at offset 0x658");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bUseCount) == 0x7B8, "m_bUseCount in C_INIT_CreateInEpitrochoid should be at offset 0x7B8");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bUseLocalCoords) == 0x7B9, "m_bUseLocalCoords in C_INIT_CreateInEpitrochoid should be at offset 0x7B9");
-		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bOffsetExistingPos) == 0x7BA, "m_bOffsetExistingPos in C_INIT_CreateInEpitrochoid should be at offset 0x7BA");
-		static_assert(sizeof(CS2::particles::C_INIT_CreateInEpitrochoid) == 0x7C0, "C_INIT_CreateInEpitrochoid size should be 0x7C0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_nComponent1) == 0x1D8, "m_nComponent1 in C_INIT_CreateInEpitrochoid should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_nComponent2) == 0x1DC, "m_nComponent2 in C_INIT_CreateInEpitrochoid should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_TransformInput) == 0x1E0, "m_TransformInput in C_INIT_CreateInEpitrochoid should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flParticleDensity) == 0x248, "m_flParticleDensity in C_INIT_CreateInEpitrochoid should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flOffset) == 0x3B8, "m_flOffset in C_INIT_CreateInEpitrochoid should be at offset 0x3B8");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flRadius1) == 0x528, "m_flRadius1 in C_INIT_CreateInEpitrochoid should be at offset 0x528");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_flRadius2) == 0x698, "m_flRadius2 in C_INIT_CreateInEpitrochoid should be at offset 0x698");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bUseCount) == 0x808, "m_bUseCount in C_INIT_CreateInEpitrochoid should be at offset 0x808");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bUseLocalCoords) == 0x809, "m_bUseLocalCoords in C_INIT_CreateInEpitrochoid should be at offset 0x809");
+		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bOffsetExistingPos) == 0x80A, "m_bOffsetExistingPos in C_INIT_CreateInEpitrochoid should be at offset 0x80A");
+		static_assert(sizeof(CS2::particles::C_INIT_CreateInEpitrochoid) == 0x810, "C_INIT_CreateInEpitrochoid size should be 0x810");
 	}
 }

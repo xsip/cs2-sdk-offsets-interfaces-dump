@@ -15,19 +15,19 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_DragRelativeToPlane : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CParticleCollectionFloatInput m_flDragAtPlane; // 0x1c0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flFalloff; // 0x320 | Schema_DeclaredClass | Size: 0x160
-			bool m_bDirectional; // 0x480 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flDragAtPlane; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flFalloff; // 0x340 | Schema_DeclaredClass | Size: 0x170
+			bool m_bDirectional; // 0x4b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CParticleCollectionVecInput m_vecPlaneNormal; // 0x488 | Schema_DeclaredClass | Size: 0x678
-			int32_t m_nControlPointNumber; // 0xb00 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecPlaneNormal; // 0x4b8 | Schema_DeclaredClass | Size: 0x6b8
+			int32_t m_nControlPointNumber; // 0xb70 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_flDragAtPlane) == 0x1C0, "m_flDragAtPlane in C_OP_DragRelativeToPlane should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_flFalloff) == 0x320, "m_flFalloff in C_OP_DragRelativeToPlane should be at offset 0x320");
-		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_bDirectional) == 0x480, "m_bDirectional in C_OP_DragRelativeToPlane should be at offset 0x480");
-		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_vecPlaneNormal) == 0x488, "m_vecPlaneNormal in C_OP_DragRelativeToPlane should be at offset 0x488");
-		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_nControlPointNumber) == 0xB00, "m_nControlPointNumber in C_OP_DragRelativeToPlane should be at offset 0xB00");
-		static_assert(sizeof(CS2::particles::C_OP_DragRelativeToPlane) == 0xB08, "C_OP_DragRelativeToPlane size should be 0xB08");
+		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_flDragAtPlane) == 0x1D0, "m_flDragAtPlane in C_OP_DragRelativeToPlane should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_flFalloff) == 0x340, "m_flFalloff in C_OP_DragRelativeToPlane should be at offset 0x340");
+		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_bDirectional) == 0x4B0, "m_bDirectional in C_OP_DragRelativeToPlane should be at offset 0x4B0");
+		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_vecPlaneNormal) == 0x4B8, "m_vecPlaneNormal in C_OP_DragRelativeToPlane should be at offset 0x4B8");
+		static_assert(offsetof(CS2::particles::C_OP_DragRelativeToPlane, m_nControlPointNumber) == 0xB70, "m_nControlPointNumber in C_OP_DragRelativeToPlane should be at offset 0xB70");
+		static_assert(sizeof(CS2::particles::C_OP_DragRelativeToPlane) == 0xB78, "C_OP_DragRelativeToPlane size should be 0xB78");
 	}
 }

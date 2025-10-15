@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomRadius : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			float32 m_flRadiusMin; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flRadiusMax; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flRadiusRandExponent; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusMin; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusMax; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusRandExponent; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusMin) == 0x1C8, "m_flRadiusMin in C_INIT_RandomRadius should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusMax) == 0x1CC, "m_flRadiusMax in C_INIT_RandomRadius should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusRandExponent) == 0x1D0, "m_flRadiusRandExponent in C_INIT_RandomRadius should be at offset 0x1D0");
-		static_assert(sizeof(CS2::particles::C_INIT_RandomRadius) == 0x1D8, "C_INIT_RandomRadius size should be 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusMin) == 0x1D8, "m_flRadiusMin in C_INIT_RandomRadius should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusMax) == 0x1DC, "m_flRadiusMax in C_INIT_RandomRadius should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusRandExponent) == 0x1E0, "m_flRadiusRandExponent in C_INIT_RandomRadius should be at offset 0x1E0");
+		static_assert(sizeof(CS2::particles::C_INIT_RandomRadius) == 0x1E8, "C_INIT_RandomRadius size should be 0x1E8");
 	}
 }

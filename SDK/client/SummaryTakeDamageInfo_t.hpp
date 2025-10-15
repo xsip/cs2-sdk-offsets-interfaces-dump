@@ -16,16 +16,16 @@ namespace CS2 {
 		public:
 			int32_t nSummarisedCount; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			client::CTakeDamageInfo info; // 0x8 | Schema_DeclaredClass | Size: 0x110
-			client::CTakeDamageResult result; // 0x118 | Schema_DeclaredClass | Size: 0x20
-			// client::CHandle< client::C_BaseEntity > hTarget; // 0x138 | Schema_Atomic | Size: 0x4
-			char  hTarget[0x4]; // 0x138 | Schema_Atomic | Size: 0x4
+			client::CTakeDamageInfo info; // 0x8 | Schema_DeclaredClass | Size: 0x128
+			client::CTakeDamageResult result; // 0x130 | Schema_DeclaredClass | Size: 0x20
+			// client::CHandle< client::C_BaseEntity > hTarget; // 0x150 | Schema_Atomic | Size: 0x4
+			char  hTarget[0x4]; // 0x150 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, nSummarisedCount) == 0x0, "nSummarisedCount in SummaryTakeDamageInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, info) == 0x8, "info in SummaryTakeDamageInfo_t should be at offset 0x8");
-		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, result) == 0x118, "result in SummaryTakeDamageInfo_t should be at offset 0x118");
-		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, hTarget) == 0x138, "hTarget in SummaryTakeDamageInfo_t should be at offset 0x138");
-		static_assert(sizeof(CS2::client::SummaryTakeDamageInfo_t) == 0x140, "SummaryTakeDamageInfo_t size should be 0x140");
+		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, result) == 0x130, "result in SummaryTakeDamageInfo_t should be at offset 0x130");
+		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, hTarget) == 0x150, "hTarget in SummaryTakeDamageInfo_t should be at offset 0x150");
+		static_assert(sizeof(CS2::client::SummaryTakeDamageInfo_t) == 0x158, "SummaryTakeDamageInfo_t size should be 0x158");
 	}
 }

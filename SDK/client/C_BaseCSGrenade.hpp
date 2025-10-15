@@ -15,41 +15,41 @@ namespace CS2 {
 	namespace client {
 		class C_BaseCSGrenade : public CS2::client::C_CSWeaponBase {
 		public:
-			bool m_bClientPredictDelete; // 0x1f90 | Schema_Builtin | Size: 0x1
-			bool m_bRedraw; // 0x1f91 | Schema_Builtin | Size: 0x1
-			bool m_bIsHeldByPlayer; // 0x1f92 | Schema_Builtin | Size: 0x1
-			bool m_bPinPulled; // 0x1f93 | Schema_Builtin | Size: 0x1
-			bool m_bJumpThrow; // 0x1f94 | Schema_Builtin | Size: 0x1
-			bool m_bThrowAnimating; // 0x1f95 | Schema_Builtin | Size: 0x1
+			bool m_bClientPredictDelete; // 0x1f80 | Schema_Builtin | Size: 0x1
+			bool m_bRedraw; // 0x1f81 | Schema_Builtin | Size: 0x1
+			bool m_bIsHeldByPlayer; // 0x1f82 | Schema_Builtin | Size: 0x1
+			bool m_bPinPulled; // 0x1f83 | Schema_Builtin | Size: 0x1
+			bool m_bJumpThrow; // 0x1f84 | Schema_Builtin | Size: 0x1
+			bool m_bThrowAnimating; // 0x1f85 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_fThrowTime; // 0x1f98 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_fThrowTime; // 0x1f88 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_flThrowStrength; // 0x1fa0 | Schema_Builtin | Size: 0x4
+			float32 m_flThrowStrength; // 0x1f90 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x74);
-			entity2::GameTime_t m_fDropTime; // 0x2018 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_fPinPullTime; // 0x201c | Schema_DeclaredClass | Size: 0x4
-			bool m_bJustPulledPin; // 0x2020 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_fDropTime; // 0x2008 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_fPinPullTime; // 0x200c | Schema_DeclaredClass | Size: 0x4
+			bool m_bJustPulledPin; // 0x2010 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTick_t m_nNextHoldTick; // 0x2024 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flNextHoldFrac; // 0x2028 | Schema_Builtin | Size: 0x4
-			// client::CHandle< client::C_CSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0x202c | Schema_Atomic | Size: 0x4
-			char  m_hSwitchToWeaponAfterThrow[0x4]; // 0x202c | Schema_Atomic | Size: 0x4
+			entity2::GameTick_t m_nNextHoldTick; // 0x2014 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flNextHoldFrac; // 0x2018 | Schema_Builtin | Size: 0x4
+			// client::CHandle< client::C_CSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0x201c | Schema_Atomic | Size: 0x4
+			char  m_hSwitchToWeaponAfterThrow[0x4]; // 0x201c | Schema_Atomic | Size: 0x4
 			S2_PAD(0x20); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bClientPredictDelete) == 0x1F90, "m_bClientPredictDelete in C_BaseCSGrenade should be at offset 0x1F90");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bRedraw) == 0x1F91, "m_bRedraw in C_BaseCSGrenade should be at offset 0x1F91");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bIsHeldByPlayer) == 0x1F92, "m_bIsHeldByPlayer in C_BaseCSGrenade should be at offset 0x1F92");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bPinPulled) == 0x1F93, "m_bPinPulled in C_BaseCSGrenade should be at offset 0x1F93");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bJumpThrow) == 0x1F94, "m_bJumpThrow in C_BaseCSGrenade should be at offset 0x1F94");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bThrowAnimating) == 0x1F95, "m_bThrowAnimating in C_BaseCSGrenade should be at offset 0x1F95");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_fThrowTime) == 0x1F98, "m_fThrowTime in C_BaseCSGrenade should be at offset 0x1F98");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_flThrowStrength) == 0x1FA0, "m_flThrowStrength in C_BaseCSGrenade should be at offset 0x1FA0");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_fDropTime) == 0x2018, "m_fDropTime in C_BaseCSGrenade should be at offset 0x2018");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_fPinPullTime) == 0x201C, "m_fPinPullTime in C_BaseCSGrenade should be at offset 0x201C");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bJustPulledPin) == 0x2020, "m_bJustPulledPin in C_BaseCSGrenade should be at offset 0x2020");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_nNextHoldTick) == 0x2024, "m_nNextHoldTick in C_BaseCSGrenade should be at offset 0x2024");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_flNextHoldFrac) == 0x2028, "m_flNextHoldFrac in C_BaseCSGrenade should be at offset 0x2028");
-		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_hSwitchToWeaponAfterThrow) == 0x202C, "m_hSwitchToWeaponAfterThrow in C_BaseCSGrenade should be at offset 0x202C");
-		static_assert(sizeof(CS2::client::C_BaseCSGrenade) == 0x2050, "C_BaseCSGrenade size should be 0x2050");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bClientPredictDelete) == 0x1F80, "m_bClientPredictDelete in C_BaseCSGrenade should be at offset 0x1F80");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bRedraw) == 0x1F81, "m_bRedraw in C_BaseCSGrenade should be at offset 0x1F81");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bIsHeldByPlayer) == 0x1F82, "m_bIsHeldByPlayer in C_BaseCSGrenade should be at offset 0x1F82");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bPinPulled) == 0x1F83, "m_bPinPulled in C_BaseCSGrenade should be at offset 0x1F83");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bJumpThrow) == 0x1F84, "m_bJumpThrow in C_BaseCSGrenade should be at offset 0x1F84");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bThrowAnimating) == 0x1F85, "m_bThrowAnimating in C_BaseCSGrenade should be at offset 0x1F85");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_fThrowTime) == 0x1F88, "m_fThrowTime in C_BaseCSGrenade should be at offset 0x1F88");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_flThrowStrength) == 0x1F90, "m_flThrowStrength in C_BaseCSGrenade should be at offset 0x1F90");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_fDropTime) == 0x2008, "m_fDropTime in C_BaseCSGrenade should be at offset 0x2008");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_fPinPullTime) == 0x200C, "m_fPinPullTime in C_BaseCSGrenade should be at offset 0x200C");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_bJustPulledPin) == 0x2010, "m_bJustPulledPin in C_BaseCSGrenade should be at offset 0x2010");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_nNextHoldTick) == 0x2014, "m_nNextHoldTick in C_BaseCSGrenade should be at offset 0x2014");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_flNextHoldFrac) == 0x2018, "m_flNextHoldFrac in C_BaseCSGrenade should be at offset 0x2018");
+		static_assert(offsetof(CS2::client::C_BaseCSGrenade, m_hSwitchToWeaponAfterThrow) == 0x201C, "m_hSwitchToWeaponAfterThrow in C_BaseCSGrenade should be at offset 0x201C");
+		static_assert(sizeof(CS2::client::C_BaseCSGrenade) == 0x2040, "C_BaseCSGrenade size should be 0x2040");
 	}
 }

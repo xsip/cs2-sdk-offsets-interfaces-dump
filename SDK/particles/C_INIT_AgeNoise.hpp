@@ -13,25 +13,25 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_AgeNoise : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			bool m_bAbsVal; // 0x1c8 | Schema_Builtin | Size: 0x1
-			bool m_bAbsValInv; // 0x1c9 | Schema_Builtin | Size: 0x1
+			bool m_bAbsVal; // 0x1d8 | Schema_Builtin | Size: 0x1
+			bool m_bAbsValInv; // 0x1d9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flOffset; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flAgeMin; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flAgeMax; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseScale; // 0x1d8 | Schema_Builtin | Size: 0x4
-			float32 m_flNoiseScaleLoc; // 0x1dc | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecOffsetLoc; // 0x1e0 | Schema_Atomic | Size: 0xc
+			float32 m_flOffset; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flAgeMin; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flAgeMax; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseScale; // 0x1e8 | Schema_Builtin | Size: 0x4
+			float32 m_flNoiseScaleLoc; // 0x1ec | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecOffsetLoc; // 0x1f0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_bAbsVal) == 0x1C8, "m_bAbsVal in C_INIT_AgeNoise should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_bAbsValInv) == 0x1C9, "m_bAbsValInv in C_INIT_AgeNoise should be at offset 0x1C9");
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flOffset) == 0x1CC, "m_flOffset in C_INIT_AgeNoise should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flAgeMin) == 0x1D0, "m_flAgeMin in C_INIT_AgeNoise should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flAgeMax) == 0x1D4, "m_flAgeMax in C_INIT_AgeNoise should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flNoiseScale) == 0x1D8, "m_flNoiseScale in C_INIT_AgeNoise should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flNoiseScaleLoc) == 0x1DC, "m_flNoiseScaleLoc in C_INIT_AgeNoise should be at offset 0x1DC");
-		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_vecOffsetLoc) == 0x1E0, "m_vecOffsetLoc in C_INIT_AgeNoise should be at offset 0x1E0");
-		static_assert(sizeof(CS2::particles::C_INIT_AgeNoise) == 0x1F0, "C_INIT_AgeNoise size should be 0x1F0");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_bAbsVal) == 0x1D8, "m_bAbsVal in C_INIT_AgeNoise should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_bAbsValInv) == 0x1D9, "m_bAbsValInv in C_INIT_AgeNoise should be at offset 0x1D9");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flOffset) == 0x1DC, "m_flOffset in C_INIT_AgeNoise should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flAgeMin) == 0x1E0, "m_flAgeMin in C_INIT_AgeNoise should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flAgeMax) == 0x1E4, "m_flAgeMax in C_INIT_AgeNoise should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flNoiseScale) == 0x1E8, "m_flNoiseScale in C_INIT_AgeNoise should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flNoiseScaleLoc) == 0x1EC, "m_flNoiseScaleLoc in C_INIT_AgeNoise should be at offset 0x1EC");
+		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_vecOffsetLoc) == 0x1F0, "m_vecOffsetLoc in C_INIT_AgeNoise should be at offset 0x1F0");
+		static_assert(sizeof(CS2::particles::C_INIT_AgeNoise) == 0x200, "C_INIT_AgeNoise size should be 0x200");
 	}
 }

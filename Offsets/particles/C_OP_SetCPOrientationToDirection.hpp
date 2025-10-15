@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1C8
+			// Class size: 0x1D8
 			namespace C_OP_SetCPOrientationToDirection /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nInputControlPoint = 0x1c0; // int32_t m_nInputControlPoint; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nOutputControlPoint = 0x1c4; // int32_t m_nOutputControlPoint; |  0x1c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nInputControlPoint = 0x1d0; // int32_t m_nInputControlPoint; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nOutputControlPoint = 0x1d4; // int32_t m_nOutputControlPoint; |  0x1d4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

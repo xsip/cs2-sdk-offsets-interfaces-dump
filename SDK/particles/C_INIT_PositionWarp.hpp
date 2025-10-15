@@ -14,28 +14,28 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_PositionWarp : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CParticleCollectionVecInput m_vecWarpMin; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CParticleCollectionVecInput m_vecWarpMax; // 0x840 | Schema_DeclaredClass | Size: 0x678
-			int32_t m_nScaleControlPointNumber; // 0xeb8 | Schema_Builtin | Size: 0x4
-			int32_t m_nControlPointNumber; // 0xebc | Schema_Builtin | Size: 0x4
-			int32_t m_nRadiusComponent; // 0xec0 | Schema_Builtin | Size: 0x4
-			float32 m_flWarpTime; // 0xec4 | Schema_Builtin | Size: 0x4
-			float32 m_flWarpStartTime; // 0xec8 | Schema_Builtin | Size: 0x4
-			float32 m_flPrevPosScale; // 0xecc | Schema_Builtin | Size: 0x4
-			bool m_bInvertWarp; // 0xed0 | Schema_Builtin | Size: 0x1
-			bool m_bUseCount; // 0xed1 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionVecInput m_vecWarpMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleCollectionVecInput m_vecWarpMax; // 0x890 | Schema_DeclaredClass | Size: 0x6b8
+			int32_t m_nScaleControlPointNumber; // 0xf48 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0xf4c | Schema_Builtin | Size: 0x4
+			int32_t m_nRadiusComponent; // 0xf50 | Schema_Builtin | Size: 0x4
+			float32 m_flWarpTime; // 0xf54 | Schema_Builtin | Size: 0x4
+			float32 m_flWarpStartTime; // 0xf58 | Schema_Builtin | Size: 0x4
+			float32 m_flPrevPosScale; // 0xf5c | Schema_Builtin | Size: 0x4
+			bool m_bInvertWarp; // 0xf60 | Schema_Builtin | Size: 0x1
+			bool m_bUseCount; // 0xf61 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_vecWarpMin) == 0x1C8, "m_vecWarpMin in C_INIT_PositionWarp should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_vecWarpMax) == 0x840, "m_vecWarpMax in C_INIT_PositionWarp should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_nScaleControlPointNumber) == 0xEB8, "m_nScaleControlPointNumber in C_INIT_PositionWarp should be at offset 0xEB8");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_nControlPointNumber) == 0xEBC, "m_nControlPointNumber in C_INIT_PositionWarp should be at offset 0xEBC");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_nRadiusComponent) == 0xEC0, "m_nRadiusComponent in C_INIT_PositionWarp should be at offset 0xEC0");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_flWarpTime) == 0xEC4, "m_flWarpTime in C_INIT_PositionWarp should be at offset 0xEC4");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_flWarpStartTime) == 0xEC8, "m_flWarpStartTime in C_INIT_PositionWarp should be at offset 0xEC8");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_flPrevPosScale) == 0xECC, "m_flPrevPosScale in C_INIT_PositionWarp should be at offset 0xECC");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_bInvertWarp) == 0xED0, "m_bInvertWarp in C_INIT_PositionWarp should be at offset 0xED0");
-		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_bUseCount) == 0xED1, "m_bUseCount in C_INIT_PositionWarp should be at offset 0xED1");
-		static_assert(sizeof(CS2::particles::C_INIT_PositionWarp) == 0xED8, "C_INIT_PositionWarp size should be 0xED8");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_vecWarpMin) == 0x1D8, "m_vecWarpMin in C_INIT_PositionWarp should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_vecWarpMax) == 0x890, "m_vecWarpMax in C_INIT_PositionWarp should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_nScaleControlPointNumber) == 0xF48, "m_nScaleControlPointNumber in C_INIT_PositionWarp should be at offset 0xF48");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_nControlPointNumber) == 0xF4C, "m_nControlPointNumber in C_INIT_PositionWarp should be at offset 0xF4C");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_nRadiusComponent) == 0xF50, "m_nRadiusComponent in C_INIT_PositionWarp should be at offset 0xF50");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_flWarpTime) == 0xF54, "m_flWarpTime in C_INIT_PositionWarp should be at offset 0xF54");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_flWarpStartTime) == 0xF58, "m_flWarpStartTime in C_INIT_PositionWarp should be at offset 0xF58");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_flPrevPosScale) == 0xF5C, "m_flPrevPosScale in C_INIT_PositionWarp should be at offset 0xF5C");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_bInvertWarp) == 0xF60, "m_bInvertWarp in C_INIT_PositionWarp should be at offset 0xF60");
+		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_bUseCount) == 0xF61, "m_bUseCount in C_INIT_PositionWarp should be at offset 0xF61");
+		static_assert(sizeof(CS2::particles::C_INIT_PositionWarp) == 0xF68, "C_INIT_PositionWarp size should be 0xF68");
 	}
 }

@@ -14,14 +14,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderClientPhysicsImpulse : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particleslib::CPerParticleFloatInput m_flRadius; // 0x210 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_flMagnitude; // 0x370 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nSimIdFilter; // 0x4d0 | Schema_Builtin | Size: 0x4
+			particleslib::CPerParticleFloatInput m_flRadius; // 0x220 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flMagnitude; // 0x390 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nSimIdFilter; // 0x500 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_flRadius) == 0x210, "m_flRadius in C_OP_RenderClientPhysicsImpulse should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_flMagnitude) == 0x370, "m_flMagnitude in C_OP_RenderClientPhysicsImpulse should be at offset 0x370");
-		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_nSimIdFilter) == 0x4D0, "m_nSimIdFilter in C_OP_RenderClientPhysicsImpulse should be at offset 0x4D0");
-		static_assert(sizeof(CS2::particles::C_OP_RenderClientPhysicsImpulse) == 0x4D8, "C_OP_RenderClientPhysicsImpulse size should be 0x4D8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_flRadius) == 0x220, "m_flRadius in C_OP_RenderClientPhysicsImpulse should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_flMagnitude) == 0x390, "m_flMagnitude in C_OP_RenderClientPhysicsImpulse should be at offset 0x390");
+		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_nSimIdFilter) == 0x500, "m_nSimIdFilter in C_OP_RenderClientPhysicsImpulse should be at offset 0x500");
+		static_assert(sizeof(CS2::particles::C_OP_RenderClientPhysicsImpulse) == 0x508, "C_OP_RenderClientPhysicsImpulse size should be 0x508");
 	}
 }

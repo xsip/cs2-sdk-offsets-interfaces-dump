@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x9A8
+			// Class size: 0xA08
 			namespace C_INIT_ScreenSpacePositionOfTarget /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecTargetPosition = 0x1c8; // particleslib::CPerParticleVecInput m_vecTargetPosition; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_bOututBehindness = 0x840; // bool m_bOututBehindness; |  0x840 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nBehindFieldOutput = 0x844; // particles::ParticleAttributeIndex_t m_nBehindFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flBehindOutputRemap = 0x848; // particleslib::CParticleRemapFloatInput m_flBehindOutputRemap; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_vecTargetPosition = 0x1d8; // particleslib::CPerParticleVecInput m_vecTargetPosition; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_bOututBehindness = 0x890; // bool m_bOututBehindness; |  0x890 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nBehindFieldOutput = 0x894; // particles::ParticleAttributeIndex_t m_nBehindFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flBehindOutputRemap = 0x898; // particleslib::CParticleRemapFloatInput m_flBehindOutputRemap; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0xB00
+			// Class size: 0xB70
 			namespace C_OP_ScreenSpaceRotateTowardTarget /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_vecTargetPosition = 0x1c0; // particleslib::CPerParticleVecInput m_vecTargetPosition; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_flOutputRemap = 0x838; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nSetMethod = 0x998; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flScreenEdgeAlignmentDistance = 0x9a0; // particleslib::CPerParticleFloatInput m_flScreenEdgeAlignmentDistance; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_vecTargetPosition = 0x1d0; // particleslib::CPerParticleVecInput m_vecTargetPosition; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flOutputRemap = 0x888; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nSetMethod = 0x9f8; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flScreenEdgeAlignmentDistance = 0xa00; // particleslib::CPerParticleFloatInput m_flScreenEdgeAlignmentDistance; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

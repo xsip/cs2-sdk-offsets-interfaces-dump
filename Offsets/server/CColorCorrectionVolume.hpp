@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xBE0
+			// Class size: 0xBC8
 			namespace CColorCorrectionVolume /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_MaxWeight = 0x9c0; // float32 m_MaxWeight; |  0x9c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_FadeDuration = 0x9c4; // float32 m_FadeDuration; |  0x9c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Weight = 0x9c8; // float32 m_Weight; |  0x9c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_lookupFilename = 0x9cc; // char m_lookupFilename[512]; |  0x9cc | Schema_FixedArray | Size: 0x200
-				constexpr std::ptrdiff_t m_LastEnterWeight = 0xbcc; // float32 m_LastEnterWeight; |  0xbcc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LastEnterTime = 0xbd0; // entity2::GameTime_t m_LastEnterTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_LastExitWeight = 0xbd4; // float32 m_LastExitWeight; |  0xbd4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LastExitTime = 0xbd8; // entity2::GameTime_t m_LastExitTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_MaxWeight = 0x9a8; // float32 m_MaxWeight; |  0x9a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_FadeDuration = 0x9ac; // float32 m_FadeDuration; |  0x9ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Weight = 0x9b0; // float32 m_Weight; |  0x9b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_lookupFilename = 0x9b4; // char m_lookupFilename[512]; |  0x9b4 | Schema_FixedArray | Size: 0x200
+				constexpr std::ptrdiff_t m_LastEnterWeight = 0xbb4; // float32 m_LastEnterWeight; |  0xbb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LastEnterTime = 0xbb8; // entity2::GameTime_t m_LastEnterTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_LastExitWeight = 0xbbc; // float32 m_LastExitWeight; |  0xbbc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_LastExitTime = 0xbc0; // entity2::GameTime_t m_LastExitTime; |  Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

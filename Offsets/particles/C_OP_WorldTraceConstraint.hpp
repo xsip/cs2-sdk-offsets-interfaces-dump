@@ -8,35 +8,35 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x970
+			// Class size: 0x9D0
 			namespace C_OP_WorldTraceConstraint /*: public CS2::particles::CParticleFunctionConstraint*/ {
-				constexpr std::ptrdiff_t m_nCP = 0x1c0; // int32_t m_nCP; |  0x1c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCpOffset = 0x1c4; // GlobalTypes::Vector m_vecCpOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nCollisionMode = 0x1d0; // particles::ParticleCollisionMode_t m_nCollisionMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nCollisionModeMin = 0x1d4; // particles::ParticleCollisionMode_t m_nCollisionModeMin; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nTraceSet = 0x1d8; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_CollisionGroupName = 0x1dc; // char m_CollisionGroupName[128]; |  0x1dc | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_bWorldOnly = 0x25c; // bool m_bWorldOnly; |  0x25c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bBrushOnly = 0x25d; // bool m_bBrushOnly; |  0x25d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIncludeWater = 0x25e; // bool m_bIncludeWater; |  0x25e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nIgnoreCP = 0x260; // int32_t m_nIgnoreCP; |  0x260 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCpMovementTolerance = 0x264; // float32 m_flCpMovementTolerance; |  0x264 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRetestRate = 0x268; // float32 m_flRetestRate; |  0x268 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTraceTolerance = 0x26c; // float32 m_flTraceTolerance; |  0x26c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCollisionConfirmationSpeed = 0x270; // float32 m_flCollisionConfirmationSpeed; |  0x270 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxTracesPerFrame = 0x274; // float32 m_nMaxTracesPerFrame; |  0x274 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadiusScale = 0x278; // particleslib::CPerParticleFloatInput m_flRadiusScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flBounceAmount = 0x3d8; // particleslib::CPerParticleFloatInput m_flBounceAmount; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flSlideAmount = 0x538; // particleslib::CPerParticleFloatInput m_flSlideAmount; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flRandomDirScale = 0x698; // particleslib::CPerParticleFloatInput m_flRandomDirScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bDecayBounce = 0x7f8; // bool m_bDecayBounce; |  0x7f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bKillonContact = 0x7f9; // bool m_bKillonContact; |  0x7f9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMinSpeed = 0x7fc; // float32 m_flMinSpeed; |  0x7fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSetNormal = 0x800; // bool m_bSetNormal; |  0x800 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nStickOnCollisionField = 0x804; // particles::ParticleAttributeIndex_t m_nStickOnCollisionField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flStopSpeed = 0x808; // particleslib::CPerParticleFloatInput m_flStopSpeed; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nEntityStickDataField = 0x968; // particles::ParticleAttributeIndex_t m_nEntityStickDataField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nEntityStickNormalField = 0x96c; // particles::ParticleAttributeIndex_t m_nEntityStickNormalField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nCP = 0x1d0; // int32_t m_nCP; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecCpOffset = 0x1d4; // GlobalTypes::Vector m_vecCpOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nCollisionMode = 0x1e0; // particles::ParticleCollisionMode_t m_nCollisionMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nCollisionModeMin = 0x1e4; // particles::ParticleCollisionMode_t m_nCollisionModeMin; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nTraceSet = 0x1e8; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_CollisionGroupName = 0x1ec; // char m_CollisionGroupName[128]; |  0x1ec | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_bWorldOnly = 0x26c; // bool m_bWorldOnly; |  0x26c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bBrushOnly = 0x26d; // bool m_bBrushOnly; |  0x26d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIncludeWater = 0x26e; // bool m_bIncludeWater; |  0x26e | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nIgnoreCP = 0x270; // int32_t m_nIgnoreCP; |  0x270 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCpMovementTolerance = 0x274; // float32 m_flCpMovementTolerance; |  0x274 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRetestRate = 0x278; // float32 m_flRetestRate; |  0x278 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTraceTolerance = 0x27c; // float32 m_flTraceTolerance; |  0x27c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCollisionConfirmationSpeed = 0x280; // float32 m_flCollisionConfirmationSpeed; |  0x280 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxTracesPerFrame = 0x284; // float32 m_nMaxTracesPerFrame; |  0x284 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadiusScale = 0x288; // particleslib::CPerParticleFloatInput m_flRadiusScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flBounceAmount = 0x3f8; // particleslib::CPerParticleFloatInput m_flBounceAmount; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flSlideAmount = 0x568; // particleslib::CPerParticleFloatInput m_flSlideAmount; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRandomDirScale = 0x6d8; // particleslib::CPerParticleFloatInput m_flRandomDirScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bDecayBounce = 0x848; // bool m_bDecayBounce; |  0x848 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bKillonContact = 0x849; // bool m_bKillonContact; |  0x849 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMinSpeed = 0x84c; // float32 m_flMinSpeed; |  0x84c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSetNormal = 0x850; // bool m_bSetNormal; |  0x850 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nStickOnCollisionField = 0x854; // particles::ParticleAttributeIndex_t m_nStickOnCollisionField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flStopSpeed = 0x858; // particleslib::CPerParticleFloatInput m_flStopSpeed; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nEntityStickDataField = 0x9c8; // particles::ParticleAttributeIndex_t m_nEntityStickDataField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nEntityStickNormalField = 0x9cc; // particles::ParticleAttributeIndex_t m_nEntityStickNormalField; |  Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

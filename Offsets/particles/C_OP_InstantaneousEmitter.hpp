@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x600
+			// Class size: 0x640
 			namespace C_OP_InstantaneousEmitter /*: public CS2::particles::CParticleFunctionEmitter*/ {
-				constexpr std::ptrdiff_t m_nParticlesToEmit = 0x1c8; // particleslib::CParticleCollectionFloatInput m_nParticlesToEmit; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flStartTime = 0x328; // particleslib::CParticleCollectionFloatInput m_flStartTime; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flInitFromKilledParentParticles = 0x488; // float32 m_flInitFromKilledParentParticles; |  0x488 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nEventType = 0x48c; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flParentParticleScale = 0x490; // particleslib::CParticleCollectionFloatInput m_flParentParticleScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nMaxEmittedPerFrame = 0x5f0; // int32_t m_nMaxEmittedPerFrame; |  0x5f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x5f4; // int32_t m_nSnapshotControlPoint; |  0x5f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x5f8; // GlobalTypes::CUtlString m_strSnapshotSubset; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nParticlesToEmit = 0x1d8; // particleslib::CParticleCollectionFloatInput m_nParticlesToEmit; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flStartTime = 0x348; // particleslib::CParticleCollectionFloatInput m_flStartTime; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInitFromKilledParentParticles = 0x4b8; // float32 m_flInitFromKilledParentParticles; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nEventType = 0x4bc; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flParentParticleScale = 0x4c0; // particleslib::CParticleCollectionFloatInput m_flParentParticleScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nMaxEmittedPerFrame = 0x630; // int32_t m_nMaxEmittedPerFrame; |  0x630 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x634; // int32_t m_nSnapshotControlPoint; |  0x634 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x638; // GlobalTypes::CUtlString m_strSnapshotSubset; |  Schema_Atomic | Size: 0x8
 			}
 		}
 	}

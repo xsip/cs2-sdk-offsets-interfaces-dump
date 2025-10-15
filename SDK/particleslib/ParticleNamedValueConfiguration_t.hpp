@@ -15,16 +15,16 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_ConfigName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::KeyValues3 m_ConfigValue; // 0x8 | Schema_Atomic | Size: 0x10
-			animationsystem::ParticleAttachment_t m_iAttachType; // 0x18 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlString m_BoundValuePath; // 0x18 | Schema_Atomic | Size: 0x8
+			animationsystem::ParticleAttachment_t m_iAttachType; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_BoundEntityPath; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strEntityScope; // 0x28 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strAttachmentName; // 0x30 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_ConfigName) == 0x0, "m_ConfigName in ParticleNamedValueConfiguration_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_ConfigValue) == 0x8, "m_ConfigValue in ParticleNamedValueConfiguration_t should be at offset 0x8");
-		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_iAttachType) == 0x18, "m_iAttachType in ParticleNamedValueConfiguration_t should be at offset 0x18");
-		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_BoundEntityPath) == 0x20, "m_BoundEntityPath in ParticleNamedValueConfiguration_t should be at offset 0x20");
+		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_BoundValuePath) == 0x18, "m_BoundValuePath in ParticleNamedValueConfiguration_t should be at offset 0x18");
+		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_iAttachType) == 0x20, "m_iAttachType in ParticleNamedValueConfiguration_t should be at offset 0x20");
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_strEntityScope) == 0x28, "m_strEntityScope in ParticleNamedValueConfiguration_t should be at offset 0x28");
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_strAttachmentName) == 0x30, "m_strAttachmentName in ParticleNamedValueConfiguration_t should be at offset 0x30");
 		static_assert(sizeof(CS2::particleslib::ParticleNamedValueConfiguration_t) == 0x38, "ParticleNamedValueConfiguration_t size should be 0x38");

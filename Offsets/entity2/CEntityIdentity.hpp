@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace entity2 {
-			// Class size: 0x78
+			// Class size: 0x70
 			namespace CEntityIdentity /**/ {
 				constexpr std::ptrdiff_t m_nameStringableIndex = 0x14; // int32_t m_nameStringableIndex; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CUtlSymbolLarge m_name; |  Schema_Atomic | Size: 0x8
@@ -17,10 +17,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_worldGroupId = 0x38; // GlobalTypes::WorldGroupId_t m_worldGroupId; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_fDataObjectTypes = 0x3c; // uint32_t m_fDataObjectTypes; |  0x3c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_PathIndex = 0x40; // networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_pPrev = 0x58; // entity2::CEntityIdentity* m_pPrev; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pNext = 0x60; // entity2::CEntityIdentity* m_pNext; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pPrevByClass = 0x68; // entity2::CEntityIdentity* m_pPrevByClass; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pNextByClass = 0x70; // entity2::CEntityIdentity* m_pNextByClass; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPrev = 0x50; // entity2::CEntityIdentity* m_pPrev; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNext = 0x58; // entity2::CEntityIdentity* m_pNext; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPrevByClass = 0x60; // entity2::CEntityIdentity* m_pPrevByClass; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNextByClass = 0x68; // entity2::CEntityIdentity* m_pNextByClass; |  Schema_Ptr | Size: 0x8
 			}
 		}
 	}

@@ -14,14 +14,14 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_StopAfterCPDuration : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particleslib::CParticleCollectionFloatInput m_flDuration; // 0x1c8 | Schema_DeclaredClass | Size: 0x160
-			bool m_bDestroyImmediately; // 0x328 | Schema_Builtin | Size: 0x1
-			bool m_bPlayEndCap; // 0x329 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flDuration; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
+			bool m_bDestroyImmediately; // 0x348 | Schema_Builtin | Size: 0x1
+			bool m_bPlayEndCap; // 0x349 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_flDuration) == 0x1C8, "m_flDuration in C_OP_StopAfterCPDuration should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_bDestroyImmediately) == 0x328, "m_bDestroyImmediately in C_OP_StopAfterCPDuration should be at offset 0x328");
-		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_bPlayEndCap) == 0x329, "m_bPlayEndCap in C_OP_StopAfterCPDuration should be at offset 0x329");
-		static_assert(sizeof(CS2::particles::C_OP_StopAfterCPDuration) == 0x330, "C_OP_StopAfterCPDuration size should be 0x330");
+		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_flDuration) == 0x1D8, "m_flDuration in C_OP_StopAfterCPDuration should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_bDestroyImmediately) == 0x348, "m_bDestroyImmediately in C_OP_StopAfterCPDuration should be at offset 0x348");
+		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_bPlayEndCap) == 0x349, "m_bPlayEndCap in C_OP_StopAfterCPDuration should be at offset 0x349");
+		static_assert(sizeof(CS2::particles::C_OP_StopAfterCPDuration) == 0x350, "C_OP_StopAfterCPDuration size should be 0x350");
 	}
 }

@@ -14,6 +14,6 @@ namespace CS2 {
 		class C_CSGO_TeamSelectCharacterPosition : public CS2::client::C_CSGO_TeamPreviewCharacterPosition {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_CSGO_TeamSelectCharacterPosition) == 0x13B8, "C_CSGO_TeamSelectCharacterPosition size should be 0x13B8");
+		static_assert(sizeof(CS2::client::C_CSGO_TeamSelectCharacterPosition) == 0x13B0, "C_CSGO_TeamSelectCharacterPosition size should be 0x13B0");
 	}
 }

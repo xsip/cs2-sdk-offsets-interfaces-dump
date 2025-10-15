@@ -15,16 +15,16 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapCrossProductOfTwoVectorsToVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particleslib::CPerParticleVecInput m_InputVec1; // 0x1c0 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_InputVec2; // 0x838 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xeb0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bNormalize; // 0xeb4 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_InputVec1; // 0x1d0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_InputVec2; // 0x888 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xf40 | Schema_DeclaredClass | Size: 0x4
+			bool m_bNormalize; // 0xf44 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_InputVec1) == 0x1C0, "m_InputVec1 in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_InputVec2) == 0x838, "m_InputVec2 in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0x838");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_nFieldOutput) == 0xEB0, "m_nFieldOutput in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0xEB0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_bNormalize) == 0xEB4, "m_bNormalize in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0xEB4");
-		static_assert(sizeof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector) == 0xEB8, "C_OP_RemapCrossProductOfTwoVectorsToVector size should be 0xEB8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_InputVec1) == 0x1D0, "m_InputVec1 in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_InputVec2) == 0x888, "m_InputVec2 in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0x888");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_nFieldOutput) == 0xF40, "m_nFieldOutput in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0xF40");
+		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_bNormalize) == 0xF44, "m_bNormalize in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0xF44");
+		static_assert(sizeof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector) == 0xF48, "C_OP_RemapCrossProductOfTwoVectorsToVector size should be 0xF48");
 	}
 }

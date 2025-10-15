@@ -17,21 +17,21 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RemapAverageScalarValuetoCP : public CS2::particles::CParticleFunctionPreEmission {
 		public:
-			particles::SetStatisticExpressionType_t m_nExpression; // 0x1c8 | Schema_DeclaredEnum | Size: 0x4
+			particles::SetStatisticExpressionType_t m_nExpression; // 0x1d8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flDecimalPlaces; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			int32_t m_nOutControlPointNumber; // 0x330 | Schema_Builtin | Size: 0x4
-			int32_t m_nOutVectorField; // 0x334 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nField; // 0x338 | Schema_DeclaredClass | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flDecimalPlaces; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
+			int32_t m_nOutControlPointNumber; // 0x350 | Schema_Builtin | Size: 0x4
+			int32_t m_nOutVectorField; // 0x354 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nField; // 0x358 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x340 | Schema_DeclaredClass | Size: 0x160
+			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x360 | Schema_DeclaredClass | Size: 0x170
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nExpression) == 0x1C8, "m_nExpression in C_OP_RemapAverageScalarValuetoCP should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_flDecimalPlaces) == 0x1D0, "m_flDecimalPlaces in C_OP_RemapAverageScalarValuetoCP should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nOutControlPointNumber) == 0x330, "m_nOutControlPointNumber in C_OP_RemapAverageScalarValuetoCP should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nOutVectorField) == 0x334, "m_nOutVectorField in C_OP_RemapAverageScalarValuetoCP should be at offset 0x334");
-		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nField) == 0x338, "m_nField in C_OP_RemapAverageScalarValuetoCP should be at offset 0x338");
-		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_flOutputRemap) == 0x340, "m_flOutputRemap in C_OP_RemapAverageScalarValuetoCP should be at offset 0x340");
-		static_assert(sizeof(CS2::particles::C_OP_RemapAverageScalarValuetoCP) == 0x4A0, "C_OP_RemapAverageScalarValuetoCP size should be 0x4A0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nExpression) == 0x1D8, "m_nExpression in C_OP_RemapAverageScalarValuetoCP should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_flDecimalPlaces) == 0x1E0, "m_flDecimalPlaces in C_OP_RemapAverageScalarValuetoCP should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nOutControlPointNumber) == 0x350, "m_nOutControlPointNumber in C_OP_RemapAverageScalarValuetoCP should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nOutVectorField) == 0x354, "m_nOutVectorField in C_OP_RemapAverageScalarValuetoCP should be at offset 0x354");
+		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_nField) == 0x358, "m_nField in C_OP_RemapAverageScalarValuetoCP should be at offset 0x358");
+		static_assert(offsetof(CS2::particles::C_OP_RemapAverageScalarValuetoCP, m_flOutputRemap) == 0x360, "m_flOutputRemap in C_OP_RemapAverageScalarValuetoCP should be at offset 0x360");
+		static_assert(sizeof(CS2::particles::C_OP_RemapAverageScalarValuetoCP) == 0x4D0, "C_OP_RemapAverageScalarValuetoCP size should be 0x4D0");
 	}
 }

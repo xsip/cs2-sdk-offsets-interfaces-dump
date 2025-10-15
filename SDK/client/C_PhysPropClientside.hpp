@@ -15,18 +15,18 @@ namespace CS2 {
 	namespace client {
 		class C_PhysPropClientside : public CS2::client::C_BreakableProp {
 		public:
-			entity2::GameTime_t m_flTouchDelta; // 0x1310 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_fDeathTime; // 0x1314 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecDamagePosition; // 0x1318 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecDamageDirection; // 0x1324 | Schema_Atomic | Size: 0xc
-			client::DamageTypes_t m_nDamageType; // 0x1330 | Schema_DeclaredEnum | Size: 0x4
+			entity2::GameTime_t m_flTouchDelta; // 0x1300 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_fDeathTime; // 0x1304 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecDamagePosition; // 0x1308 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecDamageDirection; // 0x1314 | Schema_Atomic | Size: 0xc
+			client::DamageTypes_t m_nDamageType; // 0x1320 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_flTouchDelta) == 0x1310, "m_flTouchDelta in C_PhysPropClientside should be at offset 0x1310");
-		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_fDeathTime) == 0x1314, "m_fDeathTime in C_PhysPropClientside should be at offset 0x1314");
-		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_vecDamagePosition) == 0x1318, "m_vecDamagePosition in C_PhysPropClientside should be at offset 0x1318");
-		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_vecDamageDirection) == 0x1324, "m_vecDamageDirection in C_PhysPropClientside should be at offset 0x1324");
-		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_nDamageType) == 0x1330, "m_nDamageType in C_PhysPropClientside should be at offset 0x1330");
-		static_assert(sizeof(CS2::client::C_PhysPropClientside) == 0x1340, "C_PhysPropClientside size should be 0x1340");
+		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_flTouchDelta) == 0x1300, "m_flTouchDelta in C_PhysPropClientside should be at offset 0x1300");
+		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_fDeathTime) == 0x1304, "m_fDeathTime in C_PhysPropClientside should be at offset 0x1304");
+		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_vecDamagePosition) == 0x1308, "m_vecDamagePosition in C_PhysPropClientside should be at offset 0x1308");
+		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_vecDamageDirection) == 0x1314, "m_vecDamageDirection in C_PhysPropClientside should be at offset 0x1314");
+		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_nDamageType) == 0x1320, "m_nDamageType in C_PhysPropClientside should be at offset 0x1320");
+		static_assert(sizeof(CS2::client::C_PhysPropClientside) == 0x1330, "C_PhysPropClientside size should be 0x1330");
 	}
 }

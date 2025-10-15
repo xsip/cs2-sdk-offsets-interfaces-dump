@@ -8,10 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace animgraphlib {
-			// Class size: 0x90
+			// Class size: 0x98
 			namespace CVectorAnimParameter /*: public CS2::animgraphlib::CConcreteAnimParameter*/ {
 				constexpr std::ptrdiff_t m_defaultValue = 0x80; // GlobalTypes::Vector m_defaultValue; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bInterpolate = 0x8c; // bool m_bInterpolate; |  0x8c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vectorType = 0x90; // animgraphlib::AnimParamVectorType_t m_vectorType; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

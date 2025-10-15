@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_ConstrainLineLength : public CS2::particles::CParticleFunctionConstraint {
 		public:
-			float32 m_flMinDistance; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxDistance; // 0x1c4 | Schema_Builtin | Size: 0x4
+			float32 m_flMinDistance; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxDistance; // 0x1d4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainLineLength, m_flMinDistance) == 0x1C0, "m_flMinDistance in C_OP_ConstrainLineLength should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_ConstrainLineLength, m_flMaxDistance) == 0x1C4, "m_flMaxDistance in C_OP_ConstrainLineLength should be at offset 0x1C4");
-		static_assert(sizeof(CS2::particles::C_OP_ConstrainLineLength) == 0x1C8, "C_OP_ConstrainLineLength size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainLineLength, m_flMinDistance) == 0x1D0, "m_flMinDistance in C_OP_ConstrainLineLength should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_ConstrainLineLength, m_flMaxDistance) == 0x1D4, "m_flMaxDistance in C_OP_ConstrainLineLength should be at offset 0x1D4");
+		static_assert(sizeof(CS2::particles::C_OP_ConstrainLineLength) == 0x1D8, "C_OP_ConstrainLineLength size should be 0x1D8");
 	}
 }

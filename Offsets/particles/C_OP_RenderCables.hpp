@@ -8,30 +8,31 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1468
+			// Class size: 0x1538
 			namespace C_OP_RenderCables /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_flRadiusScale = 0x210; // particleslib::CParticleCollectionFloatInput m_flRadiusScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flAlphaScale = 0x370; // particleslib::CParticleCollectionFloatInput m_flAlphaScale; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_vecColorScale = 0x4d0; // particleslib::CParticleCollectionVecInput m_vecColorScale; |  Schema_DeclaredClass | Size: 0x678
-				constexpr std::ptrdiff_t m_nColorBlendType = 0xb48; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_hMaterial = 0xb50; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nTextureRepetitionMode = 0xb58; // particles::TextureRepetitionMode_t m_nTextureRepetitionMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flTextureRepeatsPerSegment = 0xb60; // particleslib::CParticleCollectionFloatInput m_flTextureRepeatsPerSegment; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flTextureRepeatsCircumference = 0xcc0; // particleslib::CParticleCollectionFloatInput m_flTextureRepeatsCircumference; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flColorMapOffsetV = 0xe20; // particleslib::CParticleCollectionFloatInput m_flColorMapOffsetV; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flColorMapOffsetU = 0xf80; // particleslib::CParticleCollectionFloatInput m_flColorMapOffsetU; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flNormalMapOffsetV = 0x10e0; // particleslib::CParticleCollectionFloatInput m_flNormalMapOffsetV; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flNormalMapOffsetU = 0x1240; // particleslib::CParticleCollectionFloatInput m_flNormalMapOffsetU; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_bDrawCableCaps = 0x13a0; // bool m_bDrawCableCaps; |  0x13a0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flCapRoundness = 0x13a4; // float32 m_flCapRoundness; |  0x13a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCapOffsetAmount = 0x13a8; // float32 m_flCapOffsetAmount; |  0x13a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTessScale = 0x13ac; // float32 m_flTessScale; |  0x13ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMinTesselation = 0x13b0; // int32_t m_nMinTesselation; |  0x13b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxTesselation = 0x13b4; // int32_t m_nMaxTesselation; |  0x13b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRoundness = 0x13b8; // int32_t m_nRoundness; |  0x13b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LightingTransform = 0x13c0; // particleslib::CParticleTransformInput m_LightingTransform; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_MaterialFloatVars = 0x1428; // GlobalTypes::CUtlLeanVector< particles::FloatInputMaterialVariable_t > m_MaterialFloatVars; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_MaterialVecVars = 0x1448; // GlobalTypes::CUtlLeanVector< particles::VecInputMaterialVariable_t > m_MaterialVecVars; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_flRadiusScale = 0x220; // particleslib::CParticleCollectionFloatInput m_flRadiusScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flAlphaScale = 0x390; // particleslib::CParticleCollectionFloatInput m_flAlphaScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecColorScale = 0x500; // particleslib::CParticleCollectionVecInput m_vecColorScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nColorBlendType = 0xbb8; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hMaterial = 0xbc0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nTextureRepetitionMode = 0xbc8; // particles::TextureRepetitionMode_t m_nTextureRepetitionMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flTextureRepeatsPerSegment = 0xbd0; // particleslib::CParticleCollectionFloatInput m_flTextureRepeatsPerSegment; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flTextureRepeatsCircumference = 0xd40; // particleslib::CParticleCollectionFloatInput m_flTextureRepeatsCircumference; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flColorMapOffsetV = 0xeb0; // particleslib::CParticleCollectionFloatInput m_flColorMapOffsetV; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flColorMapOffsetU = 0x1020; // particleslib::CParticleCollectionFloatInput m_flColorMapOffsetU; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flNormalMapOffsetV = 0x1190; // particleslib::CParticleCollectionFloatInput m_flNormalMapOffsetV; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flNormalMapOffsetU = 0x1300; // particleslib::CParticleCollectionFloatInput m_flNormalMapOffsetU; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_bDrawCableCaps = 0x1470; // bool m_bDrawCableCaps; |  0x1470 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flCapRoundness = 0x1474; // float32 m_flCapRoundness; |  0x1474 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCapOffsetAmount = 0x1478; // float32 m_flCapOffsetAmount; |  0x1478 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTessScale = 0x147c; // float32 m_flTessScale; |  0x147c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMinTesselation = 0x1480; // int32_t m_nMinTesselation; |  0x1480 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxTesselation = 0x1484; // int32_t m_nMaxTesselation; |  0x1484 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRoundness = 0x1488; // int32_t m_nRoundness; |  0x1488 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nForceRoundnessFixed = 0x148c; // bool m_nForceRoundnessFixed; |  0x148c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_LightingTransform = 0x1490; // particleslib::CParticleTransformInput m_LightingTransform; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_MaterialFloatVars = 0x14f8; // GlobalTypes::CUtlLeanVector< particles::FloatInputMaterialVariable_t > m_MaterialFloatVars; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_MaterialVecVars = 0x1518; // GlobalTypes::CUtlLeanVector< particles::VecInputMaterialVariable_t > m_MaterialVecVars; |  Schema_Atomic | Size: 0x10
 			}
 		}
 	}

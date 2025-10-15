@@ -9,6 +9,7 @@
 #include <SDK/particleslib/CParticleCollectionRendererFloatInput.hpp>
 #include <SDK/particles/ParticleOrientationChoiceList_t.hpp>
 #include <SDK/particles/ParticleLightingQuality_t.hpp>
+#include <SDK/particleslib/CParticleCollectionRendererVecInput.hpp>
 #include <SDK/particles/CReplicationParameters.hpp>
 
 
@@ -17,72 +18,74 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderSprites : public CS2::particles::CBaseRendererSource2 {
 		public:
-			particleslib::CParticleCollectionRendererFloatInput m_nSequenceOverride; // 0x2c18 | Schema_DeclaredClass | Size: 0x160
-			bool m_bSequenceNumbersAreRawSequenceIndices; // 0x2d78 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererFloatInput m_nSequenceOverride; // 0x2de8 | Schema_DeclaredClass | Size: 0x170
+			bool m_bSequenceNumbersAreRawSequenceIndices; // 0x2f58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x2d7c | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nOrientationControlPoint; // 0x2d80 | Schema_Builtin | Size: 0x4
-			bool m_bUseYawWithNormalAligned; // 0x2d84 | Schema_Builtin | Size: 0x1
+			particles::ParticleOrientationChoiceList_t m_nOrientationType; // 0x2f5c | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nOrientationControlPoint; // 0x2f60 | Schema_Builtin | Size: 0x4
+			bool m_bUseYawWithNormalAligned; // 0x2f64 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particleslib::CParticleCollectionRendererFloatInput m_flMinSize; // 0x2d88 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flMaxSize; // 0x2ee8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flAlphaAdjustWithSizeAdjust; // 0x3048 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flStartFadeSize; // 0x31a8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flEndFadeSize; // 0x3308 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flStartFadeDot; // 0x3468 | Schema_Builtin | Size: 0x4
-			float32 m_flEndFadeDot; // 0x346c | Schema_Builtin | Size: 0x4
-			bool m_bDistanceAlpha; // 0x3470 | Schema_Builtin | Size: 0x1
-			bool m_bSoftEdges; // 0x3471 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererFloatInput m_flMinSize; // 0x2f68 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flMaxSize; // 0x30d8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flAlphaAdjustWithSizeAdjust; // 0x3248 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flStartFadeSize; // 0x33b8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flEndFadeSize; // 0x3528 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flStartFadeDot; // 0x3698 | Schema_Builtin | Size: 0x4
+			float32 m_flEndFadeDot; // 0x369c | Schema_Builtin | Size: 0x4
+			bool m_bDistanceAlpha; // 0x36a0 | Schema_Builtin | Size: 0x1
+			bool m_bSoftEdges; // 0x36a1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flEdgeSoftnessStart; // 0x3474 | Schema_Builtin | Size: 0x4
-			float32 m_flEdgeSoftnessEnd; // 0x3478 | Schema_Builtin | Size: 0x4
-			bool m_bOutline; // 0x347c | Schema_Builtin | Size: 0x1
-			GlobalTypes::Color m_OutlineColor; // 0x347d | Schema_Atomic | Size: 0x4
+			float32 m_flEdgeSoftnessStart; // 0x36a4 | Schema_Builtin | Size: 0x4
+			float32 m_flEdgeSoftnessEnd; // 0x36a8 | Schema_Builtin | Size: 0x4
+			bool m_bOutline; // 0x36ac | Schema_Builtin | Size: 0x1
+			GlobalTypes::Color m_OutlineColor; // 0x36ad | Schema_Atomic | Size: 0x4
 			S2_PAD(0x3);
-			int32_t m_nOutlineAlpha; // 0x3484 | Schema_Builtin | Size: 0x4
-			float32 m_flOutlineStart0; // 0x3488 | Schema_Builtin | Size: 0x4
-			float32 m_flOutlineStart1; // 0x348c | Schema_Builtin | Size: 0x4
-			float32 m_flOutlineEnd0; // 0x3490 | Schema_Builtin | Size: 0x4
-			float32 m_flOutlineEnd1; // 0x3494 | Schema_Builtin | Size: 0x4
-			particles::ParticleLightingQuality_t m_nLightingMode; // 0x3498 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nOutlineAlpha; // 0x36b4 | Schema_Builtin | Size: 0x4
+			float32 m_flOutlineStart0; // 0x36b8 | Schema_Builtin | Size: 0x4
+			float32 m_flOutlineStart1; // 0x36bc | Schema_Builtin | Size: 0x4
+			float32 m_flOutlineEnd0; // 0x36c0 | Schema_Builtin | Size: 0x4
+			float32 m_flOutlineEnd1; // 0x36c4 | Schema_Builtin | Size: 0x4
+			particles::ParticleLightingQuality_t m_nLightingMode; // 0x36c8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionRendererFloatInput m_flLightingTessellation; // 0x34a0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionRendererFloatInput m_flLightingDirectionality; // 0x3600 | Schema_DeclaredClass | Size: 0x160
-			bool m_bParticleShadows; // 0x3760 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionRendererVecInput m_vecLightingOverride; // 0x36d0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CParticleCollectionRendererFloatInput m_flLightingTessellation; // 0x3d88 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionRendererFloatInput m_flLightingDirectionality; // 0x3ef8 | Schema_DeclaredClass | Size: 0x170
+			bool m_bParticleShadows; // 0x4068 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flShadowDensity; // 0x3764 | Schema_Builtin | Size: 0x4
-			particles::CReplicationParameters m_replicationParameters; // 0x3768 | Schema_DeclaredClass | Size: 0x1118
+			float32 m_flShadowDensity; // 0x406c | Schema_Builtin | Size: 0x4
+			particles::CReplicationParameters m_replicationParameters; // 0x4070 | Schema_DeclaredClass | Size: 0x11c8
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nSequenceOverride) == 0x2C18, "m_nSequenceOverride in C_OP_RenderSprites should be at offset 0x2C18");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bSequenceNumbersAreRawSequenceIndices) == 0x2D78, "m_bSequenceNumbersAreRawSequenceIndices in C_OP_RenderSprites should be at offset 0x2D78");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nOrientationType) == 0x2D7C, "m_nOrientationType in C_OP_RenderSprites should be at offset 0x2D7C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nOrientationControlPoint) == 0x2D80, "m_nOrientationControlPoint in C_OP_RenderSprites should be at offset 0x2D80");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bUseYawWithNormalAligned) == 0x2D84, "m_bUseYawWithNormalAligned in C_OP_RenderSprites should be at offset 0x2D84");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flMinSize) == 0x2D88, "m_flMinSize in C_OP_RenderSprites should be at offset 0x2D88");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flMaxSize) == 0x2EE8, "m_flMaxSize in C_OP_RenderSprites should be at offset 0x2EE8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flAlphaAdjustWithSizeAdjust) == 0x3048, "m_flAlphaAdjustWithSizeAdjust in C_OP_RenderSprites should be at offset 0x3048");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flStartFadeSize) == 0x31A8, "m_flStartFadeSize in C_OP_RenderSprites should be at offset 0x31A8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEndFadeSize) == 0x3308, "m_flEndFadeSize in C_OP_RenderSprites should be at offset 0x3308");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flStartFadeDot) == 0x3468, "m_flStartFadeDot in C_OP_RenderSprites should be at offset 0x3468");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEndFadeDot) == 0x346C, "m_flEndFadeDot in C_OP_RenderSprites should be at offset 0x346C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bDistanceAlpha) == 0x3470, "m_bDistanceAlpha in C_OP_RenderSprites should be at offset 0x3470");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bSoftEdges) == 0x3471, "m_bSoftEdges in C_OP_RenderSprites should be at offset 0x3471");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEdgeSoftnessStart) == 0x3474, "m_flEdgeSoftnessStart in C_OP_RenderSprites should be at offset 0x3474");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEdgeSoftnessEnd) == 0x3478, "m_flEdgeSoftnessEnd in C_OP_RenderSprites should be at offset 0x3478");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bOutline) == 0x347C, "m_bOutline in C_OP_RenderSprites should be at offset 0x347C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_OutlineColor) == 0x347D, "m_OutlineColor in C_OP_RenderSprites should be at offset 0x347D");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nOutlineAlpha) == 0x3484, "m_nOutlineAlpha in C_OP_RenderSprites should be at offset 0x3484");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineStart0) == 0x3488, "m_flOutlineStart0 in C_OP_RenderSprites should be at offset 0x3488");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineStart1) == 0x348C, "m_flOutlineStart1 in C_OP_RenderSprites should be at offset 0x348C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineEnd0) == 0x3490, "m_flOutlineEnd0 in C_OP_RenderSprites should be at offset 0x3490");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineEnd1) == 0x3494, "m_flOutlineEnd1 in C_OP_RenderSprites should be at offset 0x3494");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nLightingMode) == 0x3498, "m_nLightingMode in C_OP_RenderSprites should be at offset 0x3498");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flLightingTessellation) == 0x34A0, "m_flLightingTessellation in C_OP_RenderSprites should be at offset 0x34A0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flLightingDirectionality) == 0x3600, "m_flLightingDirectionality in C_OP_RenderSprites should be at offset 0x3600");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bParticleShadows) == 0x3760, "m_bParticleShadows in C_OP_RenderSprites should be at offset 0x3760");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flShadowDensity) == 0x3764, "m_flShadowDensity in C_OP_RenderSprites should be at offset 0x3764");
-		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_replicationParameters) == 0x3768, "m_replicationParameters in C_OP_RenderSprites should be at offset 0x3768");
-		static_assert(sizeof(CS2::particles::C_OP_RenderSprites) == 0x4888, "C_OP_RenderSprites size should be 0x4888");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nSequenceOverride) == 0x2DE8, "m_nSequenceOverride in C_OP_RenderSprites should be at offset 0x2DE8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bSequenceNumbersAreRawSequenceIndices) == 0x2F58, "m_bSequenceNumbersAreRawSequenceIndices in C_OP_RenderSprites should be at offset 0x2F58");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nOrientationType) == 0x2F5C, "m_nOrientationType in C_OP_RenderSprites should be at offset 0x2F5C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nOrientationControlPoint) == 0x2F60, "m_nOrientationControlPoint in C_OP_RenderSprites should be at offset 0x2F60");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bUseYawWithNormalAligned) == 0x2F64, "m_bUseYawWithNormalAligned in C_OP_RenderSprites should be at offset 0x2F64");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flMinSize) == 0x2F68, "m_flMinSize in C_OP_RenderSprites should be at offset 0x2F68");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flMaxSize) == 0x30D8, "m_flMaxSize in C_OP_RenderSprites should be at offset 0x30D8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flAlphaAdjustWithSizeAdjust) == 0x3248, "m_flAlphaAdjustWithSizeAdjust in C_OP_RenderSprites should be at offset 0x3248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flStartFadeSize) == 0x33B8, "m_flStartFadeSize in C_OP_RenderSprites should be at offset 0x33B8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEndFadeSize) == 0x3528, "m_flEndFadeSize in C_OP_RenderSprites should be at offset 0x3528");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flStartFadeDot) == 0x3698, "m_flStartFadeDot in C_OP_RenderSprites should be at offset 0x3698");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEndFadeDot) == 0x369C, "m_flEndFadeDot in C_OP_RenderSprites should be at offset 0x369C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bDistanceAlpha) == 0x36A0, "m_bDistanceAlpha in C_OP_RenderSprites should be at offset 0x36A0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bSoftEdges) == 0x36A1, "m_bSoftEdges in C_OP_RenderSprites should be at offset 0x36A1");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEdgeSoftnessStart) == 0x36A4, "m_flEdgeSoftnessStart in C_OP_RenderSprites should be at offset 0x36A4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flEdgeSoftnessEnd) == 0x36A8, "m_flEdgeSoftnessEnd in C_OP_RenderSprites should be at offset 0x36A8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bOutline) == 0x36AC, "m_bOutline in C_OP_RenderSprites should be at offset 0x36AC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_OutlineColor) == 0x36AD, "m_OutlineColor in C_OP_RenderSprites should be at offset 0x36AD");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nOutlineAlpha) == 0x36B4, "m_nOutlineAlpha in C_OP_RenderSprites should be at offset 0x36B4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineStart0) == 0x36B8, "m_flOutlineStart0 in C_OP_RenderSprites should be at offset 0x36B8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineStart1) == 0x36BC, "m_flOutlineStart1 in C_OP_RenderSprites should be at offset 0x36BC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineEnd0) == 0x36C0, "m_flOutlineEnd0 in C_OP_RenderSprites should be at offset 0x36C0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flOutlineEnd1) == 0x36C4, "m_flOutlineEnd1 in C_OP_RenderSprites should be at offset 0x36C4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nLightingMode) == 0x36C8, "m_nLightingMode in C_OP_RenderSprites should be at offset 0x36C8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_vecLightingOverride) == 0x36D0, "m_vecLightingOverride in C_OP_RenderSprites should be at offset 0x36D0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flLightingTessellation) == 0x3D88, "m_flLightingTessellation in C_OP_RenderSprites should be at offset 0x3D88");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flLightingDirectionality) == 0x3EF8, "m_flLightingDirectionality in C_OP_RenderSprites should be at offset 0x3EF8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bParticleShadows) == 0x4068, "m_bParticleShadows in C_OP_RenderSprites should be at offset 0x4068");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flShadowDensity) == 0x406C, "m_flShadowDensity in C_OP_RenderSprites should be at offset 0x406C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_replicationParameters) == 0x4070, "m_replicationParameters in C_OP_RenderSprites should be at offset 0x4070");
+		static_assert(sizeof(CS2::particles::C_OP_RenderSprites) == 0x5240, "C_OP_RenderSprites size should be 0x5240");
 	}
 }

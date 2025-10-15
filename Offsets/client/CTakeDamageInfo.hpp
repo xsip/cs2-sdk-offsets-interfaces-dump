@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x110
+			// Class size: 0x128
 			namespace CTakeDamageInfo /**/ {
 				constexpr std::ptrdiff_t m_vecDamageForce = 0x8; // GlobalTypes::Vector m_vecDamageForce; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecDamagePosition = 0x14; // GlobalTypes::Vector m_vecDamagePosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecReportedPosition = 0x20; // GlobalTypes::Vector m_vecReportedPosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecDamagePosition = 0x14; // GlobalTypes::VectorWS m_vecDamagePosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecReportedPosition = 0x20; // GlobalTypes::VectorWS m_vecReportedPosition; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vecDamageDirection = 0x2c; // GlobalTypes::Vector m_vecDamageDirection; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_hInflictor = 0x38; // client::CHandle< client::C_BaseEntity > m_hInflictor; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_hAttacker = 0x3c; // client::CHandle< client::C_BaseEntity > m_hAttacker; |  Schema_Atomic | Size: 0x4
@@ -30,7 +30,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iHitGroupId = 0x80; // client::HitGroup_t m_iHitGroupId; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nNumObjectsPenetrated = 0x84; // int32_t m_nNumObjectsPenetrated; |  0x84 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFriendlyFireDamageReductionRatio = 0x88; // float32 m_flFriendlyFireDamageReductionRatio; |  0x88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bInTakeDamageFlow = 0x104; // bool m_bInTakeDamageFlow; |  0x104 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nDestructibleHitGroupsToForceDestroy = 0x108; // GlobalTypes::CUtlVector< client::DestructibleHitGroupToDestroy_t > m_nDestructibleHitGroupsToForceDestroy; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bInTakeDamageFlow = 0x120; // bool m_bInTakeDamageFlow; |  0x120 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

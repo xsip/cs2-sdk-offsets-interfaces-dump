@@ -28,70 +28,70 @@ namespace CS2 {
 	namespace client {
 		class C_BasePlayerPawn : public CS2::client::C_BaseCombatCharacter {
 		public:
-			client::CPlayer_WeaponServices* m_pWeaponServices; // 0x1408 | Schema_Ptr | Size: 0x8
-			client::CPlayer_ItemServices* m_pItemServices; // 0x1410 | Schema_Ptr | Size: 0x8
-			client::CPlayer_AutoaimServices* m_pAutoaimServices; // 0x1418 | Schema_Ptr | Size: 0x8
-			client::CPlayer_ObserverServices* m_pObserverServices; // 0x1420 | Schema_Ptr | Size: 0x8
-			client::CPlayer_WaterServices* m_pWaterServices; // 0x1428 | Schema_Ptr | Size: 0x8
-			client::CPlayer_UseServices* m_pUseServices; // 0x1430 | Schema_Ptr | Size: 0x8
-			client::CPlayer_FlashlightServices* m_pFlashlightServices; // 0x1438 | Schema_Ptr | Size: 0x8
-			client::CPlayer_CameraServices* m_pCameraServices; // 0x1440 | Schema_Ptr | Size: 0x8
-			client::CPlayer_MovementServices* m_pMovementServices; // 0x1448 | Schema_Ptr | Size: 0x8
+			client::CPlayer_WeaponServices* m_pWeaponServices; // 0x13f0 | Schema_Ptr | Size: 0x8
+			client::CPlayer_ItemServices* m_pItemServices; // 0x13f8 | Schema_Ptr | Size: 0x8
+			client::CPlayer_AutoaimServices* m_pAutoaimServices; // 0x1400 | Schema_Ptr | Size: 0x8
+			client::CPlayer_ObserverServices* m_pObserverServices; // 0x1408 | Schema_Ptr | Size: 0x8
+			client::CPlayer_WaterServices* m_pWaterServices; // 0x1410 | Schema_Ptr | Size: 0x8
+			client::CPlayer_UseServices* m_pUseServices; // 0x1418 | Schema_Ptr | Size: 0x8
+			client::CPlayer_FlashlightServices* m_pFlashlightServices; // 0x1420 | Schema_Ptr | Size: 0x8
+			client::CPlayer_CameraServices* m_pCameraServices; // 0x1428 | Schema_Ptr | Size: 0x8
+			client::CPlayer_MovementServices* m_pMovementServices; // 0x1430 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x8);
-			// client::C_UtlVectorEmbeddedNetworkVar< client::ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0x1458 | Schema_Atomic | Size: 0x68
-			char  m_ServerViewAngleChanges[0x68]; // 0x1458 | Schema_Atomic | Size: 0x68
-			GlobalTypes::QAngle v_angle; // 0x14c0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle v_anglePrevious; // 0x14cc | Schema_Atomic | Size: 0xc
-			uint32_t m_iHideHUD; // 0x14d8 | Schema_Builtin | Size: 0x4
+			// client::C_UtlVectorEmbeddedNetworkVar< client::ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0x1440 | Schema_Atomic | Size: 0x68
+			char  m_ServerViewAngleChanges[0x68]; // 0x1440 | Schema_Atomic | Size: 0x68
+			GlobalTypes::QAngle v_angle; // 0x14a8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle v_anglePrevious; // 0x14b4 | Schema_Atomic | Size: 0xc
+			uint32_t m_iHideHUD; // 0x14c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			client::sky3dparams_t m_skybox3d; // 0x14e0 | Schema_DeclaredClass | Size: 0x90
-			entity2::GameTime_t m_flDeathTime; // 0x1570 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecPredictionError; // 0x1574 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flPredictionErrorTime; // 0x1580 | Schema_DeclaredClass | Size: 0x4
+			client::sky3dparams_t m_skybox3d; // 0x14c8 | Schema_DeclaredClass | Size: 0x90
+			entity2::GameTime_t m_flDeathTime; // 0x1558 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecPredictionError; // 0x155c | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flPredictionErrorTime; // 0x1568 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x1c);
-			GlobalTypes::Vector m_vecLastCameraSetupLocalOrigin; // 0x15a0 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flLastCameraSetupTime; // 0x15ac | Schema_DeclaredClass | Size: 0x4
-			float32 m_flFOVSensitivityAdjust; // 0x15b0 | Schema_Builtin | Size: 0x4
-			float32 m_flMouseSensitivity; // 0x15b4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vOldOrigin; // 0x15b8 | Schema_Atomic | Size: 0xc
-			float32 m_flOldSimulationTime; // 0x15c4 | Schema_Builtin | Size: 0x4
-			int32_t m_nLastExecutedCommandNumber; // 0x15c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nLastExecutedCommandTick; // 0x15cc | Schema_Builtin | Size: 0x4
-			// client::CHandle< client::CBasePlayerController > m_hController; // 0x15d0 | Schema_Atomic | Size: 0x4
-			char  m_hController[0x4]; // 0x15d0 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::CBasePlayerController > m_hDefaultController; // 0x15d4 | Schema_Atomic | Size: 0x4
-			char  m_hDefaultController[0x4]; // 0x15d4 | Schema_Atomic | Size: 0x4
-			bool m_bIsSwappingToPredictableController; // 0x15d8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vecLastCameraSetupLocalOrigin; // 0x1588 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flLastCameraSetupTime; // 0x1594 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flFOVSensitivityAdjust; // 0x1598 | Schema_Builtin | Size: 0x4
+			float32 m_flMouseSensitivity; // 0x159c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vOldOrigin; // 0x15a0 | Schema_Atomic | Size: 0xc
+			float32 m_flOldSimulationTime; // 0x15ac | Schema_Builtin | Size: 0x4
+			int32_t m_nLastExecutedCommandNumber; // 0x15b0 | Schema_Builtin | Size: 0x4
+			int32_t m_nLastExecutedCommandTick; // 0x15b4 | Schema_Builtin | Size: 0x4
+			// client::CHandle< client::CBasePlayerController > m_hController; // 0x15b8 | Schema_Atomic | Size: 0x4
+			char  m_hController[0x4]; // 0x15b8 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::CBasePlayerController > m_hDefaultController; // 0x15bc | Schema_Atomic | Size: 0x4
+			char  m_hDefaultController[0x4]; // 0x15bc | Schema_Atomic | Size: 0x4
+			bool m_bIsSwappingToPredictableController; // 0x15c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pWeaponServices) == 0x1408, "m_pWeaponServices in C_BasePlayerPawn should be at offset 0x1408");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pItemServices) == 0x1410, "m_pItemServices in C_BasePlayerPawn should be at offset 0x1410");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pAutoaimServices) == 0x1418, "m_pAutoaimServices in C_BasePlayerPawn should be at offset 0x1418");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pObserverServices) == 0x1420, "m_pObserverServices in C_BasePlayerPawn should be at offset 0x1420");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pWaterServices) == 0x1428, "m_pWaterServices in C_BasePlayerPawn should be at offset 0x1428");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pUseServices) == 0x1430, "m_pUseServices in C_BasePlayerPawn should be at offset 0x1430");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pFlashlightServices) == 0x1438, "m_pFlashlightServices in C_BasePlayerPawn should be at offset 0x1438");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pCameraServices) == 0x1440, "m_pCameraServices in C_BasePlayerPawn should be at offset 0x1440");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pMovementServices) == 0x1448, "m_pMovementServices in C_BasePlayerPawn should be at offset 0x1448");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_ServerViewAngleChanges) == 0x1458, "m_ServerViewAngleChanges in C_BasePlayerPawn should be at offset 0x1458");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, v_angle) == 0x14C0, "v_angle in C_BasePlayerPawn should be at offset 0x14C0");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, v_anglePrevious) == 0x14CC, "v_anglePrevious in C_BasePlayerPawn should be at offset 0x14CC");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_iHideHUD) == 0x14D8, "m_iHideHUD in C_BasePlayerPawn should be at offset 0x14D8");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_skybox3d) == 0x14E0, "m_skybox3d in C_BasePlayerPawn should be at offset 0x14E0");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flDeathTime) == 0x1570, "m_flDeathTime in C_BasePlayerPawn should be at offset 0x1570");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_vecPredictionError) == 0x1574, "m_vecPredictionError in C_BasePlayerPawn should be at offset 0x1574");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flPredictionErrorTime) == 0x1580, "m_flPredictionErrorTime in C_BasePlayerPawn should be at offset 0x1580");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_vecLastCameraSetupLocalOrigin) == 0x15A0, "m_vecLastCameraSetupLocalOrigin in C_BasePlayerPawn should be at offset 0x15A0");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flLastCameraSetupTime) == 0x15AC, "m_flLastCameraSetupTime in C_BasePlayerPawn should be at offset 0x15AC");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flFOVSensitivityAdjust) == 0x15B0, "m_flFOVSensitivityAdjust in C_BasePlayerPawn should be at offset 0x15B0");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flMouseSensitivity) == 0x15B4, "m_flMouseSensitivity in C_BasePlayerPawn should be at offset 0x15B4");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_vOldOrigin) == 0x15B8, "m_vOldOrigin in C_BasePlayerPawn should be at offset 0x15B8");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flOldSimulationTime) == 0x15C4, "m_flOldSimulationTime in C_BasePlayerPawn should be at offset 0x15C4");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_nLastExecutedCommandNumber) == 0x15C8, "m_nLastExecutedCommandNumber in C_BasePlayerPawn should be at offset 0x15C8");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_nLastExecutedCommandTick) == 0x15CC, "m_nLastExecutedCommandTick in C_BasePlayerPawn should be at offset 0x15CC");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_hController) == 0x15D0, "m_hController in C_BasePlayerPawn should be at offset 0x15D0");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_hDefaultController) == 0x15D4, "m_hDefaultController in C_BasePlayerPawn should be at offset 0x15D4");
-		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_bIsSwappingToPredictableController) == 0x15D8, "m_bIsSwappingToPredictableController in C_BasePlayerPawn should be at offset 0x15D8");
-		static_assert(sizeof(CS2::client::C_BasePlayerPawn) == 0x15E0, "C_BasePlayerPawn size should be 0x15E0");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pWeaponServices) == 0x13F0, "m_pWeaponServices in C_BasePlayerPawn should be at offset 0x13F0");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pItemServices) == 0x13F8, "m_pItemServices in C_BasePlayerPawn should be at offset 0x13F8");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pAutoaimServices) == 0x1400, "m_pAutoaimServices in C_BasePlayerPawn should be at offset 0x1400");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pObserverServices) == 0x1408, "m_pObserverServices in C_BasePlayerPawn should be at offset 0x1408");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pWaterServices) == 0x1410, "m_pWaterServices in C_BasePlayerPawn should be at offset 0x1410");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pUseServices) == 0x1418, "m_pUseServices in C_BasePlayerPawn should be at offset 0x1418");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pFlashlightServices) == 0x1420, "m_pFlashlightServices in C_BasePlayerPawn should be at offset 0x1420");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pCameraServices) == 0x1428, "m_pCameraServices in C_BasePlayerPawn should be at offset 0x1428");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pMovementServices) == 0x1430, "m_pMovementServices in C_BasePlayerPawn should be at offset 0x1430");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_ServerViewAngleChanges) == 0x1440, "m_ServerViewAngleChanges in C_BasePlayerPawn should be at offset 0x1440");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, v_angle) == 0x14A8, "v_angle in C_BasePlayerPawn should be at offset 0x14A8");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, v_anglePrevious) == 0x14B4, "v_anglePrevious in C_BasePlayerPawn should be at offset 0x14B4");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_iHideHUD) == 0x14C0, "m_iHideHUD in C_BasePlayerPawn should be at offset 0x14C0");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_skybox3d) == 0x14C8, "m_skybox3d in C_BasePlayerPawn should be at offset 0x14C8");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flDeathTime) == 0x1558, "m_flDeathTime in C_BasePlayerPawn should be at offset 0x1558");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_vecPredictionError) == 0x155C, "m_vecPredictionError in C_BasePlayerPawn should be at offset 0x155C");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flPredictionErrorTime) == 0x1568, "m_flPredictionErrorTime in C_BasePlayerPawn should be at offset 0x1568");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_vecLastCameraSetupLocalOrigin) == 0x1588, "m_vecLastCameraSetupLocalOrigin in C_BasePlayerPawn should be at offset 0x1588");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flLastCameraSetupTime) == 0x1594, "m_flLastCameraSetupTime in C_BasePlayerPawn should be at offset 0x1594");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flFOVSensitivityAdjust) == 0x1598, "m_flFOVSensitivityAdjust in C_BasePlayerPawn should be at offset 0x1598");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flMouseSensitivity) == 0x159C, "m_flMouseSensitivity in C_BasePlayerPawn should be at offset 0x159C");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_vOldOrigin) == 0x15A0, "m_vOldOrigin in C_BasePlayerPawn should be at offset 0x15A0");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_flOldSimulationTime) == 0x15AC, "m_flOldSimulationTime in C_BasePlayerPawn should be at offset 0x15AC");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_nLastExecutedCommandNumber) == 0x15B0, "m_nLastExecutedCommandNumber in C_BasePlayerPawn should be at offset 0x15B0");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_nLastExecutedCommandTick) == 0x15B4, "m_nLastExecutedCommandTick in C_BasePlayerPawn should be at offset 0x15B4");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_hController) == 0x15B8, "m_hController in C_BasePlayerPawn should be at offset 0x15B8");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_hDefaultController) == 0x15BC, "m_hDefaultController in C_BasePlayerPawn should be at offset 0x15BC");
+		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_bIsSwappingToPredictableController) == 0x15C0, "m_bIsSwappingToPredictableController in C_BasePlayerPawn should be at offset 0x15C0");
+		static_assert(sizeof(CS2::client::C_BasePlayerPawn) == 0x15C8, "C_BasePlayerPawn size should be 0x15C8");
 	}
 }

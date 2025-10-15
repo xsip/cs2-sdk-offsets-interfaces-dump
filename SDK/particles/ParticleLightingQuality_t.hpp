@@ -6,6 +6,9 @@
 namespace CS2 {
 	namespace particles {
 		enum ParticleLightingQuality_t : std::uint32_t {
+			ParticleLightingQuality_t_PARTICLE_LIGHTING_ADD_EXTRA_LIGHT = 0x4,
+			ParticleLightingQuality_t_PARTICLE_LIGHTING_OVERRIDE_COLOR = 0x3,
+			ParticleLightingQuality_t_PARTICLE_LIGHTING_OVERRIDE_POSITION = 0x2,
 			ParticleLightingQuality_t_PARTICLE_LIGHTING_PER_PARTICLE = 0x0,
 			ParticleLightingQuality_t_PARTICLE_LIGHTING_PER_PIXEL = 0xffffffff,
 			ParticleLightingQuality_t_PARTICLE_LIGHTING_PER_VERTEX = 0x1

@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x320
+			// Class size: 0x340
 			namespace C_OP_EndCapTimedFreeze /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flFreezeTime = 0x1c0; // particleslib::CParticleCollectionFloatInput m_flFreezeTime; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_flFreezeTime = 0x1d0; // particleslib::CParticleCollectionFloatInput m_flFreezeTime; |  Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

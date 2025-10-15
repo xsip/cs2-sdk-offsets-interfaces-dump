@@ -22,73 +22,73 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderStandardLight : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			particles::ParticleLightTypeChoiceList_t m_nLightType; // 0x210 | Schema_DeclaredEnum | Size: 0x4
+			particles::ParticleLightTypeChoiceList_t m_nLightType; // 0x220 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x218 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x890 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x228 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x8e0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flIntensity; // 0x898 | Schema_DeclaredClass | Size: 0x160
-			bool m_bCastShadows; // 0x9f8 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flIntensity; // 0x8e8 | Schema_DeclaredClass | Size: 0x170
+			bool m_bCastShadows; // 0xa58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			particleslib::CParticleCollectionFloatInput m_flTheta; // 0xa00 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flPhi; // 0xb60 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flRadiusMultiplier; // 0xcc0 | Schema_DeclaredClass | Size: 0x160
-			particles::StandardLightingAttenuationStyle_t m_nAttenuationStyle; // 0xe20 | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flTheta; // 0xa60 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flPhi; // 0xbd0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flRadiusMultiplier; // 0xd40 | Schema_DeclaredClass | Size: 0x170
+			particles::StandardLightingAttenuationStyle_t m_nAttenuationStyle; // 0xeb0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flFalloffLinearity; // 0xe28 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flFiftyPercentFalloff; // 0xf88 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionFloatInput m_flZeroPercentFalloff; // 0x10e8 | Schema_DeclaredClass | Size: 0x160
-			bool m_bRenderDiffuse; // 0x1248 | Schema_Builtin | Size: 0x1
-			bool m_bRenderSpecular; // 0x1249 | Schema_Builtin | Size: 0x1
+			particleslib::CParticleCollectionFloatInput m_flFalloffLinearity; // 0xeb8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flFiftyPercentFalloff; // 0x1028 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionFloatInput m_flZeroPercentFalloff; // 0x1198 | Schema_DeclaredClass | Size: 0x170
+			bool m_bRenderDiffuse; // 0x1308 | Schema_Builtin | Size: 0x1
+			bool m_bRenderSpecular; // 0x1309 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlString m_lightCookie; // 0x1250 | Schema_Atomic | Size: 0x8
-			int32_t m_nPriority; // 0x1258 | Schema_Builtin | Size: 0x4
-			particles::ParticleLightFogLightingMode_t m_nFogLightingMode; // 0x125c | Schema_DeclaredEnum | Size: 0x4
-			particleslib::CParticleCollectionRendererFloatInput m_flFogContribution; // 0x1260 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleLightBehaviorChoiceList_t m_nCapsuleLightBehavior; // 0x13c0 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flCapsuleLength; // 0x13c4 | Schema_Builtin | Size: 0x4
-			bool m_bReverseOrder; // 0x13c8 | Schema_Builtin | Size: 0x1
-			bool m_bClosedLoop; // 0x13c9 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_lightCookie; // 0x1310 | Schema_Atomic | Size: 0x8
+			int32_t m_nPriority; // 0x1318 | Schema_Builtin | Size: 0x4
+			particles::ParticleLightFogLightingMode_t m_nFogLightingMode; // 0x131c | Schema_DeclaredEnum | Size: 0x4
+			particleslib::CParticleCollectionRendererFloatInput m_flFogContribution; // 0x1320 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleLightBehaviorChoiceList_t m_nCapsuleLightBehavior; // 0x1490 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flCapsuleLength; // 0x1494 | Schema_Builtin | Size: 0x4
+			bool m_bReverseOrder; // 0x1498 | Schema_Builtin | Size: 0x1
+			bool m_bClosedLoop; // 0x1499 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			particles::ParticleAttributeIndex_t m_nPrevPntSource; // 0x13cc | Schema_DeclaredClass | Size: 0x4
-			float32 m_flMaxLength; // 0x13d0 | Schema_Builtin | Size: 0x4
-			float32 m_flMinLength; // 0x13d4 | Schema_Builtin | Size: 0x4
-			bool m_bIgnoreDT; // 0x13d8 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nPrevPntSource; // 0x149c | Schema_DeclaredClass | Size: 0x4
+			float32 m_flMaxLength; // 0x14a0 | Schema_Builtin | Size: 0x4
+			float32 m_flMinLength; // 0x14a4 | Schema_Builtin | Size: 0x4
+			bool m_bIgnoreDT; // 0x14a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flConstrainRadiusToLengthRatio; // 0x13dc | Schema_Builtin | Size: 0x4
-			float32 m_flLengthScale; // 0x13e0 | Schema_Builtin | Size: 0x4
-			float32 m_flLengthFadeInTime; // 0x13e4 | Schema_Builtin | Size: 0x4
+			float32 m_flConstrainRadiusToLengthRatio; // 0x14ac | Schema_Builtin | Size: 0x4
+			float32 m_flLengthScale; // 0x14b0 | Schema_Builtin | Size: 0x4
+			float32 m_flLengthFadeInTime; // 0x14b4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nLightType) == 0x210, "m_nLightType in C_OP_RenderStandardLight should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_vecColorScale) == 0x218, "m_vecColorScale in C_OP_RenderStandardLight should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nColorBlendType) == 0x890, "m_nColorBlendType in C_OP_RenderStandardLight should be at offset 0x890");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flIntensity) == 0x898, "m_flIntensity in C_OP_RenderStandardLight should be at offset 0x898");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bCastShadows) == 0x9F8, "m_bCastShadows in C_OP_RenderStandardLight should be at offset 0x9F8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flTheta) == 0xA00, "m_flTheta in C_OP_RenderStandardLight should be at offset 0xA00");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flPhi) == 0xB60, "m_flPhi in C_OP_RenderStandardLight should be at offset 0xB60");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flRadiusMultiplier) == 0xCC0, "m_flRadiusMultiplier in C_OP_RenderStandardLight should be at offset 0xCC0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nAttenuationStyle) == 0xE20, "m_nAttenuationStyle in C_OP_RenderStandardLight should be at offset 0xE20");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flFalloffLinearity) == 0xE28, "m_flFalloffLinearity in C_OP_RenderStandardLight should be at offset 0xE28");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flFiftyPercentFalloff) == 0xF88, "m_flFiftyPercentFalloff in C_OP_RenderStandardLight should be at offset 0xF88");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flZeroPercentFalloff) == 0x10E8, "m_flZeroPercentFalloff in C_OP_RenderStandardLight should be at offset 0x10E8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bRenderDiffuse) == 0x1248, "m_bRenderDiffuse in C_OP_RenderStandardLight should be at offset 0x1248");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bRenderSpecular) == 0x1249, "m_bRenderSpecular in C_OP_RenderStandardLight should be at offset 0x1249");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_lightCookie) == 0x1250, "m_lightCookie in C_OP_RenderStandardLight should be at offset 0x1250");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nPriority) == 0x1258, "m_nPriority in C_OP_RenderStandardLight should be at offset 0x1258");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nFogLightingMode) == 0x125C, "m_nFogLightingMode in C_OP_RenderStandardLight should be at offset 0x125C");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flFogContribution) == 0x1260, "m_flFogContribution in C_OP_RenderStandardLight should be at offset 0x1260");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nCapsuleLightBehavior) == 0x13C0, "m_nCapsuleLightBehavior in C_OP_RenderStandardLight should be at offset 0x13C0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flCapsuleLength) == 0x13C4, "m_flCapsuleLength in C_OP_RenderStandardLight should be at offset 0x13C4");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bReverseOrder) == 0x13C8, "m_bReverseOrder in C_OP_RenderStandardLight should be at offset 0x13C8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bClosedLoop) == 0x13C9, "m_bClosedLoop in C_OP_RenderStandardLight should be at offset 0x13C9");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nPrevPntSource) == 0x13CC, "m_nPrevPntSource in C_OP_RenderStandardLight should be at offset 0x13CC");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flMaxLength) == 0x13D0, "m_flMaxLength in C_OP_RenderStandardLight should be at offset 0x13D0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flMinLength) == 0x13D4, "m_flMinLength in C_OP_RenderStandardLight should be at offset 0x13D4");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bIgnoreDT) == 0x13D8, "m_bIgnoreDT in C_OP_RenderStandardLight should be at offset 0x13D8");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flConstrainRadiusToLengthRatio) == 0x13DC, "m_flConstrainRadiusToLengthRatio in C_OP_RenderStandardLight should be at offset 0x13DC");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flLengthScale) == 0x13E0, "m_flLengthScale in C_OP_RenderStandardLight should be at offset 0x13E0");
-		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flLengthFadeInTime) == 0x13E4, "m_flLengthFadeInTime in C_OP_RenderStandardLight should be at offset 0x13E4");
-		static_assert(sizeof(CS2::particles::C_OP_RenderStandardLight) == 0x13F0, "C_OP_RenderStandardLight size should be 0x13F0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nLightType) == 0x220, "m_nLightType in C_OP_RenderStandardLight should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_vecColorScale) == 0x228, "m_vecColorScale in C_OP_RenderStandardLight should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nColorBlendType) == 0x8E0, "m_nColorBlendType in C_OP_RenderStandardLight should be at offset 0x8E0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flIntensity) == 0x8E8, "m_flIntensity in C_OP_RenderStandardLight should be at offset 0x8E8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bCastShadows) == 0xA58, "m_bCastShadows in C_OP_RenderStandardLight should be at offset 0xA58");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flTheta) == 0xA60, "m_flTheta in C_OP_RenderStandardLight should be at offset 0xA60");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flPhi) == 0xBD0, "m_flPhi in C_OP_RenderStandardLight should be at offset 0xBD0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flRadiusMultiplier) == 0xD40, "m_flRadiusMultiplier in C_OP_RenderStandardLight should be at offset 0xD40");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nAttenuationStyle) == 0xEB0, "m_nAttenuationStyle in C_OP_RenderStandardLight should be at offset 0xEB0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flFalloffLinearity) == 0xEB8, "m_flFalloffLinearity in C_OP_RenderStandardLight should be at offset 0xEB8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flFiftyPercentFalloff) == 0x1028, "m_flFiftyPercentFalloff in C_OP_RenderStandardLight should be at offset 0x1028");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flZeroPercentFalloff) == 0x1198, "m_flZeroPercentFalloff in C_OP_RenderStandardLight should be at offset 0x1198");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bRenderDiffuse) == 0x1308, "m_bRenderDiffuse in C_OP_RenderStandardLight should be at offset 0x1308");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bRenderSpecular) == 0x1309, "m_bRenderSpecular in C_OP_RenderStandardLight should be at offset 0x1309");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_lightCookie) == 0x1310, "m_lightCookie in C_OP_RenderStandardLight should be at offset 0x1310");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nPriority) == 0x1318, "m_nPriority in C_OP_RenderStandardLight should be at offset 0x1318");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nFogLightingMode) == 0x131C, "m_nFogLightingMode in C_OP_RenderStandardLight should be at offset 0x131C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flFogContribution) == 0x1320, "m_flFogContribution in C_OP_RenderStandardLight should be at offset 0x1320");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nCapsuleLightBehavior) == 0x1490, "m_nCapsuleLightBehavior in C_OP_RenderStandardLight should be at offset 0x1490");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flCapsuleLength) == 0x1494, "m_flCapsuleLength in C_OP_RenderStandardLight should be at offset 0x1494");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bReverseOrder) == 0x1498, "m_bReverseOrder in C_OP_RenderStandardLight should be at offset 0x1498");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bClosedLoop) == 0x1499, "m_bClosedLoop in C_OP_RenderStandardLight should be at offset 0x1499");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nPrevPntSource) == 0x149C, "m_nPrevPntSource in C_OP_RenderStandardLight should be at offset 0x149C");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flMaxLength) == 0x14A0, "m_flMaxLength in C_OP_RenderStandardLight should be at offset 0x14A0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flMinLength) == 0x14A4, "m_flMinLength in C_OP_RenderStandardLight should be at offset 0x14A4");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_bIgnoreDT) == 0x14A8, "m_bIgnoreDT in C_OP_RenderStandardLight should be at offset 0x14A8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flConstrainRadiusToLengthRatio) == 0x14AC, "m_flConstrainRadiusToLengthRatio in C_OP_RenderStandardLight should be at offset 0x14AC");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flLengthScale) == 0x14B0, "m_flLengthScale in C_OP_RenderStandardLight should be at offset 0x14B0");
+		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flLengthFadeInTime) == 0x14B4, "m_flLengthFadeInTime in C_OP_RenderStandardLight should be at offset 0x14B4");
+		static_assert(sizeof(CS2::particles::C_OP_RenderStandardLight) == 0x14C0, "C_OP_RenderStandardLight size should be 0x14C0");
 	}
 }

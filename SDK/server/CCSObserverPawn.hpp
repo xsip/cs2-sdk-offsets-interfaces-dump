@@ -13,8 +13,8 @@ namespace CS2 {
 	namespace server {
 		class CCSObserverPawn : public CS2::server::CCSPlayerPawnBase {
 		public:
-			S2_PAD(0x28);
+			S2_PAD(0x30);
 		};
-		static_assert(sizeof(CS2::server::CCSObserverPawn) == 0xEF0, "CCSObserverPawn size should be 0xEF0");
+		static_assert(sizeof(CS2::server::CCSObserverPawn) == 0xF10, "CCSObserverPawn size should be 0xF10");
 	}
 }

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xAB0
+			// Class size: 0xAC0
 			namespace CBaseProp /*: public CS2::server::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_bModelOverrodeBlockLOS = 0xa80; // bool m_bModelOverrodeBlockLOS; |  0xa80 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iShapeType = 0xa84; // int32_t m_iShapeType; |  0xa84 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bConformToCollisionBounds = 0xa88; // bool m_bConformToCollisionBounds; |  0xa88 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_mPreferredCatchTransform = 0xa90; // GlobalTypes::CTransform m_mPreferredCatchTransform; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bModelOverrodeBlockLOS = 0xa90; // bool m_bModelOverrodeBlockLOS; |  0xa90 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iShapeType = 0xa94; // int32_t m_iShapeType; |  0xa94 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bConformToCollisionBounds = 0xa98; // bool m_bConformToCollisionBounds; |  0xa98 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_mPreferredCatchTransform = 0xaa0; // GlobalTypes::CTransform m_mPreferredCatchTransform; |  Schema_Atomic | Size: 0x20
 			}
 		}
 	}

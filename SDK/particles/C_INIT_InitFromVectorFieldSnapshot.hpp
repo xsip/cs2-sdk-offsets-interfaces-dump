@@ -14,18 +14,18 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitFromVectorFieldSnapshot : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nLocalSpaceCP; // 0x1cc | Schema_Builtin | Size: 0x4
-			int32_t m_nWeightUpdateCP; // 0x1d0 | Schema_Builtin | Size: 0x4
-			bool m_bUseVerticalVelocity; // 0x1d4 | Schema_Builtin | Size: 0x1
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nLocalSpaceCP; // 0x1dc | Schema_Builtin | Size: 0x4
+			int32_t m_nWeightUpdateCP; // 0x1e0 | Schema_Builtin | Size: 0x4
+			bool m_bUseVerticalVelocity; // 0x1e4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particleslib::CPerParticleVecInput m_vecScale; // 0x1d8 | Schema_DeclaredClass | Size: 0x678
+			particleslib::CPerParticleVecInput m_vecScale; // 0x1e8 | Schema_DeclaredClass | Size: 0x6b8
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nLocalSpaceCP) == 0x1CC, "m_nLocalSpaceCP in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nWeightUpdateCP) == 0x1D0, "m_nWeightUpdateCP in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_bUseVerticalVelocity) == 0x1D4, "m_bUseVerticalVelocity in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_vecScale) == 0x1D8, "m_vecScale in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1D8");
-		static_assert(sizeof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot) == 0x850, "C_INIT_InitFromVectorFieldSnapshot size should be 0x850");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nLocalSpaceCP) == 0x1DC, "m_nLocalSpaceCP in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nWeightUpdateCP) == 0x1E0, "m_nWeightUpdateCP in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_bUseVerticalVelocity) == 0x1E4, "m_bUseVerticalVelocity in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_vecScale) == 0x1E8, "m_vecScale in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1E8");
+		static_assert(sizeof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot) == 0x8A0, "C_INIT_InitFromVectorFieldSnapshot size should be 0x8A0");
 	}
 }

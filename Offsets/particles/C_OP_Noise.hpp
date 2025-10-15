@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1D8
+			// Class size: 0x1E8
 			namespace C_OP_Noise /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputMin = 0x1c4; // float32 m_flOutputMin; |  0x1c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputMax = 0x1c8; // float32 m_flOutputMax; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fl4NoiseScale = 0x1cc; // float32 m_fl4NoiseScale; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bAdditive = 0x1d0; // bool m_bAdditive; |  0x1d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flNoiseAnimationTimeScale = 0x1d4; // float32 m_flNoiseAnimationTimeScale; |  0x1d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputMin = 0x1d4; // float32 m_flOutputMin; |  0x1d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputMax = 0x1d8; // float32 m_flOutputMax; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fl4NoiseScale = 0x1dc; // float32 m_fl4NoiseScale; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAdditive = 0x1e0; // bool m_bAdditive; |  0x1e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flNoiseAnimationTimeScale = 0x1e4; // float32 m_flNoiseAnimationTimeScale; |  0x1e4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -6,6 +6,7 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/animgraphlib/CConcreteAnimParameter.hpp>
+#include <SDK/animgraphlib/AnimParamVectorType_t.hpp>
 
 
 
@@ -15,10 +16,13 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector m_defaultValue; // 0x80 | Schema_Atomic | Size: 0xc
 			bool m_bInterpolate; // 0x8c | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3); // End padding
+			S2_PAD(0x3);
+			animgraphlib::AnimParamVectorType_t m_vectorType; // 0x90 | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CVectorAnimParameter, m_defaultValue) == 0x80, "m_defaultValue in CVectorAnimParameter should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CVectorAnimParameter, m_bInterpolate) == 0x8C, "m_bInterpolate in CVectorAnimParameter should be at offset 0x8C");
-		static_assert(sizeof(CS2::animgraphlib::CVectorAnimParameter) == 0x90, "CVectorAnimParameter size should be 0x90");
+		static_assert(offsetof(CS2::animgraphlib::CVectorAnimParameter, m_vectorType) == 0x90, "m_vectorType in CVectorAnimParameter should be at offset 0x90");
+		static_assert(sizeof(CS2::animgraphlib::CVectorAnimParameter) == 0x98, "CVectorAnimParameter size should be 0x98");
 	}
 }

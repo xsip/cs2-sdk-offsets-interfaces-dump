@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x4B0
+			// Class size: 0x4E0
 			namespace C_OP_ScreenSpaceDistanceToEdge /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1c0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxDistFromEdge = 0x1c8; // particleslib::CPerParticleFloatInput m_flMaxDistFromEdge; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flOutputRemap = 0x328; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_nSetMethod = 0x488; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxDistFromEdge = 0x1d8; // particleslib::CPerParticleFloatInput m_flMaxDistFromEdge; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputRemap = 0x348; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nSetMethod = 0x4b8; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

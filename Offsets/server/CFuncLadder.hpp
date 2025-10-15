@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x8A0
+			// Class size: 0x888
 			namespace CFuncLadder /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_vecLadderDir = 0x7f0; // GlobalTypes::Vector m_vecLadderDir; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Dismounts = 0x800; // server::CUtlVector< server.dll::CHandle< CInfoLadderDismount > > m_Dismounts; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecLocalTop = 0x818; // GlobalTypes::Vector m_vecLocalTop; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPlayerMountPositionTop = 0x824; // GlobalTypes::VectorWS m_vecPlayerMountPositionTop; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPlayerMountPositionBottom = 0x830; // GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flAutoRideSpeed = 0x83c; // float32 m_flAutoRideSpeed; |  0x83c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDisabled = 0x840; // bool m_bDisabled; |  0x840 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFakeLadder = 0x841; // bool m_bFakeLadder; |  0x841 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasSlack = 0x842; // bool m_bHasSlack; |  0x842 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_surfacePropName = 0x848; // GlobalTypes::CUtlSymbolLarge m_surfacePropName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OnPlayerGotOnLadder = 0x850; // entity2::CEntityIOOutput m_OnPlayerGotOnLadder; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPlayerGotOffLadder = 0x878; // entity2::CEntityIOOutput m_OnPlayerGotOffLadder; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_vecLadderDir = 0x7d8; // GlobalTypes::Vector m_vecLadderDir; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Dismounts = 0x7e8; // server::CUtlVector< server.dll::CHandle< CInfoLadderDismount > > m_Dismounts; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecLocalTop = 0x800; // GlobalTypes::Vector m_vecLocalTop; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPlayerMountPositionTop = 0x80c; // GlobalTypes::VectorWS m_vecPlayerMountPositionTop; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPlayerMountPositionBottom = 0x818; // GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flAutoRideSpeed = 0x824; // float32 m_flAutoRideSpeed; |  0x824 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDisabled = 0x828; // bool m_bDisabled; |  0x828 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFakeLadder = 0x829; // bool m_bFakeLadder; |  0x829 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasSlack = 0x82a; // bool m_bHasSlack; |  0x82a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_surfacePropName = 0x830; // GlobalTypes::CUtlSymbolLarge m_surfacePropName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnPlayerGotOnLadder = 0x838; // entity2::CEntityIOOutput m_OnPlayerGotOnLadder; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPlayerGotOffLadder = 0x860; // entity2::CEntityIOOutput m_OnPlayerGotOffLadder; |  Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

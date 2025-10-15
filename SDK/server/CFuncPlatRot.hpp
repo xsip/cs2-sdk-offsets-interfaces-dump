@@ -13,11 +13,11 @@ namespace CS2 {
 	namespace server {
 		class CFuncPlatRot : public CS2::server::CFuncPlat {
 		public:
-			GlobalTypes::QAngle m_end; // 0x8a0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_start; // 0x8ac | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_end; // 0x888 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_start; // 0x894 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::server::CFuncPlatRot, m_end) == 0x8A0, "m_end in CFuncPlatRot should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CFuncPlatRot, m_start) == 0x8AC, "m_start in CFuncPlatRot should be at offset 0x8AC");
-		static_assert(sizeof(CS2::server::CFuncPlatRot) == 0x8B8, "CFuncPlatRot size should be 0x8B8");
+		static_assert(offsetof(CS2::server::CFuncPlatRot, m_end) == 0x888, "m_end in CFuncPlatRot should be at offset 0x888");
+		static_assert(offsetof(CS2::server::CFuncPlatRot, m_start) == 0x894, "m_start in CFuncPlatRot should be at offset 0x894");
+		static_assert(sizeof(CS2::server::CFuncPlatRot) == 0x8A0, "CFuncPlatRot size should be 0x8A0");
 	}
 }

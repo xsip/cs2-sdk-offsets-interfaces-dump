@@ -15,23 +15,24 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerWeapon : public CS2::server::CEconEntity {
 		public:
-			entity2::GameTick_t m_nNextPrimaryAttackTick; // 0xe38 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flNextPrimaryAttackTickRatio; // 0xe3c | Schema_Builtin | Size: 0x4
-			entity2::GameTick_t m_nNextSecondaryAttackTick; // 0xe40 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flNextSecondaryAttackTickRatio; // 0xe44 | Schema_Builtin | Size: 0x4
-			int32_t m_iClip1; // 0xe48 | Schema_Builtin | Size: 0x4
-			int32_t m_iClip2; // 0xe4c | Schema_Builtin | Size: 0x4
-			int32_t m_pReserveAmmo[2]; // 0xe50 | Schema_FixedArray | Size: 0x8
-			entity2::CEntityIOOutput m_OnPlayerUse; // 0xe58 | Schema_DeclaredClass | Size: 0x28
+			entity2::GameTick_t m_nNextPrimaryAttackTick; // 0xe50 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flNextPrimaryAttackTickRatio; // 0xe54 | Schema_Builtin | Size: 0x4
+			entity2::GameTick_t m_nNextSecondaryAttackTick; // 0xe58 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flNextSecondaryAttackTickRatio; // 0xe5c | Schema_Builtin | Size: 0x4
+			int32_t m_iClip1; // 0xe60 | Schema_Builtin | Size: 0x4
+			int32_t m_iClip2; // 0xe64 | Schema_Builtin | Size: 0x4
+			int32_t m_pReserveAmmo[2]; // 0xe68 | Schema_FixedArray | Size: 0x8
+			entity2::CEntityIOOutput m_OnPlayerUse; // 0xe70 | Schema_DeclaredClass | Size: 0x28
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_nNextPrimaryAttackTick) == 0xE38, "m_nNextPrimaryAttackTick in CBasePlayerWeapon should be at offset 0xE38");
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_flNextPrimaryAttackTickRatio) == 0xE3C, "m_flNextPrimaryAttackTickRatio in CBasePlayerWeapon should be at offset 0xE3C");
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_nNextSecondaryAttackTick) == 0xE40, "m_nNextSecondaryAttackTick in CBasePlayerWeapon should be at offset 0xE40");
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_flNextSecondaryAttackTickRatio) == 0xE44, "m_flNextSecondaryAttackTickRatio in CBasePlayerWeapon should be at offset 0xE44");
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_iClip1) == 0xE48, "m_iClip1 in CBasePlayerWeapon should be at offset 0xE48");
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_iClip2) == 0xE4C, "m_iClip2 in CBasePlayerWeapon should be at offset 0xE4C");
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_pReserveAmmo) == 0xE50, "m_pReserveAmmo in CBasePlayerWeapon should be at offset 0xE50");
-		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_OnPlayerUse) == 0xE58, "m_OnPlayerUse in CBasePlayerWeapon should be at offset 0xE58");
-		static_assert(sizeof(CS2::server::CBasePlayerWeapon) == 0xE80, "CBasePlayerWeapon size should be 0xE80");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_nNextPrimaryAttackTick) == 0xE50, "m_nNextPrimaryAttackTick in CBasePlayerWeapon should be at offset 0xE50");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_flNextPrimaryAttackTickRatio) == 0xE54, "m_flNextPrimaryAttackTickRatio in CBasePlayerWeapon should be at offset 0xE54");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_nNextSecondaryAttackTick) == 0xE58, "m_nNextSecondaryAttackTick in CBasePlayerWeapon should be at offset 0xE58");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_flNextSecondaryAttackTickRatio) == 0xE5C, "m_flNextSecondaryAttackTickRatio in CBasePlayerWeapon should be at offset 0xE5C");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_iClip1) == 0xE60, "m_iClip1 in CBasePlayerWeapon should be at offset 0xE60");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_iClip2) == 0xE64, "m_iClip2 in CBasePlayerWeapon should be at offset 0xE64");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_pReserveAmmo) == 0xE68, "m_pReserveAmmo in CBasePlayerWeapon should be at offset 0xE68");
+		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_OnPlayerUse) == 0xE70, "m_OnPlayerUse in CBasePlayerWeapon should be at offset 0xE70");
+		static_assert(sizeof(CS2::server::CBasePlayerWeapon) == 0xEA0, "CBasePlayerWeapon size should be 0xEA0");
 	}
 }

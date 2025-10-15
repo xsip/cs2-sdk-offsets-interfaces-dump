@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA88
+			// Class size: 0xA70
 			namespace CRotDoor /*: public CS2::server::CBaseDoor*/ {
-				constexpr std::ptrdiff_t m_bSolidBsp = 0xa80; // bool m_bSolidBsp; |  0xa80 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSolidBsp = 0xa68; // bool m_bSolidBsp; |  0xa68 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -6,7 +6,7 @@
 #include <SDK/GlobalTypes.hpp>
 
 #include <SDK/soundsystem/CSosGroupActionSchema.hpp>
-#include <SDK/soundsystem/SosActionSortType_t.hpp>
+#include <SDK/soundsystem/SosActionSetParamSortType_t.hpp>
 
 
 
@@ -19,7 +19,7 @@ namespace CS2 {
 			float32 m_flMaxValue; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_opvarName; // 0x18 | Schema_Atomic | Size: 0x8
-			soundsystem::SosActionSortType_t m_nSortType; // 0x20 | Schema_DeclaredEnum | Size: 0x4
+			soundsystem::SosActionSetParamSortType_t m_nSortType; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_nMaxCount) == 0x8, "m_nMaxCount in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x8");

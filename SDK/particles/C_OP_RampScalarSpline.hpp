@@ -14,29 +14,29 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RampScalarSpline : public CS2::particles::CParticleFunctionOperator {
 		public:
-			float32 m_RateMin; // 0x1c0 | Schema_Builtin | Size: 0x4
-			float32 m_RateMax; // 0x1c4 | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime_min; // 0x1c8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartTime_max; // 0x1cc | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_min; // 0x1d0 | Schema_Builtin | Size: 0x4
-			float32 m_flEndTime_max; // 0x1d4 | Schema_Builtin | Size: 0x4
-			float32 m_flBias; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_RateMin; // 0x1d0 | Schema_Builtin | Size: 0x4
+			float32 m_RateMax; // 0x1d4 | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime_min; // 0x1d8 | Schema_Builtin | Size: 0x4
+			float32 m_flStartTime_max; // 0x1dc | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_min; // 0x1e0 | Schema_Builtin | Size: 0x4
+			float32 m_flEndTime_max; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flBias; // 0x1e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x24);
-			particles::ParticleAttributeIndex_t m_nField; // 0x200 | Schema_DeclaredClass | Size: 0x4
-			bool m_bProportionalOp; // 0x204 | Schema_Builtin | Size: 0x1
-			bool m_bEaseOut; // 0x205 | Schema_Builtin | Size: 0x1
+			particles::ParticleAttributeIndex_t m_nField; // 0x210 | Schema_DeclaredClass | Size: 0x4
+			bool m_bProportionalOp; // 0x214 | Schema_Builtin | Size: 0x1
+			bool m_bEaseOut; // 0x215 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_RateMin) == 0x1C0, "m_RateMin in C_OP_RampScalarSpline should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_RateMax) == 0x1C4, "m_RateMax in C_OP_RampScalarSpline should be at offset 0x1C4");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flStartTime_min) == 0x1C8, "m_flStartTime_min in C_OP_RampScalarSpline should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flStartTime_max) == 0x1CC, "m_flStartTime_max in C_OP_RampScalarSpline should be at offset 0x1CC");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flEndTime_min) == 0x1D0, "m_flEndTime_min in C_OP_RampScalarSpline should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flEndTime_max) == 0x1D4, "m_flEndTime_max in C_OP_RampScalarSpline should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flBias) == 0x1D8, "m_flBias in C_OP_RampScalarSpline should be at offset 0x1D8");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_nField) == 0x200, "m_nField in C_OP_RampScalarSpline should be at offset 0x200");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_bProportionalOp) == 0x204, "m_bProportionalOp in C_OP_RampScalarSpline should be at offset 0x204");
-		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_bEaseOut) == 0x205, "m_bEaseOut in C_OP_RampScalarSpline should be at offset 0x205");
-		static_assert(sizeof(CS2::particles::C_OP_RampScalarSpline) == 0x210, "C_OP_RampScalarSpline size should be 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_RateMin) == 0x1D0, "m_RateMin in C_OP_RampScalarSpline should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_RateMax) == 0x1D4, "m_RateMax in C_OP_RampScalarSpline should be at offset 0x1D4");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flStartTime_min) == 0x1D8, "m_flStartTime_min in C_OP_RampScalarSpline should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flStartTime_max) == 0x1DC, "m_flStartTime_max in C_OP_RampScalarSpline should be at offset 0x1DC");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flEndTime_min) == 0x1E0, "m_flEndTime_min in C_OP_RampScalarSpline should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flEndTime_max) == 0x1E4, "m_flEndTime_max in C_OP_RampScalarSpline should be at offset 0x1E4");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flBias) == 0x1E8, "m_flBias in C_OP_RampScalarSpline should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_nField) == 0x210, "m_nField in C_OP_RampScalarSpline should be at offset 0x210");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_bProportionalOp) == 0x214, "m_bProportionalOp in C_OP_RampScalarSpline should be at offset 0x214");
+		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_bEaseOut) == 0x215, "m_bEaseOut in C_OP_RampScalarSpline should be at offset 0x215");
+		static_assert(sizeof(CS2::particles::C_OP_RampScalarSpline) == 0x220, "C_OP_RampScalarSpline size should be 0x220");
 	}
 }

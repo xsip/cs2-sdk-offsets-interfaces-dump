@@ -13,28 +13,28 @@ namespace CS2 {
 	namespace client {
 		class C_EnvDecal : public CS2::client::C_BaseModelEntity {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0xec8 | Schema_Atomic | Size: 0x8
-			char  m_hDecalMaterial[0x8]; // 0xec8 | Schema_Atomic | Size: 0x8
-			float32 m_flWidth; // 0xed0 | Schema_Builtin | Size: 0x4
-			float32 m_flHeight; // 0xed4 | Schema_Builtin | Size: 0x4
-			float32 m_flDepth; // 0xed8 | Schema_Builtin | Size: 0x4
-			uint32_t m_nRenderOrder; // 0xedc | Schema_Builtin | Size: 0x4
-			bool m_bProjectOnWorld; // 0xee0 | Schema_Builtin | Size: 0x1
-			bool m_bProjectOnCharacters; // 0xee1 | Schema_Builtin | Size: 0x1
-			bool m_bProjectOnWater; // 0xee2 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; // 0xeb0 | Schema_Atomic | Size: 0x8
+			char  m_hDecalMaterial[0x8]; // 0xeb0 | Schema_Atomic | Size: 0x8
+			float32 m_flWidth; // 0xeb8 | Schema_Builtin | Size: 0x4
+			float32 m_flHeight; // 0xebc | Schema_Builtin | Size: 0x4
+			float32 m_flDepth; // 0xec0 | Schema_Builtin | Size: 0x4
+			uint32_t m_nRenderOrder; // 0xec4 | Schema_Builtin | Size: 0x4
+			bool m_bProjectOnWorld; // 0xec8 | Schema_Builtin | Size: 0x1
+			bool m_bProjectOnCharacters; // 0xec9 | Schema_Builtin | Size: 0x1
+			bool m_bProjectOnWater; // 0xeca | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flDepthSortBias; // 0xee4 | Schema_Builtin | Size: 0x4
+			float32 m_flDepthSortBias; // 0xecc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_hDecalMaterial) == 0xEC8, "m_hDecalMaterial in C_EnvDecal should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_flWidth) == 0xED0, "m_flWidth in C_EnvDecal should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_flHeight) == 0xED4, "m_flHeight in C_EnvDecal should be at offset 0xED4");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_flDepth) == 0xED8, "m_flDepth in C_EnvDecal should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_nRenderOrder) == 0xEDC, "m_nRenderOrder in C_EnvDecal should be at offset 0xEDC");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_bProjectOnWorld) == 0xEE0, "m_bProjectOnWorld in C_EnvDecal should be at offset 0xEE0");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_bProjectOnCharacters) == 0xEE1, "m_bProjectOnCharacters in C_EnvDecal should be at offset 0xEE1");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_bProjectOnWater) == 0xEE2, "m_bProjectOnWater in C_EnvDecal should be at offset 0xEE2");
-		static_assert(offsetof(CS2::client::C_EnvDecal, m_flDepthSortBias) == 0xEE4, "m_flDepthSortBias in C_EnvDecal should be at offset 0xEE4");
-		static_assert(sizeof(CS2::client::C_EnvDecal) == 0xF00, "C_EnvDecal size should be 0xF00");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_hDecalMaterial) == 0xEB0, "m_hDecalMaterial in C_EnvDecal should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_flWidth) == 0xEB8, "m_flWidth in C_EnvDecal should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_flHeight) == 0xEBC, "m_flHeight in C_EnvDecal should be at offset 0xEBC");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_flDepth) == 0xEC0, "m_flDepth in C_EnvDecal should be at offset 0xEC0");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_nRenderOrder) == 0xEC4, "m_nRenderOrder in C_EnvDecal should be at offset 0xEC4");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_bProjectOnWorld) == 0xEC8, "m_bProjectOnWorld in C_EnvDecal should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_bProjectOnCharacters) == 0xEC9, "m_bProjectOnCharacters in C_EnvDecal should be at offset 0xEC9");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_bProjectOnWater) == 0xECA, "m_bProjectOnWater in C_EnvDecal should be at offset 0xECA");
+		static_assert(offsetof(CS2::client::C_EnvDecal, m_flDepthSortBias) == 0xECC, "m_flDepthSortBias in C_EnvDecal should be at offset 0xECC");
+		static_assert(sizeof(CS2::client::C_EnvDecal) == 0xEE8, "C_EnvDecal size should be 0xEE8");
 	}
 }

@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x250
+			// Class size: 0x260
 			namespace C_INIT_InitFromParentKilled /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nAttributeToCopy = 0x1c8; // particles::ParticleAttributeIndex_t m_nAttributeToCopy; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nEventType = 0x1cc; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nAttributeToCopy = 0x1d8; // particles::ParticleAttributeIndex_t m_nAttributeToCopy; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nEventType = 0x1dc; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particleslib {
-			// Class size: 0x678
+			// Class size: 0x6B8
 			namespace CParticleVecInput /*: public CS2::particleslib::CParticleInput*/ {
 				constexpr std::ptrdiff_t m_nType = 0x10; // particleslib::ParticleVecType_t m_nType; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_vLiteralValue = 0x14; // GlobalTypes::Vector m_vLiteralValue; |  Schema_Atomic | Size: 0xc
@@ -22,17 +22,17 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_vCPValueScale = 0x84; // GlobalTypes::Vector m_vCPValueScale; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vCPRelativePosition = 0x90; // GlobalTypes::Vector m_vCPRelativePosition; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vCPRelativeDir = 0x9c; // GlobalTypes::Vector m_vCPRelativeDir; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_FloatComponentX = 0xa8; // particleslib::CParticleFloatInput m_FloatComponentX; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_FloatComponentY = 0x208; // particleslib::CParticleFloatInput m_FloatComponentY; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_FloatComponentZ = 0x368; // particleslib::CParticleFloatInput m_FloatComponentZ; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_FloatInterp = 0x4c8; // particleslib::CParticleFloatInput m_FloatInterp; |  Schema_DeclaredClass | Size: 0x160
-				constexpr std::ptrdiff_t m_flInterpInput0 = 0x628; // float32 m_flInterpInput0; |  0x628 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInterpInput1 = 0x62c; // float32 m_flInterpInput1; |  0x62c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vInterpOutput0 = 0x630; // GlobalTypes::Vector m_vInterpOutput0; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vInterpOutput1 = 0x63c; // GlobalTypes::Vector m_vInterpOutput1; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Gradient = 0x648; // GlobalTypes::CColorGradient m_Gradient; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vRandomMin = 0x660; // GlobalTypes::Vector m_vRandomMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vRandomMax = 0x66c; // GlobalTypes::Vector m_vRandomMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_FloatComponentX = 0xa8; // particleslib::CParticleFloatInput m_FloatComponentX; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_FloatComponentY = 0x218; // particleslib::CParticleFloatInput m_FloatComponentY; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_FloatComponentZ = 0x388; // particleslib::CParticleFloatInput m_FloatComponentZ; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_FloatInterp = 0x4f8; // particleslib::CParticleFloatInput m_FloatInterp; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInterpInput0 = 0x668; // float32 m_flInterpInput0; |  0x668 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInterpInput1 = 0x66c; // float32 m_flInterpInput1; |  0x66c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vInterpOutput0 = 0x670; // GlobalTypes::Vector m_vInterpOutput0; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vInterpOutput1 = 0x67c; // GlobalTypes::Vector m_vInterpOutput1; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Gradient = 0x688; // GlobalTypes::CColorGradient m_Gradient; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vRandomMin = 0x6a0; // GlobalTypes::Vector m_vRandomMin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vRandomMax = 0x6ac; // GlobalTypes::Vector m_vRandomMax; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}

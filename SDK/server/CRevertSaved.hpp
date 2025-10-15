@@ -13,14 +13,14 @@ namespace CS2 {
 	namespace server {
 		class CRevertSaved : public CS2::server::CModelPointEntity {
 		public:
-			float32 m_loadTime; // 0x7f0 | Schema_Builtin | Size: 0x4
-			float32 m_Duration; // 0x7f4 | Schema_Builtin | Size: 0x4
-			float32 m_HoldTime; // 0x7f8 | Schema_Builtin | Size: 0x4
+			float32 m_loadTime; // 0x7d8 | Schema_Builtin | Size: 0x4
+			float32 m_Duration; // 0x7dc | Schema_Builtin | Size: 0x4
+			float32 m_HoldTime; // 0x7e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CRevertSaved, m_loadTime) == 0x7F0, "m_loadTime in CRevertSaved should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CRevertSaved, m_Duration) == 0x7F4, "m_Duration in CRevertSaved should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CRevertSaved, m_HoldTime) == 0x7F8, "m_HoldTime in CRevertSaved should be at offset 0x7F8");
-		static_assert(sizeof(CS2::server::CRevertSaved) == 0x800, "CRevertSaved size should be 0x800");
+		static_assert(offsetof(CS2::server::CRevertSaved, m_loadTime) == 0x7D8, "m_loadTime in CRevertSaved should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CRevertSaved, m_Duration) == 0x7DC, "m_Duration in CRevertSaved should be at offset 0x7DC");
+		static_assert(offsetof(CS2::server::CRevertSaved, m_HoldTime) == 0x7E0, "m_HoldTime in CRevertSaved should be at offset 0x7E0");
+		static_assert(sizeof(CS2::server::CRevertSaved) == 0x7E8, "CRevertSaved size should be 0x7E8");
 	}
 }

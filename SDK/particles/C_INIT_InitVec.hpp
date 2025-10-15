@@ -16,18 +16,18 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_InitVec : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			particleslib::CPerParticleVecInput m_InputValue; // 0x1c8 | Schema_DeclaredClass | Size: 0x678
-			particles::ParticleAttributeIndex_t m_nOutputField; // 0x840 | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleSetMethod_t m_nSetMethod; // 0x844 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bNormalizedOutput; // 0x848 | Schema_Builtin | Size: 0x1
-			bool m_bWritePreviousPosition; // 0x849 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleVecInput m_InputValue; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			particles::ParticleAttributeIndex_t m_nOutputField; // 0x890 | Schema_DeclaredClass | Size: 0x4
+			particles::ParticleSetMethod_t m_nSetMethod; // 0x894 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bNormalizedOutput; // 0x898 | Schema_Builtin | Size: 0x1
+			bool m_bWritePreviousPosition; // 0x899 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_InputValue) == 0x1C8, "m_InputValue in C_INIT_InitVec should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_nOutputField) == 0x840, "m_nOutputField in C_INIT_InitVec should be at offset 0x840");
-		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_nSetMethod) == 0x844, "m_nSetMethod in C_INIT_InitVec should be at offset 0x844");
-		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_bNormalizedOutput) == 0x848, "m_bNormalizedOutput in C_INIT_InitVec should be at offset 0x848");
-		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_bWritePreviousPosition) == 0x849, "m_bWritePreviousPosition in C_INIT_InitVec should be at offset 0x849");
-		static_assert(sizeof(CS2::particles::C_INIT_InitVec) == 0x850, "C_INIT_InitVec size should be 0x850");
+		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_InputValue) == 0x1D8, "m_InputValue in C_INIT_InitVec should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_nOutputField) == 0x890, "m_nOutputField in C_INIT_InitVec should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_nSetMethod) == 0x894, "m_nSetMethod in C_INIT_InitVec should be at offset 0x894");
+		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_bNormalizedOutput) == 0x898, "m_bNormalizedOutput in C_INIT_InitVec should be at offset 0x898");
+		static_assert(offsetof(CS2::particles::C_INIT_InitVec, m_bWritePreviousPosition) == 0x899, "m_bWritePreviousPosition in C_INIT_InitVec should be at offset 0x899");
+		static_assert(sizeof(CS2::particles::C_INIT_InitVec) == 0x8A0, "C_INIT_InitVec size should be 0x8A0");
 	}
 }

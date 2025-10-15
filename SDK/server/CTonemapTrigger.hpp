@@ -13,12 +13,12 @@ namespace CS2 {
 	namespace server {
 		class CTonemapTrigger : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_tonemapControllerName; // 0x9c0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CEntityHandle m_hTonemapController; // 0x9c8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_tonemapControllerName; // 0x9a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CEntityHandle m_hTonemapController; // 0x9b0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTonemapTrigger, m_tonemapControllerName) == 0x9C0, "m_tonemapControllerName in CTonemapTrigger should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTonemapTrigger, m_hTonemapController) == 0x9C8, "m_hTonemapController in CTonemapTrigger should be at offset 0x9C8");
-		static_assert(sizeof(CS2::server::CTonemapTrigger) == 0x9D0, "CTonemapTrigger size should be 0x9D0");
+		static_assert(offsetof(CS2::server::CTonemapTrigger, m_tonemapControllerName) == 0x9A8, "m_tonemapControllerName in CTonemapTrigger should be at offset 0x9A8");
+		static_assert(offsetof(CS2::server::CTonemapTrigger, m_hTonemapController) == 0x9B0, "m_hTonemapController in CTonemapTrigger should be at offset 0x9B0");
+		static_assert(sizeof(CS2::server::CTonemapTrigger) == 0x9B8, "CTonemapTrigger size should be 0x9B8");
 	}
 }

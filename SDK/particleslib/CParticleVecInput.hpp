@@ -30,17 +30,17 @@ namespace CS2 {
 			GlobalTypes::Vector m_vCPValueScale; // 0x84 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vCPRelativePosition; // 0x90 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vCPRelativeDir; // 0x9c | Schema_Atomic | Size: 0xc
-			particleslib::CParticleFloatInput m_FloatComponentX; // 0xa8 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleFloatInput m_FloatComponentY; // 0x208 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleFloatInput m_FloatComponentZ; // 0x368 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleFloatInput m_FloatInterp; // 0x4c8 | Schema_DeclaredClass | Size: 0x160
-			float32 m_flInterpInput0; // 0x628 | Schema_Builtin | Size: 0x4
-			float32 m_flInterpInput1; // 0x62c | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vInterpOutput0; // 0x630 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vInterpOutput1; // 0x63c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CColorGradient m_Gradient; // 0x648 | Schema_Atomic | Size: 0x18
-			GlobalTypes::Vector m_vRandomMin; // 0x660 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vRandomMax; // 0x66c | Schema_Atomic | Size: 0xc
+			particleslib::CParticleFloatInput m_FloatComponentX; // 0xa8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleFloatInput m_FloatComponentY; // 0x218 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleFloatInput m_FloatComponentZ; // 0x388 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleFloatInput m_FloatInterp; // 0x4f8 | Schema_DeclaredClass | Size: 0x170
+			float32 m_flInterpInput0; // 0x668 | Schema_Builtin | Size: 0x4
+			float32 m_flInterpInput1; // 0x66c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vInterpOutput0; // 0x670 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vInterpOutput1; // 0x67c | Schema_Atomic | Size: 0xc
+			GlobalTypes::CColorGradient m_Gradient; // 0x688 | Schema_Atomic | Size: 0x18
+			GlobalTypes::Vector m_vRandomMin; // 0x6a0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vRandomMax; // 0x6ac | Schema_Atomic | Size: 0xc
 		};
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_nType) == 0x10, "m_nType in CParticleVecInput should be at offset 0x10");
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vLiteralValue) == 0x14, "m_vLiteralValue in CParticleVecInput should be at offset 0x14");
@@ -55,16 +55,16 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vCPRelativePosition) == 0x90, "m_vCPRelativePosition in CParticleVecInput should be at offset 0x90");
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vCPRelativeDir) == 0x9C, "m_vCPRelativeDir in CParticleVecInput should be at offset 0x9C");
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_FloatComponentX) == 0xA8, "m_FloatComponentX in CParticleVecInput should be at offset 0xA8");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_FloatComponentY) == 0x208, "m_FloatComponentY in CParticleVecInput should be at offset 0x208");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_FloatComponentZ) == 0x368, "m_FloatComponentZ in CParticleVecInput should be at offset 0x368");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_FloatInterp) == 0x4C8, "m_FloatInterp in CParticleVecInput should be at offset 0x4C8");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_flInterpInput0) == 0x628, "m_flInterpInput0 in CParticleVecInput should be at offset 0x628");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_flInterpInput1) == 0x62C, "m_flInterpInput1 in CParticleVecInput should be at offset 0x62C");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vInterpOutput0) == 0x630, "m_vInterpOutput0 in CParticleVecInput should be at offset 0x630");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vInterpOutput1) == 0x63C, "m_vInterpOutput1 in CParticleVecInput should be at offset 0x63C");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_Gradient) == 0x648, "m_Gradient in CParticleVecInput should be at offset 0x648");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vRandomMin) == 0x660, "m_vRandomMin in CParticleVecInput should be at offset 0x660");
-		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vRandomMax) == 0x66C, "m_vRandomMax in CParticleVecInput should be at offset 0x66C");
-		static_assert(sizeof(CS2::particleslib::CParticleVecInput) == 0x678, "CParticleVecInput size should be 0x678");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_FloatComponentY) == 0x218, "m_FloatComponentY in CParticleVecInput should be at offset 0x218");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_FloatComponentZ) == 0x388, "m_FloatComponentZ in CParticleVecInput should be at offset 0x388");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_FloatInterp) == 0x4F8, "m_FloatInterp in CParticleVecInput should be at offset 0x4F8");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_flInterpInput0) == 0x668, "m_flInterpInput0 in CParticleVecInput should be at offset 0x668");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_flInterpInput1) == 0x66C, "m_flInterpInput1 in CParticleVecInput should be at offset 0x66C");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vInterpOutput0) == 0x670, "m_vInterpOutput0 in CParticleVecInput should be at offset 0x670");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vInterpOutput1) == 0x67C, "m_vInterpOutput1 in CParticleVecInput should be at offset 0x67C");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_Gradient) == 0x688, "m_Gradient in CParticleVecInput should be at offset 0x688");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vRandomMin) == 0x6A0, "m_vRandomMin in CParticleVecInput should be at offset 0x6A0");
+		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vRandomMax) == 0x6AC, "m_vRandomMax in CParticleVecInput should be at offset 0x6AC");
+		static_assert(sizeof(CS2::particleslib::CParticleVecInput) == 0x6B8, "CParticleVecInput size should be 0x6B8");
 	}
 }

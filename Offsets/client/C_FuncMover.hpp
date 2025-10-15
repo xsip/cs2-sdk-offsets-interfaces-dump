@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEC8
+			// Class size: 0xEB0
 			namespace C_FuncMover /*: public CS2::client::C_BaseToggle*/ {
 				// NO SCHEMA DATA FOUND!
 			}

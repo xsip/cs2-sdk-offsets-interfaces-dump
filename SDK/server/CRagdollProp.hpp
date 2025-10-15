@@ -16,75 +16,73 @@ namespace CS2 {
 		class CRagdollProp : public CS2::server::CBaseAnimGraph {
 		public:
 			S2_PAD(0x10);
-			client::ragdoll_t m_ragdoll; // 0xa90 | Schema_DeclaredClass | Size: 0x50
-			bool m_bStartDisabled; // 0xae0 | Schema_Builtin | Size: 0x1
+			client::ragdoll_t m_ragdoll; // 0xaa0 | Schema_DeclaredClass | Size: 0x50
+			bool m_bStartDisabled; // 0xaf0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CNetworkUtlVectorBase< bool > m_ragEnabled; // 0xae8 | Schema_Atomic | Size: 0x18
-			char  m_ragEnabled[0x18]; // 0xae8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlGlobalTypes::VectorBase< Vector > m_ragPos; // 0xb00 | Schema_Atomic | Size: 0x18
-			char  m_ragPos[0x18]; // 0xb00 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::QAngle > m_ragAngles; // 0xb18 | Schema_Atomic | Size: 0x18
-			char  m_ragAngles[0x18]; // 0xb18 | Schema_Atomic | Size: 0x18
-			// server::CHandle< server::CBaseEntity > m_hRagdollSource; // 0xb30 | Schema_Atomic | Size: 0x4
-			char  m_hRagdollSource[0x4]; // 0xb30 | Schema_Atomic | Size: 0x4
-			uint32_t m_lastUpdateTickCount; // 0xb34 | Schema_Builtin | Size: 0x4
-			bool m_allAsleep; // 0xb38 | Schema_Builtin | Size: 0x1
-			bool m_bFirstCollisionAfterLaunch; // 0xb39 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CNetworkUtlVectorBase< bool > m_ragEnabled; // 0xaf8 | Schema_Atomic | Size: 0x18
+			char  m_ragEnabled[0x18]; // 0xaf8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlGlobalTypes::VectorBase< Vector > m_ragPos; // 0xb10 | Schema_Atomic | Size: 0x18
+			char  m_ragPos[0x18]; // 0xb10 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::QAngle > m_ragAngles; // 0xb28 | Schema_Atomic | Size: 0x18
+			char  m_ragAngles[0x18]; // 0xb28 | Schema_Atomic | Size: 0x18
+			uint32_t m_lastUpdateTickCount; // 0xb40 | Schema_Builtin | Size: 0x4
+			bool m_allAsleep; // 0xb44 | Schema_Builtin | Size: 0x1
+			bool m_bFirstCollisionAfterLaunch; // 0xb45 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CBaseEntity > m_hDamageEntity; // 0xb3c | Schema_Atomic | Size: 0x4
-			char  m_hDamageEntity[0x4]; // 0xb3c | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hKiller; // 0xb40 | Schema_Atomic | Size: 0x4
-			char  m_hKiller[0x4]; // 0xb40 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBasePlayerPawn > m_hPhysicsAttacker; // 0xb44 | Schema_Atomic | Size: 0x4
-			char  m_hPhysicsAttacker[0x4]; // 0xb44 | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xb48 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flFadeOutStartTime; // 0xb4c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flFadeTime; // 0xb50 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecLastOrigin; // 0xb54 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flAwakeTime; // 0xb60 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flLastOriginChangeTime; // 0xb64 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_strOriginClassName; // 0xb68 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_strSourceClassName; // 0xb70 | Schema_Atomic | Size: 0x8
-			bool m_bHasBeenPhysgunned; // 0xb78 | Schema_Builtin | Size: 0x1
-			bool m_bAllowStretch; // 0xb79 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x2);
-			float32 m_flBlendWeight; // 0xb7c | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultFadeScale; // 0xb80 | Schema_Builtin | Size: 0x4
+			// server::CHandle< server::CBaseEntity > m_hDamageEntity; // 0xb48 | Schema_Atomic | Size: 0x4
+			char  m_hDamageEntity[0x4]; // 0xb48 | Schema_Atomic | Size: 0x4
+			// server::CHandle< server::CBaseEntity > m_hKiller; // 0xb4c | Schema_Atomic | Size: 0x4
+			char  m_hKiller[0x4]; // 0xb4c | Schema_Atomic | Size: 0x4
+			// server::CHandle< server::CBasePlayerPawn > m_hPhysicsAttacker; // 0xb50 | Schema_Atomic | Size: 0x4
+			char  m_hPhysicsAttacker[0x4]; // 0xb50 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xb54 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flFadeOutStartTime; // 0xb58 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flFadeTime; // 0xb5c | Schema_Builtin | Size: 0x4
+			GlobalTypes::VectorWS m_vecLastOrigin; // 0xb60 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flAwakeTime; // 0xb6c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flLastOriginChangeTime; // 0xb70 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_ragdollMins; // 0xb88 | Schema_Atomic | Size: 0x18
-			char  m_ragdollMins[0x18]; // 0xb88 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_ragdollMaxs; // 0xba0 | Schema_Atomic | Size: 0x18
-			char  m_ragdollMaxs[0x18]; // 0xba0 | Schema_Atomic | Size: 0x18
-			bool m_bShouldDeleteActivationRecord; // 0xbb8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_strOriginClassName; // 0xb78 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_strSourceClassName; // 0xb80 | Schema_Atomic | Size: 0x8
+			bool m_bHasBeenPhysgunned; // 0xb88 | Schema_Builtin | Size: 0x1
+			bool m_bAllowStretch; // 0xb89 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2);
+			float32 m_flBlendWeight; // 0xb8c | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultFadeScale; // 0xb90 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4);
+			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_ragdollMins; // 0xb98 | Schema_Atomic | Size: 0x18
+			char  m_ragdollMins[0x18]; // 0xb98 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_ragdollMaxs; // 0xbb0 | Schema_Atomic | Size: 0x18
+			char  m_ragdollMaxs[0x18]; // 0xbb0 | Schema_Atomic | Size: 0x18
+			bool m_bShouldDeleteActivationRecord; // 0xbc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17); // End padding
 		};
-		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdoll) == 0xA90, "m_ragdoll in CRagdollProp should be at offset 0xA90");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_bStartDisabled) == 0xAE0, "m_bStartDisabled in CRagdollProp should be at offset 0xAE0");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_ragEnabled) == 0xAE8, "m_ragEnabled in CRagdollProp should be at offset 0xAE8");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_ragPos) == 0xB00, "m_ragPos in CRagdollProp should be at offset 0xB00");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_ragAngles) == 0xB18, "m_ragAngles in CRagdollProp should be at offset 0xB18");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_hRagdollSource) == 0xB30, "m_hRagdollSource in CRagdollProp should be at offset 0xB30");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_lastUpdateTickCount) == 0xB34, "m_lastUpdateTickCount in CRagdollProp should be at offset 0xB34");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_allAsleep) == 0xB38, "m_allAsleep in CRagdollProp should be at offset 0xB38");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_bFirstCollisionAfterLaunch) == 0xB39, "m_bFirstCollisionAfterLaunch in CRagdollProp should be at offset 0xB39");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_hDamageEntity) == 0xB3C, "m_hDamageEntity in CRagdollProp should be at offset 0xB3C");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_hKiller) == 0xB40, "m_hKiller in CRagdollProp should be at offset 0xB40");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_hPhysicsAttacker) == 0xB44, "m_hPhysicsAttacker in CRagdollProp should be at offset 0xB44");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_flLastPhysicsInfluenceTime) == 0xB48, "m_flLastPhysicsInfluenceTime in CRagdollProp should be at offset 0xB48");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_flFadeOutStartTime) == 0xB4C, "m_flFadeOutStartTime in CRagdollProp should be at offset 0xB4C");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_flFadeTime) == 0xB50, "m_flFadeTime in CRagdollProp should be at offset 0xB50");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_vecLastOrigin) == 0xB54, "m_vecLastOrigin in CRagdollProp should be at offset 0xB54");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_flAwakeTime) == 0xB60, "m_flAwakeTime in CRagdollProp should be at offset 0xB60");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_flLastOriginChangeTime) == 0xB64, "m_flLastOriginChangeTime in CRagdollProp should be at offset 0xB64");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_strOriginClassName) == 0xB68, "m_strOriginClassName in CRagdollProp should be at offset 0xB68");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_strSourceClassName) == 0xB70, "m_strSourceClassName in CRagdollProp should be at offset 0xB70");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_bHasBeenPhysgunned) == 0xB78, "m_bHasBeenPhysgunned in CRagdollProp should be at offset 0xB78");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_bAllowStretch) == 0xB79, "m_bAllowStretch in CRagdollProp should be at offset 0xB79");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_flBlendWeight) == 0xB7C, "m_flBlendWeight in CRagdollProp should be at offset 0xB7C");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_flDefaultFadeScale) == 0xB80, "m_flDefaultFadeScale in CRagdollProp should be at offset 0xB80");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdollMins) == 0xB88, "m_ragdollMins in CRagdollProp should be at offset 0xB88");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdollMaxs) == 0xBA0, "m_ragdollMaxs in CRagdollProp should be at offset 0xBA0");
-		static_assert(offsetof(CS2::server::CRagdollProp, m_bShouldDeleteActivationRecord) == 0xBB8, "m_bShouldDeleteActivationRecord in CRagdollProp should be at offset 0xBB8");
-		static_assert(sizeof(CS2::server::CRagdollProp) == 0xBD0, "CRagdollProp size should be 0xBD0");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdoll) == 0xAA0, "m_ragdoll in CRagdollProp should be at offset 0xAA0");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_bStartDisabled) == 0xAF0, "m_bStartDisabled in CRagdollProp should be at offset 0xAF0");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_ragEnabled) == 0xAF8, "m_ragEnabled in CRagdollProp should be at offset 0xAF8");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_ragPos) == 0xB10, "m_ragPos in CRagdollProp should be at offset 0xB10");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_ragAngles) == 0xB28, "m_ragAngles in CRagdollProp should be at offset 0xB28");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_lastUpdateTickCount) == 0xB40, "m_lastUpdateTickCount in CRagdollProp should be at offset 0xB40");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_allAsleep) == 0xB44, "m_allAsleep in CRagdollProp should be at offset 0xB44");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_bFirstCollisionAfterLaunch) == 0xB45, "m_bFirstCollisionAfterLaunch in CRagdollProp should be at offset 0xB45");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_hDamageEntity) == 0xB48, "m_hDamageEntity in CRagdollProp should be at offset 0xB48");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_hKiller) == 0xB4C, "m_hKiller in CRagdollProp should be at offset 0xB4C");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_hPhysicsAttacker) == 0xB50, "m_hPhysicsAttacker in CRagdollProp should be at offset 0xB50");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_flLastPhysicsInfluenceTime) == 0xB54, "m_flLastPhysicsInfluenceTime in CRagdollProp should be at offset 0xB54");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_flFadeOutStartTime) == 0xB58, "m_flFadeOutStartTime in CRagdollProp should be at offset 0xB58");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_flFadeTime) == 0xB5C, "m_flFadeTime in CRagdollProp should be at offset 0xB5C");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_vecLastOrigin) == 0xB60, "m_vecLastOrigin in CRagdollProp should be at offset 0xB60");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_flAwakeTime) == 0xB6C, "m_flAwakeTime in CRagdollProp should be at offset 0xB6C");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_flLastOriginChangeTime) == 0xB70, "m_flLastOriginChangeTime in CRagdollProp should be at offset 0xB70");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_strOriginClassName) == 0xB78, "m_strOriginClassName in CRagdollProp should be at offset 0xB78");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_strSourceClassName) == 0xB80, "m_strSourceClassName in CRagdollProp should be at offset 0xB80");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_bHasBeenPhysgunned) == 0xB88, "m_bHasBeenPhysgunned in CRagdollProp should be at offset 0xB88");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_bAllowStretch) == 0xB89, "m_bAllowStretch in CRagdollProp should be at offset 0xB89");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_flBlendWeight) == 0xB8C, "m_flBlendWeight in CRagdollProp should be at offset 0xB8C");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_flDefaultFadeScale) == 0xB90, "m_flDefaultFadeScale in CRagdollProp should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdollMins) == 0xB98, "m_ragdollMins in CRagdollProp should be at offset 0xB98");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdollMaxs) == 0xBB0, "m_ragdollMaxs in CRagdollProp should be at offset 0xBB0");
+		static_assert(offsetof(CS2::server::CRagdollProp, m_bShouldDeleteActivationRecord) == 0xBC8, "m_bShouldDeleteActivationRecord in CRagdollProp should be at offset 0xBC8");
+		static_assert(sizeof(CS2::server::CRagdollProp) == 0xBE0, "CRagdollProp size should be 0xBE0");
 	}
 }

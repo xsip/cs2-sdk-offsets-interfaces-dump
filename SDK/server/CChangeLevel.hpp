@@ -14,22 +14,22 @@ namespace CS2 {
 	namespace server {
 		class CChangeLevel : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::CUtlString m_sMapName; // 0x9c0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_sLandmarkName; // 0x9c8 | Schema_Atomic | Size: 0x8
-			entity2::CEntityIOOutput m_OnChangeLevel; // 0x9d0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bTouched; // 0x9f8 | Schema_Builtin | Size: 0x1
-			bool m_bNoTouch; // 0x9f9 | Schema_Builtin | Size: 0x1
-			bool m_bNewChapter; // 0x9fa | Schema_Builtin | Size: 0x1
-			bool m_bOnChangeLevelFired; // 0x9fb | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_sMapName; // 0x9a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_sLandmarkName; // 0x9b0 | Schema_Atomic | Size: 0x8
+			entity2::CEntityIOOutput m_OnChangeLevel; // 0x9b8 | Schema_DeclaredClass | Size: 0x28
+			bool m_bTouched; // 0x9e0 | Schema_Builtin | Size: 0x1
+			bool m_bNoTouch; // 0x9e1 | Schema_Builtin | Size: 0x1
+			bool m_bNewChapter; // 0x9e2 | Schema_Builtin | Size: 0x1
+			bool m_bOnChangeLevelFired; // 0x9e3 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CChangeLevel, m_sMapName) == 0x9C0, "m_sMapName in CChangeLevel should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CChangeLevel, m_sLandmarkName) == 0x9C8, "m_sLandmarkName in CChangeLevel should be at offset 0x9C8");
-		static_assert(offsetof(CS2::server::CChangeLevel, m_OnChangeLevel) == 0x9D0, "m_OnChangeLevel in CChangeLevel should be at offset 0x9D0");
-		static_assert(offsetof(CS2::server::CChangeLevel, m_bTouched) == 0x9F8, "m_bTouched in CChangeLevel should be at offset 0x9F8");
-		static_assert(offsetof(CS2::server::CChangeLevel, m_bNoTouch) == 0x9F9, "m_bNoTouch in CChangeLevel should be at offset 0x9F9");
-		static_assert(offsetof(CS2::server::CChangeLevel, m_bNewChapter) == 0x9FA, "m_bNewChapter in CChangeLevel should be at offset 0x9FA");
-		static_assert(offsetof(CS2::server::CChangeLevel, m_bOnChangeLevelFired) == 0x9FB, "m_bOnChangeLevelFired in CChangeLevel should be at offset 0x9FB");
-		static_assert(sizeof(CS2::server::CChangeLevel) == 0xA00, "CChangeLevel size should be 0xA00");
+		static_assert(offsetof(CS2::server::CChangeLevel, m_sMapName) == 0x9A8, "m_sMapName in CChangeLevel should be at offset 0x9A8");
+		static_assert(offsetof(CS2::server::CChangeLevel, m_sLandmarkName) == 0x9B0, "m_sLandmarkName in CChangeLevel should be at offset 0x9B0");
+		static_assert(offsetof(CS2::server::CChangeLevel, m_OnChangeLevel) == 0x9B8, "m_OnChangeLevel in CChangeLevel should be at offset 0x9B8");
+		static_assert(offsetof(CS2::server::CChangeLevel, m_bTouched) == 0x9E0, "m_bTouched in CChangeLevel should be at offset 0x9E0");
+		static_assert(offsetof(CS2::server::CChangeLevel, m_bNoTouch) == 0x9E1, "m_bNoTouch in CChangeLevel should be at offset 0x9E1");
+		static_assert(offsetof(CS2::server::CChangeLevel, m_bNewChapter) == 0x9E2, "m_bNewChapter in CChangeLevel should be at offset 0x9E2");
+		static_assert(offsetof(CS2::server::CChangeLevel, m_bOnChangeLevelFired) == 0x9E3, "m_bOnChangeLevelFired in CChangeLevel should be at offset 0x9E3");
+		static_assert(sizeof(CS2::server::CChangeLevel) == 0x9E8, "CChangeLevel size should be 0x9E8");
 	}
 }

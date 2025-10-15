@@ -14,11 +14,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_NormalizeVector : public CS2::particles::CParticleFunctionOperator {
 		public:
-			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1c0 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flScale; // 0x1c4 | Schema_Builtin | Size: 0x4
+			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flScale; // 0x1d4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::particles::C_OP_NormalizeVector, m_nFieldOutput) == 0x1C0, "m_nFieldOutput in C_OP_NormalizeVector should be at offset 0x1C0");
-		static_assert(offsetof(CS2::particles::C_OP_NormalizeVector, m_flScale) == 0x1C4, "m_flScale in C_OP_NormalizeVector should be at offset 0x1C4");
-		static_assert(sizeof(CS2::particles::C_OP_NormalizeVector) == 0x1C8, "C_OP_NormalizeVector size should be 0x1C8");
+		static_assert(offsetof(CS2::particles::C_OP_NormalizeVector, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_NormalizeVector should be at offset 0x1D0");
+		static_assert(offsetof(CS2::particles::C_OP_NormalizeVector, m_flScale) == 0x1D4, "m_flScale in C_OP_NormalizeVector should be at offset 0x1D4");
+		static_assert(sizeof(CS2::particles::C_OP_NormalizeVector) == 0x1D8, "C_OP_NormalizeVector size should be 0x1D8");
 	}
 }

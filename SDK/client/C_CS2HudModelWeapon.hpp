@@ -15,6 +15,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x50);
 		};
-		static_assert(sizeof(CS2::client::C_CS2HudModelWeapon) == 0x1290, "C_CS2HudModelWeapon size should be 0x1290");
+		static_assert(sizeof(CS2::client::C_CS2HudModelWeapon) == 0x1270, "C_CS2HudModelWeapon size should be 0x1270");
 	}
 }

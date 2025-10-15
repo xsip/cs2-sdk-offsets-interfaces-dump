@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x220
+			// Class size: 0x230
 			namespace C_INIT_CreateSequentialPath /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_fMaxDistance = 0x1c8; // float32 m_fMaxDistance; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNumToAssign = 0x1cc; // float32 m_flNumToAssign; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bLoop = 0x1d0; // bool m_bLoop; |  0x1d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCPPairs = 0x1d1; // bool m_bCPPairs; |  0x1d1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSaveOffset = 0x1d2; // bool m_bSaveOffset; |  0x1d2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_PathParams = 0x1e0; // particles::CPathParameters m_PathParams; |  Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_fMaxDistance = 0x1d8; // float32 m_fMaxDistance; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNumToAssign = 0x1dc; // float32 m_flNumToAssign; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bLoop = 0x1e0; // bool m_bLoop; |  0x1e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCPPairs = 0x1e1; // bool m_bCPPairs; |  0x1e1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSaveOffset = 0x1e2; // bool m_bSaveOffset; |  0x1e2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_PathParams = 0x1f0; // particles::CPathParameters m_PathParams; |  Schema_DeclaredClass | Size: 0x40
 			}
 		}
 	}

@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace pulse_system {
-			// Class size: 0x150
+			// Class size: 0x168
 			namespace CPulseGraphInstance_TestDomain_Derived /*: public CS2::pulse_system::CPulseGraphInstance_TestDomain*/ {
-				constexpr std::ptrdiff_t m_nInstanceValueX = 0x148; // int32_t m_nInstanceValueX; |  0x148 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nInstanceValueX = 0x160; // int32_t m_nInstanceValueX; |  0x160 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

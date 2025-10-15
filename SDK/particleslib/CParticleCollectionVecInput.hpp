@@ -14,6 +14,6 @@ namespace CS2 {
 		class CParticleCollectionVecInput : public CS2::particleslib::CParticleVecInput {
 		public:
 		};
-		static_assert(sizeof(CS2::particleslib::CParticleCollectionVecInput) == 0x678, "CParticleCollectionVecInput size should be 0x678");
+		static_assert(sizeof(CS2::particleslib::CParticleCollectionVecInput) == 0x6B8, "CParticleCollectionVecInput size should be 0x6B8");
 	}
 }

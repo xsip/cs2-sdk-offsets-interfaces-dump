@@ -13,38 +13,38 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSndSosOpvar : public CS2::server::CBaseTrigger {
 		public:
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTouchingPlayers; // 0x9c0 | Schema_Atomic | Size: 0x18
-			char  m_hTouchingPlayers[0x18]; // 0x9c0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::Vector m_flPosition; // 0x9d8 | Schema_Atomic | Size: 0xc
-			float32 m_flCenterSize; // 0x9e4 | Schema_Builtin | Size: 0x4
-			float32 m_flMinVal; // 0x9e8 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxVal; // 0x9ec | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_opvarName; // 0x9f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_stackName; // 0x9f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_operatorName; // 0xa00 | Schema_Atomic | Size: 0x8
-			bool m_bVolIs2D; // 0xa08 | Schema_Builtin | Size: 0x1
-			char m_opvarNameChar[256]; // 0xa09 | Schema_FixedArray | Size: 0x100
-			char m_stackNameChar[256]; // 0xb09 | Schema_FixedArray | Size: 0x100
-			char m_operatorNameChar[256]; // 0xc09 | Schema_FixedArray | Size: 0x100
+			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTouchingPlayers; // 0x9a8 | Schema_Atomic | Size: 0x18
+			char  m_hTouchingPlayers[0x18]; // 0x9a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::Vector m_flPosition; // 0x9c0 | Schema_Atomic | Size: 0xc
+			float32 m_flCenterSize; // 0x9cc | Schema_Builtin | Size: 0x4
+			float32 m_flMinVal; // 0x9d0 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxVal; // 0x9d4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_opvarName; // 0x9d8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_stackName; // 0x9e0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_operatorName; // 0x9e8 | Schema_Atomic | Size: 0x8
+			bool m_bVolIs2D; // 0x9f0 | Schema_Builtin | Size: 0x1
+			char m_opvarNameChar[256]; // 0x9f1 | Schema_FixedArray | Size: 0x100
+			char m_stackNameChar[256]; // 0xaf1 | Schema_FixedArray | Size: 0x100
+			char m_operatorNameChar[256]; // 0xbf1 | Schema_FixedArray | Size: 0x100
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_VecNormPos; // 0xd0c | Schema_Atomic | Size: 0xc
-			float32 m_flNormCenterSize; // 0xd18 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_VecNormPos; // 0xcf4 | Schema_Atomic | Size: 0xc
+			float32 m_flNormCenterSize; // 0xd00 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_hTouchingPlayers) == 0x9C0, "m_hTouchingPlayers in CTriggerSndSosOpvar should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flPosition) == 0x9D8, "m_flPosition in CTriggerSndSosOpvar should be at offset 0x9D8");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flCenterSize) == 0x9E4, "m_flCenterSize in CTriggerSndSosOpvar should be at offset 0x9E4");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flMinVal) == 0x9E8, "m_flMinVal in CTriggerSndSosOpvar should be at offset 0x9E8");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flMaxVal) == 0x9EC, "m_flMaxVal in CTriggerSndSosOpvar should be at offset 0x9EC");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_opvarName) == 0x9F0, "m_opvarName in CTriggerSndSosOpvar should be at offset 0x9F0");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_stackName) == 0x9F8, "m_stackName in CTriggerSndSosOpvar should be at offset 0x9F8");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_operatorName) == 0xA00, "m_operatorName in CTriggerSndSosOpvar should be at offset 0xA00");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_bVolIs2D) == 0xA08, "m_bVolIs2D in CTriggerSndSosOpvar should be at offset 0xA08");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_opvarNameChar) == 0xA09, "m_opvarNameChar in CTriggerSndSosOpvar should be at offset 0xA09");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_stackNameChar) == 0xB09, "m_stackNameChar in CTriggerSndSosOpvar should be at offset 0xB09");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_operatorNameChar) == 0xC09, "m_operatorNameChar in CTriggerSndSosOpvar should be at offset 0xC09");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_VecNormPos) == 0xD0C, "m_VecNormPos in CTriggerSndSosOpvar should be at offset 0xD0C");
-		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flNormCenterSize) == 0xD18, "m_flNormCenterSize in CTriggerSndSosOpvar should be at offset 0xD18");
-		static_assert(sizeof(CS2::server::CTriggerSndSosOpvar) == 0xD20, "CTriggerSndSosOpvar size should be 0xD20");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_hTouchingPlayers) == 0x9A8, "m_hTouchingPlayers in CTriggerSndSosOpvar should be at offset 0x9A8");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flPosition) == 0x9C0, "m_flPosition in CTriggerSndSosOpvar should be at offset 0x9C0");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flCenterSize) == 0x9CC, "m_flCenterSize in CTriggerSndSosOpvar should be at offset 0x9CC");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flMinVal) == 0x9D0, "m_flMinVal in CTriggerSndSosOpvar should be at offset 0x9D0");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flMaxVal) == 0x9D4, "m_flMaxVal in CTriggerSndSosOpvar should be at offset 0x9D4");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_opvarName) == 0x9D8, "m_opvarName in CTriggerSndSosOpvar should be at offset 0x9D8");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_stackName) == 0x9E0, "m_stackName in CTriggerSndSosOpvar should be at offset 0x9E0");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_operatorName) == 0x9E8, "m_operatorName in CTriggerSndSosOpvar should be at offset 0x9E8");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_bVolIs2D) == 0x9F0, "m_bVolIs2D in CTriggerSndSosOpvar should be at offset 0x9F0");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_opvarNameChar) == 0x9F1, "m_opvarNameChar in CTriggerSndSosOpvar should be at offset 0x9F1");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_stackNameChar) == 0xAF1, "m_stackNameChar in CTriggerSndSosOpvar should be at offset 0xAF1");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_operatorNameChar) == 0xBF1, "m_operatorNameChar in CTriggerSndSosOpvar should be at offset 0xBF1");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_VecNormPos) == 0xCF4, "m_VecNormPos in CTriggerSndSosOpvar should be at offset 0xCF4");
+		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flNormCenterSize) == 0xD00, "m_flNormCenterSize in CTriggerSndSosOpvar should be at offset 0xD00");
+		static_assert(sizeof(CS2::server::CTriggerSndSosOpvar) == 0xD08, "CTriggerSndSosOpvar size should be 0xD08");
 	}
 }

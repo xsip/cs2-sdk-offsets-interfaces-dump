@@ -18,26 +18,26 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderMaterialProxy : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			int32_t m_nMaterialControlPoint; // 0x210 | Schema_Builtin | Size: 0x4
-			particles::MaterialProxyType_t m_nProxyType; // 0x214 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x218 | Schema_Atomic | Size: 0x18
-			char  m_MaterialVars[0x18]; // 0x218 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hOverrideMaterial; // 0x230 | Schema_Atomic | Size: 0x8
-			char  m_hOverrideMaterial[0x8]; // 0x230 | Schema_Atomic | Size: 0x8
-			particleslib::CParticleCollectionFloatInput m_flMaterialOverrideEnabled; // 0x238 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x398 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleFloatInput m_flAlpha; // 0xa10 | Schema_DeclaredClass | Size: 0x160
-			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xb70 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nMaterialControlPoint; // 0x220 | Schema_Builtin | Size: 0x4
+			particles::MaterialProxyType_t m_nProxyType; // 0x224 | Schema_DeclaredEnum | Size: 0x4
+			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x228 | Schema_Atomic | Size: 0x18
+			char  m_MaterialVars[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hOverrideMaterial; // 0x240 | Schema_Atomic | Size: 0x8
+			char  m_hOverrideMaterial[0x8]; // 0x240 | Schema_Atomic | Size: 0x8
+			particleslib::CParticleCollectionFloatInput m_flMaterialOverrideEnabled; // 0x248 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x3b8 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleFloatInput m_flAlpha; // 0xa70 | Schema_DeclaredClass | Size: 0x170
+			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xbe0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nMaterialControlPoint) == 0x210, "m_nMaterialControlPoint in C_OP_RenderMaterialProxy should be at offset 0x210");
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nProxyType) == 0x214, "m_nProxyType in C_OP_RenderMaterialProxy should be at offset 0x214");
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_MaterialVars) == 0x218, "m_MaterialVars in C_OP_RenderMaterialProxy should be at offset 0x218");
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_hOverrideMaterial) == 0x230, "m_hOverrideMaterial in C_OP_RenderMaterialProxy should be at offset 0x230");
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_flMaterialOverrideEnabled) == 0x238, "m_flMaterialOverrideEnabled in C_OP_RenderMaterialProxy should be at offset 0x238");
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_vecColorScale) == 0x398, "m_vecColorScale in C_OP_RenderMaterialProxy should be at offset 0x398");
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_flAlpha) == 0xA10, "m_flAlpha in C_OP_RenderMaterialProxy should be at offset 0xA10");
-		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nColorBlendType) == 0xB70, "m_nColorBlendType in C_OP_RenderMaterialProxy should be at offset 0xB70");
-		static_assert(sizeof(CS2::particles::C_OP_RenderMaterialProxy) == 0xB90, "C_OP_RenderMaterialProxy size should be 0xB90");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nMaterialControlPoint) == 0x220, "m_nMaterialControlPoint in C_OP_RenderMaterialProxy should be at offset 0x220");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nProxyType) == 0x224, "m_nProxyType in C_OP_RenderMaterialProxy should be at offset 0x224");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_MaterialVars) == 0x228, "m_MaterialVars in C_OP_RenderMaterialProxy should be at offset 0x228");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_hOverrideMaterial) == 0x240, "m_hOverrideMaterial in C_OP_RenderMaterialProxy should be at offset 0x240");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_flMaterialOverrideEnabled) == 0x248, "m_flMaterialOverrideEnabled in C_OP_RenderMaterialProxy should be at offset 0x248");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_vecColorScale) == 0x3B8, "m_vecColorScale in C_OP_RenderMaterialProxy should be at offset 0x3B8");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_flAlpha) == 0xA70, "m_flAlpha in C_OP_RenderMaterialProxy should be at offset 0xA70");
+		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nColorBlendType) == 0xBE0, "m_nColorBlendType in C_OP_RenderMaterialProxy should be at offset 0xBE0");
+		static_assert(sizeof(CS2::particles::C_OP_RenderMaterialProxy) == 0xC00, "C_OP_RenderMaterialProxy size should be 0xC00");
 	}
 }

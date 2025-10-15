@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CGameScriptedMoveData /**/ {
 				constexpr std::ptrdiff_t m_vAccumulatedRootMotion = 0x0; // GlobalTypes::Vector m_vAccumulatedRootMotion; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_angAccumulatedRootMotionRotation = 0xc; // GlobalTypes::QAngle m_angAccumulatedRootMotionRotation; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vSrc = 0x18; // GlobalTypes::Vector m_vSrc; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vSrc = 0x18; // GlobalTypes::VectorWS m_vSrc; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_angSrc = 0x24; // GlobalTypes::QAngle m_angSrc; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_angCurrent = 0x30; // GlobalTypes::QAngle m_angCurrent; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flLockedSpeed = 0x3c; // float32 m_flLockedSpeed; |  0x3c | Schema_Builtin | Size: 0x4

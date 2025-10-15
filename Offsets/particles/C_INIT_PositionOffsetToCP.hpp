@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1D8
+			// Class size: 0x1E8
 			namespace C_INIT_PositionOffsetToCP /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nControlPointNumberStart = 0x1c8; // int32_t m_nControlPointNumberStart; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nControlPointNumberEnd = 0x1cc; // int32_t m_nControlPointNumberEnd; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bLocalCoords = 0x1d0; // bool m_bLocalCoords; |  0x1d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nControlPointNumberStart = 0x1d8; // int32_t m_nControlPointNumberStart; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nControlPointNumberEnd = 0x1dc; // int32_t m_nControlPointNumberEnd; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bLocalCoords = 0x1e0; // bool m_bLocalCoords; |  0x1e0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

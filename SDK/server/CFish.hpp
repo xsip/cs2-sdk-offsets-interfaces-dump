@@ -14,58 +14,59 @@ namespace CS2 {
 	namespace server {
 		class CFish : public CS2::server::CBaseAnimGraph {
 		public:
-			// server::CHandle< server::CFishPool > m_pool; // 0xa80 | Schema_Atomic | Size: 0x4
-			char  m_pool[0x4]; // 0xa80 | Schema_Atomic | Size: 0x4
-			uint32_t m_id; // 0xa84 | Schema_Builtin | Size: 0x4
-			float32 m_x; // 0xa88 | Schema_Builtin | Size: 0x4
-			float32 m_y; // 0xa8c | Schema_Builtin | Size: 0x4
-			float32 m_z; // 0xa90 | Schema_Builtin | Size: 0x4
-			float32 m_angle; // 0xa94 | Schema_Builtin | Size: 0x4
-			float32 m_angleChange; // 0xa98 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_forward; // 0xa9c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_perp; // 0xaa8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_poolOrigin; // 0xab4 | Schema_Atomic | Size: 0xc
-			float32 m_waterLevel; // 0xac0 | Schema_Builtin | Size: 0x4
-			float32 m_speed; // 0xac4 | Schema_Builtin | Size: 0x4
-			float32 m_desiredSpeed; // 0xac8 | Schema_Builtin | Size: 0x4
-			float32 m_calmSpeed; // 0xacc | Schema_Builtin | Size: 0x4
-			float32 m_panicSpeed; // 0xad0 | Schema_Builtin | Size: 0x4
-			float32 m_avoidRange; // 0xad4 | Schema_Builtin | Size: 0x4
-			server::CountdownTimer m_turnTimer; // 0xad8 | Schema_DeclaredClass | Size: 0x18
-			bool m_turnClockwise; // 0xaf0 | Schema_Builtin | Size: 0x1
+			// server::CHandle< server::CFishPool > m_pool; // 0xa90 | Schema_Atomic | Size: 0x4
+			char  m_pool[0x4]; // 0xa90 | Schema_Atomic | Size: 0x4
+			uint32_t m_id; // 0xa94 | Schema_Builtin | Size: 0x4
+			float32 m_x; // 0xa98 | Schema_Builtin | Size: 0x4
+			float32 m_y; // 0xa9c | Schema_Builtin | Size: 0x4
+			float32 m_z; // 0xaa0 | Schema_Builtin | Size: 0x4
+			float32 m_angle; // 0xaa4 | Schema_Builtin | Size: 0x4
+			float32 m_angleChange; // 0xaa8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_forward; // 0xaac | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_perp; // 0xab8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_poolOrigin; // 0xac4 | Schema_Atomic | Size: 0xc
+			float32 m_waterLevel; // 0xad0 | Schema_Builtin | Size: 0x4
+			float32 m_speed; // 0xad4 | Schema_Builtin | Size: 0x4
+			float32 m_desiredSpeed; // 0xad8 | Schema_Builtin | Size: 0x4
+			float32 m_calmSpeed; // 0xadc | Schema_Builtin | Size: 0x4
+			float32 m_panicSpeed; // 0xae0 | Schema_Builtin | Size: 0x4
+			float32 m_avoidRange; // 0xae4 | Schema_Builtin | Size: 0x4
+			server::CountdownTimer m_turnTimer; // 0xae8 | Schema_DeclaredClass | Size: 0x18
+			bool m_turnClockwise; // 0xb00 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			server::CountdownTimer m_goTimer; // 0xaf8 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_moveTimer; // 0xb10 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_panicTimer; // 0xb28 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_disperseTimer; // 0xb40 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_proximityTimer; // 0xb58 | Schema_DeclaredClass | Size: 0x18
-			// server::CUtlVector< CFish >* m_visible; // 0xb70 | Schema_Atomic | Size: 0x18
-			char  m_visible[0x18]; // 0xb70 | Schema_Atomic | Size: 0x18
+			server::CountdownTimer m_goTimer; // 0xb08 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_moveTimer; // 0xb20 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_panicTimer; // 0xb38 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_disperseTimer; // 0xb50 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_proximityTimer; // 0xb68 | Schema_DeclaredClass | Size: 0x18
+			// server::CUtlVector< CFish >* m_visible; // 0xb80 | Schema_Atomic | Size: 0x18
+			char  m_visible[0x18]; // 0xb80 | Schema_Atomic | Size: 0x18
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFish, m_pool) == 0xA80, "m_pool in CFish should be at offset 0xA80");
-		static_assert(offsetof(CS2::server::CFish, m_id) == 0xA84, "m_id in CFish should be at offset 0xA84");
-		static_assert(offsetof(CS2::server::CFish, m_x) == 0xA88, "m_x in CFish should be at offset 0xA88");
-		static_assert(offsetof(CS2::server::CFish, m_y) == 0xA8C, "m_y in CFish should be at offset 0xA8C");
-		static_assert(offsetof(CS2::server::CFish, m_z) == 0xA90, "m_z in CFish should be at offset 0xA90");
-		static_assert(offsetof(CS2::server::CFish, m_angle) == 0xA94, "m_angle in CFish should be at offset 0xA94");
-		static_assert(offsetof(CS2::server::CFish, m_angleChange) == 0xA98, "m_angleChange in CFish should be at offset 0xA98");
-		static_assert(offsetof(CS2::server::CFish, m_forward) == 0xA9C, "m_forward in CFish should be at offset 0xA9C");
-		static_assert(offsetof(CS2::server::CFish, m_perp) == 0xAA8, "m_perp in CFish should be at offset 0xAA8");
-		static_assert(offsetof(CS2::server::CFish, m_poolOrigin) == 0xAB4, "m_poolOrigin in CFish should be at offset 0xAB4");
-		static_assert(offsetof(CS2::server::CFish, m_waterLevel) == 0xAC0, "m_waterLevel in CFish should be at offset 0xAC0");
-		static_assert(offsetof(CS2::server::CFish, m_speed) == 0xAC4, "m_speed in CFish should be at offset 0xAC4");
-		static_assert(offsetof(CS2::server::CFish, m_desiredSpeed) == 0xAC8, "m_desiredSpeed in CFish should be at offset 0xAC8");
-		static_assert(offsetof(CS2::server::CFish, m_calmSpeed) == 0xACC, "m_calmSpeed in CFish should be at offset 0xACC");
-		static_assert(offsetof(CS2::server::CFish, m_panicSpeed) == 0xAD0, "m_panicSpeed in CFish should be at offset 0xAD0");
-		static_assert(offsetof(CS2::server::CFish, m_avoidRange) == 0xAD4, "m_avoidRange in CFish should be at offset 0xAD4");
-		static_assert(offsetof(CS2::server::CFish, m_turnTimer) == 0xAD8, "m_turnTimer in CFish should be at offset 0xAD8");
-		static_assert(offsetof(CS2::server::CFish, m_turnClockwise) == 0xAF0, "m_turnClockwise in CFish should be at offset 0xAF0");
-		static_assert(offsetof(CS2::server::CFish, m_goTimer) == 0xAF8, "m_goTimer in CFish should be at offset 0xAF8");
-		static_assert(offsetof(CS2::server::CFish, m_moveTimer) == 0xB10, "m_moveTimer in CFish should be at offset 0xB10");
-		static_assert(offsetof(CS2::server::CFish, m_panicTimer) == 0xB28, "m_panicTimer in CFish should be at offset 0xB28");
-		static_assert(offsetof(CS2::server::CFish, m_disperseTimer) == 0xB40, "m_disperseTimer in CFish should be at offset 0xB40");
-		static_assert(offsetof(CS2::server::CFish, m_proximityTimer) == 0xB58, "m_proximityTimer in CFish should be at offset 0xB58");
-		static_assert(offsetof(CS2::server::CFish, m_visible) == 0xB70, "m_visible in CFish should be at offset 0xB70");
-		static_assert(sizeof(CS2::server::CFish) == 0xB88, "CFish size should be 0xB88");
+		static_assert(offsetof(CS2::server::CFish, m_pool) == 0xA90, "m_pool in CFish should be at offset 0xA90");
+		static_assert(offsetof(CS2::server::CFish, m_id) == 0xA94, "m_id in CFish should be at offset 0xA94");
+		static_assert(offsetof(CS2::server::CFish, m_x) == 0xA98, "m_x in CFish should be at offset 0xA98");
+		static_assert(offsetof(CS2::server::CFish, m_y) == 0xA9C, "m_y in CFish should be at offset 0xA9C");
+		static_assert(offsetof(CS2::server::CFish, m_z) == 0xAA0, "m_z in CFish should be at offset 0xAA0");
+		static_assert(offsetof(CS2::server::CFish, m_angle) == 0xAA4, "m_angle in CFish should be at offset 0xAA4");
+		static_assert(offsetof(CS2::server::CFish, m_angleChange) == 0xAA8, "m_angleChange in CFish should be at offset 0xAA8");
+		static_assert(offsetof(CS2::server::CFish, m_forward) == 0xAAC, "m_forward in CFish should be at offset 0xAAC");
+		static_assert(offsetof(CS2::server::CFish, m_perp) == 0xAB8, "m_perp in CFish should be at offset 0xAB8");
+		static_assert(offsetof(CS2::server::CFish, m_poolOrigin) == 0xAC4, "m_poolOrigin in CFish should be at offset 0xAC4");
+		static_assert(offsetof(CS2::server::CFish, m_waterLevel) == 0xAD0, "m_waterLevel in CFish should be at offset 0xAD0");
+		static_assert(offsetof(CS2::server::CFish, m_speed) == 0xAD4, "m_speed in CFish should be at offset 0xAD4");
+		static_assert(offsetof(CS2::server::CFish, m_desiredSpeed) == 0xAD8, "m_desiredSpeed in CFish should be at offset 0xAD8");
+		static_assert(offsetof(CS2::server::CFish, m_calmSpeed) == 0xADC, "m_calmSpeed in CFish should be at offset 0xADC");
+		static_assert(offsetof(CS2::server::CFish, m_panicSpeed) == 0xAE0, "m_panicSpeed in CFish should be at offset 0xAE0");
+		static_assert(offsetof(CS2::server::CFish, m_avoidRange) == 0xAE4, "m_avoidRange in CFish should be at offset 0xAE4");
+		static_assert(offsetof(CS2::server::CFish, m_turnTimer) == 0xAE8, "m_turnTimer in CFish should be at offset 0xAE8");
+		static_assert(offsetof(CS2::server::CFish, m_turnClockwise) == 0xB00, "m_turnClockwise in CFish should be at offset 0xB00");
+		static_assert(offsetof(CS2::server::CFish, m_goTimer) == 0xB08, "m_goTimer in CFish should be at offset 0xB08");
+		static_assert(offsetof(CS2::server::CFish, m_moveTimer) == 0xB20, "m_moveTimer in CFish should be at offset 0xB20");
+		static_assert(offsetof(CS2::server::CFish, m_panicTimer) == 0xB38, "m_panicTimer in CFish should be at offset 0xB38");
+		static_assert(offsetof(CS2::server::CFish, m_disperseTimer) == 0xB50, "m_disperseTimer in CFish should be at offset 0xB50");
+		static_assert(offsetof(CS2::server::CFish, m_proximityTimer) == 0xB68, "m_proximityTimer in CFish should be at offset 0xB68");
+		static_assert(offsetof(CS2::server::CFish, m_visible) == 0xB80, "m_visible in CFish should be at offset 0xB80");
+		static_assert(sizeof(CS2::server::CFish) == 0xBA0, "CFish size should be 0xBA0");
 	}
 }

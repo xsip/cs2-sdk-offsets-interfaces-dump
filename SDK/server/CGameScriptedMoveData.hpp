@@ -16,7 +16,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector m_vAccumulatedRootMotion; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angAccumulatedRootMotionRotation; // 0xc | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vSrc; // 0x18 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vSrc; // 0x18 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angSrc; // 0x24 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angCurrent; // 0x30 | Schema_Atomic | Size: 0xc
 			float32 m_flLockedSpeed; // 0x3c | Schema_Builtin | Size: 0x4

@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x1D8
+			// Class size: 0x1E8
 			namespace C_OP_SetControlPointFieldToWater /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nSourceCP = 0x1c8; // int32_t m_nSourceCP; |  0x1c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestCP = 0x1cc; // int32_t m_nDestCP; |  0x1cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCPField = 0x1d0; // int32_t m_nCPField; |  0x1d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nSourceCP = 0x1d8; // int32_t m_nSourceCP; |  0x1d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestCP = 0x1dc; // int32_t m_nDestCP; |  0x1dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCPField = 0x1e0; // int32_t m_nCPField; |  0x1e0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB28
+			// Class size: 0xB10
 			namespace COmniLight /*: public CS2::server::CBarnLight*/ {
-				constexpr std::ptrdiff_t m_flInnerAngle = 0xb18; // float32 m_flInnerAngle; |  0xb18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOuterAngle = 0xb1c; // float32 m_flOuterAngle; |  0xb1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bShowLight = 0xb20; // bool m_bShowLight; |  0xb20 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flInnerAngle = 0xb00; // float32 m_flInnerAngle; |  0xb00 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOuterAngle = 0xb04; // float32 m_flOuterAngle; |  0xb04 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bShowLight = 0xb08; // bool m_bShowLight; |  0xb08 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -15,33 +15,31 @@ namespace CS2 {
 	namespace server {
 		class CBaseCombatCharacter : public CS2::server::CBaseFlex {
 		public:
-			bool m_bForceServerRagdoll; // 0xb10 | Schema_Builtin | Size: 0x1
+			bool m_bForceServerRagdoll; // 0xb20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CEconWearable > > m_hMyWearables; // 0xb18 | Schema_Atomic | Size: 0x18
-			char  m_hMyWearables[0x18]; // 0xb18 | Schema_Atomic | Size: 0x18
-			float32 m_impactEnergyScale; // 0xb30 | Schema_Builtin | Size: 0x4
-			int32_t m_nMinVehicleDamageToTempRagdoll; // 0xb34 | Schema_Builtin | Size: 0x4
-			bool m_bApplyStressDamage; // 0xb38 | Schema_Builtin | Size: 0x1
-			bool m_bDeathEventsDispatched; // 0xb39 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x46);
-			// GlobalTypes::CUtlVector< RelationshipOverride_t >* m_pVecRelationships; // 0xb80 | Schema_Ptr | Size: 0x8
-			char  m_pVecRelationships[0x8]; // 0xb80 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_strRelationships; // 0xb88 | Schema_Atomic | Size: 0x8
-			client::Hull_t m_eHull; // 0xb90 | Schema_DeclaredEnum | Size: 0x4
-			uint32_t m_nNavHullIdx; // 0xb94 | Schema_Builtin | Size: 0x4
-			server::CMovementStatsProperty m_movementStats; // 0xb98 | Schema_DeclaredClass | Size: 0x40
+			// server::CNetworkUtlVectorBase< server.dll::CHandle< CEconWearable > > m_hMyWearables; // 0xb28 | Schema_Atomic | Size: 0x18
+			char  m_hMyWearables[0x18]; // 0xb28 | Schema_Atomic | Size: 0x18
+			float32 m_impactEnergyScale; // 0xb40 | Schema_Builtin | Size: 0x4
+			bool m_bApplyStressDamage; // 0xb44 | Schema_Builtin | Size: 0x1
+			bool m_bDeathEventsDispatched; // 0xb45 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x42);
+			// GlobalTypes::CUtlVector< RelationshipOverride_t >* m_pVecRelationships; // 0xb88 | Schema_Ptr | Size: 0x8
+			char  m_pVecRelationships[0x8]; // 0xb88 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_strRelationships; // 0xb90 | Schema_Atomic | Size: 0x8
+			client::Hull_t m_eHull; // 0xb98 | Schema_DeclaredEnum | Size: 0x4
+			uint32_t m_nNavHullIdx; // 0xb9c | Schema_Builtin | Size: 0x4
+			server::CMovementStatsProperty m_movementStats; // 0xba0 | Schema_DeclaredClass | Size: 0x40
 		};
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_bForceServerRagdoll) == 0xB10, "m_bForceServerRagdoll in CBaseCombatCharacter should be at offset 0xB10");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_hMyWearables) == 0xB18, "m_hMyWearables in CBaseCombatCharacter should be at offset 0xB18");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_impactEnergyScale) == 0xB30, "m_impactEnergyScale in CBaseCombatCharacter should be at offset 0xB30");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_nMinVehicleDamageToTempRagdoll) == 0xB34, "m_nMinVehicleDamageToTempRagdoll in CBaseCombatCharacter should be at offset 0xB34");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_bApplyStressDamage) == 0xB38, "m_bApplyStressDamage in CBaseCombatCharacter should be at offset 0xB38");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_bDeathEventsDispatched) == 0xB39, "m_bDeathEventsDispatched in CBaseCombatCharacter should be at offset 0xB39");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_pVecRelationships) == 0xB80, "m_pVecRelationships in CBaseCombatCharacter should be at offset 0xB80");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_strRelationships) == 0xB88, "m_strRelationships in CBaseCombatCharacter should be at offset 0xB88");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_eHull) == 0xB90, "m_eHull in CBaseCombatCharacter should be at offset 0xB90");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_nNavHullIdx) == 0xB94, "m_nNavHullIdx in CBaseCombatCharacter should be at offset 0xB94");
-		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_movementStats) == 0xB98, "m_movementStats in CBaseCombatCharacter should be at offset 0xB98");
-		static_assert(sizeof(CS2::server::CBaseCombatCharacter) == 0xBD8, "CBaseCombatCharacter size should be 0xBD8");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_bForceServerRagdoll) == 0xB20, "m_bForceServerRagdoll in CBaseCombatCharacter should be at offset 0xB20");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_hMyWearables) == 0xB28, "m_hMyWearables in CBaseCombatCharacter should be at offset 0xB28");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_impactEnergyScale) == 0xB40, "m_impactEnergyScale in CBaseCombatCharacter should be at offset 0xB40");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_bApplyStressDamage) == 0xB44, "m_bApplyStressDamage in CBaseCombatCharacter should be at offset 0xB44");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_bDeathEventsDispatched) == 0xB45, "m_bDeathEventsDispatched in CBaseCombatCharacter should be at offset 0xB45");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_pVecRelationships) == 0xB88, "m_pVecRelationships in CBaseCombatCharacter should be at offset 0xB88");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_strRelationships) == 0xB90, "m_strRelationships in CBaseCombatCharacter should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_eHull) == 0xB98, "m_eHull in CBaseCombatCharacter should be at offset 0xB98");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_nNavHullIdx) == 0xB9C, "m_nNavHullIdx in CBaseCombatCharacter should be at offset 0xB9C");
+		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_movementStats) == 0xBA0, "m_movementStats in CBaseCombatCharacter should be at offset 0xBA0");
+		static_assert(sizeof(CS2::server::CBaseCombatCharacter) == 0xBE0, "CBaseCombatCharacter size should be 0xBE0");
 	}
 }

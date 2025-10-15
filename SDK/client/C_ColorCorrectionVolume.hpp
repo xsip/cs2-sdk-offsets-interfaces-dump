@@ -14,27 +14,27 @@ namespace CS2 {
 	namespace client {
 		class C_ColorCorrectionVolume : public CS2::client::C_BaseTrigger {
 		public:
-			float32 m_LastEnterWeight; // 0x1008 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_LastEnterTime; // 0x100c | Schema_DeclaredClass | Size: 0x4
-			float32 m_LastExitWeight; // 0x1010 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_LastExitTime; // 0x1014 | Schema_DeclaredClass | Size: 0x4
-			bool m_bEnabled; // 0x1018 | Schema_Builtin | Size: 0x1
+			float32 m_LastEnterWeight; // 0xff0 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_LastEnterTime; // 0xff4 | Schema_DeclaredClass | Size: 0x4
+			float32 m_LastExitWeight; // 0xff8 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_LastExitTime; // 0xffc | Schema_DeclaredClass | Size: 0x4
+			bool m_bEnabled; // 0x1000 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_MaxWeight; // 0x101c | Schema_Builtin | Size: 0x4
-			float32 m_FadeDuration; // 0x1020 | Schema_Builtin | Size: 0x4
-			float32 m_Weight; // 0x1024 | Schema_Builtin | Size: 0x4
-			char m_lookupFilename[512]; // 0x1028 | Schema_FixedArray | Size: 0x200
+			float32 m_MaxWeight; // 0x1004 | Schema_Builtin | Size: 0x4
+			float32 m_FadeDuration; // 0x1008 | Schema_Builtin | Size: 0x4
+			float32 m_Weight; // 0x100c | Schema_Builtin | Size: 0x4
+			char m_lookupFilename[512]; // 0x1010 | Schema_FixedArray | Size: 0x200
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastEnterWeight) == 0x1008, "m_LastEnterWeight in C_ColorCorrectionVolume should be at offset 0x1008");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastEnterTime) == 0x100C, "m_LastEnterTime in C_ColorCorrectionVolume should be at offset 0x100C");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastExitWeight) == 0x1010, "m_LastExitWeight in C_ColorCorrectionVolume should be at offset 0x1010");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastExitTime) == 0x1014, "m_LastExitTime in C_ColorCorrectionVolume should be at offset 0x1014");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_bEnabled) == 0x1018, "m_bEnabled in C_ColorCorrectionVolume should be at offset 0x1018");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_MaxWeight) == 0x101C, "m_MaxWeight in C_ColorCorrectionVolume should be at offset 0x101C");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_FadeDuration) == 0x1020, "m_FadeDuration in C_ColorCorrectionVolume should be at offset 0x1020");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_Weight) == 0x1024, "m_Weight in C_ColorCorrectionVolume should be at offset 0x1024");
-		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_lookupFilename) == 0x1028, "m_lookupFilename in C_ColorCorrectionVolume should be at offset 0x1028");
-		static_assert(sizeof(CS2::client::C_ColorCorrectionVolume) == 0x1230, "C_ColorCorrectionVolume size should be 0x1230");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastEnterWeight) == 0xFF0, "m_LastEnterWeight in C_ColorCorrectionVolume should be at offset 0xFF0");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastEnterTime) == 0xFF4, "m_LastEnterTime in C_ColorCorrectionVolume should be at offset 0xFF4");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastExitWeight) == 0xFF8, "m_LastExitWeight in C_ColorCorrectionVolume should be at offset 0xFF8");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastExitTime) == 0xFFC, "m_LastExitTime in C_ColorCorrectionVolume should be at offset 0xFFC");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_bEnabled) == 0x1000, "m_bEnabled in C_ColorCorrectionVolume should be at offset 0x1000");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_MaxWeight) == 0x1004, "m_MaxWeight in C_ColorCorrectionVolume should be at offset 0x1004");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_FadeDuration) == 0x1008, "m_FadeDuration in C_ColorCorrectionVolume should be at offset 0x1008");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_Weight) == 0x100C, "m_Weight in C_ColorCorrectionVolume should be at offset 0x100C");
+		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_lookupFilename) == 0x1010, "m_lookupFilename in C_ColorCorrectionVolume should be at offset 0x1010");
+		static_assert(sizeof(CS2::client::C_ColorCorrectionVolume) == 0x1218, "C_ColorCorrectionVolume size should be 0x1218");
 	}
 }

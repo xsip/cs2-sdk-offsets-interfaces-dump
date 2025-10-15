@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x830
+			// Class size: 0x818
 			namespace CSimpleMarkupVolumeTagged /*: public CS2::server::CMarkupVolumeTagged*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -16,24 +16,24 @@ namespace CS2 {
 	namespace particles {
 		class C_INIT_VelocityRandom : public CS2::particles::CParticleFunctionInitializer {
 		public:
-			int32_t m_nControlPointNumber; // 0x1c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nControlPointNumber; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CPerParticleFloatInput m_fSpeedMin; // 0x1d0 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleFloatInput m_fSpeedMax; // 0x330 | Schema_DeclaredClass | Size: 0x160
-			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0x490 | Schema_DeclaredClass | Size: 0x678
-			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0xb08 | Schema_DeclaredClass | Size: 0x678
-			bool m_bIgnoreDT; // 0x1180 | Schema_Builtin | Size: 0x1
+			particleslib::CPerParticleFloatInput m_fSpeedMin; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_fSpeedMax; // 0x350 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMin; // 0x4c0 | Schema_DeclaredClass | Size: 0x6b8
+			particleslib::CPerParticleVecInput m_LocalCoordinateSystemSpeedMax; // 0xb78 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bIgnoreDT; // 0x1230 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1184 | Schema_DeclaredClass | Size: 0x8
+			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1234 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_nControlPointNumber) == 0x1C8, "m_nControlPointNumber in C_INIT_VelocityRandom should be at offset 0x1C8");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_fSpeedMin) == 0x1D0, "m_fSpeedMin in C_INIT_VelocityRandom should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_fSpeedMax) == 0x330, "m_fSpeedMax in C_INIT_VelocityRandom should be at offset 0x330");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_LocalCoordinateSystemSpeedMin) == 0x490, "m_LocalCoordinateSystemSpeedMin in C_INIT_VelocityRandom should be at offset 0x490");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_LocalCoordinateSystemSpeedMax) == 0xB08, "m_LocalCoordinateSystemSpeedMax in C_INIT_VelocityRandom should be at offset 0xB08");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_bIgnoreDT) == 0x1180, "m_bIgnoreDT in C_INIT_VelocityRandom should be at offset 0x1180");
-		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_randomnessParameters) == 0x1184, "m_randomnessParameters in C_INIT_VelocityRandom should be at offset 0x1184");
-		static_assert(sizeof(CS2::particles::C_INIT_VelocityRandom) == 0x1190, "C_INIT_VelocityRandom size should be 0x1190");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_VelocityRandom should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_fSpeedMin) == 0x1E0, "m_fSpeedMin in C_INIT_VelocityRandom should be at offset 0x1E0");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_fSpeedMax) == 0x350, "m_fSpeedMax in C_INIT_VelocityRandom should be at offset 0x350");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_LocalCoordinateSystemSpeedMin) == 0x4C0, "m_LocalCoordinateSystemSpeedMin in C_INIT_VelocityRandom should be at offset 0x4C0");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_LocalCoordinateSystemSpeedMax) == 0xB78, "m_LocalCoordinateSystemSpeedMax in C_INIT_VelocityRandom should be at offset 0xB78");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_bIgnoreDT) == 0x1230, "m_bIgnoreDT in C_INIT_VelocityRandom should be at offset 0x1230");
+		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_randomnessParameters) == 0x1234, "m_randomnessParameters in C_INIT_VelocityRandom should be at offset 0x1234");
+		static_assert(sizeof(CS2::particles::C_INIT_VelocityRandom) == 0x1240, "C_INIT_VelocityRandom size should be 0x1240");
 	}
 }
