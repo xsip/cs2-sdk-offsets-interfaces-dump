@@ -8,15 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x20
+			// Class size: 0x28
 			namespace CTakeDamageResult /**/ {
 				constexpr std::ptrdiff_t m_pOriginatingInfo = 0x0; // client::CTakeDamageInfo* m_pOriginatingInfo; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_nHealthLost = 0x8; // int32_t m_nHealthLost; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDamageDealt = 0xc; // int32_t m_nDamageDealt; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPreModifiedDamage = 0x10; // float32 m_flPreModifiedDamage; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTotalledHealthLost = 0x14; // int32_t m_nTotalledHealthLost; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTotalledDamageDealt = 0x18; // int32_t m_nTotalledDamageDealt; |  0x18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bWasDamageSuppressed = 0x1c; // bool m_bWasDamageSuppressed; |  0x1c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nHealthBefore = 0xc; // int32_t m_nHealthBefore; |  0xc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDamageDealt = 0x10; // int32_t m_nDamageDealt; |  0x10 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPreModifiedDamage = 0x14; // float32 m_flPreModifiedDamage; |  0x14 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTotalledHealthLost = 0x18; // int32_t m_nTotalledHealthLost; |  0x18 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTotalledDamageDealt = 0x1c; // int32_t m_nTotalledDamageDealt; |  0x1c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bWasDamageSuppressed = 0x20; // bool m_bWasDamageSuppressed; |  0x20 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

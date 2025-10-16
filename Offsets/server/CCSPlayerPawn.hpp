@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x1C80
+			// Class size: 0x1C70
 			namespace CCSPlayerPawn /*: public CS2::server::CCSPlayerPawnBase*/ {
 				constexpr std::ptrdiff_t m_pBulletServices = 0xee8; // server::CCSPlayer_BulletServices* m_pBulletServices; |  Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_pHostageServices = 0xef0; // server::CCSPlayer_HostageServices* m_pHostageServices; |  Schema_Ptr | Size: 0x8
@@ -95,43 +95,42 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_ignoreLadderJumpTime = 0x1ae4; // float32 m_ignoreLadderJumpTime; |  0x1ae4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bKilledByHeadshot = 0x1ae8; // bool m_bKilledByHeadshot; |  0x1ae8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_LastHitBox = 0x1aec; // int32_t m_LastHitBox; |  0x1aec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_LastHealth = 0x1af0; // int32_t m_LastHealth; |  0x1af0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pBot = 0x1af8; // server::CCSBot* m_pBot; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_bBotAllowActive = 0x1b00; // bool m_bBotAllowActive; |  0x1b00 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_thirdPersonHeading = 0x1b04; // GlobalTypes::QAngle m_thirdPersonHeading; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flSlopeDropOffset = 0x1b10; // float32 m_flSlopeDropOffset; |  0x1b10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSlopeDropHeight = 0x1b14; // float32 m_flSlopeDropHeight; |  0x1b14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vHeadConstraintOffset = 0x1b18; // GlobalTypes::Vector m_vHeadConstraintOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nLastPickupPriority = 0x1b24; // int32_t m_nLastPickupPriority; |  0x1b24 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastPickupPriorityTime = 0x1b28; // float32 m_flLastPickupPriorityTime; |  0x1b28 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ArmorValue = 0x1b2c; // int32_t m_ArmorValue; |  0x1b2c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_unCurrentEquipmentValue = 0x1b30; // uint16_t m_unCurrentEquipmentValue; |  0x1b30 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_unRoundStartEquipmentValue = 0x1b32; // uint16_t m_unRoundStartEquipmentValue; |  0x1b32 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_unFreezetimeEndEquipmentValue = 0x1b34; // uint16_t m_unFreezetimeEndEquipmentValue; |  0x1b34 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_iLastWeaponFireUsercmd = 0x1b38; // int32_t m_iLastWeaponFireUsercmd; |  0x1b38 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsSpawning = 0x1b3c; // bool m_bIsSpawning; |  0x1b3c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iDeathFlags = 0x1b48; // int32_t m_iDeathFlags; |  0x1b48 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bHasDeathInfo = 0x1b4c; // bool m_bHasDeathInfo; |  0x1b4c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDeathInfoTime = 0x1b50; // float32 m_flDeathInfoTime; |  0x1b50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecDeathInfoOrigin = 0x1b54; // GlobalTypes::Vector m_vecDeathInfoOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPlayerPatchEconIndices = 0x1b60; // uint32_t m_vecPlayerPatchEconIndices[5]; |  0x1b60 | Schema_FixedArray | Size: 0x14
-				constexpr std::ptrdiff_t m_GunGameImmunityColor = 0x1b74; // GlobalTypes::Color m_GunGameImmunityColor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_grenadeParameterStashTime = 0x1b78; // entity2::GameTime_t m_grenadeParameterStashTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bGrenadeParametersStashed = 0x1b7c; // bool m_bGrenadeParametersStashed; |  0x1b7c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_angStashedShootAngles = 0x1b80; // GlobalTypes::QAngle m_angStashedShootAngles; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPosition = 0x1b8c; // GlobalTypes::Vector m_vecStashedGrenadeThrowPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecStashedVelocity = 0x1b98; // GlobalTypes::Vector m_vecStashedVelocity; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angShootAngleHistory = 0x1ba4; // GlobalTypes::QAngle m_angShootAngleHistory[2]; |  Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_vecThrowPositionHistory = 0x1bbc; // GlobalTypes::Vector m_vecThrowPositionHistory[2]; |  Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_vecVelocityHistory = 0x1bd4; // GlobalTypes::Vector m_vecVelocityHistory[2]; |  Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_PredictedDamageTags = 0x1bf0; // server::CUtlVectorEmbeddedNetworkVar< server::PredictedDamageTag_t > m_PredictedDamageTags; |  Schema_Atomic | Size: 0x68
-				constexpr std::ptrdiff_t m_nHighestAppliedDamageTagTick = 0x1c58; // int32_t m_nHighestAppliedDamageTagTick; |  0x1c58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bCommittingSuicideOnTeamChange = 0x1c5c; // bool m_bCommittingSuicideOnTeamChange; |  0x1c5c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_wasNotKilledNaturally = 0x1c5d; // bool m_wasNotKilledNaturally; |  0x1c5d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTime = 0x1c60; // entity2::GameTime_t m_fImmuneToGunGameDamageTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bGunGameImmunity = 0x1c64; // bool m_bGunGameImmunity; |  0x1c64 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x1c68; // float32 m_fMolotovDamageTime; |  0x1c68 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_angEyeAngles = 0x1c6c; // GlobalTypes::QAngle m_angEyeAngles; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_pBot = 0x1af0; // server::CCSBot* m_pBot; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_bBotAllowActive = 0x1af8; // bool m_bBotAllowActive; |  0x1af8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_thirdPersonHeading = 0x1afc; // GlobalTypes::QAngle m_thirdPersonHeading; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flSlopeDropOffset = 0x1b08; // float32 m_flSlopeDropOffset; |  0x1b08 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSlopeDropHeight = 0x1b0c; // float32 m_flSlopeDropHeight; |  0x1b0c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vHeadConstraintOffset = 0x1b10; // GlobalTypes::Vector m_vHeadConstraintOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nLastPickupPriority = 0x1b1c; // int32_t m_nLastPickupPriority; |  0x1b1c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastPickupPriorityTime = 0x1b20; // float32 m_flLastPickupPriorityTime; |  0x1b20 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_ArmorValue = 0x1b24; // int32_t m_ArmorValue; |  0x1b24 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_unCurrentEquipmentValue = 0x1b28; // uint16_t m_unCurrentEquipmentValue; |  0x1b28 | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_unRoundStartEquipmentValue = 0x1b2a; // uint16_t m_unRoundStartEquipmentValue; |  0x1b2a | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_unFreezetimeEndEquipmentValue = 0x1b2c; // uint16_t m_unFreezetimeEndEquipmentValue; |  0x1b2c | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_iLastWeaponFireUsercmd = 0x1b30; // int32_t m_iLastWeaponFireUsercmd; |  0x1b30 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsSpawning = 0x1b34; // bool m_bIsSpawning; |  0x1b34 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iDeathFlags = 0x1b40; // int32_t m_iDeathFlags; |  0x1b40 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bHasDeathInfo = 0x1b44; // bool m_bHasDeathInfo; |  0x1b44 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDeathInfoTime = 0x1b48; // float32 m_flDeathInfoTime; |  0x1b48 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecDeathInfoOrigin = 0x1b4c; // GlobalTypes::Vector m_vecDeathInfoOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPlayerPatchEconIndices = 0x1b58; // uint32_t m_vecPlayerPatchEconIndices[5]; |  0x1b58 | Schema_FixedArray | Size: 0x14
+				constexpr std::ptrdiff_t m_GunGameImmunityColor = 0x1b6c; // GlobalTypes::Color m_GunGameImmunityColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_grenadeParameterStashTime = 0x1b70; // entity2::GameTime_t m_grenadeParameterStashTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bGrenadeParametersStashed = 0x1b74; // bool m_bGrenadeParametersStashed; |  0x1b74 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_angStashedShootAngles = 0x1b78; // GlobalTypes::QAngle m_angStashedShootAngles; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecStashedGrenadeThrowPosition = 0x1b84; // GlobalTypes::Vector m_vecStashedGrenadeThrowPosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecStashedVelocity = 0x1b90; // GlobalTypes::Vector m_vecStashedVelocity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angShootAngleHistory = 0x1b9c; // GlobalTypes::QAngle m_angShootAngleHistory[2]; |  Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_vecThrowPositionHistory = 0x1bb4; // GlobalTypes::Vector m_vecThrowPositionHistory[2]; |  Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_vecVelocityHistory = 0x1bcc; // GlobalTypes::Vector m_vecVelocityHistory[2]; |  Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_PredictedDamageTags = 0x1be8; // server::CUtlVectorEmbeddedNetworkVar< server::PredictedDamageTag_t > m_PredictedDamageTags; |  Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_nHighestAppliedDamageTagTick = 0x1c50; // int32_t m_nHighestAppliedDamageTagTick; |  0x1c50 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bCommittingSuicideOnTeamChange = 0x1c54; // bool m_bCommittingSuicideOnTeamChange; |  0x1c54 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_wasNotKilledNaturally = 0x1c55; // bool m_wasNotKilledNaturally; |  0x1c55 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fImmuneToGunGameDamageTime = 0x1c58; // entity2::GameTime_t m_fImmuneToGunGameDamageTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bGunGameImmunity = 0x1c5c; // bool m_bGunGameImmunity; |  0x1c5c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fMolotovDamageTime = 0x1c60; // float32 m_fMolotovDamageTime; |  0x1c60 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_angEyeAngles = 0x1c64; // GlobalTypes::QAngle m_angEyeAngles; |  Schema_Atomic | Size: 0xc
 			}
 		}
 	}

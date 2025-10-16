@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x158
+			// Class size: 0x160
 			namespace SummaryTakeDamageInfo_t /**/ {
 				constexpr std::ptrdiff_t nSummarisedCount = 0x0; // int32_t nSummarisedCount; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t info = 0x8; // client::CTakeDamageInfo info; |  Schema_DeclaredClass | Size: 0x128
-				constexpr std::ptrdiff_t result = 0x130; // client::CTakeDamageResult result; |  Schema_DeclaredClass | Size: 0x20
-				constexpr std::ptrdiff_t hTarget = 0x150; // client::CHandle< client::C_BaseEntity > hTarget; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t result = 0x130; // client::CTakeDamageResult result; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t hTarget = 0x158; // client::CHandle< client::C_BaseEntity > hTarget; |  Schema_Atomic | Size: 0x4
 			}
 		}
 	}

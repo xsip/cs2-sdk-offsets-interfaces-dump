@@ -9,7 +9,7 @@ namespace CS2 {
 	namespace Interfaces {
 		namespace client {
 			constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x1bd47a0; 
-			constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x1b8fc10; 
+			constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x1b8fc30; 
 			constexpr std::ptrdiff_t GameClientExports001 = 0x1bd1480; 
 			constexpr std::ptrdiff_t LegacyGameUI001 = 0x1befd30; 
 			constexpr std::ptrdiff_t Source2Client002 = 0x1e18d00; 
