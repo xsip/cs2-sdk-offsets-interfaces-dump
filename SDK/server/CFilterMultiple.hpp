@@ -3,7 +3,12 @@
 
 #pragma once
 
-#include <SDK/GlobalTypes.hpp>
+#ifndef CUSTOM_GLOBAL_TYPES
+	#include <SDK/GlobalTypes.hpp>
+#else
+	#include <Custom/GlobalTypes.hpp>
+#endif
+
 
 #include <SDK/server/CBaseFilter.hpp>
 #include <SDK/client/filter_t.hpp>

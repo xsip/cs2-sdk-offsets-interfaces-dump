@@ -3,7 +3,12 @@
 
 #pragma once
 
-#include <SDK/GlobalTypes.hpp>
+#ifndef CUSTOM_GLOBAL_TYPES
+	#include <SDK/GlobalTypes.hpp>
+#else
+	#include <Custom/GlobalTypes.hpp>
+#endif
+
 
 #include <SDK/server/CBaseCombatCharacter.hpp>
 #include <SDK/server/sky3dparams_t.hpp>

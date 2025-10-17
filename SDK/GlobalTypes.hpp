@@ -3,6 +3,8 @@
 
 #pragma once
 
+#ifndef CUSTOM_GLOBAL_TYPES
+
 #include <cstdint>
 #include <cfloat>
 #include <string_view>
@@ -88,3 +90,4 @@ namespace GlobalTypes {
 	using CUtlStringTokenWithStorage /*CUtlStringTokenWithStorage*/ = char[0x18]; //  Schema_Atomic
 
 }
+#endif

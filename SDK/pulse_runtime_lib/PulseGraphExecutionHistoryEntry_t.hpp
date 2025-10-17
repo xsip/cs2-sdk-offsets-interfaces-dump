@@ -3,7 +3,12 @@
 
 #pragma once
 
-#include <SDK/GlobalTypes.hpp>
+#ifndef CUSTOM_GLOBAL_TYPES
+	#include <SDK/GlobalTypes.hpp>
+#else
+	#include <Custom/GlobalTypes.hpp>
+#endif
+
 
 #include <SDK/pulse_runtime_lib/PulseCursorID_t.hpp>
 #include <SDK/pulse_runtime_lib/PulseDocNodeID_t.hpp>

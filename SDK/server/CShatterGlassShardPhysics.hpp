@@ -3,7 +3,12 @@
 
 #pragma once
 
-#include <SDK/GlobalTypes.hpp>
+#ifndef CUSTOM_GLOBAL_TYPES
+	#include <SDK/GlobalTypes.hpp>
+#else
+	#include <Custom/GlobalTypes.hpp>
+#endif
+
 
 #include <SDK/server/CPhysicsProp.hpp>
 #include <SDK/server/shard_model_desc_t.hpp>
