@@ -1,4 +1,4 @@
-# xsip's CS2 Dump ( Interface Offsets, Schema Offsets, Cheat Engine Table, and SDK)
+# xsip's CS2 Dump ( Interface Offsets, Schema Offsets, Cheat Engine Table, and C++ SDK and IDA Sdk)
 
 ## This dump contains a fully working SDK, SDK to use with IDA ( Work in progress!! ), dump of all SchemaClass Offsets and Interface offsets
 
