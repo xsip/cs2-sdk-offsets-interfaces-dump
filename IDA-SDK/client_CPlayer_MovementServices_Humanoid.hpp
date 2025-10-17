@@ -1,0 +1,49 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+#include "entity2_CNetworkVarChainer.hpp"
+#include "client_CInButtonState.hpp"
+#include "entity2_GameTime_t.hpp"
+
+class client_CPlayer_MovementServices_Humanoid {
+    char vTable1197[0x8];
+    entity2_CNetworkVarChainer __m_pChainEntity;
+    char pad_1198[0x10];
+    int32_t m_nImpulse;
+    char pad_818[0x4];
+    client_CInButtonState m_nButtons;
+    uint64_t m_nQueuedButtonDownMask;
+    uint64_t m_nQueuedButtonChangeMask;
+    uint64_t m_nButtonDoublePressed;
+    uint32_t m_pButtonPressedCmdNumber[64];
+    uint32_t m_nLastCommandNumberProcessed;
+    char pad_819[0x4];
+    uint64_t m_nToggleButtonDownMask;
+    char pad_820[0x8];
+    float32 m_flMaxspeed;
+    float32 m_arrForceSubtickMoveWhen[4];
+    float32 m_flForwardMove;
+    float32 m_flLeftMove;
+    float32 m_flUpMove;
+    Vector m_vecLastMovementImpulses;
+    char pad_821[0x5c];
+    QAngle m_vecOldViewAngles;
+    char end_pad_822[0xc];
+    float32 m_flStepSoundTime;
+    float32 m_flFallVelocity;
+    bool m_bInCrouch;
+    char pad_873[0x3];
+    uint32_t m_nCrouchState;
+    entity2_GameTime_t m_flCrouchTransitionStartTime;
+    bool m_bDucked;
+    bool m_bDucking;
+    bool m_bInDuckJump;
+    char pad_874[0x1];
+    Vector m_groundNormal;
+    float32 m_flSurfaceFriction;
+    CUtlStringToken m_surfaceProps;
+    char pad_875[0xc];
+    int32_t m_nStepside;
+    char end_pad_876[0x4];
+};

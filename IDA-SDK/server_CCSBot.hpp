@@ -1,0 +1,244 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class server_CCSPlayerController;
+class server_CCSPlayerPawn;
+class server_IntervalTimer;
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_IntervalTimer.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_IntervalTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_IntervalTimer.hpp"
+#include "server_IntervalTimer.hpp"
+#include "server_IntervalTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "server_CountdownTimer.hpp"
+#include "server_CountdownTimer.hpp"
+#include "entity2_GameTime_t.hpp"
+
+class server_CCSBot {
+    char vTable3017[0x10];
+    server_CCSPlayerController* m_pController;
+    server_CCSPlayerPawn* m_pPlayer;
+    bool m_bHasSpawned;
+    char pad_3018[0x3];
+    uint32_t m_id;
+    char pad_3019[0x98];
+    bool m_isRunning;
+    bool m_isCrouching;
+    char pad_3020[0x2];
+    float32 m_forwardSpeed;
+    float32 m_leftSpeed;
+    float32 m_verticalSpeed;
+    uint64_t m_buttonFlags;
+    float32 m_jumpTimestamp;
+    Vector m_viewForward;
+    char pad_3021[0x10];
+    int32_t m_postureStackIndex;
+    char end_pad_3022[0x4];
+    char vTable3178[0x8];
+    VectorWS m_eyePosition;
+    char m_name[64];
+    float32 m_combatRange;
+    bool m_isRogue;
+    char pad_3179[0x7];
+    server_CountdownTimer m_rogueTimer;
+    char pad_3180[0x4];
+    bool m_diedLastRound;
+    char pad_3181[0x3];
+    float32 m_safeTime;
+    bool m_wasSafe;
+    char pad_3182[0x7];
+    bool m_blindFire;
+    char pad_3183[0x3];
+    server_CountdownTimer m_surpriseTimer;
+    bool m_bAllowActive;
+    bool m_isFollowing;
+    char pad_3184[0x2];
+    char m_leader[0x4];
+    float32 m_followTimestamp;
+    float32 m_allowAutoFollowTime;
+    server_CountdownTimer m_hurryTimer;
+    server_CountdownTimer m_alertTimer;
+    server_CountdownTimer m_sneakTimer;
+    server_CountdownTimer m_panicTimer;
+    char pad_3185[0x2b8];
+    float32 m_stateTimestamp;
+    bool m_isAttacking;
+    bool m_isOpeningDoor;
+    char pad_3186[0x6];
+    char m_taskEntity[0x4];
+    char pad_3187[0xc];
+    VectorWS m_goalPosition;
+    char m_goalEntity[0x4];
+    char m_avoid[0x4];
+    float32 m_avoidTimestamp;
+    bool m_isStopping;
+    bool m_hasVisitedEnemySpawn;
+    char pad_3188[0x2];
+    server_IntervalTimer m_stillTimer;
+    bool m_bEyeAnglesUnderPathFinderControl;
+    char pad_3189[0x58ff];
+    int32_t m_pathIndex;
+    entity2_GameTime_t m_areaEnteredTimestamp;
+    server_CountdownTimer m_repathTimer;
+    server_CountdownTimer m_avoidFriendTimer;
+    bool m_isFriendInTheWay;
+    char pad_3190[0x7];
+    server_CountdownTimer m_politeTimer;
+    bool m_isWaitingBehindFriend;
+    char pad_3191[0x2b];
+    float32 m_pathLadderEnd;
+    char pad_3192[0x48];
+    server_CountdownTimer m_mustRunTimer;
+    server_CountdownTimer m_waitTimer;
+    server_CountdownTimer m_updateTravelDistanceTimer;
+    float32 m_playerTravelDistance[64];
+    uint8_t m_travelDistancePhase;
+    char pad_3193[0x197];
+    uint8_t m_hostageEscortCount;
+    char pad_3194[0x3];
+    float32 m_hostageEscortCountTimestamp;
+    int32_t m_desiredTeam;
+    bool m_hasJoined;
+    bool m_isWaitingForHostage;
+    char pad_3195[0x2];
+    server_CountdownTimer m_inhibitWaitingForHostageTimer;
+    server_CountdownTimer m_waitForHostageTimer;
+    Vector m_noisePosition;
+    float32 m_noiseTravelDistance;
+    float32 m_noiseTimestamp;
+    char pad_3196[0x4];
+    server_CCSPlayerPawn* m_noiseSource;
+    char pad_3197[0x10];
+    server_CountdownTimer m_noiseBendTimer;
+    Vector m_bentNoisePosition;
+    bool m_bendNoisePositionValid;
+    char pad_3198[0x3];
+    float32 m_lookAroundStateTimestamp;
+    float32 m_lookAheadAngle;
+    float32 m_forwardAngle;
+    float32 m_inhibitLookAroundTimestamp;
+    char pad_3199[0x4];
+    Vector m_lookAtSpot;
+    char pad_3200[0x4];
+    float32 m_lookAtSpotDuration;
+    float32 m_lookAtSpotTimestamp;
+    float32 m_lookAtSpotAngleTolerance;
+    bool m_lookAtSpotClearIfClose;
+    bool m_lookAtSpotAttack;
+    char pad_3201[0x6];
+    char* m_lookAtDesc;
+    float32 m_peripheralTimestamp;
+    char pad_3202[0x184];
+    uint8_t m_approachPointCount;
+    char pad_3203[0x3];
+    Vector m_approachPointViewPosition;
+    server_IntervalTimer m_viewSteadyTimer;
+    char pad_3204[0x8];
+    server_CountdownTimer m_tossGrenadeTimer;
+    char pad_3205[0x8];
+    server_CountdownTimer m_isAvoidingGrenade;
+    char pad_3206[0x8];
+    float32 m_spotCheckTimestamp;
+    char pad_3207[0x404];
+    int32_t m_checkedHidingSpotCount;
+    float32 m_lookPitch;
+    float32 m_lookPitchVel;
+    float32 m_lookYaw;
+    float32 m_lookYawVel;
+    Vector m_targetSpot;
+    Vector m_targetSpotVelocity;
+    Vector m_targetSpotPredicted;
+    QAngle m_aimError;
+    QAngle m_aimGoal;
+    entity2_GameTime_t m_targetSpotTime;
+    float32 m_aimFocus;
+    float32 m_aimFocusInterval;
+    entity2_GameTime_t m_aimFocusNextUpdate;
+    char pad_3208[0x8];
+    server_CountdownTimer m_ignoreEnemiesTimer;
+    char m_enemy[0x4];
+    bool m_isEnemyVisible;
+    uint8_t m_visibleEnemyParts;
+    char pad_3209[0x2];
+    Vector m_lastEnemyPosition;
+    float32 m_lastSawEnemyTimestamp;
+    float32 m_firstSawEnemyTimestamp;
+    float32 m_currentEnemyAcquireTimestamp;
+    float32 m_enemyDeathTimestamp;
+    float32 m_friendDeathTimestamp;
+    bool m_isLastEnemyDead;
+    char pad_3210[0x3];
+    int32_t m_nearbyEnemyCount;
+    char pad_3211[0x208];
+    char m_bomber[0x4];
+    int32_t m_nearbyFriendCount;
+    char m_closestVisibleFriend[0x4];
+    char m_closestVisibleHumanFriend[0x4];
+    server_IntervalTimer m_attentionInterval;
+    char m_attacker[0x4];
+    float32 m_attackedTimestamp;
+    server_IntervalTimer m_burnedByFlamesTimer;
+    int32_t m_lastVictimID;
+    bool m_isAimingAtEnemy;
+    bool m_isRapidFiring;
+    char pad_3212[0x2];
+    server_IntervalTimer m_equipTimer;
+    server_CountdownTimer m_zoomTimer;
+    entity2_GameTime_t m_fireWeaponTimestamp;
+    char pad_3213[0x4];
+    server_CountdownTimer m_lookForWeaponsOnGroundTimer;
+    bool m_bIsSleeping;
+    bool m_isEnemySniperVisible;
+    char pad_3214[0x6];
+    server_CountdownTimer m_sawEnemySniperTimer;
+    char pad_3215[0xa0];
+    uint8_t m_enemyQueueIndex;
+    uint8_t m_enemyQueueCount;
+    uint8_t m_enemyQueueAttendIndex;
+    bool m_isStuck;
+    entity2_GameTime_t m_stuckTimestamp;
+    Vector m_stuckSpot;
+    char pad_3216[0x4];
+    server_CountdownTimer m_wiggleTimer;
+    server_CountdownTimer m_stuckJumpTimer;
+    entity2_GameTime_t m_nextCleanupCheckTimestamp;
+    float32 m_avgVel[10];
+    int32_t m_avgVelIndex;
+    int32_t m_avgVelCount;
+    Vector m_lastOrigin;
+    char pad_3217[0x4];
+    float32 m_lastRadioRecievedTimestamp;
+    float32 m_lastRadioSentTimestamp;
+    char m_radioSubject[0x4];
+    Vector m_radioPosition;
+    float32 m_voiceEndTimestamp;
+    char pad_3218[0x8];
+    int32_t m_lastValidReactionQueueFrame;
+    char end_pad_3219[0x4];
+};

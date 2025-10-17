@@ -1,0 +1,52 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class particleslib_CParticleCollectionFloatInput;
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+
+class particles_C_INIT_StatusEffectCitadel {
+    char vTable1798[0x8];
+    particleslib_CParticleCollectionFloatInput m_flOpStrength;
+    particles_ParticleEndcapMode_t m_nOpEndCapState;
+    float32 m_flOpStartFadeInTime;
+    float32 m_flOpEndFadeInTime;
+    float32 m_flOpStartFadeOutTime;
+    float32 m_flOpEndFadeOutTime;
+    float32 m_flOpFadeOscillatePeriod;
+    bool m_bNormalizeToStopTime;
+    char pad_1799[0x3];
+    float32 m_flOpTimeOffsetMin;
+    float32 m_flOpTimeOffsetMax;
+    int32_t m_nOpTimeOffsetSeed;
+    int32_t m_nOpTimeScaleSeed;
+    float32 m_flOpTimeScaleMin;
+    float32 m_flOpTimeScaleMax;
+    char pad_1800[0x2];
+    bool m_bDisableOperator;
+    char pad_1801[0x1];
+    CUtlString m_Notes;
+    char end_pad_1802[0x18];
+    int32_t m_nAssociatedEmitterIndex;
+    char end_pad_1806[0x4];
+    float32 m_flSFXColorWarpAmount;
+    float32 m_flSFXNormalAmount;
+    float32 m_flSFXMetalnessAmount;
+    float32 m_flSFXRoughnessAmount;
+    float32 m_flSFXSelfIllumAmount;
+    float32 m_flSFXSScale;
+    float32 m_flSFXSScrollX;
+    float32 m_flSFXSScrollY;
+    float32 m_flSFXSScrollZ;
+    float32 m_flSFXSOffsetX;
+    float32 m_flSFXSOffsetY;
+    float32 m_flSFXSOffsetZ;
+    particles_DetailCombo_t m_nDetailCombo;
+    float32 m_flSFXSDetailAmount;
+    float32 m_flSFXSDetailScale;
+    float32 m_flSFXSDetailScrollX;
+    float32 m_flSFXSDetailScrollY;
+    float32 m_flSFXSDetailScrollZ;
+    float32 m_flSFXSUseModelUVs;
+    char end_pad_1982[0x4];
+};

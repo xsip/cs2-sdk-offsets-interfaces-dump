@@ -1,0 +1,45 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class entity2_CEntityInstance;
+class client_CGameSceneNode;
+#include "client_CGameSceneNodeHandle.hpp"
+#include "client_CNetworkOriginCellCoordQuantizedVector.hpp"
+
+class client_CGameSceneNode {
+    char vTable938[0x10];
+    CTransformWS m_nodeToWorld;
+    entity2_CEntityInstance* m_pOwner;
+    client_CGameSceneNode* m_pParent;
+    client_CGameSceneNode* m_pChild;
+    client_CGameSceneNode* m_pNextSibling;
+    char pad_939[0x28];
+    client_CGameSceneNodeHandle m_hParent;
+    client_CNetworkOriginCellCoordQuantizedVector m_vecOrigin;
+    char pad_940[0x8];
+    QAngle m_angRotation;
+    float32 m_flScale;
+    VectorWS m_vecAbsOrigin;
+    QAngle m_angAbsRotation;
+    float32 m_flAbsScale;
+    Vector m_vecWrappedLocalOrigin;
+    QAngle m_angWrappedLocalRotation;
+    float32 m_flWrappedScale;
+    int16_t m_nParentAttachmentOrBone;
+    bool m_bDebugAbsOriginChanges;
+    bool m_bDormant;
+    bool m_bForceParentToBeNetworked;
+    char pad_941[0x2];
+    uint8_t m_nHierarchicalDepth;
+    uint8_t m_nHierarchyType;
+    uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount;
+    char pad_942[0x2];
+    CUtlStringToken m_name;
+    char pad_943[0x40];
+    CUtlStringToken m_hierarchyAttachName;
+    float32 m_flZOffset;
+    float32 m_flClientLocalScale;
+    Vector m_vRenderOrigin;
+    char end_pad_944[0x10];
+};

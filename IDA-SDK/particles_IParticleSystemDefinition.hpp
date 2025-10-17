@@ -1,0 +1,8 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+
+class particles_IParticleSystemDefinition {
+    char pad_1829[0x8];
+};

@@ -1,0 +1,9 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+
+class animlib_RemapRange_t {
+    float32 m_flBegin;
+    float32 m_flEnd;
+};

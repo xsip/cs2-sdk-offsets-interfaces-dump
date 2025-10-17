@@ -1,0 +1,148 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+#include "client_AmmoIndex_t.hpp"
+#include "client_AmmoIndex_t.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeFloat.hpp"
+#include "client_CFiringModeInt.hpp"
+
+class client_CCSWeaponBaseVData {
+    char pad_759[0x28];
+    char m_szWorldModel[0xe0];
+    char m_sToolsOnlyOwnerModelName[0xe0];
+    bool m_bBuiltRightHanded;
+    bool m_bAllowFlipping;
+    char pad_760[0x6];
+    CAttachmentNameSymbolWithStorage m_sMuzzleAttachment;
+    char m_szMuzzleFlashParticle[0xe0];
+    CUtlString m_szMuzzleFlashParticleConfig;
+    char m_szBarrelSmokeParticle[0xe0];
+    uint8_t m_nMuzzleSmokeShotThreshold;
+    char pad_761[0x3];
+    float32 m_flMuzzleSmokeTimeout;
+    float32 m_flMuzzleSmokeDecrementRate;
+    bool m_bLinkedCooldowns;
+    client_ItemFlagTypes_t m_iFlags;
+    client_AmmoIndex_t m_nPrimaryAmmoType;
+    client_AmmoIndex_t m_nSecondaryAmmoType;
+    int32_t m_iMaxClip1;
+    int32_t m_iMaxClip2;
+    int32_t m_iDefaultClip1;
+    int32_t m_iDefaultClip2;
+    bool m_bReserveAmmoAsClips;
+    bool m_bTreatAsSingleClip;
+    bool m_bKeepLoadedAmmo;
+    char pad_762[0x1];
+    int32_t m_iWeight;
+    bool m_bAutoSwitchTo;
+    bool m_bAutoSwitchFrom;
+    char pad_763[0x2];
+    client_RumbleEffect_t m_iRumbleEffect;
+    float32 m_flDropSpeed;
+    int32_t m_iSlot;
+    int32_t m_iPosition;
+    char pad_764[0x4];
+    char m_aShootSounds[0x28];
+    client_CSWeaponType m_WeaponType;
+    client_CSWeaponCategory m_WeaponCategory;
+    char m_szModel_AG2[0xe0];
+    char m_szAnimSkeleton[0xe0];
+    Vector m_vecMuzzlePos0;
+    Vector m_vecMuzzlePos1;
+    char m_szTracerParticle[0xe0];
+    client_gear_slot_t m_GearSlot;
+    int32_t m_GearSlotPosition;
+    client_loadout_slot_t m_DefaultLoadoutSlot;
+    int32_t m_nPrice;
+    int32_t m_nKillAward;
+    int32_t m_nPrimaryReserveAmmoMax;
+    int32_t m_nSecondaryReserveAmmoMax;
+    bool m_bMeleeWeapon;
+    bool m_bHasBurstMode;
+    bool m_bIsRevolver;
+    bool m_bCannotShootUnderwater;
+    CGlobalSymbol m_szName;
+    client_CSWeaponSilencerType m_eSilencerType;
+    int32_t m_nCrosshairMinDistance;
+    int32_t m_nCrosshairDeltaDistance;
+    bool m_bIsFullAuto;
+    char pad_884[0x3];
+    int32_t m_nNumBullets;
+    bool m_bReloadsSingleShells;
+    char pad_885[0x3];
+    client_CFiringModeFloat m_flCycleTime;
+    client_CFiringModeFloat m_flMaxSpeed;
+    client_CFiringModeFloat m_flSpread;
+    client_CFiringModeFloat m_flInaccuracyCrouch;
+    client_CFiringModeFloat m_flInaccuracyStand;
+    client_CFiringModeFloat m_flInaccuracyJump;
+    client_CFiringModeFloat m_flInaccuracyLand;
+    client_CFiringModeFloat m_flInaccuracyLadder;
+    client_CFiringModeFloat m_flInaccuracyFire;
+    client_CFiringModeFloat m_flInaccuracyMove;
+    client_CFiringModeFloat m_flRecoilAngle;
+    client_CFiringModeFloat m_flRecoilAngleVariance;
+    client_CFiringModeFloat m_flRecoilMagnitude;
+    client_CFiringModeFloat m_flRecoilMagnitudeVariance;
+    client_CFiringModeInt m_nTracerFrequency;
+    float32 m_flInaccuracyJumpInitial;
+    float32 m_flInaccuracyJumpApex;
+    float32 m_flInaccuracyReload;
+    float32 m_flDeployDuration;
+    float32 m_flDisallowAttackAfterReloadStartDuration;
+    int32_t m_nBurstShotCount;
+    bool m_bAllowBurstHolster;
+    char pad_886[0x3];
+    int32_t m_nRecoilSeed;
+    int32_t m_nSpreadSeed;
+    float32 m_flAttackMovespeedFactor;
+    float32 m_flInaccuracyPitchShift;
+    float32 m_flInaccuracyAltSoundThreshold;
+    CUtlString m_szUseRadioSubtitle;
+    bool m_bUnzoomsAfterShot;
+    bool m_bHideViewModelWhenZoomed;
+    char pad_887[0x2];
+    int32_t m_nZoomLevels;
+    int32_t m_nZoomFOV1;
+    int32_t m_nZoomFOV2;
+    float32 m_flZoomTime0;
+    float32 m_flZoomTime1;
+    float32 m_flZoomTime2;
+    float32 m_flIronSightPullUpSpeed;
+    float32 m_flIronSightPutDownSpeed;
+    float32 m_flIronSightFOV;
+    float32 m_flIronSightPivotForward;
+    float32 m_flIronSightLooseness;
+    int32_t m_nDamage;
+    float32 m_flHeadshotMultiplier;
+    float32 m_flArmorRatio;
+    float32 m_flPenetration;
+    float32 m_flRange;
+    float32 m_flRangeModifier;
+    float32 m_flFlinchVelocityModifierLarge;
+    float32 m_flFlinchVelocityModifierSmall;
+    float32 m_flRecoveryTimeCrouch;
+    float32 m_flRecoveryTimeStand;
+    float32 m_flRecoveryTimeCrouchFinal;
+    float32 m_flRecoveryTimeStandFinal;
+    int32_t m_nRecoveryTransitionStartBullet;
+    int32_t m_nRecoveryTransitionEndBullet;
+    float32 m_flThrowVelocity;
+    Vector m_vSmokeColor;
+    CGlobalSymbol m_szAnimClass;
+    char end_pad_888[0x30];
+};

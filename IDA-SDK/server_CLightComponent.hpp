@@ -1,0 +1,91 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+#include "entity2_CNetworkVarChainer.hpp"
+#include "entity2_GameTime_t.hpp"
+
+class server_CLightComponent {
+    char pad_770[0x8];
+    char vTable3740[0x28];
+    entity2_CNetworkVarChainer __m_pChainEntity;
+    char pad_3741[0x15];
+    Color m_Color;
+    Color m_SecondaryColor;
+    char pad_3742[0x3];
+    float32 m_flBrightness;
+    float32 m_flBrightnessScale;
+    float32 m_flBrightnessMult;
+    float32 m_flRange;
+    float32 m_flFalloff;
+    float32 m_flAttenuation0;
+    float32 m_flAttenuation1;
+    float32 m_flAttenuation2;
+    float32 m_flTheta;
+    float32 m_flPhi;
+    char m_hLightCookie[0x8];
+    int32_t m_nCascades;
+    int32_t m_nCastShadows;
+    int32_t m_nShadowWidth;
+    int32_t m_nShadowHeight;
+    bool m_bRenderDiffuse;
+    char pad_3743[0x3];
+    int32_t m_nRenderSpecular;
+    bool m_bRenderTransmissive;
+    char pad_3744[0x3];
+    float32 m_flOrthoLightWidth;
+    float32 m_flOrthoLightHeight;
+    int32_t m_nStyle;
+    CUtlString m_Pattern;
+    int32_t m_nCascadeRenderStaticObjects;
+    float32 m_flShadowCascadeCrossFade;
+    float32 m_flShadowCascadeDistanceFade;
+    float32 m_flShadowCascadeDistance0;
+    float32 m_flShadowCascadeDistance1;
+    float32 m_flShadowCascadeDistance2;
+    float32 m_flShadowCascadeDistance3;
+    int32_t m_nShadowCascadeResolution0;
+    int32_t m_nShadowCascadeResolution1;
+    int32_t m_nShadowCascadeResolution2;
+    int32_t m_nShadowCascadeResolution3;
+    bool m_bUsesBakedShadowing;
+    char pad_3745[0x3];
+    int32_t m_nShadowPriority;
+    int32_t m_nBakedShadowIndex;
+    int32_t m_nLightPathUniqueId;
+    int32_t m_nLightMapUniqueId;
+    bool m_bRenderToCubemaps;
+    bool m_bAllowSSTGeneration;
+    char pad_3746[0x2];
+    int32_t m_nDirectLight;
+    int32_t m_nIndirectLight;
+    float32 m_flFadeMinDist;
+    float32 m_flFadeMaxDist;
+    float32 m_flShadowFadeMinDist;
+    float32 m_flShadowFadeMaxDist;
+    bool m_bEnabled;
+    bool m_bFlicker;
+    bool m_bPrecomputedFieldsValid;
+    char pad_3747[0x1];
+    Vector m_vPrecomputedBoundsMins;
+    Vector m_vPrecomputedBoundsMaxs;
+    Vector m_vPrecomputedOBBOrigin;
+    QAngle m_vPrecomputedOBBAngles;
+    Vector m_vPrecomputedOBBExtent;
+    float32 m_flPrecomputedMaxRange;
+    int32_t m_nFogLightingMode;
+    float32 m_flFogContributionStength;
+    float32 m_flNearClipPlane;
+    Color m_SkyColor;
+    float32 m_flSkyIntensity;
+    Color m_SkyAmbientBounce;
+    bool m_bUseSecondaryColor;
+    bool m_bMixedShadows;
+    char pad_3748[0x2];
+    entity2_GameTime_t m_flLightStyleStartTime;
+    float32 m_flCapsuleLength;
+    float32 m_flMinRoughness;
+    char pad_3749[0x10];
+    bool m_bPvsModifyEntity;
+    char pad_3750[0x7];
+};

@@ -1,0 +1,329 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class entity2_CEntityIdentity;
+class entity2_CScriptComponent;
+class client_CBodyComponent;
+class client_CGameSceneNode;
+class client_CRenderComponent;
+class client_CCollisionProperty;
+class client_CDestructiblePartsComponent;
+class client_CClientAlphaProperty;
+class client_CBaseAnimGraph;
+class client_CPlayer_WeaponServices;
+class client_CPlayer_ItemServices;
+class client_CPlayer_AutoaimServices;
+class client_CPlayer_ObserverServices;
+class client_CPlayer_WaterServices;
+class client_CPlayer_UseServices;
+class client_CPlayer_FlashlightServices;
+class client_CPlayer_CameraServices;
+class client_CPlayer_MovementServices;
+class client_CCSPlayer_PingServices;
+#include "client_CNetworkTransmitComponent.hpp"
+#include "entity2_GameTick_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTick_t.hpp"
+#include "client_CNetworkVelocityVector.hpp"
+#include "client_CNetworkVelocityVector.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "particleslib_CParticleProperty.hpp"
+#include "client_CHitboxComponent.hpp"
+#include "client_CCollisionProperty.hpp"
+#include "client_CGlowProperty.hpp"
+#include "client_CNetworkViewOffsetVector.hpp"
+#include "client_PhysicsRagdollPose_t.hpp"
+#include "client_SceneEventId_t.hpp"
+#include "modellib_AttachmentHandle_t.hpp"
+#include "modellib_AttachmentHandle_t.hpp"
+#include "client_Emphasized_Phoneme.hpp"
+#include "modellib_AttachmentHandle_t.hpp"
+#include "modellib_AttachmentHandle_t.hpp"
+#include "client_sky3dparams_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+
+class client_C_CSPlayerPawnBase {
+    char vTable723[0x8];
+    CUtlSymbolLarge m_iszPrivateVScripts;
+    entity2_CEntityIdentity* m_pEntity;
+    char pad_724[0x18];
+    entity2_CScriptComponent* m_CScriptComponent;
+    client_CBodyComponent* m_CBodyComponent;
+    client_CNetworkTransmitComponent m_NetworkTransmitComponent;
+    char pad_705[0x120];
+    entity2_GameTick_t m_nLastThinkTick;
+    char pad_706[0x4];
+    client_CGameSceneNode* m_pGameSceneNode;
+    client_CRenderComponent* m_pRenderComponent;
+    client_CCollisionProperty* m_pCollision;
+    int32_t m_iMaxHealth;
+    int32_t m_iHealth;
+    float32 m_flDamageAccumulator;
+    uint8_t m_lifeState;
+    bool m_bTakesDamage;
+    char pad_707[0x2];
+    client_TakeDamageFlags_t m_nTakeDamageFlags;
+    client_EntityPlatformTypes_t m_nPlatformType;
+    uint8_t m_ubInterpolationFrame;
+    char pad_708[0x2];
+    char m_hSceneObjectController[0x4];
+    int32_t m_nNoInterpolationTick;
+    int32_t m_nVisibilityNoInterpolationTick;
+    float32 m_flProxyRandomValue;
+    int32_t m_iEFlags;
+    uint8_t m_nWaterType;
+    bool m_bInterpolateEvenWithNoModel;
+    bool m_bPredictionEligible;
+    bool m_bApplyLayerMatchIDToModel;
+    CUtlStringToken m_tokLayerMatchID;
+    CUtlStringToken m_nSubclassID;
+    char pad_709[0xc];
+    int32_t m_nSimulationTick;
+    int32_t m_iCurrentThinkContext;
+    char m_aThinkFunctions[0x18];
+    bool m_bDisabledContextThinks;
+    char pad_710[0x3];
+    float32 m_flAnimTime;
+    float32 m_flSimulationTime;
+    uint8_t m_nSceneObjectOverrideFlags;
+    bool m_bHasSuccessfullyInterpolated;
+    bool m_bHasAddedVarsToInterpolation;
+    bool m_bRenderEvenWhenNotSuccessfullyInterpolated;
+    int32_t m_nInterpolationLatchDirtyFlags[2];
+    uint16_t m_ListEntry[11];
+    char pad_711[0x2];
+    entity2_GameTime_t m_flCreateTime;
+    float32 m_flSpeed;
+    uint16_t m_EntClientFlags;
+    bool m_bClientSideRagdoll;
+    uint8_t m_iTeamNum;
+    uint32_t m_spawnflags;
+    entity2_GameTick_t m_nNextThinkTick;
+    char pad_712[0x4];
+    uint32_t m_fFlags;
+    Vector m_vecAbsVelocity;
+    client_CNetworkVelocityVector m_vecServerVelocity;
+    client_CNetworkVelocityVector m_vecVelocity;
+    char pad_713[0xb8];
+    Vector m_vecBaseVelocity;
+    char m_hEffectEntity[0x4];
+    char m_hOwnerEntity[0x4];
+    client_MoveCollide_t m_MoveCollide;
+    client_MoveType_t m_MoveType;
+    client_MoveType_t m_nActualMoveType;
+    char pad_714[0x1];
+    float32 m_flWaterLevel;
+    uint32_t m_fEffects;
+    char m_hGroundEntity[0x4];
+    int32_t m_nGroundBodyIndex;
+    float32 m_flFriction;
+    float32 m_flElasticity;
+    float32 m_flGravityScale;
+    float32 m_flTimeScale;
+    bool m_bAnimatedEveryTick;
+    bool m_bGravityDisabled;
+    char pad_715[0x2];
+    entity2_GameTime_t m_flNavIgnoreUntilTime;
+    uint16_t m_hThink;
+    char pad_716[0xe];
+    uint8_t m_fBBoxVisFlags;
+    char pad_717[0x3];
+    float32 m_flActualGravityScale;
+    bool m_bGravityActuallyDisabled;
+    bool m_bPredictable;
+    bool m_bRenderWithViewModels;
+    char pad_718[0x1];
+    int32_t m_nFirstPredictableCommand;
+    int32_t m_nLastPredictableCommand;
+    char m_hOldMoveParent[0x4];
+    particleslib_CParticleProperty m_Particles;
+    char pad_719[0x8];
+    QAngle m_vecAngVelocity;
+    int32_t m_DataChangeEventRef;
+    char m_dependencies[0x18];
+    int32_t m_nCreationTick;
+    char pad_720[0x9];
+    bool m_bAnimTimeChanged;
+    bool m_bSimulationTimeChanged;
+    char pad_721[0x9];
+    CUtlString m_sUniqueHammerID;
+    client_BloodType m_nBloodType;
+    char end_pad_722[0x4];
+    char vTable599[0x4e8];
+    client_CRenderComponent* m_CRenderComponent;
+    client_CHitboxComponent m_CHitboxComponent;
+    client_CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent;
+    client_HitGroup_t m_LastHitGroup;
+    char pad_600[0x4];
+    CGlobalSymbol m_sLastDamageSourceName;
+    VectorWS m_vLastDamagePosition;
+    char pad_601[0x1c];
+    bool m_bInitModelEffects;
+    bool m_bIsStaticProp;
+    char pad_602[0x2];
+    int32_t m_nLastAddDecal;
+    int32_t m_nDecalsAdded;
+    int32_t m_iOldHealth;
+    client_RenderMode_t m_nRenderMode;
+    client_RenderFx_t m_nRenderFX;
+    bool m_bAllowFadeInView;
+    char pad_603[0x1d];
+    Color m_clrRender;
+    char pad_604[0x4];
+    char m_vecRenderAttributes[0x68];
+    char pad_605[0x18];
+    bool m_bRenderToCubemaps;
+    bool m_bNoInterpolate;
+    char pad_606[0x6];
+    client_CCollisionProperty m_Collision;
+    client_CGlowProperty m_Glow;
+    float32 m_flGlowBackfaceMult;
+    float32 m_fadeMinDist;
+    float32 m_fadeMaxDist;
+    float32 m_flFadeScale;
+    float32 m_flShadowStrength;
+    uint8_t m_nObjectCulling;
+    char pad_607[0x3];
+    int32_t m_nAddDecal;
+    Vector m_vDecalPosition;
+    Vector m_vDecalForwardAxis;
+    client_DecalMode_t m_nDecalMode;
+    client_DecalMode_t m_nRequiredDecalMode;
+    char pad_608[0x2];
+    char m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18];
+    char pad_609[0x28];
+    client_CNetworkViewOffsetVector m_vecViewOffset;
+    char pad_610[0xb8];
+    client_CClientAlphaProperty* m_pClientAlphaProperty;
+    Color m_ClientOverrideTint;
+    bool m_bUseClientOverrideTint;
+    char pad_611[0x3b];
+    uint32_t m_bvDisabledHitGroups[1];
+    char end_pad_612[0x4];
+    char vTable591[0x80];
+    bool m_bInitiallyPopulateInterpHistory;
+    char pad_592[0x1];
+    bool m_bSuppressAnimEventSounds;
+    char pad_593[0xd];
+    bool m_bAnimGraphUpdateEnabled;
+    char pad_594[0x3];
+    float32 m_flMaxSlopeDistance;
+    VectorWS m_vLastSlopeCheckPos;
+    bool m_bAnimationUpdateScheduled;
+    char pad_595[0x3];
+    Vector m_vecForce;
+    int32_t m_nForceBone;
+    client_CBaseAnimGraph* m_pClientsideRagdoll;
+    bool m_bBuiltRagdoll;
+    char pad_596[0x17];
+    client_PhysicsRagdollPose_t m_RagdollPose;
+    bool m_bRagdollEnabled;
+    bool m_bRagdollClientSide;
+    char pad_597[0xe];
+    bool m_bHasAnimatedMaterialAttributes;
+    char end_pad_598[0x177];
+    char vTable1153[0x10];
+    char m_flexWeight[0x18];
+    VectorWS m_vLookTargetPosition;
+    char pad_1154[0x84];
+    bool m_blinktoggle;
+    char pad_1155[0x5f];
+    int32_t m_nLastFlexUpdateFrameCount;
+    Vector m_CachedViewTarget;
+    client_SceneEventId_t m_nNextSceneEventId;
+    int32_t m_iBlink;
+    float32 m_blinktime;
+    bool m_prevblinktoggle;
+    char pad_1156[0x3];
+    int32_t m_iJawOpen;
+    float32 m_flJawOpenAmount;
+    float32 m_flBlinkAmount;
+    modellib_AttachmentHandle_t m_iMouthAttachment;
+    modellib_AttachmentHandle_t m_iEyeAttachment;
+    bool m_bResetFlexWeightsOnModelChange;
+    char pad_1157[0x19];
+    int32_t m_nEyeOcclusionRendererBone;
+    matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform;
+    Vector m_vEyeOcclusionRendererHalfExtent;
+    char pad_1158[0x10];
+    client_Emphasized_Phoneme m_PhonemeClasses[3];
+    char m_hMyWearables[0x18];
+    modellib_AttachmentHandle_t m_leftFootAttachment;
+    modellib_AttachmentHandle_t m_rightFootAttachment;
+    char pad_1186[0x2];
+    client_WaterWakeMode_t m_nWaterWakeMode;
+    float32 m_flWaterWorldZ;
+    float32 m_flWaterNextTraceTime;
+    char end_pad_1187[0x60];
+    client_CPlayer_WeaponServices* m_pWeaponServices;
+    client_CPlayer_ItemServices* m_pItemServices;
+    client_CPlayer_AutoaimServices* m_pAutoaimServices;
+    client_CPlayer_ObserverServices* m_pObserverServices;
+    client_CPlayer_WaterServices* m_pWaterServices;
+    client_CPlayer_UseServices* m_pUseServices;
+    client_CPlayer_FlashlightServices* m_pFlashlightServices;
+    client_CPlayer_CameraServices* m_pCameraServices;
+    client_CPlayer_MovementServices* m_pMovementServices;
+    char pad_1192[0x8];
+    char m_ServerViewAngleChanges[0x68];
+    QAngle v_angle;
+    QAngle v_anglePrevious;
+    uint32_t m_iHideHUD;
+    char pad_1193[0x4];
+    client_sky3dparams_t m_skybox3d;
+    entity2_GameTime_t m_flDeathTime;
+    Vector m_vecPredictionError;
+    entity2_GameTime_t m_flPredictionErrorTime;
+    char pad_1194[0x1c];
+    Vector m_vecLastCameraSetupLocalOrigin;
+    entity2_GameTime_t m_flLastCameraSetupTime;
+    float32 m_flFOVSensitivityAdjust;
+    float32 m_flMouseSensitivity;
+    Vector m_vOldOrigin;
+    float32 m_flOldSimulationTime;
+    int32_t m_nLastExecutedCommandNumber;
+    int32_t m_nLastExecutedCommandTick;
+    char m_hController[0x4];
+    char m_hDefaultController[0x4];
+    bool m_bIsSwappingToPredictableController;
+    char end_pad_1195[0x7];
+    char vTable1290[0x10];
+    client_CCSPlayer_PingServices* m_pPingServices;
+    client_CSPlayerState m_previousPlayerState;
+    client_CSPlayerState m_iPlayerState;
+    bool m_bHasMovedSinceSpawn;
+    char pad_1291[0x3];
+    entity2_GameTime_t m_flLastSpawnTimeIndex;
+    int32_t m_iProgressBarDuration;
+    float32 m_flProgressBarStartTime;
+    entity2_GameTime_t m_flClientDeathTime;
+    float32 m_flFlashBangTime;
+    float32 m_flFlashScreenshotAlpha;
+    float32 m_flFlashOverlayAlpha;
+    bool m_bFlashBuildUp;
+    bool m_bFlashDspHasBeenCleared;
+    bool m_bFlashScreenshotHasBeenGrabbed;
+    char pad_1292[0x1];
+    float32 m_flFlashMaxAlpha;
+    float32 m_flFlashDuration;
+    entity2_GameTime_t m_flClientHealthFadeChangeTimestamp;
+    int32_t m_nClientHealthFadeParityValue;
+    float32 m_fNextThinkPushAway;
+    char pad_1293[0x4];
+    float32 m_flCurrentMusicStartTime;
+    float32 m_flMusicRoundStartTime;
+    bool m_bDeferStartMusicOnWarmup;
+    char pad_1294[0x3];
+    float32 m_flLastSmokeOverlayAlpha;
+    float32 m_flLastSmokeAge;
+    Vector m_vLastSmokeOverlayColor;
+    char pad_1295[0x1c];
+    char m_hOriginalController[0x4];
+    char end_pad_1296[0x4];
+};

@@ -1,0 +1,65 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class particleslib_CParticleCollectionFloatInput;
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+
+class particles_C_OP_ControlpointLight {
+    char vTable1798[0x8];
+    particleslib_CParticleCollectionFloatInput m_flOpStrength;
+    particles_ParticleEndcapMode_t m_nOpEndCapState;
+    float32 m_flOpStartFadeInTime;
+    float32 m_flOpEndFadeInTime;
+    float32 m_flOpStartFadeOutTime;
+    float32 m_flOpEndFadeOutTime;
+    float32 m_flOpFadeOscillatePeriod;
+    bool m_bNormalizeToStopTime;
+    char pad_1799[0x3];
+    float32 m_flOpTimeOffsetMin;
+    float32 m_flOpTimeOffsetMax;
+    int32_t m_nOpTimeOffsetSeed;
+    int32_t m_nOpTimeScaleSeed;
+    float32 m_flOpTimeScaleMin;
+    float32 m_flOpTimeScaleMax;
+    char pad_1800[0x2];
+    bool m_bDisableOperator;
+    char pad_1801[0x1];
+    CUtlString m_Notes;
+    char end_pad_1802[0x18];
+    float32 m_flScale;
+    char pad_2024[0x48c];
+    int32_t m_nControlPoint1;
+    int32_t m_nControlPoint2;
+    int32_t m_nControlPoint3;
+    int32_t m_nControlPoint4;
+    Vector m_vecCPOffset1;
+    Vector m_vecCPOffset2;
+    Vector m_vecCPOffset3;
+    Vector m_vecCPOffset4;
+    float32 m_LightFiftyDist1;
+    float32 m_LightZeroDist1;
+    float32 m_LightFiftyDist2;
+    float32 m_LightZeroDist2;
+    float32 m_LightFiftyDist3;
+    float32 m_LightZeroDist3;
+    float32 m_LightFiftyDist4;
+    float32 m_LightZeroDist4;
+    Color m_LightColor1;
+    Color m_LightColor2;
+    Color m_LightColor3;
+    Color m_LightColor4;
+    bool m_bLightType1;
+    bool m_bLightType2;
+    bool m_bLightType3;
+    bool m_bLightType4;
+    bool m_bLightDynamic1;
+    bool m_bLightDynamic2;
+    bool m_bLightDynamic3;
+    bool m_bLightDynamic4;
+    bool m_bUseNormal;
+    bool m_bUseHLambert;
+    char pad_2025[0x4];
+    bool m_bClampLowerRange;
+    bool m_bClampUpperRange;
+};

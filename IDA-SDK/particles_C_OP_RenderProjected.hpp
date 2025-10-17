@@ -1,0 +1,64 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class particleslib_CParticleCollectionFloatInput;
+class particleslib_CParticleCollectionVecInput;
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particles_CParticleVisibilityInputs.hpp"
+#include "particleslib_CPerParticleFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particles_ParticleAttributeIndex_t.hpp"
+#include "particleslib_CParticleCollectionVecInput.hpp"
+
+class particles_C_OP_RenderProjected {
+    char vTable1798[0x8];
+    particleslib_CParticleCollectionFloatInput m_flOpStrength;
+    particles_ParticleEndcapMode_t m_nOpEndCapState;
+    float32 m_flOpStartFadeInTime;
+    float32 m_flOpEndFadeInTime;
+    float32 m_flOpStartFadeOutTime;
+    float32 m_flOpEndFadeOutTime;
+    float32 m_flOpFadeOscillatePeriod;
+    bool m_bNormalizeToStopTime;
+    char pad_1799[0x3];
+    float32 m_flOpTimeOffsetMin;
+    float32 m_flOpTimeOffsetMax;
+    int32_t m_nOpTimeOffsetSeed;
+    int32_t m_nOpTimeScaleSeed;
+    float32 m_flOpTimeScaleMin;
+    float32 m_flOpTimeScaleMax;
+    char pad_1800[0x2];
+    bool m_bDisableOperator;
+    char pad_1801[0x1];
+    CUtlString m_Notes;
+    char end_pad_1802[0x18];
+    particles_CParticleVisibilityInputs VisibilityInputs;
+    bool m_bCannotBeRefracted;
+    bool m_bSkipRenderingOnMobile;
+    char end_pad_1787[0x6];
+    bool m_bProjectCharacter;
+    bool m_bProjectWorld;
+    bool m_bProjectWater;
+    bool m_bFlipHorizontal;
+    bool m_bEnableProjectedDepthControls;
+    char pad_2233[0x3];
+    float32 m_flMinProjectionDepth;
+    float32 m_flMaxProjectionDepth;
+    char m_vecProjectedMaterials[0x18];
+    particleslib_CPerParticleFloatInput m_flMaterialSelection;
+    float32 m_flAnimationTimeScale;
+    bool m_bOrientToNormal;
+    char pad_2234[0x3];
+    char m_MaterialVars[0x18];
+    particleslib_CParticleCollectionFloatInput m_flRadiusScale;
+    particleslib_CParticleCollectionFloatInput m_flAlphaScale;
+    particleslib_CParticleCollectionFloatInput m_flRollScale;
+    particles_ParticleAttributeIndex_t m_nAlpha2Field;
+    char pad_2235[0x4];
+    particleslib_CParticleCollectionVecInput m_vecColorScale;
+    particles_ParticleColorBlendType_t m_nColorBlendType;
+    char end_pad_2236[0x1c];
+};

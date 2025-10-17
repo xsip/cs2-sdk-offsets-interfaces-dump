@@ -1,0 +1,215 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class entity2_CEntityIdentity;
+class entity2_CScriptComponent;
+class server_CBodyComponent;
+class server_CCollisionProperty;
+class server_CPulseGraphInstance_ServerEntity;
+#include "client_CNetworkTransmitComponent.hpp"
+#include "entity2_GameTick_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTick_t.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "client_CNetworkVelocityVector.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+
+class server_CScriptedSequence {
+    char vTable723[0x8];
+    CUtlSymbolLarge m_iszPrivateVScripts;
+    entity2_CEntityIdentity* m_pEntity;
+    char pad_724[0x18];
+    entity2_CScriptComponent* m_CScriptComponent;
+    server_CBodyComponent* m_CBodyComponent;
+    client_CNetworkTransmitComponent m_NetworkTransmitComponent;
+    char pad_2794[0x40];
+    char m_aThinkFunctions[0x18];
+    int32_t m_iCurrentThinkContext;
+    entity2_GameTick_t m_nLastThinkTick;
+    bool m_bDisabledContextThinks;
+    char pad_2795[0xf];
+    char m_isSteadyState[0x8];
+    float32 m_lastNetworkChange;
+    char pad_2796[0xc];
+    char m_ResponseContexts[0x18];
+    CUtlSymbolLarge m_iszResponseContext;
+    char pad_2797[0x20];
+    int32_t m_iHealth;
+    int32_t m_iMaxHealth;
+    uint8_t m_lifeState;
+    char pad_2798[0x3];
+    float32 m_flDamageAccumulator;
+    bool m_bTakesDamage;
+    char pad_2799[0x7];
+    client_TakeDamageFlags_t m_nTakeDamageFlags;
+    client_EntityPlatformTypes_t m_nPlatformType;
+    char pad_2800[0x1];
+    client_MoveCollide_t m_MoveCollide;
+    client_MoveType_t m_MoveType;
+    client_MoveType_t m_nActualMoveType;
+    uint8_t m_nWaterTouch;
+    uint8_t m_nSlimeTouch;
+    bool m_bRestoreInHierarchy;
+    CUtlSymbolLarge m_target;
+    char m_hDamageFilter[0x4];
+    char pad_2801[0x4];
+    CUtlSymbolLarge m_iszDamageFilterName;
+    float32 m_flMoveDoneTime;
+    CUtlStringToken m_nSubclassID;
+    char pad_2802[0x8];
+    float32 m_flAnimTime;
+    float32 m_flSimulationTime;
+    entity2_GameTime_t m_flCreateTime;
+    bool m_bClientSideRagdoll;
+    uint8_t m_ubInterpolationFrame;
+    char pad_2803[0x2];
+    Vector m_vPrevVPhysicsUpdatePos;
+    uint8_t m_iTeamNum;
+    char pad_2804[0x3];
+    CUtlSymbolLarge m_iGlobalname;
+    int32_t m_iSentToClients;
+    float32 m_flSpeed;
+    CUtlString m_sUniqueHammerID;
+    uint32_t m_spawnflags;
+    entity2_GameTick_t m_nNextThinkTick;
+    int32_t m_nSimulationTick;
+    char pad_2805[0x4];
+    entity2_CEntityIOOutput m_OnKilled;
+    uint32_t m_fFlags;
+    Vector m_vecAbsVelocity;
+    client_CNetworkVelocityVector m_vecVelocity;
+    char pad_2806[0x8];
+    Vector m_vecBaseVelocity;
+    int32_t m_nPushEnumCount;
+    server_CCollisionProperty* m_pCollision;
+    char m_hEffectEntity[0x4];
+    char m_hOwnerEntity[0x4];
+    uint32_t m_fEffects;
+    char m_hGroundEntity[0x4];
+    int32_t m_nGroundBodyIndex;
+    float32 m_flFriction;
+    float32 m_flElasticity;
+    float32 m_flGravityScale;
+    float32 m_flTimeScale;
+    float32 m_flWaterLevel;
+    bool m_bGravityDisabled;
+    bool m_bAnimatedEveryTick;
+    char pad_2807[0x2];
+    float32 m_flActualGravityScale;
+    bool m_bGravityActuallyDisabled;
+    bool m_bDisableLowViolence;
+    uint8_t m_nWaterType;
+    char pad_2808[0x1];
+    int32_t m_iEFlags;
+    entity2_CEntityIOOutput m_OnUser1;
+    entity2_CEntityIOOutput m_OnUser2;
+    entity2_CEntityIOOutput m_OnUser3;
+    entity2_CEntityIOOutput m_OnUser4;
+    int32_t m_iInitialTeamNum;
+    entity2_GameTime_t m_flNavIgnoreUntilTime;
+    QAngle m_vecAngVelocity;
+    bool m_bNetworkQuantizeOriginAndAngles;
+    bool m_bLagCompensate;
+    char pad_2809[0x2];
+    char m_pBlocker[0x4];
+    float32 m_flLocalTime;
+    float32 m_flVPhysicsUpdateLocalTime;
+    client_BloodType m_nBloodType;
+    server_CPulseGraphInstance_ServerEntity* m_pPulseGraphInstance;
+    CUtlSymbolLarge m_iszEntry;
+    CUtlSymbolLarge m_iszPreIdle;
+    CUtlSymbolLarge m_iszPlay;
+    CUtlSymbolLarge m_iszPostIdle;
+    CUtlSymbolLarge m_iszModifierToAddOnPlay;
+    CUtlSymbolLarge m_iszNextScript;
+    CUtlSymbolLarge m_iszEntity;
+    CUtlSymbolLarge m_iszSyncGroup;
+    modellib_ScriptedMoveTo_t m_nMoveTo;
+    modellib_SharedMovementGait_t m_nMoveToGait;
+    char pad_4022[0x3];
+    modellib_ScriptedHeldWeaponBehavior_t m_nHeldWeaponBehavior;
+    client_ForcedCrouchState_t m_nForcedCrouchState;
+    bool m_bIsPlayingPreIdle;
+    bool m_bIsPlayingEntry;
+    bool m_bIsPlayingAction;
+    bool m_bIsPlayingPostIdle;
+    bool m_bDontRotateOther;
+    bool m_bIsRepeatable;
+    bool m_bShouldLeaveCorpse;
+    bool m_bStartOnSpawn;
+    bool m_bDisallowInterrupts;
+    bool m_bCanOverrideNPCState;
+    bool m_bDontTeleportAtEnd;
+    bool m_bHighPriority;
+    bool m_bHideDebugComplaints;
+    bool m_bContinueOnDeath;
+    bool m_bLoopPreIdleSequence;
+    bool m_bLoopActionSequence;
+    bool m_bLoopPostIdleSequence;
+    bool m_bSynchPostIdles;
+    bool m_bIgnoreLookAt;
+    bool m_bIgnoreGravity;
+    bool m_bDisableNPCCollisions;
+    bool m_bKeepAnimgraphLockedPost;
+    bool m_bDontAddModifiers;
+    bool m_bDisableAimingWhileMoving;
+    bool m_bIgnoreRotation;
+    char pad_4023[0x3];
+    float32 m_flRadius;
+    float32 m_flRepeat;
+    float32 m_flPlayAnimFadeInTime;
+    float32 m_flMoveInterpTime;
+    float32 m_flAngRate;
+    float32 m_flMoveSpeed;
+    bool m_bWaitUntilMoveCompletesToStartAnimation;
+    char pad_4024[0x3];
+    int32_t m_nNotReadySequenceCount;
+    entity2_GameTime_t m_startTime;
+    bool m_bWaitForBeginSequence;
+    char pad_4025[0x3];
+    int32_t m_saved_effects;
+    int32_t m_savedFlags;
+    int32_t m_savedCollisionGroup;
+    bool m_bInterruptable;
+    bool m_sequenceStarted;
+    bool m_bPositionRelativeToOtherEntity;
+    char pad_4026[0x1];
+    char m_hTargetEnt[0x4];
+    char m_hNextCine[0x4];
+    bool m_bThinking;
+    bool m_bInitiatedSelfDelete;
+    bool m_bIsTeleportingDueToMoveTo;
+    bool m_bAllowCustomInterruptConditions;
+    char m_hForcedTarget[0x4];
+    bool m_bDontCancelOtherSequences;
+    bool m_bForceSynch;
+    bool m_bPreventUpdateYawOnFinish;
+    bool m_bEnsureOnNavmeshOnFinish;
+    client_ScriptedOnDeath_t m_onDeathBehavior;
+    server_ScriptedConflictResponse_t m_ConflictResponse;
+    entity2_CEntityIOOutput m_OnBeginSequence;
+    entity2_CEntityIOOutput m_OnActionStartOrLoop;
+    entity2_CEntityIOOutput m_OnEndSequence;
+    entity2_CEntityIOOutput m_OnPostIdleEndSequence;
+    entity2_CEntityIOOutput m_OnCancelSequence;
+    entity2_CEntityIOOutput m_OnCancelFailedSequence;
+    entity2_CEntityIOOutput m_OnScriptEvent[8];
+    CTransform m_matOtherToMain;
+    char m_hInteractionMainEntity[0x4];
+    int32_t m_iPlayerDeathBehavior;
+    bool m_bSkipFadeIn;
+    char end_pad_4027[0x7];
+};
