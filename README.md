@@ -16,4 +16,4 @@
 ## Open IDA, load client.dll, click on "File->Load File->Parse C Header file" and load "IDA-SDK/CLIENT_DLL/all_classes.hpp". After that you can use the generated classes in IDA. This c++ classes as merged! No inheritance, since IDA can't handle it. Tested on IDA 7.0, IDA 9.0 and IDA 9.2
 
 
-![Example Ida usage](https://raw.githubusercontent.com/xsip/cs2-sdk-offsets-interfaces-dump/refs/heads/main/example-ida.png, "Example ida usage")
+![Example IDA Engine](https://raw.githubusercontent.com/xsip/cs2-sdk-offsets-interfaces-dump/refs/heads/main/example-ida.png "Example IDA Output")
