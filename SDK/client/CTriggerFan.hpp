@@ -27,6 +27,7 @@ namespace CS2 {
 			GlobalTypes::Quaternion m_qNoiseDelta; // 0x1010 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CHandle< client::CInfoFan > m_hInfoFan; // 0x1020 | Schema_Atomic | Size: 0x4
 			// char  m_hInfoFan[0x4]; // 0x1020 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::CInfoFan > m_hInfoFan; // 0x1020 | Schema_Atomic | Size: 0x4
 			float32 m_flForce; // 0x1024 | Schema_Builtin | Size: 0x4
 			bool m_bFalloff; // 0x1028 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

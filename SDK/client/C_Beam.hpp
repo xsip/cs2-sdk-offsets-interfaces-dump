@@ -53,6 +53,7 @@ namespace CS2 {
 			GlobalTypes::VectorWS m_vecEndPos; // 0xf5c | Schema_Atomic | Size: 0xc
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEndEntity; // 0xf68 | Schema_Atomic | Size: 0x4
 			// char  m_hEndEntity[0x4]; // 0xf68 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hEndEntity; // 0xf68 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_Beam, m_flFrameRate) == 0xEB0, "m_flFrameRate in C_Beam should be at offset 0xEB0");

@@ -31,6 +31,7 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0xfe0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CHandle< client::CBaseFilter > m_hFilter; // 0xfe8 | Schema_Atomic | Size: 0x4
 			// char  m_hFilter[0x4]; // 0xfe8 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::CBaseFilter > m_hFilter; // 0xfe8 | Schema_Atomic | Size: 0x4
 			bool m_bDisabled; // 0xfec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};

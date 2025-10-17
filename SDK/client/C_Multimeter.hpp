@@ -21,6 +21,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CHandle< client::C_PlantedC4 > m_hTargetC4; // 0x1160 | Schema_Atomic | Size: 0x4
 			// char  m_hTargetC4[0x4]; // 0x1160 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_PlantedC4 > m_hTargetC4; // 0x1160 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_Multimeter, m_hTargetC4) == 0x1160, "m_hTargetC4 in C_Multimeter should be at offset 0x1160");

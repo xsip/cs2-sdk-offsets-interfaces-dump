@@ -29,6 +29,7 @@ namespace CS2 {
 			float32 m_flBlendWeight; // 0x11a8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hRagdollSource; // 0x11ac | Schema_Atomic | Size: 0x4
 			// char  m_hRagdollSource[0x4]; // 0x11ac | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hRagdollSource; // 0x11ac | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_iEyeAttachment; // 0x11b0 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flBlendWeightCurrent; // 0x11b4 | Schema_Builtin | Size: 0x4

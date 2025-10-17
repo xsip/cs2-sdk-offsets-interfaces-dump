@@ -24,6 +24,7 @@ namespace CS2 {
 			char  m_hSpriteMaterial[0x8]; // 0xeb0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hAttachedToEntity; // 0xeb8 | Schema_Atomic | Size: 0x4
 			// char  m_hAttachedToEntity[0x4]; // 0xeb8 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hAttachedToEntity; // 0xeb8 | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_nAttachment; // 0xebc | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flSpriteFramerate; // 0xec0 | Schema_Builtin | Size: 0x4

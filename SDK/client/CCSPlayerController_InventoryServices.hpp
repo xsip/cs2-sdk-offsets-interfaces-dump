@@ -12,10 +12,16 @@
 
 namespace CS2 {
 	namespace client {
+		class NetworkedLoadoutSlot_t;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class CCSPlayerController_InventoryServices : public CS2::client::CPlayerControllerComponent {
 		public:
+			GlobalTypes::CUtlVector< client::NetworkedLoadoutSlot_t > m_vecNetworkableLoadout; // 0x40 | Schema_Atomic | Size: 0x18
+			// char  m_vecNetworkableLoadout[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			// client::NetworkedLoadoutSlot_t > m_vecNetworkableLoadout; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_vecNetworkableLoadout[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			uint16_t m_unMusicID; // 0x58 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
 			client::MedalRank_t m_rank[6]; // 0x5c | Schema_FixedArray | Size: 0x120

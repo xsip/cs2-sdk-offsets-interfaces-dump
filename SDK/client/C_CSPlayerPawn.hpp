@@ -101,6 +101,7 @@ namespace CS2 {
 			S2_PAD(0x1b);
 			GlobalTypes::CHandle< client::C_CS2HudModelArms > m_hHudModelArms; // 0x2420 | Schema_Atomic | Size: 0x4
 			// char  m_hHudModelArms[0x4]; // 0x2420 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_CS2HudModelArms > m_hHudModelArms; // 0x2420 | Schema_Atomic | Size: 0x4
 			GlobalTypes::QAngle m_qDeathEyeAngles; // 0x2424 | Schema_Atomic | Size: 0xc
 			bool m_bSkipOneHeadConstraintUpdate; // 0x2430 | Schema_Builtin | Size: 0x1
 			bool m_bLeftHanded; // 0x2431 | Schema_Builtin | Size: 0x1

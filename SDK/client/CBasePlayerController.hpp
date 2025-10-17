@@ -26,13 +26,16 @@ namespace CS2 {
 			uint32_t m_nTickBase; // 0x6b0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle< client::C_BasePlayerPawn > m_hPawn; // 0x6b4 | Schema_Atomic | Size: 0x4
 			// char  m_hPawn[0x4]; // 0x6b4 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BasePlayerPawn > m_hPawn; // 0x6b4 | Schema_Atomic | Size: 0x4
 			bool m_bKnownTeamMismatch; // 0x6b8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CHandle< client::C_BasePlayerPawn > m_hPredictedPawn; // 0x6bc | Schema_Atomic | Size: 0x4
 			// char  m_hPredictedPawn[0x4]; // 0x6bc | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BasePlayerPawn > m_hPredictedPawn; // 0x6bc | Schema_Atomic | Size: 0x4
 			GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; // 0x6c0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::CBasePlayerController > m_hSplitOwner; // 0x6c4 | Schema_Atomic | Size: 0x4
 			// char  m_hSplitOwner[0x4]; // 0x6c4 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::CBasePlayerController > m_hSplitOwner; // 0x6c4 | Schema_Atomic | Size: 0x4
 			// client::CUtlVector< client.dll::CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x6c8 | Schema_Atomic | Size: 0x18
 			char  m_hSplitScreenPlayers[0x18]; // 0x6c8 | Schema_Atomic | Size: 0x18
 			bool m_bIsHLTV; // 0x6e0 | Schema_Builtin | Size: 0x1

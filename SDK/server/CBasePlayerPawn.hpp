@@ -24,6 +24,9 @@ namespace CS2 {
 		class CPlayer_MovementServices;
 		class CAI_Expresser;
 	}
+	namespace client {
+		class sndopvarlatchdata_t;
+	}
 }
 namespace CS2 {
 	namespace server {
@@ -60,8 +63,9 @@ namespace CS2 {
 			float32 m_fHltvReplayDelay; // 0xd6c | Schema_Builtin | Size: 0x4
 			float32 m_fHltvReplayEnd; // 0xd70 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CEntityIndex m_iHltvReplayEntity; // 0xd74 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlVector< client::sndopvarlatchdata_t > m_sndOpvarLatchData; // 0xd78 | Schema_Atomic | Size: 0x18
+			// char  m_sndOpvarLatchData[0x18]; // 0xd78 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< client::sndopvarlatchdata_t > m_sndOpvarLatchData; // 0xd78 | Schema_Atomic | Size: 0x18
-			char  m_sndOpvarLatchData[0x18]; // 0xd78 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWeaponServices) == 0xBE0, "m_pWeaponServices in CBasePlayerPawn should be at offset 0xBE0");
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pItemServices) == 0xBE8, "m_pItemServices in CBasePlayerPawn should be at offset 0xBE8");

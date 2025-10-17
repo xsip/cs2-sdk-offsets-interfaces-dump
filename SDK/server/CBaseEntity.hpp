@@ -25,6 +25,9 @@ namespace CS2 {
 		class CCollisionProperty;
 		class CPulseGraphInstance_ServerEntity;
 	}
+	namespace client {
+		class thinkfunc_t;
+	}
 }
 namespace CS2 {
 	namespace server {
@@ -33,8 +36,9 @@ namespace CS2 {
 			server::CBodyComponent* m_CBodyComponent; // 0x38 | Schema_Ptr | Size: 0x8
 			client::CNetworkTransmitComponent m_NetworkTransmitComponent; // 0x40 | Schema_DeclaredClass | Size: 0x1c8
 			S2_PAD(0x40);
+			GlobalTypes::CUtlVector< client::thinkfunc_t > m_aThinkFunctions; // 0x248 | Schema_Atomic | Size: 0x18
+			// char  m_aThinkFunctions[0x18]; // 0x248 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< client::thinkfunc_t > m_aThinkFunctions; // 0x248 | Schema_Atomic | Size: 0x18
-			char  m_aThinkFunctions[0x18]; // 0x248 | Schema_Atomic | Size: 0x18
 			int32_t m_iCurrentThinkContext; // 0x260 | Schema_Builtin | Size: 0x4
 			entity2::GameTick_t m_nLastThinkTick; // 0x264 | Schema_DeclaredClass | Size: 0x4
 			bool m_bDisabledContextThinks; // 0x268 | Schema_Builtin | Size: 0x1

@@ -25,6 +25,7 @@ namespace CS2 {
 			client::CTakeDamageResult result; // 0x130 | Schema_DeclaredClass | Size: 0x28
 			GlobalTypes::CHandle< client::C_BaseEntity > hTarget; // 0x158 | Schema_Atomic | Size: 0x4
 			// char  hTarget[0x4]; // 0x158 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > hTarget; // 0x158 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, nSummarisedCount) == 0x0, "nSummarisedCount in SummaryTakeDamageInfo_t should be at offset 0x0");

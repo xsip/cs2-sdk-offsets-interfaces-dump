@@ -19,6 +19,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEntity; // 0x0 | Schema_Atomic | Size: 0x4
 			// char  m_hEntity[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hEntity; // 0x0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CUtlVector< int32 > m_vecOverlappingLinks; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_vecOverlappingLinks[0x18]; // 0x8 | Schema_Atomic | Size: 0x18

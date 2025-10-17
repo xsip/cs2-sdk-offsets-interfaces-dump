@@ -21,8 +21,10 @@ namespace CS2 {
 			S2_PAD(0x30);
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hPlayer; // 0x628 | Schema_Atomic | Size: 0x4
 			// char  m_hPlayer[0x4]; // 0x628 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_CSPlayerPawn > m_hPlayer; // 0x628 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hPingedEntity; // 0x62c | Schema_Atomic | Size: 0x4
 			// char  m_hPingedEntity[0x4]; // 0x62c | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hPingedEntity; // 0x62c | Schema_Atomic | Size: 0x4
 			int32_t m_iType; // 0x630 | Schema_Builtin | Size: 0x4
 			bool m_bUrgent; // 0x634 | Schema_Builtin | Size: 0x1
 			char m_szPlaceName[18]; // 0x635 | Schema_FixedArray | Size: 0x12

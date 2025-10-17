@@ -24,6 +24,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_closedAngles; // 0x1444 | Schema_Atomic | Size: 0xc
 			GlobalTypes::CHandle< client::C_BasePropDoor > m_hMaster; // 0x1450 | Schema_Atomic | Size: 0x4
 			// char  m_hMaster[0x4]; // 0x1450 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BasePropDoor > m_hMaster; // 0x1450 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vWhereToSetLightingOrigin; // 0x1454 | Schema_Atomic | Size: 0xc
 		};
 		static_assert(offsetof(CS2::client::C_BasePropDoor, m_eDoorState) == 0x1430, "m_eDoorState in C_BasePropDoor should be at offset 0x1430");

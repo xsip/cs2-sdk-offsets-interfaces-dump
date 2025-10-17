@@ -49,6 +49,9 @@ namespace GlobalTypes {
 
 	template <typename T1>
 	using CHandle /*CHandle*/ = char[0x4]; //  Schema_Atomic
+
+	template <typename T1>
+	using CUtlVector /*CUtlVector*/ = char[0x18]; //  Schema_Atomic
 	using VectorWS /*VectorWS*/ = char[0xc]; //  Schema_Atomic
 	using CNetworkedQuantizedFloat /*CNetworkedQuantizedFloat*/ = char[0x8]; //  Schema_Atomic
 	using CSplitScreenSlot /*CSplitScreenSlot*/ = char[0x4]; //  Schema_Atomic

@@ -67,8 +67,10 @@ namespace CS2 {
 			GlobalTypes::Vector2D m_vFogOffsetLayer1; // 0x4b0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEnvWind; // 0x4b8 | Schema_Atomic | Size: 0x4
 			// char  m_hEnvWind[0x4]; // 0x4b8 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hEnvWind; // 0x4b8 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEnvSky; // 0x4bc | Schema_Atomic | Size: 0x4
 			// char  m_hEnvSky[0x4]; // 0x4bc | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hEnvSky; // 0x4bc | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::CGlobalLightBase, m_bSpotLight) == 0x10, "m_bSpotLight in CGlobalLightBase should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CGlobalLightBase, m_SpotLightOrigin) == 0x14, "m_SpotLightOrigin in CGlobalLightBase should be at offset 0x14");

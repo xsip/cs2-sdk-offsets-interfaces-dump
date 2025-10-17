@@ -20,8 +20,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_OwningPlayer; // 0x19e0 | Schema_Atomic | Size: 0x4
 			// char  m_OwningPlayer[0x4]; // 0x19e0 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_CSPlayerPawn > m_OwningPlayer; // 0x19e0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_KillingPlayer; // 0x19e4 | Schema_Atomic | Size: 0x4
 			// char  m_KillingPlayer[0x4]; // 0x19e4 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_CSPlayerPawn > m_KillingPlayer; // 0x19e4 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::C_ItemDogtags, m_OwningPlayer) == 0x19E0, "m_OwningPlayer in C_ItemDogtags should be at offset 0x19E0");
 		static_assert(offsetof(CS2::client::C_ItemDogtags, m_KillingPlayer) == 0x19E4, "m_KillingPlayer in C_ItemDogtags should be at offset 0x19E4");

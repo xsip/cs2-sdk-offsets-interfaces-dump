@@ -35,6 +35,7 @@ namespace CS2 {
 			S2_PAD(0xf);
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hViewPosition; // 0x11b0 | Schema_Atomic | Size: 0x4
 			// char  m_hViewPosition[0x4]; // 0x11b0 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_BaseEntity > m_hViewPosition; // 0x11b0 | Schema_Atomic | Size: 0x4
 			bool m_bRestartAfterRestore; // 0x11b4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
