@@ -1,0 +1,141 @@
+#pragma once
+#include "enums.hpp"
+#include "typedefs.hpp"
+
+class CCSGameModeRules;
+#include "CNetworkVarChainer.hpp"
+#include "GameTime_t.hpp"
+#include "GameTime_t.hpp"
+#include "GameTime_t.hpp"
+#include "GameTime_t.hpp"
+#include "GameTime_t.hpp"
+#include "GameTime_t.hpp"
+#include "GameTime_t.hpp"
+#include "C_RetakeGameRules.hpp"
+
+class C_CSGameRules {
+    char _vtable_pad_725[0x8];
+    CNetworkVarChainer __m_pChainEntity;
+    int32_t m_nTotalPausedTicks;
+    int32_t m_nPauseStartTick;
+    bool m_bGamePaused;
+    char pad_726[0x7];
+    char pad_724[0x40];
+    char pad_723[0x40];
+    bool m_bFreezePeriod;
+    bool m_bWarmupPeriod;
+    char pad_704[0x2];
+    GameTime_t m_fWarmupPeriodEnd;
+    GameTime_t m_fWarmupPeriodStart;
+    bool m_bTerroristTimeOutActive;
+    bool m_bCTTimeOutActive;
+    char pad_705[0x2];
+    float32 m_flTerroristTimeOutRemaining;
+    float32 m_flCTTimeOutRemaining;
+    int32_t m_nTerroristTimeOuts;
+    int32_t m_nCTTimeOuts;
+    bool m_bTechnicalTimeOut;
+    bool m_bMatchWaitingForResume;
+    char pad_706[0x2];
+    int32_t m_iRoundTime;
+    float32 m_fMatchStartTime;
+    GameTime_t m_fRoundStartTime;
+    GameTime_t m_flRestartRoundTime;
+    bool m_bGameRestart;
+    char pad_707[0x3];
+    float32 m_flGameStartTime;
+    float32 m_timeUntilNextPhaseStarts;
+    int32_t m_gamePhase;
+    int32_t m_totalRoundsPlayed;
+    int32_t m_nRoundsPlayedThisPhase;
+    int32_t m_nOvertimePlaying;
+    int32_t m_iHostagesRemaining;
+    bool m_bAnyHostageReached;
+    bool m_bMapHasBombTarget;
+    bool m_bMapHasRescueZone;
+    bool m_bMapHasBuyZone;
+    bool m_bIsQueuedMatchmaking;
+    char pad_708[0x3];
+    int32_t m_nQueuedMatchmakingMode;
+    bool m_bIsValveDS;
+    bool m_bLogoMap;
+    bool m_bPlayAllStepSoundsOnServer;
+    char pad_709[0x1];
+    int32_t m_iSpectatorSlotCount;
+    int32_t m_MatchDevice;
+    bool m_bHasMatchStarted;
+    char pad_710[0x3];
+    int32_t m_nNextMapInMapgroup;
+    char m_szTournamentEventName[512];
+    char m_szTournamentEventStage[512];
+    char m_szMatchStatTxt[512];
+    char m_szTournamentPredictionsTxt[512];
+    int32_t m_nTournamentPredictionsPct;
+    GameTime_t m_flCMMItemDropRevealStartTime;
+    GameTime_t m_flCMMItemDropRevealEndTime;
+    bool m_bIsDroppingItems;
+    bool m_bIsQuestEligible;
+    bool m_bIsHltvActive;
+    char pad_711[0x1];
+    uint16_t m_arrProhibitedItemIndices[100];
+    uint32_t m_arrTournamentActiveCasterAccounts[4];
+    int32_t m_numBestOfMaps;
+    int32_t m_nHalloweenMaskListSeed;
+    bool m_bBombDropped;
+    bool m_bBombPlanted;
+    char pad_712[0x2];
+    int32_t m_iRoundWinStatus;
+    int32_t m_eRoundWinReason;
+    bool m_bTCantBuy;
+    bool m_bCTCantBuy;
+    char pad_713[0x2];
+    int32_t m_iMatchStats_RoundResults[30];
+    int32_t m_iMatchStats_PlayersAlive_CT[30];
+    int32_t m_iMatchStats_PlayersAlive_T[30];
+    float32 m_TeamRespawnWaveTimes[32];
+    GameTime_t m_flNextRespawnWave[32];
+    Vector m_vMinimapMins;
+    Vector m_vMinimapMaxs;
+    float32 m_MinimapVerticalSectionHeights[8];
+    char pad_714[0x4];
+    uint64_t m_ullLocalMatchID;
+    int32_t m_nEndMatchMapGroupVoteTypes[10];
+    int32_t m_nEndMatchMapGroupVoteOptions[10];
+    int32_t m_nEndMatchMapVoteWinner;
+    int32_t m_iNumConsecutiveCTLoses;
+    int32_t m_iNumConsecutiveTerroristLoses;
+    char pad_715[0xbc];
+    int32_t m_nMatchAbortedEarlyReason;
+    bool m_bHasTriggeredRoundStartMusic;
+    bool m_bSwitchingTeamsAtRoundReset;
+    char pad_716[0x1a];
+    CCSGameModeRules* m_pGameModeRules;
+    C_RetakeGameRules m_RetakeRules;
+    uint8_t m_nMatchEndCount;
+    char pad_717[0x3];
+    int32_t m_nTTeamIntroVariant;
+    int32_t m_nCTTeamIntroVariant;
+    bool m_bTeamIntroPeriod;
+    char pad_718[0x3];
+    int32_t m_iRoundEndWinnerTeam;
+    int32_t m_eRoundEndReason;
+    bool m_bRoundEndShowTimerDefend;
+    char pad_719[0x3];
+    int32_t m_iRoundEndTimerTime;
+    CUtlString m_sRoundEndFunFactToken;
+    CPlayerSlot m_iRoundEndFunFactPlayerSlot;
+    int32_t m_iRoundEndFunFactData1;
+    int32_t m_iRoundEndFunFactData2;
+    int32_t m_iRoundEndFunFactData3;
+    CUtlString m_sRoundEndMessage;
+    int32_t m_iRoundEndPlayerCount;
+    bool m_bRoundEndNoMusic;
+    char pad_720[0x3];
+    int32_t m_iRoundEndLegacy;
+    uint8_t m_nRoundEndCount;
+    char pad_721[0x3];
+    int32_t m_iRoundStartRoundNumber;
+    uint8_t m_nRoundStartCount;
+    char pad_722[0x400b];
+    float64 m_flLastPerfSampleTime;
+};
