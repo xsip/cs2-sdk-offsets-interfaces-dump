@@ -11,10 +11,15 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BaseModelEntity;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class C_BaseButton : public CS2::client::C_BaseToggle {
 		public:
-			// client::CHandle< client::C_BaseModelEntity > m_glowEntity; // 0xeb0 | Schema_Atomic | Size: 0x4
-			char  m_glowEntity[0x4]; // 0xeb0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseModelEntity > m_glowEntity; // 0xeb0 | Schema_Atomic | Size: 0x4
+			// char  m_glowEntity[0x4]; // 0xeb0 | Schema_Atomic | Size: 0x4
 			bool m_usable; // 0xeb4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_szDisplayText; // 0xeb8 | Schema_Atomic | Size: 0x8

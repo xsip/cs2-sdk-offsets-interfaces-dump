@@ -14,6 +14,11 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BaseEntity;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class CTakeDamageInfo  {
 		public:
 			S2_PAD(0x8);
@@ -21,12 +26,12 @@ namespace CS2 {
 			GlobalTypes::VectorWS m_vecDamagePosition; // 0x14 | Schema_Atomic | Size: 0xc
 			GlobalTypes::VectorWS m_vecReportedPosition; // 0x20 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecDamageDirection; // 0x2c | Schema_Atomic | Size: 0xc
-			// client::CHandle< client::C_BaseEntity > m_hInflictor; // 0x38 | Schema_Atomic | Size: 0x4
-			char  m_hInflictor[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hAttacker; // 0x3c | Schema_Atomic | Size: 0x4
-			char  m_hAttacker[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hAbility; // 0x40 | Schema_Atomic | Size: 0x4
-			char  m_hAbility[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hInflictor; // 0x38 | Schema_Atomic | Size: 0x4
+			// char  m_hInflictor[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hAttacker; // 0x3c | Schema_Atomic | Size: 0x4
+			// char  m_hAttacker[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hAbility; // 0x40 | Schema_Atomic | Size: 0x4
+			// char  m_hAbility[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
 			float32 m_flDamage; // 0x44 | Schema_Builtin | Size: 0x4
 			float32 m_flTotalledDamage; // 0x48 | Schema_Builtin | Size: 0x4
 			client::DamageTypes_t m_bitsDamageType; // 0x4c | Schema_DeclaredEnum | Size: 0x4

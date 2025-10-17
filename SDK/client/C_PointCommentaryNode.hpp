@@ -12,6 +12,11 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BaseEntity;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class C_PointCommentaryNode : public CS2::client::CBaseAnimGraph {
 		public:
 			S2_PAD(0x18);
@@ -28,8 +33,8 @@ namespace CS2 {
 			int32_t m_iNodeNumberMax; // 0x119c | Schema_Builtin | Size: 0x4
 			bool m_bListenedTo; // 0x11a0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf);
-			// client::CHandle< client::C_BaseEntity > m_hViewPosition; // 0x11b0 | Schema_Atomic | Size: 0x4
-			char  m_hViewPosition[0x4]; // 0x11b0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hViewPosition; // 0x11b0 | Schema_Atomic | Size: 0x4
+			// char  m_hViewPosition[0x4]; // 0x11b0 | Schema_Atomic | Size: 0x4
 			bool m_bRestartAfterRestore; // 0x11b4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};

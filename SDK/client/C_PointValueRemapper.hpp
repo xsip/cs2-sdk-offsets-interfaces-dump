@@ -24,10 +24,10 @@ namespace CS2 {
 			bool m_bUpdateOnClient; // 0x5fa | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
 			client::ValueRemapperInputType_t m_nInputType; // 0x5fc | Schema_DeclaredEnum | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hRemapLineStart; // 0x600 | Schema_Atomic | Size: 0x4
-			char  m_hRemapLineStart[0x4]; // 0x600 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hRemapLineEnd; // 0x604 | Schema_Atomic | Size: 0x4
-			char  m_hRemapLineEnd[0x4]; // 0x604 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hRemapLineStart; // 0x600 | Schema_Atomic | Size: 0x4
+			// char  m_hRemapLineStart[0x4]; // 0x600 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hRemapLineEnd; // 0x604 | Schema_Atomic | Size: 0x4
+			// char  m_hRemapLineEnd[0x4]; // 0x604 | Schema_Atomic | Size: 0x4
 			float32 m_flMaximumChangePerSecond; // 0x608 | Schema_Builtin | Size: 0x4
 			float32 m_flDisengageDistance; // 0x60c | Schema_Builtin | Size: 0x4
 			float32 m_flEngageDistance; // 0x610 | Schema_Builtin | Size: 0x4

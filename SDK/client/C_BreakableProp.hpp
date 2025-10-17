@@ -16,6 +16,12 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BaseEntity;
+		class C_BasePlayerPawn;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class C_BreakableProp : public CS2::client::CBaseProp {
 		public:
 			client::CPropDataComponent m_CPropDataComponent; // 0x1190 | Schema_DeclaredClass | Size: 0x40
@@ -29,8 +35,8 @@ namespace CS2 {
 			float32 m_flPressureDelay; // 0x1278 | Schema_Builtin | Size: 0x4
 			float32 m_flDefBurstScale; // 0x127c | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vDefBurstOffset; // 0x1280 | Schema_Atomic | Size: 0xc
-			// client::CHandle< client::C_BaseEntity > m_hBreaker; // 0x128c | Schema_Atomic | Size: 0x4
-			char  m_hBreaker[0x4]; // 0x128c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hBreaker; // 0x128c | Schema_Atomic | Size: 0x4
+			// char  m_hBreaker[0x4]; // 0x128c | Schema_Atomic | Size: 0x4
 			client::PerformanceMode_t m_PerformanceMode; // 0x1290 | Schema_DeclaredEnum | Size: 0x4
 			entity2::GameTime_t m_flPreventDamageBeforeTime; // 0x1294 | Schema_DeclaredClass | Size: 0x4
 			client::BreakableContentsType_t m_BreakableContentsType; // 0x1298 | Schema_DeclaredEnum | Size: 0x4
@@ -48,12 +54,12 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_explosionCustomEffect; // 0x12d0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_explosionCustomSound; // 0x12d8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_explosionModifier; // 0x12e0 | Schema_Atomic | Size: 0x8
-			// client::CHandle< client::C_BasePlayerPawn > m_hPhysicsAttacker; // 0x12e8 | Schema_Atomic | Size: 0x4
-			char  m_hPhysicsAttacker[0x4]; // 0x12e8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BasePlayerPawn > m_hPhysicsAttacker; // 0x12e8 | Schema_Atomic | Size: 0x4
+			// char  m_hPhysicsAttacker[0x4]; // 0x12e8 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0x12ec | Schema_DeclaredClass | Size: 0x4
 			float32 m_flDefaultFadeScale; // 0x12f0 | Schema_Builtin | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hLastAttacker; // 0x12f4 | Schema_Atomic | Size: 0x4
-			char  m_hLastAttacker[0x4]; // 0x12f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hLastAttacker; // 0x12f4 | Schema_Atomic | Size: 0x4
+			// char  m_hLastAttacker[0x4]; // 0x12f4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_BreakableProp, m_CPropDataComponent) == 0x1190, "m_CPropDataComponent in C_BreakableProp should be at offset 0x1190");

@@ -14,6 +14,7 @@
 namespace CS2 {
 	namespace client {
 		class CCSPlayer_PingServices;
+		class CCSPlayerController;
 	}
 }
 namespace CS2 {
@@ -51,8 +52,8 @@ namespace CS2 {
 			float32 m_flLastSmokeAge; // 0x1634 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vLastSmokeOverlayColor; // 0x1638 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x1c);
-			// client::CHandle< client::CCSPlayerController > m_hOriginalController; // 0x1660 | Schema_Atomic | Size: 0x4
-			char  m_hOriginalController[0x4]; // 0x1660 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::CCSPlayerController > m_hOriginalController; // 0x1660 | Schema_Atomic | Size: 0x4
+			// char  m_hOriginalController[0x4]; // 0x1660 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_CSPlayerPawnBase, m_pPingServices) == 0x15D8, "m_pPingServices in C_CSPlayerPawnBase should be at offset 0x15D8");

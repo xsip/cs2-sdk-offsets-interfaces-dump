@@ -13,14 +13,19 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BaseEntity;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class CDecalInstance  {
 		public:
 			GlobalTypes::CGlobalSymbol m_sDecalGroup; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_sSequenceName; // 0x10 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEntity; // 0x14 | Schema_Atomic | Size: 0x4
-			char  m_hEntity[0x4]; // 0x14 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hEntity; // 0x14 | Schema_Atomic | Size: 0x4
+			// char  m_hEntity[0x4]; // 0x14 | Schema_Atomic | Size: 0x4
 			int32_t m_nBoneIndex; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nTriangleIndex; // 0x1c | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vPositionLS; // 0x20 | Schema_Atomic | Size: 0xc

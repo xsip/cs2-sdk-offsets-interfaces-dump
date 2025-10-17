@@ -12,14 +12,19 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BaseEntity;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class CCSPlayerBase_CameraServices : public CS2::client::CPlayer_CameraServices {
 		public:
 			uint32_t m_iFOV; // 0x288 | Schema_Builtin | Size: 0x4
 			uint32_t m_iFOVStart; // 0x28c | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flFOVTime; // 0x290 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flFOVRate; // 0x294 | Schema_Builtin | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hZoomOwner; // 0x298 | Schema_Atomic | Size: 0x4
-			char  m_hZoomOwner[0x4]; // 0x298 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hZoomOwner; // 0x298 | Schema_Atomic | Size: 0x4
+			// char  m_hZoomOwner[0x4]; // 0x298 | Schema_Atomic | Size: 0x4
 			float32 m_flLastShotFOV; // 0x29c | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::CCSPlayerBase_CameraServices, m_iFOV) == 0x288, "m_iFOV in CCSPlayerBase_CameraServices should be at offset 0x288");

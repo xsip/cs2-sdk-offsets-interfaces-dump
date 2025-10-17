@@ -17,6 +17,8 @@ namespace CS2 {
 		class CCSPlayerController_InventoryServices;
 		class CCSPlayerController_ActionTrackingServices;
 		class CCSPlayerController_DamageServices;
+		class C_CSPlayerPawn;
+		class C_CSObserverPawn;
 	}
 }
 namespace CS2 {
@@ -82,10 +84,10 @@ namespace CS2 {
 			int32_t m_nBotsControlledThisRound; // 0x8f4 | Schema_Builtin | Size: 0x4
 			bool m_bCanControlObservedBot; // 0x8f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// client::CHandle< client::C_CSPlayerPawn > m_hPlayerPawn; // 0x8fc | Schema_Atomic | Size: 0x4
-			char  m_hPlayerPawn[0x4]; // 0x8fc | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_CSObserverPawn > m_hObserverPawn; // 0x900 | Schema_Atomic | Size: 0x4
-			char  m_hObserverPawn[0x4]; // 0x900 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hPlayerPawn; // 0x8fc | Schema_Atomic | Size: 0x4
+			// char  m_hPlayerPawn[0x4]; // 0x8fc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_CSObserverPawn > m_hObserverPawn; // 0x900 | Schema_Atomic | Size: 0x4
+			// char  m_hObserverPawn[0x4]; // 0x900 | Schema_Atomic | Size: 0x4
 			bool m_bPawnIsAlive; // 0x904 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			uint32_t m_iPawnHealth; // 0x908 | Schema_Builtin | Size: 0x4
@@ -96,8 +98,8 @@ namespace CS2 {
 			int32_t m_iPawnLifetimeStart; // 0x914 | Schema_Builtin | Size: 0x4
 			int32_t m_iPawnLifetimeEnd; // 0x918 | Schema_Builtin | Size: 0x4
 			int32_t m_iPawnBotDifficulty; // 0x91c | Schema_Builtin | Size: 0x4
-			// client::CHandle< client::CCSPlayerController > m_hOriginalControllerOfCurrentPawn; // 0x920 | Schema_Atomic | Size: 0x4
-			char  m_hOriginalControllerOfCurrentPawn[0x4]; // 0x920 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::CCSPlayerController > m_hOriginalControllerOfCurrentPawn; // 0x920 | Schema_Atomic | Size: 0x4
+			// char  m_hOriginalControllerOfCurrentPawn[0x4]; // 0x920 | Schema_Atomic | Size: 0x4
 			int32_t m_iScore; // 0x924 | Schema_Builtin | Size: 0x4
 			uint8_t m_recentKillQueue[8]; // 0x928 | Schema_FixedArray | Size: 0x8
 			uint8_t m_nFirstKill; // 0x930 | Schema_Builtin | Size: 0x1

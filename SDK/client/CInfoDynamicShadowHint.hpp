@@ -11,6 +11,11 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BaseEntity;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class CInfoDynamicShadowHint : public CS2::client::C_PointEntity {
 		public:
 			bool m_bDisabled; // 0x5f8 | Schema_Builtin | Size: 0x1
@@ -18,8 +23,8 @@ namespace CS2 {
 			float32 m_flRange; // 0x5fc | Schema_Builtin | Size: 0x4
 			int32_t m_nImportance; // 0x600 | Schema_Builtin | Size: 0x4
 			int32_t m_nLightChoice; // 0x604 | Schema_Builtin | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hLight; // 0x608 | Schema_Atomic | Size: 0x4
-			char  m_hLight[0x4]; // 0x608 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hLight; // 0x608 | Schema_Atomic | Size: 0x4
+			// char  m_hLight[0x4]; // 0x608 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHint, m_bDisabled) == 0x5F8, "m_bDisabled in CInfoDynamicShadowHint should be at offset 0x5F8");

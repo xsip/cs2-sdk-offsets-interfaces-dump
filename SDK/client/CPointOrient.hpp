@@ -17,8 +17,8 @@ namespace CS2 {
 		class CPointOrient : public CS2::client::C_BaseEntity {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszSpawnTargetName; // 0x5f8 | Schema_Atomic | Size: 0x8
-			// client::CHandle< client::C_BaseEntity > m_hTarget; // 0x600 | Schema_Atomic | Size: 0x4
-			char  m_hTarget[0x4]; // 0x600 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BaseEntity > m_hTarget; // 0x600 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget[0x4]; // 0x600 | Schema_Atomic | Size: 0x4
 			bool m_bActive; // 0x604 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			client::PointOrientGoalDirectionType_t m_nGoalDirection; // 0x608 | Schema_DeclaredEnum | Size: 0x4

@@ -8,8 +8,6 @@
 #include <string_view>
 #include <vector>
 #include <map>
-#include <Memory/Include.h>
-
 using float32 = float;
 using float64 = double;
 
@@ -48,6 +46,9 @@ namespace GlobalTypes {
 	using HSCRIPT /*HSCRIPT*/ = char[0x8]; //  Schema_Atomic
 	using CUtlStringToken /*CUtlStringToken*/ = char[0x4]; //  Schema_Atomic
 	using CUtlSymbolLarge /*CUtlSymbolLarge*/ = char[0x8]; //  Schema_Atomic
+
+	template <typename T1>
+	using CHandle /*CHandle*/ = char[0x4]; //  Schema_Atomic
 	using VectorWS /*VectorWS*/ = char[0xc]; //  Schema_Atomic
 	using CNetworkedQuantizedFloat /*CNetworkedQuantizedFloat*/ = char[0x8]; //  Schema_Atomic
 	using CSplitScreenSlot /*CSplitScreenSlot*/ = char[0x4]; //  Schema_Atomic

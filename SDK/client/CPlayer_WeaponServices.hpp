@@ -11,14 +11,19 @@
 
 namespace CS2 {
 	namespace client {
+		class C_BasePlayerWeapon;
+	}
+}
+namespace CS2 {
+	namespace client {
 		class CPlayer_WeaponServices : public CS2::client::CPlayerPawnComponent {
 		public:
 			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BasePlayerWeapon > > m_hMyWeapons; // 0x40 | Schema_Atomic | Size: 0x18
 			char  m_hMyWeapons[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			// client::CHandle< client::C_BasePlayerWeapon > m_hActiveWeapon; // 0x58 | Schema_Atomic | Size: 0x4
-			char  m_hActiveWeapon[0x4]; // 0x58 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BasePlayerWeapon > m_hLastWeapon; // 0x5c | Schema_Atomic | Size: 0x4
-			char  m_hLastWeapon[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BasePlayerWeapon > m_hActiveWeapon; // 0x58 | Schema_Atomic | Size: 0x4
+			// char  m_hActiveWeapon[0x4]; // 0x58 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_BasePlayerWeapon > m_hLastWeapon; // 0x5c | Schema_Atomic | Size: 0x4
+			// char  m_hLastWeapon[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
 			uint16_t m_iAmmo[32]; // 0x60 | Schema_FixedArray | Size: 0x40
 		};
 		static_assert(offsetof(CS2::client::CPlayer_WeaponServices, m_hMyWeapons) == 0x40, "m_hMyWeapons in CPlayer_WeaponServices should be at offset 0x40");
