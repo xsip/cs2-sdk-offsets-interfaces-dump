@@ -11,13 +11,8 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
-#include "client_C_EconItemView.hpp"
-#include "client_C_EconItemView.hpp"
 #include "client_C_EconItemView.hpp"
 
 class client_C_CSGO_TeamSelectCounterTerroristPosition {

@@ -4,7 +4,7 @@
 
 
 class server_CNetworkOriginCellCoordQuantizedVector {
-    char vTable2712[0x10];
+    char vTable2711[0x10];
     uint16_t m_cellX;
     uint16_t m_cellY;
     uint16_t m_cellZ;

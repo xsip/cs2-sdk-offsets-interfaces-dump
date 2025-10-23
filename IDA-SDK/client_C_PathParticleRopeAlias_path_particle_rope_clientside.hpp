@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_PathParticleRopeAlias_path_particle_rope_clientside {
@@ -124,9 +121,9 @@ class client_C_PathParticleRopeAlias_path_particle_rope_clientside {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1477[0x8];
+    char vTable1476[0x8];
     bool m_bStartActive;
-    char pad_1478[0x3];
+    char pad_1477[0x3];
     float32 m_flMaxSimulationTime;
     CUtlSymbolLarge m_iszEffectName;
     char m_PathNodes_Name[0x18];
@@ -135,7 +132,7 @@ class client_C_PathParticleRopeAlias_path_particle_rope_clientside {
     float32 m_flRadius;
     Color m_ColorTint;
     int32_t m_nEffectState;
-    char pad_1479[0x4];
+    char pad_1478[0x4];
     char m_iEffectIndex[0x8];
     char m_PathNodes_Position[0x18];
     char m_PathNodes_TangentIn[0x18];
@@ -143,5 +140,5 @@ class client_C_PathParticleRopeAlias_path_particle_rope_clientside {
     char m_PathNodes_Color[0x18];
     char m_PathNodes_PinEnabled[0x18];
     char m_PathNodes_RadiusScale[0x18];
-    char end_pad_1480[0x30];
+    char end_pad_1479[0x30];
 };

@@ -11,6 +11,6 @@ class entity2_EntComponentInfo_t {
     char* m_pNetworkDataReferencedPtrPropDescription;
     int32_t m_nRuntimeIndex;
     uint32_t m_nFlags;
-    char pad_2515[0x38];
+    char pad_2514[0x38];
     entity2_CEntityComponentHelper* m_pBaseClassComponentHelper;
 };

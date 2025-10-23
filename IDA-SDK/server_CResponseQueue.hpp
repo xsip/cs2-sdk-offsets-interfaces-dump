@@ -4,6 +4,6 @@
 
 
 class server_CResponseQueue {
-    char vTable2759[0x38];
+    char vTable2758[0x38];
     char m_ExpresserTargets[0x18];
 };

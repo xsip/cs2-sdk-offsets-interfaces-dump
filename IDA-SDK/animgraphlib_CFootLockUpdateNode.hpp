@@ -6,7 +6,6 @@
 #include "animgraphlib_CAnimUpdateNodeRef.hpp"
 #include "animgraphlib_FootLockPoseOpFixedSettings.hpp"
 #include "animgraphlib_CAnimInputDamping.hpp"
-#include "animgraphlib_CAnimInputDamping.hpp"
 
 class animgraphlib_CFootLockUpdateNode {
     char vTable16[0x18];

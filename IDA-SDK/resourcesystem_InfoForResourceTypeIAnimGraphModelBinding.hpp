@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeIAnimGraphModelBinding {
-    char pad_2411[0x1];
+    char pad_2410[0x1];
 };

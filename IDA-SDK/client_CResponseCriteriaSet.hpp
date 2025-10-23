@@ -4,8 +4,8 @@
 
 
 class client_CResponseCriteriaSet {
-    char vTable1071[0x30];
+    char vTable1082[0x30];
     int32_t m_nNumPrefixedContexts;
     bool m_bOverrideOnAppend;
-    char end_pad_1072[0x3];
+    char end_pad_1083[0x3];
 };

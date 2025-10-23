@@ -3,17 +3,16 @@
 #include "typedefs.hpp"
 
 #include "client_CSoundEnvelope.hpp"
-#include "client_CSoundEnvelope.hpp"
 #include "client_CCopyRecipientFilter.hpp"
 
 class client_CSoundPatch {
-    char vTable1086[0x8];
+    char vTable1097[0x8];
     client_CSoundEnvelope m_pitch;
     client_CSoundEnvelope m_volume;
-    char pad_1087[0x14];
+    char pad_1098[0x14];
     float32 m_shutdownTime;
     float32 m_flLastTime;
-    char pad_1088[0x4];
+    char pad_1099[0x4];
     CUtlSymbolLarge m_iszSoundScriptName;
     char m_hEnt[0x4];
     CEntityIndex m_soundEntityIndex;
@@ -22,6 +21,6 @@ class client_CSoundPatch {
     client_CCopyRecipientFilter m_Filter;
     float32 m_flCloseCaptionDuration;
     bool m_bUpdatedSoundOrigin;
-    char pad_1089[0x3];
+    char pad_1100[0x3];
     CUtlSymbolLarge m_iszClassName;
 };

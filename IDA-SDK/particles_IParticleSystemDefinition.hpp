@@ -4,5 +4,5 @@
 
 
 class particles_IParticleSystemDefinition {
-    char pad_1829[0x8];
+    char pad_1828[0x8];
 };

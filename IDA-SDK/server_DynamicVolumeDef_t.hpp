@@ -12,5 +12,5 @@ class server_DynamicVolumeDef_t {
     uint32_t m_nAreaSrc;
     uint32_t m_nAreaDst;
     bool m_bAttached;
-    char end_pad_2775[0x3];
+    char end_pad_2774[0x3];
 };

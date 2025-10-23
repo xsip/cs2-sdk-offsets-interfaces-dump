@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_CInfoOffscreenPanoramaTexture {
@@ -125,17 +122,17 @@ class client_CInfoOffscreenPanoramaTexture {
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
     bool m_bDisabled;
-    char pad_966[0x3];
+    char pad_977[0x3];
     int32_t m_nResolutionX;
     int32_t m_nResolutionY;
-    char pad_967[0x4];
+    char pad_978[0x4];
     CUtlSymbolLarge m_szLayoutFileName;
     CUtlSymbolLarge m_RenderAttrName;
     char m_TargetEntities[0x18];
     int32_t m_nTargetChangeCount;
-    char pad_968[0x4];
+    char pad_979[0x4];
     char m_vecCSSClasses[0x18];
-    char pad_969[0x160];
+    char pad_980[0x160];
     bool m_bCheckCSSClasses;
-    char end_pad_970[0x27];
+    char end_pad_981[0x27];
 };

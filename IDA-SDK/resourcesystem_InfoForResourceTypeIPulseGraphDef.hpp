@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeIPulseGraphDef {
-    char pad_2382[0x1];
+    char pad_2381[0x1];
 };

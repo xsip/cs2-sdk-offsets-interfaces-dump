@@ -3,8 +3,6 @@
 #include "typedefs.hpp"
 
 #include "modellib_VPhysXRange_t.hpp"
-#include "modellib_VPhysXRange_t.hpp"
-#include "modellib_VPhysXRange_t.hpp"
 
 class modellib_VPhysXJoint_t {
     uint16_t m_nType;

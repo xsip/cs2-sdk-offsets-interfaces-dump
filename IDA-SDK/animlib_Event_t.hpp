@@ -3,7 +3,6 @@
 #include "typedefs.hpp"
 
 #include "animlib_NmPercent_t.hpp"
-#include "animlib_NmPercent_t.hpp"
 
 class animlib_Event_t {
     CGlobalSymbol m_ID;

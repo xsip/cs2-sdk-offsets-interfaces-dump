@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -26,25 +23,10 @@ class client_CBaseAnimGraph;
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_SceneEventId_t.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "client_Emphasized_Phoneme.hpp"
 #include "client_C_AttributeContainer.hpp"
-#include "entity2_GameTick_t.hpp"
-#include "entity2_GameTick_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "entity2_CEntityIOOutput.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_C_IronSightController.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_WeaponGalilAR {
     char vTable723[0x8];
@@ -226,37 +208,37 @@ class client_C_WeaponGalilAR {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1153[0x10];
+    char vTable1164[0x10];
     char m_flexWeight[0x18];
     VectorWS m_vLookTargetPosition;
-    char pad_1154[0x84];
+    char pad_1165[0x84];
     bool m_blinktoggle;
-    char pad_1155[0x5f];
+    char pad_1166[0x5f];
     int32_t m_nLastFlexUpdateFrameCount;
     Vector m_CachedViewTarget;
     client_SceneEventId_t m_nNextSceneEventId;
     int32_t m_iBlink;
     float32 m_blinktime;
     bool m_prevblinktoggle;
-    char pad_1156[0x3];
+    char pad_1167[0x3];
     int32_t m_iJawOpen;
     float32 m_flJawOpenAmount;
     float32 m_flBlinkAmount;
     modellib_AttachmentHandle_t m_iMouthAttachment;
     modellib_AttachmentHandle_t m_iEyeAttachment;
     bool m_bResetFlexWeightsOnModelChange;
-    char pad_1157[0x19];
+    char pad_1168[0x19];
     int32_t m_nEyeOcclusionRendererBone;
     matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform;
     Vector m_vEyeOcclusionRendererHalfExtent;
-    char pad_1158[0x10];
+    char pad_1169[0x10];
     client_Emphasized_Phoneme m_PhonemeClasses[3];
-    char vTable1145[0x10];
+    char vTable1156[0x10];
     float32 m_flFlexDelayTime;
-    char pad_1146[0x4];
+    char pad_1157[0x4];
     float32* m_flFlexDelayedWeight;
     bool m_bAttributesInitialized;
-    char pad_1147[0x7];
+    char pad_1158[0x7];
     client_C_AttributeContainer m_AttributeManager;
     uint32_t m_OriginalOwnerXuidLow;
     uint32_t m_OriginalOwnerXuidHigh;
@@ -266,17 +248,17 @@ class client_C_WeaponGalilAR {
     int32_t m_nFallbackStatTrak;
     bool m_bClientside;
     bool m_bParticleSystemsCreated;
-    char pad_1148[0x6];
+    char pad_1159[0x6];
     char m_vecAttachedParticles[0x18];
     char m_hViewmodelAttachment[0x4];
     int32_t m_iOldTeam;
     bool m_bAttachmentDirty;
-    char pad_1149[0x3];
+    char pad_1160[0x3];
     int32_t m_nUnloadedModelIndex;
     int32_t m_iNumOwnerValidationRetries;
-    char pad_1150[0xc];
+    char pad_1161[0xc];
     char m_hOldProvidee[0x4];
-    char pad_1151[0x4];
+    char pad_1162[0x4];
     char m_vecAttachedModels[0x18];
     entity2_GameTick_t m_nNextPrimaryAttackTick;
     float32 m_flNextPrimaryAttackTickRatio;
@@ -285,20 +267,20 @@ class client_C_WeaponGalilAR {
     int32_t m_iClip1;
     int32_t m_iClip2;
     int32_t m_pReserveAmmo[2];
-    char end_pad_1144[0x18];
-    char vTable1122[0x58];
+    char end_pad_1155[0x18];
+    char vTable1133[0x58];
     client_WeaponGameplayAnimState m_iWeaponGameplayAnimState;
-    char pad_1123[0x2];
+    char pad_1134[0x2];
     entity2_GameTime_t m_flWeaponGameplayAnimStateTimestamp;
     entity2_GameTime_t m_flInspectCancelCompleteTime;
     bool m_bInspectPending;
     bool m_bInspectShouldLoop;
-    char pad_1124[0x2a];
+    char pad_1135[0x2a];
     float32 m_flCrosshairDistance;
     int32_t m_iAmmoLastCheck;
     int32_t m_nLastEmptySoundCmdNum;
     bool m_bFireOnEmpty;
-    char pad_1125[0x3];
+    char pad_1136[0x3];
     entity2_CEntityIOOutput m_OnPlayerPickup;
     client_CSWeaponMode m_weaponMode;
     float32 m_flTurningInaccuracyDelta;
@@ -310,60 +292,60 @@ class client_C_WeaponGalilAR {
     int32_t m_iRecoilIndex;
     float32 m_flRecoilIndex;
     bool m_bBurstMode;
-    char pad_1126[0x3];
+    char pad_1137[0x3];
     entity2_GameTime_t m_flLastBurstModeChangeTime;
     entity2_GameTick_t m_nPostponeFireReadyTicks;
     float32 m_flPostponeFireReadyFrac;
     bool m_bInReload;
-    char pad_1127[0x3];
+    char pad_1138[0x3];
     entity2_GameTime_t m_flDroppedAtTime;
     bool m_bIsHauledBack;
     bool m_bSilencerOn;
-    char pad_1128[0x2];
+    char pad_1139[0x2];
     entity2_GameTime_t m_flTimeSilencerSwitchComplete;
     int32_t m_iOriginalTeamNumber;
     int32_t m_iMostRecentTeamNumber;
     bool m_bDroppedNearBuyZone;
-    char pad_1129[0x3];
+    char pad_1140[0x3];
     float32 m_flNextAttackRenderTimeOffset;
-    char pad_1130[0x9c];
+    char pad_1141[0x9c];
     bool m_bClearWeaponIdentifyingUGC;
     bool m_bVisualsDataSet;
     bool m_bUIWeapon;
-    char pad_1131[0x1];
+    char pad_1142[0x1];
     int32_t m_nCustomEconReloadEventId;
-    char pad_1132[0x8];
+    char pad_1143[0x8];
     entity2_GameTime_t m_nextPrevOwnerUseTime;
     char m_hPrevOwner[0x4];
     entity2_GameTick_t m_nDropTick;
     bool m_bWasActiveWeaponWhenDropped;
-    char pad_1133[0x1f];
+    char pad_1144[0x1f];
     bool m_donated;
-    char pad_1134[0x3];
+    char pad_1145[0x3];
     entity2_GameTime_t m_fLastShotTime;
     bool m_bWasOwnedByCT;
     bool m_bWasOwnedByTerrorist;
-    char pad_1135[0x2];
+    char pad_1146[0x2];
     float32 m_flNextClientFireBulletTime;
     float32 m_flNextClientFireBulletTime_Repredict;
-    char pad_1136[0x168];
+    char pad_1147[0x168];
     client_C_IronSightController m_IronSightController;
     int32_t m_iIronSightMode;
-    char pad_1137[0x14];
+    char pad_1148[0x14];
     entity2_GameTime_t m_flLastLOSTraceFailureTime;
-    char pad_1138[0x5c];
+    char pad_1149[0x5c];
     float32 m_flWatTickOffset;
-    char pad_1139[0x10];
+    char pad_1150[0x10];
     entity2_GameTime_t m_flLastShakeTime;
-    char end_pad_1140[0x1b0];
+    char end_pad_1151[0x1b0];
     int32_t m_zoomLevel;
     int32_t m_iBurstShotsRemaining;
     int32_t m_iSilencerBodygroup;
-    char pad_1119[0xc];
+    char pad_1130[0xc];
     int32_t m_silencedModelIndex;
     bool m_inPrecache;
     bool m_bNeedsBoltAction;
-    char pad_1120[0x2];
+    char pad_1131[0x2];
     int32_t m_nRevolverCylinderIdx;
-    char end_pad_1121[0xc];
+    char end_pad_1132[0xc];
 };

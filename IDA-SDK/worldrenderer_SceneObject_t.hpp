@@ -9,7 +9,7 @@ class worldrenderer_SceneObject_t {
     float32 m_flFadeStartDistance;
     float32 m_flFadeEndDistance;
     Vector4D m_vTintColor;
-    char pad_2491[0x4];
+    char pad_2490[0x4];
     CUtlString m_skin;
     worldrenderer_ObjectTypeFlags_t m_nObjectTypeFlags;
     Vector m_vLightingOrigin;
@@ -17,7 +17,7 @@ class worldrenderer_SceneObject_t {
     int16_t m_nLODOverride;
     int32_t m_nCubeMapPrecomputedHandshake;
     int32_t m_nLightProbeVolumePrecomputedHandshake;
-    char pad_2492[0x4];
+    char pad_2491[0x4];
     char m_renderableModel[0x8];
     char m_renderable[0x8];
 };

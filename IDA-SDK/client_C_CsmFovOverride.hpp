@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_CsmFovOverride {
@@ -126,5 +123,5 @@ class client_C_CsmFovOverride {
     char end_pad_722[0x4];
     CUtlString m_cameraName;
     float32 m_flCsmFovOverrideValue;
-    char end_pad_1361[0x4];
+    char end_pad_1360[0x4];
 };

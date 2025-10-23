@@ -5,11 +5,11 @@
 #include "server_VPhysicsCollisionAttribute_t.hpp"
 
 class server_CCollisionProperty {
-    char vTable3466[0x10];
+    char vTable3465[0x10];
     server_VPhysicsCollisionAttribute_t m_collisionAttribute;
     Vector m_vecMins;
     Vector m_vecMaxs;
-    char pad_3467[0x2];
+    char pad_3466[0x2];
     uint8_t m_usSolidFlags;
     client_SolidType_t m_nSolidType;
     uint8_t m_triggerBloat;

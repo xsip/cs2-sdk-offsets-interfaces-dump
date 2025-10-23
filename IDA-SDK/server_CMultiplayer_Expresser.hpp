@@ -4,13 +4,9 @@
 
 class server_CBaseFlex;
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class server_CMultiplayer_Expresser {
-    char vTable2634[0x60];
+    char vTable2633[0x60];
     entity2_GameTime_t m_flStopTalkTime;
     entity2_GameTime_t m_flStopTalkTimeWithoutDelay;
     entity2_GameTime_t m_flQueuedSpeechTime;
@@ -20,10 +16,10 @@ class server_CMultiplayer_Expresser {
     bool m_bAllowSpeakingInterrupts;
     bool m_bConsiderSceneInvolvementAsSpeech;
     bool m_bSceneEntityDisabled;
-    char pad_2635[0x1];
+    char pad_2634[0x1];
     int32_t m_nLastSpokenPriority;
-    char pad_2636[0x18];
+    char pad_2635[0x18];
     server_CBaseFlex* m_pOuter;
     bool m_bAllowMultipleScenes;
-    char end_pad_2749[0x7];
+    char end_pad_2748[0x7];
 };

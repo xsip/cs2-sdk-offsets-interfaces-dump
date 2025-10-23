@@ -5,46 +5,45 @@
 #include "entity2_CNetworkVarChainer.hpp"
 #include "client_CInButtonState.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class server_CCSPlayer_MovementServices {
-    char vTable1197[0x8];
+    char vTable1208[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1198[0x10];
+    char pad_1209[0x10];
     int32_t m_nImpulse;
-    char pad_3344[0x4];
+    char pad_3343[0x4];
     client_CInButtonState m_nButtons;
     uint64_t m_nQueuedButtonDownMask;
     uint64_t m_nQueuedButtonChangeMask;
     uint64_t m_nButtonDoublePressed;
     uint32_t m_pButtonPressedCmdNumber[64];
     uint32_t m_nLastCommandNumberProcessed;
-    char pad_3345[0x4];
+    char pad_3344[0x4];
     uint64_t m_nToggleButtonDownMask;
-    char pad_3346[0x8];
+    char pad_3345[0x8];
     float32 m_flMaxspeed;
     float32 m_arrForceSubtickMoveWhen[4];
     float32 m_flForwardMove;
     float32 m_flLeftMove;
     float32 m_flUpMove;
     Vector m_vecLastMovementImpulses;
-    char pad_3347[0x5c];
+    char pad_3346[0x5c];
     QAngle m_vecOldViewAngles;
-    char end_pad_3348[0xc];
+    char end_pad_3347[0xc];
     float32 m_flStepSoundTime;
     float32 m_flFallVelocity;
     bool m_bInCrouch;
-    char pad_3427[0x3];
+    char pad_3426[0x3];
     uint32_t m_nCrouchState;
     entity2_GameTime_t m_flCrouchTransitionStartTime;
     bool m_bDucked;
     bool m_bDucking;
     bool m_bInDuckJump;
-    char pad_3428[0x1];
+    char pad_3427[0x1];
     Vector m_groundNormal;
     float32 m_flSurfaceFriction;
     CUtlStringToken m_surfaceProps;
-    char pad_3429[0xc];
+    char pad_3428[0xc];
     int32_t m_nStepside;
     Vector m_vecSmoothedVelocity;
     Vector m_vecLadderNormal;
@@ -53,22 +52,22 @@ class server_CCSPlayer_MovementServices {
     float32 m_flDuckSpeed;
     bool m_bDuckOverride;
     bool m_bDesiresDuck;
-    char pad_3420[0x2];
+    char pad_3419[0x2];
     float32 m_flDuckOffset;
     uint32_t m_nDuckTimeMsecs;
     uint32_t m_nDuckJumpTimeMsecs;
     uint32_t m_nJumpTimeMsecs;
     float32 m_flLastDuckTime;
-    char pad_3421[0x8];
+    char pad_3420[0x8];
     Vector2D m_vecLastPositionAtFullCrouchSpeed;
     bool m_duckUntilOnGround;
     bool m_bHasWalkMovedSinceLastJump;
     bool m_bInStuckTest;
-    char pad_3422[0x20d];
+    char pad_3421[0x20d];
     int32_t m_nTraceCount;
     int32_t m_StuckLast;
     bool m_bSpeedCropped;
-    char pad_3423[0x3];
+    char pad_3422[0x3];
     int32_t m_nOldWaterLevel;
     float32 m_flWaterEntryTime;
     Vector m_vecForward;
@@ -76,10 +75,10 @@ class server_CCSPlayer_MovementServices {
     Vector m_vecUp;
     int32_t m_nGameCodeHasMovedPlayerAfterCommand;
     bool m_bMadeFootstepNoise;
-    char pad_3424[0x3];
+    char pad_3423[0x3];
     int32_t m_iFootsteps;
     bool m_bOldJumpPressed;
-    char pad_3425[0x3];
+    char pad_3424[0x3];
     float32 m_flJumpPressedTime;
     entity2_GameTime_t m_fStashGrenadeParameterWhen;
     uint64_t m_nButtonDownMaskPrev;
@@ -93,6 +92,6 @@ class server_CCSPlayer_MovementServices {
     float32 m_flAccumulatedJumpError;
     float32 m_flTicksSinceLastSurfingDetected;
     bool m_bWasSurfing;
-    char pad_3426[0x8f];
+    char pad_3425[0x8f];
     Vector m_vecInputRotated;
 };

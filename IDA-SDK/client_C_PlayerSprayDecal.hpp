@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -197,6 +194,6 @@ class client_C_PlayerSprayDecal {
     int32_t m_nTintID;
     uint8_t m_nVersion;
     uint8_t m_ubSignature[128];
-    char pad_1496[0xb];
+    char pad_1495[0xb];
     client_CPlayerSprayDecalRenderHelper m_SprayRenderHelper;
 };

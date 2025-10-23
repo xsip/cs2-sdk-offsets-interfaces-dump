@@ -11,14 +11,8 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_EnvVolumetricFogController {
     char vTable723[0x8];
@@ -143,7 +137,7 @@ class client_C_EnvVolumetricFogController {
     Vector m_vBoxMins;
     Vector m_vBoxMaxs;
     bool m_bActive;
-    char pad_1408[0x3];
+    char pad_1407[0x3];
     entity2_GameTime_t m_flStartAnisoTime;
     entity2_GameTime_t m_flStartScatterTime;
     entity2_GameTime_t m_flStartDrawDistanceTime;
@@ -156,7 +150,7 @@ class client_C_EnvVolumetricFogController {
     bool m_bStartDisabled;
     bool m_bEnableIndirect;
     bool m_bIsMaster;
-    char pad_1409[0x1];
+    char pad_1408[0x1];
     char m_hFogIndirectTexture[0x8];
     int32_t m_nForceRefreshCount;
     float32 m_fNoiseSpeed;
@@ -165,5 +159,5 @@ class client_C_EnvVolumetricFogController {
     float32 m_fWindSpeed;
     Vector m_vWindDirection;
     bool m_bFirstTime;
-    char end_pad_1410[0x7];
+    char end_pad_1409[0x7];
 };

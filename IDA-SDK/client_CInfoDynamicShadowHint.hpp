@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_CInfoDynamicShadowHint {
@@ -125,10 +122,10 @@ class client_CInfoDynamicShadowHint {
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
     bool m_bDisabled;
-    char pad_962[0x3];
+    char pad_973[0x3];
     float32 m_flRange;
     int32_t m_nImportance;
     int32_t m_nLightChoice;
     char m_hLight[0x4];
-    char end_pad_963[0x4];
+    char end_pad_974[0x4];
 };

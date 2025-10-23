@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_CSGO_MapPreviewCameraPathNode {
@@ -134,5 +131,5 @@ class client_C_CSGO_MapPreviewCameraPathNode {
     float32 m_flEaseOut;
     Vector m_vInTangentWorld;
     Vector m_vOutTangentWorld;
-    char end_pad_1240[0x4];
+    char end_pad_1241[0x4];
 };

@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_SoundOpvarSetOBBWindEntity {
@@ -129,5 +126,5 @@ class client_C_SoundOpvarSetOBBWindEntity {
     CUtlSymbolLarge m_iszOpvarName;
     int32_t m_iOpvarIndex;
     bool m_bUseAutoCompare;
-    char end_pad_1591[0x3];
+    char end_pad_1590[0x3];
 };

@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -183,5 +180,5 @@ class client_C_SpotlightEnd {
     char end_pad_612[0x4];
     float32 m_flLightScale;
     float32 m_Radius;
-    char end_pad_1592[0x8];
+    char end_pad_1591[0x8];
 };

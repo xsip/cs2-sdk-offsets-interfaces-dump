@@ -4,5 +4,5 @@
 
 
 class client_CPathSimpleAPI {
-    char pad_1022[0x8];
+    char pad_1033[0x8];
 };

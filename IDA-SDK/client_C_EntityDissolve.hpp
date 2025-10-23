@@ -13,17 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_EntityDissolve {
     char vTable723[0x8];
@@ -183,7 +178,7 @@ class client_C_EntityDissolve {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1377[0x8];
+    char vTable1376[0x8];
     entity2_GameTime_t m_flStartTime;
     float32 m_flFadeInStart;
     float32 m_flFadeInLength;
@@ -197,5 +192,5 @@ class client_C_EntityDissolve {
     uint32_t m_nMagnitude;
     bool m_bCoreExplode;
     bool m_bLinkedToServerEnt;
-    char end_pad_1378[0xa];
+    char end_pad_1377[0xa];
 };

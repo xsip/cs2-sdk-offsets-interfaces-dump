@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -182,9 +179,9 @@ class client_C_FireCrackerBlast {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1421[0x40];
+    char vTable1420[0x40];
     client_ParticleIndex_t m_nfxFireDamageEffect;
-    char pad_1422[0x4];
+    char pad_1421[0x4];
     char m_hInfernoPointsSnapshot[0x8];
     char m_hInfernoFillerPointsSnapshot[0x8];
     char m_hInfernoOutlinePointsSnapshot[0x8];
@@ -198,18 +195,18 @@ class client_C_FireCrackerBlast {
     int32_t m_nInfernoType;
     float32 m_nFireLifetime;
     bool m_bInPostEffectTime;
-    char pad_1423[0x3];
+    char pad_1422[0x3];
     int32_t m_lastFireCount;
     int32_t m_nFireEffectTickBegin;
-    char pad_1424[0x6c08];
+    char pad_1423[0x6c08];
     int32_t m_drawableCount;
     bool m_blosCheck;
-    char pad_1425[0x3];
+    char pad_1424[0x3];
     int32_t m_nlosperiod;
     float32 m_maxFireHalfWidth;
     float32 m_maxFireHeight;
     Vector m_minBounds;
     Vector m_maxBounds;
     float32 m_flLastGrassBurnThink;
-    char end_pad_1426[0x10];
+    char end_pad_1425[0x10];
 };

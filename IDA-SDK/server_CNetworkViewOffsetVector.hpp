@@ -4,7 +4,7 @@
 
 
 class server_CNetworkViewOffsetVector {
-    char vTable2673[0x10];
+    char vTable2672[0x10];
     CNetworkedQuantizedFloat m_vecX;
     CNetworkedQuantizedFloat m_vecY;
     CNetworkedQuantizedFloat m_vecZ;

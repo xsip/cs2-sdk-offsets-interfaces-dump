@@ -3,7 +3,6 @@
 #include "typedefs.hpp"
 
 #include "client_AmmoIndex_t.hpp"
-#include "client_AmmoIndex_t.hpp"
 
 class client_CBasePlayerWeaponVData {
     char pad_759[0x28];

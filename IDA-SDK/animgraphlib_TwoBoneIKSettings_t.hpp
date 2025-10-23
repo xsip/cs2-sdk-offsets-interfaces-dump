@@ -3,8 +3,6 @@
 #include "typedefs.hpp"
 
 #include "modellib_CAnimAttachment.hpp"
-#include "modellib_CAnimAttachment.hpp"
-#include "animgraphlib_CAnimParamHandle.hpp"
 #include "animgraphlib_CAnimParamHandle.hpp"
 
 class animgraphlib_TwoBoneIKSettings_t {

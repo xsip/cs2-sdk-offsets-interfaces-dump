@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCMorphSetData {
-    char pad_2392[0x1];
+    char pad_2391[0x1];
 };

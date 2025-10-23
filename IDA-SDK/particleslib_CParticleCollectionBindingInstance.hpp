@@ -4,6 +4,6 @@
 
 
 class particleslib_CParticleCollectionBindingInstance {
-    char pad_2701[0x118];
-    char pad_1694[0x20];
+    char pad_2700[0x118];
+    char pad_1693[0x20];
 };

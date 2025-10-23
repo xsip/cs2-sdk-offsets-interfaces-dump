@@ -41,67 +41,67 @@ namespace CS2 {
 			bool m_bTechnicalTimeOut; // 0xe8 | Schema_Builtin | Size: 0x1
 			bool m_bMatchWaitingForResume; // 0xe9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iRoundTime; // 0xec | Schema_Builtin | Size: 0x4
-			float32 m_fMatchStartTime; // 0xf0 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_fRoundStartTime; // 0xf4 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flRestartRoundTime; // 0xf8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bGameRestart; // 0xfc | Schema_Builtin | Size: 0x1
+			int32_t m_iFreezeTime; // 0xec | Schema_Builtin | Size: 0x4
+			int32_t m_iRoundTime; // 0xf0 | Schema_Builtin | Size: 0x4
+			float32 m_fMatchStartTime; // 0xf4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_fRoundStartTime; // 0xf8 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flRestartRoundTime; // 0xfc | Schema_DeclaredClass | Size: 0x4
+			bool m_bGameRestart; // 0x100 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flGameStartTime; // 0x100 | Schema_Builtin | Size: 0x4
-			float32 m_timeUntilNextPhaseStarts; // 0x104 | Schema_Builtin | Size: 0x4
-			int32_t m_gamePhase; // 0x108 | Schema_Builtin | Size: 0x4
-			int32_t m_totalRoundsPlayed; // 0x10c | Schema_Builtin | Size: 0x4
-			int32_t m_nRoundsPlayedThisPhase; // 0x110 | Schema_Builtin | Size: 0x4
-			int32_t m_nOvertimePlaying; // 0x114 | Schema_Builtin | Size: 0x4
-			int32_t m_iHostagesRemaining; // 0x118 | Schema_Builtin | Size: 0x4
-			bool m_bAnyHostageReached; // 0x11c | Schema_Builtin | Size: 0x1
-			bool m_bMapHasBombTarget; // 0x11d | Schema_Builtin | Size: 0x1
-			bool m_bMapHasRescueZone; // 0x11e | Schema_Builtin | Size: 0x1
-			bool m_bMapHasBuyZone; // 0x11f | Schema_Builtin | Size: 0x1
-			bool m_bIsQueuedMatchmaking; // 0x120 | Schema_Builtin | Size: 0x1
+			float32 m_flGameStartTime; // 0x104 | Schema_Builtin | Size: 0x4
+			float32 m_timeUntilNextPhaseStarts; // 0x108 | Schema_Builtin | Size: 0x4
+			int32_t m_gamePhase; // 0x10c | Schema_Builtin | Size: 0x4
+			int32_t m_totalRoundsPlayed; // 0x110 | Schema_Builtin | Size: 0x4
+			int32_t m_nRoundsPlayedThisPhase; // 0x114 | Schema_Builtin | Size: 0x4
+			int32_t m_nOvertimePlaying; // 0x118 | Schema_Builtin | Size: 0x4
+			int32_t m_iHostagesRemaining; // 0x11c | Schema_Builtin | Size: 0x4
+			bool m_bAnyHostageReached; // 0x120 | Schema_Builtin | Size: 0x1
+			bool m_bMapHasBombTarget; // 0x121 | Schema_Builtin | Size: 0x1
+			bool m_bMapHasRescueZone; // 0x122 | Schema_Builtin | Size: 0x1
+			bool m_bMapHasBuyZone; // 0x123 | Schema_Builtin | Size: 0x1
+			bool m_bIsQueuedMatchmaking; // 0x124 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nQueuedMatchmakingMode; // 0x124 | Schema_Builtin | Size: 0x4
-			bool m_bIsValveDS; // 0x128 | Schema_Builtin | Size: 0x1
-			bool m_bLogoMap; // 0x129 | Schema_Builtin | Size: 0x1
-			bool m_bPlayAllStepSoundsOnServer; // 0x12a | Schema_Builtin | Size: 0x1
+			int32_t m_nQueuedMatchmakingMode; // 0x128 | Schema_Builtin | Size: 0x4
+			bool m_bIsValveDS; // 0x12c | Schema_Builtin | Size: 0x1
+			bool m_bLogoMap; // 0x12d | Schema_Builtin | Size: 0x1
+			bool m_bPlayAllStepSoundsOnServer; // 0x12e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			int32_t m_iSpectatorSlotCount; // 0x12c | Schema_Builtin | Size: 0x4
-			int32_t m_MatchDevice; // 0x130 | Schema_Builtin | Size: 0x4
-			bool m_bHasMatchStarted; // 0x134 | Schema_Builtin | Size: 0x1
+			int32_t m_iSpectatorSlotCount; // 0x130 | Schema_Builtin | Size: 0x4
+			int32_t m_MatchDevice; // 0x134 | Schema_Builtin | Size: 0x4
+			bool m_bHasMatchStarted; // 0x138 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nNextMapInMapgroup; // 0x138 | Schema_Builtin | Size: 0x4
-			char m_szTournamentEventName[512]; // 0x13c | Schema_FixedArray | Size: 0x200
-			char m_szTournamentEventStage[512]; // 0x33c | Schema_FixedArray | Size: 0x200
-			char m_szMatchStatTxt[512]; // 0x53c | Schema_FixedArray | Size: 0x200
-			char m_szTournamentPredictionsTxt[512]; // 0x73c | Schema_FixedArray | Size: 0x200
-			int32_t m_nTournamentPredictionsPct; // 0x93c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flCMMItemDropRevealStartTime; // 0x940 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flCMMItemDropRevealEndTime; // 0x944 | Schema_DeclaredClass | Size: 0x4
-			bool m_bIsDroppingItems; // 0x948 | Schema_Builtin | Size: 0x1
-			bool m_bIsQuestEligible; // 0x949 | Schema_Builtin | Size: 0x1
-			bool m_bIsHltvActive; // 0x94a | Schema_Builtin | Size: 0x1
+			int32_t m_nNextMapInMapgroup; // 0x13c | Schema_Builtin | Size: 0x4
+			char m_szTournamentEventName[512]; // 0x140 | Schema_FixedArray | Size: 0x200
+			char m_szTournamentEventStage[512]; // 0x340 | Schema_FixedArray | Size: 0x200
+			char m_szMatchStatTxt[512]; // 0x540 | Schema_FixedArray | Size: 0x200
+			char m_szTournamentPredictionsTxt[512]; // 0x740 | Schema_FixedArray | Size: 0x200
+			int32_t m_nTournamentPredictionsPct; // 0x940 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flCMMItemDropRevealStartTime; // 0x944 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flCMMItemDropRevealEndTime; // 0x948 | Schema_DeclaredClass | Size: 0x4
+			bool m_bIsDroppingItems; // 0x94c | Schema_Builtin | Size: 0x1
+			bool m_bIsQuestEligible; // 0x94d | Schema_Builtin | Size: 0x1
+			bool m_bIsHltvActive; // 0x94e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			uint16_t m_arrProhibitedItemIndices[100]; // 0x94c | Schema_FixedArray | Size: 0xc8
-			uint32_t m_arrTournamentActiveCasterAccounts[4]; // 0xa14 | Schema_FixedArray | Size: 0x10
-			int32_t m_numBestOfMaps; // 0xa24 | Schema_Builtin | Size: 0x4
-			int32_t m_nHalloweenMaskListSeed; // 0xa28 | Schema_Builtin | Size: 0x4
-			bool m_bBombDropped; // 0xa2c | Schema_Builtin | Size: 0x1
-			bool m_bBombPlanted; // 0xa2d | Schema_Builtin | Size: 0x1
+			uint16_t m_arrProhibitedItemIndices[100]; // 0x950 | Schema_FixedArray | Size: 0xc8
+			uint32_t m_arrTournamentActiveCasterAccounts[4]; // 0xa18 | Schema_FixedArray | Size: 0x10
+			int32_t m_numBestOfMaps; // 0xa28 | Schema_Builtin | Size: 0x4
+			int32_t m_nHalloweenMaskListSeed; // 0xa2c | Schema_Builtin | Size: 0x4
+			bool m_bBombDropped; // 0xa30 | Schema_Builtin | Size: 0x1
+			bool m_bBombPlanted; // 0xa31 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iRoundWinStatus; // 0xa30 | Schema_Builtin | Size: 0x4
-			int32_t m_eRoundWinReason; // 0xa34 | Schema_Builtin | Size: 0x4
-			bool m_bTCantBuy; // 0xa38 | Schema_Builtin | Size: 0x1
-			bool m_bCTCantBuy; // 0xa39 | Schema_Builtin | Size: 0x1
+			int32_t m_iRoundWinStatus; // 0xa34 | Schema_Builtin | Size: 0x4
+			int32_t m_eRoundWinReason; // 0xa38 | Schema_Builtin | Size: 0x4
+			bool m_bTCantBuy; // 0xa3c | Schema_Builtin | Size: 0x1
+			bool m_bCTCantBuy; // 0xa3d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iMatchStats_RoundResults[30]; // 0xa3c | Schema_FixedArray | Size: 0x78
-			int32_t m_iMatchStats_PlayersAlive_CT[30]; // 0xab4 | Schema_FixedArray | Size: 0x78
-			int32_t m_iMatchStats_PlayersAlive_T[30]; // 0xb2c | Schema_FixedArray | Size: 0x78
-			float32 m_TeamRespawnWaveTimes[32]; // 0xba4 | Schema_FixedArray | Size: 0x80
-			entity2::GameTime_t m_flNextRespawnWave[32]; // 0xc24 | Schema_FixedArray | Size: 0x1000
-			GlobalTypes::Vector m_vMinimapMins; // 0xca4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vMinimapMaxs; // 0xcb0 | Schema_Atomic | Size: 0xc
-			float32 m_MinimapVerticalSectionHeights[8]; // 0xcbc | Schema_FixedArray | Size: 0x20
-			S2_PAD(0x4);
+			int32_t m_iMatchStats_RoundResults[30]; // 0xa40 | Schema_FixedArray | Size: 0x78
+			int32_t m_iMatchStats_PlayersAlive_CT[30]; // 0xab8 | Schema_FixedArray | Size: 0x78
+			int32_t m_iMatchStats_PlayersAlive_T[30]; // 0xb30 | Schema_FixedArray | Size: 0x78
+			float32 m_TeamRespawnWaveTimes[32]; // 0xba8 | Schema_FixedArray | Size: 0x80
+			entity2::GameTime_t m_flNextRespawnWave[32]; // 0xc28 | Schema_FixedArray | Size: 0x1000
+			GlobalTypes::Vector m_vMinimapMins; // 0xca8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vMinimapMaxs; // 0xcb4 | Schema_Atomic | Size: 0xc
+			float32 m_MinimapVerticalSectionHeights[8]; // 0xcc0 | Schema_FixedArray | Size: 0x20
 			uint64_t m_ullLocalMatchID; // 0xce0 | Schema_Builtin | Size: 0x8
 			int32_t m_nEndMatchMapGroupVoteTypes[10]; // 0xce8 | Schema_FixedArray | Size: 0x28
 			int32_t m_nEndMatchMapGroupVoteOptions[10]; // 0xd10 | Schema_FixedArray | Size: 0x28
@@ -120,11 +120,11 @@ namespace CS2 {
 			bool m_endMatchOnRoundReset; // 0xd78 | Schema_Builtin | Size: 0x1
 			bool m_endMatchOnThink; // 0xd79 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iFreezeTime; // 0xd7c | Schema_Builtin | Size: 0x4
-			int32_t m_iNumTerrorist; // 0xd80 | Schema_Builtin | Size: 0x4
-			int32_t m_iNumCT; // 0xd84 | Schema_Builtin | Size: 0x4
-			int32_t m_iNumSpawnableTerrorist; // 0xd88 | Schema_Builtin | Size: 0x4
-			int32_t m_iNumSpawnableCT; // 0xd8c | Schema_Builtin | Size: 0x4
+			int32_t m_iNumTerrorist; // 0xd7c | Schema_Builtin | Size: 0x4
+			int32_t m_iNumCT; // 0xd80 | Schema_Builtin | Size: 0x4
+			int32_t m_iNumSpawnableTerrorist; // 0xd84 | Schema_Builtin | Size: 0x4
+			int32_t m_iNumSpawnableCT; // 0xd88 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4);
 			// GlobalTypes::CUtlVector< int32 > m_arrSelectedHostageSpawnIndices; // 0xd90 | Schema_Atomic | Size: 0x18
 			char  m_arrSelectedHostageSpawnIndices[0x18]; // 0xd90 | Schema_Atomic | Size: 0x18
 			int32_t m_nSpawnPointsRandomSeed; // 0xda8 | Schema_Builtin | Size: 0x4
@@ -236,41 +236,41 @@ namespace CS2 {
 			// server::CHandle< server::CBaseEntity > m_hPlayerResource; // 0x1128 | Schema_Atomic | Size: 0x4
 			char  m_hPlayerResource[0x4]; // 0x1128 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			server::CRetakeGameRules m_RetakeRules; // 0x1130 | Schema_DeclaredClass | Size: 0x190
-			// GlobalTypes::CUtlVector< int32 > m_arrTeamUniqueKillWeaponsMatch[4]; // 0x12c0 | Schema_FixedArray | Size: 0x60
-			char  m_arrTeamUniqueKillWeaponsMatch[0x18]; // 0x12c0 | Schema_FixedArray | Size: 0x18
-			bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; // 0x1320 | Schema_FixedArray | Size: 0x4
+			server::CRetakeGameRules m_RetakeRules; // 0x1130 | Schema_DeclaredClass | Size: 0x1b0
+			// GlobalTypes::CUtlVector< int32 > m_arrTeamUniqueKillWeaponsMatch[4]; // 0x12e0 | Schema_FixedArray | Size: 0x60
+			char  m_arrTeamUniqueKillWeaponsMatch[0x18]; // 0x12e0 | Schema_FixedArray | Size: 0x18
+			bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; // 0x1340 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x24);
-			uint8_t m_nMatchEndCount; // 0x1348 | Schema_Builtin | Size: 0x1
+			uint8_t m_nMatchEndCount; // 0x1368 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nTTeamIntroVariant; // 0x134c | Schema_Builtin | Size: 0x4
-			int32_t m_nCTTeamIntroVariant; // 0x1350 | Schema_Builtin | Size: 0x4
-			bool m_bTeamIntroPeriod; // 0x1354 | Schema_Builtin | Size: 0x1
+			int32_t m_nTTeamIntroVariant; // 0x136c | Schema_Builtin | Size: 0x4
+			int32_t m_nCTTeamIntroVariant; // 0x1370 | Schema_Builtin | Size: 0x4
+			bool m_bTeamIntroPeriod; // 0x1374 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_fTeamIntroPeriodEnd; // 0x1358 | Schema_DeclaredClass | Size: 0x4
-			bool m_bPlayedTeamIntroVO; // 0x135c | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_fTeamIntroPeriodEnd; // 0x1378 | Schema_DeclaredClass | Size: 0x4
+			bool m_bPlayedTeamIntroVO; // 0x137c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iRoundEndWinnerTeam; // 0x1360 | Schema_Builtin | Size: 0x4
-			int32_t m_eRoundEndReason; // 0x1364 | Schema_Builtin | Size: 0x4
-			bool m_bRoundEndShowTimerDefend; // 0x1368 | Schema_Builtin | Size: 0x1
+			int32_t m_iRoundEndWinnerTeam; // 0x1380 | Schema_Builtin | Size: 0x4
+			int32_t m_eRoundEndReason; // 0x1384 | Schema_Builtin | Size: 0x4
+			bool m_bRoundEndShowTimerDefend; // 0x1388 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iRoundEndTimerTime; // 0x136c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlString m_sRoundEndFunFactToken; // 0x1370 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CPlayerSlot m_iRoundEndFunFactPlayerSlot; // 0x1378 | Schema_Atomic | Size: 0x4
-			int32_t m_iRoundEndFunFactData1; // 0x137c | Schema_Builtin | Size: 0x4
-			int32_t m_iRoundEndFunFactData2; // 0x1380 | Schema_Builtin | Size: 0x4
-			int32_t m_iRoundEndFunFactData3; // 0x1384 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlString m_sRoundEndMessage; // 0x1388 | Schema_Atomic | Size: 0x8
-			int32_t m_iRoundEndPlayerCount; // 0x1390 | Schema_Builtin | Size: 0x4
-			bool m_bRoundEndNoMusic; // 0x1394 | Schema_Builtin | Size: 0x1
+			int32_t m_iRoundEndTimerTime; // 0x138c | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_sRoundEndFunFactToken; // 0x1390 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CPlayerSlot m_iRoundEndFunFactPlayerSlot; // 0x1398 | Schema_Atomic | Size: 0x4
+			int32_t m_iRoundEndFunFactData1; // 0x139c | Schema_Builtin | Size: 0x4
+			int32_t m_iRoundEndFunFactData2; // 0x13a0 | Schema_Builtin | Size: 0x4
+			int32_t m_iRoundEndFunFactData3; // 0x13a4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_sRoundEndMessage; // 0x13a8 | Schema_Atomic | Size: 0x8
+			int32_t m_iRoundEndPlayerCount; // 0x13b0 | Schema_Builtin | Size: 0x4
+			bool m_bRoundEndNoMusic; // 0x13b4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iRoundEndLegacy; // 0x1398 | Schema_Builtin | Size: 0x4
-			uint8_t m_nRoundEndCount; // 0x139c | Schema_Builtin | Size: 0x1
+			int32_t m_iRoundEndLegacy; // 0x13b8 | Schema_Builtin | Size: 0x4
+			uint8_t m_nRoundEndCount; // 0x13bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iRoundStartRoundNumber; // 0x13a0 | Schema_Builtin | Size: 0x4
-			uint8_t m_nRoundStartCount; // 0x13a4 | Schema_Builtin | Size: 0x1
+			int32_t m_iRoundStartRoundNumber; // 0x13c0 | Schema_Builtin | Size: 0x4
+			uint8_t m_nRoundStartCount; // 0x13c4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x400b);
-			float64 m_flLastPerfSampleTime; // 0x53b0 | Schema_Builtin | Size: 0x8
+			float64 m_flLastPerfSampleTime; // 0x53d0 | Schema_Builtin | Size: 0x8
 			S2_PAD(0xc018); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSGameRules, m_bFreezePeriod) == 0xC8, "m_bFreezePeriod in CCSGameRules should be at offset 0xC8");
@@ -285,59 +285,60 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSGameRules, m_nCTTimeOuts) == 0xE4, "m_nCTTimeOuts in CCSGameRules should be at offset 0xE4");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_bTechnicalTimeOut) == 0xE8, "m_bTechnicalTimeOut in CCSGameRules should be at offset 0xE8");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_bMatchWaitingForResume) == 0xE9, "m_bMatchWaitingForResume in CCSGameRules should be at offset 0xE9");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundTime) == 0xEC, "m_iRoundTime in CCSGameRules should be at offset 0xEC");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_fMatchStartTime) == 0xF0, "m_fMatchStartTime in CCSGameRules should be at offset 0xF0");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_fRoundStartTime) == 0xF4, "m_fRoundStartTime in CCSGameRules should be at offset 0xF4");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_flRestartRoundTime) == 0xF8, "m_flRestartRoundTime in CCSGameRules should be at offset 0xF8");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bGameRestart) == 0xFC, "m_bGameRestart in CCSGameRules should be at offset 0xFC");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_flGameStartTime) == 0x100, "m_flGameStartTime in CCSGameRules should be at offset 0x100");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_timeUntilNextPhaseStarts) == 0x104, "m_timeUntilNextPhaseStarts in CCSGameRules should be at offset 0x104");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_gamePhase) == 0x108, "m_gamePhase in CCSGameRules should be at offset 0x108");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_totalRoundsPlayed) == 0x10C, "m_totalRoundsPlayed in CCSGameRules should be at offset 0x10C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nRoundsPlayedThisPhase) == 0x110, "m_nRoundsPlayedThisPhase in CCSGameRules should be at offset 0x110");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nOvertimePlaying) == 0x114, "m_nOvertimePlaying in CCSGameRules should be at offset 0x114");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iHostagesRemaining) == 0x118, "m_iHostagesRemaining in CCSGameRules should be at offset 0x118");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bAnyHostageReached) == 0x11C, "m_bAnyHostageReached in CCSGameRules should be at offset 0x11C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bMapHasBombTarget) == 0x11D, "m_bMapHasBombTarget in CCSGameRules should be at offset 0x11D");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bMapHasRescueZone) == 0x11E, "m_bMapHasRescueZone in CCSGameRules should be at offset 0x11E");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bMapHasBuyZone) == 0x11F, "m_bMapHasBuyZone in CCSGameRules should be at offset 0x11F");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsQueuedMatchmaking) == 0x120, "m_bIsQueuedMatchmaking in CCSGameRules should be at offset 0x120");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nQueuedMatchmakingMode) == 0x124, "m_nQueuedMatchmakingMode in CCSGameRules should be at offset 0x124");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsValveDS) == 0x128, "m_bIsValveDS in CCSGameRules should be at offset 0x128");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bLogoMap) == 0x129, "m_bLogoMap in CCSGameRules should be at offset 0x129");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bPlayAllStepSoundsOnServer) == 0x12A, "m_bPlayAllStepSoundsOnServer in CCSGameRules should be at offset 0x12A");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iSpectatorSlotCount) == 0x12C, "m_iSpectatorSlotCount in CCSGameRules should be at offset 0x12C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_MatchDevice) == 0x130, "m_MatchDevice in CCSGameRules should be at offset 0x130");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bHasMatchStarted) == 0x134, "m_bHasMatchStarted in CCSGameRules should be at offset 0x134");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nNextMapInMapgroup) == 0x138, "m_nNextMapInMapgroup in CCSGameRules should be at offset 0x138");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_szTournamentEventName) == 0x13C, "m_szTournamentEventName in CCSGameRules should be at offset 0x13C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_szTournamentEventStage) == 0x33C, "m_szTournamentEventStage in CCSGameRules should be at offset 0x33C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_szMatchStatTxt) == 0x53C, "m_szMatchStatTxt in CCSGameRules should be at offset 0x53C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_szTournamentPredictionsTxt) == 0x73C, "m_szTournamentPredictionsTxt in CCSGameRules should be at offset 0x73C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nTournamentPredictionsPct) == 0x93C, "m_nTournamentPredictionsPct in CCSGameRules should be at offset 0x93C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_flCMMItemDropRevealStartTime) == 0x940, "m_flCMMItemDropRevealStartTime in CCSGameRules should be at offset 0x940");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_flCMMItemDropRevealEndTime) == 0x944, "m_flCMMItemDropRevealEndTime in CCSGameRules should be at offset 0x944");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsDroppingItems) == 0x948, "m_bIsDroppingItems in CCSGameRules should be at offset 0x948");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsQuestEligible) == 0x949, "m_bIsQuestEligible in CCSGameRules should be at offset 0x949");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsHltvActive) == 0x94A, "m_bIsHltvActive in CCSGameRules should be at offset 0x94A");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_arrProhibitedItemIndices) == 0x94C, "m_arrProhibitedItemIndices in CCSGameRules should be at offset 0x94C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_arrTournamentActiveCasterAccounts) == 0xA14, "m_arrTournamentActiveCasterAccounts in CCSGameRules should be at offset 0xA14");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_numBestOfMaps) == 0xA24, "m_numBestOfMaps in CCSGameRules should be at offset 0xA24");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nHalloweenMaskListSeed) == 0xA28, "m_nHalloweenMaskListSeed in CCSGameRules should be at offset 0xA28");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bBombDropped) == 0xA2C, "m_bBombDropped in CCSGameRules should be at offset 0xA2C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bBombPlanted) == 0xA2D, "m_bBombPlanted in CCSGameRules should be at offset 0xA2D");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundWinStatus) == 0xA30, "m_iRoundWinStatus in CCSGameRules should be at offset 0xA30");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_eRoundWinReason) == 0xA34, "m_eRoundWinReason in CCSGameRules should be at offset 0xA34");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bTCantBuy) == 0xA38, "m_bTCantBuy in CCSGameRules should be at offset 0xA38");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bCTCantBuy) == 0xA39, "m_bCTCantBuy in CCSGameRules should be at offset 0xA39");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iMatchStats_RoundResults) == 0xA3C, "m_iMatchStats_RoundResults in CCSGameRules should be at offset 0xA3C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iMatchStats_PlayersAlive_CT) == 0xAB4, "m_iMatchStats_PlayersAlive_CT in CCSGameRules should be at offset 0xAB4");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iMatchStats_PlayersAlive_T) == 0xB2C, "m_iMatchStats_PlayersAlive_T in CCSGameRules should be at offset 0xB2C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_TeamRespawnWaveTimes) == 0xBA4, "m_TeamRespawnWaveTimes in CCSGameRules should be at offset 0xBA4");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_flNextRespawnWave) == 0xC24, "m_flNextRespawnWave in CCSGameRules should be at offset 0xC24");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_vMinimapMins) == 0xCA4, "m_vMinimapMins in CCSGameRules should be at offset 0xCA4");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_vMinimapMaxs) == 0xCB0, "m_vMinimapMaxs in CCSGameRules should be at offset 0xCB0");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_MinimapVerticalSectionHeights) == 0xCBC, "m_MinimapVerticalSectionHeights in CCSGameRules should be at offset 0xCBC");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iFreezeTime) == 0xEC, "m_iFreezeTime in CCSGameRules should be at offset 0xEC");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundTime) == 0xF0, "m_iRoundTime in CCSGameRules should be at offset 0xF0");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_fMatchStartTime) == 0xF4, "m_fMatchStartTime in CCSGameRules should be at offset 0xF4");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_fRoundStartTime) == 0xF8, "m_fRoundStartTime in CCSGameRules should be at offset 0xF8");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_flRestartRoundTime) == 0xFC, "m_flRestartRoundTime in CCSGameRules should be at offset 0xFC");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bGameRestart) == 0x100, "m_bGameRestart in CCSGameRules should be at offset 0x100");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_flGameStartTime) == 0x104, "m_flGameStartTime in CCSGameRules should be at offset 0x104");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_timeUntilNextPhaseStarts) == 0x108, "m_timeUntilNextPhaseStarts in CCSGameRules should be at offset 0x108");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_gamePhase) == 0x10C, "m_gamePhase in CCSGameRules should be at offset 0x10C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_totalRoundsPlayed) == 0x110, "m_totalRoundsPlayed in CCSGameRules should be at offset 0x110");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nRoundsPlayedThisPhase) == 0x114, "m_nRoundsPlayedThisPhase in CCSGameRules should be at offset 0x114");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nOvertimePlaying) == 0x118, "m_nOvertimePlaying in CCSGameRules should be at offset 0x118");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iHostagesRemaining) == 0x11C, "m_iHostagesRemaining in CCSGameRules should be at offset 0x11C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bAnyHostageReached) == 0x120, "m_bAnyHostageReached in CCSGameRules should be at offset 0x120");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bMapHasBombTarget) == 0x121, "m_bMapHasBombTarget in CCSGameRules should be at offset 0x121");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bMapHasRescueZone) == 0x122, "m_bMapHasRescueZone in CCSGameRules should be at offset 0x122");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bMapHasBuyZone) == 0x123, "m_bMapHasBuyZone in CCSGameRules should be at offset 0x123");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsQueuedMatchmaking) == 0x124, "m_bIsQueuedMatchmaking in CCSGameRules should be at offset 0x124");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nQueuedMatchmakingMode) == 0x128, "m_nQueuedMatchmakingMode in CCSGameRules should be at offset 0x128");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsValveDS) == 0x12C, "m_bIsValveDS in CCSGameRules should be at offset 0x12C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bLogoMap) == 0x12D, "m_bLogoMap in CCSGameRules should be at offset 0x12D");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bPlayAllStepSoundsOnServer) == 0x12E, "m_bPlayAllStepSoundsOnServer in CCSGameRules should be at offset 0x12E");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iSpectatorSlotCount) == 0x130, "m_iSpectatorSlotCount in CCSGameRules should be at offset 0x130");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_MatchDevice) == 0x134, "m_MatchDevice in CCSGameRules should be at offset 0x134");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bHasMatchStarted) == 0x138, "m_bHasMatchStarted in CCSGameRules should be at offset 0x138");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nNextMapInMapgroup) == 0x13C, "m_nNextMapInMapgroup in CCSGameRules should be at offset 0x13C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_szTournamentEventName) == 0x140, "m_szTournamentEventName in CCSGameRules should be at offset 0x140");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_szTournamentEventStage) == 0x340, "m_szTournamentEventStage in CCSGameRules should be at offset 0x340");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_szMatchStatTxt) == 0x540, "m_szMatchStatTxt in CCSGameRules should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_szTournamentPredictionsTxt) == 0x740, "m_szTournamentPredictionsTxt in CCSGameRules should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nTournamentPredictionsPct) == 0x940, "m_nTournamentPredictionsPct in CCSGameRules should be at offset 0x940");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_flCMMItemDropRevealStartTime) == 0x944, "m_flCMMItemDropRevealStartTime in CCSGameRules should be at offset 0x944");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_flCMMItemDropRevealEndTime) == 0x948, "m_flCMMItemDropRevealEndTime in CCSGameRules should be at offset 0x948");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsDroppingItems) == 0x94C, "m_bIsDroppingItems in CCSGameRules should be at offset 0x94C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsQuestEligible) == 0x94D, "m_bIsQuestEligible in CCSGameRules should be at offset 0x94D");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bIsHltvActive) == 0x94E, "m_bIsHltvActive in CCSGameRules should be at offset 0x94E");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_arrProhibitedItemIndices) == 0x950, "m_arrProhibitedItemIndices in CCSGameRules should be at offset 0x950");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_arrTournamentActiveCasterAccounts) == 0xA18, "m_arrTournamentActiveCasterAccounts in CCSGameRules should be at offset 0xA18");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_numBestOfMaps) == 0xA28, "m_numBestOfMaps in CCSGameRules should be at offset 0xA28");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nHalloweenMaskListSeed) == 0xA2C, "m_nHalloweenMaskListSeed in CCSGameRules should be at offset 0xA2C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bBombDropped) == 0xA30, "m_bBombDropped in CCSGameRules should be at offset 0xA30");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bBombPlanted) == 0xA31, "m_bBombPlanted in CCSGameRules should be at offset 0xA31");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundWinStatus) == 0xA34, "m_iRoundWinStatus in CCSGameRules should be at offset 0xA34");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_eRoundWinReason) == 0xA38, "m_eRoundWinReason in CCSGameRules should be at offset 0xA38");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bTCantBuy) == 0xA3C, "m_bTCantBuy in CCSGameRules should be at offset 0xA3C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bCTCantBuy) == 0xA3D, "m_bCTCantBuy in CCSGameRules should be at offset 0xA3D");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iMatchStats_RoundResults) == 0xA40, "m_iMatchStats_RoundResults in CCSGameRules should be at offset 0xA40");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iMatchStats_PlayersAlive_CT) == 0xAB8, "m_iMatchStats_PlayersAlive_CT in CCSGameRules should be at offset 0xAB8");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iMatchStats_PlayersAlive_T) == 0xB30, "m_iMatchStats_PlayersAlive_T in CCSGameRules should be at offset 0xB30");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_TeamRespawnWaveTimes) == 0xBA8, "m_TeamRespawnWaveTimes in CCSGameRules should be at offset 0xBA8");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_flNextRespawnWave) == 0xC28, "m_flNextRespawnWave in CCSGameRules should be at offset 0xC28");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_vMinimapMins) == 0xCA8, "m_vMinimapMins in CCSGameRules should be at offset 0xCA8");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_vMinimapMaxs) == 0xCB4, "m_vMinimapMaxs in CCSGameRules should be at offset 0xCB4");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_MinimapVerticalSectionHeights) == 0xCC0, "m_MinimapVerticalSectionHeights in CCSGameRules should be at offset 0xCC0");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_ullLocalMatchID) == 0xCE0, "m_ullLocalMatchID in CCSGameRules should be at offset 0xCE0");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_nEndMatchMapGroupVoteTypes) == 0xCE8, "m_nEndMatchMapGroupVoteTypes in CCSGameRules should be at offset 0xCE8");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_nEndMatchMapGroupVoteOptions) == 0xD10, "m_nEndMatchMapGroupVoteOptions in CCSGameRules should be at offset 0xD10");
@@ -352,11 +353,10 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSGameRules, m_iUnBalancedRounds) == 0xD74, "m_iUnBalancedRounds in CCSGameRules should be at offset 0xD74");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_endMatchOnRoundReset) == 0xD78, "m_endMatchOnRoundReset in CCSGameRules should be at offset 0xD78");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_endMatchOnThink) == 0xD79, "m_endMatchOnThink in CCSGameRules should be at offset 0xD79");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iFreezeTime) == 0xD7C, "m_iFreezeTime in CCSGameRules should be at offset 0xD7C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumTerrorist) == 0xD80, "m_iNumTerrorist in CCSGameRules should be at offset 0xD80");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumCT) == 0xD84, "m_iNumCT in CCSGameRules should be at offset 0xD84");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumSpawnableTerrorist) == 0xD88, "m_iNumSpawnableTerrorist in CCSGameRules should be at offset 0xD88");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumSpawnableCT) == 0xD8C, "m_iNumSpawnableCT in CCSGameRules should be at offset 0xD8C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumTerrorist) == 0xD7C, "m_iNumTerrorist in CCSGameRules should be at offset 0xD7C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumCT) == 0xD80, "m_iNumCT in CCSGameRules should be at offset 0xD80");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumSpawnableTerrorist) == 0xD84, "m_iNumSpawnableTerrorist in CCSGameRules should be at offset 0xD84");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iNumSpawnableCT) == 0xD88, "m_iNumSpawnableCT in CCSGameRules should be at offset 0xD88");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_arrSelectedHostageSpawnIndices) == 0xD90, "m_arrSelectedHostageSpawnIndices in CCSGameRules should be at offset 0xD90");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_nSpawnPointsRandomSeed) == 0xDA8, "m_nSpawnPointsRandomSeed in CCSGameRules should be at offset 0xDA8");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_bFirstConnected) == 0xDAC, "m_bFirstConnected in CCSGameRules should be at offset 0xDAC");
@@ -437,31 +437,31 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSGameRules, m_BtGlobalBlackboard) == 0x1090, "m_BtGlobalBlackboard in CCSGameRules should be at offset 0x1090");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_hPlayerResource) == 0x1128, "m_hPlayerResource in CCSGameRules should be at offset 0x1128");
 		static_assert(offsetof(CS2::server::CCSGameRules, m_RetakeRules) == 0x1130, "m_RetakeRules in CCSGameRules should be at offset 0x1130");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_arrTeamUniqueKillWeaponsMatch) == 0x12C0, "m_arrTeamUniqueKillWeaponsMatch in CCSGameRules should be at offset 0x12C0");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bTeamLastKillUsedUniqueWeaponMatch) == 0x1320, "m_bTeamLastKillUsedUniqueWeaponMatch in CCSGameRules should be at offset 0x1320");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nMatchEndCount) == 0x1348, "m_nMatchEndCount in CCSGameRules should be at offset 0x1348");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nTTeamIntroVariant) == 0x134C, "m_nTTeamIntroVariant in CCSGameRules should be at offset 0x134C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nCTTeamIntroVariant) == 0x1350, "m_nCTTeamIntroVariant in CCSGameRules should be at offset 0x1350");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bTeamIntroPeriod) == 0x1354, "m_bTeamIntroPeriod in CCSGameRules should be at offset 0x1354");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_fTeamIntroPeriodEnd) == 0x1358, "m_fTeamIntroPeriodEnd in CCSGameRules should be at offset 0x1358");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bPlayedTeamIntroVO) == 0x135C, "m_bPlayedTeamIntroVO in CCSGameRules should be at offset 0x135C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndWinnerTeam) == 0x1360, "m_iRoundEndWinnerTeam in CCSGameRules should be at offset 0x1360");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_eRoundEndReason) == 0x1364, "m_eRoundEndReason in CCSGameRules should be at offset 0x1364");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bRoundEndShowTimerDefend) == 0x1368, "m_bRoundEndShowTimerDefend in CCSGameRules should be at offset 0x1368");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndTimerTime) == 0x136C, "m_iRoundEndTimerTime in CCSGameRules should be at offset 0x136C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_sRoundEndFunFactToken) == 0x1370, "m_sRoundEndFunFactToken in CCSGameRules should be at offset 0x1370");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactPlayerSlot) == 0x1378, "m_iRoundEndFunFactPlayerSlot in CCSGameRules should be at offset 0x1378");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactData1) == 0x137C, "m_iRoundEndFunFactData1 in CCSGameRules should be at offset 0x137C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactData2) == 0x1380, "m_iRoundEndFunFactData2 in CCSGameRules should be at offset 0x1380");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactData3) == 0x1384, "m_iRoundEndFunFactData3 in CCSGameRules should be at offset 0x1384");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_sRoundEndMessage) == 0x1388, "m_sRoundEndMessage in CCSGameRules should be at offset 0x1388");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndPlayerCount) == 0x1390, "m_iRoundEndPlayerCount in CCSGameRules should be at offset 0x1390");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_bRoundEndNoMusic) == 0x1394, "m_bRoundEndNoMusic in CCSGameRules should be at offset 0x1394");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndLegacy) == 0x1398, "m_iRoundEndLegacy in CCSGameRules should be at offset 0x1398");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nRoundEndCount) == 0x139C, "m_nRoundEndCount in CCSGameRules should be at offset 0x139C");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundStartRoundNumber) == 0x13A0, "m_iRoundStartRoundNumber in CCSGameRules should be at offset 0x13A0");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_nRoundStartCount) == 0x13A4, "m_nRoundStartCount in CCSGameRules should be at offset 0x13A4");
-		static_assert(offsetof(CS2::server::CCSGameRules, m_flLastPerfSampleTime) == 0x53B0, "m_flLastPerfSampleTime in CCSGameRules should be at offset 0x53B0");
-		static_assert(sizeof(CS2::server::CCSGameRules) == 0x113D0, "CCSGameRules size should be 0x113D0");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_arrTeamUniqueKillWeaponsMatch) == 0x12E0, "m_arrTeamUniqueKillWeaponsMatch in CCSGameRules should be at offset 0x12E0");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bTeamLastKillUsedUniqueWeaponMatch) == 0x1340, "m_bTeamLastKillUsedUniqueWeaponMatch in CCSGameRules should be at offset 0x1340");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nMatchEndCount) == 0x1368, "m_nMatchEndCount in CCSGameRules should be at offset 0x1368");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nTTeamIntroVariant) == 0x136C, "m_nTTeamIntroVariant in CCSGameRules should be at offset 0x136C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nCTTeamIntroVariant) == 0x1370, "m_nCTTeamIntroVariant in CCSGameRules should be at offset 0x1370");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bTeamIntroPeriod) == 0x1374, "m_bTeamIntroPeriod in CCSGameRules should be at offset 0x1374");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_fTeamIntroPeriodEnd) == 0x1378, "m_fTeamIntroPeriodEnd in CCSGameRules should be at offset 0x1378");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bPlayedTeamIntroVO) == 0x137C, "m_bPlayedTeamIntroVO in CCSGameRules should be at offset 0x137C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndWinnerTeam) == 0x1380, "m_iRoundEndWinnerTeam in CCSGameRules should be at offset 0x1380");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_eRoundEndReason) == 0x1384, "m_eRoundEndReason in CCSGameRules should be at offset 0x1384");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bRoundEndShowTimerDefend) == 0x1388, "m_bRoundEndShowTimerDefend in CCSGameRules should be at offset 0x1388");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndTimerTime) == 0x138C, "m_iRoundEndTimerTime in CCSGameRules should be at offset 0x138C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_sRoundEndFunFactToken) == 0x1390, "m_sRoundEndFunFactToken in CCSGameRules should be at offset 0x1390");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactPlayerSlot) == 0x1398, "m_iRoundEndFunFactPlayerSlot in CCSGameRules should be at offset 0x1398");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactData1) == 0x139C, "m_iRoundEndFunFactData1 in CCSGameRules should be at offset 0x139C");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactData2) == 0x13A0, "m_iRoundEndFunFactData2 in CCSGameRules should be at offset 0x13A0");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndFunFactData3) == 0x13A4, "m_iRoundEndFunFactData3 in CCSGameRules should be at offset 0x13A4");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_sRoundEndMessage) == 0x13A8, "m_sRoundEndMessage in CCSGameRules should be at offset 0x13A8");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndPlayerCount) == 0x13B0, "m_iRoundEndPlayerCount in CCSGameRules should be at offset 0x13B0");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_bRoundEndNoMusic) == 0x13B4, "m_bRoundEndNoMusic in CCSGameRules should be at offset 0x13B4");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundEndLegacy) == 0x13B8, "m_iRoundEndLegacy in CCSGameRules should be at offset 0x13B8");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nRoundEndCount) == 0x13BC, "m_nRoundEndCount in CCSGameRules should be at offset 0x13BC");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_iRoundStartRoundNumber) == 0x13C0, "m_iRoundStartRoundNumber in CCSGameRules should be at offset 0x13C0");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_nRoundStartCount) == 0x13C4, "m_nRoundStartCount in CCSGameRules should be at offset 0x13C4");
+		static_assert(offsetof(CS2::server::CCSGameRules, m_flLastPerfSampleTime) == 0x53D0, "m_flLastPerfSampleTime in CCSGameRules should be at offset 0x53D0");
+		static_assert(sizeof(CS2::server::CCSGameRules) == 0x113F0, "CCSGameRules size should be 0x113F0");
 	}
 }

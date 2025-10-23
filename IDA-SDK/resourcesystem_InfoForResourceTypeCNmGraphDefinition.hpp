@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCNmGraphDefinition {
-    char pad_2375[0x1];
+    char pad_2374[0x1];
 };

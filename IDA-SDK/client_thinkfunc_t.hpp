@@ -3,7 +3,6 @@
 #include "typedefs.hpp"
 
 #include "entity2_GameTick_t.hpp"
-#include "entity2_GameTick_t.hpp"
 
 class client_thinkfunc_t {
     char vTable570[0x8];

@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_PlayerPing {
@@ -124,11 +121,11 @@ class client_C_PlayerPing {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1494[0x30];
+    char vTable1493[0x30];
     char m_hPlayer[0x4];
     char m_hPingedEntity[0x4];
     int32_t m_iType;
     bool m_bUrgent;
     char m_szPlaceName[18];
-    char end_pad_1495[0x1];
+    char end_pad_1494[0x1];
 };

@@ -7,12 +7,12 @@
 
 class client_CLightComponent {
     char pad_770[0x8];
-    char vTable1459[0x28];
+    char vTable1458[0x28];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1460[0x15];
+    char pad_1459[0x15];
     Color m_Color;
     Color m_SecondaryColor;
-    char pad_1461[0x3];
+    char pad_1460[0x3];
     float32 m_flBrightness;
     float32 m_flBrightnessScale;
     float32 m_flBrightnessMult;
@@ -29,10 +29,10 @@ class client_CLightComponent {
     int32_t m_nShadowWidth;
     int32_t m_nShadowHeight;
     bool m_bRenderDiffuse;
-    char pad_1462[0x3];
+    char pad_1461[0x3];
     int32_t m_nRenderSpecular;
     bool m_bRenderTransmissive;
-    char pad_1463[0x3];
+    char pad_1462[0x3];
     float32 m_flOrthoLightWidth;
     float32 m_flOrthoLightHeight;
     int32_t m_nStyle;
@@ -49,14 +49,14 @@ class client_CLightComponent {
     int32_t m_nShadowCascadeResolution2;
     int32_t m_nShadowCascadeResolution3;
     bool m_bUsesBakedShadowing;
-    char pad_1464[0x3];
+    char pad_1463[0x3];
     int32_t m_nShadowPriority;
     int32_t m_nBakedShadowIndex;
     int32_t m_nLightPathUniqueId;
     int32_t m_nLightMapUniqueId;
     bool m_bRenderToCubemaps;
     bool m_bAllowSSTGeneration;
-    char pad_1465[0x2];
+    char pad_1464[0x2];
     int32_t m_nDirectLight;
     int32_t m_nIndirectLight;
     float32 m_flFadeMinDist;
@@ -66,7 +66,7 @@ class client_CLightComponent {
     bool m_bEnabled;
     bool m_bFlicker;
     bool m_bPrecomputedFieldsValid;
-    char pad_1466[0x1];
+    char pad_1465[0x1];
     Vector m_vPrecomputedBoundsMins;
     Vector m_vPrecomputedBoundsMaxs;
     Vector m_vPrecomputedOBBOrigin;
@@ -81,9 +81,9 @@ class client_CLightComponent {
     Color m_SkyAmbientBounce;
     bool m_bUseSecondaryColor;
     bool m_bMixedShadows;
-    char pad_1467[0x2];
+    char pad_1466[0x2];
     entity2_GameTime_t m_flLightStyleStartTime;
     float32 m_flCapsuleLength;
     float32 m_flMinRoughness;
-    char pad_1468[0x48];
+    char pad_1467[0x48];
 };

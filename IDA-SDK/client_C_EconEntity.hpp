@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -25,7 +22,6 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_SceneEventId_t.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
 #include "client_Emphasized_Phoneme.hpp"
 #include "client_C_AttributeContainer.hpp"
@@ -210,37 +206,37 @@ class client_C_EconEntity {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1153[0x10];
+    char vTable1164[0x10];
     char m_flexWeight[0x18];
     VectorWS m_vLookTargetPosition;
-    char pad_1154[0x84];
+    char pad_1165[0x84];
     bool m_blinktoggle;
-    char pad_1155[0x5f];
+    char pad_1166[0x5f];
     int32_t m_nLastFlexUpdateFrameCount;
     Vector m_CachedViewTarget;
     client_SceneEventId_t m_nNextSceneEventId;
     int32_t m_iBlink;
     float32 m_blinktime;
     bool m_prevblinktoggle;
-    char pad_1156[0x3];
+    char pad_1167[0x3];
     int32_t m_iJawOpen;
     float32 m_flJawOpenAmount;
     float32 m_flBlinkAmount;
     modellib_AttachmentHandle_t m_iMouthAttachment;
     modellib_AttachmentHandle_t m_iEyeAttachment;
     bool m_bResetFlexWeightsOnModelChange;
-    char pad_1157[0x19];
+    char pad_1168[0x19];
     int32_t m_nEyeOcclusionRendererBone;
     matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform;
     Vector m_vEyeOcclusionRendererHalfExtent;
-    char pad_1158[0x10];
+    char pad_1169[0x10];
     client_Emphasized_Phoneme m_PhonemeClasses[3];
-    char vTable1145[0x10];
+    char vTable1156[0x10];
     float32 m_flFlexDelayTime;
-    char pad_1146[0x4];
+    char pad_1157[0x4];
     float32* m_flFlexDelayedWeight;
     bool m_bAttributesInitialized;
-    char pad_1147[0x7];
+    char pad_1158[0x7];
     client_C_AttributeContainer m_AttributeManager;
     uint32_t m_OriginalOwnerXuidLow;
     uint32_t m_OriginalOwnerXuidHigh;
@@ -250,16 +246,16 @@ class client_C_EconEntity {
     int32_t m_nFallbackStatTrak;
     bool m_bClientside;
     bool m_bParticleSystemsCreated;
-    char pad_1148[0x6];
+    char pad_1159[0x6];
     char m_vecAttachedParticles[0x18];
     char m_hViewmodelAttachment[0x4];
     int32_t m_iOldTeam;
     bool m_bAttachmentDirty;
-    char pad_1149[0x3];
+    char pad_1160[0x3];
     int32_t m_nUnloadedModelIndex;
     int32_t m_iNumOwnerValidationRetries;
-    char pad_1150[0xc];
+    char pad_1161[0xc];
     char m_hOldProvidee[0x4];
-    char pad_1151[0x4];
+    char pad_1162[0x4];
     char m_vecAttachedModels[0x18];
 };

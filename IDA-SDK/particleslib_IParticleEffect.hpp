@@ -4,5 +4,5 @@
 
 
 class particleslib_IParticleEffect {
-    char pad_1685[0x8];
+    char pad_1684[0x8];
 };

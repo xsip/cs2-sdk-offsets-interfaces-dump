@@ -3,12 +3,6 @@
 #include "typedefs.hpp"
 
 #include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
 
 class particles_TextureControls_t {
     particleslib_CParticleCollectionRendererFloatInput m_flFinalTextureScaleU;
@@ -20,7 +14,7 @@ class particles_TextureControls_t {
     particleslib_CParticleCollectionRendererFloatInput m_flDistortion;
     bool m_bRandomizeOffsets;
     bool m_bClampUVs;
-    char pad_2367[0x2];
+    char pad_2366[0x2];
     particles_SpriteCardPerParticleScale_t m_nPerParticleBlend;
     particles_SpriteCardPerParticleScale_t m_nPerParticleScale;
     particles_SpriteCardPerParticleScale_t m_nPerParticleOffsetU;

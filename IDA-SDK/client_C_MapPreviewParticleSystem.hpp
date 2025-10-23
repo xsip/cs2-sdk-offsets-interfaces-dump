@@ -13,16 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_MapPreviewParticleSystem {
     char vTable723[0x8];
@@ -185,11 +181,11 @@ class client_C_MapPreviewParticleSystem {
     char m_szSnapshotFileName[512];
     bool m_bActive;
     bool m_bFrozen;
-    char pad_1402[0x2];
+    char pad_1401[0x2];
     float32 m_flFreezeTransitionDuration;
     int32_t m_nStopType;
     bool m_bAnimateDuringGameplayPause;
-    char pad_1403[0x3];
+    char pad_1402[0x3];
     char m_iEffectIndex[0x8];
     entity2_GameTime_t m_flStartTime;
     float32 m_flPreSimTime;
@@ -206,8 +202,8 @@ class client_C_MapPreviewParticleSystem {
     Vector m_vecDataCPValue;
     int32_t m_nTintCP;
     Color m_clrTint;
-    char pad_1404[0x20];
+    char pad_1403[0x20];
     bool m_bOldActive;
     bool m_bOldFrozen;
-    char end_pad_1405[0x16];
+    char end_pad_1404[0x16];
 };

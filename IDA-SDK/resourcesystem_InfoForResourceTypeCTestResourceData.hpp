@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCTestResourceData {
-    char pad_2401[0x1];
+    char pad_2400[0x1];
 };

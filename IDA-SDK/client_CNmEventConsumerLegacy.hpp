@@ -4,6 +4,6 @@
 
 
 class client_CNmEventConsumerLegacy {
-    char pad_1008[0x10];
-    char pad_1011[0x10];
+    char pad_1019[0x10];
+    char pad_1022[0x10];
 };

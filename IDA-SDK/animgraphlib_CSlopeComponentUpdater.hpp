@@ -4,11 +4,6 @@
 
 #include "modellib_AnimComponentID.hpp"
 #include "animgraphlib_CAnimParamHandle.hpp"
-#include "animgraphlib_CAnimParamHandle.hpp"
-#include "animgraphlib_CAnimParamHandle.hpp"
-#include "animgraphlib_CAnimParamHandle.hpp"
-#include "animgraphlib_CAnimParamHandle.hpp"
-#include "animgraphlib_CAnimParamHandle.hpp"
 
 class animgraphlib_CSlopeComponentUpdater {
     char vTable10[0x18];

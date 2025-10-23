@@ -8,6 +8,6 @@ class client_RagdollCreationParams_t {
     int32_t m_nForceBone;
     bool m_bForceCurrentWorldTransform;
     bool m_bUseLRURetirement;
-    char pad_1641[0x2];
+    char pad_1640[0x2];
     int32_t m_nHealthToGrant;
 };

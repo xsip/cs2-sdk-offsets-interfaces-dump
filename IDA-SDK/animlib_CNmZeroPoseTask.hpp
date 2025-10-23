@@ -4,5 +4,5 @@
 
 
 class animlib_CNmZeroPoseTask {
-    char pad_1007[0x50];
+    char pad_1018[0x50];
 };

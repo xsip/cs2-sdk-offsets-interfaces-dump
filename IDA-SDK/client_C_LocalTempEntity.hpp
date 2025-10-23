@@ -14,17 +14,13 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "client_PhysicsRagdollPose_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_LocalTempEntity {
     char vTable723[0x8];
@@ -223,11 +219,11 @@ class client_C_LocalTempEntity {
     int32_t m_nFlickerFrame;
     float32 m_flFrameRate;
     float32 m_flFrame;
-    char pad_1469[0x4];
+    char pad_1468[0x4];
     char* m_pszImpactEffect;
     char* m_pszParticleEffect;
     bool m_bParticleCollision;
-    char pad_1470[0x3];
+    char pad_1469[0x3];
     int32_t m_iLastCollisionFrame;
     Vector m_vLastCollisionOrigin;
     Vector m_vecTempEntVelocity;

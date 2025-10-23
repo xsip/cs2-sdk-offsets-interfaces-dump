@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_EnvCubemapBox {
@@ -124,15 +121,15 @@ class client_C_EnvCubemapBox {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1387[0x80];
+    char vTable1386[0x80];
     char m_Entity_hCubemapTexture[0x8];
     bool m_Entity_bCustomCubemapTexture;
-    char pad_1388[0x3];
+    char pad_1387[0x3];
     float32 m_Entity_flInfluenceRadius;
     Vector m_Entity_vBoxProjectMins;
     Vector m_Entity_vBoxProjectMaxs;
     bool m_Entity_bMoveable;
-    char pad_1389[0x3];
+    char pad_1388[0x3];
     int32_t m_Entity_nHandshake;
     int32_t m_Entity_nEnvCubeMapArrayIndex;
     int32_t m_Entity_nPriority;
@@ -144,7 +141,7 @@ class client_C_EnvCubemapBox {
     bool m_Entity_bDefaultSpecEnvMap;
     bool m_Entity_bIndoorCubeMap;
     bool m_Entity_bCopyDiffuseFromDefaultCubemap;
-    char pad_1390[0xf];
+    char pad_1389[0xf];
     bool m_Entity_bEnabled;
-    char end_pad_1391[0x7];
+    char end_pad_1390[0x7];
 };

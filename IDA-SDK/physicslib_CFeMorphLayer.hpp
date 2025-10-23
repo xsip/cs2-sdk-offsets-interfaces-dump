@@ -6,7 +6,7 @@
 class physicslib_CFeMorphLayer {
     CUtlString m_Name;
     uint32_t m_nNameHash;
-    char pad_2424[0x4];
+    char pad_2423[0x4];
     char m_Nodes[0x18];
     char m_InitPos[0x18];
     char m_Gravity[0x18];

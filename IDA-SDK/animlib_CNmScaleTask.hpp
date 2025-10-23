@@ -4,6 +4,6 @@
 
 
 class animlib_CNmScaleTask {
-    char pad_1007[0x50];
-    char pad_1762[0x58];
+    char pad_1018[0x50];
+    char pad_1761[0x58];
 };

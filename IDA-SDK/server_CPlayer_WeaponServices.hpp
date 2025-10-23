@@ -5,13 +5,13 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class server_CPlayer_WeaponServices {
-    char vTable1197[0x8];
+    char vTable1208[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1198[0x10];
+    char pad_1209[0x10];
     char m_hMyWeapons[0x18];
     char m_hActiveWeapon[0x4];
     char m_hLastWeapon[0x4];
     uint16_t m_iAmmo[32];
     bool m_bPreventWeaponPickup;
-    char end_pad_3438[0x7];
+    char end_pad_3437[0x7];
 };

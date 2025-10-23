@@ -13,7 +13,7 @@ class worldrenderer_BakedLightingInfo_t {
     bool m_bSHLightmaps;
     uint8_t m_nChartPackIterations;
     uint8_t m_nVradQuality;
-    char pad_2495[0x2];
+    char pad_2494[0x2];
     char m_lightMaps[0x18];
     char m_bakedShadows[0x18];
 };

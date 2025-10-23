@@ -3,10 +3,6 @@
 #include "typedefs.hpp"
 
 #include "tier2_CRangeFloat.hpp"
-#include "tier2_CRangeFloat.hpp"
-#include "tier2_CRangeFloat.hpp"
-#include "tier2_CRangeFloat.hpp"
-#include "tier2_CRangeFloat.hpp"
 
 class animationsystem_MoodAnimationLayer_t {
     CUtlString m_sName;

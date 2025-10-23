@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCTypeScriptResource {
-    char pad_2402[0x1];
+    char pad_2401[0x1];
 };

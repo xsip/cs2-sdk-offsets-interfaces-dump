@@ -4,6 +4,6 @@
 
 
 class client_CInButtonState {
-    char vTable961[0x8];
+    char vTable972[0x8];
     uint64_t m_pButtonStates[3];
 };

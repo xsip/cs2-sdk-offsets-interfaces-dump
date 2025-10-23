@@ -14,6 +14,6 @@ class soundsystem_lowlevel_VMixDynamics3BandDesc_t {
     float32 m_flLowCutoffFreq;
     float32 m_flHighCutoffFreq;
     bool m_bPeakMode;
-    char pad_2461[0x3];
+    char pad_2460[0x3];
     soundsystem_lowlevel_VMixDynamicsBand_t m_bandDesc[3];
 };

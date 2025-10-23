@@ -9,7 +9,7 @@ class server_CCSPlayerController_InGameMoneyServices {
     entity2_CNetworkVarChainer __m_pChainEntity;
     char end_pad_855[0x10];
     bool m_bReceivesMoneyNextRound;
-    char pad_3378[0x3];
+    char pad_3377[0x3];
     int32_t m_iMoneyEarnedForNextRound;
     int32_t m_iAccount;
     int32_t m_iStartAccount;

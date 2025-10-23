@@ -13,21 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 
 class client_C_TriggerPhysics {
@@ -210,9 +201,9 @@ class client_C_TriggerPhysics {
     float32 m_flDampingRatio;
     Vector m_vecLinearForcePointAt;
     bool m_bCollapseToForcePoint;
-    char pad_1598[0x3];
+    char pad_1597[0x3];
     Vector m_vecLinearForcePointAtWorld;
     Vector m_vecLinearForceDirection;
     bool m_bConvertToDebrisWhenPossible;
-    char end_pad_1599[0x7];
+    char end_pad_1598[0x7];
 };

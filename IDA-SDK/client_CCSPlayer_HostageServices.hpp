@@ -5,9 +5,9 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class client_CCSPlayer_HostageServices {
-    char vTable1197[0x8];
+    char vTable1208[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1198[0x10];
+    char pad_1209[0x10];
     char m_hCarriedHostage[0x4];
     char m_hCarriedHostageProp[0x4];
 };

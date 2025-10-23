@@ -4,5 +4,5 @@
 
 
 class worldrenderer_InfoForResourceTypeVMapResourceData_t {
-    char pad_2486[0x1];
+    char pad_2485[0x1];
 };

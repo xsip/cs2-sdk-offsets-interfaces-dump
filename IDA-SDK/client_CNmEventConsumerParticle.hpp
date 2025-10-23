@@ -4,6 +4,6 @@
 
 
 class client_CNmEventConsumerParticle {
-    char pad_1008[0x10];
-    char pad_1012[0x20];
+    char pad_1019[0x10];
+    char pad_1023[0x20];
 };

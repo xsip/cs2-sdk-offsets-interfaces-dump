@@ -7,12 +7,11 @@ class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CParticleModelInput.hpp"
 #include "particleslib_CParticleTransformInput.hpp"
 #include "particles_ParticleAttributeIndex_t.hpp"
-#include "particles_ParticleAttributeIndex_t.hpp"
 #include "particleslib_CPerParticleVecInput.hpp"
 #include "particleslib_CPerParticleFloatInput.hpp"
 
 class particles_C_OP_LockToBone {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -21,18 +20,18 @@ class particles_C_OP_LockToBone {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     particleslib_CParticleModelInput m_modelInput;
     particleslib_CParticleTransformInput m_transformInput;
     float32 m_flLifeTimeFadeStart;
@@ -42,12 +41,12 @@ class particles_C_OP_LockToBone {
     char m_HitboxSetName[128];
     bool m_bRigid;
     bool m_bUseBones;
-    char pad_2087[0x2];
+    char pad_2086[0x2];
     particles_ParticleAttributeIndex_t m_nFieldOutput;
     particles_ParticleAttributeIndex_t m_nFieldOutputPrev;
     particles_ParticleRotationLockType_t m_nRotationSetType;
     bool m_bRigidRotationLock;
-    char pad_2088[0x7];
+    char pad_2087[0x7];
     particleslib_CPerParticleVecInput m_vecRotation;
     particleslib_CPerParticleFloatInput m_flRotLerp;
 };

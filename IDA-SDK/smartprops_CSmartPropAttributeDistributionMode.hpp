@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeDistributionMode {
-    char pad_2556[0x40];
+    char pad_2555[0x40];
 };

@@ -13,5 +13,5 @@ class client_ParticleNode_t {
     Vector m_vecGrowthOrigin;
     float32 m_flEndcapTime;
     bool m_bMarkedForDelete;
-    char end_pad_1636[0x3];
+    char end_pad_1635[0x3];
 };

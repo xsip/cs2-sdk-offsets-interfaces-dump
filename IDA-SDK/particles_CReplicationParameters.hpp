@@ -5,15 +5,12 @@
 class particleslib_CParticleCollectionFloatInput;
 class particleslib_CParticleCollectionVecInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particleslib_CParticleCollectionVecInput.hpp"
-#include "particleslib_CParticleCollectionVecInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
 
 class particles_CReplicationParameters {
     particles_ParticleReplicationMode_t m_nReplicationMode;
     bool m_bScaleChildParticleRadii;
-    char pad_2257[0x3];
+    char pad_2256[0x3];
     particleslib_CParticleCollectionFloatInput m_flMinRandomRadiusScale;
     particleslib_CParticleCollectionFloatInput m_flMaxRandomRadiusScale;
     particleslib_CParticleCollectionVecInput m_vMinRandomDisplacement;

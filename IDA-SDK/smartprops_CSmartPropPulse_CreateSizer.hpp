@@ -15,5 +15,5 @@ class smartprops_CSmartPropPulse_CreateSizer {
     bool m_bHACK_ProvideResultMaxY;
     bool m_bHACK_ProvideResultMinZ;
     bool m_bHACK_ProvideResultMaxZ;
-    char end_pad_2569[0x2];
+    char end_pad_2568[0x2];
 };

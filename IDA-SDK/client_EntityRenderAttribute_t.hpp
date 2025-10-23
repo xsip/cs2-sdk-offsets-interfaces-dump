@@ -4,8 +4,8 @@
 
 
 class client_EntityRenderAttribute_t {
-    char vTable1610[0x30];
+    char vTable1609[0x30];
     CUtlStringToken m_ID;
     Vector4D m_Values;
-    char end_pad_1611[0x4];
+    char end_pad_1610[0x4];
 };

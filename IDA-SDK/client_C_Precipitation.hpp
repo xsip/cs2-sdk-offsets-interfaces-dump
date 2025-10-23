@@ -13,21 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 #include "client_TimedEvent.hpp"
 
@@ -202,15 +193,15 @@ class client_C_Precipitation {
     bool m_bDisabled;
     char end_pad_785[0x3];
     float32 m_flDensity;
-    char pad_1530[0xc];
+    char pad_1529[0xc];
     float32 m_flParticleInnerDist;
-    char pad_1531[0x4];
+    char pad_1530[0x4];
     char* m_pParticleDef;
-    char pad_1532[0x20];
+    char pad_1531[0x20];
     client_TimedEvent m_tParticlePrecipTraceTimer[1];
     bool m_bActiveParticlePrecipEmitter[1];
     bool m_bParticlePrecipInitialized;
     bool m_bHasSimulatedSinceLastSceneObjectUpdate;
-    char pad_1533[0x1];
+    char pad_1532[0x1];
     int32_t m_nAvailableSheetSequencesMaxIndex;
 };

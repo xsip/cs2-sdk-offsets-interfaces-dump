@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeGridPlacementMode {
-    char pad_2550[0x40];
+    char pad_2549[0x40];
 };

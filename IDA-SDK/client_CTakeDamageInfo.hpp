@@ -5,7 +5,7 @@
 #include "client_AmmoIndex_t.hpp"
 
 class client_CTakeDamageInfo {
-    char vTable1105[0x8];
+    char vTable1116[0x8];
     Vector m_vecDamageForce;
     VectorWS m_vecDamagePosition;
     VectorWS m_vecReportedPosition;
@@ -18,18 +18,18 @@ class client_CTakeDamageInfo {
     client_DamageTypes_t m_bitsDamageType;
     int32_t m_iDamageCustom;
     client_AmmoIndex_t m_iAmmoType;
-    char pad_1106[0xb];
+    char pad_1117[0xb];
     float32 m_flOriginalDamage;
     bool m_bShouldBleed;
     bool m_bShouldSpark;
-    char pad_1107[0xa];
+    char pad_1118[0xa];
     client_TakeDamageFlags_t m_nDamageFlags;
     CGlobalSymbol m_sDamageSourceName;
     client_HitGroup_t m_iHitGroupId;
     int32_t m_nNumObjectsPenetrated;
     float32 m_flFriendlyFireDamageReductionRatio;
-    char pad_1108[0x7c];
+    char pad_1119[0x7c];
     char m_nDestructibleHitGroupsToForceDestroy[0x18];
     bool m_bInTakeDamageFlow;
-    char pad_1109[0x7];
+    char pad_1120[0x7];
 };

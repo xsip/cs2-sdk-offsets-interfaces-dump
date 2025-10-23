@@ -4,7 +4,6 @@
 
 #include "animgraphlib_IKBoneNameAndIndex_t.hpp"
 #include "modellib_AnimParamID.hpp"
-#include "modellib_AnimParamID.hpp"
 
 class animgraphlib_IKTargetSettings_t {
     animgraphlib_IKTargetSource m_TargetSource;

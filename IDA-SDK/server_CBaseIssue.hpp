@@ -5,7 +5,7 @@
 class server_CVoteController;
 
 class server_CBaseIssue {
-    char vTable2718[0x20];
+    char vTable2717[0x20];
     char m_szTypeString[64];
     char m_szDetailsString[260];
     int32_t m_iNumYesVotes;

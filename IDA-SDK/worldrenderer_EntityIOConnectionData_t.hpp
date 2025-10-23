@@ -6,7 +6,7 @@
 class worldrenderer_EntityIOConnectionData_t {
     CUtlString m_outputName;
     uint32_t m_targetType;
-    char pad_2481[0x4];
+    char pad_2480[0x4];
     CUtlString m_targetName;
     CUtlString m_inputName;
     CUtlString m_overrideParam;

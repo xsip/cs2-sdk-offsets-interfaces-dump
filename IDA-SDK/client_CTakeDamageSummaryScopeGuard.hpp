@@ -4,6 +4,6 @@
 
 
 class client_CTakeDamageSummaryScopeGuard {
-    char vTable1110[0x8];
+    char vTable1121[0x8];
     char m_vecSummaries[0x18];
 };

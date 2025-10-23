@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -181,11 +178,11 @@ class client_C_BaseClientUIEntity {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1044[0x8];
+    char vTable1055[0x8];
     bool m_bEnabled;
-    char pad_1045[0x7];
+    char pad_1056[0x7];
     CUtlSymbolLarge m_DialogXMLName;
     CUtlSymbolLarge m_PanelClassName;
     CUtlSymbolLarge m_PanelID;
-    char end_pad_1046[0x8];
+    char end_pad_1057[0x8];
 };

@@ -7,7 +7,7 @@ class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CPerParticleFloatInput.hpp"
 
 class particles_C_INIT_InitSkinnedPositionFromCPSnapshot {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -16,29 +16,29 @@ class particles_C_INIT_InitSkinnedPositionFromCPSnapshot {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     int32_t m_nAssociatedEmitterIndex;
-    char end_pad_1806[0x4];
+    char end_pad_1805[0x4];
     int32_t m_nSnapshotControlPointNumber;
     int32_t m_nControlPointNumber;
     bool m_bRandom;
-    char pad_1905[0x3];
+    char pad_1904[0x3];
     int32_t m_nRandomSeed;
     bool m_bRigid;
     bool m_bSetNormal;
     bool m_bIgnoreDt;
-    char pad_1906[0x1];
+    char pad_1905[0x1];
     float32 m_flMinNormalVelocity;
     float32 m_flMaxNormalVelocity;
     particles_SnapshotIndexType_t m_nIndexType;
@@ -51,5 +51,5 @@ class particles_C_INIT_InitSkinnedPositionFromCPSnapshot {
     bool m_bCopyColor;
     bool m_bCopyAlpha;
     bool m_bSetRadius;
-    char end_pad_1907[0x1];
+    char end_pad_1906[0x1];
 };

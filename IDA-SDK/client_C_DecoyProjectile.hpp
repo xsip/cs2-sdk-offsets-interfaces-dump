@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -26,14 +23,8 @@ class client_CBaseAnimGraph;
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_SceneEventId_t.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "client_Emphasized_Phoneme.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_ParticleIndex_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_DecoyProjectile {
     char vTable723[0x8];
@@ -215,52 +206,52 @@ class client_C_DecoyProjectile {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1153[0x10];
+    char vTable1164[0x10];
     char m_flexWeight[0x18];
     VectorWS m_vLookTargetPosition;
-    char pad_1154[0x84];
+    char pad_1165[0x84];
     bool m_blinktoggle;
-    char pad_1155[0x5f];
+    char pad_1166[0x5f];
     int32_t m_nLastFlexUpdateFrameCount;
     Vector m_CachedViewTarget;
     client_SceneEventId_t m_nNextSceneEventId;
     int32_t m_iBlink;
     float32 m_blinktime;
     bool m_prevblinktoggle;
-    char pad_1156[0x3];
+    char pad_1167[0x3];
     int32_t m_iJawOpen;
     float32 m_flJawOpenAmount;
     float32 m_flBlinkAmount;
     modellib_AttachmentHandle_t m_iMouthAttachment;
     modellib_AttachmentHandle_t m_iEyeAttachment;
     bool m_bResetFlexWeightsOnModelChange;
-    char pad_1157[0x19];
+    char pad_1168[0x19];
     int32_t m_nEyeOcclusionRendererBone;
     matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform;
     Vector m_vEyeOcclusionRendererHalfExtent;
-    char pad_1158[0x10];
+    char pad_1169[0x10];
     client_Emphasized_Phoneme m_PhonemeClasses[3];
     bool m_bHasWarnedAI;
     bool m_bIsSmokeGrenade;
     bool m_bIsLive;
-    char pad_1181[0x1];
+    char pad_1192[0x1];
     float32 m_DmgRadius;
     entity2_GameTime_t m_flDetonateTime;
     float32 m_flWarnAITime;
     float32 m_flDamage;
-    char pad_1182[0x4];
+    char pad_1193[0x4];
     CUtlSymbolLarge m_iszBounceSound;
     CUtlString m_ExplosionSound;
-    char pad_1183[0x4];
+    char pad_1194[0x4];
     char m_hThrower[0x4];
-    char pad_1184[0x14];
+    char pad_1195[0x14];
     entity2_GameTime_t m_flNextAttack;
     char m_hOriginalThrower[0x4];
-    char end_pad_1185[0x4];
+    char end_pad_1196[0x4];
     Vector m_vInitialPosition;
     Vector m_vInitialVelocity;
     int32_t m_nBounces;
-    char pad_1177[0x4];
+    char pad_1188[0x4];
     char m_nExplodeEffectIndex[0x8];
     int32_t m_nExplodeEffectTickBegin;
     Vector m_vecExplodeEffectOrigin;
@@ -269,17 +260,17 @@ class client_C_DecoyProjectile {
     entity2_GameTime_t flNextTrailLineTime;
     bool m_bExplodeEffectBegan;
     bool m_bCanCreateGrenadeTrail;
-    char pad_1178[0x2];
+    char pad_1189[0x2];
     client_ParticleIndex_t m_nSnapshotTrajectoryEffectIndex;
-    char pad_1179[0x4];
+    char pad_1190[0x4];
     char m_hSnapshotTrajectoryParticleSnapshot[0x8];
     char m_arrTrajectoryTrailPoints[0x18];
     char m_arrTrajectoryTrailPointCreationTimes[0x18];
     float32 m_flTrajectoryTrailEffectCreationTime;
-    char end_pad_1180[0x4];
+    char end_pad_1191[0x4];
     int32_t m_nDecoyShotTick;
     int32_t m_nClientLastKnownDecoyShotTick;
-    char pad_1362[0x20];
+    char pad_1361[0x20];
     entity2_GameTime_t m_flTimeParticleEffectSpawn;
-    char end_pad_1363[0x4];
+    char end_pad_1362[0x4];
 };

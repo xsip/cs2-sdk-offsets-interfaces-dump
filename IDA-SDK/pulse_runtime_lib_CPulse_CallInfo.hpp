@@ -4,7 +4,6 @@
 
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_PulseRegisterMap_t.hpp"
-#include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_PulseRuntimeChunkIndex_t.hpp"
 
 class pulse_runtime_lib_CPulse_CallInfo {

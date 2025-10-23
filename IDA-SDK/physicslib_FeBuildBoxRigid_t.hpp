@@ -10,9 +10,9 @@ class physicslib_FeBuildBoxRigid_t {
     Vector vSize;
     uint16_t nVertexMapIndex;
     uint16_t nFlags;
-    char end_pad_2428[0xc];
+    char end_pad_2427[0xc];
     int32_t m_nPriority;
     uint32_t m_nVertexMapHash;
     uint32_t m_nAntitunnelGroupBits;
-    char end_pad_2429[0x4];
+    char end_pad_2428[0x4];
 };

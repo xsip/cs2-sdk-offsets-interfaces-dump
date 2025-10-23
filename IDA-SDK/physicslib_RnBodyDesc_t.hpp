@@ -41,5 +41,5 @@ class physicslib_RnBodyDesc_t {
     bool m_bSpeculativeEnabled;
     bool m_bHasShadowController;
     physicslib_DynamicContinuousContactBehavior_t m_nDynamicContinuousContactBehavior;
-    char end_pad_2451[0x5];
+    char end_pad_2450[0x5];
 };

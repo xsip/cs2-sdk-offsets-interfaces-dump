@@ -9,6 +9,6 @@ class soundsystem_lowlevel_VMixUtilityDesc_t {
     float32 m_flOutputBalance;
     float32 m_fldbOutputGain;
     bool m_bBassMono;
-    char pad_2468[0x3];
+    char pad_2467[0x3];
     float32 m_flBassFreq;
 };

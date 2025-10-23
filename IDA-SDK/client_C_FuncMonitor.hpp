@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -185,10 +182,10 @@ class client_C_FuncMonitor {
     int32_t m_nResolutionEnum;
     bool m_bRenderShadows;
     bool m_bUseUniqueColorTarget;
-    char pad_1436[0x2];
+    char pad_1435[0x2];
     CUtlString m_brushModelName;
     char m_hTargetCamera[0x4];
     bool m_bEnabled;
     bool m_bDraw3DSkybox;
-    char end_pad_1437[0x4a2];
+    char end_pad_1436[0x4a2];
 };

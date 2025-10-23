@@ -14,5 +14,5 @@ class soundsystem_lowlevel_VMixVocoderDesc_t {
     float32 m_flReleaseTimeMS;
     int32_t m_nDebugBand;
     bool m_bPeakMode;
-    char end_pad_2469[0x3];
+    char end_pad_2468[0x3];
 };

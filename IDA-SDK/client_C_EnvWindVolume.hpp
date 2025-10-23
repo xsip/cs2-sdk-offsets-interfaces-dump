@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_EnvWindVolume {
@@ -125,15 +122,15 @@ class client_C_EnvWindVolume {
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
     bool m_bActive;
-    char pad_1418[0x3];
+    char pad_1417[0x3];
     Vector m_vBoxMins;
     Vector m_vBoxMaxs;
     bool m_bStartDisabled;
-    char pad_1419[0x3];
+    char pad_1418[0x3];
     int32_t m_nShape;
     float32 m_fWindSpeedMultiplier;
     float32 m_fWindTurbulenceMultiplier;
     float32 m_fWindSpeedVariationMultiplier;
     float32 m_fWindDirectionVariationMultiplier;
-    char end_pad_1420[0x4];
+    char end_pad_1419[0x4];
 };

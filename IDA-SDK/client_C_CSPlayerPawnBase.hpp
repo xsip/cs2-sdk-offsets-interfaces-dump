@@ -24,10 +24,7 @@ class client_CCSPlayer_PingServices;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -36,17 +33,8 @@ class client_CCSPlayer_PingServices;
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_SceneEventId_t.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "client_Emphasized_Phoneme.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "client_sky3dparams_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_CSPlayerPawnBase {
     char vTable723[0x8];
@@ -228,39 +216,39 @@ class client_C_CSPlayerPawnBase {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1153[0x10];
+    char vTable1164[0x10];
     char m_flexWeight[0x18];
     VectorWS m_vLookTargetPosition;
-    char pad_1154[0x84];
+    char pad_1165[0x84];
     bool m_blinktoggle;
-    char pad_1155[0x5f];
+    char pad_1166[0x5f];
     int32_t m_nLastFlexUpdateFrameCount;
     Vector m_CachedViewTarget;
     client_SceneEventId_t m_nNextSceneEventId;
     int32_t m_iBlink;
     float32 m_blinktime;
     bool m_prevblinktoggle;
-    char pad_1156[0x3];
+    char pad_1167[0x3];
     int32_t m_iJawOpen;
     float32 m_flJawOpenAmount;
     float32 m_flBlinkAmount;
     modellib_AttachmentHandle_t m_iMouthAttachment;
     modellib_AttachmentHandle_t m_iEyeAttachment;
     bool m_bResetFlexWeightsOnModelChange;
-    char pad_1157[0x19];
+    char pad_1168[0x19];
     int32_t m_nEyeOcclusionRendererBone;
     matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform;
     Vector m_vEyeOcclusionRendererHalfExtent;
-    char pad_1158[0x10];
+    char pad_1169[0x10];
     client_Emphasized_Phoneme m_PhonemeClasses[3];
     char m_hMyWearables[0x18];
     modellib_AttachmentHandle_t m_leftFootAttachment;
     modellib_AttachmentHandle_t m_rightFootAttachment;
-    char pad_1186[0x2];
+    char pad_1197[0x2];
     client_WaterWakeMode_t m_nWaterWakeMode;
     float32 m_flWaterWorldZ;
     float32 m_flWaterNextTraceTime;
-    char end_pad_1187[0x60];
+    char end_pad_1198[0x60];
     client_CPlayer_WeaponServices* m_pWeaponServices;
     client_CPlayer_ItemServices* m_pItemServices;
     client_CPlayer_AutoaimServices* m_pAutoaimServices;
@@ -270,17 +258,17 @@ class client_C_CSPlayerPawnBase {
     client_CPlayer_FlashlightServices* m_pFlashlightServices;
     client_CPlayer_CameraServices* m_pCameraServices;
     client_CPlayer_MovementServices* m_pMovementServices;
-    char pad_1192[0x8];
+    char pad_1203[0x8];
     char m_ServerViewAngleChanges[0x68];
     QAngle v_angle;
     QAngle v_anglePrevious;
     uint32_t m_iHideHUD;
-    char pad_1193[0x4];
+    char pad_1204[0x4];
     client_sky3dparams_t m_skybox3d;
     entity2_GameTime_t m_flDeathTime;
     Vector m_vecPredictionError;
     entity2_GameTime_t m_flPredictionErrorTime;
-    char pad_1194[0x1c];
+    char pad_1205[0x1c];
     Vector m_vecLastCameraSetupLocalOrigin;
     entity2_GameTime_t m_flLastCameraSetupTime;
     float32 m_flFOVSensitivityAdjust;
@@ -292,13 +280,13 @@ class client_C_CSPlayerPawnBase {
     char m_hController[0x4];
     char m_hDefaultController[0x4];
     bool m_bIsSwappingToPredictableController;
-    char end_pad_1195[0x7];
-    char vTable1290[0x10];
+    char end_pad_1206[0x7];
+    char vTable1289[0x10];
     client_CCSPlayer_PingServices* m_pPingServices;
     client_CSPlayerState m_previousPlayerState;
     client_CSPlayerState m_iPlayerState;
     bool m_bHasMovedSinceSpawn;
-    char pad_1291[0x3];
+    char pad_1290[0x3];
     entity2_GameTime_t m_flLastSpawnTimeIndex;
     int32_t m_iProgressBarDuration;
     float32 m_flProgressBarStartTime;
@@ -309,21 +297,21 @@ class client_C_CSPlayerPawnBase {
     bool m_bFlashBuildUp;
     bool m_bFlashDspHasBeenCleared;
     bool m_bFlashScreenshotHasBeenGrabbed;
-    char pad_1292[0x1];
+    char pad_1291[0x1];
     float32 m_flFlashMaxAlpha;
     float32 m_flFlashDuration;
     entity2_GameTime_t m_flClientHealthFadeChangeTimestamp;
     int32_t m_nClientHealthFadeParityValue;
     float32 m_fNextThinkPushAway;
-    char pad_1293[0x4];
+    char pad_1292[0x4];
     float32 m_flCurrentMusicStartTime;
     float32 m_flMusicRoundStartTime;
     bool m_bDeferStartMusicOnWarmup;
-    char pad_1294[0x3];
+    char pad_1293[0x3];
     float32 m_flLastSmokeOverlayAlpha;
     float32 m_flLastSmokeAge;
     Vector m_vLastSmokeOverlayColor;
-    char pad_1295[0x1c];
+    char pad_1294[0x1c];
     char m_hOriginalController[0x4];
-    char end_pad_1296[0x4];
+    char end_pad_1295[0x4];
 };

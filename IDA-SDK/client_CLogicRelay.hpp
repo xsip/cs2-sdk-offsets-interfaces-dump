@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_CLogicRelay {
@@ -129,5 +126,5 @@ class client_CLogicRelay {
     bool m_bTriggerOnce;
     bool m_bFastRetrigger;
     bool m_bPassthoughCaller;
-    char end_pad_986[0x3];
+    char end_pad_997[0x3];
 };

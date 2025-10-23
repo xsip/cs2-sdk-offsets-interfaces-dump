@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -186,7 +183,7 @@ class client_C_EnvSky {
     bool m_bStartDisabled;
     Color m_vTintColor;
     Color m_vTintColorLightingOnly;
-    char pad_1406[0x3];
+    char pad_1405[0x3];
     float32 m_flBrightnessScale;
     int32_t m_nFogType;
     float32 m_flFogMinStart;
@@ -194,5 +191,5 @@ class client_C_EnvSky {
     float32 m_flFogMaxStart;
     float32 m_flFogMaxEnd;
     bool m_bEnabled;
-    char end_pad_1407[0x2b];
+    char end_pad_1406[0x2b];
 };

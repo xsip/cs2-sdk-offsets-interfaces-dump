@@ -5,8 +5,8 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class server_CCSGameModeRules_ArmsRace {
-    char vTable3221[0x8];
+    char vTable3220[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
     char m_WeaponSequence[0x18];
-    char end_pad_3222[0x40];
+    char end_pad_3221[0x40];
 };

@@ -11,12 +11,8 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_PointValueRemapper {
     char vTable723[0x8];
@@ -128,7 +124,7 @@ class client_C_PointValueRemapper {
     bool m_bDisabled;
     bool m_bDisabledOld;
     bool m_bUpdateOnClient;
-    char pad_1519[0x1];
+    char pad_1518[0x1];
     client_ValueRemapperInputType_t m_nInputType;
     char m_hRemapLineStart[0x4];
     char m_hRemapLineEnd[0x4];
@@ -136,9 +132,9 @@ class client_C_PointValueRemapper {
     float32 m_flDisengageDistance;
     float32 m_flEngageDistance;
     bool m_bRequiresUseKey;
-    char pad_1520[0x3];
+    char pad_1519[0x3];
     client_ValueRemapperOutputType_t m_nOutputType;
-    char pad_1521[0x4];
+    char pad_1520[0x4];
     char m_hOutputEntities[0x18];
     client_ValueRemapperHapticsType_t m_nHapticsType;
     client_ValueRemapperMomentumType_t m_nMomentumType;
@@ -150,7 +146,7 @@ class client_C_PointValueRemapper {
     float32 m_flInputOffset;
     bool m_bEngaged;
     bool m_bFirstUpdate;
-    char pad_1522[0x2];
+    char pad_1521[0x2];
     float32 m_flPreviousValue;
     entity2_GameTime_t m_flPreviousUpdateTickTime;
     Vector m_vecPreviousTestPoint;

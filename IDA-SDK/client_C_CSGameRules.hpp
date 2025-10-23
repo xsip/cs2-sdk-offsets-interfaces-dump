@@ -5,23 +5,17 @@
 class client_CCSGameModeRules;
 #include "entity2_CNetworkVarChainer.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_C_RetakeGameRules.hpp"
 
 class client_C_CSGameRules {
-    char vTable1287[0x8];
+    char vTable1286[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
     int32_t m_nTotalPausedTicks;
     int32_t m_nPauseStartTick;
     bool m_bGamePaused;
-    char pad_1288[0x7];
-    char pad_1286[0x40];
+    char pad_1287[0x7];
     char pad_1285[0x40];
+    char pad_1284[0x40];
     bool m_bFreezePeriod;
     bool m_bWarmupPeriod;
     char pad_1266[0x2];
@@ -37,6 +31,7 @@ class client_C_CSGameRules {
     bool m_bTechnicalTimeOut;
     bool m_bMatchWaitingForResume;
     char pad_1268[0x2];
+    int32_t m_iFreezeTime;
     int32_t m_iRoundTime;
     float32 m_fMatchStartTime;
     entity2_GameTime_t m_fRoundStartTime;
@@ -97,30 +92,29 @@ class client_C_CSGameRules {
     Vector m_vMinimapMins;
     Vector m_vMinimapMaxs;
     float32 m_MinimapVerticalSectionHeights[8];
-    char pad_1276[0x4];
     uint64_t m_ullLocalMatchID;
     int32_t m_nEndMatchMapGroupVoteTypes[10];
     int32_t m_nEndMatchMapGroupVoteOptions[10];
     int32_t m_nEndMatchMapVoteWinner;
     int32_t m_iNumConsecutiveCTLoses;
     int32_t m_iNumConsecutiveTerroristLoses;
-    char pad_1277[0xbc];
+    char pad_1276[0xbc];
     int32_t m_nMatchAbortedEarlyReason;
     bool m_bHasTriggeredRoundStartMusic;
     bool m_bSwitchingTeamsAtRoundReset;
-    char pad_1278[0x1a];
+    char pad_1277[0x1a];
     client_CCSGameModeRules* m_pGameModeRules;
     client_C_RetakeGameRules m_RetakeRules;
     uint8_t m_nMatchEndCount;
-    char pad_1279[0x3];
+    char pad_1278[0x3];
     int32_t m_nTTeamIntroVariant;
     int32_t m_nCTTeamIntroVariant;
     bool m_bTeamIntroPeriod;
-    char pad_1280[0x3];
+    char pad_1279[0x3];
     int32_t m_iRoundEndWinnerTeam;
     int32_t m_eRoundEndReason;
     bool m_bRoundEndShowTimerDefend;
-    char pad_1281[0x3];
+    char pad_1280[0x3];
     int32_t m_iRoundEndTimerTime;
     CUtlString m_sRoundEndFunFactToken;
     CPlayerSlot m_iRoundEndFunFactPlayerSlot;
@@ -130,12 +124,12 @@ class client_C_CSGameRules {
     CUtlString m_sRoundEndMessage;
     int32_t m_iRoundEndPlayerCount;
     bool m_bRoundEndNoMusic;
-    char pad_1282[0x3];
+    char pad_1281[0x3];
     int32_t m_iRoundEndLegacy;
     uint8_t m_nRoundEndCount;
-    char pad_1283[0x3];
+    char pad_1282[0x3];
     int32_t m_iRoundStartRoundNumber;
     uint8_t m_nRoundStartCount;
-    char pad_1284[0x400b];
+    char pad_1283[0x400b];
     float64 m_flLastPerfSampleTime;
 };

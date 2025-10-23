@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -26,10 +23,6 @@ class client_CBaseAnimGraph;
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_CPropDataComponent.hpp"
 #include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_BreakableProp {
     char vTable723[0x8];
@@ -231,16 +224,16 @@ class client_C_BreakableProp {
     client_PerformanceMode_t m_PerformanceMode;
     entity2_GameTime_t m_flPreventDamageBeforeTime;
     client_BreakableContentsType_t m_BreakableContentsType;
-    char pad_1209[0x4];
+    char pad_939[0x4];
     CUtlString m_strBreakableContentsPropGroupOverride;
     CUtlString m_strBreakableContentsParticleOverride;
     bool m_bHasBreakPiecesOrCommands;
-    char pad_1210[0x3];
+    char pad_940[0x3];
     float32 m_explodeDamage;
     float32 m_explodeRadius;
-    char pad_1211[0x4];
+    char pad_941[0x4];
     float32 m_explosionDelay;
-    char pad_1212[0x4];
+    char pad_942[0x4];
     CUtlSymbolLarge m_explosionBuildupSound;
     CUtlSymbolLarge m_explosionCustomEffect;
     CUtlSymbolLarge m_explosionCustomSound;
@@ -249,5 +242,5 @@ class client_C_BreakableProp {
     entity2_GameTime_t m_flLastPhysicsInfluenceTime;
     float32 m_flDefaultFadeScale;
     char m_hLastAttacker[0x4];
-    char end_pad_1213[0x8];
+    char end_pad_943[0x8];
 };

@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_TonemapController2 {
@@ -129,5 +126,5 @@ class client_C_TonemapController2 {
     float32 m_flExposureAdaptationSpeedUp;
     float32 m_flExposureAdaptationSpeedDown;
     float32 m_flTonemapEVSmoothingRange;
-    char end_pad_1596[0x4];
+    char end_pad_1595[0x4];
 };

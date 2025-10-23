@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -181,18 +178,18 @@ class client_C_PointClientUIHUD {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1044[0x8];
+    char vTable1055[0x8];
     bool m_bEnabled;
-    char pad_1045[0x7];
+    char pad_1056[0x7];
     CUtlSymbolLarge m_DialogXMLName;
     CUtlSymbolLarge m_PanelClassName;
     CUtlSymbolLarge m_PanelID;
-    char end_pad_1046[0x8];
-    char vTable1511[0x8];
+    char end_pad_1057[0x8];
+    char vTable1510[0x8];
     bool m_bCheckCSSClasses;
-    char pad_1512[0x177];
+    char pad_1511[0x177];
     bool m_bIgnoreInput;
-    char pad_1513[0x3];
+    char pad_1512[0x3];
     float32 m_flWidth;
     float32 m_flHeight;
     float32 m_flDPI;
@@ -203,6 +200,6 @@ class client_C_PointClientUIHUD {
     uint32_t m_unVerticalAlign;
     uint32_t m_unOrientation;
     bool m_bAllowInteractionFromAllSceneWorlds;
-    char pad_1514[0x7];
+    char pad_1513[0x7];
     char m_vecCSSClasses[0x18];
 };

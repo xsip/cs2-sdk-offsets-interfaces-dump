@@ -4,5 +4,5 @@
 
 
 class client_EventModInitialized_t {
-    char pad_1623[0x1];
+    char pad_1622[0x1];
 };

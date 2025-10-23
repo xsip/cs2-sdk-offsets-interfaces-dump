@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeIParticleSnapshot {
-    char pad_2380[0x1];
+    char pad_2379[0x1];
 };

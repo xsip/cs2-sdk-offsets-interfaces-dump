@@ -4,7 +4,7 @@
 
 
 class server_CDamageRecord {
-    char vTable3472[0x30];
+    char vTable3471[0x30];
     char m_PlayerDamager[0x4];
     char m_PlayerRecipient[0x4];
     char m_hPlayerControllerDamager[0x4];
@@ -20,5 +20,5 @@ class server_CDamageRecord {
     int32_t m_iLastBulletUpdate;
     bool m_bIsOtherEnemy;
     client_EKillTypes_t m_killType;
-    char end_pad_3473[0x2];
+    char end_pad_3472[0x2];
 };

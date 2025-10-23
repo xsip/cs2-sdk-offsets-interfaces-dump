@@ -8,7 +8,7 @@ class worldrenderer_WorldBuilderParams_t {
     float32 m_flMinDrawVolumeSize;
     bool m_bBuildBakedLighting;
     bool m_bAggregateInstanceStreams;
-    char pad_2497[0x2];
+    char pad_2496[0x2];
     worldrenderer_BakedLightingInfo_t m_bakedLightingInfo;
     uint64_t m_nCompileTimestamp;
     uint64_t m_nCompileFingerprint;

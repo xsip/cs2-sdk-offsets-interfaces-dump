@@ -39,5 +39,5 @@ class physicslib_CFeJiggleBone {
     Vector m_vPoint0;
     Vector m_vPoint1;
     uint16_t m_nCollisionMask;
-    char end_pad_2423[0x2];
+    char end_pad_2422[0x2];
 };

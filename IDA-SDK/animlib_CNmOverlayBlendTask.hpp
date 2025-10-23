@@ -4,6 +4,6 @@
 
 
 class animlib_CNmOverlayBlendTask {
-    char pad_1007[0x50];
-    char pad_1723[0x88];
+    char pad_1018[0x50];
+    char pad_1722[0x88];
 };

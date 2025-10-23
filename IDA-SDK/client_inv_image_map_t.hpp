@@ -6,5 +6,5 @@
 class client_inv_image_map_t {
     CUtlString map_name;
     float32 map_rotation;
-    char end_pad_1667[0x4];
+    char end_pad_1666[0x4];
 };

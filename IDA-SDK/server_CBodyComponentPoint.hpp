@@ -9,9 +9,9 @@ class server_CGameSceneNode;
 class server_CBodyComponentPoint {
     char pad_770[0x8];
     server_CGameSceneNode* m_pSceneNode;
-    char pad_2994[0x38];
+    char pad_2993[0x38];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char end_pad_2995[0x8];
-    char vTable3015[0x8];
+    char end_pad_2994[0x8];
+    char vTable3014[0x8];
     server_CGameSceneNode m_sceneNode;
 };

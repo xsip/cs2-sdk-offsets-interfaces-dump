@@ -6,8 +6,8 @@
 
 class particles_CPAssignment_t {
     int32_t m_nCPNumber;
-    char pad_1809[0x4];
+    char pad_1808[0x4];
     particleslib_CPerParticleVecInput m_Pos;
     particles_ParticleOrientationSetMode_t m_nOrientationMode;
-    char end_pad_1810[0x4];
+    char end_pad_1809[0x4];
 };

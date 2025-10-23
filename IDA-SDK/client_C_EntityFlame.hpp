@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_EntityFlame {
@@ -125,8 +122,8 @@ class client_C_EntityFlame {
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
     char m_hEntAttached[0x4];
-    char pad_1379[0x24];
+    char pad_1378[0x24];
     char m_hOldAttached[0x4];
     bool m_bCheapEffect;
-    char end_pad_1380[0x1b];
+    char end_pad_1379[0x1b];
 };

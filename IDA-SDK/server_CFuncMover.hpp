@@ -12,31 +12,12 @@ class server_CDestructiblePartsComponent;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "server_CHitboxComponent.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "server_CCollisionProperty.hpp"
 #include "server_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 
 class server_CFuncMover {
     char vTable723[0x8];
@@ -46,28 +27,28 @@ class server_CFuncMover {
     entity2_CScriptComponent* m_CScriptComponent;
     server_CBodyComponent* m_CBodyComponent;
     client_CNetworkTransmitComponent m_NetworkTransmitComponent;
-    char pad_2794[0x40];
+    char pad_2793[0x40];
     char m_aThinkFunctions[0x18];
     int32_t m_iCurrentThinkContext;
     entity2_GameTick_t m_nLastThinkTick;
     bool m_bDisabledContextThinks;
-    char pad_2795[0xf];
+    char pad_2794[0xf];
     char m_isSteadyState[0x8];
     float32 m_lastNetworkChange;
-    char pad_2796[0xc];
+    char pad_2795[0xc];
     char m_ResponseContexts[0x18];
     CUtlSymbolLarge m_iszResponseContext;
-    char pad_2797[0x20];
+    char pad_2796[0x20];
     int32_t m_iHealth;
     int32_t m_iMaxHealth;
     uint8_t m_lifeState;
-    char pad_2798[0x3];
+    char pad_2797[0x3];
     float32 m_flDamageAccumulator;
     bool m_bTakesDamage;
-    char pad_2799[0x7];
+    char pad_2798[0x7];
     client_TakeDamageFlags_t m_nTakeDamageFlags;
     client_EntityPlatformTypes_t m_nPlatformType;
-    char pad_2800[0x1];
+    char pad_2799[0x1];
     client_MoveCollide_t m_MoveCollide;
     client_MoveType_t m_MoveType;
     client_MoveType_t m_nActualMoveType;
@@ -76,20 +57,20 @@ class server_CFuncMover {
     bool m_bRestoreInHierarchy;
     CUtlSymbolLarge m_target;
     char m_hDamageFilter[0x4];
-    char pad_2801[0x4];
+    char pad_2800[0x4];
     CUtlSymbolLarge m_iszDamageFilterName;
     float32 m_flMoveDoneTime;
     CUtlStringToken m_nSubclassID;
-    char pad_2802[0x8];
+    char pad_2801[0x8];
     float32 m_flAnimTime;
     float32 m_flSimulationTime;
     entity2_GameTime_t m_flCreateTime;
     bool m_bClientSideRagdoll;
     uint8_t m_ubInterpolationFrame;
-    char pad_2803[0x2];
+    char pad_2802[0x2];
     Vector m_vPrevVPhysicsUpdatePos;
     uint8_t m_iTeamNum;
-    char pad_2804[0x3];
+    char pad_2803[0x3];
     CUtlSymbolLarge m_iGlobalname;
     int32_t m_iSentToClients;
     float32 m_flSpeed;
@@ -97,12 +78,12 @@ class server_CFuncMover {
     uint32_t m_spawnflags;
     entity2_GameTick_t m_nNextThinkTick;
     int32_t m_nSimulationTick;
-    char pad_2805[0x4];
+    char pad_2804[0x4];
     entity2_CEntityIOOutput m_OnKilled;
     uint32_t m_fFlags;
     Vector m_vecAbsVelocity;
     client_CNetworkVelocityVector m_vecVelocity;
-    char pad_2806[0x8];
+    char pad_2805[0x8];
     Vector m_vecBaseVelocity;
     int32_t m_nPushEnumCount;
     server_CCollisionProperty* m_pCollision;
@@ -118,12 +99,12 @@ class server_CFuncMover {
     float32 m_flWaterLevel;
     bool m_bGravityDisabled;
     bool m_bAnimatedEveryTick;
-    char pad_2807[0x2];
+    char pad_2806[0x2];
     float32 m_flActualGravityScale;
     bool m_bGravityActuallyDisabled;
     bool m_bDisableLowViolence;
     uint8_t m_nWaterType;
-    char pad_2808[0x1];
+    char pad_2807[0x1];
     int32_t m_iEFlags;
     entity2_CEntityIOOutput m_OnUser1;
     entity2_CEntityIOOutput m_OnUser2;
@@ -134,7 +115,7 @@ class server_CFuncMover {
     QAngle m_vecAngVelocity;
     bool m_bNetworkQuantizeOriginAndAngles;
     bool m_bLagCompensate;
-    char pad_2809[0x2];
+    char pad_2808[0x2];
     char m_pBlocker[0x4];
     float32 m_flLocalTime;
     float32 m_flVPhysicsUpdateLocalTime;
@@ -154,7 +135,7 @@ class server_CFuncMover {
     int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex;
     server_CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent;
     client_HitGroup_t m_LastHitGroup;
-    char pad_2853[0x4];
+    char pad_2852[0x4];
     CGlobalSymbol m_sLastDamageSourceName;
     VectorWS m_vLastDamagePosition;
     entity2_GameTime_t m_flDissolveStartTime;
@@ -162,13 +143,13 @@ class server_CFuncMover {
     client_RenderMode_t m_nRenderMode;
     client_RenderFx_t m_nRenderFX;
     bool m_bAllowFadeInView;
-    char pad_2854[0x1d];
+    char pad_2853[0x1d];
     Color m_clrRender;
-    char pad_2855[0x4];
+    char pad_2854[0x4];
     char m_vecRenderAttributes[0x68];
     bool m_bRenderToCubemaps;
     bool m_bNoInterpolate;
-    char pad_2856[0x6];
+    char pad_2855[0x6];
     server_CCollisionProperty m_Collision;
     server_CGlowProperty m_Glow;
     float32 m_flGlowBackfaceMult;
@@ -177,19 +158,19 @@ class server_CFuncMover {
     float32 m_flFadeScale;
     float32 m_flShadowStrength;
     uint8_t m_nObjectCulling;
-    char pad_2857[0x3];
+    char pad_2856[0x3];
     int32_t m_nAddDecal;
     Vector m_vDecalPosition;
     Vector m_vDecalForwardAxis;
     client_DecalMode_t m_nDecalMode;
     client_DecalMode_t m_nRequiredDecalMode;
-    char pad_2858[0x2];
+    char pad_2857[0x2];
     char m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18];
-    char pad_2859[0x28];
+    char pad_2858[0x28];
     client_CNetworkViewOffsetVector m_vecViewOffset;
-    char pad_2860[0x8];
+    char pad_2859[0x8];
     uint32_t m_bvDisabledHitGroups[1];
-    char end_pad_2861[0x4];
+    char end_pad_2860[0x4];
     CUtlSymbolLarge m_iszPathName;
     char m_hPathMover[0x4];
     char m_hPrevPathMover[0x4];
@@ -197,7 +178,7 @@ class server_CFuncMover {
     CUtlSymbolLarge m_iszPathNodeEnd;
     server_Move_t m_eMoveType;
     bool m_bIsReversing;
-    char pad_3594[0x3];
+    char pad_3593[0x3];
     Vector m_vTarget;
     float32 m_flStartSpeed;
     float32 m_flPathLocation;
@@ -206,7 +187,7 @@ class server_CFuncMover {
     int32_t m_nPreviousNodeIndex;
     client_SolidType_t m_eSolidType;
     bool m_bIsMoving;
-    char pad_3595[0x2];
+    char pad_3594[0x2];
     float32 m_flTimeToReachMaxSpeed;
     float32 m_flDistanceToReachMaxSpeed;
     float32 m_flTimeToReachZeroSpeed;
@@ -215,7 +196,7 @@ class server_CFuncMover {
     entity2_GameTime_t m_flTimeMovementStop;
     char m_hStopAtNode[0x4];
     float32 m_flPathLocationToBeginStop;
-    char pad_3596[0x4];
+    char pad_3595[0x4];
     CUtlSymbolLarge m_iszStartForwardSound;
     CUtlSymbolLarge m_iszLoopForwardSound;
     CUtlSymbolLarge m_iszStopForwardSound;
@@ -223,11 +204,11 @@ class server_CFuncMover {
     CUtlSymbolLarge m_iszLoopReverseSound;
     CUtlSymbolLarge m_iszStopReverseSound;
     CUtlSymbolLarge m_iszArriveAtDestinationSound;
-    char pad_3597[0x18];
+    char pad_3596[0x18];
     entity2_CEntityIOOutput m_OnMovementEnd;
     bool m_bStartAtClosestPoint;
     bool m_bStartAtEnd;
-    char pad_3598[0x2];
+    char pad_3597[0x2];
     server_OrientationUpdate_t m_eOrientationUpdate;
     entity2_GameTime_t m_flTimeStartOrientationChange;
     float32 m_flTimeToBlendToNewOrientation;
@@ -235,7 +216,7 @@ class server_CFuncMover {
     int32_t m_nOriginalOrientationIndex;
     bool m_bCreateMovableNavMesh;
     bool m_bAllowMovableNavMeshDockingOnEntireEntity;
-    char pad_3599[0x6];
+    char pad_3598[0x6];
     entity2_CEntityIOOutput m_OnNodePassed;
     CUtlSymbolLarge m_iszOrientationMatchEntityName;
     char m_hOrientationMatchEntity[0x4];
@@ -246,20 +227,20 @@ class server_CFuncMover {
     float32 m_flLerpToPositionDeltaT;
     entity2_CEntityIOOutput m_OnLerpToPositionComplete;
     bool m_bIsPaused;
-    char pad_3600[0x3];
+    char pad_3599[0x3];
     server_TransitionToPathNodeAction_t m_eTransitionedToPathNodeAction;
     int32_t m_nDelayedTeleportToNode;
     bool m_bIsVerboseLogging;
-    char pad_3601[0x3];
+    char pad_3600[0x3];
     char m_hFollowEntity[0x4];
     float32 m_flFollowDistance;
     float32 m_flFollowMinimumSpeed;
     float32 m_flCurFollowEntityT;
     float32 m_flCurFollowSpeed;
-    char pad_3602[0x4];
+    char pad_3601[0x4];
     CUtlSymbolLarge m_strOrientationFaceEntityName;
     char m_hOrientationFaceEntity[0x4];
-    char pad_3603[0x4];
+    char pad_3602[0x4];
     entity2_CEntityIOOutput m_OnStart;
     entity2_CEntityIOOutput m_OnStartForward;
     entity2_CEntityIOOutput m_OnStartReverse;
@@ -267,7 +248,7 @@ class server_CFuncMover {
     entity2_CEntityIOOutput m_OnStopped;
     bool m_bNextNodeReturnsCurrent;
     bool m_bStartedMoving;
-    char pad_3604[0x1e];
+    char pad_3603[0x1e];
     server_FollowEntityDirection_t m_eFollowEntityDirection;
-    char end_pad_3605[0x4];
+    char end_pad_3604[0x4];
 };

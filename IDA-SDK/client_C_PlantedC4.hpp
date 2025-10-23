@@ -15,10 +15,7 @@ class client_CBasePlayerController;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -26,13 +23,7 @@ class client_CBasePlayerController;
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_EntitySpottedState_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_C_AttributeContainer.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_PlantedC4 {
     char vTable723[0x8];
@@ -214,44 +205,44 @@ class client_C_PlantedC4 {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1483[0x8];
+    char vTable1482[0x8];
     bool m_bBombTicking;
-    char pad_1484[0x3];
+    char pad_1483[0x3];
     int32_t m_nBombSite;
     int32_t m_nSourceSoundscapeHash;
-    char pad_1485[0x4];
+    char pad_1484[0x4];
     client_EntitySpottedState_t m_entitySpottedState;
     entity2_GameTime_t m_flNextGlow;
     entity2_GameTime_t m_flNextBeep;
     entity2_GameTime_t m_flC4Blow;
     bool m_bCannotBeDefused;
     bool m_bHasExploded;
-    char pad_1486[0x2];
+    char pad_1485[0x2];
     float32 m_flTimerLength;
     bool m_bBeingDefused;
-    char pad_1487[0x3];
+    char pad_1486[0x3];
     float32 m_bTriggerWarning;
     float32 m_bExplodeWarning;
     bool m_bC4Activated;
     bool m_bTenSecWarning;
-    char pad_1488[0x2];
+    char pad_1487[0x2];
     float32 m_flDefuseLength;
     entity2_GameTime_t m_flDefuseCountDown;
     bool m_bBombDefused;
-    char pad_1489[0x3];
+    char pad_1488[0x3];
     char m_hBombDefuser[0x4];
-    char pad_1490[0x4];
+    char pad_1489[0x4];
     client_C_AttributeContainer m_AttributeManager;
     char m_hDefuserMultimeter[0x4];
     entity2_GameTime_t m_flNextRadarFlashTime;
     bool m_bRadarFlash;
-    char pad_1491[0x3];
+    char pad_1490[0x3];
     char m_pBombDefuser[0x4];
     entity2_GameTime_t m_fLastDefuseTime;
-    char pad_1492[0x4];
+    char pad_1491[0x4];
     client_CBasePlayerController* m_pPredictionOwner;
     Vector m_vecC4ExplodeSpectatePos;
     QAngle m_vecC4ExplodeSpectateAng;
     float32 m_flC4ExplodeSpectateDuration;
-    char end_pad_1493[0x4];
+    char end_pad_1492[0x4];
 };

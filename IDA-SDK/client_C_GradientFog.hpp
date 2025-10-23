@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_GradientFog {
@@ -128,7 +125,7 @@ class client_C_GradientFog {
     float32 m_flFogStartDistance;
     float32 m_flFogEndDistance;
     bool m_bHeightFogEnabled;
-    char pad_1441[0x3];
+    char pad_1440[0x3];
     float32 m_flFogStartHeight;
     float32 m_flFogEndHeight;
     float32 m_flFarZ;
@@ -141,5 +138,5 @@ class client_C_GradientFog {
     bool m_bStartDisabled;
     bool m_bIsEnabled;
     bool m_bGradientFogNeedsTextures;
-    char end_pad_1442[0x5d];
+    char end_pad_1441[0x5d];
 };

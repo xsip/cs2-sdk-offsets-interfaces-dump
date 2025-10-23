@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -182,7 +179,7 @@ class client_C_FuncLadder {
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
     Vector m_vecLadderDir;
-    char pad_1434[0x4];
+    char pad_1433[0x4];
     char m_Dismounts[0x18];
     Vector m_vecLocalTop;
     VectorWS m_vecPlayerMountPositionTop;
@@ -191,5 +188,5 @@ class client_C_FuncLadder {
     bool m_bDisabled;
     bool m_bFakeLadder;
     bool m_bHasSlack;
-    char end_pad_1435[0x5];
+    char end_pad_1434[0x5];
 };

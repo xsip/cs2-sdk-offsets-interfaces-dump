@@ -4,5 +4,5 @@
 
 
 class client_CTakeDamageInfoAPI {
-    char pad_1103[0x8];
+    char pad_1114[0x8];
 };

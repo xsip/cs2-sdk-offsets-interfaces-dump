@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_MapVetoPickController {
@@ -124,7 +121,7 @@ class client_C_MapVetoPickController {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1471[0x10];
+    char vTable1470[0x10];
     int32_t m_nDraftType;
     int32_t m_nTeamWinningCoinToss;
     int32_t m_nTeamWithFirstChoice[64];
@@ -142,5 +139,5 @@ class client_C_MapVetoPickController {
     int32_t m_nPhaseDurationTicks;
     int32_t m_nPostDataUpdateTick;
     bool m_bDisabledHud;
-    char end_pad_1472[0x3];
+    char end_pad_1471[0x3];
 };

@@ -9,7 +9,7 @@ class worldrenderer_AggregateSceneObject_t {
     int16_t m_nLayer;
     int16_t m_instanceStream;
     int16_t m_vertexAlbedoStream;
-    char pad_2473[0x2];
+    char pad_2472[0x2];
     char m_aggregateMeshes[0x18];
     char m_lodSetups[0x18];
     char m_visClusterMembership[0x18];

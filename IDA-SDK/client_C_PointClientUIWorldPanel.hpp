@@ -14,10 +14,7 @@ class client_CPointOffScreenIndicatorUi;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -182,26 +179,26 @@ class client_C_PointClientUIWorldPanel {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1044[0x8];
+    char vTable1055[0x8];
     bool m_bEnabled;
-    char pad_1045[0x7];
+    char pad_1056[0x7];
     CUtlSymbolLarge m_DialogXMLName;
     CUtlSymbolLarge m_PanelClassName;
     CUtlSymbolLarge m_PanelID;
-    char end_pad_1046[0x8];
-    char vTable1026[0x8];
+    char end_pad_1057[0x8];
+    char vTable1037[0x8];
     bool m_bForceRecreateNextUpdate;
     bool m_bMoveViewToPlayerNextThink;
     bool m_bCheckCSSClasses;
-    char pad_1027[0x5];
+    char pad_1038[0x5];
     CTransform m_anchorDeltaTransform;
-    char pad_1028[0x170];
+    char pad_1039[0x170];
     client_CPointOffScreenIndicatorUi* m_pOffScreenIndicator;
-    char pad_1029[0x20];
+    char pad_1040[0x20];
     bool m_bIgnoreInput;
     bool m_bLit;
     bool m_bFollowPlayerAcrossTeleport;
-    char pad_1030[0x1];
+    char pad_1041[0x1];
     float32 m_flWidth;
     float32 m_flHeight;
     float32 m_flDPI;
@@ -212,7 +209,7 @@ class client_C_PointClientUIWorldPanel {
     uint32_t m_unVerticalAlign;
     uint32_t m_unOrientation;
     bool m_bAllowInteractionFromAllSceneWorlds;
-    char pad_1031[0x7];
+    char pad_1042[0x7];
     char m_vecCSSClasses[0x18];
     bool m_bOpaque;
     bool m_bNoDepth;
@@ -223,6 +220,6 @@ class client_C_PointClientUIWorldPanel {
     bool m_bGrabbable;
     bool m_bOnlyRenderToTexture;
     bool m_bDisableMipGen;
-    char pad_1032[0x3];
+    char pad_1043[0x3];
     int32_t m_nExplicitImageLayout;
 };

@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_CRagdollManager {
@@ -125,5 +122,5 @@ class client_CRagdollManager {
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
     int8_t m_iCurrentMaxRagdollCount;
-    char end_pad_1064[0x7];
+    char end_pad_1075[0x7];
 };

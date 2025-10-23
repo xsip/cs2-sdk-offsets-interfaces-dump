@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_ColorCorrection {
@@ -137,12 +134,12 @@ class client_C_ColorCorrection {
     bool m_bClientSide;
     bool m_bExclusive;
     bool m_bEnabledOnClient[1];
-    char pad_1354[0x3];
+    char pad_1353[0x3];
     float32 m_flCurWeightOnClient[1];
     bool m_bFadingIn[1];
-    char pad_1355[0x3];
+    char pad_1354[0x3];
     float32 m_flFadeStartWeight[1];
     float32 m_flFadeStartTime[1];
     float32 m_flFadeDuration[1];
-    char end_pad_1356[0x8];
+    char end_pad_1355[0x8];
 };

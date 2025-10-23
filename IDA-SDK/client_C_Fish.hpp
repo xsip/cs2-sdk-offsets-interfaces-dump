@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -213,7 +210,7 @@ class client_C_Fish {
     float32 m_deathDepth;
     float32 m_deathAngle;
     float32 m_buoyancy;
-    char pad_1427[0x4];
+    char pad_1426[0x4];
     client_CountdownTimer m_wiggleTimer;
     float32 m_wigglePhase;
     float32 m_wiggleRate;
@@ -222,7 +219,7 @@ class client_C_Fish {
     Vector m_poolOrigin;
     float32 m_waterLevel;
     bool m_gotUpdate;
-    char pad_1428[0x3];
+    char pad_1427[0x3];
     float32 m_x;
     float32 m_y;
     float32 m_z;

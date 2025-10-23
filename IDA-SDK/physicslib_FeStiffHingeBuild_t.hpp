@@ -8,5 +8,5 @@ class physicslib_FeStiffHingeBuild_t {
     float32 flStrength;
     float32 flMotionBias[3];
     uint16_t nNode[3];
-    char end_pad_2448[0x2];
+    char end_pad_2447[0x2];
 };

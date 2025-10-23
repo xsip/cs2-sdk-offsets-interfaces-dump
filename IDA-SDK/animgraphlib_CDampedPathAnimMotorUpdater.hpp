@@ -3,7 +3,6 @@
 #include "typedefs.hpp"
 
 #include "animgraphlib_CAnimParamHandle.hpp"
-#include "animgraphlib_CAnimParamHandle.hpp"
 
 class animgraphlib_CDampedPathAnimMotorUpdater {
     char vTable36[0x10];

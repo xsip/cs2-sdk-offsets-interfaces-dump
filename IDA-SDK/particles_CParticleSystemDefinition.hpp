@@ -4,9 +4,9 @@
 
 
 class particles_CParticleSystemDefinition {
-    char pad_1829[0x8];
+    char pad_1828[0x8];
     int32_t m_nBehaviorVersion;
-    char pad_1819[0x4];
+    char pad_1818[0x4];
     char m_PreEmissionOperators[0x18];
     char m_Emitters[0x18];
     char m_Initializers[0x18];
@@ -15,9 +15,9 @@ class particles_CParticleSystemDefinition {
     char m_Constraints[0x18];
     char m_Renderers[0x18];
     char m_Children[0x18];
-    char pad_1820[0xa8];
+    char pad_1819[0xa8];
     int32_t m_nFirstMultipleOverride_BackwardCompat;
-    char pad_1821[0xdc];
+    char pad_1820[0xdc];
     int32_t m_nInitialParticles;
     int32_t m_nMaxParticles;
     int32_t m_nGroupID;
@@ -27,7 +27,7 @@ class particles_CParticleSystemDefinition {
     int32_t m_nSortOverridePositionCP;
     bool m_bInfiniteBounds;
     bool m_bEnableNamedValues;
-    char pad_1822[0x2];
+    char pad_1821[0x2];
     CUtlString m_NamedValueDomain;
     char m_NamedValueLocals[0x18];
     Color m_ConstantColor;
@@ -39,16 +39,16 @@ class particles_CParticleSystemDefinition {
     int32_t m_nConstantSequenceNumber;
     int32_t m_nConstantSequenceNumber1;
     int32_t m_nSnapshotControlPoint;
-    char pad_1823[0x4];
+    char pad_1822[0x4];
     char m_hSnapshot[0x8];
     char m_pszCullReplacementName[0x8];
     float32 m_flCullRadius;
     float32 m_flCullFillCost;
     int32_t m_nCullControlPoint;
-    char pad_1824[0x4];
+    char pad_1823[0x4];
     char m_hFallback[0x8];
     int32_t m_nFallbackMaxCount;
-    char pad_1825[0x4];
+    char pad_1824[0x4];
     char m_hLowViolenceDef[0x8];
     char m_hReferenceReplacement[0x8];
     float32 m_flPreSimulationTime;
@@ -72,12 +72,12 @@ class particles_CParticleSystemDefinition {
     bool m_bShouldHitboxesFallbackToCollisionHulls;
     particles_InheritableBoolType_t m_nViewModelEffect;
     bool m_bScreenSpaceEffect;
-    char pad_1826[0x3];
+    char pad_1825[0x3];
     CUtlSymbolLarge m_pszTargetLayerID;
     int32_t m_nSkipRenderControlPoint;
     int32_t m_nAllowRenderControlPoint;
     bool m_bShouldSort;
-    char pad_1827[0x47];
+    char pad_1826[0x47];
     char m_controlPointConfigurations[0x18];
-    char end_pad_1828[0x70];
+    char end_pad_1827[0x70];
 };

@@ -5,8 +5,6 @@
 class pulse_runtime_lib_CPulse_ResumePoint;
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
-#include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
-#include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
 
 class pulse_system_CPulseCell_TestWaitWithCursorState {
     char vTable501[0x8];

@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_CSGO_TeamPreviewCamera {
@@ -129,20 +126,20 @@ class client_C_CSGO_TeamPreviewCamera {
     bool m_bLoop;
     bool m_bVerticalFOV;
     bool m_bConstantSpeed;
-    char pad_1235[0x1];
+    char pad_1236[0x1];
     float32 m_flDuration;
-    char pad_1236[0x40];
+    char pad_1237[0x40];
     float32 m_flPathLength;
     float32 m_flPathDuration;
-    char pad_1237[0x14];
+    char pad_1238[0x14];
     bool m_bDofEnabled;
-    char pad_1238[0x3];
+    char pad_1239[0x3];
     float32 m_flDofNearBlurry;
     float32 m_flDofNearCrisp;
     float32 m_flDofFarCrisp;
     float32 m_flDofFarBlurry;
     float32 m_flDofTiltToGround;
-    char end_pad_1239[0x4];
+    char end_pad_1240[0x4];
     int32_t m_nVariant;
-    char end_pad_1234[0x4];
+    char end_pad_1235[0x4];
 };

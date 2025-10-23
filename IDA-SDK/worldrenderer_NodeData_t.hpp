@@ -9,7 +9,7 @@ class worldrenderer_NodeData_t {
     Vector m_vMinBounds;
     Vector m_vMaxBounds;
     float32 m_flMinimumDistance;
-    char pad_2489[0x4];
+    char pad_2488[0x4];
     char m_ChildNodeIndices[0x18];
     CUtlString m_worldNodePrefix;
 };

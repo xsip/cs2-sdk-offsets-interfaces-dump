@@ -25,5 +25,5 @@ class client_C_Chicken_GraphController {
     char m_paramEndActivityImmediately[0x20];
     char m_paramSnapToSquatting[0x20];
     CAnimGraphTagRef m_sActivityFinished;
-    char end_pad_1351[0x8];
+    char end_pad_1350[0x8];
 };

@@ -6,7 +6,6 @@ class pulse_runtime_lib_CPulse_ResumePoint;
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
 #include "client_PointCameraSettings_t.hpp"
-#include "client_PointCameraSettings_t.hpp"
 
 class client_CPulseCell_LerpCameraSettings {
     char vTable501[0x8];
@@ -16,5 +15,5 @@ class client_CPulseCell_LerpCameraSettings {
     float32 m_flSeconds;
     client_PointCameraSettings_t m_Start;
     client_PointCameraSettings_t m_End;
-    char end_pad_1055[0x4];
+    char end_pad_1066[0x4];
 };

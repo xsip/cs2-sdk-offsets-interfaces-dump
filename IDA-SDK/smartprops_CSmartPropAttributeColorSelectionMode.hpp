@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeColorSelectionMode {
-    char pad_2564[0x40];
+    char pad_2563[0x40];
 };

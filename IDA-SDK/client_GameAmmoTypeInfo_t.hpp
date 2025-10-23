@@ -16,5 +16,5 @@ class client_GameAmmoTypeInfo_t {
     char end_pad_576[0x4];
     int32_t m_nBuySize;
     int32_t m_nCost;
-    char end_pad_1632[0x10];
+    char end_pad_1631[0x10];
 };

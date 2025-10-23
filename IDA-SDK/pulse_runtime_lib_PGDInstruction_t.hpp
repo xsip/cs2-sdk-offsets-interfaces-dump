@@ -4,8 +4,6 @@
 
 #include "pulse_runtime_lib_PulseRuntimeVarIndex_t.hpp"
 #include "pulse_runtime_lib_PulseRuntimeRegisterIndex_t.hpp"
-#include "pulse_runtime_lib_PulseRuntimeRegisterIndex_t.hpp"
-#include "pulse_runtime_lib_PulseRuntimeRegisterIndex_t.hpp"
 #include "pulse_runtime_lib_PulseRuntimeInvokeIndex_t.hpp"
 #include "pulse_runtime_lib_PulseRuntimeChunkIndex_t.hpp"
 #include "pulse_runtime_lib_PulseRuntimeCallInfoIndex_t.hpp"

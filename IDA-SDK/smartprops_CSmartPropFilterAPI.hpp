@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropFilterAPI {
-    char pad_2561[0x1];
+    char pad_2560[0x1];
 };

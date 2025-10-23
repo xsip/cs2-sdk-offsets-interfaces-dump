@@ -7,9 +7,9 @@
 
 class client_SummaryTakeDamageInfo_t {
     int32_t nSummarisedCount;
-    char pad_1650[0x4];
+    char pad_1649[0x4];
     client_CTakeDamageInfo info;
     client_CTakeDamageResult result;
     char hTarget[0x4];
-    char end_pad_1651[0x4];
+    char end_pad_1650[0x4];
 };

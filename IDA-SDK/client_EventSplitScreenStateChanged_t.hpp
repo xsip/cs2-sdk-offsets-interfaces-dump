@@ -4,5 +4,5 @@
 
 
 class client_EventSplitScreenStateChanged_t {
-    char pad_1628[0x1];
+    char pad_1627[0x1];
 };

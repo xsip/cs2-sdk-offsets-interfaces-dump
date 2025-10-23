@@ -14,5 +14,5 @@ class soundsystem_lowlevel_VMixDynamicsBand_t {
     float32 m_flReleaseTimeMS;
     bool m_bEnable;
     bool m_bSolo;
-    char end_pad_2462[0x2];
+    char end_pad_2461[0x2];
 };

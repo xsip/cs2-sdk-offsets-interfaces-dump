@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_CInfoFan {
@@ -124,10 +121,10 @@ class client_CInfoFan {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable964[0x40];
+    char vTable975[0x40];
     float32 m_fFanForceMaxRadius;
     float32 m_fFanForceMinRadius;
     float32 m_flCurveDistRange;
-    char pad_965[0x4];
+    char pad_976[0x4];
     CUtlSymbolLarge m_FanForceCurveString;
 };

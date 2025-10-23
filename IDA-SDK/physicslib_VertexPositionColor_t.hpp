@@ -5,5 +5,5 @@
 
 class physicslib_VertexPositionColor_t {
     Vector m_vPosition;
-    char end_pad_2455[0x4];
+    char end_pad_2454[0x4];
 };

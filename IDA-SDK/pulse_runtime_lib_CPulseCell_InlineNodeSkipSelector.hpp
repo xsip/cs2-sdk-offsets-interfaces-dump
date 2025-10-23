@@ -4,7 +4,6 @@
 
 class pulse_runtime_lib_CPulse_OutflowConnection;
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
-#include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_PulseSelectorOutflowList_t.hpp"
 #include "pulse_runtime_lib_CPulse_OutflowConnection.hpp"
 

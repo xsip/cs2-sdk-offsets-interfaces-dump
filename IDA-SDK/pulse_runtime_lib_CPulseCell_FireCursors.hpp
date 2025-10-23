@@ -5,7 +5,6 @@
 class pulse_runtime_lib_CPulse_ResumePoint;
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
-#include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
 
 class pulse_runtime_lib_CPulseCell_FireCursors {
     char vTable501[0x8];

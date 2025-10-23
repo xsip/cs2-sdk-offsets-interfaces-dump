@@ -5,5 +5,5 @@
 
 class client_QueuedEvents_t {
     float32 starttime;
-    char end_pad_1565[0x14];
+    char end_pad_1564[0x14];
 };

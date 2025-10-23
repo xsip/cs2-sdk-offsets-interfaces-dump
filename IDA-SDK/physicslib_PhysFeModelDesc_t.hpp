@@ -23,7 +23,7 @@ class physicslib_PhysFeModelDesc_t {
     uint16_t m_nTreeDepth;
     uint16_t m_nNodeBaseJiggleboneDependsCount;
     uint16_t m_nRopeCount;
-    char pad_2416[0x6];
+    char pad_2415[0x6];
     char m_Ropes[0x18];
     char m_NodeBases[0x18];
     char m_SimdNodeBases[0x18];

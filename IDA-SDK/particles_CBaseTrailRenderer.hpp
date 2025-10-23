@@ -6,36 +6,11 @@ class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particles_CParticleVisibilityInputs.hpp"
 #include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
 #include "particles_ParticleAttributeIndex_t.hpp"
 #include "particleslib_CParticleCollectionRendererVecInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particles_ParticleAttributeIndex_t.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
 
 class particles_CBaseTrailRenderer {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -44,27 +19,27 @@ class particles_CBaseTrailRenderer {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     particles_CParticleVisibilityInputs VisibilityInputs;
     bool m_bCannotBeRefracted;
     bool m_bSkipRenderingOnMobile;
-    char end_pad_1787[0x6];
+    char end_pad_1786[0x6];
     particleslib_CParticleCollectionRendererFloatInput m_flRadiusScale;
     particleslib_CParticleCollectionRendererFloatInput m_flAlphaScale;
     particleslib_CParticleCollectionRendererFloatInput m_flRollScale;
     particles_ParticleAttributeIndex_t m_nAlpha2Field;
-    char pad_1780[0x4];
+    char pad_1779[0x4];
     particleslib_CParticleCollectionRendererVecInput m_vecColorScale;
     particles_ParticleColorBlendType_t m_nColorBlendType;
     particles_SpriteCardShaderType_t m_nShaderType;
@@ -77,7 +52,7 @@ class particles_CBaseTrailRenderer {
     float32 m_flAnimationRate;
     particles_AnimationType_t m_nAnimationType;
     bool m_bAnimateInFPS;
-    char pad_1781[0x7];
+    char pad_1780[0x7];
     particleslib_CParticleCollectionRendererFloatInput m_flMotionVectorScaleU;
     particleslib_CParticleCollectionRendererFloatInput m_flMotionVectorScaleV;
     particleslib_CParticleCollectionRendererFloatInput m_flSelfIllumAmount;
@@ -88,7 +63,7 @@ class particles_CBaseTrailRenderer {
     particles_ParticleOutputBlendMode_t m_nOutputBlendMode;
     bool m_bGammaCorrectVertexColors;
     bool m_bSaturateColorPreAlphaBlend;
-    char pad_1782[0x2];
+    char pad_1781[0x2];
     particleslib_CParticleCollectionRendererFloatInput m_flAddSelfAmount;
     particleslib_CParticleCollectionRendererFloatInput m_flDesaturation;
     particleslib_CParticleCollectionRendererFloatInput m_flOverbrightFactor;
@@ -97,7 +72,7 @@ class particles_CBaseTrailRenderer {
     particleslib_CParticleCollectionRendererFloatInput m_flFogAmount;
     bool m_bTintByFOW;
     bool m_bTintByGlobalLight;
-    char pad_1783[0x2];
+    char pad_1782[0x2];
     particles_SpriteCardPerParticleScale_t m_nPerParticleAlphaReference;
     particles_SpriteCardPerParticleScale_t m_nPerParticleAlphaRefWindow;
     particles_ParticleAlphaReferenceType_t m_nAlphaReferenceType;
@@ -106,7 +81,7 @@ class particles_CBaseTrailRenderer {
     particleslib_CParticleCollectionRendererFloatInput m_flSourceAlphaValueToMapToOne;
     bool m_bRefract;
     bool m_bRefractSolid;
-    char pad_1784[0x6];
+    char pad_1783[0x6];
     particleslib_CParticleCollectionRendererFloatInput m_flRefractAmount;
     int32_t m_nRefractBlurRadius;
     particles_BlurFilterType_t m_nRefractBlurType;
@@ -121,7 +96,7 @@ class particles_CBaseTrailRenderer {
     bool m_bWriteStencilOnDepthFail;
     bool m_bReverseZBuffering;
     bool m_bDisableZBuffering;
-    char pad_1785[0x3];
+    char pad_1784[0x3];
     particles_ParticleDepthFeatheringMode_t m_nFeatheringMode;
     particleslib_CParticleCollectionRendererFloatInput m_flFeatheringMinDist;
     particleslib_CParticleCollectionRendererFloatInput m_flFeatheringMaxDist;
@@ -131,7 +106,7 @@ class particles_CBaseTrailRenderer {
     particles_ParticleSortingChoiceList_t m_nSortMethod;
     bool m_bBlendFramesSeq0;
     bool m_bMaxLuminanceBlendingSequence0;
-    char end_pad_1786[0x272];
+    char end_pad_1785[0x272];
     particles_ParticleOrientationChoiceList_t m_nOrientationType;
     int32_t m_nOrientationControlPoint;
     float32 m_flMinSize;
@@ -139,5 +114,5 @@ class particles_CBaseTrailRenderer {
     particleslib_CParticleCollectionRendererFloatInput m_flStartFadeSize;
     particleslib_CParticleCollectionRendererFloatInput m_flEndFadeSize;
     bool m_bClampV;
-    char end_pad_1804[0x7];
+    char end_pad_1803[0x7];
 };

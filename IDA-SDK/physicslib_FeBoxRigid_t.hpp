@@ -10,5 +10,5 @@ class physicslib_FeBoxRigid_t {
     Vector vSize;
     uint16_t nVertexMapIndex;
     uint16_t nFlags;
-    char end_pad_2428[0xc];
+    char end_pad_2427[0xc];
 };

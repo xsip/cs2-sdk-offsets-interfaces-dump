@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -189,7 +186,7 @@ class client_C_EnvDecal {
     bool m_bProjectOnWorld;
     bool m_bProjectOnCharacters;
     bool m_bProjectOnWater;
-    char pad_1395[0x1];
+    char pad_1394[0x1];
     float32 m_flDepthSortBias;
-    char end_pad_1396[0x18];
+    char end_pad_1395[0x18];
 };

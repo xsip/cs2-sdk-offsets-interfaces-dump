@@ -4,7 +4,6 @@
 
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_SignatureOutflow_Continue.hpp"
-#include "pulse_runtime_lib_SignatureOutflow_Continue.hpp"
 
 class pulse_system_CPulseCell_Test_MultiOutflow_WithParams {
     char vTable501[0x8];

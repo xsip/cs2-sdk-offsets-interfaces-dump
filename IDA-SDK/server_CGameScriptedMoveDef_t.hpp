@@ -12,6 +12,6 @@ class server_CGameScriptedMoveDef_t {
     float32 m_flMoveSpeed;
     bool m_bAimDisabled;
     bool m_bIgnoreRotation;
-    char pad_2731[0x2];
+    char pad_2730[0x2];
     client_ForcedCrouchState_t m_nForcedCrouchState;
 };

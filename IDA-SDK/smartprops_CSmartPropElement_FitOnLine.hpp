@@ -3,14 +3,13 @@
 #include "typedefs.hpp"
 
 #include "smartprops_CSmartPropAttributeCoordinateSpace.hpp"
-#include "smartprops_CSmartPropAttributeCoordinateSpace.hpp"
 #include "smartprops_CSmartPropAttributeScaleMode.hpp"
 #include "smartprops_CSmartPropAttributePickMode.hpp"
 
 class smartprops_CSmartPropElement_FitOnLine {
-    char vTable2545[0x8];
+    char vTable2544[0x8];
     int32_t m_nElementID;
-    char pad_2546[0x4];
+    char pad_2545[0x4];
     CSmartPropAttributeBool m_bEnabled;
     CUtlString m_sLabel;
     char m_SelectionCriteria[0x18];

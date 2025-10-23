@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeIMaterial2 {
-    char pad_2379[0x1];
+    char pad_2378[0x1];
 };

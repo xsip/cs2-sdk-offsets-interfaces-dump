@@ -4,7 +4,6 @@
 
 #include "animgraphlib_CAnimNodePath.hpp"
 #include "animgraphlib_CAnimUpdateNodeRef.hpp"
-#include "animgraphlib_CAnimUpdateNodeRef.hpp"
 
 class animgraphlib_CAddUpdateNode {
     char vTable16[0x18];

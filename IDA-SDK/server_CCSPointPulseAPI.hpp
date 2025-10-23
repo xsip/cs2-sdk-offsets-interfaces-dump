@@ -4,5 +4,5 @@
 
 
 class server_CCSPointPulseAPI {
-    char pad_3439[0x1];
+    char pad_3438[0x1];
 };

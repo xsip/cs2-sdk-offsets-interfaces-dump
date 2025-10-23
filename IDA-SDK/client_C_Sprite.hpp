@@ -13,20 +13,13 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_Sprite {
     char vTable723[0x8];
@@ -189,17 +182,17 @@ class client_C_Sprite {
     char m_hSpriteMaterial[0x8];
     char m_hAttachedToEntity[0x4];
     modellib_AttachmentHandle_t m_nAttachment;
-    char pad_1094[0x3];
+    char pad_1105[0x3];
     float32 m_flSpriteFramerate;
     float32 m_flFrame;
     entity2_GameTime_t m_flDieTime;
-    char pad_1095[0xc];
+    char pad_1106[0xc];
     uint32_t m_nBrightness;
     float32 m_flBrightnessDuration;
     float32 m_flSpriteScale;
     float32 m_flScaleDuration;
     bool m_bWorldSpaceScale;
-    char pad_1096[0x3];
+    char pad_1107[0x3];
     float32 m_flGlowProxySize;
     float32 m_flHDRColorScale;
     entity2_GameTime_t m_flLastTime;
@@ -210,7 +203,7 @@ class client_C_Sprite {
     int32_t m_nStartBrightness;
     int32_t m_nDestBrightness;
     entity2_GameTime_t m_flBrightnessTimeStart;
-    char pad_1097[0xc];
+    char pad_1108[0xc];
     int32_t m_nSpriteWidth;
     int32_t m_nSpriteHeight;
 };

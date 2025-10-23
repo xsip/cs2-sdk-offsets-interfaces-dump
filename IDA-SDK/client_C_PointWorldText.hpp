@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -181,20 +178,20 @@ class client_C_PointWorldText {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1523[0x8];
+    char vTable1522[0x8];
     bool m_bForceRecreateNextUpdate;
-    char pad_1524[0x17];
+    char pad_1523[0x17];
     char m_messageText[512];
     char m_FontName[64];
     char m_BackgroundMaterialName[64];
     bool m_bEnabled;
     bool m_bFullbright;
-    char pad_1525[0x2];
+    char pad_1524[0x2];
     float32 m_flWorldUnitsPerPx;
     float32 m_flFontSize;
     float32 m_flDepthOffset;
     bool m_bDrawBackground;
-    char pad_1526[0x3];
+    char pad_1525[0x3];
     float32 m_flBackgroundBorderWidth;
     float32 m_flBackgroundBorderHeight;
     float32 m_flBackgroundWorldToUV;

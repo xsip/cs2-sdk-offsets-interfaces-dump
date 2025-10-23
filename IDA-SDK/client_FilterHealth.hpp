@@ -11,12 +11,8 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 
 class client_FilterHealth {
@@ -131,8 +127,8 @@ class client_FilterHealth {
     entity2_CEntityIOOutput m_OnPass;
     entity2_CEntityIOOutput m_OnFail;
     bool m_bAdrenalineActive;
-    char pad_1630[0x3];
+    char pad_1629[0x3];
     int32_t m_iHealthMin;
     int32_t m_iHealthMax;
-    char end_pad_1631[0x4];
+    char end_pad_1630[0x4];
 };

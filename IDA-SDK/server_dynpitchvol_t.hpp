@@ -29,5 +29,5 @@ class server_dynpitchvol_t {
     int32_t volfrac;
     int32_t lfofrac;
     int32_t lfomult;
-    char pad_2864[0x64];
+    char pad_2863[0x64];
 };

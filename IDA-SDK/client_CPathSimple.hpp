@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CPathQueryComponent.hpp"
 
@@ -125,10 +122,10 @@ class client_CPathSimple {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1018[0x8];
+    char vTable1029[0x8];
     client_CPathQueryComponent m_CPathQueryComponent;
-    char pad_1019[0x50];
+    char pad_1030[0x50];
     CUtlString m_pathString;
     bool m_bClosedLoop;
-    char end_pad_1020[0x7];
+    char end_pad_1031[0x7];
 };

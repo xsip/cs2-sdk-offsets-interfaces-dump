@@ -8,16 +8,16 @@ class client_CGameSceneNode;
 #include "client_CNetworkOriginCellCoordQuantizedVector.hpp"
 
 class client_CGameSceneNode {
-    char vTable938[0x10];
+    char vTable949[0x10];
     CTransformWS m_nodeToWorld;
     entity2_CEntityInstance* m_pOwner;
     client_CGameSceneNode* m_pParent;
     client_CGameSceneNode* m_pChild;
     client_CGameSceneNode* m_pNextSibling;
-    char pad_939[0x28];
+    char pad_950[0x28];
     client_CGameSceneNodeHandle m_hParent;
     client_CNetworkOriginCellCoordQuantizedVector m_vecOrigin;
-    char pad_940[0x8];
+    char pad_951[0x8];
     QAngle m_angRotation;
     float32 m_flScale;
     VectorWS m_vecAbsOrigin;
@@ -30,16 +30,16 @@ class client_CGameSceneNode {
     bool m_bDebugAbsOriginChanges;
     bool m_bDormant;
     bool m_bForceParentToBeNetworked;
-    char pad_941[0x2];
+    char pad_952[0x2];
     uint8_t m_nHierarchicalDepth;
     uint8_t m_nHierarchyType;
     uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount;
-    char pad_942[0x2];
+    char pad_953[0x2];
     CUtlStringToken m_name;
-    char pad_943[0x40];
+    char pad_954[0x40];
     CUtlStringToken m_hierarchyAttachName;
     float32 m_flZOffset;
     float32 m_flClientLocalScale;
     Vector m_vRenderOrigin;
-    char end_pad_944[0x10];
+    char end_pad_955[0x10];
 };

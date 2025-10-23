@@ -15,9 +15,9 @@ class toolscene_CLightRigSpotLight {
     float32 m_flDistance;
     bool m_bRelativePositioning;
     bool m_bParentToCamera;
-    char end_pad_2519[0x2];
+    char end_pad_2518[0x2];
     float32 m_flOuterConeAngle;
     float32 m_flInnerConeAngle;
     bool m_bCastShadows;
-    char end_pad_2520[0x3];
+    char end_pad_2519[0x3];
 };

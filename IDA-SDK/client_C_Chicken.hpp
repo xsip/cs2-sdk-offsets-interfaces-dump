@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -25,15 +22,6 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_CPropDataComponent.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 #include "client_C_AttributeContainer.hpp"
 #include "client_ParticleIndex_t.hpp"
@@ -238,16 +226,16 @@ class client_C_Chicken {
     client_PerformanceMode_t m_PerformanceMode;
     entity2_GameTime_t m_flPreventDamageBeforeTime;
     client_BreakableContentsType_t m_BreakableContentsType;
-    char pad_1209[0x4];
+    char pad_939[0x4];
     CUtlString m_strBreakableContentsPropGroupOverride;
     CUtlString m_strBreakableContentsParticleOverride;
     bool m_bHasBreakPiecesOrCommands;
-    char pad_1210[0x3];
+    char pad_940[0x3];
     float32 m_explodeDamage;
     float32 m_explodeRadius;
-    char pad_1211[0x4];
+    char pad_941[0x4];
     float32 m_explosionDelay;
-    char pad_1212[0x4];
+    char pad_942[0x4];
     CUtlSymbolLarge m_explosionBuildupSound;
     CUtlSymbolLarge m_explosionCustomEffect;
     CUtlSymbolLarge m_explosionCustomSound;
@@ -256,10 +244,10 @@ class client_C_Chicken {
     entity2_GameTime_t m_flLastPhysicsInfluenceTime;
     float32 m_flDefaultFadeScale;
     char m_hLastAttacker[0x4];
-    char end_pad_1213[0x8];
+    char end_pad_943[0x8];
     bool m_bUseHitboxesForRenderBox;
     bool m_bUseAnimGraph;
-    char pad_1206[0x6];
+    char pad_936[0x6];
     entity2_CEntityIOOutput m_pOutputAnimBegun;
     entity2_CEntityIOOutput m_pOutputAnimOver;
     entity2_CEntityIOOutput m_pOutputAnimLoopCycleOver;
@@ -273,7 +261,7 @@ class client_C_Chicken {
     bool m_bForceNpcExclude;
     bool m_bCreateNonSolid;
     bool m_bIsOverrideProp;
-    char pad_1207[0x2];
+    char pad_937[0x2];
     int32_t m_iInitialGlowState;
     int32_t m_nGlowRange;
     int32_t m_nGlowRangeMin;
@@ -282,17 +270,17 @@ class client_C_Chicken {
     int32_t m_iCachedFrameCount;
     Vector m_vecCachedRenderMins;
     Vector m_vecCachedRenderMaxs;
-    char end_pad_1208[0xc];
-    char vTable1346[0x8];
+    char end_pad_938[0xc];
+    char vTable1345[0x8];
     char m_hHolidayHatAddon[0x4];
     bool m_jumpedThisFrame;
-    char pad_1347[0x3];
+    char pad_1346[0x3];
     char m_leader[0x4];
-    char pad_1348[0x4];
+    char pad_1347[0x4];
     client_C_AttributeContainer m_AttributeManager;
     bool m_bAttributesInitialized;
-    char pad_1349[0x3];
+    char pad_1348[0x3];
     client_ParticleIndex_t m_hWaterWakeParticles;
     bool m_bIsPreviewModel;
-    char end_pad_1350[0x17];
+    char end_pad_1349[0x17];
 };

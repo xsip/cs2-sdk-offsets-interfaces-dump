@@ -5,9 +5,9 @@
 #include "smartprops_CSmartPropAttributeChoiceSelectionMode.hpp"
 
 class smartprops_CSmartPropOperation_SetMateraialGroupChoice {
-    char vTable2559[0x8];
+    char vTable2558[0x8];
     CSmartPropAttributeBool m_bEnabled;
-    char end_pad_2560[0x8];
+    char end_pad_2559[0x8];
     CUtlString m_VariableName;
     smartprops_CSmartPropAttributeChoiceSelectionMode m_SelectionMode;
     CSmartPropAttributeInt m_ChoiceSelection;

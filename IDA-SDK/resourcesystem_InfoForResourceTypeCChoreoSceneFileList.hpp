@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCChoreoSceneFileList {
-    char pad_2384[0x1];
+    char pad_2383[0x1];
 };

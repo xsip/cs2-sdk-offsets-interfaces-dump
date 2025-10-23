@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCSurfaceGraph {
-    char pad_2400[0x1];
+    char pad_2399[0x1];
 };

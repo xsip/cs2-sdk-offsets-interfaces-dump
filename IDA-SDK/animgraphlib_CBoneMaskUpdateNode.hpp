@@ -4,7 +4,6 @@
 
 #include "animgraphlib_CAnimNodePath.hpp"
 #include "animgraphlib_CAnimUpdateNodeRef.hpp"
-#include "animgraphlib_CAnimUpdateNodeRef.hpp"
 #include "animgraphlib_CAnimParamHandle.hpp"
 
 class animgraphlib_CBoneMaskUpdateNode {

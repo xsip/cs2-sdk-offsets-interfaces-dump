@@ -12,5 +12,5 @@ class particles_CPathParameters {
     Vector m_vStartPointOffset;
     Vector m_vMidPointOffset;
     Vector m_vEndOffset;
-    char pad_1850[0x8];
+    char pad_1849[0x8];
 };

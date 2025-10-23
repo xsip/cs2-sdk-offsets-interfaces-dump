@@ -4,5 +4,5 @@
 
 
 class entity2_EntOutput_t {
-    char pad_2517[0x10];
+    char pad_2516[0x10];
 };

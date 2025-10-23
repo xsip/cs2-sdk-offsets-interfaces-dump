@@ -14,18 +14,13 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "client_PhysicsRagdollPose_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_PointCommentaryNode {
     char vTable723[0x8];
@@ -207,10 +202,10 @@ class client_C_PointCommentaryNode {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1515[0x18];
+    char vTable1514[0x18];
     bool m_bActive;
     bool m_bWasActive;
-    char pad_1516[0x2];
+    char pad_1515[0x2];
     entity2_GameTime_t m_flEndTime;
     entity2_GameTime_t m_flStartTime;
     float32 m_flStartTimeInCommentary;
@@ -220,8 +215,8 @@ class client_C_PointCommentaryNode {
     int32_t m_iNodeNumber;
     int32_t m_iNodeNumberMax;
     bool m_bListenedTo;
-    char pad_1517[0xf];
+    char pad_1516[0xf];
     char m_hViewPosition[0x4];
     bool m_bRestartAfterRestore;
-    char end_pad_1518[0x3];
+    char end_pad_1517[0x3];
 };

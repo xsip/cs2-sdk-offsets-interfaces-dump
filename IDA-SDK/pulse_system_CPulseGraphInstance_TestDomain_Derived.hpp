@@ -4,7 +4,7 @@
 
 
 class pulse_system_CPulseGraphInstance_TestDomain_Derived {
-    char pad_2701[0x118];
+    char pad_2700[0x118];
     char vTable4200[0x18];
     bool m_bIsRunningUnitTests;
     bool m_bExplicitTimeStepping;

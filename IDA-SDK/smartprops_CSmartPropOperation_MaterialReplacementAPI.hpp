@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropOperation_MaterialReplacementAPI {
-    char pad_2563[0x1];
+    char pad_2562[0x1];
 };

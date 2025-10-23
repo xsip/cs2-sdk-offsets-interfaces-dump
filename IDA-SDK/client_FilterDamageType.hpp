@@ -11,12 +11,8 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 
 class client_FilterDamageType {
@@ -131,5 +127,5 @@ class client_FilterDamageType {
     entity2_CEntityIOOutput m_OnPass;
     entity2_CEntityIOOutput m_OnFail;
     int32_t m_iDamageType;
-    char end_pad_1629[0x4];
+    char end_pad_1628[0x4];
 };

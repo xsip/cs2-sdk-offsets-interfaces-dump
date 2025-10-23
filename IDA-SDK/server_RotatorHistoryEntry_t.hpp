@@ -7,5 +7,5 @@
 class server_RotatorHistoryEntry_t {
     Quaternion qInvChange;
     entity2_GameTime_t flTimeRotationStart;
-    char end_pad_2779[0xc];
+    char end_pad_2778[0xc];
 };

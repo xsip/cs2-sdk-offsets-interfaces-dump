@@ -12,7 +12,7 @@ class soundsystem_lowlevel_VMixBoxverbDesc_t {
     float32 m_flModDepth;
     float32 m_flModRate;
     bool m_bParallel;
-    char pad_2457[0x3];
+    char pad_2456[0x3];
     soundsystem_lowlevel_VMixFilterDesc_t m_filterType;
     float32 m_flWidth;
     float32 m_flHeight;

@@ -6,9 +6,9 @@
 #include "entity2_GameTime_t.hpp"
 
 class client_CCSObserver_ObserverServices {
-    char vTable1197[0x8];
+    char vTable1208[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1198[0x10];
+    char pad_1209[0x10];
     uint8_t m_iObserverMode;
     char pad_826[0x3];
     char m_hObserverTarget[0x4];

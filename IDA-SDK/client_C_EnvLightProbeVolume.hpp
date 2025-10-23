@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_EnvLightProbeVolume {
@@ -124,7 +121,7 @@ class client_C_EnvLightProbeVolume {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1397[0xff8];
+    char vTable1396[0xff8];
     char m_Entity_hLightProbeTexture_AmbientCube[0x8];
     char m_Entity_hLightProbeTexture_SDF[0x8];
     char m_Entity_hLightProbeTexture_SH2_DC[0x8];
@@ -137,18 +134,18 @@ class client_C_EnvLightProbeVolume {
     Vector m_Entity_vBoxMins;
     Vector m_Entity_vBoxMaxs;
     bool m_Entity_bMoveable;
-    char pad_1398[0x3];
+    char pad_1397[0x3];
     int32_t m_Entity_nHandshake;
     int32_t m_Entity_nPriority;
     bool m_Entity_bStartDisabled;
-    char pad_1399[0x3];
+    char pad_1398[0x3];
     int32_t m_Entity_nLightProbeSizeX;
     int32_t m_Entity_nLightProbeSizeY;
     int32_t m_Entity_nLightProbeSizeZ;
     int32_t m_Entity_nLightProbeAtlasX;
     int32_t m_Entity_nLightProbeAtlasY;
     int32_t m_Entity_nLightProbeAtlasZ;
-    char pad_1400[0x9];
+    char pad_1399[0x9];
     bool m_Entity_bEnabled;
-    char end_pad_1401[0x6];
+    char end_pad_1400[0x6];
 };

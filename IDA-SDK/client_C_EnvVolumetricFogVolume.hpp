@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_EnvVolumetricFogVolume {
@@ -125,12 +122,12 @@ class client_C_EnvVolumetricFogVolume {
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
     bool m_bActive;
-    char pad_1411[0x3];
+    char pad_1410[0x3];
     Vector m_vBoxMins;
     Vector m_vBoxMaxs;
     bool m_bStartDisabled;
     bool m_bIndirectUseLPVs;
-    char pad_1412[0x2];
+    char pad_1411[0x2];
     float32 m_flStrength;
     int32_t m_nFalloffShape;
     float32 m_flFalloffExponent;

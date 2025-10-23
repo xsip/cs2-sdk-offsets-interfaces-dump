@@ -14,23 +14,13 @@ class server_CAI_Expresser;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "server_CHitboxComponent.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "server_CCollisionProperty.hpp"
 #include "server_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "server_PhysicsRagdollPose_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_SceneEventId_t.hpp"
 #include "server_CMovementStatsProperty.hpp"
 
@@ -42,28 +32,28 @@ class server_CHostageExpresserShim {
     entity2_CScriptComponent* m_CScriptComponent;
     server_CBodyComponent* m_CBodyComponent;
     client_CNetworkTransmitComponent m_NetworkTransmitComponent;
-    char pad_2794[0x40];
+    char pad_2793[0x40];
     char m_aThinkFunctions[0x18];
     int32_t m_iCurrentThinkContext;
     entity2_GameTick_t m_nLastThinkTick;
     bool m_bDisabledContextThinks;
-    char pad_2795[0xf];
+    char pad_2794[0xf];
     char m_isSteadyState[0x8];
     float32 m_lastNetworkChange;
-    char pad_2796[0xc];
+    char pad_2795[0xc];
     char m_ResponseContexts[0x18];
     CUtlSymbolLarge m_iszResponseContext;
-    char pad_2797[0x20];
+    char pad_2796[0x20];
     int32_t m_iHealth;
     int32_t m_iMaxHealth;
     uint8_t m_lifeState;
-    char pad_2798[0x3];
+    char pad_2797[0x3];
     float32 m_flDamageAccumulator;
     bool m_bTakesDamage;
-    char pad_2799[0x7];
+    char pad_2798[0x7];
     client_TakeDamageFlags_t m_nTakeDamageFlags;
     client_EntityPlatformTypes_t m_nPlatformType;
-    char pad_2800[0x1];
+    char pad_2799[0x1];
     client_MoveCollide_t m_MoveCollide;
     client_MoveType_t m_MoveType;
     client_MoveType_t m_nActualMoveType;
@@ -72,20 +62,20 @@ class server_CHostageExpresserShim {
     bool m_bRestoreInHierarchy;
     CUtlSymbolLarge m_target;
     char m_hDamageFilter[0x4];
-    char pad_2801[0x4];
+    char pad_2800[0x4];
     CUtlSymbolLarge m_iszDamageFilterName;
     float32 m_flMoveDoneTime;
     CUtlStringToken m_nSubclassID;
-    char pad_2802[0x8];
+    char pad_2801[0x8];
     float32 m_flAnimTime;
     float32 m_flSimulationTime;
     entity2_GameTime_t m_flCreateTime;
     bool m_bClientSideRagdoll;
     uint8_t m_ubInterpolationFrame;
-    char pad_2803[0x2];
+    char pad_2802[0x2];
     Vector m_vPrevVPhysicsUpdatePos;
     uint8_t m_iTeamNum;
-    char pad_2804[0x3];
+    char pad_2803[0x3];
     CUtlSymbolLarge m_iGlobalname;
     int32_t m_iSentToClients;
     float32 m_flSpeed;
@@ -93,12 +83,12 @@ class server_CHostageExpresserShim {
     uint32_t m_spawnflags;
     entity2_GameTick_t m_nNextThinkTick;
     int32_t m_nSimulationTick;
-    char pad_2805[0x4];
+    char pad_2804[0x4];
     entity2_CEntityIOOutput m_OnKilled;
     uint32_t m_fFlags;
     Vector m_vecAbsVelocity;
     client_CNetworkVelocityVector m_vecVelocity;
-    char pad_2806[0x8];
+    char pad_2805[0x8];
     Vector m_vecBaseVelocity;
     int32_t m_nPushEnumCount;
     server_CCollisionProperty* m_pCollision;
@@ -114,12 +104,12 @@ class server_CHostageExpresserShim {
     float32 m_flWaterLevel;
     bool m_bGravityDisabled;
     bool m_bAnimatedEveryTick;
-    char pad_2807[0x2];
+    char pad_2806[0x2];
     float32 m_flActualGravityScale;
     bool m_bGravityActuallyDisabled;
     bool m_bDisableLowViolence;
     uint8_t m_nWaterType;
-    char pad_2808[0x1];
+    char pad_2807[0x1];
     int32_t m_iEFlags;
     entity2_CEntityIOOutput m_OnUser1;
     entity2_CEntityIOOutput m_OnUser2;
@@ -130,7 +120,7 @@ class server_CHostageExpresserShim {
     QAngle m_vecAngVelocity;
     bool m_bNetworkQuantizeOriginAndAngles;
     bool m_bLagCompensate;
-    char pad_2809[0x2];
+    char pad_2808[0x2];
     char m_pBlocker[0x4];
     float32 m_flLocalTime;
     float32 m_flVPhysicsUpdateLocalTime;
@@ -150,7 +140,7 @@ class server_CHostageExpresserShim {
     int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex;
     server_CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent;
     client_HitGroup_t m_LastHitGroup;
-    char pad_2853[0x4];
+    char pad_2852[0x4];
     CGlobalSymbol m_sLastDamageSourceName;
     VectorWS m_vLastDamagePosition;
     entity2_GameTime_t m_flDissolveStartTime;
@@ -158,13 +148,13 @@ class server_CHostageExpresserShim {
     client_RenderMode_t m_nRenderMode;
     client_RenderFx_t m_nRenderFX;
     bool m_bAllowFadeInView;
-    char pad_2854[0x1d];
+    char pad_2853[0x1d];
     Color m_clrRender;
-    char pad_2855[0x4];
+    char pad_2854[0x4];
     char m_vecRenderAttributes[0x68];
     bool m_bRenderToCubemaps;
     bool m_bNoInterpolate;
-    char pad_2856[0x6];
+    char pad_2855[0x6];
     server_CCollisionProperty m_Collision;
     server_CGlowProperty m_Glow;
     float32 m_flGlowBackfaceMult;
@@ -173,54 +163,54 @@ class server_CHostageExpresserShim {
     float32 m_flFadeScale;
     float32 m_flShadowStrength;
     uint8_t m_nObjectCulling;
-    char pad_2857[0x3];
+    char pad_2856[0x3];
     int32_t m_nAddDecal;
     Vector m_vDecalPosition;
     Vector m_vDecalForwardAxis;
     client_DecalMode_t m_nDecalMode;
     client_DecalMode_t m_nRequiredDecalMode;
-    char pad_2858[0x2];
+    char pad_2857[0x2];
     char m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18];
-    char pad_2859[0x28];
+    char pad_2858[0x28];
     client_CNetworkViewOffsetVector m_vecViewOffset;
-    char pad_2860[0x8];
+    char pad_2859[0x8];
     uint32_t m_bvDisabledHitGroups[1];
-    char end_pad_2861[0x4];
-    char vTable2846[0x80];
+    char end_pad_2860[0x4];
+    char vTable2845[0x80];
     bool m_bInitiallyPopulateInterpHistory;
-    char pad_2847[0x7];
+    char pad_2846[0x7];
     client_IChoreoServices* m_pChoreoServices;
     bool m_bAnimGraphUpdateEnabled;
-    char pad_2848[0x3];
+    char pad_2847[0x3];
     float32 m_flMaxSlopeDistance;
     VectorWS m_vLastSlopeCheckPos;
     bool m_bAnimationUpdateScheduled;
-    char pad_2849[0x3];
+    char pad_2848[0x3];
     Vector m_vecForce;
     int32_t m_nForceBone;
-    char pad_2850[0x10];
+    char pad_2849[0x10];
     server_PhysicsRagdollPose_t m_RagdollPose;
     bool m_bRagdollEnabled;
     bool m_bRagdollClientSide;
-    char pad_2851[0x6];
+    char pad_2850[0x6];
     CTransform m_xParentedRagdollRootInEntitySpace;
-    char end_pad_2852[0x1a0];
+    char end_pad_2851[0x1a0];
     char m_flexWeight[0x18];
     VectorWS m_vLookTargetPosition;
     bool m_blinktoggle;
-    char pad_2844[0x53];
+    char pad_2843[0x53];
     entity2_GameTime_t m_flAllowResponsesEndTime;
     entity2_GameTime_t m_flLastFlexAnimationTime;
     client_SceneEventId_t m_nNextSceneEventId;
     bool m_bUpdateLayerPriorities;
-    char end_pad_2845[0xb];
+    char end_pad_2844[0xb];
     bool m_bForceServerRagdoll;
-    char pad_3152[0x7];
+    char pad_3151[0x7];
     char m_hMyWearables[0x18];
     float32 m_impactEnergyScale;
     bool m_bApplyStressDamage;
     bool m_bDeathEventsDispatched;
-    char pad_3153[0x42];
+    char pad_3152[0x42];
     char m_pVecRelationships[0x8];
     CUtlSymbolLarge m_strRelationships;
     client_Hull_t m_eHull;

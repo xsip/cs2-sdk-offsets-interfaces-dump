@@ -14,5 +14,5 @@ class server_CCSPlayerController_ActionTrackingServices {
     int32_t m_iNumRoundKills;
     int32_t m_iNumRoundKillsHeadshots;
     float32 m_flTotalRoundDamageDealt;
-    char end_pad_3376[0xdc];
+    char end_pad_3375[0xdc];
 };

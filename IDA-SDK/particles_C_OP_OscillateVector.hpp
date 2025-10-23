@@ -6,11 +6,9 @@ class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particles_ParticleAttributeIndex_t.hpp"
 #include "particleslib_CPerParticleFloatInput.hpp"
-#include "particleslib_CPerParticleFloatInput.hpp"
-#include "particleslib_CPerParticleFloatInput.hpp"
 
 class particles_C_OP_OscillateVector {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -19,18 +17,18 @@ class particles_C_OP_OscillateVector {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     Vector m_RateMin;
     Vector m_RateMax;
     Vector m_FrequencyMin;
@@ -39,7 +37,7 @@ class particles_C_OP_OscillateVector {
     bool m_bProportional;
     bool m_bProportionalOp;
     bool m_bOffset;
-    char pad_2120[0x1];
+    char pad_2119[0x1];
     float32 m_flStartTime_min;
     float32 m_flStartTime_max;
     float32 m_flEndTime_min;

@@ -8,7 +8,7 @@ class worldrenderer_AggregateMeshInfo_t {
     uint8_t m_nVisClusterMemberCount;
     bool m_bHasTransform;
     uint8_t m_nLODGroupMask;
-    char pad_2471[0x1];
+    char pad_2470[0x1];
     int16_t m_nDrawCallIndex;
     int16_t m_nLODSetupIndex;
     Color m_vTintColor;
@@ -17,5 +17,5 @@ class worldrenderer_AggregateMeshInfo_t {
     uint32_t m_nInstanceStreamOffset;
     uint32_t m_nVertexAlbedoStreamOffset;
     worldrenderer_AggregateInstanceStream_t m_instanceStreams;
-    char end_pad_2472[0x3];
+    char end_pad_2471[0x3];
 };

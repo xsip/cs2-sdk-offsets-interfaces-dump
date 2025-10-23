@@ -6,10 +6,10 @@
 #include "entity2_GameTime_t.hpp"
 
 class server_CCSGameModeRules_Deathmatch {
-    char vTable3221[0x8];
+    char vTable3220[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
     entity2_GameTime_t m_flDMBonusStartTime;
     float32 m_flDMBonusTimeLength;
     CUtlString m_sDMBonusWeapon;
-    char end_pad_3223[0x48];
+    char end_pad_3222[0x48];
 };

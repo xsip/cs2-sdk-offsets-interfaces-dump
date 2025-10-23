@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 
@@ -131,8 +128,8 @@ class client_CInfoWorldLayer {
     bool m_bWorldLayerVisible;
     bool m_bEntitiesSpawned;
     bool m_bCreateAsChildSpawnGroup;
-    char pad_971[0x1];
+    char pad_982[0x1];
     uint32_t m_hLayerSpawnGroup;
     bool m_bWorldLayerActuallyVisible;
-    char end_pad_972[0x7];
+    char end_pad_983[0x7];
 };

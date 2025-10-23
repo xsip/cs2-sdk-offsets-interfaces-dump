@@ -13,24 +13,13 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_ColorCorrectionVolume {
     char vTable723[0x8];
@@ -207,10 +196,10 @@ class client_C_ColorCorrectionVolume {
     float32 m_LastExitWeight;
     entity2_GameTime_t m_LastExitTime;
     bool m_bEnabled;
-    char pad_1357[0x3];
+    char pad_1356[0x3];
     float32 m_MaxWeight;
     float32 m_FadeDuration;
     float32 m_Weight;
     char m_lookupFilename[512];
-    char end_pad_1358[0x8];
+    char end_pad_1357[0x8];
 };

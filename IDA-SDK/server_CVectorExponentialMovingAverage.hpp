@@ -4,5 +4,5 @@
 
 
 class server_CVectorExponentialMovingAverage {
-    char pad_2748[0x2c];
+    char pad_2747[0x2c];
 };

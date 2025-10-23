@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCDotaItemDefinitionResource {
-    char pad_2388[0x1];
+    char pad_2387[0x1];
 };

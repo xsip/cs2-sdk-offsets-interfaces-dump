@@ -13,16 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_GameTick_t.hpp"
 
 class client_C_FuncConveyor {
     char vTable723[0x8];
@@ -182,13 +178,13 @@ class client_C_FuncConveyor {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1430[0x8];
+    char vTable1429[0x8];
     Vector m_vecMoveDirEntitySpace;
     float32 m_flTargetSpeed;
     entity2_GameTick_t m_nTransitionStartTick;
     int32_t m_nTransitionDurationTicks;
     float32 m_flTransitionStartSpeed;
-    char pad_1431[0x4];
+    char pad_1430[0x4];
     char m_hConveyorModels[0x18];
     float32 m_flCurrentConveyorOffset;
     float32 m_flCurrentConveyorSpeed;

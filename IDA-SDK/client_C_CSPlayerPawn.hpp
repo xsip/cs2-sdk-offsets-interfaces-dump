@@ -31,10 +31,7 @@ class client_C_CSWeaponBase;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -43,34 +40,11 @@ class client_C_CSWeaponBase;
 #include "client_PhysicsRagdollPose_t.hpp"
 #include "client_SceneEventId_t.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "client_Emphasized_Phoneme.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "client_sky3dparams_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_C_EconItemView.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_EntitySpottedState_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "client_ParticleIndex_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "client_CountdownTimer.hpp"
 #include "client_CountdownTimer.hpp"
 
 class client_C_CSPlayerPawn {
@@ -253,39 +227,39 @@ class client_C_CSPlayerPawn {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1153[0x10];
+    char vTable1164[0x10];
     char m_flexWeight[0x18];
     VectorWS m_vLookTargetPosition;
-    char pad_1154[0x84];
+    char pad_1165[0x84];
     bool m_blinktoggle;
-    char pad_1155[0x5f];
+    char pad_1166[0x5f];
     int32_t m_nLastFlexUpdateFrameCount;
     Vector m_CachedViewTarget;
     client_SceneEventId_t m_nNextSceneEventId;
     int32_t m_iBlink;
     float32 m_blinktime;
     bool m_prevblinktoggle;
-    char pad_1156[0x3];
+    char pad_1167[0x3];
     int32_t m_iJawOpen;
     float32 m_flJawOpenAmount;
     float32 m_flBlinkAmount;
     modellib_AttachmentHandle_t m_iMouthAttachment;
     modellib_AttachmentHandle_t m_iEyeAttachment;
     bool m_bResetFlexWeightsOnModelChange;
-    char pad_1157[0x19];
+    char pad_1168[0x19];
     int32_t m_nEyeOcclusionRendererBone;
     matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform;
     Vector m_vEyeOcclusionRendererHalfExtent;
-    char pad_1158[0x10];
+    char pad_1169[0x10];
     client_Emphasized_Phoneme m_PhonemeClasses[3];
     char m_hMyWearables[0x18];
     modellib_AttachmentHandle_t m_leftFootAttachment;
     modellib_AttachmentHandle_t m_rightFootAttachment;
-    char pad_1186[0x2];
+    char pad_1197[0x2];
     client_WaterWakeMode_t m_nWaterWakeMode;
     float32 m_flWaterWorldZ;
     float32 m_flWaterNextTraceTime;
-    char end_pad_1187[0x60];
+    char end_pad_1198[0x60];
     client_CPlayer_WeaponServices* m_pWeaponServices;
     client_CPlayer_ItemServices* m_pItemServices;
     client_CPlayer_AutoaimServices* m_pAutoaimServices;
@@ -295,17 +269,17 @@ class client_C_CSPlayerPawn {
     client_CPlayer_FlashlightServices* m_pFlashlightServices;
     client_CPlayer_CameraServices* m_pCameraServices;
     client_CPlayer_MovementServices* m_pMovementServices;
-    char pad_1192[0x8];
+    char pad_1203[0x8];
     char m_ServerViewAngleChanges[0x68];
     QAngle v_angle;
     QAngle v_anglePrevious;
     uint32_t m_iHideHUD;
-    char pad_1193[0x4];
+    char pad_1204[0x4];
     client_sky3dparams_t m_skybox3d;
     entity2_GameTime_t m_flDeathTime;
     Vector m_vecPredictionError;
     entity2_GameTime_t m_flPredictionErrorTime;
-    char pad_1194[0x1c];
+    char pad_1205[0x1c];
     Vector m_vecLastCameraSetupLocalOrigin;
     entity2_GameTime_t m_flLastCameraSetupTime;
     float32 m_flFOVSensitivityAdjust;
@@ -317,13 +291,13 @@ class client_C_CSPlayerPawn {
     char m_hController[0x4];
     char m_hDefaultController[0x4];
     bool m_bIsSwappingToPredictableController;
-    char end_pad_1195[0x7];
-    char vTable1290[0x10];
+    char end_pad_1206[0x7];
+    char vTable1289[0x10];
     client_CCSPlayer_PingServices* m_pPingServices;
     client_CSPlayerState m_previousPlayerState;
     client_CSPlayerState m_iPlayerState;
     bool m_bHasMovedSinceSpawn;
-    char pad_1291[0x3];
+    char pad_1290[0x3];
     entity2_GameTime_t m_flLastSpawnTimeIndex;
     int32_t m_iProgressBarDuration;
     float32 m_flProgressBarStartTime;
@@ -334,24 +308,24 @@ class client_C_CSPlayerPawn {
     bool m_bFlashBuildUp;
     bool m_bFlashDspHasBeenCleared;
     bool m_bFlashScreenshotHasBeenGrabbed;
-    char pad_1292[0x1];
+    char pad_1291[0x1];
     float32 m_flFlashMaxAlpha;
     float32 m_flFlashDuration;
     entity2_GameTime_t m_flClientHealthFadeChangeTimestamp;
     int32_t m_nClientHealthFadeParityValue;
     float32 m_fNextThinkPushAway;
-    char pad_1293[0x4];
+    char pad_1292[0x4];
     float32 m_flCurrentMusicStartTime;
     float32 m_flMusicRoundStartTime;
     bool m_bDeferStartMusicOnWarmup;
-    char pad_1294[0x3];
+    char pad_1293[0x3];
     float32 m_flLastSmokeOverlayAlpha;
     float32 m_flLastSmokeAge;
     Vector m_vLastSmokeOverlayColor;
-    char pad_1295[0x1c];
+    char pad_1294[0x1c];
     char m_hOriginalController[0x4];
-    char end_pad_1296[0x4];
-    char vTable1298[0x10];
+    char end_pad_1295[0x4];
+    char vTable1297[0x10];
     client_CCSPlayer_BulletServices* m_pBulletServices;
     client_CCSPlayer_HostageServices* m_pHostageServices;
     client_CCSPlayer_BuyServices* m_pBuyServices;
@@ -361,7 +335,7 @@ class client_C_CSPlayerPawn {
     entity2_GameTime_t m_flHealthShotBoostExpirationTime;
     entity2_GameTime_t m_flLastFiredWeaponTime;
     bool m_bHasFemaleVoice;
-    char pad_1299[0x3];
+    char pad_1298[0x3];
     float32 m_flLandingTimeSeconds;
     float32 m_flOldFallVelocity;
     char m_szLastPlaceName[18];
@@ -373,74 +347,74 @@ class client_C_CSPlayerPawn {
     uint32_t m_unWeaponHash;
     bool m_bInBuyZone;
     bool m_bPreviouslyInBuyZone;
-    char pad_1300[0x2];
+    char pad_1299[0x2];
     QAngle m_aimPunchAngle;
     QAngle m_aimPunchAngleVel;
     entity2_GameTick_t m_aimPunchTickBase;
     float32 m_aimPunchTickFraction;
-    char pad_1301[0x4];
+    char pad_1300[0x4];
     char m_aimPunchCache[0x18];
-    char pad_1302[0x8];
+    char pad_1301[0x8];
     bool m_bInLanding;
-    char pad_1303[0x3];
+    char pad_1302[0x3];
     float32 m_flLandingStartTime;
     bool m_bInHostageRescueZone;
     bool m_bInBombZone;
     bool m_bIsBuyMenuOpen;
-    char pad_1304[0x1];
+    char pad_1303[0x1];
     entity2_GameTime_t m_flTimeOfLastInjury;
     entity2_GameTime_t m_flNextSprayDecalTime;
-    char pad_1305[0x154];
+    char pad_1304[0x154];
     int32_t m_iRetakesOffering;
     int32_t m_iRetakesOfferingCard;
     bool m_bRetakesHasDefuseKit;
     bool m_bRetakesMVPLastRound;
-    char pad_1306[0x2];
+    char pad_1305[0x2];
     int32_t m_iRetakesMVPBoostItem;
     client_loadout_slot_t m_RetakesMVPBoostExtraUtility;
-    char pad_1307[0x1];
+    char pad_1306[0x1];
     bool m_bNeedToReApplyGloves;
-    char pad_1308[0x2];
+    char pad_1307[0x2];
     client_C_EconItemView m_EconGloves;
     uint8_t m_nEconGlovesChanged;
     bool m_bMustSyncRagdollState;
-    char pad_1309[0x2];
+    char pad_1308[0x2];
     int32_t m_nRagdollDamageBone;
     Vector m_vRagdollDamageForce;
     Vector m_vRagdollDamagePosition;
     char m_szRagdollDamageWeaponName[64];
     bool m_bRagdollDamageHeadshot;
-    char pad_1310[0x3];
+    char pad_1309[0x3];
     Vector m_vRagdollServerOrigin;
-    char pad_1311[0x670];
+    char pad_1310[0x670];
     entity2_GameTime_t m_lastLandTime;
     bool m_bOnGroundLastTick;
-    char pad_1312[0x1b];
+    char pad_1311[0x1b];
     char m_hHudModelArms[0x4];
     QAngle m_qDeathEyeAngles;
     bool m_bSkipOneHeadConstraintUpdate;
     bool m_bLeftHanded;
-    char pad_1313[0x2];
+    char pad_1312[0x2];
     entity2_GameTime_t m_fSwitchedHandednessTime;
     float32 m_flViewmodelOffsetX;
     float32 m_flViewmodelOffsetY;
     float32 m_flViewmodelOffsetZ;
     float32 m_flViewmodelFOV;
     uint32_t m_vecPlayerPatchEconIndices[5];
-    char pad_1314[0x24];
+    char pad_1313[0x24];
     Color m_GunGameImmunityColor;
-    char pad_1315[0x4c];
+    char pad_1314[0x4c];
     char m_vecBulletHitModels[0x18];
     bool m_bIsWalking;
-    char pad_1316[0x7];
+    char pad_1315[0x7];
     QAngle m_thirdPersonHeading;
-    char pad_1317[0x84];
+    char pad_1316[0x84];
     float32 m_flSlopeDropOffset;
-    char pad_1318[0x74];
+    char pad_1317[0x74];
     float32 m_flSlopeDropHeight;
-    char pad_1319[0x74];
+    char pad_1318[0x74];
     Vector m_vHeadConstraintOffset;
-    char pad_1320[0x84];
+    char pad_1319[0x84];
     client_EntitySpottedState_t m_entitySpottedState;
     bool m_bIsScoped;
     bool m_bResumeZoom;
@@ -449,7 +423,7 @@ class client_C_CSPlayerPawn {
     client_CSPlayerBlockingUseAction_t m_iBlockingUseActionInProgress;
     entity2_GameTime_t m_flEmitSoundTime;
     bool m_bInNoDefuseArea;
-    char pad_1321[0x3];
+    char pad_1320[0x3];
     int32_t m_nWhichBombZone;
     int32_t m_iShotsFired;
     float32 m_flFlinchStack;
@@ -457,26 +431,26 @@ class client_C_CSPlayerPawn {
     float32 m_flHitHeading;
     int32_t m_nHitBodyPart;
     bool m_bWaitForNoAttack;
-    char pad_1322[0x3];
+    char pad_1321[0x3];
     float32 m_ignoreLadderJumpTime;
-    char pad_1323[0x1];
+    char pad_1322[0x1];
     bool m_bKilledByHeadshot;
-    char pad_1324[0x2];
+    char pad_1323[0x2];
     int32_t m_ArmorValue;
     uint16_t m_unCurrentEquipmentValue;
     uint16_t m_unRoundStartEquipmentValue;
     uint16_t m_unFreezetimeEndEquipmentValue;
-    char pad_1325[0x2];
+    char pad_1324[0x2];
     CEntityIndex m_nLastKillerIndex;
     bool m_bOldIsScoped;
     bool m_bHasDeathInfo;
-    char pad_1326[0x2];
+    char pad_1325[0x2];
     float32 m_flDeathInfoTime;
     Vector m_vecDeathInfoOrigin;
-    char pad_1327[0x4];
+    char pad_1326[0x4];
     entity2_GameTime_t m_grenadeParameterStashTime;
     bool m_bGrenadeParametersStashed;
-    char pad_1328[0x3];
+    char pad_1327[0x3];
     QAngle m_angStashedShootAngles;
     Vector m_vecStashedGrenadeThrowPosition;
     Vector m_vecStashedVelocity;
@@ -486,15 +460,15 @@ class client_C_CSPlayerPawn {
     char m_PredictedDamageTags[0x68];
     entity2_GameTick_t m_nPrevHighestReceivedDamageTagTick;
     int32_t m_nHighestAppliedDamageTagTick;
-    char pad_1329[0x1534];
+    char pad_1328[0x1534];
     bool m_bShouldAutobuyDMWeapons;
-    char pad_1330[0x3];
+    char pad_1329[0x3];
     entity2_GameTime_t m_fImmuneToGunGameDamageTime;
     bool m_bGunGameImmunity;
-    char pad_1331[0x3];
+    char pad_1330[0x3];
     entity2_GameTime_t m_fImmuneToGunGameDamageTimeLast;
     float32 m_fMolotovDamageTime;
-    char pad_1332[0x4];
+    char pad_1331[0x4];
     Vector m_vecLastAliveLocalVelocity;
     float32 m_fRenderingClipPlane[4];
     int32_t m_nLastClipPlaneSetupFrame;
@@ -502,12 +476,12 @@ class client_C_CSPlayerPawn {
     Vector m_vecLastClipCameraForward;
     bool m_bClipHitStaticWorld;
     bool m_bCachedPlaneIsValid;
-    char pad_1333[0x2];
+    char pad_1332[0x2];
     client_C_CSWeaponBase* m_pClippingWeapon;
     client_ParticleIndex_t m_nPlayerInfernoBodyFx;
-    char pad_1334[0x4];
+    char pad_1333[0x4];
     QAngle m_angEyeAngles;
-    char pad_1335[0x84];
+    char pad_1334[0x84];
     entity2_GameTime_t m_arrOldEyeAnglesTimes[4];
     QAngle m_arrOldEyeAngles[4];
     QAngle m_angEyeAnglesVelocity;
@@ -516,5 +490,5 @@ class client_C_CSPlayerPawn {
     CEntityIndex m_iTargetItemEntIdx;
     CEntityIndex m_iOldIDEntIndex;
     client_CountdownTimer m_holdTargetIDTimer;
-    char end_pad_1336[0x8];
+    char end_pad_1335[0x8];
 };

@@ -9,7 +9,7 @@ class particles_ParticlePreviewState_t {
     particles_PetGroundType_t m_groundType;
     CUtlString m_sequenceName;
     int32_t m_nFireParticleOnSequenceFrame;
-    char pad_2360[0x4];
+    char pad_2359[0x4];
     CUtlString m_hitboxSetName;
     CUtlString m_materialGroupName;
     char m_vecBodyGroups[0x18];
@@ -21,7 +21,7 @@ class particles_ParticlePreviewState_t {
     bool m_bShouldDrawControlPointAxes;
     bool m_bAnimationNonLooping;
     bool m_bSequenceNameIsAnimClipPath;
-    char pad_2361[0x2];
+    char pad_2360[0x2];
     Vector m_vecPreviewGravity;
-    char end_pad_2362[0x4];
+    char end_pad_2361[0x4];
 };

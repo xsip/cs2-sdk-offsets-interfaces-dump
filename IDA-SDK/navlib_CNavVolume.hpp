@@ -4,5 +4,5 @@
 
 
 class navlib_CNavVolume {
-    char pad_2753[0x78];
+    char pad_2752[0x78];
 };

@@ -4,7 +4,7 @@
 
 
 class server_CPhysicsShake {
-    char vTable3540[0x8];
+    char vTable3539[0x8];
     Vector m_force;
-    char pad_3541[0x4];
+    char pad_3540[0x4];
 };

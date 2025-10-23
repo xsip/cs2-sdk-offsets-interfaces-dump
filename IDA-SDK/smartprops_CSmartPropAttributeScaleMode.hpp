@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeScaleMode {
-    char pad_2548[0x40];
+    char pad_2547[0x40];
 };

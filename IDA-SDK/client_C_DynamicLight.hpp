@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -183,11 +180,11 @@ class client_C_DynamicLight {
     char end_pad_612[0x4];
     uint8_t m_Flags;
     uint8_t m_LightStyle;
-    char pad_1364[0x2];
+    char pad_1363[0x2];
     float32 m_Radius;
     int32_t m_Exponent;
     float32 m_InnerAngle;
     float32 m_OuterAngle;
     float32 m_SpotRadius;
-    char end_pad_1365[0x10];
+    char end_pad_1364[0x10];
 };

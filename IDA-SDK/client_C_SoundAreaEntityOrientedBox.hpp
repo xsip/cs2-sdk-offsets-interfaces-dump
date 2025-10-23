@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_SoundAreaEntityOrientedBox {
@@ -125,12 +122,12 @@ class client_C_SoundAreaEntityOrientedBox {
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
     bool m_bDisabled;
-    char pad_1580[0x7];
+    char pad_1579[0x7];
     bool m_bWasEnabled;
-    char pad_1581[0x7];
+    char pad_1580[0x7];
     CUtlSymbolLarge m_iszSoundAreaType;
     Vector m_vPos;
-    char end_pad_1582[0x4];
+    char end_pad_1581[0x4];
     Vector m_vMin;
     Vector m_vMax;
 };

@@ -6,7 +6,7 @@
 
 class physicslib_FeSimdTri_t {
     uint32_t nNode[4];
-    char pad_2447[0x30];
+    char pad_2446[0x30];
     fltx4 w1;
     fltx4 w2;
     fltx4 v1x;

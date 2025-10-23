@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -209,8 +206,8 @@ class client_C_BulletHitModel {
     int32_t m_iBoneIndex;
     char m_hPlayerParent[0x4];
     bool m_bIsHit;
-    char pad_1220[0x3];
+    char pad_1221[0x3];
     float32 m_flTimeCreated;
     Vector m_vecStartPos;
-    char end_pad_1221[0x4];
+    char end_pad_1222[0x4];
 };

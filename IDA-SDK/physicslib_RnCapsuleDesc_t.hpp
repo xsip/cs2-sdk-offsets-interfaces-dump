@@ -10,8 +10,8 @@ class physicslib_RnCapsuleDesc_t {
     CUtlString m_UserFriendlyName;
     bool m_bUserFriendlyNameSealed;
     bool m_bUserFriendlyNameLong;
-    char pad_2418[0x2];
+    char pad_2417[0x2];
     uint32_t m_nToolMaterialHash;
     physicslib_RnCapsule_t m_Capsule;
-    char end_pad_2417[0x4];
+    char end_pad_2416[0x4];
 };

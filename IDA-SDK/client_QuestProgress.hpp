@@ -4,5 +4,5 @@
 
 
 class client_QuestProgress {
-    char pad_1640[0x1];
+    char pad_1639[0x1];
 };

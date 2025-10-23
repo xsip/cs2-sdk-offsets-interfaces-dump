@@ -4,7 +4,7 @@
 
 
 class client_C_fogplayerparams_t {
-    char vTable1605[0x8];
+    char vTable1604[0x8];
     char m_hCtrl[0x4];
     float32 m_flTransitionTime;
     Color m_OldColor;

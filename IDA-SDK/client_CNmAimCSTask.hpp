@@ -4,6 +4,6 @@
 
 
 class client_CNmAimCSTask {
-    char pad_1007[0x50];
-    char pad_1006[0xe0];
+    char pad_1018[0x50];
+    char pad_1017[0xe0];
 };

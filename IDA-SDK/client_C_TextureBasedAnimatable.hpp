@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -182,7 +179,7 @@ class client_C_TextureBasedAnimatable {
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
     bool m_bLoop;
-    char pad_1594[0x3];
+    char pad_1593[0x3];
     float32 m_flFPS;
     char m_hPositionKeys[0x8];
     char m_hRotationKeys[0x8];

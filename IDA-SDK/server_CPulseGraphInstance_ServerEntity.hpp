@@ -4,7 +4,7 @@
 
 
 class server_CPulseGraphInstance_ServerEntity {
-    char pad_2701[0x118];
+    char pad_2700[0x118];
     char vTable3968[0x78];
     char m_hOwner[0x4];
     bool m_bActivated;

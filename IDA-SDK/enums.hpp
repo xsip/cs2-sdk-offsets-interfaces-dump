@@ -1168,6 +1168,18 @@ enum client_filter_t : uint32_t {
 			filter_t_FILTER_OR = 0x1
 		};
 
+enum client_PerformanceMode_t : uint32_t {
+			PerformanceMode_t_PM_NORMAL = 0x0,
+			PerformanceMode_t_PM_NO_GIBS = 0x1
+		};
+
+enum client_BreakableContentsType_t : uint32_t {
+			BreakableContentsType_t_BC_DEFAULT = 0x0,
+			BreakableContentsType_t_BC_EMPTY = 0x1,
+			BreakableContentsType_t_BC_PARTICLE_SYSTEM_OVERRIDE = 0x3,
+			BreakableContentsType_t_BC_PROP_GROUP_OVERRIDE = 0x2
+		};
+
 enum client_GrenadeType_t : uint32_t {
 			GrenadeType_t_GRENADE_TYPE_DECOY = 0x3,
 			GrenadeType_t_GRENADE_TYPE_EXPLOSIVE = 0x0,
@@ -1298,18 +1310,6 @@ enum client_DoorState_t : uint32_t {
 			DoorState_t_DOOR_STATE_CLOSING = 0x3,
 			DoorState_t_DOOR_STATE_OPEN = 0x2,
 			DoorState_t_DOOR_STATE_OPENING = 0x1
-		};
-
-enum client_PerformanceMode_t : uint32_t {
-			PerformanceMode_t_PM_NORMAL = 0x0,
-			PerformanceMode_t_PM_NO_GIBS = 0x1
-		};
-
-enum client_BreakableContentsType_t : uint32_t {
-			BreakableContentsType_t_BC_DEFAULT = 0x0,
-			BreakableContentsType_t_BC_EMPTY = 0x1,
-			BreakableContentsType_t_BC_PARTICLE_SYSTEM_OVERRIDE = 0x3,
-			BreakableContentsType_t_BC_PROP_GROUP_OVERRIDE = 0x2
 		};
 
 enum client_BeamType_t : uint32_t {
@@ -2822,6 +2822,12 @@ enum server_PropDoorRotatingOpenDirection_e : uint32_t {
 			PropDoorRotatingOpenDirection_e_DOOR_ROTATING_OPEN_BACKWARD = 0x2,
 			PropDoorRotatingOpenDirection_e_DOOR_ROTATING_OPEN_BOTH_WAYS = 0x0,
 			PropDoorRotatingOpenDirection_e_DOOR_ROTATING_OPEN_FORWARD = 0x1
+		};
+
+enum server_doorCheck_e : uint32_t {
+			doorCheck_e_DOOR_CHECK_BACKWARD = 0x1,
+			doorCheck_e_DOOR_CHECK_FORWARD = 0x0,
+			doorCheck_e_DOOR_CHECK_FULL = 0x2
 		};
 
 enum server_SoundEventStartType_t : uint32_t {

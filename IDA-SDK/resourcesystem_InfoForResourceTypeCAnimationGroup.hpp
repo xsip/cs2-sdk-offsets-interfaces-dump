@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCAnimationGroup {
-    char pad_2369[0x1];
+    char pad_2368[0x1];
 };

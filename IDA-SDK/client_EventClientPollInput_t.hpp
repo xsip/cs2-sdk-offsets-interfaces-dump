@@ -7,5 +7,5 @@
 class client_EventClientPollInput_t {
     client_EngineLoopState_t m_LoopState;
     float32 m_flRealTime;
-    char end_pad_1620[0x4];
+    char end_pad_1619[0x4];
 };

@@ -3,7 +3,6 @@
 #include "typedefs.hpp"
 
 #include "modellib_CRenderBufferBinding.hpp"
-#include "modellib_CRenderBufferBinding.hpp"
 
 class modellib_CMaterialDrawDescriptor {
     float32 m_flUvDensity;

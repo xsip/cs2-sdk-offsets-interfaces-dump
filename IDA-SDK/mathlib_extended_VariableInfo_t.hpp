@@ -11,5 +11,5 @@ class mathlib_extended_VariableInfo_t {
     uint8_t m_nNumComponents;
     mathlib_extended_FuseVariableType_t m_eVarType;
     mathlib_extended_FuseVariableAccess_t m_eAccess;
-    char end_pad_2600[0x7];
+    char end_pad_2599[0x7];
 };

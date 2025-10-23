@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_C_EnvWindShared.hpp"
 
@@ -136,5 +133,5 @@ class client_C_EnvWindController {
     int32_t m_nClipmapLevels;
     bool m_bIsMaster;
     bool m_bFirstTime;
-    char end_pad_1415[0x6];
+    char end_pad_1414[0x6];
 };

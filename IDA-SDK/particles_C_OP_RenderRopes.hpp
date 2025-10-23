@@ -6,40 +6,11 @@ class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particles_CParticleVisibilityInputs.hpp"
 #include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
 #include "particles_ParticleAttributeIndex_t.hpp"
 #include "particleslib_CParticleCollectionRendererVecInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particles_ParticleAttributeIndex_t.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particleslib_CParticleCollectionRendererFloatInput.hpp"
-#include "particles_ParticleAttributeIndex_t.hpp"
-#include "particles_ParticleAttributeIndex_t.hpp"
-#include "particles_ParticleAttributeIndex_t.hpp"
 
 class particles_C_OP_RenderRopes {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -48,27 +19,27 @@ class particles_C_OP_RenderRopes {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     particles_CParticleVisibilityInputs VisibilityInputs;
     bool m_bCannotBeRefracted;
     bool m_bSkipRenderingOnMobile;
-    char end_pad_1787[0x6];
+    char end_pad_1786[0x6];
     particleslib_CParticleCollectionRendererFloatInput m_flRadiusScale;
     particleslib_CParticleCollectionRendererFloatInput m_flAlphaScale;
     particleslib_CParticleCollectionRendererFloatInput m_flRollScale;
     particles_ParticleAttributeIndex_t m_nAlpha2Field;
-    char pad_1780[0x4];
+    char pad_1779[0x4];
     particleslib_CParticleCollectionRendererVecInput m_vecColorScale;
     particles_ParticleColorBlendType_t m_nColorBlendType;
     particles_SpriteCardShaderType_t m_nShaderType;
@@ -81,7 +52,7 @@ class particles_C_OP_RenderRopes {
     float32 m_flAnimationRate;
     particles_AnimationType_t m_nAnimationType;
     bool m_bAnimateInFPS;
-    char pad_1781[0x7];
+    char pad_1780[0x7];
     particleslib_CParticleCollectionRendererFloatInput m_flMotionVectorScaleU;
     particleslib_CParticleCollectionRendererFloatInput m_flMotionVectorScaleV;
     particleslib_CParticleCollectionRendererFloatInput m_flSelfIllumAmount;
@@ -92,7 +63,7 @@ class particles_C_OP_RenderRopes {
     particles_ParticleOutputBlendMode_t m_nOutputBlendMode;
     bool m_bGammaCorrectVertexColors;
     bool m_bSaturateColorPreAlphaBlend;
-    char pad_1782[0x2];
+    char pad_1781[0x2];
     particleslib_CParticleCollectionRendererFloatInput m_flAddSelfAmount;
     particleslib_CParticleCollectionRendererFloatInput m_flDesaturation;
     particleslib_CParticleCollectionRendererFloatInput m_flOverbrightFactor;
@@ -101,7 +72,7 @@ class particles_C_OP_RenderRopes {
     particleslib_CParticleCollectionRendererFloatInput m_flFogAmount;
     bool m_bTintByFOW;
     bool m_bTintByGlobalLight;
-    char pad_1783[0x2];
+    char pad_1782[0x2];
     particles_SpriteCardPerParticleScale_t m_nPerParticleAlphaReference;
     particles_SpriteCardPerParticleScale_t m_nPerParticleAlphaRefWindow;
     particles_ParticleAlphaReferenceType_t m_nAlphaReferenceType;
@@ -110,7 +81,7 @@ class particles_C_OP_RenderRopes {
     particleslib_CParticleCollectionRendererFloatInput m_flSourceAlphaValueToMapToOne;
     bool m_bRefract;
     bool m_bRefractSolid;
-    char pad_1784[0x6];
+    char pad_1783[0x6];
     particleslib_CParticleCollectionRendererFloatInput m_flRefractAmount;
     int32_t m_nRefractBlurRadius;
     particles_BlurFilterType_t m_nRefractBlurType;
@@ -125,7 +96,7 @@ class particles_C_OP_RenderRopes {
     bool m_bWriteStencilOnDepthFail;
     bool m_bReverseZBuffering;
     bool m_bDisableZBuffering;
-    char pad_1785[0x3];
+    char pad_1784[0x3];
     particles_ParticleDepthFeatheringMode_t m_nFeatheringMode;
     particleslib_CParticleCollectionRendererFloatInput m_flFeatheringMinDist;
     particleslib_CParticleCollectionRendererFloatInput m_flFeatheringMaxDist;
@@ -135,9 +106,9 @@ class particles_C_OP_RenderRopes {
     particles_ParticleSortingChoiceList_t m_nSortMethod;
     bool m_bBlendFramesSeq0;
     bool m_bMaxLuminanceBlendingSequence0;
-    char end_pad_1786[0x272];
+    char end_pad_1785[0x272];
     bool m_bEnableFadingAndClamping;
-    char pad_2237[0x3];
+    char pad_2236[0x3];
     float32 m_flMinSize;
     float32 m_flMaxSize;
     float32 m_flStartFadeSize;
@@ -148,32 +119,32 @@ class particles_C_OP_RenderRopes {
     int32_t m_nMinTesselation;
     int32_t m_nMaxTesselation;
     float32 m_flTessScale;
-    char pad_2238[0x4];
+    char pad_2237[0x4];
     particleslib_CParticleCollectionRendererFloatInput m_flTextureVWorldSize;
     particleslib_CParticleCollectionRendererFloatInput m_flTextureVScrollRate;
     particleslib_CParticleCollectionRendererFloatInput m_flTextureVOffset;
     int32_t m_nTextureVParamsCP;
     bool m_bClampV;
-    char pad_2239[0x3];
+    char pad_2238[0x3];
     int32_t m_nScaleCP1;
     int32_t m_nScaleCP2;
     float32 m_flScaleVSizeByControlPointDistance;
     float32 m_flScaleVScrollByControlPointDistance;
     float32 m_flScaleVOffsetByControlPointDistance;
-    char pad_2240[0x1];
+    char pad_2239[0x1];
     bool m_bUseScalarForTextureCoordinate;
-    char pad_2241[0x2];
+    char pad_2240[0x2];
     particles_ParticleAttributeIndex_t m_nScalarFieldForTextureCoordinate;
     float32 m_flScalarAttributeTextureCoordScale;
     bool m_bReverseOrder;
     bool m_bClosedLoop;
-    char pad_2242[0x2];
+    char pad_2241[0x2];
     particles_ParticleAttributeIndex_t m_nSplitField;
     bool m_bSortBySegmentID;
-    char pad_2243[0x3];
+    char pad_2242[0x3];
     particles_ParticleOrientationChoiceList_t m_nOrientationType;
     particles_ParticleAttributeIndex_t m_nVectorFieldForOrientation;
     bool m_bDrawAsOpaque;
     bool m_bGenerateNormals;
-    char end_pad_2244[0x2];
+    char end_pad_2243[0x2];
 };

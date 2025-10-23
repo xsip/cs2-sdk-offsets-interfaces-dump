@@ -11,5 +11,6 @@ class server_CRetakeGameRules {
     char pad_3996[0x2];
     int32_t m_iFirstSecondHalfRound;
     int32_t m_iBombSite;
-    char end_pad_3997[0x88];
+    char m_hBombPlanter[0x4];
+    char end_pad_3997[0xa4];
 };

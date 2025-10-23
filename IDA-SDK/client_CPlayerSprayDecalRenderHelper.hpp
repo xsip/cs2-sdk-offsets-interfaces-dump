@@ -4,5 +4,5 @@
 
 
 class client_CPlayerSprayDecalRenderHelper {
-    char pad_1497[0x30];
+    char pad_1496[0x30];
 };

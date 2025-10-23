@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCVoiceContainerBase {
-    char pad_2408[0x1];
+    char pad_2407[0x1];
 };

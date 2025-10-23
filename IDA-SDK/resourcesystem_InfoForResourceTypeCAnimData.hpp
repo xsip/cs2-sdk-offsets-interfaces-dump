@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCAnimData {
-    char pad_2368[0x1];
+    char pad_2367[0x1];
 };

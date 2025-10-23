@@ -4,5 +4,5 @@
 
 
 class client_IRagdoll {
-    char pad_1635[0x8];
+    char pad_1634[0x8];
 };

@@ -13,5 +13,5 @@ class client_CTakeDamageResult {
     int32_t m_nTotalledHealthLost;
     int32_t m_nTotalledDamageDealt;
     bool m_bWasDamageSuppressed;
-    char pad_1652[0x7];
+    char pad_1651[0x7];
 };

@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCNmClip {
-    char pad_2393[0x1];
+    char pad_2392[0x1];
 };

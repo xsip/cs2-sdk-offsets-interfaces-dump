@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_SceneEntity {
@@ -124,7 +121,7 @@ class client_C_SceneEntity {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1561[0x8];
+    char vTable1560[0x8];
     bool m_bIsPlayingBack;
     bool m_bPaused;
     bool m_bMultiplayer;
@@ -132,12 +129,12 @@ class client_C_SceneEntity {
     float32 m_flForceClientTime;
     uint16_t m_nSceneStringIndex;
     bool m_bClientOnly;
-    char pad_1562[0x1];
+    char pad_1561[0x1];
     char m_hOwner[0x4];
     char m_hActorList[0x18];
     bool m_bWasPlaying;
-    char pad_1563[0xf];
+    char pad_1562[0xf];
     char m_QueuedEvents[0x18];
     float32 m_flCurrentTime;
-    char end_pad_1564[0x4];
+    char end_pad_1563[0x4];
 };

@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCTextureBase {
-    char pad_2378[0x1];
+    char pad_2377[0x1];
 };

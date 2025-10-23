@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCModel {
-    char pad_2374[0x1];
+    char pad_2373[0x1];
 };

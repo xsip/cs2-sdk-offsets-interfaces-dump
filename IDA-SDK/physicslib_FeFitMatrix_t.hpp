@@ -9,5 +9,5 @@ class physicslib_FeFitMatrix_t {
     uint16_t nEnd;
     uint16_t nNode;
     uint16_t nBeginDynamic;
-    char end_pad_2438[0xe];
+    char end_pad_2437[0xe];
 };

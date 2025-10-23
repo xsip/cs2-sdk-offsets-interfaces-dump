@@ -4,5 +4,5 @@
 
 
 class client_IHasAttributes {
-    char pad_1634[0x8];
+    char pad_1633[0x8];
 };

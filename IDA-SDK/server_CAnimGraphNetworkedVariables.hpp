@@ -4,7 +4,7 @@
 
 
 class server_CAnimGraphNetworkedVariables {
-    char vTable2890[0x8];
+    char vTable2889[0x8];
     char m_PredNetBoolVariables[0x18];
     char m_PredNetByteVariables[0x18];
     char m_PredNetUInt16Variables[0x18];
@@ -29,5 +29,5 @@ class server_CAnimGraphNetworkedVariables {
     int32_t m_nOwnerOnlyBoolVariablesCount;
     int32_t m_nRandomSeedOffset;
     float32 m_flLastTeleportTime;
-    char pad_2891[0x10];
+    char pad_2890[0x10];
 };

@@ -10,5 +10,5 @@ class animlib_CNmTarget {
     bool m_bIsUsingBoneSpaceOffsets;
     bool m_bHasOffsets;
     bool m_bIsSet;
-    char end_pad_1774[0x4];
+    char end_pad_1773[0x4];
 };

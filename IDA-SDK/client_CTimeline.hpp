@@ -5,7 +5,7 @@
 #include "entity2_GameTime_t.hpp"
 
 class client_CTimeline {
-    char vTable1112[0x8];
+    char vTable1123[0x8];
     entity2_GameTime_t m_timestamp;
     WorldGroupId_t m_nWorldGroupId;
     float32 m_flValues[64];
@@ -15,5 +15,5 @@ class client_CTimeline {
     float32 m_flFinalValue;
     client_TimelineCompression_t m_nCompressionType;
     bool m_bStopped;
-    char end_pad_1111[0x7];
+    char end_pad_1122[0x7];
 };

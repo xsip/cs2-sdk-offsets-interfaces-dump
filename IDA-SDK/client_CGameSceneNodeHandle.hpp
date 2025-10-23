@@ -4,7 +4,7 @@
 
 
 class client_CGameSceneNodeHandle {
-    char vTable945[0x8];
+    char vTable956[0x8];
     CEntityHandle m_hOwner;
     CUtlStringToken m_name;
 };

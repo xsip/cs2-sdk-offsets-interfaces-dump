@@ -16,16 +16,16 @@
 
 namespace CS2 {
 	namespace client {
-		class C_BaseEntity;
+		class C_PlayerPing;
 	}
 }
 namespace CS2 {
 	namespace client {
 		class CCSPlayer_PingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hPlayerPing; // 0x40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle< client::C_PlayerPing > m_hPlayerPing; // 0x40 | Schema_Atomic | Size: 0x4
 			// char  m_hPlayerPing[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hPlayerPing; // 0x40 | Schema_Atomic | Size: 0x4
+			// client::CHandle< client::C_PlayerPing > m_hPlayerPing; // 0x40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::CCSPlayer_PingServices, m_hPlayerPing) == 0x40, "m_hPlayerPing in CCSPlayer_PingServices should be at offset 0x40");

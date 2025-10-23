@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCChoreoSceneResource {
-    char pad_2385[0x1];
+    char pad_2384[0x1];
 };

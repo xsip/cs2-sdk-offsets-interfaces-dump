@@ -4,7 +4,7 @@
 
 
 class client_VPhysicsCollisionAttribute_t {
-    char vTable1653[0x8];
+    char vTable1652[0x8];
     uint64_t m_nInteractsAs;
     uint64_t m_nInteractsWith;
     uint64_t m_nInteractsExclude;
@@ -13,5 +13,5 @@ class client_VPhysicsCollisionAttribute_t {
     uint16_t m_nHierarchyId;
     uint8_t m_nCollisionGroup;
     uint8_t m_nCollisionFunctionMask;
-    char end_pad_1654[0x4];
+    char end_pad_1653[0x4];
 };

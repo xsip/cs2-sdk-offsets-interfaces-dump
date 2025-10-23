@@ -4,5 +4,5 @@
 
 
 class client_C_BaseEntityAPI {
-    char pad_1189[0x8];
+    char pad_1200[0x8];
 };

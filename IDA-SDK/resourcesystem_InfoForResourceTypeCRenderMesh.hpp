@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCRenderMesh {
-    char pad_2371[0x1];
+    char pad_2370[0x1];
 };

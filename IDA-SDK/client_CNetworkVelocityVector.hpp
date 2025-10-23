@@ -4,7 +4,7 @@
 
 
 class client_CNetworkVelocityVector {
-    char vTable1001[0x10];
+    char vTable1012[0x10];
     CNetworkedQuantizedFloat m_vecX;
     CNetworkedQuantizedFloat m_vecY;
     CNetworkedQuantizedFloat m_vecZ;

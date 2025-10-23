@@ -15,6 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bRoundInProgress = 0xfd; // bool m_bRoundInProgress; |  0xfd | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iFirstSecondHalfRound = 0x100; // int32_t m_iFirstSecondHalfRound; |  0x100 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iBombSite = 0x104; // int32_t m_iBombSite; |  0x104 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hBombPlanter = 0x108; // client::CHandle< client::C_CSPlayerPawn > m_hBombPlanter; |  Schema_Atomic | Size: 0x4
 			}
 		}
 	}

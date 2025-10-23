@@ -6,11 +6,11 @@ class entity2_EntComponentInfo_t;
 class entity2_CEntityComponentHelper;
 
 class entity2_CEntityComponentHelper {
-    char vTable2504[0x8];
+    char vTable2503[0x8];
     uint32_t m_flags;
-    char pad_2505[0x4];
+    char pad_2504[0x4];
     entity2_EntComponentInfo_t* m_pInfo;
     int32_t m_nPriority;
-    char pad_2506[0x4];
+    char pad_2505[0x4];
     entity2_CEntityComponentHelper* m_pNext;
 };

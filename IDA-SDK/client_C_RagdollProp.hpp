@@ -14,10 +14,7 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -206,14 +203,14 @@ class client_C_RagdollProp {
     char pad_597[0xe];
     bool m_bHasAnimatedMaterialAttributes;
     char end_pad_598[0x177];
-    char vTable1534[0x8];
+    char vTable1533[0x8];
     char m_ragEnabled[0x18];
     char m_ragPos[0x18];
     char m_ragAngles[0x18];
     float32 m_flBlendWeight;
     char m_hRagdollSource[0x4];
     modellib_AttachmentHandle_t m_iEyeAttachment;
-    char pad_1535[0x3];
+    char pad_1534[0x3];
     float32 m_flBlendWeightCurrent;
     char m_parentPhysicsBoneIndices[0x18];
     char m_worldSpaceBoneComputationOrder[0x18];

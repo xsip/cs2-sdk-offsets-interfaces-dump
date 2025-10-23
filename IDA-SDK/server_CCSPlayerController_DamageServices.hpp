@@ -9,6 +9,6 @@ class server_CCSPlayerController_DamageServices {
     entity2_CNetworkVarChainer __m_pChainEntity;
     char end_pad_855[0x10];
     int32_t m_nSendUpdate;
-    char pad_3377[0x4];
+    char pad_3376[0x4];
     char m_DamageList[0x88];
 };

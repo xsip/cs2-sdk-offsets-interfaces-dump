@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCVoxelVisibility {
-    char pad_2409[0x1];
+    char pad_2408[0x1];
 };

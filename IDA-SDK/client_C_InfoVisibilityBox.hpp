@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_InfoVisibilityBox {
@@ -124,9 +121,9 @@ class client_C_InfoVisibilityBox {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1452[0x4];
+    char vTable1451[0x4];
     int32_t m_nMode;
     Vector m_vBoxSize;
     bool m_bEnabled;
-    char end_pad_1453[0x3];
+    char end_pad_1452[0x3];
 };

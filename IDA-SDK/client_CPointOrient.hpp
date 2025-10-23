@@ -11,12 +11,8 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_CPointOrient {
     char vTable723[0x8];
@@ -128,7 +124,7 @@ class client_CPointOrient {
     CUtlSymbolLarge m_iszSpawnTargetName;
     char m_hTarget[0x4];
     bool m_bActive;
-    char pad_1047[0x3];
+    char pad_1058[0x3];
     client_PointOrientGoalDirectionType_t m_nGoalDirection;
     client_PointOrientConstraint_t m_nConstraint;
     float32 m_flMaxTurnRate;

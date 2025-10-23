@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_fogparams_t.hpp"
 
@@ -127,6 +124,6 @@ class client_C_FogController {
     char end_pad_722[0x4];
     client_fogparams_t m_fog;
     bool m_bUseAngles;
-    char pad_1429[0x3];
+    char pad_1428[0x3];
     int32_t m_iChangedVariables;
 };

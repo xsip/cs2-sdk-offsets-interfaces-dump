@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCDOTAPatchNotesList {
-    char pad_2387[0x1];
+    char pad_2386[0x1];
 };

@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_CSPlayerResource {
@@ -134,5 +131,5 @@ class client_C_CSPlayerResource {
     int32_t m_hostageRescueZ[4];
     bool m_bEndMatchNextMapAllVoted;
     bool m_foundGoalPositions;
-    char end_pad_1341[0x6];
+    char end_pad_1340[0x6];
 };

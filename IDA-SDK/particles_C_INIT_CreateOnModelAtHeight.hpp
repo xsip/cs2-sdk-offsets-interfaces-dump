@@ -5,14 +5,10 @@
 class particleslib_CParticleCollectionFloatInput;
 class particleslib_CParticleCollectionVecInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particleslib_CParticleCollectionVecInput.hpp"
-#include "particleslib_CParticleCollectionVecInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
 
 class particles_C_INIT_CreateOnModelAtHeight {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -21,27 +17,27 @@ class particles_C_INIT_CreateOnModelAtHeight {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     int32_t m_nAssociatedEmitterIndex;
-    char end_pad_1806[0x4];
+    char end_pad_1805[0x4];
     bool m_bUseBones;
     bool m_bForceZ;
-    char pad_1869[0x2];
+    char pad_1868[0x2];
     int32_t m_nControlPointNumber;
     int32_t m_nHeightCP;
     bool m_bUseWaterHeight;
-    char pad_1870[0x3];
+    char pad_1869[0x3];
     particleslib_CParticleCollectionFloatInput m_flDesiredHeight;
     particleslib_CParticleCollectionVecInput m_vecHitBoxScale;
     particleslib_CParticleCollectionVecInput m_vecDirectionBias;
@@ -49,7 +45,7 @@ class particles_C_INIT_CreateOnModelAtHeight {
     bool m_bLocalCoords;
     bool m_bPreferMovingBoxes;
     char m_HitboxSetName[128];
-    char pad_1871[0x2];
+    char pad_1870[0x2];
     particleslib_CParticleCollectionFloatInput m_flHitboxVelocityScale;
     particleslib_CParticleCollectionFloatInput m_flMaxBoneVelocity;
 };

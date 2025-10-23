@@ -61,7 +61,4 @@ typedef char CModelMaterialGroupName[0x8];
 typedef char RotationVector[0xc];
 typedef char RadianEuler[0xc];
 typedef char DegreeEuler[0xc];
-typedef char CUtlStringTokenWithStorage[0x18];
-typedef char VectorAligned[0x10]; //  Schema_Atomic
-typedef char QuaternionStorage[0x10];
-typedef char FourVectors[0x30];
+typedef char CUtlStringTokenWithStorage[0x18];;

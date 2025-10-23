@@ -6,7 +6,6 @@ class client_CSkeletonInstance;
 #include "client_CAnimGraphNetworkedVariables.hpp"
 #include "animationsystem_HSequence.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_CBaseAnimGraphController {
     char pad_782[0x8];

@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCNmIKRig {
-    char pad_2394[0x1];
+    char pad_2393[0x1];
 };

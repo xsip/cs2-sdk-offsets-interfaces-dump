@@ -9,6 +9,6 @@ class soundsystem_lowlevel_VMixDualCompressorDesc_t {
     float32 m_fldbKneeWidth;
     float32 m_flWetMix;
     bool m_bPeakMode;
-    char pad_2459[0x3];
+    char pad_2458[0x3];
     soundsystem_lowlevel_VMixDynamicsBand_t m_bandDesc;
 };

@@ -4,9 +4,6 @@
 
 #include "modellib_CAnimCycle.hpp"
 #include "modellib_CFootCycle.hpp"
-#include "modellib_CFootCycle.hpp"
-#include "modellib_CFootCycle.hpp"
-#include "modellib_CFootCycle.hpp"
 
 class modellib_CFootCycleDefinition {
     Vector m_vStancePositionMS;

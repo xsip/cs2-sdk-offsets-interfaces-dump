@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCGcExportableExternalData {
-    char pad_2390[0x1];
+    char pad_2389[0x1];
 };

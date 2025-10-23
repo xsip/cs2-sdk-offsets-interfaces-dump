@@ -7,7 +7,7 @@ class particleslib_CParticleCollectionFloatInput;
 #include "particles_CParticleVisibilityInputs.hpp"
 
 class particles_C_OP_RenderStatusEffect {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -16,22 +16,22 @@ class particles_C_OP_RenderStatusEffect {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     particles_CParticleVisibilityInputs VisibilityInputs;
     bool m_bCannotBeRefracted;
     bool m_bSkipRenderingOnMobile;
-    char end_pad_1787[0x6];
+    char end_pad_1786[0x6];
     char m_pTextureColorWarp[0x8];
     char m_pTextureDetail2[0x8];
     char m_pTextureDiffuseWarp[0x8];

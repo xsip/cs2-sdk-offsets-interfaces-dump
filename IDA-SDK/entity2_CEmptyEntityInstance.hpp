@@ -4,5 +4,5 @@
 
 
 class entity2_CEmptyEntityInstance {
-    char pad_2503[0x1];
+    char pad_2502[0x1];
 };

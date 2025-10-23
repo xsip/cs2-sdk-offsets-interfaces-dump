@@ -13,16 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "modellib_AttachmentHandle_t.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
 #include "client_CPhysicsDelegate.hpp"
 
@@ -184,36 +180,36 @@ class client_C_RopeKeyframe {
     char pad_611[0x3b];
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
-    char vTable1541[0x8];
+    char vTable1540[0x8];
     char m_LinksTouchingSomething[0x4];
     int32_t m_nLinksTouchingSomething;
     bool m_bApplyWind;
-    char pad_1542[0x3];
+    char pad_1541[0x3];
     int32_t m_fPrevLockedPoints;
     int32_t m_iForcePointMoveCounter;
     bool m_bPrevEndPointPos[2];
-    char pad_1543[0x2];
+    char pad_1542[0x2];
     Vector m_vPrevEndPointPos[2];
     float32 m_flCurScroll;
     float32 m_flScrollSpeed;
     uint16_t m_RopeFlags;
-    char pad_1544[0x6];
+    char pad_1543[0x6];
     char m_iRopeMaterialModelIndex[0x8];
-    char pad_1545[0x270];
+    char pad_1544[0x270];
     uint8_t m_nSegments;
-    char pad_1546[0x3];
+    char pad_1545[0x3];
     char m_hStartPoint[0x4];
     char m_hEndPoint[0x4];
     modellib_AttachmentHandle_t m_iStartAttachment;
     modellib_AttachmentHandle_t m_iEndAttachment;
     uint8_t m_Subdiv;
-    char pad_1547[0x1];
+    char pad_1546[0x1];
     int16_t m_RopeLength;
     int16_t m_Slack;
     float32 m_TextureScale;
     uint8_t m_fLockedPoints;
     uint8_t m_nChangeCount;
-    char pad_1548[0x2];
+    char pad_1547[0x2];
     float32 m_Width;
     client_CPhysicsDelegate m_PhysicsDelegate;
     char m_hMaterial[0x8];
@@ -228,5 +224,5 @@ class client_C_RopeKeyframe {
     Vector m_vCachedEndPointAttachmentPos[2];
     QAngle m_vCachedEndPointAttachmentAngle[2];
     bool m_bConstrainBetweenEndpoints;
-    char end_pad_1549[0x7];
+    char end_pad_1548[0x7];
 };

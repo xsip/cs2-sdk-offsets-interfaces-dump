@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_CPointTemplate {
@@ -129,7 +126,7 @@ class client_CPointTemplate {
     CUtlSymbolLarge m_iszEntityFilterName;
     float32 m_flTimeoutInterval;
     bool m_bAsynchronouslySpawnEntities;
-    char pad_1048[0x3];
+    char pad_1059[0x3];
     client_PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior;
     client_PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType;
     char m_createdSpawnGroupHandles[0x18];

@@ -13,21 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 #include "client_CountdownTimer.hpp"
 
@@ -205,12 +196,12 @@ class client_CTriggerFan {
     Vector m_vDirection;
     bool m_bPushTowardsInfoTarget;
     bool m_bPushAwayFromInfoTarget;
-    char pad_1113[0x6];
+    char pad_1124[0x6];
     Quaternion m_qNoiseDelta;
     char m_hInfoFan[0x4];
     float32 m_flForce;
     bool m_bFalloff;
-    char pad_1114[0x7];
+    char pad_1125[0x7];
     client_CountdownTimer m_RampTimer;
-    char end_pad_1115[0x8];
+    char end_pad_1126[0x8];
 };

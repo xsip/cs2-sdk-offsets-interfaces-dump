@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -183,8 +180,8 @@ class client_C_FuncElectrifiedVolume {
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
     client_ParticleIndex_t m_nAmbientEffect;
-    char pad_1432[0x4];
+    char pad_1431[0x4];
     CUtlSymbolLarge m_EffectName;
     bool m_bState;
-    char end_pad_1433[0x7];
+    char end_pad_1432[0x7];
 };

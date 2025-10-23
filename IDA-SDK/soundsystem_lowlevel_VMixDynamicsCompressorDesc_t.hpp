@@ -13,5 +13,5 @@ class soundsystem_lowlevel_VMixDynamicsCompressorDesc_t {
     float32 m_flRMSTimeMS;
     float32 m_flWetMix;
     bool m_bPeakMode;
-    char end_pad_2463[0x3];
+    char end_pad_2462[0x3];
 };

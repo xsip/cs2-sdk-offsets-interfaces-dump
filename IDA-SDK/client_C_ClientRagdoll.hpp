@@ -14,21 +14,14 @@ class client_CBaseAnimGraph;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
 #include "client_PhysicsRagdollPose_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "modellib_AttachmentHandle_t.hpp"
-#include "entity2_GameTime_t.hpp"
-#include "entity2_GameTime_t.hpp"
 
 class client_C_ClientRagdoll {
     char vTable723[0x8];
@@ -212,7 +205,7 @@ class client_C_ClientRagdoll {
     char end_pad_598[0x177];
     bool m_bFadeOut;
     bool m_bImportant;
-    char pad_1352[0x2];
+    char pad_1351[0x2];
     entity2_GameTime_t m_flEffectTime;
     entity2_GameTime_t m_gibDespawnTime;
     int32_t m_iCurrentFriction;
@@ -222,7 +215,7 @@ class client_C_ClientRagdoll {
     bool m_bReleaseRagdoll;
     modellib_AttachmentHandle_t m_iEyeAttachment;
     bool m_bFadingOut;
-    char pad_1353[0x1];
+    char pad_1352[0x1];
     float32 m_flScaleEnd[10];
     entity2_GameTime_t m_flScaleTimeStart[10];
     entity2_GameTime_t m_flScaleTimeEnd[10];

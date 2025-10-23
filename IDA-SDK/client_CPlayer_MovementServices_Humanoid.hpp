@@ -7,9 +7,9 @@
 #include "entity2_GameTime_t.hpp"
 
 class client_CPlayer_MovementServices_Humanoid {
-    char vTable1197[0x8];
+    char vTable1208[0x8];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1198[0x10];
+    char pad_1209[0x10];
     int32_t m_nImpulse;
     char pad_818[0x4];
     client_CInButtonState m_nButtons;

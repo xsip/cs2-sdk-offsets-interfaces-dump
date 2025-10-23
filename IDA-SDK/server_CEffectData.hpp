@@ -5,7 +5,7 @@
 #include "modellib_AttachmentHandle_t.hpp"
 
 class server_CEffectData {
-    char vTable3491[0x8];
+    char vTable3490[0x8];
     VectorWS m_vOrigin;
     VectorWS m_vStart;
     Vector m_vNormal;
@@ -19,15 +19,15 @@ class server_CEffectData {
     char m_nEffectIndex[0x8];
     uint32_t m_nDamageType;
     uint8_t m_nPenetrate;
-    char pad_3492[0x1];
+    char pad_3491[0x1];
     uint16_t m_nMaterial;
     int16_t m_nHitBox;
     uint8_t m_nColor;
     uint8_t m_fFlags;
     modellib_AttachmentHandle_t m_nAttachmentIndex;
-    char pad_3493[0x3];
+    char pad_3492[0x3];
     CUtlStringToken m_nAttachmentName;
     uint16_t m_iEffectName;
     uint8_t m_nExplosionType;
-    char end_pad_3494[0x1];
+    char end_pad_3493[0x1];
 };

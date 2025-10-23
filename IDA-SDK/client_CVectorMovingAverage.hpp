@@ -4,5 +4,5 @@
 
 
 class client_CVectorMovingAverage {
-    char pad_1118[0x20];
+    char pad_1129[0x20];
 };

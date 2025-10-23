@@ -4,5 +4,5 @@
 
 
 class client_CPulseAnimFuncs {
-    char pad_1054[0x8];
+    char pad_1065[0x8];
 };

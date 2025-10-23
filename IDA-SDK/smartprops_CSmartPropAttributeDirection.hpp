@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeDirection {
-    char pad_2566[0x40];
+    char pad_2565[0x40];
 };

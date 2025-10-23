@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCNmSkeleton {
-    char pad_2376[0x1];
+    char pad_2375[0x1];
 };

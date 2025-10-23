@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCDOTANovelsList {
-    char pad_2386[0x1];
+    char pad_2385[0x1];
 };

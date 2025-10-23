@@ -13,21 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
-#include "entity2_CEntityIOOutput.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 
 class client_C_PostProcessingVolume {
@@ -200,7 +191,7 @@ class client_C_PostProcessingVolume {
     char m_hFilter[0x4];
     bool m_bDisabled;
     char end_pad_785[0x3];
-    char vTable1528[0x10];
+    char vTable1527[0x10];
     char m_hPostSettings[0x8];
     float32 m_flFadeDuration;
     float32 m_flMinLogExposure;
@@ -213,5 +204,5 @@ class client_C_PostProcessingVolume {
     float32 m_flTonemapEVSmoothingRange;
     bool m_bMaster;
     bool m_bExposureControl;
-    char end_pad_1529[0x2];
+    char end_pad_1528[0x2];
 };

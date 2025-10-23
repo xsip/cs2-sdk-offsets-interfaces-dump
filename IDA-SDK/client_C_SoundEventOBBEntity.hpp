@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 
@@ -130,21 +127,21 @@ class client_C_SoundEventOBBEntity {
     bool m_bStopOnNew;
     bool m_bSaveRestore;
     bool m_bSavedIsPlaying;
-    char pad_1584[0x3];
+    char pad_1583[0x3];
     float32 m_flSavedElapsedTime;
-    char pad_1585[0x4];
+    char pad_1584[0x4];
     CUtlSymbolLarge m_iszSourceEntityName;
     CUtlSymbolLarge m_iszAttachmentName;
     char m_onGUIDChanged[0x28];
     entity2_CEntityIOOutput m_onSoundFinished;
     float32 m_flClientCullRadius;
-    char pad_1586[0x2c];
+    char pad_1585[0x2c];
     CUtlSymbolLarge m_iszSoundName;
-    char pad_1587[0x14];
+    char pad_1586[0x14];
     CEntityHandle m_hSource;
     int32_t m_nEntityIndexSelection;
-    char end_pad_1588[0x4];
+    char end_pad_1587[0x4];
     Vector m_vMins;
     Vector m_vMaxs;
-    char end_pad_1589[0x10];
+    char end_pad_1588[0x10];
 };

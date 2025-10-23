@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_EnvCubemapFog {
@@ -128,7 +125,7 @@ class client_C_EnvCubemapFog {
     float32 m_flStartDistance;
     float32 m_flFogFalloffExponent;
     bool m_bHeightFogEnabled;
-    char pad_1392[0x3];
+    char pad_1391[0x3];
     float32 m_flFogHeightWidth;
     float32 m_flFogHeightEnd;
     float32 m_flFogHeightStart;
@@ -136,7 +133,7 @@ class client_C_EnvCubemapFog {
     float32 m_flLODBias;
     bool m_bActive;
     bool m_bStartDisabled;
-    char pad_1393[0x2];
+    char pad_1392[0x2];
     float32 m_flFogMaxOpacity;
     int32_t m_nCubemapSourceType;
     char m_hSkyMaterial[0x8];
@@ -144,5 +141,5 @@ class client_C_EnvCubemapFog {
     char m_hFogCubemapTexture[0x8];
     bool m_bHasHeightFogEnd;
     bool m_bFirstTime;
-    char end_pad_1394[0x6];
+    char end_pad_1393[0x6];
 };

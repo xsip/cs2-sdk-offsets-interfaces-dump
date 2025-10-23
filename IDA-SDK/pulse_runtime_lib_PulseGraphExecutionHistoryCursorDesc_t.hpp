@@ -3,7 +3,6 @@
 #include "typedefs.hpp"
 
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
-#include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 
 class pulse_runtime_lib_PulseGraphExecutionHistoryCursorDesc_t {
     char vecAncestorCursorIDs[0x18];

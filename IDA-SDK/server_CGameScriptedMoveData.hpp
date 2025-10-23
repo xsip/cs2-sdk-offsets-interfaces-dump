@@ -20,7 +20,7 @@ class server_CGameScriptedMoveData {
     bool m_bSuccess;
     client_ForcedCrouchState_t m_nForcedCrouchState;
     bool m_bIgnoreCollisions;
-    char pad_2730[0x3];
+    char pad_2729[0x3];
     Vector m_vDest;
     QAngle m_angDst;
     char m_hDestEntity[0x4];

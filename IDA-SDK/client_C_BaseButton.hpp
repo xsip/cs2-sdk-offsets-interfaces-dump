@@ -13,10 +13,7 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
@@ -183,6 +180,6 @@ class client_C_BaseButton {
     char end_pad_612[0x4];
     char m_glowEntity[0x4];
     bool m_usable;
-    char pad_1171[0x3];
+    char pad_1182[0x3];
     CUtlSymbolLarge m_szDisplayText;
 };

@@ -5,5 +5,5 @@
 
 class client_CPathQueryComponent {
     char pad_770[0x8];
-    char pad_1021[0xa0];
+    char pad_1032[0xa0];
 };

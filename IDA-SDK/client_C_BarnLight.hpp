@@ -13,16 +13,12 @@ class client_CClientAlphaProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_CHitboxComponent.hpp"
 #include "client_CCollisionProperty.hpp"
 #include "client_CGlowProperty.hpp"
 #include "client_CNetworkViewOffsetVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 
 class client_C_BarnLight {
@@ -184,7 +180,7 @@ class client_C_BarnLight {
     uint32_t m_bvDisabledHitGroups[1];
     char end_pad_612[0x4];
     bool m_bEnabled;
-    char pad_1162[0x3];
+    char pad_1173[0x3];
     int32_t m_nColorMode;
     Color m_Color;
     float32 m_flColorTemperature;
@@ -197,10 +193,10 @@ class client_C_BarnLight {
     int32_t m_nLuminaireShape;
     float32 m_flLuminaireSize;
     float32 m_flLuminaireAnisotropy;
-    char pad_1163[0x4];
+    char pad_1174[0x4];
     CUtlString m_LightStyleString;
     entity2_GameTime_t m_flLightStyleStartTime;
-    char pad_1164[0x4];
+    char pad_1175[0x4];
     char m_QueuedLightStyleStrings[0x18];
     char m_LightStyleEvents[0x18];
     char m_LightStyleTargets[0x18];
@@ -221,7 +217,7 @@ class client_C_BarnLight {
     int32_t m_nShadowPriority;
     bool m_bContactShadow;
     bool m_bForceShadowsEnabled;
-    char pad_1165[0x2];
+    char pad_1176[0x2];
     int32_t m_nBounceLight;
     float32 m_flBounceScale;
     float32 m_flMinRoughness;
@@ -232,13 +228,13 @@ class client_C_BarnLight {
     int32_t m_nFogShadows;
     float32 m_flFogScale;
     bool m_bFogMixedShadows;
-    char pad_1166[0x3];
+    char pad_1177[0x3];
     float32 m_flFadeSizeStart;
     float32 m_flFadeSizeEnd;
     float32 m_flShadowFadeSizeStart;
     float32 m_flShadowFadeSizeEnd;
     bool m_bPrecomputedFieldsValid;
-    char pad_1167[0x3];
+    char pad_1178[0x3];
     Vector m_vPrecomputedBoundsMins;
     Vector m_vPrecomputedBoundsMaxs;
     Vector m_vPrecomputedOBBOrigin;
@@ -263,9 +259,9 @@ class client_C_BarnLight {
     Vector m_vPrecomputedOBBOrigin5;
     QAngle m_vPrecomputedOBBAngles5;
     Vector m_vPrecomputedOBBExtent5;
-    char pad_1168[0x44];
+    char pad_1179[0x44];
     bool m_bInitialBoneSetup;
-    char pad_1169[0x7];
+    char pad_1180[0x7];
     char m_VisClusters[0x18];
-    char end_pad_1170[0x8];
+    char end_pad_1181[0x8];
 };

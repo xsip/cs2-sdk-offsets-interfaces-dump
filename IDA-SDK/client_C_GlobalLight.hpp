@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_GlobalLight {
@@ -124,7 +121,7 @@ class client_C_GlobalLight {
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
     char end_pad_722[0x4];
-    char vTable1439[0x4c8];
+    char vTable1438[0x4c8];
     uint16_t m_WindClothForceHandle;
-    char end_pad_1440[0x2e];
+    char end_pad_1439[0x2e];
 };

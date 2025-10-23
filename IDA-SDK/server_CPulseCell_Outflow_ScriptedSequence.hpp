@@ -6,7 +6,6 @@ class pulse_runtime_lib_CPulse_ResumePoint;
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "server_PulseScriptedSequenceData_t.hpp"
 #include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
-#include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
 
 class server_CPulseCell_Outflow_ScriptedSequence {
     char vTable501[0x8];

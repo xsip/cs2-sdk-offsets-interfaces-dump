@@ -4,5 +4,5 @@
 
 
 class client_WrappedPhysicsJoint_t {
-    char pad_1661[0x8];
+    char pad_1660[0x8];
 };

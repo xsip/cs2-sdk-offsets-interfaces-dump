@@ -10,5 +10,5 @@ class client_EventClientOutput_t {
     float32 m_flRealTime;
     float32 m_flRenderFrameTimeUnbounded;
     bool m_bRenderOnly;
-    char end_pad_1619[0x3];
+    char end_pad_1618[0x3];
 };

@@ -11,10 +11,7 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_CSTeam {
@@ -128,18 +125,18 @@ class client_C_CSTeam {
     char m_aPlayers[0x18];
     int32_t m_iScore;
     char m_szTeamname[129];
-    char end_pad_1345[0x3];
+    char end_pad_1344[0x3];
     char m_szTeamMatchStat[512];
     int32_t m_numMapVictories;
     bool m_bSurrendered;
-    char pad_1342[0x3];
+    char pad_1341[0x3];
     int32_t m_scoreFirstHalf;
     int32_t m_scoreSecondHalf;
     int32_t m_scoreOvertime;
     char m_szClanTeamname[129];
-    char pad_1343[0x3];
+    char pad_1342[0x3];
     uint32_t m_iClanID;
     char m_szTeamFlagImage[8];
     char m_szTeamLogoImage[8];
-    char end_pad_1344[0x4];
+    char end_pad_1343[0x4];
 };

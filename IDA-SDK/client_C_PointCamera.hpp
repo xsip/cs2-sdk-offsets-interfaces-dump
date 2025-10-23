@@ -12,10 +12,7 @@ class client_C_PointCamera;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_PointCamera {
@@ -129,23 +126,23 @@ class client_C_PointCamera {
     float32 m_Resolution;
     bool m_bFogEnable;
     Color m_FogColor;
-    char pad_1499[0x3];
+    char pad_1498[0x3];
     float32 m_flFogStart;
     float32 m_flFogEnd;
     float32 m_flFogMaxDensity;
     bool m_bActive;
     bool m_bUseScreenAspectRatio;
-    char pad_1500[0x2];
+    char pad_1499[0x2];
     float32 m_flAspectRatio;
     bool m_bNoSky;
-    char pad_1501[0x3];
+    char pad_1500[0x3];
     float32 m_fBrightness;
     float32 m_flZFar;
     float32 m_flZNear;
     bool m_bCanHLTVUse;
     bool m_bAlignWithParent;
     bool m_bDofEnabled;
-    char pad_1502[0x1];
+    char pad_1501[0x1];
     float32 m_flDofNearBlurry;
     float32 m_flDofNearCrisp;
     float32 m_flDofFarCrisp;
@@ -154,6 +151,6 @@ class client_C_PointCamera {
     float32 m_TargetFOV;
     float32 m_DegreesPerSecond;
     bool m_bIsOn;
-    char pad_1503[0x3];
+    char pad_1502[0x3];
     client_C_PointCamera* m_pNext;
 };

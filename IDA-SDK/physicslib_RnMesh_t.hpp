@@ -15,5 +15,5 @@ class physicslib_RnMesh_t {
     Vector m_vOrthographicAreas;
     uint32_t m_nFlags;
     uint32_t m_nDebugFlags;
-    char end_pad_2454[0x4];
+    char end_pad_2453[0x4];
 };

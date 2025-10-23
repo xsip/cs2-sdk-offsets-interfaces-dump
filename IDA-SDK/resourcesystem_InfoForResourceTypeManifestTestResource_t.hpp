@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeManifestTestResource_t {
-    char pad_2413[0x1];
+    char pad_2412[0x1];
 };

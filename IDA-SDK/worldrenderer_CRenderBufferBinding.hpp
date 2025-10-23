@@ -5,7 +5,7 @@
 
 class worldrenderer_CRenderBufferBinding {
     uint64_t m_hBuffer;
-    char pad_2484[0x8];
+    char pad_2483[0x8];
     uint32_t m_nBindOffsetBytes;
-    char pad_2485[0xc];
+    char pad_2484[0xc];
 };

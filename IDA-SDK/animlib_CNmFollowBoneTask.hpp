@@ -4,6 +4,6 @@
 
 
 class animlib_CNmFollowBoneTask {
-    char pad_1007[0x50];
-    char pad_1744[0x20];
+    char pad_1018[0x50];
+    char pad_1743[0x20];
 };

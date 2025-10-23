@@ -12,10 +12,7 @@ class client_C_SkyCamera;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
-#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
-#include "client_CNetworkVelocityVector.hpp"
-#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 #include "client_sky3dparams_t.hpp"
 
@@ -129,6 +126,6 @@ class client_C_SkyCamera {
     client_sky3dparams_t m_skyboxData;
     CUtlStringToken m_skyboxSlotToken;
     bool m_bUseAngles;
-    char pad_1574[0x3];
+    char pad_1573[0x3];
     client_C_SkyCamera* m_pNext;
 };

@@ -4,10 +4,9 @@
 
 class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
 
 class particles_C_OP_SetControlPointToImpactPoint {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -16,24 +15,24 @@ class particles_C_OP_SetControlPointToImpactPoint {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     bool m_bRunOnce;
-    char end_pad_1815[0x7];
+    char end_pad_1814[0x7];
     int32_t m_nCPOut;
     int32_t m_nCPIn;
     float32 m_flUpdateRate;
-    char pad_2304[0x4];
+    char pad_2303[0x4];
     particleslib_CParticleCollectionFloatInput m_flTraceLength;
     float32 m_flStartOffset;
     float32 m_flOffset;
@@ -43,5 +42,5 @@ class particles_C_OP_SetControlPointToImpactPoint {
     bool m_bSetToEndpoint;
     bool m_bTraceToClosestSurface;
     bool m_bIncludeWater;
-    char end_pad_2305[0x5];
+    char end_pad_2304[0x5];
 };

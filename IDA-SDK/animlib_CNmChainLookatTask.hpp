@@ -4,7 +4,7 @@
 
 
 class animlib_CNmChainLookatTask {
-    char pad_1007[0x50];
+    char pad_1018[0x50];
     int32_t m_nChainEndBoneIdx;
     int32_t m_nNumBonesInChain;
     Vector m_chainForwardDir;
@@ -14,7 +14,7 @@ class animlib_CNmChainLookatTask {
     Vector m_lookatTarget;
     bool m_bIsTargetInWorldSpace;
     bool m_bIsRunningFromDeserializedData;
-    char pad_1728[0x2];
+    char pad_1727[0x2];
     float32 m_flHorizontalAngleDegrees;
     float32 m_flVerticalAngleDegrees;
 };

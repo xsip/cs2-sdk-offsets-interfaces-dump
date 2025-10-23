@@ -4,6 +4,6 @@
 
 
 class client_WeaponPurchaseTracker_t {
-    char vTable1660[0x8];
+    char vTable1659[0x8];
     char m_weaponPurchases[0x68];
 };

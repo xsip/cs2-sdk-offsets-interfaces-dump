@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCVDataResource {
-    char pad_2403[0x1];
+    char pad_2402[0x1];
 };

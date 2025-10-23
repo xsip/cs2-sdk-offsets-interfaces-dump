@@ -6,19 +6,11 @@ class particleslib_CParticleCollectionFloatInput;
 class particleslib_CParticleCollectionVecInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particles_CParticleVisibilityInputs.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particleslib_CParticleCollectionVecInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
-#include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particleslib_CParticleTransformInput.hpp"
 
 class particles_C_OP_RenderCables {
-    char vTable1798[0x8];
+    char vTable1797[0x8];
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -27,30 +19,30 @@ class particles_C_OP_RenderCables {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1799[0x3];
+    char pad_1798[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1800[0x2];
+    char pad_1799[0x2];
     bool m_bDisableOperator;
-    char pad_1801[0x1];
+    char pad_1800[0x1];
     CUtlString m_Notes;
-    char end_pad_1802[0x18];
+    char end_pad_1801[0x18];
     particles_CParticleVisibilityInputs VisibilityInputs;
     bool m_bCannotBeRefracted;
     bool m_bSkipRenderingOnMobile;
-    char end_pad_1787[0x6];
+    char end_pad_1786[0x6];
     particleslib_CParticleCollectionFloatInput m_flRadiusScale;
     particleslib_CParticleCollectionFloatInput m_flAlphaScale;
     particleslib_CParticleCollectionVecInput m_vecColorScale;
     particles_ParticleColorBlendType_t m_nColorBlendType;
-    char pad_2200[0x4];
+    char pad_2199[0x4];
     char m_hMaterial[0x8];
     particles_TextureRepetitionMode_t m_nTextureRepetitionMode;
-    char pad_2201[0x4];
+    char pad_2200[0x4];
     particleslib_CParticleCollectionFloatInput m_flTextureRepeatsPerSegment;
     particleslib_CParticleCollectionFloatInput m_flTextureRepeatsCircumference;
     particleslib_CParticleCollectionFloatInput m_flColorMapOffsetV;
@@ -58,7 +50,7 @@ class particles_C_OP_RenderCables {
     particleslib_CParticleCollectionFloatInput m_flNormalMapOffsetV;
     particleslib_CParticleCollectionFloatInput m_flNormalMapOffsetU;
     bool m_bDrawCableCaps;
-    char pad_2202[0x3];
+    char pad_2201[0x3];
     float32 m_flCapRoundness;
     float32 m_flCapOffsetAmount;
     float32 m_flTessScale;
@@ -66,10 +58,10 @@ class particles_C_OP_RenderCables {
     int32_t m_nMaxTesselation;
     int32_t m_nRoundness;
     bool m_nForceRoundnessFixed;
-    char pad_2203[0x3];
+    char pad_2202[0x3];
     particleslib_CParticleTransformInput m_LightingTransform;
     char m_MaterialFloatVars[0x10];
-    char pad_2204[0x10];
+    char pad_2203[0x10];
     char m_MaterialVecVars[0x10];
-    char end_pad_2205[0x10];
+    char end_pad_2204[0x10];
 };

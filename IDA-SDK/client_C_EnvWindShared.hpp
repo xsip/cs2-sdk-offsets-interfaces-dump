@@ -5,7 +5,7 @@
 #include "entity2_GameTime_t.hpp"
 
 class client_C_EnvWindShared {
-    char vTable1416[0x8];
+    char vTable1415[0x8];
     entity2_GameTime_t m_flStartTime;
     uint32_t m_iWindSeed;
     uint16_t m_iMinWind;
@@ -21,5 +21,5 @@ class client_C_EnvWindShared {
     float32 m_flInitialWindSpeed;
     Vector m_location;
     char m_hEntOwner[0x4];
-    char end_pad_1417[0xb8];
+    char end_pad_1416[0xb8];
 };

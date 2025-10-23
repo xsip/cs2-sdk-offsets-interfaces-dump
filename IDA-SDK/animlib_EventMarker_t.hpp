@@ -6,6 +6,6 @@
 
 class animlib_EventMarker_t {
     animlib_NmPercent_t m_startTime;
-    char pad_1773[0x4];
+    char pad_1772[0x4];
     CGlobalSymbol m_ID;
 };

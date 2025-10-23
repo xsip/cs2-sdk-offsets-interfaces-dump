@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributePickMode {
-    char pad_2549[0x40];
+    char pad_2548[0x40];
 };
