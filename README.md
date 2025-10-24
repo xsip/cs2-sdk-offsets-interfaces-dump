@@ -1,6 +1,7 @@
 # xsip's CS2 Dump ( Interface Offsets, Schema Offsets, Cheat Engine Table, and C++ SDK and IDA Sdk)
 
-## This dump contains a fully working SDK, SDK to use with IDA ( Work in progress!! ), dump of all SchemaClass Offsets and Interface offsets
+### This dump contains a fully working SDK, SDK to use with IDA ( Work in progress!! ), dump of all SchemaClass Offsets and Interface offsets
+### Example Hook: [xsip/CS2-SDK-EXAMPLE-V1](https://github.com/xsip/CS2-SDK-EXAMPLE-V1)
 
 
 # SDK Class Example
