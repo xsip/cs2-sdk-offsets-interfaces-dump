@@ -18,13 +18,15 @@ namespace CS2 {
 		class JiggleBoneSettings_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class JiggleBoneSettingsList_t  {
 		public:
 			GlobalTypes::CUtlVector< animgraphlib::JiggleBoneSettings_t > m_boneSettings; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_boneSettings[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::JiggleBoneSettings_t > m_boneSettings; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::JiggleBoneSettingsList_t, m_boneSettings) == 0x0, "m_boneSettings in JiggleBoneSettingsList_t should be at offset 0x0");
 		static_assert(sizeof(CS2::animgraphlib::JiggleBoneSettingsList_t) == 0x18, "JiggleBoneSettingsList_t size should be 0x18");

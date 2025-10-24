@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace resourcesystem {
 		class InfoForResourceTypeCEntityLump  {

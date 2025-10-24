@@ -19,17 +19,19 @@ namespace CS2 {
 		class C_BaseModelEntity;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CDestructiblePartsComponent  {
 		public:
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x0 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x20);
-			// GlobalTypes::CUtlVector< uint16 > m_vecDamageTakenByHitGroup; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_vecDamageTakenByHitGroup[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_vecDamageTakenByHitGroup; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_vecDamageTakenByHitGroup[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CHandle< client::C_BaseModelEntity > m_hOwner; // 0x60 | Schema_Atomic | Size: 0x4
 			// char  m_hOwner[0x4]; // 0x60 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseModelEntity > m_hOwner; // 0x60 | Schema_Atomic | Size: 0x4
 			int32_t m_nLastHitDamageLevel; // 0x64 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::CDestructiblePartsComponent, __m_pChainEntity) == 0x0, "__m_pChainEntity in CDestructiblePartsComponent should be at offset 0x0");

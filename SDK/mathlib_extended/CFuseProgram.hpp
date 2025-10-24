@@ -18,18 +18,19 @@ namespace CS2 {
 		class FuseVariableIndex_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace mathlib_extended {
 		class CFuseProgram  {
 		public:
-			// GlobalTypes::CUtlVector< uint8 > m_programBuffer; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_programBuffer[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_programBuffer; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_programBuffer[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< mathlib_extended::FuseVariableIndex_t > m_variablesRead; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_variablesRead[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< mathlib_extended::FuseVariableIndex_t > m_variablesRead; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< mathlib_extended::FuseVariableIndex_t > m_variablesWritten; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_variablesWritten[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< mathlib_extended::FuseVariableIndex_t > m_variablesWritten; // 0x30 | Schema_Atomic | Size: 0x18
 			int32_t m_nMaxTempVarsUsed; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

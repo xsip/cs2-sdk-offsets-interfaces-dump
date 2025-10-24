@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_INIT_RtEnvCull : public CS2::particles::CParticleFunctionInitializer {

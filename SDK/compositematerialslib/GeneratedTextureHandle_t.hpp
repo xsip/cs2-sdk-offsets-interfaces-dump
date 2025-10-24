@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace compositematerialslib {
 		class GeneratedTextureHandle_t  {

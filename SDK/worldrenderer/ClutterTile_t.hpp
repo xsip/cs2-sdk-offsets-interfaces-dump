@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class ClutterTile_t  {

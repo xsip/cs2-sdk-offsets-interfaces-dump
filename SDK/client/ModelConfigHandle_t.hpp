@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class ModelConfigHandle_t  {

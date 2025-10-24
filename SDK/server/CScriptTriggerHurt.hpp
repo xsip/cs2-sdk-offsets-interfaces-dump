@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CScriptTriggerHurt : public CS2::server::CTriggerHurt {

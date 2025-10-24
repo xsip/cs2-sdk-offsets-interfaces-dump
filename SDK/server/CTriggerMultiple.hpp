@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CTriggerMultiple : public CS2::server::CBaseTrigger {

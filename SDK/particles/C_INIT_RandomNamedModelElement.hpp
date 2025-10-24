@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_INIT_RandomNamedModelElement : public CS2::particles::CParticleFunctionInitializer {
@@ -23,7 +26,6 @@ namespace CS2 {
 			char  m_hModel[0x8]; // 0x1d8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char  m_names[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; // 0x1e0 | Schema_Atomic | Size: 0x18
 			bool m_bShuffle; // 0x1f8 | Schema_Builtin | Size: 0x1
 			bool m_bLinear; // 0x1f9 | Schema_Builtin | Size: 0x1
 			bool m_bModelFromRenderer; // 0x1fa | Schema_Builtin | Size: 0x1

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CSoundEventEntityAlias_snd_event_point : public CS2::server::CSoundEventEntity {

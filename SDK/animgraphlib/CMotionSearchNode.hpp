@@ -14,21 +14,22 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CMotionSearchNode  {
 		public:
-			// GlobalTypes::CUtlVector< CMotionSearchNode >* m_children; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_children[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animgraphlib::CMotionSearchNode* > m_children; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_children[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			animgraphlib::CVectorQuantizer m_quantizer; // 0x18 | Schema_DeclaredClass | Size: 0x20
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< SampleCode > > m_sampleCodes; // 0x38 | Schema_Atomic | Size: 0x18
 			// char  m_sampleCodes[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< SampleCode > > m_sampleCodes; // 0x38 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< int32 > > m_sampleIndices; // 0x50 | Schema_Atomic | Size: 0x18
 			// char  m_sampleIndices[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< int32 > > m_sampleIndices; // 0x50 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_selectableSamples; // 0x68 | Schema_Atomic | Size: 0x18
-			char  m_selectableSamples[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_selectableSamples; // 0x68 | Schema_Atomic | Size: 0x18
+			// char  m_selectableSamples[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CMotionSearchNode, m_children) == 0x0, "m_children in CMotionSearchNode should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CMotionSearchNode, m_quantizer) == 0x18, "m_quantizer in CMotionSearchNode should be at offset 0x18");

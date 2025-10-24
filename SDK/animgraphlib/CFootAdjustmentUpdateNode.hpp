@@ -21,6 +21,9 @@ namespace CS2 {
 		class HSequence;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CFootAdjustmentUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
@@ -28,7 +31,6 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CUtlVector< animationsystem::HSequence > m_clips; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_clips[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::HSequence > m_clips; // 0x78 | Schema_Atomic | Size: 0x18
 			animgraphlib::CPoseHandle m_hBasePoseCacheHandle; // 0x90 | Schema_DeclaredClass | Size: 0x4
 			animgraphlib::CAnimParamHandle m_facingTarget; // 0x94 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x2);

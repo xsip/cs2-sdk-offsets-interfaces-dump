@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace navlib {
 		class CNavVolumeVector : public CS2::navlib::CNavVolume {

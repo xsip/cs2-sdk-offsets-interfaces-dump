@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropChoiceOption  {
@@ -21,7 +24,6 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_DisplayName; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVariableValue > m_VariableValues; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_VariableValues[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVariableValue > m_VariableValues; // 0x10 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropChoiceOption, m_Name) == 0x0, "m_Name in CSmartPropChoiceOption should be at offset 0x0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropChoiceOption, m_DisplayName) == 0x8, "m_DisplayName in CSmartPropChoiceOption should be at offset 0x8");

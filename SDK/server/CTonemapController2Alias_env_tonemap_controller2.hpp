@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CTonemapController2Alias_env_tonemap_controller2 : public CS2::server::CTonemapController2 {

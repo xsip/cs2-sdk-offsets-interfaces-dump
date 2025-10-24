@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animlib {
 		class CNmTransitionEvent : public CS2::animlib::CNmEvent {

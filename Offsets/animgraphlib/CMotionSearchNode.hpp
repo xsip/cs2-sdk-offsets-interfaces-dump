@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x80
 			namespace CMotionSearchNode /**/ {
-				constexpr std::ptrdiff_t m_children = 0x0; // GlobalTypes::CUtlVector< CMotionSearchNode >* m_children; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_children = 0x0; // GlobalTypes::CUtlVector< animgraphlib::CMotionSearchNode > m_children; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_quantizer = 0x18; // animgraphlib::CVectorQuantizer m_quantizer; |  Schema_DeclaredClass | Size: 0x20
 				constexpr std::ptrdiff_t m_sampleCodes = 0x38; // GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< SampleCode > > m_sampleCodes; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_sampleIndices = 0x50; // GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< int32 > > m_sampleIndices; |  Schema_Atomic | Size: 0x18

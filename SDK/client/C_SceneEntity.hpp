@@ -20,6 +20,9 @@ namespace CS2 {
 		class QueuedEvents_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_SceneEntity : public CS2::client::C_PointEntity {
@@ -35,14 +38,12 @@ namespace CS2 {
 			S2_PAD(0x1);
 			GlobalTypes::CHandle< client::C_BaseFlex > m_hOwner; // 0x60c | Schema_Atomic | Size: 0x4
 			// char  m_hOwner[0x4]; // 0x60c | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseFlex > m_hOwner; // 0x60c | Schema_Atomic | Size: 0x4
 			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseFlex > > m_hActorList; // 0x610 | Schema_Atomic | Size: 0x18
 			char  m_hActorList[0x18]; // 0x610 | Schema_Atomic | Size: 0x18
 			bool m_bWasPlaying; // 0x628 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf);
 			GlobalTypes::CUtlVector< client::QueuedEvents_t > m_QueuedEvents; // 0x638 | Schema_Atomic | Size: 0x18
 			// char  m_QueuedEvents[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
-			// client::QueuedEvents_t > m_QueuedEvents; // 0x638 | Schema_Atomic | Size: 0x18
 			float32 m_flCurrentTime; // 0x650 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -20,26 +20,25 @@ namespace CS2 {
 		class WeightList;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CRagdollComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
 			GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_ragdollNodePaths; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_ragdollNodePaths[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_ragdollNodePaths; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_followAttachmentNodePaths; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_followAttachmentNodePaths[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_followAttachmentNodePaths; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_boneIndices; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_boneIndices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_boneIndices; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_boneIndices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_boneNames[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< animgraphlib::WeightList > m_weightLists; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_weightLists[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::WeightList > m_weightLists; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_boneToWeightIndices; // 0xa8 | Schema_Atomic | Size: 0x18
-			char  m_boneToWeightIndices[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_boneToWeightIndices; // 0xa8 | Schema_Atomic | Size: 0x18
+			// char  m_boneToWeightIndices[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 			float32 m_flSpringFrequencyMin; // 0xc0 | Schema_Builtin | Size: 0x4
 			float32 m_flSpringFrequencyMax; // 0xc4 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxStretch; // 0xc8 | Schema_Builtin | Size: 0x4

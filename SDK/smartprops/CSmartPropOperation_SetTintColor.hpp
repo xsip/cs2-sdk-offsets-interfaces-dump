@@ -21,6 +21,9 @@ namespace CS2 {
 		class ColorChoice_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SetTintColor : public CS2::smartprops::CSmartPropOperation {
@@ -30,7 +33,6 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeApplyColorMode m_Mode; // 0xd0 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CUtlVector< smartprops::ColorChoice_t > m_ColorChoices; // 0x110 | Schema_Atomic | Size: 0x18
 			// char  m_ColorChoices[0x18]; // 0x110 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< smartprops::ColorChoice_t > m_ColorChoices; // 0x110 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetTintColor, m_SelectionMode) == 0x50, "m_SelectionMode in CSmartPropOperation_SetTintColor should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetTintColor, m_ColorSelection) == 0x90, "m_ColorSelection in CSmartPropOperation_SetTintColor should be at offset 0x90");

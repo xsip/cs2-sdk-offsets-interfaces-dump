@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPhysHingeAlias_phys_hinge_local : public CS2::server::CPhysHinge {

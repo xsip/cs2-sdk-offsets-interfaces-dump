@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animlib {
 		class CNmEntityAttributeEventBase : public CS2::animlib::CNmEvent {

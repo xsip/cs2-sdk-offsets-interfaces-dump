@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CRR_Response  {

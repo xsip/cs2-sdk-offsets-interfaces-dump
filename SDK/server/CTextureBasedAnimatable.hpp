@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CTextureBasedAnimatable : public CS2::server::CBaseModelEntity {

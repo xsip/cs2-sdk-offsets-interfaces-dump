@@ -21,6 +21,9 @@ namespace CS2 {
 		class CAnimParamHandle;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CFootPinningUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
@@ -31,7 +34,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_params; // 0xb0 | Schema_Atomic | Size: 0x18
 			// char  m_params[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_params; // 0xb0 | Schema_Atomic | Size: 0x18
 			bool m_bResetChild; // 0xc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

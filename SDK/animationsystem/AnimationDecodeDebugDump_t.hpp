@@ -19,6 +19,9 @@ namespace CS2 {
 		class AnimationDecodeDebugDumpElement_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class AnimationDecodeDebugDump_t  {
@@ -27,7 +30,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< animationsystem::AnimationDecodeDebugDumpElement_t > m_elems; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_elems[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::AnimationDecodeDebugDumpElement_t > m_elems; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDump_t, m_processingType) == 0x0, "m_processingType in AnimationDecodeDebugDump_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDump_t, m_elems) == 0x8, "m_elems in AnimationDecodeDebugDump_t should be at offset 0x8");

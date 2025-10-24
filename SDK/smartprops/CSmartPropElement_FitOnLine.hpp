@@ -17,6 +17,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_FitOnLine : public CS2::smartprops::CSmartPropElement_Group {

@@ -19,6 +19,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBaseAnimGraphController : public CS2::client::CSkeletonAnimationController {

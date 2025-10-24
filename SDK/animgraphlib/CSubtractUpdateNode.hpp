@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CSubtractUpdateNode : public CS2::animgraphlib::CBinaryUpdateNode {

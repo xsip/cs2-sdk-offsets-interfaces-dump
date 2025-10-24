@@ -20,6 +20,9 @@ namespace CS2 {
 		class C_BaseEntity;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_RagdollProp : public CS2::client::CBaseAnimGraph {
@@ -34,14 +37,13 @@ namespace CS2 {
 			float32 m_flBlendWeight; // 0x11a8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hRagdollSource; // 0x11ac | Schema_Atomic | Size: 0x4
 			// char  m_hRagdollSource[0x4]; // 0x11ac | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hRagdollSource; // 0x11ac | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_iEyeAttachment; // 0x11b0 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flBlendWeightCurrent; // 0x11b4 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< int32 > m_parentPhysicsBoneIndices; // 0x11b8 | Schema_Atomic | Size: 0x18
-			char  m_parentPhysicsBoneIndices[0x18]; // 0x11b8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_worldSpaceBoneComputationOrder; // 0x11d0 | Schema_Atomic | Size: 0x18
-			char  m_worldSpaceBoneComputationOrder[0x18]; // 0x11d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_parentPhysicsBoneIndices; // 0x11b8 | Schema_Atomic | Size: 0x18
+			// char  m_parentPhysicsBoneIndices[0x18]; // 0x11b8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_worldSpaceBoneComputationOrder; // 0x11d0 | Schema_Atomic | Size: 0x18
+			// char  m_worldSpaceBoneComputationOrder[0x18]; // 0x11d0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragEnabled) == 0x1160, "m_ragEnabled in C_RagdollProp should be at offset 0x1160");
 		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragPos) == 0x1178, "m_ragPos in C_RagdollProp should be at offset 0x1178");

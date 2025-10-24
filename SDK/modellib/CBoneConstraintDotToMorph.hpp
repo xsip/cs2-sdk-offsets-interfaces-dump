@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CBoneConstraintDotToMorph : public CS2::modellib::CBoneConstraintBase {

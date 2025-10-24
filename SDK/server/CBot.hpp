@@ -19,6 +19,9 @@ namespace CS2 {
 		class CCSPlayerPawn;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBot  {

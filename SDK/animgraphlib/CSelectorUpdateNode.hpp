@@ -22,6 +22,9 @@ namespace CS2 {
 		class CAnimUpdateNodeRef;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CSelectorUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
@@ -29,9 +32,8 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int8 > m_tags; // 0x78 | Schema_Atomic | Size: 0x18
-			char  m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int8 > m_tags; // 0x78 | Schema_Atomic | Size: 0x18
+			// char  m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			animgraphlib::CBlendCurve m_blendCurve; // 0x94 | Schema_DeclaredClass | Size: 0x8
 			// GlobalTypes::CAnimValue< float32 > m_flBlendTime; // 0x9c | Schema_Atomic | Size: 0x8

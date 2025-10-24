@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particleslib {
 		class CParticleCollectionBindingInstance : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {

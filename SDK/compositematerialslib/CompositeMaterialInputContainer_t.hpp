@@ -19,6 +19,9 @@ namespace CS2 {
 		class CompositeMaterialInputLooseVariable_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace compositematerialslib {
 		class CompositeMaterialInputContainer_t  {
@@ -32,7 +35,6 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_strAlias; // 0xf0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialInputLooseVariable_t > m_vecLooseVariables; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char  m_vecLooseVariables[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialInputLooseVariable_t > m_vecLooseVariables; // 0xf8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_strAttrNameForVar; // 0x110 | Schema_Atomic | Size: 0x8
 			bool m_bExposeExternally; // 0x118 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f); // End padding

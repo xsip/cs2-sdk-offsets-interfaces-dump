@@ -33,6 +33,9 @@ namespace CS2 {
 		class sndopvarlatchdata_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBasePlayerPawn : public CS2::server::CBaseCombatCharacter {
@@ -70,7 +73,6 @@ namespace CS2 {
 			GlobalTypes::CEntityIndex m_iHltvReplayEntity; // 0xd74 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlVector< client::sndopvarlatchdata_t > m_sndOpvarLatchData; // 0xd78 | Schema_Atomic | Size: 0x18
 			// char  m_sndOpvarLatchData[0x18]; // 0xd78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< client::sndopvarlatchdata_t > m_sndOpvarLatchData; // 0xd78 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWeaponServices) == 0xBE0, "m_pWeaponServices in CBasePlayerPawn should be at offset 0xBE0");
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pItemServices) == 0xBE8, "m_pItemServices in CBasePlayerPawn should be at offset 0xBE8");

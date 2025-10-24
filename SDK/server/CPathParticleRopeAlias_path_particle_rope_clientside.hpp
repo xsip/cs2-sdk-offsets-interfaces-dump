@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPathParticleRopeAlias_path_particle_rope_clientside : public CS2::server::CPathParticleRope {

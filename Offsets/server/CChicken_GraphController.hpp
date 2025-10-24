@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x2E8
 			namespace CChicken_GraphController /*: public CS2::client::CBaseAnimGraphAnimGraphController*/ {
-				constexpr std::ptrdiff_t m_paramActivity = 0x268; // GlobalTypes::CAnimGraphParamRef< char >* m_paramActivity; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_paramActivity = 0x268; // GlobalTypes::CAnimGraphParamRef< �p��::char > m_paramActivity; |  Schema_Atomic | Size: 0x28
 				constexpr std::ptrdiff_t m_paramEndActivityImmediately = 0x290; // GlobalTypes::CAnimGraphParamRef< bool > m_paramEndActivityImmediately; |  Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_sActivityFinished = 0x2b0; // GlobalTypes::CAnimGraphTagRef m_sActivityFinished; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_paramTurnAngle = 0x2c8; // GlobalTypes::CAnimGraphParamRef< float32 > m_paramTurnAngle; |  Schema_Atomic | Size: 0x20

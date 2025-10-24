@@ -17,6 +17,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CPhysSurfaceProperties  {

@@ -18,13 +18,15 @@ namespace CS2 {
 		class CVectorQuantizer;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CProductQuantizer  {
 		public:
 			GlobalTypes::CUtlVector< animgraphlib::CVectorQuantizer > m_subQuantizers; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_subQuantizers[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CVectorQuantizer > m_subQuantizers; // 0x0 | Schema_Atomic | Size: 0x18
 			int32_t m_nDimensions; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

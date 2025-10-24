@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSPlayerController_InGameMoneyServices : public CS2::client::CPlayerControllerComponent {

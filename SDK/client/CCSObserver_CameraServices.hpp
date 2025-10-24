@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CCSObserver_CameraServices : public CS2::client::CCSPlayerBase_CameraServices {

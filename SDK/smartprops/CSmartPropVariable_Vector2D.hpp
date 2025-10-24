@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_Vector2D : public CS2::smartprops::CSmartPropVariable {

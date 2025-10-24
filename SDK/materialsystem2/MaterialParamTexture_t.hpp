@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace materialsystem2 {
 		class MaterialParamTexture_t : public CS2::materialsystem2::MaterialParam_t {

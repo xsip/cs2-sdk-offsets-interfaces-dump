@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PickOne : public CS2::smartprops::CSmartPropElement_Group {

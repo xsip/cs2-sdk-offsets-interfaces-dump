@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x18
 			namespace CVPhysXSurfacePropertiesList /**/ {
-				constexpr std::ptrdiff_t m_surfacePropertiesList = 0x0; // GlobalTypes::CUtlVector< CPhysSurfaceProperties >* m_surfacePropertiesList; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_surfacePropertiesList = 0x0; // GlobalTypes::CUtlVector< modellib::CPhysSurfaceProperties > m_surfacePropertiesList; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -22,8 +22,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_playerHoldingVote = 0x660; // GlobalTypes::CPlayerSlot m_playerHoldingVote; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_playerOverrideForVote = 0x664; // GlobalTypes::CPlayerSlot m_playerOverrideForVote; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nHighestCountIndex = 0x668; // int32_t m_nHighestCountIndex; |  0x668 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_potentialIssues = 0x670; // GlobalTypes::CUtlVector< CBaseIssue >* m_potentialIssues; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_VoteOptions = 0x688; // GlobalTypes::CUtlVector< char >* m_VoteOptions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_potentialIssues = 0x670; // GlobalTypes::CUtlVector< server::CBaseIssue > m_potentialIssues; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_VoteOptions = 0x688; // GlobalTypes::CUtlVector< �p��::char > m_VoteOptions; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

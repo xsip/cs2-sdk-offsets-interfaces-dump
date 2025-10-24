@@ -33,7 +33,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_panicTimer = 0xb38; // server::CountdownTimer m_panicTimer; |  Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_disperseTimer = 0xb50; // server::CountdownTimer m_disperseTimer; |  Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_proximityTimer = 0xb68; // server::CountdownTimer m_proximityTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_visible = 0xb80; // server::CUtlVector< CFish >* m_visible; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_visible = 0xb80; // server::CUtlVector< server::CFish > m_visible; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

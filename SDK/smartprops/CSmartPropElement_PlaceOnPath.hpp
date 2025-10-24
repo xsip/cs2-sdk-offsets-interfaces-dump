@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PlaceOnPath : public CS2::smartprops::CSmartPropElement_Group {
@@ -31,7 +34,6 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_DefaultPathInWorldSpace; // 0x2a8 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVector > m_DefaultPath; // 0x2e8 | Schema_Atomic | Size: 0x18
 			// char  m_DefaultPath[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVector > m_DefaultPath; // 0x2e8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_PathName) == 0xA0, "m_PathName in CSmartPropElement_PlaceOnPath should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_flSpacing) == 0xA8, "m_flSpacing in CSmartPropElement_PlaceOnPath should be at offset 0xA8");

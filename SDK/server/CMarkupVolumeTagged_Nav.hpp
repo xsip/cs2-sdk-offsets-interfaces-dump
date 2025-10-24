@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged_Nav : public CS2::server::CMarkupVolumeTagged {

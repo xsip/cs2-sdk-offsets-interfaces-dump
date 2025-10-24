@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropFilter_VariableValue : public CS2::smartprops::CSmartPropFilter {

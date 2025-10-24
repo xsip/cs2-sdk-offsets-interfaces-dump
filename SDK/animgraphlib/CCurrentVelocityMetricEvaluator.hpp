@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CCurrentVelocityMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {

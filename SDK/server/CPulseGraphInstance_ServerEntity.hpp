@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPulseGraphInstance_ServerEntity : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {

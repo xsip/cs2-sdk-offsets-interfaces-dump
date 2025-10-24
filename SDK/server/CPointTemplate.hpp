@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPointTemplate : public CS2::server::CLogicalEntity {
@@ -28,11 +31,10 @@ namespace CS2 {
 			S2_PAD(0x3);
 			client::PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior; // 0x510 | Schema_DeclaredEnum | Size: 0x4
 			client::PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; // 0x514 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CUtlVector< uint32 > m_createdSpawnGroupHandles; // 0x518 | Schema_Atomic | Size: 0x18
-			char  m_createdSpawnGroupHandles[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_createdSpawnGroupHandles; // 0x518 | Schema_Atomic | Size: 0x18
+			// char  m_createdSpawnGroupHandles[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_SpawnedEntityHandles; // 0x530 | Schema_Atomic | Size: 0x18
 			// char  m_SpawnedEntityHandles[0x18]; // 0x530 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_SpawnedEntityHandles; // 0x530 | Schema_Atomic | Size: 0x18
 			GlobalTypes::HSCRIPT m_ScriptSpawnCallback; // 0x548 | Schema_Atomic | Size: 0x8
 			GlobalTypes::HSCRIPT m_ScriptCallbackScope; // 0x550 | Schema_Atomic | Size: 0x8
 		};

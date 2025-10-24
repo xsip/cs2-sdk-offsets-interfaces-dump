@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CSprite : public CS2::server::CBaseModelEntity {

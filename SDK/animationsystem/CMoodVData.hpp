@@ -19,6 +19,9 @@ namespace CS2 {
 		class MoodAnimationLayer_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CMoodVData  {
@@ -29,7 +32,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< animationsystem::MoodAnimationLayer_t > m_animationLayers; // 0xe8 | Schema_Atomic | Size: 0x18
 			// char  m_animationLayers[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::MoodAnimationLayer_t > m_animationLayers; // 0xe8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CMoodVData, m_sModelName) == 0x0, "m_sModelName in CMoodVData should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CMoodVData, m_nMoodType) == 0xE0, "m_nMoodType in CMoodVData should be at offset 0xE0");

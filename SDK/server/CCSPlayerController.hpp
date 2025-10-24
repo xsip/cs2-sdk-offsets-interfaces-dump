@@ -25,6 +25,9 @@ namespace CS2 {
 		class CCSPlayerController_DamageServices;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSPlayerController : public CS2::server::CBasePlayerController {

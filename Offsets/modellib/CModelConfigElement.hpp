@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x48
 			namespace CModelConfigElement /**/ {
 				constexpr std::ptrdiff_t m_ElementName = 0x8; // GlobalTypes::CUtlString m_ElementName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_NestedElements = 0x10; // GlobalTypes::CUtlVector< CModelConfigElement >* m_NestedElements; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_NestedElements = 0x10; // GlobalTypes::CUtlVector< modellib::CModelConfigElement > m_NestedElements; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

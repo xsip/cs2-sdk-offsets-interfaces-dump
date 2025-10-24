@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x28
 			namespace CHintMessageQueue /**/ {
 				constexpr std::ptrdiff_t m_tmMessageEnd = 0x0; // float32 m_tmMessageEnd; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_messages = 0x8; // GlobalTypes::CUtlVector< CHintMessage >* m_messages; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_messages = 0x8; // GlobalTypes::CUtlVector< server::CHintMessage > m_messages; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_pPlayerController = 0x20; // server::CBasePlayerController* m_pPlayerController; |  Schema_Ptr | Size: 0x8
 			}
 		}

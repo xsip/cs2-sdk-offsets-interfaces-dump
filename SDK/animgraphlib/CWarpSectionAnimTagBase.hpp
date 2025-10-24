@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CWarpSectionAnimTagBase : public CS2::animgraphlib::CAnimTagBase {

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CBoolAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {

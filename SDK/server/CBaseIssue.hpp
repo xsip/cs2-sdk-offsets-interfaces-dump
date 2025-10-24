@@ -18,6 +18,9 @@ namespace CS2 {
 		class CVoteController;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBaseIssue  {

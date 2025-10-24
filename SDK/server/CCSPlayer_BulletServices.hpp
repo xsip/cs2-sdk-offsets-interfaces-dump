@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSPlayer_BulletServices : public CS2::client::CPlayerPawnComponent {

@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animlib {
 		class CNmChainSolverTask : public CS2::animlib::CNmPoseTask {

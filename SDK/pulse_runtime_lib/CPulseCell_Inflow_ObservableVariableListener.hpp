@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Inflow_ObservableVariableListener : public CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint {

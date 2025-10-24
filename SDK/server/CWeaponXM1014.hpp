@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CWeaponXM1014 : public CS2::server::CCSWeaponBaseShotgun {

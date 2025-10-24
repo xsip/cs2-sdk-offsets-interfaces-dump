@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_system {
 		class FakeEntityDerivedA_tAPI  {

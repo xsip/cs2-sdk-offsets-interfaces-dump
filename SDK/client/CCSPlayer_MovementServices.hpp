@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CCSPlayer_MovementServices : public CS2::client::CPlayer_MovementServices_Humanoid {

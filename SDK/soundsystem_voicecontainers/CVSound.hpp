@@ -19,6 +19,9 @@ namespace CS2 {
 		class CAudioSentence;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVSound  {
@@ -32,11 +35,10 @@ namespace CS2 {
 			float32 m_flDuration; // 0x14 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioSentence > m_Sentences; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_Sentences[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioSentence > m_Sentences; // 0x18 | Schema_Atomic | Size: 0x18
 			uint32_t m_nStreamingSize; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< int32 > m_nSeekTable; // 0x38 | Schema_Atomic | Size: 0x18
-			char  m_nSeekTable[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_nSeekTable; // 0x38 | Schema_Atomic | Size: 0x18
+			// char  m_nSeekTable[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			int32_t m_nLoopEnd; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlBinaryBlock m_encodedHeader; // 0x58 | Schema_Atomic | Size: 0x10

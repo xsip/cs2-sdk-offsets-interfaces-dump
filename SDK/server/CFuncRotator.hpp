@@ -24,6 +24,9 @@ namespace CS2 {
 		class RotatorQueueEntry_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CFuncRotator : public CS2::server::CBaseModelEntity {
@@ -68,15 +71,12 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CUtlVector< server::RotatorHistoryEntry_t > m_vecRotatorHistory; // 0x9c0 | Schema_Atomic | Size: 0x18
 			// char  m_vecRotatorHistory[0x18]; // 0x9c0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< server::RotatorHistoryEntry_t > m_vecRotatorHistory; // 0x9c0 | Schema_Atomic | Size: 0x18
 			bool m_bReturningToPreviousOrientation; // 0x9d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CUtlVector< server::RotatorQueueEntry_t > m_vecRotatorQueue; // 0x9e0 | Schema_Atomic | Size: 0x18
 			// char  m_vecRotatorQueue[0x18]; // 0x9e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< server::RotatorQueueEntry_t > m_vecRotatorQueue; // 0x9e0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< server::RotatorHistoryEntry_t > m_vecRotatorQueueHistory; // 0x9f8 | Schema_Atomic | Size: 0x18
 			// char  m_vecRotatorQueueHistory[0x18]; // 0x9f8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< server::RotatorHistoryEntry_t > m_vecRotatorQueueHistory; // 0x9f8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CFuncRotator, m_hRotatorTarget) == 0x7D8, "m_hRotatorTarget in CFuncRotator should be at offset 0x7D8");
 		static_assert(offsetof(CS2::server::CFuncRotator, m_bIsRotating) == 0x7DC, "m_bIsRotating in CFuncRotator should be at offset 0x7DC");

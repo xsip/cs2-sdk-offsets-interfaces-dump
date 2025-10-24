@@ -18,6 +18,9 @@ namespace CS2 {
 		class C_CSPlayerPawn;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_RetakeGameRules  {
@@ -31,7 +34,6 @@ namespace CS2 {
 			int32_t m_iBombSite; // 0x104 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hBombPlanter; // 0x108 | Schema_Atomic | Size: 0x4
 			// char  m_hBombPlanter[0x4]; // 0x108 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_CSPlayerPawn > m_hBombPlanter; // 0x108 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_nMatchSeed) == 0xF8, "m_nMatchSeed in C_RetakeGameRules should be at offset 0xF8");

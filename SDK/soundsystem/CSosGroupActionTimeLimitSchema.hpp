@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionTimeLimitSchema : public CS2::soundsystem::CSosGroupActionSchema {

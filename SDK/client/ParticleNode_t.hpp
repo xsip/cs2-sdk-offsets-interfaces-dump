@@ -20,13 +20,15 @@ namespace CS2 {
 		class C_BaseEntity;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class ParticleNode_t  {
 		public:
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEntity; // 0x0 | Schema_Atomic | Size: 0x4
 			// char  m_hEntity[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEntity; // 0x0 | Schema_Atomic | Size: 0x4
 			client::ParticleIndex_t m_iIndex; // 0x4 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flStartTime; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flGrowthDuration; // 0xc | Schema_Builtin | Size: 0x4

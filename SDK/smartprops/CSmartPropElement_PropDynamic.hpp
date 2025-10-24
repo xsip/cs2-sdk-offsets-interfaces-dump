@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_PropDynamic : public CS2::smartprops::CSmartPropElement_ModelEntity {

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSGO_TeamSelectTerroristPosition : public CS2::server::CCSGO_TeamSelectCharacterPosition {

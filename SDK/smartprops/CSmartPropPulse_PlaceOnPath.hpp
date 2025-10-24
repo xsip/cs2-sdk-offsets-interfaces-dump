@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_PlaceOnPath : public CS2::smartprops::CSmartPropPulse_BaseQueryableFlow {

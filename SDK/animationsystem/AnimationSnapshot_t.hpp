@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class AnimationSnapshot_t : public CS2::animationsystem::AnimationSnapshotBase_t {

@@ -13,8 +13,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nElementID = 0x8; // int32_t m_nElementID; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnabled = 0x10; // GlobalTypes::CSmartPropAttributeBool m_bEnabled; |  Schema_Atomic | Size: 0x40
 				constexpr std::ptrdiff_t m_sLabel = 0x50; // GlobalTypes::CUtlString m_sLabel; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SelectionCriteria = 0x58; // GlobalTypes::CUtlVector< CSmartPropSelectionCriteria >* m_SelectionCriteria; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Modifiers = 0x70; // GlobalTypes::CUtlVector< CSmartPropModifier >* m_Modifiers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SelectionCriteria = 0x58; // GlobalTypes::CUtlVector< smartprops::CSmartPropSelectionCriteria > m_SelectionCriteria; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Modifiers = 0x70; // GlobalTypes::CUtlVector< smartprops::CSmartPropModifier > m_Modifiers; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -14,17 +14,18 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_EntityFlame : public CS2::client::C_BaseEntity {
 		public:
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEntAttached; // 0x5f8 | Schema_Atomic | Size: 0x4
 			// char  m_hEntAttached[0x4]; // 0x5f8 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEntAttached; // 0x5f8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x24);
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hOldAttached; // 0x620 | Schema_Atomic | Size: 0x4
 			// char  m_hOldAttached[0x4]; // 0x620 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hOldAttached; // 0x620 | Schema_Atomic | Size: 0x4
 			bool m_bCheapEffect; // 0x624 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1b); // End padding
 		};

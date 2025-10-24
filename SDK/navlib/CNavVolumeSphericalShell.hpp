@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace navlib {
 		class CNavVolumeSphericalShell : public CS2::navlib::CNavVolumeSphere {

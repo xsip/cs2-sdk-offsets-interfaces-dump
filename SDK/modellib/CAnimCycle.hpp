@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CAnimCycle : public CS2::modellib::CCycleBase {

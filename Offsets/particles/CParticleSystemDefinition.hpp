@@ -11,13 +11,13 @@ namespace CS2 {
 			// Class size: 0x440
 			namespace CParticleSystemDefinition /*: public CS2::particles::IParticleSystemDefinition*/ {
 				constexpr std::ptrdiff_t m_nBehaviorVersion = 0x8; // int32_t m_nBehaviorVersion; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_PreEmissionOperators = 0x10; // GlobalTypes::CUtlVector< CParticleFunctionPreEmission >* m_PreEmissionOperators; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Emitters = 0x28; // GlobalTypes::CUtlVector< CParticleFunctionEmitter >* m_Emitters; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Initializers = 0x40; // GlobalTypes::CUtlVector< CParticleFunctionInitializer >* m_Initializers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Operators = 0x58; // GlobalTypes::CUtlVector< CParticleFunctionOperator >* m_Operators; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ForceGenerators = 0x70; // GlobalTypes::CUtlVector< CParticleFunctionForce >* m_ForceGenerators; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Constraints = 0x88; // GlobalTypes::CUtlVector< CParticleFunctionConstraint >* m_Constraints; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Renderers = 0xa0; // GlobalTypes::CUtlVector< CParticleFunctionRenderer >* m_Renderers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PreEmissionOperators = 0x10; // GlobalTypes::CUtlVector< particles::CParticleFunctionPreEmission > m_PreEmissionOperators; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Emitters = 0x28; // GlobalTypes::CUtlVector< particles::CParticleFunctionEmitter > m_Emitters; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Initializers = 0x40; // GlobalTypes::CUtlVector< particles::CParticleFunctionInitializer > m_Initializers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Operators = 0x58; // GlobalTypes::CUtlVector< particles::CParticleFunctionOperator > m_Operators; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ForceGenerators = 0x70; // GlobalTypes::CUtlVector< particles::CParticleFunctionForce > m_ForceGenerators; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Constraints = 0x88; // GlobalTypes::CUtlVector< particles::CParticleFunctionConstraint > m_Constraints; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Renderers = 0xa0; // GlobalTypes::CUtlVector< particles::CParticleFunctionRenderer > m_Renderers; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_Children = 0xb8; // GlobalTypes::CUtlVector< particles::ParticleChildrenInfo_t > m_Children; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nFirstMultipleOverride_BackwardCompat = 0x178; // int32_t m_nFirstMultipleOverride_BackwardCompat; |  0x178 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nInitialParticles = 0x258; // int32_t m_nInitialParticles; |  0x258 | Schema_Builtin | Size: 0x4
@@ -30,7 +30,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bInfiniteBounds = 0x284; // bool m_bInfiniteBounds; |  0x284 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnableNamedValues = 0x285; // bool m_bEnableNamedValues; |  0x285 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_NamedValueDomain = 0x288; // GlobalTypes::CUtlString m_NamedValueDomain; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_NamedValueLocals = 0x290; // GlobalTypes::CUtlVector< ParticleNamedValueSource_t >* m_NamedValueLocals; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_NamedValueLocals = 0x290; // GlobalTypes::CUtlVector< particleslib::ParticleNamedValueSource_t > m_NamedValueLocals; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_ConstantColor = 0x2a8; // GlobalTypes::Color m_ConstantColor; |  Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_ConstantNormal = 0x2ac; // GlobalTypes::Vector m_ConstantNormal; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flConstantRadius = 0x2b8; // float32 m_flConstantRadius; |  0x2b8 | Schema_Builtin | Size: 0x4

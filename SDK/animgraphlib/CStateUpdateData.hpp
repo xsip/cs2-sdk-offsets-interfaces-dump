@@ -20,6 +20,9 @@ namespace CS2 {
 		class CStateActionUpdater;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CStateUpdateData  {
@@ -27,11 +30,10 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			modellib::AnimScriptHandle m_hScript; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< int32 > m_transitionIndices; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_transitionIndices[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_transitionIndices; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_transitionIndices[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< animgraphlib::CStateActionUpdater > m_actions; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_actions[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CStateActionUpdater > m_actions; // 0x28 | Schema_Atomic | Size: 0x18
 			modellib::AnimStateID m_stateID; // 0x40 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -18,6 +18,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace materialsystem2 {
 		class PostProcessingResource_t  {

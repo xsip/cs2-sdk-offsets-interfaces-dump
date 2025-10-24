@@ -19,6 +19,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_INIT_SetAttributeToScalarExpression : public CS2::particles::CParticleFunctionInitializer {

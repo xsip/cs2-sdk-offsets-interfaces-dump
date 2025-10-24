@@ -23,6 +23,9 @@ namespace CS2 {
 		class CParticleProperty;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particleslib {
 		class CNewParticleEffect : public CS2::particleslib::IParticleEffect {

@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CPlayer_MovementServices : public CS2::client::CPlayerPawnComponent {

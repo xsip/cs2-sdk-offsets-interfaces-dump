@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_AttachedModel : public CS2::modellib::CModelConfigElement {

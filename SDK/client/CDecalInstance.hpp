@@ -21,6 +21,9 @@ namespace CS2 {
 		class C_BaseEntity;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CDecalInstance  {
@@ -31,7 +34,6 @@ namespace CS2 {
 			GlobalTypes::CUtlStringToken m_sSequenceName; // 0x10 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEntity; // 0x14 | Schema_Atomic | Size: 0x4
 			// char  m_hEntity[0x4]; // 0x14 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEntity; // 0x14 | Schema_Atomic | Size: 0x4
 			int32_t m_nBoneIndex; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nTriangleIndex; // 0x1c | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vPositionLS; // 0x20 | Schema_Atomic | Size: 0xc

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CIncendiaryGrenade : public CS2::server::CMolotovGrenade {

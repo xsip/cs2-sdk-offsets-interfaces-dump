@@ -23,6 +23,9 @@ namespace CS2 {
 		class DestructibleHitGroupToDestroy_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CTakeDamageInfo  {
@@ -34,13 +37,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecDamageDirection; // 0x2c | Schema_Atomic | Size: 0xc
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hInflictor; // 0x38 | Schema_Atomic | Size: 0x4
 			// char  m_hInflictor[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hInflictor; // 0x38 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hAttacker; // 0x3c | Schema_Atomic | Size: 0x4
 			// char  m_hAttacker[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hAttacker; // 0x3c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hAbility; // 0x40 | Schema_Atomic | Size: 0x4
 			// char  m_hAbility[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hAbility; // 0x40 | Schema_Atomic | Size: 0x4
 			float32 m_flDamage; // 0x44 | Schema_Builtin | Size: 0x4
 			float32 m_flTotalledDamage; // 0x48 | Schema_Builtin | Size: 0x4
 			client::DamageTypes_t m_bitsDamageType; // 0x4c | Schema_DeclaredEnum | Size: 0x4
@@ -59,7 +59,6 @@ namespace CS2 {
 			S2_PAD(0x7c);
 			GlobalTypes::CUtlVector< client::DestructibleHitGroupToDestroy_t > m_nDestructibleHitGroupsToForceDestroy; // 0x108 | Schema_Atomic | Size: 0x18
 			// char  m_nDestructibleHitGroupsToForceDestroy[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< client::DestructibleHitGroupToDestroy_t > m_nDestructibleHitGroupsToForceDestroy; // 0x108 | Schema_Atomic | Size: 0x18
 			bool m_bInTakeDamageFlow; // 0x120 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

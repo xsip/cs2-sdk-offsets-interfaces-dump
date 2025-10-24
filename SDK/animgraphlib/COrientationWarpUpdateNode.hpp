@@ -20,6 +20,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class COrientationWarpUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {

@@ -18,6 +18,9 @@ namespace CS2 {
 		class RenderInputLayoutField_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class ModelMeshBufferData_t  {
@@ -35,7 +38,6 @@ namespace CS2 {
 			S2_PAD(0x5);
 			GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_inputLayoutFields[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nBlockIndex) == 0x0, "m_nBlockIndex in ModelMeshBufferData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nElementCount) == 0x4, "m_nElementCount in ModelMeshBufferData_t should be at offset 0x4");

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CCSPlayer_DamageReactServices : public CS2::client::CPlayerPawnComponent {

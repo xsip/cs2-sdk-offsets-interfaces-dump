@@ -19,6 +19,9 @@ namespace CS2 {
 		class CVoiceContainerAnalysisBase;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerEnvelope : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {

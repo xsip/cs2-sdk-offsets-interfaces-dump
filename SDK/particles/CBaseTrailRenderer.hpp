@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class CBaseTrailRenderer : public CS2::particles::CBaseRendererSource2 {

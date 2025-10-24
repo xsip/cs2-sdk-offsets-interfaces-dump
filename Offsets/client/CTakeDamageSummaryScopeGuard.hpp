@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x20
 			namespace CTakeDamageSummaryScopeGuard /**/ {
-				constexpr std::ptrdiff_t m_vecSummaries = 0x8; // GlobalTypes::CUtlVector< SummaryTakeDamageInfo_t >* m_vecSummaries; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecSummaries = 0x8; // GlobalTypes::CUtlVector< client::SummaryTakeDamageInfo_t > m_vecSummaries; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

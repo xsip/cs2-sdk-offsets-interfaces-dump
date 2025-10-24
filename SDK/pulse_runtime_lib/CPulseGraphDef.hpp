@@ -15,12 +15,17 @@
 
 namespace CS2 {
 	namespace pulse_runtime_lib {
+		class CPulse_Chunk;
 		class CPulse_Variable;
 		class CPulse_PublicOutput;
 		class CPulse_Constant;
 		class CPulse_DomainValue;
+		class CPulse_OutputConnection;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseGraphDef  {
@@ -30,30 +35,26 @@ namespace CS2 {
 			GlobalTypes::CPulseValueFullType m_DomainSubType; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::PulseSymbol_t m_ParentMapName; // 0x30 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t m_ParentXmlName; // 0x40 | Schema_Atomic | Size: 0x10
-			// GlobalTypes::CUtlVector< CPulse_Chunk >* m_Chunks; // 0x50 | Schema_Atomic | Size: 0x18
-			char  m_Chunks[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
-			// assetpreview::CUtlVector< CPulseCell_Base >* m_Cells; // 0x68 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Chunk* > m_Chunks; // 0x50 | Schema_Atomic | Size: 0x18
+			// char  m_Chunks[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			// assetpreview::CUtlVector< pulse_runtime_lib::CPulseCell_Base > m_Cells; // 0x68 | Schema_Atomic | Size: 0x18
 			char  m_Cells[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Variable > m_Vars; // 0x80 | Schema_Atomic | Size: 0x18
 			// char  m_Vars[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Variable > m_Vars; // 0x80 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_PublicOutput > m_PublicOutputs; // 0x98 | Schema_Atomic | Size: 0x18
 			// char  m_PublicOutputs[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_PublicOutput > m_PublicOutputs; // 0x98 | Schema_Atomic | Size: 0x18
-			// assetpreview::CUtlVector< CPulse_InvokeBinding >* m_InvokeBindings; // 0xb0 | Schema_Atomic | Size: 0x18
+			// assetpreview::CUtlVector< pulse_runtime_lib::CPulse_InvokeBinding > m_InvokeBindings; // 0xb0 | Schema_Atomic | Size: 0x18
 			char  m_InvokeBindings[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
-			// assetpreview::CUtlVector< CPulse_CallInfo >* m_CallInfos; // 0xc8 | Schema_Atomic | Size: 0x18
+			// assetpreview::CUtlVector< pulse_runtime_lib::CPulse_CallInfo > m_CallInfos; // 0xc8 | Schema_Atomic | Size: 0x18
 			char  m_CallInfos[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Constant > m_Constants; // 0xe0 | Schema_Atomic | Size: 0x18
 			// char  m_Constants[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Constant > m_Constants; // 0xe0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_DomainValue > m_DomainValues; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char  m_DomainValues[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_DomainValue > m_DomainValues; // 0xf8 | Schema_Atomic | Size: 0x18
 			// assetpreview::CUtlVector< pulse_runtime_lib::CPulse_BlackboardReference > m_BlackboardReferences; // 0x110 | Schema_Atomic | Size: 0x18
 			char  m_BlackboardReferences[0x18]; // 0x110 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CPulse_OutputConnection >* m_OutputConnections; // 0x128 | Schema_Atomic | Size: 0x18
-			char  m_OutputConnections[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_OutputConnection* > m_OutputConnections; // 0x128 | Schema_Atomic | Size: 0x18
+			// char  m_OutputConnections[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x58); // End padding
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphDef, m_DomainIdentifier) == 0x8, "m_DomainIdentifier in CPulseGraphDef should be at offset 0x8");

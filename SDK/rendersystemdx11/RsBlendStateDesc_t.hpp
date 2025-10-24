@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace rendersystemdx11 {
 		class RsBlendStateDesc_t  {

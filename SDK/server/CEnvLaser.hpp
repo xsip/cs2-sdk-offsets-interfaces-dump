@@ -19,6 +19,9 @@ namespace CS2 {
 		class CSprite;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CEnvLaser : public CS2::server::CBeam {

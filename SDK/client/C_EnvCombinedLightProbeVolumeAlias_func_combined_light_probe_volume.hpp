@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_EnvCombinedLightProbeVolumeAlias_func_combined_light_probe_volume : public CS2::client::C_EnvCombinedLightProbeVolume {

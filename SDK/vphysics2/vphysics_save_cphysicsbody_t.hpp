@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace vphysics2 {
 		class vphysics_save_cphysicsbody_t : public CS2::physicslib::RnBodyDesc_t {

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_PlaneCull : public CS2::particles::CParticleFunctionOperator {

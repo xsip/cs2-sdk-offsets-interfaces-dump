@@ -20,6 +20,9 @@ namespace CS2 {
 		class CBaseFilter;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_BaseTrigger : public CS2::client::C_BaseToggle {
@@ -33,11 +36,9 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnNotTouching; // 0xfa0 | Schema_DeclaredClass | Size: 0x28
 			GlobalTypes::CUtlVector< GlobalTypes::CHandle< C_BaseEntity > > m_hTouchingEntities; // 0xfc8 | Schema_Atomic | Size: 0x18
 			// char  m_hTouchingEntities[0x18]; // 0xfc8 | Schema_Atomic | Size: 0x18
-			// client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_hTouchingEntities; // 0xfc8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0xfe0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CHandle< client::CBaseFilter > m_hFilter; // 0xfe8 | Schema_Atomic | Size: 0x4
 			// char  m_hFilter[0x4]; // 0xfe8 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::CBaseFilter > m_hFilter; // 0xfe8 | Schema_Atomic | Size: 0x4
 			bool m_bDisabled; // 0xfec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};

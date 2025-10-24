@@ -25,7 +25,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flOpvar = 0x44; // float32 m_flOpvar; |  0x44 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Behavior_String = 0x48; // soundsystem::SosGroupFieldBehavior_t m_Behavior_String; |  Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_opvarString = 0x50; // GlobalTypes::CUtlString m_opvarString; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vActions = 0x58; // GlobalTypes::CUtlVector< CSosGroupActionSchema >* m_vActions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vActions = 0x58; // GlobalTypes::CUtlVector< soundsystem::CSosGroupActionSchema > m_vActions; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

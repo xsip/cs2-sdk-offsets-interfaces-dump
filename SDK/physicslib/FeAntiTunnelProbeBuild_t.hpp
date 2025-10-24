@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class FeAntiTunnelProbeBuild_t  {
@@ -24,8 +27,8 @@ namespace CS2 {
 			uint32_t nFlags; // 0x10 | Schema_Builtin | Size: 0x4
 			uint16_t nProbeNode; // 0x14 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
-			// GlobalTypes::CUtlVector< uint16 > targetNodes; // 0x18 | Schema_Atomic | Size: 0x18
-			char  targetNodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > targetNodes; // 0x18 | Schema_Atomic | Size: 0x18
+			// char  targetNodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbeBuild_t, flWeight) == 0x0, "flWeight in FeAntiTunnelProbeBuild_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbeBuild_t, flActivationDistance) == 0x4, "flActivationDistance in FeAntiTunnelProbeBuild_t should be at offset 0x4");

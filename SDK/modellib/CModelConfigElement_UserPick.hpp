@@ -14,13 +14,15 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_UserPick : public CS2::modellib::CModelConfigElement {
 		public:
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Choices; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_Choices[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Choices; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_UserPick, m_Choices) == 0x48, "m_Choices in CModelConfigElement_UserPick should be at offset 0x48");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_UserPick) == 0x60, "CModelConfigElement_UserPick size should be 0x60");

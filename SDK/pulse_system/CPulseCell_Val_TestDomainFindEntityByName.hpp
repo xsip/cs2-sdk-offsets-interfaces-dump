@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_system {
 		class CPulseCell_Val_TestDomainFindEntityByName : public CS2::pulse_runtime_lib::CPulseCell_BaseValue {

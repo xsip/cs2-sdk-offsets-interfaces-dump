@@ -18,6 +18,9 @@ namespace CS2 {
 		class CEntityComponentHelper;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace entity2 {
 		class EntComponentInfo_t  {

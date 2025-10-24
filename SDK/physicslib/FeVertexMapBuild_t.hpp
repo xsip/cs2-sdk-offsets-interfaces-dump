@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class FeVertexMapBuild_t  {
@@ -22,8 +25,8 @@ namespace CS2 {
 			GlobalTypes::Color m_Color; // 0xc | Schema_Atomic | Size: 0x4
 			float32 m_flVolumetricSolveStrength; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nScaleSourceNode; // 0x14 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< float32 > m_Weights; // 0x18 | Schema_Atomic | Size: 0x18
-			char  m_Weights[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_Weights; // 0x18 | Schema_Atomic | Size: 0x18
+			// char  m_Weights[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::physicslib::FeVertexMapBuild_t, m_VertexMapName) == 0x0, "m_VertexMapName in FeVertexMapBuild_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeVertexMapBuild_t, m_nNameHash) == 0x8, "m_nNameHash in FeVertexMapBuild_t should be at offset 0x8");

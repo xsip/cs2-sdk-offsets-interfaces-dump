@@ -19,6 +19,9 @@ namespace CS2 {
 		class CConstraintTarget;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CBaseConstraint : public CS2::modellib::CBoneConstraintBase {
@@ -30,7 +33,6 @@ namespace CS2 {
 			char  m_slaves[0x10]; // 0x38 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlVector< modellib::CConstraintTarget > m_targets; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_targets[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< modellib::CConstraintTarget > m_targets; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_name) == 0x20, "m_name in CBaseConstraint should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_vUpVector) == 0x28, "m_vUpVector in CBaseConstraint should be at offset 0x28");

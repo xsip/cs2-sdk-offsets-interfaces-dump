@@ -16,14 +16,17 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CFuncShatterglass : public CS2::server::CBaseModelEntity {
 		public:
 			GlobalTypes::matrix3x4_t m_matPanelTransform; // 0x7d8 | Schema_Atomic | Size: 0x30
 			GlobalTypes::matrix3x4_t m_matPanelTransformWsTemp; // 0x808 | Schema_Atomic | Size: 0x30
-			// GlobalTypes::CUtlVector< uint32 > m_vecShatterGlassShards; // 0x838 | Schema_Atomic | Size: 0x18
-			char  m_vecShatterGlassShards[0x18]; // 0x838 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_vecShatterGlassShards; // 0x838 | Schema_Atomic | Size: 0x18
+			// char  m_vecShatterGlassShards[0x18]; // 0x838 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector2D m_PanelSize; // 0x850 | Schema_Atomic | Size: 0x8
 			entity2::GameTime_t m_flLastShatterSoundEmitTime; // 0x858 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flLastCleanupTime; // 0x85c | Schema_DeclaredClass | Size: 0x4
@@ -44,13 +47,10 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName04; // 0x890 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_vInitialDamagePositions; // 0x898 | Schema_Atomic | Size: 0x18
 			// char  m_vInitialDamagePositions[0x18]; // 0x898 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vInitialDamagePositions; // 0x898 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_vExtraDamagePositions; // 0x8b0 | Schema_Atomic | Size: 0x18
 			// char  m_vExtraDamagePositions[0x18]; // 0x8b0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vExtraDamagePositions; // 0x8b0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::Vector4D > m_vInitialPanelVertices; // 0x8c8 | Schema_Atomic | Size: 0x18
 			// char  m_vInitialPanelVertices[0x18]; // 0x8c8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::Vector4D > m_vInitialPanelVertices; // 0x8c8 | Schema_Atomic | Size: 0x18
 			entity2::CEntityIOOutput m_OnBroken; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
 			uint8_t m_iSurfaceType; // 0x908 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CSimpleStopwatch : public CS2::client::CStopwatchBase {

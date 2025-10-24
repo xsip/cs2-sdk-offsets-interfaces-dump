@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace vphysics2 {
 		class constraint_breakableparams_t  {

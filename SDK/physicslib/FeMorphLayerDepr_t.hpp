@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class FeMorphLayerDepr_t  {
@@ -20,17 +23,16 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_Name; // 0x0 | Schema_Atomic | Size: 0x8
 			uint32_t m_nNameHash; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< uint16 > m_Nodes; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_Nodes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_Nodes; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_Nodes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_InitPos; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_InitPos[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_InitPos; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_Gravity; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_Gravity[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_GoalStrength; // 0x58 | Schema_Atomic | Size: 0x18
-			char  m_GoalStrength[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_GoalDamping; // 0x70 | Schema_Atomic | Size: 0x18
-			char  m_GoalDamping[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_Gravity; // 0x40 | Schema_Atomic | Size: 0x18
+			// char  m_Gravity[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_GoalStrength; // 0x58 | Schema_Atomic | Size: 0x18
+			// char  m_GoalStrength[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_GoalDamping; // 0x70 | Schema_Atomic | Size: 0x18
+			// char  m_GoalDamping[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			uint32_t m_nFlags; // 0x88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -19,6 +19,9 @@ namespace CS2 {
 		class CAI_Expresser;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CHostageExpresserShim : public CS2::server::CBaseCombatCharacter {

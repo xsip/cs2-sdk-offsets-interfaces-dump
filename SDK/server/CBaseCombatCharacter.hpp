@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBaseCombatCharacter : public CS2::server::CBaseFlex {
@@ -28,8 +31,8 @@ namespace CS2 {
 			bool m_bApplyStressDamage; // 0xb44 | Schema_Builtin | Size: 0x1
 			bool m_bDeathEventsDispatched; // 0xb45 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x42);
-			// GlobalTypes::CUtlVector< RelationshipOverride_t >* m_pVecRelationships; // 0xb88 | Schema_Ptr | Size: 0x8
-			char  m_pVecRelationships[0x8]; // 0xb88 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CUtlVector< RelationshipOverride_t >** m_pVecRelationships; // 0xb88 | Schema_Ptr | Size: 0x8
+			// char  m_pVecRelationships[0x8]; // 0xb88 | Schema_Ptr | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_strRelationships; // 0xb90 | Schema_Atomic | Size: 0x8
 			client::Hull_t m_eHull; // 0xb98 | Schema_DeclaredEnum | Size: 0x4
 			uint32_t m_nNavHullIdx; // 0xb9c | Schema_Builtin | Size: 0x4

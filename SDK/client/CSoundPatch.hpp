@@ -20,6 +20,9 @@ namespace CS2 {
 		class C_BaseEntity;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CSoundPatch  {
@@ -34,7 +37,6 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszSoundScriptName; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEnt; // 0x50 | Schema_Atomic | Size: 0x4
 			// char  m_hEnt[0x4]; // 0x50 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEnt; // 0x50 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CEntityIndex m_soundEntityIndex; // 0x54 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_soundOrigin; // 0x58 | Schema_Atomic | Size: 0xc
 			int32_t m_isPlaying; // 0x64 | Schema_Builtin | Size: 0x4

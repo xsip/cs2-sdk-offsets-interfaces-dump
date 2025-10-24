@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class FeSimdSpringIntegrator_t  {

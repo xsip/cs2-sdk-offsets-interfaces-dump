@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapNamedModelElementToScalar : public CS2::particles::CParticleFunctionInitializer {
@@ -24,9 +27,8 @@ namespace CS2 {
 			char  m_hModel[0x8]; // 0x1d8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char  m_names[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_names; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_values; // 0x1f8 | Schema_Atomic | Size: 0x18
-			char  m_values[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_values; // 0x1f8 | Schema_Atomic | Size: 0x18
+			// char  m_values[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
 			particles::ParticleAttributeIndex_t m_nFieldInput; // 0x210 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x214 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x218 | Schema_DeclaredEnum | Size: 0x4

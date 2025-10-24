@@ -5,6 +5,7 @@
 
 #ifndef CUSTOM_GLOBAL_TYPES
 
+#include <utility>
 #include <cstdint>
 #include <cfloat>
 #include <string_view>
@@ -13,6 +14,14 @@
 using float32 = float;
 using float64 = double;
 
+using int8 = int8_t;
+using int16 = int16_t;
+using int32 = int32_t;
+using int64 = int64_t;
+using uint8 = uint8_t;
+using uint16 = uint16_t;
+using uint32 = uint32_t;
+using uint64 = uint64_t;
 #ifndef S2_PAD
 #define S2_PAD_INSERT(x, y) x ## y
 #define S2_PAD_DEFINE(x, y) S2_PAD_INSERT(x, y)

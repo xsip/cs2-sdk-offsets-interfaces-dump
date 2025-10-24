@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_system {
 		class CPulseGraphInstance_TestDomain_Derived : public CS2::pulse_system::CPulseGraphInstance_TestDomain {

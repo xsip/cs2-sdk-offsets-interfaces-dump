@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class MaterialOverride_t : public CS2::worldrenderer::BaseSceneObjectOverride_t {

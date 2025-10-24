@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPrecipitationVData : public CS2::client::CEntitySubclassVDataBase {

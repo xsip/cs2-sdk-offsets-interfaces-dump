@@ -18,6 +18,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CDirectionalBlendUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {

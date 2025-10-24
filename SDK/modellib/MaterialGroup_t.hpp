@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class MaterialGroup_t  {
@@ -20,7 +23,6 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeIMaterial2 > > m_materials; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_materials[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeIMaterial2 > > m_materials; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::MaterialGroup_t, m_name) == 0x0, "m_name in MaterialGroup_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::MaterialGroup_t, m_materials) == 0x8, "m_materials in MaterialGroup_t should be at offset 0x8");

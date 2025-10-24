@@ -17,6 +17,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_PointWorldText : public CS2::client::C_ModelPointEntity {

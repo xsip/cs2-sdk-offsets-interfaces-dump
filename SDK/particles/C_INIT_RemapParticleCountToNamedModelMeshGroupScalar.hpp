@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_INIT_RemapParticleCountToNamedModelMeshGroupScalar : public CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar {

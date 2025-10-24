@@ -21,6 +21,9 @@ namespace CS2 {
 		class lerpdata_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CTriggerLerpObject : public CS2::server::CBaseTrigger {
@@ -38,7 +41,6 @@ namespace CS2 {
 			S2_PAD(0x6);
 			GlobalTypes::CUtlVector< server::lerpdata_t > m_vecLerpingObjects; // 0x9d0 | Schema_Atomic | Size: 0x18
 			// char  m_vecLerpingObjects[0x18]; // 0x9d0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< server::lerpdata_t > m_vecLerpingObjects; // 0x9d0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszLerpEffect; // 0x9e8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszLerpSound; // 0x9f0 | Schema_Atomic | Size: 0x8
 			bool m_bAttachTouchingObject; // 0x9f8 | Schema_Builtin | Size: 0x1

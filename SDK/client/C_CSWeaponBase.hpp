@@ -25,6 +25,9 @@ namespace CS2 {
 		class C_CSPlayerPawn;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_CSWeaponBase : public CS2::client::C_BasePlayerWeapon {
@@ -79,7 +82,6 @@ namespace CS2 {
 			entity2::GameTime_t m_nextPrevOwnerUseTime; // 0x1ae8 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hPrevOwner; // 0x1aec | Schema_Atomic | Size: 0x4
 			// char  m_hPrevOwner[0x4]; // 0x1aec | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_CSPlayerPawn > m_hPrevOwner; // 0x1aec | Schema_Atomic | Size: 0x4
 			entity2::GameTick_t m_nDropTick; // 0x1af0 | Schema_DeclaredClass | Size: 0x4
 			bool m_bWasActiveWeaponWhenDropped; // 0x1af4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f);

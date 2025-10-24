@@ -58,15 +58,17 @@ namespace CS2 {
 		class FeNodeWindBase_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class PhysFeModelDesc_t  {
 		public:
-			// GlobalTypes::CUtlVector< uint32 > m_CtrlHash; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_CtrlHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_CtrlHash; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_CtrlHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_CtrlName; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_CtrlName[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_CtrlName; // 0x18 | Schema_Atomic | Size: 0x18
 			uint32_t m_nStaticNodeFlags; // 0x30 | Schema_Builtin | Size: 0x4
 			uint32_t m_nDynamicNodeFlags; // 0x34 | Schema_Builtin | Size: 0x4
 			float32 m_flLocalForce; // 0x38 | Schema_Builtin | Size: 0x4
@@ -85,141 +87,106 @@ namespace CS2 {
 			uint16_t m_nNodeBaseJiggleboneDependsCount; // 0x56 | Schema_Builtin | Size: 0x2
 			uint16_t m_nRopeCount; // 0x58 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);
-			// GlobalTypes::CUtlVector< uint16 > m_Ropes; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_Ropes[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_Ropes; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_Ropes[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeNodeBase_t > m_NodeBases; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_NodeBases[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeNodeBase_t > m_NodeBases; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSimdNodeBase_t > m_SimdNodeBases; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_SimdNodeBases[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSimdNodeBase_t > m_SimdNodeBases; // 0x90 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeQuad_t > m_Quads; // 0xa8 | Schema_Atomic | Size: 0x18
 			// char  m_Quads[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeQuad_t > m_Quads; // 0xa8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSimdQuad_t > m_SimdQuads; // 0xc0 | Schema_Atomic | Size: 0x18
 			// char  m_SimdQuads[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSimdQuad_t > m_SimdQuads; // 0xc0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSimdTri_t > m_SimdTris; // 0xd8 | Schema_Atomic | Size: 0x18
 			// char  m_SimdTris[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSimdTri_t > m_SimdTris; // 0xd8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSimdRodConstraint_t > m_SimdRods; // 0xf0 | Schema_Atomic | Size: 0x18
 			// char  m_SimdRods[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSimdRodConstraint_t > m_SimdRods; // 0xf0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSimdRodConstraintAnim_t > m_SimdRodsAnim; // 0x108 | Schema_Atomic | Size: 0x18
 			// char  m_SimdRodsAnim[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSimdRodConstraintAnim_t > m_SimdRodsAnim; // 0x108 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_InitPose; // 0x120 | Schema_Atomic | Size: 0x18
 			// char  m_InitPose[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_InitPose; // 0x120 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeRodConstraint_t > m_Rods; // 0x138 | Schema_Atomic | Size: 0x18
 			// char  m_Rods[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeRodConstraint_t > m_Rods; // 0x138 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeTwistConstraint_t > m_Twists; // 0x150 | Schema_Atomic | Size: 0x18
 			// char  m_Twists[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeTwistConstraint_t > m_Twists; // 0x150 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeHingeLimit_t > m_HingeLimits; // 0x168 | Schema_Atomic | Size: 0x18
 			// char  m_HingeLimits[0x18]; // 0x168 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeHingeLimit_t > m_HingeLimits; // 0x168 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint32 > m_AntiTunnelBytecode; // 0x180 | Schema_Atomic | Size: 0x18
-			char  m_AntiTunnelBytecode[0x18]; // 0x180 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_AntiTunnelBytecode; // 0x180 | Schema_Atomic | Size: 0x18
+			// char  m_AntiTunnelBytecode[0x18]; // 0x180 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeDynKinLink_t > m_DynKinLinks; // 0x198 | Schema_Atomic | Size: 0x18
 			// char  m_DynKinLinks[0x18]; // 0x198 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeDynKinLink_t > m_DynKinLinks; // 0x198 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeAntiTunnelProbe_t > m_AntiTunnelProbes; // 0x1b0 | Schema_Atomic | Size: 0x18
 			// char  m_AntiTunnelProbes[0x18]; // 0x1b0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeAntiTunnelProbe_t > m_AntiTunnelProbes; // 0x1b0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_AntiTunnelTargetNodes; // 0x1c8 | Schema_Atomic | Size: 0x18
-			char  m_AntiTunnelTargetNodes[0x18]; // 0x1c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_AntiTunnelTargetNodes; // 0x1c8 | Schema_Atomic | Size: 0x18
+			// char  m_AntiTunnelTargetNodes[0x18]; // 0x1c8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeAxialEdgeBend_t > m_AxialEdges; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char  m_AxialEdges[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeAxialEdgeBend_t > m_AxialEdges; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_NodeInvMasses; // 0x1f8 | Schema_Atomic | Size: 0x18
-			char  m_NodeInvMasses[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_NodeInvMasses; // 0x1f8 | Schema_Atomic | Size: 0x18
+			// char  m_NodeInvMasses[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeCtrlOffset_t > m_CtrlOffsets; // 0x210 | Schema_Atomic | Size: 0x18
 			// char  m_CtrlOffsets[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeCtrlOffset_t > m_CtrlOffsets; // 0x210 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeCtrlOsOffset_t > m_CtrlOsOffsets; // 0x228 | Schema_Atomic | Size: 0x18
 			// char  m_CtrlOsOffsets[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeCtrlOsOffset_t > m_CtrlOsOffsets; // 0x228 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeFollowNode_t > m_FollowNodes; // 0x240 | Schema_Atomic | Size: 0x18
 			// char  m_FollowNodes[0x18]; // 0x240 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeFollowNode_t > m_FollowNodes; // 0x240 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeCollisionPlane_t > m_CollisionPlanes; // 0x258 | Schema_Atomic | Size: 0x18
 			// char  m_CollisionPlanes[0x18]; // 0x258 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeCollisionPlane_t > m_CollisionPlanes; // 0x258 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeNodeIntegrator_t > m_NodeIntegrator; // 0x270 | Schema_Atomic | Size: 0x18
 			// char  m_NodeIntegrator[0x18]; // 0x270 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeNodeIntegrator_t > m_NodeIntegrator; // 0x270 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSpringIntegrator_t > m_SpringIntegrator; // 0x288 | Schema_Atomic | Size: 0x18
 			// char  m_SpringIntegrator[0x18]; // 0x288 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSpringIntegrator_t > m_SpringIntegrator; // 0x288 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSimdSpringIntegrator_t > m_SimdSpringIntegrator; // 0x2a0 | Schema_Atomic | Size: 0x18
 			// char  m_SimdSpringIntegrator[0x18]; // 0x2a0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSimdSpringIntegrator_t > m_SimdSpringIntegrator; // 0x2a0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeWorldCollisionParams_t > m_WorldCollisionParams; // 0x2b8 | Schema_Atomic | Size: 0x18
 			// char  m_WorldCollisionParams[0x18]; // 0x2b8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeWorldCollisionParams_t > m_WorldCollisionParams; // 0x2b8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_LegacyStretchForce; // 0x2d0 | Schema_Atomic | Size: 0x18
-			char  m_LegacyStretchForce[0x18]; // 0x2d0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_NodeCollisionRadii; // 0x2e8 | Schema_Atomic | Size: 0x18
-			char  m_NodeCollisionRadii[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_DynNodeFriction; // 0x300 | Schema_Atomic | Size: 0x18
-			char  m_DynNodeFriction[0x18]; // 0x300 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_LocalRotation; // 0x318 | Schema_Atomic | Size: 0x18
-			char  m_LocalRotation[0x18]; // 0x318 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_LocalForce; // 0x330 | Schema_Atomic | Size: 0x18
-			char  m_LocalForce[0x18]; // 0x330 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_LegacyStretchForce; // 0x2d0 | Schema_Atomic | Size: 0x18
+			// char  m_LegacyStretchForce[0x18]; // 0x2d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_NodeCollisionRadii; // 0x2e8 | Schema_Atomic | Size: 0x18
+			// char  m_NodeCollisionRadii[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_DynNodeFriction; // 0x300 | Schema_Atomic | Size: 0x18
+			// char  m_DynNodeFriction[0x18]; // 0x300 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_LocalRotation; // 0x318 | Schema_Atomic | Size: 0x18
+			// char  m_LocalRotation[0x18]; // 0x318 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_LocalForce; // 0x330 | Schema_Atomic | Size: 0x18
+			// char  m_LocalForce[0x18]; // 0x330 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeTaperedCapsuleStretch_t > m_TaperedCapsuleStretches; // 0x348 | Schema_Atomic | Size: 0x18
 			// char  m_TaperedCapsuleStretches[0x18]; // 0x348 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeTaperedCapsuleStretch_t > m_TaperedCapsuleStretches; // 0x348 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeTaperedCapsuleRigid_t > m_TaperedCapsuleRigids; // 0x360 | Schema_Atomic | Size: 0x18
 			// char  m_TaperedCapsuleRigids[0x18]; // 0x360 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeTaperedCapsuleRigid_t > m_TaperedCapsuleRigids; // 0x360 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSphereRigid_t > m_SphereRigids; // 0x378 | Schema_Atomic | Size: 0x18
 			// char  m_SphereRigids[0x18]; // 0x378 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSphereRigid_t > m_SphereRigids; // 0x378 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_WorldCollisionNodes; // 0x390 | Schema_Atomic | Size: 0x18
-			char  m_WorldCollisionNodes[0x18]; // 0x390 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_TreeParents; // 0x3a8 | Schema_Atomic | Size: 0x18
-			char  m_TreeParents[0x18]; // 0x3a8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_TreeCollisionMasks; // 0x3c0 | Schema_Atomic | Size: 0x18
-			char  m_TreeCollisionMasks[0x18]; // 0x3c0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_WorldCollisionNodes; // 0x390 | Schema_Atomic | Size: 0x18
+			// char  m_WorldCollisionNodes[0x18]; // 0x390 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_TreeParents; // 0x3a8 | Schema_Atomic | Size: 0x18
+			// char  m_TreeParents[0x18]; // 0x3a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_TreeCollisionMasks; // 0x3c0 | Schema_Atomic | Size: 0x18
+			// char  m_TreeCollisionMasks[0x18]; // 0x3c0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeTreeChildren_t > m_TreeChildren; // 0x3d8 | Schema_Atomic | Size: 0x18
 			// char  m_TreeChildren[0x18]; // 0x3d8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeTreeChildren_t > m_TreeChildren; // 0x3d8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_FreeNodes; // 0x3f0 | Schema_Atomic | Size: 0x18
-			char  m_FreeNodes[0x18]; // 0x3f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_FreeNodes; // 0x3f0 | Schema_Atomic | Size: 0x18
+			// char  m_FreeNodes[0x18]; // 0x3f0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeFitMatrix_t > m_FitMatrices; // 0x408 | Schema_Atomic | Size: 0x18
 			// char  m_FitMatrices[0x18]; // 0x408 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeFitMatrix_t > m_FitMatrices; // 0x408 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeFitWeight_t > m_FitWeights; // 0x420 | Schema_Atomic | Size: 0x18
 			// char  m_FitWeights[0x18]; // 0x420 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeFitWeight_t > m_FitWeights; // 0x420 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeNodeReverseOffset_t > m_ReverseOffsets; // 0x438 | Schema_Atomic | Size: 0x18
 			// char  m_ReverseOffsets[0x18]; // 0x438 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeNodeReverseOffset_t > m_ReverseOffsets; // 0x438 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeAnimStrayRadius_t > m_AnimStrayRadii; // 0x450 | Schema_Atomic | Size: 0x18
 			// char  m_AnimStrayRadii[0x18]; // 0x450 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeAnimStrayRadius_t > m_AnimStrayRadii; // 0x450 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeSimdAnimStrayRadius_t > m_SimdAnimStrayRadii; // 0x468 | Schema_Atomic | Size: 0x18
 			// char  m_SimdAnimStrayRadii[0x18]; // 0x468 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSimdAnimStrayRadius_t > m_SimdAnimStrayRadii; // 0x468 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeKelagerBend2_t > m_KelagerBends; // 0x480 | Schema_Atomic | Size: 0x18
 			// char  m_KelagerBends[0x18]; // 0x480 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeKelagerBend2_t > m_KelagerBends; // 0x480 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeCtrlSoftOffset_t > m_CtrlSoftOffsets; // 0x498 | Schema_Atomic | Size: 0x18
 			// char  m_CtrlSoftOffsets[0x18]; // 0x498 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeCtrlSoftOffset_t > m_CtrlSoftOffsets; // 0x498 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::CFeIndexedJiggleBone > m_JiggleBones; // 0x4b0 | Schema_Atomic | Size: 0x18
 			// char  m_JiggleBones[0x18]; // 0x4b0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::CFeIndexedJiggleBone > m_JiggleBones; // 0x4b0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_SourceElems; // 0x4c8 | Schema_Atomic | Size: 0x18
-			char  m_SourceElems[0x18]; // 0x4c8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint32 > m_GoalDampedSpringIntegrators; // 0x4e0 | Schema_Atomic | Size: 0x18
-			char  m_GoalDampedSpringIntegrators[0x18]; // 0x4e0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_SourceElems; // 0x4c8 | Schema_Atomic | Size: 0x18
+			// char  m_SourceElems[0x18]; // 0x4c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_GoalDampedSpringIntegrators; // 0x4e0 | Schema_Atomic | Size: 0x18
+			// char  m_GoalDampedSpringIntegrators[0x18]; // 0x4e0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeTri_t > m_Tris; // 0x4f8 | Schema_Atomic | Size: 0x18
 			// char  m_Tris[0x18]; // 0x4f8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeTri_t > m_Tris; // 0x4f8 | Schema_Atomic | Size: 0x18
 			uint16_t m_nTriCount1; // 0x510 | Schema_Builtin | Size: 0x2
 			uint16_t m_nTriCount2; // 0x512 | Schema_Builtin | Size: 0x2
 			uint8_t m_nReservedUint8; // 0x514 | Schema_Builtin | Size: 0x1
@@ -228,40 +195,32 @@ namespace CS2 {
 			uint8_t m_nExtraIterations; // 0x517 | Schema_Builtin | Size: 0x1
 			GlobalTypes::CUtlVector< physicslib::FeSDFRigid_t > m_SDFRigids; // 0x518 | Schema_Atomic | Size: 0x18
 			// char  m_SDFRigids[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeSDFRigid_t > m_SDFRigids; // 0x518 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeBoxRigid_t > m_BoxRigids; // 0x530 | Schema_Atomic | Size: 0x18
 			// char  m_BoxRigids[0x18]; // 0x530 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeBoxRigid_t > m_BoxRigids; // 0x530 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_DynNodeVertexSet; // 0x548 | Schema_Atomic | Size: 0x18
-			char  m_DynNodeVertexSet[0x18]; // 0x548 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint32 > m_VertexSetNames; // 0x560 | Schema_Atomic | Size: 0x18
-			char  m_VertexSetNames[0x18]; // 0x560 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_DynNodeVertexSet; // 0x548 | Schema_Atomic | Size: 0x18
+			// char  m_DynNodeVertexSet[0x18]; // 0x548 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_VertexSetNames; // 0x560 | Schema_Atomic | Size: 0x18
+			// char  m_VertexSetNames[0x18]; // 0x560 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeRigidColliderIndices_t > m_RigidColliderPriorities; // 0x578 | Schema_Atomic | Size: 0x18
 			// char  m_RigidColliderPriorities[0x18]; // 0x578 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeRigidColliderIndices_t > m_RigidColliderPriorities; // 0x578 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeMorphLayerDepr_t > m_MorphLayers; // 0x590 | Schema_Atomic | Size: 0x18
 			// char  m_MorphLayers[0x18]; // 0x590 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeMorphLayerDepr_t > m_MorphLayers; // 0x590 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_MorphSetData; // 0x5a8 | Schema_Atomic | Size: 0x18
-			char  m_MorphSetData[0x18]; // 0x5a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_MorphSetData; // 0x5a8 | Schema_Atomic | Size: 0x18
+			// char  m_MorphSetData[0x18]; // 0x5a8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeVertexMapDesc_t > m_VertexMaps; // 0x5c0 | Schema_Atomic | Size: 0x18
 			// char  m_VertexMaps[0x18]; // 0x5c0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeVertexMapDesc_t > m_VertexMaps; // 0x5c0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_VertexMapValues; // 0x5d8 | Schema_Atomic | Size: 0x18
-			char  m_VertexMapValues[0x18]; // 0x5d8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_VertexMapValues; // 0x5d8 | Schema_Atomic | Size: 0x18
+			// char  m_VertexMapValues[0x18]; // 0x5d8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeEffectDesc_t > m_Effects; // 0x5f0 | Schema_Atomic | Size: 0x18
 			// char  m_Effects[0x18]; // 0x5f0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeEffectDesc_t > m_Effects; // 0x5f0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeCtrlOffset_t > m_LockToParent; // 0x608 | Schema_Atomic | Size: 0x18
 			// char  m_LockToParent[0x18]; // 0x608 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeCtrlOffset_t > m_LockToParent; // 0x608 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_LockToGoal; // 0x620 | Schema_Atomic | Size: 0x18
-			char  m_LockToGoal[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int16 > m_SkelParents; // 0x638 | Schema_Atomic | Size: 0x18
-			char  m_SkelParents[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_LockToGoal; // 0x620 | Schema_Atomic | Size: 0x18
+			// char  m_LockToGoal[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int16 > m_SkelParents; // 0x638 | Schema_Atomic | Size: 0x18
+			// char  m_SkelParents[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::FeNodeWindBase_t > m_DynNodeWindBases; // 0x650 | Schema_Atomic | Size: 0x18
 			// char  m_DynNodeWindBases[0x18]; // 0x650 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::FeNodeWindBase_t > m_DynNodeWindBases; // 0x650 | Schema_Atomic | Size: 0x18
 			float32 m_flInternalPressure; // 0x668 | Schema_Builtin | Size: 0x4
 			float32 m_flDefaultTimeDilation; // 0x66c | Schema_Builtin | Size: 0x4
 			float32 m_flWindage; // 0x670 | Schema_Builtin | Size: 0x4

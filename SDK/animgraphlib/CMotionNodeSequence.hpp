@@ -20,13 +20,15 @@ namespace CS2 {
 		class TagSpan_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CMotionNodeSequence : public CS2::animgraphlib::CMotionNode {
 		public:
 			GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x28 | Schema_Atomic | Size: 0x18
 			animationsystem::HSequence m_hSequence; // 0x40 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flPlaybackSpeed; // 0x44 | Schema_Builtin | Size: 0x4
 		};

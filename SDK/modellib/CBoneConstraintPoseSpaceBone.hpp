@@ -19,13 +19,15 @@ namespace CS2 {
 		class Input_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CBoneConstraintPoseSpaceBone : public CS2::modellib::CBaseConstraint {
 		public:
 			GlobalTypes::CUtlVector< modellib::Input_t > m_inputList; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_inputList[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::Input_t > m_inputList; // 0x60 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x10); // End padding
 		};
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceBone, m_inputList) == 0x60, "m_inputList in CBoneConstraintPoseSpaceBone should be at offset 0x60");

@@ -71,7 +71,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flViewmodelFOV = 0x2444; // float32 m_flViewmodelFOV; |  0x2444 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_vecPlayerPatchEconIndices = 0x2448; // uint32_t m_vecPlayerPatchEconIndices[5]; |  0x2448 | Schema_FixedArray | Size: 0x14
 				constexpr std::ptrdiff_t m_GunGameImmunityColor = 0x2480; // GlobalTypes::Color m_GunGameImmunityColor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecBulletHitModels = 0x24d0; // client::CUtlVector< C_BulletHitModel >* m_vecBulletHitModels; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecBulletHitModels = 0x24d0; // client::CUtlVector< client::C_BulletHitModel > m_vecBulletHitModels; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bIsWalking = 0x24e8; // bool m_bIsWalking; |  0x24e8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_thirdPersonHeading = 0x24f0; // GlobalTypes::QAngle m_thirdPersonHeading; |  Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flSlopeDropOffset = 0x2580; // float32 m_flSlopeDropOffset; |  0x2580 | Schema_Builtin | Size: 0x4

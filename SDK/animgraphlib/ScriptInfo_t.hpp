@@ -19,6 +19,9 @@ namespace CS2 {
 		class CAnimParamHandle;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class ScriptInfo_t  {
@@ -26,11 +29,10 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_code; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_paramsModified; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_paramsModified[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_paramsModified; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_proxyReadParams; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_proxyReadParams[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_proxyWriteParams; // 0x38 | Schema_Atomic | Size: 0x18
-			char  m_proxyWriteParams[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_proxyReadParams; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_proxyReadParams[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_proxyWriteParams; // 0x38 | Schema_Atomic | Size: 0x18
+			// char  m_proxyWriteParams[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			animgraphlib::AnimScriptType m_eScriptType; // 0x50 | Schema_DeclaredEnum | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};

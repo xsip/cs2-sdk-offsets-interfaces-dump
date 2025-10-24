@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class AimCameraOpFixedSettings_t  {
@@ -23,8 +26,8 @@ namespace CS2 {
 			int32_t m_nClavicleLeftJointIndex; // 0xc | Schema_Builtin | Size: 0x4
 			int32_t m_nClavicleRightJointIndex; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nDepenetrationJointIndex; // 0x14 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< int32 > m_propJoints; // 0x18 | Schema_Atomic | Size: 0x18
-			char  m_propJoints[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_propJoints; // 0x18 | Schema_Atomic | Size: 0x18
+			// char  m_propJoints[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::AimCameraOpFixedSettings_t, m_nChainIndex) == 0x0, "m_nChainIndex in AimCameraOpFixedSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::AimCameraOpFixedSettings_t, m_nCameraJointIndex) == 0x4, "m_nCameraJointIndex in AimCameraOpFixedSettings_t should be at offset 0x4");

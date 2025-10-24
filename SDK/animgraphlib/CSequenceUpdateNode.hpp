@@ -21,6 +21,9 @@ namespace CS2 {
 		class TagSpan_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CSequenceUpdateNode : public CS2::animgraphlib::CSequenceUpdateNodeBase {
@@ -30,7 +33,6 @@ namespace CS2 {
 			animgraphlib::CParamSpanUpdater m_paramSpans; // 0x80 | Schema_DeclaredClass | Size: 0x18
 			GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x98 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x98 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNode, m_hSequence) == 0x78, "m_hSequence in CSequenceUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNode, m_duration) == 0x7C, "m_duration in CSequenceUpdateNode should be at offset 0x7C");

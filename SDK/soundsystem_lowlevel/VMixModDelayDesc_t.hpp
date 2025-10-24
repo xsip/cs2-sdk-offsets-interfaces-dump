@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixModDelayDesc_t  {

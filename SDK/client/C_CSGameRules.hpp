@@ -21,6 +21,9 @@ namespace CS2 {
 		class CCSGameModeRules;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_CSGameRules : public CS2::client::C_TeamplayRules {

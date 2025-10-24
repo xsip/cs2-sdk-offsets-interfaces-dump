@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class FeBuildBoxRigid_t : public CS2::physicslib::FeBoxRigid_t {

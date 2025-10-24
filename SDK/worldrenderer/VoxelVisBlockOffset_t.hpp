@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class VoxelVisBlockOffset_t  {

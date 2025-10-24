@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_CSPlayerPawn;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_Chicken : public CS2::client::C_DynamicProp {
@@ -29,12 +32,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CHandle< client::CBaseAnimGraph > m_hHolidayHatAddon; // 0x1428 | Schema_Atomic | Size: 0x4
 			// char  m_hHolidayHatAddon[0x4]; // 0x1428 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::CBaseAnimGraph > m_hHolidayHatAddon; // 0x1428 | Schema_Atomic | Size: 0x4
 			bool m_jumpedThisFrame; // 0x142c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_leader; // 0x1430 | Schema_Atomic | Size: 0x4
 			// char  m_leader[0x4]; // 0x1430 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_CSPlayerPawn > m_leader; // 0x1430 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			client::C_AttributeContainer m_AttributeManager; // 0x1438 | Schema_DeclaredClass | Size: 0x4d8
 			bool m_bAttributesInitialized; // 0x1910 | Schema_Builtin | Size: 0x1

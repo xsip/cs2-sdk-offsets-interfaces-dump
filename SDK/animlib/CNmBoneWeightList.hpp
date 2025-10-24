@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animlib {
 		class CNmBoneWeightList  {
@@ -20,9 +23,8 @@ namespace CS2 {
 			GlobalTypes::CResourceName m_skeletonName; // 0x0 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_boneIDs; // 0xe0 | Schema_Atomic | Size: 0x18
 			// char  m_boneIDs[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_boneIDs; // 0xe0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_weights; // 0xf8 | Schema_Atomic | Size: 0x18
-			char  m_weights[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_weights; // 0xf8 | Schema_Atomic | Size: 0x18
+			// char  m_weights[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animlib::CNmBoneWeightList, m_skeletonName) == 0x0, "m_skeletonName in CNmBoneWeightList should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmBoneWeightList, m_boneIDs) == 0xE0, "m_boneIDs in CNmBoneWeightList should be at offset 0xE0");

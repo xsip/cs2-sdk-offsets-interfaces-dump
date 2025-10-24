@@ -26,6 +26,9 @@ namespace CS2 {
 		class CFootMotion;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CSeqS1SeqDesc  {
@@ -38,19 +41,15 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< animationsystem::CSeqAutoLayer > m_autoLayerArray; // 0x98 | Schema_Atomic | Size: 0x18
 			// char  m_autoLayerArray[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::CSeqAutoLayer > m_autoLayerArray; // 0x98 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< animationsystem::CSeqIKLock > m_IKLockArray; // 0xb0 | Schema_Atomic | Size: 0x18
 			// char  m_IKLockArray[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::CSeqIKLock > m_IKLockArray; // 0xb0 | Schema_Atomic | Size: 0x18
 			animationsystem::CSeqTransition m_transition; // 0xc8 | Schema_DeclaredClass | Size: 0x8
 			GlobalTypes::KeyValues3 m_SequenceKeys; // 0xd0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CBufferString m_LegacyKeyValueText; // 0xe0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; // 0xf0 | Schema_Atomic | Size: 0x18
 			// char  m_activityArray[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; // 0xf0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< modellib::CFootMotion > m_footMotion; // 0x108 | Schema_Atomic | Size: 0x18
 			// char  m_footMotion[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< modellib::CFootMotion > m_footMotion; // 0x108 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CSeqS1SeqDesc, m_sName) == 0x0, "m_sName in CSeqS1SeqDesc should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqS1SeqDesc, m_flags) == 0x10, "m_flags in CSeqS1SeqDesc should be at offset 0x10");

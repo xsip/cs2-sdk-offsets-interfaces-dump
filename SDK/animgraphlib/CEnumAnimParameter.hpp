@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CEnumAnimParameter : public CS2::animgraphlib::CConcreteAnimParameter {
@@ -23,9 +26,8 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_enumOptions; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_enumOptions[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_enumOptions; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint64 > m_vecEnumReferenced; // 0xa8 | Schema_Atomic | Size: 0x18
-			char  m_vecEnumReferenced[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint64 > m_vecEnumReferenced; // 0xa8 | Schema_Atomic | Size: 0x18
+			// char  m_vecEnumReferenced[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CEnumAnimParameter, m_defaultValue) == 0x88, "m_defaultValue in CEnumAnimParameter should be at offset 0x88");

@@ -15,12 +15,15 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CPlayerInputAnimMotorUpdater : public CS2::animgraphlib::CAnimMotorUpdaterBase {
 		public:
-			// GlobalTypes::CUtlVector< float32 > m_sampleTimes; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_sampleTimes[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_sampleTimes; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_sampleTimes[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			float32 m_flSpringConstant; // 0x3c | Schema_Builtin | Size: 0x4
 			float32 m_flAnticipationDistance; // 0x40 | Schema_Builtin | Size: 0x4

@@ -22,6 +22,9 @@ namespace CS2 {
 		class AttachedModelData_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_EconEntity : public CS2::client::C_BaseFlex {
@@ -42,11 +45,10 @@ namespace CS2 {
 			bool m_bClientside; // 0x1880 | Schema_Builtin | Size: 0x1
 			bool m_bParticleSystemsCreated; // 0x1881 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			// GlobalTypes::CUtlVector< int32 > m_vecAttachedParticles; // 0x1888 | Schema_Atomic | Size: 0x18
-			char  m_vecAttachedParticles[0x18]; // 0x1888 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_vecAttachedParticles; // 0x1888 | Schema_Atomic | Size: 0x18
+			// char  m_vecAttachedParticles[0x18]; // 0x1888 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CHandle< client::CBaseAnimGraph > m_hViewmodelAttachment; // 0x18a0 | Schema_Atomic | Size: 0x4
 			// char  m_hViewmodelAttachment[0x4]; // 0x18a0 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::CBaseAnimGraph > m_hViewmodelAttachment; // 0x18a0 | Schema_Atomic | Size: 0x4
 			int32_t m_iOldTeam; // 0x18a4 | Schema_Builtin | Size: 0x4
 			bool m_bAttachmentDirty; // 0x18a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -55,11 +57,9 @@ namespace CS2 {
 			S2_PAD(0xc);
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hOldProvidee; // 0x18c0 | Schema_Atomic | Size: 0x4
 			// char  m_hOldProvidee[0x4]; // 0x18c0 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hOldProvidee; // 0x18c0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< client::AttachedModelData_t > m_vecAttachedModels; // 0x18c8 | Schema_Atomic | Size: 0x18
 			// char  m_vecAttachedModels[0x18]; // 0x18c8 | Schema_Atomic | Size: 0x18
-			// client::AttachedModelData_t > m_vecAttachedModels; // 0x18c8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayTime) == 0x1378, "m_flFlexDelayTime in C_EconEntity should be at offset 0x1378");
 		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayedWeight) == 0x1380, "m_flFlexDelayedWeight in C_EconEntity should be at offset 0x1380");

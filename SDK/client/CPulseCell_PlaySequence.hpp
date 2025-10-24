@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CPulseCell_PlaySequence : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {

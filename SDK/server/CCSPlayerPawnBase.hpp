@@ -22,6 +22,9 @@ namespace CS2 {
 		class CCSPlayer_PingServices;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSPlayerPawnBase : public CS2::server::CBasePlayerPawn {

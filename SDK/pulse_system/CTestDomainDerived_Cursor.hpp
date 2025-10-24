@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_system {
 		class CTestDomainDerived_Cursor : public CS2::pulse_runtime_lib::CPulseExecCursor {

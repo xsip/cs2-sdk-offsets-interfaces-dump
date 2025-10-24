@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_FuncLadder : public CS2::client::C_BaseModelEntity {
@@ -22,7 +25,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< GlobalTypes::CHandle< C_InfoLadderDismount > > m_Dismounts; // 0xec0 | Schema_Atomic | Size: 0x18
 			// char  m_Dismounts[0x18]; // 0xec0 | Schema_Atomic | Size: 0x18
-			// client::CUtlVector< client.dll::CHandle< C_InfoLadderDismount > > m_Dismounts; // 0xec0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector m_vecLocalTop; // 0xed8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::VectorWS m_vecPlayerMountPositionTop; // 0xee4 | Schema_Atomic | Size: 0xc
 			GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; // 0xef0 | Schema_Atomic | Size: 0xc

@@ -14,15 +14,17 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_PhysMagnet : public CS2::client::CBaseAnimGraph {
 		public:
-			// GlobalTypes::CUtlVector< int32 > m_aAttachedObjectsFromServer; // 0x1158 | Schema_Atomic | Size: 0x18
-			char  m_aAttachedObjectsFromServer[0x18]; // 0x1158 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_aAttachedObjectsFromServer; // 0x1158 | Schema_Atomic | Size: 0x18
+			// char  m_aAttachedObjectsFromServer[0x18]; // 0x1158 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CHandle< C_BaseEntity > > m_aAttachedObjects; // 0x1170 | Schema_Atomic | Size: 0x18
 			// char  m_aAttachedObjects[0x18]; // 0x1170 | Schema_Atomic | Size: 0x18
-			// client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_aAttachedObjects; // 0x1170 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::C_PhysMagnet, m_aAttachedObjectsFromServer) == 0x1158, "m_aAttachedObjectsFromServer in C_PhysMagnet should be at offset 0x1158");
 		static_assert(offsetof(CS2::client::C_PhysMagnet, m_aAttachedObjects) == 0x1170, "m_aAttachedObjects in C_PhysMagnet should be at offset 0x1170");

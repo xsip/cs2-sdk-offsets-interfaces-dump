@@ -18,6 +18,9 @@ namespace CS2 {
 		class RnHull_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class CastSphereSATParams_t  {

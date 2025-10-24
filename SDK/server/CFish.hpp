@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CFish : public CS2::server::CBaseAnimGraph {
@@ -44,7 +47,7 @@ namespace CS2 {
 			server::CountdownTimer m_panicTimer; // 0xb38 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_disperseTimer; // 0xb50 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_proximityTimer; // 0xb68 | Schema_DeclaredClass | Size: 0x18
-			// server::CUtlVector< CFish >* m_visible; // 0xb80 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector< server::CFish > m_visible; // 0xb80 | Schema_Atomic | Size: 0x18
 			char  m_visible[0x18]; // 0xb80 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

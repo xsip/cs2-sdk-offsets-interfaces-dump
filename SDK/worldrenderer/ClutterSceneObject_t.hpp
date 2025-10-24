@@ -20,6 +20,9 @@ namespace CS2 {
 		class ClutterTile_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class ClutterSceneObject_t  {
@@ -30,16 +33,13 @@ namespace CS2 {
 			S2_PAD(0x2);
 			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_instancePositions; // 0x20 | Schema_Atomic | Size: 0x18
 			// char  m_instancePositions[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_instancePositions; // 0x20 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
-			// GlobalTypes::CUtlVector< float32 > m_instanceScales; // 0x50 | Schema_Atomic | Size: 0x18
-			char  m_instanceScales[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_instanceScales; // 0x50 | Schema_Atomic | Size: 0x18
+			// char  m_instanceScales[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::Color > m_instanceTintSrgb; // 0x68 | Schema_Atomic | Size: 0x18
 			// char  m_instanceTintSrgb[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::Color > m_instanceTintSrgb; // 0x68 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< worldrenderer::ClutterTile_t > m_tiles; // 0x80 | Schema_Atomic | Size: 0x18
 			// char  m_tiles[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< worldrenderer::ClutterTile_t > m_tiles; // 0x80 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_renderableModel; // 0x98 | Schema_Atomic | Size: 0x8
 			char  m_renderableModel[0x8]; // 0x98 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_materialGroup; // 0xa0 | Schema_Atomic | Size: 0x4

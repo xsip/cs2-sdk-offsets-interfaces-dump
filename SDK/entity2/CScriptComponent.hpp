@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace entity2 {
 		class CScriptComponent : public CS2::entity2::CEntityComponent {

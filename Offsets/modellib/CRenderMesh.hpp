@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x1F0
 			namespace CRenderMesh /**/ {
 				constexpr std::ptrdiff_t m_sceneObjects = 0x10; // GlobalTypes::CUtlLeanVectorFixedGrowable< modellib::CSceneObjectData, 1 > m_sceneObjects; |  Schema_Atomic | Size: 0x98
-				constexpr std::ptrdiff_t m_constraints = 0xa8; // GlobalTypes::CUtlLeanVector< CBaseConstraint >* m_constraints; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_constraints = 0xa8; // GlobalTypes::CUtlLeanVector< modellib::CBaseConstraint > m_constraints; |  Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_skeleton = 0xb8; // modellib::CRenderSkeleton m_skeleton; |  Schema_DeclaredClass | Size: 0x50
 				constexpr std::ptrdiff_t m_bUseUV2ForCharting = 0x1b4; // bool m_bUseUV2ForCharting; |  0x1b4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEmbeddedMapMesh = 0x1b5; // bool m_bEmbeddedMapMesh; |  0x1b5 | Schema_Builtin | Size: 0x1

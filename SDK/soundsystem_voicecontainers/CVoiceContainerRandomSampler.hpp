@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerRandomSampler : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
@@ -26,7 +29,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_grainResources; // 0xd0 | Schema_Atomic | Size: 0x18
 			// char  m_grainResources[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_grainResources; // 0xd0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0xf8); // End padding
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler, m_flAmplitude) == 0xB8, "m_flAmplitude in CVoiceContainerRandomSampler should be at offset 0xB8");

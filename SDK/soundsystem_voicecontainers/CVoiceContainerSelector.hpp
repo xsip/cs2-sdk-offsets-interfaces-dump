@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerSelector : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
@@ -23,8 +26,8 @@ namespace CS2 {
 			soundsystem_voicecontainers::PlayBackMode_t m_mode; // 0xb8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xc0 | Schema_DeclaredClass | Size: 0x38
-			// GlobalTypes::CUtlVector< float32 > m_fProbabilityWeights; // 0xf8 | Schema_Atomic | Size: 0x18
-			char  m_fProbabilityWeights[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_fProbabilityWeights; // 0xf8 | Schema_Atomic | Size: 0x18
+			// char  m_fProbabilityWeights[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x20); // End padding
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_mode) == 0xB8, "m_mode in CVoiceContainerSelector should be at offset 0xB8");

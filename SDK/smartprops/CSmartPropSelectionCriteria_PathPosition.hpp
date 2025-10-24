@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropSelectionCriteria_PathPosition : public CS2::smartprops::CSmartPropSelectionCriteria {

@@ -19,6 +19,9 @@ namespace CS2 {
 		class CSkeletonInstance;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CSkeletonAnimationController : public CS2::client::ISkeletonAnimationController {

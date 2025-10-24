@@ -18,6 +18,9 @@ namespace CS2 {
 		class C_RopeKeyframe;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CPhysicsDelegate  {

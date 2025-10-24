@@ -19,6 +19,9 @@ namespace CS2 {
 		class CBaseFlex;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CAI_Expresser  {

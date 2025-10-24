@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerShapedNoise : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {

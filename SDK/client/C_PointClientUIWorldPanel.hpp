@@ -19,6 +19,9 @@ namespace CS2 {
 		class CPointOffScreenIndicatorUi;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_PointClientUIWorldPanel : public CS2::client::C_BaseClientUIEntity {

@@ -18,13 +18,15 @@ namespace CS2 {
 		class SosEditItemInfo_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem {
 		class SelectedEditItemInfo_t  {
 		public:
 			GlobalTypes::CUtlVector< soundsystem::SosEditItemInfo_t > m_EditItems; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_EditItems[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< soundsystem::SosEditItemInfo_t > m_EditItems; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::soundsystem::SelectedEditItemInfo_t, m_EditItems) == 0x0, "m_EditItems in SelectedEditItemInfo_t should be at offset 0x0");
 		static_assert(sizeof(CS2::soundsystem::SelectedEditItemInfo_t) == 0x18, "SelectedEditItemInfo_t size should be 0x18");

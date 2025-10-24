@@ -17,33 +17,45 @@
 
 namespace CS2 {
 	namespace particles {
+		class CParticleFunctionPreEmission;
+		class CParticleFunctionEmitter;
+		class CParticleFunctionInitializer;
+		class CParticleFunctionOperator;
+		class CParticleFunctionForce;
+		class CParticleFunctionConstraint;
+		class CParticleFunctionRenderer;
 		class ParticleChildrenInfo_t;
 		class ParticleControlPointConfiguration_t;
 	}
+	namespace particleslib {
+		class ParticleNamedValueSource_t;
+	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class CParticleSystemDefinition : public CS2::particles::IParticleSystemDefinition {
 		public:
 			int32_t m_nBehaviorVersion; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< CParticleFunctionPreEmission >* m_PreEmissionOperators; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_PreEmissionOperators[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CParticleFunctionEmitter >* m_Emitters; // 0x28 | Schema_Atomic | Size: 0x18
-			char  m_Emitters[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CParticleFunctionInitializer >* m_Initializers; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_Initializers[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CParticleFunctionOperator >* m_Operators; // 0x58 | Schema_Atomic | Size: 0x18
-			char  m_Operators[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CParticleFunctionForce >* m_ForceGenerators; // 0x70 | Schema_Atomic | Size: 0x18
-			char  m_ForceGenerators[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CParticleFunctionConstraint >* m_Constraints; // 0x88 | Schema_Atomic | Size: 0x18
-			char  m_Constraints[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CParticleFunctionRenderer >* m_Renderers; // 0xa0 | Schema_Atomic | Size: 0x18
-			char  m_Renderers[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::CParticleFunctionPreEmission* > m_PreEmissionOperators; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_PreEmissionOperators[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::CParticleFunctionEmitter* > m_Emitters; // 0x28 | Schema_Atomic | Size: 0x18
+			// char  m_Emitters[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::CParticleFunctionInitializer* > m_Initializers; // 0x40 | Schema_Atomic | Size: 0x18
+			// char  m_Initializers[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::CParticleFunctionOperator* > m_Operators; // 0x58 | Schema_Atomic | Size: 0x18
+			// char  m_Operators[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::CParticleFunctionForce* > m_ForceGenerators; // 0x70 | Schema_Atomic | Size: 0x18
+			// char  m_ForceGenerators[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::CParticleFunctionConstraint* > m_Constraints; // 0x88 | Schema_Atomic | Size: 0x18
+			// char  m_Constraints[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::CParticleFunctionRenderer* > m_Renderers; // 0xa0 | Schema_Atomic | Size: 0x18
+			// char  m_Renderers[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< particles::ParticleChildrenInfo_t > m_Children; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char  m_Children[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< particles::ParticleChildrenInfo_t > m_Children; // 0xb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0xa8);
 			int32_t m_nFirstMultipleOverride_BackwardCompat; // 0x178 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xdc);
@@ -58,8 +70,8 @@ namespace CS2 {
 			bool m_bEnableNamedValues; // 0x285 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			GlobalTypes::CUtlString m_NamedValueDomain; // 0x288 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlVector< ParticleNamedValueSource_t >* m_NamedValueLocals; // 0x290 | Schema_Atomic | Size: 0x18
-			char  m_NamedValueLocals[0x18]; // 0x290 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particleslib::ParticleNamedValueSource_t* > m_NamedValueLocals; // 0x290 | Schema_Atomic | Size: 0x18
+			// char  m_NamedValueLocals[0x18]; // 0x290 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Color m_ConstantColor; // 0x2a8 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_ConstantNormal; // 0x2ac | Schema_Atomic | Size: 0xc
 			float32 m_flConstantRadius; // 0x2b8 | Schema_Builtin | Size: 0x4
@@ -115,7 +127,6 @@ namespace CS2 {
 			S2_PAD(0x47);
 			GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; // 0x3b8 | Schema_Atomic | Size: 0x18
 			// char  m_controlPointConfigurations[0x18]; // 0x3b8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; // 0x3b8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x70); // End padding
 		};
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nBehaviorVersion) == 0x8, "m_nBehaviorVersion in CParticleSystemDefinition should be at offset 0x8");

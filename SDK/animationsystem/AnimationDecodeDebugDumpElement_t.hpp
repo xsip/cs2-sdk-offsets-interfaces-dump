@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class AnimationDecodeDebugDumpElement_t  {
@@ -22,16 +25,12 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_modelName; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_poseParams; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_poseParams[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_poseParams; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_decodeOps; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_decodeOps[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_decodeOps; // 0x28 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_internalOps; // 0x40 | Schema_Atomic | Size: 0x18
 			// char  m_internalOps[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_internalOps; // 0x40 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_decodedAnims; // 0x58 | Schema_Atomic | Size: 0x18
 			// char  m_decodedAnims[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_decodedAnims; // 0x58 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t, m_nEntityIndex) == 0x0, "m_nEntityIndex in AnimationDecodeDebugDumpElement_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t, m_modelName) == 0x8, "m_modelName in AnimationDecodeDebugDumpElement_t should be at offset 0x8");

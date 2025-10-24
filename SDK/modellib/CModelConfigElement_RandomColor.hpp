@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_RandomColor : public CS2::modellib::CModelConfigElement {

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBodyComponentBaseModelEntity : public CS2::server::CBodyComponentSkeletonInstance {

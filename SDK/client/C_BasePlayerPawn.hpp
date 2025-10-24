@@ -30,6 +30,9 @@ namespace CS2 {
 		class CBasePlayerController;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_BasePlayerPawn : public CS2::client::C_BaseCombatCharacter {
@@ -65,10 +68,8 @@ namespace CS2 {
 			int32_t m_nLastExecutedCommandTick; // 0x15b4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle< client::CBasePlayerController > m_hController; // 0x15b8 | Schema_Atomic | Size: 0x4
 			// char  m_hController[0x4]; // 0x15b8 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::CBasePlayerController > m_hController; // 0x15b8 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::CBasePlayerController > m_hDefaultController; // 0x15bc | Schema_Atomic | Size: 0x4
 			// char  m_hDefaultController[0x4]; // 0x15bc | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::CBasePlayerController > m_hDefaultController; // 0x15bc | Schema_Atomic | Size: 0x4
 			bool m_bIsSwappingToPredictableController; // 0x15c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

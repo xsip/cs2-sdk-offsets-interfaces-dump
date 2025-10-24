@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CHostageRescueZone : public CS2::server::CHostageRescueZoneShim {

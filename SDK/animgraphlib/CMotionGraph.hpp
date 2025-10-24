@@ -19,6 +19,9 @@ namespace CS2 {
 		class TagSpan_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CMotionGraph  {
@@ -27,7 +30,6 @@ namespace CS2 {
 			animgraphlib::CParamSpanUpdater m_paramSpans; // 0x10 | Schema_DeclaredClass | Size: 0x18
 			GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x28 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CSmartPtr< animgraphlib::CMotionNode > m_pRootNode; // 0x40 | Schema_Atomic | Size: 0x8
 			char  m_pRootNode[0x8]; // 0x40 | Schema_Atomic | Size: 0x8
 			int32_t m_nParameterCount; // 0x48 | Schema_Builtin | Size: 0x4

@@ -19,6 +19,9 @@ namespace CS2 {
 		class CLightComponent;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CLightEntity : public CS2::server::CBaseModelEntity {

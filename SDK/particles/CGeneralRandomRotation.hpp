@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class CGeneralRandomRotation : public CS2::particles::CParticleFunctionInitializer {

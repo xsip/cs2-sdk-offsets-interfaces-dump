@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CEnvSoundscapeProxyAlias_snd_soundscape_proxy : public CS2::client::CEnvSoundscapeProxy {

@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_Layout2DGrid : public CS2::smartprops::CSmartPropElement_Group {

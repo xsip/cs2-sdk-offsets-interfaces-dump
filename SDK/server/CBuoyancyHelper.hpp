@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBuoyancyHelper  {
@@ -25,14 +28,14 @@ namespace CS2 {
 			float32 m_flNeutrallyBuoyantAngularDamping; // 0x28 | Schema_Builtin | Size: 0x4
 			bool m_bNeutrallyBuoyant; // 0x2c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// GlobalTypes::CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelFriction; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_vecFractionOfWheelSubmergedForWheelFriction[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_vecWheelFrictionScales; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_vecWheelFrictionScales[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelDrag; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_vecFractionOfWheelSubmergedForWheelDrag[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_vecWheelDrag; // 0x78 | Schema_Atomic | Size: 0x18
-			char  m_vecWheelDrag[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelFriction; // 0x30 | Schema_Atomic | Size: 0x18
+			// char  m_vecFractionOfWheelSubmergedForWheelFriction[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_vecWheelFrictionScales; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_vecWheelFrictionScales[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelDrag; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_vecFractionOfWheelSubmergedForWheelDrag[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_vecWheelDrag; // 0x78 | Schema_Atomic | Size: 0x18
+			// char  m_vecWheelDrag[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x88); // End padding
 		};
 		static_assert(offsetof(CS2::server::CBuoyancyHelper, m_nFluidType) == 0x18, "m_nFluidType in CBuoyancyHelper should be at offset 0x18");

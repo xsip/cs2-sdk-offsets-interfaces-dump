@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_system {
 		class CPulseGraphInstance_TestDomain_FakeEntityOwner : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {

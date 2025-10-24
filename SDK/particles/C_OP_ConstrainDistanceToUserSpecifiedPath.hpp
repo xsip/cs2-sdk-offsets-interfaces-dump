@@ -19,6 +19,9 @@ namespace CS2 {
 		class PointDefinitionWithTimeValues_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_ConstrainDistanceToUserSpecifiedPath : public CS2::particles::CParticleFunctionConstraint {
@@ -30,7 +33,6 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::CUtlVector< particles::PointDefinitionWithTimeValues_t > m_pointList; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char  m_pointList[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< particles::PointDefinitionWithTimeValues_t > m_pointList; // 0x1e0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_fMinDistance) == 0x1D0, "m_fMinDistance in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_flMaxDistance) == 0x1D4, "m_flMaxDistance in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1D4");

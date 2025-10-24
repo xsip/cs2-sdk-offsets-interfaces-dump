@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_system {
 		class CPulseCell_Test_MultiOutflow_WithParams : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {

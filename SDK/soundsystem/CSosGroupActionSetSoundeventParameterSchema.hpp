@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem {
 		class CSosGroupActionSetSoundeventParameterSchema : public CS2::soundsystem::CSosGroupActionSchema {

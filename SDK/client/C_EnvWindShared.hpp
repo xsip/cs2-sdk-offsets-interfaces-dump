@@ -19,6 +19,9 @@ namespace CS2 {
 		class C_BaseEntity;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_EnvWindShared  {
@@ -40,7 +43,6 @@ namespace CS2 {
 			GlobalTypes::Vector m_location; // 0x30 | Schema_Atomic | Size: 0xc
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEntOwner; // 0x3c | Schema_Atomic | Size: 0x4
 			// char  m_hEntOwner[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEntOwner; // 0x3c | Schema_Atomic | Size: 0x4
 			S2_PAD(0xb8); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_EnvWindShared, m_flStartTime) == 0x8, "m_flStartTime in C_EnvWindShared should be at offset 0x8");

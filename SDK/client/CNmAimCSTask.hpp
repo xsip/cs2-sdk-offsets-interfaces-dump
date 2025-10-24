@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CNmAimCSTask : public CS2::animlib::CNmPoseTask {

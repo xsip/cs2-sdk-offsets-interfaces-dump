@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPathParticleRope : public CS2::server::CBaseEntity {
@@ -25,7 +28,6 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszEffectName; // 0x500 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_PathNodes_Name; // 0x508 | Schema_Atomic | Size: 0x18
 			// char  m_PathNodes_Name[0x18]; // 0x508 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_PathNodes_Name; // 0x508 | Schema_Atomic | Size: 0x18
 			float32 m_flParticleSpacing; // 0x520 | Schema_Builtin | Size: 0x4
 			float32 m_flSlack; // 0x524 | Schema_Builtin | Size: 0x4
 			float32 m_flRadius; // 0x528 | Schema_Builtin | Size: 0x4

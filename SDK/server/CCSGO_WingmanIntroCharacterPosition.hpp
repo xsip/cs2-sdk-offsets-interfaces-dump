@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSGO_WingmanIntroCharacterPosition : public CS2::server::CCSGO_TeamIntroCharacterPosition {

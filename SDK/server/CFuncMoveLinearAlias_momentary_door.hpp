@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CFuncMoveLinearAlias_momentary_door : public CS2::server::CFuncMoveLinear {

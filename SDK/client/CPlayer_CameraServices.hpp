@@ -27,6 +27,9 @@ namespace CS2 {
 		class C_PostProcessingVolume;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CPlayer_CameraServices : public CS2::client::CPlayerPawnComponent {
@@ -38,13 +41,10 @@ namespace CS2 {
 			client::C_fogplayerparams_t m_PlayerFog; // 0x58 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CHandle< client::C_ColorCorrection > m_hColorCorrectionCtrl; // 0x98 | Schema_Atomic | Size: 0x4
 			// char  m_hColorCorrectionCtrl[0x4]; // 0x98 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_ColorCorrection > m_hColorCorrectionCtrl; // 0x98 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hViewEntity; // 0x9c | Schema_Atomic | Size: 0x4
 			// char  m_hViewEntity[0x4]; // 0x9c | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hViewEntity; // 0x9c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_TonemapController2 > m_hTonemapController; // 0xa0 | Schema_Atomic | Size: 0x4
 			// char  m_hTonemapController[0x4]; // 0xa0 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_TonemapController2 > m_hTonemapController; // 0xa0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			client::audioparams_t m_audio; // 0xa8 | Schema_DeclaredClass | Size: 0x78
 			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_PostProcessingVolume > > m_PostProcessingVolumes; // 0x120 | Schema_Atomic | Size: 0x18
@@ -54,7 +54,6 @@ namespace CS2 {
 			client::fogparams_t m_CurrentFog; // 0x140 | Schema_DeclaredClass | Size: 0x68
 			GlobalTypes::CHandle< client::C_FogController > m_hOldFogController; // 0x1a8 | Schema_Atomic | Size: 0x4
 			// char  m_hOldFogController[0x4]; // 0x1a8 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_FogController > m_hOldFogController; // 0x1a8 | Schema_Atomic | Size: 0x4
 			bool m_bOverrideFogColor[5]; // 0x1ac | Schema_FixedArray | Size: 0x5
 			GlobalTypes::Color m_OverrideFogColor[5]; // 0x1b1 | Schema_FixedArray | Size: 0x14
 			bool m_bOverrideFogStartEnd[5]; // 0x1c5 | Schema_FixedArray | Size: 0x5
@@ -63,7 +62,6 @@ namespace CS2 {
 			float32 m_fOverrideFogEnd[5]; // 0x1e0 | Schema_FixedArray | Size: 0x14
 			GlobalTypes::CHandle< client::C_PostProcessingVolume > m_hActivePostProcessingVolume; // 0x1f4 | Schema_Atomic | Size: 0x4
 			// char  m_hActivePostProcessingVolume[0x4]; // 0x1f4 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_PostProcessingVolume > m_hActivePostProcessingVolume; // 0x1f4 | Schema_Atomic | Size: 0x4
 			GlobalTypes::QAngle m_angDemoViewAngles; // 0x1f8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84); // End padding
 		};

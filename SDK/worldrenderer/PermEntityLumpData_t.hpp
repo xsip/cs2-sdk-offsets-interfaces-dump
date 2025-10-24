@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class PermEntityLumpData_t  {
@@ -21,7 +24,6 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_name; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandleCopyable< InfoForResourceTypeCEntityLump > > m_childLumps; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_childLumps[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandleCopyable< InfoForResourceTypeCEntityLump > > m_childLumps; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlLeanVector< worldrenderer::EntityKeyValueData_t > m_entityKeyValues; // 0x28 | Schema_Atomic | Size: 0x10
 			char  m_entityKeyValues[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
 		};

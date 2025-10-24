@@ -35,6 +35,9 @@ namespace CS2 {
 		class thinkfunc_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBaseEntity : public CS2::entity2::CEntityInstance {
@@ -44,7 +47,6 @@ namespace CS2 {
 			S2_PAD(0x40);
 			GlobalTypes::CUtlVector< client::thinkfunc_t > m_aThinkFunctions; // 0x248 | Schema_Atomic | Size: 0x18
 			// char  m_aThinkFunctions[0x18]; // 0x248 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< client::thinkfunc_t > m_aThinkFunctions; // 0x248 | Schema_Atomic | Size: 0x18
 			int32_t m_iCurrentThinkContext; // 0x260 | Schema_Builtin | Size: 0x4
 			entity2::GameTick_t m_nLastThinkTick; // 0x264 | Schema_DeclaredClass | Size: 0x4
 			bool m_bDisabledContextThinks; // 0x268 | Schema_Builtin | Size: 0x1
@@ -55,7 +57,6 @@ namespace CS2 {
 			S2_PAD(0xc);
 			GlobalTypes::CUtlVector< server::ResponseContext_t > m_ResponseContexts; // 0x290 | Schema_Atomic | Size: 0x18
 			// char  m_ResponseContexts[0x18]; // 0x290 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< server::ResponseContext_t > m_ResponseContexts; // 0x290 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszResponseContext; // 0x2a8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x20);
 			int32_t m_iHealth; // 0x2d0 | Schema_Builtin | Size: 0x4

@@ -20,6 +20,9 @@ namespace CS2 {
 		class IChoreoServices;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBaseAnimGraph : public CS2::server::CBaseModelEntity {

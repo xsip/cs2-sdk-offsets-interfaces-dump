@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CLogicActiveAutosave : public CS2::server::CLogicAutosave {

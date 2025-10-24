@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPhysicsEntitySolver : public CS2::server::CLogicalEntity {

@@ -18,6 +18,9 @@ namespace CS2 {
 		class CEconItemView;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class NetworkedLoadoutSlot_t  {

@@ -21,24 +21,23 @@ namespace CS2 {
 		class RnMeshDesc_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class VPhysics2ShapeDef_t  {
 		public:
 			GlobalTypes::CUtlVector< physicslib::RnSphereDesc_t > m_spheres; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_spheres[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::RnSphereDesc_t > m_spheres; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::RnCapsuleDesc_t > m_capsules; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_capsules[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::RnCapsuleDesc_t > m_capsules; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::RnHullDesc_t > m_hulls; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_hulls[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::RnHullDesc_t > m_hulls; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< physicslib::RnMeshDesc_t > m_meshes; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_meshes[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< physicslib::RnMeshDesc_t > m_meshes; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_CollisionAttributeIndices; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_CollisionAttributeIndices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_CollisionAttributeIndices; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_CollisionAttributeIndices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::VPhysics2ShapeDef_t, m_spheres) == 0x0, "m_spheres in VPhysics2ShapeDef_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysics2ShapeDef_t, m_capsules) == 0x18, "m_capsules in VPhysics2ShapeDef_t should be at offset 0x18");

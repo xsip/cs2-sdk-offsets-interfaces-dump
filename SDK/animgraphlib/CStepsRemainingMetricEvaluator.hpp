@@ -14,12 +14,15 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CStepsRemainingMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
-			// GlobalTypes::CUtlVector< int32 > m_footIndices; // 0x50 | Schema_Atomic | Size: 0x18
-			char  m_footIndices[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_footIndices; // 0x50 | Schema_Atomic | Size: 0x18
+			// char  m_footIndices[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			float32 m_flMinStepsRemaining; // 0x68 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

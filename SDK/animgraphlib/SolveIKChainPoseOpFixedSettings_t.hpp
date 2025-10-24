@@ -18,13 +18,15 @@ namespace CS2 {
 		class ChainToSolveData_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class SolveIKChainPoseOpFixedSettings_t  {
 		public:
 			GlobalTypes::CUtlVector< animgraphlib::ChainToSolveData_t > m_ChainsToSolveData; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_ChainsToSolveData[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::ChainToSolveData_t > m_ChainsToSolveData; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::SolveIKChainPoseOpFixedSettings_t, m_ChainsToSolveData) == 0x0, "m_ChainsToSolveData in SolveIKChainPoseOpFixedSettings_t should be at offset 0x0");
 		static_assert(sizeof(CS2::animgraphlib::SolveIKChainPoseOpFixedSettings_t) == 0x18, "SolveIKChainPoseOpFixedSettings_t size should be 0x18");

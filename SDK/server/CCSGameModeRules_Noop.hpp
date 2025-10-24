@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSGameModeRules_Noop : public CS2::server::CCSGameModeRules {

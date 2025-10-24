@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_BooleanSwitchState : public CS2::pulse_runtime_lib::CPulseCell_BaseState {

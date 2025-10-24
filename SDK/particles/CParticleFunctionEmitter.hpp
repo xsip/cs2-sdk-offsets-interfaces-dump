@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class CParticleFunctionEmitter : public CS2::particles::CParticleFunction {

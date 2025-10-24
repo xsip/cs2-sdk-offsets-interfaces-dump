@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSGameModeRules_Deathmatch : public CS2::server::CCSGameModeRules {

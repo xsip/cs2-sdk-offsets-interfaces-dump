@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CSeqScaleSet  {
@@ -21,10 +24,10 @@ namespace CS2 {
 			bool m_bRootOffset; // 0x10 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::Vector m_vRootOffset; // 0x14 | Schema_Atomic | Size: 0xc
-			// GlobalTypes::CUtlVector< int16 > m_nLocalBoneArray; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_nLocalBoneArray[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_flBoneScaleArray; // 0x38 | Schema_Atomic | Size: 0x18
-			char  m_flBoneScaleArray[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int16 > m_nLocalBoneArray; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_nLocalBoneArray[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_flBoneScaleArray; // 0x38 | Schema_Atomic | Size: 0x18
+			// char  m_flBoneScaleArray[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CSeqScaleSet, m_sName) == 0x0, "m_sName in CSeqScaleSet should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqScaleSet, m_bRootOffset) == 0x10, "m_bRootOffset in CSeqScaleSet should be at offset 0x10");

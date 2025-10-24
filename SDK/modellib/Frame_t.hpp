@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class Frame_t  {
@@ -25,18 +28,14 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_CompositeBones; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_CompositeBones[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_CompositeBones; // 0x48 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_SimStateBones; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_SimStateBones[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_SimStateBones; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_FeModelAnims; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_FeModelAnims[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_FeModelAnims; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::VectorAligned > m_FeModelPos; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_FeModelPos[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::VectorAligned > m_FeModelPos; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_FlexControllerWeights; // 0xa8 | Schema_Atomic | Size: 0x18
-			char  m_FlexControllerWeights[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_FlexControllerWeights; // 0xa8 | Schema_Atomic | Size: 0x18
+			// char  m_FlexControllerWeights[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::Frame_t, m_flTime) == 0x0, "m_flTime in SkeletonAnimCapture_t::Frame_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::Frame_t, m_Stamp) == 0x4, "m_Stamp in SkeletonAnimCapture_t::Frame_t should be at offset 0x4");

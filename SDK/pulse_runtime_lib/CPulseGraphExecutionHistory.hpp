@@ -16,16 +16,24 @@
 
 namespace CS2 {
 	namespace pulse_runtime_lib {
+		class PulseGraphExecutionHistoryEntry_t;
+	}
+}
+
+
+using namespace GlobalTypes;
+namespace CS2 {
+	namespace pulse_runtime_lib {
 		class CPulseGraphExecutionHistory  {
 		public:
 			pulse_runtime_lib::PulseGraphInstanceID_t m_nInstanceID; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_strFileName; // 0x8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlVector< PulseGraphExecutionHistoryEntry_t >* m_vecHistory; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_vecHistory[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlOrderedMap< PulseDocNodeID_t, PulseGraphExecutionHistoryNodeDesc_t >* m_mapCellDesc; // 0x28 | Schema_Atomic | Size: 0x28
+			GlobalTypes::CUtlVector< pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t* > m_vecHistory; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_vecHistory[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlOrderedMap< PulseDocNodeID_t, PulseGraphExecutionHistoryNodeDesc_t > m_mapCellDesc; // 0x28 | Schema_Atomic | Size: 0x28
 			char  m_mapCellDesc[0x28]; // 0x28 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CUtlOrderedMap< PulseCursorID_t, PulseGraphExecutionHistoryCursorDesc_t >* m_mapCursorDesc; // 0x50 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CUtlOrderedMap< PulseCursorID_t, PulseGraphExecutionHistoryCursorDesc_t > m_mapCursorDesc; // 0x50 | Schema_Atomic | Size: 0x28
 			char  m_mapCursorDesc[0x28]; // 0x50 | Schema_Atomic | Size: 0x28
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphExecutionHistory, m_nInstanceID) == 0x0, "m_nInstanceID in CPulseGraphExecutionHistory should be at offset 0x0");

@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particleslib {
 		class CParticleTransformInput : public CS2::particleslib::CParticleInput {

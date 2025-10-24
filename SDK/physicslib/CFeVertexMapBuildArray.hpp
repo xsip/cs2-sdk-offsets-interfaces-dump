@@ -15,10 +15,18 @@
 
 namespace CS2 {
 	namespace physicslib {
+		class FeVertexMapBuild_t;
+	}
+}
+
+
+using namespace GlobalTypes;
+namespace CS2 {
+	namespace physicslib {
 		class CFeVertexMapBuildArray  {
 		public:
-			// GlobalTypes::CUtlVector< FeVertexMapBuild_t >* m_Array; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_Array[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< physicslib::FeVertexMapBuild_t* > m_Array; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_Array[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::physicslib::CFeVertexMapBuildArray, m_Array) == 0x0, "m_Array in CFeVertexMapBuildArray should be at offset 0x0");
 		static_assert(sizeof(CS2::physicslib::CFeVertexMapBuildArray) == 0x18, "CFeVertexMapBuildArray size should be 0x18");

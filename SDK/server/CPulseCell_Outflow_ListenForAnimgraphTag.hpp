@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_ListenForAnimgraphTag : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {

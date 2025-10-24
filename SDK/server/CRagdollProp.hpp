@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CRagdollProp : public CS2::server::CBaseAnimGraph {
@@ -57,10 +60,8 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_ragdollMins; // 0xb98 | Schema_Atomic | Size: 0x18
 			// char  m_ragdollMins[0x18]; // 0xb98 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_ragdollMins; // 0xb98 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_ragdollMaxs; // 0xbb0 | Schema_Atomic | Size: 0x18
 			// char  m_ragdollMaxs[0x18]; // 0xbb0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_ragdollMaxs; // 0xbb0 | Schema_Atomic | Size: 0x18
 			bool m_bShouldDeleteActivationRecord; // 0xbc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17); // End padding
 		};

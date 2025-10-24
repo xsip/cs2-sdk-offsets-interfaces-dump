@@ -20,6 +20,9 @@ namespace CS2 {
 		class MotionDBIndex;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CMotionSearchDB  {
@@ -28,7 +31,6 @@ namespace CS2 {
 			animgraphlib::CProductQuantizer m_residualQuantizer; // 0x80 | Schema_DeclaredClass | Size: 0x20
 			GlobalTypes::CUtlVector< animgraphlib::MotionDBIndex > m_codeIndices; // 0xa0 | Schema_Atomic | Size: 0x18
 			// char  m_codeIndices[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::MotionDBIndex > m_codeIndices; // 0xa0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CMotionSearchDB, m_rootNode) == 0x0, "m_rootNode in CMotionSearchDB should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CMotionSearchDB, m_residualQuantizer) == 0x80, "m_residualQuantizer in CMotionSearchDB should be at offset 0x80");

@@ -29,6 +29,9 @@ namespace CS2 {
 		class CClientAlphaProperty;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_BaseModelEntity : public CS2::client::C_BaseEntity {

@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_BaseCSGrenadeProjectile : public CS2::client::C_BaseGrenade {
@@ -40,9 +43,8 @@ namespace CS2 {
 			char  m_hSnapshotTrajectoryParticleSnapshot[0x8]; // 0x1410 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_arrTrajectoryTrailPoints; // 0x1418 | Schema_Atomic | Size: 0x18
 			// char  m_arrTrajectoryTrailPoints[0x18]; // 0x1418 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_arrTrajectoryTrailPoints; // 0x1418 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_arrTrajectoryTrailPointCreationTimes; // 0x1430 | Schema_Atomic | Size: 0x18
-			char  m_arrTrajectoryTrailPointCreationTimes[0x18]; // 0x1430 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_arrTrajectoryTrailPointCreationTimes; // 0x1430 | Schema_Atomic | Size: 0x18
+			// char  m_arrTrajectoryTrailPointCreationTimes[0x18]; // 0x1430 | Schema_Atomic | Size: 0x18
 			float32 m_flTrajectoryTrailEffectCreationTime; // 0x1448 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

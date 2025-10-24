@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_RenderLights : public CS2::particles::C_OP_RenderPoints {

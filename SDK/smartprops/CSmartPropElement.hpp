@@ -15,6 +15,15 @@
 
 namespace CS2 {
 	namespace smartprops {
+		class CSmartPropSelectionCriteria;
+		class CSmartPropModifier;
+	}
+}
+
+
+using namespace GlobalTypes;
+namespace CS2 {
+	namespace smartprops {
 		class CSmartPropElement  {
 		public:
 			S2_PAD(0x8);
@@ -22,10 +31,10 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CSmartPropAttributeBool m_bEnabled; // 0x10 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CUtlString m_sLabel; // 0x50 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlVector< CSmartPropSelectionCriteria >* m_SelectionCriteria; // 0x58 | Schema_Atomic | Size: 0x18
-			char  m_SelectionCriteria[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< CSmartPropModifier >* m_Modifiers; // 0x70 | Schema_Atomic | Size: 0x18
-			char  m_Modifiers[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< smartprops::CSmartPropSelectionCriteria* > m_SelectionCriteria; // 0x58 | Schema_Atomic | Size: 0x18
+			// char  m_SelectionCriteria[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< smartprops::CSmartPropModifier* > m_Modifiers; // 0x70 | Schema_Atomic | Size: 0x18
+			// char  m_Modifiers[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement, m_nElementID) == 0x8, "m_nElementID in CSmartPropElement should be at offset 0x8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement, m_bEnabled) == 0x10, "m_bEnabled in CSmartPropElement should be at offset 0x10");

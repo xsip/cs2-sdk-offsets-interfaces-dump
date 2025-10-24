@@ -22,6 +22,9 @@ namespace CS2 {
 		class CCSPlayerController;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_CSPlayerPawnBase : public CS2::client::C_BasePlayerPawn {
@@ -59,7 +62,6 @@ namespace CS2 {
 			S2_PAD(0x1c);
 			GlobalTypes::CHandle< client::CCSPlayerController > m_hOriginalController; // 0x1660 | Schema_Atomic | Size: 0x4
 			// char  m_hOriginalController[0x4]; // 0x1660 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::CCSPlayerController > m_hOriginalController; // 0x1660 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_CSPlayerPawnBase, m_pPingServices) == 0x15D8, "m_pPingServices in C_CSPlayerPawnBase should be at offset 0x15D8");

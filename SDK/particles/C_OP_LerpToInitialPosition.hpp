@@ -18,6 +18,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_LerpToInitialPosition : public CS2::particles::CParticleFunctionOperator {

@@ -15,10 +15,18 @@
 
 namespace CS2 {
 	namespace modellib {
+		class CPhysSurfaceProperties;
+	}
+}
+
+
+using namespace GlobalTypes;
+namespace CS2 {
+	namespace modellib {
 		class CVPhysXSurfacePropertiesList  {
 		public:
-			// GlobalTypes::CUtlVector< CPhysSurfaceProperties >* m_surfacePropertiesList; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_surfacePropertiesList[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::CPhysSurfaceProperties* > m_surfacePropertiesList; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_surfacePropertiesList[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CVPhysXSurfacePropertiesList, m_surfacePropertiesList) == 0x0, "m_surfacePropertiesList in CVPhysXSurfacePropertiesList should be at offset 0x0");
 		static_assert(sizeof(CS2::modellib::CVPhysXSurfacePropertiesList) == 0x18, "CVPhysXSurfacePropertiesList size should be 0x18");

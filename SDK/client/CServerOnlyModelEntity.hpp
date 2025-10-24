@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CServerOnlyModelEntity : public CS2::client::C_BaseModelEntity {

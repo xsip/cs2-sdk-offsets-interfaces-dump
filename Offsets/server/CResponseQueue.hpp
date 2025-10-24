@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x50
 			namespace CResponseQueue /**/ {
-				constexpr std::ptrdiff_t m_ExpresserTargets = 0x38; // GlobalTypes::CUtlVector< CAI_Expresser >* m_ExpresserTargets; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ExpresserTargets = 0x38; // GlobalTypes::CUtlVector< server::CAI_Expresser > m_ExpresserTargets; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

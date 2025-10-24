@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class EventClientPostAdvanceTick_t : public CS2::client::EventPostAdvanceTick_t {

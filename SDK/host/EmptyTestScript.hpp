@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace host {
 		class EmptyTestScript : public CS2::host::CAnimScriptBase {

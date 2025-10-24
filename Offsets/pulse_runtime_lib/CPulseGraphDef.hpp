@@ -14,16 +14,16 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_DomainSubType = 0x18; // GlobalTypes::CPulseValueFullType m_DomainSubType; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_ParentMapName = 0x30; // GlobalTypes::PulseSymbol_t m_ParentMapName; |  Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_ParentXmlName = 0x40; // GlobalTypes::PulseSymbol_t m_ParentXmlName; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Chunks = 0x50; // GlobalTypes::CUtlVector< CPulse_Chunk >* m_Chunks; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Cells = 0x68; // assetpreview::CUtlVector< CPulseCell_Base >* m_Cells; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Chunks = 0x50; // GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Chunk > m_Chunks; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Cells = 0x68; // assetpreview::CUtlVector< pulse_runtime_lib::CPulseCell_Base > m_Cells; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_Vars = 0x80; // GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Variable > m_Vars; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_PublicOutputs = 0x98; // GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_PublicOutput > m_PublicOutputs; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_InvokeBindings = 0xb0; // assetpreview::CUtlVector< CPulse_InvokeBinding >* m_InvokeBindings; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_CallInfos = 0xc8; // assetpreview::CUtlVector< CPulse_CallInfo >* m_CallInfos; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_InvokeBindings = 0xb0; // assetpreview::CUtlVector< pulse_runtime_lib::CPulse_InvokeBinding > m_InvokeBindings; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_CallInfos = 0xc8; // assetpreview::CUtlVector< pulse_runtime_lib::CPulse_CallInfo > m_CallInfos; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_Constants = 0xe0; // GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_Constant > m_Constants; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_DomainValues = 0xf8; // GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_DomainValue > m_DomainValues; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_BlackboardReferences = 0x110; // assetpreview::CUtlVector< pulse_runtime_lib::CPulse_BlackboardReference > m_BlackboardReferences; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OutputConnections = 0x128; // GlobalTypes::CUtlVector< CPulse_OutputConnection >* m_OutputConnections; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OutputConnections = 0x128; // GlobalTypes::CUtlVector< pulse_runtime_lib::CPulse_OutputConnection > m_OutputConnections; |  Schema_Atomic | Size: 0x18
 			}
 		}
 	}

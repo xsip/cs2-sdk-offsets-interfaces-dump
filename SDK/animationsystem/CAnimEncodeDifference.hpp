@@ -20,27 +20,27 @@ namespace CS2 {
 		class CAnimUserDifference;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CAnimEncodeDifference  {
 		public:
 			GlobalTypes::CUtlVector< animationsystem::CAnimBoneDifference > m_boneArray; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_boneArray[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::CAnimBoneDifference > m_boneArray; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< animationsystem::CAnimMorphDifference > m_morphArray; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_morphArray[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::CAnimMorphDifference > m_morphArray; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< animationsystem::CAnimUserDifference > m_userArray; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_userArray[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animationsystem::CAnimUserDifference > m_userArray; // 0x30 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_bHasRotationBitArray; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_bHasRotationBitArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_bHasMovementBitArray; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_bHasMovementBitArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_bHasMorphBitArray; // 0x78 | Schema_Atomic | Size: 0x18
-			char  m_bHasMorphBitArray[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_bHasUserBitArray; // 0x90 | Schema_Atomic | Size: 0x18
-			char  m_bHasUserBitArray[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_bHasRotationBitArray; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_bHasRotationBitArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_bHasMovementBitArray; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_bHasMovementBitArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_bHasMorphBitArray; // 0x78 | Schema_Atomic | Size: 0x18
+			// char  m_bHasMorphBitArray[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_bHasUserBitArray; // 0x90 | Schema_Atomic | Size: 0x18
+			// char  m_bHasUserBitArray[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodeDifference, m_boneArray) == 0x0, "m_boneArray in CAnimEncodeDifference should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodeDifference, m_morphArray) == 0x18, "m_morphArray in CAnimEncodeDifference should be at offset 0x18");

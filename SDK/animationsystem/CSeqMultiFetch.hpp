@@ -14,20 +14,23 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CSeqMultiFetch  {
 		public:
 			animationsystem::CSeqMultiFetchFlag m_flags; // 0x0 | Schema_DeclaredClass | Size: 0x6
 			S2_PAD(0x2);
-			// GlobalTypes::CUtlVector< int16 > m_localReferenceArray; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_localReferenceArray[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int16 > m_localReferenceArray; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_localReferenceArray[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			int32_t m_nGroupSize[2]; // 0x20 | Schema_FixedArray | Size: 0x8
 			int32_t m_nLocalPose[2]; // 0x28 | Schema_FixedArray | Size: 0x8
-			// GlobalTypes::CUtlVector< float32 > m_poseKeyArray0; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_poseKeyArray0[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_poseKeyArray1; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_poseKeyArray1[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_poseKeyArray0; // 0x30 | Schema_Atomic | Size: 0x18
+			// char  m_poseKeyArray0[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_poseKeyArray1; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_poseKeyArray1[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			int32_t m_nLocalCyclePoseParameter; // 0x60 | Schema_Builtin | Size: 0x4
 			bool m_bCalculatePoseParameters; // 0x64 | Schema_Builtin | Size: 0x1
 			bool m_bFixedBlendWeight; // 0x65 | Schema_Builtin | Size: 0x1

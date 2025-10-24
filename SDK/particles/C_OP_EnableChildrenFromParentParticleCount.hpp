@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_EnableChildrenFromParentParticleCount : public CS2::particles::CParticleFunctionPreEmission {

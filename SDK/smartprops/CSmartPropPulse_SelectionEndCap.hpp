@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_SelectionEndCap : public CS2::pulse_runtime_lib::CPulseCell_BaseRequirement {

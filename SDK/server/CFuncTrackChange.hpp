@@ -21,6 +21,9 @@ namespace CS2 {
 		class CFuncTrackTrain;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CFuncTrackChange : public CS2::server::CFuncPlatRot {

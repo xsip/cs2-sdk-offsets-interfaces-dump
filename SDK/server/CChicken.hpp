@@ -18,6 +18,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CChicken : public CS2::server::CDynamicProp {

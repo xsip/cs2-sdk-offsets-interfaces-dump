@@ -20,6 +20,9 @@ namespace CS2 {
 		class MaterialVariable_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_RenderBlobs : public CS2::particles::CParticleFunctionRenderer {
@@ -33,7 +36,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x680 | Schema_Atomic | Size: 0x18
 			// char  m_MaterialVars[0x18]; // 0x680 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x680 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x6b0 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x6b0 | Schema_Atomic | Size: 0x8

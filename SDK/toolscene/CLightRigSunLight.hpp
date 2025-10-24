@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace toolscene {
 		class CLightRigSunLight : public CS2::toolscene::CLightRigLight {

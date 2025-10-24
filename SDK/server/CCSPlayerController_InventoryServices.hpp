@@ -20,6 +20,9 @@ namespace CS2 {
 		class ServerAuthoritativeWeaponSlot_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSPlayerController_InventoryServices : public CS2::client::CPlayerControllerComponent {
@@ -38,7 +41,6 @@ namespace CS2 {
 			uint64_t m_unCurrentLoadoutHash; // 0xf50 | Schema_Builtin | Size: 0x8
 			GlobalTypes::CUtlVectorEmbeddedNetworkVar< client::ServerAuthoritativeWeaponSlot_t > m_vecServerAuthoritativeWeaponSlots; // 0xf58 | Schema_Atomic | Size: 0x88
 			// char  m_vecServerAuthoritativeWeaponSlots[0x88]; // 0xf58 | Schema_Atomic | Size: 0x88
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar< client::ServerAuthoritativeWeaponSlot_t > m_vecServerAuthoritativeWeaponSlots; // 0xf58 | Schema_Atomic | Size: 0x88
 		};
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_unMusicID) == 0x40, "m_unMusicID in CCSPlayerController_InventoryServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_rank) == 0x44, "m_rank in CCSPlayerController_InventoryServices should be at offset 0x44");

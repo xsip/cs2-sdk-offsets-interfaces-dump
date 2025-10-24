@@ -18,6 +18,9 @@ namespace CS2 {
 		class CompositeMaterialEditorPoint_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace compositematerialslib {
 		class CCompositeMaterialEditorDoc  {
@@ -27,7 +30,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialEditorPoint_t > m_Points; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_Points[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialEditorPoint_t > m_Points; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::KeyValues3 m_KVthumbnail; // 0x28 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::compositematerialslib::CCompositeMaterialEditorDoc, m_nVersion) == 0x8, "m_nVersion in CCompositeMaterialEditorDoc should be at offset 0x8");

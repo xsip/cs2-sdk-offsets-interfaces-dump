@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CBinaryUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CEnvSoundscapeAlias_snd_soundscape : public CS2::client::CEnvSoundscape {

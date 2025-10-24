@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CTurnHelperUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CEditableMotionGraph : public CS2::animgraphlib::CMotionGraph {

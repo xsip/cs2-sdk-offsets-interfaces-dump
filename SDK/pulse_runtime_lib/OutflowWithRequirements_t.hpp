@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_runtime_lib {
 		class OutflowWithRequirements_t  {
@@ -24,9 +27,8 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< pulse_runtime_lib::PulseDocNodeID_t > m_RequirementNodeIDs; // 0x50 | Schema_Atomic | Size: 0x18
 			// char  m_RequirementNodeIDs[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< pulse_runtime_lib::PulseDocNodeID_t > m_RequirementNodeIDs; // 0x50 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_nCursorStateBlockIndex; // 0x68 | Schema_Atomic | Size: 0x18
-			char  m_nCursorStateBlockIndex[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_nCursorStateBlockIndex; // 0x68 | Schema_Atomic | Size: 0x18
+			// char  m_nCursorStateBlockIndex[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::OutflowWithRequirements_t, m_Connection) == 0x0, "m_Connection in OutflowWithRequirements_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::OutflowWithRequirements_t, m_DestinationFlowNodeID) == 0x48, "m_DestinationFlowNodeID in OutflowWithRequirements_t should be at offset 0x48");

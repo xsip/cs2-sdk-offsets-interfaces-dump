@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CTouchExpansionComponent : public CS2::entity2::CEntityComponent {

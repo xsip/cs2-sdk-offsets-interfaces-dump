@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class RnHullDesc_t : public CS2::physicslib::RnShapeDesc_t {

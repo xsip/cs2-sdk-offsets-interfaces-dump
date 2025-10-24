@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CNmEventConsumerLegacy : public CS2::client::CNmEventConsumer {

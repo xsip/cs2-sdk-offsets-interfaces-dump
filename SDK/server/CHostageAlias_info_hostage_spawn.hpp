@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CHostageAlias_info_hostage_spawn : public CS2::server::CHostage {

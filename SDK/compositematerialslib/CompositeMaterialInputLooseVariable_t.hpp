@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace compositematerialslib {
 		class CompositeMaterialInputLooseVariable_t  {

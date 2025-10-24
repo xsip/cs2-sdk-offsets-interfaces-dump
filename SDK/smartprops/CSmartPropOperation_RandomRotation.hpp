@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_RandomRotation : public CS2::smartprops::CSmartPropTransformOperation {

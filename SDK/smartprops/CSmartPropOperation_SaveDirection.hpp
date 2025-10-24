@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_SaveDirection : public CS2::smartprops::CSmartPropOperation {

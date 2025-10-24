@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace resourcefile {
 		class CExampleSchemaVData_PolymorphicDerivedA : public CS2::resourcefile::CExampleSchemaVData_PolymorphicBase {

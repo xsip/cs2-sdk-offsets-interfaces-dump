@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_RemapNamedModelElementOnceTimed : public CS2::particles::CParticleFunctionOperator {
@@ -23,13 +26,10 @@ namespace CS2 {
 			char  m_hModel[0x8]; // 0x1d0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_inNames; // 0x1d8 | Schema_Atomic | Size: 0x18
 			// char  m_inNames[0x18]; // 0x1d8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_inNames; // 0x1d8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_outNames; // 0x1f0 | Schema_Atomic | Size: 0x18
 			// char  m_outNames[0x18]; // 0x1f0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_outNames; // 0x1f0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_fallbackNames; // 0x208 | Schema_Atomic | Size: 0x18
 			// char  m_fallbackNames[0x18]; // 0x208 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_fallbackNames; // 0x208 | Schema_Atomic | Size: 0x18
 			bool m_bModelFromRenderer; // 0x220 | Schema_Builtin | Size: 0x1
 			bool m_bProportional; // 0x221 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

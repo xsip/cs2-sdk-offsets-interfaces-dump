@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class ExtraVertexStreamOverride_t : public CS2::worldrenderer::BaseSceneObjectOverride_t {

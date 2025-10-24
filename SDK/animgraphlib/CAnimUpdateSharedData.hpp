@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CAnimUpdateSharedData  {
@@ -22,12 +25,10 @@ namespace CS2 {
 			S2_PAD(0x10);
 			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimUpdateNodeBase > > m_nodes; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_nodes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimUpdateNodeBase > > m_nodes; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlHashtable< CAnimNodePath, int32 > m_nodeIndexMap; // 0x28 | Schema_Atomic | Size: 0x20
 			char  m_nodeIndexMap[0x20]; // 0x28 | Schema_Atomic | Size: 0x20
 			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimComponentUpdater > > m_components; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_components[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimComponentUpdater > > m_components; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CSmartPtr< animgraphlib::CAnimParameterManagerUpdater > m_pParamListUpdater; // 0x60 | Schema_Atomic | Size: 0x8
 			char  m_pParamListUpdater[0x8]; // 0x60 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CSmartPtr< animgraphlib::CAnimTagManagerUpdater > m_pTagManagerUpdater; // 0x68 | Schema_Atomic | Size: 0x8

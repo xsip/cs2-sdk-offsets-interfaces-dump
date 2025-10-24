@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CAnimationGroup  {
@@ -25,19 +28,15 @@ namespace CS2 {
 			S2_PAD(0x38);
 			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCAnimData > > m_localHAnimArray_Handle; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_localHAnimArray_Handle[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCAnimData > > m_localHAnimArray_Handle; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCAnimationGroup > > m_includedGroupArray_Handle; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_includedGroupArray_Handle[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCAnimationGroup > > m_includedGroupArray_Handle; // 0x78 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCSequenceGroupData > m_directHSeqGroup_Handle; // 0x90 | Schema_Atomic | Size: 0x8
 			char  m_directHSeqGroup_Handle[0x8]; // 0x90 | Schema_Atomic | Size: 0x8
 			animationsystem::CAnimKeyData m_decodeKey; // 0x98 | Schema_DeclaredClass | Size: 0x78
 			GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_szScripts; // 0x110 | Schema_Atomic | Size: 0x18
 			// char  m_szScripts[0x18]; // 0x110 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_szScripts; // 0x110 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandleVoid > m_AdditionalExtRefs; // 0x128 | Schema_Atomic | Size: 0x18
 			// char  m_AdditionalExtRefs[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandleVoid > m_AdditionalExtRefs; // 0x128 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimationGroup, m_nFlags) == 0x10, "m_nFlags in CAnimationGroup should be at offset 0x10");

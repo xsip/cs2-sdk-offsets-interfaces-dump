@@ -20,7 +20,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_floatCurveDefs = 0x68; // GlobalTypes::CUtlVector< animlib::NmFloatCurveCompressionSettings_t > m_floatCurveDefs; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_compressedFloatCurveData = 0x80; // GlobalTypes::CUtlVector< uint16 > m_compressedFloatCurveData; |  Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_compressedFloatCurveOffsets = 0x98; // GlobalTypes::CUtlVector< uint32 > m_compressedFloatCurveOffsets; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_secondaryAnimations = 0xd8; // GlobalTypes::CUtlVectorFixedGrowable< CNmClip, 1 >* m_secondaryAnimations; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_secondaryAnimations = 0xd8; // GlobalTypes::CUtlVectorFixedGrowable< animlib::CNmClip, 1 > m_secondaryAnimations; |  Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_syncTrack = 0xf8; // animlib::CNmSyncTrack m_syncTrack; |  Schema_DeclaredClass | Size: 0xb0
 				constexpr std::ptrdiff_t m_rootMotion = 0x1b0; // animlib::CNmRootMotionData m_rootMotion; |  Schema_DeclaredClass | Size: 0x50
 				constexpr std::ptrdiff_t m_bIsAdditive = 0x200; // bool m_bIsAdditive; |  0x200 | Schema_Builtin | Size: 0x1

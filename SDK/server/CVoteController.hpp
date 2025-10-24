@@ -17,6 +17,14 @@
 
 namespace CS2 {
 	namespace server {
+		class CBaseIssue;
+	}
+}
+
+
+using namespace GlobalTypes;
+namespace CS2 {
+	namespace server {
 		class CVoteController : public CS2::server::CBaseEntity {
 		public:
 			int32_t m_iActiveIssueIndex; // 0x4f0 | Schema_Builtin | Size: 0x4
@@ -33,10 +41,10 @@ namespace CS2 {
 			GlobalTypes::CPlayerSlot m_playerOverrideForVote; // 0x664 | Schema_Atomic | Size: 0x4
 			int32_t m_nHighestCountIndex; // 0x668 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< CBaseIssue >* m_potentialIssues; // 0x670 | Schema_Atomic | Size: 0x18
-			char  m_potentialIssues[0x18]; // 0x670 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< char >* m_VoteOptions; // 0x688 | Schema_Atomic | Size: 0x18
-			char  m_VoteOptions[0x18]; // 0x688 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< server::CBaseIssue* > m_potentialIssues; // 0x670 | Schema_Atomic | Size: 0x18
+			// char  m_potentialIssues[0x18]; // 0x670 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< �p��::char* > m_VoteOptions; // 0x688 | Schema_Atomic | Size: 0x18
+			// char  m_VoteOptions[0x18]; // 0x688 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CVoteController, m_iActiveIssueIndex) == 0x4F0, "m_iActiveIssueIndex in CVoteController should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CVoteController, m_iOnlyTeamToVote) == 0x4F4, "m_iOnlyTeamToVote in CVoteController should be at offset 0x4F4");

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class FeBuildTaperedCapsuleRigid_t : public CS2::physicslib::FeTaperedCapsuleRigid_t {

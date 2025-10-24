@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CFuncElectrifiedVolume : public CS2::server::CFuncBrush {

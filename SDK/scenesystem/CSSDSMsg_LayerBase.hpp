@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_LayerBase  {

@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerLoopTrigger : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {

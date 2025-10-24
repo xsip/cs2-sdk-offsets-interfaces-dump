@@ -13,14 +13,17 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CAnimFrameBlockAnim  {
 		public:
 			int32_t m_nStartFrame; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nEndFrame; // 0x4 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< int32 > m_segmentIndexArray; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_segmentIndexArray[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_segmentIndexArray; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_segmentIndexArray[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameBlockAnim, m_nStartFrame) == 0x0, "m_nStartFrame in CAnimFrameBlockAnim should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameBlockAnim, m_nEndFrame) == 0x4, "m_nEndFrame in CAnimFrameBlockAnim should be at offset 0x4");

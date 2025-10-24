@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace pulse_runtime_lib {
 		class SignatureOutflow_Continue : public CS2::pulse_runtime_lib::CPulse_OutflowConnection {

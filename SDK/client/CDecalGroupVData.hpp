@@ -18,13 +18,15 @@ namespace CS2 {
 		class DecalGroupOption_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CDecalGroupVData  {
 		public:
 			GlobalTypes::CUtlVector< client::DecalGroupOption_t > m_vecOptions; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_vecOptions[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< client::DecalGroupOption_t > m_vecOptions; // 0x0 | Schema_Atomic | Size: 0x18
 			float32 m_flTotalProbability; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_StattrakModule : public CS2::client::C_CS2WeaponModuleBase {

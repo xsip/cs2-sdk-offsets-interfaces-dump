@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class dynpitchvol_t : public CS2::server::dynpitchvol_base_t {

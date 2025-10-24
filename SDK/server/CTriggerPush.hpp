@@ -19,6 +19,9 @@ namespace CS2 {
 		class CPathSimple;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CTriggerPush : public CS2::server::CBaseTrigger {

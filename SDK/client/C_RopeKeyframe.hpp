@@ -21,6 +21,9 @@ namespace CS2 {
 		class C_BaseEntity;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_RopeKeyframe : public CS2::client::C_BaseModelEntity {
@@ -47,10 +50,8 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hStartPoint; // 0x1174 | Schema_Atomic | Size: 0x4
 			// char  m_hStartPoint[0x4]; // 0x1174 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hStartPoint; // 0x1174 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hEndPoint; // 0x1178 | Schema_Atomic | Size: 0x4
 			// char  m_hEndPoint[0x4]; // 0x1178 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_BaseEntity > m_hEndPoint; // 0x1178 | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_iStartAttachment; // 0x117c | Schema_DeclaredClass | Size: 0x1
 			modellib::AttachmentHandle_t m_iEndAttachment; // 0x117d | Schema_DeclaredClass | Size: 0x1
 			uint8_t m_Subdiv; // 0x117e | Schema_Builtin | Size: 0x1

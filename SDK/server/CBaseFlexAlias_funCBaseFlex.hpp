@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBaseFlexAlias_funCBaseFlex : public CS2::server::CBaseFlex {

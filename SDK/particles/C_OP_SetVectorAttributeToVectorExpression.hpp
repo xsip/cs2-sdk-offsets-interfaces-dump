@@ -19,6 +19,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_SetVectorAttributeToVectorExpression : public CS2::particles::CParticleFunctionOperator {

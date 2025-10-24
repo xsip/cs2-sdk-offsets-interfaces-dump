@@ -24,6 +24,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particleslib {
 		class CParticleFloatInput : public CS2::particleslib::CParticleInput {

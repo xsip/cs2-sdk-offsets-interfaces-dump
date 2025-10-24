@@ -21,6 +21,9 @@ namespace CS2 {
 		class CCSGameModeRules;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSGameRules : public CS2::server::CTeamplayRules {
@@ -125,8 +128,8 @@ namespace CS2 {
 			int32_t m_iNumSpawnableTerrorist; // 0xd84 | Schema_Builtin | Size: 0x4
 			int32_t m_iNumSpawnableCT; // 0xd88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< int32 > m_arrSelectedHostageSpawnIndices; // 0xd90 | Schema_Atomic | Size: 0x18
-			char  m_arrSelectedHostageSpawnIndices[0x18]; // 0xd90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_arrSelectedHostageSpawnIndices; // 0xd90 | Schema_Atomic | Size: 0x18
+			// char  m_arrSelectedHostageSpawnIndices[0x18]; // 0xd90 | Schema_Atomic | Size: 0x18
 			int32_t m_nSpawnPointsRandomSeed; // 0xda8 | Schema_Builtin | Size: 0x4
 			bool m_bFirstConnected; // 0xdac | Schema_Builtin | Size: 0x1
 			bool m_bCompleteReset; // 0xdad | Schema_Builtin | Size: 0x1
@@ -134,8 +137,8 @@ namespace CS2 {
 			bool m_bScrambleTeamsOnRestart; // 0xdaf | Schema_Builtin | Size: 0x1
 			bool m_bSwapTeamsOnRestart; // 0xdb0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CUtlVector< int32 > m_nEndMatchTiedVotes; // 0xdb8 | Schema_Atomic | Size: 0x18
-			char  m_nEndMatchTiedVotes[0x18]; // 0xdb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_nEndMatchTiedVotes; // 0xdb8 | Schema_Atomic | Size: 0x18
+			// char  m_nEndMatchTiedVotes[0x18]; // 0xdb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			bool m_bNeedToAskPlayersForContinueVote; // 0xdd4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -198,9 +201,9 @@ namespace CS2 {
 			S2_PAD(0x4d);
 			GlobalTypes::Vector m_vecMainCTSpawnPos; // 0xf40 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			// server::CUtlVector< SpawnPoint >* m_CTSpawnPointsMasterList; // 0xf50 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector< server::SpawnPoint > m_CTSpawnPointsMasterList; // 0xf50 | Schema_Atomic | Size: 0x18
 			char  m_CTSpawnPointsMasterList[0x18]; // 0xf50 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector< SpawnPoint >* m_TerroristSpawnPointsMasterList; // 0xf68 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector< server::SpawnPoint > m_TerroristSpawnPointsMasterList; // 0xf68 | Schema_Atomic | Size: 0x18
 			char  m_TerroristSpawnPointsMasterList[0x18]; // 0xf68 | Schema_Atomic | Size: 0x18
 			bool m_bRespawningAllRespawnablePlayers; // 0xf80 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -209,9 +212,9 @@ namespace CS2 {
 			int32_t m_iNextTerroristSpawnPoint; // 0xf8c | Schema_Builtin | Size: 0x4
 			float32 m_flTerroristSpawnPointUsedTime; // 0xf90 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector< SpawnPoint >* m_CTSpawnPoints; // 0xf98 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector< server::SpawnPoint > m_CTSpawnPoints; // 0xf98 | Schema_Atomic | Size: 0x18
 			char  m_CTSpawnPoints[0x18]; // 0xf98 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector< SpawnPoint >* m_TerroristSpawnPoints; // 0xfb0 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector< server::SpawnPoint > m_TerroristSpawnPoints; // 0xfb0 | Schema_Atomic | Size: 0x18
 			char  m_TerroristSpawnPoints[0x18]; // 0xfb0 | Schema_Atomic | Size: 0x18
 			bool m_bIsUnreservedGameServer; // 0xfc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -237,8 +240,8 @@ namespace CS2 {
 			char  m_hPlayerResource[0x4]; // 0x1128 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			server::CRetakeGameRules m_RetakeRules; // 0x1130 | Schema_DeclaredClass | Size: 0x1b0
-			// GlobalTypes::CUtlVector< int32 > m_arrTeamUniqueKillWeaponsMatch[4]; // 0x12e0 | Schema_FixedArray | Size: 0x60
-			char  m_arrTeamUniqueKillWeaponsMatch[0x18]; // 0x12e0 | Schema_FixedArray | Size: 0x18
+			GlobalTypes::CUtlVector< int32 >[4] m_arrTeamUniqueKillWeaponsMatch[4]; // 0x12e0 | Schema_FixedArray | Size: 0x60
+			// char  m_arrTeamUniqueKillWeaponsMatch[0x18]; // 0x12e0 | Schema_FixedArray | Size: 0x18
 			bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; // 0x1340 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x24);
 			uint8_t m_nMatchEndCount; // 0x1368 | Schema_Builtin | Size: 0x1

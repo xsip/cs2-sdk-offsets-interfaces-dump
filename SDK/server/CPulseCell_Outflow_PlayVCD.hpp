@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_PlayVCD : public CS2::server::CPulseCell_Outflow_PlaySceneBase {

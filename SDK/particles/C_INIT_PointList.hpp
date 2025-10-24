@@ -20,6 +20,9 @@ namespace CS2 {
 		class PointDefinition_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_INIT_PointList : public CS2::particles::CParticleFunctionInitializer {
@@ -28,7 +31,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< particles::PointDefinition_t > m_pointList; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char  m_pointList[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< particles::PointDefinition_t > m_pointList; // 0x1e0 | Schema_Atomic | Size: 0x18
 			bool m_bPlaceAlongPath; // 0x1f8 | Schema_Builtin | Size: 0x1
 			bool m_bClosedLoop; // 0x1f9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

@@ -15,13 +15,21 @@
 
 namespace CS2 {
 	namespace modellib {
+		class CModelConfig;
+	}
+}
+
+
+using namespace GlobalTypes;
+namespace CS2 {
+	namespace modellib {
 		class CModelConfigList  {
 		public:
 			bool m_bHideMaterialGroupInTools; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bHideRenderColorInTools; // 0x1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			// GlobalTypes::CUtlVector< CModelConfig >* m_Configs; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_Configs[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::CModelConfig* > m_Configs; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_Configs[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CModelConfigList, m_bHideMaterialGroupInTools) == 0x0, "m_bHideMaterialGroupInTools in CModelConfigList should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CModelConfigList, m_bHideRenderColorInTools) == 0x1, "m_bHideRenderColorInTools in CModelConfigList should be at offset 0x1");

@@ -16,13 +16,16 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CTestEffect : public CS2::server::CBaseEntity {
 		public:
 			int32_t m_iLoop; // 0x4f0 | Schema_Builtin | Size: 0x4
 			int32_t m_iBeam; // 0x4f4 | Schema_Builtin | Size: 0x4
-			server::CBeam* m_pBeam[24]; // 0x4f8 | Schema_FixedArray | Size: 0x1200
+			server::CBeam m_pBeam[24]; // 0x4f8 | Schema_FixedArray | Size: 0x1200
 			entity2::GameTime_t m_flBeamTime[24]; // 0x5b8 | Schema_FixedArray | Size: 0x900
 			entity2::GameTime_t m_flStartTime; // 0x618 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding

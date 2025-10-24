@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CShatterGlassShard  {
@@ -25,7 +28,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< GlobalTypes::Vector2D > m_vecPanelVertices; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_vecPanelVertices[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::Vector2D > m_vecPanelVertices; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector2D m_vLocalPanelSpaceOrigin; // 0x28 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x30 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0x30 | Schema_Atomic | Size: 0x8
@@ -60,8 +62,8 @@ namespace CS2 {
 			entity2::GameTime_t m_flPhysicsEntitySpawnedAtTime; // 0x98 | Schema_DeclaredClass | Size: 0x4
 			// server::CHandle< server::CBaseEntity > m_hEntityHittingMe; // 0x9c | Schema_Atomic | Size: 0x4
 			char  m_hEntityHittingMe[0x4]; // 0x9c | Schema_Atomic | Size: 0x4
-			// GlobalTypes::CUtlVector< uint32 > m_vecNeighbors; // 0xa0 | Schema_Atomic | Size: 0x18
-			char  m_vecNeighbors[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_vecNeighbors; // 0xa0 | Schema_Atomic | Size: 0x18
+			// char  m_vecNeighbors[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CShatterGlassShard, m_hShardHandle) == 0x8, "m_hShardHandle in CShatterGlassShard should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CShatterGlassShard, m_vecPanelVertices) == 0x10, "m_vecPanelVertices in CShatterGlassShard should be at offset 0x10");

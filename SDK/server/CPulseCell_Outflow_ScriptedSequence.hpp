@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPulseCell_Outflow_ScriptedSequence : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
@@ -29,7 +32,6 @@ namespace CS2 {
 			server::PulseScriptedSequenceData_t m_scriptedSequenceDataMain; // 0x58 | Schema_DeclaredClass | Size: 0x38
 			GlobalTypes::CUtlVector< server::PulseScriptedSequenceData_t > m_vecAdditionalActors; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_vecAdditionalActors[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< server::PulseScriptedSequenceData_t > m_vecAdditionalActors; // 0x90 | Schema_Atomic | Size: 0x18
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0xa8 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xf0 | Schema_DeclaredClass | Size: 0x48
 			// server::CUtlVector< pulse_runtime_lib::CPulse_OutflowConnection > m_Triggers; // 0x138 | Schema_Atomic | Size: 0x18

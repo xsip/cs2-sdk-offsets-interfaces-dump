@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animationsystem {
 		class CAnimDataChannelDesc  {
@@ -25,11 +28,10 @@ namespace CS2 {
 			GlobalTypes::CBufferString m_szDescription; // 0x38 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_szElementNameArray; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_szElementNameArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_szElementNameArray; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_nElementIndexArray; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_nElementIndexArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint32 > m_nElementMaskArray; // 0x78 | Schema_Atomic | Size: 0x18
-			char  m_nElementMaskArray[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_nElementIndexArray; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_nElementIndexArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_nElementMaskArray; // 0x78 | Schema_Atomic | Size: 0x18
+			// char  m_nElementMaskArray[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimDataChannelDesc, m_szChannelClass) == 0x0, "m_szChannelClass in CAnimDataChannelDesc should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimDataChannelDesc, m_szVariableName) == 0x10, "m_szVariableName in CAnimDataChannelDesc should be at offset 0x10");

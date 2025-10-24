@@ -18,6 +18,9 @@ namespace CS2 {
 		class CHitBox;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CHitBoxSet  {
@@ -27,7 +30,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< modellib::CHitBox > m_HitBoxes; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_HitBoxes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< modellib::CHitBox > m_HitBoxes; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_SourceFilename; // 0x28 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::CHitBoxSet, m_name) == 0x0, "m_name in CHitBoxSet should be at offset 0x0");

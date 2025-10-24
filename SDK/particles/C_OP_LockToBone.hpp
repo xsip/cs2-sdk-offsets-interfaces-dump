@@ -20,6 +20,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_LockToBone : public CS2::particles::CParticleFunctionOperator {

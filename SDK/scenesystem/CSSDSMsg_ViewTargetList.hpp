@@ -19,6 +19,9 @@ namespace CS2 {
 		class CSSDSMsg_ViewTarget;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace scenesystem {
 		class CSSDSMsg_ViewTargetList  {
@@ -27,7 +30,6 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_ViewName; // 0x10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< scenesystem::CSSDSMsg_ViewTarget > m_Targets; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_Targets[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< scenesystem::CSSDSMsg_ViewTarget > m_Targets; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_ViewTargetList, m_viewId) == 0x0, "m_viewId in CSSDSMsg_ViewTargetList should be at offset 0x0");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_ViewTargetList, m_ViewName) == 0x10, "m_ViewName in CSSDSMsg_ViewTargetList should be at offset 0x10");

@@ -14,15 +14,17 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CModelConfigElement_RandomPick : public CS2::modellib::CModelConfigElement {
 		public:
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Choices; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_Choices[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Choices; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_ChoiceWeights; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_ChoiceWeights[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_ChoiceWeights; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_ChoiceWeights[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_RandomPick, m_Choices) == 0x48, "m_Choices in CModelConfigElement_RandomPick should be at offset 0x48");

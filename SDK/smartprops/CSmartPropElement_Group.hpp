@@ -14,12 +14,15 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropElement_Group : public CS2::smartprops::CSmartPropElement {
 		public:
-			// GlobalTypes::CUtlVector< CSmartPropElement >* m_Children; // 0x88 | Schema_Atomic | Size: 0x18
-			char  m_Children[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< smartprops::CSmartPropElement* > m_Children; // 0x88 | Schema_Atomic | Size: 0x18
+			// char  m_Children[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Group, m_Children) == 0x88, "m_Children in CSmartPropElement_Group should be at offset 0x88");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_Group) == 0xA0, "CSmartPropElement_Group size should be 0xA0");

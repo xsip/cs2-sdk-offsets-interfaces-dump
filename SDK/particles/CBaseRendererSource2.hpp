@@ -28,6 +28,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class CBaseRendererSource2 : public CS2::particles::CParticleFunctionRenderer {

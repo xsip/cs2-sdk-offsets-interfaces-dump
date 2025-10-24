@@ -30,6 +30,9 @@ namespace CS2 {
 		class CDestructiblePartsComponent;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CBaseModelEntity : public CS2::server::CBaseEntity {

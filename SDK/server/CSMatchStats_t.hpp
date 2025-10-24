@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CSMatchStats_t : public CS2::server::CSPerRoundStats_t {

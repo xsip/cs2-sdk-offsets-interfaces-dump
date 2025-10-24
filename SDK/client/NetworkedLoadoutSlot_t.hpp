@@ -18,6 +18,9 @@ namespace CS2 {
 		class C_EconItemView;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class NetworkedLoadoutSlot_t  {

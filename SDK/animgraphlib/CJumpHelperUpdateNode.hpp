@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CJumpHelperUpdateNode : public CS2::animgraphlib::CSequenceUpdateNode {

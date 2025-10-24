@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particleslib {
 		class CParticleBindingRealPulse : public CS2::particleslib::CParticleCollectionBindingInstance {

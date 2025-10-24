@@ -21,6 +21,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CCSWeaponBaseVData : public CS2::client::CBasePlayerWeaponVData {

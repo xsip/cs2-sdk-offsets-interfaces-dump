@@ -17,6 +17,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CMotionMatchingUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
@@ -24,9 +27,8 @@ namespace CS2 {
 			animgraphlib::CMotionDataSet m_dataSet; // 0x58 | Schema_DeclaredClass | Size: 0x20
 			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CMotionMetricEvaluator > > m_metrics; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_metrics[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CMotionMetricEvaluator > > m_metrics; // 0x78 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_weights; // 0x90 | Schema_Atomic | Size: 0x18
-			char  m_weights[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_weights; // 0x90 | Schema_Atomic | Size: 0x18
+			// char  m_weights[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x38);
 			bool m_bSearchEveryTick; // 0xe0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

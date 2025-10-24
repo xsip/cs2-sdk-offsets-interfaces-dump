@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CAnimGraphSettingsManager  {
@@ -20,7 +23,6 @@ namespace CS2 {
 			S2_PAD(0x18);
 			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimGraphSettingsGroup > > m_settingsGroups; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_settingsGroups[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimGraphSettingsGroup > > m_settingsGroups; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphSettingsManager, m_settingsGroups) == 0x18, "m_settingsGroups in CAnimGraphSettingsManager should be at offset 0x18");
 		static_assert(sizeof(CS2::animgraphlib::CAnimGraphSettingsManager) == 0x30, "CAnimGraphSettingsManager size should be 0x30");

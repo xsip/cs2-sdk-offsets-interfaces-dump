@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropVariable_GridPlacementMode : public CS2::smartprops::CSmartPropVariable {

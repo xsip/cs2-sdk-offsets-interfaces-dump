@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_CSGO_PreviewModelAlias_csgo_item_previewmodel : public CS2::client::C_CSGO_PreviewModel {

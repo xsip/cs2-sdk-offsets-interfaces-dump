@@ -18,6 +18,9 @@ namespace CS2 {
 		class RenderInputLayoutField_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class WorldNodeOnDiskBufferData_t  {
@@ -26,9 +29,8 @@ namespace CS2 {
 			int32_t m_nElementSizeInBytes; // 0x4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_inputLayoutFields[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint8 > m_pData; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_pData[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_pData; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_pData[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::worldrenderer::WorldNodeOnDiskBufferData_t, m_nElementCount) == 0x0, "m_nElementCount in WorldNodeOnDiskBufferData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::WorldNodeOnDiskBufferData_t, m_nElementSizeInBytes) == 0x4, "m_nElementSizeInBytes in WorldNodeOnDiskBufferData_t should be at offset 0x4");

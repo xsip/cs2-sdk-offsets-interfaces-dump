@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable : public CS2::server::CEnvSoundscapeTriggerable {

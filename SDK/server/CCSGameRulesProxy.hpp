@@ -19,6 +19,9 @@ namespace CS2 {
 		class CCSGameRules;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSGameRulesProxy : public CS2::server::CGameRulesProxy {

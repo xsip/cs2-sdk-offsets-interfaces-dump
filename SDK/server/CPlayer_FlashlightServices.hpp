@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CPlayer_FlashlightServices : public CS2::client::CPlayerPawnComponent {

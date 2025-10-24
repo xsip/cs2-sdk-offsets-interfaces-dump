@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CInstancedSceneEntity : public CS2::server::CSceneEntity {

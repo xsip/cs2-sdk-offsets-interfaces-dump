@@ -13,14 +13,17 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class AggregateLODSetup_t  {
 		public:
 			GlobalTypes::Vector m_vLODOrigin; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_fMaxObjectScale; // 0xc | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< float32 > m_fSwitchDistances; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_fSwitchDistances[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_fSwitchDistances; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_fSwitchDistances[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::worldrenderer::AggregateLODSetup_t, m_vLODOrigin) == 0x0, "m_vLODOrigin in AggregateLODSetup_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::AggregateLODSetup_t, m_fMaxObjectScale) == 0xC, "m_fMaxObjectScale in AggregateLODSetup_t should be at offset 0xC");

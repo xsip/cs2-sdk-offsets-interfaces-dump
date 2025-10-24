@@ -22,6 +22,9 @@ namespace CS2 {
 		class ModelSpaceSamplingChainLink_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animlib {
 		class CNmClip  {
@@ -33,22 +36,19 @@ namespace CS2 {
 			GlobalTypes::CUtlBinaryBlock m_compressedPoseData; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlVector< animlib::NmCompressionSettings_t > m_trackCompressionSettings; // 0x20 | Schema_Atomic | Size: 0x18
 			// char  m_trackCompressionSettings[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animlib::NmCompressionSettings_t > m_trackCompressionSettings; // 0x20 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint32 > m_compressedPoseOffsets; // 0x38 | Schema_Atomic | Size: 0x18
-			char  m_compressedPoseOffsets[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_compressedPoseOffsets; // 0x38 | Schema_Atomic | Size: 0x18
+			// char  m_compressedPoseOffsets[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_floatCurveIDs; // 0x50 | Schema_Atomic | Size: 0x18
 			// char  m_floatCurveIDs[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_floatCurveIDs; // 0x50 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< animlib::NmFloatCurveCompressionSettings_t > m_floatCurveDefs; // 0x68 | Schema_Atomic | Size: 0x18
 			// char  m_floatCurveDefs[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animlib::NmFloatCurveCompressionSettings_t > m_floatCurveDefs; // 0x68 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_compressedFloatCurveData; // 0x80 | Schema_Atomic | Size: 0x18
-			char  m_compressedFloatCurveData[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint32 > m_compressedFloatCurveOffsets; // 0x98 | Schema_Atomic | Size: 0x18
-			char  m_compressedFloatCurveOffsets[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_compressedFloatCurveData; // 0x80 | Schema_Atomic | Size: 0x18
+			// char  m_compressedFloatCurveData[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_compressedFloatCurveOffsets; // 0x98 | Schema_Atomic | Size: 0x18
+			// char  m_compressedFloatCurveOffsets[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28);
-			// GlobalTypes::CUtlVectorFixedGrowable< CNmClip, 1 >* m_secondaryAnimations; // 0xd8 | Schema_Atomic | Size: 0x20
-			char  m_secondaryAnimations[0x20]; // 0xd8 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CUtlVectorFixedGrowable< animlib::CNmClip* > m_secondaryAnimations; // 0xd8 | Schema_Atomic | Size: 0x20
+			// char  m_secondaryAnimations[0x20]; // 0xd8 | Schema_Atomic | Size: 0x20
 			animlib::CNmSyncTrack m_syncTrack; // 0xf8 | Schema_DeclaredClass | Size: 0xb0
 			S2_PAD(0x8);
 			animlib::CNmRootMotionData m_rootMotion; // 0x1b0 | Schema_DeclaredClass | Size: 0x50
@@ -56,9 +56,8 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CUtlVector< animlib::ModelSpaceSamplingChainLink_t > m_modelSpaceSamplingChain; // 0x208 | Schema_Atomic | Size: 0x18
 			// char  m_modelSpaceSamplingChain[0x18]; // 0x208 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::ModelSpaceSamplingChainLink_t > m_modelSpaceSamplingChain; // 0x208 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< int32 > m_modelSpaceBoneSamplingIndices; // 0x220 | Schema_Atomic | Size: 0x18
-			char  m_modelSpaceBoneSamplingIndices[0x18]; // 0x220 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_modelSpaceBoneSamplingIndices; // 0x220 | Schema_Atomic | Size: 0x18
+			// char  m_modelSpaceBoneSamplingIndices[0x18]; // 0x220 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::animlib::CNmClip, m_skeleton) == 0x0, "m_skeleton in CNmClip should be at offset 0x0");

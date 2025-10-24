@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace physicslib {
 		class FeSDFRigid_t  {
@@ -25,8 +28,8 @@ namespace CS2 {
 			uint16_t nVertexMapIndex; // 0x20 | Schema_Builtin | Size: 0x2
 			uint16_t nFlags; // 0x22 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVector< float32 > m_Distances; // 0x28 | Schema_Atomic | Size: 0x18
-			char  m_Distances[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_Distances; // 0x28 | Schema_Atomic | Size: 0x18
+			// char  m_Distances[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			int32_t m_nWidth; // 0x40 | Schema_Builtin | Size: 0x4
 			int32_t m_nHeight; // 0x44 | Schema_Builtin | Size: 0x4
 			int32_t m_nDepth; // 0x48 | Schema_Builtin | Size: 0x4

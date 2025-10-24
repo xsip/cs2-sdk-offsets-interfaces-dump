@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CNavVolumeMarkupVolume : public CS2::navlib::CNavVolume {

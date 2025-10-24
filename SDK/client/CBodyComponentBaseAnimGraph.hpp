@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CBodyComponentBaseAnimGraph : public CS2::client::CBodyComponentSkeletonInstance {

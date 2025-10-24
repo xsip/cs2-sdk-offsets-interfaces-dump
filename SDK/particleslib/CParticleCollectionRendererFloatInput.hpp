@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particleslib {
 		class CParticleCollectionRendererFloatInput : public CS2::particleslib::CParticleCollectionFloatInput {

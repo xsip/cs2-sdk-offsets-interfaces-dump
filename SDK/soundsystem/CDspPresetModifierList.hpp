@@ -18,6 +18,9 @@ namespace CS2 {
 		class CDSPMixgroupModifier;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem {
 		class CDspPresetModifierList  {
@@ -25,7 +28,6 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_dspName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< soundsystem::CDSPMixgroupModifier > m_modifiers; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_modifiers[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< soundsystem::CDSPMixgroupModifier > m_modifiers; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::soundsystem::CDspPresetModifierList, m_dspName) == 0x0, "m_dspName in CDspPresetModifierList should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem::CDspPresetModifierList, m_modifiers) == 0x8, "m_modifiers in CDspPresetModifierList should be at offset 0x8");

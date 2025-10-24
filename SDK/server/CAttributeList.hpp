@@ -18,6 +18,9 @@ namespace CS2 {
 		class CAttributeManager;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CAttributeList  {

@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CCSObserver_UseServices : public CS2::server::CPlayer_UseServices {

@@ -20,6 +20,9 @@ namespace CS2 {
 		class AggregateLODSetup_t;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace worldrenderer {
 		class AggregateSceneObject_t  {
@@ -32,15 +35,12 @@ namespace CS2 {
 			S2_PAD(0x2);
 			GlobalTypes::CUtlVector< worldrenderer::AggregateMeshInfo_t > m_aggregateMeshes; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_aggregateMeshes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< worldrenderer::AggregateMeshInfo_t > m_aggregateMeshes; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< worldrenderer::AggregateLODSetup_t > m_lodSetups; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_lodSetups[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< worldrenderer::AggregateLODSetup_t > m_lodSetups; // 0x28 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< uint16 > m_visClusterMembership; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_visClusterMembership[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_visClusterMembership; // 0x40 | Schema_Atomic | Size: 0x18
+			// char  m_visClusterMembership[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< GlobalTypes::matrix3x4_t > m_fragmentTransforms; // 0x58 | Schema_Atomic | Size: 0x18
 			// char  m_fragmentTransforms[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::matrix3x4_t > m_fragmentTransforms; // 0x58 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_renderableModel; // 0x70 | Schema_Atomic | Size: 0x8
 			char  m_renderableModel[0x8]; // 0x70 | Schema_Atomic | Size: 0x8
 		};

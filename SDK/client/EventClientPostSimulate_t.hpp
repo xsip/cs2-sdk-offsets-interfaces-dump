@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class EventClientPostSimulate_t : public CS2::client::EventSimulate_t {

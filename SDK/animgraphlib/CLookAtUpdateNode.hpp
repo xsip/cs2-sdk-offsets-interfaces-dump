@@ -17,6 +17,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CLookAtUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {

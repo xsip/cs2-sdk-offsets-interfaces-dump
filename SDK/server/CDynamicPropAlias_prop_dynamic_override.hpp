@@ -14,6 +14,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CDynamicPropAlias_prop_dynamic_override : public CS2::server::CDynamicProp {

@@ -20,6 +20,9 @@ namespace CS2 {
 		class C_CSPlayerPawn;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_BaseGrenade : public CS2::client::C_BaseFlex {
@@ -38,12 +41,10 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hThrower; // 0x1394 | Schema_Atomic | Size: 0x4
 			// char  m_hThrower[0x4]; // 0x1394 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_CSPlayerPawn > m_hThrower; // 0x1394 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
 			entity2::GameTime_t m_flNextAttack; // 0x13ac | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hOriginalThrower; // 0x13b0 | Schema_Atomic | Size: 0x4
 			// char  m_hOriginalThrower[0x4]; // 0x13b0 | Schema_Atomic | Size: 0x4
-			// client::CHandle< client::C_CSPlayerPawn > m_hOriginalThrower; // 0x13b0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_BaseGrenade, m_bHasWarnedAI) == 0x1368, "m_bHasWarnedAI in C_BaseGrenade should be at offset 0x1368");

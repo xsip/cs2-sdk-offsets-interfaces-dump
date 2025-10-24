@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CCycleControlUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {

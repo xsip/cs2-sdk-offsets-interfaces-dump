@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_Group : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {

@@ -18,6 +18,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
 		class CHostage : public CS2::server::CHostageExpresserShim {

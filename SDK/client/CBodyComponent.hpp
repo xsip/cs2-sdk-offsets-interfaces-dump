@@ -20,6 +20,9 @@ namespace CS2 {
 		class CGameSceneNode;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class CBodyComponent : public CS2::entity2::CEntityComponent {

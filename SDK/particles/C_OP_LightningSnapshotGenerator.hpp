@@ -16,6 +16,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace particles {
 		class C_OP_LightningSnapshotGenerator : public CS2::particles::CParticleFunctionPreEmission {

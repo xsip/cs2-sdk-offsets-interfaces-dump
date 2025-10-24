@@ -13,16 +13,19 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace modellib {
 		class CMorphBundleData  {
 		public:
 			float32 m_flULeftSrc; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flVTopSrc; // 0x4 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CUtlVector< float32 > m_offsets; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_offsets[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< float32 > m_ranges; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_ranges[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_offsets; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_offsets[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_ranges; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_ranges[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CMorphBundleData, m_flULeftSrc) == 0x0, "m_flULeftSrc in CMorphBundleData should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMorphBundleData, m_flVTopSrc) == 0x4, "m_flVTopSrc in CMorphBundleData should be at offset 0x4");

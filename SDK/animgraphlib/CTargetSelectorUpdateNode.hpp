@@ -21,6 +21,9 @@ namespace CS2 {
 		class CAnimUpdateNodeRef;
 	}
 }
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CTargetSelectorUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
@@ -30,7 +33,6 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x68 | Schema_Atomic | Size: 0x18
 			// char  m_children[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x68 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			animgraphlib::CAnimParamHandle m_hTargetPosition; // 0x84 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_hTargetFacePositionParameter; // 0x86 | Schema_DeclaredClass | Size: 0x2

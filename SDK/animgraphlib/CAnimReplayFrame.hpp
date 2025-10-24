@@ -13,6 +13,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CAnimReplayFrame  {
@@ -20,7 +23,6 @@ namespace CS2 {
 			S2_PAD(0x10);
 			GlobalTypes::CUtlVector< GlobalTypes::CUtlBinaryBlock > m_inputDataBlocks; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_inputDataBlocks[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlVector< GlobalTypes::CUtlBinaryBlock > m_inputDataBlocks; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlBinaryBlock m_instanceData; // 0x28 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8);
 			GlobalTypes::CTransform m_startingLocalToWorldTransform; // 0x40 | Schema_Atomic | Size: 0x20

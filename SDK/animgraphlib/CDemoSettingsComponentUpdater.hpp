@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace animgraphlib {
 		class CDemoSettingsComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {

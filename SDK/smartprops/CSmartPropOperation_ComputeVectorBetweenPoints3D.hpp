@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace smartprops {
 		class CSmartPropOperation_ComputeVectorBetweenPoints3D : public CS2::smartprops::CSmartPropOperation {

@@ -15,6 +15,9 @@
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
 		class C_DecoyProjectile : public CS2::client::C_BaseCSGrenadeProjectile {
