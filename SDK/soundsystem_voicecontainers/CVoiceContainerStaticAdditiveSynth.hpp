@@ -16,10 +16,16 @@
 
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
+		class CTone;
+	}
+}
+namespace CS2 {
+	namespace soundsystem_voicecontainers {
 		class CVoiceContainerStaticAdditiveSynth : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
+			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CTone > m_tones; // 0xb8 | Schema_Atomic | Size: 0x18
+			// char  m_tones[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CTone > m_tones; // 0xb8 | Schema_Atomic | Size: 0x18
-			char  m_tones[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18); // End padding
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth, m_tones) == 0xB8, "m_tones in CVoiceContainerStaticAdditiveSynth should be at offset 0xB8");

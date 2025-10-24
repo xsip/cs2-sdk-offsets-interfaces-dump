@@ -18,13 +18,19 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class CAnimUpdateNodeRef;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class CTargetSelectorUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
 			S2_PAD(0x8);
 			animgraphlib::TargetSelectorAngleMode_t m_eAngleMode; // 0x60 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x68 | Schema_Atomic | Size: 0x18
+			// char  m_children[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x68 | Schema_Atomic | Size: 0x18
-			char  m_children[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			animgraphlib::CAnimParamHandle m_hTargetPosition; // 0x84 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_hTargetFacePositionParameter; // 0x86 | Schema_DeclaredClass | Size: 0x2

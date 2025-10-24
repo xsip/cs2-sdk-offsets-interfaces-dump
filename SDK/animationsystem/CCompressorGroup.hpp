@@ -27,14 +27,17 @@ namespace CS2 {
 			char  m_nType[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int32 > m_nFlags; // 0x50 | Schema_Atomic | Size: 0x18
 			char  m_nFlags[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_szGrouping; // 0x68 | Schema_Atomic | Size: 0x18
+			// char  m_szGrouping[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_szGrouping; // 0x68 | Schema_Atomic | Size: 0x18
-			char  m_szGrouping[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int32 > m_nCompressorIndex; // 0x80 | Schema_Atomic | Size: 0x18
 			char  m_nCompressorIndex[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< char* > >* m_szElementNames; // 0x98 | Schema_Atomic | Size: 0x18
+			// char  m_szElementNames[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< CUtlVector< char > >* m_szElementNames; // 0x98 | Schema_Atomic | Size: 0x18
-			char  m_szElementNames[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< int32 > > m_nElementUniqueID; // 0xb0 | Schema_Atomic | Size: 0x18
+			// char  m_nElementUniqueID[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< int32 > > m_nElementUniqueID; // 0xb0 | Schema_Atomic | Size: 0x18
-			char  m_nElementUniqueID[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint32 > m_nElementMask; // 0xc8 | Schema_Atomic | Size: 0x18
 			char  m_nElementMask[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);

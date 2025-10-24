@@ -15,19 +15,30 @@
 
 namespace CS2 {
 	namespace animationsystem {
+		class CAnimBone;
+		class CAnimUser;
+		class CAnimDataChannelDesc;
+	}
+}
+namespace CS2 {
+	namespace animationsystem {
 		class CAnimKeyData  {
 		public:
 			GlobalTypes::CBufferString m_name; // 0x0 | Schema_Atomic | Size: 0x10
+			GlobalTypes::CUtlVector< animationsystem::CAnimBone > m_boneArray; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_boneArray[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimBone > m_boneArray; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_boneArray[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animationsystem::CAnimUser > m_userArray; // 0x28 | Schema_Atomic | Size: 0x18
+			// char  m_userArray[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimUser > m_userArray; // 0x28 | Schema_Atomic | Size: 0x18
-			char  m_userArray[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_morphArray; // 0x40 | Schema_Atomic | Size: 0x18
+			// char  m_morphArray[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_morphArray; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_morphArray[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			int32_t m_nChannelElements; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< animationsystem::CAnimDataChannelDesc > m_dataChannelArray; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_dataChannelArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimDataChannelDesc > m_dataChannelArray; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_dataChannelArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimKeyData, m_name) == 0x0, "m_name in CAnimKeyData should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimKeyData, m_boneArray) == 0x10, "m_boneArray in CAnimKeyData should be at offset 0x10");

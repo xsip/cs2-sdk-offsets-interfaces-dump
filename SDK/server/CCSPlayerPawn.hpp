@@ -70,8 +70,9 @@ namespace CS2 {
 			GlobalTypes::QAngle m_aimPunchAngleVel; // 0x1034 | Schema_Atomic | Size: 0xc
 			entity2::GameTick_t m_aimPunchTickBase; // 0x1040 | Schema_DeclaredClass | Size: 0x4
 			float32 m_aimPunchTickFraction; // 0x1044 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1048 | Schema_Atomic | Size: 0x18
+			// char  m_aimPunchCache[0x18]; // 0x1048 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1048 | Schema_Atomic | Size: 0x18
-			char  m_aimPunchCache[0x18]; // 0x1048 | Schema_Atomic | Size: 0x18
 			bool m_bIsBuyMenuOpen; // 0x1060 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6a7);
 			entity2::GameTime_t m_lastLandTime; // 0x1708 | Schema_DeclaredClass | Size: 0x4

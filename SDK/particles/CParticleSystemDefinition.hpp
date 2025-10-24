@@ -17,6 +17,12 @@
 
 namespace CS2 {
 	namespace particles {
+		class ParticleChildrenInfo_t;
+		class ParticleControlPointConfiguration_t;
+	}
+}
+namespace CS2 {
+	namespace particles {
 		class CParticleSystemDefinition : public CS2::particles::IParticleSystemDefinition {
 		public:
 			int32_t m_nBehaviorVersion; // 0x8 | Schema_Builtin | Size: 0x4
@@ -35,8 +41,9 @@ namespace CS2 {
 			char  m_Constraints[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< CParticleFunctionRenderer >* m_Renderers; // 0xa0 | Schema_Atomic | Size: 0x18
 			char  m_Renderers[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< particles::ParticleChildrenInfo_t > m_Children; // 0xb8 | Schema_Atomic | Size: 0x18
+			// char  m_Children[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< particles::ParticleChildrenInfo_t > m_Children; // 0xb8 | Schema_Atomic | Size: 0x18
-			char  m_Children[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0xa8);
 			int32_t m_nFirstMultipleOverride_BackwardCompat; // 0x178 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xdc);
@@ -106,8 +113,9 @@ namespace CS2 {
 			int32_t m_nAllowRenderControlPoint; // 0x36c | Schema_Builtin | Size: 0x4
 			bool m_bShouldSort; // 0x370 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x47);
+			GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; // 0x3b8 | Schema_Atomic | Size: 0x18
+			// char  m_controlPointConfigurations[0x18]; // 0x3b8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; // 0x3b8 | Schema_Atomic | Size: 0x18
-			char  m_controlPointConfigurations[0x18]; // 0x3b8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x70); // End padding
 		};
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nBehaviorVersion) == 0x8, "m_nBehaviorVersion in CParticleSystemDefinition should be at offset 0x8");

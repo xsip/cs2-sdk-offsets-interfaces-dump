@@ -18,6 +18,11 @@
 
 namespace CS2 {
 	namespace server {
+		class magnetted_objects_t;
+	}
+}
+namespace CS2 {
+	namespace server {
 		class CPhysMagnet : public CS2::server::CBaseAnimGraph {
 		public:
 			entity2::CEntityIOOutput m_OnMagnetAttach; // 0xa90 | Schema_DeclaredClass | Size: 0x28
@@ -26,8 +31,9 @@ namespace CS2 {
 			float32 m_forceLimit; // 0xae4 | Schema_Builtin | Size: 0x4
 			float32 m_torqueLimit; // 0xae8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< server::magnetted_objects_t > m_MagnettedEntities; // 0xaf0 | Schema_Atomic | Size: 0x18
+			// char  m_MagnettedEntities[0x18]; // 0xaf0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< server::magnetted_objects_t > m_MagnettedEntities; // 0xaf0 | Schema_Atomic | Size: 0x18
-			char  m_MagnettedEntities[0x18]; // 0xaf0 | Schema_Atomic | Size: 0x18
 			bool m_bActive; // 0xb08 | Schema_Builtin | Size: 0x1
 			bool m_bHasHitSomething; // 0xb09 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);

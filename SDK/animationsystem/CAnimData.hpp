@@ -15,18 +15,28 @@
 
 namespace CS2 {
 	namespace animationsystem {
+		class CAnimDesc;
+		class CAnimDecoder;
+		class CAnimFrameSegment;
+	}
+}
+namespace CS2 {
+	namespace animationsystem {
 		class CAnimData  {
 		public:
 			S2_PAD(0x10);
 			GlobalTypes::CBufferString m_name; // 0x10 | Schema_Atomic | Size: 0x10
+			GlobalTypes::CUtlVector< animationsystem::CAnimDesc > m_animArray; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_animArray[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimDesc > m_animArray; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_animArray[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animationsystem::CAnimDecoder > m_decoderArray; // 0x38 | Schema_Atomic | Size: 0x18
+			// char  m_decoderArray[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimDecoder > m_decoderArray; // 0x38 | Schema_Atomic | Size: 0x18
-			char  m_decoderArray[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			int32_t m_nMaxUniqueFrameIndex; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< animationsystem::CAnimFrameSegment > m_segmentArray; // 0x58 | Schema_Atomic | Size: 0x18
+			// char  m_segmentArray[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimFrameSegment > m_segmentArray; // 0x58 | Schema_Atomic | Size: 0x18
-			char  m_segmentArray[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimData, m_name) == 0x10, "m_name in CAnimData should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimData, m_animArray) == 0x20, "m_animArray in CAnimData should be at offset 0x20");

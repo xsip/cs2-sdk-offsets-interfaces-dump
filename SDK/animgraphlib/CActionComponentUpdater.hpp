@@ -18,8 +18,9 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CActionComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
+			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimActionUpdater > > m_actions; // 0x30 | Schema_Atomic | Size: 0x18
+			// char  m_actions[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimActionUpdater > > m_actions; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_actions[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CActionComponentUpdater, m_actions) == 0x30, "m_actions in CActionComponentUpdater should be at offset 0x30");
 		static_assert(sizeof(CS2::animgraphlib::CActionComponentUpdater) == 0x48, "CActionComponentUpdater size should be 0x48");

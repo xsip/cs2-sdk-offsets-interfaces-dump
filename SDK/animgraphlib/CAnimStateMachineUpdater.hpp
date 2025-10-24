@@ -15,13 +15,21 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class CStateUpdateData;
+		class CTransitionUpdateData;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class CAnimStateMachineUpdater  {
 		public:
 			S2_PAD(0x8);
+			GlobalTypes::CUtlVector< animgraphlib::CStateUpdateData > m_states; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_states[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::CStateUpdateData > m_states; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_states[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animgraphlib::CTransitionUpdateData > m_transitions; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_transitions[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::CTransitionUpdateData > m_transitions; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_transitions[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			int32_t m_startStateIndex; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

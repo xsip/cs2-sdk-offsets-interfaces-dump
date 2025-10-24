@@ -17,13 +17,19 @@
 
 namespace CS2 {
 	namespace smartprops {
+		class MaterialGroupChoice_t;
+	}
+}
+namespace CS2 {
+	namespace smartprops {
 		class CSmartPropOperation_SetMateraialGroupChoice : public CS2::smartprops::CSmartPropOperation {
 		public:
 			GlobalTypes::CUtlString m_VariableName; // 0x50 | Schema_Atomic | Size: 0x8
 			smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; // 0x58 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeInt m_ChoiceSelection; // 0x98 | Schema_Atomic | Size: 0x40
+			GlobalTypes::CUtlVector< smartprops::MaterialGroupChoice_t > m_MaterialGroupChoices; // 0xd8 | Schema_Atomic | Size: 0x18
+			// char  m_MaterialGroupChoices[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< smartprops::MaterialGroupChoice_t > m_MaterialGroupChoices; // 0xd8 | Schema_Atomic | Size: 0x18
-			char  m_MaterialGroupChoices[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetMateraialGroupChoice, m_VariableName) == 0x50, "m_VariableName in CSmartPropOperation_SetMateraialGroupChoice should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetMateraialGroupChoice, m_SelectionMode) == 0x58, "m_SelectionMode in CSmartPropOperation_SetMateraialGroupChoice should be at offset 0x58");

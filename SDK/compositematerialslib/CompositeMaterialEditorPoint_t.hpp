@@ -15,6 +15,12 @@
 
 namespace CS2 {
 	namespace compositematerialslib {
+		class CompositeMaterialAssemblyProcedure_t;
+		class CompositeMaterial_t;
+	}
+}
+namespace CS2 {
+	namespace compositematerialslib {
 		class CompositeMaterialEditorPoint_t  {
 		public:
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_ModelName; // 0x0 | Schema_Atomic | Size: 0xe0
@@ -26,10 +32,12 @@ namespace CS2 {
 			S2_PAD(0x7);
 			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_ChildModelName; // 0x100 | Schema_Atomic | Size: 0xe0
 			char  m_ChildModelName[0xe0]; // 0x100 | Schema_Atomic | Size: 0xe0
+			GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialAssemblyProcedure_t > m_vecCompositeMaterialAssemblyProcedures; // 0x1e0 | Schema_Atomic | Size: 0x18
+			// char  m_vecCompositeMaterialAssemblyProcedures[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialAssemblyProcedure_t > m_vecCompositeMaterialAssemblyProcedures; // 0x1e0 | Schema_Atomic | Size: 0x18
-			char  m_vecCompositeMaterialAssemblyProcedures[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterial_t > m_vecCompositeMaterials; // 0x1f8 | Schema_Atomic | Size: 0x18
+			// char  m_vecCompositeMaterials[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterial_t > m_vecCompositeMaterials; // 0x1f8 | Schema_Atomic | Size: 0x18
-			char  m_vecCompositeMaterials[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialEditorPoint_t, m_ModelName) == 0x0, "m_ModelName in CompositeMaterialEditorPoint_t should be at offset 0x0");

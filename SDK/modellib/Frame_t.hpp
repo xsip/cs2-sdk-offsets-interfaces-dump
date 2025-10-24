@@ -23,14 +23,18 @@ namespace CS2 {
 			GlobalTypes::CTransform m_Transform; // 0x20 | Schema_Atomic | Size: 0x20
 			bool m_bTeleport; // 0x40 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_CompositeBones; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_CompositeBones[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_CompositeBones; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_CompositeBones[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_SimStateBones; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_SimStateBones[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_SimStateBones; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_SimStateBones[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_FeModelAnims; // 0x78 | Schema_Atomic | Size: 0x18
+			// char  m_FeModelAnims[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_FeModelAnims; // 0x78 | Schema_Atomic | Size: 0x18
-			char  m_FeModelAnims[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::VectorAligned > m_FeModelPos; // 0x90 | Schema_Atomic | Size: 0x18
+			// char  m_FeModelPos[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::VectorAligned > m_FeModelPos; // 0x90 | Schema_Atomic | Size: 0x18
-			char  m_FeModelPos[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_FlexControllerWeights; // 0xa8 | Schema_Atomic | Size: 0x18
 			char  m_FlexControllerWeights[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 		};

@@ -15,14 +15,24 @@
 
 namespace CS2 {
 	namespace animationsystem {
+		class CAnimBoneDifference;
+		class CAnimMorphDifference;
+		class CAnimUserDifference;
+	}
+}
+namespace CS2 {
+	namespace animationsystem {
 		class CAnimEncodeDifference  {
 		public:
+			GlobalTypes::CUtlVector< animationsystem::CAnimBoneDifference > m_boneArray; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_boneArray[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimBoneDifference > m_boneArray; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_boneArray[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animationsystem::CAnimMorphDifference > m_morphArray; // 0x18 | Schema_Atomic | Size: 0x18
+			// char  m_morphArray[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimMorphDifference > m_morphArray; // 0x18 | Schema_Atomic | Size: 0x18
-			char  m_morphArray[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animationsystem::CAnimUserDifference > m_userArray; // 0x30 | Schema_Atomic | Size: 0x18
+			// char  m_userArray[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimUserDifference > m_userArray; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_userArray[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint8 > m_bHasRotationBitArray; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_bHasRotationBitArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint8 > m_bHasMovementBitArray; // 0x60 | Schema_Atomic | Size: 0x18

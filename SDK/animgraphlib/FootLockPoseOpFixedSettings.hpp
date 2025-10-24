@@ -17,10 +17,16 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class FootFixedData_t;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class FootLockPoseOpFixedSettings  {
 		public:
+			GlobalTypes::CUtlVector< animgraphlib::FootFixedData_t > m_footInfo; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_footInfo[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::FootFixedData_t > m_footInfo; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_footInfo[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimInputDamping m_hipDampingSettings; // 0x18 | Schema_DeclaredClass | Size: 0x18
 			int32_t m_nHipBoneIndex; // 0x30 | Schema_Builtin | Size: 0x4
 			animgraphlib::IKSolverType m_ikSolverType; // 0x34 | Schema_DeclaredEnum | Size: 0x4

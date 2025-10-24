@@ -18,8 +18,9 @@ namespace CS2 {
 		class CNmBoneWeightList  {
 		public:
 			GlobalTypes::CResourceName m_skeletonName; // 0x0 | Schema_Atomic | Size: 0xe0
+			GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_boneIDs; // 0xe0 | Schema_Atomic | Size: 0x18
+			// char  m_boneIDs[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_boneIDs; // 0xe0 | Schema_Atomic | Size: 0x18
-			char  m_boneIDs[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_weights; // 0xf8 | Schema_Atomic | Size: 0x18
 			char  m_weights[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 		};

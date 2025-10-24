@@ -17,21 +17,29 @@
 
 namespace CS2 {
 	namespace worldrenderer {
+		class ClutterTile_t;
+	}
+}
+namespace CS2 {
+	namespace worldrenderer {
 		class ClutterSceneObject_t  {
 		public:
 			mathlib_extended::AABB_t m_Bounds; // 0x0 | Schema_DeclaredClass | Size: 0x18
 			worldrenderer::ObjectTypeFlags_t m_flags; // 0x18 | Schema_DeclaredEnum | Size: 0x4
 			int16_t m_nLayer; // 0x1c | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
+			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_instancePositions; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_instancePositions[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_instancePositions; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_instancePositions[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			// GlobalTypes::CUtlVector< float32 > m_instanceScales; // 0x50 | Schema_Atomic | Size: 0x18
 			char  m_instanceScales[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::Color > m_instanceTintSrgb; // 0x68 | Schema_Atomic | Size: 0x18
+			// char  m_instanceTintSrgb[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::Color > m_instanceTintSrgb; // 0x68 | Schema_Atomic | Size: 0x18
-			char  m_instanceTintSrgb[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< worldrenderer::ClutterTile_t > m_tiles; // 0x80 | Schema_Atomic | Size: 0x18
+			// char  m_tiles[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< worldrenderer::ClutterTile_t > m_tiles; // 0x80 | Schema_Atomic | Size: 0x18
-			char  m_tiles[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_renderableModel; // 0x98 | Schema_Atomic | Size: 0x8
 			char  m_renderableModel[0x8]; // 0x98 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlStringToken m_materialGroup; // 0xa0 | Schema_Atomic | Size: 0x4

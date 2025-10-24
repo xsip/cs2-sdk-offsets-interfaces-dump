@@ -18,10 +18,12 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged : public CS2::server::CMarkupVolume {
 		public:
+			GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_GroupNames; // 0x7e0 | Schema_Atomic | Size: 0x18
+			// char  m_GroupNames[0x18]; // 0x7e0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_GroupNames; // 0x7e0 | Schema_Atomic | Size: 0x18
-			char  m_GroupNames[0x18]; // 0x7e0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_Tags; // 0x7f8 | Schema_Atomic | Size: 0x18
+			// char  m_Tags[0x18]; // 0x7f8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_Tags; // 0x7f8 | Schema_Atomic | Size: 0x18
-			char  m_Tags[0x18]; // 0x7f8 | Schema_Atomic | Size: 0x18
 			bool m_bIsGroup; // 0x810 | Schema_Builtin | Size: 0x1
 			bool m_bGroupByPrefab; // 0x811 | Schema_Builtin | Size: 0x1
 			bool m_bGroupByVolume; // 0x812 | Schema_Builtin | Size: 0x1

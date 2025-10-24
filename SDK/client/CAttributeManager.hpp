@@ -25,8 +25,9 @@ namespace CS2 {
 		class CAttributeManager  {
 		public:
 			S2_PAD(0x8);
+			GlobalTypes::CUtlVector< GlobalTypes::CHandle< C_BaseEntity > > m_Providers; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_Providers[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_Providers; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_Providers[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			int32_t m_iReapplyProvisionParity; // 0x20 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle< client::C_BaseEntity > m_hOuter; // 0x24 | Schema_Atomic | Size: 0x4
 			// char  m_hOuter[0x4]; // 0x24 | Schema_Atomic | Size: 0x4

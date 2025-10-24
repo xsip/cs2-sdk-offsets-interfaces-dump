@@ -18,6 +18,14 @@
 
 namespace CS2 {
 	namespace animationsystem {
+		class CAnimMovement;
+		class CAnimEventDefinition;
+		class CAnimActivity;
+		class CAnimLocalHierarchy;
+	}
+}
+namespace CS2 {
+	namespace animationsystem {
 		class CAnimDesc  {
 		public:
 			GlobalTypes::CBufferString m_name; // 0x0 | Schema_Atomic | Size: 0x10
@@ -25,23 +33,29 @@ namespace CS2 {
 			float32 fps; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			animationsystem::CAnimEncodedFrames m_Data; // 0x20 | Schema_DeclaredClass | Size: 0xd8
+			GlobalTypes::CUtlVector< animationsystem::CAnimMovement > m_movementArray; // 0xf8 | Schema_Atomic | Size: 0x18
+			// char  m_movementArray[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimMovement > m_movementArray; // 0xf8 | Schema_Atomic | Size: 0x18
-			char  m_movementArray[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CTransform m_xInitialOffset; // 0x110 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CUtlVector< animationsystem::CAnimEventDefinition > m_eventArray; // 0x130 | Schema_Atomic | Size: 0x18
+			// char  m_eventArray[0x18]; // 0x130 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimEventDefinition > m_eventArray; // 0x130 | Schema_Atomic | Size: 0x18
-			char  m_eventArray[0x18]; // 0x130 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; // 0x148 | Schema_Atomic | Size: 0x18
+			// char  m_activityArray[0x18]; // 0x148 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; // 0x148 | Schema_Atomic | Size: 0x18
-			char  m_activityArray[0x18]; // 0x148 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< animationsystem::CAnimLocalHierarchy > m_hierarchyArray; // 0x160 | Schema_Atomic | Size: 0x18
+			// char  m_hierarchyArray[0x18]; // 0x160 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animationsystem::CAnimLocalHierarchy > m_hierarchyArray; // 0x160 | Schema_Atomic | Size: 0x18
-			char  m_hierarchyArray[0x18]; // 0x160 | Schema_Atomic | Size: 0x18
 			float32 framestalltime; // 0x178 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecRootMin; // 0x17c | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecRootMax; // 0x188 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_vecBoneWorldMin; // 0x198 | Schema_Atomic | Size: 0x18
+			// char  m_vecBoneWorldMin[0x18]; // 0x198 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vecBoneWorldMin; // 0x198 | Schema_Atomic | Size: 0x18
-			char  m_vecBoneWorldMin[0x18]; // 0x198 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_vecBoneWorldMax; // 0x1b0 | Schema_Atomic | Size: 0x18
+			// char  m_vecBoneWorldMax[0x18]; // 0x1b0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vecBoneWorldMax; // 0x1b0 | Schema_Atomic | Size: 0x18
-			char  m_vecBoneWorldMax[0x18]; // 0x1b0 | Schema_Atomic | Size: 0x18
 			animationsystem::CAnimSequenceParams m_sequenceParams; // 0x1c8 | Schema_DeclaredClass | Size: 0x8
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc, m_name) == 0x0, "m_name in CAnimDesc should be at offset 0x0");

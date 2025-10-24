@@ -16,11 +16,17 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class CAnimParamHandle;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class ScriptInfo_t  {
 		public:
 			GlobalTypes::CUtlString m_code; // 0x0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_paramsModified; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_paramsModified[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_paramsModified; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_paramsModified[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int32 > m_proxyReadParams; // 0x20 | Schema_Atomic | Size: 0x18
 			char  m_proxyReadParams[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int32 > m_proxyWriteParams; // 0x38 | Schema_Atomic | Size: 0x18

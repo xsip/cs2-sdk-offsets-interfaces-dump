@@ -15,10 +15,16 @@
 
 namespace CS2 {
 	namespace modellib {
+		class CFootTrajectory;
+	}
+}
+namespace CS2 {
+	namespace modellib {
 		class CFootTrajectories  {
 		public:
+			GlobalTypes::CUtlVector< modellib::CFootTrajectory > m_trajectories; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_trajectories[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::CFootTrajectory > m_trajectories; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_trajectories[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CFootTrajectories, m_trajectories) == 0x0, "m_trajectories in CFootTrajectories should be at offset 0x0");
 		static_assert(sizeof(CS2::modellib::CFootTrajectories) == 0x18, "CFootTrajectories size should be 0x18");

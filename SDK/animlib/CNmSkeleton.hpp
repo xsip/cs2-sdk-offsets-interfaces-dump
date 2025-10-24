@@ -22,10 +22,12 @@ namespace CS2 {
 			char  m_boneIDs[0x10]; // 0x8 | Schema_Atomic | Size: 0x10
 			// GlobalTypes::CUtlVector< int32 > m_parentIndices; // 0x18 | Schema_Atomic | Size: 0x18
 			char  m_parentIndices[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_parentSpaceReferencePose; // 0x30 | Schema_Atomic | Size: 0x18
+			// char  m_parentSpaceReferencePose[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_parentSpaceReferencePose; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_parentSpaceReferencePose[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_modelSpaceReferencePose; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_modelSpaceReferencePose[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_modelSpaceReferencePose; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_modelSpaceReferencePose[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			int32_t m_numBonesToSampleAtLowLOD; // 0x60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x24);
 			// GlobalTypes::CUtlLeanVector< animlib::NmBoneMaskSetDefinition_t > m_maskDefinitions; // 0x88 | Schema_Atomic | Size: 0x10

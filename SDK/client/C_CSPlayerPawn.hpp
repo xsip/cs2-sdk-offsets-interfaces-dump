@@ -66,8 +66,9 @@ namespace CS2 {
 			entity2::GameTick_t m_aimPunchTickBase; // 0x16fc | Schema_DeclaredClass | Size: 0x4
 			float32 m_aimPunchTickFraction; // 0x1700 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1708 | Schema_Atomic | Size: 0x18
+			// char  m_aimPunchCache[0x18]; // 0x1708 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1708 | Schema_Atomic | Size: 0x18
-			char  m_aimPunchCache[0x18]; // 0x1708 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8);
 			bool m_bInLanding; // 0x1728 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

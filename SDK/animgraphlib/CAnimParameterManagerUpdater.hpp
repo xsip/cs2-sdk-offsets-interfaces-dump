@@ -15,19 +15,27 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class CAnimParamHandle;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class CAnimParameterManagerUpdater  {
 		public:
 			S2_PAD(0x18);
+			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimParameterBase > > m_parameters; // 0x18 | Schema_Atomic | Size: 0x18
+			// char  m_parameters[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimParameterBase > > m_parameters; // 0x18 | Schema_Atomic | Size: 0x18
-			char  m_parameters[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlHashtable< AnimParamID, int32 > m_idToIndexMap; // 0x30 | Schema_Atomic | Size: 0x20
 			char  m_idToIndexMap[0x20]; // 0x30 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CUtlHashtable< CUtlString, int32 > m_nameToIndexMap; // 0x50 | Schema_Atomic | Size: 0x20
 			char  m_nameToIndexMap[0x20]; // 0x50 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_indexToHandle; // 0x70 | Schema_Atomic | Size: 0x18
+			// char  m_indexToHandle[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_indexToHandle; // 0x70 | Schema_Atomic | Size: 0x18
-			char  m_indexToHandle[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::pair< CAnimParamHandle, CAnimVariant > > m_autoResetParams; // 0x88 | Schema_Atomic | Size: 0x18
+			// char  m_autoResetParams[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::pair< CAnimParamHandle, CAnimVariant > > m_autoResetParams; // 0x88 | Schema_Atomic | Size: 0x18
-			char  m_autoResetParams[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlHashtable< CAnimParamHandle, int16 > m_autoResetMap; // 0xa0 | Schema_Atomic | Size: 0x20
 			char  m_autoResetMap[0x20]; // 0xa0 | Schema_Atomic | Size: 0x20
 			S2_PAD(0x40); // End padding

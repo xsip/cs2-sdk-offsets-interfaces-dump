@@ -15,23 +15,34 @@
 
 namespace CS2 {
 	namespace modellib {
+		class CAnimFoot;
+	}
+}
+namespace CS2 {
+	namespace modellib {
 		class CAnimSkeleton  {
 		public:
 			S2_PAD(0x10);
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_localSpaceTransforms; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_localSpaceTransforms[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_localSpaceTransforms; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_localSpaceTransforms[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_modelSpaceTransforms; // 0x28 | Schema_Atomic | Size: 0x18
+			// char  m_modelSpaceTransforms[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_modelSpaceTransforms; // 0x28 | Schema_Atomic | Size: 0x18
-			char  m_modelSpaceTransforms[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; // 0x40 | Schema_Atomic | Size: 0x18
+			// char  m_boneNames[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_boneNames[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< int32 > > m_children; // 0x58 | Schema_Atomic | Size: 0x18
+			// char  m_children[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< int32 > > m_children; // 0x58 | Schema_Atomic | Size: 0x18
-			char  m_children[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int32 > m_parents; // 0x70 | Schema_Atomic | Size: 0x18
 			char  m_parents[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::CAnimFoot > m_feet; // 0x88 | Schema_Atomic | Size: 0x18
+			// char  m_feet[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::CAnimFoot > m_feet; // 0x88 | Schema_Atomic | Size: 0x18
-			char  m_feet[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_morphNames; // 0xa0 | Schema_Atomic | Size: 0x18
+			// char  m_morphNames[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_morphNames; // 0xa0 | Schema_Atomic | Size: 0x18
-			char  m_morphNames[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int32 > m_lodBoneCounts; // 0xb8 | Schema_Atomic | Size: 0x18
 			char  m_lodBoneCounts[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 		};

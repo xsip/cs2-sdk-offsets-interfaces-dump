@@ -15,10 +15,16 @@
 
 namespace CS2 {
 	namespace modellib {
+		class CHitBoxSet;
+	}
+}
+namespace CS2 {
+	namespace modellib {
 		class CHitBoxSetList  {
 		public:
+			GlobalTypes::CUtlVector< modellib::CHitBoxSet > m_HitBoxSets; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_HitBoxSets[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::CHitBoxSet > m_HitBoxSets; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_HitBoxSets[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CHitBoxSetList, m_HitBoxSets) == 0x0, "m_HitBoxSets in CHitBoxSetList should be at offset 0x0");
 		static_assert(sizeof(CS2::modellib::CHitBoxSetList) == 0x18, "CHitBoxSetList size should be 0x18");

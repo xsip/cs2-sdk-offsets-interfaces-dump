@@ -18,8 +18,9 @@ namespace CS2 {
 		class CAnimGraphControllerBase  {
 		public:
 			S2_PAD(0x28);
+			GlobalTypes::CUtlVectorFixedGrowable< GlobalTypes::CGlobalSymbol > m_vecParamsToResetInPostGraphUpdate; // 0x28 | Schema_Atomic | Size: 0x58
+			// char  m_vecParamsToResetInPostGraphUpdate[0x58]; // 0x28 | Schema_Atomic | Size: 0x58
 			// GlobalTypes::CUtlVectorFixedGrowable< GlobalTypes::CGlobalSymbol, 8 > m_vecParamsToResetInPostGraphUpdate; // 0x28 | Schema_Atomic | Size: 0x58
-			char  m_vecParamsToResetInPostGraphUpdate[0x58]; // 0x28 | Schema_Atomic | Size: 0x58
 		};
 		static_assert(offsetof(CS2::client::CAnimGraphControllerBase, m_vecParamsToResetInPostGraphUpdate) == 0x28, "m_vecParamsToResetInPostGraphUpdate in CAnimGraphControllerBase should be at offset 0x28");
 		static_assert(sizeof(CS2::client::CAnimGraphControllerBase) == 0x80, "CAnimGraphControllerBase size should be 0x80");

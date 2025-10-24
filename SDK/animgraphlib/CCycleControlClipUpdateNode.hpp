@@ -19,11 +19,17 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class TagSpan_t;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class CCycleControlClipUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
 			S2_PAD(0x8);
+			GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_tags[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_tags[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			animationsystem::HSequence m_hSequence; // 0x7c | Schema_DeclaredClass | Size: 0x4
 			float32 m_duration; // 0x80 | Schema_Builtin | Size: 0x4

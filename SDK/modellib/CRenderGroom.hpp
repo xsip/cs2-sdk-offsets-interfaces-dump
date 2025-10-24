@@ -15,10 +15,16 @@
 
 namespace CS2 {
 	namespace modellib {
+		class RenderHairStrandInfo_t;
+	}
+}
+namespace CS2 {
+	namespace modellib {
 		class CRenderGroom  {
 		public:
+			GlobalTypes::CUtlVector< modellib::RenderHairStrandInfo_t > m_hairs; // 0x0 | Schema_Atomic | Size: 0x18
+			// char  m_hairs[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::RenderHairStrandInfo_t > m_hairs; // 0x0 | Schema_Atomic | Size: 0x18
-			char  m_hairs[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint32 > m_hairPositionOffsets; // 0x18 | Schema_Atomic | Size: 0x18
 			char  m_hairPositionOffsets[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x10);

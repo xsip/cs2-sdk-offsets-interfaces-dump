@@ -19,8 +19,9 @@ namespace CS2 {
 		class CCachedPose  {
 		public:
 			S2_PAD(0x8);
+			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_transforms; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_transforms[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_transforms; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_transforms[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_morphWeights; // 0x20 | Schema_Atomic | Size: 0x18
 			char  m_morphWeights[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			animationsystem::HSequence m_hSequence; // 0x38 | Schema_DeclaredClass | Size: 0x4

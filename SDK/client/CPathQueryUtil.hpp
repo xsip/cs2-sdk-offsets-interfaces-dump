@@ -19,8 +19,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x10);
 			GlobalTypes::CTransform m_PathToEntityTransform; // 0x10 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_vecPathSamplePositions; // 0x30 | Schema_Atomic | Size: 0x18
+			// char  m_vecPathSamplePositions[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vecPathSamplePositions; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_vecPathSamplePositions[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_vecPathSampleParameters; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_vecPathSampleParameters[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_vecPathSampleDistances; // 0x60 | Schema_Atomic | Size: 0x18

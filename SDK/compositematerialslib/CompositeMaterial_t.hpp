@@ -15,6 +15,11 @@
 
 namespace CS2 {
 	namespace compositematerialslib {
+		class GeneratedTextureHandle_t;
+	}
+}
+namespace CS2 {
+	namespace compositematerialslib {
 		class CompositeMaterial_t  {
 		public:
 			S2_PAD(0x8);
@@ -23,8 +28,9 @@ namespace CS2 {
 			S2_PAD(0x30);
 			GlobalTypes::KeyValues3 m_FinalKVs; // 0x58 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x18);
+			GlobalTypes::CUtlVector< compositematerialslib::GeneratedTextureHandle_t > m_vecGeneratedTextures; // 0x80 | Schema_Atomic | Size: 0x18
+			// char  m_vecGeneratedTextures[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< compositematerialslib::GeneratedTextureHandle_t > m_vecGeneratedTextures; // 0x80 | Schema_Atomic | Size: 0x18
-			char  m_vecGeneratedTextures[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterial_t, m_TargetKVs) == 0x8, "m_TargetKVs in CompositeMaterial_t should be at offset 0x8");

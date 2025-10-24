@@ -18,10 +18,12 @@ namespace CS2 {
 	namespace modellib {
 		class CBoneConstraintRbf : public CS2::modellib::CBoneConstraintBase {
 		public:
+			GlobalTypes::CUtlVector< GlobalTypes::pair< CUtlString, uint32 > > m_inputBones; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_inputBones[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::pair< CUtlString, uint32 > > m_inputBones; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_inputBones[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::pair< CUtlString, uint32 > > m_outputBones; // 0x38 | Schema_Atomic | Size: 0x18
+			// char  m_outputBones[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::pair< CUtlString, uint32 > > m_outputBones; // 0x38 | Schema_Atomic | Size: 0x18
-			char  m_outputBones[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x78); // End padding
 		};
 		static_assert(offsetof(CS2::modellib::CBoneConstraintRbf, m_inputBones) == 0x20, "m_inputBones in CBoneConstraintRbf should be at offset 0x20");

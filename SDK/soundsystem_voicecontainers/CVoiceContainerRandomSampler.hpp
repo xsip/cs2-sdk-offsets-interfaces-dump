@@ -24,8 +24,9 @@ namespace CS2 {
 			float32 m_flMaxLength; // 0xc4 | Schema_Builtin | Size: 0x4
 			int32_t m_nNumDelayVariations; // 0xc8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_grainResources; // 0xd0 | Schema_Atomic | Size: 0x18
+			// char  m_grainResources[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_grainResources; // 0xd0 | Schema_Atomic | Size: 0x18
-			char  m_grainResources[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0xf8); // End padding
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler, m_flAmplitude) == 0xB8, "m_flAmplitude in CVoiceContainerRandomSampler should be at offset 0xB8");

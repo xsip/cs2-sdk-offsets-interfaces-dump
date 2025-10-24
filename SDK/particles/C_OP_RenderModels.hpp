@@ -24,6 +24,12 @@
 
 namespace CS2 {
 	namespace particles {
+		class ModelReference_t;
+		class MaterialVariable_t;
+	}
+}
+namespace CS2 {
+	namespace particles {
 		class C_OP_RenderModels : public CS2::particles::CParticleFunctionRenderer {
 		public:
 			bool m_bOnlyRenderInEffectsBloomPass; // 0x220 | Schema_Builtin | Size: 0x1
@@ -31,8 +37,9 @@ namespace CS2 {
 			bool m_bUseMixedResolutionRendering; // 0x222 | Schema_Builtin | Size: 0x1
 			bool m_bOnlyRenderInEffecsGameOverlay; // 0x223 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< particles::ModelReference_t > m_ModelList; // 0x228 | Schema_Atomic | Size: 0x18
+			// char  m_ModelList[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< particles::ModelReference_t > m_ModelList; // 0x228 | Schema_Atomic | Size: 0x18
-			char  m_ModelList[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
 			particles::ParticleAttributeIndex_t m_nBodyGroupField; // 0x240 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nSubModelField; // 0x244 | Schema_DeclaredClass | Size: 0x4
 			bool m_bIgnoreNormal; // 0x248 | Schema_Builtin | Size: 0x1
@@ -68,8 +75,9 @@ namespace CS2 {
 			bool m_bOverrideTranslucentMaterials; // 0x1a60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			particleslib::CPerParticleFloatInput m_nSkin; // 0x1a68 | Schema_DeclaredClass | Size: 0x170
+			GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x1bd8 | Schema_Atomic | Size: 0x18
+			// char  m_MaterialVars[0x18]; // 0x1bd8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x1bd8 | Schema_Atomic | Size: 0x18
-			char  m_MaterialVars[0x18]; // 0x1bd8 | Schema_Atomic | Size: 0x18
 			particleslib::CPerParticleFloatInput m_flRenderFilter; // 0x1bf0 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flManualModelSelection; // 0x1d60 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleModelInput m_modelInput; // 0x1ed0 | Schema_DeclaredClass | Size: 0x60

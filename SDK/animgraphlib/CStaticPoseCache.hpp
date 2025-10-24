@@ -15,11 +15,17 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class CCachedPose;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class CStaticPoseCache  {
 		public:
 			S2_PAD(0x10);
+			GlobalTypes::CUtlVector< animgraphlib::CCachedPose > m_poses; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_poses[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::CCachedPose > m_poses; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_poses[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			int32_t m_nBoneCount; // 0x28 | Schema_Builtin | Size: 0x4
 			int32_t m_nMorphCount; // 0x2c | Schema_Builtin | Size: 0x4
 		};

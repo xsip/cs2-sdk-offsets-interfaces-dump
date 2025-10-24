@@ -141,8 +141,9 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::QAngle m_vecAngVelocity; // 0x5a8 | Schema_Atomic | Size: 0xc
 			int32_t m_DataChangeEventRef; // 0x5b4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_dependencies; // 0x5b8 | Schema_Atomic | Size: 0x18
+			// char  m_dependencies[0x18]; // 0x5b8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_dependencies; // 0x5b8 | Schema_Atomic | Size: 0x18
-			char  m_dependencies[0x18]; // 0x5b8 | Schema_Atomic | Size: 0x18
 			int32_t m_nCreationTick; // 0x5d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x9);
 			bool m_bAnimTimeChanged; // 0x5dd | Schema_Builtin | Size: 0x1

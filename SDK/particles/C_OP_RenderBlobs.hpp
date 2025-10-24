@@ -17,6 +17,11 @@
 
 namespace CS2 {
 	namespace particles {
+		class MaterialVariable_t;
+	}
+}
+namespace CS2 {
+	namespace particles {
 		class C_OP_RenderBlobs : public CS2::particles::CParticleFunctionRenderer {
 		public:
 			particleslib::CParticleCollectionRendererFloatInput m_cubeWidth; // 0x220 | Schema_DeclaredClass | Size: 0x170
@@ -26,8 +31,9 @@ namespace CS2 {
 			uint32_t m_nIndexCountKb; // 0x674 | Schema_Builtin | Size: 0x4
 			int32_t m_nScaleCP; // 0x678 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x680 | Schema_Atomic | Size: 0x18
+			// char  m_MaterialVars[0x18]; // 0x680 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x680 | Schema_Atomic | Size: 0x18
-			char  m_MaterialVars[0x18]; // 0x680 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x6b0 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x6b0 | Schema_Atomic | Size: 0x8

@@ -14,6 +14,13 @@
 
 
 namespace CS2 {
+	namespace modellib {
+		class VPhysXBodyPart_t;
+		class PhysShapeMarkup_t;
+		class VPhysXConstraint2_t;
+		class VPhysXJoint_t;
+		class VPhysXCollisionAttributes_t;
+	}
 	namespace physicslib {
 		class PhysFeModelDesc_t;
 	}
@@ -27,31 +34,39 @@ namespace CS2 {
 			S2_PAD(0x4);
 			// GlobalTypes::CUtlVector< uint32 > m_bonesHash; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_bonesHash[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; // 0x20 | Schema_Atomic | Size: 0x18
+			// char  m_boneNames[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; // 0x20 | Schema_Atomic | Size: 0x18
-			char  m_boneNames[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint16 > m_indexNames; // 0x38 | Schema_Atomic | Size: 0x18
 			char  m_indexNames[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint16 > m_indexHash; // 0x50 | Schema_Atomic | Size: 0x18
 			char  m_indexHash[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::matrix3x4a_t > m_bindPose; // 0x68 | Schema_Atomic | Size: 0x18
+			// char  m_bindPose[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::matrix3x4a_t > m_bindPose; // 0x68 | Schema_Atomic | Size: 0x18
-			char  m_bindPose[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::VPhysXBodyPart_t > m_parts; // 0x80 | Schema_Atomic | Size: 0x18
+			// char  m_parts[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::VPhysXBodyPart_t > m_parts; // 0x80 | Schema_Atomic | Size: 0x18
-			char  m_parts[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::PhysShapeMarkup_t > m_shapeMarkups; // 0x98 | Schema_Atomic | Size: 0x18
+			// char  m_shapeMarkups[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::PhysShapeMarkup_t > m_shapeMarkups; // 0x98 | Schema_Atomic | Size: 0x18
-			char  m_shapeMarkups[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::VPhysXConstraint2_t > m_constraints2; // 0xb0 | Schema_Atomic | Size: 0x18
+			// char  m_constraints2[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::VPhysXConstraint2_t > m_constraints2; // 0xb0 | Schema_Atomic | Size: 0x18
-			char  m_constraints2[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::VPhysXJoint_t > m_joints; // 0xc8 | Schema_Atomic | Size: 0x18
+			// char  m_joints[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::VPhysXJoint_t > m_joints; // 0xc8 | Schema_Atomic | Size: 0x18
-			char  m_joints[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			physicslib::PhysFeModelDesc_t* m_pFeModel; // 0xe0 | Schema_Ptr | Size: 0x8
 			// GlobalTypes::CUtlVector< uint16 > m_boneParents; // 0xe8 | Schema_Atomic | Size: 0x18
 			char  m_boneParents[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint32 > m_surfacePropertyHashes; // 0x100 | Schema_Atomic | Size: 0x18
 			char  m_surfacePropertyHashes[0x18]; // 0x100 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::VPhysXCollisionAttributes_t > m_collisionAttributes; // 0x118 | Schema_Atomic | Size: 0x18
+			// char  m_collisionAttributes[0x18]; // 0x118 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::VPhysXCollisionAttributes_t > m_collisionAttributes; // 0x118 | Schema_Atomic | Size: 0x18
-			char  m_collisionAttributes[0x18]; // 0x118 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_debugPartNames; // 0x130 | Schema_Atomic | Size: 0x18
+			// char  m_debugPartNames[0x18]; // 0x130 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_debugPartNames; // 0x130 | Schema_Atomic | Size: 0x18
-			char  m_debugPartNames[0x18]; // 0x130 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_embeddedKeyvalues; // 0x148 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::VPhysXAggregateData_t, m_nFlags) == 0x0, "m_nFlags in VPhysXAggregateData_t should be at offset 0x0");

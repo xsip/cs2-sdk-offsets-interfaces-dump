@@ -17,7 +17,11 @@
 
 namespace CS2 {
 	namespace modellib {
+		class PermModelExtPart_t;
+		class MaterialGroup_t;
+		class ModelBoneFlexDriver_t;
 		class CModelConfigList;
+		class PermModelDataAnimatedMaterialAttribute_t;
 	}
 }
 namespace CS2 {
@@ -26,10 +30,12 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			modellib::PermModelInfo_t m_modelInfo; // 0x8 | Schema_DeclaredClass | Size: 0x58
+			GlobalTypes::CUtlVector< modellib::PermModelExtPart_t > m_ExtParts; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_ExtParts[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::PermModelExtPart_t > m_ExtParts; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_ExtParts[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCRenderMesh > > m_refMeshes; // 0x78 | Schema_Atomic | Size: 0x18
+			// char  m_refMeshes[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCRenderMesh > > m_refMeshes; // 0x78 | Schema_Atomic | Size: 0x18
-			char  m_refMeshes[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint64 > m_refMeshGroupMasks; // 0x90 | Schema_Atomic | Size: 0x18
 			char  m_refMeshGroupMasks[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint64 > m_refPhysGroupMasks; // 0xa8 | Schema_Atomic | Size: 0x18
@@ -38,33 +44,43 @@ namespace CS2 {
 			char  m_refLODGroupMasks[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_lodGroupSwitchDistances; // 0xd8 | Schema_Atomic | Size: 0x18
 			char  m_lodGroupSwitchDistances[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCPhysAggregateData > > m_refPhysicsData; // 0xf0 | Schema_Atomic | Size: 0x18
+			// char  m_refPhysicsData[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCPhysAggregateData > > m_refPhysicsData; // 0xf0 | Schema_Atomic | Size: 0x18
-			char  m_refPhysicsData[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCPhysAggregateData > > m_refPhysicsHitboxData; // 0x108 | Schema_Atomic | Size: 0x18
+			// char  m_refPhysicsHitboxData[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCPhysAggregateData > > m_refPhysicsHitboxData; // 0x108 | Schema_Atomic | Size: 0x18
-			char  m_refPhysicsHitboxData[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCAnimationGroup > > m_refAnimGroups; // 0x120 | Schema_Atomic | Size: 0x18
+			// char  m_refAnimGroups[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCAnimationGroup > > m_refAnimGroups; // 0x120 | Schema_Atomic | Size: 0x18
-			char  m_refAnimGroups[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCSequenceGroupData > > m_refSequenceGroups; // 0x138 | Schema_Atomic | Size: 0x18
+			// char  m_refSequenceGroups[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCSequenceGroupData > > m_refSequenceGroups; // 0x138 | Schema_Atomic | Size: 0x18
-			char  m_refSequenceGroups[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_meshGroups; // 0x150 | Schema_Atomic | Size: 0x18
+			// char  m_meshGroups[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_meshGroups; // 0x150 | Schema_Atomic | Size: 0x18
-			char  m_meshGroups[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::MaterialGroup_t > m_materialGroups; // 0x168 | Schema_Atomic | Size: 0x18
+			// char  m_materialGroups[0x18]; // 0x168 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::MaterialGroup_t > m_materialGroups; // 0x168 | Schema_Atomic | Size: 0x18
-			char  m_materialGroups[0x18]; // 0x168 | Schema_Atomic | Size: 0x18
 			uint64_t m_nDefaultMeshGroupMask; // 0x180 | Schema_Builtin | Size: 0x8
 			modellib::ModelSkeletonData_t m_modelSkeleton; // 0x188 | Schema_DeclaredClass | Size: 0xa8
 			// GlobalTypes::CUtlVector< int16 > m_remappingTable; // 0x230 | Schema_Atomic | Size: 0x18
 			char  m_remappingTable[0x18]; // 0x230 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint16 > m_remappingTableStarts; // 0x248 | Schema_Atomic | Size: 0x18
 			char  m_remappingTableStarts[0x18]; // 0x248 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::ModelBoneFlexDriver_t > m_boneFlexDrivers; // 0x260 | Schema_Atomic | Size: 0x18
+			// char  m_boneFlexDrivers[0x18]; // 0x260 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::ModelBoneFlexDriver_t > m_boneFlexDrivers; // 0x260 | Schema_Atomic | Size: 0x18
-			char  m_boneFlexDrivers[0x18]; // 0x260 | Schema_Atomic | Size: 0x18
 			modellib::CModelConfigList* m_pModelConfigList; // 0x278 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_BodyGroupsHiddenInTools; // 0x280 | Schema_Atomic | Size: 0x18
+			// char  m_BodyGroupsHiddenInTools[0x18]; // 0x280 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_BodyGroupsHiddenInTools; // 0x280 | Schema_Atomic | Size: 0x18
-			char  m_BodyGroupsHiddenInTools[0x18]; // 0x280 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCModel > > m_refAnimIncludeModels; // 0x298 | Schema_Atomic | Size: 0x18
+			// char  m_refAnimIncludeModels[0x18]; // 0x298 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCModel > > m_refAnimIncludeModels; // 0x298 | Schema_Atomic | Size: 0x18
-			char  m_refAnimIncludeModels[0x18]; // 0x298 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< modellib::PermModelDataAnimatedMaterialAttribute_t > m_AnimatedMaterialAttributes; // 0x2b0 | Schema_Atomic | Size: 0x18
+			// char  m_AnimatedMaterialAttributes[0x18]; // 0x2b0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::PermModelDataAnimatedMaterialAttribute_t > m_AnimatedMaterialAttributes; // 0x2b0 | Schema_Atomic | Size: 0x18
-			char  m_AnimatedMaterialAttributes[0x18]; // 0x2b0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::PermModelData_t, m_name) == 0x0, "m_name in PermModelData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::PermModelData_t, m_modelInfo) == 0x8, "m_modelInfo in PermModelData_t should be at offset 0x8");

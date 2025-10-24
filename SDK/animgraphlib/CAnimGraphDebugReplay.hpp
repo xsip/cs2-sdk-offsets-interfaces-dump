@@ -19,8 +19,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x40);
 			GlobalTypes::CUtlString m_animGraphFileName; // 0x40 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimReplayFrame > > m_frameList; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_frameList[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimReplayFrame > > m_frameList; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_frameList[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			int32_t m_startIndex; // 0x60 | Schema_Builtin | Size: 0x4
 			int32_t m_writeIndex; // 0x64 | Schema_Builtin | Size: 0x4
 			int32_t m_frameCount; // 0x68 | Schema_Builtin | Size: 0x4

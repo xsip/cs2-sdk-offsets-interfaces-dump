@@ -23,8 +23,9 @@ namespace CS2 {
 			int32_t m_nType; // 0x24 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CBufferString m_szGrouping; // 0x28 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CBufferString m_szDescription; // 0x38 | Schema_Atomic | Size: 0x10
+			GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_szElementNameArray; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_szElementNameArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_szElementNameArray; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_szElementNameArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< int32 > m_nElementIndexArray; // 0x60 | Schema_Atomic | Size: 0x18
 			char  m_nElementIndexArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint32 > m_nElementMaskArray; // 0x78 | Schema_Atomic | Size: 0x18

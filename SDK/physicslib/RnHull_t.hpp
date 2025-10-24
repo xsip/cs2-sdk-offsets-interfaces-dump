@@ -16,6 +16,10 @@
 
 namespace CS2 {
 	namespace physicslib {
+		class RnVertex_t;
+		class RnHalfEdge_t;
+		class RnFace_t;
+		class RnPlane_t;
 		class CRegionSVM;
 	}
 }
@@ -31,16 +35,21 @@ namespace CS2 {
 			float32 m_flVolume; // 0x64 | Schema_Builtin | Size: 0x4
 			float32 m_flSurfaceArea; // 0x68 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< physicslib::RnVertex_t > m_Vertices; // 0x70 | Schema_Atomic | Size: 0x18
+			// char  m_Vertices[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< physicslib::RnVertex_t > m_Vertices; // 0x70 | Schema_Atomic | Size: 0x18
-			char  m_Vertices[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_VertexPositions; // 0x88 | Schema_Atomic | Size: 0x18
+			// char  m_VertexPositions[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_VertexPositions; // 0x88 | Schema_Atomic | Size: 0x18
-			char  m_VertexPositions[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< physicslib::RnHalfEdge_t > m_Edges; // 0xa0 | Schema_Atomic | Size: 0x18
+			// char  m_Edges[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< physicslib::RnHalfEdge_t > m_Edges; // 0xa0 | Schema_Atomic | Size: 0x18
-			char  m_Edges[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< physicslib::RnFace_t > m_Faces; // 0xb8 | Schema_Atomic | Size: 0x18
+			// char  m_Faces[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< physicslib::RnFace_t > m_Faces; // 0xb8 | Schema_Atomic | Size: 0x18
-			char  m_Faces[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< physicslib::RnPlane_t > m_FacePlanes; // 0xd0 | Schema_Atomic | Size: 0x18
+			// char  m_FacePlanes[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< physicslib::RnPlane_t > m_FacePlanes; // 0xd0 | Schema_Atomic | Size: 0x18
-			char  m_FacePlanes[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
 			uint32_t m_nFlags; // 0xe8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			physicslib::CRegionSVM* m_pRegionSVM; // 0xf0 | Schema_Ptr | Size: 0x8

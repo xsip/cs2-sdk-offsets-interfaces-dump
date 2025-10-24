@@ -41,8 +41,9 @@ namespace CS2 {
 			GlobalTypes::CHandle< client::CBasePlayerController > m_hSplitOwner; // 0x6c4 | Schema_Atomic | Size: 0x4
 			// char  m_hSplitOwner[0x4]; // 0x6c4 | Schema_Atomic | Size: 0x4
 			// client::CHandle< client::CBasePlayerController > m_hSplitOwner; // 0x6c4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlVector< GlobalTypes::CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x6c8 | Schema_Atomic | Size: 0x18
+			// char  m_hSplitScreenPlayers[0x18]; // 0x6c8 | Schema_Atomic | Size: 0x18
 			// client::CUtlVector< client.dll::CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x6c8 | Schema_Atomic | Size: 0x18
-			char  m_hSplitScreenPlayers[0x18]; // 0x6c8 | Schema_Atomic | Size: 0x18
 			bool m_bIsHLTV; // 0x6e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			client::PlayerConnectedState m_iConnected; // 0x6e4 | Schema_DeclaredEnum | Size: 0x4

@@ -16,13 +16,21 @@
 
 namespace CS2 {
 	namespace pulse_runtime_lib {
+		class PulseRuntimeVarIndex_t;
+		class PulseRuntimeBlackboardReferenceIndex_t;
+	}
+}
+namespace CS2 {
+	namespace pulse_runtime_lib {
 		class PulseObservableBoolExpression_t  {
 		public:
 			pulse_runtime_lib::CPulse_OutflowConnection m_EvaluateConnection; // 0x0 | Schema_DeclaredClass | Size: 0x48
+			GlobalTypes::CUtlVector< pulse_runtime_lib::PulseRuntimeVarIndex_t > m_DependentObservableVars; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_DependentObservableVars[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< pulse_runtime_lib::PulseRuntimeVarIndex_t > m_DependentObservableVars; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_DependentObservableVars[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t > m_DependentObservableBlackboardReferences; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_DependentObservableBlackboardReferences[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t > m_DependentObservableBlackboardReferences; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_DependentObservableBlackboardReferences[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseObservableBoolExpression_t, m_EvaluateConnection) == 0x0, "m_EvaluateConnection in PulseObservableBoolExpression_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseObservableBoolExpression_t, m_DependentObservableVars) == 0x48, "m_DependentObservableVars in PulseObservableBoolExpression_t should be at offset 0x48");

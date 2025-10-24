@@ -29,8 +29,9 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeVector m_vUpDirection; // 0x228 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_UpDirectionSpace; // 0x268 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_DefaultPathInWorldSpace; // 0x2a8 | Schema_Atomic | Size: 0x40
+			GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVector > m_DefaultPath; // 0x2e8 | Schema_Atomic | Size: 0x18
+			// char  m_DefaultPath[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVector > m_DefaultPath; // 0x2e8 | Schema_Atomic | Size: 0x18
-			char  m_DefaultPath[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_PathName) == 0xA0, "m_PathName in CSmartPropElement_PlaceOnPath should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_flSpacing) == 0xA8, "m_flSpacing in CSmartPropElement_PlaceOnPath should be at offset 0xA8");

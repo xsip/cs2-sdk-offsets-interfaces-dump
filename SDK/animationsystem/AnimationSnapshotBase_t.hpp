@@ -26,8 +26,9 @@ namespace CS2 {
 			S2_PAD(0x7);
 			// GlobalTypes::CUtlVector< uint32 > m_boneSetupMask; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_boneSetupMask[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::matrix3x4a_t > m_boneTransforms; // 0x60 | Schema_Atomic | Size: 0x18
+			// char  m_boneTransforms[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::matrix3x4a_t > m_boneTransforms; // 0x60 | Schema_Atomic | Size: 0x18
-			char  m_boneTransforms[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< float32 > m_flexControllers; // 0x78 | Schema_Atomic | Size: 0x18
 			char  m_flexControllers[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			animationsystem::AnimationSnapshotType_t m_SnapshotType; // 0x90 | Schema_DeclaredEnum | Size: 0x4

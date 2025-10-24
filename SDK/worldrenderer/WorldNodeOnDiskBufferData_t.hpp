@@ -14,13 +14,19 @@
 
 
 namespace CS2 {
+	namespace modellib {
+		class RenderInputLayoutField_t;
+	}
+}
+namespace CS2 {
 	namespace worldrenderer {
 		class WorldNodeOnDiskBufferData_t  {
 		public:
 			int32_t m_nElementCount; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nElementSizeInBytes; // 0x4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_inputLayoutFields[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_inputLayoutFields[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< uint8 > m_pData; // 0x20 | Schema_Atomic | Size: 0x18
 			char  m_pData[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};

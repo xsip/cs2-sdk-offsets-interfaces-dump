@@ -24,8 +24,9 @@ namespace CS2 {
 			char  m_flBoneWeightArray[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			float32 m_flDefaultMorphCtrlWeight; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< GlobalTypes::pair< CBufferString, float32 > > m_morphCtrlWeightArray; // 0x48 | Schema_Atomic | Size: 0x18
+			// char  m_morphCtrlWeightArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::pair< CBufferString, float32 > > m_morphCtrlWeightArray; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_morphCtrlWeightArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CSeqBoneMaskList, m_sName) == 0x0, "m_sName in CSeqBoneMaskList should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqBoneMaskList, m_nLocalBoneArray) == 0x10, "m_nLocalBoneArray in CSeqBoneMaskList should be at offset 0x10");

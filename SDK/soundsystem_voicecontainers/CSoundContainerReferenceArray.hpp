@@ -19,8 +19,9 @@ namespace CS2 {
 		public:
 			bool m_bUseReference; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_sounds; // 0x8 | Schema_Atomic | Size: 0x18
+			// char  m_sounds[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_sounds; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_sounds[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< CVoiceContainerBase >* m_pSounds; // 0x20 | Schema_Atomic | Size: 0x18
 			char  m_pSounds[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};

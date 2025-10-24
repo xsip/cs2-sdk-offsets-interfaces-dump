@@ -23,8 +23,9 @@ namespace CS2 {
 			S2_PAD(0x8);
 			uint32_t m_hShardHandle; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
+			GlobalTypes::CUtlVector< GlobalTypes::Vector2D > m_vecPanelVertices; // 0x10 | Schema_Atomic | Size: 0x18
+			// char  m_vecPanelVertices[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::Vector2D > m_vecPanelVertices; // 0x10 | Schema_Atomic | Size: 0x18
-			char  m_vecPanelVertices[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector2D m_vLocalPanelSpaceOrigin; // 0x28 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x30 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0x30 | Schema_Atomic | Size: 0x8

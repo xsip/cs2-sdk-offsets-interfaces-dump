@@ -17,12 +17,18 @@
 
 namespace CS2 {
 	namespace animgraphlib {
+		class LookAtBone_t;
+	}
+}
+namespace CS2 {
+	namespace animgraphlib {
 		class LookAtOpFixedSettings_t  {
 		public:
 			modellib::CAnimAttachment m_attachment; // 0x0 | Schema_DeclaredClass | Size: 0x80
 			animgraphlib::CAnimInputDamping m_damping; // 0x80 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CUtlVector< animgraphlib::LookAtBone_t > m_bones; // 0x98 | Schema_Atomic | Size: 0x18
+			// char  m_bones[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< animgraphlib::LookAtBone_t > m_bones; // 0x98 | Schema_Atomic | Size: 0x18
-			char  m_bones[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 			float32 m_flYawLimit; // 0xb0 | Schema_Builtin | Size: 0x4
 			float32 m_flPitchLimit; // 0xb4 | Schema_Builtin | Size: 0x4
 			float32 m_flHysteresisInnerAngle; // 0xb8 | Schema_Builtin | Size: 0x4

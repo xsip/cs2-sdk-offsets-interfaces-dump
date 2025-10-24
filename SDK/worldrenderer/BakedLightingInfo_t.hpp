@@ -15,6 +15,11 @@
 
 namespace CS2 {
 	namespace worldrenderer {
+		class BakedShadowAssignment_t;
+	}
+}
+namespace CS2 {
+	namespace worldrenderer {
 		class BakedLightingInfo_t  {
 		public:
 			uint32_t m_nLightmapVersionNumber; // 0x0 | Schema_Builtin | Size: 0x4
@@ -27,10 +32,12 @@ namespace CS2 {
 			uint8_t m_nChartPackIterations; // 0x14 | Schema_Builtin | Size: 0x1
 			uint8_t m_nVradQuality; // 0x15 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
+			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCTextureBase > > m_lightMaps; // 0x18 | Schema_Atomic | Size: 0x18
+			// char  m_lightMaps[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCTextureBase > > m_lightMaps; // 0x18 | Schema_Atomic | Size: 0x18
-			char  m_lightMaps[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< worldrenderer::BakedShadowAssignment_t > m_bakedShadows; // 0x30 | Schema_Atomic | Size: 0x18
+			// char  m_bakedShadows[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::BakedShadowAssignment_t > m_bakedShadows; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_bakedShadows[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_nLightmapVersionNumber) == 0x0, "m_nLightmapVersionNumber in BakedLightingInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_nLightmapGameVersionNumber) == 0x4, "m_nLightmapGameVersionNumber in BakedLightingInfo_t should be at offset 0x4");

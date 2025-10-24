@@ -27,8 +27,9 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nCursorsTerminatedDueToMaxInstructions; // 0x138 | Schema_Builtin | Size: 0x4
 			int32_t m_nNextValidateIndex; // 0x13c | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Tracepoints; // 0x140 | Schema_Atomic | Size: 0x18
+			// char  m_Tracepoints[0x18]; // 0x140 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Tracepoints; // 0x140 | Schema_Atomic | Size: 0x18
-			char  m_Tracepoints[0x18]; // 0x140 | Schema_Atomic | Size: 0x18
 			bool m_bTestYesOrNoPath; // 0x158 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

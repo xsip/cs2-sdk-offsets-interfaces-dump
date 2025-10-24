@@ -21,12 +21,18 @@
 
 namespace CS2 {
 	namespace particles {
+		class MaterialVariable_t;
+	}
+}
+namespace CS2 {
+	namespace particles {
 		class C_OP_RenderMaterialProxy : public CS2::particles::CParticleFunctionRenderer {
 		public:
 			int32_t m_nMaterialControlPoint; // 0x220 | Schema_Builtin | Size: 0x4
 			particles::MaterialProxyType_t m_nProxyType; // 0x224 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x228 | Schema_Atomic | Size: 0x18
+			// char  m_MaterialVars[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; // 0x228 | Schema_Atomic | Size: 0x18
-			char  m_MaterialVars[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hOverrideMaterial; // 0x240 | Schema_Atomic | Size: 0x8
 			char  m_hOverrideMaterial[0x8]; // 0x240 | Schema_Atomic | Size: 0x8
 			particleslib::CParticleCollectionFloatInput m_flMaterialOverrideEnabled; // 0x248 | Schema_DeclaredClass | Size: 0x170

@@ -30,8 +30,9 @@ namespace CS2 {
 			client::PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; // 0x61c | Schema_DeclaredEnum | Size: 0x4
 			// GlobalTypes::CUtlVector< uint32 > m_createdSpawnGroupHandles; // 0x620 | Schema_Atomic | Size: 0x18
 			char  m_createdSpawnGroupHandles[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_SpawnedEntityHandles; // 0x638 | Schema_Atomic | Size: 0x18
+			// char  m_SpawnedEntityHandles[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_SpawnedEntityHandles; // 0x638 | Schema_Atomic | Size: 0x18
-			char  m_SpawnedEntityHandles[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
 			GlobalTypes::HSCRIPT m_ScriptSpawnCallback; // 0x650 | Schema_Atomic | Size: 0x8
 			GlobalTypes::HSCRIPT m_ScriptCallbackScope; // 0x658 | Schema_Atomic | Size: 0x8
 		};

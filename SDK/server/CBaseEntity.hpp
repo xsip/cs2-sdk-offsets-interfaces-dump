@@ -27,6 +27,7 @@
 namespace CS2 {
 	namespace server {
 		class CBodyComponent;
+		class ResponseContext_t;
 		class CCollisionProperty;
 		class CPulseGraphInstance_ServerEntity;
 	}
@@ -52,8 +53,9 @@ namespace CS2 {
 			char  m_isSteadyState[0x8]; // 0x278 | Schema_Atomic | Size: 0x8
 			float32 m_lastNetworkChange; // 0x280 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
+			GlobalTypes::CUtlVector< server::ResponseContext_t > m_ResponseContexts; // 0x290 | Schema_Atomic | Size: 0x18
+			// char  m_ResponseContexts[0x18]; // 0x290 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlVector< server::ResponseContext_t > m_ResponseContexts; // 0x290 | Schema_Atomic | Size: 0x18
-			char  m_ResponseContexts[0x18]; // 0x290 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszResponseContext; // 0x2a8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x20);
 			int32_t m_iHealth; // 0x2d0 | Schema_Builtin | Size: 0x4
