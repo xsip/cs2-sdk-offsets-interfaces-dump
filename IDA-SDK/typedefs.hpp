@@ -1,64 +1,69 @@
 #pragma once
 
-typedef float float32;
-typedef double float64;
-typedef char Vector2D[0x8];
-typedef char CUtlString[0x8];
-typedef char CGlobalSymbol[0x8];
-typedef char CUtlBinaryBlock[0x10];
-typedef char CTransform[0x20];
-typedef char Color[0x4];
-typedef char Vector[0xc];
-typedef char CAnimVariant[0x11];
-typedef char QAngle[0xc];
-typedef char KeyValues3[0x10];
-typedef char CColorGradient[0x18];
-typedef char Vector4D[0x10];
-typedef char matrix3x4_t[0x30];
-typedef char CEntityIndex[0x4];
-typedef char matrix3x4a_t[0x30];
-typedef char CBufferString[0x10];
-typedef char CModelAnimNameWithDeltas[0x8];
-typedef char CPiecewiseCurve[0x40];
-typedef char PulseSymbol_t[0x10];
-typedef char CKV3MemberNameSet[0x10];
-typedef char CPulseValueFullType[0x18];
-typedef char CKV3MemberNameWithStorage[0x38];
-typedef char CGlobalSymbolCaseSensitive[0x8];
-typedef char HSCRIPT[0x8];
-typedef char CUtlStringToken[0x4];
-typedef char CUtlSymbolLarge[0x8];
-typedef char VectorWS[0xc];
-typedef char CNetworkedQuantizedFloat[0x8];
-typedef char CTransformWS[0x20];
-typedef char CEntityHandle[0x4];
-typedef char WorldGroupId_t[0x4];
-typedef char CSplitScreenSlot[0x4];
-typedef char CAttachmentNameSymbolWithStorage[0x20];
-typedef char CUtlSymbol[0x2];
-typedef char CPlayerSlot[0x4];
-typedef char CAnimGraphTagRef[0x18];
-typedef char CParticleNamedValueRef[0x40];
-typedef char CResourceName[0xe0];
-typedef char Range_t[0x8];
-typedef char CUtlVectorSIMDPaddedVector[0x18];
-typedef char fltx4[0x10];
-typedef char CSmartPropAttributeBool[0x40];
-typedef char CSmartPropAttributeVector[0x40];
-typedef char CSmartPropAttributeAngles[0x40];
-typedef char CSmartPropAttributeFloat[0x40];
-typedef char CSmartPropAttributeInt[0x40];
-typedef char CSmartPropAttributeVector2D[0x40];
-typedef char CSmartPropAttributeModelName[0x40];
-typedef char CSmartPropAttributeMaterialGroup[0x40];
-typedef char CSmartPropAttributeSurfaceProperty[0x40];
-typedef char CSmartPropAttributeColor[0x40];
-typedef char CSmartPropVariableComparison[0x20];
-typedef char CSmartPropAttributeMaterialName[0x40];
-typedef char CSmartPropAttributeStateName[0x40];
-typedef char CSmartPropAttributeVariableValue[0x40];
-typedef char CModelMaterialGroupName[0x8];
-typedef char RotationVector[0xc];
-typedef char RadianEuler[0xc];
-typedef char DegreeEuler[0xc];
-typedef char CUtlStringTokenWithStorage[0x18];;
+typedef char Vector2D[0x8]; //  Schema_Atomic
+typedef char CUtlString[0x8]; //  Schema_Atomic
+typedef char CGlobalSymbol[0x8]; //  Schema_Atomic
+typedef char CUtlBinaryBlock[0x10]; //  Schema_Atomic
+typedef char CTransform[0x20]; //  Schema_Atomic
+typedef char VectorAligned[0x10]; //  Schema_Atomic
+typedef char Color[0x4]; //  Schema_Atomic
+typedef char Vector[0xc]; //  Schema_Atomic
+typedef char Quaternion[0x10]; //  Schema_Atomic
+typedef char CAnimVariant[0x11]; //  Schema_Atomic
+typedef char QAngle[0xc]; //  Schema_Atomic
+typedef char KeyValues3[0x10]; //  Schema_Atomic
+typedef char CColorGradient[0x18]; //  Schema_Atomic
+typedef char Vector4D[0x10]; //  Schema_Atomic
+typedef char matrix3x4_t[0x30]; //  Schema_Atomic
+typedef char CEntityIndex[0x4]; //  Schema_Atomic
+typedef char matrix3x4a_t[0x30]; //  Schema_Atomic
+typedef char CBufferString[0x10]; //  Schema_Atomic
+typedef char CModelAnimNameWithDeltas[0x8]; //  Schema_Atomic
+typedef char CPiecewiseCurve[0x40]; //  Schema_Atomic
+typedef char PulseSymbol_t[0x10]; //  Schema_Atomic
+typedef char CPulseValueFullType[0x18]; //  Schema_Atomic
+typedef char CKV3MemberNameWithStorage[0x38]; //  Schema_Atomic
+typedef char CGlobalSymbolCaseSensitive[0x8]; //  Schema_Atomic
+typedef char CKV3MemberNameSet[0x10]; //  Schema_Atomic
+typedef char HSCRIPT[0x8]; //  Schema_Atomic
+typedef char CUtlStringToken[0x4]; //  Schema_Atomic
+typedef char CUtlSymbolLarge[0x8]; //  Schema_Atomic
+typedef char QuaternionStorage[0x10];
+typedef char CHandle[0x4]; //  Schema_Atomic
+typedef char FourVectors[0x30];
+typedef char CUtlVector[0x18]; //  Schema_Atomic
+
+typedef char VectorWS[0xc]; //  Schema_Atomic
+typedef char CNetworkedQuantizedFloat[0x8]; //  Schema_Atomic
+typedef char CSplitScreenSlot[0x4]; //  Schema_Atomic
+typedef char CAttachmentNameSymbolWithStorage[0x20]; //  Schema_Atomic
+typedef char CEntityHandle[0x4]; //  Schema_Atomic
+typedef char CTransformWS[0x20]; //  Schema_Atomic
+typedef char CUtlSymbol[0x2]; //  Schema_Atomic
+typedef char WorldGroupId_t[0x4]; //  Schema_Atomic
+typedef char CPlayerSlot[0x4]; //  Schema_Atomic
+typedef char CAnimGraphTagRef[0x18]; //  Schema_Atomic
+typedef char CParticleNamedValueRef[0x40]; //  Schema_Atomic
+typedef char Range_t[0x8]; //  Schema_Atomic
+typedef char CResourceName[0xe0]; //  Schema_Atomic
+typedef char fltx4[0x10]; //  Schema_Atomic
+typedef char CUtlVectorSIMDPaddedVector[0x18]; //  Schema_Atomic
+typedef char CSmartPropAttributeBool[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeVector[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeAngles[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeFloat[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeInt[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeVector2D[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeModelName[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeMaterialGroup[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeSurfaceProperty[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeColor[0x40]; //  Schema_Atomic
+typedef char CSmartPropVariableComparison[0x20]; //  Schema_Atomic
+typedef char CSmartPropAttributeMaterialName[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeStateName[0x40]; //  Schema_Atomic
+typedef char CSmartPropAttributeVariableValue[0x40]; //  Schema_Atomic
+typedef char CModelMaterialGroupName[0x8]; //  Schema_Atomic
+typedef char RotationVector[0xc]; //  Schema_Atomic
+typedef char RadianEuler[0xc]; //  Schema_Atomic
+typedef char DegreeEuler[0xc]; //  Schema_Atomic
+typedef char CUtlStringTokenWithStorage[0x18]; //  Schema_Atomic
