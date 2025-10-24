@@ -36,6 +36,7 @@ namespace GlobalTypes {
 	using Vector4D /*Vector4D*/ = char[0x10]; //  Schema_Atomic
 	using matrix3x4_t /*matrix3x4_t*/ = char[0x30]; //  Schema_Atomic
 	using CEntityIndex /*CEntityIndex*/ = char[0x4]; //  Schema_Atomic
+	using QuaternionStorage /*QuaternionStorage*/ = char[0x10]; //  Schema_FixedArray
 	using matrix3x4a_t /*matrix3x4a_t*/ = char[0x30]; //  Schema_Atomic
 	using CBufferString /*CBufferString*/ = char[0x10]; //  Schema_Atomic
 	using CModelAnimNameWithDeltas /*CModelAnimNameWithDeltas*/ = char[0x8]; //  Schema_Atomic
@@ -68,6 +69,7 @@ namespace GlobalTypes {
 	using Range_t /*Range_t*/ = char[0x8]; //  Schema_Atomic
 	using CResourceName /*CResourceName*/ = char[0xe0]; //  Schema_Atomic
 	using fltx4 /*fltx4*/ = char[0x10]; //  Schema_Atomic
+	using FourVectors /*FourVectors*/ = char[0x30]; //  Schema_FixedArray
 	using CUtlVectorSIMDPaddedVector /*CUtlVectorSIMDPaddedVector*/ = char[0x18]; //  Schema_Atomic
 	using CSmartPropAttributeBool /*CSmartPropAttributeBool*/ = char[0x40]; //  Schema_Atomic
 	using CSmartPropAttributeVector /*CSmartPropAttributeVector*/ = char[0x40]; //  Schema_Atomic
