@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace client {
 		class C_Chicken_GraphController : public CS2::client::CBaseAnimGraphAnimGraphController {
 		public:
-			// GlobalTypes::CAnimGraphParamRef< �p��::char > m_paramActivity; // 0x268 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamRef< �p�e�::char > m_paramActivity; // 0x268 | Schema_Atomic | Size: 0x28
 			char  m_paramActivity[0x28]; // 0x268 | Schema_Atomic | Size: 0x28
 			// GlobalTypes::CAnimGraphParamRef< bool > m_paramEndActivityImmediately; // 0x290 | Schema_Atomic | Size: 0x20
 			char  m_paramEndActivityImmediately[0x20]; // 0x290 | Schema_Atomic | Size: 0x20

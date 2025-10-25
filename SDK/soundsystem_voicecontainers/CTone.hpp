@@ -15,7 +15,7 @@
 
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
-		class CVoiceContainerStaticAdditiveSynth::CHarmonic;
+		class CHarmonic;
 	}
 }
 

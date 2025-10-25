@@ -21,19 +21,19 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_PreviewPlayer_GraphController : public CS2::client::CBaseAnimGraphAnimGraphController {
 		public:
-			// GlobalTypes::CAnimGraphParamOptionalRef< �p��::char > m_pszCharacterMode; // 0x268 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszCharacterMode; // 0x268 | Schema_Atomic | Size: 0x28
 			char  m_pszCharacterMode[0x28]; // 0x268 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef< �p��::char > m_pszTeamPreviewVariant; // 0x290 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszTeamPreviewVariant; // 0x290 | Schema_Atomic | Size: 0x28
 			char  m_pszTeamPreviewVariant[0x28]; // 0x290 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef< �p��::char > m_pszTeamPreviewPosition; // 0x2b8 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszTeamPreviewPosition; // 0x2b8 | Schema_Atomic | Size: 0x28
 			char  m_pszTeamPreviewPosition[0x28]; // 0x2b8 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef< �p��::char > m_pszEndOfMatchCelebration; // 0x2e0 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszEndOfMatchCelebration; // 0x2e0 | Schema_Atomic | Size: 0x28
 			char  m_pszEndOfMatchCelebration[0x28]; // 0x2e0 | Schema_Atomic | Size: 0x28
 			// GlobalTypes::CAnimGraphParamOptionalRef< int32 > m_nTeamPreviewRandom; // 0x308 | Schema_Atomic | Size: 0x20
 			char  m_nTeamPreviewRandom[0x20]; // 0x308 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraphParamOptionalRef< �p��::char > m_pszWeaponState; // 0x328 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszWeaponState; // 0x328 | Schema_Atomic | Size: 0x28
 			char  m_pszWeaponState[0x28]; // 0x328 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef< �p��::char > m_pszWeaponType; // 0x350 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszWeaponType; // 0x350 | Schema_Atomic | Size: 0x28
 			char  m_pszWeaponType[0x28]; // 0x350 | Schema_Atomic | Size: 0x28
 			// GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bCT; // 0x378 | Schema_Atomic | Size: 0x20
 			char  m_bCT[0x20]; // 0x378 | Schema_Atomic | Size: 0x20

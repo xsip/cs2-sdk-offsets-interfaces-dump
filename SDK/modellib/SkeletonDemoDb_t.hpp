@@ -16,7 +16,7 @@
 namespace CS2 {
 	namespace modellib {
 		class SkeletonAnimCapture_t;
-		class SkeletonAnimCapture_t::Camera_t;
+		class Camera_t;
 	}
 }
 
