@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x18
 			namespace ResponseContext_t /**/ {
-				constexpr std::ptrdiff_t m_iszName = 0x0; // GlobalTypes::CUtlSymbolLarge m_iszName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszValue = 0x8; // GlobalTypes::CUtlSymbolLarge m_iszValue; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_fExpirationTime = 0x10; // entity2::GameTime_t m_fExpirationTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_iszName = 0x0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszValue = 0x8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_fExpirationTime = 0x10; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

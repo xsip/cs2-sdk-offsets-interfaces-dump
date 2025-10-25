@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1F8
 			namespace C_OP_LockToPointList /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_pointList = 0x1d8; // GlobalTypes::CUtlVector< particles::PointDefinition_t > m_pointList; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_pointList = 0x1d8; // GlobalTypes::CUtlVector<particles::PointDefinition_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bPlaceAlongPath = 0x1f0; // bool m_bPlaceAlongPath; |  0x1f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bClosedLoop = 0x1f1; // bool m_bClosedLoop; |  0x1f1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nNumPointsAlongPath = 0x1f4; // int32_t m_nNumPointsAlongPath; |  0x1f4 | Schema_Builtin | Size: 0x4

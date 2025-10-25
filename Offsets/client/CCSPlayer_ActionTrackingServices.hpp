@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x128
 			namespace CCSPlayer_ActionTrackingServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_hLastWeaponBeforeC4AutoSwitch = 0x40; // client::CHandle< client::C_BasePlayerWeapon > m_hLastWeaponBeforeC4AutoSwitch; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hLastWeaponBeforeC4AutoSwitch = 0x40; // GlobalTypes::CHandle<client::C_BasePlayerWeapon>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsRescuing = 0x44; // bool m_bIsRescuing; |  0x44 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_weaponPurchasesThisMatch = 0x48; // client::WeaponPurchaseTracker_t m_weaponPurchasesThisMatch; |  Schema_DeclaredClass | Size: 0x70
-				constexpr std::ptrdiff_t m_weaponPurchasesThisRound = 0xb8; // client::WeaponPurchaseTracker_t m_weaponPurchasesThisRound; |  Schema_DeclaredClass | Size: 0x70
+				constexpr std::ptrdiff_t m_weaponPurchasesThisMatch = 0x48; // client::WeaponPurchaseTracker_t  | Schema_DeclaredClass | Size: 0x70
+				constexpr std::ptrdiff_t m_weaponPurchasesThisRound = 0xb8; // client::WeaponPurchaseTracker_t  | Schema_DeclaredClass | Size: 0x70
 			}
 		}
 	}

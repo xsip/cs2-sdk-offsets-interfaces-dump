@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x110
 			namespace CFollowAttachmentUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::FollowAttachmentSettings_t m_opFixedData; |  Schema_DeclaredClass | Size: 0x90
+				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::FollowAttachmentSettings_t  | Schema_DeclaredClass | Size: 0x90
 			}
 		}
 	}

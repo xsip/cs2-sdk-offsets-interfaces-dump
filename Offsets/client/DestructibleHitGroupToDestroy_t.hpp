@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x8
 			namespace DestructibleHitGroupToDestroy_t /**/ {
-				constexpr std::ptrdiff_t m_nHitGroup = 0x0; // client::HitGroup_t m_nHitGroup; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nHitGroup = 0x0; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nMaxDamageLevel = 0x4; // int32_t m_nMaxDamageLevel; |  0x4 | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -20,7 +20,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bCreateBufferUAV = 0x10; // bool m_bCreateBufferUAV; |  0x10 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCreateRawBuffer = 0x11; // bool m_bCreateRawBuffer; |  0x11 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCreatePooledBuffer = 0x12; // bool m_bCreatePooledBuffer; |  0x12 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_inputLayoutFields = 0x18; // GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_inputLayoutFields = 0x18; // GlobalTypes::CUtlVector<modellib::RenderInputLayoutField_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xD0
 			namespace CFootPinningUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_poseOpFixedData = 0x78; // animgraphlib::FootPinningPoseOpFixedData_t m_poseOpFixedData; |  Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_eTimingSource = 0xa8; // animgraphlib::FootPinningTimingSource m_eTimingSource; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_params = 0xb0; // GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_params; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_poseOpFixedData = 0x78; // animgraphlib::FootPinningPoseOpFixedData_t  | Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_eTimingSource = 0xa8; // animgraphlib::FootPinningTimingSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_params = 0xb0; // GlobalTypes::CUtlVector<animgraphlib::CAnimParamHandle>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bResetChild = 0xc8; // bool m_bResetChild; |  0xc8 | Schema_Builtin | Size: 0x1
 			}
 		}

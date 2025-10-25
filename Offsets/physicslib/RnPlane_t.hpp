@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x10
 			namespace RnPlane_t /**/ {
-				constexpr std::ptrdiff_t m_vNormal = 0x0; // GlobalTypes::Vector m_vNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vNormal = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flOffset = 0xc; // float32 m_flOffset; |  0xc | Schema_Builtin | Size: 0x4
 			}
 		}

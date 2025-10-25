@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x228
 			namespace C_INIT_RemapParticleCountToNamedModelElementScalar /*: public CS2::particles::C_INIT_RemapParticleCountToScalar*/ {
-				constexpr std::ptrdiff_t m_hModel = 0x208; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_outputMinName = 0x210; // GlobalTypes::CUtlString m_outputMinName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_outputMaxName = 0x218; // GlobalTypes::CUtlString m_outputMaxName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hModel = 0x208; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_outputMinName = 0x210; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_outputMaxName = 0x218; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bModelFromRenderer = 0x220; // bool m_bModelFromRenderer; |  0x220 | Schema_Builtin | Size: 0x1
 			}
 		}

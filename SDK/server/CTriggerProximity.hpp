@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,8 +26,8 @@ namespace CS2 {
 	namespace server {
 		class CTriggerProximity : public CS2::server::CBaseTrigger {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hMeasureTarget; // 0x9a8 | Schema_Atomic | Size: 0x4
-			char  m_hMeasureTarget[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hMeasureTarget; // 0x9a8 | Schema_Atomic | Size: 0x4
+			// char  m_hMeasureTarget[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszMeasureTarget; // 0x9b0 | Schema_Atomic | Size: 0x8
 			float32 m_fRadius; // 0x9b8 | Schema_Builtin | Size: 0x4

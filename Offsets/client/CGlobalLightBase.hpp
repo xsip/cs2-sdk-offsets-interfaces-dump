@@ -11,21 +11,21 @@ namespace CS2 {
 			// Class size: 0x4C0
 			namespace CGlobalLightBase /**/ {
 				constexpr std::ptrdiff_t m_bSpotLight = 0x10; // bool m_bSpotLight; |  0x10 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_SpotLightOrigin = 0x14; // GlobalTypes::Vector m_SpotLightOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_SpotLightAngles = 0x20; // GlobalTypes::QAngle m_SpotLightAngles; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_ShadowDirection = 0x2c; // GlobalTypes::Vector m_ShadowDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_AmbientDirection = 0x38; // GlobalTypes::Vector m_AmbientDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_SpecularDirection = 0x44; // GlobalTypes::Vector m_SpecularDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_InspectorSpecularDirection = 0x50; // GlobalTypes::Vector m_InspectorSpecularDirection; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_SpotLightOrigin = 0x14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_SpotLightAngles = 0x20; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_ShadowDirection = 0x2c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_AmbientDirection = 0x38; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_SpecularDirection = 0x44; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_InspectorSpecularDirection = 0x50; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flSpecularPower = 0x5c; // float32 m_flSpecularPower; |  0x5c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSpecularIndependence = 0x60; // float32 m_flSpecularIndependence; |  0x60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_SpecularColor = 0x64; // GlobalTypes::Color m_SpecularColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_SpecularColor = 0x64; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bStartDisabled = 0x68; // bool m_bStartDisabled; |  0x68 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnabled = 0x69; // bool m_bEnabled; |  0x69 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_LightColor = 0x6a; // GlobalTypes::Color m_LightColor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_AmbientColor1 = 0x6e; // GlobalTypes::Color m_AmbientColor1; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_AmbientColor2 = 0x72; // GlobalTypes::Color m_AmbientColor2; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_AmbientColor3 = 0x76; // GlobalTypes::Color m_AmbientColor3; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_LightColor = 0x6a; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_AmbientColor1 = 0x6e; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_AmbientColor2 = 0x72; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_AmbientColor3 = 0x76; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flSunDistance = 0x7c; // float32 m_flSunDistance; |  0x7c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFOV = 0x80; // float32 m_flFOV; |  0x80 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNearZ = 0x84; // float32 m_flNearZ; |  0x84 | Schema_Builtin | Size: 0x4
@@ -44,15 +44,15 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flLightScale = 0xbc; // float32 m_flLightScale; |  0xbc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFoWDarkness = 0xc0; // float32 m_flFoWDarkness; |  0xc0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnableSeparateSkyboxFog = 0xc4; // bool m_bEnableSeparateSkyboxFog; |  0xc4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vFowColor = 0xc8; // GlobalTypes::Vector m_vFowColor; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_ViewOrigin = 0xd4; // GlobalTypes::Vector m_ViewOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_ViewAngles = 0xe0; // GlobalTypes::QAngle m_ViewAngles; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFowColor = 0xc8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_ViewOrigin = 0xd4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_ViewAngles = 0xe0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flViewFoV = 0xec; // float32 m_flViewFoV; |  0xec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_WorldPoints = 0xf0; // GlobalTypes::Vector m_WorldPoints[8]; |  Schema_FixedArray | Size: 0x60
-				constexpr std::ptrdiff_t m_vFogOffsetLayer0 = 0x4a8; // GlobalTypes::Vector2D m_vFogOffsetLayer0; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vFogOffsetLayer1 = 0x4b0; // GlobalTypes::Vector2D m_vFogOffsetLayer1; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hEnvWind = 0x4b8; // client::CHandle< client::C_BaseEntity > m_hEnvWind; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hEnvSky = 0x4bc; // client::CHandle< client::C_BaseEntity > m_hEnvSky; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_WorldPoints = 0xf0; // GlobalTypes::Vector[8]  | Schema_FixedArray | Size: 0x60
+				constexpr std::ptrdiff_t m_vFogOffsetLayer0 = 0x4a8; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vFogOffsetLayer1 = 0x4b0; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hEnvWind = 0x4b8; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hEnvSky = 0x4bc; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

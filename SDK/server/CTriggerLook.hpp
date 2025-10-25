@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,8 +28,8 @@ namespace CS2 {
 	namespace server {
 		class CTriggerLook : public CS2::server::CTriggerOnce {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hLookTarget; // 0x9d0 | Schema_Atomic | Size: 0x4
-			char  m_hLookTarget[0x4]; // 0x9d0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLookTarget; // 0x9d0 | Schema_Atomic | Size: 0x4
+			// char  m_hLookTarget[0x4]; // 0x9d0 | Schema_Atomic | Size: 0x4
 			float32 m_flFieldOfView; // 0x9d4 | Schema_Builtin | Size: 0x4
 			float32 m_flLookTime; // 0x9d8 | Schema_Builtin | Size: 0x4
 			float32 m_flLookTimeTotal; // 0x9dc | Schema_Builtin | Size: 0x4

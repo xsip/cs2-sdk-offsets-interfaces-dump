@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x40
 			namespace CSeqPoseSetting /**/ {
-				constexpr std::ptrdiff_t m_sPoseParameter = 0x0; // GlobalTypes::CBufferString m_sPoseParameter; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_sAttachment = 0x10; // GlobalTypes::CBufferString m_sAttachment; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_sReferenceSequence = 0x20; // GlobalTypes::CBufferString m_sReferenceSequence; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sPoseParameter = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sAttachment = 0x10; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sReferenceSequence = 0x20; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_flValue = 0x30; // float32 m_flValue; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bX = 0x34; // bool m_bX; |  0x34 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bY = 0x35; // bool m_bY; |  0x35 | Schema_Builtin | Size: 0x1

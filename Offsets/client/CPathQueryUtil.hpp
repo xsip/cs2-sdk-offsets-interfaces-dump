@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x80
 			namespace CPathQueryUtil /**/ {
-				constexpr std::ptrdiff_t m_PathToEntityTransform = 0x10; // GlobalTypes::CTransform m_PathToEntityTransform; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_vecPathSamplePositions = 0x30; // GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vecPathSamplePositions; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecPathSampleParameters = 0x48; // GlobalTypes::CUtlVector< float32 > m_vecPathSampleParameters; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecPathSampleDistances = 0x60; // GlobalTypes::CUtlVector< float32 > m_vecPathSampleDistances; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathToEntityTransform = 0x10; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_vecPathSamplePositions = 0x30; // GlobalTypes::CUtlVector<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecPathSampleParameters = 0x48; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecPathSampleDistances = 0x60; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bIsClosedLoop = 0x78; // bool m_bIsClosedLoop; |  0x78 | Schema_Builtin | Size: 0x1
 			}
 		}

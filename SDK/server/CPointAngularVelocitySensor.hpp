@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,8 +28,8 @@ namespace CS2 {
 	namespace server {
 		class CPointAngularVelocitySensor : public CS2::server::CPointEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
-			char  m_hTargetEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			float32 m_flThreshold; // 0x4f4 | Schema_Builtin | Size: 0x4
 			int32_t m_nLastCompareResult; // 0x4f8 | Schema_Builtin | Size: 0x4
 			int32_t m_nLastFireResult; // 0x4fc | Schema_Builtin | Size: 0x4

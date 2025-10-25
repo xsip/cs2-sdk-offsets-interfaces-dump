@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x590
 			namespace CSkyCamera /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_skyboxData = 0x4f0; // server::sky3dparams_t m_skyboxData; |  Schema_DeclaredClass | Size: 0x90
-				constexpr std::ptrdiff_t m_skyboxSlotToken = 0x580; // GlobalTypes::CUtlStringToken m_skyboxSlotToken; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_skyboxData = 0x4f0; // server::sky3dparams_t  | Schema_DeclaredClass | Size: 0x90
+				constexpr std::ptrdiff_t m_skyboxSlotToken = 0x580; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseAngles = 0x584; // bool m_bUseAngles; |  0x584 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pNext = 0x588; // server::CSkyCamera* m_pNext; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNext = 0x588; // server::CSkyCamera**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

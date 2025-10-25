@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x4D8
 			namespace C_AttributeContainer /*: public CS2::client::CAttributeManager*/ {
-				constexpr std::ptrdiff_t m_Item = 0x50; // client::C_EconItemView m_Item; |  Schema_DeclaredClass | Size: 0x478
+				constexpr std::ptrdiff_t m_Item = 0x50; // client::C_EconItemView  | Schema_DeclaredClass | Size: 0x478
 				constexpr std::ptrdiff_t m_iExternalItemProviderRegisteredToken = 0x4c8; // int32_t m_iExternalItemProviderRegisteredToken; |  0x4c8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_ullRegisteredAsItemID = 0x4d0; // uint64_t m_ullRegisteredAsItemID; |  0x4d0 | Schema_Builtin | Size: 0x8
 			}

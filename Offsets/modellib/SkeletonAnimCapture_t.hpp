@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0xC0
 			namespace SkeletonAnimCapture_t /**/ {
-				constexpr std::ptrdiff_t m_nEntIndex = 0x0; // GlobalTypes::CEntityIndex m_nEntIndex; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nEntParent = 0x4; // GlobalTypes::CEntityIndex m_nEntParent; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_ImportedCollision = 0x8; // GlobalTypes::CUtlVector< GlobalTypes::CEntityIndex > m_ImportedCollision; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ModelName = 0x20; // GlobalTypes::CUtlString m_ModelName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_CaptureName = 0x28; // GlobalTypes::CUtlString m_CaptureName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_ModelBindPose = 0x30; // GlobalTypes::Bone_t > m_ModelBindPose; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_FeModelInitPose = 0x48; // GlobalTypes::Bone_t > m_FeModelInitPose; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nEntIndex = 0x0; // GlobalTypes::CEntityIndex  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nEntParent = 0x4; // GlobalTypes::CEntityIndex  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_ImportedCollision = 0x8; // GlobalTypes::CUtlVector<GlobalTypes::CEntityIndex>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ModelName = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_CaptureName = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ModelBindPose = 0x30; // GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Bone_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_FeModelInitPose = 0x48; // GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Bone_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nFlexControllers = 0x60; // int32_t m_nFlexControllers; |  0x60 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bPredicted = 0x64; // bool m_bPredicted; |  0x64 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Frames = 0xa8; // GlobalTypes::Frame_t > m_Frames; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Frames = 0xa8; // GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Frame_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

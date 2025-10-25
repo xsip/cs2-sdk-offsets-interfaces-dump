@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x48
 			namespace CPulse_OutflowConnection /**/ {
-				constexpr std::ptrdiff_t m_SourceOutflowName = 0x0; // GlobalTypes::PulseSymbol_t m_SourceOutflowName; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_nDestChunk = 0x10; // pulse_runtime_lib::PulseRuntimeChunkIndex_t m_nDestChunk; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_SourceOutflowName = 0x0; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_nDestChunk = 0x10; // pulse_runtime_lib::PulseRuntimeChunkIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nInstruction = 0x14; // int32_t m_nInstruction; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OutflowRegisterMap = 0x18; // pulse_runtime_lib::PulseRegisterMap_t m_OutflowRegisterMap; |  Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_OutflowRegisterMap = 0x18; // pulse_runtime_lib::PulseRegisterMap_t  | Schema_DeclaredClass | Size: 0x30
 			}
 		}
 	}

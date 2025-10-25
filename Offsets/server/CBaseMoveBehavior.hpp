@@ -15,10 +15,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flAnimStartTime = 0x558; // float32 m_flAnimStartTime; |  0x558 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAnimEndTime = 0x55c; // float32 m_flAnimEndTime; |  0x55c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAverageSpeedAcrossFrame = 0x560; // float32 m_flAverageSpeedAcrossFrame; |  0x560 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pCurrentKeyFrame = 0x568; // server::CPathKeyFrame* m_pCurrentKeyFrame; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pTargetKeyFrame = 0x570; // server::CPathKeyFrame* m_pTargetKeyFrame; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pPreKeyFrame = 0x578; // server::CPathKeyFrame* m_pPreKeyFrame; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pPostKeyFrame = 0x580; // server::CPathKeyFrame* m_pPostKeyFrame; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pCurrentKeyFrame = 0x568; // server::CPathKeyFrame**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pTargetKeyFrame = 0x570; // server::CPathKeyFrame**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPreKeyFrame = 0x578; // server::CPathKeyFrame**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPostKeyFrame = 0x580; // server::CPathKeyFrame**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_flTimeIntoFrame = 0x588; // float32 m_flTimeIntoFrame; |  0x588 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iDirection = 0x58c; // int32_t m_iDirection; |  0x58c | Schema_Builtin | Size: 0x4
 			}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x10
 			namespace SecondarySkeleton_t /**/ {
-				constexpr std::ptrdiff_t m_attachToBoneID = 0x0; // GlobalTypes::CGlobalSymbol m_attachToBoneID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_skeleton = 0x8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmSkeleton > m_skeleton; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachToBoneID = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_skeleton = 0x8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

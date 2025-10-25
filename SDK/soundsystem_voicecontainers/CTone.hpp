@@ -25,7 +25,7 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CTone  {
 		public:
-			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CHarmonic > m_harmonics; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth::CHarmonic> m_harmonics; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_harmonics[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CPiecewiseCurve m_curve; // 0x18 | Schema_Atomic | Size: 0x40
 			bool m_bSyncInstances; // 0x58 | Schema_Builtin | Size: 0x1

@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t w1 = 0x8; // float32 w1; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t w2 = 0xc; // float32 w2; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t v1x = 0x10; // float32 v1x; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t v2 = 0x14; // GlobalTypes::Vector2D v2; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t v2 = 0x14; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

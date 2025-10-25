@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x10
 			namespace RelationshipOverride_t /*: public CS2::server::Relationship_t*/ {
-				constexpr std::ptrdiff_t entity = 0x8; // server::CHandle< server::CBaseEntity > entity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t classType = 0xc; // client::Class_T classType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t entity = 0x8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t classType = 0xc; // client::Class_T  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

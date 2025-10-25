@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace C_OP_LocalAccelerationForce /*: public CS2::particles::CParticleFunctionForce*/ {
 				constexpr std::ptrdiff_t m_nCP = 0x1e0; // int32_t m_nCP; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nScaleCP = 0x1e4; // int32_t m_nScaleCP; |  0x1e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAccel = 0x1e8; // particleslib::CParticleCollectionVecInput m_vecAccel; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecAccel = 0x1e8; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

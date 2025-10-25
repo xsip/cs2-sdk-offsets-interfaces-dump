@@ -17,7 +17,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bIsSynchronized = 0x8; // bool m_bIsSynchronized; |  0x8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIgnoreEvents = 0x9; // bool m_bIgnoreEvents; |  0x9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsStateMachineLayer = 0xa; // bool m_bIsStateMachineLayer; |  0xa | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_blendMode = 0xb; // animlib::NmPoseBlendMode_t m_blendMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_blendMode = 0xb; // animlib::NmPoseBlendMode_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

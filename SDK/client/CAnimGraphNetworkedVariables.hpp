@@ -35,11 +35,11 @@ namespace CS2 {
 			char  m_PredNetUInt64Variables[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::C_NetworkUtlVectorBase< float32 > m_PredNetFloatVariables; // 0x98 | Schema_Atomic | Size: 0x18
 			char  m_PredNetFloatVariables[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PredNetVectorVariables; // 0xb0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_PredNetVectorVariables; // 0xb0 | Schema_Atomic | Size: 0x18
 			char  m_PredNetVectorVariables[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::Quaternion > m_PredNetQuaternionVariables; // 0xc8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Quaternion> m_PredNetQuaternionVariables; // 0xc8 | Schema_Atomic | Size: 0x18
 			char  m_PredNetQuaternionVariables[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CGlobalSymbol > m_PredNetGlobalSymbolVariables; // 0xe0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CGlobalSymbol> m_PredNetGlobalSymbolVariables; // 0xe0 | Schema_Atomic | Size: 0x18
 			char  m_PredNetGlobalSymbolVariables[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::C_NetworkUtlVectorBase< uint32 > m_OwnerOnlyPredNetBoolVariables; // 0xf8 | Schema_Atomic | Size: 0x18
 			char  m_OwnerOnlyPredNetBoolVariables[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
@@ -55,11 +55,11 @@ namespace CS2 {
 			char  m_OwnerOnlyPredNetUInt64Variables[0x18]; // 0x170 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::C_NetworkUtlVectorBase< float32 > m_OwnerOnlyPredNetFloatVariables; // 0x188 | Schema_Atomic | Size: 0x18
 			char  m_OwnerOnlyPredNetFloatVariables[0x18]; // 0x188 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_OwnerOnlyPredNetVectorVariables; // 0x1a0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_OwnerOnlyPredNetVectorVariables; // 0x1a0 | Schema_Atomic | Size: 0x18
 			char  m_OwnerOnlyPredNetVectorVariables[0x18]; // 0x1a0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::Quaternion > m_OwnerOnlyPredNetQuaternionVariables; // 0x1b8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Quaternion> m_OwnerOnlyPredNetQuaternionVariables; // 0x1b8 | Schema_Atomic | Size: 0x18
 			char  m_OwnerOnlyPredNetQuaternionVariables[0x18]; // 0x1b8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CGlobalSymbol > m_OwnerOnlyPredNetGlobalSymbolVariables; // 0x1d0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CGlobalSymbol> m_OwnerOnlyPredNetGlobalSymbolVariables; // 0x1d0 | Schema_Atomic | Size: 0x18
 			char  m_OwnerOnlyPredNetGlobalSymbolVariables[0x18]; // 0x1d0 | Schema_Atomic | Size: 0x18
 			int32_t m_nBoolVariablesCount; // 0x1e8 | Schema_Builtin | Size: 0x4
 			int32_t m_nOwnerOnlyBoolVariablesCount; // 0x1ec | Schema_Builtin | Size: 0x4

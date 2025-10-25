@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x4F8
 			namespace CSoundStackSave /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_iszStackName = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszStackName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszStackName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

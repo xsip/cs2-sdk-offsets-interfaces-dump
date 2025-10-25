@@ -23,7 +23,7 @@ namespace CS2 {
 			int16_t m_nStateNodeIdx; // 0x0 | Schema_Builtin | Size: 0x2
 			int16_t m_nEntryConditionNodeIdx; // 0x2 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4);
-			// GlobalTypes::TransitionDefinition_t, 5 > m_transitionDefinitions; // 0x8 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CUtlLeanVectorFixedGrowable<animlib::CNmStateMachineNode::TransitionDefinition_t> m_transitionDefinitions; // 0x8 | Schema_Atomic | Size: 0x30
 			char  m_transitionDefinitions[0x30]; // 0x8 | Schema_Atomic | Size: 0x30
 		};
 		static_assert(offsetof(CS2::animlib::StateDefinition_t, m_nStateNodeIdx) == 0x0, "m_nStateNodeIdx in CNmStateMachineNode::StateDefinition_t should be at offset 0x0");

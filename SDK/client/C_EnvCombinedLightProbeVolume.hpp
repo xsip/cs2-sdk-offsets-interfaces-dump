@@ -24,27 +24,27 @@ namespace CS2 {
 			S2_PAD(0x1078);
 			GlobalTypes::Color m_Entity_Color; // 0x1670 | Schema_Atomic | Size: 0x4
 			float32 m_Entity_flBrightness; // 0x1674 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hCubemapTexture; // 0x1678 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hCubemapTexture; // 0x1678 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hCubemapTexture[0x8]; // 0x1678 | Schema_Atomic | Size: 0x8
 			bool m_Entity_bCustomCubemapTexture; // 0x1680 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture_AmbientCube; // 0x1688 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_AmbientCube; // 0x1688 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeTexture_AmbientCube[0x8]; // 0x1688 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture_SDF; // 0x1690 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SDF; // 0x1690 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeTexture_SDF[0x8]; // 0x1690 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture_SH2_DC; // 0x1698 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_DC; // 0x1698 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeTexture_SH2_DC[0x8]; // 0x1698 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture_SH2_R; // 0x16a0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_R; // 0x16a0 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeTexture_SH2_R[0x8]; // 0x16a0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture_SH2_G; // 0x16a8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_G; // 0x16a8 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeTexture_SH2_G[0x8]; // 0x16a8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture_SH2_B; // 0x16b0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_B; // 0x16b0 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeTexture_SH2_B[0x8]; // 0x16b0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightIndicesTexture; // 0x16b8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightIndicesTexture; // 0x16b8 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeDirectLightIndicesTexture[0x8]; // 0x16b8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightScalarsTexture; // 0x16c0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightScalarsTexture; // 0x16c0 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeDirectLightScalarsTexture[0x8]; // 0x16c0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightShadowsTexture; // 0x16c8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightShadowsTexture; // 0x16c8 | Schema_Atomic | Size: 0x8
 			char  m_Entity_hLightProbeDirectLightShadowsTexture[0x8]; // 0x16c8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_Entity_vBoxMins; // 0x16d0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_Entity_vBoxMaxs; // 0x16dc | Schema_Atomic | Size: 0xc

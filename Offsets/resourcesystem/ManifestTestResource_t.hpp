@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace resourcesystem {
 			// Class size: 0x10
 			namespace ManifestTestResource_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_child = 0x8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeManifestTestResource_t > m_child; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_child = 0x8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeManifestTestResource_t>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

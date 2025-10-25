@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x110
 			namespace CSmartPropOperation_RandomRotation /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_vRandomRotationMin = 0x50; // GlobalTypes::CSmartPropAttributeAngles m_vRandomRotationMin; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vRandomRotationMax = 0x90; // GlobalTypes::CSmartPropAttributeAngles m_vRandomRotationMax; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vSnapIncrement = 0xd0; // GlobalTypes::CSmartPropAttributeAngles m_vSnapIncrement; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vRandomRotationMin = 0x50; // GlobalTypes::CSmartPropAttributeAngles  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vRandomRotationMax = 0x90; // GlobalTypes::CSmartPropAttributeAngles  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vSnapIncrement = 0xd0; // GlobalTypes::CSmartPropAttributeAngles  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

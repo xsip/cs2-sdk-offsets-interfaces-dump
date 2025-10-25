@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x550
 			namespace CFilterName /*: public CS2::server::CBaseFilter*/ {
-				constexpr std::ptrdiff_t m_iFilterName = 0x548; // GlobalTypes::CUtlSymbolLarge m_iFilterName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iFilterName = 0x548; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

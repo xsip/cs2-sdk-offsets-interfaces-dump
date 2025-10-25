@@ -39,7 +39,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nAlphaTestPointField; // 0x8fc | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nAlphaTestRangeField; // 0x900 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nAlphaTestSharpnessField; // 0x904 | Schema_DeclaredClass | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTexture; // 0x908 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hTexture; // 0x908 | Schema_Atomic | Size: 0x8
 			char  m_hTexture[0x8]; // 0x908 | Schema_Atomic | Size: 0x8
 			int32_t m_nHSVShiftControlPoint; // 0x910 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

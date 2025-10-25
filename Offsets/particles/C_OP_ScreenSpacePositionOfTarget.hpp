@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xA08
 			namespace C_OP_ScreenSpacePositionOfTarget /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_vecTargetPosition = 0x1d0; // particleslib::CPerParticleVecInput m_vecTargetPosition; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecTargetPosition = 0x1d0; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_bOututBehindness = 0x888; // bool m_bOututBehindness; |  0x888 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nBehindFieldOutput = 0x88c; // particles::ParticleAttributeIndex_t m_nBehindFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flBehindOutputRemap = 0x890; // particleslib::CParticleRemapFloatInput m_flBehindOutputRemap; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nBehindSetMethod = 0xa00; // particles::ParticleSetMethod_t m_nBehindSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nBehindFieldOutput = 0x88c; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flBehindOutputRemap = 0x890; // particleslib::CParticleRemapFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nBehindSetMethod = 0xa00; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

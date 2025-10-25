@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x18
 			namespace CSosGroupActionSoundeventCountSchema /*: public CS2::soundsystem::CSosGroupActionSchema*/ {
 				constexpr std::ptrdiff_t m_bExcludeStoppedSounds = 0x8; // bool m_bExcludeStoppedSounds; |  0x8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_strCountKeyName = 0x10; // GlobalTypes::CUtlString m_strCountKeyName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strCountKeyName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

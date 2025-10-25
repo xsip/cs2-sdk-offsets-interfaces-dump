@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x98
 			namespace CPulseCell_WaitForCursorsWithTagBase /*: public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow*/ {
 				constexpr std::ptrdiff_t m_nCursorsAllowedToWait = 0x48; // int32_t m_nCursorsAllowedToWait; |  0x48 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_WaitComplete = 0x50; // pulse_runtime_lib::CPulse_ResumePoint m_WaitComplete; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_WaitComplete = 0x50; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

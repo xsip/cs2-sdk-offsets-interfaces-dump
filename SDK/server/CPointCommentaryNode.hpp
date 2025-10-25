@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -27,15 +32,15 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszPostCommands; // 0xa98 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszCommentaryFile; // 0xaa0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszViewTarget; // 0xaa8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hViewTarget; // 0xab0 | Schema_Atomic | Size: 0x4
-			char  m_hViewTarget[0x4]; // 0xab0 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hViewTargetAngles; // 0xab4 | Schema_Atomic | Size: 0x4
-			char  m_hViewTargetAngles[0x4]; // 0xab4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewTarget; // 0xab0 | Schema_Atomic | Size: 0x4
+			// char  m_hViewTarget[0x4]; // 0xab0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewTargetAngles; // 0xab4 | Schema_Atomic | Size: 0x4
+			// char  m_hViewTargetAngles[0x4]; // 0xab4 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszViewPosition; // 0xab8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hViewPosition; // 0xac0 | Schema_Atomic | Size: 0x4
-			char  m_hViewPosition[0x4]; // 0xac0 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hViewPositionMover; // 0xac4 | Schema_Atomic | Size: 0x4
-			char  m_hViewPositionMover[0x4]; // 0xac4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewPosition; // 0xac0 | Schema_Atomic | Size: 0x4
+			// char  m_hViewPosition[0x4]; // 0xac0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewPositionMover; // 0xac4 | Schema_Atomic | Size: 0x4
+			// char  m_hViewPositionMover[0x4]; // 0xac4 | Schema_Atomic | Size: 0x4
 			bool m_bPreventMovement; // 0xac8 | Schema_Builtin | Size: 0x1
 			bool m_bUnderCrosshair; // 0xac9 | Schema_Builtin | Size: 0x1
 			bool m_bUnstoppable; // 0xaca | Schema_Builtin | Size: 0x1

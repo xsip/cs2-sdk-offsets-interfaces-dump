@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x1C
 			namespace RnCapsule_t /**/ {
-				constexpr std::ptrdiff_t m_vCenter = 0x0; // GlobalTypes::Vector m_vCenter[2]; |  Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_vCenter = 0x0; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
 				constexpr std::ptrdiff_t m_flRadius = 0x18; // float32 m_flRadius; |  0x18 | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -10,22 +10,22 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x88
 			namespace CDecalInstance /**/ {
-				constexpr std::ptrdiff_t m_sDecalGroup = 0x0; // GlobalTypes::CGlobalSymbol m_sDecalGroup; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hMaterial = 0x8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sSequenceName = 0x10; // GlobalTypes::CUtlStringToken m_sSequenceName; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hEntity = 0x14; // client::CHandle< client::C_BaseEntity > m_hEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_sDecalGroup = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hMaterial = 0x8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sSequenceName = 0x10; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hEntity = 0x14; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nBoneIndex = 0x18; // int32_t m_nBoneIndex; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTriangleIndex = 0x1c; // int32_t m_nTriangleIndex; |  0x1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vPositionLS = 0x20; // GlobalTypes::Vector m_vPositionLS; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vNormalLS = 0x2c; // GlobalTypes::Vector m_vNormalLS; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vSAxisLS = 0x38; // GlobalTypes::Vector m_vSAxisLS; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nFlags = 0x44; // client::DecalFlags_t m_nFlags; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_Color = 0x48; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vPositionLS = 0x20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vNormalLS = 0x2c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vSAxisLS = 0x38; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nFlags = 0x44; // client::DecalFlags_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0x48; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flWidth = 0x4c; // float32 m_flWidth; |  0x4c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flHeight = 0x50; // float32 m_flHeight; |  0x50 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDepth = 0x54; // float32 m_flDepth; |  0x54 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAnimationScale = 0x58; // float32 m_flAnimationScale; |  0x58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPlaceTime = 0x5c; // entity2::GameTime_t m_flPlaceTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flPlaceTime = 0x5c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeStartTime = 0x60; // float32 m_flFadeStartTime; |  0x60 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeDuration = 0x64; // float32 m_flFadeDuration; |  0x64 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLightingOriginOffset = 0x68; // float32 m_flLightingOriginOffset; |  0x68 | Schema_Builtin | Size: 0x4
@@ -33,7 +33,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nSequenceIndex = 0x7c; // int16_t m_nSequenceIndex; |  0x7c | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_bIsAdjacent = 0x7e; // bool m_bIsAdjacent; |  0x7e | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDoDecalLightmapping = 0x7f; // bool m_bDoDecalLightmapping; |  0x7f | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nSkinnedModelMode = 0x80; // client::DecalMode_t m_nSkinnedModelMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nSkinnedModelMode = 0x80; // client::DecalMode_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

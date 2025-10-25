@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x4D0
 			namespace C_OP_RemapAverageScalarValuetoCP /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nExpression = 0x1d8; // particles::SetStatisticExpressionType_t m_nExpression; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flDecimalPlaces = 0x1e0; // particleslib::CParticleCollectionFloatInput m_flDecimalPlaces; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nExpression = 0x1d8; // particles::SetStatisticExpressionType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flDecimalPlaces = 0x1e0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_nOutControlPointNumber = 0x350; // int32_t m_nOutControlPointNumber; |  0x350 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutVectorField = 0x354; // int32_t m_nOutVectorField; |  0x354 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nField = 0x358; // particles::ParticleAttributeIndex_t m_nField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flOutputRemap = 0x360; // particleslib::CParticleRemapFloatInput m_flOutputRemap; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nField = 0x358; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flOutputRemap = 0x360; // particleslib::CParticleRemapFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

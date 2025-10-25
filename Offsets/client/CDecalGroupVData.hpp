@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x20
 			namespace CDecalGroupVData /**/ {
-				constexpr std::ptrdiff_t m_vecOptions = 0x0; // GlobalTypes::CUtlVector< client::DecalGroupOption_t > m_vecOptions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecOptions = 0x0; // GlobalTypes::CUtlVector<client::DecalGroupOption_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flTotalProbability = 0x18; // float32 m_flTotalProbability; |  0x18 | Schema_Builtin | Size: 0x4
 			}
 		}

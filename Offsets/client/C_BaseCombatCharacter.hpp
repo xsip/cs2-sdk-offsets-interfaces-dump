@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x13F0
 			namespace C_BaseCombatCharacter /*: public CS2::client::C_BaseFlex*/ {
-				constexpr std::ptrdiff_t m_hMyWearables = 0x1368; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_EconWearable > > m_hMyWearables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_leftFootAttachment = 0x1380; // modellib::AttachmentHandle_t m_leftFootAttachment; |  Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_rightFootAttachment = 0x1381; // modellib::AttachmentHandle_t m_rightFootAttachment; |  Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_nWaterWakeMode = 0x1384; // client::WaterWakeMode_t m_nWaterWakeMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hMyWearables = 0x1368; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_EconWearable>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_leftFootAttachment = 0x1380; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_rightFootAttachment = 0x1381; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_nWaterWakeMode = 0x1384; // client::C_BaseCombatCharacter::WaterWakeMode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flWaterWorldZ = 0x1388; // float32 m_flWaterWorldZ; |  0x1388 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flWaterNextTraceTime = 0x138c; // float32 m_flWaterNextTraceTime; |  0x138c | Schema_Builtin | Size: 0x4
 			}

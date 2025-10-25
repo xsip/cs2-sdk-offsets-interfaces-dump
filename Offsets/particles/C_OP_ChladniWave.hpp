@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1518
 			namespace C_OP_ChladniWave /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMin = 0x1d8; // particleslib::CPerParticleFloatInput m_flInputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flInputMax = 0x348; // particleslib::CPerParticleFloatInput m_flInputMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMin = 0x4b8; // particleslib::CPerParticleFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMax = 0x628; // particleslib::CPerParticleFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_vecWaveLength = 0x798; // particleslib::CPerParticleVecInput m_vecWaveLength; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_vecHarmonics = 0xe50; // particleslib::CPerParticleVecInput m_vecHarmonics; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_nSetMethod = 0x1508; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputMin = 0x1d8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInputMax = 0x348; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMin = 0x4b8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMax = 0x628; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecWaveLength = 0x798; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecHarmonics = 0xe50; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nSetMethod = 0x1508; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nLocalSpaceControlPoint = 0x150c; // int32_t m_nLocalSpaceControlPoint; |  0x150c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_b3D = 0x1510; // bool m_b3D; |  0x1510 | Schema_Builtin | Size: 0x1
 			}

@@ -12,21 +12,21 @@ namespace CS2 {
 			namespace VPhysXAggregateData_t /**/ {
 				constexpr std::ptrdiff_t m_nFlags = 0x0; // uint16_t m_nFlags; |  0x0 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nRefCounter = 0x2; // uint16_t m_nRefCounter; |  0x2 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_bonesHash = 0x8; // GlobalTypes::CUtlVector< uint32 > m_bonesHash; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneNames = 0x20; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_indexNames = 0x38; // GlobalTypes::CUtlVector< uint16 > m_indexNames; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_indexHash = 0x50; // GlobalTypes::CUtlVector< uint16 > m_indexHash; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bindPose = 0x68; // GlobalTypes::CUtlVector< GlobalTypes::matrix3x4a_t > m_bindPose; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_parts = 0x80; // GlobalTypes::CUtlVector< modellib::VPhysXBodyPart_t > m_parts; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_shapeMarkups = 0x98; // GlobalTypes::CUtlVector< modellib::PhysShapeMarkup_t > m_shapeMarkups; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_constraints2 = 0xb0; // GlobalTypes::CUtlVector< modellib::VPhysXConstraint2_t > m_constraints2; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_joints = 0xc8; // GlobalTypes::CUtlVector< modellib::VPhysXJoint_t > m_joints; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pFeModel = 0xe0; // physicslib::PhysFeModelDesc_t* m_pFeModel; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_boneParents = 0xe8; // GlobalTypes::CUtlVector< uint16 > m_boneParents; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_surfacePropertyHashes = 0x100; // GlobalTypes::CUtlVector< uint32 > m_surfacePropertyHashes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_collisionAttributes = 0x118; // GlobalTypes::CUtlVector< modellib::VPhysXCollisionAttributes_t > m_collisionAttributes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_debugPartNames = 0x130; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_debugPartNames; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_embeddedKeyvalues = 0x148; // GlobalTypes::CUtlString m_embeddedKeyvalues; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bonesHash = 0x8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneNames = 0x20; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_indexNames = 0x38; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_indexHash = 0x50; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bindPose = 0x68; // GlobalTypes::CUtlVector<GlobalTypes::matrix3x4a_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_parts = 0x80; // GlobalTypes::CUtlVector<modellib::VPhysXBodyPart_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_shapeMarkups = 0x98; // GlobalTypes::CUtlVector<modellib::PhysShapeMarkup_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_constraints2 = 0xb0; // GlobalTypes::CUtlVector<modellib::VPhysXConstraint2_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_joints = 0xc8; // GlobalTypes::CUtlVector<modellib::VPhysXJoint_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pFeModel = 0xe0; // physicslib::PhysFeModelDesc_t**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_boneParents = 0xe8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_surfacePropertyHashes = 0x100; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_collisionAttributes = 0x118; // GlobalTypes::CUtlVector<modellib::VPhysXCollisionAttributes_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_debugPartNames = 0x130; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_embeddedKeyvalues = 0x148; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

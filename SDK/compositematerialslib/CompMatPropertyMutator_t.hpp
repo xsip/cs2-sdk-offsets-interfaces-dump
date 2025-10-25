@@ -35,7 +35,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_strCopyProperty_InputContainerProperty; // 0x18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strCopyProperty_TargetProperty; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strRandomRollInputVars_SeedInputVar; // 0x28 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_vecRandomRollInputVars_InputVarsToRoll; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_vecRandomRollInputVars_InputVarsToRoll; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_vecRandomRollInputVars_InputVarsToRoll[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_strCopyMatchingKeys_InputContainerSrc; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strCopyKeysWithSuffix_InputContainerSrc; // 0x50 | Schema_Atomic | Size: 0x8
@@ -51,9 +51,9 @@ namespace CS2 {
 			bool m_bSplatDebugInfo; // 0x310 | Schema_Builtin | Size: 0x1
 			bool m_bCaptureInRenderDoc; // 0x311 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecTexGenInstructions; // 0x318 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<compositematerialslib::CompMatPropertyMutator_t> m_vecTexGenInstructions; // 0x318 | Schema_Atomic | Size: 0x18
 			// char  m_vecTexGenInstructions[0x18]; // 0x318 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecConditionalMutators; // 0x330 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<compositematerialslib::CompMatPropertyMutator_t> m_vecConditionalMutators; // 0x330 | Schema_Atomic | Size: 0x18
 			// char  m_vecConditionalMutators[0x18]; // 0x330 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_strPopInputQueue_Container; // 0x348 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strDrawText_InputContainerSrc; // 0x350 | Schema_Atomic | Size: 0x8
@@ -62,7 +62,7 @@ namespace CS2 {
 			GlobalTypes::Color m_colDrawText_Color; // 0x368 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_strDrawText_Font; // 0x370 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< compositematerialslib::CompMatMutatorCondition_t > m_vecConditions; // 0x378 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<compositematerialslib::CompMatMutatorCondition_t> m_vecConditions; // 0x378 | Schema_Atomic | Size: 0x18
 			// char  m_vecConditions[0x18]; // 0x378 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bEnabled) == 0x0, "m_bEnabled in CompMatPropertyMutator_t should be at offset 0x0");

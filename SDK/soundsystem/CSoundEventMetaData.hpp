@@ -20,7 +20,7 @@ namespace CS2 {
 	namespace soundsystem {
 		class CSoundEventMetaData  {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVMixListResource > m_soundEventVMix; // 0x0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVMixListResource> m_soundEventVMix; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_soundEventVMix[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::soundsystem::CSoundEventMetaData, m_soundEventVMix) == 0x0, "m_soundEventVMix in CSoundEventMetaData should be at offset 0x0");

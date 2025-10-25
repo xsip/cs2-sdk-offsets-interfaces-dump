@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x108
 			namespace CPulseCell_WaitForObservable /*: public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow*/ {
-				constexpr std::ptrdiff_t m_Condition = 0x48; // pulse_runtime_lib::PulseObservableBoolExpression_t m_Condition; |  Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_OnTrue = 0xc0; // pulse_runtime_lib::CPulse_ResumePoint m_OnTrue; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_Condition = 0x48; // pulse_runtime_lib::PulseObservableBoolExpression_t  | Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_OnTrue = 0xc0; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

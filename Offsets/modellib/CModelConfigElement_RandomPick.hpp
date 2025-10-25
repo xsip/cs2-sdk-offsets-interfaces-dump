@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x80
 			namespace CModelConfigElement_RandomPick /*: public CS2::modellib::CModelConfigElement*/ {
-				constexpr std::ptrdiff_t m_Choices = 0x48; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Choices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ChoiceWeights = 0x60; // GlobalTypes::CUtlVector< float32 > m_ChoiceWeights; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Choices = 0x48; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ChoiceWeights = 0x60; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

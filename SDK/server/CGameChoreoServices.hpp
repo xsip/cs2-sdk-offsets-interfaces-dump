@@ -17,6 +17,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseAnimGraph;
+		class CScriptedSequence;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -24,10 +30,10 @@ namespace CS2 {
 	namespace server {
 		class CGameChoreoServices : public CS2::client::IChoreoServices {
 		public:
-			// server::CHandle< server::CBaseAnimGraph > m_hOwner; // 0x8 | Schema_Atomic | Size: 0x4
-			char  m_hOwner[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CScriptedSequence > m_hScriptedSequence; // 0xc | Schema_Atomic | Size: 0x4
-			char  m_hScriptedSequence[0x4]; // 0xc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseAnimGraph> m_hOwner; // 0x8 | Schema_Atomic | Size: 0x4
+			// char  m_hOwner[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CScriptedSequence> m_hScriptedSequence; // 0xc | Schema_Atomic | Size: 0x4
+			// char  m_hScriptedSequence[0x4]; // 0xc | Schema_Atomic | Size: 0x4
 			client::ScriptState_t m_scriptState; // 0x10 | Schema_DeclaredEnum | Size: 0x4
 			client::ChoreoState_t m_choreoState; // 0x14 | Schema_DeclaredEnum | Size: 0x4
 			entity2::GameTime_t m_flTimeStartedState; // 0x18 | Schema_DeclaredClass | Size: 0x4

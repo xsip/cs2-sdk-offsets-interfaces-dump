@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0x30
 			namespace SosEditItemInfo_t /**/ {
-				constexpr std::ptrdiff_t itemType = 0x0; // soundsystem::SosEditItemType_t itemType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t itemName = 0x8; // GlobalTypes::CUtlString itemName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t itemTypeName = 0x10; // GlobalTypes::CUtlString itemTypeName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t itemKVString = 0x20; // GlobalTypes::CUtlString itemKVString; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t itemPos = 0x28; // GlobalTypes::Vector2D itemPos; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t itemType = 0x0; // soundsystem::SosEditItemType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t itemName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t itemTypeName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t itemKVString = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t itemPos = 0x28; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

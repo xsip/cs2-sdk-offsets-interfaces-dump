@@ -21,9 +21,9 @@ namespace CS2 {
 	namespace client {
 		class C_Team : public CS2::client::C_BaseEntity {
 		public:
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< CBasePlayerController > > m_aPlayerControllers; // 0x5f8 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::CBasePlayerController>> m_aPlayerControllers; // 0x5f8 | Schema_Atomic | Size: 0x18
 			char  m_aPlayerControllers[0x18]; // 0x5f8 | Schema_Atomic | Size: 0x18
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BasePlayerPawn > > m_aPlayers; // 0x610 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BasePlayerPawn>> m_aPlayers; // 0x610 | Schema_Atomic | Size: 0x18
 			char  m_aPlayers[0x18]; // 0x610 | Schema_Atomic | Size: 0x18
 			int32_t m_iScore; // 0x628 | Schema_Builtin | Size: 0x4
 			char m_szTeamname[129]; // 0x62c | Schema_FixedArray | Size: 0x81

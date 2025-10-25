@@ -16,6 +16,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+		class CBasePlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -29,20 +35,20 @@ namespace CS2 {
 			S2_PAD(0x7);
 			// GlobalTypes::CNetworkUtlVectorBase< bool > m_ragEnabled; // 0xaf8 | Schema_Atomic | Size: 0x18
 			char  m_ragEnabled[0x18]; // 0xaf8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlGlobalTypes::VectorBase< Vector > m_ragPos; // 0xb10 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_ragPos; // 0xb10 | Schema_Atomic | Size: 0x18
 			char  m_ragPos[0x18]; // 0xb10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::QAngle > m_ragAngles; // 0xb28 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::QAngle> m_ragAngles; // 0xb28 | Schema_Atomic | Size: 0x18
 			char  m_ragAngles[0x18]; // 0xb28 | Schema_Atomic | Size: 0x18
 			uint32_t m_lastUpdateTickCount; // 0xb40 | Schema_Builtin | Size: 0x4
 			bool m_allAsleep; // 0xb44 | Schema_Builtin | Size: 0x1
 			bool m_bFirstCollisionAfterLaunch; // 0xb45 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CBaseEntity > m_hDamageEntity; // 0xb48 | Schema_Atomic | Size: 0x4
-			char  m_hDamageEntity[0x4]; // 0xb48 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hKiller; // 0xb4c | Schema_Atomic | Size: 0x4
-			char  m_hKiller[0x4]; // 0xb4c | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBasePlayerPawn > m_hPhysicsAttacker; // 0xb50 | Schema_Atomic | Size: 0x4
-			char  m_hPhysicsAttacker[0x4]; // 0xb50 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hDamageEntity; // 0xb48 | Schema_Atomic | Size: 0x4
+			// char  m_hDamageEntity[0x4]; // 0xb48 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hKiller; // 0xb4c | Schema_Atomic | Size: 0x4
+			// char  m_hKiller[0x4]; // 0xb4c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0xb50 | Schema_Atomic | Size: 0x4
+			// char  m_hPhysicsAttacker[0x4]; // 0xb50 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xb54 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flFadeOutStartTime; // 0xb58 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flFadeTime; // 0xb5c | Schema_Builtin | Size: 0x4
@@ -58,9 +64,9 @@ namespace CS2 {
 			float32 m_flBlendWeight; // 0xb8c | Schema_Builtin | Size: 0x4
 			float32 m_flDefaultFadeScale; // 0xb90 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_ragdollMins; // 0xb98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector> m_ragdollMins; // 0xb98 | Schema_Atomic | Size: 0x18
 			// char  m_ragdollMins[0x18]; // 0xb98 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_ragdollMaxs; // 0xbb0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector> m_ragdollMaxs; // 0xbb0 | Schema_Atomic | Size: 0x18
 			// char  m_ragdollMaxs[0x18]; // 0xbb0 | Schema_Atomic | Size: 0x18
 			bool m_bShouldDeleteActivationRecord; // 0xbc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17); // End padding

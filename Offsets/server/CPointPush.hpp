@@ -15,8 +15,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flRadius = 0x4f8; // float32 m_flRadius; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInnerRadius = 0x4fc; // float32 m_flInnerRadius; |  0x4fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flConeOfInfluence = 0x500; // float32 m_flConeOfInfluence; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszFilterName = 0x508; // GlobalTypes::CUtlSymbolLarge m_iszFilterName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFilter = 0x510; // server::CHandle< server::CBaseFilter > m_hFilter; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszFilterName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFilter = 0x510; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

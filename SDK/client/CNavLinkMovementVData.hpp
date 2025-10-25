@@ -25,12 +25,12 @@ namespace CS2 {
 	namespace client {
 		class CNavLinkMovementVData  {
 		public:
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName; // 0x0 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_sToolsOnlyOwnerModelName; // 0x0 | Schema_Atomic | Size: 0xe0
 			char  m_sToolsOnlyOwnerModelName[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
 			bool m_bIsInterpolated; // 0xe0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			uint32_t m_unRecommendedDistance; // 0xe4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< client::CNavLinkAnimgraphVar > m_vecAnimgraphVars; // 0xe8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::CNavLinkAnimgraphVar> m_vecAnimgraphVars; // 0xe8 | Schema_Atomic | Size: 0x18
 			// char  m_vecAnimgraphVars[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::CNavLinkMovementVData, m_sToolsOnlyOwnerModelName) == 0x0, "m_sToolsOnlyOwnerModelName in CNavLinkMovementVData should be at offset 0x0");

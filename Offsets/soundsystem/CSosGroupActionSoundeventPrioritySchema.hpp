@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0x38
 			namespace CSosGroupActionSoundeventPrioritySchema /*: public CS2::soundsystem::CSosGroupActionSchema*/ {
-				constexpr std::ptrdiff_t m_priorityValue = 0x8; // GlobalTypes::CUtlString m_priorityValue; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_priorityVolumeScalar = 0x10; // GlobalTypes::CUtlString m_priorityVolumeScalar; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_priorityContributeButDontRead = 0x18; // GlobalTypes::CUtlString m_priorityContributeButDontRead; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bPriorityReadButDontContribute = 0x20; // GlobalTypes::CUtlString m_bPriorityReadButDontContribute; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_priorityValue = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_priorityVolumeScalar = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_priorityContributeButDontRead = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bPriorityReadButDontContribute = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

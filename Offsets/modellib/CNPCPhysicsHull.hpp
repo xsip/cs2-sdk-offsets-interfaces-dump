@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x38
 			namespace CNPCPhysicsHull /**/ {
-				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CGlobalSymbol m_sName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_eType = 0x8; // modellib::NPCPhysicsHullType_t m_eType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_eType = 0x8; // modellib::NPCPhysicsHullType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flCapsuleHeight = 0xc; // float32 m_flCapsuleHeight; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCapsuleRadius = 0x10; // float32 m_flCapsuleRadius; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vCapsuleCenter1 = 0x14; // GlobalTypes::Vector m_vCapsuleCenter1; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vCapsuleCenter2 = 0x20; // GlobalTypes::Vector m_vCapsuleCenter2; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vCapsuleCenter1 = 0x14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vCapsuleCenter2 = 0x20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flGroundBoxHeight = 0x2c; // float32 m_flGroundBoxHeight; |  0x2c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flGroundBoxWidth = 0x30; // float32 m_flGroundBoxWidth; |  0x30 | Schema_Builtin | Size: 0x4
 			}

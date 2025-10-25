@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x50
 			namespace FeSDFRigid_t /**/ {
-				constexpr std::ptrdiff_t vLocalMin = 0x0; // GlobalTypes::Vector vLocalMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t vLocalMax = 0xc; // GlobalTypes::Vector vLocalMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t vLocalMin = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t vLocalMax = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t flBounciness = 0x18; // float32 flBounciness; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t nNode = 0x1c; // uint16_t nNode; |  0x1c | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nCollisionMask = 0x1e; // uint16_t nCollisionMask; |  0x1e | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nVertexMapIndex = 0x20; // uint16_t nVertexMapIndex; |  0x20 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nFlags = 0x22; // uint16_t nFlags; |  0x22 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_Distances = 0x28; // GlobalTypes::CUtlVector< float32 > m_Distances; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Distances = 0x28; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nWidth = 0x40; // int32_t m_nWidth; |  0x40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHeight = 0x44; // int32_t m_nHeight; |  0x44 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDepth = 0x48; // int32_t m_nDepth; |  0x48 | Schema_Builtin | Size: 0x4

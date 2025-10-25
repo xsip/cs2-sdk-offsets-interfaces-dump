@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CInfoFan;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -28,8 +33,8 @@ namespace CS2 {
 			bool m_bPushAwayFromInfoTarget; // 0x9c1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xe);
 			GlobalTypes::Quaternion m_qNoiseDelta; // 0x9d0 | Schema_Atomic | Size: 0x10
-			// server::CHandle< server::CInfoFan > m_hInfoFan; // 0x9e0 | Schema_Atomic | Size: 0x4
-			char  m_hInfoFan[0x4]; // 0x9e0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CInfoFan> m_hInfoFan; // 0x9e0 | Schema_Atomic | Size: 0x4
+			// char  m_hInfoFan[0x4]; // 0x9e0 | Schema_Atomic | Size: 0x4
 			float32 m_flForce; // 0x9e4 | Schema_Builtin | Size: 0x4
 			bool m_bFalloff; // 0x9e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

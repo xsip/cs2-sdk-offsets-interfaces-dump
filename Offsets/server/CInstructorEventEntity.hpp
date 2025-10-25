@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x508
 			namespace CInstructorEventEntity /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_iszName = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszHintTargetEntity = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_iszHintTargetEntity; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hTargetPlayer = 0x500; // server::CHandle< server::CBasePlayerPawn > m_hTargetPlayer; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszHintTargetEntity = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTargetPlayer = 0x500; // GlobalTypes::CHandle<server::CBasePlayerPawn>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

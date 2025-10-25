@@ -18,7 +18,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nDistFadeStart = 0x18; // uint16_t m_nDistFadeStart; |  0x18 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nDistFadeEnd = 0x1a; // uint16_t m_nDistFadeEnd; |  0x1a | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_flFadeScale = 0x1c; // float32 m_flFadeScale; |  0x1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRenderFxStartTime = 0x20; // entity2::GameTime_t m_flRenderFxStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flRenderFxStartTime = 0x20; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flRenderFxDuration = 0x24; // float32 m_flRenderFxDuration; |  0x24 | Schema_Builtin | Size: 0x4
 			}
 		}

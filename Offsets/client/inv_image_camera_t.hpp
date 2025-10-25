@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x34
 			namespace inv_image_camera_t /**/ {
-				constexpr std::ptrdiff_t angle = 0x0; // GlobalTypes::QAngle angle; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t angle = 0x0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t fov = 0xc; // float32 fov; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t znear = 0x10; // float32 znear; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t zfar = 0x14; // float32 zfar; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t target = 0x18; // GlobalTypes::Vector target; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t target_nudge = 0x24; // GlobalTypes::Vector target_nudge; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t target = 0x18; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t target_nudge = 0x24; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t orbit_distance = 0x30; // float32 orbit_distance; |  0x30 | Schema_Builtin | Size: 0x4
 			}
 		}

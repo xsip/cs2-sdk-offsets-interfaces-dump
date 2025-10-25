@@ -10,19 +10,19 @@ namespace CS2 {
 		namespace worldrenderer {
 			// Class size: 0x160
 			namespace WorldNode_t /**/ {
-				constexpr std::ptrdiff_t m_sceneObjects = 0x0; // GlobalTypes::CUtlVector< worldrenderer::SceneObject_t > m_sceneObjects; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_visClusterMembership = 0x18; // GlobalTypes::CUtlVector< uint16 > m_visClusterMembership; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_aggregateSceneObjects = 0x30; // GlobalTypes::CUtlVector< worldrenderer::AggregateSceneObject_t > m_aggregateSceneObjects; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_clutterSceneObjects = 0x48; // GlobalTypes::CUtlVector< worldrenderer::ClutterSceneObject_t > m_clutterSceneObjects; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_extraVertexStreamOverrides = 0x60; // GlobalTypes::CUtlVector< worldrenderer::ExtraVertexStreamOverride_t > m_extraVertexStreamOverrides; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_materialOverrides = 0x78; // GlobalTypes::CUtlVector< worldrenderer::MaterialOverride_t > m_materialOverrides; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_extraVertexStreams = 0x90; // GlobalTypes::CUtlVector< worldrenderer::WorldNodeOnDiskBufferData_t > m_extraVertexStreams; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_aggregateInstanceStreams = 0xa8; // GlobalTypes::CUtlVector< worldrenderer::AggregateInstanceStreamOnDiskData_t > m_aggregateInstanceStreams; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vertexAlbedoStreams = 0xc0; // GlobalTypes::CUtlVector< worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t > m_vertexAlbedoStreams; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_layerNames = 0xd8; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_layerNames; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_sceneObjectLayerIndices = 0xf0; // GlobalTypes::CUtlVector< uint8 > m_sceneObjectLayerIndices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_grassFileName = 0x108; // GlobalTypes::CUtlString m_grassFileName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nodeLightingInfo = 0x110; // worldrenderer::BakedLightingInfo_t m_nodeLightingInfo; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_sceneObjects = 0x0; // GlobalTypes::CUtlVector<worldrenderer::SceneObject_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_visClusterMembership = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_aggregateSceneObjects = 0x30; // GlobalTypes::CUtlVector<worldrenderer::AggregateSceneObject_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_clutterSceneObjects = 0x48; // GlobalTypes::CUtlVector<worldrenderer::ClutterSceneObject_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_extraVertexStreamOverrides = 0x60; // GlobalTypes::CUtlVector<worldrenderer::ExtraVertexStreamOverride_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_materialOverrides = 0x78; // GlobalTypes::CUtlVector<worldrenderer::MaterialOverride_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_extraVertexStreams = 0x90; // GlobalTypes::CUtlVector<worldrenderer::WorldNodeOnDiskBufferData_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_aggregateInstanceStreams = 0xa8; // GlobalTypes::CUtlVector<worldrenderer::AggregateInstanceStreamOnDiskData_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vertexAlbedoStreams = 0xc0; // GlobalTypes::CUtlVector<worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_layerNames = 0xd8; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sceneObjectLayerIndices = 0xf0; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_grassFileName = 0x108; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nodeLightingInfo = 0x110; // worldrenderer::BakedLightingInfo_t  | Schema_DeclaredClass | Size: 0x48
 				constexpr std::ptrdiff_t m_bHasBakedGeometryFlag = 0x158; // bool m_bHasBakedGeometryFlag; |  0x158 | Schema_Builtin | Size: 0x1
 			}
 		}

@@ -13,11 +13,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bDisabled = 0x5f8; // bool m_bDisabled; |  0x5f8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nResolutionX = 0x5fc; // int32_t m_nResolutionX; |  0x5fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nResolutionY = 0x600; // int32_t m_nResolutionY; |  0x600 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szLayoutFileName = 0x608; // GlobalTypes::CUtlSymbolLarge m_szLayoutFileName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_RenderAttrName = 0x610; // GlobalTypes::CUtlSymbolLarge m_RenderAttrName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_TargetEntities = 0x618; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_TargetEntities; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_szLayoutFileName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_RenderAttrName = 0x610; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_TargetEntities = 0x618; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nTargetChangeCount = 0x630; // int32_t m_nTargetChangeCount; |  0x630 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCSSClasses = 0x638; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCSSClasses = 0x638; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bCheckCSSClasses = 0x7b0; // bool m_bCheckCSSClasses; |  0x7b0 | Schema_Builtin | Size: 0x1
 			}
 		}

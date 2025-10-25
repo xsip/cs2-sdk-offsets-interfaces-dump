@@ -12,8 +12,8 @@ namespace CS2 {
 			namespace CRagdollPropAttached /*: public CS2::server::CRagdollProp*/ {
 				constexpr std::ptrdiff_t m_boneIndexAttached = 0xbe0; // uint32_t m_boneIndexAttached; |  0xbe0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_ragdollAttachedObjectIndex = 0xbe4; // uint32_t m_ragdollAttachedObjectIndex; |  0xbe4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentPointBoneSpace = 0xbe8; // GlobalTypes::Vector m_attachmentPointBoneSpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_attachmentPointRagdollSpace = 0xbf4; // GlobalTypes::Vector m_attachmentPointRagdollSpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_attachmentPointBoneSpace = 0xbe8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_attachmentPointRagdollSpace = 0xbf4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bShouldDetach = 0xc00; // bool m_bShouldDetach; |  0xc00 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bShouldDeleteAttachedActivationRecord = 0xc10; // bool m_bShouldDeleteAttachedActivationRecord; |  0xc10 | Schema_Builtin | Size: 0x1
 			}

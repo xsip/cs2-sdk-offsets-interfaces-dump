@@ -12,8 +12,8 @@ namespace CS2 {
 			namespace ExtraVertexStreamOverride_t /*: public CS2::worldrenderer::BaseSceneObjectOverride_t*/ {
 				constexpr std::ptrdiff_t m_nSubSceneObject = 0x4; // uint32_t m_nSubSceneObject; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDrawCallIndex = 0x8; // uint32_t m_nDrawCallIndex; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAdditionalMeshDrawPrimitiveFlags = 0xc; // modellib::MeshDrawPrimitiveFlags_t m_nAdditionalMeshDrawPrimitiveFlags; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_extraBufferBinding = 0x10; // modellib::CRenderBufferBinding m_extraBufferBinding; |  Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_nAdditionalMeshDrawPrimitiveFlags = 0xc; // modellib::MeshDrawPrimitiveFlags_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_extraBufferBinding = 0x10; // modellib::CRenderBufferBinding  | Schema_DeclaredClass | Size: 0x20
 			}
 		}
 	}

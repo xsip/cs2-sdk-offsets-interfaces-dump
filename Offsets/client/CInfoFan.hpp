@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_fFanForceMaxRadius = 0x638; // float32 m_fFanForceMaxRadius; |  0x638 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fFanForceMinRadius = 0x63c; // float32 m_fFanForceMinRadius; |  0x63c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCurveDistRange = 0x640; // float32 m_flCurveDistRange; |  0x640 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_FanForceCurveString = 0x648; // GlobalTypes::CUtlSymbolLarge m_FanForceCurveString; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_FanForceCurveString = 0x648; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

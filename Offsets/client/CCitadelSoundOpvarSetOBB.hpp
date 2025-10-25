@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x660
 			namespace CCitadelSoundOpvarSetOBB /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_iszStackName = 0x610; // GlobalTypes::CUtlSymbolLarge m_iszStackName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOperatorName = 0x618; // GlobalTypes::CUtlSymbolLarge m_iszOperatorName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOpvarName = 0x620; // GlobalTypes::CUtlSymbolLarge m_iszOpvarName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vDistanceInnerMins = 0x628; // GlobalTypes::Vector m_vDistanceInnerMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDistanceInnerMaxs = 0x634; // GlobalTypes::Vector m_vDistanceInnerMaxs; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDistanceOuterMins = 0x640; // GlobalTypes::Vector m_vDistanceOuterMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDistanceOuterMaxs = 0x64c; // GlobalTypes::Vector m_vDistanceOuterMaxs; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_iszStackName = 0x610; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOperatorName = 0x618; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOpvarName = 0x620; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vDistanceInnerMins = 0x628; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceInnerMaxs = 0x634; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceOuterMins = 0x640; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceOuterMaxs = 0x64c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nAABBDirection = 0x658; // int32_t m_nAABBDirection; |  0x658 | Schema_Builtin | Size: 0x4
 			}
 		}

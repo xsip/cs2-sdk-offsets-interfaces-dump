@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x110
 			namespace CSmartPropOperation_RandomScale /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_flRandomScaleMin = 0x50; // GlobalTypes::CSmartPropAttributeFloat m_flRandomScaleMin; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flRandomScaleMax = 0x90; // GlobalTypes::CSmartPropAttributeFloat m_flRandomScaleMax; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flSnapIncrement = 0xd0; // GlobalTypes::CSmartPropAttributeFloat m_flSnapIncrement; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flRandomScaleMin = 0x50; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flRandomScaleMax = 0x90; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flSnapIncrement = 0xd0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

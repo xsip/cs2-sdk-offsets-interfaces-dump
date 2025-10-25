@@ -10,21 +10,21 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x1D0
 			namespace CAnimDesc /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString m_name; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_flags = 0x10; // animationsystem::CAnimDesc_Flag m_flags; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_flags = 0x10; // animationsystem::CAnimDesc_Flag  | Schema_DeclaredClass | Size: 0x8
 				constexpr std::ptrdiff_t fps = 0x18; // float32 fps; |  0x18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Data = 0x20; // animationsystem::CAnimEncodedFrames m_Data; |  Schema_DeclaredClass | Size: 0xd8
-				constexpr std::ptrdiff_t m_movementArray = 0xf8; // GlobalTypes::CUtlVector< animationsystem::CAnimMovement > m_movementArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_xInitialOffset = 0x110; // GlobalTypes::CTransform m_xInitialOffset; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_eventArray = 0x130; // GlobalTypes::CUtlVector< animationsystem::CAnimEventDefinition > m_eventArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_activityArray = 0x148; // GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hierarchyArray = 0x160; // GlobalTypes::CUtlVector< animationsystem::CAnimLocalHierarchy > m_hierarchyArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Data = 0x20; // animationsystem::CAnimEncodedFrames  | Schema_DeclaredClass | Size: 0xd8
+				constexpr std::ptrdiff_t m_movementArray = 0xf8; // GlobalTypes::CUtlVector<animationsystem::CAnimMovement>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_xInitialOffset = 0x110; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_eventArray = 0x130; // GlobalTypes::CUtlVector<animationsystem::CAnimEventDefinition>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_activityArray = 0x148; // GlobalTypes::CUtlVector<animationsystem::CAnimActivity>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hierarchyArray = 0x160; // GlobalTypes::CUtlVector<animationsystem::CAnimLocalHierarchy>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t framestalltime = 0x178; // float32 framestalltime; |  0x178 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecRootMin = 0x17c; // GlobalTypes::Vector m_vecRootMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecRootMax = 0x188; // GlobalTypes::Vector m_vecRootMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecBoneWorldMin = 0x198; // GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vecBoneWorldMin; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecBoneWorldMax = 0x1b0; // GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_vecBoneWorldMax; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_sequenceParams = 0x1c8; // animationsystem::CAnimSequenceParams m_sequenceParams; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_vecRootMin = 0x17c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecRootMax = 0x188; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecBoneWorldMin = 0x198; // GlobalTypes::CUtlVector<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecBoneWorldMax = 0x1b0; // GlobalTypes::CUtlVector<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sequenceParams = 0x1c8; // animationsystem::CAnimSequenceParams  | Schema_DeclaredClass | Size: 0x8
 			}
 		}
 	}

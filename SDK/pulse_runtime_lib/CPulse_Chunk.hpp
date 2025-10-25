@@ -20,11 +20,11 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulse_Chunk  {
 		public:
-			// GlobalTypes::CUtlLeanVector< pulse_runtime_lib::PGDInstruction_t > m_Instructions; // 0x0 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::PGDInstruction_t> m_Instructions; // 0x0 | Schema_Atomic | Size: 0x10
 			char  m_Instructions[0x10]; // 0x0 | Schema_Atomic | Size: 0x10
-			// GlobalTypes::CUtlLeanVector< pulse_runtime_lib::CPulse_RegisterInfo > m_Registers; // 0x10 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulse_RegisterInfo> m_Registers; // 0x10 | Schema_Atomic | Size: 0x10
 			char  m_Registers[0x10]; // 0x10 | Schema_Atomic | Size: 0x10
-			// GlobalTypes::CUtlLeanVector< pulse_runtime_lib::PulseDocNodeID_t > m_InstructionEditorIDs; // 0x20 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::PulseDocNodeID_t> m_InstructionEditorIDs; // 0x20 | Schema_Atomic | Size: 0x10
 			char  m_InstructionEditorIDs[0x10]; // 0x20 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x28); // End padding
 		};

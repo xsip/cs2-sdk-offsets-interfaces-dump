@@ -15,7 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bOutside = 0x1d5; // bool m_bOutside; |  0x1d5 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseBones = 0x1d6; // bool m_bUseBones; |  0x1d6 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_HitboxSetName = 0x1d7; // char m_HitboxSetName[128]; |  0x1d7 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_vecPosOffset = 0x258; // particleslib::CPerParticleVecInput m_vecPosOffset; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecPosOffset = 0x258; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_fDrag = 0x910; // float32 m_fDrag; |  0x910 | Schema_Builtin | Size: 0x4
 			}
 		}

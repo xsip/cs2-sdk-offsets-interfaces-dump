@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x9B8
 			namespace CTonemapTrigger /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_tonemapControllerName = 0x9a8; // GlobalTypes::CUtlSymbolLarge m_tonemapControllerName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hTonemapController = 0x9b0; // GlobalTypes::CEntityHandle m_hTonemapController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_tonemapControllerName = 0x9a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTonemapController = 0x9b0; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

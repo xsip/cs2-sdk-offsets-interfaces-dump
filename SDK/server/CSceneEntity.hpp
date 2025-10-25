@@ -16,6 +16,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+		class CBaseFlex;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -34,22 +40,22 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszTarget6; // 0x530 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszTarget7; // 0x538 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszTarget8; // 0x540 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hTarget1; // 0x548 | Schema_Atomic | Size: 0x4
-			char  m_hTarget1[0x4]; // 0x548 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget2; // 0x54c | Schema_Atomic | Size: 0x4
-			char  m_hTarget2[0x4]; // 0x54c | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget3; // 0x550 | Schema_Atomic | Size: 0x4
-			char  m_hTarget3[0x4]; // 0x550 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget4; // 0x554 | Schema_Atomic | Size: 0x4
-			char  m_hTarget4[0x4]; // 0x554 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget5; // 0x558 | Schema_Atomic | Size: 0x4
-			char  m_hTarget5[0x4]; // 0x558 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget6; // 0x55c | Schema_Atomic | Size: 0x4
-			char  m_hTarget6[0x4]; // 0x55c | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget7; // 0x560 | Schema_Atomic | Size: 0x4
-			char  m_hTarget7[0x4]; // 0x560 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget8; // 0x564 | Schema_Atomic | Size: 0x4
-			char  m_hTarget8[0x4]; // 0x564 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget1; // 0x548 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget1[0x4]; // 0x548 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget2; // 0x54c | Schema_Atomic | Size: 0x4
+			// char  m_hTarget2[0x4]; // 0x54c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget3; // 0x550 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget3[0x4]; // 0x550 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget4; // 0x554 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget4[0x4]; // 0x554 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget5; // 0x558 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget5[0x4]; // 0x558 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget6; // 0x55c | Schema_Atomic | Size: 0x4
+			// char  m_hTarget6[0x4]; // 0x55c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget7; // 0x560 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget7[0x4]; // 0x560 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget8; // 0x564 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget8[0x4]; // 0x564 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_sTargetAttachment; // 0x568 | Schema_Atomic | Size: 0x8
 			bool m_bIsPlayingBack; // 0x570 | Schema_Builtin | Size: 0x1
 			bool m_bPaused; // 0x571 | Schema_Builtin | Size: 0x1
@@ -67,8 +73,8 @@ namespace CS2 {
 			float32 m_flAutomationDelay; // 0x590 | Schema_Builtin | Size: 0x4
 			float32 m_flAutomationTime; // 0x594 | Schema_Builtin | Size: 0x4
 			int32_t m_nSpeechPriority; // 0x598 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hWaitingForThisResumeScene; // 0x59c | Schema_Atomic | Size: 0x4
-			char  m_hWaitingForThisResumeScene[0x4]; // 0x59c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hWaitingForThisResumeScene; // 0x59c | Schema_Atomic | Size: 0x4
+			// char  m_hWaitingForThisResumeScene[0x4]; // 0x59c | Schema_Atomic | Size: 0x4
 			bool m_bWaitingForResumeScene; // 0x5a0 | Schema_Builtin | Size: 0x1
 			bool m_bPausedViaInput; // 0x5a1 | Schema_Builtin | Size: 0x1
 			bool m_bPauseAtNextInterrupt; // 0x5a2 | Schema_Builtin | Size: 0x1
@@ -77,9 +83,9 @@ namespace CS2 {
 			bool m_bInterruptedActorsScenes; // 0x5a5 | Schema_Builtin | Size: 0x1
 			bool m_bBreakOnNonIdle; // 0x5a6 | Schema_Builtin | Size: 0x1
 			bool m_bSceneFinished; // 0x5a7 | Schema_Builtin | Size: 0x1
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseFlex > > m_hActorList; // 0x5a8 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseFlex>> m_hActorList; // 0x5a8 | Schema_Atomic | Size: 0x18
 			char  m_hActorList[0x18]; // 0x5a8 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hRemoveActorList; // 0x5c0 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hRemoveActorList; // 0x5c0 | Schema_Atomic | Size: 0x18
 			char  m_hRemoveActorList[0x18]; // 0x5c0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x30);
 			int32_t m_nSceneFlushCounter; // 0x608 | Schema_Builtin | Size: 0x4
@@ -91,8 +97,8 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnPaused; // 0x688 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnResumed; // 0x6b0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnTrigger[16]; // 0x6d8 | Schema_FixedArray | Size: 0x2800
-			// server::CHandle< server::CSceneEntity > m_hInterruptScene; // 0x9e8 | Schema_Atomic | Size: 0x4
-			char  m_hInterruptScene[0x4]; // 0x9e8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CSceneEntity> m_hInterruptScene; // 0x9e8 | Schema_Atomic | Size: 0x4
+			// char  m_hInterruptScene[0x4]; // 0x9e8 | Schema_Atomic | Size: 0x4
 			int32_t m_nInterruptCount; // 0x9ec | Schema_Builtin | Size: 0x4
 			bool m_bSceneMissing; // 0x9f0 | Schema_Builtin | Size: 0x1
 			bool m_bInterrupted; // 0x9f1 | Schema_Builtin | Size: 0x1
@@ -100,16 +106,16 @@ namespace CS2 {
 			bool m_bInterruptSceneFinished; // 0x9f3 | Schema_Builtin | Size: 0x1
 			bool m_bRestoring; // 0x9f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CUtlVector< server.dll::CHandle< CSceneEntity > > m_hNotifySceneCompletion; // 0x9f8 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CSceneEntity>> m_hNotifySceneCompletion; // 0x9f8 | Schema_Atomic | Size: 0x18
 			char  m_hNotifySceneCompletion[0x18]; // 0x9f8 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector< server.dll::CHandle< CSceneListManager > > m_hListManagers; // 0xa10 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>> m_hListManagers; // 0xa10 | Schema_Atomic | Size: 0x18
 			char  m_hListManagers[0x18]; // 0xa10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszSoundName; // 0xa28 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszSequenceName; // 0xa30 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFlex > m_hActor; // 0xa38 | Schema_Atomic | Size: 0x4
-			char  m_hActor[0x4]; // 0xa38 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hActivator; // 0xa3c | Schema_Atomic | Size: 0x4
-			char  m_hActivator[0x4]; // 0xa3c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFlex> m_hActor; // 0xa38 | Schema_Atomic | Size: 0x4
+			// char  m_hActor[0x4]; // 0xa38 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hActivator; // 0xa3c | Schema_Atomic | Size: 0x4
+			// char  m_hActivator[0x4]; // 0xa3c | Schema_Atomic | Size: 0x4
 			int32_t m_BusyActor; // 0xa40 | Schema_Builtin | Size: 0x4
 			server::SceneOnPlayerDeath_t m_iPlayerDeathBehavior; // 0xa44 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x8); // End padding

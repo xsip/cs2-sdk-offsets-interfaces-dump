@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x110
 			namespace CNmBoneWeightList /**/ {
-				constexpr std::ptrdiff_t m_skeletonName = 0x0; // GlobalTypes::CResourceName m_skeletonName; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_boneIDs = 0xe0; // GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_boneIDs; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_weights = 0xf8; // GlobalTypes::CUtlVector< float32 > m_weights; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_skeletonName = 0x0; // GlobalTypes::CResourceName  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_boneIDs = 0xe0; // GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_weights = 0xf8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

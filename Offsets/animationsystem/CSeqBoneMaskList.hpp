@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x60
 			namespace CSeqBoneMaskList /**/ {
-				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString m_sName; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_nLocalBoneArray = 0x10; // GlobalTypes::CUtlVector< int16 > m_nLocalBoneArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flBoneWeightArray = 0x28; // GlobalTypes::CUtlVector< float32 > m_flBoneWeightArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_nLocalBoneArray = 0x10; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flBoneWeightArray = 0x28; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flDefaultMorphCtrlWeight = 0x40; // float32 m_flDefaultMorphCtrlWeight; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_morphCtrlWeightArray = 0x48; // GlobalTypes::pair< CBufferString, float32 > > m_morphCtrlWeightArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_morphCtrlWeightArray = 0x48; // GlobalTypes::CUtlVector<std::pair< CBufferString, float32 >>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

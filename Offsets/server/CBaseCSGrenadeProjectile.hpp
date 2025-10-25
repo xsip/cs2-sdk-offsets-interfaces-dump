@@ -10,20 +10,20 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xC40
 			namespace CBaseCSGrenadeProjectile /*: public CS2::server::CBaseGrenade*/ {
-				constexpr std::ptrdiff_t m_vInitialPosition = 0xbd0; // GlobalTypes::Vector m_vInitialPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vInitialVelocity = 0xbdc; // GlobalTypes::Vector m_vInitialVelocity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vInitialPosition = 0xbd0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vInitialVelocity = 0xbdc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nBounces = 0xbe8; // int32_t m_nBounces; |  0xbe8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nExplodeEffectIndex = 0xbf0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_nExplodeEffectIndex; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nExplodeEffectIndex = 0xbf0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nExplodeEffectTickBegin = 0xbf8; // int32_t m_nExplodeEffectTickBegin; |  0xbf8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecExplodeEffectOrigin = 0xbfc; // GlobalTypes::Vector m_vecExplodeEffectOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flSpawnTime = 0xc08; // entity2::GameTime_t m_flSpawnTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecExplodeEffectOrigin = 0xbfc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flSpawnTime = 0xc08; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_unOGSExtraFlags = 0xc0c; // uint8_t m_unOGSExtraFlags; |  0xc0c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDetonationRecorded = 0xc0d; // bool m_bDetonationRecorded; |  0xc0d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nItemIndex = 0xc0e; // uint16_t m_nItemIndex; |  0xc0e | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_vecOriginalSpawnLocation = 0xc10; // GlobalTypes::Vector m_vecOriginalSpawnLocation; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flLastBounceSoundTime = 0xc1c; // entity2::GameTime_t m_flLastBounceSoundTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecGrenadeSpin = 0xc20; // GlobalTypes::RotationVector m_vecGrenadeSpin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecLastHitSurfaceNormal = 0xc2c; // GlobalTypes::Vector m_vecLastHitSurfaceNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOriginalSpawnLocation = 0xc10; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flLastBounceSoundTime = 0xc1c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecGrenadeSpin = 0xc20; // GlobalTypes::RotationVector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLastHitSurfaceNormal = 0xc2c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nTicksAtZeroVelocity = 0xc38; // int32_t m_nTicksAtZeroVelocity; |  0xc38 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHasEverHitEnemy = 0xc3c; // bool m_bHasEverHitEnemy; |  0xc3c | Schema_Builtin | Size: 0x1
 			}

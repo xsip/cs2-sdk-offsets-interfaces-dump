@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x58
 			namespace CBoneConstraintDotToMorph /*: public CS2::modellib::CBoneConstraintBase*/ {
-				constexpr std::ptrdiff_t m_sBoneName = 0x20; // GlobalTypes::CUtlString m_sBoneName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sTargetBoneName = 0x28; // GlobalTypes::CUtlString m_sTargetBoneName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sMorphChannelName = 0x30; // GlobalTypes::CUtlString m_sMorphChannelName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sBoneName = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sTargetBoneName = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sMorphChannelName = 0x30; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flRemap = 0x38; // float32 m_flRemap[4]; |  0x38 | Schema_FixedArray | Size: 0x10
 			}
 		}

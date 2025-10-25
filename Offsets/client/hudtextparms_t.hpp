@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x14
 			namespace hudtextparms_t /**/ {
-				constexpr std::ptrdiff_t color1 = 0x0; // GlobalTypes::Color color1; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t color2 = 0x4; // GlobalTypes::Color color2; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t color1 = 0x0; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t color2 = 0x4; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t effect = 0x8; // uint8_t effect; |  0x8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t channel = 0x9; // uint8_t channel; |  0x9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t x = 0xc; // float32 x; |  0xc | Schema_Builtin | Size: 0x4

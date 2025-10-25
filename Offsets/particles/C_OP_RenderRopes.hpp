@@ -21,9 +21,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nMinTesselation = 0x2e08; // int32_t m_nMinTesselation; |  0x2e08 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMaxTesselation = 0x2e0c; // int32_t m_nMaxTesselation; |  0x2e0c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTessScale = 0x2e10; // float32 m_flTessScale; |  0x2e10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTextureVWorldSize = 0x2e18; // particleslib::CParticleCollectionRendererFloatInput m_flTextureVWorldSize; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flTextureVScrollRate = 0x2f88; // particleslib::CParticleCollectionRendererFloatInput m_flTextureVScrollRate; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flTextureVOffset = 0x30f8; // particleslib::CParticleCollectionRendererFloatInput m_flTextureVOffset; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flTextureVWorldSize = 0x2e18; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flTextureVScrollRate = 0x2f88; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flTextureVOffset = 0x30f8; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_nTextureVParamsCP = 0x3268; // int32_t m_nTextureVParamsCP; |  0x3268 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bClampV = 0x326c; // bool m_bClampV; |  0x326c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nScaleCP1 = 0x3270; // int32_t m_nScaleCP1; |  0x3270 | Schema_Builtin | Size: 0x4
@@ -32,14 +32,14 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flScaleVScrollByControlPointDistance = 0x327c; // float32 m_flScaleVScrollByControlPointDistance; |  0x327c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flScaleVOffsetByControlPointDistance = 0x3280; // float32 m_flScaleVOffsetByControlPointDistance; |  0x3280 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseScalarForTextureCoordinate = 0x3285; // bool m_bUseScalarForTextureCoordinate; |  0x3285 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nScalarFieldForTextureCoordinate = 0x3288; // particles::ParticleAttributeIndex_t m_nScalarFieldForTextureCoordinate; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nScalarFieldForTextureCoordinate = 0x3288; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flScalarAttributeTextureCoordScale = 0x328c; // float32 m_flScalarAttributeTextureCoordScale; |  0x328c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bReverseOrder = 0x3290; // bool m_bReverseOrder; |  0x3290 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bClosedLoop = 0x3291; // bool m_bClosedLoop; |  0x3291 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nSplitField = 0x3294; // particles::ParticleAttributeIndex_t m_nSplitField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nSplitField = 0x3294; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bSortBySegmentID = 0x3298; // bool m_bSortBySegmentID; |  0x3298 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOrientationType = 0x329c; // particles::ParticleOrientationChoiceList_t m_nOrientationType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nVectorFieldForOrientation = 0x32a0; // particles::ParticleAttributeIndex_t m_nVectorFieldForOrientation; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nOrientationType = 0x329c; // particles::ParticleOrientationChoiceList_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nVectorFieldForOrientation = 0x32a0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bDrawAsOpaque = 0x32a4; // bool m_bDrawAsOpaque; |  0x32a4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bGenerateNormals = 0x32a5; // bool m_bGenerateNormals; |  0x32a5 | Schema_Builtin | Size: 0x1
 			}

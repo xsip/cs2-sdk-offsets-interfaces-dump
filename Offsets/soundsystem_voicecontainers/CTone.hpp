@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0x60
 			namespace CTone /**/ {
-				constexpr std::ptrdiff_t m_harmonics = 0x0; // GlobalTypes::CHarmonic > m_harmonics; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_curve = 0x18; // GlobalTypes::CPiecewiseCurve m_curve; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_harmonics = 0x0; // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth::CHarmonic>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_curve = 0x18; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 				constexpr std::ptrdiff_t m_bSyncInstances = 0x58; // bool m_bSyncInstances; |  0x58 | Schema_Builtin | Size: 0x1
 			}
 		}

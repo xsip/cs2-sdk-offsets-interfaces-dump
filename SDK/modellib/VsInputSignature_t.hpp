@@ -25,9 +25,9 @@ namespace CS2 {
 	namespace modellib {
 		class VsInputSignature_t  {
 		public:
-			GlobalTypes::CUtlVector< modellib::VsInputSignatureElement_t > m_elems; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::VsInputSignatureElement_t> m_elems; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_elems[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< modellib::VsInputSignatureElement_t > m_depth_elems; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::VsInputSignatureElement_t> m_depth_elems; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_depth_elems[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::VsInputSignature_t, m_elems) == 0x0, "m_elems in VsInputSignature_t should be at offset 0x0");

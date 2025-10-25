@@ -11,15 +11,15 @@ namespace CS2 {
 			// Class size: 0xBE0
 			namespace CBaseCombatCharacter /*: public CS2::server::CBaseFlex*/ {
 				constexpr std::ptrdiff_t m_bForceServerRagdoll = 0xb20; // bool m_bForceServerRagdoll; |  0xb20 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hMyWearables = 0xb28; // server::CNetworkUtlVectorBase< server.dll::CHandle< CEconWearable > > m_hMyWearables; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hMyWearables = 0xb28; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CEconWearable>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_impactEnergyScale = 0xb40; // float32 m_impactEnergyScale; |  0xb40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bApplyStressDamage = 0xb44; // bool m_bApplyStressDamage; |  0xb44 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDeathEventsDispatched = 0xb45; // bool m_bDeathEventsDispatched; |  0xb45 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pVecRelationships = 0xb88; // GlobalTypes::CUtlVector< RelationshipOverride_t >* m_pVecRelationships; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_strRelationships = 0xb90; // GlobalTypes::CUtlSymbolLarge m_strRelationships; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_eHull = 0xb98; // client::Hull_t m_eHull; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_pVecRelationships = 0xb88; // GlobalTypes::CUtlVector*  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_strRelationships = 0xb90; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_eHull = 0xb98; // client::Hull_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nNavHullIdx = 0xb9c; // uint32_t m_nNavHullIdx; |  0xb9c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_movementStats = 0xba0; // server::CMovementStatsProperty m_movementStats; |  Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_movementStats = 0xba0; // server::CMovementStatsProperty  | Schema_DeclaredClass | Size: 0x40
 			}
 		}
 	}

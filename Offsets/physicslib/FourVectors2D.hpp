@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x20
 			namespace FourVectors2D /**/ {
-				constexpr std::ptrdiff_t x = 0x0; // GlobalTypes::fltx4 x; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t y = 0x10; // GlobalTypes::fltx4 y; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t x = 0x0; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t y = 0x10; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

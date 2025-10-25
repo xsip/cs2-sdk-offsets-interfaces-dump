@@ -11,11 +11,11 @@ namespace CS2 {
 			// Class size: 0x50
 			namespace ChainToSolveData_t /**/ {
 				constexpr std::ptrdiff_t m_nChainIndex = 0x0; // int32_t m_nChainIndex; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_SolverSettings = 0x4; // animgraphlib::IKSolverSettings_t m_SolverSettings; |  Schema_DeclaredClass | Size: 0xc
-				constexpr std::ptrdiff_t m_TargetSettings = 0x10; // animgraphlib::IKTargetSettings_t m_TargetSettings; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_DebugSetting = 0x38; // animgraphlib::SolveIKChainAnimNodeDebugSetting m_DebugSetting; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_SolverSettings = 0x4; // animgraphlib::IKSolverSettings_t  | Schema_DeclaredClass | Size: 0xc
+				constexpr std::ptrdiff_t m_TargetSettings = 0x10; // animgraphlib::IKTargetSettings_t  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_DebugSetting = 0x38; // animgraphlib::SolveIKChainAnimNodeDebugSetting  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flDebugNormalizedValue = 0x3c; // float32 m_flDebugNormalizedValue; |  0x3c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vDebugOffset = 0x40; // GlobalTypes::VectorAligned m_vDebugOffset; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vDebugOffset = 0x40; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x520
 			namespace CInfoDynamicShadowHintBox /*: public CS2::server::CInfoDynamicShadowHint*/ {
-				constexpr std::ptrdiff_t m_vBoxMins = 0x508; // GlobalTypes::Vector m_vBoxMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vBoxMaxs = 0x514; // GlobalTypes::Vector m_vBoxMaxs; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMins = 0x508; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMaxs = 0x514; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

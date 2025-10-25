@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xD0
 			namespace CHitReactUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_opFixedSettings = 0x70; // animgraphlib::HitReactFixedSettings_t m_opFixedSettings; |  Schema_DeclaredClass | Size: 0x44
-				constexpr std::ptrdiff_t m_triggerParam = 0xbc; // animgraphlib::CAnimParamHandle m_triggerParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hitBoneParam = 0xbe; // animgraphlib::CAnimParamHandle m_hitBoneParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hitOffsetParam = 0xc0; // animgraphlib::CAnimParamHandle m_hitOffsetParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hitDirectionParam = 0xc2; // animgraphlib::CAnimParamHandle m_hitDirectionParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hitStrengthParam = 0xc4; // animgraphlib::CAnimParamHandle m_hitStrengthParam; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_opFixedSettings = 0x70; // animgraphlib::HitReactFixedSettings_t  | Schema_DeclaredClass | Size: 0x44
+				constexpr std::ptrdiff_t m_triggerParam = 0xbc; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hitBoneParam = 0xbe; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hitOffsetParam = 0xc0; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hitDirectionParam = 0xc2; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hitStrengthParam = 0xc4; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_flMinDelayBetweenHits = 0xc8; // float32 m_flMinDelayBetweenHits; |  0xc8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bResetChild = 0xcc; // bool m_bResetChild; |  0xcc | Schema_Builtin | Size: 0x1
 			}

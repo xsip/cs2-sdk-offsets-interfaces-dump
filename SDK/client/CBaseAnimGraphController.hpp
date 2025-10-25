@@ -46,7 +46,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			entity2::GameTime_t m_flPrevAnimUpdateTime; // 0x14d8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x384);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmGraphDefinition > m_hGraphDefinitionAG2; // 0x1860 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmGraphDefinition> m_hGraphDefinitionAG2; // 0x1860 | Schema_Atomic | Size: 0x8
 			char  m_hGraphDefinitionAG2[0x8]; // 0x1860 | Schema_Atomic | Size: 0x8
 			bool m_bIsUsingAG2; // 0x1868 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

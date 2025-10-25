@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x20
 			namespace PulseGraphExecutionHistoryEntry_t /**/ {
-				constexpr std::ptrdiff_t nCursorID = 0x0; // pulse_runtime_lib::PulseCursorID_t nCursorID; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t nEditorID = 0x4; // pulse_runtime_lib::PulseDocNodeID_t nEditorID; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t nCursorID = 0x0; // pulse_runtime_lib::PulseCursorID_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t nEditorID = 0x4; // pulse_runtime_lib::PulseDocNodeID_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t flExecTime = 0x8; // float32 flExecTime; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t unFlags = 0xc; // uint32_t unFlags; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t tagName = 0x10; // GlobalTypes::PulseSymbol_t tagName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t tagName = 0x10; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xC8
 			namespace CSmartPropSelectionCriteria_EndCap /*: public CS2::smartprops::CSmartPropSelectionCriteria*/ {
-				constexpr std::ptrdiff_t m_bStart = 0x48; // GlobalTypes::CSmartPropAttributeBool m_bStart; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bEnd = 0x88; // GlobalTypes::CSmartPropAttributeBool m_bEnd; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bStart = 0x48; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bEnd = 0x88; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

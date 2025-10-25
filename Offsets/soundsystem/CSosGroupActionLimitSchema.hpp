@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x18
 			namespace CSosGroupActionLimitSchema /*: public CS2::soundsystem::CSosGroupActionSchema*/ {
 				constexpr std::ptrdiff_t m_nMaxCount = 0x8; // int32_t m_nMaxCount; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nStopType = 0xc; // soundsystem::SosActionStopType_t m_nStopType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nSortType = 0x10; // soundsystem::SosActionLimitSortType_t m_nSortType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nStopType = 0xc; // soundsystem::SosActionStopType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSortType = 0x10; // soundsystem::SosActionLimitSortType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bStopImmediate = 0x14; // bool m_bStopImmediate; |  0x14 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCountStopped = 0x15; // bool m_bCountStopped; |  0x15 | Schema_Builtin | Size: 0x1
 			}

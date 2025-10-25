@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x70
 			namespace CAnimParameterBase /**/ {
-				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CGlobalSymbol m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sComment = 0x20; // GlobalTypes::CUtlString m_sComment; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_group = 0x28; // GlobalTypes::CUtlString m_group; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_id = 0x30; // modellib::AnimParamID m_id; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_componentName = 0x48; // GlobalTypes::CUtlString m_componentName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sComment = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_group = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_id = 0x30; // modellib::AnimParamID  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_componentName = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bNetworkingRequested = 0x68; // bool m_bNetworkingRequested; |  0x68 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsReferenced = 0x69; // bool m_bIsReferenced; |  0x69 | Schema_Builtin | Size: 0x1
 			}

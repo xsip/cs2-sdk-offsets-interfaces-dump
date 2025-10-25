@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x4
 			namespace CursorState_t /**/ {
-				constexpr std::ptrdiff_t m_hTarget = 0x0; // server::CHandle< server::CBaseAnimGraph > m_hTarget; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTarget = 0x0; // GlobalTypes::CHandle<server::CBaseAnimGraph>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

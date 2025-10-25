@@ -11,32 +11,32 @@ namespace CS2 {
 			// Class size: 0xE90
 			namespace CPlantedC4 /*: public CS2::server::CBaseAnimGraph*/ {
 				constexpr std::ptrdiff_t m_bBombTicking = 0xa98; // bool m_bBombTicking; |  0xa98 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flC4Blow = 0xa9c; // entity2::GameTime_t m_flC4Blow; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flC4Blow = 0xa9c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nBombSite = 0xaa0; // int32_t m_nBombSite; |  0xaa0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSourceSoundscapeHash = 0xaa4; // int32_t m_nSourceSoundscapeHash; |  0xaa4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAbortDetonationBecauseWorldIsFrozen = 0xaa8; // bool m_bAbortDetonationBecauseWorldIsFrozen; |  0xaa8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_AttributeManager = 0xab0; // server::CAttributeContainer m_AttributeManager; |  Schema_DeclaredClass | Size: 0x2f8
-				constexpr std::ptrdiff_t m_OnBombDefused = 0xda8; // entity2::CEntityIOOutput m_OnBombDefused; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnBombBeginDefuse = 0xdd0; // entity2::CEntityIOOutput m_OnBombBeginDefuse; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnBombDefuseAborted = 0xdf8; // entity2::CEntityIOOutput m_OnBombDefuseAborted; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_AttributeManager = 0xab0; // server::CAttributeContainer  | Schema_DeclaredClass | Size: 0x2f8
+				constexpr std::ptrdiff_t m_OnBombDefused = 0xda8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBombBeginDefuse = 0xdd0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBombDefuseAborted = 0xdf8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_bCannotBeDefused = 0xe20; // bool m_bCannotBeDefused; |  0xe20 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_entitySpottedState = 0xe28; // server::EntitySpottedState_t m_entitySpottedState; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_entitySpottedState = 0xe28; // server::EntitySpottedState_t  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_nSpotRules = 0xe40; // int32_t m_nSpotRules; |  0xe40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bTrainingPlacedByPlayer = 0xe44; // bool m_bTrainingPlacedByPlayer; |  0xe44 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasExploded = 0xe45; // bool m_bHasExploded; |  0xe45 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flTimerLength = 0xe48; // float32 m_flTimerLength; |  0xe48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bBeingDefused = 0xe4c; // bool m_bBeingDefused; |  0xe4c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fLastDefuseTime = 0xe54; // entity2::GameTime_t m_fLastDefuseTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fLastDefuseTime = 0xe54; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flDefuseLength = 0xe5c; // float32 m_flDefuseLength; |  0xe5c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefuseCountDown = 0xe60; // entity2::GameTime_t m_flDefuseCountDown; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefuseCountDown = 0xe60; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bBombDefused = 0xe64; // bool m_bBombDefused; |  0xe64 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hBombDefuser = 0xe68; // server::CHandle< server::CCSPlayerPawn > m_hBombDefuser; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hBombDefuser = 0xe68; // GlobalTypes::CHandle<server::CCSPlayerPawn>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iProgressBarTime = 0xe6c; // int32_t m_iProgressBarTime; |  0xe6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bVoiceAlertFired = 0xe70; // bool m_bVoiceAlertFired; |  0xe70 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bVoiceAlertPlayed = 0xe71; // bool m_bVoiceAlertPlayed[4]; |  0xe71 | Schema_FixedArray | Size: 0x4
-				constexpr std::ptrdiff_t m_flNextBotBeepTime = 0xe78; // entity2::GameTime_t m_flNextBotBeepTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_angCatchUpToPlayerEye = 0xe80; // GlobalTypes::QAngle m_angCatchUpToPlayerEye; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flLastSpinDetectionTime = 0xe8c; // entity2::GameTime_t m_flLastSpinDetectionTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextBotBeepTime = 0xe78; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_angCatchUpToPlayerEye = 0xe80; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flLastSpinDetectionTime = 0xe8c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x84C0
 			namespace C_Inferno /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_nfxFireDamageEffect = 0xef0; // client::ParticleIndex_t m_nfxFireDamageEffect; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_hInfernoPointsSnapshot = 0xef8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoPointsSnapshot; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hInfernoFillerPointsSnapshot = 0xf00; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoFillerPointsSnapshot; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hInfernoOutlinePointsSnapshot = 0xf08; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoOutlinePointsSnapshot; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hInfernoClimbingOutlinePointsSnapshot = 0xf10; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoClimbingOutlinePointsSnapshot; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hInfernoDecalsSnapshot = 0xf18; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoDecalsSnapshot; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_firePositions = 0xf20; // GlobalTypes::Vector m_firePositions[64]; |  Schema_FixedArray | Size: 0x300
-				constexpr std::ptrdiff_t m_fireParentPositions = 0x1220; // GlobalTypes::Vector m_fireParentPositions[64]; |  Schema_FixedArray | Size: 0x300
+				constexpr std::ptrdiff_t m_nfxFireDamageEffect = 0xef0; // client::ParticleIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hInfernoPointsSnapshot = 0xef8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hInfernoFillerPointsSnapshot = 0xf00; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hInfernoOutlinePointsSnapshot = 0xf08; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hInfernoClimbingOutlinePointsSnapshot = 0xf10; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hInfernoDecalsSnapshot = 0xf18; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_firePositions = 0xf20; // GlobalTypes::Vector[64]  | Schema_FixedArray | Size: 0x300
+				constexpr std::ptrdiff_t m_fireParentPositions = 0x1220; // GlobalTypes::Vector[64]  | Schema_FixedArray | Size: 0x300
 				constexpr std::ptrdiff_t m_bFireIsBurning = 0x1520; // bool m_bFireIsBurning[64]; |  0x1520 | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_BurnNormal = 0x1560; // GlobalTypes::Vector m_BurnNormal[64]; |  Schema_FixedArray | Size: 0x300
+				constexpr std::ptrdiff_t m_BurnNormal = 0x1560; // GlobalTypes::Vector[64]  | Schema_FixedArray | Size: 0x300
 				constexpr std::ptrdiff_t m_fireCount = 0x1860; // int32_t m_fireCount; |  0x1860 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nInfernoType = 0x1864; // int32_t m_nInfernoType; |  0x1864 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFireLifetime = 0x1868; // float32 m_nFireLifetime; |  0x1868 | Schema_Builtin | Size: 0x4
@@ -31,8 +31,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nlosperiod = 0x8488; // int32_t m_nlosperiod; |  0x8488 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_maxFireHalfWidth = 0x848c; // float32 m_maxFireHalfWidth; |  0x848c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_maxFireHeight = 0x8490; // float32 m_maxFireHeight; |  0x8490 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_minBounds = 0x8494; // GlobalTypes::Vector m_minBounds; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_maxBounds = 0x84a0; // GlobalTypes::Vector m_maxBounds; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_minBounds = 0x8494; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_maxBounds = 0x84a0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flLastGrassBurnThink = 0x84ac; // float32 m_flLastGrassBurnThink; |  0x84ac | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -70,7 +70,7 @@ namespace CS2 {
 			entity2::GameTick_t m_aimPunchTickBase; // 0x16fc | Schema_DeclaredClass | Size: 0x4
 			float32 m_aimPunchTickFraction; // 0x1700 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1708 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::QAngle> m_aimPunchCache; // 0x1708 | Schema_Atomic | Size: 0x18
 			// char  m_aimPunchCache[0x18]; // 0x1708 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8);
 			bool m_bInLanding; // 0x1728 | Schema_Builtin | Size: 0x1
@@ -108,7 +108,7 @@ namespace CS2 {
 			entity2::GameTime_t m_lastLandTime; // 0x2400 | Schema_DeclaredClass | Size: 0x4
 			bool m_bOnGroundLastTick; // 0x2404 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1b);
-			GlobalTypes::CHandle< client::C_CS2HudModelArms > m_hHudModelArms; // 0x2420 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CS2HudModelArms> m_hHudModelArms; // 0x2420 | Schema_Atomic | Size: 0x4
 			// char  m_hHudModelArms[0x4]; // 0x2420 | Schema_Atomic | Size: 0x4
 			GlobalTypes::QAngle m_qDeathEyeAngles; // 0x2424 | Schema_Atomic | Size: 0xc
 			bool m_bSkipOneHeadConstraintUpdate; // 0x2430 | Schema_Builtin | Size: 0x1
@@ -123,7 +123,7 @@ namespace CS2 {
 			S2_PAD(0x24);
 			GlobalTypes::Color m_GunGameImmunityColor; // 0x2480 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4c);
-			GlobalTypes::CUtlVector< client::C_BulletHitModel* > m_vecBulletHitModels; // 0x24d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::C_BulletHitModel*> m_vecBulletHitModels; // 0x24d0 | Schema_Atomic | Size: 0x18
 			// char  m_vecBulletHitModels[0x18]; // 0x24d0 | Schema_Atomic | Size: 0x18
 			bool m_bIsWalking; // 0x24e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
@@ -177,7 +177,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_angShootAngleHistory[2]; // 0x27a0 | Schema_FixedArray | Size: 0x18
 			GlobalTypes::Vector m_vecThrowPositionHistory[2]; // 0x27b8 | Schema_FixedArray | Size: 0x18
 			GlobalTypes::Vector m_vecVelocityHistory[2]; // 0x27d0 | Schema_FixedArray | Size: 0x18
-			// client::C_UtlVectorEmbeddedNetworkVar< client::PredictedDamageTag_t > m_PredictedDamageTags; // 0x27e8 | Schema_Atomic | Size: 0x68
+			// client::C_UtlVectorEmbeddedNetworkVar<client::PredictedDamageTag_t> m_PredictedDamageTags; // 0x27e8 | Schema_Atomic | Size: 0x68
 			char  m_PredictedDamageTags[0x68]; // 0x27e8 | Schema_Atomic | Size: 0x68
 			entity2::GameTick_t m_nPrevHighestReceivedDamageTagTick; // 0x2850 | Schema_DeclaredClass | Size: 0x4
 			int32_t m_nHighestAppliedDamageTagTick; // 0x2854 | Schema_Builtin | Size: 0x4

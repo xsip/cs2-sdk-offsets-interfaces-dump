@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x7E8
 			namespace CBasePlayerController /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_CommandContext = 0x600; // client::C_CommandContext m_CommandContext; |  Schema_DeclaredClass | Size: 0xa8
+				constexpr std::ptrdiff_t m_CommandContext = 0x600; // client::C_CommandContext  | Schema_DeclaredClass | Size: 0xa8
 				constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x6a8; // uint64_t m_nInButtonsWhichAreToggles; |  0x6a8 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_nTickBase = 0x6b0; // uint32_t m_nTickBase; |  0x6b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hPawn = 0x6b4; // client::CHandle< client::C_BasePlayerPawn > m_hPawn; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPawn = 0x6b4; // GlobalTypes::CHandle<client::C_BasePlayerPawn>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bKnownTeamMismatch = 0x6b8; // bool m_bKnownTeamMismatch; |  0x6b8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hPredictedPawn = 0x6bc; // client::CHandle< client::C_BasePlayerPawn > m_hPredictedPawn; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x6c0; // GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hSplitOwner = 0x6c4; // client::CHandle< client::CBasePlayerController > m_hSplitOwner; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x6c8; // client::CUtlVector< client.dll::CHandle< CBasePlayerController > > m_hSplitScreenPlayers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hPredictedPawn = 0x6bc; // GlobalTypes::CHandle<client::C_BasePlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x6c0; // GlobalTypes::CSplitScreenSlot  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSplitOwner = 0x6c4; // GlobalTypes::CHandle<client::CBasePlayerController>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x6c8; // GlobalTypes::CUtlVector<GlobalTypes::CHandle<client::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bIsHLTV = 0x6e0; // bool m_bIsHLTV; |  0x6e0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iConnected = 0x6e4; // client::PlayerConnectedState m_iConnected; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iConnected = 0x6e4; // client::PlayerConnectedState  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_iszPlayerName = 0x6e8; // char m_iszPlayerName[128]; |  0x6e8 | Schema_FixedArray | Size: 0x80
 				constexpr std::ptrdiff_t m_steamID = 0x770; // uint64_t m_steamID; |  0x770 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_bIsLocalPlayerController = 0x778; // bool m_bIsLocalPlayerController; |  0x778 | Schema_Builtin | Size: 0x1

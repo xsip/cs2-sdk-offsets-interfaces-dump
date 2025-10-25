@@ -11,18 +11,18 @@ namespace CS2 {
 			// Class size: 0x138
 			namespace PostProcessingResource_t /**/ {
 				constexpr std::ptrdiff_t m_bHasTonemapParams = 0x0; // bool m_bHasTonemapParams; |  0x0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_toneMapParams = 0x4; // materialsystem2::PostProcessingTonemapParameters_t m_toneMapParams; |  Schema_DeclaredClass | Size: 0x3c
+				constexpr std::ptrdiff_t m_toneMapParams = 0x4; // materialsystem2::PostProcessingTonemapParameters_t  | Schema_DeclaredClass | Size: 0x3c
 				constexpr std::ptrdiff_t m_bHasBloomParams = 0x40; // bool m_bHasBloomParams; |  0x40 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bloomParams = 0x44; // materialsystem2::PostProcessingBloomParameters_t m_bloomParams; |  Schema_DeclaredClass | Size: 0x88
+				constexpr std::ptrdiff_t m_bloomParams = 0x44; // materialsystem2::PostProcessingBloomParameters_t  | Schema_DeclaredClass | Size: 0x88
 				constexpr std::ptrdiff_t m_bHasVignetteParams = 0xcc; // bool m_bHasVignetteParams; |  0xcc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vignetteParams = 0xd0; // materialsystem2::PostProcessingVignetteParameters_t m_vignetteParams; |  Schema_DeclaredClass | Size: 0x24
+				constexpr std::ptrdiff_t m_vignetteParams = 0xd0; // materialsystem2::PostProcessingVignetteParameters_t  | Schema_DeclaredClass | Size: 0x24
 				constexpr std::ptrdiff_t m_bHasLocalContrastParams = 0xf4; // bool m_bHasLocalContrastParams; |  0xf4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_localConstrastParams = 0xf8; // materialsystem2::PostProcessingLocalContrastParameters_t m_localConstrastParams; |  Schema_DeclaredClass | Size: 0x14
+				constexpr std::ptrdiff_t m_localConstrastParams = 0xf8; // materialsystem2::PostProcessingLocalContrastParameters_t  | Schema_DeclaredClass | Size: 0x14
 				constexpr std::ptrdiff_t m_nColorCorrectionVolumeDim = 0x10c; // int32_t m_nColorCorrectionVolumeDim; |  0x10c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_colorCorrectionVolumeData = 0x110; // GlobalTypes::CUtlBinaryBlock m_colorCorrectionVolumeData; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_colorCorrectionVolumeData = 0x110; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_bHasColorCorrection = 0x120; // bool m_bHasColorCorrection; |  0x120 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasFogScatteringParams = 0x121; // bool m_bHasFogScatteringParams; |  0x121 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fogScatteringParams = 0x124; // materialsystem2::PostProcessingFogScatteringParameters_t m_fogScatteringParams; |  Schema_DeclaredClass | Size: 0x14
+				constexpr std::ptrdiff_t m_fogScatteringParams = 0x124; // materialsystem2::PostProcessingFogScatteringParameters_t  | Schema_DeclaredClass | Size: 0x14
 			}
 		}
 	}

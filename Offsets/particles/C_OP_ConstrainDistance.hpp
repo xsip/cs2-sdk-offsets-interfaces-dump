@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x4C8
 			namespace C_OP_ConstrainDistance /*: public CS2::particles::CParticleFunctionConstraint*/ {
-				constexpr std::ptrdiff_t m_fMinDistance = 0x1d0; // particleslib::CParticleCollectionFloatInput m_fMinDistance; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_fMaxDistance = 0x340; // particleslib::CParticleCollectionFloatInput m_fMaxDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_fMinDistance = 0x1d0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_fMaxDistance = 0x340; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0x4b0; // int32_t m_nControlPointNumber; |  0x4b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_CenterOffset = 0x4b4; // GlobalTypes::Vector m_CenterOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_CenterOffset = 0x4b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bGlobalCenter = 0x4c0; // bool m_bGlobalCenter; |  0x4c0 | Schema_Builtin | Size: 0x1
 			}
 		}

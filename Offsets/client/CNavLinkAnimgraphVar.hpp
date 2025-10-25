@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x10
 			namespace CNavLinkAnimgraphVar /**/ {
-				constexpr std::ptrdiff_t m_sAnimGraphNavlinkType = 0x0; // GlobalTypes::CGlobalSymbol m_sAnimGraphNavlinkType; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sAnimGraphNavlinkType = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_unAlignmentDegrees = 0x8; // uint32_t m_unAlignmentDegrees; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

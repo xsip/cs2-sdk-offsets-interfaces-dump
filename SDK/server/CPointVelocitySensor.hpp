@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,8 +26,8 @@ namespace CS2 {
 	namespace server {
 		class CPointVelocitySensor : public CS2::server::CPointEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
-			char  m_hTargetEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vecAxis; // 0x4f4 | Schema_Atomic | Size: 0xc
 			bool m_bEnabled; // 0x500 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

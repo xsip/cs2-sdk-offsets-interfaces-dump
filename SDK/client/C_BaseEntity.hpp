@@ -58,7 +58,7 @@ namespace CS2 {
 			client::EntityPlatformTypes_t m_nPlatformType; // 0x360 | Schema_DeclaredEnum | Size: 0x1
 			uint8_t m_ubInterpolationFrame; // 0x361 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hSceneObjectController; // 0x364 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hSceneObjectController; // 0x364 | Schema_Atomic | Size: 0x4
 			// char  m_hSceneObjectController[0x4]; // 0x364 | Schema_Atomic | Size: 0x4
 			int32_t m_nNoInterpolationTick; // 0x368 | Schema_Builtin | Size: 0x4
 			int32_t m_nVisibilityNoInterpolationTick; // 0x36c | Schema_Builtin | Size: 0x4
@@ -73,7 +73,7 @@ namespace CS2 {
 			S2_PAD(0xc);
 			int32_t m_nSimulationTick; // 0x390 | Schema_Builtin | Size: 0x4
 			int32_t m_iCurrentThinkContext; // 0x394 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< client::thinkfunc_t > m_aThinkFunctions; // 0x398 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::thinkfunc_t> m_aThinkFunctions; // 0x398 | Schema_Atomic | Size: 0x18
 			// char  m_aThinkFunctions[0x18]; // 0x398 | Schema_Atomic | Size: 0x18
 			bool m_bDisabledContextThinks; // 0x3b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -100,9 +100,9 @@ namespace CS2 {
 			client::CNetworkVelocityVector m_vecVelocity; // 0x430 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0xb8);
 			GlobalTypes::Vector m_vecBaseVelocity; // 0x510 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hEffectEntity; // 0x51c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hEffectEntity; // 0x51c | Schema_Atomic | Size: 0x4
 			// char  m_hEffectEntity[0x4]; // 0x51c | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hOwnerEntity; // 0x520 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hOwnerEntity; // 0x520 | Schema_Atomic | Size: 0x4
 			// char  m_hOwnerEntity[0x4]; // 0x520 | Schema_Atomic | Size: 0x4
 			client::MoveCollide_t m_MoveCollide; // 0x524 | Schema_DeclaredEnum | Size: 0x1
 			client::MoveType_t m_MoveType; // 0x525 | Schema_DeclaredEnum | Size: 0x1
@@ -110,7 +110,7 @@ namespace CS2 {
 			S2_PAD(0x1);
 			float32 m_flWaterLevel; // 0x528 | Schema_Builtin | Size: 0x4
 			uint32_t m_fEffects; // 0x52c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hGroundEntity; // 0x530 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hGroundEntity; // 0x530 | Schema_Atomic | Size: 0x4
 			// char  m_hGroundEntity[0x4]; // 0x530 | Schema_Atomic | Size: 0x4
 			int32_t m_nGroundBodyIndex; // 0x534 | Schema_Builtin | Size: 0x4
 			float32 m_flFriction; // 0x538 | Schema_Builtin | Size: 0x4
@@ -132,13 +132,13 @@ namespace CS2 {
 			S2_PAD(0x1);
 			int32_t m_nFirstPredictableCommand; // 0x56c | Schema_Builtin | Size: 0x4
 			int32_t m_nLastPredictableCommand; // 0x570 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hOldMoveParent; // 0x574 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hOldMoveParent; // 0x574 | Schema_Atomic | Size: 0x4
 			// char  m_hOldMoveParent[0x4]; // 0x574 | Schema_Atomic | Size: 0x4
 			particleslib::CParticleProperty m_Particles; // 0x578 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x8);
 			GlobalTypes::QAngle m_vecAngVelocity; // 0x5a8 | Schema_Atomic | Size: 0xc
 			int32_t m_DataChangeEventRef; // 0x5b4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_dependencies; // 0x5b8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CEntityHandle> m_dependencies; // 0x5b8 | Schema_Atomic | Size: 0x18
 			// char  m_dependencies[0x18]; // 0x5b8 | Schema_Atomic | Size: 0x18
 			int32_t m_nCreationTick; // 0x5d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x9);

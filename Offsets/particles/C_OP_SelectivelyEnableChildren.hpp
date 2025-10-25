@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x630
 			namespace C_OP_SelectivelyEnableChildren /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nChildGroupID = 0x1d8; // particleslib::CParticleCollectionFloatInput m_nChildGroupID; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nFirstChild = 0x348; // particleslib::CParticleCollectionFloatInput m_nFirstChild; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nNumChildrenToEnable = 0x4b8; // particleslib::CParticleCollectionFloatInput m_nNumChildrenToEnable; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nChildGroupID = 0x1d8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nFirstChild = 0x348; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nNumChildrenToEnable = 0x4b8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bPlayEndcapOnStop = 0x628; // bool m_bPlayEndcapOnStop; |  0x628 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDestroyImmediately = 0x629; // bool m_bDestroyImmediately; |  0x629 | Schema_Builtin | Size: 0x1
 			}

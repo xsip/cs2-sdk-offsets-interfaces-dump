@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x40
 			namespace CAnimationGraphVisualizerPrimitiveBase /**/ {
-				constexpr std::ptrdiff_t m_Type = 0x8; // animgraphlib::CAnimationGraphVisualizerPrimitiveType m_Type; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_OwningAnimNodePaths = 0xc; // modellib::AnimNodeID m_OwningAnimNodePaths[11]; |  Schema_FixedArray | Size: 0x1e4
+				constexpr std::ptrdiff_t m_Type = 0x8; // animgraphlib::CAnimationGraphVisualizerPrimitiveType  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OwningAnimNodePaths = 0xc; // GlobalTypes::AnimNodeID[11]  | Schema_FixedArray | Size: 0x1e4
 				constexpr std::ptrdiff_t m_nOwningAnimNodePathCount = 0x38; // int32_t m_nOwningAnimNodePathCount; |  0x38 | Schema_Builtin | Size: 0x4
 			}
 		}

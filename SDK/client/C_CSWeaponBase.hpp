@@ -80,7 +80,7 @@ namespace CS2 {
 			int32_t m_nCustomEconReloadEventId; // 0x1adc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);
 			entity2::GameTime_t m_nextPrevOwnerUseTime; // 0x1ae8 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hPrevOwner; // 0x1aec | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hPrevOwner; // 0x1aec | Schema_Atomic | Size: 0x4
 			// char  m_hPrevOwner[0x4]; // 0x1aec | Schema_Atomic | Size: 0x4
 			entity2::GameTick_t m_nDropTick; // 0x1af0 | Schema_DeclaredClass | Size: 0x4
 			bool m_bWasActiveWeaponWhenDropped; // 0x1af4 | Schema_Builtin | Size: 0x1

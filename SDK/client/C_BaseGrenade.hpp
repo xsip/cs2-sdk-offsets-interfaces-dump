@@ -39,11 +39,11 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszBounceSound; // 0x1380 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_ExplosionSound; // 0x1388 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x4);
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hThrower; // 0x1394 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hThrower; // 0x1394 | Schema_Atomic | Size: 0x4
 			// char  m_hThrower[0x4]; // 0x1394 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
 			entity2::GameTime_t m_flNextAttack; // 0x13ac | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hOriginalThrower; // 0x13b0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hOriginalThrower; // 0x13b0 | Schema_Atomic | Size: 0x4
 			// char  m_hOriginalThrower[0x4]; // 0x13b0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

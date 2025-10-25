@@ -12,11 +12,11 @@ namespace CS2 {
 			namespace C_INIT_VelocityRadialRandom /*: public CS2::particles::CParticleFunctionInitializer*/ {
 				constexpr std::ptrdiff_t m_bPerParticleCenter = 0x1d8; // bool m_bPerParticleCenter; |  0x1d8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1dc; // int32_t m_nControlPointNumber; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecPosition = 0x1e0; // particleslib::CPerParticleVecInput m_vecPosition; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_vecFwd = 0x898; // particleslib::CPerParticleVecInput m_vecFwd; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_fSpeedMin = 0xf50; // particleslib::CPerParticleFloatInput m_fSpeedMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_fSpeedMax = 0x10c0; // particleslib::CPerParticleFloatInput m_fSpeedMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_vecLocalCoordinateSystemSpeedScale = 0x1230; // GlobalTypes::Vector m_vecLocalCoordinateSystemSpeedScale; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPosition = 0x1e0; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecFwd = 0x898; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_fSpeedMin = 0xf50; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_fSpeedMax = 0x10c0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecLocalCoordinateSystemSpeedScale = 0x1230; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bIgnoreDelta = 0x123d; // bool m_bIgnoreDelta; |  0x123d | Schema_Builtin | Size: 0x1
 			}
 		}

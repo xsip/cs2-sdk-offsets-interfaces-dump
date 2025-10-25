@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xA0
 			namespace CAddUpdateNode /*: public CS2::animgraphlib::CBinaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_footMotionTiming = 0x94; // animgraphlib::BinaryNodeChildOption m_footMotionTiming; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_footMotionTiming = 0x94; // animgraphlib::BinaryNodeChildOption  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bApplyToFootMotion = 0x98; // bool m_bApplyToFootMotion; |  0x98 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bApplyChannelsSeparately = 0x99; // bool m_bApplyChannelsSeparately; |  0x99 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseModelSpace = 0x9a; // bool m_bUseModelSpace; |  0x9a | Schema_Builtin | Size: 0x1

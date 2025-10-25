@@ -22,10 +22,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0xa6c; // float32 m_flBackgroundBorderWidth; |  0xa6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0xa70; // float32 m_flBackgroundBorderHeight; |  0xa70 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0xa74; // float32 m_flBackgroundWorldToUV; |  0xa74 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Color = 0xa78; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0xa7c; // client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyVertical = 0xa80; // client::PointWorldTextJustifyVertical_t m_nJustifyVertical; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nReorientMode = 0xa84; // client::PointWorldTextReorientMode_t m_nReorientMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0xa78; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0xa7c; // client::PointWorldTextJustifyHorizontal_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyVertical = 0xa80; // client::PointWorldTextJustifyVertical_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nReorientMode = 0xa84; // client::PointWorldTextReorientMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

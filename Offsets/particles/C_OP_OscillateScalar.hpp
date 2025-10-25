@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_RateMax = 0x1d4; // float32 m_RateMax; |  0x1d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_FrequencyMin = 0x1d8; // float32 m_FrequencyMin; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_FrequencyMax = 0x1dc; // float32 m_FrequencyMax; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nField = 0x1e0; // particles::ParticleAttributeIndex_t m_nField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nField = 0x1e0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bProportional = 0x1e4; // bool m_bProportional; |  0x1e4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bProportionalOp = 0x1e5; // bool m_bProportionalOp; |  0x1e5 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flStartTime_min = 0x1e8; // float32 m_flStartTime_min; |  0x1e8 | Schema_Builtin | Size: 0x4

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x30
 			namespace CAnimLocalHierarchy /**/ {
-				constexpr std::ptrdiff_t m_sBone = 0x0; // GlobalTypes::CBufferString m_sBone; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_sNewParent = 0x10; // GlobalTypes::CBufferString m_sNewParent; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sBone = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sNewParent = 0x10; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_nStartFrame = 0x20; // int32_t m_nStartFrame; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPeakFrame = 0x24; // int32_t m_nPeakFrame; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTailFrame = 0x28; // int32_t m_nTailFrame; |  0x28 | Schema_Builtin | Size: 0x4

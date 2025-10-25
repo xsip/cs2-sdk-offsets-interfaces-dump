@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x280
 			namespace C_INIT_RtEnvCull /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecTestDir = 0x1d8; // GlobalTypes::Vector m_vecTestDir; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecTestNormal = 0x1e4; // GlobalTypes::Vector m_vecTestNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecTestDir = 0x1d8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecTestNormal = 0x1e4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bUseVelocity = 0x1f0; // bool m_bUseVelocity; |  0x1f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCullOnMiss = 0x1f1; // bool m_bCullOnMiss; |  0x1f1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLifeAdjust = 0x1f2; // bool m_bLifeAdjust; |  0x1f2 | Schema_Builtin | Size: 0x1

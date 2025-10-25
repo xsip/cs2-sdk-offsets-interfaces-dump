@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace rendersystemdx11 {
 			// Class size: 0x10
 			namespace RsRasterizerStateDesc_t /**/ {
-				constexpr std::ptrdiff_t m_nFillMode = 0x0; // rendersystemdx11::RsFillMode_t m_nFillMode; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_nCullMode = 0x1; // rendersystemdx11::RsCullMode_t m_nCullMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nFillMode = 0x0; // rendersystemdx11::RsFillMode_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nCullMode = 0x1; // rendersystemdx11::RsCullMode_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_bDepthClipEnable = 0x2; // bool m_bDepthClipEnable; |  0x2 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bMultisampleEnable = 0x3; // bool m_bMultisampleEnable; |  0x3 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nDepthBias = 0x4; // int32_t m_nDepthBias; |  0x4 | Schema_Builtin | Size: 0x4

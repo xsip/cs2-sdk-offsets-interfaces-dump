@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x70
 			namespace CUnaryUpdateNode /*: public CS2::animgraphlib::CAnimUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_pChildNode = 0x60; // animgraphlib::CAnimUpdateNodeRef m_pChildNode; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_pChildNode = 0x60; // animgraphlib::CAnimUpdateNodeRef  | Schema_DeclaredClass | Size: 0x10
 			}
 		}
 	}

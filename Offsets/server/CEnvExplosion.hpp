@@ -15,16 +15,16 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iRadiusOverride = 0x7e0; // int32_t m_iRadiusOverride; |  0x7e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInnerRadius = 0x7e4; // float32 m_flInnerRadius; |  0x7e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDamageForce = 0x7e8; // float32 m_flDamageForce; |  0x7e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hInflictor = 0x7ec; // server::CHandle< server::CBaseEntity > m_hInflictor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iCustomDamageType = 0x7f0; // client::DamageTypes_t m_iCustomDamageType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hInflictor = 0x7ec; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iCustomDamageType = 0x7f0; // client::DamageTypes_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bCreateDebris = 0x7f4; // bool m_bCreateDebris; |  0x7f4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszCustomEffectName = 0x800; // GlobalTypes::CUtlSymbolLarge m_iszCustomEffectName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszCustomSoundName = 0x808; // GlobalTypes::CUtlSymbolLarge m_iszCustomSoundName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszCustomEffectName = 0x800; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszCustomSoundName = 0x808; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bSuppressParticleImpulse = 0x810; // bool m_bSuppressParticleImpulse; |  0x810 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iClassIgnore = 0x814; // client::Class_T m_iClassIgnore; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iClassIgnore2 = 0x818; // client::Class_T m_iClassIgnore2; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iszEntityIgnoreName = 0x820; // GlobalTypes::CUtlSymbolLarge m_iszEntityIgnoreName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hEntityIgnore = 0x828; // server::CHandle< server::CBaseEntity > m_hEntityIgnore; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iClassIgnore = 0x814; // client::Class_T  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iClassIgnore2 = 0x818; // client::Class_T  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iszEntityIgnoreName = 0x820; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hEntityIgnore = 0x828; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace mathlib_extended {
 			// Class size: 0x18
 			namespace AABB_t /**/ {
-				constexpr std::ptrdiff_t m_vMinBounds = 0x0; // GlobalTypes::Vector m_vMinBounds; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxBounds = 0xc; // GlobalTypes::Vector m_vMaxBounds; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMinBounds = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxBounds = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

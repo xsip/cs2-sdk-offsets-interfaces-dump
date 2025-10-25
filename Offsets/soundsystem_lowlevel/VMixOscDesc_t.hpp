@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem_lowlevel {
 			// Class size: 0xC
 			namespace VMixOscDesc_t /**/ {
-				constexpr std::ptrdiff_t oscType = 0x0; // soundsystem_lowlevel::VMixLFOShape_t oscType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t oscType = 0x0; // soundsystem_lowlevel::VMixLFOShape_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_freq = 0x4; // float32 m_freq; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPhase = 0x8; // float32 m_flPhase; |  0x8 | Schema_Builtin | Size: 0x4
 			}

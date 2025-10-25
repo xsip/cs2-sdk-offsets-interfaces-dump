@@ -27,15 +27,15 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CRagdollComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
-			GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_ragdollNodePaths; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::CAnimNodePath> m_ragdollNodePaths; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_ragdollNodePaths[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_followAttachmentNodePaths; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::CAnimNodePath> m_followAttachmentNodePaths; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_followAttachmentNodePaths[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_boneIndices; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_boneIndices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_boneNames; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_boneNames[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animgraphlib::WeightList > m_weightLists; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::WeightList> m_weightLists; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_weightLists[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_boneToWeightIndices; // 0xa8 | Schema_Atomic | Size: 0x18
 			// char  m_boneToWeightIndices[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18

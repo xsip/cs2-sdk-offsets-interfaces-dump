@@ -16,9 +16,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flInputMax = 0x1e4; // float32 m_flInputMax; |  0x1e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOutputMin = 0x1e8; // float32 m_flOutputMin; |  0x1e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOutputMax = 0x1ec; // float32 m_flOutputMax; |  0x1ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_StackName = 0x1f0; // GlobalTypes::CUtlString m_StackName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OperatorName = 0x1f8; // GlobalTypes::CUtlString m_OperatorName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_FieldName = 0x200; // GlobalTypes::CUtlString m_FieldName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_StackName = 0x1f0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OperatorName = 0x1f8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_FieldName = 0x200; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

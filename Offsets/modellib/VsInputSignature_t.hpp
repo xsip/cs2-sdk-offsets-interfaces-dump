@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x30
 			namespace VsInputSignature_t /**/ {
-				constexpr std::ptrdiff_t m_elems = 0x0; // GlobalTypes::CUtlVector< modellib::VsInputSignatureElement_t > m_elems; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_depth_elems = 0x18; // GlobalTypes::CUtlVector< modellib::VsInputSignatureElement_t > m_depth_elems; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_elems = 0x0; // GlobalTypes::CUtlVector<modellib::VsInputSignatureElement_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_depth_elems = 0x18; // GlobalTypes::CUtlVector<modellib::VsInputSignatureElement_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

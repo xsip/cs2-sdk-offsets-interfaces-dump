@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x10
 			namespace CSSDSEndFrameViewInfo /**/ {
 				constexpr std::ptrdiff_t m_nViewId = 0x0; // uint64_t m_nViewId; |  0x0 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_ViewName = 0x8; // GlobalTypes::CUtlString m_ViewName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ViewName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

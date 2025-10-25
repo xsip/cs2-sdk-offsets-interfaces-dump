@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace entity2 {
 			// Class size: 0x28
 			namespace CNetworkVarChainer /**/ {
-				constexpr std::ptrdiff_t m_PathIndex = 0x20; // networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_PathIndex = 0x20; // networksystem::ChangeAccessorFieldPathIndex_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

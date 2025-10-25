@@ -24,18 +24,18 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerWeaponVData : public CS2::client::CEntitySubclassVDataBase {
 		public:
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_szWorldModel; // 0x28 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_szWorldModel; // 0x28 | Schema_Atomic | Size: 0xe0
 			char  m_szWorldModel[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName; // 0x108 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_sToolsOnlyOwnerModelName; // 0x108 | Schema_Atomic | Size: 0xe0
 			char  m_sToolsOnlyOwnerModelName[0xe0]; // 0x108 | Schema_Atomic | Size: 0xe0
 			bool m_bBuiltRightHanded; // 0x1e8 | Schema_Builtin | Size: 0x1
 			bool m_bAllowFlipping; // 0x1e9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
 			GlobalTypes::CAttachmentNameSymbolWithStorage m_sMuzzleAttachment; // 0x1f0 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szMuzzleFlashParticle; // 0x210 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szMuzzleFlashParticle; // 0x210 | Schema_Atomic | Size: 0xe0
 			char  m_szMuzzleFlashParticle[0xe0]; // 0x210 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::CUtlString m_szMuzzleFlashParticleConfig; // 0x2f0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szBarrelSmokeParticle; // 0x2f8 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szBarrelSmokeParticle; // 0x2f8 | Schema_Atomic | Size: 0xe0
 			char  m_szBarrelSmokeParticle[0xe0]; // 0x2f8 | Schema_Atomic | Size: 0xe0
 			uint8_t m_nMuzzleSmokeShotThreshold; // 0x3d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

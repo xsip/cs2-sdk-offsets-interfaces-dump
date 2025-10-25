@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x50
 			namespace CConstraintSlave /**/ {
-				constexpr std::ptrdiff_t m_qBaseOrientation = 0x0; // GlobalTypes::Quaternion m_qBaseOrientation; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vBasePosition = 0x10; // GlobalTypes::Vector m_vBasePosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_qBaseOrientation = 0x0; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vBasePosition = 0x10; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nBoneHash = 0x1c; // uint32_t m_nBoneHash; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flWeight = 0x20; // float32 m_flWeight; |  0x20 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sName = 0x28; // GlobalTypes::CUtlString m_sName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sName = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

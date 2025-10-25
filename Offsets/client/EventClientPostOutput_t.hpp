@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x40
 			namespace EventClientPostOutput_t /**/ {
-				constexpr std::ptrdiff_t m_LoopState = 0x0; // client::EngineLoopState_t m_LoopState; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_LoopState = 0x0; // client::EngineLoopState_t  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_flRenderTime = 0x28; // float64 m_flRenderTime; |  0x28 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_flRenderFrameTime = 0x30; // float32 m_flRenderFrameTime; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRenderFrameTimeUnbounded = 0x34; // float32 m_flRenderFrameTimeUnbounded; |  0x34 | Schema_Builtin | Size: 0x4

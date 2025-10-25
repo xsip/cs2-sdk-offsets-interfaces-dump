@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1110
 			namespace C_TriggerBuoyancy /*: public CS2::client::C_BaseTrigger*/ {
-				constexpr std::ptrdiff_t m_BuoyancyHelper = 0xff0; // client::CBuoyancyHelper m_BuoyancyHelper; |  Schema_DeclaredClass | Size: 0x118
+				constexpr std::ptrdiff_t m_BuoyancyHelper = 0xff0; // client::CBuoyancyHelper  | Schema_DeclaredClass | Size: 0x118
 				constexpr std::ptrdiff_t m_flFluidDensity = 0x1108; // float32 m_flFluidDensity; |  0x1108 | Schema_Builtin | Size: 0x4
 			}
 		}

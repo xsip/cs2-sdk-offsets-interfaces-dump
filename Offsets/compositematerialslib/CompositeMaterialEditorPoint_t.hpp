@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace compositematerialslib {
 			// Class size: 0x218
 			namespace CompositeMaterialEditorPoint_t /**/ {
-				constexpr std::ptrdiff_t m_ModelName = 0x0; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_ModelName; |  Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_ModelName = 0x0; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0xe0
 				constexpr std::ptrdiff_t m_nSequenceIndex = 0xe0; // int32_t m_nSequenceIndex; |  0xe0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCycle = 0xe4; // float32 m_flCycle; |  0xe4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_KVModelStateChoices = 0xe8; // GlobalTypes::KeyValues3 m_KVModelStateChoices; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_KVModelStateChoices = 0xe8; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_bEnableChildModel = 0xf8; // bool m_bEnableChildModel; |  0xf8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_ChildModelName = 0x100; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_ChildModelName; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_vecCompositeMaterialAssemblyProcedures = 0x1e0; // GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialAssemblyProcedure_t > m_vecCompositeMaterialAssemblyProcedures; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecCompositeMaterials = 0x1f8; // GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterial_t > m_vecCompositeMaterials; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ChildModelName = 0x100; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_vecCompositeMaterialAssemblyProcedures = 0x1e0; // GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterialAssemblyProcedure_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCompositeMaterials = 0x1f8; // GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterial_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

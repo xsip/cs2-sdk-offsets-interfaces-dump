@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x70
 			namespace WeaponPurchaseTracker_t /**/ {
-				constexpr std::ptrdiff_t m_weaponPurchases = 0x8; // client::C_UtlVectorEmbeddedNetworkVar< client::WeaponPurchaseCount_t > m_weaponPurchases; |  Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_weaponPurchases = 0x8; // client::C_UtlVectorEmbeddedNetworkVar<client::WeaponPurchaseCount_t>  | Schema_Atomic | Size: 0x68
 			}
 		}
 	}

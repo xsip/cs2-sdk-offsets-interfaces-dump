@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x18
 			namespace CSkillDamage /**/ {
-				constexpr std::ptrdiff_t m_flDamage = 0x0; // client::CSkillFloat m_flDamage; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_flDamage = 0x0; // client::CSkillFloat  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t m_flNPCDamageScalarVsNPC = 0x10; // float32 m_flNPCDamageScalarVsNPC; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPhysicsForceDamage = 0x14; // float32 m_flPhysicsForceDamage; |  0x14 | Schema_Builtin | Size: 0x4
 			}

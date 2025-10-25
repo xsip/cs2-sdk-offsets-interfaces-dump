@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x18
 			namespace SkeletonBoneBounds_t /**/ {
-				constexpr std::ptrdiff_t m_vecCenter = 0x0; // GlobalTypes::Vector m_vecCenter; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecSize = 0xc; // GlobalTypes::Vector m_vecSize; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCenter = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecSize = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

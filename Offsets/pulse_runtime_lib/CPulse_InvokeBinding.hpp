@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0xB0
 			namespace CPulse_InvokeBinding /**/ {
-				constexpr std::ptrdiff_t m_RegisterMap = 0x0; // pulse_runtime_lib::PulseRegisterMap_t m_RegisterMap; |  Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_FuncName = 0x30; // GlobalTypes::PulseSymbol_t m_FuncName; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_nCellIndex = 0x40; // pulse_runtime_lib::PulseRuntimeCellIndex_t m_nCellIndex; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nSrcChunk = 0x44; // pulse_runtime_lib::PulseRuntimeChunkIndex_t m_nSrcChunk; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_RegisterMap = 0x0; // pulse_runtime_lib::PulseRegisterMap_t  | Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_FuncName = 0x30; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_nCellIndex = 0x40; // pulse_runtime_lib::PulseRuntimeCellIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nSrcChunk = 0x44; // pulse_runtime_lib::PulseRuntimeChunkIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nSrcInstruction = 0x48; // int32_t m_nSrcInstruction; |  0x48 | Schema_Builtin | Size: 0x4
 			}
 		}

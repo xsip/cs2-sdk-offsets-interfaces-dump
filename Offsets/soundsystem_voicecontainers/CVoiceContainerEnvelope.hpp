@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0xC8
 			namespace CVoiceContainerEnvelope /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_sound = 0xb8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_sound; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_analysisContainer = 0xc0; // soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_analysisContainer; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_sound = 0xb8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_analysisContainer = 0xc0; // soundsystem_voicecontainers::CVoiceContainerAnalysisBase**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

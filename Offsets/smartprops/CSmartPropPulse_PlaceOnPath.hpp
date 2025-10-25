@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x68
 			namespace CSmartPropPulse_PlaceOnPath /*: public CS2::smartprops::CSmartPropPulse_BaseQueryableFlow*/ {
-				constexpr std::ptrdiff_t m_OutflowList = 0x48; // pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_PathName = 0x60; // GlobalTypes::CUtlString m_PathName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OutflowList = 0x48; // pulse_runtime_lib::PulseSelectorOutflowList_t  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_PathName = 0x60; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

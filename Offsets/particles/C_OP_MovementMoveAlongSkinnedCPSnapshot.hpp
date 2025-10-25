@@ -14,8 +14,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nSnapshotControlPointNumber = 0x1d4; // int32_t m_nSnapshotControlPointNumber; |  0x1d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSetNormal = 0x1d8; // bool m_bSetNormal; |  0x1d8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSetRadius = 0x1d9; // bool m_bSetRadius; |  0x1d9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flInterpolation = 0x1e0; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flTValue = 0x350; // particleslib::CPerParticleFloatInput m_flTValue; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInterpolation = 0x1e0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flTValue = 0x350; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

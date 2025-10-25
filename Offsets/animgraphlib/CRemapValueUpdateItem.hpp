@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x14
 			namespace CRemapValueUpdateItem /**/ {
-				constexpr std::ptrdiff_t m_hParamIn = 0x0; // animgraphlib::CAnimParamHandle m_hParamIn; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParamOut = 0x2; // animgraphlib::CAnimParamHandle m_hParamOut; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParamIn = 0x0; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParamOut = 0x2; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_flMinInputValue = 0x4; // float32 m_flMinInputValue; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxInputValue = 0x8; // float32 m_flMaxInputValue; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinOutputValue = 0xc; // float32 m_flMinOutputValue; |  0xc | Schema_Builtin | Size: 0x4

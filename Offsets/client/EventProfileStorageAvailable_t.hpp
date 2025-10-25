@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x4
 			namespace EventProfileStorageAvailable_t /**/ {
-				constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x0; // GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x0; // GlobalTypes::CSplitScreenSlot  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

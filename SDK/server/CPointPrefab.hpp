@@ -27,8 +27,8 @@ namespace CS2 {
 			bool m_fixupNames; // 0x508 | Schema_Builtin | Size: 0x1
 			bool m_bLoadDynamic; // 0x509 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CPointPrefab > m_associatedRelayEntity; // 0x50c | Schema_Atomic | Size: 0x4
-			char  m_associatedRelayEntity[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPointPrefab> m_associatedRelayEntity; // 0x50c | Schema_Atomic | Size: 0x4
+			// char  m_associatedRelayEntity[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
 			S2_PAD(0x48); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPointPrefab, m_targetMapName) == 0x4F0, "m_targetMapName in CPointPrefab should be at offset 0x4F0");

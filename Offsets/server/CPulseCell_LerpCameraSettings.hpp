@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0xB8
 			namespace CPulseCell_LerpCameraSettings /*: public CS2::pulse_runtime_lib::CPulseCell_BaseLerp*/ {
 				constexpr std::ptrdiff_t m_flSeconds = 0x90; // float32 m_flSeconds; |  0x90 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Start = 0x94; // client::PointCameraSettings_t m_Start; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_End = 0xa4; // client::PointCameraSettings_t m_End; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_Start = 0x94; // client::PointCameraSettings_t  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_End = 0xa4; // client::PointCameraSettings_t  | Schema_DeclaredClass | Size: 0x10
 			}
 		}
 	}

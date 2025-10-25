@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem_lowlevel {
 			// Class size: 0x80
 			namespace VMixEQ8Desc_t /**/ {
-				constexpr std::ptrdiff_t m_stages = 0x0; // soundsystem_lowlevel::VMixFilterDesc_t m_stages[8]; |  Schema_FixedArray | Size: 0x400
+				constexpr std::ptrdiff_t m_stages = 0x0; // GlobalTypes::VMixFilterDesc_t[8]  | Schema_FixedArray | Size: 0x400
 			}
 		}
 	}

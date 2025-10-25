@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x30
 			namespace CAnimGraphSettingsManager /**/ {
-				constexpr std::ptrdiff_t m_settingsGroups = 0x18; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimGraphSettingsGroup > > m_settingsGroups; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_settingsGroups = 0x18; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimGraphSettingsGroup>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

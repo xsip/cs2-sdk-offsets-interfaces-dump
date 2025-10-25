@@ -20,6 +20,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CCSPlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -75,8 +80,8 @@ namespace CS2 {
 			entity2::GameTime_t m_nextPrevOwnerTouchTime; // 0xfa8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
 			entity2::GameTime_t m_nextPrevOwnerUseTime; // 0xfb0 | Schema_DeclaredClass | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_hPrevOwner; // 0xfb4 | Schema_Atomic | Size: 0x4
-			char  m_hPrevOwner[0x4]; // 0xfb4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hPrevOwner; // 0xfb4 | Schema_Atomic | Size: 0x4
+			// char  m_hPrevOwner[0x4]; // 0xfb4 | Schema_Atomic | Size: 0x4
 			entity2::GameTick_t m_nDropTick; // 0xfb8 | Schema_DeclaredClass | Size: 0x4
 			bool m_bWasActiveWeaponWhenDropped; // 0xfbc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f);

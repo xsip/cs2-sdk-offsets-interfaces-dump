@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x518
 			namespace CSoundEventParameter /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_iszParamName = 0x508; // GlobalTypes::CUtlSymbolLarge m_iszParamName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszParamName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flFloatValue = 0x510; // float32 m_flFloatValue; |  0x510 | Schema_Builtin | Size: 0x4
 			}
 		}

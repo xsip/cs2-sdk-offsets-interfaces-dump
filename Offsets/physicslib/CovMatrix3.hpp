@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x18
 			namespace CovMatrix3 /**/ {
-				constexpr std::ptrdiff_t m_vDiag = 0x0; // GlobalTypes::Vector m_vDiag; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDiag = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flXY = 0xc; // float32 m_flXY; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flXZ = 0x10; // float32 m_flXZ; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flYZ = 0x14; // float32 m_flYZ; |  0x14 | Schema_Builtin | Size: 0x4

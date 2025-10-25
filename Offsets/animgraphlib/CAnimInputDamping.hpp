@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x18
 			namespace CAnimInputDamping /**/ {
-				constexpr std::ptrdiff_t m_speedFunction = 0x8; // animgraphlib::DampingSpeedFunction m_speedFunction; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_speedFunction = 0x8; // animgraphlib::DampingSpeedFunction  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_fSpeedScale = 0xc; // float32 m_fSpeedScale; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fFallingSpeedScale = 0x10; // float32 m_fFallingSpeedScale; |  0x10 | Schema_Builtin | Size: 0x4
 			}

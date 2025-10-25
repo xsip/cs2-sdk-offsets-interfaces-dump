@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x20
 			namespace SimpleConstraintSoundProfile /**/ {
-				constexpr std::ptrdiff_t eKeypoints = 0x8; // server::SimpleConstraintsSoundProfileKeypoints_t eKeypoints; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t eKeypoints = 0x8; // server::SimpleConstraintSoundProfile::SimpleConstraintsSoundProfileKeypoints_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_keyPoints = 0xc; // float32 m_keyPoints[2]; |  0xc | Schema_FixedArray | Size: 0x8
 				constexpr std::ptrdiff_t m_reversalSoundThresholds = 0x14; // float32 m_reversalSoundThresholds[3]; |  0x14 | Schema_FixedArray | Size: 0xc
 			}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x20
 			namespace FeSphereRigid_t /**/ {
-				constexpr std::ptrdiff_t vSphere = 0x0; // GlobalTypes::fltx4 vSphere; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t vSphere = 0x0; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t nNode = 0x10; // uint16_t nNode; |  0x10 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nCollisionMask = 0x12; // uint16_t nCollisionMask; |  0x12 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nVertexMapIndex = 0x14; // uint16_t nVertexMapIndex; |  0x14 | Schema_Builtin | Size: 0x2

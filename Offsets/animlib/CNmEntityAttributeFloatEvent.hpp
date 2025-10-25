@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x78
 			namespace CNmEntityAttributeFloatEvent /*: public CS2::animlib::CNmEntityAttributeEventBase*/ {
-				constexpr std::ptrdiff_t m_FloatValue = 0x38; // GlobalTypes::CPiecewiseCurve m_FloatValue; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_FloatValue = 0x38; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

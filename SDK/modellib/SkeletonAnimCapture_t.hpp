@@ -28,18 +28,18 @@ namespace CS2 {
 		public:
 			GlobalTypes::CEntityIndex m_nEntIndex; // 0x0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CEntityIndex m_nEntParent; // 0x4 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlVector< GlobalTypes::CEntityIndex > m_ImportedCollision; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CEntityIndex> m_ImportedCollision; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_ImportedCollision[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_ModelName; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_CaptureName; // 0x28 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< modellib::Bone_t > m_ModelBindPose; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Bone_t> m_ModelBindPose; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_ModelBindPose[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< modellib::Bone_t > m_FeModelInitPose; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Bone_t> m_FeModelInitPose; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_FeModelInitPose[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			int32_t m_nFlexControllers; // 0x60 | Schema_Builtin | Size: 0x4
 			bool m_bPredicted; // 0x64 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x43);
-			GlobalTypes::CUtlVector< modellib::Frame_t > m_Frames; // 0xa8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Frame_t> m_Frames; // 0xa8 | Schema_Atomic | Size: 0x18
 			// char  m_Frames[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t, m_nEntIndex) == 0x0, "m_nEntIndex in SkeletonAnimCapture_t should be at offset 0x0");

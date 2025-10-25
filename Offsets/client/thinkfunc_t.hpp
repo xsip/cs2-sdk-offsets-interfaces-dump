@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x20
 			namespace thinkfunc_t /**/ {
-				constexpr std::ptrdiff_t m_hFn = 0x8; // GlobalTypes::HSCRIPT m_hFn; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nContext = 0x10; // GlobalTypes::CUtlStringToken m_nContext; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nNextThinkTick = 0x14; // entity2::GameTick_t m_nNextThinkTick; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nLastThinkTick = 0x18; // entity2::GameTick_t m_nLastThinkTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hFn = 0x8; // GlobalTypes::HSCRIPT  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nContext = 0x10; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nNextThinkTick = 0x14; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nLastThinkTick = 0x18; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace toolscene {
 			// Class size: 0x168
 			namespace CToolSceneLightRig /**/ {
-				constexpr std::ptrdiff_t m_nRigType = 0x8; // toolscene::LightRigType_t m_nRigType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_Suns = 0x10; // GlobalTypes::CUtlVector< toolscene::CLightRigSunLight > m_Suns; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PointLights = 0x28; // GlobalTypes::CUtlVector< toolscene::CLightRigPointLight > m_PointLights; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_SpotLights = 0x40; // GlobalTypes::CUtlVector< toolscene::CLightRigSpotLight > m_SpotLights; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Background = 0x58; // toolscene::CLightRigBackground m_Background; |  Schema_DeclaredClass | Size: 0x5
-				constexpr std::ptrdiff_t m_Grid = 0x5d; // toolscene::CLightRigGrid m_Grid; |  Schema_DeclaredClass | Size: 0x5
-				constexpr std::ptrdiff_t m_Exposure = 0x64; // toolscene::CLightRigExposure m_Exposure; |  Schema_DeclaredClass | Size: 0xc
-				constexpr std::ptrdiff_t m_PostProcessing = 0x70; // toolscene::CLightRigPostProcessing m_PostProcessing; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_Sky = 0x78; // toolscene::CLightRigSky m_Sky; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_BackgroundMap = 0x80; // toolscene::CLightRigVMap m_BackgroundMap; |  Schema_DeclaredClass | Size: 0xe8
+				constexpr std::ptrdiff_t m_nRigType = 0x8; // toolscene::LightRigType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Suns = 0x10; // GlobalTypes::CUtlVector<toolscene::CLightRigSunLight>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PointLights = 0x28; // GlobalTypes::CUtlVector<toolscene::CLightRigPointLight>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SpotLights = 0x40; // GlobalTypes::CUtlVector<toolscene::CLightRigSpotLight>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Background = 0x58; // toolscene::CLightRigBackground  | Schema_DeclaredClass | Size: 0x5
+				constexpr std::ptrdiff_t m_Grid = 0x5d; // toolscene::CLightRigGrid  | Schema_DeclaredClass | Size: 0x5
+				constexpr std::ptrdiff_t m_Exposure = 0x64; // toolscene::CLightRigExposure  | Schema_DeclaredClass | Size: 0xc
+				constexpr std::ptrdiff_t m_PostProcessing = 0x70; // toolscene::CLightRigPostProcessing  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_Sky = 0x78; // toolscene::CLightRigSky  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_BackgroundMap = 0x80; // toolscene::CLightRigVMap  | Schema_DeclaredClass | Size: 0xe8
 			}
 		}
 	}

@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x18
 			namespace AggregateInstanceStreamOnDiskData_t /**/ {
 				constexpr std::ptrdiff_t m_DecodedSize = 0x0; // uint32_t m_DecodedSize; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_BufferData = 0x8; // GlobalTypes::CUtlBinaryBlock m_BufferData; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_BufferData = 0x8; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

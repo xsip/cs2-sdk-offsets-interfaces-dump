@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x30
 			namespace Camera_t /**/ {
-				constexpr std::ptrdiff_t m_tmCamera = 0x0; // GlobalTypes::CTransform m_tmCamera; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_tmCamera = 0x0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_flTime = 0x20; // float32 m_flTime; |  0x20 | Schema_Builtin | Size: 0x4
 			}
 		}

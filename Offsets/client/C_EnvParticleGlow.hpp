@@ -13,8 +13,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flAlphaScale = 0x1460; // float32 m_flAlphaScale; |  0x1460 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadiusScale = 0x1464; // float32 m_flRadiusScale; |  0x1464 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSelfIllumScale = 0x1468; // float32 m_flSelfIllumScale; |  0x1468 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ColorTint = 0x146c; // GlobalTypes::Color m_ColorTint; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTextureOverride = 0x1470; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTextureOverride; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ColorTint = 0x146c; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTextureOverride = 0x1470; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

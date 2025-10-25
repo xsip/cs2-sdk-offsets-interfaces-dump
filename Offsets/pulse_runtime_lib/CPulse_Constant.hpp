@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x30
 			namespace CPulse_Constant /**/ {
-				constexpr std::ptrdiff_t m_Type = 0x0; // GlobalTypes::CPulseValueFullType m_Type; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Value = 0x18; // GlobalTypes::KeyValues3 m_Value; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Type = 0x0; // GlobalTypes::CPulseValueFullType  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Value = 0x18; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

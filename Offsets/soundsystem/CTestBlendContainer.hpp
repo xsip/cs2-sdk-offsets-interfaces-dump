@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0xC8
 			namespace CTestBlendContainer /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_firstSound = 0xb8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_firstSound; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_secondSound = 0xc0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_secondSound; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_firstSound = 0xb8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_secondSound = 0xc0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

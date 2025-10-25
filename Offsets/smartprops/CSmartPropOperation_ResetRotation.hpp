@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x150
 			namespace CSmartPropOperation_ResetRotation /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_bIgnoreObjectRotation = 0x50; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreObjectRotation; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bResetPitch = 0x90; // GlobalTypes::CSmartPropAttributeBool m_bResetPitch; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bResetYaw = 0xd0; // GlobalTypes::CSmartPropAttributeBool m_bResetYaw; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bResetRoll = 0x110; // GlobalTypes::CSmartPropAttributeBool m_bResetRoll; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreObjectRotation = 0x50; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bResetPitch = 0x90; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bResetYaw = 0xd0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bResetRoll = 0x110; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

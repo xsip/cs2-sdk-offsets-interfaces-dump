@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x2E0
 			namespace CSmartPropElement_FitOnLine /*: public CS2::smartprops::CSmartPropElement_Group*/ {
-				constexpr std::ptrdiff_t m_vStart = 0xa0; // GlobalTypes::CSmartPropAttributeVector m_vStart; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vEnd = 0xe0; // GlobalTypes::CSmartPropAttributeVector m_vEnd; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_PointSpace = 0x120; // smartprops::CSmartPropAttributeCoordinateSpace m_PointSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bOrientAlongLine = 0x160; // GlobalTypes::CSmartPropAttributeBool m_bOrientAlongLine; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vUpDirection = 0x1a0; // GlobalTypes::CSmartPropAttributeVector m_vUpDirection; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_UpDirectionSpace = 0x1e0; // smartprops::CSmartPropAttributeCoordinateSpace m_UpDirectionSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bPrioritizeUp = 0x220; // GlobalTypes::CSmartPropAttributeBool m_bPrioritizeUp; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nScaleMode = 0x260; // smartprops::CSmartPropAttributeScaleMode m_nScaleMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_nPickMode = 0x2a0; // smartprops::CSmartPropAttributePickMode m_nPickMode; |  Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_vStart = 0xa0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vEnd = 0xe0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_PointSpace = 0x120; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bOrientAlongLine = 0x160; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vUpDirection = 0x1a0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_UpDirectionSpace = 0x1e0; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bPrioritizeUp = 0x220; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nScaleMode = 0x260; // smartprops::CSmartPropAttributeScaleMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_nPickMode = 0x2a0; // smartprops::CSmartPropAttributePickMode  | Schema_DeclaredClass | Size: 0x40
 			}
 		}
 	}

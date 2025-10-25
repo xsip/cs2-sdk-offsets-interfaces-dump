@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace worldrenderer {
 			// Class size: 0x38
 			namespace PermEntityLumpData_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x8; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_childLumps = 0x10; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandleCopyable< InfoForResourceTypeCEntityLump > > m_childLumps; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_entityKeyValues = 0x28; // GlobalTypes::CUtlLeanVector< worldrenderer::EntityKeyValueData_t > m_entityKeyValues; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_name = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_childLumps = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandleCopyable<resourcesystem::InfoForResourceTypeCEntityLump>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_entityKeyValues = 0x28; // GlobalTypes::CUtlLeanVector<worldrenderer::EntityKeyValueData_t>  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

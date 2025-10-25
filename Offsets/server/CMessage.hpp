@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x538
 			namespace CMessage /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_iszMessage = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszMessage; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszMessage = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_MessageVolume = 0x4f8; // float32 m_MessageVolume; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_MessageAttenuation = 0x4fc; // int32_t m_MessageAttenuation; |  0x4fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Radius = 0x500; // float32 m_Radius; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sNoise = 0x508; // GlobalTypes::CUtlSymbolLarge m_sNoise; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OnShowMessage = 0x510; // entity2::CEntityIOOutput m_OnShowMessage; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_sNoise = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnShowMessage = 0x510; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

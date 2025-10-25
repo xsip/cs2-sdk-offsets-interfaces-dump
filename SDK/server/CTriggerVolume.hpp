@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseFilter;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,8 +27,8 @@ namespace CS2 {
 		class CTriggerVolume : public CS2::server::CBaseModelEntity {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x7d8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x7e0 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x7e0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x7e0 | Schema_Atomic | Size: 0x4
+			// char  m_hFilter[0x4]; // 0x7e0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CTriggerVolume, m_iFilterName) == 0x7D8, "m_iFilterName in CTriggerVolume should be at offset 0x7D8");

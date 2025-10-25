@@ -26,7 +26,7 @@ namespace CS2 {
 		class C_fogplayerparams_t  {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CHandle< client::C_FogController > m_hCtrl; // 0x8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_FogController> m_hCtrl; // 0x8 | Schema_Atomic | Size: 0x4
 			// char  m_hCtrl[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
 			float32 m_flTransitionTime; // 0xc | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_OldColor; // 0x10 | Schema_Atomic | Size: 0x4

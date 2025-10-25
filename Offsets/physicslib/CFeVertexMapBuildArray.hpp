@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x18
 			namespace CFeVertexMapBuildArray /**/ {
-				constexpr std::ptrdiff_t m_Array = 0x0; // GlobalTypes::CUtlVector< physicslib::FeVertexMapBuild_t > m_Array; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Array = 0x0; // GlobalTypes::CUtlVector<physicslib::FeVertexMapBuild_t*>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

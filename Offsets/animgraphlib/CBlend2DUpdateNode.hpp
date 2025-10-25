@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xF8
 			namespace CBlend2DUpdateNode /*: public CS2::animgraphlib::CAnimUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_items = 0x60; // GlobalTypes::CUtlVector< animgraphlib::BlendItem_t > m_items; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_tags = 0x78; // GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_paramSpans = 0x90; // animgraphlib::CParamSpanUpdater m_paramSpans; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_nodeItemIndices = 0xa8; // GlobalTypes::CUtlVector< int32 > m_nodeItemIndices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_damping = 0xc0; // animgraphlib::CAnimInputDamping m_damping; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_blendSourceX = 0xd8; // animgraphlib::AnimValueSource m_blendSourceX; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_paramX = 0xdc; // animgraphlib::CAnimParamHandle m_paramX; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_blendSourceY = 0xe0; // animgraphlib::AnimValueSource m_blendSourceY; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_paramY = 0xe4; // animgraphlib::CAnimParamHandle m_paramY; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_eBlendMode = 0xe8; // animgraphlib::Blend2DMode m_eBlendMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_items = 0x60; // GlobalTypes::CUtlVector<animgraphlib::BlendItem_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_tags = 0x78; // GlobalTypes::CUtlVector<animgraphlib::TagSpan_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_paramSpans = 0x90; // animgraphlib::CParamSpanUpdater  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_nodeItemIndices = 0xa8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_damping = 0xc0; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_blendSourceX = 0xd8; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_paramX = 0xdc; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_blendSourceY = 0xe0; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_paramY = 0xe4; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_eBlendMode = 0xe8; // animgraphlib::Blend2DMode  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_playbackSpeed = 0xec; // float32 m_playbackSpeed; |  0xec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bLoop = 0xf0; // bool m_bLoop; |  0xf0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLockBlendOnReset = 0xf1; // bool m_bLockBlendOnReset; |  0xf1 | Schema_Builtin | Size: 0x1

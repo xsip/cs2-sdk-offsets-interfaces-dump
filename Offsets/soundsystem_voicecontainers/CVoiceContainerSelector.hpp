@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0x130
 			namespace CVoiceContainerSelector /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_mode = 0xb8; // soundsystem_voicecontainers::PlayBackMode_t m_mode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_soundsToPlay = 0xc0; // soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; |  Schema_DeclaredClass | Size: 0x38
-				constexpr std::ptrdiff_t m_fProbabilityWeights = 0xf8; // GlobalTypes::CUtlVector< float32 > m_fProbabilityWeights; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_mode = 0xb8; // soundsystem_voicecontainers::PlayBackMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_soundsToPlay = 0xc0; // soundsystem_voicecontainers::CSoundContainerReferenceArray  | Schema_DeclaredClass | Size: 0x38
+				constexpr std::ptrdiff_t m_fProbabilityWeights = 0xf8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CEnvSoundscapeTriggerable;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,11 +26,11 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSoundscape : public CS2::server::CBaseTrigger {
 		public:
-			// server::CHandle< server::CEnvSoundscapeTriggerable > m_hSoundscape; // 0x9a8 | Schema_Atomic | Size: 0x4
-			char  m_hSoundscape[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable> m_hSoundscape; // 0x9a8 | Schema_Atomic | Size: 0x4
+			// char  m_hSoundscape[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_SoundscapeName; // 0x9b0 | Schema_Atomic | Size: 0x8
-			// server::CUtlVector< server.dll::CHandle< CBasePlayerPawn > > m_spectators; // 0x9b8 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerPawn>> m_spectators; // 0x9b8 | Schema_Atomic | Size: 0x18
 			char  m_spectators[0x18]; // 0x9b8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_hSoundscape) == 0x9A8, "m_hSoundscape in CTriggerSoundscape should be at offset 0x9A8");

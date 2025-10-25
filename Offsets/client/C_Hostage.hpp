@@ -10,29 +10,29 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x14C0
 			namespace C_Hostage /*: public CS2::client::C_BaseCombatCharacter*/ {
-				constexpr std::ptrdiff_t m_entitySpottedState = 0x13f0; // client::EntitySpottedState_t m_entitySpottedState; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_leader = 0x1408; // client::CHandle< client::C_BaseEntity > m_leader; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_reuseTimer = 0x1410; // client::CountdownTimer m_reuseTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_vel = 0x1428; // GlobalTypes::Vector m_vel; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_entitySpottedState = 0x13f0; // client::EntitySpottedState_t  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_leader = 0x1408; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_reuseTimer = 0x1410; // client::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_vel = 0x1428; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_isRescued = 0x1434; // bool m_isRescued; |  0x1434 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_jumpedThisFrame = 0x1435; // bool m_jumpedThisFrame; |  0x1435 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nHostageState = 0x1438; // int32_t m_nHostageState; |  0x1438 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHandsHaveBeenCut = 0x143c; // bool m_bHandsHaveBeenCut; |  0x143c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hHostageGrabber = 0x1440; // client::CHandle< client::C_CSPlayerPawn > m_hHostageGrabber; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_fLastGrabTime = 0x1444; // entity2::GameTime_t m_fLastGrabTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecGrabbedPos = 0x1448; // GlobalTypes::Vector m_vecGrabbedPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flRescueStartTime = 0x1454; // entity2::GameTime_t m_flRescueStartTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flGrabSuccessTime = 0x1458; // entity2::GameTime_t m_flGrabSuccessTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flDropStartTime = 0x145c; // entity2::GameTime_t m_flDropStartTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flDeadOrRescuedTime = 0x1460; // entity2::GameTime_t m_flDeadOrRescuedTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_blinkTimer = 0x1468; // client::CountdownTimer m_blinkTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_lookAt = 0x1480; // GlobalTypes::Vector m_lookAt; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_lookAroundTimer = 0x1490; // client::CountdownTimer m_lookAroundTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_hHostageGrabber = 0x1440; // GlobalTypes::CHandle<client::C_CSPlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_fLastGrabTime = 0x1444; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecGrabbedPos = 0x1448; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flRescueStartTime = 0x1454; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flGrabSuccessTime = 0x1458; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDropStartTime = 0x145c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDeadOrRescuedTime = 0x1460; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_blinkTimer = 0x1468; // client::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_lookAt = 0x1480; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_lookAroundTimer = 0x1490; // client::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_isInit = 0x14a8; // bool m_isInit; |  0x14a8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_eyeAttachment = 0x14a9; // modellib::AttachmentHandle_t m_eyeAttachment; |  Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_chestAttachment = 0x14aa; // modellib::AttachmentHandle_t m_chestAttachment; |  Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_pPredictionOwner = 0x14b0; // client::CBasePlayerController* m_pPredictionOwner; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_fNewestAlphaThinkTime = 0x14b8; // entity2::GameTime_t m_fNewestAlphaThinkTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_eyeAttachment = 0x14a9; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_chestAttachment = 0x14aa; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_pPredictionOwner = 0x14b0; // client::CBasePlayerController**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_fNewestAlphaThinkTime = 0x14b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

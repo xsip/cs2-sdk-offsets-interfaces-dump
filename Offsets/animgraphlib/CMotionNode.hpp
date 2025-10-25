@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x28
 			namespace CMotionNode /**/ {
-				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_id = 0x20; // modellib::AnimNodeID m_id; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_id = 0x20; // modellib::AnimNodeID  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

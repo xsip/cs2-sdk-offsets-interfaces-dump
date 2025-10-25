@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x2
 			namespace CAnimParamHandle /**/ {
-				constexpr std::ptrdiff_t m_type = 0x0; // animgraphlib::AnimParamType_t m_type; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_type = 0x0; // animgraphlib::AnimParamType_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_index = 0x1; // uint8_t m_index; |  0x1 | Schema_Builtin | Size: 0x1
 			}
 		}

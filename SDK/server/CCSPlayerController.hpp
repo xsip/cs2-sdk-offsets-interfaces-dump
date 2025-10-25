@@ -23,6 +23,8 @@ namespace CS2 {
 		class CCSPlayerController_InventoryServices;
 		class CCSPlayerController_ActionTrackingServices;
 		class CCSPlayerController_DamageServices;
+		class CCSPlayerPawn;
+		class CCSObserverPawn;
 	}
 }
 
@@ -98,10 +100,10 @@ namespace CS2 {
 			int32_t m_nBotsControlledThisRound; // 0x91c | Schema_Builtin | Size: 0x4
 			bool m_bCanControlObservedBot; // 0x920 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CCSPlayerPawn > m_hPlayerPawn; // 0x924 | Schema_Atomic | Size: 0x4
-			char  m_hPlayerPawn[0x4]; // 0x924 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CCSObserverPawn > m_hObserverPawn; // 0x928 | Schema_Atomic | Size: 0x4
-			char  m_hObserverPawn[0x4]; // 0x928 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hPlayerPawn; // 0x924 | Schema_Atomic | Size: 0x4
+			// char  m_hPlayerPawn[0x4]; // 0x924 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSObserverPawn> m_hObserverPawn; // 0x928 | Schema_Atomic | Size: 0x4
+			// char  m_hObserverPawn[0x4]; // 0x928 | Schema_Atomic | Size: 0x4
 			int32_t m_DesiredObserverMode; // 0x92c | Schema_Builtin | Size: 0x4
 			GlobalTypes::CEntityHandle m_hDesiredObserverTarget; // 0x930 | Schema_Atomic | Size: 0x4
 			bool m_bPawnIsAlive; // 0x934 | Schema_Builtin | Size: 0x1
@@ -114,8 +116,8 @@ namespace CS2 {
 			int32_t m_iPawnLifetimeStart; // 0x944 | Schema_Builtin | Size: 0x4
 			int32_t m_iPawnLifetimeEnd; // 0x948 | Schema_Builtin | Size: 0x4
 			int32_t m_iPawnBotDifficulty; // 0x94c | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CCSPlayerController > m_hOriginalControllerOfCurrentPawn; // 0x950 | Schema_Atomic | Size: 0x4
-			char  m_hOriginalControllerOfCurrentPawn[0x4]; // 0x950 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerController> m_hOriginalControllerOfCurrentPawn; // 0x950 | Schema_Atomic | Size: 0x4
+			// char  m_hOriginalControllerOfCurrentPawn[0x4]; // 0x950 | Schema_Atomic | Size: 0x4
 			int32_t m_iScore; // 0x954 | Schema_Builtin | Size: 0x4
 			int32_t m_iRoundScore; // 0x958 | Schema_Builtin | Size: 0x4
 			int32_t m_iRoundsWon; // 0x95c | Schema_Builtin | Size: 0x4

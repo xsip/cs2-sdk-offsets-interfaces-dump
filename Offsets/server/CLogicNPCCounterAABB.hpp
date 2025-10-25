@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x860
 			namespace CLogicNPCCounterAABB /*: public CS2::server::CLogicNPCCounter*/ {
-				constexpr std::ptrdiff_t m_vDistanceOuterMins = 0x830; // GlobalTypes::Vector m_vDistanceOuterMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDistanceOuterMaxs = 0x83c; // GlobalTypes::Vector m_vDistanceOuterMaxs; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOuterMins = 0x848; // GlobalTypes::Vector m_vOuterMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOuterMaxs = 0x854; // GlobalTypes::Vector m_vOuterMaxs; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceOuterMins = 0x830; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceOuterMaxs = 0x83c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOuterMins = 0x848; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOuterMaxs = 0x854; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

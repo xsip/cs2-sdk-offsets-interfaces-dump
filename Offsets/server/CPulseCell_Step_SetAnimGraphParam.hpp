@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x50
 			namespace CPulseCell_Step_SetAnimGraphParam /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_ParamName = 0x48; // GlobalTypes::CUtlString m_ParamName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ParamName = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

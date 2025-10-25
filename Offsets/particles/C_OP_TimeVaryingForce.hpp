@@ -11,9 +11,9 @@ namespace CS2 {
 			// Class size: 0x200
 			namespace C_OP_TimeVaryingForce /*: public CS2::particles::CParticleFunctionForce*/ {
 				constexpr std::ptrdiff_t m_flStartLerpTime = 0x1e0; // float32 m_flStartLerpTime; |  0x1e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_StartingForce = 0x1e4; // GlobalTypes::Vector m_StartingForce; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_StartingForce = 0x1e4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flEndLerpTime = 0x1f0; // float32 m_flEndLerpTime; |  0x1f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_EndingForce = 0x1f4; // GlobalTypes::Vector m_EndingForce; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_EndingForce = 0x1f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

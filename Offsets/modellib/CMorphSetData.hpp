@@ -12,12 +12,12 @@ namespace CS2 {
 			namespace CMorphSetData /**/ {
 				constexpr std::ptrdiff_t m_nWidth = 0x10; // int32_t m_nWidth; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHeight = 0x14; // int32_t m_nHeight; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bundleTypes = 0x18; // GlobalTypes::CUtlVector< MorphBundleType_t > m_bundleTypes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_morphDatas = 0x30; // GlobalTypes::CUtlVector< modellib::CMorphData > m_morphDatas; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pTextureAtlas = 0x48; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pTextureAtlas; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_FlexDesc = 0x50; // GlobalTypes::CUtlVector< modellib::CFlexDesc > m_FlexDesc; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_FlexControllers = 0x68; // GlobalTypes::CUtlVector< modellib::CFlexController > m_FlexControllers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_FlexRules = 0x80; // GlobalTypes::CUtlVector< modellib::CFlexRule > m_FlexRules; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bundleTypes = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_morphDatas = 0x30; // GlobalTypes::CUtlVector<modellib::CMorphData>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pTextureAtlas = 0x48; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_FlexDesc = 0x50; // GlobalTypes::CUtlVector<modellib::CFlexDesc>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_FlexControllers = 0x68; // GlobalTypes::CUtlVector<modellib::CFlexController>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_FlexRules = 0x80; // GlobalTypes::CUtlVector<modellib::CFlexRule>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

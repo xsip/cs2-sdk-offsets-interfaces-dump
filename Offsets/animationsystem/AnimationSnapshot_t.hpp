@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x120
 			namespace AnimationSnapshot_t /*: public CS2::animationsystem::AnimationSnapshotBase_t*/ {
 				constexpr std::ptrdiff_t m_nEntIndex = 0x110; // int32_t m_nEntIndex; |  0x110 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_modelName = 0x118; // GlobalTypes::CUtlString m_modelName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_modelName = 0x118; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

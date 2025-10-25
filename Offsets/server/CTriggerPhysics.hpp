@@ -18,10 +18,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_linearForce = 0x9cc; // float32 m_linearForce; |  0x9cc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFrequency = 0x9d0; // float32 m_flFrequency; |  0x9d0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDampingRatio = 0x9d4; // float32 m_flDampingRatio; |  0x9d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecLinearForcePointAt = 0x9d8; // GlobalTypes::Vector m_vecLinearForcePointAt; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLinearForcePointAt = 0x9d8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bCollapseToForcePoint = 0x9e4; // bool m_bCollapseToForcePoint; |  0x9e4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecLinearForcePointAtWorld = 0x9e8; // GlobalTypes::Vector m_vecLinearForcePointAtWorld; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecLinearForceDirection = 0x9f4; // GlobalTypes::Vector m_vecLinearForceDirection; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLinearForcePointAtWorld = 0x9e8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLinearForceDirection = 0x9f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bConvertToDebrisWhenPossible = 0xa00; // bool m_bConvertToDebrisWhenPossible; |  0xa00 | Schema_Builtin | Size: 0x1
 			}
 		}

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x100
 			namespace CStateMachineUpdateNode /*: public CS2::animgraphlib::CAnimUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_stateMachine = 0x70; // animgraphlib::CAnimStateMachineUpdater m_stateMachine; |  Schema_DeclaredClass | Size: 0x58
-				constexpr std::ptrdiff_t m_stateData = 0xc8; // GlobalTypes::CUtlVector< animgraphlib::CStateNodeStateData > m_stateData; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_transitionData = 0xe0; // GlobalTypes::CUtlVector< animgraphlib::CStateNodeTransitionData > m_transitionData; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_stateMachine = 0x70; // animgraphlib::CAnimStateMachineUpdater  | Schema_DeclaredClass | Size: 0x58
+				constexpr std::ptrdiff_t m_stateData = 0xc8; // GlobalTypes::CUtlVector<animgraphlib::CStateNodeStateData>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_transitionData = 0xe0; // GlobalTypes::CUtlVector<animgraphlib::CStateNodeTransitionData>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bBlockWaningTags = 0xfc; // bool m_bBlockWaningTags; |  0xfc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLockStateWhenWaning = 0xfd; // bool m_bLockStateWhenWaning; |  0xfd | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bResetWhenActivated = 0xfe; // bool m_bResetWhenActivated; |  0xfe | Schema_Builtin | Size: 0x1

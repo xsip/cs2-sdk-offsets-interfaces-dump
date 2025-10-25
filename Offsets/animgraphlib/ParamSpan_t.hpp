@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x28
 			namespace ParamSpan_t /**/ {
-				constexpr std::ptrdiff_t m_samples = 0x0; // GlobalTypes::CUtlVector< animgraphlib::ParamSpanSample_t > m_samples; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hParam = 0x18; // animgraphlib::CAnimParamHandle m_hParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_eParamType = 0x1a; // animgraphlib::AnimParamType_t m_eParamType; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_samples = 0x0; // GlobalTypes::CUtlVector<animgraphlib::ParamSpanSample_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hParam = 0x18; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_eParamType = 0x1a; // animgraphlib::AnimParamType_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_flStartCycle = 0x1c; // float32 m_flStartCycle; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEndCycle = 0x20; // float32 m_flEndCycle; |  0x20 | Schema_Builtin | Size: 0x4
 			}

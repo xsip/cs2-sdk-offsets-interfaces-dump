@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x10
 			namespace ExternalGraphSlot_t /**/ {
 				constexpr std::ptrdiff_t m_nNodeIdx = 0x0; // int16_t m_nNodeIdx; |  0x0 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_slotID = 0x8; // GlobalTypes::CGlobalSymbol m_slotID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_slotID = 0x8; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

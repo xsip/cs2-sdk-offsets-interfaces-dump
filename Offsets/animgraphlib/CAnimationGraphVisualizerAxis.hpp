@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x70
 			namespace CAnimationGraphVisualizerAxis /*: public CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase*/ {
-				constexpr std::ptrdiff_t m_xWsTransform = 0x40; // GlobalTypes::CTransform m_xWsTransform; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_xWsTransform = 0x40; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_flAxisSize = 0x60; // float32 m_flAxisSize; |  0x60 | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -31,7 +31,7 @@ namespace CS2 {
 			int32_t m_nTransitionDurationTicks; // 0x804 | Schema_Builtin | Size: 0x4
 			float32 m_flTransitionStartSpeed; // 0x808 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseEntity > > m_hConveyorModels; // 0x810 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseEntity>> m_hConveyorModels; // 0x810 | Schema_Atomic | Size: 0x18
 			char  m_hConveyorModels[0x18]; // 0x810 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CFuncConveyor, m_szConveyorModels) == 0x7D8, "m_szConveyorModels in CFuncConveyor should be at offset 0x7D8");

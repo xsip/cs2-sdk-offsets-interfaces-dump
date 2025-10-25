@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x108
 			namespace CMotionGraphGroup /**/ {
-				constexpr std::ptrdiff_t m_searchDB = 0x0; // animgraphlib::CMotionSearchDB m_searchDB; |  Schema_DeclaredClass | Size: 0xb8
-				constexpr std::ptrdiff_t m_motionGraphs = 0xb8; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CMotionGraph > > m_motionGraphs; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_motionGraphConfigs = 0xd0; // GlobalTypes::CUtlVector< animgraphlib::CMotionGraphConfig > m_motionGraphConfigs; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_sampleToConfig = 0xe8; // GlobalTypes::CUtlVector< int32 > m_sampleToConfig; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hIsActiveScript = 0x100; // modellib::AnimScriptHandle m_hIsActiveScript; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_searchDB = 0x0; // animgraphlib::CMotionSearchDB  | Schema_DeclaredClass | Size: 0xb8
+				constexpr std::ptrdiff_t m_motionGraphs = 0xb8; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CMotionGraph>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_motionGraphConfigs = 0xd0; // GlobalTypes::CUtlVector<animgraphlib::CMotionGraphConfig>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sampleToConfig = 0xe8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hIsActiveScript = 0x100; // modellib::AnimScriptHandle  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

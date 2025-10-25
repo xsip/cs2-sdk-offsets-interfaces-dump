@@ -22,7 +22,7 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_FireCursors : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			// server::CUtlVector< pulse_runtime_lib::CPulse_OutflowConnection > m_Outflows; // 0x48 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Outflows; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_Outflows[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			bool m_bWaitForChildOutflows; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

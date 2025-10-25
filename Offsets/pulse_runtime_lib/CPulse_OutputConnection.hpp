@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x40
 			namespace CPulse_OutputConnection /**/ {
-				constexpr std::ptrdiff_t m_SourceOutput = 0x0; // GlobalTypes::PulseSymbol_t m_SourceOutput; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_TargetEntity = 0x10; // GlobalTypes::PulseSymbol_t m_TargetEntity; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_TargetInput = 0x20; // GlobalTypes::PulseSymbol_t m_TargetInput; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Param = 0x30; // GlobalTypes::PulseSymbol_t m_Param; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_SourceOutput = 0x0; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_TargetEntity = 0x10; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_TargetInput = 0x20; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Param = 0x30; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

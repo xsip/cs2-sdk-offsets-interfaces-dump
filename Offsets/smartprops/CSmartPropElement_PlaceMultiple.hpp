@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xE8
 			namespace CSmartPropElement_PlaceMultiple /*: public CS2::smartprops::CSmartPropElement_Group*/ {
-				constexpr std::ptrdiff_t m_nCount = 0xa0; // GlobalTypes::CSmartPropAttributeInt m_nCount; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_Expression = 0xe0; // GlobalTypes::CUtlString m_Expression; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nCount = 0xa0; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Expression = 0xe0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

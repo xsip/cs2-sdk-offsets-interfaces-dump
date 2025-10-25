@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xA8
 			namespace CPlayer_WeaponServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_hMyWeapons = 0x40; // server::CNetworkUtlVectorBase< server.dll::CHandle< CBasePlayerWeapon > > m_hMyWeapons; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hActiveWeapon = 0x58; // server::CHandle< server::CBasePlayerWeapon > m_hActiveWeapon; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hLastWeapon = 0x5c; // server::CHandle< server::CBasePlayerWeapon > m_hLastWeapon; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hMyWeapons = 0x40; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerWeapon>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hActiveWeapon = 0x58; // GlobalTypes::CHandle<server::CBasePlayerWeapon>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hLastWeapon = 0x5c; // GlobalTypes::CHandle<server::CBasePlayerWeapon>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iAmmo = 0x60; // uint16_t m_iAmmo[32]; |  0x60 | Schema_FixedArray | Size: 0x40
 				constexpr std::ptrdiff_t m_bPreventWeaponPickup = 0xa0; // bool m_bPreventWeaponPickup; |  0xa0 | Schema_Builtin | Size: 0x1
 			}

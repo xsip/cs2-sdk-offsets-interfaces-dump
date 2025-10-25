@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x10
 			namespace CBodyGroupSetting /**/ {
-				constexpr std::ptrdiff_t m_BodyGroupName = 0x0; // GlobalTypes::CUtlString m_BodyGroupName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_BodyGroupName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nBodyGroupOption = 0x8; // int32_t m_nBodyGroupOption; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

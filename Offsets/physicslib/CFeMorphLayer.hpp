@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x88
 			namespace CFeMorphLayer /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nNameHash = 0x8; // uint32_t m_nNameHash; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Nodes = 0x10; // GlobalTypes::CUtlVector< uint16 > m_Nodes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_InitPos = 0x28; // GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_InitPos; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Gravity = 0x40; // GlobalTypes::CUtlVector< float32 > m_Gravity; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_GoalStrength = 0x58; // GlobalTypes::CUtlVector< float32 > m_GoalStrength; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_GoalDamping = 0x70; // GlobalTypes::CUtlVector< float32 > m_GoalDamping; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Nodes = 0x10; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_InitPos = 0x28; // GlobalTypes::CUtlVector<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Gravity = 0x40; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_GoalStrength = 0x58; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_GoalDamping = 0x70; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

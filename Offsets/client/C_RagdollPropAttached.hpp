@@ -12,9 +12,9 @@ namespace CS2 {
 			namespace C_RagdollPropAttached /*: public CS2::client::C_RagdollProp*/ {
 				constexpr std::ptrdiff_t m_boneIndexAttached = 0x11e8; // uint32_t m_boneIndexAttached; |  0x11e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_ragdollAttachedObjectIndex = 0x11ec; // uint32_t m_ragdollAttachedObjectIndex; |  0x11ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentPointBoneSpace = 0x11f0; // GlobalTypes::Vector m_attachmentPointBoneSpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_attachmentPointRagdollSpace = 0x11fc; // GlobalTypes::Vector m_attachmentPointRagdollSpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOffset = 0x1208; // GlobalTypes::Vector m_vecOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_attachmentPointBoneSpace = 0x11f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_attachmentPointRagdollSpace = 0x11fc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffset = 0x1208; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_parentTime = 0x1214; // float32 m_parentTime; |  0x1214 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHasParent = 0x1218; // bool m_bHasParent; |  0x1218 | Schema_Builtin | Size: 0x1
 			}

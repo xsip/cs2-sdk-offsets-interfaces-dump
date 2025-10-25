@@ -26,7 +26,7 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerSet : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CVoiceContainerSetElement > m_soundsToPlay; // 0xb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerSetElement> m_soundsToPlay; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char  m_soundsToPlay[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSet, m_soundsToPlay) == 0xB8, "m_soundsToPlay in CVoiceContainerSet should be at offset 0xB8");

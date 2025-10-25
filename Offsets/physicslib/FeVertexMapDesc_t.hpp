@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x38
 			namespace FeVertexMapDesc_t /**/ {
-				constexpr std::ptrdiff_t sName = 0x0; // GlobalTypes::CUtlString sName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t sName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t nNameHash = 0x8; // uint32_t nNameHash; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t nColor = 0xc; // uint32_t nColor; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t nFlags = 0x10; // uint32_t nFlags; |  0x10 | Schema_Builtin | Size: 0x4
@@ -18,7 +18,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t nVertexCount = 0x16; // uint16_t nVertexCount; |  0x16 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nMapOffset = 0x18; // uint32_t nMapOffset; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t nNodeListOffset = 0x1c; // uint32_t nNodeListOffset; |  0x1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t vCenterOfMass = 0x20; // GlobalTypes::Vector vCenterOfMass; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t vCenterOfMass = 0x20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t flVolumetricSolveStrength = 0x2c; // float32 flVolumetricSolveStrength; |  0x2c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t nScaleSourceNode = 0x30; // int16_t nScaleSourceNode; |  0x30 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nNodeListCount = 0x32; // uint16_t nNodeListCount; |  0x32 | Schema_Builtin | Size: 0x2

@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x18
 			namespace SequenceHistory_t /**/ {
-				constexpr std::ptrdiff_t m_hSequence = 0x0; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flSeqStartTime = 0x4; // entity2::GameTime_t m_flSeqStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hSequence = 0x0; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flSeqStartTime = 0x4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flSeqFixedCycle = 0x8; // float32 m_flSeqFixedCycle; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSeqLoopMode = 0xc; // client::AnimLoopMode_t m_nSeqLoopMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSeqLoopMode = 0xc; // client::AnimLoopMode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flPlaybackRate = 0x10; // float32 m_flPlaybackRate; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCyclesPerSecond = 0x14; // float32 m_flCyclesPerSecond; |  0x14 | Schema_Builtin | Size: 0x4
 			}

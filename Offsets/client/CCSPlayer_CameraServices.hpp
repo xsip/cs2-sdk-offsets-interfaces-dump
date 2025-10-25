@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x338
 			namespace CCSPlayer_CameraServices /*: public CS2::client::CCSPlayerBase_CameraServices*/ {
 				constexpr std::ptrdiff_t m_flDeathCamTilt = 0x2a0; // float32 m_flDeathCamTilt; |  0x2a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vClientScopeInaccuracy = 0x2a8; // GlobalTypes::Vector m_vClientScopeInaccuracy; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vClientScopeInaccuracy = 0x2a8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

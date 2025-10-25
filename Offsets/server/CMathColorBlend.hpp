@@ -12,9 +12,9 @@ namespace CS2 {
 			namespace CMathColorBlend /*: public CS2::server::CLogicalEntity*/ {
 				constexpr std::ptrdiff_t m_flInMin = 0x4f0; // float32 m_flInMin; |  0x4f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInMax = 0x4f4; // float32 m_flInMax; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OutColor1 = 0x4f8; // GlobalTypes::Color m_OutColor1; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OutColor2 = 0x4fc; // GlobalTypes::Color m_OutColor2; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OutValue = 0x500; // GlobalTypes::CEntityOutputTemplate< GlobalTypes::Color > m_OutValue; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OutColor1 = 0x4f8; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OutColor2 = 0x4fc; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OutValue = 0x500; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::Color>  | Schema_Atomic | Size: 0x28
 			}
 		}
 	}

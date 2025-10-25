@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x20
 			namespace CMorphData /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_morphRectDatas = 0x8; // GlobalTypes::CUtlVector< modellib::CMorphRectData > m_morphRectDatas; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_morphRectDatas = 0x8; // GlobalTypes::CUtlVector<modellib::CMorphRectData>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -13,11 +13,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nVariant = 0x5f8; // int32_t m_nVariant; |  0x5f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nRandom = 0x5fc; // int32_t m_nRandom; |  0x5fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOrdinal = 0x600; // int32_t m_nOrdinal; |  0x600 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sWeaponName = 0x608; // GlobalTypes::CUtlString m_sWeaponName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sWeaponName = 0x608; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_xuid = 0x610; // uint64_t m_xuid; |  0x610 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_agentItem = 0x618; // client::C_EconItemView m_agentItem; |  Schema_DeclaredClass | Size: 0x478
-				constexpr std::ptrdiff_t m_glovesItem = 0xa90; // client::C_EconItemView m_glovesItem; |  Schema_DeclaredClass | Size: 0x478
-				constexpr std::ptrdiff_t m_weaponItem = 0xf08; // client::C_EconItemView m_weaponItem; |  Schema_DeclaredClass | Size: 0x478
+				constexpr std::ptrdiff_t m_agentItem = 0x618; // client::C_EconItemView  | Schema_DeclaredClass | Size: 0x478
+				constexpr std::ptrdiff_t m_glovesItem = 0xa90; // client::C_EconItemView  | Schema_DeclaredClass | Size: 0x478
+				constexpr std::ptrdiff_t m_weaponItem = 0xf08; // client::C_EconItemView  | Schema_DeclaredClass | Size: 0x478
 			}
 		}
 	}

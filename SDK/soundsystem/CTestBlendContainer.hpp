@@ -21,9 +21,9 @@ namespace CS2 {
 	namespace soundsystem {
 		class CTestBlendContainer : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_firstSound; // 0xb8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase> m_firstSound; // 0xb8 | Schema_Atomic | Size: 0x8
 			char  m_firstSound[0x8]; // 0xb8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_secondSound; // 0xc0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase> m_secondSound; // 0xc0 | Schema_Atomic | Size: 0x8
 			char  m_secondSound[0x8]; // 0xc0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::soundsystem::CTestBlendContainer, m_firstSound) == 0xB8, "m_firstSound in CTestBlendContainer should be at offset 0xB8");

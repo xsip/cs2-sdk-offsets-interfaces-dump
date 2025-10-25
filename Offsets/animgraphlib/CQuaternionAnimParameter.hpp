@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xA0
 			namespace CQuaternionAnimParameter /*: public CS2::animgraphlib::CConcreteAnimParameter*/ {
-				constexpr std::ptrdiff_t m_defaultValue = 0x80; // GlobalTypes::Quaternion m_defaultValue; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_defaultValue = 0x80; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_bInterpolate = 0x90; // bool m_bInterpolate; |  0x90 | Schema_Builtin | Size: 0x1
 			}
 		}

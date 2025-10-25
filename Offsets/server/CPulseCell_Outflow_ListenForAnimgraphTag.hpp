@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x128
 			namespace CPulseCell_Outflow_ListenForAnimgraphTag /*: public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow*/ {
-				constexpr std::ptrdiff_t m_OnStart = 0x48; // pulse_runtime_lib::CPulse_ResumePoint m_OnStart; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_OnEnd = 0x90; // pulse_runtime_lib::CPulse_ResumePoint m_OnEnd; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_OnCanceled = 0xd8; // pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_TagName = 0x120; // GlobalTypes::CGlobalSymbol m_TagName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnStart = 0x48; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_OnEnd = 0x90; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_OnCanceled = 0xd8; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_TagName = 0x120; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

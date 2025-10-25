@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace navlib {
 			// Class size: 0x18
 			namespace Extent /**/ {
-				constexpr std::ptrdiff_t lo = 0x0; // GlobalTypes::VectorWS lo; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t hi = 0xc; // GlobalTypes::VectorWS hi; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t lo = 0x0; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t hi = 0xc; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

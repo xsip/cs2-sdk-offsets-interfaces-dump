@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,8 +27,8 @@ namespace CS2 {
 	namespace server {
 		class CLogicPlayerProxy : public CS2::server::CLogicalEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hPlayer; // 0x4f0 | Schema_Atomic | Size: 0x4
-			char  m_hPlayer[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hPlayer; // 0x4f0 | Schema_Atomic | Size: 0x4
+			// char  m_hPlayer[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_PlayerHasAmmo; // 0x4f8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_PlayerHasNoAmmo; // 0x520 | Schema_DeclaredClass | Size: 0x28

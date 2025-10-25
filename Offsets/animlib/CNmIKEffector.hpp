@@ -12,8 +12,8 @@ namespace CS2 {
 			namespace CNmIKEffector /**/ {
 				constexpr std::ptrdiff_t m_nBodyIndex = 0x0; // int32_t m_nBodyIndex; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnabled = 0x4; // bool m_bEnabled; |  0x4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vTargetPosition = 0x8; // GlobalTypes::Vector m_vTargetPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_qTargetOrientation = 0x20; // GlobalTypes::Quaternion m_qTargetOrientation; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vTargetPosition = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_qTargetOrientation = 0x20; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_flWeight = 0x30; // float32 m_flWeight; |  0x30 | Schema_Builtin | Size: 0x4
 			}
 		}

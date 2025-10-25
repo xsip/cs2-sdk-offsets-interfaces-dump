@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x600
 			namespace CSkyboxReference /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_worldGroupId = 0x5f8; // GlobalTypes::WorldGroupId_t m_worldGroupId; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hSkyCamera = 0x5fc; // client::CHandle< client::C_SkyCamera > m_hSkyCamera; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_worldGroupId = 0x5f8; // GlobalTypes::WorldGroupId_t  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSkyCamera = 0x5fc; // GlobalTypes::CHandle<client::C_SkyCamera>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

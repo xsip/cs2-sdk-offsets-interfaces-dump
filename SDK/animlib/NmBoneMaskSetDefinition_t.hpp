@@ -23,7 +23,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CGlobalSymbol m_ID; // 0x0 | Schema_Atomic | Size: 0x8
 			animlib::CNmBoneWeightList m_primaryWeightList; // 0x8 | Schema_DeclaredClass | Size: 0x110
-			// GlobalTypes::CUtlLeanVector< animlib::CNmBoneWeightList > m_secondaryWeightLists; // 0x118 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<animlib::CNmBoneWeightList> m_secondaryWeightLists; // 0x118 | Schema_Atomic | Size: 0x10
 			char  m_secondaryWeightLists[0x10]; // 0x118 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::animlib::NmBoneMaskSetDefinition_t, m_ID) == 0x0, "m_ID in NmBoneMaskSetDefinition_t should be at offset 0x0");

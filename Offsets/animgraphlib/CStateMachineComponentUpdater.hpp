@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x88
 			namespace CStateMachineComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_stateMachine = 0x30; // animgraphlib::CAnimStateMachineUpdater m_stateMachine; |  Schema_DeclaredClass | Size: 0x58
+				constexpr std::ptrdiff_t m_stateMachine = 0x30; // animgraphlib::CAnimStateMachineUpdater  | Schema_DeclaredClass | Size: 0x58
 			}
 		}
 	}

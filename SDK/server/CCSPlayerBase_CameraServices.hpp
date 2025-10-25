@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -26,13 +31,13 @@ namespace CS2 {
 			uint32_t m_iFOVStart; // 0x174 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flFOVTime; // 0x178 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flFOVRate; // 0x17c | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hZoomOwner; // 0x180 | Schema_Atomic | Size: 0x4
-			char  m_hZoomOwner[0x4]; // 0x180 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hZoomOwner; // 0x180 | Schema_Atomic | Size: 0x4
+			// char  m_hZoomOwner[0x4]; // 0x180 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTriggerFogList; // 0x188 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTriggerFogList; // 0x188 | Schema_Atomic | Size: 0x18
 			char  m_hTriggerFogList[0x18]; // 0x188 | Schema_Atomic | Size: 0x18
-			// server::CHandle< server::CBaseEntity > m_hLastFogTrigger; // 0x1a0 | Schema_Atomic | Size: 0x4
-			char  m_hLastFogTrigger[0x4]; // 0x1a0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLastFogTrigger; // 0x1a0 | Schema_Atomic | Size: 0x4
+			// char  m_hLastFogTrigger[0x4]; // 0x1a0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSPlayerBase_CameraServices, m_iFOV) == 0x170, "m_iFOV in CCSPlayerBase_CameraServices should be at offset 0x170");

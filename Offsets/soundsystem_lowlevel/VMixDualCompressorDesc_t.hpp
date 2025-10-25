@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_fldbKneeWidth = 0x4; // float32 m_fldbKneeWidth; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flWetMix = 0x8; // float32 m_flWetMix; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bPeakMode = 0xc; // bool m_bPeakMode; |  0xc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bandDesc = 0x10; // soundsystem_lowlevel::VMixDynamicsBand_t m_bandDesc; |  Schema_DeclaredClass | Size: 0x24
+				constexpr std::ptrdiff_t m_bandDesc = 0x10; // soundsystem_lowlevel::VMixDynamicsBand_t  | Schema_DeclaredClass | Size: 0x24
 			}
 		}
 	}

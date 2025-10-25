@@ -12,16 +12,16 @@ namespace CS2 {
 			namespace CNmChainSolverTask /*: public CS2::animlib::CNmPoseTask*/ {
 				constexpr std::ptrdiff_t m_nEffectorBoneIdx = 0x50; // int32_t m_nEffectorBoneIdx; |  0x50 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nEffectorTargetBoneIdx = 0x54; // int32_t m_nEffectorTargetBoneIdx; |  0x54 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_targetTransform = 0x60; // GlobalTypes::CTransform m_targetTransform; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_targetTransform = 0x60; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_nNumBonesInChain = 0x80; // int32_t m_nNumBonesInChain; |  0x80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_effectorTarget = 0x90; // animlib::CNmTarget m_effectorTarget; |  Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_blendMode = 0xc0; // animlib::NmIKBlendMode_t m_blendMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_effectorTarget = 0x90; // animlib::CNmTarget  | Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_blendMode = 0xc0; // animlib::NmIKBlendMode_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_flBlendWeight = 0xc4; // float32 m_flBlendWeight; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsTargetInWorldSpace = 0xc8; // bool m_bIsTargetInWorldSpace; |  0xc8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsRunningFromDeserializedData = 0xc9; // bool m_bIsRunningFromDeserializedData; |  0xc9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_debugEffectorBoneID = 0xd0; // GlobalTypes::CGlobalSymbol m_debugEffectorBoneID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_chainStartTransformMS = 0xe0; // GlobalTypes::CTransform m_chainStartTransformMS; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_debugRequestedTargetTransformMS = 0x100; // GlobalTypes::CTransform m_debugRequestedTargetTransformMS; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_debugEffectorBoneID = 0xd0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_chainStartTransformMS = 0xe0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_debugRequestedTargetTransformMS = 0x100; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_debugTotalChainLength = 0x120; // float32 m_debugTotalChainLength; |  0x120 | Schema_Builtin | Size: 0x4
 			}
 		}

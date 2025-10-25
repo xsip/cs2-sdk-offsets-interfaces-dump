@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace client {
 		class CBaseAnimGraphAnimGraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
-			// GlobalTypes::CAnimGraphParamOptionalRef< GlobalTypes::CGlobalSymbol > m_sDestructiblePartDestroyedHitGroup; // 0x80 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamOptionalRef<GlobalTypes::CGlobalSymbol> m_sDestructiblePartDestroyedHitGroup; // 0x80 | Schema_Atomic | Size: 0x28
 			char  m_sDestructiblePartDestroyedHitGroup[0x28]; // 0x80 | Schema_Atomic | Size: 0x28
 			// GlobalTypes::CAnimGraphParamOptionalRef< int32 > m_nDestructiblePartDestroyedPartIndex; // 0xa8 | Schema_Atomic | Size: 0x20
 			char  m_nDestructiblePartDestroyedPartIndex[0x20]; // 0xa8 | Schema_Atomic | Size: 0x20

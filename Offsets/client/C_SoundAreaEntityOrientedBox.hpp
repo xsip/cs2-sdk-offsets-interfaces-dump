@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x638
 			namespace C_SoundAreaEntityOrientedBox /*: public CS2::client::C_SoundAreaEntityBase*/ {
-				constexpr std::ptrdiff_t m_vMin = 0x620; // GlobalTypes::Vector m_vMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMax = 0x62c; // GlobalTypes::Vector m_vMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMin = 0x620; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMax = 0x62c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

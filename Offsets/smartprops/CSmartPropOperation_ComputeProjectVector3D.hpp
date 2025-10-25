@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x1D8
 			namespace CSmartPropOperation_ComputeProjectVector3D /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_OutputVariableName = 0x50; // GlobalTypes::CUtlString m_OutputVariableName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OutputCoordinateSpace = 0x58; // smartprops::CSmartPropAttributeCoordinateSpace m_OutputCoordinateSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_InputVectorA = 0x98; // GlobalTypes::CSmartPropAttributeVector m_InputVectorA; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_CoordinateSpaceA = 0xd8; // smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceA; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_InputVectorB = 0x118; // GlobalTypes::CSmartPropAttributeVector m_InputVectorB; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_CoordinateSpaceB = 0x158; // smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceB; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bPlane = 0x198; // GlobalTypes::CSmartPropAttributeBool m_bPlane; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_OutputVariableName = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OutputCoordinateSpace = 0x58; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_InputVectorA = 0x98; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_CoordinateSpaceA = 0xd8; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_InputVectorB = 0x118; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_CoordinateSpaceB = 0x158; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bPlane = 0x198; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

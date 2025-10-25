@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace compositematerialslib {
 			// Class size: 0x28
 			namespace CompMatMutatorCondition_t /**/ {
-				constexpr std::ptrdiff_t m_nMutatorCondition = 0x0; // compositematerialslib::CompMatPropertyMutatorConditionType_t m_nMutatorCondition; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_strMutatorConditionContainerName = 0x8; // GlobalTypes::CUtlString m_strMutatorConditionContainerName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strMutatorConditionContainerVarName = 0x10; // GlobalTypes::CUtlString m_strMutatorConditionContainerVarName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strMutatorConditionContainerVarValue = 0x18; // GlobalTypes::CUtlString m_strMutatorConditionContainerVarValue; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nMutatorCondition = 0x0; // compositematerialslib::CompMatPropertyMutatorConditionType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strMutatorConditionContainerName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMutatorConditionContainerVarName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMutatorConditionContainerVarValue = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bPassWhenTrue = 0x20; // bool m_bPassWhenTrue; |  0x20 | Schema_Builtin | Size: 0x1
 			}
 		}

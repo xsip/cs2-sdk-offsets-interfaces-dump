@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xD0
 			namespace CSmartPropOperation_RestoreState /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_StateName = 0x50; // GlobalTypes::CSmartPropAttributeStateName m_StateName; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bDiscardIfUknown = 0x90; // GlobalTypes::CSmartPropAttributeBool m_bDiscardIfUknown; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_StateName = 0x50; // GlobalTypes::CSmartPropAttributeStateName  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bDiscardIfUknown = 0x90; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

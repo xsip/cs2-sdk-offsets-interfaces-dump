@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x18
 			namespace VertexPositionNormal_t /**/ {
-				constexpr std::ptrdiff_t m_vPosition = 0x0; // GlobalTypes::Vector m_vPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vNormal = 0xc; // GlobalTypes::Vector m_vNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPosition = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vNormal = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

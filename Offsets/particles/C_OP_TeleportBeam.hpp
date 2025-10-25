@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nCPColor = 0x1dc; // int32_t m_nCPColor; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCPInvalidColor = 0x1e0; // int32_t m_nCPInvalidColor; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCPExtraArcData = 0x1e4; // int32_t m_nCPExtraArcData; |  0x1e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vGravity = 0x1e8; // GlobalTypes::Vector m_vGravity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vGravity = 0x1e8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flArcMaxDuration = 0x1f4; // float32 m_flArcMaxDuration; |  0x1f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSegmentBreak = 0x1f8; // float32 m_flSegmentBreak; |  0x1f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flArcSpeed = 0x1fc; // float32 m_flArcSpeed; |  0x1fc | Schema_Builtin | Size: 0x4

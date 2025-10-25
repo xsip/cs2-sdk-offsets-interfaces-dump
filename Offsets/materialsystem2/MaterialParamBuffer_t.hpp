@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace materialsystem2 {
 			// Class size: 0x18
 			namespace MaterialParamBuffer_t /*: public CS2::materialsystem2::MaterialParam_t*/ {
-				constexpr std::ptrdiff_t m_value = 0x8; // GlobalTypes::CUtlBinaryBlock m_value; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_value = 0x8; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

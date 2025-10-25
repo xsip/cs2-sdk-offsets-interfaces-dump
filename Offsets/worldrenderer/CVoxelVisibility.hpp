@@ -12,17 +12,17 @@ namespace CS2 {
 			namespace CVoxelVisibility /**/ {
 				constexpr std::ptrdiff_t m_nBaseClusterCount = 0x40; // uint32_t m_nBaseClusterCount; |  0x40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPVSBytesPerCluster = 0x44; // uint32_t m_nPVSBytesPerCluster; |  0x44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vMinBounds = 0x48; // GlobalTypes::Vector m_vMinBounds; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxBounds = 0x54; // GlobalTypes::Vector m_vMaxBounds; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMinBounds = 0x48; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxBounds = 0x54; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flGridSize = 0x60; // float32 m_flGridSize; |  0x60 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSkyVisibilityCluster = 0x64; // uint32_t m_nSkyVisibilityCluster; |  0x64 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSunVisibilityCluster = 0x68; // uint32_t m_nSunVisibilityCluster; |  0x68 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_NodeBlock = 0x6c; // worldrenderer::VoxelVisBlockOffset_t m_NodeBlock; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_RegionBlock = 0x74; // worldrenderer::VoxelVisBlockOffset_t m_RegionBlock; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_EnclosedClusterListBlock = 0x7c; // worldrenderer::VoxelVisBlockOffset_t m_EnclosedClusterListBlock; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_EnclosedClustersBlock = 0x84; // worldrenderer::VoxelVisBlockOffset_t m_EnclosedClustersBlock; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_MasksBlock = 0x8c; // worldrenderer::VoxelVisBlockOffset_t m_MasksBlock; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_nVisBlocks = 0x94; // worldrenderer::VoxelVisBlockOffset_t m_nVisBlocks; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_NodeBlock = 0x6c; // worldrenderer::VoxelVisBlockOffset_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_RegionBlock = 0x74; // worldrenderer::VoxelVisBlockOffset_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_EnclosedClusterListBlock = 0x7c; // worldrenderer::VoxelVisBlockOffset_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_EnclosedClustersBlock = 0x84; // worldrenderer::VoxelVisBlockOffset_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_MasksBlock = 0x8c; // worldrenderer::VoxelVisBlockOffset_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_nVisBlocks = 0x94; // worldrenderer::VoxelVisBlockOffset_t  | Schema_DeclaredClass | Size: 0x8
 			}
 		}
 	}

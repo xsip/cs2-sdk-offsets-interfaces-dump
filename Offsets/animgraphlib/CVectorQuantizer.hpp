@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace CVectorQuantizer /**/ {
-				constexpr std::ptrdiff_t m_centroidVectors = 0x0; // GlobalTypes::CUtlVector< float32 > m_centroidVectors; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_centroidVectors = 0x0; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nCentroids = 0x18; // int32_t m_nCentroids; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDimensions = 0x1c; // int32_t m_nDimensions; |  0x1c | Schema_Builtin | Size: 0x4
 			}

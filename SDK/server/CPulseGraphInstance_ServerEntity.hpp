@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,8 +27,8 @@ namespace CS2 {
 		class CPulseGraphInstance_ServerEntity : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
 			S2_PAD(0x78);
-			// server::CHandle< server::CBaseEntity > m_hOwner; // 0x190 | Schema_Atomic | Size: 0x4
-			char  m_hOwner[0x4]; // 0x190 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOwner; // 0x190 | Schema_Atomic | Size: 0x4
+			// char  m_hOwner[0x4]; // 0x190 | Schema_Atomic | Size: 0x4
 			bool m_bActivated; // 0x194 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_sNameFixupStaticPrefix; // 0x198 | Schema_Atomic | Size: 0x8

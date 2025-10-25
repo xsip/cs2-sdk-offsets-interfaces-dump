@@ -57,7 +57,7 @@ namespace CS2 {
 			S2_PAD(0x1d);
 			GlobalTypes::Color m_clrRender; // 0xb70 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			// client::C_UtlVectorEmbeddedNetworkVar< client::EntityRenderAttribute_t > m_vecRenderAttributes; // 0xb78 | Schema_Atomic | Size: 0x68
+			// client::C_UtlVectorEmbeddedNetworkVar<client::EntityRenderAttribute_t> m_vecRenderAttributes; // 0xb78 | Schema_Atomic | Size: 0x68
 			char  m_vecRenderAttributes[0x68]; // 0xb78 | Schema_Atomic | Size: 0x68
 			S2_PAD(0x18);
 			bool m_bRenderToCubemaps; // 0xbf8 | Schema_Builtin | Size: 0x1
@@ -78,7 +78,7 @@ namespace CS2 {
 			client::DecalMode_t m_nDecalMode; // 0xd3c | Schema_DeclaredEnum | Size: 0x1
 			client::DecalMode_t m_nRequiredDecalMode; // 0xd3d | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x2);
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0xd40 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>> m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0xd40 | Schema_Atomic | Size: 0x18
 			char  m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18]; // 0xd40 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28);
 			client::CNetworkViewOffsetVector m_vecViewOffset; // 0xd80 | Schema_DeclaredClass | Size: 0x28

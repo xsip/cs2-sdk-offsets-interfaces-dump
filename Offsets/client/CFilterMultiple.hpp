@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x6D0
 			namespace CFilterMultiple /*: public CS2::client::CBaseFilter*/ {
-				constexpr std::ptrdiff_t m_nFilterType = 0x650; // client::filter_t m_nFilterType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iFilterName = 0x658; // GlobalTypes::CUtlSymbolLarge m_iFilterName[10]; |  Schema_FixedArray | Size: 0x50
-				constexpr std::ptrdiff_t m_hFilter = 0x6a8; // client::CHandle< C_BaseEntity > m_hFilter[10]; |  Schema_FixedArray | Size: 0x28
+				constexpr std::ptrdiff_t m_nFilterType = 0x650; // client::filter_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iFilterName = 0x658; // GlobalTypes::CUtlSymbolLarge[10]  | Schema_FixedArray | Size: 0x50
+				constexpr std::ptrdiff_t m_hFilter = 0x6a8; // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x28
 			}
 		}
 	}

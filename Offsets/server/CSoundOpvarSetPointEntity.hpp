@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x6A8
 			namespace CSoundOpvarSetPointEntity /*: public CS2::server::CSoundOpvarSetPointBase*/ {
-				constexpr std::ptrdiff_t m_OnEnter = 0x598; // entity2::CEntityIOOutput m_OnEnter; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnExit = 0x5c0; // entity2::CEntityIOOutput m_OnExit; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnEnter = 0x598; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnExit = 0x5c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_bAutoDisable = 0x5e8; // bool m_bAutoDisable; |  0x5e8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flDistanceMin = 0x62c; // float32 m_flDistanceMin; |  0x62c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDistanceMax = 0x630; // float32 m_flDistanceMax; |  0x630 | Schema_Builtin | Size: 0x4
@@ -25,14 +25,14 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bReloading = 0x64d; // bool m_bReloading; |  0x64d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nSimulationMode = 0x650; // int32_t m_nSimulationMode; |  0x650 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nVisibilitySamples = 0x654; // int32_t m_nVisibilitySamples; |  0x654 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vDynamicProxyPoint = 0x658; // GlobalTypes::Vector m_vDynamicProxyPoint; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDynamicProxyPoint = 0x658; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flDynamicMaximumOcclusion = 0x664; // float32 m_flDynamicMaximumOcclusion; |  0x664 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hDynamicEntity = 0x668; // GlobalTypes::CEntityHandle m_hDynamicEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iszDynamicEntityName = 0x670; // GlobalTypes::CUtlSymbolLarge m_iszDynamicEntityName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hDynamicEntity = 0x668; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszDynamicEntityName = 0x670; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flPathingDistanceNormFactor = 0x678; // float32 m_flPathingDistanceNormFactor; |  0x678 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vPathingSourcePos = 0x67c; // GlobalTypes::Vector m_vPathingSourcePos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPathingListenerPos = 0x688; // GlobalTypes::Vector m_vPathingListenerPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPathingDirection = 0x694; // GlobalTypes::Vector m_vPathingDirection; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPathingSourcePos = 0x67c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPathingListenerPos = 0x688; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPathingDirection = 0x694; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nPathingSourceIndex = 0x6a0; // int32_t m_nPathingSourceIndex; |  0x6a0 | Schema_Builtin | Size: 0x4
 			}
 		}

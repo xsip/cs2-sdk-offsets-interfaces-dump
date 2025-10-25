@@ -17,6 +17,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CCSPlayerPawn;
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -43,8 +49,8 @@ namespace CS2 {
 			bool m_bAllowActive; // 0x1a8 | Schema_Builtin | Size: 0x1
 			bool m_isFollowing; // 0x1a9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CCSPlayerPawn > m_leader; // 0x1ac | Schema_Atomic | Size: 0x4
-			char  m_leader[0x4]; // 0x1ac | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_leader; // 0x1ac | Schema_Atomic | Size: 0x4
+			// char  m_leader[0x4]; // 0x1ac | Schema_Atomic | Size: 0x4
 			float32 m_followTimestamp; // 0x1b0 | Schema_Builtin | Size: 0x4
 			float32 m_allowAutoFollowTime; // 0x1b4 | Schema_Builtin | Size: 0x4
 			server::CountdownTimer m_hurryTimer; // 0x1b8 | Schema_DeclaredClass | Size: 0x18
@@ -56,14 +62,14 @@ namespace CS2 {
 			bool m_isAttacking; // 0x4d4 | Schema_Builtin | Size: 0x1
 			bool m_isOpeningDoor; // 0x4d5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			// server::CHandle< server::CBaseEntity > m_taskEntity; // 0x4dc | Schema_Atomic | Size: 0x4
-			char  m_taskEntity[0x4]; // 0x4dc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_taskEntity; // 0x4dc | Schema_Atomic | Size: 0x4
+			// char  m_taskEntity[0x4]; // 0x4dc | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
 			GlobalTypes::VectorWS m_goalPosition; // 0x4ec | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_goalEntity; // 0x4f8 | Schema_Atomic | Size: 0x4
-			char  m_goalEntity[0x4]; // 0x4f8 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_avoid; // 0x4fc | Schema_Atomic | Size: 0x4
-			char  m_avoid[0x4]; // 0x4fc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_goalEntity; // 0x4f8 | Schema_Atomic | Size: 0x4
+			// char  m_goalEntity[0x4]; // 0x4f8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_avoid; // 0x4fc | Schema_Atomic | Size: 0x4
+			// char  m_avoid[0x4]; // 0x4fc | Schema_Atomic | Size: 0x4
 			float32 m_avoidTimestamp; // 0x500 | Schema_Builtin | Size: 0x4
 			bool m_isStopping; // 0x504 | Schema_Builtin | Size: 0x1
 			bool m_hasVisitedEnemySpawn; // 0x505 | Schema_Builtin | Size: 0x1
@@ -150,8 +156,8 @@ namespace CS2 {
 			entity2::GameTime_t m_aimFocusNextUpdate; // 0x68f4 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x8);
 			server::CountdownTimer m_ignoreEnemiesTimer; // 0x6900 | Schema_DeclaredClass | Size: 0x18
-			// server::CHandle< server::CCSPlayerPawn > m_enemy; // 0x6918 | Schema_Atomic | Size: 0x4
-			char  m_enemy[0x4]; // 0x6918 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_enemy; // 0x6918 | Schema_Atomic | Size: 0x4
+			// char  m_enemy[0x4]; // 0x6918 | Schema_Atomic | Size: 0x4
 			bool m_isEnemyVisible; // 0x691c | Schema_Builtin | Size: 0x1
 			uint8_t m_visibleEnemyParts; // 0x691d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
@@ -165,16 +171,16 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nearbyEnemyCount; // 0x6944 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x208);
-			// server::CHandle< server::CCSPlayerPawn > m_bomber; // 0x6b50 | Schema_Atomic | Size: 0x4
-			char  m_bomber[0x4]; // 0x6b50 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_bomber; // 0x6b50 | Schema_Atomic | Size: 0x4
+			// char  m_bomber[0x4]; // 0x6b50 | Schema_Atomic | Size: 0x4
 			int32_t m_nearbyFriendCount; // 0x6b54 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_closestVisibleFriend; // 0x6b58 | Schema_Atomic | Size: 0x4
-			char  m_closestVisibleFriend[0x4]; // 0x6b58 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_closestVisibleHumanFriend; // 0x6b5c | Schema_Atomic | Size: 0x4
-			char  m_closestVisibleHumanFriend[0x4]; // 0x6b5c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_closestVisibleFriend; // 0x6b58 | Schema_Atomic | Size: 0x4
+			// char  m_closestVisibleFriend[0x4]; // 0x6b58 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_closestVisibleHumanFriend; // 0x6b5c | Schema_Atomic | Size: 0x4
+			// char  m_closestVisibleHumanFriend[0x4]; // 0x6b5c | Schema_Atomic | Size: 0x4
 			server::IntervalTimer m_attentionInterval; // 0x6b60 | Schema_DeclaredClass | Size: 0x10
-			// server::CHandle< server::CCSPlayerPawn > m_attacker; // 0x6b70 | Schema_Atomic | Size: 0x4
-			char  m_attacker[0x4]; // 0x6b70 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_attacker; // 0x6b70 | Schema_Atomic | Size: 0x4
+			// char  m_attacker[0x4]; // 0x6b70 | Schema_Atomic | Size: 0x4
 			float32 m_attackedTimestamp; // 0x6b74 | Schema_Builtin | Size: 0x4
 			server::IntervalTimer m_burnedByFlamesTimer; // 0x6b78 | Schema_DeclaredClass | Size: 0x10
 			int32_t m_lastVictimID; // 0x6b88 | Schema_Builtin | Size: 0x4
@@ -208,8 +214,8 @@ namespace CS2 {
 			S2_PAD(0x4);
 			float32 m_lastRadioRecievedTimestamp; // 0x6d24 | Schema_Builtin | Size: 0x4
 			float32 m_lastRadioSentTimestamp; // 0x6d28 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_radioSubject; // 0x6d2c | Schema_Atomic | Size: 0x4
-			char  m_radioSubject[0x4]; // 0x6d2c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_radioSubject; // 0x6d2c | Schema_Atomic | Size: 0x4
+			// char  m_radioSubject[0x4]; // 0x6d2c | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_radioPosition; // 0x6d30 | Schema_Atomic | Size: 0xc
 			float32 m_voiceEndTimestamp; // 0x6d3c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);

@@ -15,8 +15,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_swimDepth = 0x508; // float32 m_swimDepth; |  0x508 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_waterLevel = 0x50c; // float32 m_waterLevel; |  0x50c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_isDormant = 0x510; // bool m_isDormant; |  0x510 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fishes = 0x518; // server::CUtlVector< server.dll::CHandle< CFish > > m_fishes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_visTimer = 0x530; // server::CountdownTimer m_visTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_fishes = 0x518; // server::CUtlVector<GlobalTypes::CHandle<server::CFish>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_visTimer = 0x530; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

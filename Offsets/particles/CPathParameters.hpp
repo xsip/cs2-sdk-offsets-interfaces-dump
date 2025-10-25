@@ -15,9 +15,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nBulgeControl = 0x8; // int32_t m_nBulgeControl; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBulge = 0xc; // float32 m_flBulge; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMidPoint = 0x10; // float32 m_flMidPoint; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vStartPointOffset = 0x14; // GlobalTypes::Vector m_vStartPointOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMidPointOffset = 0x20; // GlobalTypes::Vector m_vMidPointOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vEndOffset = 0x2c; // GlobalTypes::Vector m_vEndOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vStartPointOffset = 0x14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMidPointOffset = 0x20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vEndOffset = 0x2c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

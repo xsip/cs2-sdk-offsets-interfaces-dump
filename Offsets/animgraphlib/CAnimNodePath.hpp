@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x30
 			namespace CAnimNodePath /**/ {
-				constexpr std::ptrdiff_t m_path = 0x0; // modellib::AnimNodeID m_path[11]; |  Schema_FixedArray | Size: 0x1e4
+				constexpr std::ptrdiff_t m_path = 0x0; // GlobalTypes::AnimNodeID[11]  | Schema_FixedArray | Size: 0x1e4
 				constexpr std::ptrdiff_t m_nCount = 0x2c; // int32_t m_nCount; |  0x2c | Schema_Builtin | Size: 0x4
 			}
 		}

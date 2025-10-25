@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x18
 			namespace ParamSpanSample_t /**/ {
-				constexpr std::ptrdiff_t m_value = 0x0; // GlobalTypes::CAnimVariant m_value; |  Schema_Atomic | Size: 0x11
+				constexpr std::ptrdiff_t m_value = 0x0; // GlobalTypes::CAnimVariant  | Schema_Atomic | Size: 0x11
 				constexpr std::ptrdiff_t m_flCycle = 0x14; // float32 m_flCycle; |  0x14 | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x38
 			namespace CCompositeMaterialEditorDoc /**/ {
 				constexpr std::ptrdiff_t m_nVersion = 0x8; // int32_t m_nVersion; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Points = 0x10; // GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialEditorPoint_t > m_Points; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_KVthumbnail = 0x28; // GlobalTypes::KeyValues3 m_KVthumbnail; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Points = 0x10; // GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterialEditorPoint_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_KVthumbnail = 0x28; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

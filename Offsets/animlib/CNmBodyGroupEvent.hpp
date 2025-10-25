@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x28
 			namespace CNmBodyGroupEvent /*: public CS2::animlib::CNmEvent*/ {
-				constexpr std::ptrdiff_t m_groupName = 0x20; // GlobalTypes::CUtlString m_groupName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_groupName = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

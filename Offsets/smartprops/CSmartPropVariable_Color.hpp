@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x40
 			namespace CSmartPropVariable_Color /*: public CS2::smartprops::CSmartPropVariable*/ {
-				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // GlobalTypes::Color m_DefaultValue; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

@@ -33,7 +33,7 @@ namespace CS2 {
 			uint8_t m_nDepthVertexBufferIndex; // 0x24 | Schema_Builtin | Size: 0x1
 			uint8_t m_nMeshletPackedIVBIndex; // 0x25 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// GlobalTypes::RigidMeshPart_t > m_rigidMeshParts; // 0x28 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor::RigidMeshPart_t> m_rigidMeshParts; // 0x28 | Schema_Atomic | Size: 0x10
 			char  m_rigidMeshParts[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
 			modellib::RenderPrimitiveType_t m_nPrimitiveType; // 0x38 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nBaseVertex; // 0x3c | Schema_Builtin | Size: 0x4
@@ -44,7 +44,7 @@ namespace CS2 {
 			modellib::CRenderBufferBinding m_indexBuffer; // 0xb0 | Schema_DeclaredClass | Size: 0x20
 			modellib::CRenderBufferBinding m_meshletPackedIVB; // 0xd0 | Schema_DeclaredClass | Size: 0x20
 			S2_PAD(0x10);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_material; // 0x100 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_material; // 0x100 | Schema_Atomic | Size: 0x8
 			char  m_material[0x8]; // 0x100 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor, m_flUvDensity) == 0x0, "m_flUvDensity in CMaterialDrawDescriptor should be at offset 0x0");

@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CModelConfigList /**/ {
 				constexpr std::ptrdiff_t m_bHideMaterialGroupInTools = 0x0; // bool m_bHideMaterialGroupInTools; |  0x0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHideRenderColorInTools = 0x1; // bool m_bHideRenderColorInTools; |  0x1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Configs = 0x8; // GlobalTypes::CUtlVector< modellib::CModelConfig > m_Configs; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Configs = 0x8; // GlobalTypes::CUtlVector<modellib::CModelConfig*>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

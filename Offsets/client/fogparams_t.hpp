@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x68
 			namespace fogparams_t /**/ {
-				constexpr std::ptrdiff_t dirPrimary = 0x8; // GlobalTypes::Vector dirPrimary; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t colorPrimary = 0x14; // GlobalTypes::Color colorPrimary; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t colorSecondary = 0x18; // GlobalTypes::Color colorSecondary; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t colorPrimaryLerpTo = 0x1c; // GlobalTypes::Color colorPrimaryLerpTo; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t colorSecondaryLerpTo = 0x20; // GlobalTypes::Color colorSecondaryLerpTo; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t dirPrimary = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t colorPrimary = 0x14; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t colorSecondary = 0x18; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t colorPrimaryLerpTo = 0x1c; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t colorSecondaryLerpTo = 0x20; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t start = 0x24; // float32 start; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t end = 0x28; // float32 end; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t farz = 0x2c; // float32 farz; |  0x2c | Schema_Builtin | Size: 0x4
@@ -26,7 +26,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t startLerpTo = 0x44; // float32 startLerpTo; |  0x44 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t endLerpTo = 0x48; // float32 endLerpTo; |  0x48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t maxdensityLerpTo = 0x4c; // float32 maxdensityLerpTo; |  0x4c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t lerptime = 0x50; // entity2::GameTime_t lerptime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t lerptime = 0x50; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t duration = 0x54; // float32 duration; |  0x54 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t blendtobackground = 0x58; // float32 blendtobackground; |  0x58 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t scattering = 0x5c; // float32 scattering; |  0x5c | Schema_Builtin | Size: 0x4

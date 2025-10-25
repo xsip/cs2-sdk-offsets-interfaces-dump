@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,8 +26,8 @@ namespace CS2 {
 	namespace server {
 		class CInstancedSceneEntity : public CS2::server::CSceneEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hOwner; // 0xa50 | Schema_Atomic | Size: 0x4
-			char  m_hOwner[0x4]; // 0xa50 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOwner; // 0xa50 | Schema_Atomic | Size: 0x4
+			// char  m_hOwner[0x4]; // 0xa50 | Schema_Atomic | Size: 0x4
 			bool m_bHadOwner; // 0xa54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flPostSpeakDelay; // 0xa58 | Schema_Builtin | Size: 0x4
@@ -30,8 +35,8 @@ namespace CS2 {
 			bool m_bIsBackground; // 0xa60 | Schema_Builtin | Size: 0x1
 			bool m_bRemoveOnCompletion; // 0xa61 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CBaseEntity > m_hTarget; // 0xa64 | Schema_Atomic | Size: 0x4
-			char  m_hTarget[0x4]; // 0xa64 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget; // 0xa64 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget[0x4]; // 0xa64 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_hOwner) == 0xA50, "m_hOwner in CInstancedSceneEntity should be at offset 0xA50");
 		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_bHadOwner) == 0xA54, "m_bHadOwner in CInstancedSceneEntity should be at offset 0xA54");

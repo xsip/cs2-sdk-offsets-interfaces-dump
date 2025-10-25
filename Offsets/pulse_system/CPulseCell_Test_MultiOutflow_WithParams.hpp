@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace pulse_system {
 			// Class size: 0xD8
 			namespace CPulseCell_Test_MultiOutflow_WithParams /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_Out1 = 0x48; // pulse_runtime_lib::SignatureOutflow_Continue m_Out1; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_Out2 = 0x90; // pulse_runtime_lib::SignatureOutflow_Continue m_Out2; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_Out1 = 0x48; // pulse_runtime_lib::SignatureOutflow_Continue  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_Out2 = 0x90; // pulse_runtime_lib::SignatureOutflow_Continue  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

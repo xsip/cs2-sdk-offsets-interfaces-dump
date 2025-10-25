@@ -23,8 +23,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flLOSScale = 0x200; // float32 m_flLOSScale; |  0x200 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bLOS = 0x204; // bool m_bLOS; |  0x204 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_CollisionGroupName = 0x205; // char m_CollisionGroupName[128]; |  0x205 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nTraceSet = 0x288; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetParent = 0x28c; // particles::ParticleParentSetMode_t m_nSetParent; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nTraceSet = 0x288; // particles::ParticleTraceSet_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetParent = 0x28c; // particles::ParticleParentSetMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

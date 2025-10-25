@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x100
 			namespace CBot /**/ {
-				constexpr std::ptrdiff_t m_pController = 0x10; // server::CCSPlayerController* m_pController; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pPlayer = 0x18; // server::CCSPlayerPawn* m_pPlayer; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pController = 0x10; // server::CCSPlayerController**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPlayer = 0x18; // server::CCSPlayerPawn**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_bHasSpawned = 0x20; // bool m_bHasSpawned; |  0x20 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_id = 0x24; // uint32_t m_id; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_isRunning = 0xc0; // bool m_isRunning; |  0xc0 | Schema_Builtin | Size: 0x1
@@ -21,7 +21,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_verticalSpeed = 0xcc; // float32 m_verticalSpeed; |  0xcc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_buttonFlags = 0xd0; // uint64_t m_buttonFlags; |  0xd0 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_jumpTimestamp = 0xd8; // float32 m_jumpTimestamp; |  0xd8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_viewForward = 0xdc; // GlobalTypes::Vector m_viewForward; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_viewForward = 0xdc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_postureStackIndex = 0xf8; // int32_t m_postureStackIndex; |  0xf8 | Schema_Builtin | Size: 0x4
 			}
 		}

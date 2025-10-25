@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xA0
 			namespace CTargetSelectorUpdateNode /*: public CS2::animgraphlib::CAnimUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_eAngleMode = 0x60; // animgraphlib::TargetSelectorAngleMode_t m_eAngleMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_children = 0x68; // GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hTargetPosition = 0x84; // animgraphlib::CAnimParamHandle m_hTargetPosition; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hTargetFacePositionParameter = 0x86; // animgraphlib::CAnimParamHandle m_hTargetFacePositionParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hMoveHeadingParameter = 0x88; // animgraphlib::CAnimParamHandle m_hMoveHeadingParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hDesiredMoveHeadingParameter = 0x8a; // animgraphlib::CAnimParamHandle m_hDesiredMoveHeadingParameter; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_eAngleMode = 0x60; // animgraphlib::TargetSelectorAngleMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_children = 0x68; // GlobalTypes::CUtlVector<animgraphlib::CAnimUpdateNodeRef>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hTargetPosition = 0x84; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hTargetFacePositionParameter = 0x86; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hMoveHeadingParameter = 0x88; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hDesiredMoveHeadingParameter = 0x8a; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bTargetPositionIsWorldSpace = 0x8c; // bool m_bTargetPositionIsWorldSpace; |  0x8c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTargetFacePositionIsWorldSpace = 0x8d; // bool m_bTargetFacePositionIsWorldSpace; |  0x8d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnablePhaseMatching = 0x8e; // bool m_bEnablePhaseMatching; |  0x8e | Schema_Builtin | Size: 0x1

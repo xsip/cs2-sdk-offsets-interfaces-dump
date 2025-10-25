@@ -10,33 +10,33 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x15C8
 			namespace C_BasePlayerPawn /*: public CS2::client::C_BaseCombatCharacter*/ {
-				constexpr std::ptrdiff_t m_pWeaponServices = 0x13f0; // client::CPlayer_WeaponServices* m_pWeaponServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pItemServices = 0x13f8; // client::CPlayer_ItemServices* m_pItemServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pAutoaimServices = 0x1400; // client::CPlayer_AutoaimServices* m_pAutoaimServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pObserverServices = 0x1408; // client::CPlayer_ObserverServices* m_pObserverServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pWaterServices = 0x1410; // client::CPlayer_WaterServices* m_pWaterServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pUseServices = 0x1418; // client::CPlayer_UseServices* m_pUseServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pFlashlightServices = 0x1420; // client::CPlayer_FlashlightServices* m_pFlashlightServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pCameraServices = 0x1428; // client::CPlayer_CameraServices* m_pCameraServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pMovementServices = 0x1430; // client::CPlayer_MovementServices* m_pMovementServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_ServerViewAngleChanges = 0x1440; // client::C_UtlVectorEmbeddedNetworkVar< client::ViewAngleServerChange_t > m_ServerViewAngleChanges; |  Schema_Atomic | Size: 0x68
-				constexpr std::ptrdiff_t v_angle = 0x14a8; // GlobalTypes::QAngle v_angle; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t v_anglePrevious = 0x14b4; // GlobalTypes::QAngle v_anglePrevious; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_pWeaponServices = 0x13f0; // client::CPlayer_WeaponServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pItemServices = 0x13f8; // client::CPlayer_ItemServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pAutoaimServices = 0x1400; // client::CPlayer_AutoaimServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pObserverServices = 0x1408; // client::CPlayer_ObserverServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pWaterServices = 0x1410; // client::CPlayer_WaterServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pUseServices = 0x1418; // client::CPlayer_UseServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pFlashlightServices = 0x1420; // client::CPlayer_FlashlightServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pCameraServices = 0x1428; // client::CPlayer_CameraServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pMovementServices = 0x1430; // client::CPlayer_MovementServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_ServerViewAngleChanges = 0x1440; // client::C_UtlVectorEmbeddedNetworkVar<client::ViewAngleServerChange_t>  | Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t v_angle = 0x14a8; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t v_anglePrevious = 0x14b4; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_iHideHUD = 0x14c0; // uint32_t m_iHideHUD; |  0x14c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_skybox3d = 0x14c8; // client::sky3dparams_t m_skybox3d; |  Schema_DeclaredClass | Size: 0x90
-				constexpr std::ptrdiff_t m_flDeathTime = 0x1558; // entity2::GameTime_t m_flDeathTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecPredictionError = 0x155c; // GlobalTypes::Vector m_vecPredictionError; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flPredictionErrorTime = 0x1568; // entity2::GameTime_t m_flPredictionErrorTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecLastCameraSetupLocalOrigin = 0x1588; // GlobalTypes::Vector m_vecLastCameraSetupLocalOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flLastCameraSetupTime = 0x1594; // entity2::GameTime_t m_flLastCameraSetupTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_skybox3d = 0x14c8; // client::sky3dparams_t  | Schema_DeclaredClass | Size: 0x90
+				constexpr std::ptrdiff_t m_flDeathTime = 0x1558; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecPredictionError = 0x155c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flPredictionErrorTime = 0x1568; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecLastCameraSetupLocalOrigin = 0x1588; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flLastCameraSetupTime = 0x1594; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flFOVSensitivityAdjust = 0x1598; // float32 m_flFOVSensitivityAdjust; |  0x1598 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMouseSensitivity = 0x159c; // float32 m_flMouseSensitivity; |  0x159c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vOldOrigin = 0x15a0; // GlobalTypes::Vector m_vOldOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOldOrigin = 0x15a0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flOldSimulationTime = 0x15ac; // float32 m_flOldSimulationTime; |  0x15ac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLastExecutedCommandNumber = 0x15b0; // int32_t m_nLastExecutedCommandNumber; |  0x15b0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLastExecutedCommandTick = 0x15b4; // int32_t m_nLastExecutedCommandTick; |  0x15b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hController = 0x15b8; // client::CHandle< client::CBasePlayerController > m_hController; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hDefaultController = 0x15bc; // client::CHandle< client::CBasePlayerController > m_hDefaultController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hController = 0x15b8; // GlobalTypes::CHandle<client::CBasePlayerController>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hDefaultController = 0x15bc; // GlobalTypes::CHandle<client::CBasePlayerController>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsSwappingToPredictableController = 0x15c0; // bool m_bIsSwappingToPredictableController; |  0x15c0 | Schema_Builtin | Size: 0x1
 			}
 		}

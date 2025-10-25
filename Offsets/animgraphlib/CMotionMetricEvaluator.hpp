@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x50
 			namespace CMotionMetricEvaluator /**/ {
-				constexpr std::ptrdiff_t m_means = 0x18; // GlobalTypes::CUtlVector< float32 > m_means; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_standardDeviations = 0x30; // GlobalTypes::CUtlVector< float32 > m_standardDeviations; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_means = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_standardDeviations = 0x30; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flWeight = 0x48; // float32 m_flWeight; |  0x48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDimensionStartIndex = 0x4c; // int32_t m_nDimensionStartIndex; |  0x4c | Schema_Builtin | Size: 0x4
 			}

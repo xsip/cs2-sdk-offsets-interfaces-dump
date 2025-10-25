@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x870
 			namespace C_OP_CylindricalDistanceToTransform /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMin = 0x1d8; // particleslib::CPerParticleFloatInput m_flInputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flInputMax = 0x348; // particleslib::CPerParticleFloatInput m_flInputMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMin = 0x4b8; // particleslib::CPerParticleFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMax = 0x628; // particleslib::CPerParticleFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_TransformStart = 0x798; // particleslib::CParticleTransformInput m_TransformStart; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_TransformEnd = 0x800; // particleslib::CParticleTransformInput m_TransformEnd; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_nSetMethod = 0x868; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputMin = 0x1d8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInputMax = 0x348; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMin = 0x4b8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMax = 0x628; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_TransformStart = 0x798; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_TransformEnd = 0x800; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_nSetMethod = 0x868; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bActiveRange = 0x86c; // bool m_bActiveRange; |  0x86c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAdditive = 0x86d; // bool m_bAdditive; |  0x86d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCapsule = 0x86e; // bool m_bCapsule; |  0x86e | Schema_Builtin | Size: 0x1

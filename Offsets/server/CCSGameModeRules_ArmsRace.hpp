@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x88
 			namespace CCSGameModeRules_ArmsRace /*: public CS2::server::CCSGameModeRules*/ {
-				constexpr std::ptrdiff_t m_WeaponSequence = 0x30; // GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::CUtlString > m_WeaponSequence; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_WeaponSequence = 0x30; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

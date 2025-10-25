@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x8
 			namespace CFlexDesc /**/ {
-				constexpr std::ptrdiff_t m_szFacs = 0x0; // GlobalTypes::CUtlString m_szFacs; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szFacs = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -15,7 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flStartJitter = 0xc0; // float32 m_flStartJitter; |  0xc0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPlaybackJitter = 0xc4; // float32 m_flPlaybackJitter; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bShouldWraparound = 0xc8; // bool m_bShouldWraparound; |  0xc8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_sourceAudio = 0xd0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_sourceAudio; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sourceAudio = 0xd0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

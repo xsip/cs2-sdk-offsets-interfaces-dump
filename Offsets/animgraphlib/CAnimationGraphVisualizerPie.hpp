@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x80
 			namespace CAnimationGraphVisualizerPie /*: public CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase*/ {
-				constexpr std::ptrdiff_t m_vWsCenter = 0x40; // GlobalTypes::VectorAligned m_vWsCenter; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vWsStart = 0x50; // GlobalTypes::VectorAligned m_vWsStart; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vWsEnd = 0x60; // GlobalTypes::VectorAligned m_vWsEnd; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Color = 0x70; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vWsCenter = 0x40; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vWsStart = 0x50; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vWsEnd = 0x60; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Color = 0x70; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

@@ -13,10 +13,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFrequency = 0x4f8; // float32 m_flFrequency; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDampingRatio = 0x4fc; // float32 m_flDampingRatio; |  0x4fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRestLength = 0x500; // float32 m_flRestLength; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nameAttachStart = 0x508; // GlobalTypes::CUtlSymbolLarge m_nameAttachStart; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAttachEnd = 0x510; // GlobalTypes::CUtlSymbolLarge m_nameAttachEnd; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_start = 0x518; // GlobalTypes::VectorWS m_start; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_end = 0x524; // GlobalTypes::VectorWS m_end; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nameAttachStart = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttachEnd = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_start = 0x518; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_end = 0x524; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_teleportTick = 0x530; // uint32_t m_teleportTick; |  0x530 | Schema_Builtin | Size: 0x4
 			}
 		}

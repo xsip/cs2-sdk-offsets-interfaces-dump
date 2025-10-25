@@ -10,29 +10,29 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x2C8
 			namespace PermModelData_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_modelInfo = 0x8; // modellib::PermModelInfo_t m_modelInfo; |  Schema_DeclaredClass | Size: 0x58
-				constexpr std::ptrdiff_t m_ExtParts = 0x60; // GlobalTypes::CUtlVector< modellib::PermModelExtPart_t > m_ExtParts; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refMeshes = 0x78; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCRenderMesh > > m_refMeshes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refMeshGroupMasks = 0x90; // GlobalTypes::CUtlVector< uint64 > m_refMeshGroupMasks; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refPhysGroupMasks = 0xa8; // GlobalTypes::CUtlVector< uint64 > m_refPhysGroupMasks; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refLODGroupMasks = 0xc0; // GlobalTypes::CUtlVector< uint8 > m_refLODGroupMasks; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_lodGroupSwitchDistances = 0xd8; // GlobalTypes::CUtlVector< float32 > m_lodGroupSwitchDistances; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refPhysicsData = 0xf0; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCPhysAggregateData > > m_refPhysicsData; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refPhysicsHitboxData = 0x108; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCPhysAggregateData > > m_refPhysicsHitboxData; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refAnimGroups = 0x120; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCAnimationGroup > > m_refAnimGroups; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refSequenceGroups = 0x138; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCSequenceGroupData > > m_refSequenceGroups; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_meshGroups = 0x150; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_meshGroups; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_materialGroups = 0x168; // GlobalTypes::CUtlVector< modellib::MaterialGroup_t > m_materialGroups; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_modelInfo = 0x8; // modellib::PermModelInfo_t  | Schema_DeclaredClass | Size: 0x58
+				constexpr std::ptrdiff_t m_ExtParts = 0x60; // GlobalTypes::CUtlVector<modellib::PermModelExtPart_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refMeshes = 0x78; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCRenderMesh>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refMeshGroupMasks = 0x90; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refPhysGroupMasks = 0xa8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refLODGroupMasks = 0xc0; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_lodGroupSwitchDistances = 0xd8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refPhysicsData = 0xf0; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCPhysAggregateData>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refPhysicsHitboxData = 0x108; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCPhysAggregateData>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refAnimGroups = 0x120; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCAnimationGroup>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refSequenceGroups = 0x138; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCSequenceGroupData>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_meshGroups = 0x150; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_materialGroups = 0x168; // GlobalTypes::CUtlVector<modellib::MaterialGroup_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nDefaultMeshGroupMask = 0x180; // uint64_t m_nDefaultMeshGroupMask; |  0x180 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_modelSkeleton = 0x188; // modellib::ModelSkeletonData_t m_modelSkeleton; |  Schema_DeclaredClass | Size: 0xa8
-				constexpr std::ptrdiff_t m_remappingTable = 0x230; // GlobalTypes::CUtlVector< int16 > m_remappingTable; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_remappingTableStarts = 0x248; // GlobalTypes::CUtlVector< uint16 > m_remappingTableStarts; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneFlexDrivers = 0x260; // GlobalTypes::CUtlVector< modellib::ModelBoneFlexDriver_t > m_boneFlexDrivers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pModelConfigList = 0x278; // modellib::CModelConfigList* m_pModelConfigList; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_BodyGroupsHiddenInTools = 0x280; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_BodyGroupsHiddenInTools; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_refAnimIncludeModels = 0x298; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCModel > > m_refAnimIncludeModels; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_AnimatedMaterialAttributes = 0x2b0; // GlobalTypes::CUtlVector< modellib::PermModelDataAnimatedMaterialAttribute_t > m_AnimatedMaterialAttributes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_modelSkeleton = 0x188; // modellib::ModelSkeletonData_t  | Schema_DeclaredClass | Size: 0xa8
+				constexpr std::ptrdiff_t m_remappingTable = 0x230; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_remappingTableStarts = 0x248; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneFlexDrivers = 0x260; // GlobalTypes::CUtlVector<modellib::ModelBoneFlexDriver_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pModelConfigList = 0x278; // modellib::CModelConfigList**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_BodyGroupsHiddenInTools = 0x280; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_refAnimIncludeModels = 0x298; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_AnimatedMaterialAttributes = 0x2b0; // GlobalTypes::CUtlVector<modellib::PermModelDataAnimatedMaterialAttribute_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

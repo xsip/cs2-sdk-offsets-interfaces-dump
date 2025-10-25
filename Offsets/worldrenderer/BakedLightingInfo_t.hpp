@@ -12,15 +12,15 @@ namespace CS2 {
 			namespace BakedLightingInfo_t /**/ {
 				constexpr std::ptrdiff_t m_nLightmapVersionNumber = 0x0; // uint32_t m_nLightmapVersionNumber; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLightmapGameVersionNumber = 0x4; // uint32_t m_nLightmapGameVersionNumber; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLightmapUvScale = 0x8; // GlobalTypes::Vector2D m_vLightmapUvScale; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vLightmapUvScale = 0x8; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bHasLightmaps = 0x10; // bool m_bHasLightmaps; |  0x10 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bBakedShadowsGamma20 = 0x11; // bool m_bBakedShadowsGamma20; |  0x11 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCompressionEnabled = 0x12; // bool m_bCompressionEnabled; |  0x12 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSHLightmaps = 0x13; // bool m_bSHLightmaps; |  0x13 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nChartPackIterations = 0x14; // uint8_t m_nChartPackIterations; |  0x14 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nVradQuality = 0x15; // uint8_t m_nVradQuality; |  0x15 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_lightMaps = 0x18; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCTextureBase > > m_lightMaps; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bakedShadows = 0x30; // GlobalTypes::BakedShadowAssignment_t > m_bakedShadows; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_lightMaps = 0x18; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bakedShadows = 0x30; // GlobalTypes::CUtlVector<worldrenderer::BakedLightingInfo_t::BakedShadowAssignment_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

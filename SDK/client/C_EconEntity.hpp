@@ -47,7 +47,7 @@ namespace CS2 {
 			S2_PAD(0x6);
 			GlobalTypes::CUtlVector< int32 > m_vecAttachedParticles; // 0x1888 | Schema_Atomic | Size: 0x18
 			// char  m_vecAttachedParticles[0x18]; // 0x1888 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CHandle< client::CBaseAnimGraph > m_hViewmodelAttachment; // 0x18a0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CBaseAnimGraph> m_hViewmodelAttachment; // 0x18a0 | Schema_Atomic | Size: 0x4
 			// char  m_hViewmodelAttachment[0x4]; // 0x18a0 | Schema_Atomic | Size: 0x4
 			int32_t m_iOldTeam; // 0x18a4 | Schema_Builtin | Size: 0x4
 			bool m_bAttachmentDirty; // 0x18a8 | Schema_Builtin | Size: 0x1
@@ -55,10 +55,10 @@ namespace CS2 {
 			int32_t m_nUnloadedModelIndex; // 0x18ac | Schema_Builtin | Size: 0x4
 			int32_t m_iNumOwnerValidationRetries; // 0x18b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hOldProvidee; // 0x18c0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hOldProvidee; // 0x18c0 | Schema_Atomic | Size: 0x4
 			// char  m_hOldProvidee[0x4]; // 0x18c0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< client::AttachedModelData_t > m_vecAttachedModels; // 0x18c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::C_EconEntity::AttachedModelData_t> m_vecAttachedModels; // 0x18c8 | Schema_Atomic | Size: 0x18
 			// char  m_vecAttachedModels[0x18]; // 0x18c8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayTime) == 0x1378, "m_flFlexDelayTime in C_EconEntity should be at offset 0x1378");

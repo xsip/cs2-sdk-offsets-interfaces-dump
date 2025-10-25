@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x6E0
 			namespace C_EnvCubemap /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_Entity_hCubemapTexture = 0x678; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_Entity_hCubemapTexture; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hCubemapTexture = 0x678; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_Entity_bCustomCubemapTexture = 0x680; // bool m_Entity_bCustomCubemapTexture; |  0x680 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_Entity_flInfluenceRadius = 0x684; // float32 m_Entity_flInfluenceRadius; |  0x684 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_vBoxProjectMins = 0x688; // GlobalTypes::Vector m_Entity_vBoxProjectMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Entity_vBoxProjectMaxs = 0x694; // GlobalTypes::Vector m_Entity_vBoxProjectMaxs; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_vBoxProjectMins = 0x688; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_vBoxProjectMaxs = 0x694; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_Entity_bMoveable = 0x6a0; // bool m_Entity_bMoveable; |  0x6a0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_Entity_nHandshake = 0x6a4; // int32_t m_Entity_nHandshake; |  0x6a4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Entity_nEnvCubeMapArrayIndex = 0x6a8; // int32_t m_Entity_nEnvCubeMapArrayIndex; |  0x6a8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Entity_nPriority = 0x6ac; // int32_t m_Entity_nPriority; |  0x6ac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Entity_flEdgeFadeDist = 0x6b0; // float32 m_Entity_flEdgeFadeDist; |  0x6b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_vEdgeFadeDists = 0x6b4; // GlobalTypes::Vector m_Entity_vEdgeFadeDists; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_vEdgeFadeDists = 0x6b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_Entity_flDiffuseScale = 0x6c0; // float32 m_Entity_flDiffuseScale; |  0x6c0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Entity_bStartDisabled = 0x6c4; // bool m_Entity_bStartDisabled; |  0x6c4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_Entity_bDefaultEnvMap = 0x6c5; // bool m_Entity_bDefaultEnvMap; |  0x6c5 | Schema_Builtin | Size: 0x1

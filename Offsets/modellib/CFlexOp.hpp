@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x8
 			namespace CFlexOp /**/ {
-				constexpr std::ptrdiff_t m_OpCode = 0x0; // modellib::FlexOpCode_t m_OpCode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OpCode = 0x0; // modellib::FlexOpCode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_Data = 0x4; // int32_t m_Data; |  0x4 | Schema_Builtin | Size: 0x4
 			}
 		}

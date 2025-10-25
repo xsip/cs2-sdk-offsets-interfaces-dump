@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x10
 			namespace TimedEvent_t /**/ {
-				constexpr std::ptrdiff_t m_ID = 0x0; // GlobalTypes::CGlobalSymbol m_ID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ID = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flTimeValueSeconds = 0x8; // float32 m_flTimeValueSeconds; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_comparisionOperator = 0xc; // animlib::Comparison_t m_comparisionOperator; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_comparisionOperator = 0xc; // animlib::CNmStateNode::TimedEvent_t::Comparison_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

@@ -56,16 +56,16 @@ namespace CS2 {
 			entity2::GameTime_t m_flDefuseCountDown; // 0x11b0 | Schema_DeclaredClass | Size: 0x4
 			bool m_bBombDefused; // 0x11b4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hBombDefuser; // 0x11b8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hBombDefuser; // 0x11b8 | Schema_Atomic | Size: 0x4
 			// char  m_hBombDefuser[0x4]; // 0x11b8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			client::C_AttributeContainer m_AttributeManager; // 0x11c0 | Schema_DeclaredClass | Size: 0x4d8
-			GlobalTypes::CHandle< client::C_Multimeter > m_hDefuserMultimeter; // 0x1698 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_Multimeter> m_hDefuserMultimeter; // 0x1698 | Schema_Atomic | Size: 0x4
 			// char  m_hDefuserMultimeter[0x4]; // 0x1698 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_flNextRadarFlashTime; // 0x169c | Schema_DeclaredClass | Size: 0x4
 			bool m_bRadarFlash; // 0x16a0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_pBombDefuser; // 0x16a4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_pBombDefuser; // 0x16a4 | Schema_Atomic | Size: 0x4
 			// char  m_pBombDefuser[0x4]; // 0x16a4 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_fLastDefuseTime; // 0x16a8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);

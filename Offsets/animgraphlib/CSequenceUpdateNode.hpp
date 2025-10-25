@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xB0
 			namespace CSequenceUpdateNode /*: public CS2::animgraphlib::CSequenceUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_hSequence = 0x78; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hSequence = 0x78; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_duration = 0x7c; // float32 m_duration; |  0x7c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_paramSpans = 0x80; // animgraphlib::CParamSpanUpdater m_paramSpans; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_tags = 0x98; // GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_paramSpans = 0x80; // animgraphlib::CParamSpanUpdater  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_tags = 0x98; // GlobalTypes::CUtlVector<animgraphlib::TagSpan_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

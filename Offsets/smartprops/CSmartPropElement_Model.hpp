@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x310
 			namespace CSmartPropElement_Model /*: public CS2::smartprops::CSmartPropElement*/ {
-				constexpr std::ptrdiff_t m_sModelName = 0x88; // GlobalTypes::CSmartPropAttributeModelName m_sModelName; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_MaterialGroupName = 0xc8; // GlobalTypes::CSmartPropAttributeMaterialGroup m_MaterialGroupName; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bDetailObject = 0x108; // GlobalTypes::CSmartPropAttributeBool m_bDetailObject; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vModelScale = 0x148; // GlobalTypes::CSmartPropAttributeVector m_vModelScale; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flUniformModelScale = 0x188; // GlobalTypes::CSmartPropAttributeFloat m_flUniformModelScale; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nLodLevel = 0x1c8; // GlobalTypes::CSmartPropAttributeInt m_nLodLevel; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_SurfacePropertyOverride = 0x208; // GlobalTypes::CSmartPropAttributeSurfaceProperty m_SurfacePropertyOverride; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nDetailObjectFadeLevel = 0x248; // smartprops::SmartPropDetailFadeLevel_t m_nDetailObjectFadeLevel; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bCastShadows = 0x250; // GlobalTypes::CSmartPropAttributeBool m_bCastShadows; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bRigidDeformation = 0x290; // GlobalTypes::CSmartPropAttributeBool m_bRigidDeformation; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bDisableDynamicDeformable = 0x2d0; // GlobalTypes::CSmartPropAttributeBool m_bDisableDynamicDeformable; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_sModelName = 0x88; // GlobalTypes::CSmartPropAttributeModelName  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_MaterialGroupName = 0xc8; // GlobalTypes::CSmartPropAttributeMaterialGroup  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bDetailObject = 0x108; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vModelScale = 0x148; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flUniformModelScale = 0x188; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nLodLevel = 0x1c8; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_SurfacePropertyOverride = 0x208; // GlobalTypes::CSmartPropAttributeSurfaceProperty  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nDetailObjectFadeLevel = 0x248; // smartprops::SmartPropDetailFadeLevel_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bCastShadows = 0x250; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bRigidDeformation = 0x290; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bDisableDynamicDeformable = 0x2d0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

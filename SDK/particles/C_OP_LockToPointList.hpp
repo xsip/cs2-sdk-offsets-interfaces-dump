@@ -29,7 +29,7 @@ namespace CS2 {
 		public:
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1d0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< particles::PointDefinition_t > m_pointList; // 0x1d8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<particles::PointDefinition_t> m_pointList; // 0x1d8 | Schema_Atomic | Size: 0x18
 			// char  m_pointList[0x18]; // 0x1d8 | Schema_Atomic | Size: 0x18
 			bool m_bPlaceAlongPath; // 0x1f0 | Schema_Builtin | Size: 0x1
 			bool m_bClosedLoop; // 0x1f1 | Schema_Builtin | Size: 0x1

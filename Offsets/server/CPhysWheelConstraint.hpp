@@ -21,7 +21,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flMaxSteeringAngle = 0x580; // float32 m_flMaxSteeringAngle; |  0x580 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSteeringAxisFriction = 0x584; // float32 m_flSteeringAxisFriction; |  0x584 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSpinAxisFriction = 0x588; // float32 m_flSpinAxisFriction; |  0x588 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSteeringMimicsEntity = 0x58c; // server::CHandle< server::CBaseEntity > m_hSteeringMimicsEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSteeringMimicsEntity = 0x58c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

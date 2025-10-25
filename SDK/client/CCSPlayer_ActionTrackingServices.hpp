@@ -27,7 +27,7 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_ActionTrackingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			GlobalTypes::CHandle< client::C_BasePlayerWeapon > m_hLastWeaponBeforeC4AutoSwitch; // 0x40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BasePlayerWeapon> m_hLastWeaponBeforeC4AutoSwitch; // 0x40 | Schema_Atomic | Size: 0x4
 			// char  m_hLastWeaponBeforeC4AutoSwitch[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
 			bool m_bIsRescuing; // 0x44 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

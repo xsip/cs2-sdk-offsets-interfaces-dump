@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xEE8
 			namespace C_EnvDecal /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_hDecalMaterial = 0xeb0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hDecalMaterial = 0xeb0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flWidth = 0xeb8; // float32 m_flWidth; |  0xeb8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flHeight = 0xebc; // float32 m_flHeight; |  0xebc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDepth = 0xec0; // float32 m_flDepth; |  0xec0 | Schema_Builtin | Size: 0x4

@@ -38,9 +38,9 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_queryHandleHalo; // 0xec4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x20);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hBaseMaterial; // 0xee8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hBaseMaterial; // 0xee8 | Schema_Atomic | Size: 0x8
 			char  m_hBaseMaterial[0x8]; // 0xee8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_nHaloIndex; // 0xef0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_nHaloIndex; // 0xef0 | Schema_Atomic | Size: 0x8
 			char  m_nHaloIndex[0x8]; // 0xef0 | Schema_Atomic | Size: 0x8
 			client::BeamType_t m_nBeamType; // 0xef8 | Schema_DeclaredEnum | Size: 0x4
 			uint32_t m_nBeamFlags; // 0xefc | Schema_Builtin | Size: 0x4
@@ -59,7 +59,7 @@ namespace CS2 {
 			bool m_bTurnedOff; // 0xf58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::VectorWS m_vecEndPos; // 0xf5c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hEndEntity; // 0xf68 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hEndEntity; // 0xf68 | Schema_Atomic | Size: 0x4
 			// char  m_hEndEntity[0x4]; // 0xf68 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

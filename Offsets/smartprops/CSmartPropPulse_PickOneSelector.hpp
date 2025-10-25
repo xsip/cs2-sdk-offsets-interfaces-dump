@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x68
 			namespace CSmartPropPulse_PickOneSelector /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_HandleShape = 0x48; // smartprops::ConfigurationHandleShape_t m_HandleShape; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_OutflowList = 0x50; // pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_HandleShape = 0x48; // smartprops::ConfigurationHandleShape_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OutflowList = 0x50; // pulse_runtime_lib::PulseSelectorOutflowList_t  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

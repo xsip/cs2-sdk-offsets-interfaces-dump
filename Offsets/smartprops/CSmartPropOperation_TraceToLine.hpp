@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x4D0
 			namespace CSmartPropOperation_TraceToLine /*: public CS2::smartprops::CSmartPropOperation_Trace*/ {
-				constexpr std::ptrdiff_t m_EndPointA = 0x350; // GlobalTypes::CSmartPropAttributeVector m_EndPointA; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_EndPointSpaceA = 0x390; // smartprops::CSmartPropAttributeCoordinateSpace m_EndPointSpaceA; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_EndPointB = 0x3d0; // GlobalTypes::CSmartPropAttributeVector m_EndPointB; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_EndPointSpaceB = 0x410; // smartprops::CSmartPropAttributeCoordinateSpace m_EndPointSpaceB; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bTraceAway = 0x450; // GlobalTypes::CSmartPropAttributeBool m_bTraceAway; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flTraceLength = 0x490; // GlobalTypes::CSmartPropAttributeFloat m_flTraceLength; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_EndPointA = 0x350; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_EndPointSpaceA = 0x390; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_EndPointB = 0x3d0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_EndPointSpaceB = 0x410; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bTraceAway = 0x450; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flTraceLength = 0x490; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

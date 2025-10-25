@@ -24,7 +24,7 @@ namespace CS2 {
 		class CLogicBranchList : public CS2::server::CLogicalEntity {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_nLogicBranchNames[16]; // 0x4f0 | Schema_FixedArray | Size: 0x80
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_LogicBranchList; // 0x570 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_LogicBranchList; // 0x570 | Schema_Atomic | Size: 0x18
 			char  m_LogicBranchList[0x18]; // 0x570 | Schema_Atomic | Size: 0x18
 			server::LogicBranchListenerLastState_t m_eLastState; // 0x588 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);

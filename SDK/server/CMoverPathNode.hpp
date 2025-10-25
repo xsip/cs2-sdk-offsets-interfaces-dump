@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CPathMover;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -31,8 +36,8 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnPassThrough; // 0x568 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnPassThroughForward; // 0x590 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnPassThroughReverse; // 0x5b8 | Schema_DeclaredClass | Size: 0x28
-			// server::CHandle< server::CPathMover > m_hMover; // 0x5e0 | Schema_Atomic | Size: 0x4
-			char  m_hMover[0x4]; // 0x5e0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPathMover> m_hMover; // 0x5e0 | Schema_Atomic | Size: 0x4
+			// char  m_hMover[0x4]; // 0x5e0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
 			GlobalTypes::CTransform m_xWSPrevParent; // 0x5f0 | Schema_Atomic | Size: 0x20
 		};

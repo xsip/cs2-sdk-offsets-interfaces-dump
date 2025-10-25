@@ -37,8 +37,8 @@ namespace CS2 {
 			S2_PAD(0x3);
 			entity2::GameTick_t m_nNextHoldTick; // 0x11ec | Schema_DeclaredClass | Size: 0x4
 			float32 m_flNextHoldFrac; // 0x11f0 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CCSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0x11f4 | Schema_Atomic | Size: 0x4
-			char  m_hSwitchToWeaponAfterThrow[0x4]; // 0x11f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSWeaponBase> m_hSwitchToWeaponAfterThrow; // 0x11f4 | Schema_Atomic | Size: 0x4
+			// char  m_hSwitchToWeaponAfterThrow[0x4]; // 0x11f4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
 		static_assert(offsetof(CS2::server::CBaseCSGrenade, m_bRedraw) == 0x11D0, "m_bRedraw in CBaseCSGrenade should be at offset 0x11D0");

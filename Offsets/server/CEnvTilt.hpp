@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_Duration = 0x4f0; // float32 m_Duration; |  0x4f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Radius = 0x4f4; // float32 m_Radius; |  0x4f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_TiltTime = 0x4f8; // float32 m_TiltTime; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_stopTime = 0x4fc; // entity2::GameTime_t m_stopTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_stopTime = 0x4fc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

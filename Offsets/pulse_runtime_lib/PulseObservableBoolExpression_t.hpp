@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x78
 			namespace PulseObservableBoolExpression_t /**/ {
-				constexpr std::ptrdiff_t m_EvaluateConnection = 0x0; // pulse_runtime_lib::CPulse_OutflowConnection m_EvaluateConnection; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_DependentObservableVars = 0x48; // GlobalTypes::CUtlVector< pulse_runtime_lib::PulseRuntimeVarIndex_t > m_DependentObservableVars; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_DependentObservableBlackboardReferences = 0x60; // GlobalTypes::CUtlVector< pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t > m_DependentObservableBlackboardReferences; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_EvaluateConnection = 0x0; // pulse_runtime_lib::CPulse_OutflowConnection  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_DependentObservableVars = 0x48; // GlobalTypes::CUtlVector<pulse_runtime_lib::PulseRuntimeVarIndex_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_DependentObservableBlackboardReferences = 0x60; // GlobalTypes::CUtlVector<pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x88
 			namespace CPulseCell_Value_Curve /*: public CS2::pulse_runtime_lib::CPulseCell_BaseValue*/ {
-				constexpr std::ptrdiff_t m_Curve = 0x48; // GlobalTypes::CPiecewiseCurve m_Curve; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Curve = 0x48; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

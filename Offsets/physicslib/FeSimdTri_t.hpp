@@ -11,10 +11,10 @@ namespace CS2 {
 			// Class size: 0x80
 			namespace FeSimdTri_t /**/ {
 				constexpr std::ptrdiff_t nNode = 0x0; // uint32_t nNode[4]; |  0x0 | Schema_FixedArray | Size: 0x0
-				constexpr std::ptrdiff_t w1 = 0x30; // GlobalTypes::fltx4 w1; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t w2 = 0x40; // GlobalTypes::fltx4 w2; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t v1x = 0x50; // GlobalTypes::fltx4 v1x; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t v2 = 0x60; // physicslib::FourVectors2D v2; |  Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t w1 = 0x30; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t w2 = 0x40; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t v1x = 0x50; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t v2 = 0x60; // physicslib::FourVectors2D  | Schema_DeclaredClass | Size: 0x20
 			}
 		}
 	}

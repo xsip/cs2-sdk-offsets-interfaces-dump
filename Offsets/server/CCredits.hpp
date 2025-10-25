@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x520
 			namespace CCredits /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_OnCreditsDone = 0x4f0; // entity2::CEntityIOOutput m_OnCreditsDone; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnCreditsDone = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_bRolledOutroCredits = 0x518; // bool m_bRolledOutroCredits; |  0x518 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flLogoLength = 0x51c; // float32 m_flLogoLength; |  0x51c | Schema_Builtin | Size: 0x4
 			}

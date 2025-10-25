@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xF0
 			namespace CPulseCell_Outflow_ListenForEntityOutput /*: public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow*/ {
-				constexpr std::ptrdiff_t m_OnFired = 0x48; // pulse_runtime_lib::SignatureOutflow_Resume m_OnFired; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_OnCanceled = 0x90; // pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_strEntityOutput = 0xd8; // GlobalTypes::CGlobalSymbol m_strEntityOutput; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strEntityOutputParam = 0xe0; // GlobalTypes::CUtlString m_strEntityOutputParam; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnFired = 0x48; // pulse_runtime_lib::SignatureOutflow_Resume  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_OnCanceled = 0x90; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_strEntityOutput = 0xd8; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strEntityOutputParam = 0xe0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bListenUntilCanceled = 0xe8; // bool m_bListenUntilCanceled; |  0xe8 | Schema_Builtin | Size: 0x1
 			}
 		}

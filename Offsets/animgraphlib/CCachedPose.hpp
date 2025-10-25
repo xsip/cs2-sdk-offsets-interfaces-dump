@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x40
 			namespace CCachedPose /**/ {
-				constexpr std::ptrdiff_t m_transforms = 0x8; // GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_transforms; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_morphWeights = 0x20; // GlobalTypes::CUtlVector< float32 > m_morphWeights; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hSequence = 0x38; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_transforms = 0x8; // GlobalTypes::CUtlVector<GlobalTypes::CTransform>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_morphWeights = 0x20; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hSequence = 0x38; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flCycle = 0x3c; // float32 m_flCycle; |  0x3c | Schema_Builtin | Size: 0x4
 			}
 		}

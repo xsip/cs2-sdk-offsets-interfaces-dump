@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x18
 			namespace JiggleBoneSettingsList_t /**/ {
-				constexpr std::ptrdiff_t m_boneSettings = 0x0; // GlobalTypes::CUtlVector< animgraphlib::JiggleBoneSettings_t > m_boneSettings; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneSettings = 0x0; // GlobalTypes::CUtlVector<animgraphlib::JiggleBoneSettings_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

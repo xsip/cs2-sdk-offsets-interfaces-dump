@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x220
 			namespace C_INIT_RandomColor /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_ColorMin = 0x1f4; // GlobalTypes::Color m_ColorMin; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_ColorMax = 0x1f8; // GlobalTypes::Color m_ColorMax; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_TintMin = 0x1fc; // GlobalTypes::Color m_TintMin; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_TintMax = 0x200; // GlobalTypes::Color m_TintMax; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_ColorMin = 0x1f4; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_ColorMax = 0x1f8; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_TintMin = 0x1fc; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_TintMax = 0x200; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flTintPerc = 0x204; // float32 m_flTintPerc; |  0x204 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flUpdateThreshold = 0x208; // float32 m_flUpdateThreshold; |  0x208 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTintCP = 0x20c; // int32_t m_nTintCP; |  0x20c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x210; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nTintBlendMode = 0x214; // particles::ParticleColorBlendMode_t m_nTintBlendMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x210; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nTintBlendMode = 0x214; // particles::ParticleColorBlendMode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flLightAmplification = 0x218; // float32 m_flLightAmplification; |  0x218 | Schema_Builtin | Size: 0x4
 			}
 		}

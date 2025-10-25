@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace BoneDemoCaptureSettings_t /**/ {
-				constexpr std::ptrdiff_t m_boneName = 0x0; // GlobalTypes::CUtlString m_boneName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_boneName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flErrorSplineRotationMax = 0x8; // float32 m_flErrorSplineRotationMax; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flErrorSplineTranslationMax = 0xc; // float32 m_flErrorSplineTranslationMax; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flErrorSplineScaleMax = 0x10; // float32 m_flErrorSplineScaleMax; |  0x10 | Schema_Builtin | Size: 0x4

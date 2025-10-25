@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xA8
 			namespace CSolveIKChainUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_targetHandles = 0x70; // GlobalTypes::CUtlVector< animgraphlib::CSolveIKTargetHandle_t > m_targetHandles; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_opFixedData = 0x88; // animgraphlib::SolveIKChainPoseOpFixedSettings_t m_opFixedData; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_targetHandles = 0x70; // GlobalTypes::CUtlVector<animgraphlib::CSolveIKTargetHandle_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_opFixedData = 0x88; // animgraphlib::SolveIKChainPoseOpFixedSettings_t  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

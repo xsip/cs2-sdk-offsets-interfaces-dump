@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x78
 			namespace CStanceScaleUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_hParam = 0x70; // animgraphlib::CAnimParamHandle m_hParam; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParam = 0x70; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 			}
 		}
 	}

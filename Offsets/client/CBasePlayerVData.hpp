@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x178
 			namespace CBasePlayerVData /*: public CS2::client::CEntitySubclassVDataBase*/ {
-				constexpr std::ptrdiff_t m_sModelName = 0x28; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sModelName; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_flHeadDamageMultiplier = 0x108; // client::CSkillFloat m_flHeadDamageMultiplier; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_flChestDamageMultiplier = 0x118; // client::CSkillFloat m_flChestDamageMultiplier; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_flStomachDamageMultiplier = 0x128; // client::CSkillFloat m_flStomachDamageMultiplier; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_flArmDamageMultiplier = 0x138; // client::CSkillFloat m_flArmDamageMultiplier; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_flLegDamageMultiplier = 0x148; // client::CSkillFloat m_flLegDamageMultiplier; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_sModelName = 0x28; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_flHeadDamageMultiplier = 0x108; // client::CSkillFloat  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_flChestDamageMultiplier = 0x118; // client::CSkillFloat  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_flStomachDamageMultiplier = 0x128; // client::CSkillFloat  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_flArmDamageMultiplier = 0x138; // client::CSkillFloat  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_flLegDamageMultiplier = 0x148; // client::CSkillFloat  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t m_flHoldBreathTime = 0x158; // float32 m_flHoldBreathTime; |  0x158 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDrowningDamageInterval = 0x15c; // float32 m_flDrowningDamageInterval; |  0x15c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDrowningDamageInitial = 0x160; // int32_t m_nDrowningDamageInitial; |  0x160 | Schema_Builtin | Size: 0x4

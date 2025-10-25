@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace mathlib_extended {
 			// Class size: 0x40
 			namespace FourQuaternions /**/ {
-				constexpr std::ptrdiff_t x = 0x0; // GlobalTypes::fltx4 x; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t y = 0x10; // GlobalTypes::fltx4 y; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t z = 0x20; // GlobalTypes::fltx4 z; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t w = 0x30; // GlobalTypes::fltx4 w; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t x = 0x0; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t y = 0x10; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t z = 0x20; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t w = 0x30; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

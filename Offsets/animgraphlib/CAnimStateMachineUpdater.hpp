@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x58
 			namespace CAnimStateMachineUpdater /**/ {
-				constexpr std::ptrdiff_t m_states = 0x8; // GlobalTypes::CUtlVector< animgraphlib::CStateUpdateData > m_states; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_transitions = 0x20; // GlobalTypes::CUtlVector< animgraphlib::CTransitionUpdateData > m_transitions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_states = 0x8; // GlobalTypes::CUtlVector<animgraphlib::CStateUpdateData>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_transitions = 0x20; // GlobalTypes::CUtlVector<animgraphlib::CTransitionUpdateData>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_startStateIndex = 0x50; // int32_t m_startStateIndex; |  0x50 | Schema_Builtin | Size: 0x4
 			}
 		}

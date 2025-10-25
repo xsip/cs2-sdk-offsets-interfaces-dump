@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x798
 			namespace C_OP_RopeSpringConstraint /*: public CS2::particles::CParticleFunctionConstraint*/ {
-				constexpr std::ptrdiff_t m_flRestLength = 0x1d0; // particleslib::CParticleCollectionFloatInput m_flRestLength; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flMinDistance = 0x340; // particleslib::CParticleCollectionFloatInput m_flMinDistance; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flMaxDistance = 0x4b0; // particleslib::CParticleCollectionFloatInput m_flMaxDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRestLength = 0x1d0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMinDistance = 0x340; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flMaxDistance = 0x4b0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flAdjustmentScale = 0x620; // float32 m_flAdjustmentScale; |  0x620 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInitialRestingLength = 0x628; // particleslib::CParticleCollectionFloatInput m_flInitialRestingLength; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInitialRestingLength = 0x628; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

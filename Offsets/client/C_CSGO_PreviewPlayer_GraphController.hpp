@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x398
 			namespace C_CSGO_PreviewPlayer_GraphController /*: public CS2::client::CBaseAnimGraphAnimGraphController*/ {
-				constexpr std::ptrdiff_t m_pszCharacterMode = 0x268; // GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszCharacterMode; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_pszTeamPreviewVariant = 0x290; // GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszTeamPreviewVariant; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_pszTeamPreviewPosition = 0x2b8; // GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszTeamPreviewPosition; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_pszEndOfMatchCelebration = 0x2e0; // GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszEndOfMatchCelebration; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_nTeamPreviewRandom = 0x308; // GlobalTypes::CAnimGraphParamOptionalRef< int32 > m_nTeamPreviewRandom; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_pszWeaponState = 0x328; // GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszWeaponState; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_pszWeaponType = 0x350; // GlobalTypes::CAnimGraphParamOptionalRef< �p�e�::char > m_pszWeaponType; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_bCT = 0x378; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bCT; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_pszCharacterMode = 0x268; // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_pszTeamPreviewVariant = 0x290; // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_pszTeamPreviewPosition = 0x2b8; // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_pszEndOfMatchCelebration = 0x2e0; // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_nTeamPreviewRandom = 0x308; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_pszWeaponState = 0x328; // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_pszWeaponType = 0x350; // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_bCT = 0x378; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

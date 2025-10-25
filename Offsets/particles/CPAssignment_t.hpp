@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x6C8
 			namespace CPAssignment_t /**/ {
 				constexpr std::ptrdiff_t m_nCPNumber = 0x0; // int32_t m_nCPNumber; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Pos = 0x8; // particleslib::CPerParticleVecInput m_Pos; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_nOrientationMode = 0x6c0; // particles::ParticleOrientationSetMode_t m_nOrientationMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Pos = 0x8; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nOrientationMode = 0x6c0; // particles::ParticleOrientationSetMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

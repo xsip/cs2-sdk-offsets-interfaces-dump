@@ -25,7 +25,7 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CParamSpanUpdater  {
 		public:
-			GlobalTypes::CUtlVector< animgraphlib::ParamSpan_t > m_spans; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::ParamSpan_t> m_spans; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_spans[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CParamSpanUpdater, m_spans) == 0x0, "m_spans in CParamSpanUpdater should be at offset 0x0");

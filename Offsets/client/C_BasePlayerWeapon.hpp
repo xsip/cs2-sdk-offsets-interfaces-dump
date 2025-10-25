@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1918
 			namespace C_BasePlayerWeapon /*: public CS2::client::C_EconEntity*/ {
-				constexpr std::ptrdiff_t m_nNextPrimaryAttackTick = 0x18e0; // entity2::GameTick_t m_nNextPrimaryAttackTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nNextPrimaryAttackTick = 0x18e0; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flNextPrimaryAttackTickRatio = 0x18e4; // float32 m_flNextPrimaryAttackTickRatio; |  0x18e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNextSecondaryAttackTick = 0x18e8; // entity2::GameTick_t m_nNextSecondaryAttackTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nNextSecondaryAttackTick = 0x18e8; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flNextSecondaryAttackTickRatio = 0x18ec; // float32 m_flNextSecondaryAttackTickRatio; |  0x18ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iClip1 = 0x18f0; // int32_t m_iClip1; |  0x18f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iClip2 = 0x18f4; // int32_t m_iClip2; |  0x18f4 | Schema_Builtin | Size: 0x4

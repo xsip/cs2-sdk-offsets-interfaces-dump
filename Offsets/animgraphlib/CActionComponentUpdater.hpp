@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x48
 			namespace CActionComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_actions = 0x30; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimActionUpdater > > m_actions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_actions = 0x30; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimActionUpdater>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

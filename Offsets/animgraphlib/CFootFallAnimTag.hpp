@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x60
 			namespace CFootFallAnimTag /*: public CS2::animgraphlib::CAnimTagBase*/ {
-				constexpr std::ptrdiff_t m_foot = 0x58; // animgraphlib::FootFallTagFoot_t m_foot; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_foot = 0x58; // animgraphlib::FootFallTagFoot_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x1E0
 			namespace CTwoBoneIKUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::TwoBoneIKSettings_t m_opFixedData; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::TwoBoneIKSettings_t  | Schema_DeclaredClass | Size: 0x160
 			}
 		}
 	}

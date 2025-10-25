@@ -12,14 +12,14 @@ namespace CS2 {
 			namespace CCommentarySystem /**/ {
 				constexpr std::ptrdiff_t m_bCommentaryConvarsChanging = 0x11; // bool m_bCommentaryConvarsChanging; |  0x11 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCommentaryEnabledMidGame = 0x12; // bool m_bCommentaryEnabledMidGame; |  0x12 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flNextTeleportTime = 0x14; // entity2::GameTime_t m_flNextTeleportTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextTeleportTime = 0x14; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_iTeleportStage = 0x18; // int32_t m_iTeleportStage; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bCheatState = 0x1c; // bool m_bCheatState; |  0x1c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsFirstSpawnGroupToLoad = 0x1d; // bool m_bIsFirstSpawnGroupToLoad; |  0x1d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hCurrentNode = 0x38; // server::CHandle< server::CPointCommentaryNode > m_hCurrentNode; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hActiveCommentaryNode = 0x3c; // server::CHandle< server::CPointCommentaryNode > m_hActiveCommentaryNode; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hLastCommentaryNode = 0x40; // server::CHandle< server::CPointCommentaryNode > m_hLastCommentaryNode; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecNodes = 0x48; // server::CUtlVector< server.dll::CHandle< CPointCommentaryNode > > m_vecNodes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hCurrentNode = 0x38; // GlobalTypes::CHandle<server::CPointCommentaryNode>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hActiveCommentaryNode = 0x3c; // GlobalTypes::CHandle<server::CPointCommentaryNode>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hLastCommentaryNode = 0x40; // GlobalTypes::CHandle<server::CPointCommentaryNode>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecNodes = 0x48; // server::CUtlVector<GlobalTypes::CHandle<server::CPointCommentaryNode>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

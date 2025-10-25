@@ -21,20 +21,20 @@ namespace CS2 {
 		class CNmSkeleton  {
 		public:
 			GlobalTypes::CGlobalSymbol m_ID; // 0x0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlLeanVector< GlobalTypes::CGlobalSymbol > m_boneIDs; // 0x8 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<GlobalTypes::CGlobalSymbol> m_boneIDs; // 0x8 | Schema_Atomic | Size: 0x10
 			char  m_boneIDs[0x10]; // 0x8 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlVector< int32 > m_parentIndices; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_parentIndices[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_parentSpaceReferencePose; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CTransform> m_parentSpaceReferencePose; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_parentSpaceReferencePose[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_modelSpaceReferencePose; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CTransform> m_modelSpaceReferencePose; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_modelSpaceReferencePose[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			int32_t m_numBonesToSampleAtLowLOD; // 0x60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x24);
-			// GlobalTypes::CUtlLeanVector< animlib::NmBoneMaskSetDefinition_t > m_maskDefinitions; // 0x88 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<animlib::NmBoneMaskSetDefinition_t> m_maskDefinitions; // 0x88 | Schema_Atomic | Size: 0x10
 			char  m_maskDefinitions[0x10]; // 0x88 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10);
-			// GlobalTypes::SecondarySkeleton_t > m_secondarySkeletons; // 0xa8 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<animlib::CNmSkeleton::SecondarySkeleton_t> m_secondarySkeletons; // 0xa8 | Schema_Atomic | Size: 0x10
 			char  m_secondarySkeletons[0x10]; // 0xa8 | Schema_Atomic | Size: 0x10
 			bool m_bIsPropSkeleton; // 0xb8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding

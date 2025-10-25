@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flRange = 0x5fc; // float32 m_flRange; |  0x5fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nImportance = 0x600; // int32_t m_nImportance; |  0x600 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLightChoice = 0x604; // int32_t m_nLightChoice; |  0x604 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hLight = 0x608; // client::CHandle< client::C_BaseEntity > m_hLight; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hLight = 0x608; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace CDirectPlaybackTagData /**/ {
-				constexpr std::ptrdiff_t m_sequenceName = 0x0; // GlobalTypes::CUtlString m_sequenceName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_tags = 0x8; // GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sequenceName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_tags = 0x8; // GlobalTypes::CUtlVector<animgraphlib::TagSpan_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

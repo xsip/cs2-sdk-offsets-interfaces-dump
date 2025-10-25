@@ -25,7 +25,7 @@ namespace CS2 {
 			float32 m_flNoise; // 0x9d4 | Schema_Builtin | Size: 0x4
 			float32 m_flViewkick; // 0x9d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::Vector > m_pOutputForce; // 0x9e0 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::Vector> m_pOutputForce; // 0x9e0 | Schema_Atomic | Size: 0x28
 			char  m_pOutputForce[0x28]; // 0x9e0 | Schema_Atomic | Size: 0x28
 		};
 		static_assert(offsetof(CS2::server::CTriggerImpact, m_flMagnitude) == 0x9D0, "m_flMagnitude in CTriggerImpact should be at offset 0x9D0");

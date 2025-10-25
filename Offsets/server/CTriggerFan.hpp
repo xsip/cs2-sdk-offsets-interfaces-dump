@@ -10,20 +10,20 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xA70
 			namespace CTriggerFan /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_vFanOriginOffset = 0x9a8; // GlobalTypes::Vector m_vFanOriginOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDirection = 0x9b4; // GlobalTypes::Vector m_vDirection; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanOriginOffset = 0x9a8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDirection = 0x9b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bPushTowardsInfoTarget = 0x9c0; // bool m_bPushTowardsInfoTarget; |  0x9c0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bPushAwayFromInfoTarget = 0x9c1; // bool m_bPushAwayFromInfoTarget; |  0x9c1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_qNoiseDelta = 0x9d0; // GlobalTypes::Quaternion m_qNoiseDelta; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_hInfoFan = 0x9e0; // server::CHandle< server::CInfoFan > m_hInfoFan; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_qNoiseDelta = 0x9d0; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_hInfoFan = 0x9e0; // GlobalTypes::CHandle<server::CInfoFan>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flForce = 0x9e4; // float32 m_flForce; |  0x9e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bFalloff = 0x9e8; // bool m_bFalloff; |  0x9e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RampTimer = 0x9f0; // server::CountdownTimer m_RampTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_vFanOriginWS = 0xa08; // GlobalTypes::VectorWS m_vFanOriginWS; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vFanOriginLS = 0xa14; // GlobalTypes::Vector m_vFanOriginLS; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vFanEndLS = 0xa20; // GlobalTypes::Vector m_vFanEndLS; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vNoiseDirectionTarget = 0xa2c; // GlobalTypes::Vector m_vNoiseDirectionTarget; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_iszInfoFan = 0xa38; // GlobalTypes::CUtlSymbolLarge m_iszInfoFan; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_RampTimer = 0x9f0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_vFanOriginWS = 0xa08; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanOriginLS = 0xa14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanEndLS = 0xa20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vNoiseDirectionTarget = 0xa2c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_iszInfoFan = 0xa38; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flRopeForceScale = 0xa40; // float32 m_flRopeForceScale; |  0xa40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flParticleForceScale = 0xa44; // float32 m_flParticleForceScale; |  0xa44 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPlayerForce = 0xa48; // float32 m_flPlayerForce; |  0xa48 | Schema_Builtin | Size: 0x4

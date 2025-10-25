@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x30
 			namespace FeTaperedCapsuleRigid_t /**/ {
-				constexpr std::ptrdiff_t vSphere = 0x0; // GlobalTypes::fltx4 vSphere[2]; |  Schema_FixedArray | Size: 0x20
+				constexpr std::ptrdiff_t vSphere = 0x0; // GlobalTypes::fltx4[2]  | Schema_FixedArray | Size: 0x20
 				constexpr std::ptrdiff_t nNode = 0x20; // uint16_t nNode; |  0x20 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nCollisionMask = 0x22; // uint16_t nCollisionMask; |  0x22 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nVertexMapIndex = 0x24; // uint16_t nVertexMapIndex; |  0x24 | Schema_Builtin | Size: 0x2

@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x98
 			namespace CTargetWarpUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_eAngleMode = 0x74; // animgraphlib::TargetWarpAngleMode_t m_eAngleMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_hTargetPositionParameter = 0x78; // animgraphlib::CAnimParamHandle m_hTargetPositionParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hTargetUpVectorParameter = 0x7a; // animgraphlib::CAnimParamHandle m_hTargetUpVectorParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hTargetFacePositionParameter = 0x7c; // animgraphlib::CAnimParamHandle m_hTargetFacePositionParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hMoveHeadingParameter = 0x7e; // animgraphlib::CAnimParamHandle m_hMoveHeadingParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hDesiredMoveHeadingParameter = 0x80; // animgraphlib::CAnimParamHandle m_hDesiredMoveHeadingParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_eCorrectionMethod = 0x84; // animgraphlib::TargetWarpCorrectionMethod m_eCorrectionMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_eTargetWarpTimingMethod = 0x88; // animgraphlib::TargetWarpTimingMethod m_eTargetWarpTimingMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_eAngleMode = 0x74; // animgraphlib::TargetWarpAngleMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hTargetPositionParameter = 0x78; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hTargetUpVectorParameter = 0x7a; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hTargetFacePositionParameter = 0x7c; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hMoveHeadingParameter = 0x7e; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hDesiredMoveHeadingParameter = 0x80; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_eCorrectionMethod = 0x84; // animgraphlib::TargetWarpCorrectionMethod  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_eTargetWarpTimingMethod = 0x88; // animgraphlib::TargetWarpTimingMethod  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bTargetFacePositionIsWorldSpace = 0x8c; // bool m_bTargetFacePositionIsWorldSpace; |  0x8c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTargetPositionIsWorldSpace = 0x8d; // bool m_bTargetPositionIsWorldSpace; |  0x8d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bOnlyWarpWhenTagIsFound = 0x8e; // bool m_bOnlyWarpWhenTagIsFound; |  0x8e | Schema_Builtin | Size: 0x1

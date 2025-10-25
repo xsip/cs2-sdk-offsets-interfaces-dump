@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x58
 			namespace CPulseCell_Step_FollowEntity /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_ParamBoneOrAttachName = 0x48; // GlobalTypes::CUtlString m_ParamBoneOrAttachName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_ParamBoneOrAttachNameChild = 0x50; // GlobalTypes::CUtlString m_ParamBoneOrAttachNameChild; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ParamBoneOrAttachName = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ParamBoneOrAttachNameChild = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

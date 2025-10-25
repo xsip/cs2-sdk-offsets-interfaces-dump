@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x20
 			namespace CGameChoreoServices /*: public CS2::client::IChoreoServices*/ {
-				constexpr std::ptrdiff_t m_hOwner = 0x8; // server::CHandle< server::CBaseAnimGraph > m_hOwner; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hScriptedSequence = 0xc; // server::CHandle< server::CScriptedSequence > m_hScriptedSequence; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_scriptState = 0x10; // client::ScriptState_t m_scriptState; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_choreoState = 0x14; // client::ChoreoState_t m_choreoState; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeStartedState = 0x18; // entity2::GameTime_t m_flTimeStartedState; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hOwner = 0x8; // GlobalTypes::CHandle<server::CBaseAnimGraph>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hScriptedSequence = 0xc; // GlobalTypes::CHandle<server::CScriptedSequence>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_scriptState = 0x10; // client::IChoreoServices::ScriptState_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_choreoState = 0x14; // client::IChoreoServices::ChoreoState_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeStartedState = 0x18; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

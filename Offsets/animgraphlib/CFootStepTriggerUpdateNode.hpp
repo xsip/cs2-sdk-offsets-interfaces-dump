@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace CFootStepTriggerUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_triggers = 0x70; // GlobalTypes::CUtlVector< animgraphlib::FootStepTrigger > m_triggers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_triggers = 0x70; // GlobalTypes::CUtlVector<animgraphlib::FootStepTrigger>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flTolerance = 0x8c; // float32 m_flTolerance; |  0x8c | Schema_Builtin | Size: 0x4
 			}
 		}

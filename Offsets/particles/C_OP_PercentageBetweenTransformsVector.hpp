@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x2D0
 			namespace C_OP_PercentageBetweenTransformsVector /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flInputMin = 0x1d4; // float32 m_flInputMin; |  0x1d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInputMax = 0x1d8; // float32 m_flInputMax; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOutputMin = 0x1dc; // GlobalTypes::Vector m_vecOutputMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOutputMax = 0x1e8; // GlobalTypes::Vector m_vecOutputMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_TransformStart = 0x1f8; // particleslib::CParticleTransformInput m_TransformStart; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_TransformEnd = 0x260; // particleslib::CParticleTransformInput m_TransformEnd; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_nSetMethod = 0x2c8; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOutputMin = 0x1dc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOutputMax = 0x1e8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_TransformStart = 0x1f8; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_TransformEnd = 0x260; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_nSetMethod = 0x2c8; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bActiveRange = 0x2cc; // bool m_bActiveRange; |  0x2cc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bRadialCheck = 0x2cd; // bool m_bRadialCheck; |  0x2cd | Schema_Builtin | Size: 0x1
 			}

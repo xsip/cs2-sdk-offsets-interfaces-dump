@@ -16,6 +16,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseFilter;
+		class CItemGenericTriggerHelper;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -33,23 +39,23 @@ namespace CS2 {
 			bool m_bPlayerCounterListenerAdded; // 0xb94 | Schema_Builtin | Size: 0x1
 			bool m_bPlayerInTriggerRadius; // 0xb95 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hSpawnParticleEffect; // 0xb98 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hSpawnParticleEffect; // 0xb98 | Schema_Atomic | Size: 0x8
 			char  m_hSpawnParticleEffect[0x8]; // 0xb98 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_pAmbientSoundEffect; // 0xba0 | Schema_Atomic | Size: 0x8
 			bool m_bAutoStartAmbientSound; // 0xba8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CUtlSymbolLarge m_pSpawnScriptFunction; // 0xbb0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hPickupParticleEffect; // 0xbb8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hPickupParticleEffect; // 0xbb8 | Schema_Atomic | Size: 0x8
 			char  m_hPickupParticleEffect[0x8]; // 0xbb8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_pPickupSoundEffect; // 0xbc0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_pPickupScriptFunction; // 0xbc8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hTimeoutParticleEffect; // 0xbd0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hTimeoutParticleEffect; // 0xbd0 | Schema_Atomic | Size: 0x8
 			char  m_hTimeoutParticleEffect[0x8]; // 0xbd0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_pTimeoutSoundEffect; // 0xbd8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_pTimeoutScriptFunction; // 0xbe0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_pPickupFilterName; // 0xbe8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hPickupFilter; // 0xbf0 | Schema_Atomic | Size: 0x4
-			char  m_hPickupFilter[0x4]; // 0xbf0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFilter> m_hPickupFilter; // 0xbf0 | Schema_Atomic | Size: 0x4
+			// char  m_hPickupFilter[0x4]; // 0xbf0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnPickup; // 0xbf8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnTimeout; // 0xc20 | Schema_DeclaredClass | Size: 0x28
@@ -64,8 +70,8 @@ namespace CS2 {
 			GlobalTypes::Color m_glowColor; // 0xcd9 | Schema_Atomic | Size: 0x4
 			bool m_bUseable; // 0xcdd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CItemGenericTriggerHelper > m_hTriggerHelper; // 0xce0 | Schema_Atomic | Size: 0x4
-			char  m_hTriggerHelper[0x4]; // 0xce0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CItemGenericTriggerHelper> m_hTriggerHelper; // 0xce0 | Schema_Atomic | Size: 0x4
+			// char  m_hTriggerHelper[0x4]; // 0xce0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
 		static_assert(offsetof(CS2::server::CItemGeneric, m_bHasTriggerRadius) == 0xB84, "m_bHasTriggerRadius in CItemGeneric should be at offset 0xB84");

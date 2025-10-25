@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x90
 			namespace CSmartPropOperation_Rotate /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_vRotation = 0x50; // GlobalTypes::CSmartPropAttributeAngles m_vRotation; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vRotation = 0x50; // GlobalTypes::CSmartPropAttributeAngles  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

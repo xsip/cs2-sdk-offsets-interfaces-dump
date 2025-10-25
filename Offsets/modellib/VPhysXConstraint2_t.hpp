@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nFlags = 0x0; // uint32_t m_nFlags; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nParent = 0x4; // uint16_t m_nParent; |  0x4 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nChild = 0x6; // uint16_t m_nChild; |  0x6 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_params = 0x8; // modellib::VPhysXConstraintParams_t m_params; |  Schema_DeclaredClass | Size: 0xf8
+				constexpr std::ptrdiff_t m_params = 0x8; // modellib::VPhysXConstraintParams_t  | Schema_DeclaredClass | Size: 0xf8
 			}
 		}
 	}

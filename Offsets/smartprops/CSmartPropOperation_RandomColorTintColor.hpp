@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xF0
 			namespace CSmartPropOperation_RandomColorTintColor /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_SelectionMode = 0x50; // smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_ColorPosition = 0x90; // GlobalTypes::CSmartPropAttributeFloat m_ColorPosition; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_Mode = 0xd0; // smartprops::ApplyColorMode_t m_Mode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_Gradient = 0xd8; // GlobalTypes::CColorGradient m_Gradient; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SelectionMode = 0x50; // smartprops::CSmartPropAttributeChoiceSelectionMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_ColorPosition = 0x90; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Mode = 0xd0; // smartprops::ApplyColorMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Gradient = 0xd8; // GlobalTypes::CColorGradient  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

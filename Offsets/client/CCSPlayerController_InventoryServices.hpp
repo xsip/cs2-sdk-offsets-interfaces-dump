@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xF0
 			namespace CCSPlayerController_InventoryServices /*: public CS2::client::CPlayerControllerComponent*/ {
-				constexpr std::ptrdiff_t m_vecNetworkableLoadout = 0x40; // client::NetworkedLoadoutSlot_t > m_vecNetworkableLoadout; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecNetworkableLoadout = 0x40; // GlobalTypes::CUtlVector<client::CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_unMusicID = 0x58; // uint16_t m_unMusicID; |  0x58 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_rank = 0x5c; // client::MedalRank_t m_rank[6]; |  Schema_FixedArray | Size: 0x120
+				constexpr std::ptrdiff_t m_rank = 0x5c; // client::MedalRank_t[6]  | Schema_FixedArray | Size: 0x120
 				constexpr std::ptrdiff_t m_nPersonaDataPublicLevel = 0x74; // int32_t m_nPersonaDataPublicLevel; |  0x74 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPersonaDataPublicCommendsLeader = 0x78; // int32_t m_nPersonaDataPublicCommendsLeader; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPersonaDataPublicCommendsTeacher = 0x7c; // int32_t m_nPersonaDataPublicCommendsTeacher; |  0x7c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPersonaDataPublicCommendsFriendly = 0x80; // int32_t m_nPersonaDataPublicCommendsFriendly; |  0x80 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPersonaDataXpTrailLevel = 0x84; // int32_t m_nPersonaDataXpTrailLevel; |  0x84 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecServerAuthoritativeWeaponSlots = 0x88; // GlobalTypes::C_UtlVectorEmbeddedNetworkVar< client::ServerAuthoritativeWeaponSlot_t > m_vecServerAuthoritativeWeaponSlots; |  Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_vecServerAuthoritativeWeaponSlots = 0x88; // GlobalTypes::C_UtlVectorEmbeddedNetworkVar<client::ServerAuthoritativeWeaponSlot_t>  | Schema_Atomic | Size: 0x68
 			}
 		}
 	}

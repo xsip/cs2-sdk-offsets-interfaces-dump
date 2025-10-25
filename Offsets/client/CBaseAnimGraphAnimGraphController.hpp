@@ -10,21 +10,21 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x268
 			namespace CBaseAnimGraphAnimGraphController /*: public CS2::client::CAnimGraphControllerBase*/ {
-				constexpr std::ptrdiff_t m_sDestructiblePartDestroyedHitGroup = 0x80; // GlobalTypes::CAnimGraphParamOptionalRef< GlobalTypes::CGlobalSymbol > m_sDestructiblePartDestroyedHitGroup; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_nDestructiblePartDestroyedPartIndex = 0xa8; // GlobalTypes::CAnimGraphParamOptionalRef< int32 > m_nDestructiblePartDestroyedPartIndex; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_INVALID_Destroyed = 0xc8; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_INVALID_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_GENERIC_Destroyed = 0xe8; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_GENERIC_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_HEAD_Destroyed = 0x108; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_HEAD_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_CHEST_Destroyed = 0x128; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_CHEST_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_STOMACH_Destroyed = 0x148; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_STOMACH_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_LEFTARM_Destroyed = 0x168; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_LEFTARM_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_RIGHTARM_Destroyed = 0x188; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_RIGHTARM_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_LEFTLEG_Destroyed = 0x1a8; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_LEFTLEG_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_RIGHTLEG_Destroyed = 0x1c8; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_RIGHTLEG_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_NECK_Destroyed = 0x1e8; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_NECK_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_UNUSED_Destroyed = 0x208; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_UNUSED_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_GEAR_Destroyed = 0x228; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_GEAR_Destroyed; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_bHITGROUP_SPECIAL_Destroyed = 0x248; // GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bHITGROUP_SPECIAL_Destroyed; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_sDestructiblePartDestroyedHitGroup = 0x80; // GlobalTypes::CAnimGraphParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_nDestructiblePartDestroyedPartIndex = 0xa8; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_INVALID_Destroyed = 0xc8; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_GENERIC_Destroyed = 0xe8; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_HEAD_Destroyed = 0x108; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_CHEST_Destroyed = 0x128; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_STOMACH_Destroyed = 0x148; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_LEFTARM_Destroyed = 0x168; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_RIGHTARM_Destroyed = 0x188; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_LEFTLEG_Destroyed = 0x1a8; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_RIGHTLEG_Destroyed = 0x1c8; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_NECK_Destroyed = 0x1e8; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_UNUSED_Destroyed = 0x208; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_GEAR_Destroyed = 0x228; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_bHITGROUP_SPECIAL_Destroyed = 0x248; // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

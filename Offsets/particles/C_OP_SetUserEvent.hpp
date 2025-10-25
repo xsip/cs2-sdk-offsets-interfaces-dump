@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x630
 			namespace C_OP_SetUserEvent /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flInput = 0x1d0; // particleslib::CPerParticleFloatInput m_flInput; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flRisingEdge = 0x340; // particleslib::CPerParticleFloatInput m_flRisingEdge; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nRisingEventType = 0x4b0; // particles::EventTypeSelection_t m_nRisingEventType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flFallingEdge = 0x4b8; // particleslib::CPerParticleFloatInput m_flFallingEdge; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nFallingEventType = 0x628; // particles::EventTypeSelection_t m_nFallingEventType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flInput = 0x1d0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRisingEdge = 0x340; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nRisingEventType = 0x4b0; // particles::EventTypeSelection_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flFallingEdge = 0x4b8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nFallingEventType = 0x628; // particles::EventTypeSelection_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

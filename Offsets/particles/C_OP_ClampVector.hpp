@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xF48
 			namespace C_OP_ClampVector /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOutputMin = 0x1d8; // particleslib::CPerParticleVecInput m_vecOutputMin; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_vecOutputMax = 0x890; // particleslib::CPerParticleVecInput m_vecOutputMax; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOutputMin = 0x1d8; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecOutputMax = 0x890; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

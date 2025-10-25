@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x20
 			namespace Emphasized_Phoneme /**/ {
-				constexpr std::ptrdiff_t m_sClassName = 0x0; // GlobalTypes::CUtlString m_sClassName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sClassName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flAmount = 0x18; // float32 m_flAmount; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bRequired = 0x1c; // bool m_bRequired; |  0x1c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bBasechecked = 0x1d; // bool m_bBasechecked; |  0x1d | Schema_Builtin | Size: 0x1

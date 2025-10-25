@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xFC8
 			namespace CFuncWater /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_BuoyancyHelper = 0xeb0; // client::CBuoyancyHelper m_BuoyancyHelper; |  Schema_DeclaredClass | Size: 0x118
+				constexpr std::ptrdiff_t m_BuoyancyHelper = 0xeb0; // client::CBuoyancyHelper  | Schema_DeclaredClass | Size: 0x118
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x20
 			namespace DecalGroupOption_t /**/ {
-				constexpr std::ptrdiff_t m_hMaterial = 0x0; // GlobalTypes::CStrongHandleCopyable< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sSequenceName = 0x8; // GlobalTypes::CGlobalSymbol m_sSequenceName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hMaterial = 0x0; // GlobalTypes::CStrongHandleCopyable<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sSequenceName = 0x8; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flProbability = 0x10; // float32 m_flProbability; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnableAngleBetweenNormalAndGravityRange = 0x14; // bool m_bEnableAngleBetweenNormalAndGravityRange; |  0x14 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMinAngleBetweenNormalAndGravity = 0x18; // float32 m_flMinAngleBetweenNormalAndGravity; |  0x18 | Schema_Builtin | Size: 0x4

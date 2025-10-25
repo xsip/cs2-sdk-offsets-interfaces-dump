@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x500
 			namespace CEnvViewPunch /*: public CS2::server::CPointEntity*/ {
 				constexpr std::ptrdiff_t m_flRadius = 0x4f0; // float32 m_flRadius; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_angViewPunch = 0x4f4; // GlobalTypes::QAngle m_angViewPunch; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angViewPunch = 0x4f4; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

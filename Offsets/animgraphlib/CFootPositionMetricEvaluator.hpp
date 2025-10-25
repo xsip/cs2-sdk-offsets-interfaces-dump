@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x70
 			namespace CFootPositionMetricEvaluator /*: public CS2::animgraphlib::CMotionMetricEvaluator*/ {
-				constexpr std::ptrdiff_t m_footIndices = 0x50; // GlobalTypes::CUtlVector< int32 > m_footIndices; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_footIndices = 0x50; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bIgnoreSlope = 0x68; // bool m_bIgnoreSlope; |  0x68 | Schema_Builtin | Size: 0x1
 			}
 		}

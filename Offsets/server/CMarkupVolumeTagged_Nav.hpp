@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x820
 			namespace CMarkupVolumeTagged_Nav /*: public CS2::server::CMarkupVolumeTagged*/ {
-				constexpr std::ptrdiff_t m_nScopes = 0x818; // server::NavScopeFlags_t m_nScopes; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nScopes = 0x818; // server::NavScopeFlags_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

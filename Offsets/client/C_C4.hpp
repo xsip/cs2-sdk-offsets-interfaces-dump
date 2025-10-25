@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1FC0
 			namespace C_C4 /*: public CS2::client::C_CSWeaponBase*/ {
-				constexpr std::ptrdiff_t m_activeLightParticleIndex = 0x1f80; // client::ParticleIndex_t m_activeLightParticleIndex; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_eActiveLightEffect = 0x1f84; // client::C4LightEffect_t m_eActiveLightEffect; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_activeLightParticleIndex = 0x1f80; // client::ParticleIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_eActiveLightEffect = 0x1f84; // client::C4LightEffect_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bStartedArming = 0x1f88; // bool m_bStartedArming; |  0x1f88 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fArmedTime = 0x1f8c; // entity2::GameTime_t m_fArmedTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fArmedTime = 0x1f8c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bBombPlacedAnimation = 0x1f90; // bool m_bBombPlacedAnimation; |  0x1f90 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsPlantingViaUse = 0x1f91; // bool m_bIsPlantingViaUse; |  0x1f91 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_entitySpottedState = 0x1f98; // client::EntitySpottedState_t m_entitySpottedState; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_entitySpottedState = 0x1f98; // client::EntitySpottedState_t  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_nSpotRules = 0x1fb0; // int32_t m_nSpotRules; |  0x1fb0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bPlayedArmingBeeps = 0x1fb4; // bool m_bPlayedArmingBeeps[7]; |  0x1fb4 | Schema_FixedArray | Size: 0x7
 				constexpr std::ptrdiff_t m_bBombPlanted = 0x1fbb; // bool m_bBombPlanted; |  0x1fbb | Schema_Builtin | Size: 0x1

@@ -26,7 +26,7 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerStaticAdditiveSynth : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CTone > m_tones; // 0xb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth::CTone> m_tones; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char  m_tones[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18); // End padding
 		};

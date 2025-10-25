@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xC0
 			namespace CAimCameraUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_hParameterPosition = 0x70; // animgraphlib::CAnimParamHandle m_hParameterPosition; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterOrientation = 0x72; // animgraphlib::CAnimParamHandle m_hParameterOrientation; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterSpineRotationWeight = 0x74; // animgraphlib::CAnimParamHandle m_hParameterSpineRotationWeight; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterPelvisOffset = 0x76; // animgraphlib::CAnimParamHandle m_hParameterPelvisOffset; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterUseIK = 0x78; // animgraphlib::CAnimParamHandle m_hParameterUseIK; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterCameraOnly = 0x7a; // animgraphlib::CAnimParamHandle m_hParameterCameraOnly; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterWeaponDepenetrationDistance = 0x7c; // animgraphlib::CAnimParamHandle m_hParameterWeaponDepenetrationDistance; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterWeaponDepenetrationDelta = 0x7e; // animgraphlib::CAnimParamHandle m_hParameterWeaponDepenetrationDelta; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterCameraClearanceDistance = 0x80; // animgraphlib::CAnimParamHandle m_hParameterCameraClearanceDistance; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_opFixedSettings = 0x88; // animgraphlib::AimCameraOpFixedSettings_t m_opFixedSettings; |  Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_hParameterPosition = 0x70; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterOrientation = 0x72; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterSpineRotationWeight = 0x74; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterPelvisOffset = 0x76; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterUseIK = 0x78; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterCameraOnly = 0x7a; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterWeaponDepenetrationDistance = 0x7c; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterWeaponDepenetrationDelta = 0x7e; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterCameraClearanceDistance = 0x80; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_opFixedSettings = 0x88; // animgraphlib::AimCameraOpFixedSettings_t  | Schema_DeclaredClass | Size: 0x30
 			}
 		}
 	}

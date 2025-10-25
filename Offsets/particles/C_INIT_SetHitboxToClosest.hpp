@@ -12,12 +12,12 @@ namespace CS2 {
 			namespace C_INIT_SetHitboxToClosest /*: public CS2::particles::CParticleFunctionInitializer*/ {
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1d8; // int32_t m_nControlPointNumber; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDesiredHitbox = 0x1dc; // int32_t m_nDesiredHitbox; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecHitBoxScale = 0x1e0; // particleslib::CParticleCollectionVecInput m_vecHitBoxScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecHitBoxScale = 0x1e0; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_HitboxSetName = 0x898; // char m_HitboxSetName[128]; |  0x898 | Schema_FixedArray | Size: 0x80
 				constexpr std::ptrdiff_t m_bUseBones = 0x918; // bool m_bUseBones; |  0x918 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseClosestPointOnHitbox = 0x919; // bool m_bUseClosestPointOnHitbox; |  0x919 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nTestType = 0x91c; // particles::ClosestPointTestType_t m_nTestType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flHybridRatio = 0x920; // particleslib::CParticleCollectionFloatInput m_flHybridRatio; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nTestType = 0x91c; // particles::ClosestPointTestType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flHybridRatio = 0x920; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bUpdatePosition = 0xa90; // bool m_bUpdatePosition; |  0xa90 | Schema_Builtin | Size: 0x1
 			}
 		}

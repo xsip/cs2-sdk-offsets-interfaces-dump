@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x528
 			namespace CEnvFade /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_fadeColor = 0x4f0; // GlobalTypes::Color m_fadeColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_fadeColor = 0x4f0; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_Duration = 0x4f4; // float32 m_Duration; |  0x4f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_HoldDuration = 0x4f8; // float32 m_HoldDuration; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnBeginFade = 0x500; // entity2::CEntityIOOutput m_OnBeginFade; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBeginFade = 0x500; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

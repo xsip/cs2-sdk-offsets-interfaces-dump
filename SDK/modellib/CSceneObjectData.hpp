@@ -22,11 +22,11 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector m_vMinBounds; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxBounds; // 0xc | Schema_Atomic | Size: 0xc
-			// GlobalTypes::CUtlLeanVector< modellib::CMaterialDrawDescriptor > m_drawCalls; // 0x18 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor> m_drawCalls; // 0x18 | Schema_Atomic | Size: 0x10
 			char  m_drawCalls[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
-			// GlobalTypes::CUtlLeanVector< mathlib_extended::AABB_t > m_drawBounds; // 0x28 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<mathlib_extended::AABB_t> m_drawBounds; // 0x28 | Schema_Atomic | Size: 0x10
 			char  m_drawBounds[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
-			// GlobalTypes::CUtlLeanVector< modellib::CMeshletDescriptor > m_meshlets; // 0x38 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<modellib::CMeshletDescriptor> m_meshlets; // 0x38 | Schema_Atomic | Size: 0x10
 			char  m_meshlets[0x10]; // 0x38 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Vector4D m_vTintColor; // 0x48 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x38); // End padding

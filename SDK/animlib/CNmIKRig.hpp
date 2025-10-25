@@ -26,11 +26,11 @@ namespace CS2 {
 	namespace animlib {
 		class CNmIKRig  {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmSkeleton > m_skeleton; // 0x0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton> m_skeleton; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_skeleton[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< animlib::CNmIKBody > m_vecBodies; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::CNmIKBody> m_vecBodies; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_vecBodies[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animlib::CNmIKJoint > m_vecJoints; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::CNmIKJoint> m_vecJoints; // 0x20 | Schema_Atomic | Size: 0x18
 			// char  m_vecJoints[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animlib::CNmIKRig, m_skeleton) == 0x0, "m_skeleton in CNmIKRig should be at offset 0x0");

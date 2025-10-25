@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x1D0
 			namespace CSmartPropElement_PropPhysics /*: public CS2::smartprops::CSmartPropElement_ModelEntity*/ {
-				constexpr std::ptrdiff_t m_bStartAsleep = 0x190; // GlobalTypes::CSmartPropAttributeBool m_bStartAsleep; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bStartAsleep = 0x190; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

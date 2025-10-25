@@ -11,19 +11,19 @@ namespace CS2 {
 			// Class size: 0x988
 			namespace CBaseClientUIEntity /*: public CS2::server::CBaseModelEntity*/ {
 				constexpr std::ptrdiff_t m_bEnabled = 0x7d8; // bool m_bEnabled; |  0x7d8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_DialogXMLName = 0x7e0; // GlobalTypes::CUtlSymbolLarge m_DialogXMLName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PanelClassName = 0x7e8; // GlobalTypes::CUtlSymbolLarge m_PanelClassName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PanelID = 0x7f0; // GlobalTypes::CUtlSymbolLarge m_PanelID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_CustomOutput0 = 0x7f8; // entity2::CEntityIOOutput m_CustomOutput0; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput1 = 0x820; // entity2::CEntityIOOutput m_CustomOutput1; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput2 = 0x848; // entity2::CEntityIOOutput m_CustomOutput2; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput3 = 0x870; // entity2::CEntityIOOutput m_CustomOutput3; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput4 = 0x898; // entity2::CEntityIOOutput m_CustomOutput4; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput5 = 0x8c0; // entity2::CEntityIOOutput m_CustomOutput5; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput6 = 0x8e8; // entity2::CEntityIOOutput m_CustomOutput6; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput7 = 0x910; // entity2::CEntityIOOutput m_CustomOutput7; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput8 = 0x938; // entity2::CEntityIOOutput m_CustomOutput8; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_CustomOutput9 = 0x960; // entity2::CEntityIOOutput m_CustomOutput9; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_DialogXMLName = 0x7e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PanelClassName = 0x7e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PanelID = 0x7f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_CustomOutput0 = 0x7f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput1 = 0x820; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput2 = 0x848; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput3 = 0x870; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput4 = 0x898; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput5 = 0x8c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput6 = 0x8e8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput7 = 0x910; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput8 = 0x938; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CustomOutput9 = 0x960; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

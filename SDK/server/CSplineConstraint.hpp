@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -24,8 +29,8 @@ namespace CS2 {
 		public:
 			S2_PAD(0x50);
 			GlobalTypes::Vector m_vAnchorOffsetRestore; // 0x5b0 | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hSplineEntity; // 0x5bc | Schema_Atomic | Size: 0x4
-			char  m_hSplineEntity[0x4]; // 0x5bc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hSplineEntity; // 0x5bc | Schema_Atomic | Size: 0x4
+			// char  m_hSplineEntity[0x4]; // 0x5bc | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8);
 			bool m_bEnableLateralConstraint; // 0x5c8 | Schema_Builtin | Size: 0x1
 			bool m_bEnableVerticalConstraint; // 0x5c9 | Schema_Builtin | Size: 0x1

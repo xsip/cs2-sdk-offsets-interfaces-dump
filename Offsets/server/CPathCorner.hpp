@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CPathCorner /*: public CS2::server::CPointEntity*/ {
 				constexpr std::ptrdiff_t m_flWait = 0x4f0; // float32 m_flWait; |  0x4f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadius = 0x4f4; // float32 m_flRadius; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnPass = 0x4f8; // entity2::CEntityIOOutput m_OnPass; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPass = 0x4f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

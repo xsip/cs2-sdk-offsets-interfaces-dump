@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x900
 			namespace C_OP_CreateParticleSystemRenderer /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_hEffect = 0x220; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hEffect; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nEventType = 0x228; // particles::EventTypeSelection_t m_nEventType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCPs = 0x230; // GlobalTypes::CUtlLeanVector< particles::CPAssignment_t > m_vecCPs; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_szParticleConfig = 0x240; // GlobalTypes::CUtlString m_szParticleConfig; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_AggregationPos = 0x248; // particleslib::CPerParticleVecInput m_AggregationPos; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_hEffect = 0x220; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nEventType = 0x228; // particles::EventTypeSelection_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vecCPs = 0x230; // GlobalTypes::CUtlLeanVector<particles::CPAssignment_t>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_szParticleConfig = 0x240; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_AggregationPos = 0x248; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

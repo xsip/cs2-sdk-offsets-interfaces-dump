@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x40
 			namespace Bone_t /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_BindPose = 0x10; // GlobalTypes::CTransform m_BindPose; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_BindPose = 0x10; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_nParent = 0x30; // int32_t m_nParent; |  0x30 | Schema_Builtin | Size: 0x4
 			}
 		}

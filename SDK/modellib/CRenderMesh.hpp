@@ -28,9 +28,9 @@ namespace CS2 {
 		class CRenderMesh  {
 		public:
 			S2_PAD(0x10);
-			// GlobalTypes::CUtlLeanVectorFixedGrowable< modellib::CSceneObjectData, 1 > m_sceneObjects; // 0x10 | Schema_Atomic | Size: 0x98
+			// GlobalTypes::CUtlLeanVectorFixedGrowable<modellib::CSceneObjectData> m_sceneObjects; // 0x10 | Schema_Atomic | Size: 0x98
 			char  m_sceneObjects[0x98]; // 0x10 | Schema_Atomic | Size: 0x98
-			// GlobalTypes::CUtlLeanVector< modellib::CBaseConstraint > m_constraints; // 0xa8 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<modellib::CBaseConstraint*> m_constraints; // 0xa8 | Schema_Atomic | Size: 0x10
 			char  m_constraints[0x10]; // 0xa8 | Schema_Atomic | Size: 0x10
 			modellib::CRenderSkeleton m_skeleton; // 0xb8 | Schema_DeclaredClass | Size: 0x50
 			S2_PAD(0xac);

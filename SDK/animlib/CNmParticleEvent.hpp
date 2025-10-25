@@ -26,7 +26,7 @@ namespace CS2 {
 		public:
 			animlib::CNmEventRelevance_t m_relevance; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			animlib::Type_t m_type; // 0x24 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hParticleSystem; // 0x28 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hParticleSystem; // 0x28 | Schema_Atomic | Size: 0x8
 			char  m_hParticleSystem[0x8]; // 0x28 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_tags; // 0x30 | Schema_Atomic | Size: 0x8
 			bool m_bStopImmediately; // 0x38 | Schema_Builtin | Size: 0x1

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xB0
 			namespace CBtActionCombatPositioning /*: public CS2::server::CBtNode*/ {
-				constexpr std::ptrdiff_t m_szSensorInputKey = 0x68; // GlobalTypes::CUtlString m_szSensorInputKey; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_szIsAttackingKey = 0x80; // GlobalTypes::CUtlString m_szIsAttackingKey; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_ActionTimer = 0x88; // server::CountdownTimer m_ActionTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_szSensorInputKey = 0x68; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szIsAttackingKey = 0x80; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ActionTimer = 0x88; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_bCrouching = 0xa0; // bool m_bCrouching; |  0xa0 | Schema_Builtin | Size: 0x1
 			}
 		}

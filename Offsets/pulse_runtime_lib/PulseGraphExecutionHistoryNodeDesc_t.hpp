@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x20
 			namespace PulseGraphExecutionHistoryNodeDesc_t /**/ {
-				constexpr std::ptrdiff_t strCellDesc = 0x0; // GlobalTypes::CBufferString strCellDesc; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t strBindingName = 0x10; // GlobalTypes::PulseSymbol_t strBindingName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t strCellDesc = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t strBindingName = 0x10; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

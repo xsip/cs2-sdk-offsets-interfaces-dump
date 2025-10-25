@@ -21,15 +21,15 @@ namespace CS2 {
 	namespace client {
 		class CCS2WeaponGraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_action; // 0x80 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_action; // 0x80 | Schema_Atomic | Size: 0x20
 			char  m_action[0x20]; // 0x80 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CAnimGraph2ParamOptionalRef< bool > m_bActionReset; // 0xa0 | Schema_Atomic | Size: 0x18
 			char  m_bActionReset[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_weaponCategory; // 0xb8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponCategory; // 0xb8 | Schema_Atomic | Size: 0x20
 			char  m_weaponCategory[0x20]; // 0xb8 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_weaponType; // 0xd8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponType; // 0xd8 | Schema_Atomic | Size: 0x20
 			char  m_weaponType[0x20]; // 0xd8 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_weaponExtraInfo; // 0xf8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponExtraInfo; // 0xf8 | Schema_Atomic | Size: 0x20
 			char  m_weaponExtraInfo[0x20]; // 0xf8 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponAmmo; // 0x118 | Schema_Atomic | Size: 0x18
 			char  m_flWeaponAmmo[0x18]; // 0x118 | Schema_Atomic | Size: 0x18
@@ -47,7 +47,7 @@ namespace CS2 {
 			char  m_idleVariation[0x18]; // 0x1a8 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_deployVariation; // 0x1c0 | Schema_Atomic | Size: 0x18
 			char  m_deployVariation[0x18]; // 0x1c0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_attackType; // 0x1d8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_attackType; // 0x1d8 | Schema_Atomic | Size: 0x20
 			char  m_attackType[0x20]; // 0x1d8 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_attackThrowStrength; // 0x1f8 | Schema_Atomic | Size: 0x18
 			char  m_attackThrowStrength[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
@@ -55,9 +55,9 @@ namespace CS2 {
 			char  m_flAttackVariation[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_inspectVariation; // 0x228 | Schema_Atomic | Size: 0x18
 			char  m_inspectVariation[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_inspectExtraInfo; // 0x240 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_inspectExtraInfo; // 0x240 | Schema_Atomic | Size: 0x20
 			char  m_inspectExtraInfo[0x20]; // 0x240 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< GlobalTypes::CGlobalSymbol > m_reloadStage; // 0x260 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_reloadStage; // 0x260 | Schema_Atomic | Size: 0x20
 			char  m_reloadStage[0x20]; // 0x260 | Schema_Atomic | Size: 0x20
 			S2_PAD(0x368); // End padding
 		};

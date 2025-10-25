@@ -20,7 +20,7 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseSelectorOutflowList_t  {
 		public:
-			// server::CUtlVector< pulse_runtime_lib::OutflowWithRequirements_t > m_Outflows; // 0x0 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<pulse_runtime_lib::OutflowWithRequirements_t> m_Outflows; // 0x0 | Schema_Atomic | Size: 0x18
 			char  m_Outflows[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseSelectorOutflowList_t, m_Outflows) == 0x0, "m_Outflows in PulseSelectorOutflowList_t should be at offset 0x0");

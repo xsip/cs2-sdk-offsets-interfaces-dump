@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xB0
 			namespace CMoverUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_damping = 0x78; // animgraphlib::CAnimInputDamping m_damping; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_facingTarget = 0x90; // animgraphlib::AnimValueSource m_facingTarget; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_hMoveVecParam = 0x94; // animgraphlib::CAnimParamHandle m_hMoveVecParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hMoveHeadingParam = 0x96; // animgraphlib::CAnimParamHandle m_hMoveHeadingParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hTurnToFaceParam = 0x98; // animgraphlib::CAnimParamHandle m_hTurnToFaceParam; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_damping = 0x78; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_facingTarget = 0x90; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hMoveVecParam = 0x94; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hMoveHeadingParam = 0x96; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hTurnToFaceParam = 0x98; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_flTurnToFaceOffset = 0x9c; // float32 m_flTurnToFaceOffset; |  0x9c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTurnToFaceLimit = 0xa0; // float32 m_flTurnToFaceLimit; |  0xa0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAdditive = 0xa4; // bool m_bAdditive; |  0xa4 | Schema_Builtin | Size: 0x1

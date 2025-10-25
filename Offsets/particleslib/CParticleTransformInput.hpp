@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particleslib {
 			// Class size: 0x68
 			namespace CParticleTransformInput /*: public CS2::particleslib::CParticleInput*/ {
-				constexpr std::ptrdiff_t m_nType = 0x10; // particleslib::ParticleTransformType_t m_nType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_NamedValue = 0x18; // GlobalTypes::CParticleNamedValueRef m_NamedValue; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nType = 0x10; // particleslib::ParticleTransformType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_NamedValue = 0x18; // GlobalTypes::CParticleNamedValueRef  | Schema_Atomic | Size: 0x40
 				constexpr std::ptrdiff_t m_bFollowNamedValue = 0x58; // bool m_bFollowNamedValue; |  0x58 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSupportsDisabled = 0x59; // bool m_bSupportsDisabled; |  0x59 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseOrientation = 0x5a; // bool m_bUseOrientation; |  0x5a | Schema_Builtin | Size: 0x1

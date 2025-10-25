@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -40,8 +45,8 @@ namespace CS2 {
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnGustStart; // 0x40 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnGustEnd; // 0x68 | Schema_DeclaredClass | Size: 0x28
-			// server::CHandle< server::CBaseEntity > m_hEntOwner; // 0x90 | Schema_Atomic | Size: 0x4
-			char  m_hEntOwner[0x4]; // 0x90 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntOwner; // 0x90 | Schema_Atomic | Size: 0x4
+			// char  m_hEntOwner[0x4]; // 0x90 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xbc); // End padding
 		};
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_flStartTime) == 0x8, "m_flStartTime in CEnvWindShared should be at offset 0x8");

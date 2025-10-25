@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x30
 			namespace CPulse_DomainValue /**/ {
-				constexpr std::ptrdiff_t m_nType = 0x0; // pulse_runtime_lib::PulseDomainValueType_t m_nType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_Value = 0x8; // GlobalTypes::CGlobalSymbolCaseSensitive m_Value; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_RequiredRuntimeType = 0x10; // GlobalTypes::CPulseValueFullType m_RequiredRuntimeType; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nType = 0x0; // pulse_runtime_lib::PulseDomainValueType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Value = 0x8; // GlobalTypes::CGlobalSymbolCaseSensitive  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_RequiredRuntimeType = 0x10; // GlobalTypes::CPulseValueFullType  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

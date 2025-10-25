@@ -27,7 +27,7 @@ namespace CS2 {
 			int32_t m_nLastShuffleCase; // 0x5f4 | Schema_Builtin | Size: 0x4
 			uint8_t m_uchShuffleCaseMap[32]; // 0x5f8 | Schema_FixedArray | Size: 0x20
 			entity2::CEntityIOOutput m_OnCase[32]; // 0x618 | Schema_FixedArray | Size: 0xa000
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::CVariantBase< CVariantDefaultAllocator > > m_OnDefault; // 0xb18 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator>> m_OnDefault; // 0xb18 | Schema_Atomic | Size: 0x28
 			char  m_OnDefault[0x28]; // 0xb18 | Schema_Atomic | Size: 0x28
 		};
 		static_assert(offsetof(CS2::server::CLogicCase, m_nCase) == 0x4F0, "m_nCase in CLogicCase should be at offset 0x4F0");

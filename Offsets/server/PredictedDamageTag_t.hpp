@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x40
 			namespace PredictedDamageTag_t /**/ {
-				constexpr std::ptrdiff_t nTagTick = 0x30; // entity2::GameTick_t nTagTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t nTagTick = 0x30; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t flFlinchModSmall = 0x34; // float32 flFlinchModSmall; |  0x34 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t flFlinchModLarge = 0x38; // float32 flFlinchModLarge; |  0x38 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t flFriendlyFireDamageReductionRatio = 0x3c; // float32 flFriendlyFireDamageReductionRatio; |  0x3c | Schema_Builtin | Size: 0x4

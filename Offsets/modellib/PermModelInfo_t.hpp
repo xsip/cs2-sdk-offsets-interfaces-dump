@@ -11,15 +11,15 @@ namespace CS2 {
 			// Class size: 0x58
 			namespace PermModelInfo_t /**/ {
 				constexpr std::ptrdiff_t m_nFlags = 0x0; // uint32_t m_nFlags; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vHullMin = 0x4; // GlobalTypes::Vector m_vHullMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vHullMax = 0x10; // GlobalTypes::Vector m_vHullMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vViewMin = 0x1c; // GlobalTypes::Vector m_vViewMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vViewMax = 0x28; // GlobalTypes::Vector m_vViewMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vHullMin = 0x4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vHullMax = 0x10; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vViewMin = 0x1c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vViewMax = 0x28; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flMass = 0x34; // float32 m_flMass; |  0x34 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vEyePosition = 0x38; // GlobalTypes::Vector m_vEyePosition; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vEyePosition = 0x38; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flMaxEyeDeflection = 0x44; // float32 m_flMaxEyeDeflection; |  0x44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sSurfaceProperty = 0x48; // GlobalTypes::CUtlString m_sSurfaceProperty; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_keyValueText = 0x50; // GlobalTypes::CUtlString m_keyValueText; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sSurfaceProperty = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_keyValueText = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

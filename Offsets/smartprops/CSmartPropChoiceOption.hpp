@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x28
 			namespace CSmartPropChoiceOption /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_DisplayName = 0x8; // GlobalTypes::CUtlString m_DisplayName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_VariableValues = 0x10; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVariableValue > m_VariableValues; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_DisplayName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_VariableValues = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPropAttributeVariableValue>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

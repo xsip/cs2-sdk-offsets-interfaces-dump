@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xD0
 			namespace CRenderComponent /*: public CS2::entity2::CEntityComponent*/ {
-				constexpr std::ptrdiff_t __m_pChainEntity = 0x10; // entity2::CNetworkVarChainer __m_pChainEntity; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t __m_pChainEntity = 0x10; // entity2::CNetworkVarChainer  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_bIsRenderingWithViewModels = 0x50; // bool m_bIsRenderingWithViewModels; |  0x50 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nSplitscreenFlags = 0x54; // uint32_t m_nSplitscreenFlags; |  0x54 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnableRendering = 0x58; // bool m_bEnableRendering; |  0x58 | Schema_Builtin | Size: 0x1

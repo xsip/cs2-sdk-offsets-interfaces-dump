@@ -32,7 +32,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			int32_t m_iFirstSecondHalfRound; // 0x100 | Schema_Builtin | Size: 0x4
 			int32_t m_iBombSite; // 0x104 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hBombPlanter; // 0x108 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hBombPlanter; // 0x108 | Schema_Atomic | Size: 0x4
 			// char  m_hBombPlanter[0x4]; // 0x108 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};

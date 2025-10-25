@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t flCurvature = 0xc; // float32 flCurvature; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t nFlags = 0x10; // uint32_t nFlags; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t nProbeNode = 0x14; // uint16_t nProbeNode; |  0x14 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t targetNodes = 0x18; // GlobalTypes::CUtlVector< uint16 > targetNodes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t targetNodes = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

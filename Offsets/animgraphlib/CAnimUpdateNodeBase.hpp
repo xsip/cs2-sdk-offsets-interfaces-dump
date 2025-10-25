@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x58
 			namespace CAnimUpdateNodeBase /**/ {
-				constexpr std::ptrdiff_t m_nodePath = 0x18; // animgraphlib::CAnimNodePath m_nodePath; |  Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_networkMode = 0x48; // animgraphlib::AnimNodeNetworkMode m_networkMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_name = 0x50; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nodePath = 0x18; // animgraphlib::CAnimNodePath  | Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_networkMode = 0x48; // animgraphlib::AnimNodeNetworkMode  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

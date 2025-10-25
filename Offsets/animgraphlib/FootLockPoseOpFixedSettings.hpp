@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x68
 			namespace FootLockPoseOpFixedSettings /**/ {
-				constexpr std::ptrdiff_t m_footInfo = 0x0; // GlobalTypes::CUtlVector< animgraphlib::FootFixedData_t > m_footInfo; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hipDampingSettings = 0x18; // animgraphlib::CAnimInputDamping m_hipDampingSettings; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_footInfo = 0x0; // GlobalTypes::CUtlVector<animgraphlib::FootFixedData_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hipDampingSettings = 0x18; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_nHipBoneIndex = 0x30; // int32_t m_nHipBoneIndex; |  0x30 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ikSolverType = 0x34; // animgraphlib::IKSolverType m_ikSolverType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_ikSolverType = 0x34; // animgraphlib::IKSolverType  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bApplyTilt = 0x38; // bool m_bApplyTilt; |  0x38 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bApplyHipDrop = 0x39; // bool m_bApplyHipDrop; |  0x39 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAlwaysUseFallbackHinge = 0x3a; // bool m_bAlwaysUseFallbackHinge; |  0x3a | Schema_Builtin | Size: 0x1

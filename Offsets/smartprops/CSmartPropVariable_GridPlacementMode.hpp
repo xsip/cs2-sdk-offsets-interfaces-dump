@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x40
 			namespace CSmartPropVariable_GridPlacementMode /*: public CS2::smartprops::CSmartPropVariable*/ {
-				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // smartprops::SmartPropGridPlacementMode_t m_DefaultValue; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // smartprops::SmartPropGridPlacementMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

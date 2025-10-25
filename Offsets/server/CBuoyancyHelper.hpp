@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x118
 			namespace CBuoyancyHelper /**/ {
-				constexpr std::ptrdiff_t m_nFluidType = 0x18; // GlobalTypes::CUtlStringToken m_nFluidType; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nFluidType = 0x18; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flFluidDensity = 0x1c; // float32 m_flFluidDensity; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNeutrallyBuoyantGravity = 0x20; // float32 m_flNeutrallyBuoyantGravity; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNeutrallyBuoyantLinearDamping = 0x24; // float32 m_flNeutrallyBuoyantLinearDamping; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNeutrallyBuoyantAngularDamping = 0x28; // float32 m_flNeutrallyBuoyantAngularDamping; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bNeutrallyBuoyant = 0x2c; // bool m_bNeutrallyBuoyant; |  0x2c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecFractionOfWheelSubmergedForWheelFriction = 0x30; // GlobalTypes::CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelFriction; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecWheelFrictionScales = 0x48; // GlobalTypes::CUtlVector< float32 > m_vecWheelFrictionScales; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecFractionOfWheelSubmergedForWheelDrag = 0x60; // GlobalTypes::CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelDrag; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecWheelDrag = 0x78; // GlobalTypes::CUtlVector< float32 > m_vecWheelDrag; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecFractionOfWheelSubmergedForWheelFriction = 0x30; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecWheelFrictionScales = 0x48; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecFractionOfWheelSubmergedForWheelDrag = 0x60; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecWheelDrag = 0x78; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x8
 			namespace CSimpleSimTimer /**/ {
-				constexpr std::ptrdiff_t m_flNext = 0x0; // entity2::GameTime_t m_flNext; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nWorldGroupId = 0x4; // GlobalTypes::WorldGroupId_t m_nWorldGroupId; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flNext = 0x0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nWorldGroupId = 0x4; // GlobalTypes::WorldGroupId_t  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

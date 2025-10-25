@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x6B0
 			namespace C_Team /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_aPlayerControllers = 0x5f8; // client::C_NetworkUtlVectorBase< client.dll::CHandle< CBasePlayerController > > m_aPlayerControllers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_aPlayers = 0x610; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BasePlayerPawn > > m_aPlayers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_aPlayerControllers = 0x5f8; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_aPlayers = 0x610; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BasePlayerPawn>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_iScore = 0x628; // int32_t m_iScore; |  0x628 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_szTeamname = 0x62c; // char m_szTeamname[129]; |  0x62c | Schema_FixedArray | Size: 0x81
 			}

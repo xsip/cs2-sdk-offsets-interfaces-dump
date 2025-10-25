@@ -16,6 +16,13 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CShatterGlassShardPhysics;
+		class CFuncShatterglass;
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -26,15 +33,15 @@ namespace CS2 {
 			S2_PAD(0x8);
 			uint32_t m_hShardHandle; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< GlobalTypes::Vector2D > m_vecPanelVertices; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector2D> m_vecPanelVertices; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_vecPanelVertices[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector2D m_vLocalPanelSpaceOrigin; // 0x28 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x30 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0x30 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0x30 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CShatterGlassShardPhysics > m_hPhysicsEntity; // 0x38 | Schema_Atomic | Size: 0x4
-			char  m_hPhysicsEntity[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CFuncShatterglass > m_hParentPanel; // 0x3c | Schema_Atomic | Size: 0x4
-			char  m_hParentPanel[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CShatterGlassShardPhysics> m_hPhysicsEntity; // 0x38 | Schema_Atomic | Size: 0x4
+			// char  m_hPhysicsEntity[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CFuncShatterglass> m_hParentPanel; // 0x3c | Schema_Atomic | Size: 0x4
+			// char  m_hParentPanel[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
 			uint32_t m_hParentShard; // 0x40 | Schema_Builtin | Size: 0x4
 			client::ShatterGlassStressType m_ShatterStressType; // 0x44 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);
@@ -60,8 +67,8 @@ namespace CS2 {
 			bool m_bFlaggedForRemoval; // 0x96 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
 			entity2::GameTime_t m_flPhysicsEntitySpawnedAtTime; // 0x98 | Schema_DeclaredClass | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hEntityHittingMe; // 0x9c | Schema_Atomic | Size: 0x4
-			char  m_hEntityHittingMe[0x4]; // 0x9c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntityHittingMe; // 0x9c | Schema_Atomic | Size: 0x4
+			// char  m_hEntityHittingMe[0x4]; // 0x9c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlVector< uint32 > m_vecNeighbors; // 0xa0 | Schema_Atomic | Size: 0x18
 			// char  m_vecNeighbors[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 		};

@@ -13,9 +13,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nSmokeEffectTickBegin = 0x1468; // int32_t m_nSmokeEffectTickBegin; |  0x1468 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bDidSmokeEffect = 0x146c; // bool m_bDidSmokeEffect; |  0x146c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nRandomSeed = 0x1470; // int32_t m_nRandomSeed; |  0x1470 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vSmokeColor = 0x1474; // GlobalTypes::Vector m_vSmokeColor; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1480; // GlobalTypes::Vector m_vSmokeDetonationPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_VoxelFrameData = 0x1490; // GlobalTypes::C_NetworkUtlVectorBase< uint8 > m_VoxelFrameData; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vSmokeColor = 0x1474; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1480; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_VoxelFrameData = 0x1490; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nVoxelFrameDataSize = 0x14a8; // int32_t m_nVoxelFrameDataSize; |  0x14a8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nVoxelUpdate = 0x14ac; // int32_t m_nVoxelUpdate; |  0x14ac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x14b0; // bool m_bSmokeVolumeDataReceived; |  0x14b0 | Schema_Builtin | Size: 0x1

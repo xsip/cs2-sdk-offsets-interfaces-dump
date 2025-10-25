@@ -10,42 +10,42 @@ namespace CS2 {
 		namespace particleslib {
 			// Class size: 0x170
 			namespace CParticleFloatInput /*: public CS2::particleslib::CParticleInput*/ {
-				constexpr std::ptrdiff_t m_nType = 0x10; // particleslib::ParticleFloatType_t m_nType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nMapType = 0x14; // particleslib::ParticleFloatMapType_t m_nMapType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nType = 0x10; // particleslib::ParticleFloatType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nMapType = 0x14; // particleslib::ParticleFloatMapType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flLiteralValue = 0x18; // float32 m_flLiteralValue; |  0x18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_NamedValue = 0x20; // GlobalTypes::CParticleNamedValueRef m_NamedValue; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_NamedValue = 0x20; // GlobalTypes::CParticleNamedValueRef  | Schema_Atomic | Size: 0x40
 				constexpr std::ptrdiff_t m_nControlPoint = 0x60; // int32_t m_nControlPoint; |  0x60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nScalarAttribute = 0x64; // particles::ParticleAttributeIndex_t m_nScalarAttribute; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nVectorAttribute = 0x68; // particles::ParticleAttributeIndex_t m_nVectorAttribute; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nScalarAttribute = 0x64; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nVectorAttribute = 0x68; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nVectorComponent = 0x6c; // int32_t m_nVectorComponent; |  0x6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bReverseOrder = 0x70; // bool m_bReverseOrder; |  0x70 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flRandomMin = 0x74; // float32 m_flRandomMin; |  0x74 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRandomMax = 0x78; // float32 m_flRandomMax; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHasRandomSignFlip = 0x7c; // bool m_bHasRandomSignFlip; |  0x7c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nRandomSeed = 0x80; // int32_t m_nRandomSeed; |  0x80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRandomMode = 0x84; // particleslib::ParticleFloatRandomMode_t m_nRandomMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x90; // GlobalTypes::CUtlString m_strSnapshotSubset; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nRandomMode = 0x84; // particleslib::ParticleFloatRandomMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x90; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flLOD0 = 0x98; // float32 m_flLOD0; |  0x98 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLOD1 = 0x9c; // float32 m_flLOD1; |  0x9c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLOD2 = 0xa0; // float32 m_flLOD2; |  0xa0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLOD3 = 0xa4; // float32 m_flLOD3; |  0xa4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNoiseInputVectorAttribute = 0xa8; // particles::ParticleAttributeIndex_t m_nNoiseInputVectorAttribute; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nNoiseInputVectorAttribute = 0xa8; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseOutputMin = 0xac; // float32 m_flNoiseOutputMin; |  0xac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseOutputMax = 0xb0; // float32 m_flNoiseOutputMax; |  0xb0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseScale = 0xb4; // float32 m_flNoiseScale; |  0xb4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecNoiseOffsetRate = 0xb8; // GlobalTypes::Vector m_vecNoiseOffsetRate; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNoiseOffsetRate = 0xb8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flNoiseOffset = 0xc4; // float32 m_flNoiseOffset; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nNoiseOctaves = 0xc8; // int32_t m_nNoiseOctaves; |  0xc8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNoiseTurbulence = 0xcc; // particleslib::PFNoiseTurbulence_t m_nNoiseTurbulence; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nNoiseType = 0xd0; // particleslib::PFNoiseType_t m_nNoiseType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nNoiseModifier = 0xd4; // particleslib::PFNoiseModifier_t m_nNoiseModifier; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nNoiseTurbulence = 0xcc; // particleslib::PFNoiseTurbulence_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nNoiseType = 0xd0; // particleslib::PFNoiseType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nNoiseModifier = 0xd4; // particleslib::PFNoiseModifier_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseTurbulenceScale = 0xd8; // float32 m_flNoiseTurbulenceScale; |  0xd8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseTurbulenceMix = 0xdc; // float32 m_flNoiseTurbulenceMix; |  0xdc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseImgPreviewScale = 0xe0; // float32 m_flNoiseImgPreviewScale; |  0xe0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bNoiseImgPreviewLive = 0xe4; // bool m_bNoiseImgPreviewLive; |  0xe4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flNoCameraFallback = 0xf0; // float32 m_flNoCameraFallback; |  0xf0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseBoundsCenter = 0xf4; // bool m_bUseBoundsCenter; |  0xf4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nInputMode = 0xf8; // particleslib::ParticleFloatInputMode_t m_nInputMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nInputMode = 0xf8; // particleslib::ParticleFloatInputMode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flMultFactor = 0xfc; // float32 m_flMultFactor; |  0xfc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInput0 = 0x100; // float32 m_flInput0; |  0x100 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInput1 = 0x104; // float32 m_flInput1; |  0x104 | Schema_Builtin | Size: 0x4
@@ -55,10 +55,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flNotchedRangeMax = 0x114; // float32 m_flNotchedRangeMax; |  0x114 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNotchedOutputOutside = 0x118; // float32 m_flNotchedOutputOutside; |  0x118 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNotchedOutputInside = 0x11c; // float32 m_flNotchedOutputInside; |  0x11c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRoundType = 0x120; // particleslib::ParticleFloatRoundType_t m_nRoundType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nBiasType = 0x124; // particleslib::ParticleFloatBiasType_t m_nBiasType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nRoundType = 0x120; // particleslib::ParticleFloatRoundType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nBiasType = 0x124; // particleslib::ParticleFloatBiasType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flBiasParameter = 0x128; // float32 m_flBiasParameter; |  0x128 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Curve = 0x130; // GlobalTypes::CPiecewiseCurve m_Curve; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Curve = 0x130; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

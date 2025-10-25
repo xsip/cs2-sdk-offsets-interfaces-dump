@@ -39,7 +39,7 @@ namespace CS2 {
 			bool m_bIsGesture; // 0x1c | Schema_Builtin | Size: 0x1
 			bool m_bShouldRemove; // 0x1d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x26);
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hTarget; // 0x44 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hTarget; // 0x44 | Schema_Atomic | Size: 0x4
 			// char  m_hTarget[0x4]; // 0x44 | Schema_Atomic | Size: 0x4
 			client::SceneEventId_t m_nSceneEventId; // 0x48 | Schema_DeclaredClass | Size: 0x4
 			bool m_bClientSide; // 0x4c | Schema_Builtin | Size: 0x1

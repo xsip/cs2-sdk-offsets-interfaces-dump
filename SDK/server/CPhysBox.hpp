@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBasePlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -39,8 +44,8 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnMotionEnabled; // 0x930 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnPlayerUse; // 0x958 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnStartTouch; // 0x980 | Schema_DeclaredClass | Size: 0x28
-			// server::CHandle< server::CBasePlayerPawn > m_hCarryingPlayer; // 0x9a8 | Schema_Atomic | Size: 0x4
-			char  m_hCarryingPlayer[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hCarryingPlayer; // 0x9a8 | Schema_Atomic | Size: 0x4
+			// char  m_hCarryingPlayer[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPhysBox, m_damageType) == 0x8B0, "m_damageType in CPhysBox should be at offset 0x8B0");

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace scenesystem {
 			// Class size: 0x18
 			namespace CSSDSMsg_ViewRender /**/ {
-				constexpr std::ptrdiff_t m_viewId = 0x0; // scenesystem::SceneViewId_t m_viewId; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_ViewName = 0x10; // GlobalTypes::CUtlString m_ViewName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_viewId = 0x0; // scenesystem::SceneViewId_t  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_ViewName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

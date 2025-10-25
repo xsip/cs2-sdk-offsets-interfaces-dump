@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSndSosOpvar : public CS2::server::CBaseTrigger {
 		public:
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTouchingPlayers; // 0x9a8 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTouchingPlayers; // 0x9a8 | Schema_Atomic | Size: 0x18
 			char  m_hTouchingPlayers[0x18]; // 0x9a8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector m_flPosition; // 0x9c0 | Schema_Atomic | Size: 0xc
 			float32 m_flCenterSize; // 0x9cc | Schema_Builtin | Size: 0x4

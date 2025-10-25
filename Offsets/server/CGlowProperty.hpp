@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x58
 			namespace CGlowProperty /**/ {
-				constexpr std::ptrdiff_t m_fGlowColor = 0x8; // GlobalTypes::Vector m_fGlowColor; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_fGlowColor = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_iGlowType = 0x30; // int32_t m_iGlowType; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iGlowTeam = 0x34; // int32_t m_iGlowTeam; |  0x34 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGlowRange = 0x38; // int32_t m_nGlowRange; |  0x38 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGlowRangeMin = 0x3c; // int32_t m_nGlowRangeMin; |  0x3c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_glowColorOverride = 0x40; // GlobalTypes::Color m_glowColorOverride; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_glowColorOverride = 0x40; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bFlashing = 0x44; // bool m_bFlashing; |  0x44 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flGlowTime = 0x48; // float32 m_flGlowTime; |  0x48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flGlowStartTime = 0x4c; // float32 m_flGlowStartTime; |  0x4c | Schema_Builtin | Size: 0x4

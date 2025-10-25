@@ -22,7 +22,7 @@ namespace CS2 {
 		class CCSPlayer_BuyServices : public CS2::client::CPlayerPawnComponent {
 		public:
 			S2_PAD(0x88);
-			// server::CUtlVectorEmbeddedNetworkVar< server::SellbackPurchaseEntry_t > m_vecSellbackPurchaseEntries; // 0xc8 | Schema_Atomic | Size: 0x88
+			// server::CUtlVectorEmbeddedNetworkVar<server::SellbackPurchaseEntry_t> m_vecSellbackPurchaseEntries; // 0xc8 | Schema_Atomic | Size: 0x88
 			char  m_vecSellbackPurchaseEntries[0x88]; // 0xc8 | Schema_Atomic | Size: 0x88
 		};
 		static_assert(offsetof(CS2::server::CCSPlayer_BuyServices, m_vecSellbackPurchaseEntries) == 0xC8, "m_vecSellbackPurchaseEntries in CCSPlayer_BuyServices should be at offset 0xC8");

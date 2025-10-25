@@ -48,7 +48,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionRendererFloatInput m_flCenterYOffset; // 0xeb0 | Schema_DeclaredClass | Size: 0x170
 			float32 m_flBumpStrength; // 0x1020 | Schema_Builtin | Size: 0x4
 			particles::ParticleSequenceCropOverride_t m_nCropTextureOverride; // 0x1024 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CUtlLeanVector< particles::TextureGroup_t > m_vecTexturesInput; // 0x1028 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<particles::TextureGroup_t> m_vecTexturesInput; // 0x1028 | Schema_Atomic | Size: 0x10
 			char  m_vecTexturesInput[0x10]; // 0x1028 | Schema_Atomic | Size: 0x10
 			float32 m_flAnimationRate; // 0x1038 | Schema_Builtin | Size: 0x4
 			particles::AnimationType_t m_nAnimationType; // 0x103c | Schema_DeclaredEnum | Size: 0x4

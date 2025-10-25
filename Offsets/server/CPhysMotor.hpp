@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x558
 			namespace CPhysMotor /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_nameAttach = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_nameAttach; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAnchor = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_nameAnchor; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hAttachedObject = 0x500; // server::CHandle< server::CBaseEntity > m_hAttachedObject; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hAnchorObject = 0x504; // server::CHandle< server::CBaseEntity > m_hAnchorObject; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nameAttach = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAnchor = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hAttachedObject = 0x500; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hAnchorObject = 0x504; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_spinUp = 0x508; // float32 m_spinUp; |  0x508 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_spinDown = 0x50c; // float32 m_spinDown; |  0x50c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMotorFriction = 0x510; // float32 m_flMotorFriction; |  0x510 | Schema_Builtin | Size: 0x4
@@ -22,7 +22,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flTorqueScale = 0x51c; // float32 m_flTorqueScale; |  0x51c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTargetSpeed = 0x520; // float32 m_flTargetSpeed; |  0x520 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSpeedWhenSpinUpOrSpinDownStarted = 0x524; // float32 m_flSpeedWhenSpinUpOrSpinDownStarted; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_motor = 0x538; // server::CMotorController m_motor; |  Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_motor = 0x538; // server::CMotorController  | Schema_DeclaredClass | Size: 0x20
 			}
 		}
 	}

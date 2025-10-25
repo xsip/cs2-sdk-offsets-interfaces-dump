@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x50
 			namespace Parameterization_t /**/ {
-				constexpr std::ptrdiff_t m_blendRanges = 0x0; // GlobalTypes::BlendRange_t, 5 > m_blendRanges; |  Schema_Atomic | Size: 0x48
-				constexpr std::ptrdiff_t m_parameterRange = 0x48; // GlobalTypes::Range_t m_parameterRange; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_blendRanges = 0x0; // GlobalTypes::CUtlLeanVectorFixedGrowable<animlib::CNmParameterizedBlendNode::BlendRange_t>  | Schema_Atomic | Size: 0x48
+				constexpr std::ptrdiff_t m_parameterRange = 0x48; // GlobalTypes::Range_t  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

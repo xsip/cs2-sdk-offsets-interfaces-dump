@@ -29,11 +29,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nCurrentPhase = 0xe40; // int32_t m_nCurrentPhase; |  0xe40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPhaseStartTick = 0xe44; // int32_t m_nPhaseStartTick; |  0xe44 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPhaseDurationTicks = 0xe48; // int32_t m_nPhaseDurationTicks; |  0xe48 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnMapVetoed = 0xe50; // GlobalTypes::CEntityOutputTemplate< GlobalTypes::CUtlSymbolLarge > m_OnMapVetoed; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMapPicked = 0xe78; // GlobalTypes::CEntityOutputTemplate< GlobalTypes::CUtlSymbolLarge > m_OnMapPicked; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnSidesPicked = 0xea0; // GlobalTypes::CEntityOutputTemplate< int32 > m_OnSidesPicked; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnNewPhaseStarted = 0xec8; // GlobalTypes::CEntityOutputTemplate< int32 > m_OnNewPhaseStarted; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnLevelTransition = 0xef0; // GlobalTypes::CEntityOutputTemplate< int32 > m_OnLevelTransition; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnMapVetoed = 0xe50; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnMapPicked = 0xe78; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnSidesPicked = 0xea0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnNewPhaseStarted = 0xec8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnLevelTransition = 0xef0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
 			}
 		}
 	}

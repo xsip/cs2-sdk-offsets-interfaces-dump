@@ -21,7 +21,7 @@ namespace CS2 {
 		class SecondarySkeleton_t  {
 		public:
 			GlobalTypes::CGlobalSymbol m_attachToBoneID; // 0x0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmSkeleton > m_skeleton; // 0x8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton> m_skeleton; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_skeleton[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::animlib::SecondarySkeleton_t, m_attachToBoneID) == 0x0, "m_attachToBoneID in CNmSkeleton::SecondarySkeleton_t should be at offset 0x0");

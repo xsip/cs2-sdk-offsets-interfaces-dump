@@ -16,8 +16,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nFirstSourcePoint = 0x1dc; // int32_t m_nFirstSourcePoint; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bReverse = 0x1e0; // bool m_bReverse; |  0x1e0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSetOrientation = 0x1e1; // bool m_bSetOrientation; |  0x1e1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOrientationMode = 0x1e4; // particles::ParticleOrientationSetMode_t m_nOrientationMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetParent = 0x1e8; // particles::ParticleParentSetMode_t m_nSetParent; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nOrientationMode = 0x1e4; // particles::ParticleOrientationSetMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetParent = 0x1e8; // particles::ParticleParentSetMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

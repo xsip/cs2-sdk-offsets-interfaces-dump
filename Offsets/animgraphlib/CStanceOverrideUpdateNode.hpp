@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xA0
 			namespace CStanceOverrideUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_footStanceInfo = 0x70; // GlobalTypes::CUtlVector< animgraphlib::StanceInfo_t > m_footStanceInfo; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pStanceSourceNode = 0x88; // animgraphlib::CAnimUpdateNodeRef m_pStanceSourceNode; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_hParameter = 0x98; // animgraphlib::CAnimParamHandle m_hParameter; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_eMode = 0x9c; // animgraphlib::StanceOverrideMode m_eMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_footStanceInfo = 0x70; // GlobalTypes::CUtlVector<animgraphlib::StanceInfo_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pStanceSourceNode = 0x88; // animgraphlib::CAnimUpdateNodeRef  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_hParameter = 0x98; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_eMode = 0x9c; // animgraphlib::StanceOverrideMode  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -22,7 +22,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_unVerticalAlign = 0x1080; // uint32_t m_unVerticalAlign; |  0x1080 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unOrientation = 0x1084; // uint32_t m_unOrientation; |  0x1084 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAllowInteractionFromAllSceneWorlds = 0x1088; // bool m_bAllowInteractionFromAllSceneWorlds; |  0x1088 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecCSSClasses = 0x1090; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCSSClasses = 0x1090; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

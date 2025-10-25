@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x880
 			namespace CGamePlayerZone /*: public CS2::server::CRuleBrushEntity*/ {
-				constexpr std::ptrdiff_t m_OnPlayerInZone = 0x7e0; // entity2::CEntityIOOutput m_OnPlayerInZone; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPlayerOutZone = 0x808; // entity2::CEntityIOOutput m_OnPlayerOutZone; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_PlayersInCount = 0x830; // GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersInCount; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_PlayersOutCount = 0x858; // GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersOutCount; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPlayerInZone = 0x7e0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPlayerOutZone = 0x808; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_PlayersInCount = 0x830; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_PlayersOutCount = 0x858; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
 			}
 		}
 	}

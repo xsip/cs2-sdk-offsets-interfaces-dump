@@ -21,7 +21,7 @@ namespace CS2 {
 		class CAnimTagManagerUpdater  {
 		public:
 			S2_PAD(0x38);
-			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimTagBase > > m_tags; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimTagBase>> m_tags; // 0x38 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28); // End padding
 		};

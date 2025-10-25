@@ -30,7 +30,7 @@ namespace CS2 {
 			S2_PAD(0x1);
 			GlobalTypes::Vector m_closedPosition; // 0x1438 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_closedAngles; // 0x1444 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle< client::C_BasePropDoor > m_hMaster; // 0x1450 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BasePropDoor> m_hMaster; // 0x1450 | Schema_Atomic | Size: 0x4
 			// char  m_hMaster[0x4]; // 0x1450 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vWhereToSetLightingOrigin; // 0x1454 | Schema_Atomic | Size: 0xc
 		};

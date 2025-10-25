@@ -10,20 +10,20 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x180
 			namespace CGameSceneNode /**/ {
-				constexpr std::ptrdiff_t m_nodeToWorld = 0x10; // GlobalTypes::CTransformWS m_nodeToWorld; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_pOwner = 0x30; // entity2::CEntityInstance* m_pOwner; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pParent = 0x38; // client::CGameSceneNode* m_pParent; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pChild = 0x40; // client::CGameSceneNode* m_pChild; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pNextSibling = 0x48; // client::CGameSceneNode* m_pNextSibling; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_hParent = 0x78; // client::CGameSceneNodeHandle m_hParent; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_vecOrigin = 0x88; // client::CNetworkOriginCellCoordQuantizedVector m_vecOrigin; |  Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_angRotation = 0xc0; // GlobalTypes::QAngle m_angRotation; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nodeToWorld = 0x10; // GlobalTypes::CTransformWS  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_pOwner = 0x30; // entity2::CEntityInstance**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pParent = 0x38; // client::CGameSceneNode**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pChild = 0x40; // client::CGameSceneNode**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNextSibling = 0x48; // client::CGameSceneNode**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_hParent = 0x78; // client::CGameSceneNodeHandle  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_vecOrigin = 0x88; // client::CNetworkOriginCellCoordQuantizedVector  | Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_angRotation = 0xc0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flScale = 0xcc; // float32 m_flScale; |  0xcc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAbsOrigin = 0xd0; // GlobalTypes::VectorWS m_vecAbsOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angAbsRotation = 0xdc; // GlobalTypes::QAngle m_angAbsRotation; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecAbsOrigin = 0xd0; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angAbsRotation = 0xdc; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flAbsScale = 0xe8; // float32 m_flAbsScale; |  0xe8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecWrappedLocalOrigin = 0xec; // GlobalTypes::Vector m_vecWrappedLocalOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angWrappedLocalRotation = 0xf8; // GlobalTypes::QAngle m_angWrappedLocalRotation; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecWrappedLocalOrigin = 0xec; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angWrappedLocalRotation = 0xf8; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flWrappedScale = 0x104; // float32 m_flWrappedScale; |  0x104 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nParentAttachmentOrBone = 0x108; // int16_t m_nParentAttachmentOrBone; |  0x108 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_bDebugAbsOriginChanges = 0x10a; // bool m_bDebugAbsOriginChanges; |  0x10a | Schema_Builtin | Size: 0x1
@@ -32,11 +32,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nHierarchicalDepth = 0x10f; // uint8_t m_nHierarchicalDepth; |  0x10f | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nHierarchyType = 0x110; // uint8_t m_nHierarchyType; |  0x110 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount = 0x111; // uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; |  0x111 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_name = 0x114; // GlobalTypes::CUtlStringToken m_name; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hierarchyAttachName = 0x158; // GlobalTypes::CUtlStringToken m_hierarchyAttachName; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x114; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hierarchyAttachName = 0x158; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flZOffset = 0x15c; // float32 m_flZOffset; |  0x15c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flClientLocalScale = 0x160; // float32 m_flClientLocalScale; |  0x160 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vRenderOrigin = 0x164; // GlobalTypes::Vector m_vRenderOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vRenderOrigin = 0x164; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

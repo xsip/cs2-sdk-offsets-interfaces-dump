@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace mathlib_extended {
 			// Class size: 0x20
 			namespace FunctionInfo_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x8; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameToken = 0x10; // GlobalTypes::CUtlStringToken m_nameToken; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameToken = 0x10; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nParamCount = 0x14; // int32_t m_nParamCount; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nIndex = 0x18; // mathlib_extended::FuseFunctionIndex_t m_nIndex; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_nIndex = 0x18; // mathlib_extended::FuseFunctionIndex_t  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bIsPure = 0x1a; // bool m_bIsPure; |  0x1a | Schema_Builtin | Size: 0x1
 			}
 		}

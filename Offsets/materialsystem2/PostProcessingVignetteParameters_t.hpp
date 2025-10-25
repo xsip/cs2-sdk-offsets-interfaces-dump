@@ -11,11 +11,11 @@ namespace CS2 {
 			// Class size: 0x24
 			namespace PostProcessingVignetteParameters_t /**/ {
 				constexpr std::ptrdiff_t m_flVignetteStrength = 0x0; // float32 m_flVignetteStrength; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vCenter = 0x4; // GlobalTypes::Vector2D m_vCenter; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vCenter = 0x4; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flRadius = 0xc; // float32 m_flRadius; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRoundness = 0x10; // float32 m_flRoundness; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFeather = 0x14; // float32 m_flFeather; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vColorTint = 0x18; // GlobalTypes::Vector m_vColorTint; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vColorTint = 0x18; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

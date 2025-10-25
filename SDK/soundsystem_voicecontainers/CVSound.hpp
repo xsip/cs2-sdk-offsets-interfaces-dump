@@ -33,7 +33,7 @@ namespace CS2 {
 			int32_t m_nLoopStart; // 0xc | Schema_Builtin | Size: 0x4
 			uint32_t m_nSampleCount; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flDuration; // 0x14 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioSentence > m_Sentences; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CAudioSentence> m_Sentences; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_Sentences[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			uint32_t m_nStreamingSize; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);

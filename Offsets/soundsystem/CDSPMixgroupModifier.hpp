@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0x20
 			namespace CDSPMixgroupModifier /**/ {
-				constexpr std::ptrdiff_t m_mixgroup = 0x0; // GlobalTypes::CUtlString m_mixgroup; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_mixgroup = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flModifier = 0x8; // float32 m_flModifier; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flModifierMin = 0xc; // float32 m_flModifierMin; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSourceModifier = 0x10; // float32 m_flSourceModifier; |  0x10 | Schema_Builtin | Size: 0x4

@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flTargetValue = 0x14; // float32 m_flTargetValue; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAttack = 0x18; // float32 m_flAttack; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDecay = 0x1c; // float32 m_flDecay; |  0x1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_resultVarName = 0x20; // GlobalTypes::CUtlString m_resultVarName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_resultVarName = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bSaveToGroup = 0x28; // bool m_bSaveToGroup; |  0x28 | Schema_Builtin | Size: 0x1
 			}
 		}

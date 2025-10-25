@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x30
 			namespace CCopyRecipientFilter /**/ {
 				constexpr std::ptrdiff_t m_Flags = 0x8; // int32_t m_Flags; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Recipients = 0x10; // GlobalTypes::CUtlVector< GlobalTypes::CPlayerSlot > m_Recipients; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Recipients = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::CPlayerSlot>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

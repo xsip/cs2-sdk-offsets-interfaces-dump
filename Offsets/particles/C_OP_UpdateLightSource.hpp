@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1E8
 			namespace C_OP_UpdateLightSource /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_vColorTint = 0x1d0; // GlobalTypes::Color m_vColorTint; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vColorTint = 0x1d0; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flBrightnessScale = 0x1d4; // float32 m_flBrightnessScale; |  0x1d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadiusScale = 0x1d8; // float32 m_flRadiusScale; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinimumLightingRadius = 0x1dc; // float32 m_flMinimumLightingRadius; |  0x1dc | Schema_Builtin | Size: 0x4

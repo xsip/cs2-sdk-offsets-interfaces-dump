@@ -24,9 +24,9 @@ namespace CS2 {
 			S2_PAD(0x8);
 			int32_t m_nModelID; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterialBase; // 0x10 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterialBase; // 0x10 | Schema_Atomic | Size: 0x8
 			char  m_hMaterialBase[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterialDamageOverlay; // 0x18 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterialDamageOverlay; // 0x18 | Schema_Atomic | Size: 0x8
 			char  m_hMaterialDamageOverlay[0x8]; // 0x18 | Schema_Atomic | Size: 0x8
 			client::ShardSolid_t m_solid; // 0x20 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);
@@ -34,9 +34,9 @@ namespace CS2 {
 			GlobalTypes::Vector2D m_vecStressPositionA; // 0x2c | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector2D m_vecStressPositionB; // 0x34 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x4);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::Vector2D > m_vecPanelVertices; // 0x40 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector2D> m_vecPanelVertices; // 0x40 | Schema_Atomic | Size: 0x18
 			char  m_vecPanelVertices[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::Vector4D > m_vInitialPanelVertices; // 0x58 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector4D> m_vInitialPanelVertices; // 0x58 | Schema_Atomic | Size: 0x18
 			char  m_vInitialPanelVertices[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 			float32 m_flGlassHalfThickness; // 0x70 | Schema_Builtin | Size: 0x4
 			bool m_bHasParent; // 0x74 | Schema_Builtin | Size: 0x1

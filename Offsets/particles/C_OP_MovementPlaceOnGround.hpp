@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x400
 			namespace C_OP_MovementPlaceOnGround /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flOffset = 0x1d0; // particleslib::CPerParticleFloatInput m_flOffset; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOffset = 0x1d0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flMaxTraceLength = 0x340; // float32 m_flMaxTraceLength; |  0x340 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTolerance = 0x344; // float32 m_flTolerance; |  0x344 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTraceOffset = 0x348; // float32 m_flTraceOffset; |  0x348 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLerpRate = 0x34c; // float32 m_flLerpRate; |  0x34c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_CollisionGroupName = 0x350; // char m_CollisionGroupName[128]; |  0x350 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nTraceSet = 0x3d0; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nTraceSet = 0x3d0; // particles::ParticleTraceSet_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nRefCP1 = 0x3d4; // int32_t m_nRefCP1; |  0x3d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nRefCP2 = 0x3d8; // int32_t m_nRefCP2; |  0x3d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLerpCP = 0x3dc; // int32_t m_nLerpCP; |  0x3dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTraceMissBehavior = 0x3e8; // particles::ParticleTraceMissBehavior_t m_nTraceMissBehavior; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nTraceMissBehavior = 0x3e8; // particles::ParticleTraceMissBehavior_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bIncludeShotHull = 0x3ec; // bool m_bIncludeShotHull; |  0x3ec | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIncludeWater = 0x3ed; // bool m_bIncludeWater; |  0x3ed | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSetNormal = 0x3f0; // bool m_bSetNormal; |  0x3f0 | Schema_Builtin | Size: 0x1

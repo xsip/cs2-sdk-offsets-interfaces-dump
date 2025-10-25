@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x48
 			namespace CSmartPropVariable_Angles /*: public CS2::smartprops::CSmartPropVariable*/ {
-				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // GlobalTypes::QAngle m_DefaultValue; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

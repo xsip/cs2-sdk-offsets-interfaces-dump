@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x20
 			namespace CNmIKBody /**/ {
 				constexpr std::ptrdiff_t m_flMass = 0x0; // float32 m_flMass; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLocalMassCenter = 0x4; // GlobalTypes::Vector m_vLocalMassCenter; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vRadius = 0x10; // GlobalTypes::Vector m_vRadius; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLocalMassCenter = 0x4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vRadius = 0x10; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flResistance = 0x1c; // float32 m_flResistance; |  0x1c | Schema_Builtin | Size: 0x4
 			}
 		}

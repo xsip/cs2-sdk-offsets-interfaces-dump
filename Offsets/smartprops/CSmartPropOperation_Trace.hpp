@@ -10,18 +10,18 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x350
 			namespace CSmartPropOperation_Trace /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_Origin = 0x50; // GlobalTypes::CSmartPropAttributeVector m_Origin; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_OriginSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace m_OriginSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_flOriginOffset = 0xd0; // GlobalTypes::CSmartPropAttributeFloat m_flOriginOffset; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flSurfaceUpInfluence = 0x110; // GlobalTypes::CSmartPropAttributeFloat m_flSurfaceUpInfluence; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nNoHitResult = 0x150; // smartprops::CSmartPropAttributeTraceNoHit m_nNoHitResult; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bIgnoreToolMaterials = 0x190; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreToolMaterials; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bIgnoreSky = 0x1d0; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreSky; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bIgnoreNoDraw = 0x210; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreNoDraw; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bIgnoreTranslucent = 0x250; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreTranslucent; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bIgnoreModels = 0x290; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreModels; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bIgnoreEntities = 0x2d0; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreEntities; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bIgnoreCables = 0x310; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreCables; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Origin = 0x50; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_OriginSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_flOriginOffset = 0xd0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flSurfaceUpInfluence = 0x110; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nNoHitResult = 0x150; // smartprops::CSmartPropAttributeTraceNoHit  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreToolMaterials = 0x190; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreSky = 0x1d0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreNoDraw = 0x210; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreTranslucent = 0x250; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreModels = 0x290; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreEntities = 0x2d0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreCables = 0x310; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

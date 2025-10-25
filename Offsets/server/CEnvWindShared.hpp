@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x150
 			namespace CEnvWindShared /**/ {
-				constexpr std::ptrdiff_t m_flStartTime = 0x8; // entity2::GameTime_t m_flStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartTime = 0x8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_iWindSeed = 0xc; // uint32_t m_iWindSeed; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iMinWind = 0x10; // uint16_t m_iMinWind; |  0x10 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_iMaxWind = 0x12; // uint16_t m_iMaxWind; |  0x12 | Schema_Builtin | Size: 0x2
@@ -23,10 +23,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iGustDirChange = 0x28; // uint16_t m_iGustDirChange; |  0x28 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_iInitialWindDir = 0x2a; // uint16_t m_iInitialWindDir; |  0x2a | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_flInitialWindSpeed = 0x2c; // float32 m_flInitialWindSpeed; |  0x2c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_location = 0x30; // GlobalTypes::Vector m_location; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_OnGustStart = 0x40; // entity2::CEntityIOOutput m_OnGustStart; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnGustEnd = 0x68; // entity2::CEntityIOOutput m_OnGustEnd; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_hEntOwner = 0x90; // server::CHandle< server::CBaseEntity > m_hEntOwner; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_location = 0x30; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_OnGustStart = 0x40; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnGustEnd = 0x68; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_hEntOwner = 0x90; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

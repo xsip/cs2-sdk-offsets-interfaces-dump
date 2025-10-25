@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x80
 			namespace CSingleFrameUpdateNode /*: public CS2::animgraphlib::CLeafUpdateNode*/ {
-				constexpr std::ptrdiff_t m_actions = 0x58; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimActionUpdater > > m_actions; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hPoseCacheHandle = 0x70; // animgraphlib::CPoseHandle m_hPoseCacheHandle; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_hSequence = 0x74; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_actions = 0x58; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimActionUpdater>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hPoseCacheHandle = 0x70; // animgraphlib::CPoseHandle  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hSequence = 0x74; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flCycle = 0x78; // float32 m_flCycle; |  0x78 | Schema_Builtin | Size: 0x4
 			}
 		}

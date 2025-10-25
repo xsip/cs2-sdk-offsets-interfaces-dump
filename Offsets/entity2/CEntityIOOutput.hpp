@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace entity2 {
 			// Class size: 0x28
 			namespace CEntityIOOutput /**/ {
-				constexpr std::ptrdiff_t m_Value = 0x18; // GlobalTypes::CVariantBase< entity2::CVariantDefaultAllocator > m_Value; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Value = 0x18; // GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator>  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

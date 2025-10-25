@@ -54,7 +54,7 @@ namespace CS2 {
 			bool m_bInHostageResetZone; // 0xfe8 | Schema_Builtin | Size: 0x1
 			bool m_bInBuyZone; // 0xfe9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_TouchingBuyZones; // 0xff0 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_TouchingBuyZones; // 0xff0 | Schema_Atomic | Size: 0x18
 			char  m_TouchingBuyZones[0x18]; // 0xff0 | Schema_Atomic | Size: 0x18
 			bool m_bWasInBuyZone; // 0x1008 | Schema_Builtin | Size: 0x1
 			bool m_bInHostageRescueZone; // 0x1009 | Schema_Builtin | Size: 0x1
@@ -73,7 +73,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_aimPunchAngleVel; // 0x1034 | Schema_Atomic | Size: 0xc
 			entity2::GameTick_t m_aimPunchTickBase; // 0x1040 | Schema_DeclaredClass | Size: 0x4
 			float32 m_aimPunchTickFraction; // 0x1044 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< GlobalTypes::QAngle > m_aimPunchCache; // 0x1048 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::QAngle> m_aimPunchCache; // 0x1048 | Schema_Atomic | Size: 0x18
 			// char  m_aimPunchCache[0x18]; // 0x1048 | Schema_Atomic | Size: 0x18
 			bool m_bIsBuyMenuOpen; // 0x1060 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6a7);
@@ -178,7 +178,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecThrowPositionHistory[2]; // 0x1bb4 | Schema_FixedArray | Size: 0x18
 			GlobalTypes::Vector m_vecVelocityHistory[2]; // 0x1bcc | Schema_FixedArray | Size: 0x18
 			S2_PAD(0x4);
-			// server::CUtlVectorEmbeddedNetworkVar< server::PredictedDamageTag_t > m_PredictedDamageTags; // 0x1be8 | Schema_Atomic | Size: 0x68
+			// server::CUtlVectorEmbeddedNetworkVar<server::PredictedDamageTag_t> m_PredictedDamageTags; // 0x1be8 | Schema_Atomic | Size: 0x68
 			char  m_PredictedDamageTags[0x68]; // 0x1be8 | Schema_Atomic | Size: 0x68
 			int32_t m_nHighestAppliedDamageTagTick; // 0x1c50 | Schema_Builtin | Size: 0x4
 			bool m_bCommittingSuicideOnTeamChange; // 0x1c54 | Schema_Builtin | Size: 0x1

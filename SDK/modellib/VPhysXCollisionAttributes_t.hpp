@@ -29,11 +29,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint32 > m_InteractExclude; // 0x38 | Schema_Atomic | Size: 0x18
 			// char  m_InteractExclude[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_CollisionGroupString; // 0x50 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_InteractAsStrings; // 0x58 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_InteractAsStrings; // 0x58 | Schema_Atomic | Size: 0x18
 			// char  m_InteractAsStrings[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_InteractWithStrings; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_InteractWithStrings; // 0x70 | Schema_Atomic | Size: 0x18
 			// char  m_InteractWithStrings[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_InteractExcludeStrings; // 0x88 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_InteractExcludeStrings; // 0x88 | Schema_Atomic | Size: 0x18
 			// char  m_InteractExcludeStrings[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::VPhysXCollisionAttributes_t, m_CollisionGroup) == 0x0, "m_CollisionGroup in VPhysXCollisionAttributes_t should be at offset 0x0");

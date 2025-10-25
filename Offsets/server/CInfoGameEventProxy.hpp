@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x500
 			namespace CInfoGameEventProxy /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_iszEventName = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszEventName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEventName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flRange = 0x4f8; // float32 m_flRange; |  0x4f8 | Schema_Builtin | Size: 0x4
 			}
 		}

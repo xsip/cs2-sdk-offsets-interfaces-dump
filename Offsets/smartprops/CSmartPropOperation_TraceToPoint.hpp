@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x450
 			namespace CSmartPropOperation_TraceToPoint /*: public CS2::smartprops::CSmartPropOperation_Trace*/ {
-				constexpr std::ptrdiff_t m_TargetPoint = 0x350; // GlobalTypes::CSmartPropAttributeVector m_TargetPoint; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_TargetPointSpace = 0x390; // smartprops::CSmartPropAttributeCoordinateSpace m_TargetPointSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bTraceAway = 0x3d0; // GlobalTypes::CSmartPropAttributeBool m_bTraceAway; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flTraceLength = 0x410; // GlobalTypes::CSmartPropAttributeFloat m_flTraceLength; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_TargetPoint = 0x350; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_TargetPointSpace = 0x390; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bTraceAway = 0x3d0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flTraceLength = 0x410; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

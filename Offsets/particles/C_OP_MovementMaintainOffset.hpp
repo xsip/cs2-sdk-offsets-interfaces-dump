@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1E8
 			namespace C_OP_MovementMaintainOffset /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_vecOffset = 0x1d0; // GlobalTypes::Vector m_vecOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffset = 0x1d0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nCP = 0x1dc; // int32_t m_nCP; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bRadiusScale = 0x1e0; // bool m_bRadiusScale; |  0x1e0 | Schema_Builtin | Size: 0x1
 			}

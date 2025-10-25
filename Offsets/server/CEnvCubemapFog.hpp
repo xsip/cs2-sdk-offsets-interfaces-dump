@@ -23,9 +23,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bStartDisabled = 0x515; // bool m_bStartDisabled; |  0x515 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flFogMaxOpacity = 0x518; // float32 m_flFogMaxOpacity; |  0x518 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCubemapSourceType = 0x51c; // int32_t m_nCubemapSourceType; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSkyMaterial = 0x520; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSkyEntity = 0x528; // GlobalTypes::CUtlSymbolLarge m_iszSkyEntity; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFogCubemapTexture = 0x530; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hFogCubemapTexture; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSkyMaterial = 0x520; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSkyEntity = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFogCubemapTexture = 0x530; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bHasHeightFogEnd = 0x538; // bool m_bHasHeightFogEnd; |  0x538 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bFirstTime = 0x539; // bool m_bFirstTime; |  0x539 | Schema_Builtin | Size: 0x1
 			}

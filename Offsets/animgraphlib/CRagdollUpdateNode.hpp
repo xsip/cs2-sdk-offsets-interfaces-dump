@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x78
 			namespace CRagdollUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
 				constexpr std::ptrdiff_t m_nWeightListIndex = 0x70; // int32_t m_nWeightListIndex; |  0x70 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_poseControlMethod = 0x74; // animgraphlib::RagdollPoseControl m_poseControlMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_poseControlMethod = 0x74; // animgraphlib::RagdollPoseControl  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

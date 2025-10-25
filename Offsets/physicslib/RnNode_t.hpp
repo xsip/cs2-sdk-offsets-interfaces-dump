@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x20
 			namespace RnNode_t /**/ {
-				constexpr std::ptrdiff_t m_vMin = 0x0; // GlobalTypes::Vector m_vMin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMin = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nChildren = 0xc; // uint32_t m_nChildren; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vMax = 0x10; // GlobalTypes::Vector m_vMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMax = 0x10; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nTriangleOffset = 0x1c; // uint32_t m_nTriangleOffset; |  0x1c | Schema_Builtin | Size: 0x4
 			}
 		}

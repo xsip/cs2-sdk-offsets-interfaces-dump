@@ -23,7 +23,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_unVerticalAlign = 0x9a8; // uint32_t m_unVerticalAlign; |  0x9a8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unOrientation = 0x9ac; // uint32_t m_unOrientation; |  0x9ac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAllowInteractionFromAllSceneWorlds = 0x9b0; // bool m_bAllowInteractionFromAllSceneWorlds; |  0x9b0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecCSSClasses = 0x9b8; // GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCSSClasses = 0x9b8; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bOpaque = 0x9d0; // bool m_bOpaque; |  0x9d0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bNoDepth = 0x9d1; // bool m_bNoDepth; |  0x9d1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bVisibleWhenParentNoDraw = 0x9d2; // bool m_bVisibleWhenParentNoDraw; |  0x9d2 | Schema_Builtin | Size: 0x1

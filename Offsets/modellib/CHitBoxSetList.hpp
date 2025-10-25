@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x18
 			namespace CHitBoxSetList /**/ {
-				constexpr std::ptrdiff_t m_HitBoxSets = 0x0; // GlobalTypes::CUtlVector< modellib::CHitBoxSet > m_HitBoxSets; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_HitBoxSets = 0x0; // GlobalTypes::CUtlVector<modellib::CHitBoxSet>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

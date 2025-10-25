@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x8
 			namespace FollowAttachmentData /**/ {
 				constexpr std::ptrdiff_t m_boneIndex = 0x0; // int32_t m_boneIndex; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentHandle = 0x4; // modellib::AttachmentHandle_t m_attachmentHandle; |  Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_attachmentHandle = 0x4; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
 			}
 		}
 	}

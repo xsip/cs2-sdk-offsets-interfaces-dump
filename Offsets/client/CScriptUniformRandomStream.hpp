@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xA0
 			namespace CScriptUniformRandomStream /**/ {
-				constexpr std::ptrdiff_t m_hScriptScope = 0x8; // GlobalTypes::HSCRIPT m_hScriptScope; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hScriptScope = 0x8; // GlobalTypes::HSCRIPT  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nInitialSeed = 0x9c; // int32_t m_nInitialSeed; |  0x9c | Schema_Builtin | Size: 0x4
 			}
 		}

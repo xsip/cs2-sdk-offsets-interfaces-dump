@@ -21,6 +21,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+		class CBasePlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -31,8 +37,8 @@ namespace CS2 {
 			S2_PAD(0x8);
 			server::CPropDataComponent m_CPropDataComponent; // 0x7e0 | Schema_DeclaredClass | Size: 0x40
 			server::Materials m_Material; // 0x820 | Schema_DeclaredEnum | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hBreaker; // 0x824 | Schema_Atomic | Size: 0x4
-			char  m_hBreaker[0x4]; // 0x824 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hBreaker; // 0x824 | Schema_Atomic | Size: 0x4
+			// char  m_hBreaker[0x4]; // 0x824 | Schema_Atomic | Size: 0x4
 			server::Explosions m_Explosion; // 0x828 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszSpawnObject; // 0x830 | Schema_Atomic | Size: 0x8
@@ -45,8 +51,8 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnHealthChanged; // 0x878 | Schema_Atomic | Size: 0x28
 			char  m_OnHealthChanged[0x28]; // 0x878 | Schema_Atomic | Size: 0x28
 			client::PerformanceMode_t m_PerformanceMode; // 0x8a0 | Schema_DeclaredEnum | Size: 0x4
-			// server::CHandle< server::CBasePlayerPawn > m_hPhysicsAttacker; // 0x8a4 | Schema_Atomic | Size: 0x4
-			char  m_hPhysicsAttacker[0x4]; // 0x8a4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0x8a4 | Schema_Atomic | Size: 0x4
+			// char  m_hPhysicsAttacker[0x4]; // 0x8a4 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0x8a8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

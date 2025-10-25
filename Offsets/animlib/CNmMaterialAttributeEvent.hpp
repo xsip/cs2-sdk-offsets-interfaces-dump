@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x130
 			namespace CNmMaterialAttributeEvent /*: public CS2::animlib::CNmEvent*/ {
-				constexpr std::ptrdiff_t m_attributeName = 0x20; // GlobalTypes::CUtlString m_attributeName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_attributeNameToken = 0x28; // GlobalTypes::CUtlStringToken m_attributeNameToken; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_x = 0x30; // GlobalTypes::CPiecewiseCurve m_x; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_y = 0x70; // GlobalTypes::CPiecewiseCurve m_y; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_z = 0xb0; // GlobalTypes::CPiecewiseCurve m_z; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_w = 0xf0; // GlobalTypes::CPiecewiseCurve m_w; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_attributeName = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attributeNameToken = 0x28; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_x = 0x30; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_y = 0x70; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_z = 0xb0; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_w = 0xf0; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

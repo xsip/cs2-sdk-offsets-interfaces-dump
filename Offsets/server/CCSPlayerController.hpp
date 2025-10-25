@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xAE8
 			namespace CCSPlayerController /*: public CS2::server::CBasePlayerController*/ {
-				constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x820; // server::CCSPlayerController_InGameMoneyServices* m_pInGameMoneyServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pInventoryServices = 0x828; // server::CCSPlayerController_InventoryServices* m_pInventoryServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pActionTrackingServices = 0x830; // server::CCSPlayerController_ActionTrackingServices* m_pActionTrackingServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pDamageServices = 0x838; // server::CCSPlayerController_DamageServices* m_pDamageServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x820; // server::CCSPlayerController_InGameMoneyServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pInventoryServices = 0x828; // server::CCSPlayerController_InventoryServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pActionTrackingServices = 0x830; // server::CCSPlayerController_ActionTrackingServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pDamageServices = 0x838; // server::CCSPlayerController_DamageServices**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_iPing = 0x840; // uint32_t m_iPing; |  0x840 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHasCommunicationAbuseMute = 0x844; // bool m_bHasCommunicationAbuseMute; |  0x844 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_uiCommunicationMuteFlags = 0x848; // uint32_t m_uiCommunicationMuteFlags; |  0x848 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szCrosshairCodes = 0x850; // GlobalTypes::CUtlSymbolLarge m_szCrosshairCodes; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szCrosshairCodes = 0x850; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iPendingTeamNum = 0x858; // uint8_t m_iPendingTeamNum; |  0x858 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flForceTeamTime = 0x85c; // entity2::GameTime_t m_flForceTeamTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flForceTeamTime = 0x85c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_iCompTeammateColor = 0x860; // int32_t m_iCompTeammateColor; |  0x860 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEverPlayedOnTeam = 0x864; // bool m_bEverPlayedOnTeam; |  0x864 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAttemptedToGetColor = 0x865; // bool m_bAttemptedToGetColor; |  0x865 | Schema_Builtin | Size: 0x1
@@ -30,8 +30,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bJustBecameSpectator = 0x86f; // bool m_bJustBecameSpectator; |  0x86f | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSwitchTeamsOnNextRoundReset = 0x870; // bool m_bSwitchTeamsOnNextRoundReset; |  0x870 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bRemoveAllItemsOnNextRoundReset = 0x871; // bool m_bRemoveAllItemsOnNextRoundReset; |  0x871 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLastJoinTeamTime = 0x874; // entity2::GameTime_t m_flLastJoinTeamTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_szClan = 0x878; // GlobalTypes::CUtlSymbolLarge m_szClan; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flLastJoinTeamTime = 0x874; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_szClan = 0x878; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iCoachingTeam = 0x880; // int32_t m_iCoachingTeam; |  0x880 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPlayerDominated = 0x888; // uint64_t m_nPlayerDominated; |  0x888 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_nPlayerDominatingMe = 0x890; // uint64_t m_nPlayerDominatingMe; |  0x890 | Schema_Builtin | Size: 0x8
@@ -44,7 +44,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nEndMatchNextMapVote = 0x8b0; // int32_t m_nEndMatchNextMapVote; |  0x8b0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unActiveQuestId = 0x8b4; // uint16_t m_unActiveQuestId; |  0x8b4 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_rtActiveMissionPeriod = 0x8b8; // uint32_t m_rtActiveMissionPeriod; |  0x8b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nQuestProgressReason = 0x8bc; // client::Reason m_nQuestProgressReason; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nQuestProgressReason = 0x8bc; // client::QuestProgress::Reason  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_unPlayerTvControlFlags = 0x8c0; // uint32_t m_unPlayerTvControlFlags; |  0x8c0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iDraftIndex = 0x8f0; // int32_t m_iDraftIndex; |  0x8f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_msQueuedModeDisconnectionTimestamp = 0x8f4; // uint32_t m_msQueuedModeDisconnectionTimestamp; |  0x8f4 | Schema_Builtin | Size: 0x4
@@ -62,10 +62,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bHasBeenControlledByPlayerThisRound = 0x91a; // bool m_bHasBeenControlledByPlayerThisRound; |  0x91a | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nBotsControlledThisRound = 0x91c; // int32_t m_nBotsControlledThisRound; |  0x91c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bCanControlObservedBot = 0x920; // bool m_bCanControlObservedBot; |  0x920 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hPlayerPawn = 0x924; // server::CHandle< server::CCSPlayerPawn > m_hPlayerPawn; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hObserverPawn = 0x928; // server::CHandle< server::CCSObserverPawn > m_hObserverPawn; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPlayerPawn = 0x924; // GlobalTypes::CHandle<server::CCSPlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hObserverPawn = 0x928; // GlobalTypes::CHandle<server::CCSObserverPawn>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_DesiredObserverMode = 0x92c; // int32_t m_DesiredObserverMode; |  0x92c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hDesiredObserverTarget = 0x930; // GlobalTypes::CEntityHandle m_hDesiredObserverTarget; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hDesiredObserverTarget = 0x930; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bPawnIsAlive = 0x934; // bool m_bPawnIsAlive; |  0x934 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iPawnHealth = 0x938; // uint32_t m_iPawnHealth; |  0x938 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPawnArmor = 0x93c; // int32_t m_iPawnArmor; |  0x93c | Schema_Builtin | Size: 0x4
@@ -75,7 +75,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iPawnLifetimeStart = 0x944; // int32_t m_iPawnLifetimeStart; |  0x944 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPawnLifetimeEnd = 0x948; // int32_t m_iPawnLifetimeEnd; |  0x948 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPawnBotDifficulty = 0x94c; // int32_t m_iPawnBotDifficulty; |  0x94c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x950; // server::CHandle< server::CCSPlayerController > m_hOriginalControllerOfCurrentPawn; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x950; // GlobalTypes::CHandle<server::CCSPlayerController>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iScore = 0x954; // int32_t m_iScore; |  0x954 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iRoundScore = 0x958; // int32_t m_iRoundScore; |  0x958 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iRoundsWon = 0x95c; // int32_t m_iRoundsWon; |  0x95c | Schema_Builtin | Size: 0x4
@@ -89,7 +89,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iMVPs = 0x978; // int32_t m_iMVPs; |  0x978 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nUpdateCounter = 0x97c; // int32_t m_nUpdateCounter; |  0x97c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSmoothedPing = 0x980; // float32 m_flSmoothedPing; |  0x980 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_lastHeldVoteTimer = 0x988; // server::IntervalTimer m_lastHeldVoteTimer; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_lastHeldVoteTimer = 0x988; // server::IntervalTimer  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t m_bShowHints = 0x9a0; // bool m_bShowHints; |  0x9a0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iNextTimeCheck = 0x9a4; // int32_t m_iNextTimeCheck; |  0x9a4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bJustDidTeamKill = 0x9a8; // bool m_bJustDidTeamKill; |  0x9a8 | Schema_Builtin | Size: 0x1
@@ -97,8 +97,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bGaveTeamDamageWarning = 0x9aa; // bool m_bGaveTeamDamageWarning; |  0x9aa | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bGaveTeamDamageWarningThisRound = 0x9ab; // bool m_bGaveTeamDamageWarningThisRound; |  0x9ab | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_dblLastReceivedPacketPlatFloatTime = 0x9b0; // float64 m_dblLastReceivedPacketPlatFloatTime; |  0x9b0 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_LastTeamDamageWarningTime = 0x9b8; // entity2::GameTime_t m_LastTeamDamageWarningTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_LastTimePlayerWasDisconnectedForPawnsRemove = 0x9bc; // entity2::GameTime_t m_LastTimePlayerWasDisconnectedForPawnsRemove; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_LastTeamDamageWarningTime = 0x9b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_LastTimePlayerWasDisconnectedForPawnsRemove = 0x9bc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nSuspiciousHitCount = 0x9c0; // uint32_t m_nSuspiciousHitCount; |  0x9c0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nNonSuspiciousHitStreak = 0x9c4; // uint32_t m_nNonSuspiciousHitStreak; |  0x9c4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bFireBulletsSeedSynchronized = 0xa69; // bool m_bFireBulletsSeedSynchronized; |  0xa69 | Schema_Builtin | Size: 0x1

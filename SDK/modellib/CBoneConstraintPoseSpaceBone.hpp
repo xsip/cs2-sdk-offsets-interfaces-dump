@@ -26,7 +26,7 @@ namespace CS2 {
 	namespace modellib {
 		class CBoneConstraintPoseSpaceBone : public CS2::modellib::CBaseConstraint {
 		public:
-			GlobalTypes::CUtlVector< modellib::Input_t > m_inputList; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::CBoneConstraintPoseSpaceBone::Input_t> m_inputList; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_inputList[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x10); // End padding
 		};

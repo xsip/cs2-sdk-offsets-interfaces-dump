@@ -14,8 +14,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nTranslateMotion = 0x1; // int8_t m_nTranslateMotion; |  0x1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nRotateMotion = 0x2; // int8_t m_nRotateMotion; |  0x2 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nFlags = 0x3; // int8_t m_nFlags; |  0x3 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_anchor = 0x4; // GlobalTypes::Vector m_anchor[2]; |  Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_axes = 0x1c; // GlobalTypes::QuaternionStorage m_axes[2]; |  Schema_FixedArray | Size: 0x20
+				constexpr std::ptrdiff_t m_anchor = 0x4; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_axes = 0x1c; // GlobalTypes::QuaternionStorage[2]  | Schema_FixedArray | Size: 0x20
 				constexpr std::ptrdiff_t m_maxForce = 0x3c; // float32 m_maxForce; |  0x3c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_maxTorque = 0x40; // float32 m_maxTorque; |  0x40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_linearLimitValue = 0x44; // float32 m_linearLimitValue; |  0x44 | Schema_Builtin | Size: 0x4
@@ -38,9 +38,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_swing2LimitRestitution = 0x88; // float32 m_swing2LimitRestitution; |  0x88 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_swing2LimitSpring = 0x8c; // float32 m_swing2LimitSpring; |  0x8c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_swing2LimitDamping = 0x90; // float32 m_swing2LimitDamping; |  0x90 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_goalPosition = 0x94; // GlobalTypes::Vector m_goalPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_goalOrientation = 0xa0; // GlobalTypes::QuaternionStorage m_goalOrientation; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_goalAngularVelocity = 0xb0; // GlobalTypes::Vector m_goalAngularVelocity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_goalPosition = 0x94; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_goalOrientation = 0xa0; // GlobalTypes::QuaternionStorage  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_goalAngularVelocity = 0xb0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_driveSpringX = 0xbc; // float32 m_driveSpringX; |  0xbc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_driveSpringY = 0xc0; // float32 m_driveSpringY; |  0xc0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_driveSpringZ = 0xc4; // float32 m_driveSpringZ; |  0xc4 | Schema_Builtin | Size: 0x4

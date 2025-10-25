@@ -23,22 +23,22 @@ namespace CS2 {
 		class CAnimUpdateSharedData  {
 		public:
 			S2_PAD(0x10);
-			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimUpdateNodeBase > > m_nodes; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimUpdateNodeBase>> m_nodes; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_nodes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlHashtable< CAnimNodePath, int32 > m_nodeIndexMap; // 0x28 | Schema_Atomic | Size: 0x20
 			char  m_nodeIndexMap[0x20]; // 0x28 | Schema_Atomic | Size: 0x20
-			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimComponentUpdater > > m_components; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimComponentUpdater>> m_components; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_components[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CSmartPtr< animgraphlib::CAnimParameterManagerUpdater > m_pParamListUpdater; // 0x60 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<animgraphlib::CAnimParameterManagerUpdater> m_pParamListUpdater; // 0x60 | Schema_Atomic | Size: 0x8
 			char  m_pParamListUpdater[0x8]; // 0x60 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CSmartPtr< animgraphlib::CAnimTagManagerUpdater > m_pTagManagerUpdater; // 0x68 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<animgraphlib::CAnimTagManagerUpdater> m_pTagManagerUpdater; // 0x68 | Schema_Atomic | Size: 0x8
 			char  m_pTagManagerUpdater[0x8]; // 0x68 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CSmartPtr< animgraphlib::CAnimScriptManager > m_scriptManager; // 0x70 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<animgraphlib::CAnimScriptManager> m_scriptManager; // 0x70 | Schema_Atomic | Size: 0x8
 			char  m_scriptManager[0x8]; // 0x70 | Schema_Atomic | Size: 0x8
 			animgraphlib::CAnimGraphSettingsManager m_settings; // 0x78 | Schema_DeclaredClass | Size: 0x30
-			// GlobalTypes::CSmartPtr< animgraphlib::CStaticPoseCacheBuilder > m_pStaticPoseCache; // 0xa8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<animgraphlib::CStaticPoseCacheBuilder> m_pStaticPoseCache; // 0xa8 | Schema_Atomic | Size: 0x8
 			char  m_pStaticPoseCache[0x8]; // 0xa8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CSmartPtr< modellib::CAnimSkeleton > m_pSkeleton; // 0xb0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<modellib::CAnimSkeleton> m_pSkeleton; // 0xb0 | Schema_Atomic | Size: 0x8
 			char  m_pSkeleton[0x8]; // 0xb0 | Schema_Atomic | Size: 0x8
 			animgraphlib::CAnimNodePath m_rootNodePath; // 0xb8 | Schema_DeclaredClass | Size: 0x30
 			S2_PAD(0x18); // End padding

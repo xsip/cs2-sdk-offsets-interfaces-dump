@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x10
 			namespace MaterialVariable_t /**/ {
-				constexpr std::ptrdiff_t m_strVariable = 0x0; // GlobalTypes::CUtlString m_strVariable; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nVariableField = 0x8; // particles::ParticleAttributeIndex_t m_nVariableField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_strVariable = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nVariableField = 0x8; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flScale = 0xc; // float32 m_flScale; |  0xc | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x7F8
 			namespace CEnvDecal /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_hDecalMaterial = 0x7d8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hDecalMaterial; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hDecalMaterial = 0x7d8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flWidth = 0x7e0; // float32 m_flWidth; |  0x7e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flHeight = 0x7e4; // float32 m_flHeight; |  0x7e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDepth = 0x7e8; // float32 m_flDepth; |  0x7e8 | Schema_Builtin | Size: 0x4

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x10
 			namespace FeCtrlOffset_t /**/ {
-				constexpr std::ptrdiff_t vOffset = 0x0; // GlobalTypes::Vector vOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t vOffset = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t nCtrlParent = 0xc; // uint16_t nCtrlParent; |  0xc | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nCtrlChild = 0xe; // uint16_t nCtrlChild; |  0xe | Schema_Builtin | Size: 0x2
 			}

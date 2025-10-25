@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xA38
 			namespace CBombTarget /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_OnBombExplode = 0x9a8; // entity2::CEntityIOOutput m_OnBombExplode; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnBombPlanted = 0x9d0; // entity2::CEntityIOOutput m_OnBombPlanted; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnBombDefused = 0x9f8; // entity2::CEntityIOOutput m_OnBombDefused; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBombExplode = 0x9a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBombPlanted = 0x9d0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBombDefused = 0x9f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_bIsBombSiteB = 0xa20; // bool m_bIsBombSiteB; |  0xa20 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsHeistBombTarget = 0xa21; // bool m_bIsHeistBombTarget; |  0xa21 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bBombPlantedHere = 0xa22; // bool m_bBombPlantedHere; |  0xa22 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_szMountTarget = 0xa28; // GlobalTypes::CUtlSymbolLarge m_szMountTarget; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hInstructorHint = 0xa30; // server::CHandle< server::CBaseEntity > m_hInstructorHint; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_szMountTarget = 0xa28; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hInstructorHint = 0xa30; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nBombSiteDesignation = 0xa34; // int32_t m_nBombSiteDesignation; |  0xa34 | Schema_Builtin | Size: 0x4
 			}
 		}

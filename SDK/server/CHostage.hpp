@@ -18,6 +18,13 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+		class CCSPlayerPawnBase;
+		class CCSPlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -41,10 +48,10 @@ namespace CS2 {
 			bool m_jumpedThisFrame; // 0xcdd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			int32_t m_nHostageState; // 0xce0 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_leader; // 0xce4 | Schema_Atomic | Size: 0x4
-			char  m_leader[0x4]; // 0xce4 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawnBase > m_lastLeader; // 0xce8 | Schema_Atomic | Size: 0x4
-			char  m_lastLeader[0x4]; // 0xce8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_leader; // 0xce4 | Schema_Atomic | Size: 0x4
+			// char  m_leader[0x4]; // 0xce4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawnBase> m_lastLeader; // 0xce8 | Schema_Atomic | Size: 0x4
+			// char  m_lastLeader[0x4]; // 0xce8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			server::CountdownTimer m_reuseTimer; // 0xcf0 | Schema_DeclaredClass | Size: 0x18
 			bool m_hasBeenUsed; // 0xd08 | Schema_Builtin | Size: 0x1
@@ -66,8 +73,8 @@ namespace CS2 {
 			bool m_isAdjusted; // 0x2e2c | Schema_Builtin | Size: 0x1
 			bool m_bHandsHaveBeenCut; // 0x2e2d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CCSPlayerPawn > m_hHostageGrabber; // 0x2e30 | Schema_Atomic | Size: 0x4
-			char  m_hHostageGrabber[0x4]; // 0x2e30 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hHostageGrabber; // 0x2e30 | Schema_Atomic | Size: 0x4
+			// char  m_hHostageGrabber[0x4]; // 0x2e30 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_fLastGrabTime; // 0x2e34 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vecPositionWhenStartedDroppingToGround; // 0x2e38 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecGrabbedPos; // 0x2e44 | Schema_Atomic | Size: 0xc

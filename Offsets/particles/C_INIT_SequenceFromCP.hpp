@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bKillUnused = 0x1d8; // bool m_bKillUnused; |  0x1d8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bRadiusScale = 0x1d9; // bool m_bRadiusScale; |  0x1d9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nCP = 0x1dc; // int32_t m_nCP; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOffset = 0x1e0; // GlobalTypes::Vector m_vecOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffset = 0x1e0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

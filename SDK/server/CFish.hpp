@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CFishPool;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,8 +27,8 @@ namespace CS2 {
 	namespace server {
 		class CFish : public CS2::server::CBaseAnimGraph {
 		public:
-			// server::CHandle< server::CFishPool > m_pool; // 0xa90 | Schema_Atomic | Size: 0x4
-			char  m_pool[0x4]; // 0xa90 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CFishPool> m_pool; // 0xa90 | Schema_Atomic | Size: 0x4
+			// char  m_pool[0x4]; // 0xa90 | Schema_Atomic | Size: 0x4
 			uint32_t m_id; // 0xa94 | Schema_Builtin | Size: 0x4
 			float32 m_x; // 0xa98 | Schema_Builtin | Size: 0x4
 			float32 m_y; // 0xa9c | Schema_Builtin | Size: 0x4
@@ -47,7 +52,7 @@ namespace CS2 {
 			server::CountdownTimer m_panicTimer; // 0xb38 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_disperseTimer; // 0xb50 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_proximityTimer; // 0xb68 | Schema_DeclaredClass | Size: 0x18
-			// server::CUtlVector< server::CFish > m_visible; // 0xb80 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<server::CFish*> m_visible; // 0xb80 | Schema_Atomic | Size: 0x18
 			char  m_visible[0x18]; // 0xb80 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

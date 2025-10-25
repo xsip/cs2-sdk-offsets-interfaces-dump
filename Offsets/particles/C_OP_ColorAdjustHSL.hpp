@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x620
 			namespace C_OP_ColorAdjustHSL /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flHueAdjust = 0x1d0; // particleslib::CPerParticleFloatInput m_flHueAdjust; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flSaturationAdjust = 0x340; // particleslib::CPerParticleFloatInput m_flSaturationAdjust; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flLightnessAdjust = 0x4b0; // particleslib::CPerParticleFloatInput m_flLightnessAdjust; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flHueAdjust = 0x1d0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flSaturationAdjust = 0x340; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flLightnessAdjust = 0x4b0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

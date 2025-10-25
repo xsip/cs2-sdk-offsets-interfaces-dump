@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x38
 			namespace CAnimScriptComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_hScript = 0x30; // modellib::AnimScriptHandle m_hScript; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hScript = 0x30; // modellib::AnimScriptHandle  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

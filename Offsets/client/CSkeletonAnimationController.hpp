@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x10
 			namespace CSkeletonAnimationController /*: public CS2::client::ISkeletonAnimationController*/ {
-				constexpr std::ptrdiff_t m_pSkeletonInstance = 0x8; // client::CSkeletonInstance* m_pSkeletonInstance; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pSkeletonInstance = 0x8; // client::CSkeletonInstance**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

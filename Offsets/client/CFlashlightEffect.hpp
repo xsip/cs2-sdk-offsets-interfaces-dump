@@ -13,15 +13,15 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bIsOn = 0x10; // bool m_bIsOn; |  0x10 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bMuzzleFlashEnabled = 0x20; // bool m_bMuzzleFlashEnabled; |  0x20 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMuzzleFlashBrightness = 0x24; // float32 m_flMuzzleFlashBrightness; |  0x24 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_quatMuzzleFlashOrientation = 0x30; // GlobalTypes::Quaternion m_quatMuzzleFlashOrientation; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vecMuzzleFlashOrigin = 0x40; // GlobalTypes::Vector m_vecMuzzleFlashOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_quatMuzzleFlashOrientation = 0x30; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vecMuzzleFlashOrigin = 0x40; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flFov = 0x4c; // float32 m_flFov; |  0x4c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFarZ = 0x50; // float32 m_flFarZ; |  0x50 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLinearAtten = 0x54; // float32 m_flLinearAtten; |  0x54 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bCastsShadows = 0x58; // bool m_bCastsShadows; |  0x58 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flCurrentPullBackDist = 0x5c; // float32 m_flCurrentPullBackDist; |  0x5c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_FlashlightTexture = 0x60; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_FlashlightTexture; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_MuzzleFlashTexture = 0x68; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_MuzzleFlashTexture; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_FlashlightTexture = 0x60; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_MuzzleFlashTexture = 0x68; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_textureName = 0x70; // char m_textureName[64]; |  0x70 | Schema_FixedArray | Size: 0x40
 			}
 		}

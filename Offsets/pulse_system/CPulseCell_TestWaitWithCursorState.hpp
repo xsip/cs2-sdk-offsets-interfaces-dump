@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_system {
 			// Class size: 0x120
 			namespace CPulseCell_TestWaitWithCursorState /*: public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow*/ {
-				constexpr std::ptrdiff_t m_WakeResume = 0x48; // pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_WakeCancel = 0x90; // pulse_runtime_lib::CPulse_ResumePoint m_WakeCancel; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_WakeFail = 0xd8; // pulse_runtime_lib::CPulse_ResumePoint m_WakeFail; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_WakeResume = 0x48; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_WakeCancel = 0x90; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_WakeFail = 0xd8; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

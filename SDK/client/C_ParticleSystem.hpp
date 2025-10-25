@@ -30,7 +30,7 @@ namespace CS2 {
 			int32_t m_nStopType; // 0x10b8 | Schema_Builtin | Size: 0x4
 			bool m_bAnimateDuringGameplayPause; // 0x10bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x10c0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_iEffectIndex; // 0x10c0 | Schema_Atomic | Size: 0x8
 			char  m_iEffectIndex[0x8]; // 0x10c0 | Schema_Atomic | Size: 0x8
 			entity2::GameTime_t m_flStartTime; // 0x10c8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flPreSimTime; // 0x10cc | Schema_Builtin | Size: 0x4

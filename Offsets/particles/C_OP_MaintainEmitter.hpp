@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x648
 			namespace C_OP_MaintainEmitter /*: public CS2::particles::CParticleFunctionEmitter*/ {
-				constexpr std::ptrdiff_t m_nParticlesToMaintain = 0x1d8; // particleslib::CParticleCollectionFloatInput m_nParticlesToMaintain; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nParticlesToMaintain = 0x1d8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flStartTime = 0x348; // float32 m_flStartTime; |  0x348 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flEmissionDuration = 0x350; // particleslib::CParticleCollectionFloatInput m_flEmissionDuration; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flEmissionDuration = 0x350; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flEmissionRate = 0x4c0; // float32 m_flEmissionRate; |  0x4c0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x4c4; // int32_t m_nSnapshotControlPoint; |  0x4c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x4c8; // GlobalTypes::CUtlString m_strSnapshotSubset; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strSnapshotSubset = 0x4c8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bEmitInstantaneously = 0x4d0; // bool m_bEmitInstantaneously; |  0x4d0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bFinalEmitOnStop = 0x4d1; // bool m_bFinalEmitOnStop; |  0x4d1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flScale = 0x4d8; // particleslib::CParticleCollectionFloatInput m_flScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flScale = 0x4d8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

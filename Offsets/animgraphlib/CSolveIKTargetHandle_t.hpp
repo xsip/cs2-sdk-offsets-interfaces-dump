@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x4
 			namespace CSolveIKTargetHandle_t /**/ {
-				constexpr std::ptrdiff_t m_positionHandle = 0x0; // animgraphlib::CAnimParamHandle m_positionHandle; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_orientationHandle = 0x2; // animgraphlib::CAnimParamHandle m_orientationHandle; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_positionHandle = 0x0; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_orientationHandle = 0x2; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 			}
 		}
 	}

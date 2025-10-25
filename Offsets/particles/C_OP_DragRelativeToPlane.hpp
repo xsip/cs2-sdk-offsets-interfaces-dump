@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xB78
 			namespace C_OP_DragRelativeToPlane /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flDragAtPlane = 0x1d0; // particleslib::CParticleCollectionFloatInput m_flDragAtPlane; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flFalloff = 0x340; // particleslib::CParticleCollectionFloatInput m_flFalloff; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flDragAtPlane = 0x1d0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flFalloff = 0x340; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bDirectional = 0x4b0; // bool m_bDirectional; |  0x4b0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecPlaneNormal = 0x4b8; // particleslib::CParticleCollectionVecInput m_vecPlaneNormal; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecPlaneNormal = 0x4b8; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0xb70; // int32_t m_nControlPointNumber; |  0xb70 | Schema_Builtin | Size: 0x4
 			}
 		}

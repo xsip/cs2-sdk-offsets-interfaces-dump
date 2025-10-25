@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -25,7 +30,7 @@ namespace CS2 {
 		public:
 			int32_t m_active; // 0x878 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_spriteTexture; // 0x880 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_spriteTexture; // 0x880 | Schema_Atomic | Size: 0x8
 			char  m_spriteTexture[0x8]; // 0x880 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszStartEntity; // 0x888 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszEndEntity; // 0x890 | Schema_Atomic | Size: 0x8
@@ -43,8 +48,8 @@ namespace CS2 {
 			server::Touch_t m_TouchType; // 0x8d8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x8e0 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hFilter; // 0x8e8 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x8e8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hFilter; // 0x8e8 | Schema_Atomic | Size: 0x4
+			// char  m_hFilter[0x4]; // 0x8e8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszDecal; // 0x8f0 | Schema_Atomic | Size: 0x8
 			entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x8f8 | Schema_DeclaredClass | Size: 0x28

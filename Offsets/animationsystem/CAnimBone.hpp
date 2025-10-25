@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x48
 			namespace CAnimBone /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString m_name; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_parent = 0x10; // int32_t m_parent; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pos = 0x14; // GlobalTypes::Vector m_pos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_quat = 0x20; // GlobalTypes::QuaternionStorage m_quat; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_pos = 0x14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_quat = 0x20; // GlobalTypes::QuaternionStorage  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_scale = 0x30; // float32 m_scale; |  0x30 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_qAlignment = 0x34; // GlobalTypes::QuaternionStorage m_qAlignment; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_qAlignment = 0x34; // GlobalTypes::QuaternionStorage  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_flags = 0x44; // int32_t m_flags; |  0x44 | Schema_Builtin | Size: 0x4
 			}
 		}

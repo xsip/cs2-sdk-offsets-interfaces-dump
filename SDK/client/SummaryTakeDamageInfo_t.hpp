@@ -31,7 +31,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			client::CTakeDamageInfo info; // 0x8 | Schema_DeclaredClass | Size: 0x128
 			client::CTakeDamageResult result; // 0x130 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CHandle< client::C_BaseEntity > hTarget; // 0x158 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> hTarget; // 0x158 | Schema_Atomic | Size: 0x4
 			// char  hTarget[0x4]; // 0x158 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xD0
 			namespace CSmartPropOperation_Translate /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_vPosition = 0x50; // GlobalTypes::CSmartPropAttributeVector m_vPosition; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_CoordinateSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; |  Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_vPosition = 0x50; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_CoordinateSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
 			}
 		}
 	}

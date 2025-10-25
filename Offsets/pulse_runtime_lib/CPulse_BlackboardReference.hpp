@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x28
 			namespace CPulse_BlackboardReference /**/ {
-				constexpr std::ptrdiff_t m_hBlackboardResource = 0x0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIPulseGraphDef > m_hBlackboardResource; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_BlackboardResource = 0x8; // GlobalTypes::PulseSymbol_t m_BlackboardResource; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_nNodeID = 0x18; // pulse_runtime_lib::PulseDocNodeID_t m_nNodeID; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_NodeName = 0x20; // GlobalTypes::CGlobalSymbol m_NodeName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hBlackboardResource = 0x0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIPulseGraphDef>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_BlackboardResource = 0x8; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_nNodeID = 0x18; // pulse_runtime_lib::PulseDocNodeID_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_NodeName = 0x20; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

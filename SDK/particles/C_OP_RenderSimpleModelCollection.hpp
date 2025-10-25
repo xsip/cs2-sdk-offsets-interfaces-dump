@@ -27,7 +27,7 @@ namespace CS2 {
 		public:
 			bool m_bCenterOffset; // 0x220 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x228 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0x228 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0x228 | Schema_Atomic | Size: 0x8
 			particleslib::CParticleModelInput m_modelInput; // 0x230 | Schema_DeclaredClass | Size: 0x60
 			particleslib::CParticleCollectionFloatInput m_fSizeCullScale; // 0x290 | Schema_DeclaredClass | Size: 0x170

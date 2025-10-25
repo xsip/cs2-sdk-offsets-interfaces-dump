@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xB0
 			namespace CFootAdjustmentUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_clips = 0x78; // GlobalTypes::CUtlVector< animationsystem::HSequence > m_clips; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hBasePoseCacheHandle = 0x90; // animgraphlib::CPoseHandle m_hBasePoseCacheHandle; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_facingTarget = 0x94; // animgraphlib::CAnimParamHandle m_facingTarget; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_clips = 0x78; // GlobalTypes::CUtlVector<animationsystem::HSequence>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hBasePoseCacheHandle = 0x90; // animgraphlib::CPoseHandle  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_facingTarget = 0x94; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_flTurnTimeMin = 0x98; // float32 m_flTurnTimeMin; |  0x98 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTurnTimeMax = 0x9c; // float32 m_flTurnTimeMax; |  0x9c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStepHeightMax = 0xa0; // float32 m_flStepHeightMax; |  0xa0 | Schema_Builtin | Size: 0x4

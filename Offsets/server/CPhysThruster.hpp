@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x560
 			namespace CPhysThruster /*: public CS2::server::CPhysForce*/ {
-				constexpr std::ptrdiff_t m_localOrigin = 0x550; // GlobalTypes::Vector m_localOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_localOrigin = 0x550; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

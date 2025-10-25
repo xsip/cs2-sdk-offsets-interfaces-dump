@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace materialsystem2 {
 			// Class size: 0x88
 			namespace PostProcessingBloomParameters_t /**/ {
-				constexpr std::ptrdiff_t m_blendMode = 0x0; // materialsystem2::BloomBlendMode_t m_blendMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_blendMode = 0x0; // materialsystem2::BloomBlendMode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flBloomStrength = 0x4; // float32 m_flBloomStrength; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flScreenBloomStrength = 0x8; // float32 m_flScreenBloomStrength; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBlurBloomStrength = 0xc; // float32 m_flBlurBloomStrength; |  0xc | Schema_Builtin | Size: 0x4
@@ -25,7 +25,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flComputeBloomLensDirtStrength = 0x30; // float32 m_flComputeBloomLensDirtStrength; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flComputeBloomLensDirtBlackLevel = 0x34; // float32 m_flComputeBloomLensDirtBlackLevel; |  0x34 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBlurWeight = 0x38; // float32 m_flBlurWeight[5]; |  0x38 | Schema_FixedArray | Size: 0x14
-				constexpr std::ptrdiff_t m_vBlurTint = 0x4c; // GlobalTypes::Vector m_vBlurTint[5]; |  Schema_FixedArray | Size: 0x3c
+				constexpr std::ptrdiff_t m_vBlurTint = 0x4c; // GlobalTypes::Vector[5]  | Schema_FixedArray | Size: 0x3c
 			}
 		}
 	}

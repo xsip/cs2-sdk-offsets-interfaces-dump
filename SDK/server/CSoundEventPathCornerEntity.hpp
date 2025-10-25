@@ -28,7 +28,7 @@ namespace CS2 {
 			float32 m_flDotProductMax; // 0x5cc | Schema_Builtin | Size: 0x4
 			bool m_bPlaying; // 0x5d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x27);
-			// GlobalTypes::CNetworkUtlVectorBase< client::SoundeventPathCornerPairNetworked_t > m_vecCornerPairsNetworked; // 0x5f8 | Schema_Atomic | Size: 0x60
+			// GlobalTypes::CNetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t> m_vecCornerPairsNetworked; // 0x5f8 | Schema_Atomic | Size: 0x60
 			char  m_vecCornerPairsNetworked[0x60]; // 0x5f8 | Schema_Atomic | Size: 0x60
 		};
 		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_iszPathCorner) == 0x5B8, "m_iszPathCorner in CSoundEventPathCornerEntity should be at offset 0x5B8");

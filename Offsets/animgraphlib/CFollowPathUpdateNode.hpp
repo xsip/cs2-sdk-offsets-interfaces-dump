@@ -18,9 +18,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flMinAngle = 0x80; // float32 m_flMinAngle; |  0x80 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxAngle = 0x84; // float32 m_flMaxAngle; |  0x84 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSpeedScaleBlending = 0x88; // float32 m_flSpeedScaleBlending; |  0x88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_turnDamping = 0x90; // animgraphlib::CAnimInputDamping m_turnDamping; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_facingTarget = 0xa8; // animgraphlib::AnimValueSource m_facingTarget; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_hParam = 0xac; // animgraphlib::CAnimParamHandle m_hParam; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_turnDamping = 0x90; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_facingTarget = 0xa8; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hParam = 0xac; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_flTurnToFaceOffset = 0xb0; // float32 m_flTurnToFaceOffset; |  0xb0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bTurnToFace = 0xb4; // bool m_bTurnToFace; |  0xb4 | Schema_Builtin | Size: 0x1
 			}

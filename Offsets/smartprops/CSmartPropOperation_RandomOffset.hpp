@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x110
 			namespace CSmartPropOperation_RandomOffset /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_vRandomPositionMin = 0x50; // GlobalTypes::CSmartPropAttributeVector m_vRandomPositionMin; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vRandomPositionMax = 0x90; // GlobalTypes::CSmartPropAttributeVector m_vRandomPositionMax; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vSnapIncrement = 0xd0; // GlobalTypes::CSmartPropAttributeVector m_vSnapIncrement; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vRandomPositionMin = 0x50; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vRandomPositionMax = 0x90; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vSnapIncrement = 0xd0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

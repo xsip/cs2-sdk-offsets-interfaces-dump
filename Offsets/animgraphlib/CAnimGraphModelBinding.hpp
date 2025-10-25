@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x28
 			namespace CAnimGraphModelBinding /**/ {
-				constexpr std::ptrdiff_t m_modelName = 0x8; // GlobalTypes::CUtlString m_modelName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pSharedData = 0x10; // GlobalTypes::CSmartPtr< animgraphlib::CAnimUpdateSharedData > m_pSharedData; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_modelName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pSharedData = 0x10; // GlobalTypes::CSmartPtr<animgraphlib::CAnimUpdateSharedData>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

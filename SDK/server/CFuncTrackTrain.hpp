@@ -18,6 +18,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CPathTrack;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -25,8 +30,8 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrackTrain : public CS2::server::CBaseModelEntity {
 		public:
-			// server::CHandle< server::CPathTrack > m_ppath; // 0x7d8 | Schema_Atomic | Size: 0x4
-			char  m_ppath[0x4]; // 0x7d8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPathTrack> m_ppath; // 0x7d8 | Schema_Atomic | Size: 0x4
+			// char  m_ppath[0x4]; // 0x7d8 | Schema_Atomic | Size: 0x4
 			float32 m_length; // 0x7dc | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vPosPrev; // 0x7e0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angPrev; // 0x7ec | Schema_Atomic | Size: 0xc

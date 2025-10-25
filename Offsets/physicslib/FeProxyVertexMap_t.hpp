@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x10
 			namespace FeProxyVertexMap_t /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flWeight = 0x8; // float32 m_flWeight; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

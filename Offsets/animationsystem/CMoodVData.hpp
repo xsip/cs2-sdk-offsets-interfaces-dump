@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x100
 			namespace CMoodVData /**/ {
-				constexpr std::ptrdiff_t m_sModelName = 0x0; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sModelName; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_nMoodType = 0xe0; // animationsystem::MoodType_t m_nMoodType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_animationLayers = 0xe8; // GlobalTypes::CUtlVector< animationsystem::MoodAnimationLayer_t > m_animationLayers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sModelName = 0x0; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_nMoodType = 0xe0; // animationsystem::MoodType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_animationLayers = 0xe8; // GlobalTypes::CUtlVector<animationsystem::MoodAnimationLayer_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

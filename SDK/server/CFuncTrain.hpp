@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,12 +27,12 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrain : public CS2::server::CBasePlatTrain {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hCurrentTarget; // 0x880 | Schema_Atomic | Size: 0x4
-			char  m_hCurrentTarget[0x4]; // 0x880 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hCurrentTarget; // 0x880 | Schema_Atomic | Size: 0x4
+			// char  m_hCurrentTarget[0x4]; // 0x880 | Schema_Atomic | Size: 0x4
 			bool m_activated; // 0x884 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CBaseEntity > m_hEnemy; // 0x888 | Schema_Atomic | Size: 0x4
-			char  m_hEnemy[0x4]; // 0x888 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEnemy; // 0x888 | Schema_Atomic | Size: 0x4
+			// char  m_hEnemy[0x4]; // 0x888 | Schema_Atomic | Size: 0x4
 			float32 m_flBlockDamage; // 0x88c | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flNextBlockTime; // 0x890 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);

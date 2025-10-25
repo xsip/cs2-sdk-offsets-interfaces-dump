@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace ResponseParams /**/ {
 				constexpr std::ptrdiff_t odds = 0x10; // int16_t odds; |  0x10 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t flags = 0x12; // int16_t flags; |  0x12 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_pFollowup = 0x18; // client::ResponseFollowup* m_pFollowup; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pFollowup = 0x18; // client::ResponseFollowup**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

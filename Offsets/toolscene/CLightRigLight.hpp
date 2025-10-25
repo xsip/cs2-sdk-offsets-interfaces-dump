@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace toolscene {
 			// Class size: 0x40
 			namespace CLightRigLight /**/ {
-				constexpr std::ptrdiff_t m_vPosition = 0x0; // GlobalTypes::Vector m_vPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDirection = 0xc; // GlobalTypes::Vector m_vDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vLookAt = 0x18; // GlobalTypes::Vector m_vLookAt; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Color = 0x24; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vPosition = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDirection = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLookAt = 0x18; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Color = 0x24; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flAxisScale = 0x28; // float32 m_flAxisScale; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadius = 0x2c; // float32 m_flRadius; |  0x2c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBrightness = 0x30; // float32 m_flBrightness; |  0x30 | Schema_Builtin | Size: 0x4

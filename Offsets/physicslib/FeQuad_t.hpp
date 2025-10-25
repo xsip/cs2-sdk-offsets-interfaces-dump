@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace FeQuad_t /**/ {
 				constexpr std::ptrdiff_t nNode = 0x0; // uint16_t nNode[4]; |  0x0 | Schema_FixedArray | Size: 0x8
 				constexpr std::ptrdiff_t flSlack = 0x8; // float32 flSlack; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t vShape = 0xc; // GlobalTypes::Vector4D vShape[4]; |  Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t vShape = 0xc; // GlobalTypes::Vector4D[4]  | Schema_FixedArray | Size: 0x40
 			}
 		}
 	}

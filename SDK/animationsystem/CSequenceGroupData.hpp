@@ -35,27 +35,27 @@ namespace CS2 {
 			GlobalTypes::CBufferString m_sName; // 0x10 | Schema_Atomic | Size: 0x10
 			uint32_t m_nFlags; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_localSequenceNameArray; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CBufferString> m_localSequenceNameArray; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_localSequenceNameArray[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CSeqS1SeqDesc > m_localS1SeqDescArray; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqS1SeqDesc> m_localS1SeqDescArray; // 0x40 | Schema_Atomic | Size: 0x18
 			// char  m_localS1SeqDescArray[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CSeqS1SeqDesc > m_localMultiSeqDescArray; // 0x58 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqS1SeqDesc> m_localMultiSeqDescArray; // 0x58 | Schema_Atomic | Size: 0x18
 			// char  m_localMultiSeqDescArray[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CSeqSynthAnimDesc > m_localSynthAnimDescArray; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqSynthAnimDesc> m_localSynthAnimDescArray; // 0x70 | Schema_Atomic | Size: 0x18
 			// char  m_localSynthAnimDescArray[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CSeqCmdSeqDesc > m_localCmdSeqDescArray; // 0x88 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqCmdSeqDesc> m_localCmdSeqDescArray; // 0x88 | Schema_Atomic | Size: 0x18
 			// char  m_localCmdSeqDescArray[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CSeqBoneMaskList > m_localBoneMaskArray; // 0xa0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqBoneMaskList> m_localBoneMaskArray; // 0xa0 | Schema_Atomic | Size: 0x18
 			// char  m_localBoneMaskArray[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CSeqScaleSet > m_localScaleSetArray; // 0xb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqScaleSet> m_localScaleSetArray; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char  m_localScaleSetArray[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_localBoneNameArray; // 0xd0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CBufferString> m_localBoneNameArray; // 0xd0 | Schema_Atomic | Size: 0x18
 			// char  m_localBoneNameArray[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CBufferString m_localNodeName; // 0xe8 | Schema_Atomic | Size: 0x10
-			GlobalTypes::CUtlVector< animationsystem::CSeqPoseParamDesc > m_localPoseParamArray; // 0xf8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqPoseParamDesc> m_localPoseParamArray; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char  m_localPoseParamArray[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::KeyValues3 m_keyValues; // 0x110 | Schema_Atomic | Size: 0x10
-			GlobalTypes::CUtlVector< animationsystem::CSeqIKLock > m_localIKAutoplayLockArray; // 0x120 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqIKLock> m_localIKAutoplayLockArray; // 0x120 | Schema_Atomic | Size: 0x18
 			// char  m_localIKAutoplayLockArray[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CSequenceGroupData, m_sName) == 0x10, "m_sName in CSequenceGroupData should be at offset 0x10");

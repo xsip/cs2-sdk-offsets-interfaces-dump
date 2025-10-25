@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x540
 			namespace CPointEntityFinder /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_hEntity = 0x4f0; // server::CHandle< server::CBaseEntity > m_hEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iFilterName = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_iFilterName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFilter = 0x500; // server::CHandle< server::CBaseFilter > m_hFilter; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iRefName = 0x508; // GlobalTypes::CUtlSymbolLarge m_iRefName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hReference = 0x510; // server::CHandle< server::CBaseEntity > m_hReference; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_FindMethod = 0x514; // server::EntFinderMethod_t m_FindMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_OnFoundEntity = 0x518; // entity2::CEntityIOOutput m_OnFoundEntity; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_hEntity = 0x4f0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iFilterName = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFilter = 0x500; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iRefName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hReference = 0x510; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_FindMethod = 0x514; // server::EntFinderMethod_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OnFoundEntity = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

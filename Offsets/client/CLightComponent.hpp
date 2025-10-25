@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1E8
 			namespace CLightComponent /*: public CS2::entity2::CEntityComponent*/ {
-				constexpr std::ptrdiff_t __m_pChainEntity = 0x30; // entity2::CNetworkVarChainer __m_pChainEntity; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_Color = 0x6d; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_SecondaryColor = 0x71; // GlobalTypes::Color m_SecondaryColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t __m_pChainEntity = 0x30; // entity2::CNetworkVarChainer  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_Color = 0x6d; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_SecondaryColor = 0x71; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flBrightness = 0x78; // float32 m_flBrightness; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBrightnessScale = 0x7c; // float32 m_flBrightnessScale; |  0x7c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBrightnessMult = 0x80; // float32 m_flBrightnessMult; |  0x80 | Schema_Builtin | Size: 0x4
@@ -23,7 +23,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flAttenuation2 = 0x94; // float32 m_flAttenuation2; |  0x94 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTheta = 0x98; // float32 m_flTheta; |  0x98 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPhi = 0x9c; // float32 m_flPhi; |  0x9c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hLightCookie = 0xa0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hLightCookie = 0xa0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nCascades = 0xa8; // int32_t m_nCascades; |  0xa8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCastShadows = 0xac; // int32_t m_nCastShadows; |  0xac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nShadowWidth = 0xb0; // int32_t m_nShadowWidth; |  0xb0 | Schema_Builtin | Size: 0x4
@@ -34,7 +34,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flOrthoLightWidth = 0xc4; // float32 m_flOrthoLightWidth; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOrthoLightHeight = 0xc8; // float32 m_flOrthoLightHeight; |  0xc8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nStyle = 0xcc; // int32_t m_nStyle; |  0xcc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Pattern = 0xd0; // GlobalTypes::CUtlString m_Pattern; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Pattern = 0xd0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nCascadeRenderStaticObjects = 0xd8; // int32_t m_nCascadeRenderStaticObjects; |  0xd8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flShadowCascadeCrossFade = 0xdc; // float32 m_flShadowCascadeCrossFade; |  0xdc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flShadowCascadeDistanceFade = 0xe0; // float32 m_flShadowCascadeDistanceFade; |  0xe0 | Schema_Builtin | Size: 0x4
@@ -62,21 +62,21 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bEnabled = 0x134; // bool m_bEnabled; |  0x134 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bFlicker = 0x135; // bool m_bFlicker; |  0x135 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bPrecomputedFieldsValid = 0x136; // bool m_bPrecomputedFieldsValid; |  0x136 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vPrecomputedBoundsMins = 0x138; // GlobalTypes::Vector m_vPrecomputedBoundsMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPrecomputedBoundsMaxs = 0x144; // GlobalTypes::Vector m_vPrecomputedBoundsMaxs; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPrecomputedOBBOrigin = 0x150; // GlobalTypes::Vector m_vPrecomputedOBBOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPrecomputedOBBAngles = 0x15c; // GlobalTypes::QAngle m_vPrecomputedOBBAngles; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPrecomputedOBBExtent = 0x168; // GlobalTypes::Vector m_vPrecomputedOBBExtent; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPrecomputedBoundsMins = 0x138; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPrecomputedBoundsMaxs = 0x144; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPrecomputedOBBOrigin = 0x150; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPrecomputedOBBAngles = 0x15c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPrecomputedOBBExtent = 0x168; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flPrecomputedMaxRange = 0x174; // float32 m_flPrecomputedMaxRange; |  0x174 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFogLightingMode = 0x178; // int32_t m_nFogLightingMode; |  0x178 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogContributionStength = 0x17c; // float32 m_flFogContributionStength; |  0x17c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNearClipPlane = 0x180; // float32 m_flNearClipPlane; |  0x180 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_SkyColor = 0x184; // GlobalTypes::Color m_SkyColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_SkyColor = 0x184; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flSkyIntensity = 0x188; // float32 m_flSkyIntensity; |  0x188 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_SkyAmbientBounce = 0x18c; // GlobalTypes::Color m_SkyAmbientBounce; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_SkyAmbientBounce = 0x18c; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseSecondaryColor = 0x190; // bool m_bUseSecondaryColor; |  0x190 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bMixedShadows = 0x191; // bool m_bMixedShadows; |  0x191 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLightStyleStartTime = 0x194; // entity2::GameTime_t m_flLightStyleStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flLightStyleStartTime = 0x194; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flCapsuleLength = 0x198; // float32 m_flCapsuleLength; |  0x198 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinRoughness = 0x19c; // float32 m_flMinRoughness; |  0x19c | Schema_Builtin | Size: 0x4
 			}

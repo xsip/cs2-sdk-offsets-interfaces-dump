@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x8A0
 			namespace CCSWeaponBaseVData /*: public CS2::client::CBasePlayerWeaponVData*/ {
-				constexpr std::ptrdiff_t m_WeaponType = 0x440; // client::CSWeaponType m_WeaponType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_WeaponCategory = 0x444; // client::CSWeaponCategory m_WeaponCategory; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_szModel_AG2 = 0x448; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_szModel_AG2; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_szAnimSkeleton = 0x528; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCNmSkeleton > > m_szAnimSkeleton; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_vecMuzzlePos0 = 0x608; // GlobalTypes::Vector m_vecMuzzlePos0; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecMuzzlePos1 = 0x614; // GlobalTypes::Vector m_vecMuzzlePos1; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_szTracerParticle = 0x620; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szTracerParticle; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_GearSlot = 0x700; // client::gear_slot_t m_GearSlot; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_WeaponType = 0x440; // client::CSWeaponType  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_WeaponCategory = 0x444; // client::CSWeaponCategory  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_szModel_AG2 = 0x448; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_szAnimSkeleton = 0x528; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_vecMuzzlePos0 = 0x608; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecMuzzlePos1 = 0x614; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_szTracerParticle = 0x620; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_GearSlot = 0x700; // client::gear_slot_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_GearSlotPosition = 0x704; // int32_t m_GearSlotPosition; |  0x704 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_DefaultLoadoutSlot = 0x708; // client::loadout_slot_t m_DefaultLoadoutSlot; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_DefaultLoadoutSlot = 0x708; // client::loadout_slot_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nPrice = 0x70c; // int32_t m_nPrice; |  0x70c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nKillAward = 0x710; // int32_t m_nKillAward; |  0x710 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPrimaryReserveAmmoMax = 0x714; // int32_t m_nPrimaryReserveAmmoMax; |  0x714 | Schema_Builtin | Size: 0x4
@@ -28,28 +28,28 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bHasBurstMode = 0x71d; // bool m_bHasBurstMode; |  0x71d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsRevolver = 0x71e; // bool m_bIsRevolver; |  0x71e | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCannotShootUnderwater = 0x71f; // bool m_bCannotShootUnderwater; |  0x71f | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_szName = 0x720; // GlobalTypes::CGlobalSymbol m_szName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_eSilencerType = 0x728; // client::CSWeaponSilencerType m_eSilencerType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_szName = 0x720; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_eSilencerType = 0x728; // client::CSWeaponSilencerType  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nCrosshairMinDistance = 0x72c; // int32_t m_nCrosshairMinDistance; |  0x72c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCrosshairDeltaDistance = 0x730; // int32_t m_nCrosshairDeltaDistance; |  0x730 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsFullAuto = 0x734; // bool m_bIsFullAuto; |  0x734 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nNumBullets = 0x738; // int32_t m_nNumBullets; |  0x738 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bReloadsSingleShells = 0x73c; // bool m_bReloadsSingleShells; |  0x73c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flCycleTime = 0x740; // client::CFiringModeFloat m_flCycleTime; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flMaxSpeed = 0x748; // client::CFiringModeFloat m_flMaxSpeed; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flSpread = 0x750; // client::CFiringModeFloat m_flSpread; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flInaccuracyCrouch = 0x758; // client::CFiringModeFloat m_flInaccuracyCrouch; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flInaccuracyStand = 0x760; // client::CFiringModeFloat m_flInaccuracyStand; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flInaccuracyJump = 0x768; // client::CFiringModeFloat m_flInaccuracyJump; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flInaccuracyLand = 0x770; // client::CFiringModeFloat m_flInaccuracyLand; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flInaccuracyLadder = 0x778; // client::CFiringModeFloat m_flInaccuracyLadder; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flInaccuracyFire = 0x780; // client::CFiringModeFloat m_flInaccuracyFire; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flInaccuracyMove = 0x788; // client::CFiringModeFloat m_flInaccuracyMove; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flRecoilAngle = 0x790; // client::CFiringModeFloat m_flRecoilAngle; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flRecoilAngleVariance = 0x798; // client::CFiringModeFloat m_flRecoilAngleVariance; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flRecoilMagnitude = 0x7a0; // client::CFiringModeFloat m_flRecoilMagnitude; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_flRecoilMagnitudeVariance = 0x7a8; // client::CFiringModeFloat m_flRecoilMagnitudeVariance; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_nTracerFrequency = 0x7b0; // client::CFiringModeInt m_nTracerFrequency; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flCycleTime = 0x740; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flMaxSpeed = 0x748; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flSpread = 0x750; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flInaccuracyCrouch = 0x758; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flInaccuracyStand = 0x760; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flInaccuracyJump = 0x768; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flInaccuracyLand = 0x770; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flInaccuracyLadder = 0x778; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flInaccuracyFire = 0x780; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flInaccuracyMove = 0x788; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flRecoilAngle = 0x790; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flRecoilAngleVariance = 0x798; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flRecoilMagnitude = 0x7a0; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flRecoilMagnitudeVariance = 0x7a8; // client::CFiringModeFloat  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_nTracerFrequency = 0x7b0; // client::CFiringModeInt  | Schema_DeclaredClass | Size: 0x8
 				constexpr std::ptrdiff_t m_flInaccuracyJumpInitial = 0x7b8; // float32 m_flInaccuracyJumpInitial; |  0x7b8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInaccuracyJumpApex = 0x7bc; // float32 m_flInaccuracyJumpApex; |  0x7bc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInaccuracyReload = 0x7c0; // float32 m_flInaccuracyReload; |  0x7c0 | Schema_Builtin | Size: 0x4
@@ -62,7 +62,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flAttackMovespeedFactor = 0x7dc; // float32 m_flAttackMovespeedFactor; |  0x7dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInaccuracyPitchShift = 0x7e0; // float32 m_flInaccuracyPitchShift; |  0x7e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInaccuracyAltSoundThreshold = 0x7e4; // float32 m_flInaccuracyAltSoundThreshold; |  0x7e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szUseRadioSubtitle = 0x7e8; // GlobalTypes::CUtlString m_szUseRadioSubtitle; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szUseRadioSubtitle = 0x7e8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bUnzoomsAfterShot = 0x7f0; // bool m_bUnzoomsAfterShot; |  0x7f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHideViewModelWhenZoomed = 0x7f1; // bool m_bHideViewModelWhenZoomed; |  0x7f1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nZoomLevels = 0x7f4; // int32_t m_nZoomLevels; |  0x7f4 | Schema_Builtin | Size: 0x4
@@ -91,8 +91,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nRecoveryTransitionStartBullet = 0x850; // int32_t m_nRecoveryTransitionStartBullet; |  0x850 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nRecoveryTransitionEndBullet = 0x854; // int32_t m_nRecoveryTransitionEndBullet; |  0x854 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flThrowVelocity = 0x858; // float32 m_flThrowVelocity; |  0x858 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vSmokeColor = 0x85c; // GlobalTypes::Vector m_vSmokeColor; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_szAnimClass = 0x868; // GlobalTypes::CGlobalSymbol m_szAnimClass; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vSmokeColor = 0x85c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_szAnimClass = 0x868; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

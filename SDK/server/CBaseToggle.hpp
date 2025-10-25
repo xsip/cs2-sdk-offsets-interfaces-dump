@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -34,8 +39,8 @@ namespace CS2 {
 			GlobalTypes::QAngle m_vecAngle1; // 0x810 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_vecAngle2; // 0x81c | Schema_Atomic | Size: 0xc
 			float32 m_flHeight; // 0x828 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hActivator; // 0x82c | Schema_Atomic | Size: 0x4
-			char  m_hActivator[0x4]; // 0x82c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hActivator; // 0x82c | Schema_Atomic | Size: 0x4
+			// char  m_hActivator[0x4]; // 0x82c | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vecFinalDest; // 0x830 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_vecFinalAngle; // 0x83c | Schema_Atomic | Size: 0xc
 			int32_t m_movementType; // 0x848 | Schema_Builtin | Size: 0x4

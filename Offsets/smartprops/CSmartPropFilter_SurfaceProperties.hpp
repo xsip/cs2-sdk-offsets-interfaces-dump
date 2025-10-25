@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x80
 			namespace CSmartPropFilter_SurfaceProperties /*: public CS2::smartprops::CSmartPropFilter*/ {
-				constexpr std::ptrdiff_t m_AllowedSurfaceProperties = 0x50; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_AllowedSurfaceProperties; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_DisallowedSurfaceProperties = 0x68; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_DisallowedSurfaceProperties; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_AllowedSurfaceProperties = 0x50; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_DisallowedSurfaceProperties = 0x68; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

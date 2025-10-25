@@ -14,10 +14,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_unAccountID = 0x7dc; // uint32_t m_unAccountID; |  0x7dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unTraceID = 0x7e0; // uint32_t m_unTraceID; |  0x7e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_rtGcTime = 0x7e4; // uint32_t m_rtGcTime; |  0x7e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecEndPos = 0x7e8; // GlobalTypes::Vector m_vecEndPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecStart = 0x7f4; // GlobalTypes::Vector m_vecStart; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecLeft = 0x800; // GlobalTypes::Vector m_vecLeft; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecNormal = 0x80c; // GlobalTypes::Vector m_vecNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecEndPos = 0x7e8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecStart = 0x7f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLeft = 0x800; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNormal = 0x80c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nPlayer = 0x818; // int32_t m_nPlayer; |  0x818 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nEntity = 0x81c; // int32_t m_nEntity; |  0x81c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHitbox = 0x820; // int32_t m_nHitbox; |  0x820 | Schema_Builtin | Size: 0x4

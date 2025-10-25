@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x50
 			namespace CPulse_Variable /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::PulseSymbol_t m_Name; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Description = 0x10; // GlobalTypes::CUtlString m_Description; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Type = 0x18; // GlobalTypes::CPulseValueFullType m_Type; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_DefaultValue = 0x30; // GlobalTypes::KeyValues3 m_DefaultValue; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_nKeysSource = 0x44; // pulse_runtime_lib::PulseVariableKeysSource_t m_nKeysSource; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Description = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Type = 0x18; // GlobalTypes::CPulseValueFullType  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_DefaultValue = 0x30; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_nKeysSource = 0x44; // pulse_runtime_lib::PulseVariableKeysSource_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsPublicBlackboardVariable = 0x48; // bool m_bIsPublicBlackboardVariable; |  0x48 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsObservable = 0x49; // bool m_bIsObservable; |  0x49 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nEditorNodeID = 0x4c; // pulse_runtime_lib::PulseDocNodeID_t m_nEditorNodeID; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nEditorNodeID = 0x4c; // pulse_runtime_lib::PulseDocNodeID_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

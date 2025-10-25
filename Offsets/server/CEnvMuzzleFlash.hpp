@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x500
 			namespace CEnvMuzzleFlash /*: public CS2::server::CPointEntity*/ {
 				constexpr std::ptrdiff_t m_flScale = 0x4f0; // float32 m_flScale; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszParentAttachment = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_iszParentAttachment; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszParentAttachment = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

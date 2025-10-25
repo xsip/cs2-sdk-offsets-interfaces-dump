@@ -45,16 +45,16 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName02; // 0x880 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName03; // 0x888 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_szDamagePositioningEntityName04; // 0x890 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_vInitialDamagePositions; // 0x898 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector> m_vInitialDamagePositions; // 0x898 | Schema_Atomic | Size: 0x18
 			// char  m_vInitialDamagePositions[0x18]; // 0x898 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_vExtraDamagePositions; // 0x8b0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector> m_vExtraDamagePositions; // 0x8b0 | Schema_Atomic | Size: 0x18
 			// char  m_vExtraDamagePositions[0x18]; // 0x8b0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::Vector4D > m_vInitialPanelVertices; // 0x8c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector4D> m_vInitialPanelVertices; // 0x8c8 | Schema_Atomic | Size: 0x18
 			// char  m_vInitialPanelVertices[0x18]; // 0x8c8 | Schema_Atomic | Size: 0x18
 			entity2::CEntityIOOutput m_OnBroken; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
 			uint8_t m_iSurfaceType; // 0x908 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterialDamageBase; // 0x910 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterialDamageBase; // 0x910 | Schema_Atomic | Size: 0x8
 			char  m_hMaterialDamageBase[0x8]; // 0x910 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CFuncShatterglass, m_matPanelTransform) == 0x7D8, "m_matPanelTransform in CFuncShatterglass should be at offset 0x7D8");

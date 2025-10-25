@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x28
 			namespace CAnimFoot /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vBallOffset = 0x8; // GlobalTypes::Vector m_vBallOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vHeelOffset = 0x14; // GlobalTypes::Vector m_vHeelOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vBallOffset = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vHeelOffset = 0x14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_ankleBoneIndex = 0x20; // int32_t m_ankleBoneIndex; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_toeBoneIndex = 0x24; // int32_t m_toeBoneIndex; |  0x24 | Schema_Builtin | Size: 0x4
 			}

@@ -36,10 +36,10 @@ namespace CS2 {
 			S2_PAD(0x2);
 			float32 m_flFogMaxOpacity; // 0x620 | Schema_Builtin | Size: 0x4
 			int32_t m_nCubemapSourceType; // 0x624 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; // 0x628 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSkyMaterial; // 0x628 | Schema_Atomic | Size: 0x8
 			char  m_hSkyMaterial[0x8]; // 0x628 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszSkyEntity; // 0x630 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hFogCubemapTexture; // 0x638 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogCubemapTexture; // 0x638 | Schema_Atomic | Size: 0x8
 			char  m_hFogCubemapTexture[0x8]; // 0x638 | Schema_Atomic | Size: 0x8
 			bool m_bHasHeightFogEnd; // 0x640 | Schema_Builtin | Size: 0x1
 			bool m_bFirstTime; // 0x641 | Schema_Builtin | Size: 0x1

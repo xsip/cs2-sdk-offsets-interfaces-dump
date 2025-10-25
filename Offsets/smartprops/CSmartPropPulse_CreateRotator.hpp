@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x50
 			namespace CSmartPropPulse_CreateRotator /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_Name = 0x48; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Name = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

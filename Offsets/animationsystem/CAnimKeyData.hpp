@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x78
 			namespace CAnimKeyData /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString m_name; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_boneArray = 0x10; // GlobalTypes::CUtlVector< animationsystem::CAnimBone > m_boneArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_userArray = 0x28; // GlobalTypes::CUtlVector< animationsystem::CAnimUser > m_userArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_morphArray = 0x40; // GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_morphArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_boneArray = 0x10; // GlobalTypes::CUtlVector<animationsystem::CAnimBone>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_userArray = 0x28; // GlobalTypes::CUtlVector<animationsystem::CAnimUser>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_morphArray = 0x40; // GlobalTypes::CUtlVector<GlobalTypes::CBufferString>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nChannelElements = 0x58; // int32_t m_nChannelElements; |  0x58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_dataChannelArray = 0x60; // GlobalTypes::CUtlVector< animationsystem::CAnimDataChannelDesc > m_dataChannelArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_dataChannelArray = 0x60; // GlobalTypes::CUtlVector<animationsystem::CAnimDataChannelDesc>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

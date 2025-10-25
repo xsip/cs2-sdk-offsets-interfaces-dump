@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace navlib {
 			// Class size: 0x18
 			namespace CNavHullPresetVData /**/ {
-				constexpr std::ptrdiff_t m_vecNavHulls = 0x0; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_vecNavHulls; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecNavHulls = 0x0; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

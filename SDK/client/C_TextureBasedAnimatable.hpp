@@ -24,9 +24,9 @@ namespace CS2 {
 			bool m_bLoop; // 0xeb0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flFPS; // 0xeb4 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hPositionKeys; // 0xeb8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hPositionKeys; // 0xeb8 | Schema_Atomic | Size: 0x8
 			char  m_hPositionKeys[0x8]; // 0xeb8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hRotationKeys; // 0xec0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hRotationKeys; // 0xec0 | Schema_Atomic | Size: 0x8
 			char  m_hRotationKeys[0x8]; // 0xec0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_vAnimationBoundsMin; // 0xec8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vAnimationBoundsMax; // 0xed4 | Schema_Atomic | Size: 0xc

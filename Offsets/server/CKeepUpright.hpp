@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x530
 			namespace CKeepUpright /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_worldGoalAxis = 0x4f8; // GlobalTypes::Vector m_worldGoalAxis; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_localTestAxis = 0x504; // GlobalTypes::Vector m_localTestAxis; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nameAttach = 0x518; // GlobalTypes::CUtlSymbolLarge m_nameAttach; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_attachedObject = 0x520; // server::CHandle< server::CBaseEntity > m_attachedObject; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_worldGoalAxis = 0x4f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_localTestAxis = 0x504; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nameAttach = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachedObject = 0x520; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_angularLimit = 0x524; // float32 m_angularLimit; |  0x524 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bActive = 0x528; // bool m_bActive; |  0x528 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDampAllRotation = 0x529; // bool m_bDampAllRotation; |  0x529 | Schema_Builtin | Size: 0x1

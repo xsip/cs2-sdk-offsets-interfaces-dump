@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x58
 			namespace ScriptInfo_t /**/ {
-				constexpr std::ptrdiff_t m_code = 0x0; // GlobalTypes::CUtlString m_code; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_paramsModified = 0x8; // GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_paramsModified; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_proxyReadParams = 0x20; // GlobalTypes::CUtlVector< int32 > m_proxyReadParams; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_proxyWriteParams = 0x38; // GlobalTypes::CUtlVector< int32 > m_proxyWriteParams; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_eScriptType = 0x50; // animgraphlib::AnimScriptType m_eScriptType; |  Schema_DeclaredEnum | Size: 0x2
+				constexpr std::ptrdiff_t m_code = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_paramsModified = 0x8; // GlobalTypes::CUtlVector<animgraphlib::CAnimParamHandle>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_proxyReadParams = 0x20; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_proxyWriteParams = 0x38; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_eScriptType = 0x50; // animgraphlib::AnimScriptType  | Schema_DeclaredEnum | Size: 0x2
 			}
 		}
 	}

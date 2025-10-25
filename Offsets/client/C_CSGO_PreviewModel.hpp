@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1880
 			namespace C_CSGO_PreviewModel /*: public CS2::client::C_BaseFlex*/ {
-				constexpr std::ptrdiff_t m_defaultAnim = 0x1368; // GlobalTypes::CUtlString m_defaultAnim; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nDefaultAnimLoopMode = 0x1370; // client::AnimLoopMode_t m_nDefaultAnimLoopMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_defaultAnim = 0x1368; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nDefaultAnimLoopMode = 0x1370; // client::AnimLoopMode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flInitialModelScale = 0x1374; // float32 m_flInitialModelScale; |  0x1374 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sInitialWeaponState = 0x1378; // GlobalTypes::CUtlString m_sInitialWeaponState; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sInitialWeaponState = 0x1378; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x648
 			namespace C_CSGO_MapPreviewCameraPathNode /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_szParentPathUniqueID = 0x5f8; // GlobalTypes::CUtlSymbolLarge m_szParentPathUniqueID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szParentPathUniqueID = 0x5f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nPathIndex = 0x600; // int32_t m_nPathIndex; |  0x600 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vInTangentLocal = 0x604; // GlobalTypes::Vector m_vInTangentLocal; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOutTangentLocal = 0x610; // GlobalTypes::Vector m_vOutTangentLocal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vInTangentLocal = 0x604; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOutTangentLocal = 0x610; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flFOV = 0x61c; // float32 m_flFOV; |  0x61c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCameraSpeed = 0x620; // float32 m_flCameraSpeed; |  0x620 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEaseIn = 0x624; // float32 m_flEaseIn; |  0x624 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEaseOut = 0x628; // float32 m_flEaseOut; |  0x628 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vInTangentWorld = 0x62c; // GlobalTypes::Vector m_vInTangentWorld; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOutTangentWorld = 0x638; // GlobalTypes::Vector m_vOutTangentWorld; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vInTangentWorld = 0x62c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOutTangentWorld = 0x638; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

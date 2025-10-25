@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x10
 			namespace FeNodeReverseOffset_t /**/ {
-				constexpr std::ptrdiff_t vOffset = 0x0; // GlobalTypes::Vector vOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t vOffset = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t nBoneCtrl = 0xc; // uint16_t nBoneCtrl; |  0xc | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nTargetNode = 0xe; // uint16_t nTargetNode; |  0xe | Schema_Builtin | Size: 0x2
 			}

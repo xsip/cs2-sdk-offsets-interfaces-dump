@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x1E0
 			namespace CBodyComponentPoint /*: public CS2::server::CBodyComponent*/ {
-				constexpr std::ptrdiff_t m_sceneNode = 0x80; // server::CGameSceneNode m_sceneNode; |  Schema_DeclaredClass | Size: 0x160
+				constexpr std::ptrdiff_t m_sceneNode = 0x80; // server::CGameSceneNode  | Schema_DeclaredClass | Size: 0x160
 			}
 		}
 	}

@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CNmIKJoint /**/ {
 				constexpr std::ptrdiff_t m_nParentIndex = 0x0; // int32_t m_nParentIndex; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nBodyIndex = 0x4; // int32_t m_nBodyIndex; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_xLocalFrame = 0x10; // GlobalTypes::CTransform m_xLocalFrame; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_xLocalFrame = 0x10; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_flSwingLimit = 0x30; // float32 m_flSwingLimit; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinTwistLimit = 0x34; // float32 m_flMinTwistLimit; |  0x34 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxTwistLimit = 0x38; // float32 m_flMaxTwistLimit; |  0x38 | Schema_Builtin | Size: 0x4

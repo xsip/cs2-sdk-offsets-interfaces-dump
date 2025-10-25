@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x80
 			namespace CSmartPropMaterialReplacement /**/ {
-				constexpr std::ptrdiff_t m_OriginalMaterial = 0x0; // GlobalTypes::CSmartPropAttributeMaterialName m_OriginalMaterial; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_ReplacementMaterial = 0x40; // GlobalTypes::CSmartPropAttributeMaterialName m_ReplacementMaterial; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_OriginalMaterial = 0x0; // GlobalTypes::CSmartPropAttributeMaterialName  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_ReplacementMaterial = 0x40; // GlobalTypes::CSmartPropAttributeMaterialName  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

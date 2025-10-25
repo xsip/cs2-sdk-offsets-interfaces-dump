@@ -32,7 +32,7 @@ namespace CS2 {
 			float32 m_flMagnitude; // 0x44 | Schema_Builtin | Size: 0x4
 			float32 m_flRadius; // 0x48 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlStringToken m_nSurfaceProp; // 0x4c | Schema_Atomic | Size: 0x4
-			// GlobalTypes::CWeakHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_nEffectIndex; // 0x50 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_nEffectIndex; // 0x50 | Schema_Atomic | Size: 0x8
 			char  m_nEffectIndex[0x8]; // 0x50 | Schema_Atomic | Size: 0x8
 			uint32_t m_nDamageType; // 0x58 | Schema_Builtin | Size: 0x4
 			uint8_t m_nPenetrate; // 0x5c | Schema_Builtin | Size: 0x1

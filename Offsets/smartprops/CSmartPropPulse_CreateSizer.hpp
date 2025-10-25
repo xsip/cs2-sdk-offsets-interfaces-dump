@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x58
 			namespace CSmartPropPulse_CreateSizer /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_Name = 0x48; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Name = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bHACK_ProvideResultMinX = 0x50; // bool m_bHACK_ProvideResultMinX; |  0x50 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHACK_ProvideResultMaxX = 0x51; // bool m_bHACK_ProvideResultMaxX; |  0x51 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHACK_ProvideResultMinY = 0x52; // bool m_bHACK_ProvideResultMinY; |  0x52 | Schema_Builtin | Size: 0x1

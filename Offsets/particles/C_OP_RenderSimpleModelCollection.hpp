@@ -11,14 +11,14 @@ namespace CS2 {
 			// Class size: 0x590
 			namespace C_OP_RenderSimpleModelCollection /*: public CS2::particles::CParticleFunctionRenderer*/ {
 				constexpr std::ptrdiff_t m_bCenterOffset = 0x220; // bool m_bCenterOffset; |  0x220 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hModel = 0x228; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_modelInput = 0x230; // particleslib::CParticleModelInput m_modelInput; |  Schema_DeclaredClass | Size: 0x60
-				constexpr std::ptrdiff_t m_fSizeCullScale = 0x290; // particleslib::CParticleCollectionFloatInput m_fSizeCullScale; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_hModel = 0x228; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_modelInput = 0x230; // particleslib::CParticleModelInput  | Schema_DeclaredClass | Size: 0x60
+				constexpr std::ptrdiff_t m_fSizeCullScale = 0x290; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bDisableShadows = 0x400; // bool m_bDisableShadows; |  0x400 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDisableMotionBlur = 0x401; // bool m_bDisableMotionBlur; |  0x401 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAcceptsDecals = 0x402; // bool m_bAcceptsDecals; |  0x402 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fDrawFilter = 0x408; // particleslib::CPerParticleFloatInput m_fDrawFilter; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nAngularVelocityField = 0x578; // particles::ParticleAttributeIndex_t m_nAngularVelocityField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fDrawFilter = 0x408; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nAngularVelocityField = 0x578; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

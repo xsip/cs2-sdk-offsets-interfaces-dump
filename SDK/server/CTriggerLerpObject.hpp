@@ -18,6 +18,7 @@
 
 namespace CS2 {
 	namespace server {
+		class CBaseEntity;
 		class lerpdata_t;
 	}
 }
@@ -29,8 +30,8 @@ namespace CS2 {
 		class CTriggerLerpObject : public CS2::server::CBaseTrigger {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszLerpTarget; // 0x9a8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hLerpTarget; // 0x9b0 | Schema_Atomic | Size: 0x4
-			char  m_hLerpTarget[0x4]; // 0x9b0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLerpTarget; // 0x9b0 | Schema_Atomic | Size: 0x4
+			// char  m_hLerpTarget[0x4]; // 0x9b0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszLerpTargetAttachment; // 0x9b8 | Schema_Atomic | Size: 0x8
 			modellib::AttachmentHandle_t m_hLerpTargetAttachment; // 0x9c0 | Schema_DeclaredClass | Size: 0x1
@@ -39,14 +40,14 @@ namespace CS2 {
 			bool m_bLerpRestoreMoveType; // 0x9c8 | Schema_Builtin | Size: 0x1
 			bool m_bSingleLerpObject; // 0x9c9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlVector< server::lerpdata_t > m_vecLerpingObjects; // 0x9d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<server::lerpdata_t> m_vecLerpingObjects; // 0x9d0 | Schema_Atomic | Size: 0x18
 			// char  m_vecLerpingObjects[0x18]; // 0x9d0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszLerpEffect; // 0x9e8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszLerpSound; // 0x9f0 | Schema_Atomic | Size: 0x8
 			bool m_bAttachTouchingObject; // 0x9f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CBaseEntity > m_hEntityToWaitForDisconnect; // 0x9fc | Schema_Atomic | Size: 0x4
-			char  m_hEntityToWaitForDisconnect[0x4]; // 0x9fc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntityToWaitForDisconnect; // 0x9fc | Schema_Atomic | Size: 0x4
+			// char  m_hEntityToWaitForDisconnect[0x4]; // 0x9fc | Schema_Atomic | Size: 0x4
 			entity2::CEntityIOOutput m_OnLerpStarted; // 0xa00 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnLerpFinished; // 0xa28 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnDetached; // 0xa50 | Schema_DeclaredClass | Size: 0x28

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x560
 			namespace CPhysTorque /*: public CS2::server::CPhysForce*/ {
-				constexpr std::ptrdiff_t m_axis = 0x550; // GlobalTypes::VectorWS m_axis; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_axis = 0x550; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

@@ -14,9 +14,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nEndFrame = 0xc; // int32_t m_nEndFrame; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCycle = 0x10; // float32 m_flCycle; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDuration = 0x14; // float32 m_flDuration; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_EventData = 0x18; // GlobalTypes::KeyValues3 m_EventData; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_sLegacyOptions = 0x28; // GlobalTypes::CBufferString m_sLegacyOptions; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_sEventName = 0x38; // GlobalTypes::CGlobalSymbol m_sEventName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_EventData = 0x18; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sLegacyOptions = 0x28; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sEventName = 0x38; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

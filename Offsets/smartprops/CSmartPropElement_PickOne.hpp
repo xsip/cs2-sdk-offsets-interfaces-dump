@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x230
 			namespace CSmartPropElement_PickOne /*: public CS2::smartprops::CSmartPropElement_Group*/ {
-				constexpr std::ptrdiff_t m_SelectionMode = 0xa0; // smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_SpecificChildIndex = 0xe0; // GlobalTypes::CSmartPropAttributeInt m_SpecificChildIndex; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_OutputChoiceVariableName = 0x120; // GlobalTypes::CUtlString m_OutputChoiceVariableName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bConfigurable = 0x128; // GlobalTypes::CSmartPropAttributeBool m_bConfigurable; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vHandleOffset = 0x168; // GlobalTypes::CSmartPropAttributeVector m_vHandleOffset; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_HandleColor = 0x1a8; // GlobalTypes::CSmartPropAttributeColor m_HandleColor; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_HandleSize = 0x1e8; // GlobalTypes::CSmartPropAttributeInt m_HandleSize; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_HandleShape = 0x228; // smartprops::ConfigurationHandleShape_t m_HandleShape; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_SelectionMode = 0xa0; // smartprops::CSmartPropAttributeChoiceSelectionMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_SpecificChildIndex = 0xe0; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_OutputChoiceVariableName = 0x120; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bConfigurable = 0x128; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vHandleOffset = 0x168; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_HandleColor = 0x1a8; // GlobalTypes::CSmartPropAttributeColor  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_HandleSize = 0x1e8; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_HandleShape = 0x228; // smartprops::ConfigurationHandleShape_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

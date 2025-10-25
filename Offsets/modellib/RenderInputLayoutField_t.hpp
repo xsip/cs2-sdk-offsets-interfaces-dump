@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nSemanticIndex = 0x20; // int8_t m_nSemanticIndex; |  0x20 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nOffset = 0x28; // int16_t m_nOffset; |  0x28 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nSlot = 0x2a; // int8_t m_nSlot; |  0x2a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nSlotType = 0x2b; // modellib::RenderSlotType_t m_nSlotType; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nSlotType = 0x2b; // modellib::RenderSlotType_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_szShaderSemantic = 0x2c; // char m_szShaderSemantic[32]; |  0x2c | Schema_FixedArray | Size: 0x20
 			}
 		}

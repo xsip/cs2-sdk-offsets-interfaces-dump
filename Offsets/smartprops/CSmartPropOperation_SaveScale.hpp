@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x58
 			namespace CSmartPropOperation_SaveScale /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_VariableName = 0x50; // GlobalTypes::CUtlString m_VariableName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_VariableName = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

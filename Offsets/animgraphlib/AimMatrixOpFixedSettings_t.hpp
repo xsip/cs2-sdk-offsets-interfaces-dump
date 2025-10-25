@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xF0
 			namespace AimMatrixOpFixedSettings_t /**/ {
-				constexpr std::ptrdiff_t m_attachment = 0x0; // modellib::CAnimAttachment m_attachment; |  Schema_DeclaredClass | Size: 0x80
-				constexpr std::ptrdiff_t m_damping = 0x80; // animgraphlib::CAnimInputDamping m_damping; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_poseCacheHandles = 0x98; // animgraphlib::CPoseHandle m_poseCacheHandles[10]; |  Schema_FixedArray | Size: 0x190
-				constexpr std::ptrdiff_t m_eBlendMode = 0xc0; // animgraphlib::AimMatrixBlendMode m_eBlendMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_attachment = 0x0; // modellib::CAnimAttachment  | Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_damping = 0x80; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_poseCacheHandles = 0x98; // GlobalTypes::CPoseHandle[10]  | Schema_FixedArray | Size: 0x190
+				constexpr std::ptrdiff_t m_eBlendMode = 0xc0; // animgraphlib::AimMatrixBlendMode  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxYawAngle = 0xc4; // float32 m_flMaxYawAngle; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxPitchAngle = 0xc8; // float32 m_flMaxPitchAngle; |  0xc8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSequenceMaxFrame = 0xcc; // int32_t m_nSequenceMaxFrame; |  0xcc | Schema_Builtin | Size: 0x4
@@ -22,7 +22,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bUseBiasAndClamp = 0xd5; // bool m_bUseBiasAndClamp; |  0xd5 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flBiasAndClampYawOffset = 0xd8; // float32 m_flBiasAndClampYawOffset; |  0xd8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBiasAndClampPitchOffset = 0xdc; // float32 m_flBiasAndClampPitchOffset; |  0xdc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_biasAndClampBlendCurve = 0xe0; // animgraphlib::CBlendCurve m_biasAndClampBlendCurve; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_biasAndClampBlendCurve = 0xe0; // animgraphlib::CBlendCurve  | Schema_DeclaredClass | Size: 0x8
 			}
 		}
 	}

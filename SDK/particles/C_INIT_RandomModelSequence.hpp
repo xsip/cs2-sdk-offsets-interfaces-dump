@@ -23,7 +23,7 @@ namespace CS2 {
 		public:
 			char m_ActivityName[256]; // 0x1d8 | Schema_FixedArray | Size: 0x100
 			char m_SequenceName[256]; // 0x2d8 | Schema_FixedArray | Size: 0x100
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x3d8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0x3d8 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0x3d8 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_ActivityName) == 0x1D8, "m_ActivityName in C_INIT_RandomModelSequence should be at offset 0x1D8");

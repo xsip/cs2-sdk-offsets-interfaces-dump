@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xF8
 			namespace CPulseCell_Outflow_PlaySequence /*: public CS2::server::CPulseCell_Outflow_PlaySceneBase*/ {
-				constexpr std::ptrdiff_t m_ParamSequenceName = 0xf0; // GlobalTypes::CUtlString m_ParamSequenceName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ParamSequenceName = 0xf0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

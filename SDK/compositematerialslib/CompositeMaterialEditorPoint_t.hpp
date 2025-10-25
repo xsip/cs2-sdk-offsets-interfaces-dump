@@ -26,18 +26,18 @@ namespace CS2 {
 	namespace compositematerialslib {
 		class CompositeMaterialEditorPoint_t  {
 		public:
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_ModelName; // 0x0 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_ModelName; // 0x0 | Schema_Atomic | Size: 0xe0
 			char  m_ModelName[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
 			int32_t m_nSequenceIndex; // 0xe0 | Schema_Builtin | Size: 0x4
 			float32 m_flCycle; // 0xe4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::KeyValues3 m_KVModelStateChoices; // 0xe8 | Schema_Atomic | Size: 0x10
 			bool m_bEnableChildModel; // 0xf8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_ChildModelName; // 0x100 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_ChildModelName; // 0x100 | Schema_Atomic | Size: 0xe0
 			char  m_ChildModelName[0xe0]; // 0x100 | Schema_Atomic | Size: 0xe0
-			GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialAssemblyProcedure_t > m_vecCompositeMaterialAssemblyProcedures; // 0x1e0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterialAssemblyProcedure_t> m_vecCompositeMaterialAssemblyProcedures; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char  m_vecCompositeMaterialAssemblyProcedures[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterial_t > m_vecCompositeMaterials; // 0x1f8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterial_t> m_vecCompositeMaterials; // 0x1f8 | Schema_Atomic | Size: 0x18
 			// char  m_vecCompositeMaterials[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

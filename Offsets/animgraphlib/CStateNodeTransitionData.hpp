@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x1C
 			namespace CStateNodeTransitionData /**/ {
-				constexpr std::ptrdiff_t m_curve = 0x0; // animgraphlib::CBlendCurve m_curve; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_blendDuration = 0x8; // GlobalTypes::CAnimValue< float32 > m_blendDuration; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_resetCycleValue = 0x10; // GlobalTypes::CAnimValue< float32 > m_resetCycleValue; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_curve = 0x0; // animgraphlib::CBlendCurve  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_blendDuration = 0x8; // GlobalTypes::CAnimValue  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_resetCycleValue = 0x10; // GlobalTypes::CAnimValue  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

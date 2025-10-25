@@ -30,7 +30,7 @@ namespace CS2 {
 			float32 m_flTargetBrightnessMultiplier; // 0x50c | Schema_Builtin | Size: 0x4
 			float32 m_flCurrentBrightnessMultiplier; // 0x510 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector< server.dll::CHandle< CLightEntity > > m_vecLights; // 0x518 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>> m_vecLights; // 0x518 | Schema_Atomic | Size: 0x18
 			char  m_vecLights[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightNameFilter) == 0x4F0, "m_iszLightNameFilter in CMultiLightProxy should be at offset 0x4F0");

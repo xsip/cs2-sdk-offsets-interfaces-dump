@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x248
 			namespace C_INIT_NormalAlignToCP /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_transformInput = 0x1d8; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_nControlPointAxis = 0x240; // particles::ParticleControlPointAxis_t m_nControlPointAxis; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_transformInput = 0x1d8; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_nControlPointAxis = 0x240; // particles::ParticleControlPointAxis_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

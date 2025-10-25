@@ -21,7 +21,7 @@ namespace CS2 {
 		class CEntityIOOutput  {
 		public:
 			S2_PAD(0x18);
-			// GlobalTypes::CVariantBase< entity2::CVariantDefaultAllocator > m_Value; // 0x18 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator> m_Value; // 0x18 | Schema_Atomic | Size: 0x10
 			char  m_Value[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::entity2::CEntityIOOutput, m_Value) == 0x18, "m_Value in CEntityIOOutput should be at offset 0x18");

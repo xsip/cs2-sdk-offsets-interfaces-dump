@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x78
 			namespace CCycleControlUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_valueSource = 0x70; // animgraphlib::AnimValueSource m_valueSource; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_paramIndex = 0x74; // animgraphlib::CAnimParamHandle m_paramIndex; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_valueSource = 0x70; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_paramIndex = 0x74; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bLockWhenWaning = 0x76; // bool m_bLockWhenWaning; |  0x76 | Schema_Builtin | Size: 0x1
 			}
 		}

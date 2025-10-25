@@ -26,9 +26,9 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_HostageServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hCarriedHostage; // 0x40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hCarriedHostage; // 0x40 | Schema_Atomic | Size: 0x4
 			// char  m_hCarriedHostage[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hCarriedHostageProp; // 0x44 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hCarriedHostageProp; // 0x44 | Schema_Atomic | Size: 0x4
 			// char  m_hCarriedHostageProp[0x4]; // 0x44 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::CCSPlayer_HostageServices, m_hCarriedHostage) == 0x40, "m_hCarriedHostage in CCSPlayer_HostageServices should be at offset 0x40");

@@ -13,8 +13,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nMaxCount = 0x8; // int32_t m_nMaxCount; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinValue = 0xc; // float32 m_flMinValue; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxValue = 0x10; // float32 m_flMaxValue; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_opvarName = 0x18; // GlobalTypes::CUtlString m_opvarName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nSortType = 0x20; // soundsystem::SosActionSetParamSortType_t m_nSortType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_opvarName = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nSortType = 0x20; // soundsystem::SosActionSetParamSortType_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

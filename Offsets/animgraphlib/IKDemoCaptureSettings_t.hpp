@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x28
 			namespace IKDemoCaptureSettings_t /**/ {
-				constexpr std::ptrdiff_t m_parentBoneName = 0x0; // GlobalTypes::CUtlString m_parentBoneName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_eMode = 0x8; // animgraphlib::IKChannelMode m_eMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_ikChainName = 0x10; // GlobalTypes::CUtlString m_ikChainName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_oneBoneStart = 0x18; // GlobalTypes::CUtlString m_oneBoneStart; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_oneBoneEnd = 0x20; // GlobalTypes::CUtlString m_oneBoneEnd; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_parentBoneName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_eMode = 0x8; // animgraphlib::IKChannelMode  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_ikChainName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_oneBoneStart = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_oneBoneEnd = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

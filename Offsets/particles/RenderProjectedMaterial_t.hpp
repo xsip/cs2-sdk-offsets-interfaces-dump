@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x8
 			namespace RenderProjectedMaterial_t /**/ {
-				constexpr std::ptrdiff_t m_hMaterial = 0x0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hMaterial = 0x0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

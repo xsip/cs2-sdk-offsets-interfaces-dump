@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x990
 			namespace CPointClientUIDialog /*: public CS2::server::CBaseClientUIEntity*/ {
-				constexpr std::ptrdiff_t m_hActivator = 0x988; // server::CHandle< server::CBaseEntity > m_hActivator; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hActivator = 0x988; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bStartEnabled = 0x98c; // bool m_bStartEnabled; |  0x98c | Schema_Builtin | Size: 0x1
 			}
 		}

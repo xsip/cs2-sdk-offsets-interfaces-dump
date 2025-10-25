@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x98
 			namespace CSmartPropOperation_ComputeNormalizedVector3D /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_OutputVariableName = 0x50; // GlobalTypes::CUtlString m_OutputVariableName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_InputVector = 0x58; // GlobalTypes::CSmartPropAttributeVector m_InputVector; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_OutputVariableName = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_InputVector = 0x58; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

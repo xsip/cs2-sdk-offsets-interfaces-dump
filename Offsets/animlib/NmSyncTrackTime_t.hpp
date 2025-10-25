@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x8
 			namespace NmSyncTrackTime_t /**/ {
 				constexpr std::ptrdiff_t m_nEventIdx = 0x0; // int32_t m_nEventIdx; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_percentageThrough = 0x4; // animlib::NmPercent_t m_percentageThrough; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_percentageThrough = 0x4; // animlib::NmPercent_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

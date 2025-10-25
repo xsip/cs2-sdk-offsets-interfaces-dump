@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,10 +27,10 @@ namespace CS2 {
 		class CPulseServerCursor : public CS2::pulse_runtime_lib::CPulseExecCursor {
 		public:
 			S2_PAD(0x8);
-			// server::CHandle< server::CBaseEntity > m_hActivator; // 0xd8 | Schema_Atomic | Size: 0x4
-			char  m_hActivator[0x4]; // 0xd8 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hCaller; // 0xdc | Schema_Atomic | Size: 0x4
-			char  m_hCaller[0x4]; // 0xdc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hActivator; // 0xd8 | Schema_Atomic | Size: 0x4
+			// char  m_hActivator[0x4]; // 0xd8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hCaller; // 0xdc | Schema_Atomic | Size: 0x4
+			// char  m_hCaller[0x4]; // 0xdc | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CPulseServerCursor, m_hActivator) == 0xD8, "m_hActivator in CPulseServerCursor should be at offset 0xD8");
 		static_assert(offsetof(CS2::server::CPulseServerCursor, m_hCaller) == 0xDC, "m_hCaller in CPulseServerCursor should be at offset 0xDC");

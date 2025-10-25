@@ -11,9 +11,9 @@ namespace CS2 {
 			// Class size: 0x638
 			namespace C_OP_RepeatedTriggerChildGroup /*: public CS2::particles::CParticleFunctionPreEmission*/ {
 				constexpr std::ptrdiff_t m_nChildGroupID = 0x1d8; // int32_t m_nChildGroupID; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flClusterRefireTime = 0x1e0; // particleslib::CParticleCollectionFloatInput m_flClusterRefireTime; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flClusterSize = 0x350; // particleslib::CParticleCollectionFloatInput m_flClusterSize; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flClusterCooldown = 0x4c0; // particleslib::CParticleCollectionFloatInput m_flClusterCooldown; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flClusterRefireTime = 0x1e0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flClusterSize = 0x350; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flClusterCooldown = 0x4c0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bLimitChildCount = 0x630; // bool m_bLimitChildCount; |  0x630 | Schema_Builtin | Size: 0x1
 			}
 		}

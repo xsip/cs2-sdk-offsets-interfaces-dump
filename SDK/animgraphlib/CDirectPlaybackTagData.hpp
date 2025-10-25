@@ -26,7 +26,7 @@ namespace CS2 {
 		class CDirectPlaybackTagData  {
 		public:
 			GlobalTypes::CUtlString m_sequenceName; // 0x0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::TagSpan_t> m_tags; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CDirectPlaybackTagData, m_sequenceName) == 0x0, "m_sequenceName in CDirectPlaybackTagData should be at offset 0x0");

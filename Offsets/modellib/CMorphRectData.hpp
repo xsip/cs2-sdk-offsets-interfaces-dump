@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nYTopDst = 0x2; // int16_t m_nYTopDst; |  0x2 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_flUWidthSrc = 0x4; // float32 m_flUWidthSrc; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flVHeightSrc = 0x8; // float32 m_flVHeightSrc; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bundleDatas = 0x10; // GlobalTypes::CUtlVector< modellib::CMorphBundleData > m_bundleDatas; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bundleDatas = 0x10; // GlobalTypes::CUtlVector<modellib::CMorphBundleData>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

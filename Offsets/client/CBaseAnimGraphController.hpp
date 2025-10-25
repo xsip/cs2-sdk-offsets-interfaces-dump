@@ -10,23 +10,23 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1A90
 			namespace CBaseAnimGraphController /*: public CS2::client::CSkeletonAnimationController*/ {
-				constexpr std::ptrdiff_t m_animGraphNetworkedVars = 0x18; // client::CAnimGraphNetworkedVariables m_animGraphNetworkedVars; |  Schema_DeclaredClass | Size: 0x1490
+				constexpr std::ptrdiff_t m_animGraphNetworkedVars = 0x18; // client::CAnimGraphNetworkedVariables  | Schema_DeclaredClass | Size: 0x1490
 				constexpr std::ptrdiff_t m_bSequenceFinished = 0x14a8; // bool m_bSequenceFinished; |  0x14a8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flSoundSyncTime = 0x14ac; // float32 m_flSoundSyncTime; |  0x14ac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nActiveIKChainMask = 0x14b0; // uint32_t m_nActiveIKChainMask; |  0x14b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSequence = 0x14b4; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flSeqStartTime = 0x14b8; // entity2::GameTime_t m_flSeqStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hSequence = 0x14b4; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flSeqStartTime = 0x14b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flSeqFixedCycle = 0x14bc; // float32 m_flSeqFixedCycle; |  0x14bc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAnimLoopMode = 0x14c0; // client::AnimLoopMode_t m_nAnimLoopMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flPlaybackRate = 0x14c4; // GlobalTypes::CNetworkedQuantizedFloat m_flPlaybackRate; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nNotifyState = 0x14d0; // client::SequenceFinishNotifyState_t m_nNotifyState; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nAnimLoopMode = 0x14c0; // client::AnimLoopMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flPlaybackRate = 0x14c4; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nNotifyState = 0x14d0; // client::SequenceFinishNotifyState_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_bNetworkedAnimationInputsChanged = 0x14d2; // bool m_bNetworkedAnimationInputsChanged; |  0x14d2 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bNetworkedSequenceChanged = 0x14d3; // bool m_bNetworkedSequenceChanged; |  0x14d3 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLastUpdateSkipped = 0x14d4; // bool m_bLastUpdateSkipped; |  0x14d4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flPrevAnimUpdateTime = 0x14d8; // entity2::GameTime_t m_flPrevAnimUpdateTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_hGraphDefinitionAG2 = 0x1860; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmGraphDefinition > m_hGraphDefinitionAG2; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flPrevAnimUpdateTime = 0x14d8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hGraphDefinitionAG2 = 0x1860; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmGraphDefinition>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bIsUsingAG2 = 0x1868; // bool m_bIsUsingAG2; |  0x1868 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_serializedPoseRecipeAG2 = 0x1870; // GlobalTypes::C_NetworkUtlVectorBase< uint8 > m_serializedPoseRecipeAG2; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_serializedPoseRecipeAG2 = 0x1870; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nSerializePoseRecipeSizeAG2 = 0x1888; // int32_t m_nSerializePoseRecipeSizeAG2; |  0x1888 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSerializePoseRecipeVersionAG2 = 0x188c; // int32_t m_nSerializePoseRecipeVersionAG2; |  0x188c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGraphCreationFlagsAG2 = 0x1890; // uint8_t m_nGraphCreationFlagsAG2; |  0x1890 | Schema_Builtin | Size: 0x1

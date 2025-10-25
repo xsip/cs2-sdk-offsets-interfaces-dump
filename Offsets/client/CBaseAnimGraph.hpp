@@ -14,13 +14,13 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bSuppressAnimEventSounds = 0xf32; // bool m_bSuppressAnimEventSounds; |  0xf32 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAnimGraphUpdateEnabled = 0xf40; // bool m_bAnimGraphUpdateEnabled; |  0xf40 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMaxSlopeDistance = 0xf44; // float32 m_flMaxSlopeDistance; |  0xf44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLastSlopeCheckPos = 0xf48; // GlobalTypes::VectorWS m_vLastSlopeCheckPos; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLastSlopeCheckPos = 0xf48; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bAnimationUpdateScheduled = 0xf54; // bool m_bAnimationUpdateScheduled; |  0xf54 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecForce = 0xf58; // GlobalTypes::Vector m_vecForce; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecForce = 0xf58; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nForceBone = 0xf64; // int32_t m_nForceBone; |  0xf64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pClientsideRagdoll = 0xf68; // client::CBaseAnimGraph* m_pClientsideRagdoll; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pClientsideRagdoll = 0xf68; // client::CBaseAnimGraph**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_bBuiltRagdoll = 0xf70; // bool m_bBuiltRagdoll; |  0xf70 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RagdollPose = 0xf88; // client::PhysicsRagdollPose_t m_RagdollPose; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_RagdollPose = 0xf88; // client::PhysicsRagdollPose_t  | Schema_DeclaredClass | Size: 0x48
 				constexpr std::ptrdiff_t m_bRagdollEnabled = 0xfd0; // bool m_bRagdollEnabled; |  0xfd0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bRagdollClientSide = 0xfd1; // bool m_bRagdollClientSide; |  0xfd1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasAnimatedMaterialAttributes = 0xfe0; // bool m_bHasAnimatedMaterialAttributes; |  0xfe0 | Schema_Builtin | Size: 0x1

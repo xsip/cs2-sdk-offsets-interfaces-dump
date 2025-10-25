@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem_lowlevel {
 			// Class size: 0x8
 			namespace VMixPannerDesc_t /**/ {
-				constexpr std::ptrdiff_t m_type = 0x0; // soundsystem_lowlevel::VMixPannerType_t m_type; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_type = 0x0; // soundsystem_lowlevel::VMixPannerType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flStrength = 0x4; // float32 m_flStrength; |  0x4 | Schema_Builtin | Size: 0x4
 			}
 		}

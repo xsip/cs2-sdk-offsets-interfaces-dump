@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x10
 			namespace CStateActionUpdater /**/ {
-				constexpr std::ptrdiff_t m_pAction = 0x0; // GlobalTypes::CSmartPtr< animgraphlib::CAnimActionUpdater > m_pAction; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_eBehavior = 0x8; // animgraphlib::StateActionBehavior m_eBehavior; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_pAction = 0x0; // GlobalTypes::CSmartPtr<animgraphlib::CAnimActionUpdater>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_eBehavior = 0x8; // animgraphlib::StateActionBehavior  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

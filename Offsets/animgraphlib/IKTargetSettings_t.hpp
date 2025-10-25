@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x28
 			namespace IKTargetSettings_t /**/ {
-				constexpr std::ptrdiff_t m_TargetSource = 0x0; // animgraphlib::IKTargetSource m_TargetSource; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_Bone = 0x8; // animgraphlib::IKBoneNameAndIndex_t m_Bone; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_AnimgraphParameterNamePosition = 0x18; // modellib::AnimParamID m_AnimgraphParameterNamePosition; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_AnimgraphParameterNameOrientation = 0x1c; // modellib::AnimParamID m_AnimgraphParameterNameOrientation; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_TargetCoordSystem = 0x20; // animgraphlib::IKTargetCoordinateSystem m_TargetCoordSystem; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_TargetSource = 0x0; // animgraphlib::IKTargetSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Bone = 0x8; // animgraphlib::IKBoneNameAndIndex_t  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_AnimgraphParameterNamePosition = 0x18; // modellib::AnimParamID  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_AnimgraphParameterNameOrientation = 0x1c; // modellib::AnimParamID  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_TargetCoordSystem = 0x20; // animgraphlib::IKTargetCoordinateSystem  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x800
 			namespace CScriptNavBlocker /*: public CS2::server::CFuncNavBlocker*/ {
-				constexpr std::ptrdiff_t m_vExtent = 0x7f0; // GlobalTypes::Vector m_vExtent; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vExtent = 0x7f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

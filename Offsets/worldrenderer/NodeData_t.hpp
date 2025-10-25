@@ -11,12 +11,12 @@ namespace CS2 {
 			// Class size: 0x50
 			namespace NodeData_t /**/ {
 				constexpr std::ptrdiff_t m_nParent = 0x0; // int32_t m_nParent; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vOrigin = 0x4; // GlobalTypes::Vector m_vOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMinBounds = 0x10; // GlobalTypes::Vector m_vMinBounds; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxBounds = 0x1c; // GlobalTypes::Vector m_vMaxBounds; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOrigin = 0x4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMinBounds = 0x10; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxBounds = 0x1c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flMinimumDistance = 0x28; // float32 m_flMinimumDistance; |  0x28 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ChildNodeIndices = 0x30; // GlobalTypes::CUtlVector< int32 > m_ChildNodeIndices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_worldNodePrefix = 0x48; // GlobalTypes::CUtlString m_worldNodePrefix; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ChildNodeIndices = 0x30; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_worldNodePrefix = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

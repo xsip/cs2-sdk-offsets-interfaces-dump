@@ -32,29 +32,29 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_materialName; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_shaderName; // 0x8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamInt_t > m_intParams; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamInt_t> m_intParams; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_intParams[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamFloat_t > m_floatParams; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamFloat_t> m_floatParams; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_floatParams[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamVector_t > m_vectorParams; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamVector_t> m_vectorParams; // 0x40 | Schema_Atomic | Size: 0x18
 			// char  m_vectorParams[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamTexture_t > m_textureParams; // 0x58 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamTexture_t> m_textureParams; // 0x58 | Schema_Atomic | Size: 0x18
 			// char  m_textureParams[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamBuffer_t > m_dynamicParams; // 0x70 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamBuffer_t> m_dynamicParams; // 0x70 | Schema_Atomic | Size: 0x18
 			// char  m_dynamicParams[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamBuffer_t > m_dynamicTextureParams; // 0x88 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamBuffer_t> m_dynamicTextureParams; // 0x88 | Schema_Atomic | Size: 0x18
 			// char  m_dynamicTextureParams[0x18]; // 0x88 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamInt_t > m_intAttributes; // 0xa0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamInt_t> m_intAttributes; // 0xa0 | Schema_Atomic | Size: 0x18
 			// char  m_intAttributes[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamFloat_t > m_floatAttributes; // 0xb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamFloat_t> m_floatAttributes; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char  m_floatAttributes[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamVector_t > m_vectorAttributes; // 0xd0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamVector_t> m_vectorAttributes; // 0xd0 | Schema_Atomic | Size: 0x18
 			// char  m_vectorAttributes[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamTexture_t > m_textureAttributes; // 0xe8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamTexture_t> m_textureAttributes; // 0xe8 | Schema_Atomic | Size: 0x18
 			// char  m_textureAttributes[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< materialsystem2::MaterialParamString_t > m_stringAttributes; // 0x100 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<materialsystem2::MaterialParamString_t> m_stringAttributes; // 0x100 | Schema_Atomic | Size: 0x18
 			// char  m_stringAttributes[0x18]; // 0x100 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_renderAttributesUsed; // 0x118 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_renderAttributesUsed; // 0x118 | Schema_Atomic | Size: 0x18
 			// char  m_renderAttributesUsed[0x18]; // 0x118 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::materialsystem2::MaterialResourceData_t, m_materialName) == 0x0, "m_materialName in MaterialResourceData_t should be at offset 0x0");

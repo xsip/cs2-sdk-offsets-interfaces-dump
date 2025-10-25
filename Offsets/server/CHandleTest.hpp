@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x4F8
 			namespace CHandleTest /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_Handle = 0x4f0; // server::CHandle< server::CBaseEntity > m_Handle; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Handle = 0x4f0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bSendHandle = 0x4f4; // bool m_bSendHandle; |  0x4f4 | Schema_Builtin | Size: 0x1
 			}
 		}

@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x190
 			namespace CSmartPropOperation_SetOrientation /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_vForwardVector = 0x50; // GlobalTypes::CSmartPropAttributeVector m_vForwardVector; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_ForwardDirectionSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace m_ForwardDirectionSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_vUpVector = 0xd0; // GlobalTypes::CSmartPropAttributeVector m_vUpVector; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_UpDirectionSpace = 0x110; // smartprops::CSmartPropAttributeCoordinateSpace m_UpDirectionSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bPrioritizeUp = 0x150; // GlobalTypes::CSmartPropAttributeBool m_bPrioritizeUp; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vForwardVector = 0x50; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_ForwardDirectionSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_vUpVector = 0xd0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_UpDirectionSpace = 0x110; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bPrioritizeUp = 0x150; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

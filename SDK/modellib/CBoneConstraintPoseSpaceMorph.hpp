@@ -28,9 +28,9 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_sBoneName; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_sAttachmentName; // 0x28 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_outputMorph; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_outputMorph; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_outputMorph[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< modellib::Input_t > m_inputList; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::CBoneConstraintPoseSpaceMorph::Input_t> m_inputList; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_inputList[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			bool m_bClamp; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3f); // End padding

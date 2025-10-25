@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x200
 			namespace C_OP_RemapModelVolumetoCP /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_nBBoxType = 0x1d8; // particles::BBoxVolumeType_t m_nBBoxType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nBBoxType = 0x1d8; // particles::BBoxVolumeType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nInControlPointNumber = 0x1dc; // int32_t m_nInControlPointNumber; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutControlPointNumber = 0x1e0; // int32_t m_nOutControlPointNumber; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutControlPointMaxNumber = 0x1e4; // int32_t m_nOutControlPointMaxNumber; |  0x1e4 | Schema_Builtin | Size: 0x4

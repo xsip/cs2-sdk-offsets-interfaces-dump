@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x128
 			namespace CSmartPropOperation_SetTintColor /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_SelectionMode = 0x50; // smartprops::CSmartPropAttributeChoiceSelectionMode m_SelectionMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_ColorSelection = 0x90; // GlobalTypes::CSmartPropAttributeInt m_ColorSelection; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_Mode = 0xd0; // smartprops::CSmartPropAttributeApplyColorMode m_Mode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_ColorChoices = 0x110; // GlobalTypes::CUtlVector< smartprops::ColorChoice_t > m_ColorChoices; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SelectionMode = 0x50; // smartprops::CSmartPropAttributeChoiceSelectionMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_ColorSelection = 0x90; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Mode = 0xd0; // smartprops::CSmartPropAttributeApplyColorMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_ColorChoices = 0x110; // GlobalTypes::CUtlVector<smartprops::ColorChoice_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

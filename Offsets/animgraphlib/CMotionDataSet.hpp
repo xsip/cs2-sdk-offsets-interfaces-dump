@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace CMotionDataSet /**/ {
-				constexpr std::ptrdiff_t m_groups = 0x0; // GlobalTypes::CUtlVector< animgraphlib::CMotionGraphGroup > m_groups; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_groups = 0x0; // GlobalTypes::CUtlVector<animgraphlib::CMotionGraphGroup>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nDimensionCount = 0x18; // int32_t m_nDimensionCount; |  0x18 | Schema_Builtin | Size: 0x4
 			}
 		}

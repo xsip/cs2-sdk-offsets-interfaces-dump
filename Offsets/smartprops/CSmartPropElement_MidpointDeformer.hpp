@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x2E8
 			namespace CSmartPropElement_MidpointDeformer /*: public CS2::smartprops::CSmartPropElement_Deformer*/ {
-				constexpr std::ptrdiff_t m_bDeformationEnabled = 0xa0; // GlobalTypes::CSmartPropAttributeBool m_bDeformationEnabled; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vStart = 0xe0; // GlobalTypes::CSmartPropAttributeVector m_vStart; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vEnd = 0x120; // GlobalTypes::CSmartPropAttributeVector m_vEnd; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_fRadius = 0x160; // GlobalTypes::CSmartPropAttributeFloat m_fRadius; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bContinuousSpline = 0x1a0; // GlobalTypes::CSmartPropAttributeBool m_bContinuousSpline; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vOffset = 0x1e0; // GlobalTypes::CSmartPropAttributeVector m_vOffset; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vAngles = 0x220; // GlobalTypes::CSmartPropAttributeAngles m_vAngles; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vScale = 0x260; // GlobalTypes::CSmartPropAttributeVector2D m_vScale; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_fFalloff = 0x2a0; // GlobalTypes::CSmartPropAttributeFloat m_fFalloff; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_OutputVariable = 0x2e0; // GlobalTypes::CUtlString m_OutputVariable; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bDeformationEnabled = 0xa0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vStart = 0xe0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vEnd = 0x120; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_fRadius = 0x160; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bContinuousSpline = 0x1a0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vOffset = 0x1e0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vAngles = 0x220; // GlobalTypes::CSmartPropAttributeAngles  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vScale = 0x260; // GlobalTypes::CSmartPropAttributeVector2D  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_fFalloff = 0x2a0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_OutputVariable = 0x2e0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

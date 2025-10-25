@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x10
 			namespace NetworkedLoadoutSlot_t /**/ {
-				constexpr std::ptrdiff_t pItem = 0x0; // server::CEconItemView* pItem; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t pItem = 0x0; // server::CEconItemView**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t team = 0x8; // uint16_t team; |  0x8 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t slot = 0xa; // uint16_t slot; |  0xa | Schema_Builtin | Size: 0x2
 			}

@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x188
 			namespace CSmartPropSelectionCriteria_PathPosition /*: public CS2::smartprops::CSmartPropSelectionCriteria*/ {
-				constexpr std::ptrdiff_t m_PlaceAtPositions = 0x48; // smartprops::CSmartPropAttributePathPositions m_PlaceAtPositions; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_nPlaceEveryNthPosition = 0x88; // GlobalTypes::CSmartPropAttributeInt m_nPlaceEveryNthPosition; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nNthPositionIndexOffset = 0xc8; // GlobalTypes::CSmartPropAttributeInt m_nNthPositionIndexOffset; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bAllowAtStart = 0x108; // GlobalTypes::CSmartPropAttributeBool m_bAllowAtStart; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bAllowAtEnd = 0x148; // GlobalTypes::CSmartPropAttributeBool m_bAllowAtEnd; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_PlaceAtPositions = 0x48; // smartprops::CSmartPropAttributePathPositions  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_nPlaceEveryNthPosition = 0x88; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nNthPositionIndexOffset = 0xc8; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bAllowAtStart = 0x108; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bAllowAtEnd = 0x148; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

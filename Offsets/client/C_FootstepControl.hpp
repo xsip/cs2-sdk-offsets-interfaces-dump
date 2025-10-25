@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1000
 			namespace C_FootstepControl /*: public CS2::client::C_BaseTrigger*/ {
-				constexpr std::ptrdiff_t m_source = 0xff0; // GlobalTypes::CUtlSymbolLarge m_source; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_destination = 0xff8; // GlobalTypes::CUtlSymbolLarge m_destination; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_source = 0xff0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_destination = 0xff8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

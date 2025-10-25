@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x28
 			namespace CPulse_PublicOutput /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::PulseSymbol_t m_Name; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Description = 0x10; // GlobalTypes::CUtlString m_Description; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Args = 0x18; // GlobalTypes::CUtlLeanVector< pulse_runtime_lib::CPulseRuntimeMethodArg > m_Args; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Description = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Args = 0x18; // GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg>  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x28
 			namespace CHintMessage /**/ {
 				constexpr std::ptrdiff_t m_hintString = 0x0; // char* m_hintString; |  0x0 | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_args = 0x8; // GlobalTypes::CUtlVector< �p�e�::char > m_args; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_args = 0x8; // GlobalTypes::CUtlVector<char*>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_duration = 0x20; // float32 m_duration; |  0x20 | Schema_Builtin | Size: 0x4
 			}
 		}

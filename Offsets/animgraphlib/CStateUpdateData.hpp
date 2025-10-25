@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x48
 			namespace CStateUpdateData /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hScript = 0x8; // modellib::AnimScriptHandle m_hScript; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_transitionIndices = 0x10; // GlobalTypes::CUtlVector< int32 > m_transitionIndices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_actions = 0x28; // GlobalTypes::CUtlVector< animgraphlib::CStateActionUpdater > m_actions; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_stateID = 0x40; // modellib::AnimStateID m_stateID; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hScript = 0x8; // modellib::AnimScriptHandle  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_transitionIndices = 0x10; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_actions = 0x28; // GlobalTypes::CUtlVector<animgraphlib::CStateActionUpdater>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_stateID = 0x40; // modellib::AnimStateID  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t nNodeX1 = 0xa; // uint16_t nNodeX1; |  0xa | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nNodeY0 = 0xc; // uint16_t nNodeY0; |  0xc | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nNodeY1 = 0xe; // uint16_t nNodeY1; |  0xe | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t qAdjust = 0x10; // GlobalTypes::QuaternionStorage qAdjust; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t qAdjust = 0x10; // GlobalTypes::QuaternionStorage  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

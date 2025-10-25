@@ -10,19 +10,19 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x900
 			namespace C_OP_DistanceBetweenTransforms /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_TransformStart = 0x1d8; // particleslib::CParticleTransformInput m_TransformStart; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_TransformEnd = 0x240; // particleslib::CParticleTransformInput m_TransformEnd; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_flInputMin = 0x2a8; // particleslib::CPerParticleFloatInput m_flInputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flInputMax = 0x418; // particleslib::CPerParticleFloatInput m_flInputMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMin = 0x588; // particleslib::CPerParticleFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMax = 0x6f8; // particleslib::CPerParticleFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_TransformStart = 0x1d8; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_TransformEnd = 0x240; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_flInputMin = 0x2a8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInputMax = 0x418; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMin = 0x588; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMax = 0x6f8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flMaxTraceLength = 0x868; // float32 m_flMaxTraceLength; |  0x868 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLOSScale = 0x86c; // float32 m_flLOSScale; |  0x86c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_CollisionGroupName = 0x870; // char m_CollisionGroupName[128]; |  0x870 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nTraceSet = 0x8f0; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nTraceSet = 0x8f0; // particles::ParticleTraceSet_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bLOS = 0x8f4; // bool m_bLOS; |  0x8f4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nSetMethod = 0x8f8; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x8f8; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

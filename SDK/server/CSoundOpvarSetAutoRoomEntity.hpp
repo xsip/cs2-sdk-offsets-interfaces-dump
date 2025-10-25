@@ -27,9 +27,9 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetAutoRoomEntity : public CS2::server::CSoundOpvarSetPointEntity {
 		public:
-			GlobalTypes::CUtlVector< server::SoundOpvarTraceResult_t > m_traceResults; // 0x6a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<server::SoundOpvarTraceResult_t> m_traceResults; // 0x6a8 | Schema_Atomic | Size: 0x18
 			// char  m_traceResults[0x18]; // 0x6a8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< server::AutoRoomDoorwayPairs_t > m_doorwayPairs; // 0x6c0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<server::AutoRoomDoorwayPairs_t> m_doorwayPairs; // 0x6c0 | Schema_Atomic | Size: 0x18
 			// char  m_doorwayPairs[0x18]; // 0x6c0 | Schema_Atomic | Size: 0x18
 			float32 m_flSize; // 0x6d8 | Schema_Builtin | Size: 0x4
 			float32 m_flHeightTolerance; // 0x6dc | Schema_Builtin | Size: 0x4

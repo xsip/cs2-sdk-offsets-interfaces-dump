@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace compositematerialslib {
 			// Class size: 0x288
 			namespace CompositeMaterialInputLooseVariable_t /**/ {
-				constexpr std::ptrdiff_t m_strName = 0x0; // GlobalTypes::CUtlString m_strName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bExposeExternally = 0x8; // bool m_bExposeExternally; |  0x8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_strExposedFriendlyName = 0x10; // GlobalTypes::CUtlString m_strExposedFriendlyName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strExposedFriendlyGroupName = 0x18; // GlobalTypes::CUtlString m_strExposedFriendlyGroupName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strExposedFriendlyName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strExposedFriendlyGroupName = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bExposedVariableIsFixedRange = 0x20; // bool m_bExposedVariableIsFixedRange; |  0x20 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_strExposedVisibleWhenTrue = 0x28; // GlobalTypes::CUtlString m_strExposedVisibleWhenTrue; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strExposedHiddenWhenTrue = 0x30; // GlobalTypes::CUtlString m_strExposedHiddenWhenTrue; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strExposedValueList = 0x38; // GlobalTypes::CUtlString m_strExposedValueList; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nVariableType = 0x40; // compositematerialslib::CompositeMaterialInputLooseVariableType_t m_nVariableType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strExposedVisibleWhenTrue = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strExposedHiddenWhenTrue = 0x30; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strExposedValueList = 0x38; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nVariableType = 0x40; // compositematerialslib::CompositeMaterialInputLooseVariableType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bValueBoolean = 0x44; // bool m_bValueBoolean; |  0x44 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nValueIntX = 0x48; // int32_t m_nValueIntX; |  0x48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nValueIntY = 0x4c; // int32_t m_nValueIntY; |  0x4c | Schema_Builtin | Size: 0x4
@@ -37,15 +37,15 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flValueFloatW = 0x80; // float32 m_flValueFloatW; |  0x80 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flValueFloatW_Min = 0x84; // float32 m_flValueFloatW_Min; |  0x84 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flValueFloatW_Max = 0x88; // float32 m_flValueFloatW_Max; |  0x88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_cValueColor4 = 0x8c; // GlobalTypes::Color m_cValueColor4; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nValueSystemVar = 0x90; // compositematerialslib::CompositeMaterialVarSystemVar_t m_nValueSystemVar; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_strResourceMaterial = 0x98; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIMaterial2 > > m_strResourceMaterial; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_strTextureContentAssetPath = 0x178; // GlobalTypes::CUtlString m_strTextureContentAssetPath; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strTextureRuntimeResourcePath = 0x180; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCTextureBase > > m_strTextureRuntimeResourcePath; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_strTextureCompilationVtexTemplate = 0x260; // GlobalTypes::CUtlString m_strTextureCompilationVtexTemplate; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nTextureType = 0x268; // compositematerialslib::CompositeMaterialInputTextureType_t m_nTextureType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_strString = 0x270; // GlobalTypes::CUtlString m_strString; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strPanoramaPanelPath = 0x278; // GlobalTypes::CUtlString m_strPanoramaPanelPath; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_cValueColor4 = 0x8c; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nValueSystemVar = 0x90; // compositematerialslib::CompositeMaterialVarSystemVar_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strResourceMaterial = 0x98; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIMaterial2>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_strTextureContentAssetPath = 0x178; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strTextureRuntimeResourcePath = 0x180; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCTextureBase>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_strTextureCompilationVtexTemplate = 0x260; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nTextureType = 0x268; // compositematerialslib::CompositeMaterialInputTextureType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strString = 0x270; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strPanoramaPanelPath = 0x278; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nPanoramaRenderRes = 0x280; // int32_t m_nPanoramaRenderRes; |  0x280 | Schema_Builtin | Size: 0x4
 			}
 		}

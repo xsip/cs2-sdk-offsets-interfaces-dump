@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x50
 			namespace CNmRootMotionData /**/ {
-				constexpr std::ptrdiff_t m_transforms = 0x0; // GlobalTypes::CUtlVector< GlobalTypes::CTransform > m_transforms; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_transforms = 0x0; // GlobalTypes::CUtlVector<GlobalTypes::CTransform>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nNumFrames = 0x18; // int32_t m_nNumFrames; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAverageLinearVelocity = 0x1c; // float32 m_flAverageLinearVelocity; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAverageAngularVelocityRadians = 0x20; // float32 m_flAverageAngularVelocityRadians; |  0x20 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_totalDelta = 0x30; // GlobalTypes::CTransform m_totalDelta; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_totalDelta = 0x30; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

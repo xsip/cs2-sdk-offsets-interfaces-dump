@@ -25,7 +25,7 @@ namespace CS2 {
 	namespace client {
 		class CursorState_t  {
 		public:
-			GlobalTypes::CHandle< client::CBaseAnimGraph > m_hTarget; // 0x0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CBaseAnimGraph> m_hTarget; // 0x0 | Schema_Atomic | Size: 0x4
 			// char  m_hTarget[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::client::CursorState_t, m_hTarget) == 0x0, "m_hTarget in CPulseCell_PlaySequence::CursorState_t should be at offset 0x0");

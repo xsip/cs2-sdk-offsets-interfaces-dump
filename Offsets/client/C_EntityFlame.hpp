@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x640
 			namespace C_EntityFlame /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_hEntAttached = 0x5f8; // client::CHandle< client::C_BaseEntity > m_hEntAttached; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hOldAttached = 0x620; // client::CHandle< client::C_BaseEntity > m_hOldAttached; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hEntAttached = 0x5f8; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hOldAttached = 0x620; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bCheapEffect = 0x624; // bool m_bCheapEffect; |  0x624 | Schema_Builtin | Size: 0x1
 			}
 		}

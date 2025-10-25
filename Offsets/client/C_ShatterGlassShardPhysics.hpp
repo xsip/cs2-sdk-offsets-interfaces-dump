@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x13A0
 			namespace C_ShatterGlassShardPhysics /*: public CS2::client::C_PhysicsProp*/ {
-				constexpr std::ptrdiff_t m_ShardDesc = 0x1318; // client::shard_model_desc_t m_ShardDesc; |  Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_ShardDesc = 0x1318; // client::shard_model_desc_t  | Schema_DeclaredClass | Size: 0x80
 			}
 		}
 	}

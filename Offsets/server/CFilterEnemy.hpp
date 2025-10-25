@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x568
 			namespace CFilterEnemy /*: public CS2::server::CBaseFilter*/ {
-				constexpr std::ptrdiff_t m_iszEnemyName = 0x548; // GlobalTypes::CUtlSymbolLarge m_iszEnemyName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEnemyName = 0x548; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flRadius = 0x550; // float32 m_flRadius; |  0x550 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOuterRadius = 0x554; // float32 m_flOuterRadius; |  0x554 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMaxSquadmatesPerEnemy = 0x558; // int32_t m_nMaxSquadmatesPerEnemy; |  0x558 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszPlayerName = 0x560; // GlobalTypes::CUtlSymbolLarge m_iszPlayerName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszPlayerName = 0x560; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

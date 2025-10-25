@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x248
 			namespace C_OP_RemapTransformOrientationToYaw /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_TransformInput = 0x1d0; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x238; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_TransformInput = 0x1d0; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x238; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flRotOffset = 0x23c; // float32 m_flRotOffset; |  0x23c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSpinStrength = 0x240; // float32 m_flSpinStrength; |  0x240 | Schema_Builtin | Size: 0x4
 			}

@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xEE0
 			namespace CCSPlayerPawnBase /*: public CS2::server::CBasePlayerPawn*/ {
-				constexpr std::ptrdiff_t m_CTouchExpansionComponent = 0xda0; // server::CTouchExpansionComponent m_CTouchExpansionComponent; |  Schema_DeclaredClass | Size: 0x50
-				constexpr std::ptrdiff_t m_pPingServices = 0xdf0; // server::CCSPlayer_PingServices* m_pPingServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_blindUntilTime = 0xdf8; // entity2::GameTime_t m_blindUntilTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_blindStartTime = 0xdfc; // entity2::GameTime_t m_blindStartTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_iPlayerState = 0xe00; // client::CSPlayerState m_iPlayerState; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_CTouchExpansionComponent = 0xda0; // server::CTouchExpansionComponent  | Schema_DeclaredClass | Size: 0x50
+				constexpr std::ptrdiff_t m_pPingServices = 0xdf0; // server::CCSPlayer_PingServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_blindUntilTime = 0xdf8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_blindStartTime = 0xdfc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_iPlayerState = 0xe00; // client::CSPlayerState  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bRespawning = 0xeb0; // bool m_bRespawning; |  0xeb0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasMovedSinceSpawn = 0xeb1; // bool m_bHasMovedSinceSpawn; |  0xeb1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iNumSpawns = 0xeb4; // int32_t m_iNumSpawns; |  0xeb4 | Schema_Builtin | Size: 0x4
@@ -24,7 +24,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFlashMaxAlpha = 0xec8; // float32 m_flFlashMaxAlpha; |  0xec8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flProgressBarStartTime = 0xecc; // float32 m_flProgressBarStartTime; |  0xecc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iProgressBarDuration = 0xed0; // int32_t m_iProgressBarDuration; |  0xed0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hOriginalController = 0xed4; // server::CHandle< server::CCSPlayerController > m_hOriginalController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hOriginalController = 0xed4; // GlobalTypes::CHandle<server::CCSPlayerController>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

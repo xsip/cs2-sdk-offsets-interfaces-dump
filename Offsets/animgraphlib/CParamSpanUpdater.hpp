@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x18
 			namespace CParamSpanUpdater /**/ {
-				constexpr std::ptrdiff_t m_spans = 0x0; // GlobalTypes::CUtlVector< animgraphlib::ParamSpan_t > m_spans; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_spans = 0x0; // GlobalTypes::CUtlVector<animgraphlib::ParamSpan_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

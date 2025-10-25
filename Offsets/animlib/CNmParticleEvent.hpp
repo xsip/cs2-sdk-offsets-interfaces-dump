@@ -10,19 +10,19 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x70
 			namespace CNmParticleEvent /*: public CS2::animlib::CNmEvent*/ {
-				constexpr std::ptrdiff_t m_relevance = 0x20; // animlib::CNmEventRelevance_t m_relevance; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_type = 0x24; // animlib::Type_t m_type; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_hParticleSystem = 0x28; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hParticleSystem; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_tags = 0x30; // GlobalTypes::CUtlString m_tags; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_relevance = 0x20; // animlib::CNmEventRelevance_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_type = 0x24; // animlib::CNmParticleEvent::Type_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hParticleSystem = 0x28; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_tags = 0x30; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bStopImmediately = 0x38; // bool m_bStopImmediately; |  0x38 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDetachFromOwner = 0x39; // bool m_bDetachFromOwner; |  0x39 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bPlayEndCap = 0x3a; // bool m_bPlayEndCap; |  0x3a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_attachmentPoint0 = 0x40; // GlobalTypes::CUtlString m_attachmentPoint0; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_attachmentType0 = 0x48; // animationsystem::ParticleAttachment_t m_attachmentType0; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentPoint1 = 0x50; // GlobalTypes::CUtlString m_attachmentPoint1; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_attachmentType1 = 0x58; // animationsystem::ParticleAttachment_t m_attachmentType1; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_config = 0x60; // GlobalTypes::CUtlString m_config; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_effectForConfig = 0x68; // GlobalTypes::CUtlString m_effectForConfig; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachmentPoint0 = 0x40; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachmentType0 = 0x48; // animationsystem::ParticleAttachment_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_attachmentPoint1 = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachmentType1 = 0x58; // animationsystem::ParticleAttachment_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_config = 0x60; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_effectForConfig = 0x68; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

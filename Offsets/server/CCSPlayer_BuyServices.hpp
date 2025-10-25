@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x150
 			namespace CCSPlayer_BuyServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_vecSellbackPurchaseEntries = 0xc8; // server::CUtlVectorEmbeddedNetworkVar< server::SellbackPurchaseEntry_t > m_vecSellbackPurchaseEntries; |  Schema_Atomic | Size: 0x88
+				constexpr std::ptrdiff_t m_vecSellbackPurchaseEntries = 0xc8; // server::CUtlVectorEmbeddedNetworkVar<server::SellbackPurchaseEntry_t>  | Schema_Atomic | Size: 0x88
 			}
 		}
 	}

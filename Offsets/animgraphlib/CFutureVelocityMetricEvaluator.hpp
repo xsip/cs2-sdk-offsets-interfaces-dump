@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flDistance = 0x50; // float32 m_flDistance; |  0x50 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStoppingDistance = 0x54; // float32 m_flStoppingDistance; |  0x54 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTargetSpeed = 0x58; // float32 m_flTargetSpeed; |  0x58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_eMode = 0x5c; // animgraphlib::VelocityMetricMode m_eMode; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_eMode = 0x5c; // animgraphlib::VelocityMetricMode  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

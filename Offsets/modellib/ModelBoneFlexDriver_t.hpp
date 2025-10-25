@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x28
 			namespace ModelBoneFlexDriver_t /**/ {
-				constexpr std::ptrdiff_t m_boneName = 0x0; // GlobalTypes::CUtlString m_boneName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_boneName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_boneNameToken = 0x8; // uint32_t m_boneNameToken; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_controls = 0x10; // GlobalTypes::CUtlVector< modellib::ModelBoneFlexDriverControl_t > m_controls; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_controls = 0x10; // GlobalTypes::CUtlVector<modellib::ModelBoneFlexDriverControl_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

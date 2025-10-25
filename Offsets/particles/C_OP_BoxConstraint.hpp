@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xF48
 			namespace C_OP_BoxConstraint /*: public CS2::particles::CParticleFunctionConstraint*/ {
-				constexpr std::ptrdiff_t m_vecMin = 0x1d0; // particleslib::CParticleCollectionVecInput m_vecMin; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_vecMax = 0x888; // particleslib::CParticleCollectionVecInput m_vecMax; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecMin = 0x1d0; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecMax = 0x888; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_nCP = 0xf40; // int32_t m_nCP; |  0xf40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bLocalSpace = 0xf44; // bool m_bLocalSpace; |  0xf44 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAccountForRadius = 0xf45; // bool m_bAccountForRadius; |  0xf45 | Schema_Builtin | Size: 0x1

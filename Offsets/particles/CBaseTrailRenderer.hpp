@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x30E0
 			namespace CBaseTrailRenderer /*: public CS2::particles::CBaseRendererSource2*/ {
-				constexpr std::ptrdiff_t m_nOrientationType = 0x2de8; // particles::ParticleOrientationChoiceList_t m_nOrientationType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nOrientationType = 0x2de8; // particles::ParticleOrientationChoiceList_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nOrientationControlPoint = 0x2dec; // int32_t m_nOrientationControlPoint; |  0x2dec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinSize = 0x2df0; // float32 m_flMinSize; |  0x2df0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxSize = 0x2df4; // float32 m_flMaxSize; |  0x2df4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartFadeSize = 0x2df8; // particleslib::CParticleCollectionRendererFloatInput m_flStartFadeSize; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flEndFadeSize = 0x2f68; // particleslib::CParticleCollectionRendererFloatInput m_flEndFadeSize; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flStartFadeSize = 0x2df8; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flEndFadeSize = 0x2f68; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bClampV = 0x30d8; // bool m_bClampV; |  0x30d8 | Schema_Builtin | Size: 0x1
 			}
 		}

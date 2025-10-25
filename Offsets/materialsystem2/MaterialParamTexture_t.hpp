@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace materialsystem2 {
 			// Class size: 0x10
 			namespace MaterialParamTexture_t /*: public CS2::materialsystem2::MaterialParam_t*/ {
-				constexpr std::ptrdiff_t m_pValue = 0x8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_pValue; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pValue = 0x8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

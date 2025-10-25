@@ -25,7 +25,7 @@ namespace CS2 {
 			pulse_runtime_lib::CPulse_OutflowConnection m_Connection; // 0x0 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::PulseDocNodeID_t m_DestinationFlowNodeID; // 0x48 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< pulse_runtime_lib::PulseDocNodeID_t > m_RequirementNodeIDs; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<pulse_runtime_lib::PulseDocNodeID_t> m_RequirementNodeIDs; // 0x50 | Schema_Atomic | Size: 0x18
 			// char  m_RequirementNodeIDs[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_nCursorStateBlockIndex; // 0x68 | Schema_Atomic | Size: 0x18
 			// char  m_nCursorStateBlockIndex[0x18]; // 0x68 | Schema_Atomic | Size: 0x18

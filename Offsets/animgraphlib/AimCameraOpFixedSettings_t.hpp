@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nClavicleLeftJointIndex = 0xc; // int32_t m_nClavicleLeftJointIndex; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nClavicleRightJointIndex = 0x10; // int32_t m_nClavicleRightJointIndex; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDepenetrationJointIndex = 0x14; // int32_t m_nDepenetrationJointIndex; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_propJoints = 0x18; // GlobalTypes::CUtlVector< int32 > m_propJoints; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_propJoints = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

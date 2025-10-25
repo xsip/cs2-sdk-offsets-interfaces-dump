@@ -17,7 +17,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bExpectingCursorTerminatedDueToMaxInstructions = 0x134; // bool m_bExpectingCursorTerminatedDueToMaxInstructions; |  0x134 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nCursorsTerminatedDueToMaxInstructions = 0x138; // int32_t m_nCursorsTerminatedDueToMaxInstructions; |  0x138 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nNextValidateIndex = 0x13c; // int32_t m_nNextValidateIndex; |  0x13c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Tracepoints = 0x140; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_Tracepoints; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Tracepoints = 0x140; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bTestYesOrNoPath = 0x158; // bool m_bTestYesOrNoPath; |  0x158 | Schema_Builtin | Size: 0x1
 			}
 		}

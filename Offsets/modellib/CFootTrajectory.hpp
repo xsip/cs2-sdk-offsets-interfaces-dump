@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x20
 			namespace CFootTrajectory /**/ {
-				constexpr std::ptrdiff_t m_vOffset = 0x8; // GlobalTypes::Vector m_vOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOffset = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flRotationOffset = 0x14; // float32 m_flRotationOffset; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flProgression = 0x18; // float32 m_flProgression; |  0x18 | Schema_Builtin | Size: 0x4
 			}

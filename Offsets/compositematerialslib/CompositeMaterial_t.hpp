@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace compositematerialslib {
 			// Class size: 0xA0
 			namespace CompositeMaterial_t /**/ {
-				constexpr std::ptrdiff_t m_TargetKVs = 0x8; // GlobalTypes::KeyValues3 m_TargetKVs; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_PreGenerationKVs = 0x18; // GlobalTypes::KeyValues3 m_PreGenerationKVs; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_FinalKVs = 0x58; // GlobalTypes::KeyValues3 m_FinalKVs; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vecGeneratedTextures = 0x80; // GlobalTypes::CUtlVector< compositematerialslib::GeneratedTextureHandle_t > m_vecGeneratedTextures; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_TargetKVs = 0x8; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_PreGenerationKVs = 0x18; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_FinalKVs = 0x58; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vecGeneratedTextures = 0x80; // GlobalTypes::CUtlVector<compositematerialslib::GeneratedTextureHandle_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

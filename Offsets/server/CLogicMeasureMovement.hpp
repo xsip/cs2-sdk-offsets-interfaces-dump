@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x520
 			namespace CLogicMeasureMovement /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_strMeasureTarget = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_strMeasureTarget; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strMeasureReference = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_strMeasureReference; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strTargetReference = 0x500; // GlobalTypes::CUtlSymbolLarge m_strTargetReference; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hMeasureTarget = 0x508; // server::CHandle< server::CBaseEntity > m_hMeasureTarget; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hMeasureReference = 0x50c; // server::CHandle< server::CBaseEntity > m_hMeasureReference; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTarget = 0x510; // server::CHandle< server::CBaseEntity > m_hTarget; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTargetReference = 0x514; // server::CHandle< server::CBaseEntity > m_hTargetReference; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_strMeasureTarget = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMeasureReference = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strTargetReference = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hMeasureTarget = 0x508; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hMeasureReference = 0x50c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTarget = 0x510; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTargetReference = 0x514; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flScale = 0x518; // float32 m_flScale; |  0x518 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMeasureType = 0x51c; // int32_t m_nMeasureType; |  0x51c | Schema_Builtin | Size: 0x4
 			}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1030
 			namespace C_PostProcessingVolume /*: public CS2::client::C_BaseTrigger*/ {
-				constexpr std::ptrdiff_t m_hPostSettings = 0x1000; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hPostSettings = 0x1000; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCPostProcessingResource>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flFadeDuration = 0x1008; // float32 m_flFadeDuration; |  0x1008 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinLogExposure = 0x100c; // float32 m_flMinLogExposure; |  0x100c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxLogExposure = 0x1010; // float32 m_flMaxLogExposure; |  0x1010 | Schema_Builtin | Size: 0x4

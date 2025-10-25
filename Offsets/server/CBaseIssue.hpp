@@ -15,7 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iNumYesVotes = 0x164; // int32_t m_iNumYesVotes; |  0x164 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumNoVotes = 0x168; // int32_t m_iNumNoVotes; |  0x168 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumPotentialVotes = 0x16c; // int32_t m_iNumPotentialVotes; |  0x16c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pVoteController = 0x170; // server::CVoteController* m_pVoteController; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pVoteController = 0x170; // server::CVoteController**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

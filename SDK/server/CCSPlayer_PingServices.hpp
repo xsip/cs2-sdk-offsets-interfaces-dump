@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CPlayerPing;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,8 +28,8 @@ namespace CS2 {
 		class CCSPlayer_PingServices : public CS2::client::CPlayerPawnComponent {
 		public:
 			entity2::GameTime_t m_flPlayerPingTokens[5]; // 0x40 | Schema_FixedArray | Size: 0x64
-			// server::CHandle< server::CPlayerPing > m_hPlayerPing; // 0x54 | Schema_Atomic | Size: 0x4
-			char  m_hPlayerPing[0x4]; // 0x54 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPlayerPing> m_hPlayerPing; // 0x54 | Schema_Atomic | Size: 0x4
+			// char  m_hPlayerPing[0x4]; // 0x54 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CCSPlayer_PingServices, m_flPlayerPingTokens) == 0x40, "m_flPlayerPingTokens in CCSPlayer_PingServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCSPlayer_PingServices, m_hPlayerPing) == 0x54, "m_hPlayerPing in CCSPlayer_PingServices should be at offset 0x54");

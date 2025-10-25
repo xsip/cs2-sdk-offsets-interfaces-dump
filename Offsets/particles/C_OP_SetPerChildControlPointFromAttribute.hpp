@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nParticleIncrement = 0x1dc; // int32_t m_nParticleIncrement; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFirstSourcePoint = 0x1e0; // int32_t m_nFirstSourcePoint; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bNumBasedOnParticleCount = 0x1e4; // bool m_bNumBasedOnParticleCount; |  0x1e4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nAttributeToRead = 0x1e8; // particles::ParticleAttributeIndex_t m_nAttributeToRead; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nAttributeToRead = 0x1e8; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nCPField = 0x1ec; // int32_t m_nCPField; |  0x1ec | Schema_Builtin | Size: 0x4
 			}
 		}

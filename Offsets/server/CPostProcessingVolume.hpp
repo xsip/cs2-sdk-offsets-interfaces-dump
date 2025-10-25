@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x9E8
 			namespace CPostProcessingVolume /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_hPostSettings = 0x9b8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hPostSettings = 0x9b8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCPostProcessingResource>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flFadeDuration = 0x9c0; // float32 m_flFadeDuration; |  0x9c0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinLogExposure = 0x9c4; // float32 m_flMinLogExposure; |  0x9c4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxLogExposure = 0x9c8; // float32 m_flMaxLogExposure; |  0x9c8 | Schema_Builtin | Size: 0x4

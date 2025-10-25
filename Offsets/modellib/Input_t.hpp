@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x28
 			namespace Input_t /**/ {
-				constexpr std::ptrdiff_t m_inputValue = 0x0; // GlobalTypes::Vector m_inputValue; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_outputWeightList = 0x10; // GlobalTypes::CUtlVector< float32 > m_outputWeightList; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_inputValue = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_outputWeightList = 0x10; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

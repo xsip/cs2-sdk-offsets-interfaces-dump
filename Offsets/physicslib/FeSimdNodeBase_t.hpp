@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t nNodeY0 = 0x18; // uint16_t nNodeY0[4]; |  0x18 | Schema_FixedArray | Size: 0x8
 				constexpr std::ptrdiff_t nNodeY1 = 0x20; // uint16_t nNodeY1[4]; |  0x20 | Schema_FixedArray | Size: 0x8
 				constexpr std::ptrdiff_t nDummy = 0x28; // uint16_t nDummy[4]; |  0x28 | Schema_FixedArray | Size: 0x8
-				constexpr std::ptrdiff_t qAdjust = 0x30; // mathlib_extended::FourQuaternions qAdjust; |  Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t qAdjust = 0x30; // mathlib_extended::FourQuaternions  | Schema_DeclaredClass | Size: 0x40
 			}
 		}
 	}

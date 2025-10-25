@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0xD8
 			namespace CPulseCell_IntervalTimer /*: public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow*/ {
-				constexpr std::ptrdiff_t m_Completed = 0x48; // pulse_runtime_lib::CPulse_ResumePoint m_Completed; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_OnInterval = 0x90; // pulse_runtime_lib::SignatureOutflow_Continue m_OnInterval; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_Completed = 0x48; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_OnInterval = 0x90; // pulse_runtime_lib::SignatureOutflow_Continue  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

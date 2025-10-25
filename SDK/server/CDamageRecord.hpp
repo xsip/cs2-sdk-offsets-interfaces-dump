@@ -14,6 +14,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CCSPlayerPawn;
+		class CCSPlayerController;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,14 +28,14 @@ namespace CS2 {
 		class CDamageRecord  {
 		public:
 			S2_PAD(0x30);
-			// server::CHandle< server::CCSPlayerPawn > m_PlayerDamager; // 0x30 | Schema_Atomic | Size: 0x4
-			char  m_PlayerDamager[0x4]; // 0x30 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_PlayerRecipient; // 0x34 | Schema_Atomic | Size: 0x4
-			char  m_PlayerRecipient[0x4]; // 0x34 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CCSPlayerController > m_hPlayerControllerDamager; // 0x38 | Schema_Atomic | Size: 0x4
-			char  m_hPlayerControllerDamager[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CCSPlayerController > m_hPlayerControllerRecipient; // 0x3c | Schema_Atomic | Size: 0x4
-			char  m_hPlayerControllerRecipient[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_PlayerDamager; // 0x30 | Schema_Atomic | Size: 0x4
+			// char  m_PlayerDamager[0x4]; // 0x30 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_PlayerRecipient; // 0x34 | Schema_Atomic | Size: 0x4
+			// char  m_PlayerRecipient[0x4]; // 0x34 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerController> m_hPlayerControllerDamager; // 0x38 | Schema_Atomic | Size: 0x4
+			// char  m_hPlayerControllerDamager[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerController> m_hPlayerControllerRecipient; // 0x3c | Schema_Atomic | Size: 0x4
+			// char  m_hPlayerControllerRecipient[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlString m_szPlayerDamagerName; // 0x40 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_szPlayerRecipientName; // 0x48 | Schema_Atomic | Size: 0x8
 			uint64_t m_DamagerXuid; // 0x50 | Schema_Builtin | Size: 0x8

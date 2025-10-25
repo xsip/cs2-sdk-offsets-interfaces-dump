@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x90
 			namespace CAttachment /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_influenceNames = 0x8; // GlobalTypes::CUtlString m_influenceNames[3]; |  Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_vInfluenceRotations = 0x20; // GlobalTypes::Quaternion m_vInfluenceRotations[3]; |  Schema_FixedArray | Size: 0x30
-				constexpr std::ptrdiff_t m_vInfluenceOffsets = 0x50; // GlobalTypes::Vector m_vInfluenceOffsets[3]; |  Schema_FixedArray | Size: 0x24
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_influenceNames = 0x8; // GlobalTypes::CUtlString[3]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_vInfluenceRotations = 0x20; // GlobalTypes::Quaternion[3]  | Schema_FixedArray | Size: 0x30
+				constexpr std::ptrdiff_t m_vInfluenceOffsets = 0x50; // GlobalTypes::Vector[3]  | Schema_FixedArray | Size: 0x24
 				constexpr std::ptrdiff_t m_influenceWeights = 0x74; // float32 m_influenceWeights[3]; |  0x74 | Schema_FixedArray | Size: 0xc
 				constexpr std::ptrdiff_t m_bInfluenceRootTransform = 0x80; // bool m_bInfluenceRootTransform[3]; |  0x80 | Schema_FixedArray | Size: 0x3
 				constexpr std::ptrdiff_t m_nInfluences = 0x83; // uint8_t m_nInfluences; |  0x83 | Schema_Builtin | Size: 0x1

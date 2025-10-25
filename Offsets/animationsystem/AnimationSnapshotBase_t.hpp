@@ -11,14 +11,14 @@ namespace CS2 {
 			// Class size: 0x110
 			namespace AnimationSnapshotBase_t /**/ {
 				constexpr std::ptrdiff_t m_flRealTime = 0x0; // float32 m_flRealTime; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_rootToWorld = 0x10; // GlobalTypes::matrix3x4a_t m_rootToWorld; |  Schema_Atomic | Size: 0x30
+				constexpr std::ptrdiff_t m_rootToWorld = 0x10; // GlobalTypes::matrix3x4a_t  | Schema_Atomic | Size: 0x30
 				constexpr std::ptrdiff_t m_bBonesInWorldSpace = 0x40; // bool m_bBonesInWorldSpace; |  0x40 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_boneSetupMask = 0x48; // GlobalTypes::CUtlVector< uint32 > m_boneSetupMask; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneTransforms = 0x60; // GlobalTypes::CUtlVector< GlobalTypes::matrix3x4a_t > m_boneTransforms; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flexControllers = 0x78; // GlobalTypes::CUtlVector< float32 > m_flexControllers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_SnapshotType = 0x90; // animationsystem::AnimationSnapshotType_t m_SnapshotType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_boneSetupMask = 0x48; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneTransforms = 0x60; // GlobalTypes::CUtlVector<GlobalTypes::matrix3x4a_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flexControllers = 0x78; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SnapshotType = 0x90; // animationsystem::AnimationSnapshotType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bHasDecodeDump = 0x94; // bool m_bHasDecodeDump; |  0x94 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_DecodeDump = 0x98; // animationsystem::AnimationDecodeDebugDumpElement_t m_DecodeDump; |  Schema_DeclaredClass | Size: 0x70
+				constexpr std::ptrdiff_t m_DecodeDump = 0x98; // animationsystem::AnimationDecodeDebugDumpElement_t  | Schema_DeclaredClass | Size: 0x70
 			}
 		}
 	}

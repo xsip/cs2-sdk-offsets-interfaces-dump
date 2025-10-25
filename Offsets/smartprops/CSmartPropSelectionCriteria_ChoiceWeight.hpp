@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x88
 			namespace CSmartPropSelectionCriteria_ChoiceWeight /*: public CS2::smartprops::CSmartPropSelectionCriteria*/ {
-				constexpr std::ptrdiff_t m_flWeight = 0x48; // GlobalTypes::CSmartPropAttributeFloat m_flWeight; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flWeight = 0x48; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

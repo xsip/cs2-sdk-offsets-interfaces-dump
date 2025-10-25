@@ -24,7 +24,7 @@ namespace CS2 {
 		class C_OP_RenderPostProcessing : public CS2::particles::CParticleFunctionRenderer {
 		public:
 			particleslib::CPerParticleFloatInput m_flPostProcessStrength; // 0x220 | Schema_DeclaredClass | Size: 0x170
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostTexture; // 0x390 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCPostProcessingResource> m_hPostTexture; // 0x390 | Schema_Atomic | Size: 0x8
 			char  m_hPostTexture[0x8]; // 0x390 | Schema_Atomic | Size: 0x8
 			particles::ParticlePostProcessPriorityGroup_t m_nPriority; // 0x398 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xA0
 			namespace CPlayer_WeaponServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_hMyWeapons = 0x40; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BasePlayerWeapon > > m_hMyWeapons; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hActiveWeapon = 0x58; // client::CHandle< client::C_BasePlayerWeapon > m_hActiveWeapon; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hLastWeapon = 0x5c; // client::CHandle< client::C_BasePlayerWeapon > m_hLastWeapon; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hMyWeapons = 0x40; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BasePlayerWeapon>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hActiveWeapon = 0x58; // GlobalTypes::CHandle<client::C_BasePlayerWeapon>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hLastWeapon = 0x5c; // GlobalTypes::CHandle<client::C_BasePlayerWeapon>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iAmmo = 0x60; // uint16_t m_iAmmo[32]; |  0x60 | Schema_FixedArray | Size: 0x40
 			}
 		}

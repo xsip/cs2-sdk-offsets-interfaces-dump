@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace FeCollisionPlane_t /**/ {
 				constexpr std::ptrdiff_t nCtrlParent = 0x0; // uint16_t nCtrlParent; |  0x0 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nChildNode = 0x2; // uint16_t nChildNode; |  0x2 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_Plane = 0x4; // physicslib::RnPlane_t m_Plane; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_Plane = 0x4; // physicslib::RnPlane_t  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t flStrength = 0x14; // float32 flStrength; |  0x14 | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -17,6 +17,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseModelEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -50,8 +55,8 @@ namespace CS2 {
 			bool m_bForceNpcExclude; // 0x98c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_sGlowEntity; // 0x990 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseModelEntity > m_glowEntity; // 0x998 | Schema_Atomic | Size: 0x4
-			char  m_glowEntity[0x4]; // 0x998 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseModelEntity> m_glowEntity; // 0x998 | Schema_Atomic | Size: 0x4
+			// char  m_glowEntity[0x4]; // 0x998 | Schema_Atomic | Size: 0x4
 			bool m_usable; // 0x99c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_szDisplayText; // 0x9a0 | Schema_Atomic | Size: 0x8

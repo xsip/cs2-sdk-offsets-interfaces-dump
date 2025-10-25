@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x848
 			namespace CMarkupVolumeTagged_NavGame /*: public CS2::server::CMarkupVolumeWithRef*/ {
-				constexpr std::ptrdiff_t m_nScopes = 0x840; // server::NavScopeFlags_t m_nScopes; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nScopes = 0x840; // server::NavScopeFlags_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_bFloodFillAttribute = 0x841; // bool m_bFloodFillAttribute; |  0x841 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSplitNavSpace = 0x842; // bool m_bSplitNavSpace; |  0x842 | Schema_Builtin | Size: 0x1
 			}

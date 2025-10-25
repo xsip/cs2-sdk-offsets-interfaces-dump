@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x508
 			namespace CLogicCollisionPair /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_nameAttach1 = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_nameAttach1; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAttach2 = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_nameAttach2; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttach1 = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttach2 = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_includeHierarchy = 0x500; // bool m_includeHierarchy; |  0x500 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_supportMultipleEntitiesWithSameName = 0x501; // bool m_supportMultipleEntitiesWithSameName; |  0x501 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_disabled = 0x502; // bool m_disabled; |  0x502 | Schema_Builtin | Size: 0x1

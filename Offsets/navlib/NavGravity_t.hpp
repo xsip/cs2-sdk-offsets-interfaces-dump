@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace navlib {
 			// Class size: 0x10
 			namespace NavGravity_t /**/ {
-				constexpr std::ptrdiff_t m_vGravity = 0x0; // GlobalTypes::Vector m_vGravity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vGravity = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bDefault = 0xc; // bool m_bDefault; |  0xc | Schema_Builtin | Size: 0x1
 			}
 		}

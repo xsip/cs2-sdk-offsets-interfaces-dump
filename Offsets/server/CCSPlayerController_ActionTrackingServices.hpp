@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x270
 			namespace CCSPlayerController_ActionTrackingServices /*: public CS2::client::CPlayerControllerComponent*/ {
-				constexpr std::ptrdiff_t m_perRoundStats = 0x40; // server::CUtlVectorEmbeddedNetworkVar< server::CSPerRoundStats_t > m_perRoundStats; |  Schema_Atomic | Size: 0x88
-				constexpr std::ptrdiff_t m_matchStats = 0xc8; // server::CSMatchStats_t m_matchStats; |  Schema_DeclaredClass | Size: 0xc0
+				constexpr std::ptrdiff_t m_perRoundStats = 0x40; // server::CUtlVectorEmbeddedNetworkVar<server::CSPerRoundStats_t>  | Schema_Atomic | Size: 0x88
+				constexpr std::ptrdiff_t m_matchStats = 0xc8; // server::CSMatchStats_t  | Schema_DeclaredClass | Size: 0xc0
 				constexpr std::ptrdiff_t m_iNumRoundKills = 0x188; // int32_t m_iNumRoundKills; |  0x188 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumRoundKillsHeadshots = 0x18c; // int32_t m_iNumRoundKillsHeadshots; |  0x18c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTotalRoundDamageDealt = 0x190; // float32 m_flTotalRoundDamageDealt; |  0x190 | Schema_Builtin | Size: 0x4

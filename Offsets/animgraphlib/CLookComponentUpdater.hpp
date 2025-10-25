@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x48
 			namespace CLookComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_hLookHeading = 0x34; // animgraphlib::CAnimParamHandle m_hLookHeading; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hLookHeadingNormalized = 0x36; // animgraphlib::CAnimParamHandle m_hLookHeadingNormalized; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hLookHeadingVelocity = 0x38; // animgraphlib::CAnimParamHandle m_hLookHeadingVelocity; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hLookPitch = 0x3a; // animgraphlib::CAnimParamHandle m_hLookPitch; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hLookDistance = 0x3c; // animgraphlib::CAnimParamHandle m_hLookDistance; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hLookDirection = 0x3e; // animgraphlib::CAnimParamHandle m_hLookDirection; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hLookTarget = 0x40; // animgraphlib::CAnimParamHandle m_hLookTarget; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hLookTargetWorldSpace = 0x42; // animgraphlib::CAnimParamHandle m_hLookTargetWorldSpace; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookHeading = 0x34; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookHeadingNormalized = 0x36; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookHeadingVelocity = 0x38; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookPitch = 0x3a; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookDistance = 0x3c; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookDirection = 0x3e; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookTarget = 0x40; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hLookTargetWorldSpace = 0x42; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bNetworkLookTarget = 0x44; // bool m_bNetworkLookTarget; |  0x44 | Schema_Builtin | Size: 0x1
 			}
 		}

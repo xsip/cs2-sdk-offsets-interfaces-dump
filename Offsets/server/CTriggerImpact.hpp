@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flMagnitude = 0x9d0; // float32 m_flMagnitude; |  0x9d0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoise = 0x9d4; // float32 m_flNoise; |  0x9d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flViewkick = 0x9d8; // float32 m_flViewkick; |  0x9d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pOutputForce = 0x9e0; // GlobalTypes::CEntityOutputTemplate< GlobalTypes::Vector > m_pOutputForce; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_pOutputForce = 0x9e0; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x28
 			}
 		}
 	}

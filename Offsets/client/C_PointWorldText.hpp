@@ -23,10 +23,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0x1164; // float32 m_flBackgroundBorderWidth; |  0x1164 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0x1168; // float32 m_flBackgroundBorderHeight; |  0x1168 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0x116c; // float32 m_flBackgroundWorldToUV; |  0x116c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Color = 0x1170; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0x1174; // client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyVertical = 0x1178; // client::PointWorldTextJustifyVertical_t m_nJustifyVertical; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nReorientMode = 0x117c; // client::PointWorldTextReorientMode_t m_nReorientMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0x1170; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0x1174; // client::PointWorldTextJustifyHorizontal_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyVertical = 0x1178; // client::PointWorldTextJustifyVertical_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nReorientMode = 0x117c; // client::PointWorldTextReorientMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

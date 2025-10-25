@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x60
 			namespace CRagdollAnimTag /*: public CS2::animgraphlib::CAnimTagBase*/ {
-				constexpr std::ptrdiff_t m_profileName = 0x58; // GlobalTypes::CGlobalSymbol m_profileName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_profileName = 0x58; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x80
 			namespace CAnimGraphControllerBase /**/ {
-				constexpr std::ptrdiff_t m_vecParamsToResetInPostGraphUpdate = 0x28; // GlobalTypes::CUtlVectorFixedGrowable< GlobalTypes::CGlobalSymbol, 8 > m_vecParamsToResetInPostGraphUpdate; |  Schema_Atomic | Size: 0x58
+				constexpr std::ptrdiff_t m_vecParamsToResetInPostGraphUpdate = 0x28; // GlobalTypes::CUtlVectorFixedGrowable<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x58
 			}
 		}
 	}

@@ -10,18 +10,18 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x90
 			namespace CSeqCmdSeqDesc /**/ {
-				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString m_sName; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_flags = 0x10; // animationsystem::CSeqSeqDescFlag m_flags; |  Schema_DeclaredClass | Size: 0xb
-				constexpr std::ptrdiff_t m_transition = 0x1c; // animationsystem::CSeqTransition m_transition; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_flags = 0x10; // animationsystem::CSeqSeqDescFlag  | Schema_DeclaredClass | Size: 0xb
+				constexpr std::ptrdiff_t m_transition = 0x1c; // animationsystem::CSeqTransition  | Schema_DeclaredClass | Size: 0x8
 				constexpr std::ptrdiff_t m_nFrameRangeSequence = 0x24; // int16_t m_nFrameRangeSequence; |  0x24 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nFrameCount = 0x26; // int16_t m_nFrameCount; |  0x26 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_flFPS = 0x28; // float32 m_flFPS; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSubCycles = 0x2c; // int16_t m_nSubCycles; |  0x2c | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_numLocalResults = 0x2e; // int16_t m_numLocalResults; |  0x2e | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_cmdLayerArray = 0x30; // GlobalTypes::CUtlVector< animationsystem::CSeqCmdLayer > m_cmdLayerArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_eventArray = 0x48; // GlobalTypes::CUtlVector< animationsystem::CAnimEventDefinition > m_eventArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_activityArray = 0x60; // GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_poseSettingArray = 0x78; // GlobalTypes::CUtlVector< animationsystem::CSeqPoseSetting > m_poseSettingArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_cmdLayerArray = 0x30; // GlobalTypes::CUtlVector<animationsystem::CSeqCmdLayer>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_eventArray = 0x48; // GlobalTypes::CUtlVector<animationsystem::CAnimEventDefinition>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_activityArray = 0x60; // GlobalTypes::CUtlVector<animationsystem::CAnimActivity>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_poseSettingArray = 0x78; // GlobalTypes::CUtlVector<animationsystem::CSeqPoseSetting>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

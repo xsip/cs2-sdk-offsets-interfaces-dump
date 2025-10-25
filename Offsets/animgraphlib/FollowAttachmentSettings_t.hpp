@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace FollowAttachmentSettings_t /**/ {
-				constexpr std::ptrdiff_t m_attachment = 0x0; // modellib::CAnimAttachment m_attachment; |  Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_attachment = 0x0; // modellib::CAnimAttachment  | Schema_DeclaredClass | Size: 0x80
 				constexpr std::ptrdiff_t m_boneIndex = 0x80; // int32_t m_boneIndex; |  0x80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentHandle = 0x84; // modellib::AttachmentHandle_t m_attachmentHandle; |  Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_attachmentHandle = 0x84; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
 				constexpr std::ptrdiff_t m_bMatchTranslation = 0x85; // bool m_bMatchTranslation; |  0x85 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bMatchRotation = 0x86; // bool m_bMatchRotation; |  0x86 | Schema_Builtin | Size: 0x1
 			}

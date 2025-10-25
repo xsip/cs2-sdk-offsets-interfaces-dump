@@ -17,10 +17,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flForceClientTime = 0x604; // float32 m_flForceClientTime; |  0x604 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSceneStringIndex = 0x608; // uint16_t m_nSceneStringIndex; |  0x608 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_bClientOnly = 0x60a; // bool m_bClientOnly; |  0x60a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hOwner = 0x60c; // client::CHandle< client::C_BaseFlex > m_hOwner; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hActorList = 0x610; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseFlex > > m_hActorList; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hOwner = 0x60c; // GlobalTypes::CHandle<client::C_BaseFlex>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hActorList = 0x610; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseFlex>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bWasPlaying = 0x628; // bool m_bWasPlaying; |  0x628 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_QueuedEvents = 0x638; // client::QueuedEvents_t > m_QueuedEvents; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_QueuedEvents = 0x638; // GlobalTypes::CUtlVector<client::C_SceneEntity::QueuedEvents_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flCurrentTime = 0x650; // float32 m_flCurrentTime; |  0x650 | Schema_Builtin | Size: 0x4
 			}
 		}

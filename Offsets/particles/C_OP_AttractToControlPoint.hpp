@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x548
 			namespace C_OP_AttractToControlPoint /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_vecComponentScale = 0x1e0; // GlobalTypes::Vector m_vecComponentScale; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_fForceAmount = 0x1f0; // particleslib::CPerParticleFloatInput m_fForceAmount; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecComponentScale = 0x1e0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_fForceAmount = 0x1f0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_fFalloffPower = 0x360; // float32 m_fFalloffPower; |  0x360 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TransformInput = 0x368; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_fForceAmountMin = 0x3d0; // particleslib::CPerParticleFloatInput m_fForceAmountMin; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_TransformInput = 0x368; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_fForceAmountMin = 0x3d0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bApplyMinForce = 0x540; // bool m_bApplyMinForce; |  0x540 | Schema_Builtin | Size: 0x1
 			}
 		}

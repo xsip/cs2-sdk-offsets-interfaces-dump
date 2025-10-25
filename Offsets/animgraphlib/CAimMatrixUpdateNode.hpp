@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x180
 			namespace CAimMatrixUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_opFixedSettings = 0x70; // animgraphlib::AimMatrixOpFixedSettings_t m_opFixedSettings; |  Schema_DeclaredClass | Size: 0xf0
-				constexpr std::ptrdiff_t m_target = 0x168; // animgraphlib::AnimVectorSource m_target; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_paramIndex = 0x16c; // animgraphlib::CAnimParamHandle m_paramIndex; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hSequence = 0x170; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_opFixedSettings = 0x70; // animgraphlib::AimMatrixOpFixedSettings_t  | Schema_DeclaredClass | Size: 0xf0
+				constexpr std::ptrdiff_t m_target = 0x168; // animgraphlib::AnimVectorSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_paramIndex = 0x16c; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hSequence = 0x170; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bResetChild = 0x174; // bool m_bResetChild; |  0x174 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLockWhenWaning = 0x175; // bool m_bLockWhenWaning; |  0x175 | Schema_Builtin | Size: 0x1
 			}

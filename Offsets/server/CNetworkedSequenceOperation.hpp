@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x28
 			namespace CNetworkedSequenceOperation /**/ {
-				constexpr std::ptrdiff_t m_hSequence = 0x8; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hSequence = 0x8; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flPrevCycle = 0xc; // float32 m_flPrevCycle; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCycle = 0x10; // float32 m_flCycle; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flWeight = 0x14; // GlobalTypes::CNetworkedQuantizedFloat m_flWeight; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flWeight = 0x14; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bSequenceChangeNetworked = 0x1c; // bool m_bSequenceChangeNetworked; |  0x1c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDiscontinuity = 0x1d; // bool m_bDiscontinuity; |  0x1d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flPrevCycleFromDiscontinuity = 0x20; // float32 m_flPrevCycleFromDiscontinuity; |  0x20 | Schema_Builtin | Size: 0x4

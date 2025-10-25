@@ -26,7 +26,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flMaxSimulationTime; // 0x604 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszEffectName; // 0x608 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_PathNodes_Name; // 0x610 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge> m_PathNodes_Name; // 0x610 | Schema_Atomic | Size: 0x18
 			// char  m_PathNodes_Name[0x18]; // 0x610 | Schema_Atomic | Size: 0x18
 			float32 m_flParticleSpacing; // 0x628 | Schema_Builtin | Size: 0x4
 			float32 m_flSlack; // 0x62c | Schema_Builtin | Size: 0x4
@@ -34,15 +34,15 @@ namespace CS2 {
 			GlobalTypes::Color m_ColorTint; // 0x634 | Schema_Atomic | Size: 0x4
 			int32_t m_nEffectState; // 0x638 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x640 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_iEffectIndex; // 0x640 | Schema_Atomic | Size: 0x8
 			char  m_iEffectIndex[0x8]; // 0x640 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_Position; // 0x648 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_Position; // 0x648 | Schema_Atomic | Size: 0x18
 			char  m_PathNodes_Position[0x18]; // 0x648 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_TangentIn; // 0x660 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_TangentIn; // 0x660 | Schema_Atomic | Size: 0x18
 			char  m_PathNodes_TangentIn[0x18]; // 0x660 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_TangentOut; // 0x678 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_TangentOut; // 0x678 | Schema_Atomic | Size: 0x18
 			char  m_PathNodes_TangentOut[0x18]; // 0x678 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_Color; // 0x690 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_Color; // 0x690 | Schema_Atomic | Size: 0x18
 			char  m_PathNodes_Color[0x18]; // 0x690 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::C_NetworkUtlVectorBase< bool > m_PathNodes_PinEnabled; // 0x6a8 | Schema_Atomic | Size: 0x18
 			char  m_PathNodes_PinEnabled[0x18]; // 0x6a8 | Schema_Atomic | Size: 0x18

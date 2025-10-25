@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x10
 			namespace MotionBlendItem /**/ {
-				constexpr std::ptrdiff_t m_pChild = 0x0; // GlobalTypes::CSmartPtr< animgraphlib::CMotionNode > m_pChild; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pChild = 0x0; // GlobalTypes::CSmartPtr<animgraphlib::CMotionNode>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flKeyValue = 0x8; // float32 m_flKeyValue; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

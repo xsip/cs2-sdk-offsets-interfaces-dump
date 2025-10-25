@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x120
 			namespace CSmartPropVariable_MaterialGroup /*: public CS2::smartprops::CSmartPropVariable*/ {
-				constexpr std::ptrdiff_t m_sModelName = 0x38; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sModelName; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_DefaultValue = 0x118; // GlobalTypes::CModelMaterialGroupName m_DefaultValue; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sModelName = 0x38; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_DefaultValue = 0x118; // GlobalTypes::CModelMaterialGroupName  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

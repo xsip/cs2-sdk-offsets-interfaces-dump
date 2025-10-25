@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x50
 			namespace CAnimTagBase /**/ {
-				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CGlobalSymbol m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sComment = 0x20; // GlobalTypes::CUtlString m_sComment; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_group = 0x28; // GlobalTypes::CGlobalSymbol m_group; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_tagID = 0x30; // modellib::AnimTagID m_tagID; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sComment = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_group = 0x28; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_tagID = 0x30; // modellib::AnimTagID  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsReferenced = 0x48; // bool m_bIsReferenced; |  0x48 | Schema_Builtin | Size: 0x1
 			}
 		}

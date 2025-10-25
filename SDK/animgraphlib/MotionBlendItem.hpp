@@ -20,7 +20,7 @@ namespace CS2 {
 	namespace animgraphlib {
 		class MotionBlendItem  {
 		public:
-			// GlobalTypes::CSmartPtr< animgraphlib::CMotionNode > m_pChild; // 0x0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<animgraphlib::CMotionNode> m_pChild; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_pChild[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 m_flKeyValue; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

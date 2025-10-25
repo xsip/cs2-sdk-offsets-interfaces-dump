@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace CFollowTargetUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::FollowTargetOpFixedSettings_t m_opFixedData; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_hParameterPosition = 0x88; // animgraphlib::CAnimParamHandle m_hParameterPosition; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParameterOrientation = 0x8a; // animgraphlib::CAnimParamHandle m_hParameterOrientation; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::FollowTargetOpFixedSettings_t  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_hParameterPosition = 0x88; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParameterOrientation = 0x8a; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 			}
 		}
 	}

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x30
 			namespace CAnimBoneDifference /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString m_name; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_parent = 0x10; // GlobalTypes::CBufferString m_parent; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_posError = 0x20; // GlobalTypes::Vector m_posError; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_parent = 0x10; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_posError = 0x20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bHasRotation = 0x2c; // bool m_bHasRotation; |  0x2c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasMovement = 0x2d; // bool m_bHasMovement; |  0x2d | Schema_Builtin | Size: 0x1
 			}

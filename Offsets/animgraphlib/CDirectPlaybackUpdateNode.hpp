@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CDirectPlaybackUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
 				constexpr std::ptrdiff_t m_bFinishEarly = 0x74; // bool m_bFinishEarly; |  0x74 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bResetOnFinish = 0x75; // bool m_bResetOnFinish; |  0x75 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_allTags = 0x78; // GlobalTypes::CUtlVector< animgraphlib::CDirectPlaybackTagData > m_allTags; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_allTags = 0x78; // GlobalTypes::CUtlVector<animgraphlib::CDirectPlaybackTagData>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

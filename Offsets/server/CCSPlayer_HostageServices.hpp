@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x48
 			namespace CCSPlayer_HostageServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_hCarriedHostage = 0x40; // server::CHandle< server::CBaseEntity > m_hCarriedHostage; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hCarriedHostageProp = 0x44; // server::CHandle< server::CBaseEntity > m_hCarriedHostageProp; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hCarriedHostage = 0x40; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hCarriedHostageProp = 0x44; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

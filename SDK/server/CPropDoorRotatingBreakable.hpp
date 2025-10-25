@@ -25,7 +25,7 @@ namespace CS2 {
 			bool m_isAbleToCloseAreaPortals; // 0x1091 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			int32_t m_currentDamageState; // 0x1094 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_damageStates; // 0x1098 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge> m_damageStates; // 0x1098 | Schema_Atomic | Size: 0x18
 			// char  m_damageStates[0x18]; // 0x1098 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_bBreakable) == 0x1090, "m_bBreakable in CPropDoorRotatingBreakable should be at offset 0x1090");

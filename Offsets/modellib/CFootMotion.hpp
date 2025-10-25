@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x28
 			namespace CFootMotion /**/ {
-				constexpr std::ptrdiff_t m_strides = 0x0; // GlobalTypes::CUtlVector< modellib::CFootStride > m_strides; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strides = 0x0; // GlobalTypes::CUtlVector<modellib::CFootStride>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bAdditive = 0x20; // bool m_bAdditive; |  0x20 | Schema_Builtin | Size: 0x1
 			}
 		}

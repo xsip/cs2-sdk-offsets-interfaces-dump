@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -26,8 +31,8 @@ namespace CS2 {
 			GlobalTypes::Vector m_localTestAxis; // 0x504 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8);
 			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x518 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_attachedObject; // 0x520 | Schema_Atomic | Size: 0x4
-			char  m_attachedObject[0x4]; // 0x520 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_attachedObject; // 0x520 | Schema_Atomic | Size: 0x4
+			// char  m_attachedObject[0x4]; // 0x520 | Schema_Atomic | Size: 0x4
 			float32 m_angularLimit; // 0x524 | Schema_Builtin | Size: 0x4
 			bool m_bActive; // 0x528 | Schema_Builtin | Size: 0x1
 			bool m_bDampAllRotation; // 0x529 | Schema_Builtin | Size: 0x1

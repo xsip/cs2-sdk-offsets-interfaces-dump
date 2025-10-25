@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x10
 			namespace CPhysicsBodyGameMarkup /**/ {
-				constexpr std::ptrdiff_t m_TargetBody = 0x0; // GlobalTypes::CUtlString m_TargetBody; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Tag = 0x8; // GlobalTypes::CGlobalSymbol m_Tag; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_TargetBody = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Tag = 0x8; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x590
 			namespace CTimerEntity /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_OnTimer = 0x4f0; // entity2::CEntityIOOutput m_OnTimer; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTimerHigh = 0x518; // entity2::CEntityIOOutput m_OnTimerHigh; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTimerLow = 0x540; // entity2::CEntityIOOutput m_OnTimerLow; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnTimer = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnTimerHigh = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnTimerLow = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_iDisabled = 0x568; // int32_t m_iDisabled; |  0x568 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInitialDelay = 0x56c; // float32 m_flInitialDelay; |  0x56c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRefireTime = 0x570; // float32 m_flRefireTime; |  0x570 | Schema_Builtin | Size: 0x4

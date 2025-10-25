@@ -28,6 +28,7 @@ namespace CS2 {
 		class CPlayer_CameraServices;
 		class CPlayer_MovementServices;
 		class CAI_Expresser;
+		class CBasePlayerController;
 	}
 	namespace client {
 		class sndopvarlatchdata_t;
@@ -50,7 +51,7 @@ namespace CS2 {
 			server::CPlayer_CameraServices* m_pCameraServices; // 0xc18 | Schema_Ptr | Size: 0x8
 			server::CPlayer_MovementServices* m_pMovementServices; // 0xc20 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x8);
-			// server::CUtlVectorEmbeddedNetworkVar< server::ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0xc30 | Schema_Atomic | Size: 0x68
+			// server::CUtlVectorEmbeddedNetworkVar<server::ViewAngleServerChange_t> m_ServerViewAngleChanges; // 0xc30 | Schema_Atomic | Size: 0x68
 			char  m_ServerViewAngleChanges[0x68]; // 0xc30 | Schema_Atomic | Size: 0x68
 			GlobalTypes::QAngle v_angle; // 0xc98 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle v_anglePrevious; // 0xca4 | Schema_Atomic | Size: 0xc
@@ -63,15 +64,15 @@ namespace CS2 {
 			bool m_fInitHUD; // 0xd54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			server::CAI_Expresser* m_pExpresser; // 0xd58 | Schema_Ptr | Size: 0x8
-			// server::CHandle< server::CBasePlayerController > m_hController; // 0xd60 | Schema_Atomic | Size: 0x4
-			char  m_hController[0x4]; // 0xd60 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBasePlayerController > m_hDefaultController; // 0xd64 | Schema_Atomic | Size: 0x4
-			char  m_hDefaultController[0x4]; // 0xd64 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerController> m_hController; // 0xd60 | Schema_Atomic | Size: 0x4
+			// char  m_hController[0x4]; // 0xd60 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerController> m_hDefaultController; // 0xd64 | Schema_Atomic | Size: 0x4
+			// char  m_hDefaultController[0x4]; // 0xd64 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			float32 m_fHltvReplayDelay; // 0xd6c | Schema_Builtin | Size: 0x4
 			float32 m_fHltvReplayEnd; // 0xd70 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CEntityIndex m_iHltvReplayEntity; // 0xd74 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlVector< client::sndopvarlatchdata_t > m_sndOpvarLatchData; // 0xd78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::sndopvarlatchdata_t> m_sndOpvarLatchData; // 0xd78 | Schema_Atomic | Size: 0x18
 			// char  m_sndOpvarLatchData[0x18]; // 0xd78 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWeaponServices) == 0xBE0, "m_pWeaponServices in CBasePlayerPawn should be at offset 0xBE0");

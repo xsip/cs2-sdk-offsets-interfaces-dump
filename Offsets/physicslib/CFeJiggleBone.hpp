@@ -42,8 +42,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flBaseForwardFriction = 0x74; // float32 m_flBaseForwardFriction; |  0x74 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadius0 = 0x78; // float32 m_flRadius0; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadius1 = 0x7c; // float32 m_flRadius1; |  0x7c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vPoint0 = 0x80; // GlobalTypes::Vector m_vPoint0; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPoint1 = 0x8c; // GlobalTypes::Vector m_vPoint1; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPoint0 = 0x80; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPoint1 = 0x8c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nCollisionMask = 0x98; // uint16_t m_nCollisionMask; |  0x98 | Schema_Builtin | Size: 0x2
 			}
 		}

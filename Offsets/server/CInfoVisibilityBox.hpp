@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x508
 			namespace CInfoVisibilityBox /*: public CS2::server::CBaseEntity*/ {
 				constexpr std::ptrdiff_t m_nMode = 0x4f4; // int32_t m_nMode; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vBoxSize = 0x4f8; // GlobalTypes::Vector m_vBoxSize; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxSize = 0x4f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bEnabled = 0x504; // bool m_bEnabled; |  0x504 | Schema_Builtin | Size: 0x1
 			}
 		}

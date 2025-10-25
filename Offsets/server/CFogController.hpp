@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x560
 			namespace CFogController /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_fog = 0x4f0; // server::fogparams_t m_fog; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_fog = 0x4f0; // server::fogparams_t  | Schema_DeclaredClass | Size: 0x68
 				constexpr std::ptrdiff_t m_bUseAngles = 0x558; // bool m_bUseAngles; |  0x558 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iChangedVariables = 0x55c; // int32_t m_iChangedVariables; |  0x55c | Schema_Builtin | Size: 0x4
 			}

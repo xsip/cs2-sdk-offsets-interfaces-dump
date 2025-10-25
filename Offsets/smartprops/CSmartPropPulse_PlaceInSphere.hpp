@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x90
 			namespace CSmartPropPulse_PlaceInSphere /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_Place = 0x48; // pulse_runtime_lib::CPulse_OutflowConnection m_Place; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_Place = 0x48; // pulse_runtime_lib::CPulse_OutflowConnection  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

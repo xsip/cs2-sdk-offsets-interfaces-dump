@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x30
 			namespace CSetParameterActionUpdater /*: public CS2::animgraphlib::CAnimActionUpdater*/ {
-				constexpr std::ptrdiff_t m_hParam = 0x18; // animgraphlib::CAnimParamHandle m_hParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_value = 0x1a; // GlobalTypes::CAnimVariant m_value; |  Schema_Atomic | Size: 0x11
+				constexpr std::ptrdiff_t m_hParam = 0x18; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_value = 0x1a; // GlobalTypes::CAnimVariant  | Schema_Atomic | Size: 0x11
 			}
 		}
 	}

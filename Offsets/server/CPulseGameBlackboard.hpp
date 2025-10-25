@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x508
 			namespace CPulseGameBlackboard /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_strGraphName = 0x4f8; // GlobalTypes::CUtlString m_strGraphName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strStateBlob = 0x500; // GlobalTypes::CUtlString m_strStateBlob; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strGraphName = 0x4f8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strStateBlob = 0x500; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

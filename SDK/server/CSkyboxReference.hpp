@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CSkyCamera;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,8 +27,8 @@ namespace CS2 {
 		class CSkyboxReference : public CS2::server::CBaseEntity {
 		public:
 			GlobalTypes::WorldGroupId_t m_worldGroupId; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CSkyCamera > m_hSkyCamera; // 0x4f4 | Schema_Atomic | Size: 0x4
-			char  m_hSkyCamera[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CSkyCamera> m_hSkyCamera; // 0x4f4 | Schema_Atomic | Size: 0x4
+			// char  m_hSkyCamera[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CSkyboxReference, m_worldGroupId) == 0x4F0, "m_worldGroupId in CSkyboxReference should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CSkyboxReference, m_hSkyCamera) == 0x4F4, "m_hSkyCamera in CSkyboxReference should be at offset 0x4F4");

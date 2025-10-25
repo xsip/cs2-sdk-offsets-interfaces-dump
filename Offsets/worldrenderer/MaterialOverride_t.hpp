@@ -12,8 +12,8 @@ namespace CS2 {
 			namespace MaterialOverride_t /*: public CS2::worldrenderer::BaseSceneObjectOverride_t*/ {
 				constexpr std::ptrdiff_t m_nSubSceneObject = 0x4; // uint32_t m_nSubSceneObject; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDrawCallIndex = 0x8; // uint32_t m_nDrawCallIndex; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pMaterial = 0x10; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_pMaterial; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vLinearTintColor = 0x18; // GlobalTypes::Vector m_vLinearTintColor; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_pMaterial = 0x10; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vLinearTintColor = 0x18; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

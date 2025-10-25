@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x910
 			namespace C_INIT_MoveBetweenPoints /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_flSpeedMin = 0x1d8; // particleslib::CPerParticleFloatInput m_flSpeedMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flSpeedMax = 0x348; // particleslib::CPerParticleFloatInput m_flSpeedMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flEndSpread = 0x4b8; // particleslib::CPerParticleFloatInput m_flEndSpread; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flStartOffset = 0x628; // particleslib::CPerParticleFloatInput m_flStartOffset; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flEndOffset = 0x798; // particleslib::CPerParticleFloatInput m_flEndOffset; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flSpeedMin = 0x1d8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flSpeedMax = 0x348; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flEndSpread = 0x4b8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flStartOffset = 0x628; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flEndOffset = 0x798; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_nEndControlPointNumber = 0x908; // int32_t m_nEndControlPointNumber; |  0x908 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bTrailBias = 0x90c; // bool m_bTrailBias; |  0x90c | Schema_Builtin | Size: 0x1
 			}

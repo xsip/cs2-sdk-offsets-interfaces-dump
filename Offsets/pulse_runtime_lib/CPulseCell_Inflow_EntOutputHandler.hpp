@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0xB8
 			namespace CPulseCell_Inflow_EntOutputHandler /*: public CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint*/ {
-				constexpr std::ptrdiff_t m_SourceEntity = 0x80; // GlobalTypes::PulseSymbol_t m_SourceEntity; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_SourceOutput = 0x90; // GlobalTypes::PulseSymbol_t m_SourceOutput; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_ExpectedParamType = 0xa0; // GlobalTypes::CPulseValueFullType m_ExpectedParamType; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SourceEntity = 0x80; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_SourceOutput = 0x90; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_ExpectedParamType = 0xa0; // GlobalTypes::CPulseValueFullType  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

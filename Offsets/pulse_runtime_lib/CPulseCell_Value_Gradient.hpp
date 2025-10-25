@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x60
 			namespace CPulseCell_Value_Gradient /*: public CS2::pulse_runtime_lib::CPulseCell_BaseValue*/ {
-				constexpr std::ptrdiff_t m_Gradient = 0x48; // GlobalTypes::CColorGradient m_Gradient; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Gradient = 0x48; // GlobalTypes::CColorGradient  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

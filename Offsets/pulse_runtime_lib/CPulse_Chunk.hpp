@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x58
 			namespace CPulse_Chunk /**/ {
-				constexpr std::ptrdiff_t m_Instructions = 0x0; // GlobalTypes::CUtlLeanVector< pulse_runtime_lib::PGDInstruction_t > m_Instructions; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Registers = 0x10; // GlobalTypes::CUtlLeanVector< pulse_runtime_lib::CPulse_RegisterInfo > m_Registers; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_InstructionEditorIDs = 0x20; // GlobalTypes::CUtlLeanVector< pulse_runtime_lib::PulseDocNodeID_t > m_InstructionEditorIDs; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Instructions = 0x0; // GlobalTypes::CUtlLeanVector<pulse_runtime_lib::PGDInstruction_t>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Registers = 0x10; // GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulse_RegisterInfo>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_InstructionEditorIDs = 0x20; // GlobalTypes::CUtlLeanVector<pulse_runtime_lib::PulseDocNodeID_t>  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

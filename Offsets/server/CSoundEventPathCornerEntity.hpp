@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x658
 			namespace CSoundEventPathCornerEntity /*: public CS2::server::CSoundEventEntity*/ {
-				constexpr std::ptrdiff_t m_iszPathCorner = 0x5b8; // GlobalTypes::CUtlSymbolLarge m_iszPathCorner; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszPathCorner = 0x5b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iCountMax = 0x5c0; // int32_t m_iCountMax; |  0x5c0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDistanceMax = 0x5c4; // float32 m_flDistanceMax; |  0x5c4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDistMaxSqr = 0x5c8; // float32 m_flDistMaxSqr; |  0x5c8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDotProductMax = 0x5cc; // float32 m_flDotProductMax; |  0x5cc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bPlaying = 0x5d0; // bool m_bPlaying; |  0x5d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecCornerPairsNetworked = 0x5f8; // GlobalTypes::CNetworkUtlVectorBase< client::SoundeventPathCornerPairNetworked_t > m_vecCornerPairsNetworked; |  Schema_Atomic | Size: 0x60
+				constexpr std::ptrdiff_t m_vecCornerPairsNetworked = 0x5f8; // GlobalTypes::CNetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t>  | Schema_Atomic | Size: 0x60
 			}
 		}
 	}

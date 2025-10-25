@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x208
 			namespace C_INIT_CreationNoise /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bAbsVal = 0x1dc; // bool m_bAbsVal; |  0x1dc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAbsValInv = 0x1dd; // bool m_bAbsValInv; |  0x1dd | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flOffset = 0x1e0; // float32 m_flOffset; |  0x1e0 | Schema_Builtin | Size: 0x4
@@ -18,7 +18,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flOutputMax = 0x1e8; // float32 m_flOutputMax; |  0x1e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseScale = 0x1ec; // float32 m_flNoiseScale; |  0x1ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseScaleLoc = 0x1f0; // float32 m_flNoiseScaleLoc; |  0x1f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOffsetLoc = 0x1f4; // GlobalTypes::Vector m_vecOffsetLoc; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffsetLoc = 0x1f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flWorldTimeScale = 0x200; // float32 m_flWorldTimeScale; |  0x200 | Schema_Builtin | Size: 0x4
 			}
 		}

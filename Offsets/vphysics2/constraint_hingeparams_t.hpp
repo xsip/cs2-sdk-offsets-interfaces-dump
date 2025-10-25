@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace vphysics2 {
 			// Class size: 0x40
 			namespace constraint_hingeparams_t /**/ {
-				constexpr std::ptrdiff_t worldPosition = 0x0; // GlobalTypes::Vector worldPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t worldAxisDirection = 0xc; // GlobalTypes::Vector worldAxisDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t hingeAxis = 0x18; // vphysics2::constraint_axislimit_t hingeAxis; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t constraint = 0x28; // vphysics2::constraint_breakableparams_t constraint; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t worldPosition = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t worldAxisDirection = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t hingeAxis = 0x18; // vphysics2::constraint_axislimit_t  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t constraint = 0x28; // vphysics2::constraint_breakableparams_t  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

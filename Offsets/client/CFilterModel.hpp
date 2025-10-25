@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x658
 			namespace CFilterModel /*: public CS2::client::CBaseFilter*/ {
-				constexpr std::ptrdiff_t m_iFilterModel = 0x650; // GlobalTypes::CUtlSymbolLarge m_iFilterModel; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iFilterModel = 0x650; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

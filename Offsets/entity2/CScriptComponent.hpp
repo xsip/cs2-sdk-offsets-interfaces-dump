@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace entity2 {
 			// Class size: 0x38
 			namespace CScriptComponent /*: public CS2::entity2::CEntityComponent*/ {
-				constexpr std::ptrdiff_t m_scriptClassName = 0x30; // GlobalTypes::CUtlSymbolLarge m_scriptClassName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_scriptClassName = 0x30; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

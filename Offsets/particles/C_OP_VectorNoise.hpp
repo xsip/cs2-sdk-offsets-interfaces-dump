@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1F8
 			namespace C_OP_VectorNoise /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOutputMin = 0x1d4; // GlobalTypes::Vector m_vecOutputMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOutputMax = 0x1e0; // GlobalTypes::Vector m_vecOutputMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOutputMin = 0x1d4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOutputMax = 0x1e0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_fl4NoiseScale = 0x1ec; // float32 m_fl4NoiseScale; |  0x1ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAdditive = 0x1f0; // bool m_bAdditive; |  0x1f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bOffset = 0x1f1; // bool m_bOffset; |  0x1f1 | Schema_Builtin | Size: 0x1

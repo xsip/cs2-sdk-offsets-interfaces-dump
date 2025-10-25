@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x300
 			namespace CSmartPropElement_PlaceOnPath /*: public CS2::smartprops::CSmartPropElement_Group*/ {
-				constexpr std::ptrdiff_t m_PathName = 0xa0; // GlobalTypes::CUtlString m_PathName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flSpacing = 0xa8; // GlobalTypes::CSmartPropAttributeFloat m_flSpacing; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flOffsetAlongPath = 0xe8; // GlobalTypes::CSmartPropAttributeFloat m_flOffsetAlongPath; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vPathOffset = 0x128; // GlobalTypes::CSmartPropAttributeVector2D m_vPathOffset; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_PathSpace = 0x168; // smartprops::CSmartPropAttributeCoordinateSpace m_PathSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_bUseFixedUpDirection = 0x1a8; // GlobalTypes::CSmartPropAttributeBool m_bUseFixedUpDirection; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bUseProjectedDistance = 0x1e8; // GlobalTypes::CSmartPropAttributeBool m_bUseProjectedDistance; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vUpDirection = 0x228; // GlobalTypes::CSmartPropAttributeVector m_vUpDirection; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_UpDirectionSpace = 0x268; // smartprops::CSmartPropAttributeCoordinateSpace m_UpDirectionSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_DefaultPathInWorldSpace = 0x2a8; // GlobalTypes::CSmartPropAttributeBool m_DefaultPathInWorldSpace; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_DefaultPath = 0x2e8; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPropAttributeVector > m_DefaultPath; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathName = 0xa0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flSpacing = 0xa8; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flOffsetAlongPath = 0xe8; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vPathOffset = 0x128; // GlobalTypes::CSmartPropAttributeVector2D  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_PathSpace = 0x168; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_bUseFixedUpDirection = 0x1a8; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bUseProjectedDistance = 0x1e8; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vUpDirection = 0x228; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_UpDirectionSpace = 0x268; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_DefaultPathInWorldSpace = 0x2a8; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_DefaultPath = 0x2e8; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPropAttributeVector>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

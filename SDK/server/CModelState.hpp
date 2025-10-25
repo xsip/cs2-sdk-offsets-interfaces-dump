@@ -21,7 +21,7 @@ namespace CS2 {
 		class CModelState  {
 		public:
 			S2_PAD(0xd0);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0xd0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0xd0 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0xd0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_ModelName; // 0xd8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x45);

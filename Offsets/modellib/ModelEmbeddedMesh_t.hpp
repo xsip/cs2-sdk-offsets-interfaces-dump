@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x70
 			namespace ModelEmbeddedMesh_t /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nMeshIndex = 0x10; // int32_t m_nMeshIndex; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDataBlock = 0x14; // int32_t m_nDataBlock; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMorphBlock = 0x18; // int32_t m_nMorphBlock; |  0x18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vertexBuffers = 0x20; // GlobalTypes::CUtlVector< modellib::ModelMeshBufferData_t > m_vertexBuffers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_indexBuffers = 0x38; // GlobalTypes::CUtlVector< modellib::ModelMeshBufferData_t > m_indexBuffers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_toolsBuffers = 0x50; // GlobalTypes::CUtlVector< modellib::ModelMeshBufferData_t > m_toolsBuffers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vertexBuffers = 0x20; // GlobalTypes::CUtlVector<modellib::ModelMeshBufferData_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_indexBuffers = 0x38; // GlobalTypes::CUtlVector<modellib::ModelMeshBufferData_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_toolsBuffers = 0x50; // GlobalTypes::CUtlVector<modellib::ModelMeshBufferData_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nVBIBBlock = 0x68; // int32_t m_nVBIBBlock; |  0x68 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nToolsVBBlock = 0x6c; // int32_t m_nToolsVBBlock; |  0x6c | Schema_Builtin | Size: 0x4
 			}

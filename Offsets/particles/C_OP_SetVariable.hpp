@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xAD0
 			namespace C_OP_SetVariable /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_variableReference = 0x1d8; // particleslib::CParticleVariableRef m_variableReference; |  Schema_DeclaredClass | Size: 0x50
-				constexpr std::ptrdiff_t m_transformInput = 0x228; // particleslib::CParticleTransformInput m_transformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_positionOffset = 0x290; // GlobalTypes::Vector m_positionOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_rotationOffset = 0x29c; // GlobalTypes::QAngle m_rotationOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecInput = 0x2a8; // particleslib::CParticleCollectionVecInput m_vecInput; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_floatInput = 0x960; // particleslib::CParticleCollectionFloatInput m_floatInput; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_variableReference = 0x1d8; // particleslib::CParticleVariableRef  | Schema_DeclaredClass | Size: 0x50
+				constexpr std::ptrdiff_t m_transformInput = 0x228; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_positionOffset = 0x290; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_rotationOffset = 0x29c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecInput = 0x2a8; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_floatInput = 0x960; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

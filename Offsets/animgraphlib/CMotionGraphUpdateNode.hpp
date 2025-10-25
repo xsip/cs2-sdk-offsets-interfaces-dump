@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x68
 			namespace CMotionGraphUpdateNode /*: public CS2::animgraphlib::CLeafUpdateNode*/ {
-				constexpr std::ptrdiff_t m_pMotionGraph = 0x58; // GlobalTypes::CSmartPtr< animgraphlib::CMotionGraph > m_pMotionGraph; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pMotionGraph = 0x58; // GlobalTypes::CSmartPtr<animgraphlib::CMotionGraph>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

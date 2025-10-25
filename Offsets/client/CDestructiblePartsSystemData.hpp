@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x30
 			namespace CDestructiblePartsSystemData /**/ {
-				constexpr std::ptrdiff_t m_PartsDataByHitGroup = 0x0; // GlobalTypes::CUtlOrderedMap< HitGroup_t, CDestructiblePart > m_PartsDataByHitGroup; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_nMinMaxNumberHitGroupsToDestroyWhenGibbing = 0x28; // tier2::CRangeInt m_nMinMaxNumberHitGroupsToDestroyWhenGibbing; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_PartsDataByHitGroup = 0x0; // GlobalTypes::CUtlOrderedMap  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_nMinMaxNumberHitGroupsToDestroyWhenGibbing = 0x28; // tier2::CRangeInt  | Schema_DeclaredClass | Size: 0x8
 			}
 		}
 	}

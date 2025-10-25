@@ -25,7 +25,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< uint16 > m_Nodes; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_Nodes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_InitPos; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector> m_InitPos; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_InitPos[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< float32 > m_Gravity; // 0x40 | Schema_Atomic | Size: 0x18
 			// char  m_Gravity[0x18]; // 0x40 | Schema_Atomic | Size: 0x18

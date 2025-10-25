@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x18
 			namespace PulseNodeDynamicOutflows_t /**/ {
-				constexpr std::ptrdiff_t m_Outflows = 0x0; // assetpreview::DynamicOutflow_t > m_Outflows; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Outflows = 0x0; // assetpreview::CUtlVector<pulse_runtime_lib::PulseNodeDynamicOutflows_t::DynamicOutflow_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

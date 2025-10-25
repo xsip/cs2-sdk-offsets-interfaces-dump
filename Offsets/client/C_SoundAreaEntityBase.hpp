@@ -12,8 +12,8 @@ namespace CS2 {
 			namespace C_SoundAreaEntityBase /*: public CS2::client::C_BaseEntity*/ {
 				constexpr std::ptrdiff_t m_bDisabled = 0x5f8; // bool m_bDisabled; |  0x5f8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bWasEnabled = 0x600; // bool m_bWasEnabled; |  0x600 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszSoundAreaType = 0x608; // GlobalTypes::CUtlSymbolLarge m_iszSoundAreaType; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vPos = 0x610; // GlobalTypes::Vector m_vPos; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_iszSoundAreaType = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vPos = 0x610; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

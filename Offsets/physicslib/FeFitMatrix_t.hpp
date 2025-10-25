@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x40
 			namespace FeFitMatrix_t /**/ {
-				constexpr std::ptrdiff_t bone = 0x0; // GlobalTypes::CTransform bone; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t vCenter = 0x20; // GlobalTypes::Vector vCenter; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t bone = 0x0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t vCenter = 0x20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t nEnd = 0x2c; // uint16_t nEnd; |  0x2c | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nNode = 0x2e; // uint16_t nNode; |  0x2e | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nBeginDynamic = 0x30; // uint16_t nBeginDynamic; |  0x30 | Schema_Builtin | Size: 0x2

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x50
 			namespace CModelConfigElement_SetRenderColor /*: public CS2::modellib::CModelConfigElement*/ {
-				constexpr std::ptrdiff_t m_Color = 0x48; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0x48; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

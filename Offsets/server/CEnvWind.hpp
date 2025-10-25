@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x640
 			namespace CEnvWind /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_EnvWindShared = 0x4f0; // server::CEnvWindShared m_EnvWindShared; |  Schema_DeclaredClass | Size: 0x150
+				constexpr std::ptrdiff_t m_EnvWindShared = 0x4f0; // server::CEnvWindShared  | Schema_DeclaredClass | Size: 0x150
 			}
 		}
 	}

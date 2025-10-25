@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CPointCommentaryNode;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -30,14 +35,14 @@ namespace CS2 {
 			bool m_bCheatState; // 0x1c | Schema_Builtin | Size: 0x1
 			bool m_bIsFirstSpawnGroupToLoad; // 0x1d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1a);
-			// server::CHandle< server::CPointCommentaryNode > m_hCurrentNode; // 0x38 | Schema_Atomic | Size: 0x4
-			char  m_hCurrentNode[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CPointCommentaryNode > m_hActiveCommentaryNode; // 0x3c | Schema_Atomic | Size: 0x4
-			char  m_hActiveCommentaryNode[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CPointCommentaryNode > m_hLastCommentaryNode; // 0x40 | Schema_Atomic | Size: 0x4
-			char  m_hLastCommentaryNode[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPointCommentaryNode> m_hCurrentNode; // 0x38 | Schema_Atomic | Size: 0x4
+			// char  m_hCurrentNode[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPointCommentaryNode> m_hActiveCommentaryNode; // 0x3c | Schema_Atomic | Size: 0x4
+			// char  m_hActiveCommentaryNode[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPointCommentaryNode> m_hLastCommentaryNode; // 0x40 | Schema_Atomic | Size: 0x4
+			// char  m_hLastCommentaryNode[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector< server.dll::CHandle< CPointCommentaryNode > > m_vecNodes; // 0x48 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CPointCommentaryNode>> m_vecNodes; // 0x48 | Schema_Atomic | Size: 0x18
 			char  m_vecNodes[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CCommentarySystem, m_bCommentaryConvarsChanging) == 0x11, "m_bCommentaryConvarsChanging in CCommentarySystem should be at offset 0x11");

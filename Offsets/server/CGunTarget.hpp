@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x888
 			namespace CGunTarget /*: public CS2::server::CBaseToggle*/ {
 				constexpr std::ptrdiff_t m_on = 0x858; // bool m_on; |  0x858 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hTargetEnt = 0x85c; // server::CHandle< server::CBaseEntity > m_hTargetEnt; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OnDeath = 0x860; // entity2::CEntityIOOutput m_OnDeath; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_hTargetEnt = 0x85c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OnDeath = 0x860; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

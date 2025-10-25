@@ -15,7 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nBucketCount = 0x210; // int32_t m_nBucketCount; |  0x210 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInterval = 0x214; // float32 m_flInterval; |  0x214 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFinalValue = 0x218; // float32 m_flFinalValue; |  0x218 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCompressionType = 0x21c; // client::TimelineCompression_t m_nCompressionType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nCompressionType = 0x21c; // client::TimelineCompression_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bStopped = 0x220; // bool m_bStopped; |  0x220 | Schema_Builtin | Size: 0x1
 			}
 		}

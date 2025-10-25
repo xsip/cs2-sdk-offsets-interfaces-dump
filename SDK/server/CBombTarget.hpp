@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -30,8 +35,8 @@ namespace CS2 {
 			bool m_bBombPlantedHere; // 0xa22 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
 			GlobalTypes::CUtlSymbolLarge m_szMountTarget; // 0xa28 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hInstructorHint; // 0xa30 | Schema_Atomic | Size: 0x4
-			char  m_hInstructorHint[0x4]; // 0xa30 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hInstructorHint; // 0xa30 | Schema_Atomic | Size: 0x4
+			// char  m_hInstructorHint[0x4]; // 0xa30 | Schema_Atomic | Size: 0x4
 			int32_t m_nBombSiteDesignation; // 0xa34 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombExplode) == 0x9A8, "m_OnBombExplode in CBombTarget should be at offset 0x9A8");

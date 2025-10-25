@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xC0
 			namespace CGameRules /**/ {
-				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer __m_pChainEntity; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_szQuestName = 0x30; // char m_szQuestName[128]; |  0x30 | Schema_FixedArray | Size: 0x80
 				constexpr std::ptrdiff_t m_nQuestPhase = 0xb0; // int32_t m_nQuestPhase; |  0xb0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTotalPausedTicks = 0xb4; // int32_t m_nTotalPausedTicks; |  0xb4 | Schema_Builtin | Size: 0x4

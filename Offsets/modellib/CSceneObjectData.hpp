@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x90
 			namespace CSceneObjectData /**/ {
-				constexpr std::ptrdiff_t m_vMinBounds = 0x0; // GlobalTypes::Vector m_vMinBounds; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxBounds = 0xc; // GlobalTypes::Vector m_vMaxBounds; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_drawCalls = 0x18; // GlobalTypes::CUtlLeanVector< modellib::CMaterialDrawDescriptor > m_drawCalls; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_drawBounds = 0x28; // GlobalTypes::CUtlLeanVector< mathlib_extended::AABB_t > m_drawBounds; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_meshlets = 0x38; // GlobalTypes::CUtlLeanVector< modellib::CMeshletDescriptor > m_meshlets; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vTintColor = 0x48; // GlobalTypes::Vector4D m_vTintColor; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vMinBounds = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxBounds = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_drawCalls = 0x18; // GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_drawBounds = 0x28; // GlobalTypes::CUtlLeanVector<mathlib_extended::AABB_t>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_meshlets = 0x38; // GlobalTypes::CUtlLeanVector<modellib::CMeshletDescriptor>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vTintColor = 0x48; // GlobalTypes::Vector4D  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

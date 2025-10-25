@@ -26,7 +26,7 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_PingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			GlobalTypes::CHandle< client::C_PlayerPing > m_hPlayerPing; // 0x40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_PlayerPing> m_hPlayerPing; // 0x40 | Schema_Atomic | Size: 0x4
 			// char  m_hPlayerPing[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

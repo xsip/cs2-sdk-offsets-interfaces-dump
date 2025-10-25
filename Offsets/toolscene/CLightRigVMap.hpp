@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace toolscene {
 			// Class size: 0xE8
 			namespace CLightRigVMap /**/ {
-				constexpr std::ptrdiff_t m_MapName = 0x0; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeVMapResourceData_t > > m_MapName; |  Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_MapName = 0x0; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<worldrenderer::InfoForResourceTypeVMapResourceData_t>>  | Schema_Atomic | Size: 0xe0
 				constexpr std::ptrdiff_t m_bRender3DSkybox = 0xe0; // bool m_bRender3DSkybox; |  0xe0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bParticlesTraceAgainstMap = 0xe1; // bool m_bParticlesTraceAgainstMap; |  0xe1 | Schema_Builtin | Size: 0x1
 			}

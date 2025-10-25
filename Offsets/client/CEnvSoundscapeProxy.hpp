@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x6A0
 			namespace CEnvSoundscapeProxy /*: public CS2::client::CEnvSoundscape*/ {
-				constexpr std::ptrdiff_t m_MainSoundscapeName = 0x698; // GlobalTypes::CUtlSymbolLarge m_MainSoundscapeName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_MainSoundscapeName = 0x698; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

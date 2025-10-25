@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x18
 			namespace SolveIKChainPoseOpFixedSettings_t /**/ {
-				constexpr std::ptrdiff_t m_ChainsToSolveData = 0x0; // GlobalTypes::CUtlVector< animgraphlib::ChainToSolveData_t > m_ChainsToSolveData; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ChainsToSolveData = 0x0; // GlobalTypes::CUtlVector<animgraphlib::ChainToSolveData_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x10
 			namespace CPhysicsDelegate /**/ {
-				constexpr std::ptrdiff_t m_pKeyframe = 0x8; // client::C_RopeKeyframe* m_pKeyframe; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pKeyframe = 0x8; // client::C_RopeKeyframe**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

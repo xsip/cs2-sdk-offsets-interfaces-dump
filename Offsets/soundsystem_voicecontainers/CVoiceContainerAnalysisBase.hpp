@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x50
 			namespace CVoiceContainerAnalysisBase /**/ {
 				constexpr std::ptrdiff_t m_bRegenerateCurveOnCompile = 0x8; // bool m_bRegenerateCurveOnCompile; |  0x8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_curve = 0x10; // GlobalTypes::CPiecewiseCurve m_curve; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_curve = 0x10; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

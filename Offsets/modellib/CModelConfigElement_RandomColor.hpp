@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x60
 			namespace CModelConfigElement_RandomColor /*: public CS2::modellib::CModelConfigElement*/ {
-				constexpr std::ptrdiff_t m_Gradient = 0x48; // GlobalTypes::CColorGradient m_Gradient; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Gradient = 0x48; // GlobalTypes::CColorGradient  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

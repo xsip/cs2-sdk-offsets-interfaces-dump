@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x20
 			namespace CRopeOverlapHit /**/ {
-				constexpr std::ptrdiff_t m_hEntity = 0x0; // client::CHandle< client::C_BaseEntity > m_hEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOverlappingLinks = 0x8; // GlobalTypes::CUtlVector< int32 > m_vecOverlappingLinks; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hEntity = 0x0; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOverlappingLinks = 0x8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

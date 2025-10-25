@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x7E0
 			namespace CLightEntity /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_CLightComponent = 0x7d8; // server::CLightComponent* m_CLightComponent; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_CLightComponent = 0x7d8; // server::CLightComponent**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

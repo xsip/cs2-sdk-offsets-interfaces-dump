@@ -14,10 +14,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_unAccountID = 0xeb4; // uint32_t m_unAccountID; |  0xeb4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unTraceID = 0xeb8; // uint32_t m_unTraceID; |  0xeb8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_rtGcTime = 0xebc; // uint32_t m_rtGcTime; |  0xebc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecEndPos = 0xec0; // GlobalTypes::Vector m_vecEndPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecStart = 0xecc; // GlobalTypes::Vector m_vecStart; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecLeft = 0xed8; // GlobalTypes::Vector m_vecLeft; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecNormal = 0xee4; // GlobalTypes::Vector m_vecNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecEndPos = 0xec0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecStart = 0xecc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecLeft = 0xed8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNormal = 0xee4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nPlayer = 0xef0; // int32_t m_nPlayer; |  0xef0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nEntity = 0xef4; // int32_t m_nEntity; |  0xef4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHitbox = 0xef8; // int32_t m_nHitbox; |  0xef8 | Schema_Builtin | Size: 0x4
@@ -25,7 +25,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nTintID = 0xf00; // int32_t m_nTintID; |  0xf00 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nVersion = 0xf04; // uint8_t m_nVersion; |  0xf04 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_ubSignature = 0xf05; // uint8_t m_ubSignature[128]; |  0xf05 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_SprayRenderHelper = 0xf90; // client::CPlayerSprayDecalRenderHelper m_SprayRenderHelper; |  Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_SprayRenderHelper = 0xf90; // client::CPlayerSprayDecalRenderHelper  | Schema_DeclaredClass | Size: 0x30
 			}
 		}
 	}

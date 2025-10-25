@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace CBinaryUpdateNode /*: public CS2::animgraphlib::CAnimUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_pChild1 = 0x60; // animgraphlib::CAnimUpdateNodeRef m_pChild1; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_pChild2 = 0x70; // animgraphlib::CAnimUpdateNodeRef m_pChild2; |  Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_timingBehavior = 0x80; // animgraphlib::BinaryNodeTiming m_timingBehavior; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_pChild1 = 0x60; // animgraphlib::CAnimUpdateNodeRef  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_pChild2 = 0x70; // animgraphlib::CAnimUpdateNodeRef  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_timingBehavior = 0x80; // animgraphlib::BinaryNodeTiming  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flTimingBlend = 0x84; // float32 m_flTimingBlend; |  0x84 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bResetChild1 = 0x88; // bool m_bResetChild1; |  0x88 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bResetChild2 = 0x89; // bool m_bResetChild2; |  0x89 | Schema_Builtin | Size: 0x1

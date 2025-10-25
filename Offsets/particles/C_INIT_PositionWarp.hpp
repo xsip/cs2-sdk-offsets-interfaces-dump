@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xF68
 			namespace C_INIT_PositionWarp /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecWarpMin = 0x1d8; // particleslib::CParticleCollectionVecInput m_vecWarpMin; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_vecWarpMax = 0x890; // particleslib::CParticleCollectionVecInput m_vecWarpMax; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecWarpMin = 0x1d8; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecWarpMax = 0x890; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_nScaleControlPointNumber = 0xf48; // int32_t m_nScaleControlPointNumber; |  0xf48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0xf4c; // int32_t m_nControlPointNumber; |  0xf4c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nRadiusComponent = 0xf50; // int32_t m_nRadiusComponent; |  0xf50 | Schema_Builtin | Size: 0x4

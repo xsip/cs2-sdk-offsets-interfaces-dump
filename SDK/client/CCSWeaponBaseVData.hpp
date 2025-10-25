@@ -30,13 +30,13 @@ namespace CS2 {
 		public:
 			client::CSWeaponType m_WeaponType; // 0x440 | Schema_DeclaredEnum | Size: 0x4
 			client::CSWeaponCategory m_WeaponCategory; // 0x444 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_szModel_AG2; // 0x448 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_szModel_AG2; // 0x448 | Schema_Atomic | Size: 0xe0
 			char  m_szModel_AG2[0xe0]; // 0x448 | Schema_Atomic | Size: 0xe0
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCNmSkeleton > > m_szAnimSkeleton; // 0x528 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>> m_szAnimSkeleton; // 0x528 | Schema_Atomic | Size: 0xe0
 			char  m_szAnimSkeleton[0xe0]; // 0x528 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::Vector m_vecMuzzlePos0; // 0x608 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecMuzzlePos1; // 0x614 | Schema_Atomic | Size: 0xc
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szTracerParticle; // 0x620 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szTracerParticle; // 0x620 | Schema_Atomic | Size: 0xe0
 			char  m_szTracerParticle[0xe0]; // 0x620 | Schema_Atomic | Size: 0xe0
 			client::gear_slot_t m_GearSlot; // 0x700 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_GearSlotPosition; // 0x704 | Schema_Builtin | Size: 0x4

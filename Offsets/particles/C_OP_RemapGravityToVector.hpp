@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x900
 			namespace C_OP_RemapGravityToVector /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_vInput1 = 0x1d0; // particleslib::CPerParticleVecInput m_vInput1; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_nOutputField = 0x888; // particles::ParticleAttributeIndex_t m_nOutputField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x88c; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vInput1 = 0x1d0; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nOutputField = 0x888; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x88c; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bNormalizedOutput = 0x890; // bool m_bNormalizedOutput; |  0x890 | Schema_Builtin | Size: 0x1
 			}
 		}

@@ -20,7 +20,7 @@ namespace CS2 {
 	namespace navlib {
 		class CNavHullPresetVData  {
 		public:
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_vecNavHulls; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_vecNavHulls; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_vecNavHulls[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::navlib::CNavHullPresetVData, m_vecNavHulls) == 0x0, "m_vecNavHulls in CNavHullPresetVData should be at offset 0x0");

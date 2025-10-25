@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace particles {
 		class ParticleChildrenInfo_t  {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_ChildRef; // 0x0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_ChildRef; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_ChildRef[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 m_flDelay; // 0x8 | Schema_Builtin | Size: 0x4
 			bool m_bEndCap; // 0xc | Schema_Builtin | Size: 0x1

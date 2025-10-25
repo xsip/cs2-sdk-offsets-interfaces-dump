@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x50
 			namespace CPulseCell_SoundEventStart /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_Type = 0x48; // server::SoundEventStartType_t m_Type; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_Type = 0x48; // server::SoundEventStartType_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

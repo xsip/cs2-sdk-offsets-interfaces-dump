@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1F8
 			namespace C_OP_RandomForce /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_MinForce = 0x1e0; // GlobalTypes::Vector m_MinForce; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_MaxForce = 0x1ec; // GlobalTypes::Vector m_MaxForce; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_MinForce = 0x1e0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_MaxForce = 0x1ec; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

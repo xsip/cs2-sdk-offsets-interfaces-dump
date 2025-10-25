@@ -10,34 +10,34 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1300
 			namespace C_BreakableProp /*: public CS2::client::CBaseProp*/ {
-				constexpr std::ptrdiff_t m_CPropDataComponent = 0x1190; // client::CPropDataComponent m_CPropDataComponent; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_OnStartDeath = 0x11d0; // entity2::CEntityIOOutput m_OnStartDeath; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnBreak = 0x11f8; // entity2::CEntityIOOutput m_OnBreak; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnHealthChanged = 0x1220; // GlobalTypes::CEntityOutputTemplate< float32 > m_OnHealthChanged; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTakeDamage = 0x1248; // entity2::CEntityIOOutput m_OnTakeDamage; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_CPropDataComponent = 0x1190; // client::CPropDataComponent  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_OnStartDeath = 0x11d0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBreak = 0x11f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnHealthChanged = 0x1220; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnTakeDamage = 0x1248; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_impactEnergyScale = 0x1270; // float32 m_impactEnergyScale; |  0x1270 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iMinHealthDmg = 0x1274; // int32_t m_iMinHealthDmg; |  0x1274 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPressureDelay = 0x1278; // float32 m_flPressureDelay; |  0x1278 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDefBurstScale = 0x127c; // float32 m_flDefBurstScale; |  0x127c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vDefBurstOffset = 0x1280; // GlobalTypes::Vector m_vDefBurstOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hBreaker = 0x128c; // client::CHandle< client::C_BaseEntity > m_hBreaker; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_PerformanceMode = 0x1290; // client::PerformanceMode_t m_PerformanceMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flPreventDamageBeforeTime = 0x1294; // entity2::GameTime_t m_flPreventDamageBeforeTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_BreakableContentsType = 0x1298; // client::BreakableContentsType_t m_BreakableContentsType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_strBreakableContentsPropGroupOverride = 0x12a0; // GlobalTypes::CUtlString m_strBreakableContentsPropGroupOverride; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strBreakableContentsParticleOverride = 0x12a8; // GlobalTypes::CUtlString m_strBreakableContentsParticleOverride; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vDefBurstOffset = 0x1280; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hBreaker = 0x128c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_PerformanceMode = 0x1290; // client::PerformanceMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flPreventDamageBeforeTime = 0x1294; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_BreakableContentsType = 0x1298; // client::BreakableContentsType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strBreakableContentsPropGroupOverride = 0x12a0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strBreakableContentsParticleOverride = 0x12a8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bHasBreakPiecesOrCommands = 0x12b0; // bool m_bHasBreakPiecesOrCommands; |  0x12b0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_explodeDamage = 0x12b4; // float32 m_explodeDamage; |  0x12b4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_explodeRadius = 0x12b8; // float32 m_explodeRadius; |  0x12b8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_explosionDelay = 0x12c0; // float32 m_explosionDelay; |  0x12c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_explosionBuildupSound = 0x12c8; // GlobalTypes::CUtlSymbolLarge m_explosionBuildupSound; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_explosionCustomEffect = 0x12d0; // GlobalTypes::CUtlSymbolLarge m_explosionCustomEffect; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_explosionCustomSound = 0x12d8; // GlobalTypes::CUtlSymbolLarge m_explosionCustomSound; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_explosionModifier = 0x12e0; // GlobalTypes::CUtlSymbolLarge m_explosionModifier; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hPhysicsAttacker = 0x12e8; // client::CHandle< client::C_BasePlayerPawn > m_hPhysicsAttacker; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastPhysicsInfluenceTime = 0x12ec; // entity2::GameTime_t m_flLastPhysicsInfluenceTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_explosionBuildupSound = 0x12c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_explosionCustomEffect = 0x12d0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_explosionCustomSound = 0x12d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_explosionModifier = 0x12e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hPhysicsAttacker = 0x12e8; // GlobalTypes::CHandle<client::C_BasePlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastPhysicsInfluenceTime = 0x12ec; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flDefaultFadeScale = 0x12f0; // float32 m_flDefaultFadeScale; |  0x12f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hLastAttacker = 0x12f4; // client::CHandle< client::C_BaseEntity > m_hLastAttacker; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hLastAttacker = 0x12f4; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

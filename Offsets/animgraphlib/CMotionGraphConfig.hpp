@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CMotionGraphConfig /**/ {
 				constexpr std::ptrdiff_t m_paramValues = 0x0; // float32 m_paramValues[4]; |  0x0 | Schema_FixedArray | Size: 0x10
 				constexpr std::ptrdiff_t m_flDuration = 0x10; // float32 m_flDuration; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMotionIndex = 0x14; // animgraphlib::MotionIndex m_nMotionIndex; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nMotionIndex = 0x14; // animgraphlib::MotionIndex  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nSampleStart = 0x18; // int32_t m_nSampleStart; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSampleCount = 0x1c; // int32_t m_nSampleCount; |  0x1c | Schema_Builtin | Size: 0x4
 			}

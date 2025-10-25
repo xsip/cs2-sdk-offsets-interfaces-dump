@@ -10,20 +10,20 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0xF8
 			namespace RnHull_t /**/ {
-				constexpr std::ptrdiff_t m_vCentroid = 0x0; // GlobalTypes::Vector m_vCentroid; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vCentroid = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flMaxAngularRadius = 0xc; // float32 m_flMaxAngularRadius; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Bounds = 0x10; // mathlib_extended::AABB_t m_Bounds; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_vOrthographicAreas = 0x28; // GlobalTypes::Vector m_vOrthographicAreas; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_MassProperties = 0x34; // GlobalTypes::matrix3x4_t m_MassProperties; |  Schema_Atomic | Size: 0x30
+				constexpr std::ptrdiff_t m_Bounds = 0x10; // mathlib_extended::AABB_t  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_vOrthographicAreas = 0x28; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_MassProperties = 0x34; // GlobalTypes::matrix3x4_t  | Schema_Atomic | Size: 0x30
 				constexpr std::ptrdiff_t m_flVolume = 0x64; // float32 m_flVolume; |  0x64 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSurfaceArea = 0x68; // float32 m_flSurfaceArea; |  0x68 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Vertices = 0x70; // GlobalTypes::CUtlVector< physicslib::RnVertex_t > m_Vertices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_VertexPositions = 0x88; // GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_VertexPositions; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Edges = 0xa0; // GlobalTypes::CUtlVector< physicslib::RnHalfEdge_t > m_Edges; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Faces = 0xb8; // GlobalTypes::CUtlVector< physicslib::RnFace_t > m_Faces; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_FacePlanes = 0xd0; // GlobalTypes::CUtlVector< physicslib::RnPlane_t > m_FacePlanes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Vertices = 0x70; // GlobalTypes::CUtlVector<physicslib::RnVertex_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_VertexPositions = 0x88; // GlobalTypes::CUtlVector<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Edges = 0xa0; // GlobalTypes::CUtlVector<physicslib::RnHalfEdge_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Faces = 0xb8; // GlobalTypes::CUtlVector<physicslib::RnFace_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_FacePlanes = 0xd0; // GlobalTypes::CUtlVector<physicslib::RnPlane_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nFlags = 0xe8; // uint32_t m_nFlags; |  0xe8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pRegionSVM = 0xf0; // physicslib::CRegionSVM* m_pRegionSVM; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pRegionSVM = 0xf0; // physicslib::CRegionSVM**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

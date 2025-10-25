@@ -39,7 +39,7 @@ namespace CS2 {
 			float32 m_flAttenuation2; // 0x94 | Schema_Builtin | Size: 0x4
 			float32 m_flTheta; // 0x98 | Schema_Builtin | Size: 0x4
 			float32 m_flPhi; // 0x9c | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; // 0xa0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hLightCookie; // 0xa0 | Schema_Atomic | Size: 0x8
 			char  m_hLightCookie[0x8]; // 0xa0 | Schema_Atomic | Size: 0x8
 			int32_t m_nCascades; // 0xa8 | Schema_Builtin | Size: 0x4
 			int32_t m_nCastShadows; // 0xac | Schema_Builtin | Size: 0x4

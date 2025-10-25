@@ -39,13 +39,13 @@ namespace CS2 {
 			float32 m_flFPS; // 0x28 | Schema_Builtin | Size: 0x4
 			int16_t m_nSubCycles; // 0x2c | Schema_Builtin | Size: 0x2
 			int16_t m_numLocalResults; // 0x2e | Schema_Builtin | Size: 0x2
-			GlobalTypes::CUtlVector< animationsystem::CSeqCmdLayer > m_cmdLayerArray; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqCmdLayer> m_cmdLayerArray; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_cmdLayerArray[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CAnimEventDefinition > m_eventArray; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CAnimEventDefinition> m_eventArray; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_eventArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CAnimActivity> m_activityArray; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_activityArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animationsystem::CSeqPoseSetting > m_poseSettingArray; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CSeqPoseSetting> m_poseSettingArray; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_poseSettingArray[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CSeqCmdSeqDesc, m_sName) == 0x0, "m_sName in CSeqCmdSeqDesc should be at offset 0x0");

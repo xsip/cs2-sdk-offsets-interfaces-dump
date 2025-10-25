@@ -11,10 +11,10 @@ namespace CS2 {
 			// Class size: 0x50
 			namespace FeSimdSpringIntegrator_t /**/ {
 				constexpr std::ptrdiff_t nNode = 0x0; // uint16_t nNode[4]; |  0x0 | Schema_FixedArray | Size: 0x0
-				constexpr std::ptrdiff_t flSpringRestLength = 0x10; // GlobalTypes::fltx4 flSpringRestLength; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t flSpringConstant = 0x20; // GlobalTypes::fltx4 flSpringConstant; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t flSpringDamping = 0x30; // GlobalTypes::fltx4 flSpringDamping; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t flNodeWeight0 = 0x40; // GlobalTypes::fltx4 flNodeWeight0; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t flSpringRestLength = 0x10; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t flSpringConstant = 0x20; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t flSpringDamping = 0x30; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t flNodeWeight0 = 0x40; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

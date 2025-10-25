@@ -43,14 +43,14 @@ namespace CS2 {
 			float32 m_flScrollSpeed; // 0xeec | Schema_Builtin | Size: 0x4
 			uint16_t m_RopeFlags; // 0xef0 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0xef8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_iRopeMaterialModelIndex; // 0xef8 | Schema_Atomic | Size: 0x8
 			char  m_iRopeMaterialModelIndex[0x8]; // 0xef8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x270);
 			uint8_t m_nSegments; // 0x1170 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hStartPoint; // 0x1174 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hStartPoint; // 0x1174 | Schema_Atomic | Size: 0x4
 			// char  m_hStartPoint[0x4]; // 0x1174 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hEndPoint; // 0x1178 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hEndPoint; // 0x1178 | Schema_Atomic | Size: 0x4
 			// char  m_hEndPoint[0x4]; // 0x1178 | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_iStartAttachment; // 0x117c | Schema_DeclaredClass | Size: 0x1
 			modellib::AttachmentHandle_t m_iEndAttachment; // 0x117d | Schema_DeclaredClass | Size: 0x1
@@ -64,7 +64,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			float32 m_Width; // 0x118c | Schema_Builtin | Size: 0x4
 			client::CPhysicsDelegate m_PhysicsDelegate; // 0x1190 | Schema_DeclaredClass | Size: 0x10
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x11a0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x11a0 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x11a0 | Schema_Atomic | Size: 0x8
 			int32_t m_TextureHeight; // 0x11a8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecImpulse; // 0x11ac | Schema_Atomic | Size: 0xc

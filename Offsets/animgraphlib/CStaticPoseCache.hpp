@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x30
 			namespace CStaticPoseCache /**/ {
-				constexpr std::ptrdiff_t m_poses = 0x10; // GlobalTypes::CUtlVector< animgraphlib::CCachedPose > m_poses; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_poses = 0x10; // GlobalTypes::CUtlVector<animgraphlib::CCachedPose>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nBoneCount = 0x28; // int32_t m_nBoneCount; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMorphCount = 0x2c; // int32_t m_nMorphCount; |  0x2c | Schema_Builtin | Size: 0x4
 			}

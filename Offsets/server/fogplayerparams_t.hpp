@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x40
 			namespace fogplayerparams_t /**/ {
-				constexpr std::ptrdiff_t m_hCtrl = 0x8; // server::CHandle< server::CFogController > m_hCtrl; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hCtrl = 0x8; // GlobalTypes::CHandle<server::CFogController>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flTransitionTime = 0xc; // float32 m_flTransitionTime; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OldColor = 0x10; // GlobalTypes::Color m_OldColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OldColor = 0x10; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flOldStart = 0x14; // float32 m_flOldStart; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOldEnd = 0x18; // float32 m_flOldEnd; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOldMaxDensity = 0x1c; // float32 m_flOldMaxDensity; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOldHDRColorScale = 0x20; // float32 m_flOldHDRColorScale; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOldFarZ = 0x24; // float32 m_flOldFarZ; |  0x24 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_NewColor = 0x28; // GlobalTypes::Color m_NewColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_NewColor = 0x28; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flNewStart = 0x2c; // float32 m_flNewStart; |  0x2c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNewEnd = 0x30; // float32 m_flNewEnd; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNewMaxDensity = 0x34; // float32 m_flNewMaxDensity; |  0x34 | Schema_Builtin | Size: 0x4

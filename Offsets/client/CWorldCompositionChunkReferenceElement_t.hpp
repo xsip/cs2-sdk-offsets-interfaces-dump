@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x10
 			namespace CWorldCompositionChunkReferenceElement_t /**/ {
-				constexpr std::ptrdiff_t m_strMapToLoad = 0x0; // GlobalTypes::CUtlString m_strMapToLoad; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strLandmarkName = 0x8; // GlobalTypes::CUtlString m_strLandmarkName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMapToLoad = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strLandmarkName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

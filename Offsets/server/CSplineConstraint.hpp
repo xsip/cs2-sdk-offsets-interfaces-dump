@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x620
 			namespace CSplineConstraint /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_vAnchorOffsetRestore = 0x5b0; // GlobalTypes::Vector m_vAnchorOffsetRestore; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hSplineEntity = 0x5bc; // server::CHandle< server::CBaseEntity > m_hSplineEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vAnchorOffsetRestore = 0x5b0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hSplineEntity = 0x5bc; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnableLateralConstraint = 0x5c8; // bool m_bEnableLateralConstraint; |  0x5c8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnableVerticalConstraint = 0x5c9; // bool m_bEnableVerticalConstraint; |  0x5c9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnableAngularConstraint = 0x5ca; // bool m_bEnableAngularConstraint; |  0x5ca | Schema_Builtin | Size: 0x1
@@ -21,9 +21,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flLinarDampingRatio = 0x5d4; // float32 m_flLinarDampingRatio; |  0x5d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flJointFriction = 0x5d8; // float32 m_flJointFriction; |  0x5d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTransitionTime = 0x5dc; // float32 m_flTransitionTime; |  0x5dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vPreSolveAnchorPos = 0x600; // GlobalTypes::VectorWS m_vPreSolveAnchorPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_StartTransitionTime = 0x60c; // entity2::GameTime_t m_StartTransitionTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vTangentSpaceAnchorAtTransitionStart = 0x610; // GlobalTypes::Vector m_vTangentSpaceAnchorAtTransitionStart; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPreSolveAnchorPos = 0x600; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_StartTransitionTime = 0x60c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vTangentSpaceAnchorAtTransitionStart = 0x610; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

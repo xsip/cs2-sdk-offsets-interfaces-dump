@@ -14,10 +14,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nInputCP2 = 0x1dc; // int32_t m_nInputCP2; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutputCP = 0x1e0; // int32_t m_nOutputCP; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutVectorField = 0x1e4; // int32_t m_nOutVectorField; |  0x1e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputMin = 0x1e8; // particleslib::CParticleCollectionFloatInput m_flInputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flInputMax = 0x358; // particleslib::CParticleCollectionFloatInput m_flInputMax; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMin = 0x4c8; // particleslib::CParticleCollectionFloatInput m_flOutputMin; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOutputMax = 0x638; // particleslib::CParticleCollectionFloatInput m_flOutputMax; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInputMin = 0x1e8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInputMax = 0x358; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMin = 0x4c8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOutputMax = 0x638; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

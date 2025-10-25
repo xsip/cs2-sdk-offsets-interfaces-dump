@@ -11,12 +11,12 @@ namespace CS2 {
 			// Class size: 0xD0
 			namespace CSmartPropRoot /**/ {
 				constexpr std::ptrdiff_t m_nContentVersion = 0x0; // int32_t m_nContentVersion; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxDepth = 0x8; // GlobalTypes::CSmartPropAttributeInt m_nMaxDepth; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_Variables = 0x48; // GlobalTypes::CUtlVector< smartprops::CSmartPropVariable > m_Variables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Choices = 0x60; // GlobalTypes::CUtlVector< smartprops::CSmartPropChoice > m_Choices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Children = 0x78; // GlobalTypes::CUtlVector< smartprops::CSmartPropElement > m_Children; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Modifiers = 0x90; // GlobalTypes::CUtlVector< smartprops::CSmartPropModifier > m_Modifiers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hPulseGraph = 0xa8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIPulseGraphDef > m_hPulseGraph; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nMaxDepth = 0x8; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Variables = 0x48; // GlobalTypes::CUtlVector<smartprops::CSmartPropVariable*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Choices = 0x60; // GlobalTypes::CUtlVector<smartprops::CSmartPropChoice*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Children = 0x78; // GlobalTypes::CUtlVector<smartprops::CSmartPropElement*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Modifiers = 0x90; // GlobalTypes::CUtlVector<smartprops::CSmartPropModifier*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hPulseGraph = 0xa8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIPulseGraphDef>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

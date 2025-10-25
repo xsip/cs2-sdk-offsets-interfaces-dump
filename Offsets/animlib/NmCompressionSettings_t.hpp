@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x40
 			namespace NmCompressionSettings_t /**/ {
-				constexpr std::ptrdiff_t m_translationRangeX = 0x0; // animlib::QuantizationRange_t m_translationRangeX; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_translationRangeY = 0x8; // animlib::QuantizationRange_t m_translationRangeY; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_translationRangeZ = 0x10; // animlib::QuantizationRange_t m_translationRangeZ; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_scaleRange = 0x18; // animlib::QuantizationRange_t m_scaleRange; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_constantRotation = 0x20; // GlobalTypes::Quaternion m_constantRotation; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_translationRangeX = 0x0; // animlib::NmCompressionSettings_t::QuantizationRange_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_translationRangeY = 0x8; // animlib::NmCompressionSettings_t::QuantizationRange_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_translationRangeZ = 0x10; // animlib::NmCompressionSettings_t::QuantizationRange_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_scaleRange = 0x18; // animlib::NmCompressionSettings_t::QuantizationRange_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_constantRotation = 0x20; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_bIsRotationStatic = 0x30; // bool m_bIsRotationStatic; |  0x30 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsTranslationStatic = 0x31; // bool m_bIsTranslationStatic; |  0x31 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsScaleStatic = 0x32; // bool m_bIsScaleStatic; |  0x32 | Schema_Builtin | Size: 0x1

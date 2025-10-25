@@ -25,7 +25,7 @@ namespace CS2 {
 		public:
 			bool m_bForceServerRagdoll; // 0xb20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CEconWearable > > m_hMyWearables; // 0xb28 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CEconWearable>> m_hMyWearables; // 0xb28 | Schema_Atomic | Size: 0x18
 			char  m_hMyWearables[0x18]; // 0xb28 | Schema_Atomic | Size: 0x18
 			float32 m_impactEnergyScale; // 0xb40 | Schema_Builtin | Size: 0x4
 			bool m_bApplyStressDamage; // 0xb44 | Schema_Builtin | Size: 0x1

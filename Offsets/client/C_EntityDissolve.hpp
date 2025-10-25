@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xEF8
 			namespace C_EntityDissolve /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_flStartTime = 0xeb8; // entity2::GameTime_t m_flStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartTime = 0xeb8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeInStart = 0xebc; // float32 m_flFadeInStart; |  0xebc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeInLength = 0xec0; // float32 m_flFadeInLength; |  0xec0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeOutModelStart = 0xec4; // float32 m_flFadeOutModelStart; |  0xec4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeOutModelLength = 0xec8; // float32 m_flFadeOutModelLength; |  0xec8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeOutStart = 0xecc; // float32 m_flFadeOutStart; |  0xecc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeOutLength = 0xed0; // float32 m_flFadeOutLength; |  0xed0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNextSparkTime = 0xed4; // entity2::GameTime_t m_flNextSparkTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nDissolveType = 0xed8; // client::EntityDisolveType_t m_nDissolveType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vDissolverOrigin = 0xedc; // GlobalTypes::Vector m_vDissolverOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flNextSparkTime = 0xed4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nDissolveType = 0xed8; // client::EntityDisolveType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vDissolverOrigin = 0xedc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nMagnitude = 0xee8; // uint32_t m_nMagnitude; |  0xee8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bCoreExplode = 0xeec; // bool m_bCoreExplode; |  0xeec | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLinkedToServerEnt = 0xeed; // bool m_bLinkedToServerEnt; |  0xeed | Schema_Builtin | Size: 0x1

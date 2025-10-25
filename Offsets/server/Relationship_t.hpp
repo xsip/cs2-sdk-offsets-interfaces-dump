@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x8
 			namespace Relationship_t /**/ {
-				constexpr std::ptrdiff_t disposition = 0x0; // client::Disposition_t disposition; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t disposition = 0x0; // client::Disposition_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t priority = 0x4; // int32_t priority; |  0x4 | Schema_Builtin | Size: 0x4
 			}
 		}

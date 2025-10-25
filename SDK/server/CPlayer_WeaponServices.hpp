@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBasePlayerWeapon;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,12 +26,12 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_WeaponServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBasePlayerWeapon > > m_hMyWeapons; // 0x40 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerWeapon>> m_hMyWeapons; // 0x40 | Schema_Atomic | Size: 0x18
 			char  m_hMyWeapons[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			// server::CHandle< server::CBasePlayerWeapon > m_hActiveWeapon; // 0x58 | Schema_Atomic | Size: 0x4
-			char  m_hActiveWeapon[0x4]; // 0x58 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBasePlayerWeapon > m_hLastWeapon; // 0x5c | Schema_Atomic | Size: 0x4
-			char  m_hLastWeapon[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hActiveWeapon; // 0x58 | Schema_Atomic | Size: 0x4
+			// char  m_hActiveWeapon[0x4]; // 0x58 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hLastWeapon; // 0x5c | Schema_Atomic | Size: 0x4
+			// char  m_hLastWeapon[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
 			uint16_t m_iAmmo[32]; // 0x60 | Schema_FixedArray | Size: 0x40
 			bool m_bPreventWeaponPickup; // 0xa0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding

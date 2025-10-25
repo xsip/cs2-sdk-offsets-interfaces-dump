@@ -26,9 +26,9 @@ namespace CS2 {
 		class PhysicsRagdollPose_t  {
 		public:
 			S2_PAD(0x8);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CTransform > m_Transforms; // 0x8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CTransform> m_Transforms; // 0x8 | Schema_Atomic | Size: 0x18
 			char  m_Transforms[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hOwner; // 0x20 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hOwner; // 0x20 | Schema_Atomic | Size: 0x4
 			// char  m_hOwner[0x4]; // 0x20 | Schema_Atomic | Size: 0x4
 			bool m_bSetFromDebugHistory; // 0x24 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x23); // End padding

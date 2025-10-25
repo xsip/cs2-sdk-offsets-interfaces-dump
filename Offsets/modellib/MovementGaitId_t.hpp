@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x8
 			namespace MovementGaitId_t /**/ {
-				constexpr std::ptrdiff_t m_sId = 0x0; // GlobalTypes::CGlobalSymbol m_sId; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sId = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

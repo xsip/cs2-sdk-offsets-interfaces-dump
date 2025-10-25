@@ -17,6 +17,13 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CColorCorrection;
+		class CBaseEntity;
+		class CTonemapController2;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -29,20 +36,20 @@ namespace CS2 {
 			float32 m_flCsViewPunchAngleTickRatio; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			server::fogplayerparams_t m_PlayerFog; // 0x58 | Schema_DeclaredClass | Size: 0x40
-			// server::CHandle< server::CColorCorrection > m_hColorCorrectionCtrl; // 0x98 | Schema_Atomic | Size: 0x4
-			char  m_hColorCorrectionCtrl[0x4]; // 0x98 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hViewEntity; // 0x9c | Schema_Atomic | Size: 0x4
-			char  m_hViewEntity[0x4]; // 0x9c | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CTonemapController2 > m_hTonemapController; // 0xa0 | Schema_Atomic | Size: 0x4
-			char  m_hTonemapController[0x4]; // 0xa0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CColorCorrection> m_hColorCorrectionCtrl; // 0x98 | Schema_Atomic | Size: 0x4
+			// char  m_hColorCorrectionCtrl[0x4]; // 0x98 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewEntity; // 0x9c | Schema_Atomic | Size: 0x4
+			// char  m_hViewEntity[0x4]; // 0x9c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CTonemapController2> m_hTonemapController; // 0xa0 | Schema_Atomic | Size: 0x4
+			// char  m_hTonemapController[0x4]; // 0xa0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			server::audioparams_t m_audio; // 0xa8 | Schema_DeclaredClass | Size: 0x78
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CPostProcessingVolume > > m_PostProcessingVolumes; // 0x120 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CPostProcessingVolume>> m_PostProcessingVolumes; // 0x120 | Schema_Atomic | Size: 0x18
 			char  m_PostProcessingVolumes[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
 			float32 m_flOldPlayerZ; // 0x138 | Schema_Builtin | Size: 0x4
 			float32 m_flOldPlayerViewOffsetZ; // 0x13c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18);
-			// server::CUtlVector< server.dll::CHandle< CEnvSoundscapeTriggerable > > m_hTriggerSoundscapeList; // 0x158 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>> m_hTriggerSoundscapeList; // 0x158 | Schema_Atomic | Size: 0x18
 			char  m_hTriggerSoundscapeList[0x18]; // 0x158 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CPlayer_CameraServices, m_vecCsViewPunchAngle) == 0x40, "m_vecCsViewPunchAngle in CPlayer_CameraServices should be at offset 0x40");

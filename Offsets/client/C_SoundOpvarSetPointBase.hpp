@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x618
 			namespace C_SoundOpvarSetPointBase /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_iszStackName = 0x5f8; // GlobalTypes::CUtlSymbolLarge m_iszStackName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOperatorName = 0x600; // GlobalTypes::CUtlSymbolLarge m_iszOperatorName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOpvarName = 0x608; // GlobalTypes::CUtlSymbolLarge m_iszOpvarName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszStackName = 0x5f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOperatorName = 0x600; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOpvarName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iOpvarIndex = 0x610; // int32_t m_iOpvarIndex; |  0x610 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseAutoCompare = 0x614; // bool m_bUseAutoCompare; |  0x614 | Schema_Builtin | Size: 0x1
 			}

@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xF8
 			namespace CBtActionAim /*: public CS2::server::CBtNode*/ {
-				constexpr std::ptrdiff_t m_szSensorInputKey = 0x68; // GlobalTypes::CUtlString m_szSensorInputKey; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_szAimReadyKey = 0x80; // GlobalTypes::CUtlString m_szAimReadyKey; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szSensorInputKey = 0x68; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szAimReadyKey = 0x80; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flZoomCooldownTimestamp = 0x88; // float32 m_flZoomCooldownTimestamp; |  0x88 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bDoneAiming = 0x8c; // bool m_bDoneAiming; |  0x8c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flLerpStartTime = 0x90; // float32 m_flLerpStartTime; |  0x90 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNextLookTargetLerpTime = 0x94; // float32 m_flNextLookTargetLerpTime; |  0x94 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPenaltyReductionRatio = 0x98; // float32 m_flPenaltyReductionRatio; |  0x98 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_NextLookTarget = 0x9c; // GlobalTypes::QAngle m_NextLookTarget; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_AimTimer = 0xa8; // server::CountdownTimer m_AimTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_SniperHoldTimer = 0xc0; // server::CountdownTimer m_SniperHoldTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_FocusIntervalTimer = 0xd8; // server::CountdownTimer m_FocusIntervalTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_NextLookTarget = 0x9c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_AimTimer = 0xa8; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_SniperHoldTimer = 0xc0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_FocusIntervalTimer = 0xd8; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_bAcquired = 0xf0; // bool m_bAcquired; |  0xf0 | Schema_Builtin | Size: 0x1
 			}
 		}

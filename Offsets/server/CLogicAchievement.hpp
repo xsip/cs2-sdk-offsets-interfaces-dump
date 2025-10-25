@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x528
 			namespace CLogicAchievement /*: public CS2::server::CLogicalEntity*/ {
 				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszAchievementEventID = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_iszAchievementEventID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OnFired = 0x500; // entity2::CEntityIOOutput m_OnFired; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_iszAchievementEventID = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnFired = 0x500; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

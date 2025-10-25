@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flInnerRadius = 0x78; // float32 m_flInnerRadius; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxScale = 0x7c; // float32 m_flMaxScale; |  0x7c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMinScale = 0x80; // float32 m_flMinScale; |  0x80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_damping = 0x88; // animgraphlib::CAnimInputDamping m_damping; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_damping = 0x88; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

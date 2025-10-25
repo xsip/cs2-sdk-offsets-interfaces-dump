@@ -26,7 +26,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vInitialVelocity; // 0xbdc | Schema_Atomic | Size: 0xc
 			int32_t m_nBounces; // 0xbe8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_nExplodeEffectIndex; // 0xbf0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_nExplodeEffectIndex; // 0xbf0 | Schema_Atomic | Size: 0x8
 			char  m_nExplodeEffectIndex[0x8]; // 0xbf0 | Schema_Atomic | Size: 0x8
 			int32_t m_nExplodeEffectTickBegin; // 0xbf8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecExplodeEffectOrigin; // 0xbfc | Schema_Atomic | Size: 0xc

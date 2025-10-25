@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x18
 			namespace CFootTrajectories /**/ {
-				constexpr std::ptrdiff_t m_trajectories = 0x0; // GlobalTypes::CUtlVector< modellib::CFootTrajectory > m_trajectories; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_trajectories = 0x0; // GlobalTypes::CUtlVector<modellib::CFootTrajectory>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

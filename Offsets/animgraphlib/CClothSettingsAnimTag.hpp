@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flStiffness = 0x58; // float32 m_flStiffness; |  0x58 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEaseIn = 0x5c; // float32 m_flEaseIn; |  0x5c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEaseOut = 0x60; // float32 m_flEaseOut; |  0x60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nVertexSet = 0x68; // GlobalTypes::CUtlString m_nVertexSet; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nVertexSet = 0x68; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

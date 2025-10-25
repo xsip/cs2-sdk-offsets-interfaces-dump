@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x98
 			namespace ConstraintSoundInfo /**/ {
-				constexpr std::ptrdiff_t m_vSampler = 0x8; // server::VelocitySampler m_vSampler; |  Schema_DeclaredClass | Size: 0x14
-				constexpr std::ptrdiff_t m_soundProfile = 0x20; // server::SimpleConstraintSoundProfile m_soundProfile; |  Schema_DeclaredClass | Size: 0x20
-				constexpr std::ptrdiff_t m_forwardAxis = 0x40; // GlobalTypes::Vector m_forwardAxis; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_iszTravelSoundFwd = 0x50; // GlobalTypes::CUtlSymbolLarge m_iszTravelSoundFwd; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszTravelSoundBack = 0x58; // GlobalTypes::CUtlSymbolLarge m_iszTravelSoundBack; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszReversalSounds = 0x78; // GlobalTypes::CUtlSymbolLarge m_iszReversalSounds[3]; |  Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_vSampler = 0x8; // server::VelocitySampler  | Schema_DeclaredClass | Size: 0x14
+				constexpr std::ptrdiff_t m_soundProfile = 0x20; // server::SimpleConstraintSoundProfile  | Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_forwardAxis = 0x40; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_iszTravelSoundFwd = 0x50; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszTravelSoundBack = 0x58; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszReversalSounds = 0x78; // GlobalTypes::CUtlSymbolLarge[3]  | Schema_FixedArray | Size: 0x18
 				constexpr std::ptrdiff_t m_bPlayTravelSound = 0x90; // bool m_bPlayTravelSound; |  0x90 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bPlayReversalSound = 0x91; // bool m_bPlayReversalSound; |  0x91 | Schema_Builtin | Size: 0x1
 			}

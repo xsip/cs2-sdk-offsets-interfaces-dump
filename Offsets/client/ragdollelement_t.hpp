@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x30
 			namespace ragdollelement_t /**/ {
-				constexpr std::ptrdiff_t originParentSpace = 0x0; // GlobalTypes::Vector originParentSpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t originParentSpace = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t parentIndex = 0x20; // int32_t parentIndex; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadius = 0x24; // float32 m_flRadius; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHeight = 0x28; // int32_t m_nHeight; |  0x28 | Schema_Builtin | Size: 0x4

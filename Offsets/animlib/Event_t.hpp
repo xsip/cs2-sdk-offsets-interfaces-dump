@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x10
 			namespace Event_t /**/ {
-				constexpr std::ptrdiff_t m_ID = 0x0; // GlobalTypes::CGlobalSymbol m_ID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_startTime = 0x8; // animlib::NmPercent_t m_startTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_duration = 0xc; // animlib::NmPercent_t m_duration; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_ID = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_startTime = 0x8; // animlib::NmPercent_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_duration = 0xc; // animlib::NmPercent_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

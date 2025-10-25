@@ -11,13 +11,13 @@ namespace CS2 {
 			// Class size: 0x1F8
 			namespace C_INIT_InitialSequenceFromModel /*: public CS2::particles::CParticleFunctionInitializer*/ {
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1d8; // int32_t m_nControlPointNumber; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1dc; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutputAnim = 0x1e0; // particles::ParticleAttributeIndex_t m_nFieldOutputAnim; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1dc; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutputAnim = 0x1e0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flInputMin = 0x1e4; // float32 m_flInputMin; |  0x1e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInputMax = 0x1e8; // float32 m_flInputMax; |  0x1e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOutputMin = 0x1ec; // float32 m_flOutputMin; |  0x1ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOutputMax = 0x1f0; // float32 m_flOutputMax; |  0x1f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x1f4; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x1f4; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

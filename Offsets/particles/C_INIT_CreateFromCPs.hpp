@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nIncrement = 0x1d8; // int32_t m_nIncrement; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMinCP = 0x1dc; // int32_t m_nMinCP; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMaxCP = 0x1e0; // int32_t m_nMaxCP; |  0x1e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDynamicCPCount = 0x1e8; // particleslib::CParticleCollectionFloatInput m_nDynamicCPCount; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nDynamicCPCount = 0x1e8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

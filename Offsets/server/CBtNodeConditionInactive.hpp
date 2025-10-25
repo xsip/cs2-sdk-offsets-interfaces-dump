@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CBtNodeConditionInactive /*: public CS2::server::CBtNodeCondition*/ {
 				constexpr std::ptrdiff_t m_flRoundStartThresholdSeconds = 0x78; // float32 m_flRoundStartThresholdSeconds; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSensorInactivityThresholdSeconds = 0x7c; // float32 m_flSensorInactivityThresholdSeconds; |  0x7c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_SensorInactivityTimer = 0x80; // server::CountdownTimer m_SensorInactivityTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_SensorInactivityTimer = 0x80; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

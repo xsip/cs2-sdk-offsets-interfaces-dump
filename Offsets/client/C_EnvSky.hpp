@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xF10
 			namespace C_EnvSky /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_hSkyMaterial = 0xeb0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hSkyMaterialLightingOnly = 0xeb8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterialLightingOnly; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSkyMaterial = 0xeb0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSkyMaterialLightingOnly = 0xeb8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bStartDisabled = 0xec0; // bool m_bStartDisabled; |  0xec0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vTintColor = 0xec1; // GlobalTypes::Color m_vTintColor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vTintColorLightingOnly = 0xec5; // GlobalTypes::Color m_vTintColorLightingOnly; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vTintColor = 0xec1; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vTintColorLightingOnly = 0xec5; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flBrightnessScale = 0xecc; // float32 m_flBrightnessScale; |  0xecc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFogType = 0xed0; // int32_t m_nFogType; |  0xed0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogMinStart = 0xed4; // float32 m_flFogMinStart; |  0xed4 | Schema_Builtin | Size: 0x4

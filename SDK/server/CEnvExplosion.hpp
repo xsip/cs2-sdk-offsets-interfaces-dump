@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -28,8 +33,8 @@ namespace CS2 {
 			int32_t m_iRadiusOverride; // 0x7e0 | Schema_Builtin | Size: 0x4
 			float32 m_flInnerRadius; // 0x7e4 | Schema_Builtin | Size: 0x4
 			float32 m_flDamageForce; // 0x7e8 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hInflictor; // 0x7ec | Schema_Atomic | Size: 0x4
-			char  m_hInflictor[0x4]; // 0x7ec | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hInflictor; // 0x7ec | Schema_Atomic | Size: 0x4
+			// char  m_hInflictor[0x4]; // 0x7ec | Schema_Atomic | Size: 0x4
 			client::DamageTypes_t m_iCustomDamageType; // 0x7f0 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bCreateDebris; // 0x7f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb);
@@ -41,8 +46,8 @@ namespace CS2 {
 			client::Class_T m_iClassIgnore2; // 0x818 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszEntityIgnoreName; // 0x820 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hEntityIgnore; // 0x828 | Schema_Atomic | Size: 0x4
-			char  m_hEntityIgnore[0x4]; // 0x828 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntityIgnore; // 0x828 | Schema_Atomic | Size: 0x4
+			// char  m_hEntityIgnore[0x4]; // 0x828 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CEnvExplosion, m_iMagnitude) == 0x7D8, "m_iMagnitude in CEnvExplosion should be at offset 0x7D8");

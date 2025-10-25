@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace C_OP_OscillateScalarSimple /*: public CS2::particles::CParticleFunctionOperator*/ {
 				constexpr std::ptrdiff_t m_Rate = 0x1d0; // float32 m_Rate; |  0x1d0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Frequency = 0x1d4; // float32 m_Frequency; |  0x1d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nField = 0x1d8; // particles::ParticleAttributeIndex_t m_nField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nField = 0x1d8; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flOscMult = 0x1dc; // float32 m_flOscMult; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOscAdd = 0x1e0; // float32 m_flOscAdd; |  0x1e0 | Schema_Builtin | Size: 0x4
 			}

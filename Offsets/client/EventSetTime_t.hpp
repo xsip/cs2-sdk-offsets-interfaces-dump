@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x60
 			namespace EventSetTime_t /**/ {
-				constexpr std::ptrdiff_t m_LoopState = 0x0; // client::EngineLoopState_t m_LoopState; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_LoopState = 0x0; // client::EngineLoopState_t  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_nClientOutputFrames = 0x28; // int32_t m_nClientOutputFrames; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRealTime = 0x30; // float64 m_flRealTime; |  0x30 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_flRenderTime = 0x38; // float64 m_flRenderTime; |  0x38 | Schema_Builtin | Size: 0x8

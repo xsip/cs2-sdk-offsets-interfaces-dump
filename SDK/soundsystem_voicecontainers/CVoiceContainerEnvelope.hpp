@@ -26,7 +26,7 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerEnvelope : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_sound; // 0xb8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase> m_sound; // 0xb8 | Schema_Atomic | Size: 0x8
 			char  m_sound[0x8]; // 0xb8 | Schema_Atomic | Size: 0x8
 			soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_analysisContainer; // 0xc0 | Schema_Ptr | Size: 0x8
 		};

@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -24,8 +29,8 @@ namespace CS2 {
 		public:
 			bool m_on; // 0x858 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CBaseEntity > m_hTargetEnt; // 0x85c | Schema_Atomic | Size: 0x4
-			char  m_hTargetEnt[0x4]; // 0x85c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEnt; // 0x85c | Schema_Atomic | Size: 0x4
+			// char  m_hTargetEnt[0x4]; // 0x85c | Schema_Atomic | Size: 0x4
 			entity2::CEntityIOOutput m_OnDeath; // 0x860 | Schema_DeclaredClass | Size: 0x28
 		};
 		static_assert(offsetof(CS2::server::CGunTarget, m_on) == 0x858, "m_on in CGunTarget should be at offset 0x858");

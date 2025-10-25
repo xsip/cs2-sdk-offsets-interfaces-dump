@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x50
 			namespace CPlayerInputAnimMotorUpdater /*: public CS2::animgraphlib::CAnimMotorUpdaterBase*/ {
-				constexpr std::ptrdiff_t m_sampleTimes = 0x20; // GlobalTypes::CUtlVector< float32 > m_sampleTimes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sampleTimes = 0x20; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flSpringConstant = 0x3c; // float32 m_flSpringConstant; |  0x3c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAnticipationDistance = 0x40; // float32 m_flAnticipationDistance; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hAnticipationPosParam = 0x44; // animgraphlib::CAnimParamHandle m_hAnticipationPosParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hAnticipationHeadingParam = 0x46; // animgraphlib::CAnimParamHandle m_hAnticipationHeadingParam; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hAnticipationPosParam = 0x44; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hAnticipationHeadingParam = 0x46; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bUseAcceleration = 0x48; // bool m_bUseAcceleration; |  0x48 | Schema_Builtin | Size: 0x1
 			}
 		}

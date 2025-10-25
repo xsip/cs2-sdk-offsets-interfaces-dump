@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x100
 			namespace CAnimParameterManagerUpdater /**/ {
-				constexpr std::ptrdiff_t m_parameters = 0x18; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimParameterBase > > m_parameters; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_idToIndexMap = 0x30; // GlobalTypes::CUtlHashtable< AnimParamID, int32 > m_idToIndexMap; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_nameToIndexMap = 0x50; // GlobalTypes::CUtlHashtable< CUtlString, int32 > m_nameToIndexMap; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_indexToHandle = 0x70; // GlobalTypes::CUtlVector< animgraphlib::CAnimParamHandle > m_indexToHandle; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_autoResetParams = 0x88; // GlobalTypes::pair< CAnimParamHandle, CAnimVariant > > m_autoResetParams; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_autoResetMap = 0xa0; // GlobalTypes::CUtlHashtable< CAnimParamHandle, int16 > m_autoResetMap; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_parameters = 0x18; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimParameterBase>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_idToIndexMap = 0x30; // GlobalTypes::CUtlHashtable  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_nameToIndexMap = 0x50; // GlobalTypes::CUtlHashtable  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_indexToHandle = 0x70; // GlobalTypes::CUtlVector<animgraphlib::CAnimParamHandle>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_autoResetParams = 0x88; // GlobalTypes::CUtlVector<std::pair< CAnimParamHandle, CAnimVariant >>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_autoResetMap = 0xa0; // GlobalTypes::CUtlHashtable  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

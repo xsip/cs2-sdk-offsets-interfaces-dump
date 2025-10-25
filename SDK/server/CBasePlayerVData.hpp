@@ -22,7 +22,7 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerVData : public CS2::client::CEntitySubclassVDataBase {
 		public:
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sModelName; // 0x28 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_sModelName; // 0x28 | Schema_Atomic | Size: 0xe0
 			char  m_sModelName[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
 			client::CSkillFloat m_flHeadDamageMultiplier; // 0x108 | Schema_DeclaredClass | Size: 0x10
 			client::CSkillFloat m_flChestDamageMultiplier; // 0x118 | Schema_DeclaredClass | Size: 0x10

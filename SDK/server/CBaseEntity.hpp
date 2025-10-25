@@ -28,6 +28,7 @@ namespace CS2 {
 	namespace server {
 		class CBodyComponent;
 		class ResponseContext_t;
+		class CBaseFilter;
 		class CCollisionProperty;
 		class CPulseGraphInstance_ServerEntity;
 	}
@@ -45,7 +46,7 @@ namespace CS2 {
 			server::CBodyComponent* m_CBodyComponent; // 0x38 | Schema_Ptr | Size: 0x8
 			client::CNetworkTransmitComponent m_NetworkTransmitComponent; // 0x40 | Schema_DeclaredClass | Size: 0x1c8
 			S2_PAD(0x40);
-			GlobalTypes::CUtlVector< client::thinkfunc_t > m_aThinkFunctions; // 0x248 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::thinkfunc_t> m_aThinkFunctions; // 0x248 | Schema_Atomic | Size: 0x18
 			// char  m_aThinkFunctions[0x18]; // 0x248 | Schema_Atomic | Size: 0x18
 			int32_t m_iCurrentThinkContext; // 0x260 | Schema_Builtin | Size: 0x4
 			entity2::GameTick_t m_nLastThinkTick; // 0x264 | Schema_DeclaredClass | Size: 0x4
@@ -55,7 +56,7 @@ namespace CS2 {
 			char  m_isSteadyState[0x8]; // 0x278 | Schema_Atomic | Size: 0x8
 			float32 m_lastNetworkChange; // 0x280 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
-			GlobalTypes::CUtlVector< server::ResponseContext_t > m_ResponseContexts; // 0x290 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<server::ResponseContext_t> m_ResponseContexts; // 0x290 | Schema_Atomic | Size: 0x18
 			// char  m_ResponseContexts[0x18]; // 0x290 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszResponseContext; // 0x2a8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x20);
@@ -76,8 +77,8 @@ namespace CS2 {
 			uint8_t m_nSlimeTouch; // 0x2f6 | Schema_Builtin | Size: 0x1
 			bool m_bRestoreInHierarchy; // 0x2f7 | Schema_Builtin | Size: 0x1
 			GlobalTypes::CUtlSymbolLarge m_target; // 0x2f8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hDamageFilter; // 0x300 | Schema_Atomic | Size: 0x4
-			char  m_hDamageFilter[0x4]; // 0x300 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFilter> m_hDamageFilter; // 0x300 | Schema_Atomic | Size: 0x4
+			// char  m_hDamageFilter[0x4]; // 0x300 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszDamageFilterName; // 0x308 | Schema_Atomic | Size: 0x8
 			float32 m_flMoveDoneTime; // 0x310 | Schema_Builtin | Size: 0x4
@@ -108,13 +109,13 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecBaseVelocity; // 0x3d0 | Schema_Atomic | Size: 0xc
 			int32_t m_nPushEnumCount; // 0x3dc | Schema_Builtin | Size: 0x4
 			server::CCollisionProperty* m_pCollision; // 0x3e0 | Schema_Ptr | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hEffectEntity; // 0x3e8 | Schema_Atomic | Size: 0x4
-			char  m_hEffectEntity[0x4]; // 0x3e8 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hOwnerEntity; // 0x3ec | Schema_Atomic | Size: 0x4
-			char  m_hOwnerEntity[0x4]; // 0x3ec | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEffectEntity; // 0x3e8 | Schema_Atomic | Size: 0x4
+			// char  m_hEffectEntity[0x4]; // 0x3e8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOwnerEntity; // 0x3ec | Schema_Atomic | Size: 0x4
+			// char  m_hOwnerEntity[0x4]; // 0x3ec | Schema_Atomic | Size: 0x4
 			uint32_t m_fEffects; // 0x3f0 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hGroundEntity; // 0x3f4 | Schema_Atomic | Size: 0x4
-			char  m_hGroundEntity[0x4]; // 0x3f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hGroundEntity; // 0x3f4 | Schema_Atomic | Size: 0x4
+			// char  m_hGroundEntity[0x4]; // 0x3f4 | Schema_Atomic | Size: 0x4
 			int32_t m_nGroundBodyIndex; // 0x3f8 | Schema_Builtin | Size: 0x4
 			float32 m_flFriction; // 0x3fc | Schema_Builtin | Size: 0x4
 			float32 m_flElasticity; // 0x400 | Schema_Builtin | Size: 0x4
@@ -140,8 +141,8 @@ namespace CS2 {
 			bool m_bNetworkQuantizeOriginAndAngles; // 0x4d4 | Schema_Builtin | Size: 0x1
 			bool m_bLagCompensate; // 0x4d5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CBaseEntity > m_pBlocker; // 0x4d8 | Schema_Atomic | Size: 0x4
-			char  m_pBlocker[0x4]; // 0x4d8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_pBlocker; // 0x4d8 | Schema_Atomic | Size: 0x4
+			// char  m_pBlocker[0x4]; // 0x4d8 | Schema_Atomic | Size: 0x4
 			float32 m_flLocalTime; // 0x4dc | Schema_Builtin | Size: 0x4
 			float32 m_flVPhysicsUpdateLocalTime; // 0x4e0 | Schema_Builtin | Size: 0x4
 			client::BloodType m_nBloodType; // 0x4e4 | Schema_DeclaredEnum | Size: 0x4

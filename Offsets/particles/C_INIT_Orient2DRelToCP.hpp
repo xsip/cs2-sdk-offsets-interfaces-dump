@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x1E8
 			namespace C_INIT_Orient2DRelToCP /*: public CS2::particles::CParticleFunctionInitializer*/ {
 				constexpr std::ptrdiff_t m_nCP = 0x1d8; // int32_t m_nCP; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1dc; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1dc; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flRotOffset = 0x1e0; // float32 m_flRotOffset; |  0x1e0 | Schema_Builtin | Size: 0x4
 			}
 		}

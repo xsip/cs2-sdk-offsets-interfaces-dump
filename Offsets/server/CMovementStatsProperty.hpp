@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x40
 			namespace CMovementStatsProperty /**/ {
 				constexpr std::ptrdiff_t m_nUseCounter = 0x10; // int32_t m_nUseCounter; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_emaMovementDirection = 0x14; // client::CVectorExponentialMovingAverage m_emaMovementDirection; |  Schema_DeclaredClass | Size: 0x2c
+				constexpr std::ptrdiff_t m_emaMovementDirection = 0x14; // client::CVectorExponentialMovingAverage  | Schema_DeclaredClass | Size: 0x2c
 			}
 		}
 	}

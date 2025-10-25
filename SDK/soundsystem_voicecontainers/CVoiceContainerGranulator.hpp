@@ -27,7 +27,7 @@ namespace CS2 {
 			float32 m_flPlaybackJitter; // 0xc4 | Schema_Builtin | Size: 0x4
 			bool m_bShouldWraparound; // 0xc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVoiceContainerBase > m_sourceAudio; // 0xd0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase> m_sourceAudio; // 0xd0 | Schema_Atomic | Size: 0x8
 			char  m_sourceAudio[0x8]; // 0xd0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0xb8); // End padding
 		};

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0x18
 			namespace SelectedEditItemInfo_t /**/ {
-				constexpr std::ptrdiff_t m_EditItems = 0x0; // GlobalTypes::CUtlVector< soundsystem::SosEditItemInfo_t > m_EditItems; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_EditItems = 0x0; // GlobalTypes::CUtlVector<soundsystem::SosEditItemInfo_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

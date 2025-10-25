@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x1A0
 			namespace CAnimScriptManager /**/ {
-				constexpr std::ptrdiff_t m_scriptInfo = 0x10; // GlobalTypes::CUtlVector< animgraphlib::ScriptInfo_t > m_scriptInfo; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_scriptInfo = 0x10; // GlobalTypes::CUtlVector<animgraphlib::ScriptInfo_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -24,10 +29,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector m_vecEntityMins; // 0x4f0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecEntityMaxs; // 0x4fc | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hCurrentInstance; // 0x508 | Schema_Atomic | Size: 0x4
-			char  m_hCurrentInstance[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hCurrentBlocker; // 0x50c | Schema_Atomic | Size: 0x4
-			char  m_hCurrentBlocker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hCurrentInstance; // 0x508 | Schema_Atomic | Size: 0x4
+			// char  m_hCurrentInstance[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hCurrentBlocker; // 0x50c | Schema_Atomic | Size: 0x4
+			// char  m_hCurrentBlocker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vecBlockerOrigin; // 0x510 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angPostSpawnDirection; // 0x51c | Schema_Atomic | Size: 0xc
 			float32 m_flPostSpawnDirectionVariance; // 0x528 | Schema_Builtin | Size: 0x4

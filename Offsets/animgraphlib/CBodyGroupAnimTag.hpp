@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x78
 			namespace CBodyGroupAnimTag /*: public CS2::animgraphlib::CAnimTagBase*/ {
 				constexpr std::ptrdiff_t m_nPriority = 0x58; // int32_t m_nPriority; |  0x58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bodyGroupSettings = 0x60; // GlobalTypes::CUtlVector< animgraphlib::CBodyGroupSetting > m_bodyGroupSettings; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bodyGroupSettings = 0x60; // GlobalTypes::CUtlVector<animgraphlib::CBodyGroupSetting>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

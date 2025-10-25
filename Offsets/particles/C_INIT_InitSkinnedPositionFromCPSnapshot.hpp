@@ -19,8 +19,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bIgnoreDt = 0x1ea; // bool m_bIgnoreDt; |  0x1ea | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMinNormalVelocity = 0x1ec; // float32 m_flMinNormalVelocity; |  0x1ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxNormalVelocity = 0x1f0; // float32 m_flMaxNormalVelocity; |  0x1f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nIndexType = 0x1f4; // particles::SnapshotIndexType_t m_nIndexType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flReadIndex = 0x1f8; // particleslib::CPerParticleFloatInput m_flReadIndex; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nIndexType = 0x1f4; // particles::SnapshotIndexType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flReadIndex = 0x1f8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flIncrement = 0x368; // float32 m_flIncrement; |  0x368 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFullLoopIncrement = 0x36c; // int32_t m_nFullLoopIncrement; |  0x36c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSnapShotStartPoint = 0x370; // int32_t m_nSnapShotStartPoint; |  0x370 | Schema_Builtin | Size: 0x4

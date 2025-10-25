@@ -11,9 +11,9 @@ namespace CS2 {
 			// Class size: 0xA08
 			namespace C_OP_MovementLoopInsideSphere /*: public CS2::particles::CParticleFunctionOperator*/ {
 				constexpr std::ptrdiff_t m_nCP = 0x1d0; // int32_t m_nCP; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistance = 0x1d8; // particleslib::CParticleCollectionFloatInput m_flDistance; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_vecScale = 0x348; // particleslib::CParticleCollectionVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_nDistSqrAttr = 0xa00; // particles::ParticleAttributeIndex_t m_nDistSqrAttr; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistance = 0x1d8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecScale = 0x348; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nDistSqrAttr = 0xa00; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

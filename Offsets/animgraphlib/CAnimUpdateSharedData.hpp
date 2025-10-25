@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x100
 			namespace CAnimUpdateSharedData /**/ {
-				constexpr std::ptrdiff_t m_nodes = 0x10; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimUpdateNodeBase > > m_nodes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nodeIndexMap = 0x28; // GlobalTypes::CUtlHashtable< CAnimNodePath, int32 > m_nodeIndexMap; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_components = 0x48; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimComponentUpdater > > m_components; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pParamListUpdater = 0x60; // GlobalTypes::CSmartPtr< animgraphlib::CAnimParameterManagerUpdater > m_pParamListUpdater; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pTagManagerUpdater = 0x68; // GlobalTypes::CSmartPtr< animgraphlib::CAnimTagManagerUpdater > m_pTagManagerUpdater; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_scriptManager = 0x70; // GlobalTypes::CSmartPtr< animgraphlib::CAnimScriptManager > m_scriptManager; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_settings = 0x78; // animgraphlib::CAnimGraphSettingsManager m_settings; |  Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_pStaticPoseCache = 0xa8; // GlobalTypes::CSmartPtr< animgraphlib::CStaticPoseCacheBuilder > m_pStaticPoseCache; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pSkeleton = 0xb0; // GlobalTypes::CSmartPtr< modellib::CAnimSkeleton > m_pSkeleton; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_rootNodePath = 0xb8; // animgraphlib::CAnimNodePath m_rootNodePath; |  Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_nodes = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimUpdateNodeBase>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nodeIndexMap = 0x28; // GlobalTypes::CUtlHashtable  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_components = 0x48; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimComponentUpdater>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pParamListUpdater = 0x60; // GlobalTypes::CSmartPtr<animgraphlib::CAnimParameterManagerUpdater>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pTagManagerUpdater = 0x68; // GlobalTypes::CSmartPtr<animgraphlib::CAnimTagManagerUpdater>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_scriptManager = 0x70; // GlobalTypes::CSmartPtr<animgraphlib::CAnimScriptManager>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_settings = 0x78; // animgraphlib::CAnimGraphSettingsManager  | Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_pStaticPoseCache = 0xa8; // GlobalTypes::CSmartPtr<animgraphlib::CStaticPoseCacheBuilder>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pSkeleton = 0xb0; // GlobalTypes::CSmartPtr<modellib::CAnimSkeleton>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_rootNodePath = 0xb8; // animgraphlib::CAnimNodePath  | Schema_DeclaredClass | Size: 0x30
 			}
 		}
 	}

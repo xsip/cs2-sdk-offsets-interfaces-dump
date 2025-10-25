@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x30
 			namespace EventSimulate_t /**/ {
-				constexpr std::ptrdiff_t m_LoopState = 0x0; // client::EngineLoopState_t m_LoopState; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_LoopState = 0x0; // client::EngineLoopState_t  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_bFirstTick = 0x28; // bool m_bFirstTick; |  0x28 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLastTick = 0x29; // bool m_bLastTick; |  0x29 | Schema_Builtin | Size: 0x1
 			}

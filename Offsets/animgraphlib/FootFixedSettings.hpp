@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x40
 			namespace FootFixedSettings /**/ {
-				constexpr std::ptrdiff_t m_traceSettings = 0x0; // animgraphlib::TraceSettings_t m_traceSettings; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_vFootBaseBindPosePositionMS = 0x10; // GlobalTypes::VectorAligned m_vFootBaseBindPosePositionMS; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_traceSettings = 0x0; // animgraphlib::TraceSettings_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_vFootBaseBindPosePositionMS = 0x10; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_flFootBaseLength = 0x20; // float32 m_flFootBaseLength; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxRotationLeft = 0x24; // float32 m_flMaxRotationLeft; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxRotationRight = 0x28; // float32 m_flMaxRotationRight; |  0x28 | Schema_Builtin | Size: 0x4

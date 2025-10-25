@@ -40,7 +40,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnHurt; // 0x9e0 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnHurtPlayer; // 0xa08 | Schema_DeclaredClass | Size: 0x28
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hurtEntities; // 0xa30 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hurtEntities; // 0xa30 | Schema_Atomic | Size: 0x18
 			char  m_hurtEntities[0x18]; // 0xa30 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CTriggerHurt, m_flOriginalDamage) == 0x9A8, "m_flOriginalDamage in CTriggerHurt should be at offset 0x9A8");

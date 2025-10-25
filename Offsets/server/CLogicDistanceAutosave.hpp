@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x508
 			namespace CLogicDistanceAutosave /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_iszTargetEntity = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszTargetEntity; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszTargetEntity = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flDistanceToPlayer = 0x4f8; // float32 m_flDistanceToPlayer; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bForceNewLevelUnit = 0x4fc; // bool m_bForceNewLevelUnit; |  0x4fc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCheckCough = 0x4fd; // bool m_bCheckCough; |  0x4fd | Schema_Builtin | Size: 0x1

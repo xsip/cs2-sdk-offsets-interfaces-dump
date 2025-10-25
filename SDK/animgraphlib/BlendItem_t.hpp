@@ -27,7 +27,7 @@ namespace CS2 {
 	namespace animgraphlib {
 		class BlendItem_t  {
 		public:
-			GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::TagSpan_t> m_tags; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimUpdateNodeRef m_pChild; // 0x18 | Schema_DeclaredClass | Size: 0x10
 			animationsystem::HSequence m_hSequence; // 0x28 | Schema_DeclaredClass | Size: 0x4

@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x20
 			namespace CFlexRule /**/ {
 				constexpr std::ptrdiff_t m_nFlex = 0x0; // int32_t m_nFlex; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_FlexOps = 0x8; // GlobalTypes::CUtlVector< modellib::CFlexOp > m_FlexOps; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_FlexOps = 0x8; // GlobalTypes::CUtlVector<modellib::CFlexOp>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace host {
 			// Class size: 0x20
 			namespace EmptyTestScript /*: public CS2::host::CAnimScriptBase*/ {
-				constexpr std::ptrdiff_t m_hTest = 0x10; // GlobalTypes::CAnimScriptParam< float32 > m_hTest; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_hTest = 0x10; // GlobalTypes::CAnimScriptParam  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

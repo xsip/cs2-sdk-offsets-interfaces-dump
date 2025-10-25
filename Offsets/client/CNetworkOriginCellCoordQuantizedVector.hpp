@@ -14,9 +14,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_cellY = 0x12; // uint16_t m_cellY; |  0x12 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_cellZ = 0x14; // uint16_t m_cellZ; |  0x14 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nOutsideWorld = 0x16; // uint16_t m_nOutsideWorld; |  0x16 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_vecX = 0x18; // GlobalTypes::CNetworkedQuantizedFloat m_vecX; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecY = 0x20; // GlobalTypes::CNetworkedQuantizedFloat m_vecY; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecZ = 0x28; // GlobalTypes::CNetworkedQuantizedFloat m_vecZ; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecX = 0x18; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecY = 0x20; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecZ = 0x28; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

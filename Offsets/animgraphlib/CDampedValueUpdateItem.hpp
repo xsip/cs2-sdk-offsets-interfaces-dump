@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x28
 			namespace CDampedValueUpdateItem /**/ {
-				constexpr std::ptrdiff_t m_damping = 0x0; // animgraphlib::CAnimInputDamping m_damping; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_hParamIn = 0x20; // animgraphlib::CAnimParamHandle m_hParamIn; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hParamOut = 0x22; // animgraphlib::CAnimParamHandle m_hParamOut; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_damping = 0x0; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_hParamIn = 0x20; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hParamOut = 0x22; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 			}
 		}
 	}

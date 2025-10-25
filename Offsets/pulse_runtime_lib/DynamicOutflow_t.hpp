@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x50
 			namespace DynamicOutflow_t /**/ {
-				constexpr std::ptrdiff_t m_OutflowID = 0x0; // GlobalTypes::CGlobalSymbol m_OutflowID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Connection = 0x8; // pulse_runtime_lib::CPulse_OutflowConnection m_Connection; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_OutflowID = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Connection = 0x8; // pulse_runtime_lib::CPulse_OutflowConnection  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

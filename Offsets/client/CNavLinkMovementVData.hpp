@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x100
 			namespace CNavLinkMovementVData /**/ {
-				constexpr std::ptrdiff_t m_sToolsOnlyOwnerModelName = 0x0; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCModel > > m_sToolsOnlyOwnerModelName; |  Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_sToolsOnlyOwnerModelName = 0x0; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0xe0
 				constexpr std::ptrdiff_t m_bIsInterpolated = 0xe0; // bool m_bIsInterpolated; |  0xe0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_unRecommendedDistance = 0xe4; // uint32_t m_unRecommendedDistance; |  0xe4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAnimgraphVars = 0xe8; // GlobalTypes::CUtlVector< client::CNavLinkAnimgraphVar > m_vecAnimgraphVars; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecAnimgraphVars = 0xe8; // GlobalTypes::CUtlVector<client::CNavLinkAnimgraphVar>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

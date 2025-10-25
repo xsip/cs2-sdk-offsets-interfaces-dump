@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x10
 			namespace ModelReference_t /**/ {
-				constexpr std::ptrdiff_t m_model = 0x0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_model; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_model = 0x0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flRelativeProbabilityOfSpawn = 0x8; // float32 m_flRelativeProbabilityOfSpawn; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

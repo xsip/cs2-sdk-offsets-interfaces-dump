@@ -12,11 +12,11 @@ namespace CS2 {
 			namespace C_INIT_CreateInEpitrochoid /*: public CS2::particles::CParticleFunctionInitializer*/ {
 				constexpr std::ptrdiff_t m_nComponent1 = 0x1d8; // int32_t m_nComponent1; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nComponent2 = 0x1dc; // int32_t m_nComponent2; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TransformInput = 0x1e0; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_flParticleDensity = 0x248; // particleslib::CPerParticleFloatInput m_flParticleDensity; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flOffset = 0x3b8; // particleslib::CPerParticleFloatInput m_flOffset; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flRadius1 = 0x528; // particleslib::CPerParticleFloatInput m_flRadius1; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flRadius2 = 0x698; // particleslib::CPerParticleFloatInput m_flRadius2; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_TransformInput = 0x1e0; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_flParticleDensity = 0x248; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flOffset = 0x3b8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRadius1 = 0x528; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRadius2 = 0x698; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bUseCount = 0x808; // bool m_bUseCount; |  0x808 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseLocalCoords = 0x809; // bool m_bUseLocalCoords; |  0x809 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bOffsetExistingPos = 0x80a; // bool m_bOffsetExistingPos; |  0x80a | Schema_Builtin | Size: 0x1

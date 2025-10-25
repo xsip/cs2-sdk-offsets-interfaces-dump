@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x78
 			namespace CAttributeList /**/ {
-				constexpr std::ptrdiff_t m_Attributes = 0x8; // server::CUtlVectorEmbeddedNetworkVar< server::CEconItemAttribute > m_Attributes; |  Schema_Atomic | Size: 0x68
-				constexpr std::ptrdiff_t m_pManager = 0x70; // server::CAttributeManager* m_pManager; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_Attributes = 0x8; // server::CUtlVectorEmbeddedNetworkVar<server::CEconItemAttribute>  | Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_pManager = 0x70; // server::CAttributeManager**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

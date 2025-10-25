@@ -21,6 +21,13 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CPathMover;
+		class CMoverPathNode;
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -29,10 +36,10 @@ namespace CS2 {
 		class CFuncMover : public CS2::server::CBaseModelEntity {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszPathName; // 0x7d8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CPathMover > m_hPathMover; // 0x7e0 | Schema_Atomic | Size: 0x4
-			char  m_hPathMover[0x4]; // 0x7e0 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CPathMover > m_hPrevPathMover; // 0x7e4 | Schema_Atomic | Size: 0x4
-			char  m_hPrevPathMover[0x4]; // 0x7e4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPathMover> m_hPathMover; // 0x7e0 | Schema_Atomic | Size: 0x4
+			// char  m_hPathMover[0x4]; // 0x7e0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPathMover> m_hPrevPathMover; // 0x7e4 | Schema_Atomic | Size: 0x4
+			// char  m_hPrevPathMover[0x4]; // 0x7e4 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszPathNodeStart; // 0x7e8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszPathNodeEnd; // 0x7f0 | Schema_Atomic | Size: 0x8
 			server::Move_t m_eMoveType; // 0x7f8 | Schema_DeclaredEnum | Size: 0x4
@@ -53,8 +60,8 @@ namespace CS2 {
 			float32 m_flDistanceToReachZeroSpeed; // 0x830 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flTimeMovementStart; // 0x834 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flTimeMovementStop; // 0x838 | Schema_DeclaredClass | Size: 0x4
-			// server::CHandle< server::CMoverPathNode > m_hStopAtNode; // 0x83c | Schema_Atomic | Size: 0x4
-			char  m_hStopAtNode[0x4]; // 0x83c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CMoverPathNode> m_hStopAtNode; // 0x83c | Schema_Atomic | Size: 0x4
+			// char  m_hStopAtNode[0x4]; // 0x83c | Schema_Atomic | Size: 0x4
 			float32 m_flPathLocationToBeginStop; // 0x840 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszStartForwardSound; // 0x848 | Schema_Atomic | Size: 0x8
@@ -79,8 +86,8 @@ namespace CS2 {
 			S2_PAD(0x6);
 			entity2::CEntityIOOutput m_OnNodePassed; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
 			GlobalTypes::CUtlSymbolLarge m_iszOrientationMatchEntityName; // 0x908 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hOrientationMatchEntity; // 0x910 | Schema_Atomic | Size: 0x4
-			char  m_hOrientationMatchEntity[0x4]; // 0x910 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOrientationMatchEntity; // 0x910 | Schema_Atomic | Size: 0x4
+			// char  m_hOrientationMatchEntity[0x4]; // 0x910 | Schema_Atomic | Size: 0x4
 			float32 m_flTimeToTraverseToNextNode; // 0x914 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vLerpToNewPosStartInPathEntitySpace; // 0x918 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vLerpToNewPosEndInPathEntitySpace; // 0x924 | Schema_Atomic | Size: 0xc
@@ -93,16 +100,16 @@ namespace CS2 {
 			int32_t m_nDelayedTeleportToNode; // 0x968 | Schema_Builtin | Size: 0x4
 			bool m_bIsVerboseLogging; // 0x96c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CBaseEntity > m_hFollowEntity; // 0x970 | Schema_Atomic | Size: 0x4
-			char  m_hFollowEntity[0x4]; // 0x970 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hFollowEntity; // 0x970 | Schema_Atomic | Size: 0x4
+			// char  m_hFollowEntity[0x4]; // 0x970 | Schema_Atomic | Size: 0x4
 			float32 m_flFollowDistance; // 0x974 | Schema_Builtin | Size: 0x4
 			float32 m_flFollowMinimumSpeed; // 0x978 | Schema_Builtin | Size: 0x4
 			float32 m_flCurFollowEntityT; // 0x97c | Schema_Builtin | Size: 0x4
 			float32 m_flCurFollowSpeed; // 0x980 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_strOrientationFaceEntityName; // 0x988 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hOrientationFaceEntity; // 0x990 | Schema_Atomic | Size: 0x4
-			char  m_hOrientationFaceEntity[0x4]; // 0x990 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOrientationFaceEntity; // 0x990 | Schema_Atomic | Size: 0x4
+			// char  m_hOrientationFaceEntity[0x4]; // 0x990 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnStart; // 0x998 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnStartForward; // 0x9c0 | Schema_DeclaredClass | Size: 0x28

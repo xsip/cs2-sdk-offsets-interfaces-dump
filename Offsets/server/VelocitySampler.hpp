@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x14
 			namespace VelocitySampler /**/ {
-				constexpr std::ptrdiff_t m_prevSample = 0x0; // GlobalTypes::Vector m_prevSample; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_fPrevSampleTime = 0xc; // entity2::GameTime_t m_fPrevSampleTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_prevSample = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_fPrevSampleTime = 0xc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_fIdealSampleRate = 0x10; // float32 m_fIdealSampleRate; |  0x10 | Schema_Builtin | Size: 0x4
 			}
 		}

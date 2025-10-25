@@ -29,12 +29,12 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector m_vMin; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMax; // 0xc | Schema_Atomic | Size: 0xc
-			GlobalTypes::CUtlVector< physicslib::RnNode_t > m_Nodes; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::RnNode_t> m_Nodes; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_Nodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVectorSIMDPaddedVector m_Vertices; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< physicslib::RnTriangle_t > m_Triangles; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::RnTriangle_t> m_Triangles; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_Triangles[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< physicslib::RnWing_t > m_Wings; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::RnWing_t> m_Wings; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_Wings[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint8 > m_TriangleEdgeFlags; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_TriangleEdgeFlags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18

@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseFilter;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -29,8 +34,8 @@ namespace CS2 {
 			float32 m_flConeOfInfluence; // 0x500 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszFilterName; // 0x508 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x510 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x510 | Schema_Atomic | Size: 0x4
+			// char  m_hFilter[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPointPush, m_bEnabled) == 0x4F0, "m_bEnabled in CPointPush should be at offset 0x4F0");

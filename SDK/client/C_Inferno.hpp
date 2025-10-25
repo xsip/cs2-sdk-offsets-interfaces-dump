@@ -25,15 +25,15 @@ namespace CS2 {
 			S2_PAD(0x40);
 			client::ParticleIndex_t m_nfxFireDamageEffect; // 0xef0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoPointsSnapshot; // 0xef8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoPointsSnapshot; // 0xef8 | Schema_Atomic | Size: 0x8
 			char  m_hInfernoPointsSnapshot[0x8]; // 0xef8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoFillerPointsSnapshot; // 0xf00 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoFillerPointsSnapshot; // 0xf00 | Schema_Atomic | Size: 0x8
 			char  m_hInfernoFillerPointsSnapshot[0x8]; // 0xf00 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoOutlinePointsSnapshot; // 0xf08 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoOutlinePointsSnapshot; // 0xf08 | Schema_Atomic | Size: 0x8
 			char  m_hInfernoOutlinePointsSnapshot[0x8]; // 0xf08 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoClimbingOutlinePointsSnapshot; // 0xf10 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoClimbingOutlinePointsSnapshot; // 0xf10 | Schema_Atomic | Size: 0x8
 			char  m_hInfernoClimbingOutlinePointsSnapshot[0x8]; // 0xf10 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hInfernoDecalsSnapshot; // 0xf18 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoDecalsSnapshot; // 0xf18 | Schema_Atomic | Size: 0x8
 			char  m_hInfernoDecalsSnapshot[0x8]; // 0xf18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_firePositions[64]; // 0xf20 | Schema_FixedArray | Size: 0x300
 			GlobalTypes::Vector m_fireParentPositions[64]; // 0x1220 | Schema_FixedArray | Size: 0x300

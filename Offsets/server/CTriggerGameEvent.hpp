@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x9C0
 			namespace CTriggerGameEvent /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_strStartTouchEventName = 0x9a8; // GlobalTypes::CUtlString m_strStartTouchEventName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strEndTouchEventName = 0x9b0; // GlobalTypes::CUtlString m_strEndTouchEventName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strTriggerID = 0x9b8; // GlobalTypes::CUtlString m_strTriggerID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strStartTouchEventName = 0x9a8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strEndTouchEventName = 0x9b0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strTriggerID = 0x9b8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

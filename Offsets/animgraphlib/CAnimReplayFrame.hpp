@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace CAnimReplayFrame /**/ {
-				constexpr std::ptrdiff_t m_inputDataBlocks = 0x10; // GlobalTypes::CUtlVector< GlobalTypes::CUtlBinaryBlock > m_inputDataBlocks; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_instanceData = 0x28; // GlobalTypes::CUtlBinaryBlock m_instanceData; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_startingLocalToWorldTransform = 0x40; // GlobalTypes::CTransform m_startingLocalToWorldTransform; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_localToWorldTransform = 0x60; // GlobalTypes::CTransform m_localToWorldTransform; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_inputDataBlocks = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::CUtlBinaryBlock>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_instanceData = 0x28; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_startingLocalToWorldTransform = 0x40; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_localToWorldTransform = 0x60; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_timeStamp = 0x80; // float32 m_timeStamp; |  0x80 | Schema_Builtin | Size: 0x4
 			}
 		}

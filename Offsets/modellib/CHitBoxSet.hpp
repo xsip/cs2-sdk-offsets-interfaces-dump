@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x30
 			namespace CHitBoxSet /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nNameHash = 0x8; // uint32_t m_nNameHash; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_HitBoxes = 0x10; // GlobalTypes::CUtlVector< modellib::CHitBox > m_HitBoxes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_SourceFilename = 0x28; // GlobalTypes::CUtlString m_SourceFilename; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_HitBoxes = 0x10; // GlobalTypes::CUtlVector<modellib::CHitBox>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SourceFilename = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

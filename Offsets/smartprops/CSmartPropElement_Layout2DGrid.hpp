@@ -10,18 +10,18 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x3A0
 			namespace CSmartPropElement_Layout2DGrid /*: public CS2::smartprops::CSmartPropElement_Group*/ {
-				constexpr std::ptrdiff_t m_flWidth = 0xa0; // GlobalTypes::CSmartPropAttributeFloat m_flWidth; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flLength = 0xe0; // GlobalTypes::CSmartPropAttributeFloat m_flLength; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bVerticalLength = 0x120; // GlobalTypes::CSmartPropAttributeBool m_bVerticalLength; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_GridArrangement = 0x160; // smartprops::CSmartPropAttributeGridPlacementMode m_GridArrangement; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_GridOriginMode = 0x1a0; // smartprops::CSmartPropAttributeGridOriginMode m_GridOriginMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_nCountW = 0x1e0; // GlobalTypes::CSmartPropAttributeInt m_nCountW; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nCountL = 0x220; // GlobalTypes::CSmartPropAttributeInt m_nCountL; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flSpacingWidth = 0x260; // GlobalTypes::CSmartPropAttributeFloat m_flSpacingWidth; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flSpacingLength = 0x2a0; // GlobalTypes::CSmartPropAttributeFloat m_flSpacingLength; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bAlternateShift = 0x2e0; // GlobalTypes::CSmartPropAttributeBool m_bAlternateShift; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flAlternateShiftWidth = 0x320; // GlobalTypes::CSmartPropAttributeFloat m_flAlternateShiftWidth; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flAlternateShiftLength = 0x360; // GlobalTypes::CSmartPropAttributeFloat m_flAlternateShiftLength; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flWidth = 0xa0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flLength = 0xe0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bVerticalLength = 0x120; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_GridArrangement = 0x160; // smartprops::CSmartPropAttributeGridPlacementMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_GridOriginMode = 0x1a0; // smartprops::CSmartPropAttributeGridOriginMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_nCountW = 0x1e0; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nCountL = 0x220; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flSpacingWidth = 0x260; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flSpacingLength = 0x2a0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bAlternateShift = 0x2e0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flAlternateShiftWidth = 0x320; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flAlternateShiftLength = 0x360; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

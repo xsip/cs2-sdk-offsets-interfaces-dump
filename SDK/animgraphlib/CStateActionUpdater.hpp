@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CStateActionUpdater  {
 		public:
-			// GlobalTypes::CSmartPtr< animgraphlib::CAnimActionUpdater > m_pAction; // 0x0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<animgraphlib::CAnimActionUpdater> m_pAction; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_pAction[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			animgraphlib::StateActionBehavior m_eBehavior; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xD8
 			namespace CSmartPropOperation_SaveDirection /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_DirectionVector = 0x50; // smartprops::CSmartPropAttributeDirection m_DirectionVector; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_CoordinateSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_VariableName = 0xd0; // GlobalTypes::CUtlString m_VariableName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_DirectionVector = 0x50; // smartprops::CSmartPropAttributeDirection  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_CoordinateSpace = 0x90; // smartprops::CSmartPropAttributeCoordinateSpace  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_VariableName = 0xd0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

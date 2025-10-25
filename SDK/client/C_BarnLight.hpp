@@ -41,14 +41,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_LightStyleString; // 0xee8 | Schema_Atomic | Size: 0x8
 			entity2::GameTime_t m_flLightStyleStartTime; // 0xef0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_QueuedLightStyleStrings; // 0xef8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlString> m_QueuedLightStyleStrings; // 0xef8 | Schema_Atomic | Size: 0x18
 			char  m_QueuedLightStyleStrings[0x18]; // 0xef8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_LightStyleEvents; // 0xf10 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlString> m_LightStyleEvents; // 0xf10 | Schema_Atomic | Size: 0x18
 			char  m_LightStyleEvents[0x18]; // 0xf10 | Schema_Atomic | Size: 0x18
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_LightStyleTargets; // 0xf28 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>> m_LightStyleTargets; // 0xf28 | Schema_Atomic | Size: 0x18
 			char  m_LightStyleTargets[0x18]; // 0xf28 | Schema_Atomic | Size: 0x18
 			entity2::CEntityIOOutput m_StyleEvent[4]; // 0xf40 | Schema_FixedArray | Size: 0x280
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; // 0xfe0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hLightCookie; // 0xfe0 | Schema_Atomic | Size: 0x8
 			char  m_hLightCookie[0x8]; // 0xfe0 | Schema_Atomic | Size: 0x8
 			float32 m_flShape; // 0xfe8 | Schema_Builtin | Size: 0x4
 			float32 m_flSoftX; // 0xfec | Schema_Builtin | Size: 0x4

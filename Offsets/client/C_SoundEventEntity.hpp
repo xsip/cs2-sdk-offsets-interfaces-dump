@@ -16,13 +16,13 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bSaveRestore = 0x5fb; // bool m_bSaveRestore; |  0x5fb | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSavedIsPlaying = 0x5fc; // bool m_bSavedIsPlaying; |  0x5fc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flSavedElapsedTime = 0x600; // float32 m_flSavedElapsedTime; |  0x600 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x608; // GlobalTypes::CUtlSymbolLarge m_iszSourceEntityName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszAttachmentName = 0x610; // GlobalTypes::CUtlSymbolLarge m_iszAttachmentName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_onGUIDChanged = 0x618; // GlobalTypes::CEntityOutputTemplate< uint64 > m_onGUIDChanged; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_onSoundFinished = 0x640; // entity2::CEntityIOOutput m_onSoundFinished; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszAttachmentName = 0x610; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_onGUIDChanged = 0x618; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_onSoundFinished = 0x640; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_flClientCullRadius = 0x668; // float32 m_flClientCullRadius; |  0x668 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSoundName = 0x698; // GlobalTypes::CUtlSymbolLarge m_iszSoundName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hSource = 0x6b4; // GlobalTypes::CEntityHandle m_hSource; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSoundName = 0x698; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSource = 0x6b4; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nEntityIndexSelection = 0x6b8; // int32_t m_nEntityIndexSelection; |  0x6b8 | Schema_Builtin | Size: 0x4
 			}
 		}

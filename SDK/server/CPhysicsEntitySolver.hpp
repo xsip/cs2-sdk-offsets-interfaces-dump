@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,10 +28,10 @@ namespace CS2 {
 		class CPhysicsEntitySolver : public CS2::server::CLogicalEntity {
 		public:
 			S2_PAD(0x18);
-			// server::CHandle< server::CBaseEntity > m_hMovingEntity; // 0x508 | Schema_Atomic | Size: 0x4
-			char  m_hMovingEntity[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hPhysicsBlocker; // 0x50c | Schema_Atomic | Size: 0x4
-			char  m_hPhysicsBlocker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hMovingEntity; // 0x508 | Schema_Atomic | Size: 0x4
+			// char  m_hMovingEntity[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hPhysicsBlocker; // 0x50c | Schema_Atomic | Size: 0x4
+			// char  m_hPhysicsBlocker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
 			float32 m_separationDuration; // 0x510 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_cancelTime; // 0x514 | Schema_DeclaredClass | Size: 0x4
 		};

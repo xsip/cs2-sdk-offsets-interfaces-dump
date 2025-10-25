@@ -24,9 +24,9 @@ namespace CS2 {
 			// char  m_times[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint32 > m_nameHashCodes; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_nameHashCodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_nameStrings; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_nameStrings; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  m_nameStrings[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< float32 > > m_samples; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<float32>> m_samples; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_samples[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			float32 m_flEaseIn; // 0x60 | Schema_Builtin | Size: 0x4
 			float32 m_flEaseOut; // 0x64 | Schema_Builtin | Size: 0x4

@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nUniqueFrameIndex = 0x0; // int32_t m_nUniqueFrameIndex; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLocalElementMasks = 0x4; // uint32_t m_nLocalElementMasks; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLocalChannel = 0x8; // int32_t m_nLocalChannel; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_container = 0x10; // GlobalTypes::CUtlBinaryBlock m_container; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_container = 0x10; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

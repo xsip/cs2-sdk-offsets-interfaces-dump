@@ -57,10 +57,10 @@ namespace CS2 {
 			GlobalTypes::Color m_cValueColor4; // 0x8c | Schema_Atomic | Size: 0x4
 			compositematerialslib::CompositeMaterialVarSystemVar_t m_nValueSystemVar; // 0x90 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIMaterial2 > > m_strResourceMaterial; // 0x98 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIMaterial2>> m_strResourceMaterial; // 0x98 | Schema_Atomic | Size: 0xe0
 			char  m_strResourceMaterial[0xe0]; // 0x98 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::CUtlString m_strTextureContentAssetPath; // 0x178 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCTextureBase > > m_strTextureRuntimeResourcePath; // 0x180 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCTextureBase>> m_strTextureRuntimeResourcePath; // 0x180 | Schema_Atomic | Size: 0xe0
 			char  m_strTextureRuntimeResourcePath[0xe0]; // 0x180 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::CUtlString m_strTextureCompilationVtexTemplate; // 0x260 | Schema_Atomic | Size: 0x8
 			compositematerialslib::CompositeMaterialInputTextureType_t m_nTextureType; // 0x268 | Schema_DeclaredEnum | Size: 0x4

@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CNmEvent /**/ {
 				constexpr std::ptrdiff_t m_flStartTimeSeconds = 0x8; // float32 m_flStartTimeSeconds; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDurationSeconds = 0xc; // float32 m_flDurationSeconds; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_syncID = 0x10; // GlobalTypes::CGlobalSymbol m_syncID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_syncID = 0x10; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bClientOnly = 0x18; // bool m_bClientOnly; |  0x18 | Schema_Builtin | Size: 0x1
 			}
 		}

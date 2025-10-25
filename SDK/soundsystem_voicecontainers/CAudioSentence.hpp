@@ -29,9 +29,9 @@ namespace CS2 {
 		public:
 			bool m_bShouldVoiceDuck; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioPhonemeTag > m_RunTimePhonemes; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CAudioPhonemeTag> m_RunTimePhonemes; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_RunTimePhonemes[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioEmphasisSample > m_EmphasisSamples; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CAudioEmphasisSample> m_EmphasisSamples; // 0x20 | Schema_Atomic | Size: 0x18
 			// char  m_EmphasisSamples[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			soundsystem_voicecontainers::CAudioMorphData m_morphData; // 0x38 | Schema_DeclaredClass | Size: 0x68
 		};

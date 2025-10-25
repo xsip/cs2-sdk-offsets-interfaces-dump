@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x98
 			namespace CParticleAnimTag /*: public CS2::animgraphlib::CAnimTagBase*/ {
-				constexpr std::ptrdiff_t m_hParticleSystem = 0x58; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hParticleSystem; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_particleSystemName = 0x60; // GlobalTypes::CUtlString m_particleSystemName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_configName = 0x68; // GlobalTypes::CUtlString m_configName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hParticleSystem = 0x58; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_particleSystemName = 0x60; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_configName = 0x68; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bDetachFromOwner = 0x70; // bool m_bDetachFromOwner; |  0x70 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAggregate = 0x71; // bool m_bAggregate; |  0x71 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bStopWhenTagEnds = 0x72; // bool m_bStopWhenTagEnds; |  0x72 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTagEndStopIsInstant = 0x73; // bool m_bTagEndStopIsInstant; |  0x73 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_attachmentName = 0x78; // GlobalTypes::CUtlString m_attachmentName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_attachmentType = 0x80; // animationsystem::ParticleAttachment_t m_attachmentType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentCP1Name = 0x88; // GlobalTypes::CUtlString m_attachmentCP1Name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_attachmentCP1Type = 0x90; // animationsystem::ParticleAttachment_t m_attachmentCP1Type; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_attachmentName = 0x78; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachmentType = 0x80; // animationsystem::ParticleAttachment_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_attachmentCP1Name = 0x88; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachmentCP1Type = 0x90; // animationsystem::ParticleAttachment_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

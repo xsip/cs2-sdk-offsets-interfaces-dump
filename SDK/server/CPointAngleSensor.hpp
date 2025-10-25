@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -26,10 +31,10 @@ namespace CS2 {
 			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CUtlSymbolLarge m_nLookAtName; // 0x4f8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x500 | Schema_Atomic | Size: 0x4
-			char  m_hTargetEntity[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hLookAtEntity; // 0x504 | Schema_Atomic | Size: 0x4
-			char  m_hLookAtEntity[0x4]; // 0x504 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x500 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetEntity[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLookAtEntity; // 0x504 | Schema_Atomic | Size: 0x4
+			// char  m_hLookAtEntity[0x4]; // 0x504 | Schema_Atomic | Size: 0x4
 			float32 m_flDuration; // 0x508 | Schema_Builtin | Size: 0x4
 			float32 m_flDotTolerance; // 0x50c | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flFacingTime; // 0x510 | Schema_DeclaredClass | Size: 0x4
@@ -37,7 +42,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			entity2::CEntityIOOutput m_OnFacingLookat; // 0x518 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnNotFacingLookat; // 0x540 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::Vector > m_TargetDir; // 0x568 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::Vector> m_TargetDir; // 0x568 | Schema_Atomic | Size: 0x28
 			char  m_TargetDir[0x28]; // 0x568 | Schema_Atomic | Size: 0x28
 			// GlobalTypes::CEntityOutputTemplate< float32 > m_FacingPercentage; // 0x590 | Schema_Atomic | Size: 0x28
 			char  m_FacingPercentage[0x28]; // 0x590 | Schema_Atomic | Size: 0x28

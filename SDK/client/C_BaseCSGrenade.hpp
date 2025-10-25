@@ -40,7 +40,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			entity2::GameTick_t m_nNextHoldTick; // 0x2014 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flNextHoldFrac; // 0x2018 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle< client::C_CSWeaponBase > m_hSwitchToWeaponAfterThrow; // 0x201c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSWeaponBase> m_hSwitchToWeaponAfterThrow; // 0x201c | Schema_Atomic | Size: 0x4
 			// char  m_hSwitchToWeaponAfterThrow[0x4]; // 0x201c | Schema_Atomic | Size: 0x4
 			S2_PAD(0x20); // End padding
 		};

@@ -27,7 +27,7 @@ namespace CS2 {
 		class CDynamicNavConnectionsVolume : public CS2::server::CTriggerMultiple {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszConnectionTarget; // 0x9d0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< server::DynamicVolumeDef_t > m_vecConnections; // 0x9d8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<server::DynamicVolumeDef_t> m_vecConnections; // 0x9d8 | Schema_Atomic | Size: 0x18
 			// char  m_vecConnections[0x18]; // 0x9d8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CGlobalSymbol m_sTransitionType; // 0x9f0 | Schema_Atomic | Size: 0x8
 			bool m_bConnectionsEnabled; // 0x9f8 | Schema_Builtin | Size: 0x1

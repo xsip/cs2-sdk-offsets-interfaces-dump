@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x28
 			namespace InstanceState_t /**/ {
-				constexpr std::ptrdiff_t m_Shuffle = 0x0; // GlobalTypes::CUtlVectorFixedGrowable< uint8, 8 > m_Shuffle; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_Shuffle = 0x0; // GlobalTypes::CUtlVectorFixedGrowable  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_nNextShuffle = 0x20; // int32_t m_nNextShuffle; |  0x20 | Schema_Builtin | Size: 0x4
 			}
 		}

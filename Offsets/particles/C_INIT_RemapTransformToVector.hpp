@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x2F8
 			namespace C_INIT_RemapTransformToVector /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vInputMin = 0x1dc; // GlobalTypes::Vector m_vInputMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vInputMax = 0x1e8; // GlobalTypes::Vector m_vInputMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOutputMin = 0x1f4; // GlobalTypes::Vector m_vOutputMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOutputMax = 0x200; // GlobalTypes::Vector m_vOutputMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_TransformInput = 0x210; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_LocalSpaceTransform = 0x278; // particleslib::CParticleTransformInput m_LocalSpaceTransform; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d8; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vInputMin = 0x1dc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vInputMax = 0x1e8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOutputMin = 0x1f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOutputMax = 0x200; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_TransformInput = 0x210; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_LocalSpaceTransform = 0x278; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
 				constexpr std::ptrdiff_t m_flStartTime = 0x2e0; // float32 m_flStartTime; |  0x2e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEndTime = 0x2e4; // float32 m_flEndTime; |  0x2e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSetMethod = 0x2e8; // particles::ParticleSetMethod_t m_nSetMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSetMethod = 0x2e8; // particles::ParticleSetMethod_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bOffset = 0x2ec; // bool m_bOffset; |  0x2ec | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAccelerate = 0x2ed; // bool m_bAccelerate; |  0x2ed | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flRemapBias = 0x2f0; // float32 m_flRemapBias; |  0x2f0 | Schema_Builtin | Size: 0x4

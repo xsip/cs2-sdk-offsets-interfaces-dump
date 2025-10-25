@@ -11,10 +11,10 @@ namespace CS2 {
 			// Class size: 0x38
 			namespace AmmoTypeInfo_t /**/ {
 				constexpr std::ptrdiff_t m_nMaxCarry = 0x10; // int32_t m_nMaxCarry; |  0x10 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSplashSize = 0x1c; // tier2::CRangeInt m_nSplashSize; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_nFlags = 0x24; // client::AmmoFlags_t m_nFlags; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nSplashSize = 0x1c; // tier2::CRangeInt  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_nFlags = 0x24; // client::AmmoFlags_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flMass = 0x28; // float32 m_flMass; |  0x28 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSpeed = 0x2c; // tier2::CRangeFloat m_flSpeed; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flSpeed = 0x2c; // tier2::CRangeFloat  | Schema_DeclaredClass | Size: 0x8
 			}
 		}
 	}

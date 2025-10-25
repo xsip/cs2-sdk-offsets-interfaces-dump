@@ -21,7 +21,7 @@ namespace CS2 {
 		class MaterialGroup_t  {
 		public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeIMaterial2 > > m_materials; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>> m_materials; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_materials[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::MaterialGroup_t, m_name) == 0x0, "m_name in MaterialGroup_t should be at offset 0x0");

@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x60
 			namespace FourCovMatrices3 /**/ {
-				constexpr std::ptrdiff_t m_vDiag = 0x0; // GlobalTypes::FourVectors m_vDiag; |  Schema_Atomic | Size: 0x30
-				constexpr std::ptrdiff_t m_flXY = 0x30; // GlobalTypes::fltx4 m_flXY; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_flXZ = 0x40; // GlobalTypes::fltx4 m_flXZ; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_flYZ = 0x50; // GlobalTypes::fltx4 m_flYZ; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vDiag = 0x0; // GlobalTypes::FourVectors  | Schema_Atomic | Size: 0x30
+				constexpr std::ptrdiff_t m_flXY = 0x30; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_flXZ = 0x40; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_flYZ = 0x50; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

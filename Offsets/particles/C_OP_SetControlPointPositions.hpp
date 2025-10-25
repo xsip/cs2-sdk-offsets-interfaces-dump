@@ -17,10 +17,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nCP2 = 0x1e0; // int32_t m_nCP2; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCP3 = 0x1e4; // int32_t m_nCP3; |  0x1e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCP4 = 0x1e8; // int32_t m_nCP4; |  0x1e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCP1Pos = 0x1ec; // GlobalTypes::Vector m_vecCP1Pos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCP2Pos = 0x1f8; // GlobalTypes::Vector m_vecCP2Pos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCP3Pos = 0x204; // GlobalTypes::Vector m_vecCP3Pos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCP4Pos = 0x210; // GlobalTypes::Vector m_vecCP4Pos; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCP1Pos = 0x1ec; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCP2Pos = 0x1f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCP3Pos = 0x204; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCP4Pos = 0x210; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nHeadLocation = 0x21c; // int32_t m_nHeadLocation; |  0x21c | Schema_Builtin | Size: 0x4
 			}
 		}

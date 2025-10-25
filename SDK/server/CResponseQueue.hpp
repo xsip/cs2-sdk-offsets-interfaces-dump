@@ -26,7 +26,7 @@ namespace CS2 {
 		class CResponseQueue  {
 		public:
 			S2_PAD(0x38);
-			GlobalTypes::CUtlVector< server::CAI_Expresser* > m_ExpresserTargets; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<server::CAI_Expresser*> m_ExpresserTargets; // 0x38 | Schema_Atomic | Size: 0x18
 			// char  m_ExpresserTargets[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CResponseQueue, m_ExpresserTargets) == 0x38, "m_ExpresserTargets in CResponseQueue should be at offset 0x38");

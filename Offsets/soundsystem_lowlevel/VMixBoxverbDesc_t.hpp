@@ -17,7 +17,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flModDepth = 0x10; // float32 m_flModDepth; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flModRate = 0x14; // float32 m_flModRate; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bParallel = 0x18; // bool m_bParallel; |  0x18 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_filterType = 0x1c; // soundsystem_lowlevel::VMixFilterDesc_t m_filterType; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_filterType = 0x1c; // soundsystem_lowlevel::VMixFilterDesc_t  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t m_flWidth = 0x2c; // float32 m_flWidth; |  0x2c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flHeight = 0x30; // float32 m_flHeight; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDepth = 0x34; // float32 m_flDepth; |  0x34 | Schema_Builtin | Size: 0x4

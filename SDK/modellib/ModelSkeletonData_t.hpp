@@ -20,7 +20,7 @@ namespace CS2 {
 	namespace modellib {
 		class ModelSkeletonData_t  {
 		public:
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneName; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_boneName; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_boneName[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int16 > m_nParent; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_nParent[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
@@ -28,9 +28,9 @@ namespace CS2 {
 			// char  m_boneSphere[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint32 > m_nFlag; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_nFlag[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_bonePosParent; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector> m_bonePosParent; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_bonePosParent[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::QuaternionStorage > m_boneRotParent; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::QuaternionStorage> m_boneRotParent; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_boneRotParent[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< float32 > m_boneScaleParent; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_boneScaleParent[0x18]; // 0x90 | Schema_Atomic | Size: 0x18

@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace ClutterTile_t /**/ {
 				constexpr std::ptrdiff_t m_nFirstInstance = 0x0; // uint32_t m_nFirstInstance; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLastInstance = 0x4; // uint32_t m_nLastInstance; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_BoundsWs = 0x8; // mathlib_extended::AABB_t m_BoundsWs; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_BoundsWs = 0x8; // mathlib_extended::AABB_t  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

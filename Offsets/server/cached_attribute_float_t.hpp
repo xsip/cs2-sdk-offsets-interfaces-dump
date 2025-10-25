@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x18
 			namespace cached_attribute_float_t /**/ {
 				constexpr std::ptrdiff_t flIn = 0x0; // float32 flIn; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t iAttribHook = 0x8; // GlobalTypes::CUtlSymbolLarge iAttribHook; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t iAttribHook = 0x8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t flOut = 0x10; // float32 flOut; |  0x10 | Schema_Builtin | Size: 0x4
 			}
 		}

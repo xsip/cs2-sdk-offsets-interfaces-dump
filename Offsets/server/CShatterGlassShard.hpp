@@ -11,14 +11,14 @@ namespace CS2 {
 			// Class size: 0xB8
 			namespace CShatterGlassShard /**/ {
 				constexpr std::ptrdiff_t m_hShardHandle = 0x8; // uint32_t m_hShardHandle; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecPanelVertices = 0x10; // GlobalTypes::CUtlVector< GlobalTypes::Vector2D > m_vecPanelVertices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vLocalPanelSpaceOrigin = 0x28; // GlobalTypes::Vector2D m_vLocalPanelSpaceOrigin; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hModel = 0x30; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hPhysicsEntity = 0x38; // server::CHandle< server::CShatterGlassShardPhysics > m_hPhysicsEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hParentPanel = 0x3c; // server::CHandle< server::CFuncShatterglass > m_hParentPanel; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecPanelVertices = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::Vector2D>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vLocalPanelSpaceOrigin = 0x28; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hModel = 0x30; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hPhysicsEntity = 0x38; // GlobalTypes::CHandle<server::CShatterGlassShardPhysics>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hParentPanel = 0x3c; // GlobalTypes::CHandle<server::CFuncShatterglass>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_hParentShard = 0x40; // uint32_t m_hParentShard; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ShatterStressType = 0x44; // client::ShatterGlassStressType m_ShatterStressType; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_vecStressVelocity = 0x48; // GlobalTypes::Vector m_vecStressVelocity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_ShatterStressType = 0x44; // client::ShatterGlassStressType  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_vecStressVelocity = 0x48; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bCreatedModel = 0x54; // bool m_bCreatedModel; |  0x54 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flLongestEdge = 0x58; // float32 m_flLongestEdge; |  0x58 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flShortestEdge = 0x5c; // float32 m_flShortestEdge; |  0x5c | Schema_Builtin | Size: 0x4
@@ -26,18 +26,18 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flShortestAcross = 0x64; // float32 m_flShortestAcross; |  0x64 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSumOfAllEdges = 0x68; // float32 m_flSumOfAllEdges; |  0x68 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flArea = 0x6c; // float32 m_flArea; |  0x6c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nOnFrameEdge = 0x70; // client::OnFrame m_nOnFrameEdge; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nOnFrameEdge = 0x70; // client::OnFrame  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_nSubShardGeneration = 0x74; // int32_t m_nSubShardGeneration; |  0x74 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAverageVertPosition = 0x78; // GlobalTypes::Vector2D m_vecAverageVertPosition; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecAverageVertPosition = 0x78; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bAverageVertPositionIsValid = 0x80; // bool m_bAverageVertPositionIsValid; |  0x80 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecPanelSpaceStressPositionA = 0x84; // GlobalTypes::Vector2D m_vecPanelSpaceStressPositionA; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecPanelSpaceStressPositionB = 0x8c; // GlobalTypes::Vector2D m_vecPanelSpaceStressPositionB; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecPanelSpaceStressPositionA = 0x84; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecPanelSpaceStressPositionB = 0x8c; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bStressPositionAIsValid = 0x94; // bool m_bStressPositionAIsValid; |  0x94 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bStressPositionBIsValid = 0x95; // bool m_bStressPositionBIsValid; |  0x95 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bFlaggedForRemoval = 0x96; // bool m_bFlaggedForRemoval; |  0x96 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flPhysicsEntitySpawnedAtTime = 0x98; // entity2::GameTime_t m_flPhysicsEntitySpawnedAtTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_hEntityHittingMe = 0x9c; // server::CHandle< server::CBaseEntity > m_hEntityHittingMe; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecNeighbors = 0xa0; // GlobalTypes::CUtlVector< uint32 > m_vecNeighbors; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flPhysicsEntitySpawnedAtTime = 0x98; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hEntityHittingMe = 0x9c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecNeighbors = 0xa0; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

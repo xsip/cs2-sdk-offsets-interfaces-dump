@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace CJiggleBoneUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::JiggleBoneSettingsList_t m_opFixedData; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_opFixedData = 0x70; // animgraphlib::JiggleBoneSettingsList_t  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

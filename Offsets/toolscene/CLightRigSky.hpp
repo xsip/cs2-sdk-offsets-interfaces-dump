@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace toolscene {
 			// Class size: 0x8
 			namespace CLightRigSky /**/ {
-				constexpr std::ptrdiff_t m_hSkyMaterial = 0x0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSkyMaterial; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSkyMaterial = 0x0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

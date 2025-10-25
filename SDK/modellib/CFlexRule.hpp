@@ -27,7 +27,7 @@ namespace CS2 {
 		public:
 			int32_t m_nFlex; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< modellib::CFlexOp > m_FlexOps; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::CFlexOp> m_FlexOps; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_FlexOps[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CFlexRule, m_nFlex) == 0x0, "m_nFlex in CFlexRule should be at offset 0x0");

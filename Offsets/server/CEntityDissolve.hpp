@@ -16,9 +16,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFadeOutModelLength = 0x7e4; // float32 m_flFadeOutModelLength; |  0x7e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeOutStart = 0x7e8; // float32 m_flFadeOutStart; |  0x7e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeOutLength = 0x7ec; // float32 m_flFadeOutLength; |  0x7ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartTime = 0x7f0; // entity2::GameTime_t m_flStartTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nDissolveType = 0x7f4; // client::EntityDisolveType_t m_nDissolveType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vDissolverOrigin = 0x7f8; // GlobalTypes::Vector m_vDissolverOrigin; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flStartTime = 0x7f0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nDissolveType = 0x7f4; // client::EntityDisolveType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vDissolverOrigin = 0x7f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nMagnitude = 0x804; // uint32_t m_nMagnitude; |  0x804 | Schema_Builtin | Size: 0x4
 			}
 		}

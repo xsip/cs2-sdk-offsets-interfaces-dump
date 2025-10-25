@@ -16,11 +16,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flOut2 = 0x4fc; // float32 m_flOut2; |  0x4fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOldInValue = 0x500; // float32 m_flOldInValue; |  0x500 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnabled = 0x504; // bool m_bEnabled; |  0x504 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OutValue = 0x508; // GlobalTypes::CEntityOutputTemplate< float32 > m_OutValue; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnRoseAboveMin = 0x530; // entity2::CEntityIOOutput m_OnRoseAboveMin; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnRoseAboveMax = 0x558; // entity2::CEntityIOOutput m_OnRoseAboveMax; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFellBelowMin = 0x580; // entity2::CEntityIOOutput m_OnFellBelowMin; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFellBelowMax = 0x5a8; // entity2::CEntityIOOutput m_OnFellBelowMax; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OutValue = 0x508; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnRoseAboveMin = 0x530; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnRoseAboveMax = 0x558; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnFellBelowMin = 0x580; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnFellBelowMax = 0x5a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

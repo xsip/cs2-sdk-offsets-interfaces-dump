@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CCSPlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -38,12 +43,12 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszBounceSound; // 0xb90 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_ExplosionSound; // 0xb98 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x4);
-			// server::CHandle< server::CCSPlayerPawn > m_hThrower; // 0xba4 | Schema_Atomic | Size: 0x4
-			char  m_hThrower[0x4]; // 0xba4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hThrower; // 0xba4 | Schema_Atomic | Size: 0x4
+			// char  m_hThrower[0x4]; // 0xba4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
 			entity2::GameTime_t m_flNextAttack; // 0xbbc | Schema_DeclaredClass | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_hOriginalThrower; // 0xbc0 | Schema_Atomic | Size: 0x4
-			char  m_hOriginalThrower[0x4]; // 0xbc0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hOriginalThrower; // 0xbc0 | Schema_Atomic | Size: 0x4
+			// char  m_hOriginalThrower[0x4]; // 0xbc0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
 		static_assert(offsetof(CS2::server::CBaseGrenade, m_OnPlayerPickup) == 0xB28, "m_OnPlayerPickup in CBaseGrenade should be at offset 0xB28");

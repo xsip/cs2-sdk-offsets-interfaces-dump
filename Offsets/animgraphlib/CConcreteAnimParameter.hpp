@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x80
 			namespace CConcreteAnimParameter /*: public CS2::animgraphlib::CAnimParameterBase*/ {
-				constexpr std::ptrdiff_t m_previewButton = 0x70; // animgraphlib::AnimParamButton_t m_previewButton; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_eNetworkSetting = 0x74; // animgraphlib::AnimParamNetworkSetting m_eNetworkSetting; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_previewButton = 0x70; // animgraphlib::AnimParamButton_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_eNetworkSetting = 0x74; // animgraphlib::AnimParamNetworkSetting  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseMostRecentValue = 0x78; // bool m_bUseMostRecentValue; |  0x78 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAutoReset = 0x79; // bool m_bAutoReset; |  0x79 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bGameWritable = 0x7a; // bool m_bGameWritable; |  0x7a | Schema_Builtin | Size: 0x1

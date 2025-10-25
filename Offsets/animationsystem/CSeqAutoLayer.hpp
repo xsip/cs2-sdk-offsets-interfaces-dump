@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CSeqAutoLayer /**/ {
 				constexpr std::ptrdiff_t m_nLocalReference = 0x0; // int16_t m_nLocalReference; |  0x0 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nLocalPose = 0x2; // int16_t m_nLocalPose; |  0x2 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_flags = 0x4; // animationsystem::CSeqAutoLayerFlag m_flags; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_flags = 0x4; // animationsystem::CSeqAutoLayerFlag  | Schema_DeclaredClass | Size: 0x8
 				constexpr std::ptrdiff_t m_start = 0xc; // float32 m_start; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_peak = 0x10; // float32 m_peak; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_tail = 0x14; // float32 m_tail; |  0x14 | Schema_Builtin | Size: 0x4

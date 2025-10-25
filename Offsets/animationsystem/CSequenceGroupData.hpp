@@ -10,20 +10,20 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x138
 			namespace CSequenceGroupData /**/ {
-				constexpr std::ptrdiff_t m_sName = 0x10; // GlobalTypes::CBufferString m_sName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sName = 0x10; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_nFlags = 0x20; // uint32_t m_nFlags; |  0x20 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_localSequenceNameArray = 0x28; // GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_localSequenceNameArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localS1SeqDescArray = 0x40; // GlobalTypes::CUtlVector< animationsystem::CSeqS1SeqDesc > m_localS1SeqDescArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localMultiSeqDescArray = 0x58; // GlobalTypes::CUtlVector< animationsystem::CSeqS1SeqDesc > m_localMultiSeqDescArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localSynthAnimDescArray = 0x70; // GlobalTypes::CUtlVector< animationsystem::CSeqSynthAnimDesc > m_localSynthAnimDescArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localCmdSeqDescArray = 0x88; // GlobalTypes::CUtlVector< animationsystem::CSeqCmdSeqDesc > m_localCmdSeqDescArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localBoneMaskArray = 0xa0; // GlobalTypes::CUtlVector< animationsystem::CSeqBoneMaskList > m_localBoneMaskArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localScaleSetArray = 0xb8; // GlobalTypes::CUtlVector< animationsystem::CSeqScaleSet > m_localScaleSetArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localBoneNameArray = 0xd0; // GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_localBoneNameArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_localNodeName = 0xe8; // GlobalTypes::CBufferString m_localNodeName; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_localPoseParamArray = 0xf8; // GlobalTypes::CUtlVector< animationsystem::CSeqPoseParamDesc > m_localPoseParamArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_keyValues = 0x110; // GlobalTypes::KeyValues3 m_keyValues; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_localIKAutoplayLockArray = 0x120; // GlobalTypes::CUtlVector< animationsystem::CSeqIKLock > m_localIKAutoplayLockArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localSequenceNameArray = 0x28; // GlobalTypes::CUtlVector<GlobalTypes::CBufferString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localS1SeqDescArray = 0x40; // GlobalTypes::CUtlVector<animationsystem::CSeqS1SeqDesc>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localMultiSeqDescArray = 0x58; // GlobalTypes::CUtlVector<animationsystem::CSeqS1SeqDesc>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localSynthAnimDescArray = 0x70; // GlobalTypes::CUtlVector<animationsystem::CSeqSynthAnimDesc>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localCmdSeqDescArray = 0x88; // GlobalTypes::CUtlVector<animationsystem::CSeqCmdSeqDesc>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localBoneMaskArray = 0xa0; // GlobalTypes::CUtlVector<animationsystem::CSeqBoneMaskList>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localScaleSetArray = 0xb8; // GlobalTypes::CUtlVector<animationsystem::CSeqScaleSet>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localBoneNameArray = 0xd0; // GlobalTypes::CUtlVector<GlobalTypes::CBufferString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_localNodeName = 0xe8; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_localPoseParamArray = 0xf8; // GlobalTypes::CUtlVector<animationsystem::CSeqPoseParamDesc>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_keyValues = 0x110; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_localIKAutoplayLockArray = 0x120; // GlobalTypes::CUtlVector<animationsystem::CSeqIKLock>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

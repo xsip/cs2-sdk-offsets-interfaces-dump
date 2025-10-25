@@ -12,10 +12,10 @@ namespace CS2 {
 			namespace CLogicCompare /*: public CS2::server::CLogicalEntity*/ {
 				constexpr std::ptrdiff_t m_flInValue = 0x4f0; // float32 m_flInValue; |  0x4f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCompareValue = 0x4f4; // float32 m_flCompareValue; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnLessThan = 0x4f8; // GlobalTypes::CEntityOutputTemplate< float32 > m_OnLessThan; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEqualTo = 0x520; // GlobalTypes::CEntityOutputTemplate< float32 > m_OnEqualTo; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnNotEqualTo = 0x548; // GlobalTypes::CEntityOutputTemplate< float32 > m_OnNotEqualTo; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnGreaterThan = 0x570; // GlobalTypes::CEntityOutputTemplate< float32 > m_OnGreaterThan; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnLessThan = 0x4f8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnEqualTo = 0x520; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnNotEqualTo = 0x548; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_OnGreaterThan = 0x570; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
 			}
 		}
 	}

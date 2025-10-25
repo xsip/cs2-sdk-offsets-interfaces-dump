@@ -22,7 +22,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flSFXSOffsetX = 0x1fc; // float32 m_flSFXSOffsetX; |  0x1fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSFXSOffsetY = 0x200; // float32 m_flSFXSOffsetY; |  0x200 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSFXSOffsetZ = 0x204; // float32 m_flSFXSOffsetZ; |  0x204 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDetailCombo = 0x208; // particles::DetailCombo_t m_nDetailCombo; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDetailCombo = 0x208; // particles::DetailCombo_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flSFXSDetailAmount = 0x20c; // float32 m_flSFXSDetailAmount; |  0x20c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSFXSDetailScale = 0x210; // float32 m_flSFXSDetailScale; |  0x210 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSFXSDetailScrollX = 0x214; // float32 m_flSFXSDetailScrollX; |  0x214 | Schema_Builtin | Size: 0x4

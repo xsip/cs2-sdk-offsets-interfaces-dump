@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xA0
 			namespace CSmartPropElement_Group /*: public CS2::smartprops::CSmartPropElement*/ {
-				constexpr std::ptrdiff_t m_Children = 0x88; // GlobalTypes::CUtlVector< smartprops::CSmartPropElement > m_Children; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Children = 0x88; // GlobalTypes::CUtlVector<smartprops::CSmartPropElement*>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

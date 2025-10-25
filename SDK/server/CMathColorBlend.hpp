@@ -25,7 +25,7 @@ namespace CS2 {
 			float32 m_flInMax; // 0x4f4 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_OutColor1; // 0x4f8 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Color m_OutColor2; // 0x4fc | Schema_Atomic | Size: 0x4
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::Color > m_OutValue; // 0x500 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::Color> m_OutValue; // 0x500 | Schema_Atomic | Size: 0x28
 			char  m_OutValue[0x28]; // 0x500 | Schema_Atomic | Size: 0x28
 		};
 		static_assert(offsetof(CS2::server::CMathColorBlend, m_flInMin) == 0x4F0, "m_flInMin in CMathColorBlend should be at offset 0x4F0");

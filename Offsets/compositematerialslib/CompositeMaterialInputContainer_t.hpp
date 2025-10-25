@@ -11,12 +11,12 @@ namespace CS2 {
 			// Class size: 0x138
 			namespace CompositeMaterialInputContainer_t /**/ {
 				constexpr std::ptrdiff_t m_bEnabled = 0x0; // bool m_bEnabled; |  0x0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nCompositeMaterialInputContainerSourceType = 0x4; // compositematerialslib::CompositeMaterialInputContainerSourceType_t m_nCompositeMaterialInputContainerSourceType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_strSpecificContainerMaterial = 0x8; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIMaterial2 > > m_strSpecificContainerMaterial; |  Schema_Atomic | Size: 0xe0
-				constexpr std::ptrdiff_t m_strAttrName = 0xe8; // GlobalTypes::CUtlString m_strAttrName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strAlias = 0xf0; // GlobalTypes::CUtlString m_strAlias; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecLooseVariables = 0xf8; // GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialInputLooseVariable_t > m_vecLooseVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_strAttrNameForVar = 0x110; // GlobalTypes::CUtlString m_strAttrNameForVar; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nCompositeMaterialInputContainerSourceType = 0x4; // compositematerialslib::CompositeMaterialInputContainerSourceType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strSpecificContainerMaterial = 0x8; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIMaterial2>>  | Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_strAttrName = 0xe8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strAlias = 0xf0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecLooseVariables = 0xf8; // GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterialInputLooseVariable_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_strAttrNameForVar = 0x110; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bExposeExternally = 0x118; // bool m_bExposeExternally; |  0x118 | Schema_Builtin | Size: 0x1
 			}
 		}

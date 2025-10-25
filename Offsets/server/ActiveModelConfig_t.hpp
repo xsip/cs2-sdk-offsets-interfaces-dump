@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x70
 			namespace ActiveModelConfig_t /**/ {
-				constexpr std::ptrdiff_t m_Handle = 0x30; // client::ModelConfigHandle_t m_Handle; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_Name = 0x38; // GlobalTypes::CUtlSymbolLarge m_Name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_AssociatedEntities = 0x40; // server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseModelEntity > > m_AssociatedEntities; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_AssociatedEntityNames = 0x58; // GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_AssociatedEntityNames; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Handle = 0x30; // client::ModelConfigHandle_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_Name = 0x38; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_AssociatedEntities = 0x40; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_AssociatedEntityNames = 0x58; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x90
 			namespace CPulseCell_BaseLerp /*: public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow*/ {
-				constexpr std::ptrdiff_t m_WakeResume = 0x48; // pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_WakeResume = 0x48; // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

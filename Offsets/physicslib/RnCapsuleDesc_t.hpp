@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x38
 			namespace RnCapsuleDesc_t /*: public CS2::physicslib::RnShapeDesc_t*/ {
-				constexpr std::ptrdiff_t m_Capsule = 0x18; // physicslib::RnCapsule_t m_Capsule; |  Schema_DeclaredClass | Size: 0x1c
+				constexpr std::ptrdiff_t m_Capsule = 0x18; // physicslib::RnCapsule_t  | Schema_DeclaredClass | Size: 0x1c
 			}
 		}
 	}

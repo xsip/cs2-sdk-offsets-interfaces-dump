@@ -18,6 +18,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CCSPlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -53,8 +58,8 @@ namespace CS2 {
 			entity2::GameTime_t m_flDefuseCountDown; // 0xe60 | Schema_DeclaredClass | Size: 0x4
 			bool m_bBombDefused; // 0xe64 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CCSPlayerPawn > m_hBombDefuser; // 0xe68 | Schema_Atomic | Size: 0x4
-			char  m_hBombDefuser[0x4]; // 0xe68 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hBombDefuser; // 0xe68 | Schema_Atomic | Size: 0x4
+			// char  m_hBombDefuser[0x4]; // 0xe68 | Schema_Atomic | Size: 0x4
 			int32_t m_iProgressBarTime; // 0xe6c | Schema_Builtin | Size: 0x4
 			bool m_bVoiceAlertFired; // 0xe70 | Schema_Builtin | Size: 0x1
 			bool m_bVoiceAlertPlayed[4]; // 0xe71 | Schema_FixedArray | Size: 0x4

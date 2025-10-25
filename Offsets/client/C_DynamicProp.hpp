@@ -12,13 +12,13 @@ namespace CS2 {
 			namespace C_DynamicProp /*: public CS2::client::C_BreakableProp*/ {
 				constexpr std::ptrdiff_t m_bUseHitboxesForRenderBox = 0x1300; // bool m_bUseHitboxesForRenderBox; |  0x1300 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseAnimGraph = 0x1301; // bool m_bUseAnimGraph; |  0x1301 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pOutputAnimBegun = 0x1308; // entity2::CEntityIOOutput m_pOutputAnimBegun; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pOutputAnimOver = 0x1330; // entity2::CEntityIOOutput m_pOutputAnimOver; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pOutputAnimLoopCycleOver = 0x1358; // entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnAnimReachedStart = 0x1380; // entity2::CEntityIOOutput m_OnAnimReachedStart; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnAnimReachedEnd = 0x13a8; // entity2::CEntityIOOutput m_OnAnimReachedEnd; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_iszIdleAnim = 0x13d0; // GlobalTypes::CUtlSymbolLarge m_iszIdleAnim; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nIdleAnimLoopMode = 0x13d8; // client::AnimLoopMode_t m_nIdleAnimLoopMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_pOutputAnimBegun = 0x1308; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_pOutputAnimOver = 0x1330; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_pOutputAnimLoopCycleOver = 0x1358; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnAnimReachedStart = 0x1380; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnAnimReachedEnd = 0x13a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_iszIdleAnim = 0x13d0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nIdleAnimLoopMode = 0x13d8; // client::AnimLoopMode_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bRandomizeCycle = 0x13dc; // bool m_bRandomizeCycle; |  0x13dc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bStartDisabled = 0x13dd; // bool m_bStartDisabled; |  0x13dd | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bFiredStartEndOutput = 0x13de; // bool m_bFiredStartEndOutput; |  0x13de | Schema_Builtin | Size: 0x1
@@ -28,11 +28,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iInitialGlowState = 0x13e4; // int32_t m_iInitialGlowState; |  0x13e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGlowRange = 0x13e8; // int32_t m_nGlowRange; |  0x13e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGlowRangeMin = 0x13ec; // int32_t m_nGlowRangeMin; |  0x13ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_glowColor = 0x13f0; // GlobalTypes::Color m_glowColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_glowColor = 0x13f0; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nGlowTeam = 0x13f4; // int32_t m_nGlowTeam; |  0x13f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iCachedFrameCount = 0x13f8; // int32_t m_iCachedFrameCount; |  0x13f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCachedRenderMins = 0x13fc; // GlobalTypes::Vector m_vecCachedRenderMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCachedRenderMaxs = 0x1408; // GlobalTypes::Vector m_vecCachedRenderMaxs; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCachedRenderMins = 0x13fc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCachedRenderMaxs = 0x1408; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

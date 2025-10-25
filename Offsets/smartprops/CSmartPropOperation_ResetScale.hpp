@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x90
 			namespace CSmartPropOperation_ResetScale /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_bIgnoreObjectScale = 0x50; // GlobalTypes::CSmartPropAttributeBool m_bIgnoreObjectScale; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bIgnoreObjectScale = 0x50; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

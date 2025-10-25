@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0xD8
 			namespace CAnimEncodedFrames /**/ {
-				constexpr std::ptrdiff_t m_fileName = 0x0; // GlobalTypes::CBufferString m_fileName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_fileName = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_nFrames = 0x10; // int32_t m_nFrames; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFramesPerBlock = 0x14; // int32_t m_nFramesPerBlock; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_frameblockArray = 0x18; // GlobalTypes::CUtlVector< animationsystem::CAnimFrameBlockAnim > m_frameblockArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_usageDifferences = 0x30; // animationsystem::CAnimEncodeDifference m_usageDifferences; |  Schema_DeclaredClass | Size: 0xa8
+				constexpr std::ptrdiff_t m_frameblockArray = 0x18; // GlobalTypes::CUtlVector<animationsystem::CAnimFrameBlockAnim>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_usageDifferences = 0x30; // animationsystem::CAnimEncodeDifference  | Schema_DeclaredClass | Size: 0xa8
 			}
 		}
 	}

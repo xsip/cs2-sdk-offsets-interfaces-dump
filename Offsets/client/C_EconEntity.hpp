@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFlexDelayTime = 0x1378; // float32 m_flFlexDelayTime; |  0x1378 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFlexDelayedWeight = 0x1380; // float32* m_flFlexDelayedWeight; |  0x1380 | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_bAttributesInitialized = 0x1388; // bool m_bAttributesInitialized; |  0x1388 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_AttributeManager = 0x1390; // client::C_AttributeContainer m_AttributeManager; |  Schema_DeclaredClass | Size: 0x4d8
+				constexpr std::ptrdiff_t m_AttributeManager = 0x1390; // client::C_AttributeContainer  | Schema_DeclaredClass | Size: 0x4d8
 				constexpr std::ptrdiff_t m_OriginalOwnerXuidLow = 0x1868; // uint32_t m_OriginalOwnerXuidLow; |  0x1868 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_OriginalOwnerXuidHigh = 0x186c; // uint32_t m_OriginalOwnerXuidHigh; |  0x186c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFallbackPaintKit = 0x1870; // int32_t m_nFallbackPaintKit; |  0x1870 | Schema_Builtin | Size: 0x4
@@ -22,14 +22,14 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nFallbackStatTrak = 0x187c; // int32_t m_nFallbackStatTrak; |  0x187c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bClientside = 0x1880; // bool m_bClientside; |  0x1880 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bParticleSystemsCreated = 0x1881; // bool m_bParticleSystemsCreated; |  0x1881 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecAttachedParticles = 0x1888; // GlobalTypes::CUtlVector< int32 > m_vecAttachedParticles; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hViewmodelAttachment = 0x18a0; // client::CHandle< client::CBaseAnimGraph > m_hViewmodelAttachment; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecAttachedParticles = 0x1888; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hViewmodelAttachment = 0x18a0; // GlobalTypes::CHandle<client::CBaseAnimGraph>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iOldTeam = 0x18a4; // int32_t m_iOldTeam; |  0x18a4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAttachmentDirty = 0x18a8; // bool m_bAttachmentDirty; |  0x18a8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nUnloadedModelIndex = 0x18ac; // int32_t m_nUnloadedModelIndex; |  0x18ac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iNumOwnerValidationRetries = 0x18b0; // int32_t m_iNumOwnerValidationRetries; |  0x18b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hOldProvidee = 0x18c0; // client::CHandle< client::C_BaseEntity > m_hOldProvidee; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAttachedModels = 0x18c8; // client::AttachedModelData_t > m_vecAttachedModels; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hOldProvidee = 0x18c0; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecAttachedModels = 0x18c8; // GlobalTypes::CUtlVector<client::C_EconEntity::AttachedModelData_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

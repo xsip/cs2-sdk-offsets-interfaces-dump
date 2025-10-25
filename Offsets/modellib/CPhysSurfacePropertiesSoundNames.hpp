@@ -10,18 +10,18 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x60
 			namespace CPhysSurfacePropertiesSoundNames /**/ {
-				constexpr std::ptrdiff_t m_impactSoft = 0x0; // GlobalTypes::CUtlString m_impactSoft; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_impactHard = 0x8; // GlobalTypes::CUtlString m_impactHard; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_scrapeSmooth = 0x10; // GlobalTypes::CUtlString m_scrapeSmooth; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_scrapeRough = 0x18; // GlobalTypes::CUtlString m_scrapeRough; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bulletImpact = 0x20; // GlobalTypes::CUtlString m_bulletImpact; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_rolling = 0x28; // GlobalTypes::CUtlString m_rolling; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_break = 0x30; // GlobalTypes::CUtlString m_break; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strain = 0x38; // GlobalTypes::CUtlString m_strain; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_meleeImpact = 0x40; // GlobalTypes::CUtlString m_meleeImpact; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pushOff = 0x48; // GlobalTypes::CUtlString m_pushOff; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_skidStop = 0x50; // GlobalTypes::CUtlString m_skidStop; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_resonant = 0x58; // GlobalTypes::CUtlString m_resonant; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_impactSoft = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_impactHard = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_scrapeSmooth = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_scrapeRough = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bulletImpact = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_rolling = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_break = 0x30; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strain = 0x38; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_meleeImpact = 0x40; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pushOff = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_skidStop = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_resonant = 0x58; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

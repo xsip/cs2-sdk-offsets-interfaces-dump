@@ -25,7 +25,7 @@ namespace CS2 {
 	namespace physicslib {
 		class CRegionSVM  {
 		public:
-			GlobalTypes::CUtlVector< physicslib::RnPlane_t > m_Planes; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::RnPlane_t> m_Planes; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_Planes[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint32 > m_Nodes; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_Nodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18

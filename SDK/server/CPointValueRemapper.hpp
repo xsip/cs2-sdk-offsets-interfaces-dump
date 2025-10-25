@@ -21,6 +21,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBasePlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -34,10 +39,10 @@ namespace CS2 {
 			client::ValueRemapperInputType_t m_nInputType; // 0x4f4 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszRemapLineStartName; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszRemapLineEndName; // 0x500 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hRemapLineStart; // 0x508 | Schema_Atomic | Size: 0x4
-			char  m_hRemapLineStart[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hRemapLineEnd; // 0x50c | Schema_Atomic | Size: 0x4
-			char  m_hRemapLineEnd[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hRemapLineStart; // 0x508 | Schema_Atomic | Size: 0x4
+			// char  m_hRemapLineStart[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hRemapLineEnd; // 0x50c | Schema_Atomic | Size: 0x4
+			// char  m_hRemapLineEnd[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
 			float32 m_flMaximumChangePerSecond; // 0x510 | Schema_Builtin | Size: 0x4
 			float32 m_flDisengageDistance; // 0x514 | Schema_Builtin | Size: 0x4
 			float32 m_flEngageDistance; // 0x518 | Schema_Builtin | Size: 0x4
@@ -49,7 +54,7 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszOutputEntity2Name; // 0x530 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOutputEntity3Name; // 0x538 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszOutputEntity4Name; // 0x540 | Schema_Atomic | Size: 0x8
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseEntity > > m_hOutputEntities; // 0x548 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseEntity>> m_hOutputEntities; // 0x548 | Schema_Atomic | Size: 0x18
 			char  m_hOutputEntities[0x18]; // 0x548 | Schema_Atomic | Size: 0x18
 			client::ValueRemapperHapticsType_t m_nHapticsType; // 0x560 | Schema_DeclaredEnum | Size: 0x4
 			client::ValueRemapperMomentumType_t m_nMomentumType; // 0x564 | Schema_DeclaredEnum | Size: 0x4
@@ -65,8 +70,8 @@ namespace CS2 {
 			float32 m_flPreviousValue; // 0x584 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flPreviousUpdateTickTime; // 0x588 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vecPreviousTestPoint; // 0x58c | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBasePlayerPawn > m_hUsingPlayer; // 0x598 | Schema_Atomic | Size: 0x4
-			char  m_hUsingPlayer[0x4]; // 0x598 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hUsingPlayer; // 0x598 | Schema_Atomic | Size: 0x4
+			// char  m_hUsingPlayer[0x4]; // 0x598 | Schema_Atomic | Size: 0x4
 			float32 m_flCustomOutputValue; // 0x59c | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszSoundEngage; // 0x5a0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszSoundDisengage; // 0x5a8 | Schema_Atomic | Size: 0x8

@@ -31,15 +31,15 @@ namespace CS2 {
 			int32_t m_nContentVersion; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CSmartPropAttributeInt m_nMaxDepth; // 0x8 | Schema_Atomic | Size: 0x40
-			GlobalTypes::CUtlVector< smartprops::CSmartPropVariable* > m_Variables; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<smartprops::CSmartPropVariable*> m_Variables; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_Variables[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< smartprops::CSmartPropChoice* > m_Choices; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<smartprops::CSmartPropChoice*> m_Choices; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_Choices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< smartprops::CSmartPropElement* > m_Children; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<smartprops::CSmartPropElement*> m_Children; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_Children[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< smartprops::CSmartPropModifier* > m_Modifiers; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<smartprops::CSmartPropModifier*> m_Modifiers; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_Modifiers[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIPulseGraphDef > m_hPulseGraph; // 0xa8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIPulseGraphDef> m_hPulseGraph; // 0xa8 | Schema_Atomic | Size: 0x8
 			char  m_hPulseGraph[0x8]; // 0xa8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x20); // End padding
 		};

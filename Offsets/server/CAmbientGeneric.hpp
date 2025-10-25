@@ -12,14 +12,14 @@ namespace CS2 {
 			namespace CAmbientGeneric /*: public CS2::server::CPointEntity*/ {
 				constexpr std::ptrdiff_t m_radius = 0x4f0; // float32 m_radius; |  0x4f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxRadius = 0x4f4; // float32 m_flMaxRadius; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iSoundLevel = 0x4f8; // soundsystem::soundlevel_t m_iSoundLevel; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_dpv = 0x4fc; // server::dynpitchvol_t m_dpv; |  Schema_DeclaredClass | Size: 0x64
+				constexpr std::ptrdiff_t m_iSoundLevel = 0x4f8; // soundsystem::soundlevel_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_dpv = 0x4fc; // server::dynpitchvol_t  | Schema_DeclaredClass | Size: 0x64
 				constexpr std::ptrdiff_t m_fActive = 0x560; // bool m_fActive; |  0x560 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_fLooping = 0x561; // bool m_fLooping; |  0x561 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszSound = 0x568; // GlobalTypes::CUtlSymbolLarge m_iszSound; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sSourceEntName = 0x570; // GlobalTypes::CUtlSymbolLarge m_sSourceEntName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hSoundSource = 0x578; // server::CHandle< server::CBaseEntity > m_hSoundSource; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nSoundSourceEntIndex = 0x57c; // GlobalTypes::CEntityIndex m_nSoundSourceEntIndex; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSound = 0x568; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sSourceEntName = 0x570; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSoundSource = 0x578; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nSoundSourceEntIndex = 0x57c; // GlobalTypes::CEntityIndex  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

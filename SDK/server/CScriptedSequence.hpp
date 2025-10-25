@@ -22,6 +22,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseAnimGraph;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -87,16 +92,16 @@ namespace CS2 {
 			bool m_sequenceStarted; // 0x591 | Schema_Builtin | Size: 0x1
 			bool m_bPositionRelativeToOtherEntity; // 0x592 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			// server::CHandle< server::CBaseEntity > m_hTargetEnt; // 0x594 | Schema_Atomic | Size: 0x4
-			char  m_hTargetEnt[0x4]; // 0x594 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CScriptedSequence > m_hNextCine; // 0x598 | Schema_Atomic | Size: 0x4
-			char  m_hNextCine[0x4]; // 0x598 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEnt; // 0x594 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetEnt[0x4]; // 0x594 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CScriptedSequence> m_hNextCine; // 0x598 | Schema_Atomic | Size: 0x4
+			// char  m_hNextCine[0x4]; // 0x598 | Schema_Atomic | Size: 0x4
 			bool m_bThinking; // 0x59c | Schema_Builtin | Size: 0x1
 			bool m_bInitiatedSelfDelete; // 0x59d | Schema_Builtin | Size: 0x1
 			bool m_bIsTeleportingDueToMoveTo; // 0x59e | Schema_Builtin | Size: 0x1
 			bool m_bAllowCustomInterruptConditions; // 0x59f | Schema_Builtin | Size: 0x1
-			// server::CHandle< server::CBaseAnimGraph > m_hForcedTarget; // 0x5a0 | Schema_Atomic | Size: 0x4
-			char  m_hForcedTarget[0x4]; // 0x5a0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseAnimGraph> m_hForcedTarget; // 0x5a0 | Schema_Atomic | Size: 0x4
+			// char  m_hForcedTarget[0x4]; // 0x5a0 | Schema_Atomic | Size: 0x4
 			bool m_bDontCancelOtherSequences; // 0x5a4 | Schema_Builtin | Size: 0x1
 			bool m_bForceSynch; // 0x5a5 | Schema_Builtin | Size: 0x1
 			bool m_bPreventUpdateYawOnFinish; // 0x5a6 | Schema_Builtin | Size: 0x1
@@ -111,8 +116,8 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnCancelFailedSequence; // 0x678 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnScriptEvent[8]; // 0x6a0 | Schema_FixedArray | Size: 0xa00
 			GlobalTypes::CTransform m_matOtherToMain; // 0x7e0 | Schema_Atomic | Size: 0x20
-			// server::CHandle< server::CBaseEntity > m_hInteractionMainEntity; // 0x800 | Schema_Atomic | Size: 0x4
-			char  m_hInteractionMainEntity[0x4]; // 0x800 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hInteractionMainEntity; // 0x800 | Schema_Atomic | Size: 0x4
+			// char  m_hInteractionMainEntity[0x4]; // 0x800 | Schema_Atomic | Size: 0x4
 			int32_t m_iPlayerDeathBehavior; // 0x804 | Schema_Builtin | Size: 0x4
 			bool m_bSkipFadeIn; // 0x808 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding

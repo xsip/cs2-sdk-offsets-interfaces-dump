@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x28
 			namespace CTakeDamageResult /**/ {
-				constexpr std::ptrdiff_t m_pOriginatingInfo = 0x0; // client::CTakeDamageInfo* m_pOriginatingInfo; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pOriginatingInfo = 0x0; // client::CTakeDamageInfo**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_nHealthLost = 0x8; // int32_t m_nHealthLost; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHealthBefore = 0xc; // int32_t m_nHealthBefore; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDamageDealt = 0x10; // int32_t m_nDamageDealt; |  0x10 | Schema_Builtin | Size: 0x4

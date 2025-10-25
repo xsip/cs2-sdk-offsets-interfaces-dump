@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x60
 			namespace CPulse_RegisterInfo /**/ {
-				constexpr std::ptrdiff_t m_nReg = 0x0; // pulse_runtime_lib::PulseRuntimeRegisterIndex_t m_nReg; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_Type = 0x8; // GlobalTypes::CPulseValueFullType m_Type; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OriginName = 0x20; // GlobalTypes::CKV3MemberNameWithStorage m_OriginName; |  Schema_Atomic | Size: 0x38
+				constexpr std::ptrdiff_t m_nReg = 0x0; // pulse_runtime_lib::PulseRuntimeRegisterIndex_t  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_Type = 0x8; // GlobalTypes::CPulseValueFullType  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OriginName = 0x20; // GlobalTypes::CKV3MemberNameWithStorage  | Schema_Atomic | Size: 0x38
 				constexpr std::ptrdiff_t m_nWrittenByInstruction = 0x58; // int32_t m_nWrittenByInstruction; |  0x58 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nLastReadByInstruction = 0x5c; // int32_t m_nLastReadByInstruction; |  0x5c | Schema_Builtin | Size: 0x4
 			}

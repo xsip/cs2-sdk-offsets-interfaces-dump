@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_RenderPoints : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x220 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x220 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x220 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::particles::C_OP_RenderPoints, m_hMaterial) == 0x220, "m_hMaterial in C_OP_RenderPoints should be at offset 0x220");

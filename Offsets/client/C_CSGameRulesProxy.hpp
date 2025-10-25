@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x600
 			namespace C_CSGameRulesProxy /*: public CS2::client::C_GameRulesProxy*/ {
-				constexpr std::ptrdiff_t m_pGameRules = 0x5f8; // client::C_CSGameRules* m_pGameRules; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pGameRules = 0x5f8; // client::C_CSGameRules**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

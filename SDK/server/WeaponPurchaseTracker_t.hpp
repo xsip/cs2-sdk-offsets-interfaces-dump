@@ -21,7 +21,7 @@ namespace CS2 {
 		class WeaponPurchaseTracker_t  {
 		public:
 			S2_PAD(0x8);
-			// server::CUtlVectorEmbeddedNetworkVar< server::WeaponPurchaseCount_t > m_weaponPurchases; // 0x8 | Schema_Atomic | Size: 0x68
+			// server::CUtlVectorEmbeddedNetworkVar<server::WeaponPurchaseCount_t> m_weaponPurchases; // 0x8 | Schema_Atomic | Size: 0x68
 			char  m_weaponPurchases[0x68]; // 0x8 | Schema_Atomic | Size: 0x68
 		};
 		static_assert(offsetof(CS2::server::WeaponPurchaseTracker_t, m_weaponPurchases) == 0x8, "m_weaponPurchases in WeaponPurchaseTracker_t should be at offset 0x8");

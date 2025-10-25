@@ -29,11 +29,11 @@ namespace CS2 {
 			bool m_bEnabled; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			compositematerialslib::CompositeMaterialInputContainerSourceType_t m_nCompositeMaterialInputContainerSourceType; // 0x4 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeIMaterial2 > > m_strSpecificContainerMaterial; // 0x8 | Schema_Atomic | Size: 0xe0
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIMaterial2>> m_strSpecificContainerMaterial; // 0x8 | Schema_Atomic | Size: 0xe0
 			char  m_strSpecificContainerMaterial[0xe0]; // 0x8 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::CUtlString m_strAttrName; // 0xe8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strAlias; // 0xf0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialInputLooseVariable_t > m_vecLooseVariables; // 0xf8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterialInputLooseVariable_t> m_vecLooseVariables; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char  m_vecLooseVariables[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_strAttrNameForVar; // 0x110 | Schema_Atomic | Size: 0x8
 			bool m_bExposeExternally; // 0x118 | Schema_Builtin | Size: 0x1

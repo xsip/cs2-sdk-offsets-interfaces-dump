@@ -28,11 +28,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_szLayoutFileName; // 0x608 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_RenderAttrName; // 0x610 | Schema_Atomic | Size: 0x8
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseModelEntity > > m_TargetEntities; // 0x618 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>> m_TargetEntities; // 0x618 | Schema_Atomic | Size: 0x18
 			char  m_TargetEntities[0x18]; // 0x618 | Schema_Atomic | Size: 0x18
 			int32_t m_nTargetChangeCount; // 0x630 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x638 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x638 | Schema_Atomic | Size: 0x18
 			char  m_vecCSSClasses[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x160);
 			bool m_bCheckCSSClasses; // 0x7b0 | Schema_Builtin | Size: 0x1

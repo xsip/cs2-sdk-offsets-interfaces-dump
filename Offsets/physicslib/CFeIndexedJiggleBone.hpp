@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CFeIndexedJiggleBone /**/ {
 				constexpr std::ptrdiff_t m_nNode = 0x0; // uint32_t m_nNode; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nJiggleParent = 0x4; // uint32_t m_nJiggleParent; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_jiggleBone = 0x8; // physicslib::CFeJiggleBone m_jiggleBone; |  Schema_DeclaredClass | Size: 0x9c
+				constexpr std::ptrdiff_t m_jiggleBone = 0x8; // physicslib::CFeJiggleBone  | Schema_DeclaredClass | Size: 0x9c
 			}
 		}
 	}

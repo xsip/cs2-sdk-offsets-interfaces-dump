@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x170
 			namespace CSmartPropElement_SmartProp /*: public CS2::smartprops::CSmartPropElement*/ {
-				constexpr std::ptrdiff_t m_sSmartProp = 0x88; // GlobalTypes::CResourceNameTyped< GlobalTypes::CWeakHandle< InfoForResourceTypeCSmartProp > > m_sSmartProp; |  Schema_Atomic | Size: 0xe0
+				constexpr std::ptrdiff_t m_sSmartProp = 0x88; // GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCSmartProp>>  | Schema_Atomic | Size: 0xe0
 				constexpr std::ptrdiff_t m_bLocalEvaluationState = 0x168; // bool m_bLocalEvaluationState; |  0x168 | Schema_Builtin | Size: 0x1
 			}
 		}

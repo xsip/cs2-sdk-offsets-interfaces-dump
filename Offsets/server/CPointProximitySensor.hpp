@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x520
 			namespace CPointProximitySensor /*: public CS2::server::CPointEntity*/ {
 				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hTargetEntity = 0x4f4; // server::CHandle< server::CBaseEntity > m_hTargetEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_Distance = 0x4f8; // GlobalTypes::CEntityOutputTemplate< float32 > m_Distance; |  Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_hTargetEntity = 0x4f4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Distance = 0x4f8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
 			}
 		}
 	}

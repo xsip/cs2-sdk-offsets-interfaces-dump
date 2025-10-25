@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x8A0
 			namespace CFuncPlatRot /*: public CS2::server::CFuncPlat*/ {
-				constexpr std::ptrdiff_t m_end = 0x888; // GlobalTypes::QAngle m_end; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_start = 0x894; // GlobalTypes::QAngle m_start; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_end = 0x888; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_start = 0x894; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

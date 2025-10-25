@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x600
 			namespace CPathSimple /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_CPathQueryComponent = 0x500; // server::CPathQueryComponent m_CPathQueryComponent; |  Schema_DeclaredClass | Size: 0xa0
-				constexpr std::ptrdiff_t m_pathString = 0x5f0; // GlobalTypes::CUtlString m_pathString; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_CPathQueryComponent = 0x500; // server::CPathQueryComponent  | Schema_DeclaredClass | Size: 0xa0
+				constexpr std::ptrdiff_t m_pathString = 0x5f0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bClosedLoop = 0x5f8; // bool m_bClosedLoop; |  0x5f8 | Schema_Builtin | Size: 0x1
 			}
 		}

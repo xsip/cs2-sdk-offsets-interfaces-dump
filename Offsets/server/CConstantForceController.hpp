@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x40
 			namespace CConstantForceController /**/ {
-				constexpr std::ptrdiff_t m_linear = 0xc; // GlobalTypes::Vector m_linear; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angular = 0x18; // GlobalTypes::RotationVector m_angular; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_linearSave = 0x24; // GlobalTypes::Vector m_linearSave; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angularSave = 0x30; // GlobalTypes::RotationVector m_angularSave; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_linear = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angular = 0x18; // GlobalTypes::RotationVector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_linearSave = 0x24; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angularSave = 0x30; // GlobalTypes::RotationVector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

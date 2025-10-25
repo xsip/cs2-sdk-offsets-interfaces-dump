@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xFC0
 			namespace C_INIT_PositionOffset /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_OffsetMin = 0x1d8; // particleslib::CPerParticleVecInput m_OffsetMin; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_OffsetMax = 0x890; // particleslib::CPerParticleVecInput m_OffsetMax; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_TransformInput = 0xf48; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_OffsetMin = 0x1d8; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_OffsetMax = 0x890; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_TransformInput = 0xf48; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
 				constexpr std::ptrdiff_t m_bLocalCoords = 0xfb0; // bool m_bLocalCoords; |  0xfb0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bProportional = 0xfb1; // bool m_bProportional; |  0xfb1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_randomnessParameters = 0xfb4; // particles::CRandomNumberGeneratorParameters m_randomnessParameters; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_randomnessParameters = 0xfb4; // particles::CRandomNumberGeneratorParameters  | Schema_DeclaredClass | Size: 0x8
 			}
 		}
 	}

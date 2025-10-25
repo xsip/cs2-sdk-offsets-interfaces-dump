@@ -19,6 +19,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+		class CBasePlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -39,8 +45,8 @@ namespace CS2 {
 			float32 m_flPressureDelay; // 0xbbc | Schema_Builtin | Size: 0x4
 			float32 m_flDefBurstScale; // 0xbc0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vDefBurstOffset; // 0xbc4 | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hBreaker; // 0xbd0 | Schema_Atomic | Size: 0x4
-			char  m_hBreaker[0x4]; // 0xbd0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hBreaker; // 0xbd0 | Schema_Atomic | Size: 0x4
+			// char  m_hBreaker[0x4]; // 0xbd0 | Schema_Atomic | Size: 0x4
 			client::PerformanceMode_t m_PerformanceMode; // 0xbd4 | Schema_DeclaredEnum | Size: 0x4
 			entity2::GameTime_t m_flPreventDamageBeforeTime; // 0xbd8 | Schema_DeclaredClass | Size: 0x4
 			client::BreakableContentsType_t m_BreakableContentsType; // 0xbdc | Schema_DeclaredEnum | Size: 0x4
@@ -57,12 +63,12 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_explosionCustomEffect; // 0xc10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_explosionCustomSound; // 0xc18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_explosionModifier; // 0xc20 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBasePlayerPawn > m_hPhysicsAttacker; // 0xc28 | Schema_Atomic | Size: 0x4
-			char  m_hPhysicsAttacker[0x4]; // 0xc28 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0xc28 | Schema_Atomic | Size: 0x4
+			// char  m_hPhysicsAttacker[0x4]; // 0xc28 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xc2c | Schema_DeclaredClass | Size: 0x4
 			float32 m_flDefaultFadeScale; // 0xc30 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hLastAttacker; // 0xc34 | Schema_Atomic | Size: 0x4
-			char  m_hLastAttacker[0x4]; // 0xc34 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLastAttacker; // 0xc34 | Schema_Atomic | Size: 0x4
+			// char  m_hLastAttacker[0x4]; // 0xc34 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszPuntSound; // 0xc38 | Schema_Atomic | Size: 0x8
 			bool m_bUsePuntSound; // 0xc40 | Schema_Builtin | Size: 0x1
 			bool m_bOriginalBlockLOS; // 0xc41 | Schema_Builtin | Size: 0x1

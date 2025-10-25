@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x6C0
 			namespace VecInputMaterialVariable_t /**/ {
-				constexpr std::ptrdiff_t m_strVariable = 0x0; // GlobalTypes::CUtlString m_strVariable; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecInput = 0x8; // particleslib::CParticleCollectionVecInput m_vecInput; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_strVariable = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecInput = 0x8; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

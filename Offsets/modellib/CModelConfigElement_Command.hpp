@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x60
 			namespace CModelConfigElement_Command /*: public CS2::modellib::CModelConfigElement*/ {
-				constexpr std::ptrdiff_t m_Command = 0x48; // GlobalTypes::CUtlString m_Command; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Args = 0x50; // GlobalTypes::KeyValues3 m_Args; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Command = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Args = 0x50; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

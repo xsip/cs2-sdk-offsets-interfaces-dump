@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x30
 			namespace FootPinningPoseOpFixedData_t /**/ {
-				constexpr std::ptrdiff_t m_footInfo = 0x0; // GlobalTypes::CUtlVector< animgraphlib::FootFixedData_t > m_footInfo; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_footInfo = 0x0; // GlobalTypes::CUtlVector<animgraphlib::FootFixedData_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flBlendTime = 0x18; // float32 m_flBlendTime; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLockBreakDistance = 0x1c; // float32 m_flLockBreakDistance; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxLegTwist = 0x20; // float32 m_flMaxLegTwist; |  0x20 | Schema_Builtin | Size: 0x4

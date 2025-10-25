@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x528
 			namespace CEnvWindVolume /*: public CS2::server::CBaseEntity*/ {
 				constexpr std::ptrdiff_t m_bActive = 0x4f0; // bool m_bActive; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vBoxMins = 0x4f4; // GlobalTypes::Vector m_vBoxMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vBoxMaxs = 0x500; // GlobalTypes::Vector m_vBoxMaxs; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMins = 0x4f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMaxs = 0x500; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bStartDisabled = 0x50c; // bool m_bStartDisabled; |  0x50c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nShape = 0x510; // int32_t m_nShape; |  0x510 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fWindSpeedMultiplier = 0x514; // float32 m_fWindSpeedMultiplier; |  0x514 | Schema_Builtin | Size: 0x4

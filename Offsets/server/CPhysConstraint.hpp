@@ -10,19 +10,19 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x560
 			namespace CPhysConstraint /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_nameAttach1 = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_nameAttach1; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAttach2 = 0x500; // GlobalTypes::CUtlSymbolLarge m_nameAttach2; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hAttach1 = 0x508; // server::CHandle< server::CBaseEntity > m_hAttach1; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hAttach2 = 0x50c; // server::CHandle< server::CBaseEntity > m_hAttach2; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nameAttachment1 = 0x510; // GlobalTypes::CUtlSymbolLarge m_nameAttachment1; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAttachment2 = 0x518; // GlobalTypes::CUtlSymbolLarge m_nameAttachment2; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_breakSound = 0x520; // GlobalTypes::CUtlSymbolLarge m_breakSound; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttach1 = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttach2 = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hAttach1 = 0x508; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hAttach2 = 0x50c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nameAttachment1 = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttachment2 = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_breakSound = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_forceLimit = 0x528; // float32 m_forceLimit; |  0x528 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_torqueLimit = 0x52c; // float32 m_torqueLimit; |  0x52c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_minTeleportDistance = 0x530; // float32 m_minTeleportDistance; |  0x530 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSnapObjectPositions = 0x534; // bool m_bSnapObjectPositions; |  0x534 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTreatEntity1AsInfiniteMass = 0x535; // bool m_bTreatEntity1AsInfiniteMass; |  0x535 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnBreak = 0x538; // entity2::CEntityIOOutput m_OnBreak; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnBreak = 0x538; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

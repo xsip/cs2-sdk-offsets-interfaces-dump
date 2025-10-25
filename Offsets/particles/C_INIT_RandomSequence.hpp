@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nSequenceMax = 0x1dc; // int32_t m_nSequenceMax; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bShuffle = 0x1e0; // bool m_bShuffle; |  0x1e0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLinear = 0x1e1; // bool m_bLinear; |  0x1e1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_WeightedList = 0x1e8; // GlobalTypes::CUtlVector< particles::SequenceWeightedList_t > m_WeightedList; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_WeightedList = 0x1e8; // GlobalTypes::CUtlVector<particles::SequenceWeightedList_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

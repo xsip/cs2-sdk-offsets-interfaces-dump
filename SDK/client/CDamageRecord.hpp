@@ -28,13 +28,13 @@ namespace CS2 {
 		class CDamageRecord  {
 		public:
 			S2_PAD(0x30);
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_PlayerDamager; // 0x30 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_PlayerDamager; // 0x30 | Schema_Atomic | Size: 0x4
 			// char  m_PlayerDamager[0x4]; // 0x30 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_PlayerRecipient; // 0x34 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_PlayerRecipient; // 0x34 | Schema_Atomic | Size: 0x4
 			// char  m_PlayerRecipient[0x4]; // 0x34 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle< client::CCSPlayerController > m_hPlayerControllerDamager; // 0x38 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CCSPlayerController> m_hPlayerControllerDamager; // 0x38 | Schema_Atomic | Size: 0x4
 			// char  m_hPlayerControllerDamager[0x4]; // 0x38 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle< client::CCSPlayerController > m_hPlayerControllerRecipient; // 0x3c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CCSPlayerController> m_hPlayerControllerRecipient; // 0x3c | Schema_Atomic | Size: 0x4
 			// char  m_hPlayerControllerRecipient[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlString m_szPlayerDamagerName; // 0x40 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_szPlayerRecipientName; // 0x48 | Schema_Atomic | Size: 0x8

@@ -50,7 +50,7 @@ namespace CS2 {
 			uint32_t m_unOrientation; // 0x10cc | Schema_Builtin | Size: 0x4
 			bool m_bAllowInteractionFromAllSceneWorlds; // 0x10d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x10d8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x10d8 | Schema_Atomic | Size: 0x18
 			char  m_vecCSSClasses[0x18]; // 0x10d8 | Schema_Atomic | Size: 0x18
 			bool m_bOpaque; // 0x10f0 | Schema_Builtin | Size: 0x1
 			bool m_bNoDepth; // 0x10f1 | Schema_Builtin | Size: 0x1

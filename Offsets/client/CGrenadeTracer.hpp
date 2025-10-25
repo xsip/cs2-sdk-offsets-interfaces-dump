@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x1390
 			namespace CGrenadeTracer /*: public CS2::client::C_BaseModelEntity*/ {
 				constexpr std::ptrdiff_t m_flTracerDuration = 0xec8; // float32 m_flTracerDuration; |  0xec8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nType = 0xecc; // client::GrenadeType_t m_nType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nType = 0xecc; // client::GrenadeType_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

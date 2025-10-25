@@ -23,11 +23,11 @@ namespace CS2 {
 	namespace particles {
 		class C_OP_CreateParticleSystemRenderer : public CS2::particles::CParticleFunctionRenderer {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hEffect; // 0x220 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hEffect; // 0x220 | Schema_Atomic | Size: 0x8
 			char  m_hEffect[0x8]; // 0x220 | Schema_Atomic | Size: 0x8
 			particles::EventTypeSelection_t m_nEventType; // 0x228 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlLeanVector< particles::CPAssignment_t > m_vecCPs; // 0x230 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<particles::CPAssignment_t> m_vecCPs; // 0x230 | Schema_Atomic | Size: 0x10
 			char  m_vecCPs[0x10]; // 0x230 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlString m_szParticleConfig; // 0x240 | Schema_Atomic | Size: 0x8
 			particleslib::CPerParticleVecInput m_AggregationPos; // 0x248 | Schema_DeclaredClass | Size: 0x6b8

@@ -11,9 +11,9 @@ namespace CS2 {
 			// Class size: 0xEE0
 			namespace C_BaseClientUIEntity /*: public CS2::client::C_BaseModelEntity*/ {
 				constexpr std::ptrdiff_t m_bEnabled = 0xeb8; // bool m_bEnabled; |  0xeb8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_DialogXMLName = 0xec0; // GlobalTypes::CUtlSymbolLarge m_DialogXMLName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PanelClassName = 0xec8; // GlobalTypes::CUtlSymbolLarge m_PanelClassName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PanelID = 0xed0; // GlobalTypes::CUtlSymbolLarge m_PanelID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_DialogXMLName = 0xec0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PanelClassName = 0xec8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PanelID = 0xed0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

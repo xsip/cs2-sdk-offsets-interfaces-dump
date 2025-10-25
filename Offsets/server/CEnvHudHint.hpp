@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x4F8
 			namespace CEnvHudHint /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_iszMessage = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszMessage; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszMessage = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

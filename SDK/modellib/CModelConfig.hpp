@@ -26,7 +26,7 @@ namespace CS2 {
 		class CModelConfig  {
 		public:
 			GlobalTypes::CUtlString m_ConfigName; // 0x0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< modellib::CModelConfigElement* > m_Elements; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::CModelConfigElement*> m_Elements; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_Elements[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			bool m_bTopLevel; // 0x20 | Schema_Builtin | Size: 0x1
 			bool m_bActiveInEditorByDefault; // 0x21 | Schema_Builtin | Size: 0x1

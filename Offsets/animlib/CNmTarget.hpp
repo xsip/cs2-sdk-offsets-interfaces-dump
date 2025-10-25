@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x30
 			namespace CNmTarget /**/ {
-				constexpr std::ptrdiff_t m_transform = 0x0; // GlobalTypes::CTransform m_transform; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_boneID = 0x20; // GlobalTypes::CGlobalSymbol m_boneID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_transform = 0x0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_boneID = 0x20; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bIsBoneTarget = 0x28; // bool m_bIsBoneTarget; |  0x28 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsUsingBoneSpaceOffsets = 0x29; // bool m_bIsUsingBoneSpaceOffsets; |  0x29 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasOffsets = 0x2a; // bool m_bHasOffsets; |  0x2a | Schema_Builtin | Size: 0x1

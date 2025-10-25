@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace compositematerialslib {
 			// Class size: 0x20
 			namespace CompositeMaterialMatchFilter_t /**/ {
-				constexpr std::ptrdiff_t m_nCompositeMaterialMatchFilterType = 0x0; // compositematerialslib::CompositeMaterialMatchFilterType_t m_nCompositeMaterialMatchFilterType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_strMatchFilter = 0x8; // GlobalTypes::CUtlString m_strMatchFilter; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strMatchValue = 0x10; // GlobalTypes::CUtlString m_strMatchValue; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nCompositeMaterialMatchFilterType = 0x0; // compositematerialslib::CompositeMaterialMatchFilterType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_strMatchFilter = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMatchValue = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bPassWhenTrue = 0x18; // bool m_bPassWhenTrue; |  0x18 | Schema_Builtin | Size: 0x1
 			}
 		}

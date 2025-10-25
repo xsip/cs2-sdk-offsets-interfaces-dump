@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xA58
 			namespace CScriptTriggerHurt /*: public CS2::server::CTriggerHurt*/ {
-				constexpr std::ptrdiff_t m_vExtent = 0xa48; // GlobalTypes::Vector m_vExtent; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vExtent = 0xa48; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

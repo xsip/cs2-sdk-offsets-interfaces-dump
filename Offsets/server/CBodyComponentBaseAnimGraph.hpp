@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0xCC0
 			namespace CBodyComponentBaseAnimGraph /*: public CS2::server::CBodyComponentSkeletonInstance*/ {
-				constexpr std::ptrdiff_t m_animationController = 0x510; // server::CBaseAnimGraphController m_animationController; |  Schema_DeclaredClass | Size: 0x7b0
+				constexpr std::ptrdiff_t m_animationController = 0x510; // server::CBaseAnimGraphController  | Schema_DeclaredClass | Size: 0x7b0
 			}
 		}
 	}

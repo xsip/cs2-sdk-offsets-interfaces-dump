@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x40
 			namespace C_GameRules /**/ {
-				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer __m_pChainEntity; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_nTotalPausedTicks = 0x30; // int32_t m_nTotalPausedTicks; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPauseStartTick = 0x34; // int32_t m_nPauseStartTick; |  0x34 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bGamePaused = 0x38; // bool m_bGamePaused; |  0x38 | Schema_Builtin | Size: 0x1

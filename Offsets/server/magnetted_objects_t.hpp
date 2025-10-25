@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x10
 			namespace magnetted_objects_t /**/ {
-				constexpr std::ptrdiff_t hEntity = 0x8; // server::CHandle< server::CBaseEntity > hEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t hEntity = 0x8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

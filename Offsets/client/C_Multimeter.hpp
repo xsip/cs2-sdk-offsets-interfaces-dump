@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1168
 			namespace C_Multimeter /*: public CS2::client::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_hTargetC4 = 0x1160; // client::CHandle< client::C_PlantedC4 > m_hTargetC4; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTargetC4 = 0x1160; // GlobalTypes::CHandle<client::C_PlantedC4>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

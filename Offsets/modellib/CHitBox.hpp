@@ -10,18 +10,18 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x70
 			namespace CHitBox /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sSurfaceProperty = 0x8; // GlobalTypes::CUtlString m_sSurfaceProperty; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sBoneName = 0x10; // GlobalTypes::CUtlString m_sBoneName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vMinBounds = 0x18; // GlobalTypes::Vector m_vMinBounds; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxBounds = 0x24; // GlobalTypes::Vector m_vMaxBounds; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sSurfaceProperty = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sBoneName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vMinBounds = 0x18; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxBounds = 0x24; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flShapeRadius = 0x30; // float32 m_flShapeRadius; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nBoneNameHash = 0x34; // uint32_t m_nBoneNameHash; |  0x34 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGroupId = 0x38; // int32_t m_nGroupId; |  0x38 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nShapeType = 0x3c; // uint8_t m_nShapeType; |  0x3c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTranslationOnly = 0x3d; // bool m_bTranslationOnly; |  0x3d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_CRC = 0x40; // uint32_t m_CRC; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_cRenderColor = 0x44; // GlobalTypes::Color m_cRenderColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_cRenderColor = 0x44; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nHitBoxIndex = 0x48; // uint16_t m_nHitBoxIndex; |  0x48 | Schema_Builtin | Size: 0x2
 			}
 		}

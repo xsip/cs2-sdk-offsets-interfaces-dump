@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x4B8
 			namespace C_OP_PinRopeSegmentParticleToParent /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nParticleSelection = 0x1d0; // particles::ParticleSelection_t m_nParticleSelection; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nParticleNumber = 0x1d8; // particleslib::CParticleCollectionFloatInput m_nParticleNumber; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flInterpolation = 0x348; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nParticleSelection = 0x1d0; // particles::ParticleSelection_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nParticleNumber = 0x1d8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInterpolation = 0x348; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

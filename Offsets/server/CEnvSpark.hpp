@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nMagnitude = 0x4f4; // int32_t m_nMagnitude; |  0x4f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTrailLength = 0x4f8; // int32_t m_nTrailLength; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nType = 0x4fc; // int32_t m_nType; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnSpark = 0x500; // entity2::CEntityIOOutput m_OnSpark; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnSpark = 0x500; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

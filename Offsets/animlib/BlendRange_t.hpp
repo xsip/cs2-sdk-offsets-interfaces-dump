@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace BlendRange_t /**/ {
 				constexpr std::ptrdiff_t m_nInputIdx0 = 0x0; // int16_t m_nInputIdx0; |  0x0 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nInputIdx1 = 0x2; // int16_t m_nInputIdx1; |  0x2 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_parameterValueRange = 0x4; // GlobalTypes::Range_t m_parameterValueRange; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_parameterValueRange = 0x4; // GlobalTypes::Range_t  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

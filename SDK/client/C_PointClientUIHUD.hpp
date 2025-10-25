@@ -37,7 +37,7 @@ namespace CS2 {
 			uint32_t m_unOrientation; // 0x1084 | Schema_Builtin | Size: 0x4
 			bool m_bAllowInteractionFromAllSceneWorlds; // 0x1088 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x1090 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x1090 | Schema_Atomic | Size: 0x18
 			char  m_vecCSSClasses[0x18]; // 0x1090 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bCheckCSSClasses) == 0xEE8, "m_bCheckCSSClasses in C_PointClientUIHUD should be at offset 0xEE8");

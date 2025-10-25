@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x548
 			namespace CPathTrack /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_pnext = 0x4f0; // server::CPathTrack* m_pnext; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pprevious = 0x4f8; // server::CPathTrack* m_pprevious; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_paltpath = 0x500; // server::CPathTrack* m_paltpath; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pnext = 0x4f0; // server::CPathTrack**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pprevious = 0x4f8; // server::CPathTrack**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_paltpath = 0x500; // server::CPathTrack**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_flRadius = 0x508; // float32 m_flRadius; |  0x508 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_length = 0x50c; // float32 m_length; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_altName = 0x510; // GlobalTypes::CUtlSymbolLarge m_altName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_altName = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nIterVal = 0x518; // int32_t m_nIterVal; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_eOrientationType = 0x51c; // server::TrackOrientationType_t m_eOrientationType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_OnPass = 0x520; // entity2::CEntityIOOutput m_OnPass; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_eOrientationType = 0x51c; // server::TrackOrientationType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OnPass = 0x520; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

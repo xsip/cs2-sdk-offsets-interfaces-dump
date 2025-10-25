@@ -25,7 +25,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::PulseSymbol_t m_MethodName; // 0x48 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t m_GameBlackboard; // 0x58 | Schema_Atomic | Size: 0x10
-			// GlobalTypes::CUtlLeanVector< pulse_runtime_lib::CPulseRuntimeMethodArg > m_ExpectedArgs; // 0x68 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg> m_ExpectedArgs; // 0x68 | Schema_Atomic | Size: 0x10
 			char  m_ExpectedArgs[0x10]; // 0x68 | Schema_Atomic | Size: 0x10
 			pulse_runtime_lib::PulseMethodCallMode_t m_nAsyncCallMode; // 0x78 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);

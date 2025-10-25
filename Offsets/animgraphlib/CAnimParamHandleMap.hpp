@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace CAnimParamHandleMap /**/ {
-				constexpr std::ptrdiff_t m_list = 0x0; // GlobalTypes::CUtlHashtable< uint16, int16 > m_list; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_list = 0x0; // GlobalTypes::CUtlHashtable  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x48
 			namespace PhysicsRagdollPose_t /**/ {
-				constexpr std::ptrdiff_t m_Transforms = 0x8; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CTransform > m_Transforms; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hOwner = 0x20; // client::CHandle< client::C_BaseEntity > m_hOwner; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Transforms = 0x8; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CTransform>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hOwner = 0x20; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bSetFromDebugHistory = 0x24; // bool m_bSetFromDebugHistory; |  0x24 | Schema_Builtin | Size: 0x1
 			}
 		}

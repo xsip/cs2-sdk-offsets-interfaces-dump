@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x9F0
 			namespace CTriggerDetectExplosion /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_OnDetectedExplosion = 0x9c8; // entity2::CEntityIOOutput m_OnDetectedExplosion; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnDetectedExplosion = 0x9c8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

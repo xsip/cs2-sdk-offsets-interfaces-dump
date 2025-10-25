@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x40
 			namespace CCSGameModeRules_Deathmatch /*: public CS2::client::CCSGameModeRules*/ {
-				constexpr std::ptrdiff_t m_flDMBonusStartTime = 0x30; // entity2::GameTime_t m_flDMBonusStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDMBonusStartTime = 0x30; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flDMBonusTimeLength = 0x34; // float32 m_flDMBonusTimeLength; |  0x34 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sDMBonusWeapon = 0x38; // GlobalTypes::CUtlString m_sDMBonusWeapon; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sDMBonusWeapon = 0x38; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

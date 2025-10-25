@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x888
 			namespace CFuncPlat /*: public CS2::server::CBasePlatTrain*/ {
-				constexpr std::ptrdiff_t m_sNoise = 0x880; // GlobalTypes::CUtlSymbolLarge m_sNoise; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sNoise = 0x880; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

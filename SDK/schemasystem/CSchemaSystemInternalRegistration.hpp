@@ -43,7 +43,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			GlobalTypes::CUtlStringToken m_stringToken; // 0x144 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlStringTokenWithStorage m_stringTokenWithStorage; // 0x148 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CResourceArray< GlobalTypes::CResourcePointer< CResourceString > > m_ResourceTypes; // 0x160 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CResourceArray<GlobalTypes::CResourcePointer<GlobalTypes::CResourceString>> m_ResourceTypes; // 0x160 | Schema_Atomic | Size: 0x8
 			char  m_ResourceTypes[0x8]; // 0x160 | Schema_Atomic | Size: 0x8
 			GlobalTypes::KeyValues3 m_KV3; // 0x168 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8); // End padding

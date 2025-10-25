@@ -30,12 +30,12 @@ namespace CS2 {
 			S2_PAD(0x8);
 			// GlobalTypes::C_NetworkUtlVectorBase< bool > m_ragEnabled; // 0x1160 | Schema_Atomic | Size: 0x18
 			char  m_ragEnabled[0x18]; // 0x1160 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_ragPos; // 0x1178 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_ragPos; // 0x1178 | Schema_Atomic | Size: 0x18
 			char  m_ragPos[0x18]; // 0x1178 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::QAngle > m_ragAngles; // 0x1190 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::QAngle> m_ragAngles; // 0x1190 | Schema_Atomic | Size: 0x18
 			char  m_ragAngles[0x18]; // 0x1190 | Schema_Atomic | Size: 0x18
 			float32 m_flBlendWeight; // 0x11a8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hRagdollSource; // 0x11ac | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hRagdollSource; // 0x11ac | Schema_Atomic | Size: 0x4
 			// char  m_hRagdollSource[0x4]; // 0x11ac | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_iEyeAttachment; // 0x11b0 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);

@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_Rate = 0x1d0; // float32 m_Rate; |  0x1d0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStartTime = 0x1d4; // float32 m_flStartTime; |  0x1d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEndTime = 0x1d8; // float32 m_flEndTime; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nField = 0x200; // particles::ParticleAttributeIndex_t m_nField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nField = 0x200; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

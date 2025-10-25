@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x2F8
 			namespace CAttributeContainer /*: public CS2::server::CAttributeManager*/ {
-				constexpr std::ptrdiff_t m_Item = 0x50; // server::CEconItemView m_Item; |  Schema_DeclaredClass | Size: 0x2a8
+				constexpr std::ptrdiff_t m_Item = 0x50; // server::CEconItemView  | Schema_DeclaredClass | Size: 0x2a8
 			}
 		}
 	}

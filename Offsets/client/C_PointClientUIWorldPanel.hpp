@@ -13,8 +13,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bForceRecreateNextUpdate = 0xee8; // bool m_bForceRecreateNextUpdate; |  0xee8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bMoveViewToPlayerNextThink = 0xee9; // bool m_bMoveViewToPlayerNextThink; |  0xee9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCheckCSSClasses = 0xeea; // bool m_bCheckCSSClasses; |  0xeea | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_anchorDeltaTransform = 0xef0; // GlobalTypes::CTransform m_anchorDeltaTransform; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_pOffScreenIndicator = 0x1080; // client::CPointOffScreenIndicatorUi* m_pOffScreenIndicator; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_anchorDeltaTransform = 0xef0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_pOffScreenIndicator = 0x1080; // client::CPointOffScreenIndicatorUi**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_bIgnoreInput = 0x10a8; // bool m_bIgnoreInput; |  0x10a8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLit = 0x10a9; // bool m_bLit; |  0x10a9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bFollowPlayerAcrossTeleport = 0x10aa; // bool m_bFollowPlayerAcrossTeleport; |  0x10aa | Schema_Builtin | Size: 0x1
@@ -28,7 +28,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_unVerticalAlign = 0x10c8; // uint32_t m_unVerticalAlign; |  0x10c8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unOrientation = 0x10cc; // uint32_t m_unOrientation; |  0x10cc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAllowInteractionFromAllSceneWorlds = 0x10d0; // bool m_bAllowInteractionFromAllSceneWorlds; |  0x10d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecCSSClasses = 0x10d8; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCSSClasses = 0x10d8; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bOpaque = 0x10f0; // bool m_bOpaque; |  0x10f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bNoDepth = 0x10f1; // bool m_bNoDepth; |  0x10f1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bVisibleWhenParentNoDraw = 0x10f2; // bool m_bVisibleWhenParentNoDraw; |  0x10f2 | Schema_Builtin | Size: 0x1

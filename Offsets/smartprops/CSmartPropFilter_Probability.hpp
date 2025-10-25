@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x90
 			namespace CSmartPropFilter_Probability /*: public CS2::smartprops::CSmartPropFilter*/ {
-				constexpr std::ptrdiff_t m_flProbability = 0x50; // GlobalTypes::CSmartPropAttributeFloat m_flProbability; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flProbability = 0x50; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

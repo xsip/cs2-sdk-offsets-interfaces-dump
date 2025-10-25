@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x20
 			namespace MaterialGroup_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_materials = 0x8; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeIMaterial2 > > m_materials; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_materials = 0x8; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

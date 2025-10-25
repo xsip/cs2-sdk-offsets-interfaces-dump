@@ -30,7 +30,7 @@ namespace CS2 {
 		class CSelectorUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::CAnimUpdateNodeRef> m_children; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int8 > m_tags; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18

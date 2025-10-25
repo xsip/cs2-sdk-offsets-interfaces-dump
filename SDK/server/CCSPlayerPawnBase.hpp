@@ -20,6 +20,7 @@
 namespace CS2 {
 	namespace server {
 		class CCSPlayer_PingServices;
+		class CCSPlayerController;
 	}
 }
 
@@ -47,8 +48,8 @@ namespace CS2 {
 			float32 m_flFlashMaxAlpha; // 0xec8 | Schema_Builtin | Size: 0x4
 			float32 m_flProgressBarStartTime; // 0xecc | Schema_Builtin | Size: 0x4
 			int32_t m_iProgressBarDuration; // 0xed0 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CCSPlayerController > m_hOriginalController; // 0xed4 | Schema_Atomic | Size: 0x4
-			char  m_hOriginalController[0x4]; // 0xed4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerController> m_hOriginalController; // 0xed4 | Schema_Atomic | Size: 0x4
+			// char  m_hOriginalController[0x4]; // 0xed4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_CTouchExpansionComponent) == 0xDA0, "m_CTouchExpansionComponent in CCSPlayerPawnBase should be at offset 0xDA0");

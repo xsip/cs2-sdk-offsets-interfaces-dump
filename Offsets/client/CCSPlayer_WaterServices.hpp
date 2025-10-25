@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x68
 			namespace CCSPlayer_WaterServices /*: public CS2::client::CPlayer_WaterServices*/ {
 				constexpr std::ptrdiff_t m_flWaterJumpTime = 0x40; // float32 m_flWaterJumpTime; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecWaterJumpVel = 0x44; // GlobalTypes::Vector m_vecWaterJumpVel; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecWaterJumpVel = 0x44; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flSwimSoundTime = 0x50; // float32 m_flSwimSoundTime; |  0x50 | Schema_Builtin | Size: 0x4
 			}
 		}

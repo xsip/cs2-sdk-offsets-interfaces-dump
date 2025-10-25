@@ -18,6 +18,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+		class CCSPlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -39,16 +45,16 @@ namespace CS2 {
 			server::ChickenActivity m_currentActivity; // 0x10d4 | Schema_DeclaredEnum | Size: 0x4
 			server::CountdownTimer m_activityTimer; // 0x10d8 | Schema_DeclaredClass | Size: 0x18
 			float32 m_turnRate; // 0x10f0 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_fleeFrom; // 0x10f4 | Schema_Atomic | Size: 0x4
-			char  m_fleeFrom[0x4]; // 0x10f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_fleeFrom; // 0x10f4 | Schema_Atomic | Size: 0x4
+			// char  m_fleeFrom[0x4]; // 0x10f4 | Schema_Atomic | Size: 0x4
 			server::CountdownTimer m_moveRateThrottleTimer; // 0x10f8 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_startleTimer; // 0x1110 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_vocalizeTimer; // 0x1128 | Schema_DeclaredClass | Size: 0x18
 			entity2::GameTime_t m_flWhenZombified; // 0x1140 | Schema_DeclaredClass | Size: 0x4
 			bool m_jumpedThisFrame; // 0x1144 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CCSPlayerPawn > m_leader; // 0x1148 | Schema_Atomic | Size: 0x4
-			char  m_leader[0x4]; // 0x1148 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_leader; // 0x1148 | Schema_Atomic | Size: 0x4
+			// char  m_leader[0x4]; // 0x1148 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
 			server::CountdownTimer m_reuseTimer; // 0x1160 | Schema_DeclaredClass | Size: 0x18
 			bool m_hasBeenUsed; // 0x1178 | Schema_Builtin | Size: 0x1

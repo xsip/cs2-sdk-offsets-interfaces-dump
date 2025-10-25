@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBasePlayerWeapon;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -27,8 +32,8 @@ namespace CS2 {
 			bool m_bIsLookingAtWeapon; // 0xbc | Schema_Builtin | Size: 0x1
 			bool m_bIsHoldingLookAtWeapon; // 0xbd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CBasePlayerWeapon > m_hSavedWeapon; // 0xc0 | Schema_Atomic | Size: 0x4
-			char  m_hSavedWeapon[0x4]; // 0xc0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hSavedWeapon; // 0xc0 | Schema_Atomic | Size: 0x4
+			// char  m_hSavedWeapon[0x4]; // 0xc0 | Schema_Atomic | Size: 0x4
 			int32_t m_nTimeToMelee; // 0xc4 | Schema_Builtin | Size: 0x4
 			int32_t m_nTimeToSecondary; // 0xc8 | Schema_Builtin | Size: 0x4
 			int32_t m_nTimeToPrimary; // 0xcc | Schema_Builtin | Size: 0x4

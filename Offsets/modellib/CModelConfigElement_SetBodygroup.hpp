@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x58
 			namespace CModelConfigElement_SetBodygroup /*: public CS2::modellib::CModelConfigElement*/ {
-				constexpr std::ptrdiff_t m_GroupName = 0x48; // GlobalTypes::CGlobalSymbol m_GroupName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_GroupName = 0x48; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nChoice = 0x50; // int32_t m_nChoice; |  0x50 | Schema_Builtin | Size: 0x4
 			}
 		}

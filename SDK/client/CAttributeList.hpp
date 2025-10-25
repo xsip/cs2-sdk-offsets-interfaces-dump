@@ -26,7 +26,7 @@ namespace CS2 {
 		class CAttributeList  {
 		public:
 			S2_PAD(0x8);
-			// client::C_UtlVectorEmbeddedNetworkVar< client::CEconItemAttribute > m_Attributes; // 0x8 | Schema_Atomic | Size: 0x68
+			// client::C_UtlVectorEmbeddedNetworkVar<client::CEconItemAttribute> m_Attributes; // 0x8 | Schema_Atomic | Size: 0x68
 			char  m_Attributes[0x68]; // 0x8 | Schema_Atomic | Size: 0x68
 			client::CAttributeManager* m_pManager; // 0x70 | Schema_Ptr | Size: 0x8
 		};

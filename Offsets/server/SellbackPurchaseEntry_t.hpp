@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nCost = 0x34; // int32_t m_nCost; |  0x34 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPrevArmor = 0x38; // int32_t m_nPrevArmor; |  0x38 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bPrevHelmet = 0x3c; // bool m_bPrevHelmet; |  0x3c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hItem = 0x40; // GlobalTypes::CEntityHandle m_hItem; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hItem = 0x40; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

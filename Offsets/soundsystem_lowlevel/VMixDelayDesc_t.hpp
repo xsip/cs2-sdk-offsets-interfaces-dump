@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem_lowlevel {
 			// Class size: 0x28
 			namespace VMixDelayDesc_t /**/ {
-				constexpr std::ptrdiff_t m_feedbackFilter = 0x0; // soundsystem_lowlevel::VMixFilterDesc_t m_feedbackFilter; |  Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_feedbackFilter = 0x0; // soundsystem_lowlevel::VMixFilterDesc_t  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t m_bEnableFilter = 0x10; // bool m_bEnableFilter; |  0x10 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flDelay = 0x14; // float32 m_flDelay; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDirectGain = 0x18; // float32 m_flDirectGain; |  0x18 | Schema_Builtin | Size: 0x4

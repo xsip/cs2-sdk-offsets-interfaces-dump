@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace scenesystem {
 			// Class size: 0x30
 			namespace CSSDSMsg_ViewTarget /**/ {
-				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString m_Name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_TextureId = 0x8; // uint64_t m_TextureId; |  0x8 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_nWidth = 0x10; // int32_t m_nWidth; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHeight = 0x14; // int32_t m_nHeight; |  0x14 | Schema_Builtin | Size: 0x4

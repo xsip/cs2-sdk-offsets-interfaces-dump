@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x78
 			namespace CDamageRecord /**/ {
-				constexpr std::ptrdiff_t m_PlayerDamager = 0x30; // client::CHandle< client::C_CSPlayerPawn > m_PlayerDamager; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_PlayerRecipient = 0x34; // client::CHandle< client::C_CSPlayerPawn > m_PlayerRecipient; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hPlayerControllerDamager = 0x38; // client::CHandle< client::CCSPlayerController > m_hPlayerControllerDamager; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hPlayerControllerRecipient = 0x3c; // client::CHandle< client::CCSPlayerController > m_hPlayerControllerRecipient; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_szPlayerDamagerName = 0x40; // GlobalTypes::CUtlString m_szPlayerDamagerName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_szPlayerRecipientName = 0x48; // GlobalTypes::CUtlString m_szPlayerRecipientName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PlayerDamager = 0x30; // GlobalTypes::CHandle<client::C_CSPlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_PlayerRecipient = 0x34; // GlobalTypes::CHandle<client::C_CSPlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPlayerControllerDamager = 0x38; // GlobalTypes::CHandle<client::CCSPlayerController>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPlayerControllerRecipient = 0x3c; // GlobalTypes::CHandle<client::CCSPlayerController>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_szPlayerDamagerName = 0x40; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szPlayerRecipientName = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_DamagerXuid = 0x50; // uint64_t m_DamagerXuid; |  0x50 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_RecipientXuid = 0x58; // uint64_t m_RecipientXuid; |  0x58 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_flBulletsDamage = 0x60; // float32 m_flBulletsDamage; |  0x60 | Schema_Builtin | Size: 0x4
@@ -24,7 +24,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iNumHits = 0x6c; // int32_t m_iNumHits; |  0x6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iLastBulletUpdate = 0x70; // int32_t m_iLastBulletUpdate; |  0x70 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsOtherEnemy = 0x74; // bool m_bIsOtherEnemy; |  0x74 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_killType = 0x75; // client::EKillTypes_t m_killType; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_killType = 0x75; // client::EKillTypes_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

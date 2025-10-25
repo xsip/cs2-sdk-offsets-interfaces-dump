@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x530
 			namespace CSkeletonInstance /*: public CS2::client::CGameSceneNode*/ {
-				constexpr std::ptrdiff_t m_modelState = 0x190; // client::CModelState m_modelState; |  Schema_DeclaredClass | Size: 0x300
+				constexpr std::ptrdiff_t m_modelState = 0x190; // client::CModelState  | Schema_DeclaredClass | Size: 0x300
 				constexpr std::ptrdiff_t m_bIsAnimationEnabled = 0x490; // bool m_bIsAnimationEnabled; |  0x490 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseParentRenderBounds = 0x491; // bool m_bUseParentRenderBounds; |  0x491 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDisableSolidCollisionsForHierarchy = 0x492; // bool m_bDisableSolidCollisionsForHierarchy; |  0x492 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_materialGroup = 0x494; // GlobalTypes::CUtlStringToken m_materialGroup; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_materialGroup = 0x494; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nHitboxSet = 0x498; // uint8_t m_nHitboxSet; |  0x498 | Schema_Builtin | Size: 0x1
 			}
 		}

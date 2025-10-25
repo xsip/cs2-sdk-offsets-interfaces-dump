@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x30
 			namespace CRegionSVM /**/ {
-				constexpr std::ptrdiff_t m_Planes = 0x0; // GlobalTypes::CUtlVector< physicslib::RnPlane_t > m_Planes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Nodes = 0x18; // GlobalTypes::CUtlVector< uint32 > m_Nodes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Planes = 0x0; // GlobalTypes::CUtlVector<physicslib::RnPlane_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Nodes = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

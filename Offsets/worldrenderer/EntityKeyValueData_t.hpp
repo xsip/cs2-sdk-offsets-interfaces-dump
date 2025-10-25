@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace worldrenderer {
 			// Class size: 0x38
 			namespace EntityKeyValueData_t /**/ {
-				constexpr std::ptrdiff_t m_connections = 0x8; // GlobalTypes::CUtlVector< worldrenderer::EntityIOConnectionData_t > m_connections; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_keyValuesData = 0x20; // GlobalTypes::CUtlBinaryBlock m_keyValuesData; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_connections = 0x8; // GlobalTypes::CUtlVector<worldrenderer::EntityIOConnectionData_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_keyValuesData = 0x20; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

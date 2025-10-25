@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,13 +26,13 @@ namespace CS2 {
 	namespace server {
 		class CLogicLineToEntity : public CS2::server::CLogicalEntity {
 		public:
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::Vector > m_Line; // 0x4f0 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::Vector> m_Line; // 0x4f0 | Schema_Atomic | Size: 0x28
 			char  m_Line[0x28]; // 0x4f0 | Schema_Atomic | Size: 0x28
 			GlobalTypes::CUtlSymbolLarge m_SourceName; // 0x518 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_StartEntity; // 0x520 | Schema_Atomic | Size: 0x4
-			char  m_StartEntity[0x4]; // 0x520 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_EndEntity; // 0x524 | Schema_Atomic | Size: 0x4
-			char  m_EndEntity[0x4]; // 0x524 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_StartEntity; // 0x520 | Schema_Atomic | Size: 0x4
+			// char  m_StartEntity[0x4]; // 0x520 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_EndEntity; // 0x524 | Schema_Atomic | Size: 0x4
+			// char  m_EndEntity[0x4]; // 0x524 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CLogicLineToEntity, m_Line) == 0x4F0, "m_Line in CLogicLineToEntity should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CLogicLineToEntity, m_SourceName) == 0x518, "m_SourceName in CLogicLineToEntity should be at offset 0x518");

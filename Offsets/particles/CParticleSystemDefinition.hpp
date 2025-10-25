@@ -11,28 +11,28 @@ namespace CS2 {
 			// Class size: 0x440
 			namespace CParticleSystemDefinition /*: public CS2::particles::IParticleSystemDefinition*/ {
 				constexpr std::ptrdiff_t m_nBehaviorVersion = 0x8; // int32_t m_nBehaviorVersion; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_PreEmissionOperators = 0x10; // GlobalTypes::CUtlVector< particles::CParticleFunctionPreEmission > m_PreEmissionOperators; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Emitters = 0x28; // GlobalTypes::CUtlVector< particles::CParticleFunctionEmitter > m_Emitters; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Initializers = 0x40; // GlobalTypes::CUtlVector< particles::CParticleFunctionInitializer > m_Initializers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Operators = 0x58; // GlobalTypes::CUtlVector< particles::CParticleFunctionOperator > m_Operators; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ForceGenerators = 0x70; // GlobalTypes::CUtlVector< particles::CParticleFunctionForce > m_ForceGenerators; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Constraints = 0x88; // GlobalTypes::CUtlVector< particles::CParticleFunctionConstraint > m_Constraints; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Renderers = 0xa0; // GlobalTypes::CUtlVector< particles::CParticleFunctionRenderer > m_Renderers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Children = 0xb8; // GlobalTypes::CUtlVector< particles::ParticleChildrenInfo_t > m_Children; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PreEmissionOperators = 0x10; // GlobalTypes::CUtlVector<particles::CParticleFunctionPreEmission*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Emitters = 0x28; // GlobalTypes::CUtlVector<particles::CParticleFunctionEmitter*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Initializers = 0x40; // GlobalTypes::CUtlVector<particles::CParticleFunctionInitializer*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Operators = 0x58; // GlobalTypes::CUtlVector<particles::CParticleFunctionOperator*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ForceGenerators = 0x70; // GlobalTypes::CUtlVector<particles::CParticleFunctionForce*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Constraints = 0x88; // GlobalTypes::CUtlVector<particles::CParticleFunctionConstraint*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Renderers = 0xa0; // GlobalTypes::CUtlVector<particles::CParticleFunctionRenderer*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Children = 0xb8; // GlobalTypes::CUtlVector<particles::ParticleChildrenInfo_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nFirstMultipleOverride_BackwardCompat = 0x178; // int32_t m_nFirstMultipleOverride_BackwardCompat; |  0x178 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nInitialParticles = 0x258; // int32_t m_nInitialParticles; |  0x258 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMaxParticles = 0x25c; // int32_t m_nMaxParticles; |  0x25c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nGroupID = 0x260; // int32_t m_nGroupID; |  0x260 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_BoundingBoxMin = 0x264; // GlobalTypes::Vector m_BoundingBoxMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_BoundingBoxMax = 0x270; // GlobalTypes::Vector m_BoundingBoxMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_BoundingBoxMin = 0x264; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_BoundingBoxMax = 0x270; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flDepthSortBias = 0x27c; // float32 m_flDepthSortBias; |  0x27c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSortOverridePositionCP = 0x280; // int32_t m_nSortOverridePositionCP; |  0x280 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bInfiniteBounds = 0x284; // bool m_bInfiniteBounds; |  0x284 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnableNamedValues = 0x285; // bool m_bEnableNamedValues; |  0x285 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_NamedValueDomain = 0x288; // GlobalTypes::CUtlString m_NamedValueDomain; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_NamedValueLocals = 0x290; // GlobalTypes::CUtlVector< particleslib::ParticleNamedValueSource_t > m_NamedValueLocals; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ConstantColor = 0x2a8; // GlobalTypes::Color m_ConstantColor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_ConstantNormal = 0x2ac; // GlobalTypes::Vector m_ConstantNormal; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_NamedValueDomain = 0x288; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_NamedValueLocals = 0x290; // GlobalTypes::CUtlVector<particleslib::ParticleNamedValueSource_t*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ConstantColor = 0x2a8; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_ConstantNormal = 0x2ac; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flConstantRadius = 0x2b8; // float32 m_flConstantRadius; |  0x2b8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flConstantRotation = 0x2bc; // float32 m_flConstantRotation; |  0x2bc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flConstantRotationSpeed = 0x2c0; // float32 m_flConstantRotationSpeed; |  0x2c0 | Schema_Builtin | Size: 0x4
@@ -40,15 +40,15 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nConstantSequenceNumber = 0x2c8; // int32_t m_nConstantSequenceNumber; |  0x2c8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nConstantSequenceNumber1 = 0x2cc; // int32_t m_nConstantSequenceNumber1; |  0x2cc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSnapshotControlPoint = 0x2d0; // int32_t m_nSnapshotControlPoint; |  0x2d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSnapshot = 0x2d8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hSnapshot; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pszCullReplacementName = 0x2e0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_pszCullReplacementName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSnapshot = 0x2d8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pszCullReplacementName = 0x2e0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flCullRadius = 0x2e8; // float32 m_flCullRadius; |  0x2e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCullFillCost = 0x2ec; // float32 m_flCullFillCost; |  0x2ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCullControlPoint = 0x2f0; // int32_t m_nCullControlPoint; |  0x2f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hFallback = 0x2f8; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hFallback; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFallback = 0x2f8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nFallbackMaxCount = 0x300; // int32_t m_nFallbackMaxCount; |  0x300 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hLowViolenceDef = 0x308; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hLowViolenceDef; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hReferenceReplacement = 0x310; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_hReferenceReplacement; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hLowViolenceDef = 0x308; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hReferenceReplacement = 0x310; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flPreSimulationTime = 0x318; // float32 m_flPreSimulationTime; |  0x318 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStopSimulationAfterTime = 0x31c; // float32 m_flStopSimulationAfterTime; |  0x31c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaximumTimeStep = 0x320; // float32 m_flMaximumTimeStep; |  0x320 | Schema_Builtin | Size: 0x4
@@ -68,13 +68,13 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bShouldHitboxesFallbackToRenderBounds = 0x355; // bool m_bShouldHitboxesFallbackToRenderBounds; |  0x355 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bShouldHitboxesFallbackToSnapshot = 0x356; // bool m_bShouldHitboxesFallbackToSnapshot; |  0x356 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bShouldHitboxesFallbackToCollisionHulls = 0x357; // bool m_bShouldHitboxesFallbackToCollisionHulls; |  0x357 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nViewModelEffect = 0x358; // particles::InheritableBoolType_t m_nViewModelEffect; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nViewModelEffect = 0x358; // particles::InheritableBoolType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bScreenSpaceEffect = 0x35c; // bool m_bScreenSpaceEffect; |  0x35c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pszTargetLayerID = 0x360; // GlobalTypes::CUtlSymbolLarge m_pszTargetLayerID; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pszTargetLayerID = 0x360; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nSkipRenderControlPoint = 0x368; // int32_t m_nSkipRenderControlPoint; |  0x368 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nAllowRenderControlPoint = 0x36c; // int32_t m_nAllowRenderControlPoint; |  0x36c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bShouldSort = 0x370; // bool m_bShouldSort; |  0x370 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_controlPointConfigurations = 0x3b8; // GlobalTypes::CUtlVector< particles::ParticleControlPointConfiguration_t > m_controlPointConfigurations; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_controlPointConfigurations = 0x3b8; // GlobalTypes::CUtlVector<particles::ParticleControlPointConfiguration_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

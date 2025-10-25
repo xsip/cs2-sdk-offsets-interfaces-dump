@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x80
 			namespace CSmartPropFilter_MaterialAttributes /*: public CS2::smartprops::CSmartPropFilter*/ {
-				constexpr std::ptrdiff_t m_AllowedMaterialAttributes = 0x50; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_AllowedMaterialAttributes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_DisallowedMaterialAttributes = 0x68; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_DisallowedMaterialAttributes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_AllowedMaterialAttributes = 0x50; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_DisallowedMaterialAttributes = 0x68; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

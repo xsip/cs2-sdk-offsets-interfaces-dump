@@ -12,20 +12,20 @@ namespace CS2 {
 			namespace C_PathParticleRope /*: public CS2::client::C_BaseEntity*/ {
 				constexpr std::ptrdiff_t m_bStartActive = 0x600; // bool m_bStartActive; |  0x600 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMaxSimulationTime = 0x604; // float32 m_flMaxSimulationTime; |  0x604 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszEffectName = 0x608; // GlobalTypes::CUtlSymbolLarge m_iszEffectName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PathNodes_Name = 0x610; // GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_PathNodes_Name; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iszEffectName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PathNodes_Name = 0x610; // GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flParticleSpacing = 0x628; // float32 m_flParticleSpacing; |  0x628 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSlack = 0x62c; // float32 m_flSlack; |  0x62c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRadius = 0x630; // float32 m_flRadius; |  0x630 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ColorTint = 0x634; // GlobalTypes::Color m_ColorTint; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_ColorTint = 0x634; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nEffectState = 0x638; // int32_t m_nEffectState; |  0x638 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iEffectIndex = 0x640; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PathNodes_Position = 0x648; // GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_Position; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_TangentIn = 0x660; // GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_TangentIn; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_TangentOut = 0x678; // GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_TangentOut; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_Color = 0x690; // GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PathNodes_Color; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_PinEnabled = 0x6a8; // GlobalTypes::C_NetworkUtlVectorBase< bool > m_PathNodes_PinEnabled; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_RadiusScale = 0x6c0; // GlobalTypes::C_NetworkUtlVectorBase< float32 > m_PathNodes_RadiusScale; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iEffectIndex = 0x640; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PathNodes_Position = 0x648; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_TangentIn = 0x660; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_TangentOut = 0x678; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_Color = 0x690; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_PinEnabled = 0x6a8; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_RadiusScale = 0x6c0; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

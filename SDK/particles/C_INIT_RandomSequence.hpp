@@ -31,7 +31,7 @@ namespace CS2 {
 			bool m_bShuffle; // 0x1e0 | Schema_Builtin | Size: 0x1
 			bool m_bLinear; // 0x1e1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlVector< particles::SequenceWeightedList_t > m_WeightedList; // 0x1e8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<particles::SequenceWeightedList_t> m_WeightedList; // 0x1e8 | Schema_Atomic | Size: 0x18
 			// char  m_WeightedList[0x18]; // 0x1e8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

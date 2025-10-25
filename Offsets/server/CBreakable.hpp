@@ -10,21 +10,21 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x8B0
 			namespace CBreakable /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_CPropDataComponent = 0x7e0; // server::CPropDataComponent m_CPropDataComponent; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_Material = 0x820; // server::Materials m_Material; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_hBreaker = 0x824; // server::CHandle< server::CBaseEntity > m_hBreaker; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_Explosion = 0x828; // server::Explosions m_Explosion; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSpawnObject = 0x830; // GlobalTypes::CUtlSymbolLarge m_iszSpawnObject; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_CPropDataComponent = 0x7e0; // server::CPropDataComponent  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_Material = 0x820; // server::Materials  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hBreaker = 0x824; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Explosion = 0x828; // server::Explosions  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSpawnObject = 0x830; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flPressureDelay = 0x838; // float32 m_flPressureDelay; |  0x838 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iMinHealthDmg = 0x83c; // int32_t m_iMinHealthDmg; |  0x83c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszPropData = 0x840; // GlobalTypes::CUtlSymbolLarge m_iszPropData; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszPropData = 0x840; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_impactEnergyScale = 0x848; // float32 m_impactEnergyScale; |  0x848 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nOverrideBlockLOS = 0x84c; // server::EOverrideBlockLOS_t m_nOverrideBlockLOS; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_OnBreak = 0x850; // entity2::CEntityIOOutput m_OnBreak; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnHealthChanged = 0x878; // GlobalTypes::CEntityOutputTemplate< float32 > m_OnHealthChanged; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_PerformanceMode = 0x8a0; // client::PerformanceMode_t m_PerformanceMode; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_hPhysicsAttacker = 0x8a4; // server::CHandle< server::CBasePlayerPawn > m_hPhysicsAttacker; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastPhysicsInfluenceTime = 0x8a8; // entity2::GameTime_t m_flLastPhysicsInfluenceTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nOverrideBlockLOS = 0x84c; // server::EOverrideBlockLOS_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OnBreak = 0x850; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnHealthChanged = 0x878; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_PerformanceMode = 0x8a0; // client::PerformanceMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_hPhysicsAttacker = 0x8a4; // GlobalTypes::CHandle<server::CBasePlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastPhysicsInfluenceTime = 0x8a8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

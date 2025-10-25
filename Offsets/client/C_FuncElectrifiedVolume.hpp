@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xEC8
 			namespace C_FuncElectrifiedVolume /*: public CS2::client::C_FuncBrush*/ {
-				constexpr std::ptrdiff_t m_nAmbientEffect = 0xeb0; // client::ParticleIndex_t m_nAmbientEffect; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_EffectName = 0xeb8; // GlobalTypes::CUtlSymbolLarge m_EffectName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nAmbientEffect = 0xeb0; // client::ParticleIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_EffectName = 0xeb8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bState = 0xec0; // bool m_bState; |  0xec0 | Schema_Builtin | Size: 0x1
 			}
 		}

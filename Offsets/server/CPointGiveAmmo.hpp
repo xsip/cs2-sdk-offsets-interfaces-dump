@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x4F8
 			namespace CPointGiveAmmo /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_pActivator = 0x4f0; // server::CHandle< server::CBaseEntity > m_pActivator; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_pActivator = 0x4f0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

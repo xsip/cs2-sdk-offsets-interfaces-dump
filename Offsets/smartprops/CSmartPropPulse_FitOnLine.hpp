@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x60
 			namespace CSmartPropPulse_FitOnLine /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_OutflowList = 0x48; // pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OutflowList = 0x48; // pulse_runtime_lib::PulseSelectorOutflowList_t  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

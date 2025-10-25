@@ -16,12 +16,12 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nLODGroupMask = 0x6; // uint8_t m_nLODGroupMask; |  0x6 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nDrawCallIndex = 0x8; // int16_t m_nDrawCallIndex; |  0x8 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nLODSetupIndex = 0xa; // int16_t m_nLODSetupIndex; |  0xa | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_vTintColor = 0xc; // GlobalTypes::Color m_vTintColor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_objectFlags = 0x10; // worldrenderer::ObjectTypeFlags_t m_objectFlags; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vTintColor = 0xc; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_objectFlags = 0x10; // worldrenderer::ObjectTypeFlags_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nLightProbeVolumePrecomputedHandshake = 0x14; // int32_t m_nLightProbeVolumePrecomputedHandshake; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nInstanceStreamOffset = 0x18; // uint32_t m_nInstanceStreamOffset; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nVertexAlbedoStreamOffset = 0x1c; // uint32_t m_nVertexAlbedoStreamOffset; |  0x1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_instanceStreams = 0x20; // worldrenderer::AggregateInstanceStream_t m_instanceStreams; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_instanceStreams = 0x20; // worldrenderer::AggregateInstanceStream_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

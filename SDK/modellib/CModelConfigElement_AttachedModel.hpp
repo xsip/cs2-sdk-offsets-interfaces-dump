@@ -24,7 +24,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_InstanceName; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_EntityClass; // 0x50 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; // 0x58 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0x58 | Schema_Atomic | Size: 0x8
 			char  m_hModel[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_vOffset; // 0x60 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_aAngOffset; // 0x6c | Schema_Atomic | Size: 0xc

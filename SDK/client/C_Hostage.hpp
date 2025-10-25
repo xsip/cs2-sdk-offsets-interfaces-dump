@@ -33,7 +33,7 @@ namespace CS2 {
 		class C_Hostage : public CS2::client::C_BaseCombatCharacter {
 		public:
 			client::EntitySpottedState_t m_entitySpottedState; // 0x13f0 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::CHandle< client::C_BaseEntity > m_leader; // 0x1408 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_leader; // 0x1408 | Schema_Atomic | Size: 0x4
 			// char  m_leader[0x4]; // 0x1408 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			client::CountdownTimer m_reuseTimer; // 0x1410 | Schema_DeclaredClass | Size: 0x18
@@ -44,7 +44,7 @@ namespace CS2 {
 			int32_t m_nHostageState; // 0x1438 | Schema_Builtin | Size: 0x4
 			bool m_bHandsHaveBeenCut; // 0x143c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle< client::C_CSPlayerPawn > m_hHostageGrabber; // 0x1440 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hHostageGrabber; // 0x1440 | Schema_Atomic | Size: 0x4
 			// char  m_hHostageGrabber[0x4]; // 0x1440 | Schema_Atomic | Size: 0x4
 			entity2::GameTime_t m_fLastGrabTime; // 0x1444 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vecGrabbedPos; // 0x1448 | Schema_Atomic | Size: 0xc

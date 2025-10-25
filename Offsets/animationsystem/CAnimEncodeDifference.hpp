@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0xA8
 			namespace CAnimEncodeDifference /**/ {
-				constexpr std::ptrdiff_t m_boneArray = 0x0; // GlobalTypes::CUtlVector< animationsystem::CAnimBoneDifference > m_boneArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_morphArray = 0x18; // GlobalTypes::CUtlVector< animationsystem::CAnimMorphDifference > m_morphArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_userArray = 0x30; // GlobalTypes::CUtlVector< animationsystem::CAnimUserDifference > m_userArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bHasRotationBitArray = 0x48; // GlobalTypes::CUtlVector< uint8 > m_bHasRotationBitArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bHasMovementBitArray = 0x60; // GlobalTypes::CUtlVector< uint8 > m_bHasMovementBitArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bHasMorphBitArray = 0x78; // GlobalTypes::CUtlVector< uint8 > m_bHasMorphBitArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bHasUserBitArray = 0x90; // GlobalTypes::CUtlVector< uint8 > m_bHasUserBitArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneArray = 0x0; // GlobalTypes::CUtlVector<animationsystem::CAnimBoneDifference>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_morphArray = 0x18; // GlobalTypes::CUtlVector<animationsystem::CAnimMorphDifference>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_userArray = 0x30; // GlobalTypes::CUtlVector<animationsystem::CAnimUserDifference>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bHasRotationBitArray = 0x48; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bHasMovementBitArray = 0x60; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bHasMorphBitArray = 0x78; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bHasUserBitArray = 0x90; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

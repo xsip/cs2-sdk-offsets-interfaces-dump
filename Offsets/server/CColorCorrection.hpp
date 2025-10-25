@@ -14,8 +14,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFadeOutDuration = 0x4f4; // float32 m_flFadeOutDuration; |  0x4f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStartFadeInWeight = 0x4f8; // float32 m_flStartFadeInWeight; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStartFadeOutWeight = 0x4fc; // float32 m_flStartFadeOutWeight; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeStartFadeIn = 0x500; // entity2::GameTime_t m_flTimeStartFadeIn; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeStartFadeOut = 0x504; // entity2::GameTime_t m_flTimeStartFadeOut; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeStartFadeIn = 0x500; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeStartFadeOut = 0x504; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxWeight = 0x508; // float32 m_flMaxWeight; |  0x508 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bStartDisabled = 0x50c; // bool m_bStartDisabled; |  0x50c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnabled = 0x50d; // bool m_bEnabled; |  0x50d | Schema_Builtin | Size: 0x1
@@ -26,7 +26,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_MaxFalloff = 0x518; // float32 m_MaxFalloff; |  0x518 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCurWeight = 0x51c; // float32 m_flCurWeight; |  0x51c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_netlookupFilename = 0x520; // char m_netlookupFilename[512]; |  0x520 | Schema_FixedArray | Size: 0x200
-				constexpr std::ptrdiff_t m_lookupFilename = 0x720; // GlobalTypes::CUtlSymbolLarge m_lookupFilename; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_lookupFilename = 0x720; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

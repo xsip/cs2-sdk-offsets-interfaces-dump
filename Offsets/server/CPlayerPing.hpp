@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x518
 			namespace CPlayerPing /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_hPlayer = 0x4f8; // server::CHandle< server::CCSPlayerPawn > m_hPlayer; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hPingedEntity = 0x4fc; // server::CHandle< server::CBaseEntity > m_hPingedEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPlayer = 0x4f8; // GlobalTypes::CHandle<server::CCSPlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPingedEntity = 0x4fc; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iType = 0x500; // int32_t m_iType; |  0x500 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bUrgent = 0x504; // bool m_bUrgent; |  0x504 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_szPlaceName = 0x505; // char m_szPlaceName[18]; |  0x505 | Schema_FixedArray | Size: 0x12

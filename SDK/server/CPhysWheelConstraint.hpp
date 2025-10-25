@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -34,8 +39,8 @@ namespace CS2 {
 			float32 m_flMaxSteeringAngle; // 0x580 | Schema_Builtin | Size: 0x4
 			float32 m_flSteeringAxisFriction; // 0x584 | Schema_Builtin | Size: 0x4
 			float32 m_flSpinAxisFriction; // 0x588 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hSteeringMimicsEntity; // 0x58c | Schema_Atomic | Size: 0x4
-			char  m_hSteeringMimicsEntity[0x4]; // 0x58c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hSteeringMimicsEntity; // 0x58c | Schema_Atomic | Size: 0x4
+			// char  m_hSteeringMimicsEntity[0x4]; // 0x58c | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionFrequency) == 0x560, "m_flSuspensionFrequency in CPhysWheelConstraint should be at offset 0x560");

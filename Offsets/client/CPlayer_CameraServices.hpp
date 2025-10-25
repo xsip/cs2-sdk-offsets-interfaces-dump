@@ -10,26 +10,26 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x288
 			namespace CPlayer_CameraServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_vecCsViewPunchAngle = 0x40; // GlobalTypes::QAngle m_vecCsViewPunchAngle; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nCsViewPunchAngleTick = 0x4c; // entity2::GameTick_t m_nCsViewPunchAngleTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecCsViewPunchAngle = 0x40; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nCsViewPunchAngleTick = 0x4c; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flCsViewPunchAngleTickRatio = 0x50; // float32 m_flCsViewPunchAngleTickRatio; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_PlayerFog = 0x58; // client::C_fogplayerparams_t m_PlayerFog; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_hColorCorrectionCtrl = 0x98; // client::CHandle< client::C_ColorCorrection > m_hColorCorrectionCtrl; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hViewEntity = 0x9c; // client::CHandle< client::C_BaseEntity > m_hViewEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTonemapController = 0xa0; // client::CHandle< client::C_TonemapController2 > m_hTonemapController; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_audio = 0xa8; // client::audioparams_t m_audio; |  Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_PostProcessingVolumes = 0x120; // client::C_NetworkUtlVectorBase< client.dll::CHandle< C_PostProcessingVolume > > m_PostProcessingVolumes; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PlayerFog = 0x58; // client::C_fogplayerparams_t  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_hColorCorrectionCtrl = 0x98; // GlobalTypes::CHandle<client::C_ColorCorrection>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hViewEntity = 0x9c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTonemapController = 0xa0; // GlobalTypes::CHandle<client::C_TonemapController2>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_audio = 0xa8; // client::audioparams_t  | Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_PostProcessingVolumes = 0x120; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_PostProcessingVolume>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flOldPlayerZ = 0x138; // float32 m_flOldPlayerZ; |  0x138 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOldPlayerViewOffsetZ = 0x13c; // float32 m_flOldPlayerViewOffsetZ; |  0x13c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_CurrentFog = 0x140; // client::fogparams_t m_CurrentFog; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_hOldFogController = 0x1a8; // client::CHandle< client::C_FogController > m_hOldFogController; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_CurrentFog = 0x140; // client::fogparams_t  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_hOldFogController = 0x1a8; // GlobalTypes::CHandle<client::C_FogController>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bOverrideFogColor = 0x1ac; // bool m_bOverrideFogColor[5]; |  0x1ac | Schema_FixedArray | Size: 0x5
-				constexpr std::ptrdiff_t m_OverrideFogColor = 0x1b1; // GlobalTypes::Color m_OverrideFogColor[5]; |  Schema_FixedArray | Size: 0x14
+				constexpr std::ptrdiff_t m_OverrideFogColor = 0x1b1; // GlobalTypes::Color[5]  | Schema_FixedArray | Size: 0x14
 				constexpr std::ptrdiff_t m_bOverrideFogStartEnd = 0x1c5; // bool m_bOverrideFogStartEnd[5]; |  0x1c5 | Schema_FixedArray | Size: 0x5
 				constexpr std::ptrdiff_t m_fOverrideFogStart = 0x1cc; // float32 m_fOverrideFogStart[5]; |  0x1cc | Schema_FixedArray | Size: 0x14
 				constexpr std::ptrdiff_t m_fOverrideFogEnd = 0x1e0; // float32 m_fOverrideFogEnd[5]; |  0x1e0 | Schema_FixedArray | Size: 0x14
-				constexpr std::ptrdiff_t m_hActivePostProcessingVolume = 0x1f4; // client::CHandle< client::C_PostProcessingVolume > m_hActivePostProcessingVolume; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_angDemoViewAngles = 0x1f8; // GlobalTypes::QAngle m_angDemoViewAngles; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hActivePostProcessingVolume = 0x1f4; // GlobalTypes::CHandle<client::C_PostProcessingVolume>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_angDemoViewAngles = 0x1f8; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

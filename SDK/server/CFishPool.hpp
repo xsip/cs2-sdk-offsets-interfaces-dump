@@ -29,7 +29,7 @@ namespace CS2 {
 			float32 m_waterLevel; // 0x50c | Schema_Builtin | Size: 0x4
 			bool m_isDormant; // 0x510 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// server::CUtlVector< server.dll::CHandle< CFish > > m_fishes; // 0x518 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CFish>> m_fishes; // 0x518 | Schema_Atomic | Size: 0x18
 			char  m_fishes[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
 			server::CountdownTimer m_visTimer; // 0x530 | Schema_DeclaredClass | Size: 0x18
 		};

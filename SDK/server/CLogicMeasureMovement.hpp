@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -24,14 +29,14 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_strMeasureTarget; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_strMeasureReference; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_strTargetReference; // 0x500 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hMeasureTarget; // 0x508 | Schema_Atomic | Size: 0x4
-			char  m_hMeasureTarget[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hMeasureReference; // 0x50c | Schema_Atomic | Size: 0x4
-			char  m_hMeasureReference[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTarget; // 0x510 | Schema_Atomic | Size: 0x4
-			char  m_hTarget[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTargetReference; // 0x514 | Schema_Atomic | Size: 0x4
-			char  m_hTargetReference[0x4]; // 0x514 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hMeasureTarget; // 0x508 | Schema_Atomic | Size: 0x4
+			// char  m_hMeasureTarget[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hMeasureReference; // 0x50c | Schema_Atomic | Size: 0x4
+			// char  m_hMeasureReference[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget; // 0x510 | Schema_Atomic | Size: 0x4
+			// char  m_hTarget[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetReference; // 0x514 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetReference[0x4]; // 0x514 | Schema_Atomic | Size: 0x4
 			float32 m_flScale; // 0x518 | Schema_Builtin | Size: 0x4
 			int32_t m_nMeasureType; // 0x51c | Schema_Builtin | Size: 0x4
 		};

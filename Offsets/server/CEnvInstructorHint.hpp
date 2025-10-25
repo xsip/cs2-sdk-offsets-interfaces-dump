@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x560
 			namespace CEnvInstructorHint /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_iszName = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszReplace_Key = 0x4f8; // GlobalTypes::CUtlSymbolLarge m_iszReplace_Key; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszHintTargetEntity = 0x500; // GlobalTypes::CUtlSymbolLarge m_iszHintTargetEntity; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszReplace_Key = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszHintTargetEntity = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iTimeout = 0x508; // int32_t m_iTimeout; |  0x508 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iDisplayLimit = 0x50c; // int32_t m_iDisplayLimit; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszIcon_Onscreen = 0x510; // GlobalTypes::CUtlSymbolLarge m_iszIcon_Onscreen; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszIcon_Offscreen = 0x518; // GlobalTypes::CUtlSymbolLarge m_iszIcon_Offscreen; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszCaption = 0x520; // GlobalTypes::CUtlSymbolLarge m_iszCaption; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszActivatorCaption = 0x528; // GlobalTypes::CUtlSymbolLarge m_iszActivatorCaption; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Color = 0x530; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszIcon_Onscreen = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszIcon_Offscreen = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszCaption = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszActivatorCaption = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Color = 0x530; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_fIconOffset = 0x534; // float32 m_fIconOffset; |  0x534 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fRange = 0x538; // float32 m_fRange; |  0x538 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPulseOption = 0x53c; // uint8_t m_iPulseOption; |  0x53c | Schema_Builtin | Size: 0x1
@@ -30,7 +30,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bForceCaption = 0x541; // bool m_bForceCaption; |  0x541 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iInstanceType = 0x544; // int32_t m_iInstanceType; |  0x544 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSuppressRest = 0x548; // bool m_bSuppressRest; |  0x548 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszBinding = 0x550; // GlobalTypes::CUtlSymbolLarge m_iszBinding; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszBinding = 0x550; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bAllowNoDrawTarget = 0x558; // bool m_bAllowNoDrawTarget; |  0x558 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAutoStart = 0x559; // bool m_bAutoStart; |  0x559 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLocalPlayerOnly = 0x55a; // bool m_bLocalPlayerOnly; |  0x55a | Schema_Builtin | Size: 0x1

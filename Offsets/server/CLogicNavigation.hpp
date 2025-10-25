@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x500
 			namespace CLogicNavigation /*: public CS2::server::CLogicalEntity*/ {
 				constexpr std::ptrdiff_t m_isOn = 0x4f8; // bool m_isOn; |  0x4f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_navProperty = 0x4fc; // server::navproperties_t m_navProperty; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_navProperty = 0x4fc; // server::navproperties_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

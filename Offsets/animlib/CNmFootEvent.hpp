@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x28
 			namespace CNmFootEvent /*: public CS2::animlib::CNmEvent*/ {
-				constexpr std::ptrdiff_t m_phase = 0x20; // animlib::NmFootPhase_t m_phase; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_phase = 0x20; // animlib::NmFootPhase_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

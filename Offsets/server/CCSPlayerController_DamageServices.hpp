@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0xD0
 			namespace CCSPlayerController_DamageServices /*: public CS2::client::CPlayerControllerComponent*/ {
 				constexpr std::ptrdiff_t m_nSendUpdate = 0x40; // int32_t m_nSendUpdate; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_DamageList = 0x48; // server::CUtlVectorEmbeddedNetworkVar< server::CDamageRecord > m_DamageList; |  Schema_Atomic | Size: 0x88
+				constexpr std::ptrdiff_t m_DamageList = 0x48; // server::CUtlVectorEmbeddedNetworkVar<server::CDamageRecord>  | Schema_Atomic | Size: 0x88
 			}
 		}
 	}

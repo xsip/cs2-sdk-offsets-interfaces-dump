@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,10 +28,10 @@ namespace CS2 {
 	namespace server {
 		class CSprite : public CS2::server::CBaseModelEntity {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hSpriteMaterial; // 0x7d8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSpriteMaterial; // 0x7d8 | Schema_Atomic | Size: 0x8
 			char  m_hSpriteMaterial[0x8]; // 0x7d8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hAttachedToEntity; // 0x7e0 | Schema_Atomic | Size: 0x4
-			char  m_hAttachedToEntity[0x4]; // 0x7e0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttachedToEntity; // 0x7e0 | Schema_Atomic | Size: 0x4
+			// char  m_hAttachedToEntity[0x4]; // 0x7e0 | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_nAttachment; // 0x7e4 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flSpriteFramerate; // 0x7e8 | Schema_Builtin | Size: 0x4

@@ -23,7 +23,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			int32_t m_Flags; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< GlobalTypes::CPlayerSlot > m_Recipients; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CPlayerSlot> m_Recipients; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_Recipients[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

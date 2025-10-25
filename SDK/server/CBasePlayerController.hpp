@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBasePlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -27,14 +32,14 @@ namespace CS2 {
 			uint64_t m_nInButtonsWhichAreToggles; // 0x4f8 | Schema_Builtin | Size: 0x8
 			uint32_t m_nTickBase; // 0x500 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x24);
-			// server::CHandle< server::CBasePlayerPawn > m_hPawn; // 0x528 | Schema_Atomic | Size: 0x4
-			char  m_hPawn[0x4]; // 0x528 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPawn; // 0x528 | Schema_Atomic | Size: 0x4
+			// char  m_hPawn[0x4]; // 0x528 | Schema_Atomic | Size: 0x4
 			bool m_bKnownTeamMismatch; // 0x52c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; // 0x530 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBasePlayerController > m_hSplitOwner; // 0x534 | Schema_Atomic | Size: 0x4
-			char  m_hSplitOwner[0x4]; // 0x534 | Schema_Atomic | Size: 0x4
-			// server::CUtlVector< server.dll::CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x538 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CHandle<server::CBasePlayerController> m_hSplitOwner; // 0x534 | Schema_Atomic | Size: 0x4
+			// char  m_hSplitOwner[0x4]; // 0x534 | Schema_Atomic | Size: 0x4
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>> m_hSplitScreenPlayers; // 0x538 | Schema_Atomic | Size: 0x18
 			char  m_hSplitScreenPlayers[0x18]; // 0x538 | Schema_Atomic | Size: 0x18
 			bool m_bIsHLTV; // 0x550 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

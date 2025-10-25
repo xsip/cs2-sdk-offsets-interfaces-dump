@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBasePlayerWeapon;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,8 +28,8 @@ namespace CS2 {
 		class CCSPlayer_ActionTrackingServices : public CS2::client::CPlayerPawnComponent {
 		public:
 			S2_PAD(0x1b0);
-			// server::CHandle< server::CBasePlayerWeapon > m_hLastWeaponBeforeC4AutoSwitch; // 0x1f0 | Schema_Atomic | Size: 0x4
-			char  m_hLastWeaponBeforeC4AutoSwitch[0x4]; // 0x1f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hLastWeaponBeforeC4AutoSwitch; // 0x1f0 | Schema_Atomic | Size: 0x4
+			// char  m_hLastWeaponBeforeC4AutoSwitch[0x4]; // 0x1f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x28);
 			bool m_bIsRescuing; // 0x21c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

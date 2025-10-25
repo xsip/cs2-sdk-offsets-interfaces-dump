@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x88
 			namespace ParticleControlPointConfiguration_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_drivers = 0x8; // GlobalTypes::CUtlVector< particles::ParticleControlPointDriver_t > m_drivers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_previewState = 0x20; // particles::ParticlePreviewState_t m_previewState; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_drivers = 0x8; // GlobalTypes::CUtlVector<particles::ParticleControlPointDriver_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_previewState = 0x20; // particles::ParticlePreviewState_t  | Schema_DeclaredClass | Size: 0x68
 			}
 		}
 	}

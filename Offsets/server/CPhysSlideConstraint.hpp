@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x628
 			namespace CPhysSlideConstraint /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_axisEnd = 0x568; // GlobalTypes::VectorWS m_axisEnd; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_axisEnd = 0x568; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_slideFriction = 0x574; // float32 m_slideFriction; |  0x574 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_systemLoadScale = 0x578; // float32 m_systemLoadScale; |  0x578 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_initialOffset = 0x57c; // float32 m_initialOffset; |  0x57c | Schema_Builtin | Size: 0x4
@@ -19,7 +19,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flMotorFrequency = 0x584; // float32 m_flMotorFrequency; |  0x584 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMotorDampingRatio = 0x588; // float32 m_flMotorDampingRatio; |  0x588 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseEntityPivot = 0x58c; // bool m_bUseEntityPivot; |  0x58c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_soundInfo = 0x590; // server::ConstraintSoundInfo m_soundInfo; |  Schema_DeclaredClass | Size: 0x98
+				constexpr std::ptrdiff_t m_soundInfo = 0x590; // server::ConstraintSoundInfo  | Schema_DeclaredClass | Size: 0x98
 			}
 		}
 	}

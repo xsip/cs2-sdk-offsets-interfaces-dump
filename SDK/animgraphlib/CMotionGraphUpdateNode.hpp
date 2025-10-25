@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CMotionGraphUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
-			// GlobalTypes::CSmartPtr< animgraphlib::CMotionGraph > m_pMotionGraph; // 0x58 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CSmartPtr<animgraphlib::CMotionGraph> m_pMotionGraph; // 0x58 | Schema_Atomic | Size: 0x8
 			char  m_pMotionGraph[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};

@@ -17,6 +17,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CEntityBlocker;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -42,8 +47,8 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecBackBoundsMax; // 0x1074 | Schema_Atomic | Size: 0xc
 			bool m_bAjarDoorShouldntAlwaysOpen; // 0x1080 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CEntityBlocker > m_hEntityBlocker; // 0x1084 | Schema_Atomic | Size: 0x4
-			char  m_hEntityBlocker[0x4]; // 0x1084 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CEntityBlocker> m_hEntityBlocker; // 0x1084 | Schema_Atomic | Size: 0x4
+			// char  m_hEntityBlocker[0x4]; // 0x1084 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecAxis) == 0xFF0, "m_vecAxis in CPropDoorRotating should be at offset 0xFF0");

@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bBreakable = 0x1090; // bool m_bBreakable; |  0x1090 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_isAbleToCloseAreaPortals = 0x1091; // bool m_isAbleToCloseAreaPortals; |  0x1091 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_currentDamageState = 0x1094; // int32_t m_currentDamageState; |  0x1094 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_damageStates = 0x1098; // GlobalTypes::CUtlVector< GlobalTypes::CUtlSymbolLarge > m_damageStates; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_damageStates = 0x1098; // GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x50
 			namespace CPulseCell_Step_PublicOutput /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_OutputIndex = 0x48; // pulse_runtime_lib::PulseRuntimeOutputIndex_t m_OutputIndex; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_OutputIndex = 0x48; // pulse_runtime_lib::PulseRuntimeOutputIndex_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

@@ -10,29 +10,29 @@ namespace CS2 {
 		namespace schemasystem {
 			// Class size: 0x180
 			namespace CSchemaSystemInternalRegistration /**/ {
-				constexpr std::ptrdiff_t m_Vector2D = 0x0; // GlobalTypes::Vector2D m_Vector2D; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Vector = 0x8; // GlobalTypes::Vector m_Vector; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_VectorWS = 0x14; // GlobalTypes::VectorWS m_VectorWS; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_VectorAligned = 0x20; // GlobalTypes::VectorAligned m_VectorAligned; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Quaternion = 0x30; // GlobalTypes::Quaternion m_Quaternion; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_QAngle = 0x40; // GlobalTypes::QAngle m_QAngle; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_RotationVector = 0x4c; // GlobalTypes::RotationVector m_RotationVector; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_RadianEuler = 0x58; // GlobalTypes::RadianEuler m_RadianEuler; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_DegreeEuler = 0x64; // GlobalTypes::DegreeEuler m_DegreeEuler; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_QuaternionStorage = 0x70; // GlobalTypes::QuaternionStorage m_QuaternionStorage; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_matrix3x4_t = 0x80; // GlobalTypes::matrix3x4_t m_matrix3x4_t; |  Schema_Atomic | Size: 0x30
-				constexpr std::ptrdiff_t m_matrix3x4a_t = 0xb0; // GlobalTypes::matrix3x4a_t m_matrix3x4a_t; |  Schema_Atomic | Size: 0x30
-				constexpr std::ptrdiff_t m_Color = 0xe0; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_Vector4D = 0xe4; // GlobalTypes::Vector4D m_Vector4D; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_CTransform = 0x100; // GlobalTypes::CTransform m_CTransform; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_pKeyValues = 0x120; // GlobalTypes::KeyValues* m_pKeyValues; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_CUtlBinaryBlock = 0x128; // GlobalTypes::CUtlBinaryBlock m_CUtlBinaryBlock; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_CUtlString = 0x138; // GlobalTypes::CUtlString m_CUtlString; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_CUtlSymbol = 0x140; // GlobalTypes::CUtlSymbol m_CUtlSymbol; |  Schema_Atomic | Size: 0x2
-				constexpr std::ptrdiff_t m_stringToken = 0x144; // GlobalTypes::CUtlStringToken m_stringToken; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_stringTokenWithStorage = 0x148; // GlobalTypes::CUtlStringTokenWithStorage m_stringTokenWithStorage; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ResourceTypes = 0x160; // GlobalTypes::CResourceArray< GlobalTypes::CResourcePointer< CResourceString > > m_ResourceTypes; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_KV3 = 0x168; // GlobalTypes::KeyValues3 m_KV3; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Vector2D = 0x0; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Vector = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_VectorWS = 0x14; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_VectorAligned = 0x20; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Quaternion = 0x30; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_QAngle = 0x40; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_RotationVector = 0x4c; // GlobalTypes::RotationVector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_RadianEuler = 0x58; // GlobalTypes::RadianEuler  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_DegreeEuler = 0x64; // GlobalTypes::DegreeEuler  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_QuaternionStorage = 0x70; // GlobalTypes::QuaternionStorage  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_matrix3x4_t = 0x80; // GlobalTypes::matrix3x4_t  | Schema_Atomic | Size: 0x30
+				constexpr std::ptrdiff_t m_matrix3x4a_t = 0xb0; // GlobalTypes::matrix3x4a_t  | Schema_Atomic | Size: 0x30
+				constexpr std::ptrdiff_t m_Color = 0xe0; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Vector4D = 0xe4; // GlobalTypes::Vector4D  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_CTransform = 0x100; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_pKeyValues = 0x120; // GlobalTypes::KeyValues**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_CUtlBinaryBlock = 0x128; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_CUtlString = 0x138; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_CUtlSymbol = 0x140; // GlobalTypes::CUtlSymbol  | Schema_Atomic | Size: 0x2
+				constexpr std::ptrdiff_t m_stringToken = 0x144; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_stringTokenWithStorage = 0x148; // GlobalTypes::CUtlStringTokenWithStorage  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ResourceTypes = 0x160; // GlobalTypes::CResourceArray<GlobalTypes::CResourcePointer<GlobalTypes::CResourceString>>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_KV3 = 0x168; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

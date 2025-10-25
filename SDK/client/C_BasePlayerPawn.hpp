@@ -47,7 +47,7 @@ namespace CS2 {
 			client::CPlayer_CameraServices* m_pCameraServices; // 0x1428 | Schema_Ptr | Size: 0x8
 			client::CPlayer_MovementServices* m_pMovementServices; // 0x1430 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x8);
-			// client::C_UtlVectorEmbeddedNetworkVar< client::ViewAngleServerChange_t > m_ServerViewAngleChanges; // 0x1440 | Schema_Atomic | Size: 0x68
+			// client::C_UtlVectorEmbeddedNetworkVar<client::ViewAngleServerChange_t> m_ServerViewAngleChanges; // 0x1440 | Schema_Atomic | Size: 0x68
 			char  m_ServerViewAngleChanges[0x68]; // 0x1440 | Schema_Atomic | Size: 0x68
 			GlobalTypes::QAngle v_angle; // 0x14a8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle v_anglePrevious; // 0x14b4 | Schema_Atomic | Size: 0xc
@@ -66,9 +66,9 @@ namespace CS2 {
 			float32 m_flOldSimulationTime; // 0x15ac | Schema_Builtin | Size: 0x4
 			int32_t m_nLastExecutedCommandNumber; // 0x15b0 | Schema_Builtin | Size: 0x4
 			int32_t m_nLastExecutedCommandTick; // 0x15b4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle< client::CBasePlayerController > m_hController; // 0x15b8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CBasePlayerController> m_hController; // 0x15b8 | Schema_Atomic | Size: 0x4
 			// char  m_hController[0x4]; // 0x15b8 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle< client::CBasePlayerController > m_hDefaultController; // 0x15bc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CBasePlayerController> m_hDefaultController; // 0x15bc | Schema_Atomic | Size: 0x4
 			// char  m_hDefaultController[0x4]; // 0x15bc | Schema_Atomic | Size: 0x4
 			bool m_bIsSwappingToPredictableController; // 0x15c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x9D0
 			namespace CTriggerSoundscape /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_hSoundscape = 0x9a8; // server::CHandle< server::CEnvSoundscapeTriggerable > m_hSoundscape; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_SoundscapeName = 0x9b0; // GlobalTypes::CUtlSymbolLarge m_SoundscapeName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_spectators = 0x9b8; // server::CUtlVector< server.dll::CHandle< CBasePlayerPawn > > m_spectators; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hSoundscape = 0x9a8; // GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_SoundscapeName = 0x9b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_spectators = 0x9b8; // server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerPawn>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

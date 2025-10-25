@@ -16,8 +16,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flAngularDampingRatio = 0x56c; // float32 m_flAngularDampingRatio; |  0x56c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEnableLinearConstraint = 0x570; // bool m_bEnableLinearConstraint; |  0x570 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnableAngularConstraint = 0x571; // bool m_bEnableAngularConstraint; |  0x571 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_sBoneName1 = 0x578; // GlobalTypes::CUtlSymbolLarge m_sBoneName1; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sBoneName2 = 0x580; // GlobalTypes::CUtlSymbolLarge m_sBoneName2; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sBoneName1 = 0x578; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sBoneName2 = 0x580; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

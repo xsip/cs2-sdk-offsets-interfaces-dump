@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flMinDrawVolumeSize = 0x0; // float32 m_flMinDrawVolumeSize; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bBuildBakedLighting = 0x4; // bool m_bBuildBakedLighting; |  0x4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAggregateInstanceStreams = 0x5; // bool m_bAggregateInstanceStreams; |  0x5 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bakedLightingInfo = 0x8; // worldrenderer::BakedLightingInfo_t m_bakedLightingInfo; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_bakedLightingInfo = 0x8; // worldrenderer::BakedLightingInfo_t  | Schema_DeclaredClass | Size: 0x48
 				constexpr std::ptrdiff_t m_nCompileTimestamp = 0x50; // uint64_t m_nCompileTimestamp; |  0x50 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_nCompileFingerprint = 0x58; // uint64_t m_nCompileFingerprint; |  0x58 | Schema_Builtin | Size: 0x8
 			}

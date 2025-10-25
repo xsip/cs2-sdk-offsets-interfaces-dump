@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,8 +28,8 @@ namespace CS2 {
 	namespace server {
 		class lerpdata_t  {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hEnt; // 0x0 | Schema_Atomic | Size: 0x4
-			char  m_hEnt[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEnt; // 0x0 | Schema_Atomic | Size: 0x4
+			// char  m_hEnt[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 			client::MoveType_t m_MoveType; // 0x4 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);
 			entity2::GameTime_t m_flStartTime; // 0x8 | Schema_DeclaredClass | Size: 0x4

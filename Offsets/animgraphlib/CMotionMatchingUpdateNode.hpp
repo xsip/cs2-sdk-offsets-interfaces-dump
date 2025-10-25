@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x148
 			namespace CMotionMatchingUpdateNode /*: public CS2::animgraphlib::CLeafUpdateNode*/ {
-				constexpr std::ptrdiff_t m_dataSet = 0x58; // animgraphlib::CMotionDataSet m_dataSet; |  Schema_DeclaredClass | Size: 0x20
-				constexpr std::ptrdiff_t m_metrics = 0x78; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CMotionMetricEvaluator > > m_metrics; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_weights = 0x90; // GlobalTypes::CUtlVector< float32 > m_weights; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_dataSet = 0x58; // animgraphlib::CMotionDataSet  | Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_metrics = 0x78; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CMotionMetricEvaluator>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_weights = 0x90; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bSearchEveryTick = 0xe0; // bool m_bSearchEveryTick; |  0xe0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flSearchInterval = 0xe4; // float32 m_flSearchInterval; |  0xe4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSearchWhenClipEnds = 0xe8; // bool m_bSearchWhenClipEnds; |  0xe8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSearchWhenGoalChanges = 0xe9; // bool m_bSearchWhenGoalChanges; |  0xe9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_blendCurve = 0xec; // animgraphlib::CBlendCurve m_blendCurve; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_blendCurve = 0xec; // animgraphlib::CBlendCurve  | Schema_DeclaredClass | Size: 0x8
 				constexpr std::ptrdiff_t m_flSampleRate = 0xf4; // float32 m_flSampleRate; |  0xf4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBlendTime = 0xf8; // float32 m_flBlendTime; |  0xf8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bLockClipWhenWaning = 0xfc; // bool m_bLockClipWhenWaning; |  0xfc | Schema_Builtin | Size: 0x1
@@ -27,7 +27,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bGoalAssist = 0x109; // bool m_bGoalAssist; |  0x109 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flGoalAssistDistance = 0x10c; // float32 m_flGoalAssistDistance; |  0x10c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flGoalAssistTolerance = 0x110; // float32 m_flGoalAssistTolerance; |  0x110 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_distanceScale_Damping = 0x118; // animgraphlib::CAnimInputDamping m_distanceScale_Damping; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_distanceScale_Damping = 0x118; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_flDistanceScale_OuterRadius = 0x130; // float32 m_flDistanceScale_OuterRadius; |  0x130 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDistanceScale_InnerRadius = 0x134; // float32 m_flDistanceScale_InnerRadius; |  0x134 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDistanceScale_MaxScale = 0x138; // float32 m_flDistanceScale_MaxScale; |  0x138 | Schema_Builtin | Size: 0x4

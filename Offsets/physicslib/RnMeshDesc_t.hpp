@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0xD8
 			namespace RnMeshDesc_t /*: public CS2::physicslib::RnShapeDesc_t*/ {
-				constexpr std::ptrdiff_t m_Mesh = 0x18; // physicslib::RnMesh_t m_Mesh; |  Schema_DeclaredClass | Size: 0xc0
+				constexpr std::ptrdiff_t m_Mesh = 0x18; // physicslib::RnMesh_t  | Schema_DeclaredClass | Size: 0xc0
 			}
 		}
 	}

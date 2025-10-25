@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x718
 			namespace C_EnvWindController /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_EnvWindShared = 0x5f8; // client::C_EnvWindShared m_EnvWindShared; |  Schema_DeclaredClass | Size: 0xf8
+				constexpr std::ptrdiff_t m_EnvWindShared = 0x5f8; // client::C_EnvWindShared  | Schema_DeclaredClass | Size: 0xf8
 				constexpr std::ptrdiff_t m_fDirectionVariation = 0x6f0; // float32 m_fDirectionVariation; |  0x6f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fSpeedVariation = 0x6f4; // float32 m_fSpeedVariation; |  0x6f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fTurbulence = 0x6f8; // float32 m_fTurbulence; |  0x6f8 | Schema_Builtin | Size: 0x4

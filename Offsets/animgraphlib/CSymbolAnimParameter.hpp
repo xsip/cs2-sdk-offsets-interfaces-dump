@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x88
 			namespace CSymbolAnimParameter /*: public CS2::animgraphlib::CConcreteAnimParameter*/ {
-				constexpr std::ptrdiff_t m_defaultValue = 0x80; // GlobalTypes::CGlobalSymbol m_defaultValue; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_defaultValue = 0x80; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

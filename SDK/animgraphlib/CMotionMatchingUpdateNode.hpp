@@ -25,7 +25,7 @@ namespace CS2 {
 		class CMotionMatchingUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
 			animgraphlib::CMotionDataSet m_dataSet; // 0x58 | Schema_DeclaredClass | Size: 0x20
-			GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CMotionMetricEvaluator > > m_metrics; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CMotionMetricEvaluator>> m_metrics; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_metrics[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< float32 > m_weights; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_weights[0x18]; // 0x90 | Schema_Atomic | Size: 0x18

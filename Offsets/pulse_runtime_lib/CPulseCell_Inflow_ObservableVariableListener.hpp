@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x88
 			namespace CPulseCell_Inflow_ObservableVariableListener /*: public CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint*/ {
-				constexpr std::ptrdiff_t m_nBlackboardReference = 0x80; // pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t m_nBlackboardReference; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_nBlackboardReference = 0x80; // pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bSelfReference = 0x82; // bool m_bSelfReference; |  0x82 | Schema_Builtin | Size: 0x1
 			}
 		}

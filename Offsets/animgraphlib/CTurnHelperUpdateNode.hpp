@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace CTurnHelperUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_facingTarget = 0x74; // animgraphlib::AnimValueSource m_facingTarget; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_facingTarget = 0x74; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_turnStartTimeOffset = 0x78; // float32 m_turnStartTimeOffset; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_turnDuration = 0x7c; // float32 m_turnDuration; |  0x7c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bMatchChildDuration = 0x80; // bool m_bMatchChildDuration; |  0x80 | Schema_Builtin | Size: 0x1

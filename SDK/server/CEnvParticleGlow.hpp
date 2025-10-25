@@ -25,7 +25,7 @@ namespace CS2 {
 			float32 m_flRadiusScale; // 0xd54 | Schema_Builtin | Size: 0x4
 			float32 m_flSelfIllumScale; // 0xd58 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_ColorTint; // 0xd5c | Schema_Atomic | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTextureOverride; // 0xd60 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hTextureOverride; // 0xd60 | Schema_Atomic | Size: 0x8
 			char  m_hTextureOverride[0x8]; // 0xd60 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CEnvParticleGlow, m_flAlphaScale) == 0xD50, "m_flAlphaScale in CEnvParticleGlow should be at offset 0xD50");

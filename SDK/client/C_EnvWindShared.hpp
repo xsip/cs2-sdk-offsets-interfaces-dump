@@ -41,7 +41,7 @@ namespace CS2 {
 			uint16_t m_iInitialWindDir; // 0x2a | Schema_Builtin | Size: 0x2
 			float32 m_flInitialWindSpeed; // 0x2c | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_location; // 0x30 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hEntOwner; // 0x3c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hEntOwner; // 0x3c | Schema_Atomic | Size: 0x4
 			// char  m_hEntOwner[0x4]; // 0x3c | Schema_Atomic | Size: 0x4
 			S2_PAD(0xb8); // End padding
 		};

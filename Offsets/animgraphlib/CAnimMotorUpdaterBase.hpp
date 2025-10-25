@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace CAnimMotorUpdaterBase /**/ {
-				constexpr std::ptrdiff_t m_name = 0x10; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_name = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bDefault = 0x18; // bool m_bDefault; |  0x18 | Schema_Builtin | Size: 0x1
 			}
 		}

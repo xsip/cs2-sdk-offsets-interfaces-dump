@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x1D8
 			namespace CSmartPropOperation_CreateLocator /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_LocatorName = 0x50; // GlobalTypes::CUtlString m_LocatorName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vOffset = 0x58; // GlobalTypes::CSmartPropAttributeVector m_vOffset; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flDisplayScale = 0x98; // GlobalTypes::CSmartPropAttributeFloat m_flDisplayScale; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bConfigurable = 0xd8; // GlobalTypes::CSmartPropAttributeBool m_bConfigurable; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bAllowTranslation = 0x118; // GlobalTypes::CSmartPropAttributeBool m_bAllowTranslation; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bAllowRotation = 0x158; // GlobalTypes::CSmartPropAttributeBool m_bAllowRotation; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bAllowScale = 0x198; // GlobalTypes::CSmartPropAttributeBool m_bAllowScale; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_LocatorName = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vOffset = 0x58; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flDisplayScale = 0x98; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bConfigurable = 0xd8; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bAllowTranslation = 0x118; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bAllowRotation = 0x158; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bAllowScale = 0x198; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

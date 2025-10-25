@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x20
 			namespace CAnimActivity /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString m_name; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_nActivity = 0x10; // int32_t m_nActivity; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nFlags = 0x14; // int32_t m_nFlags; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nWeight = 0x18; // int32_t m_nWeight; |  0x18 | Schema_Builtin | Size: 0x4

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x30
 			namespace CAnimComponentUpdater /**/ {
-				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_id = 0x20; // modellib::AnimComponentID m_id; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_networkMode = 0x24; // animgraphlib::AnimNodeNetworkMode m_networkMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_id = 0x20; // modellib::AnimComponentID  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_networkMode = 0x24; // animgraphlib::AnimNodeNetworkMode  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bStartEnabled = 0x28; // bool m_bStartEnabled; |  0x28 | Schema_Builtin | Size: 0x1
 			}
 		}

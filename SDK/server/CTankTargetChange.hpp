@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace server {
 		class CTankTargetChange : public CS2::server::CPointEntity {
 		public:
-			// GlobalTypes::CVariantBase< entity2::CVariantDefaultAllocator > m_newTarget; // 0x4f0 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator> m_newTarget; // 0x4f0 | Schema_Atomic | Size: 0x10
 			char  m_newTarget[0x10]; // 0x4f0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlSymbolLarge m_newTargetName; // 0x500 | Schema_Atomic | Size: 0x8
 		};

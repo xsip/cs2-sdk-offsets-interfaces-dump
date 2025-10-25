@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x80
 			namespace CVirtualAnimParameter /*: public CS2::animgraphlib::CAnimParameterBase*/ {
-				constexpr std::ptrdiff_t m_expressionString = 0x70; // GlobalTypes::CUtlString m_expressionString; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_eParamType = 0x78; // animgraphlib::AnimParamType_t m_eParamType; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_expressionString = 0x70; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_eParamType = 0x78; // animgraphlib::AnimParamType_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

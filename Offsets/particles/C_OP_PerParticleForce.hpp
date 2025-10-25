@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xA10
 			namespace C_OP_PerParticleForce /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_flForceScale = 0x1e0; // particleslib::CPerParticleFloatInput m_flForceScale; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_vForce = 0x350; // particleslib::CPerParticleVecInput m_vForce; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flForceScale = 0x1e0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vForce = 0x350; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_nCP = 0xa08; // int32_t m_nCP; |  0xa08 | Schema_Builtin | Size: 0x4
 			}
 		}

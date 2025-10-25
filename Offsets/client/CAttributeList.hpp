@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x78
 			namespace CAttributeList /**/ {
-				constexpr std::ptrdiff_t m_Attributes = 0x8; // client::C_UtlVectorEmbeddedNetworkVar< client::CEconItemAttribute > m_Attributes; |  Schema_Atomic | Size: 0x68
-				constexpr std::ptrdiff_t m_pManager = 0x70; // client::CAttributeManager* m_pManager; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_Attributes = 0x8; // client::C_UtlVectorEmbeddedNetworkVar<client::CEconItemAttribute>  | Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_pManager = 0x70; // client::CAttributeManager**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

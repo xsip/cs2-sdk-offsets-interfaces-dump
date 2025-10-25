@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,8 +28,8 @@ namespace CS2 {
 		public:
 			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x4f4 | Schema_Atomic | Size: 0x4
-			char  m_hTargetEntity[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4f4 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetEntity[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
 			// GlobalTypes::CEntityOutputTemplate< float32 > m_Distance; // 0x4f8 | Schema_Atomic | Size: 0x28
 			char  m_Distance[0x28]; // 0x4f8 | Schema_Atomic | Size: 0x28
 		};

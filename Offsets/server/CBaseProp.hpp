@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bModelOverrodeBlockLOS = 0xa90; // bool m_bModelOverrodeBlockLOS; |  0xa90 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iShapeType = 0xa94; // int32_t m_iShapeType; |  0xa94 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bConformToCollisionBounds = 0xa98; // bool m_bConformToCollisionBounds; |  0xa98 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_mPreferredCatchTransform = 0xaa0; // GlobalTypes::CTransform m_mPreferredCatchTransform; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_mPreferredCatchTransform = 0xaa0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0xA8
 			namespace ModelSkeletonData_t /**/ {
-				constexpr std::ptrdiff_t m_boneName = 0x0; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneName; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nParent = 0x18; // GlobalTypes::CUtlVector< int16 > m_nParent; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneSphere = 0x30; // GlobalTypes::CUtlVector< float32 > m_boneSphere; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nFlag = 0x48; // GlobalTypes::CUtlVector< uint32 > m_nFlag; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bonePosParent = 0x60; // GlobalTypes::CUtlGlobalTypes::Vector< Vector > m_bonePosParent; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneRotParent = 0x78; // GlobalTypes::CUtlVector< GlobalTypes::QuaternionStorage > m_boneRotParent; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneScaleParent = 0x90; // GlobalTypes::CUtlVector< float32 > m_boneScaleParent; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneName = 0x0; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nParent = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneSphere = 0x30; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nFlag = 0x48; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bonePosParent = 0x60; // GlobalTypes::CUtlVector<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneRotParent = 0x78; // GlobalTypes::CUtlVector<GlobalTypes::QuaternionStorage>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneScaleParent = 0x90; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

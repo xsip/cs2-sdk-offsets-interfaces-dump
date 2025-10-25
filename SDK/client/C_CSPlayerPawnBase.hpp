@@ -60,7 +60,7 @@ namespace CS2 {
 			float32 m_flLastSmokeAge; // 0x1634 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vLastSmokeOverlayColor; // 0x1638 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x1c);
-			GlobalTypes::CHandle< client::CCSPlayerController > m_hOriginalController; // 0x1660 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CCSPlayerController> m_hOriginalController; // 0x1660 | Schema_Atomic | Size: 0x4
 			// char  m_hOriginalController[0x4]; // 0x1660 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

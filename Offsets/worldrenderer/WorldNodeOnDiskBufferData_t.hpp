@@ -12,8 +12,8 @@ namespace CS2 {
 			namespace WorldNodeOnDiskBufferData_t /**/ {
 				constexpr std::ptrdiff_t m_nElementCount = 0x0; // int32_t m_nElementCount; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nElementSizeInBytes = 0x4; // int32_t m_nElementSizeInBytes; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_inputLayoutFields = 0x8; // GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pData = 0x20; // GlobalTypes::CUtlVector< uint8 > m_pData; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_inputLayoutFields = 0x8; // GlobalTypes::CUtlVector<modellib::RenderInputLayoutField_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pData = 0x20; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

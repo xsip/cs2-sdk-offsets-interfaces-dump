@@ -10,21 +10,21 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x948
 			namespace CCSPlayerController /*: public CS2::client::CBasePlayerController*/ {
-				constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x7f8; // client::CCSPlayerController_InGameMoneyServices* m_pInGameMoneyServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pInventoryServices = 0x800; // client::CCSPlayerController_InventoryServices* m_pInventoryServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pActionTrackingServices = 0x808; // client::CCSPlayerController_ActionTrackingServices* m_pActionTrackingServices; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pDamageServices = 0x810; // client::CCSPlayerController_DamageServices* m_pDamageServices; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pInGameMoneyServices = 0x7f8; // client::CCSPlayerController_InGameMoneyServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pInventoryServices = 0x800; // client::CCSPlayerController_InventoryServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pActionTrackingServices = 0x808; // client::CCSPlayerController_ActionTrackingServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pDamageServices = 0x810; // client::CCSPlayerController_DamageServices**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_iPing = 0x818; // uint32_t m_iPing; |  0x818 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHasCommunicationAbuseMute = 0x81c; // bool m_bHasCommunicationAbuseMute; |  0x81c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_uiCommunicationMuteFlags = 0x820; // uint32_t m_uiCommunicationMuteFlags; |  0x820 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szCrosshairCodes = 0x828; // GlobalTypes::CUtlSymbolLarge m_szCrosshairCodes; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szCrosshairCodes = 0x828; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iPendingTeamNum = 0x830; // uint8_t m_iPendingTeamNum; |  0x830 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flForceTeamTime = 0x834; // entity2::GameTime_t m_flForceTeamTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flForceTeamTime = 0x834; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_iCompTeammateColor = 0x838; // int32_t m_iCompTeammateColor; |  0x838 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bEverPlayedOnTeam = 0x83c; // bool m_bEverPlayedOnTeam; |  0x83c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flPreviousForceJoinTeamTime = 0x840; // entity2::GameTime_t m_flPreviousForceJoinTeamTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_szClan = 0x848; // GlobalTypes::CUtlSymbolLarge m_szClan; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sSanitizedPlayerName = 0x850; // GlobalTypes::CUtlString m_sSanitizedPlayerName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flPreviousForceJoinTeamTime = 0x840; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_szClan = 0x848; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sSanitizedPlayerName = 0x850; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iCoachingTeam = 0x858; // int32_t m_iCoachingTeam; |  0x858 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nPlayerDominated = 0x860; // uint64_t m_nPlayerDominated; |  0x860 | Schema_Builtin | Size: 0x8
 				constexpr std::ptrdiff_t m_nPlayerDominatingMe = 0x868; // uint64_t m_nPlayerDominatingMe; |  0x868 | Schema_Builtin | Size: 0x8
@@ -37,7 +37,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nEndMatchNextMapVote = 0x888; // int32_t m_nEndMatchNextMapVote; |  0x888 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unActiveQuestId = 0x88c; // uint16_t m_unActiveQuestId; |  0x88c | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_rtActiveMissionPeriod = 0x890; // uint32_t m_rtActiveMissionPeriod; |  0x890 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nQuestProgressReason = 0x894; // client::Reason m_nQuestProgressReason; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nQuestProgressReason = 0x894; // client::QuestProgress::Reason  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_unPlayerTvControlFlags = 0x898; // uint32_t m_unPlayerTvControlFlags; |  0x898 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iDraftIndex = 0x8c8; // int32_t m_iDraftIndex; |  0x8c8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_msQueuedModeDisconnectionTimestamp = 0x8cc; // uint32_t m_msQueuedModeDisconnectionTimestamp; |  0x8cc | Schema_Builtin | Size: 0x4
@@ -55,8 +55,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bHasBeenControlledByPlayerThisRound = 0x8f2; // bool m_bHasBeenControlledByPlayerThisRound; |  0x8f2 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nBotsControlledThisRound = 0x8f4; // int32_t m_nBotsControlledThisRound; |  0x8f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bCanControlObservedBot = 0x8f8; // bool m_bCanControlObservedBot; |  0x8f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hPlayerPawn = 0x8fc; // client::CHandle< client::C_CSPlayerPawn > m_hPlayerPawn; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hObserverPawn = 0x900; // client::CHandle< client::C_CSObserverPawn > m_hObserverPawn; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPlayerPawn = 0x8fc; // GlobalTypes::CHandle<client::C_CSPlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hObserverPawn = 0x900; // GlobalTypes::CHandle<client::C_CSObserverPawn>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bPawnIsAlive = 0x904; // bool m_bPawnIsAlive; |  0x904 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iPawnHealth = 0x908; // uint32_t m_iPawnHealth; |  0x908 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPawnArmor = 0x90c; // int32_t m_iPawnArmor; |  0x90c | Schema_Builtin | Size: 0x4
@@ -66,7 +66,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iPawnLifetimeStart = 0x914; // int32_t m_iPawnLifetimeStart; |  0x914 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPawnLifetimeEnd = 0x918; // int32_t m_iPawnLifetimeEnd; |  0x918 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPawnBotDifficulty = 0x91c; // int32_t m_iPawnBotDifficulty; |  0x91c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x920; // client::CHandle< client::CCSPlayerController > m_hOriginalControllerOfCurrentPawn; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hOriginalControllerOfCurrentPawn = 0x920; // GlobalTypes::CHandle<client::CCSPlayerController>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iScore = 0x924; // int32_t m_iScore; |  0x924 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_recentKillQueue = 0x928; // uint8_t m_recentKillQueue[8]; |  0x928 | Schema_FixedArray | Size: 0x8
 				constexpr std::ptrdiff_t m_nFirstKill = 0x930; // uint8_t m_nFirstKill; |  0x930 | Schema_Builtin | Size: 0x1

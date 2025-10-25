@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x88
 			namespace CPairedSequenceUpdateNode /*: public CS2::animgraphlib::CSequenceUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_sPairedSequenceRole = 0x78; // GlobalTypes::CGlobalSymbol m_sPairedSequenceRole; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sPairedSequenceRole = 0x78; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

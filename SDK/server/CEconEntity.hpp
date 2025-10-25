@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -30,8 +35,8 @@ namespace CS2 {
 			int32_t m_nFallbackSeed; // 0xe34 | Schema_Builtin | Size: 0x4
 			float32 m_flFallbackWear; // 0xe38 | Schema_Builtin | Size: 0x4
 			int32_t m_nFallbackStatTrak; // 0xe3c | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hOldProvidee; // 0xe40 | Schema_Atomic | Size: 0x4
-			char  m_hOldProvidee[0x4]; // 0xe40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOldProvidee; // 0xe40 | Schema_Atomic | Size: 0x4
+			// char  m_hOldProvidee[0x4]; // 0xe40 | Schema_Atomic | Size: 0x4
 			int32_t m_iOldOwnerClass; // 0xe44 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};

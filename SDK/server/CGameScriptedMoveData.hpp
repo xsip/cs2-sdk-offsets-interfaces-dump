@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -40,8 +45,8 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::Vector m_vDest; // 0x58 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_angDst; // 0x64 | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hDestEntity; // 0x70 | Schema_Atomic | Size: 0x4
-			char  m_hDestEntity[0x4]; // 0x70 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hDestEntity; // 0x70 | Schema_Atomic | Size: 0x4
+			// char  m_hDestEntity[0x4]; // 0x70 | Schema_Atomic | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CGameScriptedMoveData, m_vAccumulatedRootMotion) == 0x0, "m_vAccumulatedRootMotion in CGameScriptedMoveData should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CGameScriptedMoveData, m_angAccumulatedRootMotionRotation) == 0xC, "m_angAccumulatedRootMotionRotation in CGameScriptedMoveData should be at offset 0xC");

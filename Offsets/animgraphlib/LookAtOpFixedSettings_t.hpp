@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xD0
 			namespace LookAtOpFixedSettings_t /**/ {
-				constexpr std::ptrdiff_t m_attachment = 0x0; // modellib::CAnimAttachment m_attachment; |  Schema_DeclaredClass | Size: 0x80
-				constexpr std::ptrdiff_t m_damping = 0x80; // animgraphlib::CAnimInputDamping m_damping; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_bones = 0x98; // GlobalTypes::CUtlVector< animgraphlib::LookAtBone_t > m_bones; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_attachment = 0x0; // modellib::CAnimAttachment  | Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_damping = 0x80; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bones = 0x98; // GlobalTypes::CUtlVector<animgraphlib::LookAtBone_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flYawLimit = 0xb0; // float32 m_flYawLimit; |  0xb0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPitchLimit = 0xb4; // float32 m_flPitchLimit; |  0xb4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flHysteresisInnerAngle = 0xb8; // float32 m_flHysteresisInnerAngle; |  0xb8 | Schema_Builtin | Size: 0x4

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x40
 			namespace CSmartPropVariable_Vector2D /*: public CS2::smartprops::CSmartPropVariable*/ {
-				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // GlobalTypes::Vector2D m_DefaultValue; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_DefaultValue = 0x38; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

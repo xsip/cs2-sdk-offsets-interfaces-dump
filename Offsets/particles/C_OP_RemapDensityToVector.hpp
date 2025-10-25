@@ -11,11 +11,11 @@ namespace CS2 {
 			// Class size: 0x200
 			namespace C_OP_RemapDensityToVector /*: public CS2::particles::CParticleFunctionOperator*/ {
 				constexpr std::ptrdiff_t m_flRadiusScale = 0x1d0; // float32 m_flRadiusScale; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d4; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d4; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flDensityMin = 0x1d8; // float32 m_flDensityMin; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDensityMax = 0x1dc; // float32 m_flDensityMax; |  0x1dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOutputMin = 0x1e0; // GlobalTypes::Vector m_vecOutputMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOutputMax = 0x1ec; // GlobalTypes::Vector m_vecOutputMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOutputMin = 0x1e0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOutputMax = 0x1ec; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bUseParentDensity = 0x1f8; // bool m_bUseParentDensity; |  0x1f8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nVoxelGridResolution = 0x1fc; // int32_t m_nVoxelGridResolution; |  0x1fc | Schema_Builtin | Size: 0x4
 			}

@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x168
 			namespace CSmartPropOperation_MaterialTint /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_Material = 0x50; // GlobalTypes::CSmartPropAttributeMaterialName m_Material; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_SelectionMode = 0x90; // smartprops::CSmartPropAttributeColorSelectionMode m_SelectionMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_Color = 0xd0; // GlobalTypes::CSmartPropAttributeColor m_Color; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_Gradient = 0x110; // GlobalTypes::CColorGradient m_Gradient; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ColorPosition = 0x128; // GlobalTypes::CSmartPropAttributeFloat m_ColorPosition; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Material = 0x50; // GlobalTypes::CSmartPropAttributeMaterialName  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_SelectionMode = 0x90; // smartprops::CSmartPropAttributeColorSelectionMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_Color = 0xd0; // GlobalTypes::CSmartPropAttributeColor  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_Gradient = 0x110; // GlobalTypes::CColorGradient  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ColorPosition = 0x128; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

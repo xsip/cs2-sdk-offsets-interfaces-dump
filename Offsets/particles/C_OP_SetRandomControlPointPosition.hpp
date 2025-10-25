@@ -14,10 +14,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bOrient = 0x1d9; // bool m_bOrient; |  0x1d9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nCP1 = 0x1dc; // int32_t m_nCP1; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHeadLocation = 0x1e0; // int32_t m_nHeadLocation; |  0x1e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flReRandomRate = 0x1e8; // particleslib::CParticleCollectionFloatInput m_flReRandomRate; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_vecCPMinPos = 0x358; // GlobalTypes::Vector m_vecCPMinPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecCPMaxPos = 0x364; // GlobalTypes::Vector m_vecCPMaxPos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flInterpolation = 0x370; // particleslib::CParticleCollectionFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flReRandomRate = 0x1e8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecCPMinPos = 0x358; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCPMaxPos = 0x364; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flInterpolation = 0x370; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

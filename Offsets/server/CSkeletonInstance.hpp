@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x490
 			namespace CSkeletonInstance /*: public CS2::server::CGameSceneNode*/ {
-				constexpr std::ptrdiff_t m_modelState = 0x170; // server::CModelState m_modelState; |  Schema_DeclaredClass | Size: 0x280
+				constexpr std::ptrdiff_t m_modelState = 0x170; // server::CModelState  | Schema_DeclaredClass | Size: 0x280
 				constexpr std::ptrdiff_t m_bIsAnimationEnabled = 0x3f0; // bool m_bIsAnimationEnabled; |  0x3f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUseParentRenderBounds = 0x3f1; // bool m_bUseParentRenderBounds; |  0x3f1 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDisableSolidCollisionsForHierarchy = 0x3f2; // bool m_bDisableSolidCollisionsForHierarchy; |  0x3f2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_materialGroup = 0x3f4; // GlobalTypes::CUtlStringToken m_materialGroup; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_materialGroup = 0x3f4; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nHitboxSet = 0x3f8; // uint8_t m_nHitboxSet; |  0x3f8 | Schema_Builtin | Size: 0x1
 			}
 		}

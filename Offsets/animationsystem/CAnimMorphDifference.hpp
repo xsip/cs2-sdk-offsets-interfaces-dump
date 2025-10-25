@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x10
 			namespace CAnimMorphDifference /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString m_name; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

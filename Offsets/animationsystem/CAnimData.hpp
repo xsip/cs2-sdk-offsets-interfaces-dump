@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x70
 			namespace CAnimData /**/ {
-				constexpr std::ptrdiff_t m_name = 0x10; // GlobalTypes::CBufferString m_name; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_animArray = 0x20; // GlobalTypes::CUtlVector< animationsystem::CAnimDesc > m_animArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_decoderArray = 0x38; // GlobalTypes::CUtlVector< animationsystem::CAnimDecoder > m_decoderArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_name = 0x10; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_animArray = 0x20; // GlobalTypes::CUtlVector<animationsystem::CAnimDesc>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_decoderArray = 0x38; // GlobalTypes::CUtlVector<animationsystem::CAnimDecoder>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nMaxUniqueFrameIndex = 0x50; // int32_t m_nMaxUniqueFrameIndex; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_segmentArray = 0x58; // GlobalTypes::CUtlVector< animationsystem::CAnimFrameSegment > m_segmentArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_segmentArray = 0x58; // GlobalTypes::CUtlVector<animationsystem::CAnimFrameSegment>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

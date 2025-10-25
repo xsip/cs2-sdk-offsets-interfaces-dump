@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,8 +26,8 @@ namespace CS2 {
 	namespace server {
 		class CPointGiveAmmo : public CS2::server::CPointEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_pActivator; // 0x4f0 | Schema_Atomic | Size: 0x4
-			char  m_pActivator[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_pActivator; // 0x4f0 | Schema_Atomic | Size: 0x4
+			// char  m_pActivator[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPointGiveAmmo, m_pActivator) == 0x4F0, "m_pActivator in CPointGiveAmmo should be at offset 0x4F0");

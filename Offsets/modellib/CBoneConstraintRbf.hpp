@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0xC8
 			namespace CBoneConstraintRbf /*: public CS2::modellib::CBoneConstraintBase*/ {
-				constexpr std::ptrdiff_t m_inputBones = 0x20; // GlobalTypes::pair< CUtlString, uint32 > > m_inputBones; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_outputBones = 0x38; // GlobalTypes::pair< CUtlString, uint32 > > m_outputBones; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_inputBones = 0x20; // GlobalTypes::CUtlVector<std::pair< CUtlString, uint32 >>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_outputBones = 0x38; // GlobalTypes::CUtlVector<std::pair< CUtlString, uint32 >>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0xD0
 			namespace CVoiceContainerSwitch /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_soundsToPlay = 0xb8; // GlobalTypes::CUtlVector< soundsystem_voicecontainers::CSoundContainerReference > m_soundsToPlay; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_soundsToPlay = 0xb8; // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CSoundContainerReference>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

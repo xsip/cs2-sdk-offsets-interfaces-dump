@@ -26,7 +26,7 @@ namespace CS2 {
 		class CTakeDamageSummaryScopeGuard  {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CUtlVector< client::SummaryTakeDamageInfo_t* > m_vecSummaries; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::SummaryTakeDamageInfo_t*> m_vecSummaries; // 0x8 | Schema_Atomic | Size: 0x18
 			// char  m_vecSummaries[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::CTakeDamageSummaryScopeGuard, m_vecSummaries) == 0x8, "m_vecSummaries in CTakeDamageSummaryScopeGuard should be at offset 0x8");

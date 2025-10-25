@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace compositematerialslib {
 			// Class size: 0x60
 			namespace CompositeMaterialAssemblyProcedure_t /**/ {
-				constexpr std::ptrdiff_t m_vecCompMatIncludes = 0x0; // GlobalTypes::CUtlVector< GlobalTypes::CResourceNameTyped< CWeakHandle< InfoForResourceTypeCCompositeMaterialKit > > > m_vecCompMatIncludes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecMatchFilters = 0x18; // GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialMatchFilter_t > m_vecMatchFilters; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecCompositeInputContainers = 0x30; // GlobalTypes::CUtlVector< compositematerialslib::CompositeMaterialInputContainer_t > m_vecCompositeInputContainers; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecPropertyMutators = 0x48; // GlobalTypes::CUtlVector< compositematerialslib::CompMatPropertyMutator_t > m_vecPropertyMutators; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCompMatIncludes = 0x0; // GlobalTypes::CUtlVector<GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCCompositeMaterialKit>>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecMatchFilters = 0x18; // GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterialMatchFilter_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCompositeInputContainers = 0x30; // GlobalTypes::CUtlVector<compositematerialslib::CompositeMaterialInputContainer_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecPropertyMutators = 0x48; // GlobalTypes::CUtlVector<compositematerialslib::CompMatPropertyMutator_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

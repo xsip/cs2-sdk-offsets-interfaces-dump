@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace client {
 		class C_GradientFog : public CS2::client::C_BaseEntity {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hGradientFogTexture; // 0x5f8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hGradientFogTexture; // 0x5f8 | Schema_Atomic | Size: 0x8
 			char  m_hGradientFogTexture[0x8]; // 0x5f8 | Schema_Atomic | Size: 0x8
 			float32 m_flFogStartDistance; // 0x600 | Schema_Builtin | Size: 0x4
 			float32 m_flFogEndDistance; // 0x604 | Schema_Builtin | Size: 0x4

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0x20
 			namespace CDspPresetModifierList /**/ {
-				constexpr std::ptrdiff_t m_dspName = 0x0; // GlobalTypes::CUtlString m_dspName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_modifiers = 0x8; // GlobalTypes::CUtlVector< soundsystem::CDSPMixgroupModifier > m_modifiers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_dspName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_modifiers = 0x8; // GlobalTypes::CUtlVector<soundsystem::CDSPMixgroupModifier>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

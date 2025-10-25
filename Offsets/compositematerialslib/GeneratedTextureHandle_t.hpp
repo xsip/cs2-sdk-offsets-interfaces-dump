@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace compositematerialslib {
 			// Class size: 0x60
 			namespace GeneratedTextureHandle_t /**/ {
-				constexpr std::ptrdiff_t m_strBitmapName = 0x0; // GlobalTypes::CUtlString m_strBitmapName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strBitmapName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

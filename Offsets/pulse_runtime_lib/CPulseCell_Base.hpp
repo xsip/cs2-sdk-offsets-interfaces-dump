@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x48
 			namespace CPulseCell_Base /**/ {
-				constexpr std::ptrdiff_t m_nEditorNodeID = 0x8; // pulse_runtime_lib::PulseDocNodeID_t m_nEditorNodeID; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nEditorNodeID = 0x8; // pulse_runtime_lib::PulseDocNodeID_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

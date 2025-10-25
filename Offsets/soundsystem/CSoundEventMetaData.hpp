@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0x8
 			namespace CSoundEventMetaData /**/ {
-				constexpr std::ptrdiff_t m_soundEventVMix = 0x0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCVMixListResource > m_soundEventVMix; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_soundEventVMix = 0x0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVMixListResource>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

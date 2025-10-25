@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x80
 			namespace CPulseCell_Inflow_BaseEntrypoint /*: public CS2::pulse_runtime_lib::CPulseCell_BaseFlow*/ {
-				constexpr std::ptrdiff_t m_EntryChunk = 0x48; // pulse_runtime_lib::PulseRuntimeChunkIndex_t m_EntryChunk; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_RegisterMap = 0x50; // pulse_runtime_lib::PulseRegisterMap_t m_RegisterMap; |  Schema_DeclaredClass | Size: 0x30
+				constexpr std::ptrdiff_t m_EntryChunk = 0x48; // pulse_runtime_lib::PulseRuntimeChunkIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_RegisterMap = 0x50; // pulse_runtime_lib::PulseRegisterMap_t  | Schema_DeclaredClass | Size: 0x30
 			}
 		}
 	}

@@ -22,8 +22,8 @@ namespace CS2 {
 	namespace server {
 		class CEntityFlame : public CS2::server::CBaseEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hEntAttached; // 0x4f0 | Schema_Atomic | Size: 0x4
-			char  m_hEntAttached[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntAttached; // 0x4f0 | Schema_Atomic | Size: 0x4
+			// char  m_hEntAttached[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			bool m_bCheapEffect; // 0x4f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flSize; // 0x4f8 | Schema_Builtin | Size: 0x4
@@ -32,8 +32,8 @@ namespace CS2 {
 			int32_t m_iNumHitboxFires; // 0x500 | Schema_Builtin | Size: 0x4
 			float32 m_flHitboxFireScale; // 0x504 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flLifetime; // 0x508 | Schema_DeclaredClass | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hAttacker; // 0x50c | Schema_Atomic | Size: 0x4
-			char  m_hAttacker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttacker; // 0x50c | Schema_Atomic | Size: 0x4
+			// char  m_hAttacker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
 			float32 m_flDirectDamagePerSecond; // 0x510 | Schema_Builtin | Size: 0x4
 			int32_t m_iCustomDamageType; // 0x514 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding

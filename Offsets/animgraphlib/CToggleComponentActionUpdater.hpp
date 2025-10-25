@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace CToggleComponentActionUpdater /*: public CS2::animgraphlib::CAnimActionUpdater*/ {
-				constexpr std::ptrdiff_t m_componentID = 0x18; // modellib::AnimComponentID m_componentID; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_componentID = 0x18; // modellib::AnimComponentID  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bSetEnabled = 0x1c; // bool m_bSetEnabled; |  0x1c | Schema_Builtin | Size: 0x1
 			}
 		}

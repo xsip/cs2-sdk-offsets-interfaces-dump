@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x30
 			namespace CursorState_t /**/ {
-				constexpr std::ptrdiff_t m_TagName = 0x0; // GlobalTypes::PulseSymbol_t m_TagName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_TagName = 0x0; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

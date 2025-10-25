@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x50
 			namespace CCSPlayer_UseServices /*: public CS2::server::CPlayer_UseServices*/ {
-				constexpr std::ptrdiff_t m_hLastKnownUseEntity = 0x40; // server::CHandle< server::CBaseEntity > m_hLastKnownUseEntity; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastUseTimeStamp = 0x44; // entity2::GameTime_t m_flLastUseTimeStamp; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeLastUsedWindow = 0x48; // entity2::GameTime_t m_flTimeLastUsedWindow; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hLastKnownUseEntity = 0x40; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastUseTimeStamp = 0x44; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeLastUsedWindow = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

@@ -10,27 +10,27 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x128
 			namespace CTakeDamageInfo /**/ {
-				constexpr std::ptrdiff_t m_vecDamageForce = 0x8; // GlobalTypes::Vector m_vecDamageForce; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecDamagePosition = 0x14; // GlobalTypes::VectorWS m_vecDamagePosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecReportedPosition = 0x20; // GlobalTypes::VectorWS m_vecReportedPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecDamageDirection = 0x2c; // GlobalTypes::Vector m_vecDamageDirection; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hInflictor = 0x38; // client::CHandle< client::C_BaseEntity > m_hInflictor; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hAttacker = 0x3c; // client::CHandle< client::C_BaseEntity > m_hAttacker; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hAbility = 0x40; // client::CHandle< client::C_BaseEntity > m_hAbility; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecDamageForce = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecDamagePosition = 0x14; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecReportedPosition = 0x20; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecDamageDirection = 0x2c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hInflictor = 0x38; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hAttacker = 0x3c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hAbility = 0x40; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flDamage = 0x44; // float32 m_flDamage; |  0x44 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTotalledDamage = 0x48; // float32 m_flTotalledDamage; |  0x48 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bitsDamageType = 0x4c; // client::DamageTypes_t m_bitsDamageType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bitsDamageType = 0x4c; // client::DamageTypes_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_iDamageCustom = 0x50; // int32_t m_iDamageCustom; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iAmmoType = 0x54; // client::AmmoIndex_t m_iAmmoType; |  Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_iAmmoType = 0x54; // client::AmmoIndex_t  | Schema_DeclaredClass | Size: 0x1
 				constexpr std::ptrdiff_t m_flOriginalDamage = 0x60; // float32 m_flOriginalDamage; |  0x60 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bShouldBleed = 0x64; // bool m_bShouldBleed; |  0x64 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bShouldSpark = 0x65; // bool m_bShouldSpark; |  0x65 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nDamageFlags = 0x70; // client::TakeDamageFlags_t m_nDamageFlags; |  Schema_DeclaredEnum | Size: 0x8
-				constexpr std::ptrdiff_t m_sDamageSourceName = 0x78; // GlobalTypes::CGlobalSymbol m_sDamageSourceName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iHitGroupId = 0x80; // client::HitGroup_t m_iHitGroupId; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDamageFlags = 0x70; // client::TakeDamageFlags_t  | Schema_DeclaredEnum | Size: 0x8
+				constexpr std::ptrdiff_t m_sDamageSourceName = 0x78; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iHitGroupId = 0x80; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nNumObjectsPenetrated = 0x84; // int32_t m_nNumObjectsPenetrated; |  0x84 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFriendlyFireDamageReductionRatio = 0x88; // float32 m_flFriendlyFireDamageReductionRatio; |  0x88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructibleHitGroupsToForceDestroy = 0x108; // GlobalTypes::CUtlVector< client::DestructibleHitGroupToDestroy_t > m_nDestructibleHitGroupsToForceDestroy; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nDestructibleHitGroupsToForceDestroy = 0x108; // GlobalTypes::CUtlVector<client::DestructibleHitGroupToDestroy_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bInTakeDamageFlow = 0x120; // bool m_bInTakeDamageFlow; |  0x120 | Schema_Builtin | Size: 0x1
 			}
 		}

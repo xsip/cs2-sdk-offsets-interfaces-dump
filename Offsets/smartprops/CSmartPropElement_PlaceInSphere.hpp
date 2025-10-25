@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x320
 			namespace CSmartPropElement_PlaceInSphere /*: public CS2::smartprops::CSmartPropElement_Group*/ {
-				constexpr std::ptrdiff_t m_PlacementMode = 0xa0; // smartprops::CSmartPropAttributeRadiusPlacementMode m_PlacementMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_DistributionMode = 0xe0; // smartprops::CSmartPropAttributeDistributionMode m_DistributionMode; |  Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_flRandomness = 0x120; // GlobalTypes::CSmartPropAttributeFloat m_flRandomness; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vPlaneUpDirection = 0x160; // GlobalTypes::CSmartPropAttributeVector m_vPlaneUpDirection; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nCountMin = 0x1a0; // GlobalTypes::CSmartPropAttributeInt m_nCountMin; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_nCountMax = 0x1e0; // GlobalTypes::CSmartPropAttributeInt m_nCountMax; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flPositionRadiusInner = 0x220; // GlobalTypes::CSmartPropAttributeFloat m_flPositionRadiusInner; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flPositionRadiusOuter = 0x260; // GlobalTypes::CSmartPropAttributeFloat m_flPositionRadiusOuter; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bAlignOrientation = 0x2a0; // GlobalTypes::CSmartPropAttributeBool m_bAlignOrientation; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vAlignDirection = 0x2e0; // GlobalTypes::CSmartPropAttributeVector m_vAlignDirection; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_PlacementMode = 0xa0; // smartprops::CSmartPropAttributeRadiusPlacementMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_DistributionMode = 0xe0; // smartprops::CSmartPropAttributeDistributionMode  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_flRandomness = 0x120; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vPlaneUpDirection = 0x160; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nCountMin = 0x1a0; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_nCountMax = 0x1e0; // GlobalTypes::CSmartPropAttributeInt  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flPositionRadiusInner = 0x220; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flPositionRadiusOuter = 0x260; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bAlignOrientation = 0x2a0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vAlignDirection = 0x2e0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

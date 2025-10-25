@@ -11,24 +11,24 @@ namespace CS2 {
 			// Class size: 0x920
 			namespace CEnvBeam /*: public CS2::server::CBeam*/ {
 				constexpr std::ptrdiff_t m_active = 0x878; // int32_t m_active; |  0x878 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_spriteTexture = 0x880; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_spriteTexture; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszStartEntity = 0x888; // GlobalTypes::CUtlSymbolLarge m_iszStartEntity; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszEndEntity = 0x890; // GlobalTypes::CUtlSymbolLarge m_iszEndEntity; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_spriteTexture = 0x880; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszStartEntity = 0x888; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEndEntity = 0x890; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_life = 0x898; // float32 m_life; |  0x898 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_boltWidth = 0x89c; // float32 m_boltWidth; |  0x89c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_noiseAmplitude = 0x8a0; // float32 m_noiseAmplitude; |  0x8a0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_speed = 0x8a4; // int32_t m_speed; |  0x8a4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_restrike = 0x8a8; // float32 m_restrike; |  0x8a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSpriteName = 0x8b0; // GlobalTypes::CUtlSymbolLarge m_iszSpriteName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSpriteName = 0x8b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_frameStart = 0x8b8; // int32_t m_frameStart; |  0x8b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vEndPointWorld = 0x8bc; // GlobalTypes::VectorWS m_vEndPointWorld; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vEndPointRelative = 0x8c8; // GlobalTypes::Vector m_vEndPointRelative; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vEndPointWorld = 0x8bc; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vEndPointRelative = 0x8c8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_radius = 0x8d4; // float32 m_radius; |  0x8d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TouchType = 0x8d8; // server::Touch_t m_TouchType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iFilterName = 0x8e0; // GlobalTypes::CUtlSymbolLarge m_iFilterName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFilter = 0x8e8; // server::CHandle< server::CBaseEntity > m_hFilter; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iszDecal = 0x8f0; // GlobalTypes::CUtlSymbolLarge m_iszDecal; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OnTouchedByEntity = 0x8f8; // entity2::CEntityIOOutput m_OnTouchedByEntity; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_TouchType = 0x8d8; // server::Touch_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iFilterName = 0x8e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFilter = 0x8e8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszDecal = 0x8f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnTouchedByEntity = 0x8f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

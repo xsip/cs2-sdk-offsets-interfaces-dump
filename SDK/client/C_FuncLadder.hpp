@@ -23,7 +23,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector m_vecLadderDir; // 0xeb0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector< GlobalTypes::CHandle< C_InfoLadderDismount > > m_Dismounts; // 0xec0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<client::C_InfoLadderDismount>> m_Dismounts; // 0xec0 | Schema_Atomic | Size: 0x18
 			// char  m_Dismounts[0x18]; // 0xec0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector m_vecLocalTop; // 0xed8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::VectorWS m_vecPlayerMountPositionTop; // 0xee4 | Schema_Atomic | Size: 0xc

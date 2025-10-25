@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x6E8
 			namespace CSoundOpvarSetAutoRoomEntity /*: public CS2::server::CSoundOpvarSetPointEntity*/ {
-				constexpr std::ptrdiff_t m_traceResults = 0x6a8; // GlobalTypes::CUtlVector< server::SoundOpvarTraceResult_t > m_traceResults; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_doorwayPairs = 0x6c0; // GlobalTypes::CUtlVector< server::AutoRoomDoorwayPairs_t > m_doorwayPairs; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_traceResults = 0x6a8; // GlobalTypes::CUtlVector<server::SoundOpvarTraceResult_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_doorwayPairs = 0x6c0; // GlobalTypes::CUtlVector<server::AutoRoomDoorwayPairs_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flSize = 0x6d8; // float32 m_flSize; |  0x6d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flHeightTolerance = 0x6dc; // float32 m_flHeightTolerance; |  0x6dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSizeSqr = 0x6e0; // float32 m_flSizeSqr; |  0x6e0 | Schema_Builtin | Size: 0x4

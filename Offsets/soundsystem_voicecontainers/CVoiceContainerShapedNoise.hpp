@@ -12,13 +12,13 @@ namespace CS2 {
 			namespace CVoiceContainerShapedNoise /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
 				constexpr std::ptrdiff_t m_bUseCurveForFrequency = 0xb8; // bool m_bUseCurveForFrequency; |  0xb8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flFrequency = 0xbc; // float32 m_flFrequency; |  0xbc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_frequencySweep = 0xc0; // GlobalTypes::CPiecewiseCurve m_frequencySweep; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_frequencySweep = 0xc0; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 				constexpr std::ptrdiff_t m_bUseCurveForResonance = 0x100; // bool m_bUseCurveForResonance; |  0x100 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flResonance = 0x104; // float32 m_flResonance; |  0x104 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_resonanceSweep = 0x108; // GlobalTypes::CPiecewiseCurve m_resonanceSweep; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_resonanceSweep = 0x108; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 				constexpr std::ptrdiff_t m_bUseCurveForAmplitude = 0x148; // bool m_bUseCurveForAmplitude; |  0x148 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flGainInDecibels = 0x14c; // float32 m_flGainInDecibels; |  0x14c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_gainSweep = 0x150; // GlobalTypes::CPiecewiseCurve m_gainSweep; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_gainSweep = 0x150; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

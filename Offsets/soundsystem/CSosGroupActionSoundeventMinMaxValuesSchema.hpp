@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace soundsystem {
 			// Class size: 0x40
 			namespace CSosGroupActionSoundeventMinMaxValuesSchema /*: public CS2::soundsystem::CSosGroupActionSchema*/ {
-				constexpr std::ptrdiff_t m_strQueryPublicFieldName = 0x8; // GlobalTypes::CUtlString m_strQueryPublicFieldName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strDelayPublicFieldName = 0x10; // GlobalTypes::CUtlString m_strDelayPublicFieldName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strQueryPublicFieldName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strDelayPublicFieldName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bExcludeStoppedSounds = 0x18; // bool m_bExcludeStoppedSounds; |  0x18 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bExcludeDelayedSounds = 0x19; // bool m_bExcludeDelayedSounds; |  0x19 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bExcludeSoundsBelowThreshold = 0x1a; // bool m_bExcludeSoundsBelowThreshold; |  0x1a | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flExcludeSoundsMinThresholdValue = 0x1c; // float32 m_flExcludeSoundsMinThresholdValue; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bExcludSoundsAboveThreshold = 0x20; // bool m_bExcludSoundsAboveThreshold; |  0x20 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flExcludeSoundsMaxThresholdValue = 0x24; // float32 m_flExcludeSoundsMaxThresholdValue; |  0x24 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_strMinValueName = 0x28; // GlobalTypes::CUtlString m_strMinValueName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strMaxValueName = 0x30; // GlobalTypes::CUtlString m_strMaxValueName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMinValueName = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMaxValueName = 0x30; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

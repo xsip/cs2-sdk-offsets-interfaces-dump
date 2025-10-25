@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x48
 			namespace CMotionNodeBlend1D /*: public CS2::animgraphlib::CMotionNode*/ {
-				constexpr std::ptrdiff_t m_blendItems = 0x28; // GlobalTypes::CUtlVector< animgraphlib::MotionBlendItem > m_blendItems; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_blendItems = 0x28; // GlobalTypes::CUtlVector<animgraphlib::MotionBlendItem>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nParamIndex = 0x40; // int32_t m_nParamIndex; |  0x40 | Schema_Builtin | Size: 0x4
 			}
 		}

@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x3A0
 			namespace C_OP_RenderVRHapticEvent /*: public CS2::particles::CParticleFunctionRenderer*/ {
-				constexpr std::ptrdiff_t m_nHand = 0x220; // particles::ParticleVRHandChoiceList_t m_nHand; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nHand = 0x220; // particles::ParticleVRHandChoiceList_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutputHandCP = 0x224; // int32_t m_nOutputHandCP; |  0x224 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutputField = 0x228; // int32_t m_nOutputField; |  0x228 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAmplitude = 0x230; // particleslib::CPerParticleFloatInput m_flAmplitude; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flAmplitude = 0x230; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

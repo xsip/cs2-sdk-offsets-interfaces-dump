@@ -25,7 +25,7 @@ namespace CS2 {
 	namespace modellib {
 		class CRenderSkeleton  {
 		public:
-			GlobalTypes::CUtlVector< modellib::RenderSkeletonBone_t > m_bones; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::RenderSkeletonBone_t> m_bones; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_bones[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			GlobalTypes::CUtlVector< int32 > m_boneParents; // 0x30 | Schema_Atomic | Size: 0x18

@@ -17,17 +17,17 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bEnableProjectedDepthControls = 0x224; // bool m_bEnableProjectedDepthControls; |  0x224 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMinProjectionDepth = 0x228; // float32 m_flMinProjectionDepth; |  0x228 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxProjectionDepth = 0x22c; // float32 m_flMaxProjectionDepth; |  0x22c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecProjectedMaterials = 0x230; // GlobalTypes::CUtlVector< particles::RenderProjectedMaterial_t > m_vecProjectedMaterials; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flMaterialSelection = 0x248; // particleslib::CPerParticleFloatInput m_flMaterialSelection; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecProjectedMaterials = 0x230; // GlobalTypes::CUtlVector<particles::RenderProjectedMaterial_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flMaterialSelection = 0x248; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flAnimationTimeScale = 0x3b8; // float32 m_flAnimationTimeScale; |  0x3b8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bOrientToNormal = 0x3bc; // bool m_bOrientToNormal; |  0x3bc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_MaterialVars = 0x3c0; // GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flRadiusScale = 0x3d8; // particleslib::CParticleCollectionFloatInput m_flRadiusScale; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flAlphaScale = 0x548; // particleslib::CParticleCollectionFloatInput m_flAlphaScale; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flRollScale = 0x6b8; // particleslib::CParticleCollectionFloatInput m_flRollScale; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nAlpha2Field = 0x828; // particles::ParticleAttributeIndex_t m_nAlpha2Field; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecColorScale = 0x830; // particleslib::CParticleCollectionVecInput m_vecColorScale; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_nColorBlendType = 0xee8; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_MaterialVars = 0x3c0; // GlobalTypes::CUtlVector<particles::MaterialVariable_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flRadiusScale = 0x3d8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flAlphaScale = 0x548; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flRollScale = 0x6b8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nAlpha2Field = 0x828; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecColorScale = 0x830; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nColorBlendType = 0xee8; // particles::ParticleColorBlendType_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem_lowlevel {
 			// Class size: 0x18
 			namespace VMixUtilityDesc_t /**/ {
-				constexpr std::ptrdiff_t m_nOp = 0x0; // soundsystem_lowlevel::VMixChannelOperation_t m_nOp; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nOp = 0x0; // soundsystem_lowlevel::VMixChannelOperation_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flInputPan = 0x4; // float32 m_flInputPan; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flOutputBalance = 0x8; // float32 m_flOutputBalance; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fldbOutputGain = 0xc; // float32 m_fldbOutputGain; |  0xc | Schema_Builtin | Size: 0x4

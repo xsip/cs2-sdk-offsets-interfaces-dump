@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x4F8
 			namespace CCSGameRulesProxy /*: public CS2::server::CGameRulesProxy*/ {
-				constexpr std::ptrdiff_t m_pGameRules = 0x4f0; // server::CCSGameRules* m_pGameRules; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pGameRules = 0x4f0; // server::CCSGameRules**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

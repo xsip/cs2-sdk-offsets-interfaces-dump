@@ -11,10 +11,10 @@ namespace CS2 {
 			// Class size: 0x358
 			namespace C_OP_DistanceCull /*: public CS2::particles::CParticleFunctionOperator*/ {
 				constexpr std::ptrdiff_t m_nControlPoint = 0x1d0; // int32_t m_nControlPoint; |  0x1d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecPointOffset = 0x1d4; // GlobalTypes::Vector m_vecPointOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flDistance = 0x1e0; // particleslib::CParticleCollectionFloatInput m_flDistance; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecPointOffset = 0x1d4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flDistance = 0x1e0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bCullInside = 0x350; // bool m_bCullInside; |  0x350 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nAttribute = 0x354; // particles::ParticleAttributeIndex_t m_nAttribute; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nAttribute = 0x354; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

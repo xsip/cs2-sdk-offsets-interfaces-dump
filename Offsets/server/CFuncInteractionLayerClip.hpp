@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x7F0
 			namespace CFuncInteractionLayerClip /*: public CS2::server::CBaseModelEntity*/ {
 				constexpr std::ptrdiff_t m_bDisabled = 0x7d8; // bool m_bDisabled; |  0x7d8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszInteractsAs = 0x7e0; // GlobalTypes::CUtlSymbolLarge m_iszInteractsAs; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszInteractsWith = 0x7e8; // GlobalTypes::CUtlSymbolLarge m_iszInteractsWith; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszInteractsAs = 0x7e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszInteractsWith = 0x7e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

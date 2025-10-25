@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x10
 			namespace MoodAnimation_t /**/ {
-				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CModelAnimNameWithDeltas m_sName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CModelAnimNameWithDeltas  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flWeight = 0x8; // float32 m_flWeight; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

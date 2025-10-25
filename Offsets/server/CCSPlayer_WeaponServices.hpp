@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x18E0
 			namespace CCSPlayer_WeaponServices /*: public CS2::server::CPlayer_WeaponServices*/ {
-				constexpr std::ptrdiff_t m_flNextAttack = 0xb8; // entity2::GameTime_t m_flNextAttack; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextAttack = 0xb8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsLookingAtWeapon = 0xbc; // bool m_bIsLookingAtWeapon; |  0xbc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsHoldingLookAtWeapon = 0xbd; // bool m_bIsHoldingLookAtWeapon; |  0xbd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hSavedWeapon = 0xc0; // server::CHandle< server::CBasePlayerWeapon > m_hSavedWeapon; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSavedWeapon = 0xc0; // GlobalTypes::CHandle<server::CBasePlayerWeapon>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nTimeToMelee = 0xc4; // int32_t m_nTimeToMelee; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTimeToSecondary = 0xc8; // int32_t m_nTimeToSecondary; |  0xc8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTimeToPrimary = 0xcc; // int32_t m_nTimeToPrimary; |  0xcc | Schema_Builtin | Size: 0x4
@@ -23,7 +23,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bPickedUpWeapon = 0xd6; // bool m_bPickedUpWeapon; |  0xd6 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDisableAutoDeploy = 0xd7; // bool m_bDisableAutoDeploy; |  0xd7 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsPickingUpGroundWeapon = 0xd8; // bool m_bIsPickingUpGroundWeapon; |  0xd8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_networkAnimTiming = 0x18c0; // GlobalTypes::CNetworkUtlVectorBase< uint8 > m_networkAnimTiming; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_networkAnimTiming = 0x18c0; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_bBlockInspectUntilNextGraphUpdate = 0x18d8; // bool m_bBlockInspectUntilNextGraphUpdate; |  0x18d8 | Schema_Builtin | Size: 0x1
 			}
 		}

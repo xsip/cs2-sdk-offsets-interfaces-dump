@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xB8
 			namespace CMovementComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_motors = 0x30; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimMotorUpdaterBase > > m_motors; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_facingDamping = 0x48; // animgraphlib::CAnimInputDamping m_facingDamping; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_motors = 0x30; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimMotorUpdaterBase>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_facingDamping = 0x48; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_nDefaultMotorIndex = 0x68; // int32_t m_nDefaultMotorIndex; |  0x68 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDefaultRunSpeed = 0x6c; // float32 m_flDefaultRunSpeed; |  0x6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bMoveVarsDisabled = 0x70; // bool m_bMoveVarsDisabled; |  0x70 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bNetworkPath = 0x71; // bool m_bNetworkPath; |  0x71 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bNetworkFacing = 0x72; // bool m_bNetworkFacing; |  0x72 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_paramHandles = 0x73; // animgraphlib::CAnimParamHandle m_paramHandles[34]; |  Schema_FixedArray | Size: 0x908
+				constexpr std::ptrdiff_t m_paramHandles = 0x73; // GlobalTypes::CAnimParamHandle[34]  | Schema_FixedArray | Size: 0x908
 			}
 		}
 	}

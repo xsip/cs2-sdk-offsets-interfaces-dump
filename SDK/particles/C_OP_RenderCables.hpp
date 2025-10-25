@@ -31,7 +31,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x500 | Schema_DeclaredClass | Size: 0x6b8
 			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xbb8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0xbc0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0xbc0 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0xbc0 | Schema_Atomic | Size: 0x8
 			particles::TextureRepetitionMode_t m_nTextureRepetitionMode; // 0xbc8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
@@ -52,10 +52,10 @@ namespace CS2 {
 			bool m_nForceRoundnessFixed; // 0x148c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			particleslib::CParticleTransformInput m_LightingTransform; // 0x1490 | Schema_DeclaredClass | Size: 0x68
-			// GlobalTypes::CUtlLeanVector< particles::FloatInputMaterialVariable_t > m_MaterialFloatVars; // 0x14f8 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<particles::FloatInputMaterialVariable_t> m_MaterialFloatVars; // 0x14f8 | Schema_Atomic | Size: 0x10
 			char  m_MaterialFloatVars[0x10]; // 0x14f8 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10);
-			// GlobalTypes::CUtlLeanVector< particles::VecInputMaterialVariable_t > m_MaterialVecVars; // 0x1518 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<particles::VecInputMaterialVariable_t> m_MaterialVecVars; // 0x1518 | Schema_Atomic | Size: 0x10
 			char  m_MaterialVecVars[0x10]; // 0x1518 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10); // End padding
 		};

@@ -12,11 +12,11 @@ namespace CS2 {
 			namespace CCSPlayerBase_CameraServices /*: public CS2::server::CPlayer_CameraServices*/ {
 				constexpr std::ptrdiff_t m_iFOV = 0x170; // uint32_t m_iFOV; |  0x170 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iFOVStart = 0x174; // uint32_t m_iFOVStart; |  0x174 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFOVTime = 0x178; // entity2::GameTime_t m_flFOVTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flFOVTime = 0x178; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flFOVRate = 0x17c; // float32 m_flFOVRate; |  0x17c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hZoomOwner = 0x180; // server::CHandle< server::CBaseEntity > m_hZoomOwner; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTriggerFogList = 0x188; // server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTriggerFogList; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hLastFogTrigger = 0x1a0; // server::CHandle< server::CBaseEntity > m_hLastFogTrigger; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hZoomOwner = 0x180; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTriggerFogList = 0x188; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hLastFogTrigger = 0x1a0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

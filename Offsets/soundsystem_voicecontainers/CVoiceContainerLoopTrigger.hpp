@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0xE0
 			namespace CVoiceContainerLoopTrigger /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_sound = 0xb8; // soundsystem_voicecontainers::CSoundContainerReference m_sound; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_sound = 0xb8; // soundsystem_voicecontainers::CSoundContainerReference  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_flRetriggerTimeMin = 0xd0; // float32 m_flRetriggerTimeMin; |  0xd0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flRetriggerTimeMax = 0xd4; // float32 m_flRetriggerTimeMax; |  0xd4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeTime = 0xd8; // float32 m_flFadeTime; |  0xd8 | Schema_Builtin | Size: 0x4

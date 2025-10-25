@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x50
 			namespace FootFixedData_t /**/ {
-				constexpr std::ptrdiff_t m_vToeOffset = 0x0; // GlobalTypes::VectorAligned m_vToeOffset; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vHeelOffset = 0x10; // GlobalTypes::VectorAligned m_vHeelOffset; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vToeOffset = 0x0; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vHeelOffset = 0x10; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_nTargetBoneIndex = 0x20; // int32_t m_nTargetBoneIndex; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nAnkleBoneIndex = 0x24; // int32_t m_nAnkleBoneIndex; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nIKAnchorBoneIndex = 0x28; // int32_t m_nIKAnchorBoneIndex; |  0x28 | Schema_Builtin | Size: 0x4

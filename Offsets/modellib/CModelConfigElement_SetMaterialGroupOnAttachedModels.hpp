@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x50
 			namespace CModelConfigElement_SetMaterialGroupOnAttachedModels /*: public CS2::modellib::CModelConfigElement*/ {
-				constexpr std::ptrdiff_t m_MaterialGroupName = 0x48; // GlobalTypes::CUtlString m_MaterialGroupName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_MaterialGroupName = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace FeCtrlSoftOffset_t /**/ {
 				constexpr std::ptrdiff_t nCtrlParent = 0x0; // uint16_t nCtrlParent; |  0x0 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t nCtrlChild = 0x2; // uint16_t nCtrlChild; |  0x2 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t vOffset = 0x4; // GlobalTypes::Vector vOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t vOffset = 0x4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t flAlpha = 0x10; // float32 flAlpha; |  0x10 | Schema_Builtin | Size: 0x4
 			}
 		}

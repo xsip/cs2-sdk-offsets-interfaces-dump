@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x68
 			namespace CNmFloatCurveEvent /*: public CS2::animlib::CNmEvent*/ {
-				constexpr std::ptrdiff_t m_ID = 0x20; // GlobalTypes::CGlobalSymbol m_ID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_curve = 0x28; // GlobalTypes::CPiecewiseCurve m_curve; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_ID = 0x20; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_curve = 0x28; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

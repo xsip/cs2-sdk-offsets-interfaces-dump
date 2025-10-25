@@ -24,7 +24,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			uint8_t m_defaultValue; // 0x88 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_enumOptions; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_enumOptions; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_enumOptions[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint64 > m_vecEnumReferenced; // 0xa8 | Schema_Atomic | Size: 0x18
 			// char  m_vecEnumReferenced[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18

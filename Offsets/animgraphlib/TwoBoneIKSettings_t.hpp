@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x160
 			namespace TwoBoneIKSettings_t /**/ {
-				constexpr std::ptrdiff_t m_endEffectorType = 0x0; // animgraphlib::IkEndEffectorType m_endEffectorType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_endEffectorAttachment = 0x10; // modellib::CAnimAttachment m_endEffectorAttachment; |  Schema_DeclaredClass | Size: 0x80
-				constexpr std::ptrdiff_t m_targetType = 0x90; // animgraphlib::IkTargetType m_targetType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_targetAttachment = 0xa0; // modellib::CAnimAttachment m_targetAttachment; |  Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_endEffectorType = 0x0; // animgraphlib::IkEndEffectorType  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_endEffectorAttachment = 0x10; // modellib::CAnimAttachment  | Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_targetType = 0x90; // animgraphlib::IkTargetType  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_targetAttachment = 0xa0; // modellib::CAnimAttachment  | Schema_DeclaredClass | Size: 0x80
 				constexpr std::ptrdiff_t m_targetBoneIndex = 0x120; // int32_t m_targetBoneIndex; |  0x120 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hPositionParam = 0x124; // animgraphlib::CAnimParamHandle m_hPositionParam; |  Schema_DeclaredClass | Size: 0x2
-				constexpr std::ptrdiff_t m_hRotationParam = 0x126; // animgraphlib::CAnimParamHandle m_hRotationParam; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hPositionParam = 0x124; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_hRotationParam = 0x126; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bAlwaysUseFallbackHinge = 0x128; // bool m_bAlwaysUseFallbackHinge; |  0x128 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vLsFallbackHingeAxis = 0x130; // GlobalTypes::VectorAligned m_vLsFallbackHingeAxis; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vLsFallbackHingeAxis = 0x130; // GlobalTypes::VectorAligned  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_nFixedBoneIndex = 0x140; // int32_t m_nFixedBoneIndex; |  0x140 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMiddleBoneIndex = 0x144; // int32_t m_nMiddleBoneIndex; |  0x144 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nEndBoneIndex = 0x148; // int32_t m_nEndBoneIndex; |  0x148 | Schema_Builtin | Size: 0x4

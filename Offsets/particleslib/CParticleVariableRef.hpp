@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particleslib {
 			// Class size: 0x50
 			namespace CParticleVariableRef /**/ {
-				constexpr std::ptrdiff_t m_variableName = 0x0; // GlobalTypes::CKV3MemberNameWithStorage m_variableName; |  Schema_Atomic | Size: 0x38
-				constexpr std::ptrdiff_t m_variableType = 0x38; // GlobalTypes::CPulseValueFullType m_variableType; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_variableName = 0x0; // GlobalTypes::CKV3MemberNameWithStorage  | Schema_Atomic | Size: 0x38
+				constexpr std::ptrdiff_t m_variableType = 0x38; // GlobalTypes::CPulseValueFullType  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

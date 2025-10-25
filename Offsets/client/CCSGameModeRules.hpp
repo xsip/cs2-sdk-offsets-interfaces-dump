@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x30
 			namespace CCSGameModeRules /**/ {
-				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer __m_pChainEntity; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

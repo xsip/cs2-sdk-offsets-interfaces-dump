@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x58
 			namespace CSmartPropFilter_Expression /*: public CS2::smartprops::CSmartPropFilter*/ {
-				constexpr std::ptrdiff_t m_Expression = 0x50; // GlobalTypes::CUtlString m_Expression; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Expression = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

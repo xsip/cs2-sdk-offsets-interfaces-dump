@@ -33,9 +33,9 @@ namespace CS2 {
 		class CBlend2DUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CUtlVector< animgraphlib::BlendItem_t > m_items; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::BlendItem_t> m_items; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_items[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::TagSpan_t> m_tags; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			animgraphlib::CParamSpanUpdater m_paramSpans; // 0x90 | Schema_DeclaredClass | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_nodeItemIndices; // 0xa8 | Schema_Atomic | Size: 0x18

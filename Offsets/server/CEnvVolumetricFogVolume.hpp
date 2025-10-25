@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x538
 			namespace CEnvVolumetricFogVolume /*: public CS2::server::CBaseEntity*/ {
 				constexpr std::ptrdiff_t m_bActive = 0x4f0; // bool m_bActive; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vBoxMins = 0x4f4; // GlobalTypes::Vector m_vBoxMins; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vBoxMaxs = 0x500; // GlobalTypes::Vector m_vBoxMaxs; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMins = 0x4f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMaxs = 0x500; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bStartDisabled = 0x50c; // bool m_bStartDisabled; |  0x50c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIndirectUseLPVs = 0x50d; // bool m_bIndirectUseLPVs; |  0x50d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flStrength = 0x510; // float32 m_flStrength; |  0x510 | Schema_Builtin | Size: 0x4
@@ -23,7 +23,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_fIndirectLightStrength = 0x524; // float32 m_fIndirectLightStrength; |  0x524 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fSunLightStrength = 0x528; // float32 m_fSunLightStrength; |  0x528 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fNoiseStrength = 0x52c; // float32 m_fNoiseStrength; |  0x52c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TintColor = 0x530; // GlobalTypes::Color m_TintColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_TintColor = 0x530; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bOverrideTintColor = 0x534; // bool m_bOverrideTintColor; |  0x534 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bOverrideIndirectLightStrength = 0x535; // bool m_bOverrideIndirectLightStrength; |  0x535 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bOverrideSunLightStrength = 0x536; // bool m_bOverrideSunLightStrength; |  0x536 | Schema_Builtin | Size: 0x1

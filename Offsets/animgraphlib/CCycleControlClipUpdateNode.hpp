@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x90
 			namespace CCycleControlClipUpdateNode /*: public CS2::animgraphlib::CLeafUpdateNode*/ {
-				constexpr std::ptrdiff_t m_tags = 0x60; // GlobalTypes::CUtlVector< animgraphlib::TagSpan_t > m_tags; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hSequence = 0x7c; // animationsystem::HSequence m_hSequence; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_tags = 0x60; // GlobalTypes::CUtlVector<animgraphlib::TagSpan_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hSequence = 0x7c; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_duration = 0x80; // float32 m_duration; |  0x80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_valueSource = 0x84; // animgraphlib::AnimValueSource m_valueSource; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_paramIndex = 0x88; // animgraphlib::CAnimParamHandle m_paramIndex; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_valueSource = 0x84; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_paramIndex = 0x88; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_bLockWhenWaning = 0x8a; // bool m_bLockWhenWaning; |  0x8a | Schema_Builtin | Size: 0x1
 			}
 		}

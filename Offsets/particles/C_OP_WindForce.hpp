@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1F0
 			namespace C_OP_WindForce /*: public CS2::particles::CParticleFunctionForce*/ {
-				constexpr std::ptrdiff_t m_vForce = 0x1e0; // GlobalTypes::Vector m_vForce; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vForce = 0x1e0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

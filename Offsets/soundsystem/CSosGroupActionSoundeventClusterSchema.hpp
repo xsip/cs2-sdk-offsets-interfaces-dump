@@ -12,11 +12,11 @@ namespace CS2 {
 			namespace CSosGroupActionSoundeventClusterSchema /*: public CS2::soundsystem::CSosGroupActionSchema*/ {
 				constexpr std::ptrdiff_t m_nMinNearby = 0x8; // int32_t m_nMinNearby; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flClusterEpsilon = 0xc; // float32 m_flClusterEpsilon; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_shouldPlayOpvar = 0x10; // GlobalTypes::CUtlString m_shouldPlayOpvar; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_shouldPlayClusterChild = 0x18; // GlobalTypes::CUtlString m_shouldPlayClusterChild; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_clusterSizeOpvar = 0x20; // GlobalTypes::CUtlString m_clusterSizeOpvar; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_groupBoundingBoxMinsOpvar = 0x28; // GlobalTypes::CUtlString m_groupBoundingBoxMinsOpvar; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_groupBoundingBoxMaxsOpvar = 0x30; // GlobalTypes::CUtlString m_groupBoundingBoxMaxsOpvar; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_shouldPlayOpvar = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_shouldPlayClusterChild = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_clusterSizeOpvar = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_groupBoundingBoxMinsOpvar = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_groupBoundingBoxMaxsOpvar = 0x30; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x280
 			namespace CModelState /**/ {
-				constexpr std::ptrdiff_t m_hModel = 0xd0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCModel > m_hModel; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_ModelName = 0xd8; // GlobalTypes::CUtlSymbolLarge m_ModelName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hModel = 0xd0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ModelName = 0xd8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bClientClothCreationSuppressed = 0x125; // bool m_bClientClothCreationSuppressed; |  0x125 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_MeshGroupMask = 0x1d0; // uint64_t m_MeshGroupMask; |  0x1d0 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_nBodyGroupChoices = 0x220; // GlobalTypes::CNetworkUtlVectorBase< int32 > m_nBodyGroupChoices; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nBodyGroupChoices = 0x220; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nIdealMotionType = 0x26a; // int8_t m_nIdealMotionType; |  0x26a | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nForceLOD = 0x26b; // int8_t m_nForceLOD; |  0x26b | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nClothUpdateFlags = 0x26c; // int8_t m_nClothUpdateFlags; |  0x26c | Schema_Builtin | Size: 0x1

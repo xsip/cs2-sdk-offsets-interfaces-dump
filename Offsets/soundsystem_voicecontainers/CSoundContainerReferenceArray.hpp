@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x38
 			namespace CSoundContainerReferenceArray /**/ {
 				constexpr std::ptrdiff_t m_bUseReference = 0x0; // bool m_bUseReference; |  0x0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_sounds = 0x8; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_sounds; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_pSounds = 0x20; // GlobalTypes::CUtlVector< soundsystem_voicecontainers::CVoiceContainerBase > m_pSounds; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sounds = 0x8; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pSounds = 0x20; // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerBase*>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

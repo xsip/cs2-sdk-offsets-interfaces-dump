@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace toolscene {
 			// Class size: 0x8
 			namespace CLightRigPostProcessing /**/ {
-				constexpr std::ptrdiff_t m_hPostProcessing = 0x0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostProcessing; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hPostProcessing = 0x0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCPostProcessingResource>  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

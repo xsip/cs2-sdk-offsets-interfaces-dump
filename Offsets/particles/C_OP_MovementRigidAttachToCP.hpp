@@ -13,8 +13,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0x1d0; // int32_t m_nControlPointNumber; |  0x1d0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nScaleControlPoint = 0x1d4; // int32_t m_nScaleControlPoint; |  0x1d4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nScaleCPField = 0x1d8; // int32_t m_nScaleCPField; |  0x1d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldInput = 0x1dc; // particles::ParticleAttributeIndex_t m_nFieldInput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1e0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldInput = 0x1dc; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1e0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bOffsetLocal = 0x1e4; // bool m_bOffsetLocal; |  0x1e4 | Schema_Builtin | Size: 0x1
 			}
 		}

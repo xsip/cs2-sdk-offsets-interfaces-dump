@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x40
 			namespace CNmLegacyEvent /*: public CS2::animlib::CNmEvent*/ {
-				constexpr std::ptrdiff_t m_animEventClassName = 0x20; // GlobalTypes::CUtlString m_animEventClassName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_KV = 0x28; // GlobalTypes::KeyValues3 m_KV; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_animEventClassName = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_KV = 0x28; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

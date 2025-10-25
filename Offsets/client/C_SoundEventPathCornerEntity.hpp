@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x6D8
 			namespace C_SoundEventPathCornerEntity /*: public CS2::client::C_SoundEventEntity*/ {
-				constexpr std::ptrdiff_t m_vecCornerPairsNetworked = 0x6c0; // GlobalTypes::C_NetworkUtlVectorBase< client::SoundeventPathCornerPairNetworked_t > m_vecCornerPairsNetworked; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCornerPairsNetworked = 0x6c0; // GlobalTypes::C_NetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

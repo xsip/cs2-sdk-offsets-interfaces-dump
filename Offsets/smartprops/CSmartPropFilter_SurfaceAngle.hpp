@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xD0
 			namespace CSmartPropFilter_SurfaceAngle /*: public CS2::smartprops::CSmartPropFilter*/ {
-				constexpr std::ptrdiff_t m_flSurfaceSlopeMin = 0x50; // GlobalTypes::CSmartPropAttributeFloat m_flSurfaceSlopeMin; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flSurfaceSlopeMax = 0x90; // GlobalTypes::CSmartPropAttributeFloat m_flSurfaceSlopeMax; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flSurfaceSlopeMin = 0x50; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flSurfaceSlopeMax = 0x90; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

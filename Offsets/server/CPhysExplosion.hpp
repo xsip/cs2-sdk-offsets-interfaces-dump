@@ -14,12 +14,12 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flMagnitude = 0x4f4; // float32 m_flMagnitude; |  0x4f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDamage = 0x4f8; // float32 m_flDamage; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_radius = 0x4fc; // float32 m_radius; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_targetEntityName = 0x500; // GlobalTypes::CUtlSymbolLarge m_targetEntityName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_targetEntityName = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flInnerRadius = 0x508; // float32 m_flInnerRadius; |  0x508 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPushScale = 0x50c; // float32 m_flPushScale; |  0x50c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bConvertToDebrisWhenPossible = 0x510; // bool m_bConvertToDebrisWhenPossible; |  0x510 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAffectInvulnerableEnts = 0x511; // bool m_bAffectInvulnerableEnts; |  0x511 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnPushedPlayer = 0x518; // entity2::CEntityIOOutput m_OnPushedPlayer; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPushedPlayer = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

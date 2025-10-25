@@ -32,7 +32,7 @@ namespace CS2 {
 			bool m_bUseUniqueColorTarget; // 0xebd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			GlobalTypes::CUtlString m_brushModelName; // 0xec0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hTargetCamera; // 0xec8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hTargetCamera; // 0xec8 | Schema_Atomic | Size: 0x4
 			// char  m_hTargetCamera[0x4]; // 0xec8 | Schema_Atomic | Size: 0x4
 			bool m_bEnabled; // 0xecc | Schema_Builtin | Size: 0x1
 			bool m_bDraw3DSkybox; // 0xecd | Schema_Builtin | Size: 0x1

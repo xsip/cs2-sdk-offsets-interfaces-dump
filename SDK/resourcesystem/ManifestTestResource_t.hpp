@@ -21,7 +21,7 @@ namespace CS2 {
 		class ManifestTestResource_t  {
 		public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeManifestTestResource_t > m_child; // 0x8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeManifestTestResource_t> m_child; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_child[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::resourcesystem::ManifestTestResource_t, m_name) == 0x0, "m_name in ManifestTestResource_t should be at offset 0x0");

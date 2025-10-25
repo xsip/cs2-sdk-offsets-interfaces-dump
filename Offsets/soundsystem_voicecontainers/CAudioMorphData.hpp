@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0x68
 			namespace CAudioMorphData /**/ {
-				constexpr std::ptrdiff_t m_times = 0x0; // GlobalTypes::CUtlVector< float32 > m_times; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nameHashCodes = 0x18; // GlobalTypes::CUtlVector< uint32 > m_nameHashCodes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nameStrings = 0x30; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_nameStrings; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_samples = 0x48; // GlobalTypes::CUtlVector< GlobalTypes::CUtlVector< float32 > > m_samples; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_times = 0x0; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nameHashCodes = 0x18; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nameStrings = 0x30; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_samples = 0x48; // GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<float32>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flEaseIn = 0x60; // float32 m_flEaseIn; |  0x60 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEaseOut = 0x64; // float32 m_flEaseOut; |  0x64 | Schema_Builtin | Size: 0x4
 			}

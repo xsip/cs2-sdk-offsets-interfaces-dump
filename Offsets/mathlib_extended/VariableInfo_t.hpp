@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace mathlib_extended {
 			// Class size: 0x18
 			namespace VariableInfo_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameToken = 0x8; // GlobalTypes::CUtlStringToken m_nameToken; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nIndex = 0xc; // mathlib_extended::FuseVariableIndex_t m_nIndex; |  Schema_DeclaredClass | Size: 0x2
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameToken = 0x8; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nIndex = 0xc; // mathlib_extended::FuseVariableIndex_t  | Schema_DeclaredClass | Size: 0x2
 				constexpr std::ptrdiff_t m_nNumComponents = 0xe; // uint8_t m_nNumComponents; |  0xe | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_eVarType = 0xf; // mathlib_extended::FuseVariableType_t m_eVarType; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_eAccess = 0x10; // mathlib_extended::FuseVariableAccess_t m_eAccess; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_eVarType = 0xf; // mathlib_extended::FuseVariableType_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_eAccess = 0x10; // mathlib_extended::FuseVariableAccess_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

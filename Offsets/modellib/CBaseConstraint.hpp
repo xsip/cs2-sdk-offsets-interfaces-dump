@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x60
 			namespace CBaseConstraint /*: public CS2::modellib::CBoneConstraintBase*/ {
-				constexpr std::ptrdiff_t m_name = 0x20; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vUpVector = 0x28; // GlobalTypes::Vector m_vUpVector; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_slaves = 0x38; // GlobalTypes::CUtlLeanVector< modellib::CConstraintSlave > m_slaves; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_targets = 0x48; // GlobalTypes::CUtlVector< modellib::CConstraintTarget > m_targets; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_name = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vUpVector = 0x28; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_slaves = 0x38; // GlobalTypes::CUtlLeanVector<modellib::CConstraintSlave>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_targets = 0x48; // GlobalTypes::CUtlVector<modellib::CConstraintTarget>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

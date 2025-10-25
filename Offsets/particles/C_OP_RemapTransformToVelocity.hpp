@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x238
 			namespace C_OP_RemapTransformToVelocity /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_TransformInput = 0x1d0; // particleslib::CParticleTransformInput m_TransformInput; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_TransformInput = 0x1d0; // particleslib::CParticleTransformInput  | Schema_DeclaredClass | Size: 0x68
 			}
 		}
 	}

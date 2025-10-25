@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x248
 			namespace C_OP_RenderLights /*: public CS2::particles::C_OP_RenderPoints*/ {
 				constexpr std::ptrdiff_t m_flAnimationRate = 0x228; // float32 m_flAnimationRate; |  0x228 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAnimationType = 0x22c; // particles::AnimationType_t m_nAnimationType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nAnimationType = 0x22c; // particles::AnimationType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bAnimateInFPS = 0x230; // bool m_bAnimateInFPS; |  0x230 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMinSize = 0x234; // float32 m_flMinSize; |  0x234 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxSize = 0x238; // float32 m_flMaxSize; |  0x238 | Schema_Builtin | Size: 0x4

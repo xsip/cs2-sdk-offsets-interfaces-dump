@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xC
 			namespace IKSolverSettings_t /**/ {
-				constexpr std::ptrdiff_t m_SolverType = 0x0; // animgraphlib::IKSolverType m_SolverType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_SolverType = 0x0; // animgraphlib::IKSolverType  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nNumIterations = 0x4; // int32_t m_nNumIterations; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_EndEffectorRotationFixUpMode = 0x8; // animgraphlib::EIKEndEffectorRotationFixUpMode m_EndEffectorRotationFixUpMode; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_EndEffectorRotationFixUpMode = 0x8; // animgraphlib::EIKEndEffectorRotationFixUpMode  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

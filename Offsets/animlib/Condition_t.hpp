@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x10
 			namespace Condition_t /**/ {
-				constexpr std::ptrdiff_t m_eventID = 0x0; // GlobalTypes::CGlobalSymbol m_eventID; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_eventTypeCondition = 0x8; // animlib::NmGraphEventTypeCondition_t m_eventTypeCondition; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_eventID = 0x0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_eventTypeCondition = 0x8; // animlib::NmGraphEventTypeCondition_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

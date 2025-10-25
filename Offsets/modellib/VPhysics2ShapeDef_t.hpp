@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x78
 			namespace VPhysics2ShapeDef_t /**/ {
-				constexpr std::ptrdiff_t m_spheres = 0x0; // GlobalTypes::CUtlVector< physicslib::RnSphereDesc_t > m_spheres; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_capsules = 0x18; // GlobalTypes::CUtlVector< physicslib::RnCapsuleDesc_t > m_capsules; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hulls = 0x30; // GlobalTypes::CUtlVector< physicslib::RnHullDesc_t > m_hulls; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_meshes = 0x48; // GlobalTypes::CUtlVector< physicslib::RnMeshDesc_t > m_meshes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_CollisionAttributeIndices = 0x60; // GlobalTypes::CUtlVector< uint16 > m_CollisionAttributeIndices; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_spheres = 0x0; // GlobalTypes::CUtlVector<physicslib::RnSphereDesc_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_capsules = 0x18; // GlobalTypes::CUtlVector<physicslib::RnCapsuleDesc_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hulls = 0x30; // GlobalTypes::CUtlVector<physicslib::RnHullDesc_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_meshes = 0x48; // GlobalTypes::CUtlVector<physicslib::RnMeshDesc_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_CollisionAttributeIndices = 0x60; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

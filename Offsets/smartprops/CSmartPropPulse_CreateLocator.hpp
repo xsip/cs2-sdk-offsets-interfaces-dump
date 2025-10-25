@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x50
 			namespace CSmartPropPulse_CreateLocator /*: public CS2::smartprops::CSmartPropPulse_BaseQueryableFlow*/ {
-				constexpr std::ptrdiff_t m_LocatorName = 0x48; // GlobalTypes::CUtlString m_LocatorName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_LocatorName = 0x48; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

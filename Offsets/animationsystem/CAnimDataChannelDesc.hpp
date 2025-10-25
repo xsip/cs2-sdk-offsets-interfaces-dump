@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x90
 			namespace CAnimDataChannelDesc /**/ {
-				constexpr std::ptrdiff_t m_szChannelClass = 0x0; // GlobalTypes::CBufferString m_szChannelClass; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_szVariableName = 0x10; // GlobalTypes::CBufferString m_szVariableName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_szChannelClass = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_szVariableName = 0x10; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_nFlags = 0x20; // int32_t m_nFlags; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nType = 0x24; // int32_t m_nType; |  0x24 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szGrouping = 0x28; // GlobalTypes::CBufferString m_szGrouping; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_szDescription = 0x38; // GlobalTypes::CBufferString m_szDescription; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_szElementNameArray = 0x48; // GlobalTypes::CUtlVector< GlobalTypes::CBufferString > m_szElementNameArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nElementIndexArray = 0x60; // GlobalTypes::CUtlVector< int32 > m_nElementIndexArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nElementMaskArray = 0x78; // GlobalTypes::CUtlVector< uint32 > m_nElementMaskArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_szGrouping = 0x28; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_szDescription = 0x38; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_szElementNameArray = 0x48; // GlobalTypes::CUtlVector<GlobalTypes::CBufferString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nElementIndexArray = 0x60; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nElementMaskArray = 0x78; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

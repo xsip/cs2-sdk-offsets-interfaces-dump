@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x60
 			namespace CConstraintTarget /**/ {
-				constexpr std::ptrdiff_t m_qOffset = 0x20; // GlobalTypes::Quaternion m_qOffset; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vOffset = 0x30; // GlobalTypes::Vector m_vOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_qOffset = 0x20; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vOffset = 0x30; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nBoneHash = 0x3c; // uint32_t m_nBoneHash; |  0x3c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sName = 0x40; // GlobalTypes::CUtlString m_sName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sName = 0x40; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flWeight = 0x48; // float32 m_flWeight; |  0x48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsAttachment = 0x59; // bool m_bIsAttachment; |  0x59 | Schema_Builtin | Size: 0x1
 			}

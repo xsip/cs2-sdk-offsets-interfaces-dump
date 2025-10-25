@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x28
 			namespace CNetworkViewOffsetVector /**/ {
-				constexpr std::ptrdiff_t m_vecX = 0x10; // GlobalTypes::CNetworkedQuantizedFloat m_vecX; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecY = 0x18; // GlobalTypes::CNetworkedQuantizedFloat m_vecY; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecZ = 0x20; // GlobalTypes::CNetworkedQuantizedFloat m_vecZ; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecX = 0x10; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecY = 0x18; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecZ = 0x20; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

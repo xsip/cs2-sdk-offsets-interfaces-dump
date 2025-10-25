@@ -11,9 +11,9 @@ namespace CS2 {
 			// Class size: 0x290
 			namespace C_INIT_InitialRepulsionVelocity /*: public CS2::particles::CParticleFunctionInitializer*/ {
 				constexpr std::ptrdiff_t m_CollisionGroupName = 0x1d8; // char m_CollisionGroupName[128]; |  0x1d8 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nTraceSet = 0x258; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOutputMin = 0x25c; // GlobalTypes::Vector m_vecOutputMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOutputMax = 0x268; // GlobalTypes::Vector m_vecOutputMax; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nTraceSet = 0x258; // particles::ParticleTraceSet_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOutputMin = 0x25c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOutputMax = 0x268; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nControlPointNumber = 0x274; // int32_t m_nControlPointNumber; |  0x274 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bPerParticle = 0x278; // bool m_bPerParticle; |  0x278 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTranslate = 0x279; // bool m_bTranslate; |  0x279 | Schema_Builtin | Size: 0x1

@@ -28,14 +28,14 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_szLayoutFileName; // 0x500 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_RenderAttrName; // 0x508 | Schema_Atomic | Size: 0x8
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseModelEntity > > m_TargetEntities; // 0x510 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>> m_TargetEntities; // 0x510 | Schema_Atomic | Size: 0x18
 			char  m_TargetEntities[0x18]; // 0x510 | Schema_Atomic | Size: 0x18
 			int32_t m_nTargetChangeCount; // 0x528 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; // 0x530 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x530 | Schema_Atomic | Size: 0x18
 			char  m_vecCSSClasses[0x18]; // 0x530 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_szTargetsName; // 0x548 | Schema_Atomic | Size: 0x8
-			// server::CUtlVector< server.dll::CHandle< CBaseModelEntity > > m_AdditionalTargetEntities; // 0x550 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>> m_AdditionalTargetEntities; // 0x550 | Schema_Atomic | Size: 0x18
 			char  m_AdditionalTargetEntities[0x18]; // 0x550 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_bDisabled) == 0x4F0, "m_bDisabled in CInfoOffscreenPanoramaTexture should be at offset 0x4F0");

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x10
 			namespace inv_image_map_t /**/ {
-				constexpr std::ptrdiff_t map_name = 0x0; // GlobalTypes::CUtlString map_name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t map_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t map_rotation = 0x8; // float32 map_rotation; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

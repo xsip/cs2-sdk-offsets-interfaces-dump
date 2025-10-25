@@ -27,7 +27,7 @@ namespace CS2 {
 		class CSmartPropOperation_MaterialOverride : public CS2::smartprops::CSmartPropOperation {
 		public:
 			GlobalTypes::CSmartPropAttributeBool m_bClearCurrentOverrides; // 0x50 | Schema_Atomic | Size: 0x40
-			GlobalTypes::CUtlVector< smartprops::CSmartPropMaterialReplacement > m_MaterialReplacements; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<smartprops::CSmartPropMaterialReplacement> m_MaterialReplacements; // 0x90 | Schema_Atomic | Size: 0x18
 			// char  m_MaterialReplacements[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialOverride, m_bClearCurrentOverrides) == 0x50, "m_bClearCurrentOverrides in CSmartPropOperation_MaterialOverride should be at offset 0x50");

@@ -12,9 +12,9 @@ namespace CS2 {
 			namespace C_CSPlayerResource /*: public CS2::client::C_BaseEntity*/ {
 				constexpr std::ptrdiff_t m_bHostageAlive = 0x5f8; // bool m_bHostageAlive[12]; |  0x5f8 | Schema_FixedArray | Size: 0xc
 				constexpr std::ptrdiff_t m_isHostageFollowingSomeone = 0x604; // bool m_isHostageFollowingSomeone[12]; |  0x604 | Schema_FixedArray | Size: 0xc
-				constexpr std::ptrdiff_t m_iHostageEntityIDs = 0x610; // GlobalTypes::CEntityIndex m_iHostageEntityIDs[12]; |  Schema_FixedArray | Size: 0x30
-				constexpr std::ptrdiff_t m_bombsiteCenterA = 0x640; // GlobalTypes::Vector m_bombsiteCenterA; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bombsiteCenterB = 0x64c; // GlobalTypes::Vector m_bombsiteCenterB; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_iHostageEntityIDs = 0x610; // GlobalTypes::CEntityIndex[12]  | Schema_FixedArray | Size: 0x30
+				constexpr std::ptrdiff_t m_bombsiteCenterA = 0x640; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bombsiteCenterB = 0x64c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_hostageRescueX = 0x658; // int32_t m_hostageRescueX[4]; |  0x658 | Schema_FixedArray | Size: 0x10
 				constexpr std::ptrdiff_t m_hostageRescueY = 0x668; // int32_t m_hostageRescueY[4]; |  0x668 | Schema_FixedArray | Size: 0x10
 				constexpr std::ptrdiff_t m_hostageRescueZ = 0x678; // int32_t m_hostageRescueZ[4]; |  0x678 | Schema_FixedArray | Size: 0x10

@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0xF48
 			namespace C_OP_RemapCrossProductOfTwoVectorsToVector /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_InputVec1 = 0x1d0; // particleslib::CPerParticleVecInput m_InputVec1; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_InputVec2 = 0x888; // particleslib::CPerParticleVecInput m_InputVec2; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_nFieldOutput = 0xf40; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_InputVec1 = 0x1d0; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_InputVec2 = 0x888; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_nFieldOutput = 0xf40; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bNormalize = 0xf44; // bool m_bNormalize; |  0xf44 | Schema_Builtin | Size: 0x1
 			}
 		}

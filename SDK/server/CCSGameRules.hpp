@@ -19,6 +19,7 @@
 namespace CS2 {
 	namespace server {
 		class CCSGameModeRules;
+		class CBaseEntity;
 	}
 }
 
@@ -201,9 +202,9 @@ namespace CS2 {
 			S2_PAD(0x4d);
 			GlobalTypes::Vector m_vecMainCTSpawnPos; // 0xf40 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			// server::CUtlVector< server::SpawnPoint > m_CTSpawnPointsMasterList; // 0xf50 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<server::SpawnPoint*> m_CTSpawnPointsMasterList; // 0xf50 | Schema_Atomic | Size: 0x18
 			char  m_CTSpawnPointsMasterList[0x18]; // 0xf50 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector< server::SpawnPoint > m_TerroristSpawnPointsMasterList; // 0xf68 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<server::SpawnPoint*> m_TerroristSpawnPointsMasterList; // 0xf68 | Schema_Atomic | Size: 0x18
 			char  m_TerroristSpawnPointsMasterList[0x18]; // 0xf68 | Schema_Atomic | Size: 0x18
 			bool m_bRespawningAllRespawnablePlayers; // 0xf80 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -212,9 +213,9 @@ namespace CS2 {
 			int32_t m_iNextTerroristSpawnPoint; // 0xf8c | Schema_Builtin | Size: 0x4
 			float32 m_flTerroristSpawnPointUsedTime; // 0xf90 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector< server::SpawnPoint > m_CTSpawnPoints; // 0xf98 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<server::SpawnPoint*> m_CTSpawnPoints; // 0xf98 | Schema_Atomic | Size: 0x18
 			char  m_CTSpawnPoints[0x18]; // 0xf98 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector< server::SpawnPoint > m_TerroristSpawnPoints; // 0xfb0 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<server::SpawnPoint*> m_TerroristSpawnPoints; // 0xfb0 | Schema_Atomic | Size: 0x18
 			char  m_TerroristSpawnPoints[0x18]; // 0xfb0 | Schema_Atomic | Size: 0x18
 			bool m_bIsUnreservedGameServer; // 0xfc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -236,8 +237,8 @@ namespace CS2 {
 			server::CCSGameModeRules* m_pGameModeRules; // 0x1088 | Schema_Ptr | Size: 0x8
 			GlobalTypes::KeyValues3 m_BtGlobalBlackboard; // 0x1090 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x88);
-			// server::CHandle< server::CBaseEntity > m_hPlayerResource; // 0x1128 | Schema_Atomic | Size: 0x4
-			char  m_hPlayerResource[0x4]; // 0x1128 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hPlayerResource; // 0x1128 | Schema_Atomic | Size: 0x4
+			// char  m_hPlayerResource[0x4]; // 0x1128 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			server::CRetakeGameRules m_RetakeRules; // 0x1130 | Schema_DeclaredClass | Size: 0x1b0
 			GlobalTypes::CUtlVector< int32 >[4] m_arrTeamUniqueKillWeaponsMatch[4]; // 0x12e0 | Schema_FixedArray | Size: 0x60

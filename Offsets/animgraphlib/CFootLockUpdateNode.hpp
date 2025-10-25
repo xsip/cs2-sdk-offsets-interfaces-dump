@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x158
 			namespace CFootLockUpdateNode /*: public CS2::animgraphlib::CUnaryUpdateNode*/ {
-				constexpr std::ptrdiff_t m_opFixedSettings = 0x70; // animgraphlib::FootLockPoseOpFixedSettings m_opFixedSettings; |  Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_footSettings = 0xe0; // GlobalTypes::CUtlVector< animgraphlib::FootFixedSettings > m_footSettings; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hipShiftDamping = 0xf8; // animgraphlib::CAnimInputDamping m_hipShiftDamping; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_rootHeightDamping = 0x110; // animgraphlib::CAnimInputDamping m_rootHeightDamping; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_opFixedSettings = 0x70; // animgraphlib::FootLockPoseOpFixedSettings  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_footSettings = 0xe0; // GlobalTypes::CUtlVector<animgraphlib::FootFixedSettings>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hipShiftDamping = 0xf8; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_rootHeightDamping = 0x110; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_flStrideCurveScale = 0x128; // float32 m_flStrideCurveScale; |  0x128 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStrideCurveLimitScale = 0x12c; // float32 m_flStrideCurveLimitScale; |  0x12c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flStepHeightIncreaseScale = 0x130; // float32 m_flStepHeightIncreaseScale; |  0x130 | Schema_Builtin | Size: 0x4

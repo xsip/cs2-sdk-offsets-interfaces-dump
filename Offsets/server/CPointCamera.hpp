@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_FOV = 0x4f0; // float32 m_FOV; |  0x4f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Resolution = 0x4f4; // float32 m_Resolution; |  0x4f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bFogEnable = 0x4f8; // bool m_bFogEnable; |  0x4f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_FogColor = 0x4f9; // GlobalTypes::Color m_FogColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_FogColor = 0x4f9; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogStart = 0x500; // float32 m_flFogStart; |  0x500 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogEnd = 0x504; // float32 m_flFogEnd; |  0x504 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogMaxDensity = 0x508; // float32 m_flFogMaxDensity; |  0x508 | Schema_Builtin | Size: 0x4
@@ -35,7 +35,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_TargetFOV = 0x53c; // float32 m_TargetFOV; |  0x53c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_DegreesPerSecond = 0x540; // float32 m_DegreesPerSecond; |  0x540 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsOn = 0x544; // bool m_bIsOn; |  0x544 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pNext = 0x548; // server::CPointCamera* m_pNext; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNext = 0x548; // server::CPointCamera**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

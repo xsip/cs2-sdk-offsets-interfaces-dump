@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x38
 			namespace SkeletonDemoDb_t /**/ {
-				constexpr std::ptrdiff_t m_AnimCaptures = 0x0; // GlobalTypes::CUtlVector< modellib::SkeletonAnimCapture_t > m_AnimCaptures; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_CameraTrack = 0x18; // GlobalTypes::Camera_t > m_CameraTrack; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_AnimCaptures = 0x0; // GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_CameraTrack = 0x18; // GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Camera_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flRecordingTime = 0x30; // float32 m_flRecordingTime; |  0x30 | Schema_Builtin | Size: 0x4
 			}
 		}

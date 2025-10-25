@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x7E8
 			namespace CTriggerVolume /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_iFilterName = 0x7d8; // GlobalTypes::CUtlSymbolLarge m_iFilterName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFilter = 0x7e0; // server::CHandle< server::CBaseFilter > m_hFilter; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iFilterName = 0x7d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFilter = 0x7e0; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

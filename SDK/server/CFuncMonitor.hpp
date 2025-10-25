@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -27,8 +32,8 @@ namespace CS2 {
 			bool m_bUseUniqueColorTarget; // 0x805 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			GlobalTypes::CUtlString m_brushModelName; // 0x808 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hTargetCamera; // 0x810 | Schema_Atomic | Size: 0x4
-			char  m_hTargetCamera[0x4]; // 0x810 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetCamera; // 0x810 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetCamera[0x4]; // 0x810 | Schema_Atomic | Size: 0x4
 			bool m_bEnabled; // 0x814 | Schema_Builtin | Size: 0x1
 			bool m_bDraw3DSkybox; // 0x815 | Schema_Builtin | Size: 0x1
 			bool m_bStartEnabled; // 0x816 | Schema_Builtin | Size: 0x1

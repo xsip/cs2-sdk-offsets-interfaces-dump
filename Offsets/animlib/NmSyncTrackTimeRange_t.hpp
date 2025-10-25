@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x10
 			namespace NmSyncTrackTimeRange_t /**/ {
-				constexpr std::ptrdiff_t m_startTime = 0x0; // animlib::NmSyncTrackTime_t m_startTime; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_endTime = 0x8; // animlib::NmSyncTrackTime_t m_endTime; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_startTime = 0x0; // animlib::NmSyncTrackTime_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_endTime = 0x8; // animlib::NmSyncTrackTime_t  | Schema_DeclaredClass | Size: 0x8
 			}
 		}
 	}

@@ -18,9 +18,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flIronSightAmountGained_Interpolated = 0x24; // float32 m_flIronSightAmountGained_Interpolated; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flIronSightAmountBiased_Interpolated = 0x28; // float32 m_flIronSightAmountBiased_Interpolated; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flInterpolationLastUpdated = 0x2c; // float32 m_flInterpolationLastUpdated; |  0x2c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_angDeltaAverage = 0x30; // GlobalTypes::QAngle m_angDeltaAverage[8]; |  Schema_FixedArray | Size: 0x60
-				constexpr std::ptrdiff_t m_angViewLast = 0x90; // GlobalTypes::QAngle m_angViewLast; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecDotCoords = 0x9c; // GlobalTypes::Vector2D m_vecDotCoords; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_angDeltaAverage = 0x30; // GlobalTypes::QAngle[8]  | Schema_FixedArray | Size: 0x60
+				constexpr std::ptrdiff_t m_angViewLast = 0x90; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecDotCoords = 0x9c; // GlobalTypes::Vector2D  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flFiringInaccuracyExtraWidthMultiplier = 0xa4; // float32 m_flFiringInaccuracyExtraWidthMultiplier; |  0xa4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSpeedRatio = 0xa8; // float32 m_flSpeedRatio; |  0xa8 | Schema_Builtin | Size: 0x4
 			}

@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -25,10 +30,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CUtlSymbolLarge m_nameAttach1; // 0x4f8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAttach2; // 0x500 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hAttach1; // 0x508 | Schema_Atomic | Size: 0x4
-			char  m_hAttach1[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hAttach2; // 0x50c | Schema_Atomic | Size: 0x4
-			char  m_hAttach2[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttach1; // 0x508 | Schema_Atomic | Size: 0x4
+			// char  m_hAttach1[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttach2; // 0x50c | Schema_Atomic | Size: 0x4
+			// char  m_hAttach2[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_nameAttachment1; // 0x510 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAttachment2; // 0x518 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_breakSound; // 0x520 | Schema_Atomic | Size: 0x8

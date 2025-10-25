@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x60
 			namespace CSequenceFinishedAnimTag /*: public CS2::animgraphlib::CAnimTagBase*/ {
-				constexpr std::ptrdiff_t m_sequenceName = 0x58; // GlobalTypes::CUtlString m_sequenceName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sequenceName = 0x58; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

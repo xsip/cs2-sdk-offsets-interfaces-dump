@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x60
 			namespace CCPPScriptComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_scriptsToRun = 0x30; // GlobalTypes::CUtlVector< GlobalTypes::CGlobalSymbol > m_scriptsToRun; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_scriptsToRun = 0x30; // GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

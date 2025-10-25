@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x608
 			namespace C_CsmFovOverride /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_cameraName = 0x5f8; // GlobalTypes::CUtlString m_cameraName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_cameraName = 0x5f8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flCsmFovOverrideValue = 0x600; // float32 m_flCsmFovOverrideValue; |  0x600 | Schema_Builtin | Size: 0x4
 			}
 		}

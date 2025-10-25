@@ -36,7 +36,7 @@ namespace CS2 {
 			bool m_bCreateRawBuffer; // 0x11 | Schema_Builtin | Size: 0x1
 			bool m_bCreatePooledBuffer; // 0x12 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			GlobalTypes::CUtlVector< modellib::RenderInputLayoutField_t > m_inputLayoutFields; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::RenderInputLayoutField_t> m_inputLayoutFields; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  m_inputLayoutFields[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nBlockIndex) == 0x0, "m_nBlockIndex in ModelMeshBufferData_t should be at offset 0x0");

@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x30
 			namespace FeSimdRodConstraintAnim_t /**/ {
 				constexpr std::ptrdiff_t nNode = 0x0; // uint16_t nNode[4]; |  0x0 | Schema_FixedArray | Size: 0x0
-				constexpr std::ptrdiff_t f4Weight0 = 0x10; // GlobalTypes::fltx4 f4Weight0; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t f4RelaxationFactor = 0x20; // GlobalTypes::fltx4 f4RelaxationFactor; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t f4Weight0 = 0x10; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t f4RelaxationFactor = 0x20; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

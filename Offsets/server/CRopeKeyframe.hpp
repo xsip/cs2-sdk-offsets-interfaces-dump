@@ -11,14 +11,14 @@ namespace CS2 {
 			// Class size: 0x830
 			namespace CRopeKeyframe /*: public CS2::server::CBaseModelEntity*/ {
 				constexpr std::ptrdiff_t m_RopeFlags = 0x7e0; // uint16_t m_RopeFlags; |  0x7e0 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_iNextLinkName = 0x7e8; // GlobalTypes::CUtlSymbolLarge m_iNextLinkName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iNextLinkName = 0x7e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_Slack = 0x7f0; // int16_t m_Slack; |  0x7f0 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_Width = 0x7f4; // float32 m_Width; |  0x7f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_TextureScale = 0x7f8; // float32 m_TextureScale; |  0x7f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSegments = 0x7fc; // uint8_t m_nSegments; |  0x7fc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bConstrainBetweenEndpoints = 0x7fd; // bool m_bConstrainBetweenEndpoints; |  0x7fd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_strRopeMaterialModel = 0x800; // GlobalTypes::CUtlSymbolLarge m_strRopeMaterialModel; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iRopeMaterialModelIndex = 0x808; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strRopeMaterialModel = 0x800; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iRopeMaterialModelIndex = 0x808; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_Subdiv = 0x810; // uint8_t m_Subdiv; |  0x810 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nChangeCount = 0x811; // uint8_t m_nChangeCount; |  0x811 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_RopeLength = 0x812; // int16_t m_RopeLength; |  0x812 | Schema_Builtin | Size: 0x2
@@ -27,10 +27,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flScrollSpeed = 0x818; // float32 m_flScrollSpeed; |  0x818 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bStartPointValid = 0x81c; // bool m_bStartPointValid; |  0x81c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEndPointValid = 0x81d; // bool m_bEndPointValid; |  0x81d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hStartPoint = 0x820; // server::CHandle< server::CBaseEntity > m_hStartPoint; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hEndPoint = 0x824; // server::CHandle< server::CBaseEntity > m_hEndPoint; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iStartAttachment = 0x828; // modellib::AttachmentHandle_t m_iStartAttachment; |  Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_iEndAttachment = 0x829; // modellib::AttachmentHandle_t m_iEndAttachment; |  Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_hStartPoint = 0x820; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hEndPoint = 0x824; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iStartAttachment = 0x828; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_iEndAttachment = 0x829; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
 			}
 		}
 	}

@@ -11,11 +11,11 @@ namespace CS2 {
 			// Class size: 0x70
 			namespace AnimationDecodeDebugDumpElement_t /**/ {
 				constexpr std::ptrdiff_t m_nEntityIndex = 0x0; // int32_t m_nEntityIndex; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_modelName = 0x8; // GlobalTypes::CUtlString m_modelName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_poseParams = 0x10; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_poseParams; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_decodeOps = 0x28; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_decodeOps; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_internalOps = 0x40; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_internalOps; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_decodedAnims = 0x58; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_decodedAnims; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_modelName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_poseParams = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_decodeOps = 0x28; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_internalOps = 0x40; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_decodedAnims = 0x58; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

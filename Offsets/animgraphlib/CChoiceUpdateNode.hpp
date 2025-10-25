@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xC0
 			namespace CChoiceUpdateNode /*: public CS2::animgraphlib::CAnimUpdateNodeBase*/ {
-				constexpr std::ptrdiff_t m_children = 0x60; // GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_weights = 0x78; // GlobalTypes::CUtlVector< float32 > m_weights; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_blendTimes = 0x90; // GlobalTypes::CUtlVector< float32 > m_blendTimes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_choiceMethod = 0xa8; // animgraphlib::ChoiceMethod m_choiceMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_choiceChangeMethod = 0xac; // animgraphlib::ChoiceChangeMethod m_choiceChangeMethod; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_blendMethod = 0xb0; // animgraphlib::ChoiceBlendMethod m_blendMethod; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_children = 0x60; // GlobalTypes::CUtlVector<animgraphlib::CAnimUpdateNodeRef>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_weights = 0x78; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_blendTimes = 0x90; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_choiceMethod = 0xa8; // animgraphlib::ChoiceMethod  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_choiceChangeMethod = 0xac; // animgraphlib::ChoiceChangeMethod  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_blendMethod = 0xb0; // animgraphlib::ChoiceBlendMethod  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_blendTime = 0xb4; // float32 m_blendTime; |  0xb4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bCrossFade = 0xb8; // bool m_bCrossFade; |  0xb8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bResetChosen = 0xb9; // bool m_bResetChosen; |  0xb9 | Schema_Builtin | Size: 0x1

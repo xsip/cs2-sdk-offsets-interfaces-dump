@@ -16,14 +16,14 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bPinPulled = 0x1f83; // bool m_bPinPulled; |  0x1f83 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bJumpThrow = 0x1f84; // bool m_bJumpThrow; |  0x1f84 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bThrowAnimating = 0x1f85; // bool m_bThrowAnimating; |  0x1f85 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fThrowTime = 0x1f88; // entity2::GameTime_t m_fThrowTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fThrowTime = 0x1f88; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flThrowStrength = 0x1f90; // float32 m_flThrowStrength; |  0x1f90 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fDropTime = 0x2008; // entity2::GameTime_t m_fDropTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_fPinPullTime = 0x200c; // entity2::GameTime_t m_fPinPullTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fDropTime = 0x2008; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_fPinPullTime = 0x200c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bJustPulledPin = 0x2010; // bool m_bJustPulledPin; |  0x2010 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nNextHoldTick = 0x2014; // entity2::GameTick_t m_nNextHoldTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nNextHoldTick = 0x2014; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flNextHoldFrac = 0x2018; // float32 m_flNextHoldFrac; |  0x2018 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSwitchToWeaponAfterThrow = 0x201c; // client::CHandle< client::C_CSWeaponBase > m_hSwitchToWeaponAfterThrow; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSwitchToWeaponAfterThrow = 0x201c; // GlobalTypes::CHandle<client::C_CSWeaponBase>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

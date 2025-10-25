@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x18
 			namespace CPhysicsShake /**/ {
-				constexpr std::ptrdiff_t m_force = 0x8; // GlobalTypes::Vector m_force; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_force = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

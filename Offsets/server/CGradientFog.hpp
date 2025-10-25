@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x530
 			namespace CGradientFog /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_hGradientFogTexture = 0x4f0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hGradientFogTexture; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hGradientFogTexture = 0x4f0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flFogStartDistance = 0x4f8; // float32 m_flFogStartDistance; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogEndDistance = 0x4fc; // float32 m_flFogEndDistance; |  0x4fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHeightFogEnabled = 0x500; // bool m_bHeightFogEnabled; |  0x500 | Schema_Builtin | Size: 0x1
@@ -20,7 +20,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flFogMaxOpacity = 0x510; // float32 m_flFogMaxOpacity; |  0x510 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogFalloffExponent = 0x514; // float32 m_flFogFalloffExponent; |  0x514 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogVerticalExponent = 0x518; // float32 m_flFogVerticalExponent; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fogColor = 0x51c; // GlobalTypes::Color m_fogColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_fogColor = 0x51c; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flFogStrength = 0x520; // float32 m_flFogStrength; |  0x520 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flFadeTime = 0x524; // float32 m_flFadeTime; |  0x524 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bStartDisabled = 0x528; // bool m_bStartDisabled; |  0x528 | Schema_Builtin | Size: 0x1

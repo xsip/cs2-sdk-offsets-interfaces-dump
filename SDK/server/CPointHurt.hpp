@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -27,8 +32,8 @@ namespace CS2 {
 			float32 m_flRadius; // 0x4f8 | Schema_Builtin | Size: 0x4
 			float32 m_flDelay; // 0x4fc | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_strTarget; // 0x500 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_pActivator; // 0x508 | Schema_Atomic | Size: 0x4
-			char  m_pActivator[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_pActivator; // 0x508 | Schema_Atomic | Size: 0x4
+			// char  m_pActivator[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPointHurt, m_nDamage) == 0x4F0, "m_nDamage in CPointHurt should be at offset 0x4F0");

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x48
 			namespace EntityRenderAttribute_t /**/ {
-				constexpr std::ptrdiff_t m_ID = 0x30; // GlobalTypes::CUtlStringToken m_ID; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_Values = 0x34; // GlobalTypes::Vector4D m_Values; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_ID = 0x30; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Values = 0x34; // GlobalTypes::Vector4D  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

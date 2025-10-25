@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x660
 			namespace CPointTemplate /*: public CS2::client::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_iszWorldName = 0x5f8; // GlobalTypes::CUtlSymbolLarge m_iszWorldName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSource2EntityLumpName = 0x600; // GlobalTypes::CUtlSymbolLarge m_iszSource2EntityLumpName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszEntityFilterName = 0x608; // GlobalTypes::CUtlSymbolLarge m_iszEntityFilterName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszWorldName = 0x5f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSource2EntityLumpName = 0x600; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEntityFilterName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flTimeoutInterval = 0x610; // float32 m_flTimeoutInterval; |  0x610 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bAsynchronouslySpawnEntities = 0x614; // bool m_bAsynchronouslySpawnEntities; |  0x614 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_clientOnlyEntityBehavior = 0x618; // client::PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_ownerSpawnGroupType = 0x61c; // client::PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_createdSpawnGroupHandles = 0x620; // GlobalTypes::CUtlVector< uint32 > m_createdSpawnGroupHandles; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_SpawnedEntityHandles = 0x638; // GlobalTypes::CUtlVector< GlobalTypes::CEntityHandle > m_SpawnedEntityHandles; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_ScriptSpawnCallback = 0x650; // GlobalTypes::HSCRIPT m_ScriptSpawnCallback; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_ScriptCallbackScope = 0x658; // GlobalTypes::HSCRIPT m_ScriptCallbackScope; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_clientOnlyEntityBehavior = 0x618; // client::PointTemplateClientOnlyEntityBehavior_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_ownerSpawnGroupType = 0x61c; // client::PointTemplateOwnerSpawnGroupType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_createdSpawnGroupHandles = 0x620; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_SpawnedEntityHandles = 0x638; // GlobalTypes::CUtlVector<GlobalTypes::CEntityHandle>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ScriptSpawnCallback = 0x650; // GlobalTypes::HSCRIPT  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ScriptCallbackScope = 0x658; // GlobalTypes::HSCRIPT  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

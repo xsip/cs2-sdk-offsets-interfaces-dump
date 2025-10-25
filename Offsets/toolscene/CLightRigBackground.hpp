@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x5
 			namespace CLightRigBackground /**/ {
 				constexpr std::ptrdiff_t m_bEnabled = 0x0; // bool m_bEnabled; |  0x0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Color = 0x1; // GlobalTypes::Color m_Color; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0x1; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x20
 			namespace AnimationDecodeDebugDump_t /**/ {
-				constexpr std::ptrdiff_t m_processingType = 0x0; // animationsystem::AnimationProcessingType_t m_processingType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_elems = 0x8; // GlobalTypes::CUtlVector< animationsystem::AnimationDecodeDebugDumpElement_t > m_elems; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_processingType = 0x0; // animationsystem::AnimationProcessingType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_elems = 0x8; // GlobalTypes::CUtlVector<animationsystem::AnimationDecodeDebugDumpElement_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

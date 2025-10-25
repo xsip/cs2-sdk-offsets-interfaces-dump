@@ -26,9 +26,9 @@ namespace CS2 {
 	namespace client {
 		class ragdoll_t  {
 		public:
-			GlobalTypes::CUtlVector< client::ragdollelement_t > list; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::ragdollelement_t> list; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  list[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< client::ragdollhierarchyjoint_t > hierarchyJoints; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::ragdollhierarchyjoint_t> hierarchyJoints; // 0x18 | Schema_Atomic | Size: 0x18
 			// char  hierarchyJoints[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > boneIndex; // 0x30 | Schema_Atomic | Size: 0x18
 			// char  boneIndex[0x18]; // 0x30 | Schema_Atomic | Size: 0x18

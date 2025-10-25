@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xB0
 			namespace CDemoSettingsComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_settings = 0x30; // animgraphlib::CAnimDemoCaptureSettings m_settings; |  Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_settings = 0x30; // animgraphlib::CAnimDemoCaptureSettings  | Schema_DeclaredClass | Size: 0x80
 			}
 		}
 	}

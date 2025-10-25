@@ -23,7 +23,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flOutputMax = 0x1fc; // float32 m_flOutputMax; |  0x1fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseScale = 0x200; // float32 m_flNoiseScale; |  0x200 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flWorldNoiseScale = 0x204; // float32 m_flWorldNoiseScale; |  0x204 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOffsetLoc = 0x208; // GlobalTypes::Vector m_vecOffsetLoc; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffsetLoc = 0x208; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flWorldTimeScale = 0x214; // float32 m_flWorldTimeScale; |  0x214 | Schema_Builtin | Size: 0x4
 			}
 		}

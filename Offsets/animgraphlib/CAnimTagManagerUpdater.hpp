@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x78
 			namespace CAnimTagManagerUpdater /**/ {
-				constexpr std::ptrdiff_t m_tags = 0x38; // GlobalTypes::CUtlVector< GlobalTypes::CSmartPtr< CAnimTagBase > > m_tags; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_tags = 0x38; // GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimTagBase>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

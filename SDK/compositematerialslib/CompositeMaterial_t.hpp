@@ -31,7 +31,7 @@ namespace CS2 {
 			S2_PAD(0x30);
 			GlobalTypes::KeyValues3 m_FinalKVs; // 0x58 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x18);
-			GlobalTypes::CUtlVector< compositematerialslib::GeneratedTextureHandle_t > m_vecGeneratedTextures; // 0x80 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<compositematerialslib::GeneratedTextureHandle_t> m_vecGeneratedTextures; // 0x80 | Schema_Atomic | Size: 0x18
 			// char  m_vecGeneratedTextures[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

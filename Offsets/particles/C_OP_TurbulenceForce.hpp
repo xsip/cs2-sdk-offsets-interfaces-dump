@@ -14,10 +14,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flNoiseCoordScale1 = 0x1e4; // float32 m_flNoiseCoordScale1; |  0x1e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseCoordScale2 = 0x1e8; // float32 m_flNoiseCoordScale2; |  0x1e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flNoiseCoordScale3 = 0x1ec; // float32 m_flNoiseCoordScale3; |  0x1ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecNoiseAmount0 = 0x1f0; // GlobalTypes::Vector m_vecNoiseAmount0; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecNoiseAmount1 = 0x1fc; // GlobalTypes::Vector m_vecNoiseAmount1; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecNoiseAmount2 = 0x208; // GlobalTypes::Vector m_vecNoiseAmount2; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecNoiseAmount3 = 0x214; // GlobalTypes::Vector m_vecNoiseAmount3; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNoiseAmount0 = 0x1f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNoiseAmount1 = 0x1fc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNoiseAmount2 = 0x208; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecNoiseAmount3 = 0x214; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

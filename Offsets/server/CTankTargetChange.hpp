@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x508
 			namespace CTankTargetChange /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_newTarget = 0x4f0; // GlobalTypes::CVariantBase< entity2::CVariantDefaultAllocator > m_newTarget; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_newTargetName = 0x500; // GlobalTypes::CUtlSymbolLarge m_newTargetName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_newTarget = 0x4f0; // GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_newTargetName = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -29,7 +29,7 @@ namespace CS2 {
 			int32_t m_nTransitionDurationTicks; // 0xecc | Schema_Builtin | Size: 0x4
 			float32 m_flTransitionStartSpeed; // 0xed0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// client::C_NetworkUtlVectorBase< client.dll::CHandle< C_BaseEntity > > m_hConveyorModels; // 0xed8 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseEntity>> m_hConveyorModels; // 0xed8 | Schema_Atomic | Size: 0x18
 			char  m_hConveyorModels[0x18]; // 0xed8 | Schema_Atomic | Size: 0x18
 			float32 m_flCurrentConveyorOffset; // 0xef0 | Schema_Builtin | Size: 0x4
 			float32 m_flCurrentConveyorSpeed; // 0xef4 | Schema_Builtin | Size: 0x4

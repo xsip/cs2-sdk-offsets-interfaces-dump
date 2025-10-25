@@ -11,13 +11,13 @@ namespace CS2 {
 			// Class size: 0xC00
 			namespace C_OP_RenderMaterialProxy /*: public CS2::particles::CParticleFunctionRenderer*/ {
 				constexpr std::ptrdiff_t m_nMaterialControlPoint = 0x220; // int32_t m_nMaterialControlPoint; |  0x220 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nProxyType = 0x224; // particles::MaterialProxyType_t m_nProxyType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_MaterialVars = 0x228; // GlobalTypes::CUtlVector< particles::MaterialVariable_t > m_MaterialVars; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hOverrideMaterial = 0x240; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hOverrideMaterial; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flMaterialOverrideEnabled = 0x248; // particleslib::CParticleCollectionFloatInput m_flMaterialOverrideEnabled; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_vecColorScale = 0x3b8; // particleslib::CParticleCollectionVecInput m_vecColorScale; |  Schema_DeclaredClass | Size: 0x6b8
-				constexpr std::ptrdiff_t m_flAlpha = 0xa70; // particleslib::CPerParticleFloatInput m_flAlpha; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nColorBlendType = 0xbe0; // particles::ParticleColorBlendType_t m_nColorBlendType; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nProxyType = 0x224; // particles::MaterialProxyType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_MaterialVars = 0x228; // GlobalTypes::CUtlVector<particles::MaterialVariable_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hOverrideMaterial = 0x240; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flMaterialOverrideEnabled = 0x248; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_vecColorScale = 0x3b8; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_flAlpha = 0xa70; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nColorBlendType = 0xbe0; // particles::ParticleColorBlendType_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

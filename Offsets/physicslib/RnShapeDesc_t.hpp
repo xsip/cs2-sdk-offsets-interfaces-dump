@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace RnShapeDesc_t /**/ {
 				constexpr std::ptrdiff_t m_nCollisionAttributeIndex = 0x0; // uint32_t m_nCollisionAttributeIndex; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSurfacePropertyIndex = 0x4; // uint32_t m_nSurfacePropertyIndex; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_UserFriendlyName = 0x8; // GlobalTypes::CUtlString m_UserFriendlyName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_UserFriendlyName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bUserFriendlyNameSealed = 0x10; // bool m_bUserFriendlyNameSealed; |  0x10 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUserFriendlyNameLong = 0x11; // bool m_bUserFriendlyNameLong; |  0x11 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nToolMaterialHash = 0x14; // uint32_t m_nToolMaterialHash; |  0x14 | Schema_Builtin | Size: 0x4

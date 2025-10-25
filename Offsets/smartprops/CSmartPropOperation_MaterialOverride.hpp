@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0xA8
 			namespace CSmartPropOperation_MaterialOverride /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_bClearCurrentOverrides = 0x50; // GlobalTypes::CSmartPropAttributeBool m_bClearCurrentOverrides; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_MaterialReplacements = 0x90; // GlobalTypes::CUtlVector< smartprops::CSmartPropMaterialReplacement > m_MaterialReplacements; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bClearCurrentOverrides = 0x50; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_MaterialReplacements = 0x90; // GlobalTypes::CUtlVector<smartprops::CSmartPropMaterialReplacement>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

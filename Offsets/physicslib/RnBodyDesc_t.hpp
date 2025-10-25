@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0xE0
 			namespace RnBodyDesc_t /**/ {
-				constexpr std::ptrdiff_t m_sDebugName = 0x0; // GlobalTypes::CUtlString m_sDebugName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vPosition = 0x8; // GlobalTypes::Vector m_vPosition; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_qOrientation = 0x14; // GlobalTypes::QuaternionStorage m_qOrientation; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vLinearVelocity = 0x24; // GlobalTypes::Vector m_vLinearVelocity; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vAngularVelocity = 0x30; // GlobalTypes::Vector m_vAngularVelocity; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vLocalMassCenter = 0x3c; // GlobalTypes::Vector m_vLocalMassCenter; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_LocalInertiaInv = 0x48; // GlobalTypes::Vector m_LocalInertiaInv[3]; |  Schema_FixedArray | Size: 0x24
+				constexpr std::ptrdiff_t m_sDebugName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vPosition = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_qOrientation = 0x14; // GlobalTypes::QuaternionStorage  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vLinearVelocity = 0x24; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vAngularVelocity = 0x30; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLocalMassCenter = 0x3c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_LocalInertiaInv = 0x48; // GlobalTypes::Vector[3]  | Schema_FixedArray | Size: 0x24
 				constexpr std::ptrdiff_t m_flMassInv = 0x6c; // float32 m_flMassInv; |  0x6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flGameMass = 0x70; // float32 m_flGameMass; |  0x70 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMassScaleInv = 0x74; // float32 m_flMassScaleInv; |  0x74 | Schema_Builtin | Size: 0x4
@@ -27,8 +27,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flAngularDrag = 0x88; // float32 m_flAngularDrag; |  0x88 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLinearBuoyancyDrag = 0x8c; // float32 m_flLinearBuoyancyDrag; |  0x8c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAngularBuoyancyDrag = 0x90; // float32 m_flAngularBuoyancyDrag; |  0x90 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLastAwakeForceAccum = 0x94; // GlobalTypes::Vector m_vLastAwakeForceAccum; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vLastAwakeTorqueAccum = 0xa0; // GlobalTypes::Vector m_vLastAwakeTorqueAccum; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLastAwakeForceAccum = 0x94; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLastAwakeTorqueAccum = 0xa0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flBuoyancyFactor = 0xac; // float32 m_flBuoyancyFactor; |  0xac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flGravityScale = 0xb0; // float32 m_flGravityScale; |  0xb0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTimeScale = 0xb4; // float32 m_flTimeScale; |  0xb4 | Schema_Builtin | Size: 0x4
@@ -43,10 +43,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bIsContinuousEnabled = 0xc9; // bool m_bIsContinuousEnabled; |  0xc9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDragEnabled = 0xca; // bool m_bDragEnabled; |  0xca | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bBuoyancyDragEnabled = 0xcb; // bool m_bBuoyancyDragEnabled; |  0xcb | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vGravity = 0xcc; // GlobalTypes::Vector m_vGravity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vGravity = 0xcc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bSpeculativeEnabled = 0xd8; // bool m_bSpeculativeEnabled; |  0xd8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasShadowController = 0xd9; // bool m_bHasShadowController; |  0xd9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nDynamicContinuousContactBehavior = 0xda; // physicslib::DynamicContinuousContactBehavior_t m_nDynamicContinuousContactBehavior; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nDynamicContinuousContactBehavior = 0xda; // physicslib::DynamicContinuousContactBehavior_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -22,8 +27,8 @@ namespace CS2 {
 		class CGameScriptedMoveDef_t  {
 		public:
 			GlobalTypes::Vector m_vDestOffset; // 0x0 | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hDestEntity; // 0xc | Schema_Atomic | Size: 0x4
-			char  m_hDestEntity[0x4]; // 0xc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hDestEntity; // 0xc | Schema_Atomic | Size: 0x4
+			// char  m_hDestEntity[0x4]; // 0xc | Schema_Atomic | Size: 0x4
 			GlobalTypes::QAngle m_angDest; // 0x10 | Schema_Atomic | Size: 0xc
 			float32 m_flDuration; // 0x1c | Schema_Builtin | Size: 0x4
 			float32 m_flAngRate; // 0x20 | Schema_Builtin | Size: 0x4

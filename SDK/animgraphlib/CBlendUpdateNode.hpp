@@ -32,7 +32,7 @@ namespace CS2 {
 		class CBlendUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CUtlVector< animgraphlib::CAnimUpdateNodeRef > m_children; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animgraphlib::CAnimUpdateNodeRef> m_children; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint8 > m_sortedOrder; // 0x78 | Schema_Atomic | Size: 0x18
 			// char  m_sortedOrder[0x18]; // 0x78 | Schema_Atomic | Size: 0x18

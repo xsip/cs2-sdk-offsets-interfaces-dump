@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace soundsystem_lowlevel {
 			// Class size: 0x10
 			namespace VMixFilterDesc_t /**/ {
-				constexpr std::ptrdiff_t m_nFilterType = 0x0; // soundsystem_lowlevel::VMixFilterType_t m_nFilterType; |  Schema_DeclaredEnum | Size: 0x2
-				constexpr std::ptrdiff_t m_nFilterSlope = 0x2; // soundsystem_lowlevel::VMixFilterSlope_t m_nFilterSlope; |  Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nFilterType = 0x0; // soundsystem_lowlevel::VMixFilterType_t  | Schema_DeclaredEnum | Size: 0x2
+				constexpr std::ptrdiff_t m_nFilterSlope = 0x2; // soundsystem_lowlevel::VMixFilterSlope_t  | Schema_DeclaredEnum | Size: 0x1
 				constexpr std::ptrdiff_t m_bEnabled = 0x3; // bool m_bEnabled; |  0x3 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_fldbGain = 0x4; // float32 m_fldbGain; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flCutoffFreq = 0x8; // float32 m_flCutoffFreq; |  0x8 | Schema_Builtin | Size: 0x4

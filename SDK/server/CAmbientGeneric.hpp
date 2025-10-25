@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -32,8 +37,8 @@ namespace CS2 {
 			S2_PAD(0x6);
 			GlobalTypes::CUtlSymbolLarge m_iszSound; // 0x568 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_sSourceEntName; // 0x570 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hSoundSource; // 0x578 | Schema_Atomic | Size: 0x4
-			char  m_hSoundSource[0x4]; // 0x578 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hSoundSource; // 0x578 | Schema_Atomic | Size: 0x4
+			// char  m_hSoundSource[0x4]; // 0x578 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CEntityIndex m_nSoundSourceEntIndex; // 0x57c | Schema_Atomic | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};

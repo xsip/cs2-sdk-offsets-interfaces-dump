@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0xC
 			namespace NmFloatCurveCompressionSettings_t /**/ {
-				constexpr std::ptrdiff_t m_range = 0x0; // animlib::QuantizationRange_t m_range; |  Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_range = 0x0; // animlib::NmCompressionSettings_t::QuantizationRange_t  | Schema_DeclaredClass | Size: 0x8
 				constexpr std::ptrdiff_t m_bIsStatic = 0x8; // bool m_bIsStatic; |  0x8 | Schema_Builtin | Size: 0x1
 			}
 		}

@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0x90
 			namespace CTwistConstraint /*: public CS2::modellib::CBaseConstraint*/ {
 				constexpr std::ptrdiff_t m_bInverse = 0x60; // bool m_bInverse; |  0x60 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_qParentBindRotation = 0x70; // GlobalTypes::Quaternion m_qParentBindRotation; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_qChildBindRotation = 0x80; // GlobalTypes::Quaternion m_qChildBindRotation; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_qParentBindRotation = 0x70; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_qChildBindRotation = 0x80; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

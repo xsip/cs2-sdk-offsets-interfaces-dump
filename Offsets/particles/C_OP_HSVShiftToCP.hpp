@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nColorCP = 0x1d8; // int32_t m_nColorCP; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nColorGemEnableCP = 0x1dc; // int32_t m_nColorGemEnableCP; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutputCP = 0x1e0; // int32_t m_nOutputCP; |  0x1e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_DefaultHSVColor = 0x1e4; // GlobalTypes::Color m_DefaultHSVColor; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_DefaultHSVColor = 0x1e4; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

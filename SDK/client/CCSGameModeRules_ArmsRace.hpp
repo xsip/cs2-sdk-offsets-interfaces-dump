@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace client {
 		class CCSGameModeRules_ArmsRace : public CS2::client::CCSGameModeRules {
 		public:
-			// GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CUtlString > m_WeaponSequence; // 0x30 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlString> m_WeaponSequence; // 0x30 | Schema_Atomic | Size: 0x18
 			char  m_WeaponSequence[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::CCSGameModeRules_ArmsRace, m_WeaponSequence) == 0x30, "m_WeaponSequence in CCSGameModeRules_ArmsRace should be at offset 0x30");

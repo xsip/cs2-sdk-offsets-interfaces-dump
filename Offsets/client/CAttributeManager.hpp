@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x50
 			namespace CAttributeManager /**/ {
-				constexpr std::ptrdiff_t m_Providers = 0x8; // client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_Providers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Providers = 0x8; // GlobalTypes::CUtlVector<GlobalTypes::CHandle<client::C_BaseEntity>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_iReapplyProvisionParity = 0x20; // int32_t m_iReapplyProvisionParity; |  0x20 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hOuter = 0x24; // client::CHandle< client::C_BaseEntity > m_hOuter; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hOuter = 0x24; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bPreventLoopback = 0x28; // bool m_bPreventLoopback; |  0x28 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_ProviderType = 0x2c; // client::attributeprovidertypes_t m_ProviderType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_CachedResults = 0x30; // client::cached_attribute_float_t > m_CachedResults; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ProviderType = 0x2c; // client::attributeprovidertypes_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_CachedResults = 0x30; // GlobalTypes::CUtlVector<client::CAttributeManager::cached_attribute_float_t>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

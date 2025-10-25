@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x38
 			namespace CNmIKRig /**/ {
-				constexpr std::ptrdiff_t m_skeleton = 0x0; // GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCNmSkeleton > m_skeleton; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecBodies = 0x8; // GlobalTypes::CUtlVector< animlib::CNmIKBody > m_vecBodies; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecJoints = 0x20; // GlobalTypes::CUtlVector< animlib::CNmIKJoint > m_vecJoints; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_skeleton = 0x0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecBodies = 0x8; // GlobalTypes::CUtlVector<animlib::CNmIKBody>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecJoints = 0x20; // GlobalTypes::CUtlVector<animlib::CNmIKJoint>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

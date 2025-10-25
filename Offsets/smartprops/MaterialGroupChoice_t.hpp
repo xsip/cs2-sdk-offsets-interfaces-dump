@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x80
 			namespace MaterialGroupChoice_t /**/ {
-				constexpr std::ptrdiff_t m_MaterialGroupName = 0x0; // GlobalTypes::CSmartPropAttributeMaterialGroup m_MaterialGroupName; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flWeight = 0x40; // GlobalTypes::CSmartPropAttributeFloat m_flWeight; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_MaterialGroupName = 0x0; // GlobalTypes::CSmartPropAttributeMaterialGroup  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flWeight = 0x40; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

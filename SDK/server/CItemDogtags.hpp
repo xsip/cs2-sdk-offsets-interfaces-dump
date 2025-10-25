@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CCSPlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,10 +26,10 @@ namespace CS2 {
 	namespace server {
 		class CItemDogtags : public CS2::server::CItem {
 		public:
-			// server::CHandle< server::CCSPlayerPawn > m_OwningPlayer; // 0xb70 | Schema_Atomic | Size: 0x4
-			char  m_OwningPlayer[0x4]; // 0xb70 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CCSPlayerPawn > m_KillingPlayer; // 0xb74 | Schema_Atomic | Size: 0x4
-			char  m_KillingPlayer[0x4]; // 0xb74 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_OwningPlayer; // 0xb70 | Schema_Atomic | Size: 0x4
+			// char  m_OwningPlayer[0x4]; // 0xb70 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_KillingPlayer; // 0xb74 | Schema_Atomic | Size: 0x4
+			// char  m_KillingPlayer[0x4]; // 0xb74 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::server::CItemDogtags, m_OwningPlayer) == 0xB70, "m_OwningPlayer in CItemDogtags should be at offset 0xB70");

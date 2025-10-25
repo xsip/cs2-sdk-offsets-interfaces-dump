@@ -15,15 +15,15 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nVoteOptionCount = 0x4f8; // int32_t m_nVoteOptionCount[5]; |  0x4f8 | Schema_FixedArray | Size: 0x14
 				constexpr std::ptrdiff_t m_nPotentialVotes = 0x50c; // int32_t m_nPotentialVotes; |  0x50c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsYesNoVote = 0x510; // bool m_bIsYesNoVote; |  0x510 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_acceptingVotesTimer = 0x518; // server::CountdownTimer m_acceptingVotesTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_executeCommandTimer = 0x530; // server::CountdownTimer m_executeCommandTimer; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_resetVoteTimer = 0x548; // server::CountdownTimer m_resetVoteTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_acceptingVotesTimer = 0x518; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_executeCommandTimer = 0x530; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_resetVoteTimer = 0x548; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_nVotesCast = 0x560; // int32_t m_nVotesCast[64]; |  0x560 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_playerHoldingVote = 0x660; // GlobalTypes::CPlayerSlot m_playerHoldingVote; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_playerOverrideForVote = 0x664; // GlobalTypes::CPlayerSlot m_playerOverrideForVote; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_playerHoldingVote = 0x660; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_playerOverrideForVote = 0x664; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_nHighestCountIndex = 0x668; // int32_t m_nHighestCountIndex; |  0x668 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_potentialIssues = 0x670; // GlobalTypes::CUtlVector< server::CBaseIssue > m_potentialIssues; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_VoteOptions = 0x688; // GlobalTypes::CUtlVector< �p�e�::char > m_VoteOptions; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_potentialIssues = 0x670; // GlobalTypes::CUtlVector<server::CBaseIssue*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_VoteOptions = 0x688; // GlobalTypes::CUtlVector<char*>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

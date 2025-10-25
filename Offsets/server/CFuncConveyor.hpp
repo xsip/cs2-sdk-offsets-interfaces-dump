@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x828
 			namespace CFuncConveyor /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_szConveyorModels = 0x7d8; // GlobalTypes::CUtlSymbolLarge m_szConveyorModels; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szConveyorModels = 0x7d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flTransitionDurationSeconds = 0x7e0; // float32 m_flTransitionDurationSeconds; |  0x7e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_angMoveEntitySpace = 0x7e4; // GlobalTypes::QAngle m_angMoveEntitySpace; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecMoveDirEntitySpace = 0x7f0; // GlobalTypes::Vector m_vecMoveDirEntitySpace; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angMoveEntitySpace = 0x7e4; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecMoveDirEntitySpace = 0x7f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flTargetSpeed = 0x7fc; // float32 m_flTargetSpeed; |  0x7fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTransitionStartTick = 0x800; // entity2::GameTick_t m_nTransitionStartTick; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nTransitionStartTick = 0x800; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nTransitionDurationTicks = 0x804; // int32_t m_nTransitionDurationTicks; |  0x804 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTransitionStartSpeed = 0x808; // float32 m_flTransitionStartSpeed; |  0x808 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hConveyorModels = 0x810; // server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseEntity > > m_hConveyorModels; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hConveyorModels = 0x810; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

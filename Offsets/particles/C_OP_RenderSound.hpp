@@ -14,10 +14,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flSndLvlScale = 0x224; // float32 m_flSndLvlScale; |  0x224 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flPitchScale = 0x228; // float32 m_flPitchScale; |  0x228 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flVolumeScale = 0x22c; // float32 m_flVolumeScale; |  0x22c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSndLvlField = 0x230; // particles::ParticleAttributeIndex_t m_nSndLvlField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nDurationField = 0x234; // particles::ParticleAttributeIndex_t m_nDurationField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nPitchField = 0x238; // particles::ParticleAttributeIndex_t m_nPitchField; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nVolumeField = 0x23c; // particles::ParticleAttributeIndex_t m_nVolumeField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nSndLvlField = 0x230; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nDurationField = 0x234; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nPitchField = 0x238; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nVolumeField = 0x23c; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_nChannel = 0x240; // int32_t m_nChannel; |  0x240 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nCPReference = 0x244; // int32_t m_nCPReference; |  0x244 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_pszSoundName = 0x248; // char m_pszSoundName[256]; |  0x248 | Schema_FixedArray | Size: 0x100

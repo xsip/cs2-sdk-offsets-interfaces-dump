@@ -16,6 +16,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseFilter;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,16 +28,16 @@ namespace CS2 {
 	namespace server {
 		class CPointEntityFinder : public CS2::server::CBaseEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
-			char  m_hEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
+			// char  m_hEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x4f8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x500 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x500 | Schema_Atomic | Size: 0x4
+			// char  m_hFilter[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iRefName; // 0x508 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hReference; // 0x510 | Schema_Atomic | Size: 0x4
-			char  m_hReference[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hReference; // 0x510 | Schema_Atomic | Size: 0x4
+			// char  m_hReference[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
 			server::EntFinderMethod_t m_FindMethod; // 0x514 | Schema_DeclaredEnum | Size: 0x4
 			entity2::CEntityIOOutput m_OnFoundEntity; // 0x518 | Schema_DeclaredClass | Size: 0x28
 		};

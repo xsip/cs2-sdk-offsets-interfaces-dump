@@ -19,7 +19,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flLowCutoffFreq = 0x18; // float32 m_flLowCutoffFreq; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flHighCutoffFreq = 0x1c; // float32 m_flHighCutoffFreq; |  0x1c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bPeakMode = 0x20; // bool m_bPeakMode; |  0x20 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bandDesc = 0x24; // soundsystem_lowlevel::VMixDynamicsBand_t m_bandDesc[3]; |  Schema_FixedArray | Size: 0x144
+				constexpr std::ptrdiff_t m_bandDesc = 0x24; // GlobalTypes::VMixDynamicsBand_t[3]  | Schema_FixedArray | Size: 0x144
 			}
 		}
 	}

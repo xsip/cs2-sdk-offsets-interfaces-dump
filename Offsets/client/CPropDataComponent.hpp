@@ -14,8 +14,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flDmgModClub = 0x14; // float32 m_flDmgModClub; |  0x14 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDmgModExplosive = 0x18; // float32 m_flDmgModExplosive; |  0x18 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDmgModFire = 0x1c; // float32 m_flDmgModFire; |  0x1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszPhysicsDamageTableName = 0x20; // GlobalTypes::CUtlSymbolLarge m_iszPhysicsDamageTableName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszBasePropData = 0x28; // GlobalTypes::CUtlSymbolLarge m_iszBasePropData; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszPhysicsDamageTableName = 0x20; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszBasePropData = 0x28; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nInteractions = 0x30; // int32_t m_nInteractions; |  0x30 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSpawnMotionDisabled = 0x34; // bool m_bSpawnMotionDisabled; |  0x34 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nDisableTakePhysicsDamageSpawnFlag = 0x38; // int32_t m_nDisableTakePhysicsDamageSpawnFlag; |  0x38 | Schema_Builtin | Size: 0x4

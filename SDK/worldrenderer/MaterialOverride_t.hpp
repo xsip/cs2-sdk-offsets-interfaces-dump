@@ -24,7 +24,7 @@ namespace CS2 {
 			uint32_t m_nSubSceneObject; // 0x4 | Schema_Builtin | Size: 0x4
 			uint32_t m_nDrawCallIndex; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_pMaterial; // 0x10 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_pMaterial; // 0x10 | Schema_Atomic | Size: 0x8
 			char  m_pMaterial[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_vLinearTintColor; // 0x18 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding

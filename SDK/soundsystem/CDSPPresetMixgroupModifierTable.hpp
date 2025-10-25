@@ -25,7 +25,7 @@ namespace CS2 {
 	namespace soundsystem {
 		class CDSPPresetMixgroupModifierTable  {
 		public:
-			GlobalTypes::CUtlVector< soundsystem::CDspPresetModifierList > m_table; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem::CDspPresetModifierList> m_table; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  m_table[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::soundsystem::CDSPPresetMixgroupModifierTable, m_table) == 0x0, "m_table in CDSPPresetMixgroupModifierTable should be at offset 0x0");

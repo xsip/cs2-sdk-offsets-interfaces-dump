@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0xF0
 			namespace CVoiceContainerBlender /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_firstSound = 0xb8; // soundsystem_voicecontainers::CSoundContainerReference m_firstSound; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_secondSound = 0xd0; // soundsystem_voicecontainers::CSoundContainerReference m_secondSound; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_firstSound = 0xb8; // soundsystem_voicecontainers::CSoundContainerReference  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_secondSound = 0xd0; // soundsystem_voicecontainers::CSoundContainerReference  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_flBlendFactor = 0xe8; // float32 m_flBlendFactor; |  0xe8 | Schema_Builtin | Size: 0x4
 			}
 		}

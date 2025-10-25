@@ -10,24 +10,24 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x74
 			namespace CGameScriptedMoveData /**/ {
-				constexpr std::ptrdiff_t m_vAccumulatedRootMotion = 0x0; // GlobalTypes::Vector m_vAccumulatedRootMotion; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angAccumulatedRootMotionRotation = 0xc; // GlobalTypes::QAngle m_angAccumulatedRootMotionRotation; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vSrc = 0x18; // GlobalTypes::VectorWS m_vSrc; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angSrc = 0x24; // GlobalTypes::QAngle m_angSrc; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angCurrent = 0x30; // GlobalTypes::QAngle m_angCurrent; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vAccumulatedRootMotion = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angAccumulatedRootMotionRotation = 0xc; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vSrc = 0x18; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angSrc = 0x24; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angCurrent = 0x30; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flLockedSpeed = 0x3c; // float32 m_flLockedSpeed; |  0x3c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAngRate = 0x40; // float32 m_flAngRate; |  0x40 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDuration = 0x44; // float32 m_flDuration; |  0x44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartTime = 0x48; // entity2::GameTime_t m_flStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartTime = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bActive = 0x4c; // bool m_bActive; |  0x4c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bTeleportOnEnd = 0x4d; // bool m_bTeleportOnEnd; |  0x4d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIgnoreRotation = 0x4e; // bool m_bIgnoreRotation; |  0x4e | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSuccess = 0x4f; // bool m_bSuccess; |  0x4f | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nForcedCrouchState = 0x50; // client::ForcedCrouchState_t m_nForcedCrouchState; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nForcedCrouchState = 0x50; // client::ForcedCrouchState_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bIgnoreCollisions = 0x54; // bool m_bIgnoreCollisions; |  0x54 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vDest = 0x58; // GlobalTypes::Vector m_vDest; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angDst = 0x64; // GlobalTypes::QAngle m_angDst; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hDestEntity = 0x70; // server::CHandle< server::CBaseEntity > m_hDestEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vDest = 0x58; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angDst = 0x64; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hDestEntity = 0x70; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

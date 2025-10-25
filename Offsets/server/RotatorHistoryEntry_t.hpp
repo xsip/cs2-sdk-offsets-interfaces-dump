@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x20
 			namespace RotatorHistoryEntry_t /**/ {
-				constexpr std::ptrdiff_t qInvChange = 0x0; // GlobalTypes::Quaternion qInvChange; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t flTimeRotationStart = 0x10; // entity2::GameTime_t flTimeRotationStart; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t qInvChange = 0x0; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t flTimeRotationStart = 0x10; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace PointDefinition_t /**/ {
 				constexpr std::ptrdiff_t m_nControlPoint = 0x0; // int32_t m_nControlPoint; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bLocalCoords = 0x4; // bool m_bLocalCoords; |  0x4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vOffset = 0x8; // GlobalTypes::Vector m_vOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOffset = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

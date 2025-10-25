@@ -52,7 +52,7 @@ namespace CS2 {
 			bool m_bEnableIndirect; // 0x565 | Schema_Builtin | Size: 0x1
 			bool m_bIsMaster; // 0x566 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hFogIndirectTexture; // 0x568 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogIndirectTexture; // 0x568 | Schema_Atomic | Size: 0x8
 			char  m_hFogIndirectTexture[0x8]; // 0x568 | Schema_Atomic | Size: 0x8
 			int32_t m_nForceRefreshCount; // 0x570 | Schema_Builtin | Size: 0x4
 			float32 m_fNoiseSpeed; // 0x574 | Schema_Builtin | Size: 0x4

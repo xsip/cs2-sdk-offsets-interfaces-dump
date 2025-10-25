@@ -27,7 +27,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vInitialVelocity; // 0x13c4 | Schema_Atomic | Size: 0xc
 			int32_t m_nBounces; // 0x13d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSystemDefinition > m_nExplodeEffectIndex; // 0x13d8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_nExplodeEffectIndex; // 0x13d8 | Schema_Atomic | Size: 0x8
 			char  m_nExplodeEffectIndex[0x8]; // 0x13d8 | Schema_Atomic | Size: 0x8
 			int32_t m_nExplodeEffectTickBegin; // 0x13e0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecExplodeEffectOrigin; // 0x13e4 | Schema_Atomic | Size: 0xc
@@ -39,9 +39,9 @@ namespace CS2 {
 			S2_PAD(0x2);
 			client::ParticleIndex_t m_nSnapshotTrajectoryEffectIndex; // 0x1408 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIParticleSnapshot > m_hSnapshotTrajectoryParticleSnapshot; // 0x1410 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hSnapshotTrajectoryParticleSnapshot; // 0x1410 | Schema_Atomic | Size: 0x8
 			char  m_hSnapshotTrajectoryParticleSnapshot[0x8]; // 0x1410 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::Vector > m_arrTrajectoryTrailPoints; // 0x1418 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::Vector> m_arrTrajectoryTrailPoints; // 0x1418 | Schema_Atomic | Size: 0x18
 			// char  m_arrTrajectoryTrailPoints[0x18]; // 0x1418 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< float32 > m_arrTrajectoryTrailPointCreationTimes; // 0x1430 | Schema_Atomic | Size: 0x18
 			// char  m_arrTrajectoryTrailPointCreationTimes[0x18]; // 0x1430 | Schema_Atomic | Size: 0x18

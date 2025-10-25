@@ -35,7 +35,7 @@ namespace CS2 {
 			bool m_bOnlyDestroyWhenGibbing; // 0x28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CGlobalSymbol m_sBodyGroupName; // 0x30 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< client::CDestructiblePart_DamageLevel > m_DamageLevels; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::CDestructiblePart_DamageLevel> m_DamageLevels; // 0x38 | Schema_Atomic | Size: 0x18
 			// char  m_DamageLevels[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::CDestructiblePart, m_DebugName) == 0x0, "m_DebugName in CDestructiblePart should be at offset 0x0");

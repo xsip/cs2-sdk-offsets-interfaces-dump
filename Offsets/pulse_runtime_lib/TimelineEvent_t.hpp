@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x50
 			namespace TimelineEvent_t /**/ {
 				constexpr std::ptrdiff_t m_flTimeFromPrevious = 0x0; // float32 m_flTimeFromPrevious; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_EventOutflow = 0x8; // pulse_runtime_lib::CPulse_OutflowConnection m_EventOutflow; |  Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_EventOutflow = 0x8; // pulse_runtime_lib::CPulse_OutflowConnection  | Schema_DeclaredClass | Size: 0x48
 			}
 		}
 	}

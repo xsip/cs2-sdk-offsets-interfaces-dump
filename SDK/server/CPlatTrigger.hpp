@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CFuncPlat;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,8 +26,8 @@ namespace CS2 {
 	namespace server {
 		class CPlatTrigger : public CS2::server::CBaseModelEntity {
 		public:
-			// server::CHandle< server::CFuncPlat > m_pPlatform; // 0x7d8 | Schema_Atomic | Size: 0x4
-			char  m_pPlatform[0x4]; // 0x7d8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CFuncPlat> m_pPlatform; // 0x7d8 | Schema_Atomic | Size: 0x4
+			// char  m_pPlatform[0x4]; // 0x7d8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CPlatTrigger, m_pPlatform) == 0x7D8, "m_pPlatform in CPlatTrigger should be at offset 0x7D8");

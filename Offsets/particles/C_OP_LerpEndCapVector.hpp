@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x1E8
 			namespace C_OP_LerpEndCapVector /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t m_nFieldOutput; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecOutput = 0x1d4; // GlobalTypes::Vector m_vecOutput; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nFieldOutput = 0x1d0; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecOutput = 0x1d4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flLerpTime = 0x1e0; // float32 m_flLerpTime; |  0x1e0 | Schema_Builtin | Size: 0x4
 			}
 		}

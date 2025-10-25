@@ -22,9 +22,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_name; // 0x8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandleCopyable< InfoForResourceTypeCEntityLump > > m_childLumps; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandleCopyable<resourcesystem::InfoForResourceTypeCEntityLump>> m_childLumps; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_childLumps[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CUtlLeanVector< worldrenderer::EntityKeyValueData_t > m_entityKeyValues; // 0x28 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<worldrenderer::EntityKeyValueData_t> m_entityKeyValues; // 0x28 | Schema_Atomic | Size: 0x10
 			char  m_entityKeyValues[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::worldrenderer::PermEntityLumpData_t, m_name) == 0x8, "m_name in PermEntityLumpData_t should be at offset 0x8");

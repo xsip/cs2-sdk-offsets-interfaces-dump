@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x550
 			namespace CPathKeyFrame /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_Origin = 0x4f0; // GlobalTypes::Vector m_Origin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Angles = 0x4fc; // GlobalTypes::QAngle m_Angles; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_qAngle = 0x510; // GlobalTypes::Quaternion m_qAngle; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_iNextKey = 0x520; // GlobalTypes::CUtlSymbolLarge m_iNextKey; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Origin = 0x4f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Angles = 0x4fc; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_qAngle = 0x510; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_iNextKey = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flNextTime = 0x528; // float32 m_flNextTime; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pNextKey = 0x530; // server::CPathKeyFrame* m_pNextKey; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_pPrevKey = 0x538; // server::CPathKeyFrame* m_pPrevKey; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pNextKey = 0x530; // server::CPathKeyFrame**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pPrevKey = 0x538; // server::CPathKeyFrame**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_flMoveSpeed = 0x540; // float32 m_flMoveSpeed; |  0x540 | Schema_Builtin | Size: 0x4
 			}
 		}

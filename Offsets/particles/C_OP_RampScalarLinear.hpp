@@ -16,7 +16,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flStartTime_max = 0x1dc; // float32 m_flStartTime_max; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEndTime_min = 0x1e0; // float32 m_flEndTime_min; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flEndTime_max = 0x1e4; // float32 m_flEndTime_max; |  0x1e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nField = 0x210; // particles::ParticleAttributeIndex_t m_nField; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nField = 0x210; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bProportionalOp = 0x214; // bool m_bProportionalOp; |  0x214 | Schema_Builtin | Size: 0x1
 			}
 		}

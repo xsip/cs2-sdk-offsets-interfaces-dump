@@ -20,7 +20,7 @@ namespace CS2 {
 	namespace client {
 		class DecalGroupOption_t  {
 		public:
-			// GlobalTypes::CStrongHandleCopyable< resourcesystem::InfoForResourceTypeIMaterial2 > m_hMaterial; // 0x0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandleCopyable<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x0 | Schema_Atomic | Size: 0x8
 			char  m_hMaterial[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_sSequenceName; // 0x8 | Schema_Atomic | Size: 0x8
 			float32 m_flProbability; // 0x10 | Schema_Builtin | Size: 0x4

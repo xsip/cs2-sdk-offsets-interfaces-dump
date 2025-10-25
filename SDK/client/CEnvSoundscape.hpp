@@ -32,7 +32,7 @@ namespace CS2 {
 			int32_t m_soundscapeEntityListId; // 0x638 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_positionNames[8]; // 0x640 | Schema_FixedArray | Size: 0x40
-			GlobalTypes::CHandle< client::CEnvSoundscape > m_hProxySoundscape; // 0x680 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::CEnvSoundscape> m_hProxySoundscape; // 0x680 | Schema_Atomic | Size: 0x4
 			// char  m_hProxySoundscape[0x4]; // 0x680 | Schema_Atomic | Size: 0x4
 			bool m_bDisabled; // 0x684 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

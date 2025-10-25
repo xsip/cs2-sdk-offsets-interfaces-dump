@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xB8
 			namespace CMotionSearchDB /**/ {
-				constexpr std::ptrdiff_t m_rootNode = 0x0; // animgraphlib::CMotionSearchNode m_rootNode; |  Schema_DeclaredClass | Size: 0x80
-				constexpr std::ptrdiff_t m_residualQuantizer = 0x80; // animgraphlib::CProductQuantizer m_residualQuantizer; |  Schema_DeclaredClass | Size: 0x20
-				constexpr std::ptrdiff_t m_codeIndices = 0xa0; // GlobalTypes::CUtlVector< animgraphlib::MotionDBIndex > m_codeIndices; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_rootNode = 0x0; // animgraphlib::CMotionSearchNode  | Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_residualQuantizer = 0x80; // animgraphlib::CProductQuantizer  | Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_codeIndices = 0xa0; // GlobalTypes::CUtlVector<animgraphlib::MotionDBIndex>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

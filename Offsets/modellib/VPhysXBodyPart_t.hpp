@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace VPhysXBodyPart_t /**/ {
 				constexpr std::ptrdiff_t m_nFlags = 0x0; // uint32_t m_nFlags; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMass = 0x4; // float32 m_flMass; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_rnShape = 0x8; // modellib::VPhysics2ShapeDef_t m_rnShape; |  Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_rnShape = 0x8; // modellib::VPhysics2ShapeDef_t  | Schema_DeclaredClass | Size: 0x78
 				constexpr std::ptrdiff_t m_nCollisionAttributeIndex = 0x80; // uint16_t m_nCollisionAttributeIndex; |  0x80 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_nReserved = 0x82; // uint16_t m_nReserved; |  0x82 | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_flInertiaScale = 0x84; // float32 m_flInertiaScale; |  0x84 | Schema_Builtin | Size: 0x4
@@ -21,7 +21,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flLinearDrag = 0x90; // float32 m_flLinearDrag; |  0x90 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAngularDrag = 0x94; // float32 m_flAngularDrag; |  0x94 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bOverrideMassCenter = 0x98; // bool m_bOverrideMassCenter; |  0x98 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vMassCenterOverride = 0x9c; // GlobalTypes::Vector m_vMassCenterOverride; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMassCenterOverride = 0x9c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

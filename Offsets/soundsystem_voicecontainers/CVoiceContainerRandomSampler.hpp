@@ -15,7 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flTimeJitter = 0xc0; // float32 m_flTimeJitter; |  0xc0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxLength = 0xc4; // float32 m_flMaxLength; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nNumDelayVariations = 0xc8; // int32_t m_nNumDelayVariations; |  0xc8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_grainResources = 0xd0; // GlobalTypes::CUtlVector< GlobalTypes::CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > m_grainResources; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_grainResources = 0xd0; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,8 +26,8 @@ namespace CS2 {
 	namespace server {
 		class CPointClientUIDialog : public CS2::server::CBaseClientUIEntity {
 		public:
-			// server::CHandle< server::CBaseEntity > m_hActivator; // 0x988 | Schema_Atomic | Size: 0x4
-			char  m_hActivator[0x4]; // 0x988 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hActivator; // 0x988 | Schema_Atomic | Size: 0x4
+			// char  m_hActivator[0x4]; // 0x988 | Schema_Atomic | Size: 0x4
 			bool m_bStartEnabled; // 0x98c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};

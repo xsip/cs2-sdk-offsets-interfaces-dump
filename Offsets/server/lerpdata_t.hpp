@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x50
 			namespace lerpdata_t /**/ {
-				constexpr std::ptrdiff_t m_hEnt = 0x0; // server::CHandle< server::CBaseEntity > m_hEnt; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_MoveType = 0x4; // client::MoveType_t m_MoveType; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_flStartTime = 0x8; // entity2::GameTime_t m_flStartTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecStartOrigin = 0xc; // GlobalTypes::Vector m_vecStartOrigin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_qStartRot = 0x20; // GlobalTypes::Quaternion m_qStartRot; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_nFXIndex = 0x30; // client::ParticleIndex_t m_nFXIndex; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hEnt = 0x0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_MoveType = 0x4; // client::MoveType_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_flStartTime = 0x8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecStartOrigin = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_qStartRot = 0x20; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_nFXIndex = 0x30; // client::ParticleIndex_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

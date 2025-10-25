@@ -31,7 +31,7 @@ namespace CS2 {
 			float32 m_flTimeScale; // 0x1d8 | Schema_Builtin | Size: 0x4
 			bool m_bLoopedPath; // 0x1dc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CUtlVector< particles::PointDefinitionWithTimeValues_t > m_pointList; // 0x1e0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<particles::PointDefinitionWithTimeValues_t> m_pointList; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char  m_pointList[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_fMinDistance) == 0x1D0, "m_fMinDistance in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1D0");

@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace PhysShapeMarkup_t /**/ {
 				constexpr std::ptrdiff_t m_nBodyInAggregate = 0x0; // int32_t m_nBodyInAggregate; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nShapeInBody = 0x4; // int32_t m_nShapeInBody; |  0x4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sHitGroup = 0x8; // GlobalTypes::CGlobalSymbol m_sHitGroup; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sHitGroup = 0x8; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

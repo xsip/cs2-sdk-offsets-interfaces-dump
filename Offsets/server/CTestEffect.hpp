@@ -12,9 +12,9 @@ namespace CS2 {
 			namespace CTestEffect /*: public CS2::server::CBaseEntity*/ {
 				constexpr std::ptrdiff_t m_iLoop = 0x4f0; // int32_t m_iLoop; |  0x4f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iBeam = 0x4f4; // int32_t m_iBeam; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pBeam = 0x4f8; // server::CBeam m_pBeam[24]; |  Schema_FixedArray | Size: 0x1200
-				constexpr std::ptrdiff_t m_flBeamTime = 0x5b8; // entity2::GameTime_t m_flBeamTime[24]; |  Schema_FixedArray | Size: 0x900
-				constexpr std::ptrdiff_t m_flStartTime = 0x618; // entity2::GameTime_t m_flStartTime; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_pBeam = 0x4f8; // server::CBeam*[24]  | Schema_FixedArray | Size: 0x1200
+				constexpr std::ptrdiff_t m_flBeamTime = 0x5b8; // GlobalTypes::GameTime_t[24]  | Schema_FixedArray | Size: 0x900
+				constexpr std::ptrdiff_t m_flStartTime = 0x618; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

@@ -10,26 +10,26 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1490
 			namespace CAnimGraphNetworkedVariables /**/ {
-				constexpr std::ptrdiff_t m_PredNetBoolVariables = 0x8; // GlobalTypes::C_NetworkUtlVectorBase< uint32 > m_PredNetBoolVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetByteVariables = 0x20; // GlobalTypes::C_NetworkUtlVectorBase< uint8 > m_PredNetByteVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetUInt16Variables = 0x38; // GlobalTypes::C_NetworkUtlVectorBase< uint16 > m_PredNetUInt16Variables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetIntVariables = 0x50; // GlobalTypes::C_NetworkUtlVectorBase< int32 > m_PredNetIntVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetUInt32Variables = 0x68; // GlobalTypes::C_NetworkUtlVectorBase< uint32 > m_PredNetUInt32Variables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetUInt64Variables = 0x80; // GlobalTypes::C_NetworkUtlVectorBase< uint64 > m_PredNetUInt64Variables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetFloatVariables = 0x98; // GlobalTypes::C_NetworkUtlVectorBase< float32 > m_PredNetFloatVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetVectorVariables = 0xb0; // GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_PredNetVectorVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetQuaternionVariables = 0xc8; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::Quaternion > m_PredNetQuaternionVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PredNetGlobalSymbolVariables = 0xe0; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CGlobalSymbol > m_PredNetGlobalSymbolVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetBoolVariables = 0xf8; // GlobalTypes::C_NetworkUtlVectorBase< uint32 > m_OwnerOnlyPredNetBoolVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetByteVariables = 0x110; // GlobalTypes::C_NetworkUtlVectorBase< uint8 > m_OwnerOnlyPredNetByteVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetUInt16Variables = 0x128; // GlobalTypes::C_NetworkUtlVectorBase< uint16 > m_OwnerOnlyPredNetUInt16Variables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetIntVariables = 0x140; // GlobalTypes::C_NetworkUtlVectorBase< int32 > m_OwnerOnlyPredNetIntVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetUInt32Variables = 0x158; // GlobalTypes::C_NetworkUtlVectorBase< uint32 > m_OwnerOnlyPredNetUInt32Variables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetUInt64Variables = 0x170; // GlobalTypes::C_NetworkUtlVectorBase< uint64 > m_OwnerOnlyPredNetUInt64Variables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetFloatVariables = 0x188; // GlobalTypes::C_NetworkUtlVectorBase< float32 > m_OwnerOnlyPredNetFloatVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetVectorVariables = 0x1a0; // GlobalTypes::C_NetworkUtlGlobalTypes::VectorBase< Vector > m_OwnerOnlyPredNetVectorVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetQuaternionVariables = 0x1b8; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::Quaternion > m_OwnerOnlyPredNetQuaternionVariables; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_OwnerOnlyPredNetGlobalSymbolVariables = 0x1d0; // GlobalTypes::C_NetworkUtlVectorBase< GlobalTypes::CGlobalSymbol > m_OwnerOnlyPredNetGlobalSymbolVariables; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetBoolVariables = 0x8; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetByteVariables = 0x20; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetUInt16Variables = 0x38; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetIntVariables = 0x50; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetUInt32Variables = 0x68; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetUInt64Variables = 0x80; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetFloatVariables = 0x98; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetVectorVariables = 0xb0; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetQuaternionVariables = 0xc8; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Quaternion>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PredNetGlobalSymbolVariables = 0xe0; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetBoolVariables = 0xf8; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetByteVariables = 0x110; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetUInt16Variables = 0x128; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetIntVariables = 0x140; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetUInt32Variables = 0x158; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetUInt64Variables = 0x170; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetFloatVariables = 0x188; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetVectorVariables = 0x1a0; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetQuaternionVariables = 0x1b8; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Quaternion>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_OwnerOnlyPredNetGlobalSymbolVariables = 0x1d0; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nBoolVariablesCount = 0x1e8; // int32_t m_nBoolVariablesCount; |  0x1e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOwnerOnlyBoolVariablesCount = 0x1ec; // int32_t m_nOwnerOnlyBoolVariablesCount; |  0x1ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nRandomSeedOffset = 0x1f0; // int32_t m_nRandomSeedOffset; |  0x1f0 | Schema_Builtin | Size: 0x4

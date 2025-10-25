@@ -13,6 +13,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -20,10 +25,10 @@ namespace CS2 {
 	namespace server {
 		class DynamicVolumeDef_t  {
 		public:
-			// server::CHandle< server::CBaseEntity > m_source; // 0x0 | Schema_Atomic | Size: 0x4
-			char  m_source[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_target; // 0x4 | Schema_Atomic | Size: 0x4
-			char  m_target[0x4]; // 0x4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_source; // 0x0 | Schema_Atomic | Size: 0x4
+			// char  m_source[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_target; // 0x4 | Schema_Atomic | Size: 0x4
+			// char  m_target[0x4]; // 0x4 | Schema_Atomic | Size: 0x4
 			int32_t m_nHullIdx; // 0x8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vSourceAnchorPos; // 0xc | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vTargetAnchorPos; // 0x18 | Schema_Atomic | Size: 0xc

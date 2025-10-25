@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x80
 			namespace OutflowWithRequirements_t /**/ {
-				constexpr std::ptrdiff_t m_Connection = 0x0; // pulse_runtime_lib::CPulse_OutflowConnection m_Connection; |  Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_DestinationFlowNodeID = 0x48; // pulse_runtime_lib::PulseDocNodeID_t m_DestinationFlowNodeID; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_RequirementNodeIDs = 0x50; // GlobalTypes::CUtlVector< pulse_runtime_lib::PulseDocNodeID_t > m_RequirementNodeIDs; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nCursorStateBlockIndex = 0x68; // GlobalTypes::CUtlVector< int32 > m_nCursorStateBlockIndex; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Connection = 0x0; // pulse_runtime_lib::CPulse_OutflowConnection  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_DestinationFlowNodeID = 0x48; // pulse_runtime_lib::PulseDocNodeID_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_RequirementNodeIDs = 0x50; // GlobalTypes::CUtlVector<pulse_runtime_lib::PulseDocNodeID_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nCursorStateBlockIndex = 0x68; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

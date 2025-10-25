@@ -30,7 +30,7 @@ namespace CS2 {
 			S2_PAD(0x20);
 			GlobalTypes::CUtlVector< uint16 > m_vecDamageTakenByHitGroup; // 0x48 | Schema_Atomic | Size: 0x18
 			// char  m_vecDamageTakenByHitGroup[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CHandle< client::C_BaseModelEntity > m_hOwner; // 0x60 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseModelEntity> m_hOwner; // 0x60 | Schema_Atomic | Size: 0x4
 			// char  m_hOwner[0x4]; // 0x60 | Schema_Atomic | Size: 0x4
 			int32_t m_nLastHitDamageLevel; // 0x64 | Schema_Builtin | Size: 0x4
 		};

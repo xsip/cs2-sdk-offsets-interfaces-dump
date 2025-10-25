@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1050
 			namespace CTriggerFan /*: public CS2::client::C_BaseTrigger*/ {
-				constexpr std::ptrdiff_t m_vFanOriginOffset = 0xff0; // GlobalTypes::Vector m_vFanOriginOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDirection = 0xffc; // GlobalTypes::Vector m_vDirection; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanOriginOffset = 0xff0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDirection = 0xffc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bPushTowardsInfoTarget = 0x1008; // bool m_bPushTowardsInfoTarget; |  0x1008 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bPushAwayFromInfoTarget = 0x1009; // bool m_bPushAwayFromInfoTarget; |  0x1009 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_qNoiseDelta = 0x1010; // GlobalTypes::Quaternion m_qNoiseDelta; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_hInfoFan = 0x1020; // client::CHandle< client::CInfoFan > m_hInfoFan; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_qNoiseDelta = 0x1010; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_hInfoFan = 0x1020; // GlobalTypes::CHandle<client::CInfoFan>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flForce = 0x1024; // float32 m_flForce; |  0x1024 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bFalloff = 0x1028; // bool m_bFalloff; |  0x1028 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RampTimer = 0x1030; // client::CountdownTimer m_RampTimer; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_RampTimer = 0x1030; // client::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

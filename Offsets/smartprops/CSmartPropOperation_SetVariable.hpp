@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x90
 			namespace CSmartPropOperation_SetVariable /*: public CS2::smartprops::CSmartPropOperation*/ {
-				constexpr std::ptrdiff_t m_VariableValue = 0x50; // GlobalTypes::CSmartPropAttributeVariableValue m_VariableValue; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_VariableValue = 0x50; // GlobalTypes::CSmartPropAttributeVariableValue  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

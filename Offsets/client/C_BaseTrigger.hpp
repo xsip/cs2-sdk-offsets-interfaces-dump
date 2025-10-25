@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0xFF0
 			namespace C_BaseTrigger /*: public CS2::client::C_BaseToggle*/ {
-				constexpr std::ptrdiff_t m_OnStartTouch = 0xeb0; // entity2::CEntityIOOutput m_OnStartTouch; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnStartTouchAll = 0xed8; // entity2::CEntityIOOutput m_OnStartTouchAll; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEndTouch = 0xf00; // entity2::CEntityIOOutput m_OnEndTouch; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEndTouchAll = 0xf28; // entity2::CEntityIOOutput m_OnEndTouchAll; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTouching = 0xf50; // entity2::CEntityIOOutput m_OnTouching; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTouchingEachEntity = 0xf78; // entity2::CEntityIOOutput m_OnTouchingEachEntity; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnNotTouching = 0xfa0; // entity2::CEntityIOOutput m_OnNotTouching; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_hTouchingEntities = 0xfc8; // client::CUtlVector< client.dll::CHandle< C_BaseEntity > > m_hTouchingEntities; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_iFilterName = 0xfe0; // GlobalTypes::CUtlSymbolLarge m_iFilterName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFilter = 0xfe8; // client::CHandle< client::CBaseFilter > m_hFilter; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OnStartTouch = 0xeb0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnStartTouchAll = 0xed8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnEndTouch = 0xf00; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnEndTouchAll = 0xf28; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnTouching = 0xf50; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnTouchingEachEntity = 0xf78; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnNotTouching = 0xfa0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_hTouchingEntities = 0xfc8; // GlobalTypes::CUtlVector<GlobalTypes::CHandle<client::C_BaseEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iFilterName = 0xfe0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFilter = 0xfe8; // GlobalTypes::CHandle<client::CBaseFilter>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bDisabled = 0xfec; // bool m_bDisabled; |  0xfec | Schema_Builtin | Size: 0x1
 			}
 		}

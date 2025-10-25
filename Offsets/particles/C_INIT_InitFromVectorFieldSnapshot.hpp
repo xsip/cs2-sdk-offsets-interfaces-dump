@@ -14,7 +14,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nLocalSpaceCP = 0x1dc; // int32_t m_nLocalSpaceCP; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nWeightUpdateCP = 0x1e0; // int32_t m_nWeightUpdateCP; |  0x1e0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bUseVerticalVelocity = 0x1e4; // bool m_bUseVerticalVelocity; |  0x1e4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecScale = 0x1e8; // particleslib::CPerParticleVecInput m_vecScale; |  Schema_DeclaredClass | Size: 0x6b8
+				constexpr std::ptrdiff_t m_vecScale = 0x1e8; // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
 			}
 		}
 	}

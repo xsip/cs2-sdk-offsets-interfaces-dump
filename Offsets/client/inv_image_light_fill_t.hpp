@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x1C
 			namespace inv_image_light_fill_t /**/ {
-				constexpr std::ptrdiff_t color = 0x0; // GlobalTypes::Vector color; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t angle = 0xc; // GlobalTypes::QAngle angle; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t color = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t angle = 0xc; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t brightness = 0x18; // float32 brightness; |  0x18 | Schema_Builtin | Size: 0x4
 			}
 		}

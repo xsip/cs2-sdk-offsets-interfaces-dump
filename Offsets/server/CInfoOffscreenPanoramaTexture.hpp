@@ -13,13 +13,13 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nResolutionX = 0x4f4; // int32_t m_nResolutionX; |  0x4f4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nResolutionY = 0x4f8; // int32_t m_nResolutionY; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szLayoutFileName = 0x500; // GlobalTypes::CUtlSymbolLarge m_szLayoutFileName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_RenderAttrName = 0x508; // GlobalTypes::CUtlSymbolLarge m_RenderAttrName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_TargetEntities = 0x510; // server::CNetworkUtlVectorBase< server.dll::CHandle< CBaseModelEntity > > m_TargetEntities; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_szLayoutFileName = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_RenderAttrName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_TargetEntities = 0x510; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nTargetChangeCount = 0x528; // int32_t m_nTargetChangeCount; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCSSClasses = 0x530; // GlobalTypes::CNetworkUtlVectorBase< GlobalTypes::CUtlSymbolLarge > m_vecCSSClasses; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_szTargetsName = 0x548; // GlobalTypes::CUtlSymbolLarge m_szTargetsName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_AdditionalTargetEntities = 0x550; // server::CUtlVector< server.dll::CHandle< CBaseModelEntity > > m_AdditionalTargetEntities; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCSSClasses = 0x530; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_szTargetsName = 0x548; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_AdditionalTargetEntities = 0x550; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

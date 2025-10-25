@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x9E0
 			namespace CScriptTriggerOnce /*: public CS2::server::CTriggerOnce*/ {
-				constexpr std::ptrdiff_t m_vExtent = 0x9d0; // GlobalTypes::Vector m_vExtent; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vExtent = 0x9d0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

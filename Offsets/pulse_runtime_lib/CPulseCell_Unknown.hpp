@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x58
 			namespace CPulseCell_Unknown /*: public CS2::pulse_runtime_lib::CPulseCell_Base*/ {
-				constexpr std::ptrdiff_t m_UnknownKeys = 0x48; // GlobalTypes::KeyValues3 m_UnknownKeys; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_UnknownKeys = 0x48; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

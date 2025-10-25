@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x14
 			namespace ControlPointReference_t /**/ {
 				constexpr std::ptrdiff_t m_controlPointNameString = 0x0; // int32_t m_controlPointNameString; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vOffsetFromControlPoint = 0x4; // GlobalTypes::Vector m_vOffsetFromControlPoint; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOffsetFromControlPoint = 0x4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bOffsetInLocalSpace = 0x10; // bool m_bOffsetInLocalSpace; |  0x10 | Schema_Builtin | Size: 0x1
 			}
 		}

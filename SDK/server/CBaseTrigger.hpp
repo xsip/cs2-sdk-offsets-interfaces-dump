@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseFilter;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -29,11 +34,11 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnTouching; // 0x8f8 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0x920 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnNotTouching; // 0x948 | Schema_DeclaredClass | Size: 0x28
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_hTouchingEntities; // 0x970 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTouchingEntities; // 0x970 | Schema_Atomic | Size: 0x18
 			char  m_hTouchingEntities[0x18]; // 0x970 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x988 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x990 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x990 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x990 | Schema_Atomic | Size: 0x4
+			// char  m_hFilter[0x4]; // 0x990 | Schema_Atomic | Size: 0x4
 			bool m_bDisabled; // 0x994 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb);
 			bool m_bUseAsyncQueries; // 0x9a0 | Schema_Builtin | Size: 0x1

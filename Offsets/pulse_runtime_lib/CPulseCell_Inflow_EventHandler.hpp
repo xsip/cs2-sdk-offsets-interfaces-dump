@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x90
 			namespace CPulseCell_Inflow_EventHandler /*: public CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint*/ {
-				constexpr std::ptrdiff_t m_EventName = 0x80; // GlobalTypes::PulseSymbol_t m_EventName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_EventName = 0x80; // GlobalTypes::PulseSymbol_t  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

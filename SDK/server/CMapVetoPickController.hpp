@@ -43,9 +43,9 @@ namespace CS2 {
 			int32_t m_nPhaseStartTick; // 0xe44 | Schema_Builtin | Size: 0x4
 			int32_t m_nPhaseDurationTicks; // 0xe48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::CUtlSymbolLarge > m_OnMapVetoed; // 0xe50 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::CUtlSymbolLarge> m_OnMapVetoed; // 0xe50 | Schema_Atomic | Size: 0x28
 			char  m_OnMapVetoed[0x28]; // 0xe50 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< GlobalTypes::CUtlSymbolLarge > m_OnMapPicked; // 0xe78 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::CUtlSymbolLarge> m_OnMapPicked; // 0xe78 | Schema_Atomic | Size: 0x28
 			char  m_OnMapPicked[0x28]; // 0xe78 | Schema_Atomic | Size: 0x28
 			// GlobalTypes::CEntityOutputTemplate< int32 > m_OnSidesPicked; // 0xea0 | Schema_Atomic | Size: 0x28
 			char  m_OnSidesPicked[0x28]; // 0xea0 | Schema_Atomic | Size: 0x28

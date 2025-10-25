@@ -27,7 +27,7 @@ namespace CS2 {
 		class C_Multimeter : public CS2::client::CBaseAnimGraph {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CHandle< client::C_PlantedC4 > m_hTargetC4; // 0x1160 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_PlantedC4> m_hTargetC4; // 0x1160 | Schema_Atomic | Size: 0x4
 			// char  m_hTargetC4[0x4]; // 0x1160 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x20
 			namespace CProductQuantizer /**/ {
-				constexpr std::ptrdiff_t m_subQuantizers = 0x0; // GlobalTypes::CUtlVector< animgraphlib::CVectorQuantizer > m_subQuantizers; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_subQuantizers = 0x0; // GlobalTypes::CUtlVector<animgraphlib::CVectorQuantizer>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nDimensions = 0x18; // int32_t m_nDimensions; |  0x18 | Schema_Builtin | Size: 0x4
 			}
 		}

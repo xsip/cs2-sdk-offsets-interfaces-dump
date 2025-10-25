@@ -29,7 +29,7 @@ namespace CS2 {
 			pulse_runtime_lib::PulseGraphInstanceID_t m_nInstanceID; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_strFileName; // 0x8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t* > m_vecHistory; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t*> m_vecHistory; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_vecHistory[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlOrderedMap< PulseDocNodeID_t, PulseGraphExecutionHistoryNodeDesc_t > m_mapCellDesc; // 0x28 | Schema_Atomic | Size: 0x28
 			char  m_mapCellDesc[0x28]; // 0x28 | Schema_Atomic | Size: 0x28

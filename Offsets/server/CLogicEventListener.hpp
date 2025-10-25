@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x538
 			namespace CLogicEventListener /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_strEventName = 0x500; // GlobalTypes::CUtlString m_strEventName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strEventName = 0x500; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bIsEnabled = 0x508; // bool m_bIsEnabled; |  0x508 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nTeam = 0x50c; // int32_t m_nTeam; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnEventFired = 0x510; // entity2::CEntityIOOutput m_OnEventFired; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnEventFired = 0x510; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 			}
 		}
 	}

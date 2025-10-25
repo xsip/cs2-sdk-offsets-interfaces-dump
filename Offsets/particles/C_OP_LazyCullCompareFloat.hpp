@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x620
 			namespace C_OP_LazyCullCompareFloat /*: public CS2::particles::CParticleFunctionOperator*/ {
-				constexpr std::ptrdiff_t m_flComparsion1 = 0x1d0; // particleslib::CPerParticleFloatInput m_flComparsion1; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flComparsion2 = 0x340; // particleslib::CPerParticleFloatInput m_flComparsion2; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flCullTime = 0x4b0; // particleslib::CPerParticleFloatInput m_flCullTime; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flComparsion1 = 0x1d0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flComparsion2 = 0x340; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flCullTime = 0x4b0; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

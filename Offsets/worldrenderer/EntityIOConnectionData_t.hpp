@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace worldrenderer {
 			// Class size: 0x40
 			namespace EntityIOConnectionData_t /**/ {
-				constexpr std::ptrdiff_t m_outputName = 0x0; // GlobalTypes::CUtlString m_outputName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_outputName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_targetType = 0x8; // uint32_t m_targetType; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_targetName = 0x10; // GlobalTypes::CUtlString m_targetName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_inputName = 0x18; // GlobalTypes::CUtlString m_inputName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_overrideParam = 0x20; // GlobalTypes::CUtlString m_overrideParam; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_targetName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_inputName = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_overrideParam = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flDelay = 0x28; // float32 m_flDelay; |  0x28 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nTimesToFire = 0x2c; // int32_t m_nTimesToFire; |  0x2c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_paramMap = 0x30; // GlobalTypes::KeyValues3 m_paramMap; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_paramMap = 0x30; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

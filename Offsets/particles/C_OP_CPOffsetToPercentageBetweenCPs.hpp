@@ -20,7 +20,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nInputCP = 0x1ec; // int32_t m_nInputCP; |  0x1ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bRadialCheck = 0x1f0; // bool m_bRadialCheck; |  0x1f0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bScaleOffset = 0x1f1; // bool m_bScaleOffset; |  0x1f1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecOffset = 0x1f4; // GlobalTypes::Vector m_vecOffset; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOffset = 0x1f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

@@ -22,7 +22,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::PulseSymbol_t m_Name; // 0x0 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlString m_Description; // 0x10 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CUtlLeanVector< pulse_runtime_lib::CPulseRuntimeMethodArg > m_Args; // 0x18 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg> m_Args; // 0x18 | Schema_Atomic | Size: 0x10
 			char  m_Args[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_PublicOutput, m_Name) == 0x0, "m_Name in CPulse_PublicOutput should be at offset 0x0");

@@ -17,6 +17,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -27,7 +32,7 @@ namespace CS2 {
 			S2_PAD(0x10);
 			float32 m_flAutoReturnDelay; // 0xd60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector< server.dll::CHandle< CBasePropDoor > > m_hDoorList; // 0xd68 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>> m_hDoorList; // 0xd68 | Schema_Atomic | Size: 0x18
 			char  m_hDoorList[0x18]; // 0xd68 | Schema_Atomic | Size: 0x18
 			int32_t m_nHardwareType; // 0xd80 | Schema_Builtin | Size: 0x4
 			bool m_bNeedsHardware; // 0xd84 | Schema_Builtin | Size: 0x1
@@ -38,16 +43,16 @@ namespace CS2 {
 			S2_PAD(0x2);
 			GlobalTypes::Vector m_closedPosition; // 0xd90 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_closedAngles; // 0xd9c | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hBlocker; // 0xda8 | Schema_Atomic | Size: 0x4
-			char  m_hBlocker[0x4]; // 0xda8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hBlocker; // 0xda8 | Schema_Atomic | Size: 0x4
+			// char  m_hBlocker[0x4]; // 0xda8 | Schema_Atomic | Size: 0x4
 			bool m_bFirstBlocked; // 0xdac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			server::locksound_t m_ls; // 0xdb0 | Schema_DeclaredClass | Size: 0x20
 			bool m_bForceClosed; // 0xdd0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::VectorWS m_vecLatchWorldPosition; // 0xdd4 | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hActivator; // 0xde0 | Schema_Atomic | Size: 0x4
-			char  m_hActivator[0x4]; // 0xde0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hActivator; // 0xde0 | Schema_Atomic | Size: 0x4
+			// char  m_hActivator[0x4]; // 0xde0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
 			GlobalTypes::CUtlSymbolLarge m_SoundMoving; // 0xdf8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_SoundOpen; // 0xe00 | Schema_Atomic | Size: 0x8
@@ -61,8 +66,8 @@ namespace CS2 {
 			int32_t m_numCloseAttempts; // 0xe40 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlStringToken m_nPhysicsMaterial; // 0xe44 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_SlaveName; // 0xe48 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBasePropDoor > m_hMaster; // 0xe50 | Schema_Atomic | Size: 0x4
-			char  m_hMaster[0x4]; // 0xe50 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePropDoor> m_hMaster; // 0xe50 | Schema_Atomic | Size: 0x4
+			// char  m_hMaster[0x4]; // 0xe50 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnBlockedClosing; // 0xe58 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnBlockedOpening; // 0xe80 | Schema_DeclaredClass | Size: 0x28

@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x260
 			namespace CSmartPropElement_BendDeformer /*: public CS2::smartprops::CSmartPropElement_Deformer*/ {
-				constexpr std::ptrdiff_t m_bDeformationEnabled = 0xa0; // GlobalTypes::CSmartPropAttributeBool m_bDeformationEnabled; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vOrigin = 0xe0; // GlobalTypes::CSmartPropAttributeVector m_vOrigin; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vAngles = 0x120; // GlobalTypes::CSmartPropAttributeAngles m_vAngles; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_vSize = 0x160; // GlobalTypes::CSmartPropAttributeVector m_vSize; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flBendAngle = 0x1a0; // GlobalTypes::CSmartPropAttributeFloat m_flBendAngle; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flBendPoint = 0x1e0; // GlobalTypes::CSmartPropAttributeFloat m_flBendPoint; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_flBendRadius = 0x220; // GlobalTypes::CSmartPropAttributeFloat m_flBendRadius; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bDeformationEnabled = 0xa0; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vOrigin = 0xe0; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vAngles = 0x120; // GlobalTypes::CSmartPropAttributeAngles  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_vSize = 0x160; // GlobalTypes::CSmartPropAttributeVector  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flBendAngle = 0x1a0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flBendPoint = 0x1e0; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flBendRadius = 0x220; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

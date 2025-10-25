@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x70
 			namespace CSmartPropFilter_VariableValue /*: public CS2::smartprops::CSmartPropFilter*/ {
-				constexpr std::ptrdiff_t m_VariableComparison = 0x50; // GlobalTypes::CSmartPropVariableComparison m_VariableComparison; |  Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_VariableComparison = 0x50; // GlobalTypes::CSmartPropVariableComparison  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

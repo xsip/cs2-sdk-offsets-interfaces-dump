@@ -21,9 +21,9 @@ namespace CS2 {
 	namespace server {
 		class CTeam : public CS2::server::CBaseEntity {
 		public:
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBasePlayerController > > m_aPlayerControllers; // 0x4f0 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerController>> m_aPlayerControllers; // 0x4f0 | Schema_Atomic | Size: 0x18
 			char  m_aPlayerControllers[0x18]; // 0x4f0 | Schema_Atomic | Size: 0x18
-			// server::CNetworkUtlVectorBase< server.dll::CHandle< CBasePlayerPawn > > m_aPlayers; // 0x508 | Schema_Atomic | Size: 0x18
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerPawn>> m_aPlayers; // 0x508 | Schema_Atomic | Size: 0x18
 			char  m_aPlayers[0x18]; // 0x508 | Schema_Atomic | Size: 0x18
 			int32_t m_iScore; // 0x520 | Schema_Builtin | Size: 0x4
 			char m_szTeamname[129]; // 0x524 | Schema_FixedArray | Size: 0x81

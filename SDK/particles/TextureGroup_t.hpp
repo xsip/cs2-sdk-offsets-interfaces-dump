@@ -28,7 +28,7 @@ namespace CS2 {
 			bool m_bEnabled; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bReplaceTextureWithGradient; // 0x1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hTexture; // 0x8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hTexture; // 0x8 | Schema_Atomic | Size: 0x8
 			char  m_hTexture[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CColorGradient m_Gradient; // 0x10 | Schema_Atomic | Size: 0x18
 			particles::SpriteCardTextureType_t m_nTextureType; // 0x28 | Schema_DeclaredEnum | Size: 0x4

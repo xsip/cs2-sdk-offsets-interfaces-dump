@@ -14,6 +14,12 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CFuncTrackTrain;
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -21,10 +27,10 @@ namespace CS2 {
 	namespace server {
 		class CTankTrainAI : public CS2::server::CPointEntity {
 		public:
-			// server::CHandle< server::CFuncTrackTrain > m_hTrain; // 0x4f0 | Schema_Atomic | Size: 0x4
-			char  m_hTrain[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hTargetEntity; // 0x4f4 | Schema_Atomic | Size: 0x4
-			char  m_hTargetEntity[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CFuncTrackTrain> m_hTrain; // 0x4f0 | Schema_Atomic | Size: 0x4
+			// char  m_hTrain[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4f4 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetEntity[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
 			int32_t m_soundPlaying; // 0x4f8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x14);
 			GlobalTypes::CUtlSymbolLarge m_startSoundName; // 0x510 | Schema_Atomic | Size: 0x8

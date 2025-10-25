@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace worldrenderer {
 			// Class size: 0x10
 			namespace AggregateVertexAlbedoStreamOnDiskData_t /**/ {
-				constexpr std::ptrdiff_t m_BufferData = 0x0; // GlobalTypes::CUtlBinaryBlock m_BufferData; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_BufferData = 0x0; // GlobalTypes::CUtlBinaryBlock  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

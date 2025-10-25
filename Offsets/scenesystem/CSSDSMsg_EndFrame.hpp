@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace scenesystem {
 			// Class size: 0x18
 			namespace CSSDSMsg_EndFrame /**/ {
-				constexpr std::ptrdiff_t m_Views = 0x0; // GlobalTypes::CUtlVector< scenesystem::CSSDSEndFrameViewInfo > m_Views; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Views = 0x0; // GlobalTypes::CUtlVector<scenesystem::CSSDSEndFrameViewInfo>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

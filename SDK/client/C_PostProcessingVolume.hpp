@@ -22,7 +22,7 @@ namespace CS2 {
 		class C_PostProcessingVolume : public CS2::client::C_BaseTrigger {
 		public:
 			S2_PAD(0x10);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCPostProcessingResource > m_hPostSettings; // 0x1000 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCPostProcessingResource> m_hPostSettings; // 0x1000 | Schema_Atomic | Size: 0x8
 			char  m_hPostSettings[0x8]; // 0x1000 | Schema_Atomic | Size: 0x8
 			float32 m_flFadeDuration; // 0x1008 | Schema_Builtin | Size: 0x4
 			float32 m_flMinLogExposure; // 0x100c | Schema_Builtin | Size: 0x4

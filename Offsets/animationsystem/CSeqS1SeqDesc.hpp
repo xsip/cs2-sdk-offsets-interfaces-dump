@@ -10,17 +10,17 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x120
 			namespace CSeqS1SeqDesc /**/ {
-				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString m_sName; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_flags = 0x10; // animationsystem::CSeqSeqDescFlag m_flags; |  Schema_DeclaredClass | Size: 0xb
-				constexpr std::ptrdiff_t m_fetch = 0x20; // animationsystem::CSeqMultiFetch m_fetch; |  Schema_DeclaredClass | Size: 0x70
+				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_flags = 0x10; // animationsystem::CSeqSeqDescFlag  | Schema_DeclaredClass | Size: 0xb
+				constexpr std::ptrdiff_t m_fetch = 0x20; // animationsystem::CSeqMultiFetch  | Schema_DeclaredClass | Size: 0x70
 				constexpr std::ptrdiff_t m_nLocalWeightlist = 0x90; // int32_t m_nLocalWeightlist; |  0x90 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_autoLayerArray = 0x98; // GlobalTypes::CUtlVector< animationsystem::CSeqAutoLayer > m_autoLayerArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_IKLockArray = 0xb0; // GlobalTypes::CUtlVector< animationsystem::CSeqIKLock > m_IKLockArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_transition = 0xc8; // animationsystem::CSeqTransition m_transition; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_SequenceKeys = 0xd0; // GlobalTypes::KeyValues3 m_SequenceKeys; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_LegacyKeyValueText = 0xe0; // GlobalTypes::CBufferString m_LegacyKeyValueText; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_activityArray = 0xf0; // GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_footMotion = 0x108; // GlobalTypes::CUtlVector< modellib::CFootMotion > m_footMotion; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_autoLayerArray = 0x98; // GlobalTypes::CUtlVector<animationsystem::CSeqAutoLayer>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_IKLockArray = 0xb0; // GlobalTypes::CUtlVector<animationsystem::CSeqIKLock>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_transition = 0xc8; // animationsystem::CSeqTransition  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_SequenceKeys = 0xd0; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_LegacyKeyValueText = 0xe0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_activityArray = 0xf0; // GlobalTypes::CUtlVector<animationsystem::CAnimActivity>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_footMotion = 0x108; // GlobalTypes::CUtlVector<modellib::CFootMotion>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

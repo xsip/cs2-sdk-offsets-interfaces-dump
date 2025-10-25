@@ -19,8 +19,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iAccountID = 0x58; // uint32_t m_iAccountID; |  0x58 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iInventoryPosition = 0x5c; // uint32_t m_iInventoryPosition; |  0x5c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bInitialized = 0x68; // bool m_bInitialized; |  0x68 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_AttributeList = 0x70; // server::CAttributeList m_AttributeList; |  Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_NetworkedDynamicAttributes = 0xe8; // server::CAttributeList m_NetworkedDynamicAttributes; |  Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_AttributeList = 0x70; // server::CAttributeList  | Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_NetworkedDynamicAttributes = 0xe8; // server::CAttributeList  | Schema_DeclaredClass | Size: 0x78
 				constexpr std::ptrdiff_t m_szCustomName = 0x160; // char m_szCustomName[161]; |  0x160 | Schema_FixedArray | Size: 0xa1
 				constexpr std::ptrdiff_t m_szCustomNameOverride = 0x201; // char m_szCustomNameOverride[161]; |  0x201 | Schema_FixedArray | Size: 0xa1
 			}

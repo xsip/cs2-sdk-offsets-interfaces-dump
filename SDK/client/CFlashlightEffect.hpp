@@ -35,9 +35,9 @@ namespace CS2 {
 			bool m_bCastsShadows; // 0x58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flCurrentPullBackDist; // 0x5c | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_FlashlightTexture; // 0x60 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_FlashlightTexture; // 0x60 | Schema_Atomic | Size: 0x8
 			char  m_FlashlightTexture[0x8]; // 0x60 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_MuzzleFlashTexture; // 0x68 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_MuzzleFlashTexture; // 0x68 | Schema_Atomic | Size: 0x8
 			char  m_MuzzleFlashTexture[0x8]; // 0x68 | Schema_Atomic | Size: 0x8
 			char m_textureName[64]; // 0x70 | Schema_FixedArray | Size: 0x40
 			S2_PAD(0x230); // End padding

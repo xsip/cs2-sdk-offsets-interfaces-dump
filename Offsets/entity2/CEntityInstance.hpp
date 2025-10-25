@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace entity2 {
 			// Class size: 0x38
 			namespace CEntityInstance /**/ {
-				constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // GlobalTypes::CUtlSymbolLarge m_iszPrivateVScripts; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pEntity = 0x10; // entity2::CEntityIdentity* m_pEntity; |  Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_CScriptComponent = 0x30; // entity2::CScriptComponent* m_CScriptComponent; |  Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pEntity = 0x10; // entity2::CEntityIdentity**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_CScriptComponent = 0x30; // entity2::CScriptComponent**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

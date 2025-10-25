@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x38
 			namespace CRelativeLocation /**/ {
-				constexpr std::ptrdiff_t m_Type = 0x18; // server::RelativeLocationType_t m_Type; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_vRelativeOffset = 0x1c; // GlobalTypes::Vector m_vRelativeOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vWorldSpacePos = 0x28; // GlobalTypes::VectorWS m_vWorldSpacePos; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hEntity = 0x34; // server::CHandle< server::CBaseEntity > m_hEntity; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Type = 0x18; // server::RelativeLocationType_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_vRelativeOffset = 0x1c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vWorldSpacePos = 0x28; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hEntity = 0x34; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

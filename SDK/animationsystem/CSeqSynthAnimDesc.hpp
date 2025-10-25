@@ -33,7 +33,7 @@ namespace CS2 {
 			animationsystem::CSeqTransition m_transition; // 0x1c | Schema_DeclaredClass | Size: 0x8
 			int16_t m_nLocalBaseReference; // 0x24 | Schema_Builtin | Size: 0x2
 			int16_t m_nLocalBoneMask; // 0x26 | Schema_Builtin | Size: 0x2
-			GlobalTypes::CUtlVector< animationsystem::CAnimActivity > m_activityArray; // 0x28 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animationsystem::CAnimActivity> m_activityArray; // 0x28 | Schema_Atomic | Size: 0x18
 			// char  m_activityArray[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CSeqSynthAnimDesc, m_sName) == 0x0, "m_sName in CSeqSynthAnimDesc should be at offset 0x0");

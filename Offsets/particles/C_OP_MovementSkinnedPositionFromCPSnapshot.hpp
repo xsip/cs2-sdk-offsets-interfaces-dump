@@ -16,12 +16,12 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nRandomSeed = 0x1dc; // int32_t m_nRandomSeed; |  0x1dc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bSetNormal = 0x1e0; // bool m_bSetNormal; |  0x1e0 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSetRadius = 0x1e1; // bool m_bSetRadius; |  0x1e1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nIndexType = 0x1e4; // particles::SnapshotIndexType_t m_nIndexType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flReadIndex = 0x1e8; // particleslib::CPerParticleFloatInput m_flReadIndex; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flIncrement = 0x358; // particleslib::CParticleCollectionFloatInput m_flIncrement; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nFullLoopIncrement = 0x4c8; // particleslib::CParticleCollectionFloatInput m_nFullLoopIncrement; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_nSnapShotStartPoint = 0x638; // particleslib::CParticleCollectionFloatInput m_nSnapShotStartPoint; |  Schema_DeclaredClass | Size: 0x170
-				constexpr std::ptrdiff_t m_flInterpolation = 0x7a8; // particleslib::CPerParticleFloatInput m_flInterpolation; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nIndexType = 0x1e4; // particles::SnapshotIndexType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flReadIndex = 0x1e8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flIncrement = 0x358; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nFullLoopIncrement = 0x4c8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_nSnapShotStartPoint = 0x638; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInterpolation = 0x7a8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

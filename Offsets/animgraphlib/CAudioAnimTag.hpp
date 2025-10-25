@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x70
 			namespace CAudioAnimTag /*: public CS2::animgraphlib::CAnimTagBase*/ {
-				constexpr std::ptrdiff_t m_clipName = 0x58; // GlobalTypes::CUtlString m_clipName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_attachmentName = 0x60; // GlobalTypes::CUtlString m_attachmentName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_clipName = 0x58; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_attachmentName = 0x60; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flVolume = 0x68; // float32 m_flVolume; |  0x68 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bStopWhenTagEnds = 0x6c; // bool m_bStopWhenTagEnds; |  0x6c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bStopWhenGraphEnds = 0x6d; // bool m_bStopWhenGraphEnds; |  0x6d | Schema_Builtin | Size: 0x1

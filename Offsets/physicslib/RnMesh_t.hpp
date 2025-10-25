@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0xC0
 			namespace RnMesh_t /**/ {
-				constexpr std::ptrdiff_t m_vMin = 0x0; // GlobalTypes::Vector m_vMin; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMax = 0xc; // GlobalTypes::Vector m_vMax; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Nodes = 0x18; // GlobalTypes::CUtlVector< physicslib::RnNode_t > m_Nodes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Vertices = 0x30; // GlobalTypes::CUtlVectorSIMDPaddedVector m_Vertices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Triangles = 0x48; // GlobalTypes::CUtlVector< physicslib::RnTriangle_t > m_Triangles; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Wings = 0x60; // GlobalTypes::CUtlVector< physicslib::RnWing_t > m_Wings; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_TriangleEdgeFlags = 0x78; // GlobalTypes::CUtlVector< uint8 > m_TriangleEdgeFlags; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_Materials = 0x90; // GlobalTypes::CUtlVector< uint8 > m_Materials; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vOrthographicAreas = 0xa8; // GlobalTypes::Vector m_vOrthographicAreas; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMin = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMax = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Nodes = 0x18; // GlobalTypes::CUtlVector<physicslib::RnNode_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Vertices = 0x30; // GlobalTypes::CUtlVectorSIMDPaddedVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Triangles = 0x48; // GlobalTypes::CUtlVector<physicslib::RnTriangle_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Wings = 0x60; // GlobalTypes::CUtlVector<physicslib::RnWing_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_TriangleEdgeFlags = 0x78; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_Materials = 0x90; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vOrthographicAreas = 0xa8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nFlags = 0xb4; // uint32_t m_nFlags; |  0xb4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nDebugFlags = 0xb8; // uint32_t m_nDebugFlags; |  0xb8 | Schema_Builtin | Size: 0x4
 			}

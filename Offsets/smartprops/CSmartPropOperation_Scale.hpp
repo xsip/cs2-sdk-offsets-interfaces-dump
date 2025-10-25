@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x90
 			namespace CSmartPropOperation_Scale /*: public CS2::smartprops::CSmartPropTransformOperation*/ {
-				constexpr std::ptrdiff_t m_flScale = 0x50; // GlobalTypes::CSmartPropAttributeFloat m_flScale; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_flScale = 0x50; // GlobalTypes::CSmartPropAttributeFloat  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

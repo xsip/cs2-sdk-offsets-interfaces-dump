@@ -10,15 +10,15 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0xC8
 			namespace CPhysSurfaceProperties /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nameHash = 0x8; // uint32_t m_nameHash; |  0x8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_baseNameHash = 0xc; // uint32_t m_baseNameHash; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bHidden = 0x18; // bool m_bHidden; |  0x18 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_description = 0x20; // GlobalTypes::CUtlString m_description; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_physics = 0x28; // modellib::CPhysSurfacePropertiesPhysics m_physics; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_vehicleParams = 0x40; // modellib::CPhysSurfacePropertiesVehicle m_vehicleParams; |  Schema_DeclaredClass | Size: 0x8
-				constexpr std::ptrdiff_t m_audioSounds = 0x48; // modellib::CPhysSurfacePropertiesSoundNames m_audioSounds; |  Schema_DeclaredClass | Size: 0x60
-				constexpr std::ptrdiff_t m_audioParams = 0xa8; // modellib::CPhysSurfacePropertiesAudio m_audioParams; |  Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_description = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_physics = 0x28; // modellib::CPhysSurfacePropertiesPhysics  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_vehicleParams = 0x40; // modellib::CPhysSurfacePropertiesVehicle  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_audioSounds = 0x48; // modellib::CPhysSurfacePropertiesSoundNames  | Schema_DeclaredClass | Size: 0x60
+				constexpr std::ptrdiff_t m_audioParams = 0xa8; // modellib::CPhysSurfacePropertiesAudio  | Schema_DeclaredClass | Size: 0x20
 			}
 		}
 	}

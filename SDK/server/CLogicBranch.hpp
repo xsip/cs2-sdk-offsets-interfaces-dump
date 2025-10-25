@@ -24,7 +24,7 @@ namespace CS2 {
 		public:
 			bool m_bInValue; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// server::CUtlVector< server.dll::CHandle< CBaseEntity > > m_Listeners; // 0x4f8 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_Listeners; // 0x4f8 | Schema_Atomic | Size: 0x18
 			char  m_Listeners[0x18]; // 0x4f8 | Schema_Atomic | Size: 0x18
 			entity2::CEntityIOOutput m_OnTrue; // 0x510 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnFalse; // 0x538 | Schema_DeclaredClass | Size: 0x28

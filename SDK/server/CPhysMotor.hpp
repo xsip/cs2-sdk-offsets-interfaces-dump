@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -24,10 +29,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_nameAnchor; // 0x4f8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseEntity > m_hAttachedObject; // 0x500 | Schema_Atomic | Size: 0x4
-			char  m_hAttachedObject[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hAnchorObject; // 0x504 | Schema_Atomic | Size: 0x4
-			char  m_hAnchorObject[0x4]; // 0x504 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttachedObject; // 0x500 | Schema_Atomic | Size: 0x4
+			// char  m_hAttachedObject[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAnchorObject; // 0x504 | Schema_Atomic | Size: 0x4
+			// char  m_hAnchorObject[0x4]; // 0x504 | Schema_Atomic | Size: 0x4
 			float32 m_spinUp; // 0x508 | Schema_Builtin | Size: 0x4
 			float32 m_spinDown; // 0x50c | Schema_Builtin | Size: 0x4
 			float32 m_flMotorFriction; // 0x510 | Schema_Builtin | Size: 0x4

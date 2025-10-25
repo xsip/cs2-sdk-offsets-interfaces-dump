@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -26,8 +31,8 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4f8 | Schema_Atomic | Size: 0x8
 			float32 m_force; // 0x500 | Schema_Builtin | Size: 0x4
 			float32 m_forceTime; // 0x504 | Schema_Builtin | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_attachedObject; // 0x508 | Schema_Atomic | Size: 0x4
-			char  m_attachedObject[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_attachedObject; // 0x508 | Schema_Atomic | Size: 0x4
+			// char  m_attachedObject[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
 			bool m_wasRestored; // 0x50c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			server::CConstantForceController m_integrator; // 0x510 | Schema_DeclaredClass | Size: 0x40

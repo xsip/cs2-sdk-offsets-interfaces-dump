@@ -10,11 +10,11 @@ namespace CS2 {
 		namespace animationsystem {
 			// Class size: 0x50
 			namespace CSeqScaleSet /**/ {
-				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString m_sName; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_sName = 0x0; // GlobalTypes::CBufferString  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_bRootOffset = 0x10; // bool m_bRootOffset; |  0x10 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vRootOffset = 0x14; // GlobalTypes::Vector m_vRootOffset; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nLocalBoneArray = 0x20; // GlobalTypes::CUtlVector< int16 > m_nLocalBoneArray; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flBoneScaleArray = 0x38; // GlobalTypes::CUtlVector< float32 > m_flBoneScaleArray; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vRootOffset = 0x14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nLocalBoneArray = 0x20; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flBoneScaleArray = 0x38; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

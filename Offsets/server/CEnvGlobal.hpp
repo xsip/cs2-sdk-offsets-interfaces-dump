@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x530
 			namespace CEnvGlobal /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_outCounter = 0x4f0; // GlobalTypes::CEntityOutputTemplate< int32 > m_outCounter; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_globalstate = 0x518; // GlobalTypes::CUtlSymbolLarge m_globalstate; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_outCounter = 0x4f0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_globalstate = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_triggermode = 0x520; // int32_t m_triggermode; |  0x520 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_initialstate = 0x524; // int32_t m_initialstate; |  0x524 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_counter = 0x528; // int32_t m_counter; |  0x528 | Schema_Builtin | Size: 0x4

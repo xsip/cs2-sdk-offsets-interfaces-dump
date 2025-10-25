@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseFilter;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -33,8 +38,8 @@ namespace CS2 {
 			bool m_bAllowCrossMovableConnections; // 0x551 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
 			GlobalTypes::CUtlSymbolLarge m_strFilterName; // 0x558 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBaseFilter > m_hFilter; // 0x560 | Schema_Atomic | Size: 0x4
-			char  m_hFilter[0x4]; // 0x560 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x560 | Schema_Atomic | Size: 0x4
+			// char  m_hFilter[0x4]; // 0x560 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnNavLinkStart; // 0x568 | Schema_DeclaredClass | Size: 0x28
 			entity2::CEntityIOOutput m_OnNavLinkFinish; // 0x590 | Schema_DeclaredClass | Size: 0x28

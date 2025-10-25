@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x10
 			namespace ParticlePreviewBodyGroup_t /**/ {
-				constexpr std::ptrdiff_t m_bodyGroupName = 0x0; // GlobalTypes::CUtlString m_bodyGroupName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bodyGroupName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nValue = 0x8; // int32_t m_nValue; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

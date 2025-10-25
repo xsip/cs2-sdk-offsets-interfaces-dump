@@ -11,9 +11,9 @@ namespace CS2 {
 			// Class size: 0xA0
 			namespace CAudioSentence /**/ {
 				constexpr std::ptrdiff_t m_bShouldVoiceDuck = 0x0; // bool m_bShouldVoiceDuck; |  0x0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RunTimePhonemes = 0x8; // GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioPhonemeTag > m_RunTimePhonemes; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_EmphasisSamples = 0x20; // GlobalTypes::CUtlVector< soundsystem_voicecontainers::CAudioEmphasisSample > m_EmphasisSamples; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_morphData = 0x38; // soundsystem_voicecontainers::CAudioMorphData m_morphData; |  Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_RunTimePhonemes = 0x8; // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CAudioPhonemeTag>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_EmphasisSamples = 0x20; // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CAudioEmphasisSample>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_morphData = 0x38; // soundsystem_voicecontainers::CAudioMorphData  | Schema_DeclaredClass | Size: 0x68
 			}
 		}
 	}

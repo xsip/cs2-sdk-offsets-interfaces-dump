@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x11A8
 			namespace C_BulletHitModel /*: public CS2::client::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_matLocal = 0x1158; // GlobalTypes::matrix3x4_t m_matLocal; |  Schema_Atomic | Size: 0x30
+				constexpr std::ptrdiff_t m_matLocal = 0x1158; // GlobalTypes::matrix3x4_t  | Schema_Atomic | Size: 0x30
 				constexpr std::ptrdiff_t m_iBoneIndex = 0x1188; // int32_t m_iBoneIndex; |  0x1188 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hPlayerParent = 0x118c; // client::CHandle< client::C_BaseEntity > m_hPlayerParent; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPlayerParent = 0x118c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsHit = 0x1190; // bool m_bIsHit; |  0x1190 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flTimeCreated = 0x1194; // float32 m_flTimeCreated; |  0x1194 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecStartPos = 0x1198; // GlobalTypes::Vector m_vecStartPos; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecStartPos = 0x1198; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

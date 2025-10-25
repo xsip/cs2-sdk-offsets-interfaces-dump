@@ -11,8 +11,8 @@ namespace CS2 {
 			// Class size: 0xD8
 			namespace CEnumAnimParameter /*: public CS2::animgraphlib::CConcreteAnimParameter*/ {
 				constexpr std::ptrdiff_t m_defaultValue = 0x88; // uint8_t m_defaultValue; |  0x88 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_enumOptions = 0x90; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_enumOptions; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecEnumReferenced = 0xa8; // GlobalTypes::CUtlVector< uint64 > m_vecEnumReferenced; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_enumOptions = 0x90; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecEnumReferenced = 0xa8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

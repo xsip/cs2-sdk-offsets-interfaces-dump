@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace smartprops {
 		class CSmartPropPulse_SmartProp : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCSmartProp > m_hSmartProp; // 0x48 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCSmartProp> m_hSmartProp; // 0x48 | Schema_Atomic | Size: 0x8
 			char  m_hSmartProp[0x8]; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SmartProp, m_hSmartProp) == 0x48, "m_hSmartProp in CSmartPropPulse_SmartProp should be at offset 0x48");

@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBasePlayerPawn;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -23,8 +28,8 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszName; // 0x4f0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszHintTargetEntity; // 0x4f8 | Schema_Atomic | Size: 0x8
-			// server::CHandle< server::CBasePlayerPawn > m_hTargetPlayer; // 0x500 | Schema_Atomic | Size: 0x4
-			char  m_hTargetPlayer[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hTargetPlayer; // 0x500 | Schema_Atomic | Size: 0x4
+			// char  m_hTargetPlayer[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CInstructorEventEntity, m_iszName) == 0x4F0, "m_iszName in CInstructorEventEntity should be at offset 0x4F0");

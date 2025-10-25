@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace mathlib_extended {
 			// Class size: 0x10
 			namespace ConstantInfo_t /**/ {
-				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString m_name; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameToken = 0x8; // GlobalTypes::CUtlStringToken m_nameToken; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameToken = 0x8; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_flValue = 0xc; // float32 m_flValue; |  0xc | Schema_Builtin | Size: 0x4
 			}
 		}

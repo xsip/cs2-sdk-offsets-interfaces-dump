@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x510
 			namespace CBodyComponentSkeletonInstance /*: public CS2::server::CBodyComponent*/ {
-				constexpr std::ptrdiff_t m_skeletonInstance = 0x80; // server::CSkeletonInstance m_skeletonInstance; |  Schema_DeclaredClass | Size: 0x490
+				constexpr std::ptrdiff_t m_skeletonInstance = 0x80; // server::CSkeletonInstance  | Schema_DeclaredClass | Size: 0x490
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x58
 			namespace CFootStride /**/ {
-				constexpr std::ptrdiff_t m_definition = 0x0; // modellib::CFootCycleDefinition m_definition; |  Schema_DeclaredClass | Size: 0x3c
-				constexpr std::ptrdiff_t m_trajectories = 0x40; // modellib::CFootTrajectories m_trajectories; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_definition = 0x0; // modellib::CFootCycleDefinition  | Schema_DeclaredClass | Size: 0x3c
+				constexpr std::ptrdiff_t m_trajectories = 0x40; // modellib::CFootTrajectories  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0x1F8
 			namespace CVoiceContainerParameterBlender /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_firstSound = 0xb8; // soundsystem_voicecontainers::CSoundContainerReference m_firstSound; |  Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_secondSound = 0xd0; // soundsystem_voicecontainers::CSoundContainerReference m_secondSound; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_firstSound = 0xb8; // soundsystem_voicecontainers::CSoundContainerReference  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_secondSound = 0xd0; // soundsystem_voicecontainers::CSoundContainerReference  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_bEnableOcclusionBlend = 0xe8; // bool m_bEnableOcclusionBlend; |  0xe8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_curve1 = 0xf0; // GlobalTypes::CPiecewiseCurve m_curve1; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_curve2 = 0x130; // GlobalTypes::CPiecewiseCurve m_curve2; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_curve1 = 0xf0; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_curve2 = 0x130; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 				constexpr std::ptrdiff_t m_bEnableDistanceBlend = 0x170; // bool m_bEnableDistanceBlend; |  0x170 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_curve3 = 0x178; // GlobalTypes::CPiecewiseCurve m_curve3; |  Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_curve4 = 0x1b8; // GlobalTypes::CPiecewiseCurve m_curve4; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_curve3 = 0x178; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_curve4 = 0x1b8; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

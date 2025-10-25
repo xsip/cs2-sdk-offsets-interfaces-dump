@@ -10,16 +10,16 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x540
 			namespace CEnvShake /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_limitToEntity = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_limitToEntity; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_limitToEntity = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_Amplitude = 0x4f8; // float32 m_Amplitude; |  0x4f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Frequency = 0x4fc; // float32 m_Frequency; |  0x4fc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Duration = 0x500; // float32 m_Duration; |  0x500 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_Radius = 0x504; // float32 m_Radius; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_stopTime = 0x508; // entity2::GameTime_t m_stopTime; |  Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nextShake = 0x50c; // entity2::GameTime_t m_nextShake; |  Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_stopTime = 0x508; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nextShake = 0x50c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_currentAmp = 0x510; // float32 m_currentAmp; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_maxForce = 0x514; // GlobalTypes::Vector m_maxForce; |  Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_shakeCallback = 0x528; // server::CPhysicsShake m_shakeCallback; |  Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_maxForce = 0x514; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_shakeCallback = 0x528; // server::CPhysicsShake  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

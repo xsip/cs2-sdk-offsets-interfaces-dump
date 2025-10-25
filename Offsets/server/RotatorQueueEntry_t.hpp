@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x20
 			namespace RotatorQueueEntry_t /**/ {
-				constexpr std::ptrdiff_t qTarget = 0x0; // GlobalTypes::Quaternion qTarget; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t eSpace = 0x10; // server::RotatorTargetSpace_t eSpace; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t qTarget = 0x0; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t eSpace = 0x10; // server::RotatorTargetSpace_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -10,14 +10,14 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x68
 			namespace ParticlePreviewState_t /**/ {
-				constexpr std::ptrdiff_t m_previewModel = 0x0; // GlobalTypes::CUtlString m_previewModel; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_previewModel = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nModSpecificData = 0x8; // uint32_t m_nModSpecificData; |  0x8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_groundType = 0xc; // particles::PetGroundType_t m_groundType; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_sequenceName = 0x10; // GlobalTypes::CUtlString m_sequenceName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_groundType = 0xc; // particles::PetGroundType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_sequenceName = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nFireParticleOnSequenceFrame = 0x18; // int32_t m_nFireParticleOnSequenceFrame; |  0x18 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hitboxSetName = 0x20; // GlobalTypes::CUtlString m_hitboxSetName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_materialGroupName = 0x28; // GlobalTypes::CUtlString m_materialGroupName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecBodyGroups = 0x30; // GlobalTypes::CUtlVector< particles::ParticlePreviewBodyGroup_t > m_vecBodyGroups; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hitboxSetName = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_materialGroupName = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecBodyGroups = 0x30; // GlobalTypes::CUtlVector<particles::ParticlePreviewBodyGroup_t>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flPlaybackSpeed = 0x48; // float32 m_flPlaybackSpeed; |  0x48 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flParticleSimulationRate = 0x4c; // float32 m_flParticleSimulationRate; |  0x4c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bShouldDrawHitboxes = 0x50; // bool m_bShouldDrawHitboxes; |  0x50 | Schema_Builtin | Size: 0x1
@@ -26,7 +26,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bShouldDrawControlPointAxes = 0x53; // bool m_bShouldDrawControlPointAxes; |  0x53 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bAnimationNonLooping = 0x54; // bool m_bAnimationNonLooping; |  0x54 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSequenceNameIsAnimClipPath = 0x55; // bool m_bSequenceNameIsAnimClipPath; |  0x55 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecPreviewGravity = 0x58; // GlobalTypes::Vector m_vecPreviewGravity; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPreviewGravity = 0x58; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

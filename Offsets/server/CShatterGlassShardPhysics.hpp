@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace CShatterGlassShardPhysics /*: public CS2::server::CPhysicsProp*/ {
 				constexpr std::ptrdiff_t m_bDebris = 0xe00; // bool m_bDebris; |  0xe00 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_hParentShard = 0xe04; // uint32_t m_hParentShard; |  0xe04 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ShardDesc = 0xe08; // server::shard_model_desc_t m_ShardDesc; |  Schema_DeclaredClass | Size: 0x80
+				constexpr std::ptrdiff_t m_ShardDesc = 0xe08; // server::shard_model_desc_t  | Schema_DeclaredClass | Size: 0x80
 			}
 		}
 	}

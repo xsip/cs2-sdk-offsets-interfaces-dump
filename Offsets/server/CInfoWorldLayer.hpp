@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x530
 			namespace CInfoWorldLayer /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_pOutputOnEntitiesSpawned = 0x4f0; // entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_worldName = 0x518; // GlobalTypes::CUtlSymbolLarge m_worldName; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_layerName = 0x520; // GlobalTypes::CUtlSymbolLarge m_layerName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pOutputOnEntitiesSpawned = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_worldName = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_layerName = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bWorldLayerVisible = 0x528; // bool m_bWorldLayerVisible; |  0x528 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bEntitiesSpawned = 0x529; // bool m_bEntitiesSpawned; |  0x529 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bCreateAsChildSpawnGroup = 0x52a; // bool m_bCreateAsChildSpawnGroup; |  0x52a | Schema_Builtin | Size: 0x1

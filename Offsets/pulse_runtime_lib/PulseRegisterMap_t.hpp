@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace pulse_runtime_lib {
 			// Class size: 0x30
 			namespace PulseRegisterMap_t /**/ {
-				constexpr std::ptrdiff_t m_Inparams = 0x0; // GlobalTypes::KeyValues3 m_Inparams; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_InparamsWhichCanBeMoved = 0x10; // GlobalTypes::CKV3MemberNameSet m_InparamsWhichCanBeMoved; |  Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_Outparams = 0x20; // GlobalTypes::KeyValues3 m_Outparams; |  Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Inparams = 0x0; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_InparamsWhichCanBeMoved = 0x10; // GlobalTypes::CKV3MemberNameSet  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_Outparams = 0x20; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

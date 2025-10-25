@@ -21,7 +21,7 @@ namespace CS2 {
 		class CAnimReplayFrame  {
 		public:
 			S2_PAD(0x10);
-			GlobalTypes::CUtlVector< GlobalTypes::CUtlBinaryBlock > m_inputDataBlocks; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlBinaryBlock> m_inputDataBlocks; // 0x10 | Schema_Atomic | Size: 0x18
 			// char  m_inputDataBlocks[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlBinaryBlock m_instanceData; // 0x28 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8);

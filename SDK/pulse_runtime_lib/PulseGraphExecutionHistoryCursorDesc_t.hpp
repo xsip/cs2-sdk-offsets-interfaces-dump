@@ -26,7 +26,7 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseGraphExecutionHistoryCursorDesc_t  {
 		public:
-			GlobalTypes::CUtlVector< pulse_runtime_lib::PulseCursorID_t > vecAncestorCursorIDs; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<pulse_runtime_lib::PulseCursorID_t> vecAncestorCursorIDs; // 0x0 | Schema_Atomic | Size: 0x18
 			// char  vecAncestorCursorIDs[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			pulse_runtime_lib::PulseDocNodeID_t nSpawnNodeID; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			pulse_runtime_lib::PulseDocNodeID_t nRetiredAtNodeID; // 0x1c | Schema_DeclaredClass | Size: 0x4

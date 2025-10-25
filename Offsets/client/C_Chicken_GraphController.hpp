@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x2F0
 			namespace C_Chicken_GraphController /*: public CS2::client::CBaseAnimGraphAnimGraphController*/ {
-				constexpr std::ptrdiff_t m_paramActivity = 0x268; // GlobalTypes::CAnimGraphParamRef< �p�e�::char > m_paramActivity; |  Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_paramEndActivityImmediately = 0x290; // GlobalTypes::CAnimGraphParamRef< bool > m_paramEndActivityImmediately; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_paramSnapToSquatting = 0x2b0; // GlobalTypes::CAnimGraphParamRef< bool > m_paramSnapToSquatting; |  Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_sActivityFinished = 0x2d0; // GlobalTypes::CAnimGraphTagRef m_sActivityFinished; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_paramActivity = 0x268; // GlobalTypes::CAnimGraphParamRef<char*>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_paramEndActivityImmediately = 0x290; // GlobalTypes::CAnimGraphParamRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_paramSnapToSquatting = 0x2b0; // GlobalTypes::CAnimGraphParamRef  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_sActivityFinished = 0x2d0; // GlobalTypes::CAnimGraphTagRef  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

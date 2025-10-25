@@ -31,7 +31,7 @@ namespace CS2 {
 			uint32_t m_iFOVStart; // 0x28c | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flFOVTime; // 0x290 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flFOVRate; // 0x294 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle< client::C_BaseEntity > m_hZoomOwner; // 0x298 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hZoomOwner; // 0x298 | Schema_Atomic | Size: 0x4
 			// char  m_hZoomOwner[0x4]; // 0x298 | Schema_Atomic | Size: 0x4
 			float32 m_flLastShotFOV; // 0x29c | Schema_Builtin | Size: 0x4
 		};

@@ -42,7 +42,7 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flRange; // 0x1020 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flInnerConeAngle; // 0x1190 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flOuterConeAngle; // 0x1300 | Schema_DeclaredClass | Size: 0x170
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeCTextureBase > m_hLightCookie; // 0x1470 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hLightCookie; // 0x1470 | Schema_Atomic | Size: 0x8
 			char  m_hLightCookie[0x8]; // 0x1470 | Schema_Atomic | Size: 0x8
 			bool m_bSphericalCookie; // 0x1478 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding

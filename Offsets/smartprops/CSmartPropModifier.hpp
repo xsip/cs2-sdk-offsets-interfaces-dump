@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace smartprops {
 			// Class size: 0x50
 			namespace CSmartPropModifier /**/ {
-				constexpr std::ptrdiff_t m_bEnabled = 0x8; // GlobalTypes::CSmartPropAttributeBool m_bEnabled; |  Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bEnabled = 0x8; // GlobalTypes::CSmartPropAttributeBool  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

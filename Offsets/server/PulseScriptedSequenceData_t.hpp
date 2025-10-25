@@ -11,13 +11,13 @@ namespace CS2 {
 			// Class size: 0x38
 			namespace PulseScriptedSequenceData_t /**/ {
 				constexpr std::ptrdiff_t m_nActorID = 0x0; // int32_t m_nActorID; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szPreIdleSequence = 0x8; // GlobalTypes::CUtlString m_szPreIdleSequence; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_szEntrySequence = 0x10; // GlobalTypes::CUtlString m_szEntrySequence; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_szSequence = 0x18; // GlobalTypes::CUtlString m_szSequence; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_szExitSequence = 0x20; // GlobalTypes::CUtlString m_szExitSequence; |  Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nMoveTo = 0x28; // modellib::ScriptedMoveTo_t m_nMoveTo; |  Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nMoveToGait = 0x2c; // modellib::SharedMovementGait_t m_nMoveToGait; |  Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_nHeldWeaponBehavior = 0x30; // modellib::ScriptedHeldWeaponBehavior_t m_nHeldWeaponBehavior; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_szPreIdleSequence = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szEntrySequence = 0x10; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szSequence = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szExitSequence = 0x20; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nMoveTo = 0x28; // modellib::ScriptedMoveTo_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nMoveToGait = 0x2c; // modellib::SharedMovementGait_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nHeldWeaponBehavior = 0x30; // modellib::ScriptedHeldWeaponBehavior_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bLoopPreIdleSequence = 0x34; // bool m_bLoopPreIdleSequence; |  0x34 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLoopActionSequence = 0x35; // bool m_bLoopActionSequence; |  0x35 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bLoopPostIdleSequence = 0x36; // bool m_bLoopPostIdleSequence; |  0x36 | Schema_Builtin | Size: 0x1

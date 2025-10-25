@@ -10,12 +10,12 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xD8
 			namespace CRagdollComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_ragdollNodePaths = 0x30; // GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_ragdollNodePaths; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_followAttachmentNodePaths = 0x48; // GlobalTypes::CUtlVector< animgraphlib::CAnimNodePath > m_followAttachmentNodePaths; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneIndices = 0x60; // GlobalTypes::CUtlVector< int32 > m_boneIndices; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneNames = 0x78; // GlobalTypes::CUtlVector< GlobalTypes::CUtlString > m_boneNames; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_weightLists = 0x90; // GlobalTypes::CUtlVector< animgraphlib::WeightList > m_weightLists; |  Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_boneToWeightIndices = 0xa8; // GlobalTypes::CUtlVector< int32 > m_boneToWeightIndices; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_ragdollNodePaths = 0x30; // GlobalTypes::CUtlVector<animgraphlib::CAnimNodePath>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_followAttachmentNodePaths = 0x48; // GlobalTypes::CUtlVector<animgraphlib::CAnimNodePath>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneIndices = 0x60; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneNames = 0x78; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_weightLists = 0x90; // GlobalTypes::CUtlVector<animgraphlib::WeightList>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_boneToWeightIndices = 0xa8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flSpringFrequencyMin = 0xc0; // float32 m_flSpringFrequencyMin; |  0xc0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSpringFrequencyMax = 0xc4; // float32 m_flSpringFrequencyMax; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxStretch = 0xc8; // float32 m_flMaxStretch; |  0xc8 | Schema_Builtin | Size: 0x4

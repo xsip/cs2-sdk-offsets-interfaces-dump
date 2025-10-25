@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x4F8
 			namespace CLogicGameEvent /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_iszEventName = 0x4f0; // GlobalTypes::CUtlSymbolLarge m_iszEventName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEventName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x10
 			namespace CGameSceneNodeHandle /**/ {
-				constexpr std::ptrdiff_t m_hOwner = 0x8; // GlobalTypes::CEntityHandle m_hOwner; |  Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_name = 0xc; // GlobalTypes::CUtlStringToken m_name; |  Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hOwner = 0x8; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0xc; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

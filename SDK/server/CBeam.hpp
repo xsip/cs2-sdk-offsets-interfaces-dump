@@ -18,6 +18,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -31,9 +36,9 @@ namespace CS2 {
 			float32 m_flDamage; // 0x7e4 | Schema_Builtin | Size: 0x4
 			uint8_t m_nNumBeamEnts; // 0x7e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_hBaseMaterial; // 0x7f0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hBaseMaterial; // 0x7f0 | Schema_Atomic | Size: 0x8
 			char  m_hBaseMaterial[0x8]; // 0x7f0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_nHaloIndex; // 0x7f8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_nHaloIndex; // 0x7f8 | Schema_Atomic | Size: 0x8
 			char  m_nHaloIndex[0x8]; // 0x7f8 | Schema_Atomic | Size: 0x8
 			client::BeamType_t m_nBeamType; // 0x800 | Schema_DeclaredEnum | Size: 0x4
 			uint32_t m_nBeamFlags; // 0x804 | Schema_Builtin | Size: 0x4
@@ -52,8 +57,8 @@ namespace CS2 {
 			bool m_bTurnedOff; // 0x860 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::VectorWS m_vecEndPos; // 0x864 | Schema_Atomic | Size: 0xc
-			// server::CHandle< server::CBaseEntity > m_hEndEntity; // 0x870 | Schema_Atomic | Size: 0x4
-			char  m_hEndEntity[0x4]; // 0x870 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEndEntity; // 0x870 | Schema_Atomic | Size: 0x4
+			// char  m_hEndEntity[0x4]; // 0x870 | Schema_Atomic | Size: 0x4
 			int32_t m_nDissolveType; // 0x874 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CBeam, m_flFrameRate) == 0x7D8, "m_flFrameRate in CBeam should be at offset 0x7D8");

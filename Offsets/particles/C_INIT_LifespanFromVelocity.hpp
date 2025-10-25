@@ -10,13 +10,13 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x290
 			namespace C_INIT_LifespanFromVelocity /*: public CS2::particles::CParticleFunctionInitializer*/ {
-				constexpr std::ptrdiff_t m_vecComponentScale = 0x1d8; // GlobalTypes::Vector m_vecComponentScale; |  Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecComponentScale = 0x1d8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_flTraceOffset = 0x1e4; // float32 m_flTraceOffset; |  0x1e4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxTraceLength = 0x1e8; // float32 m_flMaxTraceLength; |  0x1e8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTraceTolerance = 0x1ec; // float32 m_flTraceTolerance; |  0x1ec | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nMaxPlanes = 0x1f0; // int32_t m_nMaxPlanes; |  0x1f0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_CollisionGroupName = 0x1f8; // char m_CollisionGroupName[128]; |  0x1f8 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_nTraceSet = 0x278; // particles::ParticleTraceSet_t m_nTraceSet; |  Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nTraceSet = 0x278; // particles::ParticleTraceSet_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_bIncludeWater = 0x288; // bool m_bIncludeWater; |  0x288 | Schema_Builtin | Size: 0x1
 			}
 		}

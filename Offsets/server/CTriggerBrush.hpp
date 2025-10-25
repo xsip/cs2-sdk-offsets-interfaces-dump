@@ -10,9 +10,9 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x858
 			namespace CTriggerBrush /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_OnStartTouch = 0x7d8; // entity2::CEntityIOOutput m_OnStartTouch; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEndTouch = 0x800; // entity2::CEntityIOOutput m_OnEndTouch; |  Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnUse = 0x828; // entity2::CEntityIOOutput m_OnUse; |  Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnStartTouch = 0x7d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnEndTouch = 0x800; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnUse = 0x828; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_iInputFilter = 0x850; // int32_t m_iInputFilter; |  0x850 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iDontMessageParent = 0x854; // int32_t m_iDontMessageParent; |  0x854 | Schema_Builtin | Size: 0x4
 			}

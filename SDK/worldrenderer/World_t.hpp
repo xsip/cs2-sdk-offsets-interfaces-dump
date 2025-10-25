@@ -28,10 +28,10 @@ namespace CS2 {
 		class World_t  {
 		public:
 			worldrenderer::WorldBuilderParams_t m_builderParams; // 0x0 | Schema_DeclaredClass | Size: 0x60
-			GlobalTypes::CUtlVector< worldrenderer::NodeData_t > m_worldNodes; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::NodeData_t> m_worldNodes; // 0x60 | Schema_Atomic | Size: 0x18
 			// char  m_worldNodes[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			worldrenderer::BakedLightingInfo_t m_worldLightingInfo; // 0x78 | Schema_DeclaredClass | Size: 0x48
-			GlobalTypes::CUtlVector< GlobalTypes::CStrongHandleCopyable< InfoForResourceTypeCEntityLump > > m_entityLumps; // 0xc0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandleCopyable<resourcesystem::InfoForResourceTypeCEntityLump>> m_entityLumps; // 0xc0 | Schema_Atomic | Size: 0x18
 			// char  m_entityLumps[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::worldrenderer::World_t, m_builderParams) == 0x0, "m_builderParams in World_t should be at offset 0x0");

@@ -15,6 +15,11 @@
 
 
 
+namespace CS2 {
+	namespace server {
+		class CBaseEntity;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -34,7 +39,7 @@ namespace CS2 {
 			bool m_bConstrainBetweenEndpoints; // 0x7fd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			GlobalTypes::CUtlSymbolLarge m_strRopeMaterialModel; // 0x800 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle< resourcesystem::InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0x808 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_iRopeMaterialModelIndex; // 0x808 | Schema_Atomic | Size: 0x8
 			char  m_iRopeMaterialModelIndex[0x8]; // 0x808 | Schema_Atomic | Size: 0x8
 			uint8_t m_Subdiv; // 0x810 | Schema_Builtin | Size: 0x1
 			uint8_t m_nChangeCount; // 0x811 | Schema_Builtin | Size: 0x1
@@ -46,10 +51,10 @@ namespace CS2 {
 			bool m_bStartPointValid; // 0x81c | Schema_Builtin | Size: 0x1
 			bool m_bEndPointValid; // 0x81d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// server::CHandle< server::CBaseEntity > m_hStartPoint; // 0x820 | Schema_Atomic | Size: 0x4
-			char  m_hStartPoint[0x4]; // 0x820 | Schema_Atomic | Size: 0x4
-			// server::CHandle< server::CBaseEntity > m_hEndPoint; // 0x824 | Schema_Atomic | Size: 0x4
-			char  m_hEndPoint[0x4]; // 0x824 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hStartPoint; // 0x820 | Schema_Atomic | Size: 0x4
+			// char  m_hStartPoint[0x4]; // 0x820 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEndPoint; // 0x824 | Schema_Atomic | Size: 0x4
+			// char  m_hEndPoint[0x4]; // 0x824 | Schema_Atomic | Size: 0x4
 			modellib::AttachmentHandle_t m_iStartAttachment; // 0x828 | Schema_DeclaredClass | Size: 0x1
 			modellib::AttachmentHandle_t m_iEndAttachment; // 0x829 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x6); // End padding

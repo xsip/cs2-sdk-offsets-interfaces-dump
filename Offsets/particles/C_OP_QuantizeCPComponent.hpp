@@ -10,10 +10,10 @@ namespace CS2 {
 		namespace particles {
 			// Class size: 0x4C0
 			namespace C_OP_QuantizeCPComponent /*: public CS2::particles::CParticleFunctionPreEmission*/ {
-				constexpr std::ptrdiff_t m_flInputValue = 0x1d8; // particleslib::CParticleCollectionFloatInput m_flInputValue; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flInputValue = 0x1d8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_nCPOutput = 0x348; // int32_t m_nCPOutput; |  0x348 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOutVectorField = 0x34c; // int32_t m_nOutVectorField; |  0x34c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flQuantizeValue = 0x350; // particleslib::CParticleCollectionFloatInput m_flQuantizeValue; |  Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flQuantizeValue = 0x350; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 			}
 		}
 	}

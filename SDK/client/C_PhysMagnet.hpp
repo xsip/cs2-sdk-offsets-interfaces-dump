@@ -23,7 +23,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlVector< int32 > m_aAttachedObjectsFromServer; // 0x1158 | Schema_Atomic | Size: 0x18
 			// char  m_aAttachedObjectsFromServer[0x18]; // 0x1158 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< GlobalTypes::CHandle< C_BaseEntity > > m_aAttachedObjects; // 0x1170 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<client::C_BaseEntity>> m_aAttachedObjects; // 0x1170 | Schema_Atomic | Size: 0x18
 			// char  m_aAttachedObjects[0x18]; // 0x1170 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::C_PhysMagnet, m_aAttachedObjectsFromServer) == 0x1158, "m_aAttachedObjectsFromServer in C_PhysMagnet should be at offset 0x1158");

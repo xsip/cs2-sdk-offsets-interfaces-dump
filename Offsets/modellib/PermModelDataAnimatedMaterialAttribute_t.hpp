@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace modellib {
 			// Class size: 0x10
 			namespace PermModelDataAnimatedMaterialAttribute_t /**/ {
-				constexpr std::ptrdiff_t m_AttributeName = 0x0; // GlobalTypes::CUtlString m_AttributeName; |  Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_AttributeName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_nNumChannels = 0x8; // int32_t m_nNumChannels; |  0x8 | Schema_Builtin | Size: 0x4
 			}
 		}

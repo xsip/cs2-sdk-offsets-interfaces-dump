@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x78
 			namespace CPathMetricEvaluator /*: public CS2::animgraphlib::CMotionMetricEvaluator*/ {
-				constexpr std::ptrdiff_t m_pathTimeSamples = 0x50; // GlobalTypes::CUtlVector< float32 > m_pathTimeSamples; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_pathTimeSamples = 0x50; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_flDistance = 0x68; // float32 m_flDistance; |  0x68 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bExtrapolateMovement = 0x6c; // bool m_bExtrapolateMovement; |  0x6c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flMinExtrapolationSpeed = 0x70; // float32 m_flMinExtrapolationSpeed; |  0x70 | Schema_Builtin | Size: 0x4

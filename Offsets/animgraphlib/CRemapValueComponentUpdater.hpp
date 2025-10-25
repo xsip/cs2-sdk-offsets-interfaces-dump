@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0x48
 			namespace CRemapValueComponentUpdater /*: public CS2::animgraphlib::CAnimComponentUpdater*/ {
-				constexpr std::ptrdiff_t m_items = 0x30; // GlobalTypes::CUtlVector< animgraphlib::CRemapValueUpdateItem > m_items; |  Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_items = 0x30; // GlobalTypes::CUtlVector<animgraphlib::CRemapValueUpdateItem>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}
