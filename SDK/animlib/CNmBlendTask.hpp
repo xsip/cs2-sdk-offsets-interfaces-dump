@@ -22,6 +22,6 @@ namespace CS2 {
 		class CNmBlendTask : public CS2::animlib::CNmBlendTaskBase {
 		public:
 		};
-		static_assert(sizeof(CS2::animlib::CNmBlendTask) == 0xD8, "CNmBlendTask size should be 0xD8");
+		static_assert(sizeof(CS2::animlib::CNmBlendTask) == 0xE0, "CNmBlendTask size should be 0xE0");
 	}
 }

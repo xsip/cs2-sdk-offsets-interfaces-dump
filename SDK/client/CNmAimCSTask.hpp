@@ -21,8 +21,8 @@ namespace CS2 {
 	namespace client {
 		class CNmAimCSTask : public CS2::animlib::CNmPoseTask {
 		public:
-			S2_PAD(0xe0);
+			S2_PAD(0x98);
 		};
-		static_assert(sizeof(CS2::client::CNmAimCSTask) == 0x130, "CNmAimCSTask size should be 0x130");
+		static_assert(sizeof(CS2::client::CNmAimCSTask) == 0xF0, "CNmAimCSTask size should be 0xF0");
 	}
 }

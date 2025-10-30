@@ -23,9 +23,8 @@ namespace CS2 {
 	namespace animlib {
 		class CNmChainSolverTask : public CS2::animlib::CNmPoseTask {
 		public:
-			int32_t m_nEffectorBoneIdx; // 0x50 | Schema_Builtin | Size: 0x4
-			int32_t m_nEffectorTargetBoneIdx; // 0x54 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x8);
+			int32_t m_nEffectorBoneIdx; // 0x58 | Schema_Builtin | Size: 0x4
+			int32_t m_nEffectorTargetBoneIdx; // 0x5c | Schema_Builtin | Size: 0x4
 			GlobalTypes::CTransform m_targetTransform; // 0x60 | Schema_Atomic | Size: 0x20
 			int32_t m_nNumBonesInChain; // 0x80 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
@@ -43,8 +42,8 @@ namespace CS2 {
 			float32 m_debugTotalChainLength; // 0x120 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_nEffectorBoneIdx) == 0x50, "m_nEffectorBoneIdx in CNmChainSolverTask should be at offset 0x50");
-		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_nEffectorTargetBoneIdx) == 0x54, "m_nEffectorTargetBoneIdx in CNmChainSolverTask should be at offset 0x54");
+		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_nEffectorBoneIdx) == 0x58, "m_nEffectorBoneIdx in CNmChainSolverTask should be at offset 0x58");
+		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_nEffectorTargetBoneIdx) == 0x5C, "m_nEffectorTargetBoneIdx in CNmChainSolverTask should be at offset 0x5C");
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_targetTransform) == 0x60, "m_targetTransform in CNmChainSolverTask should be at offset 0x60");
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_nNumBonesInChain) == 0x80, "m_nNumBonesInChain in CNmChainSolverTask should be at offset 0x80");
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_effectorTarget) == 0x90, "m_effectorTarget in CNmChainSolverTask should be at offset 0x90");

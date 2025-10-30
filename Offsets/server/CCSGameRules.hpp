@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x113F0
+			// Class size: 0x11430
 			namespace CCSGameRules /*: public CS2::server::CTeamplayRules*/ {
 				constexpr std::ptrdiff_t m_bFreezePeriod = 0xc8; // bool m_bFreezePeriod; |  0xc8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bWarmupPeriod = 0xc9; // bool m_bWarmupPeriod; |  0xc9 | Schema_Builtin | Size: 0x1
@@ -173,32 +173,32 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_pGameModeRules = 0x1088; // server::CCSGameModeRules**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_BtGlobalBlackboard = 0x1090; // GlobalTypes::KeyValues3  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_hPlayerResource = 0x1128; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_RetakeRules = 0x1130; // server::CRetakeGameRules  | Schema_DeclaredClass | Size: 0x1b0
-				constexpr std::ptrdiff_t m_arrTeamUniqueKillWeaponsMatch = 0x12e0; // GlobalTypes::CUtlVector  | Schema_FixedArray | Size: 0x60
-				constexpr std::ptrdiff_t m_bTeamLastKillUsedUniqueWeaponMatch = 0x1340; // bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; |  0x1340 | Schema_FixedArray | Size: 0x4
-				constexpr std::ptrdiff_t m_nMatchEndCount = 0x1368; // uint8_t m_nMatchEndCount; |  0x1368 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nTTeamIntroVariant = 0x136c; // int32_t m_nTTeamIntroVariant; |  0x136c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCTTeamIntroVariant = 0x1370; // int32_t m_nCTTeamIntroVariant; |  0x1370 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bTeamIntroPeriod = 0x1374; // bool m_bTeamIntroPeriod; |  0x1374 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fTeamIntroPeriodEnd = 0x1378; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bPlayedTeamIntroVO = 0x137c; // bool m_bPlayedTeamIntroVO; |  0x137c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iRoundEndWinnerTeam = 0x1380; // int32_t m_iRoundEndWinnerTeam; |  0x1380 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_eRoundEndReason = 0x1384; // int32_t m_eRoundEndReason; |  0x1384 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bRoundEndShowTimerDefend = 0x1388; // bool m_bRoundEndShowTimerDefend; |  0x1388 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iRoundEndTimerTime = 0x138c; // int32_t m_iRoundEndTimerTime; |  0x138c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sRoundEndFunFactToken = 0x1390; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iRoundEndFunFactPlayerSlot = 0x1398; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iRoundEndFunFactData1 = 0x139c; // int32_t m_iRoundEndFunFactData1; |  0x139c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iRoundEndFunFactData2 = 0x13a0; // int32_t m_iRoundEndFunFactData2; |  0x13a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iRoundEndFunFactData3 = 0x13a4; // int32_t m_iRoundEndFunFactData3; |  0x13a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sRoundEndMessage = 0x13a8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iRoundEndPlayerCount = 0x13b0; // int32_t m_iRoundEndPlayerCount; |  0x13b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bRoundEndNoMusic = 0x13b4; // bool m_bRoundEndNoMusic; |  0x13b4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iRoundEndLegacy = 0x13b8; // int32_t m_iRoundEndLegacy; |  0x13b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRoundEndCount = 0x13bc; // uint8_t m_nRoundEndCount; |  0x13bc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iRoundStartRoundNumber = 0x13c0; // int32_t m_iRoundStartRoundNumber; |  0x13c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRoundStartCount = 0x13c4; // uint8_t m_nRoundStartCount; |  0x13c4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLastPerfSampleTime = 0x53d0; // float64 m_flLastPerfSampleTime; |  0x53d0 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_RetakeRules = 0x1130; // server::CRetakeGameRules  | Schema_DeclaredClass | Size: 0x1f0
+				constexpr std::ptrdiff_t m_arrTeamUniqueKillWeaponsMatch = 0x1320; // GlobalTypes::CUtlVector  | Schema_FixedArray | Size: 0x60
+				constexpr std::ptrdiff_t m_bTeamLastKillUsedUniqueWeaponMatch = 0x1380; // bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; |  0x1380 | Schema_FixedArray | Size: 0x4
+				constexpr std::ptrdiff_t m_nMatchEndCount = 0x13a8; // uint8_t m_nMatchEndCount; |  0x13a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nTTeamIntroVariant = 0x13ac; // int32_t m_nTTeamIntroVariant; |  0x13ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCTTeamIntroVariant = 0x13b0; // int32_t m_nCTTeamIntroVariant; |  0x13b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bTeamIntroPeriod = 0x13b4; // bool m_bTeamIntroPeriod; |  0x13b4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fTeamIntroPeriodEnd = 0x13b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bPlayedTeamIntroVO = 0x13bc; // bool m_bPlayedTeamIntroVO; |  0x13bc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iRoundEndWinnerTeam = 0x13c0; // int32_t m_iRoundEndWinnerTeam; |  0x13c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_eRoundEndReason = 0x13c4; // int32_t m_eRoundEndReason; |  0x13c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bRoundEndShowTimerDefend = 0x13c8; // bool m_bRoundEndShowTimerDefend; |  0x13c8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iRoundEndTimerTime = 0x13cc; // int32_t m_iRoundEndTimerTime; |  0x13cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_sRoundEndFunFactToken = 0x13d0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iRoundEndFunFactPlayerSlot = 0x13d8; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iRoundEndFunFactData1 = 0x13dc; // int32_t m_iRoundEndFunFactData1; |  0x13dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iRoundEndFunFactData2 = 0x13e0; // int32_t m_iRoundEndFunFactData2; |  0x13e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iRoundEndFunFactData3 = 0x13e4; // int32_t m_iRoundEndFunFactData3; |  0x13e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_sRoundEndMessage = 0x13e8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iRoundEndPlayerCount = 0x13f0; // int32_t m_iRoundEndPlayerCount; |  0x13f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bRoundEndNoMusic = 0x13f4; // bool m_bRoundEndNoMusic; |  0x13f4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iRoundEndLegacy = 0x13f8; // int32_t m_iRoundEndLegacy; |  0x13f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRoundEndCount = 0x13fc; // uint8_t m_nRoundEndCount; |  0x13fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iRoundStartRoundNumber = 0x1400; // int32_t m_iRoundStartRoundNumber; |  0x1400 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRoundStartCount = 0x1404; // uint8_t m_nRoundStartCount; |  0x1404 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLastPerfSampleTime = 0x5410; // float64 m_flLastPerfSampleTime; |  0x5410 | Schema_Builtin | Size: 0x8
 			}
 		}
 	}

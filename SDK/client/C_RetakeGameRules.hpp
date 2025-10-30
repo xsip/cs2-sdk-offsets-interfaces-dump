@@ -25,23 +25,23 @@ namespace CS2 {
 	namespace client {
 		class C_RetakeGameRules  {
 		public:
-			S2_PAD(0xf8);
-			int32_t m_nMatchSeed; // 0xf8 | Schema_Builtin | Size: 0x4
-			bool m_bBlockersPresent; // 0xfc | Schema_Builtin | Size: 0x1
-			bool m_bRoundInProgress; // 0xfd | Schema_Builtin | Size: 0x1
+			S2_PAD(0x138);
+			int32_t m_nMatchSeed; // 0x138 | Schema_Builtin | Size: 0x4
+			bool m_bBlockersPresent; // 0x13c | Schema_Builtin | Size: 0x1
+			bool m_bRoundInProgress; // 0x13d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iFirstSecondHalfRound; // 0x100 | Schema_Builtin | Size: 0x4
-			int32_t m_iBombSite; // 0x104 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hBombPlanter; // 0x108 | Schema_Atomic | Size: 0x4
-			// char  m_hBombPlanter[0x4]; // 0x108 | Schema_Atomic | Size: 0x4
+			int32_t m_iFirstSecondHalfRound; // 0x140 | Schema_Builtin | Size: 0x4
+			int32_t m_iBombSite; // 0x144 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hBombPlanter; // 0x148 | Schema_Atomic | Size: 0x4
+			// char  m_hBombPlanter[0x4]; // 0x148 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_nMatchSeed) == 0xF8, "m_nMatchSeed in C_RetakeGameRules should be at offset 0xF8");
-		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_bBlockersPresent) == 0xFC, "m_bBlockersPresent in C_RetakeGameRules should be at offset 0xFC");
-		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_bRoundInProgress) == 0xFD, "m_bRoundInProgress in C_RetakeGameRules should be at offset 0xFD");
-		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_iFirstSecondHalfRound) == 0x100, "m_iFirstSecondHalfRound in C_RetakeGameRules should be at offset 0x100");
-		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_iBombSite) == 0x104, "m_iBombSite in C_RetakeGameRules should be at offset 0x104");
-		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_hBombPlanter) == 0x108, "m_hBombPlanter in C_RetakeGameRules should be at offset 0x108");
-		static_assert(sizeof(CS2::client::C_RetakeGameRules) == 0x118, "C_RetakeGameRules size should be 0x118");
+		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_nMatchSeed) == 0x138, "m_nMatchSeed in C_RetakeGameRules should be at offset 0x138");
+		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_bBlockersPresent) == 0x13C, "m_bBlockersPresent in C_RetakeGameRules should be at offset 0x13C");
+		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_bRoundInProgress) == 0x13D, "m_bRoundInProgress in C_RetakeGameRules should be at offset 0x13D");
+		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_iFirstSecondHalfRound) == 0x140, "m_iFirstSecondHalfRound in C_RetakeGameRules should be at offset 0x140");
+		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_iBombSite) == 0x144, "m_iBombSite in C_RetakeGameRules should be at offset 0x144");
+		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_hBombPlanter) == 0x148, "m_hBombPlanter in C_RetakeGameRules should be at offset 0x148");
+		static_assert(sizeof(CS2::client::C_RetakeGameRules) == 0x158, "C_RetakeGameRules size should be 0x158");
 	}
 }

@@ -91,7 +91,6 @@ namespace GlobalTypes {
 	using CTransformWS /*CTransformWS*/ = char[0x20]; //  Schema_Atomic
 	using CUtlSymbol /*CUtlSymbol*/ = char[0x2]; //  Schema_Atomic
 	using WorldGroupId_t /*WorldGroupId_t*/ = char[0x4]; //  Schema_Atomic
-	using CAnimGraphTagRef /*CAnimGraphTagRef*/ = char[0x18]; //  Schema_Atomic
 	using CParticleNamedValueRef /*CParticleNamedValueRef*/ = char[0x40]; //  Schema_Atomic
 	using Range_t /*Range_t*/ = char[0x8]; //  Schema_Atomic
 	using CResourceName /*CResourceName*/ = char[0xe0]; //  Schema_Atomic

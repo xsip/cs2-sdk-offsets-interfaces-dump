@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animlib {
 			// Class size: 0x130
 			namespace CNmChainSolverTask /*: public CS2::animlib::CNmPoseTask*/ {
-				constexpr std::ptrdiff_t m_nEffectorBoneIdx = 0x50; // int32_t m_nEffectorBoneIdx; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nEffectorTargetBoneIdx = 0x54; // int32_t m_nEffectorTargetBoneIdx; |  0x54 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nEffectorBoneIdx = 0x58; // int32_t m_nEffectorBoneIdx; |  0x58 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nEffectorTargetBoneIdx = 0x5c; // int32_t m_nEffectorTargetBoneIdx; |  0x5c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_targetTransform = 0x60; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_nNumBonesInChain = 0x80; // int32_t m_nNumBonesInChain; |  0x80 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_effectorTarget = 0x90; // animlib::CNmTarget  | Schema_DeclaredClass | Size: 0x30

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace animlib {
-			// Class size: 0x50
+			// Class size: 0x58
 			namespace CNmPoseTask /**/ {
 				// NO SCHEMA DATA FOUND!
 			}

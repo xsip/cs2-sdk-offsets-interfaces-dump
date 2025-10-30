@@ -21,30 +21,30 @@ namespace CS2 {
 	namespace animlib {
 		class CNmChainLookatTask : public CS2::animlib::CNmPoseTask {
 		public:
-			int32_t m_nChainEndBoneIdx; // 0x50 | Schema_Builtin | Size: 0x4
-			int32_t m_nNumBonesInChain; // 0x54 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_chainForwardDir; // 0x58 | Schema_Atomic | Size: 0xc
-			float32 m_flBlendWeight; // 0x64 | Schema_Builtin | Size: 0x4
-			float32 m_flHorizontalAngleLimitDegrees; // 0x68 | Schema_Builtin | Size: 0x4
-			float32 m_flVerticalAngleLimitDegrees; // 0x6c | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_lookatTarget; // 0x70 | Schema_Atomic | Size: 0xc
-			bool m_bIsTargetInWorldSpace; // 0x7c | Schema_Builtin | Size: 0x1
-			bool m_bIsRunningFromDeserializedData; // 0x7d | Schema_Builtin | Size: 0x1
+			int32_t m_nChainEndBoneIdx; // 0x58 | Schema_Builtin | Size: 0x4
+			int32_t m_nNumBonesInChain; // 0x5c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_chainForwardDir; // 0x60 | Schema_Atomic | Size: 0xc
+			float32 m_flBlendWeight; // 0x6c | Schema_Builtin | Size: 0x4
+			float32 m_flHorizontalAngleLimitDegrees; // 0x70 | Schema_Builtin | Size: 0x4
+			float32 m_flVerticalAngleLimitDegrees; // 0x74 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_lookatTarget; // 0x78 | Schema_Atomic | Size: 0xc
+			bool m_bIsTargetInWorldSpace; // 0x84 | Schema_Builtin | Size: 0x1
+			bool m_bIsRunningFromDeserializedData; // 0x85 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flHorizontalAngleDegrees; // 0x80 | Schema_Builtin | Size: 0x4
-			float32 m_flVerticalAngleDegrees; // 0x84 | Schema_Builtin | Size: 0x4
+			float32 m_flHorizontalAngleDegrees; // 0x88 | Schema_Builtin | Size: 0x4
+			float32 m_flVerticalAngleDegrees; // 0x8c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_nChainEndBoneIdx) == 0x50, "m_nChainEndBoneIdx in CNmChainLookatTask should be at offset 0x50");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_nNumBonesInChain) == 0x54, "m_nNumBonesInChain in CNmChainLookatTask should be at offset 0x54");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_chainForwardDir) == 0x58, "m_chainForwardDir in CNmChainLookatTask should be at offset 0x58");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flBlendWeight) == 0x64, "m_flBlendWeight in CNmChainLookatTask should be at offset 0x64");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flHorizontalAngleLimitDegrees) == 0x68, "m_flHorizontalAngleLimitDegrees in CNmChainLookatTask should be at offset 0x68");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flVerticalAngleLimitDegrees) == 0x6C, "m_flVerticalAngleLimitDegrees in CNmChainLookatTask should be at offset 0x6C");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_lookatTarget) == 0x70, "m_lookatTarget in CNmChainLookatTask should be at offset 0x70");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_bIsTargetInWorldSpace) == 0x7C, "m_bIsTargetInWorldSpace in CNmChainLookatTask should be at offset 0x7C");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_bIsRunningFromDeserializedData) == 0x7D, "m_bIsRunningFromDeserializedData in CNmChainLookatTask should be at offset 0x7D");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flHorizontalAngleDegrees) == 0x80, "m_flHorizontalAngleDegrees in CNmChainLookatTask should be at offset 0x80");
-		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flVerticalAngleDegrees) == 0x84, "m_flVerticalAngleDegrees in CNmChainLookatTask should be at offset 0x84");
-		static_assert(sizeof(CS2::animlib::CNmChainLookatTask) == 0x88, "CNmChainLookatTask size should be 0x88");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_nChainEndBoneIdx) == 0x58, "m_nChainEndBoneIdx in CNmChainLookatTask should be at offset 0x58");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_nNumBonesInChain) == 0x5C, "m_nNumBonesInChain in CNmChainLookatTask should be at offset 0x5C");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_chainForwardDir) == 0x60, "m_chainForwardDir in CNmChainLookatTask should be at offset 0x60");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flBlendWeight) == 0x6C, "m_flBlendWeight in CNmChainLookatTask should be at offset 0x6C");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flHorizontalAngleLimitDegrees) == 0x70, "m_flHorizontalAngleLimitDegrees in CNmChainLookatTask should be at offset 0x70");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flVerticalAngleLimitDegrees) == 0x74, "m_flVerticalAngleLimitDegrees in CNmChainLookatTask should be at offset 0x74");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_lookatTarget) == 0x78, "m_lookatTarget in CNmChainLookatTask should be at offset 0x78");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_bIsTargetInWorldSpace) == 0x84, "m_bIsTargetInWorldSpace in CNmChainLookatTask should be at offset 0x84");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_bIsRunningFromDeserializedData) == 0x85, "m_bIsRunningFromDeserializedData in CNmChainLookatTask should be at offset 0x85");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flHorizontalAngleDegrees) == 0x88, "m_flHorizontalAngleDegrees in CNmChainLookatTask should be at offset 0x88");
+		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flVerticalAngleDegrees) == 0x8C, "m_flVerticalAngleDegrees in CNmChainLookatTask should be at offset 0x8C");
+		static_assert(sizeof(CS2::animlib::CNmChainLookatTask) == 0x90, "CNmChainLookatTask size should be 0x90");
 	}
 }

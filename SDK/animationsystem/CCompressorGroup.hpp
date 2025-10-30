@@ -41,19 +41,19 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint32 > m_nElementMask; // 0xc8 | Schema_Atomic | Size: 0x18
 			// char  m_nElementMask[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
-			GlobalTypes::CUtlVector<�p�|�::CCompressor*> m_vectorCompressor; // 0xf8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<�p���::CCompressor*> m_vectorCompressor; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char  m_vectorCompressor[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<�p�|�::CCompressor*> m_quaternionCompressor; // 0x110 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<�p���::CCompressor*> m_quaternionCompressor; // 0x110 | Schema_Atomic | Size: 0x18
 			// char  m_quaternionCompressor[0x18]; // 0x110 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<�p�|�::CCompressor*> m_intCompressor; // 0x128 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<�p���::CCompressor*> m_intCompressor; // 0x128 | Schema_Atomic | Size: 0x18
 			// char  m_intCompressor[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<�p�|�::CCompressor*> m_boolCompressor; // 0x140 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<�p���::CCompressor*> m_boolCompressor; // 0x140 | Schema_Atomic | Size: 0x18
 			// char  m_boolCompressor[0x18]; // 0x140 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<�p�|�::CCompressor*> m_colorCompressor; // 0x158 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<�p���::CCompressor*> m_colorCompressor; // 0x158 | Schema_Atomic | Size: 0x18
 			// char  m_colorCompressor[0x18]; // 0x158 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<�p�|�::CCompressor*> m_vector2DCompressor; // 0x170 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<�p���::CCompressor*> m_vector2DCompressor; // 0x170 | Schema_Atomic | Size: 0x18
 			// char  m_vector2DCompressor[0x18]; // 0x170 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<�p�|�::CCompressor*> m_vector4DCompressor; // 0x188 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<�p���::CCompressor*> m_vector4DCompressor; // 0x188 | Schema_Atomic | Size: 0x18
 			// char  m_vector4DCompressor[0x18]; // 0x188 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CCompressorGroup, m_nTotalElementCount) == 0x0, "m_nTotalElementCount in CCompressorGroup should be at offset 0x0");

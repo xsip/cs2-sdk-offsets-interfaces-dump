@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x5D8
+			// Class size: 0xDF8
 			namespace CCSPlayer_MovementServices /*: public CS2::client::CPlayer_MovementServices_Humanoid*/ {
 				constexpr std::ptrdiff_t m_vecLadderNormal = 0x278; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nLadderSurfacePropIndex = 0x284; // int32_t m_nLadderSurfacePropIndex; |  0x284 | Schema_Builtin | Size: 0x4

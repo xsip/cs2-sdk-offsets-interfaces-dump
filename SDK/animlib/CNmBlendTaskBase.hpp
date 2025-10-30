@@ -23,6 +23,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x88);
 		};
-		static_assert(sizeof(CS2::animlib::CNmBlendTaskBase) == 0xD8, "CNmBlendTaskBase size should be 0xD8");
+		static_assert(sizeof(CS2::animlib::CNmBlendTaskBase) == 0xE0, "CNmBlendTaskBase size should be 0xE0");
 	}
 }

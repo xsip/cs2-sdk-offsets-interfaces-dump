@@ -70,6 +70,7 @@ namespace CS2 {
 			bool m_bWasSurfing; // 0x54c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x8f);
 			GlobalTypes::Vector m_vecInputRotated; // 0x5dc | Schema_Atomic | Size: 0xc
+			S2_PAD(0x820); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecLadderNormal) == 0x280, "m_vecLadderNormal in CCSPlayer_MovementServices should be at offset 0x280");
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_nLadderSurfacePropIndex) == 0x28C, "m_nLadderSurfacePropIndex in CCSPlayer_MovementServices should be at offset 0x28C");
@@ -112,6 +113,6 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_flTicksSinceLastSurfingDetected) == 0x548, "m_flTicksSinceLastSurfingDetected in CCSPlayer_MovementServices should be at offset 0x548");
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_bWasSurfing) == 0x54C, "m_bWasSurfing in CCSPlayer_MovementServices should be at offset 0x54C");
 		static_assert(offsetof(CS2::server::CCSPlayer_MovementServices, m_vecInputRotated) == 0x5DC, "m_vecInputRotated in CCSPlayer_MovementServices should be at offset 0x5DC");
-		static_assert(sizeof(CS2::server::CCSPlayer_MovementServices) == 0x5E8, "CCSPlayer_MovementServices size should be 0x5E8");
+		static_assert(sizeof(CS2::server::CCSPlayer_MovementServices) == 0xE08, "CCSPlayer_MovementServices size should be 0xE08");
 	}
 }

@@ -8,19 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace animlib {
-			// Class size: 0x88
+			// Class size: 0x90
 			namespace CNmChainLookatTask /*: public CS2::animlib::CNmPoseTask*/ {
-				constexpr std::ptrdiff_t m_nChainEndBoneIdx = 0x50; // int32_t m_nChainEndBoneIdx; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNumBonesInChain = 0x54; // int32_t m_nNumBonesInChain; |  0x54 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_chainForwardDir = 0x58; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flBlendWeight = 0x64; // float32 m_flBlendWeight; |  0x64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHorizontalAngleLimitDegrees = 0x68; // float32 m_flHorizontalAngleLimitDegrees; |  0x68 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flVerticalAngleLimitDegrees = 0x6c; // float32 m_flVerticalAngleLimitDegrees; |  0x6c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_lookatTarget = 0x70; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bIsTargetInWorldSpace = 0x7c; // bool m_bIsTargetInWorldSpace; |  0x7c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsRunningFromDeserializedData = 0x7d; // bool m_bIsRunningFromDeserializedData; |  0x7d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flHorizontalAngleDegrees = 0x80; // float32 m_flHorizontalAngleDegrees; |  0x80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flVerticalAngleDegrees = 0x84; // float32 m_flVerticalAngleDegrees; |  0x84 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nChainEndBoneIdx = 0x58; // int32_t m_nChainEndBoneIdx; |  0x58 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nNumBonesInChain = 0x5c; // int32_t m_nNumBonesInChain; |  0x5c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_chainForwardDir = 0x60; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flBlendWeight = 0x6c; // float32 m_flBlendWeight; |  0x6c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHorizontalAngleLimitDegrees = 0x70; // float32 m_flHorizontalAngleLimitDegrees; |  0x70 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flVerticalAngleLimitDegrees = 0x74; // float32 m_flVerticalAngleLimitDegrees; |  0x74 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_lookatTarget = 0x78; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bIsTargetInWorldSpace = 0x84; // bool m_bIsTargetInWorldSpace; |  0x84 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsRunningFromDeserializedData = 0x85; // bool m_bIsRunningFromDeserializedData; |  0x85 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flHorizontalAngleDegrees = 0x88; // float32 m_flHorizontalAngleDegrees; |  0x88 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flVerticalAngleDegrees = 0x8c; // float32 m_flVerticalAngleDegrees; |  0x8c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}
