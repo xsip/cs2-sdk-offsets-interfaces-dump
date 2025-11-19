@@ -12,6 +12,7 @@
 
 #include <SDK/client/C_BaseToggle.hpp>
 #include <SDK/entity2/CEntityIOOutput.hpp>
+#include <SDK/client/C_BaseEntity.hpp>
 
 
 

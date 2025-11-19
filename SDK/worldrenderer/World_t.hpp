@@ -12,6 +12,7 @@
 
 #include <SDK/worldrenderer/WorldBuilderParams_t.hpp>
 #include <SDK/worldrenderer/BakedLightingInfo_t.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCEntityLump.hpp>
 
 
 

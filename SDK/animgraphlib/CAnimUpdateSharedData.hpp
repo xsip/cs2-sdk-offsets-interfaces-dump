@@ -10,6 +10,8 @@
 #endif
 
 
+#include <SDK/animgraphlib/CAnimUpdateNodeBase.hpp>
+#include <SDK/animgraphlib/CAnimComponentUpdater.hpp>
 #include <SDK/animgraphlib/CAnimGraphSettingsManager.hpp>
 #include <SDK/animgraphlib/CAnimNodePath.hpp>
 

@@ -40,11 +40,11 @@ namespace CS2 {
 			GlobalTypes::CEntityIndex m_soundEntityIndex; // 0x54 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_soundOrigin; // 0x58 | Schema_Atomic | Size: 0xc
 			int32_t m_isPlaying; // 0x64 | Schema_Builtin | Size: 0x4
-			client::CCopyRecipientFilter m_Filter; // 0x68 | Schema_DeclaredClass | Size: 0x30
-			float32 m_flCloseCaptionDuration; // 0x98 | Schema_Builtin | Size: 0x4
-			bool m_bUpdatedSoundOrigin; // 0x9c | Schema_Builtin | Size: 0x1
+			client::CCopyRecipientFilter m_Filter; // 0x68 | Schema_DeclaredClass | Size: 0x38
+			float32 m_flCloseCaptionDuration; // 0xa0 | Schema_Builtin | Size: 0x4
+			bool m_bUpdatedSoundOrigin; // 0xa4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CUtlSymbolLarge m_iszClassName; // 0xa0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszClassName; // 0xa8 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::client::CSoundPatch, m_pitch) == 0x8, "m_pitch in CSoundPatch should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CSoundPatch, m_volume) == 0x18, "m_volume in CSoundPatch should be at offset 0x18");
@@ -56,9 +56,9 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CSoundPatch, m_soundOrigin) == 0x58, "m_soundOrigin in CSoundPatch should be at offset 0x58");
 		static_assert(offsetof(CS2::client::CSoundPatch, m_isPlaying) == 0x64, "m_isPlaying in CSoundPatch should be at offset 0x64");
 		static_assert(offsetof(CS2::client::CSoundPatch, m_Filter) == 0x68, "m_Filter in CSoundPatch should be at offset 0x68");
-		static_assert(offsetof(CS2::client::CSoundPatch, m_flCloseCaptionDuration) == 0x98, "m_flCloseCaptionDuration in CSoundPatch should be at offset 0x98");
-		static_assert(offsetof(CS2::client::CSoundPatch, m_bUpdatedSoundOrigin) == 0x9C, "m_bUpdatedSoundOrigin in CSoundPatch should be at offset 0x9C");
-		static_assert(offsetof(CS2::client::CSoundPatch, m_iszClassName) == 0xA0, "m_iszClassName in CSoundPatch should be at offset 0xA0");
-		static_assert(sizeof(CS2::client::CSoundPatch) == 0xA8, "CSoundPatch size should be 0xA8");
+		static_assert(offsetof(CS2::client::CSoundPatch, m_flCloseCaptionDuration) == 0xA0, "m_flCloseCaptionDuration in CSoundPatch should be at offset 0xA0");
+		static_assert(offsetof(CS2::client::CSoundPatch, m_bUpdatedSoundOrigin) == 0xA4, "m_bUpdatedSoundOrigin in CSoundPatch should be at offset 0xA4");
+		static_assert(offsetof(CS2::client::CSoundPatch, m_iszClassName) == 0xA8, "m_iszClassName in CSoundPatch should be at offset 0xA8");
+		static_assert(sizeof(CS2::client::CSoundPatch) == 0xB0, "CSoundPatch size should be 0xB0");
 	}
 }

@@ -25,10 +25,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flHeight = 0x50; // float32 m_flHeight; |  0x50 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flDepth = 0x54; // float32 m_flDepth; |  0x54 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAnimationScale = 0x58; // float32 m_flAnimationScale; |  0x58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPlaceTime = 0x5c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeStartTime = 0x60; // float32 m_flFadeStartTime; |  0x60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeDuration = 0x64; // float32 m_flFadeDuration; |  0x64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLightingOriginOffset = 0x68; // float32 m_flLightingOriginOffset; |  0x68 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAnimationStartTime = 0x5c; // float32 m_flAnimationStartTime; |  0x5c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPlaceTime = 0x60; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeStartTime = 0x64; // float32 m_flFadeStartTime; |  0x64 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeDuration = 0x68; // float32 m_flFadeDuration; |  0x68 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLightingOriginOffset = 0x6c; // float32 m_flLightingOriginOffset; |  0x6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBoundingRadiusSqr = 0x78; // float32 m_flBoundingRadiusSqr; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSequenceIndex = 0x7c; // int16_t m_nSequenceIndex; |  0x7c | Schema_Builtin | Size: 0x2
 				constexpr std::ptrdiff_t m_bIsAdjacent = 0x7e; // bool m_bIsAdjacent; |  0x7e | Schema_Builtin | Size: 0x1

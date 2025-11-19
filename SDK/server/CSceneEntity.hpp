@@ -19,7 +19,6 @@
 namespace CS2 {
 	namespace server {
 		class CBaseEntity;
-		class CBaseFlex;
 	}
 }
 

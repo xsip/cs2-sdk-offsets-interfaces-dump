@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/CBaseAnimGraph.hpp>
+#include <SDK/client/C_BaseEntity.hpp>
 
 
 

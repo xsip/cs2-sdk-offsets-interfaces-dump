@@ -13,6 +13,11 @@
 
 
 
+namespace CS2 {
+	namespace �p��� {
+		class char;
+	}
+}
 
 
 using namespace GlobalTypes;

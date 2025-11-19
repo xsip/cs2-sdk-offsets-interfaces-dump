@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/animgraphlib/CAnimReplayFrame.hpp>
 
 
 

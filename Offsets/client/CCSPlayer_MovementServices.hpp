@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xDF8
+			// Class size: 0xE00
 			namespace CCSPlayer_MovementServices /*: public CS2::client::CPlayer_MovementServices_Humanoid*/ {
 				constexpr std::ptrdiff_t m_vecLadderNormal = 0x278; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nLadderSurfacePropIndex = 0x284; // int32_t m_nLadderSurfacePropIndex; |  0x284 | Schema_Builtin | Size: 0x4
@@ -49,6 +49,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flTicksSinceLastSurfingDetected = 0x538; // float32 m_flTicksSinceLastSurfingDetected; |  0x538 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bWasSurfing = 0x53c; // bool m_bWasSurfing; |  0x53c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_vecInputRotated = 0x5cc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bJumpApexPending = 0xdf8; // bool m_bJumpApexPending; |  0xdf8 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

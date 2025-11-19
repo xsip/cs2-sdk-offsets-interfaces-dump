@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/resourcesystem/InfoForResourceTypeIMaterial2.hpp>
 
 
 

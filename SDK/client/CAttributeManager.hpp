@@ -10,13 +10,13 @@
 #endif
 
 
+#include <SDK/client/C_BaseEntity.hpp>
 #include <SDK/client/attributeprovidertypes_t.hpp>
 
 
 
 namespace CS2 {
 	namespace client {
-		class C_BaseEntity;
 		class cached_attribute_float_t;
 	}
 }

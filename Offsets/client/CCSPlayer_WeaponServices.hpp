@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1910
+			// Class size: 0x1928
 			namespace CCSPlayer_WeaponServices /*: public CS2::client::CPlayer_WeaponServices*/ {
 				constexpr std::ptrdiff_t m_flNextAttack = 0xc8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_bIsLookingAtWeapon = 0xcc; // bool m_bIsLookingAtWeapon; |  0xcc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsHoldingLookAtWeapon = 0xcd; // bool m_bIsHoldingLookAtWeapon; |  0xcd | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nOldTotalShootPositionHistoryCount = 0xd0; // uint32_t m_nOldTotalShootPositionHistoryCount; |  0xd0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOldTotalInputHistoryCount = 0x368; // uint32_t m_nOldTotalInputHistoryCount; |  0x368 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_networkAnimTiming = 0x18c8; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bBlockInspectUntilNextGraphUpdate = 0x18e0; // bool m_bBlockInspectUntilNextGraphUpdate; |  0x18e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_networkAnimTiming = 0x18e0; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bBlockInspectUntilNextGraphUpdate = 0x18f8; // bool m_bBlockInspectUntilNextGraphUpdate; |  0x18f8 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

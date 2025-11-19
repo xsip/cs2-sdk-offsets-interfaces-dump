@@ -6,12 +6,12 @@
 namespace CS2 {
 	namespace client {
 		enum WeaponGameplayAnimState : std::uint16_t {
-			WeaponGameplayAnimState_WEAPON_LEGACY_STATE_CLEAR_FIRING = 0x44d,
+			WeaponGameplayAnimState_WEAPON_LEGACY_STATE_CLEAR_FIRING = 0x7d1,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_C4_PLANT = 0x12c,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_CHARGE = 0x67,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_DEPLOY = 0xb,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_DROPPED = 0x1,
-			WeaponGameplayAnimState_WPN_ANIMSTATE_END_VALID = 0x44c,
+			WeaponGameplayAnimState_WPN_ANIMSTATE_END_VALID = 0x7d0,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_GRENADE_PULL_PIN = 0xc8,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_GRENADE_READY = 0xc9,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_GRENADE_THROW = 0xca,
@@ -20,6 +20,8 @@ namespace CS2 {
 			WeaponGameplayAnimState_WPN_ANIMSTATE_IDLE = 0x32,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_INSPECT = 0x3e8,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_INSPECT_OUTRO = 0x3e9,
+			WeaponGameplayAnimState_WPN_ANIMSTATE_INVENTORY_UI_KEYCHAIN_APPLY = 0x5dd,
+			WeaponGameplayAnimState_WPN_ANIMSTATE_INVENTORY_UI_TUMBLE = 0x5dc,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_KNIFE_PRIMARY_HIT = 0x1f4,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_KNIFE_PRIMARY_MISS = 0x1f5,
 			WeaponGameplayAnimState_WPN_ANIMSTATE_KNIFE_PRIMARY_STAB = 0x1f8,

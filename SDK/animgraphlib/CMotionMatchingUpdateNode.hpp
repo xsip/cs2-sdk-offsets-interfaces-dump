@@ -12,6 +12,7 @@
 
 #include <SDK/animgraphlib/CLeafUpdateNode.hpp>
 #include <SDK/animgraphlib/CMotionDataSet.hpp>
+#include <SDK/animgraphlib/CMotionMetricEvaluator.hpp>
 #include <SDK/animgraphlib/CBlendCurve.hpp>
 #include <SDK/animgraphlib/CAnimInputDamping.hpp>
 

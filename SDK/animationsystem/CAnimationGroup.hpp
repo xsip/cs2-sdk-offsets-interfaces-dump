@@ -10,6 +10,8 @@
 #endif
 
 
+#include <SDK/resourcesystem/InfoForResourceTypeCAnimData.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCAnimationGroup.hpp>
 #include <SDK/animationsystem/CAnimKeyData.hpp>
 
 

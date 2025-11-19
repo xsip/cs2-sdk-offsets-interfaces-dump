@@ -8,27 +8,28 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x5E8
+			// Class size: 0x600
 			namespace CCS2WeaponGraphController /*: public CS2::client::CAnimGraphControllerBase*/ {
 				constexpr std::ptrdiff_t m_action = 0x80; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_bActionReset = 0xa0; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_weaponCategory = 0xb8; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_weaponType = 0xd8; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_weaponExtraInfo = 0xf8; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_flWeaponAmmo = 0x118; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flWeaponAmmoMax = 0x130; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flWeaponAmmoReserve = 0x148; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bWeaponIsSilenced = 0x160; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flWeaponIronsightAmount = 0x178; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bIsUsingLegacyModel = 0x190; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_idleVariation = 0x1a8; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_deployVariation = 0x1c0; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_attackType = 0x1d8; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_attackThrowStrength = 0x1f8; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flAttackVariation = 0x210; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_inspectVariation = 0x228; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_inspectExtraInfo = 0x240; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
-				constexpr std::ptrdiff_t m_reloadStage = 0x260; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_flWeaponActionSpeedScale = 0xb8; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_weaponCategory = 0xd0; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_weaponType = 0xf0; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_weaponExtraInfo = 0x110; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_flWeaponAmmo = 0x130; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flWeaponAmmoMax = 0x148; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flWeaponAmmoReserve = 0x160; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bWeaponIsSilenced = 0x178; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flWeaponIronsightAmount = 0x190; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bIsUsingLegacyModel = 0x1a8; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_idleVariation = 0x1c0; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_deployVariation = 0x1d8; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_attackType = 0x1f0; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_attackThrowStrength = 0x210; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flAttackVariation = 0x228; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_inspectVariation = 0x240; // GlobalTypes::CAnimGraph2ParamOptionalRef  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_inspectExtraInfo = 0x258; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_reloadStage = 0x278; // GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

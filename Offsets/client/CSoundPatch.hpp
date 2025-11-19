@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xA8
+			// Class size: 0xB0
 			namespace CSoundPatch /**/ {
 				constexpr std::ptrdiff_t m_pitch = 0x8; // client::CSoundEnvelope  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t m_volume = 0x18; // client::CSoundEnvelope  | Schema_DeclaredClass | Size: 0x10
@@ -19,10 +19,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_soundEntityIndex = 0x54; // GlobalTypes::CEntityIndex  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_soundOrigin = 0x58; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_isPlaying = 0x64; // int32_t m_isPlaying; |  0x64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Filter = 0x68; // client::CCopyRecipientFilter  | Schema_DeclaredClass | Size: 0x30
-				constexpr std::ptrdiff_t m_flCloseCaptionDuration = 0x98; // float32 m_flCloseCaptionDuration; |  0x98 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bUpdatedSoundOrigin = 0x9c; // bool m_bUpdatedSoundOrigin; |  0x9c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszClassName = 0xa0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Filter = 0x68; // client::CCopyRecipientFilter  | Schema_DeclaredClass | Size: 0x38
+				constexpr std::ptrdiff_t m_flCloseCaptionDuration = 0xa0; // float32 m_flCloseCaptionDuration; |  0xa0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUpdatedSoundOrigin = 0xa4; // bool m_bUpdatedSoundOrigin; |  0xa4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iszClassName = 0xa8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

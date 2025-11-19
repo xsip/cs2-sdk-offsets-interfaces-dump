@@ -11,6 +11,7 @@
 
 
 #include <SDK/soundsystem_voicecontainers/CVoiceContainerBase.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCVoiceContainerBase.hpp>
 
 
 

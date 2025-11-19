@@ -14,11 +14,6 @@
 
 
 
-namespace CS2 {
-	namespace server {
-		class CBasePlayerWeapon;
-	}
-}
 
 
 using namespace GlobalTypes;

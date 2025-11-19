@@ -11,6 +11,7 @@
 
 
 #include <SDK/animgraphlib/CVectorQuantizer.hpp>
+#include <SDK/animgraphlib/SampleCode.hpp>
 
 
 

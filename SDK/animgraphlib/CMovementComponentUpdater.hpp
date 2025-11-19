@@ -11,6 +11,7 @@
 
 
 #include <SDK/animgraphlib/CAnimComponentUpdater.hpp>
+#include <SDK/animgraphlib/CAnimMotorUpdaterBase.hpp>
 #include <SDK/animgraphlib/CAnimInputDamping.hpp>
 #include <SDK/animgraphlib/CAnimParamHandle.hpp>
 

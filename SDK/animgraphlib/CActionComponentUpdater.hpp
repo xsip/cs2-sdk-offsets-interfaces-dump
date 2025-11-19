@@ -11,6 +11,7 @@
 
 
 #include <SDK/animgraphlib/CAnimComponentUpdater.hpp>
+#include <SDK/animgraphlib/CAnimActionUpdater.hpp>
 
 
 

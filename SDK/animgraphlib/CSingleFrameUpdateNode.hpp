@@ -11,6 +11,7 @@
 
 
 #include <SDK/animgraphlib/CLeafUpdateNode.hpp>
+#include <SDK/animgraphlib/CAnimActionUpdater.hpp>
 #include <SDK/animgraphlib/CPoseHandle.hpp>
 #include <SDK/animationsystem/HSequence.hpp>
 

@@ -119,6 +119,9 @@ namespace GlobalTypes {
 
 	template <typename T>
 	using CResourceNameTyped /*CResourceNameTyped< CWeakHandle< InfoForResourceTypeCCompositeMaterialKit > >*/ = char[0xe0]; //  Schema_Atomic
+
+	template <typename T>
+	using CWeakHandle /*CWeakHandle< InfoForResourceTypeCCompositeMaterialKit >*/ = char[0x8]; //  Schema_DeclaredClass
 	using RotationVector /*RotationVector*/ = char[0xc]; //  Schema_Atomic
 
 	template <typename T>

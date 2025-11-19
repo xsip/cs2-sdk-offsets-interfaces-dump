@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/resourcesystem/InfoForResourceTypeCEntityLump.hpp>
 
 
 

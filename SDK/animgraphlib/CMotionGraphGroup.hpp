@@ -11,6 +11,7 @@
 
 
 #include <SDK/animgraphlib/CMotionSearchDB.hpp>
+#include <SDK/animgraphlib/CMotionGraph.hpp>
 #include <SDK/modellib/AnimScriptHandle.hpp>
 
 

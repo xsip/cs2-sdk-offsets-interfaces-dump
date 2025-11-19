@@ -14,11 +14,6 @@
 
 
 
-namespace CS2 {
-	namespace server {
-		class CBaseEntity;
-	}
-}
 
 
 using namespace GlobalTypes;

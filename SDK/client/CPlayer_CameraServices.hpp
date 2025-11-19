@@ -24,7 +24,6 @@ namespace CS2 {
 		class C_BaseEntity;
 		class C_TonemapController2;
 		class C_FogController;
-		class C_PostProcessingVolume;
 	}
 }
 

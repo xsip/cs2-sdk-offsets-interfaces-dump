@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/C_BaseModelEntity.hpp>
+#include <SDK/client/C_InfoLadderDismount.hpp>
 
 
 

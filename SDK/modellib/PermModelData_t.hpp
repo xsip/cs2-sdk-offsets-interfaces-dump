@@ -11,7 +11,12 @@
 
 
 #include <SDK/modellib/PermModelInfo_t.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCRenderMesh.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCPhysAggregateData.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCAnimationGroup.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCSequenceGroupData.hpp>
 #include <SDK/modellib/ModelSkeletonData_t.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCModel.hpp>
 
 
 

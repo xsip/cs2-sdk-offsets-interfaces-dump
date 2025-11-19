@@ -14,11 +14,6 @@
 
 
 
-namespace CS2 {
-	namespace client {
-		class C_BasePlayerWeapon;
-	}
-}
 
 
 using namespace GlobalTypes;
