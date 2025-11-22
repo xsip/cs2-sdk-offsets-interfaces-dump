@@ -1,0 +1,14 @@
+// generated - do not edit!
+enum server_ChickenActivity {
+	FEED = 0x9,
+	GLIDE = 0x4,
+	IDLE = 0x0,
+	LAND = 0x5,
+	PANIC = 0x6,
+	RUN = 0x3,
+	SLEEP = 0xa,
+	SQUAT = 0x1,
+	TRICK = 0x7,
+	TURN_IN_PLACE = 0x8,
+	WALK = 0x2
+}

@@ -1,0 +1,9 @@
+// generated - do not edit!
+enum scenesystem_ESceneObjectVisualization {
+	SCENEOBJECT_VIS_INSTANCING = 0x5,
+	SCENEOBJECT_VIS_LOD = 0x4,
+	SCENEOBJECT_VIS_MATERIAL = 0x2,
+	SCENEOBJECT_VIS_NONE = 0x0,
+	SCENEOBJECT_VIS_OBJECT = 0x1,
+	SCENEOBJECT_VIS_TEXTURE_SIZE = 0x3
+}

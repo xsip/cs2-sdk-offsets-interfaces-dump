@@ -1,0 +1,6 @@
+// generated - do not edit!
+enum server_MoveLinearAuthoredPos_t {
+	MOVELINEAR_AUTHORED_AT_CLOSED_POSITION = 0x2,
+	MOVELINEAR_AUTHORED_AT_OPEN_POSITION = 0x1,
+	MOVELINEAR_AUTHORED_AT_START_POSITION = 0x0
+}

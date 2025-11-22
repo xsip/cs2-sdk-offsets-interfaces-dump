@@ -1,0 +1,26 @@
+// generated - do not edit!
+enum animlib_NmEasingOperation_t {
+	InCirc = 0x13,
+	InCubic = 0x4,
+	InExpo = 0x10,
+	InOutCirc = 0x15,
+	InOutCubic = 0x6,
+	InOutExpo = 0x12,
+	InOutQuad = 0x3,
+	InOutQuart = 0x9,
+	InOutQuint = 0xc,
+	InOutSine = 0xf,
+	InQuad = 0x1,
+	InQuart = 0x7,
+	InQuint = 0xa,
+	InSine = 0xd,
+	Linear = 0x0,
+	None = 0x16,
+	OutCirc = 0x14,
+	OutCubic = 0x5,
+	OutExpo = 0x11,
+	OutQuad = 0x2,
+	OutQuart = 0x8,
+	OutQuint = 0xb,
+	OutSine = 0xe
+}

@@ -1,0 +1,6 @@
+// generated - do not edit!
+enum materialsystem2_LayoutPositionType_e {
+	LAYOUTPOSITIONTYPE_FRACTIONAL = 0x1,
+	LAYOUTPOSITIONTYPE_NONE = 0x2,
+	LAYOUTPOSITIONTYPE_VIEWPORT_RELATIVE = 0x0
+}

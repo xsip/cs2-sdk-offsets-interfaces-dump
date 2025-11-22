@@ -1,0 +1,8 @@
+// generated - do not edit!
+enum particles_ParticleColorBlendMode_t {
+	PARTICLEBLEND_DARKEN = 0x2,
+	PARTICLEBLEND_DEFAULT = 0x0,
+	PARTICLEBLEND_LIGHTEN = 0x3,
+	PARTICLEBLEND_MULTIPLY = 0x4,
+	PARTICLEBLEND_OVERLAY = 0x1
+}

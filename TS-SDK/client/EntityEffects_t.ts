@@ -1,0 +1,10 @@
+// generated - do not edit!
+enum client_EntityEffects_t {
+	DEPRICATED_EF_NOINTERP = 0x8,
+	EF_MAX_BITS = 0xa,
+	EF_NODRAW = 0x20,
+	EF_NODRAW_BUT_TRANSMIT = 0x400,
+	EF_NORECEIVESHADOW = 0x40,
+	EF_NOSHADOW = 0x10,
+	EF_PARENT_ANIMATES = 0x200
+}

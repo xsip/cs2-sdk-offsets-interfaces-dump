@@ -1,0 +1,7 @@
+// generated - do not edit!
+enum particles_ParticleOrientationType_t {
+	PARTICLE_ORIENTATION_NONE = 0x0,
+	PARTICLE_ORIENTATION_NORMAL = 0x2,
+	PARTICLE_ORIENTATION_ROTATION = 0x4,
+	PARTICLE_ORIENTATION_VELOCITY = 0x1
+}

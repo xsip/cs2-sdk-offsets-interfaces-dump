@@ -1,0 +1,8 @@
+// generated - do not edit!
+enum client_ShatterDamageCause {
+	SHATTERDAMAGE_BULLET = 0x0,
+	SHATTERDAMAGE_EXPLOSIVE = 0x4,
+	SHATTERDAMAGE_MELEE = 0x1,
+	SHATTERDAMAGE_SCRIPT = 0x3,
+	SHATTERDAMAGE_THROWN = 0x2
+}

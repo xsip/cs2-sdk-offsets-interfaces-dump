@@ -1,0 +1,12 @@
+// generated - do not edit!
+
+import {particles_CParticleFunctionInitializer} from './CParticleFunctionInitializer';
+// Class size: 0xA08
+// BaseClass: : public CS2::particles::CParticleFunctionInitializer
+export const particles_C_INIT_ScreenSpacePositionOfTarget  = {
+	...particles_CParticleFunctionInitializer,
+	m_vecTargetPosition: 472n, // particleslib::CPerParticleVecInput  | Schema_DeclaredClass | Size: 0x6b8
+	m_bOututBehindness: 2192n, // bool m_bOututBehindness; |  0x890 | Schema_Builtin | Size: 0x1
+	m_nBehindFieldOutput: 2196n, // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
+	m_flBehindOutputRemap: 2200n, // particleslib::CParticleRemapFloatInput  | Schema_DeclaredClass | Size: 0x170
+}

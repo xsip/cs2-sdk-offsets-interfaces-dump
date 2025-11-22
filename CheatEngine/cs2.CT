@@ -60,14 +60,14 @@
 					<Description>"Source2Client002"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1e2a540</Address>
+					 <Address>client.dll + 0x1e2a570</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>10</ID>
 					<Description>"Source2ClientConfig001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1dc3de0</Address>
+					 <Address>client.dll + 0x1dc3dd0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>11</ID>
@@ -95,231 +95,231 @@
 					<Description>""</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x61c2746a</Address>
+					 <Address>engine2.dll + 0x539e8f14</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>15</ID>
 					<Description>"BenchmarkService001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f6640</Address>
+					 <Address>engine2.dll + 0x5f7630</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>16</ID>
 					<Description>"BugService001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8aac60</Address>
+					 <Address>engine2.dll + 0x8abc60</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>17</ID>
 					<Description>"ClientServerEngineLoopService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ec370</Address>
+					 <Address>engine2.dll + 0x8ed370</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>18</ID>
 					<Description>"EngineGameUI001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f4300</Address>
+					 <Address>engine2.dll + 0x5f52f0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>19</ID>
 					<Description>"EngineServiceMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ebc70</Address>
+					 <Address>engine2.dll + 0x8ecc70</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>20</ID>
 					<Description>"GameEventSystemClientV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ebf40</Address>
+					 <Address>engine2.dll + 0x8ecf40</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>21</ID>
 					<Description>"GameEventSystemServerV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ec060</Address>
+					 <Address>engine2.dll + 0x8ed060</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>22</ID>
 					<Description>"GameResourceServiceClientV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f6740</Address>
+					 <Address>engine2.dll + 0x5f7730</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>23</ID>
 					<Description>"GameResourceServiceServerV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f67a0</Address>
+					 <Address>engine2.dll + 0x5f7790</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>24</ID>
 					<Description>"GameUIService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ab090</Address>
+					 <Address>engine2.dll + 0x8ac090</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>25</ID>
 					<Description>"HostStateMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7000</Address>
+					 <Address>engine2.dll + 0x5f7ff0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>26</ID>
 					<Description>"INETSUPPORT_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5ef870</Address>
+					 <Address>engine2.dll + 0x5f0870</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>27</ID>
 					<Description>"InputService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ab380</Address>
+					 <Address>engine2.dll + 0x8ac380</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>28</ID>
 					<Description>"KeyValueCache001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f70b0</Address>
+					 <Address>engine2.dll + 0x5f80a0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>29</ID>
 					<Description>"MapListService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ea2f0</Address>
+					 <Address>engine2.dll + 0x8eb2f0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>30</ID>
 					<Description>"NetworkClientService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ea480</Address>
+					 <Address>engine2.dll + 0x8eb480</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>31</ID>
 					<Description>"NetworkP2PService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ea7a0</Address>
+					 <Address>engine2.dll + 0x8eb7a0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>32</ID>
 					<Description>"NetworkServerService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ea930</Address>
+					 <Address>engine2.dll + 0x8eb930</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>33</ID>
 					<Description>"NetworkService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f6910</Address>
+					 <Address>engine2.dll + 0x5f7900</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>34</ID>
 					<Description>"RenderService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8eab90</Address>
+					 <Address>engine2.dll + 0x8ebb90</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>35</ID>
 					<Description>"ScreenshotService001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8eae40</Address>
+					 <Address>engine2.dll + 0x8ebe40</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>36</ID>
 					<Description>"SimpleEngineLoopService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7110</Address>
+					 <Address>engine2.dll + 0x5f8100</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>37</ID>
 					<Description>"SoundService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f6950</Address>
+					 <Address>engine2.dll + 0x5f7940</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>38</ID>
 					<Description>"Source2EngineToClient001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f3990</Address>
+					 <Address>engine2.dll + 0x5f4980</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>39</ID>
 					<Description>"Source2EngineToClientStringTable001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f39f0</Address>
+					 <Address>engine2.dll + 0x5f49e0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>40</ID>
 					<Description>"Source2EngineToServer001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f3a68</Address>
+					 <Address>engine2.dll + 0x5f4a58</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>41</ID>
 					<Description>"Source2EngineToServerStringTable001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f3a90</Address>
+					 <Address>engine2.dll + 0x5f4a80</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>42</ID>
 					<Description>"SplitScreenService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f6c50</Address>
+					 <Address>engine2.dll + 0x5f7c40</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>43</ID>
 					<Description>"StatsService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8eb240</Address>
+					 <Address>engine2.dll + 0x8ec240</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>44</ID>
 					<Description>"ToolService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f6e10</Address>
+					 <Address>engine2.dll + 0x5f7e00</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>45</ID>
 					<Description>"VENGINE_GAMEUIFUNCS_VERSION005"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f4390</Address>
+					 <Address>engine2.dll + 0x5f5380</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>46</ID>
 					<Description>"VProfService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f6e50</Address>
+					 <Address>engine2.dll + 0x5f7e40</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -655,14 +655,14 @@
 					<Description>""</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x707eab53</Address>
+					 <Address>server.dll + 0x60978ed9</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>95</ID>
 					<Description>"EmptyWorldService001_Server"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x1732fb0</Address>
+					 <Address>server.dll + 0x1732fa0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>96</ID>
@@ -697,7 +697,7 @@
 					<Description>"Source2GameDirector001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x18e6310</Address>
+					 <Address>server.dll + 0x18e6350</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>101</ID>

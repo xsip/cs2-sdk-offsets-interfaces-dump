@@ -1,0 +1,13 @@
+// generated - do not edit!
+enum soundsystem_lowlevel_VMixFilterType_t {
+	FILTER_ALLPASS = 0x7,
+	FILTER_BANDPASS = 0x2,
+	FILTER_HIGHPASS = 0x1,
+	FILTER_HIGH_SHELF = 0x6,
+	FILTER_LOWPASS = 0x0,
+	FILTER_LOW_SHELF = 0x5,
+	FILTER_NOTCH = 0x3,
+	FILTER_PASSTHROUGH = 0x8,
+	FILTER_PEAKING_EQ = 0x4,
+	FILTER_UNKNOWN = 0xffff
+}

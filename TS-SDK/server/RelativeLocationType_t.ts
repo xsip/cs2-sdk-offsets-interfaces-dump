@@ -1,0 +1,7 @@
+// generated - do not edit!
+enum server_RelativeLocationType_t {
+	RELATIVE_TO_ENTITY_IN_LOCAL_SPACE = 0x1,
+	RELATIVE_TO_ENTITY_IN_WORLD_SPACE = 0x3,
+	RELATIVE_TO_ENTITY_YAW_ONLY = 0x2,
+	WORLD_SPACE_POSITION = 0x0
+}

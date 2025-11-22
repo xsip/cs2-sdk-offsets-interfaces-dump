@@ -1,0 +1,8 @@
+// generated - do not edit!
+enum client_AnimLoopMode_t {
+	ANIM_LOOP_MODE_COUNT = 0x3,
+	ANIM_LOOP_MODE_INVALID = 0xffffffff,
+	ANIM_LOOP_MODE_LOOPING = 0x1,
+	ANIM_LOOP_MODE_NOT_LOOPING = 0x0,
+	ANIM_LOOP_MODE_USE_SEQUENCE_SETTINGS = 0x2
+}

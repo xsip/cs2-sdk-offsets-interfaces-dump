@@ -1,0 +1,16 @@
+// generated - do not edit!
+enum soundsystem_voicecontainers_EMidiNote {
+	A = 0x9,
+	A_Sharp = 0xa,
+	B = 0xb,
+	C = 0x0,
+	C_Sharp = 0x1,
+	Count = 0xc,
+	D = 0x2,
+	D_Sharp = 0x3,
+	E = 0x4,
+	F = 0x5,
+	F_Sharp = 0x6,
+	G = 0x7,
+	G_Sharp = 0x8
+}

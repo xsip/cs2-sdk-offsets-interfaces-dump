@@ -1,0 +1,16 @@
+// generated - do not edit!
+enum panorama_content_ELayoutNodeType {
+	INCLUDE = 0x5,
+	PANEL = 0x7,
+	PANEL_ATTRIBUTE = 0x8,
+	PANEL_ATTRIBUTE_VALUE = 0x9,
+	REFERENCE_COMPILED = 0xb,
+	REFERENCE_CONTENT = 0xa,
+	REFERENCE_PASSTHROUGH = 0xc,
+	ROOT = 0x0,
+	SCRIPTS = 0x3,
+	SCRIPT_BODY = 0x2,
+	SNIPPET = 0x6,
+	SNIPPETS = 0x4,
+	STYLES = 0x1
+}

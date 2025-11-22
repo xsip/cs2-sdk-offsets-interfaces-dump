@@ -12,8 +12,8 @@ namespace CS2 {
 			constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x1ba0fb0; 
 			constexpr std::ptrdiff_t GameClientExports001 = 0x1be2890; 
 			constexpr std::ptrdiff_t LegacyGameUI001 = 0x1c01130; 
-			constexpr std::ptrdiff_t Source2Client002 = 0x1e2a540; 
-			constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1dc3de0; 
+			constexpr std::ptrdiff_t Source2Client002 = 0x1e2a570; 
+			constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1dc3dd0; 
 			constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x1bece50; 
 			constexpr std::ptrdiff_t Source2ClientUI001 = 0x1bff670; 
 		}
