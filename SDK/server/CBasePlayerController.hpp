@@ -29,66 +29,66 @@ namespace CS2 {
 		class CBasePlayerController : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x8);
-			uint64_t m_nInButtonsWhichAreToggles; // 0x4f8 | Schema_Builtin | Size: 0x8
-			uint32_t m_nTickBase; // 0x500 | Schema_Builtin | Size: 0x4
+			uint64_t m_nInButtonsWhichAreToggles; // 0x4b0 | Schema_Builtin | Size: 0x8
+			uint32_t m_nTickBase; // 0x4b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x24);
-			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPawn; // 0x528 | Schema_Atomic | Size: 0x4
-			// char  m_hPawn[0x4]; // 0x528 | Schema_Atomic | Size: 0x4
-			bool m_bKnownTeamMismatch; // 0x52c | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPawn; // 0x4e0 | Schema_Atomic | Size: 0x4
+			// char m_hPawn[0x4]; // 0x4e0 | Schema_Atomic | Size: 0x4
+			bool m_bKnownTeamMismatch; // 0x4e4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; // 0x530 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBasePlayerController> m_hSplitOwner; // 0x534 | Schema_Atomic | Size: 0x4
-			// char  m_hSplitOwner[0x4]; // 0x534 | Schema_Atomic | Size: 0x4
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>> m_hSplitScreenPlayers; // 0x538 | Schema_Atomic | Size: 0x18
-			char  m_hSplitScreenPlayers[0x18]; // 0x538 | Schema_Atomic | Size: 0x18
-			bool m_bIsHLTV; // 0x550 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; // 0x4e8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerController> m_hSplitOwner; // 0x4ec | Schema_Atomic | Size: 0x4
+			// char m_hSplitOwner[0x4]; // 0x4ec | Schema_Atomic | Size: 0x4
+			server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>> m_hSplitScreenPlayers; // 0x4f0 | Schema_Atomic | Size: 0x18
+			// char m_hSplitScreenPlayers[0x18]; // 0x4f0 | Schema_Atomic | Size: 0x18
+			bool m_bIsHLTV; // 0x508 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::PlayerConnectedState m_iConnected; // 0x554 | Schema_DeclaredEnum | Size: 0x4
-			char m_iszPlayerName[128]; // 0x558 | Schema_FixedArray | Size: 0x80
-			GlobalTypes::CUtlString m_szNetworkIDString; // 0x5d8 | Schema_Atomic | Size: 0x8
-			float32 m_fLerpTime; // 0x5e0 | Schema_Builtin | Size: 0x4
-			bool m_bLagCompensation; // 0x5e4 | Schema_Builtin | Size: 0x1
-			bool m_bPredict; // 0x5e5 | Schema_Builtin | Size: 0x1
+			client::PlayerConnectedState m_iConnected; // 0x50c | Schema_DeclaredEnum | Size: 0x4
+			char m_iszPlayerName[128]; // 0x510 | Schema_FixedArray | Size: 0x80
+			GlobalTypes::CUtlString m_szNetworkIDString; // 0x590 | Schema_Atomic | Size: 0x8
+			float32 m_fLerpTime; // 0x598 | Schema_Builtin | Size: 0x4
+			bool m_bLagCompensation; // 0x59c | Schema_Builtin | Size: 0x1
+			bool m_bPredict; // 0x59d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			bool m_bIsLowViolence; // 0x5ec | Schema_Builtin | Size: 0x1
-			bool m_bGamePaused; // 0x5ed | Schema_Builtin | Size: 0x1
+			bool m_bIsLowViolence; // 0x5a4 | Schema_Builtin | Size: 0x1
+			bool m_bGamePaused; // 0x5a5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x13a);
-			client::ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x728 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flLastPlayerTalkTime; // 0x72c | Schema_Builtin | Size: 0x4
-			float32 m_flLastEntitySteadyState; // 0x730 | Schema_Builtin | Size: 0x4
-			int32_t m_nAvailableEntitySteadyState; // 0x734 | Schema_Builtin | Size: 0x4
-			bool m_bHasAnySteadyStateEnts; // 0x738 | Schema_Builtin | Size: 0x1
+			client::ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x6e0 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flLastPlayerTalkTime; // 0x6e4 | Schema_Builtin | Size: 0x4
+			float32 m_flLastEntitySteadyState; // 0x6e8 | Schema_Builtin | Size: 0x4
+			int32_t m_nAvailableEntitySteadyState; // 0x6ec | Schema_Builtin | Size: 0x4
+			bool m_bHasAnySteadyStateEnts; // 0x6f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf);
-			uint64_t m_steamID; // 0x748 | Schema_Builtin | Size: 0x8
-			bool m_bNoClipEnabled; // 0x750 | Schema_Builtin | Size: 0x1
+			uint64_t m_steamID; // 0x700 | Schema_Builtin | Size: 0x8
+			bool m_bNoClipEnabled; // 0x708 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			uint32_t m_iDesiredFOV; // 0x754 | Schema_Builtin | Size: 0x4
+			uint32_t m_iDesiredFOV; // 0x70c | Schema_Builtin | Size: 0x4
 			S2_PAD(0xb8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_nInButtonsWhichAreToggles) == 0x4F8, "m_nInButtonsWhichAreToggles in CBasePlayerController should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_nTickBase) == 0x500, "m_nTickBase in CBasePlayerController should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_hPawn) == 0x528, "m_hPawn in CBasePlayerController should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bKnownTeamMismatch) == 0x52C, "m_bKnownTeamMismatch in CBasePlayerController should be at offset 0x52C");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_nSplitScreenSlot) == 0x530, "m_nSplitScreenSlot in CBasePlayerController should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_hSplitOwner) == 0x534, "m_hSplitOwner in CBasePlayerController should be at offset 0x534");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_hSplitScreenPlayers) == 0x538, "m_hSplitScreenPlayers in CBasePlayerController should be at offset 0x538");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bIsHLTV) == 0x550, "m_bIsHLTV in CBasePlayerController should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_iConnected) == 0x554, "m_iConnected in CBasePlayerController should be at offset 0x554");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_iszPlayerName) == 0x558, "m_iszPlayerName in CBasePlayerController should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_szNetworkIDString) == 0x5D8, "m_szNetworkIDString in CBasePlayerController should be at offset 0x5D8");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_fLerpTime) == 0x5E0, "m_fLerpTime in CBasePlayerController should be at offset 0x5E0");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bLagCompensation) == 0x5E4, "m_bLagCompensation in CBasePlayerController should be at offset 0x5E4");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bPredict) == 0x5E5, "m_bPredict in CBasePlayerController should be at offset 0x5E5");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bIsLowViolence) == 0x5EC, "m_bIsLowViolence in CBasePlayerController should be at offset 0x5EC");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bGamePaused) == 0x5ED, "m_bGamePaused in CBasePlayerController should be at offset 0x5ED");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_iIgnoreGlobalChat) == 0x728, "m_iIgnoreGlobalChat in CBasePlayerController should be at offset 0x728");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_flLastPlayerTalkTime) == 0x72C, "m_flLastPlayerTalkTime in CBasePlayerController should be at offset 0x72C");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_flLastEntitySteadyState) == 0x730, "m_flLastEntitySteadyState in CBasePlayerController should be at offset 0x730");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_nAvailableEntitySteadyState) == 0x734, "m_nAvailableEntitySteadyState in CBasePlayerController should be at offset 0x734");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bHasAnySteadyStateEnts) == 0x738, "m_bHasAnySteadyStateEnts in CBasePlayerController should be at offset 0x738");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_steamID) == 0x748, "m_steamID in CBasePlayerController should be at offset 0x748");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_bNoClipEnabled) == 0x750, "m_bNoClipEnabled in CBasePlayerController should be at offset 0x750");
-		static_assert(offsetof(CS2::server::CBasePlayerController, m_iDesiredFOV) == 0x754, "m_iDesiredFOV in CBasePlayerController should be at offset 0x754");
-		static_assert(sizeof(CS2::server::CBasePlayerController) == 0x810, "CBasePlayerController size should be 0x810");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_nInButtonsWhichAreToggles) == 0x4B0, "m_nInButtonsWhichAreToggles in CBasePlayerController should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_nTickBase) == 0x4B8, "m_nTickBase in CBasePlayerController should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_hPawn) == 0x4E0, "m_hPawn in CBasePlayerController should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bKnownTeamMismatch) == 0x4E4, "m_bKnownTeamMismatch in CBasePlayerController should be at offset 0x4E4");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_nSplitScreenSlot) == 0x4E8, "m_nSplitScreenSlot in CBasePlayerController should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_hSplitOwner) == 0x4EC, "m_hSplitOwner in CBasePlayerController should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_hSplitScreenPlayers) == 0x4F0, "m_hSplitScreenPlayers in CBasePlayerController should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bIsHLTV) == 0x508, "m_bIsHLTV in CBasePlayerController should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_iConnected) == 0x50C, "m_iConnected in CBasePlayerController should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_iszPlayerName) == 0x510, "m_iszPlayerName in CBasePlayerController should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_szNetworkIDString) == 0x590, "m_szNetworkIDString in CBasePlayerController should be at offset 0x590");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_fLerpTime) == 0x598, "m_fLerpTime in CBasePlayerController should be at offset 0x598");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bLagCompensation) == 0x59C, "m_bLagCompensation in CBasePlayerController should be at offset 0x59C");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bPredict) == 0x59D, "m_bPredict in CBasePlayerController should be at offset 0x59D");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bIsLowViolence) == 0x5A4, "m_bIsLowViolence in CBasePlayerController should be at offset 0x5A4");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bGamePaused) == 0x5A5, "m_bGamePaused in CBasePlayerController should be at offset 0x5A5");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_iIgnoreGlobalChat) == 0x6E0, "m_iIgnoreGlobalChat in CBasePlayerController should be at offset 0x6E0");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_flLastPlayerTalkTime) == 0x6E4, "m_flLastPlayerTalkTime in CBasePlayerController should be at offset 0x6E4");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_flLastEntitySteadyState) == 0x6E8, "m_flLastEntitySteadyState in CBasePlayerController should be at offset 0x6E8");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_nAvailableEntitySteadyState) == 0x6EC, "m_nAvailableEntitySteadyState in CBasePlayerController should be at offset 0x6EC");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bHasAnySteadyStateEnts) == 0x6F0, "m_bHasAnySteadyStateEnts in CBasePlayerController should be at offset 0x6F0");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_steamID) == 0x700, "m_steamID in CBasePlayerController should be at offset 0x700");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_bNoClipEnabled) == 0x708, "m_bNoClipEnabled in CBasePlayerController should be at offset 0x708");
+		static_assert(offsetof(CS2::server::CBasePlayerController, m_iDesiredFOV) == 0x70C, "m_iDesiredFOV in CBasePlayerController should be at offset 0x70C");
+		static_assert(sizeof(CS2::server::CBasePlayerController) == 0x7C8, "CBasePlayerController size should be 0x7C8");
 	}
 }

@@ -5,8 +5,8 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class client_CCSPlayer_DamageReactServices {
-    char vTable1208[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1209[0x10];
-    char pad_1339[0x48];
+    char pad_2013[0x18];
+    char pad_2089[0x50];
 };

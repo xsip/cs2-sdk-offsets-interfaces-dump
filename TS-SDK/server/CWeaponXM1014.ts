@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_CCSWeaponBaseShotgun} from './CCSWeaponBaseShotgun';
-// Class size: 0x11D0
+// Class size: 0x1130
 // BaseClass: : public CS2::server::CCSWeaponBaseShotgun
 export const server_CWeaponXM1014  = {
 	...server_CCSWeaponBaseShotgun,

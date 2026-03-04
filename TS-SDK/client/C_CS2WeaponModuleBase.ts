@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_CBaseAnimGraph} from './CBaseAnimGraph';
-// Class size: 0x1160
+// Class size: 0x1170
 // BaseClass: : public CS2::client::CBaseAnimGraph
 export const client_C_CS2WeaponModuleBase  = {
 	...client_CBaseAnimGraph,

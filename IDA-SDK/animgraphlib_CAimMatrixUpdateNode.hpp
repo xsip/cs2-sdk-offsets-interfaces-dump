@@ -9,12 +9,14 @@
 #include "animationsystem_HSequence.hpp"
 
 class animgraphlib_CAimMatrixUpdateNode {
-    char vTable16[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     animgraphlib_CAnimNodePath m_nodePath;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
     char pad_17[0x4];
     CUtlString m_name;
-    char vTable20[0x8];
+    void **__vftable_3;
     animgraphlib_CAnimUpdateNodeRef m_pChildNode;
     animgraphlib_AimMatrixOpFixedSettings_t m_opFixedSettings;
     char pad_21[0x8];

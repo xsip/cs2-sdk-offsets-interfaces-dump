@@ -10,7 +10,7 @@
 #endif
 
 
-#include <SDK/soundsystem_voicecontainers/CVoiceContainerBase.hpp>
+#include <SDK/soundsystem_voicecontainers/CVoiceContainerGenerator.hpp>
 
 
 
@@ -19,30 +19,30 @@
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
-		class CVoiceContainerShapedNoise : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
+		class CVoiceContainerShapedNoise : public CS2::soundsystem_voicecontainers::CVoiceContainerGenerator {
 		public:
-			bool m_bUseCurveForFrequency; // 0xb8 | Schema_Builtin | Size: 0x1
+			bool m_bUseCurveForFrequency; // 0xa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flFrequency; // 0xbc | Schema_Builtin | Size: 0x4
-			GlobalTypes::CPiecewiseCurve m_frequencySweep; // 0xc0 | Schema_Atomic | Size: 0x40
-			bool m_bUseCurveForResonance; // 0x100 | Schema_Builtin | Size: 0x1
+			float32 m_flFrequency; // 0xac | Schema_Builtin | Size: 0x4
+			GlobalTypes::CPiecewiseCurve m_frequencySweep; // 0xb0 | Schema_Atomic | Size: 0x40
+			bool m_bUseCurveForResonance; // 0xf0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flResonance; // 0x104 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CPiecewiseCurve m_resonanceSweep; // 0x108 | Schema_Atomic | Size: 0x40
-			bool m_bUseCurveForAmplitude; // 0x148 | Schema_Builtin | Size: 0x1
+			float32 m_flResonance; // 0xf4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CPiecewiseCurve m_resonanceSweep; // 0xf8 | Schema_Atomic | Size: 0x40
+			bool m_bUseCurveForAmplitude; // 0x138 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flGainInDecibels; // 0x14c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CPiecewiseCurve m_gainSweep; // 0x150 | Schema_Atomic | Size: 0x40
+			float32 m_flGainInDecibels; // 0x13c | Schema_Builtin | Size: 0x4
+			GlobalTypes::CPiecewiseCurve m_gainSweep; // 0x140 | Schema_Atomic | Size: 0x40
 		};
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_bUseCurveForFrequency) == 0xB8, "m_bUseCurveForFrequency in CVoiceContainerShapedNoise should be at offset 0xB8");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flFrequency) == 0xBC, "m_flFrequency in CVoiceContainerShapedNoise should be at offset 0xBC");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_frequencySweep) == 0xC0, "m_frequencySweep in CVoiceContainerShapedNoise should be at offset 0xC0");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_bUseCurveForResonance) == 0x100, "m_bUseCurveForResonance in CVoiceContainerShapedNoise should be at offset 0x100");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flResonance) == 0x104, "m_flResonance in CVoiceContainerShapedNoise should be at offset 0x104");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_resonanceSweep) == 0x108, "m_resonanceSweep in CVoiceContainerShapedNoise should be at offset 0x108");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_bUseCurveForAmplitude) == 0x148, "m_bUseCurveForAmplitude in CVoiceContainerShapedNoise should be at offset 0x148");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flGainInDecibels) == 0x14C, "m_flGainInDecibels in CVoiceContainerShapedNoise should be at offset 0x14C");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_gainSweep) == 0x150, "m_gainSweep in CVoiceContainerShapedNoise should be at offset 0x150");
-		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise) == 0x190, "CVoiceContainerShapedNoise size should be 0x190");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_bUseCurveForFrequency) == 0xA8, "m_bUseCurveForFrequency in CVoiceContainerShapedNoise should be at offset 0xA8");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flFrequency) == 0xAC, "m_flFrequency in CVoiceContainerShapedNoise should be at offset 0xAC");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_frequencySweep) == 0xB0, "m_frequencySweep in CVoiceContainerShapedNoise should be at offset 0xB0");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_bUseCurveForResonance) == 0xF0, "m_bUseCurveForResonance in CVoiceContainerShapedNoise should be at offset 0xF0");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flResonance) == 0xF4, "m_flResonance in CVoiceContainerShapedNoise should be at offset 0xF4");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_resonanceSweep) == 0xF8, "m_resonanceSweep in CVoiceContainerShapedNoise should be at offset 0xF8");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_bUseCurveForAmplitude) == 0x138, "m_bUseCurveForAmplitude in CVoiceContainerShapedNoise should be at offset 0x138");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flGainInDecibels) == 0x13C, "m_flGainInDecibels in CVoiceContainerShapedNoise should be at offset 0x13C");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_gainSweep) == 0x140, "m_gainSweep in CVoiceContainerShapedNoise should be at offset 0x140");
+		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise) == 0x180, "CVoiceContainerShapedNoise size should be 0x180");
 	}
 }

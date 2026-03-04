@@ -22,16 +22,16 @@ namespace CS2 {
 	namespace server {
 		class CPathSimple : public CS2::server::CBaseEntity {
 		public:
-			S2_PAD(0x10);
-			server::CPathQueryComponent m_CPathQueryComponent; // 0x500 | Schema_DeclaredClass | Size: 0xa0
+			S2_PAD(0x8);
+			server::CPathQueryComponent m_CPathQueryComponent; // 0x4b0 | Schema_DeclaredClass | Size: 0xa0
 			S2_PAD(0x50);
-			GlobalTypes::CUtlString m_pathString; // 0x5f0 | Schema_Atomic | Size: 0x8
-			bool m_bClosedLoop; // 0x5f8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_pathString; // 0x5a0 | Schema_Atomic | Size: 0x8
+			bool m_bClosedLoop; // 0x5a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPathSimple, m_CPathQueryComponent) == 0x500, "m_CPathQueryComponent in CPathSimple should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPathSimple, m_pathString) == 0x5F0, "m_pathString in CPathSimple should be at offset 0x5F0");
-		static_assert(offsetof(CS2::server::CPathSimple, m_bClosedLoop) == 0x5F8, "m_bClosedLoop in CPathSimple should be at offset 0x5F8");
-		static_assert(sizeof(CS2::server::CPathSimple) == 0x600, "CPathSimple size should be 0x600");
+		static_assert(offsetof(CS2::server::CPathSimple, m_CPathQueryComponent) == 0x4B0, "m_CPathQueryComponent in CPathSimple should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPathSimple, m_pathString) == 0x5A0, "m_pathString in CPathSimple should be at offset 0x5A0");
+		static_assert(offsetof(CS2::server::CPathSimple, m_bClosedLoop) == 0x5A8, "m_bClosedLoop in CPathSimple should be at offset 0x5A8");
+		static_assert(sizeof(CS2::server::CPathSimple) == 0x5B0, "CPathSimple size should be 0x5B0");
 	}
 }

@@ -22,6 +22,6 @@ namespace CS2 {
 		class CPointEntity : public CS2::server::CBaseEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CPointEntity) == 0x4F0, "CPointEntity size should be 0x4F0");
+		static_assert(sizeof(CS2::server::CPointEntity) == 0x4A8, "CPointEntity size should be 0x4A8");
 	}
 }

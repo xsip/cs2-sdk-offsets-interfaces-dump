@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x518
+			// Class size: 0x4D0
 			namespace CGameGibManager /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_bAllowNewGibs = 0x508; // bool m_bAllowNewGibs; |  0x508 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iCurrentMaxPieces = 0x50c; // int32_t m_iCurrentMaxPieces; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iMaxPieces = 0x510; // int32_t m_iMaxPieces; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iLastFrame = 0x514; // int32_t m_iLastFrame; |  0x514 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAllowNewGibs = 0x4c0; // bool m_bAllowNewGibs; |  0x4c0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iCurrentMaxPieces = 0x4c4; // int32_t m_iCurrentMaxPieces; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iMaxPieces = 0x4c8; // int32_t m_iMaxPieces; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iLastFrame = 0x4cc; // int32_t m_iLastFrame; |  0x4cc | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -21,12 +21,12 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_ItemServices : public CS2::server::CPlayer_ItemServices {
 		public:
-			bool m_bHasDefuser; // 0x40 | Schema_Builtin | Size: 0x1
-			bool m_bHasHelmet; // 0x41 | Schema_Builtin | Size: 0x1
+			bool m_bHasDefuser; // 0x48 | Schema_Builtin | Size: 0x1
+			bool m_bHasHelmet; // 0x49 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSPlayer_ItemServices, m_bHasDefuser) == 0x40, "m_bHasDefuser in CCSPlayer_ItemServices should be at offset 0x40");
-		static_assert(offsetof(CS2::server::CCSPlayer_ItemServices, m_bHasHelmet) == 0x41, "m_bHasHelmet in CCSPlayer_ItemServices should be at offset 0x41");
-		static_assert(sizeof(CS2::server::CCSPlayer_ItemServices) == 0x48, "CCSPlayer_ItemServices size should be 0x48");
+		static_assert(offsetof(CS2::server::CCSPlayer_ItemServices, m_bHasDefuser) == 0x48, "m_bHasDefuser in CCSPlayer_ItemServices should be at offset 0x48");
+		static_assert(offsetof(CS2::server::CCSPlayer_ItemServices, m_bHasHelmet) == 0x49, "m_bHasHelmet in CCSPlayer_ItemServices should be at offset 0x49");
+		static_assert(sizeof(CS2::server::CCSPlayer_ItemServices) == 0x50, "CCSPlayer_ItemServices size should be 0x50");
 	}
 }

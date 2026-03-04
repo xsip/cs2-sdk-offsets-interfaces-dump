@@ -11,5 +11,5 @@ class animgraphlib_FollowAttachmentSettings_t {
     modellib_AttachmentHandle_t m_attachmentHandle;
     bool m_bMatchTranslation;
     bool m_bMatchRotation;
-    char end_pad_256[0x9];
+    char end_pad_281[0x9];
 };

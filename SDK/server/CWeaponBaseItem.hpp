@@ -21,12 +21,12 @@ namespace CS2 {
 	namespace server {
 		class CWeaponBaseItem : public CS2::server::CCSWeaponBase {
 		public:
-			bool m_bSequenceInProgress; // 0x11d0 | Schema_Builtin | Size: 0x1
-			bool m_bRedraw; // 0x11d1 | Schema_Builtin | Size: 0x1
+			bool m_bSequenceInProgress; // 0x1130 | Schema_Builtin | Size: 0x1
+			bool m_bRedraw; // 0x1131 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xe); // End padding
 		};
-		static_assert(offsetof(CS2::server::CWeaponBaseItem, m_bSequenceInProgress) == 0x11D0, "m_bSequenceInProgress in CWeaponBaseItem should be at offset 0x11D0");
-		static_assert(offsetof(CS2::server::CWeaponBaseItem, m_bRedraw) == 0x11D1, "m_bRedraw in CWeaponBaseItem should be at offset 0x11D1");
-		static_assert(sizeof(CS2::server::CWeaponBaseItem) == 0x11E0, "CWeaponBaseItem size should be 0x11E0");
+		static_assert(offsetof(CS2::server::CWeaponBaseItem, m_bSequenceInProgress) == 0x1130, "m_bSequenceInProgress in CWeaponBaseItem should be at offset 0x1130");
+		static_assert(offsetof(CS2::server::CWeaponBaseItem, m_bRedraw) == 0x1131, "m_bRedraw in CWeaponBaseItem should be at offset 0x1131");
+		static_assert(sizeof(CS2::server::CWeaponBaseItem) == 0x1140, "CWeaponBaseItem size should be 0x1140");
 	}
 }

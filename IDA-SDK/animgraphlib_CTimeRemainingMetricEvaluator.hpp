@@ -4,15 +4,17 @@
 
 
 class animgraphlib_CTimeRemainingMetricEvaluator {
-    char vTable80[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     char m_means[0x18];
     char m_standardDeviations[0x18];
     float32 m_flWeight;
     int32_t m_nDimensionStartIndex;
     bool m_bMatchByTimeRemaining;
-    char pad_242[0x3];
+    char pad_258[0x3];
     float32 m_flMaxTimeRemaining;
     bool m_bFilterByTimeRemaining;
-    char pad_243[0x3];
+    char pad_259[0x3];
     float32 m_flMinTimeRemaining;
 };

@@ -5,7 +5,10 @@
 #include "networksystem_ChangeAccessorFieldPathIndex_t.hpp"
 
 class entity2_CNetworkVarChainer {
-    char vTable2511[0x20];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
     networksystem_ChangeAccessorFieldPathIndex_t m_PathIndex;
-    char end_pad_2512[0x4];
+    char end_pad_2718[0x4];
 };

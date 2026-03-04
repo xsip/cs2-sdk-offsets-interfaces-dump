@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/CHitBox.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class CHitBox;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -29,7 +25,7 @@ namespace CS2 {
 			uint32_t m_nNameHash; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<modellib::CHitBox> m_HitBoxes; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_HitBoxes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_HitBoxes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_SourceFilename; // 0x28 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::CHitBoxSet, m_name) == 0x0, "m_name in CHitBoxSet should be at offset 0x0");

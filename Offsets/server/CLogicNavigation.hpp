@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x500
+			// Class size: 0x4B8
 			namespace CLogicNavigation /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_isOn = 0x4f8; // bool m_isOn; |  0x4f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_navProperty = 0x4fc; // server::navproperties_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_isOn = 0x4b0; // bool m_isOn; |  0x4b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_navProperty = 0x4b4; // server::navproperties_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

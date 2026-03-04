@@ -5,7 +5,9 @@
 #include "modellib_AnimParamID.hpp"
 
 class animgraphlib_CVectorAnimParameter {
-    char vTable38[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CGlobalSymbol m_name;
     CUtlString m_sComment;
     CUtlString m_group;
@@ -25,7 +27,7 @@ class animgraphlib_CVectorAnimParameter {
     char end_pad_90[0x4];
     Vector m_defaultValue;
     bool m_bInterpolate;
-    char pad_246[0x3];
+    char pad_271[0x3];
     animgraphlib_AnimParamVectorType_t m_vectorType;
-    char end_pad_247[0x4];
+    char end_pad_272[0x4];
 };

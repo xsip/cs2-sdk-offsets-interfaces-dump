@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x50
+			// Class size: 0x58
 			namespace CCSPlayer_UseServices /*: public CS2::server::CPlayer_UseServices*/ {
-				constexpr std::ptrdiff_t m_hLastKnownUseEntity = 0x40; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastUseTimeStamp = 0x44; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeLastUsedWindow = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hLastKnownUseEntity = 0x48; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastUseTimeStamp = 0x4c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeLastUsedWindow = 0x50; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

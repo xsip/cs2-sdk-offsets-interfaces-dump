@@ -21,16 +21,16 @@ namespace CS2 {
 	namespace server {
 		class CPointTeleport : public CS2::server::CServerOnlyPointEntity {
 		public:
-			GlobalTypes::Vector m_vSaveOrigin; // 0x4f0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vSaveAngles; // 0x4fc | Schema_Atomic | Size: 0xc
-			bool m_bTeleportParentedEntities; // 0x508 | Schema_Builtin | Size: 0x1
-			bool m_bTeleportUseCurrentAngle; // 0x509 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vSaveOrigin; // 0x4a8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vSaveAngles; // 0x4b4 | Schema_Atomic | Size: 0xc
+			bool m_bTeleportParentedEntities; // 0x4c0 | Schema_Builtin | Size: 0x1
+			bool m_bTeleportUseCurrentAngle; // 0x4c1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPointTeleport, m_vSaveOrigin) == 0x4F0, "m_vSaveOrigin in CPointTeleport should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointTeleport, m_vSaveAngles) == 0x4FC, "m_vSaveAngles in CPointTeleport should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CPointTeleport, m_bTeleportParentedEntities) == 0x508, "m_bTeleportParentedEntities in CPointTeleport should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPointTeleport, m_bTeleportUseCurrentAngle) == 0x509, "m_bTeleportUseCurrentAngle in CPointTeleport should be at offset 0x509");
-		static_assert(sizeof(CS2::server::CPointTeleport) == 0x510, "CPointTeleport size should be 0x510");
+		static_assert(offsetof(CS2::server::CPointTeleport, m_vSaveOrigin) == 0x4A8, "m_vSaveOrigin in CPointTeleport should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointTeleport, m_vSaveAngles) == 0x4B4, "m_vSaveAngles in CPointTeleport should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CPointTeleport, m_bTeleportParentedEntities) == 0x4C0, "m_bTeleportParentedEntities in CPointTeleport should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPointTeleport, m_bTeleportUseCurrentAngle) == 0x4C1, "m_bTeleportUseCurrentAngle in CPointTeleport should be at offset 0x4C1");
+		static_assert(sizeof(CS2::server::CPointTeleport) == 0x4C8, "CPointTeleport size should be 0x4C8");
 	}
 }

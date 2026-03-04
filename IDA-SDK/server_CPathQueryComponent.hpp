@@ -4,6 +4,6 @@
 
 
 class server_CPathQueryComponent {
-    char pad_770[0x8];
-    char pad_3827[0xa0];
+    char pad_1557[0x8];
+    char pad_3960[0xa0];
 };

@@ -30,27 +30,27 @@ namespace CS2 {
 		class C_Chicken : public CS2::client::C_DynamicProp {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CHandle<client::CBaseAnimGraph> m_hHolidayHatAddon; // 0x1428 | Schema_Atomic | Size: 0x4
-			// char  m_hHolidayHatAddon[0x4]; // 0x1428 | Schema_Atomic | Size: 0x4
-			bool m_jumpedThisFrame; // 0x142c | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<client::CBaseAnimGraph> m_hHolidayHatAddon; // 0x13a8 | Schema_Atomic | Size: 0x4
+			// char m_hHolidayHatAddon[0x4]; // 0x13a8 | Schema_Atomic | Size: 0x4
+			bool m_jumpedThisFrame; // 0x13ac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_leader; // 0x1430 | Schema_Atomic | Size: 0x4
-			// char  m_leader[0x4]; // 0x1430 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_leader; // 0x13b0 | Schema_Atomic | Size: 0x4
+			// char m_leader[0x4]; // 0x13b0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			client::C_AttributeContainer m_AttributeManager; // 0x1438 | Schema_DeclaredClass | Size: 0x4d8
-			bool m_bAttributesInitialized; // 0x1910 | Schema_Builtin | Size: 0x1
+			client::C_AttributeContainer m_AttributeManager; // 0x13b8 | Schema_DeclaredClass | Size: 0x4d0
+			bool m_bAttributesInitialized; // 0x1888 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::ParticleIndex_t m_hWaterWakeParticles; // 0x1914 | Schema_DeclaredClass | Size: 0x4
-			bool m_bIsPreviewModel; // 0x1918 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x17); // End padding
+			client::ParticleIndex_t m_hWaterWakeParticles; // 0x188c | Schema_DeclaredClass | Size: 0x4
+			bool m_bIsPreviewModel; // 0x1890 | Schema_Builtin | Size: 0x1
+			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_Chicken, m_hHolidayHatAddon) == 0x1428, "m_hHolidayHatAddon in C_Chicken should be at offset 0x1428");
-		static_assert(offsetof(CS2::client::C_Chicken, m_jumpedThisFrame) == 0x142C, "m_jumpedThisFrame in C_Chicken should be at offset 0x142C");
-		static_assert(offsetof(CS2::client::C_Chicken, m_leader) == 0x1430, "m_leader in C_Chicken should be at offset 0x1430");
-		static_assert(offsetof(CS2::client::C_Chicken, m_AttributeManager) == 0x1438, "m_AttributeManager in C_Chicken should be at offset 0x1438");
-		static_assert(offsetof(CS2::client::C_Chicken, m_bAttributesInitialized) == 0x1910, "m_bAttributesInitialized in C_Chicken should be at offset 0x1910");
-		static_assert(offsetof(CS2::client::C_Chicken, m_hWaterWakeParticles) == 0x1914, "m_hWaterWakeParticles in C_Chicken should be at offset 0x1914");
-		static_assert(offsetof(CS2::client::C_Chicken, m_bIsPreviewModel) == 0x1918, "m_bIsPreviewModel in C_Chicken should be at offset 0x1918");
-		static_assert(sizeof(CS2::client::C_Chicken) == 0x1930, "C_Chicken size should be 0x1930");
+		static_assert(offsetof(CS2::client::C_Chicken, m_hHolidayHatAddon) == 0x13A8, "m_hHolidayHatAddon in C_Chicken should be at offset 0x13A8");
+		static_assert(offsetof(CS2::client::C_Chicken, m_jumpedThisFrame) == 0x13AC, "m_jumpedThisFrame in C_Chicken should be at offset 0x13AC");
+		static_assert(offsetof(CS2::client::C_Chicken, m_leader) == 0x13B0, "m_leader in C_Chicken should be at offset 0x13B0");
+		static_assert(offsetof(CS2::client::C_Chicken, m_AttributeManager) == 0x13B8, "m_AttributeManager in C_Chicken should be at offset 0x13B8");
+		static_assert(offsetof(CS2::client::C_Chicken, m_bAttributesInitialized) == 0x1888, "m_bAttributesInitialized in C_Chicken should be at offset 0x1888");
+		static_assert(offsetof(CS2::client::C_Chicken, m_hWaterWakeParticles) == 0x188C, "m_hWaterWakeParticles in C_Chicken should be at offset 0x188C");
+		static_assert(offsetof(CS2::client::C_Chicken, m_bIsPreviewModel) == 0x1890, "m_bIsPreviewModel in C_Chicken should be at offset 0x1890");
+		static_assert(sizeof(CS2::client::C_Chicken) == 0x18A0, "C_Chicken size should be 0x18A0");
 	}
 }

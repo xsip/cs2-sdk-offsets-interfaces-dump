@@ -8,8 +8,8 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace matchmaking {
-			constexpr std::ptrdiff_t GameTypes001 = 0x1b5ee0; 
-			constexpr std::ptrdiff_t MATCHFRAMEWORK_001 = 0x1be190; 
+			constexpr std::ptrdiff_t GameTypes001 = 0x1b8000; 
+			constexpr std::ptrdiff_t MATCHFRAMEWORK_001 = 0x1c02b0; 
 		}
 	}
 }

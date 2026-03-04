@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x508
+			// Class size: 0x4C0
 			namespace CInfoVisibilityBox /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_nMode = 0x4f4; // int32_t m_nMode; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vBoxSize = 0x4f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bEnabled = 0x504; // bool m_bEnabled; |  0x504 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nMode = 0x4ac; // int32_t m_nMode; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vBoxSize = 0x4b0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bEnabled = 0x4bc; // bool m_bEnabled; |  0x4bc | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

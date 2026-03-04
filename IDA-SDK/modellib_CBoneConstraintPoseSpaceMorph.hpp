@@ -4,11 +4,11 @@
 
 
 class modellib_CBoneConstraintPoseSpaceMorph {
-    char pad_308[0x20];
+    char pad_310[0x20];
     CUtlString m_sBoneName;
     CUtlString m_sAttachmentName;
     char m_outputMorph[0x18];
     char m_inputList[0x18];
     bool m_bClamp;
-    char end_pad_315[0x3f];
+    char end_pad_317[0x3f];
 };

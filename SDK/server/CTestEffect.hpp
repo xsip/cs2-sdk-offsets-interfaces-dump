@@ -11,7 +11,6 @@
 
 
 #include <SDK/server/CBaseEntity.hpp>
-#include <SDK/server/CBeam.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
 
 
@@ -23,18 +22,19 @@ namespace CS2 {
 	namespace server {
 		class CTestEffect : public CS2::server::CBaseEntity {
 		public:
-			int32_t m_iLoop; // 0x4f0 | Schema_Builtin | Size: 0x4
-			int32_t m_iBeam; // 0x4f4 | Schema_Builtin | Size: 0x4
-			server::CBeam m_pBeam[24]; // 0x4f8 | Schema_FixedArray | Size: 0x1200
-			entity2::GameTime_t m_flBeamTime[24]; // 0x5b8 | Schema_FixedArray | Size: 0x900
-			entity2::GameTime_t m_flStartTime; // 0x618 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_iLoop; // 0x4a8 | Schema_Builtin | Size: 0x4
+			int32_t m_iBeam; // 0x4ac | Schema_Builtin | Size: 0x4
+			// server::CHandle< CBeam > m_pBeam[24]; // 0x4b0 | Schema_FixedArray | Size: 0x60
+			char m_pBeam[0x4]; // 0x4b0 | Schema_FixedArray | Size: 0x4
+			entity2::GameTime_t m_flBeamTime[24]; // 0x510 | Schema_FixedArray | Size: 0x900
+			entity2::GameTime_t m_flStartTime; // 0x570 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTestEffect, m_iLoop) == 0x4F0, "m_iLoop in CTestEffect should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CTestEffect, m_iBeam) == 0x4F4, "m_iBeam in CTestEffect should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CTestEffect, m_pBeam) == 0x4F8, "m_pBeam in CTestEffect should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CTestEffect, m_flBeamTime) == 0x5B8, "m_flBeamTime in CTestEffect should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CTestEffect, m_flStartTime) == 0x618, "m_flStartTime in CTestEffect should be at offset 0x618");
-		static_assert(sizeof(CS2::server::CTestEffect) == 0x620, "CTestEffect size should be 0x620");
+		static_assert(offsetof(CS2::server::CTestEffect, m_iLoop) == 0x4A8, "m_iLoop in CTestEffect should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CTestEffect, m_iBeam) == 0x4AC, "m_iBeam in CTestEffect should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CTestEffect, m_pBeam) == 0x4B0, "m_pBeam in CTestEffect should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CTestEffect, m_flBeamTime) == 0x510, "m_flBeamTime in CTestEffect should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CTestEffect, m_flStartTime) == 0x570, "m_flStartTime in CTestEffect should be at offset 0x570");
+		static_assert(sizeof(CS2::server::CTestEffect) == 0x578, "CTestEffect size should be 0x578");
 	}
 }

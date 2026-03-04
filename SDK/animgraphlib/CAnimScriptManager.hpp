@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/animgraphlib/ScriptInfo_t.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class ScriptInfo_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,7 +23,7 @@ namespace CS2 {
 		public:
 			S2_PAD(0x10);
 			GlobalTypes::CUtlVector<animgraphlib::ScriptInfo_t> m_scriptInfo; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_scriptInfo[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_scriptInfo[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x178); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CAnimScriptManager, m_scriptInfo) == 0x10, "m_scriptInfo in CAnimScriptManager should be at offset 0x10");

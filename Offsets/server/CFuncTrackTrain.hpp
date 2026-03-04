@@ -8,45 +8,45 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x930
+			// Class size: 0x858
 			namespace CFuncTrackTrain /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_ppath = 0x7d8; // GlobalTypes::CHandle<server::CPathTrack>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_length = 0x7dc; // float32 m_length; |  0x7dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vPosPrev = 0x7e0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angPrev = 0x7ec; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_controlMins = 0x7f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_controlMaxs = 0x804; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_lastBlockPos = 0x810; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_lastBlockTick = 0x81c; // int32_t m_lastBlockTick; |  0x81c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flVolume = 0x820; // float32 m_flVolume; |  0x820 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBank = 0x824; // float32 m_flBank; |  0x824 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_oldSpeed = 0x828; // float32 m_oldSpeed; |  0x828 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBlockDamage = 0x82c; // float32 m_flBlockDamage; |  0x82c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_height = 0x830; // float32 m_height; |  0x830 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_maxSpeed = 0x834; // float32 m_maxSpeed; |  0x834 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_dir = 0x838; // float32 m_dir; |  0x838 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSoundMove = 0x840; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSoundMovePing = 0x848; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSoundStart = 0x850; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSoundStop = 0x858; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strPathTarget = 0x860; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flMoveSoundMinDuration = 0x868; // float32 m_flMoveSoundMinDuration; |  0x868 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMoveSoundMaxDuration = 0x86c; // float32 m_flMoveSoundMaxDuration; |  0x86c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNextMoveSoundTime = 0x870; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flMoveSoundMinPitch = 0x874; // float32 m_flMoveSoundMinPitch; |  0x874 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMoveSoundMaxPitch = 0x878; // float32 m_flMoveSoundMaxPitch; |  0x878 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_eOrientationType = 0x87c; // server::TrainOrientationType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_eVelocityType = 0x880; // server::TrainVelocityType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_OnStart = 0x898; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnNext = 0x8c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnArrivedAtDestinationNode = 0x8e8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bManualSpeedChanges = 0x910; // bool m_bManualSpeedChanges; |  0x910 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDesiredSpeed = 0x914; // float32 m_flDesiredSpeed; |  0x914 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSpeedChangeTime = 0x918; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flAccelSpeed = 0x91c; // float32 m_flAccelSpeed; |  0x91c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDecelSpeed = 0x920; // float32 m_flDecelSpeed; |  0x920 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bAccelToSpeed = 0x924; // bool m_bAccelToSpeed; |  0x924 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flNextMPSoundTime = 0x928; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_ppath = 0x730; // GlobalTypes::CHandle<server::CPathTrack>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_length = 0x734; // float32 m_length; |  0x734 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vPosPrev = 0x738; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angPrev = 0x744; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_controlMins = 0x750; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_controlMaxs = 0x75c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_lastBlockPos = 0x768; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_lastBlockTick = 0x774; // int32_t m_lastBlockTick; |  0x774 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flVolume = 0x778; // float32 m_flVolume; |  0x778 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBank = 0x77c; // float32 m_flBank; |  0x77c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_oldSpeed = 0x780; // float32 m_oldSpeed; |  0x780 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBlockDamage = 0x784; // float32 m_flBlockDamage; |  0x784 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_height = 0x788; // float32 m_height; |  0x788 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_maxSpeed = 0x78c; // float32 m_maxSpeed; |  0x78c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_dir = 0x790; // float32 m_dir; |  0x790 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSoundMove = 0x798; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSoundMovePing = 0x7a0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSoundStart = 0x7a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSoundStop = 0x7b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strPathTarget = 0x7b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flMoveSoundMinDuration = 0x7c0; // float32 m_flMoveSoundMinDuration; |  0x7c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMoveSoundMaxDuration = 0x7c4; // float32 m_flMoveSoundMaxDuration; |  0x7c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNextMoveSoundTime = 0x7c8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flMoveSoundMinPitch = 0x7cc; // float32 m_flMoveSoundMinPitch; |  0x7cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMoveSoundMaxPitch = 0x7d0; // float32 m_flMoveSoundMaxPitch; |  0x7d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_eOrientationType = 0x7d4; // server::TrainOrientationType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_eVelocityType = 0x7d8; // server::TrainVelocityType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OnStart = 0x7f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnNext = 0x808; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnArrivedAtDestinationNode = 0x820; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bManualSpeedChanges = 0x838; // bool m_bManualSpeedChanges; |  0x838 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDesiredSpeed = 0x83c; // float32 m_flDesiredSpeed; |  0x83c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSpeedChangeTime = 0x840; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flAccelSpeed = 0x844; // float32 m_flAccelSpeed; |  0x844 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDecelSpeed = 0x848; // float32 m_flDecelSpeed; |  0x848 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAccelToSpeed = 0x84c; // bool m_bAccelToSpeed; |  0x84c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flNextMPSoundTime = 0x850; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

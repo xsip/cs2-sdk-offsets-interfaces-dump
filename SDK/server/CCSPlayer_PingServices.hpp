@@ -27,12 +27,12 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_PingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			entity2::GameTime_t m_flPlayerPingTokens[5]; // 0x40 | Schema_FixedArray | Size: 0x64
-			GlobalTypes::CHandle<server::CPlayerPing> m_hPlayerPing; // 0x54 | Schema_Atomic | Size: 0x4
-			// char  m_hPlayerPing[0x4]; // 0x54 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_flPlayerPingTokens[5]; // 0x48 | Schema_FixedArray | Size: 0x64
+			GlobalTypes::CHandle<server::CPlayerPing> m_hPlayerPing; // 0x5c | Schema_Atomic | Size: 0x4
+			// char m_hPlayerPing[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CCSPlayer_PingServices, m_flPlayerPingTokens) == 0x40, "m_flPlayerPingTokens in CCSPlayer_PingServices should be at offset 0x40");
-		static_assert(offsetof(CS2::server::CCSPlayer_PingServices, m_hPlayerPing) == 0x54, "m_hPlayerPing in CCSPlayer_PingServices should be at offset 0x54");
-		static_assert(sizeof(CS2::server::CCSPlayer_PingServices) == 0x58, "CCSPlayer_PingServices size should be 0x58");
+		static_assert(offsetof(CS2::server::CCSPlayer_PingServices, m_flPlayerPingTokens) == 0x48, "m_flPlayerPingTokens in CCSPlayer_PingServices should be at offset 0x48");
+		static_assert(offsetof(CS2::server::CCSPlayer_PingServices, m_hPlayerPing) == 0x5C, "m_hPlayerPing in CCSPlayer_PingServices should be at offset 0x5C");
+		static_assert(sizeof(CS2::server::CCSPlayer_PingServices) == 0x60, "CCSPlayer_PingServices size should be 0x60");
 	}
 }

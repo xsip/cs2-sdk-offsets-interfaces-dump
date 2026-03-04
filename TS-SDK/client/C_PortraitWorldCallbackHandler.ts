@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_C_BaseEntity} from './C_BaseEntity';
-// Class size: 0x600
+// Class size: 0x610
 // BaseClass: : public CS2::client::C_BaseEntity
 export const client_C_PortraitWorldCallbackHandler  = {
 	...client_C_BaseEntity,

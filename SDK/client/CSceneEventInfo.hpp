@@ -32,33 +32,40 @@ namespace CS2 {
 			int32_t m_iPriority; // 0x4 | Schema_Builtin | Size: 0x4
 			animationsystem::HSequence m_hSequence; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flWeight; // 0xc | Schema_Builtin | Size: 0x4
-			bool m_bHasArrived; // 0x10 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmClip> m_hAnimClip; // 0x10 | Schema_Atomic | Size: 0x8
+			char m_hAnimClip[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CGlobalSymbol m_sAnimClipSlot; // 0x18 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CGlobalSymbol m_sAnimClipSlotWeight; // 0x20 | Schema_Atomic | Size: 0x8
+			bool m_bHasArrived; // 0x28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nType; // 0x14 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flNext; // 0x18 | Schema_DeclaredClass | Size: 0x4
-			bool m_bIsGesture; // 0x1c | Schema_Builtin | Size: 0x1
-			bool m_bShouldRemove; // 0x1d | Schema_Builtin | Size: 0x1
+			int32_t m_nType; // 0x2c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flNext; // 0x30 | Schema_DeclaredClass | Size: 0x4
+			bool m_bIsGesture; // 0x34 | Schema_Builtin | Size: 0x1
+			bool m_bShouldRemove; // 0x35 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x26);
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hTarget; // 0x44 | Schema_Atomic | Size: 0x4
-			// char  m_hTarget[0x4]; // 0x44 | Schema_Atomic | Size: 0x4
-			client::SceneEventId_t m_nSceneEventId; // 0x48 | Schema_DeclaredClass | Size: 0x4
-			bool m_bClientSide; // 0x4c | Schema_Builtin | Size: 0x1
-			bool m_bStarted; // 0x4d | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hTarget; // 0x5c | Schema_Atomic | Size: 0x4
+			// char m_hTarget[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
+			client::SceneEventId_t m_nSceneEventId; // 0x60 | Schema_DeclaredClass | Size: 0x4
+			bool m_bClientSide; // 0x64 | Schema_Builtin | Size: 0x1
+			bool m_bStarted; // 0x65 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_iLayer) == 0x0, "m_iLayer in CSceneEventInfo should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_iPriority) == 0x4, "m_iPriority in CSceneEventInfo should be at offset 0x4");
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_hSequence) == 0x8, "m_hSequence in CSceneEventInfo should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_flWeight) == 0xC, "m_flWeight in CSceneEventInfo should be at offset 0xC");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bHasArrived) == 0x10, "m_bHasArrived in CSceneEventInfo should be at offset 0x10");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_nType) == 0x14, "m_nType in CSceneEventInfo should be at offset 0x14");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_flNext) == 0x18, "m_flNext in CSceneEventInfo should be at offset 0x18");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bIsGesture) == 0x1C, "m_bIsGesture in CSceneEventInfo should be at offset 0x1C");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bShouldRemove) == 0x1D, "m_bShouldRemove in CSceneEventInfo should be at offset 0x1D");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_hTarget) == 0x44, "m_hTarget in CSceneEventInfo should be at offset 0x44");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_nSceneEventId) == 0x48, "m_nSceneEventId in CSceneEventInfo should be at offset 0x48");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bClientSide) == 0x4C, "m_bClientSide in CSceneEventInfo should be at offset 0x4C");
-		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bStarted) == 0x4D, "m_bStarted in CSceneEventInfo should be at offset 0x4D");
-		static_assert(sizeof(CS2::client::CSceneEventInfo) == 0x50, "CSceneEventInfo size should be 0x50");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_hAnimClip) == 0x10, "m_hAnimClip in CSceneEventInfo should be at offset 0x10");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_sAnimClipSlot) == 0x18, "m_sAnimClipSlot in CSceneEventInfo should be at offset 0x18");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_sAnimClipSlotWeight) == 0x20, "m_sAnimClipSlotWeight in CSceneEventInfo should be at offset 0x20");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bHasArrived) == 0x28, "m_bHasArrived in CSceneEventInfo should be at offset 0x28");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_nType) == 0x2C, "m_nType in CSceneEventInfo should be at offset 0x2C");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_flNext) == 0x30, "m_flNext in CSceneEventInfo should be at offset 0x30");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bIsGesture) == 0x34, "m_bIsGesture in CSceneEventInfo should be at offset 0x34");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bShouldRemove) == 0x35, "m_bShouldRemove in CSceneEventInfo should be at offset 0x35");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_hTarget) == 0x5C, "m_hTarget in CSceneEventInfo should be at offset 0x5C");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_nSceneEventId) == 0x60, "m_nSceneEventId in CSceneEventInfo should be at offset 0x60");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bClientSide) == 0x64, "m_bClientSide in CSceneEventInfo should be at offset 0x64");
+		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bStarted) == 0x65, "m_bStarted in CSceneEventInfo should be at offset 0x65");
+		static_assert(sizeof(CS2::client::CSceneEventInfo) == 0x68, "CSceneEventInfo size should be 0x68");
 	}
 }

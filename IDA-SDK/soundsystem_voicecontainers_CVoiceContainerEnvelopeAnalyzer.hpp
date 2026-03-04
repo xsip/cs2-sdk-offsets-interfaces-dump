@@ -4,12 +4,12 @@
 
 
 class soundsystem_voicecontainers_CVoiceContainerEnvelopeAnalyzer {
-    char vTable475[0x8];
+    void **__vftable_0;
     bool m_bRegenerateCurveOnCompile;
-    char pad_476[0x7];
+    char pad_482[0x7];
     CPiecewiseCurve m_curve;
     soundsystem_voicecontainers_EMode_t m_mode;
     float32 m_fAnalysisWindowMs;
     float32 m_flThreshold;
-    char end_pad_479[0x4];
+    char end_pad_487[0x4];
 };

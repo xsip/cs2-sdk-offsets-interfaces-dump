@@ -8,19 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x610
-			namespace CMoverPathNode /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_vInTangentLocal = 0x4f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOutTangentLocal = 0x4fc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_szParentPathUniqueID = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_szPathNodeParameter = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OnStartFromOrInSegment = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnStoppedAtOrInSegment = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPassThrough = 0x568; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPassThroughForward = 0x590; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPassThroughReverse = 0x5b8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_hMover = 0x5e0; // GlobalTypes::CHandle<server::CPathMover>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_xWSPrevParent = 0x5f0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+			// Class size: 0x5A0
+			namespace CMoverPathNode /*: public CS2::server::CPathNode*/ {
+				constexpr std::ptrdiff_t m_OnStartFromOrInSegment = 0x500; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnStoppedAtOrInSegment = 0x520; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnPassThrough = 0x540; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnPassThroughForward = 0x560; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnPassThroughReverse = 0x580; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

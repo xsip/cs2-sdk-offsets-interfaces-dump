@@ -4,5 +4,5 @@
 
 
 class pulse_runtime_lib_CPulseCursorFuncs {
-    char pad_518[0x1];
+    char pad_529[0x1];
 };

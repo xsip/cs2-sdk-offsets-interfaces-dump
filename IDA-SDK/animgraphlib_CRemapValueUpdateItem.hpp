@@ -3,6 +3,7 @@
 #include "typedefs.hpp"
 
 #include "animgraphlib_CAnimParamHandle.hpp"
+#include "animgraphlib_CAnimParamHandle.hpp"
 
 class animgraphlib_CRemapValueUpdateItem {
     animgraphlib_CAnimParamHandle m_hParamIn;

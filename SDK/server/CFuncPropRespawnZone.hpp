@@ -22,6 +22,6 @@ namespace CS2 {
 		class CFuncPropRespawnZone : public CS2::server::CBaseEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFuncPropRespawnZone) == 0x4F0, "CFuncPropRespawnZone size should be 0x4F0");
+		static_assert(sizeof(CS2::server::CFuncPropRespawnZone) == 0x4A8, "CFuncPropRespawnZone size should be 0x4A8");
 	}
 }

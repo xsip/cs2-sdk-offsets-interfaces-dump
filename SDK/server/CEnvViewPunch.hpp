@@ -21,11 +21,11 @@ namespace CS2 {
 	namespace server {
 		class CEnvViewPunch : public CS2::server::CPointEntity {
 		public:
-			float32 m_flRadius; // 0x4f0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::QAngle m_angViewPunch; // 0x4f4 | Schema_Atomic | Size: 0xc
+			float32 m_flRadius; // 0x4a8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_angViewPunch; // 0x4ac | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::server::CEnvViewPunch, m_flRadius) == 0x4F0, "m_flRadius in CEnvViewPunch should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvViewPunch, m_angViewPunch) == 0x4F4, "m_angViewPunch in CEnvViewPunch should be at offset 0x4F4");
-		static_assert(sizeof(CS2::server::CEnvViewPunch) == 0x500, "CEnvViewPunch size should be 0x500");
+		static_assert(offsetof(CS2::server::CEnvViewPunch, m_flRadius) == 0x4A8, "m_flRadius in CEnvViewPunch should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvViewPunch, m_angViewPunch) == 0x4AC, "m_angViewPunch in CEnvViewPunch should be at offset 0x4AC");
+		static_assert(sizeof(CS2::server::CEnvViewPunch) == 0x4B8, "CEnvViewPunch size should be 0x4B8");
 	}
 }

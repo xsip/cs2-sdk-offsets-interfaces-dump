@@ -8,25 +8,25 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x728
+			// Class size: 0x6E0
 			namespace CColorCorrection /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_flFadeInDuration = 0x4f0; // float32 m_flFadeInDuration; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeOutDuration = 0x4f4; // float32 m_flFadeOutDuration; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartFadeInWeight = 0x4f8; // float32 m_flStartFadeInWeight; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartFadeOutWeight = 0x4fc; // float32 m_flStartFadeOutWeight; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeStartFadeIn = 0x500; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeStartFadeOut = 0x504; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxWeight = 0x508; // float32 m_flMaxWeight; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bStartDisabled = 0x50c; // bool m_bStartDisabled; |  0x50c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEnabled = 0x50d; // bool m_bEnabled; |  0x50d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bMaster = 0x50e; // bool m_bMaster; |  0x50e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bClientSide = 0x50f; // bool m_bClientSide; |  0x50f | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bExclusive = 0x510; // bool m_bExclusive; |  0x510 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_MinFalloff = 0x514; // float32 m_MinFalloff; |  0x514 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_MaxFalloff = 0x518; // float32 m_MaxFalloff; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCurWeight = 0x51c; // float32 m_flCurWeight; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_netlookupFilename = 0x520; // char m_netlookupFilename[512]; |  0x520 | Schema_FixedArray | Size: 0x200
-				constexpr std::ptrdiff_t m_lookupFilename = 0x720; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flFadeInDuration = 0x4a8; // float32 m_flFadeInDuration; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeOutDuration = 0x4ac; // float32 m_flFadeOutDuration; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartFadeInWeight = 0x4b0; // float32 m_flStartFadeInWeight; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartFadeOutWeight = 0x4b4; // float32 m_flStartFadeOutWeight; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeStartFadeIn = 0x4b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeStartFadeOut = 0x4bc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxWeight = 0x4c0; // float32 m_flMaxWeight; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bStartDisabled = 0x4c4; // bool m_bStartDisabled; |  0x4c4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnabled = 0x4c5; // bool m_bEnabled; |  0x4c5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bMaster = 0x4c6; // bool m_bMaster; |  0x4c6 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bClientSide = 0x4c7; // bool m_bClientSide; |  0x4c7 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bExclusive = 0x4c8; // bool m_bExclusive; |  0x4c8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_MinFalloff = 0x4cc; // float32 m_MinFalloff; |  0x4cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_MaxFalloff = 0x4d0; // float32 m_MaxFalloff; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCurWeight = 0x4d4; // float32 m_flCurWeight; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_netlookupFilename = 0x4d8; // char m_netlookupFilename[512]; |  0x4d8 | Schema_FixedArray | Size: 0x200
+				constexpr std::ptrdiff_t m_lookupFilename = 0x6d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

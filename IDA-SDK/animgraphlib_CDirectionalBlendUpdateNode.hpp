@@ -8,12 +8,14 @@
 #include "animgraphlib_CAnimParamHandle.hpp"
 
 class animgraphlib_CDirectionalBlendUpdateNode {
-    char vTable16[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     animgraphlib_CAnimNodePath m_nodePath;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
     char pad_17[0x4];
     CUtlString m_name;
-    char vTable109[0x4];
+    char __vftable_pad[4];
     animationsystem_HSequence m_hSequences[8];
     animgraphlib_CAnimInputDamping m_damping;
     animgraphlib_AnimValueSource m_blendValueSource;

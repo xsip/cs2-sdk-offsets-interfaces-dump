@@ -22,12 +22,12 @@ namespace CS2 {
 	namespace server {
 		class CWeaponTaser : public CS2::server::CCSWeaponBaseGun {
 		public:
-			entity2::GameTime_t m_fFireTime; // 0x11f0 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nLastAttackTick; // 0x11f4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_fFireTime; // 0x1150 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nLastAttackTick; // 0x1154 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CWeaponTaser, m_fFireTime) == 0x11F0, "m_fFireTime in CWeaponTaser should be at offset 0x11F0");
-		static_assert(offsetof(CS2::server::CWeaponTaser, m_nLastAttackTick) == 0x11F4, "m_nLastAttackTick in CWeaponTaser should be at offset 0x11F4");
-		static_assert(sizeof(CS2::server::CWeaponTaser) == 0x1200, "CWeaponTaser size should be 0x1200");
+		static_assert(offsetof(CS2::server::CWeaponTaser, m_fFireTime) == 0x1150, "m_fFireTime in CWeaponTaser should be at offset 0x1150");
+		static_assert(offsetof(CS2::server::CWeaponTaser, m_nLastAttackTick) == 0x1154, "m_nLastAttackTick in CWeaponTaser should be at offset 0x1154");
+		static_assert(sizeof(CS2::server::CWeaponTaser) == 0x1160, "CWeaponTaser size should be 0x1160");
 	}
 }

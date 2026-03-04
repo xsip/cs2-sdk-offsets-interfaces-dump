@@ -12,5 +12,5 @@ class modellib_CMeshletDescriptor {
     uint32_t m_nTriangleOffset;
     uint8_t m_nVertexCount;
     uint8_t m_nTriangleCount;
-    char end_pad_339[0x2];
+    char end_pad_341[0x2];
 };

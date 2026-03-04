@@ -28,43 +28,43 @@ namespace CS2 {
 	namespace server {
 		class CEnvExplosion : public CS2::server::CModelPointEntity {
 		public:
-			int32_t m_iMagnitude; // 0x7d8 | Schema_Builtin | Size: 0x4
-			float32 m_flPlayerDamage; // 0x7dc | Schema_Builtin | Size: 0x4
-			int32_t m_iRadiusOverride; // 0x7e0 | Schema_Builtin | Size: 0x4
-			float32 m_flInnerRadius; // 0x7e4 | Schema_Builtin | Size: 0x4
-			float32 m_flDamageForce; // 0x7e8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hInflictor; // 0x7ec | Schema_Atomic | Size: 0x4
-			// char  m_hInflictor[0x4]; // 0x7ec | Schema_Atomic | Size: 0x4
-			client::DamageTypes_t m_iCustomDamageType; // 0x7f0 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bCreateDebris; // 0x7f4 | Schema_Builtin | Size: 0x1
+			int32_t m_iMagnitude; // 0x730 | Schema_Builtin | Size: 0x4
+			float32 m_flPlayerDamage; // 0x734 | Schema_Builtin | Size: 0x4
+			int32_t m_iRadiusOverride; // 0x738 | Schema_Builtin | Size: 0x4
+			float32 m_flInnerRadius; // 0x73c | Schema_Builtin | Size: 0x4
+			float32 m_flDamageForce; // 0x740 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hInflictor; // 0x744 | Schema_Atomic | Size: 0x4
+			// char m_hInflictor[0x4]; // 0x744 | Schema_Atomic | Size: 0x4
+			client::DamageTypes_t m_iCustomDamageType; // 0x748 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bCreateDebris; // 0x74c | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb);
-			GlobalTypes::CUtlSymbolLarge m_iszCustomEffectName; // 0x800 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszCustomSoundName; // 0x808 | Schema_Atomic | Size: 0x8
-			bool m_bSuppressParticleImpulse; // 0x810 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszCustomEffectName; // 0x758 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszCustomSoundName; // 0x760 | Schema_Atomic | Size: 0x8
+			bool m_bSuppressParticleImpulse; // 0x768 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::Class_T m_iClassIgnore; // 0x814 | Schema_DeclaredEnum | Size: 0x4
-			client::Class_T m_iClassIgnore2; // 0x818 | Schema_DeclaredEnum | Size: 0x4
+			client::Class_T m_iClassIgnore; // 0x76c | Schema_DeclaredEnum | Size: 0x4
+			client::Class_T m_iClassIgnore2; // 0x770 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszEntityIgnoreName; // 0x820 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hEntityIgnore; // 0x828 | Schema_Atomic | Size: 0x4
-			// char  m_hEntityIgnore[0x4]; // 0x828 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszEntityIgnoreName; // 0x778 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntityIgnore; // 0x780 | Schema_Atomic | Size: 0x4
+			// char m_hEntityIgnore[0x4]; // 0x780 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iMagnitude) == 0x7D8, "m_iMagnitude in CEnvExplosion should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_flPlayerDamage) == 0x7DC, "m_flPlayerDamage in CEnvExplosion should be at offset 0x7DC");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iRadiusOverride) == 0x7E0, "m_iRadiusOverride in CEnvExplosion should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_flInnerRadius) == 0x7E4, "m_flInnerRadius in CEnvExplosion should be at offset 0x7E4");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_flDamageForce) == 0x7E8, "m_flDamageForce in CEnvExplosion should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_hInflictor) == 0x7EC, "m_hInflictor in CEnvExplosion should be at offset 0x7EC");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iCustomDamageType) == 0x7F0, "m_iCustomDamageType in CEnvExplosion should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_bCreateDebris) == 0x7F4, "m_bCreateDebris in CEnvExplosion should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iszCustomEffectName) == 0x800, "m_iszCustomEffectName in CEnvExplosion should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iszCustomSoundName) == 0x808, "m_iszCustomSoundName in CEnvExplosion should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_bSuppressParticleImpulse) == 0x810, "m_bSuppressParticleImpulse in CEnvExplosion should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iClassIgnore) == 0x814, "m_iClassIgnore in CEnvExplosion should be at offset 0x814");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iClassIgnore2) == 0x818, "m_iClassIgnore2 in CEnvExplosion should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_iszEntityIgnoreName) == 0x820, "m_iszEntityIgnoreName in CEnvExplosion should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CEnvExplosion, m_hEntityIgnore) == 0x828, "m_hEntityIgnore in CEnvExplosion should be at offset 0x828");
-		static_assert(sizeof(CS2::server::CEnvExplosion) == 0x830, "CEnvExplosion size should be 0x830");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iMagnitude) == 0x730, "m_iMagnitude in CEnvExplosion should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_flPlayerDamage) == 0x734, "m_flPlayerDamage in CEnvExplosion should be at offset 0x734");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iRadiusOverride) == 0x738, "m_iRadiusOverride in CEnvExplosion should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_flInnerRadius) == 0x73C, "m_flInnerRadius in CEnvExplosion should be at offset 0x73C");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_flDamageForce) == 0x740, "m_flDamageForce in CEnvExplosion should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_hInflictor) == 0x744, "m_hInflictor in CEnvExplosion should be at offset 0x744");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iCustomDamageType) == 0x748, "m_iCustomDamageType in CEnvExplosion should be at offset 0x748");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_bCreateDebris) == 0x74C, "m_bCreateDebris in CEnvExplosion should be at offset 0x74C");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iszCustomEffectName) == 0x758, "m_iszCustomEffectName in CEnvExplosion should be at offset 0x758");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iszCustomSoundName) == 0x760, "m_iszCustomSoundName in CEnvExplosion should be at offset 0x760");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_bSuppressParticleImpulse) == 0x768, "m_bSuppressParticleImpulse in CEnvExplosion should be at offset 0x768");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iClassIgnore) == 0x76C, "m_iClassIgnore in CEnvExplosion should be at offset 0x76C");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iClassIgnore2) == 0x770, "m_iClassIgnore2 in CEnvExplosion should be at offset 0x770");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_iszEntityIgnoreName) == 0x778, "m_iszEntityIgnoreName in CEnvExplosion should be at offset 0x778");
+		static_assert(offsetof(CS2::server::CEnvExplosion, m_hEntityIgnore) == 0x780, "m_hEntityIgnore in CEnvExplosion should be at offset 0x780");
+		static_assert(sizeof(CS2::server::CEnvExplosion) == 0x788, "CEnvExplosion size should be 0x788");
 	}
 }

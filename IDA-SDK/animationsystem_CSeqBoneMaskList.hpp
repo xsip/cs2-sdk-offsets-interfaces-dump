@@ -8,6 +8,6 @@ class animationsystem_CSeqBoneMaskList {
     char m_nLocalBoneArray[0x18];
     char m_flBoneWeightArray[0x18];
     float32 m_flDefaultMorphCtrlWeight;
-    char pad_435[0x4];
+    char pad_441[0x4];
     char m_morphCtrlWeightArray[0x18];
 };

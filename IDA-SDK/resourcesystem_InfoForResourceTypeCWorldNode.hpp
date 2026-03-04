@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCWorldNode {
-    char pad_2409[0x1];
+    char pad_1305[0x1];
 };

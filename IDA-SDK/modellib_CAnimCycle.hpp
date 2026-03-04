@@ -5,5 +5,5 @@
 
 class modellib_CAnimCycle {
     float32 m_flCycle;
-    char pad_323[0x4];
+    char pad_325[0x4];
 };

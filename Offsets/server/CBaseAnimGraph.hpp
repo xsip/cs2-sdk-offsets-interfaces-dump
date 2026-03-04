@@ -8,20 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA90
+			// Class size: 0xA20
 			namespace CBaseAnimGraph /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_bInitiallyPopulateInterpHistory = 0x858; // bool m_bInitiallyPopulateInterpHistory; |  0x858 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pChoreoServices = 0x860; // client::IChoreoServices**  | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_bAnimGraphUpdateEnabled = 0x868; // bool m_bAnimGraphUpdateEnabled; |  0x868 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMaxSlopeDistance = 0x86c; // float32 m_flMaxSlopeDistance; |  0x86c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLastSlopeCheckPos = 0x870; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bAnimationUpdateScheduled = 0x87c; // bool m_bAnimationUpdateScheduled; |  0x87c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecForce = 0x880; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nForceBone = 0x88c; // int32_t m_nForceBone; |  0x88c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_RagdollPose = 0x8a0; // server::PhysicsRagdollPose_t  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bRagdollEnabled = 0x8c8; // bool m_bRagdollEnabled; |  0x8c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRagdollClientSide = 0x8c9; // bool m_bRagdollClientSide; |  0x8c9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_xParentedRagdollRootInEntitySpace = 0x8d0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_graphControllerManager = 0x730; // client::CAnimGraphControllerManager  | Schema_DeclaredClass | Size: 0xb0
+				constexpr std::ptrdiff_t m_pMainGraphController = 0x7e0; // client::CAnimGraphControllerBase**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_bInitiallyPopulateInterpHistory = 0x7e8; // bool m_bInitiallyPopulateInterpHistory; |  0x7e8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_pChoreoServices = 0x7f0; // client::IChoreoServices**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_bAnimGraphUpdateEnabled = 0x7f8; // bool m_bAnimGraphUpdateEnabled; |  0x7f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMaxSlopeDistance = 0x7fc; // float32 m_flMaxSlopeDistance; |  0x7fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vLastSlopeCheckPos = 0x800; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nAnimGraphUpdateId = 0x80c; // uint32_t m_nAnimGraphUpdateId; |  0x80c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAnimationUpdateScheduled = 0x810; // bool m_bAnimationUpdateScheduled; |  0x810 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecForce = 0x814; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nForceBone = 0x820; // int32_t m_nForceBone; |  0x820 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_RagdollPose = 0x838; // server::PhysicsRagdollPose_t  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_bRagdollEnabled = 0x860; // bool m_bRagdollEnabled; |  0x860 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRagdollClientSide = 0x861; // bool m_bRagdollClientSide; |  0x861 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_xParentedRagdollRootInEntitySpace = 0x870; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

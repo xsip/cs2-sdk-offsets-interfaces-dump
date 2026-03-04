@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_CBaseTrigger} from './CBaseTrigger';
-// Class size: 0x9A8
+// Class size: 0x890
 // BaseClass: : public CS2::server::CBaseTrigger
 export const server_CPrecipitation  = {
 	...server_CBaseTrigger,

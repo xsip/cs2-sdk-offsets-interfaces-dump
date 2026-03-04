@@ -5,7 +5,7 @@
 class server_CAttributeManager;
 
 class server_CAttributeList {
-    char vTable2869[0x8];
+    void **__vftable_0;
     char m_Attributes[0x68];
     server_CAttributeManager* m_pManager;
 };

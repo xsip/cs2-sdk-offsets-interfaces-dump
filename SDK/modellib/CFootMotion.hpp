@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/CFootStride.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class CFootStride;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,7 +22,7 @@ namespace CS2 {
 		class CFootMotion  {
 		public:
 			GlobalTypes::CUtlVector<modellib::CFootStride> m_strides; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_strides[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_strides[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_name; // 0x18 | Schema_Atomic | Size: 0x8
 			bool m_bAdditive; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding

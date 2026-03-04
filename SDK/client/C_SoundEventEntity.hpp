@@ -22,41 +22,41 @@ namespace CS2 {
 	namespace client {
 		class C_SoundEventEntity : public CS2::client::C_BaseEntity {
 		public:
-			bool m_bStartOnSpawn; // 0x5f8 | Schema_Builtin | Size: 0x1
-			bool m_bToLocalPlayer; // 0x5f9 | Schema_Builtin | Size: 0x1
-			bool m_bStopOnNew; // 0x5fa | Schema_Builtin | Size: 0x1
-			bool m_bSaveRestore; // 0x5fb | Schema_Builtin | Size: 0x1
-			bool m_bSavedIsPlaying; // 0x5fc | Schema_Builtin | Size: 0x1
+			bool m_bStartOnSpawn; // 0x608 | Schema_Builtin | Size: 0x1
+			bool m_bToLocalPlayer; // 0x609 | Schema_Builtin | Size: 0x1
+			bool m_bStopOnNew; // 0x60a | Schema_Builtin | Size: 0x1
+			bool m_bSaveRestore; // 0x60b | Schema_Builtin | Size: 0x1
+			bool m_bSavedIsPlaying; // 0x60c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flSavedElapsedTime; // 0x600 | Schema_Builtin | Size: 0x4
+			float32 m_flSavedElapsedTime; // 0x610 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszSourceEntityName; // 0x608 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszAttachmentName; // 0x610 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CEntityOutputTemplate< uint64 > m_onGUIDChanged; // 0x618 | Schema_Atomic | Size: 0x28
-			char  m_onGUIDChanged[0x28]; // 0x618 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_onSoundFinished; // 0x640 | Schema_DeclaredClass | Size: 0x28
-			float32 m_flClientCullRadius; // 0x668 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszSourceEntityName; // 0x618 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszAttachmentName; // 0x620 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CEntityOutputTemplate< uint64, uint64 > m_onGUIDChanged; // 0x628 | Schema_Atomic | Size: 0x20
+			char m_onGUIDChanged[0x20]; // 0x628 | Schema_Atomic | Size: 0x20
+			entity2::CEntityIOOutput m_onSoundFinished; // 0x648 | Schema_DeclaredClass | Size: 0x18
+			float32 m_flClientCullRadius; // 0x660 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x2c);
-			GlobalTypes::CUtlSymbolLarge m_iszSoundName; // 0x698 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSoundName; // 0x690 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x14);
-			GlobalTypes::CEntityHandle m_hSource; // 0x6b4 | Schema_Atomic | Size: 0x4
-			int32_t m_nEntityIndexSelection; // 0x6b8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CEntityHandle m_hSource; // 0x6ac | Schema_Atomic | Size: 0x4
+			int32_t m_nEntityIndexSelection; // 0x6b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bStartOnSpawn) == 0x5F8, "m_bStartOnSpawn in C_SoundEventEntity should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bToLocalPlayer) == 0x5F9, "m_bToLocalPlayer in C_SoundEventEntity should be at offset 0x5F9");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bStopOnNew) == 0x5FA, "m_bStopOnNew in C_SoundEventEntity should be at offset 0x5FA");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bSaveRestore) == 0x5FB, "m_bSaveRestore in C_SoundEventEntity should be at offset 0x5FB");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bSavedIsPlaying) == 0x5FC, "m_bSavedIsPlaying in C_SoundEventEntity should be at offset 0x5FC");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_flSavedElapsedTime) == 0x600, "m_flSavedElapsedTime in C_SoundEventEntity should be at offset 0x600");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_iszSourceEntityName) == 0x608, "m_iszSourceEntityName in C_SoundEventEntity should be at offset 0x608");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_iszAttachmentName) == 0x610, "m_iszAttachmentName in C_SoundEventEntity should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_onGUIDChanged) == 0x618, "m_onGUIDChanged in C_SoundEventEntity should be at offset 0x618");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_onSoundFinished) == 0x640, "m_onSoundFinished in C_SoundEventEntity should be at offset 0x640");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_flClientCullRadius) == 0x668, "m_flClientCullRadius in C_SoundEventEntity should be at offset 0x668");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_iszSoundName) == 0x698, "m_iszSoundName in C_SoundEventEntity should be at offset 0x698");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_hSource) == 0x6B4, "m_hSource in C_SoundEventEntity should be at offset 0x6B4");
-		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_nEntityIndexSelection) == 0x6B8, "m_nEntityIndexSelection in C_SoundEventEntity should be at offset 0x6B8");
-		static_assert(sizeof(CS2::client::C_SoundEventEntity) == 0x6C0, "C_SoundEventEntity size should be 0x6C0");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bStartOnSpawn) == 0x608, "m_bStartOnSpawn in C_SoundEventEntity should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bToLocalPlayer) == 0x609, "m_bToLocalPlayer in C_SoundEventEntity should be at offset 0x609");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bStopOnNew) == 0x60A, "m_bStopOnNew in C_SoundEventEntity should be at offset 0x60A");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bSaveRestore) == 0x60B, "m_bSaveRestore in C_SoundEventEntity should be at offset 0x60B");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_bSavedIsPlaying) == 0x60C, "m_bSavedIsPlaying in C_SoundEventEntity should be at offset 0x60C");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_flSavedElapsedTime) == 0x610, "m_flSavedElapsedTime in C_SoundEventEntity should be at offset 0x610");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_iszSourceEntityName) == 0x618, "m_iszSourceEntityName in C_SoundEventEntity should be at offset 0x618");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_iszAttachmentName) == 0x620, "m_iszAttachmentName in C_SoundEventEntity should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_onGUIDChanged) == 0x628, "m_onGUIDChanged in C_SoundEventEntity should be at offset 0x628");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_onSoundFinished) == 0x648, "m_onSoundFinished in C_SoundEventEntity should be at offset 0x648");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_flClientCullRadius) == 0x660, "m_flClientCullRadius in C_SoundEventEntity should be at offset 0x660");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_iszSoundName) == 0x690, "m_iszSoundName in C_SoundEventEntity should be at offset 0x690");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_hSource) == 0x6AC, "m_hSource in C_SoundEventEntity should be at offset 0x6AC");
+		static_assert(offsetof(CS2::client::C_SoundEventEntity, m_nEntityIndexSelection) == 0x6B0, "m_nEntityIndexSelection in C_SoundEventEntity should be at offset 0x6B0");
+		static_assert(sizeof(CS2::client::C_SoundEventEntity) == 0x6B8, "C_SoundEventEntity size should be 0x6B8");
 	}
 }

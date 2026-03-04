@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x530
+			// Class size: 0x4E8
 			namespace CTankTrainAI /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_hTrain = 0x4f0; // GlobalTypes::CHandle<server::CFuncTrackTrain>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTargetEntity = 0x4f4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_soundPlaying = 0x4f8; // int32_t m_soundPlaying; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_startSoundName = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_engineSoundName = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_movementSoundName = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_targetEntityName = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTrain = 0x4a8; // GlobalTypes::CHandle<server::CFuncTrackTrain>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTargetEntity = 0x4ac; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_soundPlaying = 0x4b0; // int32_t m_soundPlaying; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_startSoundName = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_engineSoundName = 0x4d0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_movementSoundName = 0x4d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_targetEntityName = 0x4e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

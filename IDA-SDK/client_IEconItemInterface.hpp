@@ -4,5 +4,5 @@
 
 
 class client_IEconItemInterface {
-    char pad_1374[0x8];
+    char pad_2175[0x8];
 };

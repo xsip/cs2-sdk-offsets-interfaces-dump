@@ -8,15 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB20
+			// Class size: 0xAB0
 			namespace CBaseFlex /*: public CS2::server::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_flexWeight = 0xa90; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vLookTargetPosition = 0xaa8; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_blinktoggle = 0xab4; // bool m_blinktoggle; |  0xab4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flAllowResponsesEndTime = 0xb08; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastFlexAnimationTime = 0xb0c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nNextSceneEventId = 0xb10; // client::SceneEventId_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bUpdateLayerPriorities = 0xb14; // bool m_bUpdateLayerPriorities; |  0xb14 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flexWeight = 0xa20; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vLookTargetPosition = 0xa38; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flAllowResponsesEndTime = 0xa98; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastFlexAnimationTime = 0xa9c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nNextSceneEventId = 0xaa0; // client::SceneEventId_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bUpdateLayerPriorities = 0xaa4; // bool m_bUpdateLayerPriorities; |  0xaa4 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

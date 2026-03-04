@@ -4,7 +4,9 @@
 
 
 class animgraphlib_CFutureVelocityMetricEvaluator {
-    char vTable80[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     char m_means[0x18];
     char m_standardDeviations[0x18];
     float32 m_flWeight;
@@ -13,5 +15,5 @@ class animgraphlib_CFutureVelocityMetricEvaluator {
     float32 m_flStoppingDistance;
     float32 m_flTargetSpeed;
     animgraphlib_VelocityMetricMode m_eMode;
-    char end_pad_151[0x3];
+    char end_pad_152[0x3];
 };

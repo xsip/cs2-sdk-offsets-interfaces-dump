@@ -4,5 +4,5 @@
 
 
 class soundsystem_voicecontainers_CSoundInfoHeader {
-    char pad_468[0x1];
+    char pad_474[0x1];
 };

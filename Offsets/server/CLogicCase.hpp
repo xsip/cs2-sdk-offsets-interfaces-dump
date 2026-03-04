@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB40
+			// Class size: 0x8F0
 			namespace CLogicCase /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_nCase = 0x4f0; // GlobalTypes::CUtlSymbolLarge[32]  | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nShuffleCases = 0x5f0; // int32_t m_nShuffleCases; |  0x5f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nLastShuffleCase = 0x5f4; // int32_t m_nLastShuffleCase; |  0x5f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_uchShuffleCaseMap = 0x5f8; // uint8_t m_uchShuffleCaseMap[32]; |  0x5f8 | Schema_FixedArray | Size: 0x20
-				constexpr std::ptrdiff_t m_OnCase = 0x618; // GlobalTypes::CEntityIOOutput[32]  | Schema_FixedArray | Size: 0xa000
-				constexpr std::ptrdiff_t m_OnDefault = 0xb18; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator>>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_nCase = 0x4a8; // GlobalTypes::CUtlSymbolLarge[32]  | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nShuffleCases = 0x5a8; // int32_t m_nShuffleCases; |  0x5a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nLastShuffleCase = 0x5ac; // int32_t m_nLastShuffleCase; |  0x5ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_uchShuffleCaseMap = 0x5b0; // uint8_t m_uchShuffleCaseMap[32]; |  0x5b0 | Schema_FixedArray | Size: 0x20
+				constexpr std::ptrdiff_t m_OnCase = 0x5d0; // GlobalTypes::CEntityIOOutput[32]  | Schema_FixedArray | Size: 0x6000
+				constexpr std::ptrdiff_t m_OnDefault = 0x8d0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

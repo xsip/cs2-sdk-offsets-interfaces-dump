@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB80
+			// Class size: 0xAD0
 			namespace CScriptItem /*: public CS2::server::CItem*/ {
-				constexpr std::ptrdiff_t m_MoveTypeOverride = 0xb70; // client::MoveType_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_MoveTypeOverride = 0xac0; // client::MoveType_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

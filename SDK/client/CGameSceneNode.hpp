@@ -55,11 +55,11 @@ namespace CS2 {
 			uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; // 0x111 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			GlobalTypes::CUtlStringToken m_name; // 0x114 | Schema_Atomic | Size: 0x4
-			S2_PAD(0x40);
-			GlobalTypes::CUtlStringToken m_hierarchyAttachName; // 0x158 | Schema_Atomic | Size: 0x4
-			float32 m_flZOffset; // 0x15c | Schema_Builtin | Size: 0x4
-			float32 m_flClientLocalScale; // 0x160 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vRenderOrigin; // 0x164 | Schema_Atomic | Size: 0xc
+			S2_PAD(0x10);
+			GlobalTypes::CUtlStringToken m_hierarchyAttachName; // 0x128 | Schema_Atomic | Size: 0x4
+			float32 m_flZOffset; // 0x12c | Schema_Builtin | Size: 0x4
+			float32 m_flClientLocalScale; // 0x130 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vRenderOrigin; // 0x134 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x10); // End padding
 		};
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_nodeToWorld) == 0x10, "m_nodeToWorld in CGameSceneNode should be at offset 0x10");
@@ -85,10 +85,10 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_nHierarchyType) == 0x110, "m_nHierarchyType in CGameSceneNode should be at offset 0x110");
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_nDoNotSetAnimTimeInInvalidatePhysicsCount) == 0x111, "m_nDoNotSetAnimTimeInInvalidatePhysicsCount in CGameSceneNode should be at offset 0x111");
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_name) == 0x114, "m_name in CGameSceneNode should be at offset 0x114");
-		static_assert(offsetof(CS2::client::CGameSceneNode, m_hierarchyAttachName) == 0x158, "m_hierarchyAttachName in CGameSceneNode should be at offset 0x158");
-		static_assert(offsetof(CS2::client::CGameSceneNode, m_flZOffset) == 0x15C, "m_flZOffset in CGameSceneNode should be at offset 0x15C");
-		static_assert(offsetof(CS2::client::CGameSceneNode, m_flClientLocalScale) == 0x160, "m_flClientLocalScale in CGameSceneNode should be at offset 0x160");
-		static_assert(offsetof(CS2::client::CGameSceneNode, m_vRenderOrigin) == 0x164, "m_vRenderOrigin in CGameSceneNode should be at offset 0x164");
-		static_assert(sizeof(CS2::client::CGameSceneNode) == 0x180, "CGameSceneNode size should be 0x180");
+		static_assert(offsetof(CS2::client::CGameSceneNode, m_hierarchyAttachName) == 0x128, "m_hierarchyAttachName in CGameSceneNode should be at offset 0x128");
+		static_assert(offsetof(CS2::client::CGameSceneNode, m_flZOffset) == 0x12C, "m_flZOffset in CGameSceneNode should be at offset 0x12C");
+		static_assert(offsetof(CS2::client::CGameSceneNode, m_flClientLocalScale) == 0x130, "m_flClientLocalScale in CGameSceneNode should be at offset 0x130");
+		static_assert(offsetof(CS2::client::CGameSceneNode, m_vRenderOrigin) == 0x134, "m_vRenderOrigin in CGameSceneNode should be at offset 0x134");
+		static_assert(sizeof(CS2::client::CGameSceneNode) == 0x150, "CGameSceneNode size should be 0x150");
 	}
 }

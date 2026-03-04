@@ -5,10 +5,12 @@
 #include "animgraphlib_CAnimNodePath.hpp"
 
 class animgraphlib_CInputStreamUpdateNode {
-    char vTable16[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     animgraphlib_CAnimNodePath m_nodePath;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
     char pad_17[0x4];
     CUtlString m_name;
-    char pad_156[0x8];
+    char pad_157[0x8];
 };

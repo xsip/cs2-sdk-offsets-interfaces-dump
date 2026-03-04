@@ -22,18 +22,18 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_RadioServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			entity2::GameTime_t m_flGotHostageTalkTimer; // 0x40 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flDefusingTalkTimer; // 0x44 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flC4PlantTalkTimer; // 0x48 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flRadioTokenSlots[3]; // 0x4c | Schema_FixedArray | Size: 0x24
-			bool m_bIgnoreRadio; // 0x58 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flGotHostageTalkTimer; // 0x48 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flDefusingTalkTimer; // 0x4c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flC4PlantTalkTimer; // 0x50 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flRadioTokenSlots[3]; // 0x54 | Schema_FixedArray | Size: 0x24
+			bool m_bIgnoreRadio; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flGotHostageTalkTimer) == 0x40, "m_flGotHostageTalkTimer in CCSPlayer_RadioServices should be at offset 0x40");
-		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flDefusingTalkTimer) == 0x44, "m_flDefusingTalkTimer in CCSPlayer_RadioServices should be at offset 0x44");
-		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flC4PlantTalkTimer) == 0x48, "m_flC4PlantTalkTimer in CCSPlayer_RadioServices should be at offset 0x48");
-		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flRadioTokenSlots) == 0x4C, "m_flRadioTokenSlots in CCSPlayer_RadioServices should be at offset 0x4C");
-		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_bIgnoreRadio) == 0x58, "m_bIgnoreRadio in CCSPlayer_RadioServices should be at offset 0x58");
-		static_assert(sizeof(CS2::server::CCSPlayer_RadioServices) == 0x60, "CCSPlayer_RadioServices size should be 0x60");
+		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flGotHostageTalkTimer) == 0x48, "m_flGotHostageTalkTimer in CCSPlayer_RadioServices should be at offset 0x48");
+		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flDefusingTalkTimer) == 0x4C, "m_flDefusingTalkTimer in CCSPlayer_RadioServices should be at offset 0x4C");
+		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flC4PlantTalkTimer) == 0x50, "m_flC4PlantTalkTimer in CCSPlayer_RadioServices should be at offset 0x50");
+		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flRadioTokenSlots) == 0x54, "m_flRadioTokenSlots in CCSPlayer_RadioServices should be at offset 0x54");
+		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_bIgnoreRadio) == 0x60, "m_bIgnoreRadio in CCSPlayer_RadioServices should be at offset 0x60");
+		static_assert(sizeof(CS2::server::CCSPlayer_RadioServices) == 0x68, "CCSPlayer_RadioServices size should be 0x68");
 	}
 }

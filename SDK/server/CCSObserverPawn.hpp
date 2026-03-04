@@ -23,6 +23,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x30);
 		};
-		static_assert(sizeof(CS2::server::CCSObserverPawn) == 0xF10, "CCSObserverPawn size should be 0xF10");
+		static_assert(sizeof(CS2::server::CCSObserverPawn) == 0xEA0, "CCSObserverPawn size should be 0xEA0");
 	}
 }

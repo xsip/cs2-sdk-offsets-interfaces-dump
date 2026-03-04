@@ -11,9 +11,9 @@ class modellib_CPhysSurfaceProperties {
     CUtlString m_name;
     uint32_t m_nameHash;
     uint32_t m_baseNameHash;
-    char pad_353[0x8];
+    char pad_356[0x8];
     bool m_bHidden;
-    char pad_354[0x7];
+    char pad_357[0x7];
     CUtlString m_description;
     modellib_CPhysSurfacePropertiesPhysics m_physics;
     modellib_CPhysSurfacePropertiesVehicle m_vehicleParams;

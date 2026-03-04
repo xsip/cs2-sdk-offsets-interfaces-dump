@@ -12,15 +12,11 @@
 
 #include <SDK/animgraphlib/CAnimUpdateNodeBase.hpp>
 #include <SDK/animgraphlib/CAnimStateMachineUpdater.hpp>
+#include <SDK/animgraphlib/CStateNodeStateData.hpp>
+#include <SDK/animgraphlib/CStateNodeTransitionData.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class CStateNodeStateData;
-		class CStateNodeTransitionData;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -31,9 +27,9 @@ namespace CS2 {
 			S2_PAD(0x18);
 			animgraphlib::CAnimStateMachineUpdater m_stateMachine; // 0x70 | Schema_DeclaredClass | Size: 0x58
 			GlobalTypes::CUtlVector<animgraphlib::CStateNodeStateData> m_stateData; // 0xc8 | Schema_Atomic | Size: 0x18
-			// char  m_stateData[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
+			// char m_stateData[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<animgraphlib::CStateNodeTransitionData> m_transitionData; // 0xe0 | Schema_Atomic | Size: 0x18
-			// char  m_transitionData[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
+			// char m_transitionData[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			bool m_bBlockWaningTags; // 0xfc | Schema_Builtin | Size: 0x1
 			bool m_bLockStateWhenWaning; // 0xfd | Schema_Builtin | Size: 0x1

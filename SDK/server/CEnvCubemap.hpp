@@ -22,48 +22,48 @@ namespace CS2 {
 		class CEnvCubemap : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x80);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hCubemapTexture; // 0x570 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hCubemapTexture[0x8]; // 0x570 | Schema_Atomic | Size: 0x8
-			bool m_Entity_bCustomCubemapTexture; // 0x578 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hCubemapTexture; // 0x528 | Schema_Atomic | Size: 0x8
+			char m_Entity_hCubemapTexture[0x8]; // 0x528 | Schema_Atomic | Size: 0x8
+			bool m_Entity_bCustomCubemapTexture; // 0x530 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_Entity_flInfluenceRadius; // 0x57c | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_Entity_vBoxProjectMins; // 0x580 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_Entity_vBoxProjectMaxs; // 0x58c | Schema_Atomic | Size: 0xc
-			bool m_Entity_bMoveable; // 0x598 | Schema_Builtin | Size: 0x1
+			float32 m_Entity_flInfluenceRadius; // 0x534 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_Entity_vBoxProjectMins; // 0x538 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_Entity_vBoxProjectMaxs; // 0x544 | Schema_Atomic | Size: 0xc
+			bool m_Entity_bMoveable; // 0x550 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_Entity_nHandshake; // 0x59c | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nEnvCubeMapArrayIndex; // 0x5a0 | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nPriority; // 0x5a4 | Schema_Builtin | Size: 0x4
-			float32 m_Entity_flEdgeFadeDist; // 0x5a8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_Entity_vEdgeFadeDists; // 0x5ac | Schema_Atomic | Size: 0xc
-			float32 m_Entity_flDiffuseScale; // 0x5b8 | Schema_Builtin | Size: 0x4
-			bool m_Entity_bStartDisabled; // 0x5bc | Schema_Builtin | Size: 0x1
-			bool m_Entity_bDefaultEnvMap; // 0x5bd | Schema_Builtin | Size: 0x1
-			bool m_Entity_bDefaultSpecEnvMap; // 0x5be | Schema_Builtin | Size: 0x1
-			bool m_Entity_bIndoorCubeMap; // 0x5bf | Schema_Builtin | Size: 0x1
-			bool m_Entity_bCopyDiffuseFromDefaultCubemap; // 0x5c0 | Schema_Builtin | Size: 0x1
+			int32_t m_Entity_nHandshake; // 0x554 | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nEnvCubeMapArrayIndex; // 0x558 | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nPriority; // 0x55c | Schema_Builtin | Size: 0x4
+			float32 m_Entity_flEdgeFadeDist; // 0x560 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_Entity_vEdgeFadeDists; // 0x564 | Schema_Atomic | Size: 0xc
+			float32 m_Entity_flDiffuseScale; // 0x570 | Schema_Builtin | Size: 0x4
+			bool m_Entity_bStartDisabled; // 0x574 | Schema_Builtin | Size: 0x1
+			bool m_Entity_bDefaultEnvMap; // 0x575 | Schema_Builtin | Size: 0x1
+			bool m_Entity_bDefaultSpecEnvMap; // 0x576 | Schema_Builtin | Size: 0x1
+			bool m_Entity_bIndoorCubeMap; // 0x577 | Schema_Builtin | Size: 0x1
+			bool m_Entity_bCopyDiffuseFromDefaultCubemap; // 0x578 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf);
-			bool m_Entity_bEnabled; // 0x5d0 | Schema_Builtin | Size: 0x1
+			bool m_Entity_bEnabled; // 0x588 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_hCubemapTexture) == 0x570, "m_Entity_hCubemapTexture in CEnvCubemap should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bCustomCubemapTexture) == 0x578, "m_Entity_bCustomCubemapTexture in CEnvCubemap should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_flInfluenceRadius) == 0x57C, "m_Entity_flInfluenceRadius in CEnvCubemap should be at offset 0x57C");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_vBoxProjectMins) == 0x580, "m_Entity_vBoxProjectMins in CEnvCubemap should be at offset 0x580");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_vBoxProjectMaxs) == 0x58C, "m_Entity_vBoxProjectMaxs in CEnvCubemap should be at offset 0x58C");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bMoveable) == 0x598, "m_Entity_bMoveable in CEnvCubemap should be at offset 0x598");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_nHandshake) == 0x59C, "m_Entity_nHandshake in CEnvCubemap should be at offset 0x59C");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_nEnvCubeMapArrayIndex) == 0x5A0, "m_Entity_nEnvCubeMapArrayIndex in CEnvCubemap should be at offset 0x5A0");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_nPriority) == 0x5A4, "m_Entity_nPriority in CEnvCubemap should be at offset 0x5A4");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_flEdgeFadeDist) == 0x5A8, "m_Entity_flEdgeFadeDist in CEnvCubemap should be at offset 0x5A8");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_vEdgeFadeDists) == 0x5AC, "m_Entity_vEdgeFadeDists in CEnvCubemap should be at offset 0x5AC");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_flDiffuseScale) == 0x5B8, "m_Entity_flDiffuseScale in CEnvCubemap should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bStartDisabled) == 0x5BC, "m_Entity_bStartDisabled in CEnvCubemap should be at offset 0x5BC");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bDefaultEnvMap) == 0x5BD, "m_Entity_bDefaultEnvMap in CEnvCubemap should be at offset 0x5BD");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bDefaultSpecEnvMap) == 0x5BE, "m_Entity_bDefaultSpecEnvMap in CEnvCubemap should be at offset 0x5BE");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bIndoorCubeMap) == 0x5BF, "m_Entity_bIndoorCubeMap in CEnvCubemap should be at offset 0x5BF");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bCopyDiffuseFromDefaultCubemap) == 0x5C0, "m_Entity_bCopyDiffuseFromDefaultCubemap in CEnvCubemap should be at offset 0x5C0");
-		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bEnabled) == 0x5D0, "m_Entity_bEnabled in CEnvCubemap should be at offset 0x5D0");
-		static_assert(sizeof(CS2::server::CEnvCubemap) == 0x5D8, "CEnvCubemap size should be 0x5D8");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_hCubemapTexture) == 0x528, "m_Entity_hCubemapTexture in CEnvCubemap should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bCustomCubemapTexture) == 0x530, "m_Entity_bCustomCubemapTexture in CEnvCubemap should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_flInfluenceRadius) == 0x534, "m_Entity_flInfluenceRadius in CEnvCubemap should be at offset 0x534");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_vBoxProjectMins) == 0x538, "m_Entity_vBoxProjectMins in CEnvCubemap should be at offset 0x538");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_vBoxProjectMaxs) == 0x544, "m_Entity_vBoxProjectMaxs in CEnvCubemap should be at offset 0x544");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bMoveable) == 0x550, "m_Entity_bMoveable in CEnvCubemap should be at offset 0x550");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_nHandshake) == 0x554, "m_Entity_nHandshake in CEnvCubemap should be at offset 0x554");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_nEnvCubeMapArrayIndex) == 0x558, "m_Entity_nEnvCubeMapArrayIndex in CEnvCubemap should be at offset 0x558");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_nPriority) == 0x55C, "m_Entity_nPriority in CEnvCubemap should be at offset 0x55C");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_flEdgeFadeDist) == 0x560, "m_Entity_flEdgeFadeDist in CEnvCubemap should be at offset 0x560");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_vEdgeFadeDists) == 0x564, "m_Entity_vEdgeFadeDists in CEnvCubemap should be at offset 0x564");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_flDiffuseScale) == 0x570, "m_Entity_flDiffuseScale in CEnvCubemap should be at offset 0x570");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bStartDisabled) == 0x574, "m_Entity_bStartDisabled in CEnvCubemap should be at offset 0x574");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bDefaultEnvMap) == 0x575, "m_Entity_bDefaultEnvMap in CEnvCubemap should be at offset 0x575");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bDefaultSpecEnvMap) == 0x576, "m_Entity_bDefaultSpecEnvMap in CEnvCubemap should be at offset 0x576");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bIndoorCubeMap) == 0x577, "m_Entity_bIndoorCubeMap in CEnvCubemap should be at offset 0x577");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bCopyDiffuseFromDefaultCubemap) == 0x578, "m_Entity_bCopyDiffuseFromDefaultCubemap in CEnvCubemap should be at offset 0x578");
+		static_assert(offsetof(CS2::server::CEnvCubemap, m_Entity_bEnabled) == 0x588, "m_Entity_bEnabled in CEnvCubemap should be at offset 0x588");
+		static_assert(sizeof(CS2::server::CEnvCubemap) == 0x590, "CEnvCubemap size should be 0x590");
 	}
 }

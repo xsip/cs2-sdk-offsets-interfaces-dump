@@ -6,19 +6,10 @@
 namespace CS2 {
 	namespace client {
 		enum RenderMode_t : std::uint8_t {
-			RenderMode_t_kRenderDevVisualizer = 0xb,
-			RenderMode_t_kRenderEnvironmental = 0x6,
-			RenderMode_t_kRenderGlow = 0x3,
-			RenderMode_t_kRenderModeCount = 0xc,
-			RenderMode_t_kRenderNone = 0xa,
+			RenderMode_t_kRenderModeCount = 0x3,
+			RenderMode_t_kRenderNone = 0x2,
 			RenderMode_t_kRenderNormal = 0x0,
-			RenderMode_t_kRenderTransAdd = 0x5,
-			RenderMode_t_kRenderTransAddFrameBlend = 0x7,
-			RenderMode_t_kRenderTransAlpha = 0x4,
-			RenderMode_t_kRenderTransAlphaAdd = 0x8,
-			RenderMode_t_kRenderTransColor = 0x1,
-			RenderMode_t_kRenderTransTexture = 0x2,
-			RenderMode_t_kRenderWorldGlow = 0x9
+			RenderMode_t_kRenderTransAlpha = 0x1
 		};
 	}
 }

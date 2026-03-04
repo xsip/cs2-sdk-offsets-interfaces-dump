@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x40
-			namespace EventServerBeginAsyncPostTickWork_t /*: public CS2::client::EventPostAdvanceTick_t*/ {
-				// NO SCHEMA DATA FOUND!
+			// Class size: 0x1
+			namespace EventServerBeginAsyncPostTickWork_t /**/ {
+				constexpr std::ptrdiff_t m_bIsOncePerFrameAsyncWorkPhase = 0x0; // bool m_bIsOncePerFrameAsyncWorkPhase; |  0x0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

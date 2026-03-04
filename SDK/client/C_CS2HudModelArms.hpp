@@ -21,8 +21,8 @@ namespace CS2 {
 	namespace client {
 		class C_CS2HudModelArms : public CS2::client::C_CS2HudModelBase {
 		public:
-			S2_PAD(0x130);
+			S2_PAD(0x110);
 		};
-		static_assert(sizeof(CS2::client::C_CS2HudModelArms) == 0x1350, "C_CS2HudModelArms size should be 0x1350");
+		static_assert(sizeof(CS2::client::C_CS2HudModelArms) == 0x1340, "C_CS2HudModelArms size should be 0x1340");
 	}
 }

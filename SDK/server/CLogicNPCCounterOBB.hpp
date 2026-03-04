@@ -22,6 +22,6 @@ namespace CS2 {
 		class CLogicNPCCounterOBB : public CS2::server::CLogicNPCCounterAABB {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CLogicNPCCounterOBB) == 0x860, "CLogicNPCCounterOBB size should be 0x860");
+		static_assert(sizeof(CS2::server::CLogicNPCCounterOBB) == 0x758, "CLogicNPCCounterOBB size should be 0x758");
 	}
 }

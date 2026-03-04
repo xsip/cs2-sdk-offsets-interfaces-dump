@@ -21,18 +21,18 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsPropRespawnable : public CS2::server::CPhysicsProp {
 		public:
-			GlobalTypes::VectorWS m_vOriginalSpawnOrigin; // 0xe00 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vOriginalSpawnAngles; // 0xe0c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOriginalMins; // 0xe18 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOriginalMaxs; // 0xe24 | Schema_Atomic | Size: 0xc
-			float32 m_flRespawnDuration; // 0xe30 | Schema_Builtin | Size: 0x4
+			GlobalTypes::VectorWS m_vOriginalSpawnOrigin; // 0xce0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vOriginalSpawnAngles; // 0xcec | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOriginalMins; // 0xcf8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOriginalMaxs; // 0xd04 | Schema_Atomic | Size: 0xc
+			float32 m_flRespawnDuration; // 0xd10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalSpawnOrigin) == 0xE00, "m_vOriginalSpawnOrigin in CPhysicsPropRespawnable should be at offset 0xE00");
-		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalSpawnAngles) == 0xE0C, "m_vOriginalSpawnAngles in CPhysicsPropRespawnable should be at offset 0xE0C");
-		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalMins) == 0xE18, "m_vOriginalMins in CPhysicsPropRespawnable should be at offset 0xE18");
-		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalMaxs) == 0xE24, "m_vOriginalMaxs in CPhysicsPropRespawnable should be at offset 0xE24");
-		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_flRespawnDuration) == 0xE30, "m_flRespawnDuration in CPhysicsPropRespawnable should be at offset 0xE30");
-		static_assert(sizeof(CS2::server::CPhysicsPropRespawnable) == 0xE40, "CPhysicsPropRespawnable size should be 0xE40");
+		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalSpawnOrigin) == 0xCE0, "m_vOriginalSpawnOrigin in CPhysicsPropRespawnable should be at offset 0xCE0");
+		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalSpawnAngles) == 0xCEC, "m_vOriginalSpawnAngles in CPhysicsPropRespawnable should be at offset 0xCEC");
+		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalMins) == 0xCF8, "m_vOriginalMins in CPhysicsPropRespawnable should be at offset 0xCF8");
+		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalMaxs) == 0xD04, "m_vOriginalMaxs in CPhysicsPropRespawnable should be at offset 0xD04");
+		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_flRespawnDuration) == 0xD10, "m_flRespawnDuration in CPhysicsPropRespawnable should be at offset 0xD10");
+		static_assert(sizeof(CS2::server::CPhysicsPropRespawnable) == 0xD20, "CPhysicsPropRespawnable size should be 0xD20");
 	}
 }

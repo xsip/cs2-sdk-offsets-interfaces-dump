@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x608
+			// Class size: 0x590
 			namespace CLogicBranchList /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_nLogicBranchNames = 0x4f0; // GlobalTypes::CUtlSymbolLarge[16]  | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_LogicBranchList = 0x570; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_eLastState = 0x588; // server::CLogicBranchList::LogicBranchListenerLastState_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_OnAllTrue = 0x590; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnAllFalse = 0x5b8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMixed = 0x5e0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_nLogicBranchNames = 0x4a8; // GlobalTypes::CUtlSymbolLarge[16]  | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_LogicBranchList = 0x528; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_eLastState = 0x540; // server::CLogicBranchList::LogicBranchListenerLastState_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OnAllTrue = 0x548; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnAllFalse = 0x560; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnMixed = 0x578; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

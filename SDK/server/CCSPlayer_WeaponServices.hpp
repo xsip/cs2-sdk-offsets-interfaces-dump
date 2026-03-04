@@ -28,42 +28,42 @@ namespace CS2 {
 		class CCSPlayer_WeaponServices : public CS2::server::CPlayer_WeaponServices {
 		public:
 			S2_PAD(0x10);
-			entity2::GameTime_t m_flNextAttack; // 0xb8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bIsLookingAtWeapon; // 0xbc | Schema_Builtin | Size: 0x1
-			bool m_bIsHoldingLookAtWeapon; // 0xbd | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flNextAttack; // 0xc0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bIsLookingAtWeapon; // 0xc4 | Schema_Builtin | Size: 0x1
+			bool m_bIsHoldingLookAtWeapon; // 0xc5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hSavedWeapon; // 0xc0 | Schema_Atomic | Size: 0x4
-			// char  m_hSavedWeapon[0x4]; // 0xc0 | Schema_Atomic | Size: 0x4
-			int32_t m_nTimeToMelee; // 0xc4 | Schema_Builtin | Size: 0x4
-			int32_t m_nTimeToSecondary; // 0xc8 | Schema_Builtin | Size: 0x4
-			int32_t m_nTimeToPrimary; // 0xcc | Schema_Builtin | Size: 0x4
-			int32_t m_nTimeToSniperRifle; // 0xd0 | Schema_Builtin | Size: 0x4
-			bool m_bIsBeingGivenItem; // 0xd4 | Schema_Builtin | Size: 0x1
-			bool m_bIsPickingUpItemWithUse; // 0xd5 | Schema_Builtin | Size: 0x1
-			bool m_bPickedUpWeapon; // 0xd6 | Schema_Builtin | Size: 0x1
-			bool m_bDisableAutoDeploy; // 0xd7 | Schema_Builtin | Size: 0x1
-			bool m_bIsPickingUpGroundWeapon; // 0xd8 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x17ff);
-			// GlobalTypes::CNetworkUtlVectorBase< uint8 > m_networkAnimTiming; // 0x18d8 | Schema_Atomic | Size: 0x18
-			char  m_networkAnimTiming[0x18]; // 0x18d8 | Schema_Atomic | Size: 0x18
-			bool m_bBlockInspectUntilNextGraphUpdate; // 0x18f0 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hSavedWeapon; // 0xc8 | Schema_Atomic | Size: 0x4
+			// char m_hSavedWeapon[0x4]; // 0xc8 | Schema_Atomic | Size: 0x4
+			int32_t m_nTimeToMelee; // 0xcc | Schema_Builtin | Size: 0x4
+			int32_t m_nTimeToSecondary; // 0xd0 | Schema_Builtin | Size: 0x4
+			int32_t m_nTimeToPrimary; // 0xd4 | Schema_Builtin | Size: 0x4
+			int32_t m_nTimeToSniperRifle; // 0xd8 | Schema_Builtin | Size: 0x4
+			bool m_bIsBeingGivenItem; // 0xdc | Schema_Builtin | Size: 0x1
+			bool m_bIsPickingUpItemWithUse; // 0xdd | Schema_Builtin | Size: 0x1
+			bool m_bPickedUpWeapon; // 0xde | Schema_Builtin | Size: 0x1
+			bool m_bDisableAutoDeploy; // 0xdf | Schema_Builtin | Size: 0x1
+			bool m_bIsPickingUpGroundWeapon; // 0xe0 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x17d7);
+			// GlobalTypes::CNetworkUtlVectorBase< uint8 > m_networkAnimTiming; // 0x18b8 | Schema_Atomic | Size: 0x18
+			char m_networkAnimTiming[0x18]; // 0x18b8 | Schema_Atomic | Size: 0x18
+			bool m_bBlockInspectUntilNextGraphUpdate; // 0x18d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_flNextAttack) == 0xB8, "m_flNextAttack in CCSPlayer_WeaponServices should be at offset 0xB8");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsLookingAtWeapon) == 0xBC, "m_bIsLookingAtWeapon in CCSPlayer_WeaponServices should be at offset 0xBC");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsHoldingLookAtWeapon) == 0xBD, "m_bIsHoldingLookAtWeapon in CCSPlayer_WeaponServices should be at offset 0xBD");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_hSavedWeapon) == 0xC0, "m_hSavedWeapon in CCSPlayer_WeaponServices should be at offset 0xC0");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToMelee) == 0xC4, "m_nTimeToMelee in CCSPlayer_WeaponServices should be at offset 0xC4");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToSecondary) == 0xC8, "m_nTimeToSecondary in CCSPlayer_WeaponServices should be at offset 0xC8");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToPrimary) == 0xCC, "m_nTimeToPrimary in CCSPlayer_WeaponServices should be at offset 0xCC");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToSniperRifle) == 0xD0, "m_nTimeToSniperRifle in CCSPlayer_WeaponServices should be at offset 0xD0");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsBeingGivenItem) == 0xD4, "m_bIsBeingGivenItem in CCSPlayer_WeaponServices should be at offset 0xD4");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsPickingUpItemWithUse) == 0xD5, "m_bIsPickingUpItemWithUse in CCSPlayer_WeaponServices should be at offset 0xD5");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bPickedUpWeapon) == 0xD6, "m_bPickedUpWeapon in CCSPlayer_WeaponServices should be at offset 0xD6");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bDisableAutoDeploy) == 0xD7, "m_bDisableAutoDeploy in CCSPlayer_WeaponServices should be at offset 0xD7");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsPickingUpGroundWeapon) == 0xD8, "m_bIsPickingUpGroundWeapon in CCSPlayer_WeaponServices should be at offset 0xD8");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_networkAnimTiming) == 0x18D8, "m_networkAnimTiming in CCSPlayer_WeaponServices should be at offset 0x18D8");
-		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bBlockInspectUntilNextGraphUpdate) == 0x18F0, "m_bBlockInspectUntilNextGraphUpdate in CCSPlayer_WeaponServices should be at offset 0x18F0");
-		static_assert(sizeof(CS2::server::CCSPlayer_WeaponServices) == 0x18F8, "CCSPlayer_WeaponServices size should be 0x18F8");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_flNextAttack) == 0xC0, "m_flNextAttack in CCSPlayer_WeaponServices should be at offset 0xC0");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsLookingAtWeapon) == 0xC4, "m_bIsLookingAtWeapon in CCSPlayer_WeaponServices should be at offset 0xC4");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsHoldingLookAtWeapon) == 0xC5, "m_bIsHoldingLookAtWeapon in CCSPlayer_WeaponServices should be at offset 0xC5");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_hSavedWeapon) == 0xC8, "m_hSavedWeapon in CCSPlayer_WeaponServices should be at offset 0xC8");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToMelee) == 0xCC, "m_nTimeToMelee in CCSPlayer_WeaponServices should be at offset 0xCC");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToSecondary) == 0xD0, "m_nTimeToSecondary in CCSPlayer_WeaponServices should be at offset 0xD0");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToPrimary) == 0xD4, "m_nTimeToPrimary in CCSPlayer_WeaponServices should be at offset 0xD4");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_nTimeToSniperRifle) == 0xD8, "m_nTimeToSniperRifle in CCSPlayer_WeaponServices should be at offset 0xD8");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsBeingGivenItem) == 0xDC, "m_bIsBeingGivenItem in CCSPlayer_WeaponServices should be at offset 0xDC");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsPickingUpItemWithUse) == 0xDD, "m_bIsPickingUpItemWithUse in CCSPlayer_WeaponServices should be at offset 0xDD");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bPickedUpWeapon) == 0xDE, "m_bPickedUpWeapon in CCSPlayer_WeaponServices should be at offset 0xDE");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bDisableAutoDeploy) == 0xDF, "m_bDisableAutoDeploy in CCSPlayer_WeaponServices should be at offset 0xDF");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsPickingUpGroundWeapon) == 0xE0, "m_bIsPickingUpGroundWeapon in CCSPlayer_WeaponServices should be at offset 0xE0");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_networkAnimTiming) == 0x18B8, "m_networkAnimTiming in CCSPlayer_WeaponServices should be at offset 0x18B8");
+		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bBlockInspectUntilNextGraphUpdate) == 0x18D0, "m_bBlockInspectUntilNextGraphUpdate in CCSPlayer_WeaponServices should be at offset 0x18D0");
+		static_assert(sizeof(CS2::server::CCSPlayer_WeaponServices) == 0x18D8, "CCSPlayer_WeaponServices size should be 0x18D8");
 	}
 }

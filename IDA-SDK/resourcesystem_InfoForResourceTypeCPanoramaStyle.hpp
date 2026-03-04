@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCPanoramaStyle {
-    char pad_2396[0x1];
+    char pad_1292[0x1];
 };

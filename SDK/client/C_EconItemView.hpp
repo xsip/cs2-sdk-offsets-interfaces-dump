@@ -52,13 +52,13 @@ namespace CS2 {
 			int32_t m_iOriginOverride; // 0x1f8 | Schema_Builtin | Size: 0x4
 			uint8_t m_ubStyleOverride; // 0x1fc | Schema_Builtin | Size: 0x1
 			uint8_t m_unClientFlags; // 0x1fd | Schema_Builtin | Size: 0x1
-			S2_PAD(0x12);
-			client::CAttributeList m_AttributeList; // 0x210 | Schema_DeclaredClass | Size: 0x78
-			client::CAttributeList m_NetworkedDynamicAttributes; // 0x288 | Schema_DeclaredClass | Size: 0x78
-			char m_szCustomName[161]; // 0x300 | Schema_FixedArray | Size: 0xa1
-			char m_szCustomNameOverride[161]; // 0x3a1 | Schema_FixedArray | Size: 0xa1
+			S2_PAD(0xa);
+			client::CAttributeList m_AttributeList; // 0x208 | Schema_DeclaredClass | Size: 0x78
+			client::CAttributeList m_NetworkedDynamicAttributes; // 0x280 | Schema_DeclaredClass | Size: 0x78
+			char m_szCustomName[161]; // 0x2f8 | Schema_FixedArray | Size: 0xa1
+			char m_szCustomNameOverride[161]; // 0x399 | Schema_FixedArray | Size: 0xa1
 			S2_PAD(0x2e);
-			bool m_bInitializedTags; // 0x470 | Schema_Builtin | Size: 0x1
+			bool m_bInitializedTags; // 0x468 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
 		static_assert(offsetof(CS2::client::C_EconItemView, m_bInventoryImageRgbaRequested) == 0x60, "m_bInventoryImageRgbaRequested in C_EconItemView should be at offset 0x60");
@@ -85,11 +85,11 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EconItemView, m_iOriginOverride) == 0x1F8, "m_iOriginOverride in C_EconItemView should be at offset 0x1F8");
 		static_assert(offsetof(CS2::client::C_EconItemView, m_ubStyleOverride) == 0x1FC, "m_ubStyleOverride in C_EconItemView should be at offset 0x1FC");
 		static_assert(offsetof(CS2::client::C_EconItemView, m_unClientFlags) == 0x1FD, "m_unClientFlags in C_EconItemView should be at offset 0x1FD");
-		static_assert(offsetof(CS2::client::C_EconItemView, m_AttributeList) == 0x210, "m_AttributeList in C_EconItemView should be at offset 0x210");
-		static_assert(offsetof(CS2::client::C_EconItemView, m_NetworkedDynamicAttributes) == 0x288, "m_NetworkedDynamicAttributes in C_EconItemView should be at offset 0x288");
-		static_assert(offsetof(CS2::client::C_EconItemView, m_szCustomName) == 0x300, "m_szCustomName in C_EconItemView should be at offset 0x300");
-		static_assert(offsetof(CS2::client::C_EconItemView, m_szCustomNameOverride) == 0x3A1, "m_szCustomNameOverride in C_EconItemView should be at offset 0x3A1");
-		static_assert(offsetof(CS2::client::C_EconItemView, m_bInitializedTags) == 0x470, "m_bInitializedTags in C_EconItemView should be at offset 0x470");
-		static_assert(sizeof(CS2::client::C_EconItemView) == 0x478, "C_EconItemView size should be 0x478");
+		static_assert(offsetof(CS2::client::C_EconItemView, m_AttributeList) == 0x208, "m_AttributeList in C_EconItemView should be at offset 0x208");
+		static_assert(offsetof(CS2::client::C_EconItemView, m_NetworkedDynamicAttributes) == 0x280, "m_NetworkedDynamicAttributes in C_EconItemView should be at offset 0x280");
+		static_assert(offsetof(CS2::client::C_EconItemView, m_szCustomName) == 0x2F8, "m_szCustomName in C_EconItemView should be at offset 0x2F8");
+		static_assert(offsetof(CS2::client::C_EconItemView, m_szCustomNameOverride) == 0x399, "m_szCustomNameOverride in C_EconItemView should be at offset 0x399");
+		static_assert(offsetof(CS2::client::C_EconItemView, m_bInitializedTags) == 0x468, "m_bInitializedTags in C_EconItemView should be at offset 0x468");
+		static_assert(sizeof(CS2::client::C_EconItemView) == 0x470, "C_EconItemView size should be 0x470");
 	}
 }

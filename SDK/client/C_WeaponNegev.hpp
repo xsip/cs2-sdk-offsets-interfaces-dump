@@ -22,6 +22,6 @@ namespace CS2 {
 		class C_WeaponNegev : public CS2::client::C_CSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_WeaponNegev) == 0x1FB0, "C_WeaponNegev size should be 0x1FB0");
+		static_assert(sizeof(CS2::client::C_WeaponNegev) == 0x1F70, "C_WeaponNegev size should be 0x1F70");
 	}
 }

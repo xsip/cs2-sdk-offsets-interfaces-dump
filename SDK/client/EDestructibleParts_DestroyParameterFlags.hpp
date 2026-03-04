@@ -6,13 +6,14 @@
 namespace CS2 {
 	namespace client {
 		enum EDestructibleParts_DestroyParameterFlags : std::uint32_t {
-			EDestructibleParts_DestroyParameterFlags_Default = 0x3,
-			EDestructibleParts_DestroyParameterFlags_EnableFlinches = 0x2,
-			EDestructibleParts_DestroyParameterFlags_ForceDamageApply = 0x4,
+			EDestructibleParts_DestroyParameterFlags_Default = 0x7,
+			EDestructibleParts_DestroyParameterFlags_EnableFlinches = 0x4,
+			EDestructibleParts_DestroyParameterFlags_ForceDamageApply = 0x8,
 			EDestructibleParts_DestroyParameterFlags_GenerateBreakpieces = 0x1,
-			EDestructibleParts_DestroyParameterFlags_IgnoreHealthCheck = 0x10,
-			EDestructibleParts_DestroyParameterFlags_IgnoreKillEntityFlag = 0x8,
-			EDestructibleParts_DestroyParameterFlags_None = 0x0
+			EDestructibleParts_DestroyParameterFlags_IgnoreHealthCheck = 0x20,
+			EDestructibleParts_DestroyParameterFlags_IgnoreKillEntityFlag = 0x10,
+			EDestructibleParts_DestroyParameterFlags_None = 0x0,
+			EDestructibleParts_DestroyParameterFlags_SetBodyGroupAndCollisionState = 0x2
 		};
 	}
 }

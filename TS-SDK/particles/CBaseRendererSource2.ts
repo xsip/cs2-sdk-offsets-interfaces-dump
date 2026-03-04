@@ -27,10 +27,9 @@ export const particles_CBaseRendererSource2  = {
 	m_flDiffuseAmount: 5272n, // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 	m_flDiffuseClamp: 5640n, // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 	m_nLightingControlPoint: 6008n, // int32_t m_nLightingControlPoint; |  0x1778 | Schema_Builtin | Size: 0x4
-	m_nSelfIllumPerParticle: 6012n, // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
-	m_nOutputBlendMode: 6016n, // particles::ParticleOutputBlendMode_t  | Schema_DeclaredEnum | Size: 0x4
-	m_bGammaCorrectVertexColors: 6020n, // bool m_bGammaCorrectVertexColors; |  0x1784 | Schema_Builtin | Size: 0x1
-	m_bSaturateColorPreAlphaBlend: 6021n, // bool m_bSaturateColorPreAlphaBlend; |  0x1785 | Schema_Builtin | Size: 0x1
+	m_nOutputBlendMode: 6012n, // particles::ParticleOutputBlendMode_t  | Schema_DeclaredEnum | Size: 0x4
+	m_bGammaCorrectVertexColors: 6016n, // bool m_bGammaCorrectVertexColors; |  0x1780 | Schema_Builtin | Size: 0x1
+	m_bSaturateColorPreAlphaBlend: 6017n, // bool m_bSaturateColorPreAlphaBlend; |  0x1781 | Schema_Builtin | Size: 0x1
 	m_flAddSelfAmount: 6024n, // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 	m_flDesaturation: 6392n, // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 	m_flOverbrightFactor: 6760n, // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170

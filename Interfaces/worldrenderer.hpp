@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace worldrenderer {
-			constexpr std::ptrdiff_t WorldRendererMgr001 = 0x1fec50; 
+			constexpr std::ptrdiff_t WorldRendererMgr001 = 0x214a00; 
 		}
 	}
 }

@@ -21,14 +21,14 @@ namespace CS2 {
 	namespace server {
 		class CFuncInteractionLayerClip : public CS2::server::CBaseModelEntity {
 		public:
-			bool m_bDisabled; // 0x7d8 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x730 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlSymbolLarge m_iszInteractsAs; // 0x7e0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszInteractsWith; // 0x7e8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszInteractsAs; // 0x738 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszInteractsWith; // 0x740 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_bDisabled) == 0x7D8, "m_bDisabled in CFuncInteractionLayerClip should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_iszInteractsAs) == 0x7E0, "m_iszInteractsAs in CFuncInteractionLayerClip should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_iszInteractsWith) == 0x7E8, "m_iszInteractsWith in CFuncInteractionLayerClip should be at offset 0x7E8");
-		static_assert(sizeof(CS2::server::CFuncInteractionLayerClip) == 0x7F0, "CFuncInteractionLayerClip size should be 0x7F0");
+		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_bDisabled) == 0x730, "m_bDisabled in CFuncInteractionLayerClip should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_iszInteractsAs) == 0x738, "m_iszInteractsAs in CFuncInteractionLayerClip should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_iszInteractsWith) == 0x740, "m_iszInteractsWith in CFuncInteractionLayerClip should be at offset 0x740");
+		static_assert(sizeof(CS2::server::CFuncInteractionLayerClip) == 0x748, "CFuncInteractionLayerClip size should be 0x748");
 	}
 }

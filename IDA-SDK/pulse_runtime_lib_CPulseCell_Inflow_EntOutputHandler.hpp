@@ -7,11 +7,11 @@
 #include "pulse_runtime_lib_PulseRegisterMap_t.hpp"
 
 class pulse_runtime_lib_CPulseCell_Inflow_EntOutputHandler {
-    char vTable501[0x8];
+    void **__vftable_0;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char end_pad_502[0x3c];
+    char end_pad_512[0x3c];
     pulse_runtime_lib_PulseRuntimeChunkIndex_t m_EntryChunk;
-    char pad_506[0x4];
+    char pad_517[0x4];
     pulse_runtime_lib_PulseRegisterMap_t m_RegisterMap;
     PulseSymbol_t m_SourceEntity;
     PulseSymbol_t m_SourceOutput;

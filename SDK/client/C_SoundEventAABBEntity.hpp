@@ -21,11 +21,11 @@ namespace CS2 {
 	namespace client {
 		class C_SoundEventAABBEntity : public CS2::client::C_SoundEventEntity {
 		public:
-			GlobalTypes::Vector m_vMins; // 0x6c0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vMaxs; // 0x6cc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vMins; // 0x6b8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vMaxs; // 0x6c4 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::client::C_SoundEventAABBEntity, m_vMins) == 0x6C0, "m_vMins in C_SoundEventAABBEntity should be at offset 0x6C0");
-		static_assert(offsetof(CS2::client::C_SoundEventAABBEntity, m_vMaxs) == 0x6CC, "m_vMaxs in C_SoundEventAABBEntity should be at offset 0x6CC");
-		static_assert(sizeof(CS2::client::C_SoundEventAABBEntity) == 0x6D8, "C_SoundEventAABBEntity size should be 0x6D8");
+		static_assert(offsetof(CS2::client::C_SoundEventAABBEntity, m_vMins) == 0x6B8, "m_vMins in C_SoundEventAABBEntity should be at offset 0x6B8");
+		static_assert(offsetof(CS2::client::C_SoundEventAABBEntity, m_vMaxs) == 0x6C4, "m_vMaxs in C_SoundEventAABBEntity should be at offset 0x6C4");
+		static_assert(sizeof(CS2::client::C_SoundEventAABBEntity) == 0x6D0, "C_SoundEventAABBEntity size should be 0x6D0");
 	}
 }

@@ -22,6 +22,6 @@ namespace CS2 {
 		class CFuncLadderAlias_func_useableladder : public CS2::server::CFuncLadder {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFuncLadderAlias_func_useableladder) == 0x888, "CFuncLadderAlias_func_useableladder size should be 0x888");
+		static_assert(sizeof(CS2::server::CFuncLadderAlias_func_useableladder) == 0x7C0, "CFuncLadderAlias_func_useableladder size should be 0x7C0");
 	}
 }

@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace client {
 		class CRagdollManager : public CS2::client::C_BaseEntity {
 		public:
-			int8_t m_iCurrentMaxRagdollCount; // 0x5f8 | Schema_Builtin | Size: 0x1
+			int8_t m_iCurrentMaxRagdollCount; // 0x608 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::CRagdollManager, m_iCurrentMaxRagdollCount) == 0x5F8, "m_iCurrentMaxRagdollCount in CRagdollManager should be at offset 0x5F8");
-		static_assert(sizeof(CS2::client::CRagdollManager) == 0x600, "CRagdollManager size should be 0x600");
+		static_assert(offsetof(CS2::client::CRagdollManager, m_iCurrentMaxRagdollCount) == 0x608, "m_iCurrentMaxRagdollCount in CRagdollManager should be at offset 0x608");
+		static_assert(sizeof(CS2::client::CRagdollManager) == 0x610, "CRagdollManager size should be 0x610");
 	}
 }

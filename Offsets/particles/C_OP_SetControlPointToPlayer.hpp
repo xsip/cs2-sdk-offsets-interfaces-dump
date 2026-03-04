@@ -13,6 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nCP1 = 0x1d8; // int32_t m_nCP1; |  0x1d8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_vecCP1Pos = 0x1dc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bOrientToEyes = 0x1e8; // bool m_bOrientToEyes; |  0x1e8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nPosition = 0x1ec; // particles::ParticleEntityPos_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

@@ -28,59 +28,59 @@ namespace CS2 {
 	namespace client {
 		class C_Sprite : public CS2::client::C_BaseModelEntity {
 		public:
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSpriteMaterial; // 0xeb0 | Schema_Atomic | Size: 0x8
-			char  m_hSpriteMaterial[0x8]; // 0xeb0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hAttachedToEntity; // 0xeb8 | Schema_Atomic | Size: 0x4
-			// char  m_hAttachedToEntity[0x4]; // 0xeb8 | Schema_Atomic | Size: 0x4
-			modellib::AttachmentHandle_t m_nAttachment; // 0xebc | Schema_DeclaredClass | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSpriteMaterial; // 0xe88 | Schema_Atomic | Size: 0x8
+			char m_hSpriteMaterial[0x8]; // 0xe88 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hAttachedToEntity; // 0xe90 | Schema_Atomic | Size: 0x4
+			// char m_hAttachedToEntity[0x4]; // 0xe90 | Schema_Atomic | Size: 0x4
+			modellib::AttachmentHandle_t m_nAttachment; // 0xe94 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flSpriteFramerate; // 0xec0 | Schema_Builtin | Size: 0x4
-			float32 m_flFrame; // 0xec4 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flDieTime; // 0xec8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flSpriteFramerate; // 0xe98 | Schema_Builtin | Size: 0x4
+			float32 m_flFrame; // 0xe9c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flDieTime; // 0xea0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0xc);
-			uint32_t m_nBrightness; // 0xed8 | Schema_Builtin | Size: 0x4
-			float32 m_flBrightnessDuration; // 0xedc | Schema_Builtin | Size: 0x4
-			float32 m_flSpriteScale; // 0xee0 | Schema_Builtin | Size: 0x4
-			float32 m_flScaleDuration; // 0xee4 | Schema_Builtin | Size: 0x4
-			bool m_bWorldSpaceScale; // 0xee8 | Schema_Builtin | Size: 0x1
+			uint32_t m_nBrightness; // 0xeb0 | Schema_Builtin | Size: 0x4
+			float32 m_flBrightnessDuration; // 0xeb4 | Schema_Builtin | Size: 0x4
+			float32 m_flSpriteScale; // 0xeb8 | Schema_Builtin | Size: 0x4
+			float32 m_flScaleDuration; // 0xebc | Schema_Builtin | Size: 0x4
+			bool m_bWorldSpaceScale; // 0xec0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flGlowProxySize; // 0xeec | Schema_Builtin | Size: 0x4
-			float32 m_flHDRColorScale; // 0xef0 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLastTime; // 0xef4 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flMaxFrame; // 0xef8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartScale; // 0xefc | Schema_Builtin | Size: 0x4
-			float32 m_flDestScale; // 0xf00 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flScaleTimeStart; // 0xf04 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nStartBrightness; // 0xf08 | Schema_Builtin | Size: 0x4
-			int32_t m_nDestBrightness; // 0xf0c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flBrightnessTimeStart; // 0xf10 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flGlowProxySize; // 0xec4 | Schema_Builtin | Size: 0x4
+			float32 m_flHDRColorScale; // 0xec8 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastTime; // 0xecc | Schema_DeclaredClass | Size: 0x4
+			float32 m_flMaxFrame; // 0xed0 | Schema_Builtin | Size: 0x4
+			float32 m_flStartScale; // 0xed4 | Schema_Builtin | Size: 0x4
+			float32 m_flDestScale; // 0xed8 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flScaleTimeStart; // 0xedc | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nStartBrightness; // 0xee0 | Schema_Builtin | Size: 0x4
+			int32_t m_nDestBrightness; // 0xee4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flBrightnessTimeStart; // 0xee8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0xc);
-			int32_t m_nSpriteWidth; // 0xf20 | Schema_Builtin | Size: 0x4
-			int32_t m_nSpriteHeight; // 0xf24 | Schema_Builtin | Size: 0x4
+			int32_t m_nSpriteWidth; // 0xef8 | Schema_Builtin | Size: 0x4
+			int32_t m_nSpriteHeight; // 0xefc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_Sprite, m_hSpriteMaterial) == 0xEB0, "m_hSpriteMaterial in C_Sprite should be at offset 0xEB0");
-		static_assert(offsetof(CS2::client::C_Sprite, m_hAttachedToEntity) == 0xEB8, "m_hAttachedToEntity in C_Sprite should be at offset 0xEB8");
-		static_assert(offsetof(CS2::client::C_Sprite, m_nAttachment) == 0xEBC, "m_nAttachment in C_Sprite should be at offset 0xEBC");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flSpriteFramerate) == 0xEC0, "m_flSpriteFramerate in C_Sprite should be at offset 0xEC0");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flFrame) == 0xEC4, "m_flFrame in C_Sprite should be at offset 0xEC4");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flDieTime) == 0xEC8, "m_flDieTime in C_Sprite should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_Sprite, m_nBrightness) == 0xED8, "m_nBrightness in C_Sprite should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flBrightnessDuration) == 0xEDC, "m_flBrightnessDuration in C_Sprite should be at offset 0xEDC");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flSpriteScale) == 0xEE0, "m_flSpriteScale in C_Sprite should be at offset 0xEE0");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flScaleDuration) == 0xEE4, "m_flScaleDuration in C_Sprite should be at offset 0xEE4");
-		static_assert(offsetof(CS2::client::C_Sprite, m_bWorldSpaceScale) == 0xEE8, "m_bWorldSpaceScale in C_Sprite should be at offset 0xEE8");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flGlowProxySize) == 0xEEC, "m_flGlowProxySize in C_Sprite should be at offset 0xEEC");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flHDRColorScale) == 0xEF0, "m_flHDRColorScale in C_Sprite should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flLastTime) == 0xEF4, "m_flLastTime in C_Sprite should be at offset 0xEF4");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flMaxFrame) == 0xEF8, "m_flMaxFrame in C_Sprite should be at offset 0xEF8");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flStartScale) == 0xEFC, "m_flStartScale in C_Sprite should be at offset 0xEFC");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flDestScale) == 0xF00, "m_flDestScale in C_Sprite should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flScaleTimeStart) == 0xF04, "m_flScaleTimeStart in C_Sprite should be at offset 0xF04");
-		static_assert(offsetof(CS2::client::C_Sprite, m_nStartBrightness) == 0xF08, "m_nStartBrightness in C_Sprite should be at offset 0xF08");
-		static_assert(offsetof(CS2::client::C_Sprite, m_nDestBrightness) == 0xF0C, "m_nDestBrightness in C_Sprite should be at offset 0xF0C");
-		static_assert(offsetof(CS2::client::C_Sprite, m_flBrightnessTimeStart) == 0xF10, "m_flBrightnessTimeStart in C_Sprite should be at offset 0xF10");
-		static_assert(offsetof(CS2::client::C_Sprite, m_nSpriteWidth) == 0xF20, "m_nSpriteWidth in C_Sprite should be at offset 0xF20");
-		static_assert(offsetof(CS2::client::C_Sprite, m_nSpriteHeight) == 0xF24, "m_nSpriteHeight in C_Sprite should be at offset 0xF24");
-		static_assert(sizeof(CS2::client::C_Sprite) == 0xF28, "C_Sprite size should be 0xF28");
+		static_assert(offsetof(CS2::client::C_Sprite, m_hSpriteMaterial) == 0xE88, "m_hSpriteMaterial in C_Sprite should be at offset 0xE88");
+		static_assert(offsetof(CS2::client::C_Sprite, m_hAttachedToEntity) == 0xE90, "m_hAttachedToEntity in C_Sprite should be at offset 0xE90");
+		static_assert(offsetof(CS2::client::C_Sprite, m_nAttachment) == 0xE94, "m_nAttachment in C_Sprite should be at offset 0xE94");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flSpriteFramerate) == 0xE98, "m_flSpriteFramerate in C_Sprite should be at offset 0xE98");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flFrame) == 0xE9C, "m_flFrame in C_Sprite should be at offset 0xE9C");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flDieTime) == 0xEA0, "m_flDieTime in C_Sprite should be at offset 0xEA0");
+		static_assert(offsetof(CS2::client::C_Sprite, m_nBrightness) == 0xEB0, "m_nBrightness in C_Sprite should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flBrightnessDuration) == 0xEB4, "m_flBrightnessDuration in C_Sprite should be at offset 0xEB4");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flSpriteScale) == 0xEB8, "m_flSpriteScale in C_Sprite should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flScaleDuration) == 0xEBC, "m_flScaleDuration in C_Sprite should be at offset 0xEBC");
+		static_assert(offsetof(CS2::client::C_Sprite, m_bWorldSpaceScale) == 0xEC0, "m_bWorldSpaceScale in C_Sprite should be at offset 0xEC0");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flGlowProxySize) == 0xEC4, "m_flGlowProxySize in C_Sprite should be at offset 0xEC4");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flHDRColorScale) == 0xEC8, "m_flHDRColorScale in C_Sprite should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flLastTime) == 0xECC, "m_flLastTime in C_Sprite should be at offset 0xECC");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flMaxFrame) == 0xED0, "m_flMaxFrame in C_Sprite should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flStartScale) == 0xED4, "m_flStartScale in C_Sprite should be at offset 0xED4");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flDestScale) == 0xED8, "m_flDestScale in C_Sprite should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flScaleTimeStart) == 0xEDC, "m_flScaleTimeStart in C_Sprite should be at offset 0xEDC");
+		static_assert(offsetof(CS2::client::C_Sprite, m_nStartBrightness) == 0xEE0, "m_nStartBrightness in C_Sprite should be at offset 0xEE0");
+		static_assert(offsetof(CS2::client::C_Sprite, m_nDestBrightness) == 0xEE4, "m_nDestBrightness in C_Sprite should be at offset 0xEE4");
+		static_assert(offsetof(CS2::client::C_Sprite, m_flBrightnessTimeStart) == 0xEE8, "m_flBrightnessTimeStart in C_Sprite should be at offset 0xEE8");
+		static_assert(offsetof(CS2::client::C_Sprite, m_nSpriteWidth) == 0xEF8, "m_nSpriteWidth in C_Sprite should be at offset 0xEF8");
+		static_assert(offsetof(CS2::client::C_Sprite, m_nSpriteHeight) == 0xEFC, "m_nSpriteHeight in C_Sprite should be at offset 0xEFC");
+		static_assert(sizeof(CS2::client::C_Sprite) == 0xF00, "C_Sprite size should be 0xF00");
 	}
 }

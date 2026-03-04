@@ -21,30 +21,30 @@ namespace CS2 {
 	namespace server {
 		class CBaseMoveBehavior : public CS2::server::CPathKeyFrame {
 		public:
-			int32_t m_iPositionInterpolator; // 0x550 | Schema_Builtin | Size: 0x4
-			int32_t m_iRotationInterpolator; // 0x554 | Schema_Builtin | Size: 0x4
-			float32 m_flAnimStartTime; // 0x558 | Schema_Builtin | Size: 0x4
-			float32 m_flAnimEndTime; // 0x55c | Schema_Builtin | Size: 0x4
-			float32 m_flAverageSpeedAcrossFrame; // 0x560 | Schema_Builtin | Size: 0x4
+			int32_t m_iPositionInterpolator; // 0x500 | Schema_Builtin | Size: 0x4
+			int32_t m_iRotationInterpolator; // 0x504 | Schema_Builtin | Size: 0x4
+			float32 m_flAnimStartTime; // 0x508 | Schema_Builtin | Size: 0x4
+			float32 m_flAnimEndTime; // 0x50c | Schema_Builtin | Size: 0x4
+			float32 m_flAverageSpeedAcrossFrame; // 0x510 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::CPathKeyFrame* m_pCurrentKeyFrame; // 0x568 | Schema_Ptr | Size: 0x8
-			server::CPathKeyFrame* m_pTargetKeyFrame; // 0x570 | Schema_Ptr | Size: 0x8
-			server::CPathKeyFrame* m_pPreKeyFrame; // 0x578 | Schema_Ptr | Size: 0x8
-			server::CPathKeyFrame* m_pPostKeyFrame; // 0x580 | Schema_Ptr | Size: 0x8
-			float32 m_flTimeIntoFrame; // 0x588 | Schema_Builtin | Size: 0x4
-			int32_t m_iDirection; // 0x58c | Schema_Builtin | Size: 0x4
+			server::CPathKeyFrame* m_pCurrentKeyFrame; // 0x518 | Schema_Ptr | Size: 0x8
+			server::CPathKeyFrame* m_pTargetKeyFrame; // 0x520 | Schema_Ptr | Size: 0x8
+			server::CPathKeyFrame* m_pPreKeyFrame; // 0x528 | Schema_Ptr | Size: 0x8
+			server::CPathKeyFrame* m_pPostKeyFrame; // 0x530 | Schema_Ptr | Size: 0x8
+			float32 m_flTimeIntoFrame; // 0x538 | Schema_Builtin | Size: 0x4
+			int32_t m_iDirection; // 0x53c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iPositionInterpolator) == 0x550, "m_iPositionInterpolator in CBaseMoveBehavior should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iRotationInterpolator) == 0x554, "m_iRotationInterpolator in CBaseMoveBehavior should be at offset 0x554");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flAnimStartTime) == 0x558, "m_flAnimStartTime in CBaseMoveBehavior should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flAnimEndTime) == 0x55C, "m_flAnimEndTime in CBaseMoveBehavior should be at offset 0x55C");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flAverageSpeedAcrossFrame) == 0x560, "m_flAverageSpeedAcrossFrame in CBaseMoveBehavior should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pCurrentKeyFrame) == 0x568, "m_pCurrentKeyFrame in CBaseMoveBehavior should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pTargetKeyFrame) == 0x570, "m_pTargetKeyFrame in CBaseMoveBehavior should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pPreKeyFrame) == 0x578, "m_pPreKeyFrame in CBaseMoveBehavior should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pPostKeyFrame) == 0x580, "m_pPostKeyFrame in CBaseMoveBehavior should be at offset 0x580");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flTimeIntoFrame) == 0x588, "m_flTimeIntoFrame in CBaseMoveBehavior should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iDirection) == 0x58C, "m_iDirection in CBaseMoveBehavior should be at offset 0x58C");
-		static_assert(sizeof(CS2::server::CBaseMoveBehavior) == 0x590, "CBaseMoveBehavior size should be 0x590");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iPositionInterpolator) == 0x500, "m_iPositionInterpolator in CBaseMoveBehavior should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iRotationInterpolator) == 0x504, "m_iRotationInterpolator in CBaseMoveBehavior should be at offset 0x504");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flAnimStartTime) == 0x508, "m_flAnimStartTime in CBaseMoveBehavior should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flAnimEndTime) == 0x50C, "m_flAnimEndTime in CBaseMoveBehavior should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flAverageSpeedAcrossFrame) == 0x510, "m_flAverageSpeedAcrossFrame in CBaseMoveBehavior should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pCurrentKeyFrame) == 0x518, "m_pCurrentKeyFrame in CBaseMoveBehavior should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pTargetKeyFrame) == 0x520, "m_pTargetKeyFrame in CBaseMoveBehavior should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pPreKeyFrame) == 0x528, "m_pPreKeyFrame in CBaseMoveBehavior should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_pPostKeyFrame) == 0x530, "m_pPostKeyFrame in CBaseMoveBehavior should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flTimeIntoFrame) == 0x538, "m_flTimeIntoFrame in CBaseMoveBehavior should be at offset 0x538");
+		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iDirection) == 0x53C, "m_iDirection in CBaseMoveBehavior should be at offset 0x53C");
+		static_assert(sizeof(CS2::server::CBaseMoveBehavior) == 0x540, "CBaseMoveBehavior size should be 0x540");
 	}
 }

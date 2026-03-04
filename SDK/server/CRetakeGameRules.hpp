@@ -33,7 +33,7 @@ namespace CS2 {
 			int32_t m_iFirstSecondHalfRound; // 0x140 | Schema_Builtin | Size: 0x4
 			int32_t m_iBombSite; // 0x144 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hBombPlanter; // 0x148 | Schema_Atomic | Size: 0x4
-			// char  m_hBombPlanter[0x4]; // 0x148 | Schema_Atomic | Size: 0x4
+			// char m_hBombPlanter[0x4]; // 0x148 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xa4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CRetakeGameRules, m_nMatchSeed) == 0x138, "m_nMatchSeed in CRetakeGameRules should be at offset 0x138");

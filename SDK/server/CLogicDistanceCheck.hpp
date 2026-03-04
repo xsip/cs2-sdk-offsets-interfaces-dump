@@ -22,21 +22,21 @@ namespace CS2 {
 	namespace server {
 		class CLogicDistanceCheck : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszEntityA; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszEntityB; // 0x4f8 | Schema_Atomic | Size: 0x8
-			float32 m_flZone1Distance; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_flZone2Distance; // 0x504 | Schema_Builtin | Size: 0x4
-			entity2::CEntityIOOutput m_InZone1; // 0x508 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_InZone2; // 0x530 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_InZone3; // 0x558 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_iszEntityA; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszEntityB; // 0x4b0 | Schema_Atomic | Size: 0x8
+			float32 m_flZone1Distance; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_flZone2Distance; // 0x4bc | Schema_Builtin | Size: 0x4
+			entity2::CEntityIOOutput m_InZone1; // 0x4c0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_InZone2; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_InZone3; // 0x4f0 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_iszEntityA) == 0x4F0, "m_iszEntityA in CLogicDistanceCheck should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_iszEntityB) == 0x4F8, "m_iszEntityB in CLogicDistanceCheck should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_flZone1Distance) == 0x500, "m_flZone1Distance in CLogicDistanceCheck should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_flZone2Distance) == 0x504, "m_flZone2Distance in CLogicDistanceCheck should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone1) == 0x508, "m_InZone1 in CLogicDistanceCheck should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone2) == 0x530, "m_InZone2 in CLogicDistanceCheck should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone3) == 0x558, "m_InZone3 in CLogicDistanceCheck should be at offset 0x558");
-		static_assert(sizeof(CS2::server::CLogicDistanceCheck) == 0x580, "CLogicDistanceCheck size should be 0x580");
+		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_iszEntityA) == 0x4A8, "m_iszEntityA in CLogicDistanceCheck should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_iszEntityB) == 0x4B0, "m_iszEntityB in CLogicDistanceCheck should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_flZone1Distance) == 0x4B8, "m_flZone1Distance in CLogicDistanceCheck should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_flZone2Distance) == 0x4BC, "m_flZone2Distance in CLogicDistanceCheck should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone1) == 0x4C0, "m_InZone1 in CLogicDistanceCheck should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone2) == 0x4D8, "m_InZone2 in CLogicDistanceCheck should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone3) == 0x4F0, "m_InZone3 in CLogicDistanceCheck should be at offset 0x4F0");
+		static_assert(sizeof(CS2::server::CLogicDistanceCheck) == 0x508, "CLogicDistanceCheck size should be 0x508");
 	}
 }

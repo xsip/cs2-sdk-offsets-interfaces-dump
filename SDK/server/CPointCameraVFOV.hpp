@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CPointCameraVFOV : public CS2::server::CPointCamera {
 		public:
-			float32 m_flVerticalFOV; // 0x550 | Schema_Builtin | Size: 0x4
+			float32 m_flVerticalFOV; // 0x508 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPointCameraVFOV, m_flVerticalFOV) == 0x550, "m_flVerticalFOV in CPointCameraVFOV should be at offset 0x550");
-		static_assert(sizeof(CS2::server::CPointCameraVFOV) == 0x558, "CPointCameraVFOV size should be 0x558");
+		static_assert(offsetof(CS2::server::CPointCameraVFOV, m_flVerticalFOV) == 0x508, "m_flVerticalFOV in CPointCameraVFOV should be at offset 0x508");
+		static_assert(sizeof(CS2::server::CPointCameraVFOV) == 0x510, "CPointCameraVFOV size should be 0x510");
 	}
 }

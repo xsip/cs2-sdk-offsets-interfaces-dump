@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x568
+			// Class size: 0x4F0
 			namespace CCommentaryAuto /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_OnCommentaryNewGame = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnCommentaryMidGame = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnCommentaryMultiplayerSpawn = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnCommentaryNewGame = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnCommentaryMidGame = 0x4c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnCommentaryMultiplayerSpawn = 0x4d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

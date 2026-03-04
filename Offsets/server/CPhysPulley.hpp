@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x590
+			// Class size: 0x538
 			namespace CPhysPulley /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_position2 = 0x560; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_offset = 0x56c; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_addLength = 0x584; // float32 m_addLength; |  0x584 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_gearRatio = 0x588; // float32 m_gearRatio; |  0x588 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_position2 = 0x508; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_offset = 0x514; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_addLength = 0x52c; // float32 m_addLength; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_gearRatio = 0x530; // float32 m_gearRatio; |  0x530 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

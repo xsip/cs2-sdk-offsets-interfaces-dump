@@ -4,12 +4,14 @@
 
 
 class animgraphlib_CStepsRemainingMetricEvaluator {
-    char vTable80[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     char m_means[0x18];
     char m_standardDeviations[0x18];
     float32 m_flWeight;
     int32_t m_nDimensionStartIndex;
     char m_footIndices[0x18];
     float32 m_flMinStepsRemaining;
-    char end_pad_233[0x4];
+    char end_pad_244[0x4];
 };

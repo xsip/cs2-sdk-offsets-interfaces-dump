@@ -10,15 +10,11 @@
 #endif
 
 
+#include <SDK/animationsystem/CAnimFrameBlockAnim.hpp>
 #include <SDK/animationsystem/CAnimEncodeDifference.hpp>
 
 
 
-namespace CS2 {
-	namespace animationsystem {
-		class CAnimFrameBlockAnim;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -30,7 +26,7 @@ namespace CS2 {
 			int32_t m_nFrames; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nFramesPerBlock; // 0x14 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlVector<animationsystem::CAnimFrameBlockAnim> m_frameblockArray; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_frameblockArray[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_frameblockArray[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			animationsystem::CAnimEncodeDifference m_usageDifferences; // 0x30 | Schema_DeclaredClass | Size: 0xa8
 		};
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodedFrames, m_fileName) == 0x0, "m_fileName in CAnimEncodedFrames should be at offset 0x0");

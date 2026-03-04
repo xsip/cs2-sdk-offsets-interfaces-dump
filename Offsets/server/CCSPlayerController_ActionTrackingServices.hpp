@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x270
+			// Class size: 0x420
 			namespace CCSPlayerController_ActionTrackingServices /*: public CS2::client::CPlayerControllerComponent*/ {
 				constexpr std::ptrdiff_t m_perRoundStats = 0x40; // server::CUtlVectorEmbeddedNetworkVar<server::CSPerRoundStats_t>  | Schema_Atomic | Size: 0x88
 				constexpr std::ptrdiff_t m_matchStats = 0xc8; // server::CSMatchStats_t  | Schema_DeclaredClass | Size: 0xc0

@@ -22,9 +22,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x18);
 			GlobalTypes::CUtlVector< float32 > m_means; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_means[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_means[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< float32 > m_standardDeviations; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_standardDeviations[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_standardDeviations[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			float32 m_flWeight; // 0x48 | Schema_Builtin | Size: 0x4
 			int32_t m_nDimensionStartIndex; // 0x4c | Schema_Builtin | Size: 0x4
 		};

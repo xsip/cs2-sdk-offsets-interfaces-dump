@@ -1,16 +1,16 @@
 // generated - do not edit!
 
-import {client_CBaseAnimGraphAnimGraphController} from './CBaseAnimGraphAnimGraphController';
-// Class size: 0x398
-// BaseClass: : public CS2::client::CBaseAnimGraphAnimGraphController
+import {client_CAnimGraphControllerBase} from './CAnimGraphControllerBase';
+// Class size: 0x200
+// BaseClass: : public CS2::client::CAnimGraphControllerBase
 export const client_C_CSGO_PreviewPlayer_GraphController  = {
-	...client_CBaseAnimGraphAnimGraphController,
-	m_pszCharacterMode: 616n, // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
-	m_pszTeamPreviewVariant: 656n, // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
-	m_pszTeamPreviewPosition: 696n, // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
-	m_pszEndOfMatchCelebration: 736n, // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
-	m_nTeamPreviewRandom: 776n, // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
-	m_pszWeaponState: 808n, // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
-	m_pszWeaponType: 848n, // GlobalTypes::CAnimGraphParamOptionalRef<char*>  | Schema_Atomic | Size: 0x28
-	m_bCT: 888n, // GlobalTypes::CAnimGraphParamOptionalRef  | Schema_Atomic | Size: 0x20
+	...client_CAnimGraphControllerBase,
+	m_pszCharacterMode: 144n, // GlobalTypes::CAnimGraphParamRef<char*>  | Schema_Atomic | Size: 0x30
+	m_pszTeamPreviewVariant: 192n, // GlobalTypes::CAnimGraphParamRef<char*>  | Schema_Atomic | Size: 0x30
+	m_pszTeamPreviewPosition: 240n, // GlobalTypes::CAnimGraphParamRef<char*>  | Schema_Atomic | Size: 0x30
+	m_pszEndOfMatchCelebration: 288n, // GlobalTypes::CAnimGraphParamRef<char*>  | Schema_Atomic | Size: 0x30
+	m_nTeamPreviewRandom: 336n, // GlobalTypes::CAnimGraphParamRef  | Schema_Atomic | Size: 0x28
+	m_pszWeaponState: 376n, // GlobalTypes::CAnimGraphParamRef<char*>  | Schema_Atomic | Size: 0x30
+	m_pszWeaponType: 424n, // GlobalTypes::CAnimGraphParamRef<char*>  | Schema_Atomic | Size: 0x30
+	m_bCT: 472n, // GlobalTypes::CAnimGraphParamRef  | Schema_Atomic | Size: 0x28
 }

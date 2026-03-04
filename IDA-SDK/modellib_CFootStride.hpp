@@ -7,6 +7,6 @@
 
 class modellib_CFootStride {
     modellib_CFootCycleDefinition m_definition;
-    char pad_326[0x4];
+    char pad_328[0x4];
     modellib_CFootTrajectories m_trajectories;
 };

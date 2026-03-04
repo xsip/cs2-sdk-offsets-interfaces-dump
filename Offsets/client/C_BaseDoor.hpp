@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEB8
+			// Class size: 0xE90
 			namespace C_BaseDoor /*: public CS2::client::C_BaseToggle*/ {
-				constexpr std::ptrdiff_t m_bIsUsable = 0xeb0; // bool m_bIsUsable; |  0xeb0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsUsable = 0xe88; // bool m_bIsUsable; |  0xe88 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

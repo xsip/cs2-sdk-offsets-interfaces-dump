@@ -34,13 +34,13 @@ namespace CS2 {
 			float32 m_flInertiaScaleInv; // 0x78 | Schema_Builtin | Size: 0x4
 			float32 m_flLinearDamping; // 0x7c | Schema_Builtin | Size: 0x4
 			float32 m_flAngularDamping; // 0x80 | Schema_Builtin | Size: 0x4
-			float32 m_flLinearDrag; // 0x84 | Schema_Builtin | Size: 0x4
-			float32 m_flAngularDrag; // 0x88 | Schema_Builtin | Size: 0x4
-			float32 m_flLinearBuoyancyDrag; // 0x8c | Schema_Builtin | Size: 0x4
-			float32 m_flAngularBuoyancyDrag; // 0x90 | Schema_Builtin | Size: 0x4
+			float32 m_flLinearDragScale; // 0x84 | Schema_Builtin | Size: 0x4
+			float32 m_flAngularDragScale; // 0x88 | Schema_Builtin | Size: 0x4
+			float32 m_flLinearFluidDragScale; // 0x8c | Schema_Builtin | Size: 0x4
+			float32 m_flAngularFluidDragScale; // 0x90 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vLastAwakeForceAccum; // 0x94 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vLastAwakeTorqueAccum; // 0xa0 | Schema_Atomic | Size: 0xc
-			float32 m_flBuoyancyFactor; // 0xac | Schema_Builtin | Size: 0x4
+			float32 m_flBuoyancyScale; // 0xac | Schema_Builtin | Size: 0x4
 			float32 m_flGravityScale; // 0xb0 | Schema_Builtin | Size: 0x4
 			float32 m_flTimeScale; // 0xb4 | Schema_Builtin | Size: 0x4
 			int32_t m_nBodyType; // 0xb8 | Schema_Builtin | Size: 0x4
@@ -53,7 +53,7 @@ namespace CS2 {
 			bool m_bSleeping; // 0xc8 | Schema_Builtin | Size: 0x1
 			bool m_bIsContinuousEnabled; // 0xc9 | Schema_Builtin | Size: 0x1
 			bool m_bDragEnabled; // 0xca | Schema_Builtin | Size: 0x1
-			bool m_bBuoyancyDragEnabled; // 0xcb | Schema_Builtin | Size: 0x1
+			S2_PAD(0x1);
 			GlobalTypes::Vector m_vGravity; // 0xcc | Schema_Atomic | Size: 0xc
 			bool m_bSpeculativeEnabled; // 0xd8 | Schema_Builtin | Size: 0x1
 			bool m_bHasShadowController; // 0xd9 | Schema_Builtin | Size: 0x1
@@ -73,13 +73,13 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flInertiaScaleInv) == 0x78, "m_flInertiaScaleInv in RnBodyDesc_t should be at offset 0x78");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flLinearDamping) == 0x7C, "m_flLinearDamping in RnBodyDesc_t should be at offset 0x7C");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flAngularDamping) == 0x80, "m_flAngularDamping in RnBodyDesc_t should be at offset 0x80");
-		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flLinearDrag) == 0x84, "m_flLinearDrag in RnBodyDesc_t should be at offset 0x84");
-		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flAngularDrag) == 0x88, "m_flAngularDrag in RnBodyDesc_t should be at offset 0x88");
-		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flLinearBuoyancyDrag) == 0x8C, "m_flLinearBuoyancyDrag in RnBodyDesc_t should be at offset 0x8C");
-		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flAngularBuoyancyDrag) == 0x90, "m_flAngularBuoyancyDrag in RnBodyDesc_t should be at offset 0x90");
+		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flLinearDragScale) == 0x84, "m_flLinearDragScale in RnBodyDesc_t should be at offset 0x84");
+		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flAngularDragScale) == 0x88, "m_flAngularDragScale in RnBodyDesc_t should be at offset 0x88");
+		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flLinearFluidDragScale) == 0x8C, "m_flLinearFluidDragScale in RnBodyDesc_t should be at offset 0x8C");
+		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flAngularFluidDragScale) == 0x90, "m_flAngularFluidDragScale in RnBodyDesc_t should be at offset 0x90");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_vLastAwakeForceAccum) == 0x94, "m_vLastAwakeForceAccum in RnBodyDesc_t should be at offset 0x94");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_vLastAwakeTorqueAccum) == 0xA0, "m_vLastAwakeTorqueAccum in RnBodyDesc_t should be at offset 0xA0");
-		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flBuoyancyFactor) == 0xAC, "m_flBuoyancyFactor in RnBodyDesc_t should be at offset 0xAC");
+		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flBuoyancyScale) == 0xAC, "m_flBuoyancyScale in RnBodyDesc_t should be at offset 0xAC");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flGravityScale) == 0xB0, "m_flGravityScale in RnBodyDesc_t should be at offset 0xB0");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_flTimeScale) == 0xB4, "m_flTimeScale in RnBodyDesc_t should be at offset 0xB4");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_nBodyType) == 0xB8, "m_nBodyType in RnBodyDesc_t should be at offset 0xB8");
@@ -92,7 +92,6 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_bSleeping) == 0xC8, "m_bSleeping in RnBodyDesc_t should be at offset 0xC8");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_bIsContinuousEnabled) == 0xC9, "m_bIsContinuousEnabled in RnBodyDesc_t should be at offset 0xC9");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_bDragEnabled) == 0xCA, "m_bDragEnabled in RnBodyDesc_t should be at offset 0xCA");
-		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_bBuoyancyDragEnabled) == 0xCB, "m_bBuoyancyDragEnabled in RnBodyDesc_t should be at offset 0xCB");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_vGravity) == 0xCC, "m_vGravity in RnBodyDesc_t should be at offset 0xCC");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_bSpeculativeEnabled) == 0xD8, "m_bSpeculativeEnabled in RnBodyDesc_t should be at offset 0xD8");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_bHasShadowController) == 0xD9, "m_bHasShadowController in RnBodyDesc_t should be at offset 0xD9");

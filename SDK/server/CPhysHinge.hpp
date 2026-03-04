@@ -25,46 +25,47 @@ namespace CS2 {
 		class CPhysHinge : public CS2::server::CPhysConstraint {
 		public:
 			S2_PAD(0x8);
-			server::ConstraintSoundInfo m_soundInfo; // 0x568 | Schema_DeclaredClass | Size: 0x98
-			entity2::CEntityIOOutput m_NotifyMinLimitReached; // 0x600 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_NotifyMaxLimitReached; // 0x628 | Schema_DeclaredClass | Size: 0x28
-			bool m_bAtMinLimit; // 0x650 | Schema_Builtin | Size: 0x1
-			bool m_bAtMaxLimit; // 0x651 | Schema_Builtin | Size: 0x1
+			server::ConstraintSoundInfo m_soundInfo; // 0x510 | Schema_DeclaredClass | Size: 0x98
+			entity2::CEntityIOOutput m_NotifyMinLimitReached; // 0x5a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_NotifyMaxLimitReached; // 0x5c0 | Schema_DeclaredClass | Size: 0x18
+			bool m_bAtMinLimit; // 0x5d8 | Schema_Builtin | Size: 0x1
+			bool m_bAtMaxLimit; // 0x5d9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			vphysics2::constraint_hingeparams_t m_hinge; // 0x654 | Schema_DeclaredClass | Size: 0x40
-			float32 m_hingeFriction; // 0x694 | Schema_Builtin | Size: 0x4
-			float32 m_systemLoadScale; // 0x698 | Schema_Builtin | Size: 0x4
-			bool m_bIsAxisLocal; // 0x69c | Schema_Builtin | Size: 0x1
+			vphysics2::constraint_hingeparams_t m_hinge; // 0x5dc | Schema_DeclaredClass | Size: 0x40
+			float32 m_hingeFriction; // 0x61c | Schema_Builtin | Size: 0x4
+			float32 m_systemLoadScale; // 0x620 | Schema_Builtin | Size: 0x4
+			bool m_bIsAxisLocal; // 0x624 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMinRotation; // 0x6a0 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxRotation; // 0x6a4 | Schema_Builtin | Size: 0x4
-			float32 m_flInitialRotation; // 0x6a8 | Schema_Builtin | Size: 0x4
-			float32 m_flMotorFrequency; // 0x6ac | Schema_Builtin | Size: 0x4
-			float32 m_flMotorDampingRatio; // 0x6b0 | Schema_Builtin | Size: 0x4
-			float32 m_flAngleSpeed; // 0x6b4 | Schema_Builtin | Size: 0x4
-			float32 m_flAngleSpeedThreshold; // 0x6b8 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnStartMoving; // 0x6c0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStopMoving; // 0x6e8 | Schema_DeclaredClass | Size: 0x28
+			float32 m_flMinRotation; // 0x628 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxRotation; // 0x62c | Schema_Builtin | Size: 0x4
+			float32 m_flInitialRotation; // 0x630 | Schema_Builtin | Size: 0x4
+			float32 m_flMotorFrequency; // 0x634 | Schema_Builtin | Size: 0x4
+			float32 m_flMotorDampingRatio; // 0x638 | Schema_Builtin | Size: 0x4
+			float32 m_flAngleSpeed; // 0x63c | Schema_Builtin | Size: 0x4
+			float32 m_flAngleSpeedThreshold; // 0x640 | Schema_Builtin | Size: 0x4
+			float32 m_flLimitsDebugVisRotation; // 0x644 | Schema_Builtin | Size: 0x4
+			entity2::CEntityIOOutput m_OnStartMoving; // 0x648 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnStopMoving; // 0x660 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CPhysHinge, m_soundInfo) == 0x568, "m_soundInfo in CPhysHinge should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_NotifyMinLimitReached) == 0x600, "m_NotifyMinLimitReached in CPhysHinge should be at offset 0x600");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_NotifyMaxLimitReached) == 0x628, "m_NotifyMaxLimitReached in CPhysHinge should be at offset 0x628");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_bAtMinLimit) == 0x650, "m_bAtMinLimit in CPhysHinge should be at offset 0x650");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_bAtMaxLimit) == 0x651, "m_bAtMaxLimit in CPhysHinge should be at offset 0x651");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_hinge) == 0x654, "m_hinge in CPhysHinge should be at offset 0x654");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_hingeFriction) == 0x694, "m_hingeFriction in CPhysHinge should be at offset 0x694");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_systemLoadScale) == 0x698, "m_systemLoadScale in CPhysHinge should be at offset 0x698");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_bIsAxisLocal) == 0x69C, "m_bIsAxisLocal in CPhysHinge should be at offset 0x69C");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_flMinRotation) == 0x6A0, "m_flMinRotation in CPhysHinge should be at offset 0x6A0");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_flMaxRotation) == 0x6A4, "m_flMaxRotation in CPhysHinge should be at offset 0x6A4");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_flInitialRotation) == 0x6A8, "m_flInitialRotation in CPhysHinge should be at offset 0x6A8");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_flMotorFrequency) == 0x6AC, "m_flMotorFrequency in CPhysHinge should be at offset 0x6AC");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_flMotorDampingRatio) == 0x6B0, "m_flMotorDampingRatio in CPhysHinge should be at offset 0x6B0");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_flAngleSpeed) == 0x6B4, "m_flAngleSpeed in CPhysHinge should be at offset 0x6B4");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_flAngleSpeedThreshold) == 0x6B8, "m_flAngleSpeedThreshold in CPhysHinge should be at offset 0x6B8");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_OnStartMoving) == 0x6C0, "m_OnStartMoving in CPhysHinge should be at offset 0x6C0");
-		static_assert(offsetof(CS2::server::CPhysHinge, m_OnStopMoving) == 0x6E8, "m_OnStopMoving in CPhysHinge should be at offset 0x6E8");
-		static_assert(sizeof(CS2::server::CPhysHinge) == 0x710, "CPhysHinge size should be 0x710");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_soundInfo) == 0x510, "m_soundInfo in CPhysHinge should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_NotifyMinLimitReached) == 0x5A8, "m_NotifyMinLimitReached in CPhysHinge should be at offset 0x5A8");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_NotifyMaxLimitReached) == 0x5C0, "m_NotifyMaxLimitReached in CPhysHinge should be at offset 0x5C0");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_bAtMinLimit) == 0x5D8, "m_bAtMinLimit in CPhysHinge should be at offset 0x5D8");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_bAtMaxLimit) == 0x5D9, "m_bAtMaxLimit in CPhysHinge should be at offset 0x5D9");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_hinge) == 0x5DC, "m_hinge in CPhysHinge should be at offset 0x5DC");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_hingeFriction) == 0x61C, "m_hingeFriction in CPhysHinge should be at offset 0x61C");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_systemLoadScale) == 0x620, "m_systemLoadScale in CPhysHinge should be at offset 0x620");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_bIsAxisLocal) == 0x624, "m_bIsAxisLocal in CPhysHinge should be at offset 0x624");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flMinRotation) == 0x628, "m_flMinRotation in CPhysHinge should be at offset 0x628");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flMaxRotation) == 0x62C, "m_flMaxRotation in CPhysHinge should be at offset 0x62C");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flInitialRotation) == 0x630, "m_flInitialRotation in CPhysHinge should be at offset 0x630");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flMotorFrequency) == 0x634, "m_flMotorFrequency in CPhysHinge should be at offset 0x634");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flMotorDampingRatio) == 0x638, "m_flMotorDampingRatio in CPhysHinge should be at offset 0x638");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flAngleSpeed) == 0x63C, "m_flAngleSpeed in CPhysHinge should be at offset 0x63C");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flAngleSpeedThreshold) == 0x640, "m_flAngleSpeedThreshold in CPhysHinge should be at offset 0x640");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_flLimitsDebugVisRotation) == 0x644, "m_flLimitsDebugVisRotation in CPhysHinge should be at offset 0x644");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_OnStartMoving) == 0x648, "m_OnStartMoving in CPhysHinge should be at offset 0x648");
+		static_assert(offsetof(CS2::server::CPhysHinge, m_OnStopMoving) == 0x660, "m_OnStopMoving in CPhysHinge should be at offset 0x660");
+		static_assert(sizeof(CS2::server::CPhysHinge) == 0x678, "CPhysHinge size should be 0x678");
 	}
 }

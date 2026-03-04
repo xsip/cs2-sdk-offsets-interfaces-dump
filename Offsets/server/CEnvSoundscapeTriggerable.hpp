@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x590
+			// Class size: 0x538
 			namespace CEnvSoundscapeTriggerable /*: public CS2::server::CEnvSoundscape*/ {
 				// NO SCHEMA DATA FOUND!
 			}

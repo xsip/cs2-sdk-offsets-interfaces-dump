@@ -27,63 +27,63 @@ namespace CS2 {
 	namespace server {
 		class CTriggerFan : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::Vector m_vFanOriginOffset; // 0x9a8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDirection; // 0x9b4 | Schema_Atomic | Size: 0xc
-			bool m_bPushTowardsInfoTarget; // 0x9c0 | Schema_Builtin | Size: 0x1
-			bool m_bPushAwayFromInfoTarget; // 0x9c1 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xe);
-			GlobalTypes::Quaternion m_qNoiseDelta; // 0x9d0 | Schema_Atomic | Size: 0x10
-			GlobalTypes::CHandle<server::CInfoFan> m_hInfoFan; // 0x9e0 | Schema_Atomic | Size: 0x4
-			// char  m_hInfoFan[0x4]; // 0x9e0 | Schema_Atomic | Size: 0x4
-			float32 m_flForce; // 0x9e4 | Schema_Builtin | Size: 0x4
-			bool m_bFalloff; // 0x9e8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vFanOriginOffset; // 0x890 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDirection; // 0x89c | Schema_Atomic | Size: 0xc
+			bool m_bPushTowardsInfoTarget; // 0x8a8 | Schema_Builtin | Size: 0x1
+			bool m_bPushAwayFromInfoTarget; // 0x8a9 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6);
+			GlobalTypes::Quaternion m_qNoiseDelta; // 0x8b0 | Schema_Atomic | Size: 0x10
+			GlobalTypes::CHandle<server::CInfoFan> m_hInfoFan; // 0x8c0 | Schema_Atomic | Size: 0x4
+			// char m_hInfoFan[0x4]; // 0x8c0 | Schema_Atomic | Size: 0x4
+			float32 m_flForce; // 0x8c4 | Schema_Builtin | Size: 0x4
+			bool m_bFalloff; // 0x8c8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			server::CountdownTimer m_RampTimer; // 0x9f0 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::VectorWS m_vFanOriginWS; // 0xa08 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vFanOriginLS; // 0xa14 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vFanEndLS; // 0xa20 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vNoiseDirectionTarget; // 0xa2c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CUtlSymbolLarge m_iszInfoFan; // 0xa38 | Schema_Atomic | Size: 0x8
-			float32 m_flRopeForceScale; // 0xa40 | Schema_Builtin | Size: 0x4
-			float32 m_flParticleForceScale; // 0xa44 | Schema_Builtin | Size: 0x4
-			float32 m_flPlayerForce; // 0xa48 | Schema_Builtin | Size: 0x4
-			bool m_bPlayerWindblock; // 0xa4c | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_RampTimer; // 0x8d0 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::VectorWS m_vFanOriginWS; // 0x8e8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vFanOriginLS; // 0x8f4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vFanEndLS; // 0x900 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vNoiseDirectionTarget; // 0x90c | Schema_Atomic | Size: 0xc
+			GlobalTypes::CUtlSymbolLarge m_iszInfoFan; // 0x918 | Schema_Atomic | Size: 0x8
+			float32 m_flRopeForceScale; // 0x920 | Schema_Builtin | Size: 0x4
+			float32 m_flParticleForceScale; // 0x924 | Schema_Builtin | Size: 0x4
+			float32 m_flPlayerForce; // 0x928 | Schema_Builtin | Size: 0x4
+			bool m_bPlayerWindblock; // 0x92c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flNPCForce; // 0xa50 | Schema_Builtin | Size: 0x4
-			float32 m_flRampTime; // 0xa54 | Schema_Builtin | Size: 0x4
-			float32 m_fNoiseDegrees; // 0xa58 | Schema_Builtin | Size: 0x4
-			float32 m_fNoiseSpeed; // 0xa5c | Schema_Builtin | Size: 0x4
-			bool m_bPushPlayer; // 0xa60 | Schema_Builtin | Size: 0x1
-			bool m_bRampDown; // 0xa61 | Schema_Builtin | Size: 0x1
+			float32 m_flNPCForce; // 0x930 | Schema_Builtin | Size: 0x4
+			float32 m_flRampTime; // 0x934 | Schema_Builtin | Size: 0x4
+			float32 m_fNoiseDegrees; // 0x938 | Schema_Builtin | Size: 0x4
+			float32 m_fNoiseSpeed; // 0x93c | Schema_Builtin | Size: 0x4
+			bool m_bPushPlayer; // 0x940 | Schema_Builtin | Size: 0x1
+			bool m_bRampDown; // 0x941 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nManagerFanIdx; // 0xa64 | Schema_Builtin | Size: 0x4
+			int32_t m_nManagerFanIdx; // 0x944 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanOriginOffset) == 0x9A8, "m_vFanOriginOffset in CTriggerFan should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_vDirection) == 0x9B4, "m_vDirection in CTriggerFan should be at offset 0x9B4");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_bPushTowardsInfoTarget) == 0x9C0, "m_bPushTowardsInfoTarget in CTriggerFan should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_bPushAwayFromInfoTarget) == 0x9C1, "m_bPushAwayFromInfoTarget in CTriggerFan should be at offset 0x9C1");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_qNoiseDelta) == 0x9D0, "m_qNoiseDelta in CTriggerFan should be at offset 0x9D0");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_hInfoFan) == 0x9E0, "m_hInfoFan in CTriggerFan should be at offset 0x9E0");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_flForce) == 0x9E4, "m_flForce in CTriggerFan should be at offset 0x9E4");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_bFalloff) == 0x9E8, "m_bFalloff in CTriggerFan should be at offset 0x9E8");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_RampTimer) == 0x9F0, "m_RampTimer in CTriggerFan should be at offset 0x9F0");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanOriginWS) == 0xA08, "m_vFanOriginWS in CTriggerFan should be at offset 0xA08");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanOriginLS) == 0xA14, "m_vFanOriginLS in CTriggerFan should be at offset 0xA14");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanEndLS) == 0xA20, "m_vFanEndLS in CTriggerFan should be at offset 0xA20");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_vNoiseDirectionTarget) == 0xA2C, "m_vNoiseDirectionTarget in CTriggerFan should be at offset 0xA2C");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_iszInfoFan) == 0xA38, "m_iszInfoFan in CTriggerFan should be at offset 0xA38");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_flRopeForceScale) == 0xA40, "m_flRopeForceScale in CTriggerFan should be at offset 0xA40");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_flParticleForceScale) == 0xA44, "m_flParticleForceScale in CTriggerFan should be at offset 0xA44");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_flPlayerForce) == 0xA48, "m_flPlayerForce in CTriggerFan should be at offset 0xA48");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_bPlayerWindblock) == 0xA4C, "m_bPlayerWindblock in CTriggerFan should be at offset 0xA4C");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_flNPCForce) == 0xA50, "m_flNPCForce in CTriggerFan should be at offset 0xA50");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_flRampTime) == 0xA54, "m_flRampTime in CTriggerFan should be at offset 0xA54");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_fNoiseDegrees) == 0xA58, "m_fNoiseDegrees in CTriggerFan should be at offset 0xA58");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_fNoiseSpeed) == 0xA5C, "m_fNoiseSpeed in CTriggerFan should be at offset 0xA5C");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_bPushPlayer) == 0xA60, "m_bPushPlayer in CTriggerFan should be at offset 0xA60");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_bRampDown) == 0xA61, "m_bRampDown in CTriggerFan should be at offset 0xA61");
-		static_assert(offsetof(CS2::server::CTriggerFan, m_nManagerFanIdx) == 0xA64, "m_nManagerFanIdx in CTriggerFan should be at offset 0xA64");
-		static_assert(sizeof(CS2::server::CTriggerFan) == 0xA70, "CTriggerFan size should be 0xA70");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanOriginOffset) == 0x890, "m_vFanOriginOffset in CTriggerFan should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_vDirection) == 0x89C, "m_vDirection in CTriggerFan should be at offset 0x89C");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_bPushTowardsInfoTarget) == 0x8A8, "m_bPushTowardsInfoTarget in CTriggerFan should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_bPushAwayFromInfoTarget) == 0x8A9, "m_bPushAwayFromInfoTarget in CTriggerFan should be at offset 0x8A9");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_qNoiseDelta) == 0x8B0, "m_qNoiseDelta in CTriggerFan should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_hInfoFan) == 0x8C0, "m_hInfoFan in CTriggerFan should be at offset 0x8C0");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_flForce) == 0x8C4, "m_flForce in CTriggerFan should be at offset 0x8C4");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_bFalloff) == 0x8C8, "m_bFalloff in CTriggerFan should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_RampTimer) == 0x8D0, "m_RampTimer in CTriggerFan should be at offset 0x8D0");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanOriginWS) == 0x8E8, "m_vFanOriginWS in CTriggerFan should be at offset 0x8E8");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanOriginLS) == 0x8F4, "m_vFanOriginLS in CTriggerFan should be at offset 0x8F4");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanEndLS) == 0x900, "m_vFanEndLS in CTriggerFan should be at offset 0x900");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_vNoiseDirectionTarget) == 0x90C, "m_vNoiseDirectionTarget in CTriggerFan should be at offset 0x90C");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_iszInfoFan) == 0x918, "m_iszInfoFan in CTriggerFan should be at offset 0x918");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_flRopeForceScale) == 0x920, "m_flRopeForceScale in CTriggerFan should be at offset 0x920");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_flParticleForceScale) == 0x924, "m_flParticleForceScale in CTriggerFan should be at offset 0x924");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_flPlayerForce) == 0x928, "m_flPlayerForce in CTriggerFan should be at offset 0x928");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_bPlayerWindblock) == 0x92C, "m_bPlayerWindblock in CTriggerFan should be at offset 0x92C");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_flNPCForce) == 0x930, "m_flNPCForce in CTriggerFan should be at offset 0x930");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_flRampTime) == 0x934, "m_flRampTime in CTriggerFan should be at offset 0x934");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_fNoiseDegrees) == 0x938, "m_fNoiseDegrees in CTriggerFan should be at offset 0x938");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_fNoiseSpeed) == 0x93C, "m_fNoiseSpeed in CTriggerFan should be at offset 0x93C");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_bPushPlayer) == 0x940, "m_bPushPlayer in CTriggerFan should be at offset 0x940");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_bRampDown) == 0x941, "m_bRampDown in CTriggerFan should be at offset 0x941");
+		static_assert(offsetof(CS2::server::CTriggerFan, m_nManagerFanIdx) == 0x944, "m_nManagerFanIdx in CTriggerFan should be at offset 0x944");
+		static_assert(sizeof(CS2::server::CTriggerFan) == 0x950, "CTriggerFan size should be 0x950");
 	}
 }

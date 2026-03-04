@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x500
+			// Class size: 0x4B8
 			namespace CInfoPlayerStart /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsMaster = 0x4f1; // bool m_bIsMaster; |  0x4f1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pPawnSubclass = 0x4f8; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bDisabled = 0x4a8; // bool m_bDisabled; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsMaster = 0x4a9; // bool m_bIsMaster; |  0x4a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_pPawnSubclass = 0x4b0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

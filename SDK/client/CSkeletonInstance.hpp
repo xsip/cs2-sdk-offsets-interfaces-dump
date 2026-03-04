@@ -23,21 +23,21 @@ namespace CS2 {
 		class CSkeletonInstance : public CS2::client::CGameSceneNode {
 		public:
 			S2_PAD(0x10);
-			client::CModelState m_modelState; // 0x190 | Schema_DeclaredClass | Size: 0x300
-			bool m_bIsAnimationEnabled; // 0x490 | Schema_Builtin | Size: 0x1
-			bool m_bUseParentRenderBounds; // 0x491 | Schema_Builtin | Size: 0x1
-			bool m_bDisableSolidCollisionsForHierarchy; // 0x492 | Schema_Builtin | Size: 0x1
+			client::CModelState m_modelState; // 0x160 | Schema_DeclaredClass | Size: 0x2d0
+			bool m_bIsAnimationEnabled; // 0x430 | Schema_Builtin | Size: 0x1
+			bool m_bUseParentRenderBounds; // 0x431 | Schema_Builtin | Size: 0x1
+			bool m_bDisableSolidCollisionsForHierarchy; // 0x432 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			GlobalTypes::CUtlStringToken m_materialGroup; // 0x494 | Schema_Atomic | Size: 0x4
-			uint8_t m_nHitboxSet; // 0x498 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlStringToken m_materialGroup; // 0x434 | Schema_Atomic | Size: 0x4
+			uint8_t m_nHitboxSet; // 0x438 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x97); // End padding
 		};
-		static_assert(offsetof(CS2::client::CSkeletonInstance, m_modelState) == 0x190, "m_modelState in CSkeletonInstance should be at offset 0x190");
-		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bIsAnimationEnabled) == 0x490, "m_bIsAnimationEnabled in CSkeletonInstance should be at offset 0x490");
-		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bUseParentRenderBounds) == 0x491, "m_bUseParentRenderBounds in CSkeletonInstance should be at offset 0x491");
-		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bDisableSolidCollisionsForHierarchy) == 0x492, "m_bDisableSolidCollisionsForHierarchy in CSkeletonInstance should be at offset 0x492");
-		static_assert(offsetof(CS2::client::CSkeletonInstance, m_materialGroup) == 0x494, "m_materialGroup in CSkeletonInstance should be at offset 0x494");
-		static_assert(offsetof(CS2::client::CSkeletonInstance, m_nHitboxSet) == 0x498, "m_nHitboxSet in CSkeletonInstance should be at offset 0x498");
-		static_assert(sizeof(CS2::client::CSkeletonInstance) == 0x530, "CSkeletonInstance size should be 0x530");
+		static_assert(offsetof(CS2::client::CSkeletonInstance, m_modelState) == 0x160, "m_modelState in CSkeletonInstance should be at offset 0x160");
+		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bIsAnimationEnabled) == 0x430, "m_bIsAnimationEnabled in CSkeletonInstance should be at offset 0x430");
+		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bUseParentRenderBounds) == 0x431, "m_bUseParentRenderBounds in CSkeletonInstance should be at offset 0x431");
+		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bDisableSolidCollisionsForHierarchy) == 0x432, "m_bDisableSolidCollisionsForHierarchy in CSkeletonInstance should be at offset 0x432");
+		static_assert(offsetof(CS2::client::CSkeletonInstance, m_materialGroup) == 0x434, "m_materialGroup in CSkeletonInstance should be at offset 0x434");
+		static_assert(offsetof(CS2::client::CSkeletonInstance, m_nHitboxSet) == 0x438, "m_nHitboxSet in CSkeletonInstance should be at offset 0x438");
+		static_assert(sizeof(CS2::client::CSkeletonInstance) == 0x4D0, "CSkeletonInstance size should be 0x4D0");
 	}
 }

@@ -11,6 +11,8 @@
 
 
 #include <SDK/client/C_BaseEntity.hpp>
+#include <SDK/client/CBasePlayerController.hpp>
+#include <SDK/client/C_BasePlayerPawn.hpp>
 
 
 
@@ -21,18 +23,18 @@ namespace CS2 {
 	namespace client {
 		class C_Team : public CS2::client::C_BaseEntity {
 		public:
-			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::CBasePlayerController>> m_aPlayerControllers; // 0x5f8 | Schema_Atomic | Size: 0x18
-			char  m_aPlayerControllers[0x18]; // 0x5f8 | Schema_Atomic | Size: 0x18
-			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BasePlayerPawn>> m_aPlayers; // 0x610 | Schema_Atomic | Size: 0x18
-			char  m_aPlayers[0x18]; // 0x610 | Schema_Atomic | Size: 0x18
-			int32_t m_iScore; // 0x628 | Schema_Builtin | Size: 0x4
-			char m_szTeamname[129]; // 0x62c | Schema_FixedArray | Size: 0x81
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::CBasePlayerController>> m_aPlayerControllers; // 0x608 | Schema_Atomic | Size: 0x18
+			char m_aPlayerControllers[0x18]; // 0x608 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BasePlayerPawn>> m_aPlayers; // 0x620 | Schema_Atomic | Size: 0x18
+			char m_aPlayers[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
+			int32_t m_iScore; // 0x638 | Schema_Builtin | Size: 0x4
+			char m_szTeamname[129]; // 0x63c | Schema_FixedArray | Size: 0x81
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_Team, m_aPlayerControllers) == 0x5F8, "m_aPlayerControllers in C_Team should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_Team, m_aPlayers) == 0x610, "m_aPlayers in C_Team should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_Team, m_iScore) == 0x628, "m_iScore in C_Team should be at offset 0x628");
-		static_assert(offsetof(CS2::client::C_Team, m_szTeamname) == 0x62C, "m_szTeamname in C_Team should be at offset 0x62C");
-		static_assert(sizeof(CS2::client::C_Team) == 0x6B0, "C_Team size should be 0x6B0");
+		static_assert(offsetof(CS2::client::C_Team, m_aPlayerControllers) == 0x608, "m_aPlayerControllers in C_Team should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_Team, m_aPlayers) == 0x620, "m_aPlayers in C_Team should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_Team, m_iScore) == 0x638, "m_iScore in C_Team should be at offset 0x638");
+		static_assert(offsetof(CS2::client::C_Team, m_szTeamname) == 0x63C, "m_szTeamname in C_Team should be at offset 0x63C");
+		static_assert(sizeof(CS2::client::C_Team) == 0x6C0, "C_Team size should be 0x6C0");
 	}
 }

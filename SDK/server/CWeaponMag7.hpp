@@ -22,6 +22,6 @@ namespace CS2 {
 		class CWeaponMag7 : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CWeaponMag7) == 0x11F0, "CWeaponMag7 size should be 0x11F0");
+		static_assert(sizeof(CS2::server::CWeaponMag7) == 0x1150, "CWeaponMag7 size should be 0x1150");
 	}
 }

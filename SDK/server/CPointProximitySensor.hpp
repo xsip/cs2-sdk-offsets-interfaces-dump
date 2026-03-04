@@ -26,16 +26,16 @@ namespace CS2 {
 	namespace server {
 		class CPointProximitySensor : public CS2::server::CPointEntity {
 		public:
-			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4f4 | Schema_Atomic | Size: 0x4
-			// char  m_hTargetEntity[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_Distance; // 0x4f8 | Schema_Atomic | Size: 0x28
-			char  m_Distance[0x28]; // 0x4f8 | Schema_Atomic | Size: 0x28
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4ac | Schema_Atomic | Size: 0x4
+			// char m_hTargetEntity[0x4]; // 0x4ac | Schema_Atomic | Size: 0x4
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_Distance; // 0x4b0 | Schema_Atomic | Size: 0x20
+			char m_Distance[0x20]; // 0x4b0 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CPointProximitySensor, m_bDisabled) == 0x4F0, "m_bDisabled in CPointProximitySensor should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointProximitySensor, m_hTargetEntity) == 0x4F4, "m_hTargetEntity in CPointProximitySensor should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CPointProximitySensor, m_Distance) == 0x4F8, "m_Distance in CPointProximitySensor should be at offset 0x4F8");
-		static_assert(sizeof(CS2::server::CPointProximitySensor) == 0x520, "CPointProximitySensor size should be 0x520");
+		static_assert(offsetof(CS2::server::CPointProximitySensor, m_bDisabled) == 0x4A8, "m_bDisabled in CPointProximitySensor should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointProximitySensor, m_hTargetEntity) == 0x4AC, "m_hTargetEntity in CPointProximitySensor should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CPointProximitySensor, m_Distance) == 0x4B0, "m_Distance in CPointProximitySensor should be at offset 0x4B0");
+		static_assert(sizeof(CS2::server::CPointProximitySensor) == 0x4D0, "CPointProximitySensor size should be 0x4D0");
 	}
 }

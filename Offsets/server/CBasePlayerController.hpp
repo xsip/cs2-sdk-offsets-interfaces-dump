@@ -8,32 +8,32 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x810
+			// Class size: 0x7C8
 			namespace CBasePlayerController /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x4f8; // uint64_t m_nInButtonsWhichAreToggles; |  0x4f8 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_nTickBase = 0x500; // uint32_t m_nTickBase; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hPawn = 0x528; // GlobalTypes::CHandle<server::CBasePlayerPawn>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bKnownTeamMismatch = 0x52c; // bool m_bKnownTeamMismatch; |  0x52c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x530; // GlobalTypes::CSplitScreenSlot  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hSplitOwner = 0x534; // GlobalTypes::CHandle<server::CBasePlayerController>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x538; // server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bIsHLTV = 0x550; // bool m_bIsHLTV; |  0x550 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iConnected = 0x554; // client::PlayerConnectedState  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iszPlayerName = 0x558; // char m_iszPlayerName[128]; |  0x558 | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_szNetworkIDString = 0x5d8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_fLerpTime = 0x5e0; // float32 m_fLerpTime; |  0x5e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bLagCompensation = 0x5e4; // bool m_bLagCompensation; |  0x5e4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPredict = 0x5e5; // bool m_bPredict; |  0x5e5 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsLowViolence = 0x5ec; // bool m_bIsLowViolence; |  0x5ec | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGamePaused = 0x5ed; // bool m_bGamePaused; |  0x5ed | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iIgnoreGlobalChat = 0x728; // client::ChatIgnoreType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastPlayerTalkTime = 0x72c; // float32 m_flLastPlayerTalkTime; |  0x72c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastEntitySteadyState = 0x730; // float32 m_flLastEntitySteadyState; |  0x730 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAvailableEntitySteadyState = 0x734; // int32_t m_nAvailableEntitySteadyState; |  0x734 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bHasAnySteadyStateEnts = 0x738; // bool m_bHasAnySteadyStateEnts; |  0x738 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_steamID = 0x748; // uint64_t m_steamID; |  0x748 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_bNoClipEnabled = 0x750; // bool m_bNoClipEnabled; |  0x750 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iDesiredFOV = 0x754; // uint32_t m_iDesiredFOV; |  0x754 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nInButtonsWhichAreToggles = 0x4b0; // uint64_t m_nInButtonsWhichAreToggles; |  0x4b0 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_nTickBase = 0x4b8; // uint32_t m_nTickBase; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hPawn = 0x4e0; // GlobalTypes::CHandle<server::CBasePlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bKnownTeamMismatch = 0x4e4; // bool m_bKnownTeamMismatch; |  0x4e4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nSplitScreenSlot = 0x4e8; // GlobalTypes::CSplitScreenSlot  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSplitOwner = 0x4ec; // GlobalTypes::CHandle<server::CBasePlayerController>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hSplitScreenPlayers = 0x4f0; // server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bIsHLTV = 0x508; // bool m_bIsHLTV; |  0x508 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iConnected = 0x50c; // client::PlayerConnectedState  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iszPlayerName = 0x510; // char m_iszPlayerName[128]; |  0x510 | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_szNetworkIDString = 0x590; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_fLerpTime = 0x598; // float32 m_fLerpTime; |  0x598 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bLagCompensation = 0x59c; // bool m_bLagCompensation; |  0x59c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPredict = 0x59d; // bool m_bPredict; |  0x59d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsLowViolence = 0x5a4; // bool m_bIsLowViolence; |  0x5a4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGamePaused = 0x5a5; // bool m_bGamePaused; |  0x5a5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iIgnoreGlobalChat = 0x6e0; // client::ChatIgnoreType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastPlayerTalkTime = 0x6e4; // float32 m_flLastPlayerTalkTime; |  0x6e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastEntitySteadyState = 0x6e8; // float32 m_flLastEntitySteadyState; |  0x6e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nAvailableEntitySteadyState = 0x6ec; // int32_t m_nAvailableEntitySteadyState; |  0x6ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bHasAnySteadyStateEnts = 0x6f0; // bool m_bHasAnySteadyStateEnts; |  0x6f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_steamID = 0x700; // uint64_t m_steamID; |  0x700 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_bNoClipEnabled = 0x708; // bool m_bNoClipEnabled; |  0x708 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iDesiredFOV = 0x70c; // uint32_t m_iDesiredFOV; |  0x70c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

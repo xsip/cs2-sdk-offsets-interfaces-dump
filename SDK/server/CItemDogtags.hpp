@@ -26,14 +26,14 @@ namespace CS2 {
 	namespace server {
 		class CItemDogtags : public CS2::server::CItem {
 		public:
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_OwningPlayer; // 0xb70 | Schema_Atomic | Size: 0x4
-			// char  m_OwningPlayer[0x4]; // 0xb70 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_KillingPlayer; // 0xb74 | Schema_Atomic | Size: 0x4
-			// char  m_KillingPlayer[0x4]; // 0xb74 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_OwningPlayer; // 0xac0 | Schema_Atomic | Size: 0x4
+			// char m_OwningPlayer[0x4]; // 0xac0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_KillingPlayer; // 0xac4 | Schema_Atomic | Size: 0x4
+			// char m_KillingPlayer[0x4]; // 0xac4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CItemDogtags, m_OwningPlayer) == 0xB70, "m_OwningPlayer in CItemDogtags should be at offset 0xB70");
-		static_assert(offsetof(CS2::server::CItemDogtags, m_KillingPlayer) == 0xB74, "m_KillingPlayer in CItemDogtags should be at offset 0xB74");
-		static_assert(sizeof(CS2::server::CItemDogtags) == 0xB80, "CItemDogtags size should be 0xB80");
+		static_assert(offsetof(CS2::server::CItemDogtags, m_OwningPlayer) == 0xAC0, "m_OwningPlayer in CItemDogtags should be at offset 0xAC0");
+		static_assert(offsetof(CS2::server::CItemDogtags, m_KillingPlayer) == 0xAC4, "m_KillingPlayer in CItemDogtags should be at offset 0xAC4");
+		static_assert(sizeof(CS2::server::CItemDogtags) == 0xAD0, "CItemDogtags size should be 0xAD0");
 	}
 }

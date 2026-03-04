@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributePathPositions {
-    char pad_2574[0x40];
+    char pad_2650[0x40];
 };

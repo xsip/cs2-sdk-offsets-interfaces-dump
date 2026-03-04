@@ -21,11 +21,11 @@ namespace CS2 {
 	namespace client {
 		class C_EnvDetailController : public CS2::client::C_BaseEntity {
 		public:
-			float32 m_flFadeStartDist; // 0x5f8 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeEndDist; // 0x5fc | Schema_Builtin | Size: 0x4
+			float32 m_flFadeStartDist; // 0x608 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeEndDist; // 0x60c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_EnvDetailController, m_flFadeStartDist) == 0x5F8, "m_flFadeStartDist in C_EnvDetailController should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_EnvDetailController, m_flFadeEndDist) == 0x5FC, "m_flFadeEndDist in C_EnvDetailController should be at offset 0x5FC");
-		static_assert(sizeof(CS2::client::C_EnvDetailController) == 0x600, "C_EnvDetailController size should be 0x600");
+		static_assert(offsetof(CS2::client::C_EnvDetailController, m_flFadeStartDist) == 0x608, "m_flFadeStartDist in C_EnvDetailController should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_EnvDetailController, m_flFadeEndDist) == 0x60C, "m_flFadeEndDist in C_EnvDetailController should be at offset 0x60C");
+		static_assert(sizeof(CS2::client::C_EnvDetailController) == 0x610, "C_EnvDetailController size should be 0x610");
 	}
 }

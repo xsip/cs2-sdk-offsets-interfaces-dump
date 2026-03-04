@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x538
+			// Class size: 0x4E8
 			namespace CPointVelocitySensor /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_hTargetEntity = 0x4f0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecAxis = 0x4f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bEnabled = 0x500; // bool m_bEnabled; |  0x500 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fPrevVelocity = 0x504; // float32 m_fPrevVelocity; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAvgInterval = 0x508; // float32 m_flAvgInterval; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Velocity = 0x510; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_hTargetEntity = 0x4a8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecAxis = 0x4ac; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bEnabled = 0x4b8; // bool m_bEnabled; |  0x4b8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fPrevVelocity = 0x4bc; // float32 m_fPrevVelocity; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAvgInterval = 0x4c0; // float32 m_flAvgInterval; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Velocity = 0x4c8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

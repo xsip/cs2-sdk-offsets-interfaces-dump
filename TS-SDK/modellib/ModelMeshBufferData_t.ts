@@ -13,5 +13,6 @@ export const modellib_ModelMeshBufferData_t  = {
 	m_bCreateBufferUAV: 16n, // bool m_bCreateBufferUAV; |  0x10 | Schema_Builtin | Size: 0x1
 	m_bCreateRawBuffer: 17n, // bool m_bCreateRawBuffer; |  0x11 | Schema_Builtin | Size: 0x1
 	m_bCreatePooledBuffer: 18n, // bool m_bCreatePooledBuffer; |  0x12 | Schema_Builtin | Size: 0x1
+	m_nBufferUsage: 19n, // uint8_t m_nBufferUsage; |  0x13 | Schema_Builtin | Size: 0x1
 	m_inputLayoutFields: 24n, // GlobalTypes::CUtlVector<modellib::RenderInputLayoutField_t>  | Schema_Atomic | Size: 0x18
 }

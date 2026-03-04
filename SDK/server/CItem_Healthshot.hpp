@@ -22,6 +22,6 @@ namespace CS2 {
 		class CItem_Healthshot : public CS2::server::CWeaponBaseItem {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CItem_Healthshot) == 0x11E0, "CItem_Healthshot size should be 0x11E0");
+		static_assert(sizeof(CS2::server::CItem_Healthshot) == 0x1140, "CItem_Healthshot size should be 0x1140");
 	}
 }

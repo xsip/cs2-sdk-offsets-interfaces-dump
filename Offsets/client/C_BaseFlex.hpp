@@ -8,27 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1368
+			// Class size: 0x1350
 			namespace C_BaseFlex /*: public CS2::client::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_flexWeight = 0x1168; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vLookTargetPosition = 0x1180; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_blinktoggle = 0x1210; // bool m_blinktoggle; |  0x1210 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flexWeight = 0x1170; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vLookTargetPosition = 0x1188; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nLastFlexUpdateFrameCount = 0x1270; // int32_t m_nLastFlexUpdateFrameCount; |  0x1270 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_CachedViewTarget = 0x1274; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_nNextSceneEventId = 0x1280; // client::SceneEventId_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_iBlink = 0x1284; // int32_t m_iBlink; |  0x1284 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_blinktime = 0x1288; // float32 m_blinktime; |  0x1288 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_prevblinktoggle = 0x128c; // bool m_prevblinktoggle; |  0x128c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iJawOpen = 0x1290; // int32_t m_iJawOpen; |  0x1290 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flJawOpenAmount = 0x1294; // float32 m_flJawOpenAmount; |  0x1294 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBlinkAmount = 0x1298; // float32 m_flBlinkAmount; |  0x1298 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iMouthAttachment = 0x129c; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_iEyeAttachment = 0x129d; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_bResetFlexWeightsOnModelChange = 0x129e; // bool m_bResetFlexWeightsOnModelChange; |  0x129e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nEyeOcclusionRendererBone = 0x12b8; // int32_t m_nEyeOcclusionRendererBone; |  0x12b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_mEyeOcclusionRendererCameraToBoneTransform = 0x12bc; // GlobalTypes::matrix3x4_t  | Schema_Atomic | Size: 0x30
-				constexpr std::ptrdiff_t m_vEyeOcclusionRendererHalfExtent = 0x12ec; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_PhonemeClasses = 0x1308; // client::C_BaseFlex::Emphasized_Phoneme[3]  | Schema_FixedArray | Size: 0x120
+				constexpr std::ptrdiff_t m_iMouthAttachment = 0x1284; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_iEyeAttachment = 0x1285; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_bResetFlexWeightsOnModelChange = 0x1286; // bool m_bResetFlexWeightsOnModelChange; |  0x1286 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nEyeOcclusionRendererBone = 0x12a0; // int32_t m_nEyeOcclusionRendererBone; |  0x12a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_mEyeOcclusionRendererCameraToBoneTransform = 0x12a4; // GlobalTypes::matrix3x4_t  | Schema_Atomic | Size: 0x30
+				constexpr std::ptrdiff_t m_vEyeOcclusionRendererHalfExtent = 0x12d4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_PhonemeClasses = 0x12f0; // client::C_BaseFlex::Emphasized_Phoneme[3]  | Schema_FixedArray | Size: 0x120
 			}
 		}
 	}

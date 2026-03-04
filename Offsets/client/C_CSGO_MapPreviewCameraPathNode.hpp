@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x648
+			// Class size: 0x658
 			namespace C_CSGO_MapPreviewCameraPathNode /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_szParentPathUniqueID = 0x5f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nPathIndex = 0x600; // int32_t m_nPathIndex; |  0x600 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vInTangentLocal = 0x604; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOutTangentLocal = 0x610; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flFOV = 0x61c; // float32 m_flFOV; |  0x61c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCameraSpeed = 0x620; // float32 m_flCameraSpeed; |  0x620 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flEaseIn = 0x624; // float32 m_flEaseIn; |  0x624 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flEaseOut = 0x628; // float32 m_flEaseOut; |  0x628 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vInTangentWorld = 0x62c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOutTangentWorld = 0x638; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_szParentPathUniqueID = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nPathIndex = 0x610; // int32_t m_nPathIndex; |  0x610 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vInTangentLocal = 0x614; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOutTangentLocal = 0x620; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flFOV = 0x62c; // float32 m_flFOV; |  0x62c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCameraSpeed = 0x630; // float32 m_flCameraSpeed; |  0x630 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flEaseIn = 0x634; // float32 m_flEaseIn; |  0x634 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flEaseOut = 0x638; // float32 m_flEaseOut; |  0x638 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vInTangentWorld = 0x63c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOutTangentWorld = 0x648; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CSingleplayRules : public CS2::server::CGameRules {
 		public:
-			bool m_bSinglePlayerGameEnding; // 0xc0 | Schema_Builtin | Size: 0x1
+			bool m_bSinglePlayerGameEnding; // 0xd0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSingleplayRules, m_bSinglePlayerGameEnding) == 0xC0, "m_bSinglePlayerGameEnding in CSingleplayRules should be at offset 0xC0");
-		static_assert(sizeof(CS2::server::CSingleplayRules) == 0xC8, "CSingleplayRules size should be 0xC8");
+		static_assert(offsetof(CS2::server::CSingleplayRules, m_bSinglePlayerGameEnding) == 0xD0, "m_bSinglePlayerGameEnding in CSingleplayRules should be at offset 0xD0");
+		static_assert(sizeof(CS2::server::CSingleplayRules) == 0xD8, "CSingleplayRules size should be 0xD8");
 	}
 }

@@ -22,9 +22,10 @@ namespace CS2 {
 	namespace client {
 		class CBodyComponentBaseAnimGraph : public CS2::client::CBodyComponentSkeletonInstance {
 		public:
-			client::CBaseAnimGraphController m_animationController; // 0x5b0 | Schema_DeclaredClass | Size: 0x1a90
+			client::CBaseAnimGraphController m_animationController; // 0x550 | Schema_DeclaredClass | Size: 0x1b38
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::CBodyComponentBaseAnimGraph, m_animationController) == 0x5B0, "m_animationController in CBodyComponentBaseAnimGraph should be at offset 0x5B0");
-		static_assert(sizeof(CS2::client::CBodyComponentBaseAnimGraph) == 0x2040, "CBodyComponentBaseAnimGraph size should be 0x2040");
+		static_assert(offsetof(CS2::client::CBodyComponentBaseAnimGraph, m_animationController) == 0x550, "m_animationController in CBodyComponentBaseAnimGraph should be at offset 0x550");
+		static_assert(sizeof(CS2::client::CBodyComponentBaseAnimGraph) == 0x2090, "CBodyComponentBaseAnimGraph size should be 0x2090");
 	}
 }

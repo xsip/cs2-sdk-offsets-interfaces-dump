@@ -25,7 +25,7 @@ namespace CS2 {
 			int32_t m_nParent; // 0x28 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_refModel; // 0x30 | Schema_Atomic | Size: 0x8
-			char  m_refModel[0x8]; // 0x30 | Schema_Atomic | Size: 0x8
+			char m_refModel[0x8]; // 0x30 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::modellib::PermModelExtPart_t, m_Transform) == 0x0, "m_Transform in PermModelExtPart_t should be at offset 0x0");

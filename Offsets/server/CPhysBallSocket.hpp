@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x578
+			// Class size: 0x520
 			namespace CPhysBallSocket /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_flJointFriction = 0x560; // float32 m_flJointFriction; |  0x560 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnableSwingLimit = 0x564; // bool m_bEnableSwingLimit; |  0x564 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flSwingLimit = 0x568; // float32 m_flSwingLimit; |  0x568 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnableTwistLimit = 0x56c; // bool m_bEnableTwistLimit; |  0x56c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMinTwistAngle = 0x570; // float32 m_flMinTwistAngle; |  0x570 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxTwistAngle = 0x574; // float32 m_flMaxTwistAngle; |  0x574 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flJointFriction = 0x508; // float32 m_flJointFriction; |  0x508 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnableSwingLimit = 0x50c; // bool m_bEnableSwingLimit; |  0x50c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flSwingLimit = 0x510; // float32 m_flSwingLimit; |  0x510 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnableTwistLimit = 0x514; // bool m_bEnableTwistLimit; |  0x514 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMinTwistAngle = 0x518; // float32 m_flMinTwistAngle; |  0x518 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxTwistAngle = 0x51c; // float32 m_flMaxTwistAngle; |  0x51c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

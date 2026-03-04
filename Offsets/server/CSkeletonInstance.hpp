@@ -8,14 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x490
+			// Class size: 0x430
 			namespace CSkeletonInstance /*: public CS2::server::CGameSceneNode*/ {
-				constexpr std::ptrdiff_t m_modelState = 0x170; // server::CModelState  | Schema_DeclaredClass | Size: 0x280
-				constexpr std::ptrdiff_t m_bIsAnimationEnabled = 0x3f0; // bool m_bIsAnimationEnabled; |  0x3f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseParentRenderBounds = 0x3f1; // bool m_bUseParentRenderBounds; |  0x3f1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDisableSolidCollisionsForHierarchy = 0x3f2; // bool m_bDisableSolidCollisionsForHierarchy; |  0x3f2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_materialGroup = 0x3f4; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nHitboxSet = 0x3f8; // uint8_t m_nHitboxSet; |  0x3f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_modelState = 0x140; // server::CModelState  | Schema_DeclaredClass | Size: 0x250
+				constexpr std::ptrdiff_t m_bIsAnimationEnabled = 0x390; // bool m_bIsAnimationEnabled; |  0x390 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseParentRenderBounds = 0x391; // bool m_bUseParentRenderBounds; |  0x391 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDisableSolidCollisionsForHierarchy = 0x392; // bool m_bDisableSolidCollisionsForHierarchy; |  0x392 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_materialGroup = 0x394; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nHitboxSet = 0x398; // uint8_t m_nHitboxSet; |  0x398 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bForceServerConstraintsEnabled = 0x3f4; // bool m_bForceServerConstraintsEnabled; |  0x3f4 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

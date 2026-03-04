@@ -21,28 +21,28 @@ namespace CS2 {
 	namespace server {
 		class CEnvWindVolume : public CS2::server::CBaseEntity {
 		public:
-			bool m_bActive; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bActive; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vBoxMins; // 0x4f4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vBoxMaxs; // 0x500 | Schema_Atomic | Size: 0xc
-			bool m_bStartDisabled; // 0x50c | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vBoxMins; // 0x4ac | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vBoxMaxs; // 0x4b8 | Schema_Atomic | Size: 0xc
+			bool m_bStartDisabled; // 0x4c4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nShape; // 0x510 | Schema_Builtin | Size: 0x4
-			float32 m_fWindSpeedMultiplier; // 0x514 | Schema_Builtin | Size: 0x4
-			float32 m_fWindTurbulenceMultiplier; // 0x518 | Schema_Builtin | Size: 0x4
-			float32 m_fWindSpeedVariationMultiplier; // 0x51c | Schema_Builtin | Size: 0x4
-			float32 m_fWindDirectionVariationMultiplier; // 0x520 | Schema_Builtin | Size: 0x4
+			int32_t m_nShape; // 0x4c8 | Schema_Builtin | Size: 0x4
+			float32 m_fWindSpeedMultiplier; // 0x4cc | Schema_Builtin | Size: 0x4
+			float32 m_fWindTurbulenceMultiplier; // 0x4d0 | Schema_Builtin | Size: 0x4
+			float32 m_fWindSpeedVariationMultiplier; // 0x4d4 | Schema_Builtin | Size: 0x4
+			float32 m_fWindDirectionVariationMultiplier; // 0x4d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_bActive) == 0x4F0, "m_bActive in CEnvWindVolume should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_vBoxMins) == 0x4F4, "m_vBoxMins in CEnvWindVolume should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_vBoxMaxs) == 0x500, "m_vBoxMaxs in CEnvWindVolume should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_bStartDisabled) == 0x50C, "m_bStartDisabled in CEnvWindVolume should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_nShape) == 0x510, "m_nShape in CEnvWindVolume should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindSpeedMultiplier) == 0x514, "m_fWindSpeedMultiplier in CEnvWindVolume should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindTurbulenceMultiplier) == 0x518, "m_fWindTurbulenceMultiplier in CEnvWindVolume should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindSpeedVariationMultiplier) == 0x51C, "m_fWindSpeedVariationMultiplier in CEnvWindVolume should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindDirectionVariationMultiplier) == 0x520, "m_fWindDirectionVariationMultiplier in CEnvWindVolume should be at offset 0x520");
-		static_assert(sizeof(CS2::server::CEnvWindVolume) == 0x528, "CEnvWindVolume size should be 0x528");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_bActive) == 0x4A8, "m_bActive in CEnvWindVolume should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_vBoxMins) == 0x4AC, "m_vBoxMins in CEnvWindVolume should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_vBoxMaxs) == 0x4B8, "m_vBoxMaxs in CEnvWindVolume should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_bStartDisabled) == 0x4C4, "m_bStartDisabled in CEnvWindVolume should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_nShape) == 0x4C8, "m_nShape in CEnvWindVolume should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindSpeedMultiplier) == 0x4CC, "m_fWindSpeedMultiplier in CEnvWindVolume should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindTurbulenceMultiplier) == 0x4D0, "m_fWindTurbulenceMultiplier in CEnvWindVolume should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindSpeedVariationMultiplier) == 0x4D4, "m_fWindSpeedVariationMultiplier in CEnvWindVolume should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CEnvWindVolume, m_fWindDirectionVariationMultiplier) == 0x4D8, "m_fWindDirectionVariationMultiplier in CEnvWindVolume should be at offset 0x4D8");
+		static_assert(sizeof(CS2::server::CEnvWindVolume) == 0x4E0, "CEnvWindVolume size should be 0x4E0");
 	}
 }

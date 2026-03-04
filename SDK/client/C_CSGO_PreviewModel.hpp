@@ -22,16 +22,16 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_PreviewModel : public CS2::client::C_BaseFlex {
 		public:
-			GlobalTypes::CUtlString m_defaultAnim; // 0x1368 | Schema_Atomic | Size: 0x8
-			client::AnimLoopMode_t m_nDefaultAnimLoopMode; // 0x1370 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flInitialModelScale; // 0x1374 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlString m_sInitialWeaponState; // 0x1378 | Schema_Atomic | Size: 0x8
-			S2_PAD(0x500); // End padding
+			GlobalTypes::CUtlString m_defaultAnim; // 0x1350 | Schema_Atomic | Size: 0x8
+			client::AnimLoopMode_t m_nDefaultAnimLoopMode; // 0x1358 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flInitialModelScale; // 0x135c | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_sInitialWeaponState; // 0x1360 | Schema_Atomic | Size: 0x8
+			S2_PAD(0x4f8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_defaultAnim) == 0x1368, "m_defaultAnim in C_CSGO_PreviewModel should be at offset 0x1368");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_nDefaultAnimLoopMode) == 0x1370, "m_nDefaultAnimLoopMode in C_CSGO_PreviewModel should be at offset 0x1370");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_flInitialModelScale) == 0x1374, "m_flInitialModelScale in C_CSGO_PreviewModel should be at offset 0x1374");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_sInitialWeaponState) == 0x1378, "m_sInitialWeaponState in C_CSGO_PreviewModel should be at offset 0x1378");
-		static_assert(sizeof(CS2::client::C_CSGO_PreviewModel) == 0x1880, "C_CSGO_PreviewModel size should be 0x1880");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_defaultAnim) == 0x1350, "m_defaultAnim in C_CSGO_PreviewModel should be at offset 0x1350");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_nDefaultAnimLoopMode) == 0x1358, "m_nDefaultAnimLoopMode in C_CSGO_PreviewModel should be at offset 0x1358");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_flInitialModelScale) == 0x135C, "m_flInitialModelScale in C_CSGO_PreviewModel should be at offset 0x135C");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewModel, m_sInitialWeaponState) == 0x1360, "m_sInitialWeaponState in C_CSGO_PreviewModel should be at offset 0x1360");
+		static_assert(sizeof(CS2::client::C_CSGO_PreviewModel) == 0x1860, "C_CSGO_PreviewModel size should be 0x1860");
 	}
 }

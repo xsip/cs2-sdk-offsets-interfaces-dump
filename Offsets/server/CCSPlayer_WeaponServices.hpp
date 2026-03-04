@@ -8,23 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x18F8
+			// Class size: 0x18D8
 			namespace CCSPlayer_WeaponServices /*: public CS2::server::CPlayer_WeaponServices*/ {
-				constexpr std::ptrdiff_t m_flNextAttack = 0xb8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsLookingAtWeapon = 0xbc; // bool m_bIsLookingAtWeapon; |  0xbc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsHoldingLookAtWeapon = 0xbd; // bool m_bIsHoldingLookAtWeapon; |  0xbd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hSavedWeapon = 0xc0; // GlobalTypes::CHandle<server::CBasePlayerWeapon>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nTimeToMelee = 0xc4; // int32_t m_nTimeToMelee; |  0xc4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTimeToSecondary = 0xc8; // int32_t m_nTimeToSecondary; |  0xc8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTimeToPrimary = 0xcc; // int32_t m_nTimeToPrimary; |  0xcc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTimeToSniperRifle = 0xd0; // int32_t m_nTimeToSniperRifle; |  0xd0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsBeingGivenItem = 0xd4; // bool m_bIsBeingGivenItem; |  0xd4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsPickingUpItemWithUse = 0xd5; // bool m_bIsPickingUpItemWithUse; |  0xd5 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPickedUpWeapon = 0xd6; // bool m_bPickedUpWeapon; |  0xd6 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDisableAutoDeploy = 0xd7; // bool m_bDisableAutoDeploy; |  0xd7 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsPickingUpGroundWeapon = 0xd8; // bool m_bIsPickingUpGroundWeapon; |  0xd8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_networkAnimTiming = 0x18d8; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bBlockInspectUntilNextGraphUpdate = 0x18f0; // bool m_bBlockInspectUntilNextGraphUpdate; |  0x18f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flNextAttack = 0xc0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsLookingAtWeapon = 0xc4; // bool m_bIsLookingAtWeapon; |  0xc4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsHoldingLookAtWeapon = 0xc5; // bool m_bIsHoldingLookAtWeapon; |  0xc5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hSavedWeapon = 0xc8; // GlobalTypes::CHandle<server::CBasePlayerWeapon>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nTimeToMelee = 0xcc; // int32_t m_nTimeToMelee; |  0xcc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTimeToSecondary = 0xd0; // int32_t m_nTimeToSecondary; |  0xd0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTimeToPrimary = 0xd4; // int32_t m_nTimeToPrimary; |  0xd4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTimeToSniperRifle = 0xd8; // int32_t m_nTimeToSniperRifle; |  0xd8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsBeingGivenItem = 0xdc; // bool m_bIsBeingGivenItem; |  0xdc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsPickingUpItemWithUse = 0xdd; // bool m_bIsPickingUpItemWithUse; |  0xdd | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPickedUpWeapon = 0xde; // bool m_bPickedUpWeapon; |  0xde | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDisableAutoDeploy = 0xdf; // bool m_bDisableAutoDeploy; |  0xdf | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsPickingUpGroundWeapon = 0xe0; // bool m_bIsPickingUpGroundWeapon; |  0xe0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_networkAnimTiming = 0x18b8; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bBlockInspectUntilNextGraphUpdate = 0x18d0; // bool m_bBlockInspectUntilNextGraphUpdate; |  0x18d0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

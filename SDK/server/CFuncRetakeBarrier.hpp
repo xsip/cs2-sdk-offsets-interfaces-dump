@@ -23,6 +23,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x20);
 		};
-		static_assert(sizeof(CS2::server::CFuncRetakeBarrier) == 0xD70, "CFuncRetakeBarrier size should be 0xD70");
+		static_assert(sizeof(CS2::server::CFuncRetakeBarrier) == 0xC70, "CFuncRetakeBarrier size should be 0xC70");
 	}
 }

@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x548
+			// Class size: 0x500
 			namespace CFishPool /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_fishCount = 0x500; // int32_t m_fishCount; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_maxRange = 0x504; // float32 m_maxRange; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_swimDepth = 0x508; // float32 m_swimDepth; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_waterLevel = 0x50c; // float32 m_waterLevel; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_isDormant = 0x510; // bool m_isDormant; |  0x510 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fishes = 0x518; // server::CUtlVector<GlobalTypes::CHandle<server::CFish>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_visTimer = 0x530; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_fishCount = 0x4b8; // int32_t m_fishCount; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_maxRange = 0x4bc; // float32 m_maxRange; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_swimDepth = 0x4c0; // float32 m_swimDepth; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_waterLevel = 0x4c4; // float32 m_waterLevel; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_isDormant = 0x4c8; // bool m_isDormant; |  0x4c8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fishes = 0x4d0; // server::CUtlVector<GlobalTypes::CHandle<server::CFish>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_visTimer = 0x4e8; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

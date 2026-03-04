@@ -35,42 +35,44 @@ namespace CS2 {
 		class CBreakable : public CS2::server::CBaseModelEntity {
 		public:
 			S2_PAD(0x8);
-			server::CPropDataComponent m_CPropDataComponent; // 0x7e0 | Schema_DeclaredClass | Size: 0x40
-			server::Materials m_Material; // 0x820 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hBreaker; // 0x824 | Schema_Atomic | Size: 0x4
-			// char  m_hBreaker[0x4]; // 0x824 | Schema_Atomic | Size: 0x4
-			server::Explosions m_Explosion; // 0x828 | Schema_DeclaredEnum | Size: 0x4
+			server::CPropDataComponent m_CPropDataComponent; // 0x738 | Schema_DeclaredClass | Size: 0x40
+			server::Materials m_Material; // 0x778 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hBreaker; // 0x77c | Schema_Atomic | Size: 0x4
+			// char m_hBreaker[0x4]; // 0x77c | Schema_Atomic | Size: 0x4
+			server::Explosions m_Explosion; // 0x780 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszSpawnObject; // 0x830 | Schema_Atomic | Size: 0x8
-			float32 m_flPressureDelay; // 0x838 | Schema_Builtin | Size: 0x4
-			int32_t m_iMinHealthDmg; // 0x83c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszPropData; // 0x840 | Schema_Atomic | Size: 0x8
-			float32 m_impactEnergyScale; // 0x848 | Schema_Builtin | Size: 0x4
-			server::EOverrideBlockLOS_t m_nOverrideBlockLOS; // 0x84c | Schema_DeclaredEnum | Size: 0x4
-			entity2::CEntityIOOutput m_OnBreak; // 0x850 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnHealthChanged; // 0x878 | Schema_Atomic | Size: 0x28
-			char  m_OnHealthChanged[0x28]; // 0x878 | Schema_Atomic | Size: 0x28
-			client::PerformanceMode_t m_PerformanceMode; // 0x8a0 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0x8a4 | Schema_Atomic | Size: 0x4
-			// char  m_hPhysicsAttacker[0x4]; // 0x8a4 | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0x8a8 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszSpawnObject; // 0x788 | Schema_Atomic | Size: 0x8
+			float32 m_flPressureDelay; // 0x790 | Schema_Builtin | Size: 0x4
+			int32_t m_iMinHealthDmg; // 0x794 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszPropData; // 0x798 | Schema_Atomic | Size: 0x8
+			float32 m_impactEnergyScale; // 0x7a0 | Schema_Builtin | Size: 0x4
+			server::EOverrideBlockLOS_t m_nOverrideBlockLOS; // 0x7a4 | Schema_DeclaredEnum | Size: 0x4
+			entity2::CEntityIOOutput m_OnStartDeath; // 0x7a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnBreak; // 0x7c0 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnHealthChanged; // 0x7d8 | Schema_Atomic | Size: 0x20
+			char m_OnHealthChanged[0x20]; // 0x7d8 | Schema_Atomic | Size: 0x20
+			client::PerformanceMode_t m_PerformanceMode; // 0x7f8 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0x7fc | Schema_Atomic | Size: 0x4
+			// char m_hPhysicsAttacker[0x4]; // 0x7fc | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0x800 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBreakable, m_CPropDataComponent) == 0x7E0, "m_CPropDataComponent in CBreakable should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CBreakable, m_Material) == 0x820, "m_Material in CBreakable should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CBreakable, m_hBreaker) == 0x824, "m_hBreaker in CBreakable should be at offset 0x824");
-		static_assert(offsetof(CS2::server::CBreakable, m_Explosion) == 0x828, "m_Explosion in CBreakable should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CBreakable, m_iszSpawnObject) == 0x830, "m_iszSpawnObject in CBreakable should be at offset 0x830");
-		static_assert(offsetof(CS2::server::CBreakable, m_flPressureDelay) == 0x838, "m_flPressureDelay in CBreakable should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CBreakable, m_iMinHealthDmg) == 0x83C, "m_iMinHealthDmg in CBreakable should be at offset 0x83C");
-		static_assert(offsetof(CS2::server::CBreakable, m_iszPropData) == 0x840, "m_iszPropData in CBreakable should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CBreakable, m_impactEnergyScale) == 0x848, "m_impactEnergyScale in CBreakable should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CBreakable, m_nOverrideBlockLOS) == 0x84C, "m_nOverrideBlockLOS in CBreakable should be at offset 0x84C");
-		static_assert(offsetof(CS2::server::CBreakable, m_OnBreak) == 0x850, "m_OnBreak in CBreakable should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CBreakable, m_OnHealthChanged) == 0x878, "m_OnHealthChanged in CBreakable should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CBreakable, m_PerformanceMode) == 0x8A0, "m_PerformanceMode in CBreakable should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CBreakable, m_hPhysicsAttacker) == 0x8A4, "m_hPhysicsAttacker in CBreakable should be at offset 0x8A4");
-		static_assert(offsetof(CS2::server::CBreakable, m_flLastPhysicsInfluenceTime) == 0x8A8, "m_flLastPhysicsInfluenceTime in CBreakable should be at offset 0x8A8");
-		static_assert(sizeof(CS2::server::CBreakable) == 0x8B0, "CBreakable size should be 0x8B0");
+		static_assert(offsetof(CS2::server::CBreakable, m_CPropDataComponent) == 0x738, "m_CPropDataComponent in CBreakable should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CBreakable, m_Material) == 0x778, "m_Material in CBreakable should be at offset 0x778");
+		static_assert(offsetof(CS2::server::CBreakable, m_hBreaker) == 0x77C, "m_hBreaker in CBreakable should be at offset 0x77C");
+		static_assert(offsetof(CS2::server::CBreakable, m_Explosion) == 0x780, "m_Explosion in CBreakable should be at offset 0x780");
+		static_assert(offsetof(CS2::server::CBreakable, m_iszSpawnObject) == 0x788, "m_iszSpawnObject in CBreakable should be at offset 0x788");
+		static_assert(offsetof(CS2::server::CBreakable, m_flPressureDelay) == 0x790, "m_flPressureDelay in CBreakable should be at offset 0x790");
+		static_assert(offsetof(CS2::server::CBreakable, m_iMinHealthDmg) == 0x794, "m_iMinHealthDmg in CBreakable should be at offset 0x794");
+		static_assert(offsetof(CS2::server::CBreakable, m_iszPropData) == 0x798, "m_iszPropData in CBreakable should be at offset 0x798");
+		static_assert(offsetof(CS2::server::CBreakable, m_impactEnergyScale) == 0x7A0, "m_impactEnergyScale in CBreakable should be at offset 0x7A0");
+		static_assert(offsetof(CS2::server::CBreakable, m_nOverrideBlockLOS) == 0x7A4, "m_nOverrideBlockLOS in CBreakable should be at offset 0x7A4");
+		static_assert(offsetof(CS2::server::CBreakable, m_OnStartDeath) == 0x7A8, "m_OnStartDeath in CBreakable should be at offset 0x7A8");
+		static_assert(offsetof(CS2::server::CBreakable, m_OnBreak) == 0x7C0, "m_OnBreak in CBreakable should be at offset 0x7C0");
+		static_assert(offsetof(CS2::server::CBreakable, m_OnHealthChanged) == 0x7D8, "m_OnHealthChanged in CBreakable should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CBreakable, m_PerformanceMode) == 0x7F8, "m_PerformanceMode in CBreakable should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CBreakable, m_hPhysicsAttacker) == 0x7FC, "m_hPhysicsAttacker in CBreakable should be at offset 0x7FC");
+		static_assert(offsetof(CS2::server::CBreakable, m_flLastPhysicsInfluenceTime) == 0x800, "m_flLastPhysicsInfluenceTime in CBreakable should be at offset 0x800");
+		static_assert(sizeof(CS2::server::CBreakable) == 0x808, "CBreakable size should be 0x808");
 	}
 }

@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xF0
+			// Class size: 0xF8
 			namespace CInventoryImageData /**/ {
 				constexpr std::ptrdiff_t m_nNodeType = 0x0; // client::InventoryNodeType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t name = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t inventory_image_data = 0x10; // client::inv_image_data_t  | Schema_DeclaredClass | Size: 0xe0
+				constexpr std::ptrdiff_t inventory_image_data = 0x10; // client::inv_image_data_t  | Schema_DeclaredClass | Size: 0xe8
 			}
 		}
 	}

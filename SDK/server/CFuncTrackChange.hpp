@@ -28,26 +28,26 @@ namespace CS2 {
 	namespace server {
 		class CFuncTrackChange : public CS2::server::CFuncPlatRot {
 		public:
-			server::CPathTrack* m_trackTop; // 0x8a0 | Schema_Ptr | Size: 0x8
-			server::CPathTrack* m_trackBottom; // 0x8a8 | Schema_Ptr | Size: 0x8
-			server::CFuncTrackTrain* m_train; // 0x8b0 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_trackTopName; // 0x8b8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_trackBottomName; // 0x8c0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_trainName; // 0x8c8 | Schema_Atomic | Size: 0x8
-			server::TRAIN_CODE m_code; // 0x8d0 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_targetState; // 0x8d4 | Schema_Builtin | Size: 0x4
-			int32_t m_use; // 0x8d8 | Schema_Builtin | Size: 0x4
+			server::CPathTrack* m_trackTop; // 0x7f8 | Schema_Ptr | Size: 0x8
+			server::CPathTrack* m_trackBottom; // 0x800 | Schema_Ptr | Size: 0x8
+			server::CFuncTrackTrain* m_train; // 0x808 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_trackTopName; // 0x810 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_trackBottomName; // 0x818 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_trainName; // 0x820 | Schema_Atomic | Size: 0x8
+			server::TRAIN_CODE m_code; // 0x828 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_targetState; // 0x82c | Schema_Builtin | Size: 0x4
+			int32_t m_use; // 0x830 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackTop) == 0x8A0, "m_trackTop in CFuncTrackChange should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackBottom) == 0x8A8, "m_trackBottom in CFuncTrackChange should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_train) == 0x8B0, "m_train in CFuncTrackChange should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackTopName) == 0x8B8, "m_trackTopName in CFuncTrackChange should be at offset 0x8B8");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackBottomName) == 0x8C0, "m_trackBottomName in CFuncTrackChange should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trainName) == 0x8C8, "m_trainName in CFuncTrackChange should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_code) == 0x8D0, "m_code in CFuncTrackChange should be at offset 0x8D0");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_targetState) == 0x8D4, "m_targetState in CFuncTrackChange should be at offset 0x8D4");
-		static_assert(offsetof(CS2::server::CFuncTrackChange, m_use) == 0x8D8, "m_use in CFuncTrackChange should be at offset 0x8D8");
-		static_assert(sizeof(CS2::server::CFuncTrackChange) == 0x8E0, "CFuncTrackChange size should be 0x8E0");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackTop) == 0x7F8, "m_trackTop in CFuncTrackChange should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackBottom) == 0x800, "m_trackBottom in CFuncTrackChange should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_train) == 0x808, "m_train in CFuncTrackChange should be at offset 0x808");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackTopName) == 0x810, "m_trackTopName in CFuncTrackChange should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackBottomName) == 0x818, "m_trackBottomName in CFuncTrackChange should be at offset 0x818");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trainName) == 0x820, "m_trainName in CFuncTrackChange should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_code) == 0x828, "m_code in CFuncTrackChange should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_targetState) == 0x82C, "m_targetState in CFuncTrackChange should be at offset 0x82C");
+		static_assert(offsetof(CS2::server::CFuncTrackChange, m_use) == 0x830, "m_use in CFuncTrackChange should be at offset 0x830");
+		static_assert(sizeof(CS2::server::CFuncTrackChange) == 0x838, "CFuncTrackChange size should be 0x838");
 	}
 }

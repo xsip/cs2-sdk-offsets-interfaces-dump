@@ -7,8 +7,8 @@ class pulse_runtime_lib_CPulse_ResumePoint;
 #include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
 
 class pulse_runtime_lib_CPulseCell_Inflow_Wait {
-    char vTable501[0x8];
+    void **__vftable_0;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char end_pad_502[0x3c];
+    char end_pad_512[0x3c];
     pulse_runtime_lib_CPulse_ResumePoint m_WakeResume;
 };

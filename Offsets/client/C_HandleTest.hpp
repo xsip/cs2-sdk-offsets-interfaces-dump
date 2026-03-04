@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x600
+			// Class size: 0x610
 			namespace C_HandleTest /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_Handle = 0x5f8; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bSendHandle = 0x5fc; // bool m_bSendHandle; |  0x5fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Handle = 0x608; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bSendHandle = 0x60c; // bool m_bSendHandle; |  0x60c | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

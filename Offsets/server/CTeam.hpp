@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5A8
+			// Class size: 0x560
 			namespace CTeam /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_aPlayerControllers = 0x4f0; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_aPlayers = 0x508; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerPawn>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_iScore = 0x520; // int32_t m_iScore; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szTeamname = 0x524; // char m_szTeamname[129]; |  0x524 | Schema_FixedArray | Size: 0x81
+				constexpr std::ptrdiff_t m_aPlayerControllers = 0x4a8; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_aPlayers = 0x4c0; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerPawn>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iScore = 0x4d8; // int32_t m_iScore; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_szTeamname = 0x4dc; // char m_szTeamname[129]; |  0x4dc | Schema_FixedArray | Size: 0x81
 			}
 		}
 	}

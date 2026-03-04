@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/CMorphBundleData.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class CMorphBundleData;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -31,7 +27,7 @@ namespace CS2 {
 			float32 m_flVHeightSrc; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<modellib::CMorphBundleData> m_bundleDatas; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_bundleDatas[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_bundleDatas[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CMorphRectData, m_nXLeftDst) == 0x0, "m_nXLeftDst in CMorphRectData should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMorphRectData, m_nYTopDst) == 0x2, "m_nYTopDst in CMorphRectData should be at offset 0x2");

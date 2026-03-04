@@ -21,29 +21,29 @@ namespace CS2 {
 	namespace server {
 		class CCSWeaponBaseGun : public CS2::server::CCSWeaponBase {
 		public:
-			int32_t m_zoomLevel; // 0x11d0 | Schema_Builtin | Size: 0x4
-			int32_t m_iBurstShotsRemaining; // 0x11d4 | Schema_Builtin | Size: 0x4
+			int32_t m_zoomLevel; // 0x1130 | Schema_Builtin | Size: 0x4
+			int32_t m_iBurstShotsRemaining; // 0x1134 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);
-			int32_t m_silencedModelIndex; // 0x11e0 | Schema_Builtin | Size: 0x4
-			bool m_inPrecache; // 0x11e4 | Schema_Builtin | Size: 0x1
-			bool m_bNeedsBoltAction; // 0x11e5 | Schema_Builtin | Size: 0x1
+			int32_t m_silencedModelIndex; // 0x1140 | Schema_Builtin | Size: 0x4
+			bool m_inPrecache; // 0x1144 | Schema_Builtin | Size: 0x1
+			bool m_bNeedsBoltAction; // 0x1145 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nRevolverCylinderIdx; // 0x11e8 | Schema_Builtin | Size: 0x4
-			bool m_bSkillReloadAvailable; // 0x11ec | Schema_Builtin | Size: 0x1
-			bool m_bSkillReloadLiftedReloadKey; // 0x11ed | Schema_Builtin | Size: 0x1
-			bool m_bSkillBoltInterruptAvailable; // 0x11ee | Schema_Builtin | Size: 0x1
-			bool m_bSkillBoltLiftedFireKey; // 0x11ef | Schema_Builtin | Size: 0x1
+			int32_t m_nRevolverCylinderIdx; // 0x1148 | Schema_Builtin | Size: 0x4
+			bool m_bSkillReloadAvailable; // 0x114c | Schema_Builtin | Size: 0x1
+			bool m_bSkillReloadLiftedReloadKey; // 0x114d | Schema_Builtin | Size: 0x1
+			bool m_bSkillBoltInterruptAvailable; // 0x114e | Schema_Builtin | Size: 0x1
+			bool m_bSkillBoltLiftedFireKey; // 0x114f | Schema_Builtin | Size: 0x1
 		};
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_zoomLevel) == 0x11D0, "m_zoomLevel in CCSWeaponBaseGun should be at offset 0x11D0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_iBurstShotsRemaining) == 0x11D4, "m_iBurstShotsRemaining in CCSWeaponBaseGun should be at offset 0x11D4");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_silencedModelIndex) == 0x11E0, "m_silencedModelIndex in CCSWeaponBaseGun should be at offset 0x11E0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_inPrecache) == 0x11E4, "m_inPrecache in CCSWeaponBaseGun should be at offset 0x11E4");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bNeedsBoltAction) == 0x11E5, "m_bNeedsBoltAction in CCSWeaponBaseGun should be at offset 0x11E5");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_nRevolverCylinderIdx) == 0x11E8, "m_nRevolverCylinderIdx in CCSWeaponBaseGun should be at offset 0x11E8");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillReloadAvailable) == 0x11EC, "m_bSkillReloadAvailable in CCSWeaponBaseGun should be at offset 0x11EC");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillReloadLiftedReloadKey) == 0x11ED, "m_bSkillReloadLiftedReloadKey in CCSWeaponBaseGun should be at offset 0x11ED");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillBoltInterruptAvailable) == 0x11EE, "m_bSkillBoltInterruptAvailable in CCSWeaponBaseGun should be at offset 0x11EE");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillBoltLiftedFireKey) == 0x11EF, "m_bSkillBoltLiftedFireKey in CCSWeaponBaseGun should be at offset 0x11EF");
-		static_assert(sizeof(CS2::server::CCSWeaponBaseGun) == 0x11F0, "CCSWeaponBaseGun size should be 0x11F0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_zoomLevel) == 0x1130, "m_zoomLevel in CCSWeaponBaseGun should be at offset 0x1130");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_iBurstShotsRemaining) == 0x1134, "m_iBurstShotsRemaining in CCSWeaponBaseGun should be at offset 0x1134");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_silencedModelIndex) == 0x1140, "m_silencedModelIndex in CCSWeaponBaseGun should be at offset 0x1140");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_inPrecache) == 0x1144, "m_inPrecache in CCSWeaponBaseGun should be at offset 0x1144");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bNeedsBoltAction) == 0x1145, "m_bNeedsBoltAction in CCSWeaponBaseGun should be at offset 0x1145");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_nRevolverCylinderIdx) == 0x1148, "m_nRevolverCylinderIdx in CCSWeaponBaseGun should be at offset 0x1148");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillReloadAvailable) == 0x114C, "m_bSkillReloadAvailable in CCSWeaponBaseGun should be at offset 0x114C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillReloadLiftedReloadKey) == 0x114D, "m_bSkillReloadLiftedReloadKey in CCSWeaponBaseGun should be at offset 0x114D");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillBoltInterruptAvailable) == 0x114E, "m_bSkillBoltInterruptAvailable in CCSWeaponBaseGun should be at offset 0x114E");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillBoltLiftedFireKey) == 0x114F, "m_bSkillBoltLiftedFireKey in CCSWeaponBaseGun should be at offset 0x114F");
+		static_assert(sizeof(CS2::server::CCSWeaponBaseGun) == 0x1150, "CCSWeaponBaseGun size should be 0x1150");
 	}
 }

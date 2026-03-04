@@ -5,7 +5,9 @@
 #include "modellib_AnimParamID.hpp"
 
 class animgraphlib_CVirtualAnimParameter {
-    char vTable38[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CGlobalSymbol m_name;
     CUtlString m_sComment;
     CUtlString m_group;
@@ -18,5 +20,5 @@ class animgraphlib_CVirtualAnimParameter {
     char end_pad_41[0x6];
     CUtlString m_expressionString;
     animgraphlib_AnimParamType_t m_eParamType;
-    char end_pad_248[0x7];
+    char end_pad_273[0x7];
 };

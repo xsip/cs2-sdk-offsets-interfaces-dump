@@ -28,26 +28,26 @@ namespace CS2 {
 	namespace server {
 		class CPointEntityFinder : public CS2::server::CBaseEntity {
 		public:
-			GlobalTypes::CHandle<server::CBaseEntity> m_hEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// char  m_hEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntity; // 0x4a8 | Schema_Atomic | Size: 0x4
+			// char m_hEntity[0x4]; // 0x4a8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x500 | Schema_Atomic | Size: 0x4
-			// char  m_hFilter[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x4b8 | Schema_Atomic | Size: 0x4
+			// char m_hFilter[0x4]; // 0x4b8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iRefName; // 0x508 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hReference; // 0x510 | Schema_Atomic | Size: 0x4
-			// char  m_hReference[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
-			server::EntFinderMethod_t m_FindMethod; // 0x514 | Schema_DeclaredEnum | Size: 0x4
-			entity2::CEntityIOOutput m_OnFoundEntity; // 0x518 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_iRefName; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hReference; // 0x4c8 | Schema_Atomic | Size: 0x4
+			// char m_hReference[0x4]; // 0x4c8 | Schema_Atomic | Size: 0x4
+			server::EntFinderMethod_t m_FindMethod; // 0x4cc | Schema_DeclaredEnum | Size: 0x4
+			entity2::CEntityIOOutput m_OnFoundEntity; // 0x4d0 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hEntity) == 0x4F0, "m_hEntity in CPointEntityFinder should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointEntityFinder, m_iFilterName) == 0x4F8, "m_iFilterName in CPointEntityFinder should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hFilter) == 0x500, "m_hFilter in CPointEntityFinder should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPointEntityFinder, m_iRefName) == 0x508, "m_iRefName in CPointEntityFinder should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hReference) == 0x510, "m_hReference in CPointEntityFinder should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPointEntityFinder, m_FindMethod) == 0x514, "m_FindMethod in CPointEntityFinder should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CPointEntityFinder, m_OnFoundEntity) == 0x518, "m_OnFoundEntity in CPointEntityFinder should be at offset 0x518");
-		static_assert(sizeof(CS2::server::CPointEntityFinder) == 0x540, "CPointEntityFinder size should be 0x540");
+		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hEntity) == 0x4A8, "m_hEntity in CPointEntityFinder should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointEntityFinder, m_iFilterName) == 0x4B0, "m_iFilterName in CPointEntityFinder should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hFilter) == 0x4B8, "m_hFilter in CPointEntityFinder should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPointEntityFinder, m_iRefName) == 0x4C0, "m_iRefName in CPointEntityFinder should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hReference) == 0x4C8, "m_hReference in CPointEntityFinder should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPointEntityFinder, m_FindMethod) == 0x4CC, "m_FindMethod in CPointEntityFinder should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CPointEntityFinder, m_OnFoundEntity) == 0x4D0, "m_OnFoundEntity in CPointEntityFinder should be at offset 0x4D0");
+		static_assert(sizeof(CS2::server::CPointEntityFinder) == 0x4E8, "CPointEntityFinder size should be 0x4E8");
 	}
 }

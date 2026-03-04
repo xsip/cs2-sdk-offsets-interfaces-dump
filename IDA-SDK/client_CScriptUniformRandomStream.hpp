@@ -4,8 +4,8 @@
 
 
 class client_CScriptUniformRandomStream {
-    char vTable1091[0x8];
+    void **__vftable_0;
     HSCRIPT m_hScriptScope;
-    char pad_1092[0x8c];
+    char pad_1895[0x8c];
     int32_t m_nInitialSeed;
 };

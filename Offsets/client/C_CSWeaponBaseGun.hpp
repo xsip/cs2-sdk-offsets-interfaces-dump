@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1FB0
+			// Class size: 0x1F70
 			namespace C_CSWeaponBaseGun /*: public CS2::client::C_CSWeaponBase*/ {
-				constexpr std::ptrdiff_t m_zoomLevel = 0x1f80; // int32_t m_zoomLevel; |  0x1f80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iBurstShotsRemaining = 0x1f84; // int32_t m_iBurstShotsRemaining; |  0x1f84 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iSilencerBodygroup = 0x1f88; // int32_t m_iSilencerBodygroup; |  0x1f88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_silencedModelIndex = 0x1f98; // int32_t m_silencedModelIndex; |  0x1f98 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_inPrecache = 0x1f9c; // bool m_inPrecache; |  0x1f9c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNeedsBoltAction = 0x1f9d; // bool m_bNeedsBoltAction; |  0x1f9d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nRevolverCylinderIdx = 0x1fa0; // int32_t m_nRevolverCylinderIdx; |  0x1fa0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_zoomLevel = 0x1f40; // int32_t m_zoomLevel; |  0x1f40 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iBurstShotsRemaining = 0x1f44; // int32_t m_iBurstShotsRemaining; |  0x1f44 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iSilencerBodygroup = 0x1f48; // int32_t m_iSilencerBodygroup; |  0x1f48 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_silencedModelIndex = 0x1f58; // int32_t m_silencedModelIndex; |  0x1f58 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_inPrecache = 0x1f5c; // bool m_inPrecache; |  0x1f5c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNeedsBoltAction = 0x1f5d; // bool m_bNeedsBoltAction; |  0x1f5d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nRevolverCylinderIdx = 0x1f60; // int32_t m_nRevolverCylinderIdx; |  0x1f60 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -10,6 +10,6 @@ class server_SignatureOutflow_Resume {
     pulse_runtime_lib_PulseRuntimeChunkIndex_t m_nDestChunk;
     int32_t m_nInstruction;
     pulse_runtime_lib_PulseRegisterMap_t m_OutflowRegisterMap;
-    char pad_528[0x48];
-    char pad_3960[0x48];
+    char pad_539[0x48];
+    char pad_4091[0x48];
 };

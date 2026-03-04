@@ -5,7 +5,7 @@
 
 class animationsystem_CCompressorGroup {
     int32_t m_nTotalElementCount;
-    char pad_432[0x4];
+    char pad_438[0x4];
     char m_szChannelClass[0x18];
     char m_szVariableName[0x18];
     char m_nType[0x18];
@@ -15,7 +15,7 @@ class animationsystem_CCompressorGroup {
     char m_szElementNames[0x18];
     char m_nElementUniqueID[0x18];
     char m_nElementMask[0x18];
-    char pad_433[0x18];
+    char pad_439[0x18];
     char m_vectorCompressor[0x18];
     char m_quaternionCompressor[0x18];
     char m_intCompressor[0x18];

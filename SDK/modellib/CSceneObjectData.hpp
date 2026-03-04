@@ -10,6 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/CMaterialDrawDescriptor.hpp>
+#include <SDK/mathlib_extended/AABB_t.hpp>
+#include <SDK/modellib/CMeshletDescriptor.hpp>
+#include <SDK/modellib/RTProxyDrawDescriptor_t.hpp>
 
 
 
@@ -23,12 +27,14 @@ namespace CS2 {
 			GlobalTypes::Vector m_vMinBounds; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxBounds; // 0xc | Schema_Atomic | Size: 0xc
 			// GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor> m_drawCalls; // 0x18 | Schema_Atomic | Size: 0x10
-			char  m_drawCalls[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
+			char m_drawCalls[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
 			// GlobalTypes::CUtlLeanVector<mathlib_extended::AABB_t> m_drawBounds; // 0x28 | Schema_Atomic | Size: 0x10
-			char  m_drawBounds[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
+			char m_drawBounds[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
 			// GlobalTypes::CUtlLeanVector<modellib::CMeshletDescriptor> m_meshlets; // 0x38 | Schema_Atomic | Size: 0x10
-			char  m_meshlets[0x10]; // 0x38 | Schema_Atomic | Size: 0x10
-			GlobalTypes::Vector4D m_vTintColor; // 0x48 | Schema_Atomic | Size: 0x10
+			char m_meshlets[0x10]; // 0x38 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<modellib::RTProxyDrawDescriptor_t> m_rtProxyDrawCalls; // 0x48 | Schema_Atomic | Size: 0x10
+			char m_rtProxyDrawCalls[0x10]; // 0x48 | Schema_Atomic | Size: 0x10
+			GlobalTypes::Vector4D m_vTintColor; // 0x58 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x38); // End padding
 		};
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_vMinBounds) == 0x0, "m_vMinBounds in CSceneObjectData should be at offset 0x0");
@@ -36,7 +42,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_drawCalls) == 0x18, "m_drawCalls in CSceneObjectData should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_drawBounds) == 0x28, "m_drawBounds in CSceneObjectData should be at offset 0x28");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_meshlets) == 0x38, "m_meshlets in CSceneObjectData should be at offset 0x38");
-		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_vTintColor) == 0x48, "m_vTintColor in CSceneObjectData should be at offset 0x48");
-		static_assert(sizeof(CS2::modellib::CSceneObjectData) == 0x90, "CSceneObjectData size should be 0x90");
+		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_rtProxyDrawCalls) == 0x48, "m_rtProxyDrawCalls in CSceneObjectData should be at offset 0x48");
+		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_vTintColor) == 0x58, "m_vTintColor in CSceneObjectData should be at offset 0x58");
+		static_assert(sizeof(CS2::modellib::CSceneObjectData) == 0xA0, "CSceneObjectData size should be 0xA0");
 	}
 }

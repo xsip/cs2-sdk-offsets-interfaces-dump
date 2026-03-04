@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace resourcesystem {
-			constexpr std::ptrdiff_t ResourceSystem013 = 0x7fdd0; 
+			constexpr std::ptrdiff_t ResourceSystem013 = 0x81fe0; 
 		}
 	}
 }

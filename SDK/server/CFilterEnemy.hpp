@@ -21,18 +21,18 @@ namespace CS2 {
 	namespace server {
 		class CFilterEnemy : public CS2::server::CBaseFilter {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszEnemyName; // 0x548 | Schema_Atomic | Size: 0x8
-			float32 m_flRadius; // 0x550 | Schema_Builtin | Size: 0x4
-			float32 m_flOuterRadius; // 0x554 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxSquadmatesPerEnemy; // 0x558 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszEnemyName; // 0x4e0 | Schema_Atomic | Size: 0x8
+			float32 m_flRadius; // 0x4e8 | Schema_Builtin | Size: 0x4
+			float32 m_flOuterRadius; // 0x4ec | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxSquadmatesPerEnemy; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszPlayerName; // 0x560 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszPlayerName; // 0x4f8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CFilterEnemy, m_iszEnemyName) == 0x548, "m_iszEnemyName in CFilterEnemy should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CFilterEnemy, m_flRadius) == 0x550, "m_flRadius in CFilterEnemy should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CFilterEnemy, m_flOuterRadius) == 0x554, "m_flOuterRadius in CFilterEnemy should be at offset 0x554");
-		static_assert(offsetof(CS2::server::CFilterEnemy, m_nMaxSquadmatesPerEnemy) == 0x558, "m_nMaxSquadmatesPerEnemy in CFilterEnemy should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CFilterEnemy, m_iszPlayerName) == 0x560, "m_iszPlayerName in CFilterEnemy should be at offset 0x560");
-		static_assert(sizeof(CS2::server::CFilterEnemy) == 0x568, "CFilterEnemy size should be 0x568");
+		static_assert(offsetof(CS2::server::CFilterEnemy, m_iszEnemyName) == 0x4E0, "m_iszEnemyName in CFilterEnemy should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CFilterEnemy, m_flRadius) == 0x4E8, "m_flRadius in CFilterEnemy should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CFilterEnemy, m_flOuterRadius) == 0x4EC, "m_flOuterRadius in CFilterEnemy should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CFilterEnemy, m_nMaxSquadmatesPerEnemy) == 0x4F0, "m_nMaxSquadmatesPerEnemy in CFilterEnemy should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CFilterEnemy, m_iszPlayerName) == 0x4F8, "m_iszPlayerName in CFilterEnemy should be at offset 0x4F8");
+		static_assert(sizeof(CS2::server::CFilterEnemy) == 0x500, "CFilterEnemy size should be 0x500");
 	}
 }

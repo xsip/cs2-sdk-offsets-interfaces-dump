@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x550
+			// Class size: 0x508
 			namespace CPhysForce /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_nameAttach = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_force = 0x500; // float32 m_force; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_forceTime = 0x504; // float32 m_forceTime; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_attachedObject = 0x508; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_wasRestored = 0x50c; // bool m_wasRestored; |  0x50c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_integrator = 0x510; // server::CConstantForceController  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_nameAttach = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_force = 0x4b8; // float32 m_force; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_forceTime = 0x4bc; // float32 m_forceTime; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_attachedObject = 0x4c0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_wasRestored = 0x4c4; // bool m_wasRestored; |  0x4c4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_integrator = 0x4c8; // server::CConstantForceController  | Schema_DeclaredClass | Size: 0x40
 			}
 		}
 	}

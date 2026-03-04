@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA88
+			// Class size: 0x9E0
 			namespace CPointWorldText /*: public CS2::server::CModelPointEntity*/ {
-				constexpr std::ptrdiff_t m_messageText = 0x7d8; // char m_messageText[512]; |  0x7d8 | Schema_FixedArray | Size: 0x200
-				constexpr std::ptrdiff_t m_FontName = 0x9d8; // char m_FontName[64]; |  0x9d8 | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_BackgroundMaterialName = 0xa18; // char m_BackgroundMaterialName[64]; |  0xa18 | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_bEnabled = 0xa58; // bool m_bEnabled; |  0xa58 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFullbright = 0xa59; // bool m_bFullbright; |  0xa59 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flWorldUnitsPerPx = 0xa5c; // float32 m_flWorldUnitsPerPx; |  0xa5c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFontSize = 0xa60; // float32 m_flFontSize; |  0xa60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDepthOffset = 0xa64; // float32 m_flDepthOffset; |  0xa64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDrawBackground = 0xa68; // bool m_bDrawBackground; |  0xa68 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0xa6c; // float32 m_flBackgroundBorderWidth; |  0xa6c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0xa70; // float32 m_flBackgroundBorderHeight; |  0xa70 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0xa74; // float32 m_flBackgroundWorldToUV; |  0xa74 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Color = 0xa78; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0xa7c; // client::PointWorldTextJustifyHorizontal_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyVertical = 0xa80; // client::PointWorldTextJustifyVertical_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nReorientMode = 0xa84; // client::PointWorldTextReorientMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_messageText = 0x730; // char m_messageText[512]; |  0x730 | Schema_FixedArray | Size: 0x200
+				constexpr std::ptrdiff_t m_FontName = 0x930; // char m_FontName[64]; |  0x930 | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_BackgroundMaterialName = 0x970; // char m_BackgroundMaterialName[64]; |  0x970 | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_bEnabled = 0x9b0; // bool m_bEnabled; |  0x9b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFullbright = 0x9b1; // bool m_bFullbright; |  0x9b1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flWorldUnitsPerPx = 0x9b4; // float32 m_flWorldUnitsPerPx; |  0x9b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFontSize = 0x9b8; // float32 m_flFontSize; |  0x9b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDepthOffset = 0x9bc; // float32 m_flDepthOffset; |  0x9bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDrawBackground = 0x9c0; // bool m_bDrawBackground; |  0x9c0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0x9c4; // float32 m_flBackgroundBorderWidth; |  0x9c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0x9c8; // float32 m_flBackgroundBorderHeight; |  0x9c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0x9cc; // float32 m_flBackgroundWorldToUV; |  0x9cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0x9d0; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0x9d4; // client::PointWorldTextJustifyHorizontal_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyVertical = 0x9d8; // client::PointWorldTextJustifyVertical_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nReorientMode = 0x9dc; // client::PointWorldTextReorientMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

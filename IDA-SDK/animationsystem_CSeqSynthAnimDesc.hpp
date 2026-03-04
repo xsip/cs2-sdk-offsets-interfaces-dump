@@ -8,7 +8,7 @@
 class animationsystem_CSeqSynthAnimDesc {
     CBufferString m_sName;
     animationsystem_CSeqSeqDescFlag m_flags;
-    char pad_450[0x1];
+    char pad_456[0x1];
     animationsystem_CSeqTransition m_transition;
     int16_t m_nLocalBaseReference;
     int16_t m_nLocalBoneMask;

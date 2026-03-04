@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/RenderSkeletonBone_t.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class RenderSkeletonBone_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,10 +22,10 @@ namespace CS2 {
 		class CRenderSkeleton  {
 		public:
 			GlobalTypes::CUtlVector<modellib::RenderSkeletonBone_t> m_bones; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_bones[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_bones[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			GlobalTypes::CUtlVector< int32 > m_boneParents; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_boneParents[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_boneParents[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			int32_t m_nBoneWeightCount; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

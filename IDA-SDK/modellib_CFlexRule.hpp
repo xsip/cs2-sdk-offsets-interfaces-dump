@@ -5,6 +5,6 @@
 
 class modellib_CFlexRule {
     int32_t m_nFlex;
-    char pad_322[0x4];
+    char pad_324[0x4];
     char m_FlexOps[0x18];
 };

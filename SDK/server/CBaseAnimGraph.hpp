@@ -11,12 +11,14 @@
 
 
 #include <SDK/server/CBaseModelEntity.hpp>
+#include <SDK/client/CAnimGraphControllerManager.hpp>
 #include <SDK/server/PhysicsRagdollPose_t.hpp>
 
 
 
 namespace CS2 {
 	namespace client {
+		class CAnimGraphControllerBase;
 		class IChoreoServices;
 	}
 }
@@ -27,38 +29,43 @@ namespace CS2 {
 	namespace server {
 		class CBaseAnimGraph : public CS2::server::CBaseModelEntity {
 		public:
-			S2_PAD(0x80);
-			bool m_bInitiallyPopulateInterpHistory; // 0x858 | Schema_Builtin | Size: 0x1
+			client::CAnimGraphControllerManager m_graphControllerManager; // 0x730 | Schema_DeclaredClass | Size: 0xb0
+			client::CAnimGraphControllerBase* m_pMainGraphController; // 0x7e0 | Schema_Ptr | Size: 0x8
+			bool m_bInitiallyPopulateInterpHistory; // 0x7e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			client::IChoreoServices* m_pChoreoServices; // 0x860 | Schema_Ptr | Size: 0x8
-			bool m_bAnimGraphUpdateEnabled; // 0x868 | Schema_Builtin | Size: 0x1
+			client::IChoreoServices* m_pChoreoServices; // 0x7f0 | Schema_Ptr | Size: 0x8
+			bool m_bAnimGraphUpdateEnabled; // 0x7f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMaxSlopeDistance; // 0x86c | Schema_Builtin | Size: 0x4
-			GlobalTypes::VectorWS m_vLastSlopeCheckPos; // 0x870 | Schema_Atomic | Size: 0xc
-			bool m_bAnimationUpdateScheduled; // 0x87c | Schema_Builtin | Size: 0x1
+			float32 m_flMaxSlopeDistance; // 0x7fc | Schema_Builtin | Size: 0x4
+			GlobalTypes::VectorWS m_vLastSlopeCheckPos; // 0x800 | Schema_Atomic | Size: 0xc
+			uint32_t m_nAnimGraphUpdateId; // 0x80c | Schema_Builtin | Size: 0x4
+			bool m_bAnimationUpdateScheduled; // 0x810 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vecForce; // 0x880 | Schema_Atomic | Size: 0xc
-			int32_t m_nForceBone; // 0x88c | Schema_Builtin | Size: 0x4
-			S2_PAD(0x10);
-			server::PhysicsRagdollPose_t m_RagdollPose; // 0x8a0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bRagdollEnabled; // 0x8c8 | Schema_Builtin | Size: 0x1
-			bool m_bRagdollClientSide; // 0x8c9 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x6);
-			GlobalTypes::CTransform m_xParentedRagdollRootInEntitySpace; // 0x8d0 | Schema_Atomic | Size: 0x20
-			S2_PAD(0x1a0); // End padding
+			GlobalTypes::Vector m_vecForce; // 0x814 | Schema_Atomic | Size: 0xc
+			int32_t m_nForceBone; // 0x820 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x14);
+			server::PhysicsRagdollPose_t m_RagdollPose; // 0x838 | Schema_DeclaredClass | Size: 0x28
+			bool m_bRagdollEnabled; // 0x860 | Schema_Builtin | Size: 0x1
+			bool m_bRagdollClientSide; // 0x861 | Schema_Builtin | Size: 0x1
+			S2_PAD(0xe);
+			GlobalTypes::CTransform m_xParentedRagdollRootInEntitySpace; // 0x870 | Schema_Atomic | Size: 0x20
+			S2_PAD(0x190); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bInitiallyPopulateInterpHistory) == 0x858, "m_bInitiallyPopulateInterpHistory in CBaseAnimGraph should be at offset 0x858");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_pChoreoServices) == 0x860, "m_pChoreoServices in CBaseAnimGraph should be at offset 0x860");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bAnimGraphUpdateEnabled) == 0x868, "m_bAnimGraphUpdateEnabled in CBaseAnimGraph should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_flMaxSlopeDistance) == 0x86C, "m_flMaxSlopeDistance in CBaseAnimGraph should be at offset 0x86C");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_vLastSlopeCheckPos) == 0x870, "m_vLastSlopeCheckPos in CBaseAnimGraph should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bAnimationUpdateScheduled) == 0x87C, "m_bAnimationUpdateScheduled in CBaseAnimGraph should be at offset 0x87C");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_vecForce) == 0x880, "m_vecForce in CBaseAnimGraph should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_nForceBone) == 0x88C, "m_nForceBone in CBaseAnimGraph should be at offset 0x88C");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_RagdollPose) == 0x8A0, "m_RagdollPose in CBaseAnimGraph should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bRagdollEnabled) == 0x8C8, "m_bRagdollEnabled in CBaseAnimGraph should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bRagdollClientSide) == 0x8C9, "m_bRagdollClientSide in CBaseAnimGraph should be at offset 0x8C9");
-		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_xParentedRagdollRootInEntitySpace) == 0x8D0, "m_xParentedRagdollRootInEntitySpace in CBaseAnimGraph should be at offset 0x8D0");
-		static_assert(sizeof(CS2::server::CBaseAnimGraph) == 0xA90, "CBaseAnimGraph size should be 0xA90");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_graphControllerManager) == 0x730, "m_graphControllerManager in CBaseAnimGraph should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_pMainGraphController) == 0x7E0, "m_pMainGraphController in CBaseAnimGraph should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bInitiallyPopulateInterpHistory) == 0x7E8, "m_bInitiallyPopulateInterpHistory in CBaseAnimGraph should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_pChoreoServices) == 0x7F0, "m_pChoreoServices in CBaseAnimGraph should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bAnimGraphUpdateEnabled) == 0x7F8, "m_bAnimGraphUpdateEnabled in CBaseAnimGraph should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_flMaxSlopeDistance) == 0x7FC, "m_flMaxSlopeDistance in CBaseAnimGraph should be at offset 0x7FC");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_vLastSlopeCheckPos) == 0x800, "m_vLastSlopeCheckPos in CBaseAnimGraph should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_nAnimGraphUpdateId) == 0x80C, "m_nAnimGraphUpdateId in CBaseAnimGraph should be at offset 0x80C");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bAnimationUpdateScheduled) == 0x810, "m_bAnimationUpdateScheduled in CBaseAnimGraph should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_vecForce) == 0x814, "m_vecForce in CBaseAnimGraph should be at offset 0x814");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_nForceBone) == 0x820, "m_nForceBone in CBaseAnimGraph should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_RagdollPose) == 0x838, "m_RagdollPose in CBaseAnimGraph should be at offset 0x838");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bRagdollEnabled) == 0x860, "m_bRagdollEnabled in CBaseAnimGraph should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bRagdollClientSide) == 0x861, "m_bRagdollClientSide in CBaseAnimGraph should be at offset 0x861");
+		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_xParentedRagdollRootInEntitySpace) == 0x870, "m_xParentedRagdollRootInEntitySpace in CBaseAnimGraph should be at offset 0x870");
+		static_assert(sizeof(CS2::server::CBaseAnimGraph) == 0xA20, "CBaseAnimGraph size should be 0xA20");
 	}
 }

@@ -4,7 +4,7 @@
 
 
 class animgraphlib_CAnimUpdateNodeRef {
-    char vTable58[0x8];
+    void **__vftable_0;
     int32_t m_nodeIndex;
     char end_pad_59[0x4];
 };

@@ -5,39 +5,45 @@
 class client_CCSGameModeRules;
 #include "entity2_CNetworkVarChainer.hpp"
 #include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
 #include "client_C_RetakeGameRules.hpp"
 
 class client_C_CSGameRules {
-    char vTable1286[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
     int32_t m_nTotalPausedTicks;
     int32_t m_nPauseStartTick;
     bool m_bGamePaused;
-    char pad_1287[0x7];
-    char pad_1285[0x40];
-    char pad_1284[0x40];
+    char pad_2140[0x7];
+    char pad_2138[0x40];
+    char pad_2137[0x40];
     bool m_bFreezePeriod;
     bool m_bWarmupPeriod;
-    char pad_1266[0x2];
+    char pad_2120[0x2];
     entity2_GameTime_t m_fWarmupPeriodEnd;
     entity2_GameTime_t m_fWarmupPeriodStart;
     bool m_bTerroristTimeOutActive;
     bool m_bCTTimeOutActive;
-    char pad_1267[0x2];
+    char pad_2121[0x2];
     float32 m_flTerroristTimeOutRemaining;
     float32 m_flCTTimeOutRemaining;
     int32_t m_nTerroristTimeOuts;
     int32_t m_nCTTimeOuts;
     bool m_bTechnicalTimeOut;
     bool m_bMatchWaitingForResume;
-    char pad_1268[0x2];
+    char pad_2122[0x2];
     int32_t m_iFreezeTime;
     int32_t m_iRoundTime;
     float32 m_fMatchStartTime;
     entity2_GameTime_t m_fRoundStartTime;
     entity2_GameTime_t m_flRestartRoundTime;
     bool m_bGameRestart;
-    char pad_1269[0x3];
+    char pad_2123[0x3];
     float32 m_flGameStartTime;
     float32 m_timeUntilNextPhaseStarts;
     int32_t m_gamePhase;
@@ -50,16 +56,16 @@ class client_C_CSGameRules {
     bool m_bMapHasRescueZone;
     bool m_bMapHasBuyZone;
     bool m_bIsQueuedMatchmaking;
-    char pad_1270[0x3];
+    char pad_2124[0x3];
     int32_t m_nQueuedMatchmakingMode;
     bool m_bIsValveDS;
     bool m_bLogoMap;
     bool m_bPlayAllStepSoundsOnServer;
-    char pad_1271[0x1];
+    char pad_2125[0x1];
     int32_t m_iSpectatorSlotCount;
     int32_t m_MatchDevice;
     bool m_bHasMatchStarted;
-    char pad_1272[0x3];
+    char pad_2126[0x3];
     int32_t m_nNextMapInMapgroup;
     char m_szTournamentEventName[512];
     char m_szTournamentEventStage[512];
@@ -71,19 +77,18 @@ class client_C_CSGameRules {
     bool m_bIsDroppingItems;
     bool m_bIsQuestEligible;
     bool m_bIsHltvActive;
-    char pad_1273[0x1];
+    bool m_bBombPlanted;
     uint16_t m_arrProhibitedItemIndices[100];
     uint32_t m_arrTournamentActiveCasterAccounts[4];
     int32_t m_numBestOfMaps;
     int32_t m_nHalloweenMaskListSeed;
     bool m_bBombDropped;
-    bool m_bBombPlanted;
-    char pad_1274[0x2];
+    char pad_2127[0x3];
     int32_t m_iRoundWinStatus;
     int32_t m_eRoundWinReason;
     bool m_bTCantBuy;
     bool m_bCTCantBuy;
-    char pad_1275[0x2];
+    char pad_2128[0x2];
     int32_t m_iMatchStats_RoundResults[30];
     int32_t m_iMatchStats_PlayersAlive_CT[30];
     int32_t m_iMatchStats_PlayersAlive_T[30];
@@ -98,23 +103,23 @@ class client_C_CSGameRules {
     int32_t m_nEndMatchMapVoteWinner;
     int32_t m_iNumConsecutiveCTLoses;
     int32_t m_iNumConsecutiveTerroristLoses;
-    char pad_1276[0xbc];
+    char pad_2129[0xbc];
     int32_t m_nMatchAbortedEarlyReason;
     bool m_bHasTriggeredRoundStartMusic;
     bool m_bSwitchingTeamsAtRoundReset;
-    char pad_1277[0x1a];
+    char pad_2130[0x1a];
     client_CCSGameModeRules* m_pGameModeRules;
     client_C_RetakeGameRules m_RetakeRules;
     uint8_t m_nMatchEndCount;
-    char pad_1278[0x3];
+    char pad_2131[0x3];
     int32_t m_nTTeamIntroVariant;
     int32_t m_nCTTeamIntroVariant;
     bool m_bTeamIntroPeriod;
-    char pad_1279[0x3];
+    char pad_2132[0x3];
     int32_t m_iRoundEndWinnerTeam;
     int32_t m_eRoundEndReason;
     bool m_bRoundEndShowTimerDefend;
-    char pad_1280[0x3];
+    char pad_2133[0x3];
     int32_t m_iRoundEndTimerTime;
     CUtlString m_sRoundEndFunFactToken;
     CPlayerSlot m_iRoundEndFunFactPlayerSlot;
@@ -124,12 +129,12 @@ class client_C_CSGameRules {
     CUtlString m_sRoundEndMessage;
     int32_t m_iRoundEndPlayerCount;
     bool m_bRoundEndNoMusic;
-    char pad_1281[0x3];
+    char pad_2134[0x3];
     int32_t m_iRoundEndLegacy;
     uint8_t m_nRoundEndCount;
-    char pad_1282[0x3];
+    char pad_2135[0x3];
     int32_t m_iRoundStartRoundNumber;
     uint8_t m_nRoundStartCount;
-    char pad_1283[0x400b];
+    char pad_2136[0x400b];
     float64 m_flLastPerfSampleTime;
 };

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x848
+			// Class size: 0x7A0
 			namespace CCommentaryViewPosition /*: public CS2::server::CSprite*/ {
 				// NO SCHEMA DATA FOUND!
 			}

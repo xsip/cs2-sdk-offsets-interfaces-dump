@@ -4,10 +4,10 @@
 
 
 class animgraphlib_CAnimStateMachineUpdater {
-    char vTable219[0x8];
+    void **__vftable_0;
     char m_states[0x18];
     char m_transitions[0x18];
-    char pad_220[0x18];
+    char pad_231[0x18];
     int32_t m_startStateIndex;
-    char pad_221[0x4];
+    char pad_232[0x4];
 };

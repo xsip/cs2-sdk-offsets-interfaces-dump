@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CMapSharedEnvironment : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_targetMapName; // 0x4f0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_targetMapName; // 0x4a8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CMapSharedEnvironment, m_targetMapName) == 0x4F0, "m_targetMapName in CMapSharedEnvironment should be at offset 0x4F0");
-		static_assert(sizeof(CS2::server::CMapSharedEnvironment) == 0x500, "CMapSharedEnvironment size should be 0x500");
+		static_assert(offsetof(CS2::server::CMapSharedEnvironment, m_targetMapName) == 0x4A8, "m_targetMapName in CMapSharedEnvironment should be at offset 0x4A8");
+		static_assert(sizeof(CS2::server::CMapSharedEnvironment) == 0x4B8, "CMapSharedEnvironment size should be 0x4B8");
 	}
 }

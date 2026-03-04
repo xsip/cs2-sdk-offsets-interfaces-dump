@@ -42,7 +42,6 @@ namespace GlobalTypes {
 	using Color /*Color*/ = char[0x4]; //  Schema_Atomic
 	using Vector /*Vector*/ = char[0xc]; //  Schema_Atomic
 
-	template <typename T>
 	using CUtlVector /*CUtlVector< SampleCode >*/ = char[0x18]; //  Schema_Atomic
 	using Quaternion /*Quaternion*/ = char[0x10]; //  Schema_Atomic
 	using CAnimVariant /*CAnimVariant*/ = char[0x11]; //  Schema_Atomic
@@ -50,12 +49,12 @@ namespace GlobalTypes {
 	using KeyValues3 /*KeyValues3*/ = char[0x10]; //  Schema_Atomic
 	using CColorGradient /*CColorGradient*/ = char[0x18]; //  Schema_Atomic
 	using Vector4D /*Vector4D*/ = char[0x10]; //  Schema_Atomic
+	using matrix3x4_t /*matrix3x4_t*/ = char[0x30]; //  Schema_Atomic
 
 	template <typename T>
 	using CStrongHandle /*CStrongHandle< InfoForResourceTypeIMaterial2 >*/ = char[0x8]; //  Schema_Atomic
 
 	using QuaternionStorage /*QuaternionStorage*/ = char[0x10]; //  Schema_Atomic
-	using matrix3x4_t /*matrix3x4_t*/ = char[0x30]; //  Schema_Atomic
 
 	using CEntityIndex /*CEntityIndex*/ = char[0x4]; //  Schema_Atomic
 
@@ -74,29 +73,30 @@ namespace GlobalTypes {
 	using CKV3MemberNameWithStorage /*CKV3MemberNameWithStorage*/ = char[0x38]; //  Schema_Atomic
 	using CGlobalSymbolCaseSensitive /*CGlobalSymbolCaseSensitive*/ = char[0x8]; //  Schema_Atomic
 	using CKV3MemberNameSet /*CKV3MemberNameSet*/ = char[0x10]; //  Schema_Atomic
-	using HSCRIPT /*HSCRIPT*/ = char[0x8]; //  Schema_Atomic
-	using CUtlStringToken /*CUtlStringToken*/ = char[0x4]; //  Schema_Atomic
-
+	using CSplitScreenSlot /*CSplitScreenSlot*/ = char[0x4]; //  Schema_Atomic
+	using CParticleNamedValueRef /*CParticleNamedValueRef*/ = char[0x40]; //  Schema_Atomic
 	using CUtlSymbolLarge /*CUtlSymbolLarge*/ = char[0x8]; //  Schema_Atomic
+	using ParticleParamID_t /*ParticleParamID_t*/ = char[0x10]; //  Schema_Atomic
+	using CUtlStringToken /*CUtlStringToken*/ = char[0x4]; //  Schema_Atomic
+	using fltx4 /*fltx4*/ = char[0x10]; //  Schema_Atomic
+	using FourVectors /*FourVectors*/ = char[0x30]; //  Schema_FixedArray
+	using CUtlVectorSIMDPaddedVector /*CUtlVectorSIMDPaddedVector*/ = char[0x18]; //  Schema_Atomic
 
 	template <typename T1>
 	using CHandle /*CHandle*/ = char[0x4]; //  Schema_Atomic
 	using VectorWS /*VectorWS*/ = char[0xc]; //  Schema_Atomic
 	using CNetworkedQuantizedFloat /*CNetworkedQuantizedFloat*/ = char[0x8]; //  Schema_Atomic
-	using CSplitScreenSlot /*CSplitScreenSlot*/ = char[0x4]; //  Schema_Atomic
 	using CAttachmentNameSymbolWithStorage /*CAttachmentNameSymbolWithStorage*/ = char[0x20]; //  Schema_Atomic
+	using CAnimGraph2ParamAutoResetOptionalRef /*CAnimGraph2ParamAutoResetOptionalRef*/ = char[0x20]; //  Schema_Atomic
 
 	using CPlayerSlot /*CPlayerSlot*/ = char[0x4]; //  Schema_Atomic
-	using CEntityHandle /*CEntityHandle*/ = char[0x4]; //  Schema_Atomic
 	using CTransformWS /*CTransformWS*/ = char[0x20]; //  Schema_Atomic
+	using CEntityHandle /*CEntityHandle*/ = char[0x4]; //  Schema_Atomic
+	using HSCRIPT /*HSCRIPT*/ = char[0x8]; //  Schema_Atomic
 	using CUtlSymbol /*CUtlSymbol*/ = char[0x2]; //  Schema_Atomic
 	using WorldGroupId_t /*WorldGroupId_t*/ = char[0x4]; //  Schema_Atomic
-	using CParticleNamedValueRef /*CParticleNamedValueRef*/ = char[0x40]; //  Schema_Atomic
 	using Range_t /*Range_t*/ = char[0x8]; //  Schema_Atomic
 	using CResourceName /*CResourceName*/ = char[0xe0]; //  Schema_Atomic
-	using fltx4 /*fltx4*/ = char[0x10]; //  Schema_Atomic
-	using FourVectors /*FourVectors*/ = char[0x30]; //  Schema_FixedArray
-	using CUtlVectorSIMDPaddedVector /*CUtlVectorSIMDPaddedVector*/ = char[0x18]; //  Schema_Atomic
 
 	template <typename T>
 	using CStrongHandleCopyable /*CStrongHandleCopyable< InfoForResourceTypeCEntityLump >*/ = char[0x8]; //  Schema_Atomic
@@ -123,9 +123,6 @@ namespace GlobalTypes {
 	template <typename T>
 	using CWeakHandle /*CWeakHandle< InfoForResourceTypeCCompositeMaterialKit >*/ = char[0x8]; //  Schema_DeclaredClass
 	using RotationVector /*RotationVector*/ = char[0xc]; //  Schema_Atomic
-
-	template <typename T>
-	using CVariantBase /*CVariantBase< CVariantDefaultAllocator >*/ = char[0x10]; //  Schema_Atomic
 
 	template <typename T>
 	using CResourcePointer /*CResourcePointer< CResourceString >*/ = char[0x4]; //  Schema_Atomic

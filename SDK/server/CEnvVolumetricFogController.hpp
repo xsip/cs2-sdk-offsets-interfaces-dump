@@ -22,83 +22,83 @@ namespace CS2 {
 	namespace server {
 		class CEnvVolumetricFogController : public CS2::server::CBaseEntity {
 		public:
-			float32 m_flScattering; // 0x4f0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_TintColor; // 0x4f4 | Schema_Atomic | Size: 0x4
-			float32 m_flAnisotropy; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeSpeed; // 0x4fc | Schema_Builtin | Size: 0x4
-			float32 m_flDrawDistance; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeInStart; // 0x504 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeInEnd; // 0x508 | Schema_Builtin | Size: 0x4
-			float32 m_flIndirectStrength; // 0x50c | Schema_Builtin | Size: 0x4
-			int32_t m_nVolumeDepth; // 0x510 | Schema_Builtin | Size: 0x4
-			float32 m_fFirstVolumeSliceThickness; // 0x514 | Schema_Builtin | Size: 0x4
-			int32_t m_nIndirectTextureDimX; // 0x518 | Schema_Builtin | Size: 0x4
-			int32_t m_nIndirectTextureDimY; // 0x51c | Schema_Builtin | Size: 0x4
-			int32_t m_nIndirectTextureDimZ; // 0x520 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vBoxMins; // 0x524 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vBoxMaxs; // 0x530 | Schema_Atomic | Size: 0xc
-			bool m_bActive; // 0x53c | Schema_Builtin | Size: 0x1
+			float32 m_flScattering; // 0x4a8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_TintColor; // 0x4ac | Schema_Atomic | Size: 0x4
+			float32 m_flAnisotropy; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeSpeed; // 0x4b4 | Schema_Builtin | Size: 0x4
+			float32 m_flDrawDistance; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeInStart; // 0x4bc | Schema_Builtin | Size: 0x4
+			float32 m_flFadeInEnd; // 0x4c0 | Schema_Builtin | Size: 0x4
+			float32 m_flIndirectStrength; // 0x4c4 | Schema_Builtin | Size: 0x4
+			int32_t m_nVolumeDepth; // 0x4c8 | Schema_Builtin | Size: 0x4
+			float32 m_fFirstVolumeSliceThickness; // 0x4cc | Schema_Builtin | Size: 0x4
+			int32_t m_nIndirectTextureDimX; // 0x4d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nIndirectTextureDimY; // 0x4d4 | Schema_Builtin | Size: 0x4
+			int32_t m_nIndirectTextureDimZ; // 0x4d8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vBoxMins; // 0x4dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vBoxMaxs; // 0x4e8 | Schema_Atomic | Size: 0xc
+			bool m_bActive; // 0x4f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_flStartAnisoTime; // 0x540 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flStartScatterTime; // 0x544 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flStartDrawDistanceTime; // 0x548 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flStartAnisotropy; // 0x54c | Schema_Builtin | Size: 0x4
-			float32 m_flStartScattering; // 0x550 | Schema_Builtin | Size: 0x4
-			float32 m_flStartDrawDistance; // 0x554 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultAnisotropy; // 0x558 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultScattering; // 0x55c | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultDrawDistance; // 0x560 | Schema_Builtin | Size: 0x4
-			bool m_bStartDisabled; // 0x564 | Schema_Builtin | Size: 0x1
-			bool m_bEnableIndirect; // 0x565 | Schema_Builtin | Size: 0x1
-			bool m_bIsMaster; // 0x566 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flStartAnisoTime; // 0x4f8 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flStartScatterTime; // 0x4fc | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flStartDrawDistanceTime; // 0x500 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flStartAnisotropy; // 0x504 | Schema_Builtin | Size: 0x4
+			float32 m_flStartScattering; // 0x508 | Schema_Builtin | Size: 0x4
+			float32 m_flStartDrawDistance; // 0x50c | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultAnisotropy; // 0x510 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultScattering; // 0x514 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultDrawDistance; // 0x518 | Schema_Builtin | Size: 0x4
+			bool m_bStartDisabled; // 0x51c | Schema_Builtin | Size: 0x1
+			bool m_bEnableIndirect; // 0x51d | Schema_Builtin | Size: 0x1
+			bool m_bIsMaster; // 0x51e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogIndirectTexture; // 0x568 | Schema_Atomic | Size: 0x8
-			char  m_hFogIndirectTexture[0x8]; // 0x568 | Schema_Atomic | Size: 0x8
-			int32_t m_nForceRefreshCount; // 0x570 | Schema_Builtin | Size: 0x4
-			float32 m_fNoiseSpeed; // 0x574 | Schema_Builtin | Size: 0x4
-			float32 m_fNoiseStrength; // 0x578 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vNoiseScale; // 0x57c | Schema_Atomic | Size: 0xc
-			float32 m_fWindSpeed; // 0x588 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vWindDirection; // 0x58c | Schema_Atomic | Size: 0xc
-			bool m_bFirstTime; // 0x598 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogIndirectTexture; // 0x520 | Schema_Atomic | Size: 0x8
+			char m_hFogIndirectTexture[0x8]; // 0x520 | Schema_Atomic | Size: 0x8
+			int32_t m_nForceRefreshCount; // 0x528 | Schema_Builtin | Size: 0x4
+			float32 m_fNoiseSpeed; // 0x52c | Schema_Builtin | Size: 0x4
+			float32 m_fNoiseStrength; // 0x530 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vNoiseScale; // 0x534 | Schema_Atomic | Size: 0xc
+			float32 m_fWindSpeed; // 0x540 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vWindDirection; // 0x544 | Schema_Atomic | Size: 0xc
+			bool m_bFirstTime; // 0x550 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flScattering) == 0x4F0, "m_flScattering in CEnvVolumetricFogController should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_TintColor) == 0x4F4, "m_TintColor in CEnvVolumetricFogController should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flAnisotropy) == 0x4F8, "m_flAnisotropy in CEnvVolumetricFogController should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flFadeSpeed) == 0x4FC, "m_flFadeSpeed in CEnvVolumetricFogController should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDrawDistance) == 0x500, "m_flDrawDistance in CEnvVolumetricFogController should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flFadeInStart) == 0x504, "m_flFadeInStart in CEnvVolumetricFogController should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flFadeInEnd) == 0x508, "m_flFadeInEnd in CEnvVolumetricFogController should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flIndirectStrength) == 0x50C, "m_flIndirectStrength in CEnvVolumetricFogController should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nVolumeDepth) == 0x510, "m_nVolumeDepth in CEnvVolumetricFogController should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fFirstVolumeSliceThickness) == 0x514, "m_fFirstVolumeSliceThickness in CEnvVolumetricFogController should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nIndirectTextureDimX) == 0x518, "m_nIndirectTextureDimX in CEnvVolumetricFogController should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nIndirectTextureDimY) == 0x51C, "m_nIndirectTextureDimY in CEnvVolumetricFogController should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nIndirectTextureDimZ) == 0x520, "m_nIndirectTextureDimZ in CEnvVolumetricFogController should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vBoxMins) == 0x524, "m_vBoxMins in CEnvVolumetricFogController should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vBoxMaxs) == 0x530, "m_vBoxMaxs in CEnvVolumetricFogController should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bActive) == 0x53C, "m_bActive in CEnvVolumetricFogController should be at offset 0x53C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartAnisoTime) == 0x540, "m_flStartAnisoTime in CEnvVolumetricFogController should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartScatterTime) == 0x544, "m_flStartScatterTime in CEnvVolumetricFogController should be at offset 0x544");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartDrawDistanceTime) == 0x548, "m_flStartDrawDistanceTime in CEnvVolumetricFogController should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartAnisotropy) == 0x54C, "m_flStartAnisotropy in CEnvVolumetricFogController should be at offset 0x54C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartScattering) == 0x550, "m_flStartScattering in CEnvVolumetricFogController should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartDrawDistance) == 0x554, "m_flStartDrawDistance in CEnvVolumetricFogController should be at offset 0x554");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDefaultAnisotropy) == 0x558, "m_flDefaultAnisotropy in CEnvVolumetricFogController should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDefaultScattering) == 0x55C, "m_flDefaultScattering in CEnvVolumetricFogController should be at offset 0x55C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDefaultDrawDistance) == 0x560, "m_flDefaultDrawDistance in CEnvVolumetricFogController should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bStartDisabled) == 0x564, "m_bStartDisabled in CEnvVolumetricFogController should be at offset 0x564");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bEnableIndirect) == 0x565, "m_bEnableIndirect in CEnvVolumetricFogController should be at offset 0x565");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bIsMaster) == 0x566, "m_bIsMaster in CEnvVolumetricFogController should be at offset 0x566");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_hFogIndirectTexture) == 0x568, "m_hFogIndirectTexture in CEnvVolumetricFogController should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nForceRefreshCount) == 0x570, "m_nForceRefreshCount in CEnvVolumetricFogController should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fNoiseSpeed) == 0x574, "m_fNoiseSpeed in CEnvVolumetricFogController should be at offset 0x574");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fNoiseStrength) == 0x578, "m_fNoiseStrength in CEnvVolumetricFogController should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vNoiseScale) == 0x57C, "m_vNoiseScale in CEnvVolumetricFogController should be at offset 0x57C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fWindSpeed) == 0x588, "m_fWindSpeed in CEnvVolumetricFogController should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vWindDirection) == 0x58C, "m_vWindDirection in CEnvVolumetricFogController should be at offset 0x58C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bFirstTime) == 0x598, "m_bFirstTime in CEnvVolumetricFogController should be at offset 0x598");
-		static_assert(sizeof(CS2::server::CEnvVolumetricFogController) == 0x5A0, "CEnvVolumetricFogController size should be 0x5A0");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flScattering) == 0x4A8, "m_flScattering in CEnvVolumetricFogController should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_TintColor) == 0x4AC, "m_TintColor in CEnvVolumetricFogController should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flAnisotropy) == 0x4B0, "m_flAnisotropy in CEnvVolumetricFogController should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flFadeSpeed) == 0x4B4, "m_flFadeSpeed in CEnvVolumetricFogController should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDrawDistance) == 0x4B8, "m_flDrawDistance in CEnvVolumetricFogController should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flFadeInStart) == 0x4BC, "m_flFadeInStart in CEnvVolumetricFogController should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flFadeInEnd) == 0x4C0, "m_flFadeInEnd in CEnvVolumetricFogController should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flIndirectStrength) == 0x4C4, "m_flIndirectStrength in CEnvVolumetricFogController should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nVolumeDepth) == 0x4C8, "m_nVolumeDepth in CEnvVolumetricFogController should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fFirstVolumeSliceThickness) == 0x4CC, "m_fFirstVolumeSliceThickness in CEnvVolumetricFogController should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nIndirectTextureDimX) == 0x4D0, "m_nIndirectTextureDimX in CEnvVolumetricFogController should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nIndirectTextureDimY) == 0x4D4, "m_nIndirectTextureDimY in CEnvVolumetricFogController should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nIndirectTextureDimZ) == 0x4D8, "m_nIndirectTextureDimZ in CEnvVolumetricFogController should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vBoxMins) == 0x4DC, "m_vBoxMins in CEnvVolumetricFogController should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vBoxMaxs) == 0x4E8, "m_vBoxMaxs in CEnvVolumetricFogController should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bActive) == 0x4F4, "m_bActive in CEnvVolumetricFogController should be at offset 0x4F4");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartAnisoTime) == 0x4F8, "m_flStartAnisoTime in CEnvVolumetricFogController should be at offset 0x4F8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartScatterTime) == 0x4FC, "m_flStartScatterTime in CEnvVolumetricFogController should be at offset 0x4FC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartDrawDistanceTime) == 0x500, "m_flStartDrawDistanceTime in CEnvVolumetricFogController should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartAnisotropy) == 0x504, "m_flStartAnisotropy in CEnvVolumetricFogController should be at offset 0x504");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartScattering) == 0x508, "m_flStartScattering in CEnvVolumetricFogController should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flStartDrawDistance) == 0x50C, "m_flStartDrawDistance in CEnvVolumetricFogController should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDefaultAnisotropy) == 0x510, "m_flDefaultAnisotropy in CEnvVolumetricFogController should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDefaultScattering) == 0x514, "m_flDefaultScattering in CEnvVolumetricFogController should be at offset 0x514");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flDefaultDrawDistance) == 0x518, "m_flDefaultDrawDistance in CEnvVolumetricFogController should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bStartDisabled) == 0x51C, "m_bStartDisabled in CEnvVolumetricFogController should be at offset 0x51C");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bEnableIndirect) == 0x51D, "m_bEnableIndirect in CEnvVolumetricFogController should be at offset 0x51D");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bIsMaster) == 0x51E, "m_bIsMaster in CEnvVolumetricFogController should be at offset 0x51E");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_hFogIndirectTexture) == 0x520, "m_hFogIndirectTexture in CEnvVolumetricFogController should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_nForceRefreshCount) == 0x528, "m_nForceRefreshCount in CEnvVolumetricFogController should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fNoiseSpeed) == 0x52C, "m_fNoiseSpeed in CEnvVolumetricFogController should be at offset 0x52C");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fNoiseStrength) == 0x530, "m_fNoiseStrength in CEnvVolumetricFogController should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vNoiseScale) == 0x534, "m_vNoiseScale in CEnvVolumetricFogController should be at offset 0x534");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_fWindSpeed) == 0x540, "m_fWindSpeed in CEnvVolumetricFogController should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vWindDirection) == 0x544, "m_vWindDirection in CEnvVolumetricFogController should be at offset 0x544");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bFirstTime) == 0x550, "m_bFirstTime in CEnvVolumetricFogController should be at offset 0x550");
+		static_assert(sizeof(CS2::server::CEnvVolumetricFogController) == 0x558, "CEnvVolumetricFogController size should be 0x558");
 	}
 }

@@ -9,7 +9,7 @@ namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem_voicecontainers {
 			// Class size: 0x1E0
-			namespace CVoiceContainerRandomSampler /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
+			namespace CVoiceContainerRandomSampler /*: public CS2::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator*/ {
 				constexpr std::ptrdiff_t m_flAmplitude = 0xb8; // float32 m_flAmplitude; |  0xb8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAmplitudeJitter = 0xbc; // float32 m_flAmplitudeJitter; |  0xbc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTimeJitter = 0xc0; // float32 m_flTimeJitter; |  0xc0 | Schema_Builtin | Size: 0x4

@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x540
+			// Class size: 0x4F8
 			namespace CEnvShake /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_limitToEntity = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Amplitude = 0x4f8; // float32 m_Amplitude; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Frequency = 0x4fc; // float32 m_Frequency; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Duration = 0x500; // float32 m_Duration; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Radius = 0x504; // float32 m_Radius; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_stopTime = 0x508; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nextShake = 0x50c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_currentAmp = 0x510; // float32 m_currentAmp; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_maxForce = 0x514; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_shakeCallback = 0x528; // server::CPhysicsShake  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_limitToEntity = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Amplitude = 0x4b0; // float32 m_Amplitude; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Frequency = 0x4b4; // float32 m_Frequency; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Duration = 0x4b8; // float32 m_Duration; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Radius = 0x4bc; // float32 m_Radius; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_stopTime = 0x4c0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nextShake = 0x4c4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_currentAmp = 0x4c8; // float32 m_currentAmp; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_maxForce = 0x4cc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_shakeCallback = 0x4e0; // server::CPhysicsShake  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

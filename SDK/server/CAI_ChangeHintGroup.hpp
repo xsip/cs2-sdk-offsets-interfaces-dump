@@ -21,17 +21,17 @@ namespace CS2 {
 	namespace server {
 		class CAI_ChangeHintGroup : public CS2::server::CBaseEntity {
 		public:
-			int32_t m_iSearchType; // 0x4f0 | Schema_Builtin | Size: 0x4
+			int32_t m_iSearchType; // 0x4a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_strSearchName; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_strNewHintGroup; // 0x500 | Schema_Atomic | Size: 0x8
-			float32 m_flRadius; // 0x508 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_strSearchName; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_strNewHintGroup; // 0x4b8 | Schema_Atomic | Size: 0x8
+			float32 m_flRadius; // 0x4c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_iSearchType) == 0x4F0, "m_iSearchType in CAI_ChangeHintGroup should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_strSearchName) == 0x4F8, "m_strSearchName in CAI_ChangeHintGroup should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_strNewHintGroup) == 0x500, "m_strNewHintGroup in CAI_ChangeHintGroup should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_flRadius) == 0x508, "m_flRadius in CAI_ChangeHintGroup should be at offset 0x508");
-		static_assert(sizeof(CS2::server::CAI_ChangeHintGroup) == 0x510, "CAI_ChangeHintGroup size should be 0x510");
+		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_iSearchType) == 0x4A8, "m_iSearchType in CAI_ChangeHintGroup should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_strSearchName) == 0x4B0, "m_strSearchName in CAI_ChangeHintGroup should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_strNewHintGroup) == 0x4B8, "m_strNewHintGroup in CAI_ChangeHintGroup should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_flRadius) == 0x4C0, "m_flRadius in CAI_ChangeHintGroup should be at offset 0x4C0");
+		static_assert(sizeof(CS2::server::CAI_ChangeHintGroup) == 0x4C8, "CAI_ChangeHintGroup size should be 0x4C8");
 	}
 }

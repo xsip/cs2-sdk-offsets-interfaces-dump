@@ -29,46 +29,46 @@ namespace CS2 {
 	namespace server {
 		class CPropDoorRotating : public CS2::server::CBasePropDoor {
 		public:
-			GlobalTypes::Vector m_vecAxis; // 0xff0 | Schema_Atomic | Size: 0xc
-			float32 m_flDistance; // 0xffc | Schema_Builtin | Size: 0x4
-			server::PropDoorRotatingSpawnPos_t m_eSpawnPosition; // 0x1000 | Schema_DeclaredEnum | Size: 0x4
-			server::PropDoorRotatingOpenDirection_e m_eOpenDirection; // 0x1004 | Schema_DeclaredEnum | Size: 0x4
-			server::PropDoorRotatingOpenDirection_e m_eCurrentOpenDirection; // 0x1008 | Schema_DeclaredEnum | Size: 0x4
-			server::doorCheck_e m_eDefaultCheckDirection; // 0x100c | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flAjarAngle; // 0x1010 | Schema_Builtin | Size: 0x4
-			GlobalTypes::QAngle m_angRotationAjarDeprecated; // 0x1014 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angRotationClosed; // 0x1020 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angRotationOpenForward; // 0x102c | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angRotationOpenBack; // 0x1038 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angGoal; // 0x1044 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecForwardBoundsMin; // 0x1050 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecForwardBoundsMax; // 0x105c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecBackBoundsMin; // 0x1068 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecBackBoundsMax; // 0x1074 | Schema_Atomic | Size: 0xc
-			bool m_bAjarDoorShouldntAlwaysOpen; // 0x1080 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vecAxis; // 0xe50 | Schema_Atomic | Size: 0xc
+			float32 m_flDistance; // 0xe5c | Schema_Builtin | Size: 0x4
+			server::PropDoorRotatingSpawnPos_t m_eSpawnPosition; // 0xe60 | Schema_DeclaredEnum | Size: 0x4
+			server::PropDoorRotatingOpenDirection_e m_eOpenDirection; // 0xe64 | Schema_DeclaredEnum | Size: 0x4
+			server::PropDoorRotatingOpenDirection_e m_eCurrentOpenDirection; // 0xe68 | Schema_DeclaredEnum | Size: 0x4
+			server::doorCheck_e m_eDefaultCheckDirection; // 0xe6c | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flAjarAngle; // 0xe70 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_angRotationAjarDeprecated; // 0xe74 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angRotationClosed; // 0xe80 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angRotationOpenForward; // 0xe8c | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angRotationOpenBack; // 0xe98 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angGoal; // 0xea4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecForwardBoundsMin; // 0xeb0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecForwardBoundsMax; // 0xebc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecBackBoundsMin; // 0xec8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecBackBoundsMax; // 0xed4 | Schema_Atomic | Size: 0xc
+			bool m_bAjarDoorShouldntAlwaysOpen; // 0xee0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle<server::CEntityBlocker> m_hEntityBlocker; // 0x1084 | Schema_Atomic | Size: 0x4
-			// char  m_hEntityBlocker[0x4]; // 0x1084 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CEntityBlocker> m_hEntityBlocker; // 0xee4 | Schema_Atomic | Size: 0x4
+			// char m_hEntityBlocker[0x4]; // 0xee4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecAxis) == 0xFF0, "m_vecAxis in CPropDoorRotating should be at offset 0xFF0");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_flDistance) == 0xFFC, "m_flDistance in CPropDoorRotating should be at offset 0xFFC");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eSpawnPosition) == 0x1000, "m_eSpawnPosition in CPropDoorRotating should be at offset 0x1000");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eOpenDirection) == 0x1004, "m_eOpenDirection in CPropDoorRotating should be at offset 0x1004");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eCurrentOpenDirection) == 0x1008, "m_eCurrentOpenDirection in CPropDoorRotating should be at offset 0x1008");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eDefaultCheckDirection) == 0x100C, "m_eDefaultCheckDirection in CPropDoorRotating should be at offset 0x100C");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_flAjarAngle) == 0x1010, "m_flAjarAngle in CPropDoorRotating should be at offset 0x1010");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationAjarDeprecated) == 0x1014, "m_angRotationAjarDeprecated in CPropDoorRotating should be at offset 0x1014");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationClosed) == 0x1020, "m_angRotationClosed in CPropDoorRotating should be at offset 0x1020");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationOpenForward) == 0x102C, "m_angRotationOpenForward in CPropDoorRotating should be at offset 0x102C");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationOpenBack) == 0x1038, "m_angRotationOpenBack in CPropDoorRotating should be at offset 0x1038");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angGoal) == 0x1044, "m_angGoal in CPropDoorRotating should be at offset 0x1044");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecForwardBoundsMin) == 0x1050, "m_vecForwardBoundsMin in CPropDoorRotating should be at offset 0x1050");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecForwardBoundsMax) == 0x105C, "m_vecForwardBoundsMax in CPropDoorRotating should be at offset 0x105C");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecBackBoundsMin) == 0x1068, "m_vecBackBoundsMin in CPropDoorRotating should be at offset 0x1068");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecBackBoundsMax) == 0x1074, "m_vecBackBoundsMax in CPropDoorRotating should be at offset 0x1074");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_bAjarDoorShouldntAlwaysOpen) == 0x1080, "m_bAjarDoorShouldntAlwaysOpen in CPropDoorRotating should be at offset 0x1080");
-		static_assert(offsetof(CS2::server::CPropDoorRotating, m_hEntityBlocker) == 0x1084, "m_hEntityBlocker in CPropDoorRotating should be at offset 0x1084");
-		static_assert(sizeof(CS2::server::CPropDoorRotating) == 0x1090, "CPropDoorRotating size should be 0x1090");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecAxis) == 0xE50, "m_vecAxis in CPropDoorRotating should be at offset 0xE50");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_flDistance) == 0xE5C, "m_flDistance in CPropDoorRotating should be at offset 0xE5C");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eSpawnPosition) == 0xE60, "m_eSpawnPosition in CPropDoorRotating should be at offset 0xE60");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eOpenDirection) == 0xE64, "m_eOpenDirection in CPropDoorRotating should be at offset 0xE64");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eCurrentOpenDirection) == 0xE68, "m_eCurrentOpenDirection in CPropDoorRotating should be at offset 0xE68");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eDefaultCheckDirection) == 0xE6C, "m_eDefaultCheckDirection in CPropDoorRotating should be at offset 0xE6C");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_flAjarAngle) == 0xE70, "m_flAjarAngle in CPropDoorRotating should be at offset 0xE70");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationAjarDeprecated) == 0xE74, "m_angRotationAjarDeprecated in CPropDoorRotating should be at offset 0xE74");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationClosed) == 0xE80, "m_angRotationClosed in CPropDoorRotating should be at offset 0xE80");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationOpenForward) == 0xE8C, "m_angRotationOpenForward in CPropDoorRotating should be at offset 0xE8C");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angRotationOpenBack) == 0xE98, "m_angRotationOpenBack in CPropDoorRotating should be at offset 0xE98");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_angGoal) == 0xEA4, "m_angGoal in CPropDoorRotating should be at offset 0xEA4");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecForwardBoundsMin) == 0xEB0, "m_vecForwardBoundsMin in CPropDoorRotating should be at offset 0xEB0");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecForwardBoundsMax) == 0xEBC, "m_vecForwardBoundsMax in CPropDoorRotating should be at offset 0xEBC");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecBackBoundsMin) == 0xEC8, "m_vecBackBoundsMin in CPropDoorRotating should be at offset 0xEC8");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecBackBoundsMax) == 0xED4, "m_vecBackBoundsMax in CPropDoorRotating should be at offset 0xED4");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_bAjarDoorShouldntAlwaysOpen) == 0xEE0, "m_bAjarDoorShouldntAlwaysOpen in CPropDoorRotating should be at offset 0xEE0");
+		static_assert(offsetof(CS2::server::CPropDoorRotating, m_hEntityBlocker) == 0xEE4, "m_hEntityBlocker in CPropDoorRotating should be at offset 0xEE4");
+		static_assert(sizeof(CS2::server::CPropDoorRotating) == 0xEF0, "CPropDoorRotating size should be 0xEF0");
 	}
 }

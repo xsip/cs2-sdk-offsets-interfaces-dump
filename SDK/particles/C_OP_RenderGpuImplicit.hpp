@@ -33,7 +33,7 @@ namespace CS2 {
 			int32_t m_nScaleCP; // 0x680 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x688 | Schema_Atomic | Size: 0x8
-			char  m_hMaterial[0x8]; // 0x688 | Schema_Atomic | Size: 0x8
+			char m_hMaterial[0x8]; // 0x688 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::particles::C_OP_RenderGpuImplicit, m_bUsePerParticleRadius) == 0x220, "m_bUsePerParticleRadius in C_OP_RenderGpuImplicit should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderGpuImplicit, m_nVertexCountKb) == 0x224, "m_nVertexCountKb in C_OP_RenderGpuImplicit should be at offset 0x224");

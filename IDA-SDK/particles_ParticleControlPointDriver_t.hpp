@@ -4,8 +4,9 @@
 
 
 class particles_ParticleControlPointDriver_t {
-    int32_t m_iControlPoint;
+    ParticleParamID_t m_iControlPoint;
     animationsystem_ParticleAttachment_t m_iAttachType;
+    char pad_1254[0x4];
     CUtlString m_attachmentName;
     Vector m_vecOffset;
     QAngle m_angOffset;

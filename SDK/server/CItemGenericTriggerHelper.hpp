@@ -26,11 +26,11 @@ namespace CS2 {
 	namespace server {
 		class CItemGenericTriggerHelper : public CS2::server::CBaseModelEntity {
 		public:
-			GlobalTypes::CHandle<server::CItemGeneric> m_hParentItem; // 0x7d8 | Schema_Atomic | Size: 0x4
-			// char  m_hParentItem[0x4]; // 0x7d8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CItemGeneric> m_hParentItem; // 0x730 | Schema_Atomic | Size: 0x4
+			// char m_hParentItem[0x4]; // 0x730 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CItemGenericTriggerHelper, m_hParentItem) == 0x7D8, "m_hParentItem in CItemGenericTriggerHelper should be at offset 0x7D8");
-		static_assert(sizeof(CS2::server::CItemGenericTriggerHelper) == 0x7E0, "CItemGenericTriggerHelper size should be 0x7E0");
+		static_assert(offsetof(CS2::server::CItemGenericTriggerHelper, m_hParentItem) == 0x730, "m_hParentItem in CItemGenericTriggerHelper should be at offset 0x730");
+		static_assert(sizeof(CS2::server::CItemGenericTriggerHelper) == 0x738, "CItemGenericTriggerHelper size should be 0x738");
 	}
 }

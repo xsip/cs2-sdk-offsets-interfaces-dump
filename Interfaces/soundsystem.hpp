@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace soundsystem {
-			constexpr std::ptrdiff_t SoundOpSystem001 = 0x3eb4a0; 
-			constexpr std::ptrdiff_t SoundOpSystemEdit001 = 0x3eb380; 
-			constexpr std::ptrdiff_t SoundSystem001 = 0x3eae60; 
-			constexpr std::ptrdiff_t VMixEditTool001 = 0x485ed80b; 
+			constexpr std::ptrdiff_t SoundOpSystem001 = 0x4f3aa0; 
+			constexpr std::ptrdiff_t SoundOpSystemEdit001 = 0x4f3980; 
+			constexpr std::ptrdiff_t SoundSystem001 = 0x4f3470; 
+			constexpr std::ptrdiff_t VMixEditTool001 = 0x59472ff; 
 		}
 	}
 }

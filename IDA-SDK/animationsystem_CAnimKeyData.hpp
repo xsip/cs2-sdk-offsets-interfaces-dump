@@ -9,6 +9,6 @@ class animationsystem_CAnimKeyData {
     char m_userArray[0x18];
     char m_morphArray[0x18];
     int32_t m_nChannelElements;
-    char pad_431[0x4];
+    char pad_437[0x4];
     char m_dataChannelArray[0x18];
 };

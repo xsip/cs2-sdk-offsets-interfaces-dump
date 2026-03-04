@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x558
+			// Class size: 0x4F0
 			namespace FilterHealth /*: public CS2::server::CBaseFilter*/ {
-				constexpr std::ptrdiff_t m_bAdrenalineActive = 0x548; // bool m_bAdrenalineActive; |  0x548 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iHealthMin = 0x54c; // int32_t m_iHealthMin; |  0x54c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iHealthMax = 0x550; // int32_t m_iHealthMax; |  0x550 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAdrenalineActive = 0x4e0; // bool m_bAdrenalineActive; |  0x4e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iHealthMin = 0x4e4; // int32_t m_iHealthMin; |  0x4e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iHealthMax = 0x4e8; // int32_t m_iHealthMax; |  0x4e8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

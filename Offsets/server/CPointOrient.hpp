@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x510
+			// Class size: 0x4C8
 			namespace CPointOrient /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_iszSpawnTargetName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hTarget = 0x4f8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bActive = 0x4fc; // bool m_bActive; |  0x4fc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nGoalDirection = 0x500; // client::PointOrientGoalDirectionType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nConstraint = 0x504; // client::PointOrientConstraint_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxTurnRate = 0x508; // float32 m_flMaxTurnRate; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastGameTime = 0x50c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSpawnTargetName = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTarget = 0x4b0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bActive = 0x4b4; // bool m_bActive; |  0x4b4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nGoalDirection = 0x4b8; // client::PointOrientGoalDirectionType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nConstraint = 0x4bc; // client::PointOrientConstraint_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxTurnRate = 0x4c0; // float32 m_flMaxTurnRate; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastGameTime = 0x4c4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

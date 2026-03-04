@@ -11,14 +11,10 @@
 
 
 #include <SDK/particles/PetGroundType_t.hpp>
+#include <SDK/particles/ParticlePreviewBodyGroup_t.hpp>
 
 
 
-namespace CS2 {
-	namespace particles {
-		class ParticlePreviewBodyGroup_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -35,7 +31,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_hitboxSetName; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_materialGroupName; // 0x28 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector<particles::ParticlePreviewBodyGroup_t> m_vecBodyGroups; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_vecBodyGroups[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_vecBodyGroups[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			float32 m_flPlaybackSpeed; // 0x48 | Schema_Builtin | Size: 0x4
 			float32 m_flParticleSimulationRate; // 0x4c | Schema_Builtin | Size: 0x4
 			bool m_bShouldDrawHitboxes; // 0x50 | Schema_Builtin | Size: 0x1

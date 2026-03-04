@@ -4,6 +4,6 @@
 
 
 class smartprops_CSmartPropSelectionCriteria {
-    char vTable2573[0x8];
+    void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
 };

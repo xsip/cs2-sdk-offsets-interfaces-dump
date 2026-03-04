@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x650
-			namespace CPathMover /*: public CS2::server::CPathSimple*/ {
-				constexpr std::ptrdiff_t m_vecPathNodes = 0x600; // server::CUtlVector<GlobalTypes::CHandle<server::CMoverPathNode>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecMovers = 0x618; // server::CUtlVector<GlobalTypes::CHandle<server::CFuncMover>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_xInitialPathWorldToLocal = 0x630; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
+			// Class size: 0x620
+			namespace CPathMover /*: public CS2::server::CPathWithDynamicNodes*/ {
+				constexpr std::ptrdiff_t m_vecMovers = 0x5f0; // server::CUtlVector<GlobalTypes::CHandle<server::CFuncMover>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hMoverSpawner = 0x608; // GlobalTypes::CHandle<server::CPathMoverEntitySpawner>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszMoverSpawnerName = 0x610; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

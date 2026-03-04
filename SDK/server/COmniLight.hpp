@@ -21,14 +21,14 @@ namespace CS2 {
 	namespace server {
 		class COmniLight : public CS2::server::CBarnLight {
 		public:
-			float32 m_flInnerAngle; // 0xb00 | Schema_Builtin | Size: 0x4
-			float32 m_flOuterAngle; // 0xb04 | Schema_Builtin | Size: 0x4
-			bool m_bShowLight; // 0xb08 | Schema_Builtin | Size: 0x1
+			float32 m_flInnerAngle; // 0xa20 | Schema_Builtin | Size: 0x4
+			float32 m_flOuterAngle; // 0xa24 | Schema_Builtin | Size: 0x4
+			bool m_bShowLight; // 0xa28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::COmniLight, m_flInnerAngle) == 0xB00, "m_flInnerAngle in COmniLight should be at offset 0xB00");
-		static_assert(offsetof(CS2::server::COmniLight, m_flOuterAngle) == 0xB04, "m_flOuterAngle in COmniLight should be at offset 0xB04");
-		static_assert(offsetof(CS2::server::COmniLight, m_bShowLight) == 0xB08, "m_bShowLight in COmniLight should be at offset 0xB08");
-		static_assert(sizeof(CS2::server::COmniLight) == 0xB10, "COmniLight size should be 0xB10");
+		static_assert(offsetof(CS2::server::COmniLight, m_flInnerAngle) == 0xA20, "m_flInnerAngle in COmniLight should be at offset 0xA20");
+		static_assert(offsetof(CS2::server::COmniLight, m_flOuterAngle) == 0xA24, "m_flOuterAngle in COmniLight should be at offset 0xA24");
+		static_assert(offsetof(CS2::server::COmniLight, m_bShowLight) == 0xA28, "m_bShowLight in COmniLight should be at offset 0xA28");
+		static_assert(sizeof(CS2::server::COmniLight) == 0xA30, "COmniLight size should be 0xA30");
 	}
 }

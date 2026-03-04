@@ -10,16 +10,12 @@
 #endif
 
 
+#include <SDK/physicslib/RnNode_t.hpp>
+#include <SDK/physicslib/RnTriangle_t.hpp>
+#include <SDK/physicslib/RnWing_t.hpp>
 
 
 
-namespace CS2 {
-	namespace physicslib {
-		class RnNode_t;
-		class RnTriangle_t;
-		class RnWing_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -30,16 +26,16 @@ namespace CS2 {
 			GlobalTypes::Vector m_vMin; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMax; // 0xc | Schema_Atomic | Size: 0xc
 			GlobalTypes::CUtlVector<physicslib::RnNode_t> m_Nodes; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_Nodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_Nodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVectorSIMDPaddedVector m_Vertices; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::RnTriangle_t> m_Triangles; // 0x48 | Schema_Atomic | Size: 0x18
-			// char  m_Triangles[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			// char m_Triangles[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::RnWing_t> m_Wings; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_Wings[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_Wings[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint8 > m_TriangleEdgeFlags; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_TriangleEdgeFlags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_TriangleEdgeFlags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint8 > m_Materials; // 0x90 | Schema_Atomic | Size: 0x18
-			// char  m_Materials[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			// char m_Materials[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector m_vOrthographicAreas; // 0xa8 | Schema_Atomic | Size: 0xc
 			uint32_t m_nFlags; // 0xb4 | Schema_Builtin | Size: 0x4
 			uint32_t m_nDebugFlags; // 0xb8 | Schema_Builtin | Size: 0x4

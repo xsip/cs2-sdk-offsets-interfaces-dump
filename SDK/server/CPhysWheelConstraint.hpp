@@ -26,35 +26,35 @@ namespace CS2 {
 	namespace server {
 		class CPhysWheelConstraint : public CS2::server::CPhysConstraint {
 		public:
-			float32 m_flSuspensionFrequency; // 0x560 | Schema_Builtin | Size: 0x4
-			float32 m_flSuspensionDampingRatio; // 0x564 | Schema_Builtin | Size: 0x4
-			float32 m_flSuspensionHeightOffset; // 0x568 | Schema_Builtin | Size: 0x4
-			bool m_bEnableSuspensionLimit; // 0x56c | Schema_Builtin | Size: 0x1
+			float32 m_flSuspensionFrequency; // 0x508 | Schema_Builtin | Size: 0x4
+			float32 m_flSuspensionDampingRatio; // 0x50c | Schema_Builtin | Size: 0x4
+			float32 m_flSuspensionHeightOffset; // 0x510 | Schema_Builtin | Size: 0x4
+			bool m_bEnableSuspensionLimit; // 0x514 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMinSuspensionOffset; // 0x570 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxSuspensionOffset; // 0x574 | Schema_Builtin | Size: 0x4
-			bool m_bEnableSteeringLimit; // 0x578 | Schema_Builtin | Size: 0x1
+			float32 m_flMinSuspensionOffset; // 0x518 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxSuspensionOffset; // 0x51c | Schema_Builtin | Size: 0x4
+			bool m_bEnableSteeringLimit; // 0x520 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMinSteeringAngle; // 0x57c | Schema_Builtin | Size: 0x4
-			float32 m_flMaxSteeringAngle; // 0x580 | Schema_Builtin | Size: 0x4
-			float32 m_flSteeringAxisFriction; // 0x584 | Schema_Builtin | Size: 0x4
-			float32 m_flSpinAxisFriction; // 0x588 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hSteeringMimicsEntity; // 0x58c | Schema_Atomic | Size: 0x4
-			// char  m_hSteeringMimicsEntity[0x4]; // 0x58c | Schema_Atomic | Size: 0x4
+			float32 m_flMinSteeringAngle; // 0x524 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxSteeringAngle; // 0x528 | Schema_Builtin | Size: 0x4
+			float32 m_flSteeringAxisFriction; // 0x52c | Schema_Builtin | Size: 0x4
+			float32 m_flSpinAxisFriction; // 0x530 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hSteeringMimicsEntity; // 0x534 | Schema_Atomic | Size: 0x4
+			// char m_hSteeringMimicsEntity[0x4]; // 0x534 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionFrequency) == 0x560, "m_flSuspensionFrequency in CPhysWheelConstraint should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionDampingRatio) == 0x564, "m_flSuspensionDampingRatio in CPhysWheelConstraint should be at offset 0x564");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionHeightOffset) == 0x568, "m_flSuspensionHeightOffset in CPhysWheelConstraint should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_bEnableSuspensionLimit) == 0x56C, "m_bEnableSuspensionLimit in CPhysWheelConstraint should be at offset 0x56C");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMinSuspensionOffset) == 0x570, "m_flMinSuspensionOffset in CPhysWheelConstraint should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMaxSuspensionOffset) == 0x574, "m_flMaxSuspensionOffset in CPhysWheelConstraint should be at offset 0x574");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_bEnableSteeringLimit) == 0x578, "m_bEnableSteeringLimit in CPhysWheelConstraint should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMinSteeringAngle) == 0x57C, "m_flMinSteeringAngle in CPhysWheelConstraint should be at offset 0x57C");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMaxSteeringAngle) == 0x580, "m_flMaxSteeringAngle in CPhysWheelConstraint should be at offset 0x580");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSteeringAxisFriction) == 0x584, "m_flSteeringAxisFriction in CPhysWheelConstraint should be at offset 0x584");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSpinAxisFriction) == 0x588, "m_flSpinAxisFriction in CPhysWheelConstraint should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_hSteeringMimicsEntity) == 0x58C, "m_hSteeringMimicsEntity in CPhysWheelConstraint should be at offset 0x58C");
-		static_assert(sizeof(CS2::server::CPhysWheelConstraint) == 0x598, "CPhysWheelConstraint size should be 0x598");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionFrequency) == 0x508, "m_flSuspensionFrequency in CPhysWheelConstraint should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionDampingRatio) == 0x50C, "m_flSuspensionDampingRatio in CPhysWheelConstraint should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionHeightOffset) == 0x510, "m_flSuspensionHeightOffset in CPhysWheelConstraint should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_bEnableSuspensionLimit) == 0x514, "m_bEnableSuspensionLimit in CPhysWheelConstraint should be at offset 0x514");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMinSuspensionOffset) == 0x518, "m_flMinSuspensionOffset in CPhysWheelConstraint should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMaxSuspensionOffset) == 0x51C, "m_flMaxSuspensionOffset in CPhysWheelConstraint should be at offset 0x51C");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_bEnableSteeringLimit) == 0x520, "m_bEnableSteeringLimit in CPhysWheelConstraint should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMinSteeringAngle) == 0x524, "m_flMinSteeringAngle in CPhysWheelConstraint should be at offset 0x524");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flMaxSteeringAngle) == 0x528, "m_flMaxSteeringAngle in CPhysWheelConstraint should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSteeringAxisFriction) == 0x52C, "m_flSteeringAxisFriction in CPhysWheelConstraint should be at offset 0x52C");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSpinAxisFriction) == 0x530, "m_flSpinAxisFriction in CPhysWheelConstraint should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_hSteeringMimicsEntity) == 0x534, "m_hSteeringMimicsEntity in CPhysWheelConstraint should be at offset 0x534");
+		static_assert(sizeof(CS2::server::CPhysWheelConstraint) == 0x540, "CPhysWheelConstraint size should be 0x540");
 	}
 }

@@ -20,31 +20,31 @@ namespace CS2 {
 	namespace client {
 		class CModelState  {
 		public:
-			S2_PAD(0xd0);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0xd0 | Schema_Atomic | Size: 0x8
-			char  m_hModel[0x8]; // 0xd0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_ModelName; // 0xd8 | Schema_Atomic | Size: 0x8
+			S2_PAD(0xa0);
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0xa0 | Schema_Atomic | Size: 0x8
+			char m_hModel[0x8]; // 0xa0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_ModelName; // 0xa8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0xc9);
-			bool m_bClientClothCreationSuppressed; // 0x1a9 | Schema_Builtin | Size: 0x1
+			bool m_bClientClothCreationSuppressed; // 0x179 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa6);
-			uint64_t m_MeshGroupMask; // 0x250 | Schema_Builtin | Size: 0x8
+			uint64_t m_MeshGroupMask; // 0x220 | Schema_Builtin | Size: 0x8
 			S2_PAD(0x48);
-			// GlobalTypes::C_NetworkUtlVectorBase< int32 > m_nBodyGroupChoices; // 0x2a0 | Schema_Atomic | Size: 0x18
-			char  m_nBodyGroupChoices[0x18]; // 0x2a0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase< int32 > m_nBodyGroupChoices; // 0x270 | Schema_Atomic | Size: 0x18
+			char m_nBodyGroupChoices[0x18]; // 0x270 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x32);
-			int8_t m_nIdealMotionType; // 0x2ea | Schema_Builtin | Size: 0x1
-			int8_t m_nForceLOD; // 0x2eb | Schema_Builtin | Size: 0x1
-			int8_t m_nClothUpdateFlags; // 0x2ec | Schema_Builtin | Size: 0x1
+			int8_t m_nIdealMotionType; // 0x2ba | Schema_Builtin | Size: 0x1
+			int8_t m_nForceLOD; // 0x2bb | Schema_Builtin | Size: 0x1
+			int8_t m_nClothUpdateFlags; // 0x2bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x13); // End padding
 		};
-		static_assert(offsetof(CS2::client::CModelState, m_hModel) == 0xD0, "m_hModel in CModelState should be at offset 0xD0");
-		static_assert(offsetof(CS2::client::CModelState, m_ModelName) == 0xD8, "m_ModelName in CModelState should be at offset 0xD8");
-		static_assert(offsetof(CS2::client::CModelState, m_bClientClothCreationSuppressed) == 0x1A9, "m_bClientClothCreationSuppressed in CModelState should be at offset 0x1A9");
-		static_assert(offsetof(CS2::client::CModelState, m_MeshGroupMask) == 0x250, "m_MeshGroupMask in CModelState should be at offset 0x250");
-		static_assert(offsetof(CS2::client::CModelState, m_nBodyGroupChoices) == 0x2A0, "m_nBodyGroupChoices in CModelState should be at offset 0x2A0");
-		static_assert(offsetof(CS2::client::CModelState, m_nIdealMotionType) == 0x2EA, "m_nIdealMotionType in CModelState should be at offset 0x2EA");
-		static_assert(offsetof(CS2::client::CModelState, m_nForceLOD) == 0x2EB, "m_nForceLOD in CModelState should be at offset 0x2EB");
-		static_assert(offsetof(CS2::client::CModelState, m_nClothUpdateFlags) == 0x2EC, "m_nClothUpdateFlags in CModelState should be at offset 0x2EC");
-		static_assert(sizeof(CS2::client::CModelState) == 0x300, "CModelState size should be 0x300");
+		static_assert(offsetof(CS2::client::CModelState, m_hModel) == 0xA0, "m_hModel in CModelState should be at offset 0xA0");
+		static_assert(offsetof(CS2::client::CModelState, m_ModelName) == 0xA8, "m_ModelName in CModelState should be at offset 0xA8");
+		static_assert(offsetof(CS2::client::CModelState, m_bClientClothCreationSuppressed) == 0x179, "m_bClientClothCreationSuppressed in CModelState should be at offset 0x179");
+		static_assert(offsetof(CS2::client::CModelState, m_MeshGroupMask) == 0x220, "m_MeshGroupMask in CModelState should be at offset 0x220");
+		static_assert(offsetof(CS2::client::CModelState, m_nBodyGroupChoices) == 0x270, "m_nBodyGroupChoices in CModelState should be at offset 0x270");
+		static_assert(offsetof(CS2::client::CModelState, m_nIdealMotionType) == 0x2BA, "m_nIdealMotionType in CModelState should be at offset 0x2BA");
+		static_assert(offsetof(CS2::client::CModelState, m_nForceLOD) == 0x2BB, "m_nForceLOD in CModelState should be at offset 0x2BB");
+		static_assert(offsetof(CS2::client::CModelState, m_nClothUpdateFlags) == 0x2BC, "m_nClothUpdateFlags in CModelState should be at offset 0x2BC");
+		static_assert(sizeof(CS2::client::CModelState) == 0x2D0, "CModelState size should be 0x2D0");
 	}
 }

@@ -23,7 +23,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_ElementName; // 0x8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector<modellib::CModelConfigElement*> m_NestedElements; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_NestedElements[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_NestedElements[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x20); // End padding
 		};
 		static_assert(offsetof(CS2::modellib::CModelConfigElement, m_ElementName) == 0x8, "m_ElementName in CModelConfigElement should be at offset 0x8");

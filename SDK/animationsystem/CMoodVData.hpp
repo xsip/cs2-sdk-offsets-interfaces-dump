@@ -10,15 +10,12 @@
 #endif
 
 
+#include <SDK/resourcesystem/InfoForResourceTypeCModel.hpp>
 #include <SDK/animationsystem/MoodType_t.hpp>
+#include <SDK/animationsystem/MoodAnimationLayer_t.hpp>
 
 
 
-namespace CS2 {
-	namespace animationsystem {
-		class MoodAnimationLayer_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,11 +24,11 @@ namespace CS2 {
 		class CMoodVData  {
 		public:
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_sModelName; // 0x0 | Schema_Atomic | Size: 0xe0
-			char  m_sModelName[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
+			char m_sModelName[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
 			animationsystem::MoodType_t m_nMoodType; // 0xe0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<animationsystem::MoodAnimationLayer_t> m_animationLayers; // 0xe8 | Schema_Atomic | Size: 0x18
-			// char  m_animationLayers[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
+			// char m_animationLayers[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animationsystem::CMoodVData, m_sModelName) == 0x0, "m_sModelName in CMoodVData should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CMoodVData, m_nMoodType) == 0xE0, "m_nMoodType in CMoodVData should be at offset 0xE0");

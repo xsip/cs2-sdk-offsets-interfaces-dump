@@ -22,15 +22,15 @@ namespace CS2 {
 	namespace server {
 		class CLogicActiveAutosave : public CS2::server::CLogicAutosave {
 		public:
-			int32_t m_TriggerHitPoints; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_flTimeToTrigger; // 0x504 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flStartTime; // 0x508 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flDangerousTime; // 0x50c | Schema_Builtin | Size: 0x4
+			int32_t m_TriggerHitPoints; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_flTimeToTrigger; // 0x4bc | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flStartTime; // 0x4c0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flDangerousTime; // 0x4c4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_TriggerHitPoints) == 0x500, "m_TriggerHitPoints in CLogicActiveAutosave should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flTimeToTrigger) == 0x504, "m_flTimeToTrigger in CLogicActiveAutosave should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flStartTime) == 0x508, "m_flStartTime in CLogicActiveAutosave should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flDangerousTime) == 0x50C, "m_flDangerousTime in CLogicActiveAutosave should be at offset 0x50C");
-		static_assert(sizeof(CS2::server::CLogicActiveAutosave) == 0x510, "CLogicActiveAutosave size should be 0x510");
+		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_TriggerHitPoints) == 0x4B8, "m_TriggerHitPoints in CLogicActiveAutosave should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flTimeToTrigger) == 0x4BC, "m_flTimeToTrigger in CLogicActiveAutosave should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flStartTime) == 0x4C0, "m_flStartTime in CLogicActiveAutosave should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flDangerousTime) == 0x4C4, "m_flDangerousTime in CLogicActiveAutosave should be at offset 0x4C4");
+		static_assert(sizeof(CS2::server::CLogicActiveAutosave) == 0x4C8, "CLogicActiveAutosave size should be 0x4C8");
 	}
 }

@@ -10,16 +10,12 @@
 #endif
 
 
+#include <SDK/mathlib_extended/ConstantInfo_t.hpp>
+#include <SDK/mathlib_extended/VariableInfo_t.hpp>
+#include <SDK/mathlib_extended/FunctionInfo_t.hpp>
 
 
 
-namespace CS2 {
-	namespace mathlib_extended {
-		class ConstantInfo_t;
-		class VariableInfo_t;
-		class FunctionInfo_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -28,17 +24,17 @@ namespace CS2 {
 		class CFuseSymbolTable  {
 		public:
 			GlobalTypes::CUtlVector<mathlib_extended::ConstantInfo_t> m_constants; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_constants[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_constants[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<mathlib_extended::VariableInfo_t> m_variables; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_variables[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_variables[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<mathlib_extended::FunctionInfo_t> m_functions; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_functions[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_functions[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlHashtable< CUtlStringToken, int32 > m_constantMap; // 0x48 | Schema_Atomic | Size: 0x20
-			char  m_constantMap[0x20]; // 0x48 | Schema_Atomic | Size: 0x20
+			char m_constantMap[0x20]; // 0x48 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CUtlHashtable< CUtlStringToken, int32 > m_variableMap; // 0x68 | Schema_Atomic | Size: 0x20
-			char  m_variableMap[0x20]; // 0x68 | Schema_Atomic | Size: 0x20
+			char m_variableMap[0x20]; // 0x68 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CUtlHashtable< CUtlStringToken, int32 > m_functionMap; // 0x88 | Schema_Atomic | Size: 0x20
-			char  m_functionMap[0x20]; // 0x88 | Schema_Atomic | Size: 0x20
+			char m_functionMap[0x20]; // 0x88 | Schema_Atomic | Size: 0x20
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::mathlib_extended::CFuseSymbolTable, m_constants) == 0x0, "m_constants in CFuseSymbolTable should be at offset 0x0");

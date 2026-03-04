@@ -27,20 +27,20 @@ namespace CS2 {
 	namespace server {
 		class CLogicPlayerProxy : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CHandle<server::CBaseEntity> m_hPlayer; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// char  m_hPlayer[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
-			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_PlayerHasAmmo; // 0x4f8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_PlayerHasNoAmmo; // 0x520 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_PlayerDied; // 0x548 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< int32 > m_RequestedPlayerHealth; // 0x570 | Schema_Atomic | Size: 0x28
-			char  m_RequestedPlayerHealth[0x28]; // 0x570 | Schema_Atomic | Size: 0x28
+			entity2::CEntityIOOutput m_PlayerHasAmmo; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_PlayerHasNoAmmo; // 0x4c0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_PlayerDied; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< int32, int32 > m_RequestedPlayerHealth; // 0x4f0 | Schema_Atomic | Size: 0x20
+			char m_RequestedPlayerHealth[0x20]; // 0x4f0 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CHandle<server::CBaseEntity> m_hPlayer; // 0x510 | Schema_Atomic | Size: 0x4
+			// char m_hPlayer[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_hPlayer) == 0x4F0, "m_hPlayer in CLogicPlayerProxy should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerHasAmmo) == 0x4F8, "m_PlayerHasAmmo in CLogicPlayerProxy should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerHasNoAmmo) == 0x520, "m_PlayerHasNoAmmo in CLogicPlayerProxy should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerDied) == 0x548, "m_PlayerDied in CLogicPlayerProxy should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_RequestedPlayerHealth) == 0x570, "m_RequestedPlayerHealth in CLogicPlayerProxy should be at offset 0x570");
-		static_assert(sizeof(CS2::server::CLogicPlayerProxy) == 0x598, "CLogicPlayerProxy size should be 0x598");
+		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerHasAmmo) == 0x4A8, "m_PlayerHasAmmo in CLogicPlayerProxy should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerHasNoAmmo) == 0x4C0, "m_PlayerHasNoAmmo in CLogicPlayerProxy should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerDied) == 0x4D8, "m_PlayerDied in CLogicPlayerProxy should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_RequestedPlayerHealth) == 0x4F0, "m_RequestedPlayerHealth in CLogicPlayerProxy should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_hPlayer) == 0x510, "m_hPlayer in CLogicPlayerProxy should be at offset 0x510");
+		static_assert(sizeof(CS2::server::CLogicPlayerProxy) == 0x518, "CLogicPlayerProxy size should be 0x518");
 	}
 }

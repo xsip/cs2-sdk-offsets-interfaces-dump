@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/animgraphlib/CAnimUpdateSharedData.hpp>
 
 
 
@@ -23,7 +24,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_modelName; // 0x8 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CSmartPtr<animgraphlib::CAnimUpdateSharedData> m_pSharedData; // 0x10 | Schema_Atomic | Size: 0x8
-			char  m_pSharedData[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
+			char m_pSharedData[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x10); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphModelBinding, m_modelName) == 0x8, "m_modelName in CAnimGraphModelBinding should be at offset 0x8");

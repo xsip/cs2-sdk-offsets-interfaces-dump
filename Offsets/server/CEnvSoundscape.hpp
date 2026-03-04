@@ -8,19 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x590
+			// Class size: 0x538
 			namespace CEnvSoundscape /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_OnPlay = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_flRadius = 0x518; // float32 m_flRadius; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_soundEventName = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bOverrideWithEvent = 0x528; // bool m_bOverrideWithEvent; |  0x528 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_soundscapeIndex = 0x52c; // int32_t m_soundscapeIndex; |  0x52c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_soundscapeEntityListId = 0x530; // int32_t m_soundscapeEntityListId; |  0x530 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_positionNames = 0x538; // GlobalTypes::CUtlSymbolLarge[8]  | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_hProxySoundscape = 0x578; // GlobalTypes::CHandle<server::CEnvSoundscape>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bDisabled = 0x57c; // bool m_bDisabled; |  0x57c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_soundscapeName = 0x580; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_soundEventHash = 0x588; // uint32_t m_soundEventHash; |  0x588 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OnPlay = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_flRadius = 0x4c0; // float32 m_flRadius; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_soundEventName = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bOverrideWithEvent = 0x4d0; // bool m_bOverrideWithEvent; |  0x4d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_soundscapeIndex = 0x4d4; // int32_t m_soundscapeIndex; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_soundscapeEntityListId = 0x4d8; // int32_t m_soundscapeEntityListId; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_positionNames = 0x4e0; // GlobalTypes::CUtlSymbolLarge[8]  | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_hProxySoundscape = 0x520; // GlobalTypes::CHandle<server::CEnvSoundscape>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bDisabled = 0x524; // bool m_bDisabled; |  0x524 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_soundscapeName = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_soundEventHash = 0x530; // uint32_t m_soundEventHash; |  0x530 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

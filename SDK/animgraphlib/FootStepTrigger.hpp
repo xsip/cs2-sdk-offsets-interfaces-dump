@@ -22,7 +22,7 @@ namespace CS2 {
 		class FootStepTrigger  {
 		public:
 			GlobalTypes::CUtlVector< int32 > m_tags; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_tags[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_tags[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			int32_t m_nFootIndex; // 0x18 | Schema_Builtin | Size: 0x4
 			animgraphlib::StepPhase m_triggerPhase; // 0x1c | Schema_DeclaredEnum | Size: 0x4
 		};

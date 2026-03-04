@@ -22,13 +22,13 @@ namespace CS2 {
 	namespace server {
 		class CCommentaryAuto : public CS2::server::CBaseEntity {
 		public:
-			entity2::CEntityIOOutput m_OnCommentaryNewGame; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnCommentaryMidGame; // 0x518 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnCommentaryMultiplayerSpawn; // 0x540 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnCommentaryNewGame; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnCommentaryMidGame; // 0x4c0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnCommentaryMultiplayerSpawn; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryNewGame) == 0x4F0, "m_OnCommentaryNewGame in CCommentaryAuto should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryMidGame) == 0x518, "m_OnCommentaryMidGame in CCommentaryAuto should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryMultiplayerSpawn) == 0x540, "m_OnCommentaryMultiplayerSpawn in CCommentaryAuto should be at offset 0x540");
-		static_assert(sizeof(CS2::server::CCommentaryAuto) == 0x568, "CCommentaryAuto size should be 0x568");
+		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryNewGame) == 0x4A8, "m_OnCommentaryNewGame in CCommentaryAuto should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryMidGame) == 0x4C0, "m_OnCommentaryMidGame in CCommentaryAuto should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryMultiplayerSpawn) == 0x4D8, "m_OnCommentaryMultiplayerSpawn in CCommentaryAuto should be at offset 0x4D8");
+		static_assert(sizeof(CS2::server::CCommentaryAuto) == 0x4F0, "CCommentaryAuto size should be 0x4F0");
 	}
 }

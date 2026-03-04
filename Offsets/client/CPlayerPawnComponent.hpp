@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x40
+			// Class size: 0x48
 			namespace CPlayerPawnComponent /**/ {
 				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer  | Schema_DeclaredClass | Size: 0x28
 			}

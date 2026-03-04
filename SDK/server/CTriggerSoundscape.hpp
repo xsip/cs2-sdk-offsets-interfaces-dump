@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CBaseTrigger.hpp>
+#include <SDK/server/CBasePlayerPawn.hpp>
 
 
 
@@ -26,16 +27,16 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSoundscape : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable> m_hSoundscape; // 0x9a8 | Schema_Atomic | Size: 0x4
-			// char  m_hSoundscape[0x4]; // 0x9a8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable> m_hSoundscape; // 0x890 | Schema_Atomic | Size: 0x4
+			// char m_hSoundscape[0x4]; // 0x890 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_SoundscapeName; // 0x9b0 | Schema_Atomic | Size: 0x8
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerPawn>> m_spectators; // 0x9b8 | Schema_Atomic | Size: 0x18
-			char  m_spectators[0x18]; // 0x9b8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_SoundscapeName; // 0x898 | Schema_Atomic | Size: 0x8
+			server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerPawn>> m_spectators; // 0x8a0 | Schema_Atomic | Size: 0x18
+			// char m_spectators[0x18]; // 0x8a0 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_hSoundscape) == 0x9A8, "m_hSoundscape in CTriggerSoundscape should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_SoundscapeName) == 0x9B0, "m_SoundscapeName in CTriggerSoundscape should be at offset 0x9B0");
-		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_spectators) == 0x9B8, "m_spectators in CTriggerSoundscape should be at offset 0x9B8");
-		static_assert(sizeof(CS2::server::CTriggerSoundscape) == 0x9D0, "CTriggerSoundscape size should be 0x9D0");
+		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_hSoundscape) == 0x890, "m_hSoundscape in CTriggerSoundscape should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_SoundscapeName) == 0x898, "m_SoundscapeName in CTriggerSoundscape should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_spectators) == 0x8A0, "m_spectators in CTriggerSoundscape should be at offset 0x8A0");
+		static_assert(sizeof(CS2::server::CTriggerSoundscape) == 0x8B8, "CTriggerSoundscape size should be 0x8B8");
 	}
 }

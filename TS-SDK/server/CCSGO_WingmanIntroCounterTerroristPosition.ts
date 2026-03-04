@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_CCSGO_WingmanIntroCharacterPosition} from './CCSGO_WingmanIntroCharacterPosition';
-// Class size: 0xD08
+// Class size: 0xCC0
 // BaseClass: : public CS2::server::CCSGO_WingmanIntroCharacterPosition
 export const server_CCSGO_WingmanIntroCounterTerroristPosition  = {
 	...server_CCSGO_WingmanIntroCharacterPosition,

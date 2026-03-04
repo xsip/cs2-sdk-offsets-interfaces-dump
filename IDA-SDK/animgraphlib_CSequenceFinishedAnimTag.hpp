@@ -5,7 +5,9 @@
 #include "modellib_AnimTagID.hpp"
 
 class animgraphlib_CSequenceFinishedAnimTag {
-    char vTable53[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CGlobalSymbol m_name;
     CUtlString m_sComment;
     CGlobalSymbol m_group;
@@ -13,6 +15,6 @@ class animgraphlib_CSequenceFinishedAnimTag {
     char pad_54[0x14];
     bool m_bIsReferenced;
     char end_pad_55[0x7];
-    char vTable213[0x8];
+    void **__vftable_3;
     CUtlString m_sequenceName;
 };

@@ -1,6 +1,6 @@
 // generated - do not edit!
 
-// Class size: 0x128
+// Class size: 0x120
 // BaseClass: NONE
 export const client_CTakeDamageInfo  = {
 	m_vecDamageForce: 8n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
@@ -19,10 +19,10 @@ export const client_CTakeDamageInfo  = {
 	m_bShouldBleed: 100n, // bool m_bShouldBleed; |  0x64 | Schema_Builtin | Size: 0x1
 	m_bShouldSpark: 101n, // bool m_bShouldSpark; |  0x65 | Schema_Builtin | Size: 0x1
 	m_nDamageFlags: 112n, // client::TakeDamageFlags_t  | Schema_DeclaredEnum | Size: 0x8
-	m_sDamageSourceName: 120n, // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
-	m_iHitGroupId: 128n, // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-	m_nNumObjectsPenetrated: 132n, // int32_t m_nNumObjectsPenetrated; |  0x84 | Schema_Builtin | Size: 0x4
-	m_flFriendlyFireDamageReductionRatio: 136n, // float32 m_flFriendlyFireDamageReductionRatio; |  0x88 | Schema_Builtin | Size: 0x4
-	m_nDestructibleHitGroupsToForceDestroy: 264n, // GlobalTypes::CUtlVector<client::DestructibleHitGroupToDestroy_t>  | Schema_Atomic | Size: 0x18
-	m_bInTakeDamageFlow: 288n, // bool m_bInTakeDamageFlow; |  0x120 | Schema_Builtin | Size: 0x1
+	m_iHitGroupId: 120n, // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
+	m_nNumObjectsPenetrated: 124n, // int32_t m_nNumObjectsPenetrated; |  0x7c | Schema_Builtin | Size: 0x4
+	m_flFriendlyFireDamageReductionRatio: 128n, // float32 m_flFriendlyFireDamageReductionRatio; |  0x80 | Schema_Builtin | Size: 0x4
+	m_bStoppedBullet: 132n, // bool m_bStoppedBullet; |  0x84 | Schema_Builtin | Size: 0x1
+	m_nDestructibleHitGroupsToForceDestroy: 256n, // GlobalTypes::CUtlVector<client::DestructibleHitGroupToDestroy_t>  | Schema_Atomic | Size: 0x18
+	m_bInTakeDamageFlow: 280n, // bool m_bInTakeDamageFlow; |  0x118 | Schema_Builtin | Size: 0x1
 }

@@ -27,36 +27,36 @@ namespace CS2 {
 	namespace server {
 		class CPhysMotor : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_nameAnchor; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hAttachedObject; // 0x500 | Schema_Atomic | Size: 0x4
-			// char  m_hAttachedObject[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hAnchorObject; // 0x504 | Schema_Atomic | Size: 0x4
-			// char  m_hAnchorObject[0x4]; // 0x504 | Schema_Atomic | Size: 0x4
-			float32 m_spinUp; // 0x508 | Schema_Builtin | Size: 0x4
-			float32 m_spinDown; // 0x50c | Schema_Builtin | Size: 0x4
-			float32 m_flMotorFriction; // 0x510 | Schema_Builtin | Size: 0x4
-			float32 m_additionalAcceleration; // 0x514 | Schema_Builtin | Size: 0x4
-			float32 m_angularAcceleration; // 0x518 | Schema_Builtin | Size: 0x4
-			float32 m_flTorqueScale; // 0x51c | Schema_Builtin | Size: 0x4
-			float32 m_flTargetSpeed; // 0x520 | Schema_Builtin | Size: 0x4
-			float32 m_flSpeedWhenSpinUpOrSpinDownStarted; // 0x524 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_nameAnchor; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttachedObject; // 0x4b8 | Schema_Atomic | Size: 0x4
+			// char m_hAttachedObject[0x4]; // 0x4b8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAnchorObject; // 0x4bc | Schema_Atomic | Size: 0x4
+			// char m_hAnchorObject[0x4]; // 0x4bc | Schema_Atomic | Size: 0x4
+			float32 m_spinUp; // 0x4c0 | Schema_Builtin | Size: 0x4
+			float32 m_spinDown; // 0x4c4 | Schema_Builtin | Size: 0x4
+			float32 m_flMotorFriction; // 0x4c8 | Schema_Builtin | Size: 0x4
+			float32 m_additionalAcceleration; // 0x4cc | Schema_Builtin | Size: 0x4
+			float32 m_angularAcceleration; // 0x4d0 | Schema_Builtin | Size: 0x4
+			float32 m_flTorqueScale; // 0x4d4 | Schema_Builtin | Size: 0x4
+			float32 m_flTargetSpeed; // 0x4d8 | Schema_Builtin | Size: 0x4
+			float32 m_flSpeedWhenSpinUpOrSpinDownStarted; // 0x4dc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x10);
-			server::CMotorController m_motor; // 0x538 | Schema_DeclaredClass | Size: 0x20
+			server::CMotorController m_motor; // 0x4f0 | Schema_DeclaredClass | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CPhysMotor, m_nameAttach) == 0x4F0, "m_nameAttach in CPhysMotor should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_nameAnchor) == 0x4F8, "m_nameAnchor in CPhysMotor should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_hAttachedObject) == 0x500, "m_hAttachedObject in CPhysMotor should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_hAnchorObject) == 0x504, "m_hAnchorObject in CPhysMotor should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_spinUp) == 0x508, "m_spinUp in CPhysMotor should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_spinDown) == 0x50C, "m_spinDown in CPhysMotor should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_flMotorFriction) == 0x510, "m_flMotorFriction in CPhysMotor should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_additionalAcceleration) == 0x514, "m_additionalAcceleration in CPhysMotor should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_angularAcceleration) == 0x518, "m_angularAcceleration in CPhysMotor should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_flTorqueScale) == 0x51C, "m_flTorqueScale in CPhysMotor should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_flTargetSpeed) == 0x520, "m_flTargetSpeed in CPhysMotor should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_flSpeedWhenSpinUpOrSpinDownStarted) == 0x524, "m_flSpeedWhenSpinUpOrSpinDownStarted in CPhysMotor should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CPhysMotor, m_motor) == 0x538, "m_motor in CPhysMotor should be at offset 0x538");
-		static_assert(sizeof(CS2::server::CPhysMotor) == 0x558, "CPhysMotor size should be 0x558");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_nameAttach) == 0x4A8, "m_nameAttach in CPhysMotor should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_nameAnchor) == 0x4B0, "m_nameAnchor in CPhysMotor should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_hAttachedObject) == 0x4B8, "m_hAttachedObject in CPhysMotor should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_hAnchorObject) == 0x4BC, "m_hAnchorObject in CPhysMotor should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_spinUp) == 0x4C0, "m_spinUp in CPhysMotor should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_spinDown) == 0x4C4, "m_spinDown in CPhysMotor should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_flMotorFriction) == 0x4C8, "m_flMotorFriction in CPhysMotor should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_additionalAcceleration) == 0x4CC, "m_additionalAcceleration in CPhysMotor should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_angularAcceleration) == 0x4D0, "m_angularAcceleration in CPhysMotor should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_flTorqueScale) == 0x4D4, "m_flTorqueScale in CPhysMotor should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_flTargetSpeed) == 0x4D8, "m_flTargetSpeed in CPhysMotor should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_flSpeedWhenSpinUpOrSpinDownStarted) == 0x4DC, "m_flSpeedWhenSpinUpOrSpinDownStarted in CPhysMotor should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CPhysMotor, m_motor) == 0x4F0, "m_motor in CPhysMotor should be at offset 0x4F0");
+		static_assert(sizeof(CS2::server::CPhysMotor) == 0x510, "CPhysMotor size should be 0x510");
 	}
 }

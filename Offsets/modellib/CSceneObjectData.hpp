@@ -8,14 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace modellib {
-			// Class size: 0x90
+			// Class size: 0xA0
 			namespace CSceneObjectData /**/ {
 				constexpr std::ptrdiff_t m_vMinBounds = 0x0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vMaxBounds = 0xc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_drawCalls = 0x18; // GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor>  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_drawBounds = 0x28; // GlobalTypes::CUtlLeanVector<mathlib_extended::AABB_t>  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t m_meshlets = 0x38; // GlobalTypes::CUtlLeanVector<modellib::CMeshletDescriptor>  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_vTintColor = 0x48; // GlobalTypes::Vector4D  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_rtProxyDrawCalls = 0x48; // GlobalTypes::CUtlLeanVector<modellib::RTProxyDrawDescriptor_t>  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_vTintColor = 0x58; // GlobalTypes::Vector4D  | Schema_Atomic | Size: 0x10
 			}
 		}
 	}

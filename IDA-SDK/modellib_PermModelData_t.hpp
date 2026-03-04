@@ -30,4 +30,6 @@ class modellib_PermModelData_t {
     char m_BodyGroupsHiddenInTools[0x18];
     char m_refAnimIncludeModels[0x18];
     char m_AnimatedMaterialAttributes[0x18];
+    char m_animGraph2Refs[0x18];
+    char m_vecNmSkeletonRefs[0x18];
 };

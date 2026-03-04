@@ -11,6 +11,7 @@
 
 
 #include <SDK/animgraphlib/CAnimUpdateNodeBase.hpp>
+#include <SDK/animgraphlib/CAnimUpdateNodeRef.hpp>
 #include <SDK/animgraphlib/AnimValueSource.hpp>
 #include <SDK/animgraphlib/LinearRootMotionBlendMode_t.hpp>
 #include <SDK/animgraphlib/CAnimParamHandle.hpp>
@@ -19,11 +20,6 @@
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class CAnimUpdateNodeRef;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -33,11 +29,11 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlVector<animgraphlib::CAnimUpdateNodeRef> m_children; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint8 > m_sortedOrder; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_sortedOrder[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_sortedOrder[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< float32 > m_targetValues; // 0x90 | Schema_Atomic | Size: 0x18
-			// char  m_targetValues[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			// char m_targetValues[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			animgraphlib::AnimValueSource m_blendValueSource; // 0xac | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::LinearRootMotionBlendMode_t m_eLinearRootMotionBlendMode; // 0xb0 | Schema_DeclaredEnum | Size: 0x4

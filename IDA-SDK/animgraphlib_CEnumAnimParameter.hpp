@@ -5,7 +5,9 @@
 #include "modellib_AnimParamID.hpp"
 
 class animgraphlib_CEnumAnimParameter {
-    char vTable38[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CGlobalSymbol m_name;
     CUtlString m_sComment;
     CUtlString m_group;
@@ -23,7 +25,7 @@ class animgraphlib_CEnumAnimParameter {
     bool m_bGameWritable;
     bool m_bGraphWritable;
     char end_pad_90[0x4];
-    char vTable116[0x8];
+    void **__vftable_3;
     uint8_t m_defaultValue;
     char pad_117[0x7];
     char m_enumOptions[0x18];

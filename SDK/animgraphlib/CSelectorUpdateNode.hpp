@@ -11,17 +11,13 @@
 
 
 #include <SDK/animgraphlib/CAnimUpdateNodeBase.hpp>
+#include <SDK/animgraphlib/CAnimUpdateNodeRef.hpp>
 #include <SDK/animgraphlib/CBlendCurve.hpp>
 #include <SDK/animgraphlib/CAnimParamHandle.hpp>
 #include <SDK/animgraphlib/SelectorTagBehavior_t.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class CAnimUpdateNodeRef;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -31,13 +27,13 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlVector<animgraphlib::CAnimUpdateNodeRef> m_children; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_children[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int8 > m_tags; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			animgraphlib::CBlendCurve m_blendCurve; // 0x94 | Schema_DeclaredClass | Size: 0x8
 			// GlobalTypes::CAnimValue< float32 > m_flBlendTime; // 0x9c | Schema_Atomic | Size: 0x8
-			char  m_flBlendTime[0x8]; // 0x9c | Schema_Atomic | Size: 0x8
+			char m_flBlendTime[0x8]; // 0x9c | Schema_Atomic | Size: 0x8
 			animgraphlib::CAnimParamHandle m_hParameter; // 0xa4 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x2);
 			int32_t m_nTagIndex; // 0xa8 | Schema_Builtin | Size: 0x4

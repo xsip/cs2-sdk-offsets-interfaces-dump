@@ -22,20 +22,20 @@ namespace CS2 {
 	namespace server {
 		class CMessage : public CS2::server::CPointEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x4f0 | Schema_Atomic | Size: 0x8
-			float32 m_MessageVolume; // 0x4f8 | Schema_Builtin | Size: 0x4
-			int32_t m_MessageAttenuation; // 0x4fc | Schema_Builtin | Size: 0x4
-			float32 m_Radius; // 0x500 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x4a8 | Schema_Atomic | Size: 0x8
+			float32 m_MessageVolume; // 0x4b0 | Schema_Builtin | Size: 0x4
+			int32_t m_MessageAttenuation; // 0x4b4 | Schema_Builtin | Size: 0x4
+			float32 m_Radius; // 0x4b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_sNoise; // 0x508 | Schema_Atomic | Size: 0x8
-			entity2::CEntityIOOutput m_OnShowMessage; // 0x510 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_sNoise; // 0x4c0 | Schema_Atomic | Size: 0x8
+			entity2::CEntityIOOutput m_OnShowMessage; // 0x4c8 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CMessage, m_iszMessage) == 0x4F0, "m_iszMessage in CMessage should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CMessage, m_MessageVolume) == 0x4F8, "m_MessageVolume in CMessage should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CMessage, m_MessageAttenuation) == 0x4FC, "m_MessageAttenuation in CMessage should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CMessage, m_Radius) == 0x500, "m_Radius in CMessage should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CMessage, m_sNoise) == 0x508, "m_sNoise in CMessage should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CMessage, m_OnShowMessage) == 0x510, "m_OnShowMessage in CMessage should be at offset 0x510");
-		static_assert(sizeof(CS2::server::CMessage) == 0x538, "CMessage size should be 0x538");
+		static_assert(offsetof(CS2::server::CMessage, m_iszMessage) == 0x4A8, "m_iszMessage in CMessage should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CMessage, m_MessageVolume) == 0x4B0, "m_MessageVolume in CMessage should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CMessage, m_MessageAttenuation) == 0x4B4, "m_MessageAttenuation in CMessage should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CMessage, m_Radius) == 0x4B8, "m_Radius in CMessage should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CMessage, m_sNoise) == 0x4C0, "m_sNoise in CMessage should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CMessage, m_OnShowMessage) == 0x4C8, "m_OnShowMessage in CMessage should be at offset 0x4C8");
+		static_assert(sizeof(CS2::server::CMessage) == 0x4E0, "CMessage size should be 0x4E0");
 	}
 }

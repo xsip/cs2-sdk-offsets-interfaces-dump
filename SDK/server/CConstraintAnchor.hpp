@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CConstraintAnchor : public CS2::server::CBaseAnimGraph {
 		public:
-			float32 m_massScale; // 0xa90 | Schema_Builtin | Size: 0x4
+			float32 m_massScale; // 0xa20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::server::CConstraintAnchor, m_massScale) == 0xA90, "m_massScale in CConstraintAnchor should be at offset 0xA90");
-		static_assert(sizeof(CS2::server::CConstraintAnchor) == 0xAA0, "CConstraintAnchor size should be 0xAA0");
+		static_assert(offsetof(CS2::server::CConstraintAnchor, m_massScale) == 0xA20, "m_massScale in CConstraintAnchor should be at offset 0xA20");
+		static_assert(sizeof(CS2::server::CConstraintAnchor) == 0xA30, "CConstraintAnchor size should be 0xA30");
 	}
 }

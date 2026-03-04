@@ -11,6 +11,7 @@
 
 
 #include <SDK/smartprops/CSmartPropVariable.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCModel.hpp>
 
 
 
@@ -22,7 +23,7 @@ namespace CS2 {
 		class CSmartPropVariable_Model : public CS2::smartprops::CSmartPropVariable {
 		public:
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0xe0
-			char  m_DefaultValue[0xe0]; // 0x38 | Schema_Atomic | Size: 0xe0
+			char m_DefaultValue[0xe0]; // 0x38 | Schema_Atomic | Size: 0xe0
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Model, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_Model should be at offset 0x38");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_Model) == 0x118, "CSmartPropVariable_Model size should be 0x118");

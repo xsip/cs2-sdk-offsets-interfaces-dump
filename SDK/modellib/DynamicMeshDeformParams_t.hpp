@@ -25,13 +25,14 @@ namespace CS2 {
 			bool m_bRecomputeSmoothNormalsAfterAnimation; // 0x8 | Schema_Builtin | Size: 0x1
 			bool m_bComputeDynamicMeshTensionAfterAnimation; // 0x9 | Schema_Builtin | Size: 0x1
 			bool m_bSmoothNormalsAcrossUvSeams; // 0xa | Schema_Builtin | Size: 0x1
-			S2_PAD(0x1); // End padding
+			bool m_bEnableEyeBulgeDeformation; // 0xb | Schema_Builtin | Size: 0x1
 		};
 		static_assert(offsetof(CS2::modellib::DynamicMeshDeformParams_t, m_flTensionCompressScale) == 0x0, "m_flTensionCompressScale in DynamicMeshDeformParams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::DynamicMeshDeformParams_t, m_flTensionStretchScale) == 0x4, "m_flTensionStretchScale in DynamicMeshDeformParams_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::DynamicMeshDeformParams_t, m_bRecomputeSmoothNormalsAfterAnimation) == 0x8, "m_bRecomputeSmoothNormalsAfterAnimation in DynamicMeshDeformParams_t should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::DynamicMeshDeformParams_t, m_bComputeDynamicMeshTensionAfterAnimation) == 0x9, "m_bComputeDynamicMeshTensionAfterAnimation in DynamicMeshDeformParams_t should be at offset 0x9");
 		static_assert(offsetof(CS2::modellib::DynamicMeshDeformParams_t, m_bSmoothNormalsAcrossUvSeams) == 0xA, "m_bSmoothNormalsAcrossUvSeams in DynamicMeshDeformParams_t should be at offset 0xA");
+		static_assert(offsetof(CS2::modellib::DynamicMeshDeformParams_t, m_bEnableEyeBulgeDeformation) == 0xB, "m_bEnableEyeBulgeDeformation in DynamicMeshDeformParams_t should be at offset 0xB");
 		static_assert(sizeof(CS2::modellib::DynamicMeshDeformParams_t) == 0xC, "DynamicMeshDeformParams_t size should be 0xC");
 	}
 }

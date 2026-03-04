@@ -23,9 +23,9 @@ namespace CS2 {
 		class CBodyComponentSkeletonInstance : public CS2::server::CBodyComponent {
 		public:
 			S2_PAD(0x8);
-			server::CSkeletonInstance m_skeletonInstance; // 0x80 | Schema_DeclaredClass | Size: 0x490
+			server::CSkeletonInstance m_skeletonInstance; // 0x80 | Schema_DeclaredClass | Size: 0x430
 		};
 		static_assert(offsetof(CS2::server::CBodyComponentSkeletonInstance, m_skeletonInstance) == 0x80, "m_skeletonInstance in CBodyComponentSkeletonInstance should be at offset 0x80");
-		static_assert(sizeof(CS2::server::CBodyComponentSkeletonInstance) == 0x510, "CBodyComponentSkeletonInstance size should be 0x510");
+		static_assert(sizeof(CS2::server::CBodyComponentSkeletonInstance) == 0x4B0, "CBodyComponentSkeletonInstance size should be 0x4B0");
 	}
 }

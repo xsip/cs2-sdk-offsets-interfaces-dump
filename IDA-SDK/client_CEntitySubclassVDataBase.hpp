@@ -4,5 +4,5 @@
 
 
 class client_CEntitySubclassVDataBase {
-    char pad_759[0x28];
+    char pad_1546[0x28];
 };

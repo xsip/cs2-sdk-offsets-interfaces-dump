@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCPostProcessingResource {
-    char pad_2376[0x1];
+    char pad_1274[0x1];
 };

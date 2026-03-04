@@ -4,5 +4,5 @@
 
 
 class client_EventClientAdvanceNonRenderedFrame_t {
-    char pad_1616[0x1];
+    char pad_2423[0x1];
 };

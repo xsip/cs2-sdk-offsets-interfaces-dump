@@ -10,13 +10,15 @@
 #endif
 
 
+#include <SDK/animlib/ReferencedGraphSlot_t.hpp>
+#include <SDK/animlib/ExternalGraphSlot_t.hpp>
+#include <SDK/animlib/ExternalPoseSlot_t.hpp>
 
 
 
 namespace CS2 {
 	namespace animlib {
-		class ReferencedGraphSlot_t;
-		class ExternalGraphSlot_t;
+		class CNmGraphVariationUserData;
 	}
 }
 
@@ -28,39 +30,44 @@ namespace CS2 {
 		public:
 			GlobalTypes::CGlobalSymbol m_variationID; // 0x0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton> m_skeleton; // 0x8 | Schema_Atomic | Size: 0x8
-			char  m_skeleton[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector< int16 > m_persistentNodeIndices; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_persistentNodeIndices[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
-			int16_t m_nRootNodeIdx; // 0x28 | Schema_Builtin | Size: 0x2
+			char m_skeleton[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
+			animlib::CNmGraphVariationUserData* m_pUserData; // 0x10 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CUtlVector< int16 > m_persistentNodeIndices; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_persistentNodeIndices[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			int16_t m_nRootNodeIdx; // 0x30 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);
-			GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol> m_controlParameterIDs; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_controlParameterIDs[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol> m_virtualParameterIDs; // 0x48 | Schema_Atomic | Size: 0x18
-			// char  m_virtualParameterIDs[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< int16 > m_virtualParameterNodeIndices; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_virtualParameterNodeIndices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<animlib::CNmGraphDefinition::ReferencedGraphSlot_t> m_referencedGraphSlots; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_referencedGraphSlots[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<animlib::CNmGraphDefinition::ExternalGraphSlot_t> m_externalGraphSlots; // 0x90 | Schema_Atomic | Size: 0x18
-			// char  m_externalGraphSlots[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol> m_controlParameterIDs; // 0x38 | Schema_Atomic | Size: 0x18
+			// char m_controlParameterIDs[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol> m_virtualParameterIDs; // 0x50 | Schema_Atomic | Size: 0x18
+			// char m_virtualParameterIDs[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int16 > m_virtualParameterNodeIndices; // 0x68 | Schema_Atomic | Size: 0x18
+			// char m_virtualParameterNodeIndices[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::ReferencedGraphSlot_t> m_referencedGraphSlots; // 0x80 | Schema_Atomic | Size: 0x18
+			// char m_referencedGraphSlots[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::ExternalGraphSlot_t> m_externalGraphSlots; // 0x98 | Schema_Atomic | Size: 0x18
+			// char m_externalGraphSlots[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::ExternalPoseSlot_t> m_externalPoseSlots; // 0xb0 | Schema_Atomic | Size: 0x18
+			// char m_externalPoseSlots[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x70);
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_nodePaths; // 0x118 | Schema_Atomic | Size: 0x18
-			// char  m_nodePaths[0x18]; // 0x118 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandleVoid> m_resources; // 0x130 | Schema_Atomic | Size: 0x18
-			// char  m_resources[0x18]; // 0x130 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_nodePaths; // 0x138 | Schema_Atomic | Size: 0x18
+			// char m_nodePaths[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandleVoid> m_resources; // 0x150 | Schema_Atomic | Size: 0x18
+			// char m_resources[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x38); // End padding
 		};
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_variationID) == 0x0, "m_variationID in CNmGraphDefinition should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_skeleton) == 0x8, "m_skeleton in CNmGraphDefinition should be at offset 0x8");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_persistentNodeIndices) == 0x10, "m_persistentNodeIndices in CNmGraphDefinition should be at offset 0x10");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_nRootNodeIdx) == 0x28, "m_nRootNodeIdx in CNmGraphDefinition should be at offset 0x28");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_controlParameterIDs) == 0x30, "m_controlParameterIDs in CNmGraphDefinition should be at offset 0x30");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_virtualParameterIDs) == 0x48, "m_virtualParameterIDs in CNmGraphDefinition should be at offset 0x48");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_virtualParameterNodeIndices) == 0x60, "m_virtualParameterNodeIndices in CNmGraphDefinition should be at offset 0x60");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_referencedGraphSlots) == 0x78, "m_referencedGraphSlots in CNmGraphDefinition should be at offset 0x78");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_externalGraphSlots) == 0x90, "m_externalGraphSlots in CNmGraphDefinition should be at offset 0x90");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_nodePaths) == 0x118, "m_nodePaths in CNmGraphDefinition should be at offset 0x118");
-		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_resources) == 0x130, "m_resources in CNmGraphDefinition should be at offset 0x130");
-		static_assert(sizeof(CS2::animlib::CNmGraphDefinition) == 0x180, "CNmGraphDefinition size should be 0x180");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_pUserData) == 0x10, "m_pUserData in CNmGraphDefinition should be at offset 0x10");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_persistentNodeIndices) == 0x18, "m_persistentNodeIndices in CNmGraphDefinition should be at offset 0x18");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_nRootNodeIdx) == 0x30, "m_nRootNodeIdx in CNmGraphDefinition should be at offset 0x30");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_controlParameterIDs) == 0x38, "m_controlParameterIDs in CNmGraphDefinition should be at offset 0x38");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_virtualParameterIDs) == 0x50, "m_virtualParameterIDs in CNmGraphDefinition should be at offset 0x50");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_virtualParameterNodeIndices) == 0x68, "m_virtualParameterNodeIndices in CNmGraphDefinition should be at offset 0x68");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_referencedGraphSlots) == 0x80, "m_referencedGraphSlots in CNmGraphDefinition should be at offset 0x80");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_externalGraphSlots) == 0x98, "m_externalGraphSlots in CNmGraphDefinition should be at offset 0x98");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_externalPoseSlots) == 0xB0, "m_externalPoseSlots in CNmGraphDefinition should be at offset 0xB0");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_nodePaths) == 0x138, "m_nodePaths in CNmGraphDefinition should be at offset 0x138");
+		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_resources) == 0x150, "m_resources in CNmGraphDefinition should be at offset 0x150");
+		static_assert(sizeof(CS2::animlib::CNmGraphDefinition) == 0x1A0, "CNmGraphDefinition size should be 0x1A0");
 	}
 }

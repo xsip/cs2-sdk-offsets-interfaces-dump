@@ -4,7 +4,7 @@
 
 
 class server_fogplayerparams_t {
-    char vTable4153[0x8];
+    void **__vftable_0;
     char m_hCtrl[0x4];
     float32 m_flTransitionTime;
     Color m_OldColor;

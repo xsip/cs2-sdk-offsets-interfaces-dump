@@ -4,8 +4,8 @@
 
 
 class modellib_CBoneConstraintRbf {
-    char pad_308[0x20];
+    char pad_310[0x20];
     char m_inputBones[0x18];
     char m_outputBones[0x18];
-    char end_pad_316[0x78];
+    char end_pad_318[0x78];
 };

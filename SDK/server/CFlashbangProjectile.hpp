@@ -21,14 +21,14 @@ namespace CS2 {
 	namespace server {
 		class CFlashbangProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
-			float32 m_flTimeToDetonate; // 0xc40 | Schema_Builtin | Size: 0x4
-			uint8_t m_numOpponentsHit; // 0xc44 | Schema_Builtin | Size: 0x1
-			uint8_t m_numTeammatesHit; // 0xc45 | Schema_Builtin | Size: 0x1
+			float32 m_flTimeToDetonate; // 0xbb0 | Schema_Builtin | Size: 0x4
+			uint8_t m_numOpponentsHit; // 0xbb4 | Schema_Builtin | Size: 0x1
+			uint8_t m_numTeammatesHit; // 0xbb5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_flTimeToDetonate) == 0xC40, "m_flTimeToDetonate in CFlashbangProjectile should be at offset 0xC40");
-		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_numOpponentsHit) == 0xC44, "m_numOpponentsHit in CFlashbangProjectile should be at offset 0xC44");
-		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_numTeammatesHit) == 0xC45, "m_numTeammatesHit in CFlashbangProjectile should be at offset 0xC45");
-		static_assert(sizeof(CS2::server::CFlashbangProjectile) == 0xC50, "CFlashbangProjectile size should be 0xC50");
+		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_flTimeToDetonate) == 0xBB0, "m_flTimeToDetonate in CFlashbangProjectile should be at offset 0xBB0");
+		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_numOpponentsHit) == 0xBB4, "m_numOpponentsHit in CFlashbangProjectile should be at offset 0xBB4");
+		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_numTeammatesHit) == 0xBB5, "m_numTeammatesHit in CFlashbangProjectile should be at offset 0xBB5");
+		static_assert(sizeof(CS2::server::CFlashbangProjectile) == 0xBC0, "CFlashbangProjectile size should be 0xBC0");
 	}
 }

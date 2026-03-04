@@ -8,19 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5F0
+			// Class size: 0x558
 			namespace CMathCounter /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_flMin = 0x4f0; // float32 m_flMin; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMax = 0x4f4; // float32 m_flMax; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bHitMin = 0x4f8; // bool m_bHitMin; |  0x4f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHitMax = 0x4f9; // bool m_bHitMax; |  0x4f9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDisabled = 0x4fa; // bool m_bDisabled; |  0x4fa | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OutValue = 0x500; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnGetValue = 0x528; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnHitMin = 0x550; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnHitMax = 0x578; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnChangedFromMin = 0x5a0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnChangedFromMax = 0x5c8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_flMin = 0x4a8; // float32 m_flMin; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMax = 0x4ac; // float32 m_flMax; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bHitMin = 0x4b0; // bool m_bHitMin; |  0x4b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHitMax = 0x4b1; // bool m_bHitMax; |  0x4b1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDisabled = 0x4b2; // bool m_bDisabled; |  0x4b2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OutValue = 0x4b8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnGetValue = 0x4d8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnHitMin = 0x4f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnHitMax = 0x510; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnChangedFromMin = 0x528; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnChangedFromMax = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

@@ -28,36 +28,36 @@ namespace CS2 {
 		class CPhysConstraint : public CS2::server::CLogicalEntity {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CUtlSymbolLarge m_nameAttach1; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_nameAttach2; // 0x500 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hAttach1; // 0x508 | Schema_Atomic | Size: 0x4
-			// char  m_hAttach1[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hAttach2; // 0x50c | Schema_Atomic | Size: 0x4
-			// char  m_hAttach2[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_nameAttachment1; // 0x510 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_nameAttachment2; // 0x518 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_breakSound; // 0x520 | Schema_Atomic | Size: 0x8
-			float32 m_forceLimit; // 0x528 | Schema_Builtin | Size: 0x4
-			float32 m_torqueLimit; // 0x52c | Schema_Builtin | Size: 0x4
-			float32 m_minTeleportDistance; // 0x530 | Schema_Builtin | Size: 0x4
-			bool m_bSnapObjectPositions; // 0x534 | Schema_Builtin | Size: 0x1
-			bool m_bTreatEntity1AsInfiniteMass; // 0x535 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_nameAttach1; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_nameAttach2; // 0x4b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttach1; // 0x4c0 | Schema_Atomic | Size: 0x4
+			// char m_hAttach1[0x4]; // 0x4c0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttach2; // 0x4c4 | Schema_Atomic | Size: 0x4
+			// char m_hAttach2[0x4]; // 0x4c4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_nameAttachment1; // 0x4c8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_nameAttachment2; // 0x4d0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_breakSound; // 0x4d8 | Schema_Atomic | Size: 0x8
+			float32 m_forceLimit; // 0x4e0 | Schema_Builtin | Size: 0x4
+			float32 m_torqueLimit; // 0x4e4 | Schema_Builtin | Size: 0x4
+			float32 m_minTeleportDistance; // 0x4e8 | Schema_Builtin | Size: 0x4
+			bool m_bSnapObjectPositions; // 0x4ec | Schema_Builtin | Size: 0x1
+			bool m_bTreatEntity1AsInfiniteMass; // 0x4ed | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::CEntityIOOutput m_OnBreak; // 0x538 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnBreak; // 0x4f0 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttach1) == 0x4F8, "m_nameAttach1 in CPhysConstraint should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttach2) == 0x500, "m_nameAttach2 in CPhysConstraint should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_hAttach1) == 0x508, "m_hAttach1 in CPhysConstraint should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_hAttach2) == 0x50C, "m_hAttach2 in CPhysConstraint should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttachment1) == 0x510, "m_nameAttachment1 in CPhysConstraint should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttachment2) == 0x518, "m_nameAttachment2 in CPhysConstraint should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_breakSound) == 0x520, "m_breakSound in CPhysConstraint should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_forceLimit) == 0x528, "m_forceLimit in CPhysConstraint should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_torqueLimit) == 0x52C, "m_torqueLimit in CPhysConstraint should be at offset 0x52C");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_minTeleportDistance) == 0x530, "m_minTeleportDistance in CPhysConstraint should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_bSnapObjectPositions) == 0x534, "m_bSnapObjectPositions in CPhysConstraint should be at offset 0x534");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_bTreatEntity1AsInfiniteMass) == 0x535, "m_bTreatEntity1AsInfiniteMass in CPhysConstraint should be at offset 0x535");
-		static_assert(offsetof(CS2::server::CPhysConstraint, m_OnBreak) == 0x538, "m_OnBreak in CPhysConstraint should be at offset 0x538");
-		static_assert(sizeof(CS2::server::CPhysConstraint) == 0x560, "CPhysConstraint size should be 0x560");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttach1) == 0x4B0, "m_nameAttach1 in CPhysConstraint should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttach2) == 0x4B8, "m_nameAttach2 in CPhysConstraint should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_hAttach1) == 0x4C0, "m_hAttach1 in CPhysConstraint should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_hAttach2) == 0x4C4, "m_hAttach2 in CPhysConstraint should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttachment1) == 0x4C8, "m_nameAttachment1 in CPhysConstraint should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttachment2) == 0x4D0, "m_nameAttachment2 in CPhysConstraint should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_breakSound) == 0x4D8, "m_breakSound in CPhysConstraint should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_forceLimit) == 0x4E0, "m_forceLimit in CPhysConstraint should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_torqueLimit) == 0x4E4, "m_torqueLimit in CPhysConstraint should be at offset 0x4E4");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_minTeleportDistance) == 0x4E8, "m_minTeleportDistance in CPhysConstraint should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_bSnapObjectPositions) == 0x4EC, "m_bSnapObjectPositions in CPhysConstraint should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_bTreatEntity1AsInfiniteMass) == 0x4ED, "m_bTreatEntity1AsInfiniteMass in CPhysConstraint should be at offset 0x4ED");
+		static_assert(offsetof(CS2::server::CPhysConstraint, m_OnBreak) == 0x4F0, "m_OnBreak in CPhysConstraint should be at offset 0x4F0");
+		static_assert(sizeof(CS2::server::CPhysConstraint) == 0x508, "CPhysConstraint size should be 0x508");
 	}
 }

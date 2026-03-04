@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xE0
+			// Class size: 0xE8
 			namespace inv_image_data_t /**/ {
 				constexpr std::ptrdiff_t map = 0x0; // client::inv_image_map_t  | Schema_DeclaredClass | Size: 0x10
 				constexpr std::ptrdiff_t item = 0x10; // client::inv_image_item_t  | Schema_DeclaredClass | Size: 0x20
@@ -17,6 +17,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t lightfill = 0x80; // client::inv_image_light_fill_t  | Schema_DeclaredClass | Size: 0x1c
 				constexpr std::ptrdiff_t light0 = 0x9c; // client::inv_image_light_barn_t  | Schema_DeclaredClass | Size: 0x20
 				constexpr std::ptrdiff_t light1 = 0xbc; // client::inv_image_light_barn_t  | Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t clearcolor = 0xdc; // client::inv_image_clearcolor_t  | Schema_DeclaredClass | Size: 0xc
 			}
 		}
 	}

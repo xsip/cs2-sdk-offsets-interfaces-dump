@@ -9,5 +9,5 @@ class modellib_DynamicMeshDeformParams_t {
     bool m_bRecomputeSmoothNormalsAfterAnimation;
     bool m_bComputeDynamicMeshTensionAfterAnimation;
     bool m_bSmoothNormalsAcrossUvSeams;
-    char end_pad_375[0x1];
+    bool m_bEnableEyeBulgeDeformation;
 };

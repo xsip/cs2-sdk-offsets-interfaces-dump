@@ -16,6 +16,7 @@
 #include <SDK/client/inv_image_light_sun_t.hpp>
 #include <SDK/client/inv_image_light_fill_t.hpp>
 #include <SDK/client/inv_image_light_barn_t.hpp>
+#include <SDK/client/inv_image_clearcolor_t.hpp>
 
 
 
@@ -33,7 +34,7 @@ namespace CS2 {
 			client::inv_image_light_fill_t lightfill; // 0x80 | Schema_DeclaredClass | Size: 0x1c
 			client::inv_image_light_barn_t light0; // 0x9c | Schema_DeclaredClass | Size: 0x20
 			client::inv_image_light_barn_t light1; // 0xbc | Schema_DeclaredClass | Size: 0x20
-			S2_PAD(0x4); // End padding
+			client::inv_image_clearcolor_t clearcolor; // 0xdc | Schema_DeclaredClass | Size: 0xc
 		};
 		static_assert(offsetof(CS2::client::inv_image_data_t, map) == 0x0, "map in inv_image_data_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::inv_image_data_t, item) == 0x10, "item in inv_image_data_t should be at offset 0x10");
@@ -42,6 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::inv_image_data_t, lightfill) == 0x80, "lightfill in inv_image_data_t should be at offset 0x80");
 		static_assert(offsetof(CS2::client::inv_image_data_t, light0) == 0x9C, "light0 in inv_image_data_t should be at offset 0x9C");
 		static_assert(offsetof(CS2::client::inv_image_data_t, light1) == 0xBC, "light1 in inv_image_data_t should be at offset 0xBC");
-		static_assert(sizeof(CS2::client::inv_image_data_t) == 0xE0, "inv_image_data_t size should be 0xE0");
+		static_assert(offsetof(CS2::client::inv_image_data_t, clearcolor) == 0xDC, "clearcolor in inv_image_data_t should be at offset 0xDC");
+		static_assert(sizeof(CS2::client::inv_image_data_t) == 0xE8, "inv_image_data_t size should be 0xE8");
 	}
 }

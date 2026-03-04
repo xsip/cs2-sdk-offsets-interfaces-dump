@@ -10,7 +10,7 @@
 #endif
 
 
-#include <SDK/client/CBaseAnimGraphAnimGraphController.hpp>
+#include <SDK/client/CAnimGraphControllerBase.hpp>
 
 
 
@@ -19,33 +19,33 @@
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
-		class C_CSGO_PreviewPlayer_GraphController : public CS2::client::CBaseAnimGraphAnimGraphController {
+		class C_CSGO_PreviewPlayer_GraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
-			// GlobalTypes::CAnimGraphParamOptionalRef<char*> m_pszCharacterMode; // 0x268 | Schema_Atomic | Size: 0x28
-			char  m_pszCharacterMode[0x28]; // 0x268 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef<char*> m_pszTeamPreviewVariant; // 0x290 | Schema_Atomic | Size: 0x28
-			char  m_pszTeamPreviewVariant[0x28]; // 0x290 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef<char*> m_pszTeamPreviewPosition; // 0x2b8 | Schema_Atomic | Size: 0x28
-			char  m_pszTeamPreviewPosition[0x28]; // 0x2b8 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef<char*> m_pszEndOfMatchCelebration; // 0x2e0 | Schema_Atomic | Size: 0x28
-			char  m_pszEndOfMatchCelebration[0x28]; // 0x2e0 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef< int32 > m_nTeamPreviewRandom; // 0x308 | Schema_Atomic | Size: 0x20
-			char  m_nTeamPreviewRandom[0x20]; // 0x308 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraphParamOptionalRef<char*> m_pszWeaponState; // 0x328 | Schema_Atomic | Size: 0x28
-			char  m_pszWeaponState[0x28]; // 0x328 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef<char*> m_pszWeaponType; // 0x350 | Schema_Atomic | Size: 0x28
-			char  m_pszWeaponType[0x28]; // 0x350 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CAnimGraphParamOptionalRef< bool > m_bCT; // 0x378 | Schema_Atomic | Size: 0x20
-			char  m_bCT[0x20]; // 0x378 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CAnimGraphParamRef<char*> m_pszCharacterMode; // 0x90 | Schema_Atomic | Size: 0x30
+			char m_pszCharacterMode[0x30]; // 0x90 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CAnimGraphParamRef<char*> m_pszTeamPreviewVariant; // 0xc0 | Schema_Atomic | Size: 0x30
+			char m_pszTeamPreviewVariant[0x30]; // 0xc0 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CAnimGraphParamRef<char*> m_pszTeamPreviewPosition; // 0xf0 | Schema_Atomic | Size: 0x30
+			char m_pszTeamPreviewPosition[0x30]; // 0xf0 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CAnimGraphParamRef<char*> m_pszEndOfMatchCelebration; // 0x120 | Schema_Atomic | Size: 0x30
+			char m_pszEndOfMatchCelebration[0x30]; // 0x120 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CAnimGraphParamRef< int32 > m_nTeamPreviewRandom; // 0x150 | Schema_Atomic | Size: 0x28
+			char m_nTeamPreviewRandom[0x28]; // 0x150 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CAnimGraphParamRef<char*> m_pszWeaponState; // 0x178 | Schema_Atomic | Size: 0x30
+			char m_pszWeaponState[0x30]; // 0x178 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CAnimGraphParamRef<char*> m_pszWeaponType; // 0x1a8 | Schema_Atomic | Size: 0x30
+			char m_pszWeaponType[0x30]; // 0x1a8 | Schema_Atomic | Size: 0x30
+			// GlobalTypes::CAnimGraphParamRef< bool > m_bCT; // 0x1d8 | Schema_Atomic | Size: 0x28
+			char m_bCT[0x28]; // 0x1d8 | Schema_Atomic | Size: 0x28
 		};
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszCharacterMode) == 0x268, "m_pszCharacterMode in C_CSGO_PreviewPlayer_GraphController should be at offset 0x268");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszTeamPreviewVariant) == 0x290, "m_pszTeamPreviewVariant in C_CSGO_PreviewPlayer_GraphController should be at offset 0x290");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszTeamPreviewPosition) == 0x2B8, "m_pszTeamPreviewPosition in C_CSGO_PreviewPlayer_GraphController should be at offset 0x2B8");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszEndOfMatchCelebration) == 0x2E0, "m_pszEndOfMatchCelebration in C_CSGO_PreviewPlayer_GraphController should be at offset 0x2E0");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_nTeamPreviewRandom) == 0x308, "m_nTeamPreviewRandom in C_CSGO_PreviewPlayer_GraphController should be at offset 0x308");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszWeaponState) == 0x328, "m_pszWeaponState in C_CSGO_PreviewPlayer_GraphController should be at offset 0x328");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszWeaponType) == 0x350, "m_pszWeaponType in C_CSGO_PreviewPlayer_GraphController should be at offset 0x350");
-		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_bCT) == 0x378, "m_bCT in C_CSGO_PreviewPlayer_GraphController should be at offset 0x378");
-		static_assert(sizeof(CS2::client::C_CSGO_PreviewPlayer_GraphController) == 0x398, "C_CSGO_PreviewPlayer_GraphController size should be 0x398");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszCharacterMode) == 0x90, "m_pszCharacterMode in C_CSGO_PreviewPlayer_GraphController should be at offset 0x90");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszTeamPreviewVariant) == 0xC0, "m_pszTeamPreviewVariant in C_CSGO_PreviewPlayer_GraphController should be at offset 0xC0");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszTeamPreviewPosition) == 0xF0, "m_pszTeamPreviewPosition in C_CSGO_PreviewPlayer_GraphController should be at offset 0xF0");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszEndOfMatchCelebration) == 0x120, "m_pszEndOfMatchCelebration in C_CSGO_PreviewPlayer_GraphController should be at offset 0x120");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_nTeamPreviewRandom) == 0x150, "m_nTeamPreviewRandom in C_CSGO_PreviewPlayer_GraphController should be at offset 0x150");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszWeaponState) == 0x178, "m_pszWeaponState in C_CSGO_PreviewPlayer_GraphController should be at offset 0x178");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszWeaponType) == 0x1A8, "m_pszWeaponType in C_CSGO_PreviewPlayer_GraphController should be at offset 0x1A8");
+		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_bCT) == 0x1D8, "m_bCT in C_CSGO_PreviewPlayer_GraphController should be at offset 0x1D8");
+		static_assert(sizeof(CS2::client::C_CSGO_PreviewPlayer_GraphController) == 0x200, "C_CSGO_PreviewPlayer_GraphController size should be 0x200");
 	}
 }

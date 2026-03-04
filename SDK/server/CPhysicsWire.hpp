@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CPhysicsWire : public CS2::server::CBaseEntity {
 		public:
-			int32_t m_nDensity; // 0x4f0 | Schema_Builtin | Size: 0x4
+			int32_t m_nDensity; // 0x4a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysicsWire, m_nDensity) == 0x4F0, "m_nDensity in CPhysicsWire should be at offset 0x4F0");
-		static_assert(sizeof(CS2::server::CPhysicsWire) == 0x4F8, "CPhysicsWire size should be 0x4F8");
+		static_assert(offsetof(CS2::server::CPhysicsWire, m_nDensity) == 0x4A8, "m_nDensity in CPhysicsWire should be at offset 0x4A8");
+		static_assert(sizeof(CS2::server::CPhysicsWire) == 0x4B0, "CPhysicsWire size should be 0x4B0");
 	}
 }

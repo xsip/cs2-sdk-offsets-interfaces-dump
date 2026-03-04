@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/animgraphlib/CMotionGraphGroup.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class CMotionGraphGroup;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,7 +22,7 @@ namespace CS2 {
 		class CMotionDataSet  {
 		public:
 			GlobalTypes::CUtlVector<animgraphlib::CMotionGraphGroup> m_groups; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_groups[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_groups[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			int32_t m_nDimensionCount; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

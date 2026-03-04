@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x4F8
+			// Class size: 0x4B0
 			namespace CPhysicsWire /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_nDensity = 0x4f0; // int32_t m_nDensity; |  0x4f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDensity = 0x4a8; // int32_t m_nDensity; |  0x4a8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

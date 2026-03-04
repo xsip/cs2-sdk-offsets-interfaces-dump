@@ -22,6 +22,6 @@ namespace CS2 {
 		class CFuncMoveLinearAlias_momentary_door : public CS2::server::CFuncMoveLinear {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFuncMoveLinearAlias_momentary_door) == 0x900, "CFuncMoveLinearAlias_momentary_door size should be 0x900");
+		static_assert(sizeof(CS2::server::CFuncMoveLinearAlias_momentary_door) == 0x838, "CFuncMoveLinearAlias_momentary_door size should be 0x838");
 	}
 }

@@ -13,6 +13,6 @@ class modellib_SkeletonAnimCapture_t {
     char m_FeModelInitPose[0x18];
     int32_t m_nFlexControllers;
     bool m_bPredicted;
-    char pad_388[0x43];
+    char pad_395[0x43];
     char m_Frames[0x18];
 };

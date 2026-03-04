@@ -8,30 +8,40 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1A90
+			// Class size: 0x1B38
 			namespace CBaseAnimGraphController /*: public CS2::client::CSkeletonAnimationController*/ {
-				constexpr std::ptrdiff_t m_animGraphNetworkedVars = 0x18; // client::CAnimGraphNetworkedVariables  | Schema_DeclaredClass | Size: 0x1490
-				constexpr std::ptrdiff_t m_bSequenceFinished = 0x14a8; // bool m_bSequenceFinished; |  0x14a8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flSoundSyncTime = 0x14ac; // float32 m_flSoundSyncTime; |  0x14ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nActiveIKChainMask = 0x14b0; // uint32_t m_nActiveIKChainMask; |  0x14b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSequence = 0x14b4; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flSeqStartTime = 0x14b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flSeqFixedCycle = 0x14bc; // float32 m_flSeqFixedCycle; |  0x14bc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nAnimLoopMode = 0x14c0; // client::AnimLoopMode_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flPlaybackRate = 0x14c4; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nNotifyState = 0x14d0; // client::SequenceFinishNotifyState_t  | Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_bNetworkedAnimationInputsChanged = 0x14d2; // bool m_bNetworkedAnimationInputsChanged; |  0x14d2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNetworkedSequenceChanged = 0x14d3; // bool m_bNetworkedSequenceChanged; |  0x14d3 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bLastUpdateSkipped = 0x14d4; // bool m_bLastUpdateSkipped; |  0x14d4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flPrevAnimUpdateTime = 0x14d8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_hGraphDefinitionAG2 = 0x1860; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmGraphDefinition>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bIsUsingAG2 = 0x1868; // bool m_bIsUsingAG2; |  0x1868 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nAnimationAlgorithm = 0x18; // client::AnimationAlgorithm_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_animGraphNetworkedVars = 0x20; // client::CAnimGraphNetworkedVariables  | Schema_DeclaredClass | Size: 0x1490
+				constexpr std::ptrdiff_t m_pAnimGraphInstance = 0x14b0; // GlobalTypes::CSmartPtr<animgraphlib::IAnimationGraphInstance>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nNextExternalGraphHandle = 0x1510; // client::ExternalAnimGraphHandle_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecSecondarySkeletonNames = 0x1518; // GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecSecondarySkeletons = 0x1530; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::CBaseAnimGraph>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nSecondarySkeletonMasterCount = 0x1548; // int32_t m_nSecondarySkeletonMasterCount; |  0x1548 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSoundSyncTime = 0x1550; // float32 m_flSoundSyncTime; |  0x1550 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nActiveIKChainMask = 0x1554; // uint32_t m_nActiveIKChainMask; |  0x1554 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hSequence = 0x15a8; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flSeqStartTime = 0x15ac; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flSeqFixedCycle = 0x15b0; // float32 m_flSeqFixedCycle; |  0x15b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nAnimLoopMode = 0x15b4; // client::AnimLoopMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flPlaybackRate = 0x15b8; // GlobalTypes::CNetworkedQuantizedFloat  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nNotifyState = 0x15c4; // client::SequenceFinishNotifyState_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_bNetworkedAnimationInputsChanged = 0x15c5; // bool m_bNetworkedAnimationInputsChanged; |  0x15c5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNetworkedSequenceChanged = 0x15c6; // bool m_bNetworkedSequenceChanged; |  0x15c6 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLastUpdateSkipped = 0x15c7; // bool m_bLastUpdateSkipped; |  0x15c7 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSequenceFinished = 0x15c8; // bool m_bSequenceFinished; |  0x15c8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nPrevAnimUpdateTick = 0x15cc; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hGraphDefinitionAG2 = 0x1868; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmGraphDefinition>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_serializedPoseRecipeAG2 = 0x1870; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_nSerializePoseRecipeSizeAG2 = 0x1888; // int32_t m_nSerializePoseRecipeSizeAG2; |  0x1888 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nSerializePoseRecipeVersionAG2 = 0x188c; // int32_t m_nSerializePoseRecipeVersionAG2; |  0x188c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nGraphCreationFlagsAG2 = 0x1890; // uint8_t m_nGraphCreationFlagsAG2; |  0x1890 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nServerGraphDefReloadCountAG2 = 0x1a7c; // int32_t m_nServerGraphDefReloadCountAG2; |  0x1a7c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nServerSerializationContextIteration = 0x1a84; // int32_t m_nServerSerializationContextIteration; |  0x1a84 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nServerGraphInstanceIteration = 0x1890; // int32_t m_nServerGraphInstanceIteration; |  0x1890 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nServerSerializationContextIteration = 0x1894; // int32_t m_nServerSerializationContextIteration; |  0x1894 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_primaryGraphId = 0x1898; // resourcefile::ResourceId_t  | Schema_DeclaredClass | Size: 0x8
+				constexpr std::ptrdiff_t m_vecExternalGraphIds = 0x18a0; // GlobalTypes::C_NetworkUtlVectorBase<resourcefile::ResourceId_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecExternalClipIds = 0x18b8; // GlobalTypes::C_NetworkUtlVectorBase<resourcefile::ResourceId_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_sAnimGraph2Identifier = 0x18d0; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecExternalGraphs = 0x1af8; // GlobalTypes::CUtlVector<client::ExternalAnimGraph_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nPrevAnimationAlgorithm = 0x1b31; // client::AnimationAlgorithm_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

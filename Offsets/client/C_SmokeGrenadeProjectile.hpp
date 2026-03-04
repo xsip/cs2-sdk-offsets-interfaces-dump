@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1608
+			// Class size: 0x15F0
 			namespace C_SmokeGrenadeProjectile /*: public CS2::client::C_BaseCSGrenadeProjectile*/ {
-				constexpr std::ptrdiff_t m_nSmokeEffectTickBegin = 0x1468; // int32_t m_nSmokeEffectTickBegin; |  0x1468 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDidSmokeEffect = 0x146c; // bool m_bDidSmokeEffect; |  0x146c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nRandomSeed = 0x1470; // int32_t m_nRandomSeed; |  0x1470 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vSmokeColor = 0x1474; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1480; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_VoxelFrameData = 0x1490; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nVoxelFrameDataSize = 0x14a8; // int32_t m_nVoxelFrameDataSize; |  0x14a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nVoxelUpdate = 0x14ac; // int32_t m_nVoxelUpdate; |  0x14ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x14b0; // bool m_bSmokeVolumeDataReceived; |  0x14b0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x14b1; // bool m_bSmokeEffectSpawned; |  0x14b1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nSmokeEffectTickBegin = 0x1450; // int32_t m_nSmokeEffectTickBegin; |  0x1450 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDidSmokeEffect = 0x1454; // bool m_bDidSmokeEffect; |  0x1454 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nRandomSeed = 0x1458; // int32_t m_nRandomSeed; |  0x1458 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vSmokeColor = 0x145c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vSmokeDetonationPos = 0x1468; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_VoxelFrameData = 0x1478; // GlobalTypes::C_NetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nVoxelFrameDataSize = 0x1490; // int32_t m_nVoxelFrameDataSize; |  0x1490 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nVoxelUpdate = 0x1494; // int32_t m_nVoxelUpdate; |  0x1494 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSmokeVolumeDataReceived = 0x1498; // bool m_bSmokeVolumeDataReceived; |  0x1498 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSmokeEffectSpawned = 0x1499; // bool m_bSmokeEffectSpawned; |  0x1499 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

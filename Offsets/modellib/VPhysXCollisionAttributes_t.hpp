@@ -8,16 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace modellib {
-			// Class size: 0xA0
+			// Class size: 0xD0
 			namespace VPhysXCollisionAttributes_t /**/ {
-				constexpr std::ptrdiff_t m_CollisionGroup = 0x0; // uint32_t m_CollisionGroup; |  0x0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nIncludeDetailLayerCount = 0x0; // int32_t m_nIncludeDetailLayerCount; |  0x0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_CollisionGroup = 0x4; // uint32_t m_CollisionGroup; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_InteractAs = 0x8; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_InteractWith = 0x20; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_InteractExclude = 0x38; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_CollisionGroupString = 0x50; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_InteractAsStrings = 0x58; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_InteractWithStrings = 0x70; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_InteractExcludeStrings = 0x88; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_DetailLayers = 0x50; // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_CollisionGroupString = 0x68; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_InteractAsStrings = 0x70; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_InteractWithStrings = 0x88; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_InteractExcludeStrings = 0xa0; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_DetailLayerStrings = 0xb8; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

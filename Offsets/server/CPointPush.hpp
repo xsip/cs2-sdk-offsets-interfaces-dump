@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x518
+			// Class size: 0x4D0
 			namespace CPointPush /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_bEnabled = 0x4f0; // bool m_bEnabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMagnitude = 0x4f4; // float32 m_flMagnitude; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadius = 0x4f8; // float32 m_flRadius; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInnerRadius = 0x4fc; // float32 m_flInnerRadius; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flConeOfInfluence = 0x500; // float32 m_flConeOfInfluence; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszFilterName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFilter = 0x510; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnabled = 0x4a8; // bool m_bEnabled; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMagnitude = 0x4ac; // float32 m_flMagnitude; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadius = 0x4b0; // float32 m_flRadius; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInnerRadius = 0x4b4; // float32 m_flInnerRadius; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flConeOfInfluence = 0x4b8; // float32 m_flConeOfInfluence; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszFilterName = 0x4c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFilter = 0x4c8; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

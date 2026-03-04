@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x500
+			// Class size: 0x4B8
 			namespace CRagdollManager /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_iCurrentMaxRagdollCount = 0x4f0; // int8_t m_iCurrentMaxRagdollCount; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iMaxRagdollCount = 0x4f4; // int32_t m_iMaxRagdollCount; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSaveImportant = 0x4f8; // bool m_bSaveImportant; |  0x4f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCanTakeDamage = 0x4f9; // bool m_bCanTakeDamage; |  0x4f9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iCurrentMaxRagdollCount = 0x4a8; // int8_t m_iCurrentMaxRagdollCount; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iMaxRagdollCount = 0x4ac; // int32_t m_iMaxRagdollCount; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSaveImportant = 0x4b0; // bool m_bSaveImportant; |  0x4b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCanTakeDamage = 0x4b1; // bool m_bCanTakeDamage; |  0x4b1 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

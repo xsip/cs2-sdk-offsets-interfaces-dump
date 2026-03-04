@@ -11,14 +11,14 @@
 					<Description>"AnimationSystemUtils_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>animationsystem.dll + 0x7c2b70</Address>
+					 <Address>animationsystem.dll + 0x7f25b8</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>3</ID>
 					<Description>"AnimationSystem_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>animationsystem.dll + 0x7baa90</Address>
+					 <Address>animationsystem.dll + 0x7ea4d0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -29,297 +29,297 @@
 			<CheatEntries>
 				<CheatEntry>
 					<ID>5</ID>
-					<Description>"ClientToolsInfo_001"</Description>
+					<Description>""</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1be5bb0</Address>
+					 <Address>client.dll + 0x70f751bb</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>6</ID>
-					<Description>"EmptyWorldService001_Client"</Description>
+					<Description>"ClientToolsInfo_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1ba0fb0</Address>
+					 <Address>client.dll + 0x205e0a0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>7</ID>
-					<Description>"GameClientExports001"</Description>
+					<Description>"EmptyWorldService001_Client"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1be2890</Address>
+					 <Address>client.dll + 0x2017f50</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>8</ID>
-					<Description>"LegacyGameUI001"</Description>
+					<Description>"GameClientExports001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1c01130</Address>
+					 <Address>client.dll + 0x205ad80</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>9</ID>
-					<Description>"Source2Client002"</Description>
+					<Description>"LegacyGameUI001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1e2a570</Address>
+					 <Address>client.dll + 0x20785f0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>10</ID>
-					<Description>"Source2ClientConfig001"</Description>
+					<Description>"Source2Client002"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1dc3dd0</Address>
+					 <Address>client.dll + 0x2304e70</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>11</ID>
-					<Description>"Source2ClientPrediction001"</Description>
+					<Description>"Source2ClientConfig001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1bece50</Address>
+					 <Address>client.dll + 0x2288ec0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>12</ID>
+					<Description>"Source2ClientPrediction001"</Description>
+					<ShowAsSigned>0</ShowAsSigned>
+					 <VariableType>4 Bytes</VariableType>
+					 <Address>client.dll + 0x2065a00</Address>
+				</CheatEntry>
+				<CheatEntry>
+					<ID>13</ID>
 					<Description>"Source2ClientUI001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>client.dll + 0x1bff670</Address>
+					 <Address>client.dll + 0x2076e80</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>13</ID>
+			<ID>14</ID>
 			<Description>"engine2"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
-				<CheatEntry>
-					<ID>14</ID>
-					<Description>""</Description>
-					<ShowAsSigned>0</ShowAsSigned>
-					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x539e8f14</Address>
-				</CheatEntry>
 				<CheatEntry>
 					<ID>15</ID>
 					<Description>"BenchmarkService001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7630</Address>
+					 <Address>engine2.dll + 0x613870</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>16</ID>
 					<Description>"BugService001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8abc60</Address>
+					 <Address>engine2.dll + 0x8c8cf0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>17</ID>
 					<Description>"ClientServerEngineLoopService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ed370</Address>
+					 <Address>engine2.dll + 0x90a390</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>18</ID>
 					<Description>"EngineGameUI001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f52f0</Address>
+					 <Address>engine2.dll + 0x6112b0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>19</ID>
 					<Description>"EngineServiceMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ecc70</Address>
+					 <Address>engine2.dll + 0x909c40</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>20</ID>
 					<Description>"GameEventSystemClientV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ecf40</Address>
+					 <Address>engine2.dll + 0x909f20</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>21</ID>
 					<Description>"GameEventSystemServerV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ed060</Address>
+					 <Address>engine2.dll + 0x90a050</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>22</ID>
 					<Description>"GameResourceServiceClientV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7730</Address>
+					 <Address>engine2.dll + 0x613970</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>23</ID>
 					<Description>"GameResourceServiceServerV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7790</Address>
+					 <Address>engine2.dll + 0x6139d0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>24</ID>
 					<Description>"GameUIService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ac090</Address>
+					 <Address>engine2.dll + 0x8c9120</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>25</ID>
 					<Description>"HostStateMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7ff0</Address>
+					 <Address>engine2.dll + 0x6141f0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>26</ID>
 					<Description>"INETSUPPORT_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f0870</Address>
+					 <Address>engine2.dll + 0x60c8e0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>27</ID>
 					<Description>"InputService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ac380</Address>
+					 <Address>engine2.dll + 0x8c9410</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>28</ID>
 					<Description>"KeyValueCache001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f80a0</Address>
+					 <Address>engine2.dll + 0x6142a0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>29</ID>
 					<Description>"MapListService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8eb2f0</Address>
+					 <Address>engine2.dll + 0x908280</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>30</ID>
 					<Description>"NetworkClientService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8eb480</Address>
+					 <Address>engine2.dll + 0x908410</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>31</ID>
 					<Description>"NetworkP2PService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8eb7a0</Address>
+					 <Address>engine2.dll + 0x908750</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>32</ID>
 					<Description>"NetworkServerService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8eb930</Address>
+					 <Address>engine2.dll + 0x908900</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>33</ID>
 					<Description>"NetworkService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7900</Address>
+					 <Address>engine2.dll + 0x613b40</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>34</ID>
 					<Description>"RenderService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ebb90</Address>
+					 <Address>engine2.dll + 0x908b70</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>35</ID>
 					<Description>"ScreenshotService001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ebe40</Address>
+					 <Address>engine2.dll + 0x908e30</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>36</ID>
 					<Description>"SimpleEngineLoopService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f8100</Address>
+					 <Address>engine2.dll + 0x614300</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>37</ID>
 					<Description>"SoundService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7940</Address>
+					 <Address>engine2.dll + 0x613b80</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>38</ID>
 					<Description>"Source2EngineToClient001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f4980</Address>
+					 <Address>engine2.dll + 0x610bd0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>39</ID>
 					<Description>"Source2EngineToClientStringTable001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f49e0</Address>
+					 <Address>engine2.dll + 0x610c30</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>40</ID>
 					<Description>"Source2EngineToServer001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f4a58</Address>
+					 <Address>engine2.dll + 0x610ca8</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>41</ID>
 					<Description>"Source2EngineToServerStringTable001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f4a80</Address>
+					 <Address>engine2.dll + 0x610cd0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>42</ID>
 					<Description>"SplitScreenService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7c40</Address>
+					 <Address>engine2.dll + 0x613e60</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>43</ID>
 					<Description>"StatsService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x8ec240</Address>
+					 <Address>engine2.dll + 0x9091f0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>44</ID>
 					<Description>"ToolService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7e00</Address>
+					 <Address>engine2.dll + 0x614020</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>45</ID>
 					<Description>"VENGINE_GAMEUIFUNCS_VERSION005"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f5380</Address>
+					 <Address>engine2.dll + 0x611340</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>46</ID>
 					<Description>"VProfService_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>engine2.dll + 0x5f7e40</Address>
+					 <Address>engine2.dll + 0x614060</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -333,56 +333,56 @@
 					<Description>"DebugDrawQueueManager001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x138ef0</Address>
+					 <Address>host.dll + 0x139020</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>49</ID>
 					<Description>"GameModelInfo001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x138f30</Address>
+					 <Address>host.dll + 0x139060</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>50</ID>
 					<Description>"GameSystem2HostHook"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x138f70</Address>
+					 <Address>host.dll + 0x1390a0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>51</ID>
 					<Description>"HostUtils001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x1466e0</Address>
+					 <Address>host.dll + 0x1467e0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>52</ID>
 					<Description>"PredictionDiffManager001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x139080</Address>
+					 <Address>host.dll + 0x1391b0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>53</ID>
 					<Description>"SaveRestoreDataVersion001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x1391b0</Address>
+					 <Address>host.dll + 0x1392e0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>54</ID>
 					<Description>"SinglePlayerSharedMemory001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x1391e0</Address>
+					 <Address>host.dll + 0x139310</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>55</ID>
 					<Description>"Source2Host001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>host.dll + 0x139250</Address>
+					 <Address>host.dll + 0x139380</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -396,14 +396,14 @@
 					<Description>"GameTypes001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>matchmaking.dll + 0x1b5ee0</Address>
+					 <Address>matchmaking.dll + 0x1b8000</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>58</ID>
 					<Description>"MATCHFRAMEWORK_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>matchmaking.dll + 0x1be190</Address>
+					 <Address>matchmaking.dll + 0x1c02b0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -417,35 +417,35 @@
 					<Description>"FontManager_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>materialsystem2.dll + 0x163500</Address>
+					 <Address>materialsystem2.dll + 0x164570</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>61</ID>
 					<Description>"MaterialUtils_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>materialsystem2.dll + 0x14b430</Address>
+					 <Address>materialsystem2.dll + 0x14c5c0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>62</ID>
 					<Description>"PostProcessingSystem_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>materialsystem2.dll + 0x14b340</Address>
+					 <Address>materialsystem2.dll + 0x14c4d0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>63</ID>
 					<Description>"TextLayout_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>materialsystem2.dll + 0x14b3c0</Address>
+					 <Address>materialsystem2.dll + 0x14c550</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>64</ID>
 					<Description>"VMaterialSystem2_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>materialsystem2.dll + 0x162d70</Address>
+					 <Address>materialsystem2.dll + 0x163e80</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -459,7 +459,7 @@
 					<Description>"MeshSystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>meshsystem.dll + 0x1400e0</Address>
+					 <Address>meshsystem.dll + 0x1506a0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -473,28 +473,28 @@
 					<Description>"FlattenedSerializersVersion001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>networksystem.dll + 0x2632f0</Address>
+					 <Address>networksystem.dll + 0x27a760</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>69</ID>
 					<Description>"NetworkMessagesVersion001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>networksystem.dll + 0x28b240</Address>
+					 <Address>networksystem.dll + 0x2a2880</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>70</ID>
 					<Description>"NetworkSystemVersion001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>networksystem.dll + 0x27c9d0</Address>
+					 <Address>networksystem.dll + 0x293f20</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>71</ID>
 					<Description>"SerializedEntitiesVersion001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>networksystem.dll + 0x27cae0</Address>
+					 <Address>networksystem.dll + 0x294010</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -508,7 +508,7 @@
 					<Description>"PanoramaUIEngine001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>panorama.dll + 0x509b20</Address>
+					 <Address>panorama.dll + 0x507cb0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -522,7 +522,7 @@
 					<Description>"ParticleSystemMgr003"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>particles.dll + 0x555680</Address>
+					 <Address>particles.dll + 0x520e70</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -536,7 +536,7 @@
 					<Description>"IPulseSystem_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>pulse_system.dll + 0x1f0e30</Address>
+					 <Address>pulse_system.dll + 0x1f2670</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -550,21 +550,21 @@
 					<Description>"RenderDeviceMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>rendersystemdx11.dll + 0x431bc0</Address>
+					 <Address>rendersystemdx11.dll + 0x432d30</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>80</ID>
 					<Description>"RenderUtils_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>rendersystemdx11.dll + 0x4324b8</Address>
+					 <Address>rendersystemdx11.dll + 0x433628</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>81</ID>
 					<Description>"VRenderDeviceMgrBackdoor001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>rendersystemdx11.dll + 0x431c60</Address>
+					 <Address>rendersystemdx11.dll + 0x432dd0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -578,7 +578,7 @@
 					<Description>"ResourceSystem013"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>resourcesystem.dll + 0x7fdd0</Address>
+					 <Address>resourcesystem.dll + 0x81fe0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -592,14 +592,14 @@
 					<Description>"ResponseRulesCache001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>scenefilecache.dll + 0x95740</Address>
+					 <Address>scenefilecache.dll + 0xdb190</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>86</ID>
 					<Description>"SceneFileCache002"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>scenefilecache.dll + 0x95890</Address>
+					 <Address>scenefilecache.dll + 0xdb2c0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -613,21 +613,21 @@
 					<Description>"RenderingPipelines_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>scenesystem.dll + 0x61bb40</Address>
+					 <Address>scenesystem.dll + 0x65bac0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>89</ID>
 					<Description>"SceneSystem_002"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>scenesystem.dll + 0x83e7d0</Address>
+					 <Address>scenesystem.dll + 0x8cfea0</Address>
 				</CheatEntry>
 				<CheatEntry>
 					<ID>90</ID>
 					<Description>"SceneUtils_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>scenesystem.dll + 0x61c440</Address>
+					 <Address>scenesystem.dll + 0x65c9d0</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -641,7 +641,7 @@
 					<Description>"SchemaSystem_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>schemasystem.dll + 0x756f0</Address>
+					 <Address>schemasystem.dll + 0x76730</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
@@ -652,185 +652,178 @@
 			<CheatEntries>
 				<CheatEntry>
 					<ID>94</ID>
-					<Description>""</Description>
-					<ShowAsSigned>0</ShowAsSigned>
-					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x60978ed9</Address>
-				</CheatEntry>
-				<CheatEntry>
-					<ID>95</ID>
 					<Description>"EmptyWorldService001_Server"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x1732fa0</Address>
+					 <Address>server.dll + 0x1b73bb0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>96</ID>
+					<ID>95</ID>
 					<Description>"EntitySubclassUtilsV001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x16df2d0</Address>
+					 <Address>server.dll + 0x1b1f120</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>97</ID>
+					<ID>96</ID>
 					<Description>"NavGameTest001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x17dbd10</Address>
+					 <Address>server.dll + 0x1c1d858</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>98</ID>
+					<ID>97</ID>
 					<Description>"ServerToolsInfo_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x178b1a8</Address>
+					 <Address>server.dll + 0x1bceaf8</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>99</ID>
+					<ID>98</ID>
 					<Description>"Source2GameClients001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x1786af0</Address>
+					 <Address>server.dll + 0x1bcbb70</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>100</ID>
+					<ID>99</ID>
 					<Description>"Source2GameDirector001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x18e6350</Address>
+					 <Address>server.dll + 0x1d5da20</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>101</ID>
+					<ID>100</ID>
 					<Description>"Source2GameEntities001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x178a8b0</Address>
+					 <Address>server.dll + 0x1bce200</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>102</ID>
+					<ID>101</ID>
 					<Description>"Source2Server001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x178a710</Address>
+					 <Address>server.dll + 0x1bce060</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>103</ID>
+					<ID>102</ID>
 					<Description>"Source2ServerConfig001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x19b81a8</Address>
+					 <Address>server.dll + 0x1e52838</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>104</ID>
+					<ID>103</ID>
 					<Description>"customnavsystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>server.dll + 0x16bec08</Address>
+					 <Address>server.dll + 0x1afdef8</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>105</ID>
+			<ID>104</ID>
 			<Description>"soundsystem"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>106</ID>
+					<ID>105</ID>
 					<Description>"SoundOpSystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>soundsystem.dll + 0x3eb4a0</Address>
+					 <Address>soundsystem.dll + 0x4f3aa0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>107</ID>
+					<ID>106</ID>
 					<Description>"SoundOpSystemEdit001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>soundsystem.dll + 0x3eb380</Address>
+					 <Address>soundsystem.dll + 0x4f3980</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>108</ID>
+					<ID>107</ID>
 					<Description>"SoundSystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>soundsystem.dll + 0x3eae60</Address>
+					 <Address>soundsystem.dll + 0x4f3470</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>109</ID>
+					<ID>108</ID>
 					<Description>"VMixEditTool001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>soundsystem.dll + 0x485ed80b</Address>
+					 <Address>soundsystem.dll + 0x59472ff</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>110</ID>
+			<ID>109</ID>
 			<Description>"tier0"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>111</ID>
+					<ID>110</ID>
 					<Description>"TestScriptMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>tier0.dll + 0x3975a0</Address>
+					 <Address>tier0.dll + 0x398620</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>112</ID>
+					<ID>111</ID>
 					<Description>"VEngineCvar007"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>tier0.dll + 0x3a2440</Address>
+					 <Address>tier0.dll + 0x3a33b0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>113</ID>
+					<ID>112</ID>
 					<Description>"VProcessUtils002"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>tier0.dll + 0x3974e0</Address>
+					 <Address>tier0.dll + 0x3985c0</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>114</ID>
+					<ID>113</ID>
 					<Description>"VStringTokenSystem001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>tier0.dll + 0x3c9310</Address>
+					 <Address>tier0.dll + 0x3ca090</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>115</ID>
+			<ID>114</ID>
 			<Description>"vphysics2"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>116</ID>
+					<ID>115</ID>
 					<Description>"VPhysics2_Handle_Interface_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>vphysics2.dll + 0x3e4120</Address>
+					 <Address>vphysics2.dll + 0x400120</Address>
 				</CheatEntry>
 				<CheatEntry>
-					<ID>117</ID>
+					<ID>116</ID>
 					<Description>"VPhysics2_Interface_001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>vphysics2.dll + 0x3e4160</Address>
+					 <Address>vphysics2.dll + 0x400160</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>
 		<CheatEntry>
-			<ID>118</ID>
+			<ID>117</ID>
 			<Description>"worldrenderer"</Description>
 			<GroupHeader>1</GroupHeader>
 			<CheatEntries>
 				<CheatEntry>
-					<ID>119</ID>
+					<ID>118</ID>
 					<Description>"WorldRendererMgr001"</Description>
 					<ShowAsSigned>0</ShowAsSigned>
 					 <VariableType>4 Bytes</VariableType>
-					 <Address>worldrenderer.dll + 0x1fec50</Address>
+					 <Address>worldrenderer.dll + 0x214a00</Address>
 				</CheatEntry>
 			</CheatEntries>
 		</CheatEntry>

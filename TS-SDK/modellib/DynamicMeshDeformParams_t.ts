@@ -8,4 +8,5 @@ export const modellib_DynamicMeshDeformParams_t  = {
 	m_bRecomputeSmoothNormalsAfterAnimation: 8n, // bool m_bRecomputeSmoothNormalsAfterAnimation; |  0x8 | Schema_Builtin | Size: 0x1
 	m_bComputeDynamicMeshTensionAfterAnimation: 9n, // bool m_bComputeDynamicMeshTensionAfterAnimation; |  0x9 | Schema_Builtin | Size: 0x1
 	m_bSmoothNormalsAcrossUvSeams: 10n, // bool m_bSmoothNormalsAcrossUvSeams; |  0xa | Schema_Builtin | Size: 0x1
+	m_bEnableEyeBulgeDeformation: 11n, // bool m_bEnableEyeBulgeDeformation; |  0xb | Schema_Builtin | Size: 0x1
 }

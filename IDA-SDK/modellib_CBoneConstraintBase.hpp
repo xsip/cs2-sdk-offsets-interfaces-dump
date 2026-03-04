@@ -4,5 +4,5 @@
 
 
 class modellib_CBoneConstraintBase {
-    char pad_308[0x20];
+    char pad_310[0x20];
 };

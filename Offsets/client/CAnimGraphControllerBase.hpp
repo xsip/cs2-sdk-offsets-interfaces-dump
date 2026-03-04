@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x80
+			// Class size: 0x90
 			namespace CAnimGraphControllerBase /**/ {
-				constexpr std::ptrdiff_t m_vecParamsToResetInPostGraphUpdate = 0x28; // GlobalTypes::CUtlVectorFixedGrowable<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x58
+				constexpr std::ptrdiff_t m_hExternalGraph = 0x18; // client::ExternalAnimGraphHandle_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

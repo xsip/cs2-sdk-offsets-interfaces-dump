@@ -5,8 +5,8 @@
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 
 class smartprops_CSmartPropPulse_SmartProp {
-    char vTable501[0x8];
+    void **__vftable_0;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char end_pad_502[0x3c];
+    char end_pad_512[0x3c];
     char m_hSmartProp[0x8];
 };

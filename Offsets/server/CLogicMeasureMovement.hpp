@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x520
+			// Class size: 0x4D8
 			namespace CLogicMeasureMovement /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_strMeasureTarget = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strMeasureReference = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strTargetReference = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hMeasureTarget = 0x508; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hMeasureReference = 0x50c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTarget = 0x510; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTargetReference = 0x514; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flScale = 0x518; // float32 m_flScale; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMeasureType = 0x51c; // int32_t m_nMeasureType; |  0x51c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_strMeasureTarget = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strMeasureReference = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strTargetReference = 0x4b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hMeasureTarget = 0x4c0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hMeasureReference = 0x4c4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTarget = 0x4c8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTargetReference = 0x4cc; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flScale = 0x4d0; // float32 m_flScale; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMeasureType = 0x4d4; // int32_t m_nMeasureType; |  0x4d4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

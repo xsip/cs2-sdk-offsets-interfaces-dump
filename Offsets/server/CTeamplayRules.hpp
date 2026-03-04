@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xC0
+			// Class size: 0xD0
 			namespace CTeamplayRules /*: public CS2::server::CMultiplayRules*/ {
 				// NO SCHEMA DATA FOUND!
 			}

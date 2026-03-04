@@ -22,50 +22,50 @@ namespace CS2 {
 		class CPathParticleRope : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x8);
-			bool m_bStartActive; // 0x4f8 | Schema_Builtin | Size: 0x1
+			bool m_bStartActive; // 0x4b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMaxSimulationTime; // 0x4fc | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszEffectName; // 0x500 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge> m_PathNodes_Name; // 0x508 | Schema_Atomic | Size: 0x18
-			// char  m_PathNodes_Name[0x18]; // 0x508 | Schema_Atomic | Size: 0x18
-			float32 m_flParticleSpacing; // 0x520 | Schema_Builtin | Size: 0x4
-			float32 m_flSlack; // 0x524 | Schema_Builtin | Size: 0x4
-			float32 m_flRadius; // 0x528 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_ColorTint; // 0x52c | Schema_Atomic | Size: 0x4
-			int32_t m_nEffectState; // 0x530 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxSimulationTime; // 0x4b4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszEffectName; // 0x4b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge> m_PathNodes_Name; // 0x4c0 | Schema_Atomic | Size: 0x18
+			// char m_PathNodes_Name[0x18]; // 0x4c0 | Schema_Atomic | Size: 0x18
+			float32 m_flParticleSpacing; // 0x4d8 | Schema_Builtin | Size: 0x4
+			float32 m_flSlack; // 0x4dc | Schema_Builtin | Size: 0x4
+			float32 m_flRadius; // 0x4e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_ColorTint; // 0x4e4 | Schema_Atomic | Size: 0x4
+			int32_t m_nEffectState; // 0x4e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_iEffectIndex; // 0x538 | Schema_Atomic | Size: 0x8
-			char  m_iEffectIndex[0x8]; // 0x538 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_Position; // 0x540 | Schema_Atomic | Size: 0x18
-			char  m_PathNodes_Position[0x18]; // 0x540 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_TangentIn; // 0x558 | Schema_Atomic | Size: 0x18
-			char  m_PathNodes_TangentIn[0x18]; // 0x558 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_TangentOut; // 0x570 | Schema_Atomic | Size: 0x18
-			char  m_PathNodes_TangentOut[0x18]; // 0x570 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_Color; // 0x588 | Schema_Atomic | Size: 0x18
-			char  m_PathNodes_Color[0x18]; // 0x588 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlVectorBase< bool > m_PathNodes_PinEnabled; // 0x5a0 | Schema_Atomic | Size: 0x18
-			char  m_PathNodes_PinEnabled[0x18]; // 0x5a0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CNetworkUtlVectorBase< float32 > m_PathNodes_RadiusScale; // 0x5b8 | Schema_Atomic | Size: 0x18
-			char  m_PathNodes_RadiusScale[0x18]; // 0x5b8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_iEffectIndex; // 0x4f0 | Schema_Atomic | Size: 0x8
+			char m_iEffectIndex[0x8]; // 0x4f0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_Position; // 0x4f8 | Schema_Atomic | Size: 0x18
+			char m_PathNodes_Position[0x18]; // 0x4f8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_TangentIn; // 0x510 | Schema_Atomic | Size: 0x18
+			char m_PathNodes_TangentIn[0x18]; // 0x510 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_TangentOut; // 0x528 | Schema_Atomic | Size: 0x18
+			char m_PathNodes_TangentOut[0x18]; // 0x528 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector> m_PathNodes_Color; // 0x540 | Schema_Atomic | Size: 0x18
+			char m_PathNodes_Color[0x18]; // 0x540 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase< bool > m_PathNodes_PinEnabled; // 0x558 | Schema_Atomic | Size: 0x18
+			char m_PathNodes_PinEnabled[0x18]; // 0x558 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase< float32 > m_PathNodes_RadiusScale; // 0x570 | Schema_Atomic | Size: 0x18
+			char m_PathNodes_RadiusScale[0x18]; // 0x570 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_bStartActive) == 0x4F8, "m_bStartActive in CPathParticleRope should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_flMaxSimulationTime) == 0x4FC, "m_flMaxSimulationTime in CPathParticleRope should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_iszEffectName) == 0x500, "m_iszEffectName in CPathParticleRope should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_Name) == 0x508, "m_PathNodes_Name in CPathParticleRope should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_flParticleSpacing) == 0x520, "m_flParticleSpacing in CPathParticleRope should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_flSlack) == 0x524, "m_flSlack in CPathParticleRope should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_flRadius) == 0x528, "m_flRadius in CPathParticleRope should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_ColorTint) == 0x52C, "m_ColorTint in CPathParticleRope should be at offset 0x52C");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_nEffectState) == 0x530, "m_nEffectState in CPathParticleRope should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_iEffectIndex) == 0x538, "m_iEffectIndex in CPathParticleRope should be at offset 0x538");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_Position) == 0x540, "m_PathNodes_Position in CPathParticleRope should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_TangentIn) == 0x558, "m_PathNodes_TangentIn in CPathParticleRope should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_TangentOut) == 0x570, "m_PathNodes_TangentOut in CPathParticleRope should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_Color) == 0x588, "m_PathNodes_Color in CPathParticleRope should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_PinEnabled) == 0x5A0, "m_PathNodes_PinEnabled in CPathParticleRope should be at offset 0x5A0");
-		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_RadiusScale) == 0x5B8, "m_PathNodes_RadiusScale in CPathParticleRope should be at offset 0x5B8");
-		static_assert(sizeof(CS2::server::CPathParticleRope) == 0x5D8, "CPathParticleRope size should be 0x5D8");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_bStartActive) == 0x4B0, "m_bStartActive in CPathParticleRope should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_flMaxSimulationTime) == 0x4B4, "m_flMaxSimulationTime in CPathParticleRope should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_iszEffectName) == 0x4B8, "m_iszEffectName in CPathParticleRope should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_Name) == 0x4C0, "m_PathNodes_Name in CPathParticleRope should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_flParticleSpacing) == 0x4D8, "m_flParticleSpacing in CPathParticleRope should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_flSlack) == 0x4DC, "m_flSlack in CPathParticleRope should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_flRadius) == 0x4E0, "m_flRadius in CPathParticleRope should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_ColorTint) == 0x4E4, "m_ColorTint in CPathParticleRope should be at offset 0x4E4");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_nEffectState) == 0x4E8, "m_nEffectState in CPathParticleRope should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_iEffectIndex) == 0x4F0, "m_iEffectIndex in CPathParticleRope should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_Position) == 0x4F8, "m_PathNodes_Position in CPathParticleRope should be at offset 0x4F8");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_TangentIn) == 0x510, "m_PathNodes_TangentIn in CPathParticleRope should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_TangentOut) == 0x528, "m_PathNodes_TangentOut in CPathParticleRope should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_Color) == 0x540, "m_PathNodes_Color in CPathParticleRope should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_PinEnabled) == 0x558, "m_PathNodes_PinEnabled in CPathParticleRope should be at offset 0x558");
+		static_assert(offsetof(CS2::server::CPathParticleRope, m_PathNodes_RadiusScale) == 0x570, "m_PathNodes_RadiusScale in CPathParticleRope should be at offset 0x570");
+		static_assert(sizeof(CS2::server::CPathParticleRope) == 0x590, "CPathParticleRope size should be 0x590");
 	}
 }

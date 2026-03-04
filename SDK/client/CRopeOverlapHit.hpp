@@ -26,10 +26,10 @@ namespace CS2 {
 		class CRopeOverlapHit  {
 		public:
 			GlobalTypes::CHandle<client::C_BaseEntity> m_hEntity; // 0x0 | Schema_Atomic | Size: 0x4
-			// char  m_hEntity[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
+			// char m_hEntity[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< int32 > m_vecOverlappingLinks; // 0x8 | Schema_Atomic | Size: 0x18
-			// char  m_vecOverlappingLinks[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			// char m_vecOverlappingLinks[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::CRopeOverlapHit, m_hEntity) == 0x0, "m_hEntity in CRopeOverlapHit should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CRopeOverlapHit, m_vecOverlappingLinks) == 0x8, "m_vecOverlappingLinks in CRopeOverlapHit should be at offset 0x8");

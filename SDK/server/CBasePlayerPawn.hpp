@@ -11,8 +11,10 @@
 
 
 #include <SDK/server/CBaseCombatCharacter.hpp>
+#include <SDK/server/ViewAngleServerChange_t.hpp>
 #include <SDK/server/sky3dparams_t.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
+#include <SDK/client/sndopvarlatchdata_t.hpp>
 
 
 
@@ -30,9 +32,6 @@ namespace CS2 {
 		class CAI_Expresser;
 		class CBasePlayerController;
 	}
-	namespace client {
-		class sndopvarlatchdata_t;
-	}
 }
 
 
@@ -41,65 +40,65 @@ namespace CS2 {
 	namespace server {
 		class CBasePlayerPawn : public CS2::server::CBaseCombatCharacter {
 		public:
-			server::CPlayer_WeaponServices* m_pWeaponServices; // 0xbe0 | Schema_Ptr | Size: 0x8
-			server::CPlayer_ItemServices* m_pItemServices; // 0xbe8 | Schema_Ptr | Size: 0x8
-			server::CPlayer_AutoaimServices* m_pAutoaimServices; // 0xbf0 | Schema_Ptr | Size: 0x8
-			server::CPlayer_ObserverServices* m_pObserverServices; // 0xbf8 | Schema_Ptr | Size: 0x8
-			server::CPlayer_WaterServices* m_pWaterServices; // 0xc00 | Schema_Ptr | Size: 0x8
-			server::CPlayer_UseServices* m_pUseServices; // 0xc08 | Schema_Ptr | Size: 0x8
-			server::CPlayer_FlashlightServices* m_pFlashlightServices; // 0xc10 | Schema_Ptr | Size: 0x8
-			server::CPlayer_CameraServices* m_pCameraServices; // 0xc18 | Schema_Ptr | Size: 0x8
-			server::CPlayer_MovementServices* m_pMovementServices; // 0xc20 | Schema_Ptr | Size: 0x8
+			server::CPlayer_WeaponServices* m_pWeaponServices; // 0xb70 | Schema_Ptr | Size: 0x8
+			server::CPlayer_ItemServices* m_pItemServices; // 0xb78 | Schema_Ptr | Size: 0x8
+			server::CPlayer_AutoaimServices* m_pAutoaimServices; // 0xb80 | Schema_Ptr | Size: 0x8
+			server::CPlayer_ObserverServices* m_pObserverServices; // 0xb88 | Schema_Ptr | Size: 0x8
+			server::CPlayer_WaterServices* m_pWaterServices; // 0xb90 | Schema_Ptr | Size: 0x8
+			server::CPlayer_UseServices* m_pUseServices; // 0xb98 | Schema_Ptr | Size: 0x8
+			server::CPlayer_FlashlightServices* m_pFlashlightServices; // 0xba0 | Schema_Ptr | Size: 0x8
+			server::CPlayer_CameraServices* m_pCameraServices; // 0xba8 | Schema_Ptr | Size: 0x8
+			server::CPlayer_MovementServices* m_pMovementServices; // 0xbb0 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x8);
-			// server::CUtlVectorEmbeddedNetworkVar<server::ViewAngleServerChange_t> m_ServerViewAngleChanges; // 0xc30 | Schema_Atomic | Size: 0x68
-			char  m_ServerViewAngleChanges[0x68]; // 0xc30 | Schema_Atomic | Size: 0x68
-			GlobalTypes::QAngle v_angle; // 0xc98 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle v_anglePrevious; // 0xca4 | Schema_Atomic | Size: 0xc
-			uint32_t m_iHideHUD; // 0xcb0 | Schema_Builtin | Size: 0x4
+			// server::CUtlVectorEmbeddedNetworkVar<server::ViewAngleServerChange_t> m_ServerViewAngleChanges; // 0xbc0 | Schema_Atomic | Size: 0x68
+			char m_ServerViewAngleChanges[0x68]; // 0xbc0 | Schema_Atomic | Size: 0x68
+			GlobalTypes::QAngle v_angle; // 0xc28 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle v_anglePrevious; // 0xc34 | Schema_Atomic | Size: 0xc
+			uint32_t m_iHideHUD; // 0xc40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::sky3dparams_t m_skybox3d; // 0xcb8 | Schema_DeclaredClass | Size: 0x90
-			entity2::GameTime_t m_fTimeLastHurt; // 0xd48 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flDeathTime; // 0xd4c | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_fNextSuicideTime; // 0xd50 | Schema_DeclaredClass | Size: 0x4
-			bool m_fInitHUD; // 0xd54 | Schema_Builtin | Size: 0x1
+			server::sky3dparams_t m_skybox3d; // 0xc48 | Schema_DeclaredClass | Size: 0x90
+			entity2::GameTime_t m_fTimeLastHurt; // 0xcd8 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flDeathTime; // 0xcdc | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_fNextSuicideTime; // 0xce0 | Schema_DeclaredClass | Size: 0x4
+			bool m_fInitHUD; // 0xce4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::CAI_Expresser* m_pExpresser; // 0xd58 | Schema_Ptr | Size: 0x8
-			GlobalTypes::CHandle<server::CBasePlayerController> m_hController; // 0xd60 | Schema_Atomic | Size: 0x4
-			// char  m_hController[0x4]; // 0xd60 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBasePlayerController> m_hDefaultController; // 0xd64 | Schema_Atomic | Size: 0x4
-			// char  m_hDefaultController[0x4]; // 0xd64 | Schema_Atomic | Size: 0x4
+			server::CAI_Expresser* m_pExpresser; // 0xce8 | Schema_Ptr | Size: 0x8
+			GlobalTypes::CHandle<server::CBasePlayerController> m_hController; // 0xcf0 | Schema_Atomic | Size: 0x4
+			// char m_hController[0x4]; // 0xcf0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerController> m_hDefaultController; // 0xcf4 | Schema_Atomic | Size: 0x4
+			// char m_hDefaultController[0x4]; // 0xcf4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_fHltvReplayDelay; // 0xd6c | Schema_Builtin | Size: 0x4
-			float32 m_fHltvReplayEnd; // 0xd70 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CEntityIndex m_iHltvReplayEntity; // 0xd74 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlVector<client::sndopvarlatchdata_t> m_sndOpvarLatchData; // 0xd78 | Schema_Atomic | Size: 0x18
-			// char  m_sndOpvarLatchData[0x18]; // 0xd78 | Schema_Atomic | Size: 0x18
+			float32 m_fHltvReplayDelay; // 0xcfc | Schema_Builtin | Size: 0x4
+			float32 m_fHltvReplayEnd; // 0xd00 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CEntityIndex m_iHltvReplayEntity; // 0xd04 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlVector<client::sndopvarlatchdata_t> m_sndOpvarLatchData; // 0xd08 | Schema_Atomic | Size: 0x18
+			// char m_sndOpvarLatchData[0x18]; // 0xd08 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWeaponServices) == 0xBE0, "m_pWeaponServices in CBasePlayerPawn should be at offset 0xBE0");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pItemServices) == 0xBE8, "m_pItemServices in CBasePlayerPawn should be at offset 0xBE8");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pAutoaimServices) == 0xBF0, "m_pAutoaimServices in CBasePlayerPawn should be at offset 0xBF0");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pObserverServices) == 0xBF8, "m_pObserverServices in CBasePlayerPawn should be at offset 0xBF8");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWaterServices) == 0xC00, "m_pWaterServices in CBasePlayerPawn should be at offset 0xC00");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pUseServices) == 0xC08, "m_pUseServices in CBasePlayerPawn should be at offset 0xC08");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pFlashlightServices) == 0xC10, "m_pFlashlightServices in CBasePlayerPawn should be at offset 0xC10");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pCameraServices) == 0xC18, "m_pCameraServices in CBasePlayerPawn should be at offset 0xC18");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pMovementServices) == 0xC20, "m_pMovementServices in CBasePlayerPawn should be at offset 0xC20");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_ServerViewAngleChanges) == 0xC30, "m_ServerViewAngleChanges in CBasePlayerPawn should be at offset 0xC30");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, v_angle) == 0xC98, "v_angle in CBasePlayerPawn should be at offset 0xC98");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, v_anglePrevious) == 0xCA4, "v_anglePrevious in CBasePlayerPawn should be at offset 0xCA4");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_iHideHUD) == 0xCB0, "m_iHideHUD in CBasePlayerPawn should be at offset 0xCB0");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_skybox3d) == 0xCB8, "m_skybox3d in CBasePlayerPawn should be at offset 0xCB8");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fTimeLastHurt) == 0xD48, "m_fTimeLastHurt in CBasePlayerPawn should be at offset 0xD48");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_flDeathTime) == 0xD4C, "m_flDeathTime in CBasePlayerPawn should be at offset 0xD4C");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fNextSuicideTime) == 0xD50, "m_fNextSuicideTime in CBasePlayerPawn should be at offset 0xD50");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fInitHUD) == 0xD54, "m_fInitHUD in CBasePlayerPawn should be at offset 0xD54");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pExpresser) == 0xD58, "m_pExpresser in CBasePlayerPawn should be at offset 0xD58");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_hController) == 0xD60, "m_hController in CBasePlayerPawn should be at offset 0xD60");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_hDefaultController) == 0xD64, "m_hDefaultController in CBasePlayerPawn should be at offset 0xD64");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fHltvReplayDelay) == 0xD6C, "m_fHltvReplayDelay in CBasePlayerPawn should be at offset 0xD6C");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fHltvReplayEnd) == 0xD70, "m_fHltvReplayEnd in CBasePlayerPawn should be at offset 0xD70");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_iHltvReplayEntity) == 0xD74, "m_iHltvReplayEntity in CBasePlayerPawn should be at offset 0xD74");
-		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_sndOpvarLatchData) == 0xD78, "m_sndOpvarLatchData in CBasePlayerPawn should be at offset 0xD78");
-		static_assert(sizeof(CS2::server::CBasePlayerPawn) == 0xD90, "CBasePlayerPawn size should be 0xD90");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWeaponServices) == 0xB70, "m_pWeaponServices in CBasePlayerPawn should be at offset 0xB70");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pItemServices) == 0xB78, "m_pItemServices in CBasePlayerPawn should be at offset 0xB78");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pAutoaimServices) == 0xB80, "m_pAutoaimServices in CBasePlayerPawn should be at offset 0xB80");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pObserverServices) == 0xB88, "m_pObserverServices in CBasePlayerPawn should be at offset 0xB88");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWaterServices) == 0xB90, "m_pWaterServices in CBasePlayerPawn should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pUseServices) == 0xB98, "m_pUseServices in CBasePlayerPawn should be at offset 0xB98");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pFlashlightServices) == 0xBA0, "m_pFlashlightServices in CBasePlayerPawn should be at offset 0xBA0");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pCameraServices) == 0xBA8, "m_pCameraServices in CBasePlayerPawn should be at offset 0xBA8");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pMovementServices) == 0xBB0, "m_pMovementServices in CBasePlayerPawn should be at offset 0xBB0");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_ServerViewAngleChanges) == 0xBC0, "m_ServerViewAngleChanges in CBasePlayerPawn should be at offset 0xBC0");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, v_angle) == 0xC28, "v_angle in CBasePlayerPawn should be at offset 0xC28");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, v_anglePrevious) == 0xC34, "v_anglePrevious in CBasePlayerPawn should be at offset 0xC34");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_iHideHUD) == 0xC40, "m_iHideHUD in CBasePlayerPawn should be at offset 0xC40");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_skybox3d) == 0xC48, "m_skybox3d in CBasePlayerPawn should be at offset 0xC48");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fTimeLastHurt) == 0xCD8, "m_fTimeLastHurt in CBasePlayerPawn should be at offset 0xCD8");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_flDeathTime) == 0xCDC, "m_flDeathTime in CBasePlayerPawn should be at offset 0xCDC");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fNextSuicideTime) == 0xCE0, "m_fNextSuicideTime in CBasePlayerPawn should be at offset 0xCE0");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fInitHUD) == 0xCE4, "m_fInitHUD in CBasePlayerPawn should be at offset 0xCE4");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pExpresser) == 0xCE8, "m_pExpresser in CBasePlayerPawn should be at offset 0xCE8");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_hController) == 0xCF0, "m_hController in CBasePlayerPawn should be at offset 0xCF0");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_hDefaultController) == 0xCF4, "m_hDefaultController in CBasePlayerPawn should be at offset 0xCF4");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fHltvReplayDelay) == 0xCFC, "m_fHltvReplayDelay in CBasePlayerPawn should be at offset 0xCFC");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_fHltvReplayEnd) == 0xD00, "m_fHltvReplayEnd in CBasePlayerPawn should be at offset 0xD00");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_iHltvReplayEntity) == 0xD04, "m_iHltvReplayEntity in CBasePlayerPawn should be at offset 0xD04");
+		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_sndOpvarLatchData) == 0xD08, "m_sndOpvarLatchData in CBasePlayerPawn should be at offset 0xD08");
+		static_assert(sizeof(CS2::server::CBasePlayerPawn) == 0xD20, "CBasePlayerPawn size should be 0xD20");
 	}
 }

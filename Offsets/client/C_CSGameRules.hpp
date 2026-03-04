@@ -58,12 +58,12 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bIsDroppingItems = 0x8c4; // bool m_bIsDroppingItems; |  0x8c4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsQuestEligible = 0x8c5; // bool m_bIsQuestEligible; |  0x8c5 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsHltvActive = 0x8c6; // bool m_bIsHltvActive; |  0x8c6 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bBombPlanted = 0x8c7; // bool m_bBombPlanted; |  0x8c7 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_arrProhibitedItemIndices = 0x8c8; // uint16_t m_arrProhibitedItemIndices[100]; |  0x8c8 | Schema_FixedArray | Size: 0xc8
 				constexpr std::ptrdiff_t m_arrTournamentActiveCasterAccounts = 0x990; // uint32_t m_arrTournamentActiveCasterAccounts[4]; |  0x990 | Schema_FixedArray | Size: 0x10
 				constexpr std::ptrdiff_t m_numBestOfMaps = 0x9a0; // int32_t m_numBestOfMaps; |  0x9a0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHalloweenMaskListSeed = 0x9a4; // int32_t m_nHalloweenMaskListSeed; |  0x9a4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bBombDropped = 0x9a8; // bool m_bBombDropped; |  0x9a8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bBombPlanted = 0x9a9; // bool m_bBombPlanted; |  0x9a9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_iRoundWinStatus = 0x9ac; // int32_t m_iRoundWinStatus; |  0x9ac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_eRoundWinReason = 0x9b0; // int32_t m_eRoundWinReason; |  0x9b0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_bTCantBuy = 0x9b4; // bool m_bTCantBuy; |  0x9b4 | Schema_Builtin | Size: 0x1

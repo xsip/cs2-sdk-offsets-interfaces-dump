@@ -27,27 +27,27 @@ namespace CS2 {
 	namespace server {
 		class CBombTarget : public CS2::server::CBaseTrigger {
 		public:
-			entity2::CEntityIOOutput m_OnBombExplode; // 0x9a8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBombPlanted; // 0x9d0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBombDefused; // 0x9f8 | Schema_DeclaredClass | Size: 0x28
-			bool m_bIsBombSiteB; // 0xa20 | Schema_Builtin | Size: 0x1
-			bool m_bIsHeistBombTarget; // 0xa21 | Schema_Builtin | Size: 0x1
-			bool m_bBombPlantedHere; // 0xa22 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnBombExplode; // 0x890 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnBombPlanted; // 0x8a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnBombDefused; // 0x8c0 | Schema_DeclaredClass | Size: 0x18
+			bool m_bIsBombSiteB; // 0x8d8 | Schema_Builtin | Size: 0x1
+			bool m_bIsHeistBombTarget; // 0x8d9 | Schema_Builtin | Size: 0x1
+			bool m_bBombPlantedHere; // 0x8da | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5);
-			GlobalTypes::CUtlSymbolLarge m_szMountTarget; // 0xa28 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hInstructorHint; // 0xa30 | Schema_Atomic | Size: 0x4
-			// char  m_hInstructorHint[0x4]; // 0xa30 | Schema_Atomic | Size: 0x4
-			int32_t m_nBombSiteDesignation; // 0xa34 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_szMountTarget; // 0x8e0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hInstructorHint; // 0x8e8 | Schema_Atomic | Size: 0x4
+			// char m_hInstructorHint[0x4]; // 0x8e8 | Schema_Atomic | Size: 0x4
+			int32_t m_nBombSiteDesignation; // 0x8ec | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombExplode) == 0x9A8, "m_OnBombExplode in CBombTarget should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombPlanted) == 0x9D0, "m_OnBombPlanted in CBombTarget should be at offset 0x9D0");
-		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombDefused) == 0x9F8, "m_OnBombDefused in CBombTarget should be at offset 0x9F8");
-		static_assert(offsetof(CS2::server::CBombTarget, m_bIsBombSiteB) == 0xA20, "m_bIsBombSiteB in CBombTarget should be at offset 0xA20");
-		static_assert(offsetof(CS2::server::CBombTarget, m_bIsHeistBombTarget) == 0xA21, "m_bIsHeistBombTarget in CBombTarget should be at offset 0xA21");
-		static_assert(offsetof(CS2::server::CBombTarget, m_bBombPlantedHere) == 0xA22, "m_bBombPlantedHere in CBombTarget should be at offset 0xA22");
-		static_assert(offsetof(CS2::server::CBombTarget, m_szMountTarget) == 0xA28, "m_szMountTarget in CBombTarget should be at offset 0xA28");
-		static_assert(offsetof(CS2::server::CBombTarget, m_hInstructorHint) == 0xA30, "m_hInstructorHint in CBombTarget should be at offset 0xA30");
-		static_assert(offsetof(CS2::server::CBombTarget, m_nBombSiteDesignation) == 0xA34, "m_nBombSiteDesignation in CBombTarget should be at offset 0xA34");
-		static_assert(sizeof(CS2::server::CBombTarget) == 0xA38, "CBombTarget size should be 0xA38");
+		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombExplode) == 0x890, "m_OnBombExplode in CBombTarget should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombPlanted) == 0x8A8, "m_OnBombPlanted in CBombTarget should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombDefused) == 0x8C0, "m_OnBombDefused in CBombTarget should be at offset 0x8C0");
+		static_assert(offsetof(CS2::server::CBombTarget, m_bIsBombSiteB) == 0x8D8, "m_bIsBombSiteB in CBombTarget should be at offset 0x8D8");
+		static_assert(offsetof(CS2::server::CBombTarget, m_bIsHeistBombTarget) == 0x8D9, "m_bIsHeistBombTarget in CBombTarget should be at offset 0x8D9");
+		static_assert(offsetof(CS2::server::CBombTarget, m_bBombPlantedHere) == 0x8DA, "m_bBombPlantedHere in CBombTarget should be at offset 0x8DA");
+		static_assert(offsetof(CS2::server::CBombTarget, m_szMountTarget) == 0x8E0, "m_szMountTarget in CBombTarget should be at offset 0x8E0");
+		static_assert(offsetof(CS2::server::CBombTarget, m_hInstructorHint) == 0x8E8, "m_hInstructorHint in CBombTarget should be at offset 0x8E8");
+		static_assert(offsetof(CS2::server::CBombTarget, m_nBombSiteDesignation) == 0x8EC, "m_nBombSiteDesignation in CBombTarget should be at offset 0x8EC");
+		static_assert(sizeof(CS2::server::CBombTarget) == 0x8F0, "CBombTarget size should be 0x8F0");
 	}
 }

@@ -6,13 +6,13 @@
 #include "server_CSMatchStats_t.hpp"
 
 class server_CCSPlayerController_ActionTrackingServices {
-    char vTable854[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char end_pad_855[0x10];
+    char end_pad_1644[0x10];
     char m_perRoundStats[0x88];
     server_CSMatchStats_t m_matchStats;
     int32_t m_iNumRoundKills;
     int32_t m_iNumRoundKillsHeadshots;
     float32 m_flTotalRoundDamageDealt;
-    char end_pad_3375[0xdc];
+    char end_pad_3500[0x28c];
 };

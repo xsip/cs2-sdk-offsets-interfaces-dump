@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1370
+			// Class size: 0x1300
 			namespace C_FuncMonitor /*: public CS2::client::C_FuncBrush*/ {
-				constexpr std::ptrdiff_t m_targetCamera = 0xeb0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nResolutionEnum = 0xeb8; // int32_t m_nResolutionEnum; |  0xeb8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bRenderShadows = 0xebc; // bool m_bRenderShadows; |  0xebc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseUniqueColorTarget = 0xebd; // bool m_bUseUniqueColorTarget; |  0xebd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_brushModelName = 0xec0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hTargetCamera = 0xec8; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnabled = 0xecc; // bool m_bEnabled; |  0xecc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDraw3DSkybox = 0xecd; // bool m_bDraw3DSkybox; |  0xecd | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_targetCamera = 0xe88; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nResolutionEnum = 0xe90; // int32_t m_nResolutionEnum; |  0xe90 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bRenderShadows = 0xe94; // bool m_bRenderShadows; |  0xe94 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseUniqueColorTarget = 0xe95; // bool m_bUseUniqueColorTarget; |  0xe95 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_brushModelName = 0xe98; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTargetCamera = 0xea0; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnabled = 0xea4; // bool m_bEnabled; |  0xea4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDraw3DSkybox = 0xea5; // bool m_bDraw3DSkybox; |  0xea5 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

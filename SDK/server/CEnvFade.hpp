@@ -22,16 +22,16 @@ namespace CS2 {
 	namespace server {
 		class CEnvFade : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::Color m_fadeColor; // 0x4f0 | Schema_Atomic | Size: 0x4
-			float32 m_Duration; // 0x4f4 | Schema_Builtin | Size: 0x4
-			float32 m_HoldDuration; // 0x4f8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_fadeColor; // 0x4a8 | Schema_Atomic | Size: 0x4
+			float32 m_Duration; // 0x4ac | Schema_Builtin | Size: 0x4
+			float32 m_HoldDuration; // 0x4b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnBeginFade; // 0x500 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnBeginFade; // 0x4b8 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CEnvFade, m_fadeColor) == 0x4F0, "m_fadeColor in CEnvFade should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvFade, m_Duration) == 0x4F4, "m_Duration in CEnvFade should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CEnvFade, m_HoldDuration) == 0x4F8, "m_HoldDuration in CEnvFade should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CEnvFade, m_OnBeginFade) == 0x500, "m_OnBeginFade in CEnvFade should be at offset 0x500");
-		static_assert(sizeof(CS2::server::CEnvFade) == 0x528, "CEnvFade size should be 0x528");
+		static_assert(offsetof(CS2::server::CEnvFade, m_fadeColor) == 0x4A8, "m_fadeColor in CEnvFade should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvFade, m_Duration) == 0x4AC, "m_Duration in CEnvFade should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CEnvFade, m_HoldDuration) == 0x4B0, "m_HoldDuration in CEnvFade should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CEnvFade, m_OnBeginFade) == 0x4B8, "m_OnBeginFade in CEnvFade should be at offset 0x4B8");
+		static_assert(sizeof(CS2::server::CEnvFade) == 0x4D0, "CEnvFade size should be 0x4D0");
 	}
 }

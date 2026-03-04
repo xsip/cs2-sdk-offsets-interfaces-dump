@@ -22,25 +22,25 @@ namespace CS2 {
 		class CSoundOpvarSetEntity : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x18);
-			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x508 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x510 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x518 | Schema_Atomic | Size: 0x8
-			int32_t m_nOpvarType; // 0x520 | Schema_Builtin | Size: 0x4
-			int32_t m_nOpvarIndex; // 0x524 | Schema_Builtin | Size: 0x4
-			float32 m_flOpvarValue; // 0x528 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x4c8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x4d0 | Schema_Atomic | Size: 0x8
+			int32_t m_nOpvarType; // 0x4d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nOpvarIndex; // 0x4dc | Schema_Builtin | Size: 0x4
+			float32 m_flOpvarValue; // 0x4e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_OpvarValueString; // 0x530 | Schema_Atomic | Size: 0x8
-			bool m_bSetOnSpawn; // 0x538 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_OpvarValueString; // 0x4e8 | Schema_Atomic | Size: 0x8
+			bool m_bSetOnSpawn; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszStackName) == 0x508, "m_iszStackName in CSoundOpvarSetEntity should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszOperatorName) == 0x510, "m_iszOperatorName in CSoundOpvarSetEntity should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszOpvarName) == 0x518, "m_iszOpvarName in CSoundOpvarSetEntity should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_nOpvarType) == 0x520, "m_nOpvarType in CSoundOpvarSetEntity should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_nOpvarIndex) == 0x524, "m_nOpvarIndex in CSoundOpvarSetEntity should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_flOpvarValue) == 0x528, "m_flOpvarValue in CSoundOpvarSetEntity should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_OpvarValueString) == 0x530, "m_OpvarValueString in CSoundOpvarSetEntity should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_bSetOnSpawn) == 0x538, "m_bSetOnSpawn in CSoundOpvarSetEntity should be at offset 0x538");
-		static_assert(sizeof(CS2::server::CSoundOpvarSetEntity) == 0x548, "CSoundOpvarSetEntity size should be 0x548");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszStackName) == 0x4C0, "m_iszStackName in CSoundOpvarSetEntity should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszOperatorName) == 0x4C8, "m_iszOperatorName in CSoundOpvarSetEntity should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszOpvarName) == 0x4D0, "m_iszOpvarName in CSoundOpvarSetEntity should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_nOpvarType) == 0x4D8, "m_nOpvarType in CSoundOpvarSetEntity should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_nOpvarIndex) == 0x4DC, "m_nOpvarIndex in CSoundOpvarSetEntity should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_flOpvarValue) == 0x4E0, "m_flOpvarValue in CSoundOpvarSetEntity should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_OpvarValueString) == 0x4E8, "m_OpvarValueString in CSoundOpvarSetEntity should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_bSetOnSpawn) == 0x4F0, "m_bSetOnSpawn in CSoundOpvarSetEntity should be at offset 0x4F0");
+		static_assert(sizeof(CS2::server::CSoundOpvarSetEntity) == 0x500, "CSoundOpvarSetEntity size should be 0x500");
 	}
 }

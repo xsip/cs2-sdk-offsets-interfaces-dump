@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x508
+			// Class size: 0x4C0
 			namespace CTonemapController2Alias_env_tonemap_controller2 /*: public CS2::server::CTonemapController2*/ {
 				// NO SCHEMA DATA FOUND!
 			}

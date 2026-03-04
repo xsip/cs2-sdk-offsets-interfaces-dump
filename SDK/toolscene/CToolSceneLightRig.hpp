@@ -11,6 +11,9 @@
 
 
 #include <SDK/toolscene/LightRigType_t.hpp>
+#include <SDK/toolscene/CLightRigSunLight.hpp>
+#include <SDK/toolscene/CLightRigPointLight.hpp>
+#include <SDK/toolscene/CLightRigSpotLight.hpp>
 #include <SDK/toolscene/CLightRigBackground.hpp>
 #include <SDK/toolscene/CLightRigGrid.hpp>
 #include <SDK/toolscene/CLightRigExposure.hpp>
@@ -20,13 +23,6 @@
 
 
 
-namespace CS2 {
-	namespace toolscene {
-		class CLightRigSunLight;
-		class CLightRigPointLight;
-		class CLightRigSpotLight;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -38,11 +34,11 @@ namespace CS2 {
 			toolscene::LightRigType_t m_nRigType; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<toolscene::CLightRigSunLight> m_Suns; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_Suns[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_Suns[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<toolscene::CLightRigPointLight> m_PointLights; // 0x28 | Schema_Atomic | Size: 0x18
-			// char  m_PointLights[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
+			// char m_PointLights[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<toolscene::CLightRigSpotLight> m_SpotLights; // 0x40 | Schema_Atomic | Size: 0x18
-			// char  m_SpotLights[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
+			// char m_SpotLights[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			toolscene::CLightRigBackground m_Background; // 0x58 | Schema_DeclaredClass | Size: 0x5
 			toolscene::CLightRigGrid m_Grid; // 0x5d | Schema_DeclaredClass | Size: 0x5
 			S2_PAD(0x2);

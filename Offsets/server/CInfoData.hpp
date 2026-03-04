@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x880
+			// Class size: 0x840
 			namespace CInfoData /*: public CS2::server::CServerOnlyEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

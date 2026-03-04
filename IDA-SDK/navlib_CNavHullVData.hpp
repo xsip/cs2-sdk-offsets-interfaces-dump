@@ -5,14 +5,14 @@
 
 class navlib_CNavHullVData {
     bool m_bAgentEnabled;
-    char pad_4171[0x3];
+    char pad_4285[0x3];
     float32 m_agentRadius;
     float32 m_agentHeight;
     bool m_agentShortHeightEnabled;
-    char pad_4172[0x3];
+    char pad_4286[0x3];
     float32 m_agentShortHeight;
     bool m_agentCrawlEnabled;
-    char pad_4173[0x3];
+    char pad_4287[0x3];
     float32 m_agentCrawlHeight;
     float32 m_agentMaxClimb;
     int32_t m_agentMaxSlope;
@@ -21,6 +21,6 @@ class navlib_CNavHullVData {
     float32 m_agentMaxJumpUpDist;
     int32_t m_agentBorderErosion;
     bool m_flowMapGenerationEnabled;
-    char pad_4174[0x3];
+    char pad_4288[0x3];
     float32 m_flowMapNodeMaxRadius;
 };

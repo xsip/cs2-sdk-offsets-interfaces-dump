@@ -11,7 +11,6 @@
 
 
 #include <SDK/server/CLogicalEntity.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
 
 
 
@@ -23,16 +22,17 @@ namespace CS2 {
 		class CLogicEventListener : public CS2::server::CLogicalEntity {
 		public:
 			S2_PAD(0x10);
-			GlobalTypes::CUtlString m_strEventName; // 0x500 | Schema_Atomic | Size: 0x8
-			bool m_bIsEnabled; // 0x508 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_strEventName; // 0x4b8 | Schema_Atomic | Size: 0x8
+			bool m_bIsEnabled; // 0x4c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nTeam; // 0x50c | Schema_Builtin | Size: 0x4
-			entity2::CEntityIOOutput m_OnEventFired; // 0x510 | Schema_DeclaredClass | Size: 0x28
+			int32_t m_nTeam; // 0x4c4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnEventFired; // 0x4c8 | Schema_Atomic | Size: 0x20
+			// char m_OnEventFired[0x20]; // 0x4c8 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CLogicEventListener, m_strEventName) == 0x500, "m_strEventName in CLogicEventListener should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CLogicEventListener, m_bIsEnabled) == 0x508, "m_bIsEnabled in CLogicEventListener should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CLogicEventListener, m_nTeam) == 0x50C, "m_nTeam in CLogicEventListener should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CLogicEventListener, m_OnEventFired) == 0x510, "m_OnEventFired in CLogicEventListener should be at offset 0x510");
-		static_assert(sizeof(CS2::server::CLogicEventListener) == 0x538, "CLogicEventListener size should be 0x538");
+		static_assert(offsetof(CS2::server::CLogicEventListener, m_strEventName) == 0x4B8, "m_strEventName in CLogicEventListener should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CLogicEventListener, m_bIsEnabled) == 0x4C0, "m_bIsEnabled in CLogicEventListener should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CLogicEventListener, m_nTeam) == 0x4C4, "m_nTeam in CLogicEventListener should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CLogicEventListener, m_OnEventFired) == 0x4C8, "m_OnEventFired in CLogicEventListener should be at offset 0x4C8");
+		static_assert(sizeof(CS2::server::CLogicEventListener) == 0x4E8, "CLogicEventListener size should be 0x4E8");
 	}
 }

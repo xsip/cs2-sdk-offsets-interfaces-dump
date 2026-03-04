@@ -8,37 +8,37 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x1638
+			// Class size: 0x15F0
 			namespace CEnvCombinedLightProbeVolume /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_Entity_Color = 0x1568; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_flBrightness = 0x156c; // float32 m_Entity_flBrightness; |  0x156c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_hCubemapTexture = 0x1570; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_bCustomCubemapTexture = 0x1578; // bool m_Entity_bCustomCubemapTexture; |  0x1578 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_AmbientCube = 0x1580; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SDF = 0x1588; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_DC = 0x1590; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_R = 0x1598; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_G = 0x15a0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_B = 0x15a8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeDirectLightIndicesTexture = 0x15b0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeDirectLightScalarsTexture = 0x15b8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_hLightProbeDirectLightShadowsTexture = 0x15c0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_vBoxMins = 0x15c8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Entity_vBoxMaxs = 0x15d4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Entity_bMoveable = 0x15e0; // bool m_Entity_bMoveable; |  0x15e0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_nHandshake = 0x15e4; // int32_t m_Entity_nHandshake; |  0x15e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nEnvCubeMapArrayIndex = 0x15e8; // int32_t m_Entity_nEnvCubeMapArrayIndex; |  0x15e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nPriority = 0x15ec; // int32_t m_Entity_nPriority; |  0x15ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_bStartDisabled = 0x15f0; // bool m_Entity_bStartDisabled; |  0x15f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_flEdgeFadeDist = 0x15f4; // float32 m_Entity_flEdgeFadeDist; |  0x15f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_vEdgeFadeDists = 0x15f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Entity_nLightProbeSizeX = 0x1604; // int32_t m_Entity_nLightProbeSizeX; |  0x1604 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nLightProbeSizeY = 0x1608; // int32_t m_Entity_nLightProbeSizeY; |  0x1608 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nLightProbeSizeZ = 0x160c; // int32_t m_Entity_nLightProbeSizeZ; |  0x160c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nLightProbeAtlasX = 0x1610; // int32_t m_Entity_nLightProbeAtlasX; |  0x1610 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nLightProbeAtlasY = 0x1614; // int32_t m_Entity_nLightProbeAtlasY; |  0x1614 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nLightProbeAtlasZ = 0x1618; // int32_t m_Entity_nLightProbeAtlasZ; |  0x1618 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_bEnabled = 0x1631; // bool m_Entity_bEnabled; |  0x1631 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_Color = 0x1520; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_flBrightness = 0x1524; // float32 m_Entity_flBrightness; |  0x1524 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_hCubemapTexture = 0x1528; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_bCustomCubemapTexture = 0x1530; // bool m_Entity_bCustomCubemapTexture; |  0x1530 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_AmbientCube = 0x1538; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SDF = 0x1540; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_DC = 0x1548; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_R = 0x1550; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_G = 0x1558; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeTexture_SH2_B = 0x1560; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeDirectLightIndicesTexture = 0x1568; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeDirectLightScalarsTexture = 0x1570; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_hLightProbeDirectLightShadowsTexture = 0x1578; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_vBoxMins = 0x1580; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_vBoxMaxs = 0x158c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_bMoveable = 0x1598; // bool m_Entity_bMoveable; |  0x1598 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_nHandshake = 0x159c; // int32_t m_Entity_nHandshake; |  0x159c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nEnvCubeMapArrayIndex = 0x15a0; // int32_t m_Entity_nEnvCubeMapArrayIndex; |  0x15a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nPriority = 0x15a4; // int32_t m_Entity_nPriority; |  0x15a4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_bStartDisabled = 0x15a8; // bool m_Entity_bStartDisabled; |  0x15a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_flEdgeFadeDist = 0x15ac; // float32 m_Entity_flEdgeFadeDist; |  0x15ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_vEdgeFadeDists = 0x15b0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_nLightProbeSizeX = 0x15bc; // int32_t m_Entity_nLightProbeSizeX; |  0x15bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nLightProbeSizeY = 0x15c0; // int32_t m_Entity_nLightProbeSizeY; |  0x15c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nLightProbeSizeZ = 0x15c4; // int32_t m_Entity_nLightProbeSizeZ; |  0x15c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nLightProbeAtlasX = 0x15c8; // int32_t m_Entity_nLightProbeAtlasX; |  0x15c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nLightProbeAtlasY = 0x15cc; // int32_t m_Entity_nLightProbeAtlasY; |  0x15cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nLightProbeAtlasZ = 0x15d0; // int32_t m_Entity_nLightProbeAtlasZ; |  0x15d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_bEnabled = 0x15e9; // bool m_Entity_bEnabled; |  0x15e9 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -21,13 +21,13 @@ namespace CS2 {
 	namespace server {
 		class CTriggerGameEvent : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::CUtlString m_strStartTouchEventName; // 0x9a8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strEndTouchEventName; // 0x9b0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strTriggerID; // 0x9b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strStartTouchEventName; // 0x890 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strEndTouchEventName; // 0x898 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strTriggerID; // 0x8a0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CTriggerGameEvent, m_strStartTouchEventName) == 0x9A8, "m_strStartTouchEventName in CTriggerGameEvent should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerGameEvent, m_strEndTouchEventName) == 0x9B0, "m_strEndTouchEventName in CTriggerGameEvent should be at offset 0x9B0");
-		static_assert(offsetof(CS2::server::CTriggerGameEvent, m_strTriggerID) == 0x9B8, "m_strTriggerID in CTriggerGameEvent should be at offset 0x9B8");
-		static_assert(sizeof(CS2::server::CTriggerGameEvent) == 0x9C0, "CTriggerGameEvent size should be 0x9C0");
+		static_assert(offsetof(CS2::server::CTriggerGameEvent, m_strStartTouchEventName) == 0x890, "m_strStartTouchEventName in CTriggerGameEvent should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerGameEvent, m_strEndTouchEventName) == 0x898, "m_strEndTouchEventName in CTriggerGameEvent should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CTriggerGameEvent, m_strTriggerID) == 0x8A0, "m_strTriggerID in CTriggerGameEvent should be at offset 0x8A0");
+		static_assert(sizeof(CS2::server::CTriggerGameEvent) == 0x8A8, "CTriggerGameEvent size should be 0x8A8");
 	}
 }

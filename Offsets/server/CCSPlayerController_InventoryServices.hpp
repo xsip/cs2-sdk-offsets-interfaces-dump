@@ -19,7 +19,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nPersonaDataXpTrailLevel = 0x6c; // int32_t m_nPersonaDataXpTrailLevel; |  0x6c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_unEquippedPlayerSprayIDs = 0xf48; // uint32_t m_unEquippedPlayerSprayIDs[1]; |  0xf48 | Schema_FixedArray | Size: 0x4
 				constexpr std::ptrdiff_t m_unCurrentLoadoutHash = 0xf50; // uint64_t m_unCurrentLoadoutHash; |  0xf50 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_vecServerAuthoritativeWeaponSlots = 0xf58; // GlobalTypes::CUtlVectorEmbeddedNetworkVar<client::ServerAuthoritativeWeaponSlot_t>  | Schema_Atomic | Size: 0x88
+				constexpr std::ptrdiff_t m_vecServerAuthoritativeWeaponSlots = 0xf58; // server::CUtlVectorEmbeddedNetworkVar<server::ServerAuthoritativeWeaponSlot_t>  | Schema_Atomic | Size: 0x88
 			}
 		}
 	}

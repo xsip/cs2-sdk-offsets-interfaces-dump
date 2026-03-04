@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x530
+			// Class size: 0x4E8
 			namespace CEnvInstructorVRHint /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_iszName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszHintTargetEntity = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iTimeout = 0x500; // int32_t m_iTimeout; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszCaption = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszStartSound = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iLayoutFileType = 0x518; // int32_t m_iLayoutFileType; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszCustomLayoutFile = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iAttachType = 0x528; // int32_t m_iAttachType; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHeightOffset = 0x52c; // float32 m_flHeightOffset; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszName = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszHintTargetEntity = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iTimeout = 0x4b8; // int32_t m_iTimeout; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszCaption = 0x4c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszStartSound = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iLayoutFileType = 0x4d0; // int32_t m_iLayoutFileType; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszCustomLayoutFile = 0x4d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iAttachType = 0x4e0; // int32_t m_iAttachType; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHeightOffset = 0x4e4; // float32 m_flHeightOffset; |  0x4e4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

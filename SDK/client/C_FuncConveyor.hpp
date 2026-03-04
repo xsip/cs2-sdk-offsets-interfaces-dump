@@ -12,6 +12,7 @@
 
 #include <SDK/client/C_BaseModelEntity.hpp>
 #include <SDK/entity2/GameTick_t.hpp>
+#include <SDK/client/C_BaseEntity.hpp>
 
 
 
@@ -23,25 +24,25 @@ namespace CS2 {
 		class C_FuncConveyor : public CS2::client::C_BaseModelEntity {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::Vector m_vecMoveDirEntitySpace; // 0xeb8 | Schema_Atomic | Size: 0xc
-			float32 m_flTargetSpeed; // 0xec4 | Schema_Builtin | Size: 0x4
-			entity2::GameTick_t m_nTransitionStartTick; // 0xec8 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nTransitionDurationTicks; // 0xecc | Schema_Builtin | Size: 0x4
-			float32 m_flTransitionStartSpeed; // 0xed0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecMoveDirEntitySpace; // 0xe90 | Schema_Atomic | Size: 0xc
+			float32 m_flTargetSpeed; // 0xe9c | Schema_Builtin | Size: 0x4
+			entity2::GameTick_t m_nTransitionStartTick; // 0xea0 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nTransitionDurationTicks; // 0xea4 | Schema_Builtin | Size: 0x4
+			float32 m_flTransitionStartSpeed; // 0xea8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseEntity>> m_hConveyorModels; // 0xed8 | Schema_Atomic | Size: 0x18
-			char  m_hConveyorModels[0x18]; // 0xed8 | Schema_Atomic | Size: 0x18
-			float32 m_flCurrentConveyorOffset; // 0xef0 | Schema_Builtin | Size: 0x4
-			float32 m_flCurrentConveyorSpeed; // 0xef4 | Schema_Builtin | Size: 0x4
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseEntity>> m_hConveyorModels; // 0xeb0 | Schema_Atomic | Size: 0x18
+			char m_hConveyorModels[0x18]; // 0xeb0 | Schema_Atomic | Size: 0x18
+			float32 m_flCurrentConveyorOffset; // 0xec8 | Schema_Builtin | Size: 0x4
+			float32 m_flCurrentConveyorSpeed; // 0xecc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_vecMoveDirEntitySpace) == 0xEB8, "m_vecMoveDirEntitySpace in C_FuncConveyor should be at offset 0xEB8");
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flTargetSpeed) == 0xEC4, "m_flTargetSpeed in C_FuncConveyor should be at offset 0xEC4");
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_nTransitionStartTick) == 0xEC8, "m_nTransitionStartTick in C_FuncConveyor should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_nTransitionDurationTicks) == 0xECC, "m_nTransitionDurationTicks in C_FuncConveyor should be at offset 0xECC");
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flTransitionStartSpeed) == 0xED0, "m_flTransitionStartSpeed in C_FuncConveyor should be at offset 0xED0");
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_hConveyorModels) == 0xED8, "m_hConveyorModels in C_FuncConveyor should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flCurrentConveyorOffset) == 0xEF0, "m_flCurrentConveyorOffset in C_FuncConveyor should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flCurrentConveyorSpeed) == 0xEF4, "m_flCurrentConveyorSpeed in C_FuncConveyor should be at offset 0xEF4");
-		static_assert(sizeof(CS2::client::C_FuncConveyor) == 0xEF8, "C_FuncConveyor size should be 0xEF8");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_vecMoveDirEntitySpace) == 0xE90, "m_vecMoveDirEntitySpace in C_FuncConveyor should be at offset 0xE90");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flTargetSpeed) == 0xE9C, "m_flTargetSpeed in C_FuncConveyor should be at offset 0xE9C");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_nTransitionStartTick) == 0xEA0, "m_nTransitionStartTick in C_FuncConveyor should be at offset 0xEA0");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_nTransitionDurationTicks) == 0xEA4, "m_nTransitionDurationTicks in C_FuncConveyor should be at offset 0xEA4");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flTransitionStartSpeed) == 0xEA8, "m_flTransitionStartSpeed in C_FuncConveyor should be at offset 0xEA8");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_hConveyorModels) == 0xEB0, "m_hConveyorModels in C_FuncConveyor should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flCurrentConveyorOffset) == 0xEC8, "m_flCurrentConveyorOffset in C_FuncConveyor should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flCurrentConveyorSpeed) == 0xECC, "m_flCurrentConveyorSpeed in C_FuncConveyor should be at offset 0xECC");
+		static_assert(sizeof(CS2::client::C_FuncConveyor) == 0xED0, "C_FuncConveyor size should be 0xED0");
 	}
 }

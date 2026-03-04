@@ -4,9 +4,9 @@
 
 
 class server_EntitySpottedState_t {
-    char vTable4129[0x8];
+    void **__vftable_0;
     bool m_bSpotted;
-    char pad_4130[0x3];
+    char pad_4260[0x3];
     uint32_t m_bSpottedByMask[2];
-    char end_pad_4131[0x4];
+    char end_pad_4261[0x4];
 };

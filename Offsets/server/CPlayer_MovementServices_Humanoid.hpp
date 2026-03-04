@@ -8,21 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x280
+			// Class size: 0x278
 			namespace CPlayer_MovementServices_Humanoid /*: public CS2::server::CPlayer_MovementServices*/ {
-				constexpr std::ptrdiff_t m_flStepSoundTime = 0x238; // float32 m_flStepSoundTime; |  0x238 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFallVelocity = 0x23c; // float32 m_flFallVelocity; |  0x23c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bInCrouch = 0x240; // bool m_bInCrouch; |  0x240 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nCrouchState = 0x244; // uint32_t m_nCrouchState; |  0x244 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCrouchTransitionStartTime = 0x248; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bDucked = 0x24c; // bool m_bDucked; |  0x24c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDucking = 0x24d; // bool m_bDucking; |  0x24d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bInDuckJump = 0x24e; // bool m_bInDuckJump; |  0x24e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_groundNormal = 0x250; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flSurfaceFriction = 0x25c; // float32 m_flSurfaceFriction; |  0x25c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_surfaceProps = 0x260; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nStepside = 0x270; // int32_t m_nStepside; |  0x270 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecSmoothedVelocity = 0x274; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flStepSoundTime = 0x240; // float32 m_flStepSoundTime; |  0x240 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFallVelocity = 0x244; // float32 m_flFallVelocity; |  0x244 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_groundNormal = 0x248; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flSurfaceFriction = 0x254; // float32 m_flSurfaceFriction; |  0x254 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_surfaceProps = 0x258; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nStepside = 0x268; // int32_t m_nStepside; |  0x268 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecSmoothedVelocity = 0x26c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

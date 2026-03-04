@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA50
+			// Class size: 0x730
 			namespace CSceneEntityAlias_logic_choreographed_scene /*: public CS2::server::CSceneEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

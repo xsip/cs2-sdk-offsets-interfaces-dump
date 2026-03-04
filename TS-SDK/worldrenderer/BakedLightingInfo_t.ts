@@ -13,5 +13,5 @@ export const worldrenderer_BakedLightingInfo_t  = {
 	m_nChartPackIterations: 20n, // uint8_t m_nChartPackIterations; |  0x14 | Schema_Builtin | Size: 0x1
 	m_nVradQuality: 21n, // uint8_t m_nVradQuality; |  0x15 | Schema_Builtin | Size: 0x1
 	m_lightMaps: 24n, // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>>  | Schema_Atomic | Size: 0x18
-	m_bakedShadows: 48n, // GlobalTypes::CUtlVector<worldrenderer::BakedLightingInfo_t::BakedShadowAssignment_t>  | Schema_Atomic | Size: 0x18
+	m_bakedShadows: 48n, // GlobalTypes::CUtlVector<worldrenderer::BakedShadowAssignment_t>  | Schema_Atomic | Size: 0x18
 }

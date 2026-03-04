@@ -22,19 +22,19 @@ namespace CS2 {
 	namespace server {
 		class CMultiSource : public CS2::server::CLogicalEntity {
 		public:
-			// server::CHandle< CBaseEntity > m_rgEntities[32]; // 0x4f0 | Schema_FixedArray | Size: 0x80
-			char  m_rgEntities[0x4]; // 0x4f0 | Schema_FixedArray | Size: 0x4
-			int32_t m_rgTriggered[32]; // 0x570 | Schema_FixedArray | Size: 0x80
-			entity2::CEntityIOOutput m_OnTrigger; // 0x5f0 | Schema_DeclaredClass | Size: 0x28
-			int32_t m_iTotal; // 0x618 | Schema_Builtin | Size: 0x4
+			// server::CHandle< CBaseEntity > m_rgEntities[32]; // 0x4a8 | Schema_FixedArray | Size: 0x80
+			char m_rgEntities[0x4]; // 0x4a8 | Schema_FixedArray | Size: 0x4
+			int32_t m_rgTriggered[32]; // 0x528 | Schema_FixedArray | Size: 0x80
+			entity2::CEntityIOOutput m_OnTrigger; // 0x5a8 | Schema_DeclaredClass | Size: 0x18
+			int32_t m_iTotal; // 0x5c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x620 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x5c8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CMultiSource, m_rgEntities) == 0x4F0, "m_rgEntities in CMultiSource should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CMultiSource, m_rgTriggered) == 0x570, "m_rgTriggered in CMultiSource should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CMultiSource, m_OnTrigger) == 0x5F0, "m_OnTrigger in CMultiSource should be at offset 0x5F0");
-		static_assert(offsetof(CS2::server::CMultiSource, m_iTotal) == 0x618, "m_iTotal in CMultiSource should be at offset 0x618");
-		static_assert(offsetof(CS2::server::CMultiSource, m_globalstate) == 0x620, "m_globalstate in CMultiSource should be at offset 0x620");
-		static_assert(sizeof(CS2::server::CMultiSource) == 0x628, "CMultiSource size should be 0x628");
+		static_assert(offsetof(CS2::server::CMultiSource, m_rgEntities) == 0x4A8, "m_rgEntities in CMultiSource should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CMultiSource, m_rgTriggered) == 0x528, "m_rgTriggered in CMultiSource should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CMultiSource, m_OnTrigger) == 0x5A8, "m_OnTrigger in CMultiSource should be at offset 0x5A8");
+		static_assert(offsetof(CS2::server::CMultiSource, m_iTotal) == 0x5C0, "m_iTotal in CMultiSource should be at offset 0x5C0");
+		static_assert(offsetof(CS2::server::CMultiSource, m_globalstate) == 0x5C8, "m_globalstate in CMultiSource should be at offset 0x5C8");
+		static_assert(sizeof(CS2::server::CMultiSource) == 0x5D0, "CMultiSource size should be 0x5D0");
 	}
 }

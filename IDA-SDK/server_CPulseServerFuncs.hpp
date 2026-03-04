@@ -4,5 +4,5 @@
 
 
 class server_CPulseServerFuncs {
-    char pad_3972[0x1];
+    char pad_4103[0x1];
 };

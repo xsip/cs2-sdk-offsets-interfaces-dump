@@ -22,17 +22,17 @@ namespace CS2 {
 	namespace server {
 		class CGamePlayerZone : public CS2::server::CRuleBrushEntity {
 		public:
-			entity2::CEntityIOOutput m_OnPlayerInZone; // 0x7e0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPlayerOutZone; // 0x808 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersInCount; // 0x830 | Schema_Atomic | Size: 0x28
-			char  m_PlayersInCount[0x28]; // 0x830 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< int32 > m_PlayersOutCount; // 0x858 | Schema_Atomic | Size: 0x28
-			char  m_PlayersOutCount[0x28]; // 0x858 | Schema_Atomic | Size: 0x28
+			entity2::CEntityIOOutput m_OnPlayerInZone; // 0x738 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnPlayerOutZone; // 0x750 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< int32, int32 > m_PlayersInCount; // 0x768 | Schema_Atomic | Size: 0x20
+			char m_PlayersInCount[0x20]; // 0x768 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< int32, int32 > m_PlayersOutCount; // 0x788 | Schema_Atomic | Size: 0x20
+			char m_PlayersOutCount[0x20]; // 0x788 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CGamePlayerZone, m_OnPlayerInZone) == 0x7E0, "m_OnPlayerInZone in CGamePlayerZone should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CGamePlayerZone, m_OnPlayerOutZone) == 0x808, "m_OnPlayerOutZone in CGamePlayerZone should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CGamePlayerZone, m_PlayersInCount) == 0x830, "m_PlayersInCount in CGamePlayerZone should be at offset 0x830");
-		static_assert(offsetof(CS2::server::CGamePlayerZone, m_PlayersOutCount) == 0x858, "m_PlayersOutCount in CGamePlayerZone should be at offset 0x858");
-		static_assert(sizeof(CS2::server::CGamePlayerZone) == 0x880, "CGamePlayerZone size should be 0x880");
+		static_assert(offsetof(CS2::server::CGamePlayerZone, m_OnPlayerInZone) == 0x738, "m_OnPlayerInZone in CGamePlayerZone should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CGamePlayerZone, m_OnPlayerOutZone) == 0x750, "m_OnPlayerOutZone in CGamePlayerZone should be at offset 0x750");
+		static_assert(offsetof(CS2::server::CGamePlayerZone, m_PlayersInCount) == 0x768, "m_PlayersInCount in CGamePlayerZone should be at offset 0x768");
+		static_assert(offsetof(CS2::server::CGamePlayerZone, m_PlayersOutCount) == 0x788, "m_PlayersOutCount in CGamePlayerZone should be at offset 0x788");
+		static_assert(sizeof(CS2::server::CGamePlayerZone) == 0x7A8, "CGamePlayerZone size should be 0x7A8");
 	}
 }

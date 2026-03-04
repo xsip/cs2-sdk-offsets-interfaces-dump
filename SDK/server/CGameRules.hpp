@@ -25,17 +25,21 @@ namespace CS2 {
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x8 | Schema_DeclaredClass | Size: 0x28
 			char m_szQuestName[128]; // 0x30 | Schema_FixedArray | Size: 0x80
 			int32_t m_nQuestPhase; // 0xb0 | Schema_Builtin | Size: 0x4
-			int32_t m_nTotalPausedTicks; // 0xb4 | Schema_Builtin | Size: 0x4
-			int32_t m_nPauseStartTick; // 0xb8 | Schema_Builtin | Size: 0x4
-			bool m_bGamePaused; // 0xbc | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3); // End padding
+			uint32_t m_nLastMatchTime; // 0xb4 | Schema_Builtin | Size: 0x4
+			uint64_t m_nLastMatchTime_MatchID64; // 0xb8 | Schema_Builtin | Size: 0x8
+			int32_t m_nTotalPausedTicks; // 0xc0 | Schema_Builtin | Size: 0x4
+			int32_t m_nPauseStartTick; // 0xc4 | Schema_Builtin | Size: 0x4
+			bool m_bGamePaused; // 0xc8 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x7); // End padding
 		};
 		static_assert(offsetof(CS2::server::CGameRules, __m_pChainEntity) == 0x8, "__m_pChainEntity in CGameRules should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CGameRules, m_szQuestName) == 0x30, "m_szQuestName in CGameRules should be at offset 0x30");
 		static_assert(offsetof(CS2::server::CGameRules, m_nQuestPhase) == 0xB0, "m_nQuestPhase in CGameRules should be at offset 0xB0");
-		static_assert(offsetof(CS2::server::CGameRules, m_nTotalPausedTicks) == 0xB4, "m_nTotalPausedTicks in CGameRules should be at offset 0xB4");
-		static_assert(offsetof(CS2::server::CGameRules, m_nPauseStartTick) == 0xB8, "m_nPauseStartTick in CGameRules should be at offset 0xB8");
-		static_assert(offsetof(CS2::server::CGameRules, m_bGamePaused) == 0xBC, "m_bGamePaused in CGameRules should be at offset 0xBC");
-		static_assert(sizeof(CS2::server::CGameRules) == 0xC0, "CGameRules size should be 0xC0");
+		static_assert(offsetof(CS2::server::CGameRules, m_nLastMatchTime) == 0xB4, "m_nLastMatchTime in CGameRules should be at offset 0xB4");
+		static_assert(offsetof(CS2::server::CGameRules, m_nLastMatchTime_MatchID64) == 0xB8, "m_nLastMatchTime_MatchID64 in CGameRules should be at offset 0xB8");
+		static_assert(offsetof(CS2::server::CGameRules, m_nTotalPausedTicks) == 0xC0, "m_nTotalPausedTicks in CGameRules should be at offset 0xC0");
+		static_assert(offsetof(CS2::server::CGameRules, m_nPauseStartTick) == 0xC4, "m_nPauseStartTick in CGameRules should be at offset 0xC4");
+		static_assert(offsetof(CS2::server::CGameRules, m_bGamePaused) == 0xC8, "m_bGamePaused in CGameRules should be at offset 0xC8");
+		static_assert(sizeof(CS2::server::CGameRules) == 0xD0, "CGameRules size should be 0xD0");
 	}
 }

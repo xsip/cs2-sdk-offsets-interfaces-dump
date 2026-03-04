@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x630
+			// Class size: 0x640
 			namespace C_EnvWindVolume /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_bActive = 0x5f8; // bool m_bActive; |  0x5f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vBoxMins = 0x5fc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vBoxMaxs = 0x608; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bStartDisabled = 0x614; // bool m_bStartDisabled; |  0x614 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nShape = 0x618; // int32_t m_nShape; |  0x618 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fWindSpeedMultiplier = 0x61c; // float32 m_fWindSpeedMultiplier; |  0x61c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fWindTurbulenceMultiplier = 0x620; // float32 m_fWindTurbulenceMultiplier; |  0x620 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fWindSpeedVariationMultiplier = 0x624; // float32 m_fWindSpeedVariationMultiplier; |  0x624 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fWindDirectionVariationMultiplier = 0x628; // float32 m_fWindDirectionVariationMultiplier; |  0x628 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bActive = 0x608; // bool m_bActive; |  0x608 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vBoxMins = 0x60c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMaxs = 0x618; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bStartDisabled = 0x624; // bool m_bStartDisabled; |  0x624 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nShape = 0x628; // int32_t m_nShape; |  0x628 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fWindSpeedMultiplier = 0x62c; // float32 m_fWindSpeedMultiplier; |  0x62c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fWindTurbulenceMultiplier = 0x630; // float32 m_fWindTurbulenceMultiplier; |  0x630 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fWindSpeedVariationMultiplier = 0x634; // float32 m_fWindSpeedVariationMultiplier; |  0x634 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fWindDirectionVariationMultiplier = 0x638; // float32 m_fWindDirectionVariationMultiplier; |  0x638 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

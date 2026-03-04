@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x560
+			// Class size: 0x518
 			namespace CPhysTorque /*: public CS2::server::CPhysForce*/ {
-				constexpr std::ptrdiff_t m_axis = 0x550; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_axis = 0x508; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

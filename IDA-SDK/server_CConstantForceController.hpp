@@ -4,10 +4,11 @@
 
 
 class server_CConstantForceController {
-    char vTable3839[0xc];
+    void **__vftable_0;
+    char __vftable_pad[4];
     Vector m_linear;
     RotationVector m_angular;
     Vector m_linearSave;
     RotationVector m_angularSave;
-    char pad_3840[0x4];
+    char pad_3973[0x4];
 };

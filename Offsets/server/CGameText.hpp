@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x808
+			// Class size: 0x760
 			namespace CGameText /*: public CS2::server::CRulePointEntity*/ {
-				constexpr std::ptrdiff_t m_iszMessage = 0x7e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_textParms = 0x7f0; // client::hudtextparms_t  | Schema_DeclaredClass | Size: 0x14
+				constexpr std::ptrdiff_t m_iszMessage = 0x740; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_textParms = 0x748; // client::hudtextparms_t  | Schema_DeclaredClass | Size: 0x14
 			}
 		}
 	}

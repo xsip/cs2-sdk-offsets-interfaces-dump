@@ -23,6 +23,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x18);
 		};
-		static_assert(sizeof(CS2::server::CGamePlayerEquip) == 0x800, "CGamePlayerEquip size should be 0x800");
+		static_assert(sizeof(CS2::server::CGamePlayerEquip) == 0x758, "CGamePlayerEquip size should be 0x758");
 	}
 }

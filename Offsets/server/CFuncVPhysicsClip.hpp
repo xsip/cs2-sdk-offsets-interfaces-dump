@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7E0
+			// Class size: 0x738
 			namespace CFuncVPhysicsClip /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_bDisabled = 0x7d8; // bool m_bDisabled; |  0x7d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDisabled = 0x730; // bool m_bDisabled; |  0x730 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

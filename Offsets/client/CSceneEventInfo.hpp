@@ -8,21 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x50
+			// Class size: 0x68
 			namespace CSceneEventInfo /**/ {
 				constexpr std::ptrdiff_t m_iLayer = 0x0; // int32_t m_iLayer; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iPriority = 0x4; // int32_t m_iPriority; |  0x4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_hSequence = 0x8; // animationsystem::HSequence  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flWeight = 0xc; // float32 m_flWeight; |  0xc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bHasArrived = 0x10; // bool m_bHasArrived; |  0x10 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nType = 0x14; // int32_t m_nType; |  0x14 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNext = 0x18; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsGesture = 0x1c; // bool m_bIsGesture; |  0x1c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bShouldRemove = 0x1d; // bool m_bShouldRemove; |  0x1d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hTarget = 0x44; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nSceneEventId = 0x48; // client::SceneEventId_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bClientSide = 0x4c; // bool m_bClientSide; |  0x4c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bStarted = 0x4d; // bool m_bStarted; |  0x4d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hAnimClip = 0x10; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmClip>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sAnimClipSlot = 0x18; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sAnimClipSlotWeight = 0x20; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bHasArrived = 0x28; // bool m_bHasArrived; |  0x28 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nType = 0x2c; // int32_t m_nType; |  0x2c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNext = 0x30; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsGesture = 0x34; // bool m_bIsGesture; |  0x34 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bShouldRemove = 0x35; // bool m_bShouldRemove; |  0x35 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hTarget = 0x5c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nSceneEventId = 0x60; // client::SceneEventId_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bClientSide = 0x64; // bool m_bClientSide; |  0x64 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bStarted = 0x65; // bool m_bStarted; |  0x65 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x700
+			// Class size: 0x710
 			namespace CPathSimple /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_CPathQueryComponent = 0x600; // client::CPathQueryComponent  | Schema_DeclaredClass | Size: 0xa0
-				constexpr std::ptrdiff_t m_pathString = 0x6f0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bClosedLoop = 0x6f8; // bool m_bClosedLoop; |  0x6f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_CPathQueryComponent = 0x610; // client::CPathQueryComponent  | Schema_DeclaredClass | Size: 0xa0
+				constexpr std::ptrdiff_t m_pathString = 0x700; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bClosedLoop = 0x708; // bool m_bClosedLoop; |  0x708 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

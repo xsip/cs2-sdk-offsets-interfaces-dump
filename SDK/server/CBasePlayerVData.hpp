@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/CEntitySubclassVDataBase.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCModel.hpp>
 #include <SDK/client/CSkillFloat.hpp>
 
 
@@ -23,7 +24,7 @@ namespace CS2 {
 		class CBasePlayerVData : public CS2::client::CEntitySubclassVDataBase {
 		public:
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_sModelName; // 0x28 | Schema_Atomic | Size: 0xe0
-			char  m_sModelName[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
+			char m_sModelName[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
 			client::CSkillFloat m_flHeadDamageMultiplier; // 0x108 | Schema_DeclaredClass | Size: 0x10
 			client::CSkillFloat m_flChestDamageMultiplier; // 0x118 | Schema_DeclaredClass | Size: 0x10
 			client::CSkillFloat m_flStomachDamageMultiplier; // 0x128 | Schema_DeclaredClass | Size: 0x10

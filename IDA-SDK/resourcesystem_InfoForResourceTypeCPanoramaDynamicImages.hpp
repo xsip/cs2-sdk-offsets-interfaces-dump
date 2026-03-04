@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCPanoramaDynamicImages {
-    char pad_2394[0x1];
+    char pad_1290[0x1];
 };

@@ -8,5 +8,5 @@ class modellib_CModelConfig {
     char m_Elements[0x18];
     bool m_bTopLevel;
     bool m_bActiveInEditorByDefault;
-    char end_pad_340[0x6];
+    char end_pad_342[0x6];
 };

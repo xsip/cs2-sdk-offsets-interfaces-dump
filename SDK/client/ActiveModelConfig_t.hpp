@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/ModelConfigHandle_t.hpp>
+#include <SDK/client/C_BaseModelEntity.hpp>
 
 
 
@@ -26,9 +27,9 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_Name; // 0x38 | Schema_Atomic | Size: 0x8
 			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>> m_AssociatedEntities; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_AssociatedEntities[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
+			char m_AssociatedEntities[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_AssociatedEntityNames; // 0x58 | Schema_Atomic | Size: 0x18
-			char  m_AssociatedEntityNames[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
+			char m_AssociatedEntityNames[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::ActiveModelConfig_t, m_Handle) == 0x30, "m_Handle in ActiveModelConfig_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::ActiveModelConfig_t, m_Name) == 0x38, "m_Name in ActiveModelConfig_t should be at offset 0x38");

@@ -32,74 +32,74 @@ namespace CS2 {
 		class CChicken : public CS2::server::CDynamicProp {
 		public:
 			S2_PAD(0x20);
-			server::CAttributeContainer m_AttributeManager; // 0xd70 | Schema_DeclaredClass | Size: 0x2f8
-			server::CountdownTimer m_updateTimer; // 0x1068 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::Vector m_stuckAnchor; // 0x1080 | Schema_Atomic | Size: 0xc
+			server::CAttributeContainer m_AttributeManager; // 0xc70 | Schema_DeclaredClass | Size: 0x2f8
+			server::CountdownTimer m_updateTimer; // 0xf68 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::Vector m_stuckAnchor; // 0xf80 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			server::CountdownTimer m_stuckTimer; // 0x1090 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_collisionStuckTimer; // 0x10a8 | Schema_DeclaredClass | Size: 0x18
-			bool m_isOnGround; // 0x10c0 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_stuckTimer; // 0xf90 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_collisionStuckTimer; // 0xfa8 | Schema_DeclaredClass | Size: 0x18
+			bool m_isOnGround; // 0xfc0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vFallVelocity; // 0x10c4 | Schema_Atomic | Size: 0xc
-			server::ChickenActivity m_desiredActivity; // 0x10d0 | Schema_DeclaredEnum | Size: 0x4
-			server::ChickenActivity m_currentActivity; // 0x10d4 | Schema_DeclaredEnum | Size: 0x4
-			server::CountdownTimer m_activityTimer; // 0x10d8 | Schema_DeclaredClass | Size: 0x18
-			float32 m_turnRate; // 0x10f0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_fleeFrom; // 0x10f4 | Schema_Atomic | Size: 0x4
-			// char  m_fleeFrom[0x4]; // 0x10f4 | Schema_Atomic | Size: 0x4
-			server::CountdownTimer m_moveRateThrottleTimer; // 0x10f8 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_startleTimer; // 0x1110 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_vocalizeTimer; // 0x1128 | Schema_DeclaredClass | Size: 0x18
-			entity2::GameTime_t m_flWhenZombified; // 0x1140 | Schema_DeclaredClass | Size: 0x4
-			bool m_jumpedThisFrame; // 0x1144 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vFallVelocity; // 0xfc4 | Schema_Atomic | Size: 0xc
+			server::ChickenActivity m_desiredActivity; // 0xfd0 | Schema_DeclaredEnum | Size: 0x4
+			server::ChickenActivity m_currentActivity; // 0xfd4 | Schema_DeclaredEnum | Size: 0x4
+			server::CountdownTimer m_activityTimer; // 0xfd8 | Schema_DeclaredClass | Size: 0x18
+			float32 m_turnRate; // 0xff0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_fleeFrom; // 0xff4 | Schema_Atomic | Size: 0x4
+			// char m_fleeFrom[0x4]; // 0xff4 | Schema_Atomic | Size: 0x4
+			server::CountdownTimer m_moveRateThrottleTimer; // 0xff8 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_startleTimer; // 0x1010 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_vocalizeTimer; // 0x1028 | Schema_DeclaredClass | Size: 0x18
+			entity2::GameTime_t m_flWhenZombified; // 0x1040 | Schema_DeclaredClass | Size: 0x4
+			bool m_jumpedThisFrame; // 0x1044 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_leader; // 0x1148 | Schema_Atomic | Size: 0x4
-			// char  m_leader[0x4]; // 0x1148 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_leader; // 0x1048 | Schema_Atomic | Size: 0x4
+			// char m_leader[0x4]; // 0x1048 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
-			server::CountdownTimer m_reuseTimer; // 0x1160 | Schema_DeclaredClass | Size: 0x18
-			bool m_hasBeenUsed; // 0x1178 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_reuseTimer; // 0x1060 | Schema_DeclaredClass | Size: 0x18
+			bool m_hasBeenUsed; // 0x1078 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			server::CountdownTimer m_jumpTimer; // 0x1180 | Schema_DeclaredClass | Size: 0x18
-			float32 m_flLastJumpTime; // 0x1198 | Schema_Builtin | Size: 0x4
-			bool m_bInJump; // 0x119c | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_jumpTimer; // 0x1080 | Schema_DeclaredClass | Size: 0x18
+			float32 m_flLastJumpTime; // 0x1098 | Schema_Builtin | Size: 0x4
+			bool m_bInJump; // 0x109c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x200b);
-			server::CountdownTimer m_repathTimer; // 0x31a8 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_repathTimer; // 0x30a8 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x80);
-			GlobalTypes::Vector m_vecPathGoal; // 0x3240 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flActiveFollowStartTime; // 0x324c | Schema_DeclaredClass | Size: 0x4
-			server::CountdownTimer m_followMinuteTimer; // 0x3250 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::Vector m_vecPathGoal; // 0x3140 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flActiveFollowStartTime; // 0x314c | Schema_DeclaredClass | Size: 0x4
+			server::CountdownTimer m_followMinuteTimer; // 0x3150 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8);
-			server::CountdownTimer m_BlockDirectionTimer; // 0x3270 | Schema_DeclaredClass | Size: 0x18
-			S2_PAD(0x18); // End padding
+			server::CountdownTimer m_BlockDirectionTimer; // 0x3170 | Schema_DeclaredClass | Size: 0x18
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CChicken, m_AttributeManager) == 0xD70, "m_AttributeManager in CChicken should be at offset 0xD70");
-		static_assert(offsetof(CS2::server::CChicken, m_updateTimer) == 0x1068, "m_updateTimer in CChicken should be at offset 0x1068");
-		static_assert(offsetof(CS2::server::CChicken, m_stuckAnchor) == 0x1080, "m_stuckAnchor in CChicken should be at offset 0x1080");
-		static_assert(offsetof(CS2::server::CChicken, m_stuckTimer) == 0x1090, "m_stuckTimer in CChicken should be at offset 0x1090");
-		static_assert(offsetof(CS2::server::CChicken, m_collisionStuckTimer) == 0x10A8, "m_collisionStuckTimer in CChicken should be at offset 0x10A8");
-		static_assert(offsetof(CS2::server::CChicken, m_isOnGround) == 0x10C0, "m_isOnGround in CChicken should be at offset 0x10C0");
-		static_assert(offsetof(CS2::server::CChicken, m_vFallVelocity) == 0x10C4, "m_vFallVelocity in CChicken should be at offset 0x10C4");
-		static_assert(offsetof(CS2::server::CChicken, m_desiredActivity) == 0x10D0, "m_desiredActivity in CChicken should be at offset 0x10D0");
-		static_assert(offsetof(CS2::server::CChicken, m_currentActivity) == 0x10D4, "m_currentActivity in CChicken should be at offset 0x10D4");
-		static_assert(offsetof(CS2::server::CChicken, m_activityTimer) == 0x10D8, "m_activityTimer in CChicken should be at offset 0x10D8");
-		static_assert(offsetof(CS2::server::CChicken, m_turnRate) == 0x10F0, "m_turnRate in CChicken should be at offset 0x10F0");
-		static_assert(offsetof(CS2::server::CChicken, m_fleeFrom) == 0x10F4, "m_fleeFrom in CChicken should be at offset 0x10F4");
-		static_assert(offsetof(CS2::server::CChicken, m_moveRateThrottleTimer) == 0x10F8, "m_moveRateThrottleTimer in CChicken should be at offset 0x10F8");
-		static_assert(offsetof(CS2::server::CChicken, m_startleTimer) == 0x1110, "m_startleTimer in CChicken should be at offset 0x1110");
-		static_assert(offsetof(CS2::server::CChicken, m_vocalizeTimer) == 0x1128, "m_vocalizeTimer in CChicken should be at offset 0x1128");
-		static_assert(offsetof(CS2::server::CChicken, m_flWhenZombified) == 0x1140, "m_flWhenZombified in CChicken should be at offset 0x1140");
-		static_assert(offsetof(CS2::server::CChicken, m_jumpedThisFrame) == 0x1144, "m_jumpedThisFrame in CChicken should be at offset 0x1144");
-		static_assert(offsetof(CS2::server::CChicken, m_leader) == 0x1148, "m_leader in CChicken should be at offset 0x1148");
-		static_assert(offsetof(CS2::server::CChicken, m_reuseTimer) == 0x1160, "m_reuseTimer in CChicken should be at offset 0x1160");
-		static_assert(offsetof(CS2::server::CChicken, m_hasBeenUsed) == 0x1178, "m_hasBeenUsed in CChicken should be at offset 0x1178");
-		static_assert(offsetof(CS2::server::CChicken, m_jumpTimer) == 0x1180, "m_jumpTimer in CChicken should be at offset 0x1180");
-		static_assert(offsetof(CS2::server::CChicken, m_flLastJumpTime) == 0x1198, "m_flLastJumpTime in CChicken should be at offset 0x1198");
-		static_assert(offsetof(CS2::server::CChicken, m_bInJump) == 0x119C, "m_bInJump in CChicken should be at offset 0x119C");
-		static_assert(offsetof(CS2::server::CChicken, m_repathTimer) == 0x31A8, "m_repathTimer in CChicken should be at offset 0x31A8");
-		static_assert(offsetof(CS2::server::CChicken, m_vecPathGoal) == 0x3240, "m_vecPathGoal in CChicken should be at offset 0x3240");
-		static_assert(offsetof(CS2::server::CChicken, m_flActiveFollowStartTime) == 0x324C, "m_flActiveFollowStartTime in CChicken should be at offset 0x324C");
-		static_assert(offsetof(CS2::server::CChicken, m_followMinuteTimer) == 0x3250, "m_followMinuteTimer in CChicken should be at offset 0x3250");
-		static_assert(offsetof(CS2::server::CChicken, m_BlockDirectionTimer) == 0x3270, "m_BlockDirectionTimer in CChicken should be at offset 0x3270");
-		static_assert(sizeof(CS2::server::CChicken) == 0x32A0, "CChicken size should be 0x32A0");
+		static_assert(offsetof(CS2::server::CChicken, m_AttributeManager) == 0xC70, "m_AttributeManager in CChicken should be at offset 0xC70");
+		static_assert(offsetof(CS2::server::CChicken, m_updateTimer) == 0xF68, "m_updateTimer in CChicken should be at offset 0xF68");
+		static_assert(offsetof(CS2::server::CChicken, m_stuckAnchor) == 0xF80, "m_stuckAnchor in CChicken should be at offset 0xF80");
+		static_assert(offsetof(CS2::server::CChicken, m_stuckTimer) == 0xF90, "m_stuckTimer in CChicken should be at offset 0xF90");
+		static_assert(offsetof(CS2::server::CChicken, m_collisionStuckTimer) == 0xFA8, "m_collisionStuckTimer in CChicken should be at offset 0xFA8");
+		static_assert(offsetof(CS2::server::CChicken, m_isOnGround) == 0xFC0, "m_isOnGround in CChicken should be at offset 0xFC0");
+		static_assert(offsetof(CS2::server::CChicken, m_vFallVelocity) == 0xFC4, "m_vFallVelocity in CChicken should be at offset 0xFC4");
+		static_assert(offsetof(CS2::server::CChicken, m_desiredActivity) == 0xFD0, "m_desiredActivity in CChicken should be at offset 0xFD0");
+		static_assert(offsetof(CS2::server::CChicken, m_currentActivity) == 0xFD4, "m_currentActivity in CChicken should be at offset 0xFD4");
+		static_assert(offsetof(CS2::server::CChicken, m_activityTimer) == 0xFD8, "m_activityTimer in CChicken should be at offset 0xFD8");
+		static_assert(offsetof(CS2::server::CChicken, m_turnRate) == 0xFF0, "m_turnRate in CChicken should be at offset 0xFF0");
+		static_assert(offsetof(CS2::server::CChicken, m_fleeFrom) == 0xFF4, "m_fleeFrom in CChicken should be at offset 0xFF4");
+		static_assert(offsetof(CS2::server::CChicken, m_moveRateThrottleTimer) == 0xFF8, "m_moveRateThrottleTimer in CChicken should be at offset 0xFF8");
+		static_assert(offsetof(CS2::server::CChicken, m_startleTimer) == 0x1010, "m_startleTimer in CChicken should be at offset 0x1010");
+		static_assert(offsetof(CS2::server::CChicken, m_vocalizeTimer) == 0x1028, "m_vocalizeTimer in CChicken should be at offset 0x1028");
+		static_assert(offsetof(CS2::server::CChicken, m_flWhenZombified) == 0x1040, "m_flWhenZombified in CChicken should be at offset 0x1040");
+		static_assert(offsetof(CS2::server::CChicken, m_jumpedThisFrame) == 0x1044, "m_jumpedThisFrame in CChicken should be at offset 0x1044");
+		static_assert(offsetof(CS2::server::CChicken, m_leader) == 0x1048, "m_leader in CChicken should be at offset 0x1048");
+		static_assert(offsetof(CS2::server::CChicken, m_reuseTimer) == 0x1060, "m_reuseTimer in CChicken should be at offset 0x1060");
+		static_assert(offsetof(CS2::server::CChicken, m_hasBeenUsed) == 0x1078, "m_hasBeenUsed in CChicken should be at offset 0x1078");
+		static_assert(offsetof(CS2::server::CChicken, m_jumpTimer) == 0x1080, "m_jumpTimer in CChicken should be at offset 0x1080");
+		static_assert(offsetof(CS2::server::CChicken, m_flLastJumpTime) == 0x1098, "m_flLastJumpTime in CChicken should be at offset 0x1098");
+		static_assert(offsetof(CS2::server::CChicken, m_bInJump) == 0x109C, "m_bInJump in CChicken should be at offset 0x109C");
+		static_assert(offsetof(CS2::server::CChicken, m_repathTimer) == 0x30A8, "m_repathTimer in CChicken should be at offset 0x30A8");
+		static_assert(offsetof(CS2::server::CChicken, m_vecPathGoal) == 0x3140, "m_vecPathGoal in CChicken should be at offset 0x3140");
+		static_assert(offsetof(CS2::server::CChicken, m_flActiveFollowStartTime) == 0x314C, "m_flActiveFollowStartTime in CChicken should be at offset 0x314C");
+		static_assert(offsetof(CS2::server::CChicken, m_followMinuteTimer) == 0x3150, "m_followMinuteTimer in CChicken should be at offset 0x3150");
+		static_assert(offsetof(CS2::server::CChicken, m_BlockDirectionTimer) == 0x3170, "m_BlockDirectionTimer in CChicken should be at offset 0x3170");
+		static_assert(sizeof(CS2::server::CChicken) == 0x3190, "CChicken size should be 0x3190");
 	}
 }

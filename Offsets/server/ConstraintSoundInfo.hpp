@@ -15,7 +15,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_forwardAxis = 0x40; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_iszTravelSoundFwd = 0x50; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_iszTravelSoundBack = 0x58; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszReversalSounds = 0x78; // GlobalTypes::CUtlSymbolLarge[3]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_iszReversalSoundSmall = 0x78; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszReversalSoundMedium = 0x80; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszReversalSoundLarge = 0x88; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bPlayTravelSound = 0x90; // bool m_bPlayTravelSound; |  0x90 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bPlayReversalSound = 0x91; // bool m_bPlayReversalSound; |  0x91 | Schema_Builtin | Size: 0x1
 			}

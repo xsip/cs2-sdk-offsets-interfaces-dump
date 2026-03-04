@@ -8,43 +8,49 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA10
+			// Class size: 0x910
 			namespace CFuncRotator /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_hRotatorTarget = 0x7d8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsRotating = 0x7dc; // bool m_bIsRotating; |  0x7dc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsReversing = 0x7dd; // bool m_bIsReversing; |  0x7dd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flTimeToReachMaxSpeed = 0x7e0; // float32 m_flTimeToReachMaxSpeed; |  0x7e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeToReachZeroSpeed = 0x7e4; // float32 m_flTimeToReachZeroSpeed; |  0x7e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistanceAlongArcTraveled = 0x7e8; // float32 m_flDistanceAlongArcTraveled; |  0x7e8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeToWaitOscillate = 0x7ec; // float32 m_flTimeToWaitOscillate; |  0x7ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeRotationStart = 0x7f0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_qLSPrevChange = 0x800; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_qWSPrev = 0x810; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_qWSInit = 0x820; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_qLSInit = 0x830; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_qLSOrientation = 0x840; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_OnRotationStarted = 0x850; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnRotationCompleted = 0x878; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnOscillate = 0x8a0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnOscillateStartArrive = 0x8c8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnOscillateStartDepart = 0x8f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnOscillateEndArrive = 0x918; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnOscillateEndDepart = 0x940; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bOscillateDepart = 0x968; // bool m_bOscillateDepart; |  0x968 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOscillateCount = 0x96c; // int32_t m_nOscillateCount; |  0x96c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_eRotateType = 0x970; // server::CFuncRotator::Rotate_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_ePrevRotateType = 0x974; // server::CFuncRotator::Rotate_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bHasTargetOverride = 0x978; // bool m_bHasTargetOverride; |  0x978 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_qOrientationOverride = 0x980; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_eSpaceOverride = 0x990; // server::RotatorTargetSpace_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_qAngularVelocity = 0x994; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vLookAtForcedUp = 0x9a0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_strRotatorTarget = 0x9b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bRecordHistory = 0x9b8; // bool m_bRecordHistory; |  0x9b8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecRotatorHistory = 0x9c0; // GlobalTypes::CUtlVector<server::RotatorHistoryEntry_t>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bReturningToPreviousOrientation = 0x9d8; // bool m_bReturningToPreviousOrientation; |  0x9d8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecRotatorQueue = 0x9e0; // GlobalTypes::CUtlVector<server::RotatorQueueEntry_t>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecRotatorQueueHistory = 0x9f8; // GlobalTypes::CUtlVector<server::RotatorHistoryEntry_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hRotatorTarget = 0x730; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsRotating = 0x734; // bool m_bIsRotating; |  0x734 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsReversing = 0x735; // bool m_bIsReversing; |  0x735 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flTimeToReachMaxSpeed = 0x738; // float32 m_flTimeToReachMaxSpeed; |  0x738 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeToReachZeroSpeed = 0x73c; // float32 m_flTimeToReachZeroSpeed; |  0x73c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistanceAlongArcTraveled = 0x740; // float32 m_flDistanceAlongArcTraveled; |  0x740 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeToWaitOscillate = 0x744; // float32 m_flTimeToWaitOscillate; |  0x744 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeRotationStart = 0x748; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_qLSPrevChange = 0x750; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_qWSPrev = 0x760; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_qWSInit = 0x770; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_qLSInit = 0x780; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_qLSOrientation = 0x790; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_OnRotationStarted = 0x7a0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnRotationCompleted = 0x7b8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnOscillate = 0x7d0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnOscillateStartArrive = 0x7e8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnOscillateStartDepart = 0x800; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnOscillateEndArrive = 0x818; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnOscillateEndDepart = 0x830; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bOscillateDepart = 0x848; // bool m_bOscillateDepart; |  0x848 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nOscillateCount = 0x84c; // int32_t m_nOscillateCount; |  0x84c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_eRotateType = 0x850; // server::CFuncRotator::Rotate_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_ePrevRotateType = 0x854; // server::CFuncRotator::Rotate_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bHasTargetOverride = 0x858; // bool m_bHasTargetOverride; |  0x858 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_qOrientationOverride = 0x860; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_eSpaceOverride = 0x870; // server::RotatorTargetSpace_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_qAngularVelocity = 0x874; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vLookAtForcedUp = 0x880; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_strRotatorTarget = 0x890; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bRecordHistory = 0x898; // bool m_bRecordHistory; |  0x898 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecRotatorHistory = 0x8a0; // GlobalTypes::CUtlVector<server::RotatorHistoryEntry_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bReturningToPreviousOrientation = 0x8b8; // bool m_bReturningToPreviousOrientation; |  0x8b8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecRotatorQueue = 0x8c0; // GlobalTypes::CUtlVector<server::RotatorQueueEntry_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecRotatorQueueHistory = 0x8d8; // GlobalTypes::CUtlVector<server::RotatorHistoryEntry_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_eSolidType = 0x8f0; // client::SolidType_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_hSpeedFromMover = 0x8f4; // GlobalTypes::CHandle<server::CFuncMover>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSpeedFromMover = 0x8f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flSpeedScale = 0x900; // float32 m_flSpeedScale; |  0x900 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMinYawRotation = 0x904; // float32 m_flMinYawRotation; |  0x904 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxYawRotation = 0x908; // float32 m_flMaxYawRotation; |  0x908 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

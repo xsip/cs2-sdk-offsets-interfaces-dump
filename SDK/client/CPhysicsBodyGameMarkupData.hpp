@@ -21,7 +21,7 @@ namespace CS2 {
 		class CPhysicsBodyGameMarkupData  {
 		public:
 			// GlobalTypes::CUtlOrderedMap< CUtlString, CPhysicsBodyGameMarkup > m_PhysicsBodyMarkupByBoneName; // 0x0 | Schema_Atomic | Size: 0x28
-			char  m_PhysicsBodyMarkupByBoneName[0x28]; // 0x0 | Schema_Atomic | Size: 0x28
+			char m_PhysicsBodyMarkupByBoneName[0x28]; // 0x0 | Schema_Atomic | Size: 0x28
 		};
 		static_assert(offsetof(CS2::client::CPhysicsBodyGameMarkupData, m_PhysicsBodyMarkupByBoneName) == 0x0, "m_PhysicsBodyMarkupByBoneName in CPhysicsBodyGameMarkupData should be at offset 0x0");
 		static_assert(sizeof(CS2::client::CPhysicsBodyGameMarkupData) == 0x28, "CPhysicsBodyGameMarkupData size should be 0x28");

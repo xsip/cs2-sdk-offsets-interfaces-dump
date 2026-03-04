@@ -4,5 +4,5 @@
 
 
 class server_CLogicRelayAPI {
-    char pad_3777[0x8];
+    char pad_3912[0x8];
 };

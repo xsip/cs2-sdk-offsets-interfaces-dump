@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {animgraphlib_CAnimTagBase} from './CAnimTagBase';
-// Class size: 0x78
+// Class size: 0x80
 // BaseClass: : public CS2::animgraphlib::CAnimTagBase
 export const animgraphlib_CFootstepLandedAnimTag  = {
 	...animgraphlib_CAnimTagBase,
@@ -9,4 +9,5 @@ export const animgraphlib_CFootstepLandedAnimTag  = {
 	m_OverrideSoundName: 96n, // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 	m_DebugAnimSourceString: 104n, // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 	m_BoneName: 112n, // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+	m_footstepJumpPhase: 120n, // animgraphlib::FootstepJumpPhase_t  | Schema_DeclaredEnum | Size: 0x1
 }

@@ -21,40 +21,40 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_MapPreviewCameraPath : public CS2::client::C_BaseEntity {
 		public:
-			float32 m_flZFar; // 0x5f8 | Schema_Builtin | Size: 0x4
-			float32 m_flZNear; // 0x5fc | Schema_Builtin | Size: 0x4
-			bool m_bLoop; // 0x600 | Schema_Builtin | Size: 0x1
-			bool m_bVerticalFOV; // 0x601 | Schema_Builtin | Size: 0x1
-			bool m_bConstantSpeed; // 0x602 | Schema_Builtin | Size: 0x1
+			float32 m_flZFar; // 0x608 | Schema_Builtin | Size: 0x4
+			float32 m_flZNear; // 0x60c | Schema_Builtin | Size: 0x4
+			bool m_bLoop; // 0x610 | Schema_Builtin | Size: 0x1
+			bool m_bVerticalFOV; // 0x611 | Schema_Builtin | Size: 0x1
+			bool m_bConstantSpeed; // 0x612 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_flDuration; // 0x604 | Schema_Builtin | Size: 0x4
+			float32 m_flDuration; // 0x614 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x40);
-			float32 m_flPathLength; // 0x648 | Schema_Builtin | Size: 0x4
-			float32 m_flPathDuration; // 0x64c | Schema_Builtin | Size: 0x4
+			float32 m_flPathLength; // 0x658 | Schema_Builtin | Size: 0x4
+			float32 m_flPathDuration; // 0x65c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x14);
-			bool m_bDofEnabled; // 0x664 | Schema_Builtin | Size: 0x1
+			bool m_bDofEnabled; // 0x674 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flDofNearBlurry; // 0x668 | Schema_Builtin | Size: 0x4
-			float32 m_flDofNearCrisp; // 0x66c | Schema_Builtin | Size: 0x4
-			float32 m_flDofFarCrisp; // 0x670 | Schema_Builtin | Size: 0x4
-			float32 m_flDofFarBlurry; // 0x674 | Schema_Builtin | Size: 0x4
-			float32 m_flDofTiltToGround; // 0x678 | Schema_Builtin | Size: 0x4
+			float32 m_flDofNearBlurry; // 0x678 | Schema_Builtin | Size: 0x4
+			float32 m_flDofNearCrisp; // 0x67c | Schema_Builtin | Size: 0x4
+			float32 m_flDofFarCrisp; // 0x680 | Schema_Builtin | Size: 0x4
+			float32 m_flDofFarBlurry; // 0x684 | Schema_Builtin | Size: 0x4
+			float32 m_flDofTiltToGround; // 0x688 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flZFar) == 0x5F8, "m_flZFar in C_CSGO_MapPreviewCameraPath should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flZNear) == 0x5FC, "m_flZNear in C_CSGO_MapPreviewCameraPath should be at offset 0x5FC");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bLoop) == 0x600, "m_bLoop in C_CSGO_MapPreviewCameraPath should be at offset 0x600");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bVerticalFOV) == 0x601, "m_bVerticalFOV in C_CSGO_MapPreviewCameraPath should be at offset 0x601");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bConstantSpeed) == 0x602, "m_bConstantSpeed in C_CSGO_MapPreviewCameraPath should be at offset 0x602");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDuration) == 0x604, "m_flDuration in C_CSGO_MapPreviewCameraPath should be at offset 0x604");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flPathLength) == 0x648, "m_flPathLength in C_CSGO_MapPreviewCameraPath should be at offset 0x648");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flPathDuration) == 0x64C, "m_flPathDuration in C_CSGO_MapPreviewCameraPath should be at offset 0x64C");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bDofEnabled) == 0x664, "m_bDofEnabled in C_CSGO_MapPreviewCameraPath should be at offset 0x664");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofNearBlurry) == 0x668, "m_flDofNearBlurry in C_CSGO_MapPreviewCameraPath should be at offset 0x668");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofNearCrisp) == 0x66C, "m_flDofNearCrisp in C_CSGO_MapPreviewCameraPath should be at offset 0x66C");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofFarCrisp) == 0x670, "m_flDofFarCrisp in C_CSGO_MapPreviewCameraPath should be at offset 0x670");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofFarBlurry) == 0x674, "m_flDofFarBlurry in C_CSGO_MapPreviewCameraPath should be at offset 0x674");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofTiltToGround) == 0x678, "m_flDofTiltToGround in C_CSGO_MapPreviewCameraPath should be at offset 0x678");
-		static_assert(sizeof(CS2::client::C_CSGO_MapPreviewCameraPath) == 0x680, "C_CSGO_MapPreviewCameraPath size should be 0x680");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flZFar) == 0x608, "m_flZFar in C_CSGO_MapPreviewCameraPath should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flZNear) == 0x60C, "m_flZNear in C_CSGO_MapPreviewCameraPath should be at offset 0x60C");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bLoop) == 0x610, "m_bLoop in C_CSGO_MapPreviewCameraPath should be at offset 0x610");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bVerticalFOV) == 0x611, "m_bVerticalFOV in C_CSGO_MapPreviewCameraPath should be at offset 0x611");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bConstantSpeed) == 0x612, "m_bConstantSpeed in C_CSGO_MapPreviewCameraPath should be at offset 0x612");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDuration) == 0x614, "m_flDuration in C_CSGO_MapPreviewCameraPath should be at offset 0x614");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flPathLength) == 0x658, "m_flPathLength in C_CSGO_MapPreviewCameraPath should be at offset 0x658");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flPathDuration) == 0x65C, "m_flPathDuration in C_CSGO_MapPreviewCameraPath should be at offset 0x65C");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bDofEnabled) == 0x674, "m_bDofEnabled in C_CSGO_MapPreviewCameraPath should be at offset 0x674");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofNearBlurry) == 0x678, "m_flDofNearBlurry in C_CSGO_MapPreviewCameraPath should be at offset 0x678");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofNearCrisp) == 0x67C, "m_flDofNearCrisp in C_CSGO_MapPreviewCameraPath should be at offset 0x67C");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofFarCrisp) == 0x680, "m_flDofFarCrisp in C_CSGO_MapPreviewCameraPath should be at offset 0x680");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofFarBlurry) == 0x684, "m_flDofFarBlurry in C_CSGO_MapPreviewCameraPath should be at offset 0x684");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofTiltToGround) == 0x688, "m_flDofTiltToGround in C_CSGO_MapPreviewCameraPath should be at offset 0x688");
+		static_assert(sizeof(CS2::client::C_CSGO_MapPreviewCameraPath) == 0x690, "C_CSGO_MapPreviewCameraPath size should be 0x690");
 	}
 }

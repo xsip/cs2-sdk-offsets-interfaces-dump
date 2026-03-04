@@ -22,6 +22,6 @@ namespace CS2 {
 		class CPlayer_UseServices : public CS2::client::CPlayerPawnComponent {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CPlayer_UseServices) == 0x40, "CPlayer_UseServices size should be 0x40");
+		static_assert(sizeof(CS2::server::CPlayer_UseServices) == 0x48, "CPlayer_UseServices size should be 0x48");
 	}
 }

@@ -25,7 +25,7 @@ namespace CS2 {
 		class CSingleFrameUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
 			GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimActionUpdater>> m_actions; // 0x58 | Schema_Atomic | Size: 0x18
-			// char  m_actions[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
+			// char m_actions[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 			animgraphlib::CPoseHandle m_hPoseCacheHandle; // 0x70 | Schema_DeclaredClass | Size: 0x4
 			animationsystem::HSequence m_hSequence; // 0x74 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flCycle; // 0x78 | Schema_Builtin | Size: 0x4

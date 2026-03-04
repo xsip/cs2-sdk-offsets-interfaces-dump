@@ -12,5 +12,5 @@ class modellib_CNPCPhysicsHull {
     Vector m_vCapsuleCenter2;
     float32 m_flGroundBoxHeight;
     float32 m_flGroundBoxWidth;
-    char end_pad_352[0x4];
+    char end_pad_355[0x4];
 };

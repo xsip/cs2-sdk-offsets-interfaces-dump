@@ -8,26 +8,26 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x538
+			// Class size: 0x4F0
 			namespace CEnvVolumetricFogVolume /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_bActive = 0x4f0; // bool m_bActive; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vBoxMins = 0x4f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vBoxMaxs = 0x500; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bStartDisabled = 0x50c; // bool m_bStartDisabled; |  0x50c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIndirectUseLPVs = 0x50d; // bool m_bIndirectUseLPVs; |  0x50d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flStrength = 0x510; // float32 m_flStrength; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFalloffShape = 0x514; // int32_t m_nFalloffShape; |  0x514 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFalloffExponent = 0x518; // float32 m_flFalloffExponent; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHeightFogDepth = 0x51c; // float32 m_flHeightFogDepth; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fHeightFogEdgeWidth = 0x520; // float32 m_fHeightFogEdgeWidth; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fIndirectLightStrength = 0x524; // float32 m_fIndirectLightStrength; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fSunLightStrength = 0x528; // float32 m_fSunLightStrength; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fNoiseStrength = 0x52c; // float32 m_fNoiseStrength; |  0x52c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TintColor = 0x530; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bOverrideTintColor = 0x534; // bool m_bOverrideTintColor; |  0x534 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bOverrideIndirectLightStrength = 0x535; // bool m_bOverrideIndirectLightStrength; |  0x535 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bOverrideSunLightStrength = 0x536; // bool m_bOverrideSunLightStrength; |  0x536 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bOverrideNoiseStrength = 0x537; // bool m_bOverrideNoiseStrength; |  0x537 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bActive = 0x4a8; // bool m_bActive; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vBoxMins = 0x4ac; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMaxs = 0x4b8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bStartDisabled = 0x4c4; // bool m_bStartDisabled; |  0x4c4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIndirectUseLPVs = 0x4c5; // bool m_bIndirectUseLPVs; |  0x4c5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flStrength = 0x4c8; // float32 m_flStrength; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFalloffShape = 0x4cc; // int32_t m_nFalloffShape; |  0x4cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFalloffExponent = 0x4d0; // float32 m_flFalloffExponent; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHeightFogDepth = 0x4d4; // float32 m_flHeightFogDepth; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fHeightFogEdgeWidth = 0x4d8; // float32 m_fHeightFogEdgeWidth; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fIndirectLightStrength = 0x4dc; // float32 m_fIndirectLightStrength; |  0x4dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fSunLightStrength = 0x4e0; // float32 m_fSunLightStrength; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fNoiseStrength = 0x4e4; // float32 m_fNoiseStrength; |  0x4e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_TintColor = 0x4e8; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bOverrideTintColor = 0x4ec; // bool m_bOverrideTintColor; |  0x4ec | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bOverrideIndirectLightStrength = 0x4ed; // bool m_bOverrideIndirectLightStrength; |  0x4ed | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bOverrideSunLightStrength = 0x4ee; // bool m_bOverrideSunLightStrength; |  0x4ee | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bOverrideNoiseStrength = 0x4ef; // bool m_bOverrideNoiseStrength; |  0x4ef | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

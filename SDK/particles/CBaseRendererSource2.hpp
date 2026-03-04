@@ -17,6 +17,7 @@
 #include <SDK/particles/ParticleColorBlendType_t.hpp>
 #include <SDK/particles/SpriteCardShaderType_t.hpp>
 #include <SDK/particles/ParticleSequenceCropOverride_t.hpp>
+#include <SDK/particles/TextureGroup_t.hpp>
 #include <SDK/particles/AnimationType_t.hpp>
 #include <SDK/particles/ParticleOutputBlendMode_t.hpp>
 #include <SDK/particles/ParticleFogType_t.hpp>
@@ -49,7 +50,7 @@ namespace CS2 {
 			float32 m_flBumpStrength; // 0x1020 | Schema_Builtin | Size: 0x4
 			particles::ParticleSequenceCropOverride_t m_nCropTextureOverride; // 0x1024 | Schema_DeclaredEnum | Size: 0x4
 			// GlobalTypes::CUtlLeanVector<particles::TextureGroup_t> m_vecTexturesInput; // 0x1028 | Schema_Atomic | Size: 0x10
-			char  m_vecTexturesInput[0x10]; // 0x1028 | Schema_Atomic | Size: 0x10
+			char m_vecTexturesInput[0x10]; // 0x1028 | Schema_Atomic | Size: 0x10
 			float32 m_flAnimationRate; // 0x1038 | Schema_Builtin | Size: 0x4
 			particles::AnimationType_t m_nAnimationType; // 0x103c | Schema_DeclaredEnum | Size: 0x4
 			bool m_bAnimateInFPS; // 0x1040 | Schema_Builtin | Size: 0x1
@@ -60,11 +61,10 @@ namespace CS2 {
 			particleslib::CParticleCollectionRendererFloatInput m_flDiffuseAmount; // 0x1498 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionRendererFloatInput m_flDiffuseClamp; // 0x1608 | Schema_DeclaredClass | Size: 0x170
 			int32_t m_nLightingControlPoint; // 0x1778 | Schema_Builtin | Size: 0x4
-			particles::ParticleAttributeIndex_t m_nSelfIllumPerParticle; // 0x177c | Schema_DeclaredClass | Size: 0x4
-			particles::ParticleOutputBlendMode_t m_nOutputBlendMode; // 0x1780 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bGammaCorrectVertexColors; // 0x1784 | Schema_Builtin | Size: 0x1
-			bool m_bSaturateColorPreAlphaBlend; // 0x1785 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x2);
+			particles::ParticleOutputBlendMode_t m_nOutputBlendMode; // 0x177c | Schema_DeclaredEnum | Size: 0x4
+			bool m_bGammaCorrectVertexColors; // 0x1780 | Schema_Builtin | Size: 0x1
+			bool m_bSaturateColorPreAlphaBlend; // 0x1781 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6);
 			particleslib::CParticleCollectionRendererFloatInput m_flAddSelfAmount; // 0x1788 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionRendererFloatInput m_flDesaturation; // 0x18f8 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionRendererFloatInput m_flOverbrightFactor; // 0x1a68 | Schema_DeclaredClass | Size: 0x170
@@ -131,10 +131,9 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDiffuseAmount) == 0x1498, "m_flDiffuseAmount in CBaseRendererSource2 should be at offset 0x1498");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDiffuseClamp) == 0x1608, "m_flDiffuseClamp in CBaseRendererSource2 should be at offset 0x1608");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nLightingControlPoint) == 0x1778, "m_nLightingControlPoint in CBaseRendererSource2 should be at offset 0x1778");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nSelfIllumPerParticle) == 0x177C, "m_nSelfIllumPerParticle in CBaseRendererSource2 should be at offset 0x177C");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nOutputBlendMode) == 0x1780, "m_nOutputBlendMode in CBaseRendererSource2 should be at offset 0x1780");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bGammaCorrectVertexColors) == 0x1784, "m_bGammaCorrectVertexColors in CBaseRendererSource2 should be at offset 0x1784");
-		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bSaturateColorPreAlphaBlend) == 0x1785, "m_bSaturateColorPreAlphaBlend in CBaseRendererSource2 should be at offset 0x1785");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_nOutputBlendMode) == 0x177C, "m_nOutputBlendMode in CBaseRendererSource2 should be at offset 0x177C");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bGammaCorrectVertexColors) == 0x1780, "m_bGammaCorrectVertexColors in CBaseRendererSource2 should be at offset 0x1780");
+		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bSaturateColorPreAlphaBlend) == 0x1781, "m_bSaturateColorPreAlphaBlend in CBaseRendererSource2 should be at offset 0x1781");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAddSelfAmount) == 0x1788, "m_flAddSelfAmount in CBaseRendererSource2 should be at offset 0x1788");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flDesaturation) == 0x18F8, "m_flDesaturation in CBaseRendererSource2 should be at offset 0x18F8");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flOverbrightFactor) == 0x1A68, "m_flOverbrightFactor in CBaseRendererSource2 should be at offset 0x1A68");

@@ -8,28 +8,28 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x288
+			// Class size: 0x290
 			namespace CPlayer_CameraServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_vecCsViewPunchAngle = 0x40; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nCsViewPunchAngleTick = 0x4c; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flCsViewPunchAngleTickRatio = 0x50; // float32 m_flCsViewPunchAngleTickRatio; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_PlayerFog = 0x58; // client::C_fogplayerparams_t  | Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_hColorCorrectionCtrl = 0x98; // GlobalTypes::CHandle<client::C_ColorCorrection>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hViewEntity = 0x9c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTonemapController = 0xa0; // GlobalTypes::CHandle<client::C_TonemapController2>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_audio = 0xa8; // client::audioparams_t  | Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_PostProcessingVolumes = 0x120; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_PostProcessingVolume>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flOldPlayerZ = 0x138; // float32 m_flOldPlayerZ; |  0x138 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOldPlayerViewOffsetZ = 0x13c; // float32 m_flOldPlayerViewOffsetZ; |  0x13c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_CurrentFog = 0x140; // client::fogparams_t  | Schema_DeclaredClass | Size: 0x68
-				constexpr std::ptrdiff_t m_hOldFogController = 0x1a8; // GlobalTypes::CHandle<client::C_FogController>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bOverrideFogColor = 0x1ac; // bool m_bOverrideFogColor[5]; |  0x1ac | Schema_FixedArray | Size: 0x5
-				constexpr std::ptrdiff_t m_OverrideFogColor = 0x1b1; // GlobalTypes::Color[5]  | Schema_FixedArray | Size: 0x14
-				constexpr std::ptrdiff_t m_bOverrideFogStartEnd = 0x1c5; // bool m_bOverrideFogStartEnd[5]; |  0x1c5 | Schema_FixedArray | Size: 0x5
-				constexpr std::ptrdiff_t m_fOverrideFogStart = 0x1cc; // float32 m_fOverrideFogStart[5]; |  0x1cc | Schema_FixedArray | Size: 0x14
-				constexpr std::ptrdiff_t m_fOverrideFogEnd = 0x1e0; // float32 m_fOverrideFogEnd[5]; |  0x1e0 | Schema_FixedArray | Size: 0x14
-				constexpr std::ptrdiff_t m_hActivePostProcessingVolume = 0x1f4; // GlobalTypes::CHandle<client::C_PostProcessingVolume>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_angDemoViewAngles = 0x1f8; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecCsViewPunchAngle = 0x48; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nCsViewPunchAngleTick = 0x54; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flCsViewPunchAngleTickRatio = 0x58; // float32 m_flCsViewPunchAngleTickRatio; |  0x58 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_PlayerFog = 0x60; // client::C_fogplayerparams_t  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_hColorCorrectionCtrl = 0xa0; // GlobalTypes::CHandle<client::C_ColorCorrection>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hViewEntity = 0xa4; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTonemapController = 0xa8; // GlobalTypes::CHandle<client::C_TonemapController2>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_audio = 0xb0; // client::audioparams_t  | Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_PostProcessingVolumes = 0x128; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_PostProcessingVolume>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flOldPlayerZ = 0x140; // float32 m_flOldPlayerZ; |  0x140 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOldPlayerViewOffsetZ = 0x144; // float32 m_flOldPlayerViewOffsetZ; |  0x144 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_CurrentFog = 0x148; // client::fogparams_t  | Schema_DeclaredClass | Size: 0x68
+				constexpr std::ptrdiff_t m_hOldFogController = 0x1b0; // GlobalTypes::CHandle<client::C_FogController>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bOverrideFogColor = 0x1b4; // bool m_bOverrideFogColor[5]; |  0x1b4 | Schema_FixedArray | Size: 0x5
+				constexpr std::ptrdiff_t m_OverrideFogColor = 0x1b9; // GlobalTypes::Color[5]  | Schema_FixedArray | Size: 0x14
+				constexpr std::ptrdiff_t m_bOverrideFogStartEnd = 0x1cd; // bool m_bOverrideFogStartEnd[5]; |  0x1cd | Schema_FixedArray | Size: 0x5
+				constexpr std::ptrdiff_t m_fOverrideFogStart = 0x1d4; // float32 m_fOverrideFogStart[5]; |  0x1d4 | Schema_FixedArray | Size: 0x14
+				constexpr std::ptrdiff_t m_fOverrideFogEnd = 0x1e8; // float32 m_fOverrideFogEnd[5]; |  0x1e8 | Schema_FixedArray | Size: 0x14
+				constexpr std::ptrdiff_t m_hActivePostProcessingVolume = 0x1fc; // GlobalTypes::CHandle<client::C_PostProcessingVolume>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_angDemoViewAngles = 0x200; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_CModelPointEntity} from './CModelPointEntity';
-// Class size: 0x7D8
+// Class size: 0x730
 // BaseClass: : public CS2::server::CModelPointEntity
 export const server_CShower  = {
 	...server_CModelPointEntity,

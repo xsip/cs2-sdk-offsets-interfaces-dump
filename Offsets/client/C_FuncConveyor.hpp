@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xEF8
+			// Class size: 0xED0
 			namespace C_FuncConveyor /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_vecMoveDirEntitySpace = 0xeb8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flTargetSpeed = 0xec4; // float32 m_flTargetSpeed; |  0xec4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTransitionStartTick = 0xec8; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nTransitionDurationTicks = 0xecc; // int32_t m_nTransitionDurationTicks; |  0xecc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTransitionStartSpeed = 0xed0; // float32 m_flTransitionStartSpeed; |  0xed0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hConveyorModels = 0xed8; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flCurrentConveyorOffset = 0xef0; // float32 m_flCurrentConveyorOffset; |  0xef0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCurrentConveyorSpeed = 0xef4; // float32 m_flCurrentConveyorSpeed; |  0xef4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecMoveDirEntitySpace = 0xe90; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flTargetSpeed = 0xe9c; // float32 m_flTargetSpeed; |  0xe9c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTransitionStartTick = 0xea0; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nTransitionDurationTicks = 0xea4; // int32_t m_nTransitionDurationTicks; |  0xea4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTransitionStartSpeed = 0xea8; // float32 m_flTransitionStartSpeed; |  0xea8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hConveyorModels = 0xeb0; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flCurrentConveyorOffset = 0xec8; // float32 m_flCurrentConveyorOffset; |  0xec8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCurrentConveyorSpeed = 0xecc; // float32 m_flCurrentConveyorSpeed; |  0xecc | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

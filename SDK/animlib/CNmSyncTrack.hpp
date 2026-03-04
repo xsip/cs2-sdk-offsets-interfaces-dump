@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/animlib/Event_t.hpp>
 
 
 
@@ -20,8 +21,8 @@ namespace CS2 {
 	namespace animlib {
 		class CNmSyncTrack  {
 		public:
-			// GlobalTypes::CUtlLeanVectorFixedGrowable<animlib::CNmSyncTrack::Event_t> m_syncEvents; // 0x0 | Schema_Atomic | Size: 0xa8
-			char  m_syncEvents[0xa8]; // 0x0 | Schema_Atomic | Size: 0xa8
+			// GlobalTypes::CUtlLeanVectorFixedGrowable<animlib::Event_t> m_syncEvents; // 0x0 | Schema_Atomic | Size: 0xa8
+			char m_syncEvents[0xa8]; // 0x0 | Schema_Atomic | Size: 0xa8
 			int32_t m_nStartEventOffset; // 0xa8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

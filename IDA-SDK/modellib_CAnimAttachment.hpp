@@ -9,5 +9,5 @@ class modellib_CAnimAttachment {
     int32_t m_influenceIndices[3];
     float32 m_influenceWeights[3];
     uint8_t m_numInfluences;
-    char end_pad_309[0x7];
+    char end_pad_311[0x7];
 };

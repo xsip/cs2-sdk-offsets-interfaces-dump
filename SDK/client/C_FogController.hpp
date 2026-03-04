@@ -22,14 +22,14 @@ namespace CS2 {
 	namespace client {
 		class C_FogController : public CS2::client::C_BaseEntity {
 		public:
-			client::fogparams_t m_fog; // 0x5f8 | Schema_DeclaredClass | Size: 0x68
-			bool m_bUseAngles; // 0x660 | Schema_Builtin | Size: 0x1
+			client::fogparams_t m_fog; // 0x608 | Schema_DeclaredClass | Size: 0x68
+			bool m_bUseAngles; // 0x670 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iChangedVariables; // 0x664 | Schema_Builtin | Size: 0x4
+			int32_t m_iChangedVariables; // 0x674 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_FogController, m_fog) == 0x5F8, "m_fog in C_FogController should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_FogController, m_bUseAngles) == 0x660, "m_bUseAngles in C_FogController should be at offset 0x660");
-		static_assert(offsetof(CS2::client::C_FogController, m_iChangedVariables) == 0x664, "m_iChangedVariables in C_FogController should be at offset 0x664");
-		static_assert(sizeof(CS2::client::C_FogController) == 0x668, "C_FogController size should be 0x668");
+		static_assert(offsetof(CS2::client::C_FogController, m_fog) == 0x608, "m_fog in C_FogController should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_FogController, m_bUseAngles) == 0x670, "m_bUseAngles in C_FogController should be at offset 0x670");
+		static_assert(offsetof(CS2::client::C_FogController, m_iChangedVariables) == 0x674, "m_iChangedVariables in C_FogController should be at offset 0x674");
+		static_assert(sizeof(CS2::client::C_FogController) == 0x678, "C_FogController size should be 0x678");
 	}
 }

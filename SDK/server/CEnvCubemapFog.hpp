@@ -21,48 +21,48 @@ namespace CS2 {
 	namespace server {
 		class CEnvCubemapFog : public CS2::server::CBaseEntity {
 		public:
-			float32 m_flEndDistance; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_flStartDistance; // 0x4f4 | Schema_Builtin | Size: 0x4
-			float32 m_flFogFalloffExponent; // 0x4f8 | Schema_Builtin | Size: 0x4
-			bool m_bHeightFogEnabled; // 0x4fc | Schema_Builtin | Size: 0x1
+			float32 m_flEndDistance; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_flStartDistance; // 0x4ac | Schema_Builtin | Size: 0x4
+			float32 m_flFogFalloffExponent; // 0x4b0 | Schema_Builtin | Size: 0x4
+			bool m_bHeightFogEnabled; // 0x4b4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flFogHeightWidth; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_flFogHeightEnd; // 0x504 | Schema_Builtin | Size: 0x4
-			float32 m_flFogHeightStart; // 0x508 | Schema_Builtin | Size: 0x4
-			float32 m_flFogHeightExponent; // 0x50c | Schema_Builtin | Size: 0x4
-			float32 m_flLODBias; // 0x510 | Schema_Builtin | Size: 0x4
-			bool m_bActive; // 0x514 | Schema_Builtin | Size: 0x1
-			bool m_bStartDisabled; // 0x515 | Schema_Builtin | Size: 0x1
+			float32 m_flFogHeightWidth; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_flFogHeightEnd; // 0x4bc | Schema_Builtin | Size: 0x4
+			float32 m_flFogHeightStart; // 0x4c0 | Schema_Builtin | Size: 0x4
+			float32 m_flFogHeightExponent; // 0x4c4 | Schema_Builtin | Size: 0x4
+			float32 m_flLODBias; // 0x4c8 | Schema_Builtin | Size: 0x4
+			bool m_bActive; // 0x4cc | Schema_Builtin | Size: 0x1
+			bool m_bStartDisabled; // 0x4cd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flFogMaxOpacity; // 0x518 | Schema_Builtin | Size: 0x4
-			int32_t m_nCubemapSourceType; // 0x51c | Schema_Builtin | Size: 0x4
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSkyMaterial; // 0x520 | Schema_Atomic | Size: 0x8
-			char  m_hSkyMaterial[0x8]; // 0x520 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSkyEntity; // 0x528 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogCubemapTexture; // 0x530 | Schema_Atomic | Size: 0x8
-			char  m_hFogCubemapTexture[0x8]; // 0x530 | Schema_Atomic | Size: 0x8
-			bool m_bHasHeightFogEnd; // 0x538 | Schema_Builtin | Size: 0x1
-			bool m_bFirstTime; // 0x539 | Schema_Builtin | Size: 0x1
+			float32 m_flFogMaxOpacity; // 0x4d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nCubemapSourceType; // 0x4d4 | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSkyMaterial; // 0x4d8 | Schema_Atomic | Size: 0x8
+			char m_hSkyMaterial[0x8]; // 0x4d8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSkyEntity; // 0x4e0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogCubemapTexture; // 0x4e8 | Schema_Atomic | Size: 0x8
+			char m_hFogCubemapTexture[0x8]; // 0x4e8 | Schema_Atomic | Size: 0x8
+			bool m_bHasHeightFogEnd; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bFirstTime; // 0x4f1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flEndDistance) == 0x4F0, "m_flEndDistance in CEnvCubemapFog should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flStartDistance) == 0x4F4, "m_flStartDistance in CEnvCubemapFog should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogFalloffExponent) == 0x4F8, "m_flFogFalloffExponent in CEnvCubemapFog should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bHeightFogEnabled) == 0x4FC, "m_bHeightFogEnabled in CEnvCubemapFog should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightWidth) == 0x500, "m_flFogHeightWidth in CEnvCubemapFog should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightEnd) == 0x504, "m_flFogHeightEnd in CEnvCubemapFog should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightStart) == 0x508, "m_flFogHeightStart in CEnvCubemapFog should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightExponent) == 0x50C, "m_flFogHeightExponent in CEnvCubemapFog should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flLODBias) == 0x510, "m_flLODBias in CEnvCubemapFog should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bActive) == 0x514, "m_bActive in CEnvCubemapFog should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bStartDisabled) == 0x515, "m_bStartDisabled in CEnvCubemapFog should be at offset 0x515");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogMaxOpacity) == 0x518, "m_flFogMaxOpacity in CEnvCubemapFog should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_nCubemapSourceType) == 0x51C, "m_nCubemapSourceType in CEnvCubemapFog should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_hSkyMaterial) == 0x520, "m_hSkyMaterial in CEnvCubemapFog should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_iszSkyEntity) == 0x528, "m_iszSkyEntity in CEnvCubemapFog should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_hFogCubemapTexture) == 0x530, "m_hFogCubemapTexture in CEnvCubemapFog should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bHasHeightFogEnd) == 0x538, "m_bHasHeightFogEnd in CEnvCubemapFog should be at offset 0x538");
-		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bFirstTime) == 0x539, "m_bFirstTime in CEnvCubemapFog should be at offset 0x539");
-		static_assert(sizeof(CS2::server::CEnvCubemapFog) == 0x540, "CEnvCubemapFog size should be 0x540");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flEndDistance) == 0x4A8, "m_flEndDistance in CEnvCubemapFog should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flStartDistance) == 0x4AC, "m_flStartDistance in CEnvCubemapFog should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogFalloffExponent) == 0x4B0, "m_flFogFalloffExponent in CEnvCubemapFog should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bHeightFogEnabled) == 0x4B4, "m_bHeightFogEnabled in CEnvCubemapFog should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightWidth) == 0x4B8, "m_flFogHeightWidth in CEnvCubemapFog should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightEnd) == 0x4BC, "m_flFogHeightEnd in CEnvCubemapFog should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightStart) == 0x4C0, "m_flFogHeightStart in CEnvCubemapFog should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogHeightExponent) == 0x4C4, "m_flFogHeightExponent in CEnvCubemapFog should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flLODBias) == 0x4C8, "m_flLODBias in CEnvCubemapFog should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bActive) == 0x4CC, "m_bActive in CEnvCubemapFog should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bStartDisabled) == 0x4CD, "m_bStartDisabled in CEnvCubemapFog should be at offset 0x4CD");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_flFogMaxOpacity) == 0x4D0, "m_flFogMaxOpacity in CEnvCubemapFog should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_nCubemapSourceType) == 0x4D4, "m_nCubemapSourceType in CEnvCubemapFog should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_hSkyMaterial) == 0x4D8, "m_hSkyMaterial in CEnvCubemapFog should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_iszSkyEntity) == 0x4E0, "m_iszSkyEntity in CEnvCubemapFog should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_hFogCubemapTexture) == 0x4E8, "m_hFogCubemapTexture in CEnvCubemapFog should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bHasHeightFogEnd) == 0x4F0, "m_bHasHeightFogEnd in CEnvCubemapFog should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CEnvCubemapFog, m_bFirstTime) == 0x4F1, "m_bFirstTime in CEnvCubemapFog should be at offset 0x4F1");
+		static_assert(sizeof(CS2::server::CEnvCubemapFog) == 0x4F8, "CEnvCubemapFog size should be 0x4F8");
 	}
 }

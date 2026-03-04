@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x510
+			// Class size: 0x4C8
 			namespace CLogicActiveAutosave /*: public CS2::server::CLogicAutosave*/ {
-				constexpr std::ptrdiff_t m_TriggerHitPoints = 0x500; // int32_t m_TriggerHitPoints; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeToTrigger = 0x504; // float32 m_flTimeToTrigger; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartTime = 0x508; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flDangerousTime = 0x50c; // float32 m_flDangerousTime; |  0x50c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_TriggerHitPoints = 0x4b8; // int32_t m_TriggerHitPoints; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeToTrigger = 0x4bc; // float32 m_flTimeToTrigger; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartTime = 0x4c0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDangerousTime = 0x4c4; // float32 m_flDangerousTime; |  0x4c4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

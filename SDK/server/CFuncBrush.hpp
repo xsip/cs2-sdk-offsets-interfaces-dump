@@ -22,21 +22,21 @@ namespace CS2 {
 	namespace server {
 		class CFuncBrush : public CS2::server::CBaseModelEntity {
 		public:
-			client::BrushSolidities_e m_iSolidity; // 0x7d8 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_iDisabled; // 0x7dc | Schema_Builtin | Size: 0x4
-			bool m_bSolidBsp; // 0x7e0 | Schema_Builtin | Size: 0x1
+			client::BrushSolidities_e m_iSolidity; // 0x730 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_iDisabled; // 0x734 | Schema_Builtin | Size: 0x4
+			bool m_bSolidBsp; // 0x738 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlSymbolLarge m_iszExcludedClass; // 0x7e8 | Schema_Atomic | Size: 0x8
-			bool m_bInvertExclusion; // 0x7f0 | Schema_Builtin | Size: 0x1
-			bool m_bScriptedMovement; // 0x7f1 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszExcludedClass; // 0x740 | Schema_Atomic | Size: 0x8
+			bool m_bInvertExclusion; // 0x748 | Schema_Builtin | Size: 0x1
+			bool m_bScriptedMovement; // 0x749 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncBrush, m_iSolidity) == 0x7D8, "m_iSolidity in CFuncBrush should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CFuncBrush, m_iDisabled) == 0x7DC, "m_iDisabled in CFuncBrush should be at offset 0x7DC");
-		static_assert(offsetof(CS2::server::CFuncBrush, m_bSolidBsp) == 0x7E0, "m_bSolidBsp in CFuncBrush should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CFuncBrush, m_iszExcludedClass) == 0x7E8, "m_iszExcludedClass in CFuncBrush should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CFuncBrush, m_bInvertExclusion) == 0x7F0, "m_bInvertExclusion in CFuncBrush should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFuncBrush, m_bScriptedMovement) == 0x7F1, "m_bScriptedMovement in CFuncBrush should be at offset 0x7F1");
-		static_assert(sizeof(CS2::server::CFuncBrush) == 0x7F8, "CFuncBrush size should be 0x7F8");
+		static_assert(offsetof(CS2::server::CFuncBrush, m_iSolidity) == 0x730, "m_iSolidity in CFuncBrush should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CFuncBrush, m_iDisabled) == 0x734, "m_iDisabled in CFuncBrush should be at offset 0x734");
+		static_assert(offsetof(CS2::server::CFuncBrush, m_bSolidBsp) == 0x738, "m_bSolidBsp in CFuncBrush should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CFuncBrush, m_iszExcludedClass) == 0x740, "m_iszExcludedClass in CFuncBrush should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CFuncBrush, m_bInvertExclusion) == 0x748, "m_bInvertExclusion in CFuncBrush should be at offset 0x748");
+		static_assert(offsetof(CS2::server::CFuncBrush, m_bScriptedMovement) == 0x749, "m_bScriptedMovement in CFuncBrush should be at offset 0x749");
+		static_assert(sizeof(CS2::server::CFuncBrush) == 0x750, "CFuncBrush size should be 0x750");
 	}
 }

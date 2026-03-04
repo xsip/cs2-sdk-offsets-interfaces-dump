@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x500
+			// Class size: 0x4B8
 			namespace CInfoPlayerCounterterrorist /*: public CS2::server::SpawnPoint*/ {
 				// NO SCHEMA DATA FOUND!
 			}

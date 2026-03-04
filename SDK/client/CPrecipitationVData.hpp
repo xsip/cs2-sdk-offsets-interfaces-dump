@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/CEntitySubclassVDataBase.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp>
 #include <SDK/animationsystem/ParticleAttachment_t.hpp>
 
 
@@ -23,7 +24,7 @@ namespace CS2 {
 		class CPrecipitationVData : public CS2::client::CEntitySubclassVDataBase {
 		public:
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szParticlePrecipitationEffect; // 0x28 | Schema_Atomic | Size: 0xe0
-			char  m_szParticlePrecipitationEffect[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
+			char m_szParticlePrecipitationEffect[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
 			float32 m_flInnerDistance; // 0x108 | Schema_Builtin | Size: 0x4
 			animationsystem::ParticleAttachment_t m_nAttachType; // 0x10c | Schema_DeclaredEnum | Size: 0x4
 			bool m_bBatchSameVolumeType; // 0x110 | Schema_Builtin | Size: 0x1

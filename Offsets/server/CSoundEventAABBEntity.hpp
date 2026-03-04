@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5D0
+			// Class size: 0x570
 			namespace CSoundEventAABBEntity /*: public CS2::server::CSoundEventEntity*/ {
-				constexpr std::ptrdiff_t m_vMins = 0x5b8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxs = 0x5c4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMins = 0x558; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxs = 0x564; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

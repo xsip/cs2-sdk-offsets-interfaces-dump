@@ -5,7 +5,9 @@
 #include "modellib_AnimParamID.hpp"
 
 class animgraphlib_CIntAnimParameter {
-    char vTable38[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CGlobalSymbol m_name;
     CUtlString m_sComment;
     CUtlString m_group;
@@ -26,5 +28,5 @@ class animgraphlib_CIntAnimParameter {
     int32_t m_defaultValue;
     int32_t m_minValue;
     int32_t m_maxValue;
-    char end_pad_157[0x4];
+    char end_pad_158[0x4];
 };

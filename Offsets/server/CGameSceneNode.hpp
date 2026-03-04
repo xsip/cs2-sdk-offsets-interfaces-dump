@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x160
+			// Class size: 0x130
 			namespace CGameSceneNode /**/ {
 				constexpr std::ptrdiff_t m_nodeToWorld = 0x10; // GlobalTypes::CTransformWS  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_pOwner = 0x30; // entity2::CEntityInstance**  | Schema_Ptr | Size: 0x8
@@ -30,10 +30,10 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nHierarchyType = 0xf4; // uint8_t m_nHierarchyType; |  0xf4 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount = 0xf5; // uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; |  0xf5 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_name = 0xf8; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hierarchyAttachName = 0x138; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flZOffset = 0x13c; // float32 m_flZOffset; |  0x13c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flClientLocalScale = 0x140; // float32 m_flClientLocalScale; |  0x140 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vRenderOrigin = 0x144; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hierarchyAttachName = 0x10c; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flZOffset = 0x110; // float32 m_flZOffset; |  0x110 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flClientLocalScale = 0x114; // float32 m_flClientLocalScale; |  0x114 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vRenderOrigin = 0x118; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

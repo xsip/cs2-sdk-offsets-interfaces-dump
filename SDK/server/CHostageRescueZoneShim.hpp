@@ -22,6 +22,6 @@ namespace CS2 {
 		class CHostageRescueZoneShim : public CS2::server::CBaseTrigger {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CHostageRescueZoneShim) == 0x9A8, "CHostageRescueZoneShim size should be 0x9A8");
+		static_assert(sizeof(CS2::server::CHostageRescueZoneShim) == 0x890, "CHostageRescueZoneShim size should be 0x890");
 	}
 }

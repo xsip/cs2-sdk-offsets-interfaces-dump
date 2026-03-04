@@ -21,18 +21,18 @@ namespace CS2 {
 	namespace server {
 		class CMathColorBlend : public CS2::server::CLogicalEntity {
 		public:
-			float32 m_flInMin; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_flInMax; // 0x4f4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_OutColor1; // 0x4f8 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Color m_OutColor2; // 0x4fc | Schema_Atomic | Size: 0x4
-			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::Color> m_OutValue; // 0x500 | Schema_Atomic | Size: 0x28
-			char  m_OutValue[0x28]; // 0x500 | Schema_Atomic | Size: 0x28
+			float32 m_flInMin; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_flInMax; // 0x4ac | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_OutColor1; // 0x4b0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_OutColor2; // 0x4b4 | Schema_Atomic | Size: 0x4
+			// GlobalTypes::CEntityOutputTemplate< Color, Color > m_OutValue; // 0x4b8 | Schema_Atomic | Size: 0x20
+			char m_OutValue[0x20]; // 0x4b8 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CMathColorBlend, m_flInMin) == 0x4F0, "m_flInMin in CMathColorBlend should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CMathColorBlend, m_flInMax) == 0x4F4, "m_flInMax in CMathColorBlend should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutColor1) == 0x4F8, "m_OutColor1 in CMathColorBlend should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutColor2) == 0x4FC, "m_OutColor2 in CMathColorBlend should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutValue) == 0x500, "m_OutValue in CMathColorBlend should be at offset 0x500");
-		static_assert(sizeof(CS2::server::CMathColorBlend) == 0x528, "CMathColorBlend size should be 0x528");
+		static_assert(offsetof(CS2::server::CMathColorBlend, m_flInMin) == 0x4A8, "m_flInMin in CMathColorBlend should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CMathColorBlend, m_flInMax) == 0x4AC, "m_flInMax in CMathColorBlend should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutColor1) == 0x4B0, "m_OutColor1 in CMathColorBlend should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutColor2) == 0x4B4, "m_OutColor2 in CMathColorBlend should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutValue) == 0x4B8, "m_OutValue in CMathColorBlend should be at offset 0x4B8");
+		static_assert(sizeof(CS2::server::CMathColorBlend) == 0x4D8, "CMathColorBlend size should be 0x4D8");
 	}
 }

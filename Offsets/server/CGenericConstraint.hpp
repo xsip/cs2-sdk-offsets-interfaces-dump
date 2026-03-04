@@ -8,56 +8,56 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x690
+			// Class size: 0x608
 			namespace CGenericConstraint /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_nLinearMotionX = 0x568; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nLinearMotionY = 0x56c; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nLinearMotionZ = 0x570; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearFrequencyX = 0x574; // float32 m_flLinearFrequencyX; |  0x574 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearFrequencyY = 0x578; // float32 m_flLinearFrequencyY; |  0x578 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearFrequencyZ = 0x57c; // float32 m_flLinearFrequencyZ; |  0x57c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearDampingRatioX = 0x580; // float32 m_flLinearDampingRatioX; |  0x580 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearDampingRatioY = 0x584; // float32 m_flLinearDampingRatioY; |  0x584 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearDampingRatioZ = 0x588; // float32 m_flLinearDampingRatioZ; |  0x588 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxLinearImpulseX = 0x58c; // float32 m_flMaxLinearImpulseX; |  0x58c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxLinearImpulseY = 0x590; // float32 m_flMaxLinearImpulseY; |  0x590 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxLinearImpulseZ = 0x594; // float32 m_flMaxLinearImpulseZ; |  0x594 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeX = 0x598; // float32 m_flBreakAfterTimeX; |  0x598 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeY = 0x59c; // float32 m_flBreakAfterTimeY; |  0x59c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeZ = 0x5a0; // float32 m_flBreakAfterTimeZ; |  0x5a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeStartTimeX = 0x5a4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeStartTimeY = 0x5a8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeStartTimeZ = 0x5ac; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeThresholdX = 0x5b0; // float32 m_flBreakAfterTimeThresholdX; |  0x5b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeThresholdY = 0x5b4; // float32 m_flBreakAfterTimeThresholdY; |  0x5b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBreakAfterTimeThresholdZ = 0x5b8; // float32 m_flBreakAfterTimeThresholdZ; |  0x5b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceX = 0x5bc; // float32 m_flNotifyForceX; |  0x5bc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceY = 0x5c0; // float32 m_flNotifyForceY; |  0x5c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceZ = 0x5c4; // float32 m_flNotifyForceZ; |  0x5c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceMinTimeX = 0x5c8; // float32 m_flNotifyForceMinTimeX; |  0x5c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceMinTimeY = 0x5cc; // float32 m_flNotifyForceMinTimeY; |  0x5cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceMinTimeZ = 0x5d0; // float32 m_flNotifyForceMinTimeZ; |  0x5d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceLastTimeX = 0x5d4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceLastTimeY = 0x5d8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flNotifyForceLastTimeZ = 0x5dc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bAxisNotifiedX = 0x5e0; // bool m_bAxisNotifiedX; |  0x5e0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bAxisNotifiedY = 0x5e1; // bool m_bAxisNotifiedY; |  0x5e1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bAxisNotifiedZ = 0x5e2; // bool m_bAxisNotifiedZ; |  0x5e2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nAngularMotionX = 0x5e4; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nAngularMotionY = 0x5e8; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nAngularMotionZ = 0x5ec; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularFrequencyX = 0x5f0; // float32 m_flAngularFrequencyX; |  0x5f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularFrequencyY = 0x5f4; // float32 m_flAngularFrequencyY; |  0x5f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularFrequencyZ = 0x5f8; // float32 m_flAngularFrequencyZ; |  0x5f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularDampingRatioX = 0x5fc; // float32 m_flAngularDampingRatioX; |  0x5fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularDampingRatioY = 0x600; // float32 m_flAngularDampingRatioY; |  0x600 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularDampingRatioZ = 0x604; // float32 m_flAngularDampingRatioZ; |  0x604 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxAngularImpulseX = 0x608; // float32 m_flMaxAngularImpulseX; |  0x608 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxAngularImpulseY = 0x60c; // float32 m_flMaxAngularImpulseY; |  0x60c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxAngularImpulseZ = 0x610; // float32 m_flMaxAngularImpulseZ; |  0x610 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_NotifyForceReachedX = 0x618; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_NotifyForceReachedY = 0x640; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_NotifyForceReachedZ = 0x668; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_nLinearMotionX = 0x510; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nLinearMotionY = 0x514; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nLinearMotionZ = 0x518; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearFrequencyX = 0x51c; // float32 m_flLinearFrequencyX; |  0x51c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearFrequencyY = 0x520; // float32 m_flLinearFrequencyY; |  0x520 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearFrequencyZ = 0x524; // float32 m_flLinearFrequencyZ; |  0x524 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearDampingRatioX = 0x528; // float32 m_flLinearDampingRatioX; |  0x528 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearDampingRatioY = 0x52c; // float32 m_flLinearDampingRatioY; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearDampingRatioZ = 0x530; // float32 m_flLinearDampingRatioZ; |  0x530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxLinearImpulseX = 0x534; // float32 m_flMaxLinearImpulseX; |  0x534 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxLinearImpulseY = 0x538; // float32 m_flMaxLinearImpulseY; |  0x538 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxLinearImpulseZ = 0x53c; // float32 m_flMaxLinearImpulseZ; |  0x53c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeX = 0x540; // float32 m_flBreakAfterTimeX; |  0x540 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeY = 0x544; // float32 m_flBreakAfterTimeY; |  0x544 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeZ = 0x548; // float32 m_flBreakAfterTimeZ; |  0x548 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeStartTimeX = 0x54c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeStartTimeY = 0x550; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeStartTimeZ = 0x554; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeThresholdX = 0x558; // float32 m_flBreakAfterTimeThresholdX; |  0x558 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeThresholdY = 0x55c; // float32 m_flBreakAfterTimeThresholdY; |  0x55c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBreakAfterTimeThresholdZ = 0x560; // float32 m_flBreakAfterTimeThresholdZ; |  0x560 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceX = 0x564; // float32 m_flNotifyForceX; |  0x564 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceY = 0x568; // float32 m_flNotifyForceY; |  0x568 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceZ = 0x56c; // float32 m_flNotifyForceZ; |  0x56c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceMinTimeX = 0x570; // float32 m_flNotifyForceMinTimeX; |  0x570 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceMinTimeY = 0x574; // float32 m_flNotifyForceMinTimeY; |  0x574 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceMinTimeZ = 0x578; // float32 m_flNotifyForceMinTimeZ; |  0x578 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceLastTimeX = 0x57c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceLastTimeY = 0x580; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flNotifyForceLastTimeZ = 0x584; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bAxisNotifiedX = 0x588; // bool m_bAxisNotifiedX; |  0x588 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bAxisNotifiedY = 0x589; // bool m_bAxisNotifiedY; |  0x589 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bAxisNotifiedZ = 0x58a; // bool m_bAxisNotifiedZ; |  0x58a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nAngularMotionX = 0x58c; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nAngularMotionY = 0x590; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nAngularMotionZ = 0x594; // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularFrequencyX = 0x598; // float32 m_flAngularFrequencyX; |  0x598 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularFrequencyY = 0x59c; // float32 m_flAngularFrequencyY; |  0x59c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularFrequencyZ = 0x5a0; // float32 m_flAngularFrequencyZ; |  0x5a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularDampingRatioX = 0x5a4; // float32 m_flAngularDampingRatioX; |  0x5a4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularDampingRatioY = 0x5a8; // float32 m_flAngularDampingRatioY; |  0x5a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularDampingRatioZ = 0x5ac; // float32 m_flAngularDampingRatioZ; |  0x5ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxAngularImpulseX = 0x5b0; // float32 m_flMaxAngularImpulseX; |  0x5b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxAngularImpulseY = 0x5b4; // float32 m_flMaxAngularImpulseY; |  0x5b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxAngularImpulseZ = 0x5b8; // float32 m_flMaxAngularImpulseZ; |  0x5b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_NotifyForceReachedX = 0x5c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_NotifyForceReachedY = 0x5d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_NotifyForceReachedZ = 0x5f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

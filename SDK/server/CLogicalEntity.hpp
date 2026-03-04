@@ -22,6 +22,6 @@ namespace CS2 {
 		class CLogicalEntity : public CS2::server::CServerOnlyEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CLogicalEntity) == 0x4F0, "CLogicalEntity size should be 0x4F0");
+		static_assert(sizeof(CS2::server::CLogicalEntity) == 0x4A8, "CLogicalEntity size should be 0x4A8");
 	}
 }

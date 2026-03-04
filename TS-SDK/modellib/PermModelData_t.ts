@@ -1,6 +1,6 @@
 // generated - do not edit!
 
-// Class size: 0x2C8
+// Class size: 0x2F8
 // BaseClass: NONE
 export const modellib_PermModelData_t  = {
 	m_name: 0n, // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
@@ -26,4 +26,6 @@ export const modellib_PermModelData_t  = {
 	m_BodyGroupsHiddenInTools: 640n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 	m_refAnimIncludeModels: 664n, // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0x18
 	m_AnimatedMaterialAttributes: 688n, // GlobalTypes::CUtlVector<modellib::PermModelDataAnimatedMaterialAttribute_t>  | Schema_Atomic | Size: 0x18
+	m_animGraph2Refs: 712n, // GlobalTypes::CUtlVector<modellib::ModelAnimGraph2Ref_t>  | Schema_Atomic | Size: 0x18
+	m_vecNmSkeletonRefs: 736n, // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>>  | Schema_Atomic | Size: 0x18
 }

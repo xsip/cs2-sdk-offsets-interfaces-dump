@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CLogicalEntity.hpp>
+#include <SDK/server/CLightEntity.hpp>
 
 
 
@@ -21,26 +22,26 @@ namespace CS2 {
 	namespace server {
 		class CMultiLightProxy : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszLightNameFilter; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszLightClassFilter; // 0x4f8 | Schema_Atomic | Size: 0x8
-			float32 m_flLightRadiusFilter; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_flBrightnessDelta; // 0x504 | Schema_Builtin | Size: 0x4
-			bool m_bPerformScreenFade; // 0x508 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszLightNameFilter; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszLightClassFilter; // 0x4b0 | Schema_Atomic | Size: 0x8
+			float32 m_flLightRadiusFilter; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_flBrightnessDelta; // 0x4bc | Schema_Builtin | Size: 0x4
+			bool m_bPerformScreenFade; // 0x4c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flTargetBrightnessMultiplier; // 0x50c | Schema_Builtin | Size: 0x4
-			float32 m_flCurrentBrightnessMultiplier; // 0x510 | Schema_Builtin | Size: 0x4
+			float32 m_flTargetBrightnessMultiplier; // 0x4c4 | Schema_Builtin | Size: 0x4
+			float32 m_flCurrentBrightnessMultiplier; // 0x4c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>> m_vecLights; // 0x518 | Schema_Atomic | Size: 0x18
-			char  m_vecLights[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
+			server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>> m_vecLights; // 0x4d0 | Schema_Atomic | Size: 0x18
+			// char m_vecLights[0x18]; // 0x4d0 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightNameFilter) == 0x4F0, "m_iszLightNameFilter in CMultiLightProxy should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightClassFilter) == 0x4F8, "m_iszLightClassFilter in CMultiLightProxy should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flLightRadiusFilter) == 0x500, "m_flLightRadiusFilter in CMultiLightProxy should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flBrightnessDelta) == 0x504, "m_flBrightnessDelta in CMultiLightProxy should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_bPerformScreenFade) == 0x508, "m_bPerformScreenFade in CMultiLightProxy should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flTargetBrightnessMultiplier) == 0x50C, "m_flTargetBrightnessMultiplier in CMultiLightProxy should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flCurrentBrightnessMultiplier) == 0x510, "m_flCurrentBrightnessMultiplier in CMultiLightProxy should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CMultiLightProxy, m_vecLights) == 0x518, "m_vecLights in CMultiLightProxy should be at offset 0x518");
-		static_assert(sizeof(CS2::server::CMultiLightProxy) == 0x530, "CMultiLightProxy size should be 0x530");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightNameFilter) == 0x4A8, "m_iszLightNameFilter in CMultiLightProxy should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightClassFilter) == 0x4B0, "m_iszLightClassFilter in CMultiLightProxy should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flLightRadiusFilter) == 0x4B8, "m_flLightRadiusFilter in CMultiLightProxy should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flBrightnessDelta) == 0x4BC, "m_flBrightnessDelta in CMultiLightProxy should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_bPerformScreenFade) == 0x4C0, "m_bPerformScreenFade in CMultiLightProxy should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flTargetBrightnessMultiplier) == 0x4C4, "m_flTargetBrightnessMultiplier in CMultiLightProxy should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flCurrentBrightnessMultiplier) == 0x4C8, "m_flCurrentBrightnessMultiplier in CMultiLightProxy should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CMultiLightProxy, m_vecLights) == 0x4D0, "m_vecLights in CMultiLightProxy should be at offset 0x4D0");
+		static_assert(sizeof(CS2::server::CMultiLightProxy) == 0x4E8, "CMultiLightProxy size should be 0x4E8");
 	}
 }

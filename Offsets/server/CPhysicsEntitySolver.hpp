@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x518
+			// Class size: 0x4D0
 			namespace CPhysicsEntitySolver /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_hMovingEntity = 0x508; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hPhysicsBlocker = 0x50c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_separationDuration = 0x510; // float32 m_separationDuration; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_cancelTime = 0x514; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hMovingEntity = 0x4c0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPhysicsBlocker = 0x4c4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_separationDuration = 0x4c8; // float32 m_separationDuration; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_cancelTime = 0x4cc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

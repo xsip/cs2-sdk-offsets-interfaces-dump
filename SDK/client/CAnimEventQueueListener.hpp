@@ -21,8 +21,8 @@ namespace CS2 {
 	namespace client {
 		class CAnimEventQueueListener : public CS2::client::CAnimEventListenerBase {
 		public:
-			S2_PAD(0x30);
+			S2_PAD(0x8);
 		};
-		static_assert(sizeof(CS2::client::CAnimEventQueueListener) == 0x50, "CAnimEventQueueListener size should be 0x50");
+		static_assert(sizeof(CS2::client::CAnimEventQueueListener) == 0x20, "CAnimEventQueueListener size should be 0x20");
 	}
 }

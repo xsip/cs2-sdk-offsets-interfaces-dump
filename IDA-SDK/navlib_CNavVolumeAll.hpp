@@ -4,8 +4,8 @@
 
 
 class navlib_CNavVolumeAll {
-    char pad_2752[0x78];
-    char vTable4175[0x8];
+    char pad_2849[0x78];
+    void **__vftable_0;
     bool m_bHasBeenPreFiltered;
-    char end_pad_4176[0x1f];
+    char end_pad_4290[0x1f];
 };

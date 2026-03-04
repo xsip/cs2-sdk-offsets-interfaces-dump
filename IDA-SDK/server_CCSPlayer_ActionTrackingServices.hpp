@@ -4,17 +4,71 @@
 
 #include "entity2_CNetworkVarChainer.hpp"
 #include "server_WeaponPurchaseTracker_t.hpp"
+#include "server_WeaponPurchaseTracker_t.hpp"
 
 class server_CCSPlayer_ActionTrackingServices {
-    char vTable1208[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1209[0x10];
-    char vTable3410[0x1b0];
+    char pad_2013[0x18];
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
+    void **__vftable_6;
+    void **__vftable_7;
+    void **__vftable_8;
+    void **__vftable_9;
+    void **__vftable_10;
+    void **__vftable_11;
+    void **__vftable_12;
+    void **__vftable_13;
+    void **__vftable_14;
+    void **__vftable_15;
+    void **__vftable_16;
+    void **__vftable_17;
+    void **__vftable_18;
+    void **__vftable_19;
+    void **__vftable_20;
+    void **__vftable_21;
+    void **__vftable_22;
+    void **__vftable_23;
+    void **__vftable_24;
+    void **__vftable_25;
+    void **__vftable_26;
+    void **__vftable_27;
+    void **__vftable_28;
+    void **__vftable_29;
+    void **__vftable_30;
+    void **__vftable_31;
+    void **__vftable_32;
+    void **__vftable_33;
+    void **__vftable_34;
+    void **__vftable_35;
+    void **__vftable_36;
+    void **__vftable_37;
+    void **__vftable_38;
+    void **__vftable_39;
+    void **__vftable_40;
+    void **__vftable_41;
+    void **__vftable_42;
+    void **__vftable_43;
+    void **__vftable_44;
+    void **__vftable_45;
+    void **__vftable_46;
+    void **__vftable_47;
+    void **__vftable_48;
+    void **__vftable_49;
+    void **__vftable_50;
+    void **__vftable_51;
+    void **__vftable_52;
+    void **__vftable_53;
+    void **__vftable_54;
     char m_hLastWeaponBeforeC4AutoSwitch[0x4];
-    char pad_3411[0x28];
+    char pad_3541[0x28];
     bool m_bIsRescuing;
-    char pad_3412[0x3];
+    char pad_3542[0x3];
     server_WeaponPurchaseTracker_t m_weaponPurchasesThisMatch;
     server_WeaponPurchaseTracker_t m_weaponPurchasesThisRound;
-    char end_pad_3413[0x8];
+    char end_pad_3543[0x8];
 };

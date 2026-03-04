@@ -22,121 +22,121 @@ namespace CS2 {
 	namespace server {
 		class CLogicNPCCounter : public CS2::server::CBaseEntity {
 		public:
-			entity2::CEntityIOOutput m_OnMinCountAll; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMaxCountAll; // 0x518 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnFactorAll; // 0x540 | Schema_Atomic | Size: 0x28
-			char  m_OnFactorAll[0x28]; // 0x540 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnMinPlayerDistAll; // 0x568 | Schema_Atomic | Size: 0x28
-			char  m_OnMinPlayerDistAll[0x28]; // 0x568 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_OnMinCount_1; // 0x590 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMaxCount_1; // 0x5b8 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnFactor_1; // 0x5e0 | Schema_Atomic | Size: 0x28
-			char  m_OnFactor_1[0x28]; // 0x5e0 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnMinPlayerDist_1; // 0x608 | Schema_Atomic | Size: 0x28
-			char  m_OnMinPlayerDist_1[0x28]; // 0x608 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_OnMinCount_2; // 0x630 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMaxCount_2; // 0x658 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnFactor_2; // 0x680 | Schema_Atomic | Size: 0x28
-			char  m_OnFactor_2[0x28]; // 0x680 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnMinPlayerDist_2; // 0x6a8 | Schema_Atomic | Size: 0x28
-			char  m_OnMinPlayerDist_2[0x28]; // 0x6a8 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_OnMinCount_3; // 0x6d0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMaxCount_3; // 0x6f8 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnFactor_3; // 0x720 | Schema_Atomic | Size: 0x28
-			char  m_OnFactor_3[0x28]; // 0x720 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnMinPlayerDist_3; // 0x748 | Schema_Atomic | Size: 0x28
-			char  m_OnMinPlayerDist_3[0x28]; // 0x748 | Schema_Atomic | Size: 0x28
-			GlobalTypes::CEntityHandle m_hSource; // 0x770 | Schema_Atomic | Size: 0x4
+			entity2::CEntityIOOutput m_OnMinCountAll; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMaxCountAll; // 0x4c0 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnFactorAll; // 0x4d8 | Schema_Atomic | Size: 0x20
+			char m_OnFactorAll[0x20]; // 0x4d8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnMinPlayerDistAll; // 0x4f8 | Schema_Atomic | Size: 0x20
+			char m_OnMinPlayerDistAll[0x20]; // 0x4f8 | Schema_Atomic | Size: 0x20
+			entity2::CEntityIOOutput m_OnMinCount_1; // 0x518 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMaxCount_1; // 0x530 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnFactor_1; // 0x548 | Schema_Atomic | Size: 0x20
+			char m_OnFactor_1[0x20]; // 0x548 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnMinPlayerDist_1; // 0x568 | Schema_Atomic | Size: 0x20
+			char m_OnMinPlayerDist_1[0x20]; // 0x568 | Schema_Atomic | Size: 0x20
+			entity2::CEntityIOOutput m_OnMinCount_2; // 0x588 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMaxCount_2; // 0x5a0 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnFactor_2; // 0x5b8 | Schema_Atomic | Size: 0x20
+			char m_OnFactor_2[0x20]; // 0x5b8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnMinPlayerDist_2; // 0x5d8 | Schema_Atomic | Size: 0x20
+			char m_OnMinPlayerDist_2[0x20]; // 0x5d8 | Schema_Atomic | Size: 0x20
+			entity2::CEntityIOOutput m_OnMinCount_3; // 0x5f8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMaxCount_3; // 0x610 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnFactor_3; // 0x628 | Schema_Atomic | Size: 0x20
+			char m_OnFactor_3[0x20]; // 0x628 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnMinPlayerDist_3; // 0x648 | Schema_Atomic | Size: 0x20
+			char m_OnMinPlayerDist_3[0x20]; // 0x648 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityHandle m_hSource; // 0x668 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszSourceEntityName; // 0x778 | Schema_Atomic | Size: 0x8
-			float32 m_flDistanceMax; // 0x780 | Schema_Builtin | Size: 0x4
-			bool m_bDisabled; // 0x784 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszSourceEntityName; // 0x670 | Schema_Atomic | Size: 0x8
+			float32 m_flDistanceMax; // 0x678 | Schema_Builtin | Size: 0x4
+			bool m_bDisabled; // 0x67c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nMinCountAll; // 0x788 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxCountAll; // 0x78c | Schema_Builtin | Size: 0x4
-			int32_t m_nMinFactorAll; // 0x790 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxFactorAll; // 0x794 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinCountAll; // 0x680 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxCountAll; // 0x684 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinFactorAll; // 0x688 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxFactorAll; // 0x68c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);
-			GlobalTypes::CUtlSymbolLarge m_iszNPCClassname_1; // 0x7a0 | Schema_Atomic | Size: 0x8
-			int32_t m_nNPCState_1; // 0x7a8 | Schema_Builtin | Size: 0x4
-			bool m_bInvertState_1; // 0x7ac | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszNPCClassname_1; // 0x698 | Schema_Atomic | Size: 0x8
+			int32_t m_nNPCState_1; // 0x6a0 | Schema_Builtin | Size: 0x4
+			bool m_bInvertState_1; // 0x6a4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nMinCount_1; // 0x7b0 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxCount_1; // 0x7b4 | Schema_Builtin | Size: 0x4
-			int32_t m_nMinFactor_1; // 0x7b8 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxFactor_1; // 0x7bc | Schema_Builtin | Size: 0x4
+			int32_t m_nMinCount_1; // 0x6a8 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxCount_1; // 0x6ac | Schema_Builtin | Size: 0x4
+			int32_t m_nMinFactor_1; // 0x6b0 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxFactor_1; // 0x6b4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_flDefaultDist_1; // 0x7c4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszNPCClassname_2; // 0x7c8 | Schema_Atomic | Size: 0x8
-			int32_t m_nNPCState_2; // 0x7d0 | Schema_Builtin | Size: 0x4
-			bool m_bInvertState_2; // 0x7d4 | Schema_Builtin | Size: 0x1
+			float32 m_flDefaultDist_1; // 0x6bc | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszNPCClassname_2; // 0x6c0 | Schema_Atomic | Size: 0x8
+			int32_t m_nNPCState_2; // 0x6c8 | Schema_Builtin | Size: 0x4
+			bool m_bInvertState_2; // 0x6cc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nMinCount_2; // 0x7d8 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxCount_2; // 0x7dc | Schema_Builtin | Size: 0x4
-			int32_t m_nMinFactor_2; // 0x7e0 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxFactor_2; // 0x7e4 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinCount_2; // 0x6d0 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxCount_2; // 0x6d4 | Schema_Builtin | Size: 0x4
+			int32_t m_nMinFactor_2; // 0x6d8 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxFactor_2; // 0x6dc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_flDefaultDist_2; // 0x7ec | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszNPCClassname_3; // 0x7f0 | Schema_Atomic | Size: 0x8
-			int32_t m_nNPCState_3; // 0x7f8 | Schema_Builtin | Size: 0x4
-			bool m_bInvertState_3; // 0x7fc | Schema_Builtin | Size: 0x1
+			float32 m_flDefaultDist_2; // 0x6e4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszNPCClassname_3; // 0x6e8 | Schema_Atomic | Size: 0x8
+			int32_t m_nNPCState_3; // 0x6f0 | Schema_Builtin | Size: 0x4
+			bool m_bInvertState_3; // 0x6f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nMinCount_3; // 0x800 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxCount_3; // 0x804 | Schema_Builtin | Size: 0x4
-			int32_t m_nMinFactor_3; // 0x808 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxFactor_3; // 0x80c | Schema_Builtin | Size: 0x4
+			int32_t m_nMinCount_3; // 0x6f8 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxCount_3; // 0x6fc | Schema_Builtin | Size: 0x4
+			int32_t m_nMinFactor_3; // 0x700 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxFactor_3; // 0x704 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_flDefaultDist_3; // 0x814 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultDist_3; // 0x70c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCountAll) == 0x4F0, "m_OnMinCountAll in CLogicNPCCounter should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCountAll) == 0x518, "m_OnMaxCountAll in CLogicNPCCounter should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactorAll) == 0x540, "m_OnFactorAll in CLogicNPCCounter should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDistAll) == 0x568, "m_OnMinPlayerDistAll in CLogicNPCCounter should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCount_1) == 0x590, "m_OnMinCount_1 in CLogicNPCCounter should be at offset 0x590");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCount_1) == 0x5B8, "m_OnMaxCount_1 in CLogicNPCCounter should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactor_1) == 0x5E0, "m_OnFactor_1 in CLogicNPCCounter should be at offset 0x5E0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDist_1) == 0x608, "m_OnMinPlayerDist_1 in CLogicNPCCounter should be at offset 0x608");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCount_2) == 0x630, "m_OnMinCount_2 in CLogicNPCCounter should be at offset 0x630");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCount_2) == 0x658, "m_OnMaxCount_2 in CLogicNPCCounter should be at offset 0x658");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactor_2) == 0x680, "m_OnFactor_2 in CLogicNPCCounter should be at offset 0x680");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDist_2) == 0x6A8, "m_OnMinPlayerDist_2 in CLogicNPCCounter should be at offset 0x6A8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCount_3) == 0x6D0, "m_OnMinCount_3 in CLogicNPCCounter should be at offset 0x6D0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCount_3) == 0x6F8, "m_OnMaxCount_3 in CLogicNPCCounter should be at offset 0x6F8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactor_3) == 0x720, "m_OnFactor_3 in CLogicNPCCounter should be at offset 0x720");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDist_3) == 0x748, "m_OnMinPlayerDist_3 in CLogicNPCCounter should be at offset 0x748");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_hSource) == 0x770, "m_hSource in CLogicNPCCounter should be at offset 0x770");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszSourceEntityName) == 0x778, "m_iszSourceEntityName in CLogicNPCCounter should be at offset 0x778");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDistanceMax) == 0x780, "m_flDistanceMax in CLogicNPCCounter should be at offset 0x780");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bDisabled) == 0x784, "m_bDisabled in CLogicNPCCounter should be at offset 0x784");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCountAll) == 0x788, "m_nMinCountAll in CLogicNPCCounter should be at offset 0x788");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCountAll) == 0x78C, "m_nMaxCountAll in CLogicNPCCounter should be at offset 0x78C");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactorAll) == 0x790, "m_nMinFactorAll in CLogicNPCCounter should be at offset 0x790");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactorAll) == 0x794, "m_nMaxFactorAll in CLogicNPCCounter should be at offset 0x794");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszNPCClassname_1) == 0x7A0, "m_iszNPCClassname_1 in CLogicNPCCounter should be at offset 0x7A0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nNPCState_1) == 0x7A8, "m_nNPCState_1 in CLogicNPCCounter should be at offset 0x7A8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bInvertState_1) == 0x7AC, "m_bInvertState_1 in CLogicNPCCounter should be at offset 0x7AC");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCount_1) == 0x7B0, "m_nMinCount_1 in CLogicNPCCounter should be at offset 0x7B0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCount_1) == 0x7B4, "m_nMaxCount_1 in CLogicNPCCounter should be at offset 0x7B4");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactor_1) == 0x7B8, "m_nMinFactor_1 in CLogicNPCCounter should be at offset 0x7B8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactor_1) == 0x7BC, "m_nMaxFactor_1 in CLogicNPCCounter should be at offset 0x7BC");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDefaultDist_1) == 0x7C4, "m_flDefaultDist_1 in CLogicNPCCounter should be at offset 0x7C4");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszNPCClassname_2) == 0x7C8, "m_iszNPCClassname_2 in CLogicNPCCounter should be at offset 0x7C8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nNPCState_2) == 0x7D0, "m_nNPCState_2 in CLogicNPCCounter should be at offset 0x7D0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bInvertState_2) == 0x7D4, "m_bInvertState_2 in CLogicNPCCounter should be at offset 0x7D4");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCount_2) == 0x7D8, "m_nMinCount_2 in CLogicNPCCounter should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCount_2) == 0x7DC, "m_nMaxCount_2 in CLogicNPCCounter should be at offset 0x7DC");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactor_2) == 0x7E0, "m_nMinFactor_2 in CLogicNPCCounter should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactor_2) == 0x7E4, "m_nMaxFactor_2 in CLogicNPCCounter should be at offset 0x7E4");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDefaultDist_2) == 0x7EC, "m_flDefaultDist_2 in CLogicNPCCounter should be at offset 0x7EC");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszNPCClassname_3) == 0x7F0, "m_iszNPCClassname_3 in CLogicNPCCounter should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nNPCState_3) == 0x7F8, "m_nNPCState_3 in CLogicNPCCounter should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bInvertState_3) == 0x7FC, "m_bInvertState_3 in CLogicNPCCounter should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCount_3) == 0x800, "m_nMinCount_3 in CLogicNPCCounter should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCount_3) == 0x804, "m_nMaxCount_3 in CLogicNPCCounter should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactor_3) == 0x808, "m_nMinFactor_3 in CLogicNPCCounter should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactor_3) == 0x80C, "m_nMaxFactor_3 in CLogicNPCCounter should be at offset 0x80C");
-		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDefaultDist_3) == 0x814, "m_flDefaultDist_3 in CLogicNPCCounter should be at offset 0x814");
-		static_assert(sizeof(CS2::server::CLogicNPCCounter) == 0x830, "CLogicNPCCounter size should be 0x830");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCountAll) == 0x4A8, "m_OnMinCountAll in CLogicNPCCounter should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCountAll) == 0x4C0, "m_OnMaxCountAll in CLogicNPCCounter should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactorAll) == 0x4D8, "m_OnFactorAll in CLogicNPCCounter should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDistAll) == 0x4F8, "m_OnMinPlayerDistAll in CLogicNPCCounter should be at offset 0x4F8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCount_1) == 0x518, "m_OnMinCount_1 in CLogicNPCCounter should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCount_1) == 0x530, "m_OnMaxCount_1 in CLogicNPCCounter should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactor_1) == 0x548, "m_OnFactor_1 in CLogicNPCCounter should be at offset 0x548");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDist_1) == 0x568, "m_OnMinPlayerDist_1 in CLogicNPCCounter should be at offset 0x568");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCount_2) == 0x588, "m_OnMinCount_2 in CLogicNPCCounter should be at offset 0x588");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCount_2) == 0x5A0, "m_OnMaxCount_2 in CLogicNPCCounter should be at offset 0x5A0");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactor_2) == 0x5B8, "m_OnFactor_2 in CLogicNPCCounter should be at offset 0x5B8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDist_2) == 0x5D8, "m_OnMinPlayerDist_2 in CLogicNPCCounter should be at offset 0x5D8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCount_3) == 0x5F8, "m_OnMinCount_3 in CLogicNPCCounter should be at offset 0x5F8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCount_3) == 0x610, "m_OnMaxCount_3 in CLogicNPCCounter should be at offset 0x610");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactor_3) == 0x628, "m_OnFactor_3 in CLogicNPCCounter should be at offset 0x628");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinPlayerDist_3) == 0x648, "m_OnMinPlayerDist_3 in CLogicNPCCounter should be at offset 0x648");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_hSource) == 0x668, "m_hSource in CLogicNPCCounter should be at offset 0x668");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszSourceEntityName) == 0x670, "m_iszSourceEntityName in CLogicNPCCounter should be at offset 0x670");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDistanceMax) == 0x678, "m_flDistanceMax in CLogicNPCCounter should be at offset 0x678");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bDisabled) == 0x67C, "m_bDisabled in CLogicNPCCounter should be at offset 0x67C");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCountAll) == 0x680, "m_nMinCountAll in CLogicNPCCounter should be at offset 0x680");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCountAll) == 0x684, "m_nMaxCountAll in CLogicNPCCounter should be at offset 0x684");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactorAll) == 0x688, "m_nMinFactorAll in CLogicNPCCounter should be at offset 0x688");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactorAll) == 0x68C, "m_nMaxFactorAll in CLogicNPCCounter should be at offset 0x68C");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszNPCClassname_1) == 0x698, "m_iszNPCClassname_1 in CLogicNPCCounter should be at offset 0x698");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nNPCState_1) == 0x6A0, "m_nNPCState_1 in CLogicNPCCounter should be at offset 0x6A0");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bInvertState_1) == 0x6A4, "m_bInvertState_1 in CLogicNPCCounter should be at offset 0x6A4");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCount_1) == 0x6A8, "m_nMinCount_1 in CLogicNPCCounter should be at offset 0x6A8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCount_1) == 0x6AC, "m_nMaxCount_1 in CLogicNPCCounter should be at offset 0x6AC");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactor_1) == 0x6B0, "m_nMinFactor_1 in CLogicNPCCounter should be at offset 0x6B0");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactor_1) == 0x6B4, "m_nMaxFactor_1 in CLogicNPCCounter should be at offset 0x6B4");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDefaultDist_1) == 0x6BC, "m_flDefaultDist_1 in CLogicNPCCounter should be at offset 0x6BC");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszNPCClassname_2) == 0x6C0, "m_iszNPCClassname_2 in CLogicNPCCounter should be at offset 0x6C0");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nNPCState_2) == 0x6C8, "m_nNPCState_2 in CLogicNPCCounter should be at offset 0x6C8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bInvertState_2) == 0x6CC, "m_bInvertState_2 in CLogicNPCCounter should be at offset 0x6CC");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCount_2) == 0x6D0, "m_nMinCount_2 in CLogicNPCCounter should be at offset 0x6D0");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCount_2) == 0x6D4, "m_nMaxCount_2 in CLogicNPCCounter should be at offset 0x6D4");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactor_2) == 0x6D8, "m_nMinFactor_2 in CLogicNPCCounter should be at offset 0x6D8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactor_2) == 0x6DC, "m_nMaxFactor_2 in CLogicNPCCounter should be at offset 0x6DC");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDefaultDist_2) == 0x6E4, "m_flDefaultDist_2 in CLogicNPCCounter should be at offset 0x6E4");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_iszNPCClassname_3) == 0x6E8, "m_iszNPCClassname_3 in CLogicNPCCounter should be at offset 0x6E8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nNPCState_3) == 0x6F0, "m_nNPCState_3 in CLogicNPCCounter should be at offset 0x6F0");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_bInvertState_3) == 0x6F4, "m_bInvertState_3 in CLogicNPCCounter should be at offset 0x6F4");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinCount_3) == 0x6F8, "m_nMinCount_3 in CLogicNPCCounter should be at offset 0x6F8");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxCount_3) == 0x6FC, "m_nMaxCount_3 in CLogicNPCCounter should be at offset 0x6FC");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMinFactor_3) == 0x700, "m_nMinFactor_3 in CLogicNPCCounter should be at offset 0x700");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactor_3) == 0x704, "m_nMaxFactor_3 in CLogicNPCCounter should be at offset 0x704");
+		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDefaultDist_3) == 0x70C, "m_flDefaultDist_3 in CLogicNPCCounter should be at offset 0x70C");
+		static_assert(sizeof(CS2::server::CLogicNPCCounter) == 0x728, "CLogicNPCCounter size should be 0x728");
 	}
 }

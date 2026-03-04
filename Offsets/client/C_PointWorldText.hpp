@@ -8,25 +8,27 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1180
+			// Class size: 0x1160
 			namespace C_PointWorldText /*: public CS2::client::C_ModelPointEntity*/ {
-				constexpr std::ptrdiff_t m_bForceRecreateNextUpdate = 0xeb8; // bool m_bForceRecreateNextUpdate; |  0xeb8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_messageText = 0xed0; // char m_messageText[512]; |  0xed0 | Schema_FixedArray | Size: 0x200
-				constexpr std::ptrdiff_t m_FontName = 0x10d0; // char m_FontName[64]; |  0x10d0 | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_BackgroundMaterialName = 0x1110; // char m_BackgroundMaterialName[64]; |  0x1110 | Schema_FixedArray | Size: 0x40
-				constexpr std::ptrdiff_t m_bEnabled = 0x1150; // bool m_bEnabled; |  0x1150 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFullbright = 0x1151; // bool m_bFullbright; |  0x1151 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flWorldUnitsPerPx = 0x1154; // float32 m_flWorldUnitsPerPx; |  0x1154 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFontSize = 0x1158; // float32 m_flFontSize; |  0x1158 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDepthOffset = 0x115c; // float32 m_flDepthOffset; |  0x115c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDrawBackground = 0x1160; // bool m_bDrawBackground; |  0x1160 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0x1164; // float32 m_flBackgroundBorderWidth; |  0x1164 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0x1168; // float32 m_flBackgroundBorderHeight; |  0x1168 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0x116c; // float32 m_flBackgroundWorldToUV; |  0x116c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Color = 0x1170; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0x1174; // client::PointWorldTextJustifyHorizontal_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nJustifyVertical = 0x1178; // client::PointWorldTextJustifyVertical_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nReorientMode = 0x117c; // client::PointWorldTextReorientMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bForceRecreateNextUpdate = 0xe90; // bool m_bForceRecreateNextUpdate; |  0xe90 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nTextWidthPx = 0xea8; // int32_t m_nTextWidthPx; |  0xea8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTextHeightPx = 0xeac; // int32_t m_nTextHeightPx; |  0xeac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_messageText = 0xeb0; // char m_messageText[512]; |  0xeb0 | Schema_FixedArray | Size: 0x200
+				constexpr std::ptrdiff_t m_FontName = 0x10b0; // char m_FontName[64]; |  0x10b0 | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_BackgroundMaterialName = 0x10f0; // char m_BackgroundMaterialName[64]; |  0x10f0 | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_bEnabled = 0x1130; // bool m_bEnabled; |  0x1130 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFullbright = 0x1131; // bool m_bFullbright; |  0x1131 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flWorldUnitsPerPx = 0x1134; // float32 m_flWorldUnitsPerPx; |  0x1134 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFontSize = 0x1138; // float32 m_flFontSize; |  0x1138 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDepthOffset = 0x113c; // float32 m_flDepthOffset; |  0x113c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDrawBackground = 0x1140; // bool m_bDrawBackground; |  0x1140 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flBackgroundBorderWidth = 0x1144; // float32 m_flBackgroundBorderWidth; |  0x1144 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBackgroundBorderHeight = 0x1148; // float32 m_flBackgroundBorderHeight; |  0x1148 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBackgroundWorldToUV = 0x114c; // float32 m_flBackgroundWorldToUV; |  0x114c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0x1150; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyHorizontal = 0x1154; // client::PointWorldTextJustifyHorizontal_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nJustifyVertical = 0x1158; // client::PointWorldTextJustifyVertical_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nReorientMode = 0x115c; // client::PointWorldTextReorientMode_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

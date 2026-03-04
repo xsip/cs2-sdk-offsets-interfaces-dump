@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CPulseCell_Outflow_PlaySceneBase.hpp>
+#include <SDK/pulse_runtime_lib/CPulse_OutflowConnection.hpp>
 
 
 
@@ -22,9 +23,13 @@ namespace CS2 {
 		class CPulseCell_Outflow_PlayVCD : public CS2::server::CPulseCell_Outflow_PlaySceneBase {
 		public:
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCChoreoSceneResource> m_hChoreoScene; // 0xf0 | Schema_Atomic | Size: 0x8
-			char  m_hChoreoScene[0x8]; // 0xf0 | Schema_Atomic | Size: 0x8
+			char m_hChoreoScene[0x8]; // 0xf0 | Schema_Atomic | Size: 0x8
+			pulse_runtime_lib::CPulse_OutflowConnection m_OnPaused; // 0xf8 | Schema_DeclaredClass | Size: 0x48
+			pulse_runtime_lib::CPulse_OutflowConnection m_OnResumed; // 0x140 | Schema_DeclaredClass | Size: 0x48
 		};
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlayVCD, m_hChoreoScene) == 0xF0, "m_hChoreoScene in CPulseCell_Outflow_PlayVCD should be at offset 0xF0");
-		static_assert(sizeof(CS2::server::CPulseCell_Outflow_PlayVCD) == 0xF8, "CPulseCell_Outflow_PlayVCD size should be 0xF8");
+		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlayVCD, m_OnPaused) == 0xF8, "m_OnPaused in CPulseCell_Outflow_PlayVCD should be at offset 0xF8");
+		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlayVCD, m_OnResumed) == 0x140, "m_OnResumed in CPulseCell_Outflow_PlayVCD should be at offset 0x140");
+		static_assert(sizeof(CS2::server::CPulseCell_Outflow_PlayVCD) == 0x188, "CPulseCell_Outflow_PlayVCD size should be 0x188");
 	}
 }

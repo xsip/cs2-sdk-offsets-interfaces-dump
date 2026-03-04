@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x1A8
+			// Class size: 0x1B0
 			namespace CCSPlayer_CameraServices /*: public CS2::server::CCSPlayerBase_CameraServices*/ {
 				// NO SCHEMA DATA FOUND!
 			}

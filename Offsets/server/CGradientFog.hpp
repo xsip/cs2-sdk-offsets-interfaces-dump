@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x530
+			// Class size: 0x4E8
 			namespace CGradientFog /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_hGradientFogTexture = 0x4f0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flFogStartDistance = 0x4f8; // float32 m_flFogStartDistance; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogEndDistance = 0x4fc; // float32 m_flFogEndDistance; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bHeightFogEnabled = 0x500; // bool m_bHeightFogEnabled; |  0x500 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flFogStartHeight = 0x504; // float32 m_flFogStartHeight; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogEndHeight = 0x508; // float32 m_flFogEndHeight; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFarZ = 0x50c; // float32 m_flFarZ; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogMaxOpacity = 0x510; // float32 m_flFogMaxOpacity; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogFalloffExponent = 0x514; // float32 m_flFogFalloffExponent; |  0x514 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogVerticalExponent = 0x518; // float32 m_flFogVerticalExponent; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fogColor = 0x51c; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogStrength = 0x520; // float32 m_flFogStrength; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeTime = 0x524; // float32 m_flFadeTime; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bStartDisabled = 0x528; // bool m_bStartDisabled; |  0x528 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsEnabled = 0x529; // bool m_bIsEnabled; |  0x529 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bGradientFogNeedsTextures = 0x52a; // bool m_bGradientFogNeedsTextures; |  0x52a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hGradientFogTexture = 0x4a8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flFogStartDistance = 0x4b0; // float32 m_flFogStartDistance; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogEndDistance = 0x4b4; // float32 m_flFogEndDistance; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bHeightFogEnabled = 0x4b8; // bool m_bHeightFogEnabled; |  0x4b8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFogStartHeight = 0x4bc; // float32 m_flFogStartHeight; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogEndHeight = 0x4c0; // float32 m_flFogEndHeight; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFarZ = 0x4c4; // float32 m_flFarZ; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogMaxOpacity = 0x4c8; // float32 m_flFogMaxOpacity; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogFalloffExponent = 0x4cc; // float32 m_flFogFalloffExponent; |  0x4cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogVerticalExponent = 0x4d0; // float32 m_flFogVerticalExponent; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fogColor = 0x4d4; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogStrength = 0x4d8; // float32 m_flFogStrength; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeTime = 0x4dc; // float32 m_flFadeTime; |  0x4dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bStartDisabled = 0x4e0; // bool m_bStartDisabled; |  0x4e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsEnabled = 0x4e1; // bool m_bIsEnabled; |  0x4e1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bGradientFogNeedsTextures = 0x4e2; // bool m_bGradientFogNeedsTextures; |  0x4e2 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

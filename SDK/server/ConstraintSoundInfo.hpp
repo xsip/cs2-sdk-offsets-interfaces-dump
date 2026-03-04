@@ -31,7 +31,9 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszTravelSoundFwd; // 0x50 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszTravelSoundBack; // 0x58 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x18);
-			GlobalTypes::CUtlSymbolLarge m_iszReversalSounds[3]; // 0x78 | Schema_FixedArray | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_iszReversalSoundSmall; // 0x78 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszReversalSoundMedium; // 0x80 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszReversalSoundLarge; // 0x88 | Schema_Atomic | Size: 0x8
 			bool m_bPlayTravelSound; // 0x90 | Schema_Builtin | Size: 0x1
 			bool m_bPlayReversalSound; // 0x91 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
@@ -41,7 +43,9 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_forwardAxis) == 0x40, "m_forwardAxis in ConstraintSoundInfo should be at offset 0x40");
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_iszTravelSoundFwd) == 0x50, "m_iszTravelSoundFwd in ConstraintSoundInfo should be at offset 0x50");
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_iszTravelSoundBack) == 0x58, "m_iszTravelSoundBack in ConstraintSoundInfo should be at offset 0x58");
-		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_iszReversalSounds) == 0x78, "m_iszReversalSounds in ConstraintSoundInfo should be at offset 0x78");
+		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_iszReversalSoundSmall) == 0x78, "m_iszReversalSoundSmall in ConstraintSoundInfo should be at offset 0x78");
+		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_iszReversalSoundMedium) == 0x80, "m_iszReversalSoundMedium in ConstraintSoundInfo should be at offset 0x80");
+		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_iszReversalSoundLarge) == 0x88, "m_iszReversalSoundLarge in ConstraintSoundInfo should be at offset 0x88");
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_bPlayTravelSound) == 0x90, "m_bPlayTravelSound in ConstraintSoundInfo should be at offset 0x90");
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_bPlayReversalSound) == 0x91, "m_bPlayReversalSound in ConstraintSoundInfo should be at offset 0x91");
 		static_assert(sizeof(CS2::server::ConstraintSoundInfo) == 0x98, "ConstraintSoundInfo size should be 0x98");

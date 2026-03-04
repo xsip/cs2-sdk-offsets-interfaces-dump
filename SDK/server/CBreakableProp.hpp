@@ -16,6 +16,7 @@
 #include <SDK/client/PerformanceMode_t.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
 #include <SDK/client/BreakableContentsType_t.hpp>
+#include <SDK/client/BaseExplosionTypes_t.hpp>
 
 
 
@@ -33,79 +34,80 @@ namespace CS2 {
 		class CBreakableProp : public CS2::server::CBaseProp {
 		public:
 			S2_PAD(0x8);
-			server::CPropDataComponent m_CPropDataComponent; // 0xac8 | Schema_DeclaredClass | Size: 0x40
-			entity2::CEntityIOOutput m_OnStartDeath; // 0xb08 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBreak; // 0xb30 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OnHealthChanged; // 0xb58 | Schema_Atomic | Size: 0x28
-			char  m_OnHealthChanged[0x28]; // 0xb58 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_OnTakeDamage; // 0xb80 | Schema_DeclaredClass | Size: 0x28
-			float32 m_impactEnergyScale; // 0xba8 | Schema_Builtin | Size: 0x4
-			int32_t m_iMinHealthDmg; // 0xbac | Schema_Builtin | Size: 0x4
-			GlobalTypes::QAngle m_preferredCarryAngles; // 0xbb0 | Schema_Atomic | Size: 0xc
-			float32 m_flPressureDelay; // 0xbbc | Schema_Builtin | Size: 0x4
-			float32 m_flDefBurstScale; // 0xbc0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vDefBurstOffset; // 0xbc4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle<server::CBaseEntity> m_hBreaker; // 0xbd0 | Schema_Atomic | Size: 0x4
-			// char  m_hBreaker[0x4]; // 0xbd0 | Schema_Atomic | Size: 0x4
-			client::PerformanceMode_t m_PerformanceMode; // 0xbd4 | Schema_DeclaredEnum | Size: 0x4
-			entity2::GameTime_t m_flPreventDamageBeforeTime; // 0xbd8 | Schema_DeclaredClass | Size: 0x4
-			client::BreakableContentsType_t m_BreakableContentsType; // 0xbdc | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CUtlString m_strBreakableContentsPropGroupOverride; // 0xbe0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_strBreakableContentsParticleOverride; // 0xbe8 | Schema_Atomic | Size: 0x8
-			bool m_bHasBreakPiecesOrCommands; // 0xbf0 | Schema_Builtin | Size: 0x1
+			server::CPropDataComponent m_CPropDataComponent; // 0xa58 | Schema_DeclaredClass | Size: 0x40
+			entity2::CEntityIOOutput m_OnStartDeath; // 0xa98 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnBreak; // 0xab0 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnHealthChanged; // 0xac8 | Schema_Atomic | Size: 0x20
+			char m_OnHealthChanged[0x20]; // 0xac8 | Schema_Atomic | Size: 0x20
+			entity2::CEntityIOOutput m_OnTakeDamage; // 0xae8 | Schema_DeclaredClass | Size: 0x18
+			float32 m_impactEnergyScale; // 0xb00 | Schema_Builtin | Size: 0x4
+			int32_t m_iMinHealthDmg; // 0xb04 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_preferredCarryAngles; // 0xb08 | Schema_Atomic | Size: 0xc
+			float32 m_flPressureDelay; // 0xb14 | Schema_Builtin | Size: 0x4
+			float32 m_flDefBurstScale; // 0xb18 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vDefBurstOffset; // 0xb1c | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<server::CBaseEntity> m_hBreaker; // 0xb28 | Schema_Atomic | Size: 0x4
+			// char m_hBreaker[0x4]; // 0xb28 | Schema_Atomic | Size: 0x4
+			client::PerformanceMode_t m_PerformanceMode; // 0xb2c | Schema_DeclaredEnum | Size: 0x4
+			entity2::GameTime_t m_flPreventDamageBeforeTime; // 0xb30 | Schema_DeclaredClass | Size: 0x4
+			client::BreakableContentsType_t m_BreakableContentsType; // 0xb34 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlString m_strBreakableContentsPropGroupOverride; // 0xb38 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_strBreakableContentsParticleOverride; // 0xb40 | Schema_Atomic | Size: 0x8
+			bool m_bHasBreakPiecesOrCommands; // 0xb48 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_explodeDamage; // 0xbf4 | Schema_Builtin | Size: 0x4
-			float32 m_explodeRadius; // 0xbf8 | Schema_Builtin | Size: 0x4
+			float32 m_explodeDamage; // 0xb4c | Schema_Builtin | Size: 0x4
+			float32 m_explodeRadius; // 0xb50 | Schema_Builtin | Size: 0x4
+			client::BaseExplosionTypes_t m_nExplosionType; // 0xb54 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_explosionDelay; // 0xb58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_explosionDelay; // 0xc00 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_explosionBuildupSound; // 0xc08 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_explosionCustomEffect; // 0xc10 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_explosionCustomSound; // 0xc18 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_explosionModifier; // 0xc20 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0xc28 | Schema_Atomic | Size: 0x4
-			// char  m_hPhysicsAttacker[0x4]; // 0xc28 | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xc2c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flDefaultFadeScale; // 0xc30 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hLastAttacker; // 0xc34 | Schema_Atomic | Size: 0x4
-			// char  m_hLastAttacker[0x4]; // 0xc34 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszPuntSound; // 0xc38 | Schema_Atomic | Size: 0x8
-			bool m_bUsePuntSound; // 0xc40 | Schema_Builtin | Size: 0x1
-			bool m_bOriginalBlockLOS; // 0xc41 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xe); // End padding
+			GlobalTypes::CUtlSymbolLarge m_explosionBuildupSound; // 0xb60 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_explosionCustomEffect; // 0xb68 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_explosionCustomSound; // 0xb70 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_explosionModifier; // 0xb78 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0xb80 | Schema_Atomic | Size: 0x4
+			// char m_hPhysicsAttacker[0x4]; // 0xb80 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xb84 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flDefaultFadeScale; // 0xb88 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLastAttacker; // 0xb8c | Schema_Atomic | Size: 0x4
+			// char m_hLastAttacker[0x4]; // 0xb8c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszPuntSound; // 0xb90 | Schema_Atomic | Size: 0x8
+			bool m_bUsePuntSound; // 0xb98 | Schema_Builtin | Size: 0x1
+			bool m_bOriginalBlockLOS; // 0xb99 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBreakableProp, m_CPropDataComponent) == 0xAC8, "m_CPropDataComponent in CBreakableProp should be at offset 0xAC8");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_OnStartDeath) == 0xB08, "m_OnStartDeath in CBreakableProp should be at offset 0xB08");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_OnBreak) == 0xB30, "m_OnBreak in CBreakableProp should be at offset 0xB30");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_OnHealthChanged) == 0xB58, "m_OnHealthChanged in CBreakableProp should be at offset 0xB58");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_OnTakeDamage) == 0xB80, "m_OnTakeDamage in CBreakableProp should be at offset 0xB80");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_impactEnergyScale) == 0xBA8, "m_impactEnergyScale in CBreakableProp should be at offset 0xBA8");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_iMinHealthDmg) == 0xBAC, "m_iMinHealthDmg in CBreakableProp should be at offset 0xBAC");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_preferredCarryAngles) == 0xBB0, "m_preferredCarryAngles in CBreakableProp should be at offset 0xBB0");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_flPressureDelay) == 0xBBC, "m_flPressureDelay in CBreakableProp should be at offset 0xBBC");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_flDefBurstScale) == 0xBC0, "m_flDefBurstScale in CBreakableProp should be at offset 0xBC0");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_vDefBurstOffset) == 0xBC4, "m_vDefBurstOffset in CBreakableProp should be at offset 0xBC4");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_hBreaker) == 0xBD0, "m_hBreaker in CBreakableProp should be at offset 0xBD0");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_PerformanceMode) == 0xBD4, "m_PerformanceMode in CBreakableProp should be at offset 0xBD4");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_flPreventDamageBeforeTime) == 0xBD8, "m_flPreventDamageBeforeTime in CBreakableProp should be at offset 0xBD8");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_BreakableContentsType) == 0xBDC, "m_BreakableContentsType in CBreakableProp should be at offset 0xBDC");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_strBreakableContentsPropGroupOverride) == 0xBE0, "m_strBreakableContentsPropGroupOverride in CBreakableProp should be at offset 0xBE0");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_strBreakableContentsParticleOverride) == 0xBE8, "m_strBreakableContentsParticleOverride in CBreakableProp should be at offset 0xBE8");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_bHasBreakPiecesOrCommands) == 0xBF0, "m_bHasBreakPiecesOrCommands in CBreakableProp should be at offset 0xBF0");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_explodeDamage) == 0xBF4, "m_explodeDamage in CBreakableProp should be at offset 0xBF4");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_explodeRadius) == 0xBF8, "m_explodeRadius in CBreakableProp should be at offset 0xBF8");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionDelay) == 0xC00, "m_explosionDelay in CBreakableProp should be at offset 0xC00");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionBuildupSound) == 0xC08, "m_explosionBuildupSound in CBreakableProp should be at offset 0xC08");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionCustomEffect) == 0xC10, "m_explosionCustomEffect in CBreakableProp should be at offset 0xC10");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionCustomSound) == 0xC18, "m_explosionCustomSound in CBreakableProp should be at offset 0xC18");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionModifier) == 0xC20, "m_explosionModifier in CBreakableProp should be at offset 0xC20");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_hPhysicsAttacker) == 0xC28, "m_hPhysicsAttacker in CBreakableProp should be at offset 0xC28");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_flLastPhysicsInfluenceTime) == 0xC2C, "m_flLastPhysicsInfluenceTime in CBreakableProp should be at offset 0xC2C");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_flDefaultFadeScale) == 0xC30, "m_flDefaultFadeScale in CBreakableProp should be at offset 0xC30");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_hLastAttacker) == 0xC34, "m_hLastAttacker in CBreakableProp should be at offset 0xC34");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_iszPuntSound) == 0xC38, "m_iszPuntSound in CBreakableProp should be at offset 0xC38");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_bUsePuntSound) == 0xC40, "m_bUsePuntSound in CBreakableProp should be at offset 0xC40");
-		static_assert(offsetof(CS2::server::CBreakableProp, m_bOriginalBlockLOS) == 0xC41, "m_bOriginalBlockLOS in CBreakableProp should be at offset 0xC41");
-		static_assert(sizeof(CS2::server::CBreakableProp) == 0xC50, "CBreakableProp size should be 0xC50");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_CPropDataComponent) == 0xA58, "m_CPropDataComponent in CBreakableProp should be at offset 0xA58");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_OnStartDeath) == 0xA98, "m_OnStartDeath in CBreakableProp should be at offset 0xA98");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_OnBreak) == 0xAB0, "m_OnBreak in CBreakableProp should be at offset 0xAB0");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_OnHealthChanged) == 0xAC8, "m_OnHealthChanged in CBreakableProp should be at offset 0xAC8");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_OnTakeDamage) == 0xAE8, "m_OnTakeDamage in CBreakableProp should be at offset 0xAE8");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_impactEnergyScale) == 0xB00, "m_impactEnergyScale in CBreakableProp should be at offset 0xB00");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_iMinHealthDmg) == 0xB04, "m_iMinHealthDmg in CBreakableProp should be at offset 0xB04");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_preferredCarryAngles) == 0xB08, "m_preferredCarryAngles in CBreakableProp should be at offset 0xB08");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_flPressureDelay) == 0xB14, "m_flPressureDelay in CBreakableProp should be at offset 0xB14");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_flDefBurstScale) == 0xB18, "m_flDefBurstScale in CBreakableProp should be at offset 0xB18");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_vDefBurstOffset) == 0xB1C, "m_vDefBurstOffset in CBreakableProp should be at offset 0xB1C");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_hBreaker) == 0xB28, "m_hBreaker in CBreakableProp should be at offset 0xB28");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_PerformanceMode) == 0xB2C, "m_PerformanceMode in CBreakableProp should be at offset 0xB2C");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_flPreventDamageBeforeTime) == 0xB30, "m_flPreventDamageBeforeTime in CBreakableProp should be at offset 0xB30");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_BreakableContentsType) == 0xB34, "m_BreakableContentsType in CBreakableProp should be at offset 0xB34");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_strBreakableContentsPropGroupOverride) == 0xB38, "m_strBreakableContentsPropGroupOverride in CBreakableProp should be at offset 0xB38");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_strBreakableContentsParticleOverride) == 0xB40, "m_strBreakableContentsParticleOverride in CBreakableProp should be at offset 0xB40");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_bHasBreakPiecesOrCommands) == 0xB48, "m_bHasBreakPiecesOrCommands in CBreakableProp should be at offset 0xB48");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_explodeDamage) == 0xB4C, "m_explodeDamage in CBreakableProp should be at offset 0xB4C");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_explodeRadius) == 0xB50, "m_explodeRadius in CBreakableProp should be at offset 0xB50");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_nExplosionType) == 0xB54, "m_nExplosionType in CBreakableProp should be at offset 0xB54");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionDelay) == 0xB58, "m_explosionDelay in CBreakableProp should be at offset 0xB58");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionBuildupSound) == 0xB60, "m_explosionBuildupSound in CBreakableProp should be at offset 0xB60");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionCustomEffect) == 0xB68, "m_explosionCustomEffect in CBreakableProp should be at offset 0xB68");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionCustomSound) == 0xB70, "m_explosionCustomSound in CBreakableProp should be at offset 0xB70");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_explosionModifier) == 0xB78, "m_explosionModifier in CBreakableProp should be at offset 0xB78");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_hPhysicsAttacker) == 0xB80, "m_hPhysicsAttacker in CBreakableProp should be at offset 0xB80");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_flLastPhysicsInfluenceTime) == 0xB84, "m_flLastPhysicsInfluenceTime in CBreakableProp should be at offset 0xB84");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_flDefaultFadeScale) == 0xB88, "m_flDefaultFadeScale in CBreakableProp should be at offset 0xB88");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_hLastAttacker) == 0xB8C, "m_hLastAttacker in CBreakableProp should be at offset 0xB8C");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_iszPuntSound) == 0xB90, "m_iszPuntSound in CBreakableProp should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_bUsePuntSound) == 0xB98, "m_bUsePuntSound in CBreakableProp should be at offset 0xB98");
+		static_assert(offsetof(CS2::server::CBreakableProp, m_bOriginalBlockLOS) == 0xB99, "m_bOriginalBlockLOS in CBreakableProp should be at offset 0xB99");
+		static_assert(sizeof(CS2::server::CBreakableProp) == 0xBA0, "CBreakableProp size should be 0xBA0");
 	}
 }

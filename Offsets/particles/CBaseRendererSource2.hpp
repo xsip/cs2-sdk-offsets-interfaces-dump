@@ -32,10 +32,9 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flDiffuseAmount = 0x1498; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flDiffuseClamp = 0x1608; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_nLightingControlPoint = 0x1778; // int32_t m_nLightingControlPoint; |  0x1778 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nSelfIllumPerParticle = 0x177c; // particles::ParticleAttributeIndex_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nOutputBlendMode = 0x1780; // particles::ParticleOutputBlendMode_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bGammaCorrectVertexColors = 0x1784; // bool m_bGammaCorrectVertexColors; |  0x1784 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSaturateColorPreAlphaBlend = 0x1785; // bool m_bSaturateColorPreAlphaBlend; |  0x1785 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nOutputBlendMode = 0x177c; // particles::ParticleOutputBlendMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bGammaCorrectVertexColors = 0x1780; // bool m_bGammaCorrectVertexColors; |  0x1780 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSaturateColorPreAlphaBlend = 0x1781; // bool m_bSaturateColorPreAlphaBlend; |  0x1781 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flAddSelfAmount = 0x1788; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flDesaturation = 0x18f8; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flOverbrightFactor = 0x1a68; // particleslib::CParticleCollectionRendererFloatInput  | Schema_DeclaredClass | Size: 0x170

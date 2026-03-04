@@ -8,22 +8,22 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x868
+			// Class size: 0x820
 			namespace CCSTeam /*: public CS2::server::CTeam*/ {
-				constexpr std::ptrdiff_t m_nLastRecievedShorthandedRoundBonus = 0x5a8; // int32_t m_nLastRecievedShorthandedRoundBonus; |  0x5a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nShorthandedRoundBonusStartRound = 0x5ac; // int32_t m_nShorthandedRoundBonusStartRound; |  0x5ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSurrendered = 0x5b0; // bool m_bSurrendered; |  0x5b0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_szTeamMatchStat = 0x5b1; // char m_szTeamMatchStat[512]; |  0x5b1 | Schema_FixedArray | Size: 0x200
-				constexpr std::ptrdiff_t m_numMapVictories = 0x7b4; // int32_t m_numMapVictories; |  0x7b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_scoreFirstHalf = 0x7b8; // int32_t m_scoreFirstHalf; |  0x7b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_scoreSecondHalf = 0x7bc; // int32_t m_scoreSecondHalf; |  0x7bc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_scoreOvertime = 0x7c0; // int32_t m_scoreOvertime; |  0x7c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szClanTeamname = 0x7c4; // char m_szClanTeamname[129]; |  0x7c4 | Schema_FixedArray | Size: 0x81
-				constexpr std::ptrdiff_t m_iClanID = 0x848; // uint32_t m_iClanID; |  0x848 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szTeamFlagImage = 0x84c; // char m_szTeamFlagImage[8]; |  0x84c | Schema_FixedArray | Size: 0x8
-				constexpr std::ptrdiff_t m_szTeamLogoImage = 0x854; // char m_szTeamLogoImage[8]; |  0x854 | Schema_FixedArray | Size: 0x8
-				constexpr std::ptrdiff_t m_flNextResourceTime = 0x85c; // float32 m_flNextResourceTime; |  0x85c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iLastUpdateSentAt = 0x860; // int32_t m_iLastUpdateSentAt; |  0x860 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nLastRecievedShorthandedRoundBonus = 0x560; // int32_t m_nLastRecievedShorthandedRoundBonus; |  0x560 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nShorthandedRoundBonusStartRound = 0x564; // int32_t m_nShorthandedRoundBonusStartRound; |  0x564 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSurrendered = 0x568; // bool m_bSurrendered; |  0x568 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_szTeamMatchStat = 0x569; // char m_szTeamMatchStat[512]; |  0x569 | Schema_FixedArray | Size: 0x200
+				constexpr std::ptrdiff_t m_numMapVictories = 0x76c; // int32_t m_numMapVictories; |  0x76c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_scoreFirstHalf = 0x770; // int32_t m_scoreFirstHalf; |  0x770 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_scoreSecondHalf = 0x774; // int32_t m_scoreSecondHalf; |  0x774 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_scoreOvertime = 0x778; // int32_t m_scoreOvertime; |  0x778 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_szClanTeamname = 0x77c; // char m_szClanTeamname[129]; |  0x77c | Schema_FixedArray | Size: 0x81
+				constexpr std::ptrdiff_t m_iClanID = 0x800; // uint32_t m_iClanID; |  0x800 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_szTeamFlagImage = 0x804; // char m_szTeamFlagImage[8]; |  0x804 | Schema_FixedArray | Size: 0x8
+				constexpr std::ptrdiff_t m_szTeamLogoImage = 0x80c; // char m_szTeamLogoImage[8]; |  0x80c | Schema_FixedArray | Size: 0x8
+				constexpr std::ptrdiff_t m_flNextResourceTime = 0x814; // float32 m_flNextResourceTime; |  0x814 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iLastUpdateSentAt = 0x818; // int32_t m_iLastUpdateSentAt; |  0x818 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

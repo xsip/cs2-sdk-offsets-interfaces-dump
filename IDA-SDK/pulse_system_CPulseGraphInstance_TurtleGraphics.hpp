@@ -4,6 +4,6 @@
 
 
 class pulse_system_CPulseGraphInstance_TurtleGraphics {
-    char pad_2700[0x118];
-    char pad_4204[0x28];
+    char pad_2797[0x118];
+    char pad_4318[0x28];
 };

@@ -21,27 +21,27 @@ namespace CS2 {
 	namespace server {
 		class CEnvInstructorVRHint : public CS2::server::CPointEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszName; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszHintTargetEntity; // 0x4f8 | Schema_Atomic | Size: 0x8
-			int32_t m_iTimeout; // 0x500 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszName; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszHintTargetEntity; // 0x4b0 | Schema_Atomic | Size: 0x8
+			int32_t m_iTimeout; // 0x4b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszCaption; // 0x508 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszStartSound; // 0x510 | Schema_Atomic | Size: 0x8
-			int32_t m_iLayoutFileType; // 0x518 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszCaption; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszStartSound; // 0x4c8 | Schema_Atomic | Size: 0x8
+			int32_t m_iLayoutFileType; // 0x4d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszCustomLayoutFile; // 0x520 | Schema_Atomic | Size: 0x8
-			int32_t m_iAttachType; // 0x528 | Schema_Builtin | Size: 0x4
-			float32 m_flHeightOffset; // 0x52c | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszCustomLayoutFile; // 0x4d8 | Schema_Atomic | Size: 0x8
+			int32_t m_iAttachType; // 0x4e0 | Schema_Builtin | Size: 0x4
+			float32 m_flHeightOffset; // 0x4e4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszName) == 0x4F0, "m_iszName in CEnvInstructorVRHint should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszHintTargetEntity) == 0x4F8, "m_iszHintTargetEntity in CEnvInstructorVRHint should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iTimeout) == 0x500, "m_iTimeout in CEnvInstructorVRHint should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszCaption) == 0x508, "m_iszCaption in CEnvInstructorVRHint should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszStartSound) == 0x510, "m_iszStartSound in CEnvInstructorVRHint should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iLayoutFileType) == 0x518, "m_iLayoutFileType in CEnvInstructorVRHint should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszCustomLayoutFile) == 0x520, "m_iszCustomLayoutFile in CEnvInstructorVRHint should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iAttachType) == 0x528, "m_iAttachType in CEnvInstructorVRHint should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_flHeightOffset) == 0x52C, "m_flHeightOffset in CEnvInstructorVRHint should be at offset 0x52C");
-		static_assert(sizeof(CS2::server::CEnvInstructorVRHint) == 0x530, "CEnvInstructorVRHint size should be 0x530");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszName) == 0x4A8, "m_iszName in CEnvInstructorVRHint should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszHintTargetEntity) == 0x4B0, "m_iszHintTargetEntity in CEnvInstructorVRHint should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iTimeout) == 0x4B8, "m_iTimeout in CEnvInstructorVRHint should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszCaption) == 0x4C0, "m_iszCaption in CEnvInstructorVRHint should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszStartSound) == 0x4C8, "m_iszStartSound in CEnvInstructorVRHint should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iLayoutFileType) == 0x4D0, "m_iLayoutFileType in CEnvInstructorVRHint should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszCustomLayoutFile) == 0x4D8, "m_iszCustomLayoutFile in CEnvInstructorVRHint should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iAttachType) == 0x4E0, "m_iAttachType in CEnvInstructorVRHint should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_flHeightOffset) == 0x4E4, "m_flHeightOffset in CEnvInstructorVRHint should be at offset 0x4E4");
+		static_assert(sizeof(CS2::server::CEnvInstructorVRHint) == 0x4E8, "CEnvInstructorVRHint size should be 0x4E8");
 	}
 }

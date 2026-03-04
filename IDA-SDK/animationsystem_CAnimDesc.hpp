@@ -10,7 +10,7 @@ class animationsystem_CAnimDesc {
     CBufferString m_name;
     animationsystem_CAnimDesc_Flag m_flags;
     float32 fps;
-    char pad_420[0x4];
+    char pad_426[0x4];
     animationsystem_CAnimEncodedFrames m_Data;
     char m_movementArray[0x18];
     CTransform m_xInitialOffset;
@@ -20,7 +20,7 @@ class animationsystem_CAnimDesc {
     float32 framestalltime;
     Vector m_vecRootMin;
     Vector m_vecRootMax;
-    char pad_421[0x4];
+    char pad_427[0x4];
     char m_vecBoneWorldMin[0x18];
     char m_vecBoneWorldMax[0x18];
     animationsystem_CAnimSequenceParams m_sequenceParams;

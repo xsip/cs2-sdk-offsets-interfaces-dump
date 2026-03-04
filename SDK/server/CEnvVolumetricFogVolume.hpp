@@ -21,45 +21,45 @@ namespace CS2 {
 	namespace server {
 		class CEnvVolumetricFogVolume : public CS2::server::CBaseEntity {
 		public:
-			bool m_bActive; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bActive; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vBoxMins; // 0x4f4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vBoxMaxs; // 0x500 | Schema_Atomic | Size: 0xc
-			bool m_bStartDisabled; // 0x50c | Schema_Builtin | Size: 0x1
-			bool m_bIndirectUseLPVs; // 0x50d | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vBoxMins; // 0x4ac | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vBoxMaxs; // 0x4b8 | Schema_Atomic | Size: 0xc
+			bool m_bStartDisabled; // 0x4c4 | Schema_Builtin | Size: 0x1
+			bool m_bIndirectUseLPVs; // 0x4c5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flStrength; // 0x510 | Schema_Builtin | Size: 0x4
-			int32_t m_nFalloffShape; // 0x514 | Schema_Builtin | Size: 0x4
-			float32 m_flFalloffExponent; // 0x518 | Schema_Builtin | Size: 0x4
-			float32 m_flHeightFogDepth; // 0x51c | Schema_Builtin | Size: 0x4
-			float32 m_fHeightFogEdgeWidth; // 0x520 | Schema_Builtin | Size: 0x4
-			float32 m_fIndirectLightStrength; // 0x524 | Schema_Builtin | Size: 0x4
-			float32 m_fSunLightStrength; // 0x528 | Schema_Builtin | Size: 0x4
-			float32 m_fNoiseStrength; // 0x52c | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_TintColor; // 0x530 | Schema_Atomic | Size: 0x4
-			bool m_bOverrideTintColor; // 0x534 | Schema_Builtin | Size: 0x1
-			bool m_bOverrideIndirectLightStrength; // 0x535 | Schema_Builtin | Size: 0x1
-			bool m_bOverrideSunLightStrength; // 0x536 | Schema_Builtin | Size: 0x1
-			bool m_bOverrideNoiseStrength; // 0x537 | Schema_Builtin | Size: 0x1
+			float32 m_flStrength; // 0x4c8 | Schema_Builtin | Size: 0x4
+			int32_t m_nFalloffShape; // 0x4cc | Schema_Builtin | Size: 0x4
+			float32 m_flFalloffExponent; // 0x4d0 | Schema_Builtin | Size: 0x4
+			float32 m_flHeightFogDepth; // 0x4d4 | Schema_Builtin | Size: 0x4
+			float32 m_fHeightFogEdgeWidth; // 0x4d8 | Schema_Builtin | Size: 0x4
+			float32 m_fIndirectLightStrength; // 0x4dc | Schema_Builtin | Size: 0x4
+			float32 m_fSunLightStrength; // 0x4e0 | Schema_Builtin | Size: 0x4
+			float32 m_fNoiseStrength; // 0x4e4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_TintColor; // 0x4e8 | Schema_Atomic | Size: 0x4
+			bool m_bOverrideTintColor; // 0x4ec | Schema_Builtin | Size: 0x1
+			bool m_bOverrideIndirectLightStrength; // 0x4ed | Schema_Builtin | Size: 0x1
+			bool m_bOverrideSunLightStrength; // 0x4ee | Schema_Builtin | Size: 0x1
+			bool m_bOverrideNoiseStrength; // 0x4ef | Schema_Builtin | Size: 0x1
 		};
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bActive) == 0x4F0, "m_bActive in CEnvVolumetricFogVolume should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_vBoxMins) == 0x4F4, "m_vBoxMins in CEnvVolumetricFogVolume should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_vBoxMaxs) == 0x500, "m_vBoxMaxs in CEnvVolumetricFogVolume should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bStartDisabled) == 0x50C, "m_bStartDisabled in CEnvVolumetricFogVolume should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bIndirectUseLPVs) == 0x50D, "m_bIndirectUseLPVs in CEnvVolumetricFogVolume should be at offset 0x50D");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_flStrength) == 0x510, "m_flStrength in CEnvVolumetricFogVolume should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_nFalloffShape) == 0x514, "m_nFalloffShape in CEnvVolumetricFogVolume should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_flFalloffExponent) == 0x518, "m_flFalloffExponent in CEnvVolumetricFogVolume should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_flHeightFogDepth) == 0x51C, "m_flHeightFogDepth in CEnvVolumetricFogVolume should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fHeightFogEdgeWidth) == 0x520, "m_fHeightFogEdgeWidth in CEnvVolumetricFogVolume should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fIndirectLightStrength) == 0x524, "m_fIndirectLightStrength in CEnvVolumetricFogVolume should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fSunLightStrength) == 0x528, "m_fSunLightStrength in CEnvVolumetricFogVolume should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fNoiseStrength) == 0x52C, "m_fNoiseStrength in CEnvVolumetricFogVolume should be at offset 0x52C");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_TintColor) == 0x530, "m_TintColor in CEnvVolumetricFogVolume should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideTintColor) == 0x534, "m_bOverrideTintColor in CEnvVolumetricFogVolume should be at offset 0x534");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideIndirectLightStrength) == 0x535, "m_bOverrideIndirectLightStrength in CEnvVolumetricFogVolume should be at offset 0x535");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideSunLightStrength) == 0x536, "m_bOverrideSunLightStrength in CEnvVolumetricFogVolume should be at offset 0x536");
-		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideNoiseStrength) == 0x537, "m_bOverrideNoiseStrength in CEnvVolumetricFogVolume should be at offset 0x537");
-		static_assert(sizeof(CS2::server::CEnvVolumetricFogVolume) == 0x538, "CEnvVolumetricFogVolume size should be 0x538");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bActive) == 0x4A8, "m_bActive in CEnvVolumetricFogVolume should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_vBoxMins) == 0x4AC, "m_vBoxMins in CEnvVolumetricFogVolume should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_vBoxMaxs) == 0x4B8, "m_vBoxMaxs in CEnvVolumetricFogVolume should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bStartDisabled) == 0x4C4, "m_bStartDisabled in CEnvVolumetricFogVolume should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bIndirectUseLPVs) == 0x4C5, "m_bIndirectUseLPVs in CEnvVolumetricFogVolume should be at offset 0x4C5");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_flStrength) == 0x4C8, "m_flStrength in CEnvVolumetricFogVolume should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_nFalloffShape) == 0x4CC, "m_nFalloffShape in CEnvVolumetricFogVolume should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_flFalloffExponent) == 0x4D0, "m_flFalloffExponent in CEnvVolumetricFogVolume should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_flHeightFogDepth) == 0x4D4, "m_flHeightFogDepth in CEnvVolumetricFogVolume should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fHeightFogEdgeWidth) == 0x4D8, "m_fHeightFogEdgeWidth in CEnvVolumetricFogVolume should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fIndirectLightStrength) == 0x4DC, "m_fIndirectLightStrength in CEnvVolumetricFogVolume should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fSunLightStrength) == 0x4E0, "m_fSunLightStrength in CEnvVolumetricFogVolume should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_fNoiseStrength) == 0x4E4, "m_fNoiseStrength in CEnvVolumetricFogVolume should be at offset 0x4E4");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_TintColor) == 0x4E8, "m_TintColor in CEnvVolumetricFogVolume should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideTintColor) == 0x4EC, "m_bOverrideTintColor in CEnvVolumetricFogVolume should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideIndirectLightStrength) == 0x4ED, "m_bOverrideIndirectLightStrength in CEnvVolumetricFogVolume should be at offset 0x4ED");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideSunLightStrength) == 0x4EE, "m_bOverrideSunLightStrength in CEnvVolumetricFogVolume should be at offset 0x4EE");
+		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideNoiseStrength) == 0x4EF, "m_bOverrideNoiseStrength in CEnvVolumetricFogVolume should be at offset 0x4EF");
+		static_assert(sizeof(CS2::server::CEnvVolumetricFogVolume) == 0x4F0, "CEnvVolumetricFogVolume size should be 0x4F0");
 	}
 }

@@ -11,14 +11,10 @@
 
 
 #include <SDK/particles/CParticleFunctionInitializer.hpp>
+#include <SDK/particles/SequenceWeightedList_t.hpp>
 
 
 
-namespace CS2 {
-	namespace particles {
-		class SequenceWeightedList_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -32,7 +28,7 @@ namespace CS2 {
 			bool m_bLinear; // 0x1e1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
 			GlobalTypes::CUtlVector<particles::SequenceWeightedList_t> m_WeightedList; // 0x1e8 | Schema_Atomic | Size: 0x18
-			// char  m_WeightedList[0x18]; // 0x1e8 | Schema_Atomic | Size: 0x18
+			// char m_WeightedList[0x18]; // 0x1e8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSequence, m_nSequenceMin) == 0x1D8, "m_nSequenceMin in C_INIT_RandomSequence should be at offset 0x1D8");

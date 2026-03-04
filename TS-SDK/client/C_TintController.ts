@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_C_BaseEntity} from './C_BaseEntity';
-// Class size: 0x610
+// Class size: 0x620
 // BaseClass: : public CS2::client::C_BaseEntity
 export const client_C_TintController  = {
 	...client_C_BaseEntity,

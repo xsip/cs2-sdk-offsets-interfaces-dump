@@ -11,6 +11,7 @@
 
 
 #include <SDK/particles/CParticleFunctionOperator.hpp>
+#include <SDK/particleslib/CParticleCollectionVecInput.hpp>
 
 
 
@@ -22,15 +23,16 @@ namespace CS2 {
 		class C_OP_PlaneCull : public CS2::particles::CParticleFunctionOperator {
 		public:
 			int32_t m_nPlaneControlPoint; // 0x1d0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecPlaneDirection; // 0x1d4 | Schema_Atomic | Size: 0xc
-			bool m_bLocalSpace; // 0x1e0 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x4);
+			particleslib::CParticleCollectionVecInput m_vecPlaneDirection; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
+			bool m_bLocalSpace; // 0x890 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flPlaneOffset; // 0x1e4 | Schema_Builtin | Size: 0x4
+			float32 m_flPlaneOffset; // 0x894 | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_nPlaneControlPoint) == 0x1D0, "m_nPlaneControlPoint in C_OP_PlaneCull should be at offset 0x1D0");
-		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_vecPlaneDirection) == 0x1D4, "m_vecPlaneDirection in C_OP_PlaneCull should be at offset 0x1D4");
-		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_bLocalSpace) == 0x1E0, "m_bLocalSpace in C_OP_PlaneCull should be at offset 0x1E0");
-		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_flPlaneOffset) == 0x1E4, "m_flPlaneOffset in C_OP_PlaneCull should be at offset 0x1E4");
-		static_assert(sizeof(CS2::particles::C_OP_PlaneCull) == 0x1E8, "C_OP_PlaneCull size should be 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_vecPlaneDirection) == 0x1D8, "m_vecPlaneDirection in C_OP_PlaneCull should be at offset 0x1D8");
+		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_bLocalSpace) == 0x890, "m_bLocalSpace in C_OP_PlaneCull should be at offset 0x890");
+		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_flPlaneOffset) == 0x894, "m_flPlaneOffset in C_OP_PlaneCull should be at offset 0x894");
+		static_assert(sizeof(CS2::particles::C_OP_PlaneCull) == 0x898, "C_OP_PlaneCull size should be 0x898");
 	}
 }

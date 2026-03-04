@@ -11,15 +11,11 @@
 
 
 #include <SDK/server/CSoundOpvarSetPointEntity.hpp>
+#include <SDK/server/SoundOpvarTraceResult_t.hpp>
+#include <SDK/server/AutoRoomDoorwayPairs_t.hpp>
 
 
 
-namespace CS2 {
-	namespace server {
-		class SoundOpvarTraceResult_t;
-		class AutoRoomDoorwayPairs_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,20 +23,20 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetAutoRoomEntity : public CS2::server::CSoundOpvarSetPointEntity {
 		public:
-			GlobalTypes::CUtlVector<server::SoundOpvarTraceResult_t> m_traceResults; // 0x6a8 | Schema_Atomic | Size: 0x18
-			// char  m_traceResults[0x18]; // 0x6a8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<server::AutoRoomDoorwayPairs_t> m_doorwayPairs; // 0x6c0 | Schema_Atomic | Size: 0x18
-			// char  m_doorwayPairs[0x18]; // 0x6c0 | Schema_Atomic | Size: 0x18
-			float32 m_flSize; // 0x6d8 | Schema_Builtin | Size: 0x4
-			float32 m_flHeightTolerance; // 0x6dc | Schema_Builtin | Size: 0x4
-			float32 m_flSizeSqr; // 0x6e0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlVector<server::SoundOpvarTraceResult_t> m_traceResults; // 0x640 | Schema_Atomic | Size: 0x18
+			// char m_traceResults[0x18]; // 0x640 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<server::AutoRoomDoorwayPairs_t> m_doorwayPairs; // 0x658 | Schema_Atomic | Size: 0x18
+			// char m_doorwayPairs[0x18]; // 0x658 | Schema_Atomic | Size: 0x18
+			float32 m_flSize; // 0x670 | Schema_Builtin | Size: 0x4
+			float32 m_flHeightTolerance; // 0x674 | Schema_Builtin | Size: 0x4
+			float32 m_flSizeSqr; // 0x678 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_traceResults) == 0x6A8, "m_traceResults in CSoundOpvarSetAutoRoomEntity should be at offset 0x6A8");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_doorwayPairs) == 0x6C0, "m_doorwayPairs in CSoundOpvarSetAutoRoomEntity should be at offset 0x6C0");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flSize) == 0x6D8, "m_flSize in CSoundOpvarSetAutoRoomEntity should be at offset 0x6D8");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flHeightTolerance) == 0x6DC, "m_flHeightTolerance in CSoundOpvarSetAutoRoomEntity should be at offset 0x6DC");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flSizeSqr) == 0x6E0, "m_flSizeSqr in CSoundOpvarSetAutoRoomEntity should be at offset 0x6E0");
-		static_assert(sizeof(CS2::server::CSoundOpvarSetAutoRoomEntity) == 0x6E8, "CSoundOpvarSetAutoRoomEntity size should be 0x6E8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_traceResults) == 0x640, "m_traceResults in CSoundOpvarSetAutoRoomEntity should be at offset 0x640");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_doorwayPairs) == 0x658, "m_doorwayPairs in CSoundOpvarSetAutoRoomEntity should be at offset 0x658");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flSize) == 0x670, "m_flSize in CSoundOpvarSetAutoRoomEntity should be at offset 0x670");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flHeightTolerance) == 0x674, "m_flHeightTolerance in CSoundOpvarSetAutoRoomEntity should be at offset 0x674");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flSizeSqr) == 0x678, "m_flSizeSqr in CSoundOpvarSetAutoRoomEntity should be at offset 0x678");
+		static_assert(sizeof(CS2::server::CSoundOpvarSetAutoRoomEntity) == 0x680, "CSoundOpvarSetAutoRoomEntity size should be 0x680");
 	}
 }

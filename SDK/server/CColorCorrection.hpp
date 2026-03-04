@@ -22,42 +22,42 @@ namespace CS2 {
 	namespace server {
 		class CColorCorrection : public CS2::server::CBaseEntity {
 		public:
-			float32 m_flFadeInDuration; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeOutDuration; // 0x4f4 | Schema_Builtin | Size: 0x4
-			float32 m_flStartFadeInWeight; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flStartFadeOutWeight; // 0x4fc | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flTimeStartFadeIn; // 0x500 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flTimeStartFadeOut; // 0x504 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flMaxWeight; // 0x508 | Schema_Builtin | Size: 0x4
-			bool m_bStartDisabled; // 0x50c | Schema_Builtin | Size: 0x1
-			bool m_bEnabled; // 0x50d | Schema_Builtin | Size: 0x1
-			bool m_bMaster; // 0x50e | Schema_Builtin | Size: 0x1
-			bool m_bClientSide; // 0x50f | Schema_Builtin | Size: 0x1
-			bool m_bExclusive; // 0x510 | Schema_Builtin | Size: 0x1
+			float32 m_flFadeInDuration; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeOutDuration; // 0x4ac | Schema_Builtin | Size: 0x4
+			float32 m_flStartFadeInWeight; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flStartFadeOutWeight; // 0x4b4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flTimeStartFadeIn; // 0x4b8 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flTimeStartFadeOut; // 0x4bc | Schema_DeclaredClass | Size: 0x4
+			float32 m_flMaxWeight; // 0x4c0 | Schema_Builtin | Size: 0x4
+			bool m_bStartDisabled; // 0x4c4 | Schema_Builtin | Size: 0x1
+			bool m_bEnabled; // 0x4c5 | Schema_Builtin | Size: 0x1
+			bool m_bMaster; // 0x4c6 | Schema_Builtin | Size: 0x1
+			bool m_bClientSide; // 0x4c7 | Schema_Builtin | Size: 0x1
+			bool m_bExclusive; // 0x4c8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_MinFalloff; // 0x514 | Schema_Builtin | Size: 0x4
-			float32 m_MaxFalloff; // 0x518 | Schema_Builtin | Size: 0x4
-			float32 m_flCurWeight; // 0x51c | Schema_Builtin | Size: 0x4
-			char m_netlookupFilename[512]; // 0x520 | Schema_FixedArray | Size: 0x200
-			GlobalTypes::CUtlSymbolLarge m_lookupFilename; // 0x720 | Schema_Atomic | Size: 0x8
+			float32 m_MinFalloff; // 0x4cc | Schema_Builtin | Size: 0x4
+			float32 m_MaxFalloff; // 0x4d0 | Schema_Builtin | Size: 0x4
+			float32 m_flCurWeight; // 0x4d4 | Schema_Builtin | Size: 0x4
+			char m_netlookupFilename[512]; // 0x4d8 | Schema_FixedArray | Size: 0x200
+			GlobalTypes::CUtlSymbolLarge m_lookupFilename; // 0x6d8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flFadeInDuration) == 0x4F0, "m_flFadeInDuration in CColorCorrection should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flFadeOutDuration) == 0x4F4, "m_flFadeOutDuration in CColorCorrection should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flStartFadeInWeight) == 0x4F8, "m_flStartFadeInWeight in CColorCorrection should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flStartFadeOutWeight) == 0x4FC, "m_flStartFadeOutWeight in CColorCorrection should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flTimeStartFadeIn) == 0x500, "m_flTimeStartFadeIn in CColorCorrection should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flTimeStartFadeOut) == 0x504, "m_flTimeStartFadeOut in CColorCorrection should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flMaxWeight) == 0x508, "m_flMaxWeight in CColorCorrection should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_bStartDisabled) == 0x50C, "m_bStartDisabled in CColorCorrection should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_bEnabled) == 0x50D, "m_bEnabled in CColorCorrection should be at offset 0x50D");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_bMaster) == 0x50E, "m_bMaster in CColorCorrection should be at offset 0x50E");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_bClientSide) == 0x50F, "m_bClientSide in CColorCorrection should be at offset 0x50F");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_bExclusive) == 0x510, "m_bExclusive in CColorCorrection should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_MinFalloff) == 0x514, "m_MinFalloff in CColorCorrection should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_MaxFalloff) == 0x518, "m_MaxFalloff in CColorCorrection should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_flCurWeight) == 0x51C, "m_flCurWeight in CColorCorrection should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_netlookupFilename) == 0x520, "m_netlookupFilename in CColorCorrection should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CColorCorrection, m_lookupFilename) == 0x720, "m_lookupFilename in CColorCorrection should be at offset 0x720");
-		static_assert(sizeof(CS2::server::CColorCorrection) == 0x728, "CColorCorrection size should be 0x728");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flFadeInDuration) == 0x4A8, "m_flFadeInDuration in CColorCorrection should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flFadeOutDuration) == 0x4AC, "m_flFadeOutDuration in CColorCorrection should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flStartFadeInWeight) == 0x4B0, "m_flStartFadeInWeight in CColorCorrection should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flStartFadeOutWeight) == 0x4B4, "m_flStartFadeOutWeight in CColorCorrection should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flTimeStartFadeIn) == 0x4B8, "m_flTimeStartFadeIn in CColorCorrection should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flTimeStartFadeOut) == 0x4BC, "m_flTimeStartFadeOut in CColorCorrection should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flMaxWeight) == 0x4C0, "m_flMaxWeight in CColorCorrection should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_bStartDisabled) == 0x4C4, "m_bStartDisabled in CColorCorrection should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_bEnabled) == 0x4C5, "m_bEnabled in CColorCorrection should be at offset 0x4C5");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_bMaster) == 0x4C6, "m_bMaster in CColorCorrection should be at offset 0x4C6");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_bClientSide) == 0x4C7, "m_bClientSide in CColorCorrection should be at offset 0x4C7");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_bExclusive) == 0x4C8, "m_bExclusive in CColorCorrection should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_MinFalloff) == 0x4CC, "m_MinFalloff in CColorCorrection should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_MaxFalloff) == 0x4D0, "m_MaxFalloff in CColorCorrection should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_flCurWeight) == 0x4D4, "m_flCurWeight in CColorCorrection should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_netlookupFilename) == 0x4D8, "m_netlookupFilename in CColorCorrection should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CColorCorrection, m_lookupFilename) == 0x6D8, "m_lookupFilename in CColorCorrection should be at offset 0x6D8");
+		static_assert(sizeof(CS2::server::CColorCorrection) == 0x6E0, "CColorCorrection size should be 0x6E0");
 	}
 }

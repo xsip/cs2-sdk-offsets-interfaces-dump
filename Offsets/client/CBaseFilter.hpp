@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x650
+			// Class size: 0x640
 			namespace CBaseFilter /*: public CS2::client::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_bNegated = 0x5f8; // bool m_bNegated; |  0x5f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnPass = 0x600; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFail = 0x628; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_bNegated = 0x608; // bool m_bNegated; |  0x608 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnPass = 0x610; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFail = 0x628; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

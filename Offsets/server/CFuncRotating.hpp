@@ -8,26 +8,26 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x8D0
+			// Class size: 0x7F8
 			namespace CFuncRotating /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_OnStopped = 0x7d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnStarted = 0x800; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnReachedStart = 0x828; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_localRotationVector = 0x850; // GlobalTypes::RotationVector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flFanFriction = 0x85c; // float32 m_flFanFriction; |  0x85c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAttenuation = 0x860; // float32 m_flAttenuation; |  0x860 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flVolume = 0x864; // float32 m_flVolume; |  0x864 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTargetSpeed = 0x868; // float32 m_flTargetSpeed; |  0x868 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxSpeed = 0x86c; // float32 m_flMaxSpeed; |  0x86c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBlockDamage = 0x870; // float32 m_flBlockDamage; |  0x870 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_NoiseRunning = 0x878; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bReversed = 0x880; // bool m_bReversed; |  0x880 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bAccelDecel = 0x881; // bool m_bAccelDecel; |  0x881 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_prevLocalAngles = 0x898; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angStart = 0x8a4; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bStopAtStartPos = 0x8b0; // bool m_bStopAtStartPos; |  0x8b0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecClientOrigin = 0x8b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecClientAngles = 0x8c0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_OnStopped = 0x730; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnStarted = 0x748; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnReachedStart = 0x760; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_localRotationVector = 0x778; // GlobalTypes::RotationVector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flFanFriction = 0x784; // float32 m_flFanFriction; |  0x784 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAttenuation = 0x788; // float32 m_flAttenuation; |  0x788 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flVolume = 0x78c; // float32 m_flVolume; |  0x78c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTargetSpeed = 0x790; // float32 m_flTargetSpeed; |  0x790 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxSpeed = 0x794; // float32 m_flMaxSpeed; |  0x794 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBlockDamage = 0x798; // float32 m_flBlockDamage; |  0x798 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_NoiseRunning = 0x7a0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bReversed = 0x7a8; // bool m_bReversed; |  0x7a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bAccelDecel = 0x7a9; // bool m_bAccelDecel; |  0x7a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_prevLocalAngles = 0x7c0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angStart = 0x7cc; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bStopAtStartPos = 0x7d8; // bool m_bStopAtStartPos; |  0x7d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecClientOrigin = 0x7dc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecClientAngles = 0x7e8; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

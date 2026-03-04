@@ -22,31 +22,31 @@ namespace CS2 {
 	namespace server {
 		class CMathRemap : public CS2::server::CLogicalEntity {
 		public:
-			float32 m_flInMin; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_flInMax; // 0x4f4 | Schema_Builtin | Size: 0x4
-			float32 m_flOut1; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flOut2; // 0x4fc | Schema_Builtin | Size: 0x4
-			float32 m_flOldInValue; // 0x500 | Schema_Builtin | Size: 0x4
-			bool m_bEnabled; // 0x504 | Schema_Builtin | Size: 0x1
+			float32 m_flInMin; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_flInMax; // 0x4ac | Schema_Builtin | Size: 0x4
+			float32 m_flOut1; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flOut2; // 0x4b4 | Schema_Builtin | Size: 0x4
+			float32 m_flOldInValue; // 0x4b8 | Schema_Builtin | Size: 0x4
+			bool m_bEnabled; // 0x4bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_OutValue; // 0x508 | Schema_Atomic | Size: 0x28
-			char  m_OutValue[0x28]; // 0x508 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_OnRoseAboveMin; // 0x530 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnRoseAboveMax; // 0x558 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFellBelowMin; // 0x580 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFellBelowMax; // 0x5a8 | Schema_DeclaredClass | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OutValue; // 0x4c0 | Schema_Atomic | Size: 0x20
+			char m_OutValue[0x20]; // 0x4c0 | Schema_Atomic | Size: 0x20
+			entity2::CEntityIOOutput m_OnRoseAboveMin; // 0x4e0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnRoseAboveMax; // 0x4f8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFellBelowMin; // 0x510 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFellBelowMax; // 0x528 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CMathRemap, m_flInMin) == 0x4F0, "m_flInMin in CMathRemap should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CMathRemap, m_flInMax) == 0x4F4, "m_flInMax in CMathRemap should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CMathRemap, m_flOut1) == 0x4F8, "m_flOut1 in CMathRemap should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CMathRemap, m_flOut2) == 0x4FC, "m_flOut2 in CMathRemap should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CMathRemap, m_flOldInValue) == 0x500, "m_flOldInValue in CMathRemap should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CMathRemap, m_bEnabled) == 0x504, "m_bEnabled in CMathRemap should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CMathRemap, m_OutValue) == 0x508, "m_OutValue in CMathRemap should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CMathRemap, m_OnRoseAboveMin) == 0x530, "m_OnRoseAboveMin in CMathRemap should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CMathRemap, m_OnRoseAboveMax) == 0x558, "m_OnRoseAboveMax in CMathRemap should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CMathRemap, m_OnFellBelowMin) == 0x580, "m_OnFellBelowMin in CMathRemap should be at offset 0x580");
-		static_assert(offsetof(CS2::server::CMathRemap, m_OnFellBelowMax) == 0x5A8, "m_OnFellBelowMax in CMathRemap should be at offset 0x5A8");
-		static_assert(sizeof(CS2::server::CMathRemap) == 0x5D0, "CMathRemap size should be 0x5D0");
+		static_assert(offsetof(CS2::server::CMathRemap, m_flInMin) == 0x4A8, "m_flInMin in CMathRemap should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CMathRemap, m_flInMax) == 0x4AC, "m_flInMax in CMathRemap should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CMathRemap, m_flOut1) == 0x4B0, "m_flOut1 in CMathRemap should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CMathRemap, m_flOut2) == 0x4B4, "m_flOut2 in CMathRemap should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CMathRemap, m_flOldInValue) == 0x4B8, "m_flOldInValue in CMathRemap should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CMathRemap, m_bEnabled) == 0x4BC, "m_bEnabled in CMathRemap should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CMathRemap, m_OutValue) == 0x4C0, "m_OutValue in CMathRemap should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CMathRemap, m_OnRoseAboveMin) == 0x4E0, "m_OnRoseAboveMin in CMathRemap should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CMathRemap, m_OnRoseAboveMax) == 0x4F8, "m_OnRoseAboveMax in CMathRemap should be at offset 0x4F8");
+		static_assert(offsetof(CS2::server::CMathRemap, m_OnFellBelowMin) == 0x510, "m_OnFellBelowMin in CMathRemap should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CMathRemap, m_OnFellBelowMax) == 0x528, "m_OnFellBelowMax in CMathRemap should be at offset 0x528");
+		static_assert(sizeof(CS2::server::CMathRemap) == 0x540, "CMathRemap size should be 0x540");
 	}
 }

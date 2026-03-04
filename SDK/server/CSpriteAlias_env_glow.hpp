@@ -22,6 +22,6 @@ namespace CS2 {
 		class CSpriteAlias_env_glow : public CS2::server::CSprite {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CSpriteAlias_env_glow) == 0x848, "CSpriteAlias_env_glow size should be 0x848");
+		static_assert(sizeof(CS2::server::CSpriteAlias_env_glow) == 0x7A0, "CSpriteAlias_env_glow size should be 0x7A0");
 	}
 }

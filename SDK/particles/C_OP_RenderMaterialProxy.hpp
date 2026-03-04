@@ -12,6 +12,7 @@
 
 #include <SDK/particles/CParticleFunctionRenderer.hpp>
 #include <SDK/particles/MaterialProxyType_t.hpp>
+#include <SDK/particles/MaterialVariable_t.hpp>
 #include <SDK/particleslib/CParticleCollectionFloatInput.hpp>
 #include <SDK/particleslib/CParticleCollectionVecInput.hpp>
 #include <SDK/particleslib/CPerParticleFloatInput.hpp>
@@ -19,11 +20,6 @@
 
 
 
-namespace CS2 {
-	namespace particles {
-		class MaterialVariable_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -34,9 +30,9 @@ namespace CS2 {
 			int32_t m_nMaterialControlPoint; // 0x220 | Schema_Builtin | Size: 0x4
 			particles::MaterialProxyType_t m_nProxyType; // 0x224 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CUtlVector<particles::MaterialVariable_t> m_MaterialVars; // 0x228 | Schema_Atomic | Size: 0x18
-			// char  m_MaterialVars[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
+			// char m_MaterialVars[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hOverrideMaterial; // 0x240 | Schema_Atomic | Size: 0x8
-			char  m_hOverrideMaterial[0x8]; // 0x240 | Schema_Atomic | Size: 0x8
+			char m_hOverrideMaterial[0x8]; // 0x240 | Schema_Atomic | Size: 0x8
 			particleslib::CParticleCollectionFloatInput m_flMaterialOverrideEnabled; // 0x248 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x3b8 | Schema_DeclaredClass | Size: 0x6b8
 			particleslib::CPerParticleFloatInput m_flAlpha; // 0xa70 | Schema_DeclaredClass | Size: 0x170

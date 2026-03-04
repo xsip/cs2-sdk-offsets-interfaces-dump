@@ -28,7 +28,7 @@ namespace CS2 {
 			bool m_bUseReference; // 0x0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase> m_sound; // 0x8 | Schema_Atomic | Size: 0x8
-			char  m_sound[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
+			char m_sound[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 			soundsystem_voicecontainers::CVoiceContainerBase* m_pSound; // 0x10 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CSoundContainerReference, m_bUseReference) == 0x0, "m_bUseReference in CSoundContainerReference should be at offset 0x0");

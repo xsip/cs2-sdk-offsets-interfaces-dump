@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1478
+			// Class size: 0x1460
 			namespace C_MolotovProjectile /*: public CS2::client::C_BaseCSGrenadeProjectile*/ {
-				constexpr std::ptrdiff_t m_bIsIncGrenade = 0x1450; // bool m_bIsIncGrenade; |  0x1450 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsIncGrenade = 0x1438; // bool m_bIsIncGrenade; |  0x1438 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

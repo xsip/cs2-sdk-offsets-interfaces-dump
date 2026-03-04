@@ -14,6 +14,7 @@
 #include <SDK/entity2/GameTime_t.hpp>
 #include <SDK/client/DamageTypes_t.hpp>
 #include <SDK/entity2/CEntityIOOutput.hpp>
+#include <SDK/server/CBaseEntity.hpp>
 
 
 
@@ -24,39 +25,39 @@ namespace CS2 {
 	namespace server {
 		class CTriggerHurt : public CS2::server::CBaseTrigger {
 		public:
-			float32 m_flOriginalDamage; // 0x9a8 | Schema_Builtin | Size: 0x4
-			float32 m_flDamage; // 0x9ac | Schema_Builtin | Size: 0x4
-			float32 m_flDamageCap; // 0x9b0 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLastDmgTime; // 0x9b4 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flForgivenessDelay; // 0x9b8 | Schema_Builtin | Size: 0x4
-			client::DamageTypes_t m_bitsDamageInflict; // 0x9bc | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_damageModel; // 0x9c0 | Schema_Builtin | Size: 0x4
-			bool m_bNoDmgForce; // 0x9c4 | Schema_Builtin | Size: 0x1
+			float32 m_flOriginalDamage; // 0x890 | Schema_Builtin | Size: 0x4
+			float32 m_flDamage; // 0x894 | Schema_Builtin | Size: 0x4
+			float32 m_flDamageCap; // 0x898 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastDmgTime; // 0x89c | Schema_DeclaredClass | Size: 0x4
+			float32 m_flForgivenessDelay; // 0x8a0 | Schema_Builtin | Size: 0x4
+			client::DamageTypes_t m_bitsDamageInflict; // 0x8a4 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_damageModel; // 0x8a8 | Schema_Builtin | Size: 0x4
+			bool m_bNoDmgForce; // 0x8ac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vDamageForce; // 0x9c8 | Schema_Atomic | Size: 0xc
-			bool m_thinkAlways; // 0x9d4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vDamageForce; // 0x8b0 | Schema_Atomic | Size: 0xc
+			bool m_thinkAlways; // 0x8bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_hurtThinkPeriod; // 0x9d8 | Schema_Builtin | Size: 0x4
+			float32 m_hurtThinkPeriod; // 0x8c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnHurt; // 0x9e0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnHurtPlayer; // 0xa08 | Schema_DeclaredClass | Size: 0x28
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hurtEntities; // 0xa30 | Schema_Atomic | Size: 0x18
-			char  m_hurtEntities[0x18]; // 0xa30 | Schema_Atomic | Size: 0x18
+			entity2::CEntityIOOutput m_OnHurt; // 0x8c8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnHurtPlayer; // 0x8e0 | Schema_DeclaredClass | Size: 0x18
+			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hurtEntities; // 0x8f8 | Schema_Atomic | Size: 0x18
+			// char m_hurtEntities[0x18]; // 0x8f8 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_flOriginalDamage) == 0x9A8, "m_flOriginalDamage in CTriggerHurt should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_flDamage) == 0x9AC, "m_flDamage in CTriggerHurt should be at offset 0x9AC");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_flDamageCap) == 0x9B0, "m_flDamageCap in CTriggerHurt should be at offset 0x9B0");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_flLastDmgTime) == 0x9B4, "m_flLastDmgTime in CTriggerHurt should be at offset 0x9B4");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_flForgivenessDelay) == 0x9B8, "m_flForgivenessDelay in CTriggerHurt should be at offset 0x9B8");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_bitsDamageInflict) == 0x9BC, "m_bitsDamageInflict in CTriggerHurt should be at offset 0x9BC");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_damageModel) == 0x9C0, "m_damageModel in CTriggerHurt should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_bNoDmgForce) == 0x9C4, "m_bNoDmgForce in CTriggerHurt should be at offset 0x9C4");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_vDamageForce) == 0x9C8, "m_vDamageForce in CTriggerHurt should be at offset 0x9C8");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_thinkAlways) == 0x9D4, "m_thinkAlways in CTriggerHurt should be at offset 0x9D4");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_hurtThinkPeriod) == 0x9D8, "m_hurtThinkPeriod in CTriggerHurt should be at offset 0x9D8");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_OnHurt) == 0x9E0, "m_OnHurt in CTriggerHurt should be at offset 0x9E0");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_OnHurtPlayer) == 0xA08, "m_OnHurtPlayer in CTriggerHurt should be at offset 0xA08");
-		static_assert(offsetof(CS2::server::CTriggerHurt, m_hurtEntities) == 0xA30, "m_hurtEntities in CTriggerHurt should be at offset 0xA30");
-		static_assert(sizeof(CS2::server::CTriggerHurt) == 0xA48, "CTriggerHurt size should be 0xA48");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_flOriginalDamage) == 0x890, "m_flOriginalDamage in CTriggerHurt should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_flDamage) == 0x894, "m_flDamage in CTriggerHurt should be at offset 0x894");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_flDamageCap) == 0x898, "m_flDamageCap in CTriggerHurt should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_flLastDmgTime) == 0x89C, "m_flLastDmgTime in CTriggerHurt should be at offset 0x89C");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_flForgivenessDelay) == 0x8A0, "m_flForgivenessDelay in CTriggerHurt should be at offset 0x8A0");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_bitsDamageInflict) == 0x8A4, "m_bitsDamageInflict in CTriggerHurt should be at offset 0x8A4");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_damageModel) == 0x8A8, "m_damageModel in CTriggerHurt should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_bNoDmgForce) == 0x8AC, "m_bNoDmgForce in CTriggerHurt should be at offset 0x8AC");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_vDamageForce) == 0x8B0, "m_vDamageForce in CTriggerHurt should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_thinkAlways) == 0x8BC, "m_thinkAlways in CTriggerHurt should be at offset 0x8BC");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_hurtThinkPeriod) == 0x8C0, "m_hurtThinkPeriod in CTriggerHurt should be at offset 0x8C0");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_OnHurt) == 0x8C8, "m_OnHurt in CTriggerHurt should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_OnHurtPlayer) == 0x8E0, "m_OnHurtPlayer in CTriggerHurt should be at offset 0x8E0");
+		static_assert(offsetof(CS2::server::CTriggerHurt, m_hurtEntities) == 0x8F8, "m_hurtEntities in CTriggerHurt should be at offset 0x8F8");
+		static_assert(sizeof(CS2::server::CTriggerHurt) == 0x910, "CTriggerHurt size should be 0x910");
 	}
 }

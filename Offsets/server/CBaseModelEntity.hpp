@@ -8,49 +8,40 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7D8
+			// Class size: 0x730
 			namespace CBaseModelEntity /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_CRenderComponent = 0x4f0; // server::CRenderComponent**  | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_CHitboxComponent = 0x4f8; // server::CHitboxComponent  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed0 = 0x510; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed1 = 0x514; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed2 = 0x518; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed3 = 0x51c; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed4 = 0x520; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed0_PartIndex = 0x524; // int32_t m_nDestructiblePartInitialStateDestructed0_PartIndex; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed1_PartIndex = 0x528; // int32_t m_nDestructiblePartInitialStateDestructed1_PartIndex; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed2_PartIndex = 0x52c; // int32_t m_nDestructiblePartInitialStateDestructed2_PartIndex; |  0x52c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed3_PartIndex = 0x530; // int32_t m_nDestructiblePartInitialStateDestructed3_PartIndex; |  0x530 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed4_PartIndex = 0x534; // int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex; |  0x534 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0x538; // server::CDestructiblePartsComponent**  | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_LastHitGroup = 0x540; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_sLastDamageSourceName = 0x548; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vLastDamagePosition = 0x550; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flDissolveStartTime = 0x55c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_OnIgnite = 0x560; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_nRenderMode = 0x588; // client::RenderMode_t  | Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_nRenderFX = 0x589; // client::RenderFx_t  | Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_bAllowFadeInView = 0x58a; // bool m_bAllowFadeInView; |  0x58a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_clrRender = 0x5a8; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecRenderAttributes = 0x5b0; // server::CUtlVectorEmbeddedNetworkVar<server::EntityRenderAttribute_t>  | Schema_Atomic | Size: 0x68
-				constexpr std::ptrdiff_t m_bRenderToCubemaps = 0x618; // bool m_bRenderToCubemaps; |  0x618 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNoInterpolate = 0x619; // bool m_bNoInterpolate; |  0x619 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Collision = 0x620; // server::CCollisionProperty  | Schema_DeclaredClass | Size: 0xb0
-				constexpr std::ptrdiff_t m_Glow = 0x6d0; // server::CGlowProperty  | Schema_DeclaredClass | Size: 0x58
-				constexpr std::ptrdiff_t m_flGlowBackfaceMult = 0x728; // float32 m_flGlowBackfaceMult; |  0x728 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fadeMinDist = 0x72c; // float32 m_fadeMinDist; |  0x72c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fadeMaxDist = 0x730; // float32 m_fadeMaxDist; |  0x730 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeScale = 0x734; // float32 m_flFadeScale; |  0x734 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flShadowStrength = 0x738; // float32 m_flShadowStrength; |  0x738 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nObjectCulling = 0x73c; // uint8_t m_nObjectCulling; |  0x73c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nAddDecal = 0x740; // int32_t m_nAddDecal; |  0x740 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vDecalPosition = 0x744; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDecalForwardAxis = 0x750; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nDecalMode = 0x75c; // client::DecalMode_t  | Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_nRequiredDecalMode = 0x75d; // client::DecalMode_t  | Schema_DeclaredEnum | Size: 0x1
-				constexpr std::ptrdiff_t m_ConfigEntitiesToPropagateMaterialDecalsTo = 0x760; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_vecViewOffset = 0x7a0; // client::CNetworkViewOffsetVector  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0x7d0; // uint32_t m_bvDisabledHitGroups[1]; |  0x7d0 | Schema_FixedArray | Size: 0x4
+				constexpr std::ptrdiff_t m_CRenderComponent = 0x4a8; // server::CRenderComponent**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_CHitboxComponent = 0x4b0; // server::CHitboxComponent  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed0 = 0x4c8; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed1 = 0x4cc; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed2 = 0x4d0; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed3 = 0x4d4; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed4 = 0x4d8; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed0_PartIndex = 0x4dc; // int32_t m_nDestructiblePartInitialStateDestructed0_PartIndex; |  0x4dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed1_PartIndex = 0x4e0; // int32_t m_nDestructiblePartInitialStateDestructed1_PartIndex; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed2_PartIndex = 0x4e4; // int32_t m_nDestructiblePartInitialStateDestructed2_PartIndex; |  0x4e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed3_PartIndex = 0x4e8; // int32_t m_nDestructiblePartInitialStateDestructed3_PartIndex; |  0x4e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDestructiblePartInitialStateDestructed4_PartIndex = 0x4ec; // int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex; |  0x4ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pDestructiblePartsSystemComponent = 0x4f0; // server::CDestructiblePartsComponent**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_flDissolveStartTime = 0x4f8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_OnIgnite = 0x500; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_nRenderMode = 0x518; // client::RenderMode_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_nRenderFX = 0x519; // client::RenderFx_t  | Schema_DeclaredEnum | Size: 0x1
+				constexpr std::ptrdiff_t m_bAllowFadeInView = 0x51a; // bool m_bAllowFadeInView; |  0x51a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_clrRender = 0x538; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecRenderAttributes = 0x540; // server::CUtlVectorEmbeddedNetworkVar<server::EntityRenderAttribute_t>  | Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_bRenderToCubemaps = 0x5a8; // bool m_bRenderToCubemaps; |  0x5a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNoInterpolate = 0x5a9; // bool m_bNoInterpolate; |  0x5a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Collision = 0x5b0; // server::CCollisionProperty  | Schema_DeclaredClass | Size: 0xb0
+				constexpr std::ptrdiff_t m_Glow = 0x660; // server::CGlowProperty  | Schema_DeclaredClass | Size: 0x58
+				constexpr std::ptrdiff_t m_flGlowBackfaceMult = 0x6b8; // float32 m_flGlowBackfaceMult; |  0x6b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fadeMinDist = 0x6bc; // float32 m_fadeMinDist; |  0x6bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fadeMaxDist = 0x6c0; // float32 m_fadeMaxDist; |  0x6c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeScale = 0x6c4; // float32 m_flFadeScale; |  0x6c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flShadowStrength = 0x6c8; // float32 m_flShadowStrength; |  0x6c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nObjectCulling = 0x6cc; // uint8_t m_nObjectCulling; |  0x6cc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecViewOffset = 0x6f8; // client::CNetworkViewOffsetVector  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_bvDisabledHitGroups = 0x728; // uint32_t m_bvDisabledHitGroups[1]; |  0x728 | Schema_FixedArray | Size: 0x4
 			}
 		}
 	}

@@ -10,14 +10,14 @@ export const animationsystem_CCompressorGroup  = {
 	m_nFlags: 80n, // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 	m_szGrouping: 104n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 	m_nCompressorIndex: 128n, // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
-	m_szElementNames: 152n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<char*>>  | Schema_Atomic | Size: 0x18
-	m_nElementUniqueID: 176n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<int32_t>>  | Schema_Atomic | Size: 0x18
+	m_szElementNames: 152n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlVector>  | Schema_Atomic | Size: 0x18
+	m_nElementUniqueID: 176n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlVector>  | Schema_Atomic | Size: 0x18
 	m_nElementMask: 200n, // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
-	m_vectorCompressor: 248n, // GlobalTypes::CUtlVector<�p�K�::CCompressor*>  | Schema_Atomic | Size: 0x18
-	m_quaternionCompressor: 272n, // GlobalTypes::CUtlVector<�p�K�::CCompressor*>  | Schema_Atomic | Size: 0x18
-	m_intCompressor: 296n, // GlobalTypes::CUtlVector<�p�K�::CCompressor*>  | Schema_Atomic | Size: 0x18
-	m_boolCompressor: 320n, // GlobalTypes::CUtlVector<�p�K�::CCompressor*>  | Schema_Atomic | Size: 0x18
-	m_colorCompressor: 344n, // GlobalTypes::CUtlVector<�p�K�::CCompressor*>  | Schema_Atomic | Size: 0x18
-	m_vector2DCompressor: 368n, // GlobalTypes::CUtlVector<�p�K�::CCompressor*>  | Schema_Atomic | Size: 0x18
-	m_vector4DCompressor: 392n, // GlobalTypes::CUtlVector<�p�K�::CCompressor*>  | Schema_Atomic | Size: 0x18
+	m_vectorCompressor: 248n, // GlobalTypes::CUtlVector<耱��::CCompressor*>  | Schema_Atomic | Size: 0x18
+	m_quaternionCompressor: 272n, // GlobalTypes::CUtlVector<耱��::CCompressor*>  | Schema_Atomic | Size: 0x18
+	m_intCompressor: 296n, // GlobalTypes::CUtlVector<耱��::CCompressor*>  | Schema_Atomic | Size: 0x18
+	m_boolCompressor: 320n, // GlobalTypes::CUtlVector<耱��::CCompressor*>  | Schema_Atomic | Size: 0x18
+	m_colorCompressor: 344n, // GlobalTypes::CUtlVector<耱��::CCompressor*>  | Schema_Atomic | Size: 0x18
+	m_vector2DCompressor: 368n, // GlobalTypes::CUtlVector<耱��::CCompressor*>  | Schema_Atomic | Size: 0x18
+	m_vector4DCompressor: 392n, // GlobalTypes::CUtlVector<耱��::CCompressor*>  | Schema_Atomic | Size: 0x18
 }

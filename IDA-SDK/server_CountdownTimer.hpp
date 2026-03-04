@@ -5,7 +5,7 @@
 #include "entity2_GameTime_t.hpp"
 
 class server_CountdownTimer {
-    char vTable4124[0x8];
+    void **__vftable_0;
     float32 m_duration;
     entity2_GameTime_t m_timestamp;
     float32 m_timescale;

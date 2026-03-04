@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9E8
+			// Class size: 0x8C0
 			namespace CChangeLevel /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_sMapName = 0x9a8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sLandmarkName = 0x9b0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_OnChangeLevel = 0x9b8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bTouched = 0x9e0; // bool m_bTouched; |  0x9e0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNoTouch = 0x9e1; // bool m_bNoTouch; |  0x9e1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNewChapter = 0x9e2; // bool m_bNewChapter; |  0x9e2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bOnChangeLevelFired = 0x9e3; // bool m_bOnChangeLevelFired; |  0x9e3 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_sMapName = 0x890; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sLandmarkName = 0x898; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_OnChangeLevel = 0x8a0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bTouched = 0x8b8; // bool m_bTouched; |  0x8b8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNoTouch = 0x8b9; // bool m_bNoTouch; |  0x8b9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNewChapter = 0x8ba; // bool m_bNewChapter; |  0x8ba | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bOnChangeLevelFired = 0x8bb; // bool m_bOnChangeLevelFired; |  0x8bb | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

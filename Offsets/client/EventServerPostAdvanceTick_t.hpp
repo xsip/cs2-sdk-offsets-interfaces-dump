@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x40
+			// Class size: 0x48
 			namespace EventServerPostAdvanceTick_t /*: public CS2::client::EventPostAdvanceTick_t*/ {
-				// NO SCHEMA DATA FOUND!
+				constexpr std::ptrdiff_t m_bLastTickBeforeClientUpdate = 0x40; // bool m_bLastTickBeforeClientUpdate; |  0x40 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

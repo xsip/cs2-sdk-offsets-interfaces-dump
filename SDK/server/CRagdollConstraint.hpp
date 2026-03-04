@@ -21,26 +21,26 @@ namespace CS2 {
 	namespace server {
 		class CRagdollConstraint : public CS2::server::CPhysConstraint {
 		public:
-			float32 m_xmin; // 0x560 | Schema_Builtin | Size: 0x4
-			float32 m_xmax; // 0x564 | Schema_Builtin | Size: 0x4
-			float32 m_ymin; // 0x568 | Schema_Builtin | Size: 0x4
-			float32 m_ymax; // 0x56c | Schema_Builtin | Size: 0x4
-			float32 m_zmin; // 0x570 | Schema_Builtin | Size: 0x4
-			float32 m_zmax; // 0x574 | Schema_Builtin | Size: 0x4
-			float32 m_xfriction; // 0x578 | Schema_Builtin | Size: 0x4
-			float32 m_yfriction; // 0x57c | Schema_Builtin | Size: 0x4
-			float32 m_zfriction; // 0x580 | Schema_Builtin | Size: 0x4
+			float32 m_xmin; // 0x508 | Schema_Builtin | Size: 0x4
+			float32 m_xmax; // 0x50c | Schema_Builtin | Size: 0x4
+			float32 m_ymin; // 0x510 | Schema_Builtin | Size: 0x4
+			float32 m_ymax; // 0x514 | Schema_Builtin | Size: 0x4
+			float32 m_zmin; // 0x518 | Schema_Builtin | Size: 0x4
+			float32 m_zmax; // 0x51c | Schema_Builtin | Size: 0x4
+			float32 m_xfriction; // 0x520 | Schema_Builtin | Size: 0x4
+			float32 m_yfriction; // 0x524 | Schema_Builtin | Size: 0x4
+			float32 m_zfriction; // 0x528 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xmin) == 0x560, "m_xmin in CRagdollConstraint should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xmax) == 0x564, "m_xmax in CRagdollConstraint should be at offset 0x564");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_ymin) == 0x568, "m_ymin in CRagdollConstraint should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_ymax) == 0x56C, "m_ymax in CRagdollConstraint should be at offset 0x56C");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_zmin) == 0x570, "m_zmin in CRagdollConstraint should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_zmax) == 0x574, "m_zmax in CRagdollConstraint should be at offset 0x574");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xfriction) == 0x578, "m_xfriction in CRagdollConstraint should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_yfriction) == 0x57C, "m_yfriction in CRagdollConstraint should be at offset 0x57C");
-		static_assert(offsetof(CS2::server::CRagdollConstraint, m_zfriction) == 0x580, "m_zfriction in CRagdollConstraint should be at offset 0x580");
-		static_assert(sizeof(CS2::server::CRagdollConstraint) == 0x588, "CRagdollConstraint size should be 0x588");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xmin) == 0x508, "m_xmin in CRagdollConstraint should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xmax) == 0x50C, "m_xmax in CRagdollConstraint should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_ymin) == 0x510, "m_ymin in CRagdollConstraint should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_ymax) == 0x514, "m_ymax in CRagdollConstraint should be at offset 0x514");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_zmin) == 0x518, "m_zmin in CRagdollConstraint should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_zmax) == 0x51C, "m_zmax in CRagdollConstraint should be at offset 0x51C");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xfriction) == 0x520, "m_xfriction in CRagdollConstraint should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_yfriction) == 0x524, "m_yfriction in CRagdollConstraint should be at offset 0x524");
+		static_assert(offsetof(CS2::server::CRagdollConstraint, m_zfriction) == 0x528, "m_zfriction in CRagdollConstraint should be at offset 0x528");
+		static_assert(sizeof(CS2::server::CRagdollConstraint) == 0x530, "CRagdollConstraint size should be 0x530");
 	}
 }

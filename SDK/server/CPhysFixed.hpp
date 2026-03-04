@@ -21,24 +21,24 @@ namespace CS2 {
 	namespace server {
 		class CPhysFixed : public CS2::server::CPhysConstraint {
 		public:
-			float32 m_flLinearFrequency; // 0x560 | Schema_Builtin | Size: 0x4
-			float32 m_flLinearDampingRatio; // 0x564 | Schema_Builtin | Size: 0x4
-			float32 m_flAngularFrequency; // 0x568 | Schema_Builtin | Size: 0x4
-			float32 m_flAngularDampingRatio; // 0x56c | Schema_Builtin | Size: 0x4
-			bool m_bEnableLinearConstraint; // 0x570 | Schema_Builtin | Size: 0x1
-			bool m_bEnableAngularConstraint; // 0x571 | Schema_Builtin | Size: 0x1
+			float32 m_flLinearFrequency; // 0x508 | Schema_Builtin | Size: 0x4
+			float32 m_flLinearDampingRatio; // 0x50c | Schema_Builtin | Size: 0x4
+			float32 m_flAngularFrequency; // 0x510 | Schema_Builtin | Size: 0x4
+			float32 m_flAngularDampingRatio; // 0x514 | Schema_Builtin | Size: 0x4
+			bool m_bEnableLinearConstraint; // 0x518 | Schema_Builtin | Size: 0x1
+			bool m_bEnableAngularConstraint; // 0x519 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlSymbolLarge m_sBoneName1; // 0x578 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sBoneName2; // 0x580 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sBoneName1; // 0x520 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sBoneName2; // 0x528 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CPhysFixed, m_flLinearFrequency) == 0x560, "m_flLinearFrequency in CPhysFixed should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CPhysFixed, m_flLinearDampingRatio) == 0x564, "m_flLinearDampingRatio in CPhysFixed should be at offset 0x564");
-		static_assert(offsetof(CS2::server::CPhysFixed, m_flAngularFrequency) == 0x568, "m_flAngularFrequency in CPhysFixed should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CPhysFixed, m_flAngularDampingRatio) == 0x56C, "m_flAngularDampingRatio in CPhysFixed should be at offset 0x56C");
-		static_assert(offsetof(CS2::server::CPhysFixed, m_bEnableLinearConstraint) == 0x570, "m_bEnableLinearConstraint in CPhysFixed should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CPhysFixed, m_bEnableAngularConstraint) == 0x571, "m_bEnableAngularConstraint in CPhysFixed should be at offset 0x571");
-		static_assert(offsetof(CS2::server::CPhysFixed, m_sBoneName1) == 0x578, "m_sBoneName1 in CPhysFixed should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CPhysFixed, m_sBoneName2) == 0x580, "m_sBoneName2 in CPhysFixed should be at offset 0x580");
-		static_assert(sizeof(CS2::server::CPhysFixed) == 0x588, "CPhysFixed size should be 0x588");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_flLinearFrequency) == 0x508, "m_flLinearFrequency in CPhysFixed should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_flLinearDampingRatio) == 0x50C, "m_flLinearDampingRatio in CPhysFixed should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_flAngularFrequency) == 0x510, "m_flAngularFrequency in CPhysFixed should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_flAngularDampingRatio) == 0x514, "m_flAngularDampingRatio in CPhysFixed should be at offset 0x514");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_bEnableLinearConstraint) == 0x518, "m_bEnableLinearConstraint in CPhysFixed should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_bEnableAngularConstraint) == 0x519, "m_bEnableAngularConstraint in CPhysFixed should be at offset 0x519");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_sBoneName1) == 0x520, "m_sBoneName1 in CPhysFixed should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CPhysFixed, m_sBoneName2) == 0x528, "m_sBoneName2 in CPhysFixed should be at offset 0x528");
+		static_assert(sizeof(CS2::server::CPhysFixed) == 0x530, "CPhysFixed size should be 0x530");
 	}
 }

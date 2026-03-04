@@ -22,64 +22,64 @@ namespace CS2 {
 		class CEnvLightProbeVolume : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0xff8);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_AmbientCube; // 0x14e8 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeTexture_AmbientCube[0x8]; // 0x14e8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SDF; // 0x14f0 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeTexture_SDF[0x8]; // 0x14f0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_DC; // 0x14f8 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeTexture_SH2_DC[0x8]; // 0x14f8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_R; // 0x1500 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeTexture_SH2_R[0x8]; // 0x1500 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_G; // 0x1508 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeTexture_SH2_G[0x8]; // 0x1508 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_B; // 0x1510 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeTexture_SH2_B[0x8]; // 0x1510 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightIndicesTexture; // 0x1518 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeDirectLightIndicesTexture[0x8]; // 0x1518 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightScalarsTexture; // 0x1520 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeDirectLightScalarsTexture[0x8]; // 0x1520 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightShadowsTexture; // 0x1528 | Schema_Atomic | Size: 0x8
-			char  m_Entity_hLightProbeDirectLightShadowsTexture[0x8]; // 0x1528 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_Entity_vBoxMins; // 0x1530 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_Entity_vBoxMaxs; // 0x153c | Schema_Atomic | Size: 0xc
-			bool m_Entity_bMoveable; // 0x1548 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_AmbientCube; // 0x14a0 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeTexture_AmbientCube[0x8]; // 0x14a0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SDF; // 0x14a8 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeTexture_SDF[0x8]; // 0x14a8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_DC; // 0x14b0 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeTexture_SH2_DC[0x8]; // 0x14b0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_R; // 0x14b8 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeTexture_SH2_R[0x8]; // 0x14b8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_G; // 0x14c0 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeTexture_SH2_G[0x8]; // 0x14c0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeTexture_SH2_B; // 0x14c8 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeTexture_SH2_B[0x8]; // 0x14c8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightIndicesTexture; // 0x14d0 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeDirectLightIndicesTexture[0x8]; // 0x14d0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightScalarsTexture; // 0x14d8 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeDirectLightScalarsTexture[0x8]; // 0x14d8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_Entity_hLightProbeDirectLightShadowsTexture; // 0x14e0 | Schema_Atomic | Size: 0x8
+			char m_Entity_hLightProbeDirectLightShadowsTexture[0x8]; // 0x14e0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector m_Entity_vBoxMins; // 0x14e8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_Entity_vBoxMaxs; // 0x14f4 | Schema_Atomic | Size: 0xc
+			bool m_Entity_bMoveable; // 0x1500 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_Entity_nHandshake; // 0x154c | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nPriority; // 0x1550 | Schema_Builtin | Size: 0x4
-			bool m_Entity_bStartDisabled; // 0x1554 | Schema_Builtin | Size: 0x1
+			int32_t m_Entity_nHandshake; // 0x1504 | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nPriority; // 0x1508 | Schema_Builtin | Size: 0x4
+			bool m_Entity_bStartDisabled; // 0x150c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_Entity_nLightProbeSizeX; // 0x1558 | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nLightProbeSizeY; // 0x155c | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nLightProbeSizeZ; // 0x1560 | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nLightProbeAtlasX; // 0x1564 | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nLightProbeAtlasY; // 0x1568 | Schema_Builtin | Size: 0x4
-			int32_t m_Entity_nLightProbeAtlasZ; // 0x156c | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nLightProbeSizeX; // 0x1510 | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nLightProbeSizeY; // 0x1514 | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nLightProbeSizeZ; // 0x1518 | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nLightProbeAtlasX; // 0x151c | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nLightProbeAtlasY; // 0x1520 | Schema_Builtin | Size: 0x4
+			int32_t m_Entity_nLightProbeAtlasZ; // 0x1524 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x9);
-			bool m_Entity_bEnabled; // 0x1579 | Schema_Builtin | Size: 0x1
+			bool m_Entity_bEnabled; // 0x1531 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_AmbientCube) == 0x14E8, "m_Entity_hLightProbeTexture_AmbientCube in CEnvLightProbeVolume should be at offset 0x14E8");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SDF) == 0x14F0, "m_Entity_hLightProbeTexture_SDF in CEnvLightProbeVolume should be at offset 0x14F0");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_DC) == 0x14F8, "m_Entity_hLightProbeTexture_SH2_DC in CEnvLightProbeVolume should be at offset 0x14F8");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_R) == 0x1500, "m_Entity_hLightProbeTexture_SH2_R in CEnvLightProbeVolume should be at offset 0x1500");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_G) == 0x1508, "m_Entity_hLightProbeTexture_SH2_G in CEnvLightProbeVolume should be at offset 0x1508");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_B) == 0x1510, "m_Entity_hLightProbeTexture_SH2_B in CEnvLightProbeVolume should be at offset 0x1510");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeDirectLightIndicesTexture) == 0x1518, "m_Entity_hLightProbeDirectLightIndicesTexture in CEnvLightProbeVolume should be at offset 0x1518");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeDirectLightScalarsTexture) == 0x1520, "m_Entity_hLightProbeDirectLightScalarsTexture in CEnvLightProbeVolume should be at offset 0x1520");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeDirectLightShadowsTexture) == 0x1528, "m_Entity_hLightProbeDirectLightShadowsTexture in CEnvLightProbeVolume should be at offset 0x1528");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_vBoxMins) == 0x1530, "m_Entity_vBoxMins in CEnvLightProbeVolume should be at offset 0x1530");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_vBoxMaxs) == 0x153C, "m_Entity_vBoxMaxs in CEnvLightProbeVolume should be at offset 0x153C");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_bMoveable) == 0x1548, "m_Entity_bMoveable in CEnvLightProbeVolume should be at offset 0x1548");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nHandshake) == 0x154C, "m_Entity_nHandshake in CEnvLightProbeVolume should be at offset 0x154C");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nPriority) == 0x1550, "m_Entity_nPriority in CEnvLightProbeVolume should be at offset 0x1550");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_bStartDisabled) == 0x1554, "m_Entity_bStartDisabled in CEnvLightProbeVolume should be at offset 0x1554");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeSizeX) == 0x1558, "m_Entity_nLightProbeSizeX in CEnvLightProbeVolume should be at offset 0x1558");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeSizeY) == 0x155C, "m_Entity_nLightProbeSizeY in CEnvLightProbeVolume should be at offset 0x155C");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeSizeZ) == 0x1560, "m_Entity_nLightProbeSizeZ in CEnvLightProbeVolume should be at offset 0x1560");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeAtlasX) == 0x1564, "m_Entity_nLightProbeAtlasX in CEnvLightProbeVolume should be at offset 0x1564");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeAtlasY) == 0x1568, "m_Entity_nLightProbeAtlasY in CEnvLightProbeVolume should be at offset 0x1568");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeAtlasZ) == 0x156C, "m_Entity_nLightProbeAtlasZ in CEnvLightProbeVolume should be at offset 0x156C");
-		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_bEnabled) == 0x1579, "m_Entity_bEnabled in CEnvLightProbeVolume should be at offset 0x1579");
-		static_assert(sizeof(CS2::server::CEnvLightProbeVolume) == 0x1580, "CEnvLightProbeVolume size should be 0x1580");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_AmbientCube) == 0x14A0, "m_Entity_hLightProbeTexture_AmbientCube in CEnvLightProbeVolume should be at offset 0x14A0");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SDF) == 0x14A8, "m_Entity_hLightProbeTexture_SDF in CEnvLightProbeVolume should be at offset 0x14A8");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_DC) == 0x14B0, "m_Entity_hLightProbeTexture_SH2_DC in CEnvLightProbeVolume should be at offset 0x14B0");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_R) == 0x14B8, "m_Entity_hLightProbeTexture_SH2_R in CEnvLightProbeVolume should be at offset 0x14B8");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_G) == 0x14C0, "m_Entity_hLightProbeTexture_SH2_G in CEnvLightProbeVolume should be at offset 0x14C0");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_B) == 0x14C8, "m_Entity_hLightProbeTexture_SH2_B in CEnvLightProbeVolume should be at offset 0x14C8");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeDirectLightIndicesTexture) == 0x14D0, "m_Entity_hLightProbeDirectLightIndicesTexture in CEnvLightProbeVolume should be at offset 0x14D0");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeDirectLightScalarsTexture) == 0x14D8, "m_Entity_hLightProbeDirectLightScalarsTexture in CEnvLightProbeVolume should be at offset 0x14D8");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeDirectLightShadowsTexture) == 0x14E0, "m_Entity_hLightProbeDirectLightShadowsTexture in CEnvLightProbeVolume should be at offset 0x14E0");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_vBoxMins) == 0x14E8, "m_Entity_vBoxMins in CEnvLightProbeVolume should be at offset 0x14E8");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_vBoxMaxs) == 0x14F4, "m_Entity_vBoxMaxs in CEnvLightProbeVolume should be at offset 0x14F4");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_bMoveable) == 0x1500, "m_Entity_bMoveable in CEnvLightProbeVolume should be at offset 0x1500");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nHandshake) == 0x1504, "m_Entity_nHandshake in CEnvLightProbeVolume should be at offset 0x1504");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nPriority) == 0x1508, "m_Entity_nPriority in CEnvLightProbeVolume should be at offset 0x1508");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_bStartDisabled) == 0x150C, "m_Entity_bStartDisabled in CEnvLightProbeVolume should be at offset 0x150C");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeSizeX) == 0x1510, "m_Entity_nLightProbeSizeX in CEnvLightProbeVolume should be at offset 0x1510");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeSizeY) == 0x1514, "m_Entity_nLightProbeSizeY in CEnvLightProbeVolume should be at offset 0x1514");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeSizeZ) == 0x1518, "m_Entity_nLightProbeSizeZ in CEnvLightProbeVolume should be at offset 0x1518");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeAtlasX) == 0x151C, "m_Entity_nLightProbeAtlasX in CEnvLightProbeVolume should be at offset 0x151C");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeAtlasY) == 0x1520, "m_Entity_nLightProbeAtlasY in CEnvLightProbeVolume should be at offset 0x1520");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeAtlasZ) == 0x1524, "m_Entity_nLightProbeAtlasZ in CEnvLightProbeVolume should be at offset 0x1524");
+		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_bEnabled) == 0x1531, "m_Entity_bEnabled in CEnvLightProbeVolume should be at offset 0x1531");
+		static_assert(sizeof(CS2::server::CEnvLightProbeVolume) == 0x1538, "CEnvLightProbeVolume size should be 0x1538");
 	}
 }

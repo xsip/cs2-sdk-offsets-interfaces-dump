@@ -22,10 +22,10 @@ namespace CS2 {
 	namespace server {
 		class CTriggerDetectExplosion : public CS2::server::CBaseTrigger {
 		public:
-			S2_PAD(0x20);
-			entity2::CEntityIOOutput m_OnDetectedExplosion; // 0x9c8 | Schema_DeclaredClass | Size: 0x28
+			S2_PAD(0x28);
+			entity2::CEntityIOOutput m_OnDetectedExplosion; // 0x8b8 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CTriggerDetectExplosion, m_OnDetectedExplosion) == 0x9C8, "m_OnDetectedExplosion in CTriggerDetectExplosion should be at offset 0x9C8");
-		static_assert(sizeof(CS2::server::CTriggerDetectExplosion) == 0x9F0, "CTriggerDetectExplosion size should be 0x9F0");
+		static_assert(offsetof(CS2::server::CTriggerDetectExplosion, m_OnDetectedExplosion) == 0x8B8, "m_OnDetectedExplosion in CTriggerDetectExplosion should be at offset 0x8B8");
+		static_assert(sizeof(CS2::server::CTriggerDetectExplosion) == 0x8D0, "CTriggerDetectExplosion size should be 0x8D0");
 	}
 }

@@ -5,7 +5,7 @@ import {client_C_BaseEntity} from './C_BaseEntity';
 // BaseClass: : public CS2::client::C_BaseEntity
 export const client_CInfoWorldLayer  = {
 	...client_C_BaseEntity,
-	m_pOutputOnEntitiesSpawned: 1528n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+	m_pOutputOnEntitiesSpawned: 1544n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 	m_worldName: 1568n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 	m_layerName: 1576n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 	m_bWorldLayerVisible: 1584n, // bool m_bWorldLayerVisible; |  0x630 | Schema_Builtin | Size: 0x1

@@ -8,6 +8,8 @@
 #include "client_inv_image_light_sun_t.hpp"
 #include "client_inv_image_light_fill_t.hpp"
 #include "client_inv_image_light_barn_t.hpp"
+#include "client_inv_image_light_barn_t.hpp"
+#include "client_inv_image_clearcolor_t.hpp"
 
 class client_inv_image_data_t {
     client_inv_image_map_t map;
@@ -17,5 +19,5 @@ class client_inv_image_data_t {
     client_inv_image_light_fill_t lightfill;
     client_inv_image_light_barn_t light0;
     client_inv_image_light_barn_t light1;
-    char end_pad_1665[0x4];
+    client_inv_image_clearcolor_t clearcolor;
 };

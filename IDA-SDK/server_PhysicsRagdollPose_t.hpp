@@ -4,9 +4,9 @@
 
 
 class server_PhysicsRagdollPose_t {
-    char vTable4135[0x8];
+    void **__vftable_0;
     char m_Transforms[0x18];
     char m_hOwner[0x4];
     bool m_bSetFromDebugHistory;
-    char end_pad_4136[0x3];
+    char end_pad_4266[0x3];
 };

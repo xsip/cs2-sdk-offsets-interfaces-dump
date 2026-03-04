@@ -21,14 +21,22 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixSubgraphSwitchDesc_t  {
 		public:
-			soundsystem_lowlevel::VMixSubgraphSwitchInterpolationType_t m_interpolationMode; // 0x0 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bOnlyTailsOnFadeOut; // 0x4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_effectName; // 0x8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_subgraphs; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_subgraphs[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			soundsystem_lowlevel::VMixSubgraphSwitchInterpolationType_t m_interpolationMode; // 0x28 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bOnlyTailsOnFadeOut; // 0x2c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flInterpolationTime; // 0x8 | Schema_Builtin | Size: 0x4
+			float32 m_flInterpolationTime; // 0x30 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_interpolationMode) == 0x0, "m_interpolationMode in VMixSubgraphSwitchDesc_t should be at offset 0x0");
-		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_bOnlyTailsOnFadeOut) == 0x4, "m_bOnlyTailsOnFadeOut in VMixSubgraphSwitchDesc_t should be at offset 0x4");
-		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_flInterpolationTime) == 0x8, "m_flInterpolationTime in VMixSubgraphSwitchDesc_t should be at offset 0x8");
-		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t) == 0xC, "VMixSubgraphSwitchDesc_t size should be 0xC");
+		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_name) == 0x0, "m_name in VMixSubgraphSwitchDesc_t should be at offset 0x0");
+		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_effectName) == 0x8, "m_effectName in VMixSubgraphSwitchDesc_t should be at offset 0x8");
+		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_subgraphs) == 0x10, "m_subgraphs in VMixSubgraphSwitchDesc_t should be at offset 0x10");
+		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_interpolationMode) == 0x28, "m_interpolationMode in VMixSubgraphSwitchDesc_t should be at offset 0x28");
+		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_bOnlyTailsOnFadeOut) == 0x2C, "m_bOnlyTailsOnFadeOut in VMixSubgraphSwitchDesc_t should be at offset 0x2C");
+		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_flInterpolationTime) == 0x30, "m_flInterpolationTime in VMixSubgraphSwitchDesc_t should be at offset 0x30");
+		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t) == 0x38, "VMixSubgraphSwitchDesc_t size should be 0x38");
 	}
 }

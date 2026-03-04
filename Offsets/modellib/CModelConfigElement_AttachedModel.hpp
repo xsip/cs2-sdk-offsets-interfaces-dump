@@ -21,7 +21,6 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bBoneMergeFlex = 0x8c; // bool m_bBoneMergeFlex; |  0x8c | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUserSpecifiedColor = 0x8d; // bool m_bUserSpecifiedColor; |  0x8d | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bUserSpecifiedMaterialGroup = 0x8e; // bool m_bUserSpecifiedMaterialGroup; |  0x8e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bAcceptParentMaterialDrivenDecals = 0x8f; // bool m_bAcceptParentMaterialDrivenDecals; |  0x8f | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_BodygroupOnOtherModels = 0x90; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_MaterialGroupOnOtherModels = 0x98; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}

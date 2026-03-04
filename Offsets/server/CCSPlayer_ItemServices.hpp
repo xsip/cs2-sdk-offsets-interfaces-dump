@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x48
+			// Class size: 0x50
 			namespace CCSPlayer_ItemServices /*: public CS2::server::CPlayer_ItemServices*/ {
-				constexpr std::ptrdiff_t m_bHasDefuser = 0x40; // bool m_bHasDefuser; |  0x40 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasHelmet = 0x41; // bool m_bHasHelmet; |  0x41 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasDefuser = 0x48; // bool m_bHasDefuser; |  0x48 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasHelmet = 0x49; // bool m_bHasHelmet; |  0x49 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

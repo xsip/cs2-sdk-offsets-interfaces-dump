@@ -22,6 +22,6 @@ namespace CS2 {
 		class C_CSMinimapBoundary : public CS2::client::C_BaseEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_CSMinimapBoundary) == 0x5F8, "C_CSMinimapBoundary size should be 0x5F8");
+		static_assert(sizeof(CS2::client::C_CSMinimapBoundary) == 0x608, "C_CSMinimapBoundary size should be 0x608");
 	}
 }

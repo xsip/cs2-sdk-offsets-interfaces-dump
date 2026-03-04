@@ -4,8 +4,8 @@
 
 
 class soundsystem_voicecontainers_CVoiceContainerAnalysisBase {
-    char vTable475[0x8];
+    void **__vftable_0;
     bool m_bRegenerateCurveOnCompile;
-    char pad_476[0x7];
+    char pad_482[0x7];
     CPiecewiseCurve m_curve;
 };

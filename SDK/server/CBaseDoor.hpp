@@ -25,66 +25,66 @@ namespace CS2 {
 		class CBaseDoor : public CS2::server::CBaseToggle {
 		public:
 			S2_PAD(0x10);
-			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x868 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecMoveDirParentSpace; // 0x874 | Schema_Atomic | Size: 0xc
-			server::locksound_t m_ls; // 0x880 | Schema_DeclaredClass | Size: 0x20
-			bool m_bForceClosed; // 0x8a0 | Schema_Builtin | Size: 0x1
-			bool m_bDoorGroup; // 0x8a1 | Schema_Builtin | Size: 0x1
-			bool m_bLocked; // 0x8a2 | Schema_Builtin | Size: 0x1
-			bool m_bIgnoreDebris; // 0x8a3 | Schema_Builtin | Size: 0x1
-			bool m_bNoNPCs; // 0x8a4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::QAngle m_angMoveEntitySpace; // 0x7c0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecMoveDirParentSpace; // 0x7cc | Schema_Atomic | Size: 0xc
+			server::locksound_t m_ls; // 0x7d8 | Schema_DeclaredClass | Size: 0x20
+			bool m_bForceClosed; // 0x7f8 | Schema_Builtin | Size: 0x1
+			bool m_bDoorGroup; // 0x7f9 | Schema_Builtin | Size: 0x1
+			bool m_bLocked; // 0x7fa | Schema_Builtin | Size: 0x1
+			bool m_bIgnoreDebris; // 0x7fb | Schema_Builtin | Size: 0x1
+			bool m_bNoNPCs; // 0x7fc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::FuncDoorSpawnPos_t m_eSpawnPosition; // 0x8a8 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flBlockDamage; // 0x8ac | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_NoiseMoving; // 0x8b0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_NoiseArrived; // 0x8b8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_NoiseMovingClosed; // 0x8c0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_NoiseArrivedClosed; // 0x8c8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_ChainTarget; // 0x8d0 | Schema_Atomic | Size: 0x8
-			entity2::CEntityIOOutput m_OnBlockedClosing; // 0x8d8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBlockedOpening; // 0x900 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnUnblockedClosing; // 0x928 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnUnblockedOpening; // 0x950 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFullyClosed; // 0x978 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFullyOpen; // 0x9a0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnClose; // 0x9c8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnOpen; // 0x9f0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnLockedUse; // 0xa18 | Schema_DeclaredClass | Size: 0x28
-			bool m_bLoopMoveSound; // 0xa40 | Schema_Builtin | Size: 0x1
+			server::FuncDoorSpawnPos_t m_eSpawnPosition; // 0x800 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flBlockDamage; // 0x804 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_NoiseMoving; // 0x808 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_NoiseArrived; // 0x810 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_NoiseMovingClosed; // 0x818 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_NoiseArrivedClosed; // 0x820 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_ChainTarget; // 0x828 | Schema_Atomic | Size: 0x8
+			entity2::CEntityIOOutput m_OnBlockedClosing; // 0x830 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnBlockedOpening; // 0x848 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnUnblockedClosing; // 0x860 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnUnblockedOpening; // 0x878 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFullyClosed; // 0x890 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFullyOpen; // 0x8a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnClose; // 0x8c0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnOpen; // 0x8d8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnLockedUse; // 0x8f0 | Schema_DeclaredClass | Size: 0x18
+			bool m_bLoopMoveSound; // 0x908 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f);
-			bool m_bCreateNavObstacle; // 0xa60 | Schema_Builtin | Size: 0x1
-			bool m_isChaining; // 0xa61 | Schema_Builtin | Size: 0x1
-			bool m_bIsUsable; // 0xa62 | Schema_Builtin | Size: 0x1
+			bool m_bCreateNavObstacle; // 0x928 | Schema_Builtin | Size: 0x1
+			bool m_isChaining; // 0x929 | Schema_Builtin | Size: 0x1
+			bool m_bIsUsable; // 0x92a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBaseDoor, m_angMoveEntitySpace) == 0x868, "m_angMoveEntitySpace in CBaseDoor should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_vecMoveDirParentSpace) == 0x874, "m_vecMoveDirParentSpace in CBaseDoor should be at offset 0x874");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_ls) == 0x880, "m_ls in CBaseDoor should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bForceClosed) == 0x8A0, "m_bForceClosed in CBaseDoor should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bDoorGroup) == 0x8A1, "m_bDoorGroup in CBaseDoor should be at offset 0x8A1");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bLocked) == 0x8A2, "m_bLocked in CBaseDoor should be at offset 0x8A2");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bIgnoreDebris) == 0x8A3, "m_bIgnoreDebris in CBaseDoor should be at offset 0x8A3");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bNoNPCs) == 0x8A4, "m_bNoNPCs in CBaseDoor should be at offset 0x8A4");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_eSpawnPosition) == 0x8A8, "m_eSpawnPosition in CBaseDoor should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_flBlockDamage) == 0x8AC, "m_flBlockDamage in CBaseDoor should be at offset 0x8AC");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseMoving) == 0x8B0, "m_NoiseMoving in CBaseDoor should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseArrived) == 0x8B8, "m_NoiseArrived in CBaseDoor should be at offset 0x8B8");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseMovingClosed) == 0x8C0, "m_NoiseMovingClosed in CBaseDoor should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseArrivedClosed) == 0x8C8, "m_NoiseArrivedClosed in CBaseDoor should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_ChainTarget) == 0x8D0, "m_ChainTarget in CBaseDoor should be at offset 0x8D0");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnBlockedClosing) == 0x8D8, "m_OnBlockedClosing in CBaseDoor should be at offset 0x8D8");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnBlockedOpening) == 0x900, "m_OnBlockedOpening in CBaseDoor should be at offset 0x900");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnUnblockedClosing) == 0x928, "m_OnUnblockedClosing in CBaseDoor should be at offset 0x928");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnUnblockedOpening) == 0x950, "m_OnUnblockedOpening in CBaseDoor should be at offset 0x950");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnFullyClosed) == 0x978, "m_OnFullyClosed in CBaseDoor should be at offset 0x978");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnFullyOpen) == 0x9A0, "m_OnFullyOpen in CBaseDoor should be at offset 0x9A0");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnClose) == 0x9C8, "m_OnClose in CBaseDoor should be at offset 0x9C8");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnOpen) == 0x9F0, "m_OnOpen in CBaseDoor should be at offset 0x9F0");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_OnLockedUse) == 0xA18, "m_OnLockedUse in CBaseDoor should be at offset 0xA18");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bLoopMoveSound) == 0xA40, "m_bLoopMoveSound in CBaseDoor should be at offset 0xA40");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bCreateNavObstacle) == 0xA60, "m_bCreateNavObstacle in CBaseDoor should be at offset 0xA60");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_isChaining) == 0xA61, "m_isChaining in CBaseDoor should be at offset 0xA61");
-		static_assert(offsetof(CS2::server::CBaseDoor, m_bIsUsable) == 0xA62, "m_bIsUsable in CBaseDoor should be at offset 0xA62");
-		static_assert(sizeof(CS2::server::CBaseDoor) == 0xA68, "CBaseDoor size should be 0xA68");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_angMoveEntitySpace) == 0x7C0, "m_angMoveEntitySpace in CBaseDoor should be at offset 0x7C0");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_vecMoveDirParentSpace) == 0x7CC, "m_vecMoveDirParentSpace in CBaseDoor should be at offset 0x7CC");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_ls) == 0x7D8, "m_ls in CBaseDoor should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bForceClosed) == 0x7F8, "m_bForceClosed in CBaseDoor should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bDoorGroup) == 0x7F9, "m_bDoorGroup in CBaseDoor should be at offset 0x7F9");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bLocked) == 0x7FA, "m_bLocked in CBaseDoor should be at offset 0x7FA");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bIgnoreDebris) == 0x7FB, "m_bIgnoreDebris in CBaseDoor should be at offset 0x7FB");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bNoNPCs) == 0x7FC, "m_bNoNPCs in CBaseDoor should be at offset 0x7FC");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_eSpawnPosition) == 0x800, "m_eSpawnPosition in CBaseDoor should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_flBlockDamage) == 0x804, "m_flBlockDamage in CBaseDoor should be at offset 0x804");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseMoving) == 0x808, "m_NoiseMoving in CBaseDoor should be at offset 0x808");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseArrived) == 0x810, "m_NoiseArrived in CBaseDoor should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseMovingClosed) == 0x818, "m_NoiseMovingClosed in CBaseDoor should be at offset 0x818");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_NoiseArrivedClosed) == 0x820, "m_NoiseArrivedClosed in CBaseDoor should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_ChainTarget) == 0x828, "m_ChainTarget in CBaseDoor should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnBlockedClosing) == 0x830, "m_OnBlockedClosing in CBaseDoor should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnBlockedOpening) == 0x848, "m_OnBlockedOpening in CBaseDoor should be at offset 0x848");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnUnblockedClosing) == 0x860, "m_OnUnblockedClosing in CBaseDoor should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnUnblockedOpening) == 0x878, "m_OnUnblockedOpening in CBaseDoor should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnFullyClosed) == 0x890, "m_OnFullyClosed in CBaseDoor should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnFullyOpen) == 0x8A8, "m_OnFullyOpen in CBaseDoor should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnClose) == 0x8C0, "m_OnClose in CBaseDoor should be at offset 0x8C0");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnOpen) == 0x8D8, "m_OnOpen in CBaseDoor should be at offset 0x8D8");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_OnLockedUse) == 0x8F0, "m_OnLockedUse in CBaseDoor should be at offset 0x8F0");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bLoopMoveSound) == 0x908, "m_bLoopMoveSound in CBaseDoor should be at offset 0x908");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bCreateNavObstacle) == 0x928, "m_bCreateNavObstacle in CBaseDoor should be at offset 0x928");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_isChaining) == 0x929, "m_isChaining in CBaseDoor should be at offset 0x929");
+		static_assert(offsetof(CS2::server::CBaseDoor, m_bIsUsable) == 0x92A, "m_bIsUsable in CBaseDoor should be at offset 0x92A");
+		static_assert(sizeof(CS2::server::CBaseDoor) == 0x930, "CBaseDoor size should be 0x930");
 	}
 }

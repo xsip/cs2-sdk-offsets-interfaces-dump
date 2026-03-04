@@ -32,125 +32,128 @@ namespace CS2 {
 	namespace server {
 		class CCSWeaponBase : public CS2::server::CBasePlayerWeapon {
 		public:
-			bool m_bRemoveable; // 0xea0 | Schema_Builtin | Size: 0x1
-			S2_PAD(0xf);
-			bool m_bPlayerAmmoStockOnPickup; // 0xeb0 | Schema_Builtin | Size: 0x1
-			bool m_bRequireUseToTouch; // 0xeb1 | Schema_Builtin | Size: 0x1
-			client::WeaponGameplayAnimState m_iWeaponGameplayAnimState; // 0xeb2 | Schema_DeclaredEnum | Size: 0x2
-			entity2::GameTime_t m_flWeaponGameplayAnimStateTimestamp; // 0xeb4 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flInspectCancelCompleteTime; // 0xeb8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bInspectPending; // 0xebc | Schema_Builtin | Size: 0x1
-			bool m_bInspectShouldLoop; // 0xebd | Schema_Builtin | Size: 0x1
+			bool m_bRemoveable; // 0xe20 | Schema_Builtin | Size: 0x1
+			bool m_bPlayerAmmoStockOnPickup; // 0xe21 | Schema_Builtin | Size: 0x1
+			bool m_bRequireUseToTouch; // 0xe22 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x1);
+			client::WeaponGameplayAnimState m_iWeaponGameplayAnimState; // 0xe24 | Schema_DeclaredEnum | Size: 0x2
+			S2_PAD(0x2);
+			entity2::GameTime_t m_flWeaponGameplayAnimStateTimestamp; // 0xe28 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flInspectCancelCompleteTime; // 0xe2c | Schema_DeclaredClass | Size: 0x4
+			bool m_bInspectPending; // 0xe30 | Schema_Builtin | Size: 0x1
+			bool m_bInspectShouldLoop; // 0xe31 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2a);
-			int32_t m_nLastEmptySoundCmdNum; // 0xee8 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x1c);
-			bool m_bFireOnEmpty; // 0xf08 | Schema_Builtin | Size: 0x1
+			int32_t m_nLastEmptySoundCmdNum; // 0xe5c | Schema_Builtin | Size: 0x4
+			S2_PAD(0x18);
+			bool m_bFireOnEmpty; // 0xe78 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xf10 | Schema_DeclaredClass | Size: 0x28
-			client::CSWeaponMode m_weaponMode; // 0xf38 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flTurningInaccuracyDelta; // 0xf3c | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecTurningInaccuracyEyeDirLast; // 0xf40 | Schema_Atomic | Size: 0xc
-			float32 m_flTurningInaccuracy; // 0xf4c | Schema_Builtin | Size: 0x4
-			float32 m_fAccuracyPenalty; // 0xf50 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLastAccuracyUpdateTime; // 0xf54 | Schema_DeclaredClass | Size: 0x4
-			float32 m_fAccuracySmoothedForZoom; // 0xf58 | Schema_Builtin | Size: 0x4
-			int32_t m_iRecoilIndex; // 0xf5c | Schema_Builtin | Size: 0x4
-			float32 m_flRecoilIndex; // 0xf60 | Schema_Builtin | Size: 0x4
-			bool m_bBurstMode; // 0xf64 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xe80 | Schema_DeclaredClass | Size: 0x18
+			client::CSWeaponMode m_weaponMode; // 0xe98 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flTurningInaccuracyDelta; // 0xe9c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecTurningInaccuracyEyeDirLast; // 0xea0 | Schema_Atomic | Size: 0xc
+			float32 m_flTurningInaccuracy; // 0xeac | Schema_Builtin | Size: 0x4
+			float32 m_fAccuracyPenalty; // 0xeb0 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastAccuracyUpdateTime; // 0xeb4 | Schema_DeclaredClass | Size: 0x4
+			float32 m_fAccuracySmoothedForZoom; // 0xeb8 | Schema_Builtin | Size: 0x4
+			int32_t m_iRecoilIndex; // 0xebc | Schema_Builtin | Size: 0x4
+			float32 m_flRecoilIndex; // 0xec0 | Schema_Builtin | Size: 0x4
+			bool m_bBurstMode; // 0xec4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTick_t m_nPostponeFireReadyTicks; // 0xf68 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flPostponeFireReadyFrac; // 0xf6c | Schema_Builtin | Size: 0x4
-			bool m_bInReload; // 0xf70 | Schema_Builtin | Size: 0x1
+			entity2::GameTick_t m_nPostponeFireReadyTicks; // 0xec8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flPostponeFireReadyFrac; // 0xecc | Schema_Builtin | Size: 0x4
+			bool m_bInReload; // 0xed0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_flDroppedAtTime; // 0xf74 | Schema_DeclaredClass | Size: 0x4
-			bool m_bIsHauledBack; // 0xf78 | Schema_Builtin | Size: 0x1
-			bool m_bSilencerOn; // 0xf79 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flDroppedAtTime; // 0xed4 | Schema_DeclaredClass | Size: 0x4
+			bool m_bIsHauledBack; // 0xed8 | Schema_Builtin | Size: 0x1
+			bool m_bSilencerOn; // 0xed9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_flTimeSilencerSwitchComplete; // 0xf7c | Schema_DeclaredClass | Size: 0x4
-			int32_t m_iOriginalTeamNumber; // 0xf80 | Schema_Builtin | Size: 0x4
-			int32_t m_iMostRecentTeamNumber; // 0xf84 | Schema_Builtin | Size: 0x4
-			bool m_bDroppedNearBuyZone; // 0xf88 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flTimeSilencerSwitchComplete; // 0xedc | Schema_DeclaredClass | Size: 0x4
+			float32 m_flWeaponActionPlaybackRate; // 0xee0 | Schema_Builtin | Size: 0x4
+			int32_t m_iOriginalTeamNumber; // 0xee4 | Schema_Builtin | Size: 0x4
+			int32_t m_iMostRecentTeamNumber; // 0xee8 | Schema_Builtin | Size: 0x4
+			bool m_bDroppedNearBuyZone; // 0xeec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flNextAttackRenderTimeOffset; // 0xf8c | Schema_Builtin | Size: 0x4
-			S2_PAD(0x10);
-			bool m_bCanBePickedUp; // 0xfa0 | Schema_Builtin | Size: 0x1
-			bool m_bUseCanOverrideNextOwnerTouchTime; // 0xfa1 | Schema_Builtin | Size: 0x1
+			float32 m_flNextAttackRenderTimeOffset; // 0xef0 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x14);
+			bool m_bCanBePickedUp; // 0xf08 | Schema_Builtin | Size: 0x1
+			bool m_bUseCanOverrideNextOwnerTouchTime; // 0xf09 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_nextOwnerTouchTime; // 0xfa4 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_nextPrevOwnerTouchTime; // 0xfa8 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_nextOwnerTouchTime; // 0xf0c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_nextPrevOwnerTouchTime; // 0xf10 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			entity2::GameTime_t m_nextPrevOwnerUseTime; // 0xfb0 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hPrevOwner; // 0xfb4 | Schema_Atomic | Size: 0x4
-			// char  m_hPrevOwner[0x4]; // 0xfb4 | Schema_Atomic | Size: 0x4
-			entity2::GameTick_t m_nDropTick; // 0xfb8 | Schema_DeclaredClass | Size: 0x4
-			bool m_bWasActiveWeaponWhenDropped; // 0xfbc | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_nextPrevOwnerUseTime; // 0xf18 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hPrevOwner; // 0xf1c | Schema_Atomic | Size: 0x4
+			// char m_hPrevOwner[0x4]; // 0xf1c | Schema_Atomic | Size: 0x4
+			entity2::GameTick_t m_nDropTick; // 0xf20 | Schema_DeclaredClass | Size: 0x4
+			bool m_bWasActiveWeaponWhenDropped; // 0xf24 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f);
-			bool m_donated; // 0xfdc | Schema_Builtin | Size: 0x1
+			bool m_donated; // 0xf44 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_fLastShotTime; // 0xfe0 | Schema_DeclaredClass | Size: 0x4
-			bool m_bWasOwnedByCT; // 0xfe4 | Schema_Builtin | Size: 0x1
-			bool m_bWasOwnedByTerrorist; // 0xfe5 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_fLastShotTime; // 0xf48 | Schema_DeclaredClass | Size: 0x4
+			bool m_bWasOwnedByCT; // 0xf4c | Schema_Builtin | Size: 0x1
+			bool m_bWasOwnedByTerrorist; // 0xf4d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_numRemoveUnownedWeaponThink; // 0xfe8 | Schema_Builtin | Size: 0x4
+			int32_t m_numRemoveUnownedWeaponThink; // 0xf50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::CIronSightController m_IronSightController; // 0xff0 | Schema_DeclaredClass | Size: 0x18
-			int32_t m_iIronSightMode; // 0x1008 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLastLOSTraceFailureTime; // 0x100c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flWatTickOffset; // 0x1010 | Schema_Builtin | Size: 0x4
+			server::CIronSightController m_IronSightController; // 0xf58 | Schema_DeclaredClass | Size: 0x18
+			int32_t m_iIronSightMode; // 0xf70 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastLOSTraceFailureTime; // 0xf74 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flWatTickOffset; // 0xf78 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
-			entity2::GameTime_t m_flLastShakeTime; // 0x1020 | Schema_DeclaredClass | Size: 0x4
-			S2_PAD(0x1ac); // End padding
+			entity2::GameTime_t m_flLastShakeTime; // 0xf88 | Schema_DeclaredClass | Size: 0x4
+			S2_PAD(0x1a4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bRemoveable) == 0xEA0, "m_bRemoveable in CCSWeaponBase should be at offset 0xEA0");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bPlayerAmmoStockOnPickup) == 0xEB0, "m_bPlayerAmmoStockOnPickup in CCSWeaponBase should be at offset 0xEB0");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bRequireUseToTouch) == 0xEB1, "m_bRequireUseToTouch in CCSWeaponBase should be at offset 0xEB1");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iWeaponGameplayAnimState) == 0xEB2, "m_iWeaponGameplayAnimState in CCSWeaponBase should be at offset 0xEB2");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flWeaponGameplayAnimStateTimestamp) == 0xEB4, "m_flWeaponGameplayAnimStateTimestamp in CCSWeaponBase should be at offset 0xEB4");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flInspectCancelCompleteTime) == 0xEB8, "m_flInspectCancelCompleteTime in CCSWeaponBase should be at offset 0xEB8");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bInspectPending) == 0xEBC, "m_bInspectPending in CCSWeaponBase should be at offset 0xEBC");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bInspectShouldLoop) == 0xEBD, "m_bInspectShouldLoop in CCSWeaponBase should be at offset 0xEBD");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nLastEmptySoundCmdNum) == 0xEE8, "m_nLastEmptySoundCmdNum in CCSWeaponBase should be at offset 0xEE8");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bFireOnEmpty) == 0xF08, "m_bFireOnEmpty in CCSWeaponBase should be at offset 0xF08");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_OnPlayerPickup) == 0xF10, "m_OnPlayerPickup in CCSWeaponBase should be at offset 0xF10");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_weaponMode) == 0xF38, "m_weaponMode in CCSWeaponBase should be at offset 0xF38");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flTurningInaccuracyDelta) == 0xF3C, "m_flTurningInaccuracyDelta in CCSWeaponBase should be at offset 0xF3C");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_vecTurningInaccuracyEyeDirLast) == 0xF40, "m_vecTurningInaccuracyEyeDirLast in CCSWeaponBase should be at offset 0xF40");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flTurningInaccuracy) == 0xF4C, "m_flTurningInaccuracy in CCSWeaponBase should be at offset 0xF4C");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_fAccuracyPenalty) == 0xF50, "m_fAccuracyPenalty in CCSWeaponBase should be at offset 0xF50");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flLastAccuracyUpdateTime) == 0xF54, "m_flLastAccuracyUpdateTime in CCSWeaponBase should be at offset 0xF54");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_fAccuracySmoothedForZoom) == 0xF58, "m_fAccuracySmoothedForZoom in CCSWeaponBase should be at offset 0xF58");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iRecoilIndex) == 0xF5C, "m_iRecoilIndex in CCSWeaponBase should be at offset 0xF5C");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flRecoilIndex) == 0xF60, "m_flRecoilIndex in CCSWeaponBase should be at offset 0xF60");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bBurstMode) == 0xF64, "m_bBurstMode in CCSWeaponBase should be at offset 0xF64");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nPostponeFireReadyTicks) == 0xF68, "m_nPostponeFireReadyTicks in CCSWeaponBase should be at offset 0xF68");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flPostponeFireReadyFrac) == 0xF6C, "m_flPostponeFireReadyFrac in CCSWeaponBase should be at offset 0xF6C");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bInReload) == 0xF70, "m_bInReload in CCSWeaponBase should be at offset 0xF70");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flDroppedAtTime) == 0xF74, "m_flDroppedAtTime in CCSWeaponBase should be at offset 0xF74");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bIsHauledBack) == 0xF78, "m_bIsHauledBack in CCSWeaponBase should be at offset 0xF78");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bSilencerOn) == 0xF79, "m_bSilencerOn in CCSWeaponBase should be at offset 0xF79");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flTimeSilencerSwitchComplete) == 0xF7C, "m_flTimeSilencerSwitchComplete in CCSWeaponBase should be at offset 0xF7C");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iOriginalTeamNumber) == 0xF80, "m_iOriginalTeamNumber in CCSWeaponBase should be at offset 0xF80");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iMostRecentTeamNumber) == 0xF84, "m_iMostRecentTeamNumber in CCSWeaponBase should be at offset 0xF84");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bDroppedNearBuyZone) == 0xF88, "m_bDroppedNearBuyZone in CCSWeaponBase should be at offset 0xF88");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flNextAttackRenderTimeOffset) == 0xF8C, "m_flNextAttackRenderTimeOffset in CCSWeaponBase should be at offset 0xF8C");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bCanBePickedUp) == 0xFA0, "m_bCanBePickedUp in CCSWeaponBase should be at offset 0xFA0");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bUseCanOverrideNextOwnerTouchTime) == 0xFA1, "m_bUseCanOverrideNextOwnerTouchTime in CCSWeaponBase should be at offset 0xFA1");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nextOwnerTouchTime) == 0xFA4, "m_nextOwnerTouchTime in CCSWeaponBase should be at offset 0xFA4");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nextPrevOwnerTouchTime) == 0xFA8, "m_nextPrevOwnerTouchTime in CCSWeaponBase should be at offset 0xFA8");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nextPrevOwnerUseTime) == 0xFB0, "m_nextPrevOwnerUseTime in CCSWeaponBase should be at offset 0xFB0");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_hPrevOwner) == 0xFB4, "m_hPrevOwner in CCSWeaponBase should be at offset 0xFB4");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nDropTick) == 0xFB8, "m_nDropTick in CCSWeaponBase should be at offset 0xFB8");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bWasActiveWeaponWhenDropped) == 0xFBC, "m_bWasActiveWeaponWhenDropped in CCSWeaponBase should be at offset 0xFBC");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_donated) == 0xFDC, "m_donated in CCSWeaponBase should be at offset 0xFDC");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_fLastShotTime) == 0xFE0, "m_fLastShotTime in CCSWeaponBase should be at offset 0xFE0");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bWasOwnedByCT) == 0xFE4, "m_bWasOwnedByCT in CCSWeaponBase should be at offset 0xFE4");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bWasOwnedByTerrorist) == 0xFE5, "m_bWasOwnedByTerrorist in CCSWeaponBase should be at offset 0xFE5");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_numRemoveUnownedWeaponThink) == 0xFE8, "m_numRemoveUnownedWeaponThink in CCSWeaponBase should be at offset 0xFE8");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_IronSightController) == 0xFF0, "m_IronSightController in CCSWeaponBase should be at offset 0xFF0");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iIronSightMode) == 0x1008, "m_iIronSightMode in CCSWeaponBase should be at offset 0x1008");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flLastLOSTraceFailureTime) == 0x100C, "m_flLastLOSTraceFailureTime in CCSWeaponBase should be at offset 0x100C");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flWatTickOffset) == 0x1010, "m_flWatTickOffset in CCSWeaponBase should be at offset 0x1010");
-		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flLastShakeTime) == 0x1020, "m_flLastShakeTime in CCSWeaponBase should be at offset 0x1020");
-		static_assert(sizeof(CS2::server::CCSWeaponBase) == 0x11D0, "CCSWeaponBase size should be 0x11D0");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bRemoveable) == 0xE20, "m_bRemoveable in CCSWeaponBase should be at offset 0xE20");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bPlayerAmmoStockOnPickup) == 0xE21, "m_bPlayerAmmoStockOnPickup in CCSWeaponBase should be at offset 0xE21");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bRequireUseToTouch) == 0xE22, "m_bRequireUseToTouch in CCSWeaponBase should be at offset 0xE22");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iWeaponGameplayAnimState) == 0xE24, "m_iWeaponGameplayAnimState in CCSWeaponBase should be at offset 0xE24");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flWeaponGameplayAnimStateTimestamp) == 0xE28, "m_flWeaponGameplayAnimStateTimestamp in CCSWeaponBase should be at offset 0xE28");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flInspectCancelCompleteTime) == 0xE2C, "m_flInspectCancelCompleteTime in CCSWeaponBase should be at offset 0xE2C");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bInspectPending) == 0xE30, "m_bInspectPending in CCSWeaponBase should be at offset 0xE30");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bInspectShouldLoop) == 0xE31, "m_bInspectShouldLoop in CCSWeaponBase should be at offset 0xE31");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nLastEmptySoundCmdNum) == 0xE5C, "m_nLastEmptySoundCmdNum in CCSWeaponBase should be at offset 0xE5C");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bFireOnEmpty) == 0xE78, "m_bFireOnEmpty in CCSWeaponBase should be at offset 0xE78");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_OnPlayerPickup) == 0xE80, "m_OnPlayerPickup in CCSWeaponBase should be at offset 0xE80");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_weaponMode) == 0xE98, "m_weaponMode in CCSWeaponBase should be at offset 0xE98");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flTurningInaccuracyDelta) == 0xE9C, "m_flTurningInaccuracyDelta in CCSWeaponBase should be at offset 0xE9C");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_vecTurningInaccuracyEyeDirLast) == 0xEA0, "m_vecTurningInaccuracyEyeDirLast in CCSWeaponBase should be at offset 0xEA0");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flTurningInaccuracy) == 0xEAC, "m_flTurningInaccuracy in CCSWeaponBase should be at offset 0xEAC");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_fAccuracyPenalty) == 0xEB0, "m_fAccuracyPenalty in CCSWeaponBase should be at offset 0xEB0");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flLastAccuracyUpdateTime) == 0xEB4, "m_flLastAccuracyUpdateTime in CCSWeaponBase should be at offset 0xEB4");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_fAccuracySmoothedForZoom) == 0xEB8, "m_fAccuracySmoothedForZoom in CCSWeaponBase should be at offset 0xEB8");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iRecoilIndex) == 0xEBC, "m_iRecoilIndex in CCSWeaponBase should be at offset 0xEBC");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flRecoilIndex) == 0xEC0, "m_flRecoilIndex in CCSWeaponBase should be at offset 0xEC0");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bBurstMode) == 0xEC4, "m_bBurstMode in CCSWeaponBase should be at offset 0xEC4");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nPostponeFireReadyTicks) == 0xEC8, "m_nPostponeFireReadyTicks in CCSWeaponBase should be at offset 0xEC8");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flPostponeFireReadyFrac) == 0xECC, "m_flPostponeFireReadyFrac in CCSWeaponBase should be at offset 0xECC");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bInReload) == 0xED0, "m_bInReload in CCSWeaponBase should be at offset 0xED0");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flDroppedAtTime) == 0xED4, "m_flDroppedAtTime in CCSWeaponBase should be at offset 0xED4");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bIsHauledBack) == 0xED8, "m_bIsHauledBack in CCSWeaponBase should be at offset 0xED8");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bSilencerOn) == 0xED9, "m_bSilencerOn in CCSWeaponBase should be at offset 0xED9");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flTimeSilencerSwitchComplete) == 0xEDC, "m_flTimeSilencerSwitchComplete in CCSWeaponBase should be at offset 0xEDC");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flWeaponActionPlaybackRate) == 0xEE0, "m_flWeaponActionPlaybackRate in CCSWeaponBase should be at offset 0xEE0");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iOriginalTeamNumber) == 0xEE4, "m_iOriginalTeamNumber in CCSWeaponBase should be at offset 0xEE4");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iMostRecentTeamNumber) == 0xEE8, "m_iMostRecentTeamNumber in CCSWeaponBase should be at offset 0xEE8");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bDroppedNearBuyZone) == 0xEEC, "m_bDroppedNearBuyZone in CCSWeaponBase should be at offset 0xEEC");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flNextAttackRenderTimeOffset) == 0xEF0, "m_flNextAttackRenderTimeOffset in CCSWeaponBase should be at offset 0xEF0");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bCanBePickedUp) == 0xF08, "m_bCanBePickedUp in CCSWeaponBase should be at offset 0xF08");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bUseCanOverrideNextOwnerTouchTime) == 0xF09, "m_bUseCanOverrideNextOwnerTouchTime in CCSWeaponBase should be at offset 0xF09");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nextOwnerTouchTime) == 0xF0C, "m_nextOwnerTouchTime in CCSWeaponBase should be at offset 0xF0C");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nextPrevOwnerTouchTime) == 0xF10, "m_nextPrevOwnerTouchTime in CCSWeaponBase should be at offset 0xF10");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nextPrevOwnerUseTime) == 0xF18, "m_nextPrevOwnerUseTime in CCSWeaponBase should be at offset 0xF18");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_hPrevOwner) == 0xF1C, "m_hPrevOwner in CCSWeaponBase should be at offset 0xF1C");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_nDropTick) == 0xF20, "m_nDropTick in CCSWeaponBase should be at offset 0xF20");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bWasActiveWeaponWhenDropped) == 0xF24, "m_bWasActiveWeaponWhenDropped in CCSWeaponBase should be at offset 0xF24");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_donated) == 0xF44, "m_donated in CCSWeaponBase should be at offset 0xF44");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_fLastShotTime) == 0xF48, "m_fLastShotTime in CCSWeaponBase should be at offset 0xF48");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bWasOwnedByCT) == 0xF4C, "m_bWasOwnedByCT in CCSWeaponBase should be at offset 0xF4C");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bWasOwnedByTerrorist) == 0xF4D, "m_bWasOwnedByTerrorist in CCSWeaponBase should be at offset 0xF4D");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_numRemoveUnownedWeaponThink) == 0xF50, "m_numRemoveUnownedWeaponThink in CCSWeaponBase should be at offset 0xF50");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_IronSightController) == 0xF58, "m_IronSightController in CCSWeaponBase should be at offset 0xF58");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_iIronSightMode) == 0xF70, "m_iIronSightMode in CCSWeaponBase should be at offset 0xF70");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flLastLOSTraceFailureTime) == 0xF74, "m_flLastLOSTraceFailureTime in CCSWeaponBase should be at offset 0xF74");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flWatTickOffset) == 0xF78, "m_flWatTickOffset in CCSWeaponBase should be at offset 0xF78");
+		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flLastShakeTime) == 0xF88, "m_flLastShakeTime in CCSWeaponBase should be at offset 0xF88");
+		static_assert(sizeof(CS2::server::CCSWeaponBase) == 0x1130, "CCSWeaponBase size should be 0x1130");
 	}
 }

@@ -16,20 +16,21 @@ export const client_CBasePlayerWeaponVData  = {
 	m_nMuzzleSmokeShotThreshold: 984n, // uint8_t m_nMuzzleSmokeShotThreshold; |  0x3d8 | Schema_Builtin | Size: 0x1
 	m_flMuzzleSmokeTimeout: 988n, // float32 m_flMuzzleSmokeTimeout; |  0x3dc | Schema_Builtin | Size: 0x4
 	m_flMuzzleSmokeDecrementRate: 992n, // float32 m_flMuzzleSmokeDecrementRate; |  0x3e0 | Schema_Builtin | Size: 0x4
-	m_bLinkedCooldowns: 996n, // bool m_bLinkedCooldowns; |  0x3e4 | Schema_Builtin | Size: 0x1
-	m_iFlags: 997n, // client::ItemFlagTypes_t  | Schema_DeclaredEnum | Size: 0x1
-	m_nPrimaryAmmoType: 998n, // client::AmmoIndex_t  | Schema_DeclaredClass | Size: 0x1
-	m_nSecondaryAmmoType: 999n, // client::AmmoIndex_t  | Schema_DeclaredClass | Size: 0x1
-	m_iMaxClip1: 1000n, // int32_t m_iMaxClip1; |  0x3e8 | Schema_Builtin | Size: 0x4
-	m_iMaxClip2: 1004n, // int32_t m_iMaxClip2; |  0x3ec | Schema_Builtin | Size: 0x4
-	m_iDefaultClip1: 1008n, // int32_t m_iDefaultClip1; |  0x3f0 | Schema_Builtin | Size: 0x4
-	m_iDefaultClip2: 1012n, // int32_t m_iDefaultClip2; |  0x3f4 | Schema_Builtin | Size: 0x4
-	m_bReserveAmmoAsClips: 1016n, // bool m_bReserveAmmoAsClips; |  0x3f8 | Schema_Builtin | Size: 0x1
-	m_bTreatAsSingleClip: 1017n, // bool m_bTreatAsSingleClip; |  0x3f9 | Schema_Builtin | Size: 0x1
-	m_bKeepLoadedAmmo: 1018n, // bool m_bKeepLoadedAmmo; |  0x3fa | Schema_Builtin | Size: 0x1
-	m_iWeight: 1020n, // int32_t m_iWeight; |  0x3fc | Schema_Builtin | Size: 0x4
-	m_bAutoSwitchTo: 1024n, // bool m_bAutoSwitchTo; |  0x400 | Schema_Builtin | Size: 0x1
-	m_bAutoSwitchFrom: 1025n, // bool m_bAutoSwitchFrom; |  0x401 | Schema_Builtin | Size: 0x1
+	m_bGenerateMuzzleLight: 996n, // bool m_bGenerateMuzzleLight; |  0x3e4 | Schema_Builtin | Size: 0x1
+	m_bLinkedCooldowns: 997n, // bool m_bLinkedCooldowns; |  0x3e5 | Schema_Builtin | Size: 0x1
+	m_iFlags: 998n, // client::ItemFlagTypes_t  | Schema_DeclaredEnum | Size: 0x1
+	m_iWeight: 1000n, // int32_t m_iWeight; |  0x3e8 | Schema_Builtin | Size: 0x4
+	m_bAutoSwitchTo: 1004n, // bool m_bAutoSwitchTo; |  0x3ec | Schema_Builtin | Size: 0x1
+	m_bAutoSwitchFrom: 1005n, // bool m_bAutoSwitchFrom; |  0x3ed | Schema_Builtin | Size: 0x1
+	m_nPrimaryAmmoType: 1006n, // client::AmmoIndex_t  | Schema_DeclaredClass | Size: 0x1
+	m_nSecondaryAmmoType: 1007n, // client::AmmoIndex_t  | Schema_DeclaredClass | Size: 0x1
+	m_iMaxClip1: 1008n, // int32_t m_iMaxClip1; |  0x3f0 | Schema_Builtin | Size: 0x4
+	m_iMaxClip2: 1012n, // int32_t m_iMaxClip2; |  0x3f4 | Schema_Builtin | Size: 0x4
+	m_iDefaultClip1: 1016n, // int32_t m_iDefaultClip1; |  0x3f8 | Schema_Builtin | Size: 0x4
+	m_iDefaultClip2: 1020n, // int32_t m_iDefaultClip2; |  0x3fc | Schema_Builtin | Size: 0x4
+	m_bReserveAmmoAsClips: 1024n, // bool m_bReserveAmmoAsClips; |  0x400 | Schema_Builtin | Size: 0x1
+	m_bTreatAsSingleClip: 1025n, // bool m_bTreatAsSingleClip; |  0x401 | Schema_Builtin | Size: 0x1
+	m_bKeepLoadedAmmo: 1026n, // bool m_bKeepLoadedAmmo; |  0x402 | Schema_Builtin | Size: 0x1
 	m_iRumbleEffect: 1028n, // client::RumbleEffect_t  | Schema_DeclaredEnum | Size: 0x4
 	m_flDropSpeed: 1032n, // float32 m_flDropSpeed; |  0x408 | Schema_Builtin | Size: 0x4
 	m_iSlot: 1036n, // int32_t m_iSlot; |  0x40c | Schema_Builtin | Size: 0x4

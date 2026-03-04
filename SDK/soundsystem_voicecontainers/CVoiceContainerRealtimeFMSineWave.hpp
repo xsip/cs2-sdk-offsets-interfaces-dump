@@ -10,7 +10,7 @@
 #endif
 
 
-#include <SDK/soundsystem_voicecontainers/CVoiceContainerBase.hpp>
+#include <SDK/soundsystem_voicecontainers/CVoiceContainerGenerator.hpp>
 
 
 
@@ -19,16 +19,16 @@
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
-		class CVoiceContainerRealtimeFMSineWave : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
+		class CVoiceContainerRealtimeFMSineWave : public CS2::soundsystem_voicecontainers::CVoiceContainerGenerator {
 		public:
-			float32 m_flCarrierFrequency; // 0xb8 | Schema_Builtin | Size: 0x4
-			float32 m_flModulatorFrequency; // 0xbc | Schema_Builtin | Size: 0x4
-			float32 m_flModulatorAmount; // 0xc0 | Schema_Builtin | Size: 0x4
+			float32 m_flCarrierFrequency; // 0xa8 | Schema_Builtin | Size: 0x4
+			float32 m_flModulatorFrequency; // 0xac | Schema_Builtin | Size: 0x4
+			float32 m_flModulatorAmount; // 0xb0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flCarrierFrequency) == 0xB8, "m_flCarrierFrequency in CVoiceContainerRealtimeFMSineWave should be at offset 0xB8");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flModulatorFrequency) == 0xBC, "m_flModulatorFrequency in CVoiceContainerRealtimeFMSineWave should be at offset 0xBC");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flModulatorAmount) == 0xC0, "m_flModulatorAmount in CVoiceContainerRealtimeFMSineWave should be at offset 0xC0");
-		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave) == 0xC8, "CVoiceContainerRealtimeFMSineWave size should be 0xC8");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flCarrierFrequency) == 0xA8, "m_flCarrierFrequency in CVoiceContainerRealtimeFMSineWave should be at offset 0xA8");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flModulatorFrequency) == 0xAC, "m_flModulatorFrequency in CVoiceContainerRealtimeFMSineWave should be at offset 0xAC");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flModulatorAmount) == 0xB0, "m_flModulatorAmount in CVoiceContainerRealtimeFMSineWave should be at offset 0xB0");
+		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave) == 0xB8, "CVoiceContainerRealtimeFMSineWave size should be 0xB8");
 	}
 }

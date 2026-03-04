@@ -6,23 +6,27 @@
 #include "entity2_GameTime_t.hpp"
 
 class client_CCSPlayer_WeaponServices {
-    char vTable1208[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1209[0x10];
+    char pad_2013[0x18];
     char m_hMyWeapons[0x18];
     char m_hActiveWeapon[0x4];
     char m_hLastWeapon[0x4];
     uint16_t m_iAmmo[32];
-    char vTable879[0x28];
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
     entity2_GameTime_t m_flNextAttack;
     bool m_bIsLookingAtWeapon;
     bool m_bIsHoldingLookAtWeapon;
-    char pad_880[0x2];
+    char pad_1678[0x2];
     uint32_t m_nOldTotalShootPositionHistoryCount;
-    char pad_881[0x294];
+    char pad_1679[0x294];
     uint32_t m_nOldTotalInputHistoryCount;
-    char pad_882[0x155c];
+    char pad_1680[0x1214];
     char m_networkAnimTiming[0x18];
     bool m_bBlockInspectUntilNextGraphUpdate;
-    char end_pad_883[0x2f];
+    char end_pad_1681[0x2f];
 };

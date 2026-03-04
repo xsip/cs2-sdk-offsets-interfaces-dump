@@ -8,8 +8,8 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem_voicecontainers {
-			// Class size: 0xB8
-			namespace CVoiceContainerNull /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
+			// Class size: 0xA8
+			namespace CVoiceContainerNull /*: public CS2::soundsystem_voicecontainers::CVoiceContainerGenerator*/ {
 				// NO SCHEMA DATA FOUND!
 			}
 		}

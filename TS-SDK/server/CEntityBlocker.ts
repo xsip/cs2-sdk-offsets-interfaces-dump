@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_CBaseModelEntity} from './CBaseModelEntity';
-// Class size: 0x7D8
+// Class size: 0x730
 // BaseClass: : public CS2::server::CBaseModelEntity
 export const server_CEntityBlocker  = {
 	...server_CBaseModelEntity,

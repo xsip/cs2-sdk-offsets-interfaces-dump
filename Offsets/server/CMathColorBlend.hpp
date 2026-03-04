@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x528
+			// Class size: 0x4D8
 			namespace CMathColorBlend /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_flInMin = 0x4f0; // float32 m_flInMin; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInMax = 0x4f4; // float32 m_flInMax; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OutColor1 = 0x4f8; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OutColor2 = 0x4fc; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OutValue = 0x500; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::Color>  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_flInMin = 0x4a8; // float32 m_flInMin; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInMax = 0x4ac; // float32 m_flInMax; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OutColor1 = 0x4b0; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OutColor2 = 0x4b4; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OutValue = 0x4b8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

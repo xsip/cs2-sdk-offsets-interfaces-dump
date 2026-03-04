@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace client {
 		class C_PhysicsProp : public CS2::client::C_BreakableProp {
 		public:
-			bool m_bAwake; // 0x1300 | Schema_Builtin | Size: 0x1
+			bool m_bAwake; // 0x12d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_PhysicsProp, m_bAwake) == 0x1300, "m_bAwake in C_PhysicsProp should be at offset 0x1300");
-		static_assert(sizeof(CS2::client::C_PhysicsProp) == 0x1310, "C_PhysicsProp size should be 0x1310");
+		static_assert(offsetof(CS2::client::C_PhysicsProp, m_bAwake) == 0x12D0, "m_bAwake in C_PhysicsProp should be at offset 0x12D0");
+		static_assert(sizeof(CS2::client::C_PhysicsProp) == 0x12E0, "C_PhysicsProp size should be 0x12E0");
 	}
 }

@@ -4,42 +4,57 @@
 
 class client_CSkeletonInstance;
 #include "client_CAnimGraphNetworkedVariables.hpp"
+#include "client_ExternalAnimGraphHandle_t.hpp"
 #include "animationsystem_HSequence.hpp"
 #include "entity2_GameTime_t.hpp"
+#include "entity2_GameTick_t.hpp"
+#include "resourcefile_ResourceId_t.hpp"
 
 class client_CBaseAnimGraphController {
-    char pad_782[0x8];
+    char pad_1572[0x8];
     client_CSkeletonInstance* m_pSkeletonInstance;
-    char vTable772[0x8];
+    void **__vftable_0;
+    client_AnimationAlgorithm_t m_nAnimationAlgorithm;
+    char pad_1561[0x7];
     client_CAnimGraphNetworkedVariables m_animGraphNetworkedVars;
-    bool m_bSequenceFinished;
-    char pad_773[0x3];
+    char m_pAnimGraphInstance[0x8];
+    char pad_1562[0x58];
+    client_ExternalAnimGraphHandle_t m_nNextExternalGraphHandle;
+    char pad_1563[0x4];
+    char m_vecSecondarySkeletonNames[0x18];
+    char m_vecSecondarySkeletons[0x18];
+    int32_t m_nSecondarySkeletonMasterCount;
+    char pad_1564[0x4];
     float32 m_flSoundSyncTime;
     uint32_t m_nActiveIKChainMask;
+    char pad_1565[0x50];
     animationsystem_HSequence m_hSequence;
     entity2_GameTime_t m_flSeqStartTime;
     float32 m_flSeqFixedCycle;
     client_AnimLoopMode_t m_nAnimLoopMode;
     CNetworkedQuantizedFloat m_flPlaybackRate;
-    char pad_774[0x4];
+    char pad_1566[0x4];
     client_SequenceFinishNotifyState_t m_nNotifyState;
-    char pad_775[0x1];
     bool m_bNetworkedAnimationInputsChanged;
     bool m_bNetworkedSequenceChanged;
     bool m_bLastUpdateSkipped;
-    char pad_776[0x3];
-    entity2_GameTime_t m_flPrevAnimUpdateTime;
-    char pad_777[0x384];
+    bool m_bSequenceFinished;
+    char pad_1567[0x3];
+    entity2_GameTick_t m_nPrevAnimUpdateTick;
+    char pad_1568[0x298];
     char m_hGraphDefinitionAG2[0x8];
-    bool m_bIsUsingAG2;
-    char pad_778[0x7];
     char m_serializedPoseRecipeAG2[0x18];
     int32_t m_nSerializePoseRecipeSizeAG2;
     int32_t m_nSerializePoseRecipeVersionAG2;
-    uint8_t m_nGraphCreationFlagsAG2;
-    char pad_779[0x1eb];
-    int32_t m_nServerGraphDefReloadCountAG2;
-    char pad_780[0x4];
+    int32_t m_nServerGraphInstanceIteration;
     int32_t m_nServerSerializationContextIteration;
-    char pad_781[0x8];
+    resourcefile_ResourceId_t m_primaryGraphId;
+    char m_vecExternalGraphIds[0x18];
+    char m_vecExternalClipIds[0x18];
+    CGlobalSymbol m_sAnimGraph2Identifier;
+    char pad_1569[0x220];
+    char m_vecExternalGraphs[0x18];
+    char pad_1570[0x21];
+    client_AnimationAlgorithm_t m_nPrevAnimationAlgorithm;
+    char pad_1571[0x6];
 };

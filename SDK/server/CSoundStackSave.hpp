@@ -21,9 +21,9 @@ namespace CS2 {
 	namespace server {
 		class CSoundStackSave : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x4f0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x4a8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CSoundStackSave, m_iszStackName) == 0x4F0, "m_iszStackName in CSoundStackSave should be at offset 0x4F0");
-		static_assert(sizeof(CS2::server::CSoundStackSave) == 0x4F8, "CSoundStackSave size should be 0x4F8");
+		static_assert(offsetof(CS2::server::CSoundStackSave, m_iszStackName) == 0x4A8, "m_iszStackName in CSoundStackSave should be at offset 0x4A8");
+		static_assert(sizeof(CS2::server::CSoundStackSave) == 0x4B0, "CSoundStackSave size should be 0x4B0");
 	}
 }

@@ -4,7 +4,7 @@
 
 
 class server_CMotorController {
-    char vTable3856[0x8];
+    void **__vftable_0;
     float32 m_speed;
     float32 m_maxTorque;
     VectorWS m_axis;

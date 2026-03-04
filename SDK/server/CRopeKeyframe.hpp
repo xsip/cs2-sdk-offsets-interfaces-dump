@@ -28,58 +28,58 @@ namespace CS2 {
 		class CRopeKeyframe : public CS2::server::CBaseModelEntity {
 		public:
 			S2_PAD(0x8);
-			uint16_t m_RopeFlags; // 0x7e0 | Schema_Builtin | Size: 0x2
+			uint16_t m_RopeFlags; // 0x738 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);
-			GlobalTypes::CUtlSymbolLarge m_iNextLinkName; // 0x7e8 | Schema_Atomic | Size: 0x8
-			int16_t m_Slack; // 0x7f0 | Schema_Builtin | Size: 0x2
+			GlobalTypes::CUtlSymbolLarge m_iNextLinkName; // 0x740 | Schema_Atomic | Size: 0x8
+			int16_t m_Slack; // 0x748 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
-			float32 m_Width; // 0x7f4 | Schema_Builtin | Size: 0x4
-			float32 m_TextureScale; // 0x7f8 | Schema_Builtin | Size: 0x4
-			uint8_t m_nSegments; // 0x7fc | Schema_Builtin | Size: 0x1
-			bool m_bConstrainBetweenEndpoints; // 0x7fd | Schema_Builtin | Size: 0x1
+			float32 m_Width; // 0x74c | Schema_Builtin | Size: 0x4
+			float32 m_TextureScale; // 0x750 | Schema_Builtin | Size: 0x4
+			uint8_t m_nSegments; // 0x754 | Schema_Builtin | Size: 0x1
+			bool m_bConstrainBetweenEndpoints; // 0x755 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CUtlSymbolLarge m_strRopeMaterialModel; // 0x800 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_iRopeMaterialModelIndex; // 0x808 | Schema_Atomic | Size: 0x8
-			char  m_iRopeMaterialModelIndex[0x8]; // 0x808 | Schema_Atomic | Size: 0x8
-			uint8_t m_Subdiv; // 0x810 | Schema_Builtin | Size: 0x1
-			uint8_t m_nChangeCount; // 0x811 | Schema_Builtin | Size: 0x1
-			int16_t m_RopeLength; // 0x812 | Schema_Builtin | Size: 0x2
-			uint8_t m_fLockedPoints; // 0x814 | Schema_Builtin | Size: 0x1
-			bool m_bCreatedFromMapFile; // 0x815 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_strRopeMaterialModel; // 0x758 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_iRopeMaterialModelIndex; // 0x760 | Schema_Atomic | Size: 0x8
+			char m_iRopeMaterialModelIndex[0x8]; // 0x760 | Schema_Atomic | Size: 0x8
+			uint8_t m_Subdiv; // 0x768 | Schema_Builtin | Size: 0x1
+			uint8_t m_nChangeCount; // 0x769 | Schema_Builtin | Size: 0x1
+			int16_t m_RopeLength; // 0x76a | Schema_Builtin | Size: 0x2
+			uint8_t m_fLockedPoints; // 0x76c | Schema_Builtin | Size: 0x1
+			bool m_bCreatedFromMapFile; // 0x76d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flScrollSpeed; // 0x818 | Schema_Builtin | Size: 0x4
-			bool m_bStartPointValid; // 0x81c | Schema_Builtin | Size: 0x1
-			bool m_bEndPointValid; // 0x81d | Schema_Builtin | Size: 0x1
+			float32 m_flScrollSpeed; // 0x770 | Schema_Builtin | Size: 0x4
+			bool m_bStartPointValid; // 0x774 | Schema_Builtin | Size: 0x1
+			bool m_bEndPointValid; // 0x775 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CHandle<server::CBaseEntity> m_hStartPoint; // 0x820 | Schema_Atomic | Size: 0x4
-			// char  m_hStartPoint[0x4]; // 0x820 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hEndPoint; // 0x824 | Schema_Atomic | Size: 0x4
-			// char  m_hEndPoint[0x4]; // 0x824 | Schema_Atomic | Size: 0x4
-			modellib::AttachmentHandle_t m_iStartAttachment; // 0x828 | Schema_DeclaredClass | Size: 0x1
-			modellib::AttachmentHandle_t m_iEndAttachment; // 0x829 | Schema_DeclaredClass | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseEntity> m_hStartPoint; // 0x778 | Schema_Atomic | Size: 0x4
+			// char m_hStartPoint[0x4]; // 0x778 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEndPoint; // 0x77c | Schema_Atomic | Size: 0x4
+			// char m_hEndPoint[0x4]; // 0x77c | Schema_Atomic | Size: 0x4
+			modellib::AttachmentHandle_t m_iStartAttachment; // 0x780 | Schema_DeclaredClass | Size: 0x1
+			modellib::AttachmentHandle_t m_iEndAttachment; // 0x781 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_RopeFlags) == 0x7E0, "m_RopeFlags in CRopeKeyframe should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iNextLinkName) == 0x7E8, "m_iNextLinkName in CRopeKeyframe should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_Slack) == 0x7F0, "m_Slack in CRopeKeyframe should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_Width) == 0x7F4, "m_Width in CRopeKeyframe should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_TextureScale) == 0x7F8, "m_TextureScale in CRopeKeyframe should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_nSegments) == 0x7FC, "m_nSegments in CRopeKeyframe should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bConstrainBetweenEndpoints) == 0x7FD, "m_bConstrainBetweenEndpoints in CRopeKeyframe should be at offset 0x7FD");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_strRopeMaterialModel) == 0x800, "m_strRopeMaterialModel in CRopeKeyframe should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iRopeMaterialModelIndex) == 0x808, "m_iRopeMaterialModelIndex in CRopeKeyframe should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_Subdiv) == 0x810, "m_Subdiv in CRopeKeyframe should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_nChangeCount) == 0x811, "m_nChangeCount in CRopeKeyframe should be at offset 0x811");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_RopeLength) == 0x812, "m_RopeLength in CRopeKeyframe should be at offset 0x812");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_fLockedPoints) == 0x814, "m_fLockedPoints in CRopeKeyframe should be at offset 0x814");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bCreatedFromMapFile) == 0x815, "m_bCreatedFromMapFile in CRopeKeyframe should be at offset 0x815");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_flScrollSpeed) == 0x818, "m_flScrollSpeed in CRopeKeyframe should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bStartPointValid) == 0x81C, "m_bStartPointValid in CRopeKeyframe should be at offset 0x81C");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bEndPointValid) == 0x81D, "m_bEndPointValid in CRopeKeyframe should be at offset 0x81D");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_hStartPoint) == 0x820, "m_hStartPoint in CRopeKeyframe should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_hEndPoint) == 0x824, "m_hEndPoint in CRopeKeyframe should be at offset 0x824");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iStartAttachment) == 0x828, "m_iStartAttachment in CRopeKeyframe should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iEndAttachment) == 0x829, "m_iEndAttachment in CRopeKeyframe should be at offset 0x829");
-		static_assert(sizeof(CS2::server::CRopeKeyframe) == 0x830, "CRopeKeyframe size should be 0x830");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_RopeFlags) == 0x738, "m_RopeFlags in CRopeKeyframe should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iNextLinkName) == 0x740, "m_iNextLinkName in CRopeKeyframe should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_Slack) == 0x748, "m_Slack in CRopeKeyframe should be at offset 0x748");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_Width) == 0x74C, "m_Width in CRopeKeyframe should be at offset 0x74C");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_TextureScale) == 0x750, "m_TextureScale in CRopeKeyframe should be at offset 0x750");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_nSegments) == 0x754, "m_nSegments in CRopeKeyframe should be at offset 0x754");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bConstrainBetweenEndpoints) == 0x755, "m_bConstrainBetweenEndpoints in CRopeKeyframe should be at offset 0x755");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_strRopeMaterialModel) == 0x758, "m_strRopeMaterialModel in CRopeKeyframe should be at offset 0x758");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iRopeMaterialModelIndex) == 0x760, "m_iRopeMaterialModelIndex in CRopeKeyframe should be at offset 0x760");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_Subdiv) == 0x768, "m_Subdiv in CRopeKeyframe should be at offset 0x768");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_nChangeCount) == 0x769, "m_nChangeCount in CRopeKeyframe should be at offset 0x769");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_RopeLength) == 0x76A, "m_RopeLength in CRopeKeyframe should be at offset 0x76A");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_fLockedPoints) == 0x76C, "m_fLockedPoints in CRopeKeyframe should be at offset 0x76C");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bCreatedFromMapFile) == 0x76D, "m_bCreatedFromMapFile in CRopeKeyframe should be at offset 0x76D");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_flScrollSpeed) == 0x770, "m_flScrollSpeed in CRopeKeyframe should be at offset 0x770");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bStartPointValid) == 0x774, "m_bStartPointValid in CRopeKeyframe should be at offset 0x774");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_bEndPointValid) == 0x775, "m_bEndPointValid in CRopeKeyframe should be at offset 0x775");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_hStartPoint) == 0x778, "m_hStartPoint in CRopeKeyframe should be at offset 0x778");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_hEndPoint) == 0x77C, "m_hEndPoint in CRopeKeyframe should be at offset 0x77C");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iStartAttachment) == 0x780, "m_iStartAttachment in CRopeKeyframe should be at offset 0x780");
+		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iEndAttachment) == 0x781, "m_iEndAttachment in CRopeKeyframe should be at offset 0x781");
+		static_assert(sizeof(CS2::server::CRopeKeyframe) == 0x788, "CRopeKeyframe size should be 0x788");
 	}
 }

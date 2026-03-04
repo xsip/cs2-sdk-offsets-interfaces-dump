@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x710
+			// Class size: 0x678
 			namespace CPhysHingeAlias_phys_hinge_local /*: public CS2::server::CPhysHinge*/ {
 				// NO SCHEMA DATA FOUND!
 			}

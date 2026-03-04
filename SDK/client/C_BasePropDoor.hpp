@@ -23,25 +23,25 @@ namespace CS2 {
 		class C_BasePropDoor : public CS2::client::C_DynamicProp {
 		public:
 			S2_PAD(0x10);
-			client::DoorState_t m_eDoorState; // 0x1430 | Schema_DeclaredEnum | Size: 0x4
-			bool m_modelChanged; // 0x1434 | Schema_Builtin | Size: 0x1
-			bool m_bLocked; // 0x1435 | Schema_Builtin | Size: 0x1
-			bool m_bNoNPCs; // 0x1436 | Schema_Builtin | Size: 0x1
+			client::DoorState_t m_eDoorState; // 0x13b0 | Schema_DeclaredEnum | Size: 0x4
+			bool m_modelChanged; // 0x13b4 | Schema_Builtin | Size: 0x1
+			bool m_bLocked; // 0x13b5 | Schema_Builtin | Size: 0x1
+			bool m_bNoNPCs; // 0x13b6 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			GlobalTypes::Vector m_closedPosition; // 0x1438 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_closedAngles; // 0x1444 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle<client::C_BasePropDoor> m_hMaster; // 0x1450 | Schema_Atomic | Size: 0x4
-			// char  m_hMaster[0x4]; // 0x1450 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Vector m_vWhereToSetLightingOrigin; // 0x1454 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_closedPosition; // 0x13b8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_closedAngles; // 0x13c4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<client::C_BasePropDoor> m_hMaster; // 0x13d0 | Schema_Atomic | Size: 0x4
+			// char m_hMaster[0x4]; // 0x13d0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Vector m_vWhereToSetLightingOrigin; // 0x13d4 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_eDoorState) == 0x1430, "m_eDoorState in C_BasePropDoor should be at offset 0x1430");
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_modelChanged) == 0x1434, "m_modelChanged in C_BasePropDoor should be at offset 0x1434");
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_bLocked) == 0x1435, "m_bLocked in C_BasePropDoor should be at offset 0x1435");
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_bNoNPCs) == 0x1436, "m_bNoNPCs in C_BasePropDoor should be at offset 0x1436");
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_closedPosition) == 0x1438, "m_closedPosition in C_BasePropDoor should be at offset 0x1438");
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_closedAngles) == 0x1444, "m_closedAngles in C_BasePropDoor should be at offset 0x1444");
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_hMaster) == 0x1450, "m_hMaster in C_BasePropDoor should be at offset 0x1450");
-		static_assert(offsetof(CS2::client::C_BasePropDoor, m_vWhereToSetLightingOrigin) == 0x1454, "m_vWhereToSetLightingOrigin in C_BasePropDoor should be at offset 0x1454");
-		static_assert(sizeof(CS2::client::C_BasePropDoor) == 0x1460, "C_BasePropDoor size should be 0x1460");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_eDoorState) == 0x13B0, "m_eDoorState in C_BasePropDoor should be at offset 0x13B0");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_modelChanged) == 0x13B4, "m_modelChanged in C_BasePropDoor should be at offset 0x13B4");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_bLocked) == 0x13B5, "m_bLocked in C_BasePropDoor should be at offset 0x13B5");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_bNoNPCs) == 0x13B6, "m_bNoNPCs in C_BasePropDoor should be at offset 0x13B6");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_closedPosition) == 0x13B8, "m_closedPosition in C_BasePropDoor should be at offset 0x13B8");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_closedAngles) == 0x13C4, "m_closedAngles in C_BasePropDoor should be at offset 0x13C4");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_hMaster) == 0x13D0, "m_hMaster in C_BasePropDoor should be at offset 0x13D0");
+		static_assert(offsetof(CS2::client::C_BasePropDoor, m_vWhereToSetLightingOrigin) == 0x13D4, "m_vWhereToSetLightingOrigin in C_BasePropDoor should be at offset 0x13D4");
+		static_assert(sizeof(CS2::client::C_BasePropDoor) == 0x13E0, "C_BasePropDoor size should be 0x13E0");
 	}
 }

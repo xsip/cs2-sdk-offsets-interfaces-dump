@@ -21,12 +21,12 @@ namespace CS2 {
 	namespace client {
 		class C_CsmFovOverride : public CS2::client::C_BaseEntity {
 		public:
-			GlobalTypes::CUtlString m_cameraName; // 0x5f8 | Schema_Atomic | Size: 0x8
-			float32 m_flCsmFovOverrideValue; // 0x600 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_cameraName; // 0x608 | Schema_Atomic | Size: 0x8
+			float32 m_flCsmFovOverrideValue; // 0x610 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CsmFovOverride, m_cameraName) == 0x5F8, "m_cameraName in C_CsmFovOverride should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_CsmFovOverride, m_flCsmFovOverrideValue) == 0x600, "m_flCsmFovOverrideValue in C_CsmFovOverride should be at offset 0x600");
-		static_assert(sizeof(CS2::client::C_CsmFovOverride) == 0x608, "C_CsmFovOverride size should be 0x608");
+		static_assert(offsetof(CS2::client::C_CsmFovOverride, m_cameraName) == 0x608, "m_cameraName in C_CsmFovOverride should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_CsmFovOverride, m_flCsmFovOverrideValue) == 0x610, "m_flCsmFovOverrideValue in C_CsmFovOverride should be at offset 0x610");
+		static_assert(sizeof(CS2::client::C_CsmFovOverride) == 0x618, "C_CsmFovOverride size should be 0x618");
 	}
 }

@@ -4,5 +4,5 @@
 
 
 class server_CPulseServerFuncs_Sounds {
-    char pad_3973[0x1];
+    char pad_4104[0x1];
 };

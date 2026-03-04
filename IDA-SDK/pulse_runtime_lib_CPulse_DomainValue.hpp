@@ -5,8 +5,8 @@
 
 class pulse_runtime_lib_CPulse_DomainValue {
     pulse_runtime_lib_PulseDomainValueType_t m_nType;
-    char pad_535[0x4];
+    char pad_546[0x4];
     CGlobalSymbolCaseSensitive m_Value;
     CPulseValueFullType m_RequiredRuntimeType;
-    char end_pad_536[0x8];
+    char end_pad_547[0x8];
 };

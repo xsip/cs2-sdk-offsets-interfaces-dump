@@ -22,34 +22,34 @@ namespace CS2 {
 	namespace server {
 		class CInfoSpawnGroupLoadUnload : public CS2::server::CLogicalEntity {
 		public:
-			entity2::CEntityIOOutput m_OnSpawnGroupLoadStarted; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnSpawnGroupLoadFinished; // 0x518 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnSpawnGroupUnloadStarted; // 0x540 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnSpawnGroupUnloadFinished; // 0x568 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_iszSpawnGroupName; // 0x590 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSpawnGroupFilterName; // 0x598 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszLandmarkName; // 0x5a0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlString m_sFixedSpawnGroupName; // 0x5a8 | Schema_Atomic | Size: 0x8
-			float32 m_flTimeoutInterval; // 0x5b0 | Schema_Builtin | Size: 0x4
-			bool m_bAutoActivate; // 0x5b4 | Schema_Builtin | Size: 0x1
-			bool m_bUnloadingStarted; // 0x5b5 | Schema_Builtin | Size: 0x1
-			bool m_bQueueActiveSpawnGroupChange; // 0x5b6 | Schema_Builtin | Size: 0x1
-			bool m_bQueueFinishLoading; // 0x5b7 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnSpawnGroupLoadStarted; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnSpawnGroupLoadFinished; // 0x4c0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnSpawnGroupUnloadStarted; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnSpawnGroupUnloadFinished; // 0x4f0 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_iszSpawnGroupName; // 0x508 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSpawnGroupFilterName; // 0x510 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszLandmarkName; // 0x518 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlString m_sFixedSpawnGroupName; // 0x520 | Schema_Atomic | Size: 0x8
+			float32 m_flTimeoutInterval; // 0x528 | Schema_Builtin | Size: 0x4
+			bool m_bAutoActivate; // 0x52c | Schema_Builtin | Size: 0x1
+			bool m_bUnloadingStarted; // 0x52d | Schema_Builtin | Size: 0x1
+			bool m_bQueueActiveSpawnGroupChange; // 0x52e | Schema_Builtin | Size: 0x1
+			bool m_bQueueFinishLoading; // 0x52f | Schema_Builtin | Size: 0x1
 			S2_PAD(0x50); // End padding
 		};
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupLoadStarted) == 0x4F0, "m_OnSpawnGroupLoadStarted in CInfoSpawnGroupLoadUnload should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupLoadFinished) == 0x518, "m_OnSpawnGroupLoadFinished in CInfoSpawnGroupLoadUnload should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupUnloadStarted) == 0x540, "m_OnSpawnGroupUnloadStarted in CInfoSpawnGroupLoadUnload should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupUnloadFinished) == 0x568, "m_OnSpawnGroupUnloadFinished in CInfoSpawnGroupLoadUnload should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_iszSpawnGroupName) == 0x590, "m_iszSpawnGroupName in CInfoSpawnGroupLoadUnload should be at offset 0x590");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_iszSpawnGroupFilterName) == 0x598, "m_iszSpawnGroupFilterName in CInfoSpawnGroupLoadUnload should be at offset 0x598");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_iszLandmarkName) == 0x5A0, "m_iszLandmarkName in CInfoSpawnGroupLoadUnload should be at offset 0x5A0");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_sFixedSpawnGroupName) == 0x5A8, "m_sFixedSpawnGroupName in CInfoSpawnGroupLoadUnload should be at offset 0x5A8");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_flTimeoutInterval) == 0x5B0, "m_flTimeoutInterval in CInfoSpawnGroupLoadUnload should be at offset 0x5B0");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bAutoActivate) == 0x5B4, "m_bAutoActivate in CInfoSpawnGroupLoadUnload should be at offset 0x5B4");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bUnloadingStarted) == 0x5B5, "m_bUnloadingStarted in CInfoSpawnGroupLoadUnload should be at offset 0x5B5");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bQueueActiveSpawnGroupChange) == 0x5B6, "m_bQueueActiveSpawnGroupChange in CInfoSpawnGroupLoadUnload should be at offset 0x5B6");
-		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bQueueFinishLoading) == 0x5B7, "m_bQueueFinishLoading in CInfoSpawnGroupLoadUnload should be at offset 0x5B7");
-		static_assert(sizeof(CS2::server::CInfoSpawnGroupLoadUnload) == 0x608, "CInfoSpawnGroupLoadUnload size should be 0x608");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupLoadStarted) == 0x4A8, "m_OnSpawnGroupLoadStarted in CInfoSpawnGroupLoadUnload should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupLoadFinished) == 0x4C0, "m_OnSpawnGroupLoadFinished in CInfoSpawnGroupLoadUnload should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupUnloadStarted) == 0x4D8, "m_OnSpawnGroupUnloadStarted in CInfoSpawnGroupLoadUnload should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupUnloadFinished) == 0x4F0, "m_OnSpawnGroupUnloadFinished in CInfoSpawnGroupLoadUnload should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_iszSpawnGroupName) == 0x508, "m_iszSpawnGroupName in CInfoSpawnGroupLoadUnload should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_iszSpawnGroupFilterName) == 0x510, "m_iszSpawnGroupFilterName in CInfoSpawnGroupLoadUnload should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_iszLandmarkName) == 0x518, "m_iszLandmarkName in CInfoSpawnGroupLoadUnload should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_sFixedSpawnGroupName) == 0x520, "m_sFixedSpawnGroupName in CInfoSpawnGroupLoadUnload should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_flTimeoutInterval) == 0x528, "m_flTimeoutInterval in CInfoSpawnGroupLoadUnload should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bAutoActivate) == 0x52C, "m_bAutoActivate in CInfoSpawnGroupLoadUnload should be at offset 0x52C");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bUnloadingStarted) == 0x52D, "m_bUnloadingStarted in CInfoSpawnGroupLoadUnload should be at offset 0x52D");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bQueueActiveSpawnGroupChange) == 0x52E, "m_bQueueActiveSpawnGroupChange in CInfoSpawnGroupLoadUnload should be at offset 0x52E");
+		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bQueueFinishLoading) == 0x52F, "m_bQueueFinishLoading in CInfoSpawnGroupLoadUnload should be at offset 0x52F");
+		static_assert(sizeof(CS2::server::CInfoSpawnGroupLoadUnload) == 0x580, "CInfoSpawnGroupLoadUnload size should be 0x580");
 	}
 }

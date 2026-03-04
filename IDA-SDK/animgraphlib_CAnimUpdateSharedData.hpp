@@ -6,7 +6,8 @@
 #include "animgraphlib_CAnimNodePath.hpp"
 
 class animgraphlib_CAnimUpdateSharedData {
-    char vTable60[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     char m_nodes[0x18];
     char m_nodeIndexMap[0x20];
     char m_components[0x18];

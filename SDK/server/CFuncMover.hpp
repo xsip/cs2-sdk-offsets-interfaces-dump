@@ -18,6 +18,8 @@
 #include <SDK/server/OrientationUpdate_t.hpp>
 #include <SDK/server/TransitionToPathNodeAction_t.hpp>
 #include <SDK/server/FollowEntityDirection_t.hpp>
+#include <SDK/server/FollowConstraint_t.hpp>
+#include <SDK/entity2/GameTick_t.hpp>
 
 
 
@@ -35,161 +37,194 @@ namespace CS2 {
 	namespace server {
 		class CFuncMover : public CS2::server::CBaseModelEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszPathName; // 0x7d8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CPathMover> m_hPathMover; // 0x7e0 | Schema_Atomic | Size: 0x4
-			// char  m_hPathMover[0x4]; // 0x7e0 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CPathMover> m_hPrevPathMover; // 0x7e4 | Schema_Atomic | Size: 0x4
-			// char  m_hPrevPathMover[0x4]; // 0x7e4 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszPathNodeStart; // 0x7e8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszPathNodeEnd; // 0x7f0 | Schema_Atomic | Size: 0x8
-			server::Move_t m_eMoveType; // 0x7f8 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bIsReversing; // 0x7fc | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszPathName; // 0x730 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CPathMover> m_hPathMover; // 0x738 | Schema_Atomic | Size: 0x4
+			// char m_hPathMover[0x4]; // 0x738 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPathMover> m_hPrevPathMover; // 0x73c | Schema_Atomic | Size: 0x4
+			// char m_hPrevPathMover[0x4]; // 0x73c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszPathNodeStart; // 0x740 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszPathNodeEnd; // 0x748 | Schema_Atomic | Size: 0x8
+			server::Move_t m_eMoveType; // 0x750 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bIsReversing; // 0x754 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vTarget; // 0x800 | Schema_Atomic | Size: 0xc
-			float32 m_flStartSpeed; // 0x80c | Schema_Builtin | Size: 0x4
-			float32 m_flPathLocation; // 0x810 | Schema_Builtin | Size: 0x4
-			float32 m_flT; // 0x814 | Schema_Builtin | Size: 0x4
-			int32_t m_nCurrentNodeIndex; // 0x818 | Schema_Builtin | Size: 0x4
-			int32_t m_nPreviousNodeIndex; // 0x81c | Schema_Builtin | Size: 0x4
-			client::SolidType_t m_eSolidType; // 0x820 | Schema_DeclaredEnum | Size: 0x1
-			bool m_bIsMoving; // 0x821 | Schema_Builtin | Size: 0x1
+			float32 m_flStartSpeed; // 0x758 | Schema_Builtin | Size: 0x4
+			float32 m_flPathLocation; // 0x75c | Schema_Builtin | Size: 0x4
+			float32 m_flT; // 0x760 | Schema_Builtin | Size: 0x4
+			int32_t m_nCurrentNodeIndex; // 0x764 | Schema_Builtin | Size: 0x4
+			int32_t m_nPreviousNodeIndex; // 0x768 | Schema_Builtin | Size: 0x4
+			client::SolidType_t m_eSolidType; // 0x76c | Schema_DeclaredEnum | Size: 0x1
+			bool m_bIsMoving; // 0x76d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flTimeToReachMaxSpeed; // 0x824 | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceToReachMaxSpeed; // 0x828 | Schema_Builtin | Size: 0x4
-			float32 m_flTimeToReachZeroSpeed; // 0x82c | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceToReachZeroSpeed; // 0x830 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flTimeMovementStart; // 0x834 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flTimeMovementStop; // 0x838 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::CHandle<server::CMoverPathNode> m_hStopAtNode; // 0x83c | Schema_Atomic | Size: 0x4
-			// char  m_hStopAtNode[0x4]; // 0x83c | Schema_Atomic | Size: 0x4
-			float32 m_flPathLocationToBeginStop; // 0x840 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszStartForwardSound; // 0x848 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszLoopForwardSound; // 0x850 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszStopForwardSound; // 0x858 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszStartReverseSound; // 0x860 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszLoopReverseSound; // 0x868 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszStopReverseSound; // 0x870 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszArriveAtDestinationSound; // 0x878 | Schema_Atomic | Size: 0x8
+			float32 m_flTimeToReachMaxSpeed; // 0x770 | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceToReachMaxSpeed; // 0x774 | Schema_Builtin | Size: 0x4
+			float32 m_flTimeToReachZeroSpeed; // 0x778 | Schema_Builtin | Size: 0x4
+			float32 m_flComputedDistanceToReachMaxSpeed; // 0x77c | Schema_Builtin | Size: 0x4
+			float32 m_flComputedDistanceToReachZeroSpeed; // 0x780 | Schema_Builtin | Size: 0x4
+			float32 m_flStartCurveScale; // 0x784 | Schema_Builtin | Size: 0x4
+			float32 m_flStopCurveScale; // 0x788 | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceToReachZeroSpeed; // 0x78c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flTimeMovementStart; // 0x790 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flTimeMovementStop; // 0x794 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CHandle<server::CMoverPathNode> m_hStopAtNode; // 0x798 | Schema_Atomic | Size: 0x4
+			// char m_hStopAtNode[0x4]; // 0x798 | Schema_Atomic | Size: 0x4
+			float32 m_flPathLocationToBeginStop; // 0x79c | Schema_Builtin | Size: 0x4
+			float32 m_flPathLocationStart; // 0x7a0 | Schema_Builtin | Size: 0x4
+			float32 m_flBeginStopT; // 0x7a4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszStartForwardSound; // 0x7a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszLoopForwardSound; // 0x7b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszStopForwardSound; // 0x7b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszStartReverseSound; // 0x7c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszLoopReverseSound; // 0x7c8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszStopReverseSound; // 0x7d0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszArriveAtDestinationSound; // 0x7d8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x18);
-			entity2::CEntityIOOutput m_OnMovementEnd; // 0x898 | Schema_DeclaredClass | Size: 0x28
-			bool m_bStartAtClosestPoint; // 0x8c0 | Schema_Builtin | Size: 0x1
-			bool m_bStartAtEnd; // 0x8c1 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x2);
-			server::OrientationUpdate_t m_eOrientationUpdate; // 0x8c4 | Schema_DeclaredEnum | Size: 0x4
-			entity2::GameTime_t m_flTimeStartOrientationChange; // 0x8c8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flTimeToBlendToNewOrientation; // 0x8cc | Schema_Builtin | Size: 0x4
-			float32 m_flDurationBlendToNewOrientationRan; // 0x8d0 | Schema_Builtin | Size: 0x4
-			int32_t m_nOriginalOrientationIndex; // 0x8d4 | Schema_Builtin | Size: 0x4
-			bool m_bCreateMovableNavMesh; // 0x8d8 | Schema_Builtin | Size: 0x1
-			bool m_bAllowMovableNavMeshDockingOnEntireEntity; // 0x8d9 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnMovementEnd; // 0x7f8 | Schema_DeclaredClass | Size: 0x18
+			bool m_bStartAtClosestPoint; // 0x810 | Schema_Builtin | Size: 0x1
+			bool m_bStartAtEnd; // 0x811 | Schema_Builtin | Size: 0x1
+			bool m_bStartFollowingClosestMover; // 0x812 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x1);
+			server::OrientationUpdate_t m_eOrientationUpdate; // 0x814 | Schema_DeclaredEnum | Size: 0x4
+			entity2::GameTime_t m_flTimeStartOrientationChange; // 0x818 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flTimeToBlendToNewOrientation; // 0x81c | Schema_Builtin | Size: 0x4
+			float32 m_flDurationBlendToNewOrientationRan; // 0x820 | Schema_Builtin | Size: 0x4
+			int32_t m_nOriginalOrientationIndex; // 0x824 | Schema_Builtin | Size: 0x4
+			bool m_bCreateMovableNavMesh; // 0x828 | Schema_Builtin | Size: 0x1
+			bool m_bAllowMovableNavMeshDockingOnEntireEntity; // 0x829 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			entity2::CEntityIOOutput m_OnNodePassed; // 0x8e0 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_iszOrientationMatchEntityName; // 0x908 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hOrientationMatchEntity; // 0x910 | Schema_Atomic | Size: 0x4
-			// char  m_hOrientationMatchEntity[0x4]; // 0x910 | Schema_Atomic | Size: 0x4
-			float32 m_flTimeToTraverseToNextNode; // 0x914 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vLerpToNewPosStartInPathEntitySpace; // 0x918 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vLerpToNewPosEndInPathEntitySpace; // 0x924 | Schema_Atomic | Size: 0xc
-			float32 m_flLerpToPositionT; // 0x930 | Schema_Builtin | Size: 0x4
-			float32 m_flLerpToPositionDeltaT; // 0x934 | Schema_Builtin | Size: 0x4
-			entity2::CEntityIOOutput m_OnLerpToPositionComplete; // 0x938 | Schema_DeclaredClass | Size: 0x28
-			bool m_bIsPaused; // 0x960 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnNodePassed; // 0x830 | Schema_Atomic | Size: 0x20
+			// char m_OnNodePassed[0x20]; // 0x830 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CUtlSymbolLarge m_iszOrientationMatchEntityName; // 0x850 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOrientationMatchEntity; // 0x858 | Schema_Atomic | Size: 0x4
+			// char m_hOrientationMatchEntity[0x4]; // 0x858 | Schema_Atomic | Size: 0x4
+			float32 m_flTimeToTraverseToNextNode; // 0x85c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vLerpToNewPosStartInPathEntitySpace; // 0x860 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vLerpToNewPosEndInPathEntitySpace; // 0x86c | Schema_Atomic | Size: 0xc
+			float32 m_flLerpToPositionT; // 0x878 | Schema_Builtin | Size: 0x4
+			float32 m_flLerpToPositionDeltaT; // 0x87c | Schema_Builtin | Size: 0x4
+			entity2::CEntityIOOutput m_OnLerpToPositionComplete; // 0x880 | Schema_DeclaredClass | Size: 0x18
+			bool m_bIsPaused; // 0x898 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::TransitionToPathNodeAction_t m_eTransitionedToPathNodeAction; // 0x964 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nDelayedTeleportToNode; // 0x968 | Schema_Builtin | Size: 0x4
-			bool m_bIsVerboseLogging; // 0x96c | Schema_Builtin | Size: 0x1
+			server::TransitionToPathNodeAction_t m_eTransitionedToPathNodeAction; // 0x89c | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nDelayedTeleportToNode; // 0x8a0 | Schema_Builtin | Size: 0x4
+			bool m_bIsVerboseLogging; // 0x8a4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle<server::CBaseEntity> m_hFollowEntity; // 0x970 | Schema_Atomic | Size: 0x4
-			// char  m_hFollowEntity[0x4]; // 0x970 | Schema_Atomic | Size: 0x4
-			float32 m_flFollowDistance; // 0x974 | Schema_Builtin | Size: 0x4
-			float32 m_flFollowMinimumSpeed; // 0x978 | Schema_Builtin | Size: 0x4
-			float32 m_flCurFollowEntityT; // 0x97c | Schema_Builtin | Size: 0x4
-			float32 m_flCurFollowSpeed; // 0x980 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hFollowEntity; // 0x8a8 | Schema_Atomic | Size: 0x4
+			// char m_hFollowEntity[0x4]; // 0x8a8 | Schema_Atomic | Size: 0x4
+			float32 m_flFollowDistance; // 0x8ac | Schema_Builtin | Size: 0x4
+			float32 m_flFollowMinimumSpeed; // 0x8b0 | Schema_Builtin | Size: 0x4
+			float32 m_flCurFollowEntityT; // 0x8b4 | Schema_Builtin | Size: 0x4
+			float32 m_flCurFollowSpeed; // 0x8b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_strOrientationFaceEntityName; // 0x988 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hOrientationFaceEntity; // 0x990 | Schema_Atomic | Size: 0x4
-			// char  m_hOrientationFaceEntity[0x4]; // 0x990 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_strOrientationFaceEntityName; // 0x8c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOrientationFaceEntity; // 0x8c8 | Schema_Atomic | Size: 0x4
+			// char m_hOrientationFaceEntity[0x4]; // 0x8c8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnStart; // 0x998 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStartForward; // 0x9c0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStartReverse; // 0x9e8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStop; // 0xa10 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStopped; // 0xa38 | Schema_DeclaredClass | Size: 0x28
-			bool m_bNextNodeReturnsCurrent; // 0xa60 | Schema_Builtin | Size: 0x1
-			bool m_bStartedMoving; // 0xa61 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnStart; // 0x8d0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnStartForward; // 0x8e8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnStartReverse; // 0x900 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnStop; // 0x918 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnStopped; // 0x930 | Schema_DeclaredClass | Size: 0x18
+			bool m_bNextNodeReturnsCurrent; // 0x948 | Schema_Builtin | Size: 0x1
+			bool m_bStartedMoving; // 0x949 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1e);
-			server::FollowEntityDirection_t m_eFollowEntityDirection; // 0xa80 | Schema_DeclaredEnum | Size: 0x4
-			S2_PAD(0x4); // End padding
+			server::FollowEntityDirection_t m_eFollowEntityDirection; // 0x968 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CHandle<server::CFuncMover> m_hFollowMover; // 0x96c | Schema_Atomic | Size: 0x4
+			// char m_hFollowMover[0x4]; // 0x96c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszFollowMoverEntityName; // 0x970 | Schema_Atomic | Size: 0x8
+			float32 m_flFollowMoverDistance; // 0x978 | Schema_Builtin | Size: 0x4
+			float32 m_flFollowMoverCalculatedDistance; // 0x97c | Schema_Builtin | Size: 0x4
+			float32 m_flFollowMoverSpringStrength; // 0x980 | Schema_Builtin | Size: 0x4
+			bool m_bFollowConstraintsInitialized; // 0x984 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3);
+			server::FollowConstraint_t m_eFollowConstraint; // 0x988 | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flFollowMoverSpeed; // 0x98c | Schema_Builtin | Size: 0x4
+			float32 m_flFollowMoverVelocity; // 0x990 | Schema_Builtin | Size: 0x4
+			entity2::GameTick_t m_nTickMovementRan; // 0x994 | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszPathName) == 0x7D8, "m_iszPathName in CFuncMover should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CFuncMover, m_hPathMover) == 0x7E0, "m_hPathMover in CFuncMover should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CFuncMover, m_hPrevPathMover) == 0x7E4, "m_hPrevPathMover in CFuncMover should be at offset 0x7E4");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszPathNodeStart) == 0x7E8, "m_iszPathNodeStart in CFuncMover should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszPathNodeEnd) == 0x7F0, "m_iszPathNodeEnd in CFuncMover should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CFuncMover, m_eMoveType) == 0x7F8, "m_eMoveType in CFuncMover should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bIsReversing) == 0x7FC, "m_bIsReversing in CFuncMover should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CFuncMover, m_vTarget) == 0x800, "m_vTarget in CFuncMover should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flStartSpeed) == 0x80C, "m_flStartSpeed in CFuncMover should be at offset 0x80C");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flPathLocation) == 0x810, "m_flPathLocation in CFuncMover should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flT) == 0x814, "m_flT in CFuncMover should be at offset 0x814");
-		static_assert(offsetof(CS2::server::CFuncMover, m_nCurrentNodeIndex) == 0x818, "m_nCurrentNodeIndex in CFuncMover should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CFuncMover, m_nPreviousNodeIndex) == 0x81C, "m_nPreviousNodeIndex in CFuncMover should be at offset 0x81C");
-		static_assert(offsetof(CS2::server::CFuncMover, m_eSolidType) == 0x820, "m_eSolidType in CFuncMover should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bIsMoving) == 0x821, "m_bIsMoving in CFuncMover should be at offset 0x821");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToReachMaxSpeed) == 0x824, "m_flTimeToReachMaxSpeed in CFuncMover should be at offset 0x824");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flDistanceToReachMaxSpeed) == 0x828, "m_flDistanceToReachMaxSpeed in CFuncMover should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToReachZeroSpeed) == 0x82C, "m_flTimeToReachZeroSpeed in CFuncMover should be at offset 0x82C");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flDistanceToReachZeroSpeed) == 0x830, "m_flDistanceToReachZeroSpeed in CFuncMover should be at offset 0x830");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeMovementStart) == 0x834, "m_flTimeMovementStart in CFuncMover should be at offset 0x834");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeMovementStop) == 0x838, "m_flTimeMovementStop in CFuncMover should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CFuncMover, m_hStopAtNode) == 0x83C, "m_hStopAtNode in CFuncMover should be at offset 0x83C");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flPathLocationToBeginStop) == 0x840, "m_flPathLocationToBeginStop in CFuncMover should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszStartForwardSound) == 0x848, "m_iszStartForwardSound in CFuncMover should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszLoopForwardSound) == 0x850, "m_iszLoopForwardSound in CFuncMover should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszStopForwardSound) == 0x858, "m_iszStopForwardSound in CFuncMover should be at offset 0x858");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszStartReverseSound) == 0x860, "m_iszStartReverseSound in CFuncMover should be at offset 0x860");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszLoopReverseSound) == 0x868, "m_iszLoopReverseSound in CFuncMover should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszStopReverseSound) == 0x870, "m_iszStopReverseSound in CFuncMover should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszArriveAtDestinationSound) == 0x878, "m_iszArriveAtDestinationSound in CFuncMover should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnMovementEnd) == 0x898, "m_OnMovementEnd in CFuncMover should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bStartAtClosestPoint) == 0x8C0, "m_bStartAtClosestPoint in CFuncMover should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bStartAtEnd) == 0x8C1, "m_bStartAtEnd in CFuncMover should be at offset 0x8C1");
-		static_assert(offsetof(CS2::server::CFuncMover, m_eOrientationUpdate) == 0x8C4, "m_eOrientationUpdate in CFuncMover should be at offset 0x8C4");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeStartOrientationChange) == 0x8C8, "m_flTimeStartOrientationChange in CFuncMover should be at offset 0x8C8");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToBlendToNewOrientation) == 0x8CC, "m_flTimeToBlendToNewOrientation in CFuncMover should be at offset 0x8CC");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flDurationBlendToNewOrientationRan) == 0x8D0, "m_flDurationBlendToNewOrientationRan in CFuncMover should be at offset 0x8D0");
-		static_assert(offsetof(CS2::server::CFuncMover, m_nOriginalOrientationIndex) == 0x8D4, "m_nOriginalOrientationIndex in CFuncMover should be at offset 0x8D4");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bCreateMovableNavMesh) == 0x8D8, "m_bCreateMovableNavMesh in CFuncMover should be at offset 0x8D8");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bAllowMovableNavMeshDockingOnEntireEntity) == 0x8D9, "m_bAllowMovableNavMeshDockingOnEntireEntity in CFuncMover should be at offset 0x8D9");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnNodePassed) == 0x8E0, "m_OnNodePassed in CFuncMover should be at offset 0x8E0");
-		static_assert(offsetof(CS2::server::CFuncMover, m_iszOrientationMatchEntityName) == 0x908, "m_iszOrientationMatchEntityName in CFuncMover should be at offset 0x908");
-		static_assert(offsetof(CS2::server::CFuncMover, m_hOrientationMatchEntity) == 0x910, "m_hOrientationMatchEntity in CFuncMover should be at offset 0x910");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToTraverseToNextNode) == 0x914, "m_flTimeToTraverseToNextNode in CFuncMover should be at offset 0x914");
-		static_assert(offsetof(CS2::server::CFuncMover, m_vLerpToNewPosStartInPathEntitySpace) == 0x918, "m_vLerpToNewPosStartInPathEntitySpace in CFuncMover should be at offset 0x918");
-		static_assert(offsetof(CS2::server::CFuncMover, m_vLerpToNewPosEndInPathEntitySpace) == 0x924, "m_vLerpToNewPosEndInPathEntitySpace in CFuncMover should be at offset 0x924");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flLerpToPositionT) == 0x930, "m_flLerpToPositionT in CFuncMover should be at offset 0x930");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flLerpToPositionDeltaT) == 0x934, "m_flLerpToPositionDeltaT in CFuncMover should be at offset 0x934");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnLerpToPositionComplete) == 0x938, "m_OnLerpToPositionComplete in CFuncMover should be at offset 0x938");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bIsPaused) == 0x960, "m_bIsPaused in CFuncMover should be at offset 0x960");
-		static_assert(offsetof(CS2::server::CFuncMover, m_eTransitionedToPathNodeAction) == 0x964, "m_eTransitionedToPathNodeAction in CFuncMover should be at offset 0x964");
-		static_assert(offsetof(CS2::server::CFuncMover, m_nDelayedTeleportToNode) == 0x968, "m_nDelayedTeleportToNode in CFuncMover should be at offset 0x968");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bIsVerboseLogging) == 0x96C, "m_bIsVerboseLogging in CFuncMover should be at offset 0x96C");
-		static_assert(offsetof(CS2::server::CFuncMover, m_hFollowEntity) == 0x970, "m_hFollowEntity in CFuncMover should be at offset 0x970");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowDistance) == 0x974, "m_flFollowDistance in CFuncMover should be at offset 0x974");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMinimumSpeed) == 0x978, "m_flFollowMinimumSpeed in CFuncMover should be at offset 0x978");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flCurFollowEntityT) == 0x97C, "m_flCurFollowEntityT in CFuncMover should be at offset 0x97C");
-		static_assert(offsetof(CS2::server::CFuncMover, m_flCurFollowSpeed) == 0x980, "m_flCurFollowSpeed in CFuncMover should be at offset 0x980");
-		static_assert(offsetof(CS2::server::CFuncMover, m_strOrientationFaceEntityName) == 0x988, "m_strOrientationFaceEntityName in CFuncMover should be at offset 0x988");
-		static_assert(offsetof(CS2::server::CFuncMover, m_hOrientationFaceEntity) == 0x990, "m_hOrientationFaceEntity in CFuncMover should be at offset 0x990");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnStart) == 0x998, "m_OnStart in CFuncMover should be at offset 0x998");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnStartForward) == 0x9C0, "m_OnStartForward in CFuncMover should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnStartReverse) == 0x9E8, "m_OnStartReverse in CFuncMover should be at offset 0x9E8");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnStop) == 0xA10, "m_OnStop in CFuncMover should be at offset 0xA10");
-		static_assert(offsetof(CS2::server::CFuncMover, m_OnStopped) == 0xA38, "m_OnStopped in CFuncMover should be at offset 0xA38");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bNextNodeReturnsCurrent) == 0xA60, "m_bNextNodeReturnsCurrent in CFuncMover should be at offset 0xA60");
-		static_assert(offsetof(CS2::server::CFuncMover, m_bStartedMoving) == 0xA61, "m_bStartedMoving in CFuncMover should be at offset 0xA61");
-		static_assert(offsetof(CS2::server::CFuncMover, m_eFollowEntityDirection) == 0xA80, "m_eFollowEntityDirection in CFuncMover should be at offset 0xA80");
-		static_assert(sizeof(CS2::server::CFuncMover) == 0xA88, "CFuncMover size should be 0xA88");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszPathName) == 0x730, "m_iszPathName in CFuncMover should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CFuncMover, m_hPathMover) == 0x738, "m_hPathMover in CFuncMover should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CFuncMover, m_hPrevPathMover) == 0x73C, "m_hPrevPathMover in CFuncMover should be at offset 0x73C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszPathNodeStart) == 0x740, "m_iszPathNodeStart in CFuncMover should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszPathNodeEnd) == 0x748, "m_iszPathNodeEnd in CFuncMover should be at offset 0x748");
+		static_assert(offsetof(CS2::server::CFuncMover, m_eMoveType) == 0x750, "m_eMoveType in CFuncMover should be at offset 0x750");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bIsReversing) == 0x754, "m_bIsReversing in CFuncMover should be at offset 0x754");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flStartSpeed) == 0x758, "m_flStartSpeed in CFuncMover should be at offset 0x758");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flPathLocation) == 0x75C, "m_flPathLocation in CFuncMover should be at offset 0x75C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flT) == 0x760, "m_flT in CFuncMover should be at offset 0x760");
+		static_assert(offsetof(CS2::server::CFuncMover, m_nCurrentNodeIndex) == 0x764, "m_nCurrentNodeIndex in CFuncMover should be at offset 0x764");
+		static_assert(offsetof(CS2::server::CFuncMover, m_nPreviousNodeIndex) == 0x768, "m_nPreviousNodeIndex in CFuncMover should be at offset 0x768");
+		static_assert(offsetof(CS2::server::CFuncMover, m_eSolidType) == 0x76C, "m_eSolidType in CFuncMover should be at offset 0x76C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bIsMoving) == 0x76D, "m_bIsMoving in CFuncMover should be at offset 0x76D");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToReachMaxSpeed) == 0x770, "m_flTimeToReachMaxSpeed in CFuncMover should be at offset 0x770");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flDistanceToReachMaxSpeed) == 0x774, "m_flDistanceToReachMaxSpeed in CFuncMover should be at offset 0x774");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToReachZeroSpeed) == 0x778, "m_flTimeToReachZeroSpeed in CFuncMover should be at offset 0x778");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flComputedDistanceToReachMaxSpeed) == 0x77C, "m_flComputedDistanceToReachMaxSpeed in CFuncMover should be at offset 0x77C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flComputedDistanceToReachZeroSpeed) == 0x780, "m_flComputedDistanceToReachZeroSpeed in CFuncMover should be at offset 0x780");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flStartCurveScale) == 0x784, "m_flStartCurveScale in CFuncMover should be at offset 0x784");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flStopCurveScale) == 0x788, "m_flStopCurveScale in CFuncMover should be at offset 0x788");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flDistanceToReachZeroSpeed) == 0x78C, "m_flDistanceToReachZeroSpeed in CFuncMover should be at offset 0x78C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeMovementStart) == 0x790, "m_flTimeMovementStart in CFuncMover should be at offset 0x790");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeMovementStop) == 0x794, "m_flTimeMovementStop in CFuncMover should be at offset 0x794");
+		static_assert(offsetof(CS2::server::CFuncMover, m_hStopAtNode) == 0x798, "m_hStopAtNode in CFuncMover should be at offset 0x798");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flPathLocationToBeginStop) == 0x79C, "m_flPathLocationToBeginStop in CFuncMover should be at offset 0x79C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flPathLocationStart) == 0x7A0, "m_flPathLocationStart in CFuncMover should be at offset 0x7A0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flBeginStopT) == 0x7A4, "m_flBeginStopT in CFuncMover should be at offset 0x7A4");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszStartForwardSound) == 0x7A8, "m_iszStartForwardSound in CFuncMover should be at offset 0x7A8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszLoopForwardSound) == 0x7B0, "m_iszLoopForwardSound in CFuncMover should be at offset 0x7B0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszStopForwardSound) == 0x7B8, "m_iszStopForwardSound in CFuncMover should be at offset 0x7B8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszStartReverseSound) == 0x7C0, "m_iszStartReverseSound in CFuncMover should be at offset 0x7C0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszLoopReverseSound) == 0x7C8, "m_iszLoopReverseSound in CFuncMover should be at offset 0x7C8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszStopReverseSound) == 0x7D0, "m_iszStopReverseSound in CFuncMover should be at offset 0x7D0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszArriveAtDestinationSound) == 0x7D8, "m_iszArriveAtDestinationSound in CFuncMover should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnMovementEnd) == 0x7F8, "m_OnMovementEnd in CFuncMover should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bStartAtClosestPoint) == 0x810, "m_bStartAtClosestPoint in CFuncMover should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bStartAtEnd) == 0x811, "m_bStartAtEnd in CFuncMover should be at offset 0x811");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bStartFollowingClosestMover) == 0x812, "m_bStartFollowingClosestMover in CFuncMover should be at offset 0x812");
+		static_assert(offsetof(CS2::server::CFuncMover, m_eOrientationUpdate) == 0x814, "m_eOrientationUpdate in CFuncMover should be at offset 0x814");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeStartOrientationChange) == 0x818, "m_flTimeStartOrientationChange in CFuncMover should be at offset 0x818");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToBlendToNewOrientation) == 0x81C, "m_flTimeToBlendToNewOrientation in CFuncMover should be at offset 0x81C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flDurationBlendToNewOrientationRan) == 0x820, "m_flDurationBlendToNewOrientationRan in CFuncMover should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CFuncMover, m_nOriginalOrientationIndex) == 0x824, "m_nOriginalOrientationIndex in CFuncMover should be at offset 0x824");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bCreateMovableNavMesh) == 0x828, "m_bCreateMovableNavMesh in CFuncMover should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bAllowMovableNavMeshDockingOnEntireEntity) == 0x829, "m_bAllowMovableNavMeshDockingOnEntireEntity in CFuncMover should be at offset 0x829");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnNodePassed) == 0x830, "m_OnNodePassed in CFuncMover should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszOrientationMatchEntityName) == 0x850, "m_iszOrientationMatchEntityName in CFuncMover should be at offset 0x850");
+		static_assert(offsetof(CS2::server::CFuncMover, m_hOrientationMatchEntity) == 0x858, "m_hOrientationMatchEntity in CFuncMover should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flTimeToTraverseToNextNode) == 0x85C, "m_flTimeToTraverseToNextNode in CFuncMover should be at offset 0x85C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_vLerpToNewPosStartInPathEntitySpace) == 0x860, "m_vLerpToNewPosStartInPathEntitySpace in CFuncMover should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CFuncMover, m_vLerpToNewPosEndInPathEntitySpace) == 0x86C, "m_vLerpToNewPosEndInPathEntitySpace in CFuncMover should be at offset 0x86C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flLerpToPositionT) == 0x878, "m_flLerpToPositionT in CFuncMover should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flLerpToPositionDeltaT) == 0x87C, "m_flLerpToPositionDeltaT in CFuncMover should be at offset 0x87C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnLerpToPositionComplete) == 0x880, "m_OnLerpToPositionComplete in CFuncMover should be at offset 0x880");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bIsPaused) == 0x898, "m_bIsPaused in CFuncMover should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CFuncMover, m_eTransitionedToPathNodeAction) == 0x89C, "m_eTransitionedToPathNodeAction in CFuncMover should be at offset 0x89C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_nDelayedTeleportToNode) == 0x8A0, "m_nDelayedTeleportToNode in CFuncMover should be at offset 0x8A0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bIsVerboseLogging) == 0x8A4, "m_bIsVerboseLogging in CFuncMover should be at offset 0x8A4");
+		static_assert(offsetof(CS2::server::CFuncMover, m_hFollowEntity) == 0x8A8, "m_hFollowEntity in CFuncMover should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowDistance) == 0x8AC, "m_flFollowDistance in CFuncMover should be at offset 0x8AC");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMinimumSpeed) == 0x8B0, "m_flFollowMinimumSpeed in CFuncMover should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flCurFollowEntityT) == 0x8B4, "m_flCurFollowEntityT in CFuncMover should be at offset 0x8B4");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flCurFollowSpeed) == 0x8B8, "m_flCurFollowSpeed in CFuncMover should be at offset 0x8B8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_strOrientationFaceEntityName) == 0x8C0, "m_strOrientationFaceEntityName in CFuncMover should be at offset 0x8C0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_hOrientationFaceEntity) == 0x8C8, "m_hOrientationFaceEntity in CFuncMover should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnStart) == 0x8D0, "m_OnStart in CFuncMover should be at offset 0x8D0");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnStartForward) == 0x8E8, "m_OnStartForward in CFuncMover should be at offset 0x8E8");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnStartReverse) == 0x900, "m_OnStartReverse in CFuncMover should be at offset 0x900");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnStop) == 0x918, "m_OnStop in CFuncMover should be at offset 0x918");
+		static_assert(offsetof(CS2::server::CFuncMover, m_OnStopped) == 0x930, "m_OnStopped in CFuncMover should be at offset 0x930");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bNextNodeReturnsCurrent) == 0x948, "m_bNextNodeReturnsCurrent in CFuncMover should be at offset 0x948");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bStartedMoving) == 0x949, "m_bStartedMoving in CFuncMover should be at offset 0x949");
+		static_assert(offsetof(CS2::server::CFuncMover, m_eFollowEntityDirection) == 0x968, "m_eFollowEntityDirection in CFuncMover should be at offset 0x968");
+		static_assert(offsetof(CS2::server::CFuncMover, m_hFollowMover) == 0x96C, "m_hFollowMover in CFuncMover should be at offset 0x96C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_iszFollowMoverEntityName) == 0x970, "m_iszFollowMoverEntityName in CFuncMover should be at offset 0x970");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMoverDistance) == 0x978, "m_flFollowMoverDistance in CFuncMover should be at offset 0x978");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMoverCalculatedDistance) == 0x97C, "m_flFollowMoverCalculatedDistance in CFuncMover should be at offset 0x97C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMoverSpringStrength) == 0x980, "m_flFollowMoverSpringStrength in CFuncMover should be at offset 0x980");
+		static_assert(offsetof(CS2::server::CFuncMover, m_bFollowConstraintsInitialized) == 0x984, "m_bFollowConstraintsInitialized in CFuncMover should be at offset 0x984");
+		static_assert(offsetof(CS2::server::CFuncMover, m_eFollowConstraint) == 0x988, "m_eFollowConstraint in CFuncMover should be at offset 0x988");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMoverSpeed) == 0x98C, "m_flFollowMoverSpeed in CFuncMover should be at offset 0x98C");
+		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMoverVelocity) == 0x990, "m_flFollowMoverVelocity in CFuncMover should be at offset 0x990");
+		static_assert(offsetof(CS2::server::CFuncMover, m_nTickMovementRan) == 0x994, "m_nTickMovementRan in CFuncMover should be at offset 0x994");
+		static_assert(sizeof(CS2::server::CFuncMover) == 0x998, "CFuncMover size should be 0x998");
 	}
 }

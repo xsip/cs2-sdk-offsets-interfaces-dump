@@ -22,6 +22,6 @@ namespace CS2 {
 		class CShower : public CS2::server::CModelPointEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CShower) == 0x7D8, "CShower size should be 0x7D8");
+		static_assert(sizeof(CS2::server::CShower) == 0x730, "CShower size should be 0x730");
 	}
 }

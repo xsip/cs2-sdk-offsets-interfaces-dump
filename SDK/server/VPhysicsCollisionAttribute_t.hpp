@@ -27,9 +27,11 @@ namespace CS2 {
 			uint32_t m_nEntityId; // 0x20 | Schema_Builtin | Size: 0x4
 			uint32_t m_nOwnerId; // 0x24 | Schema_Builtin | Size: 0x4
 			uint16_t m_nHierarchyId; // 0x28 | Schema_Builtin | Size: 0x2
-			uint8_t m_nCollisionGroup; // 0x2a | Schema_Builtin | Size: 0x1
-			uint8_t m_nCollisionFunctionMask; // 0x2b | Schema_Builtin | Size: 0x1
-			S2_PAD(0x4); // End padding
+			uint16_t m_nDetailLayerMask; // 0x2a | Schema_Builtin | Size: 0x2
+			uint8_t m_nDetailLayerMaskType; // 0x2c | Schema_Builtin | Size: 0x1
+			uint8_t m_nTargetDetailLayer; // 0x2d | Schema_Builtin | Size: 0x1
+			uint8_t m_nCollisionGroup; // 0x2e | Schema_Builtin | Size: 0x1
+			uint8_t m_nCollisionFunctionMask; // 0x2f | Schema_Builtin | Size: 0x1
 		};
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nInteractsAs) == 0x8, "m_nInteractsAs in VPhysicsCollisionAttribute_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nInteractsWith) == 0x10, "m_nInteractsWith in VPhysicsCollisionAttribute_t should be at offset 0x10");
@@ -37,8 +39,11 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nEntityId) == 0x20, "m_nEntityId in VPhysicsCollisionAttribute_t should be at offset 0x20");
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nOwnerId) == 0x24, "m_nOwnerId in VPhysicsCollisionAttribute_t should be at offset 0x24");
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nHierarchyId) == 0x28, "m_nHierarchyId in VPhysicsCollisionAttribute_t should be at offset 0x28");
-		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nCollisionGroup) == 0x2A, "m_nCollisionGroup in VPhysicsCollisionAttribute_t should be at offset 0x2A");
-		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nCollisionFunctionMask) == 0x2B, "m_nCollisionFunctionMask in VPhysicsCollisionAttribute_t should be at offset 0x2B");
+		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nDetailLayerMask) == 0x2A, "m_nDetailLayerMask in VPhysicsCollisionAttribute_t should be at offset 0x2A");
+		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nDetailLayerMaskType) == 0x2C, "m_nDetailLayerMaskType in VPhysicsCollisionAttribute_t should be at offset 0x2C");
+		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nTargetDetailLayer) == 0x2D, "m_nTargetDetailLayer in VPhysicsCollisionAttribute_t should be at offset 0x2D");
+		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nCollisionGroup) == 0x2E, "m_nCollisionGroup in VPhysicsCollisionAttribute_t should be at offset 0x2E");
+		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nCollisionFunctionMask) == 0x2F, "m_nCollisionFunctionMask in VPhysicsCollisionAttribute_t should be at offset 0x2F");
 		static_assert(sizeof(CS2::server::VPhysicsCollisionAttribute_t) == 0x30, "VPhysicsCollisionAttribute_t size should be 0x30");
 	}
 }

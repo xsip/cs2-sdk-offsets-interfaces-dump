@@ -27,24 +27,24 @@ namespace CS2 {
 	namespace server {
 		class CTankTrainAI : public CS2::server::CPointEntity {
 		public:
-			GlobalTypes::CHandle<server::CFuncTrackTrain> m_hTrain; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// char  m_hTrain[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4f4 | Schema_Atomic | Size: 0x4
-			// char  m_hTargetEntity[0x4]; // 0x4f4 | Schema_Atomic | Size: 0x4
-			int32_t m_soundPlaying; // 0x4f8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CFuncTrackTrain> m_hTrain; // 0x4a8 | Schema_Atomic | Size: 0x4
+			// char m_hTrain[0x4]; // 0x4a8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4ac | Schema_Atomic | Size: 0x4
+			// char m_hTargetEntity[0x4]; // 0x4ac | Schema_Atomic | Size: 0x4
+			int32_t m_soundPlaying; // 0x4b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x14);
-			GlobalTypes::CUtlSymbolLarge m_startSoundName; // 0x510 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_engineSoundName; // 0x518 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_movementSoundName; // 0x520 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_targetEntityName; // 0x528 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_startSoundName; // 0x4c8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_engineSoundName; // 0x4d0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_movementSoundName; // 0x4d8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_targetEntityName; // 0x4e0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CTankTrainAI, m_hTrain) == 0x4F0, "m_hTrain in CTankTrainAI should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CTankTrainAI, m_hTargetEntity) == 0x4F4, "m_hTargetEntity in CTankTrainAI should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CTankTrainAI, m_soundPlaying) == 0x4F8, "m_soundPlaying in CTankTrainAI should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CTankTrainAI, m_startSoundName) == 0x510, "m_startSoundName in CTankTrainAI should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CTankTrainAI, m_engineSoundName) == 0x518, "m_engineSoundName in CTankTrainAI should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CTankTrainAI, m_movementSoundName) == 0x520, "m_movementSoundName in CTankTrainAI should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CTankTrainAI, m_targetEntityName) == 0x528, "m_targetEntityName in CTankTrainAI should be at offset 0x528");
-		static_assert(sizeof(CS2::server::CTankTrainAI) == 0x530, "CTankTrainAI size should be 0x530");
+		static_assert(offsetof(CS2::server::CTankTrainAI, m_hTrain) == 0x4A8, "m_hTrain in CTankTrainAI should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CTankTrainAI, m_hTargetEntity) == 0x4AC, "m_hTargetEntity in CTankTrainAI should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CTankTrainAI, m_soundPlaying) == 0x4B0, "m_soundPlaying in CTankTrainAI should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CTankTrainAI, m_startSoundName) == 0x4C8, "m_startSoundName in CTankTrainAI should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CTankTrainAI, m_engineSoundName) == 0x4D0, "m_engineSoundName in CTankTrainAI should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CTankTrainAI, m_movementSoundName) == 0x4D8, "m_movementSoundName in CTankTrainAI should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CTankTrainAI, m_targetEntityName) == 0x4E0, "m_targetEntityName in CTankTrainAI should be at offset 0x4E0");
+		static_assert(sizeof(CS2::server::CTankTrainAI) == 0x4E8, "CTankTrainAI size should be 0x4E8");
 	}
 }

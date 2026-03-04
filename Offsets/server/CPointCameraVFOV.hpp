@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x558
+			// Class size: 0x510
 			namespace CPointCameraVFOV /*: public CS2::server::CPointCamera*/ {
-				constexpr std::ptrdiff_t m_flVerticalFOV = 0x550; // float32 m_flVerticalFOV; |  0x550 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flVerticalFOV = 0x508; // float32 m_flVerticalFOV; |  0x508 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

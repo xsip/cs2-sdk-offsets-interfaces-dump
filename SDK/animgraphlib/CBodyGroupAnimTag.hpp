@@ -11,14 +11,10 @@
 
 
 #include <SDK/animgraphlib/CAnimTagBase.hpp>
+#include <SDK/animgraphlib/CBodyGroupSetting.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class CBodyGroupSetting;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -30,7 +26,7 @@ namespace CS2 {
 			int32_t m_nPriority; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<animgraphlib::CBodyGroupSetting> m_bodyGroupSettings; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_bodyGroupSettings[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_bodyGroupSettings[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CBodyGroupAnimTag, m_nPriority) == 0x58, "m_nPriority in CBodyGroupAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CBodyGroupAnimTag, m_bodyGroupSettings) == 0x60, "m_bodyGroupSettings in CBodyGroupAnimTag should be at offset 0x60");

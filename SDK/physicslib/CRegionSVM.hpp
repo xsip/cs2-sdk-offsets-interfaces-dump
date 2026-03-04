@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/physicslib/RnPlane_t.hpp>
 
 
 
-namespace CS2 {
-	namespace physicslib {
-		class RnPlane_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,9 +22,9 @@ namespace CS2 {
 		class CRegionSVM  {
 		public:
 			GlobalTypes::CUtlVector<physicslib::RnPlane_t> m_Planes; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_Planes[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_Planes[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint32 > m_Nodes; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_Nodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_Nodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::physicslib::CRegionSVM, m_Planes) == 0x0, "m_Planes in CRegionSVM should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CRegionSVM, m_Nodes) == 0x18, "m_Nodes in CRegionSVM should be at offset 0x18");

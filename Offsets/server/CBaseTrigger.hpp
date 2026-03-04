@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9A8
+			// Class size: 0x890
 			namespace CBaseTrigger /*: public CS2::server::CBaseToggle*/ {
-				constexpr std::ptrdiff_t m_OnStartTouch = 0x858; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnStartTouchAll = 0x880; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEndTouch = 0x8a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEndTouchAll = 0x8d0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTouching = 0x8f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTouchingEachEntity = 0x920; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnNotTouching = 0x948; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_hTouchingEntities = 0x970; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_iFilterName = 0x988; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFilter = 0x990; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bDisabled = 0x994; // bool m_bDisabled; |  0x994 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseAsyncQueries = 0x9a0; // bool m_bUseAsyncQueries; |  0x9a0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnStartTouch = 0x7b0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnStartTouchAll = 0x7c8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnEndTouch = 0x7e0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnEndTouchAll = 0x7f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTouching = 0x810; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTouchingEachEntity = 0x828; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnNotTouching = 0x840; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_hTouchingEntities = 0x858; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iFilterName = 0x870; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFilter = 0x878; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bDisabled = 0x87c; // bool m_bDisabled; |  0x87c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseAsyncQueries = 0x888; // bool m_bUseAsyncQueries; |  0x888 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

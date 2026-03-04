@@ -9,5 +9,5 @@ class server_ragdoll_t {
     char boneIndex[0x18];
     bool allowStretch;
     bool unused;
-    char pad_3986[0x6];
+    char pad_4117[0x6];
 };

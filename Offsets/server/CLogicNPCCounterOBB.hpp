@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x860
+			// Class size: 0x758
 			namespace CLogicNPCCounterOBB /*: public CS2::server::CLogicNPCCounterAABB*/ {
 				// NO SCHEMA DATA FOUND!
 			}

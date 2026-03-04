@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xBF0
+			// Class size: 0xB80
 			namespace CHostageExpresserShim /*: public CS2::server::CBaseCombatCharacter*/ {
-				constexpr std::ptrdiff_t m_pExpresser = 0xbe0; // server::CAI_Expresser**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_pExpresser = 0xb70; // server::CAI_Expresser**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

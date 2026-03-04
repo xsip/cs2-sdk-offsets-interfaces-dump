@@ -10,15 +10,11 @@
 #endif
 
 
+#include <SDK/animationsystem/MoodAnimation_t.hpp>
 #include <SDK/tier2/CRangeFloat.hpp>
 
 
 
-namespace CS2 {
-	namespace animationsystem {
-		class MoodAnimation_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -31,7 +27,7 @@ namespace CS2 {
 			bool m_bActiveTalking; // 0x9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
 			GlobalTypes::CUtlVector<animationsystem::MoodAnimation_t> m_layerAnimations; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_layerAnimations[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_layerAnimations[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			tier2::CRangeFloat m_flIntensity; // 0x28 | Schema_DeclaredClass | Size: 0x8
 			tier2::CRangeFloat m_flDurationScale; // 0x30 | Schema_DeclaredClass | Size: 0x8
 			bool m_bScaleWithInts; // 0x38 | Schema_Builtin | Size: 0x1

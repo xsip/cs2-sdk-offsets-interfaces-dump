@@ -36,9 +36,9 @@ namespace CS2 {
 			int32_t m_nLightProbeVolumePrecomputedHandshake; // 0x70 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_renderableModel; // 0x78 | Schema_Atomic | Size: 0x8
-			char  m_renderableModel[0x8]; // 0x78 | Schema_Atomic | Size: 0x8
+			char m_renderableModel[0x8]; // 0x78 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCRenderMesh> m_renderable; // 0x80 | Schema_Atomic | Size: 0x8
-			char  m_renderable[0x8]; // 0x80 | Schema_Atomic | Size: 0x8
+			char m_renderable[0x8]; // 0x80 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::worldrenderer::SceneObject_t, m_nObjectID) == 0x0, "m_nObjectID in SceneObject_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::SceneObject_t, m_vTransform) == 0x4, "m_vTransform in SceneObject_t should be at offset 0x4");

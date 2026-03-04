@@ -8,13 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x618
+			// Class size: 0x628
 			namespace C_SoundOpvarSetPointBase /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_iszStackName = 0x5f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOperatorName = 0x600; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOpvarName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iOpvarIndex = 0x610; // int32_t m_iOpvarIndex; |  0x610 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseAutoCompare = 0x614; // bool m_bUseAutoCompare; |  0x614 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iszStackName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOperatorName = 0x610; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOpvarName = 0x618; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iOpvarIndex = 0x620; // int32_t m_iOpvarIndex; |  0x620 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseAutoCompare = 0x624; // bool m_bUseAutoCompare; |  0x624 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFastRefresh = 0x625; // bool m_bFastRefresh; |  0x625 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

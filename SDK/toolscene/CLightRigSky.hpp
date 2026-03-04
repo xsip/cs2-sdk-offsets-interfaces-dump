@@ -21,7 +21,7 @@ namespace CS2 {
 		class CLightRigSky  {
 		public:
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSkyMaterial; // 0x0 | Schema_Atomic | Size: 0x8
-			char  m_hSkyMaterial[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
+			char m_hSkyMaterial[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::toolscene::CLightRigSky, m_hSkyMaterial) == 0x0, "m_hSkyMaterial in CLightRigSky should be at offset 0x0");
 		static_assert(sizeof(CS2::toolscene::CLightRigSky) == 0x8, "CLightRigSky size should be 0x8");

@@ -10,5 +10,5 @@ class modellib_RenderSkeletonBone_t {
     matrix3x4_t m_invBindPose;
     modellib_SkeletonBoneBounds_t m_bbox;
     float32 m_flSphereRadius;
-    char end_pad_387[0x4];
+    char end_pad_394[0x4];
 };

@@ -1,9 +1,9 @@
 // generated - do not edit!
 
 import {server_CBaseModelEntity} from './CBaseModelEntity';
-// Class size: 0x7E0
+// Class size: 0x738
 // BaseClass: : public CS2::server::CBaseModelEntity
 export const server_CFuncVPhysicsClip  = {
 	...server_CBaseModelEntity,
-	m_bDisabled: 2008n, // bool m_bDisabled; |  0x7d8 | Schema_Builtin | Size: 0x1
+	m_bDisabled: 1840n, // bool m_bDisabled; |  0x730 | Schema_Builtin | Size: 0x1
 }

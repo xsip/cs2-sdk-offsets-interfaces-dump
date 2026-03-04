@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x48
+			// Class size: 0x50
 			namespace CCSPlayer_GlowServices /*: public CS2::client::CPlayerPawnComponent*/ {
 				// NO SCHEMA DATA FOUND!
 			}

@@ -23,7 +23,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_inputValue; // 0x0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< float32 > m_outputWeightList; // 0x10 | Schema_Atomic | Size: 0x18
-			// char  m_outputWeightList[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
+			// char m_outputWeightList[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::Input_t, m_inputValue) == 0x0, "m_inputValue in CBoneConstraintPoseSpaceMorph::Input_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::Input_t, m_outputWeightList) == 0x10, "m_outputWeightList in CBoneConstraintPoseSpaceMorph::Input_t should be at offset 0x10");

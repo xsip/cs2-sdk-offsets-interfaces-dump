@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x658
+			// Class size: 0x5F8
 			namespace CSoundEventPathCornerEntity /*: public CS2::server::CSoundEventEntity*/ {
-				constexpr std::ptrdiff_t m_iszPathCorner = 0x5b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iCountMax = 0x5c0; // int32_t m_iCountMax; |  0x5c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistanceMax = 0x5c4; // float32 m_flDistanceMax; |  0x5c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistMaxSqr = 0x5c8; // float32 m_flDistMaxSqr; |  0x5c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDotProductMax = 0x5cc; // float32 m_flDotProductMax; |  0x5cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPlaying = 0x5d0; // bool m_bPlaying; |  0x5d0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecCornerPairsNetworked = 0x5f8; // GlobalTypes::CNetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t>  | Schema_Atomic | Size: 0x60
+				constexpr std::ptrdiff_t m_iszPathCorner = 0x558; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iCountMax = 0x560; // int32_t m_iCountMax; |  0x560 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistanceMax = 0x564; // float32 m_flDistanceMax; |  0x564 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistMaxSqr = 0x568; // float32 m_flDistMaxSqr; |  0x568 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDotProductMax = 0x56c; // float32 m_flDotProductMax; |  0x56c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPlaying = 0x570; // bool m_bPlaying; |  0x570 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecCornerPairsNetworked = 0x598; // GlobalTypes::CNetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t>  | Schema_Atomic | Size: 0x60
 			}
 		}
 	}

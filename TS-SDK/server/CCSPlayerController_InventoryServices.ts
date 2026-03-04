@@ -14,5 +14,5 @@ export const server_CCSPlayerController_InventoryServices  = {
 	m_nPersonaDataXpTrailLevel: 108n, // int32_t m_nPersonaDataXpTrailLevel; |  0x6c | Schema_Builtin | Size: 0x4
 	m_unEquippedPlayerSprayIDs: 3912n, // uint32_t m_unEquippedPlayerSprayIDs[1]; |  0xf48 | Schema_FixedArray | Size: 0x4
 	m_unCurrentLoadoutHash: 3920n, // uint64_t m_unCurrentLoadoutHash; |  0xf50 | Schema_Builtin | Size: 0x8
-	m_vecServerAuthoritativeWeaponSlots: 3928n, // GlobalTypes::CUtlVectorEmbeddedNetworkVar<client::ServerAuthoritativeWeaponSlot_t>  | Schema_Atomic | Size: 0x88
+	m_vecServerAuthoritativeWeaponSlots: 3928n, // server::CUtlVectorEmbeddedNetworkVar<server::ServerAuthoritativeWeaponSlot_t>  | Schema_Atomic | Size: 0x88
 }

@@ -22,12 +22,10 @@ namespace CS2 {
 		class CStateNodeTransitionData  {
 		public:
 			animgraphlib::CBlendCurve m_curve; // 0x0 | Schema_DeclaredClass | Size: 0x8
-			S2_PAD(0x14); // End padding
-			S2_PAD(0x8);
 			// GlobalTypes::CAnimValue< float32 > m_blendDuration; // 0x8 | Schema_Atomic | Size: 0x8
-			char  m_blendDuration[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
+			char m_blendDuration[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CAnimValue< float32 > m_resetCycleValue; // 0x10 | Schema_Atomic | Size: 0x8
-			char  m_resetCycleValue[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
+			char m_resetCycleValue[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CStateNodeTransitionData, m_curve) == 0x0, "m_curve in CStateNodeTransitionData should be at offset 0x0");

@@ -22,6 +22,6 @@ namespace CS2 {
 		class CTriggerHostageReset : public CS2::server::CBaseTrigger {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CTriggerHostageReset) == 0x9A8, "CTriggerHostageReset size should be 0x9A8");
+		static_assert(sizeof(CS2::server::CTriggerHostageReset) == 0x890, "CTriggerHostageReset size should be 0x890");
 	}
 }

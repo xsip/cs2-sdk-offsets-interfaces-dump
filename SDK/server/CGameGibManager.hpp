@@ -22,16 +22,16 @@ namespace CS2 {
 		class CGameGibManager : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x18);
-			bool m_bAllowNewGibs; // 0x508 | Schema_Builtin | Size: 0x1
+			bool m_bAllowNewGibs; // 0x4c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iCurrentMaxPieces; // 0x50c | Schema_Builtin | Size: 0x4
-			int32_t m_iMaxPieces; // 0x510 | Schema_Builtin | Size: 0x4
-			int32_t m_iLastFrame; // 0x514 | Schema_Builtin | Size: 0x4
+			int32_t m_iCurrentMaxPieces; // 0x4c4 | Schema_Builtin | Size: 0x4
+			int32_t m_iMaxPieces; // 0x4c8 | Schema_Builtin | Size: 0x4
+			int32_t m_iLastFrame; // 0x4cc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CGameGibManager, m_bAllowNewGibs) == 0x508, "m_bAllowNewGibs in CGameGibManager should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CGameGibManager, m_iCurrentMaxPieces) == 0x50C, "m_iCurrentMaxPieces in CGameGibManager should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CGameGibManager, m_iMaxPieces) == 0x510, "m_iMaxPieces in CGameGibManager should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CGameGibManager, m_iLastFrame) == 0x514, "m_iLastFrame in CGameGibManager should be at offset 0x514");
-		static_assert(sizeof(CS2::server::CGameGibManager) == 0x518, "CGameGibManager size should be 0x518");
+		static_assert(offsetof(CS2::server::CGameGibManager, m_bAllowNewGibs) == 0x4C0, "m_bAllowNewGibs in CGameGibManager should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CGameGibManager, m_iCurrentMaxPieces) == 0x4C4, "m_iCurrentMaxPieces in CGameGibManager should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CGameGibManager, m_iMaxPieces) == 0x4C8, "m_iMaxPieces in CGameGibManager should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CGameGibManager, m_iLastFrame) == 0x4CC, "m_iLastFrame in CGameGibManager should be at offset 0x4CC");
+		static_assert(sizeof(CS2::server::CGameGibManager) == 0x4D0, "CGameGibManager size should be 0x4D0");
 	}
 }

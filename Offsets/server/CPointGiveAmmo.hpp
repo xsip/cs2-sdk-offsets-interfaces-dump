@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x4F8
+			// Class size: 0x4B0
 			namespace CPointGiveAmmo /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_pActivator = 0x4f0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_pActivator = 0x4a8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

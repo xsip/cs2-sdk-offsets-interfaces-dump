@@ -22,14 +22,14 @@ namespace CS2 {
 	namespace server {
 		class CCredits : public CS2::server::CPointEntity {
 		public:
-			entity2::CEntityIOOutput m_OnCreditsDone; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bRolledOutroCredits; // 0x518 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnCreditsDone; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			bool m_bRolledOutroCredits; // 0x4c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flLogoLength; // 0x51c | Schema_Builtin | Size: 0x4
+			float32 m_flLogoLength; // 0x4c4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CCredits, m_OnCreditsDone) == 0x4F0, "m_OnCreditsDone in CCredits should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CCredits, m_bRolledOutroCredits) == 0x518, "m_bRolledOutroCredits in CCredits should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CCredits, m_flLogoLength) == 0x51C, "m_flLogoLength in CCredits should be at offset 0x51C");
-		static_assert(sizeof(CS2::server::CCredits) == 0x520, "CCredits size should be 0x520");
+		static_assert(offsetof(CS2::server::CCredits, m_OnCreditsDone) == 0x4A8, "m_OnCreditsDone in CCredits should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CCredits, m_bRolledOutroCredits) == 0x4C0, "m_bRolledOutroCredits in CCredits should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CCredits, m_flLogoLength) == 0x4C4, "m_flLogoLength in CCredits should be at offset 0x4C4");
+		static_assert(sizeof(CS2::server::CCredits) == 0x4C8, "CCredits size should be 0x4C8");
 	}
 }

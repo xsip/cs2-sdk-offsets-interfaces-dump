@@ -4,9 +4,9 @@
 
 
 class resourcefile_CExampleSchemaVData_PolymorphicDerivedA {
-    char vTable4166[0x8];
+    void **__vftable_0;
     int32_t m_nBase;
-    char end_pad_4167[0x4];
+    char end_pad_2725[0x4];
     int32_t m_nDerivedA;
-    char end_pad_4168[0x4];
+    char end_pad_2726[0x4];
 };

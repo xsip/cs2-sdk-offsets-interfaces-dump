@@ -16,7 +16,6 @@ export const modellib_CModelConfigElement_AttachedModel  = {
 	m_bBoneMergeFlex: 140n, // bool m_bBoneMergeFlex; |  0x8c | Schema_Builtin | Size: 0x1
 	m_bUserSpecifiedColor: 141n, // bool m_bUserSpecifiedColor; |  0x8d | Schema_Builtin | Size: 0x1
 	m_bUserSpecifiedMaterialGroup: 142n, // bool m_bUserSpecifiedMaterialGroup; |  0x8e | Schema_Builtin | Size: 0x1
-	m_bAcceptParentMaterialDrivenDecals: 143n, // bool m_bAcceptParentMaterialDrivenDecals; |  0x8f | Schema_Builtin | Size: 0x1
 	m_BodygroupOnOtherModels: 144n, // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 	m_MaterialGroupOnOtherModels: 152n, // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 }

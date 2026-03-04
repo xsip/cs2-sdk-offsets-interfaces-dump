@@ -8,7 +8,7 @@
 class animationsystem_CSeqCmdSeqDesc {
     CBufferString m_sName;
     animationsystem_CSeqSeqDescFlag m_flags;
-    char pad_438[0x1];
+    char pad_444[0x1];
     animationsystem_CSeqTransition m_transition;
     int16_t m_nFrameRangeSequence;
     int16_t m_nFrameCount;

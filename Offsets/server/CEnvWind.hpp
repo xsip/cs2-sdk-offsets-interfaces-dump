@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x640
+			// Class size: 0x5D8
 			namespace CEnvWind /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_EnvWindShared = 0x4f0; // server::CEnvWindShared  | Schema_DeclaredClass | Size: 0x150
+				constexpr std::ptrdiff_t m_EnvWindShared = 0x4a8; // server::CEnvWindShared  | Schema_DeclaredClass | Size: 0x130
 			}
 		}
 	}

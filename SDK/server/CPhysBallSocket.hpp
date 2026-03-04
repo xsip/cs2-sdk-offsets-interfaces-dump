@@ -21,21 +21,21 @@ namespace CS2 {
 	namespace server {
 		class CPhysBallSocket : public CS2::server::CPhysConstraint {
 		public:
-			float32 m_flJointFriction; // 0x560 | Schema_Builtin | Size: 0x4
-			bool m_bEnableSwingLimit; // 0x564 | Schema_Builtin | Size: 0x1
+			float32 m_flJointFriction; // 0x508 | Schema_Builtin | Size: 0x4
+			bool m_bEnableSwingLimit; // 0x50c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flSwingLimit; // 0x568 | Schema_Builtin | Size: 0x4
-			bool m_bEnableTwistLimit; // 0x56c | Schema_Builtin | Size: 0x1
+			float32 m_flSwingLimit; // 0x510 | Schema_Builtin | Size: 0x4
+			bool m_bEnableTwistLimit; // 0x514 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMinTwistAngle; // 0x570 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxTwistAngle; // 0x574 | Schema_Builtin | Size: 0x4
+			float32 m_flMinTwistAngle; // 0x518 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxTwistAngle; // 0x51c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flJointFriction) == 0x560, "m_flJointFriction in CPhysBallSocket should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CPhysBallSocket, m_bEnableSwingLimit) == 0x564, "m_bEnableSwingLimit in CPhysBallSocket should be at offset 0x564");
-		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flSwingLimit) == 0x568, "m_flSwingLimit in CPhysBallSocket should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CPhysBallSocket, m_bEnableTwistLimit) == 0x56C, "m_bEnableTwistLimit in CPhysBallSocket should be at offset 0x56C");
-		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flMinTwistAngle) == 0x570, "m_flMinTwistAngle in CPhysBallSocket should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flMaxTwistAngle) == 0x574, "m_flMaxTwistAngle in CPhysBallSocket should be at offset 0x574");
-		static_assert(sizeof(CS2::server::CPhysBallSocket) == 0x578, "CPhysBallSocket size should be 0x578");
+		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flJointFriction) == 0x508, "m_flJointFriction in CPhysBallSocket should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CPhysBallSocket, m_bEnableSwingLimit) == 0x50C, "m_bEnableSwingLimit in CPhysBallSocket should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flSwingLimit) == 0x510, "m_flSwingLimit in CPhysBallSocket should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CPhysBallSocket, m_bEnableTwistLimit) == 0x514, "m_bEnableTwistLimit in CPhysBallSocket should be at offset 0x514");
+		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flMinTwistAngle) == 0x518, "m_flMinTwistAngle in CPhysBallSocket should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flMaxTwistAngle) == 0x51C, "m_flMaxTwistAngle in CPhysBallSocket should be at offset 0x51C");
+		static_assert(sizeof(CS2::server::CPhysBallSocket) == 0x520, "CPhysBallSocket size should be 0x520");
 	}
 }

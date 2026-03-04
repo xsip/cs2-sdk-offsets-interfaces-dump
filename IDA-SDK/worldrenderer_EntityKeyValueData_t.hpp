@@ -4,8 +4,8 @@
 
 
 class worldrenderer_EntityKeyValueData_t {
-    char vTable2481[0x8];
+    void **__vftable_0;
     char m_connections[0x18];
     CUtlBinaryBlock m_keyValuesData;
-    char end_pad_2482[0x8];
+    char end_pad_2581[0x8];
 };

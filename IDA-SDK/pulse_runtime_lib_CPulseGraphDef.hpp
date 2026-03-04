@@ -4,7 +4,7 @@
 
 
 class pulse_runtime_lib_CPulseGraphDef {
-    char vTable520[0x8];
+    void **__vftable_0;
     PulseSymbol_t m_DomainIdentifier;
     CPulseValueFullType m_DomainSubType;
     PulseSymbol_t m_ParentMapName;
@@ -19,5 +19,5 @@ class pulse_runtime_lib_CPulseGraphDef {
     char m_DomainValues[0x18];
     char m_BlackboardReferences[0x18];
     char m_OutputConnections[0x18];
-    char end_pad_521[0x58];
+    char end_pad_532[0x58];
 };

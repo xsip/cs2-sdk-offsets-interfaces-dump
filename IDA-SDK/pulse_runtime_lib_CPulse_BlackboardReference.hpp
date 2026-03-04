@@ -8,6 +8,6 @@ class pulse_runtime_lib_CPulse_BlackboardReference {
     char m_hBlackboardResource[0x8];
     PulseSymbol_t m_BlackboardResource;
     pulse_runtime_lib_PulseDocNodeID_t m_nNodeID;
-    char pad_524[0x4];
+    char pad_535[0x4];
     CGlobalSymbol m_NodeName;
 };

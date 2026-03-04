@@ -25,7 +25,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_InstanceName; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_EntityClass; // 0x50 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0x58 | Schema_Atomic | Size: 0x8
-			char  m_hModel[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
+			char m_hModel[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector m_vOffset; // 0x60 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_aAngOffset; // 0x6c | Schema_Atomic | Size: 0xc
 			GlobalTypes::CUtlString m_AttachmentName; // 0x78 | Schema_Atomic | Size: 0x8
@@ -34,7 +34,7 @@ namespace CS2 {
 			bool m_bBoneMergeFlex; // 0x8c | Schema_Builtin | Size: 0x1
 			bool m_bUserSpecifiedColor; // 0x8d | Schema_Builtin | Size: 0x1
 			bool m_bUserSpecifiedMaterialGroup; // 0x8e | Schema_Builtin | Size: 0x1
-			bool m_bAcceptParentMaterialDrivenDecals; // 0x8f | Schema_Builtin | Size: 0x1
+			S2_PAD(0x1);
 			GlobalTypes::CUtlString m_BodygroupOnOtherModels; // 0x90 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_MaterialGroupOnOtherModels; // 0x98 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x48); // End padding
@@ -50,7 +50,6 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_bBoneMergeFlex) == 0x8C, "m_bBoneMergeFlex in CModelConfigElement_AttachedModel should be at offset 0x8C");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_bUserSpecifiedColor) == 0x8D, "m_bUserSpecifiedColor in CModelConfigElement_AttachedModel should be at offset 0x8D");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_bUserSpecifiedMaterialGroup) == 0x8E, "m_bUserSpecifiedMaterialGroup in CModelConfigElement_AttachedModel should be at offset 0x8E");
-		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_bAcceptParentMaterialDrivenDecals) == 0x8F, "m_bAcceptParentMaterialDrivenDecals in CModelConfigElement_AttachedModel should be at offset 0x8F");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_BodygroupOnOtherModels) == 0x90, "m_BodygroupOnOtherModels in CModelConfigElement_AttachedModel should be at offset 0x90");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_MaterialGroupOnOtherModels) == 0x98, "m_MaterialGroupOnOtherModels in CModelConfigElement_AttachedModel should be at offset 0x98");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_AttachedModel) == 0xE8, "CModelConfigElement_AttachedModel size should be 0xE8");

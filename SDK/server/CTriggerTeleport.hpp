@@ -21,16 +21,16 @@ namespace CS2 {
 	namespace server {
 		class CTriggerTeleport : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iLandmark; // 0x9a8 | Schema_Atomic | Size: 0x8
-			bool m_bUseLandmarkAngles; // 0x9b0 | Schema_Builtin | Size: 0x1
-			bool m_bMirrorPlayer; // 0x9b1 | Schema_Builtin | Size: 0x1
-			bool m_bCheckDestIfClearForPlayer; // 0x9b2 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iLandmark; // 0x890 | Schema_Atomic | Size: 0x8
+			bool m_bUseLandmarkAngles; // 0x898 | Schema_Builtin | Size: 0x1
+			bool m_bMirrorPlayer; // 0x899 | Schema_Builtin | Size: 0x1
+			bool m_bCheckDestIfClearForPlayer; // 0x89a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTriggerTeleport, m_iLandmark) == 0x9A8, "m_iLandmark in CTriggerTeleport should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bUseLandmarkAngles) == 0x9B0, "m_bUseLandmarkAngles in CTriggerTeleport should be at offset 0x9B0");
-		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bMirrorPlayer) == 0x9B1, "m_bMirrorPlayer in CTriggerTeleport should be at offset 0x9B1");
-		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bCheckDestIfClearForPlayer) == 0x9B2, "m_bCheckDestIfClearForPlayer in CTriggerTeleport should be at offset 0x9B2");
-		static_assert(sizeof(CS2::server::CTriggerTeleport) == 0x9B8, "CTriggerTeleport size should be 0x9B8");
+		static_assert(offsetof(CS2::server::CTriggerTeleport, m_iLandmark) == 0x890, "m_iLandmark in CTriggerTeleport should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bUseLandmarkAngles) == 0x898, "m_bUseLandmarkAngles in CTriggerTeleport should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bMirrorPlayer) == 0x899, "m_bMirrorPlayer in CTriggerTeleport should be at offset 0x899");
+		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bCheckDestIfClearForPlayer) == 0x89A, "m_bCheckDestIfClearForPlayer in CTriggerTeleport should be at offset 0x89A");
+		static_assert(sizeof(CS2::server::CTriggerTeleport) == 0x8A0, "CTriggerTeleport size should be 0x8A0");
 	}
 }

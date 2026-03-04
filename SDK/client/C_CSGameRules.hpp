@@ -83,14 +83,13 @@ namespace CS2 {
 			bool m_bIsDroppingItems; // 0x8c4 | Schema_Builtin | Size: 0x1
 			bool m_bIsQuestEligible; // 0x8c5 | Schema_Builtin | Size: 0x1
 			bool m_bIsHltvActive; // 0x8c6 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x1);
+			bool m_bBombPlanted; // 0x8c7 | Schema_Builtin | Size: 0x1
 			uint16_t m_arrProhibitedItemIndices[100]; // 0x8c8 | Schema_FixedArray | Size: 0xc8
 			uint32_t m_arrTournamentActiveCasterAccounts[4]; // 0x990 | Schema_FixedArray | Size: 0x10
 			int32_t m_numBestOfMaps; // 0x9a0 | Schema_Builtin | Size: 0x4
 			int32_t m_nHalloweenMaskListSeed; // 0x9a4 | Schema_Builtin | Size: 0x4
 			bool m_bBombDropped; // 0x9a8 | Schema_Builtin | Size: 0x1
-			bool m_bBombPlanted; // 0x9a9 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x2);
+			S2_PAD(0x3);
 			int32_t m_iRoundWinStatus; // 0x9ac | Schema_Builtin | Size: 0x4
 			int32_t m_eRoundWinReason; // 0x9b0 | Schema_Builtin | Size: 0x4
 			bool m_bTCantBuy; // 0x9b4 | Schema_Builtin | Size: 0x1
@@ -193,12 +192,12 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_bIsDroppingItems) == 0x8C4, "m_bIsDroppingItems in C_CSGameRules should be at offset 0x8C4");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_bIsQuestEligible) == 0x8C5, "m_bIsQuestEligible in C_CSGameRules should be at offset 0x8C5");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_bIsHltvActive) == 0x8C6, "m_bIsHltvActive in C_CSGameRules should be at offset 0x8C6");
+		static_assert(offsetof(CS2::client::C_CSGameRules, m_bBombPlanted) == 0x8C7, "m_bBombPlanted in C_CSGameRules should be at offset 0x8C7");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_arrProhibitedItemIndices) == 0x8C8, "m_arrProhibitedItemIndices in C_CSGameRules should be at offset 0x8C8");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_arrTournamentActiveCasterAccounts) == 0x990, "m_arrTournamentActiveCasterAccounts in C_CSGameRules should be at offset 0x990");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_numBestOfMaps) == 0x9A0, "m_numBestOfMaps in C_CSGameRules should be at offset 0x9A0");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_nHalloweenMaskListSeed) == 0x9A4, "m_nHalloweenMaskListSeed in C_CSGameRules should be at offset 0x9A4");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_bBombDropped) == 0x9A8, "m_bBombDropped in C_CSGameRules should be at offset 0x9A8");
-		static_assert(offsetof(CS2::client::C_CSGameRules, m_bBombPlanted) == 0x9A9, "m_bBombPlanted in C_CSGameRules should be at offset 0x9A9");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_iRoundWinStatus) == 0x9AC, "m_iRoundWinStatus in C_CSGameRules should be at offset 0x9AC");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_eRoundWinReason) == 0x9B0, "m_eRoundWinReason in C_CSGameRules should be at offset 0x9B0");
 		static_assert(offsetof(CS2::client::C_CSGameRules, m_bTCantBuy) == 0x9B4, "m_bTCantBuy in C_CSGameRules should be at offset 0x9B4");

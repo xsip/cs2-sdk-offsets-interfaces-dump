@@ -22,28 +22,28 @@ namespace CS2 {
 	namespace client {
 		class C_FuncLadder : public CS2::client::C_BaseModelEntity {
 		public:
-			GlobalTypes::Vector m_vecLadderDir; // 0xeb0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLadderDir; // 0xe88 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector<GlobalTypes::CHandle<client::C_InfoLadderDismount>> m_Dismounts; // 0xec0 | Schema_Atomic | Size: 0x18
-			// char  m_Dismounts[0x18]; // 0xec0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::Vector m_vecLocalTop; // 0xed8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::VectorWS m_vecPlayerMountPositionTop; // 0xee4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; // 0xef0 | Schema_Atomic | Size: 0xc
-			float32 m_flAutoRideSpeed; // 0xefc | Schema_Builtin | Size: 0x4
-			bool m_bDisabled; // 0xf00 | Schema_Builtin | Size: 0x1
-			bool m_bFakeLadder; // 0xf01 | Schema_Builtin | Size: 0x1
-			bool m_bHasSlack; // 0xf02 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<client::C_InfoLadderDismount>> m_Dismounts; // 0xe98 | Schema_Atomic | Size: 0x18
+			// char m_Dismounts[0x18]; // 0xe98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::Vector m_vecLocalTop; // 0xeb0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecPlayerMountPositionTop; // 0xebc | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecPlayerMountPositionBottom; // 0xec8 | Schema_Atomic | Size: 0xc
+			float32 m_flAutoRideSpeed; // 0xed4 | Schema_Builtin | Size: 0x4
+			bool m_bDisabled; // 0xed8 | Schema_Builtin | Size: 0x1
+			bool m_bFakeLadder; // 0xed9 | Schema_Builtin | Size: 0x1
+			bool m_bHasSlack; // 0xeda | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecLadderDir) == 0xEB0, "m_vecLadderDir in C_FuncLadder should be at offset 0xEB0");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_Dismounts) == 0xEC0, "m_Dismounts in C_FuncLadder should be at offset 0xEC0");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecLocalTop) == 0xED8, "m_vecLocalTop in C_FuncLadder should be at offset 0xED8");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecPlayerMountPositionTop) == 0xEE4, "m_vecPlayerMountPositionTop in C_FuncLadder should be at offset 0xEE4");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecPlayerMountPositionBottom) == 0xEF0, "m_vecPlayerMountPositionBottom in C_FuncLadder should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_flAutoRideSpeed) == 0xEFC, "m_flAutoRideSpeed in C_FuncLadder should be at offset 0xEFC");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_bDisabled) == 0xF00, "m_bDisabled in C_FuncLadder should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_bFakeLadder) == 0xF01, "m_bFakeLadder in C_FuncLadder should be at offset 0xF01");
-		static_assert(offsetof(CS2::client::C_FuncLadder, m_bHasSlack) == 0xF02, "m_bHasSlack in C_FuncLadder should be at offset 0xF02");
-		static_assert(sizeof(CS2::client::C_FuncLadder) == 0xF08, "C_FuncLadder size should be 0xF08");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecLadderDir) == 0xE88, "m_vecLadderDir in C_FuncLadder should be at offset 0xE88");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_Dismounts) == 0xE98, "m_Dismounts in C_FuncLadder should be at offset 0xE98");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecLocalTop) == 0xEB0, "m_vecLocalTop in C_FuncLadder should be at offset 0xEB0");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecPlayerMountPositionTop) == 0xEBC, "m_vecPlayerMountPositionTop in C_FuncLadder should be at offset 0xEBC");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecPlayerMountPositionBottom) == 0xEC8, "m_vecPlayerMountPositionBottom in C_FuncLadder should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_flAutoRideSpeed) == 0xED4, "m_flAutoRideSpeed in C_FuncLadder should be at offset 0xED4");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_bDisabled) == 0xED8, "m_bDisabled in C_FuncLadder should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_bFakeLadder) == 0xED9, "m_bFakeLadder in C_FuncLadder should be at offset 0xED9");
+		static_assert(offsetof(CS2::client::C_FuncLadder, m_bHasSlack) == 0xEDA, "m_bHasSlack in C_FuncLadder should be at offset 0xEDA");
+		static_assert(sizeof(CS2::client::C_FuncLadder) == 0xEE0, "C_FuncLadder size should be 0xEE0");
 	}
 }

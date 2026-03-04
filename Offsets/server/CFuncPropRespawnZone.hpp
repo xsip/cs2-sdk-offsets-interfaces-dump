@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x4F0
+			// Class size: 0x4A8
 			namespace CFuncPropRespawnZone /*: public CS2::server::CBaseEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

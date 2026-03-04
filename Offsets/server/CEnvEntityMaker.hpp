@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x590
+			// Class size: 0x528
 			namespace CEnvEntityMaker /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_vecEntityMins = 0x4f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecEntityMaxs = 0x4fc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hCurrentInstance = 0x508; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hCurrentBlocker = 0x50c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecBlockerOrigin = 0x510; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angPostSpawnDirection = 0x51c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flPostSpawnDirectionVariance = 0x528; // float32 m_flPostSpawnDirectionVariance; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPostSpawnSpeed = 0x52c; // float32 m_flPostSpawnSpeed; |  0x52c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPostSpawnUseAngles = 0x530; // bool m_bPostSpawnUseAngles; |  0x530 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iszTemplate = 0x538; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pOutputOnSpawned = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pOutputOnFailedSpawn = 0x568; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_vecEntityMins = 0x4a8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecEntityMaxs = 0x4b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hCurrentInstance = 0x4c0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hCurrentBlocker = 0x4c4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecBlockerOrigin = 0x4c8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angPostSpawnDirection = 0x4d4; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flPostSpawnDirectionVariance = 0x4e0; // float32 m_flPostSpawnDirectionVariance; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPostSpawnSpeed = 0x4e4; // float32 m_flPostSpawnSpeed; |  0x4e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPostSpawnUseAngles = 0x4e8; // bool m_bPostSpawnUseAngles; |  0x4e8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iszTemplate = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pOutputOnSpawned = 0x4f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_pOutputOnFailedSpawn = 0x510; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

@@ -1,9 +1,9 @@
 // generated - do not edit!
 
 import {server_CPointEntity} from './CPointEntity';
-// Class size: 0x4F8
+// Class size: 0x4B0
 // BaseClass: : public CS2::server::CPointEntity
 export const server_CPointGiveAmmo  = {
 	...server_CPointEntity,
-	m_pActivator: 1264n, // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+	m_pActivator: 1192n, // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 }

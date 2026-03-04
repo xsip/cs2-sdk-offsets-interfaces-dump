@@ -23,7 +23,7 @@ namespace CS2 {
 		public:
 			S2_PAD(0x38);
 			GlobalTypes::CUtlVector<GlobalTypes::CSmartPtr<animgraphlib::CAnimTagBase>> m_tags; // 0x38 | Schema_Atomic | Size: 0x18
-			// char  m_tags[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			// char m_tags[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CAnimTagManagerUpdater, m_tags) == 0x38, "m_tags in CAnimTagManagerUpdater should be at offset 0x38");

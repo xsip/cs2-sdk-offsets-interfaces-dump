@@ -5,11 +5,11 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class server_CCSPlayer_ItemServices {
-    char vTable1208[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1209[0x10];
-    char pad_3418[0x40];
+    char pad_2013[0x18];
+    char pad_3548[0x48];
     bool m_bHasDefuser;
     bool m_bHasHelmet;
-    char end_pad_3417[0x6];
+    char end_pad_3547[0x6];
 };

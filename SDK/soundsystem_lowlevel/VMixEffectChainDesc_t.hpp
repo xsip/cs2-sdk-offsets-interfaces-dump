@@ -20,9 +20,9 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixEffectChainDesc_t  {
 		public:
-			float32 m_flCrossfadeTime; // 0x0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_effectName; // 0x0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEffectChainDesc_t, m_flCrossfadeTime) == 0x0, "m_flCrossfadeTime in VMixEffectChainDesc_t should be at offset 0x0");
-		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixEffectChainDesc_t) == 0x4, "VMixEffectChainDesc_t size should be 0x4");
+		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEffectChainDesc_t, m_effectName) == 0x0, "m_effectName in VMixEffectChainDesc_t should be at offset 0x0");
+		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixEffectChainDesc_t) == 0x8, "VMixEffectChainDesc_t size should be 0x8");
 	}
 }

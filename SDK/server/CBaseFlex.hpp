@@ -23,24 +23,22 @@ namespace CS2 {
 	namespace server {
 		class CBaseFlex : public CS2::server::CBaseAnimGraph {
 		public:
-			// GlobalTypes::CNetworkUtlVectorBase< float32 > m_flexWeight; // 0xa90 | Schema_Atomic | Size: 0x18
-			char  m_flexWeight[0x18]; // 0xa90 | Schema_Atomic | Size: 0x18
-			GlobalTypes::VectorWS m_vLookTargetPosition; // 0xaa8 | Schema_Atomic | Size: 0xc
-			bool m_blinktoggle; // 0xab4 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x53);
-			entity2::GameTime_t m_flAllowResponsesEndTime; // 0xb08 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flLastFlexAnimationTime; // 0xb0c | Schema_DeclaredClass | Size: 0x4
-			client::SceneEventId_t m_nNextSceneEventId; // 0xb10 | Schema_DeclaredClass | Size: 0x4
-			bool m_bUpdateLayerPriorities; // 0xb14 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CNetworkUtlVectorBase< float32 > m_flexWeight; // 0xa20 | Schema_Atomic | Size: 0x18
+			char m_flexWeight[0x18]; // 0xa20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::VectorWS m_vLookTargetPosition; // 0xa38 | Schema_Atomic | Size: 0xc
+			S2_PAD(0x54);
+			entity2::GameTime_t m_flAllowResponsesEndTime; // 0xa98 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flLastFlexAnimationTime; // 0xa9c | Schema_DeclaredClass | Size: 0x4
+			client::SceneEventId_t m_nNextSceneEventId; // 0xaa0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bUpdateLayerPriorities; // 0xaa4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBaseFlex, m_flexWeight) == 0xA90, "m_flexWeight in CBaseFlex should be at offset 0xA90");
-		static_assert(offsetof(CS2::server::CBaseFlex, m_vLookTargetPosition) == 0xAA8, "m_vLookTargetPosition in CBaseFlex should be at offset 0xAA8");
-		static_assert(offsetof(CS2::server::CBaseFlex, m_blinktoggle) == 0xAB4, "m_blinktoggle in CBaseFlex should be at offset 0xAB4");
-		static_assert(offsetof(CS2::server::CBaseFlex, m_flAllowResponsesEndTime) == 0xB08, "m_flAllowResponsesEndTime in CBaseFlex should be at offset 0xB08");
-		static_assert(offsetof(CS2::server::CBaseFlex, m_flLastFlexAnimationTime) == 0xB0C, "m_flLastFlexAnimationTime in CBaseFlex should be at offset 0xB0C");
-		static_assert(offsetof(CS2::server::CBaseFlex, m_nNextSceneEventId) == 0xB10, "m_nNextSceneEventId in CBaseFlex should be at offset 0xB10");
-		static_assert(offsetof(CS2::server::CBaseFlex, m_bUpdateLayerPriorities) == 0xB14, "m_bUpdateLayerPriorities in CBaseFlex should be at offset 0xB14");
-		static_assert(sizeof(CS2::server::CBaseFlex) == 0xB20, "CBaseFlex size should be 0xB20");
+		static_assert(offsetof(CS2::server::CBaseFlex, m_flexWeight) == 0xA20, "m_flexWeight in CBaseFlex should be at offset 0xA20");
+		static_assert(offsetof(CS2::server::CBaseFlex, m_vLookTargetPosition) == 0xA38, "m_vLookTargetPosition in CBaseFlex should be at offset 0xA38");
+		static_assert(offsetof(CS2::server::CBaseFlex, m_flAllowResponsesEndTime) == 0xA98, "m_flAllowResponsesEndTime in CBaseFlex should be at offset 0xA98");
+		static_assert(offsetof(CS2::server::CBaseFlex, m_flLastFlexAnimationTime) == 0xA9C, "m_flLastFlexAnimationTime in CBaseFlex should be at offset 0xA9C");
+		static_assert(offsetof(CS2::server::CBaseFlex, m_nNextSceneEventId) == 0xAA0, "m_nNextSceneEventId in CBaseFlex should be at offset 0xAA0");
+		static_assert(offsetof(CS2::server::CBaseFlex, m_bUpdateLayerPriorities) == 0xAA4, "m_bUpdateLayerPriorities in CBaseFlex should be at offset 0xAA4");
+		static_assert(sizeof(CS2::server::CBaseFlex) == 0xAB0, "CBaseFlex size should be 0xAB0");
 	}
 }

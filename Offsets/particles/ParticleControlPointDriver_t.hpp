@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace particles {
-			// Class size: 0x30
+			// Class size: 0x40
 			namespace ParticleControlPointDriver_t /**/ {
-				constexpr std::ptrdiff_t m_iControlPoint = 0x0; // int32_t m_iControlPoint; |  0x0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iAttachType = 0x4; // animationsystem::ParticleAttachment_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_attachmentName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vecOffset = 0x10; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_angOffset = 0x1c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_entityName = 0x28; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iControlPoint = 0x0; // GlobalTypes::ParticleParamID_t  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_iAttachType = 0x10; // animationsystem::ParticleAttachment_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_attachmentName = 0x18; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vecOffset = 0x20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_angOffset = 0x2c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_entityName = 0x38; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

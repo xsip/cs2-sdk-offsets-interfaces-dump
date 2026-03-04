@@ -8,33 +8,33 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA70
+			// Class size: 0x950
 			namespace CTriggerFan /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_vFanOriginOffset = 0x9a8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDirection = 0x9b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bPushTowardsInfoTarget = 0x9c0; // bool m_bPushTowardsInfoTarget; |  0x9c0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPushAwayFromInfoTarget = 0x9c1; // bool m_bPushAwayFromInfoTarget; |  0x9c1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_qNoiseDelta = 0x9d0; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
-				constexpr std::ptrdiff_t m_hInfoFan = 0x9e0; // GlobalTypes::CHandle<server::CInfoFan>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flForce = 0x9e4; // float32 m_flForce; |  0x9e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bFalloff = 0x9e8; // bool m_bFalloff; |  0x9e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RampTimer = 0x9f0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_vFanOriginWS = 0xa08; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vFanOriginLS = 0xa14; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vFanEndLS = 0xa20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vNoiseDirectionTarget = 0xa2c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_iszInfoFan = 0xa38; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flRopeForceScale = 0xa40; // float32 m_flRopeForceScale; |  0xa40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flParticleForceScale = 0xa44; // float32 m_flParticleForceScale; |  0xa44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPlayerForce = 0xa48; // float32 m_flPlayerForce; |  0xa48 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPlayerWindblock = 0xa4c; // bool m_bPlayerWindblock; |  0xa4c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flNPCForce = 0xa50; // float32 m_flNPCForce; |  0xa50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRampTime = 0xa54; // float32 m_flRampTime; |  0xa54 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fNoiseDegrees = 0xa58; // float32 m_fNoiseDegrees; |  0xa58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fNoiseSpeed = 0xa5c; // float32 m_fNoiseSpeed; |  0xa5c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPushPlayer = 0xa60; // bool m_bPushPlayer; |  0xa60 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRampDown = 0xa61; // bool m_bRampDown; |  0xa61 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nManagerFanIdx = 0xa64; // int32_t m_nManagerFanIdx; |  0xa64 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vFanOriginOffset = 0x890; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDirection = 0x89c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bPushTowardsInfoTarget = 0x8a8; // bool m_bPushTowardsInfoTarget; |  0x8a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPushAwayFromInfoTarget = 0x8a9; // bool m_bPushAwayFromInfoTarget; |  0x8a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_qNoiseDelta = 0x8b0; // GlobalTypes::Quaternion  | Schema_Atomic | Size: 0x10
+				constexpr std::ptrdiff_t m_hInfoFan = 0x8c0; // GlobalTypes::CHandle<server::CInfoFan>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flForce = 0x8c4; // float32 m_flForce; |  0x8c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bFalloff = 0x8c8; // bool m_bFalloff; |  0x8c8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_RampTimer = 0x8d0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_vFanOriginWS = 0x8e8; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanOriginLS = 0x8f4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vFanEndLS = 0x900; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vNoiseDirectionTarget = 0x90c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_iszInfoFan = 0x918; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flRopeForceScale = 0x920; // float32 m_flRopeForceScale; |  0x920 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flParticleForceScale = 0x924; // float32 m_flParticleForceScale; |  0x924 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPlayerForce = 0x928; // float32 m_flPlayerForce; |  0x928 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPlayerWindblock = 0x92c; // bool m_bPlayerWindblock; |  0x92c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flNPCForce = 0x930; // float32 m_flNPCForce; |  0x930 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRampTime = 0x934; // float32 m_flRampTime; |  0x934 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fNoiseDegrees = 0x938; // float32 m_fNoiseDegrees; |  0x938 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fNoiseSpeed = 0x93c; // float32 m_fNoiseSpeed; |  0x93c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPushPlayer = 0x940; // bool m_bPushPlayer; |  0x940 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRampDown = 0x941; // bool m_bRampDown; |  0x941 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nManagerFanIdx = 0x944; // int32_t m_nManagerFanIdx; |  0x944 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

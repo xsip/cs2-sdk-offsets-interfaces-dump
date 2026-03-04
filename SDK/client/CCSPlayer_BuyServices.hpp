@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/CPlayerPawnComponent.hpp>
+#include <SDK/client/SellbackPurchaseEntry_t.hpp>
 
 
 
@@ -21,10 +22,10 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_BuyServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			// client::C_UtlVectorEmbeddedNetworkVar<client::SellbackPurchaseEntry_t> m_vecSellbackPurchaseEntries; // 0x40 | Schema_Atomic | Size: 0x68
-			char  m_vecSellbackPurchaseEntries[0x68]; // 0x40 | Schema_Atomic | Size: 0x68
+			// client::C_UtlVectorEmbeddedNetworkVar<client::SellbackPurchaseEntry_t> m_vecSellbackPurchaseEntries; // 0x48 | Schema_Atomic | Size: 0x68
+			char m_vecSellbackPurchaseEntries[0x68]; // 0x48 | Schema_Atomic | Size: 0x68
 		};
-		static_assert(offsetof(CS2::client::CCSPlayer_BuyServices, m_vecSellbackPurchaseEntries) == 0x40, "m_vecSellbackPurchaseEntries in CCSPlayer_BuyServices should be at offset 0x40");
-		static_assert(sizeof(CS2::client::CCSPlayer_BuyServices) == 0xA8, "CCSPlayer_BuyServices size should be 0xA8");
+		static_assert(offsetof(CS2::client::CCSPlayer_BuyServices, m_vecSellbackPurchaseEntries) == 0x48, "m_vecSellbackPurchaseEntries in CCSPlayer_BuyServices should be at offset 0x48");
+		static_assert(sizeof(CS2::client::CCSPlayer_BuyServices) == 0xB0, "CCSPlayer_BuyServices size should be 0xB0");
 	}
 }

@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5B8
+			// Class size: 0x548
 			namespace CPointAngleSensor /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nLookAtName = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hTargetEntity = 0x500; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hLookAtEntity = 0x504; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flDuration = 0x508; // float32 m_flDuration; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDotTolerance = 0x50c; // float32 m_flDotTolerance; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFacingTime = 0x510; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bFired = 0x514; // bool m_bFired; |  0x514 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnFacingLookat = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnNotFacingLookat = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_TargetDir = 0x568; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_FacingPercentage = 0x590; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_bDisabled = 0x4a8; // bool m_bDisabled; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nLookAtName = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTargetEntity = 0x4b8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hLookAtEntity = 0x4bc; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flDuration = 0x4c0; // float32 m_flDuration; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDotTolerance = 0x4c4; // float32 m_flDotTolerance; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFacingTime = 0x4c8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bFired = 0x4cc; // bool m_bFired; |  0x4cc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnFacingLookat = 0x4d0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnNotFacingLookat = 0x4e8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_TargetDir = 0x500; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_FacingPercentage = 0x528; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

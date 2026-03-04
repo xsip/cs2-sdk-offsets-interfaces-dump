@@ -10,16 +10,12 @@
 #endif
 
 
+#include <SDK/physicslib/RnSoftbodyParticle_t.hpp>
+#include <SDK/physicslib/RnSoftbodySpring_t.hpp>
+#include <SDK/physicslib/RnSoftbodyCapsule_t.hpp>
 
 
 
-namespace CS2 {
-	namespace physicslib {
-		class RnSoftbodyParticle_t;
-		class RnSoftbodySpring_t;
-		class RnSoftbodyCapsule_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -28,17 +24,17 @@ namespace CS2 {
 		class PhysSoftbodyDesc_t  {
 		public:
 			GlobalTypes::CUtlVector< uint32 > m_ParticleBoneHash; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_ParticleBoneHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_ParticleBoneHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::RnSoftbodyParticle_t> m_Particles; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_Particles[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_Particles[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::RnSoftbodySpring_t> m_Springs; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_Springs[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_Springs[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::RnSoftbodyCapsule_t> m_Capsules; // 0x48 | Schema_Atomic | Size: 0x18
-			// char  m_Capsules[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			// char m_Capsules[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<GlobalTypes::CTransform> m_InitPose; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_InitPose[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_InitPose[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_ParticleBoneName; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_ParticleBoneName[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_ParticleBoneName[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::PhysSoftbodyDesc_t, m_ParticleBoneHash) == 0x0, "m_ParticleBoneHash in PhysSoftbodyDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::PhysSoftbodyDesc_t, m_Particles) == 0x18, "m_Particles in PhysSoftbodyDesc_t should be at offset 0x18");

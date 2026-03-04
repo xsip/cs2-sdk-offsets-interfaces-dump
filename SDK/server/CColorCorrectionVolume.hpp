@@ -22,24 +22,24 @@ namespace CS2 {
 	namespace server {
 		class CColorCorrectionVolume : public CS2::server::CBaseTrigger {
 		public:
-			float32 m_MaxWeight; // 0x9a8 | Schema_Builtin | Size: 0x4
-			float32 m_FadeDuration; // 0x9ac | Schema_Builtin | Size: 0x4
-			float32 m_Weight; // 0x9b0 | Schema_Builtin | Size: 0x4
-			char m_lookupFilename[512]; // 0x9b4 | Schema_FixedArray | Size: 0x200
-			float32 m_LastEnterWeight; // 0xbb4 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_LastEnterTime; // 0xbb8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_LastExitWeight; // 0xbbc | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_LastExitTime; // 0xbc0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_MaxWeight; // 0x890 | Schema_Builtin | Size: 0x4
+			float32 m_FadeDuration; // 0x894 | Schema_Builtin | Size: 0x4
+			float32 m_Weight; // 0x898 | Schema_Builtin | Size: 0x4
+			char m_lookupFilename[512]; // 0x89c | Schema_FixedArray | Size: 0x200
+			float32 m_LastEnterWeight; // 0xa9c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_LastEnterTime; // 0xaa0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_LastExitWeight; // 0xaa4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_LastExitTime; // 0xaa8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_MaxWeight) == 0x9A8, "m_MaxWeight in CColorCorrectionVolume should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_FadeDuration) == 0x9AC, "m_FadeDuration in CColorCorrectionVolume should be at offset 0x9AC");
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_Weight) == 0x9B0, "m_Weight in CColorCorrectionVolume should be at offset 0x9B0");
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_lookupFilename) == 0x9B4, "m_lookupFilename in CColorCorrectionVolume should be at offset 0x9B4");
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastEnterWeight) == 0xBB4, "m_LastEnterWeight in CColorCorrectionVolume should be at offset 0xBB4");
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastEnterTime) == 0xBB8, "m_LastEnterTime in CColorCorrectionVolume should be at offset 0xBB8");
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastExitWeight) == 0xBBC, "m_LastExitWeight in CColorCorrectionVolume should be at offset 0xBBC");
-		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastExitTime) == 0xBC0, "m_LastExitTime in CColorCorrectionVolume should be at offset 0xBC0");
-		static_assert(sizeof(CS2::server::CColorCorrectionVolume) == 0xBC8, "CColorCorrectionVolume size should be 0xBC8");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_MaxWeight) == 0x890, "m_MaxWeight in CColorCorrectionVolume should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_FadeDuration) == 0x894, "m_FadeDuration in CColorCorrectionVolume should be at offset 0x894");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_Weight) == 0x898, "m_Weight in CColorCorrectionVolume should be at offset 0x898");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_lookupFilename) == 0x89C, "m_lookupFilename in CColorCorrectionVolume should be at offset 0x89C");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastEnterWeight) == 0xA9C, "m_LastEnterWeight in CColorCorrectionVolume should be at offset 0xA9C");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastEnterTime) == 0xAA0, "m_LastEnterTime in CColorCorrectionVolume should be at offset 0xAA0");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastExitWeight) == 0xAA4, "m_LastExitWeight in CColorCorrectionVolume should be at offset 0xAA4");
+		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastExitTime) == 0xAA8, "m_LastExitTime in CColorCorrectionVolume should be at offset 0xAA8");
+		static_assert(sizeof(CS2::server::CColorCorrectionVolume) == 0xAB0, "CColorCorrectionVolume size should be 0xAB0");
 	}
 }

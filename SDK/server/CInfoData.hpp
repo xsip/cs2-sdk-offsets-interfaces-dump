@@ -21,8 +21,8 @@ namespace CS2 {
 	namespace server {
 		class CInfoData : public CS2::server::CServerOnlyEntity {
 		public:
-			S2_PAD(0x390);
+			S2_PAD(0x398);
 		};
-		static_assert(sizeof(CS2::server::CInfoData) == 0x880, "CInfoData size should be 0x880");
+		static_assert(sizeof(CS2::server::CInfoData) == 0x840, "CInfoData size should be 0x840");
 	}
 }

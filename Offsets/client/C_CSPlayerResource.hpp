@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x690
+			// Class size: 0x6A0
 			namespace C_CSPlayerResource /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_bHostageAlive = 0x5f8; // bool m_bHostageAlive[12]; |  0x5f8 | Schema_FixedArray | Size: 0xc
-				constexpr std::ptrdiff_t m_isHostageFollowingSomeone = 0x604; // bool m_isHostageFollowingSomeone[12]; |  0x604 | Schema_FixedArray | Size: 0xc
-				constexpr std::ptrdiff_t m_iHostageEntityIDs = 0x610; // GlobalTypes::CEntityIndex[12]  | Schema_FixedArray | Size: 0x30
-				constexpr std::ptrdiff_t m_bombsiteCenterA = 0x640; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bombsiteCenterB = 0x64c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hostageRescueX = 0x658; // int32_t m_hostageRescueX[4]; |  0x658 | Schema_FixedArray | Size: 0x10
-				constexpr std::ptrdiff_t m_hostageRescueY = 0x668; // int32_t m_hostageRescueY[4]; |  0x668 | Schema_FixedArray | Size: 0x10
-				constexpr std::ptrdiff_t m_hostageRescueZ = 0x678; // int32_t m_hostageRescueZ[4]; |  0x678 | Schema_FixedArray | Size: 0x10
-				constexpr std::ptrdiff_t m_bEndMatchNextMapAllVoted = 0x688; // bool m_bEndMatchNextMapAllVoted; |  0x688 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_foundGoalPositions = 0x689; // bool m_foundGoalPositions; |  0x689 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHostageAlive = 0x608; // bool m_bHostageAlive[12]; |  0x608 | Schema_FixedArray | Size: 0xc
+				constexpr std::ptrdiff_t m_isHostageFollowingSomeone = 0x614; // bool m_isHostageFollowingSomeone[12]; |  0x614 | Schema_FixedArray | Size: 0xc
+				constexpr std::ptrdiff_t m_iHostageEntityIDs = 0x620; // GlobalTypes::CEntityIndex[12]  | Schema_FixedArray | Size: 0x30
+				constexpr std::ptrdiff_t m_bombsiteCenterA = 0x650; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bombsiteCenterB = 0x65c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hostageRescueX = 0x668; // int32_t m_hostageRescueX[4]; |  0x668 | Schema_FixedArray | Size: 0x10
+				constexpr std::ptrdiff_t m_hostageRescueY = 0x678; // int32_t m_hostageRescueY[4]; |  0x678 | Schema_FixedArray | Size: 0x10
+				constexpr std::ptrdiff_t m_hostageRescueZ = 0x688; // int32_t m_hostageRescueZ[4]; |  0x688 | Schema_FixedArray | Size: 0x10
+				constexpr std::ptrdiff_t m_bEndMatchNextMapAllVoted = 0x698; // bool m_bEndMatchNextMapAllVoted; |  0x698 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_foundGoalPositions = 0x699; // bool m_foundGoalPositions; |  0x699 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

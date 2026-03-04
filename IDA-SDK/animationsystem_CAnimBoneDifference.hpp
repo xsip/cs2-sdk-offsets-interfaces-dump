@@ -9,5 +9,5 @@ class animationsystem_CAnimBoneDifference {
     Vector m_posError;
     bool m_bHasRotation;
     bool m_bHasMovement;
-    char end_pad_417[0x2];
+    char end_pad_423[0x2];
 };

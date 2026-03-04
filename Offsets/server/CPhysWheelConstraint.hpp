@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x598
+			// Class size: 0x540
 			namespace CPhysWheelConstraint /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_flSuspensionFrequency = 0x560; // float32 m_flSuspensionFrequency; |  0x560 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSuspensionDampingRatio = 0x564; // float32 m_flSuspensionDampingRatio; |  0x564 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSuspensionHeightOffset = 0x568; // float32 m_flSuspensionHeightOffset; |  0x568 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnableSuspensionLimit = 0x56c; // bool m_bEnableSuspensionLimit; |  0x56c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMinSuspensionOffset = 0x570; // float32 m_flMinSuspensionOffset; |  0x570 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxSuspensionOffset = 0x574; // float32 m_flMaxSuspensionOffset; |  0x574 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnableSteeringLimit = 0x578; // bool m_bEnableSteeringLimit; |  0x578 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMinSteeringAngle = 0x57c; // float32 m_flMinSteeringAngle; |  0x57c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxSteeringAngle = 0x580; // float32 m_flMaxSteeringAngle; |  0x580 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSteeringAxisFriction = 0x584; // float32 m_flSteeringAxisFriction; |  0x584 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSpinAxisFriction = 0x588; // float32 m_flSpinAxisFriction; |  0x588 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSteeringMimicsEntity = 0x58c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flSuspensionFrequency = 0x508; // float32 m_flSuspensionFrequency; |  0x508 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSuspensionDampingRatio = 0x50c; // float32 m_flSuspensionDampingRatio; |  0x50c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSuspensionHeightOffset = 0x510; // float32 m_flSuspensionHeightOffset; |  0x510 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnableSuspensionLimit = 0x514; // bool m_bEnableSuspensionLimit; |  0x514 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMinSuspensionOffset = 0x518; // float32 m_flMinSuspensionOffset; |  0x518 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxSuspensionOffset = 0x51c; // float32 m_flMaxSuspensionOffset; |  0x51c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnableSteeringLimit = 0x520; // bool m_bEnableSteeringLimit; |  0x520 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMinSteeringAngle = 0x524; // float32 m_flMinSteeringAngle; |  0x524 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxSteeringAngle = 0x528; // float32 m_flMaxSteeringAngle; |  0x528 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSteeringAxisFriction = 0x52c; // float32 m_flSteeringAxisFriction; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSpinAxisFriction = 0x530; // float32 m_flSpinAxisFriction; |  0x530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hSteeringMimicsEntity = 0x534; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

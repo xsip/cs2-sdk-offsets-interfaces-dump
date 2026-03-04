@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class FilterDamageType : public CS2::server::CBaseFilter {
 		public:
-			int32_t m_iDamageType; // 0x548 | Schema_Builtin | Size: 0x4
+			int32_t m_iDamageType; // 0x4e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::FilterDamageType, m_iDamageType) == 0x548, "m_iDamageType in FilterDamageType should be at offset 0x548");
-		static_assert(sizeof(CS2::server::FilterDamageType) == 0x550, "FilterDamageType size should be 0x550");
+		static_assert(offsetof(CS2::server::FilterDamageType, m_iDamageType) == 0x4E0, "m_iDamageType in FilterDamageType should be at offset 0x4E0");
+		static_assert(sizeof(CS2::server::FilterDamageType) == 0x4E8, "FilterDamageType size should be 0x4E8");
 	}
 }

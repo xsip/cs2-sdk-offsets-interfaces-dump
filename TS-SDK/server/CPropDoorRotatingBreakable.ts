@@ -1,12 +1,12 @@
 // generated - do not edit!
 
 import {server_CPropDoorRotating} from './CPropDoorRotating';
-// Class size: 0x10B0
+// Class size: 0xF10
 // BaseClass: : public CS2::server::CPropDoorRotating
 export const server_CPropDoorRotatingBreakable  = {
 	...server_CPropDoorRotating,
-	m_bBreakable: 4240n, // bool m_bBreakable; |  0x1090 | Schema_Builtin | Size: 0x1
-	m_isAbleToCloseAreaPortals: 4241n, // bool m_isAbleToCloseAreaPortals; |  0x1091 | Schema_Builtin | Size: 0x1
-	m_currentDamageState: 4244n, // int32_t m_currentDamageState; |  0x1094 | Schema_Builtin | Size: 0x4
-	m_damageStates: 4248n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
+	m_bBreakable: 3824n, // bool m_bBreakable; |  0xef0 | Schema_Builtin | Size: 0x1
+	m_isAbleToCloseAreaPortals: 3825n, // bool m_isAbleToCloseAreaPortals; |  0xef1 | Schema_Builtin | Size: 0x1
+	m_currentDamageState: 3828n, // int32_t m_currentDamageState; |  0xef4 | Schema_Builtin | Size: 0x4
+	m_damageStates: 3832n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 }

@@ -22,6 +22,6 @@ namespace CS2 {
 		class CWeaponBizon : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CWeaponBizon) == 0x11F0, "CWeaponBizon size should be 0x11F0");
+		static_assert(sizeof(CS2::server::CWeaponBizon) == 0x1150, "CWeaponBizon size should be 0x1150");
 	}
 }

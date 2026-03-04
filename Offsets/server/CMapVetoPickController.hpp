@@ -8,32 +8,32 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xF18
+			// Class size: 0xEA8
 			namespace CMapVetoPickController /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_bPlayedIntroVcd = 0x4f0; // bool m_bPlayedIntroVcd; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNeedToPlayFiveSecondsRemaining = 0x4f1; // bool m_bNeedToPlayFiveSecondsRemaining; |  0x4f1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_dblPreMatchDraftSequenceTime = 0x510; // float64 m_dblPreMatchDraftSequenceTime; |  0x510 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_bPreMatchDraftStateChanged = 0x518; // bool m_bPreMatchDraftStateChanged; |  0x518 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nDraftType = 0x51c; // int32_t m_nDraftType; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTeamWinningCoinToss = 0x520; // int32_t m_nTeamWinningCoinToss; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTeamWithFirstChoice = 0x524; // int32_t m_nTeamWithFirstChoice[64]; |  0x524 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nVoteMapIdsList = 0x624; // int32_t m_nVoteMapIdsList[7]; |  0x624 | Schema_FixedArray | Size: 0x1c
-				constexpr std::ptrdiff_t m_nAccountIDs = 0x640; // int32_t m_nAccountIDs[64]; |  0x640 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nMapId0 = 0x740; // int32_t m_nMapId0[64]; |  0x740 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nMapId1 = 0x840; // int32_t m_nMapId1[64]; |  0x840 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nMapId2 = 0x940; // int32_t m_nMapId2[64]; |  0x940 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nMapId3 = 0xa40; // int32_t m_nMapId3[64]; |  0xa40 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nMapId4 = 0xb40; // int32_t m_nMapId4[64]; |  0xb40 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nMapId5 = 0xc40; // int32_t m_nMapId5[64]; |  0xc40 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nStartingSide0 = 0xd40; // int32_t m_nStartingSide0[64]; |  0xd40 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nCurrentPhase = 0xe40; // int32_t m_nCurrentPhase; |  0xe40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nPhaseStartTick = 0xe44; // int32_t m_nPhaseStartTick; |  0xe44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nPhaseDurationTicks = 0xe48; // int32_t m_nPhaseDurationTicks; |  0xe48 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnMapVetoed = 0xe50; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMapPicked = 0xe78; // GlobalTypes::CEntityOutputTemplate<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnSidesPicked = 0xea0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnNewPhaseStarted = 0xec8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnLevelTransition = 0xef0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+				constexpr std::ptrdiff_t m_bPlayedIntroVcd = 0x4a8; // bool m_bPlayedIntroVcd; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNeedToPlayFiveSecondsRemaining = 0x4a9; // bool m_bNeedToPlayFiveSecondsRemaining; |  0x4a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_dblPreMatchDraftSequenceTime = 0x4c8; // float64 m_dblPreMatchDraftSequenceTime; |  0x4c8 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_bPreMatchDraftStateChanged = 0x4d0; // bool m_bPreMatchDraftStateChanged; |  0x4d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nDraftType = 0x4d4; // int32_t m_nDraftType; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTeamWinningCoinToss = 0x4d8; // int32_t m_nTeamWinningCoinToss; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nTeamWithFirstChoice = 0x4dc; // int32_t m_nTeamWithFirstChoice[64]; |  0x4dc | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nVoteMapIdsList = 0x5dc; // int32_t m_nVoteMapIdsList[7]; |  0x5dc | Schema_FixedArray | Size: 0x1c
+				constexpr std::ptrdiff_t m_nAccountIDs = 0x5f8; // int32_t m_nAccountIDs[64]; |  0x5f8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nMapId0 = 0x6f8; // int32_t m_nMapId0[64]; |  0x6f8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nMapId1 = 0x7f8; // int32_t m_nMapId1[64]; |  0x7f8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nMapId2 = 0x8f8; // int32_t m_nMapId2[64]; |  0x8f8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nMapId3 = 0x9f8; // int32_t m_nMapId3[64]; |  0x9f8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nMapId4 = 0xaf8; // int32_t m_nMapId4[64]; |  0xaf8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nMapId5 = 0xbf8; // int32_t m_nMapId5[64]; |  0xbf8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nStartingSide0 = 0xcf8; // int32_t m_nStartingSide0[64]; |  0xcf8 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nCurrentPhase = 0xdf8; // int32_t m_nCurrentPhase; |  0xdf8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nPhaseStartTick = 0xdfc; // int32_t m_nPhaseStartTick; |  0xdfc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nPhaseDurationTicks = 0xe00; // int32_t m_nPhaseDurationTicks; |  0xe00 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OnMapVetoed = 0xe08; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMapPicked = 0xe28; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnSidesPicked = 0xe48; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnNewPhaseStarted = 0xe68; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnLevelTransition = 0xe88; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
 			}
 		}
 	}

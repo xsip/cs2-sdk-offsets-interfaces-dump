@@ -8,26 +8,27 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x710
+			// Class size: 0x678
 			namespace CPhysHinge /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_soundInfo = 0x568; // server::ConstraintSoundInfo  | Schema_DeclaredClass | Size: 0x98
-				constexpr std::ptrdiff_t m_NotifyMinLimitReached = 0x600; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_NotifyMaxLimitReached = 0x628; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bAtMinLimit = 0x650; // bool m_bAtMinLimit; |  0x650 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bAtMaxLimit = 0x651; // bool m_bAtMaxLimit; |  0x651 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hinge = 0x654; // vphysics2::constraint_hingeparams_t  | Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_hingeFriction = 0x694; // float32 m_hingeFriction; |  0x694 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_systemLoadScale = 0x698; // float32 m_systemLoadScale; |  0x698 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsAxisLocal = 0x69c; // bool m_bIsAxisLocal; |  0x69c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMinRotation = 0x6a0; // float32 m_flMinRotation; |  0x6a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaxRotation = 0x6a4; // float32 m_flMaxRotation; |  0x6a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInitialRotation = 0x6a8; // float32 m_flInitialRotation; |  0x6a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMotorFrequency = 0x6ac; // float32 m_flMotorFrequency; |  0x6ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMotorDampingRatio = 0x6b0; // float32 m_flMotorDampingRatio; |  0x6b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngleSpeed = 0x6b4; // float32 m_flAngleSpeed; |  0x6b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngleSpeedThreshold = 0x6b8; // float32 m_flAngleSpeedThreshold; |  0x6b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OnStartMoving = 0x6c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnStopMoving = 0x6e8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_soundInfo = 0x510; // server::ConstraintSoundInfo  | Schema_DeclaredClass | Size: 0x98
+				constexpr std::ptrdiff_t m_NotifyMinLimitReached = 0x5a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_NotifyMaxLimitReached = 0x5c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bAtMinLimit = 0x5d8; // bool m_bAtMinLimit; |  0x5d8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bAtMaxLimit = 0x5d9; // bool m_bAtMaxLimit; |  0x5d9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hinge = 0x5dc; // vphysics2::constraint_hingeparams_t  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_hingeFriction = 0x61c; // float32 m_hingeFriction; |  0x61c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_systemLoadScale = 0x620; // float32 m_systemLoadScale; |  0x620 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsAxisLocal = 0x624; // bool m_bIsAxisLocal; |  0x624 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMinRotation = 0x628; // float32 m_flMinRotation; |  0x628 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaxRotation = 0x62c; // float32 m_flMaxRotation; |  0x62c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInitialRotation = 0x630; // float32 m_flInitialRotation; |  0x630 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMotorFrequency = 0x634; // float32 m_flMotorFrequency; |  0x634 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMotorDampingRatio = 0x638; // float32 m_flMotorDampingRatio; |  0x638 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngleSpeed = 0x63c; // float32 m_flAngleSpeed; |  0x63c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngleSpeedThreshold = 0x640; // float32 m_flAngleSpeedThreshold; |  0x640 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLimitsDebugVisRotation = 0x644; // float32 m_flLimitsDebugVisRotation; |  0x644 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OnStartMoving = 0x648; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnStopMoving = 0x660; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

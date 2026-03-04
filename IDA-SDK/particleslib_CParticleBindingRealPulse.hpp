@@ -4,6 +4,6 @@
 
 
 class particleslib_CParticleBindingRealPulse {
-    char pad_2700[0x118];
-    char pad_1693[0x20];
+    char pad_2797[0x118];
+    char pad_589[0x20];
 };

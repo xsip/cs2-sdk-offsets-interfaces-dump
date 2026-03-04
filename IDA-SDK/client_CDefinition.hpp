@@ -4,7 +4,9 @@
 
 
 class client_CDefinition {
-    char vTable1016[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     int16_t m_nEnabledNodeIdx;
     int16_t m_nLockLeftHandNodeIdx;
     float32 m_flBlendTimeSeconds;

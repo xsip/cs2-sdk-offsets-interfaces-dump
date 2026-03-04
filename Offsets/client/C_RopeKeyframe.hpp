@@ -8,44 +8,44 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1220
+			// Class size: 0x11F8
 			namespace C_RopeKeyframe /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_LinksTouchingSomething = 0xeb8; // GlobalTypes::CBitVec  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nLinksTouchingSomething = 0xebc; // int32_t m_nLinksTouchingSomething; |  0xebc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bApplyWind = 0xec0; // bool m_bApplyWind; |  0xec0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fPrevLockedPoints = 0xec4; // int32_t m_fPrevLockedPoints; |  0xec4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iForcePointMoveCounter = 0xec8; // int32_t m_iForcePointMoveCounter; |  0xec8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPrevEndPointPos = 0xecc; // bool m_bPrevEndPointPos[2]; |  0xecc | Schema_FixedArray | Size: 0x2
-				constexpr std::ptrdiff_t m_vPrevEndPointPos = 0xed0; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_flCurScroll = 0xee8; // float32 m_flCurScroll; |  0xee8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flScrollSpeed = 0xeec; // float32 m_flScrollSpeed; |  0xeec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_RopeFlags = 0xef0; // uint16_t m_RopeFlags; |  0xef0 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_iRopeMaterialModelIndex = 0xef8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nSegments = 0x1170; // uint8_t m_nSegments; |  0x1170 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hStartPoint = 0x1174; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hEndPoint = 0x1178; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iStartAttachment = 0x117c; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_iEndAttachment = 0x117d; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_Subdiv = 0x117e; // uint8_t m_Subdiv; |  0x117e | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RopeLength = 0x1180; // int16_t m_RopeLength; |  0x1180 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_Slack = 0x1182; // int16_t m_Slack; |  0x1182 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_TextureScale = 0x1184; // float32 m_TextureScale; |  0x1184 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fLockedPoints = 0x1188; // uint8_t m_fLockedPoints; |  0x1188 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nChangeCount = 0x1189; // uint8_t m_nChangeCount; |  0x1189 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Width = 0x118c; // float32 m_Width; |  0x118c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_PhysicsDelegate = 0x1190; // client::C_RopeKeyframe::CPhysicsDelegate  | Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_hMaterial = 0x11a0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_TextureHeight = 0x11a8; // int32_t m_TextureHeight; |  0x11a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecImpulse = 0x11ac; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPreviousImpulse = 0x11b8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flCurrentGustTimer = 0x11c4; // float32 m_flCurrentGustTimer; |  0x11c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCurrentGustLifetime = 0x11c8; // float32 m_flCurrentGustLifetime; |  0x11c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeToNextGust = 0x11cc; // float32 m_flTimeToNextGust; |  0x11cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vWindDir = 0x11d0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vColorMod = 0x11dc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vCachedEndPointAttachmentPos = 0x11e8; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_vCachedEndPointAttachmentAngle = 0x1200; // GlobalTypes::QAngle[2]  | Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_bConstrainBetweenEndpoints = 0x1218; // bool m_bConstrainBetweenEndpoints; |  0x1218 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_LinksTouchingSomething = 0xe90; // GlobalTypes::CBitVec  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nLinksTouchingSomething = 0xe94; // int32_t m_nLinksTouchingSomething; |  0xe94 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bApplyWind = 0xe98; // bool m_bApplyWind; |  0xe98 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fPrevLockedPoints = 0xe9c; // int32_t m_fPrevLockedPoints; |  0xe9c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iForcePointMoveCounter = 0xea0; // int32_t m_iForcePointMoveCounter; |  0xea0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPrevEndPointPos = 0xea4; // bool m_bPrevEndPointPos[2]; |  0xea4 | Schema_FixedArray | Size: 0x2
+				constexpr std::ptrdiff_t m_vPrevEndPointPos = 0xea8; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_flCurScroll = 0xec0; // float32 m_flCurScroll; |  0xec0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flScrollSpeed = 0xec4; // float32 m_flScrollSpeed; |  0xec4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_RopeFlags = 0xec8; // uint16_t m_RopeFlags; |  0xec8 | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_iRopeMaterialModelIndex = 0xed0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nSegments = 0x1148; // uint8_t m_nSegments; |  0x1148 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hStartPoint = 0x114c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hEndPoint = 0x1150; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iStartAttachment = 0x1154; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_iEndAttachment = 0x1155; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_Subdiv = 0x1156; // uint8_t m_Subdiv; |  0x1156 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_RopeLength = 0x1158; // int16_t m_RopeLength; |  0x1158 | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_Slack = 0x115a; // int16_t m_Slack; |  0x115a | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_TextureScale = 0x115c; // float32 m_TextureScale; |  0x115c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fLockedPoints = 0x1160; // uint8_t m_fLockedPoints; |  0x1160 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nChangeCount = 0x1161; // uint8_t m_nChangeCount; |  0x1161 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Width = 0x1164; // float32 m_Width; |  0x1164 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_PhysicsDelegate = 0x1168; // client::C_RopeKeyframe::CPhysicsDelegate  | Schema_DeclaredClass | Size: 0x10
+				constexpr std::ptrdiff_t m_hMaterial = 0x1178; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_TextureHeight = 0x1180; // int32_t m_TextureHeight; |  0x1180 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecImpulse = 0x1184; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPreviousImpulse = 0x1190; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flCurrentGustTimer = 0x119c; // float32 m_flCurrentGustTimer; |  0x119c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCurrentGustLifetime = 0x11a0; // float32 m_flCurrentGustLifetime; |  0x11a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeToNextGust = 0x11a4; // float32 m_flTimeToNextGust; |  0x11a4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vWindDir = 0x11a8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vColorMod = 0x11b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vCachedEndPointAttachmentPos = 0x11c0; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_vCachedEndPointAttachmentAngle = 0x11d8; // GlobalTypes::QAngle[2]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_bConstrainBetweenEndpoints = 0x11f0; // bool m_bConstrainBetweenEndpoints; |  0x11f0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -4,7 +4,7 @@
 
 
 class smartprops_CSmartPropSelectionCriteria_LinearLength {
-    char vTable2573[0x8];
+    void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
     CSmartPropAttributeFloat m_flLength;
     CSmartPropAttributeBool m_bAllowScale;

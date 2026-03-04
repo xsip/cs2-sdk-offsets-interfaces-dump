@@ -23,6 +23,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 		};
-		static_assert(sizeof(CS2::client::CCSPlayer_GlowServices) == 0x48, "CCSPlayer_GlowServices size should be 0x48");
+		static_assert(sizeof(CS2::client::CCSPlayer_GlowServices) == 0x50, "CCSPlayer_GlowServices size should be 0x50");
 	}
 }

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x860
+			// Class size: 0x758
 			namespace CLogicNPCCounterAABB /*: public CS2::server::CLogicNPCCounter*/ {
-				constexpr std::ptrdiff_t m_vDistanceOuterMins = 0x830; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDistanceOuterMaxs = 0x83c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOuterMins = 0x848; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOuterMaxs = 0x854; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceOuterMins = 0x728; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceOuterMaxs = 0x734; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOuterMins = 0x740; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOuterMaxs = 0x74c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

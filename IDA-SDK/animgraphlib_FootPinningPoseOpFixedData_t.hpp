@@ -11,5 +11,5 @@ class animgraphlib_FootPinningPoseOpFixedData_t {
     int32_t m_nHipBoneIndex;
     bool m_bApplyLegTwistLimits;
     bool m_bApplyFootRotationLimits;
-    char end_pad_266[0x6];
+    char end_pad_291[0x6];
 };

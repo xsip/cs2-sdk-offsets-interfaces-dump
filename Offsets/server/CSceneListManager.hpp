@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5C8
+			// Class size: 0x580
 			namespace CSceneListManager /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_hListManagers = 0x4f0; // server::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_iszScenes = 0x508; // GlobalTypes::CUtlSymbolLarge[16]  | Schema_FixedArray | Size: 0x80
-				constexpr std::ptrdiff_t m_hScenes = 0x588; // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_hListManagers = 0x4a8; // server::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iszScenes = 0x4c0; // GlobalTypes::CUtlSymbolLarge[16]  | Schema_FixedArray | Size: 0x80
+				constexpr std::ptrdiff_t m_hScenes = 0x540; // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x40
 			}
 		}
 	}

@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeProceduralTestResource_t {
-    char pad_2413[0x1];
+    char pad_1309[0x1];
 };

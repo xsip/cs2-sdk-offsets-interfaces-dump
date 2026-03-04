@@ -22,25 +22,25 @@ namespace CS2 {
 		class CPhysicsSpring : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x8);
-			float32 m_flFrequency; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flDampingRatio; // 0x4fc | Schema_Builtin | Size: 0x4
-			float32 m_flRestLength; // 0x500 | Schema_Builtin | Size: 0x4
+			float32 m_flFrequency; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flDampingRatio; // 0x4b4 | Schema_Builtin | Size: 0x4
+			float32 m_flRestLength; // 0x4b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_nameAttachStart; // 0x508 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_nameAttachEnd; // 0x510 | Schema_Atomic | Size: 0x8
-			GlobalTypes::VectorWS m_start; // 0x518 | Schema_Atomic | Size: 0xc
-			GlobalTypes::VectorWS m_end; // 0x524 | Schema_Atomic | Size: 0xc
-			uint32_t m_teleportTick; // 0x530 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_nameAttachStart; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_nameAttachEnd; // 0x4c8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::VectorWS m_start; // 0x4d0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_end; // 0x4dc | Schema_Atomic | Size: 0xc
+			uint32_t m_teleportTick; // 0x4e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flFrequency) == 0x4F8, "m_flFrequency in CPhysicsSpring should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flDampingRatio) == 0x4FC, "m_flDampingRatio in CPhysicsSpring should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flRestLength) == 0x500, "m_flRestLength in CPhysicsSpring should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_nameAttachStart) == 0x508, "m_nameAttachStart in CPhysicsSpring should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_nameAttachEnd) == 0x510, "m_nameAttachEnd in CPhysicsSpring should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_start) == 0x518, "m_start in CPhysicsSpring should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_end) == 0x524, "m_end in CPhysicsSpring should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CPhysicsSpring, m_teleportTick) == 0x530, "m_teleportTick in CPhysicsSpring should be at offset 0x530");
-		static_assert(sizeof(CS2::server::CPhysicsSpring) == 0x538, "CPhysicsSpring size should be 0x538");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flFrequency) == 0x4B0, "m_flFrequency in CPhysicsSpring should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flDampingRatio) == 0x4B4, "m_flDampingRatio in CPhysicsSpring should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flRestLength) == 0x4B8, "m_flRestLength in CPhysicsSpring should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_nameAttachStart) == 0x4C0, "m_nameAttachStart in CPhysicsSpring should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_nameAttachEnd) == 0x4C8, "m_nameAttachEnd in CPhysicsSpring should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_start) == 0x4D0, "m_start in CPhysicsSpring should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_end) == 0x4DC, "m_end in CPhysicsSpring should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CPhysicsSpring, m_teleportTick) == 0x4E8, "m_teleportTick in CPhysicsSpring should be at offset 0x4E8");
+		static_assert(sizeof(CS2::server::CPhysicsSpring) == 0x4F0, "CPhysicsSpring size should be 0x4F0");
 	}
 }

@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeCoordinateSpace {
-    char pad_2546[0x40];
+    char pad_2622[0x40];
 };

@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x308
+			// Class size: 0x310
 			namespace CCSPlayer_ActionTrackingServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_hLastWeaponBeforeC4AutoSwitch = 0x1f0; // GlobalTypes::CHandle<server::CBasePlayerWeapon>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsRescuing = 0x21c; // bool m_bIsRescuing; |  0x21c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_weaponPurchasesThisMatch = 0x220; // server::WeaponPurchaseTracker_t  | Schema_DeclaredClass | Size: 0x70
-				constexpr std::ptrdiff_t m_weaponPurchasesThisRound = 0x290; // server::WeaponPurchaseTracker_t  | Schema_DeclaredClass | Size: 0x70
+				constexpr std::ptrdiff_t m_hLastWeaponBeforeC4AutoSwitch = 0x1f8; // GlobalTypes::CHandle<server::CBasePlayerWeapon>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsRescuing = 0x224; // bool m_bIsRescuing; |  0x224 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_weaponPurchasesThisMatch = 0x228; // server::WeaponPurchaseTracker_t  | Schema_DeclaredClass | Size: 0x70
+				constexpr std::ptrdiff_t m_weaponPurchasesThisRound = 0x298; // server::WeaponPurchaseTracker_t  | Schema_DeclaredClass | Size: 0x70
 			}
 		}
 	}

@@ -21,18 +21,18 @@ namespace CS2 {
 	namespace server {
 		class CFuncTimescale : public CS2::server::CBaseEntity {
 		public:
-			float32 m_flDesiredTimescale; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_flAcceleration; // 0x4f4 | Schema_Builtin | Size: 0x4
-			float32 m_flMinBlendRate; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flBlendDeltaMultiplier; // 0x4fc | Schema_Builtin | Size: 0x4
-			bool m_isStarted; // 0x500 | Schema_Builtin | Size: 0x1
+			float32 m_flDesiredTimescale; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_flAcceleration; // 0x4ac | Schema_Builtin | Size: 0x4
+			float32 m_flMinBlendRate; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flBlendDeltaMultiplier; // 0x4b4 | Schema_Builtin | Size: 0x4
+			bool m_isStarted; // 0x4b8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncTimescale, m_flDesiredTimescale) == 0x4F0, "m_flDesiredTimescale in CFuncTimescale should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CFuncTimescale, m_flAcceleration) == 0x4F4, "m_flAcceleration in CFuncTimescale should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CFuncTimescale, m_flMinBlendRate) == 0x4F8, "m_flMinBlendRate in CFuncTimescale should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CFuncTimescale, m_flBlendDeltaMultiplier) == 0x4FC, "m_flBlendDeltaMultiplier in CFuncTimescale should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CFuncTimescale, m_isStarted) == 0x500, "m_isStarted in CFuncTimescale should be at offset 0x500");
-		static_assert(sizeof(CS2::server::CFuncTimescale) == 0x508, "CFuncTimescale size should be 0x508");
+		static_assert(offsetof(CS2::server::CFuncTimescale, m_flDesiredTimescale) == 0x4A8, "m_flDesiredTimescale in CFuncTimescale should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CFuncTimescale, m_flAcceleration) == 0x4AC, "m_flAcceleration in CFuncTimescale should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CFuncTimescale, m_flMinBlendRate) == 0x4B0, "m_flMinBlendRate in CFuncTimescale should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CFuncTimescale, m_flBlendDeltaMultiplier) == 0x4B4, "m_flBlendDeltaMultiplier in CFuncTimescale should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CFuncTimescale, m_isStarted) == 0x4B8, "m_isStarted in CFuncTimescale should be at offset 0x4B8");
+		static_assert(sizeof(CS2::server::CFuncTimescale) == 0x4C0, "CFuncTimescale size should be 0x4C0");
 	}
 }

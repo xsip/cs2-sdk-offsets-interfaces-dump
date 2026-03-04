@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CPointEntity.hpp>
+#include <SDK/entity2/CVariantDefaultAllocator.hpp>
 
 
 
@@ -21,12 +22,12 @@ namespace CS2 {
 	namespace server {
 		class CTankTargetChange : public CS2::server::CPointEntity {
 		public:
-			// GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator> m_newTarget; // 0x4f0 | Schema_Atomic | Size: 0x10
-			char  m_newTarget[0x10]; // 0x4f0 | Schema_Atomic | Size: 0x10
-			GlobalTypes::CUtlSymbolLarge m_newTargetName; // 0x500 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator> m_newTarget; // 0x4a8 | Schema_Atomic | Size: 0x10
+			char m_newTarget[0x10]; // 0x4a8 | Schema_Atomic | Size: 0x10
+			GlobalTypes::CUtlSymbolLarge m_newTargetName; // 0x4b8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CTankTargetChange, m_newTarget) == 0x4F0, "m_newTarget in CTankTargetChange should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CTankTargetChange, m_newTargetName) == 0x500, "m_newTargetName in CTankTargetChange should be at offset 0x500");
-		static_assert(sizeof(CS2::server::CTankTargetChange) == 0x508, "CTankTargetChange size should be 0x508");
+		static_assert(offsetof(CS2::server::CTankTargetChange, m_newTarget) == 0x4A8, "m_newTarget in CTankTargetChange should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CTankTargetChange, m_newTargetName) == 0x4B8, "m_newTargetName in CTankTargetChange should be at offset 0x4B8");
+		static_assert(sizeof(CS2::server::CTankTargetChange) == 0x4C0, "CTankTargetChange size should be 0x4C0");
 	}
 }

@@ -23,25 +23,25 @@ namespace CS2 {
 	namespace server {
 		class CPathTrack : public CS2::server::CPointEntity {
 		public:
-			server::CPathTrack* m_pnext; // 0x4f0 | Schema_Ptr | Size: 0x8
-			server::CPathTrack* m_pprevious; // 0x4f8 | Schema_Ptr | Size: 0x8
-			server::CPathTrack* m_paltpath; // 0x500 | Schema_Ptr | Size: 0x8
-			float32 m_flRadius; // 0x508 | Schema_Builtin | Size: 0x4
-			float32 m_length; // 0x50c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_altName; // 0x510 | Schema_Atomic | Size: 0x8
-			int32_t m_nIterVal; // 0x518 | Schema_Builtin | Size: 0x4
-			server::TrackOrientationType_t m_eOrientationType; // 0x51c | Schema_DeclaredEnum | Size: 0x4
-			entity2::CEntityIOOutput m_OnPass; // 0x520 | Schema_DeclaredClass | Size: 0x28
+			server::CPathTrack* m_pnext; // 0x4a8 | Schema_Ptr | Size: 0x8
+			server::CPathTrack* m_pprevious; // 0x4b0 | Schema_Ptr | Size: 0x8
+			server::CPathTrack* m_paltpath; // 0x4b8 | Schema_Ptr | Size: 0x8
+			float32 m_flRadius; // 0x4c0 | Schema_Builtin | Size: 0x4
+			float32 m_length; // 0x4c4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_altName; // 0x4c8 | Schema_Atomic | Size: 0x8
+			int32_t m_nIterVal; // 0x4d0 | Schema_Builtin | Size: 0x4
+			server::TrackOrientationType_t m_eOrientationType; // 0x4d4 | Schema_DeclaredEnum | Size: 0x4
+			entity2::CEntityIOOutput m_OnPass; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CPathTrack, m_pnext) == 0x4F0, "m_pnext in CPathTrack should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPathTrack, m_pprevious) == 0x4F8, "m_pprevious in CPathTrack should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPathTrack, m_paltpath) == 0x500, "m_paltpath in CPathTrack should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPathTrack, m_flRadius) == 0x508, "m_flRadius in CPathTrack should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPathTrack, m_length) == 0x50C, "m_length in CPathTrack should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPathTrack, m_altName) == 0x510, "m_altName in CPathTrack should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPathTrack, m_nIterVal) == 0x518, "m_nIterVal in CPathTrack should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CPathTrack, m_eOrientationType) == 0x51C, "m_eOrientationType in CPathTrack should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CPathTrack, m_OnPass) == 0x520, "m_OnPass in CPathTrack should be at offset 0x520");
-		static_assert(sizeof(CS2::server::CPathTrack) == 0x548, "CPathTrack size should be 0x548");
+		static_assert(offsetof(CS2::server::CPathTrack, m_pnext) == 0x4A8, "m_pnext in CPathTrack should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPathTrack, m_pprevious) == 0x4B0, "m_pprevious in CPathTrack should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPathTrack, m_paltpath) == 0x4B8, "m_paltpath in CPathTrack should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPathTrack, m_flRadius) == 0x4C0, "m_flRadius in CPathTrack should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPathTrack, m_length) == 0x4C4, "m_length in CPathTrack should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPathTrack, m_altName) == 0x4C8, "m_altName in CPathTrack should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPathTrack, m_nIterVal) == 0x4D0, "m_nIterVal in CPathTrack should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CPathTrack, m_eOrientationType) == 0x4D4, "m_eOrientationType in CPathTrack should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CPathTrack, m_OnPass) == 0x4D8, "m_OnPass in CPathTrack should be at offset 0x4D8");
+		static_assert(sizeof(CS2::server::CPathTrack) == 0x4F0, "CPathTrack size should be 0x4F0");
 	}
 }

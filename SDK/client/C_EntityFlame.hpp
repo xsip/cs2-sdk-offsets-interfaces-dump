@@ -21,17 +21,17 @@ namespace CS2 {
 	namespace client {
 		class C_EntityFlame : public CS2::client::C_BaseEntity {
 		public:
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hEntAttached; // 0x5f8 | Schema_Atomic | Size: 0x4
-			// char  m_hEntAttached[0x4]; // 0x5f8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hEntAttached; // 0x608 | Schema_Atomic | Size: 0x4
+			// char m_hEntAttached[0x4]; // 0x608 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x24);
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hOldAttached; // 0x620 | Schema_Atomic | Size: 0x4
-			// char  m_hOldAttached[0x4]; // 0x620 | Schema_Atomic | Size: 0x4
-			bool m_bCheapEffect; // 0x624 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hOldAttached; // 0x630 | Schema_Atomic | Size: 0x4
+			// char m_hOldAttached[0x4]; // 0x630 | Schema_Atomic | Size: 0x4
+			bool m_bCheapEffect; // 0x634 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1b); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_EntityFlame, m_hEntAttached) == 0x5F8, "m_hEntAttached in C_EntityFlame should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_EntityFlame, m_hOldAttached) == 0x620, "m_hOldAttached in C_EntityFlame should be at offset 0x620");
-		static_assert(offsetof(CS2::client::C_EntityFlame, m_bCheapEffect) == 0x624, "m_bCheapEffect in C_EntityFlame should be at offset 0x624");
-		static_assert(sizeof(CS2::client::C_EntityFlame) == 0x640, "C_EntityFlame size should be 0x640");
+		static_assert(offsetof(CS2::client::C_EntityFlame, m_hEntAttached) == 0x608, "m_hEntAttached in C_EntityFlame should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_EntityFlame, m_hOldAttached) == 0x630, "m_hOldAttached in C_EntityFlame should be at offset 0x630");
+		static_assert(offsetof(CS2::client::C_EntityFlame, m_bCheapEffect) == 0x634, "m_bCheapEffect in C_EntityFlame should be at offset 0x634");
+		static_assert(sizeof(CS2::client::C_EntityFlame) == 0x650, "C_EntityFlame size should be 0x650");
 	}
 }

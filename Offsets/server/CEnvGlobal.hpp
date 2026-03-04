@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x530
+			// Class size: 0x4E0
 			namespace CEnvGlobal /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_outCounter = 0x4f0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_globalstate = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_triggermode = 0x520; // int32_t m_triggermode; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_initialstate = 0x524; // int32_t m_initialstate; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_counter = 0x528; // int32_t m_counter; |  0x528 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_outCounter = 0x4a8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_globalstate = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_triggermode = 0x4d0; // int32_t m_triggermode; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_initialstate = 0x4d4; // int32_t m_initialstate; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_counter = 0x4d8; // int32_t m_counter; |  0x4d8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

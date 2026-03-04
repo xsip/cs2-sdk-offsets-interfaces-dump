@@ -26,25 +26,25 @@ namespace CS2 {
 	namespace server {
 		class CPointPush : public CS2::server::CPointEntity {
 		public:
-			bool m_bEnabled; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bEnabled; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flMagnitude; // 0x4f4 | Schema_Builtin | Size: 0x4
-			float32 m_flRadius; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flInnerRadius; // 0x4fc | Schema_Builtin | Size: 0x4
-			float32 m_flConeOfInfluence; // 0x500 | Schema_Builtin | Size: 0x4
+			float32 m_flMagnitude; // 0x4ac | Schema_Builtin | Size: 0x4
+			float32 m_flRadius; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flInnerRadius; // 0x4b4 | Schema_Builtin | Size: 0x4
+			float32 m_flConeOfInfluence; // 0x4b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszFilterName; // 0x508 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x510 | Schema_Atomic | Size: 0x4
-			// char  m_hFilter[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszFilterName; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x4c8 | Schema_Atomic | Size: 0x4
+			// char m_hFilter[0x4]; // 0x4c8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPointPush, m_bEnabled) == 0x4F0, "m_bEnabled in CPointPush should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointPush, m_flMagnitude) == 0x4F4, "m_flMagnitude in CPointPush should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CPointPush, m_flRadius) == 0x4F8, "m_flRadius in CPointPush should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPointPush, m_flInnerRadius) == 0x4FC, "m_flInnerRadius in CPointPush should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CPointPush, m_flConeOfInfluence) == 0x500, "m_flConeOfInfluence in CPointPush should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPointPush, m_iszFilterName) == 0x508, "m_iszFilterName in CPointPush should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPointPush, m_hFilter) == 0x510, "m_hFilter in CPointPush should be at offset 0x510");
-		static_assert(sizeof(CS2::server::CPointPush) == 0x518, "CPointPush size should be 0x518");
+		static_assert(offsetof(CS2::server::CPointPush, m_bEnabled) == 0x4A8, "m_bEnabled in CPointPush should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointPush, m_flMagnitude) == 0x4AC, "m_flMagnitude in CPointPush should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CPointPush, m_flRadius) == 0x4B0, "m_flRadius in CPointPush should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPointPush, m_flInnerRadius) == 0x4B4, "m_flInnerRadius in CPointPush should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CPointPush, m_flConeOfInfluence) == 0x4B8, "m_flConeOfInfluence in CPointPush should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPointPush, m_iszFilterName) == 0x4C0, "m_iszFilterName in CPointPush should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPointPush, m_hFilter) == 0x4C8, "m_hFilter in CPointPush should be at offset 0x4C8");
+		static_assert(sizeof(CS2::server::CPointPush) == 0x4D0, "CPointPush size should be 0x4D0");
 	}
 }

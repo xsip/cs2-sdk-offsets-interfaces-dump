@@ -8,5 +8,5 @@ class animationsystem_CAnimActivity {
     int32_t m_nActivity;
     int32_t m_nFlags;
     int32_t m_nWeight;
-    char end_pad_416[0x4];
+    char end_pad_422[0x4];
 };

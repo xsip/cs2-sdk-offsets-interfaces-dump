@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xA8
+			// Class size: 0xB0
 			namespace CCSPlayer_BuyServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_vecSellbackPurchaseEntries = 0x40; // client::C_UtlVectorEmbeddedNetworkVar<client::SellbackPurchaseEntry_t>  | Schema_Atomic | Size: 0x68
+				constexpr std::ptrdiff_t m_vecSellbackPurchaseEntries = 0x48; // client::C_UtlVectorEmbeddedNetworkVar<client::SellbackPurchaseEntry_t>  | Schema_Atomic | Size: 0x68
 			}
 		}
 	}

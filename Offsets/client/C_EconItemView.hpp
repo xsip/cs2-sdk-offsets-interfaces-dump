@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x478
+			// Class size: 0x470
 			namespace C_EconItemView /*: public CS2::client::IEconItemInterface*/ {
 				constexpr std::ptrdiff_t m_bInventoryImageRgbaRequested = 0x60; // bool m_bInventoryImageRgbaRequested; |  0x60 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bInventoryImageTriedCache = 0x61; // bool m_bInventoryImageTriedCache; |  0x61 | Schema_Builtin | Size: 0x1
@@ -34,11 +34,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iOriginOverride = 0x1f8; // int32_t m_iOriginOverride; |  0x1f8 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_ubStyleOverride = 0x1fc; // uint8_t m_ubStyleOverride; |  0x1fc | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_unClientFlags = 0x1fd; // uint8_t m_unClientFlags; |  0x1fd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_AttributeList = 0x210; // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_NetworkedDynamicAttributes = 0x288; // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_szCustomName = 0x300; // char m_szCustomName[161]; |  0x300 | Schema_FixedArray | Size: 0xa1
-				constexpr std::ptrdiff_t m_szCustomNameOverride = 0x3a1; // char m_szCustomNameOverride[161]; |  0x3a1 | Schema_FixedArray | Size: 0xa1
-				constexpr std::ptrdiff_t m_bInitializedTags = 0x470; // bool m_bInitializedTags; |  0x470 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_AttributeList = 0x208; // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_NetworkedDynamicAttributes = 0x280; // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_szCustomName = 0x2f8; // char m_szCustomName[161]; |  0x2f8 | Schema_FixedArray | Size: 0xa1
+				constexpr std::ptrdiff_t m_szCustomNameOverride = 0x399; // char m_szCustomNameOverride[161]; |  0x399 | Schema_FixedArray | Size: 0xa1
+				constexpr std::ptrdiff_t m_bInitializedTags = 0x468; // bool m_bInitializedTags; |  0x468 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

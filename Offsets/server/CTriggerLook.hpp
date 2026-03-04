@@ -8,23 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA68
+			// Class size: 0x910
 			namespace CTriggerLook /*: public CS2::server::CTriggerOnce*/ {
-				constexpr std::ptrdiff_t m_hLookTarget = 0x9d0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flFieldOfView = 0x9d4; // float32 m_flFieldOfView; |  0x9d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLookTime = 0x9d8; // float32 m_flLookTime; |  0x9d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLookTimeTotal = 0x9dc; // float32 m_flLookTimeTotal; |  0x9dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLookTimeLast = 0x9e0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeoutDuration = 0x9e4; // float32 m_flTimeoutDuration; |  0x9e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bTimeoutFired = 0x9e8; // bool m_bTimeoutFired; |  0x9e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsLooking = 0x9e9; // bool m_bIsLooking; |  0x9e9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_b2DFOV = 0x9ea; // bool m_b2DFOV; |  0x9ea | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseVelocity = 0x9eb; // bool m_bUseVelocity; |  0x9eb | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bTestOcclusion = 0x9ec; // bool m_bTestOcclusion; |  0x9ec | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bTestAllVisibleOcclusion = 0x9ed; // bool m_bTestAllVisibleOcclusion; |  0x9ed | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnTimeout = 0x9f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnStartLook = 0xa18; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEndLook = 0xa40; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_hLookTarget = 0x8a8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flFieldOfView = 0x8ac; // float32 m_flFieldOfView; |  0x8ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLookTime = 0x8b0; // float32 m_flLookTime; |  0x8b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLookTimeTotal = 0x8b4; // float32 m_flLookTimeTotal; |  0x8b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLookTimeLast = 0x8b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeoutDuration = 0x8bc; // float32 m_flTimeoutDuration; |  0x8bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bTimeoutFired = 0x8c0; // bool m_bTimeoutFired; |  0x8c0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsLooking = 0x8c1; // bool m_bIsLooking; |  0x8c1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_b2DFOV = 0x8c2; // bool m_b2DFOV; |  0x8c2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseVelocity = 0x8c3; // bool m_bUseVelocity; |  0x8c3 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bTestOcclusion = 0x8c4; // bool m_bTestOcclusion; |  0x8c4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bTestAllVisibleOcclusion = 0x8c5; // bool m_bTestAllVisibleOcclusion; |  0x8c5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnTimeout = 0x8c8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnStartLook = 0x8e0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnEndLook = 0x8f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

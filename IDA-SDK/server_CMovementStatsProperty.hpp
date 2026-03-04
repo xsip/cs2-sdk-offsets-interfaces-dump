@@ -5,7 +5,8 @@
 #include "client_CVectorExponentialMovingAverage.hpp"
 
 class server_CMovementStatsProperty {
-    char vTable2914[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     int32_t m_nUseCounter;
     client_CVectorExponentialMovingAverage m_emaMovementDirection;
 };

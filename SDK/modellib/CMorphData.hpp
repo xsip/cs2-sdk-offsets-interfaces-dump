@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/CMorphRectData.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class CMorphRectData;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,7 +23,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector<modellib::CMorphRectData> m_morphRectDatas; // 0x8 | Schema_Atomic | Size: 0x18
-			// char  m_morphRectDatas[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			// char m_morphRectDatas[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CMorphData, m_name) == 0x0, "m_name in CMorphData should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMorphData, m_morphRectDatas) == 0x8, "m_morphRectDatas in CMorphData should be at offset 0x8");

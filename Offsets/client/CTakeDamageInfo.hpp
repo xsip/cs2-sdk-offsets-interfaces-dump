@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x128
+			// Class size: 0x120
 			namespace CTakeDamageInfo /**/ {
 				constexpr std::ptrdiff_t m_vecDamageForce = 0x8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vecDamagePosition = 0x14; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
@@ -26,12 +26,12 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bShouldBleed = 0x64; // bool m_bShouldBleed; |  0x64 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bShouldSpark = 0x65; // bool m_bShouldSpark; |  0x65 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_nDamageFlags = 0x70; // client::TakeDamageFlags_t  | Schema_DeclaredEnum | Size: 0x8
-				constexpr std::ptrdiff_t m_sDamageSourceName = 0x78; // GlobalTypes::CGlobalSymbol  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iHitGroupId = 0x80; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nNumObjectsPenetrated = 0x84; // int32_t m_nNumObjectsPenetrated; |  0x84 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFriendlyFireDamageReductionRatio = 0x88; // float32 m_flFriendlyFireDamageReductionRatio; |  0x88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nDestructibleHitGroupsToForceDestroy = 0x108; // GlobalTypes::CUtlVector<client::DestructibleHitGroupToDestroy_t>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_bInTakeDamageFlow = 0x120; // bool m_bInTakeDamageFlow; |  0x120 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iHitGroupId = 0x78; // client::HitGroup_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nNumObjectsPenetrated = 0x7c; // int32_t m_nNumObjectsPenetrated; |  0x7c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFriendlyFireDamageReductionRatio = 0x80; // float32 m_flFriendlyFireDamageReductionRatio; |  0x80 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bStoppedBullet = 0x84; // bool m_bStoppedBullet; |  0x84 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nDestructibleHitGroupsToForceDestroy = 0x100; // GlobalTypes::CUtlVector<client::DestructibleHitGroupToDestroy_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bInTakeDamageFlow = 0x118; // bool m_bInTakeDamageFlow; |  0x118 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -11,6 +11,7 @@
 
 
 #include <SDK/pulse_runtime_lib/CPulseCell_BaseFlow.hpp>
+#include <SDK/pulse_runtime_lib/CPulse_OutflowConnection.hpp>
 
 
 
@@ -22,7 +23,7 @@ namespace CS2 {
 		class CPulseCell_Outflow_CycleRandom : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
 			// server::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Outputs; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_Outputs[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			char m_Outputs[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Outflow_CycleRandom, m_Outputs) == 0x48, "m_Outputs in CPulseCell_Outflow_CycleRandom should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Outflow_CycleRandom) == 0x60, "CPulseCell_Outflow_CycleRandom size should be 0x60");

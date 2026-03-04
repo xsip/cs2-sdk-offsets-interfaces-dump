@@ -10,54 +10,52 @@
 #endif
 
 
+#include <SDK/physicslib/FeNodeBase_t.hpp>
+#include <SDK/physicslib/FeSimdNodeBase_t.hpp>
+#include <SDK/physicslib/FeQuad_t.hpp>
+#include <SDK/physicslib/FeSimdQuad_t.hpp>
+#include <SDK/physicslib/FeSimdTri_t.hpp>
+#include <SDK/physicslib/FeSimdRodConstraint_t.hpp>
+#include <SDK/physicslib/FeSimdRodConstraintAnim_t.hpp>
+#include <SDK/physicslib/FeRodConstraint_t.hpp>
+#include <SDK/physicslib/FeTwistConstraint_t.hpp>
+#include <SDK/physicslib/FeHingeLimit_t.hpp>
+#include <SDK/physicslib/FeDynKinLink_t.hpp>
+#include <SDK/physicslib/FeAntiTunnelProbe_t.hpp>
+#include <SDK/physicslib/FeNodeStrayBox_t.hpp>
+#include <SDK/physicslib/FeAxialEdgeBend_t.hpp>
+#include <SDK/physicslib/FeCtrlOffset_t.hpp>
+#include <SDK/physicslib/FeCtrlOsOffset_t.hpp>
+#include <SDK/physicslib/FeFollowNode_t.hpp>
+#include <SDK/physicslib/FeCollisionPlane_t.hpp>
+#include <SDK/physicslib/FeNodeIntegrator_t.hpp>
+#include <SDK/physicslib/FeSpringIntegrator_t.hpp>
+#include <SDK/physicslib/FeSimdSpringIntegrator_t.hpp>
+#include <SDK/physicslib/FeWorldCollisionParams_t.hpp>
+#include <SDK/physicslib/FeTaperedCapsuleStretch_t.hpp>
+#include <SDK/physicslib/FeTaperedCapsuleRigid_t.hpp>
+#include <SDK/physicslib/FeSphereRigid_t.hpp>
+#include <SDK/physicslib/FeTreeChildren_t.hpp>
+#include <SDK/physicslib/FeFitMatrix_t.hpp>
+#include <SDK/physicslib/FeFitWeight_t.hpp>
+#include <SDK/physicslib/FeNodeReverseOffset_t.hpp>
+#include <SDK/physicslib/FeAnimStrayRadius_t.hpp>
+#include <SDK/physicslib/FeSimdAnimStrayRadius_t.hpp>
+#include <SDK/physicslib/FeKelagerBend2_t.hpp>
+#include <SDK/physicslib/FeCtrlSoftOffset_t.hpp>
+#include <SDK/physicslib/CFeIndexedJiggleBone.hpp>
+#include <SDK/physicslib/FeTri_t.hpp>
+#include <SDK/physicslib/FeSDFRigid_t.hpp>
+#include <SDK/physicslib/FeBoxRigid_t.hpp>
+#include <SDK/physicslib/FeRigidColliderIndices_t.hpp>
+#include <SDK/physicslib/FeMorphLayerDepr_t.hpp>
+#include <SDK/physicslib/FeVertexMapDesc_t.hpp>
+#include <SDK/physicslib/FeEffectDesc_t.hpp>
+#include <SDK/physicslib/FeNodeWindBase_t.hpp>
+#include <SDK/physicslib/FeModelSelfCollisionLayer_t.hpp>
 
 
 
-namespace CS2 {
-	namespace physicslib {
-		class FeNodeBase_t;
-		class FeSimdNodeBase_t;
-		class FeQuad_t;
-		class FeSimdQuad_t;
-		class FeSimdTri_t;
-		class FeSimdRodConstraint_t;
-		class FeSimdRodConstraintAnim_t;
-		class FeRodConstraint_t;
-		class FeTwistConstraint_t;
-		class FeHingeLimit_t;
-		class FeDynKinLink_t;
-		class FeAntiTunnelProbe_t;
-		class FeAxialEdgeBend_t;
-		class FeCtrlOffset_t;
-		class FeCtrlOsOffset_t;
-		class FeFollowNode_t;
-		class FeCollisionPlane_t;
-		class FeNodeIntegrator_t;
-		class FeSpringIntegrator_t;
-		class FeSimdSpringIntegrator_t;
-		class FeWorldCollisionParams_t;
-		class FeTaperedCapsuleStretch_t;
-		class FeTaperedCapsuleRigid_t;
-		class FeSphereRigid_t;
-		class FeTreeChildren_t;
-		class FeFitMatrix_t;
-		class FeFitWeight_t;
-		class FeNodeReverseOffset_t;
-		class FeAnimStrayRadius_t;
-		class FeSimdAnimStrayRadius_t;
-		class FeKelagerBend2_t;
-		class FeCtrlSoftOffset_t;
-		class CFeIndexedJiggleBone;
-		class FeTri_t;
-		class FeSDFRigid_t;
-		class FeBoxRigid_t;
-		class FeRigidColliderIndices_t;
-		class FeMorphLayerDepr_t;
-		class FeVertexMapDesc_t;
-		class FeEffectDesc_t;
-		class FeNodeWindBase_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -66,9 +64,9 @@ namespace CS2 {
 		class PhysFeModelDesc_t  {
 		public:
 			GlobalTypes::CUtlVector< uint32 > m_CtrlHash; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_CtrlHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_CtrlHash[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_CtrlName; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_CtrlName[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_CtrlName[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			uint32_t m_nStaticNodeFlags; // 0x30 | Schema_Builtin | Size: 0x4
 			uint32_t m_nDynamicNodeFlags; // 0x34 | Schema_Builtin | Size: 0x4
 			float32 m_flLocalForce; // 0x38 | Schema_Builtin | Size: 0x4
@@ -88,158 +86,162 @@ namespace CS2 {
 			uint16_t m_nRopeCount; // 0x58 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6);
 			GlobalTypes::CUtlVector< uint16 > m_Ropes; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_Ropes[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_Ropes[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeNodeBase_t> m_NodeBases; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_NodeBases[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_NodeBases[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeSimdNodeBase_t> m_SimdNodeBases; // 0x90 | Schema_Atomic | Size: 0x18
-			// char  m_SimdNodeBases[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			// char m_SimdNodeBases[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeQuad_t> m_Quads; // 0xa8 | Schema_Atomic | Size: 0x18
-			// char  m_Quads[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
+			// char m_Quads[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeSimdQuad_t> m_SimdQuads; // 0xc0 | Schema_Atomic | Size: 0x18
-			// char  m_SimdQuads[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
+			// char m_SimdQuads[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeSimdTri_t> m_SimdTris; // 0xd8 | Schema_Atomic | Size: 0x18
-			// char  m_SimdTris[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
+			// char m_SimdTris[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeSimdRodConstraint_t> m_SimdRods; // 0xf0 | Schema_Atomic | Size: 0x18
-			// char  m_SimdRods[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
+			// char m_SimdRods[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeSimdRodConstraintAnim_t> m_SimdRodsAnim; // 0x108 | Schema_Atomic | Size: 0x18
-			// char  m_SimdRodsAnim[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
+			// char m_SimdRodsAnim[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<GlobalTypes::CTransform> m_InitPose; // 0x120 | Schema_Atomic | Size: 0x18
-			// char  m_InitPose[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
+			// char m_InitPose[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeRodConstraint_t> m_Rods; // 0x138 | Schema_Atomic | Size: 0x18
-			// char  m_Rods[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
+			// char m_Rods[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeTwistConstraint_t> m_Twists; // 0x150 | Schema_Atomic | Size: 0x18
-			// char  m_Twists[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
+			// char m_Twists[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeHingeLimit_t> m_HingeLimits; // 0x168 | Schema_Atomic | Size: 0x18
-			// char  m_HingeLimits[0x18]; // 0x168 | Schema_Atomic | Size: 0x18
+			// char m_HingeLimits[0x18]; // 0x168 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint32 > m_AntiTunnelBytecode; // 0x180 | Schema_Atomic | Size: 0x18
-			// char  m_AntiTunnelBytecode[0x18]; // 0x180 | Schema_Atomic | Size: 0x18
+			// char m_AntiTunnelBytecode[0x18]; // 0x180 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeDynKinLink_t> m_DynKinLinks; // 0x198 | Schema_Atomic | Size: 0x18
-			// char  m_DynKinLinks[0x18]; // 0x198 | Schema_Atomic | Size: 0x18
+			// char m_DynKinLinks[0x18]; // 0x198 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<physicslib::FeAntiTunnelProbe_t> m_AntiTunnelProbes; // 0x1b0 | Schema_Atomic | Size: 0x18
-			// char  m_AntiTunnelProbes[0x18]; // 0x1b0 | Schema_Atomic | Size: 0x18
+			// char m_AntiTunnelProbes[0x18]; // 0x1b0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint16 > m_AntiTunnelTargetNodes; // 0x1c8 | Schema_Atomic | Size: 0x18
-			// char  m_AntiTunnelTargetNodes[0x18]; // 0x1c8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeAxialEdgeBend_t> m_AxialEdges; // 0x1e0 | Schema_Atomic | Size: 0x18
-			// char  m_AxialEdges[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< float32 > m_NodeInvMasses; // 0x1f8 | Schema_Atomic | Size: 0x18
-			// char  m_NodeInvMasses[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeCtrlOffset_t> m_CtrlOffsets; // 0x210 | Schema_Atomic | Size: 0x18
-			// char  m_CtrlOffsets[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeCtrlOsOffset_t> m_CtrlOsOffsets; // 0x228 | Schema_Atomic | Size: 0x18
-			// char  m_CtrlOsOffsets[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeFollowNode_t> m_FollowNodes; // 0x240 | Schema_Atomic | Size: 0x18
-			// char  m_FollowNodes[0x18]; // 0x240 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeCollisionPlane_t> m_CollisionPlanes; // 0x258 | Schema_Atomic | Size: 0x18
-			// char  m_CollisionPlanes[0x18]; // 0x258 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeNodeIntegrator_t> m_NodeIntegrator; // 0x270 | Schema_Atomic | Size: 0x18
-			// char  m_NodeIntegrator[0x18]; // 0x270 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeSpringIntegrator_t> m_SpringIntegrator; // 0x288 | Schema_Atomic | Size: 0x18
-			// char  m_SpringIntegrator[0x18]; // 0x288 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeSimdSpringIntegrator_t> m_SimdSpringIntegrator; // 0x2a0 | Schema_Atomic | Size: 0x18
-			// char  m_SimdSpringIntegrator[0x18]; // 0x2a0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeWorldCollisionParams_t> m_WorldCollisionParams; // 0x2b8 | Schema_Atomic | Size: 0x18
-			// char  m_WorldCollisionParams[0x18]; // 0x2b8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< float32 > m_LegacyStretchForce; // 0x2d0 | Schema_Atomic | Size: 0x18
-			// char  m_LegacyStretchForce[0x18]; // 0x2d0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< float32 > m_NodeCollisionRadii; // 0x2e8 | Schema_Atomic | Size: 0x18
-			// char  m_NodeCollisionRadii[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< float32 > m_DynNodeFriction; // 0x300 | Schema_Atomic | Size: 0x18
-			// char  m_DynNodeFriction[0x18]; // 0x300 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< float32 > m_LocalRotation; // 0x318 | Schema_Atomic | Size: 0x18
-			// char  m_LocalRotation[0x18]; // 0x318 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< float32 > m_LocalForce; // 0x330 | Schema_Atomic | Size: 0x18
-			// char  m_LocalForce[0x18]; // 0x330 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeTaperedCapsuleStretch_t> m_TaperedCapsuleStretches; // 0x348 | Schema_Atomic | Size: 0x18
-			// char  m_TaperedCapsuleStretches[0x18]; // 0x348 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeTaperedCapsuleRigid_t> m_TaperedCapsuleRigids; // 0x360 | Schema_Atomic | Size: 0x18
-			// char  m_TaperedCapsuleRigids[0x18]; // 0x360 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeSphereRigid_t> m_SphereRigids; // 0x378 | Schema_Atomic | Size: 0x18
-			// char  m_SphereRigids[0x18]; // 0x378 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint16 > m_WorldCollisionNodes; // 0x390 | Schema_Atomic | Size: 0x18
-			// char  m_WorldCollisionNodes[0x18]; // 0x390 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint16 > m_TreeParents; // 0x3a8 | Schema_Atomic | Size: 0x18
-			// char  m_TreeParents[0x18]; // 0x3a8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint16 > m_TreeCollisionMasks; // 0x3c0 | Schema_Atomic | Size: 0x18
-			// char  m_TreeCollisionMasks[0x18]; // 0x3c0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeTreeChildren_t> m_TreeChildren; // 0x3d8 | Schema_Atomic | Size: 0x18
-			// char  m_TreeChildren[0x18]; // 0x3d8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint16 > m_FreeNodes; // 0x3f0 | Schema_Atomic | Size: 0x18
-			// char  m_FreeNodes[0x18]; // 0x3f0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeFitMatrix_t> m_FitMatrices; // 0x408 | Schema_Atomic | Size: 0x18
-			// char  m_FitMatrices[0x18]; // 0x408 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeFitWeight_t> m_FitWeights; // 0x420 | Schema_Atomic | Size: 0x18
-			// char  m_FitWeights[0x18]; // 0x420 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeNodeReverseOffset_t> m_ReverseOffsets; // 0x438 | Schema_Atomic | Size: 0x18
-			// char  m_ReverseOffsets[0x18]; // 0x438 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeAnimStrayRadius_t> m_AnimStrayRadii; // 0x450 | Schema_Atomic | Size: 0x18
-			// char  m_AnimStrayRadii[0x18]; // 0x450 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeSimdAnimStrayRadius_t> m_SimdAnimStrayRadii; // 0x468 | Schema_Atomic | Size: 0x18
-			// char  m_SimdAnimStrayRadii[0x18]; // 0x468 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeKelagerBend2_t> m_KelagerBends; // 0x480 | Schema_Atomic | Size: 0x18
-			// char  m_KelagerBends[0x18]; // 0x480 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeCtrlSoftOffset_t> m_CtrlSoftOffsets; // 0x498 | Schema_Atomic | Size: 0x18
-			// char  m_CtrlSoftOffsets[0x18]; // 0x498 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::CFeIndexedJiggleBone> m_JiggleBones; // 0x4b0 | Schema_Atomic | Size: 0x18
-			// char  m_JiggleBones[0x18]; // 0x4b0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint16 > m_SourceElems; // 0x4c8 | Schema_Atomic | Size: 0x18
-			// char  m_SourceElems[0x18]; // 0x4c8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint32 > m_GoalDampedSpringIntegrators; // 0x4e0 | Schema_Atomic | Size: 0x18
-			// char  m_GoalDampedSpringIntegrators[0x18]; // 0x4e0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeTri_t> m_Tris; // 0x4f8 | Schema_Atomic | Size: 0x18
-			// char  m_Tris[0x18]; // 0x4f8 | Schema_Atomic | Size: 0x18
-			uint16_t m_nTriCount1; // 0x510 | Schema_Builtin | Size: 0x2
-			uint16_t m_nTriCount2; // 0x512 | Schema_Builtin | Size: 0x2
-			uint8_t m_nReservedUint8; // 0x514 | Schema_Builtin | Size: 0x1
-			uint8_t m_nExtraPressureIterations; // 0x515 | Schema_Builtin | Size: 0x1
-			uint8_t m_nExtraGoalIterations; // 0x516 | Schema_Builtin | Size: 0x1
-			uint8_t m_nExtraIterations; // 0x517 | Schema_Builtin | Size: 0x1
-			GlobalTypes::CUtlVector<physicslib::FeSDFRigid_t> m_SDFRigids; // 0x518 | Schema_Atomic | Size: 0x18
-			// char  m_SDFRigids[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeBoxRigid_t> m_BoxRigids; // 0x530 | Schema_Atomic | Size: 0x18
-			// char  m_BoxRigids[0x18]; // 0x530 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint8 > m_DynNodeVertexSet; // 0x548 | Schema_Atomic | Size: 0x18
-			// char  m_DynNodeVertexSet[0x18]; // 0x548 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint32 > m_VertexSetNames; // 0x560 | Schema_Atomic | Size: 0x18
-			// char  m_VertexSetNames[0x18]; // 0x560 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeRigidColliderIndices_t> m_RigidColliderPriorities; // 0x578 | Schema_Atomic | Size: 0x18
-			// char  m_RigidColliderPriorities[0x18]; // 0x578 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeMorphLayerDepr_t> m_MorphLayers; // 0x590 | Schema_Atomic | Size: 0x18
-			// char  m_MorphLayers[0x18]; // 0x590 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint8 > m_MorphSetData; // 0x5a8 | Schema_Atomic | Size: 0x18
-			// char  m_MorphSetData[0x18]; // 0x5a8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeVertexMapDesc_t> m_VertexMaps; // 0x5c0 | Schema_Atomic | Size: 0x18
-			// char  m_VertexMaps[0x18]; // 0x5c0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint8 > m_VertexMapValues; // 0x5d8 | Schema_Atomic | Size: 0x18
-			// char  m_VertexMapValues[0x18]; // 0x5d8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeEffectDesc_t> m_Effects; // 0x5f0 | Schema_Atomic | Size: 0x18
-			// char  m_Effects[0x18]; // 0x5f0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeCtrlOffset_t> m_LockToParent; // 0x608 | Schema_Atomic | Size: 0x18
-			// char  m_LockToParent[0x18]; // 0x608 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint16 > m_LockToGoal; // 0x620 | Schema_Atomic | Size: 0x18
-			// char  m_LockToGoal[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< int16 > m_SkelParents; // 0x638 | Schema_Atomic | Size: 0x18
-			// char  m_SkelParents[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<physicslib::FeNodeWindBase_t> m_DynNodeWindBases; // 0x650 | Schema_Atomic | Size: 0x18
-			// char  m_DynNodeWindBases[0x18]; // 0x650 | Schema_Atomic | Size: 0x18
-			float32 m_flInternalPressure; // 0x668 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultTimeDilation; // 0x66c | Schema_Builtin | Size: 0x4
-			float32 m_flWindage; // 0x670 | Schema_Builtin | Size: 0x4
-			float32 m_flWindDrag; // 0x674 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultSurfaceStretch; // 0x678 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultThreadStretch; // 0x67c | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultGravityScale; // 0x680 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultVelAirDrag; // 0x684 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultExpAirDrag; // 0x688 | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultVelQuadAirDrag; // 0x68c | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultExpQuadAirDrag; // 0x690 | Schema_Builtin | Size: 0x4
-			float32 m_flRodVelocitySmoothRate; // 0x694 | Schema_Builtin | Size: 0x4
-			float32 m_flQuadVelocitySmoothRate; // 0x698 | Schema_Builtin | Size: 0x4
-			float32 m_flAddWorldCollisionRadius; // 0x69c | Schema_Builtin | Size: 0x4
-			float32 m_flDefaultVolumetricSolveAmount; // 0x6a0 | Schema_Builtin | Size: 0x4
-			float32 m_flMotionSmoothCDT; // 0x6a4 | Schema_Builtin | Size: 0x4
-			float32 m_flLocalDrag1; // 0x6a8 | Schema_Builtin | Size: 0x4
-			uint16_t m_nRodVelocitySmoothIterations; // 0x6ac | Schema_Builtin | Size: 0x2
-			uint16_t m_nQuadVelocitySmoothIterations; // 0x6ae | Schema_Builtin | Size: 0x2
+			// char m_AntiTunnelTargetNodes[0x18]; // 0x1c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeNodeStrayBox_t> m_NodeStrayBoxes; // 0x1e0 | Schema_Atomic | Size: 0x18
+			// char m_NodeStrayBoxes[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeAxialEdgeBend_t> m_AxialEdges; // 0x1f8 | Schema_Atomic | Size: 0x18
+			// char m_AxialEdges[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_NodeInvMasses; // 0x210 | Schema_Atomic | Size: 0x18
+			// char m_NodeInvMasses[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeCtrlOffset_t> m_CtrlOffsets; // 0x228 | Schema_Atomic | Size: 0x18
+			// char m_CtrlOffsets[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeCtrlOsOffset_t> m_CtrlOsOffsets; // 0x240 | Schema_Atomic | Size: 0x18
+			// char m_CtrlOsOffsets[0x18]; // 0x240 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeFollowNode_t> m_FollowNodes; // 0x258 | Schema_Atomic | Size: 0x18
+			// char m_FollowNodes[0x18]; // 0x258 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeCollisionPlane_t> m_CollisionPlanes; // 0x270 | Schema_Atomic | Size: 0x18
+			// char m_CollisionPlanes[0x18]; // 0x270 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeNodeIntegrator_t> m_NodeIntegrator; // 0x288 | Schema_Atomic | Size: 0x18
+			// char m_NodeIntegrator[0x18]; // 0x288 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeSpringIntegrator_t> m_SpringIntegrator; // 0x2a0 | Schema_Atomic | Size: 0x18
+			// char m_SpringIntegrator[0x18]; // 0x2a0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeSimdSpringIntegrator_t> m_SimdSpringIntegrator; // 0x2b8 | Schema_Atomic | Size: 0x18
+			// char m_SimdSpringIntegrator[0x18]; // 0x2b8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeWorldCollisionParams_t> m_WorldCollisionParams; // 0x2d0 | Schema_Atomic | Size: 0x18
+			// char m_WorldCollisionParams[0x18]; // 0x2d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_LegacyStretchForce; // 0x2e8 | Schema_Atomic | Size: 0x18
+			// char m_LegacyStretchForce[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_NodeCollisionRadii; // 0x300 | Schema_Atomic | Size: 0x18
+			// char m_NodeCollisionRadii[0x18]; // 0x300 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_DynNodeFriction; // 0x318 | Schema_Atomic | Size: 0x18
+			// char m_DynNodeFriction[0x18]; // 0x318 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_LocalRotation; // 0x330 | Schema_Atomic | Size: 0x18
+			// char m_LocalRotation[0x18]; // 0x330 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< float32 > m_LocalForce; // 0x348 | Schema_Atomic | Size: 0x18
+			// char m_LocalForce[0x18]; // 0x348 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeTaperedCapsuleStretch_t> m_TaperedCapsuleStretches; // 0x360 | Schema_Atomic | Size: 0x18
+			// char m_TaperedCapsuleStretches[0x18]; // 0x360 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeTaperedCapsuleRigid_t> m_TaperedCapsuleRigids; // 0x378 | Schema_Atomic | Size: 0x18
+			// char m_TaperedCapsuleRigids[0x18]; // 0x378 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeSphereRigid_t> m_SphereRigids; // 0x390 | Schema_Atomic | Size: 0x18
+			// char m_SphereRigids[0x18]; // 0x390 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_WorldCollisionNodes; // 0x3a8 | Schema_Atomic | Size: 0x18
+			// char m_WorldCollisionNodes[0x18]; // 0x3a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_TreeParents; // 0x3c0 | Schema_Atomic | Size: 0x18
+			// char m_TreeParents[0x18]; // 0x3c0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_TreeCollisionMasks; // 0x3d8 | Schema_Atomic | Size: 0x18
+			// char m_TreeCollisionMasks[0x18]; // 0x3d8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeTreeChildren_t> m_TreeChildren; // 0x3f0 | Schema_Atomic | Size: 0x18
+			// char m_TreeChildren[0x18]; // 0x3f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_FreeNodes; // 0x408 | Schema_Atomic | Size: 0x18
+			// char m_FreeNodes[0x18]; // 0x408 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeFitMatrix_t> m_FitMatrices; // 0x420 | Schema_Atomic | Size: 0x18
+			// char m_FitMatrices[0x18]; // 0x420 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeFitWeight_t> m_FitWeights; // 0x438 | Schema_Atomic | Size: 0x18
+			// char m_FitWeights[0x18]; // 0x438 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeNodeReverseOffset_t> m_ReverseOffsets; // 0x450 | Schema_Atomic | Size: 0x18
+			// char m_ReverseOffsets[0x18]; // 0x450 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeAnimStrayRadius_t> m_AnimStrayRadii; // 0x468 | Schema_Atomic | Size: 0x18
+			// char m_AnimStrayRadii[0x18]; // 0x468 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeSimdAnimStrayRadius_t> m_SimdAnimStrayRadii; // 0x480 | Schema_Atomic | Size: 0x18
+			// char m_SimdAnimStrayRadii[0x18]; // 0x480 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeKelagerBend2_t> m_KelagerBends; // 0x498 | Schema_Atomic | Size: 0x18
+			// char m_KelagerBends[0x18]; // 0x498 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeCtrlSoftOffset_t> m_CtrlSoftOffsets; // 0x4b0 | Schema_Atomic | Size: 0x18
+			// char m_CtrlSoftOffsets[0x18]; // 0x4b0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::CFeIndexedJiggleBone> m_JiggleBones; // 0x4c8 | Schema_Atomic | Size: 0x18
+			// char m_JiggleBones[0x18]; // 0x4c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_SourceElems; // 0x4e0 | Schema_Atomic | Size: 0x18
+			// char m_SourceElems[0x18]; // 0x4e0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_GoalDampedSpringIntegrators; // 0x4f8 | Schema_Atomic | Size: 0x18
+			// char m_GoalDampedSpringIntegrators[0x18]; // 0x4f8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeTri_t> m_Tris; // 0x510 | Schema_Atomic | Size: 0x18
+			// char m_Tris[0x18]; // 0x510 | Schema_Atomic | Size: 0x18
+			uint16_t m_nTriCount1; // 0x528 | Schema_Builtin | Size: 0x2
+			uint16_t m_nTriCount2; // 0x52a | Schema_Builtin | Size: 0x2
+			uint8_t m_nReservedUint8; // 0x52c | Schema_Builtin | Size: 0x1
+			uint8_t m_nExtraPressureIterations; // 0x52d | Schema_Builtin | Size: 0x1
+			uint8_t m_nExtraGoalIterations; // 0x52e | Schema_Builtin | Size: 0x1
+			uint8_t m_nExtraIterations; // 0x52f | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlVector<physicslib::FeSDFRigid_t> m_SDFRigids; // 0x530 | Schema_Atomic | Size: 0x18
+			// char m_SDFRigids[0x18]; // 0x530 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeBoxRigid_t> m_BoxRigids; // 0x548 | Schema_Atomic | Size: 0x18
+			// char m_BoxRigids[0x18]; // 0x548 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_DynNodeVertexSet; // 0x560 | Schema_Atomic | Size: 0x18
+			// char m_DynNodeVertexSet[0x18]; // 0x560 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint32 > m_VertexSetNames; // 0x578 | Schema_Atomic | Size: 0x18
+			// char m_VertexSetNames[0x18]; // 0x578 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeRigidColliderIndices_t> m_RigidColliderPriorities; // 0x590 | Schema_Atomic | Size: 0x18
+			// char m_RigidColliderPriorities[0x18]; // 0x590 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeMorphLayerDepr_t> m_MorphLayers; // 0x5a8 | Schema_Atomic | Size: 0x18
+			// char m_MorphLayers[0x18]; // 0x5a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_MorphSetData; // 0x5c0 | Schema_Atomic | Size: 0x18
+			// char m_MorphSetData[0x18]; // 0x5c0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeVertexMapDesc_t> m_VertexMaps; // 0x5d8 | Schema_Atomic | Size: 0x18
+			// char m_VertexMaps[0x18]; // 0x5d8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_VertexMapValues; // 0x5f0 | Schema_Atomic | Size: 0x18
+			// char m_VertexMapValues[0x18]; // 0x5f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeEffectDesc_t> m_Effects; // 0x608 | Schema_Atomic | Size: 0x18
+			// char m_Effects[0x18]; // 0x608 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeCtrlOffset_t> m_LockToParent; // 0x620 | Schema_Atomic | Size: 0x18
+			// char m_LockToParent[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint16 > m_LockToGoal; // 0x638 | Schema_Atomic | Size: 0x18
+			// char m_LockToGoal[0x18]; // 0x638 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int16 > m_SkelParents; // 0x650 | Schema_Atomic | Size: 0x18
+			// char m_SkelParents[0x18]; // 0x650 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeNodeWindBase_t> m_DynNodeWindBases; // 0x668 | Schema_Atomic | Size: 0x18
+			// char m_DynNodeWindBases[0x18]; // 0x668 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::FeModelSelfCollisionLayer_t> m_SelfCollisionLayers; // 0x680 | Schema_Atomic | Size: 0x18
+			// char m_SelfCollisionLayers[0x18]; // 0x680 | Schema_Atomic | Size: 0x18
+			float32 m_flInternalPressure; // 0x698 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultTimeDilation; // 0x69c | Schema_Builtin | Size: 0x4
+			float32 m_flWindage; // 0x6a0 | Schema_Builtin | Size: 0x4
+			float32 m_flWindDrag; // 0x6a4 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultSurfaceStretch; // 0x6a8 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultThreadStretch; // 0x6ac | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultGravityScale; // 0x6b0 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultVelAirDrag; // 0x6b4 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultExpAirDrag; // 0x6b8 | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultVelQuadAirDrag; // 0x6bc | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultExpQuadAirDrag; // 0x6c0 | Schema_Builtin | Size: 0x4
+			float32 m_flRodVelocitySmoothRate; // 0x6c4 | Schema_Builtin | Size: 0x4
+			float32 m_flQuadVelocitySmoothRate; // 0x6c8 | Schema_Builtin | Size: 0x4
+			float32 m_flAddWorldCollisionRadius; // 0x6cc | Schema_Builtin | Size: 0x4
+			float32 m_flDefaultVolumetricSolveAmount; // 0x6d0 | Schema_Builtin | Size: 0x4
+			float32 m_flMotionSmoothCDT; // 0x6d4 | Schema_Builtin | Size: 0x4
+			float32 m_flLocalDrag1; // 0x6d8 | Schema_Builtin | Size: 0x4
+			uint16_t m_nRodVelocitySmoothIterations; // 0x6dc | Schema_Builtin | Size: 0x2
+			uint16_t m_nQuadVelocitySmoothIterations; // 0x6de | Schema_Builtin | Size: 0x2
 		};
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlHash) == 0x0, "m_CtrlHash in PhysFeModelDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlName) == 0x18, "m_CtrlName in PhysFeModelDesc_t should be at offset 0x18");
@@ -276,79 +278,81 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_DynKinLinks) == 0x198, "m_DynKinLinks in PhysFeModelDesc_t should be at offset 0x198");
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_AntiTunnelProbes) == 0x1B0, "m_AntiTunnelProbes in PhysFeModelDesc_t should be at offset 0x1B0");
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_AntiTunnelTargetNodes) == 0x1C8, "m_AntiTunnelTargetNodes in PhysFeModelDesc_t should be at offset 0x1C8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_AxialEdges) == 0x1E0, "m_AxialEdges in PhysFeModelDesc_t should be at offset 0x1E0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_NodeInvMasses) == 0x1F8, "m_NodeInvMasses in PhysFeModelDesc_t should be at offset 0x1F8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlOffsets) == 0x210, "m_CtrlOffsets in PhysFeModelDesc_t should be at offset 0x210");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlOsOffsets) == 0x228, "m_CtrlOsOffsets in PhysFeModelDesc_t should be at offset 0x228");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FollowNodes) == 0x240, "m_FollowNodes in PhysFeModelDesc_t should be at offset 0x240");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CollisionPlanes) == 0x258, "m_CollisionPlanes in PhysFeModelDesc_t should be at offset 0x258");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_NodeIntegrator) == 0x270, "m_NodeIntegrator in PhysFeModelDesc_t should be at offset 0x270");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SpringIntegrator) == 0x288, "m_SpringIntegrator in PhysFeModelDesc_t should be at offset 0x288");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SimdSpringIntegrator) == 0x2A0, "m_SimdSpringIntegrator in PhysFeModelDesc_t should be at offset 0x2A0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_WorldCollisionParams) == 0x2B8, "m_WorldCollisionParams in PhysFeModelDesc_t should be at offset 0x2B8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LegacyStretchForce) == 0x2D0, "m_LegacyStretchForce in PhysFeModelDesc_t should be at offset 0x2D0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_NodeCollisionRadii) == 0x2E8, "m_NodeCollisionRadii in PhysFeModelDesc_t should be at offset 0x2E8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_DynNodeFriction) == 0x300, "m_DynNodeFriction in PhysFeModelDesc_t should be at offset 0x300");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LocalRotation) == 0x318, "m_LocalRotation in PhysFeModelDesc_t should be at offset 0x318");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LocalForce) == 0x330, "m_LocalForce in PhysFeModelDesc_t should be at offset 0x330");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TaperedCapsuleStretches) == 0x348, "m_TaperedCapsuleStretches in PhysFeModelDesc_t should be at offset 0x348");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TaperedCapsuleRigids) == 0x360, "m_TaperedCapsuleRigids in PhysFeModelDesc_t should be at offset 0x360");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SphereRigids) == 0x378, "m_SphereRigids in PhysFeModelDesc_t should be at offset 0x378");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_WorldCollisionNodes) == 0x390, "m_WorldCollisionNodes in PhysFeModelDesc_t should be at offset 0x390");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TreeParents) == 0x3A8, "m_TreeParents in PhysFeModelDesc_t should be at offset 0x3A8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TreeCollisionMasks) == 0x3C0, "m_TreeCollisionMasks in PhysFeModelDesc_t should be at offset 0x3C0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TreeChildren) == 0x3D8, "m_TreeChildren in PhysFeModelDesc_t should be at offset 0x3D8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FreeNodes) == 0x3F0, "m_FreeNodes in PhysFeModelDesc_t should be at offset 0x3F0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FitMatrices) == 0x408, "m_FitMatrices in PhysFeModelDesc_t should be at offset 0x408");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FitWeights) == 0x420, "m_FitWeights in PhysFeModelDesc_t should be at offset 0x420");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_ReverseOffsets) == 0x438, "m_ReverseOffsets in PhysFeModelDesc_t should be at offset 0x438");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_AnimStrayRadii) == 0x450, "m_AnimStrayRadii in PhysFeModelDesc_t should be at offset 0x450");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SimdAnimStrayRadii) == 0x468, "m_SimdAnimStrayRadii in PhysFeModelDesc_t should be at offset 0x468");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_KelagerBends) == 0x480, "m_KelagerBends in PhysFeModelDesc_t should be at offset 0x480");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlSoftOffsets) == 0x498, "m_CtrlSoftOffsets in PhysFeModelDesc_t should be at offset 0x498");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_JiggleBones) == 0x4B0, "m_JiggleBones in PhysFeModelDesc_t should be at offset 0x4B0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SourceElems) == 0x4C8, "m_SourceElems in PhysFeModelDesc_t should be at offset 0x4C8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_GoalDampedSpringIntegrators) == 0x4E0, "m_GoalDampedSpringIntegrators in PhysFeModelDesc_t should be at offset 0x4E0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_Tris) == 0x4F8, "m_Tris in PhysFeModelDesc_t should be at offset 0x4F8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nTriCount1) == 0x510, "m_nTriCount1 in PhysFeModelDesc_t should be at offset 0x510");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nTriCount2) == 0x512, "m_nTriCount2 in PhysFeModelDesc_t should be at offset 0x512");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nReservedUint8) == 0x514, "m_nReservedUint8 in PhysFeModelDesc_t should be at offset 0x514");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nExtraPressureIterations) == 0x515, "m_nExtraPressureIterations in PhysFeModelDesc_t should be at offset 0x515");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nExtraGoalIterations) == 0x516, "m_nExtraGoalIterations in PhysFeModelDesc_t should be at offset 0x516");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nExtraIterations) == 0x517, "m_nExtraIterations in PhysFeModelDesc_t should be at offset 0x517");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SDFRigids) == 0x518, "m_SDFRigids in PhysFeModelDesc_t should be at offset 0x518");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_BoxRigids) == 0x530, "m_BoxRigids in PhysFeModelDesc_t should be at offset 0x530");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_DynNodeVertexSet) == 0x548, "m_DynNodeVertexSet in PhysFeModelDesc_t should be at offset 0x548");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_VertexSetNames) == 0x560, "m_VertexSetNames in PhysFeModelDesc_t should be at offset 0x560");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_RigidColliderPriorities) == 0x578, "m_RigidColliderPriorities in PhysFeModelDesc_t should be at offset 0x578");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_MorphLayers) == 0x590, "m_MorphLayers in PhysFeModelDesc_t should be at offset 0x590");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_MorphSetData) == 0x5A8, "m_MorphSetData in PhysFeModelDesc_t should be at offset 0x5A8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_VertexMaps) == 0x5C0, "m_VertexMaps in PhysFeModelDesc_t should be at offset 0x5C0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_VertexMapValues) == 0x5D8, "m_VertexMapValues in PhysFeModelDesc_t should be at offset 0x5D8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_Effects) == 0x5F0, "m_Effects in PhysFeModelDesc_t should be at offset 0x5F0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LockToParent) == 0x608, "m_LockToParent in PhysFeModelDesc_t should be at offset 0x608");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LockToGoal) == 0x620, "m_LockToGoal in PhysFeModelDesc_t should be at offset 0x620");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SkelParents) == 0x638, "m_SkelParents in PhysFeModelDesc_t should be at offset 0x638");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_DynNodeWindBases) == 0x650, "m_DynNodeWindBases in PhysFeModelDesc_t should be at offset 0x650");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flInternalPressure) == 0x668, "m_flInternalPressure in PhysFeModelDesc_t should be at offset 0x668");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultTimeDilation) == 0x66C, "m_flDefaultTimeDilation in PhysFeModelDesc_t should be at offset 0x66C");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flWindage) == 0x670, "m_flWindage in PhysFeModelDesc_t should be at offset 0x670");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flWindDrag) == 0x674, "m_flWindDrag in PhysFeModelDesc_t should be at offset 0x674");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultSurfaceStretch) == 0x678, "m_flDefaultSurfaceStretch in PhysFeModelDesc_t should be at offset 0x678");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultThreadStretch) == 0x67C, "m_flDefaultThreadStretch in PhysFeModelDesc_t should be at offset 0x67C");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultGravityScale) == 0x680, "m_flDefaultGravityScale in PhysFeModelDesc_t should be at offset 0x680");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultVelAirDrag) == 0x684, "m_flDefaultVelAirDrag in PhysFeModelDesc_t should be at offset 0x684");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultExpAirDrag) == 0x688, "m_flDefaultExpAirDrag in PhysFeModelDesc_t should be at offset 0x688");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultVelQuadAirDrag) == 0x68C, "m_flDefaultVelQuadAirDrag in PhysFeModelDesc_t should be at offset 0x68C");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultExpQuadAirDrag) == 0x690, "m_flDefaultExpQuadAirDrag in PhysFeModelDesc_t should be at offset 0x690");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flRodVelocitySmoothRate) == 0x694, "m_flRodVelocitySmoothRate in PhysFeModelDesc_t should be at offset 0x694");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flQuadVelocitySmoothRate) == 0x698, "m_flQuadVelocitySmoothRate in PhysFeModelDesc_t should be at offset 0x698");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flAddWorldCollisionRadius) == 0x69C, "m_flAddWorldCollisionRadius in PhysFeModelDesc_t should be at offset 0x69C");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultVolumetricSolveAmount) == 0x6A0, "m_flDefaultVolumetricSolveAmount in PhysFeModelDesc_t should be at offset 0x6A0");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flMotionSmoothCDT) == 0x6A4, "m_flMotionSmoothCDT in PhysFeModelDesc_t should be at offset 0x6A4");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flLocalDrag1) == 0x6A8, "m_flLocalDrag1 in PhysFeModelDesc_t should be at offset 0x6A8");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nRodVelocitySmoothIterations) == 0x6AC, "m_nRodVelocitySmoothIterations in PhysFeModelDesc_t should be at offset 0x6AC");
-		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nQuadVelocitySmoothIterations) == 0x6AE, "m_nQuadVelocitySmoothIterations in PhysFeModelDesc_t should be at offset 0x6AE");
-		static_assert(sizeof(CS2::physicslib::PhysFeModelDesc_t) == 0x6B0, "PhysFeModelDesc_t size should be 0x6B0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_NodeStrayBoxes) == 0x1E0, "m_NodeStrayBoxes in PhysFeModelDesc_t should be at offset 0x1E0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_AxialEdges) == 0x1F8, "m_AxialEdges in PhysFeModelDesc_t should be at offset 0x1F8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_NodeInvMasses) == 0x210, "m_NodeInvMasses in PhysFeModelDesc_t should be at offset 0x210");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlOffsets) == 0x228, "m_CtrlOffsets in PhysFeModelDesc_t should be at offset 0x228");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlOsOffsets) == 0x240, "m_CtrlOsOffsets in PhysFeModelDesc_t should be at offset 0x240");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FollowNodes) == 0x258, "m_FollowNodes in PhysFeModelDesc_t should be at offset 0x258");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CollisionPlanes) == 0x270, "m_CollisionPlanes in PhysFeModelDesc_t should be at offset 0x270");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_NodeIntegrator) == 0x288, "m_NodeIntegrator in PhysFeModelDesc_t should be at offset 0x288");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SpringIntegrator) == 0x2A0, "m_SpringIntegrator in PhysFeModelDesc_t should be at offset 0x2A0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SimdSpringIntegrator) == 0x2B8, "m_SimdSpringIntegrator in PhysFeModelDesc_t should be at offset 0x2B8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_WorldCollisionParams) == 0x2D0, "m_WorldCollisionParams in PhysFeModelDesc_t should be at offset 0x2D0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LegacyStretchForce) == 0x2E8, "m_LegacyStretchForce in PhysFeModelDesc_t should be at offset 0x2E8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_NodeCollisionRadii) == 0x300, "m_NodeCollisionRadii in PhysFeModelDesc_t should be at offset 0x300");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_DynNodeFriction) == 0x318, "m_DynNodeFriction in PhysFeModelDesc_t should be at offset 0x318");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LocalRotation) == 0x330, "m_LocalRotation in PhysFeModelDesc_t should be at offset 0x330");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LocalForce) == 0x348, "m_LocalForce in PhysFeModelDesc_t should be at offset 0x348");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TaperedCapsuleStretches) == 0x360, "m_TaperedCapsuleStretches in PhysFeModelDesc_t should be at offset 0x360");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TaperedCapsuleRigids) == 0x378, "m_TaperedCapsuleRigids in PhysFeModelDesc_t should be at offset 0x378");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SphereRigids) == 0x390, "m_SphereRigids in PhysFeModelDesc_t should be at offset 0x390");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_WorldCollisionNodes) == 0x3A8, "m_WorldCollisionNodes in PhysFeModelDesc_t should be at offset 0x3A8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TreeParents) == 0x3C0, "m_TreeParents in PhysFeModelDesc_t should be at offset 0x3C0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TreeCollisionMasks) == 0x3D8, "m_TreeCollisionMasks in PhysFeModelDesc_t should be at offset 0x3D8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_TreeChildren) == 0x3F0, "m_TreeChildren in PhysFeModelDesc_t should be at offset 0x3F0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FreeNodes) == 0x408, "m_FreeNodes in PhysFeModelDesc_t should be at offset 0x408");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FitMatrices) == 0x420, "m_FitMatrices in PhysFeModelDesc_t should be at offset 0x420");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_FitWeights) == 0x438, "m_FitWeights in PhysFeModelDesc_t should be at offset 0x438");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_ReverseOffsets) == 0x450, "m_ReverseOffsets in PhysFeModelDesc_t should be at offset 0x450");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_AnimStrayRadii) == 0x468, "m_AnimStrayRadii in PhysFeModelDesc_t should be at offset 0x468");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SimdAnimStrayRadii) == 0x480, "m_SimdAnimStrayRadii in PhysFeModelDesc_t should be at offset 0x480");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_KelagerBends) == 0x498, "m_KelagerBends in PhysFeModelDesc_t should be at offset 0x498");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlSoftOffsets) == 0x4B0, "m_CtrlSoftOffsets in PhysFeModelDesc_t should be at offset 0x4B0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_JiggleBones) == 0x4C8, "m_JiggleBones in PhysFeModelDesc_t should be at offset 0x4C8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SourceElems) == 0x4E0, "m_SourceElems in PhysFeModelDesc_t should be at offset 0x4E0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_GoalDampedSpringIntegrators) == 0x4F8, "m_GoalDampedSpringIntegrators in PhysFeModelDesc_t should be at offset 0x4F8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_Tris) == 0x510, "m_Tris in PhysFeModelDesc_t should be at offset 0x510");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nTriCount1) == 0x528, "m_nTriCount1 in PhysFeModelDesc_t should be at offset 0x528");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nTriCount2) == 0x52A, "m_nTriCount2 in PhysFeModelDesc_t should be at offset 0x52A");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nReservedUint8) == 0x52C, "m_nReservedUint8 in PhysFeModelDesc_t should be at offset 0x52C");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nExtraPressureIterations) == 0x52D, "m_nExtraPressureIterations in PhysFeModelDesc_t should be at offset 0x52D");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nExtraGoalIterations) == 0x52E, "m_nExtraGoalIterations in PhysFeModelDesc_t should be at offset 0x52E");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nExtraIterations) == 0x52F, "m_nExtraIterations in PhysFeModelDesc_t should be at offset 0x52F");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SDFRigids) == 0x530, "m_SDFRigids in PhysFeModelDesc_t should be at offset 0x530");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_BoxRigids) == 0x548, "m_BoxRigids in PhysFeModelDesc_t should be at offset 0x548");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_DynNodeVertexSet) == 0x560, "m_DynNodeVertexSet in PhysFeModelDesc_t should be at offset 0x560");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_VertexSetNames) == 0x578, "m_VertexSetNames in PhysFeModelDesc_t should be at offset 0x578");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_RigidColliderPriorities) == 0x590, "m_RigidColliderPriorities in PhysFeModelDesc_t should be at offset 0x590");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_MorphLayers) == 0x5A8, "m_MorphLayers in PhysFeModelDesc_t should be at offset 0x5A8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_MorphSetData) == 0x5C0, "m_MorphSetData in PhysFeModelDesc_t should be at offset 0x5C0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_VertexMaps) == 0x5D8, "m_VertexMaps in PhysFeModelDesc_t should be at offset 0x5D8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_VertexMapValues) == 0x5F0, "m_VertexMapValues in PhysFeModelDesc_t should be at offset 0x5F0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_Effects) == 0x608, "m_Effects in PhysFeModelDesc_t should be at offset 0x608");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LockToParent) == 0x620, "m_LockToParent in PhysFeModelDesc_t should be at offset 0x620");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_LockToGoal) == 0x638, "m_LockToGoal in PhysFeModelDesc_t should be at offset 0x638");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SkelParents) == 0x650, "m_SkelParents in PhysFeModelDesc_t should be at offset 0x650");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_DynNodeWindBases) == 0x668, "m_DynNodeWindBases in PhysFeModelDesc_t should be at offset 0x668");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_SelfCollisionLayers) == 0x680, "m_SelfCollisionLayers in PhysFeModelDesc_t should be at offset 0x680");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flInternalPressure) == 0x698, "m_flInternalPressure in PhysFeModelDesc_t should be at offset 0x698");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultTimeDilation) == 0x69C, "m_flDefaultTimeDilation in PhysFeModelDesc_t should be at offset 0x69C");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flWindage) == 0x6A0, "m_flWindage in PhysFeModelDesc_t should be at offset 0x6A0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flWindDrag) == 0x6A4, "m_flWindDrag in PhysFeModelDesc_t should be at offset 0x6A4");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultSurfaceStretch) == 0x6A8, "m_flDefaultSurfaceStretch in PhysFeModelDesc_t should be at offset 0x6A8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultThreadStretch) == 0x6AC, "m_flDefaultThreadStretch in PhysFeModelDesc_t should be at offset 0x6AC");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultGravityScale) == 0x6B0, "m_flDefaultGravityScale in PhysFeModelDesc_t should be at offset 0x6B0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultVelAirDrag) == 0x6B4, "m_flDefaultVelAirDrag in PhysFeModelDesc_t should be at offset 0x6B4");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultExpAirDrag) == 0x6B8, "m_flDefaultExpAirDrag in PhysFeModelDesc_t should be at offset 0x6B8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultVelQuadAirDrag) == 0x6BC, "m_flDefaultVelQuadAirDrag in PhysFeModelDesc_t should be at offset 0x6BC");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultExpQuadAirDrag) == 0x6C0, "m_flDefaultExpQuadAirDrag in PhysFeModelDesc_t should be at offset 0x6C0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flRodVelocitySmoothRate) == 0x6C4, "m_flRodVelocitySmoothRate in PhysFeModelDesc_t should be at offset 0x6C4");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flQuadVelocitySmoothRate) == 0x6C8, "m_flQuadVelocitySmoothRate in PhysFeModelDesc_t should be at offset 0x6C8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flAddWorldCollisionRadius) == 0x6CC, "m_flAddWorldCollisionRadius in PhysFeModelDesc_t should be at offset 0x6CC");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flDefaultVolumetricSolveAmount) == 0x6D0, "m_flDefaultVolumetricSolveAmount in PhysFeModelDesc_t should be at offset 0x6D0");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flMotionSmoothCDT) == 0x6D4, "m_flMotionSmoothCDT in PhysFeModelDesc_t should be at offset 0x6D4");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_flLocalDrag1) == 0x6D8, "m_flLocalDrag1 in PhysFeModelDesc_t should be at offset 0x6D8");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nRodVelocitySmoothIterations) == 0x6DC, "m_nRodVelocitySmoothIterations in PhysFeModelDesc_t should be at offset 0x6DC");
+		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nQuadVelocitySmoothIterations) == 0x6DE, "m_nQuadVelocitySmoothIterations in PhysFeModelDesc_t should be at offset 0x6DE");
+		static_assert(sizeof(CS2::physicslib::PhysFeModelDesc_t) == 0x6E0, "PhysFeModelDesc_t size should be 0x6E0");
 	}
 }

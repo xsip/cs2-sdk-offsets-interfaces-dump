@@ -23,6 +23,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x168);
 		};
-		static_assert(sizeof(CS2::server::CCSPointScriptEntity) == 0x658, "CCSPointScriptEntity size should be 0x658");
+		static_assert(sizeof(CS2::server::CCSPointScriptEntity) == 0x610, "CCSPointScriptEntity size should be 0x610");
 	}
 }

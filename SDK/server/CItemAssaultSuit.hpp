@@ -22,6 +22,6 @@ namespace CS2 {
 		class CItemAssaultSuit : public CS2::server::CItem {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CItemAssaultSuit) == 0xB70, "CItemAssaultSuit size should be 0xB70");
+		static_assert(sizeof(CS2::server::CItemAssaultSuit) == 0xAC0, "CItemAssaultSuit size should be 0xAC0");
 	}
 }

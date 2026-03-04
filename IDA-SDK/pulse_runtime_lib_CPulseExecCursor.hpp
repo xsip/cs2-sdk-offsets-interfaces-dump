@@ -4,5 +4,5 @@
 
 
 class pulse_runtime_lib_CPulseExecCursor {
-    char pad_519[0xd0];
+    char pad_530[0xd0];
 };

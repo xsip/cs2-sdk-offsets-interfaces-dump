@@ -12,15 +12,11 @@
 
 #include <SDK/animgraphlib/CUnaryUpdateNode.hpp>
 #include <SDK/animgraphlib/FootLockPoseOpFixedSettings.hpp>
+#include <SDK/animgraphlib/FootFixedSettings.hpp>
 #include <SDK/animgraphlib/CAnimInputDamping.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class FootFixedSettings;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -31,7 +27,7 @@ namespace CS2 {
 			animgraphlib::FootLockPoseOpFixedSettings m_opFixedSettings; // 0x70 | Schema_DeclaredClass | Size: 0x68
 			S2_PAD(0x8);
 			GlobalTypes::CUtlVector<animgraphlib::FootFixedSettings> m_footSettings; // 0xe0 | Schema_Atomic | Size: 0x18
-			// char  m_footSettings[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
+			// char m_footSettings[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimInputDamping m_hipShiftDamping; // 0xf8 | Schema_DeclaredClass | Size: 0x18
 			animgraphlib::CAnimInputDamping m_rootHeightDamping; // 0x110 | Schema_DeclaredClass | Size: 0x18
 			float32 m_flStrideCurveScale; // 0x128 | Schema_Builtin | Size: 0x4

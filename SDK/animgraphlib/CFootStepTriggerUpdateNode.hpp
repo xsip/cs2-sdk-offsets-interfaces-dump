@@ -11,14 +11,10 @@
 
 
 #include <SDK/animgraphlib/CUnaryUpdateNode.hpp>
+#include <SDK/animgraphlib/FootStepTrigger.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class FootStepTrigger;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,7 +23,7 @@ namespace CS2 {
 		class CFootStepTriggerUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
 			GlobalTypes::CUtlVector<animgraphlib::FootStepTrigger> m_triggers; // 0x70 | Schema_Atomic | Size: 0x18
-			// char  m_triggers[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			// char m_triggers[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x4);
 			float32 m_flTolerance; // 0x8c | Schema_Builtin | Size: 0x4
 		};

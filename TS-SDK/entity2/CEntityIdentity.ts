@@ -10,6 +10,7 @@ export const entity2_CEntityIdentity  = {
 	m_worldGroupId: 56n, // GlobalTypes::WorldGroupId_t  | Schema_Atomic | Size: 0x4
 	m_fDataObjectTypes: 60n, // uint32_t m_fDataObjectTypes; |  0x3c | Schema_Builtin | Size: 0x4
 	m_PathIndex: 64n, // networksystem::ChangeAccessorFieldPathIndex_t  | Schema_DeclaredClass | Size: 0x4
+	m_pAttributes: 72n, // entity2::CEntityAttributeTable**  | Schema_Ptr | Size: 0x8
 	m_pPrev: 80n, // entity2::CEntityIdentity**  | Schema_Ptr | Size: 0x8
 	m_pNext: 88n, // entity2::CEntityIdentity**  | Schema_Ptr | Size: 0x8
 	m_pPrevByClass: 96n, // entity2::CEntityIdentity**  | Schema_Ptr | Size: 0x8

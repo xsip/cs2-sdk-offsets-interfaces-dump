@@ -16,13 +16,13 @@ export const physicslib_RnBodyDesc_t  = {
 	m_flInertiaScaleInv: 120n, // float32 m_flInertiaScaleInv; |  0x78 | Schema_Builtin | Size: 0x4
 	m_flLinearDamping: 124n, // float32 m_flLinearDamping; |  0x7c | Schema_Builtin | Size: 0x4
 	m_flAngularDamping: 128n, // float32 m_flAngularDamping; |  0x80 | Schema_Builtin | Size: 0x4
-	m_flLinearDrag: 132n, // float32 m_flLinearDrag; |  0x84 | Schema_Builtin | Size: 0x4
-	m_flAngularDrag: 136n, // float32 m_flAngularDrag; |  0x88 | Schema_Builtin | Size: 0x4
-	m_flLinearBuoyancyDrag: 140n, // float32 m_flLinearBuoyancyDrag; |  0x8c | Schema_Builtin | Size: 0x4
-	m_flAngularBuoyancyDrag: 144n, // float32 m_flAngularBuoyancyDrag; |  0x90 | Schema_Builtin | Size: 0x4
+	m_flLinearDragScale: 132n, // float32 m_flLinearDragScale; |  0x84 | Schema_Builtin | Size: 0x4
+	m_flAngularDragScale: 136n, // float32 m_flAngularDragScale; |  0x88 | Schema_Builtin | Size: 0x4
+	m_flLinearFluidDragScale: 140n, // float32 m_flLinearFluidDragScale; |  0x8c | Schema_Builtin | Size: 0x4
+	m_flAngularFluidDragScale: 144n, // float32 m_flAngularFluidDragScale; |  0x90 | Schema_Builtin | Size: 0x4
 	m_vLastAwakeForceAccum: 148n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_vLastAwakeTorqueAccum: 160n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-	m_flBuoyancyFactor: 172n, // float32 m_flBuoyancyFactor; |  0xac | Schema_Builtin | Size: 0x4
+	m_flBuoyancyScale: 172n, // float32 m_flBuoyancyScale; |  0xac | Schema_Builtin | Size: 0x4
 	m_flGravityScale: 176n, // float32 m_flGravityScale; |  0xb0 | Schema_Builtin | Size: 0x4
 	m_flTimeScale: 180n, // float32 m_flTimeScale; |  0xb4 | Schema_Builtin | Size: 0x4
 	m_nBodyType: 184n, // int32_t m_nBodyType; |  0xb8 | Schema_Builtin | Size: 0x4
@@ -35,7 +35,6 @@ export const physicslib_RnBodyDesc_t  = {
 	m_bSleeping: 200n, // bool m_bSleeping; |  0xc8 | Schema_Builtin | Size: 0x1
 	m_bIsContinuousEnabled: 201n, // bool m_bIsContinuousEnabled; |  0xc9 | Schema_Builtin | Size: 0x1
 	m_bDragEnabled: 202n, // bool m_bDragEnabled; |  0xca | Schema_Builtin | Size: 0x1
-	m_bBuoyancyDragEnabled: 203n, // bool m_bBuoyancyDragEnabled; |  0xcb | Schema_Builtin | Size: 0x1
 	m_vGravity: 204n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_bSpeculativeEnabled: 216n, // bool m_bSpeculativeEnabled; |  0xd8 | Schema_Builtin | Size: 0x1
 	m_bHasShadowController: 217n, // bool m_bHasShadowController; |  0xd9 | Schema_Builtin | Size: 0x1

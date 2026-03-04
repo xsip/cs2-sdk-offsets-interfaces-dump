@@ -4,9 +4,9 @@
 
 
 class server_CIronSightController {
-    char vTable2828[0x8];
+    void **__vftable_0;
     bool m_bIronSightAvailable;
-    char pad_2829[0x3];
+    char pad_3020[0x3];
     float32 m_flIronSightAmount;
     float32 m_flIronSightAmountGained;
     float32 m_flIronSightAmountBiased;

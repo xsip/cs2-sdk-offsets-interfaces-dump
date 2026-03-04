@@ -26,89 +26,95 @@ namespace CS2 {
 		class CPhysicsProp : public CS2::server::CBreakableProp {
 		public:
 			S2_PAD(0x10);
-			entity2::CEntityIOOutput m_MotionEnabled; // 0xc60 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAwakened; // 0xc88 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAwake; // 0xcb0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAsleep; // 0xcd8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPlayerUse; // 0xd00 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnOutOfWorld; // 0xd28 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xd50 | Schema_DeclaredClass | Size: 0x28
-			bool m_bForceNavIgnore; // 0xd78 | Schema_Builtin | Size: 0x1
-			bool m_bNoNavmeshBlocker; // 0xd79 | Schema_Builtin | Size: 0x1
-			bool m_bForceNpcExclude; // 0xd7a | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_MotionEnabled; // 0xbb0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnAwakened; // 0xbc8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnAwake; // 0xbe0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnAsleep; // 0xbf8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnPlayerUse; // 0xc10 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnOutOfWorld; // 0xc28 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnPlayerPickup; // 0xc40 | Schema_DeclaredClass | Size: 0x18
+			bool m_bForceNavIgnore; // 0xc58 | Schema_Builtin | Size: 0x1
+			bool m_bNoNavmeshBlocker; // 0xc59 | Schema_Builtin | Size: 0x1
+			bool m_bForceNpcExclude; // 0xc5a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			float32 m_massScale; // 0xd7c | Schema_Builtin | Size: 0x4
-			float32 m_buoyancyScale; // 0xd80 | Schema_Builtin | Size: 0x4
-			int32_t m_damageType; // 0xd84 | Schema_Builtin | Size: 0x4
-			int32_t m_damageToEnableMotion; // 0xd88 | Schema_Builtin | Size: 0x4
-			float32 m_flForceToEnableMotion; // 0xd8c | Schema_Builtin | Size: 0x4
-			bool m_bThrownByPlayer; // 0xd90 | Schema_Builtin | Size: 0x1
-			bool m_bDroppedByPlayer; // 0xd91 | Schema_Builtin | Size: 0x1
-			bool m_bTouchedByPlayer; // 0xd92 | Schema_Builtin | Size: 0x1
-			bool m_bFirstCollisionAfterLaunch; // 0xd93 | Schema_Builtin | Size: 0x1
-			bool m_bHasBeenAwakened; // 0xd94 | Schema_Builtin | Size: 0x1
-			bool m_bIsOverrideProp; // 0xd95 | Schema_Builtin | Size: 0x1
+			float32 m_massScale; // 0xc5c | Schema_Builtin | Size: 0x4
+			float32 m_buoyancyScale; // 0xc60 | Schema_Builtin | Size: 0x4
+			int32_t m_damageType; // 0xc64 | Schema_Builtin | Size: 0x4
+			int32_t m_damageToEnableMotion; // 0xc68 | Schema_Builtin | Size: 0x4
+			float32 m_flForceToEnableMotion; // 0xc6c | Schema_Builtin | Size: 0x4
+			bool m_bThrownByPlayer; // 0xc70 | Schema_Builtin | Size: 0x1
+			bool m_bDroppedByPlayer; // 0xc71 | Schema_Builtin | Size: 0x1
+			bool m_bTouchedByPlayer; // 0xc72 | Schema_Builtin | Size: 0x1
+			bool m_bFirstCollisionAfterLaunch; // 0xc73 | Schema_Builtin | Size: 0x1
+			bool m_bHasBeenAwakened; // 0xc74 | Schema_Builtin | Size: 0x1
+			bool m_bIsOverrideProp; // 0xc75 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_flLastBurn; // 0xd98 | Schema_DeclaredClass | Size: 0x4
-			physicslib::DynamicContinuousContactBehavior_t m_nDynamicContinuousContactBehavior; // 0xd9c | Schema_DeclaredEnum | Size: 0x1
+			entity2::GameTime_t m_flLastBurn; // 0xc78 | Schema_DeclaredClass | Size: 0x4
+			physicslib::DynamicContinuousContactBehavior_t m_nDynamicContinuousContactBehavior; // 0xc7c | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_fNextCheckDisableMotionContactsTime; // 0xda0 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_iInitialGlowState; // 0xda4 | Schema_Builtin | Size: 0x4
-			int32_t m_nGlowRange; // 0xda8 | Schema_Builtin | Size: 0x4
-			int32_t m_nGlowRangeMin; // 0xdac | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_glowColor; // 0xdb0 | Schema_Atomic | Size: 0x4
-			bool m_bShouldAutoConvertBackFromDebris; // 0xdb4 | Schema_Builtin | Size: 0x1
-			bool m_bMuteImpactEffects; // 0xdb5 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x9);
-			bool m_bAcceptDamageFromHeldObjects; // 0xdbf | Schema_Builtin | Size: 0x1
-			bool m_bEnableUseOutput; // 0xdc0 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_fNextCheckDisableMotionContactsTime; // 0xc80 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_iInitialGlowState; // 0xc84 | Schema_Builtin | Size: 0x4
+			int32_t m_nGlowRange; // 0xc88 | Schema_Builtin | Size: 0x4
+			int32_t m_nGlowRangeMin; // 0xc8c | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_glowColor; // 0xc90 | Schema_Atomic | Size: 0x4
+			bool m_bShouldAutoConvertBackFromDebris; // 0xc94 | Schema_Builtin | Size: 0x1
+			bool m_bMuteImpactEffects; // 0xc95 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x6);
+			bool m_bUpdateNavWhenMoving; // 0xc9c | Schema_Builtin | Size: 0x1
+			bool m_bForceNavObstacleCut; // 0xc9d | Schema_Builtin | Size: 0x1
+			bool m_bAllowObstacleConvexHullMerging; // 0xc9e | Schema_Builtin | Size: 0x1
+			bool m_bAcceptDamageFromHeldObjects; // 0xc9f | Schema_Builtin | Size: 0x1
+			bool m_bEnableUseOutput; // 0xca0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::CrateType_t m_CrateType; // 0xdc4 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_strItemClass[4]; // 0xdc8 | Schema_FixedArray | Size: 0x20
-			int32_t m_nItemCount[4]; // 0xde8 | Schema_FixedArray | Size: 0x10
-			bool m_bRemovableForAmmoBalancing; // 0xdf8 | Schema_Builtin | Size: 0x1
-			bool m_bAwake; // 0xdf9 | Schema_Builtin | Size: 0x1
-			bool m_bAttachedToReferenceFrame; // 0xdfa | Schema_Builtin | Size: 0x1
+			server::CrateType_t m_CrateType; // 0xca4 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_strItemClass[4]; // 0xca8 | Schema_FixedArray | Size: 0x20
+			int32_t m_nItemCount[4]; // 0xcc8 | Schema_FixedArray | Size: 0x10
+			bool m_bRemovableForAmmoBalancing; // 0xcd8 | Schema_Builtin | Size: 0x1
+			bool m_bAwake; // 0xcd9 | Schema_Builtin | Size: 0x1
+			bool m_bAttachedToReferenceFrame; // 0xcda | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_MotionEnabled) == 0xC60, "m_MotionEnabled in CPhysicsProp should be at offset 0xC60");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAwakened) == 0xC88, "m_OnAwakened in CPhysicsProp should be at offset 0xC88");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAwake) == 0xCB0, "m_OnAwake in CPhysicsProp should be at offset 0xCB0");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAsleep) == 0xCD8, "m_OnAsleep in CPhysicsProp should be at offset 0xCD8");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnPlayerUse) == 0xD00, "m_OnPlayerUse in CPhysicsProp should be at offset 0xD00");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnOutOfWorld) == 0xD28, "m_OnOutOfWorld in CPhysicsProp should be at offset 0xD28");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnPlayerPickup) == 0xD50, "m_OnPlayerPickup in CPhysicsProp should be at offset 0xD50");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bForceNavIgnore) == 0xD78, "m_bForceNavIgnore in CPhysicsProp should be at offset 0xD78");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bNoNavmeshBlocker) == 0xD79, "m_bNoNavmeshBlocker in CPhysicsProp should be at offset 0xD79");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bForceNpcExclude) == 0xD7A, "m_bForceNpcExclude in CPhysicsProp should be at offset 0xD7A");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_massScale) == 0xD7C, "m_massScale in CPhysicsProp should be at offset 0xD7C");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_buoyancyScale) == 0xD80, "m_buoyancyScale in CPhysicsProp should be at offset 0xD80");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_damageType) == 0xD84, "m_damageType in CPhysicsProp should be at offset 0xD84");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_damageToEnableMotion) == 0xD88, "m_damageToEnableMotion in CPhysicsProp should be at offset 0xD88");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_flForceToEnableMotion) == 0xD8C, "m_flForceToEnableMotion in CPhysicsProp should be at offset 0xD8C");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bThrownByPlayer) == 0xD90, "m_bThrownByPlayer in CPhysicsProp should be at offset 0xD90");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bDroppedByPlayer) == 0xD91, "m_bDroppedByPlayer in CPhysicsProp should be at offset 0xD91");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bTouchedByPlayer) == 0xD92, "m_bTouchedByPlayer in CPhysicsProp should be at offset 0xD92");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bFirstCollisionAfterLaunch) == 0xD93, "m_bFirstCollisionAfterLaunch in CPhysicsProp should be at offset 0xD93");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bHasBeenAwakened) == 0xD94, "m_bHasBeenAwakened in CPhysicsProp should be at offset 0xD94");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bIsOverrideProp) == 0xD95, "m_bIsOverrideProp in CPhysicsProp should be at offset 0xD95");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_flLastBurn) == 0xD98, "m_flLastBurn in CPhysicsProp should be at offset 0xD98");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_nDynamicContinuousContactBehavior) == 0xD9C, "m_nDynamicContinuousContactBehavior in CPhysicsProp should be at offset 0xD9C");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_fNextCheckDisableMotionContactsTime) == 0xDA0, "m_fNextCheckDisableMotionContactsTime in CPhysicsProp should be at offset 0xDA0");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_iInitialGlowState) == 0xDA4, "m_iInitialGlowState in CPhysicsProp should be at offset 0xDA4");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_nGlowRange) == 0xDA8, "m_nGlowRange in CPhysicsProp should be at offset 0xDA8");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_nGlowRangeMin) == 0xDAC, "m_nGlowRangeMin in CPhysicsProp should be at offset 0xDAC");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_glowColor) == 0xDB0, "m_glowColor in CPhysicsProp should be at offset 0xDB0");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bShouldAutoConvertBackFromDebris) == 0xDB4, "m_bShouldAutoConvertBackFromDebris in CPhysicsProp should be at offset 0xDB4");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bMuteImpactEffects) == 0xDB5, "m_bMuteImpactEffects in CPhysicsProp should be at offset 0xDB5");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAcceptDamageFromHeldObjects) == 0xDBF, "m_bAcceptDamageFromHeldObjects in CPhysicsProp should be at offset 0xDBF");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bEnableUseOutput) == 0xDC0, "m_bEnableUseOutput in CPhysicsProp should be at offset 0xDC0");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_CrateType) == 0xDC4, "m_CrateType in CPhysicsProp should be at offset 0xDC4");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_strItemClass) == 0xDC8, "m_strItemClass in CPhysicsProp should be at offset 0xDC8");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_nItemCount) == 0xDE8, "m_nItemCount in CPhysicsProp should be at offset 0xDE8");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bRemovableForAmmoBalancing) == 0xDF8, "m_bRemovableForAmmoBalancing in CPhysicsProp should be at offset 0xDF8");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAwake) == 0xDF9, "m_bAwake in CPhysicsProp should be at offset 0xDF9");
-		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAttachedToReferenceFrame) == 0xDFA, "m_bAttachedToReferenceFrame in CPhysicsProp should be at offset 0xDFA");
-		static_assert(sizeof(CS2::server::CPhysicsProp) == 0xE00, "CPhysicsProp size should be 0xE00");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_MotionEnabled) == 0xBB0, "m_MotionEnabled in CPhysicsProp should be at offset 0xBB0");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAwakened) == 0xBC8, "m_OnAwakened in CPhysicsProp should be at offset 0xBC8");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAwake) == 0xBE0, "m_OnAwake in CPhysicsProp should be at offset 0xBE0");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAsleep) == 0xBF8, "m_OnAsleep in CPhysicsProp should be at offset 0xBF8");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnPlayerUse) == 0xC10, "m_OnPlayerUse in CPhysicsProp should be at offset 0xC10");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnOutOfWorld) == 0xC28, "m_OnOutOfWorld in CPhysicsProp should be at offset 0xC28");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnPlayerPickup) == 0xC40, "m_OnPlayerPickup in CPhysicsProp should be at offset 0xC40");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bForceNavIgnore) == 0xC58, "m_bForceNavIgnore in CPhysicsProp should be at offset 0xC58");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bNoNavmeshBlocker) == 0xC59, "m_bNoNavmeshBlocker in CPhysicsProp should be at offset 0xC59");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bForceNpcExclude) == 0xC5A, "m_bForceNpcExclude in CPhysicsProp should be at offset 0xC5A");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_massScale) == 0xC5C, "m_massScale in CPhysicsProp should be at offset 0xC5C");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_buoyancyScale) == 0xC60, "m_buoyancyScale in CPhysicsProp should be at offset 0xC60");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_damageType) == 0xC64, "m_damageType in CPhysicsProp should be at offset 0xC64");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_damageToEnableMotion) == 0xC68, "m_damageToEnableMotion in CPhysicsProp should be at offset 0xC68");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_flForceToEnableMotion) == 0xC6C, "m_flForceToEnableMotion in CPhysicsProp should be at offset 0xC6C");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bThrownByPlayer) == 0xC70, "m_bThrownByPlayer in CPhysicsProp should be at offset 0xC70");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bDroppedByPlayer) == 0xC71, "m_bDroppedByPlayer in CPhysicsProp should be at offset 0xC71");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bTouchedByPlayer) == 0xC72, "m_bTouchedByPlayer in CPhysicsProp should be at offset 0xC72");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bFirstCollisionAfterLaunch) == 0xC73, "m_bFirstCollisionAfterLaunch in CPhysicsProp should be at offset 0xC73");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bHasBeenAwakened) == 0xC74, "m_bHasBeenAwakened in CPhysicsProp should be at offset 0xC74");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bIsOverrideProp) == 0xC75, "m_bIsOverrideProp in CPhysicsProp should be at offset 0xC75");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_flLastBurn) == 0xC78, "m_flLastBurn in CPhysicsProp should be at offset 0xC78");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_nDynamicContinuousContactBehavior) == 0xC7C, "m_nDynamicContinuousContactBehavior in CPhysicsProp should be at offset 0xC7C");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_fNextCheckDisableMotionContactsTime) == 0xC80, "m_fNextCheckDisableMotionContactsTime in CPhysicsProp should be at offset 0xC80");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_iInitialGlowState) == 0xC84, "m_iInitialGlowState in CPhysicsProp should be at offset 0xC84");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_nGlowRange) == 0xC88, "m_nGlowRange in CPhysicsProp should be at offset 0xC88");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_nGlowRangeMin) == 0xC8C, "m_nGlowRangeMin in CPhysicsProp should be at offset 0xC8C");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_glowColor) == 0xC90, "m_glowColor in CPhysicsProp should be at offset 0xC90");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bShouldAutoConvertBackFromDebris) == 0xC94, "m_bShouldAutoConvertBackFromDebris in CPhysicsProp should be at offset 0xC94");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bMuteImpactEffects) == 0xC95, "m_bMuteImpactEffects in CPhysicsProp should be at offset 0xC95");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bUpdateNavWhenMoving) == 0xC9C, "m_bUpdateNavWhenMoving in CPhysicsProp should be at offset 0xC9C");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bForceNavObstacleCut) == 0xC9D, "m_bForceNavObstacleCut in CPhysicsProp should be at offset 0xC9D");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAllowObstacleConvexHullMerging) == 0xC9E, "m_bAllowObstacleConvexHullMerging in CPhysicsProp should be at offset 0xC9E");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAcceptDamageFromHeldObjects) == 0xC9F, "m_bAcceptDamageFromHeldObjects in CPhysicsProp should be at offset 0xC9F");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bEnableUseOutput) == 0xCA0, "m_bEnableUseOutput in CPhysicsProp should be at offset 0xCA0");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_CrateType) == 0xCA4, "m_CrateType in CPhysicsProp should be at offset 0xCA4");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_strItemClass) == 0xCA8, "m_strItemClass in CPhysicsProp should be at offset 0xCA8");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_nItemCount) == 0xCC8, "m_nItemCount in CPhysicsProp should be at offset 0xCC8");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bRemovableForAmmoBalancing) == 0xCD8, "m_bRemovableForAmmoBalancing in CPhysicsProp should be at offset 0xCD8");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAwake) == 0xCD9, "m_bAwake in CPhysicsProp should be at offset 0xCD9");
+		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAttachedToReferenceFrame) == 0xCDA, "m_bAttachedToReferenceFrame in CPhysicsProp should be at offset 0xCDA");
+		static_assert(sizeof(CS2::server::CPhysicsProp) == 0xCE0, "CPhysicsProp size should be 0xCE0");
 	}
 }

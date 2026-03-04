@@ -13,6 +13,7 @@
 #include <SDK/pulse_runtime_lib/CPulseCell_BaseYieldingInflow.hpp>
 #include <SDK/server/PulseScriptedSequenceData_t.hpp>
 #include <SDK/pulse_runtime_lib/CPulse_ResumePoint.hpp>
+#include <SDK/pulse_runtime_lib/CPulse_OutflowConnection.hpp>
 
 
 
@@ -31,11 +32,11 @@ namespace CS2 {
 			S2_PAD(0x1);
 			server::PulseScriptedSequenceData_t m_scriptedSequenceDataMain; // 0x58 | Schema_DeclaredClass | Size: 0x38
 			GlobalTypes::CUtlVector<server::PulseScriptedSequenceData_t> m_vecAdditionalActors; // 0x90 | Schema_Atomic | Size: 0x18
-			// char  m_vecAdditionalActors[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			// char m_vecAdditionalActors[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0xa8 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xf0 | Schema_DeclaredClass | Size: 0x48
 			// server::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Triggers; // 0x138 | Schema_Atomic | Size: 0x18
-			char  m_Triggers[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
+			char m_Triggers[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ScriptedSequence, m_szSyncGroup) == 0x48, "m_szSyncGroup in CPulseCell_Outflow_ScriptedSequence should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ScriptedSequence, m_nExpectedNumSequencesInSyncGroup) == 0x50, "m_nExpectedNumSequencesInSyncGroup in CPulseCell_Outflow_ScriptedSequence should be at offset 0x50");

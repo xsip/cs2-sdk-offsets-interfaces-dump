@@ -23,65 +23,65 @@ namespace CS2 {
 		class C_Inferno : public CS2::client::C_BaseModelEntity {
 		public:
 			S2_PAD(0x40);
-			client::ParticleIndex_t m_nfxFireDamageEffect; // 0xef0 | Schema_DeclaredClass | Size: 0x4
+			client::ParticleIndex_t m_nfxFireDamageEffect; // 0xec8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoPointsSnapshot; // 0xef8 | Schema_Atomic | Size: 0x8
-			char  m_hInfernoPointsSnapshot[0x8]; // 0xef8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoFillerPointsSnapshot; // 0xf00 | Schema_Atomic | Size: 0x8
-			char  m_hInfernoFillerPointsSnapshot[0x8]; // 0xf00 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoOutlinePointsSnapshot; // 0xf08 | Schema_Atomic | Size: 0x8
-			char  m_hInfernoOutlinePointsSnapshot[0x8]; // 0xf08 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoClimbingOutlinePointsSnapshot; // 0xf10 | Schema_Atomic | Size: 0x8
-			char  m_hInfernoClimbingOutlinePointsSnapshot[0x8]; // 0xf10 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoDecalsSnapshot; // 0xf18 | Schema_Atomic | Size: 0x8
-			char  m_hInfernoDecalsSnapshot[0x8]; // 0xf18 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_firePositions[64]; // 0xf20 | Schema_FixedArray | Size: 0x300
-			GlobalTypes::Vector m_fireParentPositions[64]; // 0x1220 | Schema_FixedArray | Size: 0x300
-			bool m_bFireIsBurning[64]; // 0x1520 | Schema_FixedArray | Size: 0x40
-			GlobalTypes::Vector m_BurnNormal[64]; // 0x1560 | Schema_FixedArray | Size: 0x300
-			int32_t m_fireCount; // 0x1860 | Schema_Builtin | Size: 0x4
-			int32_t m_nInfernoType; // 0x1864 | Schema_Builtin | Size: 0x4
-			float32 m_nFireLifetime; // 0x1868 | Schema_Builtin | Size: 0x4
-			bool m_bInPostEffectTime; // 0x186c | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoPointsSnapshot; // 0xed0 | Schema_Atomic | Size: 0x8
+			char m_hInfernoPointsSnapshot[0x8]; // 0xed0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoFillerPointsSnapshot; // 0xed8 | Schema_Atomic | Size: 0x8
+			char m_hInfernoFillerPointsSnapshot[0x8]; // 0xed8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoOutlinePointsSnapshot; // 0xee0 | Schema_Atomic | Size: 0x8
+			char m_hInfernoOutlinePointsSnapshot[0x8]; // 0xee0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoClimbingOutlinePointsSnapshot; // 0xee8 | Schema_Atomic | Size: 0x8
+			char m_hInfernoClimbingOutlinePointsSnapshot[0x8]; // 0xee8 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSnapshot> m_hInfernoDecalsSnapshot; // 0xef0 | Schema_Atomic | Size: 0x8
+			char m_hInfernoDecalsSnapshot[0x8]; // 0xef0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector m_firePositions[64]; // 0xef8 | Schema_FixedArray | Size: 0x300
+			GlobalTypes::Vector m_fireParentPositions[64]; // 0x11f8 | Schema_FixedArray | Size: 0x300
+			bool m_bFireIsBurning[64]; // 0x14f8 | Schema_FixedArray | Size: 0x40
+			GlobalTypes::Vector m_BurnNormal[64]; // 0x1538 | Schema_FixedArray | Size: 0x300
+			int32_t m_fireCount; // 0x1838 | Schema_Builtin | Size: 0x4
+			int32_t m_nInfernoType; // 0x183c | Schema_Builtin | Size: 0x4
+			float32 m_nFireLifetime; // 0x1840 | Schema_Builtin | Size: 0x4
+			bool m_bInPostEffectTime; // 0x1844 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_lastFireCount; // 0x1870 | Schema_Builtin | Size: 0x4
-			int32_t m_nFireEffectTickBegin; // 0x1874 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x6c08);
-			int32_t m_drawableCount; // 0x8480 | Schema_Builtin | Size: 0x4
-			bool m_blosCheck; // 0x8484 | Schema_Builtin | Size: 0x1
+			int32_t m_lastFireCount; // 0x1848 | Schema_Builtin | Size: 0x4
+			int32_t m_nFireEffectTickBegin; // 0x184c | Schema_Builtin | Size: 0x4
+			S2_PAD(0x6c00);
+			int32_t m_drawableCount; // 0x8450 | Schema_Builtin | Size: 0x4
+			bool m_blosCheck; // 0x8454 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nlosperiod; // 0x8488 | Schema_Builtin | Size: 0x4
-			float32 m_maxFireHalfWidth; // 0x848c | Schema_Builtin | Size: 0x4
-			float32 m_maxFireHeight; // 0x8490 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_minBounds; // 0x8494 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_maxBounds; // 0x84a0 | Schema_Atomic | Size: 0xc
-			float32 m_flLastGrassBurnThink; // 0x84ac | Schema_Builtin | Size: 0x4
+			int32_t m_nlosperiod; // 0x8458 | Schema_Builtin | Size: 0x4
+			float32 m_maxFireHalfWidth; // 0x845c | Schema_Builtin | Size: 0x4
+			float32 m_maxFireHeight; // 0x8460 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_minBounds; // 0x8464 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_maxBounds; // 0x8470 | Schema_Atomic | Size: 0xc
+			float32 m_flLastGrassBurnThink; // 0x847c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x10); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_Inferno, m_nfxFireDamageEffect) == 0xEF0, "m_nfxFireDamageEffect in C_Inferno should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoPointsSnapshot) == 0xEF8, "m_hInfernoPointsSnapshot in C_Inferno should be at offset 0xEF8");
-		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoFillerPointsSnapshot) == 0xF00, "m_hInfernoFillerPointsSnapshot in C_Inferno should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoOutlinePointsSnapshot) == 0xF08, "m_hInfernoOutlinePointsSnapshot in C_Inferno should be at offset 0xF08");
-		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoClimbingOutlinePointsSnapshot) == 0xF10, "m_hInfernoClimbingOutlinePointsSnapshot in C_Inferno should be at offset 0xF10");
-		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoDecalsSnapshot) == 0xF18, "m_hInfernoDecalsSnapshot in C_Inferno should be at offset 0xF18");
-		static_assert(offsetof(CS2::client::C_Inferno, m_firePositions) == 0xF20, "m_firePositions in C_Inferno should be at offset 0xF20");
-		static_assert(offsetof(CS2::client::C_Inferno, m_fireParentPositions) == 0x1220, "m_fireParentPositions in C_Inferno should be at offset 0x1220");
-		static_assert(offsetof(CS2::client::C_Inferno, m_bFireIsBurning) == 0x1520, "m_bFireIsBurning in C_Inferno should be at offset 0x1520");
-		static_assert(offsetof(CS2::client::C_Inferno, m_BurnNormal) == 0x1560, "m_BurnNormal in C_Inferno should be at offset 0x1560");
-		static_assert(offsetof(CS2::client::C_Inferno, m_fireCount) == 0x1860, "m_fireCount in C_Inferno should be at offset 0x1860");
-		static_assert(offsetof(CS2::client::C_Inferno, m_nInfernoType) == 0x1864, "m_nInfernoType in C_Inferno should be at offset 0x1864");
-		static_assert(offsetof(CS2::client::C_Inferno, m_nFireLifetime) == 0x1868, "m_nFireLifetime in C_Inferno should be at offset 0x1868");
-		static_assert(offsetof(CS2::client::C_Inferno, m_bInPostEffectTime) == 0x186C, "m_bInPostEffectTime in C_Inferno should be at offset 0x186C");
-		static_assert(offsetof(CS2::client::C_Inferno, m_lastFireCount) == 0x1870, "m_lastFireCount in C_Inferno should be at offset 0x1870");
-		static_assert(offsetof(CS2::client::C_Inferno, m_nFireEffectTickBegin) == 0x1874, "m_nFireEffectTickBegin in C_Inferno should be at offset 0x1874");
-		static_assert(offsetof(CS2::client::C_Inferno, m_drawableCount) == 0x8480, "m_drawableCount in C_Inferno should be at offset 0x8480");
-		static_assert(offsetof(CS2::client::C_Inferno, m_blosCheck) == 0x8484, "m_blosCheck in C_Inferno should be at offset 0x8484");
-		static_assert(offsetof(CS2::client::C_Inferno, m_nlosperiod) == 0x8488, "m_nlosperiod in C_Inferno should be at offset 0x8488");
-		static_assert(offsetof(CS2::client::C_Inferno, m_maxFireHalfWidth) == 0x848C, "m_maxFireHalfWidth in C_Inferno should be at offset 0x848C");
-		static_assert(offsetof(CS2::client::C_Inferno, m_maxFireHeight) == 0x8490, "m_maxFireHeight in C_Inferno should be at offset 0x8490");
-		static_assert(offsetof(CS2::client::C_Inferno, m_minBounds) == 0x8494, "m_minBounds in C_Inferno should be at offset 0x8494");
-		static_assert(offsetof(CS2::client::C_Inferno, m_maxBounds) == 0x84A0, "m_maxBounds in C_Inferno should be at offset 0x84A0");
-		static_assert(offsetof(CS2::client::C_Inferno, m_flLastGrassBurnThink) == 0x84AC, "m_flLastGrassBurnThink in C_Inferno should be at offset 0x84AC");
-		static_assert(sizeof(CS2::client::C_Inferno) == 0x84C0, "C_Inferno size should be 0x84C0");
+		static_assert(offsetof(CS2::client::C_Inferno, m_nfxFireDamageEffect) == 0xEC8, "m_nfxFireDamageEffect in C_Inferno should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoPointsSnapshot) == 0xED0, "m_hInfernoPointsSnapshot in C_Inferno should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoFillerPointsSnapshot) == 0xED8, "m_hInfernoFillerPointsSnapshot in C_Inferno should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoOutlinePointsSnapshot) == 0xEE0, "m_hInfernoOutlinePointsSnapshot in C_Inferno should be at offset 0xEE0");
+		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoClimbingOutlinePointsSnapshot) == 0xEE8, "m_hInfernoClimbingOutlinePointsSnapshot in C_Inferno should be at offset 0xEE8");
+		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoDecalsSnapshot) == 0xEF0, "m_hInfernoDecalsSnapshot in C_Inferno should be at offset 0xEF0");
+		static_assert(offsetof(CS2::client::C_Inferno, m_firePositions) == 0xEF8, "m_firePositions in C_Inferno should be at offset 0xEF8");
+		static_assert(offsetof(CS2::client::C_Inferno, m_fireParentPositions) == 0x11F8, "m_fireParentPositions in C_Inferno should be at offset 0x11F8");
+		static_assert(offsetof(CS2::client::C_Inferno, m_bFireIsBurning) == 0x14F8, "m_bFireIsBurning in C_Inferno should be at offset 0x14F8");
+		static_assert(offsetof(CS2::client::C_Inferno, m_BurnNormal) == 0x1538, "m_BurnNormal in C_Inferno should be at offset 0x1538");
+		static_assert(offsetof(CS2::client::C_Inferno, m_fireCount) == 0x1838, "m_fireCount in C_Inferno should be at offset 0x1838");
+		static_assert(offsetof(CS2::client::C_Inferno, m_nInfernoType) == 0x183C, "m_nInfernoType in C_Inferno should be at offset 0x183C");
+		static_assert(offsetof(CS2::client::C_Inferno, m_nFireLifetime) == 0x1840, "m_nFireLifetime in C_Inferno should be at offset 0x1840");
+		static_assert(offsetof(CS2::client::C_Inferno, m_bInPostEffectTime) == 0x1844, "m_bInPostEffectTime in C_Inferno should be at offset 0x1844");
+		static_assert(offsetof(CS2::client::C_Inferno, m_lastFireCount) == 0x1848, "m_lastFireCount in C_Inferno should be at offset 0x1848");
+		static_assert(offsetof(CS2::client::C_Inferno, m_nFireEffectTickBegin) == 0x184C, "m_nFireEffectTickBegin in C_Inferno should be at offset 0x184C");
+		static_assert(offsetof(CS2::client::C_Inferno, m_drawableCount) == 0x8450, "m_drawableCount in C_Inferno should be at offset 0x8450");
+		static_assert(offsetof(CS2::client::C_Inferno, m_blosCheck) == 0x8454, "m_blosCheck in C_Inferno should be at offset 0x8454");
+		static_assert(offsetof(CS2::client::C_Inferno, m_nlosperiod) == 0x8458, "m_nlosperiod in C_Inferno should be at offset 0x8458");
+		static_assert(offsetof(CS2::client::C_Inferno, m_maxFireHalfWidth) == 0x845C, "m_maxFireHalfWidth in C_Inferno should be at offset 0x845C");
+		static_assert(offsetof(CS2::client::C_Inferno, m_maxFireHeight) == 0x8460, "m_maxFireHeight in C_Inferno should be at offset 0x8460");
+		static_assert(offsetof(CS2::client::C_Inferno, m_minBounds) == 0x8464, "m_minBounds in C_Inferno should be at offset 0x8464");
+		static_assert(offsetof(CS2::client::C_Inferno, m_maxBounds) == 0x8470, "m_maxBounds in C_Inferno should be at offset 0x8470");
+		static_assert(offsetof(CS2::client::C_Inferno, m_flLastGrassBurnThink) == 0x847C, "m_flLastGrassBurnThink in C_Inferno should be at offset 0x847C");
+		static_assert(sizeof(CS2::client::C_Inferno) == 0x8490, "C_Inferno size should be 0x8490");
 	}
 }

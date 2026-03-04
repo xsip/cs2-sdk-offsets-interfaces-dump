@@ -10,16 +10,12 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x30
 			namespace CClientAlphaProperty /*: public CS2::client::IClientAlphaProperty*/ {
-				constexpr std::ptrdiff_t m_nRenderFX = 0x10; // uint8_t m_nRenderFX; |  0x10 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nRenderMode = 0x11; // uint8_t m_nRenderMode; |  0x11 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nAlpha = 0x13; // uint8_t m_nAlpha; |  0x13 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nDesyncOffset = 0x14; // uint16_t m_nDesyncOffset; |  0x14 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_nReserved2 = 0x16; // uint16_t m_nReserved2; |  0x16 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_nDistFadeStart = 0x18; // uint16_t m_nDistFadeStart; |  0x18 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_nDistFadeEnd = 0x1a; // uint16_t m_nDistFadeEnd; |  0x1a | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_flFadeScale = 0x1c; // float32 m_flFadeScale; |  0x1c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRenderFxStartTime = 0x20; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flRenderFxDuration = 0x24; // float32 m_flRenderFxDuration; |  0x24 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nDistFadeStart = 0x10; // uint16_t m_nDistFadeStart; |  0x10 | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_nDistFadeEnd = 0x12; // uint16_t m_nDistFadeEnd; |  0x12 | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_nAlpha = 0x17; // uint8_t m_nAlpha; |  0x17 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFadeScale = 0x18; // float32 m_flFadeScale; |  0x18 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRenderFxStartTime = 0x1c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flRenderFxDuration = 0x20; // float32 m_flRenderFxDuration; |  0x20 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -43,10 +43,10 @@ namespace CS2 {
 			float32 m_flInitialWindSpeed; // 0x2c | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_location; // 0x30 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnGustStart; // 0x40 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnGustEnd; // 0x68 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CHandle<server::CBaseEntity> m_hEntOwner; // 0x90 | Schema_Atomic | Size: 0x4
-			// char  m_hEntOwner[0x4]; // 0x90 | Schema_Atomic | Size: 0x4
+			entity2::CEntityIOOutput m_OnGustStart; // 0x40 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnGustEnd; // 0x58 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntOwner; // 0x70 | Schema_Atomic | Size: 0x4
+			// char m_hEntOwner[0x4]; // 0x70 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xbc); // End padding
 		};
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_flStartTime) == 0x8, "m_flStartTime in CEnvWindShared should be at offset 0x8");
@@ -64,8 +64,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_flInitialWindSpeed) == 0x2C, "m_flInitialWindSpeed in CEnvWindShared should be at offset 0x2C");
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_location) == 0x30, "m_location in CEnvWindShared should be at offset 0x30");
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_OnGustStart) == 0x40, "m_OnGustStart in CEnvWindShared should be at offset 0x40");
-		static_assert(offsetof(CS2::server::CEnvWindShared, m_OnGustEnd) == 0x68, "m_OnGustEnd in CEnvWindShared should be at offset 0x68");
-		static_assert(offsetof(CS2::server::CEnvWindShared, m_hEntOwner) == 0x90, "m_hEntOwner in CEnvWindShared should be at offset 0x90");
-		static_assert(sizeof(CS2::server::CEnvWindShared) == 0x150, "CEnvWindShared size should be 0x150");
+		static_assert(offsetof(CS2::server::CEnvWindShared, m_OnGustEnd) == 0x58, "m_OnGustEnd in CEnvWindShared should be at offset 0x58");
+		static_assert(offsetof(CS2::server::CEnvWindShared, m_hEntOwner) == 0x70, "m_hEntOwner in CEnvWindShared should be at offset 0x70");
+		static_assert(sizeof(CS2::server::CEnvWindShared) == 0x130, "CEnvWindShared size should be 0x130");
 	}
 }

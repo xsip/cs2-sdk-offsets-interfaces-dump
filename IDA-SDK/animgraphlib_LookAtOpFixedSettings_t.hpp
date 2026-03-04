@@ -17,5 +17,5 @@ class animgraphlib_LookAtOpFixedSettings_t {
     bool m_bMaintainUpDirection;
     bool m_bTargetIsPosition;
     bool m_bUseHysteresis;
-    char end_pad_271[0xc];
+    char end_pad_296[0xc];
 };

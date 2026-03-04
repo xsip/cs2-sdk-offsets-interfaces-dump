@@ -11,15 +11,11 @@
 
 
 #include <SDK/animgraphlib/EDemoBoneSelectionMode.hpp>
+#include <SDK/animgraphlib/BoneDemoCaptureSettings_t.hpp>
+#include <SDK/animgraphlib/IKDemoCaptureSettings_t.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class BoneDemoCaptureSettings_t;
-		class IKDemoCaptureSettings_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -41,9 +37,9 @@ namespace CS2 {
 			int32_t m_nBaseSequenceFrame; // 0x48 | Schema_Builtin | Size: 0x4
 			animgraphlib::EDemoBoneSelectionMode m_boneSelectionMode; // 0x4c | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CUtlVector<animgraphlib::BoneDemoCaptureSettings_t> m_bones; // 0x50 | Schema_Atomic | Size: 0x18
-			// char  m_bones[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			// char m_bones[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<animgraphlib::IKDemoCaptureSettings_t> m_ikChains; // 0x68 | Schema_Atomic | Size: 0x18
-			// char  m_ikChains[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			// char m_ikChains[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CAnimDemoCaptureSettings, m_vecErrorRangeSplineRotation) == 0x0, "m_vecErrorRangeSplineRotation in CAnimDemoCaptureSettings should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CAnimDemoCaptureSettings, m_vecErrorRangeSplineTranslation) == 0x8, "m_vecErrorRangeSplineTranslation in CAnimDemoCaptureSettings should be at offset 0x8");

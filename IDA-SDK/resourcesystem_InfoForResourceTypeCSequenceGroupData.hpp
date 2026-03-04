@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCSequenceGroupData {
-    char pad_2371[0x1];
+    char pad_1268[0x1];
 };

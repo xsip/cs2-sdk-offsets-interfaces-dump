@@ -4,7 +4,8 @@
 
 
 class client_CNetworkOriginQuantizedVector {
-    char vTable1009[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     CNetworkedQuantizedFloat m_vecX;
     CNetworkedQuantizedFloat m_vecY;
     CNetworkedQuantizedFloat m_vecZ;

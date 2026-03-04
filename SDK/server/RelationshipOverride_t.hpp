@@ -28,7 +28,7 @@ namespace CS2 {
 		class RelationshipOverride_t : public CS2::server::Relationship_t {
 		public:
 			GlobalTypes::CHandle<server::CBaseEntity> entity; // 0x8 | Schema_Atomic | Size: 0x4
-			// char  entity[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
+			// char entity[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
 			client::Class_T classType; // 0xc | Schema_DeclaredEnum | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::RelationshipOverride_t, entity) == 0x8, "entity in RelationshipOverride_t should be at offset 0x8");

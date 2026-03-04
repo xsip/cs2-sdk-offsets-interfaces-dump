@@ -4,9 +4,10 @@
 
 
 class animgraphlib_CStaticPoseCacheBuilder {
-    char vTable231[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     char m_poses[0x18];
     int32_t m_nBoneCount;
     int32_t m_nMorphCount;
-    char pad_232[0x8];
+    char pad_243[0x8];
 };

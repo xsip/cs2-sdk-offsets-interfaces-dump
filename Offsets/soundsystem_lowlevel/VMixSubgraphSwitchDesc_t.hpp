@@ -8,11 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem_lowlevel {
-			// Class size: 0xC
+			// Class size: 0x38
 			namespace VMixSubgraphSwitchDesc_t /**/ {
-				constexpr std::ptrdiff_t m_interpolationMode = 0x0; // soundsystem_lowlevel::VMixSubgraphSwitchInterpolationType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bOnlyTailsOnFadeOut = 0x4; // bool m_bOnlyTailsOnFadeOut; |  0x4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flInterpolationTime = 0x8; // float32 m_flInterpolationTime; |  0x8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_effectName = 0x8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_subgraphs = 0x10; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_interpolationMode = 0x28; // soundsystem_lowlevel::VMixSubgraphSwitchInterpolationType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bOnlyTailsOnFadeOut = 0x2c; // bool m_bOnlyTailsOnFadeOut; |  0x2c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flInterpolationTime = 0x30; // float32 m_flInterpolationTime; |  0x30 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -7,11 +7,18 @@ class particleslib_CParticleCollectionVecInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particles_CParticleVisibilityInputs.hpp"
 #include "particleslib_CParticleCollectionVecInput.hpp"
+#include "particleslib_CPerParticleFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particleslib_CParticleCollectionRendererFloatInput.hpp"
 #include "particles_ParticleAttributeIndex_t.hpp"
 
 class particles_C_OP_RenderStandardLight {
-    char vTable1797[0x8];
+    void **__vftable_0;
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -20,41 +27,41 @@ class particles_C_OP_RenderStandardLight {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1798[0x3];
+    char pad_691[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1799[0x2];
+    char pad_692[0x2];
     bool m_bDisableOperator;
-    char pad_1800[0x1];
+    char pad_693[0x1];
     CUtlString m_Notes;
-    char end_pad_1801[0x18];
+    char end_pad_694[0x18];
     particles_CParticleVisibilityInputs VisibilityInputs;
     bool m_bCannotBeRefracted;
     bool m_bSkipRenderingOnMobile;
-    char end_pad_1786[0x6];
+    char end_pad_679[0x6];
     particles_ParticleLightTypeChoiceList_t m_nLightType;
-    char pad_2257[0x4];
+    char pad_1153[0x4];
     particleslib_CParticleCollectionVecInput m_vecColorScale;
     particles_ParticleColorBlendType_t m_nColorBlendType;
-    char pad_2258[0x4];
-    particleslib_CParticleCollectionFloatInput m_flIntensity;
+    char pad_1154[0x4];
+    particleslib_CPerParticleFloatInput m_flIntensity;
     bool m_bCastShadows;
-    char pad_2259[0x7];
+    char pad_1155[0x7];
     particleslib_CParticleCollectionFloatInput m_flTheta;
     particleslib_CParticleCollectionFloatInput m_flPhi;
     particleslib_CParticleCollectionFloatInput m_flRadiusMultiplier;
     particles_StandardLightingAttenuationStyle_t m_nAttenuationStyle;
-    char pad_2260[0x4];
+    char pad_1156[0x4];
     particleslib_CParticleCollectionFloatInput m_flFalloffLinearity;
     particleslib_CParticleCollectionFloatInput m_flFiftyPercentFalloff;
     particleslib_CParticleCollectionFloatInput m_flZeroPercentFalloff;
     bool m_bRenderDiffuse;
     bool m_bRenderSpecular;
-    char pad_2261[0x6];
+    char pad_1157[0x6];
     CUtlString m_lightCookie;
     int32_t m_nPriority;
     particles_ParticleLightFogLightingMode_t m_nFogLightingMode;
@@ -63,14 +70,14 @@ class particles_C_OP_RenderStandardLight {
     float32 m_flCapsuleLength;
     bool m_bReverseOrder;
     bool m_bClosedLoop;
-    char pad_2262[0x2];
+    char pad_1158[0x2];
     particles_ParticleAttributeIndex_t m_nPrevPntSource;
     float32 m_flMaxLength;
     float32 m_flMinLength;
     bool m_bIgnoreDT;
-    char pad_2263[0x3];
+    char pad_1159[0x3];
     float32 m_flConstrainRadiusToLengthRatio;
     float32 m_flLengthScale;
     float32 m_flLengthFadeInTime;
-    char end_pad_2264[0x8];
+    char end_pad_1160[0x8];
 };

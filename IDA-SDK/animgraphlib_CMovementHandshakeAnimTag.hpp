@@ -5,7 +5,9 @@
 #include "modellib_AnimTagID.hpp"
 
 class animgraphlib_CMovementHandshakeAnimTag {
-    char vTable53[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CGlobalSymbol m_name;
     CUtlString m_sComment;
     CGlobalSymbol m_group;
@@ -14,5 +16,5 @@ class animgraphlib_CMovementHandshakeAnimTag {
     bool m_bIsReferenced;
     char end_pad_55[0x7];
     bool m_bIsDisableTag;
-    char end_pad_152[0x7];
+    char end_pad_153[0x7];
 };

@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1040
+			// Class size: 0xFA8
 			namespace C_Precipitation /*: public CS2::client::C_BaseTrigger*/ {
-				constexpr std::ptrdiff_t m_flDensity = 0xff0; // float32 m_flDensity; |  0xff0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flParticleInnerDist = 0x1000; // float32 m_flParticleInnerDist; |  0x1000 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pParticleDef = 0x1008; // char* m_pParticleDef; |  0x1008 | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_tParticlePrecipTraceTimer = 0x1030; // GlobalTypes::TimedEvent[1]  | Schema_FixedArray | Size: 0x10
-				constexpr std::ptrdiff_t m_bActiveParticlePrecipEmitter = 0x1038; // bool m_bActiveParticlePrecipEmitter[1]; |  0x1038 | Schema_FixedArray | Size: 0x1
-				constexpr std::ptrdiff_t m_bParticlePrecipInitialized = 0x1039; // bool m_bParticlePrecipInitialized; |  0x1039 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasSimulatedSinceLastSceneObjectUpdate = 0x103a; // bool m_bHasSimulatedSinceLastSceneObjectUpdate; |  0x103a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nAvailableSheetSequencesMaxIndex = 0x103c; // int32_t m_nAvailableSheetSequencesMaxIndex; |  0x103c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDensity = 0xf58; // float32 m_flDensity; |  0xf58 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flParticleInnerDist = 0xf68; // float32 m_flParticleInnerDist; |  0xf68 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pParticleDef = 0xf70; // char* m_pParticleDef; |  0xf70 | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_tParticlePrecipTraceTimer = 0xf98; // GlobalTypes::TimedEvent[1]  | Schema_FixedArray | Size: 0x10
+				constexpr std::ptrdiff_t m_bActiveParticlePrecipEmitter = 0xfa0; // bool m_bActiveParticlePrecipEmitter[1]; |  0xfa0 | Schema_FixedArray | Size: 0x1
+				constexpr std::ptrdiff_t m_bParticlePrecipInitialized = 0xfa1; // bool m_bParticlePrecipInitialized; |  0xfa1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasSimulatedSinceLastSceneObjectUpdate = 0xfa2; // bool m_bHasSimulatedSinceLastSceneObjectUpdate; |  0xfa2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nAvailableSheetSequencesMaxIndex = 0xfa4; // int32_t m_nAvailableSheetSequencesMaxIndex; |  0xfa4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

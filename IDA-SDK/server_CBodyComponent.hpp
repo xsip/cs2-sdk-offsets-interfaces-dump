@@ -6,9 +6,9 @@ class server_CGameSceneNode;
 #include "entity2_CNetworkVarChainer.hpp"
 
 class server_CBodyComponent {
-    char pad_770[0x8];
+    char pad_1557[0x8];
     server_CGameSceneNode* m_pSceneNode;
-    char pad_2993[0x38];
+    char pad_2973[0x38];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char end_pad_2994[0x8];
+    char end_pad_2974[0x8];
 };

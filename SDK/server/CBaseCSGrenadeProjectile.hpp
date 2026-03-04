@@ -22,42 +22,42 @@ namespace CS2 {
 	namespace server {
 		class CBaseCSGrenadeProjectile : public CS2::server::CBaseGrenade {
 		public:
-			GlobalTypes::Vector m_vInitialPosition; // 0xbd0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vInitialVelocity; // 0xbdc | Schema_Atomic | Size: 0xc
-			int32_t m_nBounces; // 0xbe8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vInitialPosition; // 0xb40 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vInitialVelocity; // 0xb4c | Schema_Atomic | Size: 0xc
+			int32_t m_nBounces; // 0xb58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_nExplodeEffectIndex; // 0xbf0 | Schema_Atomic | Size: 0x8
-			char  m_nExplodeEffectIndex[0x8]; // 0xbf0 | Schema_Atomic | Size: 0x8
-			int32_t m_nExplodeEffectTickBegin; // 0xbf8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecExplodeEffectOrigin; // 0xbfc | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flSpawnTime; // 0xc08 | Schema_DeclaredClass | Size: 0x4
-			uint8_t m_unOGSExtraFlags; // 0xc0c | Schema_Builtin | Size: 0x1
-			bool m_bDetonationRecorded; // 0xc0d | Schema_Builtin | Size: 0x1
-			uint16_t m_nItemIndex; // 0xc0e | Schema_Builtin | Size: 0x2
-			GlobalTypes::Vector m_vecOriginalSpawnLocation; // 0xc10 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flLastBounceSoundTime; // 0xc1c | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::RotationVector m_vecGrenadeSpin; // 0xc20 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecLastHitSurfaceNormal; // 0xc2c | Schema_Atomic | Size: 0xc
-			int32_t m_nTicksAtZeroVelocity; // 0xc38 | Schema_Builtin | Size: 0x4
-			bool m_bHasEverHitEnemy; // 0xc3c | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_nExplodeEffectIndex; // 0xb60 | Schema_Atomic | Size: 0x8
+			char m_nExplodeEffectIndex[0x8]; // 0xb60 | Schema_Atomic | Size: 0x8
+			int32_t m_nExplodeEffectTickBegin; // 0xb68 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecExplodeEffectOrigin; // 0xb6c | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flSpawnTime; // 0xb78 | Schema_DeclaredClass | Size: 0x4
+			uint8_t m_unOGSExtraFlags; // 0xb7c | Schema_Builtin | Size: 0x1
+			bool m_bDetonationRecorded; // 0xb7d | Schema_Builtin | Size: 0x1
+			uint16_t m_nItemIndex; // 0xb7e | Schema_Builtin | Size: 0x2
+			GlobalTypes::Vector m_vecOriginalSpawnLocation; // 0xb80 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flLastBounceSoundTime; // 0xb8c | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::RotationVector m_vecGrenadeSpin; // 0xb90 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecLastHitSurfaceNormal; // 0xb9c | Schema_Atomic | Size: 0xc
+			int32_t m_nTicksAtZeroVelocity; // 0xba8 | Schema_Builtin | Size: 0x4
+			bool m_bHasEverHitEnemy; // 0xbac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vInitialPosition) == 0xBD0, "m_vInitialPosition in CBaseCSGrenadeProjectile should be at offset 0xBD0");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vInitialVelocity) == 0xBDC, "m_vInitialVelocity in CBaseCSGrenadeProjectile should be at offset 0xBDC");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nBounces) == 0xBE8, "m_nBounces in CBaseCSGrenadeProjectile should be at offset 0xBE8");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nExplodeEffectIndex) == 0xBF0, "m_nExplodeEffectIndex in CBaseCSGrenadeProjectile should be at offset 0xBF0");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nExplodeEffectTickBegin) == 0xBF8, "m_nExplodeEffectTickBegin in CBaseCSGrenadeProjectile should be at offset 0xBF8");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecExplodeEffectOrigin) == 0xBFC, "m_vecExplodeEffectOrigin in CBaseCSGrenadeProjectile should be at offset 0xBFC");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_flSpawnTime) == 0xC08, "m_flSpawnTime in CBaseCSGrenadeProjectile should be at offset 0xC08");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_unOGSExtraFlags) == 0xC0C, "m_unOGSExtraFlags in CBaseCSGrenadeProjectile should be at offset 0xC0C");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_bDetonationRecorded) == 0xC0D, "m_bDetonationRecorded in CBaseCSGrenadeProjectile should be at offset 0xC0D");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nItemIndex) == 0xC0E, "m_nItemIndex in CBaseCSGrenadeProjectile should be at offset 0xC0E");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecOriginalSpawnLocation) == 0xC10, "m_vecOriginalSpawnLocation in CBaseCSGrenadeProjectile should be at offset 0xC10");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_flLastBounceSoundTime) == 0xC1C, "m_flLastBounceSoundTime in CBaseCSGrenadeProjectile should be at offset 0xC1C");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecGrenadeSpin) == 0xC20, "m_vecGrenadeSpin in CBaseCSGrenadeProjectile should be at offset 0xC20");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecLastHitSurfaceNormal) == 0xC2C, "m_vecLastHitSurfaceNormal in CBaseCSGrenadeProjectile should be at offset 0xC2C");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nTicksAtZeroVelocity) == 0xC38, "m_nTicksAtZeroVelocity in CBaseCSGrenadeProjectile should be at offset 0xC38");
-		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_bHasEverHitEnemy) == 0xC3C, "m_bHasEverHitEnemy in CBaseCSGrenadeProjectile should be at offset 0xC3C");
-		static_assert(sizeof(CS2::server::CBaseCSGrenadeProjectile) == 0xC40, "CBaseCSGrenadeProjectile size should be 0xC40");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vInitialPosition) == 0xB40, "m_vInitialPosition in CBaseCSGrenadeProjectile should be at offset 0xB40");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vInitialVelocity) == 0xB4C, "m_vInitialVelocity in CBaseCSGrenadeProjectile should be at offset 0xB4C");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nBounces) == 0xB58, "m_nBounces in CBaseCSGrenadeProjectile should be at offset 0xB58");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nExplodeEffectIndex) == 0xB60, "m_nExplodeEffectIndex in CBaseCSGrenadeProjectile should be at offset 0xB60");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nExplodeEffectTickBegin) == 0xB68, "m_nExplodeEffectTickBegin in CBaseCSGrenadeProjectile should be at offset 0xB68");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecExplodeEffectOrigin) == 0xB6C, "m_vecExplodeEffectOrigin in CBaseCSGrenadeProjectile should be at offset 0xB6C");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_flSpawnTime) == 0xB78, "m_flSpawnTime in CBaseCSGrenadeProjectile should be at offset 0xB78");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_unOGSExtraFlags) == 0xB7C, "m_unOGSExtraFlags in CBaseCSGrenadeProjectile should be at offset 0xB7C");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_bDetonationRecorded) == 0xB7D, "m_bDetonationRecorded in CBaseCSGrenadeProjectile should be at offset 0xB7D");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nItemIndex) == 0xB7E, "m_nItemIndex in CBaseCSGrenadeProjectile should be at offset 0xB7E");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecOriginalSpawnLocation) == 0xB80, "m_vecOriginalSpawnLocation in CBaseCSGrenadeProjectile should be at offset 0xB80");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_flLastBounceSoundTime) == 0xB8C, "m_flLastBounceSoundTime in CBaseCSGrenadeProjectile should be at offset 0xB8C");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecGrenadeSpin) == 0xB90, "m_vecGrenadeSpin in CBaseCSGrenadeProjectile should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vecLastHitSurfaceNormal) == 0xB9C, "m_vecLastHitSurfaceNormal in CBaseCSGrenadeProjectile should be at offset 0xB9C");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nTicksAtZeroVelocity) == 0xBA8, "m_nTicksAtZeroVelocity in CBaseCSGrenadeProjectile should be at offset 0xBA8");
+		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_bHasEverHitEnemy) == 0xBAC, "m_bHasEverHitEnemy in CBaseCSGrenadeProjectile should be at offset 0xBAC");
+		static_assert(sizeof(CS2::server::CBaseCSGrenadeProjectile) == 0xBB0, "CBaseCSGrenadeProjectile size should be 0xBB0");
 	}
 }

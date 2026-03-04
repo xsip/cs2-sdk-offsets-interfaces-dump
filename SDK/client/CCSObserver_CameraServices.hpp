@@ -22,6 +22,6 @@ namespace CS2 {
 		class CCSObserver_CameraServices : public CS2::client::CCSPlayerBase_CameraServices {
 		public:
 		};
-		static_assert(sizeof(CS2::client::CCSObserver_CameraServices) == 0x2A0, "CCSObserver_CameraServices size should be 0x2A0");
+		static_assert(sizeof(CS2::client::CCSObserver_CameraServices) == 0x2A8, "CCSObserver_CameraServices size should be 0x2A8");
 	}
 }

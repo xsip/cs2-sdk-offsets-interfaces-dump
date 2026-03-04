@@ -3,6 +3,9 @@
 #include "typedefs.hpp"
 
 #include "animlib_QuantizationRange_t.hpp"
+#include "animlib_QuantizationRange_t.hpp"
+#include "animlib_QuantizationRange_t.hpp"
+#include "animlib_QuantizationRange_t.hpp"
 
 class animlib_NmCompressionSettings_t {
     animlib_QuantizationRange_t m_translationRangeX;
@@ -13,5 +16,5 @@ class animlib_NmCompressionSettings_t {
     bool m_bIsRotationStatic;
     bool m_bIsTranslationStatic;
     bool m_bIsScaleStatic;
-    char end_pad_1776[0xd];
+    char end_pad_2556[0xd];
 };

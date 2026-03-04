@@ -11,6 +11,8 @@
 
 
 #include <SDK/animgraphlib/CAnimUpdateNodeBase.hpp>
+#include <SDK/animgraphlib/BlendItem_t.hpp>
+#include <SDK/animgraphlib/TagSpan_t.hpp>
 #include <SDK/animgraphlib/CParamSpanUpdater.hpp>
 #include <SDK/animgraphlib/CAnimInputDamping.hpp>
 #include <SDK/animgraphlib/AnimValueSource.hpp>
@@ -19,12 +21,6 @@
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class BlendItem_t;
-		class TagSpan_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -34,12 +30,12 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlVector<animgraphlib::BlendItem_t> m_items; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_items[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_items[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<animgraphlib::TagSpan_t> m_tags; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_tags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			animgraphlib::CParamSpanUpdater m_paramSpans; // 0x90 | Schema_DeclaredClass | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_nodeItemIndices; // 0xa8 | Schema_Atomic | Size: 0x18
-			// char  m_nodeItemIndices[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
+			// char m_nodeItemIndices[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimInputDamping m_damping; // 0xc0 | Schema_DeclaredClass | Size: 0x18
 			animgraphlib::AnimValueSource m_blendSourceX; // 0xd8 | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::CAnimParamHandle m_paramX; // 0xdc | Schema_DeclaredClass | Size: 0x2

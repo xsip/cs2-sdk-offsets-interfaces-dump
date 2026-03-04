@@ -10,17 +10,13 @@
 #endif
 
 
+#include <SDK/modellib/CMorphData.hpp>
+#include <SDK/modellib/CFlexDesc.hpp>
+#include <SDK/modellib/CFlexController.hpp>
+#include <SDK/modellib/CFlexRule.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class CMorphData;
-		class CFlexDesc;
-		class CFlexController;
-		class CFlexRule;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -32,17 +28,17 @@ namespace CS2 {
 			int32_t m_nWidth; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nHeight; // 0x14 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlVector< MorphBundleType_t > m_bundleTypes; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_bundleTypes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_bundleTypes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<modellib::CMorphData> m_morphDatas; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_morphDatas[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_morphDatas[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_pTextureAtlas; // 0x48 | Schema_Atomic | Size: 0x8
-			char  m_pTextureAtlas[0x8]; // 0x48 | Schema_Atomic | Size: 0x8
+			char m_pTextureAtlas[0x8]; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector<modellib::CFlexDesc> m_FlexDesc; // 0x50 | Schema_Atomic | Size: 0x18
-			// char  m_FlexDesc[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			// char m_FlexDesc[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<modellib::CFlexController> m_FlexControllers; // 0x68 | Schema_Atomic | Size: 0x18
-			// char  m_FlexControllers[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
+			// char m_FlexControllers[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<modellib::CFlexRule> m_FlexRules; // 0x80 | Schema_Atomic | Size: 0x18
-			// char  m_FlexRules[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
+			// char m_FlexRules[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CMorphSetData, m_nWidth) == 0x10, "m_nWidth in CMorphSetData should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CMorphSetData, m_nHeight) == 0x14, "m_nHeight in CMorphSetData should be at offset 0x14");

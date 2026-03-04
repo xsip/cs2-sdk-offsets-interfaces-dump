@@ -10,5 +10,5 @@ class soundsystem_CDSPMixgroupModifier {
     float32 m_flSourceModifier;
     float32 m_flSourceModifierMin;
     float32 m_flListenerReverbModifierWhenSourceReverbIsActive;
-    char end_pad_543[0x4];
+    char end_pad_554[0x4];
 };

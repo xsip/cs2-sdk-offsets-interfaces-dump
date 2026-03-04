@@ -22,13 +22,17 @@ namespace CS2 {
 		class CSoundOpvarSetPathCornerEntity : public CS2::server::CSoundOpvarSetPointEntity {
 		public:
 			S2_PAD(0x18);
-			float32 m_flDistMinSqr; // 0x6c0 | Schema_Builtin | Size: 0x4
-			float32 m_flDistMaxSqr; // 0x6c4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszPathCornerEntityName; // 0x6c8 | Schema_Atomic | Size: 0x8
+			bool m_bUseParentedPath; // 0x658 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3);
+			float32 m_flDistMinSqr; // 0x65c | Schema_Builtin | Size: 0x4
+			float32 m_flDistMaxSqr; // 0x660 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4);
+			GlobalTypes::CUtlSymbolLarge m_iszPathCornerEntityName; // 0x668 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_flDistMinSqr) == 0x6C0, "m_flDistMinSqr in CSoundOpvarSetPathCornerEntity should be at offset 0x6C0");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_flDistMaxSqr) == 0x6C4, "m_flDistMaxSqr in CSoundOpvarSetPathCornerEntity should be at offset 0x6C4");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_iszPathCornerEntityName) == 0x6C8, "m_iszPathCornerEntityName in CSoundOpvarSetPathCornerEntity should be at offset 0x6C8");
-		static_assert(sizeof(CS2::server::CSoundOpvarSetPathCornerEntity) == 0x6D0, "CSoundOpvarSetPathCornerEntity size should be 0x6D0");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_bUseParentedPath) == 0x658, "m_bUseParentedPath in CSoundOpvarSetPathCornerEntity should be at offset 0x658");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_flDistMinSqr) == 0x65C, "m_flDistMinSqr in CSoundOpvarSetPathCornerEntity should be at offset 0x65C");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_flDistMaxSqr) == 0x660, "m_flDistMaxSqr in CSoundOpvarSetPathCornerEntity should be at offset 0x660");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_iszPathCornerEntityName) == 0x668, "m_iszPathCornerEntityName in CSoundOpvarSetPathCornerEntity should be at offset 0x668");
+		static_assert(sizeof(CS2::server::CSoundOpvarSetPathCornerEntity) == 0x670, "CSoundOpvarSetPathCornerEntity size should be 0x670");
 	}
 }

@@ -21,19 +21,20 @@ namespace CS2 {
 	namespace particles {
 		class ParticleControlPointDriver_t  {
 		public:
-			int32_t m_iControlPoint; // 0x0 | Schema_Builtin | Size: 0x4
-			animationsystem::ParticleAttachment_t m_iAttachType; // 0x4 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CUtlString m_attachmentName; // 0x8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_vecOffset; // 0x10 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_angOffset; // 0x1c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CUtlString m_entityName; // 0x28 | Schema_Atomic | Size: 0x8
+			GlobalTypes::ParticleParamID_t m_iControlPoint; // 0x0 | Schema_Atomic | Size: 0x10
+			animationsystem::ParticleAttachment_t m_iAttachType; // 0x10 | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x4);
+			GlobalTypes::CUtlString m_attachmentName; // 0x18 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector m_vecOffset; // 0x20 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_angOffset; // 0x2c | Schema_Atomic | Size: 0xc
+			GlobalTypes::CUtlString m_entityName; // 0x38 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_iControlPoint) == 0x0, "m_iControlPoint in ParticleControlPointDriver_t should be at offset 0x0");
-		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_iAttachType) == 0x4, "m_iAttachType in ParticleControlPointDriver_t should be at offset 0x4");
-		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_attachmentName) == 0x8, "m_attachmentName in ParticleControlPointDriver_t should be at offset 0x8");
-		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_vecOffset) == 0x10, "m_vecOffset in ParticleControlPointDriver_t should be at offset 0x10");
-		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_angOffset) == 0x1C, "m_angOffset in ParticleControlPointDriver_t should be at offset 0x1C");
-		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_entityName) == 0x28, "m_entityName in ParticleControlPointDriver_t should be at offset 0x28");
-		static_assert(sizeof(CS2::particles::ParticleControlPointDriver_t) == 0x30, "ParticleControlPointDriver_t size should be 0x30");
+		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_iAttachType) == 0x10, "m_iAttachType in ParticleControlPointDriver_t should be at offset 0x10");
+		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_attachmentName) == 0x18, "m_attachmentName in ParticleControlPointDriver_t should be at offset 0x18");
+		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_vecOffset) == 0x20, "m_vecOffset in ParticleControlPointDriver_t should be at offset 0x20");
+		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_angOffset) == 0x2C, "m_angOffset in ParticleControlPointDriver_t should be at offset 0x2C");
+		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_entityName) == 0x38, "m_entityName in ParticleControlPointDriver_t should be at offset 0x38");
+		static_assert(sizeof(CS2::particles::ParticleControlPointDriver_t) == 0x40, "ParticleControlPointDriver_t size should be 0x40");
 	}
 }

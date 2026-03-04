@@ -4,5 +4,5 @@
 
 
 class soundsystem_lowlevel_VMixEffectChainDesc_t {
-    float32 m_flCrossfadeTime;
+    CUtlString m_effectName;
 };

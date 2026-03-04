@@ -4,7 +4,7 @@
 
 
 class animationsystem_CAnimEventDefinition {
-    char vTable422[0x8];
+    void **__vftable_0;
     int32_t m_nFrame;
     int32_t m_nEndFrame;
     float32 m_flCycle;

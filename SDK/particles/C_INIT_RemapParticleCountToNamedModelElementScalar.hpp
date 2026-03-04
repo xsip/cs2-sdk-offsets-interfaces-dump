@@ -22,7 +22,7 @@ namespace CS2 {
 		class C_INIT_RemapParticleCountToNamedModelElementScalar : public CS2::particles::C_INIT_RemapParticleCountToScalar {
 		public:
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0x208 | Schema_Atomic | Size: 0x8
-			char  m_hModel[0x8]; // 0x208 | Schema_Atomic | Size: 0x8
+			char m_hModel[0x8]; // 0x208 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_outputMinName; // 0x210 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_outputMaxName; // 0x218 | Schema_Atomic | Size: 0x8
 			bool m_bModelFromRenderer; // 0x220 | Schema_Builtin | Size: 0x1

@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CPhysTorque : public CS2::server::CPhysForce {
 		public:
-			GlobalTypes::VectorWS m_axis; // 0x550 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_axis; // 0x508 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysTorque, m_axis) == 0x550, "m_axis in CPhysTorque should be at offset 0x550");
-		static_assert(sizeof(CS2::server::CPhysTorque) == 0x560, "CPhysTorque size should be 0x560");
+		static_assert(offsetof(CS2::server::CPhysTorque, m_axis) == 0x508, "m_axis in CPhysTorque should be at offset 0x508");
+		static_assert(sizeof(CS2::server::CPhysTorque) == 0x518, "CPhysTorque size should be 0x518");
 	}
 }

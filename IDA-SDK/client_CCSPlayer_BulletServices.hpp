@@ -5,9 +5,9 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class client_CCSPlayer_BulletServices {
-    char vTable1208[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1209[0x10];
+    char pad_2013[0x18];
     int32_t m_totalHitsOnServer;
-    char pad_1336[0x5c];
+    char pad_2086[0x5c];
 };

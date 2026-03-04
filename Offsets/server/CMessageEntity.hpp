@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x508
+			// Class size: 0x4C0
 			namespace CMessageEntity /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_radius = 0x4f0; // int32_t m_radius; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_messageText = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_drawText = 0x500; // bool m_drawText; |  0x500 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDeveloperOnly = 0x501; // bool m_bDeveloperOnly; |  0x501 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEnabled = 0x502; // bool m_bEnabled; |  0x502 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_radius = 0x4a8; // int32_t m_radius; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_messageText = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_drawText = 0x4b8; // bool m_drawText; |  0x4b8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDeveloperOnly = 0x4b9; // bool m_bDeveloperOnly; |  0x4b9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnabled = 0x4ba; // bool m_bEnabled; |  0x4ba | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -14,6 +14,7 @@
 #include <SDK/entity2/GameTick_t.hpp>
 #include <SDK/client/C_fogplayerparams_t.hpp>
 #include <SDK/client/audioparams_t.hpp>
+#include <SDK/client/C_PostProcessingVolume.hpp>
 #include <SDK/client/fogparams_t.hpp>
 
 
@@ -33,57 +34,57 @@ namespace CS2 {
 	namespace client {
 		class CPlayer_CameraServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			GlobalTypes::QAngle m_vecCsViewPunchAngle; // 0x40 | Schema_Atomic | Size: 0xc
-			entity2::GameTick_t m_nCsViewPunchAngleTick; // 0x4c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flCsViewPunchAngleTickRatio; // 0x50 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_vecCsViewPunchAngle; // 0x48 | Schema_Atomic | Size: 0xc
+			entity2::GameTick_t m_nCsViewPunchAngleTick; // 0x54 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flCsViewPunchAngleTickRatio; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			client::C_fogplayerparams_t m_PlayerFog; // 0x58 | Schema_DeclaredClass | Size: 0x40
-			GlobalTypes::CHandle<client::C_ColorCorrection> m_hColorCorrectionCtrl; // 0x98 | Schema_Atomic | Size: 0x4
-			// char  m_hColorCorrectionCtrl[0x4]; // 0x98 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hViewEntity; // 0x9c | Schema_Atomic | Size: 0x4
-			// char  m_hViewEntity[0x4]; // 0x9c | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<client::C_TonemapController2> m_hTonemapController; // 0xa0 | Schema_Atomic | Size: 0x4
-			// char  m_hTonemapController[0x4]; // 0xa0 | Schema_Atomic | Size: 0x4
+			client::C_fogplayerparams_t m_PlayerFog; // 0x60 | Schema_DeclaredClass | Size: 0x40
+			GlobalTypes::CHandle<client::C_ColorCorrection> m_hColorCorrectionCtrl; // 0xa0 | Schema_Atomic | Size: 0x4
+			// char m_hColorCorrectionCtrl[0x4]; // 0xa0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hViewEntity; // 0xa4 | Schema_Atomic | Size: 0x4
+			// char m_hViewEntity[0x4]; // 0xa4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_TonemapController2> m_hTonemapController; // 0xa8 | Schema_Atomic | Size: 0x4
+			// char m_hTonemapController[0x4]; // 0xa8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			client::audioparams_t m_audio; // 0xa8 | Schema_DeclaredClass | Size: 0x78
-			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_PostProcessingVolume>> m_PostProcessingVolumes; // 0x120 | Schema_Atomic | Size: 0x18
-			char  m_PostProcessingVolumes[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
-			float32 m_flOldPlayerZ; // 0x138 | Schema_Builtin | Size: 0x4
-			float32 m_flOldPlayerViewOffsetZ; // 0x13c | Schema_Builtin | Size: 0x4
-			client::fogparams_t m_CurrentFog; // 0x140 | Schema_DeclaredClass | Size: 0x68
-			GlobalTypes::CHandle<client::C_FogController> m_hOldFogController; // 0x1a8 | Schema_Atomic | Size: 0x4
-			// char  m_hOldFogController[0x4]; // 0x1a8 | Schema_Atomic | Size: 0x4
-			bool m_bOverrideFogColor[5]; // 0x1ac | Schema_FixedArray | Size: 0x5
-			GlobalTypes::Color m_OverrideFogColor[5]; // 0x1b1 | Schema_FixedArray | Size: 0x14
-			bool m_bOverrideFogStartEnd[5]; // 0x1c5 | Schema_FixedArray | Size: 0x5
+			client::audioparams_t m_audio; // 0xb0 | Schema_DeclaredClass | Size: 0x78
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_PostProcessingVolume>> m_PostProcessingVolumes; // 0x128 | Schema_Atomic | Size: 0x18
+			char m_PostProcessingVolumes[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
+			float32 m_flOldPlayerZ; // 0x140 | Schema_Builtin | Size: 0x4
+			float32 m_flOldPlayerViewOffsetZ; // 0x144 | Schema_Builtin | Size: 0x4
+			client::fogparams_t m_CurrentFog; // 0x148 | Schema_DeclaredClass | Size: 0x68
+			GlobalTypes::CHandle<client::C_FogController> m_hOldFogController; // 0x1b0 | Schema_Atomic | Size: 0x4
+			// char m_hOldFogController[0x4]; // 0x1b0 | Schema_Atomic | Size: 0x4
+			bool m_bOverrideFogColor[5]; // 0x1b4 | Schema_FixedArray | Size: 0x5
+			GlobalTypes::Color m_OverrideFogColor[5]; // 0x1b9 | Schema_FixedArray | Size: 0x14
+			bool m_bOverrideFogStartEnd[5]; // 0x1cd | Schema_FixedArray | Size: 0x5
 			S2_PAD(0x2);
-			float32 m_fOverrideFogStart[5]; // 0x1cc | Schema_FixedArray | Size: 0x14
-			float32 m_fOverrideFogEnd[5]; // 0x1e0 | Schema_FixedArray | Size: 0x14
-			GlobalTypes::CHandle<client::C_PostProcessingVolume> m_hActivePostProcessingVolume; // 0x1f4 | Schema_Atomic | Size: 0x4
-			// char  m_hActivePostProcessingVolume[0x4]; // 0x1f4 | Schema_Atomic | Size: 0x4
-			GlobalTypes::QAngle m_angDemoViewAngles; // 0x1f8 | Schema_Atomic | Size: 0xc
+			float32 m_fOverrideFogStart[5]; // 0x1d4 | Schema_FixedArray | Size: 0x14
+			float32 m_fOverrideFogEnd[5]; // 0x1e8 | Schema_FixedArray | Size: 0x14
+			GlobalTypes::CHandle<client::C_PostProcessingVolume> m_hActivePostProcessingVolume; // 0x1fc | Schema_Atomic | Size: 0x4
+			// char m_hActivePostProcessingVolume[0x4]; // 0x1fc | Schema_Atomic | Size: 0x4
+			GlobalTypes::QAngle m_angDemoViewAngles; // 0x200 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84); // End padding
 		};
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_vecCsViewPunchAngle) == 0x40, "m_vecCsViewPunchAngle in CPlayer_CameraServices should be at offset 0x40");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_nCsViewPunchAngleTick) == 0x4C, "m_nCsViewPunchAngleTick in CPlayer_CameraServices should be at offset 0x4C");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_flCsViewPunchAngleTickRatio) == 0x50, "m_flCsViewPunchAngleTickRatio in CPlayer_CameraServices should be at offset 0x50");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_PlayerFog) == 0x58, "m_PlayerFog in CPlayer_CameraServices should be at offset 0x58");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hColorCorrectionCtrl) == 0x98, "m_hColorCorrectionCtrl in CPlayer_CameraServices should be at offset 0x98");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hViewEntity) == 0x9C, "m_hViewEntity in CPlayer_CameraServices should be at offset 0x9C");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hTonemapController) == 0xA0, "m_hTonemapController in CPlayer_CameraServices should be at offset 0xA0");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_audio) == 0xA8, "m_audio in CPlayer_CameraServices should be at offset 0xA8");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_PostProcessingVolumes) == 0x120, "m_PostProcessingVolumes in CPlayer_CameraServices should be at offset 0x120");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_flOldPlayerZ) == 0x138, "m_flOldPlayerZ in CPlayer_CameraServices should be at offset 0x138");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_flOldPlayerViewOffsetZ) == 0x13C, "m_flOldPlayerViewOffsetZ in CPlayer_CameraServices should be at offset 0x13C");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_CurrentFog) == 0x140, "m_CurrentFog in CPlayer_CameraServices should be at offset 0x140");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hOldFogController) == 0x1A8, "m_hOldFogController in CPlayer_CameraServices should be at offset 0x1A8");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_bOverrideFogColor) == 0x1AC, "m_bOverrideFogColor in CPlayer_CameraServices should be at offset 0x1AC");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_OverrideFogColor) == 0x1B1, "m_OverrideFogColor in CPlayer_CameraServices should be at offset 0x1B1");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_bOverrideFogStartEnd) == 0x1C5, "m_bOverrideFogStartEnd in CPlayer_CameraServices should be at offset 0x1C5");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_fOverrideFogStart) == 0x1CC, "m_fOverrideFogStart in CPlayer_CameraServices should be at offset 0x1CC");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_fOverrideFogEnd) == 0x1E0, "m_fOverrideFogEnd in CPlayer_CameraServices should be at offset 0x1E0");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hActivePostProcessingVolume) == 0x1F4, "m_hActivePostProcessingVolume in CPlayer_CameraServices should be at offset 0x1F4");
-		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_angDemoViewAngles) == 0x1F8, "m_angDemoViewAngles in CPlayer_CameraServices should be at offset 0x1F8");
-		static_assert(sizeof(CS2::client::CPlayer_CameraServices) == 0x288, "CPlayer_CameraServices size should be 0x288");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_vecCsViewPunchAngle) == 0x48, "m_vecCsViewPunchAngle in CPlayer_CameraServices should be at offset 0x48");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_nCsViewPunchAngleTick) == 0x54, "m_nCsViewPunchAngleTick in CPlayer_CameraServices should be at offset 0x54");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_flCsViewPunchAngleTickRatio) == 0x58, "m_flCsViewPunchAngleTickRatio in CPlayer_CameraServices should be at offset 0x58");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_PlayerFog) == 0x60, "m_PlayerFog in CPlayer_CameraServices should be at offset 0x60");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hColorCorrectionCtrl) == 0xA0, "m_hColorCorrectionCtrl in CPlayer_CameraServices should be at offset 0xA0");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hViewEntity) == 0xA4, "m_hViewEntity in CPlayer_CameraServices should be at offset 0xA4");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hTonemapController) == 0xA8, "m_hTonemapController in CPlayer_CameraServices should be at offset 0xA8");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_audio) == 0xB0, "m_audio in CPlayer_CameraServices should be at offset 0xB0");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_PostProcessingVolumes) == 0x128, "m_PostProcessingVolumes in CPlayer_CameraServices should be at offset 0x128");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_flOldPlayerZ) == 0x140, "m_flOldPlayerZ in CPlayer_CameraServices should be at offset 0x140");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_flOldPlayerViewOffsetZ) == 0x144, "m_flOldPlayerViewOffsetZ in CPlayer_CameraServices should be at offset 0x144");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_CurrentFog) == 0x148, "m_CurrentFog in CPlayer_CameraServices should be at offset 0x148");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hOldFogController) == 0x1B0, "m_hOldFogController in CPlayer_CameraServices should be at offset 0x1B0");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_bOverrideFogColor) == 0x1B4, "m_bOverrideFogColor in CPlayer_CameraServices should be at offset 0x1B4");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_OverrideFogColor) == 0x1B9, "m_OverrideFogColor in CPlayer_CameraServices should be at offset 0x1B9");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_bOverrideFogStartEnd) == 0x1CD, "m_bOverrideFogStartEnd in CPlayer_CameraServices should be at offset 0x1CD");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_fOverrideFogStart) == 0x1D4, "m_fOverrideFogStart in CPlayer_CameraServices should be at offset 0x1D4");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_fOverrideFogEnd) == 0x1E8, "m_fOverrideFogEnd in CPlayer_CameraServices should be at offset 0x1E8");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hActivePostProcessingVolume) == 0x1FC, "m_hActivePostProcessingVolume in CPlayer_CameraServices should be at offset 0x1FC");
+		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_angDemoViewAngles) == 0x200, "m_angDemoViewAngles in CPlayer_CameraServices should be at offset 0x200");
+		static_assert(sizeof(CS2::client::CPlayer_CameraServices) == 0x290, "CPlayer_CameraServices size should be 0x290");
 	}
 }

@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nLightType = 0x220; // particles::ParticleLightTypeChoiceList_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_vecColorScale = 0x228; // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 				constexpr std::ptrdiff_t m_nColorBlendType = 0x8e0; // particles::ParticleColorBlendType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flIntensity = 0x8e8; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+				constexpr std::ptrdiff_t m_flIntensity = 0x8e8; // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_bCastShadows = 0xa58; // bool m_bCastShadows; |  0xa58 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flTheta = 0xa60; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 				constexpr std::ptrdiff_t m_flPhi = 0xbd0; // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170

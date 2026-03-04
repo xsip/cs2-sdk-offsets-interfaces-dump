@@ -8,26 +8,26 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5D8
+			// Class size: 0x590
 			namespace CEnvCubemap /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_Entity_hCubemapTexture = 0x570; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Entity_bCustomCubemapTexture = 0x578; // bool m_Entity_bCustomCubemapTexture; |  0x578 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_flInfluenceRadius = 0x57c; // float32 m_Entity_flInfluenceRadius; |  0x57c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_vBoxProjectMins = 0x580; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Entity_vBoxProjectMaxs = 0x58c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Entity_bMoveable = 0x598; // bool m_Entity_bMoveable; |  0x598 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_nHandshake = 0x59c; // int32_t m_Entity_nHandshake; |  0x59c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nEnvCubeMapArrayIndex = 0x5a0; // int32_t m_Entity_nEnvCubeMapArrayIndex; |  0x5a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_nPriority = 0x5a4; // int32_t m_Entity_nPriority; |  0x5a4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_flEdgeFadeDist = 0x5a8; // float32 m_Entity_flEdgeFadeDist; |  0x5a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_vEdgeFadeDists = 0x5ac; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_Entity_flDiffuseScale = 0x5b8; // float32 m_Entity_flDiffuseScale; |  0x5b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Entity_bStartDisabled = 0x5bc; // bool m_Entity_bStartDisabled; |  0x5bc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_bDefaultEnvMap = 0x5bd; // bool m_Entity_bDefaultEnvMap; |  0x5bd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_bDefaultSpecEnvMap = 0x5be; // bool m_Entity_bDefaultSpecEnvMap; |  0x5be | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_bIndoorCubeMap = 0x5bf; // bool m_Entity_bIndoorCubeMap; |  0x5bf | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_bCopyDiffuseFromDefaultCubemap = 0x5c0; // bool m_Entity_bCopyDiffuseFromDefaultCubemap; |  0x5c0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_Entity_bEnabled = 0x5d0; // bool m_Entity_bEnabled; |  0x5d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_hCubemapTexture = 0x528; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Entity_bCustomCubemapTexture = 0x530; // bool m_Entity_bCustomCubemapTexture; |  0x530 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_flInfluenceRadius = 0x534; // float32 m_Entity_flInfluenceRadius; |  0x534 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_vBoxProjectMins = 0x538; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_vBoxProjectMaxs = 0x544; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_bMoveable = 0x550; // bool m_Entity_bMoveable; |  0x550 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_nHandshake = 0x554; // int32_t m_Entity_nHandshake; |  0x554 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nEnvCubeMapArrayIndex = 0x558; // int32_t m_Entity_nEnvCubeMapArrayIndex; |  0x558 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_nPriority = 0x55c; // int32_t m_Entity_nPriority; |  0x55c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_flEdgeFadeDist = 0x560; // float32 m_Entity_flEdgeFadeDist; |  0x560 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_vEdgeFadeDists = 0x564; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_Entity_flDiffuseScale = 0x570; // float32 m_Entity_flDiffuseScale; |  0x570 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Entity_bStartDisabled = 0x574; // bool m_Entity_bStartDisabled; |  0x574 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_bDefaultEnvMap = 0x575; // bool m_Entity_bDefaultEnvMap; |  0x575 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_bDefaultSpecEnvMap = 0x576; // bool m_Entity_bDefaultSpecEnvMap; |  0x576 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_bIndoorCubeMap = 0x577; // bool m_Entity_bIndoorCubeMap; |  0x577 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_bCopyDiffuseFromDefaultCubemap = 0x578; // bool m_Entity_bCopyDiffuseFromDefaultCubemap; |  0x578 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_Entity_bEnabled = 0x588; // bool m_Entity_bEnabled; |  0x588 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

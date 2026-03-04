@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x510
+			// Class size: 0x4C8
 			namespace CAI_ChangeHintGroup /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_iSearchType = 0x4f0; // int32_t m_iSearchType; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_strSearchName = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_strNewHintGroup = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flRadius = 0x508; // float32 m_flRadius; |  0x508 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iSearchType = 0x4a8; // int32_t m_iSearchType; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_strSearchName = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_strNewHintGroup = 0x4b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flRadius = 0x4c0; // float32 m_flRadius; |  0x4c0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

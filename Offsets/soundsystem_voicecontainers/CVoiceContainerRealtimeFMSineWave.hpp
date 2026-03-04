@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem_voicecontainers {
-			// Class size: 0xC8
-			namespace CVoiceContainerRealtimeFMSineWave /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_flCarrierFrequency = 0xb8; // float32 m_flCarrierFrequency; |  0xb8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flModulatorFrequency = 0xbc; // float32 m_flModulatorFrequency; |  0xbc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flModulatorAmount = 0xc0; // float32 m_flModulatorAmount; |  0xc0 | Schema_Builtin | Size: 0x4
+			// Class size: 0xB8
+			namespace CVoiceContainerRealtimeFMSineWave /*: public CS2::soundsystem_voicecontainers::CVoiceContainerGenerator*/ {
+				constexpr std::ptrdiff_t m_flCarrierFrequency = 0xa8; // float32 m_flCarrierFrequency; |  0xa8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flModulatorFrequency = 0xac; // float32 m_flModulatorFrequency; |  0xac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flModulatorAmount = 0xb0; // float32 m_flModulatorAmount; |  0xb0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

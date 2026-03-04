@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/animgraphlib/FootFixedData_t.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class FootFixedData_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,7 +22,7 @@ namespace CS2 {
 		class FootPinningPoseOpFixedData_t  {
 		public:
 			GlobalTypes::CUtlVector<animgraphlib::FootFixedData_t> m_footInfo; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_footInfo[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_footInfo[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			float32 m_flBlendTime; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flLockBreakDistance; // 0x1c | Schema_Builtin | Size: 0x4
 			float32 m_flMaxLegTwist; // 0x20 | Schema_Builtin | Size: 0x4

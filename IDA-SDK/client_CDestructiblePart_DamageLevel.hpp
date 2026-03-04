@@ -15,7 +15,7 @@ class client_CDestructiblePart_DamageLevel {
     client_DestructiblePartDestructionDeathBehavior_t m_nDestructionDeathBehavior;
     CGlobalSymbol m_sCustomDeathHandshake;
     bool m_bShouldDestroyOnDeath;
-    char pad_563[0x3];
+    char pad_1708[0x3];
     tier2_CRangeFloat m_flDeathDestroyTime;
-    char end_pad_564[0x4];
+    char end_pad_1709[0x4];
 };

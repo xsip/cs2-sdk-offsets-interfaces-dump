@@ -21,9 +21,9 @@ namespace CS2 {
 	namespace server {
 		class CFilterClass : public CS2::server::CBaseFilter {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iFilterClass; // 0x548 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iFilterClass; // 0x4e0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CFilterClass, m_iFilterClass) == 0x548, "m_iFilterClass in CFilterClass should be at offset 0x548");
-		static_assert(sizeof(CS2::server::CFilterClass) == 0x550, "CFilterClass size should be 0x550");
+		static_assert(offsetof(CS2::server::CFilterClass, m_iFilterClass) == 0x4E0, "m_iFilterClass in CFilterClass should be at offset 0x4E0");
+		static_assert(sizeof(CS2::server::CFilterClass) == 0x4E8, "CFilterClass size should be 0x4E8");
 	}
 }

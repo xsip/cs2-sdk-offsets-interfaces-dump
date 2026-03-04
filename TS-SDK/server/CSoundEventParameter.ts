@@ -1,10 +1,10 @@
 // generated - do not edit!
 
 import {server_CBaseEntity} from './CBaseEntity';
-// Class size: 0x518
+// Class size: 0x4D0
 // BaseClass: : public CS2::server::CBaseEntity
 export const server_CSoundEventParameter  = {
 	...server_CBaseEntity,
-	m_iszParamName: 1288n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-	m_flFloatValue: 1296n, // float32 m_flFloatValue; |  0x510 | Schema_Builtin | Size: 0x4
+	m_iszParamName: 1216n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+	m_flFloatValue: 1224n, // float32 m_flFloatValue; |  0x4c8 | Schema_Builtin | Size: 0x4
 }

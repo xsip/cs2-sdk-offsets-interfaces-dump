@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace client {
 		class C_SoundAreaEntitySphere : public CS2::client::C_SoundAreaEntityBase {
 		public:
-			float32 m_flRadius; // 0x620 | Schema_Builtin | Size: 0x4
+			float32 m_flRadius; // 0x630 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_SoundAreaEntitySphere, m_flRadius) == 0x620, "m_flRadius in C_SoundAreaEntitySphere should be at offset 0x620");
-		static_assert(sizeof(CS2::client::C_SoundAreaEntitySphere) == 0x628, "C_SoundAreaEntitySphere size should be 0x628");
+		static_assert(offsetof(CS2::client::C_SoundAreaEntitySphere, m_flRadius) == 0x630, "m_flRadius in C_SoundAreaEntitySphere should be at offset 0x630");
+		static_assert(sizeof(CS2::client::C_SoundAreaEntitySphere) == 0x638, "C_SoundAreaEntitySphere size should be 0x638");
 	}
 }

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x830
+			// Class size: 0x788
 			namespace CRopeKeyframeAlias_move_rope /*: public CS2::server::CRopeKeyframe*/ {
 				// NO SCHEMA DATA FOUND!
 			}

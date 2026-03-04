@@ -9,10 +9,10 @@ class pulse_runtime_lib_CPulse_Variable {
     CUtlString m_Description;
     CPulseValueFullType m_Type;
     KeyValues3 m_DefaultValue;
-    char pad_538[0x4];
+    char pad_549[0x4];
     pulse_runtime_lib_PulseVariableKeysSource_t m_nKeysSource;
     bool m_bIsPublicBlackboardVariable;
     bool m_bIsObservable;
-    char pad_539[0x2];
+    char pad_550[0x2];
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
 };

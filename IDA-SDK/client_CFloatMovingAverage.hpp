@@ -4,5 +4,5 @@
 
 
 class client_CFloatMovingAverage {
-    char pad_933[0x20];
+    char pad_1736[0x20];
 };

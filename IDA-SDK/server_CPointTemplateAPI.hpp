@@ -4,5 +4,5 @@
 
 
 class server_CPointTemplateAPI {
-    char pad_3936[0x8];
+    char pad_4067[0x8];
 };

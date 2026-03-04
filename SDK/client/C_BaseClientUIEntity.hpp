@@ -22,17 +22,17 @@ namespace CS2 {
 		class C_BaseClientUIEntity : public CS2::client::C_BaseModelEntity {
 		public:
 			S2_PAD(0x8);
-			bool m_bEnabled; // 0xeb8 | Schema_Builtin | Size: 0x1
+			bool m_bEnabled; // 0xe90 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlSymbolLarge m_DialogXMLName; // 0xec0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_PanelClassName; // 0xec8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_PanelID; // 0xed0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_DialogXMLName; // 0xe98 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_PanelClassName; // 0xea0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_PanelID; // 0xea8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_bEnabled) == 0xEB8, "m_bEnabled in C_BaseClientUIEntity should be at offset 0xEB8");
-		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_DialogXMLName) == 0xEC0, "m_DialogXMLName in C_BaseClientUIEntity should be at offset 0xEC0");
-		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_PanelClassName) == 0xEC8, "m_PanelClassName in C_BaseClientUIEntity should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_PanelID) == 0xED0, "m_PanelID in C_BaseClientUIEntity should be at offset 0xED0");
-		static_assert(sizeof(CS2::client::C_BaseClientUIEntity) == 0xEE0, "C_BaseClientUIEntity size should be 0xEE0");
+		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_bEnabled) == 0xE90, "m_bEnabled in C_BaseClientUIEntity should be at offset 0xE90");
+		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_DialogXMLName) == 0xE98, "m_DialogXMLName in C_BaseClientUIEntity should be at offset 0xE98");
+		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_PanelClassName) == 0xEA0, "m_PanelClassName in C_BaseClientUIEntity should be at offset 0xEA0");
+		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_PanelID) == 0xEA8, "m_PanelID in C_BaseClientUIEntity should be at offset 0xEA8");
+		static_assert(sizeof(CS2::client::C_BaseClientUIEntity) == 0xEB8, "C_BaseClientUIEntity size should be 0xEB8");
 	}
 }

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x4F0
+			// Class size: 0x4A8
 			namespace CLogicProximity /*: public CS2::server::CPointEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

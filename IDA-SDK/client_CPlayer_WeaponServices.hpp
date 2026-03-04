@@ -5,9 +5,9 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class client_CPlayer_WeaponServices {
-    char vTable1208[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1209[0x10];
+    char pad_2013[0x18];
     char m_hMyWeapons[0x18];
     char m_hActiveWeapon[0x4];
     char m_hLastWeapon[0x4];

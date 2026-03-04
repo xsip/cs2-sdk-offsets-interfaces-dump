@@ -4,9 +4,9 @@
 
 
 class client_EngineCountdownTimer {
-    char vTable1606[0x8];
+    void **__vftable_0;
     float32 m_duration;
     float32 m_timestamp;
     float32 m_timescale;
-    char end_pad_1607[0x4];
+    char end_pad_2414[0x4];
 };

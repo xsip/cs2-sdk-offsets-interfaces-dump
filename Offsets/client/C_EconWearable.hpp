@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x18E8
+			// Class size: 0x18C8
 			namespace C_EconWearable /*: public CS2::client::C_EconEntity*/ {
-				constexpr std::ptrdiff_t m_nForceSkin = 0x18e0; // int32_t m_nForceSkin; |  0x18e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bAlwaysAllow = 0x18e4; // bool m_bAlwaysAllow; |  0x18e4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nForceSkin = 0x18c0; // int32_t m_nForceSkin; |  0x18c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAlwaysAllow = 0x18c4; // bool m_bAlwaysAllow; |  0x18c4 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

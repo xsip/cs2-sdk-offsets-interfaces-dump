@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_C_BaseEntity} from './C_BaseEntity';
-// Class size: 0x5F8
+// Class size: 0x608
 // BaseClass: : public CS2::client::C_BaseEntity
 export const client_C_CSGO_EndOfMatchLineupEndpoint  = {
 	...client_C_BaseEntity,

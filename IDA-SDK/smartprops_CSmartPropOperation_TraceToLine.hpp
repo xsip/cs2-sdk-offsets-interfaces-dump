@@ -4,11 +4,13 @@
 
 #include "smartprops_CSmartPropAttributeCoordinateSpace.hpp"
 #include "smartprops_CSmartPropAttributeTraceNoHit.hpp"
+#include "smartprops_CSmartPropAttributeCoordinateSpace.hpp"
+#include "smartprops_CSmartPropAttributeCoordinateSpace.hpp"
 
 class smartprops_CSmartPropOperation_TraceToLine {
-    char vTable2558[0x8];
+    void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
-    char end_pad_2559[0x8];
+    char end_pad_2635[0x8];
     CSmartPropAttributeVector m_Origin;
     smartprops_CSmartPropAttributeCoordinateSpace m_OriginSpace;
     CSmartPropAttributeFloat m_flOriginOffset;

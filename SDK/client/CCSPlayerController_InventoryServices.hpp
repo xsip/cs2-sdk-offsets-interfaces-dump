@@ -11,15 +11,12 @@
 
 
 #include <SDK/client/CPlayerControllerComponent.hpp>
+#include <SDK/client/NetworkedLoadoutSlot_t.hpp>
 #include <SDK/client/MedalRank_t.hpp>
+#include <SDK/client/ServerAuthoritativeWeaponSlot_t.hpp>
 
 
 
-namespace CS2 {
-	namespace client {
-		class NetworkedLoadoutSlot_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,8 +24,8 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayerController_InventoryServices : public CS2::client::CPlayerControllerComponent {
 		public:
-			GlobalTypes::CUtlVector<client::CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t> m_vecNetworkableLoadout; // 0x40 | Schema_Atomic | Size: 0x18
-			// char  m_vecNetworkableLoadout[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::NetworkedLoadoutSlot_t> m_vecNetworkableLoadout; // 0x40 | Schema_Atomic | Size: 0x18
+			// char m_vecNetworkableLoadout[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			uint16_t m_unMusicID; // 0x58 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
 			client::MedalRank_t m_rank[6]; // 0x5c | Schema_FixedArray | Size: 0x120
@@ -37,8 +34,8 @@ namespace CS2 {
 			int32_t m_nPersonaDataPublicCommendsTeacher; // 0x7c | Schema_Builtin | Size: 0x4
 			int32_t m_nPersonaDataPublicCommendsFriendly; // 0x80 | Schema_Builtin | Size: 0x4
 			int32_t m_nPersonaDataXpTrailLevel; // 0x84 | Schema_Builtin | Size: 0x4
-			// GlobalTypes::C_UtlVectorEmbeddedNetworkVar<client::ServerAuthoritativeWeaponSlot_t> m_vecServerAuthoritativeWeaponSlots; // 0x88 | Schema_Atomic | Size: 0x68
-			char  m_vecServerAuthoritativeWeaponSlots[0x68]; // 0x88 | Schema_Atomic | Size: 0x68
+			// client::C_UtlVectorEmbeddedNetworkVar<client::ServerAuthoritativeWeaponSlot_t> m_vecServerAuthoritativeWeaponSlots; // 0x88 | Schema_Atomic | Size: 0x68
+			char m_vecServerAuthoritativeWeaponSlots[0x68]; // 0x88 | Schema_Atomic | Size: 0x68
 		};
 		static_assert(offsetof(CS2::client::CCSPlayerController_InventoryServices, m_vecNetworkableLoadout) == 0x40, "m_vecNetworkableLoadout in CCSPlayerController_InventoryServices should be at offset 0x40");
 		static_assert(offsetof(CS2::client::CCSPlayerController_InventoryServices, m_unMusicID) == 0x58, "m_unMusicID in CCSPlayerController_InventoryServices should be at offset 0x58");

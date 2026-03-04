@@ -11,6 +11,7 @@
 
 
 #include <SDK/pulse_runtime_lib/CPulseCell_BaseYieldingInflow.hpp>
+#include <SDK/pulse_runtime_lib/CPulse_OutflowConnection.hpp>
 #include <SDK/pulse_runtime_lib/CPulse_ResumePoint.hpp>
 
 
@@ -23,7 +24,7 @@ namespace CS2 {
 		class CPulseCell_FireCursors : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
 			// server::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Outflows; // 0x48 | Schema_Atomic | Size: 0x18
-			char  m_Outflows[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			char m_Outflows[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			bool m_bWaitForChildOutflows; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x68 | Schema_DeclaredClass | Size: 0x48

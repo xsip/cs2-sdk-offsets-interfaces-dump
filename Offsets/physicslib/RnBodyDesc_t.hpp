@@ -23,13 +23,13 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flInertiaScaleInv = 0x78; // float32 m_flInertiaScaleInv; |  0x78 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flLinearDamping = 0x7c; // float32 m_flLinearDamping; |  0x7c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flAngularDamping = 0x80; // float32 m_flAngularDamping; |  0x80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearDrag = 0x84; // float32 m_flLinearDrag; |  0x84 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularDrag = 0x88; // float32 m_flAngularDrag; |  0x88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearBuoyancyDrag = 0x8c; // float32 m_flLinearBuoyancyDrag; |  0x8c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularBuoyancyDrag = 0x90; // float32 m_flAngularBuoyancyDrag; |  0x90 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearDragScale = 0x84; // float32 m_flLinearDragScale; |  0x84 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularDragScale = 0x88; // float32 m_flAngularDragScale; |  0x88 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearFluidDragScale = 0x8c; // float32 m_flLinearFluidDragScale; |  0x8c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularFluidDragScale = 0x90; // float32 m_flAngularFluidDragScale; |  0x90 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_vLastAwakeForceAccum = 0x94; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_vLastAwakeTorqueAccum = 0xa0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flBuoyancyFactor = 0xac; // float32 m_flBuoyancyFactor; |  0xac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBuoyancyScale = 0xac; // float32 m_flBuoyancyScale; |  0xac | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flGravityScale = 0xb0; // float32 m_flGravityScale; |  0xb0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flTimeScale = 0xb4; // float32 m_flTimeScale; |  0xb4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nBodyType = 0xb8; // int32_t m_nBodyType; |  0xb8 | Schema_Builtin | Size: 0x4
@@ -42,7 +42,6 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bSleeping = 0xc8; // bool m_bSleeping; |  0xc8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bIsContinuousEnabled = 0xc9; // bool m_bIsContinuousEnabled; |  0xc9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bDragEnabled = 0xca; // bool m_bDragEnabled; |  0xca | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bBuoyancyDragEnabled = 0xcb; // bool m_bBuoyancyDragEnabled; |  0xcb | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_vGravity = 0xcc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_bSpeculativeEnabled = 0xd8; // bool m_bSpeculativeEnabled; |  0xd8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bHasShadowController = 0xd9; // bool m_bHasShadowController; |  0xd9 | Schema_Builtin | Size: 0x1

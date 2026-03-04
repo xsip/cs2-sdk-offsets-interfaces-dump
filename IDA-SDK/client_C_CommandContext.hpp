@@ -5,7 +5,7 @@
 
 class client_C_CommandContext {
     bool needsprocessing;
-    char pad_1358[0x9f];
+    char pad_2159[0x9f];
     int32_t command_number;
-    char end_pad_1359[0x4];
+    char end_pad_2160[0x4];
 };

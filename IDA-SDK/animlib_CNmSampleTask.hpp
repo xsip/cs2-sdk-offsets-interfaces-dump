@@ -4,6 +4,6 @@
 
 
 class animlib_CNmSampleTask {
-    char pad_1018[0x50];
-    char pad_1760[0x10];
+    char pad_1819[0x58];
+    char pad_2537[0x10];
 };

@@ -28,42 +28,42 @@ namespace CS2 {
 	namespace server {
 		class CPointAngularVelocitySensor : public CS2::server::CPointEntity {
 		public:
-			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// char  m_hTargetEntity[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
-			float32 m_flThreshold; // 0x4f4 | Schema_Builtin | Size: 0x4
-			int32_t m_nLastCompareResult; // 0x4f8 | Schema_Builtin | Size: 0x4
-			int32_t m_nLastFireResult; // 0x4fc | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flFireTime; // 0x500 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flFireInterval; // 0x504 | Schema_Builtin | Size: 0x4
-			float32 m_flLastAngVelocity; // 0x508 | Schema_Builtin | Size: 0x4
-			GlobalTypes::QAngle m_lastOrientation; // 0x50c | Schema_Atomic | Size: 0xc
-			GlobalTypes::VectorWS m_vecAxis; // 0x518 | Schema_Atomic | Size: 0xc
-			bool m_bUseHelper; // 0x524 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4a8 | Schema_Atomic | Size: 0x4
+			// char m_hTargetEntity[0x4]; // 0x4a8 | Schema_Atomic | Size: 0x4
+			float32 m_flThreshold; // 0x4ac | Schema_Builtin | Size: 0x4
+			int32_t m_nLastCompareResult; // 0x4b0 | Schema_Builtin | Size: 0x4
+			int32_t m_nLastFireResult; // 0x4b4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flFireTime; // 0x4b8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flFireInterval; // 0x4bc | Schema_Builtin | Size: 0x4
+			float32 m_flLastAngVelocity; // 0x4c0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::QAngle m_lastOrientation; // 0x4c4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecAxis; // 0x4d0 | Schema_Atomic | Size: 0xc
+			bool m_bUseHelper; // 0x4dc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_AngularVelocity; // 0x528 | Schema_Atomic | Size: 0x28
-			char  m_AngularVelocity[0x28]; // 0x528 | Schema_Atomic | Size: 0x28
-			entity2::CEntityIOOutput m_OnLessThan; // 0x550 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnLessThanOrEqualTo; // 0x578 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnGreaterThan; // 0x5a0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnGreaterThanOrEqualTo; // 0x5c8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEqualTo; // 0x5f0 | Schema_DeclaredClass | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_AngularVelocity; // 0x4e0 | Schema_Atomic | Size: 0x20
+			char m_AngularVelocity[0x20]; // 0x4e0 | Schema_Atomic | Size: 0x20
+			entity2::CEntityIOOutput m_OnLessThan; // 0x500 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnLessThanOrEqualTo; // 0x518 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnGreaterThan; // 0x530 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnGreaterThanOrEqualTo; // 0x548 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnEqualTo; // 0x560 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_hTargetEntity) == 0x4F0, "m_hTargetEntity in CPointAngularVelocitySensor should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flThreshold) == 0x4F4, "m_flThreshold in CPointAngularVelocitySensor should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_nLastCompareResult) == 0x4F8, "m_nLastCompareResult in CPointAngularVelocitySensor should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_nLastFireResult) == 0x4FC, "m_nLastFireResult in CPointAngularVelocitySensor should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flFireTime) == 0x500, "m_flFireTime in CPointAngularVelocitySensor should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flFireInterval) == 0x504, "m_flFireInterval in CPointAngularVelocitySensor should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flLastAngVelocity) == 0x508, "m_flLastAngVelocity in CPointAngularVelocitySensor should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_lastOrientation) == 0x50C, "m_lastOrientation in CPointAngularVelocitySensor should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_vecAxis) == 0x518, "m_vecAxis in CPointAngularVelocitySensor should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_bUseHelper) == 0x524, "m_bUseHelper in CPointAngularVelocitySensor should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_AngularVelocity) == 0x528, "m_AngularVelocity in CPointAngularVelocitySensor should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnLessThan) == 0x550, "m_OnLessThan in CPointAngularVelocitySensor should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnLessThanOrEqualTo) == 0x578, "m_OnLessThanOrEqualTo in CPointAngularVelocitySensor should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnGreaterThan) == 0x5A0, "m_OnGreaterThan in CPointAngularVelocitySensor should be at offset 0x5A0");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnGreaterThanOrEqualTo) == 0x5C8, "m_OnGreaterThanOrEqualTo in CPointAngularVelocitySensor should be at offset 0x5C8");
-		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnEqualTo) == 0x5F0, "m_OnEqualTo in CPointAngularVelocitySensor should be at offset 0x5F0");
-		static_assert(sizeof(CS2::server::CPointAngularVelocitySensor) == 0x618, "CPointAngularVelocitySensor size should be 0x618");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_hTargetEntity) == 0x4A8, "m_hTargetEntity in CPointAngularVelocitySensor should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flThreshold) == 0x4AC, "m_flThreshold in CPointAngularVelocitySensor should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_nLastCompareResult) == 0x4B0, "m_nLastCompareResult in CPointAngularVelocitySensor should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_nLastFireResult) == 0x4B4, "m_nLastFireResult in CPointAngularVelocitySensor should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flFireTime) == 0x4B8, "m_flFireTime in CPointAngularVelocitySensor should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flFireInterval) == 0x4BC, "m_flFireInterval in CPointAngularVelocitySensor should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flLastAngVelocity) == 0x4C0, "m_flLastAngVelocity in CPointAngularVelocitySensor should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_lastOrientation) == 0x4C4, "m_lastOrientation in CPointAngularVelocitySensor should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_vecAxis) == 0x4D0, "m_vecAxis in CPointAngularVelocitySensor should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_bUseHelper) == 0x4DC, "m_bUseHelper in CPointAngularVelocitySensor should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_AngularVelocity) == 0x4E0, "m_AngularVelocity in CPointAngularVelocitySensor should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnLessThan) == 0x500, "m_OnLessThan in CPointAngularVelocitySensor should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnLessThanOrEqualTo) == 0x518, "m_OnLessThanOrEqualTo in CPointAngularVelocitySensor should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnGreaterThan) == 0x530, "m_OnGreaterThan in CPointAngularVelocitySensor should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnGreaterThanOrEqualTo) == 0x548, "m_OnGreaterThanOrEqualTo in CPointAngularVelocitySensor should be at offset 0x548");
+		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnEqualTo) == 0x560, "m_OnEqualTo in CPointAngularVelocitySensor should be at offset 0x560");
+		static_assert(sizeof(CS2::server::CPointAngularVelocitySensor) == 0x578, "CPointAngularVelocitySensor size should be 0x578");
 	}
 }

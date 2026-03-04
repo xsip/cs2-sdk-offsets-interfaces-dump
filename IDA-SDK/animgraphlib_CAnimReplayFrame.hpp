@@ -4,7 +4,8 @@
 
 
 class animgraphlib_CAnimReplayFrame {
-    char vTable44[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     char m_inputDataBlocks[0x18];
     CUtlBinaryBlock m_instanceData;
     char pad_45[0x8];

@@ -22,7 +22,7 @@ namespace CS2 {
 		class RnSphereDesc_t : public CS2::physicslib::RnShapeDesc_t {
 		public:
 			// GlobalTypes::SphereBase_t< float32 > m_Sphere; // 0x18 | Schema_Atomic | Size: 0x10
-			char  m_Sphere[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
+			char m_Sphere[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::physicslib::RnSphereDesc_t, m_Sphere) == 0x18, "m_Sphere in RnSphereDesc_t should be at offset 0x18");
 		static_assert(sizeof(CS2::physicslib::RnSphereDesc_t) == 0x28, "RnSphereDesc_t size should be 0x28");

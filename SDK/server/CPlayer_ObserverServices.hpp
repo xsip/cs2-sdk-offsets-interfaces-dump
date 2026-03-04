@@ -27,18 +27,18 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_ObserverServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			uint8_t m_iObserverMode; // 0x40 | Schema_Builtin | Size: 0x1
+			uint8_t m_iObserverMode; // 0x48 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle<server::CBaseEntity> m_hObserverTarget; // 0x44 | Schema_Atomic | Size: 0x4
-			// char  m_hObserverTarget[0x4]; // 0x44 | Schema_Atomic | Size: 0x4
-			client::ObserverMode_t m_iObserverLastMode; // 0x48 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bForcedObserverMode; // 0x4c | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseEntity> m_hObserverTarget; // 0x4c | Schema_Atomic | Size: 0x4
+			// char m_hObserverTarget[0x4]; // 0x4c | Schema_Atomic | Size: 0x4
+			client::ObserverMode_t m_iObserverLastMode; // 0x50 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bForcedObserverMode; // 0x54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_iObserverMode) == 0x40, "m_iObserverMode in CPlayer_ObserverServices should be at offset 0x40");
-		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_hObserverTarget) == 0x44, "m_hObserverTarget in CPlayer_ObserverServices should be at offset 0x44");
-		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_iObserverLastMode) == 0x48, "m_iObserverLastMode in CPlayer_ObserverServices should be at offset 0x48");
-		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_bForcedObserverMode) == 0x4C, "m_bForcedObserverMode in CPlayer_ObserverServices should be at offset 0x4C");
-		static_assert(sizeof(CS2::server::CPlayer_ObserverServices) == 0x50, "CPlayer_ObserverServices size should be 0x50");
+		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_iObserverMode) == 0x48, "m_iObserverMode in CPlayer_ObserverServices should be at offset 0x48");
+		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_hObserverTarget) == 0x4C, "m_hObserverTarget in CPlayer_ObserverServices should be at offset 0x4C");
+		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_iObserverLastMode) == 0x50, "m_iObserverLastMode in CPlayer_ObserverServices should be at offset 0x50");
+		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_bForcedObserverMode) == 0x54, "m_bForcedObserverMode in CPlayer_ObserverServices should be at offset 0x54");
+		static_assert(sizeof(CS2::server::CPlayer_ObserverServices) == 0x58, "CPlayer_ObserverServices size should be 0x58");
 	}
 }

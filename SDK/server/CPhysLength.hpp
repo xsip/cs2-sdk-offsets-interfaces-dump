@@ -21,20 +21,17 @@ namespace CS2 {
 	namespace server {
 		class CPhysLength : public CS2::server::CPhysConstraint {
 		public:
-			GlobalTypes::Vector m_offset[2]; // 0x560 | Schema_FixedArray | Size: 0x18
-			GlobalTypes::VectorWS m_vecAttach; // 0x578 | Schema_Atomic | Size: 0xc
-			float32 m_addLength; // 0x584 | Schema_Builtin | Size: 0x4
-			float32 m_minLength; // 0x588 | Schema_Builtin | Size: 0x4
-			float32 m_totalLength; // 0x58c | Schema_Builtin | Size: 0x4
-			bool m_bEnableCollision; // 0x590 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x7); // End padding
+			GlobalTypes::Vector m_offset[2]; // 0x508 | Schema_FixedArray | Size: 0x18
+			GlobalTypes::VectorWS m_vecAttach; // 0x520 | Schema_Atomic | Size: 0xc
+			float32 m_addLength; // 0x52c | Schema_Builtin | Size: 0x4
+			float32 m_minLength; // 0x530 | Schema_Builtin | Size: 0x4
+			float32 m_totalLength; // 0x534 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CPhysLength, m_offset) == 0x560, "m_offset in CPhysLength should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CPhysLength, m_vecAttach) == 0x578, "m_vecAttach in CPhysLength should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CPhysLength, m_addLength) == 0x584, "m_addLength in CPhysLength should be at offset 0x584");
-		static_assert(offsetof(CS2::server::CPhysLength, m_minLength) == 0x588, "m_minLength in CPhysLength should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CPhysLength, m_totalLength) == 0x58C, "m_totalLength in CPhysLength should be at offset 0x58C");
-		static_assert(offsetof(CS2::server::CPhysLength, m_bEnableCollision) == 0x590, "m_bEnableCollision in CPhysLength should be at offset 0x590");
-		static_assert(sizeof(CS2::server::CPhysLength) == 0x598, "CPhysLength size should be 0x598");
+		static_assert(offsetof(CS2::server::CPhysLength, m_offset) == 0x508, "m_offset in CPhysLength should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CPhysLength, m_vecAttach) == 0x520, "m_vecAttach in CPhysLength should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CPhysLength, m_addLength) == 0x52C, "m_addLength in CPhysLength should be at offset 0x52C");
+		static_assert(offsetof(CS2::server::CPhysLength, m_minLength) == 0x530, "m_minLength in CPhysLength should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CPhysLength, m_totalLength) == 0x534, "m_totalLength in CPhysLength should be at offset 0x534");
+		static_assert(sizeof(CS2::server::CPhysLength) == 0x538, "CPhysLength size should be 0x538");
 	}
 }

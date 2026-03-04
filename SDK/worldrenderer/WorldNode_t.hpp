@@ -10,22 +10,19 @@
 #endif
 
 
+#include <SDK/worldrenderer/SceneObject_t.hpp>
+#include <SDK/worldrenderer/AggregateSceneObject_t.hpp>
+#include <SDK/worldrenderer/ClutterSceneObject_t.hpp>
+#include <SDK/worldrenderer/AggregateRTProxySceneObject_t.hpp>
+#include <SDK/worldrenderer/ExtraVertexStreamOverride_t.hpp>
+#include <SDK/worldrenderer/MaterialOverride_t.hpp>
+#include <SDK/worldrenderer/WorldNodeOnDiskBufferData_t.hpp>
+#include <SDK/worldrenderer/AggregateInstanceStreamOnDiskData_t.hpp>
+#include <SDK/worldrenderer/AggregateVertexAlbedoStreamOnDiskData_t.hpp>
 #include <SDK/worldrenderer/BakedLightingInfo_t.hpp>
 
 
 
-namespace CS2 {
-	namespace worldrenderer {
-		class SceneObject_t;
-		class AggregateSceneObject_t;
-		class ClutterSceneObject_t;
-		class ExtraVertexStreamOverride_t;
-		class MaterialOverride_t;
-		class WorldNodeOnDiskBufferData_t;
-		class AggregateInstanceStreamOnDiskData_t;
-		class AggregateVertexAlbedoStreamOnDiskData_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -34,46 +31,49 @@ namespace CS2 {
 		class WorldNode_t  {
 		public:
 			GlobalTypes::CUtlVector<worldrenderer::SceneObject_t> m_sceneObjects; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_sceneObjects[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_sceneObjects[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint16 > m_visClusterMembership; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_visClusterMembership[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_visClusterMembership[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<worldrenderer::AggregateSceneObject_t> m_aggregateSceneObjects; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_aggregateSceneObjects[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_aggregateSceneObjects[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<worldrenderer::ClutterSceneObject_t> m_clutterSceneObjects; // 0x48 | Schema_Atomic | Size: 0x18
-			// char  m_clutterSceneObjects[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<worldrenderer::ExtraVertexStreamOverride_t> m_extraVertexStreamOverrides; // 0x60 | Schema_Atomic | Size: 0x18
-			// char  m_extraVertexStreamOverrides[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<worldrenderer::MaterialOverride_t> m_materialOverrides; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_materialOverrides[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<worldrenderer::WorldNodeOnDiskBufferData_t> m_extraVertexStreams; // 0x90 | Schema_Atomic | Size: 0x18
-			// char  m_extraVertexStreams[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<worldrenderer::AggregateInstanceStreamOnDiskData_t> m_aggregateInstanceStreams; // 0xa8 | Schema_Atomic | Size: 0x18
-			// char  m_aggregateInstanceStreams[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t> m_vertexAlbedoStreams; // 0xc0 | Schema_Atomic | Size: 0x18
-			// char  m_vertexAlbedoStreams[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_layerNames; // 0xd8 | Schema_Atomic | Size: 0x18
-			// char  m_layerNames[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< uint8 > m_sceneObjectLayerIndices; // 0xf0 | Schema_Atomic | Size: 0x18
-			// char  m_sceneObjectLayerIndices[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlString m_grassFileName; // 0x108 | Schema_Atomic | Size: 0x8
-			worldrenderer::BakedLightingInfo_t m_nodeLightingInfo; // 0x110 | Schema_DeclaredClass | Size: 0x48
-			bool m_bHasBakedGeometryFlag; // 0x158 | Schema_Builtin | Size: 0x1
+			// char m_clutterSceneObjects[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::AggregateRTProxySceneObject_t> m_rtProxies; // 0x60 | Schema_Atomic | Size: 0x18
+			// char m_rtProxies[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::ExtraVertexStreamOverride_t> m_extraVertexStreamOverrides; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_extraVertexStreamOverrides[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::MaterialOverride_t> m_materialOverrides; // 0x90 | Schema_Atomic | Size: 0x18
+			// char m_materialOverrides[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::WorldNodeOnDiskBufferData_t> m_extraVertexStreams; // 0xa8 | Schema_Atomic | Size: 0x18
+			// char m_extraVertexStreams[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::AggregateInstanceStreamOnDiskData_t> m_aggregateInstanceStreams; // 0xc0 | Schema_Atomic | Size: 0x18
+			// char m_aggregateInstanceStreams[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t> m_vertexAlbedoStreams; // 0xd8 | Schema_Atomic | Size: 0x18
+			// char m_vertexAlbedoStreams[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_layerNames; // 0xf0 | Schema_Atomic | Size: 0x18
+			// char m_layerNames[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< uint8 > m_sceneObjectLayerIndices; // 0x108 | Schema_Atomic | Size: 0x18
+			// char m_sceneObjectLayerIndices[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlString m_grassFileName; // 0x120 | Schema_Atomic | Size: 0x8
+			worldrenderer::BakedLightingInfo_t m_nodeLightingInfo; // 0x128 | Schema_DeclaredClass | Size: 0x48
+			bool m_bHasBakedGeometryFlag; // 0x170 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_sceneObjects) == 0x0, "m_sceneObjects in WorldNode_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_visClusterMembership) == 0x18, "m_visClusterMembership in WorldNode_t should be at offset 0x18");
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_aggregateSceneObjects) == 0x30, "m_aggregateSceneObjects in WorldNode_t should be at offset 0x30");
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_clutterSceneObjects) == 0x48, "m_clutterSceneObjects in WorldNode_t should be at offset 0x48");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_extraVertexStreamOverrides) == 0x60, "m_extraVertexStreamOverrides in WorldNode_t should be at offset 0x60");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_materialOverrides) == 0x78, "m_materialOverrides in WorldNode_t should be at offset 0x78");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_extraVertexStreams) == 0x90, "m_extraVertexStreams in WorldNode_t should be at offset 0x90");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_aggregateInstanceStreams) == 0xA8, "m_aggregateInstanceStreams in WorldNode_t should be at offset 0xA8");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_vertexAlbedoStreams) == 0xC0, "m_vertexAlbedoStreams in WorldNode_t should be at offset 0xC0");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_layerNames) == 0xD8, "m_layerNames in WorldNode_t should be at offset 0xD8");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_sceneObjectLayerIndices) == 0xF0, "m_sceneObjectLayerIndices in WorldNode_t should be at offset 0xF0");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_grassFileName) == 0x108, "m_grassFileName in WorldNode_t should be at offset 0x108");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_nodeLightingInfo) == 0x110, "m_nodeLightingInfo in WorldNode_t should be at offset 0x110");
-		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_bHasBakedGeometryFlag) == 0x158, "m_bHasBakedGeometryFlag in WorldNode_t should be at offset 0x158");
-		static_assert(sizeof(CS2::worldrenderer::WorldNode_t) == 0x160, "WorldNode_t size should be 0x160");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_rtProxies) == 0x60, "m_rtProxies in WorldNode_t should be at offset 0x60");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_extraVertexStreamOverrides) == 0x78, "m_extraVertexStreamOverrides in WorldNode_t should be at offset 0x78");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_materialOverrides) == 0x90, "m_materialOverrides in WorldNode_t should be at offset 0x90");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_extraVertexStreams) == 0xA8, "m_extraVertexStreams in WorldNode_t should be at offset 0xA8");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_aggregateInstanceStreams) == 0xC0, "m_aggregateInstanceStreams in WorldNode_t should be at offset 0xC0");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_vertexAlbedoStreams) == 0xD8, "m_vertexAlbedoStreams in WorldNode_t should be at offset 0xD8");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_layerNames) == 0xF0, "m_layerNames in WorldNode_t should be at offset 0xF0");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_sceneObjectLayerIndices) == 0x108, "m_sceneObjectLayerIndices in WorldNode_t should be at offset 0x108");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_grassFileName) == 0x120, "m_grassFileName in WorldNode_t should be at offset 0x120");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_nodeLightingInfo) == 0x128, "m_nodeLightingInfo in WorldNode_t should be at offset 0x128");
+		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_bHasBakedGeometryFlag) == 0x170, "m_bHasBakedGeometryFlag in WorldNode_t should be at offset 0x170");
+		static_assert(sizeof(CS2::worldrenderer::WorldNode_t) == 0x178, "WorldNode_t size should be 0x178");
 	}
 }

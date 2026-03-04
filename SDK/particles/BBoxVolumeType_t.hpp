@@ -8,6 +8,7 @@ namespace CS2 {
 		enum BBoxVolumeType_t : std::uint32_t {
 			BBoxVolumeType_t_BBOX_DIMENSIONS = 0x1,
 			BBoxVolumeType_t_BBOX_MINS_MAXS = 0x2,
+			BBoxVolumeType_t_BBOX_RADIUS = 0x3,
 			BBoxVolumeType_t_BBOX_VOLUME = 0x0
 		};
 	}

@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x600
+			// Class size: 0x610
 			namespace CLogicRelay /*: public CS2::client::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_bDisabled = 0x5f8; // bool m_bDisabled; |  0x5f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bWaitForRefire = 0x5f9; // bool m_bWaitForRefire; |  0x5f9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bTriggerOnce = 0x5fa; // bool m_bTriggerOnce; |  0x5fa | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFastRetrigger = 0x5fb; // bool m_bFastRetrigger; |  0x5fb | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPassthoughCaller = 0x5fc; // bool m_bPassthoughCaller; |  0x5fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDisabled = 0x608; // bool m_bDisabled; |  0x608 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bWaitForRefire = 0x609; // bool m_bWaitForRefire; |  0x609 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bTriggerOnce = 0x60a; // bool m_bTriggerOnce; |  0x60a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFastRetrigger = 0x60b; // bool m_bFastRetrigger; |  0x60b | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPassthoughCaller = 0x60c; // bool m_bPassthoughCaller; |  0x60c | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

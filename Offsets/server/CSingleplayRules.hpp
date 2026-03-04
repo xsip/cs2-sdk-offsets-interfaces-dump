@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xC8
+			// Class size: 0xD8
 			namespace CSingleplayRules /*: public CS2::server::CGameRules*/ {
-				constexpr std::ptrdiff_t m_bSinglePlayerGameEnding = 0xc0; // bool m_bSinglePlayerGameEnding; |  0xc0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSinglePlayerGameEnding = 0xd0; // bool m_bSinglePlayerGameEnding; |  0xd0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

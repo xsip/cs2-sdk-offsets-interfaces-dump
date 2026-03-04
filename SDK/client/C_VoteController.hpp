@@ -22,22 +22,22 @@ namespace CS2 {
 		class C_VoteController : public CS2::client::C_BaseEntity {
 		public:
 			S2_PAD(0x10);
-			int32_t m_iActiveIssueIndex; // 0x608 | Schema_Builtin | Size: 0x4
-			int32_t m_iOnlyTeamToVote; // 0x60c | Schema_Builtin | Size: 0x4
-			int32_t m_nVoteOptionCount[5]; // 0x610 | Schema_FixedArray | Size: 0x14
-			int32_t m_nPotentialVotes; // 0x624 | Schema_Builtin | Size: 0x4
-			bool m_bVotesDirty; // 0x628 | Schema_Builtin | Size: 0x1
-			bool m_bTypeDirty; // 0x629 | Schema_Builtin | Size: 0x1
-			bool m_bIsYesNoVote; // 0x62a | Schema_Builtin | Size: 0x1
+			int32_t m_iActiveIssueIndex; // 0x618 | Schema_Builtin | Size: 0x4
+			int32_t m_iOnlyTeamToVote; // 0x61c | Schema_Builtin | Size: 0x4
+			int32_t m_nVoteOptionCount[5]; // 0x620 | Schema_FixedArray | Size: 0x14
+			int32_t m_nPotentialVotes; // 0x634 | Schema_Builtin | Size: 0x4
+			bool m_bVotesDirty; // 0x638 | Schema_Builtin | Size: 0x1
+			bool m_bTypeDirty; // 0x639 | Schema_Builtin | Size: 0x1
+			bool m_bIsYesNoVote; // 0x63a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_VoteController, m_iActiveIssueIndex) == 0x608, "m_iActiveIssueIndex in C_VoteController should be at offset 0x608");
-		static_assert(offsetof(CS2::client::C_VoteController, m_iOnlyTeamToVote) == 0x60C, "m_iOnlyTeamToVote in C_VoteController should be at offset 0x60C");
-		static_assert(offsetof(CS2::client::C_VoteController, m_nVoteOptionCount) == 0x610, "m_nVoteOptionCount in C_VoteController should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_VoteController, m_nPotentialVotes) == 0x624, "m_nPotentialVotes in C_VoteController should be at offset 0x624");
-		static_assert(offsetof(CS2::client::C_VoteController, m_bVotesDirty) == 0x628, "m_bVotesDirty in C_VoteController should be at offset 0x628");
-		static_assert(offsetof(CS2::client::C_VoteController, m_bTypeDirty) == 0x629, "m_bTypeDirty in C_VoteController should be at offset 0x629");
-		static_assert(offsetof(CS2::client::C_VoteController, m_bIsYesNoVote) == 0x62A, "m_bIsYesNoVote in C_VoteController should be at offset 0x62A");
-		static_assert(sizeof(CS2::client::C_VoteController) == 0x630, "C_VoteController size should be 0x630");
+		static_assert(offsetof(CS2::client::C_VoteController, m_iActiveIssueIndex) == 0x618, "m_iActiveIssueIndex in C_VoteController should be at offset 0x618");
+		static_assert(offsetof(CS2::client::C_VoteController, m_iOnlyTeamToVote) == 0x61C, "m_iOnlyTeamToVote in C_VoteController should be at offset 0x61C");
+		static_assert(offsetof(CS2::client::C_VoteController, m_nVoteOptionCount) == 0x620, "m_nVoteOptionCount in C_VoteController should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_VoteController, m_nPotentialVotes) == 0x634, "m_nPotentialVotes in C_VoteController should be at offset 0x634");
+		static_assert(offsetof(CS2::client::C_VoteController, m_bVotesDirty) == 0x638, "m_bVotesDirty in C_VoteController should be at offset 0x638");
+		static_assert(offsetof(CS2::client::C_VoteController, m_bTypeDirty) == 0x639, "m_bTypeDirty in C_VoteController should be at offset 0x639");
+		static_assert(offsetof(CS2::client::C_VoteController, m_bIsYesNoVote) == 0x63A, "m_bIsYesNoVote in C_VoteController should be at offset 0x63A");
+		static_assert(sizeof(CS2::client::C_VoteController) == 0x640, "C_VoteController size should be 0x640");
 	}
 }

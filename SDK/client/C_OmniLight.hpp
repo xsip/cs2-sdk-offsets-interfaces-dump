@@ -21,14 +21,14 @@ namespace CS2 {
 	namespace client {
 		class C_OmniLight : public CS2::client::C_BarnLight {
 		public:
-			float32 m_flInnerAngle; // 0x1200 | Schema_Builtin | Size: 0x4
-			float32 m_flOuterAngle; // 0x1204 | Schema_Builtin | Size: 0x4
-			bool m_bShowLight; // 0x1208 | Schema_Builtin | Size: 0x1
+			float32 m_flInnerAngle; // 0x1198 | Schema_Builtin | Size: 0x4
+			float32 m_flOuterAngle; // 0x119c | Schema_Builtin | Size: 0x4
+			bool m_bShowLight; // 0x11a0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_OmniLight, m_flInnerAngle) == 0x1200, "m_flInnerAngle in C_OmniLight should be at offset 0x1200");
-		static_assert(offsetof(CS2::client::C_OmniLight, m_flOuterAngle) == 0x1204, "m_flOuterAngle in C_OmniLight should be at offset 0x1204");
-		static_assert(offsetof(CS2::client::C_OmniLight, m_bShowLight) == 0x1208, "m_bShowLight in C_OmniLight should be at offset 0x1208");
-		static_assert(sizeof(CS2::client::C_OmniLight) == 0x1210, "C_OmniLight size should be 0x1210");
+		static_assert(offsetof(CS2::client::C_OmniLight, m_flInnerAngle) == 0x1198, "m_flInnerAngle in C_OmniLight should be at offset 0x1198");
+		static_assert(offsetof(CS2::client::C_OmniLight, m_flOuterAngle) == 0x119C, "m_flOuterAngle in C_OmniLight should be at offset 0x119C");
+		static_assert(offsetof(CS2::client::C_OmniLight, m_bShowLight) == 0x11A0, "m_bShowLight in C_OmniLight should be at offset 0x11A0");
+		static_assert(sizeof(CS2::client::C_OmniLight) == 0x11A8, "C_OmniLight size should be 0x11A8");
 	}
 }

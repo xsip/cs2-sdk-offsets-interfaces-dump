@@ -22,6 +22,6 @@ namespace CS2 {
 		class CBodyComponentBaseModelEntity : public CS2::client::CBodyComponentSkeletonInstance {
 		public:
 		};
-		static_assert(sizeof(CS2::client::CBodyComponentBaseModelEntity) == 0x5B0, "CBodyComponentBaseModelEntity size should be 0x5B0");
+		static_assert(sizeof(CS2::client::CBodyComponentBaseModelEntity) == 0x550, "CBodyComponentBaseModelEntity size should be 0x550");
 	}
 }

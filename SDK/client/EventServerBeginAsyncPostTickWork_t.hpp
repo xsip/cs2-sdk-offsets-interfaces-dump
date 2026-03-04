@@ -10,7 +10,6 @@
 #endif
 
 
-#include <SDK/client/EventPostAdvanceTick_t.hpp>
 
 
 
@@ -19,9 +18,11 @@
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
-		class EventServerBeginAsyncPostTickWork_t : public CS2::client::EventPostAdvanceTick_t {
+		class EventServerBeginAsyncPostTickWork_t  {
 		public:
+			bool m_bIsOncePerFrameAsyncWorkPhase; // 0x0 | Schema_Builtin | Size: 0x1
 		};
-		static_assert(sizeof(CS2::client::EventServerBeginAsyncPostTickWork_t) == 0x40, "EventServerBeginAsyncPostTickWork_t size should be 0x40");
+		static_assert(offsetof(CS2::client::EventServerBeginAsyncPostTickWork_t, m_bIsOncePerFrameAsyncWorkPhase) == 0x0, "m_bIsOncePerFrameAsyncWorkPhase in EventServerBeginAsyncPostTickWork_t should be at offset 0x0");
+		static_assert(sizeof(CS2::client::EventServerBeginAsyncPostTickWork_t) == 0x1, "EventServerBeginAsyncPostTickWork_t size should be 0x1");
 	}
 }

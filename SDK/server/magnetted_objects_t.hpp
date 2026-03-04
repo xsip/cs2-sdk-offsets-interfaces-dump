@@ -27,7 +27,7 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			GlobalTypes::CHandle<server::CBaseEntity> hEntity; // 0x8 | Schema_Atomic | Size: 0x4
-			// char  hEntity[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
+			// char hEntity[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::magnetted_objects_t, hEntity) == 0x8, "hEntity in magnetted_objects_t should be at offset 0x8");

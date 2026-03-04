@@ -6,12 +6,13 @@
 namespace CS2 {
 	namespace client {
 		enum TakeDamageFlags_t : std::uint64_t {
+			TakeDamageFlags_t_DFLAG_ALLOW_NON_AUTHORITATIVE = 0x20000,
 			TakeDamageFlags_t_DFLAG_ALWAYS_FIRE_DAMAGE_EVENTS = 0x200,
 			TakeDamageFlags_t_DFLAG_ALWAYS_GIB = 0x20,
 			TakeDamageFlags_t_DFLAG_FORCEREDUCEARMOR_DMG = 0x800,
 			TakeDamageFlags_t_DFLAG_FORCE_DEATH = 0x10,
 			TakeDamageFlags_t_DFLAG_FORCE_PHYSICS_FORCE = 0x8000,
-			TakeDamageFlags_t_DFLAG_IGNORE_ARMOR = 0x10000,
+			TakeDamageFlags_t_DFLAG_IGNORE_ARMOR = 0x40000,
 			TakeDamageFlags_t_DFLAG_IGNORE_DESTRUCTIBLE_PARTS = 0x2000,
 			TakeDamageFlags_t_DFLAG_NEVER_GIB = 0x40,
 			TakeDamageFlags_t_DFLAG_NONE = 0x0,
@@ -24,8 +25,9 @@ namespace CS2 {
 			TakeDamageFlags_t_DFLAG_SUPPRESS_HEALTH_CHANGES = 0x1,
 			TakeDamageFlags_t_DFLAG_SUPPRESS_INTERRUPT_FLINCH = 0x1000,
 			TakeDamageFlags_t_DFLAG_SUPPRESS_PHYSICS_FORCE = 0x2,
-			TakeDamageFlags_t_DFLAG_SUPPRESS_UTILREMOVE = 0x20000,
-			TakeDamageFlags_t_DMG_LASTDFLAG = 0x8000
+			TakeDamageFlags_t_DFLAG_SUPPRESS_SCREENSPACE_DAMAGE_FX = 0x10000,
+			TakeDamageFlags_t_DFLAG_SUPPRESS_UTILREMOVE = 0x80000,
+			TakeDamageFlags_t_DMG_LASTDFLAG = 0x20000
 		};
 	}
 }

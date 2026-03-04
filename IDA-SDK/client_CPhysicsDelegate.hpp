@@ -5,6 +5,6 @@
 class client_C_RopeKeyframe;
 
 class client_CPhysicsDelegate {
-    char vTable1559[0x8];
+    void **__vftable_0;
     client_C_RopeKeyframe* m_pKeyframe;
 };

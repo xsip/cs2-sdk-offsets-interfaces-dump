@@ -21,19 +21,19 @@ namespace CS2 {
 	namespace server {
 		class CMessageEntity : public CS2::server::CPointEntity {
 		public:
-			int32_t m_radius; // 0x4f0 | Schema_Builtin | Size: 0x4
+			int32_t m_radius; // 0x4a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_messageText; // 0x4f8 | Schema_Atomic | Size: 0x8
-			bool m_drawText; // 0x500 | Schema_Builtin | Size: 0x1
-			bool m_bDeveloperOnly; // 0x501 | Schema_Builtin | Size: 0x1
-			bool m_bEnabled; // 0x502 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_messageText; // 0x4b0 | Schema_Atomic | Size: 0x8
+			bool m_drawText; // 0x4b8 | Schema_Builtin | Size: 0x1
+			bool m_bDeveloperOnly; // 0x4b9 | Schema_Builtin | Size: 0x1
+			bool m_bEnabled; // 0x4ba | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::server::CMessageEntity, m_radius) == 0x4F0, "m_radius in CMessageEntity should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CMessageEntity, m_messageText) == 0x4F8, "m_messageText in CMessageEntity should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CMessageEntity, m_drawText) == 0x500, "m_drawText in CMessageEntity should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CMessageEntity, m_bDeveloperOnly) == 0x501, "m_bDeveloperOnly in CMessageEntity should be at offset 0x501");
-		static_assert(offsetof(CS2::server::CMessageEntity, m_bEnabled) == 0x502, "m_bEnabled in CMessageEntity should be at offset 0x502");
-		static_assert(sizeof(CS2::server::CMessageEntity) == 0x508, "CMessageEntity size should be 0x508");
+		static_assert(offsetof(CS2::server::CMessageEntity, m_radius) == 0x4A8, "m_radius in CMessageEntity should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CMessageEntity, m_messageText) == 0x4B0, "m_messageText in CMessageEntity should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CMessageEntity, m_drawText) == 0x4B8, "m_drawText in CMessageEntity should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CMessageEntity, m_bDeveloperOnly) == 0x4B9, "m_bDeveloperOnly in CMessageEntity should be at offset 0x4B9");
+		static_assert(offsetof(CS2::server::CMessageEntity, m_bEnabled) == 0x4BA, "m_bEnabled in CMessageEntity should be at offset 0x4BA");
+		static_assert(sizeof(CS2::server::CMessageEntity) == 0x4C0, "CMessageEntity size should be 0x4C0");
 	}
 }

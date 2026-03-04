@@ -22,6 +22,6 @@ namespace CS2 {
 		class CMolotovGrenade : public CS2::server::CBaseCSGrenade {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CMolotovGrenade) == 0x1210, "CMolotovGrenade size should be 0x1210");
+		static_assert(sizeof(CS2::server::CMolotovGrenade) == 0x1170, "CMolotovGrenade size should be 0x1170");
 	}
 }

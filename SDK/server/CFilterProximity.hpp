@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CFilterProximity : public CS2::server::CBaseFilter {
 		public:
-			float32 m_flRadius; // 0x548 | Schema_Builtin | Size: 0x4
+			float32 m_flRadius; // 0x4e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFilterProximity, m_flRadius) == 0x548, "m_flRadius in CFilterProximity should be at offset 0x548");
-		static_assert(sizeof(CS2::server::CFilterProximity) == 0x550, "CFilterProximity size should be 0x550");
+		static_assert(offsetof(CS2::server::CFilterProximity, m_flRadius) == 0x4E0, "m_flRadius in CFilterProximity should be at offset 0x4E0");
+		static_assert(sizeof(CS2::server::CFilterProximity) == 0x4E8, "CFilterProximity size should be 0x4E8");
 	}
 }

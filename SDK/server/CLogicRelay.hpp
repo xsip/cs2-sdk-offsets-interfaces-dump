@@ -21,18 +21,18 @@ namespace CS2 {
 	namespace server {
 		class CLogicRelay : public CS2::server::CLogicalEntity {
 		public:
-			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
-			bool m_bWaitForRefire; // 0x4f1 | Schema_Builtin | Size: 0x1
-			bool m_bTriggerOnce; // 0x4f2 | Schema_Builtin | Size: 0x1
-			bool m_bFastRetrigger; // 0x4f3 | Schema_Builtin | Size: 0x1
-			bool m_bPassthoughCaller; // 0x4f4 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x4a8 | Schema_Builtin | Size: 0x1
+			bool m_bWaitForRefire; // 0x4a9 | Schema_Builtin | Size: 0x1
+			bool m_bTriggerOnce; // 0x4aa | Schema_Builtin | Size: 0x1
+			bool m_bFastRetrigger; // 0x4ab | Schema_Builtin | Size: 0x1
+			bool m_bPassthoughCaller; // 0x4ac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::server::CLogicRelay, m_bDisabled) == 0x4F0, "m_bDisabled in CLogicRelay should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CLogicRelay, m_bWaitForRefire) == 0x4F1, "m_bWaitForRefire in CLogicRelay should be at offset 0x4F1");
-		static_assert(offsetof(CS2::server::CLogicRelay, m_bTriggerOnce) == 0x4F2, "m_bTriggerOnce in CLogicRelay should be at offset 0x4F2");
-		static_assert(offsetof(CS2::server::CLogicRelay, m_bFastRetrigger) == 0x4F3, "m_bFastRetrigger in CLogicRelay should be at offset 0x4F3");
-		static_assert(offsetof(CS2::server::CLogicRelay, m_bPassthoughCaller) == 0x4F4, "m_bPassthoughCaller in CLogicRelay should be at offset 0x4F4");
-		static_assert(sizeof(CS2::server::CLogicRelay) == 0x4F8, "CLogicRelay size should be 0x4F8");
+		static_assert(offsetof(CS2::server::CLogicRelay, m_bDisabled) == 0x4A8, "m_bDisabled in CLogicRelay should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CLogicRelay, m_bWaitForRefire) == 0x4A9, "m_bWaitForRefire in CLogicRelay should be at offset 0x4A9");
+		static_assert(offsetof(CS2::server::CLogicRelay, m_bTriggerOnce) == 0x4AA, "m_bTriggerOnce in CLogicRelay should be at offset 0x4AA");
+		static_assert(offsetof(CS2::server::CLogicRelay, m_bFastRetrigger) == 0x4AB, "m_bFastRetrigger in CLogicRelay should be at offset 0x4AB");
+		static_assert(offsetof(CS2::server::CLogicRelay, m_bPassthoughCaller) == 0x4AC, "m_bPassthoughCaller in CLogicRelay should be at offset 0x4AC");
+		static_assert(sizeof(CS2::server::CLogicRelay) == 0x4B0, "CLogicRelay size should be 0x4B0");
 	}
 }

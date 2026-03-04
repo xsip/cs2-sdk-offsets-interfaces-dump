@@ -31,6 +31,7 @@ namespace CS2 {
 			particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x4c0 | Schema_DeclaredClass | Size: 0x170
 			int32_t m_nOutputCP; // 0x630 | Schema_Builtin | Size: 0x4
 			int32_t m_nOutVectorField; // 0x634 | Schema_Builtin | Size: 0x4
+			particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x638 | Schema_DeclaredClass | Size: 0x170
 		};
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression, m_nExpression) == 0x1D8, "m_nExpression in C_OP_SetControlPointFieldToScalarExpression should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression, m_flInput1) == 0x1E0, "m_flInput1 in C_OP_SetControlPointFieldToScalarExpression should be at offset 0x1E0");
@@ -38,6 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression, m_flOutputRemap) == 0x4C0, "m_flOutputRemap in C_OP_SetControlPointFieldToScalarExpression should be at offset 0x4C0");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression, m_nOutputCP) == 0x630, "m_nOutputCP in C_OP_SetControlPointFieldToScalarExpression should be at offset 0x630");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression, m_nOutVectorField) == 0x634, "m_nOutVectorField in C_OP_SetControlPointFieldToScalarExpression should be at offset 0x634");
-		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression) == 0x638, "C_OP_SetControlPointFieldToScalarExpression size should be 0x638");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression, m_flInterpolation) == 0x638, "m_flInterpolation in C_OP_SetControlPointFieldToScalarExpression should be at offset 0x638");
+		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFieldToScalarExpression) == 0x7A8, "C_OP_SetControlPointFieldToScalarExpression size should be 0x7A8");
 	}
 }

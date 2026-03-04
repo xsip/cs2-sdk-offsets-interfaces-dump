@@ -5,7 +5,7 @@
 #include "server_CountdownTimer.hpp"
 
 class server_CBtActionParachutePositioning {
-    char pad_2721[0x58];
+    char pad_2818[0x58];
     server_CountdownTimer m_ActionTimer;
-    char end_pad_3166[0x8];
+    char end_pad_3292[0x8];
 };

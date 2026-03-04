@@ -14,9 +14,9 @@ class modellib_CHitBox {
     int32_t m_nGroupId;
     uint8_t m_nShapeType;
     bool m_bTranslationOnly;
-    char pad_329[0x2];
+    char pad_331[0x2];
     uint32_t m_CRC;
     Color m_cRenderColor;
     uint16_t m_nHitBoxIndex;
-    char end_pad_330[0x26];
+    char end_pad_332[0x26];
 };

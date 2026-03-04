@@ -4,5 +4,5 @@
 
 
 class vphysics2_IPhysicsPlayerController {
-    char pad_4182[0x8];
+    char pad_4296[0x8];
 };

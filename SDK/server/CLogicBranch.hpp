@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CLogicalEntity.hpp>
+#include <SDK/server/CBaseEntity.hpp>
 #include <SDK/entity2/CEntityIOOutput.hpp>
 
 
@@ -22,17 +23,17 @@ namespace CS2 {
 	namespace server {
 		class CLogicBranch : public CS2::server::CLogicalEntity {
 		public:
-			bool m_bInValue; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bInValue; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_Listeners; // 0x4f8 | Schema_Atomic | Size: 0x18
-			char  m_Listeners[0x18]; // 0x4f8 | Schema_Atomic | Size: 0x18
-			entity2::CEntityIOOutput m_OnTrue; // 0x510 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFalse; // 0x538 | Schema_DeclaredClass | Size: 0x28
+			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_Listeners; // 0x4b0 | Schema_Atomic | Size: 0x18
+			// char m_Listeners[0x18]; // 0x4b0 | Schema_Atomic | Size: 0x18
+			entity2::CEntityIOOutput m_OnTrue; // 0x4c8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFalse; // 0x4e0 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CLogicBranch, m_bInValue) == 0x4F0, "m_bInValue in CLogicBranch should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CLogicBranch, m_Listeners) == 0x4F8, "m_Listeners in CLogicBranch should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CLogicBranch, m_OnTrue) == 0x510, "m_OnTrue in CLogicBranch should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CLogicBranch, m_OnFalse) == 0x538, "m_OnFalse in CLogicBranch should be at offset 0x538");
-		static_assert(sizeof(CS2::server::CLogicBranch) == 0x560, "CLogicBranch size should be 0x560");
+		static_assert(offsetof(CS2::server::CLogicBranch, m_bInValue) == 0x4A8, "m_bInValue in CLogicBranch should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CLogicBranch, m_Listeners) == 0x4B0, "m_Listeners in CLogicBranch should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CLogicBranch, m_OnTrue) == 0x4C8, "m_OnTrue in CLogicBranch should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CLogicBranch, m_OnFalse) == 0x4E0, "m_OnFalse in CLogicBranch should be at offset 0x4E0");
+		static_assert(sizeof(CS2::server::CLogicBranch) == 0x4F8, "CLogicBranch size should be 0x4F8");
 	}
 }

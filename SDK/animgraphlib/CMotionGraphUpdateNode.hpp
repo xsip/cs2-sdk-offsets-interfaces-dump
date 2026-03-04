@@ -11,6 +11,7 @@
 
 
 #include <SDK/animgraphlib/CLeafUpdateNode.hpp>
+#include <SDK/animgraphlib/CMotionGraph.hpp>
 
 
 
@@ -22,7 +23,7 @@ namespace CS2 {
 		class CMotionGraphUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
 			// GlobalTypes::CSmartPtr<animgraphlib::CMotionGraph> m_pMotionGraph; // 0x58 | Schema_Atomic | Size: 0x8
-			char  m_pMotionGraph[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
+			char m_pMotionGraph[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphUpdateNode, m_pMotionGraph) == 0x58, "m_pMotionGraph in CMotionGraphUpdateNode should be at offset 0x58");

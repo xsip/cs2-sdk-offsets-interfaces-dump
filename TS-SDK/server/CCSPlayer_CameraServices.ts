@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_CCSPlayerBase_CameraServices} from './CCSPlayerBase_CameraServices';
-// Class size: 0x1A8
+// Class size: 0x1B0
 // BaseClass: : public CS2::server::CCSPlayerBase_CameraServices
 export const server_CCSPlayer_CameraServices  = {
 	...server_CCSPlayerBase_CameraServices,

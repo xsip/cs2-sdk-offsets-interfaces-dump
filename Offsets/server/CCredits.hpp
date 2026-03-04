@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x520
+			// Class size: 0x4C8
 			namespace CCredits /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_OnCreditsDone = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bRolledOutroCredits = 0x518; // bool m_bRolledOutroCredits; |  0x518 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLogoLength = 0x51c; // float32 m_flLogoLength; |  0x51c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OnCreditsDone = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bRolledOutroCredits = 0x4c0; // bool m_bRolledOutroCredits; |  0x4c0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLogoLength = 0x4c4; // float32 m_flLogoLength; |  0x4c4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -22,14 +22,14 @@ namespace CS2 {
 	namespace server {
 		class CFogController : public CS2::server::CBaseEntity {
 		public:
-			server::fogparams_t m_fog; // 0x4f0 | Schema_DeclaredClass | Size: 0x68
-			bool m_bUseAngles; // 0x558 | Schema_Builtin | Size: 0x1
+			server::fogparams_t m_fog; // 0x4a8 | Schema_DeclaredClass | Size: 0x68
+			bool m_bUseAngles; // 0x510 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iChangedVariables; // 0x55c | Schema_Builtin | Size: 0x4
+			int32_t m_iChangedVariables; // 0x514 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CFogController, m_fog) == 0x4F0, "m_fog in CFogController should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CFogController, m_bUseAngles) == 0x558, "m_bUseAngles in CFogController should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CFogController, m_iChangedVariables) == 0x55C, "m_iChangedVariables in CFogController should be at offset 0x55C");
-		static_assert(sizeof(CS2::server::CFogController) == 0x560, "CFogController size should be 0x560");
+		static_assert(offsetof(CS2::server::CFogController, m_fog) == 0x4A8, "m_fog in CFogController should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CFogController, m_bUseAngles) == 0x510, "m_bUseAngles in CFogController should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CFogController, m_iChangedVariables) == 0x514, "m_iChangedVariables in CFogController should be at offset 0x514");
+		static_assert(sizeof(CS2::server::CFogController) == 0x518, "CFogController size should be 0x518");
 	}
 }

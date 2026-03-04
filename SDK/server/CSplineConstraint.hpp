@@ -28,40 +28,40 @@ namespace CS2 {
 		class CSplineConstraint : public CS2::server::CPhysConstraint {
 		public:
 			S2_PAD(0x50);
-			GlobalTypes::Vector m_vAnchorOffsetRestore; // 0x5b0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle<server::CBaseEntity> m_hSplineEntity; // 0x5bc | Schema_Atomic | Size: 0x4
-			// char  m_hSplineEntity[0x4]; // 0x5bc | Schema_Atomic | Size: 0x4
+			GlobalTypes::Vector m_vAnchorOffsetRestore; // 0x558 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<server::CBaseEntity> m_hSplineEntity; // 0x564 | Schema_Atomic | Size: 0x4
+			// char m_hSplineEntity[0x4]; // 0x564 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8);
-			bool m_bEnableLateralConstraint; // 0x5c8 | Schema_Builtin | Size: 0x1
-			bool m_bEnableVerticalConstraint; // 0x5c9 | Schema_Builtin | Size: 0x1
-			bool m_bEnableAngularConstraint; // 0x5ca | Schema_Builtin | Size: 0x1
-			bool m_bEnableLimit; // 0x5cb | Schema_Builtin | Size: 0x1
-			bool m_bFireEventsOnPath; // 0x5cc | Schema_Builtin | Size: 0x1
+			bool m_bEnableLateralConstraint; // 0x570 | Schema_Builtin | Size: 0x1
+			bool m_bEnableVerticalConstraint; // 0x571 | Schema_Builtin | Size: 0x1
+			bool m_bEnableAngularConstraint; // 0x572 | Schema_Builtin | Size: 0x1
+			bool m_bEnableLimit; // 0x573 | Schema_Builtin | Size: 0x1
+			bool m_bFireEventsOnPath; // 0x574 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flLinearFrequency; // 0x5d0 | Schema_Builtin | Size: 0x4
-			float32 m_flLinarDampingRatio; // 0x5d4 | Schema_Builtin | Size: 0x4
-			float32 m_flJointFriction; // 0x5d8 | Schema_Builtin | Size: 0x4
-			float32 m_flTransitionTime; // 0x5dc | Schema_Builtin | Size: 0x4
-			S2_PAD(0x20);
-			GlobalTypes::VectorWS m_vPreSolveAnchorPos; // 0x600 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_StartTransitionTime; // 0x60c | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vTangentSpaceAnchorAtTransitionStart; // 0x610 | Schema_Atomic | Size: 0xc
+			float32 m_flLinearFrequency; // 0x578 | Schema_Builtin | Size: 0x4
+			float32 m_flLinarDampingRatio; // 0x57c | Schema_Builtin | Size: 0x4
+			float32 m_flJointFriction; // 0x580 | Schema_Builtin | Size: 0x4
+			float32 m_flTransitionTime; // 0x584 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x10);
+			GlobalTypes::VectorWS m_vPreSolveAnchorPos; // 0x598 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_StartTransitionTime; // 0x5a4 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vTangentSpaceAnchorAtTransitionStart; // 0x5a8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_vAnchorOffsetRestore) == 0x5B0, "m_vAnchorOffsetRestore in CSplineConstraint should be at offset 0x5B0");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_hSplineEntity) == 0x5BC, "m_hSplineEntity in CSplineConstraint should be at offset 0x5BC");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableLateralConstraint) == 0x5C8, "m_bEnableLateralConstraint in CSplineConstraint should be at offset 0x5C8");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableVerticalConstraint) == 0x5C9, "m_bEnableVerticalConstraint in CSplineConstraint should be at offset 0x5C9");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableAngularConstraint) == 0x5CA, "m_bEnableAngularConstraint in CSplineConstraint should be at offset 0x5CA");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableLimit) == 0x5CB, "m_bEnableLimit in CSplineConstraint should be at offset 0x5CB");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_bFireEventsOnPath) == 0x5CC, "m_bFireEventsOnPath in CSplineConstraint should be at offset 0x5CC");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_flLinearFrequency) == 0x5D0, "m_flLinearFrequency in CSplineConstraint should be at offset 0x5D0");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_flLinarDampingRatio) == 0x5D4, "m_flLinarDampingRatio in CSplineConstraint should be at offset 0x5D4");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_flJointFriction) == 0x5D8, "m_flJointFriction in CSplineConstraint should be at offset 0x5D8");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_flTransitionTime) == 0x5DC, "m_flTransitionTime in CSplineConstraint should be at offset 0x5DC");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_vPreSolveAnchorPos) == 0x600, "m_vPreSolveAnchorPos in CSplineConstraint should be at offset 0x600");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_StartTransitionTime) == 0x60C, "m_StartTransitionTime in CSplineConstraint should be at offset 0x60C");
-		static_assert(offsetof(CS2::server::CSplineConstraint, m_vTangentSpaceAnchorAtTransitionStart) == 0x610, "m_vTangentSpaceAnchorAtTransitionStart in CSplineConstraint should be at offset 0x610");
-		static_assert(sizeof(CS2::server::CSplineConstraint) == 0x620, "CSplineConstraint size should be 0x620");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_vAnchorOffsetRestore) == 0x558, "m_vAnchorOffsetRestore in CSplineConstraint should be at offset 0x558");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_hSplineEntity) == 0x564, "m_hSplineEntity in CSplineConstraint should be at offset 0x564");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableLateralConstraint) == 0x570, "m_bEnableLateralConstraint in CSplineConstraint should be at offset 0x570");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableVerticalConstraint) == 0x571, "m_bEnableVerticalConstraint in CSplineConstraint should be at offset 0x571");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableAngularConstraint) == 0x572, "m_bEnableAngularConstraint in CSplineConstraint should be at offset 0x572");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableLimit) == 0x573, "m_bEnableLimit in CSplineConstraint should be at offset 0x573");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_bFireEventsOnPath) == 0x574, "m_bFireEventsOnPath in CSplineConstraint should be at offset 0x574");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_flLinearFrequency) == 0x578, "m_flLinearFrequency in CSplineConstraint should be at offset 0x578");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_flLinarDampingRatio) == 0x57C, "m_flLinarDampingRatio in CSplineConstraint should be at offset 0x57C");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_flJointFriction) == 0x580, "m_flJointFriction in CSplineConstraint should be at offset 0x580");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_flTransitionTime) == 0x584, "m_flTransitionTime in CSplineConstraint should be at offset 0x584");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_vPreSolveAnchorPos) == 0x598, "m_vPreSolveAnchorPos in CSplineConstraint should be at offset 0x598");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_StartTransitionTime) == 0x5A4, "m_StartTransitionTime in CSplineConstraint should be at offset 0x5A4");
+		static_assert(offsetof(CS2::server::CSplineConstraint, m_vTangentSpaceAnchorAtTransitionStart) == 0x5A8, "m_vTangentSpaceAnchorAtTransitionStart in CSplineConstraint should be at offset 0x5A8");
+		static_assert(sizeof(CS2::server::CSplineConstraint) == 0x5B8, "CSplineConstraint size should be 0x5B8");
 	}
 }

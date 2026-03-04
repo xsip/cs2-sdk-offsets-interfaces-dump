@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x1A8
+			// Class size: 0x1B0
 			namespace CCSPlayerBase_CameraServices /*: public CS2::server::CPlayer_CameraServices*/ {
-				constexpr std::ptrdiff_t m_iFOV = 0x170; // uint32_t m_iFOV; |  0x170 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iFOVStart = 0x174; // uint32_t m_iFOVStart; |  0x174 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFOVTime = 0x178; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flFOVRate = 0x17c; // float32 m_flFOVRate; |  0x17c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hZoomOwner = 0x180; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTriggerFogList = 0x188; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_hLastFogTrigger = 0x1a0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iFOV = 0x178; // uint32_t m_iFOV; |  0x178 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iFOVStart = 0x17c; // uint32_t m_iFOVStart; |  0x17c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFOVTime = 0x180; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flFOVRate = 0x184; // float32 m_flFOVRate; |  0x184 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hZoomOwner = 0x188; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTriggerFogList = 0x190; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_hLastFogTrigger = 0x1a8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

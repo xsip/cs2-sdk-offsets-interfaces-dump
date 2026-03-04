@@ -4,10 +4,10 @@
 
 
 class modellib_CModelConfigElement_AttachedModel {
-    char vTable341[0x8];
+    void **__vftable_0;
     CUtlString m_ElementName;
     char m_NestedElements[0x18];
-    char end_pad_342[0x20];
+    char end_pad_344[0x20];
     CUtlString m_InstanceName;
     CUtlString m_EntityClass;
     char m_hModel[0x8];
@@ -19,8 +19,8 @@ class modellib_CModelConfigElement_AttachedModel {
     bool m_bBoneMergeFlex;
     bool m_bUserSpecifiedColor;
     bool m_bUserSpecifiedMaterialGroup;
-    bool m_bAcceptParentMaterialDrivenDecals;
+    char pad_345[0x1];
     CUtlString m_BodygroupOnOtherModels;
     CUtlString m_MaterialGroupOnOtherModels;
-    char end_pad_343[0x48];
+    char end_pad_346[0x48];
 };

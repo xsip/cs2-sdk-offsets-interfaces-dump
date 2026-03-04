@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x78
+			// Class size: 0x80
 			namespace CCSPlayer_WaterServices /*: public CS2::server::CPlayer_WaterServices*/ {
-				constexpr std::ptrdiff_t m_NextDrownDamageTime = 0x40; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nDrownDmgRate = 0x44; // int32_t m_nDrownDmgRate; |  0x44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_AirFinishedTime = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flWaterJumpTime = 0x4c; // float32 m_flWaterJumpTime; |  0x4c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecWaterJumpVel = 0x50; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flSwimSoundTime = 0x5c; // float32 m_flSwimSoundTime; |  0x5c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_NextDrownDamageTime = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nDrownDmgRate = 0x4c; // int32_t m_nDrownDmgRate; |  0x4c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_AirFinishedTime = 0x50; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flWaterJumpTime = 0x54; // float32 m_flWaterJumpTime; |  0x54 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecWaterJumpVel = 0x58; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flSwimSoundTime = 0x64; // float32 m_flSwimSoundTime; |  0x64 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

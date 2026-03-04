@@ -17,9 +17,9 @@
 #include <SDK/entity2/CEntityIOOutput.hpp>
 #include <SDK/client/RenderMode_t.hpp>
 #include <SDK/client/RenderFx_t.hpp>
+#include <SDK/server/EntityRenderAttribute_t.hpp>
 #include <SDK/server/CCollisionProperty.hpp>
 #include <SDK/server/CGlowProperty.hpp>
-#include <SDK/client/DecalMode_t.hpp>
 #include <SDK/client/CNetworkViewOffsetVector.hpp>
 
 
@@ -37,100 +37,79 @@ namespace CS2 {
 	namespace server {
 		class CBaseModelEntity : public CS2::server::CBaseEntity {
 		public:
-			server::CRenderComponent* m_CRenderComponent; // 0x4f0 | Schema_Ptr | Size: 0x8
-			server::CHitboxComponent m_CHitboxComponent; // 0x4f8 | Schema_DeclaredClass | Size: 0x18
-			client::HitGroup_t m_nDestructiblePartInitialStateDestructed0; // 0x510 | Schema_DeclaredEnum | Size: 0x4
-			client::HitGroup_t m_nDestructiblePartInitialStateDestructed1; // 0x514 | Schema_DeclaredEnum | Size: 0x4
-			client::HitGroup_t m_nDestructiblePartInitialStateDestructed2; // 0x518 | Schema_DeclaredEnum | Size: 0x4
-			client::HitGroup_t m_nDestructiblePartInitialStateDestructed3; // 0x51c | Schema_DeclaredEnum | Size: 0x4
-			client::HitGroup_t m_nDestructiblePartInitialStateDestructed4; // 0x520 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nDestructiblePartInitialStateDestructed0_PartIndex; // 0x524 | Schema_Builtin | Size: 0x4
-			int32_t m_nDestructiblePartInitialStateDestructed1_PartIndex; // 0x528 | Schema_Builtin | Size: 0x4
-			int32_t m_nDestructiblePartInitialStateDestructed2_PartIndex; // 0x52c | Schema_Builtin | Size: 0x4
-			int32_t m_nDestructiblePartInitialStateDestructed3_PartIndex; // 0x530 | Schema_Builtin | Size: 0x4
-			int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex; // 0x534 | Schema_Builtin | Size: 0x4
-			server::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; // 0x538 | Schema_Ptr | Size: 0x8
-			client::HitGroup_t m_LastHitGroup; // 0x540 | Schema_DeclaredEnum | Size: 0x4
+			server::CRenderComponent* m_CRenderComponent; // 0x4a8 | Schema_Ptr | Size: 0x8
+			server::CHitboxComponent m_CHitboxComponent; // 0x4b0 | Schema_DeclaredClass | Size: 0x18
+			client::HitGroup_t m_nDestructiblePartInitialStateDestructed0; // 0x4c8 | Schema_DeclaredEnum | Size: 0x4
+			client::HitGroup_t m_nDestructiblePartInitialStateDestructed1; // 0x4cc | Schema_DeclaredEnum | Size: 0x4
+			client::HitGroup_t m_nDestructiblePartInitialStateDestructed2; // 0x4d0 | Schema_DeclaredEnum | Size: 0x4
+			client::HitGroup_t m_nDestructiblePartInitialStateDestructed3; // 0x4d4 | Schema_DeclaredEnum | Size: 0x4
+			client::HitGroup_t m_nDestructiblePartInitialStateDestructed4; // 0x4d8 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nDestructiblePartInitialStateDestructed0_PartIndex; // 0x4dc | Schema_Builtin | Size: 0x4
+			int32_t m_nDestructiblePartInitialStateDestructed1_PartIndex; // 0x4e0 | Schema_Builtin | Size: 0x4
+			int32_t m_nDestructiblePartInitialStateDestructed2_PartIndex; // 0x4e4 | Schema_Builtin | Size: 0x4
+			int32_t m_nDestructiblePartInitialStateDestructed3_PartIndex; // 0x4e8 | Schema_Builtin | Size: 0x4
+			int32_t m_nDestructiblePartInitialStateDestructed4_PartIndex; // 0x4ec | Schema_Builtin | Size: 0x4
+			server::CDestructiblePartsComponent* m_pDestructiblePartsSystemComponent; // 0x4f0 | Schema_Ptr | Size: 0x8
+			entity2::GameTime_t m_flDissolveStartTime; // 0x4f8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CGlobalSymbol m_sLastDamageSourceName; // 0x548 | Schema_Atomic | Size: 0x8
-			GlobalTypes::VectorWS m_vLastDamagePosition; // 0x550 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flDissolveStartTime; // 0x55c | Schema_DeclaredClass | Size: 0x4
-			entity2::CEntityIOOutput m_OnIgnite; // 0x560 | Schema_DeclaredClass | Size: 0x28
-			client::RenderMode_t m_nRenderMode; // 0x588 | Schema_DeclaredEnum | Size: 0x1
-			client::RenderFx_t m_nRenderFX; // 0x589 | Schema_DeclaredEnum | Size: 0x1
-			bool m_bAllowFadeInView; // 0x58a | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnIgnite; // 0x500 | Schema_DeclaredClass | Size: 0x18
+			client::RenderMode_t m_nRenderMode; // 0x518 | Schema_DeclaredEnum | Size: 0x1
+			client::RenderFx_t m_nRenderFX; // 0x519 | Schema_DeclaredEnum | Size: 0x1
+			bool m_bAllowFadeInView; // 0x51a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1d);
-			GlobalTypes::Color m_clrRender; // 0x5a8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Color m_clrRender; // 0x538 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVectorEmbeddedNetworkVar<server::EntityRenderAttribute_t> m_vecRenderAttributes; // 0x5b0 | Schema_Atomic | Size: 0x68
-			char  m_vecRenderAttributes[0x68]; // 0x5b0 | Schema_Atomic | Size: 0x68
-			bool m_bRenderToCubemaps; // 0x618 | Schema_Builtin | Size: 0x1
-			bool m_bNoInterpolate; // 0x619 | Schema_Builtin | Size: 0x1
+			// server::CUtlVectorEmbeddedNetworkVar<server::EntityRenderAttribute_t> m_vecRenderAttributes; // 0x540 | Schema_Atomic | Size: 0x68
+			char m_vecRenderAttributes[0x68]; // 0x540 | Schema_Atomic | Size: 0x68
+			bool m_bRenderToCubemaps; // 0x5a8 | Schema_Builtin | Size: 0x1
+			bool m_bNoInterpolate; // 0x5a9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			server::CCollisionProperty m_Collision; // 0x620 | Schema_DeclaredClass | Size: 0xb0
-			server::CGlowProperty m_Glow; // 0x6d0 | Schema_DeclaredClass | Size: 0x58
-			float32 m_flGlowBackfaceMult; // 0x728 | Schema_Builtin | Size: 0x4
-			float32 m_fadeMinDist; // 0x72c | Schema_Builtin | Size: 0x4
-			float32 m_fadeMaxDist; // 0x730 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeScale; // 0x734 | Schema_Builtin | Size: 0x4
-			float32 m_flShadowStrength; // 0x738 | Schema_Builtin | Size: 0x4
-			uint8_t m_nObjectCulling; // 0x73c | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
-			int32_t m_nAddDecal; // 0x740 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vDecalPosition; // 0x744 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDecalForwardAxis; // 0x750 | Schema_Atomic | Size: 0xc
-			client::DecalMode_t m_nDecalMode; // 0x75c | Schema_DeclaredEnum | Size: 0x1
-			client::DecalMode_t m_nRequiredDecalMode; // 0x75d | Schema_DeclaredEnum | Size: 0x1
-			S2_PAD(0x2);
-			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>> m_ConfigEntitiesToPropagateMaterialDecalsTo; // 0x760 | Schema_Atomic | Size: 0x18
-			char  m_ConfigEntitiesToPropagateMaterialDecalsTo[0x18]; // 0x760 | Schema_Atomic | Size: 0x18
-			S2_PAD(0x28);
-			client::CNetworkViewOffsetVector m_vecViewOffset; // 0x7a0 | Schema_DeclaredClass | Size: 0x28
+			server::CCollisionProperty m_Collision; // 0x5b0 | Schema_DeclaredClass | Size: 0xb0
+			server::CGlowProperty m_Glow; // 0x660 | Schema_DeclaredClass | Size: 0x58
+			float32 m_flGlowBackfaceMult; // 0x6b8 | Schema_Builtin | Size: 0x4
+			float32 m_fadeMinDist; // 0x6bc | Schema_Builtin | Size: 0x4
+			float32 m_fadeMaxDist; // 0x6c0 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeScale; // 0x6c4 | Schema_Builtin | Size: 0x4
+			float32 m_flShadowStrength; // 0x6c8 | Schema_Builtin | Size: 0x4
+			uint8_t m_nObjectCulling; // 0x6cc | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2b);
+			client::CNetworkViewOffsetVector m_vecViewOffset; // 0x6f8 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x8);
-			uint32_t m_bvDisabledHitGroups[1]; // 0x7d0 | Schema_FixedArray | Size: 0x4
+			uint32_t m_bvDisabledHitGroups[1]; // 0x728 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_CRenderComponent) == 0x4F0, "m_CRenderComponent in CBaseModelEntity should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_CHitboxComponent) == 0x4F8, "m_CHitboxComponent in CBaseModelEntity should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed0) == 0x510, "m_nDestructiblePartInitialStateDestructed0 in CBaseModelEntity should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed1) == 0x514, "m_nDestructiblePartInitialStateDestructed1 in CBaseModelEntity should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed2) == 0x518, "m_nDestructiblePartInitialStateDestructed2 in CBaseModelEntity should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed3) == 0x51C, "m_nDestructiblePartInitialStateDestructed3 in CBaseModelEntity should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed4) == 0x520, "m_nDestructiblePartInitialStateDestructed4 in CBaseModelEntity should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed0_PartIndex) == 0x524, "m_nDestructiblePartInitialStateDestructed0_PartIndex in CBaseModelEntity should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed1_PartIndex) == 0x528, "m_nDestructiblePartInitialStateDestructed1_PartIndex in CBaseModelEntity should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed2_PartIndex) == 0x52C, "m_nDestructiblePartInitialStateDestructed2_PartIndex in CBaseModelEntity should be at offset 0x52C");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed3_PartIndex) == 0x530, "m_nDestructiblePartInitialStateDestructed3_PartIndex in CBaseModelEntity should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed4_PartIndex) == 0x534, "m_nDestructiblePartInitialStateDestructed4_PartIndex in CBaseModelEntity should be at offset 0x534");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_pDestructiblePartsSystemComponent) == 0x538, "m_pDestructiblePartsSystemComponent in CBaseModelEntity should be at offset 0x538");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_LastHitGroup) == 0x540, "m_LastHitGroup in CBaseModelEntity should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_sLastDamageSourceName) == 0x548, "m_sLastDamageSourceName in CBaseModelEntity should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vLastDamagePosition) == 0x550, "m_vLastDamagePosition in CBaseModelEntity should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flDissolveStartTime) == 0x55C, "m_flDissolveStartTime in CBaseModelEntity should be at offset 0x55C");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_OnIgnite) == 0x560, "m_OnIgnite in CBaseModelEntity should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nRenderMode) == 0x588, "m_nRenderMode in CBaseModelEntity should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nRenderFX) == 0x589, "m_nRenderFX in CBaseModelEntity should be at offset 0x589");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bAllowFadeInView) == 0x58A, "m_bAllowFadeInView in CBaseModelEntity should be at offset 0x58A");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_clrRender) == 0x5A8, "m_clrRender in CBaseModelEntity should be at offset 0x5A8");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vecRenderAttributes) == 0x5B0, "m_vecRenderAttributes in CBaseModelEntity should be at offset 0x5B0");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bRenderToCubemaps) == 0x618, "m_bRenderToCubemaps in CBaseModelEntity should be at offset 0x618");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bNoInterpolate) == 0x619, "m_bNoInterpolate in CBaseModelEntity should be at offset 0x619");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_Collision) == 0x620, "m_Collision in CBaseModelEntity should be at offset 0x620");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_Glow) == 0x6D0, "m_Glow in CBaseModelEntity should be at offset 0x6D0");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flGlowBackfaceMult) == 0x728, "m_flGlowBackfaceMult in CBaseModelEntity should be at offset 0x728");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_fadeMinDist) == 0x72C, "m_fadeMinDist in CBaseModelEntity should be at offset 0x72C");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_fadeMaxDist) == 0x730, "m_fadeMaxDist in CBaseModelEntity should be at offset 0x730");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flFadeScale) == 0x734, "m_flFadeScale in CBaseModelEntity should be at offset 0x734");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flShadowStrength) == 0x738, "m_flShadowStrength in CBaseModelEntity should be at offset 0x738");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nObjectCulling) == 0x73C, "m_nObjectCulling in CBaseModelEntity should be at offset 0x73C");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nAddDecal) == 0x740, "m_nAddDecal in CBaseModelEntity should be at offset 0x740");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vDecalPosition) == 0x744, "m_vDecalPosition in CBaseModelEntity should be at offset 0x744");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vDecalForwardAxis) == 0x750, "m_vDecalForwardAxis in CBaseModelEntity should be at offset 0x750");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDecalMode) == 0x75C, "m_nDecalMode in CBaseModelEntity should be at offset 0x75C");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nRequiredDecalMode) == 0x75D, "m_nRequiredDecalMode in CBaseModelEntity should be at offset 0x75D");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_ConfigEntitiesToPropagateMaterialDecalsTo) == 0x760, "m_ConfigEntitiesToPropagateMaterialDecalsTo in CBaseModelEntity should be at offset 0x760");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vecViewOffset) == 0x7A0, "m_vecViewOffset in CBaseModelEntity should be at offset 0x7A0");
-		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bvDisabledHitGroups) == 0x7D0, "m_bvDisabledHitGroups in CBaseModelEntity should be at offset 0x7D0");
-		static_assert(sizeof(CS2::server::CBaseModelEntity) == 0x7D8, "CBaseModelEntity size should be 0x7D8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_CRenderComponent) == 0x4A8, "m_CRenderComponent in CBaseModelEntity should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_CHitboxComponent) == 0x4B0, "m_CHitboxComponent in CBaseModelEntity should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed0) == 0x4C8, "m_nDestructiblePartInitialStateDestructed0 in CBaseModelEntity should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed1) == 0x4CC, "m_nDestructiblePartInitialStateDestructed1 in CBaseModelEntity should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed2) == 0x4D0, "m_nDestructiblePartInitialStateDestructed2 in CBaseModelEntity should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed3) == 0x4D4, "m_nDestructiblePartInitialStateDestructed3 in CBaseModelEntity should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed4) == 0x4D8, "m_nDestructiblePartInitialStateDestructed4 in CBaseModelEntity should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed0_PartIndex) == 0x4DC, "m_nDestructiblePartInitialStateDestructed0_PartIndex in CBaseModelEntity should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed1_PartIndex) == 0x4E0, "m_nDestructiblePartInitialStateDestructed1_PartIndex in CBaseModelEntity should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed2_PartIndex) == 0x4E4, "m_nDestructiblePartInitialStateDestructed2_PartIndex in CBaseModelEntity should be at offset 0x4E4");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed3_PartIndex) == 0x4E8, "m_nDestructiblePartInitialStateDestructed3_PartIndex in CBaseModelEntity should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nDestructiblePartInitialStateDestructed4_PartIndex) == 0x4EC, "m_nDestructiblePartInitialStateDestructed4_PartIndex in CBaseModelEntity should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_pDestructiblePartsSystemComponent) == 0x4F0, "m_pDestructiblePartsSystemComponent in CBaseModelEntity should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flDissolveStartTime) == 0x4F8, "m_flDissolveStartTime in CBaseModelEntity should be at offset 0x4F8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_OnIgnite) == 0x500, "m_OnIgnite in CBaseModelEntity should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nRenderMode) == 0x518, "m_nRenderMode in CBaseModelEntity should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nRenderFX) == 0x519, "m_nRenderFX in CBaseModelEntity should be at offset 0x519");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bAllowFadeInView) == 0x51A, "m_bAllowFadeInView in CBaseModelEntity should be at offset 0x51A");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_clrRender) == 0x538, "m_clrRender in CBaseModelEntity should be at offset 0x538");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vecRenderAttributes) == 0x540, "m_vecRenderAttributes in CBaseModelEntity should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bRenderToCubemaps) == 0x5A8, "m_bRenderToCubemaps in CBaseModelEntity should be at offset 0x5A8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bNoInterpolate) == 0x5A9, "m_bNoInterpolate in CBaseModelEntity should be at offset 0x5A9");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_Collision) == 0x5B0, "m_Collision in CBaseModelEntity should be at offset 0x5B0");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_Glow) == 0x660, "m_Glow in CBaseModelEntity should be at offset 0x660");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flGlowBackfaceMult) == 0x6B8, "m_flGlowBackfaceMult in CBaseModelEntity should be at offset 0x6B8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_fadeMinDist) == 0x6BC, "m_fadeMinDist in CBaseModelEntity should be at offset 0x6BC");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_fadeMaxDist) == 0x6C0, "m_fadeMaxDist in CBaseModelEntity should be at offset 0x6C0");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flFadeScale) == 0x6C4, "m_flFadeScale in CBaseModelEntity should be at offset 0x6C4");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_flShadowStrength) == 0x6C8, "m_flShadowStrength in CBaseModelEntity should be at offset 0x6C8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_nObjectCulling) == 0x6CC, "m_nObjectCulling in CBaseModelEntity should be at offset 0x6CC");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_vecViewOffset) == 0x6F8, "m_vecViewOffset in CBaseModelEntity should be at offset 0x6F8");
+		static_assert(offsetof(CS2::server::CBaseModelEntity, m_bvDisabledHitGroups) == 0x728, "m_bvDisabledHitGroups in CBaseModelEntity should be at offset 0x728");
+		static_assert(sizeof(CS2::server::CBaseModelEntity) == 0x730, "CBaseModelEntity size should be 0x730");
 	}
 }

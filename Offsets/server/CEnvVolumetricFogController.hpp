@@ -8,44 +8,44 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5A0
+			// Class size: 0x558
 			namespace CEnvVolumetricFogController /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_flScattering = 0x4f0; // float32 m_flScattering; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TintColor = 0x4f4; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flAnisotropy = 0x4f8; // float32 m_flAnisotropy; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeSpeed = 0x4fc; // float32 m_flFadeSpeed; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDrawDistance = 0x500; // float32 m_flDrawDistance; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeInStart = 0x504; // float32 m_flFadeInStart; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFadeInEnd = 0x508; // float32 m_flFadeInEnd; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flIndirectStrength = 0x50c; // float32 m_flIndirectStrength; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nVolumeDepth = 0x510; // int32_t m_nVolumeDepth; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fFirstVolumeSliceThickness = 0x514; // float32 m_fFirstVolumeSliceThickness; |  0x514 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nIndirectTextureDimX = 0x518; // int32_t m_nIndirectTextureDimX; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nIndirectTextureDimY = 0x51c; // int32_t m_nIndirectTextureDimY; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nIndirectTextureDimZ = 0x520; // int32_t m_nIndirectTextureDimZ; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vBoxMins = 0x524; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vBoxMaxs = 0x530; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bActive = 0x53c; // bool m_bActive; |  0x53c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flStartAnisoTime = 0x540; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartScatterTime = 0x544; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartDrawDistanceTime = 0x548; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartAnisotropy = 0x54c; // float32 m_flStartAnisotropy; |  0x54c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartScattering = 0x550; // float32 m_flStartScattering; |  0x550 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartDrawDistance = 0x554; // float32 m_flStartDrawDistance; |  0x554 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefaultAnisotropy = 0x558; // float32 m_flDefaultAnisotropy; |  0x558 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefaultScattering = 0x55c; // float32 m_flDefaultScattering; |  0x55c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefaultDrawDistance = 0x560; // float32 m_flDefaultDrawDistance; |  0x560 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bStartDisabled = 0x564; // bool m_bStartDisabled; |  0x564 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEnableIndirect = 0x565; // bool m_bEnableIndirect; |  0x565 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bIsMaster = 0x566; // bool m_bIsMaster; |  0x566 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hFogIndirectTexture = 0x568; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nForceRefreshCount = 0x570; // int32_t m_nForceRefreshCount; |  0x570 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fNoiseSpeed = 0x574; // float32 m_fNoiseSpeed; |  0x574 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fNoiseStrength = 0x578; // float32 m_fNoiseStrength; |  0x578 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vNoiseScale = 0x57c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_fWindSpeed = 0x588; // float32 m_fWindSpeed; |  0x588 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vWindDirection = 0x58c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bFirstTime = 0x598; // bool m_bFirstTime; |  0x598 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flScattering = 0x4a8; // float32 m_flScattering; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_TintColor = 0x4ac; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flAnisotropy = 0x4b0; // float32 m_flAnisotropy; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeSpeed = 0x4b4; // float32 m_flFadeSpeed; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDrawDistance = 0x4b8; // float32 m_flDrawDistance; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeInStart = 0x4bc; // float32 m_flFadeInStart; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFadeInEnd = 0x4c0; // float32 m_flFadeInEnd; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flIndirectStrength = 0x4c4; // float32 m_flIndirectStrength; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nVolumeDepth = 0x4c8; // int32_t m_nVolumeDepth; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fFirstVolumeSliceThickness = 0x4cc; // float32 m_fFirstVolumeSliceThickness; |  0x4cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nIndirectTextureDimX = 0x4d0; // int32_t m_nIndirectTextureDimX; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nIndirectTextureDimY = 0x4d4; // int32_t m_nIndirectTextureDimY; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nIndirectTextureDimZ = 0x4d8; // int32_t m_nIndirectTextureDimZ; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vBoxMins = 0x4dc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vBoxMaxs = 0x4e8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bActive = 0x4f4; // bool m_bActive; |  0x4f4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flStartAnisoTime = 0x4f8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartScatterTime = 0x4fc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartDrawDistanceTime = 0x500; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartAnisotropy = 0x504; // float32 m_flStartAnisotropy; |  0x504 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartScattering = 0x508; // float32 m_flStartScattering; |  0x508 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartDrawDistance = 0x50c; // float32 m_flStartDrawDistance; |  0x50c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefaultAnisotropy = 0x510; // float32 m_flDefaultAnisotropy; |  0x510 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefaultScattering = 0x514; // float32 m_flDefaultScattering; |  0x514 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefaultDrawDistance = 0x518; // float32 m_flDefaultDrawDistance; |  0x518 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bStartDisabled = 0x51c; // bool m_bStartDisabled; |  0x51c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnableIndirect = 0x51d; // bool m_bEnableIndirect; |  0x51d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsMaster = 0x51e; // bool m_bIsMaster; |  0x51e | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hFogIndirectTexture = 0x520; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nForceRefreshCount = 0x528; // int32_t m_nForceRefreshCount; |  0x528 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fNoiseSpeed = 0x52c; // float32 m_fNoiseSpeed; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fNoiseStrength = 0x530; // float32 m_fNoiseStrength; |  0x530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vNoiseScale = 0x534; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_fWindSpeed = 0x540; // float32 m_fWindSpeed; |  0x540 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vWindDirection = 0x544; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bFirstTime = 0x550; // bool m_bFirstTime; |  0x550 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

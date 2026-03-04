@@ -35,215 +35,215 @@ namespace CS2 {
 		class CCSPlayerController : public CS2::server::CBasePlayerController {
 		public:
 			S2_PAD(0x10);
-			server::CCSPlayerController_InGameMoneyServices* m_pInGameMoneyServices; // 0x820 | Schema_Ptr | Size: 0x8
-			server::CCSPlayerController_InventoryServices* m_pInventoryServices; // 0x828 | Schema_Ptr | Size: 0x8
-			server::CCSPlayerController_ActionTrackingServices* m_pActionTrackingServices; // 0x830 | Schema_Ptr | Size: 0x8
-			server::CCSPlayerController_DamageServices* m_pDamageServices; // 0x838 | Schema_Ptr | Size: 0x8
-			uint32_t m_iPing; // 0x840 | Schema_Builtin | Size: 0x4
-			bool m_bHasCommunicationAbuseMute; // 0x844 | Schema_Builtin | Size: 0x1
+			server::CCSPlayerController_InGameMoneyServices* m_pInGameMoneyServices; // 0x7d8 | Schema_Ptr | Size: 0x8
+			server::CCSPlayerController_InventoryServices* m_pInventoryServices; // 0x7e0 | Schema_Ptr | Size: 0x8
+			server::CCSPlayerController_ActionTrackingServices* m_pActionTrackingServices; // 0x7e8 | Schema_Ptr | Size: 0x8
+			server::CCSPlayerController_DamageServices* m_pDamageServices; // 0x7f0 | Schema_Ptr | Size: 0x8
+			uint32_t m_iPing; // 0x7f8 | Schema_Builtin | Size: 0x4
+			bool m_bHasCommunicationAbuseMute; // 0x7fc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			uint32_t m_uiCommunicationMuteFlags; // 0x848 | Schema_Builtin | Size: 0x4
+			uint32_t m_uiCommunicationMuteFlags; // 0x800 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_szCrosshairCodes; // 0x850 | Schema_Atomic | Size: 0x8
-			uint8_t m_iPendingTeamNum; // 0x858 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_szCrosshairCodes; // 0x808 | Schema_Atomic | Size: 0x8
+			uint8_t m_iPendingTeamNum; // 0x810 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_flForceTeamTime; // 0x85c | Schema_DeclaredClass | Size: 0x4
-			int32_t m_iCompTeammateColor; // 0x860 | Schema_Builtin | Size: 0x4
-			bool m_bEverPlayedOnTeam; // 0x864 | Schema_Builtin | Size: 0x1
-			bool m_bAttemptedToGetColor; // 0x865 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flForceTeamTime; // 0x814 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_iCompTeammateColor; // 0x818 | Schema_Builtin | Size: 0x4
+			bool m_bEverPlayedOnTeam; // 0x81c | Schema_Builtin | Size: 0x1
+			bool m_bAttemptedToGetColor; // 0x81d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iTeammatePreferredColor; // 0x868 | Schema_Builtin | Size: 0x4
-			bool m_bTeamChanged; // 0x86c | Schema_Builtin | Size: 0x1
-			bool m_bInSwitchTeam; // 0x86d | Schema_Builtin | Size: 0x1
-			bool m_bHasSeenJoinGame; // 0x86e | Schema_Builtin | Size: 0x1
-			bool m_bJustBecameSpectator; // 0x86f | Schema_Builtin | Size: 0x1
-			bool m_bSwitchTeamsOnNextRoundReset; // 0x870 | Schema_Builtin | Size: 0x1
-			bool m_bRemoveAllItemsOnNextRoundReset; // 0x871 | Schema_Builtin | Size: 0x1
+			int32_t m_iTeammatePreferredColor; // 0x820 | Schema_Builtin | Size: 0x4
+			bool m_bTeamChanged; // 0x824 | Schema_Builtin | Size: 0x1
+			bool m_bInSwitchTeam; // 0x825 | Schema_Builtin | Size: 0x1
+			bool m_bHasSeenJoinGame; // 0x826 | Schema_Builtin | Size: 0x1
+			bool m_bJustBecameSpectator; // 0x827 | Schema_Builtin | Size: 0x1
+			bool m_bSwitchTeamsOnNextRoundReset; // 0x828 | Schema_Builtin | Size: 0x1
+			bool m_bRemoveAllItemsOnNextRoundReset; // 0x829 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			entity2::GameTime_t m_flLastJoinTeamTime; // 0x874 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_szClan; // 0x878 | Schema_Atomic | Size: 0x8
-			int32_t m_iCoachingTeam; // 0x880 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastJoinTeamTime; // 0x82c | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_szClan; // 0x830 | Schema_Atomic | Size: 0x8
+			int32_t m_iCoachingTeam; // 0x838 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			uint64_t m_nPlayerDominated; // 0x888 | Schema_Builtin | Size: 0x8
-			uint64_t m_nPlayerDominatingMe; // 0x890 | Schema_Builtin | Size: 0x8
-			int32_t m_iCompetitiveRanking; // 0x898 | Schema_Builtin | Size: 0x4
-			int32_t m_iCompetitiveWins; // 0x89c | Schema_Builtin | Size: 0x4
-			int8_t m_iCompetitiveRankType; // 0x8a0 | Schema_Builtin | Size: 0x1
+			uint64_t m_nPlayerDominated; // 0x840 | Schema_Builtin | Size: 0x8
+			uint64_t m_nPlayerDominatingMe; // 0x848 | Schema_Builtin | Size: 0x8
+			int32_t m_iCompetitiveRanking; // 0x850 | Schema_Builtin | Size: 0x4
+			int32_t m_iCompetitiveWins; // 0x854 | Schema_Builtin | Size: 0x4
+			int8_t m_iCompetitiveRankType; // 0x858 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iCompetitiveRankingPredicted_Win; // 0x8a4 | Schema_Builtin | Size: 0x4
-			int32_t m_iCompetitiveRankingPredicted_Loss; // 0x8a8 | Schema_Builtin | Size: 0x4
-			int32_t m_iCompetitiveRankingPredicted_Tie; // 0x8ac | Schema_Builtin | Size: 0x4
-			int32_t m_nEndMatchNextMapVote; // 0x8b0 | Schema_Builtin | Size: 0x4
-			uint16_t m_unActiveQuestId; // 0x8b4 | Schema_Builtin | Size: 0x2
+			int32_t m_iCompetitiveRankingPredicted_Win; // 0x85c | Schema_Builtin | Size: 0x4
+			int32_t m_iCompetitiveRankingPredicted_Loss; // 0x860 | Schema_Builtin | Size: 0x4
+			int32_t m_iCompetitiveRankingPredicted_Tie; // 0x864 | Schema_Builtin | Size: 0x4
+			int32_t m_nEndMatchNextMapVote; // 0x868 | Schema_Builtin | Size: 0x4
+			uint16_t m_unActiveQuestId; // 0x86c | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
-			uint32_t m_rtActiveMissionPeriod; // 0x8b8 | Schema_Builtin | Size: 0x4
-			client::Reason m_nQuestProgressReason; // 0x8bc | Schema_DeclaredEnum | Size: 0x4
-			uint32_t m_unPlayerTvControlFlags; // 0x8c0 | Schema_Builtin | Size: 0x4
+			uint32_t m_rtActiveMissionPeriod; // 0x870 | Schema_Builtin | Size: 0x4
+			client::Reason m_nQuestProgressReason; // 0x874 | Schema_DeclaredEnum | Size: 0x4
+			uint32_t m_unPlayerTvControlFlags; // 0x878 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x2c);
-			int32_t m_iDraftIndex; // 0x8f0 | Schema_Builtin | Size: 0x4
-			uint32_t m_msQueuedModeDisconnectionTimestamp; // 0x8f4 | Schema_Builtin | Size: 0x4
-			uint32_t m_uiAbandonRecordedReason; // 0x8f8 | Schema_Builtin | Size: 0x4
-			uint32_t m_eNetworkDisconnectionReason; // 0x8fc | Schema_Builtin | Size: 0x4
-			bool m_bCannotBeKicked; // 0x900 | Schema_Builtin | Size: 0x1
-			bool m_bEverFullyConnected; // 0x901 | Schema_Builtin | Size: 0x1
-			bool m_bAbandonAllowsSurrender; // 0x902 | Schema_Builtin | Size: 0x1
-			bool m_bAbandonOffersInstantSurrender; // 0x903 | Schema_Builtin | Size: 0x1
-			bool m_bDisconnection1MinWarningPrinted; // 0x904 | Schema_Builtin | Size: 0x1
-			bool m_bScoreReported; // 0x905 | Schema_Builtin | Size: 0x1
+			int32_t m_iDraftIndex; // 0x8a8 | Schema_Builtin | Size: 0x4
+			uint32_t m_msQueuedModeDisconnectionTimestamp; // 0x8ac | Schema_Builtin | Size: 0x4
+			uint32_t m_uiAbandonRecordedReason; // 0x8b0 | Schema_Builtin | Size: 0x4
+			uint32_t m_eNetworkDisconnectionReason; // 0x8b4 | Schema_Builtin | Size: 0x4
+			bool m_bCannotBeKicked; // 0x8b8 | Schema_Builtin | Size: 0x1
+			bool m_bEverFullyConnected; // 0x8b9 | Schema_Builtin | Size: 0x1
+			bool m_bAbandonAllowsSurrender; // 0x8ba | Schema_Builtin | Size: 0x1
+			bool m_bAbandonOffersInstantSurrender; // 0x8bb | Schema_Builtin | Size: 0x1
+			bool m_bDisconnection1MinWarningPrinted; // 0x8bc | Schema_Builtin | Size: 0x1
+			bool m_bScoreReported; // 0x8bd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nDisconnectionTick; // 0x908 | Schema_Builtin | Size: 0x4
+			int32_t m_nDisconnectionTick; // 0x8c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
-			bool m_bControllingBot; // 0x918 | Schema_Builtin | Size: 0x1
-			bool m_bHasControlledBotThisRound; // 0x919 | Schema_Builtin | Size: 0x1
-			bool m_bHasBeenControlledByPlayerThisRound; // 0x91a | Schema_Builtin | Size: 0x1
+			bool m_bControllingBot; // 0x8d0 | Schema_Builtin | Size: 0x1
+			bool m_bHasControlledBotThisRound; // 0x8d1 | Schema_Builtin | Size: 0x1
+			bool m_bHasBeenControlledByPlayerThisRound; // 0x8d2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			int32_t m_nBotsControlledThisRound; // 0x91c | Schema_Builtin | Size: 0x4
-			bool m_bCanControlObservedBot; // 0x920 | Schema_Builtin | Size: 0x1
+			int32_t m_nBotsControlledThisRound; // 0x8d4 | Schema_Builtin | Size: 0x4
+			bool m_bCanControlObservedBot; // 0x8d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hPlayerPawn; // 0x924 | Schema_Atomic | Size: 0x4
-			// char  m_hPlayerPawn[0x4]; // 0x924 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CCSObserverPawn> m_hObserverPawn; // 0x928 | Schema_Atomic | Size: 0x4
-			// char  m_hObserverPawn[0x4]; // 0x928 | Schema_Atomic | Size: 0x4
-			int32_t m_DesiredObserverMode; // 0x92c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CEntityHandle m_hDesiredObserverTarget; // 0x930 | Schema_Atomic | Size: 0x4
-			bool m_bPawnIsAlive; // 0x934 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hPlayerPawn; // 0x8dc | Schema_Atomic | Size: 0x4
+			// char m_hPlayerPawn[0x4]; // 0x8dc | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSObserverPawn> m_hObserverPawn; // 0x8e0 | Schema_Atomic | Size: 0x4
+			// char m_hObserverPawn[0x4]; // 0x8e0 | Schema_Atomic | Size: 0x4
+			int32_t m_DesiredObserverMode; // 0x8e4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CEntityHandle m_hDesiredObserverTarget; // 0x8e8 | Schema_Atomic | Size: 0x4
+			bool m_bPawnIsAlive; // 0x8ec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			uint32_t m_iPawnHealth; // 0x938 | Schema_Builtin | Size: 0x4
-			int32_t m_iPawnArmor; // 0x93c | Schema_Builtin | Size: 0x4
-			bool m_bPawnHasDefuser; // 0x940 | Schema_Builtin | Size: 0x1
-			bool m_bPawnHasHelmet; // 0x941 | Schema_Builtin | Size: 0x1
-			uint16_t m_nPawnCharacterDefIndex; // 0x942 | Schema_Builtin | Size: 0x2
-			int32_t m_iPawnLifetimeStart; // 0x944 | Schema_Builtin | Size: 0x4
-			int32_t m_iPawnLifetimeEnd; // 0x948 | Schema_Builtin | Size: 0x4
-			int32_t m_iPawnBotDifficulty; // 0x94c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerController> m_hOriginalControllerOfCurrentPawn; // 0x950 | Schema_Atomic | Size: 0x4
-			// char  m_hOriginalControllerOfCurrentPawn[0x4]; // 0x950 | Schema_Atomic | Size: 0x4
-			int32_t m_iScore; // 0x954 | Schema_Builtin | Size: 0x4
-			int32_t m_iRoundScore; // 0x958 | Schema_Builtin | Size: 0x4
-			int32_t m_iRoundsWon; // 0x95c | Schema_Builtin | Size: 0x4
-			uint8_t m_recentKillQueue[8]; // 0x960 | Schema_FixedArray | Size: 0x8
-			uint8_t m_nFirstKill; // 0x968 | Schema_Builtin | Size: 0x1
-			uint8_t m_nKillCount; // 0x969 | Schema_Builtin | Size: 0x1
-			bool m_bMvpNoMusic; // 0x96a | Schema_Builtin | Size: 0x1
+			uint32_t m_iPawnHealth; // 0x8f0 | Schema_Builtin | Size: 0x4
+			int32_t m_iPawnArmor; // 0x8f4 | Schema_Builtin | Size: 0x4
+			bool m_bPawnHasDefuser; // 0x8f8 | Schema_Builtin | Size: 0x1
+			bool m_bPawnHasHelmet; // 0x8f9 | Schema_Builtin | Size: 0x1
+			uint16_t m_nPawnCharacterDefIndex; // 0x8fa | Schema_Builtin | Size: 0x2
+			int32_t m_iPawnLifetimeStart; // 0x8fc | Schema_Builtin | Size: 0x4
+			int32_t m_iPawnLifetimeEnd; // 0x900 | Schema_Builtin | Size: 0x4
+			int32_t m_iPawnBotDifficulty; // 0x904 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerController> m_hOriginalControllerOfCurrentPawn; // 0x908 | Schema_Atomic | Size: 0x4
+			// char m_hOriginalControllerOfCurrentPawn[0x4]; // 0x908 | Schema_Atomic | Size: 0x4
+			int32_t m_iScore; // 0x90c | Schema_Builtin | Size: 0x4
+			int32_t m_iRoundScore; // 0x910 | Schema_Builtin | Size: 0x4
+			int32_t m_iRoundsWon; // 0x914 | Schema_Builtin | Size: 0x4
+			uint8_t m_recentKillQueue[8]; // 0x918 | Schema_FixedArray | Size: 0x8
+			uint8_t m_nFirstKill; // 0x920 | Schema_Builtin | Size: 0x1
+			uint8_t m_nKillCount; // 0x921 | Schema_Builtin | Size: 0x1
+			bool m_bMvpNoMusic; // 0x922 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			int32_t m_eMvpReason; // 0x96c | Schema_Builtin | Size: 0x4
-			int32_t m_iMusicKitID; // 0x970 | Schema_Builtin | Size: 0x4
-			int32_t m_iMusicKitMVPs; // 0x974 | Schema_Builtin | Size: 0x4
-			int32_t m_iMVPs; // 0x978 | Schema_Builtin | Size: 0x4
-			int32_t m_nUpdateCounter; // 0x97c | Schema_Builtin | Size: 0x4
-			float32 m_flSmoothedPing; // 0x980 | Schema_Builtin | Size: 0x4
+			int32_t m_eMvpReason; // 0x924 | Schema_Builtin | Size: 0x4
+			int32_t m_iMusicKitID; // 0x928 | Schema_Builtin | Size: 0x4
+			int32_t m_iMusicKitMVPs; // 0x92c | Schema_Builtin | Size: 0x4
+			int32_t m_iMVPs; // 0x930 | Schema_Builtin | Size: 0x4
+			int32_t m_nUpdateCounter; // 0x934 | Schema_Builtin | Size: 0x4
+			float32 m_flSmoothedPing; // 0x938 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::IntervalTimer m_lastHeldVoteTimer; // 0x988 | Schema_DeclaredClass | Size: 0x10
+			server::IntervalTimer m_lastHeldVoteTimer; // 0x940 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0x8);
-			bool m_bShowHints; // 0x9a0 | Schema_Builtin | Size: 0x1
+			bool m_bShowHints; // 0x958 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iNextTimeCheck; // 0x9a4 | Schema_Builtin | Size: 0x4
-			bool m_bJustDidTeamKill; // 0x9a8 | Schema_Builtin | Size: 0x1
-			bool m_bPunishForTeamKill; // 0x9a9 | Schema_Builtin | Size: 0x1
-			bool m_bGaveTeamDamageWarning; // 0x9aa | Schema_Builtin | Size: 0x1
-			bool m_bGaveTeamDamageWarningThisRound; // 0x9ab | Schema_Builtin | Size: 0x1
+			int32_t m_iNextTimeCheck; // 0x95c | Schema_Builtin | Size: 0x4
+			bool m_bJustDidTeamKill; // 0x960 | Schema_Builtin | Size: 0x1
+			bool m_bPunishForTeamKill; // 0x961 | Schema_Builtin | Size: 0x1
+			bool m_bGaveTeamDamageWarning; // 0x962 | Schema_Builtin | Size: 0x1
+			bool m_bGaveTeamDamageWarningThisRound; // 0x963 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4);
-			float64 m_dblLastReceivedPacketPlatFloatTime; // 0x9b0 | Schema_Builtin | Size: 0x8
-			entity2::GameTime_t m_LastTeamDamageWarningTime; // 0x9b8 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_LastTimePlayerWasDisconnectedForPawnsRemove; // 0x9bc | Schema_DeclaredClass | Size: 0x4
-			uint32_t m_nSuspiciousHitCount; // 0x9c0 | Schema_Builtin | Size: 0x4
-			uint32_t m_nNonSuspiciousHitStreak; // 0x9c4 | Schema_Builtin | Size: 0x4
+			float64 m_dblLastReceivedPacketPlatFloatTime; // 0x968 | Schema_Builtin | Size: 0x8
+			entity2::GameTime_t m_LastTeamDamageWarningTime; // 0x970 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_LastTimePlayerWasDisconnectedForPawnsRemove; // 0x974 | Schema_DeclaredClass | Size: 0x4
+			uint32_t m_nSuspiciousHitCount; // 0x978 | Schema_Builtin | Size: 0x4
+			uint32_t m_nNonSuspiciousHitStreak; // 0x97c | Schema_Builtin | Size: 0x4
 			S2_PAD(0xa1);
-			bool m_bFireBulletsSeedSynchronized; // 0xa69 | Schema_Builtin | Size: 0x1
+			bool m_bFireBulletsSeedSynchronized; // 0xa21 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7e); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_pInGameMoneyServices) == 0x820, "m_pInGameMoneyServices in CCSPlayerController should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_pInventoryServices) == 0x828, "m_pInventoryServices in CCSPlayerController should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_pActionTrackingServices) == 0x830, "m_pActionTrackingServices in CCSPlayerController should be at offset 0x830");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_pDamageServices) == 0x838, "m_pDamageServices in CCSPlayerController should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPing) == 0x840, "m_iPing in CCSPlayerController should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasCommunicationAbuseMute) == 0x844, "m_bHasCommunicationAbuseMute in CCSPlayerController should be at offset 0x844");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_uiCommunicationMuteFlags) == 0x848, "m_uiCommunicationMuteFlags in CCSPlayerController should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_szCrosshairCodes) == 0x850, "m_szCrosshairCodes in CCSPlayerController should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPendingTeamNum) == 0x858, "m_iPendingTeamNum in CCSPlayerController should be at offset 0x858");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_flForceTeamTime) == 0x85C, "m_flForceTeamTime in CCSPlayerController should be at offset 0x85C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompTeammateColor) == 0x860, "m_iCompTeammateColor in CCSPlayerController should be at offset 0x860");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bEverPlayedOnTeam) == 0x864, "m_bEverPlayedOnTeam in CCSPlayerController should be at offset 0x864");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bAttemptedToGetColor) == 0x865, "m_bAttemptedToGetColor in CCSPlayerController should be at offset 0x865");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iTeammatePreferredColor) == 0x868, "m_iTeammatePreferredColor in CCSPlayerController should be at offset 0x868");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bTeamChanged) == 0x86C, "m_bTeamChanged in CCSPlayerController should be at offset 0x86C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bInSwitchTeam) == 0x86D, "m_bInSwitchTeam in CCSPlayerController should be at offset 0x86D");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasSeenJoinGame) == 0x86E, "m_bHasSeenJoinGame in CCSPlayerController should be at offset 0x86E");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bJustBecameSpectator) == 0x86F, "m_bJustBecameSpectator in CCSPlayerController should be at offset 0x86F");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bSwitchTeamsOnNextRoundReset) == 0x870, "m_bSwitchTeamsOnNextRoundReset in CCSPlayerController should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bRemoveAllItemsOnNextRoundReset) == 0x871, "m_bRemoveAllItemsOnNextRoundReset in CCSPlayerController should be at offset 0x871");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_flLastJoinTeamTime) == 0x874, "m_flLastJoinTeamTime in CCSPlayerController should be at offset 0x874");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_szClan) == 0x878, "m_szClan in CCSPlayerController should be at offset 0x878");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCoachingTeam) == 0x880, "m_iCoachingTeam in CCSPlayerController should be at offset 0x880");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nPlayerDominated) == 0x888, "m_nPlayerDominated in CCSPlayerController should be at offset 0x888");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nPlayerDominatingMe) == 0x890, "m_nPlayerDominatingMe in CCSPlayerController should be at offset 0x890");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRanking) == 0x898, "m_iCompetitiveRanking in CCSPlayerController should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveWins) == 0x89C, "m_iCompetitiveWins in CCSPlayerController should be at offset 0x89C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankType) == 0x8A0, "m_iCompetitiveRankType in CCSPlayerController should be at offset 0x8A0");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankingPredicted_Win) == 0x8A4, "m_iCompetitiveRankingPredicted_Win in CCSPlayerController should be at offset 0x8A4");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankingPredicted_Loss) == 0x8A8, "m_iCompetitiveRankingPredicted_Loss in CCSPlayerController should be at offset 0x8A8");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankingPredicted_Tie) == 0x8AC, "m_iCompetitiveRankingPredicted_Tie in CCSPlayerController should be at offset 0x8AC");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nEndMatchNextMapVote) == 0x8B0, "m_nEndMatchNextMapVote in CCSPlayerController should be at offset 0x8B0");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_unActiveQuestId) == 0x8B4, "m_unActiveQuestId in CCSPlayerController should be at offset 0x8B4");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_rtActiveMissionPeriod) == 0x8B8, "m_rtActiveMissionPeriod in CCSPlayerController should be at offset 0x8B8");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nQuestProgressReason) == 0x8BC, "m_nQuestProgressReason in CCSPlayerController should be at offset 0x8BC");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_unPlayerTvControlFlags) == 0x8C0, "m_unPlayerTvControlFlags in CCSPlayerController should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iDraftIndex) == 0x8F0, "m_iDraftIndex in CCSPlayerController should be at offset 0x8F0");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_msQueuedModeDisconnectionTimestamp) == 0x8F4, "m_msQueuedModeDisconnectionTimestamp in CCSPlayerController should be at offset 0x8F4");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_uiAbandonRecordedReason) == 0x8F8, "m_uiAbandonRecordedReason in CCSPlayerController should be at offset 0x8F8");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_eNetworkDisconnectionReason) == 0x8FC, "m_eNetworkDisconnectionReason in CCSPlayerController should be at offset 0x8FC");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bCannotBeKicked) == 0x900, "m_bCannotBeKicked in CCSPlayerController should be at offset 0x900");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bEverFullyConnected) == 0x901, "m_bEverFullyConnected in CCSPlayerController should be at offset 0x901");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bAbandonAllowsSurrender) == 0x902, "m_bAbandonAllowsSurrender in CCSPlayerController should be at offset 0x902");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bAbandonOffersInstantSurrender) == 0x903, "m_bAbandonOffersInstantSurrender in CCSPlayerController should be at offset 0x903");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bDisconnection1MinWarningPrinted) == 0x904, "m_bDisconnection1MinWarningPrinted in CCSPlayerController should be at offset 0x904");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bScoreReported) == 0x905, "m_bScoreReported in CCSPlayerController should be at offset 0x905");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nDisconnectionTick) == 0x908, "m_nDisconnectionTick in CCSPlayerController should be at offset 0x908");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bControllingBot) == 0x918, "m_bControllingBot in CCSPlayerController should be at offset 0x918");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasControlledBotThisRound) == 0x919, "m_bHasControlledBotThisRound in CCSPlayerController should be at offset 0x919");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasBeenControlledByPlayerThisRound) == 0x91A, "m_bHasBeenControlledByPlayerThisRound in CCSPlayerController should be at offset 0x91A");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nBotsControlledThisRound) == 0x91C, "m_nBotsControlledThisRound in CCSPlayerController should be at offset 0x91C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bCanControlObservedBot) == 0x920, "m_bCanControlObservedBot in CCSPlayerController should be at offset 0x920");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_hPlayerPawn) == 0x924, "m_hPlayerPawn in CCSPlayerController should be at offset 0x924");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_hObserverPawn) == 0x928, "m_hObserverPawn in CCSPlayerController should be at offset 0x928");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_DesiredObserverMode) == 0x92C, "m_DesiredObserverMode in CCSPlayerController should be at offset 0x92C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_hDesiredObserverTarget) == 0x930, "m_hDesiredObserverTarget in CCSPlayerController should be at offset 0x930");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPawnIsAlive) == 0x934, "m_bPawnIsAlive in CCSPlayerController should be at offset 0x934");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnHealth) == 0x938, "m_iPawnHealth in CCSPlayerController should be at offset 0x938");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnArmor) == 0x93C, "m_iPawnArmor in CCSPlayerController should be at offset 0x93C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPawnHasDefuser) == 0x940, "m_bPawnHasDefuser in CCSPlayerController should be at offset 0x940");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPawnHasHelmet) == 0x941, "m_bPawnHasHelmet in CCSPlayerController should be at offset 0x941");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nPawnCharacterDefIndex) == 0x942, "m_nPawnCharacterDefIndex in CCSPlayerController should be at offset 0x942");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnLifetimeStart) == 0x944, "m_iPawnLifetimeStart in CCSPlayerController should be at offset 0x944");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnLifetimeEnd) == 0x948, "m_iPawnLifetimeEnd in CCSPlayerController should be at offset 0x948");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnBotDifficulty) == 0x94C, "m_iPawnBotDifficulty in CCSPlayerController should be at offset 0x94C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_hOriginalControllerOfCurrentPawn) == 0x950, "m_hOriginalControllerOfCurrentPawn in CCSPlayerController should be at offset 0x950");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iScore) == 0x954, "m_iScore in CCSPlayerController should be at offset 0x954");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iRoundScore) == 0x958, "m_iRoundScore in CCSPlayerController should be at offset 0x958");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iRoundsWon) == 0x95C, "m_iRoundsWon in CCSPlayerController should be at offset 0x95C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_recentKillQueue) == 0x960, "m_recentKillQueue in CCSPlayerController should be at offset 0x960");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nFirstKill) == 0x968, "m_nFirstKill in CCSPlayerController should be at offset 0x968");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nKillCount) == 0x969, "m_nKillCount in CCSPlayerController should be at offset 0x969");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bMvpNoMusic) == 0x96A, "m_bMvpNoMusic in CCSPlayerController should be at offset 0x96A");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_eMvpReason) == 0x96C, "m_eMvpReason in CCSPlayerController should be at offset 0x96C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iMusicKitID) == 0x970, "m_iMusicKitID in CCSPlayerController should be at offset 0x970");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iMusicKitMVPs) == 0x974, "m_iMusicKitMVPs in CCSPlayerController should be at offset 0x974");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iMVPs) == 0x978, "m_iMVPs in CCSPlayerController should be at offset 0x978");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nUpdateCounter) == 0x97C, "m_nUpdateCounter in CCSPlayerController should be at offset 0x97C");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_flSmoothedPing) == 0x980, "m_flSmoothedPing in CCSPlayerController should be at offset 0x980");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_lastHeldVoteTimer) == 0x988, "m_lastHeldVoteTimer in CCSPlayerController should be at offset 0x988");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bShowHints) == 0x9A0, "m_bShowHints in CCSPlayerController should be at offset 0x9A0");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_iNextTimeCheck) == 0x9A4, "m_iNextTimeCheck in CCSPlayerController should be at offset 0x9A4");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bJustDidTeamKill) == 0x9A8, "m_bJustDidTeamKill in CCSPlayerController should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPunishForTeamKill) == 0x9A9, "m_bPunishForTeamKill in CCSPlayerController should be at offset 0x9A9");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bGaveTeamDamageWarning) == 0x9AA, "m_bGaveTeamDamageWarning in CCSPlayerController should be at offset 0x9AA");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bGaveTeamDamageWarningThisRound) == 0x9AB, "m_bGaveTeamDamageWarningThisRound in CCSPlayerController should be at offset 0x9AB");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_dblLastReceivedPacketPlatFloatTime) == 0x9B0, "m_dblLastReceivedPacketPlatFloatTime in CCSPlayerController should be at offset 0x9B0");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_LastTeamDamageWarningTime) == 0x9B8, "m_LastTeamDamageWarningTime in CCSPlayerController should be at offset 0x9B8");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_LastTimePlayerWasDisconnectedForPawnsRemove) == 0x9BC, "m_LastTimePlayerWasDisconnectedForPawnsRemove in CCSPlayerController should be at offset 0x9BC");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nSuspiciousHitCount) == 0x9C0, "m_nSuspiciousHitCount in CCSPlayerController should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_nNonSuspiciousHitStreak) == 0x9C4, "m_nNonSuspiciousHitStreak in CCSPlayerController should be at offset 0x9C4");
-		static_assert(offsetof(CS2::server::CCSPlayerController, m_bFireBulletsSeedSynchronized) == 0xA69, "m_bFireBulletsSeedSynchronized in CCSPlayerController should be at offset 0xA69");
-		static_assert(sizeof(CS2::server::CCSPlayerController) == 0xAE8, "CCSPlayerController size should be 0xAE8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_pInGameMoneyServices) == 0x7D8, "m_pInGameMoneyServices in CCSPlayerController should be at offset 0x7D8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_pInventoryServices) == 0x7E0, "m_pInventoryServices in CCSPlayerController should be at offset 0x7E0");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_pActionTrackingServices) == 0x7E8, "m_pActionTrackingServices in CCSPlayerController should be at offset 0x7E8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_pDamageServices) == 0x7F0, "m_pDamageServices in CCSPlayerController should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPing) == 0x7F8, "m_iPing in CCSPlayerController should be at offset 0x7F8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasCommunicationAbuseMute) == 0x7FC, "m_bHasCommunicationAbuseMute in CCSPlayerController should be at offset 0x7FC");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_uiCommunicationMuteFlags) == 0x800, "m_uiCommunicationMuteFlags in CCSPlayerController should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_szCrosshairCodes) == 0x808, "m_szCrosshairCodes in CCSPlayerController should be at offset 0x808");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPendingTeamNum) == 0x810, "m_iPendingTeamNum in CCSPlayerController should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_flForceTeamTime) == 0x814, "m_flForceTeamTime in CCSPlayerController should be at offset 0x814");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompTeammateColor) == 0x818, "m_iCompTeammateColor in CCSPlayerController should be at offset 0x818");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bEverPlayedOnTeam) == 0x81C, "m_bEverPlayedOnTeam in CCSPlayerController should be at offset 0x81C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bAttemptedToGetColor) == 0x81D, "m_bAttemptedToGetColor in CCSPlayerController should be at offset 0x81D");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iTeammatePreferredColor) == 0x820, "m_iTeammatePreferredColor in CCSPlayerController should be at offset 0x820");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bTeamChanged) == 0x824, "m_bTeamChanged in CCSPlayerController should be at offset 0x824");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bInSwitchTeam) == 0x825, "m_bInSwitchTeam in CCSPlayerController should be at offset 0x825");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasSeenJoinGame) == 0x826, "m_bHasSeenJoinGame in CCSPlayerController should be at offset 0x826");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bJustBecameSpectator) == 0x827, "m_bJustBecameSpectator in CCSPlayerController should be at offset 0x827");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bSwitchTeamsOnNextRoundReset) == 0x828, "m_bSwitchTeamsOnNextRoundReset in CCSPlayerController should be at offset 0x828");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bRemoveAllItemsOnNextRoundReset) == 0x829, "m_bRemoveAllItemsOnNextRoundReset in CCSPlayerController should be at offset 0x829");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_flLastJoinTeamTime) == 0x82C, "m_flLastJoinTeamTime in CCSPlayerController should be at offset 0x82C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_szClan) == 0x830, "m_szClan in CCSPlayerController should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCoachingTeam) == 0x838, "m_iCoachingTeam in CCSPlayerController should be at offset 0x838");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nPlayerDominated) == 0x840, "m_nPlayerDominated in CCSPlayerController should be at offset 0x840");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nPlayerDominatingMe) == 0x848, "m_nPlayerDominatingMe in CCSPlayerController should be at offset 0x848");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRanking) == 0x850, "m_iCompetitiveRanking in CCSPlayerController should be at offset 0x850");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveWins) == 0x854, "m_iCompetitiveWins in CCSPlayerController should be at offset 0x854");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankType) == 0x858, "m_iCompetitiveRankType in CCSPlayerController should be at offset 0x858");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankingPredicted_Win) == 0x85C, "m_iCompetitiveRankingPredicted_Win in CCSPlayerController should be at offset 0x85C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankingPredicted_Loss) == 0x860, "m_iCompetitiveRankingPredicted_Loss in CCSPlayerController should be at offset 0x860");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iCompetitiveRankingPredicted_Tie) == 0x864, "m_iCompetitiveRankingPredicted_Tie in CCSPlayerController should be at offset 0x864");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nEndMatchNextMapVote) == 0x868, "m_nEndMatchNextMapVote in CCSPlayerController should be at offset 0x868");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_unActiveQuestId) == 0x86C, "m_unActiveQuestId in CCSPlayerController should be at offset 0x86C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_rtActiveMissionPeriod) == 0x870, "m_rtActiveMissionPeriod in CCSPlayerController should be at offset 0x870");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nQuestProgressReason) == 0x874, "m_nQuestProgressReason in CCSPlayerController should be at offset 0x874");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_unPlayerTvControlFlags) == 0x878, "m_unPlayerTvControlFlags in CCSPlayerController should be at offset 0x878");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iDraftIndex) == 0x8A8, "m_iDraftIndex in CCSPlayerController should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_msQueuedModeDisconnectionTimestamp) == 0x8AC, "m_msQueuedModeDisconnectionTimestamp in CCSPlayerController should be at offset 0x8AC");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_uiAbandonRecordedReason) == 0x8B0, "m_uiAbandonRecordedReason in CCSPlayerController should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_eNetworkDisconnectionReason) == 0x8B4, "m_eNetworkDisconnectionReason in CCSPlayerController should be at offset 0x8B4");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bCannotBeKicked) == 0x8B8, "m_bCannotBeKicked in CCSPlayerController should be at offset 0x8B8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bEverFullyConnected) == 0x8B9, "m_bEverFullyConnected in CCSPlayerController should be at offset 0x8B9");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bAbandonAllowsSurrender) == 0x8BA, "m_bAbandonAllowsSurrender in CCSPlayerController should be at offset 0x8BA");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bAbandonOffersInstantSurrender) == 0x8BB, "m_bAbandonOffersInstantSurrender in CCSPlayerController should be at offset 0x8BB");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bDisconnection1MinWarningPrinted) == 0x8BC, "m_bDisconnection1MinWarningPrinted in CCSPlayerController should be at offset 0x8BC");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bScoreReported) == 0x8BD, "m_bScoreReported in CCSPlayerController should be at offset 0x8BD");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nDisconnectionTick) == 0x8C0, "m_nDisconnectionTick in CCSPlayerController should be at offset 0x8C0");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bControllingBot) == 0x8D0, "m_bControllingBot in CCSPlayerController should be at offset 0x8D0");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasControlledBotThisRound) == 0x8D1, "m_bHasControlledBotThisRound in CCSPlayerController should be at offset 0x8D1");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bHasBeenControlledByPlayerThisRound) == 0x8D2, "m_bHasBeenControlledByPlayerThisRound in CCSPlayerController should be at offset 0x8D2");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nBotsControlledThisRound) == 0x8D4, "m_nBotsControlledThisRound in CCSPlayerController should be at offset 0x8D4");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bCanControlObservedBot) == 0x8D8, "m_bCanControlObservedBot in CCSPlayerController should be at offset 0x8D8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_hPlayerPawn) == 0x8DC, "m_hPlayerPawn in CCSPlayerController should be at offset 0x8DC");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_hObserverPawn) == 0x8E0, "m_hObserverPawn in CCSPlayerController should be at offset 0x8E0");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_DesiredObserverMode) == 0x8E4, "m_DesiredObserverMode in CCSPlayerController should be at offset 0x8E4");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_hDesiredObserverTarget) == 0x8E8, "m_hDesiredObserverTarget in CCSPlayerController should be at offset 0x8E8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPawnIsAlive) == 0x8EC, "m_bPawnIsAlive in CCSPlayerController should be at offset 0x8EC");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnHealth) == 0x8F0, "m_iPawnHealth in CCSPlayerController should be at offset 0x8F0");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnArmor) == 0x8F4, "m_iPawnArmor in CCSPlayerController should be at offset 0x8F4");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPawnHasDefuser) == 0x8F8, "m_bPawnHasDefuser in CCSPlayerController should be at offset 0x8F8");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPawnHasHelmet) == 0x8F9, "m_bPawnHasHelmet in CCSPlayerController should be at offset 0x8F9");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nPawnCharacterDefIndex) == 0x8FA, "m_nPawnCharacterDefIndex in CCSPlayerController should be at offset 0x8FA");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnLifetimeStart) == 0x8FC, "m_iPawnLifetimeStart in CCSPlayerController should be at offset 0x8FC");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnLifetimeEnd) == 0x900, "m_iPawnLifetimeEnd in CCSPlayerController should be at offset 0x900");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iPawnBotDifficulty) == 0x904, "m_iPawnBotDifficulty in CCSPlayerController should be at offset 0x904");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_hOriginalControllerOfCurrentPawn) == 0x908, "m_hOriginalControllerOfCurrentPawn in CCSPlayerController should be at offset 0x908");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iScore) == 0x90C, "m_iScore in CCSPlayerController should be at offset 0x90C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iRoundScore) == 0x910, "m_iRoundScore in CCSPlayerController should be at offset 0x910");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iRoundsWon) == 0x914, "m_iRoundsWon in CCSPlayerController should be at offset 0x914");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_recentKillQueue) == 0x918, "m_recentKillQueue in CCSPlayerController should be at offset 0x918");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nFirstKill) == 0x920, "m_nFirstKill in CCSPlayerController should be at offset 0x920");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nKillCount) == 0x921, "m_nKillCount in CCSPlayerController should be at offset 0x921");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bMvpNoMusic) == 0x922, "m_bMvpNoMusic in CCSPlayerController should be at offset 0x922");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_eMvpReason) == 0x924, "m_eMvpReason in CCSPlayerController should be at offset 0x924");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iMusicKitID) == 0x928, "m_iMusicKitID in CCSPlayerController should be at offset 0x928");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iMusicKitMVPs) == 0x92C, "m_iMusicKitMVPs in CCSPlayerController should be at offset 0x92C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iMVPs) == 0x930, "m_iMVPs in CCSPlayerController should be at offset 0x930");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nUpdateCounter) == 0x934, "m_nUpdateCounter in CCSPlayerController should be at offset 0x934");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_flSmoothedPing) == 0x938, "m_flSmoothedPing in CCSPlayerController should be at offset 0x938");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_lastHeldVoteTimer) == 0x940, "m_lastHeldVoteTimer in CCSPlayerController should be at offset 0x940");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bShowHints) == 0x958, "m_bShowHints in CCSPlayerController should be at offset 0x958");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_iNextTimeCheck) == 0x95C, "m_iNextTimeCheck in CCSPlayerController should be at offset 0x95C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bJustDidTeamKill) == 0x960, "m_bJustDidTeamKill in CCSPlayerController should be at offset 0x960");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bPunishForTeamKill) == 0x961, "m_bPunishForTeamKill in CCSPlayerController should be at offset 0x961");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bGaveTeamDamageWarning) == 0x962, "m_bGaveTeamDamageWarning in CCSPlayerController should be at offset 0x962");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bGaveTeamDamageWarningThisRound) == 0x963, "m_bGaveTeamDamageWarningThisRound in CCSPlayerController should be at offset 0x963");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_dblLastReceivedPacketPlatFloatTime) == 0x968, "m_dblLastReceivedPacketPlatFloatTime in CCSPlayerController should be at offset 0x968");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_LastTeamDamageWarningTime) == 0x970, "m_LastTeamDamageWarningTime in CCSPlayerController should be at offset 0x970");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_LastTimePlayerWasDisconnectedForPawnsRemove) == 0x974, "m_LastTimePlayerWasDisconnectedForPawnsRemove in CCSPlayerController should be at offset 0x974");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nSuspiciousHitCount) == 0x978, "m_nSuspiciousHitCount in CCSPlayerController should be at offset 0x978");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_nNonSuspiciousHitStreak) == 0x97C, "m_nNonSuspiciousHitStreak in CCSPlayerController should be at offset 0x97C");
+		static_assert(offsetof(CS2::server::CCSPlayerController, m_bFireBulletsSeedSynchronized) == 0xA21, "m_bFireBulletsSeedSynchronized in CCSPlayerController should be at offset 0xA21");
+		static_assert(sizeof(CS2::server::CCSPlayerController) == 0xAA0, "CCSPlayerController size should be 0xAA0");
 	}
 }

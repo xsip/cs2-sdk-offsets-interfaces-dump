@@ -27,21 +27,21 @@ namespace CS2 {
 	namespace server {
 		class CPointHurt : public CS2::server::CPointEntity {
 		public:
-			int32_t m_nDamage; // 0x4f0 | Schema_Builtin | Size: 0x4
-			client::DamageTypes_t m_bitsDamageType; // 0x4f4 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flRadius; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flDelay; // 0x4fc | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_strTarget; // 0x500 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_pActivator; // 0x508 | Schema_Atomic | Size: 0x4
-			// char  m_pActivator[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
+			int32_t m_nDamage; // 0x4a8 | Schema_Builtin | Size: 0x4
+			client::DamageTypes_t m_bitsDamageType; // 0x4ac | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flRadius; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flDelay; // 0x4b4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_strTarget; // 0x4b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_pActivator; // 0x4c0 | Schema_Atomic | Size: 0x4
+			// char m_pActivator[0x4]; // 0x4c0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPointHurt, m_nDamage) == 0x4F0, "m_nDamage in CPointHurt should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointHurt, m_bitsDamageType) == 0x4F4, "m_bitsDamageType in CPointHurt should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CPointHurt, m_flRadius) == 0x4F8, "m_flRadius in CPointHurt should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPointHurt, m_flDelay) == 0x4FC, "m_flDelay in CPointHurt should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CPointHurt, m_strTarget) == 0x500, "m_strTarget in CPointHurt should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPointHurt, m_pActivator) == 0x508, "m_pActivator in CPointHurt should be at offset 0x508");
-		static_assert(sizeof(CS2::server::CPointHurt) == 0x510, "CPointHurt size should be 0x510");
+		static_assert(offsetof(CS2::server::CPointHurt, m_nDamage) == 0x4A8, "m_nDamage in CPointHurt should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointHurt, m_bitsDamageType) == 0x4AC, "m_bitsDamageType in CPointHurt should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CPointHurt, m_flRadius) == 0x4B0, "m_flRadius in CPointHurt should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPointHurt, m_flDelay) == 0x4B4, "m_flDelay in CPointHurt should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CPointHurt, m_strTarget) == 0x4B8, "m_strTarget in CPointHurt should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPointHurt, m_pActivator) == 0x4C0, "m_pActivator in CPointHurt should be at offset 0x4C0");
+		static_assert(sizeof(CS2::server::CPointHurt) == 0x4C8, "CPointHurt size should be 0x4C8");
 	}
 }

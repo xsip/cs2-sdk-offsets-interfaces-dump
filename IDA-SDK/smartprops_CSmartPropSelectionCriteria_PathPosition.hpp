@@ -5,7 +5,7 @@
 #include "smartprops_CSmartPropAttributePathPositions.hpp"
 
 class smartprops_CSmartPropSelectionCriteria_PathPosition {
-    char vTable2573[0x8];
+    void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
     smartprops_CSmartPropAttributePathPositions m_PlaceAtPositions;
     CSmartPropAttributeInt m_nPlaceEveryNthPosition;

@@ -8,21 +8,21 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x590
+			// Class size: 0x518
 			namespace CTimerEntity /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_OnTimer = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTimerHigh = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTimerLow = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_iDisabled = 0x568; // int32_t m_iDisabled; |  0x568 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInitialDelay = 0x56c; // float32 m_flInitialDelay; |  0x56c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRefireTime = 0x570; // float32 m_flRefireTime; |  0x570 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bUpDownState = 0x574; // bool m_bUpDownState; |  0x574 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iUseRandomTime = 0x578; // int32_t m_iUseRandomTime; |  0x578 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPauseAfterFiring = 0x57c; // bool m_bPauseAfterFiring; |  0x57c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLowerRandomBound = 0x580; // float32 m_flLowerRandomBound; |  0x580 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flUpperRandomBound = 0x584; // float32 m_flUpperRandomBound; |  0x584 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRemainingTime = 0x588; // float32 m_flRemainingTime; |  0x588 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPaused = 0x58c; // bool m_bPaused; |  0x58c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnTimer = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTimerHigh = 0x4c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTimerLow = 0x4d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_iDisabled = 0x4f0; // int32_t m_iDisabled; |  0x4f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInitialDelay = 0x4f4; // float32 m_flInitialDelay; |  0x4f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRefireTime = 0x4f8; // float32 m_flRefireTime; |  0x4f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUpDownState = 0x4fc; // bool m_bUpDownState; |  0x4fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iUseRandomTime = 0x500; // int32_t m_iUseRandomTime; |  0x500 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPauseAfterFiring = 0x504; // bool m_bPauseAfterFiring; |  0x504 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLowerRandomBound = 0x508; // float32 m_flLowerRandomBound; |  0x508 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flUpperRandomBound = 0x50c; // float32 m_flUpperRandomBound; |  0x50c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRemainingTime = 0x510; // float32 m_flRemainingTime; |  0x510 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPaused = 0x514; // bool m_bPaused; |  0x514 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

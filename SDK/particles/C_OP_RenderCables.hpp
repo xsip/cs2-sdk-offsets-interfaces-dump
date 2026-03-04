@@ -16,6 +16,8 @@
 #include <SDK/particles/ParticleColorBlendType_t.hpp>
 #include <SDK/particles/TextureRepetitionMode_t.hpp>
 #include <SDK/particleslib/CParticleTransformInput.hpp>
+#include <SDK/particles/FloatInputMaterialVariable_t.hpp>
+#include <SDK/particles/VecInputMaterialVariable_t.hpp>
 
 
 
@@ -32,7 +34,7 @@ namespace CS2 {
 			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xbb8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0xbc0 | Schema_Atomic | Size: 0x8
-			char  m_hMaterial[0x8]; // 0xbc0 | Schema_Atomic | Size: 0x8
+			char m_hMaterial[0x8]; // 0xbc0 | Schema_Atomic | Size: 0x8
 			particles::TextureRepetitionMode_t m_nTextureRepetitionMode; // 0xbc8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionFloatInput m_flTextureRepeatsPerSegment; // 0xbd0 | Schema_DeclaredClass | Size: 0x170
@@ -53,10 +55,10 @@ namespace CS2 {
 			S2_PAD(0x3);
 			particleslib::CParticleTransformInput m_LightingTransform; // 0x1490 | Schema_DeclaredClass | Size: 0x68
 			// GlobalTypes::CUtlLeanVector<particles::FloatInputMaterialVariable_t> m_MaterialFloatVars; // 0x14f8 | Schema_Atomic | Size: 0x10
-			char  m_MaterialFloatVars[0x10]; // 0x14f8 | Schema_Atomic | Size: 0x10
+			char m_MaterialFloatVars[0x10]; // 0x14f8 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10);
 			// GlobalTypes::CUtlLeanVector<particles::VecInputMaterialVariable_t> m_MaterialVecVars; // 0x1518 | Schema_Atomic | Size: 0x10
-			char  m_MaterialVecVars[0x10]; // 0x1518 | Schema_Atomic | Size: 0x10
+			char m_MaterialVecVars[0x10]; // 0x1518 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10); // End padding
 		};
 		static_assert(offsetof(CS2::particles::C_OP_RenderCables, m_flRadiusScale) == 0x220, "m_flRadiusScale in C_OP_RenderCables should be at offset 0x220");

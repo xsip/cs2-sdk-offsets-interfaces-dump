@@ -27,17 +27,17 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_ActionTrackingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			GlobalTypes::CHandle<client::C_BasePlayerWeapon> m_hLastWeaponBeforeC4AutoSwitch; // 0x40 | Schema_Atomic | Size: 0x4
-			// char  m_hLastWeaponBeforeC4AutoSwitch[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
-			bool m_bIsRescuing; // 0x44 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<client::C_BasePlayerWeapon> m_hLastWeaponBeforeC4AutoSwitch; // 0x48 | Schema_Atomic | Size: 0x4
+			// char m_hLastWeaponBeforeC4AutoSwitch[0x4]; // 0x48 | Schema_Atomic | Size: 0x4
+			bool m_bIsRescuing; // 0x4c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::WeaponPurchaseTracker_t m_weaponPurchasesThisMatch; // 0x48 | Schema_DeclaredClass | Size: 0x70
-			client::WeaponPurchaseTracker_t m_weaponPurchasesThisRound; // 0xb8 | Schema_DeclaredClass | Size: 0x70
+			client::WeaponPurchaseTracker_t m_weaponPurchasesThisMatch; // 0x50 | Schema_DeclaredClass | Size: 0x70
+			client::WeaponPurchaseTracker_t m_weaponPurchasesThisRound; // 0xc0 | Schema_DeclaredClass | Size: 0x70
 		};
-		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_hLastWeaponBeforeC4AutoSwitch) == 0x40, "m_hLastWeaponBeforeC4AutoSwitch in CCSPlayer_ActionTrackingServices should be at offset 0x40");
-		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_bIsRescuing) == 0x44, "m_bIsRescuing in CCSPlayer_ActionTrackingServices should be at offset 0x44");
-		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_weaponPurchasesThisMatch) == 0x48, "m_weaponPurchasesThisMatch in CCSPlayer_ActionTrackingServices should be at offset 0x48");
-		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_weaponPurchasesThisRound) == 0xB8, "m_weaponPurchasesThisRound in CCSPlayer_ActionTrackingServices should be at offset 0xB8");
-		static_assert(sizeof(CS2::client::CCSPlayer_ActionTrackingServices) == 0x128, "CCSPlayer_ActionTrackingServices size should be 0x128");
+		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_hLastWeaponBeforeC4AutoSwitch) == 0x48, "m_hLastWeaponBeforeC4AutoSwitch in CCSPlayer_ActionTrackingServices should be at offset 0x48");
+		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_bIsRescuing) == 0x4C, "m_bIsRescuing in CCSPlayer_ActionTrackingServices should be at offset 0x4C");
+		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_weaponPurchasesThisMatch) == 0x50, "m_weaponPurchasesThisMatch in CCSPlayer_ActionTrackingServices should be at offset 0x50");
+		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_weaponPurchasesThisRound) == 0xC0, "m_weaponPurchasesThisRound in CCSPlayer_ActionTrackingServices should be at offset 0xC0");
+		static_assert(sizeof(CS2::client::CCSPlayer_ActionTrackingServices) == 0x130, "CCSPlayer_ActionTrackingServices size should be 0x130");
 	}
 }

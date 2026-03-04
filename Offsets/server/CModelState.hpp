@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x280
+			// Class size: 0x250
 			namespace CModelState /**/ {
-				constexpr std::ptrdiff_t m_hModel = 0xd0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_ModelName = 0xd8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bClientClothCreationSuppressed = 0x125; // bool m_bClientClothCreationSuppressed; |  0x125 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_MeshGroupMask = 0x1d0; // uint64_t m_MeshGroupMask; |  0x1d0 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_nBodyGroupChoices = 0x220; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nIdealMotionType = 0x26a; // int8_t m_nIdealMotionType; |  0x26a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nForceLOD = 0x26b; // int8_t m_nForceLOD; |  0x26b | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nClothUpdateFlags = 0x26c; // int8_t m_nClothUpdateFlags; |  0x26c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hModel = 0xa0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_ModelName = 0xa8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bClientClothCreationSuppressed = 0xf5; // bool m_bClientClothCreationSuppressed; |  0xf5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_MeshGroupMask = 0x1a0; // uint64_t m_MeshGroupMask; |  0x1a0 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_nBodyGroupChoices = 0x1f0; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nIdealMotionType = 0x23a; // int8_t m_nIdealMotionType; |  0x23a | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nForceLOD = 0x23b; // int8_t m_nForceLOD; |  0x23b | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nClothUpdateFlags = 0x23c; // int8_t m_nClothUpdateFlags; |  0x23c | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

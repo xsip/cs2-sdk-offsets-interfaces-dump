@@ -22,6 +22,6 @@ namespace CS2 {
 		class CTriggerGravity : public CS2::server::CBaseTrigger {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CTriggerGravity) == 0x9A8, "CTriggerGravity size should be 0x9A8");
+		static_assert(sizeof(CS2::server::CTriggerGravity) == 0x890, "CTriggerGravity size should be 0x890");
 	}
 }

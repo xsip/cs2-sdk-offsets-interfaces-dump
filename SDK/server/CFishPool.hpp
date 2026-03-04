@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CBaseEntity.hpp>
+#include <SDK/server/CFish.hpp>
 #include <SDK/server/CountdownTimer.hpp>
 
 
@@ -23,23 +24,23 @@ namespace CS2 {
 		class CFishPool : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x10);
-			int32_t m_fishCount; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_maxRange; // 0x504 | Schema_Builtin | Size: 0x4
-			float32 m_swimDepth; // 0x508 | Schema_Builtin | Size: 0x4
-			float32 m_waterLevel; // 0x50c | Schema_Builtin | Size: 0x4
-			bool m_isDormant; // 0x510 | Schema_Builtin | Size: 0x1
+			int32_t m_fishCount; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_maxRange; // 0x4bc | Schema_Builtin | Size: 0x4
+			float32 m_swimDepth; // 0x4c0 | Schema_Builtin | Size: 0x4
+			float32 m_waterLevel; // 0x4c4 | Schema_Builtin | Size: 0x4
+			bool m_isDormant; // 0x4c8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			// server::CUtlVector<GlobalTypes::CHandle<server::CFish>> m_fishes; // 0x518 | Schema_Atomic | Size: 0x18
-			char  m_fishes[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
-			server::CountdownTimer m_visTimer; // 0x530 | Schema_DeclaredClass | Size: 0x18
+			server::CUtlVector<GlobalTypes::CHandle<server::CFish>> m_fishes; // 0x4d0 | Schema_Atomic | Size: 0x18
+			// char m_fishes[0x18]; // 0x4d0 | Schema_Atomic | Size: 0x18
+			server::CountdownTimer m_visTimer; // 0x4e8 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CFishPool, m_fishCount) == 0x500, "m_fishCount in CFishPool should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CFishPool, m_maxRange) == 0x504, "m_maxRange in CFishPool should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CFishPool, m_swimDepth) == 0x508, "m_swimDepth in CFishPool should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CFishPool, m_waterLevel) == 0x50C, "m_waterLevel in CFishPool should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CFishPool, m_isDormant) == 0x510, "m_isDormant in CFishPool should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CFishPool, m_fishes) == 0x518, "m_fishes in CFishPool should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CFishPool, m_visTimer) == 0x530, "m_visTimer in CFishPool should be at offset 0x530");
-		static_assert(sizeof(CS2::server::CFishPool) == 0x548, "CFishPool size should be 0x548");
+		static_assert(offsetof(CS2::server::CFishPool, m_fishCount) == 0x4B8, "m_fishCount in CFishPool should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CFishPool, m_maxRange) == 0x4BC, "m_maxRange in CFishPool should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CFishPool, m_swimDepth) == 0x4C0, "m_swimDepth in CFishPool should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CFishPool, m_waterLevel) == 0x4C4, "m_waterLevel in CFishPool should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CFishPool, m_isDormant) == 0x4C8, "m_isDormant in CFishPool should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CFishPool, m_fishes) == 0x4D0, "m_fishes in CFishPool should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CFishPool, m_visTimer) == 0x4E8, "m_visTimer in CFishPool should be at offset 0x4E8");
+		static_assert(sizeof(CS2::server::CFishPool) == 0x500, "CFishPool size should be 0x500");
 	}
 }

@@ -22,6 +22,6 @@ namespace CS2 {
 		class C_FuncBrush : public CS2::client::C_BaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_FuncBrush) == 0xEB0, "C_FuncBrush size should be 0xEB0");
+		static_assert(sizeof(CS2::client::C_FuncBrush) == 0xE88, "C_FuncBrush size should be 0xE88");
 	}
 }

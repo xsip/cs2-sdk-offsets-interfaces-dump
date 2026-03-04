@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CSoundEventEntity.hpp>
+#include <SDK/client/SoundeventPathCornerPairNetworked_t.hpp>
 
 
 
@@ -21,23 +22,23 @@ namespace CS2 {
 	namespace server {
 		class CSoundEventPathCornerEntity : public CS2::server::CSoundEventEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszPathCorner; // 0x5b8 | Schema_Atomic | Size: 0x8
-			int32_t m_iCountMax; // 0x5c0 | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceMax; // 0x5c4 | Schema_Builtin | Size: 0x4
-			float32 m_flDistMaxSqr; // 0x5c8 | Schema_Builtin | Size: 0x4
-			float32 m_flDotProductMax; // 0x5cc | Schema_Builtin | Size: 0x4
-			bool m_bPlaying; // 0x5d0 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszPathCorner; // 0x558 | Schema_Atomic | Size: 0x8
+			int32_t m_iCountMax; // 0x560 | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceMax; // 0x564 | Schema_Builtin | Size: 0x4
+			float32 m_flDistMaxSqr; // 0x568 | Schema_Builtin | Size: 0x4
+			float32 m_flDotProductMax; // 0x56c | Schema_Builtin | Size: 0x4
+			bool m_bPlaying; // 0x570 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x27);
-			// GlobalTypes::CNetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t> m_vecCornerPairsNetworked; // 0x5f8 | Schema_Atomic | Size: 0x60
-			char  m_vecCornerPairsNetworked[0x60]; // 0x5f8 | Schema_Atomic | Size: 0x60
+			// GlobalTypes::CNetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t> m_vecCornerPairsNetworked; // 0x598 | Schema_Atomic | Size: 0x60
+			char m_vecCornerPairsNetworked[0x60]; // 0x598 | Schema_Atomic | Size: 0x60
 		};
-		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_iszPathCorner) == 0x5B8, "m_iszPathCorner in CSoundEventPathCornerEntity should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_iCountMax) == 0x5C0, "m_iCountMax in CSoundEventPathCornerEntity should be at offset 0x5C0");
-		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_flDistanceMax) == 0x5C4, "m_flDistanceMax in CSoundEventPathCornerEntity should be at offset 0x5C4");
-		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_flDistMaxSqr) == 0x5C8, "m_flDistMaxSqr in CSoundEventPathCornerEntity should be at offset 0x5C8");
-		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_flDotProductMax) == 0x5CC, "m_flDotProductMax in CSoundEventPathCornerEntity should be at offset 0x5CC");
-		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_bPlaying) == 0x5D0, "m_bPlaying in CSoundEventPathCornerEntity should be at offset 0x5D0");
-		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_vecCornerPairsNetworked) == 0x5F8, "m_vecCornerPairsNetworked in CSoundEventPathCornerEntity should be at offset 0x5F8");
-		static_assert(sizeof(CS2::server::CSoundEventPathCornerEntity) == 0x658, "CSoundEventPathCornerEntity size should be 0x658");
+		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_iszPathCorner) == 0x558, "m_iszPathCorner in CSoundEventPathCornerEntity should be at offset 0x558");
+		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_iCountMax) == 0x560, "m_iCountMax in CSoundEventPathCornerEntity should be at offset 0x560");
+		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_flDistanceMax) == 0x564, "m_flDistanceMax in CSoundEventPathCornerEntity should be at offset 0x564");
+		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_flDistMaxSqr) == 0x568, "m_flDistMaxSqr in CSoundEventPathCornerEntity should be at offset 0x568");
+		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_flDotProductMax) == 0x56C, "m_flDotProductMax in CSoundEventPathCornerEntity should be at offset 0x56C");
+		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_bPlaying) == 0x570, "m_bPlaying in CSoundEventPathCornerEntity should be at offset 0x570");
+		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_vecCornerPairsNetworked) == 0x598, "m_vecCornerPairsNetworked in CSoundEventPathCornerEntity should be at offset 0x598");
+		static_assert(sizeof(CS2::server::CSoundEventPathCornerEntity) == 0x5F8, "CSoundEventPathCornerEntity size should be 0x5F8");
 	}
 }

@@ -11,14 +11,10 @@
 
 
 #include <SDK/soundsystem_voicecontainers/CVoiceContainerBase.hpp>
+#include <SDK/soundsystem_voicecontainers/CSoundContainerReference.hpp>
 
 
 
-namespace CS2 {
-	namespace soundsystem_voicecontainers {
-		class CSoundContainerReference;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,10 +22,10 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerSwitch : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CSoundContainerReference> m_soundsToPlay; // 0xb8 | Schema_Atomic | Size: 0x18
-			// char  m_soundsToPlay[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CSoundContainerReference> m_soundsToPlay; // 0xa8 | Schema_Atomic | Size: 0x18
+			// char m_soundsToPlay[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSwitch, m_soundsToPlay) == 0xB8, "m_soundsToPlay in CVoiceContainerSwitch should be at offset 0xB8");
-		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerSwitch) == 0xD0, "CVoiceContainerSwitch size should be 0xD0");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSwitch, m_soundsToPlay) == 0xA8, "m_soundsToPlay in CVoiceContainerSwitch should be at offset 0xA8");
+		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerSwitch) == 0xC0, "CVoiceContainerSwitch size should be 0xC0");
 	}
 }

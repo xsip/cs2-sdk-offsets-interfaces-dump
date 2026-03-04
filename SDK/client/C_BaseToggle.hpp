@@ -22,6 +22,6 @@ namespace CS2 {
 		class C_BaseToggle : public CS2::client::C_BaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_BaseToggle) == 0xEB0, "C_BaseToggle size should be 0xEB0");
+		static_assert(sizeof(CS2::client::C_BaseToggle) == 0xE88, "C_BaseToggle size should be 0xE88");
 	}
 }

@@ -8,12 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xD50
+			// Class size: 0xCB0
 			namespace CMolotovProjectile /*: public CS2::server::CBaseCSGrenadeProjectile*/ {
-				constexpr std::ptrdiff_t m_bIsIncGrenade = 0xc40; // bool m_bIsIncGrenade; |  0xc40 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDetonated = 0xc58; // bool m_bDetonated; |  0xc58 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_stillTimer = 0xc60; // server::IntervalTimer  | Schema_DeclaredClass | Size: 0x10
-				constexpr std::ptrdiff_t m_bHasBouncedOffPlayer = 0xd40; // bool m_bHasBouncedOffPlayer; |  0xd40 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bIsIncGrenade = 0xbb0; // bool m_bIsIncGrenade; |  0xbb0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDetonated = 0xbc8; // bool m_bDetonated; |  0xbc8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_stillTimer = 0xbd0; // server::IntervalTimer  | Schema_DeclaredClass | Size: 0x10
 			}
 		}
 	}

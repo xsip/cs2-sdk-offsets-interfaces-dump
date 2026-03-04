@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x48
+			// Class size: 0x50
 			namespace CCSPlayer_HostageServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_hCarriedHostage = 0x40; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hCarriedHostageProp = 0x44; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hCarriedHostage = 0x48; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hCarriedHostageProp = 0x4c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

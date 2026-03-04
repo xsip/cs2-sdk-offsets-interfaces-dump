@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x5F8
+			// Class size: 0x608
 			namespace C_CSGO_EndOfMatchLineupEnd /*: public CS2::client::C_CSGO_EndOfMatchLineupEndpoint*/ {
 				// NO SCHEMA DATA FOUND!
 			}

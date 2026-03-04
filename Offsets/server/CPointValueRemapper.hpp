@@ -8,52 +8,52 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x6F8
+			// Class size: 0x650
 			namespace CPointValueRemapper /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUpdateOnClient = 0x4f1; // bool m_bUpdateOnClient; |  0x4f1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nInputType = 0x4f4; // client::ValueRemapperInputType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iszRemapLineStartName = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszRemapLineEndName = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hRemapLineStart = 0x508; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hRemapLineEnd = 0x50c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flMaximumChangePerSecond = 0x510; // float32 m_flMaximumChangePerSecond; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDisengageDistance = 0x514; // float32 m_flDisengageDistance; |  0x514 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flEngageDistance = 0x518; // float32 m_flEngageDistance; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bRequiresUseKey = 0x51c; // bool m_bRequiresUseKey; |  0x51c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nOutputType = 0x520; // client::ValueRemapperOutputType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_iszOutputEntityName = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOutputEntity2Name = 0x530; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOutputEntity3Name = 0x538; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOutputEntity4Name = 0x540; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hOutputEntities = 0x548; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nHapticsType = 0x560; // client::ValueRemapperHapticsType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nMomentumType = 0x564; // client::ValueRemapperMomentumType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flMomentumModifier = 0x568; // float32 m_flMomentumModifier; |  0x568 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSnapValue = 0x56c; // float32 m_flSnapValue; |  0x56c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCurrentMomentum = 0x570; // float32 m_flCurrentMomentum; |  0x570 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nRatchetType = 0x574; // client::ValueRemapperRatchetType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flRatchetOffset = 0x578; // float32 m_flRatchetOffset; |  0x578 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInputOffset = 0x57c; // float32 m_flInputOffset; |  0x57c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEngaged = 0x580; // bool m_bEngaged; |  0x580 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFirstUpdate = 0x581; // bool m_bFirstUpdate; |  0x581 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flPreviousValue = 0x584; // float32 m_flPreviousValue; |  0x584 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPreviousUpdateTickTime = 0x588; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecPreviousTestPoint = 0x58c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hUsingPlayer = 0x598; // GlobalTypes::CHandle<server::CBasePlayerPawn>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flCustomOutputValue = 0x59c; // float32 m_flCustomOutputValue; |  0x59c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSoundEngage = 0x5a0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSoundDisengage = 0x5a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSoundReachedValueZero = 0x5b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSoundReachedValueOne = 0x5b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSoundMovingLoop = 0x5c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_Position = 0x5e0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_PositionDelta = 0x608; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnReachedValueZero = 0x630; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnReachedValueOne = 0x658; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnReachedValueCustom = 0x680; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEngage = 0x6a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnDisengage = 0x6d0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_bDisabled = 0x4a8; // bool m_bDisabled; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUpdateOnClient = 0x4a9; // bool m_bUpdateOnClient; |  0x4a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nInputType = 0x4ac; // client::ValueRemapperInputType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iszRemapLineStartName = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszRemapLineEndName = 0x4b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hRemapLineStart = 0x4c0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hRemapLineEnd = 0x4c4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flMaximumChangePerSecond = 0x4c8; // float32 m_flMaximumChangePerSecond; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDisengageDistance = 0x4cc; // float32 m_flDisengageDistance; |  0x4cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flEngageDistance = 0x4d0; // float32 m_flEngageDistance; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bRequiresUseKey = 0x4d4; // bool m_bRequiresUseKey; |  0x4d4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nOutputType = 0x4d8; // client::ValueRemapperOutputType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_iszOutputEntityName = 0x4e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOutputEntity2Name = 0x4e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOutputEntity3Name = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOutputEntity4Name = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hOutputEntities = 0x500; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nHapticsType = 0x518; // client::ValueRemapperHapticsType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nMomentumType = 0x51c; // client::ValueRemapperMomentumType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flMomentumModifier = 0x520; // float32 m_flMomentumModifier; |  0x520 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSnapValue = 0x524; // float32 m_flSnapValue; |  0x524 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCurrentMomentum = 0x528; // float32 m_flCurrentMomentum; |  0x528 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nRatchetType = 0x52c; // client::ValueRemapperRatchetType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flRatchetOffset = 0x530; // float32 m_flRatchetOffset; |  0x530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInputOffset = 0x534; // float32 m_flInputOffset; |  0x534 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEngaged = 0x538; // bool m_bEngaged; |  0x538 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFirstUpdate = 0x539; // bool m_bFirstUpdate; |  0x539 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flPreviousValue = 0x53c; // float32 m_flPreviousValue; |  0x53c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPreviousUpdateTickTime = 0x540; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecPreviousTestPoint = 0x544; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hUsingPlayer = 0x550; // GlobalTypes::CHandle<server::CBasePlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flCustomOutputValue = 0x554; // float32 m_flCustomOutputValue; |  0x554 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSoundEngage = 0x558; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSoundDisengage = 0x560; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSoundReachedValueZero = 0x568; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSoundReachedValueOne = 0x570; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSoundMovingLoop = 0x578; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_Position = 0x598; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_PositionDelta = 0x5b8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnReachedValueZero = 0x5d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnReachedValueOne = 0x5f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnReachedValueCustom = 0x608; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnEngage = 0x620; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnDisengage = 0x638; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

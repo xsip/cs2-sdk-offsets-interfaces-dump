@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x708
+			// Class size: 0x718
 			namespace C_PathParticleRopeAlias_path_particle_rope_clientside /*: public CS2::client::C_PathParticleRope*/ {
 				// NO SCHEMA DATA FOUND!
 			}

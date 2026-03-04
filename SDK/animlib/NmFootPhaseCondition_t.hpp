@@ -9,6 +9,7 @@ namespace CS2 {
 			NmFootPhaseCondition_t_LeftFootDown = 0x0,
 			NmFootPhaseCondition_t_LeftFootPassing = 0x1,
 			NmFootPhaseCondition_t_LeftPhase = 0x4,
+			NmFootPhaseCondition_t_None = 0x6,
 			NmFootPhaseCondition_t_RightFootDown = 0x2,
 			NmFootPhaseCondition_t_RightFootPassing = 0x3,
 			NmFootPhaseCondition_t_RightPhase = 0x5

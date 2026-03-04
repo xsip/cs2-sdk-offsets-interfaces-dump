@@ -24,58 +24,58 @@ namespace CS2 {
 	namespace server {
 		class CInferno : public CS2::server::CBaseModelEntity {
 		public:
-			GlobalTypes::Vector m_firePositions[64]; // 0x7d8 | Schema_FixedArray | Size: 0x300
-			GlobalTypes::Vector m_fireParentPositions[64]; // 0xad8 | Schema_FixedArray | Size: 0x300
-			bool m_bFireIsBurning[64]; // 0xdd8 | Schema_FixedArray | Size: 0x40
-			GlobalTypes::Vector m_BurnNormal[64]; // 0xe18 | Schema_FixedArray | Size: 0x300
-			int32_t m_fireCount; // 0x1118 | Schema_Builtin | Size: 0x4
-			int32_t m_nInfernoType; // 0x111c | Schema_Builtin | Size: 0x4
-			int32_t m_nFireEffectTickBegin; // 0x1120 | Schema_Builtin | Size: 0x4
-			float32 m_nFireLifetime; // 0x1124 | Schema_Builtin | Size: 0x4
-			bool m_bInPostEffectTime; // 0x1128 | Schema_Builtin | Size: 0x1
-			bool m_bWasCreatedInSmoke; // 0x1129 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_firePositions[64]; // 0x730 | Schema_FixedArray | Size: 0x300
+			GlobalTypes::Vector m_fireParentPositions[64]; // 0xa30 | Schema_FixedArray | Size: 0x300
+			bool m_bFireIsBurning[64]; // 0xd30 | Schema_FixedArray | Size: 0x40
+			GlobalTypes::Vector m_BurnNormal[64]; // 0xd70 | Schema_FixedArray | Size: 0x300
+			int32_t m_fireCount; // 0x1070 | Schema_Builtin | Size: 0x4
+			int32_t m_nInfernoType; // 0x1074 | Schema_Builtin | Size: 0x4
+			int32_t m_nFireEffectTickBegin; // 0x1078 | Schema_Builtin | Size: 0x4
+			float32 m_nFireLifetime; // 0x107c | Schema_Builtin | Size: 0x4
+			bool m_bInPostEffectTime; // 0x1080 | Schema_Builtin | Size: 0x1
+			bool m_bWasCreatedInSmoke; // 0x1081 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x206);
-			navlib::Extent m_extent; // 0x1330 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_damageTimer; // 0x1348 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_damageRampTimer; // 0x1360 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::Vector m_splashVelocity; // 0x1378 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_InitialSplashVelocity; // 0x1384 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_startPos; // 0x1390 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecOriginalSpawnLocation; // 0x139c | Schema_Atomic | Size: 0xc
-			server::IntervalTimer m_activeTimer; // 0x13a8 | Schema_DeclaredClass | Size: 0x10
-			int32_t m_fireSpawnOffset; // 0x13b8 | Schema_Builtin | Size: 0x4
-			int32_t m_nMaxFlames; // 0x13bc | Schema_Builtin | Size: 0x4
-			int32_t m_nSpreadCount; // 0x13c0 | Schema_Builtin | Size: 0x4
+			navlib::Extent m_extent; // 0x1288 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_damageTimer; // 0x12a0 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_damageRampTimer; // 0x12b8 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::Vector m_splashVelocity; // 0x12d0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_InitialSplashVelocity; // 0x12dc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_startPos; // 0x12e8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecOriginalSpawnLocation; // 0x12f4 | Schema_Atomic | Size: 0xc
+			server::IntervalTimer m_activeTimer; // 0x1300 | Schema_DeclaredClass | Size: 0x10
+			int32_t m_fireSpawnOffset; // 0x1310 | Schema_Builtin | Size: 0x4
+			int32_t m_nMaxFlames; // 0x1314 | Schema_Builtin | Size: 0x4
+			int32_t m_nSpreadCount; // 0x1318 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::CountdownTimer m_BookkeepingTimer; // 0x13c8 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_NextSpreadTimer; // 0x13e0 | Schema_DeclaredClass | Size: 0x18
-			uint16_t m_nSourceItemDefIndex; // 0x13f8 | Schema_Builtin | Size: 0x2
+			server::CountdownTimer m_BookkeepingTimer; // 0x1320 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_NextSpreadTimer; // 0x1338 | Schema_DeclaredClass | Size: 0x18
+			uint16_t m_nSourceItemDefIndex; // 0x1350 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x66); // End padding
 		};
-		static_assert(offsetof(CS2::server::CInferno, m_firePositions) == 0x7D8, "m_firePositions in CInferno should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CInferno, m_fireParentPositions) == 0xAD8, "m_fireParentPositions in CInferno should be at offset 0xAD8");
-		static_assert(offsetof(CS2::server::CInferno, m_bFireIsBurning) == 0xDD8, "m_bFireIsBurning in CInferno should be at offset 0xDD8");
-		static_assert(offsetof(CS2::server::CInferno, m_BurnNormal) == 0xE18, "m_BurnNormal in CInferno should be at offset 0xE18");
-		static_assert(offsetof(CS2::server::CInferno, m_fireCount) == 0x1118, "m_fireCount in CInferno should be at offset 0x1118");
-		static_assert(offsetof(CS2::server::CInferno, m_nInfernoType) == 0x111C, "m_nInfernoType in CInferno should be at offset 0x111C");
-		static_assert(offsetof(CS2::server::CInferno, m_nFireEffectTickBegin) == 0x1120, "m_nFireEffectTickBegin in CInferno should be at offset 0x1120");
-		static_assert(offsetof(CS2::server::CInferno, m_nFireLifetime) == 0x1124, "m_nFireLifetime in CInferno should be at offset 0x1124");
-		static_assert(offsetof(CS2::server::CInferno, m_bInPostEffectTime) == 0x1128, "m_bInPostEffectTime in CInferno should be at offset 0x1128");
-		static_assert(offsetof(CS2::server::CInferno, m_bWasCreatedInSmoke) == 0x1129, "m_bWasCreatedInSmoke in CInferno should be at offset 0x1129");
-		static_assert(offsetof(CS2::server::CInferno, m_extent) == 0x1330, "m_extent in CInferno should be at offset 0x1330");
-		static_assert(offsetof(CS2::server::CInferno, m_damageTimer) == 0x1348, "m_damageTimer in CInferno should be at offset 0x1348");
-		static_assert(offsetof(CS2::server::CInferno, m_damageRampTimer) == 0x1360, "m_damageRampTimer in CInferno should be at offset 0x1360");
-		static_assert(offsetof(CS2::server::CInferno, m_splashVelocity) == 0x1378, "m_splashVelocity in CInferno should be at offset 0x1378");
-		static_assert(offsetof(CS2::server::CInferno, m_InitialSplashVelocity) == 0x1384, "m_InitialSplashVelocity in CInferno should be at offset 0x1384");
-		static_assert(offsetof(CS2::server::CInferno, m_startPos) == 0x1390, "m_startPos in CInferno should be at offset 0x1390");
-		static_assert(offsetof(CS2::server::CInferno, m_vecOriginalSpawnLocation) == 0x139C, "m_vecOriginalSpawnLocation in CInferno should be at offset 0x139C");
-		static_assert(offsetof(CS2::server::CInferno, m_activeTimer) == 0x13A8, "m_activeTimer in CInferno should be at offset 0x13A8");
-		static_assert(offsetof(CS2::server::CInferno, m_fireSpawnOffset) == 0x13B8, "m_fireSpawnOffset in CInferno should be at offset 0x13B8");
-		static_assert(offsetof(CS2::server::CInferno, m_nMaxFlames) == 0x13BC, "m_nMaxFlames in CInferno should be at offset 0x13BC");
-		static_assert(offsetof(CS2::server::CInferno, m_nSpreadCount) == 0x13C0, "m_nSpreadCount in CInferno should be at offset 0x13C0");
-		static_assert(offsetof(CS2::server::CInferno, m_BookkeepingTimer) == 0x13C8, "m_BookkeepingTimer in CInferno should be at offset 0x13C8");
-		static_assert(offsetof(CS2::server::CInferno, m_NextSpreadTimer) == 0x13E0, "m_NextSpreadTimer in CInferno should be at offset 0x13E0");
-		static_assert(offsetof(CS2::server::CInferno, m_nSourceItemDefIndex) == 0x13F8, "m_nSourceItemDefIndex in CInferno should be at offset 0x13F8");
-		static_assert(sizeof(CS2::server::CInferno) == 0x1460, "CInferno size should be 0x1460");
+		static_assert(offsetof(CS2::server::CInferno, m_firePositions) == 0x730, "m_firePositions in CInferno should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CInferno, m_fireParentPositions) == 0xA30, "m_fireParentPositions in CInferno should be at offset 0xA30");
+		static_assert(offsetof(CS2::server::CInferno, m_bFireIsBurning) == 0xD30, "m_bFireIsBurning in CInferno should be at offset 0xD30");
+		static_assert(offsetof(CS2::server::CInferno, m_BurnNormal) == 0xD70, "m_BurnNormal in CInferno should be at offset 0xD70");
+		static_assert(offsetof(CS2::server::CInferno, m_fireCount) == 0x1070, "m_fireCount in CInferno should be at offset 0x1070");
+		static_assert(offsetof(CS2::server::CInferno, m_nInfernoType) == 0x1074, "m_nInfernoType in CInferno should be at offset 0x1074");
+		static_assert(offsetof(CS2::server::CInferno, m_nFireEffectTickBegin) == 0x1078, "m_nFireEffectTickBegin in CInferno should be at offset 0x1078");
+		static_assert(offsetof(CS2::server::CInferno, m_nFireLifetime) == 0x107C, "m_nFireLifetime in CInferno should be at offset 0x107C");
+		static_assert(offsetof(CS2::server::CInferno, m_bInPostEffectTime) == 0x1080, "m_bInPostEffectTime in CInferno should be at offset 0x1080");
+		static_assert(offsetof(CS2::server::CInferno, m_bWasCreatedInSmoke) == 0x1081, "m_bWasCreatedInSmoke in CInferno should be at offset 0x1081");
+		static_assert(offsetof(CS2::server::CInferno, m_extent) == 0x1288, "m_extent in CInferno should be at offset 0x1288");
+		static_assert(offsetof(CS2::server::CInferno, m_damageTimer) == 0x12A0, "m_damageTimer in CInferno should be at offset 0x12A0");
+		static_assert(offsetof(CS2::server::CInferno, m_damageRampTimer) == 0x12B8, "m_damageRampTimer in CInferno should be at offset 0x12B8");
+		static_assert(offsetof(CS2::server::CInferno, m_splashVelocity) == 0x12D0, "m_splashVelocity in CInferno should be at offset 0x12D0");
+		static_assert(offsetof(CS2::server::CInferno, m_InitialSplashVelocity) == 0x12DC, "m_InitialSplashVelocity in CInferno should be at offset 0x12DC");
+		static_assert(offsetof(CS2::server::CInferno, m_startPos) == 0x12E8, "m_startPos in CInferno should be at offset 0x12E8");
+		static_assert(offsetof(CS2::server::CInferno, m_vecOriginalSpawnLocation) == 0x12F4, "m_vecOriginalSpawnLocation in CInferno should be at offset 0x12F4");
+		static_assert(offsetof(CS2::server::CInferno, m_activeTimer) == 0x1300, "m_activeTimer in CInferno should be at offset 0x1300");
+		static_assert(offsetof(CS2::server::CInferno, m_fireSpawnOffset) == 0x1310, "m_fireSpawnOffset in CInferno should be at offset 0x1310");
+		static_assert(offsetof(CS2::server::CInferno, m_nMaxFlames) == 0x1314, "m_nMaxFlames in CInferno should be at offset 0x1314");
+		static_assert(offsetof(CS2::server::CInferno, m_nSpreadCount) == 0x1318, "m_nSpreadCount in CInferno should be at offset 0x1318");
+		static_assert(offsetof(CS2::server::CInferno, m_BookkeepingTimer) == 0x1320, "m_BookkeepingTimer in CInferno should be at offset 0x1320");
+		static_assert(offsetof(CS2::server::CInferno, m_NextSpreadTimer) == 0x1338, "m_NextSpreadTimer in CInferno should be at offset 0x1338");
+		static_assert(offsetof(CS2::server::CInferno, m_nSourceItemDefIndex) == 0x1350, "m_nSourceItemDefIndex in CInferno should be at offset 0x1350");
+		static_assert(sizeof(CS2::server::CInferno) == 0x13B8, "CInferno size should be 0x13B8");
 	}
 }

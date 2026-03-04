@@ -10,7 +10,9 @@
 #endif
 
 
+#include <SDK/server/CBaseEntity.hpp>
 #include <SDK/client/attributeprovidertypes_t.hpp>
+#include <SDK/server/cached_attribute_float_t.hpp>
 
 
 
@@ -22,16 +24,16 @@ namespace CS2 {
 		class CAttributeManager  {
 		public:
 			S2_PAD(0x8);
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_Providers; // 0x8 | Schema_Atomic | Size: 0x18
-			char  m_Providers[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_Providers; // 0x8 | Schema_Atomic | Size: 0x18
+			// char m_Providers[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			int32_t m_iReapplyProvisionParity; // 0x20 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CHandle<server::CBaseEntity> m_hOuter; // 0x24 | Schema_Atomic | Size: 0x4
-			// char  m_hOuter[0x4]; // 0x24 | Schema_Atomic | Size: 0x4
+			// char m_hOuter[0x4]; // 0x24 | Schema_Atomic | Size: 0x4
 			bool m_bPreventLoopback; // 0x28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			client::attributeprovidertypes_t m_ProviderType; // 0x2c | Schema_DeclaredEnum | Size: 0x4
-			// server::CUtlVector<server::CAttributeManager::cached_attribute_float_t> m_CachedResults; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_CachedResults[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// server::CUtlVector<server::cached_attribute_float_t> m_CachedResults; // 0x30 | Schema_Atomic | Size: 0x18
+			char m_CachedResults[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
 		static_assert(offsetof(CS2::server::CAttributeManager, m_Providers) == 0x8, "m_Providers in CAttributeManager should be at offset 0x8");

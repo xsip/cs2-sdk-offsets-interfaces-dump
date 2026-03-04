@@ -4,11 +4,11 @@
 
 
 class modellib_CModelConfigElement_SetBodygroupOnAttachedModels {
-    char vTable341[0x8];
+    void **__vftable_0;
     CUtlString m_ElementName;
     char m_NestedElements[0x18];
-    char end_pad_342[0x20];
+    char end_pad_344[0x20];
     CUtlString m_GroupName;
     int32_t m_nChoice;
-    char end_pad_346[0x4];
+    char end_pad_349[0x4];
 };

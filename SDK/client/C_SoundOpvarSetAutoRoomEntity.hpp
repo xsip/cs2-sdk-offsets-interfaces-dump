@@ -22,6 +22,6 @@ namespace CS2 {
 		class C_SoundOpvarSetAutoRoomEntity : public CS2::client::C_SoundOpvarSetPointEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_SoundOpvarSetAutoRoomEntity) == 0x618, "C_SoundOpvarSetAutoRoomEntity size should be 0x618");
+		static_assert(sizeof(CS2::client::C_SoundOpvarSetAutoRoomEntity) == 0x628, "C_SoundOpvarSetAutoRoomEntity size should be 0x628");
 	}
 }

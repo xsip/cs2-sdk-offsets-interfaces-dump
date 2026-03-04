@@ -10,7 +10,6 @@
 #endif
 
 
-#include <SDK/server/SimpleConstraintsSoundProfileKeypoints_t.hpp>
 
 
 
@@ -22,13 +21,18 @@ namespace CS2 {
 		class SimpleConstraintSoundProfile  {
 		public:
 			S2_PAD(0x8);
-			server::SimpleConstraintsSoundProfileKeypoints_t eKeypoints; // 0x8 | Schema_DeclaredEnum | Size: 0x4
-			float32 m_keyPoints[2]; // 0xc | Schema_FixedArray | Size: 0x8
-			float32 m_reversalSoundThresholds[3]; // 0x14 | Schema_FixedArray | Size: 0xc
+			float32 m_flKeyPointMinSoundThreshold; // 0x8 | Schema_Builtin | Size: 0x4
+			float32 m_flKeyPointMaxSoundThreshold; // 0xc | Schema_Builtin | Size: 0x4
+			float32 m_reversalSoundThresholdSmall; // 0x10 | Schema_Builtin | Size: 0x4
+			float32 m_reversalSoundThresholdMedium; // 0x14 | Schema_Builtin | Size: 0x4
+			float32 m_reversalSoundThresholdLarge; // 0x18 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, eKeypoints) == 0x8, "eKeypoints in SimpleConstraintSoundProfile should be at offset 0x8");
-		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_keyPoints) == 0xC, "m_keyPoints in SimpleConstraintSoundProfile should be at offset 0xC");
-		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_reversalSoundThresholds) == 0x14, "m_reversalSoundThresholds in SimpleConstraintSoundProfile should be at offset 0x14");
+		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_flKeyPointMinSoundThreshold) == 0x8, "m_flKeyPointMinSoundThreshold in SimpleConstraintSoundProfile should be at offset 0x8");
+		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_flKeyPointMaxSoundThreshold) == 0xC, "m_flKeyPointMaxSoundThreshold in SimpleConstraintSoundProfile should be at offset 0xC");
+		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_reversalSoundThresholdSmall) == 0x10, "m_reversalSoundThresholdSmall in SimpleConstraintSoundProfile should be at offset 0x10");
+		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_reversalSoundThresholdMedium) == 0x14, "m_reversalSoundThresholdMedium in SimpleConstraintSoundProfile should be at offset 0x14");
+		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_reversalSoundThresholdLarge) == 0x18, "m_reversalSoundThresholdLarge in SimpleConstraintSoundProfile should be at offset 0x18");
 		static_assert(sizeof(CS2::server::SimpleConstraintSoundProfile) == 0x20, "SimpleConstraintSoundProfile size should be 0x20");
 	}
 }

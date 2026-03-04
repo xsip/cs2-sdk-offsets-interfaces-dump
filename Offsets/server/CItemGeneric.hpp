@@ -8,40 +8,40 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xCF0
+			// Class size: 0xBF0
 			namespace CItemGeneric /*: public CS2::server::CItem*/ {
-				constexpr std::ptrdiff_t m_bHasTriggerRadius = 0xb84; // bool m_bHasTriggerRadius; |  0xb84 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasPickupRadius = 0xb85; // bool m_bHasPickupRadius; |  0xb85 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flPickupRadiusSqr = 0xb88; // float32 m_flPickupRadiusSqr; |  0xb88 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTriggerRadiusSqr = 0xb8c; // float32 m_flTriggerRadiusSqr; |  0xb8c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastPickupCheck = 0xb90; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_bPlayerCounterListenerAdded = 0xb94; // bool m_bPlayerCounterListenerAdded; |  0xb94 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bPlayerInTriggerRadius = 0xb95; // bool m_bPlayerInTriggerRadius; |  0xb95 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hSpawnParticleEffect = 0xb98; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pAmbientSoundEffect = 0xba0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bAutoStartAmbientSound = 0xba8; // bool m_bAutoStartAmbientSound; |  0xba8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pSpawnScriptFunction = 0xbb0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hPickupParticleEffect = 0xbb8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pPickupSoundEffect = 0xbc0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pPickupScriptFunction = 0xbc8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hTimeoutParticleEffect = 0xbd0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pTimeoutSoundEffect = 0xbd8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pTimeoutScriptFunction = 0xbe0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_pPickupFilterName = 0xbe8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hPickupFilter = 0xbf0; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OnPickup = 0xbf8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTimeout = 0xc20; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTriggerStartTouch = 0xc48; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTriggerTouch = 0xc70; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnTriggerEndTouch = 0xc98; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_pAllowPickupScriptFunction = 0xcc0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flPickupRadius = 0xcc8; // float32 m_flPickupRadius; |  0xcc8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTriggerRadius = 0xccc; // float32 m_flTriggerRadius; |  0xccc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pTriggerSoundEffect = 0xcd0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bGlowWhenInTrigger = 0xcd8; // bool m_bGlowWhenInTrigger; |  0xcd8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_glowColor = 0xcd9; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseable = 0xcdd; // bool m_bUseable; |  0xcdd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hTriggerHelper = 0xce0; // GlobalTypes::CHandle<server::CItemGenericTriggerHelper>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bHasTriggerRadius = 0xad4; // bool m_bHasTriggerRadius; |  0xad4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasPickupRadius = 0xad5; // bool m_bHasPickupRadius; |  0xad5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flPickupRadiusSqr = 0xad8; // float32 m_flPickupRadiusSqr; |  0xad8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTriggerRadiusSqr = 0xadc; // float32 m_flTriggerRadiusSqr; |  0xadc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastPickupCheck = 0xae0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_bPlayerCounterListenerAdded = 0xae4; // bool m_bPlayerCounterListenerAdded; |  0xae4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bPlayerInTriggerRadius = 0xae5; // bool m_bPlayerInTriggerRadius; |  0xae5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hSpawnParticleEffect = 0xae8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pAmbientSoundEffect = 0xaf0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bAutoStartAmbientSound = 0xaf8; // bool m_bAutoStartAmbientSound; |  0xaf8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_pSpawnScriptFunction = 0xb00; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hPickupParticleEffect = 0xb08; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pPickupSoundEffect = 0xb10; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pPickupScriptFunction = 0xb18; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hTimeoutParticleEffect = 0xb20; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pTimeoutSoundEffect = 0xb28; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pTimeoutScriptFunction = 0xb30; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_pPickupFilterName = 0xb38; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hPickupFilter = 0xb40; // GlobalTypes::CHandle<server::CBaseFilter>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OnPickup = 0xb48; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTimeout = 0xb60; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTriggerStartTouch = 0xb78; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTriggerTouch = 0xb90; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnTriggerEndTouch = 0xba8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_pAllowPickupScriptFunction = 0xbc0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flPickupRadius = 0xbc8; // float32 m_flPickupRadius; |  0xbc8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTriggerRadius = 0xbcc; // float32 m_flTriggerRadius; |  0xbcc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pTriggerSoundEffect = 0xbd0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bGlowWhenInTrigger = 0xbd8; // bool m_bGlowWhenInTrigger; |  0xbd8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_glowColor = 0xbd9; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseable = 0xbdd; // bool m_bUseable; |  0xbdd | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hTriggerHelper = 0xbe0; // GlobalTypes::CHandle<server::CItemGenericTriggerHelper>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

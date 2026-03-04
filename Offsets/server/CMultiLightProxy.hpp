@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x530
+			// Class size: 0x4E8
 			namespace CMultiLightProxy /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_iszLightNameFilter = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszLightClassFilter = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flLightRadiusFilter = 0x500; // float32 m_flLightRadiusFilter; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flBrightnessDelta = 0x504; // float32 m_flBrightnessDelta; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bPerformScreenFade = 0x508; // bool m_bPerformScreenFade; |  0x508 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flTargetBrightnessMultiplier = 0x50c; // float32 m_flTargetBrightnessMultiplier; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCurrentBrightnessMultiplier = 0x510; // float32 m_flCurrentBrightnessMultiplier; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecLights = 0x518; // server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iszLightNameFilter = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszLightClassFilter = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flLightRadiusFilter = 0x4b8; // float32 m_flLightRadiusFilter; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flBrightnessDelta = 0x4bc; // float32 m_flBrightnessDelta; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bPerformScreenFade = 0x4c0; // bool m_bPerformScreenFade; |  0x4c0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flTargetBrightnessMultiplier = 0x4c4; // float32 m_flTargetBrightnessMultiplier; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCurrentBrightnessMultiplier = 0x4c8; // float32 m_flCurrentBrightnessMultiplier; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecLights = 0x4d0; // server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

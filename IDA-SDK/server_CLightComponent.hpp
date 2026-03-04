@@ -6,13 +6,18 @@
 #include "entity2_GameTime_t.hpp"
 
 class server_CLightComponent {
-    char pad_770[0x8];
-    char vTable3740[0x28];
+    char pad_1557[0x8];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_3741[0x15];
+    char pad_3875[0x15];
     Color m_Color;
     Color m_SecondaryColor;
-    char pad_3742[0x3];
+    char pad_3876[0x3];
     float32 m_flBrightness;
     float32 m_flBrightnessScale;
     float32 m_flBrightnessMult;
@@ -29,10 +34,10 @@ class server_CLightComponent {
     int32_t m_nShadowWidth;
     int32_t m_nShadowHeight;
     bool m_bRenderDiffuse;
-    char pad_3743[0x3];
+    char pad_3877[0x3];
     int32_t m_nRenderSpecular;
     bool m_bRenderTransmissive;
-    char pad_3744[0x3];
+    char pad_3878[0x3];
     float32 m_flOrthoLightWidth;
     float32 m_flOrthoLightHeight;
     int32_t m_nStyle;
@@ -49,16 +54,18 @@ class server_CLightComponent {
     int32_t m_nShadowCascadeResolution2;
     int32_t m_nShadowCascadeResolution3;
     bool m_bUsesBakedShadowing;
-    char pad_3745[0x3];
+    char pad_3879[0x3];
     int32_t m_nShadowPriority;
     int32_t m_nBakedShadowIndex;
     int32_t m_nLightPathUniqueId;
     int32_t m_nLightMapUniqueId;
     bool m_bRenderToCubemaps;
     bool m_bAllowSSTGeneration;
-    char pad_3746[0x2];
+    char pad_3880[0x2];
     int32_t m_nDirectLight;
     int32_t m_nIndirectLight;
+    bool m_bDynamicBounce;
+    char pad_3881[0x3];
     float32 m_flFadeMinDist;
     float32 m_flFadeMaxDist;
     float32 m_flShadowFadeMinDist;
@@ -66,7 +73,7 @@ class server_CLightComponent {
     bool m_bEnabled;
     bool m_bFlicker;
     bool m_bPrecomputedFieldsValid;
-    char pad_3747[0x1];
+    char pad_3882[0x1];
     Vector m_vPrecomputedBoundsMins;
     Vector m_vPrecomputedBoundsMaxs;
     Vector m_vPrecomputedOBBOrigin;
@@ -81,11 +88,11 @@ class server_CLightComponent {
     Color m_SkyAmbientBounce;
     bool m_bUseSecondaryColor;
     bool m_bMixedShadows;
-    char pad_3748[0x2];
+    char pad_3883[0x2];
     entity2_GameTime_t m_flLightStyleStartTime;
     float32 m_flCapsuleLength;
     float32 m_flMinRoughness;
-    char pad_3749[0x10];
+    char pad_3884[0xc];
     bool m_bPvsModifyEntity;
-    char pad_3750[0x7];
+    char pad_3885[0x7];
 };

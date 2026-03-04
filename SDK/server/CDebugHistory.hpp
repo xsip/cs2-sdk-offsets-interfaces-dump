@@ -22,10 +22,10 @@ namespace CS2 {
 		class CDebugHistory : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x3e8040);
-			int32_t m_nNpcEvents; // 0x3e8530 | Schema_Builtin | Size: 0x4
+			int32_t m_nNpcEvents; // 0x3e84e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xfa4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CDebugHistory, m_nNpcEvents) == 0x3E8530, "m_nNpcEvents in CDebugHistory should be at offset 0x3E8530");
-		static_assert(sizeof(CS2::server::CDebugHistory) == 0x3E94D8, "CDebugHistory size should be 0x3E94D8");
+		static_assert(offsetof(CS2::server::CDebugHistory, m_nNpcEvents) == 0x3E84E8, "m_nNpcEvents in CDebugHistory should be at offset 0x3E84E8");
+		static_assert(sizeof(CS2::server::CDebugHistory) == 0x3E9490, "CDebugHistory size should be 0x3E9490");
 	}
 }

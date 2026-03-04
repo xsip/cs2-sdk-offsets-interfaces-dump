@@ -8,17 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x598
+			// Class size: 0x550
 			namespace CSoundOpvarSetPointBase /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hSource = 0x4f4; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_vLastPosition = 0x568; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_iszStackName = 0x578; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOperatorName = 0x580; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOpvarName = 0x588; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iOpvarIndex = 0x590; // int32_t m_iOpvarIndex; |  0x590 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseAutoCompare = 0x594; // bool m_bUseAutoCompare; |  0x594 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDisabled = 0x4a8; // bool m_bDisabled; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hSource = 0x4ac; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_vLastPosition = 0x520; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flRefreshTime = 0x52c; // float32 m_flRefreshTime; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszStackName = 0x530; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOperatorName = 0x538; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOpvarName = 0x540; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iOpvarIndex = 0x548; // int32_t m_iOpvarIndex; |  0x548 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseAutoCompare = 0x54c; // bool m_bUseAutoCompare; |  0x54c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFastRefresh = 0x54d; // bool m_bFastRefresh; |  0x54d | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

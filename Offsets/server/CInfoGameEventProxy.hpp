@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x500
+			// Class size: 0x4B8
 			namespace CInfoGameEventProxy /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_iszEventName = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flRange = 0x4f8; // float32 m_flRange; |  0x4f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszEventName = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flRange = 0x4b0; // float32 m_flRange; |  0x4b0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

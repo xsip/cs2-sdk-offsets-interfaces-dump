@@ -8,22 +8,22 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5B8
+			// Class size: 0x558
 			namespace CSoundEventEntity /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_bStartOnSpawn = 0x4f0; // bool m_bStartOnSpawn; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bToLocalPlayer = 0x4f1; // bool m_bToLocalPlayer; |  0x4f1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bStopOnNew = 0x4f2; // bool m_bStopOnNew; |  0x4f2 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSaveRestore = 0x4f3; // bool m_bSaveRestore; |  0x4f3 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSavedIsPlaying = 0x4f4; // bool m_bSavedIsPlaying; |  0x4f4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flSavedElapsedTime = 0x4f8; // float32 m_flSavedElapsedTime; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszAttachmentName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_onGUIDChanged = 0x510; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_onSoundFinished = 0x538; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_flClientCullRadius = 0x560; // float32 m_flClientCullRadius; |  0x560 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSoundName = 0x590; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hSource = 0x5ac; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nEntityIndexSelection = 0x5b0; // int32_t m_nEntityIndexSelection; |  0x5b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bStartOnSpawn = 0x4a8; // bool m_bStartOnSpawn; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bToLocalPlayer = 0x4a9; // bool m_bToLocalPlayer; |  0x4a9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bStopOnNew = 0x4aa; // bool m_bStopOnNew; |  0x4aa | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSaveRestore = 0x4ab; // bool m_bSaveRestore; |  0x4ab | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSavedIsPlaying = 0x4ac; // bool m_bSavedIsPlaying; |  0x4ac | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flSavedElapsedTime = 0x4b0; // float32 m_flSavedElapsedTime; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x4b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszAttachmentName = 0x4c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_onGUIDChanged = 0x4c8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_onSoundFinished = 0x4e8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_flClientCullRadius = 0x500; // float32 m_flClientCullRadius; |  0x500 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSoundName = 0x530; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSource = 0x54c; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nEntityIndexSelection = 0x550; // int32_t m_nEntityIndexSelection; |  0x550 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

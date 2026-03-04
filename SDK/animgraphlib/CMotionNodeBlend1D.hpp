@@ -11,14 +11,10 @@
 
 
 #include <SDK/animgraphlib/CMotionNode.hpp>
+#include <SDK/animgraphlib/MotionBlendItem.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class MotionBlendItem;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,7 +23,7 @@ namespace CS2 {
 		class CMotionNodeBlend1D : public CS2::animgraphlib::CMotionNode {
 		public:
 			GlobalTypes::CUtlVector<animgraphlib::MotionBlendItem> m_blendItems; // 0x28 | Schema_Atomic | Size: 0x18
-			// char  m_blendItems[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
+			// char m_blendItems[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			int32_t m_nParamIndex; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -22,6 +22,6 @@ namespace CS2 {
 		class CLogicProximity : public CS2::server::CPointEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CLogicProximity) == 0x4F0, "CLogicProximity size should be 0x4F0");
+		static_assert(sizeof(CS2::server::CLogicProximity) == 0x4A8, "CLogicProximity size should be 0x4A8");
 	}
 }

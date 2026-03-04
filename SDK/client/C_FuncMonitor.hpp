@@ -26,26 +26,26 @@ namespace CS2 {
 	namespace client {
 		class C_FuncMonitor : public CS2::client::C_FuncBrush {
 		public:
-			GlobalTypes::CUtlString m_targetCamera; // 0xeb0 | Schema_Atomic | Size: 0x8
-			int32_t m_nResolutionEnum; // 0xeb8 | Schema_Builtin | Size: 0x4
-			bool m_bRenderShadows; // 0xebc | Schema_Builtin | Size: 0x1
-			bool m_bUseUniqueColorTarget; // 0xebd | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_targetCamera; // 0xe88 | Schema_Atomic | Size: 0x8
+			int32_t m_nResolutionEnum; // 0xe90 | Schema_Builtin | Size: 0x4
+			bool m_bRenderShadows; // 0xe94 | Schema_Builtin | Size: 0x1
+			bool m_bUseUniqueColorTarget; // 0xe95 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CUtlString m_brushModelName; // 0xec0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hTargetCamera; // 0xec8 | Schema_Atomic | Size: 0x4
-			// char  m_hTargetCamera[0x4]; // 0xec8 | Schema_Atomic | Size: 0x4
-			bool m_bEnabled; // 0xecc | Schema_Builtin | Size: 0x1
-			bool m_bDraw3DSkybox; // 0xecd | Schema_Builtin | Size: 0x1
-			S2_PAD(0x4a2); // End padding
+			GlobalTypes::CUtlString m_brushModelName; // 0xe98 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hTargetCamera; // 0xea0 | Schema_Atomic | Size: 0x4
+			// char m_hTargetCamera[0x4]; // 0xea0 | Schema_Atomic | Size: 0x4
+			bool m_bEnabled; // 0xea4 | Schema_Builtin | Size: 0x1
+			bool m_bDraw3DSkybox; // 0xea5 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x45a); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_targetCamera) == 0xEB0, "m_targetCamera in C_FuncMonitor should be at offset 0xEB0");
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_nResolutionEnum) == 0xEB8, "m_nResolutionEnum in C_FuncMonitor should be at offset 0xEB8");
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bRenderShadows) == 0xEBC, "m_bRenderShadows in C_FuncMonitor should be at offset 0xEBC");
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bUseUniqueColorTarget) == 0xEBD, "m_bUseUniqueColorTarget in C_FuncMonitor should be at offset 0xEBD");
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_brushModelName) == 0xEC0, "m_brushModelName in C_FuncMonitor should be at offset 0xEC0");
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_hTargetCamera) == 0xEC8, "m_hTargetCamera in C_FuncMonitor should be at offset 0xEC8");
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bEnabled) == 0xECC, "m_bEnabled in C_FuncMonitor should be at offset 0xECC");
-		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bDraw3DSkybox) == 0xECD, "m_bDraw3DSkybox in C_FuncMonitor should be at offset 0xECD");
-		static_assert(sizeof(CS2::client::C_FuncMonitor) == 0x1370, "C_FuncMonitor size should be 0x1370");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_targetCamera) == 0xE88, "m_targetCamera in C_FuncMonitor should be at offset 0xE88");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_nResolutionEnum) == 0xE90, "m_nResolutionEnum in C_FuncMonitor should be at offset 0xE90");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bRenderShadows) == 0xE94, "m_bRenderShadows in C_FuncMonitor should be at offset 0xE94");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bUseUniqueColorTarget) == 0xE95, "m_bUseUniqueColorTarget in C_FuncMonitor should be at offset 0xE95");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_brushModelName) == 0xE98, "m_brushModelName in C_FuncMonitor should be at offset 0xE98");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_hTargetCamera) == 0xEA0, "m_hTargetCamera in C_FuncMonitor should be at offset 0xEA0");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bEnabled) == 0xEA4, "m_bEnabled in C_FuncMonitor should be at offset 0xEA4");
+		static_assert(offsetof(CS2::client::C_FuncMonitor, m_bDraw3DSkybox) == 0xEA5, "m_bDraw3DSkybox in C_FuncMonitor should be at offset 0xEA5");
+		static_assert(sizeof(CS2::client::C_FuncMonitor) == 0x1300, "C_FuncMonitor size should be 0x1300");
 	}
 }

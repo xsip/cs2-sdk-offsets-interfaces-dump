@@ -10,39 +10,50 @@ class server_CPulseGraphInstance_ServerEntity;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
+#include "entity2_GameTick_t.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 #include "client_CNetworkVelocityVector.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
 
 class server_CSceneEntityAlias_logic_choreographed_scene {
-    char vTable723[0x8];
+    void **__vftable_0;
     CUtlSymbolLarge m_iszPrivateVScripts;
     entity2_CEntityIdentity* m_pEntity;
-    char pad_724[0x18];
+    char pad_1508[0x18];
     entity2_CScriptComponent* m_CScriptComponent;
     server_CBodyComponent* m_CBodyComponent;
     client_CNetworkTransmitComponent m_NetworkTransmitComponent;
-    char pad_2793[0x40];
+    char pad_2914[0x40];
     char m_aThinkFunctions[0x18];
     int32_t m_iCurrentThinkContext;
     entity2_GameTick_t m_nLastThinkTick;
     bool m_bDisabledContextThinks;
-    char pad_2794[0xf];
+    char pad_2915[0xf];
     char m_isSteadyState[0x8];
     float32 m_lastNetworkChange;
-    char pad_2795[0xc];
+    char pad_2916[0xc];
     char m_ResponseContexts[0x18];
     CUtlSymbolLarge m_iszResponseContext;
-    char pad_2796[0x20];
+    char pad_2917[0x20];
     int32_t m_iHealth;
     int32_t m_iMaxHealth;
     uint8_t m_lifeState;
-    char pad_2797[0x3];
+    char pad_2918[0x3];
     float32 m_flDamageAccumulator;
     bool m_bTakesDamage;
-    char pad_2798[0x7];
+    char pad_2919[0x7];
     client_TakeDamageFlags_t m_nTakeDamageFlags;
     client_EntityPlatformTypes_t m_nPlatformType;
-    char pad_2799[0x1];
+    char pad_2920[0x1];
     client_MoveCollide_t m_MoveCollide;
     client_MoveType_t m_MoveType;
     client_MoveType_t m_nActualMoveType;
@@ -51,20 +62,20 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     bool m_bRestoreInHierarchy;
     CUtlSymbolLarge m_target;
     char m_hDamageFilter[0x4];
-    char pad_2800[0x4];
+    char pad_2921[0x4];
     CUtlSymbolLarge m_iszDamageFilterName;
     float32 m_flMoveDoneTime;
     CUtlStringToken m_nSubclassID;
-    char pad_2801[0x8];
+    char pad_2922[0x8];
     float32 m_flAnimTime;
     float32 m_flSimulationTime;
     entity2_GameTime_t m_flCreateTime;
     bool m_bClientSideRagdoll;
     uint8_t m_ubInterpolationFrame;
-    char pad_2802[0x2];
+    char pad_2923[0x2];
     Vector m_vPrevVPhysicsUpdatePos;
     uint8_t m_iTeamNum;
-    char pad_2803[0x3];
+    char pad_2924[0x3];
     CUtlSymbolLarge m_iGlobalname;
     int32_t m_iSentToClients;
     float32 m_flSpeed;
@@ -72,12 +83,12 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     uint32_t m_spawnflags;
     entity2_GameTick_t m_nNextThinkTick;
     int32_t m_nSimulationTick;
-    char pad_2804[0x4];
+    char pad_2925[0x4];
     entity2_CEntityIOOutput m_OnKilled;
     uint32_t m_fFlags;
     Vector m_vecAbsVelocity;
     client_CNetworkVelocityVector m_vecVelocity;
-    char pad_2805[0x8];
+    char pad_2926[0x8];
     Vector m_vecBaseVelocity;
     int32_t m_nPushEnumCount;
     server_CCollisionProperty* m_pCollision;
@@ -93,12 +104,12 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     float32 m_flWaterLevel;
     bool m_bGravityDisabled;
     bool m_bAnimatedEveryTick;
-    char pad_2806[0x2];
+    char pad_2927[0x2];
     float32 m_flActualGravityScale;
     bool m_bGravityActuallyDisabled;
     bool m_bDisableLowViolence;
     uint8_t m_nWaterType;
-    char pad_2807[0x1];
+    char pad_2928[0x1];
     int32_t m_iEFlags;
     entity2_CEntityIOOutput m_OnUser1;
     entity2_CEntityIOOutput m_OnUser2;
@@ -109,16 +120,15 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     QAngle m_vecAngVelocity;
     bool m_bNetworkQuantizeOriginAndAngles;
     bool m_bLagCompensate;
-    char pad_2808[0x2];
+    char pad_2929[0x2];
     char m_pBlocker[0x4];
     float32 m_flLocalTime;
     float32 m_flVPhysicsUpdateLocalTime;
     client_BloodType m_nBloodType;
     server_CPulseGraphInstance_ServerEntity* m_pPulseGraphInstance;
-    char pad_3632[0x4f0];
-    char vTable3703[0x8];
+    char pad_3762[0x4a8];
+    void **__vftable_1;
     CUtlSymbolLarge m_iszSceneFile;
-    CUtlSymbolLarge m_iszResumeSceneFile;
     CUtlSymbolLarge m_iszTarget1;
     CUtlSymbolLarge m_iszTarget2;
     CUtlSymbolLarge m_iszTarget3;
@@ -144,16 +154,14 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     float32 m_flCurrentTime;
     float32 m_flFrameTime;
     bool m_bCancelAtNextInterrupt;
-    char pad_3704[0x3];
+    char pad_3835[0x3];
     float32 m_fPitch;
     bool m_bAutomated;
-    char pad_3705[0x3];
+    char pad_3836[0x3];
     int32_t m_nAutomatedAction;
     float32 m_flAutomationDelay;
     float32 m_flAutomationTime;
     int32_t m_nSpeechPriority;
-    char m_hWaitingForThisResumeScene[0x4];
-    bool m_bWaitingForResumeScene;
     bool m_bPausedViaInput;
     bool m_bPauseAtNextInterrupt;
     bool m_bWaitingForActor;
@@ -161,18 +169,18 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     bool m_bInterruptedActorsScenes;
     bool m_bBreakOnNonIdle;
     bool m_bSceneFinished;
+    char pad_3837[0x5];
     char m_hActorList[0x18];
     char m_hRemoveActorList[0x18];
-    char pad_3706[0x30];
-    int32_t m_nSceneFlushCounter;
+    char pad_3838[0x30];
     uint16_t m_nSceneStringIndex;
-    char pad_3707[0x2];
+    char pad_3839[0x6];
     entity2_CEntityIOOutput m_OnStart;
     entity2_CEntityIOOutput m_OnCompletion;
     entity2_CEntityIOOutput m_OnCanceled;
     entity2_CEntityIOOutput m_OnPaused;
     entity2_CEntityIOOutput m_OnResumed;
-    entity2_CEntityIOOutput m_OnTrigger[16];
+    char pad_3840[0x90];
     char m_hInterruptScene[0x4];
     int32_t m_nInterruptCount;
     bool m_bSceneMissing;
@@ -180,7 +188,7 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     bool m_bCompletedEarly;
     bool m_bInterruptSceneFinished;
     bool m_bRestoring;
-    char pad_3708[0x3];
+    char pad_3841[0x3];
     char m_hNotifySceneCompletion[0x18];
     char m_hListManagers[0x18];
     CUtlSymbolLarge m_iszSoundName;
@@ -189,5 +197,5 @@ class server_CSceneEntityAlias_logic_choreographed_scene {
     char m_hActivator[0x4];
     int32_t m_BusyActor;
     server_SceneOnPlayerDeath_t m_iPlayerDeathBehavior;
-    char end_pad_3709[0x8];
+    char end_pad_3842[0x8];
 };

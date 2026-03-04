@@ -7,7 +7,9 @@
 #include "animationsystem_HSequence.hpp"
 
 class animgraphlib_CSingleFrameUpdateNode {
-    char vTable16[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     animgraphlib_CAnimNodePath m_nodePath;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
     char pad_17[0x4];
@@ -16,5 +18,5 @@ class animgraphlib_CSingleFrameUpdateNode {
     animgraphlib_CPoseHandle m_hPoseCacheHandle;
     animationsystem_HSequence m_hSequence;
     float32 m_flCycle;
-    char end_pad_215[0x4];
+    char end_pad_221[0x4];
 };

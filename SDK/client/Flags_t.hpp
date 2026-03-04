@@ -25,7 +25,6 @@ namespace CS2 {
 			Flags_t_FL_OBJECT = 0x2000000,
 			Flags_t_FL_ONFIRE = 0x8000000,
 			Flags_t_FL_ONGROUND = 0x1,
-			Flags_t_FL_STATICPROP = 0x40000,
 			Flags_t_FL_SUPPRESS_SAVE = 0x800,
 			Flags_t_FL_TRANSRAGDOLL = 0x20000000,
 			Flags_t_FL_UNBLOCKABLE_BY_PLAYER = 0x40000000,

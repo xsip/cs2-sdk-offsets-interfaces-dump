@@ -14,6 +14,7 @@ class modellib_ModelMeshBufferData_t {
     bool m_bCreateBufferUAV;
     bool m_bCreateRawBuffer;
     bool m_bCreatePooledBuffer;
-    char pad_381[0x5];
+    uint8_t m_nBufferUsage;
+    char pad_388[0x4];
     char m_inputLayoutFields[0x18];
 };

@@ -9,5 +9,5 @@ class animationsystem_CSeqPoseParamDesc {
     float32 m_flEnd;
     float32 m_flLoop;
     bool m_bLooping;
-    char end_pad_442[0x3];
+    char end_pad_448[0x3];
 };

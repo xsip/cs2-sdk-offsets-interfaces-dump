@@ -8,7 +8,7 @@ class modellib_FrameStamp_t {
     float32 m_flEntitySimTime;
     bool m_bTeleportTick;
     bool m_bPredicted;
-    char pad_394[0x2];
+    char pad_401[0x2];
     float32 m_flCurTime;
     float32 m_flRealTime;
     int32_t m_nFrameCount;

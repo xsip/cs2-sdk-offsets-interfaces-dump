@@ -21,7 +21,10 @@ namespace CS2 {
 	namespace client {
 		class EventServerPostAdvanceTick_t : public CS2::client::EventPostAdvanceTick_t {
 		public:
+			bool m_bLastTickBeforeClientUpdate; // 0x40 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x7); // End padding
 		};
-		static_assert(sizeof(CS2::client::EventServerPostAdvanceTick_t) == 0x40, "EventServerPostAdvanceTick_t size should be 0x40");
+		static_assert(offsetof(CS2::client::EventServerPostAdvanceTick_t, m_bLastTickBeforeClientUpdate) == 0x40, "m_bLastTickBeforeClientUpdate in EventServerPostAdvanceTick_t should be at offset 0x40");
+		static_assert(sizeof(CS2::client::EventServerPostAdvanceTick_t) == 0x48, "EventServerPostAdvanceTick_t size should be 0x48");
 	}
 }

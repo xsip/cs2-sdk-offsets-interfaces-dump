@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5D8
+			// Class size: 0x590
 			namespace CPathParticleRope /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_bStartActive = 0x4f8; // bool m_bStartActive; |  0x4f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMaxSimulationTime = 0x4fc; // float32 m_flMaxSimulationTime; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszEffectName = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PathNodes_Name = 0x508; // GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flParticleSpacing = 0x520; // float32 m_flParticleSpacing; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSlack = 0x524; // float32 m_flSlack; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadius = 0x528; // float32 m_flRadius; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_ColorTint = 0x52c; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nEffectState = 0x530; // int32_t m_nEffectState; |  0x530 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iEffectIndex = 0x538; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_PathNodes_Position = 0x540; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_TangentIn = 0x558; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_TangentOut = 0x570; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_Color = 0x588; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_PinEnabled = 0x5a0; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_PathNodes_RadiusScale = 0x5b8; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bStartActive = 0x4b0; // bool m_bStartActive; |  0x4b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMaxSimulationTime = 0x4b4; // float32 m_flMaxSimulationTime; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszEffectName = 0x4b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PathNodes_Name = 0x4c0; // GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flParticleSpacing = 0x4d8; // float32 m_flParticleSpacing; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSlack = 0x4dc; // float32 m_flSlack; |  0x4dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadius = 0x4e0; // float32 m_flRadius; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_ColorTint = 0x4e4; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nEffectState = 0x4e8; // int32_t m_nEffectState; |  0x4e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iEffectIndex = 0x4f0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_PathNodes_Position = 0x4f8; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_TangentIn = 0x510; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_TangentOut = 0x528; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_Color = 0x540; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::Vector>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_PinEnabled = 0x558; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_PathNodes_RadiusScale = 0x570; // GlobalTypes::CNetworkUtlVectorBase  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

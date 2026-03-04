@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x858
+			// Class size: 0x7B0
 			namespace CBaseToggle /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_toggle_state = 0x7d8; // server::TOGGLE_STATE  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_flMoveDistance = 0x7dc; // float32 m_flMoveDistance; |  0x7dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flWait = 0x7e0; // float32 m_flWait; |  0x7e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLip = 0x7e4; // float32 m_flLip; |  0x7e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bAlwaysFireBlockedOutputs = 0x7e8; // bool m_bAlwaysFireBlockedOutputs; |  0x7e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecPosition1 = 0x7ec; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecPosition2 = 0x7f8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecMoveAng = 0x804; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecAngle1 = 0x810; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecAngle2 = 0x81c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flHeight = 0x828; // float32 m_flHeight; |  0x828 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hActivator = 0x82c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vecFinalDest = 0x830; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecFinalAngle = 0x83c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_movementType = 0x848; // int32_t m_movementType; |  0x848 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_sMaster = 0x850; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_toggle_state = 0x730; // server::TOGGLE_STATE  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_flMoveDistance = 0x734; // float32 m_flMoveDistance; |  0x734 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flWait = 0x738; // float32 m_flWait; |  0x738 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLip = 0x73c; // float32 m_flLip; |  0x73c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAlwaysFireBlockedOutputs = 0x740; // bool m_bAlwaysFireBlockedOutputs; |  0x740 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecPosition1 = 0x744; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecPosition2 = 0x750; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecMoveAng = 0x75c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecAngle1 = 0x768; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecAngle2 = 0x774; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flHeight = 0x780; // float32 m_flHeight; |  0x780 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hActivator = 0x784; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vecFinalDest = 0x788; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecFinalAngle = 0x794; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_movementType = 0x7a0; // int32_t m_movementType; |  0x7a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_sMaster = 0x7a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

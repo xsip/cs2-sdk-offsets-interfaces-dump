@@ -8,32 +8,32 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xF70
+			// Class size: 0xF48
 			namespace C_Beam /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_flFrameRate = 0xeb0; // float32 m_flFrameRate; |  0xeb0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHDRColorScale = 0xeb4; // float32 m_flHDRColorScale; |  0xeb4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFireTime = 0xeb8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flDamage = 0xebc; // float32 m_flDamage; |  0xebc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nNumBeamEnts = 0xec0; // uint8_t m_nNumBeamEnts; |  0xec0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_queryHandleHalo = 0xec4; // int32_t m_queryHandleHalo; |  0xec4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hBaseMaterial = 0xee8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nHaloIndex = 0xef0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nBeamType = 0xef8; // client::BeamType_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_nBeamFlags = 0xefc; // uint32_t m_nBeamFlags; |  0xefc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hAttachEntity = 0xf00; // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x28
-				constexpr std::ptrdiff_t m_nAttachIndex = 0xf28; // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0x64
-				constexpr std::ptrdiff_t m_fWidth = 0xf34; // float32 m_fWidth; |  0xf34 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fEndWidth = 0xf38; // float32 m_fEndWidth; |  0xf38 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fFadeLength = 0xf3c; // float32 m_fFadeLength; |  0xf3c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fHaloScale = 0xf40; // float32 m_fHaloScale; |  0xf40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fAmplitude = 0xf44; // float32 m_fAmplitude; |  0xf44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fStartFrame = 0xf48; // float32 m_fStartFrame; |  0xf48 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fSpeed = 0xf4c; // float32 m_fSpeed; |  0xf4c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFrame = 0xf50; // float32 m_flFrame; |  0xf50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nClipStyle = 0xf54; // client::BeamClipStyle_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bTurnedOff = 0xf58; // bool m_bTurnedOff; |  0xf58 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecEndPos = 0xf5c; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hEndEntity = 0xf68; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flFrameRate = 0xe88; // float32 m_flFrameRate; |  0xe88 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHDRColorScale = 0xe8c; // float32 m_flHDRColorScale; |  0xe8c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFireTime = 0xe90; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDamage = 0xe94; // float32 m_flDamage; |  0xe94 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nNumBeamEnts = 0xe98; // uint8_t m_nNumBeamEnts; |  0xe98 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_queryHandleHalo = 0xe9c; // int32_t m_queryHandleHalo; |  0xe9c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hBaseMaterial = 0xec0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nHaloIndex = 0xec8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nBeamType = 0xed0; // client::BeamType_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_nBeamFlags = 0xed4; // uint32_t m_nBeamFlags; |  0xed4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hAttachEntity = 0xed8; // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x28
+				constexpr std::ptrdiff_t m_nAttachIndex = 0xf00; // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0x64
+				constexpr std::ptrdiff_t m_fWidth = 0xf0c; // float32 m_fWidth; |  0xf0c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fEndWidth = 0xf10; // float32 m_fEndWidth; |  0xf10 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fFadeLength = 0xf14; // float32 m_fFadeLength; |  0xf14 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fHaloScale = 0xf18; // float32 m_fHaloScale; |  0xf18 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fAmplitude = 0xf1c; // float32 m_fAmplitude; |  0xf1c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fStartFrame = 0xf20; // float32 m_fStartFrame; |  0xf20 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fSpeed = 0xf24; // float32 m_fSpeed; |  0xf24 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFrame = 0xf28; // float32 m_flFrame; |  0xf28 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nClipStyle = 0xf2c; // client::BeamClipStyle_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bTurnedOff = 0xf30; // bool m_bTurnedOff; |  0xf30 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecEndPos = 0xf34; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hEndEntity = 0xf40; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

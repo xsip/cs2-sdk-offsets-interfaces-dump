@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x5F8
+			// Class size: 0x608
 			namespace CInfoParticleTarget /*: public CS2::client::C_PointEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

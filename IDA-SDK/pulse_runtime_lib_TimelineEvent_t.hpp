@@ -7,6 +7,6 @@ class pulse_runtime_lib_CPulse_OutflowConnection;
 
 class pulse_runtime_lib_TimelineEvent_t {
     float32 m_flTimeFromPrevious;
-    char pad_516[0x4];
+    char pad_527[0x4];
     pulse_runtime_lib_CPulse_OutflowConnection m_EventOutflow;
 };

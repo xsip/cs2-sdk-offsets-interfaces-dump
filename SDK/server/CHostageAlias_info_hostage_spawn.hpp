@@ -22,6 +22,6 @@ namespace CS2 {
 		class CHostageAlias_info_hostage_spawn : public CS2::server::CHostage {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CHostageAlias_info_hostage_spawn) == 0x2EB0, "CHostageAlias_info_hostage_spawn size should be 0x2EB0");
+		static_assert(sizeof(CS2::server::CHostageAlias_info_hostage_spawn) == 0x2E00, "CHostageAlias_info_hostage_spawn size should be 0x2E00");
 	}
 }

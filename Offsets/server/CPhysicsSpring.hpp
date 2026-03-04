@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x538
+			// Class size: 0x4F0
 			namespace CPhysicsSpring /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_flFrequency = 0x4f8; // float32 m_flFrequency; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDampingRatio = 0x4fc; // float32 m_flDampingRatio; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flRestLength = 0x500; // float32 m_flRestLength; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nameAttachStart = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAttachEnd = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_start = 0x518; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_end = 0x524; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_teleportTick = 0x530; // uint32_t m_teleportTick; |  0x530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFrequency = 0x4b0; // float32 m_flFrequency; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDampingRatio = 0x4b4; // float32 m_flDampingRatio; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flRestLength = 0x4b8; // float32 m_flRestLength; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nameAttachStart = 0x4c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttachEnd = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_start = 0x4d0; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_end = 0x4dc; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_teleportTick = 0x4e8; // uint32_t m_teleportTick; |  0x4e8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

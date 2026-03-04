@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5B8
+			// Class size: 0x558
 			namespace CSoundEventEntityAlias_snd_event_point /*: public CS2::server::CSoundEventEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

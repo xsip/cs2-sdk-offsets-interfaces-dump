@@ -21,11 +21,11 @@ namespace CS2 {
 	namespace client {
 		class C_KeychainModule : public CS2::client::C_CS2WeaponModuleBase {
 		public:
-			uint32_t m_nKeychainDefID; // 0x1160 | Schema_Builtin | Size: 0x4
-			uint32_t m_nKeychainSeed; // 0x1164 | Schema_Builtin | Size: 0x4
+			uint32_t m_nKeychainDefID; // 0x1170 | Schema_Builtin | Size: 0x4
+			uint32_t m_nKeychainSeed; // 0x1174 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_KeychainModule, m_nKeychainDefID) == 0x1160, "m_nKeychainDefID in C_KeychainModule should be at offset 0x1160");
-		static_assert(offsetof(CS2::client::C_KeychainModule, m_nKeychainSeed) == 0x1164, "m_nKeychainSeed in C_KeychainModule should be at offset 0x1164");
-		static_assert(sizeof(CS2::client::C_KeychainModule) == 0x1168, "C_KeychainModule size should be 0x1168");
+		static_assert(offsetof(CS2::client::C_KeychainModule, m_nKeychainDefID) == 0x1170, "m_nKeychainDefID in C_KeychainModule should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_KeychainModule, m_nKeychainSeed) == 0x1174, "m_nKeychainSeed in C_KeychainModule should be at offset 0x1174");
+		static_assert(sizeof(CS2::client::C_KeychainModule) == 0x1178, "C_KeychainModule size should be 0x1178");
 	}
 }

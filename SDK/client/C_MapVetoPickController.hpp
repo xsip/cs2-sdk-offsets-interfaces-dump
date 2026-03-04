@@ -22,42 +22,42 @@ namespace CS2 {
 		class C_MapVetoPickController : public CS2::client::C_BaseEntity {
 		public:
 			S2_PAD(0x10);
-			int32_t m_nDraftType; // 0x608 | Schema_Builtin | Size: 0x4
-			int32_t m_nTeamWinningCoinToss; // 0x60c | Schema_Builtin | Size: 0x4
-			int32_t m_nTeamWithFirstChoice[64]; // 0x610 | Schema_FixedArray | Size: 0x100
-			int32_t m_nVoteMapIdsList[7]; // 0x710 | Schema_FixedArray | Size: 0x1c
-			int32_t m_nAccountIDs[64]; // 0x72c | Schema_FixedArray | Size: 0x100
-			int32_t m_nMapId0[64]; // 0x82c | Schema_FixedArray | Size: 0x100
-			int32_t m_nMapId1[64]; // 0x92c | Schema_FixedArray | Size: 0x100
-			int32_t m_nMapId2[64]; // 0xa2c | Schema_FixedArray | Size: 0x100
-			int32_t m_nMapId3[64]; // 0xb2c | Schema_FixedArray | Size: 0x100
-			int32_t m_nMapId4[64]; // 0xc2c | Schema_FixedArray | Size: 0x100
-			int32_t m_nMapId5[64]; // 0xd2c | Schema_FixedArray | Size: 0x100
-			int32_t m_nStartingSide0[64]; // 0xe2c | Schema_FixedArray | Size: 0x100
-			int32_t m_nCurrentPhase; // 0xf2c | Schema_Builtin | Size: 0x4
-			int32_t m_nPhaseStartTick; // 0xf30 | Schema_Builtin | Size: 0x4
-			int32_t m_nPhaseDurationTicks; // 0xf34 | Schema_Builtin | Size: 0x4
-			int32_t m_nPostDataUpdateTick; // 0xf38 | Schema_Builtin | Size: 0x4
-			bool m_bDisabledHud; // 0xf3c | Schema_Builtin | Size: 0x1
+			int32_t m_nDraftType; // 0x618 | Schema_Builtin | Size: 0x4
+			int32_t m_nTeamWinningCoinToss; // 0x61c | Schema_Builtin | Size: 0x4
+			int32_t m_nTeamWithFirstChoice[64]; // 0x620 | Schema_FixedArray | Size: 0x100
+			int32_t m_nVoteMapIdsList[7]; // 0x720 | Schema_FixedArray | Size: 0x1c
+			int32_t m_nAccountIDs[64]; // 0x73c | Schema_FixedArray | Size: 0x100
+			int32_t m_nMapId0[64]; // 0x83c | Schema_FixedArray | Size: 0x100
+			int32_t m_nMapId1[64]; // 0x93c | Schema_FixedArray | Size: 0x100
+			int32_t m_nMapId2[64]; // 0xa3c | Schema_FixedArray | Size: 0x100
+			int32_t m_nMapId3[64]; // 0xb3c | Schema_FixedArray | Size: 0x100
+			int32_t m_nMapId4[64]; // 0xc3c | Schema_FixedArray | Size: 0x100
+			int32_t m_nMapId5[64]; // 0xd3c | Schema_FixedArray | Size: 0x100
+			int32_t m_nStartingSide0[64]; // 0xe3c | Schema_FixedArray | Size: 0x100
+			int32_t m_nCurrentPhase; // 0xf3c | Schema_Builtin | Size: 0x4
+			int32_t m_nPhaseStartTick; // 0xf40 | Schema_Builtin | Size: 0x4
+			int32_t m_nPhaseDurationTicks; // 0xf44 | Schema_Builtin | Size: 0x4
+			int32_t m_nPostDataUpdateTick; // 0xf48 | Schema_Builtin | Size: 0x4
+			bool m_bDisabledHud; // 0xf4c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nDraftType) == 0x608, "m_nDraftType in C_MapVetoPickController should be at offset 0x608");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nTeamWinningCoinToss) == 0x60C, "m_nTeamWinningCoinToss in C_MapVetoPickController should be at offset 0x60C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nTeamWithFirstChoice) == 0x610, "m_nTeamWithFirstChoice in C_MapVetoPickController should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nVoteMapIdsList) == 0x710, "m_nVoteMapIdsList in C_MapVetoPickController should be at offset 0x710");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nAccountIDs) == 0x72C, "m_nAccountIDs in C_MapVetoPickController should be at offset 0x72C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId0) == 0x82C, "m_nMapId0 in C_MapVetoPickController should be at offset 0x82C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId1) == 0x92C, "m_nMapId1 in C_MapVetoPickController should be at offset 0x92C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId2) == 0xA2C, "m_nMapId2 in C_MapVetoPickController should be at offset 0xA2C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId3) == 0xB2C, "m_nMapId3 in C_MapVetoPickController should be at offset 0xB2C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId4) == 0xC2C, "m_nMapId4 in C_MapVetoPickController should be at offset 0xC2C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId5) == 0xD2C, "m_nMapId5 in C_MapVetoPickController should be at offset 0xD2C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nStartingSide0) == 0xE2C, "m_nStartingSide0 in C_MapVetoPickController should be at offset 0xE2C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nCurrentPhase) == 0xF2C, "m_nCurrentPhase in C_MapVetoPickController should be at offset 0xF2C");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nPhaseStartTick) == 0xF30, "m_nPhaseStartTick in C_MapVetoPickController should be at offset 0xF30");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nPhaseDurationTicks) == 0xF34, "m_nPhaseDurationTicks in C_MapVetoPickController should be at offset 0xF34");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nPostDataUpdateTick) == 0xF38, "m_nPostDataUpdateTick in C_MapVetoPickController should be at offset 0xF38");
-		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_bDisabledHud) == 0xF3C, "m_bDisabledHud in C_MapVetoPickController should be at offset 0xF3C");
-		static_assert(sizeof(CS2::client::C_MapVetoPickController) == 0xF40, "C_MapVetoPickController size should be 0xF40");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nDraftType) == 0x618, "m_nDraftType in C_MapVetoPickController should be at offset 0x618");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nTeamWinningCoinToss) == 0x61C, "m_nTeamWinningCoinToss in C_MapVetoPickController should be at offset 0x61C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nTeamWithFirstChoice) == 0x620, "m_nTeamWithFirstChoice in C_MapVetoPickController should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nVoteMapIdsList) == 0x720, "m_nVoteMapIdsList in C_MapVetoPickController should be at offset 0x720");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nAccountIDs) == 0x73C, "m_nAccountIDs in C_MapVetoPickController should be at offset 0x73C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId0) == 0x83C, "m_nMapId0 in C_MapVetoPickController should be at offset 0x83C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId1) == 0x93C, "m_nMapId1 in C_MapVetoPickController should be at offset 0x93C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId2) == 0xA3C, "m_nMapId2 in C_MapVetoPickController should be at offset 0xA3C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId3) == 0xB3C, "m_nMapId3 in C_MapVetoPickController should be at offset 0xB3C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId4) == 0xC3C, "m_nMapId4 in C_MapVetoPickController should be at offset 0xC3C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nMapId5) == 0xD3C, "m_nMapId5 in C_MapVetoPickController should be at offset 0xD3C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nStartingSide0) == 0xE3C, "m_nStartingSide0 in C_MapVetoPickController should be at offset 0xE3C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nCurrentPhase) == 0xF3C, "m_nCurrentPhase in C_MapVetoPickController should be at offset 0xF3C");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nPhaseStartTick) == 0xF40, "m_nPhaseStartTick in C_MapVetoPickController should be at offset 0xF40");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nPhaseDurationTicks) == 0xF44, "m_nPhaseDurationTicks in C_MapVetoPickController should be at offset 0xF44");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nPostDataUpdateTick) == 0xF48, "m_nPostDataUpdateTick in C_MapVetoPickController should be at offset 0xF48");
+		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_bDisabledHud) == 0xF4C, "m_bDisabledHud in C_MapVetoPickController should be at offset 0xF4C");
+		static_assert(sizeof(CS2::client::C_MapVetoPickController) == 0xF50, "C_MapVetoPickController size should be 0xF50");
 	}
 }

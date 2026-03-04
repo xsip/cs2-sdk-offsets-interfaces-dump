@@ -22,6 +22,6 @@ namespace CS2 {
 		class CInfoInstructorHintBombTargetB : public CS2::server::CPointEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CInfoInstructorHintBombTargetB) == 0x4F0, "CInfoInstructorHintBombTargetB size should be 0x4F0");
+		static_assert(sizeof(CS2::server::CInfoInstructorHintBombTargetB) == 0x4A8, "CInfoInstructorHintBombTargetB size should be 0x4A8");
 	}
 }

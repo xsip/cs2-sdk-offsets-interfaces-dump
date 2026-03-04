@@ -5,9 +5,9 @@
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 
 class smartprops_CSmartPropPulse_CreateSizer {
-    char vTable501[0x8];
+    void **__vftable_0;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char end_pad_502[0x3c];
+    char end_pad_512[0x3c];
     CUtlString m_Name;
     bool m_bHACK_ProvideResultMinX;
     bool m_bHACK_ProvideResultMaxX;
@@ -15,5 +15,5 @@ class smartprops_CSmartPropPulse_CreateSizer {
     bool m_bHACK_ProvideResultMaxY;
     bool m_bHACK_ProvideResultMinZ;
     bool m_bHACK_ProvideResultMaxZ;
-    char end_pad_2568[0x2];
+    char end_pad_2644[0x2];
 };

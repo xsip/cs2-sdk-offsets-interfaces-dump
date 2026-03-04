@@ -11,6 +11,8 @@
 
 
 #include <SDK/client/CEntitySubclassVDataBase.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCModel.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp>
 #include <SDK/client/ItemFlagTypes_t.hpp>
 #include <SDK/client/AmmoIndex_t.hpp>
 #include <SDK/client/RumbleEffect_t.hpp>
@@ -25,45 +27,46 @@ namespace CS2 {
 		class CBasePlayerWeaponVData : public CS2::client::CEntitySubclassVDataBase {
 		public:
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_szWorldModel; // 0x28 | Schema_Atomic | Size: 0xe0
-			char  m_szWorldModel[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
+			char m_szWorldModel[0xe0]; // 0x28 | Schema_Atomic | Size: 0xe0
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_sToolsOnlyOwnerModelName; // 0x108 | Schema_Atomic | Size: 0xe0
-			char  m_sToolsOnlyOwnerModelName[0xe0]; // 0x108 | Schema_Atomic | Size: 0xe0
+			char m_sToolsOnlyOwnerModelName[0xe0]; // 0x108 | Schema_Atomic | Size: 0xe0
 			bool m_bBuiltRightHanded; // 0x1e8 | Schema_Builtin | Size: 0x1
 			bool m_bAllowFlipping; // 0x1e9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
 			GlobalTypes::CAttachmentNameSymbolWithStorage m_sMuzzleAttachment; // 0x1f0 | Schema_Atomic | Size: 0x20
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szMuzzleFlashParticle; // 0x210 | Schema_Atomic | Size: 0xe0
-			char  m_szMuzzleFlashParticle[0xe0]; // 0x210 | Schema_Atomic | Size: 0xe0
+			char m_szMuzzleFlashParticle[0xe0]; // 0x210 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::CUtlString m_szMuzzleFlashParticleConfig; // 0x2f0 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szBarrelSmokeParticle; // 0x2f8 | Schema_Atomic | Size: 0xe0
-			char  m_szBarrelSmokeParticle[0xe0]; // 0x2f8 | Schema_Atomic | Size: 0xe0
+			char m_szBarrelSmokeParticle[0xe0]; // 0x2f8 | Schema_Atomic | Size: 0xe0
 			uint8_t m_nMuzzleSmokeShotThreshold; // 0x3d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flMuzzleSmokeTimeout; // 0x3dc | Schema_Builtin | Size: 0x4
 			float32 m_flMuzzleSmokeDecrementRate; // 0x3e0 | Schema_Builtin | Size: 0x4
-			bool m_bLinkedCooldowns; // 0x3e4 | Schema_Builtin | Size: 0x1
-			client::ItemFlagTypes_t m_iFlags; // 0x3e5 | Schema_DeclaredEnum | Size: 0x1
-			client::AmmoIndex_t m_nPrimaryAmmoType; // 0x3e6 | Schema_DeclaredClass | Size: 0x1
-			client::AmmoIndex_t m_nSecondaryAmmoType; // 0x3e7 | Schema_DeclaredClass | Size: 0x1
-			int32_t m_iMaxClip1; // 0x3e8 | Schema_Builtin | Size: 0x4
-			int32_t m_iMaxClip2; // 0x3ec | Schema_Builtin | Size: 0x4
-			int32_t m_iDefaultClip1; // 0x3f0 | Schema_Builtin | Size: 0x4
-			int32_t m_iDefaultClip2; // 0x3f4 | Schema_Builtin | Size: 0x4
-			bool m_bReserveAmmoAsClips; // 0x3f8 | Schema_Builtin | Size: 0x1
-			bool m_bTreatAsSingleClip; // 0x3f9 | Schema_Builtin | Size: 0x1
-			bool m_bKeepLoadedAmmo; // 0x3fa | Schema_Builtin | Size: 0x1
+			bool m_bGenerateMuzzleLight; // 0x3e4 | Schema_Builtin | Size: 0x1
+			bool m_bLinkedCooldowns; // 0x3e5 | Schema_Builtin | Size: 0x1
+			client::ItemFlagTypes_t m_iFlags; // 0x3e6 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x1);
-			int32_t m_iWeight; // 0x3fc | Schema_Builtin | Size: 0x4
-			bool m_bAutoSwitchTo; // 0x400 | Schema_Builtin | Size: 0x1
-			bool m_bAutoSwitchFrom; // 0x401 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x2);
+			int32_t m_iWeight; // 0x3e8 | Schema_Builtin | Size: 0x4
+			bool m_bAutoSwitchTo; // 0x3ec | Schema_Builtin | Size: 0x1
+			bool m_bAutoSwitchFrom; // 0x3ed | Schema_Builtin | Size: 0x1
+			client::AmmoIndex_t m_nPrimaryAmmoType; // 0x3ee | Schema_DeclaredClass | Size: 0x1
+			client::AmmoIndex_t m_nSecondaryAmmoType; // 0x3ef | Schema_DeclaredClass | Size: 0x1
+			int32_t m_iMaxClip1; // 0x3f0 | Schema_Builtin | Size: 0x4
+			int32_t m_iMaxClip2; // 0x3f4 | Schema_Builtin | Size: 0x4
+			int32_t m_iDefaultClip1; // 0x3f8 | Schema_Builtin | Size: 0x4
+			int32_t m_iDefaultClip2; // 0x3fc | Schema_Builtin | Size: 0x4
+			bool m_bReserveAmmoAsClips; // 0x400 | Schema_Builtin | Size: 0x1
+			bool m_bTreatAsSingleClip; // 0x401 | Schema_Builtin | Size: 0x1
+			bool m_bKeepLoadedAmmo; // 0x402 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x1);
 			client::RumbleEffect_t m_iRumbleEffect; // 0x404 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flDropSpeed; // 0x408 | Schema_Builtin | Size: 0x4
 			int32_t m_iSlot; // 0x40c | Schema_Builtin | Size: 0x4
 			int32_t m_iPosition; // 0x410 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// GlobalTypes::CUtlOrderedMap< WeaponSound_t, CSoundEventName > m_aShootSounds; // 0x418 | Schema_Atomic | Size: 0x28
-			char  m_aShootSounds[0x28]; // 0x418 | Schema_Atomic | Size: 0x28
+			char m_aShootSounds[0x28]; // 0x418 | Schema_Atomic | Size: 0x28
 		};
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_szWorldModel) == 0x28, "m_szWorldModel in CBasePlayerWeaponVData should be at offset 0x28");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_sToolsOnlyOwnerModelName) == 0x108, "m_sToolsOnlyOwnerModelName in CBasePlayerWeaponVData should be at offset 0x108");
@@ -76,20 +79,21 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_nMuzzleSmokeShotThreshold) == 0x3D8, "m_nMuzzleSmokeShotThreshold in CBasePlayerWeaponVData should be at offset 0x3D8");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_flMuzzleSmokeTimeout) == 0x3DC, "m_flMuzzleSmokeTimeout in CBasePlayerWeaponVData should be at offset 0x3DC");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_flMuzzleSmokeDecrementRate) == 0x3E0, "m_flMuzzleSmokeDecrementRate in CBasePlayerWeaponVData should be at offset 0x3E0");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bLinkedCooldowns) == 0x3E4, "m_bLinkedCooldowns in CBasePlayerWeaponVData should be at offset 0x3E4");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iFlags) == 0x3E5, "m_iFlags in CBasePlayerWeaponVData should be at offset 0x3E5");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_nPrimaryAmmoType) == 0x3E6, "m_nPrimaryAmmoType in CBasePlayerWeaponVData should be at offset 0x3E6");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_nSecondaryAmmoType) == 0x3E7, "m_nSecondaryAmmoType in CBasePlayerWeaponVData should be at offset 0x3E7");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iMaxClip1) == 0x3E8, "m_iMaxClip1 in CBasePlayerWeaponVData should be at offset 0x3E8");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iMaxClip2) == 0x3EC, "m_iMaxClip2 in CBasePlayerWeaponVData should be at offset 0x3EC");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iDefaultClip1) == 0x3F0, "m_iDefaultClip1 in CBasePlayerWeaponVData should be at offset 0x3F0");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iDefaultClip2) == 0x3F4, "m_iDefaultClip2 in CBasePlayerWeaponVData should be at offset 0x3F4");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bReserveAmmoAsClips) == 0x3F8, "m_bReserveAmmoAsClips in CBasePlayerWeaponVData should be at offset 0x3F8");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bTreatAsSingleClip) == 0x3F9, "m_bTreatAsSingleClip in CBasePlayerWeaponVData should be at offset 0x3F9");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bKeepLoadedAmmo) == 0x3FA, "m_bKeepLoadedAmmo in CBasePlayerWeaponVData should be at offset 0x3FA");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iWeight) == 0x3FC, "m_iWeight in CBasePlayerWeaponVData should be at offset 0x3FC");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bAutoSwitchTo) == 0x400, "m_bAutoSwitchTo in CBasePlayerWeaponVData should be at offset 0x400");
-		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bAutoSwitchFrom) == 0x401, "m_bAutoSwitchFrom in CBasePlayerWeaponVData should be at offset 0x401");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bGenerateMuzzleLight) == 0x3E4, "m_bGenerateMuzzleLight in CBasePlayerWeaponVData should be at offset 0x3E4");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bLinkedCooldowns) == 0x3E5, "m_bLinkedCooldowns in CBasePlayerWeaponVData should be at offset 0x3E5");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iFlags) == 0x3E6, "m_iFlags in CBasePlayerWeaponVData should be at offset 0x3E6");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iWeight) == 0x3E8, "m_iWeight in CBasePlayerWeaponVData should be at offset 0x3E8");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bAutoSwitchTo) == 0x3EC, "m_bAutoSwitchTo in CBasePlayerWeaponVData should be at offset 0x3EC");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bAutoSwitchFrom) == 0x3ED, "m_bAutoSwitchFrom in CBasePlayerWeaponVData should be at offset 0x3ED");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_nPrimaryAmmoType) == 0x3EE, "m_nPrimaryAmmoType in CBasePlayerWeaponVData should be at offset 0x3EE");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_nSecondaryAmmoType) == 0x3EF, "m_nSecondaryAmmoType in CBasePlayerWeaponVData should be at offset 0x3EF");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iMaxClip1) == 0x3F0, "m_iMaxClip1 in CBasePlayerWeaponVData should be at offset 0x3F0");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iMaxClip2) == 0x3F4, "m_iMaxClip2 in CBasePlayerWeaponVData should be at offset 0x3F4");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iDefaultClip1) == 0x3F8, "m_iDefaultClip1 in CBasePlayerWeaponVData should be at offset 0x3F8");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iDefaultClip2) == 0x3FC, "m_iDefaultClip2 in CBasePlayerWeaponVData should be at offset 0x3FC");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bReserveAmmoAsClips) == 0x400, "m_bReserveAmmoAsClips in CBasePlayerWeaponVData should be at offset 0x400");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bTreatAsSingleClip) == 0x401, "m_bTreatAsSingleClip in CBasePlayerWeaponVData should be at offset 0x401");
+		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_bKeepLoadedAmmo) == 0x402, "m_bKeepLoadedAmmo in CBasePlayerWeaponVData should be at offset 0x402");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iRumbleEffect) == 0x404, "m_iRumbleEffect in CBasePlayerWeaponVData should be at offset 0x404");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_flDropSpeed) == 0x408, "m_flDropSpeed in CBasePlayerWeaponVData should be at offset 0x408");
 		static_assert(offsetof(CS2::client::CBasePlayerWeaponVData, m_iSlot) == 0x40C, "m_iSlot in CBasePlayerWeaponVData should be at offset 0x40C");

@@ -21,9 +21,9 @@ namespace CS2 {
 	namespace server {
 		class CEnvSoundscapeProxy : public CS2::server::CEnvSoundscape {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_MainSoundscapeName; // 0x590 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_MainSoundscapeName; // 0x538 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CEnvSoundscapeProxy, m_MainSoundscapeName) == 0x590, "m_MainSoundscapeName in CEnvSoundscapeProxy should be at offset 0x590");
-		static_assert(sizeof(CS2::server::CEnvSoundscapeProxy) == 0x598, "CEnvSoundscapeProxy size should be 0x598");
+		static_assert(offsetof(CS2::server::CEnvSoundscapeProxy, m_MainSoundscapeName) == 0x538, "m_MainSoundscapeName in CEnvSoundscapeProxy should be at offset 0x538");
+		static_assert(sizeof(CS2::server::CEnvSoundscapeProxy) == 0x540, "CEnvSoundscapeProxy size should be 0x540");
 	}
 }

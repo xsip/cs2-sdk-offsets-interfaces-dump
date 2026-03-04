@@ -8,23 +8,23 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x238
+			// Class size: 0x240
 			namespace CPlayer_MovementServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_nImpulse = 0x40; // int32_t m_nImpulse; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nButtons = 0x48; // client::CInButtonState  | Schema_DeclaredClass | Size: 0x20
-				constexpr std::ptrdiff_t m_nQueuedButtonDownMask = 0x68; // uint64_t m_nQueuedButtonDownMask; |  0x68 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_nQueuedButtonChangeMask = 0x70; // uint64_t m_nQueuedButtonChangeMask; |  0x70 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_nButtonDoublePressed = 0x78; // uint64_t m_nButtonDoublePressed; |  0x78 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_pButtonPressedCmdNumber = 0x80; // uint32_t m_pButtonPressedCmdNumber[64]; |  0x80 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_nLastCommandNumberProcessed = 0x180; // uint32_t m_nLastCommandNumberProcessed; |  0x180 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nToggleButtonDownMask = 0x188; // uint64_t m_nToggleButtonDownMask; |  0x188 | Schema_Builtin | Size: 0x8
-				constexpr std::ptrdiff_t m_flMaxspeed = 0x198; // float32 m_flMaxspeed; |  0x198 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_arrForceSubtickMoveWhen = 0x19c; // float32 m_arrForceSubtickMoveWhen[4]; |  0x19c | Schema_FixedArray | Size: 0x10
-				constexpr std::ptrdiff_t m_flForwardMove = 0x1ac; // float32 m_flForwardMove; |  0x1ac | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLeftMove = 0x1b0; // float32 m_flLeftMove; |  0x1b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flUpMove = 0x1b4; // float32 m_flUpMove; |  0x1b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecLastMovementImpulses = 0x1b8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecOldViewAngles = 0x220; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nImpulse = 0x48; // int32_t m_nImpulse; |  0x48 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nButtons = 0x50; // client::CInButtonState  | Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_nQueuedButtonDownMask = 0x70; // uint64_t m_nQueuedButtonDownMask; |  0x70 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_nQueuedButtonChangeMask = 0x78; // uint64_t m_nQueuedButtonChangeMask; |  0x78 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_nButtonDoublePressed = 0x80; // uint64_t m_nButtonDoublePressed; |  0x80 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_pButtonPressedCmdNumber = 0x88; // uint32_t m_pButtonPressedCmdNumber[64]; |  0x88 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_nLastCommandNumberProcessed = 0x188; // uint32_t m_nLastCommandNumberProcessed; |  0x188 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nToggleButtonDownMask = 0x190; // uint64_t m_nToggleButtonDownMask; |  0x190 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_flMaxspeed = 0x1a0; // float32 m_flMaxspeed; |  0x1a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_arrForceSubtickMoveWhen = 0x1a4; // float32 m_arrForceSubtickMoveWhen[4]; |  0x1a4 | Schema_FixedArray | Size: 0x10
+				constexpr std::ptrdiff_t m_flForwardMove = 0x1b4; // float32 m_flForwardMove; |  0x1b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLeftMove = 0x1b8; // float32 m_flLeftMove; |  0x1b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flUpMove = 0x1bc; // float32 m_flUpMove; |  0x1bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecLastMovementImpulses = 0x1c0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecOldViewAngles = 0x228; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

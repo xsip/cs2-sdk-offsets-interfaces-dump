@@ -10,13 +10,13 @@
 #endif
 
 
+#include <SDK/modellib/Camera_t.hpp>
 
 
 
 namespace CS2 {
 	namespace modellib {
 		class SkeletonAnimCapture_t;
-		class Camera_t;
 	}
 }
 
@@ -27,9 +27,9 @@ namespace CS2 {
 		class SkeletonDemoDb_t  {
 		public:
 			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t*> m_AnimCaptures; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_AnimCaptures[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t::Camera_t> m_CameraTrack; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_CameraTrack[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_AnimCaptures[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::Camera_t> m_CameraTrack; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_CameraTrack[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			float32 m_flRecordingTime; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x600
+			// Class size: 0x610
 			namespace C_PortraitWorldCallbackHandler /*: public CS2::client::C_BaseEntity*/ {
 				// NO SCHEMA DATA FOUND!
 			}

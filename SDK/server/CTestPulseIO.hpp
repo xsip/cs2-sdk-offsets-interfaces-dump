@@ -22,24 +22,30 @@ namespace CS2 {
 	namespace server {
 		class CTestPulseIO : public CS2::server::CLogicalEntity {
 		public:
-			entity2::CEntityIOOutput m_OnVariantVoid; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVariantBool; // 0x518 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVariantInt; // 0x540 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVariantFloat; // 0x568 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVariantString; // 0x590 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVariantColor; // 0x5b8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVariantVector; // 0x5e0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bAllowEmptyInputs; // 0x608 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnVariantVoid; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< bool, bool > m_OnVariantBool; // 0x4c0 | Schema_Atomic | Size: 0x20
+			char m_OnVariantBool[0x20]; // 0x4c0 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< int32, int32 > m_OnVariantInt; // 0x4e0 | Schema_Atomic | Size: 0x20
+			char m_OnVariantInt[0x20]; // 0x4e0 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnVariantFloat; // 0x500 | Schema_Atomic | Size: 0x20
+			char m_OnVariantFloat[0x20]; // 0x500 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< CUtlSymbolLarge, CUtlSymbolLarge > m_OnVariantString; // 0x520 | Schema_Atomic | Size: 0x20
+			char m_OnVariantString[0x20]; // 0x520 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< Color, Color > m_OnVariantColor; // 0x540 | Schema_Atomic | Size: 0x20
+			char m_OnVariantColor[0x20]; // 0x540 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CEntityOutputTemplate< Vector, Vector > m_OnVariantVector; // 0x560 | Schema_Atomic | Size: 0x28
+			char m_OnVariantVector[0x28]; // 0x560 | Schema_Atomic | Size: 0x28
+			bool m_bAllowEmptyInputs; // 0x588 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantVoid) == 0x4F0, "m_OnVariantVoid in CTestPulseIO should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantBool) == 0x518, "m_OnVariantBool in CTestPulseIO should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantInt) == 0x540, "m_OnVariantInt in CTestPulseIO should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantFloat) == 0x568, "m_OnVariantFloat in CTestPulseIO should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantString) == 0x590, "m_OnVariantString in CTestPulseIO should be at offset 0x590");
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantColor) == 0x5B8, "m_OnVariantColor in CTestPulseIO should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantVector) == 0x5E0, "m_OnVariantVector in CTestPulseIO should be at offset 0x5E0");
-		static_assert(offsetof(CS2::server::CTestPulseIO, m_bAllowEmptyInputs) == 0x608, "m_bAllowEmptyInputs in CTestPulseIO should be at offset 0x608");
-		static_assert(sizeof(CS2::server::CTestPulseIO) == 0x610, "CTestPulseIO size should be 0x610");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantVoid) == 0x4A8, "m_OnVariantVoid in CTestPulseIO should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantBool) == 0x4C0, "m_OnVariantBool in CTestPulseIO should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantInt) == 0x4E0, "m_OnVariantInt in CTestPulseIO should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantFloat) == 0x500, "m_OnVariantFloat in CTestPulseIO should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantString) == 0x520, "m_OnVariantString in CTestPulseIO should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantColor) == 0x540, "m_OnVariantColor in CTestPulseIO should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantVector) == 0x560, "m_OnVariantVector in CTestPulseIO should be at offset 0x560");
+		static_assert(offsetof(CS2::server::CTestPulseIO, m_bAllowEmptyInputs) == 0x588, "m_bAllowEmptyInputs in CTestPulseIO should be at offset 0x588");
+		static_assert(sizeof(CS2::server::CTestPulseIO) == 0x590, "CTestPulseIO size should be 0x590");
 	}
 }

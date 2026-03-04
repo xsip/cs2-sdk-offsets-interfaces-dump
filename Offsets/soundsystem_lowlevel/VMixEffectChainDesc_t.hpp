@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem_lowlevel {
-			// Class size: 0x4
+			// Class size: 0x8
 			namespace VMixEffectChainDesc_t /**/ {
-				constexpr std::ptrdiff_t m_flCrossfadeTime = 0x0; // float32 m_flCrossfadeTime; |  0x0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_effectName = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

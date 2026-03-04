@@ -14,6 +14,11 @@
 
 
 
+namespace CS2 {
+	namespace entity2 {
+		class CEntityAttributeTable;
+	}
+}
 
 
 using namespace GlobalTypes;
@@ -31,7 +36,8 @@ namespace CS2 {
 			GlobalTypes::WorldGroupId_t m_worldGroupId; // 0x38 | Schema_Atomic | Size: 0x4
 			uint32_t m_fDataObjectTypes; // 0x3c | Schema_Builtin | Size: 0x4
 			networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x40 | Schema_DeclaredClass | Size: 0x4
-			S2_PAD(0xc);
+			S2_PAD(0x4);
+			entity2::CEntityAttributeTable* m_pAttributes; // 0x48 | Schema_Ptr | Size: 0x8
 			entity2::CEntityIdentity* m_pPrev; // 0x50 | Schema_Ptr | Size: 0x8
 			entity2::CEntityIdentity* m_pNext; // 0x58 | Schema_Ptr | Size: 0x8
 			entity2::CEntityIdentity* m_pPrevByClass; // 0x60 | Schema_Ptr | Size: 0x8
@@ -44,6 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_worldGroupId) == 0x38, "m_worldGroupId in CEntityIdentity should be at offset 0x38");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_fDataObjectTypes) == 0x3C, "m_fDataObjectTypes in CEntityIdentity should be at offset 0x3C");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_PathIndex) == 0x40, "m_PathIndex in CEntityIdentity should be at offset 0x40");
+		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pAttributes) == 0x48, "m_pAttributes in CEntityIdentity should be at offset 0x48");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pPrev) == 0x50, "m_pPrev in CEntityIdentity should be at offset 0x50");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pNext) == 0x58, "m_pNext in CEntityIdentity should be at offset 0x58");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pPrevByClass) == 0x60, "m_pPrevByClass in CEntityIdentity should be at offset 0x60");

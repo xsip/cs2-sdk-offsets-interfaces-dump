@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/worldrenderer/EntityIOConnectionData_t.hpp>
 
 
 
-namespace CS2 {
-	namespace worldrenderer {
-		class EntityIOConnectionData_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,7 +23,7 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			GlobalTypes::CUtlVector<worldrenderer::EntityIOConnectionData_t> m_connections; // 0x8 | Schema_Atomic | Size: 0x18
-			// char  m_connections[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			// char m_connections[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlBinaryBlock m_keyValuesData; // 0x20 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8); // End padding
 		};

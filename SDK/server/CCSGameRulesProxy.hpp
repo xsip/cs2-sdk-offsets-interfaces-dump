@@ -26,9 +26,9 @@ namespace CS2 {
 	namespace server {
 		class CCSGameRulesProxy : public CS2::server::CGameRulesProxy {
 		public:
-			server::CCSGameRules* m_pGameRules; // 0x4f0 | Schema_Ptr | Size: 0x8
+			server::CCSGameRules* m_pGameRules; // 0x4a8 | Schema_Ptr | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CCSGameRulesProxy, m_pGameRules) == 0x4F0, "m_pGameRules in CCSGameRulesProxy should be at offset 0x4F0");
-		static_assert(sizeof(CS2::server::CCSGameRulesProxy) == 0x4F8, "CCSGameRulesProxy size should be 0x4F8");
+		static_assert(offsetof(CS2::server::CCSGameRulesProxy, m_pGameRules) == 0x4A8, "m_pGameRules in CCSGameRulesProxy should be at offset 0x4A8");
+		static_assert(sizeof(CS2::server::CCSGameRulesProxy) == 0x4B0, "CCSGameRulesProxy size should be 0x4B0");
 	}
 }

@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x48
+			// Class size: 0x50
 			namespace CCSPlayer_PingServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_hPlayerPing = 0x40; // GlobalTypes::CHandle<client::C_PlayerPing>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hPlayerPing = 0x48; // GlobalTypes::CHandle<client::C_PlayerPing>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

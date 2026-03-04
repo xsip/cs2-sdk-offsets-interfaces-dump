@@ -21,13 +21,13 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_CameraServices : public CS2::client::CCSPlayerBase_CameraServices {
 		public:
-			float32 m_flDeathCamTilt; // 0x2a0 | Schema_Builtin | Size: 0x4
+			float32 m_flDeathCamTilt; // 0x2a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::Vector m_vClientScopeInaccuracy; // 0x2a8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vClientScopeInaccuracy; // 0x2b0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84); // End padding
 		};
-		static_assert(offsetof(CS2::client::CCSPlayer_CameraServices, m_flDeathCamTilt) == 0x2A0, "m_flDeathCamTilt in CCSPlayer_CameraServices should be at offset 0x2A0");
-		static_assert(offsetof(CS2::client::CCSPlayer_CameraServices, m_vClientScopeInaccuracy) == 0x2A8, "m_vClientScopeInaccuracy in CCSPlayer_CameraServices should be at offset 0x2A8");
-		static_assert(sizeof(CS2::client::CCSPlayer_CameraServices) == 0x338, "CCSPlayer_CameraServices size should be 0x338");
+		static_assert(offsetof(CS2::client::CCSPlayer_CameraServices, m_flDeathCamTilt) == 0x2A8, "m_flDeathCamTilt in CCSPlayer_CameraServices should be at offset 0x2A8");
+		static_assert(offsetof(CS2::client::CCSPlayer_CameraServices, m_vClientScopeInaccuracy) == 0x2B0, "m_vClientScopeInaccuracy in CCSPlayer_CameraServices should be at offset 0x2B0");
+		static_assert(sizeof(CS2::client::CCSPlayer_CameraServices) == 0x340, "CCSPlayer_CameraServices size should be 0x340");
 	}
 }

@@ -11,14 +11,10 @@
 
 
 #include <SDK/smartprops/CSmartPropParameter.hpp>
+#include <SDK/smartprops/CSmartPropChoiceOption.hpp>
 
 
 
-namespace CS2 {
-	namespace smartprops {
-		class CSmartPropChoiceOption;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -29,7 +25,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_Name; // 0x10 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_DefaultOption; // 0x18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector<smartprops::CSmartPropChoiceOption> m_Options; // 0x20 | Schema_Atomic | Size: 0x18
-			// char  m_Options[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			// char m_Options[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropChoice, m_Name) == 0x10, "m_Name in CSmartPropChoice should be at offset 0x10");
 		static_assert(offsetof(CS2::smartprops::CSmartPropChoice, m_DefaultOption) == 0x18, "m_DefaultOption in CSmartPropChoice should be at offset 0x18");

@@ -23,6 +23,6 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 		};
-		static_assert(sizeof(CS2::client::C_PortraitWorldCallbackHandler) == 0x600, "C_PortraitWorldCallbackHandler size should be 0x600");
+		static_assert(sizeof(CS2::client::C_PortraitWorldCallbackHandler) == 0x610, "C_PortraitWorldCallbackHandler size should be 0x610");
 	}
 }

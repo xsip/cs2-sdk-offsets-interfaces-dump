@@ -22,24 +22,24 @@ namespace CS2 {
 	namespace server {
 		class CCSGO_TeamPreviewCharacterPosition : public CS2::server::CBaseEntity {
 		public:
-			int32_t m_nVariant; // 0x4f0 | Schema_Builtin | Size: 0x4
-			int32_t m_nRandom; // 0x4f4 | Schema_Builtin | Size: 0x4
-			int32_t m_nOrdinal; // 0x4f8 | Schema_Builtin | Size: 0x4
+			int32_t m_nVariant; // 0x4a8 | Schema_Builtin | Size: 0x4
+			int32_t m_nRandom; // 0x4ac | Schema_Builtin | Size: 0x4
+			int32_t m_nOrdinal; // 0x4b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlString m_sWeaponName; // 0x500 | Schema_Atomic | Size: 0x8
-			uint64_t m_xuid; // 0x508 | Schema_Builtin | Size: 0x8
-			server::CEconItemView m_agentItem; // 0x510 | Schema_DeclaredClass | Size: 0x2a8
-			server::CEconItemView m_glovesItem; // 0x7b8 | Schema_DeclaredClass | Size: 0x2a8
-			server::CEconItemView m_weaponItem; // 0xa60 | Schema_DeclaredClass | Size: 0x2a8
+			GlobalTypes::CUtlString m_sWeaponName; // 0x4b8 | Schema_Atomic | Size: 0x8
+			uint64_t m_xuid; // 0x4c0 | Schema_Builtin | Size: 0x8
+			server::CEconItemView m_agentItem; // 0x4c8 | Schema_DeclaredClass | Size: 0x2a8
+			server::CEconItemView m_glovesItem; // 0x770 | Schema_DeclaredClass | Size: 0x2a8
+			server::CEconItemView m_weaponItem; // 0xa18 | Schema_DeclaredClass | Size: 0x2a8
 		};
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_nVariant) == 0x4F0, "m_nVariant in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_nRandom) == 0x4F4, "m_nRandom in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_nOrdinal) == 0x4F8, "m_nOrdinal in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_sWeaponName) == 0x500, "m_sWeaponName in CCSGO_TeamPreviewCharacterPosition should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_xuid) == 0x508, "m_xuid in CCSGO_TeamPreviewCharacterPosition should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_agentItem) == 0x510, "m_agentItem in CCSGO_TeamPreviewCharacterPosition should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_glovesItem) == 0x7B8, "m_glovesItem in CCSGO_TeamPreviewCharacterPosition should be at offset 0x7B8");
-		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_weaponItem) == 0xA60, "m_weaponItem in CCSGO_TeamPreviewCharacterPosition should be at offset 0xA60");
-		static_assert(sizeof(CS2::server::CCSGO_TeamPreviewCharacterPosition) == 0xD08, "CCSGO_TeamPreviewCharacterPosition size should be 0xD08");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_nVariant) == 0x4A8, "m_nVariant in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_nRandom) == 0x4AC, "m_nRandom in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_nOrdinal) == 0x4B0, "m_nOrdinal in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_sWeaponName) == 0x4B8, "m_sWeaponName in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_xuid) == 0x4C0, "m_xuid in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_agentItem) == 0x4C8, "m_agentItem in CCSGO_TeamPreviewCharacterPosition should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_glovesItem) == 0x770, "m_glovesItem in CCSGO_TeamPreviewCharacterPosition should be at offset 0x770");
+		static_assert(offsetof(CS2::server::CCSGO_TeamPreviewCharacterPosition, m_weaponItem) == 0xA18, "m_weaponItem in CCSGO_TeamPreviewCharacterPosition should be at offset 0xA18");
+		static_assert(sizeof(CS2::server::CCSGO_TeamPreviewCharacterPosition) == 0xCC0, "CCSGO_TeamPreviewCharacterPosition size should be 0xCC0");
 	}
 }

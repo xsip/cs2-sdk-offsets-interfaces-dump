@@ -21,20 +21,20 @@ namespace CS2 {
 	namespace client {
 		class C_PlayerVisibility : public CS2::client::C_BaseEntity {
 		public:
-			float32 m_flVisibilityStrength; // 0x5f8 | Schema_Builtin | Size: 0x4
-			float32 m_flFogDistanceMultiplier; // 0x5fc | Schema_Builtin | Size: 0x4
-			float32 m_flFogMaxDensityMultiplier; // 0x600 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeTime; // 0x604 | Schema_Builtin | Size: 0x4
-			bool m_bStartDisabled; // 0x608 | Schema_Builtin | Size: 0x1
-			bool m_bIsEnabled; // 0x609 | Schema_Builtin | Size: 0x1
+			float32 m_flVisibilityStrength; // 0x608 | Schema_Builtin | Size: 0x4
+			float32 m_flFogDistanceMultiplier; // 0x60c | Schema_Builtin | Size: 0x4
+			float32 m_flFogMaxDensityMultiplier; // 0x610 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeTime; // 0x614 | Schema_Builtin | Size: 0x4
+			bool m_bStartDisabled; // 0x618 | Schema_Builtin | Size: 0x1
+			bool m_bIsEnabled; // 0x619 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1e); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flVisibilityStrength) == 0x5F8, "m_flVisibilityStrength in C_PlayerVisibility should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFogDistanceMultiplier) == 0x5FC, "m_flFogDistanceMultiplier in C_PlayerVisibility should be at offset 0x5FC");
-		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFogMaxDensityMultiplier) == 0x600, "m_flFogMaxDensityMultiplier in C_PlayerVisibility should be at offset 0x600");
-		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFadeTime) == 0x604, "m_flFadeTime in C_PlayerVisibility should be at offset 0x604");
-		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_bStartDisabled) == 0x608, "m_bStartDisabled in C_PlayerVisibility should be at offset 0x608");
-		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_bIsEnabled) == 0x609, "m_bIsEnabled in C_PlayerVisibility should be at offset 0x609");
-		static_assert(sizeof(CS2::client::C_PlayerVisibility) == 0x628, "C_PlayerVisibility size should be 0x628");
+		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flVisibilityStrength) == 0x608, "m_flVisibilityStrength in C_PlayerVisibility should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFogDistanceMultiplier) == 0x60C, "m_flFogDistanceMultiplier in C_PlayerVisibility should be at offset 0x60C");
+		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFogMaxDensityMultiplier) == 0x610, "m_flFogMaxDensityMultiplier in C_PlayerVisibility should be at offset 0x610");
+		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFadeTime) == 0x614, "m_flFadeTime in C_PlayerVisibility should be at offset 0x614");
+		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_bStartDisabled) == 0x618, "m_bStartDisabled in C_PlayerVisibility should be at offset 0x618");
+		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_bIsEnabled) == 0x619, "m_bIsEnabled in C_PlayerVisibility should be at offset 0x619");
+		static_assert(sizeof(CS2::client::C_PlayerVisibility) == 0x638, "C_PlayerVisibility size should be 0x638");
 	}
 }

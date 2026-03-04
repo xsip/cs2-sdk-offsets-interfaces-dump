@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/CPlayerControllerComponent.hpp>
+#include <SDK/client/CSPerRoundStats_t.hpp>
 #include <SDK/client/CSMatchStats_t.hpp>
 
 
@@ -23,7 +24,7 @@ namespace CS2 {
 		class CCSPlayerController_ActionTrackingServices : public CS2::client::CPlayerControllerComponent {
 		public:
 			// client::C_UtlVectorEmbeddedNetworkVar<client::CSPerRoundStats_t> m_perRoundStats; // 0x40 | Schema_Atomic | Size: 0x68
-			char  m_perRoundStats[0x68]; // 0x40 | Schema_Atomic | Size: 0x68
+			char m_perRoundStats[0x68]; // 0x40 | Schema_Atomic | Size: 0x68
 			client::CSMatchStats_t m_matchStats; // 0xa8 | Schema_DeclaredClass | Size: 0x80
 			int32_t m_iNumRoundKills; // 0x128 | Schema_Builtin | Size: 0x4
 			int32_t m_iNumRoundKillsHeadshots; // 0x12c | Schema_Builtin | Size: 0x4

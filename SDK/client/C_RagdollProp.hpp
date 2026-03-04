@@ -28,32 +28,32 @@ namespace CS2 {
 		class C_RagdollProp : public CS2::client::CBaseAnimGraph {
 		public:
 			S2_PAD(0x8);
-			// GlobalTypes::C_NetworkUtlVectorBase< bool > m_ragEnabled; // 0x1160 | Schema_Atomic | Size: 0x18
-			char  m_ragEnabled[0x18]; // 0x1160 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_ragPos; // 0x1178 | Schema_Atomic | Size: 0x18
-			char  m_ragPos[0x18]; // 0x1178 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::QAngle> m_ragAngles; // 0x1190 | Schema_Atomic | Size: 0x18
-			char  m_ragAngles[0x18]; // 0x1190 | Schema_Atomic | Size: 0x18
-			float32 m_flBlendWeight; // 0x11a8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hRagdollSource; // 0x11ac | Schema_Atomic | Size: 0x4
-			// char  m_hRagdollSource[0x4]; // 0x11ac | Schema_Atomic | Size: 0x4
-			modellib::AttachmentHandle_t m_iEyeAttachment; // 0x11b0 | Schema_DeclaredClass | Size: 0x1
+			// GlobalTypes::C_NetworkUtlVectorBase< bool > m_ragEnabled; // 0x1170 | Schema_Atomic | Size: 0x18
+			char m_ragEnabled[0x18]; // 0x1170 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::Vector> m_ragPos; // 0x1188 | Schema_Atomic | Size: 0x18
+			char m_ragPos[0x18]; // 0x1188 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::QAngle> m_ragAngles; // 0x11a0 | Schema_Atomic | Size: 0x18
+			char m_ragAngles[0x18]; // 0x11a0 | Schema_Atomic | Size: 0x18
+			float32 m_flBlendWeight; // 0x11b8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hRagdollSource; // 0x11bc | Schema_Atomic | Size: 0x4
+			// char m_hRagdollSource[0x4]; // 0x11bc | Schema_Atomic | Size: 0x4
+			modellib::AttachmentHandle_t m_iEyeAttachment; // 0x11c0 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flBlendWeightCurrent; // 0x11b4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< int32 > m_parentPhysicsBoneIndices; // 0x11b8 | Schema_Atomic | Size: 0x18
-			// char  m_parentPhysicsBoneIndices[0x18]; // 0x11b8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector< int32 > m_worldSpaceBoneComputationOrder; // 0x11d0 | Schema_Atomic | Size: 0x18
-			// char  m_worldSpaceBoneComputationOrder[0x18]; // 0x11d0 | Schema_Atomic | Size: 0x18
+			float32 m_flBlendWeightCurrent; // 0x11c4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlVector< int32 > m_parentPhysicsBoneIndices; // 0x11c8 | Schema_Atomic | Size: 0x18
+			// char m_parentPhysicsBoneIndices[0x18]; // 0x11c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_worldSpaceBoneComputationOrder; // 0x11e0 | Schema_Atomic | Size: 0x18
+			// char m_worldSpaceBoneComputationOrder[0x18]; // 0x11e0 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragEnabled) == 0x1160, "m_ragEnabled in C_RagdollProp should be at offset 0x1160");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragPos) == 0x1178, "m_ragPos in C_RagdollProp should be at offset 0x1178");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragAngles) == 0x1190, "m_ragAngles in C_RagdollProp should be at offset 0x1190");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_flBlendWeight) == 0x11A8, "m_flBlendWeight in C_RagdollProp should be at offset 0x11A8");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_hRagdollSource) == 0x11AC, "m_hRagdollSource in C_RagdollProp should be at offset 0x11AC");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_iEyeAttachment) == 0x11B0, "m_iEyeAttachment in C_RagdollProp should be at offset 0x11B0");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_flBlendWeightCurrent) == 0x11B4, "m_flBlendWeightCurrent in C_RagdollProp should be at offset 0x11B4");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_parentPhysicsBoneIndices) == 0x11B8, "m_parentPhysicsBoneIndices in C_RagdollProp should be at offset 0x11B8");
-		static_assert(offsetof(CS2::client::C_RagdollProp, m_worldSpaceBoneComputationOrder) == 0x11D0, "m_worldSpaceBoneComputationOrder in C_RagdollProp should be at offset 0x11D0");
-		static_assert(sizeof(CS2::client::C_RagdollProp) == 0x11E8, "C_RagdollProp size should be 0x11E8");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragEnabled) == 0x1170, "m_ragEnabled in C_RagdollProp should be at offset 0x1170");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragPos) == 0x1188, "m_ragPos in C_RagdollProp should be at offset 0x1188");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragAngles) == 0x11A0, "m_ragAngles in C_RagdollProp should be at offset 0x11A0");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_flBlendWeight) == 0x11B8, "m_flBlendWeight in C_RagdollProp should be at offset 0x11B8");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_hRagdollSource) == 0x11BC, "m_hRagdollSource in C_RagdollProp should be at offset 0x11BC");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_iEyeAttachment) == 0x11C0, "m_iEyeAttachment in C_RagdollProp should be at offset 0x11C0");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_flBlendWeightCurrent) == 0x11C4, "m_flBlendWeightCurrent in C_RagdollProp should be at offset 0x11C4");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_parentPhysicsBoneIndices) == 0x11C8, "m_parentPhysicsBoneIndices in C_RagdollProp should be at offset 0x11C8");
+		static_assert(offsetof(CS2::client::C_RagdollProp, m_worldSpaceBoneComputationOrder) == 0x11E0, "m_worldSpaceBoneComputationOrder in C_RagdollProp should be at offset 0x11E0");
+		static_assert(sizeof(CS2::client::C_RagdollProp) == 0x11F8, "C_RagdollProp size should be 0x11F8");
 	}
 }

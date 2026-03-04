@@ -21,21 +21,21 @@ namespace CS2 {
 	namespace server {
 		class CRagdollPropAttached : public CS2::server::CRagdollProp {
 		public:
-			uint32_t m_boneIndexAttached; // 0xbe0 | Schema_Builtin | Size: 0x4
-			uint32_t m_ragdollAttachedObjectIndex; // 0xbe4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_attachmentPointBoneSpace; // 0xbe8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_attachmentPointRagdollSpace; // 0xbf4 | Schema_Atomic | Size: 0xc
-			bool m_bShouldDetach; // 0xc00 | Schema_Builtin | Size: 0x1
+			uint32_t m_boneIndexAttached; // 0xb70 | Schema_Builtin | Size: 0x4
+			uint32_t m_ragdollAttachedObjectIndex; // 0xb74 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_attachmentPointBoneSpace; // 0xb78 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_attachmentPointRagdollSpace; // 0xb84 | Schema_Atomic | Size: 0xc
+			bool m_bShouldDetach; // 0xb90 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf);
-			bool m_bShouldDeleteAttachedActivationRecord; // 0xc10 | Schema_Builtin | Size: 0x1
+			bool m_bShouldDeleteAttachedActivationRecord; // 0xba0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_boneIndexAttached) == 0xBE0, "m_boneIndexAttached in CRagdollPropAttached should be at offset 0xBE0");
-		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_ragdollAttachedObjectIndex) == 0xBE4, "m_ragdollAttachedObjectIndex in CRagdollPropAttached should be at offset 0xBE4");
-		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_attachmentPointBoneSpace) == 0xBE8, "m_attachmentPointBoneSpace in CRagdollPropAttached should be at offset 0xBE8");
-		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_attachmentPointRagdollSpace) == 0xBF4, "m_attachmentPointRagdollSpace in CRagdollPropAttached should be at offset 0xBF4");
-		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_bShouldDetach) == 0xC00, "m_bShouldDetach in CRagdollPropAttached should be at offset 0xC00");
-		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_bShouldDeleteAttachedActivationRecord) == 0xC10, "m_bShouldDeleteAttachedActivationRecord in CRagdollPropAttached should be at offset 0xC10");
-		static_assert(sizeof(CS2::server::CRagdollPropAttached) == 0xC20, "CRagdollPropAttached size should be 0xC20");
+		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_boneIndexAttached) == 0xB70, "m_boneIndexAttached in CRagdollPropAttached should be at offset 0xB70");
+		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_ragdollAttachedObjectIndex) == 0xB74, "m_ragdollAttachedObjectIndex in CRagdollPropAttached should be at offset 0xB74");
+		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_attachmentPointBoneSpace) == 0xB78, "m_attachmentPointBoneSpace in CRagdollPropAttached should be at offset 0xB78");
+		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_attachmentPointRagdollSpace) == 0xB84, "m_attachmentPointRagdollSpace in CRagdollPropAttached should be at offset 0xB84");
+		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_bShouldDetach) == 0xB90, "m_bShouldDetach in CRagdollPropAttached should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_bShouldDeleteAttachedActivationRecord) == 0xBA0, "m_bShouldDeleteAttachedActivationRecord in CRagdollPropAttached should be at offset 0xBA0");
+		static_assert(sizeof(CS2::server::CRagdollPropAttached) == 0xBB0, "CRagdollPropAttached size should be 0xBB0");
 	}
 }

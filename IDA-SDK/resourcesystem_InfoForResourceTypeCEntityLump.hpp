@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCEntityLump {
-    char pad_2388[0x1];
+    char pad_1285[0x1];
 };

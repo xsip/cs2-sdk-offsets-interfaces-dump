@@ -1,9 +1,9 @@
 // generated - do not edit!
 
 import {server_CLogicalEntity} from './CLogicalEntity';
-// Class size: 0x4F8
+// Class size: 0x4B0
 // BaseClass: : public CS2::server::CLogicalEntity
 export const server_CSoundStackSave  = {
 	...server_CLogicalEntity,
-	m_iszStackName: 1264n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+	m_iszStackName: 1192n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 }

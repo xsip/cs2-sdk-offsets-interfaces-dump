@@ -3,9 +3,21 @@
 #include "typedefs.hpp"
 
 #include "worldrenderer_VoxelVisBlockOffset_t.hpp"
+#include "worldrenderer_VoxelVisBlockOffset_t.hpp"
+#include "worldrenderer_VoxelVisBlockOffset_t.hpp"
+#include "worldrenderer_VoxelVisBlockOffset_t.hpp"
+#include "worldrenderer_VoxelVisBlockOffset_t.hpp"
+#include "worldrenderer_VoxelVisBlockOffset_t.hpp"
 
 class worldrenderer_CVoxelVisibility {
-    char vTable2475[0x40];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
+    void **__vftable_6;
+    void **__vftable_7;
     uint32_t m_nBaseClusterCount;
     uint32_t m_nPVSBytesPerCluster;
     Vector m_vMinBounds;
@@ -19,5 +31,5 @@ class worldrenderer_CVoxelVisibility {
     worldrenderer_VoxelVisBlockOffset_t m_EnclosedClustersBlock;
     worldrenderer_VoxelVisBlockOffset_t m_MasksBlock;
     worldrenderer_VoxelVisBlockOffset_t m_nVisBlocks;
-    char end_pad_2476[0x4];
+    char end_pad_2575[0x4];
 };

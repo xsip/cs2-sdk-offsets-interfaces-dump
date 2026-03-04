@@ -9,6 +9,7 @@ namespace CS2 {
 			DecalFlags_t_eAll = 0xffffffff,
 			DecalFlags_t_eAllButCannotClear = 0xfffffffe,
 			DecalFlags_t_eCannotClear = 0x1,
+			DecalFlags_t_eDecalProjectToBackfaces = 0x2,
 			DecalFlags_t_eNone = 0x0
 		};
 	}

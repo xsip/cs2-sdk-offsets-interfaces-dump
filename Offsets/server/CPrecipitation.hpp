@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x9A8
+			// Class size: 0x890
 			namespace CPrecipitation /*: public CS2::server::CBaseTrigger*/ {
 				// NO SCHEMA DATA FOUND!
 			}

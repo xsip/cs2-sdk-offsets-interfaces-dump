@@ -26,13 +26,13 @@ namespace CS2 {
 	namespace client {
 		class C_PointClientUIDialog : public CS2::client::C_BaseClientUIEntity {
 		public:
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hActivator; // 0xee0 | Schema_Atomic | Size: 0x4
-			// char  m_hActivator[0x4]; // 0xee0 | Schema_Atomic | Size: 0x4
-			bool m_bStartEnabled; // 0xee4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hActivator; // 0xeb8 | Schema_Atomic | Size: 0x4
+			// char m_hActivator[0x4]; // 0xeb8 | Schema_Atomic | Size: 0x4
+			bool m_bStartEnabled; // 0xebc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_PointClientUIDialog, m_hActivator) == 0xEE0, "m_hActivator in C_PointClientUIDialog should be at offset 0xEE0");
-		static_assert(offsetof(CS2::client::C_PointClientUIDialog, m_bStartEnabled) == 0xEE4, "m_bStartEnabled in C_PointClientUIDialog should be at offset 0xEE4");
-		static_assert(sizeof(CS2::client::C_PointClientUIDialog) == 0xEE8, "C_PointClientUIDialog size should be 0xEE8");
+		static_assert(offsetof(CS2::client::C_PointClientUIDialog, m_hActivator) == 0xEB8, "m_hActivator in C_PointClientUIDialog should be at offset 0xEB8");
+		static_assert(offsetof(CS2::client::C_PointClientUIDialog, m_bStartEnabled) == 0xEBC, "m_bStartEnabled in C_PointClientUIDialog should be at offset 0xEBC");
+		static_assert(sizeof(CS2::client::C_PointClientUIDialog) == 0xEC0, "C_PointClientUIDialog size should be 0xEC0");
 	}
 }

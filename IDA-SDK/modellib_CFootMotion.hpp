@@ -7,5 +7,5 @@ class modellib_CFootMotion {
     char m_strides[0x18];
     CUtlString m_name;
     bool m_bAdditive;
-    char end_pad_325[0x7];
+    char end_pad_327[0x7];
 };

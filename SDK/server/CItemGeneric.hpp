@@ -30,82 +30,82 @@ namespace CS2 {
 		class CItemGeneric : public CS2::server::CItem {
 		public:
 			S2_PAD(0x14);
-			bool m_bHasTriggerRadius; // 0xb84 | Schema_Builtin | Size: 0x1
-			bool m_bHasPickupRadius; // 0xb85 | Schema_Builtin | Size: 0x1
+			bool m_bHasTriggerRadius; // 0xad4 | Schema_Builtin | Size: 0x1
+			bool m_bHasPickupRadius; // 0xad5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flPickupRadiusSqr; // 0xb88 | Schema_Builtin | Size: 0x4
-			float32 m_flTriggerRadiusSqr; // 0xb8c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLastPickupCheck; // 0xb90 | Schema_DeclaredClass | Size: 0x4
-			bool m_bPlayerCounterListenerAdded; // 0xb94 | Schema_Builtin | Size: 0x1
-			bool m_bPlayerInTriggerRadius; // 0xb95 | Schema_Builtin | Size: 0x1
+			float32 m_flPickupRadiusSqr; // 0xad8 | Schema_Builtin | Size: 0x4
+			float32 m_flTriggerRadiusSqr; // 0xadc | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastPickupCheck; // 0xae0 | Schema_DeclaredClass | Size: 0x4
+			bool m_bPlayerCounterListenerAdded; // 0xae4 | Schema_Builtin | Size: 0x1
+			bool m_bPlayerInTriggerRadius; // 0xae5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hSpawnParticleEffect; // 0xb98 | Schema_Atomic | Size: 0x8
-			char  m_hSpawnParticleEffect[0x8]; // 0xb98 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_pAmbientSoundEffect; // 0xba0 | Schema_Atomic | Size: 0x8
-			bool m_bAutoStartAmbientSound; // 0xba8 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hSpawnParticleEffect; // 0xae8 | Schema_Atomic | Size: 0x8
+			char m_hSpawnParticleEffect[0x8]; // 0xae8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_pAmbientSoundEffect; // 0xaf0 | Schema_Atomic | Size: 0x8
+			bool m_bAutoStartAmbientSound; // 0xaf8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlSymbolLarge m_pSpawnScriptFunction; // 0xbb0 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hPickupParticleEffect; // 0xbb8 | Schema_Atomic | Size: 0x8
-			char  m_hPickupParticleEffect[0x8]; // 0xbb8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_pPickupSoundEffect; // 0xbc0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_pPickupScriptFunction; // 0xbc8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hTimeoutParticleEffect; // 0xbd0 | Schema_Atomic | Size: 0x8
-			char  m_hTimeoutParticleEffect[0x8]; // 0xbd0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_pTimeoutSoundEffect; // 0xbd8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_pTimeoutScriptFunction; // 0xbe0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_pPickupFilterName; // 0xbe8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseFilter> m_hPickupFilter; // 0xbf0 | Schema_Atomic | Size: 0x4
-			// char  m_hPickupFilter[0x4]; // 0xbf0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_pSpawnScriptFunction; // 0xb00 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hPickupParticleEffect; // 0xb08 | Schema_Atomic | Size: 0x8
+			char m_hPickupParticleEffect[0x8]; // 0xb08 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_pPickupSoundEffect; // 0xb10 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_pPickupScriptFunction; // 0xb18 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hTimeoutParticleEffect; // 0xb20 | Schema_Atomic | Size: 0x8
+			char m_hTimeoutParticleEffect[0x8]; // 0xb20 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_pTimeoutSoundEffect; // 0xb28 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_pTimeoutScriptFunction; // 0xb30 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_pPickupFilterName; // 0xb38 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseFilter> m_hPickupFilter; // 0xb40 | Schema_Atomic | Size: 0x4
+			// char m_hPickupFilter[0x4]; // 0xb40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnPickup; // 0xbf8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTimeout; // 0xc20 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTriggerStartTouch; // 0xc48 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTriggerTouch; // 0xc70 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnTriggerEndTouch; // 0xc98 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_pAllowPickupScriptFunction; // 0xcc0 | Schema_Atomic | Size: 0x8
-			float32 m_flPickupRadius; // 0xcc8 | Schema_Builtin | Size: 0x4
-			float32 m_flTriggerRadius; // 0xccc | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_pTriggerSoundEffect; // 0xcd0 | Schema_Atomic | Size: 0x8
-			bool m_bGlowWhenInTrigger; // 0xcd8 | Schema_Builtin | Size: 0x1
-			GlobalTypes::Color m_glowColor; // 0xcd9 | Schema_Atomic | Size: 0x4
-			bool m_bUseable; // 0xcdd | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnPickup; // 0xb48 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnTimeout; // 0xb60 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnTriggerStartTouch; // 0xb78 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnTriggerTouch; // 0xb90 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnTriggerEndTouch; // 0xba8 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_pAllowPickupScriptFunction; // 0xbc0 | Schema_Atomic | Size: 0x8
+			float32 m_flPickupRadius; // 0xbc8 | Schema_Builtin | Size: 0x4
+			float32 m_flTriggerRadius; // 0xbcc | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_pTriggerSoundEffect; // 0xbd0 | Schema_Atomic | Size: 0x8
+			bool m_bGlowWhenInTrigger; // 0xbd8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Color m_glowColor; // 0xbd9 | Schema_Atomic | Size: 0x4
+			bool m_bUseable; // 0xbdd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CHandle<server::CItemGenericTriggerHelper> m_hTriggerHelper; // 0xce0 | Schema_Atomic | Size: 0x4
-			// char  m_hTriggerHelper[0x4]; // 0xce0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CItemGenericTriggerHelper> m_hTriggerHelper; // 0xbe0 | Schema_Atomic | Size: 0x4
+			// char m_hTriggerHelper[0x4]; // 0xbe0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
-		static_assert(offsetof(CS2::server::CItemGeneric, m_bHasTriggerRadius) == 0xB84, "m_bHasTriggerRadius in CItemGeneric should be at offset 0xB84");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_bHasPickupRadius) == 0xB85, "m_bHasPickupRadius in CItemGeneric should be at offset 0xB85");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_flPickupRadiusSqr) == 0xB88, "m_flPickupRadiusSqr in CItemGeneric should be at offset 0xB88");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_flTriggerRadiusSqr) == 0xB8C, "m_flTriggerRadiusSqr in CItemGeneric should be at offset 0xB8C");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_flLastPickupCheck) == 0xB90, "m_flLastPickupCheck in CItemGeneric should be at offset 0xB90");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_bPlayerCounterListenerAdded) == 0xB94, "m_bPlayerCounterListenerAdded in CItemGeneric should be at offset 0xB94");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_bPlayerInTriggerRadius) == 0xB95, "m_bPlayerInTriggerRadius in CItemGeneric should be at offset 0xB95");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_hSpawnParticleEffect) == 0xB98, "m_hSpawnParticleEffect in CItemGeneric should be at offset 0xB98");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pAmbientSoundEffect) == 0xBA0, "m_pAmbientSoundEffect in CItemGeneric should be at offset 0xBA0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_bAutoStartAmbientSound) == 0xBA8, "m_bAutoStartAmbientSound in CItemGeneric should be at offset 0xBA8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pSpawnScriptFunction) == 0xBB0, "m_pSpawnScriptFunction in CItemGeneric should be at offset 0xBB0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_hPickupParticleEffect) == 0xBB8, "m_hPickupParticleEffect in CItemGeneric should be at offset 0xBB8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pPickupSoundEffect) == 0xBC0, "m_pPickupSoundEffect in CItemGeneric should be at offset 0xBC0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pPickupScriptFunction) == 0xBC8, "m_pPickupScriptFunction in CItemGeneric should be at offset 0xBC8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_hTimeoutParticleEffect) == 0xBD0, "m_hTimeoutParticleEffect in CItemGeneric should be at offset 0xBD0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pTimeoutSoundEffect) == 0xBD8, "m_pTimeoutSoundEffect in CItemGeneric should be at offset 0xBD8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pTimeoutScriptFunction) == 0xBE0, "m_pTimeoutScriptFunction in CItemGeneric should be at offset 0xBE0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pPickupFilterName) == 0xBE8, "m_pPickupFilterName in CItemGeneric should be at offset 0xBE8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_hPickupFilter) == 0xBF0, "m_hPickupFilter in CItemGeneric should be at offset 0xBF0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_OnPickup) == 0xBF8, "m_OnPickup in CItemGeneric should be at offset 0xBF8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTimeout) == 0xC20, "m_OnTimeout in CItemGeneric should be at offset 0xC20");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTriggerStartTouch) == 0xC48, "m_OnTriggerStartTouch in CItemGeneric should be at offset 0xC48");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTriggerTouch) == 0xC70, "m_OnTriggerTouch in CItemGeneric should be at offset 0xC70");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTriggerEndTouch) == 0xC98, "m_OnTriggerEndTouch in CItemGeneric should be at offset 0xC98");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pAllowPickupScriptFunction) == 0xCC0, "m_pAllowPickupScriptFunction in CItemGeneric should be at offset 0xCC0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_flPickupRadius) == 0xCC8, "m_flPickupRadius in CItemGeneric should be at offset 0xCC8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_flTriggerRadius) == 0xCCC, "m_flTriggerRadius in CItemGeneric should be at offset 0xCCC");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_pTriggerSoundEffect) == 0xCD0, "m_pTriggerSoundEffect in CItemGeneric should be at offset 0xCD0");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_bGlowWhenInTrigger) == 0xCD8, "m_bGlowWhenInTrigger in CItemGeneric should be at offset 0xCD8");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_glowColor) == 0xCD9, "m_glowColor in CItemGeneric should be at offset 0xCD9");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_bUseable) == 0xCDD, "m_bUseable in CItemGeneric should be at offset 0xCDD");
-		static_assert(offsetof(CS2::server::CItemGeneric, m_hTriggerHelper) == 0xCE0, "m_hTriggerHelper in CItemGeneric should be at offset 0xCE0");
-		static_assert(sizeof(CS2::server::CItemGeneric) == 0xCF0, "CItemGeneric size should be 0xCF0");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_bHasTriggerRadius) == 0xAD4, "m_bHasTriggerRadius in CItemGeneric should be at offset 0xAD4");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_bHasPickupRadius) == 0xAD5, "m_bHasPickupRadius in CItemGeneric should be at offset 0xAD5");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_flPickupRadiusSqr) == 0xAD8, "m_flPickupRadiusSqr in CItemGeneric should be at offset 0xAD8");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_flTriggerRadiusSqr) == 0xADC, "m_flTriggerRadiusSqr in CItemGeneric should be at offset 0xADC");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_flLastPickupCheck) == 0xAE0, "m_flLastPickupCheck in CItemGeneric should be at offset 0xAE0");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_bPlayerCounterListenerAdded) == 0xAE4, "m_bPlayerCounterListenerAdded in CItemGeneric should be at offset 0xAE4");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_bPlayerInTriggerRadius) == 0xAE5, "m_bPlayerInTriggerRadius in CItemGeneric should be at offset 0xAE5");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_hSpawnParticleEffect) == 0xAE8, "m_hSpawnParticleEffect in CItemGeneric should be at offset 0xAE8");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pAmbientSoundEffect) == 0xAF0, "m_pAmbientSoundEffect in CItemGeneric should be at offset 0xAF0");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_bAutoStartAmbientSound) == 0xAF8, "m_bAutoStartAmbientSound in CItemGeneric should be at offset 0xAF8");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pSpawnScriptFunction) == 0xB00, "m_pSpawnScriptFunction in CItemGeneric should be at offset 0xB00");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_hPickupParticleEffect) == 0xB08, "m_hPickupParticleEffect in CItemGeneric should be at offset 0xB08");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pPickupSoundEffect) == 0xB10, "m_pPickupSoundEffect in CItemGeneric should be at offset 0xB10");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pPickupScriptFunction) == 0xB18, "m_pPickupScriptFunction in CItemGeneric should be at offset 0xB18");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_hTimeoutParticleEffect) == 0xB20, "m_hTimeoutParticleEffect in CItemGeneric should be at offset 0xB20");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pTimeoutSoundEffect) == 0xB28, "m_pTimeoutSoundEffect in CItemGeneric should be at offset 0xB28");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pTimeoutScriptFunction) == 0xB30, "m_pTimeoutScriptFunction in CItemGeneric should be at offset 0xB30");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pPickupFilterName) == 0xB38, "m_pPickupFilterName in CItemGeneric should be at offset 0xB38");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_hPickupFilter) == 0xB40, "m_hPickupFilter in CItemGeneric should be at offset 0xB40");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_OnPickup) == 0xB48, "m_OnPickup in CItemGeneric should be at offset 0xB48");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTimeout) == 0xB60, "m_OnTimeout in CItemGeneric should be at offset 0xB60");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTriggerStartTouch) == 0xB78, "m_OnTriggerStartTouch in CItemGeneric should be at offset 0xB78");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTriggerTouch) == 0xB90, "m_OnTriggerTouch in CItemGeneric should be at offset 0xB90");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_OnTriggerEndTouch) == 0xBA8, "m_OnTriggerEndTouch in CItemGeneric should be at offset 0xBA8");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pAllowPickupScriptFunction) == 0xBC0, "m_pAllowPickupScriptFunction in CItemGeneric should be at offset 0xBC0");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_flPickupRadius) == 0xBC8, "m_flPickupRadius in CItemGeneric should be at offset 0xBC8");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_flTriggerRadius) == 0xBCC, "m_flTriggerRadius in CItemGeneric should be at offset 0xBCC");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_pTriggerSoundEffect) == 0xBD0, "m_pTriggerSoundEffect in CItemGeneric should be at offset 0xBD0");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_bGlowWhenInTrigger) == 0xBD8, "m_bGlowWhenInTrigger in CItemGeneric should be at offset 0xBD8");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_glowColor) == 0xBD9, "m_glowColor in CItemGeneric should be at offset 0xBD9");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_bUseable) == 0xBDD, "m_bUseable in CItemGeneric should be at offset 0xBDD");
+		static_assert(offsetof(CS2::server::CItemGeneric, m_hTriggerHelper) == 0xBE0, "m_hTriggerHelper in CItemGeneric should be at offset 0xBE0");
+		static_assert(sizeof(CS2::server::CItemGeneric) == 0xBF0, "CItemGeneric size should be 0xBF0");
 	}
 }

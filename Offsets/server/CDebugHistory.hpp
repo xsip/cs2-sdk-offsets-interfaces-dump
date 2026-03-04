@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x3E94D8
+			// Class size: 0x3E9490
 			namespace CDebugHistory /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_nNpcEvents = 0x3e8530; // int32_t m_nNpcEvents; |  0x3e8530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nNpcEvents = 0x3e84e8; // int32_t m_nNpcEvents; |  0x3e84e8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -9,6 +9,9 @@ export const client_VPhysicsCollisionAttribute_t  = {
 	m_nEntityId: 32n, // uint32_t m_nEntityId; |  0x20 | Schema_Builtin | Size: 0x4
 	m_nOwnerId: 36n, // uint32_t m_nOwnerId; |  0x24 | Schema_Builtin | Size: 0x4
 	m_nHierarchyId: 40n, // uint16_t m_nHierarchyId; |  0x28 | Schema_Builtin | Size: 0x2
-	m_nCollisionGroup: 42n, // uint8_t m_nCollisionGroup; |  0x2a | Schema_Builtin | Size: 0x1
-	m_nCollisionFunctionMask: 43n, // uint8_t m_nCollisionFunctionMask; |  0x2b | Schema_Builtin | Size: 0x1
+	m_nDetailLayerMask: 42n, // uint16_t m_nDetailLayerMask; |  0x2a | Schema_Builtin | Size: 0x2
+	m_nDetailLayerMaskType: 44n, // uint8_t m_nDetailLayerMaskType; |  0x2c | Schema_Builtin | Size: 0x1
+	m_nTargetDetailLayer: 45n, // uint8_t m_nTargetDetailLayer; |  0x2d | Schema_Builtin | Size: 0x1
+	m_nCollisionGroup: 46n, // uint8_t m_nCollisionGroup; |  0x2e | Schema_Builtin | Size: 0x1
+	m_nCollisionFunctionMask: 47n, // uint8_t m_nCollisionFunctionMask; |  0x2f | Schema_Builtin | Size: 0x1
 }

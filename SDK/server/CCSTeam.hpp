@@ -21,38 +21,38 @@ namespace CS2 {
 	namespace server {
 		class CCSTeam : public CS2::server::CTeam {
 		public:
-			int32_t m_nLastRecievedShorthandedRoundBonus; // 0x5a8 | Schema_Builtin | Size: 0x4
-			int32_t m_nShorthandedRoundBonusStartRound; // 0x5ac | Schema_Builtin | Size: 0x4
-			bool m_bSurrendered; // 0x5b0 | Schema_Builtin | Size: 0x1
-			char m_szTeamMatchStat[512]; // 0x5b1 | Schema_FixedArray | Size: 0x200
+			int32_t m_nLastRecievedShorthandedRoundBonus; // 0x560 | Schema_Builtin | Size: 0x4
+			int32_t m_nShorthandedRoundBonusStartRound; // 0x564 | Schema_Builtin | Size: 0x4
+			bool m_bSurrendered; // 0x568 | Schema_Builtin | Size: 0x1
+			char m_szTeamMatchStat[512]; // 0x569 | Schema_FixedArray | Size: 0x200
 			S2_PAD(0x3);
-			int32_t m_numMapVictories; // 0x7b4 | Schema_Builtin | Size: 0x4
-			int32_t m_scoreFirstHalf; // 0x7b8 | Schema_Builtin | Size: 0x4
-			int32_t m_scoreSecondHalf; // 0x7bc | Schema_Builtin | Size: 0x4
-			int32_t m_scoreOvertime; // 0x7c0 | Schema_Builtin | Size: 0x4
-			char m_szClanTeamname[129]; // 0x7c4 | Schema_FixedArray | Size: 0x81
+			int32_t m_numMapVictories; // 0x76c | Schema_Builtin | Size: 0x4
+			int32_t m_scoreFirstHalf; // 0x770 | Schema_Builtin | Size: 0x4
+			int32_t m_scoreSecondHalf; // 0x774 | Schema_Builtin | Size: 0x4
+			int32_t m_scoreOvertime; // 0x778 | Schema_Builtin | Size: 0x4
+			char m_szClanTeamname[129]; // 0x77c | Schema_FixedArray | Size: 0x81
 			S2_PAD(0x3);
-			uint32_t m_iClanID; // 0x848 | Schema_Builtin | Size: 0x4
-			char m_szTeamFlagImage[8]; // 0x84c | Schema_FixedArray | Size: 0x8
-			char m_szTeamLogoImage[8]; // 0x854 | Schema_FixedArray | Size: 0x8
-			float32 m_flNextResourceTime; // 0x85c | Schema_Builtin | Size: 0x4
-			int32_t m_iLastUpdateSentAt; // 0x860 | Schema_Builtin | Size: 0x4
+			uint32_t m_iClanID; // 0x800 | Schema_Builtin | Size: 0x4
+			char m_szTeamFlagImage[8]; // 0x804 | Schema_FixedArray | Size: 0x8
+			char m_szTeamLogoImage[8]; // 0x80c | Schema_FixedArray | Size: 0x8
+			float32 m_flNextResourceTime; // 0x814 | Schema_Builtin | Size: 0x4
+			int32_t m_iLastUpdateSentAt; // 0x818 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSTeam, m_nLastRecievedShorthandedRoundBonus) == 0x5A8, "m_nLastRecievedShorthandedRoundBonus in CCSTeam should be at offset 0x5A8");
-		static_assert(offsetof(CS2::server::CCSTeam, m_nShorthandedRoundBonusStartRound) == 0x5AC, "m_nShorthandedRoundBonusStartRound in CCSTeam should be at offset 0x5AC");
-		static_assert(offsetof(CS2::server::CCSTeam, m_bSurrendered) == 0x5B0, "m_bSurrendered in CCSTeam should be at offset 0x5B0");
-		static_assert(offsetof(CS2::server::CCSTeam, m_szTeamMatchStat) == 0x5B1, "m_szTeamMatchStat in CCSTeam should be at offset 0x5B1");
-		static_assert(offsetof(CS2::server::CCSTeam, m_numMapVictories) == 0x7B4, "m_numMapVictories in CCSTeam should be at offset 0x7B4");
-		static_assert(offsetof(CS2::server::CCSTeam, m_scoreFirstHalf) == 0x7B8, "m_scoreFirstHalf in CCSTeam should be at offset 0x7B8");
-		static_assert(offsetof(CS2::server::CCSTeam, m_scoreSecondHalf) == 0x7BC, "m_scoreSecondHalf in CCSTeam should be at offset 0x7BC");
-		static_assert(offsetof(CS2::server::CCSTeam, m_scoreOvertime) == 0x7C0, "m_scoreOvertime in CCSTeam should be at offset 0x7C0");
-		static_assert(offsetof(CS2::server::CCSTeam, m_szClanTeamname) == 0x7C4, "m_szClanTeamname in CCSTeam should be at offset 0x7C4");
-		static_assert(offsetof(CS2::server::CCSTeam, m_iClanID) == 0x848, "m_iClanID in CCSTeam should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CCSTeam, m_szTeamFlagImage) == 0x84C, "m_szTeamFlagImage in CCSTeam should be at offset 0x84C");
-		static_assert(offsetof(CS2::server::CCSTeam, m_szTeamLogoImage) == 0x854, "m_szTeamLogoImage in CCSTeam should be at offset 0x854");
-		static_assert(offsetof(CS2::server::CCSTeam, m_flNextResourceTime) == 0x85C, "m_flNextResourceTime in CCSTeam should be at offset 0x85C");
-		static_assert(offsetof(CS2::server::CCSTeam, m_iLastUpdateSentAt) == 0x860, "m_iLastUpdateSentAt in CCSTeam should be at offset 0x860");
-		static_assert(sizeof(CS2::server::CCSTeam) == 0x868, "CCSTeam size should be 0x868");
+		static_assert(offsetof(CS2::server::CCSTeam, m_nLastRecievedShorthandedRoundBonus) == 0x560, "m_nLastRecievedShorthandedRoundBonus in CCSTeam should be at offset 0x560");
+		static_assert(offsetof(CS2::server::CCSTeam, m_nShorthandedRoundBonusStartRound) == 0x564, "m_nShorthandedRoundBonusStartRound in CCSTeam should be at offset 0x564");
+		static_assert(offsetof(CS2::server::CCSTeam, m_bSurrendered) == 0x568, "m_bSurrendered in CCSTeam should be at offset 0x568");
+		static_assert(offsetof(CS2::server::CCSTeam, m_szTeamMatchStat) == 0x569, "m_szTeamMatchStat in CCSTeam should be at offset 0x569");
+		static_assert(offsetof(CS2::server::CCSTeam, m_numMapVictories) == 0x76C, "m_numMapVictories in CCSTeam should be at offset 0x76C");
+		static_assert(offsetof(CS2::server::CCSTeam, m_scoreFirstHalf) == 0x770, "m_scoreFirstHalf in CCSTeam should be at offset 0x770");
+		static_assert(offsetof(CS2::server::CCSTeam, m_scoreSecondHalf) == 0x774, "m_scoreSecondHalf in CCSTeam should be at offset 0x774");
+		static_assert(offsetof(CS2::server::CCSTeam, m_scoreOvertime) == 0x778, "m_scoreOvertime in CCSTeam should be at offset 0x778");
+		static_assert(offsetof(CS2::server::CCSTeam, m_szClanTeamname) == 0x77C, "m_szClanTeamname in CCSTeam should be at offset 0x77C");
+		static_assert(offsetof(CS2::server::CCSTeam, m_iClanID) == 0x800, "m_iClanID in CCSTeam should be at offset 0x800");
+		static_assert(offsetof(CS2::server::CCSTeam, m_szTeamFlagImage) == 0x804, "m_szTeamFlagImage in CCSTeam should be at offset 0x804");
+		static_assert(offsetof(CS2::server::CCSTeam, m_szTeamLogoImage) == 0x80C, "m_szTeamLogoImage in CCSTeam should be at offset 0x80C");
+		static_assert(offsetof(CS2::server::CCSTeam, m_flNextResourceTime) == 0x814, "m_flNextResourceTime in CCSTeam should be at offset 0x814");
+		static_assert(offsetof(CS2::server::CCSTeam, m_iLastUpdateSentAt) == 0x818, "m_iLastUpdateSentAt in CCSTeam should be at offset 0x818");
+		static_assert(sizeof(CS2::server::CCSTeam) == 0x820, "CCSTeam size should be 0x820");
 	}
 }

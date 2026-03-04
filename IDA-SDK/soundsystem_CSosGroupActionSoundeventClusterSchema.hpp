@@ -4,7 +4,7 @@
 
 
 class soundsystem_CSosGroupActionSoundeventClusterSchema {
-    char pad_545[0x8];
+    char pad_556[0x8];
     int32_t m_nMinNearby;
     float32 m_flClusterEpsilon;
     CUtlString m_shouldPlayOpvar;
@@ -12,5 +12,5 @@ class soundsystem_CSosGroupActionSoundeventClusterSchema {
     CUtlString m_clusterSizeOpvar;
     CUtlString m_groupBoundingBoxMinsOpvar;
     CUtlString m_groupBoundingBoxMaxsOpvar;
-    char end_pad_549[0x18];
+    char end_pad_560[0x18];
 };

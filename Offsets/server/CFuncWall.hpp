@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x7E0
+			// Class size: 0x738
 			namespace CFuncWall /*: public CS2::server::CBaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_nState = 0x7d8; // int32_t m_nState; |  0x7d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nState = 0x730; // int32_t m_nState; |  0x730 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

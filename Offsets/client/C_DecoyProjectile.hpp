@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1480
+			// Class size: 0x1468
 			namespace C_DecoyProjectile /*: public CS2::client::C_BaseCSGrenadeProjectile*/ {
-				constexpr std::ptrdiff_t m_nDecoyShotTick = 0x1450; // int32_t m_nDecoyShotTick; |  0x1450 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nClientLastKnownDecoyShotTick = 0x1454; // int32_t m_nClientLastKnownDecoyShotTick; |  0x1454 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTimeParticleEffectSpawn = 0x1478; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nDecoyShotTick = 0x1438; // int32_t m_nDecoyShotTick; |  0x1438 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nClientLastKnownDecoyShotTick = 0x143c; // int32_t m_nClientLastKnownDecoyShotTick; |  0x143c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTimeParticleEffectSpawn = 0x1460; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

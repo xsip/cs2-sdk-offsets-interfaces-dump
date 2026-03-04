@@ -11,6 +11,7 @@
 
 
 #include <SDK/smartprops/CSmartPropVariable.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeIMaterial2.hpp>
 
 
 
@@ -22,7 +23,7 @@ namespace CS2 {
 		class CSmartPropVariable_Material : public CS2::smartprops::CSmartPropVariable {
 		public:
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIMaterial2>> m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0xe0
-			char  m_DefaultValue[0xe0]; // 0x38 | Schema_Atomic | Size: 0xe0
+			char m_DefaultValue[0xe0]; // 0x38 | Schema_Atomic | Size: 0xe0
 		};
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Material, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_Material should be at offset 0x38");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_Material) == 0x118, "CSmartPropVariable_Material size should be 0x118");

@@ -22,14 +22,14 @@ namespace CS2 {
 		class CInfoVisibilityBox : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x4);
-			int32_t m_nMode; // 0x4f4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vBoxSize; // 0x4f8 | Schema_Atomic | Size: 0xc
-			bool m_bEnabled; // 0x504 | Schema_Builtin | Size: 0x1
+			int32_t m_nMode; // 0x4ac | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vBoxSize; // 0x4b0 | Schema_Atomic | Size: 0xc
+			bool m_bEnabled; // 0x4bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_nMode) == 0x4F4, "m_nMode in CInfoVisibilityBox should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_vBoxSize) == 0x4F8, "m_vBoxSize in CInfoVisibilityBox should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_bEnabled) == 0x504, "m_bEnabled in CInfoVisibilityBox should be at offset 0x504");
-		static_assert(sizeof(CS2::server::CInfoVisibilityBox) == 0x508, "CInfoVisibilityBox size should be 0x508");
+		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_nMode) == 0x4AC, "m_nMode in CInfoVisibilityBox should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_vBoxSize) == 0x4B0, "m_vBoxSize in CInfoVisibilityBox should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_bEnabled) == 0x4BC, "m_bEnabled in CInfoVisibilityBox should be at offset 0x4BC");
+		static_assert(sizeof(CS2::server::CInfoVisibilityBox) == 0x4C0, "CInfoVisibilityBox size should be 0x4C0");
 	}
 }

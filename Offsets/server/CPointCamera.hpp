@@ -8,34 +8,34 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x550
+			// Class size: 0x508
 			namespace CPointCamera /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_FOV = 0x4f0; // float32 m_FOV; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Resolution = 0x4f4; // float32 m_Resolution; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bFogEnable = 0x4f8; // bool m_bFogEnable; |  0x4f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_FogColor = 0x4f9; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogStart = 0x500; // float32 m_flFogStart; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogEnd = 0x504; // float32 m_flFogEnd; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogMaxDensity = 0x508; // float32 m_flFogMaxDensity; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bActive = 0x50c; // bool m_bActive; |  0x50c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUseScreenAspectRatio = 0x50d; // bool m_bUseScreenAspectRatio; |  0x50d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flAspectRatio = 0x510; // float32 m_flAspectRatio; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bNoSky = 0x514; // bool m_bNoSky; |  0x514 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_fBrightness = 0x518; // float32 m_fBrightness; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flZFar = 0x51c; // float32 m_flZFar; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flZNear = 0x520; // float32 m_flZNear; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bCanHLTVUse = 0x524; // bool m_bCanHLTVUse; |  0x524 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bAlignWithParent = 0x525; // bool m_bAlignWithParent; |  0x525 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bDofEnabled = 0x526; // bool m_bDofEnabled; |  0x526 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDofNearBlurry = 0x528; // float32 m_flDofNearBlurry; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofNearCrisp = 0x52c; // float32 m_flDofNearCrisp; |  0x52c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofFarCrisp = 0x530; // float32 m_flDofFarCrisp; |  0x530 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofFarBlurry = 0x534; // float32 m_flDofFarBlurry; |  0x534 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofTiltToGround = 0x538; // float32 m_flDofTiltToGround; |  0x538 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TargetFOV = 0x53c; // float32 m_TargetFOV; |  0x53c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_DegreesPerSecond = 0x540; // float32 m_DegreesPerSecond; |  0x540 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsOn = 0x544; // bool m_bIsOn; |  0x544 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pNext = 0x548; // server::CPointCamera**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_FOV = 0x4a8; // float32 m_FOV; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Resolution = 0x4ac; // float32 m_Resolution; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bFogEnable = 0x4b0; // bool m_bFogEnable; |  0x4b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_FogColor = 0x4b1; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogStart = 0x4b8; // float32 m_flFogStart; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogEnd = 0x4bc; // float32 m_flFogEnd; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogMaxDensity = 0x4c0; // float32 m_flFogMaxDensity; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bActive = 0x4c4; // bool m_bActive; |  0x4c4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUseScreenAspectRatio = 0x4c5; // bool m_bUseScreenAspectRatio; |  0x4c5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flAspectRatio = 0x4c8; // float32 m_flAspectRatio; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bNoSky = 0x4cc; // bool m_bNoSky; |  0x4cc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_fBrightness = 0x4d0; // float32 m_fBrightness; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZFar = 0x4d4; // float32 m_flZFar; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZNear = 0x4d8; // float32 m_flZNear; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bCanHLTVUse = 0x4dc; // bool m_bCanHLTVUse; |  0x4dc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bAlignWithParent = 0x4dd; // bool m_bAlignWithParent; |  0x4dd | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bDofEnabled = 0x4de; // bool m_bDofEnabled; |  0x4de | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDofNearBlurry = 0x4e0; // float32 m_flDofNearBlurry; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofNearCrisp = 0x4e4; // float32 m_flDofNearCrisp; |  0x4e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofFarCrisp = 0x4e8; // float32 m_flDofFarCrisp; |  0x4e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofFarBlurry = 0x4ec; // float32 m_flDofFarBlurry; |  0x4ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofTiltToGround = 0x4f0; // float32 m_flDofTiltToGround; |  0x4f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_TargetFOV = 0x4f4; // float32 m_TargetFOV; |  0x4f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_DegreesPerSecond = 0x4f8; // float32 m_DegreesPerSecond; |  0x4f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsOn = 0x4fc; // bool m_bIsOn; |  0x4fc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_pNext = 0x500; // server::CPointCamera**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

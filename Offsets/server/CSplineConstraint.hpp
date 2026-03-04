@@ -8,22 +8,22 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x620
+			// Class size: 0x5B8
 			namespace CSplineConstraint /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_vAnchorOffsetRestore = 0x5b0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hSplineEntity = 0x5bc; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnableLateralConstraint = 0x5c8; // bool m_bEnableLateralConstraint; |  0x5c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEnableVerticalConstraint = 0x5c9; // bool m_bEnableVerticalConstraint; |  0x5c9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEnableAngularConstraint = 0x5ca; // bool m_bEnableAngularConstraint; |  0x5ca | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEnableLimit = 0x5cb; // bool m_bEnableLimit; |  0x5cb | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFireEventsOnPath = 0x5cc; // bool m_bFireEventsOnPath; |  0x5cc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flLinearFrequency = 0x5d0; // float32 m_flLinearFrequency; |  0x5d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinarDampingRatio = 0x5d4; // float32 m_flLinarDampingRatio; |  0x5d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flJointFriction = 0x5d8; // float32 m_flJointFriction; |  0x5d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTransitionTime = 0x5dc; // float32 m_flTransitionTime; |  0x5dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vPreSolveAnchorPos = 0x600; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_StartTransitionTime = 0x60c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vTangentSpaceAnchorAtTransitionStart = 0x610; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vAnchorOffsetRestore = 0x558; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hSplineEntity = 0x564; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnableLateralConstraint = 0x570; // bool m_bEnableLateralConstraint; |  0x570 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnableVerticalConstraint = 0x571; // bool m_bEnableVerticalConstraint; |  0x571 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnableAngularConstraint = 0x572; // bool m_bEnableAngularConstraint; |  0x572 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnableLimit = 0x573; // bool m_bEnableLimit; |  0x573 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFireEventsOnPath = 0x574; // bool m_bFireEventsOnPath; |  0x574 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flLinearFrequency = 0x578; // float32 m_flLinearFrequency; |  0x578 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinarDampingRatio = 0x57c; // float32 m_flLinarDampingRatio; |  0x57c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flJointFriction = 0x580; // float32 m_flJointFriction; |  0x580 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTransitionTime = 0x584; // float32 m_flTransitionTime; |  0x584 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vPreSolveAnchorPos = 0x598; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_StartTransitionTime = 0x5a4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vTangentSpaceAnchorAtTransitionStart = 0x5a8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

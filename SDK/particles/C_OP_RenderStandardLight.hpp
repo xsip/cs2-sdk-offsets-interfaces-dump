@@ -14,6 +14,7 @@
 #include <SDK/particles/ParticleLightTypeChoiceList_t.hpp>
 #include <SDK/particleslib/CParticleCollectionVecInput.hpp>
 #include <SDK/particles/ParticleColorBlendType_t.hpp>
+#include <SDK/particleslib/CPerParticleFloatInput.hpp>
 #include <SDK/particleslib/CParticleCollectionFloatInput.hpp>
 #include <SDK/particles/StandardLightingAttenuationStyle_t.hpp>
 #include <SDK/particles/ParticleLightFogLightingMode_t.hpp>
@@ -35,7 +36,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionVecInput m_vecColorScale; // 0x228 | Schema_DeclaredClass | Size: 0x6b8
 			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x8e0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			particleslib::CParticleCollectionFloatInput m_flIntensity; // 0x8e8 | Schema_DeclaredClass | Size: 0x170
+			particleslib::CPerParticleFloatInput m_flIntensity; // 0x8e8 | Schema_DeclaredClass | Size: 0x170
 			bool m_bCastShadows; // 0xa58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			particleslib::CParticleCollectionFloatInput m_flTheta; // 0xa60 | Schema_DeclaredClass | Size: 0x170

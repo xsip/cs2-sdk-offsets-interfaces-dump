@@ -11,9 +11,11 @@
 
 
 #include <SDK/particles/CParticleFunctionRenderer.hpp>
+#include <SDK/particles/ModelReference_t.hpp>
 #include <SDK/particles/ParticleAttributeIndex_t.hpp>
 #include <SDK/particleslib/CPerParticleVecInput.hpp>
 #include <SDK/particleslib/CPerParticleFloatInput.hpp>
+#include <SDK/particles/MaterialVariable_t.hpp>
 #include <SDK/particleslib/CParticleModelInput.hpp>
 #include <SDK/particles/RenderModelSubModelFieldType_t.hpp>
 #include <SDK/particleslib/CParticleCollectionFloatInput.hpp>
@@ -22,12 +24,6 @@
 
 
 
-namespace CS2 {
-	namespace particles {
-		class ModelReference_t;
-		class MaterialVariable_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -41,7 +37,7 @@ namespace CS2 {
 			bool m_bOnlyRenderInEffecsGameOverlay; // 0x223 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<particles::ModelReference_t> m_ModelList; // 0x228 | Schema_Atomic | Size: 0x18
-			// char  m_ModelList[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
+			// char m_ModelList[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
 			particles::ParticleAttributeIndex_t m_nBodyGroupField; // 0x240 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nSubModelField; // 0x244 | Schema_DeclaredClass | Size: 0x4
 			bool m_bIgnoreNormal; // 0x248 | Schema_Builtin | Size: 0x1
@@ -73,12 +69,12 @@ namespace CS2 {
 			char m_ClothEffectName[64]; // 0x1a11 | Schema_FixedArray | Size: 0x40
 			S2_PAD(0x7);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hOverrideMaterial; // 0x1a58 | Schema_Atomic | Size: 0x8
-			char  m_hOverrideMaterial[0x8]; // 0x1a58 | Schema_Atomic | Size: 0x8
+			char m_hOverrideMaterial[0x8]; // 0x1a58 | Schema_Atomic | Size: 0x8
 			bool m_bOverrideTranslucentMaterials; // 0x1a60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			particleslib::CPerParticleFloatInput m_nSkin; // 0x1a68 | Schema_DeclaredClass | Size: 0x170
 			GlobalTypes::CUtlVector<particles::MaterialVariable_t> m_MaterialVars; // 0x1bd8 | Schema_Atomic | Size: 0x18
-			// char  m_MaterialVars[0x18]; // 0x1bd8 | Schema_Atomic | Size: 0x18
+			// char m_MaterialVars[0x18]; // 0x1bd8 | Schema_Atomic | Size: 0x18
 			particleslib::CPerParticleFloatInput m_flRenderFilter; // 0x1bf0 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flManualModelSelection; // 0x1d60 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleModelInput m_modelInput; // 0x1ed0 | Schema_DeclaredClass | Size: 0x60

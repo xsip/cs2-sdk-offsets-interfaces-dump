@@ -4,7 +4,7 @@
 
 
 class animgraphlib_CAnimInputDamping {
-    char vTable34[0x8];
+    void **__vftable_0;
     animgraphlib_DampingSpeedFunction m_speedFunction;
     float32 m_fSpeedScale;
     float32 m_fFallingSpeedScale;

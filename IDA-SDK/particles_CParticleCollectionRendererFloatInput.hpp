@@ -3,27 +3,29 @@
 #include "typedefs.hpp"
 
 #include "particles_ParticleAttributeIndex_t.hpp"
+#include "particles_ParticleAttributeIndex_t.hpp"
+#include "particles_ParticleAttributeIndex_t.hpp"
 
 class particles_CParticleCollectionRendererFloatInput {
-    char pad_1711[0x10];
+    char pad_607[0x10];
     particleslib_ParticleFloatType_t m_nType;
     particleslib_ParticleFloatMapType_t m_nMapType;
     float32 m_flLiteralValue;
-    char pad_1704[0x4];
+    char pad_600[0x4];
     CParticleNamedValueRef m_NamedValue;
     int32_t m_nControlPoint;
     particles_ParticleAttributeIndex_t m_nScalarAttribute;
     particles_ParticleAttributeIndex_t m_nVectorAttribute;
     int32_t m_nVectorComponent;
     bool m_bReverseOrder;
-    char pad_1705[0x3];
+    char pad_601[0x3];
     float32 m_flRandomMin;
     float32 m_flRandomMax;
     bool m_bHasRandomSignFlip;
-    char pad_1706[0x3];
+    char pad_602[0x3];
     int32_t m_nRandomSeed;
     particleslib_ParticleFloatRandomMode_t m_nRandomMode;
-    char pad_1707[0x8];
+    char pad_603[0x8];
     CUtlString m_strSnapshotSubset;
     float32 m_flLOD0;
     float32 m_flLOD1;
@@ -43,10 +45,10 @@ class particles_CParticleCollectionRendererFloatInput {
     float32 m_flNoiseTurbulenceMix;
     float32 m_flNoiseImgPreviewScale;
     bool m_bNoiseImgPreviewLive;
-    char pad_1708[0xb];
+    char pad_604[0xb];
     float32 m_flNoCameraFallback;
     bool m_bUseBoundsCenter;
-    char pad_1709[0x3];
+    char pad_605[0x3];
     particleslib_ParticleFloatInputMode_t m_nInputMode;
     float32 m_flMultFactor;
     float32 m_flInput0;
@@ -60,8 +62,8 @@ class particles_CParticleCollectionRendererFloatInput {
     particleslib_ParticleFloatRoundType_t m_nRoundType;
     particleslib_ParticleFloatBiasType_t m_nBiasType;
     float32 m_flBiasParameter;
-    char pad_1710[0x4];
+    char pad_606[0x4];
     CPiecewiseCurve m_Curve;
-    char pad_1788[0x170];
-    char pad_1789[0x170];
+    char pad_681[0x170];
+    char pad_682[0x170];
 };

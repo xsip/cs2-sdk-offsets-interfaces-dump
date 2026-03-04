@@ -12,5 +12,5 @@ class pulse_runtime_lib_CPulse_InvokeBinding {
     pulse_runtime_lib_PulseRuntimeCellIndex_t m_nCellIndex;
     pulse_runtime_lib_PulseRuntimeChunkIndex_t m_nSrcChunk;
     int32_t m_nSrcInstruction;
-    char end_pad_527[0x64];
+    char end_pad_538[0x64];
 };

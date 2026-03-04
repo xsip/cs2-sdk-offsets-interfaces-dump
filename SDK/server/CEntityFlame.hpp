@@ -22,32 +22,32 @@ namespace CS2 {
 	namespace server {
 		class CEntityFlame : public CS2::server::CBaseEntity {
 		public:
-			GlobalTypes::CHandle<server::CBaseEntity> m_hEntAttached; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// char  m_hEntAttached[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
-			bool m_bCheapEffect; // 0x4f4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseEntity> m_hEntAttached; // 0x4a8 | Schema_Atomic | Size: 0x4
+			// char m_hEntAttached[0x4]; // 0x4a8 | Schema_Atomic | Size: 0x4
+			bool m_bCheapEffect; // 0x4ac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flSize; // 0x4f8 | Schema_Builtin | Size: 0x4
-			bool m_bUseHitboxes; // 0x4fc | Schema_Builtin | Size: 0x1
+			float32 m_flSize; // 0x4b0 | Schema_Builtin | Size: 0x4
+			bool m_bUseHitboxes; // 0x4b4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_iNumHitboxFires; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_flHitboxFireScale; // 0x504 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLifetime; // 0x508 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hAttacker; // 0x50c | Schema_Atomic | Size: 0x4
-			// char  m_hAttacker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
-			float32 m_flDirectDamagePerSecond; // 0x510 | Schema_Builtin | Size: 0x4
-			int32_t m_iCustomDamageType; // 0x514 | Schema_Builtin | Size: 0x4
+			int32_t m_iNumHitboxFires; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_flHitboxFireScale; // 0x4bc | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLifetime; // 0x4c0 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hAttacker; // 0x4c4 | Schema_Atomic | Size: 0x4
+			// char m_hAttacker[0x4]; // 0x4c4 | Schema_Atomic | Size: 0x4
+			float32 m_flDirectDamagePerSecond; // 0x4c8 | Schema_Builtin | Size: 0x4
+			int32_t m_iCustomDamageType; // 0x4cc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEntityFlame, m_hEntAttached) == 0x4F0, "m_hEntAttached in CEntityFlame should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_bCheapEffect) == 0x4F4, "m_bCheapEffect in CEntityFlame should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_flSize) == 0x4F8, "m_flSize in CEntityFlame should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_bUseHitboxes) == 0x4FC, "m_bUseHitboxes in CEntityFlame should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_iNumHitboxFires) == 0x500, "m_iNumHitboxFires in CEntityFlame should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_flHitboxFireScale) == 0x504, "m_flHitboxFireScale in CEntityFlame should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_flLifetime) == 0x508, "m_flLifetime in CEntityFlame should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_hAttacker) == 0x50C, "m_hAttacker in CEntityFlame should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_flDirectDamagePerSecond) == 0x510, "m_flDirectDamagePerSecond in CEntityFlame should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CEntityFlame, m_iCustomDamageType) == 0x514, "m_iCustomDamageType in CEntityFlame should be at offset 0x514");
-		static_assert(sizeof(CS2::server::CEntityFlame) == 0x530, "CEntityFlame size should be 0x530");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_hEntAttached) == 0x4A8, "m_hEntAttached in CEntityFlame should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_bCheapEffect) == 0x4AC, "m_bCheapEffect in CEntityFlame should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_flSize) == 0x4B0, "m_flSize in CEntityFlame should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_bUseHitboxes) == 0x4B4, "m_bUseHitboxes in CEntityFlame should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_iNumHitboxFires) == 0x4B8, "m_iNumHitboxFires in CEntityFlame should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_flHitboxFireScale) == 0x4BC, "m_flHitboxFireScale in CEntityFlame should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_flLifetime) == 0x4C0, "m_flLifetime in CEntityFlame should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_hAttacker) == 0x4C4, "m_hAttacker in CEntityFlame should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_flDirectDamagePerSecond) == 0x4C8, "m_flDirectDamagePerSecond in CEntityFlame should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEntityFlame, m_iCustomDamageType) == 0x4CC, "m_iCustomDamageType in CEntityFlame should be at offset 0x4CC");
+		static_assert(sizeof(CS2::server::CEntityFlame) == 0x4E8, "CEntityFlame size should be 0x4E8");
 	}
 }

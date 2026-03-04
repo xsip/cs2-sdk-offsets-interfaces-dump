@@ -11,14 +11,10 @@
 
 
 #include <SDK/animgraphlib/CUnaryUpdateNode.hpp>
+#include <SDK/animgraphlib/CDirectPlaybackTagData.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class CDirectPlaybackTagData;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -31,7 +27,7 @@ namespace CS2 {
 			bool m_bResetOnFinish; // 0x75 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			GlobalTypes::CUtlVector<animgraphlib::CDirectPlaybackTagData> m_allTags; // 0x78 | Schema_Atomic | Size: 0x18
-			// char  m_allTags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
+			// char m_allTags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::CDirectPlaybackUpdateNode, m_bFinishEarly) == 0x74, "m_bFinishEarly in CDirectPlaybackUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CDirectPlaybackUpdateNode, m_bResetOnFinish) == 0x75, "m_bResetOnFinish in CDirectPlaybackUpdateNode should be at offset 0x75");

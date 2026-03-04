@@ -8,14 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x598
+			// Class size: 0x538
 			namespace CPhysLength /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_offset = 0x560; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
-				constexpr std::ptrdiff_t m_vecAttach = 0x578; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_addLength = 0x584; // float32 m_addLength; |  0x584 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_minLength = 0x588; // float32 m_minLength; |  0x588 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_totalLength = 0x58c; // float32 m_totalLength; |  0x58c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnableCollision = 0x590; // bool m_bEnableCollision; |  0x590 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_offset = 0x508; // GlobalTypes::Vector[2]  | Schema_FixedArray | Size: 0x18
+				constexpr std::ptrdiff_t m_vecAttach = 0x520; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_addLength = 0x52c; // float32 m_addLength; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_minLength = 0x530; // float32 m_minLength; |  0x530 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_totalLength = 0x534; // float32 m_totalLength; |  0x534 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

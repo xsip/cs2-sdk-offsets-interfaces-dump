@@ -4,9 +4,10 @@
 
 
 class client_CGlobalLightBase {
-    char vTable957[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     bool m_bSpotLight;
-    char pad_958[0x3];
+    char pad_1759[0x3];
     Vector m_SpotLightOrigin;
     QAngle m_SpotLightAngles;
     Vector m_ShadowDirection;
@@ -22,7 +23,7 @@ class client_CGlobalLightBase {
     Color m_AmbientColor1;
     Color m_AmbientColor2;
     Color m_AmbientColor3;
-    char pad_959[0x2];
+    char pad_1760[0x2];
     float32 m_flSunDistance;
     float32 m_flFOV;
     float32 m_flNearZ;
@@ -30,26 +31,26 @@ class client_CGlobalLightBase {
     bool m_bEnableShadows;
     bool m_bOldEnableShadows;
     bool m_bBackgroundClearNotRequired;
-    char pad_960[0x1];
+    char pad_1761[0x1];
     float32 m_flCloudScale;
     float32 m_flCloud1Speed;
     float32 m_flCloud1Direction;
     float32 m_flCloud2Speed;
     float32 m_flCloud2Direction;
-    char pad_961[0xc];
+    char pad_1762[0xc];
     float32 m_flAmbientScale1;
     float32 m_flAmbientScale2;
     float32 m_flGroundScale;
     float32 m_flLightScale;
     float32 m_flFoWDarkness;
     bool m_bEnableSeparateSkyboxFog;
-    char pad_962[0x3];
+    char pad_1763[0x3];
     Vector m_vFowColor;
     Vector m_ViewOrigin;
     QAngle m_ViewAngles;
     float32 m_flViewFoV;
     Vector m_WorldPoints[8];
-    char pad_963[0x358];
+    char pad_1764[0x358];
     Vector2D m_vFogOffsetLayer0;
     Vector2D m_vFogOffsetLayer1;
     char m_hEnvWind[0x4];

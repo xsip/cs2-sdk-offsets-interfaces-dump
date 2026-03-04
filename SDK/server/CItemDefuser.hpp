@@ -22,12 +22,12 @@ namespace CS2 {
 	namespace server {
 		class CItemDefuser : public CS2::server::CItem {
 		public:
-			server::EntitySpottedState_t m_entitySpottedState; // 0xb70 | Schema_DeclaredClass | Size: 0x18
-			int32_t m_nSpotRules; // 0xb88 | Schema_Builtin | Size: 0x4
+			server::EntitySpottedState_t m_entitySpottedState; // 0xac0 | Schema_DeclaredClass | Size: 0x18
+			int32_t m_nSpotRules; // 0xad8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CItemDefuser, m_entitySpottedState) == 0xB70, "m_entitySpottedState in CItemDefuser should be at offset 0xB70");
-		static_assert(offsetof(CS2::server::CItemDefuser, m_nSpotRules) == 0xB88, "m_nSpotRules in CItemDefuser should be at offset 0xB88");
-		static_assert(sizeof(CS2::server::CItemDefuser) == 0xB90, "CItemDefuser size should be 0xB90");
+		static_assert(offsetof(CS2::server::CItemDefuser, m_entitySpottedState) == 0xAC0, "m_entitySpottedState in CItemDefuser should be at offset 0xAC0");
+		static_assert(offsetof(CS2::server::CItemDefuser, m_nSpotRules) == 0xAD8, "m_nSpotRules in CItemDefuser should be at offset 0xAD8");
+		static_assert(sizeof(CS2::server::CItemDefuser) == 0xAE0, "CItemDefuser size should be 0xAE0");
 	}
 }

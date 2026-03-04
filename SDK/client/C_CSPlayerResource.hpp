@@ -21,28 +21,28 @@ namespace CS2 {
 	namespace client {
 		class C_CSPlayerResource : public CS2::client::C_BaseEntity {
 		public:
-			bool m_bHostageAlive[12]; // 0x5f8 | Schema_FixedArray | Size: 0xc
-			bool m_isHostageFollowingSomeone[12]; // 0x604 | Schema_FixedArray | Size: 0xc
-			GlobalTypes::CEntityIndex m_iHostageEntityIDs[12]; // 0x610 | Schema_FixedArray | Size: 0x30
-			GlobalTypes::Vector m_bombsiteCenterA; // 0x640 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_bombsiteCenterB; // 0x64c | Schema_Atomic | Size: 0xc
-			int32_t m_hostageRescueX[4]; // 0x658 | Schema_FixedArray | Size: 0x10
-			int32_t m_hostageRescueY[4]; // 0x668 | Schema_FixedArray | Size: 0x10
-			int32_t m_hostageRescueZ[4]; // 0x678 | Schema_FixedArray | Size: 0x10
-			bool m_bEndMatchNextMapAllVoted; // 0x688 | Schema_Builtin | Size: 0x1
-			bool m_foundGoalPositions; // 0x689 | Schema_Builtin | Size: 0x1
+			bool m_bHostageAlive[12]; // 0x608 | Schema_FixedArray | Size: 0xc
+			bool m_isHostageFollowingSomeone[12]; // 0x614 | Schema_FixedArray | Size: 0xc
+			GlobalTypes::CEntityIndex m_iHostageEntityIDs[12]; // 0x620 | Schema_FixedArray | Size: 0x30
+			GlobalTypes::Vector m_bombsiteCenterA; // 0x650 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_bombsiteCenterB; // 0x65c | Schema_Atomic | Size: 0xc
+			int32_t m_hostageRescueX[4]; // 0x668 | Schema_FixedArray | Size: 0x10
+			int32_t m_hostageRescueY[4]; // 0x678 | Schema_FixedArray | Size: 0x10
+			int32_t m_hostageRescueZ[4]; // 0x688 | Schema_FixedArray | Size: 0x10
+			bool m_bEndMatchNextMapAllVoted; // 0x698 | Schema_Builtin | Size: 0x1
+			bool m_foundGoalPositions; // 0x699 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bHostageAlive) == 0x5F8, "m_bHostageAlive in C_CSPlayerResource should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_isHostageFollowingSomeone) == 0x604, "m_isHostageFollowingSomeone in C_CSPlayerResource should be at offset 0x604");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_iHostageEntityIDs) == 0x610, "m_iHostageEntityIDs in C_CSPlayerResource should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bombsiteCenterA) == 0x640, "m_bombsiteCenterA in C_CSPlayerResource should be at offset 0x640");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bombsiteCenterB) == 0x64C, "m_bombsiteCenterB in C_CSPlayerResource should be at offset 0x64C");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_hostageRescueX) == 0x658, "m_hostageRescueX in C_CSPlayerResource should be at offset 0x658");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_hostageRescueY) == 0x668, "m_hostageRescueY in C_CSPlayerResource should be at offset 0x668");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_hostageRescueZ) == 0x678, "m_hostageRescueZ in C_CSPlayerResource should be at offset 0x678");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bEndMatchNextMapAllVoted) == 0x688, "m_bEndMatchNextMapAllVoted in C_CSPlayerResource should be at offset 0x688");
-		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_foundGoalPositions) == 0x689, "m_foundGoalPositions in C_CSPlayerResource should be at offset 0x689");
-		static_assert(sizeof(CS2::client::C_CSPlayerResource) == 0x690, "C_CSPlayerResource size should be 0x690");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bHostageAlive) == 0x608, "m_bHostageAlive in C_CSPlayerResource should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_isHostageFollowingSomeone) == 0x614, "m_isHostageFollowingSomeone in C_CSPlayerResource should be at offset 0x614");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_iHostageEntityIDs) == 0x620, "m_iHostageEntityIDs in C_CSPlayerResource should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bombsiteCenterA) == 0x650, "m_bombsiteCenterA in C_CSPlayerResource should be at offset 0x650");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bombsiteCenterB) == 0x65C, "m_bombsiteCenterB in C_CSPlayerResource should be at offset 0x65C");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_hostageRescueX) == 0x668, "m_hostageRescueX in C_CSPlayerResource should be at offset 0x668");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_hostageRescueY) == 0x678, "m_hostageRescueY in C_CSPlayerResource should be at offset 0x678");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_hostageRescueZ) == 0x688, "m_hostageRescueZ in C_CSPlayerResource should be at offset 0x688");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_bEndMatchNextMapAllVoted) == 0x698, "m_bEndMatchNextMapAllVoted in C_CSPlayerResource should be at offset 0x698");
+		static_assert(offsetof(CS2::client::C_CSPlayerResource, m_foundGoalPositions) == 0x699, "m_foundGoalPositions in C_CSPlayerResource should be at offset 0x699");
+		static_assert(sizeof(CS2::client::C_CSPlayerResource) == 0x6A0, "C_CSPlayerResource size should be 0x6A0");
 	}
 }

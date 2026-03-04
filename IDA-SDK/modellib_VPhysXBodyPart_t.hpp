@@ -16,6 +16,6 @@ class modellib_VPhysXBodyPart_t {
     float32 m_flLinearDrag;
     float32 m_flAngularDrag;
     bool m_bOverrideMassCenter;
-    char pad_399[0x3];
+    char pad_406[0x3];
     Vector m_vMassCenterOverride;
 };

@@ -8,22 +8,22 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x680
+			// Class size: 0x690
 			namespace C_CSGO_MapPreviewCameraPath /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_flZFar = 0x5f8; // float32 m_flZFar; |  0x5f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flZNear = 0x5fc; // float32 m_flZNear; |  0x5fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bLoop = 0x600; // bool m_bLoop; |  0x600 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bVerticalFOV = 0x601; // bool m_bVerticalFOV; |  0x601 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bConstantSpeed = 0x602; // bool m_bConstantSpeed; |  0x602 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDuration = 0x604; // float32 m_flDuration; |  0x604 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPathLength = 0x648; // float32 m_flPathLength; |  0x648 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPathDuration = 0x64c; // float32 m_flPathDuration; |  0x64c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDofEnabled = 0x664; // bool m_bDofEnabled; |  0x664 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDofNearBlurry = 0x668; // float32 m_flDofNearBlurry; |  0x668 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofNearCrisp = 0x66c; // float32 m_flDofNearCrisp; |  0x66c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofFarCrisp = 0x670; // float32 m_flDofFarCrisp; |  0x670 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofFarBlurry = 0x674; // float32 m_flDofFarBlurry; |  0x674 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDofTiltToGround = 0x678; // float32 m_flDofTiltToGround; |  0x678 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZFar = 0x608; // float32 m_flZFar; |  0x608 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZNear = 0x60c; // float32 m_flZNear; |  0x60c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bLoop = 0x610; // bool m_bLoop; |  0x610 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bVerticalFOV = 0x611; // bool m_bVerticalFOV; |  0x611 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bConstantSpeed = 0x612; // bool m_bConstantSpeed; |  0x612 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDuration = 0x614; // float32 m_flDuration; |  0x614 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPathLength = 0x658; // float32 m_flPathLength; |  0x658 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPathDuration = 0x65c; // float32 m_flPathDuration; |  0x65c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDofEnabled = 0x674; // bool m_bDofEnabled; |  0x674 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDofNearBlurry = 0x678; // float32 m_flDofNearBlurry; |  0x678 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofNearCrisp = 0x67c; // float32 m_flDofNearCrisp; |  0x67c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofFarCrisp = 0x680; // float32 m_flDofFarCrisp; |  0x680 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofFarBlurry = 0x684; // float32 m_flDofFarBlurry; |  0x684 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDofTiltToGround = 0x688; // float32 m_flDofTiltToGround; |  0x688 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -4,23 +4,24 @@
 
 
 class client_CFlashlightEffect {
-    char vTable926[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     bool m_bIsOn;
-    char pad_927[0xf];
+    char pad_1730[0xf];
     bool m_bMuzzleFlashEnabled;
-    char pad_928[0x3];
+    char pad_1731[0x3];
     float32 m_flMuzzleFlashBrightness;
-    char pad_929[0x8];
+    char pad_1732[0x8];
     Quaternion m_quatMuzzleFlashOrientation;
     Vector m_vecMuzzleFlashOrigin;
     float32 m_flFov;
     float32 m_flFarZ;
     float32 m_flLinearAtten;
     bool m_bCastsShadows;
-    char pad_930[0x3];
+    char pad_1733[0x3];
     float32 m_flCurrentPullBackDist;
     char m_FlashlightTexture[0x8];
     char m_MuzzleFlashTexture[0x8];
     char m_textureName[64];
-    char end_pad_931[0x230];
+    char end_pad_1734[0x230];
 };

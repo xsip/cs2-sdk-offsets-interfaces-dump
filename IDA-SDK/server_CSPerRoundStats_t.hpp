@@ -4,7 +4,12 @@
 
 
 class server_CSPerRoundStats_t {
-    char vTable4009[0x30];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
     int32_t m_iKills;
     int32_t m_iDeaths;
     int32_t m_iAssists;
@@ -18,5 +23,5 @@ class server_CSPerRoundStats_t {
     int32_t m_iCashEarned;
     int32_t m_iUtilityDamage;
     int32_t m_iEnemiesFlashed;
-    char end_pad_4010[0x4];
+    char pad_3271[0x4];
 };

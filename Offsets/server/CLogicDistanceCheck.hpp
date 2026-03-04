@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x580
+			// Class size: 0x508
 			namespace CLogicDistanceCheck /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_iszEntityA = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszEntityB = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flZone1Distance = 0x500; // float32 m_flZone1Distance; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flZone2Distance = 0x504; // float32 m_flZone2Distance; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_InZone1 = 0x508; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_InZone2 = 0x530; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_InZone3 = 0x558; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_iszEntityA = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEntityB = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flZone1Distance = 0x4b8; // float32 m_flZone1Distance; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flZone2Distance = 0x4bc; // float32 m_flZone2Distance; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_InZone1 = 0x4c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_InZone2 = 0x4d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_InZone3 = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

@@ -6,15 +6,16 @@
 #include "tier2_CRangeFloat.hpp"
 
 class client_GameAmmoTypeInfo_t {
-    char vTable574[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     int32_t m_nMaxCarry;
-    char pad_575[0x8];
+    char pad_1358[0x8];
     tier2_CRangeInt m_nSplashSize;
     client_AmmoFlags_t m_nFlags;
     float32 m_flMass;
     tier2_CRangeFloat m_flSpeed;
-    char end_pad_576[0x4];
+    char end_pad_1359[0x4];
     int32_t m_nBuySize;
     int32_t m_nCost;
-    char end_pad_1631[0x10];
+    char end_pad_2443[0x10];
 };

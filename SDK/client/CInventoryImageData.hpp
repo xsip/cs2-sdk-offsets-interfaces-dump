@@ -25,11 +25,11 @@ namespace CS2 {
 			client::InventoryNodeType_t m_nNodeType; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString name; // 0x8 | Schema_Atomic | Size: 0x8
-			client::inv_image_data_t inventory_image_data; // 0x10 | Schema_DeclaredClass | Size: 0xe0
+			client::inv_image_data_t inventory_image_data; // 0x10 | Schema_DeclaredClass | Size: 0xe8
 		};
 		static_assert(offsetof(CS2::client::CInventoryImageData, m_nNodeType) == 0x0, "m_nNodeType in CInventoryImageData should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CInventoryImageData, name) == 0x8, "name in CInventoryImageData should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CInventoryImageData, inventory_image_data) == 0x10, "inventory_image_data in CInventoryImageData should be at offset 0x10");
-		static_assert(sizeof(CS2::client::CInventoryImageData) == 0xF0, "CInventoryImageData size should be 0xF0");
+		static_assert(sizeof(CS2::client::CInventoryImageData) == 0xF8, "CInventoryImageData size should be 0xF8");
 	}
 }

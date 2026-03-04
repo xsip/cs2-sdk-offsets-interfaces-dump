@@ -23,12 +23,12 @@ namespace CS2 {
 		class CLogicNavigation : public CS2::server::CLogicalEntity {
 		public:
 			S2_PAD(0x8);
-			bool m_isOn; // 0x4f8 | Schema_Builtin | Size: 0x1
+			bool m_isOn; // 0x4b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::navproperties_t m_navProperty; // 0x4fc | Schema_DeclaredEnum | Size: 0x4
+			server::navproperties_t m_navProperty; // 0x4b4 | Schema_DeclaredEnum | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CLogicNavigation, m_isOn) == 0x4F8, "m_isOn in CLogicNavigation should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CLogicNavigation, m_navProperty) == 0x4FC, "m_navProperty in CLogicNavigation should be at offset 0x4FC");
-		static_assert(sizeof(CS2::server::CLogicNavigation) == 0x500, "CLogicNavigation size should be 0x500");
+		static_assert(offsetof(CS2::server::CLogicNavigation, m_isOn) == 0x4B0, "m_isOn in CLogicNavigation should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CLogicNavigation, m_navProperty) == 0x4B4, "m_navProperty in CLogicNavigation should be at offset 0x4B4");
+		static_assert(sizeof(CS2::server::CLogicNavigation) == 0x4B8, "CLogicNavigation size should be 0x4B8");
 	}
 }

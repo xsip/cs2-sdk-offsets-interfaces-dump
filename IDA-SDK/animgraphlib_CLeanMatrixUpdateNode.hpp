@@ -9,23 +9,25 @@
 #include "animationsystem_HSequence.hpp"
 
 class animgraphlib_CLeanMatrixUpdateNode {
-    char vTable16[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     animgraphlib_CAnimNodePath m_nodePath;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
     char pad_17[0x4];
     CUtlString m_name;
-    char vTable164[0x4];
+    char __vftable_pad[4];
     int32_t m_frameCorners[3];
-    char pad_165[0x24];
+    char pad_166[0x24];
     animgraphlib_CPoseHandle m_poses[9];
     animgraphlib_CAnimInputDamping m_damping;
     animgraphlib_AnimVectorSource m_blendSource;
     animgraphlib_CAnimParamHandle m_paramIndex;
-    char pad_166[0x2];
+    char pad_167[0x2];
     Vector m_verticalAxis;
     Vector m_horizontalAxis;
     animationsystem_HSequence m_hSequence;
     float32 m_flMaxValue;
     int32_t m_nSequenceMaxFrame;
-    char end_pad_167[0x4];
+    char end_pad_168[0x4];
 };

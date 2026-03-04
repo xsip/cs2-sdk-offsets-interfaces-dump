@@ -10,26 +10,34 @@
 #endif
 
 
-#include <SDK/server/CPathSimple.hpp>
+#include <SDK/server/CPathWithDynamicNodes.hpp>
+#include <SDK/server/CFuncMover.hpp>
 
 
 
+namespace CS2 {
+	namespace server {
+		class CPathMoverEntitySpawner;
+	}
+}
 
 
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
-		class CPathMover : public CS2::server::CPathSimple {
+		class CPathMover : public CS2::server::CPathWithDynamicNodes {
 		public:
-			// server::CUtlVector<GlobalTypes::CHandle<server::CMoverPathNode>> m_vecPathNodes; // 0x600 | Schema_Atomic | Size: 0x18
-			char  m_vecPathNodes[0x18]; // 0x600 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector<GlobalTypes::CHandle<server::CFuncMover>> m_vecMovers; // 0x618 | Schema_Atomic | Size: 0x18
-			char  m_vecMovers[0x18]; // 0x618 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CTransform m_xInitialPathWorldToLocal; // 0x630 | Schema_Atomic | Size: 0x20
+			server::CUtlVector<GlobalTypes::CHandle<server::CFuncMover>> m_vecMovers; // 0x5f0 | Schema_Atomic | Size: 0x18
+			// char m_vecMovers[0x18]; // 0x5f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CHandle<server::CPathMoverEntitySpawner> m_hMoverSpawner; // 0x608 | Schema_Atomic | Size: 0x4
+			// char m_hMoverSpawner[0x4]; // 0x608 | Schema_Atomic | Size: 0x4
+			S2_PAD(0x4);
+			GlobalTypes::CUtlSymbolLarge m_iszMoverSpawnerName; // 0x610 | Schema_Atomic | Size: 0x8
+			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPathMover, m_vecPathNodes) == 0x600, "m_vecPathNodes in CPathMover should be at offset 0x600");
-		static_assert(offsetof(CS2::server::CPathMover, m_vecMovers) == 0x618, "m_vecMovers in CPathMover should be at offset 0x618");
-		static_assert(offsetof(CS2::server::CPathMover, m_xInitialPathWorldToLocal) == 0x630, "m_xInitialPathWorldToLocal in CPathMover should be at offset 0x630");
-		static_assert(sizeof(CS2::server::CPathMover) == 0x650, "CPathMover size should be 0x650");
+		static_assert(offsetof(CS2::server::CPathMover, m_vecMovers) == 0x5F0, "m_vecMovers in CPathMover should be at offset 0x5F0");
+		static_assert(offsetof(CS2::server::CPathMover, m_hMoverSpawner) == 0x608, "m_hMoverSpawner in CPathMover should be at offset 0x608");
+		static_assert(offsetof(CS2::server::CPathMover, m_iszMoverSpawnerName) == 0x610, "m_iszMoverSpawnerName in CPathMover should be at offset 0x610");
+		static_assert(sizeof(CS2::server::CPathMover) == 0x620, "CPathMover size should be 0x620");
 	}
 }

@@ -22,9 +22,9 @@ namespace CS2 {
 	namespace server {
 		class CFogTrigger : public CS2::server::CBaseTrigger {
 		public:
-			server::fogparams_t m_fog; // 0x9a8 | Schema_DeclaredClass | Size: 0x68
+			server::fogparams_t m_fog; // 0x890 | Schema_DeclaredClass | Size: 0x68
 		};
-		static_assert(offsetof(CS2::server::CFogTrigger, m_fog) == 0x9A8, "m_fog in CFogTrigger should be at offset 0x9A8");
-		static_assert(sizeof(CS2::server::CFogTrigger) == 0xA10, "CFogTrigger size should be 0xA10");
+		static_assert(offsetof(CS2::server::CFogTrigger, m_fog) == 0x890, "m_fog in CFogTrigger should be at offset 0x890");
+		static_assert(sizeof(CS2::server::CFogTrigger) == 0x8F8, "CFogTrigger size should be 0x8F8");
 	}
 }

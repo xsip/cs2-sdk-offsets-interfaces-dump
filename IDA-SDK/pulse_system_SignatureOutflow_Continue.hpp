@@ -10,5 +10,5 @@ class pulse_system_SignatureOutflow_Continue {
     pulse_runtime_lib_PulseRuntimeChunkIndex_t m_nDestChunk;
     int32_t m_nInstruction;
     pulse_runtime_lib_PulseRegisterMap_t m_OutflowRegisterMap;
-    char pad_4198[0x48];
+    char pad_4312[0x48];
 };

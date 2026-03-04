@@ -6,12 +6,14 @@
 #include "animgraphlib_CAnimUpdateNodeRef.hpp"
 
 class animgraphlib_CPathHelperUpdateNode {
-    char vTable16[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     animgraphlib_CAnimNodePath m_nodePath;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
     char pad_17[0x4];
     CUtlString m_name;
-    char vTable20[0x8];
+    void **__vftable_3;
     animgraphlib_CAnimUpdateNodeRef m_pChildNode;
     float32 m_flStoppingRadius;
     float32 m_flStoppingSpeedScale;

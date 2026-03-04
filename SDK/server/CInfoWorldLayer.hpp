@@ -22,22 +22,22 @@ namespace CS2 {
 	namespace server {
 		class CInfoWorldLayer : public CS2::server::CBaseEntity {
 		public:
-			entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_worldName; // 0x518 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_layerName; // 0x520 | Schema_Atomic | Size: 0x8
-			bool m_bWorldLayerVisible; // 0x528 | Schema_Builtin | Size: 0x1
-			bool m_bEntitiesSpawned; // 0x529 | Schema_Builtin | Size: 0x1
-			bool m_bCreateAsChildSpawnGroup; // 0x52a | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_worldName; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_layerName; // 0x4c8 | Schema_Atomic | Size: 0x8
+			bool m_bWorldLayerVisible; // 0x4d0 | Schema_Builtin | Size: 0x1
+			bool m_bEntitiesSpawned; // 0x4d1 | Schema_Builtin | Size: 0x1
+			bool m_bCreateAsChildSpawnGroup; // 0x4d2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			uint32_t m_hLayerSpawnGroup; // 0x52c | Schema_Builtin | Size: 0x4
+			uint32_t m_hLayerSpawnGroup; // 0x4d4 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_pOutputOnEntitiesSpawned) == 0x4F0, "m_pOutputOnEntitiesSpawned in CInfoWorldLayer should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_worldName) == 0x518, "m_worldName in CInfoWorldLayer should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_layerName) == 0x520, "m_layerName in CInfoWorldLayer should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_bWorldLayerVisible) == 0x528, "m_bWorldLayerVisible in CInfoWorldLayer should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_bEntitiesSpawned) == 0x529, "m_bEntitiesSpawned in CInfoWorldLayer should be at offset 0x529");
-		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_bCreateAsChildSpawnGroup) == 0x52A, "m_bCreateAsChildSpawnGroup in CInfoWorldLayer should be at offset 0x52A");
-		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_hLayerSpawnGroup) == 0x52C, "m_hLayerSpawnGroup in CInfoWorldLayer should be at offset 0x52C");
-		static_assert(sizeof(CS2::server::CInfoWorldLayer) == 0x530, "CInfoWorldLayer size should be 0x530");
+		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_pOutputOnEntitiesSpawned) == 0x4A8, "m_pOutputOnEntitiesSpawned in CInfoWorldLayer should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_worldName) == 0x4C0, "m_worldName in CInfoWorldLayer should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_layerName) == 0x4C8, "m_layerName in CInfoWorldLayer should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_bWorldLayerVisible) == 0x4D0, "m_bWorldLayerVisible in CInfoWorldLayer should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_bEntitiesSpawned) == 0x4D1, "m_bEntitiesSpawned in CInfoWorldLayer should be at offset 0x4D1");
+		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_bCreateAsChildSpawnGroup) == 0x4D2, "m_bCreateAsChildSpawnGroup in CInfoWorldLayer should be at offset 0x4D2");
+		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_hLayerSpawnGroup) == 0x4D4, "m_hLayerSpawnGroup in CInfoWorldLayer should be at offset 0x4D4");
+		static_assert(sizeof(CS2::server::CInfoWorldLayer) == 0x4D8, "CInfoWorldLayer size should be 0x4D8");
 	}
 }

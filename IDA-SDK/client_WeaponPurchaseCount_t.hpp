@@ -4,8 +4,13 @@
 
 
 class client_WeaponPurchaseCount_t {
-    char vTable1657[0x30];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
     uint16_t m_nItemDefIndex;
     uint16_t m_nCount;
-    char end_pad_1658[0x4];
+    char end_pad_2470[0x4];
 };

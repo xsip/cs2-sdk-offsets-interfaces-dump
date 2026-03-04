@@ -26,25 +26,25 @@ namespace CS2 {
 	namespace server {
 		class CInstancedSceneEntity : public CS2::server::CSceneEntity {
 		public:
-			GlobalTypes::CHandle<server::CBaseEntity> m_hOwner; // 0xa50 | Schema_Atomic | Size: 0x4
-			// char  m_hOwner[0x4]; // 0xa50 | Schema_Atomic | Size: 0x4
-			bool m_bHadOwner; // 0xa54 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseEntity> m_hOwner; // 0x730 | Schema_Atomic | Size: 0x4
+			// char m_hOwner[0x4]; // 0x730 | Schema_Atomic | Size: 0x4
+			bool m_bHadOwner; // 0x734 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flPostSpeakDelay; // 0xa58 | Schema_Builtin | Size: 0x4
-			float32 m_flPreDelay; // 0xa5c | Schema_Builtin | Size: 0x4
-			bool m_bIsBackground; // 0xa60 | Schema_Builtin | Size: 0x1
-			bool m_bRemoveOnCompletion; // 0xa61 | Schema_Builtin | Size: 0x1
+			float32 m_flPostSpeakDelay; // 0x738 | Schema_Builtin | Size: 0x4
+			float32 m_flPreDelay; // 0x73c | Schema_Builtin | Size: 0x4
+			bool m_bIsBackground; // 0x740 | Schema_Builtin | Size: 0x1
+			bool m_bRemoveOnCompletion; // 0x741 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget; // 0xa64 | Schema_Atomic | Size: 0x4
-			// char  m_hTarget[0x4]; // 0xa64 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTarget; // 0x744 | Schema_Atomic | Size: 0x4
+			// char m_hTarget[0x4]; // 0x744 | Schema_Atomic | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_hOwner) == 0xA50, "m_hOwner in CInstancedSceneEntity should be at offset 0xA50");
-		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_bHadOwner) == 0xA54, "m_bHadOwner in CInstancedSceneEntity should be at offset 0xA54");
-		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_flPostSpeakDelay) == 0xA58, "m_flPostSpeakDelay in CInstancedSceneEntity should be at offset 0xA58");
-		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_flPreDelay) == 0xA5C, "m_flPreDelay in CInstancedSceneEntity should be at offset 0xA5C");
-		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_bIsBackground) == 0xA60, "m_bIsBackground in CInstancedSceneEntity should be at offset 0xA60");
-		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_bRemoveOnCompletion) == 0xA61, "m_bRemoveOnCompletion in CInstancedSceneEntity should be at offset 0xA61");
-		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_hTarget) == 0xA64, "m_hTarget in CInstancedSceneEntity should be at offset 0xA64");
-		static_assert(sizeof(CS2::server::CInstancedSceneEntity) == 0xA68, "CInstancedSceneEntity size should be 0xA68");
+		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_hOwner) == 0x730, "m_hOwner in CInstancedSceneEntity should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_bHadOwner) == 0x734, "m_bHadOwner in CInstancedSceneEntity should be at offset 0x734");
+		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_flPostSpeakDelay) == 0x738, "m_flPostSpeakDelay in CInstancedSceneEntity should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_flPreDelay) == 0x73C, "m_flPreDelay in CInstancedSceneEntity should be at offset 0x73C");
+		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_bIsBackground) == 0x740, "m_bIsBackground in CInstancedSceneEntity should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_bRemoveOnCompletion) == 0x741, "m_bRemoveOnCompletion in CInstancedSceneEntity should be at offset 0x741");
+		static_assert(offsetof(CS2::server::CInstancedSceneEntity, m_hTarget) == 0x744, "m_hTarget in CInstancedSceneEntity should be at offset 0x744");
+		static_assert(sizeof(CS2::server::CInstancedSceneEntity) == 0x748, "CInstancedSceneEntity size should be 0x748");
 	}
 }

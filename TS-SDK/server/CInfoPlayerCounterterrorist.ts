@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_SpawnPoint} from './SpawnPoint';
-// Class size: 0x500
+// Class size: 0x4B8
 // BaseClass: : public CS2::server::SpawnPoint
 export const server_CInfoPlayerCounterterrorist  = {
 	...server_SpawnPoint,

@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace entity2 {
-			// Class size: 0x28
+			// Class size: 0x18
 			namespace CEntityIOOutput /**/ {
-				constexpr std::ptrdiff_t m_Value = 0x18; // GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator>  | Schema_Atomic | Size: 0x10
+				// NO SCHEMA DATA FOUND!
 			}
 		}
 	}

@@ -22,15 +22,15 @@ namespace CS2 {
 	namespace server {
 		class CEnvTilt : public CS2::server::CPointEntity {
 		public:
-			float32 m_Duration; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_Radius; // 0x4f4 | Schema_Builtin | Size: 0x4
-			float32 m_TiltTime; // 0x4f8 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_stopTime; // 0x4fc | Schema_DeclaredClass | Size: 0x4
+			float32 m_Duration; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_Radius; // 0x4ac | Schema_Builtin | Size: 0x4
+			float32 m_TiltTime; // 0x4b0 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_stopTime; // 0x4b4 | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CEnvTilt, m_Duration) == 0x4F0, "m_Duration in CEnvTilt should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvTilt, m_Radius) == 0x4F4, "m_Radius in CEnvTilt should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CEnvTilt, m_TiltTime) == 0x4F8, "m_TiltTime in CEnvTilt should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CEnvTilt, m_stopTime) == 0x4FC, "m_stopTime in CEnvTilt should be at offset 0x4FC");
-		static_assert(sizeof(CS2::server::CEnvTilt) == 0x500, "CEnvTilt size should be 0x500");
+		static_assert(offsetof(CS2::server::CEnvTilt, m_Duration) == 0x4A8, "m_Duration in CEnvTilt should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvTilt, m_Radius) == 0x4AC, "m_Radius in CEnvTilt should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CEnvTilt, m_TiltTime) == 0x4B0, "m_TiltTime in CEnvTilt should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CEnvTilt, m_stopTime) == 0x4B4, "m_stopTime in CEnvTilt should be at offset 0x4B4");
+		static_assert(sizeof(CS2::server::CEnvTilt) == 0x4B8, "CEnvTilt size should be 0x4B8");
 	}
 }

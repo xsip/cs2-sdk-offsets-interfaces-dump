@@ -22,15 +22,15 @@ namespace CS2 {
 	namespace server {
 		class CFilterMultiple : public CS2::server::CBaseFilter {
 		public:
-			client::filter_t m_nFilterType; // 0x548 | Schema_DeclaredEnum | Size: 0x4
+			client::filter_t m_nFilterType; // 0x4e0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iFilterName[10]; // 0x550 | Schema_FixedArray | Size: 0x50
-			// server::CHandle< CBaseEntity > m_hFilter[10]; // 0x5a0 | Schema_FixedArray | Size: 0x28
-			char  m_hFilter[0x4]; // 0x5a0 | Schema_FixedArray | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iFilterName[10]; // 0x4e8 | Schema_FixedArray | Size: 0x50
+			// server::CHandle< CBaseEntity > m_hFilter[10]; // 0x538 | Schema_FixedArray | Size: 0x28
+			char m_hFilter[0x4]; // 0x538 | Schema_FixedArray | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CFilterMultiple, m_nFilterType) == 0x548, "m_nFilterType in CFilterMultiple should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CFilterMultiple, m_iFilterName) == 0x550, "m_iFilterName in CFilterMultiple should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CFilterMultiple, m_hFilter) == 0x5A0, "m_hFilter in CFilterMultiple should be at offset 0x5A0");
-		static_assert(sizeof(CS2::server::CFilterMultiple) == 0x5C8, "CFilterMultiple size should be 0x5C8");
+		static_assert(offsetof(CS2::server::CFilterMultiple, m_nFilterType) == 0x4E0, "m_nFilterType in CFilterMultiple should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CFilterMultiple, m_iFilterName) == 0x4E8, "m_iFilterName in CFilterMultiple should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CFilterMultiple, m_hFilter) == 0x538, "m_hFilter in CFilterMultiple should be at offset 0x538");
+		static_assert(sizeof(CS2::server::CFilterMultiple) == 0x560, "CFilterMultiple size should be 0x560");
 	}
 }

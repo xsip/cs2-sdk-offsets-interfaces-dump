@@ -22,15 +22,15 @@ namespace CS2 {
 	namespace client {
 		class C_FuncElectrifiedVolume : public CS2::client::C_FuncBrush {
 		public:
-			client::ParticleIndex_t m_nAmbientEffect; // 0xeb0 | Schema_DeclaredClass | Size: 0x4
+			client::ParticleIndex_t m_nAmbientEffect; // 0xe88 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_EffectName; // 0xeb8 | Schema_Atomic | Size: 0x8
-			bool m_bState; // 0xec0 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_EffectName; // 0xe90 | Schema_Atomic | Size: 0x8
+			bool m_bState; // 0xe98 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_nAmbientEffect) == 0xEB0, "m_nAmbientEffect in C_FuncElectrifiedVolume should be at offset 0xEB0");
-		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_EffectName) == 0xEB8, "m_EffectName in C_FuncElectrifiedVolume should be at offset 0xEB8");
-		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_bState) == 0xEC0, "m_bState in C_FuncElectrifiedVolume should be at offset 0xEC0");
-		static_assert(sizeof(CS2::client::C_FuncElectrifiedVolume) == 0xEC8, "C_FuncElectrifiedVolume size should be 0xEC8");
+		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_nAmbientEffect) == 0xE88, "m_nAmbientEffect in C_FuncElectrifiedVolume should be at offset 0xE88");
+		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_EffectName) == 0xE90, "m_EffectName in C_FuncElectrifiedVolume should be at offset 0xE90");
+		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_bState) == 0xE98, "m_bState in C_FuncElectrifiedVolume should be at offset 0xE98");
+		static_assert(sizeof(CS2::client::C_FuncElectrifiedVolume) == 0xEA0, "C_FuncElectrifiedVolume size should be 0xEA0");
 	}
 }

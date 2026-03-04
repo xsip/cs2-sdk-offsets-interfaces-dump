@@ -21,24 +21,24 @@ namespace CS2 {
 	namespace server {
 		class CCitadelSoundOpvarSetOBB : public CS2::server::CBaseEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x500 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_vDistanceInnerMins; // 0x508 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceInnerMaxs; // 0x514 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceOuterMins; // 0x520 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceOuterMaxs; // 0x52c | Schema_Atomic | Size: 0xc
-			int32_t m_nAABBDirection; // 0x538 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x4b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector m_vDistanceInnerMins; // 0x4c0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceInnerMaxs; // 0x4cc | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceOuterMins; // 0x4d8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceOuterMaxs; // 0x4e4 | Schema_Atomic | Size: 0xc
+			int32_t m_nAABBDirection; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszStackName) == 0x4F0, "m_iszStackName in CCitadelSoundOpvarSetOBB should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszOperatorName) == 0x4F8, "m_iszOperatorName in CCitadelSoundOpvarSetOBB should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszOpvarName) == 0x500, "m_iszOpvarName in CCitadelSoundOpvarSetOBB should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceInnerMins) == 0x508, "m_vDistanceInnerMins in CCitadelSoundOpvarSetOBB should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceInnerMaxs) == 0x514, "m_vDistanceInnerMaxs in CCitadelSoundOpvarSetOBB should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceOuterMins) == 0x520, "m_vDistanceOuterMins in CCitadelSoundOpvarSetOBB should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceOuterMaxs) == 0x52C, "m_vDistanceOuterMaxs in CCitadelSoundOpvarSetOBB should be at offset 0x52C");
-		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_nAABBDirection) == 0x538, "m_nAABBDirection in CCitadelSoundOpvarSetOBB should be at offset 0x538");
-		static_assert(sizeof(CS2::server::CCitadelSoundOpvarSetOBB) == 0x540, "CCitadelSoundOpvarSetOBB size should be 0x540");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszStackName) == 0x4A8, "m_iszStackName in CCitadelSoundOpvarSetOBB should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszOperatorName) == 0x4B0, "m_iszOperatorName in CCitadelSoundOpvarSetOBB should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszOpvarName) == 0x4B8, "m_iszOpvarName in CCitadelSoundOpvarSetOBB should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceInnerMins) == 0x4C0, "m_vDistanceInnerMins in CCitadelSoundOpvarSetOBB should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceInnerMaxs) == 0x4CC, "m_vDistanceInnerMaxs in CCitadelSoundOpvarSetOBB should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceOuterMins) == 0x4D8, "m_vDistanceOuterMins in CCitadelSoundOpvarSetOBB should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceOuterMaxs) == 0x4E4, "m_vDistanceOuterMaxs in CCitadelSoundOpvarSetOBB should be at offset 0x4E4");
+		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_nAABBDirection) == 0x4F0, "m_nAABBDirection in CCitadelSoundOpvarSetOBB should be at offset 0x4F0");
+		static_assert(sizeof(CS2::server::CCitadelSoundOpvarSetOBB) == 0x4F8, "CCitadelSoundOpvarSetOBB size should be 0x4F8");
 	}
 }

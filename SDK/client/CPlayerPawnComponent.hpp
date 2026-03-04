@@ -23,9 +23,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x8 | Schema_DeclaredClass | Size: 0x28
-			S2_PAD(0x10); // End padding
+			S2_PAD(0x18); // End padding
 		};
 		static_assert(offsetof(CS2::client::CPlayerPawnComponent, __m_pChainEntity) == 0x8, "__m_pChainEntity in CPlayerPawnComponent should be at offset 0x8");
-		static_assert(sizeof(CS2::client::CPlayerPawnComponent) == 0x40, "CPlayerPawnComponent size should be 0x40");
+		static_assert(sizeof(CS2::client::CPlayerPawnComponent) == 0x48, "CPlayerPawnComponent size should be 0x48");
 	}
 }

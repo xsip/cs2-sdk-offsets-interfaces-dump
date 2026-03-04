@@ -4,5 +4,5 @@
 
 
 class animlib_CNmReferencePoseTask {
-    char pad_1018[0x50];
+    char pad_1819[0x58];
 };

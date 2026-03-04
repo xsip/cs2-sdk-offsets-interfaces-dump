@@ -27,15 +27,15 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_UseServices : public CS2::server::CPlayer_UseServices {
 		public:
-			GlobalTypes::CHandle<server::CBaseEntity> m_hLastKnownUseEntity; // 0x40 | Schema_Atomic | Size: 0x4
-			// char  m_hLastKnownUseEntity[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_flLastUseTimeStamp; // 0x44 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flTimeLastUsedWindow; // 0x48 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLastKnownUseEntity; // 0x48 | Schema_Atomic | Size: 0x4
+			// char m_hLastKnownUseEntity[0x4]; // 0x48 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_flLastUseTimeStamp; // 0x4c | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flTimeLastUsedWindow; // 0x50 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_hLastKnownUseEntity) == 0x40, "m_hLastKnownUseEntity in CCSPlayer_UseServices should be at offset 0x40");
-		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_flLastUseTimeStamp) == 0x44, "m_flLastUseTimeStamp in CCSPlayer_UseServices should be at offset 0x44");
-		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_flTimeLastUsedWindow) == 0x48, "m_flTimeLastUsedWindow in CCSPlayer_UseServices should be at offset 0x48");
-		static_assert(sizeof(CS2::server::CCSPlayer_UseServices) == 0x50, "CCSPlayer_UseServices size should be 0x50");
+		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_hLastKnownUseEntity) == 0x48, "m_hLastKnownUseEntity in CCSPlayer_UseServices should be at offset 0x48");
+		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_flLastUseTimeStamp) == 0x4C, "m_flLastUseTimeStamp in CCSPlayer_UseServices should be at offset 0x4C");
+		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_flTimeLastUsedWindow) == 0x50, "m_flTimeLastUsedWindow in CCSPlayer_UseServices should be at offset 0x50");
+		static_assert(sizeof(CS2::server::CCSPlayer_UseServices) == 0x58, "CCSPlayer_UseServices size should be 0x58");
 	}
 }

@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x520
+			// Class size: 0x4C8
 			namespace CRotatorTarget /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_OnArrivedAt = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_eSpace = 0x518; // server::RotatorTargetSpace_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_OnArrivedAt = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_eSpace = 0x4c0; // server::RotatorTargetSpace_t  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

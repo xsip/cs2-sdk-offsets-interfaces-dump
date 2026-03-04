@@ -8,32 +8,32 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x6A8
+			// Class size: 0x640
 			namespace CSoundOpvarSetPointEntity /*: public CS2::server::CSoundOpvarSetPointBase*/ {
-				constexpr std::ptrdiff_t m_OnEnter = 0x598; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnExit = 0x5c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bAutoDisable = 0x5e8; // bool m_bAutoDisable; |  0x5e8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDistanceMin = 0x62c; // float32 m_flDistanceMin; |  0x62c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistanceMax = 0x630; // float32 m_flDistanceMax; |  0x630 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistanceMapMin = 0x634; // float32 m_flDistanceMapMin; |  0x634 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistanceMapMax = 0x638; // float32 m_flDistanceMapMax; |  0x638 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOcclusionRadius = 0x63c; // float32 m_flOcclusionRadius; |  0x63c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOcclusionMin = 0x640; // float32 m_flOcclusionMin; |  0x640 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOcclusionMax = 0x644; // float32 m_flOcclusionMax; |  0x644 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flValSetOnDisable = 0x648; // float32 m_flValSetOnDisable; |  0x648 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bSetValueOnDisable = 0x64c; // bool m_bSetValueOnDisable; |  0x64c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bReloading = 0x64d; // bool m_bReloading; |  0x64d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nSimulationMode = 0x650; // int32_t m_nSimulationMode; |  0x650 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nVisibilitySamples = 0x654; // int32_t m_nVisibilitySamples; |  0x654 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vDynamicProxyPoint = 0x658; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flDynamicMaximumOcclusion = 0x664; // float32 m_flDynamicMaximumOcclusion; |  0x664 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hDynamicEntity = 0x668; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iszDynamicEntityName = 0x670; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flPathingDistanceNormFactor = 0x678; // float32 m_flPathingDistanceNormFactor; |  0x678 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vPathingSourcePos = 0x67c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPathingListenerPos = 0x688; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vPathingDirection = 0x694; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nPathingSourceIndex = 0x6a0; // int32_t m_nPathingSourceIndex; |  0x6a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OnEnter = 0x550; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnExit = 0x568; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bAutoDisable = 0x580; // bool m_bAutoDisable; |  0x580 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDistanceMin = 0x5c4; // float32 m_flDistanceMin; |  0x5c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistanceMax = 0x5c8; // float32 m_flDistanceMax; |  0x5c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistanceMapMin = 0x5cc; // float32 m_flDistanceMapMin; |  0x5cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistanceMapMax = 0x5d0; // float32 m_flDistanceMapMax; |  0x5d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOcclusionRadius = 0x5d4; // float32 m_flOcclusionRadius; |  0x5d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOcclusionMin = 0x5d8; // float32 m_flOcclusionMin; |  0x5d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOcclusionMax = 0x5dc; // float32 m_flOcclusionMax; |  0x5dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flValSetOnDisable = 0x5e0; // float32 m_flValSetOnDisable; |  0x5e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bSetValueOnDisable = 0x5e4; // bool m_bSetValueOnDisable; |  0x5e4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bReloading = 0x5e5; // bool m_bReloading; |  0x5e5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nSimulationMode = 0x5e8; // int32_t m_nSimulationMode; |  0x5e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nVisibilitySamples = 0x5ec; // int32_t m_nVisibilitySamples; |  0x5ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vDynamicProxyPoint = 0x5f0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flDynamicMaximumOcclusion = 0x5fc; // float32 m_flDynamicMaximumOcclusion; |  0x5fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hDynamicEntity = 0x600; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszDynamicEntityName = 0x608; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flPathingDistanceNormFactor = 0x610; // float32 m_flPathingDistanceNormFactor; |  0x610 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vPathingSourcePos = 0x614; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPathingListenerPos = 0x620; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vPathingDirection = 0x62c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nPathingSourceIndex = 0x638; // int32_t m_nPathingSourceIndex; |  0x638 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

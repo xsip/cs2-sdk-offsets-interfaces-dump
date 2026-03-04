@@ -4,14 +4,14 @@
 
 
 class modellib_CTwistConstraint {
-    char pad_308[0x20];
+    char pad_310[0x20];
     CUtlString m_name;
     Vector m_vUpVector;
-    char pad_307[0x4];
+    char pad_309[0x4];
     char m_slaves[0x10];
     char m_targets[0x18];
     bool m_bInverse;
-    char pad_374[0xf];
+    char pad_382[0xf];
     Quaternion m_qParentBindRotation;
     Quaternion m_qChildBindRotation;
 };

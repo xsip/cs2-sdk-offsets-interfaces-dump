@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x500
+			// Class size: 0x4B8
 			namespace CEnvTilt /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_Duration = 0x4f0; // float32 m_Duration; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Radius = 0x4f4; // float32 m_Radius; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_TiltTime = 0x4f8; // float32 m_TiltTime; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_stopTime = 0x4fc; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_Duration = 0x4a8; // float32 m_Duration; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Radius = 0x4ac; // float32 m_Radius; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_TiltTime = 0x4b0; // float32 m_TiltTime; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_stopTime = 0x4b4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

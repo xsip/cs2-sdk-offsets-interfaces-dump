@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_C_SoundOpvarSetPointBase} from './C_SoundOpvarSetPointBase';
-// Class size: 0x618
+// Class size: 0x628
 // BaseClass: : public CS2::client::C_SoundOpvarSetPointBase
 export const client_C_SoundOpvarSetPointEntity  = {
 	...client_C_SoundOpvarSetPointBase,

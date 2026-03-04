@@ -6,18 +6,20 @@
 #include "animgraphlib_CAnimUpdateNodeRef.hpp"
 
 class animgraphlib_CWayPointHelperUpdateNode {
-    char vTable16[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     animgraphlib_CAnimNodePath m_nodePath;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
     char pad_17[0x4];
     CUtlString m_name;
-    char vTable20[0x8];
+    void **__vftable_3;
     animgraphlib_CAnimUpdateNodeRef m_pChildNode;
-    char vTable250[0x4];
+    char __vftable_pad[4];
     float32 m_flStartCycle;
     float32 m_flEndCycle;
     bool m_bOnlyGoals;
     bool m_bPreventOvershoot;
     bool m_bPreventUndershoot;
-    char end_pad_251[0x1];
+    char end_pad_276[0x1];
 };

@@ -22,12 +22,12 @@ namespace CS2 {
 		class CSoundEventParameter : public CS2::server::CBaseEntity {
 		public:
 			S2_PAD(0x18);
-			GlobalTypes::CUtlSymbolLarge m_iszParamName; // 0x508 | Schema_Atomic | Size: 0x8
-			float32 m_flFloatValue; // 0x510 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszParamName; // 0x4c0 | Schema_Atomic | Size: 0x8
+			float32 m_flFloatValue; // 0x4c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSoundEventParameter, m_iszParamName) == 0x508, "m_iszParamName in CSoundEventParameter should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CSoundEventParameter, m_flFloatValue) == 0x510, "m_flFloatValue in CSoundEventParameter should be at offset 0x510");
-		static_assert(sizeof(CS2::server::CSoundEventParameter) == 0x518, "CSoundEventParameter size should be 0x518");
+		static_assert(offsetof(CS2::server::CSoundEventParameter, m_iszParamName) == 0x4C0, "m_iszParamName in CSoundEventParameter should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CSoundEventParameter, m_flFloatValue) == 0x4C8, "m_flFloatValue in CSoundEventParameter should be at offset 0x4C8");
+		static_assert(sizeof(CS2::server::CSoundEventParameter) == 0x4D0, "CSoundEventParameter size should be 0x4D0");
 	}
 }

@@ -8,5 +8,5 @@ class animgraphlib_CSetParameterActionUpdater {
     char pad_26[0x18];
     animgraphlib_CAnimParamHandle m_hParam;
     CAnimVariant m_value;
-    char end_pad_214[0x5];
+    char end_pad_220[0x5];
 };

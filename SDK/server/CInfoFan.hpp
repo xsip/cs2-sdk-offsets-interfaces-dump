@@ -22,16 +22,16 @@ namespace CS2 {
 		class CInfoFan : public CS2::server::CPointEntity {
 		public:
 			S2_PAD(0x40);
-			float32 m_fFanForceMaxRadius; // 0x530 | Schema_Builtin | Size: 0x4
-			float32 m_fFanForceMinRadius; // 0x534 | Schema_Builtin | Size: 0x4
-			float32 m_flCurveDistRange; // 0x538 | Schema_Builtin | Size: 0x4
+			float32 m_fFanForceMaxRadius; // 0x4e8 | Schema_Builtin | Size: 0x4
+			float32 m_fFanForceMinRadius; // 0x4ec | Schema_Builtin | Size: 0x4
+			float32 m_flCurveDistRange; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_FanForceCurveString; // 0x540 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_FanForceCurveString; // 0x4f8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CInfoFan, m_fFanForceMaxRadius) == 0x530, "m_fFanForceMaxRadius in CInfoFan should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CInfoFan, m_fFanForceMinRadius) == 0x534, "m_fFanForceMinRadius in CInfoFan should be at offset 0x534");
-		static_assert(offsetof(CS2::server::CInfoFan, m_flCurveDistRange) == 0x538, "m_flCurveDistRange in CInfoFan should be at offset 0x538");
-		static_assert(offsetof(CS2::server::CInfoFan, m_FanForceCurveString) == 0x540, "m_FanForceCurveString in CInfoFan should be at offset 0x540");
-		static_assert(sizeof(CS2::server::CInfoFan) == 0x548, "CInfoFan size should be 0x548");
+		static_assert(offsetof(CS2::server::CInfoFan, m_fFanForceMaxRadius) == 0x4E8, "m_fFanForceMaxRadius in CInfoFan should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CInfoFan, m_fFanForceMinRadius) == 0x4EC, "m_fFanForceMinRadius in CInfoFan should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CInfoFan, m_flCurveDistRange) == 0x4F0, "m_flCurveDistRange in CInfoFan should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CInfoFan, m_FanForceCurveString) == 0x4F8, "m_FanForceCurveString in CInfoFan should be at offset 0x4F8");
+		static_assert(sizeof(CS2::server::CInfoFan) == 0x500, "CInfoFan size should be 0x500");
 	}
 }

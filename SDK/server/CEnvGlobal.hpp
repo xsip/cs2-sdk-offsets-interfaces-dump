@@ -21,19 +21,19 @@ namespace CS2 {
 	namespace server {
 		class CEnvGlobal : public CS2::server::CLogicalEntity {
 		public:
-			// GlobalTypes::CEntityOutputTemplate< int32 > m_outCounter; // 0x4f0 | Schema_Atomic | Size: 0x28
-			char  m_outCounter[0x28]; // 0x4f0 | Schema_Atomic | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x518 | Schema_Atomic | Size: 0x8
-			int32_t m_triggermode; // 0x520 | Schema_Builtin | Size: 0x4
-			int32_t m_initialstate; // 0x524 | Schema_Builtin | Size: 0x4
-			int32_t m_counter; // 0x528 | Schema_Builtin | Size: 0x4
+			// GlobalTypes::CEntityOutputTemplate< int32, int32 > m_outCounter; // 0x4a8 | Schema_Atomic | Size: 0x20
+			char m_outCounter[0x20]; // 0x4a8 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x4c8 | Schema_Atomic | Size: 0x8
+			int32_t m_triggermode; // 0x4d0 | Schema_Builtin | Size: 0x4
+			int32_t m_initialstate; // 0x4d4 | Schema_Builtin | Size: 0x4
+			int32_t m_counter; // 0x4d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CEnvGlobal, m_outCounter) == 0x4F0, "m_outCounter in CEnvGlobal should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvGlobal, m_globalstate) == 0x518, "m_globalstate in CEnvGlobal should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CEnvGlobal, m_triggermode) == 0x520, "m_triggermode in CEnvGlobal should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CEnvGlobal, m_initialstate) == 0x524, "m_initialstate in CEnvGlobal should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CEnvGlobal, m_counter) == 0x528, "m_counter in CEnvGlobal should be at offset 0x528");
-		static_assert(sizeof(CS2::server::CEnvGlobal) == 0x530, "CEnvGlobal size should be 0x530");
+		static_assert(offsetof(CS2::server::CEnvGlobal, m_outCounter) == 0x4A8, "m_outCounter in CEnvGlobal should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvGlobal, m_globalstate) == 0x4C8, "m_globalstate in CEnvGlobal should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEnvGlobal, m_triggermode) == 0x4D0, "m_triggermode in CEnvGlobal should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CEnvGlobal, m_initialstate) == 0x4D4, "m_initialstate in CEnvGlobal should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CEnvGlobal, m_counter) == 0x4D8, "m_counter in CEnvGlobal should be at offset 0x4D8");
+		static_assert(sizeof(CS2::server::CEnvGlobal) == 0x4E0, "CEnvGlobal size should be 0x4E0");
 	}
 }

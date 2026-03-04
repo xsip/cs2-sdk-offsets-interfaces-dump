@@ -13,6 +13,8 @@
 #include <SDK/server/CBasePlayerWeaponVData.hpp>
 #include <SDK/client/CSWeaponType.hpp>
 #include <SDK/client/CSWeaponCategory.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeCNmSkeleton.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp>
 #include <SDK/client/gear_slot_t.hpp>
 #include <SDK/client/loadout_slot_t.hpp>
 #include <SDK/client/CSWeaponSilencerType.hpp>
@@ -30,179 +32,176 @@ namespace CS2 {
 		public:
 			client::CSWeaponType m_WeaponType; // 0x440 | Schema_DeclaredEnum | Size: 0x4
 			client::CSWeaponCategory m_WeaponCategory; // 0x444 | Schema_DeclaredEnum | Size: 0x4
-			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_szModel_AG2; // 0x448 | Schema_Atomic | Size: 0xe0
-			char  m_szModel_AG2[0xe0]; // 0x448 | Schema_Atomic | Size: 0xe0
-			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>> m_szAnimSkeleton; // 0x528 | Schema_Atomic | Size: 0xe0
-			char  m_szAnimSkeleton[0xe0]; // 0x528 | Schema_Atomic | Size: 0xe0
-			GlobalTypes::Vector m_vecMuzzlePos0; // 0x608 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecMuzzlePos1; // 0x614 | Schema_Atomic | Size: 0xc
-			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szTracerParticle; // 0x620 | Schema_Atomic | Size: 0xe0
-			char  m_szTracerParticle[0xe0]; // 0x620 | Schema_Atomic | Size: 0xe0
-			client::gear_slot_t m_GearSlot; // 0x700 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_GearSlotPosition; // 0x704 | Schema_Builtin | Size: 0x4
-			client::loadout_slot_t m_DefaultLoadoutSlot; // 0x708 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nPrice; // 0x70c | Schema_Builtin | Size: 0x4
-			int32_t m_nKillAward; // 0x710 | Schema_Builtin | Size: 0x4
-			int32_t m_nPrimaryReserveAmmoMax; // 0x714 | Schema_Builtin | Size: 0x4
-			int32_t m_nSecondaryReserveAmmoMax; // 0x718 | Schema_Builtin | Size: 0x4
-			bool m_bMeleeWeapon; // 0x71c | Schema_Builtin | Size: 0x1
-			bool m_bHasBurstMode; // 0x71d | Schema_Builtin | Size: 0x1
-			bool m_bIsRevolver; // 0x71e | Schema_Builtin | Size: 0x1
-			bool m_bCannotShootUnderwater; // 0x71f | Schema_Builtin | Size: 0x1
-			GlobalTypes::CGlobalSymbol m_szName; // 0x720 | Schema_Atomic | Size: 0x8
-			client::CSWeaponSilencerType m_eSilencerType; // 0x728 | Schema_DeclaredEnum | Size: 0x4
-			int32_t m_nCrosshairMinDistance; // 0x72c | Schema_Builtin | Size: 0x4
-			int32_t m_nCrosshairDeltaDistance; // 0x730 | Schema_Builtin | Size: 0x4
-			bool m_bIsFullAuto; // 0x734 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>> m_szAnimSkeleton; // 0x448 | Schema_Atomic | Size: 0xe0
+			char m_szAnimSkeleton[0xe0]; // 0x448 | Schema_Atomic | Size: 0xe0
+			GlobalTypes::Vector m_vecMuzzlePos0; // 0x528 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecMuzzlePos1; // 0x534 | Schema_Atomic | Size: 0xc
+			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_szTracerParticle; // 0x540 | Schema_Atomic | Size: 0xe0
+			char m_szTracerParticle[0xe0]; // 0x540 | Schema_Atomic | Size: 0xe0
+			client::gear_slot_t m_GearSlot; // 0x620 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_GearSlotPosition; // 0x624 | Schema_Builtin | Size: 0x4
+			client::loadout_slot_t m_DefaultLoadoutSlot; // 0x628 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nPrice; // 0x62c | Schema_Builtin | Size: 0x4
+			int32_t m_nKillAward; // 0x630 | Schema_Builtin | Size: 0x4
+			int32_t m_nPrimaryReserveAmmoMax; // 0x634 | Schema_Builtin | Size: 0x4
+			int32_t m_nSecondaryReserveAmmoMax; // 0x638 | Schema_Builtin | Size: 0x4
+			bool m_bMeleeWeapon; // 0x63c | Schema_Builtin | Size: 0x1
+			bool m_bHasBurstMode; // 0x63d | Schema_Builtin | Size: 0x1
+			bool m_bIsRevolver; // 0x63e | Schema_Builtin | Size: 0x1
+			bool m_bCannotShootUnderwater; // 0x63f | Schema_Builtin | Size: 0x1
+			GlobalTypes::CGlobalSymbol m_szName; // 0x640 | Schema_Atomic | Size: 0x8
+			client::CSWeaponSilencerType m_eSilencerType; // 0x648 | Schema_DeclaredEnum | Size: 0x4
+			int32_t m_nCrosshairMinDistance; // 0x64c | Schema_Builtin | Size: 0x4
+			int32_t m_nCrosshairDeltaDistance; // 0x650 | Schema_Builtin | Size: 0x4
+			bool m_bIsFullAuto; // 0x654 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nNumBullets; // 0x738 | Schema_Builtin | Size: 0x4
-			bool m_bReloadsSingleShells; // 0x73c | Schema_Builtin | Size: 0x1
+			int32_t m_nNumBullets; // 0x658 | Schema_Builtin | Size: 0x4
+			bool m_bReloadsSingleShells; // 0x65c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::CFiringModeFloat m_flCycleTime; // 0x740 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flMaxSpeed; // 0x748 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flSpread; // 0x750 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flInaccuracyCrouch; // 0x758 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flInaccuracyStand; // 0x760 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flInaccuracyJump; // 0x768 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flInaccuracyLand; // 0x770 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flInaccuracyLadder; // 0x778 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flInaccuracyFire; // 0x780 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flInaccuracyMove; // 0x788 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flRecoilAngle; // 0x790 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flRecoilAngleVariance; // 0x798 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flRecoilMagnitude; // 0x7a0 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeFloat m_flRecoilMagnitudeVariance; // 0x7a8 | Schema_DeclaredClass | Size: 0x8
-			client::CFiringModeInt m_nTracerFrequency; // 0x7b0 | Schema_DeclaredClass | Size: 0x8
-			float32 m_flInaccuracyJumpInitial; // 0x7b8 | Schema_Builtin | Size: 0x4
-			float32 m_flInaccuracyJumpApex; // 0x7bc | Schema_Builtin | Size: 0x4
-			float32 m_flInaccuracyReload; // 0x7c0 | Schema_Builtin | Size: 0x4
-			float32 m_flDeployDuration; // 0x7c4 | Schema_Builtin | Size: 0x4
-			float32 m_flDisallowAttackAfterReloadStartDuration; // 0x7c8 | Schema_Builtin | Size: 0x4
-			int32_t m_nBurstShotCount; // 0x7cc | Schema_Builtin | Size: 0x4
-			bool m_bAllowBurstHolster; // 0x7d0 | Schema_Builtin | Size: 0x1
+			client::CFiringModeFloat m_flCycleTime; // 0x660 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flMaxSpeed; // 0x668 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flSpread; // 0x670 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flInaccuracyCrouch; // 0x678 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flInaccuracyStand; // 0x680 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flInaccuracyJump; // 0x688 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flInaccuracyLand; // 0x690 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flInaccuracyLadder; // 0x698 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flInaccuracyFire; // 0x6a0 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flInaccuracyMove; // 0x6a8 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flRecoilAngle; // 0x6b0 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flRecoilAngleVariance; // 0x6b8 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flRecoilMagnitude; // 0x6c0 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeFloat m_flRecoilMagnitudeVariance; // 0x6c8 | Schema_DeclaredClass | Size: 0x8
+			client::CFiringModeInt m_nTracerFrequency; // 0x6d0 | Schema_DeclaredClass | Size: 0x8
+			float32 m_flInaccuracyJumpInitial; // 0x6d8 | Schema_Builtin | Size: 0x4
+			float32 m_flInaccuracyJumpApex; // 0x6dc | Schema_Builtin | Size: 0x4
+			float32 m_flInaccuracyReload; // 0x6e0 | Schema_Builtin | Size: 0x4
+			float32 m_flDeployDuration; // 0x6e4 | Schema_Builtin | Size: 0x4
+			float32 m_flDisallowAttackAfterReloadStartDuration; // 0x6e8 | Schema_Builtin | Size: 0x4
+			int32_t m_nBurstShotCount; // 0x6ec | Schema_Builtin | Size: 0x4
+			bool m_bAllowBurstHolster; // 0x6f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nRecoilSeed; // 0x7d4 | Schema_Builtin | Size: 0x4
-			int32_t m_nSpreadSeed; // 0x7d8 | Schema_Builtin | Size: 0x4
-			float32 m_flAttackMovespeedFactor; // 0x7dc | Schema_Builtin | Size: 0x4
-			float32 m_flInaccuracyPitchShift; // 0x7e0 | Schema_Builtin | Size: 0x4
-			float32 m_flInaccuracyAltSoundThreshold; // 0x7e4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlString m_szUseRadioSubtitle; // 0x7e8 | Schema_Atomic | Size: 0x8
-			bool m_bUnzoomsAfterShot; // 0x7f0 | Schema_Builtin | Size: 0x1
-			bool m_bHideViewModelWhenZoomed; // 0x7f1 | Schema_Builtin | Size: 0x1
+			int32_t m_nRecoilSeed; // 0x6f4 | Schema_Builtin | Size: 0x4
+			int32_t m_nSpreadSeed; // 0x6f8 | Schema_Builtin | Size: 0x4
+			float32 m_flAttackMovespeedFactor; // 0x6fc | Schema_Builtin | Size: 0x4
+			float32 m_flInaccuracyPitchShift; // 0x700 | Schema_Builtin | Size: 0x4
+			float32 m_flInaccuracyAltSoundThreshold; // 0x704 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_szUseRadioSubtitle; // 0x708 | Schema_Atomic | Size: 0x8
+			bool m_bUnzoomsAfterShot; // 0x710 | Schema_Builtin | Size: 0x1
+			bool m_bHideViewModelWhenZoomed; // 0x711 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nZoomLevels; // 0x7f4 | Schema_Builtin | Size: 0x4
-			int32_t m_nZoomFOV1; // 0x7f8 | Schema_Builtin | Size: 0x4
-			int32_t m_nZoomFOV2; // 0x7fc | Schema_Builtin | Size: 0x4
-			float32 m_flZoomTime0; // 0x800 | Schema_Builtin | Size: 0x4
-			float32 m_flZoomTime1; // 0x804 | Schema_Builtin | Size: 0x4
-			float32 m_flZoomTime2; // 0x808 | Schema_Builtin | Size: 0x4
-			float32 m_flIronSightPullUpSpeed; // 0x80c | Schema_Builtin | Size: 0x4
-			float32 m_flIronSightPutDownSpeed; // 0x810 | Schema_Builtin | Size: 0x4
-			float32 m_flIronSightFOV; // 0x814 | Schema_Builtin | Size: 0x4
-			float32 m_flIronSightPivotForward; // 0x818 | Schema_Builtin | Size: 0x4
-			float32 m_flIronSightLooseness; // 0x81c | Schema_Builtin | Size: 0x4
-			int32_t m_nDamage; // 0x820 | Schema_Builtin | Size: 0x4
-			float32 m_flHeadshotMultiplier; // 0x824 | Schema_Builtin | Size: 0x4
-			float32 m_flArmorRatio; // 0x828 | Schema_Builtin | Size: 0x4
-			float32 m_flPenetration; // 0x82c | Schema_Builtin | Size: 0x4
-			float32 m_flRange; // 0x830 | Schema_Builtin | Size: 0x4
-			float32 m_flRangeModifier; // 0x834 | Schema_Builtin | Size: 0x4
-			float32 m_flFlinchVelocityModifierLarge; // 0x838 | Schema_Builtin | Size: 0x4
-			float32 m_flFlinchVelocityModifierSmall; // 0x83c | Schema_Builtin | Size: 0x4
-			float32 m_flRecoveryTimeCrouch; // 0x840 | Schema_Builtin | Size: 0x4
-			float32 m_flRecoveryTimeStand; // 0x844 | Schema_Builtin | Size: 0x4
-			float32 m_flRecoveryTimeCrouchFinal; // 0x848 | Schema_Builtin | Size: 0x4
-			float32 m_flRecoveryTimeStandFinal; // 0x84c | Schema_Builtin | Size: 0x4
-			int32_t m_nRecoveryTransitionStartBullet; // 0x850 | Schema_Builtin | Size: 0x4
-			int32_t m_nRecoveryTransitionEndBullet; // 0x854 | Schema_Builtin | Size: 0x4
-			float32 m_flThrowVelocity; // 0x858 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vSmokeColor; // 0x85c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CGlobalSymbol m_szAnimClass; // 0x868 | Schema_Atomic | Size: 0x8
+			int32_t m_nZoomLevels; // 0x714 | Schema_Builtin | Size: 0x4
+			int32_t m_nZoomFOV1; // 0x718 | Schema_Builtin | Size: 0x4
+			int32_t m_nZoomFOV2; // 0x71c | Schema_Builtin | Size: 0x4
+			float32 m_flZoomTime0; // 0x720 | Schema_Builtin | Size: 0x4
+			float32 m_flZoomTime1; // 0x724 | Schema_Builtin | Size: 0x4
+			float32 m_flZoomTime2; // 0x728 | Schema_Builtin | Size: 0x4
+			float32 m_flIronSightPullUpSpeed; // 0x72c | Schema_Builtin | Size: 0x4
+			float32 m_flIronSightPutDownSpeed; // 0x730 | Schema_Builtin | Size: 0x4
+			float32 m_flIronSightFOV; // 0x734 | Schema_Builtin | Size: 0x4
+			float32 m_flIronSightPivotForward; // 0x738 | Schema_Builtin | Size: 0x4
+			float32 m_flIronSightLooseness; // 0x73c | Schema_Builtin | Size: 0x4
+			int32_t m_nDamage; // 0x740 | Schema_Builtin | Size: 0x4
+			float32 m_flHeadshotMultiplier; // 0x744 | Schema_Builtin | Size: 0x4
+			float32 m_flArmorRatio; // 0x748 | Schema_Builtin | Size: 0x4
+			float32 m_flPenetration; // 0x74c | Schema_Builtin | Size: 0x4
+			float32 m_flRange; // 0x750 | Schema_Builtin | Size: 0x4
+			float32 m_flRangeModifier; // 0x754 | Schema_Builtin | Size: 0x4
+			float32 m_flFlinchVelocityModifierLarge; // 0x758 | Schema_Builtin | Size: 0x4
+			float32 m_flFlinchVelocityModifierSmall; // 0x75c | Schema_Builtin | Size: 0x4
+			float32 m_flRecoveryTimeCrouch; // 0x760 | Schema_Builtin | Size: 0x4
+			float32 m_flRecoveryTimeStand; // 0x764 | Schema_Builtin | Size: 0x4
+			float32 m_flRecoveryTimeCrouchFinal; // 0x768 | Schema_Builtin | Size: 0x4
+			float32 m_flRecoveryTimeStandFinal; // 0x76c | Schema_Builtin | Size: 0x4
+			int32_t m_nRecoveryTransitionStartBullet; // 0x770 | Schema_Builtin | Size: 0x4
+			int32_t m_nRecoveryTransitionEndBullet; // 0x774 | Schema_Builtin | Size: 0x4
+			float32 m_flThrowVelocity; // 0x778 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vSmokeColor; // 0x77c | Schema_Atomic | Size: 0xc
+			GlobalTypes::CGlobalSymbol m_szAnimClass; // 0x788 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x30); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_WeaponType) == 0x440, "m_WeaponType in CCSWeaponBaseVData should be at offset 0x440");
 		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_WeaponCategory) == 0x444, "m_WeaponCategory in CCSWeaponBaseVData should be at offset 0x444");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szModel_AG2) == 0x448, "m_szModel_AG2 in CCSWeaponBaseVData should be at offset 0x448");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szAnimSkeleton) == 0x528, "m_szAnimSkeleton in CCSWeaponBaseVData should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_vecMuzzlePos0) == 0x608, "m_vecMuzzlePos0 in CCSWeaponBaseVData should be at offset 0x608");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_vecMuzzlePos1) == 0x614, "m_vecMuzzlePos1 in CCSWeaponBaseVData should be at offset 0x614");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szTracerParticle) == 0x620, "m_szTracerParticle in CCSWeaponBaseVData should be at offset 0x620");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_GearSlot) == 0x700, "m_GearSlot in CCSWeaponBaseVData should be at offset 0x700");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_GearSlotPosition) == 0x704, "m_GearSlotPosition in CCSWeaponBaseVData should be at offset 0x704");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_DefaultLoadoutSlot) == 0x708, "m_DefaultLoadoutSlot in CCSWeaponBaseVData should be at offset 0x708");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nPrice) == 0x70C, "m_nPrice in CCSWeaponBaseVData should be at offset 0x70C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nKillAward) == 0x710, "m_nKillAward in CCSWeaponBaseVData should be at offset 0x710");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nPrimaryReserveAmmoMax) == 0x714, "m_nPrimaryReserveAmmoMax in CCSWeaponBaseVData should be at offset 0x714");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nSecondaryReserveAmmoMax) == 0x718, "m_nSecondaryReserveAmmoMax in CCSWeaponBaseVData should be at offset 0x718");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bMeleeWeapon) == 0x71C, "m_bMeleeWeapon in CCSWeaponBaseVData should be at offset 0x71C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bHasBurstMode) == 0x71D, "m_bHasBurstMode in CCSWeaponBaseVData should be at offset 0x71D");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bIsRevolver) == 0x71E, "m_bIsRevolver in CCSWeaponBaseVData should be at offset 0x71E");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bCannotShootUnderwater) == 0x71F, "m_bCannotShootUnderwater in CCSWeaponBaseVData should be at offset 0x71F");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szName) == 0x720, "m_szName in CCSWeaponBaseVData should be at offset 0x720");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_eSilencerType) == 0x728, "m_eSilencerType in CCSWeaponBaseVData should be at offset 0x728");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nCrosshairMinDistance) == 0x72C, "m_nCrosshairMinDistance in CCSWeaponBaseVData should be at offset 0x72C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nCrosshairDeltaDistance) == 0x730, "m_nCrosshairDeltaDistance in CCSWeaponBaseVData should be at offset 0x730");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bIsFullAuto) == 0x734, "m_bIsFullAuto in CCSWeaponBaseVData should be at offset 0x734");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nNumBullets) == 0x738, "m_nNumBullets in CCSWeaponBaseVData should be at offset 0x738");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bReloadsSingleShells) == 0x73C, "m_bReloadsSingleShells in CCSWeaponBaseVData should be at offset 0x73C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flCycleTime) == 0x740, "m_flCycleTime in CCSWeaponBaseVData should be at offset 0x740");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flMaxSpeed) == 0x748, "m_flMaxSpeed in CCSWeaponBaseVData should be at offset 0x748");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flSpread) == 0x750, "m_flSpread in CCSWeaponBaseVData should be at offset 0x750");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyCrouch) == 0x758, "m_flInaccuracyCrouch in CCSWeaponBaseVData should be at offset 0x758");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyStand) == 0x760, "m_flInaccuracyStand in CCSWeaponBaseVData should be at offset 0x760");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyJump) == 0x768, "m_flInaccuracyJump in CCSWeaponBaseVData should be at offset 0x768");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyLand) == 0x770, "m_flInaccuracyLand in CCSWeaponBaseVData should be at offset 0x770");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyLadder) == 0x778, "m_flInaccuracyLadder in CCSWeaponBaseVData should be at offset 0x778");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyFire) == 0x780, "m_flInaccuracyFire in CCSWeaponBaseVData should be at offset 0x780");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyMove) == 0x788, "m_flInaccuracyMove in CCSWeaponBaseVData should be at offset 0x788");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilAngle) == 0x790, "m_flRecoilAngle in CCSWeaponBaseVData should be at offset 0x790");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilAngleVariance) == 0x798, "m_flRecoilAngleVariance in CCSWeaponBaseVData should be at offset 0x798");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilMagnitude) == 0x7A0, "m_flRecoilMagnitude in CCSWeaponBaseVData should be at offset 0x7A0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilMagnitudeVariance) == 0x7A8, "m_flRecoilMagnitudeVariance in CCSWeaponBaseVData should be at offset 0x7A8");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nTracerFrequency) == 0x7B0, "m_nTracerFrequency in CCSWeaponBaseVData should be at offset 0x7B0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyJumpInitial) == 0x7B8, "m_flInaccuracyJumpInitial in CCSWeaponBaseVData should be at offset 0x7B8");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyJumpApex) == 0x7BC, "m_flInaccuracyJumpApex in CCSWeaponBaseVData should be at offset 0x7BC");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyReload) == 0x7C0, "m_flInaccuracyReload in CCSWeaponBaseVData should be at offset 0x7C0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flDeployDuration) == 0x7C4, "m_flDeployDuration in CCSWeaponBaseVData should be at offset 0x7C4");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flDisallowAttackAfterReloadStartDuration) == 0x7C8, "m_flDisallowAttackAfterReloadStartDuration in CCSWeaponBaseVData should be at offset 0x7C8");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nBurstShotCount) == 0x7CC, "m_nBurstShotCount in CCSWeaponBaseVData should be at offset 0x7CC");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bAllowBurstHolster) == 0x7D0, "m_bAllowBurstHolster in CCSWeaponBaseVData should be at offset 0x7D0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nRecoilSeed) == 0x7D4, "m_nRecoilSeed in CCSWeaponBaseVData should be at offset 0x7D4");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nSpreadSeed) == 0x7D8, "m_nSpreadSeed in CCSWeaponBaseVData should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flAttackMovespeedFactor) == 0x7DC, "m_flAttackMovespeedFactor in CCSWeaponBaseVData should be at offset 0x7DC");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyPitchShift) == 0x7E0, "m_flInaccuracyPitchShift in CCSWeaponBaseVData should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyAltSoundThreshold) == 0x7E4, "m_flInaccuracyAltSoundThreshold in CCSWeaponBaseVData should be at offset 0x7E4");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szUseRadioSubtitle) == 0x7E8, "m_szUseRadioSubtitle in CCSWeaponBaseVData should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bUnzoomsAfterShot) == 0x7F0, "m_bUnzoomsAfterShot in CCSWeaponBaseVData should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bHideViewModelWhenZoomed) == 0x7F1, "m_bHideViewModelWhenZoomed in CCSWeaponBaseVData should be at offset 0x7F1");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nZoomLevels) == 0x7F4, "m_nZoomLevels in CCSWeaponBaseVData should be at offset 0x7F4");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nZoomFOV1) == 0x7F8, "m_nZoomFOV1 in CCSWeaponBaseVData should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nZoomFOV2) == 0x7FC, "m_nZoomFOV2 in CCSWeaponBaseVData should be at offset 0x7FC");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flZoomTime0) == 0x800, "m_flZoomTime0 in CCSWeaponBaseVData should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flZoomTime1) == 0x804, "m_flZoomTime1 in CCSWeaponBaseVData should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flZoomTime2) == 0x808, "m_flZoomTime2 in CCSWeaponBaseVData should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightPullUpSpeed) == 0x80C, "m_flIronSightPullUpSpeed in CCSWeaponBaseVData should be at offset 0x80C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightPutDownSpeed) == 0x810, "m_flIronSightPutDownSpeed in CCSWeaponBaseVData should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightFOV) == 0x814, "m_flIronSightFOV in CCSWeaponBaseVData should be at offset 0x814");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightPivotForward) == 0x818, "m_flIronSightPivotForward in CCSWeaponBaseVData should be at offset 0x818");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightLooseness) == 0x81C, "m_flIronSightLooseness in CCSWeaponBaseVData should be at offset 0x81C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nDamage) == 0x820, "m_nDamage in CCSWeaponBaseVData should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flHeadshotMultiplier) == 0x824, "m_flHeadshotMultiplier in CCSWeaponBaseVData should be at offset 0x824");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flArmorRatio) == 0x828, "m_flArmorRatio in CCSWeaponBaseVData should be at offset 0x828");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flPenetration) == 0x82C, "m_flPenetration in CCSWeaponBaseVData should be at offset 0x82C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRange) == 0x830, "m_flRange in CCSWeaponBaseVData should be at offset 0x830");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRangeModifier) == 0x834, "m_flRangeModifier in CCSWeaponBaseVData should be at offset 0x834");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flFlinchVelocityModifierLarge) == 0x838, "m_flFlinchVelocityModifierLarge in CCSWeaponBaseVData should be at offset 0x838");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flFlinchVelocityModifierSmall) == 0x83C, "m_flFlinchVelocityModifierSmall in CCSWeaponBaseVData should be at offset 0x83C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeCrouch) == 0x840, "m_flRecoveryTimeCrouch in CCSWeaponBaseVData should be at offset 0x840");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeStand) == 0x844, "m_flRecoveryTimeStand in CCSWeaponBaseVData should be at offset 0x844");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeCrouchFinal) == 0x848, "m_flRecoveryTimeCrouchFinal in CCSWeaponBaseVData should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeStandFinal) == 0x84C, "m_flRecoveryTimeStandFinal in CCSWeaponBaseVData should be at offset 0x84C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nRecoveryTransitionStartBullet) == 0x850, "m_nRecoveryTransitionStartBullet in CCSWeaponBaseVData should be at offset 0x850");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nRecoveryTransitionEndBullet) == 0x854, "m_nRecoveryTransitionEndBullet in CCSWeaponBaseVData should be at offset 0x854");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flThrowVelocity) == 0x858, "m_flThrowVelocity in CCSWeaponBaseVData should be at offset 0x858");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_vSmokeColor) == 0x85C, "m_vSmokeColor in CCSWeaponBaseVData should be at offset 0x85C");
-		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szAnimClass) == 0x868, "m_szAnimClass in CCSWeaponBaseVData should be at offset 0x868");
-		static_assert(sizeof(CS2::server::CCSWeaponBaseVData) == 0x8A0, "CCSWeaponBaseVData size should be 0x8A0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szAnimSkeleton) == 0x448, "m_szAnimSkeleton in CCSWeaponBaseVData should be at offset 0x448");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_vecMuzzlePos0) == 0x528, "m_vecMuzzlePos0 in CCSWeaponBaseVData should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_vecMuzzlePos1) == 0x534, "m_vecMuzzlePos1 in CCSWeaponBaseVData should be at offset 0x534");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szTracerParticle) == 0x540, "m_szTracerParticle in CCSWeaponBaseVData should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_GearSlot) == 0x620, "m_GearSlot in CCSWeaponBaseVData should be at offset 0x620");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_GearSlotPosition) == 0x624, "m_GearSlotPosition in CCSWeaponBaseVData should be at offset 0x624");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_DefaultLoadoutSlot) == 0x628, "m_DefaultLoadoutSlot in CCSWeaponBaseVData should be at offset 0x628");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nPrice) == 0x62C, "m_nPrice in CCSWeaponBaseVData should be at offset 0x62C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nKillAward) == 0x630, "m_nKillAward in CCSWeaponBaseVData should be at offset 0x630");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nPrimaryReserveAmmoMax) == 0x634, "m_nPrimaryReserveAmmoMax in CCSWeaponBaseVData should be at offset 0x634");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nSecondaryReserveAmmoMax) == 0x638, "m_nSecondaryReserveAmmoMax in CCSWeaponBaseVData should be at offset 0x638");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bMeleeWeapon) == 0x63C, "m_bMeleeWeapon in CCSWeaponBaseVData should be at offset 0x63C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bHasBurstMode) == 0x63D, "m_bHasBurstMode in CCSWeaponBaseVData should be at offset 0x63D");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bIsRevolver) == 0x63E, "m_bIsRevolver in CCSWeaponBaseVData should be at offset 0x63E");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bCannotShootUnderwater) == 0x63F, "m_bCannotShootUnderwater in CCSWeaponBaseVData should be at offset 0x63F");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szName) == 0x640, "m_szName in CCSWeaponBaseVData should be at offset 0x640");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_eSilencerType) == 0x648, "m_eSilencerType in CCSWeaponBaseVData should be at offset 0x648");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nCrosshairMinDistance) == 0x64C, "m_nCrosshairMinDistance in CCSWeaponBaseVData should be at offset 0x64C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nCrosshairDeltaDistance) == 0x650, "m_nCrosshairDeltaDistance in CCSWeaponBaseVData should be at offset 0x650");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bIsFullAuto) == 0x654, "m_bIsFullAuto in CCSWeaponBaseVData should be at offset 0x654");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nNumBullets) == 0x658, "m_nNumBullets in CCSWeaponBaseVData should be at offset 0x658");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bReloadsSingleShells) == 0x65C, "m_bReloadsSingleShells in CCSWeaponBaseVData should be at offset 0x65C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flCycleTime) == 0x660, "m_flCycleTime in CCSWeaponBaseVData should be at offset 0x660");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flMaxSpeed) == 0x668, "m_flMaxSpeed in CCSWeaponBaseVData should be at offset 0x668");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flSpread) == 0x670, "m_flSpread in CCSWeaponBaseVData should be at offset 0x670");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyCrouch) == 0x678, "m_flInaccuracyCrouch in CCSWeaponBaseVData should be at offset 0x678");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyStand) == 0x680, "m_flInaccuracyStand in CCSWeaponBaseVData should be at offset 0x680");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyJump) == 0x688, "m_flInaccuracyJump in CCSWeaponBaseVData should be at offset 0x688");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyLand) == 0x690, "m_flInaccuracyLand in CCSWeaponBaseVData should be at offset 0x690");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyLadder) == 0x698, "m_flInaccuracyLadder in CCSWeaponBaseVData should be at offset 0x698");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyFire) == 0x6A0, "m_flInaccuracyFire in CCSWeaponBaseVData should be at offset 0x6A0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyMove) == 0x6A8, "m_flInaccuracyMove in CCSWeaponBaseVData should be at offset 0x6A8");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilAngle) == 0x6B0, "m_flRecoilAngle in CCSWeaponBaseVData should be at offset 0x6B0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilAngleVariance) == 0x6B8, "m_flRecoilAngleVariance in CCSWeaponBaseVData should be at offset 0x6B8");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilMagnitude) == 0x6C0, "m_flRecoilMagnitude in CCSWeaponBaseVData should be at offset 0x6C0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoilMagnitudeVariance) == 0x6C8, "m_flRecoilMagnitudeVariance in CCSWeaponBaseVData should be at offset 0x6C8");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nTracerFrequency) == 0x6D0, "m_nTracerFrequency in CCSWeaponBaseVData should be at offset 0x6D0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyJumpInitial) == 0x6D8, "m_flInaccuracyJumpInitial in CCSWeaponBaseVData should be at offset 0x6D8");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyJumpApex) == 0x6DC, "m_flInaccuracyJumpApex in CCSWeaponBaseVData should be at offset 0x6DC");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyReload) == 0x6E0, "m_flInaccuracyReload in CCSWeaponBaseVData should be at offset 0x6E0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flDeployDuration) == 0x6E4, "m_flDeployDuration in CCSWeaponBaseVData should be at offset 0x6E4");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flDisallowAttackAfterReloadStartDuration) == 0x6E8, "m_flDisallowAttackAfterReloadStartDuration in CCSWeaponBaseVData should be at offset 0x6E8");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nBurstShotCount) == 0x6EC, "m_nBurstShotCount in CCSWeaponBaseVData should be at offset 0x6EC");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bAllowBurstHolster) == 0x6F0, "m_bAllowBurstHolster in CCSWeaponBaseVData should be at offset 0x6F0");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nRecoilSeed) == 0x6F4, "m_nRecoilSeed in CCSWeaponBaseVData should be at offset 0x6F4");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nSpreadSeed) == 0x6F8, "m_nSpreadSeed in CCSWeaponBaseVData should be at offset 0x6F8");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flAttackMovespeedFactor) == 0x6FC, "m_flAttackMovespeedFactor in CCSWeaponBaseVData should be at offset 0x6FC");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyPitchShift) == 0x700, "m_flInaccuracyPitchShift in CCSWeaponBaseVData should be at offset 0x700");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flInaccuracyAltSoundThreshold) == 0x704, "m_flInaccuracyAltSoundThreshold in CCSWeaponBaseVData should be at offset 0x704");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szUseRadioSubtitle) == 0x708, "m_szUseRadioSubtitle in CCSWeaponBaseVData should be at offset 0x708");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bUnzoomsAfterShot) == 0x710, "m_bUnzoomsAfterShot in CCSWeaponBaseVData should be at offset 0x710");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_bHideViewModelWhenZoomed) == 0x711, "m_bHideViewModelWhenZoomed in CCSWeaponBaseVData should be at offset 0x711");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nZoomLevels) == 0x714, "m_nZoomLevels in CCSWeaponBaseVData should be at offset 0x714");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nZoomFOV1) == 0x718, "m_nZoomFOV1 in CCSWeaponBaseVData should be at offset 0x718");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nZoomFOV2) == 0x71C, "m_nZoomFOV2 in CCSWeaponBaseVData should be at offset 0x71C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flZoomTime0) == 0x720, "m_flZoomTime0 in CCSWeaponBaseVData should be at offset 0x720");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flZoomTime1) == 0x724, "m_flZoomTime1 in CCSWeaponBaseVData should be at offset 0x724");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flZoomTime2) == 0x728, "m_flZoomTime2 in CCSWeaponBaseVData should be at offset 0x728");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightPullUpSpeed) == 0x72C, "m_flIronSightPullUpSpeed in CCSWeaponBaseVData should be at offset 0x72C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightPutDownSpeed) == 0x730, "m_flIronSightPutDownSpeed in CCSWeaponBaseVData should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightFOV) == 0x734, "m_flIronSightFOV in CCSWeaponBaseVData should be at offset 0x734");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightPivotForward) == 0x738, "m_flIronSightPivotForward in CCSWeaponBaseVData should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flIronSightLooseness) == 0x73C, "m_flIronSightLooseness in CCSWeaponBaseVData should be at offset 0x73C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nDamage) == 0x740, "m_nDamage in CCSWeaponBaseVData should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flHeadshotMultiplier) == 0x744, "m_flHeadshotMultiplier in CCSWeaponBaseVData should be at offset 0x744");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flArmorRatio) == 0x748, "m_flArmorRatio in CCSWeaponBaseVData should be at offset 0x748");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flPenetration) == 0x74C, "m_flPenetration in CCSWeaponBaseVData should be at offset 0x74C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRange) == 0x750, "m_flRange in CCSWeaponBaseVData should be at offset 0x750");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRangeModifier) == 0x754, "m_flRangeModifier in CCSWeaponBaseVData should be at offset 0x754");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flFlinchVelocityModifierLarge) == 0x758, "m_flFlinchVelocityModifierLarge in CCSWeaponBaseVData should be at offset 0x758");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flFlinchVelocityModifierSmall) == 0x75C, "m_flFlinchVelocityModifierSmall in CCSWeaponBaseVData should be at offset 0x75C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeCrouch) == 0x760, "m_flRecoveryTimeCrouch in CCSWeaponBaseVData should be at offset 0x760");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeStand) == 0x764, "m_flRecoveryTimeStand in CCSWeaponBaseVData should be at offset 0x764");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeCrouchFinal) == 0x768, "m_flRecoveryTimeCrouchFinal in CCSWeaponBaseVData should be at offset 0x768");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flRecoveryTimeStandFinal) == 0x76C, "m_flRecoveryTimeStandFinal in CCSWeaponBaseVData should be at offset 0x76C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nRecoveryTransitionStartBullet) == 0x770, "m_nRecoveryTransitionStartBullet in CCSWeaponBaseVData should be at offset 0x770");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_nRecoveryTransitionEndBullet) == 0x774, "m_nRecoveryTransitionEndBullet in CCSWeaponBaseVData should be at offset 0x774");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_flThrowVelocity) == 0x778, "m_flThrowVelocity in CCSWeaponBaseVData should be at offset 0x778");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_vSmokeColor) == 0x77C, "m_vSmokeColor in CCSWeaponBaseVData should be at offset 0x77C");
+		static_assert(offsetof(CS2::server::CCSWeaponBaseVData, m_szAnimClass) == 0x788, "m_szAnimClass in CCSWeaponBaseVData should be at offset 0x788");
+		static_assert(sizeof(CS2::server::CCSWeaponBaseVData) == 0x7C0, "CCSWeaponBaseVData size should be 0x7C0");
 	}
 }

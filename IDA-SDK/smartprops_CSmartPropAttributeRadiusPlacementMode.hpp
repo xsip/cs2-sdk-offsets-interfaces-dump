@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeRadiusPlacementMode {
-    char pad_2554[0x40];
+    char pad_2630[0x40];
 };

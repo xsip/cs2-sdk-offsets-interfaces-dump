@@ -11,20 +11,23 @@ class client_CCollisionProperty;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
+#include "entity2_GameTick_t.hpp"
 #include "client_CNetworkVelocityVector.hpp"
+#include "client_CNetworkVelocityVector.hpp"
+#include "entity2_GameTime_t.hpp"
 #include "particleslib_CParticleProperty.hpp"
 
 class client_C_CSPlayerResource {
-    char vTable723[0x8];
+    void **__vftable_0;
     CUtlSymbolLarge m_iszPrivateVScripts;
     entity2_CEntityIdentity* m_pEntity;
-    char pad_724[0x18];
+    char pad_1508[0x18];
     entity2_CScriptComponent* m_CScriptComponent;
     client_CBodyComponent* m_CBodyComponent;
     client_CNetworkTransmitComponent m_NetworkTransmitComponent;
-    char pad_705[0x120];
+    char pad_1489[0x120];
     entity2_GameTick_t m_nLastThinkTick;
-    char pad_706[0x4];
+    char pad_1490[0x4];
     client_CGameSceneNode* m_pGameSceneNode;
     client_CRenderComponent* m_pRenderComponent;
     client_CCollisionProperty* m_pCollision;
@@ -33,11 +36,11 @@ class client_C_CSPlayerResource {
     float32 m_flDamageAccumulator;
     uint8_t m_lifeState;
     bool m_bTakesDamage;
-    char pad_707[0x2];
+    char pad_1491[0x2];
     client_TakeDamageFlags_t m_nTakeDamageFlags;
     client_EntityPlatformTypes_t m_nPlatformType;
     uint8_t m_ubInterpolationFrame;
-    char pad_708[0x2];
+    char pad_1492[0x2];
     char m_hSceneObjectController[0x4];
     int32_t m_nNoInterpolationTick;
     int32_t m_nVisibilityNoInterpolationTick;
@@ -49,12 +52,12 @@ class client_C_CSPlayerResource {
     bool m_bApplyLayerMatchIDToModel;
     CUtlStringToken m_tokLayerMatchID;
     CUtlStringToken m_nSubclassID;
-    char pad_709[0xc];
+    char pad_1493[0xc];
     int32_t m_nSimulationTick;
     int32_t m_iCurrentThinkContext;
     char m_aThinkFunctions[0x18];
     bool m_bDisabledContextThinks;
-    char pad_710[0x3];
+    char pad_1494[0x3];
     float32 m_flAnimTime;
     float32 m_flSimulationTime;
     uint8_t m_nSceneObjectOverrideFlags;
@@ -63,7 +66,7 @@ class client_C_CSPlayerResource {
     bool m_bRenderEvenWhenNotSuccessfullyInterpolated;
     int32_t m_nInterpolationLatchDirtyFlags[2];
     uint16_t m_ListEntry[11];
-    char pad_711[0x2];
+    char pad_1495[0x2];
     entity2_GameTime_t m_flCreateTime;
     float32 m_flSpeed;
     uint16_t m_EntClientFlags;
@@ -71,19 +74,19 @@ class client_C_CSPlayerResource {
     uint8_t m_iTeamNum;
     uint32_t m_spawnflags;
     entity2_GameTick_t m_nNextThinkTick;
-    char pad_712[0x4];
+    char pad_1496[0x4];
     uint32_t m_fFlags;
     Vector m_vecAbsVelocity;
     client_CNetworkVelocityVector m_vecServerVelocity;
     client_CNetworkVelocityVector m_vecVelocity;
-    char pad_713[0xb8];
+    char pad_1497[0xb8];
     Vector m_vecBaseVelocity;
     char m_hEffectEntity[0x4];
     char m_hOwnerEntity[0x4];
     client_MoveCollide_t m_MoveCollide;
     client_MoveType_t m_MoveType;
     client_MoveType_t m_nActualMoveType;
-    char pad_714[0x1];
+    char pad_1498[0x1];
     float32 m_flWaterLevel;
     uint32_t m_fEffects;
     char m_hGroundEntity[0x4];
@@ -94,33 +97,33 @@ class client_C_CSPlayerResource {
     float32 m_flTimeScale;
     bool m_bAnimatedEveryTick;
     bool m_bGravityDisabled;
-    char pad_715[0x2];
+    char pad_1499[0x2];
     entity2_GameTime_t m_flNavIgnoreUntilTime;
     uint16_t m_hThink;
-    char pad_716[0xe];
+    char pad_1500[0xe];
     uint8_t m_fBBoxVisFlags;
-    char pad_717[0x3];
+    char pad_1501[0x3];
     float32 m_flActualGravityScale;
     bool m_bGravityActuallyDisabled;
     bool m_bPredictable;
     bool m_bRenderWithViewModels;
-    char pad_718[0x1];
+    char pad_1502[0x1];
     int32_t m_nFirstPredictableCommand;
     int32_t m_nLastPredictableCommand;
     char m_hOldMoveParent[0x4];
     particleslib_CParticleProperty m_Particles;
-    char pad_719[0x8];
+    char pad_1503[0x8];
     QAngle m_vecAngVelocity;
     int32_t m_DataChangeEventRef;
     char m_dependencies[0x18];
     int32_t m_nCreationTick;
-    char pad_720[0x9];
+    char pad_1504[0xd];
     bool m_bAnimTimeChanged;
     bool m_bSimulationTimeChanged;
-    char pad_721[0x9];
+    char pad_1505[0xd];
     CUtlString m_sUniqueHammerID;
     client_BloodType m_nBloodType;
-    char end_pad_722[0x4];
+    char end_pad_1506[0x4];
     bool m_bHostageAlive[12];
     bool m_isHostageFollowingSomeone[12];
     CEntityIndex m_iHostageEntityIDs[12];
@@ -131,5 +134,5 @@ class client_C_CSPlayerResource {
     int32_t m_hostageRescueZ[4];
     bool m_bEndMatchNextMapAllVoted;
     bool m_foundGoalPositions;
-    char end_pad_1340[0x6];
+    char end_pad_2142[0x6];
 };

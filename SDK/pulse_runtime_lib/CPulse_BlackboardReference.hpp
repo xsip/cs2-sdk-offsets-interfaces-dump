@@ -22,7 +22,7 @@ namespace CS2 {
 		class CPulse_BlackboardReference  {
 		public:
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIPulseGraphDef> m_hBlackboardResource; // 0x0 | Schema_Atomic | Size: 0x8
-			char  m_hBlackboardResource[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
+			char m_hBlackboardResource[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::PulseSymbol_t m_BlackboardResource; // 0x8 | Schema_Atomic | Size: 0x10
 			pulse_runtime_lib::PulseDocNodeID_t m_nNodeID; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);

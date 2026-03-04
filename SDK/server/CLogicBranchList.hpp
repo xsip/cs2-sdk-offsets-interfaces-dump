@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CLogicalEntity.hpp>
+#include <SDK/server/CBaseEntity.hpp>
 #include <SDK/server/LogicBranchListenerLastState_t.hpp>
 #include <SDK/entity2/CEntityIOOutput.hpp>
 
@@ -23,21 +24,21 @@ namespace CS2 {
 	namespace server {
 		class CLogicBranchList : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_nLogicBranchNames[16]; // 0x4f0 | Schema_FixedArray | Size: 0x80
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_LogicBranchList; // 0x570 | Schema_Atomic | Size: 0x18
-			char  m_LogicBranchList[0x18]; // 0x570 | Schema_Atomic | Size: 0x18
-			server::LogicBranchListenerLastState_t m_eLastState; // 0x588 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_nLogicBranchNames[16]; // 0x4a8 | Schema_FixedArray | Size: 0x80
+			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_LogicBranchList; // 0x528 | Schema_Atomic | Size: 0x18
+			// char m_LogicBranchList[0x18]; // 0x528 | Schema_Atomic | Size: 0x18
+			server::LogicBranchListenerLastState_t m_eLastState; // 0x540 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnAllTrue; // 0x590 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAllFalse; // 0x5b8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMixed; // 0x5e0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnAllTrue; // 0x548 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnAllFalse; // 0x560 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMixed; // 0x578 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CLogicBranchList, m_nLogicBranchNames) == 0x4F0, "m_nLogicBranchNames in CLogicBranchList should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CLogicBranchList, m_LogicBranchList) == 0x570, "m_LogicBranchList in CLogicBranchList should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CLogicBranchList, m_eLastState) == 0x588, "m_eLastState in CLogicBranchList should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnAllTrue) == 0x590, "m_OnAllTrue in CLogicBranchList should be at offset 0x590");
-		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnAllFalse) == 0x5B8, "m_OnAllFalse in CLogicBranchList should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnMixed) == 0x5E0, "m_OnMixed in CLogicBranchList should be at offset 0x5E0");
-		static_assert(sizeof(CS2::server::CLogicBranchList) == 0x608, "CLogicBranchList size should be 0x608");
+		static_assert(offsetof(CS2::server::CLogicBranchList, m_nLogicBranchNames) == 0x4A8, "m_nLogicBranchNames in CLogicBranchList should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CLogicBranchList, m_LogicBranchList) == 0x528, "m_LogicBranchList in CLogicBranchList should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CLogicBranchList, m_eLastState) == 0x540, "m_eLastState in CLogicBranchList should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnAllTrue) == 0x548, "m_OnAllTrue in CLogicBranchList should be at offset 0x548");
+		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnAllFalse) == 0x560, "m_OnAllFalse in CLogicBranchList should be at offset 0x560");
+		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnMixed) == 0x578, "m_OnMixed in CLogicBranchList should be at offset 0x578");
+		static_assert(sizeof(CS2::server::CLogicBranchList) == 0x590, "CLogicBranchList size should be 0x590");
 	}
 }

@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x500
+			// Class size: 0x4B8
 			namespace SpawnPoint /*: public CS2::server::CServerOnlyPointEntity*/ {
-				constexpr std::ptrdiff_t m_iPriority = 0x4f0; // int32_t m_iPriority; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnabled = 0x4f4; // bool m_bEnabled; |  0x4f4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nType = 0x4f8; // int32_t m_nType; |  0x4f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iPriority = 0x4a8; // int32_t m_iPriority; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnabled = 0x4ac; // bool m_bEnabled; |  0x4ac | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nType = 0x4b0; // int32_t m_nType; |  0x4b0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

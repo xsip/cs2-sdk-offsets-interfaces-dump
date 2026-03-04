@@ -4,12 +4,15 @@
 
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 #include "pulse_runtime_lib_SignatureOutflow_Continue.hpp"
+#include "pulse_runtime_lib_SignatureOutflow_Continue.hpp"
+#include "pulse_runtime_lib_SignatureOutflow_Continue.hpp"
+#include "pulse_runtime_lib_SignatureOutflow_Resume.hpp"
 #include "pulse_runtime_lib_SignatureOutflow_Resume.hpp"
 
 class pulse_system_CPulseCell_Test_MultiOutflow_WithParams_Yielding {
-    char vTable501[0x8];
+    void **__vftable_0;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char end_pad_502[0x3c];
+    char end_pad_512[0x3c];
     pulse_runtime_lib_SignatureOutflow_Continue m_Out1;
     pulse_runtime_lib_SignatureOutflow_Continue m_AsyncChild1;
     pulse_runtime_lib_SignatureOutflow_Continue m_AsyncChild2;

@@ -4,6 +4,6 @@
 
 
 class smartprops_CPulseGraphInstance_SmartPropEval {
-    char pad_2700[0x118];
-    char pad_2527[0x10];
+    char pad_2797[0x118];
+    char pad_2603[0x10];
 };

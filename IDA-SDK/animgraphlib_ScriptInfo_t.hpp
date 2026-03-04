@@ -9,5 +9,5 @@ class animgraphlib_ScriptInfo_t {
     char m_proxyReadParams[0x18];
     char m_proxyWriteParams[0x18];
     animgraphlib_AnimScriptType m_eScriptType;
-    char end_pad_276[0x6];
+    char end_pad_301[0x6];
 };

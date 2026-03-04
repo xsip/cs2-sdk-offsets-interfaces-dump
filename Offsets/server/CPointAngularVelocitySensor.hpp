@@ -8,24 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x618
+			// Class size: 0x578
 			namespace CPointAngularVelocitySensor /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_hTargetEntity = 0x4f0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flThreshold = 0x4f4; // float32 m_flThreshold; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nLastCompareResult = 0x4f8; // int32_t m_nLastCompareResult; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nLastFireResult = 0x4fc; // int32_t m_nLastFireResult; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFireTime = 0x500; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flFireInterval = 0x504; // float32 m_flFireInterval; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastAngVelocity = 0x508; // float32 m_flLastAngVelocity; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_lastOrientation = 0x50c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecAxis = 0x518; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bUseHelper = 0x524; // bool m_bUseHelper; |  0x524 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_AngularVelocity = 0x528; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnLessThan = 0x550; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnLessThanOrEqualTo = 0x578; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnGreaterThan = 0x5a0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnGreaterThanOrEqualTo = 0x5c8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnEqualTo = 0x5f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_hTargetEntity = 0x4a8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flThreshold = 0x4ac; // float32 m_flThreshold; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nLastCompareResult = 0x4b0; // int32_t m_nLastCompareResult; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nLastFireResult = 0x4b4; // int32_t m_nLastFireResult; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFireTime = 0x4b8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flFireInterval = 0x4bc; // float32 m_flFireInterval; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastAngVelocity = 0x4c0; // float32 m_flLastAngVelocity; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_lastOrientation = 0x4c4; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecAxis = 0x4d0; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bUseHelper = 0x4dc; // bool m_bUseHelper; |  0x4dc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_AngularVelocity = 0x4e0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnLessThan = 0x500; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnLessThanOrEqualTo = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnGreaterThan = 0x530; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnGreaterThanOrEqualTo = 0x548; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnEqualTo = 0x560; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

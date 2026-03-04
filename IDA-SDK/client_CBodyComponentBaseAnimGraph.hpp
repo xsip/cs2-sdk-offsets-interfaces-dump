@@ -8,12 +8,13 @@ class client_CGameSceneNode;
 #include "client_CBaseAnimGraphController.hpp"
 
 class client_CBodyComponentBaseAnimGraph {
-    char pad_770[0x8];
+    char pad_1557[0x8];
     client_CGameSceneNode* m_pSceneNode;
-    char pad_768[0x38];
+    char pad_1555[0x38];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char end_pad_769[0x8];
-    char vTable771[0x8];
+    char end_pad_1556[0x8];
+    void **__vftable_0;
     client_CSkeletonInstance m_skeletonInstance;
     client_CBaseAnimGraphController m_animationController;
+    char end_pad_1558[0x8];
 };

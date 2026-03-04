@@ -5,7 +5,7 @@
 
 class soundsystem_voicecontainers_CSoundContainerReferenceArray {
     bool m_bUseReference;
-    char pad_490[0x7];
+    char pad_486[0x7];
     char m_sounds[0x18];
     char m_pSounds[0x18];
 };

@@ -4,6 +4,5 @@
 
 
 class client_CEntityIOOutput {
-    char vTable749[0x18];
-    char m_Value[0x10];
+    char pad_1536[0x18];
 };

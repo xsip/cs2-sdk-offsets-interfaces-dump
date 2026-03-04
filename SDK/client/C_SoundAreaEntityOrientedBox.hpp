@@ -21,11 +21,11 @@ namespace CS2 {
 	namespace client {
 		class C_SoundAreaEntityOrientedBox : public CS2::client::C_SoundAreaEntityBase {
 		public:
-			GlobalTypes::Vector m_vMin; // 0x620 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vMax; // 0x62c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vMin; // 0x630 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vMax; // 0x63c | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::client::C_SoundAreaEntityOrientedBox, m_vMin) == 0x620, "m_vMin in C_SoundAreaEntityOrientedBox should be at offset 0x620");
-		static_assert(offsetof(CS2::client::C_SoundAreaEntityOrientedBox, m_vMax) == 0x62C, "m_vMax in C_SoundAreaEntityOrientedBox should be at offset 0x62C");
-		static_assert(sizeof(CS2::client::C_SoundAreaEntityOrientedBox) == 0x638, "C_SoundAreaEntityOrientedBox size should be 0x638");
+		static_assert(offsetof(CS2::client::C_SoundAreaEntityOrientedBox, m_vMin) == 0x630, "m_vMin in C_SoundAreaEntityOrientedBox should be at offset 0x630");
+		static_assert(offsetof(CS2::client::C_SoundAreaEntityOrientedBox, m_vMax) == 0x63C, "m_vMax in C_SoundAreaEntityOrientedBox should be at offset 0x63C");
+		static_assert(sizeof(CS2::client::C_SoundAreaEntityOrientedBox) == 0x648, "C_SoundAreaEntityOrientedBox size should be 0x648");
 	}
 }

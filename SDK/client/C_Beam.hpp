@@ -30,63 +30,63 @@ namespace CS2 {
 	namespace client {
 		class C_Beam : public CS2::client::C_BaseModelEntity {
 		public:
-			float32 m_flFrameRate; // 0xeb0 | Schema_Builtin | Size: 0x4
-			float32 m_flHDRColorScale; // 0xeb4 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flFireTime; // 0xeb8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flDamage; // 0xebc | Schema_Builtin | Size: 0x4
-			uint8_t m_nNumBeamEnts; // 0xec0 | Schema_Builtin | Size: 0x1
+			float32 m_flFrameRate; // 0xe88 | Schema_Builtin | Size: 0x4
+			float32 m_flHDRColorScale; // 0xe8c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flFireTime; // 0xe90 | Schema_DeclaredClass | Size: 0x4
+			float32 m_flDamage; // 0xe94 | Schema_Builtin | Size: 0x4
+			uint8_t m_nNumBeamEnts; // 0xe98 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_queryHandleHalo; // 0xec4 | Schema_Builtin | Size: 0x4
+			int32_t m_queryHandleHalo; // 0xe9c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x20);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hBaseMaterial; // 0xee8 | Schema_Atomic | Size: 0x8
-			char  m_hBaseMaterial[0x8]; // 0xee8 | Schema_Atomic | Size: 0x8
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_nHaloIndex; // 0xef0 | Schema_Atomic | Size: 0x8
-			char  m_nHaloIndex[0x8]; // 0xef0 | Schema_Atomic | Size: 0x8
-			client::BeamType_t m_nBeamType; // 0xef8 | Schema_DeclaredEnum | Size: 0x4
-			uint32_t m_nBeamFlags; // 0xefc | Schema_Builtin | Size: 0x4
-			// client::CHandle< C_BaseEntity > m_hAttachEntity[10]; // 0xf00 | Schema_FixedArray | Size: 0x28
-			char  m_hAttachEntity[0x4]; // 0xf00 | Schema_FixedArray | Size: 0x4
-			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0xf28 | Schema_FixedArray | Size: 0x64
-			float32 m_fWidth; // 0xf34 | Schema_Builtin | Size: 0x4
-			float32 m_fEndWidth; // 0xf38 | Schema_Builtin | Size: 0x4
-			float32 m_fFadeLength; // 0xf3c | Schema_Builtin | Size: 0x4
-			float32 m_fHaloScale; // 0xf40 | Schema_Builtin | Size: 0x4
-			float32 m_fAmplitude; // 0xf44 | Schema_Builtin | Size: 0x4
-			float32 m_fStartFrame; // 0xf48 | Schema_Builtin | Size: 0x4
-			float32 m_fSpeed; // 0xf4c | Schema_Builtin | Size: 0x4
-			float32 m_flFrame; // 0xf50 | Schema_Builtin | Size: 0x4
-			client::BeamClipStyle_t m_nClipStyle; // 0xf54 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bTurnedOff; // 0xf58 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hBaseMaterial; // 0xec0 | Schema_Atomic | Size: 0x8
+			char m_hBaseMaterial[0x8]; // 0xec0 | Schema_Atomic | Size: 0x8
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_nHaloIndex; // 0xec8 | Schema_Atomic | Size: 0x8
+			char m_nHaloIndex[0x8]; // 0xec8 | Schema_Atomic | Size: 0x8
+			client::BeamType_t m_nBeamType; // 0xed0 | Schema_DeclaredEnum | Size: 0x4
+			uint32_t m_nBeamFlags; // 0xed4 | Schema_Builtin | Size: 0x4
+			// client::CHandle< C_BaseEntity > m_hAttachEntity[10]; // 0xed8 | Schema_FixedArray | Size: 0x28
+			char m_hAttachEntity[0x4]; // 0xed8 | Schema_FixedArray | Size: 0x4
+			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0xf00 | Schema_FixedArray | Size: 0x64
+			float32 m_fWidth; // 0xf0c | Schema_Builtin | Size: 0x4
+			float32 m_fEndWidth; // 0xf10 | Schema_Builtin | Size: 0x4
+			float32 m_fFadeLength; // 0xf14 | Schema_Builtin | Size: 0x4
+			float32 m_fHaloScale; // 0xf18 | Schema_Builtin | Size: 0x4
+			float32 m_fAmplitude; // 0xf1c | Schema_Builtin | Size: 0x4
+			float32 m_fStartFrame; // 0xf20 | Schema_Builtin | Size: 0x4
+			float32 m_fSpeed; // 0xf24 | Schema_Builtin | Size: 0x4
+			float32 m_flFrame; // 0xf28 | Schema_Builtin | Size: 0x4
+			client::BeamClipStyle_t m_nClipStyle; // 0xf2c | Schema_DeclaredEnum | Size: 0x4
+			bool m_bTurnedOff; // 0xf30 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::VectorWS m_vecEndPos; // 0xf5c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hEndEntity; // 0xf68 | Schema_Atomic | Size: 0x4
-			// char  m_hEndEntity[0x4]; // 0xf68 | Schema_Atomic | Size: 0x4
+			GlobalTypes::VectorWS m_vecEndPos; // 0xf34 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hEndEntity; // 0xf40 | Schema_Atomic | Size: 0x4
+			// char m_hEndEntity[0x4]; // 0xf40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_Beam, m_flFrameRate) == 0xEB0, "m_flFrameRate in C_Beam should be at offset 0xEB0");
-		static_assert(offsetof(CS2::client::C_Beam, m_flHDRColorScale) == 0xEB4, "m_flHDRColorScale in C_Beam should be at offset 0xEB4");
-		static_assert(offsetof(CS2::client::C_Beam, m_flFireTime) == 0xEB8, "m_flFireTime in C_Beam should be at offset 0xEB8");
-		static_assert(offsetof(CS2::client::C_Beam, m_flDamage) == 0xEBC, "m_flDamage in C_Beam should be at offset 0xEBC");
-		static_assert(offsetof(CS2::client::C_Beam, m_nNumBeamEnts) == 0xEC0, "m_nNumBeamEnts in C_Beam should be at offset 0xEC0");
-		static_assert(offsetof(CS2::client::C_Beam, m_queryHandleHalo) == 0xEC4, "m_queryHandleHalo in C_Beam should be at offset 0xEC4");
-		static_assert(offsetof(CS2::client::C_Beam, m_hBaseMaterial) == 0xEE8, "m_hBaseMaterial in C_Beam should be at offset 0xEE8");
-		static_assert(offsetof(CS2::client::C_Beam, m_nHaloIndex) == 0xEF0, "m_nHaloIndex in C_Beam should be at offset 0xEF0");
-		static_assert(offsetof(CS2::client::C_Beam, m_nBeamType) == 0xEF8, "m_nBeamType in C_Beam should be at offset 0xEF8");
-		static_assert(offsetof(CS2::client::C_Beam, m_nBeamFlags) == 0xEFC, "m_nBeamFlags in C_Beam should be at offset 0xEFC");
-		static_assert(offsetof(CS2::client::C_Beam, m_hAttachEntity) == 0xF00, "m_hAttachEntity in C_Beam should be at offset 0xF00");
-		static_assert(offsetof(CS2::client::C_Beam, m_nAttachIndex) == 0xF28, "m_nAttachIndex in C_Beam should be at offset 0xF28");
-		static_assert(offsetof(CS2::client::C_Beam, m_fWidth) == 0xF34, "m_fWidth in C_Beam should be at offset 0xF34");
-		static_assert(offsetof(CS2::client::C_Beam, m_fEndWidth) == 0xF38, "m_fEndWidth in C_Beam should be at offset 0xF38");
-		static_assert(offsetof(CS2::client::C_Beam, m_fFadeLength) == 0xF3C, "m_fFadeLength in C_Beam should be at offset 0xF3C");
-		static_assert(offsetof(CS2::client::C_Beam, m_fHaloScale) == 0xF40, "m_fHaloScale in C_Beam should be at offset 0xF40");
-		static_assert(offsetof(CS2::client::C_Beam, m_fAmplitude) == 0xF44, "m_fAmplitude in C_Beam should be at offset 0xF44");
-		static_assert(offsetof(CS2::client::C_Beam, m_fStartFrame) == 0xF48, "m_fStartFrame in C_Beam should be at offset 0xF48");
-		static_assert(offsetof(CS2::client::C_Beam, m_fSpeed) == 0xF4C, "m_fSpeed in C_Beam should be at offset 0xF4C");
-		static_assert(offsetof(CS2::client::C_Beam, m_flFrame) == 0xF50, "m_flFrame in C_Beam should be at offset 0xF50");
-		static_assert(offsetof(CS2::client::C_Beam, m_nClipStyle) == 0xF54, "m_nClipStyle in C_Beam should be at offset 0xF54");
-		static_assert(offsetof(CS2::client::C_Beam, m_bTurnedOff) == 0xF58, "m_bTurnedOff in C_Beam should be at offset 0xF58");
-		static_assert(offsetof(CS2::client::C_Beam, m_vecEndPos) == 0xF5C, "m_vecEndPos in C_Beam should be at offset 0xF5C");
-		static_assert(offsetof(CS2::client::C_Beam, m_hEndEntity) == 0xF68, "m_hEndEntity in C_Beam should be at offset 0xF68");
-		static_assert(sizeof(CS2::client::C_Beam) == 0xF70, "C_Beam size should be 0xF70");
+		static_assert(offsetof(CS2::client::C_Beam, m_flFrameRate) == 0xE88, "m_flFrameRate in C_Beam should be at offset 0xE88");
+		static_assert(offsetof(CS2::client::C_Beam, m_flHDRColorScale) == 0xE8C, "m_flHDRColorScale in C_Beam should be at offset 0xE8C");
+		static_assert(offsetof(CS2::client::C_Beam, m_flFireTime) == 0xE90, "m_flFireTime in C_Beam should be at offset 0xE90");
+		static_assert(offsetof(CS2::client::C_Beam, m_flDamage) == 0xE94, "m_flDamage in C_Beam should be at offset 0xE94");
+		static_assert(offsetof(CS2::client::C_Beam, m_nNumBeamEnts) == 0xE98, "m_nNumBeamEnts in C_Beam should be at offset 0xE98");
+		static_assert(offsetof(CS2::client::C_Beam, m_queryHandleHalo) == 0xE9C, "m_queryHandleHalo in C_Beam should be at offset 0xE9C");
+		static_assert(offsetof(CS2::client::C_Beam, m_hBaseMaterial) == 0xEC0, "m_hBaseMaterial in C_Beam should be at offset 0xEC0");
+		static_assert(offsetof(CS2::client::C_Beam, m_nHaloIndex) == 0xEC8, "m_nHaloIndex in C_Beam should be at offset 0xEC8");
+		static_assert(offsetof(CS2::client::C_Beam, m_nBeamType) == 0xED0, "m_nBeamType in C_Beam should be at offset 0xED0");
+		static_assert(offsetof(CS2::client::C_Beam, m_nBeamFlags) == 0xED4, "m_nBeamFlags in C_Beam should be at offset 0xED4");
+		static_assert(offsetof(CS2::client::C_Beam, m_hAttachEntity) == 0xED8, "m_hAttachEntity in C_Beam should be at offset 0xED8");
+		static_assert(offsetof(CS2::client::C_Beam, m_nAttachIndex) == 0xF00, "m_nAttachIndex in C_Beam should be at offset 0xF00");
+		static_assert(offsetof(CS2::client::C_Beam, m_fWidth) == 0xF0C, "m_fWidth in C_Beam should be at offset 0xF0C");
+		static_assert(offsetof(CS2::client::C_Beam, m_fEndWidth) == 0xF10, "m_fEndWidth in C_Beam should be at offset 0xF10");
+		static_assert(offsetof(CS2::client::C_Beam, m_fFadeLength) == 0xF14, "m_fFadeLength in C_Beam should be at offset 0xF14");
+		static_assert(offsetof(CS2::client::C_Beam, m_fHaloScale) == 0xF18, "m_fHaloScale in C_Beam should be at offset 0xF18");
+		static_assert(offsetof(CS2::client::C_Beam, m_fAmplitude) == 0xF1C, "m_fAmplitude in C_Beam should be at offset 0xF1C");
+		static_assert(offsetof(CS2::client::C_Beam, m_fStartFrame) == 0xF20, "m_fStartFrame in C_Beam should be at offset 0xF20");
+		static_assert(offsetof(CS2::client::C_Beam, m_fSpeed) == 0xF24, "m_fSpeed in C_Beam should be at offset 0xF24");
+		static_assert(offsetof(CS2::client::C_Beam, m_flFrame) == 0xF28, "m_flFrame in C_Beam should be at offset 0xF28");
+		static_assert(offsetof(CS2::client::C_Beam, m_nClipStyle) == 0xF2C, "m_nClipStyle in C_Beam should be at offset 0xF2C");
+		static_assert(offsetof(CS2::client::C_Beam, m_bTurnedOff) == 0xF30, "m_bTurnedOff in C_Beam should be at offset 0xF30");
+		static_assert(offsetof(CS2::client::C_Beam, m_vecEndPos) == 0xF34, "m_vecEndPos in C_Beam should be at offset 0xF34");
+		static_assert(offsetof(CS2::client::C_Beam, m_hEndEntity) == 0xF40, "m_hEndEntity in C_Beam should be at offset 0xF40");
+		static_assert(sizeof(CS2::client::C_Beam) == 0xF48, "C_Beam size should be 0xF48");
 	}
 }

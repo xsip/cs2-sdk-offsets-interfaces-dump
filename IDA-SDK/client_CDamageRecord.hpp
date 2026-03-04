@@ -4,7 +4,12 @@
 
 
 class client_CDamageRecord {
-    char vTable901[0x30];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
     char m_PlayerDamager[0x4];
     char m_PlayerRecipient[0x4];
     char m_hPlayerControllerDamager[0x4];
@@ -20,5 +25,5 @@ class client_CDamageRecord {
     int32_t m_iLastBulletUpdate;
     bool m_bIsOtherEnemy;
     client_EKillTypes_t m_killType;
-    char end_pad_902[0x2];
+    char end_pad_1701[0x2];
 };

@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x170
+			// Class size: 0x178
 			namespace CPlayer_CameraServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_vecCsViewPunchAngle = 0x40; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nCsViewPunchAngleTick = 0x4c; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flCsViewPunchAngleTickRatio = 0x50; // float32 m_flCsViewPunchAngleTickRatio; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_PlayerFog = 0x58; // server::fogplayerparams_t  | Schema_DeclaredClass | Size: 0x40
-				constexpr std::ptrdiff_t m_hColorCorrectionCtrl = 0x98; // GlobalTypes::CHandle<server::CColorCorrection>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hViewEntity = 0x9c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hTonemapController = 0xa0; // GlobalTypes::CHandle<server::CTonemapController2>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_audio = 0xa8; // server::audioparams_t  | Schema_DeclaredClass | Size: 0x78
-				constexpr std::ptrdiff_t m_PostProcessingVolumes = 0x120; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CPostProcessingVolume>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_flOldPlayerZ = 0x138; // float32 m_flOldPlayerZ; |  0x138 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOldPlayerViewOffsetZ = 0x13c; // float32 m_flOldPlayerViewOffsetZ; |  0x13c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hTriggerSoundscapeList = 0x158; // server::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecCsViewPunchAngle = 0x48; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nCsViewPunchAngleTick = 0x54; // entity2::GameTick_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flCsViewPunchAngleTickRatio = 0x58; // float32 m_flCsViewPunchAngleTickRatio; |  0x58 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_PlayerFog = 0x60; // server::fogplayerparams_t  | Schema_DeclaredClass | Size: 0x40
+				constexpr std::ptrdiff_t m_hColorCorrectionCtrl = 0xa0; // GlobalTypes::CHandle<server::CColorCorrection>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hViewEntity = 0xa4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hTonemapController = 0xa8; // GlobalTypes::CHandle<server::CTonemapController2>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_audio = 0xb0; // server::audioparams_t  | Schema_DeclaredClass | Size: 0x78
+				constexpr std::ptrdiff_t m_PostProcessingVolumes = 0x128; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CPostProcessingVolume>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_flOldPlayerZ = 0x140; // float32 m_flOldPlayerZ; |  0x140 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOldPlayerViewOffsetZ = 0x144; // float32 m_flOldPlayerViewOffsetZ; |  0x144 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hTriggerSoundscapeList = 0x160; // server::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

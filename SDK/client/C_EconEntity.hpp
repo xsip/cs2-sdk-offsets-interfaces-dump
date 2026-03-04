@@ -12,6 +12,7 @@
 
 #include <SDK/client/C_BaseFlex.hpp>
 #include <SDK/client/C_AttributeContainer.hpp>
+#include <SDK/client/AttachedModelData_t.hpp>
 
 
 
@@ -19,7 +20,6 @@ namespace CS2 {
 	namespace client {
 		class CBaseAnimGraph;
 		class C_BaseEntity;
-		class AttachedModelData_t;
 	}
 }
 
@@ -30,57 +30,57 @@ namespace CS2 {
 		class C_EconEntity : public CS2::client::C_BaseFlex {
 		public:
 			S2_PAD(0x10);
-			float32 m_flFlexDelayTime; // 0x1378 | Schema_Builtin | Size: 0x4
+			float32 m_flFlexDelayTime; // 0x1360 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			float32* m_flFlexDelayedWeight; // 0x1380 | Schema_Ptr | Size: 0x8
-			bool m_bAttributesInitialized; // 0x1388 | Schema_Builtin | Size: 0x1
+			float32* m_flFlexDelayedWeight; // 0x1368 | Schema_Ptr | Size: 0x8
+			bool m_bAttributesInitialized; // 0x1370 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			client::C_AttributeContainer m_AttributeManager; // 0x1390 | Schema_DeclaredClass | Size: 0x4d8
-			uint32_t m_OriginalOwnerXuidLow; // 0x1868 | Schema_Builtin | Size: 0x4
-			uint32_t m_OriginalOwnerXuidHigh; // 0x186c | Schema_Builtin | Size: 0x4
-			int32_t m_nFallbackPaintKit; // 0x1870 | Schema_Builtin | Size: 0x4
-			int32_t m_nFallbackSeed; // 0x1874 | Schema_Builtin | Size: 0x4
-			float32 m_flFallbackWear; // 0x1878 | Schema_Builtin | Size: 0x4
-			int32_t m_nFallbackStatTrak; // 0x187c | Schema_Builtin | Size: 0x4
-			bool m_bClientside; // 0x1880 | Schema_Builtin | Size: 0x1
-			bool m_bParticleSystemsCreated; // 0x1881 | Schema_Builtin | Size: 0x1
+			client::C_AttributeContainer m_AttributeManager; // 0x1378 | Schema_DeclaredClass | Size: 0x4d0
+			uint32_t m_OriginalOwnerXuidLow; // 0x1848 | Schema_Builtin | Size: 0x4
+			uint32_t m_OriginalOwnerXuidHigh; // 0x184c | Schema_Builtin | Size: 0x4
+			int32_t m_nFallbackPaintKit; // 0x1850 | Schema_Builtin | Size: 0x4
+			int32_t m_nFallbackSeed; // 0x1854 | Schema_Builtin | Size: 0x4
+			float32 m_flFallbackWear; // 0x1858 | Schema_Builtin | Size: 0x4
+			int32_t m_nFallbackStatTrak; // 0x185c | Schema_Builtin | Size: 0x4
+			bool m_bClientside; // 0x1860 | Schema_Builtin | Size: 0x1
+			bool m_bParticleSystemsCreated; // 0x1861 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlVector< int32 > m_vecAttachedParticles; // 0x1888 | Schema_Atomic | Size: 0x18
-			// char  m_vecAttachedParticles[0x18]; // 0x1888 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CHandle<client::CBaseAnimGraph> m_hViewmodelAttachment; // 0x18a0 | Schema_Atomic | Size: 0x4
-			// char  m_hViewmodelAttachment[0x4]; // 0x18a0 | Schema_Atomic | Size: 0x4
-			int32_t m_iOldTeam; // 0x18a4 | Schema_Builtin | Size: 0x4
-			bool m_bAttachmentDirty; // 0x18a8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlVector< int32 > m_vecAttachedParticles; // 0x1868 | Schema_Atomic | Size: 0x18
+			// char m_vecAttachedParticles[0x18]; // 0x1868 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CHandle<client::CBaseAnimGraph> m_hViewmodelAttachment; // 0x1880 | Schema_Atomic | Size: 0x4
+			// char m_hViewmodelAttachment[0x4]; // 0x1880 | Schema_Atomic | Size: 0x4
+			int32_t m_iOldTeam; // 0x1884 | Schema_Builtin | Size: 0x4
+			bool m_bAttachmentDirty; // 0x1888 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nUnloadedModelIndex; // 0x18ac | Schema_Builtin | Size: 0x4
-			int32_t m_iNumOwnerValidationRetries; // 0x18b0 | Schema_Builtin | Size: 0x4
+			int32_t m_nUnloadedModelIndex; // 0x188c | Schema_Builtin | Size: 0x4
+			int32_t m_iNumOwnerValidationRetries; // 0x1890 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc);
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hOldProvidee; // 0x18c0 | Schema_Atomic | Size: 0x4
-			// char  m_hOldProvidee[0x4]; // 0x18c0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hOldProvidee; // 0x18a0 | Schema_Atomic | Size: 0x4
+			// char m_hOldProvidee[0x4]; // 0x18a0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector<client::C_EconEntity::AttachedModelData_t> m_vecAttachedModels; // 0x18c8 | Schema_Atomic | Size: 0x18
-			// char  m_vecAttachedModels[0x18]; // 0x18c8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::AttachedModelData_t> m_vecAttachedModels; // 0x18a8 | Schema_Atomic | Size: 0x18
+			// char m_vecAttachedModels[0x18]; // 0x18a8 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayTime) == 0x1378, "m_flFlexDelayTime in C_EconEntity should be at offset 0x1378");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayedWeight) == 0x1380, "m_flFlexDelayedWeight in C_EconEntity should be at offset 0x1380");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_bAttributesInitialized) == 0x1388, "m_bAttributesInitialized in C_EconEntity should be at offset 0x1388");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_AttributeManager) == 0x1390, "m_AttributeManager in C_EconEntity should be at offset 0x1390");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_OriginalOwnerXuidLow) == 0x1868, "m_OriginalOwnerXuidLow in C_EconEntity should be at offset 0x1868");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_OriginalOwnerXuidHigh) == 0x186C, "m_OriginalOwnerXuidHigh in C_EconEntity should be at offset 0x186C");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_nFallbackPaintKit) == 0x1870, "m_nFallbackPaintKit in C_EconEntity should be at offset 0x1870");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_nFallbackSeed) == 0x1874, "m_nFallbackSeed in C_EconEntity should be at offset 0x1874");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_flFallbackWear) == 0x1878, "m_flFallbackWear in C_EconEntity should be at offset 0x1878");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_nFallbackStatTrak) == 0x187C, "m_nFallbackStatTrak in C_EconEntity should be at offset 0x187C");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_bClientside) == 0x1880, "m_bClientside in C_EconEntity should be at offset 0x1880");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_bParticleSystemsCreated) == 0x1881, "m_bParticleSystemsCreated in C_EconEntity should be at offset 0x1881");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_vecAttachedParticles) == 0x1888, "m_vecAttachedParticles in C_EconEntity should be at offset 0x1888");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_hViewmodelAttachment) == 0x18A0, "m_hViewmodelAttachment in C_EconEntity should be at offset 0x18A0");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_iOldTeam) == 0x18A4, "m_iOldTeam in C_EconEntity should be at offset 0x18A4");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_bAttachmentDirty) == 0x18A8, "m_bAttachmentDirty in C_EconEntity should be at offset 0x18A8");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_nUnloadedModelIndex) == 0x18AC, "m_nUnloadedModelIndex in C_EconEntity should be at offset 0x18AC");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_iNumOwnerValidationRetries) == 0x18B0, "m_iNumOwnerValidationRetries in C_EconEntity should be at offset 0x18B0");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_hOldProvidee) == 0x18C0, "m_hOldProvidee in C_EconEntity should be at offset 0x18C0");
-		static_assert(offsetof(CS2::client::C_EconEntity, m_vecAttachedModels) == 0x18C8, "m_vecAttachedModels in C_EconEntity should be at offset 0x18C8");
-		static_assert(sizeof(CS2::client::C_EconEntity) == 0x18E0, "C_EconEntity size should be 0x18E0");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayTime) == 0x1360, "m_flFlexDelayTime in C_EconEntity should be at offset 0x1360");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayedWeight) == 0x1368, "m_flFlexDelayedWeight in C_EconEntity should be at offset 0x1368");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_bAttributesInitialized) == 0x1370, "m_bAttributesInitialized in C_EconEntity should be at offset 0x1370");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_AttributeManager) == 0x1378, "m_AttributeManager in C_EconEntity should be at offset 0x1378");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_OriginalOwnerXuidLow) == 0x1848, "m_OriginalOwnerXuidLow in C_EconEntity should be at offset 0x1848");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_OriginalOwnerXuidHigh) == 0x184C, "m_OriginalOwnerXuidHigh in C_EconEntity should be at offset 0x184C");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_nFallbackPaintKit) == 0x1850, "m_nFallbackPaintKit in C_EconEntity should be at offset 0x1850");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_nFallbackSeed) == 0x1854, "m_nFallbackSeed in C_EconEntity should be at offset 0x1854");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_flFallbackWear) == 0x1858, "m_flFallbackWear in C_EconEntity should be at offset 0x1858");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_nFallbackStatTrak) == 0x185C, "m_nFallbackStatTrak in C_EconEntity should be at offset 0x185C");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_bClientside) == 0x1860, "m_bClientside in C_EconEntity should be at offset 0x1860");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_bParticleSystemsCreated) == 0x1861, "m_bParticleSystemsCreated in C_EconEntity should be at offset 0x1861");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_vecAttachedParticles) == 0x1868, "m_vecAttachedParticles in C_EconEntity should be at offset 0x1868");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_hViewmodelAttachment) == 0x1880, "m_hViewmodelAttachment in C_EconEntity should be at offset 0x1880");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_iOldTeam) == 0x1884, "m_iOldTeam in C_EconEntity should be at offset 0x1884");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_bAttachmentDirty) == 0x1888, "m_bAttachmentDirty in C_EconEntity should be at offset 0x1888");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_nUnloadedModelIndex) == 0x188C, "m_nUnloadedModelIndex in C_EconEntity should be at offset 0x188C");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_iNumOwnerValidationRetries) == 0x1890, "m_iNumOwnerValidationRetries in C_EconEntity should be at offset 0x1890");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_hOldProvidee) == 0x18A0, "m_hOldProvidee in C_EconEntity should be at offset 0x18A0");
+		static_assert(offsetof(CS2::client::C_EconEntity, m_vecAttachedModels) == 0x18A8, "m_vecAttachedModels in C_EconEntity should be at offset 0x18A8");
+		static_assert(sizeof(CS2::client::C_EconEntity) == 0x18C0, "C_EconEntity size should be 0x18C0");
 	}
 }

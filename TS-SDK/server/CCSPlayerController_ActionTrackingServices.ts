@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_CPlayerControllerComponent} from '../client/CPlayerControllerComponent';
-// Class size: 0x270
+// Class size: 0x420
 // BaseClass: : public CS2::client::CPlayerControllerComponent
 export const server_CCSPlayerController_ActionTrackingServices  = {
 	...client_CPlayerControllerComponent,

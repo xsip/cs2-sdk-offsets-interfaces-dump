@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x18
+			// Class size: 0xF0
 			namespace CSAdditionalPerRoundStats_t /**/ {
 				constexpr std::ptrdiff_t m_numChickensKilled = 0x0; // int32_t m_numChickensKilled; |  0x0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_killsWhileBlind = 0x4; // int32_t m_killsWhileBlind; |  0x4 | Schema_Builtin | Size: 0x4
@@ -16,6 +16,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flBurnDamageInflicted = 0xc; // float32 m_flBurnDamageInflicted; |  0xc | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flBlastDamageInflicted = 0x10; // float32 m_flBlastDamageInflicted; |  0x10 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_iDinks = 0x14; // int32_t m_iDinks; |  0x14 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bFreshStartThisRound = 0x18; // bool m_bFreshStartThisRound; |  0x18 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bBombPlantedAndAlive = 0x19; // bool m_bBombPlantedAndAlive; |  0x19 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nDefuseStarts = 0x1c; // int32_t m_nDefuseStarts; |  0x1c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nHostagePickUps = 0x20; // int32_t m_nHostagePickUps; |  0x20 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_numTeammatesFlashed = 0x24; // int32_t m_numTeammatesFlashed; |  0x24 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

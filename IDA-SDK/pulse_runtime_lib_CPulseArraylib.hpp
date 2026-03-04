@@ -4,5 +4,5 @@
 
 
 class pulse_runtime_lib_CPulseArraylib {
-    char pad_500[0x1];
+    char pad_510[0x1];
 };

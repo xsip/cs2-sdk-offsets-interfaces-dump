@@ -21,11 +21,11 @@ namespace CS2 {
 	namespace client {
 		class C_FootstepControl : public CS2::client::C_BaseTrigger {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_source; // 0xff0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_destination; // 0xff8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_source; // 0xf58 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_destination; // 0xf60 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::client::C_FootstepControl, m_source) == 0xFF0, "m_source in C_FootstepControl should be at offset 0xFF0");
-		static_assert(offsetof(CS2::client::C_FootstepControl, m_destination) == 0xFF8, "m_destination in C_FootstepControl should be at offset 0xFF8");
-		static_assert(sizeof(CS2::client::C_FootstepControl) == 0x1000, "C_FootstepControl size should be 0x1000");
+		static_assert(offsetof(CS2::client::C_FootstepControl, m_source) == 0xF58, "m_source in C_FootstepControl should be at offset 0xF58");
+		static_assert(offsetof(CS2::client::C_FootstepControl, m_destination) == 0xF60, "m_destination in C_FootstepControl should be at offset 0xF60");
+		static_assert(sizeof(CS2::client::C_FootstepControl) == 0xF68, "C_FootstepControl size should be 0xF68");
 	}
 }

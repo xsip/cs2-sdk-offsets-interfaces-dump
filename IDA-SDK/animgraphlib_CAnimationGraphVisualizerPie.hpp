@@ -5,7 +5,7 @@
 #include "modellib_AnimNodeID.hpp"
 
 class animgraphlib_CAnimationGraphVisualizerPie {
-    char vTable64[0x8];
+    void **__vftable_0;
     animgraphlib_CAnimationGraphVisualizerPrimitiveType m_Type;
     modellib_AnimNodeID m_OwningAnimNodePaths[11];
     int32_t m_nOwningAnimNodePathCount;

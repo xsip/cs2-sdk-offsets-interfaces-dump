@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1210
+			// Class size: 0x11A8
 			namespace C_OmniLight /*: public CS2::client::C_BarnLight*/ {
-				constexpr std::ptrdiff_t m_flInnerAngle = 0x1200; // float32 m_flInnerAngle; |  0x1200 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOuterAngle = 0x1204; // float32 m_flOuterAngle; |  0x1204 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bShowLight = 0x1208; // bool m_bShowLight; |  0x1208 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flInnerAngle = 0x1198; // float32 m_flInnerAngle; |  0x1198 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOuterAngle = 0x119c; // float32 m_flOuterAngle; |  0x119c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bShowLight = 0x11a0; // bool m_bShowLight; |  0x11a0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

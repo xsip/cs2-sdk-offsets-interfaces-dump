@@ -1,6 +1,6 @@
 // generated - do not edit!
 
-// Class size: 0xE0
+// Class size: 0xE8
 // BaseClass: NONE
 export const client_inv_image_data_t  = {
 	map: 0n, // client::inv_image_map_t  | Schema_DeclaredClass | Size: 0x10
@@ -10,4 +10,5 @@ export const client_inv_image_data_t  = {
 	lightfill: 128n, // client::inv_image_light_fill_t  | Schema_DeclaredClass | Size: 0x1c
 	light0: 156n, // client::inv_image_light_barn_t  | Schema_DeclaredClass | Size: 0x20
 	light1: 188n, // client::inv_image_light_barn_t  | Schema_DeclaredClass | Size: 0x20
+	clearcolor: 220n, // client::inv_image_clearcolor_t  | Schema_DeclaredClass | Size: 0xc
 }

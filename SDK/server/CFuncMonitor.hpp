@@ -26,28 +26,28 @@ namespace CS2 {
 	namespace server {
 		class CFuncMonitor : public CS2::server::CFuncBrush {
 		public:
-			GlobalTypes::CUtlString m_targetCamera; // 0x7f8 | Schema_Atomic | Size: 0x8
-			int32_t m_nResolutionEnum; // 0x800 | Schema_Builtin | Size: 0x4
-			bool m_bRenderShadows; // 0x804 | Schema_Builtin | Size: 0x1
-			bool m_bUseUniqueColorTarget; // 0x805 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_targetCamera; // 0x750 | Schema_Atomic | Size: 0x8
+			int32_t m_nResolutionEnum; // 0x758 | Schema_Builtin | Size: 0x4
+			bool m_bRenderShadows; // 0x75c | Schema_Builtin | Size: 0x1
+			bool m_bUseUniqueColorTarget; // 0x75d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CUtlString m_brushModelName; // 0x808 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetCamera; // 0x810 | Schema_Atomic | Size: 0x4
-			// char  m_hTargetCamera[0x4]; // 0x810 | Schema_Atomic | Size: 0x4
-			bool m_bEnabled; // 0x814 | Schema_Builtin | Size: 0x1
-			bool m_bDraw3DSkybox; // 0x815 | Schema_Builtin | Size: 0x1
-			bool m_bStartEnabled; // 0x816 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlString m_brushModelName; // 0x760 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetCamera; // 0x768 | Schema_Atomic | Size: 0x4
+			// char m_hTargetCamera[0x4]; // 0x768 | Schema_Atomic | Size: 0x4
+			bool m_bEnabled; // 0x76c | Schema_Builtin | Size: 0x1
+			bool m_bDraw3DSkybox; // 0x76d | Schema_Builtin | Size: 0x1
+			bool m_bStartEnabled; // 0x76e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_targetCamera) == 0x7F8, "m_targetCamera in CFuncMonitor should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_nResolutionEnum) == 0x800, "m_nResolutionEnum in CFuncMonitor should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_bRenderShadows) == 0x804, "m_bRenderShadows in CFuncMonitor should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_bUseUniqueColorTarget) == 0x805, "m_bUseUniqueColorTarget in CFuncMonitor should be at offset 0x805");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_brushModelName) == 0x808, "m_brushModelName in CFuncMonitor should be at offset 0x808");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_hTargetCamera) == 0x810, "m_hTargetCamera in CFuncMonitor should be at offset 0x810");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_bEnabled) == 0x814, "m_bEnabled in CFuncMonitor should be at offset 0x814");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_bDraw3DSkybox) == 0x815, "m_bDraw3DSkybox in CFuncMonitor should be at offset 0x815");
-		static_assert(offsetof(CS2::server::CFuncMonitor, m_bStartEnabled) == 0x816, "m_bStartEnabled in CFuncMonitor should be at offset 0x816");
-		static_assert(sizeof(CS2::server::CFuncMonitor) == 0x818, "CFuncMonitor size should be 0x818");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_targetCamera) == 0x750, "m_targetCamera in CFuncMonitor should be at offset 0x750");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_nResolutionEnum) == 0x758, "m_nResolutionEnum in CFuncMonitor should be at offset 0x758");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_bRenderShadows) == 0x75C, "m_bRenderShadows in CFuncMonitor should be at offset 0x75C");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_bUseUniqueColorTarget) == 0x75D, "m_bUseUniqueColorTarget in CFuncMonitor should be at offset 0x75D");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_brushModelName) == 0x760, "m_brushModelName in CFuncMonitor should be at offset 0x760");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_hTargetCamera) == 0x768, "m_hTargetCamera in CFuncMonitor should be at offset 0x768");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_bEnabled) == 0x76C, "m_bEnabled in CFuncMonitor should be at offset 0x76C");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_bDraw3DSkybox) == 0x76D, "m_bDraw3DSkybox in CFuncMonitor should be at offset 0x76D");
+		static_assert(offsetof(CS2::server::CFuncMonitor, m_bStartEnabled) == 0x76E, "m_bStartEnabled in CFuncMonitor should be at offset 0x76E");
+		static_assert(sizeof(CS2::server::CFuncMonitor) == 0x770, "CFuncMonitor size should be 0x770");
 	}
 }

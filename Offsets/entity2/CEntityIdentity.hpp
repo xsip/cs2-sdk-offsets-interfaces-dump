@@ -17,6 +17,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_worldGroupId = 0x38; // GlobalTypes::WorldGroupId_t  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_fDataObjectTypes = 0x3c; // uint32_t m_fDataObjectTypes; |  0x3c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_PathIndex = 0x40; // networksystem::ChangeAccessorFieldPathIndex_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_pAttributes = 0x48; // entity2::CEntityAttributeTable**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_pPrev = 0x50; // entity2::CEntityIdentity**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_pNext = 0x58; // entity2::CEntityIdentity**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_pPrevByClass = 0x60; // entity2::CEntityIdentity**  | Schema_Ptr | Size: 0x8

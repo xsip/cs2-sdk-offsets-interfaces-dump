@@ -31,42 +31,42 @@ namespace CS2 {
 		class CCSPlayerPawnBase : public CS2::server::CBasePlayerPawn {
 		public:
 			S2_PAD(0x10);
-			server::CTouchExpansionComponent m_CTouchExpansionComponent; // 0xda0 | Schema_DeclaredClass | Size: 0x50
-			server::CCSPlayer_PingServices* m_pPingServices; // 0xdf0 | Schema_Ptr | Size: 0x8
-			entity2::GameTime_t m_blindUntilTime; // 0xdf8 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_blindStartTime; // 0xdfc | Schema_DeclaredClass | Size: 0x4
-			client::CSPlayerState m_iPlayerState; // 0xe00 | Schema_DeclaredEnum | Size: 0x4
+			server::CTouchExpansionComponent m_CTouchExpansionComponent; // 0xd30 | Schema_DeclaredClass | Size: 0x50
+			server::CCSPlayer_PingServices* m_pPingServices; // 0xd80 | Schema_Ptr | Size: 0x8
+			entity2::GameTime_t m_blindUntilTime; // 0xd88 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_blindStartTime; // 0xd8c | Schema_DeclaredClass | Size: 0x4
+			client::CSPlayerState m_iPlayerState; // 0xd90 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xac);
-			bool m_bRespawning; // 0xeb0 | Schema_Builtin | Size: 0x1
-			bool m_bHasMovedSinceSpawn; // 0xeb1 | Schema_Builtin | Size: 0x1
+			bool m_bRespawning; // 0xe40 | Schema_Builtin | Size: 0x1
+			bool m_bHasMovedSinceSpawn; // 0xe41 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_iNumSpawns; // 0xeb4 | Schema_Builtin | Size: 0x4
+			int32_t m_iNumSpawns; // 0xe44 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			float32 m_flIdleTimeSinceLastAction; // 0xebc | Schema_Builtin | Size: 0x4
-			float32 m_fNextRadarUpdateTime; // 0xec0 | Schema_Builtin | Size: 0x4
-			float32 m_flFlashDuration; // 0xec4 | Schema_Builtin | Size: 0x4
-			float32 m_flFlashMaxAlpha; // 0xec8 | Schema_Builtin | Size: 0x4
-			float32 m_flProgressBarStartTime; // 0xecc | Schema_Builtin | Size: 0x4
-			int32_t m_iProgressBarDuration; // 0xed0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerController> m_hOriginalController; // 0xed4 | Schema_Atomic | Size: 0x4
-			// char  m_hOriginalController[0x4]; // 0xed4 | Schema_Atomic | Size: 0x4
+			float32 m_flIdleTimeSinceLastAction; // 0xe4c | Schema_Builtin | Size: 0x4
+			float32 m_fNextRadarUpdateTime; // 0xe50 | Schema_Builtin | Size: 0x4
+			float32 m_flFlashDuration; // 0xe54 | Schema_Builtin | Size: 0x4
+			float32 m_flFlashMaxAlpha; // 0xe58 | Schema_Builtin | Size: 0x4
+			float32 m_flProgressBarStartTime; // 0xe5c | Schema_Builtin | Size: 0x4
+			int32_t m_iProgressBarDuration; // 0xe60 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerController> m_hOriginalController; // 0xe64 | Schema_Atomic | Size: 0x4
+			// char m_hOriginalController[0x4]; // 0xe64 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_CTouchExpansionComponent) == 0xDA0, "m_CTouchExpansionComponent in CCSPlayerPawnBase should be at offset 0xDA0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_pPingServices) == 0xDF0, "m_pPingServices in CCSPlayerPawnBase should be at offset 0xDF0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_blindUntilTime) == 0xDF8, "m_blindUntilTime in CCSPlayerPawnBase should be at offset 0xDF8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_blindStartTime) == 0xDFC, "m_blindStartTime in CCSPlayerPawnBase should be at offset 0xDFC");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_iPlayerState) == 0xE00, "m_iPlayerState in CCSPlayerPawnBase should be at offset 0xE00");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_bRespawning) == 0xEB0, "m_bRespawning in CCSPlayerPawnBase should be at offset 0xEB0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_bHasMovedSinceSpawn) == 0xEB1, "m_bHasMovedSinceSpawn in CCSPlayerPawnBase should be at offset 0xEB1");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_iNumSpawns) == 0xEB4, "m_iNumSpawns in CCSPlayerPawnBase should be at offset 0xEB4");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flIdleTimeSinceLastAction) == 0xEBC, "m_flIdleTimeSinceLastAction in CCSPlayerPawnBase should be at offset 0xEBC");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_fNextRadarUpdateTime) == 0xEC0, "m_fNextRadarUpdateTime in CCSPlayerPawnBase should be at offset 0xEC0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flFlashDuration) == 0xEC4, "m_flFlashDuration in CCSPlayerPawnBase should be at offset 0xEC4");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flFlashMaxAlpha) == 0xEC8, "m_flFlashMaxAlpha in CCSPlayerPawnBase should be at offset 0xEC8");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flProgressBarStartTime) == 0xECC, "m_flProgressBarStartTime in CCSPlayerPawnBase should be at offset 0xECC");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_iProgressBarDuration) == 0xED0, "m_iProgressBarDuration in CCSPlayerPawnBase should be at offset 0xED0");
-		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_hOriginalController) == 0xED4, "m_hOriginalController in CCSPlayerPawnBase should be at offset 0xED4");
-		static_assert(sizeof(CS2::server::CCSPlayerPawnBase) == 0xEE0, "CCSPlayerPawnBase size should be 0xEE0");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_CTouchExpansionComponent) == 0xD30, "m_CTouchExpansionComponent in CCSPlayerPawnBase should be at offset 0xD30");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_pPingServices) == 0xD80, "m_pPingServices in CCSPlayerPawnBase should be at offset 0xD80");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_blindUntilTime) == 0xD88, "m_blindUntilTime in CCSPlayerPawnBase should be at offset 0xD88");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_blindStartTime) == 0xD8C, "m_blindStartTime in CCSPlayerPawnBase should be at offset 0xD8C");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_iPlayerState) == 0xD90, "m_iPlayerState in CCSPlayerPawnBase should be at offset 0xD90");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_bRespawning) == 0xE40, "m_bRespawning in CCSPlayerPawnBase should be at offset 0xE40");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_bHasMovedSinceSpawn) == 0xE41, "m_bHasMovedSinceSpawn in CCSPlayerPawnBase should be at offset 0xE41");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_iNumSpawns) == 0xE44, "m_iNumSpawns in CCSPlayerPawnBase should be at offset 0xE44");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flIdleTimeSinceLastAction) == 0xE4C, "m_flIdleTimeSinceLastAction in CCSPlayerPawnBase should be at offset 0xE4C");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_fNextRadarUpdateTime) == 0xE50, "m_fNextRadarUpdateTime in CCSPlayerPawnBase should be at offset 0xE50");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flFlashDuration) == 0xE54, "m_flFlashDuration in CCSPlayerPawnBase should be at offset 0xE54");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flFlashMaxAlpha) == 0xE58, "m_flFlashMaxAlpha in CCSPlayerPawnBase should be at offset 0xE58");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_flProgressBarStartTime) == 0xE5C, "m_flProgressBarStartTime in CCSPlayerPawnBase should be at offset 0xE5C");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_iProgressBarDuration) == 0xE60, "m_iProgressBarDuration in CCSPlayerPawnBase should be at offset 0xE60");
+		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_hOriginalController) == 0xE64, "m_hOriginalController in CCSPlayerPawnBase should be at offset 0xE64");
+		static_assert(sizeof(CS2::server::CCSPlayerPawnBase) == 0xE70, "CCSPlayerPawnBase size should be 0xE70");
 	}
 }

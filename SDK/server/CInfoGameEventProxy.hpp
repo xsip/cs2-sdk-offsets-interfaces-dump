@@ -21,12 +21,12 @@ namespace CS2 {
 	namespace server {
 		class CInfoGameEventProxy : public CS2::server::CPointEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszEventName; // 0x4f0 | Schema_Atomic | Size: 0x8
-			float32 m_flRange; // 0x4f8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszEventName; // 0x4a8 | Schema_Atomic | Size: 0x8
+			float32 m_flRange; // 0x4b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CInfoGameEventProxy, m_iszEventName) == 0x4F0, "m_iszEventName in CInfoGameEventProxy should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CInfoGameEventProxy, m_flRange) == 0x4F8, "m_flRange in CInfoGameEventProxy should be at offset 0x4F8");
-		static_assert(sizeof(CS2::server::CInfoGameEventProxy) == 0x500, "CInfoGameEventProxy size should be 0x500");
+		static_assert(offsetof(CS2::server::CInfoGameEventProxy, m_iszEventName) == 0x4A8, "m_iszEventName in CInfoGameEventProxy should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CInfoGameEventProxy, m_flRange) == 0x4B0, "m_flRange in CInfoGameEventProxy should be at offset 0x4B0");
+		static_assert(sizeof(CS2::server::CInfoGameEventProxy) == 0x4B8, "CInfoGameEventProxy size should be 0x4B8");
 	}
 }

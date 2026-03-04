@@ -22,6 +22,6 @@ namespace CS2 {
 		class CInfoSpawnGroupLandmark : public CS2::server::CPointEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CInfoSpawnGroupLandmark) == 0x4F0, "CInfoSpawnGroupLandmark size should be 0x4F0");
+		static_assert(sizeof(CS2::server::CInfoSpawnGroupLandmark) == 0x4A8, "CInfoSpawnGroupLandmark size should be 0x4A8");
 	}
 }

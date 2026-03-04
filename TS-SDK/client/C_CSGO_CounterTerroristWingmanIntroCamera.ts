@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_C_CSGO_TeamPreviewCamera} from './C_CSGO_TeamPreviewCamera';
-// Class size: 0x688
+// Class size: 0x698
 // BaseClass: : public CS2::client::C_CSGO_TeamPreviewCamera
 export const client_C_CSGO_CounterTerroristWingmanIntroCamera  = {
 	...client_C_CSGO_TeamPreviewCamera,

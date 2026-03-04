@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5D8
+			// Class size: 0x590
 			namespace CSoundOpvarSetOBBWindEntity /*: public CS2::server::CSoundOpvarSetPointBase*/ {
-				constexpr std::ptrdiff_t m_vMins = 0x598; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vMaxs = 0x5a4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDistanceMins = 0x5b0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vDistanceMaxs = 0x5bc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flWindMin = 0x5c8; // float32 m_flWindMin; |  0x5c8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flWindMax = 0x5cc; // float32 m_flWindMax; |  0x5cc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flWindMapMin = 0x5d0; // float32 m_flWindMapMin; |  0x5d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flWindMapMax = 0x5d4; // float32 m_flWindMapMax; |  0x5d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vMins = 0x550; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vMaxs = 0x55c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceMins = 0x568; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vDistanceMaxs = 0x574; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flWindMin = 0x580; // float32 m_flWindMin; |  0x580 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flWindMax = 0x584; // float32 m_flWindMax; |  0x584 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flWindMapMin = 0x588; // float32 m_flWindMapMin; |  0x588 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flWindMapMax = 0x58c; // float32 m_flWindMapMax; |  0x58c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/ModelMeshBufferData_t.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class ModelMeshBufferData_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -32,11 +28,11 @@ namespace CS2 {
 			int32_t m_nMorphBlock; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<modellib::ModelMeshBufferData_t> m_vertexBuffers; // 0x20 | Schema_Atomic | Size: 0x18
-			// char  m_vertexBuffers[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
+			// char m_vertexBuffers[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<modellib::ModelMeshBufferData_t> m_indexBuffers; // 0x38 | Schema_Atomic | Size: 0x18
-			// char  m_indexBuffers[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
+			// char m_indexBuffers[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<modellib::ModelMeshBufferData_t> m_toolsBuffers; // 0x50 | Schema_Atomic | Size: 0x18
-			// char  m_toolsBuffers[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			// char m_toolsBuffers[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			int32_t m_nVBIBBlock; // 0x68 | Schema_Builtin | Size: 0x4
 			int32_t m_nToolsVBBlock; // 0x6c | Schema_Builtin | Size: 0x4
 		};

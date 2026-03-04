@@ -4,5 +4,5 @@
 
 
 class soundsystem_CSosGroupActionSchema {
-    char pad_545[0x8];
+    char pad_556[0x8];
 };

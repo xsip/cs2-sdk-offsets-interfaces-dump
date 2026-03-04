@@ -4,5 +4,5 @@
 
 
 class server_CFuncMoverAPI {
-    char pad_3605[0x8];
+    char pad_3733[0x8];
 };

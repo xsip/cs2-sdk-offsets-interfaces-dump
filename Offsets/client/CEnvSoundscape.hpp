@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace client {
 			// Class size: 0x698
 			namespace CEnvSoundscape /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_OnPlay = 0x5f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_OnPlay = 0x608; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_flRadius = 0x620; // float32 m_flRadius; |  0x620 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_soundEventName = 0x628; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_bOverrideWithEvent = 0x630; // bool m_bOverrideWithEvent; |  0x630 | Schema_Builtin | Size: 0x1

@@ -2,20 +2,23 @@
 #include "enums.hpp"
 #include "typedefs.hpp"
 
+class animlib_CNmGraphVariationUserData;
 
 class animlib_CNmGraphDefinition {
     CGlobalSymbol m_variationID;
     char m_skeleton[0x8];
+    animlib_CNmGraphVariationUserData* m_pUserData;
     char m_persistentNodeIndices[0x18];
     int16_t m_nRootNodeIdx;
-    char pad_1746[0x6];
+    char pad_2519[0x6];
     char m_controlParameterIDs[0x18];
     char m_virtualParameterIDs[0x18];
     char m_virtualParameterNodeIndices[0x18];
     char m_referencedGraphSlots[0x18];
     char m_externalGraphSlots[0x18];
-    char pad_1747[0x70];
+    char m_externalPoseSlots[0x18];
+    char pad_2520[0x70];
     char m_nodePaths[0x18];
     char m_resources[0x18];
-    char end_pad_1748[0x38];
+    char end_pad_2521[0x38];
 };

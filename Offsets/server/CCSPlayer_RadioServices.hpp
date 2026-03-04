@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x60
+			// Class size: 0x68
 			namespace CCSPlayer_RadioServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_flGotHostageTalkTimer = 0x40; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefusingTalkTimer = 0x44; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flC4PlantTalkTimer = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadioTokenSlots = 0x4c; // GlobalTypes::GameTime_t[3]  | Schema_FixedArray | Size: 0x24
-				constexpr std::ptrdiff_t m_bIgnoreRadio = 0x58; // bool m_bIgnoreRadio; |  0x58 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flGotHostageTalkTimer = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefusingTalkTimer = 0x4c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flC4PlantTalkTimer = 0x50; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flRadioTokenSlots = 0x54; // GlobalTypes::GameTime_t[3]  | Schema_FixedArray | Size: 0x24
+				constexpr std::ptrdiff_t m_bIgnoreRadio = 0x60; // bool m_bIgnoreRadio; |  0x60 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

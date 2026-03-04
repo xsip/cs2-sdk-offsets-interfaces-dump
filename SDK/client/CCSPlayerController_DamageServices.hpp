@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/CPlayerControllerComponent.hpp>
+#include <SDK/client/CDamageRecord.hpp>
 
 
 
@@ -24,7 +25,7 @@ namespace CS2 {
 			int32_t m_nSendUpdate; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			// client::C_UtlVectorEmbeddedNetworkVar<client::CDamageRecord> m_DamageList; // 0x48 | Schema_Atomic | Size: 0x68
-			char  m_DamageList[0x68]; // 0x48 | Schema_Atomic | Size: 0x68
+			char m_DamageList[0x68]; // 0x48 | Schema_Atomic | Size: 0x68
 		};
 		static_assert(offsetof(CS2::client::CCSPlayerController_DamageServices, m_nSendUpdate) == 0x40, "m_nSendUpdate in CCSPlayerController_DamageServices should be at offset 0x40");
 		static_assert(offsetof(CS2::client::CCSPlayerController_DamageServices, m_DamageList) == 0x48, "m_DamageList in CCSPlayerController_DamageServices should be at offset 0x48");

@@ -8,47 +8,47 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x2EB0
+			// Class size: 0x2E00
 			namespace CHostage /*: public CS2::server::CHostageExpresserShim*/ {
-				constexpr std::ptrdiff_t m_OnHostageBeginGrab = 0xc08; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFirstPickedUp = 0xc30; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnDroppedNotRescued = 0xc58; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnRescued = 0xc80; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_entitySpottedState = 0xca8; // server::EntitySpottedState_t  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_nSpotRules = 0xcc0; // int32_t m_nSpotRules; |  0xcc0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_uiHostageSpawnExclusionGroupMask = 0xcc4; // uint32_t m_uiHostageSpawnExclusionGroupMask; |  0xcc4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nHostageSpawnRandomFactor = 0xcc8; // uint32_t m_nHostageSpawnRandomFactor; |  0xcc8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bRemove = 0xccc; // bool m_bRemove; |  0xccc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vel = 0xcd0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_isRescued = 0xcdc; // bool m_isRescued; |  0xcdc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_jumpedThisFrame = 0xcdd; // bool m_jumpedThisFrame; |  0xcdd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nHostageState = 0xce0; // int32_t m_nHostageState; |  0xce0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_leader = 0xce4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_lastLeader = 0xce8; // GlobalTypes::CHandle<server::CCSPlayerPawnBase>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_reuseTimer = 0xcf0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_hasBeenUsed = 0xd08; // bool m_hasBeenUsed; |  0xd08 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_accel = 0xd0c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_isRunning = 0xd18; // bool m_isRunning; |  0xd18 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_isCrouching = 0xd19; // bool m_isCrouching; |  0xd19 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_jumpTimer = 0xd20; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_isWaitingForLeader = 0xd38; // bool m_isWaitingForLeader; |  0xd38 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_repathTimer = 0x2d48; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_inhibitDoorTimer = 0x2d60; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_inhibitObstacleAvoidanceTimer = 0x2df0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_wiggleTimer = 0x2e10; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_isAdjusted = 0x2e2c; // bool m_isAdjusted; |  0x2e2c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHandsHaveBeenCut = 0x2e2d; // bool m_bHandsHaveBeenCut; |  0x2e2d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hHostageGrabber = 0x2e30; // GlobalTypes::CHandle<server::CCSPlayerPawn>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_fLastGrabTime = 0x2e34; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_vecPositionWhenStartedDroppingToGround = 0x2e38; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecGrabbedPos = 0x2e44; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flRescueStartTime = 0x2e50; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flGrabSuccessTime = 0x2e54; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flDropStartTime = 0x2e58; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_nApproachRewardPayouts = 0x2e5c; // int32_t m_nApproachRewardPayouts; |  0x2e5c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nPickupEventCount = 0x2e60; // int32_t m_nPickupEventCount; |  0x2e60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecSpawnGroundPos = 0x2e64; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecHostageResetPosition = 0x2e9c; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_OnHostageBeginGrab = 0xb98; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFirstPickedUp = 0xbb0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnDroppedNotRescued = 0xbc8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnRescued = 0xbe0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_entitySpottedState = 0xbf8; // server::EntitySpottedState_t  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_nSpotRules = 0xc10; // int32_t m_nSpotRules; |  0xc10 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_uiHostageSpawnExclusionGroupMask = 0xc14; // uint32_t m_uiHostageSpawnExclusionGroupMask; |  0xc14 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nHostageSpawnRandomFactor = 0xc18; // uint32_t m_nHostageSpawnRandomFactor; |  0xc18 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bRemove = 0xc1c; // bool m_bRemove; |  0xc1c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vel = 0xc20; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_isRescued = 0xc2c; // bool m_isRescued; |  0xc2c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_jumpedThisFrame = 0xc2d; // bool m_jumpedThisFrame; |  0xc2d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nHostageState = 0xc30; // int32_t m_nHostageState; |  0xc30 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_leader = 0xc34; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_lastLeader = 0xc38; // GlobalTypes::CHandle<server::CCSPlayerPawnBase>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_reuseTimer = 0xc40; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_hasBeenUsed = 0xc58; // bool m_hasBeenUsed; |  0xc58 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_accel = 0xc5c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_isRunning = 0xc68; // bool m_isRunning; |  0xc68 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_isCrouching = 0xc69; // bool m_isCrouching; |  0xc69 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_jumpTimer = 0xc70; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_isWaitingForLeader = 0xc88; // bool m_isWaitingForLeader; |  0xc88 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_repathTimer = 0x2c98; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_inhibitDoorTimer = 0x2cb0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_inhibitObstacleAvoidanceTimer = 0x2d40; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_wiggleTimer = 0x2d60; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_isAdjusted = 0x2d7c; // bool m_isAdjusted; |  0x2d7c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHandsHaveBeenCut = 0x2d7d; // bool m_bHandsHaveBeenCut; |  0x2d7d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hHostageGrabber = 0x2d80; // GlobalTypes::CHandle<server::CCSPlayerPawn>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_fLastGrabTime = 0x2d84; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_vecPositionWhenStartedDroppingToGround = 0x2d88; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecGrabbedPos = 0x2d94; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flRescueStartTime = 0x2da0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flGrabSuccessTime = 0x2da4; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flDropStartTime = 0x2da8; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_nApproachRewardPayouts = 0x2dac; // int32_t m_nApproachRewardPayouts; |  0x2dac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nPickupEventCount = 0x2db0; // int32_t m_nPickupEventCount; |  0x2db0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecSpawnGroundPos = 0x2db4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecHostageResetPosition = 0x2dec; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

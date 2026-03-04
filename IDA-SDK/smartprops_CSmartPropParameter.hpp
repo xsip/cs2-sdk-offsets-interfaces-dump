@@ -4,7 +4,7 @@
 
 
 class smartprops_CSmartPropParameter {
-    char vTable2542[0x8];
+    void **__vftable_0;
     int32_t m_nElementID;
-    char end_pad_2543[0x4];
+    char end_pad_2619[0x4];
 };

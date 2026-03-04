@@ -10,16 +10,12 @@
 #endif
 
 
+#include <SDK/animgraphlib/TagSpan_t.hpp>
 #include <SDK/animgraphlib/CAnimUpdateNodeRef.hpp>
 #include <SDK/animationsystem/HSequence.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class TagSpan_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -28,7 +24,7 @@ namespace CS2 {
 		class BlendItem_t  {
 		public:
 			GlobalTypes::CUtlVector<animgraphlib::TagSpan_t> m_tags; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_tags[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_tags[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimUpdateNodeRef m_pChild; // 0x18 | Schema_DeclaredClass | Size: 0x10
 			animationsystem::HSequence m_hSequence; // 0x28 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector2D m_vPos; // 0x2c | Schema_Atomic | Size: 0x8

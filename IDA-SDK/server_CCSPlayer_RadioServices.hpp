@@ -4,15 +4,18 @@
 
 #include "entity2_CNetworkVarChainer.hpp"
 #include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_GameTime_t.hpp"
 
 class server_CCSPlayer_RadioServices {
-    char vTable1208[0x8];
+    void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_1209[0x10];
+    char pad_2013[0x18];
     entity2_GameTime_t m_flGotHostageTalkTimer;
     entity2_GameTime_t m_flDefusingTalkTimer;
     entity2_GameTime_t m_flC4PlantTalkTimer;
     entity2_GameTime_t m_flRadioTokenSlots[3];
     bool m_bIgnoreRadio;
-    char end_pad_3429[0x7];
+    char end_pad_3564[0x7];
 };

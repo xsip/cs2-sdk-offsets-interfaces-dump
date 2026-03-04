@@ -21,14 +21,14 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayer_WaterServices : public CS2::client::CPlayer_WaterServices {
 		public:
-			float32 m_flWaterJumpTime; // 0x40 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecWaterJumpVel; // 0x44 | Schema_Atomic | Size: 0xc
-			float32 m_flSwimSoundTime; // 0x50 | Schema_Builtin | Size: 0x4
+			float32 m_flWaterJumpTime; // 0x48 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecWaterJumpVel; // 0x4c | Schema_Atomic | Size: 0xc
+			float32 m_flSwimSoundTime; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x14); // End padding
 		};
-		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_flWaterJumpTime) == 0x40, "m_flWaterJumpTime in CCSPlayer_WaterServices should be at offset 0x40");
-		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_vecWaterJumpVel) == 0x44, "m_vecWaterJumpVel in CCSPlayer_WaterServices should be at offset 0x44");
-		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_flSwimSoundTime) == 0x50, "m_flSwimSoundTime in CCSPlayer_WaterServices should be at offset 0x50");
-		static_assert(sizeof(CS2::client::CCSPlayer_WaterServices) == 0x68, "CCSPlayer_WaterServices size should be 0x68");
+		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_flWaterJumpTime) == 0x48, "m_flWaterJumpTime in CCSPlayer_WaterServices should be at offset 0x48");
+		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_vecWaterJumpVel) == 0x4C, "m_vecWaterJumpVel in CCSPlayer_WaterServices should be at offset 0x4C");
+		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_flSwimSoundTime) == 0x58, "m_flSwimSoundTime in CCSPlayer_WaterServices should be at offset 0x58");
+		static_assert(sizeof(CS2::client::CCSPlayer_WaterServices) == 0x70, "CCSPlayer_WaterServices size should be 0x70");
 	}
 }

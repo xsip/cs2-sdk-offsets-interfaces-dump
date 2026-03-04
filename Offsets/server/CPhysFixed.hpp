@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x588
+			// Class size: 0x530
 			namespace CPhysFixed /*: public CS2::server::CPhysConstraint*/ {
-				constexpr std::ptrdiff_t m_flLinearFrequency = 0x560; // float32 m_flLinearFrequency; |  0x560 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLinearDampingRatio = 0x564; // float32 m_flLinearDampingRatio; |  0x564 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularFrequency = 0x568; // float32 m_flAngularFrequency; |  0x568 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flAngularDampingRatio = 0x56c; // float32 m_flAngularDampingRatio; |  0x56c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnableLinearConstraint = 0x570; // bool m_bEnableLinearConstraint; |  0x570 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEnableAngularConstraint = 0x571; // bool m_bEnableAngularConstraint; |  0x571 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_sBoneName1 = 0x578; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sBoneName2 = 0x580; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flLinearFrequency = 0x508; // float32 m_flLinearFrequency; |  0x508 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLinearDampingRatio = 0x50c; // float32 m_flLinearDampingRatio; |  0x50c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularFrequency = 0x510; // float32 m_flAngularFrequency; |  0x510 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flAngularDampingRatio = 0x514; // float32 m_flAngularDampingRatio; |  0x514 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnableLinearConstraint = 0x518; // bool m_bEnableLinearConstraint; |  0x518 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnableAngularConstraint = 0x519; // bool m_bEnableAngularConstraint; |  0x519 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_sBoneName1 = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sBoneName2 = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

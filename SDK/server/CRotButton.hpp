@@ -22,6 +22,6 @@ namespace CS2 {
 		class CRotButton : public CS2::server::CBaseButton {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CRotButton) == 0x9A8, "CRotButton size should be 0x9A8");
+		static_assert(sizeof(CS2::server::CRotButton) == 0x8B0, "CRotButton size should be 0x8B0");
 	}
 }

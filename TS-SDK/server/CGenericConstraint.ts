@@ -1,56 +1,56 @@
 // generated - do not edit!
 
 import {server_CPhysConstraint} from './CPhysConstraint';
-// Class size: 0x690
+// Class size: 0x608
 // BaseClass: : public CS2::server::CPhysConstraint
 export const server_CGenericConstraint  = {
 	...server_CPhysConstraint,
-	m_nLinearMotionX: 1384n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-	m_nLinearMotionY: 1388n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-	m_nLinearMotionZ: 1392n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-	m_flLinearFrequencyX: 1396n, // float32 m_flLinearFrequencyX; |  0x574 | Schema_Builtin | Size: 0x4
-	m_flLinearFrequencyY: 1400n, // float32 m_flLinearFrequencyY; |  0x578 | Schema_Builtin | Size: 0x4
-	m_flLinearFrequencyZ: 1404n, // float32 m_flLinearFrequencyZ; |  0x57c | Schema_Builtin | Size: 0x4
-	m_flLinearDampingRatioX: 1408n, // float32 m_flLinearDampingRatioX; |  0x580 | Schema_Builtin | Size: 0x4
-	m_flLinearDampingRatioY: 1412n, // float32 m_flLinearDampingRatioY; |  0x584 | Schema_Builtin | Size: 0x4
-	m_flLinearDampingRatioZ: 1416n, // float32 m_flLinearDampingRatioZ; |  0x588 | Schema_Builtin | Size: 0x4
-	m_flMaxLinearImpulseX: 1420n, // float32 m_flMaxLinearImpulseX; |  0x58c | Schema_Builtin | Size: 0x4
-	m_flMaxLinearImpulseY: 1424n, // float32 m_flMaxLinearImpulseY; |  0x590 | Schema_Builtin | Size: 0x4
-	m_flMaxLinearImpulseZ: 1428n, // float32 m_flMaxLinearImpulseZ; |  0x594 | Schema_Builtin | Size: 0x4
-	m_flBreakAfterTimeX: 1432n, // float32 m_flBreakAfterTimeX; |  0x598 | Schema_Builtin | Size: 0x4
-	m_flBreakAfterTimeY: 1436n, // float32 m_flBreakAfterTimeY; |  0x59c | Schema_Builtin | Size: 0x4
-	m_flBreakAfterTimeZ: 1440n, // float32 m_flBreakAfterTimeZ; |  0x5a0 | Schema_Builtin | Size: 0x4
-	m_flBreakAfterTimeStartTimeX: 1444n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-	m_flBreakAfterTimeStartTimeY: 1448n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-	m_flBreakAfterTimeStartTimeZ: 1452n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-	m_flBreakAfterTimeThresholdX: 1456n, // float32 m_flBreakAfterTimeThresholdX; |  0x5b0 | Schema_Builtin | Size: 0x4
-	m_flBreakAfterTimeThresholdY: 1460n, // float32 m_flBreakAfterTimeThresholdY; |  0x5b4 | Schema_Builtin | Size: 0x4
-	m_flBreakAfterTimeThresholdZ: 1464n, // float32 m_flBreakAfterTimeThresholdZ; |  0x5b8 | Schema_Builtin | Size: 0x4
-	m_flNotifyForceX: 1468n, // float32 m_flNotifyForceX; |  0x5bc | Schema_Builtin | Size: 0x4
-	m_flNotifyForceY: 1472n, // float32 m_flNotifyForceY; |  0x5c0 | Schema_Builtin | Size: 0x4
-	m_flNotifyForceZ: 1476n, // float32 m_flNotifyForceZ; |  0x5c4 | Schema_Builtin | Size: 0x4
-	m_flNotifyForceMinTimeX: 1480n, // float32 m_flNotifyForceMinTimeX; |  0x5c8 | Schema_Builtin | Size: 0x4
-	m_flNotifyForceMinTimeY: 1484n, // float32 m_flNotifyForceMinTimeY; |  0x5cc | Schema_Builtin | Size: 0x4
-	m_flNotifyForceMinTimeZ: 1488n, // float32 m_flNotifyForceMinTimeZ; |  0x5d0 | Schema_Builtin | Size: 0x4
-	m_flNotifyForceLastTimeX: 1492n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-	m_flNotifyForceLastTimeY: 1496n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-	m_flNotifyForceLastTimeZ: 1500n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-	m_bAxisNotifiedX: 1504n, // bool m_bAxisNotifiedX; |  0x5e0 | Schema_Builtin | Size: 0x1
-	m_bAxisNotifiedY: 1505n, // bool m_bAxisNotifiedY; |  0x5e1 | Schema_Builtin | Size: 0x1
-	m_bAxisNotifiedZ: 1506n, // bool m_bAxisNotifiedZ; |  0x5e2 | Schema_Builtin | Size: 0x1
-	m_nAngularMotionX: 1508n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-	m_nAngularMotionY: 1512n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-	m_nAngularMotionZ: 1516n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
-	m_flAngularFrequencyX: 1520n, // float32 m_flAngularFrequencyX; |  0x5f0 | Schema_Builtin | Size: 0x4
-	m_flAngularFrequencyY: 1524n, // float32 m_flAngularFrequencyY; |  0x5f4 | Schema_Builtin | Size: 0x4
-	m_flAngularFrequencyZ: 1528n, // float32 m_flAngularFrequencyZ; |  0x5f8 | Schema_Builtin | Size: 0x4
-	m_flAngularDampingRatioX: 1532n, // float32 m_flAngularDampingRatioX; |  0x5fc | Schema_Builtin | Size: 0x4
-	m_flAngularDampingRatioY: 1536n, // float32 m_flAngularDampingRatioY; |  0x600 | Schema_Builtin | Size: 0x4
-	m_flAngularDampingRatioZ: 1540n, // float32 m_flAngularDampingRatioZ; |  0x604 | Schema_Builtin | Size: 0x4
-	m_flMaxAngularImpulseX: 1544n, // float32 m_flMaxAngularImpulseX; |  0x608 | Schema_Builtin | Size: 0x4
-	m_flMaxAngularImpulseY: 1548n, // float32 m_flMaxAngularImpulseY; |  0x60c | Schema_Builtin | Size: 0x4
-	m_flMaxAngularImpulseZ: 1552n, // float32 m_flMaxAngularImpulseZ; |  0x610 | Schema_Builtin | Size: 0x4
-	m_NotifyForceReachedX: 1560n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_NotifyForceReachedY: 1600n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_NotifyForceReachedZ: 1640n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+	m_nLinearMotionX: 1296n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+	m_nLinearMotionY: 1300n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+	m_nLinearMotionZ: 1304n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+	m_flLinearFrequencyX: 1308n, // float32 m_flLinearFrequencyX; |  0x51c | Schema_Builtin | Size: 0x4
+	m_flLinearFrequencyY: 1312n, // float32 m_flLinearFrequencyY; |  0x520 | Schema_Builtin | Size: 0x4
+	m_flLinearFrequencyZ: 1316n, // float32 m_flLinearFrequencyZ; |  0x524 | Schema_Builtin | Size: 0x4
+	m_flLinearDampingRatioX: 1320n, // float32 m_flLinearDampingRatioX; |  0x528 | Schema_Builtin | Size: 0x4
+	m_flLinearDampingRatioY: 1324n, // float32 m_flLinearDampingRatioY; |  0x52c | Schema_Builtin | Size: 0x4
+	m_flLinearDampingRatioZ: 1328n, // float32 m_flLinearDampingRatioZ; |  0x530 | Schema_Builtin | Size: 0x4
+	m_flMaxLinearImpulseX: 1332n, // float32 m_flMaxLinearImpulseX; |  0x534 | Schema_Builtin | Size: 0x4
+	m_flMaxLinearImpulseY: 1336n, // float32 m_flMaxLinearImpulseY; |  0x538 | Schema_Builtin | Size: 0x4
+	m_flMaxLinearImpulseZ: 1340n, // float32 m_flMaxLinearImpulseZ; |  0x53c | Schema_Builtin | Size: 0x4
+	m_flBreakAfterTimeX: 1344n, // float32 m_flBreakAfterTimeX; |  0x540 | Schema_Builtin | Size: 0x4
+	m_flBreakAfterTimeY: 1348n, // float32 m_flBreakAfterTimeY; |  0x544 | Schema_Builtin | Size: 0x4
+	m_flBreakAfterTimeZ: 1352n, // float32 m_flBreakAfterTimeZ; |  0x548 | Schema_Builtin | Size: 0x4
+	m_flBreakAfterTimeStartTimeX: 1356n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+	m_flBreakAfterTimeStartTimeY: 1360n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+	m_flBreakAfterTimeStartTimeZ: 1364n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+	m_flBreakAfterTimeThresholdX: 1368n, // float32 m_flBreakAfterTimeThresholdX; |  0x558 | Schema_Builtin | Size: 0x4
+	m_flBreakAfterTimeThresholdY: 1372n, // float32 m_flBreakAfterTimeThresholdY; |  0x55c | Schema_Builtin | Size: 0x4
+	m_flBreakAfterTimeThresholdZ: 1376n, // float32 m_flBreakAfterTimeThresholdZ; |  0x560 | Schema_Builtin | Size: 0x4
+	m_flNotifyForceX: 1380n, // float32 m_flNotifyForceX; |  0x564 | Schema_Builtin | Size: 0x4
+	m_flNotifyForceY: 1384n, // float32 m_flNotifyForceY; |  0x568 | Schema_Builtin | Size: 0x4
+	m_flNotifyForceZ: 1388n, // float32 m_flNotifyForceZ; |  0x56c | Schema_Builtin | Size: 0x4
+	m_flNotifyForceMinTimeX: 1392n, // float32 m_flNotifyForceMinTimeX; |  0x570 | Schema_Builtin | Size: 0x4
+	m_flNotifyForceMinTimeY: 1396n, // float32 m_flNotifyForceMinTimeY; |  0x574 | Schema_Builtin | Size: 0x4
+	m_flNotifyForceMinTimeZ: 1400n, // float32 m_flNotifyForceMinTimeZ; |  0x578 | Schema_Builtin | Size: 0x4
+	m_flNotifyForceLastTimeX: 1404n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+	m_flNotifyForceLastTimeY: 1408n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+	m_flNotifyForceLastTimeZ: 1412n, // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+	m_bAxisNotifiedX: 1416n, // bool m_bAxisNotifiedX; |  0x588 | Schema_Builtin | Size: 0x1
+	m_bAxisNotifiedY: 1417n, // bool m_bAxisNotifiedY; |  0x589 | Schema_Builtin | Size: 0x1
+	m_bAxisNotifiedZ: 1418n, // bool m_bAxisNotifiedZ; |  0x58a | Schema_Builtin | Size: 0x1
+	m_nAngularMotionX: 1420n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+	m_nAngularMotionY: 1424n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+	m_nAngularMotionZ: 1428n, // physicslib::JointMotion_t  | Schema_DeclaredEnum | Size: 0x4
+	m_flAngularFrequencyX: 1432n, // float32 m_flAngularFrequencyX; |  0x598 | Schema_Builtin | Size: 0x4
+	m_flAngularFrequencyY: 1436n, // float32 m_flAngularFrequencyY; |  0x59c | Schema_Builtin | Size: 0x4
+	m_flAngularFrequencyZ: 1440n, // float32 m_flAngularFrequencyZ; |  0x5a0 | Schema_Builtin | Size: 0x4
+	m_flAngularDampingRatioX: 1444n, // float32 m_flAngularDampingRatioX; |  0x5a4 | Schema_Builtin | Size: 0x4
+	m_flAngularDampingRatioY: 1448n, // float32 m_flAngularDampingRatioY; |  0x5a8 | Schema_Builtin | Size: 0x4
+	m_flAngularDampingRatioZ: 1452n, // float32 m_flAngularDampingRatioZ; |  0x5ac | Schema_Builtin | Size: 0x4
+	m_flMaxAngularImpulseX: 1456n, // float32 m_flMaxAngularImpulseX; |  0x5b0 | Schema_Builtin | Size: 0x4
+	m_flMaxAngularImpulseY: 1460n, // float32 m_flMaxAngularImpulseY; |  0x5b4 | Schema_Builtin | Size: 0x4
+	m_flMaxAngularImpulseZ: 1464n, // float32 m_flMaxAngularImpulseZ; |  0x5b8 | Schema_Builtin | Size: 0x4
+	m_NotifyForceReachedX: 1472n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+	m_NotifyForceReachedY: 1496n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+	m_NotifyForceReachedZ: 1520n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 }

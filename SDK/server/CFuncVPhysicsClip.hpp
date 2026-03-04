@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CFuncVPhysicsClip : public CS2::server::CBaseModelEntity {
 		public:
-			bool m_bDisabled; // 0x7d8 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x730 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFuncVPhysicsClip, m_bDisabled) == 0x7D8, "m_bDisabled in CFuncVPhysicsClip should be at offset 0x7D8");
-		static_assert(sizeof(CS2::server::CFuncVPhysicsClip) == 0x7E0, "CFuncVPhysicsClip size should be 0x7E0");
+		static_assert(offsetof(CS2::server::CFuncVPhysicsClip, m_bDisabled) == 0x730, "m_bDisabled in CFuncVPhysicsClip should be at offset 0x730");
+		static_assert(sizeof(CS2::server::CFuncVPhysicsClip) == 0x738, "CFuncVPhysicsClip size should be 0x738");
 	}
 }

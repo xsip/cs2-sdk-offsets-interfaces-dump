@@ -21,15 +21,15 @@ namespace CS2 {
 	namespace server {
 		class CSoundAreaEntityBase : public CS2::server::CBaseEntity {
 		public:
-			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlSymbolLarge m_iszSoundAreaType; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::Vector m_vPos; // 0x500 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CUtlSymbolLarge m_iszSoundAreaType; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::Vector m_vPos; // 0x4b8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_bDisabled) == 0x4F0, "m_bDisabled in CSoundAreaEntityBase should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_iszSoundAreaType) == 0x4F8, "m_iszSoundAreaType in CSoundAreaEntityBase should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_vPos) == 0x500, "m_vPos in CSoundAreaEntityBase should be at offset 0x500");
-		static_assert(sizeof(CS2::server::CSoundAreaEntityBase) == 0x510, "CSoundAreaEntityBase size should be 0x510");
+		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_bDisabled) == 0x4A8, "m_bDisabled in CSoundAreaEntityBase should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_iszSoundAreaType) == 0x4B0, "m_iszSoundAreaType in CSoundAreaEntityBase should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_vPos) == 0x4B8, "m_vPos in CSoundAreaEntityBase should be at offset 0x4B8");
+		static_assert(sizeof(CS2::server::CSoundAreaEntityBase) == 0x4C8, "CSoundAreaEntityBase size should be 0x4C8");
 	}
 }

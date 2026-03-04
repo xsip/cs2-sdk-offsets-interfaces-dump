@@ -5,6 +5,6 @@
 class client_CSkeletonInstance;
 
 class client_CSkeletonAnimationController {
-    char pad_782[0x8];
+    char pad_1572[0x8];
     client_CSkeletonInstance* m_pSkeletonInstance;
 };

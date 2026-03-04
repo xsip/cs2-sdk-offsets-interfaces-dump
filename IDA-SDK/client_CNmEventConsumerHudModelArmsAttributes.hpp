@@ -4,7 +4,7 @@
 
 
 class client_CNmEventConsumerHudModelArmsAttributes {
-    char pad_1019[0x10];
-    char pad_1020[0x40];
-    char pad_1021[0x8];
+    char pad_1820[0x10];
+    char pad_1821[0x40];
+    char pad_1822[0x8];
 };

@@ -21,18 +21,20 @@ namespace CS2 {
 	namespace client {
 		class C_SoundOpvarSetPointBase : public CS2::client::C_BaseEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x5f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x600 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x608 | Schema_Atomic | Size: 0x8
-			int32_t m_iOpvarIndex; // 0x610 | Schema_Builtin | Size: 0x4
-			bool m_bUseAutoCompare; // 0x614 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3); // End padding
+			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x608 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszOperatorName; // 0x610 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszOpvarName; // 0x618 | Schema_Atomic | Size: 0x8
+			int32_t m_iOpvarIndex; // 0x620 | Schema_Builtin | Size: 0x4
+			bool m_bUseAutoCompare; // 0x624 | Schema_Builtin | Size: 0x1
+			bool m_bFastRefresh; // 0x625 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iszStackName) == 0x5F8, "m_iszStackName in C_SoundOpvarSetPointBase should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iszOperatorName) == 0x600, "m_iszOperatorName in C_SoundOpvarSetPointBase should be at offset 0x600");
-		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iszOpvarName) == 0x608, "m_iszOpvarName in C_SoundOpvarSetPointBase should be at offset 0x608");
-		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iOpvarIndex) == 0x610, "m_iOpvarIndex in C_SoundOpvarSetPointBase should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_bUseAutoCompare) == 0x614, "m_bUseAutoCompare in C_SoundOpvarSetPointBase should be at offset 0x614");
-		static_assert(sizeof(CS2::client::C_SoundOpvarSetPointBase) == 0x618, "C_SoundOpvarSetPointBase size should be 0x618");
+		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iszStackName) == 0x608, "m_iszStackName in C_SoundOpvarSetPointBase should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iszOperatorName) == 0x610, "m_iszOperatorName in C_SoundOpvarSetPointBase should be at offset 0x610");
+		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iszOpvarName) == 0x618, "m_iszOpvarName in C_SoundOpvarSetPointBase should be at offset 0x618");
+		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_iOpvarIndex) == 0x620, "m_iOpvarIndex in C_SoundOpvarSetPointBase should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_bUseAutoCompare) == 0x624, "m_bUseAutoCompare in C_SoundOpvarSetPointBase should be at offset 0x624");
+		static_assert(offsetof(CS2::client::C_SoundOpvarSetPointBase, m_bFastRefresh) == 0x625, "m_bFastRefresh in C_SoundOpvarSetPointBase should be at offset 0x625");
+		static_assert(sizeof(CS2::client::C_SoundOpvarSetPointBase) == 0x628, "C_SoundOpvarSetPointBase size should be 0x628");
 	}
 }

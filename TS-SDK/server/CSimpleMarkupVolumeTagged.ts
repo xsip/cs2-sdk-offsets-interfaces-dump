@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {server_CMarkupVolumeTagged} from './CMarkupVolumeTagged';
-// Class size: 0x818
+// Class size: 0x770
 // BaseClass: : public CS2::server::CMarkupVolumeTagged
 export const server_CSimpleMarkupVolumeTagged  = {
 	...server_CMarkupVolumeTagged,

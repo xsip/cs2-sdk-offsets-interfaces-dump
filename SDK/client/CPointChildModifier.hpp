@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace client {
 		class CPointChildModifier : public CS2::client::C_PointEntity {
 		public:
-			bool m_bOrphanInsteadOfDeletingChildrenOnRemove; // 0x5f8 | Schema_Builtin | Size: 0x1
+			bool m_bOrphanInsteadOfDeletingChildrenOnRemove; // 0x608 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::CPointChildModifier, m_bOrphanInsteadOfDeletingChildrenOnRemove) == 0x5F8, "m_bOrphanInsteadOfDeletingChildrenOnRemove in CPointChildModifier should be at offset 0x5F8");
-		static_assert(sizeof(CS2::client::CPointChildModifier) == 0x600, "CPointChildModifier size should be 0x600");
+		static_assert(offsetof(CS2::client::CPointChildModifier, m_bOrphanInsteadOfDeletingChildrenOnRemove) == 0x608, "m_bOrphanInsteadOfDeletingChildrenOnRemove in CPointChildModifier should be at offset 0x608");
+		static_assert(sizeof(CS2::client::CPointChildModifier) == 0x610, "CPointChildModifier size should be 0x610");
 	}
 }

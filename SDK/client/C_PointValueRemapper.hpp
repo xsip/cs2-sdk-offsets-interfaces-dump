@@ -27,64 +27,64 @@ namespace CS2 {
 	namespace client {
 		class C_PointValueRemapper : public CS2::client::C_BaseEntity {
 		public:
-			bool m_bDisabled; // 0x5f8 | Schema_Builtin | Size: 0x1
-			bool m_bDisabledOld; // 0x5f9 | Schema_Builtin | Size: 0x1
-			bool m_bUpdateOnClient; // 0x5fa | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x608 | Schema_Builtin | Size: 0x1
+			bool m_bDisabledOld; // 0x609 | Schema_Builtin | Size: 0x1
+			bool m_bUpdateOnClient; // 0x60a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			client::ValueRemapperInputType_t m_nInputType; // 0x5fc | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hRemapLineStart; // 0x600 | Schema_Atomic | Size: 0x4
-			// char  m_hRemapLineStart[0x4]; // 0x600 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hRemapLineEnd; // 0x604 | Schema_Atomic | Size: 0x4
-			// char  m_hRemapLineEnd[0x4]; // 0x604 | Schema_Atomic | Size: 0x4
-			float32 m_flMaximumChangePerSecond; // 0x608 | Schema_Builtin | Size: 0x4
-			float32 m_flDisengageDistance; // 0x60c | Schema_Builtin | Size: 0x4
-			float32 m_flEngageDistance; // 0x610 | Schema_Builtin | Size: 0x4
-			bool m_bRequiresUseKey; // 0x614 | Schema_Builtin | Size: 0x1
+			client::ValueRemapperInputType_t m_nInputType; // 0x60c | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hRemapLineStart; // 0x610 | Schema_Atomic | Size: 0x4
+			// char m_hRemapLineStart[0x4]; // 0x610 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hRemapLineEnd; // 0x614 | Schema_Atomic | Size: 0x4
+			// char m_hRemapLineEnd[0x4]; // 0x614 | Schema_Atomic | Size: 0x4
+			float32 m_flMaximumChangePerSecond; // 0x618 | Schema_Builtin | Size: 0x4
+			float32 m_flDisengageDistance; // 0x61c | Schema_Builtin | Size: 0x4
+			float32 m_flEngageDistance; // 0x620 | Schema_Builtin | Size: 0x4
+			bool m_bRequiresUseKey; // 0x624 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::ValueRemapperOutputType_t m_nOutputType; // 0x618 | Schema_DeclaredEnum | Size: 0x4
+			client::ValueRemapperOutputType_t m_nOutputType; // 0x628 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseEntity>> m_hOutputEntities; // 0x620 | Schema_Atomic | Size: 0x18
-			char  m_hOutputEntities[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
-			client::ValueRemapperHapticsType_t m_nHapticsType; // 0x638 | Schema_DeclaredEnum | Size: 0x4
-			client::ValueRemapperMomentumType_t m_nMomentumType; // 0x63c | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flMomentumModifier; // 0x640 | Schema_Builtin | Size: 0x4
-			float32 m_flSnapValue; // 0x644 | Schema_Builtin | Size: 0x4
-			float32 m_flCurrentMomentum; // 0x648 | Schema_Builtin | Size: 0x4
-			client::ValueRemapperRatchetType_t m_nRatchetType; // 0x64c | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flRatchetOffset; // 0x650 | Schema_Builtin | Size: 0x4
-			float32 m_flInputOffset; // 0x654 | Schema_Builtin | Size: 0x4
-			bool m_bEngaged; // 0x658 | Schema_Builtin | Size: 0x1
-			bool m_bFirstUpdate; // 0x659 | Schema_Builtin | Size: 0x1
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseEntity>> m_hOutputEntities; // 0x630 | Schema_Atomic | Size: 0x18
+			char m_hOutputEntities[0x18]; // 0x630 | Schema_Atomic | Size: 0x18
+			client::ValueRemapperHapticsType_t m_nHapticsType; // 0x648 | Schema_DeclaredEnum | Size: 0x4
+			client::ValueRemapperMomentumType_t m_nMomentumType; // 0x64c | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flMomentumModifier; // 0x650 | Schema_Builtin | Size: 0x4
+			float32 m_flSnapValue; // 0x654 | Schema_Builtin | Size: 0x4
+			float32 m_flCurrentMomentum; // 0x658 | Schema_Builtin | Size: 0x4
+			client::ValueRemapperRatchetType_t m_nRatchetType; // 0x65c | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flRatchetOffset; // 0x660 | Schema_Builtin | Size: 0x4
+			float32 m_flInputOffset; // 0x664 | Schema_Builtin | Size: 0x4
+			bool m_bEngaged; // 0x668 | Schema_Builtin | Size: 0x1
+			bool m_bFirstUpdate; // 0x669 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			float32 m_flPreviousValue; // 0x65c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flPreviousUpdateTickTime; // 0x660 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecPreviousTestPoint; // 0x664 | Schema_Atomic | Size: 0xc
+			float32 m_flPreviousValue; // 0x66c | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flPreviousUpdateTickTime; // 0x670 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecPreviousTestPoint; // 0x674 | Schema_Atomic | Size: 0xc
 		};
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bDisabled) == 0x5F8, "m_bDisabled in C_PointValueRemapper should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bDisabledOld) == 0x5F9, "m_bDisabledOld in C_PointValueRemapper should be at offset 0x5F9");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bUpdateOnClient) == 0x5FA, "m_bUpdateOnClient in C_PointValueRemapper should be at offset 0x5FA");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nInputType) == 0x5FC, "m_nInputType in C_PointValueRemapper should be at offset 0x5FC");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_hRemapLineStart) == 0x600, "m_hRemapLineStart in C_PointValueRemapper should be at offset 0x600");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_hRemapLineEnd) == 0x604, "m_hRemapLineEnd in C_PointValueRemapper should be at offset 0x604");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flMaximumChangePerSecond) == 0x608, "m_flMaximumChangePerSecond in C_PointValueRemapper should be at offset 0x608");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flDisengageDistance) == 0x60C, "m_flDisengageDistance in C_PointValueRemapper should be at offset 0x60C");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flEngageDistance) == 0x610, "m_flEngageDistance in C_PointValueRemapper should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bRequiresUseKey) == 0x614, "m_bRequiresUseKey in C_PointValueRemapper should be at offset 0x614");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nOutputType) == 0x618, "m_nOutputType in C_PointValueRemapper should be at offset 0x618");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_hOutputEntities) == 0x620, "m_hOutputEntities in C_PointValueRemapper should be at offset 0x620");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nHapticsType) == 0x638, "m_nHapticsType in C_PointValueRemapper should be at offset 0x638");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nMomentumType) == 0x63C, "m_nMomentumType in C_PointValueRemapper should be at offset 0x63C");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flMomentumModifier) == 0x640, "m_flMomentumModifier in C_PointValueRemapper should be at offset 0x640");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flSnapValue) == 0x644, "m_flSnapValue in C_PointValueRemapper should be at offset 0x644");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flCurrentMomentum) == 0x648, "m_flCurrentMomentum in C_PointValueRemapper should be at offset 0x648");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nRatchetType) == 0x64C, "m_nRatchetType in C_PointValueRemapper should be at offset 0x64C");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flRatchetOffset) == 0x650, "m_flRatchetOffset in C_PointValueRemapper should be at offset 0x650");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flInputOffset) == 0x654, "m_flInputOffset in C_PointValueRemapper should be at offset 0x654");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bEngaged) == 0x658, "m_bEngaged in C_PointValueRemapper should be at offset 0x658");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bFirstUpdate) == 0x659, "m_bFirstUpdate in C_PointValueRemapper should be at offset 0x659");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flPreviousValue) == 0x65C, "m_flPreviousValue in C_PointValueRemapper should be at offset 0x65C");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flPreviousUpdateTickTime) == 0x660, "m_flPreviousUpdateTickTime in C_PointValueRemapper should be at offset 0x660");
-		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_vecPreviousTestPoint) == 0x664, "m_vecPreviousTestPoint in C_PointValueRemapper should be at offset 0x664");
-		static_assert(sizeof(CS2::client::C_PointValueRemapper) == 0x670, "C_PointValueRemapper size should be 0x670");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bDisabled) == 0x608, "m_bDisabled in C_PointValueRemapper should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bDisabledOld) == 0x609, "m_bDisabledOld in C_PointValueRemapper should be at offset 0x609");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bUpdateOnClient) == 0x60A, "m_bUpdateOnClient in C_PointValueRemapper should be at offset 0x60A");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nInputType) == 0x60C, "m_nInputType in C_PointValueRemapper should be at offset 0x60C");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_hRemapLineStart) == 0x610, "m_hRemapLineStart in C_PointValueRemapper should be at offset 0x610");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_hRemapLineEnd) == 0x614, "m_hRemapLineEnd in C_PointValueRemapper should be at offset 0x614");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flMaximumChangePerSecond) == 0x618, "m_flMaximumChangePerSecond in C_PointValueRemapper should be at offset 0x618");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flDisengageDistance) == 0x61C, "m_flDisengageDistance in C_PointValueRemapper should be at offset 0x61C");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flEngageDistance) == 0x620, "m_flEngageDistance in C_PointValueRemapper should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bRequiresUseKey) == 0x624, "m_bRequiresUseKey in C_PointValueRemapper should be at offset 0x624");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nOutputType) == 0x628, "m_nOutputType in C_PointValueRemapper should be at offset 0x628");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_hOutputEntities) == 0x630, "m_hOutputEntities in C_PointValueRemapper should be at offset 0x630");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nHapticsType) == 0x648, "m_nHapticsType in C_PointValueRemapper should be at offset 0x648");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nMomentumType) == 0x64C, "m_nMomentumType in C_PointValueRemapper should be at offset 0x64C");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flMomentumModifier) == 0x650, "m_flMomentumModifier in C_PointValueRemapper should be at offset 0x650");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flSnapValue) == 0x654, "m_flSnapValue in C_PointValueRemapper should be at offset 0x654");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flCurrentMomentum) == 0x658, "m_flCurrentMomentum in C_PointValueRemapper should be at offset 0x658");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_nRatchetType) == 0x65C, "m_nRatchetType in C_PointValueRemapper should be at offset 0x65C");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flRatchetOffset) == 0x660, "m_flRatchetOffset in C_PointValueRemapper should be at offset 0x660");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flInputOffset) == 0x664, "m_flInputOffset in C_PointValueRemapper should be at offset 0x664");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bEngaged) == 0x668, "m_bEngaged in C_PointValueRemapper should be at offset 0x668");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bFirstUpdate) == 0x669, "m_bFirstUpdate in C_PointValueRemapper should be at offset 0x669");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flPreviousValue) == 0x66C, "m_flPreviousValue in C_PointValueRemapper should be at offset 0x66C");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flPreviousUpdateTickTime) == 0x670, "m_flPreviousUpdateTickTime in C_PointValueRemapper should be at offset 0x670");
+		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_vecPreviousTestPoint) == 0x674, "m_vecPreviousTestPoint in C_PointValueRemapper should be at offset 0x674");
+		static_assert(sizeof(CS2::client::C_PointValueRemapper) == 0x680, "C_PointValueRemapper size should be 0x680");
 	}
 }

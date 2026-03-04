@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1460
+			// Class size: 0x13E0
 			namespace C_PropDoorRotating /*: public CS2::client::C_BasePropDoor*/ {
 				// NO SCHEMA DATA FOUND!
 			}

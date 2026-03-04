@@ -22,7 +22,7 @@ namespace CS2 {
 		class CPathMetricEvaluator : public CS2::animgraphlib::CMotionMetricEvaluator {
 		public:
 			GlobalTypes::CUtlVector< float32 > m_pathTimeSamples; // 0x50 | Schema_Atomic | Size: 0x18
-			// char  m_pathTimeSamples[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
+			// char m_pathTimeSamples[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			float32 m_flDistance; // 0x68 | Schema_Builtin | Size: 0x4
 			bool m_bExtrapolateMovement; // 0x6c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

@@ -10,41 +10,52 @@ class server_CPulseGraphInstance_ServerEntity;
 #include "client_CNetworkTransmitComponent.hpp"
 #include "entity2_GameTick_t.hpp"
 #include "entity2_GameTime_t.hpp"
+#include "entity2_GameTick_t.hpp"
 #include "entity2_CEntityIOOutput.hpp"
 #include "client_CNetworkVelocityVector.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_GameTime_t.hpp"
+#include "entity2_CEntityIOOutput.hpp"
 #include "server_ConstraintSoundInfo.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
 #include "vphysics2_constraint_hingeparams_t.hpp"
+#include "entity2_CEntityIOOutput.hpp"
+#include "entity2_CEntityIOOutput.hpp"
 
 class server_CPhysHinge {
-    char vTable723[0x8];
+    void **__vftable_0;
     CUtlSymbolLarge m_iszPrivateVScripts;
     entity2_CEntityIdentity* m_pEntity;
-    char pad_724[0x18];
+    char pad_1508[0x18];
     entity2_CScriptComponent* m_CScriptComponent;
     server_CBodyComponent* m_CBodyComponent;
     client_CNetworkTransmitComponent m_NetworkTransmitComponent;
-    char pad_2793[0x40];
+    char pad_2914[0x40];
     char m_aThinkFunctions[0x18];
     int32_t m_iCurrentThinkContext;
     entity2_GameTick_t m_nLastThinkTick;
     bool m_bDisabledContextThinks;
-    char pad_2794[0xf];
+    char pad_2915[0xf];
     char m_isSteadyState[0x8];
     float32 m_lastNetworkChange;
-    char pad_2795[0xc];
+    char pad_2916[0xc];
     char m_ResponseContexts[0x18];
     CUtlSymbolLarge m_iszResponseContext;
-    char pad_2796[0x20];
+    char pad_2917[0x20];
     int32_t m_iHealth;
     int32_t m_iMaxHealth;
     uint8_t m_lifeState;
-    char pad_2797[0x3];
+    char pad_2918[0x3];
     float32 m_flDamageAccumulator;
     bool m_bTakesDamage;
-    char pad_2798[0x7];
+    char pad_2919[0x7];
     client_TakeDamageFlags_t m_nTakeDamageFlags;
     client_EntityPlatformTypes_t m_nPlatformType;
-    char pad_2799[0x1];
+    char pad_2920[0x1];
     client_MoveCollide_t m_MoveCollide;
     client_MoveType_t m_MoveType;
     client_MoveType_t m_nActualMoveType;
@@ -53,20 +64,20 @@ class server_CPhysHinge {
     bool m_bRestoreInHierarchy;
     CUtlSymbolLarge m_target;
     char m_hDamageFilter[0x4];
-    char pad_2800[0x4];
+    char pad_2921[0x4];
     CUtlSymbolLarge m_iszDamageFilterName;
     float32 m_flMoveDoneTime;
     CUtlStringToken m_nSubclassID;
-    char pad_2801[0x8];
+    char pad_2922[0x8];
     float32 m_flAnimTime;
     float32 m_flSimulationTime;
     entity2_GameTime_t m_flCreateTime;
     bool m_bClientSideRagdoll;
     uint8_t m_ubInterpolationFrame;
-    char pad_2802[0x2];
+    char pad_2923[0x2];
     Vector m_vPrevVPhysicsUpdatePos;
     uint8_t m_iTeamNum;
-    char pad_2803[0x3];
+    char pad_2924[0x3];
     CUtlSymbolLarge m_iGlobalname;
     int32_t m_iSentToClients;
     float32 m_flSpeed;
@@ -74,12 +85,12 @@ class server_CPhysHinge {
     uint32_t m_spawnflags;
     entity2_GameTick_t m_nNextThinkTick;
     int32_t m_nSimulationTick;
-    char pad_2804[0x4];
+    char pad_2925[0x4];
     entity2_CEntityIOOutput m_OnKilled;
     uint32_t m_fFlags;
     Vector m_vecAbsVelocity;
     client_CNetworkVelocityVector m_vecVelocity;
-    char pad_2805[0x8];
+    char pad_2926[0x8];
     Vector m_vecBaseVelocity;
     int32_t m_nPushEnumCount;
     server_CCollisionProperty* m_pCollision;
@@ -95,12 +106,12 @@ class server_CPhysHinge {
     float32 m_flWaterLevel;
     bool m_bGravityDisabled;
     bool m_bAnimatedEveryTick;
-    char pad_2806[0x2];
+    char pad_2927[0x2];
     float32 m_flActualGravityScale;
     bool m_bGravityActuallyDisabled;
     bool m_bDisableLowViolence;
     uint8_t m_nWaterType;
-    char pad_2807[0x1];
+    char pad_2928[0x1];
     int32_t m_iEFlags;
     entity2_CEntityIOOutput m_OnUser1;
     entity2_CEntityIOOutput m_OnUser2;
@@ -111,13 +122,13 @@ class server_CPhysHinge {
     QAngle m_vecAngVelocity;
     bool m_bNetworkQuantizeOriginAndAngles;
     bool m_bLagCompensate;
-    char pad_2808[0x2];
+    char pad_2929[0x2];
     char m_pBlocker[0x4];
     float32 m_flLocalTime;
     float32 m_flVPhysicsUpdateLocalTime;
     client_BloodType m_nBloodType;
     server_CPulseGraphInstance_ServerEntity* m_pPulseGraphInstance;
-    char vTable3659[0x8];
+    void **__vftable_1;
     CUtlSymbolLarge m_nameAttach1;
     CUtlSymbolLarge m_nameAttach2;
     char m_hAttach1[0x4];
@@ -130,20 +141,20 @@ class server_CPhysHinge {
     float32 m_minTeleportDistance;
     bool m_bSnapObjectPositions;
     bool m_bTreatEntity1AsInfiniteMass;
-    char pad_3660[0x2];
+    char pad_3790[0x2];
     entity2_CEntityIOOutput m_OnBreak;
-    char vTable3841[0x8];
+    void **__vftable_2;
     server_ConstraintSoundInfo m_soundInfo;
     entity2_CEntityIOOutput m_NotifyMinLimitReached;
     entity2_CEntityIOOutput m_NotifyMaxLimitReached;
     bool m_bAtMinLimit;
     bool m_bAtMaxLimit;
-    char pad_3842[0x2];
+    char pad_3975[0x2];
     vphysics2_constraint_hingeparams_t m_hinge;
     float32 m_hingeFriction;
     float32 m_systemLoadScale;
     bool m_bIsAxisLocal;
-    char pad_3843[0x3];
+    char pad_3976[0x3];
     float32 m_flMinRotation;
     float32 m_flMaxRotation;
     float32 m_flInitialRotation;
@@ -151,7 +162,7 @@ class server_CPhysHinge {
     float32 m_flMotorDampingRatio;
     float32 m_flAngleSpeed;
     float32 m_flAngleSpeedThreshold;
-    char pad_3844[0x4];
+    float32 m_flLimitsDebugVisRotation;
     entity2_CEntityIOOutput m_OnStartMoving;
     entity2_CEntityIOOutput m_OnStopMoving;
 };

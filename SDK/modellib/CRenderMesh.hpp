@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/modellib/CSceneObjectData.hpp>
 #include <SDK/modellib/CRenderSkeleton.hpp>
 #include <SDK/modellib/DynamicMeshDeformParams_t.hpp>
 
@@ -28,26 +29,26 @@ namespace CS2 {
 		class CRenderMesh  {
 		public:
 			S2_PAD(0x10);
-			// GlobalTypes::CUtlLeanVectorFixedGrowable<modellib::CSceneObjectData> m_sceneObjects; // 0x10 | Schema_Atomic | Size: 0x98
-			char  m_sceneObjects[0x98]; // 0x10 | Schema_Atomic | Size: 0x98
-			// GlobalTypes::CUtlLeanVector<modellib::CBaseConstraint*> m_constraints; // 0xa8 | Schema_Atomic | Size: 0x10
-			char  m_constraints[0x10]; // 0xa8 | Schema_Atomic | Size: 0x10
-			modellib::CRenderSkeleton m_skeleton; // 0xb8 | Schema_DeclaredClass | Size: 0x50
-			S2_PAD(0xac);
-			bool m_bUseUV2ForCharting; // 0x1b4 | Schema_Builtin | Size: 0x1
-			bool m_bEmbeddedMapMesh; // 0x1b5 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CUtlLeanVectorFixedGrowable<modellib::CSceneObjectData> m_sceneObjects; // 0x10 | Schema_Atomic | Size: 0xa8
+			char m_sceneObjects[0xa8]; // 0x10 | Schema_Atomic | Size: 0xa8
+			// GlobalTypes::CUtlLeanVector<modellib::CBaseConstraint*> m_constraints; // 0xb8 | Schema_Atomic | Size: 0x10
+			char m_constraints[0x10]; // 0xb8 | Schema_Atomic | Size: 0x10
+			modellib::CRenderSkeleton m_skeleton; // 0xc8 | Schema_DeclaredClass | Size: 0x50
+			S2_PAD(0xbc);
+			bool m_bUseUV2ForCharting; // 0x1d4 | Schema_Builtin | Size: 0x1
+			bool m_bEmbeddedMapMesh; // 0x1d5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x22);
-			modellib::DynamicMeshDeformParams_t m_meshDeformParams; // 0x1d8 | Schema_DeclaredClass | Size: 0xc
+			modellib::DynamicMeshDeformParams_t m_meshDeformParams; // 0x1f8 | Schema_DeclaredClass | Size: 0xc
 			S2_PAD(0x4);
-			modellib::CRenderGroom* m_pGroomData; // 0x1e8 | Schema_Ptr | Size: 0x8
+			modellib::CRenderGroom* m_pGroomData; // 0x208 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_sceneObjects) == 0x10, "m_sceneObjects in CRenderMesh should be at offset 0x10");
-		static_assert(offsetof(CS2::modellib::CRenderMesh, m_constraints) == 0xA8, "m_constraints in CRenderMesh should be at offset 0xA8");
-		static_assert(offsetof(CS2::modellib::CRenderMesh, m_skeleton) == 0xB8, "m_skeleton in CRenderMesh should be at offset 0xB8");
-		static_assert(offsetof(CS2::modellib::CRenderMesh, m_bUseUV2ForCharting) == 0x1B4, "m_bUseUV2ForCharting in CRenderMesh should be at offset 0x1B4");
-		static_assert(offsetof(CS2::modellib::CRenderMesh, m_bEmbeddedMapMesh) == 0x1B5, "m_bEmbeddedMapMesh in CRenderMesh should be at offset 0x1B5");
-		static_assert(offsetof(CS2::modellib::CRenderMesh, m_meshDeformParams) == 0x1D8, "m_meshDeformParams in CRenderMesh should be at offset 0x1D8");
-		static_assert(offsetof(CS2::modellib::CRenderMesh, m_pGroomData) == 0x1E8, "m_pGroomData in CRenderMesh should be at offset 0x1E8");
-		static_assert(sizeof(CS2::modellib::CRenderMesh) == 0x1F0, "CRenderMesh size should be 0x1F0");
+		static_assert(offsetof(CS2::modellib::CRenderMesh, m_constraints) == 0xB8, "m_constraints in CRenderMesh should be at offset 0xB8");
+		static_assert(offsetof(CS2::modellib::CRenderMesh, m_skeleton) == 0xC8, "m_skeleton in CRenderMesh should be at offset 0xC8");
+		static_assert(offsetof(CS2::modellib::CRenderMesh, m_bUseUV2ForCharting) == 0x1D4, "m_bUseUV2ForCharting in CRenderMesh should be at offset 0x1D4");
+		static_assert(offsetof(CS2::modellib::CRenderMesh, m_bEmbeddedMapMesh) == 0x1D5, "m_bEmbeddedMapMesh in CRenderMesh should be at offset 0x1D5");
+		static_assert(offsetof(CS2::modellib::CRenderMesh, m_meshDeformParams) == 0x1F8, "m_meshDeformParams in CRenderMesh should be at offset 0x1F8");
+		static_assert(offsetof(CS2::modellib::CRenderMesh, m_pGroomData) == 0x208, "m_pGroomData in CRenderMesh should be at offset 0x208");
+		static_assert(sizeof(CS2::modellib::CRenderMesh) == 0x210, "CRenderMesh size should be 0x210");
 	}
 }

@@ -8,18 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x568
+			// Class size: 0x528
 			namespace CInfoOffscreenPanoramaTexture /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_bDisabled = 0x4f0; // bool m_bDisabled; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nResolutionX = 0x4f4; // int32_t m_nResolutionX; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nResolutionY = 0x4f8; // int32_t m_nResolutionY; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_szLayoutFileName = 0x500; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_RenderAttrName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_TargetEntities = 0x510; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nTargetChangeCount = 0x528; // int32_t m_nTargetChangeCount; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecCSSClasses = 0x530; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_szTargetsName = 0x548; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_AdditionalTargetEntities = 0x550; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_bDisabled = 0x4a8; // bool m_bDisabled; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nResolutionX = 0x4ac; // int32_t m_nResolutionX; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nResolutionY = 0x4b0; // int32_t m_nResolutionY; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_szPanelType = 0x4b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_szLayoutFileName = 0x4c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_RenderAttrName = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_TargetEntities = 0x4d0; // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nTargetChangeCount = 0x4e8; // int32_t m_nTargetChangeCount; |  0x4e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecCSSClasses = 0x4f0; // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_szTargetsName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_AdditionalTargetEntities = 0x510; // server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

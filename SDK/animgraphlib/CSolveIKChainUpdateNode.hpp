@@ -11,15 +11,11 @@
 
 
 #include <SDK/animgraphlib/CUnaryUpdateNode.hpp>
+#include <SDK/animgraphlib/CSolveIKTargetHandle_t.hpp>
 #include <SDK/animgraphlib/SolveIKChainPoseOpFixedSettings_t.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class CSolveIKTargetHandle_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -28,7 +24,7 @@ namespace CS2 {
 		class CSolveIKChainUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
 			GlobalTypes::CUtlVector<animgraphlib::CSolveIKTargetHandle_t> m_targetHandles; // 0x70 | Schema_Atomic | Size: 0x18
-			// char  m_targetHandles[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			// char m_targetHandles[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			animgraphlib::SolveIKChainPoseOpFixedSettings_t m_opFixedData; // 0x88 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

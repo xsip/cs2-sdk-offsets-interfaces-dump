@@ -8,23 +8,24 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA78
+			// Class size: 0x930
 			namespace CTriggerLerpObject /*: public CS2::server::CBaseTrigger*/ {
-				constexpr std::ptrdiff_t m_iszLerpTarget = 0x9a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hLerpTarget = 0x9b0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iszLerpTargetAttachment = 0x9b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hLerpTargetAttachment = 0x9c0; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
-				constexpr std::ptrdiff_t m_flLerpDuration = 0x9c4; // float32 m_flLerpDuration; |  0x9c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bLerpRestoreMoveType = 0x9c8; // bool m_bLerpRestoreMoveType; |  0x9c8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSingleLerpObject = 0x9c9; // bool m_bSingleLerpObject; |  0x9c9 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecLerpingObjects = 0x9d0; // GlobalTypes::CUtlVector<server::lerpdata_t>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_iszLerpEffect = 0x9e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszLerpSound = 0x9f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bAttachTouchingObject = 0x9f8; // bool m_bAttachTouchingObject; |  0x9f8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hEntityToWaitForDisconnect = 0x9fc; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OnLerpStarted = 0xa00; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnLerpFinished = 0xa28; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnDetached = 0xa50; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_iszLerpTarget = 0x890; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hLerpTarget = 0x898; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszLerpTargetAttachment = 0x8a0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hLerpTargetAttachment = 0x8a8; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
+				constexpr std::ptrdiff_t m_flLerpDuration = 0x8ac; // float32 m_flLerpDuration; |  0x8ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAttachedEntityWasParented = 0x8b0; // bool m_bAttachedEntityWasParented; |  0x8b0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bLerpRestoreMoveType = 0x8b1; // bool m_bLerpRestoreMoveType; |  0x8b1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSingleLerpObject = 0x8b2; // bool m_bSingleLerpObject; |  0x8b2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecLerpingObjects = 0x8b8; // GlobalTypes::CUtlVector<server::lerpdata_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iszLerpEffect = 0x8d0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszLerpSound = 0x8d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bAttachTouchingObject = 0x8e0; // bool m_bAttachTouchingObject; |  0x8e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hEntityToWaitForDisconnect = 0x8e4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OnLerpStarted = 0x8e8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnLerpFinished = 0x900; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnDetached = 0x918; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

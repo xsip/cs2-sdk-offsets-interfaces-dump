@@ -8,11 +8,11 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x68
+			// Class size: 0x70
 			namespace CCSPlayer_WaterServices /*: public CS2::client::CPlayer_WaterServices*/ {
-				constexpr std::ptrdiff_t m_flWaterJumpTime = 0x40; // float32 m_flWaterJumpTime; |  0x40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vecWaterJumpVel = 0x44; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flSwimSoundTime = 0x50; // float32 m_flSwimSoundTime; |  0x50 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flWaterJumpTime = 0x48; // float32 m_flWaterJumpTime; |  0x48 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vecWaterJumpVel = 0x4c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flSwimSoundTime = 0x58; // float32 m_flSwimSoundTime; |  0x58 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

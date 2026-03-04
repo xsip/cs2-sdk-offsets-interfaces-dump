@@ -1,16 +1,16 @@
 // generated - do not edit!
 
 import {server_CLogicalEntity} from './CLogicalEntity';
-// Class size: 0x530
+// Class size: 0x4E8
 // BaseClass: : public CS2::server::CLogicalEntity
 export const server_CMultiLightProxy  = {
 	...server_CLogicalEntity,
-	m_iszLightNameFilter: 1264n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-	m_iszLightClassFilter: 1272n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-	m_flLightRadiusFilter: 1280n, // float32 m_flLightRadiusFilter; |  0x500 | Schema_Builtin | Size: 0x4
-	m_flBrightnessDelta: 1284n, // float32 m_flBrightnessDelta; |  0x504 | Schema_Builtin | Size: 0x4
-	m_bPerformScreenFade: 1288n, // bool m_bPerformScreenFade; |  0x508 | Schema_Builtin | Size: 0x1
-	m_flTargetBrightnessMultiplier: 1292n, // float32 m_flTargetBrightnessMultiplier; |  0x50c | Schema_Builtin | Size: 0x4
-	m_flCurrentBrightnessMultiplier: 1296n, // float32 m_flCurrentBrightnessMultiplier; |  0x510 | Schema_Builtin | Size: 0x4
-	m_vecLights: 1304n, // server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>>  | Schema_Atomic | Size: 0x18
+	m_iszLightNameFilter: 1192n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+	m_iszLightClassFilter: 1200n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+	m_flLightRadiusFilter: 1208n, // float32 m_flLightRadiusFilter; |  0x4b8 | Schema_Builtin | Size: 0x4
+	m_flBrightnessDelta: 1212n, // float32 m_flBrightnessDelta; |  0x4bc | Schema_Builtin | Size: 0x4
+	m_bPerformScreenFade: 1216n, // bool m_bPerformScreenFade; |  0x4c0 | Schema_Builtin | Size: 0x1
+	m_flTargetBrightnessMultiplier: 1220n, // float32 m_flTargetBrightnessMultiplier; |  0x4c4 | Schema_Builtin | Size: 0x4
+	m_flCurrentBrightnessMultiplier: 1224n, // float32 m_flCurrentBrightnessMultiplier; |  0x4c8 | Schema_Builtin | Size: 0x4
+	m_vecLights: 1232n, // server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>>  | Schema_Atomic | Size: 0x18
 }

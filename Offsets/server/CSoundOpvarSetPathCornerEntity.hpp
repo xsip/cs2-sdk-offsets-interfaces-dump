@@ -8,11 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x6D0
+			// Class size: 0x670
 			namespace CSoundOpvarSetPathCornerEntity /*: public CS2::server::CSoundOpvarSetPointEntity*/ {
-				constexpr std::ptrdiff_t m_flDistMinSqr = 0x6c0; // float32 m_flDistMinSqr; |  0x6c0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDistMaxSqr = 0x6c4; // float32 m_flDistMaxSqr; |  0x6c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszPathCornerEntityName = 0x6c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bUseParentedPath = 0x658; // bool m_bUseParentedPath; |  0x658 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDistMinSqr = 0x65c; // float32 m_flDistMinSqr; |  0x65c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDistMaxSqr = 0x660; // float32 m_flDistMaxSqr; |  0x660 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszPathCornerEntityName = 0x668; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

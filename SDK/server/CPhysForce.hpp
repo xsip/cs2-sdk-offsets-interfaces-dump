@@ -28,21 +28,21 @@ namespace CS2 {
 		class CPhysForce : public CS2::server::CPointEntity {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4f8 | Schema_Atomic | Size: 0x8
-			float32 m_force; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_forceTime; // 0x504 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_attachedObject; // 0x508 | Schema_Atomic | Size: 0x4
-			// char  m_attachedObject[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			bool m_wasRestored; // 0x50c | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4b0 | Schema_Atomic | Size: 0x8
+			float32 m_force; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_forceTime; // 0x4bc | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_attachedObject; // 0x4c0 | Schema_Atomic | Size: 0x4
+			// char m_attachedObject[0x4]; // 0x4c0 | Schema_Atomic | Size: 0x4
+			bool m_wasRestored; // 0x4c4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::CConstantForceController m_integrator; // 0x510 | Schema_DeclaredClass | Size: 0x40
+			server::CConstantForceController m_integrator; // 0x4c8 | Schema_DeclaredClass | Size: 0x40
 		};
-		static_assert(offsetof(CS2::server::CPhysForce, m_nameAttach) == 0x4F8, "m_nameAttach in CPhysForce should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPhysForce, m_force) == 0x500, "m_force in CPhysForce should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPhysForce, m_forceTime) == 0x504, "m_forceTime in CPhysForce should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CPhysForce, m_attachedObject) == 0x508, "m_attachedObject in CPhysForce should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPhysForce, m_wasRestored) == 0x50C, "m_wasRestored in CPhysForce should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPhysForce, m_integrator) == 0x510, "m_integrator in CPhysForce should be at offset 0x510");
-		static_assert(sizeof(CS2::server::CPhysForce) == 0x550, "CPhysForce size should be 0x550");
+		static_assert(offsetof(CS2::server::CPhysForce, m_nameAttach) == 0x4B0, "m_nameAttach in CPhysForce should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPhysForce, m_force) == 0x4B8, "m_force in CPhysForce should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPhysForce, m_forceTime) == 0x4BC, "m_forceTime in CPhysForce should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CPhysForce, m_attachedObject) == 0x4C0, "m_attachedObject in CPhysForce should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPhysForce, m_wasRestored) == 0x4C4, "m_wasRestored in CPhysForce should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPhysForce, m_integrator) == 0x4C8, "m_integrator in CPhysForce should be at offset 0x4C8");
+		static_assert(sizeof(CS2::server::CPhysForce) == 0x508, "CPhysForce size should be 0x508");
 	}
 }

@@ -11,7 +11,7 @@
 
 
 #include <SDK/server/CPointEntity.hpp>
-#include <SDK/soundsystem/soundlevel_t.hpp>
+#include <SDK/client/soundlevel_t.hpp>
 #include <SDK/server/dynpitchvol_t.hpp>
 
 
@@ -28,30 +28,30 @@ namespace CS2 {
 	namespace server {
 		class CAmbientGeneric : public CS2::server::CPointEntity {
 		public:
-			float32 m_radius; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxRadius; // 0x4f4 | Schema_Builtin | Size: 0x4
-			soundsystem::soundlevel_t m_iSoundLevel; // 0x4f8 | Schema_DeclaredEnum | Size: 0x4
-			server::dynpitchvol_t m_dpv; // 0x4fc | Schema_DeclaredClass | Size: 0x64
-			bool m_fActive; // 0x560 | Schema_Builtin | Size: 0x1
-			bool m_fLooping; // 0x561 | Schema_Builtin | Size: 0x1
+			float32 m_radius; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxRadius; // 0x4ac | Schema_Builtin | Size: 0x4
+			client::soundlevel_t m_iSoundLevel; // 0x4b0 | Schema_DeclaredEnum | Size: 0x4
+			server::dynpitchvol_t m_dpv; // 0x4b4 | Schema_DeclaredClass | Size: 0x64
+			bool m_fActive; // 0x518 | Schema_Builtin | Size: 0x1
+			bool m_fLooping; // 0x519 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlSymbolLarge m_iszSound; // 0x568 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_sSourceEntName; // 0x570 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hSoundSource; // 0x578 | Schema_Atomic | Size: 0x4
-			// char  m_hSoundSource[0x4]; // 0x578 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CEntityIndex m_nSoundSourceEntIndex; // 0x57c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszSound; // 0x520 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_sSourceEntName; // 0x528 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hSoundSource; // 0x530 | Schema_Atomic | Size: 0x4
+			// char m_hSoundSource[0x4]; // 0x530 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CEntityIndex m_nSoundSourceEntIndex; // 0x534 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_radius) == 0x4F0, "m_radius in CAmbientGeneric should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_flMaxRadius) == 0x4F4, "m_flMaxRadius in CAmbientGeneric should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_iSoundLevel) == 0x4F8, "m_iSoundLevel in CAmbientGeneric should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_dpv) == 0x4FC, "m_dpv in CAmbientGeneric should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_fActive) == 0x560, "m_fActive in CAmbientGeneric should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_fLooping) == 0x561, "m_fLooping in CAmbientGeneric should be at offset 0x561");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_iszSound) == 0x568, "m_iszSound in CAmbientGeneric should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_sSourceEntName) == 0x570, "m_sSourceEntName in CAmbientGeneric should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_hSoundSource) == 0x578, "m_hSoundSource in CAmbientGeneric should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CAmbientGeneric, m_nSoundSourceEntIndex) == 0x57C, "m_nSoundSourceEntIndex in CAmbientGeneric should be at offset 0x57C");
-		static_assert(sizeof(CS2::server::CAmbientGeneric) == 0x598, "CAmbientGeneric size should be 0x598");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_radius) == 0x4A8, "m_radius in CAmbientGeneric should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_flMaxRadius) == 0x4AC, "m_flMaxRadius in CAmbientGeneric should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_iSoundLevel) == 0x4B0, "m_iSoundLevel in CAmbientGeneric should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_dpv) == 0x4B4, "m_dpv in CAmbientGeneric should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_fActive) == 0x518, "m_fActive in CAmbientGeneric should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_fLooping) == 0x519, "m_fLooping in CAmbientGeneric should be at offset 0x519");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_iszSound) == 0x520, "m_iszSound in CAmbientGeneric should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_sSourceEntName) == 0x528, "m_sSourceEntName in CAmbientGeneric should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_hSoundSource) == 0x530, "m_hSoundSource in CAmbientGeneric should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CAmbientGeneric, m_nSoundSourceEntIndex) == 0x534, "m_nSoundSourceEntIndex in CAmbientGeneric should be at offset 0x534");
+		static_assert(sizeof(CS2::server::CAmbientGeneric) == 0x550, "CAmbientGeneric size should be 0x550");
 	}
 }

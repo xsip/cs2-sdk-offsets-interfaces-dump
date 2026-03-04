@@ -24,23 +24,23 @@ namespace CS2 {
 	namespace client {
 		class CPointOrient : public CS2::client::C_BaseEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszSpawnTargetName; // 0x5f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hTarget; // 0x600 | Schema_Atomic | Size: 0x4
-			// char  m_hTarget[0x4]; // 0x600 | Schema_Atomic | Size: 0x4
-			bool m_bActive; // 0x604 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszSpawnTargetName; // 0x608 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hTarget; // 0x610 | Schema_Atomic | Size: 0x4
+			// char m_hTarget[0x4]; // 0x610 | Schema_Atomic | Size: 0x4
+			bool m_bActive; // 0x614 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::PointOrientGoalDirectionType_t m_nGoalDirection; // 0x608 | Schema_DeclaredEnum | Size: 0x4
-			client::PointOrientConstraint_t m_nConstraint; // 0x60c | Schema_DeclaredEnum | Size: 0x4
-			float32 m_flMaxTurnRate; // 0x610 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flLastGameTime; // 0x614 | Schema_DeclaredClass | Size: 0x4
+			client::PointOrientGoalDirectionType_t m_nGoalDirection; // 0x618 | Schema_DeclaredEnum | Size: 0x4
+			client::PointOrientConstraint_t m_nConstraint; // 0x61c | Schema_DeclaredEnum | Size: 0x4
+			float32 m_flMaxTurnRate; // 0x620 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flLastGameTime; // 0x624 | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::CPointOrient, m_iszSpawnTargetName) == 0x5F8, "m_iszSpawnTargetName in CPointOrient should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::CPointOrient, m_hTarget) == 0x600, "m_hTarget in CPointOrient should be at offset 0x600");
-		static_assert(offsetof(CS2::client::CPointOrient, m_bActive) == 0x604, "m_bActive in CPointOrient should be at offset 0x604");
-		static_assert(offsetof(CS2::client::CPointOrient, m_nGoalDirection) == 0x608, "m_nGoalDirection in CPointOrient should be at offset 0x608");
-		static_assert(offsetof(CS2::client::CPointOrient, m_nConstraint) == 0x60C, "m_nConstraint in CPointOrient should be at offset 0x60C");
-		static_assert(offsetof(CS2::client::CPointOrient, m_flMaxTurnRate) == 0x610, "m_flMaxTurnRate in CPointOrient should be at offset 0x610");
-		static_assert(offsetof(CS2::client::CPointOrient, m_flLastGameTime) == 0x614, "m_flLastGameTime in CPointOrient should be at offset 0x614");
-		static_assert(sizeof(CS2::client::CPointOrient) == 0x618, "CPointOrient size should be 0x618");
+		static_assert(offsetof(CS2::client::CPointOrient, m_iszSpawnTargetName) == 0x608, "m_iszSpawnTargetName in CPointOrient should be at offset 0x608");
+		static_assert(offsetof(CS2::client::CPointOrient, m_hTarget) == 0x610, "m_hTarget in CPointOrient should be at offset 0x610");
+		static_assert(offsetof(CS2::client::CPointOrient, m_bActive) == 0x614, "m_bActive in CPointOrient should be at offset 0x614");
+		static_assert(offsetof(CS2::client::CPointOrient, m_nGoalDirection) == 0x618, "m_nGoalDirection in CPointOrient should be at offset 0x618");
+		static_assert(offsetof(CS2::client::CPointOrient, m_nConstraint) == 0x61C, "m_nConstraint in CPointOrient should be at offset 0x61C");
+		static_assert(offsetof(CS2::client::CPointOrient, m_flMaxTurnRate) == 0x620, "m_flMaxTurnRate in CPointOrient should be at offset 0x620");
+		static_assert(offsetof(CS2::client::CPointOrient, m_flLastGameTime) == 0x624, "m_flLastGameTime in CPointOrient should be at offset 0x624");
+		static_assert(sizeof(CS2::client::CPointOrient) == 0x628, "CPointOrient size should be 0x628");
 	}
 }

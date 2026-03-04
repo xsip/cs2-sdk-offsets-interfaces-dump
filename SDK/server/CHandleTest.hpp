@@ -21,13 +21,13 @@ namespace CS2 {
 	namespace server {
 		class CHandleTest : public CS2::server::CBaseEntity {
 		public:
-			GlobalTypes::CHandle<server::CBaseEntity> m_Handle; // 0x4f0 | Schema_Atomic | Size: 0x4
-			// char  m_Handle[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
-			bool m_bSendHandle; // 0x4f4 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseEntity> m_Handle; // 0x4a8 | Schema_Atomic | Size: 0x4
+			// char m_Handle[0x4]; // 0x4a8 | Schema_Atomic | Size: 0x4
+			bool m_bSendHandle; // 0x4ac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::server::CHandleTest, m_Handle) == 0x4F0, "m_Handle in CHandleTest should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CHandleTest, m_bSendHandle) == 0x4F4, "m_bSendHandle in CHandleTest should be at offset 0x4F4");
-		static_assert(sizeof(CS2::server::CHandleTest) == 0x4F8, "CHandleTest size should be 0x4F8");
+		static_assert(offsetof(CS2::server::CHandleTest, m_Handle) == 0x4A8, "m_Handle in CHandleTest should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CHandleTest, m_bSendHandle) == 0x4AC, "m_bSendHandle in CHandleTest should be at offset 0x4AC");
+		static_assert(sizeof(CS2::server::CHandleTest) == 0x4B0, "CHandleTest size should be 0x4B0");
 	}
 }

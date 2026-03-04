@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x50
+			// Class size: 0x20
 			namespace CAnimEventQueueListener /*: public CS2::client::CAnimEventListenerBase*/ {
 				// NO SCHEMA DATA FOUND!
 			}

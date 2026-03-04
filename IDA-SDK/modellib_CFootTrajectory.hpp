@@ -4,9 +4,9 @@
 
 
 class modellib_CFootTrajectory {
-    char vTable327[0x8];
+    void **__vftable_0;
     Vector m_vOffset;
     float32 m_flRotationOffset;
     float32 m_flProgression;
-    char end_pad_328[0x4];
+    char end_pad_330[0x4];
 };

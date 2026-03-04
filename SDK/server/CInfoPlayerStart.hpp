@@ -21,14 +21,14 @@ namespace CS2 {
 	namespace server {
 		class CInfoPlayerStart : public CS2::server::CPointEntity {
 		public:
-			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
-			bool m_bIsMaster; // 0x4f1 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x4a8 | Schema_Builtin | Size: 0x1
+			bool m_bIsMaster; // 0x4a9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CGlobalSymbol m_pPawnSubclass; // 0x4f8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CGlobalSymbol m_pPawnSubclass; // 0x4b0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_bDisabled) == 0x4F0, "m_bDisabled in CInfoPlayerStart should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_bIsMaster) == 0x4F1, "m_bIsMaster in CInfoPlayerStart should be at offset 0x4F1");
-		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_pPawnSubclass) == 0x4F8, "m_pPawnSubclass in CInfoPlayerStart should be at offset 0x4F8");
-		static_assert(sizeof(CS2::server::CInfoPlayerStart) == 0x500, "CInfoPlayerStart size should be 0x500");
+		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_bDisabled) == 0x4A8, "m_bDisabled in CInfoPlayerStart should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_bIsMaster) == 0x4A9, "m_bIsMaster in CInfoPlayerStart should be at offset 0x4A9");
+		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_pPawnSubclass) == 0x4B0, "m_pPawnSubclass in CInfoPlayerStart should be at offset 0x4B0");
+		static_assert(sizeof(CS2::server::CInfoPlayerStart) == 0x4B8, "CInfoPlayerStart size should be 0x4B8");
 	}
 }

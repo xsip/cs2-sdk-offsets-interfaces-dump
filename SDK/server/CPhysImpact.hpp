@@ -21,13 +21,13 @@ namespace CS2 {
 	namespace server {
 		class CPhysImpact : public CS2::server::CPointEntity {
 		public:
-			float32 m_damage; // 0x4f0 | Schema_Builtin | Size: 0x4
-			float32 m_distance; // 0x4f4 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_directionEntityName; // 0x4f8 | Schema_Atomic | Size: 0x8
+			float32 m_damage; // 0x4a8 | Schema_Builtin | Size: 0x4
+			float32 m_distance; // 0x4ac | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_directionEntityName; // 0x4b0 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CPhysImpact, m_damage) == 0x4F0, "m_damage in CPhysImpact should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPhysImpact, m_distance) == 0x4F4, "m_distance in CPhysImpact should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CPhysImpact, m_directionEntityName) == 0x4F8, "m_directionEntityName in CPhysImpact should be at offset 0x4F8");
-		static_assert(sizeof(CS2::server::CPhysImpact) == 0x500, "CPhysImpact size should be 0x500");
+		static_assert(offsetof(CS2::server::CPhysImpact, m_damage) == 0x4A8, "m_damage in CPhysImpact should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPhysImpact, m_distance) == 0x4AC, "m_distance in CPhysImpact should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CPhysImpact, m_directionEntityName) == 0x4B0, "m_directionEntityName in CPhysImpact should be at offset 0x4B0");
+		static_assert(sizeof(CS2::server::CPhysImpact) == 0x4B8, "CPhysImpact size should be 0x4B8");
 	}
 }

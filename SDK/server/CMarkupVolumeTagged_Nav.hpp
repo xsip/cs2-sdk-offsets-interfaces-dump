@@ -22,10 +22,10 @@ namespace CS2 {
 	namespace server {
 		class CMarkupVolumeTagged_Nav : public CS2::server::CMarkupVolumeTagged {
 		public:
-			server::NavScopeFlags_t m_nScopes; // 0x818 | Schema_DeclaredEnum | Size: 0x1
+			server::NavScopeFlags_t m_nScopes; // 0x770 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_Nav, m_nScopes) == 0x818, "m_nScopes in CMarkupVolumeTagged_Nav should be at offset 0x818");
-		static_assert(sizeof(CS2::server::CMarkupVolumeTagged_Nav) == 0x820, "CMarkupVolumeTagged_Nav size should be 0x820");
+		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_Nav, m_nScopes) == 0x770, "m_nScopes in CMarkupVolumeTagged_Nav should be at offset 0x770");
+		static_assert(sizeof(CS2::server::CMarkupVolumeTagged_Nav) == 0x778, "CMarkupVolumeTagged_Nav size should be 0x778");
 	}
 }

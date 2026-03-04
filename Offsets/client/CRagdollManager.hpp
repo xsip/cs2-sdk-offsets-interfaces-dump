@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x600
+			// Class size: 0x610
 			namespace CRagdollManager /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_iCurrentMaxRagdollCount = 0x5f8; // int8_t m_iCurrentMaxRagdollCount; |  0x5f8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iCurrentMaxRagdollCount = 0x608; // int8_t m_iCurrentMaxRagdollCount; |  0x608 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

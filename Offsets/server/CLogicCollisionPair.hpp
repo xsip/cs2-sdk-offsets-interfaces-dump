@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x508
+			// Class size: 0x4C0
 			namespace CLogicCollisionPair /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_nameAttach1 = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAttach2 = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_includeHierarchy = 0x500; // bool m_includeHierarchy; |  0x500 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_supportMultipleEntitiesWithSameName = 0x501; // bool m_supportMultipleEntitiesWithSameName; |  0x501 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_disabled = 0x502; // bool m_disabled; |  0x502 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_succeeded = 0x503; // bool m_succeeded; |  0x503 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nameAttach1 = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAttach2 = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_includeHierarchy = 0x4b8; // bool m_includeHierarchy; |  0x4b8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_supportMultipleEntitiesWithSameName = 0x4b9; // bool m_supportMultipleEntitiesWithSameName; |  0x4b9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_disabled = 0x4ba; // bool m_disabled; |  0x4ba | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_succeeded = 0x4bb; // bool m_succeeded; |  0x4bb | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

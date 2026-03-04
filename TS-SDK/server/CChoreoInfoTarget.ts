@@ -1,0 +1,9 @@
+// generated - do not edit!
+
+import {server_CPointEntity} from './CPointEntity';
+// Class size: 0x4A8
+// BaseClass: : public CS2::server::CPointEntity
+export const server_CChoreoInfoTarget  = {
+	...server_CPointEntity,
+	// NO SCHEMA DATA FOUND!
+}

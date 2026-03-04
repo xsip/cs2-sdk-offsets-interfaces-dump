@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x2040
+			// Class size: 0x2090
 			namespace CBodyComponentBaseAnimGraph /*: public CS2::client::CBodyComponentSkeletonInstance*/ {
-				constexpr std::ptrdiff_t m_animationController = 0x5b0; // client::CBaseAnimGraphController  | Schema_DeclaredClass | Size: 0x1a90
+				constexpr std::ptrdiff_t m_animationController = 0x550; // client::CBaseAnimGraphController  | Schema_DeclaredClass | Size: 0x1b38
 			}
 		}
 	}

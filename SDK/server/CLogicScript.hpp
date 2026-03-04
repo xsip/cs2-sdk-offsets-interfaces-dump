@@ -22,6 +22,6 @@ namespace CS2 {
 		class CLogicScript : public CS2::server::CPointEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CLogicScript) == 0x4F0, "CLogicScript size should be 0x4F0");
+		static_assert(sizeof(CS2::server::CLogicScript) == 0x4A8, "CLogicScript size should be 0x4A8");
 	}
 }

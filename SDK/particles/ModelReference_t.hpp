@@ -21,7 +21,7 @@ namespace CS2 {
 		class ModelReference_t  {
 		public:
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_model; // 0x0 | Schema_Atomic | Size: 0x8
-			char  m_model[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
+			char m_model[0x8]; // 0x0 | Schema_Atomic | Size: 0x8
 			float32 m_flRelativeProbabilityOfSpawn; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

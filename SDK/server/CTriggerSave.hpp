@@ -21,15 +21,15 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSave : public CS2::server::CBaseTrigger {
 		public:
-			bool m_bForceNewLevelUnit; // 0x9a8 | Schema_Builtin | Size: 0x1
+			bool m_bForceNewLevelUnit; // 0x890 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_fDangerousTimer; // 0x9ac | Schema_Builtin | Size: 0x4
-			int32_t m_minHitPoints; // 0x9b0 | Schema_Builtin | Size: 0x4
+			float32 m_fDangerousTimer; // 0x894 | Schema_Builtin | Size: 0x4
+			int32_t m_minHitPoints; // 0x898 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTriggerSave, m_bForceNewLevelUnit) == 0x9A8, "m_bForceNewLevelUnit in CTriggerSave should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerSave, m_fDangerousTimer) == 0x9AC, "m_fDangerousTimer in CTriggerSave should be at offset 0x9AC");
-		static_assert(offsetof(CS2::server::CTriggerSave, m_minHitPoints) == 0x9B0, "m_minHitPoints in CTriggerSave should be at offset 0x9B0");
-		static_assert(sizeof(CS2::server::CTriggerSave) == 0x9B8, "CTriggerSave size should be 0x9B8");
+		static_assert(offsetof(CS2::server::CTriggerSave, m_bForceNewLevelUnit) == 0x890, "m_bForceNewLevelUnit in CTriggerSave should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerSave, m_fDangerousTimer) == 0x894, "m_fDangerousTimer in CTriggerSave should be at offset 0x894");
+		static_assert(offsetof(CS2::server::CTriggerSave, m_minHitPoints) == 0x898, "m_minHitPoints in CTriggerSave should be at offset 0x898");
+		static_assert(sizeof(CS2::server::CTriggerSave) == 0x8A0, "CTriggerSave size should be 0x8A0");
 	}
 }

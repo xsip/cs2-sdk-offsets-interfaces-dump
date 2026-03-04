@@ -16,8 +16,11 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nEntityId = 0x20; // uint32_t m_nEntityId; |  0x20 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nOwnerId = 0x24; // uint32_t m_nOwnerId; |  0x24 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_nHierarchyId = 0x28; // uint16_t m_nHierarchyId; |  0x28 | Schema_Builtin | Size: 0x2
-				constexpr std::ptrdiff_t m_nCollisionGroup = 0x2a; // uint8_t m_nCollisionGroup; |  0x2a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nCollisionFunctionMask = 0x2b; // uint8_t m_nCollisionFunctionMask; |  0x2b | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nDetailLayerMask = 0x2a; // uint16_t m_nDetailLayerMask; |  0x2a | Schema_Builtin | Size: 0x2
+				constexpr std::ptrdiff_t m_nDetailLayerMaskType = 0x2c; // uint8_t m_nDetailLayerMaskType; |  0x2c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nTargetDetailLayer = 0x2d; // uint8_t m_nTargetDetailLayer; |  0x2d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nCollisionGroup = 0x2e; // uint8_t m_nCollisionGroup; |  0x2e | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nCollisionFunctionMask = 0x2f; // uint8_t m_nCollisionFunctionMask; |  0x2f | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

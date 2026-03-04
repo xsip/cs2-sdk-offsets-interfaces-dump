@@ -34,171 +34,171 @@ namespace CS2 {
 	namespace server {
 		class CScriptedSequence : public CS2::server::CBaseEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszEntry; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszPreIdle; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszPlay; // 0x500 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszPostIdle; // 0x508 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszModifierToAddOnPlay; // 0x510 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszNextScript; // 0x518 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszEntity; // 0x520 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSyncGroup; // 0x528 | Schema_Atomic | Size: 0x8
-			modellib::ScriptedMoveTo_t m_nMoveTo; // 0x530 | Schema_DeclaredEnum | Size: 0x4
-			modellib::SharedMovementGait_t m_nMoveToGait; // 0x534 | Schema_DeclaredEnum | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszEntry; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszPreIdle; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszPlay; // 0x4b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszPostIdle; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszModifierToAddOnPlay; // 0x4c8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszNextScript; // 0x4d0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszEntity; // 0x4d8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSyncGroup; // 0x4e0 | Schema_Atomic | Size: 0x8
+			modellib::ScriptedMoveTo_t m_nMoveTo; // 0x4e8 | Schema_DeclaredEnum | Size: 0x4
+			modellib::SharedMovementGait_t m_nMoveToGait; // 0x4ec | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3);
-			modellib::ScriptedHeldWeaponBehavior_t m_nHeldWeaponBehavior; // 0x538 | Schema_DeclaredEnum | Size: 0x4
-			client::ForcedCrouchState_t m_nForcedCrouchState; // 0x53c | Schema_DeclaredEnum | Size: 0x4
-			bool m_bIsPlayingPreIdle; // 0x540 | Schema_Builtin | Size: 0x1
-			bool m_bIsPlayingEntry; // 0x541 | Schema_Builtin | Size: 0x1
-			bool m_bIsPlayingAction; // 0x542 | Schema_Builtin | Size: 0x1
-			bool m_bIsPlayingPostIdle; // 0x543 | Schema_Builtin | Size: 0x1
-			bool m_bDontRotateOther; // 0x544 | Schema_Builtin | Size: 0x1
-			bool m_bIsRepeatable; // 0x545 | Schema_Builtin | Size: 0x1
-			bool m_bShouldLeaveCorpse; // 0x546 | Schema_Builtin | Size: 0x1
-			bool m_bStartOnSpawn; // 0x547 | Schema_Builtin | Size: 0x1
-			bool m_bDisallowInterrupts; // 0x548 | Schema_Builtin | Size: 0x1
-			bool m_bCanOverrideNPCState; // 0x549 | Schema_Builtin | Size: 0x1
-			bool m_bDontTeleportAtEnd; // 0x54a | Schema_Builtin | Size: 0x1
-			bool m_bHighPriority; // 0x54b | Schema_Builtin | Size: 0x1
-			bool m_bHideDebugComplaints; // 0x54c | Schema_Builtin | Size: 0x1
-			bool m_bContinueOnDeath; // 0x54d | Schema_Builtin | Size: 0x1
-			bool m_bLoopPreIdleSequence; // 0x54e | Schema_Builtin | Size: 0x1
-			bool m_bLoopActionSequence; // 0x54f | Schema_Builtin | Size: 0x1
-			bool m_bLoopPostIdleSequence; // 0x550 | Schema_Builtin | Size: 0x1
-			bool m_bSynchPostIdles; // 0x551 | Schema_Builtin | Size: 0x1
-			bool m_bIgnoreLookAt; // 0x552 | Schema_Builtin | Size: 0x1
-			bool m_bIgnoreGravity; // 0x553 | Schema_Builtin | Size: 0x1
-			bool m_bDisableNPCCollisions; // 0x554 | Schema_Builtin | Size: 0x1
-			bool m_bKeepAnimgraphLockedPost; // 0x555 | Schema_Builtin | Size: 0x1
-			bool m_bDontAddModifiers; // 0x556 | Schema_Builtin | Size: 0x1
-			bool m_bDisableAimingWhileMoving; // 0x557 | Schema_Builtin | Size: 0x1
-			bool m_bIgnoreRotation; // 0x558 | Schema_Builtin | Size: 0x1
+			modellib::ScriptedHeldWeaponBehavior_t m_nHeldWeaponBehavior; // 0x4f0 | Schema_DeclaredEnum | Size: 0x4
+			client::ForcedCrouchState_t m_nForcedCrouchState; // 0x4f4 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bIsPlayingPreIdle; // 0x4f8 | Schema_Builtin | Size: 0x1
+			bool m_bIsPlayingEntry; // 0x4f9 | Schema_Builtin | Size: 0x1
+			bool m_bIsPlayingAction; // 0x4fa | Schema_Builtin | Size: 0x1
+			bool m_bIsPlayingPostIdle; // 0x4fb | Schema_Builtin | Size: 0x1
+			bool m_bDontRotateOther; // 0x4fc | Schema_Builtin | Size: 0x1
+			bool m_bIsRepeatable; // 0x4fd | Schema_Builtin | Size: 0x1
+			bool m_bShouldLeaveCorpse; // 0x4fe | Schema_Builtin | Size: 0x1
+			bool m_bStartOnSpawn; // 0x4ff | Schema_Builtin | Size: 0x1
+			bool m_bDisallowInterrupts; // 0x500 | Schema_Builtin | Size: 0x1
+			bool m_bCanOverrideNPCState; // 0x501 | Schema_Builtin | Size: 0x1
+			bool m_bDontTeleportAtEnd; // 0x502 | Schema_Builtin | Size: 0x1
+			bool m_bHighPriority; // 0x503 | Schema_Builtin | Size: 0x1
+			bool m_bHideDebugComplaints; // 0x504 | Schema_Builtin | Size: 0x1
+			bool m_bContinueOnDeath; // 0x505 | Schema_Builtin | Size: 0x1
+			bool m_bLoopPreIdleSequence; // 0x506 | Schema_Builtin | Size: 0x1
+			bool m_bLoopActionSequence; // 0x507 | Schema_Builtin | Size: 0x1
+			bool m_bLoopPostIdleSequence; // 0x508 | Schema_Builtin | Size: 0x1
+			bool m_bSynchPostIdles; // 0x509 | Schema_Builtin | Size: 0x1
+			bool m_bIgnoreLookAt; // 0x50a | Schema_Builtin | Size: 0x1
+			bool m_bIgnoreGravity; // 0x50b | Schema_Builtin | Size: 0x1
+			bool m_bDisableNPCCollisions; // 0x50c | Schema_Builtin | Size: 0x1
+			bool m_bKeepAnimgraphLockedPost; // 0x50d | Schema_Builtin | Size: 0x1
+			bool m_bDontAddModifiers; // 0x50e | Schema_Builtin | Size: 0x1
+			bool m_bDisableAimingWhileMoving; // 0x50f | Schema_Builtin | Size: 0x1
+			bool m_bIgnoreRotation; // 0x510 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flRadius; // 0x55c | Schema_Builtin | Size: 0x4
-			float32 m_flRepeat; // 0x560 | Schema_Builtin | Size: 0x4
-			float32 m_flPlayAnimFadeInTime; // 0x564 | Schema_Builtin | Size: 0x4
-			float32 m_flMoveInterpTime; // 0x568 | Schema_Builtin | Size: 0x4
-			float32 m_flAngRate; // 0x56c | Schema_Builtin | Size: 0x4
-			float32 m_flMoveSpeed; // 0x570 | Schema_Builtin | Size: 0x4
-			bool m_bWaitUntilMoveCompletesToStartAnimation; // 0x574 | Schema_Builtin | Size: 0x1
+			float32 m_flRadius; // 0x514 | Schema_Builtin | Size: 0x4
+			float32 m_flRepeat; // 0x518 | Schema_Builtin | Size: 0x4
+			float32 m_flPlayAnimFadeInTime; // 0x51c | Schema_Builtin | Size: 0x4
+			float32 m_flMoveInterpTime; // 0x520 | Schema_Builtin | Size: 0x4
+			float32 m_flAngRate; // 0x524 | Schema_Builtin | Size: 0x4
+			float32 m_flMoveSpeed; // 0x528 | Schema_Builtin | Size: 0x4
+			bool m_bWaitUntilMoveCompletesToStartAnimation; // 0x52c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nNotReadySequenceCount; // 0x578 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_startTime; // 0x57c | Schema_DeclaredClass | Size: 0x4
-			bool m_bWaitForBeginSequence; // 0x580 | Schema_Builtin | Size: 0x1
+			int32_t m_nNotReadySequenceCount; // 0x530 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_startTime; // 0x534 | Schema_DeclaredClass | Size: 0x4
+			bool m_bWaitForBeginSequence; // 0x538 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_saved_effects; // 0x584 | Schema_Builtin | Size: 0x4
-			int32_t m_savedFlags; // 0x588 | Schema_Builtin | Size: 0x4
-			int32_t m_savedCollisionGroup; // 0x58c | Schema_Builtin | Size: 0x4
-			bool m_bInterruptable; // 0x590 | Schema_Builtin | Size: 0x1
-			bool m_sequenceStarted; // 0x591 | Schema_Builtin | Size: 0x1
-			bool m_bPositionRelativeToOtherEntity; // 0x592 | Schema_Builtin | Size: 0x1
+			int32_t m_saved_effects; // 0x53c | Schema_Builtin | Size: 0x4
+			int32_t m_savedFlags; // 0x540 | Schema_Builtin | Size: 0x4
+			int32_t m_savedCollisionGroup; // 0x544 | Schema_Builtin | Size: 0x4
+			bool m_bInterruptable; // 0x548 | Schema_Builtin | Size: 0x1
+			bool m_sequenceStarted; // 0x549 | Schema_Builtin | Size: 0x1
+			bool m_bPositionRelativeToOtherEntity; // 0x54a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEnt; // 0x594 | Schema_Atomic | Size: 0x4
-			// char  m_hTargetEnt[0x4]; // 0x594 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CScriptedSequence> m_hNextCine; // 0x598 | Schema_Atomic | Size: 0x4
-			// char  m_hNextCine[0x4]; // 0x598 | Schema_Atomic | Size: 0x4
-			bool m_bThinking; // 0x59c | Schema_Builtin | Size: 0x1
-			bool m_bInitiatedSelfDelete; // 0x59d | Schema_Builtin | Size: 0x1
-			bool m_bIsTeleportingDueToMoveTo; // 0x59e | Schema_Builtin | Size: 0x1
-			bool m_bAllowCustomInterruptConditions; // 0x59f | Schema_Builtin | Size: 0x1
-			GlobalTypes::CHandle<server::CBaseAnimGraph> m_hForcedTarget; // 0x5a0 | Schema_Atomic | Size: 0x4
-			// char  m_hForcedTarget[0x4]; // 0x5a0 | Schema_Atomic | Size: 0x4
-			bool m_bDontCancelOtherSequences; // 0x5a4 | Schema_Builtin | Size: 0x1
-			bool m_bForceSynch; // 0x5a5 | Schema_Builtin | Size: 0x1
-			bool m_bPreventUpdateYawOnFinish; // 0x5a6 | Schema_Builtin | Size: 0x1
-			bool m_bEnsureOnNavmeshOnFinish; // 0x5a7 | Schema_Builtin | Size: 0x1
-			client::ScriptedOnDeath_t m_onDeathBehavior; // 0x5a8 | Schema_DeclaredEnum | Size: 0x4
-			server::ScriptedConflictResponse_t m_ConflictResponse; // 0x5ac | Schema_DeclaredEnum | Size: 0x4
-			entity2::CEntityIOOutput m_OnBeginSequence; // 0x5b0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnActionStartOrLoop; // 0x5d8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnEndSequence; // 0x600 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPostIdleEndSequence; // 0x628 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnCancelSequence; // 0x650 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnCancelFailedSequence; // 0x678 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnScriptEvent[8]; // 0x6a0 | Schema_FixedArray | Size: 0xa00
-			GlobalTypes::CTransform m_matOtherToMain; // 0x7e0 | Schema_Atomic | Size: 0x20
-			GlobalTypes::CHandle<server::CBaseEntity> m_hInteractionMainEntity; // 0x800 | Schema_Atomic | Size: 0x4
-			// char  m_hInteractionMainEntity[0x4]; // 0x800 | Schema_Atomic | Size: 0x4
-			int32_t m_iPlayerDeathBehavior; // 0x804 | Schema_Builtin | Size: 0x4
-			bool m_bSkipFadeIn; // 0x808 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEnt; // 0x54c | Schema_Atomic | Size: 0x4
+			// char m_hTargetEnt[0x4]; // 0x54c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CScriptedSequence> m_hNextCine; // 0x550 | Schema_Atomic | Size: 0x4
+			// char m_hNextCine[0x4]; // 0x550 | Schema_Atomic | Size: 0x4
+			bool m_bThinking; // 0x554 | Schema_Builtin | Size: 0x1
+			bool m_bInitiatedSelfDelete; // 0x555 | Schema_Builtin | Size: 0x1
+			bool m_bIsTeleportingDueToMoveTo; // 0x556 | Schema_Builtin | Size: 0x1
+			bool m_bAllowCustomInterruptConditions; // 0x557 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CBaseAnimGraph> m_hForcedTarget; // 0x558 | Schema_Atomic | Size: 0x4
+			// char m_hForcedTarget[0x4]; // 0x558 | Schema_Atomic | Size: 0x4
+			bool m_bDontCancelOtherSequences; // 0x55c | Schema_Builtin | Size: 0x1
+			bool m_bForceSynch; // 0x55d | Schema_Builtin | Size: 0x1
+			bool m_bPreventUpdateYawOnFinish; // 0x55e | Schema_Builtin | Size: 0x1
+			bool m_bEnsureOnNavmeshOnFinish; // 0x55f | Schema_Builtin | Size: 0x1
+			client::ScriptedOnDeath_t m_onDeathBehavior; // 0x560 | Schema_DeclaredEnum | Size: 0x4
+			server::ScriptedConflictResponse_t m_ConflictResponse; // 0x564 | Schema_DeclaredEnum | Size: 0x4
+			entity2::CEntityIOOutput m_OnBeginSequence; // 0x568 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnActionStartOrLoop; // 0x580 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnEndSequence; // 0x598 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnPostIdleEndSequence; // 0x5b0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnCancelSequence; // 0x5c8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnCancelFailedSequence; // 0x5e0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnScriptEvent[8]; // 0x5f8 | Schema_FixedArray | Size: 0x600
+			GlobalTypes::CTransform m_matOtherToMain; // 0x6c0 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CHandle<server::CBaseEntity> m_hInteractionMainEntity; // 0x6e0 | Schema_Atomic | Size: 0x4
+			// char m_hInteractionMainEntity[0x4]; // 0x6e0 | Schema_Atomic | Size: 0x4
+			int32_t m_iPlayerDeathBehavior; // 0x6e4 | Schema_Builtin | Size: 0x4
+			bool m_bSkipFadeIn; // 0x6e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszEntry) == 0x4F0, "m_iszEntry in CScriptedSequence should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPreIdle) == 0x4F8, "m_iszPreIdle in CScriptedSequence should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPlay) == 0x500, "m_iszPlay in CScriptedSequence should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPostIdle) == 0x508, "m_iszPostIdle in CScriptedSequence should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszModifierToAddOnPlay) == 0x510, "m_iszModifierToAddOnPlay in CScriptedSequence should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszNextScript) == 0x518, "m_iszNextScript in CScriptedSequence should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszEntity) == 0x520, "m_iszEntity in CScriptedSequence should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszSyncGroup) == 0x528, "m_iszSyncGroup in CScriptedSequence should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_nMoveTo) == 0x530, "m_nMoveTo in CScriptedSequence should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_nMoveToGait) == 0x534, "m_nMoveToGait in CScriptedSequence should be at offset 0x534");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_nHeldWeaponBehavior) == 0x538, "m_nHeldWeaponBehavior in CScriptedSequence should be at offset 0x538");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_nForcedCrouchState) == 0x53C, "m_nForcedCrouchState in CScriptedSequence should be at offset 0x53C");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingPreIdle) == 0x540, "m_bIsPlayingPreIdle in CScriptedSequence should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingEntry) == 0x541, "m_bIsPlayingEntry in CScriptedSequence should be at offset 0x541");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingAction) == 0x542, "m_bIsPlayingAction in CScriptedSequence should be at offset 0x542");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingPostIdle) == 0x543, "m_bIsPlayingPostIdle in CScriptedSequence should be at offset 0x543");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontRotateOther) == 0x544, "m_bDontRotateOther in CScriptedSequence should be at offset 0x544");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsRepeatable) == 0x545, "m_bIsRepeatable in CScriptedSequence should be at offset 0x545");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bShouldLeaveCorpse) == 0x546, "m_bShouldLeaveCorpse in CScriptedSequence should be at offset 0x546");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bStartOnSpawn) == 0x547, "m_bStartOnSpawn in CScriptedSequence should be at offset 0x547");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDisallowInterrupts) == 0x548, "m_bDisallowInterrupts in CScriptedSequence should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bCanOverrideNPCState) == 0x549, "m_bCanOverrideNPCState in CScriptedSequence should be at offset 0x549");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontTeleportAtEnd) == 0x54A, "m_bDontTeleportAtEnd in CScriptedSequence should be at offset 0x54A");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bHighPriority) == 0x54B, "m_bHighPriority in CScriptedSequence should be at offset 0x54B");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bHideDebugComplaints) == 0x54C, "m_bHideDebugComplaints in CScriptedSequence should be at offset 0x54C");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bContinueOnDeath) == 0x54D, "m_bContinueOnDeath in CScriptedSequence should be at offset 0x54D");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bLoopPreIdleSequence) == 0x54E, "m_bLoopPreIdleSequence in CScriptedSequence should be at offset 0x54E");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bLoopActionSequence) == 0x54F, "m_bLoopActionSequence in CScriptedSequence should be at offset 0x54F");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bLoopPostIdleSequence) == 0x550, "m_bLoopPostIdleSequence in CScriptedSequence should be at offset 0x550");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bSynchPostIdles) == 0x551, "m_bSynchPostIdles in CScriptedSequence should be at offset 0x551");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIgnoreLookAt) == 0x552, "m_bIgnoreLookAt in CScriptedSequence should be at offset 0x552");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIgnoreGravity) == 0x553, "m_bIgnoreGravity in CScriptedSequence should be at offset 0x553");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDisableNPCCollisions) == 0x554, "m_bDisableNPCCollisions in CScriptedSequence should be at offset 0x554");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bKeepAnimgraphLockedPost) == 0x555, "m_bKeepAnimgraphLockedPost in CScriptedSequence should be at offset 0x555");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontAddModifiers) == 0x556, "m_bDontAddModifiers in CScriptedSequence should be at offset 0x556");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDisableAimingWhileMoving) == 0x557, "m_bDisableAimingWhileMoving in CScriptedSequence should be at offset 0x557");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIgnoreRotation) == 0x558, "m_bIgnoreRotation in CScriptedSequence should be at offset 0x558");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_flRadius) == 0x55C, "m_flRadius in CScriptedSequence should be at offset 0x55C");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_flRepeat) == 0x560, "m_flRepeat in CScriptedSequence should be at offset 0x560");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_flPlayAnimFadeInTime) == 0x564, "m_flPlayAnimFadeInTime in CScriptedSequence should be at offset 0x564");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_flMoveInterpTime) == 0x568, "m_flMoveInterpTime in CScriptedSequence should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_flAngRate) == 0x56C, "m_flAngRate in CScriptedSequence should be at offset 0x56C");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_flMoveSpeed) == 0x570, "m_flMoveSpeed in CScriptedSequence should be at offset 0x570");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bWaitUntilMoveCompletesToStartAnimation) == 0x574, "m_bWaitUntilMoveCompletesToStartAnimation in CScriptedSequence should be at offset 0x574");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_nNotReadySequenceCount) == 0x578, "m_nNotReadySequenceCount in CScriptedSequence should be at offset 0x578");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_startTime) == 0x57C, "m_startTime in CScriptedSequence should be at offset 0x57C");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bWaitForBeginSequence) == 0x580, "m_bWaitForBeginSequence in CScriptedSequence should be at offset 0x580");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_saved_effects) == 0x584, "m_saved_effects in CScriptedSequence should be at offset 0x584");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_savedFlags) == 0x588, "m_savedFlags in CScriptedSequence should be at offset 0x588");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_savedCollisionGroup) == 0x58C, "m_savedCollisionGroup in CScriptedSequence should be at offset 0x58C");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bInterruptable) == 0x590, "m_bInterruptable in CScriptedSequence should be at offset 0x590");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_sequenceStarted) == 0x591, "m_sequenceStarted in CScriptedSequence should be at offset 0x591");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bPositionRelativeToOtherEntity) == 0x592, "m_bPositionRelativeToOtherEntity in CScriptedSequence should be at offset 0x592");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_hTargetEnt) == 0x594, "m_hTargetEnt in CScriptedSequence should be at offset 0x594");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_hNextCine) == 0x598, "m_hNextCine in CScriptedSequence should be at offset 0x598");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bThinking) == 0x59C, "m_bThinking in CScriptedSequence should be at offset 0x59C");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bInitiatedSelfDelete) == 0x59D, "m_bInitiatedSelfDelete in CScriptedSequence should be at offset 0x59D");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsTeleportingDueToMoveTo) == 0x59E, "m_bIsTeleportingDueToMoveTo in CScriptedSequence should be at offset 0x59E");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bAllowCustomInterruptConditions) == 0x59F, "m_bAllowCustomInterruptConditions in CScriptedSequence should be at offset 0x59F");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_hForcedTarget) == 0x5A0, "m_hForcedTarget in CScriptedSequence should be at offset 0x5A0");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontCancelOtherSequences) == 0x5A4, "m_bDontCancelOtherSequences in CScriptedSequence should be at offset 0x5A4");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bForceSynch) == 0x5A5, "m_bForceSynch in CScriptedSequence should be at offset 0x5A5");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bPreventUpdateYawOnFinish) == 0x5A6, "m_bPreventUpdateYawOnFinish in CScriptedSequence should be at offset 0x5A6");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bEnsureOnNavmeshOnFinish) == 0x5A7, "m_bEnsureOnNavmeshOnFinish in CScriptedSequence should be at offset 0x5A7");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_onDeathBehavior) == 0x5A8, "m_onDeathBehavior in CScriptedSequence should be at offset 0x5A8");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_ConflictResponse) == 0x5AC, "m_ConflictResponse in CScriptedSequence should be at offset 0x5AC");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnBeginSequence) == 0x5B0, "m_OnBeginSequence in CScriptedSequence should be at offset 0x5B0");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnActionStartOrLoop) == 0x5D8, "m_OnActionStartOrLoop in CScriptedSequence should be at offset 0x5D8");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnEndSequence) == 0x600, "m_OnEndSequence in CScriptedSequence should be at offset 0x600");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnPostIdleEndSequence) == 0x628, "m_OnPostIdleEndSequence in CScriptedSequence should be at offset 0x628");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnCancelSequence) == 0x650, "m_OnCancelSequence in CScriptedSequence should be at offset 0x650");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnCancelFailedSequence) == 0x678, "m_OnCancelFailedSequence in CScriptedSequence should be at offset 0x678");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnScriptEvent) == 0x6A0, "m_OnScriptEvent in CScriptedSequence should be at offset 0x6A0");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_matOtherToMain) == 0x7E0, "m_matOtherToMain in CScriptedSequence should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_hInteractionMainEntity) == 0x800, "m_hInteractionMainEntity in CScriptedSequence should be at offset 0x800");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_iPlayerDeathBehavior) == 0x804, "m_iPlayerDeathBehavior in CScriptedSequence should be at offset 0x804");
-		static_assert(offsetof(CS2::server::CScriptedSequence, m_bSkipFadeIn) == 0x808, "m_bSkipFadeIn in CScriptedSequence should be at offset 0x808");
-		static_assert(sizeof(CS2::server::CScriptedSequence) == 0x810, "CScriptedSequence size should be 0x810");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszEntry) == 0x4A8, "m_iszEntry in CScriptedSequence should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPreIdle) == 0x4B0, "m_iszPreIdle in CScriptedSequence should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPlay) == 0x4B8, "m_iszPlay in CScriptedSequence should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPostIdle) == 0x4C0, "m_iszPostIdle in CScriptedSequence should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszModifierToAddOnPlay) == 0x4C8, "m_iszModifierToAddOnPlay in CScriptedSequence should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszNextScript) == 0x4D0, "m_iszNextScript in CScriptedSequence should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszEntity) == 0x4D8, "m_iszEntity in CScriptedSequence should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszSyncGroup) == 0x4E0, "m_iszSyncGroup in CScriptedSequence should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_nMoveTo) == 0x4E8, "m_nMoveTo in CScriptedSequence should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_nMoveToGait) == 0x4EC, "m_nMoveToGait in CScriptedSequence should be at offset 0x4EC");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_nHeldWeaponBehavior) == 0x4F0, "m_nHeldWeaponBehavior in CScriptedSequence should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_nForcedCrouchState) == 0x4F4, "m_nForcedCrouchState in CScriptedSequence should be at offset 0x4F4");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingPreIdle) == 0x4F8, "m_bIsPlayingPreIdle in CScriptedSequence should be at offset 0x4F8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingEntry) == 0x4F9, "m_bIsPlayingEntry in CScriptedSequence should be at offset 0x4F9");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingAction) == 0x4FA, "m_bIsPlayingAction in CScriptedSequence should be at offset 0x4FA");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsPlayingPostIdle) == 0x4FB, "m_bIsPlayingPostIdle in CScriptedSequence should be at offset 0x4FB");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontRotateOther) == 0x4FC, "m_bDontRotateOther in CScriptedSequence should be at offset 0x4FC");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsRepeatable) == 0x4FD, "m_bIsRepeatable in CScriptedSequence should be at offset 0x4FD");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bShouldLeaveCorpse) == 0x4FE, "m_bShouldLeaveCorpse in CScriptedSequence should be at offset 0x4FE");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bStartOnSpawn) == 0x4FF, "m_bStartOnSpawn in CScriptedSequence should be at offset 0x4FF");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDisallowInterrupts) == 0x500, "m_bDisallowInterrupts in CScriptedSequence should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bCanOverrideNPCState) == 0x501, "m_bCanOverrideNPCState in CScriptedSequence should be at offset 0x501");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontTeleportAtEnd) == 0x502, "m_bDontTeleportAtEnd in CScriptedSequence should be at offset 0x502");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bHighPriority) == 0x503, "m_bHighPriority in CScriptedSequence should be at offset 0x503");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bHideDebugComplaints) == 0x504, "m_bHideDebugComplaints in CScriptedSequence should be at offset 0x504");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bContinueOnDeath) == 0x505, "m_bContinueOnDeath in CScriptedSequence should be at offset 0x505");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bLoopPreIdleSequence) == 0x506, "m_bLoopPreIdleSequence in CScriptedSequence should be at offset 0x506");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bLoopActionSequence) == 0x507, "m_bLoopActionSequence in CScriptedSequence should be at offset 0x507");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bLoopPostIdleSequence) == 0x508, "m_bLoopPostIdleSequence in CScriptedSequence should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bSynchPostIdles) == 0x509, "m_bSynchPostIdles in CScriptedSequence should be at offset 0x509");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIgnoreLookAt) == 0x50A, "m_bIgnoreLookAt in CScriptedSequence should be at offset 0x50A");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIgnoreGravity) == 0x50B, "m_bIgnoreGravity in CScriptedSequence should be at offset 0x50B");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDisableNPCCollisions) == 0x50C, "m_bDisableNPCCollisions in CScriptedSequence should be at offset 0x50C");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bKeepAnimgraphLockedPost) == 0x50D, "m_bKeepAnimgraphLockedPost in CScriptedSequence should be at offset 0x50D");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontAddModifiers) == 0x50E, "m_bDontAddModifiers in CScriptedSequence should be at offset 0x50E");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDisableAimingWhileMoving) == 0x50F, "m_bDisableAimingWhileMoving in CScriptedSequence should be at offset 0x50F");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIgnoreRotation) == 0x510, "m_bIgnoreRotation in CScriptedSequence should be at offset 0x510");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_flRadius) == 0x514, "m_flRadius in CScriptedSequence should be at offset 0x514");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_flRepeat) == 0x518, "m_flRepeat in CScriptedSequence should be at offset 0x518");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_flPlayAnimFadeInTime) == 0x51C, "m_flPlayAnimFadeInTime in CScriptedSequence should be at offset 0x51C");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_flMoveInterpTime) == 0x520, "m_flMoveInterpTime in CScriptedSequence should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_flAngRate) == 0x524, "m_flAngRate in CScriptedSequence should be at offset 0x524");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_flMoveSpeed) == 0x528, "m_flMoveSpeed in CScriptedSequence should be at offset 0x528");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bWaitUntilMoveCompletesToStartAnimation) == 0x52C, "m_bWaitUntilMoveCompletesToStartAnimation in CScriptedSequence should be at offset 0x52C");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_nNotReadySequenceCount) == 0x530, "m_nNotReadySequenceCount in CScriptedSequence should be at offset 0x530");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_startTime) == 0x534, "m_startTime in CScriptedSequence should be at offset 0x534");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bWaitForBeginSequence) == 0x538, "m_bWaitForBeginSequence in CScriptedSequence should be at offset 0x538");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_saved_effects) == 0x53C, "m_saved_effects in CScriptedSequence should be at offset 0x53C");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_savedFlags) == 0x540, "m_savedFlags in CScriptedSequence should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_savedCollisionGroup) == 0x544, "m_savedCollisionGroup in CScriptedSequence should be at offset 0x544");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bInterruptable) == 0x548, "m_bInterruptable in CScriptedSequence should be at offset 0x548");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_sequenceStarted) == 0x549, "m_sequenceStarted in CScriptedSequence should be at offset 0x549");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bPositionRelativeToOtherEntity) == 0x54A, "m_bPositionRelativeToOtherEntity in CScriptedSequence should be at offset 0x54A");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_hTargetEnt) == 0x54C, "m_hTargetEnt in CScriptedSequence should be at offset 0x54C");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_hNextCine) == 0x550, "m_hNextCine in CScriptedSequence should be at offset 0x550");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bThinking) == 0x554, "m_bThinking in CScriptedSequence should be at offset 0x554");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bInitiatedSelfDelete) == 0x555, "m_bInitiatedSelfDelete in CScriptedSequence should be at offset 0x555");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bIsTeleportingDueToMoveTo) == 0x556, "m_bIsTeleportingDueToMoveTo in CScriptedSequence should be at offset 0x556");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bAllowCustomInterruptConditions) == 0x557, "m_bAllowCustomInterruptConditions in CScriptedSequence should be at offset 0x557");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_hForcedTarget) == 0x558, "m_hForcedTarget in CScriptedSequence should be at offset 0x558");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bDontCancelOtherSequences) == 0x55C, "m_bDontCancelOtherSequences in CScriptedSequence should be at offset 0x55C");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bForceSynch) == 0x55D, "m_bForceSynch in CScriptedSequence should be at offset 0x55D");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bPreventUpdateYawOnFinish) == 0x55E, "m_bPreventUpdateYawOnFinish in CScriptedSequence should be at offset 0x55E");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bEnsureOnNavmeshOnFinish) == 0x55F, "m_bEnsureOnNavmeshOnFinish in CScriptedSequence should be at offset 0x55F");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_onDeathBehavior) == 0x560, "m_onDeathBehavior in CScriptedSequence should be at offset 0x560");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_ConflictResponse) == 0x564, "m_ConflictResponse in CScriptedSequence should be at offset 0x564");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnBeginSequence) == 0x568, "m_OnBeginSequence in CScriptedSequence should be at offset 0x568");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnActionStartOrLoop) == 0x580, "m_OnActionStartOrLoop in CScriptedSequence should be at offset 0x580");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnEndSequence) == 0x598, "m_OnEndSequence in CScriptedSequence should be at offset 0x598");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnPostIdleEndSequence) == 0x5B0, "m_OnPostIdleEndSequence in CScriptedSequence should be at offset 0x5B0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnCancelSequence) == 0x5C8, "m_OnCancelSequence in CScriptedSequence should be at offset 0x5C8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnCancelFailedSequence) == 0x5E0, "m_OnCancelFailedSequence in CScriptedSequence should be at offset 0x5E0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_OnScriptEvent) == 0x5F8, "m_OnScriptEvent in CScriptedSequence should be at offset 0x5F8");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_matOtherToMain) == 0x6C0, "m_matOtherToMain in CScriptedSequence should be at offset 0x6C0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_hInteractionMainEntity) == 0x6E0, "m_hInteractionMainEntity in CScriptedSequence should be at offset 0x6E0");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_iPlayerDeathBehavior) == 0x6E4, "m_iPlayerDeathBehavior in CScriptedSequence should be at offset 0x6E4");
+		static_assert(offsetof(CS2::server::CScriptedSequence, m_bSkipFadeIn) == 0x6E8, "m_bSkipFadeIn in CScriptedSequence should be at offset 0x6E8");
+		static_assert(sizeof(CS2::server::CScriptedSequence) == 0x6F0, "CScriptedSequence size should be 0x6F0");
 	}
 }

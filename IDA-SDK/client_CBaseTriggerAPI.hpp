@@ -4,5 +4,5 @@
 
 
 class client_CBaseTriggerAPI {
-    char pad_767[0x8];
+    char pad_1554[0x8];
 };

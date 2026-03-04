@@ -4,10 +4,10 @@
 
 
 class modellib_CModelConfigElement_SetRenderColor {
-    char vTable341[0x8];
+    void **__vftable_0;
     CUtlString m_ElementName;
     char m_NestedElements[0x18];
-    char end_pad_342[0x20];
+    char end_pad_344[0x20];
     Color m_Color;
-    char end_pad_347[0x4];
+    char end_pad_350[0x4];
 };

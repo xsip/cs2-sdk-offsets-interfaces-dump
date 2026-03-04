@@ -1,7 +1,7 @@
 // generated - do not edit!
 
-// Class size: 0x80
+// Class size: 0x90
 // BaseClass: NONE
 export const client_CAnimGraphControllerBase  = {
-	m_vecParamsToResetInPostGraphUpdate: 40n, // GlobalTypes::CUtlVectorFixedGrowable<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x58
+	m_hExternalGraph: 24n, // client::ExternalAnimGraphHandle_t  | Schema_DeclaredClass | Size: 0x4
 }

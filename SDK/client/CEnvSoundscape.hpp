@@ -22,7 +22,7 @@ namespace CS2 {
 	namespace client {
 		class CEnvSoundscape : public CS2::client::C_BaseEntity {
 		public:
-			entity2::CEntityIOOutput m_OnPlay; // 0x5f8 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnPlay; // 0x608 | Schema_DeclaredClass | Size: 0x18
 			float32 m_flRadius; // 0x620 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_soundEventName; // 0x628 | Schema_Atomic | Size: 0x8
@@ -33,14 +33,14 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_positionNames[8]; // 0x640 | Schema_FixedArray | Size: 0x40
 			GlobalTypes::CHandle<client::CEnvSoundscape> m_hProxySoundscape; // 0x680 | Schema_Atomic | Size: 0x4
-			// char  m_hProxySoundscape[0x4]; // 0x680 | Schema_Atomic | Size: 0x4
+			// char m_hProxySoundscape[0x4]; // 0x680 | Schema_Atomic | Size: 0x4
 			bool m_bDisabled; // 0x684 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_soundscapeName; // 0x688 | Schema_Atomic | Size: 0x8
 			uint32_t m_soundEventHash; // 0x690 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::CEnvSoundscape, m_OnPlay) == 0x5F8, "m_OnPlay in CEnvSoundscape should be at offset 0x5F8");
+		static_assert(offsetof(CS2::client::CEnvSoundscape, m_OnPlay) == 0x608, "m_OnPlay in CEnvSoundscape should be at offset 0x608");
 		static_assert(offsetof(CS2::client::CEnvSoundscape, m_flRadius) == 0x620, "m_flRadius in CEnvSoundscape should be at offset 0x620");
 		static_assert(offsetof(CS2::client::CEnvSoundscape, m_soundEventName) == 0x628, "m_soundEventName in CEnvSoundscape should be at offset 0x628");
 		static_assert(offsetof(CS2::client::CEnvSoundscape, m_bOverrideWithEvent) == 0x630, "m_bOverrideWithEvent in CEnvSoundscape should be at offset 0x630");

@@ -10,14 +10,11 @@
 #endif
 
 
+#include <SDK/modellib/RenderHairStrandInfo_t.hpp>
+#include <SDK/resourcesystem/InfoForResourceTypeIMaterial2.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class RenderHairStrandInfo_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,14 +23,14 @@ namespace CS2 {
 		class CRenderGroom  {
 		public:
 			GlobalTypes::CUtlVector<modellib::RenderHairStrandInfo_t> m_hairs; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  m_hairs[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char m_hairs[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint32 > m_hairPositionOffsets; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_hairPositionOffsets[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_hairPositionOffsets[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x10);
 			// GlobalTypes::CStrongHandleCopyable<resourcesystem::InfoForResourceTypeIMaterial2> m_hSimParamsMat; // 0x40 | Schema_Atomic | Size: 0x8
-			char  m_hSimParamsMat[0x8]; // 0x40 | Schema_Atomic | Size: 0x8
+			char m_hSimParamsMat[0x8]; // 0x40 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< int32 > m_strandSegmentCountHist; // 0x48 | Schema_Atomic | Size: 0x18
-			// char  m_strandSegmentCountHist[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			// char m_strandSegmentCountHist[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			int32_t m_nMaxSegmentsPerHairStrand; // 0x78 | Schema_Builtin | Size: 0x4
 			int32_t m_nGuideHairCount; // 0x7c | Schema_Builtin | Size: 0x4

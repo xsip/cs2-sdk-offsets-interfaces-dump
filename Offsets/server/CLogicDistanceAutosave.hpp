@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x508
+			// Class size: 0x4C0
 			namespace CLogicDistanceAutosave /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_iszTargetEntity = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flDistanceToPlayer = 0x4f8; // float32 m_flDistanceToPlayer; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bForceNewLevelUnit = 0x4fc; // bool m_bForceNewLevelUnit; |  0x4fc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCheckCough = 0x4fd; // bool m_bCheckCough; |  0x4fd | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bThinkDangerous = 0x4fe; // bool m_bThinkDangerous; |  0x4fe | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flDangerousTime = 0x500; // float32 m_flDangerousTime; |  0x500 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszTargetEntity = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flDistanceToPlayer = 0x4b0; // float32 m_flDistanceToPlayer; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bForceNewLevelUnit = 0x4b4; // bool m_bForceNewLevelUnit; |  0x4b4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCheckCough = 0x4b5; // bool m_bCheckCough; |  0x4b5 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bThinkDangerous = 0x4b6; // bool m_bThinkDangerous; |  0x4b6 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flDangerousTime = 0x4b8; // float32 m_flDangerousTime; |  0x4b8 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

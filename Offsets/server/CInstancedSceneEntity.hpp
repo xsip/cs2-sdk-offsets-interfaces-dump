@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xA68
+			// Class size: 0x748
 			namespace CInstancedSceneEntity /*: public CS2::server::CSceneEntity*/ {
-				constexpr std::ptrdiff_t m_hOwner = 0xa50; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bHadOwner = 0xa54; // bool m_bHadOwner; |  0xa54 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flPostSpeakDelay = 0xa58; // float32 m_flPostSpeakDelay; |  0xa58 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flPreDelay = 0xa5c; // float32 m_flPreDelay; |  0xa5c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsBackground = 0xa60; // bool m_bIsBackground; |  0xa60 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRemoveOnCompletion = 0xa61; // bool m_bRemoveOnCompletion; |  0xa61 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hTarget = 0xa64; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hOwner = 0x730; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bHadOwner = 0x734; // bool m_bHadOwner; |  0x734 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flPostSpeakDelay = 0x738; // float32 m_flPostSpeakDelay; |  0x738 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flPreDelay = 0x73c; // float32 m_flPreDelay; |  0x73c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsBackground = 0x740; // bool m_bIsBackground; |  0x740 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRemoveOnCompletion = 0x741; // bool m_bRemoveOnCompletion; |  0x741 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hTarget = 0x744; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 			}
 		}
 	}

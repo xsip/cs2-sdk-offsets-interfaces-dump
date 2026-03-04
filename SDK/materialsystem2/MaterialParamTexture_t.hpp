@@ -22,7 +22,7 @@ namespace CS2 {
 		class MaterialParamTexture_t : public CS2::materialsystem2::MaterialParam_t {
 		public:
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_pValue; // 0x8 | Schema_Atomic | Size: 0x8
-			char  m_pValue[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
+			char m_pValue[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::materialsystem2::MaterialParamTexture_t, m_pValue) == 0x8, "m_pValue in MaterialParamTexture_t should be at offset 0x8");
 		static_assert(sizeof(CS2::materialsystem2::MaterialParamTexture_t) == 0x10, "MaterialParamTexture_t size should be 0x10");

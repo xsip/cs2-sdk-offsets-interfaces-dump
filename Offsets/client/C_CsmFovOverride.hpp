@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x608
+			// Class size: 0x618
 			namespace C_CsmFovOverride /*: public CS2::client::C_BaseEntity*/ {
-				constexpr std::ptrdiff_t m_cameraName = 0x5f8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flCsmFovOverrideValue = 0x600; // float32 m_flCsmFovOverrideValue; |  0x600 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_cameraName = 0x608; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flCsmFovOverrideValue = 0x610; // float32 m_flCsmFovOverrideValue; |  0x610 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

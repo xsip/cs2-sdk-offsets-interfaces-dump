@@ -4,10 +4,11 @@
 
 
 class animationsystem_CSequenceGroupData {
-    char vTable451[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     CBufferString m_sName;
     uint32_t m_nFlags;
-    char pad_452[0x4];
+    char pad_458[0x4];
     char m_localSequenceNameArray[0x18];
     char m_localS1SeqDescArray[0x18];
     char m_localMultiSeqDescArray[0x18];

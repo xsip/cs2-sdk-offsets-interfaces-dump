@@ -21,26 +21,26 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetAABBEntity : public CS2::server::CSoundOpvarSetPointEntity {
 		public:
-			GlobalTypes::Vector m_vDistanceInnerMins; // 0x6a8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceInnerMaxs; // 0x6b4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceOuterMins; // 0x6c0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceOuterMaxs; // 0x6cc | Schema_Atomic | Size: 0xc
-			int32_t m_nAABBDirection; // 0x6d8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vInnerMins; // 0x6dc | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vInnerMaxs; // 0x6e8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOuterMins; // 0x6f4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOuterMaxs; // 0x700 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceInnerMins; // 0x640 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceInnerMaxs; // 0x64c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceOuterMins; // 0x658 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceOuterMaxs; // 0x664 | Schema_Atomic | Size: 0xc
+			int32_t m_nAABBDirection; // 0x670 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vInnerMins; // 0x674 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vInnerMaxs; // 0x680 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOuterMins; // 0x68c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOuterMaxs; // 0x698 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceInnerMins) == 0x6A8, "m_vDistanceInnerMins in CSoundOpvarSetAABBEntity should be at offset 0x6A8");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceInnerMaxs) == 0x6B4, "m_vDistanceInnerMaxs in CSoundOpvarSetAABBEntity should be at offset 0x6B4");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceOuterMins) == 0x6C0, "m_vDistanceOuterMins in CSoundOpvarSetAABBEntity should be at offset 0x6C0");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceOuterMaxs) == 0x6CC, "m_vDistanceOuterMaxs in CSoundOpvarSetAABBEntity should be at offset 0x6CC");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_nAABBDirection) == 0x6D8, "m_nAABBDirection in CSoundOpvarSetAABBEntity should be at offset 0x6D8");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vInnerMins) == 0x6DC, "m_vInnerMins in CSoundOpvarSetAABBEntity should be at offset 0x6DC");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vInnerMaxs) == 0x6E8, "m_vInnerMaxs in CSoundOpvarSetAABBEntity should be at offset 0x6E8");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vOuterMins) == 0x6F4, "m_vOuterMins in CSoundOpvarSetAABBEntity should be at offset 0x6F4");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vOuterMaxs) == 0x700, "m_vOuterMaxs in CSoundOpvarSetAABBEntity should be at offset 0x700");
-		static_assert(sizeof(CS2::server::CSoundOpvarSetAABBEntity) == 0x710, "CSoundOpvarSetAABBEntity size should be 0x710");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceInnerMins) == 0x640, "m_vDistanceInnerMins in CSoundOpvarSetAABBEntity should be at offset 0x640");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceInnerMaxs) == 0x64C, "m_vDistanceInnerMaxs in CSoundOpvarSetAABBEntity should be at offset 0x64C");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceOuterMins) == 0x658, "m_vDistanceOuterMins in CSoundOpvarSetAABBEntity should be at offset 0x658");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceOuterMaxs) == 0x664, "m_vDistanceOuterMaxs in CSoundOpvarSetAABBEntity should be at offset 0x664");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_nAABBDirection) == 0x670, "m_nAABBDirection in CSoundOpvarSetAABBEntity should be at offset 0x670");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vInnerMins) == 0x674, "m_vInnerMins in CSoundOpvarSetAABBEntity should be at offset 0x674");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vInnerMaxs) == 0x680, "m_vInnerMaxs in CSoundOpvarSetAABBEntity should be at offset 0x680");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vOuterMins) == 0x68C, "m_vOuterMins in CSoundOpvarSetAABBEntity should be at offset 0x68C");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vOuterMaxs) == 0x698, "m_vOuterMaxs in CSoundOpvarSetAABBEntity should be at offset 0x698");
+		static_assert(sizeof(CS2::server::CSoundOpvarSetAABBEntity) == 0x6A8, "CSoundOpvarSetAABBEntity size should be 0x6A8");
 	}
 }

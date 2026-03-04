@@ -33,100 +33,100 @@ namespace CS2 {
 		class CHostage : public CS2::server::CHostageExpresserShim {
 		public:
 			S2_PAD(0x18);
-			entity2::CEntityIOOutput m_OnHostageBeginGrab; // 0xc08 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFirstPickedUp; // 0xc30 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnDroppedNotRescued; // 0xc58 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnRescued; // 0xc80 | Schema_DeclaredClass | Size: 0x28
-			server::EntitySpottedState_t m_entitySpottedState; // 0xca8 | Schema_DeclaredClass | Size: 0x18
-			int32_t m_nSpotRules; // 0xcc0 | Schema_Builtin | Size: 0x4
-			uint32_t m_uiHostageSpawnExclusionGroupMask; // 0xcc4 | Schema_Builtin | Size: 0x4
-			uint32_t m_nHostageSpawnRandomFactor; // 0xcc8 | Schema_Builtin | Size: 0x4
-			bool m_bRemove; // 0xccc | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnHostageBeginGrab; // 0xb98 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFirstPickedUp; // 0xbb0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnDroppedNotRescued; // 0xbc8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnRescued; // 0xbe0 | Schema_DeclaredClass | Size: 0x18
+			server::EntitySpottedState_t m_entitySpottedState; // 0xbf8 | Schema_DeclaredClass | Size: 0x18
+			int32_t m_nSpotRules; // 0xc10 | Schema_Builtin | Size: 0x4
+			uint32_t m_uiHostageSpawnExclusionGroupMask; // 0xc14 | Schema_Builtin | Size: 0x4
+			uint32_t m_nHostageSpawnRandomFactor; // 0xc18 | Schema_Builtin | Size: 0x4
+			bool m_bRemove; // 0xc1c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_vel; // 0xcd0 | Schema_Atomic | Size: 0xc
-			bool m_isRescued; // 0xcdc | Schema_Builtin | Size: 0x1
-			bool m_jumpedThisFrame; // 0xcdd | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_vel; // 0xc20 | Schema_Atomic | Size: 0xc
+			bool m_isRescued; // 0xc2c | Schema_Builtin | Size: 0x1
+			bool m_jumpedThisFrame; // 0xc2d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nHostageState; // 0xce0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_leader; // 0xce4 | Schema_Atomic | Size: 0x4
-			// char  m_leader[0x4]; // 0xce4 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerPawnBase> m_lastLeader; // 0xce8 | Schema_Atomic | Size: 0x4
-			// char  m_lastLeader[0x4]; // 0xce8 | Schema_Atomic | Size: 0x4
+			int32_t m_nHostageState; // 0xc30 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_leader; // 0xc34 | Schema_Atomic | Size: 0x4
+			// char m_leader[0x4]; // 0xc34 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawnBase> m_lastLeader; // 0xc38 | Schema_Atomic | Size: 0x4
+			// char m_lastLeader[0x4]; // 0xc38 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			server::CountdownTimer m_reuseTimer; // 0xcf0 | Schema_DeclaredClass | Size: 0x18
-			bool m_hasBeenUsed; // 0xd08 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_reuseTimer; // 0xc40 | Schema_DeclaredClass | Size: 0x18
+			bool m_hasBeenUsed; // 0xc58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_accel; // 0xd0c | Schema_Atomic | Size: 0xc
-			bool m_isRunning; // 0xd18 | Schema_Builtin | Size: 0x1
-			bool m_isCrouching; // 0xd19 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_accel; // 0xc5c | Schema_Atomic | Size: 0xc
+			bool m_isRunning; // 0xc68 | Schema_Builtin | Size: 0x1
+			bool m_isCrouching; // 0xc69 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			server::CountdownTimer m_jumpTimer; // 0xd20 | Schema_DeclaredClass | Size: 0x18
-			bool m_isWaitingForLeader; // 0xd38 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_jumpTimer; // 0xc70 | Schema_DeclaredClass | Size: 0x18
+			bool m_isWaitingForLeader; // 0xc88 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x200f);
-			server::CountdownTimer m_repathTimer; // 0x2d48 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_inhibitDoorTimer; // 0x2d60 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_repathTimer; // 0x2c98 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_inhibitDoorTimer; // 0x2cb0 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x78);
-			server::CountdownTimer m_inhibitObstacleAvoidanceTimer; // 0x2df0 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_inhibitObstacleAvoidanceTimer; // 0x2d40 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8);
-			server::CountdownTimer m_wiggleTimer; // 0x2e10 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_wiggleTimer; // 0x2d60 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x4);
-			bool m_isAdjusted; // 0x2e2c | Schema_Builtin | Size: 0x1
-			bool m_bHandsHaveBeenCut; // 0x2e2d | Schema_Builtin | Size: 0x1
+			bool m_isAdjusted; // 0x2d7c | Schema_Builtin | Size: 0x1
+			bool m_bHandsHaveBeenCut; // 0x2d7d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hHostageGrabber; // 0x2e30 | Schema_Atomic | Size: 0x4
-			// char  m_hHostageGrabber[0x4]; // 0x2e30 | Schema_Atomic | Size: 0x4
-			entity2::GameTime_t m_fLastGrabTime; // 0x2e34 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecPositionWhenStartedDroppingToGround; // 0x2e38 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecGrabbedPos; // 0x2e44 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flRescueStartTime; // 0x2e50 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flGrabSuccessTime; // 0x2e54 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flDropStartTime; // 0x2e58 | Schema_DeclaredClass | Size: 0x4
-			int32_t m_nApproachRewardPayouts; // 0x2e5c | Schema_Builtin | Size: 0x4
-			int32_t m_nPickupEventCount; // 0x2e60 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vecSpawnGroundPos; // 0x2e64 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_hHostageGrabber; // 0x2d80 | Schema_Atomic | Size: 0x4
+			// char m_hHostageGrabber[0x4]; // 0x2d80 | Schema_Atomic | Size: 0x4
+			entity2::GameTime_t m_fLastGrabTime; // 0x2d84 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecPositionWhenStartedDroppingToGround; // 0x2d88 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecGrabbedPos; // 0x2d94 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flRescueStartTime; // 0x2da0 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flGrabSuccessTime; // 0x2da4 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flDropStartTime; // 0x2da8 | Schema_DeclaredClass | Size: 0x4
+			int32_t m_nApproachRewardPayouts; // 0x2dac | Schema_Builtin | Size: 0x4
+			int32_t m_nPickupEventCount; // 0x2db0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vecSpawnGroundPos; // 0x2db4 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x2c);
-			GlobalTypes::VectorWS m_vecHostageResetPosition; // 0x2e9c | Schema_Atomic | Size: 0xc
+			GlobalTypes::VectorWS m_vecHostageResetPosition; // 0x2dec | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CHostage, m_OnHostageBeginGrab) == 0xC08, "m_OnHostageBeginGrab in CHostage should be at offset 0xC08");
-		static_assert(offsetof(CS2::server::CHostage, m_OnFirstPickedUp) == 0xC30, "m_OnFirstPickedUp in CHostage should be at offset 0xC30");
-		static_assert(offsetof(CS2::server::CHostage, m_OnDroppedNotRescued) == 0xC58, "m_OnDroppedNotRescued in CHostage should be at offset 0xC58");
-		static_assert(offsetof(CS2::server::CHostage, m_OnRescued) == 0xC80, "m_OnRescued in CHostage should be at offset 0xC80");
-		static_assert(offsetof(CS2::server::CHostage, m_entitySpottedState) == 0xCA8, "m_entitySpottedState in CHostage should be at offset 0xCA8");
-		static_assert(offsetof(CS2::server::CHostage, m_nSpotRules) == 0xCC0, "m_nSpotRules in CHostage should be at offset 0xCC0");
-		static_assert(offsetof(CS2::server::CHostage, m_uiHostageSpawnExclusionGroupMask) == 0xCC4, "m_uiHostageSpawnExclusionGroupMask in CHostage should be at offset 0xCC4");
-		static_assert(offsetof(CS2::server::CHostage, m_nHostageSpawnRandomFactor) == 0xCC8, "m_nHostageSpawnRandomFactor in CHostage should be at offset 0xCC8");
-		static_assert(offsetof(CS2::server::CHostage, m_bRemove) == 0xCCC, "m_bRemove in CHostage should be at offset 0xCCC");
-		static_assert(offsetof(CS2::server::CHostage, m_vel) == 0xCD0, "m_vel in CHostage should be at offset 0xCD0");
-		static_assert(offsetof(CS2::server::CHostage, m_isRescued) == 0xCDC, "m_isRescued in CHostage should be at offset 0xCDC");
-		static_assert(offsetof(CS2::server::CHostage, m_jumpedThisFrame) == 0xCDD, "m_jumpedThisFrame in CHostage should be at offset 0xCDD");
-		static_assert(offsetof(CS2::server::CHostage, m_nHostageState) == 0xCE0, "m_nHostageState in CHostage should be at offset 0xCE0");
-		static_assert(offsetof(CS2::server::CHostage, m_leader) == 0xCE4, "m_leader in CHostage should be at offset 0xCE4");
-		static_assert(offsetof(CS2::server::CHostage, m_lastLeader) == 0xCE8, "m_lastLeader in CHostage should be at offset 0xCE8");
-		static_assert(offsetof(CS2::server::CHostage, m_reuseTimer) == 0xCF0, "m_reuseTimer in CHostage should be at offset 0xCF0");
-		static_assert(offsetof(CS2::server::CHostage, m_hasBeenUsed) == 0xD08, "m_hasBeenUsed in CHostage should be at offset 0xD08");
-		static_assert(offsetof(CS2::server::CHostage, m_accel) == 0xD0C, "m_accel in CHostage should be at offset 0xD0C");
-		static_assert(offsetof(CS2::server::CHostage, m_isRunning) == 0xD18, "m_isRunning in CHostage should be at offset 0xD18");
-		static_assert(offsetof(CS2::server::CHostage, m_isCrouching) == 0xD19, "m_isCrouching in CHostage should be at offset 0xD19");
-		static_assert(offsetof(CS2::server::CHostage, m_jumpTimer) == 0xD20, "m_jumpTimer in CHostage should be at offset 0xD20");
-		static_assert(offsetof(CS2::server::CHostage, m_isWaitingForLeader) == 0xD38, "m_isWaitingForLeader in CHostage should be at offset 0xD38");
-		static_assert(offsetof(CS2::server::CHostage, m_repathTimer) == 0x2D48, "m_repathTimer in CHostage should be at offset 0x2D48");
-		static_assert(offsetof(CS2::server::CHostage, m_inhibitDoorTimer) == 0x2D60, "m_inhibitDoorTimer in CHostage should be at offset 0x2D60");
-		static_assert(offsetof(CS2::server::CHostage, m_inhibitObstacleAvoidanceTimer) == 0x2DF0, "m_inhibitObstacleAvoidanceTimer in CHostage should be at offset 0x2DF0");
-		static_assert(offsetof(CS2::server::CHostage, m_wiggleTimer) == 0x2E10, "m_wiggleTimer in CHostage should be at offset 0x2E10");
-		static_assert(offsetof(CS2::server::CHostage, m_isAdjusted) == 0x2E2C, "m_isAdjusted in CHostage should be at offset 0x2E2C");
-		static_assert(offsetof(CS2::server::CHostage, m_bHandsHaveBeenCut) == 0x2E2D, "m_bHandsHaveBeenCut in CHostage should be at offset 0x2E2D");
-		static_assert(offsetof(CS2::server::CHostage, m_hHostageGrabber) == 0x2E30, "m_hHostageGrabber in CHostage should be at offset 0x2E30");
-		static_assert(offsetof(CS2::server::CHostage, m_fLastGrabTime) == 0x2E34, "m_fLastGrabTime in CHostage should be at offset 0x2E34");
-		static_assert(offsetof(CS2::server::CHostage, m_vecPositionWhenStartedDroppingToGround) == 0x2E38, "m_vecPositionWhenStartedDroppingToGround in CHostage should be at offset 0x2E38");
-		static_assert(offsetof(CS2::server::CHostage, m_vecGrabbedPos) == 0x2E44, "m_vecGrabbedPos in CHostage should be at offset 0x2E44");
-		static_assert(offsetof(CS2::server::CHostage, m_flRescueStartTime) == 0x2E50, "m_flRescueStartTime in CHostage should be at offset 0x2E50");
-		static_assert(offsetof(CS2::server::CHostage, m_flGrabSuccessTime) == 0x2E54, "m_flGrabSuccessTime in CHostage should be at offset 0x2E54");
-		static_assert(offsetof(CS2::server::CHostage, m_flDropStartTime) == 0x2E58, "m_flDropStartTime in CHostage should be at offset 0x2E58");
-		static_assert(offsetof(CS2::server::CHostage, m_nApproachRewardPayouts) == 0x2E5C, "m_nApproachRewardPayouts in CHostage should be at offset 0x2E5C");
-		static_assert(offsetof(CS2::server::CHostage, m_nPickupEventCount) == 0x2E60, "m_nPickupEventCount in CHostage should be at offset 0x2E60");
-		static_assert(offsetof(CS2::server::CHostage, m_vecSpawnGroundPos) == 0x2E64, "m_vecSpawnGroundPos in CHostage should be at offset 0x2E64");
-		static_assert(offsetof(CS2::server::CHostage, m_vecHostageResetPosition) == 0x2E9C, "m_vecHostageResetPosition in CHostage should be at offset 0x2E9C");
-		static_assert(sizeof(CS2::server::CHostage) == 0x2EB0, "CHostage size should be 0x2EB0");
+		static_assert(offsetof(CS2::server::CHostage, m_OnHostageBeginGrab) == 0xB98, "m_OnHostageBeginGrab in CHostage should be at offset 0xB98");
+		static_assert(offsetof(CS2::server::CHostage, m_OnFirstPickedUp) == 0xBB0, "m_OnFirstPickedUp in CHostage should be at offset 0xBB0");
+		static_assert(offsetof(CS2::server::CHostage, m_OnDroppedNotRescued) == 0xBC8, "m_OnDroppedNotRescued in CHostage should be at offset 0xBC8");
+		static_assert(offsetof(CS2::server::CHostage, m_OnRescued) == 0xBE0, "m_OnRescued in CHostage should be at offset 0xBE0");
+		static_assert(offsetof(CS2::server::CHostage, m_entitySpottedState) == 0xBF8, "m_entitySpottedState in CHostage should be at offset 0xBF8");
+		static_assert(offsetof(CS2::server::CHostage, m_nSpotRules) == 0xC10, "m_nSpotRules in CHostage should be at offset 0xC10");
+		static_assert(offsetof(CS2::server::CHostage, m_uiHostageSpawnExclusionGroupMask) == 0xC14, "m_uiHostageSpawnExclusionGroupMask in CHostage should be at offset 0xC14");
+		static_assert(offsetof(CS2::server::CHostage, m_nHostageSpawnRandomFactor) == 0xC18, "m_nHostageSpawnRandomFactor in CHostage should be at offset 0xC18");
+		static_assert(offsetof(CS2::server::CHostage, m_bRemove) == 0xC1C, "m_bRemove in CHostage should be at offset 0xC1C");
+		static_assert(offsetof(CS2::server::CHostage, m_vel) == 0xC20, "m_vel in CHostage should be at offset 0xC20");
+		static_assert(offsetof(CS2::server::CHostage, m_isRescued) == 0xC2C, "m_isRescued in CHostage should be at offset 0xC2C");
+		static_assert(offsetof(CS2::server::CHostage, m_jumpedThisFrame) == 0xC2D, "m_jumpedThisFrame in CHostage should be at offset 0xC2D");
+		static_assert(offsetof(CS2::server::CHostage, m_nHostageState) == 0xC30, "m_nHostageState in CHostage should be at offset 0xC30");
+		static_assert(offsetof(CS2::server::CHostage, m_leader) == 0xC34, "m_leader in CHostage should be at offset 0xC34");
+		static_assert(offsetof(CS2::server::CHostage, m_lastLeader) == 0xC38, "m_lastLeader in CHostage should be at offset 0xC38");
+		static_assert(offsetof(CS2::server::CHostage, m_reuseTimer) == 0xC40, "m_reuseTimer in CHostage should be at offset 0xC40");
+		static_assert(offsetof(CS2::server::CHostage, m_hasBeenUsed) == 0xC58, "m_hasBeenUsed in CHostage should be at offset 0xC58");
+		static_assert(offsetof(CS2::server::CHostage, m_accel) == 0xC5C, "m_accel in CHostage should be at offset 0xC5C");
+		static_assert(offsetof(CS2::server::CHostage, m_isRunning) == 0xC68, "m_isRunning in CHostage should be at offset 0xC68");
+		static_assert(offsetof(CS2::server::CHostage, m_isCrouching) == 0xC69, "m_isCrouching in CHostage should be at offset 0xC69");
+		static_assert(offsetof(CS2::server::CHostage, m_jumpTimer) == 0xC70, "m_jumpTimer in CHostage should be at offset 0xC70");
+		static_assert(offsetof(CS2::server::CHostage, m_isWaitingForLeader) == 0xC88, "m_isWaitingForLeader in CHostage should be at offset 0xC88");
+		static_assert(offsetof(CS2::server::CHostage, m_repathTimer) == 0x2C98, "m_repathTimer in CHostage should be at offset 0x2C98");
+		static_assert(offsetof(CS2::server::CHostage, m_inhibitDoorTimer) == 0x2CB0, "m_inhibitDoorTimer in CHostage should be at offset 0x2CB0");
+		static_assert(offsetof(CS2::server::CHostage, m_inhibitObstacleAvoidanceTimer) == 0x2D40, "m_inhibitObstacleAvoidanceTimer in CHostage should be at offset 0x2D40");
+		static_assert(offsetof(CS2::server::CHostage, m_wiggleTimer) == 0x2D60, "m_wiggleTimer in CHostage should be at offset 0x2D60");
+		static_assert(offsetof(CS2::server::CHostage, m_isAdjusted) == 0x2D7C, "m_isAdjusted in CHostage should be at offset 0x2D7C");
+		static_assert(offsetof(CS2::server::CHostage, m_bHandsHaveBeenCut) == 0x2D7D, "m_bHandsHaveBeenCut in CHostage should be at offset 0x2D7D");
+		static_assert(offsetof(CS2::server::CHostage, m_hHostageGrabber) == 0x2D80, "m_hHostageGrabber in CHostage should be at offset 0x2D80");
+		static_assert(offsetof(CS2::server::CHostage, m_fLastGrabTime) == 0x2D84, "m_fLastGrabTime in CHostage should be at offset 0x2D84");
+		static_assert(offsetof(CS2::server::CHostage, m_vecPositionWhenStartedDroppingToGround) == 0x2D88, "m_vecPositionWhenStartedDroppingToGround in CHostage should be at offset 0x2D88");
+		static_assert(offsetof(CS2::server::CHostage, m_vecGrabbedPos) == 0x2D94, "m_vecGrabbedPos in CHostage should be at offset 0x2D94");
+		static_assert(offsetof(CS2::server::CHostage, m_flRescueStartTime) == 0x2DA0, "m_flRescueStartTime in CHostage should be at offset 0x2DA0");
+		static_assert(offsetof(CS2::server::CHostage, m_flGrabSuccessTime) == 0x2DA4, "m_flGrabSuccessTime in CHostage should be at offset 0x2DA4");
+		static_assert(offsetof(CS2::server::CHostage, m_flDropStartTime) == 0x2DA8, "m_flDropStartTime in CHostage should be at offset 0x2DA8");
+		static_assert(offsetof(CS2::server::CHostage, m_nApproachRewardPayouts) == 0x2DAC, "m_nApproachRewardPayouts in CHostage should be at offset 0x2DAC");
+		static_assert(offsetof(CS2::server::CHostage, m_nPickupEventCount) == 0x2DB0, "m_nPickupEventCount in CHostage should be at offset 0x2DB0");
+		static_assert(offsetof(CS2::server::CHostage, m_vecSpawnGroundPos) == 0x2DB4, "m_vecSpawnGroundPos in CHostage should be at offset 0x2DB4");
+		static_assert(offsetof(CS2::server::CHostage, m_vecHostageResetPosition) == 0x2DEC, "m_vecHostageResetPosition in CHostage should be at offset 0x2DEC");
+		static_assert(sizeof(CS2::server::CHostage) == 0x2E00, "CHostage size should be 0x2E00");
 	}
 }

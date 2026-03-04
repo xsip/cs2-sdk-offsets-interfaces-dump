@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x548
+			// Class size: 0x500
 			namespace CInfoFan /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_fFanForceMaxRadius = 0x530; // float32 m_fFanForceMaxRadius; |  0x530 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_fFanForceMinRadius = 0x534; // float32 m_fFanForceMinRadius; |  0x534 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flCurveDistRange = 0x538; // float32 m_flCurveDistRange; |  0x538 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_FanForceCurveString = 0x540; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_fFanForceMaxRadius = 0x4e8; // float32 m_fFanForceMaxRadius; |  0x4e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_fFanForceMinRadius = 0x4ec; // float32 m_fFanForceMinRadius; |  0x4ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flCurveDistRange = 0x4f0; // float32 m_flCurveDistRange; |  0x4f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_FanForceCurveString = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

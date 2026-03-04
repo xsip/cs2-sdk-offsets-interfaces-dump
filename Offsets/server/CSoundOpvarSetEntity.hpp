@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x548
+			// Class size: 0x500
 			namespace CSoundOpvarSetEntity /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_iszStackName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOperatorName = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszOpvarName = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nOpvarType = 0x520; // int32_t m_nOpvarType; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nOpvarIndex = 0x524; // int32_t m_nOpvarIndex; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOpvarValue = 0x528; // float32 m_flOpvarValue; |  0x528 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_OpvarValueString = 0x530; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bSetOnSpawn = 0x538; // bool m_bSetOnSpawn; |  0x538 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iszStackName = 0x4c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOperatorName = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszOpvarName = 0x4d0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nOpvarType = 0x4d8; // int32_t m_nOpvarType; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nOpvarIndex = 0x4dc; // int32_t m_nOpvarIndex; |  0x4dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOpvarValue = 0x4e0; // float32 m_flOpvarValue; |  0x4e0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OpvarValueString = 0x4e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bSetOnSpawn = 0x4f0; // bool m_bSetOnSpawn; |  0x4f0 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

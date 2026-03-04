@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CSoundEventSphereEntity : public CS2::server::CSoundEventEntity {
 		public:
-			float32 m_flRadius; // 0x5b8 | Schema_Builtin | Size: 0x4
+			float32 m_flRadius; // 0x558 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSoundEventSphereEntity, m_flRadius) == 0x5B8, "m_flRadius in CSoundEventSphereEntity should be at offset 0x5B8");
-		static_assert(sizeof(CS2::server::CSoundEventSphereEntity) == 0x5C0, "CSoundEventSphereEntity size should be 0x5C0");
+		static_assert(offsetof(CS2::server::CSoundEventSphereEntity, m_flRadius) == 0x558, "m_flRadius in CSoundEventSphereEntity should be at offset 0x558");
+		static_assert(sizeof(CS2::server::CSoundEventSphereEntity) == 0x560, "CSoundEventSphereEntity size should be 0x560");
 	}
 }

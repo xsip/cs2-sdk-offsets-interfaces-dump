@@ -23,32 +23,32 @@ namespace CS2 {
 	namespace server {
 		class CPointTemplate : public CS2::server::CLogicalEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszWorldName; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSource2EntityLumpName; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszEntityFilterName; // 0x500 | Schema_Atomic | Size: 0x8
-			float32 m_flTimeoutInterval; // 0x508 | Schema_Builtin | Size: 0x4
-			bool m_bAsynchronouslySpawnEntities; // 0x50c | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszWorldName; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSource2EntityLumpName; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszEntityFilterName; // 0x4b8 | Schema_Atomic | Size: 0x8
+			float32 m_flTimeoutInterval; // 0x4c0 | Schema_Builtin | Size: 0x4
+			bool m_bAsynchronouslySpawnEntities; // 0x4c4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior; // 0x510 | Schema_DeclaredEnum | Size: 0x4
-			client::PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; // 0x514 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CUtlVector< uint32 > m_createdSpawnGroupHandles; // 0x518 | Schema_Atomic | Size: 0x18
-			// char  m_createdSpawnGroupHandles[0x18]; // 0x518 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CEntityHandle> m_SpawnedEntityHandles; // 0x530 | Schema_Atomic | Size: 0x18
-			// char  m_SpawnedEntityHandles[0x18]; // 0x530 | Schema_Atomic | Size: 0x18
-			GlobalTypes::HSCRIPT m_ScriptSpawnCallback; // 0x548 | Schema_Atomic | Size: 0x8
-			GlobalTypes::HSCRIPT m_ScriptCallbackScope; // 0x550 | Schema_Atomic | Size: 0x8
+			client::PointTemplateClientOnlyEntityBehavior_t m_clientOnlyEntityBehavior; // 0x4c8 | Schema_DeclaredEnum | Size: 0x4
+			client::PointTemplateOwnerSpawnGroupType_t m_ownerSpawnGroupType; // 0x4cc | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CUtlVector< uint32 > m_createdSpawnGroupHandles; // 0x4d0 | Schema_Atomic | Size: 0x18
+			// char m_createdSpawnGroupHandles[0x18]; // 0x4d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CEntityHandle> m_SpawnedEntityHandles; // 0x4e8 | Schema_Atomic | Size: 0x18
+			// char m_SpawnedEntityHandles[0x18]; // 0x4e8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::HSCRIPT m_ScriptSpawnCallback; // 0x500 | Schema_Atomic | Size: 0x8
+			GlobalTypes::HSCRIPT m_ScriptCallbackScope; // 0x508 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CPointTemplate, m_iszWorldName) == 0x4F0, "m_iszWorldName in CPointTemplate should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_iszSource2EntityLumpName) == 0x4F8, "m_iszSource2EntityLumpName in CPointTemplate should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_iszEntityFilterName) == 0x500, "m_iszEntityFilterName in CPointTemplate should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_flTimeoutInterval) == 0x508, "m_flTimeoutInterval in CPointTemplate should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_bAsynchronouslySpawnEntities) == 0x50C, "m_bAsynchronouslySpawnEntities in CPointTemplate should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_clientOnlyEntityBehavior) == 0x510, "m_clientOnlyEntityBehavior in CPointTemplate should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_ownerSpawnGroupType) == 0x514, "m_ownerSpawnGroupType in CPointTemplate should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_createdSpawnGroupHandles) == 0x518, "m_createdSpawnGroupHandles in CPointTemplate should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_SpawnedEntityHandles) == 0x530, "m_SpawnedEntityHandles in CPointTemplate should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_ScriptSpawnCallback) == 0x548, "m_ScriptSpawnCallback in CPointTemplate should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CPointTemplate, m_ScriptCallbackScope) == 0x550, "m_ScriptCallbackScope in CPointTemplate should be at offset 0x550");
-		static_assert(sizeof(CS2::server::CPointTemplate) == 0x558, "CPointTemplate size should be 0x558");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_iszWorldName) == 0x4A8, "m_iszWorldName in CPointTemplate should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_iszSource2EntityLumpName) == 0x4B0, "m_iszSource2EntityLumpName in CPointTemplate should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_iszEntityFilterName) == 0x4B8, "m_iszEntityFilterName in CPointTemplate should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_flTimeoutInterval) == 0x4C0, "m_flTimeoutInterval in CPointTemplate should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_bAsynchronouslySpawnEntities) == 0x4C4, "m_bAsynchronouslySpawnEntities in CPointTemplate should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_clientOnlyEntityBehavior) == 0x4C8, "m_clientOnlyEntityBehavior in CPointTemplate should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_ownerSpawnGroupType) == 0x4CC, "m_ownerSpawnGroupType in CPointTemplate should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_createdSpawnGroupHandles) == 0x4D0, "m_createdSpawnGroupHandles in CPointTemplate should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_SpawnedEntityHandles) == 0x4E8, "m_SpawnedEntityHandles in CPointTemplate should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_ScriptSpawnCallback) == 0x500, "m_ScriptSpawnCallback in CPointTemplate should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CPointTemplate, m_ScriptCallbackScope) == 0x508, "m_ScriptCallbackScope in CPointTemplate should be at offset 0x508");
+		static_assert(sizeof(CS2::server::CPointTemplate) == 0x510, "CPointTemplate size should be 0x510");
 	}
 }

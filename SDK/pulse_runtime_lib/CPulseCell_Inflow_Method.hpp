@@ -11,6 +11,7 @@
 
 
 #include <SDK/pulse_runtime_lib/CPulseCell_Inflow_BaseEntrypoint.hpp>
+#include <SDK/pulse_runtime_lib/CPulseRuntimeMethodArg.hpp>
 
 
 
@@ -27,7 +28,7 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CPulseValueFullType m_ReturnType; // 0xa0 | Schema_Atomic | Size: 0x18
 			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg> m_Args; // 0xb8 | Schema_Atomic | Size: 0x10
-			char  m_Args[0x10]; // 0xb8 | Schema_Atomic | Size: 0x10
+			char m_Args[0x10]; // 0xb8 | Schema_Atomic | Size: 0x10
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method, m_MethodName) == 0x80, "m_MethodName in CPulseCell_Inflow_Method should be at offset 0x80");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method, m_Description) == 0x90, "m_Description in CPulseCell_Inflow_Method should be at offset 0x90");

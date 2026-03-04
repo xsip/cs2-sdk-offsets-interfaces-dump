@@ -5,7 +5,7 @@
 #include "entity2_GameTime_t.hpp"
 
 class client_fogparams_t {
-    char vTable1663[0x8];
+    void **__vftable_0;
     Vector dirPrimary;
     Color colorPrimary;
     Color colorSecondary;

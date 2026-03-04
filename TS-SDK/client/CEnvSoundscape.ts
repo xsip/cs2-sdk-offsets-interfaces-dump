@@ -5,7 +5,7 @@ import {client_C_BaseEntity} from './C_BaseEntity';
 // BaseClass: : public CS2::client::C_BaseEntity
 export const client_CEnvSoundscape  = {
 	...client_C_BaseEntity,
-	m_OnPlay: 1528n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+	m_OnPlay: 1544n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 	m_flRadius: 1568n, // float32 m_flRadius; |  0x620 | Schema_Builtin | Size: 0x4
 	m_soundEventName: 1576n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 	m_bOverrideWithEvent: 1584n, // bool m_bOverrideWithEvent; |  0x630 | Schema_Builtin | Size: 0x1

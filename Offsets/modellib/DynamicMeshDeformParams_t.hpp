@@ -15,6 +15,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bRecomputeSmoothNormalsAfterAnimation = 0x8; // bool m_bRecomputeSmoothNormalsAfterAnimation; |  0x8 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bComputeDynamicMeshTensionAfterAnimation = 0x9; // bool m_bComputeDynamicMeshTensionAfterAnimation; |  0x9 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bSmoothNormalsAcrossUvSeams = 0xa; // bool m_bSmoothNormalsAcrossUvSeams; |  0xa | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEnableEyeBulgeDeformation = 0xb; // bool m_bEnableEyeBulgeDeformation; |  0xb | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

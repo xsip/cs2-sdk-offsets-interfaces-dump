@@ -8,19 +8,19 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x5D0
+			// Class size: 0x540
 			namespace CMathRemap /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_flInMin = 0x4f0; // float32 m_flInMin; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flInMax = 0x4f4; // float32 m_flInMax; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOut1 = 0x4f8; // float32 m_flOut1; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOut2 = 0x4fc; // float32 m_flOut2; |  0x4fc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOldInValue = 0x500; // float32 m_flOldInValue; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnabled = 0x504; // bool m_bEnabled; |  0x504 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OutValue = 0x508; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnRoseAboveMin = 0x530; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnRoseAboveMax = 0x558; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFellBelowMin = 0x580; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFellBelowMax = 0x5a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_flInMin = 0x4a8; // float32 m_flInMin; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flInMax = 0x4ac; // float32 m_flInMax; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOut1 = 0x4b0; // float32 m_flOut1; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOut2 = 0x4b4; // float32 m_flOut2; |  0x4b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOldInValue = 0x4b8; // float32 m_flOldInValue; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnabled = 0x4bc; // bool m_bEnabled; |  0x4bc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OutValue = 0x4c0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnRoseAboveMin = 0x4e0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnRoseAboveMax = 0x4f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFellBelowMin = 0x510; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFellBelowMax = 0x528; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

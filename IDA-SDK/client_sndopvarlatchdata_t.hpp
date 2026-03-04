@@ -4,7 +4,7 @@
 
 
 class client_sndopvarlatchdata_t {
-    char vTable1678[0x8];
+    void **__vftable_0;
     CUtlSymbolLarge m_iszStack;
     CUtlSymbolLarge m_iszOperator;
     CUtlSymbolLarge m_iszOpvar;

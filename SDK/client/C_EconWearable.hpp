@@ -21,12 +21,12 @@ namespace CS2 {
 	namespace client {
 		class C_EconWearable : public CS2::client::C_EconEntity {
 		public:
-			int32_t m_nForceSkin; // 0x18e0 | Schema_Builtin | Size: 0x4
-			bool m_bAlwaysAllow; // 0x18e4 | Schema_Builtin | Size: 0x1
+			int32_t m_nForceSkin; // 0x18c0 | Schema_Builtin | Size: 0x4
+			bool m_bAlwaysAllow; // 0x18c4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_EconWearable, m_nForceSkin) == 0x18E0, "m_nForceSkin in C_EconWearable should be at offset 0x18E0");
-		static_assert(offsetof(CS2::client::C_EconWearable, m_bAlwaysAllow) == 0x18E4, "m_bAlwaysAllow in C_EconWearable should be at offset 0x18E4");
-		static_assert(sizeof(CS2::client::C_EconWearable) == 0x18E8, "C_EconWearable size should be 0x18E8");
+		static_assert(offsetof(CS2::client::C_EconWearable, m_nForceSkin) == 0x18C0, "m_nForceSkin in C_EconWearable should be at offset 0x18C0");
+		static_assert(offsetof(CS2::client::C_EconWearable, m_bAlwaysAllow) == 0x18C4, "m_bAlwaysAllow in C_EconWearable should be at offset 0x18C4");
+		static_assert(sizeof(CS2::client::C_EconWearable) == 0x18C8, "C_EconWearable size should be 0x18C8");
 	}
 }

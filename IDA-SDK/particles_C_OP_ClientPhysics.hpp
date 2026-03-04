@@ -5,9 +5,11 @@
 class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particles_CParticleVisibilityInputs.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
+#include "particleslib_CParticleCollectionFloatInput.hpp"
 
 class particles_C_OP_ClientPhysics {
-    char vTable1797[0x8];
+    void **__vftable_0;
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -16,37 +18,37 @@ class particles_C_OP_ClientPhysics {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1798[0x3];
+    char pad_691[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1799[0x2];
+    char pad_692[0x2];
     bool m_bDisableOperator;
-    char pad_1800[0x1];
+    char pad_693[0x1];
     CUtlString m_Notes;
-    char end_pad_1801[0x18];
+    char end_pad_694[0x18];
     particles_CParticleVisibilityInputs VisibilityInputs;
     bool m_bCannotBeRefracted;
     bool m_bSkipRenderingOnMobile;
-    char end_pad_1786[0x6];
+    char end_pad_679[0x6];
     CUtlString m_strPhysicsType;
     bool m_bStartAsleep;
-    char pad_2006[0x7];
+    char pad_899[0x7];
     particleslib_CParticleCollectionFloatInput m_flPlayerWakeRadius;
     particleslib_CParticleCollectionFloatInput m_flVehicleWakeRadius;
     bool m_bUseHighQualitySimulation;
-    char pad_2007[0x3];
+    char pad_900[0x3];
     int32_t m_nMaxParticleCount;
     bool m_bRespectExclusionVolumes;
     bool m_bKillParticles;
     bool m_bDeleteSim;
-    char pad_2008[0x1];
+    char pad_901[0x1];
     int32_t m_nControlPoint;
     int32_t m_nForcedSimId;
     particles_ParticleColorBlendType_t m_nColorBlendType;
     particles_ParticleAttrBoxFlags_t m_nForcedStatusEffects;
-    char end_pad_2009[0x4];
+    char end_pad_902[0x4];
 };

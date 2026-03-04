@@ -22,7 +22,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_name; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector< float32 > m_weights; // 0x8 | Schema_Atomic | Size: 0x18
-			// char  m_weights[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
+			// char m_weights[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::animgraphlib::WeightList, m_name) == 0x0, "m_name in WeightList should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::WeightList, m_weights) == 0x8, "m_weights in WeightList should be at offset 0x8");

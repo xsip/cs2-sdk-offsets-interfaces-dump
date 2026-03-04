@@ -21,12 +21,12 @@ namespace CS2 {
 	namespace server {
 		class CEnvBeverage : public CS2::server::CBaseEntity {
 		public:
-			bool m_CanInDispenser; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_CanInDispenser; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nBeverageType; // 0x4f4 | Schema_Builtin | Size: 0x4
+			int32_t m_nBeverageType; // 0x4ac | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CEnvBeverage, m_CanInDispenser) == 0x4F0, "m_CanInDispenser in CEnvBeverage should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvBeverage, m_nBeverageType) == 0x4F4, "m_nBeverageType in CEnvBeverage should be at offset 0x4F4");
-		static_assert(sizeof(CS2::server::CEnvBeverage) == 0x4F8, "CEnvBeverage size should be 0x4F8");
+		static_assert(offsetof(CS2::server::CEnvBeverage, m_CanInDispenser) == 0x4A8, "m_CanInDispenser in CEnvBeverage should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvBeverage, m_nBeverageType) == 0x4AC, "m_nBeverageType in CEnvBeverage should be at offset 0x4AC");
+		static_assert(sizeof(CS2::server::CEnvBeverage) == 0x4B0, "CEnvBeverage size should be 0x4B0");
 	}
 }

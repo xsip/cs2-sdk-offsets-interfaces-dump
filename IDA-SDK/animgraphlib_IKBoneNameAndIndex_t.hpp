@@ -5,5 +5,5 @@
 
 class animgraphlib_IKBoneNameAndIndex_t {
     CUtlString m_Name;
-    char end_pad_267[0x8];
+    char end_pad_292[0x8];
 };

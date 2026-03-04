@@ -6,5 +6,5 @@
 class client_CDecalGroupVData {
     char m_vecOptions[0x18];
     float32 m_flTotalProbability;
-    char end_pad_903[0x4];
+    char end_pad_1702[0x4];
 };

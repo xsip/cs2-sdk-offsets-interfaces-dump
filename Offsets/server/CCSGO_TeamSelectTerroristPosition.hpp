@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xD08
+			// Class size: 0xCC0
 			namespace CCSGO_TeamSelectTerroristPosition /*: public CS2::server::CCSGO_TeamSelectCharacterPosition*/ {
 				// NO SCHEMA DATA FOUND!
 			}

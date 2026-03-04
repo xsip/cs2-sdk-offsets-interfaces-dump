@@ -8,5 +8,5 @@ export const server_CAttributeManager  = {
 	m_hOuter: 36n, // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 	m_bPreventLoopback: 40n, // bool m_bPreventLoopback; |  0x28 | Schema_Builtin | Size: 0x1
 	m_ProviderType: 44n, // client::attributeprovidertypes_t  | Schema_DeclaredEnum | Size: 0x4
-	m_CachedResults: 48n, // server::CUtlVector<server::CAttributeManager::cached_attribute_float_t>  | Schema_Atomic | Size: 0x18
+	m_CachedResults: 48n, // server::CUtlVector<server::cached_attribute_float_t>  | Schema_Atomic | Size: 0x18
 }

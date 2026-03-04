@@ -23,16 +23,16 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerSelector : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
 		public:
-			soundsystem_voicecontainers::PlayBackMode_t m_mode; // 0xb8 | Schema_DeclaredEnum | Size: 0x4
+			soundsystem_voicecontainers::PlayBackMode_t m_mode; // 0xa8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
-			soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xc0 | Schema_DeclaredClass | Size: 0x38
-			GlobalTypes::CUtlVector< float32 > m_fProbabilityWeights; // 0xf8 | Schema_Atomic | Size: 0x18
-			// char  m_fProbabilityWeights[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
+			soundsystem_voicecontainers::CSoundContainerReferenceArray m_soundsToPlay; // 0xb0 | Schema_DeclaredClass | Size: 0x38
+			GlobalTypes::CUtlVector< float32 > m_fProbabilityWeights; // 0xe8 | Schema_Atomic | Size: 0x18
+			// char m_fProbabilityWeights[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x20); // End padding
 		};
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_mode) == 0xB8, "m_mode in CVoiceContainerSelector should be at offset 0xB8");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_soundsToPlay) == 0xC0, "m_soundsToPlay in CVoiceContainerSelector should be at offset 0xC0");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_fProbabilityWeights) == 0xF8, "m_fProbabilityWeights in CVoiceContainerSelector should be at offset 0xF8");
-		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector) == 0x130, "CVoiceContainerSelector size should be 0x130");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_mode) == 0xA8, "m_mode in CVoiceContainerSelector should be at offset 0xA8");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_soundsToPlay) == 0xB0, "m_soundsToPlay in CVoiceContainerSelector should be at offset 0xB0");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_fProbabilityWeights) == 0xE8, "m_fProbabilityWeights in CVoiceContainerSelector should be at offset 0xE8");
+		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector) == 0x120, "CVoiceContainerSelector size should be 0x120");
 	}
 }

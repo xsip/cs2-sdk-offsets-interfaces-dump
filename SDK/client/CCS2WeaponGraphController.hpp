@@ -21,68 +21,68 @@ namespace CS2 {
 	namespace client {
 		class CCS2WeaponGraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
-			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_action; // 0x80 | Schema_Atomic | Size: 0x20
-			char  m_action[0x20]; // 0x80 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< bool > m_bActionReset; // 0xa0 | Schema_Atomic | Size: 0x18
-			char  m_bActionReset[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponActionSpeedScale; // 0xb8 | Schema_Atomic | Size: 0x18
-			char  m_flWeaponActionSpeedScale[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponCategory; // 0xd0 | Schema_Atomic | Size: 0x20
-			char  m_weaponCategory[0x20]; // 0xd0 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponType; // 0xf0 | Schema_Atomic | Size: 0x20
-			char  m_weaponType[0x20]; // 0xf0 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponExtraInfo; // 0x110 | Schema_Atomic | Size: 0x20
-			char  m_weaponExtraInfo[0x20]; // 0x110 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponAmmo; // 0x130 | Schema_Atomic | Size: 0x18
-			char  m_flWeaponAmmo[0x18]; // 0x130 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponAmmoMax; // 0x148 | Schema_Atomic | Size: 0x18
-			char  m_flWeaponAmmoMax[0x18]; // 0x148 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponAmmoReserve; // 0x160 | Schema_Atomic | Size: 0x18
-			char  m_flWeaponAmmoReserve[0x18]; // 0x160 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< bool > m_bWeaponIsSilenced; // 0x178 | Schema_Atomic | Size: 0x18
-			char  m_bWeaponIsSilenced[0x18]; // 0x178 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponIronsightAmount; // 0x190 | Schema_Atomic | Size: 0x18
-			char  m_flWeaponIronsightAmount[0x18]; // 0x190 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< bool > m_bIsUsingLegacyModel; // 0x1a8 | Schema_Atomic | Size: 0x18
-			char  m_bIsUsingLegacyModel[0x18]; // 0x1a8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_idleVariation; // 0x1c0 | Schema_Atomic | Size: 0x18
-			char  m_idleVariation[0x18]; // 0x1c0 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_deployVariation; // 0x1d8 | Schema_Atomic | Size: 0x18
-			char  m_deployVariation[0x18]; // 0x1d8 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_attackType; // 0x1f0 | Schema_Atomic | Size: 0x20
-			char  m_attackType[0x20]; // 0x1f0 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_attackThrowStrength; // 0x210 | Schema_Atomic | Size: 0x18
-			char  m_attackThrowStrength[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flAttackVariation; // 0x228 | Schema_Atomic | Size: 0x18
-			char  m_flAttackVariation[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_inspectVariation; // 0x240 | Schema_Atomic | Size: 0x18
-			char  m_inspectVariation[0x18]; // 0x240 | Schema_Atomic | Size: 0x18
-			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_inspectExtraInfo; // 0x258 | Schema_Atomic | Size: 0x20
-			char  m_inspectExtraInfo[0x20]; // 0x258 | Schema_Atomic | Size: 0x20
-			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_reloadStage; // 0x278 | Schema_Atomic | Size: 0x20
-			char  m_reloadStage[0x20]; // 0x278 | Schema_Atomic | Size: 0x20
-			S2_PAD(0x368); // End padding
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_action; // 0x90 | Schema_Atomic | Size: 0x18
+			char m_action[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< bool > m_bActionReset; // 0xa8 | Schema_Atomic | Size: 0x18
+			char m_bActionReset[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponActionSpeedScale; // 0xc0 | Schema_Atomic | Size: 0x18
+			char m_flWeaponActionSpeedScale[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponCategory; // 0xd8 | Schema_Atomic | Size: 0x18
+			char m_weaponCategory[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponType; // 0xf0 | Schema_Atomic | Size: 0x18
+			char m_weaponType[0x18]; // 0xf0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_weaponExtraInfo; // 0x108 | Schema_Atomic | Size: 0x18
+			char m_weaponExtraInfo[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponAmmo; // 0x120 | Schema_Atomic | Size: 0x18
+			char m_flWeaponAmmo[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponAmmoMax; // 0x138 | Schema_Atomic | Size: 0x18
+			char m_flWeaponAmmoMax[0x18]; // 0x138 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponAmmoReserve; // 0x150 | Schema_Atomic | Size: 0x18
+			char m_flWeaponAmmoReserve[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< bool > m_bWeaponIsSilenced; // 0x168 | Schema_Atomic | Size: 0x18
+			char m_bWeaponIsSilenced[0x18]; // 0x168 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flWeaponIronsightAmount; // 0x180 | Schema_Atomic | Size: 0x18
+			char m_flWeaponIronsightAmount[0x18]; // 0x180 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< bool > m_bIsUsingLegacyModel; // 0x198 | Schema_Atomic | Size: 0x18
+			char m_bIsUsingLegacyModel[0x18]; // 0x198 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_idleVariation; // 0x1b0 | Schema_Atomic | Size: 0x18
+			char m_idleVariation[0x18]; // 0x1b0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_deployVariation; // 0x1c8 | Schema_Atomic | Size: 0x18
+			char m_deployVariation[0x18]; // 0x1c8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_attackType; // 0x1e0 | Schema_Atomic | Size: 0x18
+			char m_attackType[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_attackThrowStrength; // 0x1f8 | Schema_Atomic | Size: 0x18
+			char m_attackThrowStrength[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_flAttackVariation; // 0x210 | Schema_Atomic | Size: 0x18
+			char m_flAttackVariation[0x18]; // 0x210 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef< float32 > m_inspectVariation; // 0x228 | Schema_Atomic | Size: 0x18
+			char m_inspectVariation[0x18]; // 0x228 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_inspectExtraInfo; // 0x240 | Schema_Atomic | Size: 0x18
+			char m_inspectExtraInfo[0x18]; // 0x240 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CAnimGraph2ParamOptionalRef<GlobalTypes::CGlobalSymbol> m_reloadStage; // 0x258 | Schema_Atomic | Size: 0x18
+			char m_reloadStage[0x18]; // 0x258 | Schema_Atomic | Size: 0x18
+			S2_PAD(0x30); // End padding
 		};
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_action) == 0x80, "m_action in CCS2WeaponGraphController should be at offset 0x80");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_bActionReset) == 0xA0, "m_bActionReset in CCS2WeaponGraphController should be at offset 0xA0");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponActionSpeedScale) == 0xB8, "m_flWeaponActionSpeedScale in CCS2WeaponGraphController should be at offset 0xB8");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_weaponCategory) == 0xD0, "m_weaponCategory in CCS2WeaponGraphController should be at offset 0xD0");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_action) == 0x90, "m_action in CCS2WeaponGraphController should be at offset 0x90");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_bActionReset) == 0xA8, "m_bActionReset in CCS2WeaponGraphController should be at offset 0xA8");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponActionSpeedScale) == 0xC0, "m_flWeaponActionSpeedScale in CCS2WeaponGraphController should be at offset 0xC0");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_weaponCategory) == 0xD8, "m_weaponCategory in CCS2WeaponGraphController should be at offset 0xD8");
 		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_weaponType) == 0xF0, "m_weaponType in CCS2WeaponGraphController should be at offset 0xF0");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_weaponExtraInfo) == 0x110, "m_weaponExtraInfo in CCS2WeaponGraphController should be at offset 0x110");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponAmmo) == 0x130, "m_flWeaponAmmo in CCS2WeaponGraphController should be at offset 0x130");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponAmmoMax) == 0x148, "m_flWeaponAmmoMax in CCS2WeaponGraphController should be at offset 0x148");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponAmmoReserve) == 0x160, "m_flWeaponAmmoReserve in CCS2WeaponGraphController should be at offset 0x160");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_bWeaponIsSilenced) == 0x178, "m_bWeaponIsSilenced in CCS2WeaponGraphController should be at offset 0x178");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponIronsightAmount) == 0x190, "m_flWeaponIronsightAmount in CCS2WeaponGraphController should be at offset 0x190");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_bIsUsingLegacyModel) == 0x1A8, "m_bIsUsingLegacyModel in CCS2WeaponGraphController should be at offset 0x1A8");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_idleVariation) == 0x1C0, "m_idleVariation in CCS2WeaponGraphController should be at offset 0x1C0");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_deployVariation) == 0x1D8, "m_deployVariation in CCS2WeaponGraphController should be at offset 0x1D8");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_attackType) == 0x1F0, "m_attackType in CCS2WeaponGraphController should be at offset 0x1F0");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_attackThrowStrength) == 0x210, "m_attackThrowStrength in CCS2WeaponGraphController should be at offset 0x210");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flAttackVariation) == 0x228, "m_flAttackVariation in CCS2WeaponGraphController should be at offset 0x228");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_inspectVariation) == 0x240, "m_inspectVariation in CCS2WeaponGraphController should be at offset 0x240");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_inspectExtraInfo) == 0x258, "m_inspectExtraInfo in CCS2WeaponGraphController should be at offset 0x258");
-		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_reloadStage) == 0x278, "m_reloadStage in CCS2WeaponGraphController should be at offset 0x278");
-		static_assert(sizeof(CS2::client::CCS2WeaponGraphController) == 0x600, "CCS2WeaponGraphController size should be 0x600");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_weaponExtraInfo) == 0x108, "m_weaponExtraInfo in CCS2WeaponGraphController should be at offset 0x108");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponAmmo) == 0x120, "m_flWeaponAmmo in CCS2WeaponGraphController should be at offset 0x120");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponAmmoMax) == 0x138, "m_flWeaponAmmoMax in CCS2WeaponGraphController should be at offset 0x138");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponAmmoReserve) == 0x150, "m_flWeaponAmmoReserve in CCS2WeaponGraphController should be at offset 0x150");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_bWeaponIsSilenced) == 0x168, "m_bWeaponIsSilenced in CCS2WeaponGraphController should be at offset 0x168");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flWeaponIronsightAmount) == 0x180, "m_flWeaponIronsightAmount in CCS2WeaponGraphController should be at offset 0x180");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_bIsUsingLegacyModel) == 0x198, "m_bIsUsingLegacyModel in CCS2WeaponGraphController should be at offset 0x198");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_idleVariation) == 0x1B0, "m_idleVariation in CCS2WeaponGraphController should be at offset 0x1B0");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_deployVariation) == 0x1C8, "m_deployVariation in CCS2WeaponGraphController should be at offset 0x1C8");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_attackType) == 0x1E0, "m_attackType in CCS2WeaponGraphController should be at offset 0x1E0");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_attackThrowStrength) == 0x1F8, "m_attackThrowStrength in CCS2WeaponGraphController should be at offset 0x1F8");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_flAttackVariation) == 0x210, "m_flAttackVariation in CCS2WeaponGraphController should be at offset 0x210");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_inspectVariation) == 0x228, "m_inspectVariation in CCS2WeaponGraphController should be at offset 0x228");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_inspectExtraInfo) == 0x240, "m_inspectExtraInfo in CCS2WeaponGraphController should be at offset 0x240");
+		static_assert(offsetof(CS2::client::CCS2WeaponGraphController, m_reloadStage) == 0x258, "m_reloadStage in CCS2WeaponGraphController should be at offset 0x258");
+		static_assert(sizeof(CS2::client::CCS2WeaponGraphController) == 0x2A0, "CCS2WeaponGraphController size should be 0x2A0");
 	}
 }

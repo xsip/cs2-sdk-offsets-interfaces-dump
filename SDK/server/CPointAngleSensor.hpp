@@ -28,37 +28,37 @@ namespace CS2 {
 	namespace server {
 		class CPointAngleSensor : public CS2::server::CPointEntity {
 		public:
-			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlSymbolLarge m_nLookAtName; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x500 | Schema_Atomic | Size: 0x4
-			// char  m_hTargetEntity[0x4]; // 0x500 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hLookAtEntity; // 0x504 | Schema_Atomic | Size: 0x4
-			// char  m_hLookAtEntity[0x4]; // 0x504 | Schema_Atomic | Size: 0x4
-			float32 m_flDuration; // 0x508 | Schema_Builtin | Size: 0x4
-			float32 m_flDotTolerance; // 0x50c | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_flFacingTime; // 0x510 | Schema_DeclaredClass | Size: 0x4
-			bool m_bFired; // 0x514 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_nLookAtName; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hTargetEntity; // 0x4b8 | Schema_Atomic | Size: 0x4
+			// char m_hTargetEntity[0x4]; // 0x4b8 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hLookAtEntity; // 0x4bc | Schema_Atomic | Size: 0x4
+			// char m_hLookAtEntity[0x4]; // 0x4bc | Schema_Atomic | Size: 0x4
+			float32 m_flDuration; // 0x4c0 | Schema_Builtin | Size: 0x4
+			float32 m_flDotTolerance; // 0x4c4 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flFacingTime; // 0x4c8 | Schema_DeclaredClass | Size: 0x4
+			bool m_bFired; // 0x4cc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::CEntityIOOutput m_OnFacingLookat; // 0x518 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnNotFacingLookat; // 0x540 | Schema_DeclaredClass | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate<GlobalTypes::Vector> m_TargetDir; // 0x568 | Schema_Atomic | Size: 0x28
-			char  m_TargetDir[0x28]; // 0x568 | Schema_Atomic | Size: 0x28
-			// GlobalTypes::CEntityOutputTemplate< float32 > m_FacingPercentage; // 0x590 | Schema_Atomic | Size: 0x28
-			char  m_FacingPercentage[0x28]; // 0x590 | Schema_Atomic | Size: 0x28
+			entity2::CEntityIOOutput m_OnFacingLookat; // 0x4d0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnNotFacingLookat; // 0x4e8 | Schema_DeclaredClass | Size: 0x18
+			// GlobalTypes::CEntityOutputTemplate< Vector, Vector > m_TargetDir; // 0x500 | Schema_Atomic | Size: 0x28
+			char m_TargetDir[0x28]; // 0x500 | Schema_Atomic | Size: 0x28
+			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_FacingPercentage; // 0x528 | Schema_Atomic | Size: 0x20
+			char m_FacingPercentage[0x20]; // 0x528 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_bDisabled) == 0x4F0, "m_bDisabled in CPointAngleSensor should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_nLookAtName) == 0x4F8, "m_nLookAtName in CPointAngleSensor should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_hTargetEntity) == 0x500, "m_hTargetEntity in CPointAngleSensor should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_hLookAtEntity) == 0x504, "m_hLookAtEntity in CPointAngleSensor should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_flDuration) == 0x508, "m_flDuration in CPointAngleSensor should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_flDotTolerance) == 0x50C, "m_flDotTolerance in CPointAngleSensor should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_flFacingTime) == 0x510, "m_flFacingTime in CPointAngleSensor should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_bFired) == 0x514, "m_bFired in CPointAngleSensor should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_OnFacingLookat) == 0x518, "m_OnFacingLookat in CPointAngleSensor should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_OnNotFacingLookat) == 0x540, "m_OnNotFacingLookat in CPointAngleSensor should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_TargetDir) == 0x568, "m_TargetDir in CPointAngleSensor should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CPointAngleSensor, m_FacingPercentage) == 0x590, "m_FacingPercentage in CPointAngleSensor should be at offset 0x590");
-		static_assert(sizeof(CS2::server::CPointAngleSensor) == 0x5B8, "CPointAngleSensor size should be 0x5B8");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_bDisabled) == 0x4A8, "m_bDisabled in CPointAngleSensor should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_nLookAtName) == 0x4B0, "m_nLookAtName in CPointAngleSensor should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_hTargetEntity) == 0x4B8, "m_hTargetEntity in CPointAngleSensor should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_hLookAtEntity) == 0x4BC, "m_hLookAtEntity in CPointAngleSensor should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_flDuration) == 0x4C0, "m_flDuration in CPointAngleSensor should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_flDotTolerance) == 0x4C4, "m_flDotTolerance in CPointAngleSensor should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_flFacingTime) == 0x4C8, "m_flFacingTime in CPointAngleSensor should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_bFired) == 0x4CC, "m_bFired in CPointAngleSensor should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_OnFacingLookat) == 0x4D0, "m_OnFacingLookat in CPointAngleSensor should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_OnNotFacingLookat) == 0x4E8, "m_OnNotFacingLookat in CPointAngleSensor should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_TargetDir) == 0x500, "m_TargetDir in CPointAngleSensor should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CPointAngleSensor, m_FacingPercentage) == 0x528, "m_FacingPercentage in CPointAngleSensor should be at offset 0x528");
+		static_assert(sizeof(CS2::server::CPointAngleSensor) == 0x548, "CPointAngleSensor size should be 0x548");
 	}
 }

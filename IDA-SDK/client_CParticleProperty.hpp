@@ -4,5 +4,5 @@
 
 
 class client_CParticleProperty {
-    char pad_693[0x28];
+    char pad_1477[0x28];
 };

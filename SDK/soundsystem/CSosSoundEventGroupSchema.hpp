@@ -48,7 +48,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_opvarString; // 0x50 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlVector<soundsystem::CSosGroupActionSchema*> m_vActions; // 0x58 | Schema_Atomic | Size: 0x18
-			// char  m_vActions[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
+			// char m_vActions[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_nGroupType) == 0x8, "m_nGroupType in CSosSoundEventGroupSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_bBlocksEvents) == 0xC, "m_bBlocksEvents in CSosSoundEventGroupSchema should be at offset 0xC");

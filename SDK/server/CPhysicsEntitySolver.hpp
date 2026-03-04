@@ -28,17 +28,17 @@ namespace CS2 {
 		class CPhysicsEntitySolver : public CS2::server::CLogicalEntity {
 		public:
 			S2_PAD(0x18);
-			GlobalTypes::CHandle<server::CBaseEntity> m_hMovingEntity; // 0x508 | Schema_Atomic | Size: 0x4
-			// char  m_hMovingEntity[0x4]; // 0x508 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hPhysicsBlocker; // 0x50c | Schema_Atomic | Size: 0x4
-			// char  m_hPhysicsBlocker[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
-			float32 m_separationDuration; // 0x510 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_cancelTime; // 0x514 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hMovingEntity; // 0x4c0 | Schema_Atomic | Size: 0x4
+			// char m_hMovingEntity[0x4]; // 0x4c0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hPhysicsBlocker; // 0x4c4 | Schema_Atomic | Size: 0x4
+			// char m_hPhysicsBlocker[0x4]; // 0x4c4 | Schema_Atomic | Size: 0x4
+			float32 m_separationDuration; // 0x4c8 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_cancelTime; // 0x4cc | Schema_DeclaredClass | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_hMovingEntity) == 0x508, "m_hMovingEntity in CPhysicsEntitySolver should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_hPhysicsBlocker) == 0x50C, "m_hPhysicsBlocker in CPhysicsEntitySolver should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_separationDuration) == 0x510, "m_separationDuration in CPhysicsEntitySolver should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_cancelTime) == 0x514, "m_cancelTime in CPhysicsEntitySolver should be at offset 0x514");
-		static_assert(sizeof(CS2::server::CPhysicsEntitySolver) == 0x518, "CPhysicsEntitySolver size should be 0x518");
+		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_hMovingEntity) == 0x4C0, "m_hMovingEntity in CPhysicsEntitySolver should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_hPhysicsBlocker) == 0x4C4, "m_hPhysicsBlocker in CPhysicsEntitySolver should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_separationDuration) == 0x4C8, "m_separationDuration in CPhysicsEntitySolver should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_cancelTime) == 0x4CC, "m_cancelTime in CPhysicsEntitySolver should be at offset 0x4CC");
+		static_assert(sizeof(CS2::server::CPhysicsEntitySolver) == 0x4D0, "CPhysicsEntitySolver size should be 0x4D0");
 	}
 }

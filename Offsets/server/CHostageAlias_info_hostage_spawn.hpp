@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x2EB0
+			// Class size: 0x2E00
 			namespace CHostageAlias_info_hostage_spawn /*: public CS2::server::CHostage*/ {
 				// NO SCHEMA DATA FOUND!
 			}

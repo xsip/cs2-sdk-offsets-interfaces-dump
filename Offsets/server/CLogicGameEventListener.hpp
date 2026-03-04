@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x540
+			// Class size: 0x4E8
 			namespace CLogicGameEventListener /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_OnEventFired = 0x500; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_iszGameEventName = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszGameEventItem = 0x530; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bEnabled = 0x538; // bool m_bEnabled; |  0x538 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bStartDisabled = 0x539; // bool m_bStartDisabled; |  0x539 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnEventFired = 0x4b8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_iszGameEventName = 0x4d0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszGameEventItem = 0x4d8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bEnabled = 0x4e0; // bool m_bEnabled; |  0x4e0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bStartDisabled = 0x4e1; // bool m_bStartDisabled; |  0x4e1 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

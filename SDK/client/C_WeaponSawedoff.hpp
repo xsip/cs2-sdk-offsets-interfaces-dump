@@ -3,17 +3,25 @@
 
 #pragma once
 
-#include <SDK/GlobalTypes.hpp>
+#ifndef CUSTOM_GLOBAL_TYPES
+	#include <SDK/GlobalTypes.hpp>
+#else
+	#include <Custom/GlobalTypes.hpp>
+#endif
 
-#include <SDK/client/C_CSWeaponBase.hpp>
+
+#include <SDK/client/C_CSWeaponBaseShotgun.hpp>
 
 
 
+
+
+using namespace GlobalTypes;
 namespace CS2 {
 	namespace client {
-		class C_WeaponSawedoff : public CS2::client::C_CSWeaponBase {
+		class C_WeaponSawedoff : public CS2::client::C_CSWeaponBaseShotgun {
 		public:
 		};
-		static_assert(sizeof(CS2::client::C_WeaponSawedoff) == 0x1F90, "C_WeaponSawedoff size should be 0x1F90");
+		static_assert(sizeof(CS2::client::C_WeaponSawedoff) == 0x1F40, "C_WeaponSawedoff size should be 0x1F40");
 	}
 }

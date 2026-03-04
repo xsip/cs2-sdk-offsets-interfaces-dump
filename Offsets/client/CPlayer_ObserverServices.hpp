@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x58
+			// Class size: 0x60
 			namespace CPlayer_ObserverServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_iObserverMode = 0x40; // uint8_t m_iObserverMode; |  0x40 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hObserverTarget = 0x44; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iObserverLastMode = 0x48; // client::ObserverMode_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bForcedObserverMode = 0x4c; // bool m_bForcedObserverMode; |  0x4c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flObserverChaseDistance = 0x50; // float32 m_flObserverChaseDistance; |  0x50 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flObserverChaseDistanceCalcTime = 0x54; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_iObserverMode = 0x48; // uint8_t m_iObserverMode; |  0x48 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hObserverTarget = 0x4c; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iObserverLastMode = 0x50; // client::ObserverMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bForcedObserverMode = 0x54; // bool m_bForcedObserverMode; |  0x54 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flObserverChaseDistance = 0x58; // float32 m_flObserverChaseDistance; |  0x58 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flObserverChaseDistanceCalcTime = 0x5c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 			}
 		}
 	}

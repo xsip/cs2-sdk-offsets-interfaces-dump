@@ -6,9 +6,13 @@ class particleslib_CParticleCollectionFloatInput;
 #include "particleslib_CParticleCollectionFloatInput.hpp"
 #include "particles_ParticleAttributeIndex_t.hpp"
 #include "particleslib_CPerParticleFloatInput.hpp"
+#include "particleslib_CPerParticleFloatInput.hpp"
+#include "particleslib_CPerParticleFloatInput.hpp"
+#include "particleslib_CPerParticleFloatInput.hpp"
+#include "particleslib_CPerParticleFloatInput.hpp"
 
 class particles_C_INIT_DistanceToCPInit {
-    char vTable1797[0x8];
+    void **__vftable_0;
     particleslib_CParticleCollectionFloatInput m_flOpStrength;
     particles_ParticleEndcapMode_t m_nOpEndCapState;
     float32 m_flOpStartFadeInTime;
@@ -17,22 +21,22 @@ class particles_C_INIT_DistanceToCPInit {
     float32 m_flOpEndFadeOutTime;
     float32 m_flOpFadeOscillatePeriod;
     bool m_bNormalizeToStopTime;
-    char pad_1798[0x3];
+    char pad_691[0x3];
     float32 m_flOpTimeOffsetMin;
     float32 m_flOpTimeOffsetMax;
     int32_t m_nOpTimeOffsetSeed;
     int32_t m_nOpTimeScaleSeed;
     float32 m_flOpTimeScaleMin;
     float32 m_flOpTimeScaleMax;
-    char pad_1799[0x2];
+    char pad_692[0x2];
     bool m_bDisableOperator;
-    char pad_1800[0x1];
+    char pad_693[0x1];
     CUtlString m_Notes;
-    char end_pad_1801[0x18];
+    char end_pad_694[0x18];
     int32_t m_nAssociatedEmitterIndex;
-    char end_pad_1805[0x4];
+    char end_pad_698[0x4];
     particles_ParticleAttributeIndex_t m_nFieldOutput;
-    char pad_1887[0x4];
+    char pad_780[0x4];
     particleslib_CPerParticleFloatInput m_flInputMin;
     particleslib_CPerParticleFloatInput m_flInputMax;
     particleslib_CPerParticleFloatInput m_flOutputMin;
@@ -40,15 +44,15 @@ class particles_C_INIT_DistanceToCPInit {
     int32_t m_nStartCP;
     bool m_bLOS;
     char m_CollisionGroupName[128];
-    char pad_1888[0x3];
+    char pad_781[0x3];
     particles_ParticleTraceSet_t m_nTraceSet;
-    char pad_1889[0x4];
+    char pad_782[0x4];
     particleslib_CPerParticleFloatInput m_flMaxTraceLength;
     float32 m_flLOSScale;
     particles_ParticleSetMethod_t m_nSetMethod;
     bool m_bActiveRange;
-    char pad_1890[0x3];
+    char pad_783[0x3];
     Vector m_vecDistanceScale;
     float32 m_flRemapBias;
-    char end_pad_1891[0x4];
+    char end_pad_784[0x4];
 };

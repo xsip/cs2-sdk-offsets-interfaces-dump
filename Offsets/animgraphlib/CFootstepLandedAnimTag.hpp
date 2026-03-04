@@ -8,12 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace animgraphlib {
-			// Class size: 0x78
+			// Class size: 0x80
 			namespace CFootstepLandedAnimTag /*: public CS2::animgraphlib::CAnimTagBase*/ {
 				constexpr std::ptrdiff_t m_FootstepType = 0x58; // animgraphlib::FootstepLandedFootSoundType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_OverrideSoundName = 0x60; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_DebugAnimSourceString = 0x68; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_BoneName = 0x70; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_footstepJumpPhase = 0x78; // animgraphlib::FootstepJumpPhase_t  | Schema_DeclaredEnum | Size: 0x1
 			}
 		}
 	}

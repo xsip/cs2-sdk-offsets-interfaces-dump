@@ -21,28 +21,28 @@ namespace CS2 {
 	namespace client {
 		class C_CSGO_MapPreviewCameraPathNode : public CS2::client::C_BaseEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_szParentPathUniqueID; // 0x5f8 | Schema_Atomic | Size: 0x8
-			int32_t m_nPathIndex; // 0x600 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vInTangentLocal; // 0x604 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOutTangentLocal; // 0x610 | Schema_Atomic | Size: 0xc
-			float32 m_flFOV; // 0x61c | Schema_Builtin | Size: 0x4
-			float32 m_flCameraSpeed; // 0x620 | Schema_Builtin | Size: 0x4
-			float32 m_flEaseIn; // 0x624 | Schema_Builtin | Size: 0x4
-			float32 m_flEaseOut; // 0x628 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vInTangentWorld; // 0x62c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOutTangentWorld; // 0x638 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CUtlSymbolLarge m_szParentPathUniqueID; // 0x608 | Schema_Atomic | Size: 0x8
+			int32_t m_nPathIndex; // 0x610 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vInTangentLocal; // 0x614 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOutTangentLocal; // 0x620 | Schema_Atomic | Size: 0xc
+			float32 m_flFOV; // 0x62c | Schema_Builtin | Size: 0x4
+			float32 m_flCameraSpeed; // 0x630 | Schema_Builtin | Size: 0x4
+			float32 m_flEaseIn; // 0x634 | Schema_Builtin | Size: 0x4
+			float32 m_flEaseOut; // 0x638 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vInTangentWorld; // 0x63c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vOutTangentWorld; // 0x648 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_szParentPathUniqueID) == 0x5F8, "m_szParentPathUniqueID in C_CSGO_MapPreviewCameraPathNode should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_nPathIndex) == 0x600, "m_nPathIndex in C_CSGO_MapPreviewCameraPathNode should be at offset 0x600");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vInTangentLocal) == 0x604, "m_vInTangentLocal in C_CSGO_MapPreviewCameraPathNode should be at offset 0x604");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vOutTangentLocal) == 0x610, "m_vOutTangentLocal in C_CSGO_MapPreviewCameraPathNode should be at offset 0x610");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flFOV) == 0x61C, "m_flFOV in C_CSGO_MapPreviewCameraPathNode should be at offset 0x61C");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flCameraSpeed) == 0x620, "m_flCameraSpeed in C_CSGO_MapPreviewCameraPathNode should be at offset 0x620");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flEaseIn) == 0x624, "m_flEaseIn in C_CSGO_MapPreviewCameraPathNode should be at offset 0x624");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flEaseOut) == 0x628, "m_flEaseOut in C_CSGO_MapPreviewCameraPathNode should be at offset 0x628");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vInTangentWorld) == 0x62C, "m_vInTangentWorld in C_CSGO_MapPreviewCameraPathNode should be at offset 0x62C");
-		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vOutTangentWorld) == 0x638, "m_vOutTangentWorld in C_CSGO_MapPreviewCameraPathNode should be at offset 0x638");
-		static_assert(sizeof(CS2::client::C_CSGO_MapPreviewCameraPathNode) == 0x648, "C_CSGO_MapPreviewCameraPathNode size should be 0x648");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_szParentPathUniqueID) == 0x608, "m_szParentPathUniqueID in C_CSGO_MapPreviewCameraPathNode should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_nPathIndex) == 0x610, "m_nPathIndex in C_CSGO_MapPreviewCameraPathNode should be at offset 0x610");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vInTangentLocal) == 0x614, "m_vInTangentLocal in C_CSGO_MapPreviewCameraPathNode should be at offset 0x614");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vOutTangentLocal) == 0x620, "m_vOutTangentLocal in C_CSGO_MapPreviewCameraPathNode should be at offset 0x620");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flFOV) == 0x62C, "m_flFOV in C_CSGO_MapPreviewCameraPathNode should be at offset 0x62C");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flCameraSpeed) == 0x630, "m_flCameraSpeed in C_CSGO_MapPreviewCameraPathNode should be at offset 0x630");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flEaseIn) == 0x634, "m_flEaseIn in C_CSGO_MapPreviewCameraPathNode should be at offset 0x634");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_flEaseOut) == 0x638, "m_flEaseOut in C_CSGO_MapPreviewCameraPathNode should be at offset 0x638");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vInTangentWorld) == 0x63C, "m_vInTangentWorld in C_CSGO_MapPreviewCameraPathNode should be at offset 0x63C");
+		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPathNode, m_vOutTangentWorld) == 0x648, "m_vOutTangentWorld in C_CSGO_MapPreviewCameraPathNode should be at offset 0x648");
+		static_assert(sizeof(CS2::client::C_CSGO_MapPreviewCameraPathNode) == 0x658, "C_CSGO_MapPreviewCameraPathNode size should be 0x658");
 	}
 }

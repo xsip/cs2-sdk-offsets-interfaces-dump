@@ -11,6 +11,7 @@
 
 
 #include <SDK/client/CPlayerPawnComponent.hpp>
+#include <SDK/server/CBasePlayerWeapon.hpp>
 
 
 
@@ -21,21 +22,21 @@ namespace CS2 {
 	namespace server {
 		class CPlayer_WeaponServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerWeapon>> m_hMyWeapons; // 0x40 | Schema_Atomic | Size: 0x18
-			char  m_hMyWeapons[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hActiveWeapon; // 0x58 | Schema_Atomic | Size: 0x4
-			// char  m_hActiveWeapon[0x4]; // 0x58 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hLastWeapon; // 0x5c | Schema_Atomic | Size: 0x4
-			// char  m_hLastWeapon[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
-			uint16_t m_iAmmo[32]; // 0x60 | Schema_FixedArray | Size: 0x40
-			bool m_bPreventWeaponPickup; // 0xa0 | Schema_Builtin | Size: 0x1
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBasePlayerWeapon>> m_hMyWeapons; // 0x48 | Schema_Atomic | Size: 0x18
+			char m_hMyWeapons[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hActiveWeapon; // 0x60 | Schema_Atomic | Size: 0x4
+			// char m_hActiveWeapon[0x4]; // 0x60 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBasePlayerWeapon> m_hLastWeapon; // 0x64 | Schema_Atomic | Size: 0x4
+			// char m_hLastWeapon[0x4]; // 0x64 | Schema_Atomic | Size: 0x4
+			uint16_t m_iAmmo[32]; // 0x68 | Schema_FixedArray | Size: 0x40
+			bool m_bPreventWeaponPickup; // 0xa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hMyWeapons) == 0x40, "m_hMyWeapons in CPlayer_WeaponServices should be at offset 0x40");
-		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hActiveWeapon) == 0x58, "m_hActiveWeapon in CPlayer_WeaponServices should be at offset 0x58");
-		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hLastWeapon) == 0x5C, "m_hLastWeapon in CPlayer_WeaponServices should be at offset 0x5C");
-		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_iAmmo) == 0x60, "m_iAmmo in CPlayer_WeaponServices should be at offset 0x60");
-		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_bPreventWeaponPickup) == 0xA0, "m_bPreventWeaponPickup in CPlayer_WeaponServices should be at offset 0xA0");
-		static_assert(sizeof(CS2::server::CPlayer_WeaponServices) == 0xA8, "CPlayer_WeaponServices size should be 0xA8");
+		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hMyWeapons) == 0x48, "m_hMyWeapons in CPlayer_WeaponServices should be at offset 0x48");
+		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hActiveWeapon) == 0x60, "m_hActiveWeapon in CPlayer_WeaponServices should be at offset 0x60");
+		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hLastWeapon) == 0x64, "m_hLastWeapon in CPlayer_WeaponServices should be at offset 0x64");
+		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_iAmmo) == 0x68, "m_iAmmo in CPlayer_WeaponServices should be at offset 0x68");
+		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_bPreventWeaponPickup) == 0xA8, "m_bPreventWeaponPickup in CPlayer_WeaponServices should be at offset 0xA8");
+		static_assert(sizeof(CS2::server::CPlayer_WeaponServices) == 0xB0, "CPlayer_WeaponServices size should be 0xB0");
 	}
 }

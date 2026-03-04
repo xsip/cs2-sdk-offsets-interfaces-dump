@@ -5,5 +5,5 @@
 
 class modellib_CFootCycle {
     float32 m_flCycle;
-    char pad_324[0x4];
+    char pad_326[0x4];
 };

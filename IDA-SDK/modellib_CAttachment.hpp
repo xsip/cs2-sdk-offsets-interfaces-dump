@@ -12,5 +12,5 @@ class modellib_CAttachment {
     bool m_bInfluenceRootTransform[3];
     uint8_t m_nInfluences;
     bool m_bIgnoreRotation;
-    char end_pad_311[0xb];
+    char end_pad_313[0xb];
 };

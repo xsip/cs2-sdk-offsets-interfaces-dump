@@ -22,7 +22,7 @@ namespace CS2 {
 		class CCPPScriptComponentUpdater : public CS2::animgraphlib::CAnimComponentUpdater {
 		public:
 			GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol> m_scriptsToRun; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_scriptsToRun[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_scriptsToRun[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CCPPScriptComponentUpdater, m_scriptsToRun) == 0x30, "m_scriptsToRun in CCPPScriptComponentUpdater should be at offset 0x30");

@@ -12,6 +12,7 @@
 
 #include <SDK/animgraphlib/CAnimTagBase.hpp>
 #include <SDK/animgraphlib/FootstepLandedFootSoundType_t.hpp>
+#include <SDK/animgraphlib/FootstepJumpPhase_t.hpp>
 
 
 
@@ -28,11 +29,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_OverrideSoundName; // 0x60 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_DebugAnimSourceString; // 0x68 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_BoneName; // 0x70 | Schema_Atomic | Size: 0x8
+			animgraphlib::FootstepJumpPhase_t m_footstepJumpPhase; // 0x78 | Schema_DeclaredEnum | Size: 0x1
+			S2_PAD(0x7); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_FootstepType) == 0x58, "m_FootstepType in CFootstepLandedAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_OverrideSoundName) == 0x60, "m_OverrideSoundName in CFootstepLandedAnimTag should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_DebugAnimSourceString) == 0x68, "m_DebugAnimSourceString in CFootstepLandedAnimTag should be at offset 0x68");
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_BoneName) == 0x70, "m_BoneName in CFootstepLandedAnimTag should be at offset 0x70");
-		static_assert(sizeof(CS2::animgraphlib::CFootstepLandedAnimTag) == 0x78, "CFootstepLandedAnimTag size should be 0x78");
+		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_footstepJumpPhase) == 0x78, "m_footstepJumpPhase in CFootstepLandedAnimTag should be at offset 0x78");
+		static_assert(sizeof(CS2::animgraphlib::CFootstepLandedAnimTag) == 0x80, "CFootstepLandedAnimTag size should be 0x80");
 	}
 }

@@ -11,6 +11,7 @@
 
 
 #include <SDK/server/CPointEntity.hpp>
+#include <SDK/server/CBaseModelEntity.hpp>
 
 
 
@@ -21,33 +22,35 @@ namespace CS2 {
 	namespace server {
 		class CInfoOffscreenPanoramaTexture : public CS2::server::CPointEntity {
 		public:
-			bool m_bDisabled; // 0x4f0 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nResolutionX; // 0x4f4 | Schema_Builtin | Size: 0x4
-			int32_t m_nResolutionY; // 0x4f8 | Schema_Builtin | Size: 0x4
+			int32_t m_nResolutionX; // 0x4ac | Schema_Builtin | Size: 0x4
+			int32_t m_nResolutionY; // 0x4b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_szLayoutFileName; // 0x500 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_RenderAttrName; // 0x508 | Schema_Atomic | Size: 0x8
-			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>> m_TargetEntities; // 0x510 | Schema_Atomic | Size: 0x18
-			char  m_TargetEntities[0x18]; // 0x510 | Schema_Atomic | Size: 0x18
-			int32_t m_nTargetChangeCount; // 0x528 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_szPanelType; // 0x4b8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_szLayoutFileName; // 0x4c0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_RenderAttrName; // 0x4c8 | Schema_Atomic | Size: 0x8
+			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>> m_TargetEntities; // 0x4d0 | Schema_Atomic | Size: 0x18
+			char m_TargetEntities[0x18]; // 0x4d0 | Schema_Atomic | Size: 0x18
+			int32_t m_nTargetChangeCount; // 0x4e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x530 | Schema_Atomic | Size: 0x18
-			char  m_vecCSSClasses[0x18]; // 0x530 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlSymbolLarge m_szTargetsName; // 0x548 | Schema_Atomic | Size: 0x8
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>> m_AdditionalTargetEntities; // 0x550 | Schema_Atomic | Size: 0x18
-			char  m_AdditionalTargetEntities[0x18]; // 0x550 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x4f0 | Schema_Atomic | Size: 0x18
+			char m_vecCSSClasses[0x18]; // 0x4f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_szTargetsName; // 0x508 | Schema_Atomic | Size: 0x8
+			server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>> m_AdditionalTargetEntities; // 0x510 | Schema_Atomic | Size: 0x18
+			// char m_AdditionalTargetEntities[0x18]; // 0x510 | Schema_Atomic | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_bDisabled) == 0x4F0, "m_bDisabled in CInfoOffscreenPanoramaTexture should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nResolutionX) == 0x4F4, "m_nResolutionX in CInfoOffscreenPanoramaTexture should be at offset 0x4F4");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nResolutionY) == 0x4F8, "m_nResolutionY in CInfoOffscreenPanoramaTexture should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_szLayoutFileName) == 0x500, "m_szLayoutFileName in CInfoOffscreenPanoramaTexture should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_RenderAttrName) == 0x508, "m_RenderAttrName in CInfoOffscreenPanoramaTexture should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_TargetEntities) == 0x510, "m_TargetEntities in CInfoOffscreenPanoramaTexture should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nTargetChangeCount) == 0x528, "m_nTargetChangeCount in CInfoOffscreenPanoramaTexture should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_vecCSSClasses) == 0x530, "m_vecCSSClasses in CInfoOffscreenPanoramaTexture should be at offset 0x530");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_szTargetsName) == 0x548, "m_szTargetsName in CInfoOffscreenPanoramaTexture should be at offset 0x548");
-		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_AdditionalTargetEntities) == 0x550, "m_AdditionalTargetEntities in CInfoOffscreenPanoramaTexture should be at offset 0x550");
-		static_assert(sizeof(CS2::server::CInfoOffscreenPanoramaTexture) == 0x568, "CInfoOffscreenPanoramaTexture size should be 0x568");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_bDisabled) == 0x4A8, "m_bDisabled in CInfoOffscreenPanoramaTexture should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nResolutionX) == 0x4AC, "m_nResolutionX in CInfoOffscreenPanoramaTexture should be at offset 0x4AC");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nResolutionY) == 0x4B0, "m_nResolutionY in CInfoOffscreenPanoramaTexture should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_szPanelType) == 0x4B8, "m_szPanelType in CInfoOffscreenPanoramaTexture should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_szLayoutFileName) == 0x4C0, "m_szLayoutFileName in CInfoOffscreenPanoramaTexture should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_RenderAttrName) == 0x4C8, "m_RenderAttrName in CInfoOffscreenPanoramaTexture should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_TargetEntities) == 0x4D0, "m_TargetEntities in CInfoOffscreenPanoramaTexture should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nTargetChangeCount) == 0x4E8, "m_nTargetChangeCount in CInfoOffscreenPanoramaTexture should be at offset 0x4E8");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_vecCSSClasses) == 0x4F0, "m_vecCSSClasses in CInfoOffscreenPanoramaTexture should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_szTargetsName) == 0x508, "m_szTargetsName in CInfoOffscreenPanoramaTexture should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_AdditionalTargetEntities) == 0x510, "m_AdditionalTargetEntities in CInfoOffscreenPanoramaTexture should be at offset 0x510");
+		static_assert(sizeof(CS2::server::CInfoOffscreenPanoramaTexture) == 0x528, "CInfoOffscreenPanoramaTexture size should be 0x528");
 	}
 }

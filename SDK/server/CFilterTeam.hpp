@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CFilterTeam : public CS2::server::CBaseFilter {
 		public:
-			int32_t m_iFilterTeam; // 0x548 | Schema_Builtin | Size: 0x4
+			int32_t m_iFilterTeam; // 0x4e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CFilterTeam, m_iFilterTeam) == 0x548, "m_iFilterTeam in CFilterTeam should be at offset 0x548");
-		static_assert(sizeof(CS2::server::CFilterTeam) == 0x550, "CFilterTeam size should be 0x550");
+		static_assert(offsetof(CS2::server::CFilterTeam, m_iFilterTeam) == 0x4E0, "m_iFilterTeam in CFilterTeam should be at offset 0x4E0");
+		static_assert(sizeof(CS2::server::CFilterTeam) == 0x4E8, "CFilterTeam size should be 0x4E8");
 	}
 }

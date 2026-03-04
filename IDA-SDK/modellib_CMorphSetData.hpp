@@ -4,7 +4,8 @@
 
 
 class modellib_CMorphSetData {
-    char vTable351[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     int32_t m_nWidth;
     int32_t m_nHeight;
     char m_bundleTypes[0x18];

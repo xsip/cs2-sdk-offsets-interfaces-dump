@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/client/ExternalAnimGraphHandle_t.hpp>
 
 
 
@@ -20,11 +21,11 @@ namespace CS2 {
 	namespace client {
 		class CAnimGraphControllerBase  {
 		public:
-			S2_PAD(0x28);
-			GlobalTypes::CUtlVectorFixedGrowable<GlobalTypes::CGlobalSymbol> m_vecParamsToResetInPostGraphUpdate; // 0x28 | Schema_Atomic | Size: 0x58
-			// char  m_vecParamsToResetInPostGraphUpdate[0x58]; // 0x28 | Schema_Atomic | Size: 0x58
+			S2_PAD(0x18);
+			client::ExternalAnimGraphHandle_t m_hExternalGraph; // 0x18 | Schema_DeclaredClass | Size: 0x4
+			S2_PAD(0x74); // End padding
 		};
-		static_assert(offsetof(CS2::client::CAnimGraphControllerBase, m_vecParamsToResetInPostGraphUpdate) == 0x28, "m_vecParamsToResetInPostGraphUpdate in CAnimGraphControllerBase should be at offset 0x28");
-		static_assert(sizeof(CS2::client::CAnimGraphControllerBase) == 0x80, "CAnimGraphControllerBase size should be 0x80");
+		static_assert(offsetof(CS2::client::CAnimGraphControllerBase, m_hExternalGraph) == 0x18, "m_hExternalGraph in CAnimGraphControllerBase should be at offset 0x18");
+		static_assert(sizeof(CS2::client::CAnimGraphControllerBase) == 0x90, "CAnimGraphControllerBase size should be 0x90");
 	}
 }

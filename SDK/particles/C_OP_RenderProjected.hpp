@@ -11,7 +11,9 @@
 
 
 #include <SDK/particles/CParticleFunctionRenderer.hpp>
+#include <SDK/particles/RenderProjectedMaterial_t.hpp>
 #include <SDK/particleslib/CPerParticleFloatInput.hpp>
+#include <SDK/particles/MaterialVariable_t.hpp>
 #include <SDK/particleslib/CParticleCollectionFloatInput.hpp>
 #include <SDK/particles/ParticleAttributeIndex_t.hpp>
 #include <SDK/particleslib/CParticleCollectionVecInput.hpp>
@@ -19,12 +21,6 @@
 
 
 
-namespace CS2 {
-	namespace particles {
-		class RenderProjectedMaterial_t;
-		class MaterialVariable_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -41,13 +37,13 @@ namespace CS2 {
 			float32 m_flMinProjectionDepth; // 0x228 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxProjectionDepth; // 0x22c | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlVector<particles::RenderProjectedMaterial_t> m_vecProjectedMaterials; // 0x230 | Schema_Atomic | Size: 0x18
-			// char  m_vecProjectedMaterials[0x18]; // 0x230 | Schema_Atomic | Size: 0x18
+			// char m_vecProjectedMaterials[0x18]; // 0x230 | Schema_Atomic | Size: 0x18
 			particleslib::CPerParticleFloatInput m_flMaterialSelection; // 0x248 | Schema_DeclaredClass | Size: 0x170
 			float32 m_flAnimationTimeScale; // 0x3b8 | Schema_Builtin | Size: 0x4
 			bool m_bOrientToNormal; // 0x3bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			GlobalTypes::CUtlVector<particles::MaterialVariable_t> m_MaterialVars; // 0x3c0 | Schema_Atomic | Size: 0x18
-			// char  m_MaterialVars[0x18]; // 0x3c0 | Schema_Atomic | Size: 0x18
+			// char m_MaterialVars[0x18]; // 0x3c0 | Schema_Atomic | Size: 0x18
 			particleslib::CParticleCollectionFloatInput m_flRadiusScale; // 0x3d8 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionFloatInput m_flAlphaScale; // 0x548 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionFloatInput m_flRollScale; // 0x6b8 | Schema_DeclaredClass | Size: 0x170

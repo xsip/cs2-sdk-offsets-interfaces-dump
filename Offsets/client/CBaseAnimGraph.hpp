@@ -8,22 +8,25 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1158
+			// Class size: 0x1168
 			namespace CBaseAnimGraph /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_bInitiallyPopulateInterpHistory = 0xf30; // bool m_bInitiallyPopulateInterpHistory; |  0xf30 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bSuppressAnimEventSounds = 0xf32; // bool m_bSuppressAnimEventSounds; |  0xf32 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bAnimGraphUpdateEnabled = 0xf40; // bool m_bAnimGraphUpdateEnabled; |  0xf40 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flMaxSlopeDistance = 0xf44; // float32 m_flMaxSlopeDistance; |  0xf44 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vLastSlopeCheckPos = 0xf48; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bAnimationUpdateScheduled = 0xf54; // bool m_bAnimationUpdateScheduled; |  0xf54 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecForce = 0xf58; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_nForceBone = 0xf64; // int32_t m_nForceBone; |  0xf64 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_pClientsideRagdoll = 0xf68; // client::CBaseAnimGraph**  | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_bBuiltRagdoll = 0xf70; // bool m_bBuiltRagdoll; |  0xf70 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_RagdollPose = 0xf88; // client::PhysicsRagdollPose_t  | Schema_DeclaredClass | Size: 0x48
-				constexpr std::ptrdiff_t m_bRagdollEnabled = 0xfd0; // bool m_bRagdollEnabled; |  0xfd0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bRagdollClientSide = 0xfd1; // bool m_bRagdollClientSide; |  0xfd1 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bHasAnimatedMaterialAttributes = 0xfe0; // bool m_bHasAnimatedMaterialAttributes; |  0xfe0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_graphControllerManager = 0xe88; // client::CAnimGraphControllerManager  | Schema_DeclaredClass | Size: 0xb0
+				constexpr std::ptrdiff_t m_pMainGraphController = 0xf38; // client::CAnimGraphControllerBase**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_bInitiallyPopulateInterpHistory = 0xf40; // bool m_bInitiallyPopulateInterpHistory; |  0xf40 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bSuppressAnimEventSounds = 0xf42; // bool m_bSuppressAnimEventSounds; |  0xf42 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bAnimGraphUpdateEnabled = 0xf50; // bool m_bAnimGraphUpdateEnabled; |  0xf50 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flMaxSlopeDistance = 0xf54; // float32 m_flMaxSlopeDistance; |  0xf54 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vLastSlopeCheckPos = 0xf58; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nAnimGraphUpdateId = 0xf64; // uint32_t m_nAnimGraphUpdateId; |  0xf64 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAnimationUpdateScheduled = 0xf68; // bool m_bAnimationUpdateScheduled; |  0xf68 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecForce = 0xf6c; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_nForceBone = 0xf78; // int32_t m_nForceBone; |  0xf78 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pClientsideRagdoll = 0xf80; // client::CBaseAnimGraph**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_bBuiltRagdoll = 0xf88; // bool m_bBuiltRagdoll; |  0xf88 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_RagdollPose = 0xfa0; // client::PhysicsRagdollPose_t  | Schema_DeclaredClass | Size: 0x48
+				constexpr std::ptrdiff_t m_bRagdollEnabled = 0xfe8; // bool m_bRagdollEnabled; |  0xfe8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bRagdollClientSide = 0xfe9; // bool m_bRagdollClientSide; |  0xfe9 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bHasAnimatedMaterialAttributes = 0xff8; // bool m_bHasAnimatedMaterialAttributes; |  0xff8 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

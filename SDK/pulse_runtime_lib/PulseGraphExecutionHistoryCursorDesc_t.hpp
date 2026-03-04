@@ -10,15 +10,11 @@
 #endif
 
 
+#include <SDK/pulse_runtime_lib/PulseCursorID_t.hpp>
 #include <SDK/pulse_runtime_lib/PulseDocNodeID_t.hpp>
 
 
 
-namespace CS2 {
-	namespace pulse_runtime_lib {
-		class PulseCursorID_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -27,7 +23,7 @@ namespace CS2 {
 		class PulseGraphExecutionHistoryCursorDesc_t  {
 		public:
 			GlobalTypes::CUtlVector<pulse_runtime_lib::PulseCursorID_t> vecAncestorCursorIDs; // 0x0 | Schema_Atomic | Size: 0x18
-			// char  vecAncestorCursorIDs[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
+			// char vecAncestorCursorIDs[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			pulse_runtime_lib::PulseDocNodeID_t nSpawnNodeID; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			pulse_runtime_lib::PulseDocNodeID_t nRetiredAtNodeID; // 0x1c | Schema_DeclaredClass | Size: 0x4
 			float32 flLastReferenced; // 0x20 | Schema_Builtin | Size: 0x4

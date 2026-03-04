@@ -8,14 +8,14 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x2A0
+			// Class size: 0x2A8
 			namespace CCSPlayerBase_CameraServices /*: public CS2::client::CPlayer_CameraServices*/ {
-				constexpr std::ptrdiff_t m_iFOV = 0x288; // uint32_t m_iFOV; |  0x288 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iFOVStart = 0x28c; // uint32_t m_iFOVStart; |  0x28c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFOVTime = 0x290; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flFOVRate = 0x294; // float32 m_flFOVRate; |  0x294 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hZoomOwner = 0x298; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flLastShotFOV = 0x29c; // float32 m_flLastShotFOV; |  0x29c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iFOV = 0x290; // uint32_t m_iFOV; |  0x290 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iFOVStart = 0x294; // uint32_t m_iFOVStart; |  0x294 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFOVTime = 0x298; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_flFOVRate = 0x29c; // float32 m_flFOVRate; |  0x29c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hZoomOwner = 0x2a0; // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flLastShotFOV = 0x2a4; // float32 m_flLastShotFOV; |  0x2a4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

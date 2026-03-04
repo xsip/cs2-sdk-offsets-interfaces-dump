@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/client/HitGroup_t.hpp>
 
 
 
@@ -32,8 +33,12 @@ namespace CS2 {
 			float32 m_flPreModifiedDamage; // 0x14 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalledHealthLost; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalledDamageDealt; // 0x1c | Schema_Builtin | Size: 0x4
-			bool m_bWasDamageSuppressed; // 0x20 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x7); // End padding
+			float32 m_flTotalledPreModifiedDamage; // 0x20 | Schema_Builtin | Size: 0x4
+			bool m_bWasDamageSuppressed; // 0x24 | Schema_Builtin | Size: 0x1
+			bool m_bSuppressFlinch; // 0x25 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2);
+			client::HitGroup_t m_nOverrideFlinchHitGroup; // 0x28 | Schema_DeclaredEnum | Size: 0x4
+			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_pOriginatingInfo) == 0x0, "m_pOriginatingInfo in CTakeDamageResult should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nHealthLost) == 0x8, "m_nHealthLost in CTakeDamageResult should be at offset 0x8");
@@ -42,7 +47,10 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_flPreModifiedDamage) == 0x14, "m_flPreModifiedDamage in CTakeDamageResult should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nTotalledHealthLost) == 0x18, "m_nTotalledHealthLost in CTakeDamageResult should be at offset 0x18");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nTotalledDamageDealt) == 0x1C, "m_nTotalledDamageDealt in CTakeDamageResult should be at offset 0x1C");
-		static_assert(offsetof(CS2::client::CTakeDamageResult, m_bWasDamageSuppressed) == 0x20, "m_bWasDamageSuppressed in CTakeDamageResult should be at offset 0x20");
-		static_assert(sizeof(CS2::client::CTakeDamageResult) == 0x28, "CTakeDamageResult size should be 0x28");
+		static_assert(offsetof(CS2::client::CTakeDamageResult, m_flTotalledPreModifiedDamage) == 0x20, "m_flTotalledPreModifiedDamage in CTakeDamageResult should be at offset 0x20");
+		static_assert(offsetof(CS2::client::CTakeDamageResult, m_bWasDamageSuppressed) == 0x24, "m_bWasDamageSuppressed in CTakeDamageResult should be at offset 0x24");
+		static_assert(offsetof(CS2::client::CTakeDamageResult, m_bSuppressFlinch) == 0x25, "m_bSuppressFlinch in CTakeDamageResult should be at offset 0x25");
+		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nOverrideFlinchHitGroup) == 0x28, "m_nOverrideFlinchHitGroup in CTakeDamageResult should be at offset 0x28");
+		static_assert(sizeof(CS2::client::CTakeDamageResult) == 0x30, "CTakeDamageResult size should be 0x30");
 	}
 }

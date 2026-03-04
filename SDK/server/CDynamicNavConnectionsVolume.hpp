@@ -11,14 +11,10 @@
 
 
 #include <SDK/server/CTriggerMultiple.hpp>
+#include <SDK/server/DynamicVolumeDef_t.hpp>
 
 
 
-namespace CS2 {
-	namespace server {
-		class DynamicVolumeDef_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -26,23 +22,23 @@ namespace CS2 {
 	namespace server {
 		class CDynamicNavConnectionsVolume : public CS2::server::CTriggerMultiple {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszConnectionTarget; // 0x9d0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector<server::DynamicVolumeDef_t> m_vecConnections; // 0x9d8 | Schema_Atomic | Size: 0x18
-			// char  m_vecConnections[0x18]; // 0x9d8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CGlobalSymbol m_sTransitionType; // 0x9f0 | Schema_Atomic | Size: 0x8
-			bool m_bConnectionsEnabled; // 0x9f8 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszConnectionTarget; // 0x8a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlVector<server::DynamicVolumeDef_t> m_vecConnections; // 0x8b0 | Schema_Atomic | Size: 0x18
+			// char m_vecConnections[0x18]; // 0x8b0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CGlobalSymbol m_sTransitionType; // 0x8c8 | Schema_Atomic | Size: 0x8
+			bool m_bConnectionsEnabled; // 0x8d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flTargetAreaSearchRadius; // 0x9fc | Schema_Builtin | Size: 0x4
-			float32 m_flUpdateDistance; // 0xa00 | Schema_Builtin | Size: 0x4
-			float32 m_flMaxConnectionDistance; // 0xa04 | Schema_Builtin | Size: 0x4
+			float32 m_flTargetAreaSearchRadius; // 0x8d4 | Schema_Builtin | Size: 0x4
+			float32 m_flUpdateDistance; // 0x8d8 | Schema_Builtin | Size: 0x4
+			float32 m_flMaxConnectionDistance; // 0x8dc | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_iszConnectionTarget) == 0x9D0, "m_iszConnectionTarget in CDynamicNavConnectionsVolume should be at offset 0x9D0");
-		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_vecConnections) == 0x9D8, "m_vecConnections in CDynamicNavConnectionsVolume should be at offset 0x9D8");
-		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_sTransitionType) == 0x9F0, "m_sTransitionType in CDynamicNavConnectionsVolume should be at offset 0x9F0");
-		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_bConnectionsEnabled) == 0x9F8, "m_bConnectionsEnabled in CDynamicNavConnectionsVolume should be at offset 0x9F8");
-		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flTargetAreaSearchRadius) == 0x9FC, "m_flTargetAreaSearchRadius in CDynamicNavConnectionsVolume should be at offset 0x9FC");
-		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flUpdateDistance) == 0xA00, "m_flUpdateDistance in CDynamicNavConnectionsVolume should be at offset 0xA00");
-		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flMaxConnectionDistance) == 0xA04, "m_flMaxConnectionDistance in CDynamicNavConnectionsVolume should be at offset 0xA04");
-		static_assert(sizeof(CS2::server::CDynamicNavConnectionsVolume) == 0xA08, "CDynamicNavConnectionsVolume size should be 0xA08");
+		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_iszConnectionTarget) == 0x8A8, "m_iszConnectionTarget in CDynamicNavConnectionsVolume should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_vecConnections) == 0x8B0, "m_vecConnections in CDynamicNavConnectionsVolume should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_sTransitionType) == 0x8C8, "m_sTransitionType in CDynamicNavConnectionsVolume should be at offset 0x8C8");
+		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_bConnectionsEnabled) == 0x8D0, "m_bConnectionsEnabled in CDynamicNavConnectionsVolume should be at offset 0x8D0");
+		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flTargetAreaSearchRadius) == 0x8D4, "m_flTargetAreaSearchRadius in CDynamicNavConnectionsVolume should be at offset 0x8D4");
+		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flUpdateDistance) == 0x8D8, "m_flUpdateDistance in CDynamicNavConnectionsVolume should be at offset 0x8D8");
+		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flMaxConnectionDistance) == 0x8DC, "m_flMaxConnectionDistance in CDynamicNavConnectionsVolume should be at offset 0x8DC");
+		static_assert(sizeof(CS2::server::CDynamicNavConnectionsVolume) == 0x8E0, "CDynamicNavConnectionsVolume size should be 0x8E0");
 	}
 }

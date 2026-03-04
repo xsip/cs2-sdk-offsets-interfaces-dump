@@ -4,13 +4,18 @@
 
 
 class server_SellbackPurchaseEntry_t {
-    char vTable4138[0x30];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
     uint16_t m_unDefIdx;
-    char pad_4139[0x2];
+    char pad_2987[0x2];
     int32_t m_nCost;
     int32_t m_nPrevArmor;
     bool m_bPrevHelmet;
-    char pad_4140[0x3];
+    char pad_2988[0x3];
     CEntityHandle m_hItem;
-    char end_pad_4141[0x4];
+    char end_pad_2989[0x4];
 };

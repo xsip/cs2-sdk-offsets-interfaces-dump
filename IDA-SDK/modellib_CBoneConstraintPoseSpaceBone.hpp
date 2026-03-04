@@ -4,12 +4,12 @@
 
 
 class modellib_CBoneConstraintPoseSpaceBone {
-    char pad_308[0x20];
+    char pad_310[0x20];
     CUtlString m_name;
     Vector m_vUpVector;
-    char pad_307[0x4];
+    char pad_309[0x4];
     char m_slaves[0x10];
     char m_targets[0x18];
     char m_inputList[0x18];
-    char end_pad_313[0x10];
+    char end_pad_315[0x10];
 };

@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace client {
 		class C_BaseDoor : public CS2::client::C_BaseToggle {
 		public:
-			bool m_bIsUsable; // 0xeb0 | Schema_Builtin | Size: 0x1
+			bool m_bIsUsable; // 0xe88 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_BaseDoor, m_bIsUsable) == 0xEB0, "m_bIsUsable in C_BaseDoor should be at offset 0xEB0");
-		static_assert(sizeof(CS2::client::C_BaseDoor) == 0xEB8, "C_BaseDoor size should be 0xEB8");
+		static_assert(offsetof(CS2::client::C_BaseDoor, m_bIsUsable) == 0xE88, "m_bIsUsable in C_BaseDoor should be at offset 0xE88");
+		static_assert(sizeof(CS2::client::C_BaseDoor) == 0xE90, "C_BaseDoor size should be 0xE90");
 	}
 }

@@ -22,7 +22,7 @@ namespace CS2 {
 		class CCSGameModeRules_ArmsRace : public CS2::server::CCSGameModeRules {
 		public:
 			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlString> m_WeaponSequence; // 0x30 | Schema_Atomic | Size: 0x18
-			char  m_WeaponSequence[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			char m_WeaponSequence[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x40); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSGameModeRules_ArmsRace, m_WeaponSequence) == 0x30, "m_WeaponSequence in CCSGameModeRules_ArmsRace should be at offset 0x30");

@@ -22,15 +22,15 @@ namespace CS2 {
 	namespace server {
 		class CShatterGlassShardPhysics : public CS2::server::CPhysicsProp {
 		public:
-			bool m_bDebris; // 0xe00 | Schema_Builtin | Size: 0x1
+			bool m_bDebris; // 0xce0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			uint32_t m_hParentShard; // 0xe04 | Schema_Builtin | Size: 0x4
-			server::shard_model_desc_t m_ShardDesc; // 0xe08 | Schema_DeclaredClass | Size: 0x80
+			uint32_t m_hParentShard; // 0xce4 | Schema_Builtin | Size: 0x4
+			server::shard_model_desc_t m_ShardDesc; // 0xce8 | Schema_DeclaredClass | Size: 0x80
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CShatterGlassShardPhysics, m_bDebris) == 0xE00, "m_bDebris in CShatterGlassShardPhysics should be at offset 0xE00");
-		static_assert(offsetof(CS2::server::CShatterGlassShardPhysics, m_hParentShard) == 0xE04, "m_hParentShard in CShatterGlassShardPhysics should be at offset 0xE04");
-		static_assert(offsetof(CS2::server::CShatterGlassShardPhysics, m_ShardDesc) == 0xE08, "m_ShardDesc in CShatterGlassShardPhysics should be at offset 0xE08");
-		static_assert(sizeof(CS2::server::CShatterGlassShardPhysics) == 0xE90, "CShatterGlassShardPhysics size should be 0xE90");
+		static_assert(offsetof(CS2::server::CShatterGlassShardPhysics, m_bDebris) == 0xCE0, "m_bDebris in CShatterGlassShardPhysics should be at offset 0xCE0");
+		static_assert(offsetof(CS2::server::CShatterGlassShardPhysics, m_hParentShard) == 0xCE4, "m_hParentShard in CShatterGlassShardPhysics should be at offset 0xCE4");
+		static_assert(offsetof(CS2::server::CShatterGlassShardPhysics, m_ShardDesc) == 0xCE8, "m_ShardDesc in CShatterGlassShardPhysics should be at offset 0xCE8");
+		static_assert(sizeof(CS2::server::CShatterGlassShardPhysics) == 0xD70, "CShatterGlassShardPhysics size should be 0xD70");
 	}
 }

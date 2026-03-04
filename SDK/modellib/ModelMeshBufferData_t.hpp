@@ -10,14 +10,10 @@
 #endif
 
 
+#include <SDK/modellib/RenderInputLayoutField_t.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class RenderInputLayoutField_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -35,9 +31,10 @@ namespace CS2 {
 			bool m_bCreateBufferUAV; // 0x10 | Schema_Builtin | Size: 0x1
 			bool m_bCreateRawBuffer; // 0x11 | Schema_Builtin | Size: 0x1
 			bool m_bCreatePooledBuffer; // 0x12 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x5);
+			uint8_t m_nBufferUsage; // 0x13 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<modellib::RenderInputLayoutField_t> m_inputLayoutFields; // 0x18 | Schema_Atomic | Size: 0x18
-			// char  m_inputLayoutFields[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
+			// char m_inputLayoutFields[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nBlockIndex) == 0x0, "m_nBlockIndex in ModelMeshBufferData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nElementCount) == 0x4, "m_nElementCount in ModelMeshBufferData_t should be at offset 0x4");
@@ -49,6 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_bCreateBufferUAV) == 0x10, "m_bCreateBufferUAV in ModelMeshBufferData_t should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_bCreateRawBuffer) == 0x11, "m_bCreateRawBuffer in ModelMeshBufferData_t should be at offset 0x11");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_bCreatePooledBuffer) == 0x12, "m_bCreatePooledBuffer in ModelMeshBufferData_t should be at offset 0x12");
+		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nBufferUsage) == 0x13, "m_nBufferUsage in ModelMeshBufferData_t should be at offset 0x13");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_inputLayoutFields) == 0x18, "m_inputLayoutFields in ModelMeshBufferData_t should be at offset 0x18");
 		static_assert(sizeof(CS2::modellib::ModelMeshBufferData_t) == 0x30, "ModelMeshBufferData_t size should be 0x30");
 	}

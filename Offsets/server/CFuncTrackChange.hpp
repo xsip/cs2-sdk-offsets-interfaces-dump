@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x8E0
+			// Class size: 0x838
 			namespace CFuncTrackChange /*: public CS2::server::CFuncPlatRot*/ {
-				constexpr std::ptrdiff_t m_trackTop = 0x8a0; // server::CPathTrack**  | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_trackBottom = 0x8a8; // server::CPathTrack**  | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_train = 0x8b0; // server::CFuncTrackTrain**  | Schema_Ptr | Size: 0x8
-				constexpr std::ptrdiff_t m_trackTopName = 0x8b8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_trackBottomName = 0x8c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_trainName = 0x8c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_code = 0x8d0; // server::TRAIN_CODE  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_targetState = 0x8d4; // int32_t m_targetState; |  0x8d4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_use = 0x8d8; // int32_t m_use; |  0x8d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_trackTop = 0x7f8; // server::CPathTrack**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_trackBottom = 0x800; // server::CPathTrack**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_train = 0x808; // server::CFuncTrackTrain**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_trackTopName = 0x810; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_trackBottomName = 0x818; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_trainName = 0x820; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_code = 0x828; // server::TRAIN_CODE  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_targetState = 0x82c; // int32_t m_targetState; |  0x82c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_use = 0x830; // int32_t m_use; |  0x830 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

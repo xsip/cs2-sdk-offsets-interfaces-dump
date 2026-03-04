@@ -28,76 +28,76 @@ namespace CS2 {
 	namespace server {
 		class CPointCommentaryNode : public CS2::server::CBaseAnimGraph {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_iszPreCommands; // 0xa90 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszPostCommands; // 0xa98 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszCommentaryFile; // 0xaa0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszViewTarget; // 0xaa8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hViewTarget; // 0xab0 | Schema_Atomic | Size: 0x4
-			// char  m_hViewTarget[0x4]; // 0xab0 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hViewTargetAngles; // 0xab4 | Schema_Atomic | Size: 0x4
-			// char  m_hViewTargetAngles[0x4]; // 0xab4 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_iszViewPosition; // 0xab8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_hViewPosition; // 0xac0 | Schema_Atomic | Size: 0x4
-			// char  m_hViewPosition[0x4]; // 0xac0 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_hViewPositionMover; // 0xac4 | Schema_Atomic | Size: 0x4
-			// char  m_hViewPositionMover[0x4]; // 0xac4 | Schema_Atomic | Size: 0x4
-			bool m_bPreventMovement; // 0xac8 | Schema_Builtin | Size: 0x1
-			bool m_bUnderCrosshair; // 0xac9 | Schema_Builtin | Size: 0x1
-			bool m_bUnstoppable; // 0xaca | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszPreCommands; // 0xa20 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszPostCommands; // 0xa28 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszCommentaryFile; // 0xa30 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszViewTarget; // 0xa38 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewTarget; // 0xa40 | Schema_Atomic | Size: 0x4
+			// char m_hViewTarget[0x4]; // 0xa40 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewTargetAngles; // 0xa44 | Schema_Atomic | Size: 0x4
+			// char m_hViewTargetAngles[0x4]; // 0xa44 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszViewPosition; // 0xa48 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewPosition; // 0xa50 | Schema_Atomic | Size: 0x4
+			// char m_hViewPosition[0x4]; // 0xa50 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_hViewPositionMover; // 0xa54 | Schema_Atomic | Size: 0x4
+			// char m_hViewPositionMover[0x4]; // 0xa54 | Schema_Atomic | Size: 0x4
+			bool m_bPreventMovement; // 0xa58 | Schema_Builtin | Size: 0x1
+			bool m_bUnderCrosshair; // 0xa59 | Schema_Builtin | Size: 0x1
+			bool m_bUnstoppable; // 0xa5a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			entity2::GameTime_t m_flFinishedTime; // 0xacc | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_vecFinishOrigin; // 0xad0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecOriginalAngles; // 0xadc | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_vecFinishAngles; // 0xae8 | Schema_Atomic | Size: 0xc
-			bool m_bPreventChangesWhileMoving; // 0xaf4 | Schema_Builtin | Size: 0x1
-			bool m_bDisabled; // 0xaf5 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_flFinishedTime; // 0xa5c | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_vecFinishOrigin; // 0xa60 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecOriginalAngles; // 0xa6c | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_vecFinishAngles; // 0xa78 | Schema_Atomic | Size: 0xc
+			bool m_bPreventChangesWhileMoving; // 0xa84 | Schema_Builtin | Size: 0x1
+			bool m_bDisabled; // 0xa85 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::VectorWS m_vecTeleportOrigin; // 0xaf8 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_flAbortedPlaybackAt; // 0xb04 | Schema_DeclaredClass | Size: 0x4
-			entity2::CEntityIOOutput m_pOnCommentaryStarted; // 0xb08 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_pOnCommentaryStopped; // 0xb30 | Schema_DeclaredClass | Size: 0x28
-			bool m_bActive; // 0xb58 | Schema_Builtin | Size: 0x1
+			GlobalTypes::VectorWS m_vecTeleportOrigin; // 0xa88 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_flAbortedPlaybackAt; // 0xa94 | Schema_DeclaredClass | Size: 0x4
+			entity2::CEntityIOOutput m_pOnCommentaryStarted; // 0xa98 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_pOnCommentaryStopped; // 0xab0 | Schema_DeclaredClass | Size: 0x18
+			bool m_bActive; // 0xac8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			entity2::GameTime_t m_flStartTime; // 0xb5c | Schema_DeclaredClass | Size: 0x4
-			float32 m_flStartTimeInCommentary; // 0xb60 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_flStartTime; // 0xacc | Schema_DeclaredClass | Size: 0x4
+			float32 m_flStartTimeInCommentary; // 0xad0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszTitle; // 0xb68 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_iszSpeakers; // 0xb70 | Schema_Atomic | Size: 0x8
-			int32_t m_iNodeNumber; // 0xb78 | Schema_Builtin | Size: 0x4
-			int32_t m_iNodeNumberMax; // 0xb7c | Schema_Builtin | Size: 0x4
-			bool m_bListenedTo; // 0xb80 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_iszTitle; // 0xad8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_iszSpeakers; // 0xae0 | Schema_Atomic | Size: 0x8
+			int32_t m_iNodeNumber; // 0xae8 | Schema_Builtin | Size: 0x4
+			int32_t m_iNodeNumberMax; // 0xaec | Schema_Builtin | Size: 0x4
+			bool m_bListenedTo; // 0xaf0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszPreCommands) == 0xA90, "m_iszPreCommands in CPointCommentaryNode should be at offset 0xA90");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszPostCommands) == 0xA98, "m_iszPostCommands in CPointCommentaryNode should be at offset 0xA98");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszCommentaryFile) == 0xAA0, "m_iszCommentaryFile in CPointCommentaryNode should be at offset 0xAA0");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszViewTarget) == 0xAA8, "m_iszViewTarget in CPointCommentaryNode should be at offset 0xAA8");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewTarget) == 0xAB0, "m_hViewTarget in CPointCommentaryNode should be at offset 0xAB0");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewTargetAngles) == 0xAB4, "m_hViewTargetAngles in CPointCommentaryNode should be at offset 0xAB4");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszViewPosition) == 0xAB8, "m_iszViewPosition in CPointCommentaryNode should be at offset 0xAB8");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewPosition) == 0xAC0, "m_hViewPosition in CPointCommentaryNode should be at offset 0xAC0");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewPositionMover) == 0xAC4, "m_hViewPositionMover in CPointCommentaryNode should be at offset 0xAC4");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bPreventMovement) == 0xAC8, "m_bPreventMovement in CPointCommentaryNode should be at offset 0xAC8");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bUnderCrosshair) == 0xAC9, "m_bUnderCrosshair in CPointCommentaryNode should be at offset 0xAC9");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bUnstoppable) == 0xACA, "m_bUnstoppable in CPointCommentaryNode should be at offset 0xACA");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flFinishedTime) == 0xACC, "m_flFinishedTime in CPointCommentaryNode should be at offset 0xACC");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecFinishOrigin) == 0xAD0, "m_vecFinishOrigin in CPointCommentaryNode should be at offset 0xAD0");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecOriginalAngles) == 0xADC, "m_vecOriginalAngles in CPointCommentaryNode should be at offset 0xADC");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecFinishAngles) == 0xAE8, "m_vecFinishAngles in CPointCommentaryNode should be at offset 0xAE8");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bPreventChangesWhileMoving) == 0xAF4, "m_bPreventChangesWhileMoving in CPointCommentaryNode should be at offset 0xAF4");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bDisabled) == 0xAF5, "m_bDisabled in CPointCommentaryNode should be at offset 0xAF5");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecTeleportOrigin) == 0xAF8, "m_vecTeleportOrigin in CPointCommentaryNode should be at offset 0xAF8");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flAbortedPlaybackAt) == 0xB04, "m_flAbortedPlaybackAt in CPointCommentaryNode should be at offset 0xB04");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_pOnCommentaryStarted) == 0xB08, "m_pOnCommentaryStarted in CPointCommentaryNode should be at offset 0xB08");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_pOnCommentaryStopped) == 0xB30, "m_pOnCommentaryStopped in CPointCommentaryNode should be at offset 0xB30");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bActive) == 0xB58, "m_bActive in CPointCommentaryNode should be at offset 0xB58");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flStartTime) == 0xB5C, "m_flStartTime in CPointCommentaryNode should be at offset 0xB5C");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flStartTimeInCommentary) == 0xB60, "m_flStartTimeInCommentary in CPointCommentaryNode should be at offset 0xB60");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszTitle) == 0xB68, "m_iszTitle in CPointCommentaryNode should be at offset 0xB68");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszSpeakers) == 0xB70, "m_iszSpeakers in CPointCommentaryNode should be at offset 0xB70");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iNodeNumber) == 0xB78, "m_iNodeNumber in CPointCommentaryNode should be at offset 0xB78");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iNodeNumberMax) == 0xB7C, "m_iNodeNumberMax in CPointCommentaryNode should be at offset 0xB7C");
-		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bListenedTo) == 0xB80, "m_bListenedTo in CPointCommentaryNode should be at offset 0xB80");
-		static_assert(sizeof(CS2::server::CPointCommentaryNode) == 0xB90, "CPointCommentaryNode size should be 0xB90");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszPreCommands) == 0xA20, "m_iszPreCommands in CPointCommentaryNode should be at offset 0xA20");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszPostCommands) == 0xA28, "m_iszPostCommands in CPointCommentaryNode should be at offset 0xA28");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszCommentaryFile) == 0xA30, "m_iszCommentaryFile in CPointCommentaryNode should be at offset 0xA30");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszViewTarget) == 0xA38, "m_iszViewTarget in CPointCommentaryNode should be at offset 0xA38");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewTarget) == 0xA40, "m_hViewTarget in CPointCommentaryNode should be at offset 0xA40");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewTargetAngles) == 0xA44, "m_hViewTargetAngles in CPointCommentaryNode should be at offset 0xA44");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszViewPosition) == 0xA48, "m_iszViewPosition in CPointCommentaryNode should be at offset 0xA48");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewPosition) == 0xA50, "m_hViewPosition in CPointCommentaryNode should be at offset 0xA50");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_hViewPositionMover) == 0xA54, "m_hViewPositionMover in CPointCommentaryNode should be at offset 0xA54");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bPreventMovement) == 0xA58, "m_bPreventMovement in CPointCommentaryNode should be at offset 0xA58");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bUnderCrosshair) == 0xA59, "m_bUnderCrosshair in CPointCommentaryNode should be at offset 0xA59");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bUnstoppable) == 0xA5A, "m_bUnstoppable in CPointCommentaryNode should be at offset 0xA5A");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flFinishedTime) == 0xA5C, "m_flFinishedTime in CPointCommentaryNode should be at offset 0xA5C");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecFinishOrigin) == 0xA60, "m_vecFinishOrigin in CPointCommentaryNode should be at offset 0xA60");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecOriginalAngles) == 0xA6C, "m_vecOriginalAngles in CPointCommentaryNode should be at offset 0xA6C");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecFinishAngles) == 0xA78, "m_vecFinishAngles in CPointCommentaryNode should be at offset 0xA78");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bPreventChangesWhileMoving) == 0xA84, "m_bPreventChangesWhileMoving in CPointCommentaryNode should be at offset 0xA84");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bDisabled) == 0xA85, "m_bDisabled in CPointCommentaryNode should be at offset 0xA85");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_vecTeleportOrigin) == 0xA88, "m_vecTeleportOrigin in CPointCommentaryNode should be at offset 0xA88");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flAbortedPlaybackAt) == 0xA94, "m_flAbortedPlaybackAt in CPointCommentaryNode should be at offset 0xA94");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_pOnCommentaryStarted) == 0xA98, "m_pOnCommentaryStarted in CPointCommentaryNode should be at offset 0xA98");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_pOnCommentaryStopped) == 0xAB0, "m_pOnCommentaryStopped in CPointCommentaryNode should be at offset 0xAB0");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bActive) == 0xAC8, "m_bActive in CPointCommentaryNode should be at offset 0xAC8");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flStartTime) == 0xACC, "m_flStartTime in CPointCommentaryNode should be at offset 0xACC");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_flStartTimeInCommentary) == 0xAD0, "m_flStartTimeInCommentary in CPointCommentaryNode should be at offset 0xAD0");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszTitle) == 0xAD8, "m_iszTitle in CPointCommentaryNode should be at offset 0xAD8");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszSpeakers) == 0xAE0, "m_iszSpeakers in CPointCommentaryNode should be at offset 0xAE0");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iNodeNumber) == 0xAE8, "m_iNodeNumber in CPointCommentaryNode should be at offset 0xAE8");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iNodeNumberMax) == 0xAEC, "m_iNodeNumberMax in CPointCommentaryNode should be at offset 0xAEC");
+		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bListenedTo) == 0xAF0, "m_bListenedTo in CPointCommentaryNode should be at offset 0xAF0");
+		static_assert(sizeof(CS2::server::CPointCommentaryNode) == 0xB00, "CPointCommentaryNode size should be 0xB00");
 	}
 }

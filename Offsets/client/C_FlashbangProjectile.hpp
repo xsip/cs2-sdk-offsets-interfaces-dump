@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x1450
+			// Class size: 0x1438
 			namespace C_FlashbangProjectile /*: public CS2::client::C_BaseCSGrenadeProjectile*/ {
 				// NO SCHEMA DATA FOUND!
 			}

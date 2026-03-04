@@ -6,6 +6,7 @@
 namespace CS2 {
 	namespace animlib {
 		enum NmTargetWarpRule_t : std::uint8_t {
+			NmTargetWarpRule_t_FixedSection = 0x4,
 			NmTargetWarpRule_t_RotationOnly = 0x3,
 			NmTargetWarpRule_t_WarpXY = 0x0,
 			NmTargetWarpRule_t_WarpXYZ = 0x2,

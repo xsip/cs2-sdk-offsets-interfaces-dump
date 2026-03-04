@@ -5,7 +5,9 @@
 #include "modellib_AnimComponentID.hpp"
 
 class animgraphlib_CRagdollComponentUpdater {
-    char vTable10[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CUtlString m_name;
     modellib_AnimComponentID m_id;
     animgraphlib_AnimNodeNetworkMode m_networkMode;
@@ -21,5 +23,5 @@ class animgraphlib_CRagdollComponentUpdater {
     float32 m_flSpringFrequencyMax;
     float32 m_flMaxStretch;
     bool m_bSolidCollisionAtZeroWeight;
-    char end_pad_208[0xb];
+    char end_pad_214[0xb];
 };

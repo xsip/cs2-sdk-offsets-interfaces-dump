@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace client {
 		class CFilterMassGreater : public CS2::client::CBaseFilter {
 		public:
-			float32 m_fFilterMass; // 0x650 | Schema_Builtin | Size: 0x4
+			float32 m_fFilterMass; // 0x640 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::client::CFilterMassGreater, m_fFilterMass) == 0x650, "m_fFilterMass in CFilterMassGreater should be at offset 0x650");
-		static_assert(sizeof(CS2::client::CFilterMassGreater) == 0x658, "CFilterMassGreater size should be 0x658");
+		static_assert(offsetof(CS2::client::CFilterMassGreater, m_fFilterMass) == 0x640, "m_fFilterMass in CFilterMassGreater should be at offset 0x640");
+		static_assert(sizeof(CS2::client::CFilterMassGreater) == 0x648, "CFilterMassGreater size should be 0x648");
 	}
 }

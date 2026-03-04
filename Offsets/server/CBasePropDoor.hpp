@@ -8,46 +8,46 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xFF0
+			// Class size: 0xE50
 			namespace CBasePropDoor /*: public CS2::server::CDynamicProp*/ {
-				constexpr std::ptrdiff_t m_flAutoReturnDelay = 0xd60; // float32 m_flAutoReturnDelay; |  0xd60 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hDoorList = 0xd68; // server::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_nHardwareType = 0xd80; // int32_t m_nHardwareType; |  0xd80 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bNeedsHardware = 0xd84; // bool m_bNeedsHardware; |  0xd84 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_eDoorState = 0xd88; // client::DoorState_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bLocked = 0xd8c; // bool m_bLocked; |  0xd8c | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bNoNPCs = 0xd8d; // bool m_bNoNPCs; |  0xd8d | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_closedPosition = 0xd90; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_closedAngles = 0xd9c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hBlocker = 0xda8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bFirstBlocked = 0xdac; // bool m_bFirstBlocked; |  0xdac | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_ls = 0xdb0; // server::locksound_t  | Schema_DeclaredClass | Size: 0x20
-				constexpr std::ptrdiff_t m_bForceClosed = 0xdd0; // bool m_bForceClosed; |  0xdd0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vecLatchWorldPosition = 0xdd4; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_hActivator = 0xde0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_SoundMoving = 0xdf8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundOpen = 0xe00; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundClose = 0xe08; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundLock = 0xe10; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundUnlock = 0xe18; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundLatch = 0xe20; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundPound = 0xe28; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundJiggle = 0xe30; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_SoundLockedAnim = 0xe38; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_numCloseAttempts = 0xe40; // int32_t m_numCloseAttempts; |  0xe40 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nPhysicsMaterial = 0xe44; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_SlaveName = 0xe48; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hMaster = 0xe50; // GlobalTypes::CHandle<server::CBasePropDoor>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_OnBlockedClosing = 0xe58; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnBlockedOpening = 0xe80; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnUnblockedClosing = 0xea8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnUnblockedOpening = 0xed0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFullyClosed = 0xef8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFullyOpen = 0xf20; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnClose = 0xf48; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnOpen = 0xf70; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnLockedUse = 0xf98; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnAjarOpen = 0xfc0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
+				constexpr std::ptrdiff_t m_flAutoReturnDelay = 0xc60; // float32 m_flAutoReturnDelay; |  0xc60 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hDoorList = 0xc68; // server::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_nHardwareType = 0xc80; // int32_t m_nHardwareType; |  0xc80 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bNeedsHardware = 0xc84; // bool m_bNeedsHardware; |  0xc84 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_eDoorState = 0xc88; // client::DoorState_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bLocked = 0xc8c; // bool m_bLocked; |  0xc8c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bNoNPCs = 0xc8d; // bool m_bNoNPCs; |  0xc8d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_closedPosition = 0xc90; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_closedAngles = 0xc9c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hBlocker = 0xca8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bFirstBlocked = 0xcac; // bool m_bFirstBlocked; |  0xcac | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_ls = 0xcb0; // server::locksound_t  | Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_bForceClosed = 0xcd0; // bool m_bForceClosed; |  0xcd0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vecLatchWorldPosition = 0xcd4; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_hActivator = 0xce0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_SoundMoving = 0xcf8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundOpen = 0xd00; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundClose = 0xd08; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundLock = 0xd10; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundUnlock = 0xd18; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundLatch = 0xd20; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundPound = 0xd28; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundJiggle = 0xd30; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_SoundLockedAnim = 0xd38; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_numCloseAttempts = 0xd40; // int32_t m_numCloseAttempts; |  0xd40 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nPhysicsMaterial = 0xd44; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_SlaveName = 0xd48; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hMaster = 0xd50; // GlobalTypes::CHandle<server::CBasePropDoor>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_OnBlockedClosing = 0xd58; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnBlockedOpening = 0xd70; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnUnblockedClosing = 0xd88; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnUnblockedOpening = 0xda0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFullyClosed = 0xdb8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFullyOpen = 0xdd0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnClose = 0xde8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnOpen = 0xe00; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnLockedUse = 0xe18; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnAjarOpen = 0xe30; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 			}
 		}
 	}

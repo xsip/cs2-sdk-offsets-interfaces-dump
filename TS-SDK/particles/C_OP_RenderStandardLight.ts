@@ -8,7 +8,7 @@ export const particles_C_OP_RenderStandardLight  = {
 	m_nLightType: 544n, // particles::ParticleLightTypeChoiceList_t  | Schema_DeclaredEnum | Size: 0x4
 	m_vecColorScale: 552n, // particleslib::CParticleCollectionVecInput  | Schema_DeclaredClass | Size: 0x6b8
 	m_nColorBlendType: 2272n, // particles::ParticleColorBlendType_t  | Schema_DeclaredEnum | Size: 0x4
-	m_flIntensity: 2280n, // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
+	m_flIntensity: 2280n, // particleslib::CPerParticleFloatInput  | Schema_DeclaredClass | Size: 0x170
 	m_bCastShadows: 2648n, // bool m_bCastShadows; |  0xa58 | Schema_Builtin | Size: 0x1
 	m_flTheta: 2656n, // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170
 	m_flPhi: 3024n, // particleslib::CParticleCollectionFloatInput  | Schema_DeclaredClass | Size: 0x170

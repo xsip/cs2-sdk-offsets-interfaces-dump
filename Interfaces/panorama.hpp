@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace panorama {
-			constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x509b20; 
+			constexpr std::ptrdiff_t PanoramaUIEngine001 = 0x507cb0; 
 		}
 	}
 }

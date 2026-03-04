@@ -11,14 +11,11 @@
 
 
 #include <SDK/modellib/CBoneConstraintBase.hpp>
+#include <SDK/modellib/CConstraintSlave.hpp>
+#include <SDK/modellib/CConstraintTarget.hpp>
 
 
 
-namespace CS2 {
-	namespace modellib {
-		class CConstraintTarget;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -30,9 +27,9 @@ namespace CS2 {
 			GlobalTypes::Vector m_vUpVector; // 0x28 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
 			// GlobalTypes::CUtlLeanVector<modellib::CConstraintSlave> m_slaves; // 0x38 | Schema_Atomic | Size: 0x10
-			char  m_slaves[0x10]; // 0x38 | Schema_Atomic | Size: 0x10
+			char m_slaves[0x10]; // 0x38 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlVector<modellib::CConstraintTarget> m_targets; // 0x48 | Schema_Atomic | Size: 0x18
-			// char  m_targets[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			// char m_targets[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_name) == 0x20, "m_name in CBaseConstraint should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_vUpVector) == 0x28, "m_vUpVector in CBaseConstraint should be at offset 0x28");

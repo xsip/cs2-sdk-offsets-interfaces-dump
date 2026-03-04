@@ -8,21 +8,21 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x608
+			// Class size: 0x580
 			namespace CInfoSpawnGroupLoadUnload /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_OnSpawnGroupLoadStarted = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnSpawnGroupLoadFinished = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnSpawnGroupUnloadStarted = 0x540; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnSpawnGroupUnloadFinished = 0x568; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_iszSpawnGroupName = 0x590; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSpawnGroupFilterName = 0x598; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszLandmarkName = 0x5a0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_sFixedSpawnGroupName = 0x5a8; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flTimeoutInterval = 0x5b0; // float32 m_flTimeoutInterval; |  0x5b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bAutoActivate = 0x5b4; // bool m_bAutoActivate; |  0x5b4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bUnloadingStarted = 0x5b5; // bool m_bUnloadingStarted; |  0x5b5 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bQueueActiveSpawnGroupChange = 0x5b6; // bool m_bQueueActiveSpawnGroupChange; |  0x5b6 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bQueueFinishLoading = 0x5b7; // bool m_bQueueFinishLoading; |  0x5b7 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnSpawnGroupLoadStarted = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnSpawnGroupLoadFinished = 0x4c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnSpawnGroupUnloadStarted = 0x4d8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnSpawnGroupUnloadFinished = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_iszSpawnGroupName = 0x508; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSpawnGroupFilterName = 0x510; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszLandmarkName = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_sFixedSpawnGroupName = 0x520; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flTimeoutInterval = 0x528; // float32 m_flTimeoutInterval; |  0x528 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bAutoActivate = 0x52c; // bool m_bAutoActivate; |  0x52c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bUnloadingStarted = 0x52d; // bool m_bUnloadingStarted; |  0x52d | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bQueueActiveSpawnGroupChange = 0x52e; // bool m_bQueueActiveSpawnGroupChange; |  0x52e | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bQueueFinishLoading = 0x52f; // bool m_bQueueFinishLoading; |  0x52f | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

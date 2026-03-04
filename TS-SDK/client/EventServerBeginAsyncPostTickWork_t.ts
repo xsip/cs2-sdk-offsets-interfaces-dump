@@ -1,9 +1,7 @@
 // generated - do not edit!
 
-import {client_EventPostAdvanceTick_t} from './EventPostAdvanceTick_t';
-// Class size: 0x40
-// BaseClass: : public CS2::client::EventPostAdvanceTick_t
+// Class size: 0x1
+// BaseClass: NONE
 export const client_EventServerBeginAsyncPostTickWork_t  = {
-	...client_EventPostAdvanceTick_t,
-	// NO SCHEMA DATA FOUND!
+	m_bIsOncePerFrameAsyncWorkPhase: 0n, // bool m_bIsOncePerFrameAsyncWorkPhase; |  0x0 | Schema_Builtin | Size: 0x1
 }

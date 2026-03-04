@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_C_PointEntity} from './C_PointEntity';
-// Class size: 0x5F8
+// Class size: 0x608
 // BaseClass: : public CS2::client::C_PointEntity
 export const client_C_InfoInstructorHintHostageRescueZone  = {
 	...client_C_PointEntity,

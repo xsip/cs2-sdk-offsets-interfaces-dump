@@ -8,14 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xC0
+			// Class size: 0xD0
 			namespace CGameRules /**/ {
 				constexpr std::ptrdiff_t __m_pChainEntity = 0x8; // entity2::CNetworkVarChainer  | Schema_DeclaredClass | Size: 0x28
 				constexpr std::ptrdiff_t m_szQuestName = 0x30; // char m_szQuestName[128]; |  0x30 | Schema_FixedArray | Size: 0x80
 				constexpr std::ptrdiff_t m_nQuestPhase = 0xb0; // int32_t m_nQuestPhase; |  0xb0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nTotalPausedTicks = 0xb4; // int32_t m_nTotalPausedTicks; |  0xb4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nPauseStartTick = 0xb8; // int32_t m_nPauseStartTick; |  0xb8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bGamePaused = 0xbc; // bool m_bGamePaused; |  0xbc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nLastMatchTime = 0xb4; // uint32_t m_nLastMatchTime; |  0xb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nLastMatchTime_MatchID64 = 0xb8; // uint64_t m_nLastMatchTime_MatchID64; |  0xb8 | Schema_Builtin | Size: 0x8
+				constexpr std::ptrdiff_t m_nTotalPausedTicks = 0xc0; // int32_t m_nTotalPausedTicks; |  0xc0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nPauseStartTick = 0xc4; // int32_t m_nPauseStartTick; |  0xc4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bGamePaused = 0xc8; // bool m_bGamePaused; |  0xc8 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -5,10 +5,12 @@
 #include "server_CountdownTimer.hpp"
 
 class server_CBtNodeConditionInactive {
-    char pad_2721[0x58];
+    char pad_2818[0x58];
     bool m_bNegated;
-    char end_pad_3167[0x7];
-    char vTable3168[0x18];
+    char end_pad_3293[0x7];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     float32 m_flRoundStartThresholdSeconds;
     float32 m_flSensorInactivityThresholdSeconds;
     server_CountdownTimer m_SensorInactivityTimer;

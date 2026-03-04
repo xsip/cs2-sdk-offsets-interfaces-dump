@@ -22,6 +22,6 @@ namespace CS2 {
 		class CEntityBlocker : public CS2::server::CBaseModelEntity {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CEntityBlocker) == 0x7D8, "CEntityBlocker size should be 0x7D8");
+		static_assert(sizeof(CS2::server::CEntityBlocker) == 0x730, "CEntityBlocker size should be 0x730");
 	}
 }

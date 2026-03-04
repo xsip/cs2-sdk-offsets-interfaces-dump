@@ -6,8 +6,8 @@
 namespace CS2 {
 	namespace animlib {
 		enum Comparison_t : std::uint8_t {
-			Comparison_t_GreaterThanEqual = 0x1,
-			Comparison_t_LessThanEqual = 0x0
+			Comparison_t_DoesntMatch = 0x1,
+			Comparison_t_Matches = 0x0
 		};
 	}
 }

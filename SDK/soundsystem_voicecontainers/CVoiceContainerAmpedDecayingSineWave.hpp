@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerAmpedDecayingSineWave : public CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave {
 		public:
-			float32 m_flGainAmount; // 0xc0 | Schema_Builtin | Size: 0x4
+			float32 m_flGainAmount; // 0xb0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerAmpedDecayingSineWave, m_flGainAmount) == 0xC0, "m_flGainAmount in CVoiceContainerAmpedDecayingSineWave should be at offset 0xC0");
-		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerAmpedDecayingSineWave) == 0xC8, "CVoiceContainerAmpedDecayingSineWave size should be 0xC8");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerAmpedDecayingSineWave, m_flGainAmount) == 0xB0, "m_flGainAmount in CVoiceContainerAmpedDecayingSineWave should be at offset 0xB0");
+		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerAmpedDecayingSineWave) == 0xB8, "CVoiceContainerAmpedDecayingSineWave size should be 0xB8");
 	}
 }

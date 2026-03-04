@@ -4,7 +4,9 @@
 
 
 class animgraphlib_CPathMetricEvaluator {
-    char vTable80[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     char m_means[0x18];
     char m_standardDeviations[0x18];
     float32 m_flWeight;
@@ -12,7 +14,7 @@ class animgraphlib_CPathMetricEvaluator {
     char m_pathTimeSamples[0x18];
     float32 m_flDistance;
     bool m_bExtrapolateMovement;
-    char pad_200[0x3];
+    char pad_206[0x3];
     float32 m_flMinExtrapolationSpeed;
-    char end_pad_201[0x4];
+    char end_pad_207[0x4];
 };

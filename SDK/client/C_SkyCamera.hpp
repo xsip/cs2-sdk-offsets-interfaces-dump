@@ -22,16 +22,16 @@ namespace CS2 {
 	namespace client {
 		class C_SkyCamera : public CS2::client::C_BaseEntity {
 		public:
-			client::sky3dparams_t m_skyboxData; // 0x5f8 | Schema_DeclaredClass | Size: 0x90
-			GlobalTypes::CUtlStringToken m_skyboxSlotToken; // 0x688 | Schema_Atomic | Size: 0x4
-			bool m_bUseAngles; // 0x68c | Schema_Builtin | Size: 0x1
+			client::sky3dparams_t m_skyboxData; // 0x608 | Schema_DeclaredClass | Size: 0x90
+			GlobalTypes::CUtlStringToken m_skyboxSlotToken; // 0x698 | Schema_Atomic | Size: 0x4
+			bool m_bUseAngles; // 0x69c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::C_SkyCamera* m_pNext; // 0x690 | Schema_Ptr | Size: 0x8
+			client::C_SkyCamera* m_pNext; // 0x6a0 | Schema_Ptr | Size: 0x8
 		};
-		static_assert(offsetof(CS2::client::C_SkyCamera, m_skyboxData) == 0x5F8, "m_skyboxData in C_SkyCamera should be at offset 0x5F8");
-		static_assert(offsetof(CS2::client::C_SkyCamera, m_skyboxSlotToken) == 0x688, "m_skyboxSlotToken in C_SkyCamera should be at offset 0x688");
-		static_assert(offsetof(CS2::client::C_SkyCamera, m_bUseAngles) == 0x68C, "m_bUseAngles in C_SkyCamera should be at offset 0x68C");
-		static_assert(offsetof(CS2::client::C_SkyCamera, m_pNext) == 0x690, "m_pNext in C_SkyCamera should be at offset 0x690");
-		static_assert(sizeof(CS2::client::C_SkyCamera) == 0x698, "C_SkyCamera size should be 0x698");
+		static_assert(offsetof(CS2::client::C_SkyCamera, m_skyboxData) == 0x608, "m_skyboxData in C_SkyCamera should be at offset 0x608");
+		static_assert(offsetof(CS2::client::C_SkyCamera, m_skyboxSlotToken) == 0x698, "m_skyboxSlotToken in C_SkyCamera should be at offset 0x698");
+		static_assert(offsetof(CS2::client::C_SkyCamera, m_bUseAngles) == 0x69C, "m_bUseAngles in C_SkyCamera should be at offset 0x69C");
+		static_assert(offsetof(CS2::client::C_SkyCamera, m_pNext) == 0x6A0, "m_pNext in C_SkyCamera should be at offset 0x6A0");
+		static_assert(sizeof(CS2::client::C_SkyCamera) == 0x6A8, "C_SkyCamera size should be 0x6A8");
 	}
 }

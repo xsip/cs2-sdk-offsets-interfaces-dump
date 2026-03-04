@@ -21,23 +21,23 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetOBBWindEntity : public CS2::server::CSoundOpvarSetPointBase {
 		public:
-			GlobalTypes::Vector m_vMins; // 0x598 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vMaxs; // 0x5a4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceMins; // 0x5b0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vDistanceMaxs; // 0x5bc | Schema_Atomic | Size: 0xc
-			float32 m_flWindMin; // 0x5c8 | Schema_Builtin | Size: 0x4
-			float32 m_flWindMax; // 0x5cc | Schema_Builtin | Size: 0x4
-			float32 m_flWindMapMin; // 0x5d0 | Schema_Builtin | Size: 0x4
-			float32 m_flWindMapMax; // 0x5d4 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vMins; // 0x550 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vMaxs; // 0x55c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceMins; // 0x568 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vDistanceMaxs; // 0x574 | Schema_Atomic | Size: 0xc
+			float32 m_flWindMin; // 0x580 | Schema_Builtin | Size: 0x4
+			float32 m_flWindMax; // 0x584 | Schema_Builtin | Size: 0x4
+			float32 m_flWindMapMin; // 0x588 | Schema_Builtin | Size: 0x4
+			float32 m_flWindMapMax; // 0x58c | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vMins) == 0x598, "m_vMins in CSoundOpvarSetOBBWindEntity should be at offset 0x598");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vMaxs) == 0x5A4, "m_vMaxs in CSoundOpvarSetOBBWindEntity should be at offset 0x5A4");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vDistanceMins) == 0x5B0, "m_vDistanceMins in CSoundOpvarSetOBBWindEntity should be at offset 0x5B0");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vDistanceMaxs) == 0x5BC, "m_vDistanceMaxs in CSoundOpvarSetOBBWindEntity should be at offset 0x5BC");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMin) == 0x5C8, "m_flWindMin in CSoundOpvarSetOBBWindEntity should be at offset 0x5C8");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMax) == 0x5CC, "m_flWindMax in CSoundOpvarSetOBBWindEntity should be at offset 0x5CC");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMapMin) == 0x5D0, "m_flWindMapMin in CSoundOpvarSetOBBWindEntity should be at offset 0x5D0");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMapMax) == 0x5D4, "m_flWindMapMax in CSoundOpvarSetOBBWindEntity should be at offset 0x5D4");
-		static_assert(sizeof(CS2::server::CSoundOpvarSetOBBWindEntity) == 0x5D8, "CSoundOpvarSetOBBWindEntity size should be 0x5D8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vMins) == 0x550, "m_vMins in CSoundOpvarSetOBBWindEntity should be at offset 0x550");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vMaxs) == 0x55C, "m_vMaxs in CSoundOpvarSetOBBWindEntity should be at offset 0x55C");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vDistanceMins) == 0x568, "m_vDistanceMins in CSoundOpvarSetOBBWindEntity should be at offset 0x568");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vDistanceMaxs) == 0x574, "m_vDistanceMaxs in CSoundOpvarSetOBBWindEntity should be at offset 0x574");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMin) == 0x580, "m_flWindMin in CSoundOpvarSetOBBWindEntity should be at offset 0x580");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMax) == 0x584, "m_flWindMax in CSoundOpvarSetOBBWindEntity should be at offset 0x584");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMapMin) == 0x588, "m_flWindMapMin in CSoundOpvarSetOBBWindEntity should be at offset 0x588");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMapMax) == 0x58C, "m_flWindMapMax in CSoundOpvarSetOBBWindEntity should be at offset 0x58C");
+		static_assert(sizeof(CS2::server::CSoundOpvarSetOBBWindEntity) == 0x590, "CSoundOpvarSetOBBWindEntity size should be 0x590");
 	}
 }

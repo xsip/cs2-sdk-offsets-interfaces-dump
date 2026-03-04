@@ -23,28 +23,28 @@ namespace CS2 {
 	namespace server {
 		class CEnvShake : public CS2::server::CPointEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_limitToEntity; // 0x4f0 | Schema_Atomic | Size: 0x8
-			float32 m_Amplitude; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_Frequency; // 0x4fc | Schema_Builtin | Size: 0x4
-			float32 m_Duration; // 0x500 | Schema_Builtin | Size: 0x4
-			float32 m_Radius; // 0x504 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_stopTime; // 0x508 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_nextShake; // 0x50c | Schema_DeclaredClass | Size: 0x4
-			float32 m_currentAmp; // 0x510 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_maxForce; // 0x514 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CUtlSymbolLarge m_limitToEntity; // 0x4a8 | Schema_Atomic | Size: 0x8
+			float32 m_Amplitude; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_Frequency; // 0x4b4 | Schema_Builtin | Size: 0x4
+			float32 m_Duration; // 0x4b8 | Schema_Builtin | Size: 0x4
+			float32 m_Radius; // 0x4bc | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_stopTime; // 0x4c0 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_nextShake; // 0x4c4 | Schema_DeclaredClass | Size: 0x4
+			float32 m_currentAmp; // 0x4c8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_maxForce; // 0x4cc | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8);
-			server::CPhysicsShake m_shakeCallback; // 0x528 | Schema_DeclaredClass | Size: 0x18
+			server::CPhysicsShake m_shakeCallback; // 0x4e0 | Schema_DeclaredClass | Size: 0x18
 		};
-		static_assert(offsetof(CS2::server::CEnvShake, m_limitToEntity) == 0x4F0, "m_limitToEntity in CEnvShake should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CEnvShake, m_Amplitude) == 0x4F8, "m_Amplitude in CEnvShake should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CEnvShake, m_Frequency) == 0x4FC, "m_Frequency in CEnvShake should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CEnvShake, m_Duration) == 0x500, "m_Duration in CEnvShake should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CEnvShake, m_Radius) == 0x504, "m_Radius in CEnvShake should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CEnvShake, m_stopTime) == 0x508, "m_stopTime in CEnvShake should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CEnvShake, m_nextShake) == 0x50C, "m_nextShake in CEnvShake should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CEnvShake, m_currentAmp) == 0x510, "m_currentAmp in CEnvShake should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CEnvShake, m_maxForce) == 0x514, "m_maxForce in CEnvShake should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CEnvShake, m_shakeCallback) == 0x528, "m_shakeCallback in CEnvShake should be at offset 0x528");
-		static_assert(sizeof(CS2::server::CEnvShake) == 0x540, "CEnvShake size should be 0x540");
+		static_assert(offsetof(CS2::server::CEnvShake, m_limitToEntity) == 0x4A8, "m_limitToEntity in CEnvShake should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CEnvShake, m_Amplitude) == 0x4B0, "m_Amplitude in CEnvShake should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CEnvShake, m_Frequency) == 0x4B4, "m_Frequency in CEnvShake should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CEnvShake, m_Duration) == 0x4B8, "m_Duration in CEnvShake should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CEnvShake, m_Radius) == 0x4BC, "m_Radius in CEnvShake should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CEnvShake, m_stopTime) == 0x4C0, "m_stopTime in CEnvShake should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CEnvShake, m_nextShake) == 0x4C4, "m_nextShake in CEnvShake should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CEnvShake, m_currentAmp) == 0x4C8, "m_currentAmp in CEnvShake should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CEnvShake, m_maxForce) == 0x4CC, "m_maxForce in CEnvShake should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CEnvShake, m_shakeCallback) == 0x4E0, "m_shakeCallback in CEnvShake should be at offset 0x4E0");
+		static_assert(sizeof(CS2::server::CEnvShake) == 0x4F8, "CEnvShake size should be 0x4F8");
 	}
 }

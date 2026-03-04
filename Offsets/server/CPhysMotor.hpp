@@ -8,21 +8,21 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x558
+			// Class size: 0x510
 			namespace CPhysMotor /*: public CS2::server::CLogicalEntity*/ {
-				constexpr std::ptrdiff_t m_nameAttach = 0x4f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nameAnchor = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hAttachedObject = 0x500; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_hAnchorObject = 0x504; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_spinUp = 0x508; // float32 m_spinUp; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_spinDown = 0x50c; // float32 m_spinDown; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flMotorFriction = 0x510; // float32 m_flMotorFriction; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_additionalAcceleration = 0x514; // float32 m_additionalAcceleration; |  0x514 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_angularAcceleration = 0x518; // float32 m_angularAcceleration; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTorqueScale = 0x51c; // float32 m_flTorqueScale; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTargetSpeed = 0x520; // float32 m_flTargetSpeed; |  0x520 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flSpeedWhenSpinUpOrSpinDownStarted = 0x524; // float32 m_flSpeedWhenSpinUpOrSpinDownStarted; |  0x524 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_motor = 0x538; // server::CMotorController  | Schema_DeclaredClass | Size: 0x20
+				constexpr std::ptrdiff_t m_nameAttach = 0x4a8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nameAnchor = 0x4b0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hAttachedObject = 0x4b8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_hAnchorObject = 0x4bc; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_spinUp = 0x4c0; // float32 m_spinUp; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_spinDown = 0x4c4; // float32 m_spinDown; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flMotorFriction = 0x4c8; // float32 m_flMotorFriction; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_additionalAcceleration = 0x4cc; // float32 m_additionalAcceleration; |  0x4cc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_angularAcceleration = 0x4d0; // float32 m_angularAcceleration; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTorqueScale = 0x4d4; // float32 m_flTorqueScale; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTargetSpeed = 0x4d8; // float32 m_flTargetSpeed; |  0x4d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flSpeedWhenSpinUpOrSpinDownStarted = 0x4dc; // float32 m_flSpeedWhenSpinUpOrSpinDownStarted; |  0x4dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_motor = 0x4f0; // server::CMotorController  | Schema_DeclaredClass | Size: 0x20
 			}
 		}
 	}

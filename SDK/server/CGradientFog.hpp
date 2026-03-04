@@ -21,42 +21,42 @@ namespace CS2 {
 	namespace server {
 		class CGradientFog : public CS2::server::CBaseEntity {
 		public:
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hGradientFogTexture; // 0x4f0 | Schema_Atomic | Size: 0x8
-			char  m_hGradientFogTexture[0x8]; // 0x4f0 | Schema_Atomic | Size: 0x8
-			float32 m_flFogStartDistance; // 0x4f8 | Schema_Builtin | Size: 0x4
-			float32 m_flFogEndDistance; // 0x4fc | Schema_Builtin | Size: 0x4
-			bool m_bHeightFogEnabled; // 0x500 | Schema_Builtin | Size: 0x1
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hGradientFogTexture; // 0x4a8 | Schema_Atomic | Size: 0x8
+			char m_hGradientFogTexture[0x8]; // 0x4a8 | Schema_Atomic | Size: 0x8
+			float32 m_flFogStartDistance; // 0x4b0 | Schema_Builtin | Size: 0x4
+			float32 m_flFogEndDistance; // 0x4b4 | Schema_Builtin | Size: 0x4
+			bool m_bHeightFogEnabled; // 0x4b8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_flFogStartHeight; // 0x504 | Schema_Builtin | Size: 0x4
-			float32 m_flFogEndHeight; // 0x508 | Schema_Builtin | Size: 0x4
-			float32 m_flFarZ; // 0x50c | Schema_Builtin | Size: 0x4
-			float32 m_flFogMaxOpacity; // 0x510 | Schema_Builtin | Size: 0x4
-			float32 m_flFogFalloffExponent; // 0x514 | Schema_Builtin | Size: 0x4
-			float32 m_flFogVerticalExponent; // 0x518 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_fogColor; // 0x51c | Schema_Atomic | Size: 0x4
-			float32 m_flFogStrength; // 0x520 | Schema_Builtin | Size: 0x4
-			float32 m_flFadeTime; // 0x524 | Schema_Builtin | Size: 0x4
-			bool m_bStartDisabled; // 0x528 | Schema_Builtin | Size: 0x1
-			bool m_bIsEnabled; // 0x529 | Schema_Builtin | Size: 0x1
-			bool m_bGradientFogNeedsTextures; // 0x52a | Schema_Builtin | Size: 0x1
+			float32 m_flFogStartHeight; // 0x4bc | Schema_Builtin | Size: 0x4
+			float32 m_flFogEndHeight; // 0x4c0 | Schema_Builtin | Size: 0x4
+			float32 m_flFarZ; // 0x4c4 | Schema_Builtin | Size: 0x4
+			float32 m_flFogMaxOpacity; // 0x4c8 | Schema_Builtin | Size: 0x4
+			float32 m_flFogFalloffExponent; // 0x4cc | Schema_Builtin | Size: 0x4
+			float32 m_flFogVerticalExponent; // 0x4d0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_fogColor; // 0x4d4 | Schema_Atomic | Size: 0x4
+			float32 m_flFogStrength; // 0x4d8 | Schema_Builtin | Size: 0x4
+			float32 m_flFadeTime; // 0x4dc | Schema_Builtin | Size: 0x4
+			bool m_bStartDisabled; // 0x4e0 | Schema_Builtin | Size: 0x1
+			bool m_bIsEnabled; // 0x4e1 | Schema_Builtin | Size: 0x1
+			bool m_bGradientFogNeedsTextures; // 0x4e2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
-		static_assert(offsetof(CS2::server::CGradientFog, m_hGradientFogTexture) == 0x4F0, "m_hGradientFogTexture in CGradientFog should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogStartDistance) == 0x4F8, "m_flFogStartDistance in CGradientFog should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogEndDistance) == 0x4FC, "m_flFogEndDistance in CGradientFog should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CGradientFog, m_bHeightFogEnabled) == 0x500, "m_bHeightFogEnabled in CGradientFog should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogStartHeight) == 0x504, "m_flFogStartHeight in CGradientFog should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogEndHeight) == 0x508, "m_flFogEndHeight in CGradientFog should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFarZ) == 0x50C, "m_flFarZ in CGradientFog should be at offset 0x50C");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogMaxOpacity) == 0x510, "m_flFogMaxOpacity in CGradientFog should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogFalloffExponent) == 0x514, "m_flFogFalloffExponent in CGradientFog should be at offset 0x514");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogVerticalExponent) == 0x518, "m_flFogVerticalExponent in CGradientFog should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CGradientFog, m_fogColor) == 0x51C, "m_fogColor in CGradientFog should be at offset 0x51C");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFogStrength) == 0x520, "m_flFogStrength in CGradientFog should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CGradientFog, m_flFadeTime) == 0x524, "m_flFadeTime in CGradientFog should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CGradientFog, m_bStartDisabled) == 0x528, "m_bStartDisabled in CGradientFog should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CGradientFog, m_bIsEnabled) == 0x529, "m_bIsEnabled in CGradientFog should be at offset 0x529");
-		static_assert(offsetof(CS2::server::CGradientFog, m_bGradientFogNeedsTextures) == 0x52A, "m_bGradientFogNeedsTextures in CGradientFog should be at offset 0x52A");
-		static_assert(sizeof(CS2::server::CGradientFog) == 0x530, "CGradientFog size should be 0x530");
+		static_assert(offsetof(CS2::server::CGradientFog, m_hGradientFogTexture) == 0x4A8, "m_hGradientFogTexture in CGradientFog should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogStartDistance) == 0x4B0, "m_flFogStartDistance in CGradientFog should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogEndDistance) == 0x4B4, "m_flFogEndDistance in CGradientFog should be at offset 0x4B4");
+		static_assert(offsetof(CS2::server::CGradientFog, m_bHeightFogEnabled) == 0x4B8, "m_bHeightFogEnabled in CGradientFog should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogStartHeight) == 0x4BC, "m_flFogStartHeight in CGradientFog should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogEndHeight) == 0x4C0, "m_flFogEndHeight in CGradientFog should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFarZ) == 0x4C4, "m_flFarZ in CGradientFog should be at offset 0x4C4");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogMaxOpacity) == 0x4C8, "m_flFogMaxOpacity in CGradientFog should be at offset 0x4C8");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogFalloffExponent) == 0x4CC, "m_flFogFalloffExponent in CGradientFog should be at offset 0x4CC");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogVerticalExponent) == 0x4D0, "m_flFogVerticalExponent in CGradientFog should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CGradientFog, m_fogColor) == 0x4D4, "m_fogColor in CGradientFog should be at offset 0x4D4");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFogStrength) == 0x4D8, "m_flFogStrength in CGradientFog should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CGradientFog, m_flFadeTime) == 0x4DC, "m_flFadeTime in CGradientFog should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CGradientFog, m_bStartDisabled) == 0x4E0, "m_bStartDisabled in CGradientFog should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CGradientFog, m_bIsEnabled) == 0x4E1, "m_bIsEnabled in CGradientFog should be at offset 0x4E1");
+		static_assert(offsetof(CS2::server::CGradientFog, m_bGradientFogNeedsTextures) == 0x4E2, "m_bGradientFogNeedsTextures in CGradientFog should be at offset 0x4E2");
+		static_assert(sizeof(CS2::server::CGradientFog) == 0x4E8, "CGradientFog size should be 0x4E8");
 	}
 }

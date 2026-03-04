@@ -8,22 +8,22 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x6A0
+			// Class size: 0x658
 			namespace CVoteController /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_iActiveIssueIndex = 0x4f0; // int32_t m_iActiveIssueIndex; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iOnlyTeamToVote = 0x4f4; // int32_t m_iOnlyTeamToVote; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nVoteOptionCount = 0x4f8; // int32_t m_nVoteOptionCount[5]; |  0x4f8 | Schema_FixedArray | Size: 0x14
-				constexpr std::ptrdiff_t m_nPotentialVotes = 0x50c; // int32_t m_nPotentialVotes; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bIsYesNoVote = 0x510; // bool m_bIsYesNoVote; |  0x510 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_acceptingVotesTimer = 0x518; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_executeCommandTimer = 0x530; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_resetVoteTimer = 0x548; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_nVotesCast = 0x560; // int32_t m_nVotesCast[64]; |  0x560 | Schema_FixedArray | Size: 0x100
-				constexpr std::ptrdiff_t m_playerHoldingVote = 0x660; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_playerOverrideForVote = 0x664; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_nHighestCountIndex = 0x668; // int32_t m_nHighestCountIndex; |  0x668 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_potentialIssues = 0x670; // GlobalTypes::CUtlVector<server::CBaseIssue*>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_VoteOptions = 0x688; // GlobalTypes::CUtlVector<char*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_iActiveIssueIndex = 0x4a8; // int32_t m_iActiveIssueIndex; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iOnlyTeamToVote = 0x4ac; // int32_t m_iOnlyTeamToVote; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nVoteOptionCount = 0x4b0; // int32_t m_nVoteOptionCount[5]; |  0x4b0 | Schema_FixedArray | Size: 0x14
+				constexpr std::ptrdiff_t m_nPotentialVotes = 0x4c4; // int32_t m_nPotentialVotes; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bIsYesNoVote = 0x4c8; // bool m_bIsYesNoVote; |  0x4c8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_acceptingVotesTimer = 0x4d0; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_executeCommandTimer = 0x4e8; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_resetVoteTimer = 0x500; // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_nVotesCast = 0x518; // int32_t m_nVotesCast[64]; |  0x518 | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_playerHoldingVote = 0x618; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_playerOverrideForVote = 0x61c; // GlobalTypes::CPlayerSlot  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_nHighestCountIndex = 0x620; // int32_t m_nHighestCountIndex; |  0x620 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_potentialIssues = 0x628; // GlobalTypes::CUtlVector<server::CBaseIssue*>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_VoteOptions = 0x640; // GlobalTypes::CUtlVector<char*>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace server {
 		class CPhysThruster : public CS2::server::CPhysForce {
 		public:
-			GlobalTypes::Vector m_localOrigin; // 0x550 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_localOrigin; // 0x508 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPhysThruster, m_localOrigin) == 0x550, "m_localOrigin in CPhysThruster should be at offset 0x550");
-		static_assert(sizeof(CS2::server::CPhysThruster) == 0x560, "CPhysThruster size should be 0x560");
+		static_assert(offsetof(CS2::server::CPhysThruster, m_localOrigin) == 0x508, "m_localOrigin in CPhysThruster should be at offset 0x508");
+		static_assert(sizeof(CS2::server::CPhysThruster) == 0x518, "CPhysThruster size should be 0x518");
 	}
 }

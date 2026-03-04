@@ -4,6 +4,6 @@
 
 
 class server_WeaponPurchaseTracker_t {
-    char vTable4149[0x8];
+    void **__vftable_0;
     char m_weaponPurchases[0x68];
 };

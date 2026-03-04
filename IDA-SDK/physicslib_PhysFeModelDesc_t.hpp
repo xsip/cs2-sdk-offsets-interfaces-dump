@@ -23,7 +23,7 @@ class physicslib_PhysFeModelDesc_t {
     uint16_t m_nTreeDepth;
     uint16_t m_nNodeBaseJiggleboneDependsCount;
     uint16_t m_nRopeCount;
-    char pad_2415[0x6];
+    char pad_1311[0x6];
     char m_Ropes[0x18];
     char m_NodeBases[0x18];
     char m_SimdNodeBases[0x18];
@@ -40,6 +40,7 @@ class physicslib_PhysFeModelDesc_t {
     char m_DynKinLinks[0x18];
     char m_AntiTunnelProbes[0x18];
     char m_AntiTunnelTargetNodes[0x18];
+    char m_NodeStrayBoxes[0x18];
     char m_AxialEdges[0x18];
     char m_NodeInvMasses[0x18];
     char m_CtrlOffsets[0x18];
@@ -94,6 +95,7 @@ class physicslib_PhysFeModelDesc_t {
     char m_LockToGoal[0x18];
     char m_SkelParents[0x18];
     char m_DynNodeWindBases[0x18];
+    char m_SelfCollisionLayers[0x18];
     float32 m_flInternalPressure;
     float32 m_flDefaultTimeDilation;
     float32 m_flWindage;

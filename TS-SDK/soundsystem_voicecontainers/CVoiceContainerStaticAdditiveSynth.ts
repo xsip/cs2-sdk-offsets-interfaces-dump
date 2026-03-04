@@ -1,9 +1,9 @@
 // generated - do not edit!
 
-import {soundsystem_voicecontainers_CVoiceContainerBase} from './CVoiceContainerBase';
+import {soundsystem_voicecontainers_CVoiceContainerAsyncGenerator} from './CVoiceContainerAsyncGenerator';
 // Class size: 0xE8
-// BaseClass: : public CS2::soundsystem_voicecontainers::CVoiceContainerBase
+// BaseClass: : public CS2::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator
 export const soundsystem_voicecontainers_CVoiceContainerStaticAdditiveSynth  = {
-	...soundsystem_voicecontainers_CVoiceContainerBase,
-	m_tones: 184n, // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth::CTone>  | Schema_Atomic | Size: 0x18
+	...soundsystem_voicecontainers_CVoiceContainerAsyncGenerator,
+	m_tones: 184n, // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CTone>  | Schema_Atomic | Size: 0x18
 }

@@ -8,56 +8,56 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x830
+			// Class size: 0x728
 			namespace CLogicNPCCounter /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_OnMinCountAll = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMaxCountAll = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFactorAll = 0x540; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMinPlayerDistAll = 0x568; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMinCount_1 = 0x590; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMaxCount_1 = 0x5b8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFactor_1 = 0x5e0; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMinPlayerDist_1 = 0x608; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMinCount_2 = 0x630; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMaxCount_2 = 0x658; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFactor_2 = 0x680; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMinPlayerDist_2 = 0x6a8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMinCount_3 = 0x6d0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMaxCount_3 = 0x6f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnFactor_3 = 0x720; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_OnMinPlayerDist_3 = 0x748; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
-				constexpr std::ptrdiff_t m_hSource = 0x770; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x778; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flDistanceMax = 0x780; // float32 m_flDistanceMax; |  0x780 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bDisabled = 0x784; // bool m_bDisabled; |  0x784 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nMinCountAll = 0x788; // int32_t m_nMinCountAll; |  0x788 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxCountAll = 0x78c; // int32_t m_nMaxCountAll; |  0x78c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMinFactorAll = 0x790; // int32_t m_nMinFactorAll; |  0x790 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxFactorAll = 0x794; // int32_t m_nMaxFactorAll; |  0x794 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszNPCClassname_1 = 0x7a0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nNPCState_1 = 0x7a8; // int32_t m_nNPCState_1; |  0x7a8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bInvertState_1 = 0x7ac; // bool m_bInvertState_1; |  0x7ac | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nMinCount_1 = 0x7b0; // int32_t m_nMinCount_1; |  0x7b0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxCount_1 = 0x7b4; // int32_t m_nMaxCount_1; |  0x7b4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMinFactor_1 = 0x7b8; // int32_t m_nMinFactor_1; |  0x7b8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxFactor_1 = 0x7bc; // int32_t m_nMaxFactor_1; |  0x7bc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefaultDist_1 = 0x7c4; // float32 m_flDefaultDist_1; |  0x7c4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszNPCClassname_2 = 0x7c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nNPCState_2 = 0x7d0; // int32_t m_nNPCState_2; |  0x7d0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bInvertState_2 = 0x7d4; // bool m_bInvertState_2; |  0x7d4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nMinCount_2 = 0x7d8; // int32_t m_nMinCount_2; |  0x7d8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxCount_2 = 0x7dc; // int32_t m_nMaxCount_2; |  0x7dc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMinFactor_2 = 0x7e0; // int32_t m_nMinFactor_2; |  0x7e0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxFactor_2 = 0x7e4; // int32_t m_nMaxFactor_2; |  0x7e4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefaultDist_2 = 0x7ec; // float32 m_flDefaultDist_2; |  0x7ec | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszNPCClassname_3 = 0x7f0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_nNPCState_3 = 0x7f8; // int32_t m_nNPCState_3; |  0x7f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bInvertState_3 = 0x7fc; // bool m_bInvertState_3; |  0x7fc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nMinCount_3 = 0x800; // int32_t m_nMinCount_3; |  0x800 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxCount_3 = 0x804; // int32_t m_nMaxCount_3; |  0x804 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMinFactor_3 = 0x808; // int32_t m_nMinFactor_3; |  0x808 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxFactor_3 = 0x80c; // int32_t m_nMaxFactor_3; |  0x80c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flDefaultDist_3 = 0x814; // float32 m_flDefaultDist_3; |  0x814 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_OnMinCountAll = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnMaxCountAll = 0x4c0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFactorAll = 0x4d8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMinPlayerDistAll = 0x4f8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMinCount_1 = 0x518; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnMaxCount_1 = 0x530; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFactor_1 = 0x548; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMinPlayerDist_1 = 0x568; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMinCount_2 = 0x588; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnMaxCount_2 = 0x5a0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFactor_2 = 0x5b8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMinPlayerDist_2 = 0x5d8; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMinCount_3 = 0x5f8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnMaxCount_3 = 0x610; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnFactor_3 = 0x628; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_OnMinPlayerDist_3 = 0x648; // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+				constexpr std::ptrdiff_t m_hSource = 0x668; // GlobalTypes::CEntityHandle  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iszSourceEntityName = 0x670; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flDistanceMax = 0x678; // float32 m_flDistanceMax; |  0x678 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bDisabled = 0x67c; // bool m_bDisabled; |  0x67c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nMinCountAll = 0x680; // int32_t m_nMinCountAll; |  0x680 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxCountAll = 0x684; // int32_t m_nMaxCountAll; |  0x684 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMinFactorAll = 0x688; // int32_t m_nMinFactorAll; |  0x688 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxFactorAll = 0x68c; // int32_t m_nMaxFactorAll; |  0x68c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszNPCClassname_1 = 0x698; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nNPCState_1 = 0x6a0; // int32_t m_nNPCState_1; |  0x6a0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bInvertState_1 = 0x6a4; // bool m_bInvertState_1; |  0x6a4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nMinCount_1 = 0x6a8; // int32_t m_nMinCount_1; |  0x6a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxCount_1 = 0x6ac; // int32_t m_nMaxCount_1; |  0x6ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMinFactor_1 = 0x6b0; // int32_t m_nMinFactor_1; |  0x6b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxFactor_1 = 0x6b4; // int32_t m_nMaxFactor_1; |  0x6b4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefaultDist_1 = 0x6bc; // float32 m_flDefaultDist_1; |  0x6bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszNPCClassname_2 = 0x6c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nNPCState_2 = 0x6c8; // int32_t m_nNPCState_2; |  0x6c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bInvertState_2 = 0x6cc; // bool m_bInvertState_2; |  0x6cc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nMinCount_2 = 0x6d0; // int32_t m_nMinCount_2; |  0x6d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxCount_2 = 0x6d4; // int32_t m_nMaxCount_2; |  0x6d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMinFactor_2 = 0x6d8; // int32_t m_nMinFactor_2; |  0x6d8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxFactor_2 = 0x6dc; // int32_t m_nMaxFactor_2; |  0x6dc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefaultDist_2 = 0x6e4; // float32 m_flDefaultDist_2; |  0x6e4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszNPCClassname_3 = 0x6e8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_nNPCState_3 = 0x6f0; // int32_t m_nNPCState_3; |  0x6f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bInvertState_3 = 0x6f4; // bool m_bInvertState_3; |  0x6f4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nMinCount_3 = 0x6f8; // int32_t m_nMinCount_3; |  0x6f8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxCount_3 = 0x6fc; // int32_t m_nMaxCount_3; |  0x6fc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMinFactor_3 = 0x700; // int32_t m_nMinFactor_3; |  0x700 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxFactor_3 = 0x704; // int32_t m_nMaxFactor_3; |  0x704 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flDefaultDist_3 = 0x70c; // float32 m_flDefaultDist_3; |  0x70c | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

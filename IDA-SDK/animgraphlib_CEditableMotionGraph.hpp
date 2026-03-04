@@ -5,7 +5,8 @@
 #include "animgraphlib_CParamSpanUpdater.hpp"
 
 class animgraphlib_CEditableMotionGraph {
-    char vTable113[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     animgraphlib_CParamSpanUpdater m_paramSpans;
     char m_tags[0x18];
     char m_pRootNode[0x8];

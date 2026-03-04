@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0xB70
+			// Class size: 0xAC0
 			namespace CItem /*: public CS2::server::CBaseAnimGraph*/ {
-				constexpr std::ptrdiff_t m_OnPlayerTouch = 0xa98; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnPlayerPickup = 0xac0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_bActivateWhenAtRest = 0xae8; // bool m_bActivateWhenAtRest; |  0xae8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_OnCacheInteraction = 0xaf0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_OnGlovePulled = 0xb18; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_vOriginalSpawnOrigin = 0xb40; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vOriginalSpawnAngles = 0xb4c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_bPhysStartAsleep = 0xb58; // bool m_bPhysStartAsleep; |  0xb58 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnPlayerTouch = 0xa28; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnPlayerPickup = 0xa40; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_bActivateWhenAtRest = 0xa58; // bool m_bActivateWhenAtRest; |  0xa58 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_OnCacheInteraction = 0xa60; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_OnGlovePulled = 0xa78; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_vOriginalSpawnOrigin = 0xa90; // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vOriginalSpawnAngles = 0xa9c; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_bPhysStartAsleep = 0xaa8; // bool m_bPhysStartAsleep; |  0xaa8 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

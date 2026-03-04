@@ -8,17 +8,17 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem_voicecontainers {
-			// Class size: 0x190
-			namespace CVoiceContainerShapedNoise /*: public CS2::soundsystem_voicecontainers::CVoiceContainerBase*/ {
-				constexpr std::ptrdiff_t m_bUseCurveForFrequency = 0xb8; // bool m_bUseCurveForFrequency; |  0xb8 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flFrequency = 0xbc; // float32 m_flFrequency; |  0xbc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_frequencySweep = 0xc0; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bUseCurveForResonance = 0x100; // bool m_bUseCurveForResonance; |  0x100 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flResonance = 0x104; // float32 m_flResonance; |  0x104 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_resonanceSweep = 0x108; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
-				constexpr std::ptrdiff_t m_bUseCurveForAmplitude = 0x148; // bool m_bUseCurveForAmplitude; |  0x148 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flGainInDecibels = 0x14c; // float32 m_flGainInDecibels; |  0x14c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_gainSweep = 0x150; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+			// Class size: 0x180
+			namespace CVoiceContainerShapedNoise /*: public CS2::soundsystem_voicecontainers::CVoiceContainerGenerator*/ {
+				constexpr std::ptrdiff_t m_bUseCurveForFrequency = 0xa8; // bool m_bUseCurveForFrequency; |  0xa8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFrequency = 0xac; // float32 m_flFrequency; |  0xac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_frequencySweep = 0xb0; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bUseCurveForResonance = 0xf0; // bool m_bUseCurveForResonance; |  0xf0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flResonance = 0xf4; // float32 m_flResonance; |  0xf4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_resonanceSweep = 0xf8; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
+				constexpr std::ptrdiff_t m_bUseCurveForAmplitude = 0x138; // bool m_bUseCurveForAmplitude; |  0x138 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flGainInDecibels = 0x13c; // float32 m_flGainInDecibels; |  0x13c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_gainSweep = 0x140; // GlobalTypes::CPiecewiseCurve  | Schema_Atomic | Size: 0x40
 			}
 		}
 	}

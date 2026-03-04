@@ -22,29 +22,29 @@ namespace CS2 {
 	namespace server {
 		class CLogicAuto : public CS2::server::CBaseEntity {
 		public:
-			entity2::CEntityIOOutput m_OnMapSpawn; // 0x4f0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnDemoMapSpawn; // 0x518 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnNewGame; // 0x540 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnLoadGame; // 0x568 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMapTransition; // 0x590 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBackgroundMap; // 0x5b8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMultiNewMap; // 0x5e0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnMultiNewRound; // 0x608 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVREnabled; // 0x630 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnVRNotEnabled; // 0x658 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x680 | Schema_Atomic | Size: 0x8
+			entity2::CEntityIOOutput m_OnMapSpawn; // 0x4a8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnDemoMapSpawn; // 0x4c0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnNewGame; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnLoadGame; // 0x4f0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMapTransition; // 0x508 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnBackgroundMap; // 0x520 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMultiNewMap; // 0x538 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnMultiNewRound; // 0x550 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnVREnabled; // 0x568 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnVRNotEnabled; // 0x580 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x598 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMapSpawn) == 0x4F0, "m_OnMapSpawn in CLogicAuto should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnDemoMapSpawn) == 0x518, "m_OnDemoMapSpawn in CLogicAuto should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnNewGame) == 0x540, "m_OnNewGame in CLogicAuto should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnLoadGame) == 0x568, "m_OnLoadGame in CLogicAuto should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMapTransition) == 0x590, "m_OnMapTransition in CLogicAuto should be at offset 0x590");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnBackgroundMap) == 0x5B8, "m_OnBackgroundMap in CLogicAuto should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMultiNewMap) == 0x5E0, "m_OnMultiNewMap in CLogicAuto should be at offset 0x5E0");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMultiNewRound) == 0x608, "m_OnMultiNewRound in CLogicAuto should be at offset 0x608");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnVREnabled) == 0x630, "m_OnVREnabled in CLogicAuto should be at offset 0x630");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_OnVRNotEnabled) == 0x658, "m_OnVRNotEnabled in CLogicAuto should be at offset 0x658");
-		static_assert(offsetof(CS2::server::CLogicAuto, m_globalstate) == 0x680, "m_globalstate in CLogicAuto should be at offset 0x680");
-		static_assert(sizeof(CS2::server::CLogicAuto) == 0x688, "CLogicAuto size should be 0x688");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMapSpawn) == 0x4A8, "m_OnMapSpawn in CLogicAuto should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnDemoMapSpawn) == 0x4C0, "m_OnDemoMapSpawn in CLogicAuto should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnNewGame) == 0x4D8, "m_OnNewGame in CLogicAuto should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnLoadGame) == 0x4F0, "m_OnLoadGame in CLogicAuto should be at offset 0x4F0");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMapTransition) == 0x508, "m_OnMapTransition in CLogicAuto should be at offset 0x508");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnBackgroundMap) == 0x520, "m_OnBackgroundMap in CLogicAuto should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMultiNewMap) == 0x538, "m_OnMultiNewMap in CLogicAuto should be at offset 0x538");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMultiNewRound) == 0x550, "m_OnMultiNewRound in CLogicAuto should be at offset 0x550");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnVREnabled) == 0x568, "m_OnVREnabled in CLogicAuto should be at offset 0x568");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_OnVRNotEnabled) == 0x580, "m_OnVRNotEnabled in CLogicAuto should be at offset 0x580");
+		static_assert(offsetof(CS2::server::CLogicAuto, m_globalstate) == 0x598, "m_globalstate in CLogicAuto should be at offset 0x598");
+		static_assert(sizeof(CS2::server::CLogicAuto) == 0x5A0, "CLogicAuto size should be 0x5A0");
 	}
 }

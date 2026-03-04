@@ -5,12 +5,12 @@
 #include "smartprops_CSmartPropAttributeChoiceSelectionMode.hpp"
 
 class smartprops_CSmartPropOperation_RandomColorTintColor {
-    char vTable2558[0x8];
+    void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
-    char end_pad_2559[0x8];
+    char end_pad_2635[0x8];
     smartprops_CSmartPropAttributeChoiceSelectionMode m_SelectionMode;
     CSmartPropAttributeFloat m_ColorPosition;
     smartprops_ApplyColorMode_t m_Mode;
-    char pad_2564[0x4];
+    char pad_2640[0x4];
     CColorGradient m_Gradient;
 };

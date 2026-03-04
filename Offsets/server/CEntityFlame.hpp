@@ -8,18 +8,18 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x530
+			// Class size: 0x4E8
 			namespace CEntityFlame /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_hEntAttached = 0x4f0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bCheapEffect = 0x4f4; // bool m_bCheapEffect; |  0x4f4 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flSize = 0x4f8; // float32 m_flSize; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseHitboxes = 0x4fc; // bool m_bUseHitboxes; |  0x4fc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_iNumHitboxFires = 0x500; // int32_t m_iNumHitboxFires; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flHitboxFireScale = 0x504; // float32 m_flHitboxFireScale; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLifetime = 0x508; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_hAttacker = 0x50c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flDirectDamagePerSecond = 0x510; // float32 m_flDirectDamagePerSecond; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iCustomDamageType = 0x514; // int32_t m_iCustomDamageType; |  0x514 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hEntAttached = 0x4a8; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bCheapEffect = 0x4ac; // bool m_bCheapEffect; |  0x4ac | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flSize = 0x4b0; // float32 m_flSize; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseHitboxes = 0x4b4; // bool m_bUseHitboxes; |  0x4b4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iNumHitboxFires = 0x4b8; // int32_t m_iNumHitboxFires; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flHitboxFireScale = 0x4bc; // float32 m_flHitboxFireScale; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLifetime = 0x4c0; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
+				constexpr std::ptrdiff_t m_hAttacker = 0x4c4; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flDirectDamagePerSecond = 0x4c8; // float32 m_flDirectDamagePerSecond; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iCustomDamageType = 0x4cc; // int32_t m_iCustomDamageType; |  0x4cc | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

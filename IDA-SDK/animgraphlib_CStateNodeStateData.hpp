@@ -6,5 +6,5 @@
 
 class animgraphlib_CStateNodeStateData {
     animgraphlib_CAnimUpdateNodeRef m_pChild;
-    char end_pad_225[0x8];
+    char end_pad_236[0x8];
 };

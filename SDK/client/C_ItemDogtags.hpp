@@ -26,13 +26,13 @@ namespace CS2 {
 	namespace client {
 		class C_ItemDogtags : public CS2::client::C_Item {
 		public:
-			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_OwningPlayer; // 0x19e0 | Schema_Atomic | Size: 0x4
-			// char  m_OwningPlayer[0x4]; // 0x19e0 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_KillingPlayer; // 0x19e4 | Schema_Atomic | Size: 0x4
-			// char  m_KillingPlayer[0x4]; // 0x19e4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_OwningPlayer; // 0x19c0 | Schema_Atomic | Size: 0x4
+			// char m_OwningPlayer[0x4]; // 0x19c0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_KillingPlayer; // 0x19c4 | Schema_Atomic | Size: 0x4
+			// char m_KillingPlayer[0x4]; // 0x19c4 | Schema_Atomic | Size: 0x4
 		};
-		static_assert(offsetof(CS2::client::C_ItemDogtags, m_OwningPlayer) == 0x19E0, "m_OwningPlayer in C_ItemDogtags should be at offset 0x19E0");
-		static_assert(offsetof(CS2::client::C_ItemDogtags, m_KillingPlayer) == 0x19E4, "m_KillingPlayer in C_ItemDogtags should be at offset 0x19E4");
-		static_assert(sizeof(CS2::client::C_ItemDogtags) == 0x19E8, "C_ItemDogtags size should be 0x19E8");
+		static_assert(offsetof(CS2::client::C_ItemDogtags, m_OwningPlayer) == 0x19C0, "m_OwningPlayer in C_ItemDogtags should be at offset 0x19C0");
+		static_assert(offsetof(CS2::client::C_ItemDogtags, m_KillingPlayer) == 0x19C4, "m_KillingPlayer in C_ItemDogtags should be at offset 0x19C4");
+		static_assert(sizeof(CS2::client::C_ItemDogtags) == 0x19C8, "C_ItemDogtags size should be 0x19C8");
 	}
 }

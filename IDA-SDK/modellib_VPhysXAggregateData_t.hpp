@@ -7,7 +7,7 @@ class physicslib_PhysFeModelDesc_t;
 class modellib_VPhysXAggregateData_t {
     uint16_t m_nFlags;
     uint16_t m_nRefCounter;
-    char pad_396[0x4];
+    char pad_403[0x4];
     char m_bonesHash[0x18];
     char m_boneNames[0x18];
     char m_indexNames[0x18];

@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {client_IEconItemInterface} from './IEconItemInterface';
-// Class size: 0x478
+// Class size: 0x470
 // BaseClass: : public CS2::client::IEconItemInterface
 export const client_C_EconItemView  = {
 	...client_IEconItemInterface,
@@ -29,9 +29,9 @@ export const client_C_EconItemView  = {
 	m_iOriginOverride: 504n, // int32_t m_iOriginOverride; |  0x1f8 | Schema_Builtin | Size: 0x4
 	m_ubStyleOverride: 508n, // uint8_t m_ubStyleOverride; |  0x1fc | Schema_Builtin | Size: 0x1
 	m_unClientFlags: 509n, // uint8_t m_unClientFlags; |  0x1fd | Schema_Builtin | Size: 0x1
-	m_AttributeList: 528n, // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
-	m_NetworkedDynamicAttributes: 648n, // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
-	m_szCustomName: 768n, // char m_szCustomName[161]; |  0x300 | Schema_FixedArray | Size: 0xa1
-	m_szCustomNameOverride: 929n, // char m_szCustomNameOverride[161]; |  0x3a1 | Schema_FixedArray | Size: 0xa1
-	m_bInitializedTags: 1136n, // bool m_bInitializedTags; |  0x470 | Schema_Builtin | Size: 0x1
+	m_AttributeList: 520n, // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
+	m_NetworkedDynamicAttributes: 640n, // client::CAttributeList  | Schema_DeclaredClass | Size: 0x78
+	m_szCustomName: 760n, // char m_szCustomName[161]; |  0x2f8 | Schema_FixedArray | Size: 0xa1
+	m_szCustomNameOverride: 921n, // char m_szCustomNameOverride[161]; |  0x399 | Schema_FixedArray | Size: 0xa1
+	m_bInitializedTags: 1128n, // bool m_bInitializedTags; |  0x468 | Schema_Builtin | Size: 0x1
 }

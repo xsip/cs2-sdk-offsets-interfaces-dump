@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0x338
+			// Class size: 0x340
 			namespace CCSPlayer_CameraServices /*: public CS2::client::CCSPlayerBase_CameraServices*/ {
-				constexpr std::ptrdiff_t m_flDeathCamTilt = 0x2a0; // float32 m_flDeathCamTilt; |  0x2a0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_vClientScopeInaccuracy = 0x2a8; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flDeathCamTilt = 0x2a8; // float32 m_flDeathCamTilt; |  0x2a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_vClientScopeInaccuracy = 0x2b0; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 			}
 		}
 	}

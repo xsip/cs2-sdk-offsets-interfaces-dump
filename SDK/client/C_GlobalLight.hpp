@@ -22,10 +22,10 @@ namespace CS2 {
 		class C_GlobalLight : public CS2::client::C_BaseEntity {
 		public:
 			S2_PAD(0x4c8);
-			uint16_t m_WindClothForceHandle; // 0xac0 | Schema_Builtin | Size: 0x2
+			uint16_t m_WindClothForceHandle; // 0xad0 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2e); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_GlobalLight, m_WindClothForceHandle) == 0xAC0, "m_WindClothForceHandle in C_GlobalLight should be at offset 0xAC0");
-		static_assert(sizeof(CS2::client::C_GlobalLight) == 0xAF0, "C_GlobalLight size should be 0xAF0");
+		static_assert(offsetof(CS2::client::C_GlobalLight, m_WindClothForceHandle) == 0xAD0, "m_WindClothForceHandle in C_GlobalLight should be at offset 0xAD0");
+		static_assert(sizeof(CS2::client::C_GlobalLight) == 0xB00, "C_GlobalLight size should be 0xB00");
 	}
 }

@@ -1,7 +1,7 @@
 // generated - do not edit!
 
-// Class size: 0x28
+// Class size: 0x18
 // BaseClass: NONE
 export const entity2_CEntityIOOutput  = {
-	m_Value: 24n, // GlobalTypes::CVariantBase<entity2::CVariantDefaultAllocator>  | Schema_Atomic | Size: 0x10
+	// NO SCHEMA DATA FOUND!
 }

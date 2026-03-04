@@ -30,95 +30,95 @@ namespace CS2 {
 		class CBasePropDoor : public CS2::server::CDynamicProp {
 		public:
 			S2_PAD(0x10);
-			float32 m_flAutoReturnDelay; // 0xd60 | Schema_Builtin | Size: 0x4
+			float32 m_flAutoReturnDelay; // 0xc60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>> m_hDoorList; // 0xd68 | Schema_Atomic | Size: 0x18
-			char  m_hDoorList[0x18]; // 0xd68 | Schema_Atomic | Size: 0x18
-			int32_t m_nHardwareType; // 0xd80 | Schema_Builtin | Size: 0x4
-			bool m_bNeedsHardware; // 0xd84 | Schema_Builtin | Size: 0x1
+			server::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>> m_hDoorList; // 0xc68 | Schema_Atomic | Size: 0x18
+			// char m_hDoorList[0x18]; // 0xc68 | Schema_Atomic | Size: 0x18
+			int32_t m_nHardwareType; // 0xc80 | Schema_Builtin | Size: 0x4
+			bool m_bNeedsHardware; // 0xc84 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			client::DoorState_t m_eDoorState; // 0xd88 | Schema_DeclaredEnum | Size: 0x4
-			bool m_bLocked; // 0xd8c | Schema_Builtin | Size: 0x1
-			bool m_bNoNPCs; // 0xd8d | Schema_Builtin | Size: 0x1
+			client::DoorState_t m_eDoorState; // 0xc88 | Schema_DeclaredEnum | Size: 0x4
+			bool m_bLocked; // 0xc8c | Schema_Builtin | Size: 0x1
+			bool m_bNoNPCs; // 0xc8d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::Vector m_closedPosition; // 0xd90 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_closedAngles; // 0xd9c | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle<server::CBaseEntity> m_hBlocker; // 0xda8 | Schema_Atomic | Size: 0x4
-			// char  m_hBlocker[0x4]; // 0xda8 | Schema_Atomic | Size: 0x4
-			bool m_bFirstBlocked; // 0xdac | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_closedPosition; // 0xc90 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_closedAngles; // 0xc9c | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<server::CBaseEntity> m_hBlocker; // 0xca8 | Schema_Atomic | Size: 0x4
+			// char m_hBlocker[0x4]; // 0xca8 | Schema_Atomic | Size: 0x4
+			bool m_bFirstBlocked; // 0xcac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::locksound_t m_ls; // 0xdb0 | Schema_DeclaredClass | Size: 0x20
-			bool m_bForceClosed; // 0xdd0 | Schema_Builtin | Size: 0x1
+			server::locksound_t m_ls; // 0xcb0 | Schema_DeclaredClass | Size: 0x20
+			bool m_bForceClosed; // 0xcd0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::VectorWS m_vecLatchWorldPosition; // 0xdd4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle<server::CBaseEntity> m_hActivator; // 0xde0 | Schema_Atomic | Size: 0x4
-			// char  m_hActivator[0x4]; // 0xde0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::VectorWS m_vecLatchWorldPosition; // 0xcd4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<server::CBaseEntity> m_hActivator; // 0xce0 | Schema_Atomic | Size: 0x4
+			// char m_hActivator[0x4]; // 0xce0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x14);
-			GlobalTypes::CUtlSymbolLarge m_SoundMoving; // 0xdf8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundOpen; // 0xe00 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundClose; // 0xe08 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundLock; // 0xe10 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundUnlock; // 0xe18 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundLatch; // 0xe20 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundPound; // 0xe28 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundJiggle; // 0xe30 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_SoundLockedAnim; // 0xe38 | Schema_Atomic | Size: 0x8
-			int32_t m_numCloseAttempts; // 0xe40 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlStringToken m_nPhysicsMaterial; // 0xe44 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CUtlSymbolLarge m_SlaveName; // 0xe48 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBasePropDoor> m_hMaster; // 0xe50 | Schema_Atomic | Size: 0x4
-			// char  m_hMaster[0x4]; // 0xe50 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_SoundMoving; // 0xcf8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundOpen; // 0xd00 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundClose; // 0xd08 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundLock; // 0xd10 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundUnlock; // 0xd18 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundLatch; // 0xd20 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundPound; // 0xd28 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundJiggle; // 0xd30 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_SoundLockedAnim; // 0xd38 | Schema_Atomic | Size: 0x8
+			int32_t m_numCloseAttempts; // 0xd40 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlStringToken m_nPhysicsMaterial; // 0xd44 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_SlaveName; // 0xd48 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBasePropDoor> m_hMaster; // 0xd50 | Schema_Atomic | Size: 0x4
+			// char m_hMaster[0x4]; // 0xd50 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			entity2::CEntityIOOutput m_OnBlockedClosing; // 0xe58 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnBlockedOpening; // 0xe80 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnUnblockedClosing; // 0xea8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnUnblockedOpening; // 0xed0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFullyClosed; // 0xef8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnFullyOpen; // 0xf20 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnClose; // 0xf48 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnOpen; // 0xf70 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnLockedUse; // 0xf98 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnAjarOpen; // 0xfc0 | Schema_DeclaredClass | Size: 0x28
+			entity2::CEntityIOOutput m_OnBlockedClosing; // 0xd58 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnBlockedOpening; // 0xd70 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnUnblockedClosing; // 0xd88 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnUnblockedOpening; // 0xda0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFullyClosed; // 0xdb8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnFullyOpen; // 0xdd0 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnClose; // 0xde8 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnOpen; // 0xe00 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnLockedUse; // 0xe18 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnAjarOpen; // 0xe30 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_flAutoReturnDelay) == 0xD60, "m_flAutoReturnDelay in CBasePropDoor should be at offset 0xD60");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_hDoorList) == 0xD68, "m_hDoorList in CBasePropDoor should be at offset 0xD68");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_nHardwareType) == 0xD80, "m_nHardwareType in CBasePropDoor should be at offset 0xD80");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_bNeedsHardware) == 0xD84, "m_bNeedsHardware in CBasePropDoor should be at offset 0xD84");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_eDoorState) == 0xD88, "m_eDoorState in CBasePropDoor should be at offset 0xD88");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_bLocked) == 0xD8C, "m_bLocked in CBasePropDoor should be at offset 0xD8C");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_bNoNPCs) == 0xD8D, "m_bNoNPCs in CBasePropDoor should be at offset 0xD8D");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_closedPosition) == 0xD90, "m_closedPosition in CBasePropDoor should be at offset 0xD90");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_closedAngles) == 0xD9C, "m_closedAngles in CBasePropDoor should be at offset 0xD9C");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_hBlocker) == 0xDA8, "m_hBlocker in CBasePropDoor should be at offset 0xDA8");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_bFirstBlocked) == 0xDAC, "m_bFirstBlocked in CBasePropDoor should be at offset 0xDAC");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_ls) == 0xDB0, "m_ls in CBasePropDoor should be at offset 0xDB0");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_bForceClosed) == 0xDD0, "m_bForceClosed in CBasePropDoor should be at offset 0xDD0");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_vecLatchWorldPosition) == 0xDD4, "m_vecLatchWorldPosition in CBasePropDoor should be at offset 0xDD4");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_hActivator) == 0xDE0, "m_hActivator in CBasePropDoor should be at offset 0xDE0");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundMoving) == 0xDF8, "m_SoundMoving in CBasePropDoor should be at offset 0xDF8");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundOpen) == 0xE00, "m_SoundOpen in CBasePropDoor should be at offset 0xE00");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundClose) == 0xE08, "m_SoundClose in CBasePropDoor should be at offset 0xE08");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundLock) == 0xE10, "m_SoundLock in CBasePropDoor should be at offset 0xE10");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundUnlock) == 0xE18, "m_SoundUnlock in CBasePropDoor should be at offset 0xE18");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundLatch) == 0xE20, "m_SoundLatch in CBasePropDoor should be at offset 0xE20");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundPound) == 0xE28, "m_SoundPound in CBasePropDoor should be at offset 0xE28");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundJiggle) == 0xE30, "m_SoundJiggle in CBasePropDoor should be at offset 0xE30");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundLockedAnim) == 0xE38, "m_SoundLockedAnim in CBasePropDoor should be at offset 0xE38");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_numCloseAttempts) == 0xE40, "m_numCloseAttempts in CBasePropDoor should be at offset 0xE40");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_nPhysicsMaterial) == 0xE44, "m_nPhysicsMaterial in CBasePropDoor should be at offset 0xE44");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_SlaveName) == 0xE48, "m_SlaveName in CBasePropDoor should be at offset 0xE48");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_hMaster) == 0xE50, "m_hMaster in CBasePropDoor should be at offset 0xE50");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnBlockedClosing) == 0xE58, "m_OnBlockedClosing in CBasePropDoor should be at offset 0xE58");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnBlockedOpening) == 0xE80, "m_OnBlockedOpening in CBasePropDoor should be at offset 0xE80");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnUnblockedClosing) == 0xEA8, "m_OnUnblockedClosing in CBasePropDoor should be at offset 0xEA8");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnUnblockedOpening) == 0xED0, "m_OnUnblockedOpening in CBasePropDoor should be at offset 0xED0");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnFullyClosed) == 0xEF8, "m_OnFullyClosed in CBasePropDoor should be at offset 0xEF8");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnFullyOpen) == 0xF20, "m_OnFullyOpen in CBasePropDoor should be at offset 0xF20");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnClose) == 0xF48, "m_OnClose in CBasePropDoor should be at offset 0xF48");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnOpen) == 0xF70, "m_OnOpen in CBasePropDoor should be at offset 0xF70");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnLockedUse) == 0xF98, "m_OnLockedUse in CBasePropDoor should be at offset 0xF98");
-		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnAjarOpen) == 0xFC0, "m_OnAjarOpen in CBasePropDoor should be at offset 0xFC0");
-		static_assert(sizeof(CS2::server::CBasePropDoor) == 0xFF0, "CBasePropDoor size should be 0xFF0");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_flAutoReturnDelay) == 0xC60, "m_flAutoReturnDelay in CBasePropDoor should be at offset 0xC60");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_hDoorList) == 0xC68, "m_hDoorList in CBasePropDoor should be at offset 0xC68");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_nHardwareType) == 0xC80, "m_nHardwareType in CBasePropDoor should be at offset 0xC80");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_bNeedsHardware) == 0xC84, "m_bNeedsHardware in CBasePropDoor should be at offset 0xC84");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_eDoorState) == 0xC88, "m_eDoorState in CBasePropDoor should be at offset 0xC88");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_bLocked) == 0xC8C, "m_bLocked in CBasePropDoor should be at offset 0xC8C");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_bNoNPCs) == 0xC8D, "m_bNoNPCs in CBasePropDoor should be at offset 0xC8D");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_closedPosition) == 0xC90, "m_closedPosition in CBasePropDoor should be at offset 0xC90");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_closedAngles) == 0xC9C, "m_closedAngles in CBasePropDoor should be at offset 0xC9C");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_hBlocker) == 0xCA8, "m_hBlocker in CBasePropDoor should be at offset 0xCA8");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_bFirstBlocked) == 0xCAC, "m_bFirstBlocked in CBasePropDoor should be at offset 0xCAC");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_ls) == 0xCB0, "m_ls in CBasePropDoor should be at offset 0xCB0");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_bForceClosed) == 0xCD0, "m_bForceClosed in CBasePropDoor should be at offset 0xCD0");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_vecLatchWorldPosition) == 0xCD4, "m_vecLatchWorldPosition in CBasePropDoor should be at offset 0xCD4");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_hActivator) == 0xCE0, "m_hActivator in CBasePropDoor should be at offset 0xCE0");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundMoving) == 0xCF8, "m_SoundMoving in CBasePropDoor should be at offset 0xCF8");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundOpen) == 0xD00, "m_SoundOpen in CBasePropDoor should be at offset 0xD00");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundClose) == 0xD08, "m_SoundClose in CBasePropDoor should be at offset 0xD08");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundLock) == 0xD10, "m_SoundLock in CBasePropDoor should be at offset 0xD10");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundUnlock) == 0xD18, "m_SoundUnlock in CBasePropDoor should be at offset 0xD18");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundLatch) == 0xD20, "m_SoundLatch in CBasePropDoor should be at offset 0xD20");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundPound) == 0xD28, "m_SoundPound in CBasePropDoor should be at offset 0xD28");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundJiggle) == 0xD30, "m_SoundJiggle in CBasePropDoor should be at offset 0xD30");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SoundLockedAnim) == 0xD38, "m_SoundLockedAnim in CBasePropDoor should be at offset 0xD38");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_numCloseAttempts) == 0xD40, "m_numCloseAttempts in CBasePropDoor should be at offset 0xD40");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_nPhysicsMaterial) == 0xD44, "m_nPhysicsMaterial in CBasePropDoor should be at offset 0xD44");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_SlaveName) == 0xD48, "m_SlaveName in CBasePropDoor should be at offset 0xD48");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_hMaster) == 0xD50, "m_hMaster in CBasePropDoor should be at offset 0xD50");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnBlockedClosing) == 0xD58, "m_OnBlockedClosing in CBasePropDoor should be at offset 0xD58");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnBlockedOpening) == 0xD70, "m_OnBlockedOpening in CBasePropDoor should be at offset 0xD70");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnUnblockedClosing) == 0xD88, "m_OnUnblockedClosing in CBasePropDoor should be at offset 0xD88");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnUnblockedOpening) == 0xDA0, "m_OnUnblockedOpening in CBasePropDoor should be at offset 0xDA0");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnFullyClosed) == 0xDB8, "m_OnFullyClosed in CBasePropDoor should be at offset 0xDB8");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnFullyOpen) == 0xDD0, "m_OnFullyOpen in CBasePropDoor should be at offset 0xDD0");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnClose) == 0xDE8, "m_OnClose in CBasePropDoor should be at offset 0xDE8");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnOpen) == 0xE00, "m_OnOpen in CBasePropDoor should be at offset 0xE00");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnLockedUse) == 0xE18, "m_OnLockedUse in CBasePropDoor should be at offset 0xE18");
+		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnAjarOpen) == 0xE30, "m_OnAjarOpen in CBasePropDoor should be at offset 0xE30");
+		static_assert(sizeof(CS2::server::CBasePropDoor) == 0xE50, "CBasePropDoor size should be 0xE50");
 	}
 }

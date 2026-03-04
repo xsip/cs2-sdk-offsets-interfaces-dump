@@ -8,9 +8,9 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace soundsystem_voicecontainers {
-			// Class size: 0xC8
+			// Class size: 0xB8
 			namespace CVoiceContainerAmpedDecayingSineWave /*: public CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave*/ {
-				constexpr std::ptrdiff_t m_flGainAmount = 0xc0; // float32 m_flGainAmount; |  0xc0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flGainAmount = 0xb0; // float32 m_flGainAmount; |  0xb0 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

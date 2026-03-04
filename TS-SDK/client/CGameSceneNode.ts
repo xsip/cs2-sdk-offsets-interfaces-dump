@@ -1,6 +1,6 @@
 // generated - do not edit!
 
-// Class size: 0x180
+// Class size: 0x150
 // BaseClass: NONE
 export const client_CGameSceneNode  = {
 	m_nodeToWorld: 16n, // GlobalTypes::CTransformWS  | Schema_Atomic | Size: 0x20
@@ -26,8 +26,8 @@ export const client_CGameSceneNode  = {
 	m_nHierarchyType: 272n, // uint8_t m_nHierarchyType; |  0x110 | Schema_Builtin | Size: 0x1
 	m_nDoNotSetAnimTimeInInvalidatePhysicsCount: 273n, // uint8_t m_nDoNotSetAnimTimeInInvalidatePhysicsCount; |  0x111 | Schema_Builtin | Size: 0x1
 	m_name: 276n, // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-	m_hierarchyAttachName: 344n, // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-	m_flZOffset: 348n, // float32 m_flZOffset; |  0x15c | Schema_Builtin | Size: 0x4
-	m_flClientLocalScale: 352n, // float32 m_flClientLocalScale; |  0x160 | Schema_Builtin | Size: 0x4
-	m_vRenderOrigin: 356n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+	m_hierarchyAttachName: 296n, // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+	m_flZOffset: 300n, // float32 m_flZOffset; |  0x12c | Schema_Builtin | Size: 0x4
+	m_flClientLocalScale: 304n, // float32 m_flClientLocalScale; |  0x130 | Schema_Builtin | Size: 0x4
+	m_vRenderOrigin: 308n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 }

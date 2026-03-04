@@ -5,7 +5,7 @@
 
 class modellib_CRenderBufferBinding {
     uint64_t m_hBuffer;
-    char pad_355[0x8];
+    char pad_358[0x8];
     uint32_t m_nBindOffsetBytes;
-    char end_pad_356[0xc];
+    char end_pad_359[0xc];
 };

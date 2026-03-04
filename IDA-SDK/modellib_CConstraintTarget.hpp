@@ -4,13 +4,16 @@
 
 
 class modellib_CConstraintTarget {
-    char vTable319[0x20];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
     Quaternion m_qOffset;
     Vector m_vOffset;
     uint32_t m_nBoneHash;
     CUtlString m_sName;
     float32 m_flWeight;
-    char pad_320[0xd];
+    char pad_322[0xd];
     bool m_bIsAttachment;
-    char end_pad_321[0x6];
+    char end_pad_323[0x6];
 };

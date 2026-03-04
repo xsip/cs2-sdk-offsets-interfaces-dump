@@ -22,9 +22,9 @@ namespace CS2 {
 	namespace client {
 		class C_EnvWind : public CS2::client::C_BaseEntity {
 		public:
-			client::C_EnvWindShared m_EnvWindShared; // 0x5f8 | Schema_DeclaredClass | Size: 0xf8
+			client::C_EnvWindShared m_EnvWindShared; // 0x608 | Schema_DeclaredClass | Size: 0xf8
 		};
-		static_assert(offsetof(CS2::client::C_EnvWind, m_EnvWindShared) == 0x5F8, "m_EnvWindShared in C_EnvWind should be at offset 0x5F8");
-		static_assert(sizeof(CS2::client::C_EnvWind) == 0x6F0, "C_EnvWind size should be 0x6F0");
+		static_assert(offsetof(CS2::client::C_EnvWind, m_EnvWindShared) == 0x608, "m_EnvWindShared in C_EnvWind should be at offset 0x608");
+		static_assert(sizeof(CS2::client::C_EnvWind) == 0x700, "C_EnvWind size should be 0x700");
 	}
 }

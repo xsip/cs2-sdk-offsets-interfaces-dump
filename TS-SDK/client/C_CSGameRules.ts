@@ -53,12 +53,12 @@ export const client_C_CSGameRules  = {
 	m_bIsDroppingItems: 2244n, // bool m_bIsDroppingItems; |  0x8c4 | Schema_Builtin | Size: 0x1
 	m_bIsQuestEligible: 2245n, // bool m_bIsQuestEligible; |  0x8c5 | Schema_Builtin | Size: 0x1
 	m_bIsHltvActive: 2246n, // bool m_bIsHltvActive; |  0x8c6 | Schema_Builtin | Size: 0x1
+	m_bBombPlanted: 2247n, // bool m_bBombPlanted; |  0x8c7 | Schema_Builtin | Size: 0x1
 	m_arrProhibitedItemIndices: 2248n, // uint16_t m_arrProhibitedItemIndices[100]; |  0x8c8 | Schema_FixedArray | Size: 0xc8
 	m_arrTournamentActiveCasterAccounts: 2448n, // uint32_t m_arrTournamentActiveCasterAccounts[4]; |  0x990 | Schema_FixedArray | Size: 0x10
 	m_numBestOfMaps: 2464n, // int32_t m_numBestOfMaps; |  0x9a0 | Schema_Builtin | Size: 0x4
 	m_nHalloweenMaskListSeed: 2468n, // int32_t m_nHalloweenMaskListSeed; |  0x9a4 | Schema_Builtin | Size: 0x4
 	m_bBombDropped: 2472n, // bool m_bBombDropped; |  0x9a8 | Schema_Builtin | Size: 0x1
-	m_bBombPlanted: 2473n, // bool m_bBombPlanted; |  0x9a9 | Schema_Builtin | Size: 0x1
 	m_iRoundWinStatus: 2476n, // int32_t m_iRoundWinStatus; |  0x9ac | Schema_Builtin | Size: 0x4
 	m_eRoundWinReason: 2480n, // int32_t m_eRoundWinReason; |  0x9b0 | Schema_Builtin | Size: 0x4
 	m_bTCantBuy: 2484n, // bool m_bTCantBuy; |  0x9b4 | Schema_Builtin | Size: 0x1

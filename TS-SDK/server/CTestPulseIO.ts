@@ -1,16 +1,16 @@
 // generated - do not edit!
 
 import {server_CLogicalEntity} from './CLogicalEntity';
-// Class size: 0x610
+// Class size: 0x590
 // BaseClass: : public CS2::server::CLogicalEntity
 export const server_CTestPulseIO  = {
 	...server_CLogicalEntity,
-	m_OnVariantVoid: 1264n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_OnVariantBool: 1304n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_OnVariantInt: 1344n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_OnVariantFloat: 1384n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_OnVariantString: 1424n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_OnVariantColor: 1464n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_OnVariantVector: 1504n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-	m_bAllowEmptyInputs: 1544n, // bool m_bAllowEmptyInputs; |  0x608 | Schema_Builtin | Size: 0x1
+	m_OnVariantVoid: 1192n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+	m_OnVariantBool: 1216n, // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+	m_OnVariantInt: 1248n, // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+	m_OnVariantFloat: 1280n, // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+	m_OnVariantString: 1312n, // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+	m_OnVariantColor: 1344n, // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x20
+	m_OnVariantVector: 1376n, // GlobalTypes::CEntityOutputTemplate  | Schema_Atomic | Size: 0x28
+	m_bAllowEmptyInputs: 1416n, // bool m_bAllowEmptyInputs; |  0x588 | Schema_Builtin | Size: 0x1
 }

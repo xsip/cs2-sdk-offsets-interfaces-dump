@@ -9,6 +9,7 @@ class worldrenderer_WorldNode_t {
     char m_visClusterMembership[0x18];
     char m_aggregateSceneObjects[0x18];
     char m_clutterSceneObjects[0x18];
+    char m_rtProxies[0x18];
     char m_extraVertexStreamOverrides[0x18];
     char m_materialOverrides[0x18];
     char m_extraVertexStreams[0x18];
@@ -19,5 +20,5 @@ class worldrenderer_WorldNode_t {
     CUtlString m_grassFileName;
     worldrenderer_BakedLightingInfo_t m_nodeLightingInfo;
     bool m_bHasBakedGeometryFlag;
-    char end_pad_2495[0x7];
+    char end_pad_2591[0x7];
 };

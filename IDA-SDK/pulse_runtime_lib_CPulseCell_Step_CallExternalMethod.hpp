@@ -7,13 +7,13 @@ class pulse_runtime_lib_CPulse_ResumePoint;
 #include "pulse_runtime_lib_CPulse_ResumePoint.hpp"
 
 class pulse_runtime_lib_CPulseCell_Step_CallExternalMethod {
-    char vTable501[0x8];
+    void **__vftable_0;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char end_pad_502[0x3c];
+    char end_pad_512[0x3c];
     PulseSymbol_t m_MethodName;
     PulseSymbol_t m_GameBlackboard;
     char m_ExpectedArgs[0x10];
     pulse_runtime_lib_PulseMethodCallMode_t m_nAsyncCallMode;
-    char pad_513[0x4];
+    char pad_524[0x4];
     pulse_runtime_lib_CPulse_ResumePoint m_OnFinished;
 };

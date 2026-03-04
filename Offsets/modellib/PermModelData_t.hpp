@@ -8,7 +8,7 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace modellib {
-			// Class size: 0x2C8
+			// Class size: 0x2F8
 			namespace PermModelData_t /**/ {
 				constexpr std::ptrdiff_t m_name = 0x0; // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_modelInfo = 0x8; // modellib::PermModelInfo_t  | Schema_DeclaredClass | Size: 0x58
@@ -33,6 +33,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_BodyGroupsHiddenInTools = 0x280; // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_refAnimIncludeModels = 0x298; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel>>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_AnimatedMaterialAttributes = 0x2b0; // GlobalTypes::CUtlVector<modellib::PermModelDataAnimatedMaterialAttribute_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_animGraph2Refs = 0x2c8; // GlobalTypes::CUtlVector<modellib::ModelAnimGraph2Ref_t>  | Schema_Atomic | Size: 0x18
+				constexpr std::ptrdiff_t m_vecNmSkeletonRefs = 0x2e0; // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>>  | Schema_Atomic | Size: 0x18
 			}
 		}
 	}

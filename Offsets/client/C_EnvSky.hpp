@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace client {
-			// Class size: 0xF10
+			// Class size: 0xEE8
 			namespace C_EnvSky /*: public CS2::client::C_BaseModelEntity*/ {
-				constexpr std::ptrdiff_t m_hSkyMaterial = 0xeb0; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hSkyMaterialLightingOnly = 0xeb8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bStartDisabled = 0xec0; // bool m_bStartDisabled; |  0xec0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_vTintColor = 0xec1; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_vTintColorLightingOnly = 0xec5; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_flBrightnessScale = 0xecc; // float32 m_flBrightnessScale; |  0xecc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nFogType = 0xed0; // int32_t m_nFogType; |  0xed0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogMinStart = 0xed4; // float32 m_flFogMinStart; |  0xed4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogMinEnd = 0xed8; // float32 m_flFogMinEnd; |  0xed8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogMaxStart = 0xedc; // float32 m_flFogMaxStart; |  0xedc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogMaxEnd = 0xee0; // float32 m_flFogMaxEnd; |  0xee0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bEnabled = 0xee4; // bool m_bEnabled; |  0xee4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hSkyMaterial = 0xe88; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hSkyMaterialLightingOnly = 0xe90; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bStartDisabled = 0xe98; // bool m_bStartDisabled; |  0xe98 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_vTintColor = 0xe99; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_vTintColorLightingOnly = 0xe9d; // GlobalTypes::Color  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_flBrightnessScale = 0xea4; // float32 m_flBrightnessScale; |  0xea4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nFogType = 0xea8; // int32_t m_nFogType; |  0xea8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogMinStart = 0xeac; // float32 m_flFogMinStart; |  0xeac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogMinEnd = 0xeb0; // float32 m_flFogMinEnd; |  0xeb0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogMaxStart = 0xeb4; // float32 m_flFogMaxStart; |  0xeb4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogMaxEnd = 0xeb8; // float32 m_flFogMaxEnd; |  0xeb8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bEnabled = 0xebc; // bool m_bEnabled; |  0xebc | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

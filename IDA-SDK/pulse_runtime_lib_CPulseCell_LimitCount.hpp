@@ -5,9 +5,9 @@
 #include "pulse_runtime_lib_PulseDocNodeID_t.hpp"
 
 class pulse_runtime_lib_CPulseCell_LimitCount {
-    char vTable501[0x8];
+    void **__vftable_0;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char end_pad_502[0x3c];
+    char end_pad_512[0x3c];
     int32_t m_nLimitCount;
-    char end_pad_510[0x4];
+    char end_pad_521[0x4];
 };

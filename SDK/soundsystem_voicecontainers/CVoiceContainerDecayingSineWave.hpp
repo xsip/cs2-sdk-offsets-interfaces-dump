@@ -10,7 +10,7 @@
 #endif
 
 
-#include <SDK/soundsystem_voicecontainers/CVoiceContainerBase.hpp>
+#include <SDK/soundsystem_voicecontainers/CVoiceContainerGenerator.hpp>
 
 
 
@@ -19,13 +19,13 @@
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
-		class CVoiceContainerDecayingSineWave : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
+		class CVoiceContainerDecayingSineWave : public CS2::soundsystem_voicecontainers::CVoiceContainerGenerator {
 		public:
-			float32 m_flFrequency; // 0xb8 | Schema_Builtin | Size: 0x4
-			float32 m_flDecayTime; // 0xbc | Schema_Builtin | Size: 0x4
+			float32 m_flFrequency; // 0xa8 | Schema_Builtin | Size: 0x4
+			float32 m_flDecayTime; // 0xac | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave, m_flFrequency) == 0xB8, "m_flFrequency in CVoiceContainerDecayingSineWave should be at offset 0xB8");
-		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave, m_flDecayTime) == 0xBC, "m_flDecayTime in CVoiceContainerDecayingSineWave should be at offset 0xBC");
-		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave) == 0xC0, "CVoiceContainerDecayingSineWave size should be 0xC0");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave, m_flFrequency) == 0xA8, "m_flFrequency in CVoiceContainerDecayingSineWave should be at offset 0xA8");
+		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave, m_flDecayTime) == 0xAC, "m_flDecayTime in CVoiceContainerDecayingSineWave should be at offset 0xAC");
+		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave) == 0xB0, "CVoiceContainerDecayingSineWave size should be 0xB0");
 	}
 }

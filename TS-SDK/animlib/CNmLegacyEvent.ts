@@ -1,7 +1,7 @@
 // generated - do not edit!
 
 import {animlib_CNmEvent} from './CNmEvent';
-// Class size: 0x40
+// Class size: 0x58
 // BaseClass: : public CS2::animlib::CNmEvent
 export const animlib_CNmLegacyEvent  = {
 	...animlib_CNmEvent,

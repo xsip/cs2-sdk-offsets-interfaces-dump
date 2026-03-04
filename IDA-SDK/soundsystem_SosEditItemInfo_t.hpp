@@ -5,10 +5,10 @@
 
 class soundsystem_SosEditItemInfo_t {
     soundsystem_SosEditItemType_t itemType;
-    char pad_561[0x4];
+    char pad_572[0x4];
     CUtlString itemName;
     CUtlString itemTypeName;
-    char pad_562[0x8];
+    char pad_573[0x8];
     CUtlString itemKVString;
     Vector2D itemPos;
 };

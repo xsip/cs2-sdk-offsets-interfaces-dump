@@ -6,7 +6,9 @@
 #include "animgraphlib_CAnimDemoCaptureSettings.hpp"
 
 class animgraphlib_CDemoSettingsComponentUpdater {
-    char vTable10[0x18];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
     CUtlString m_name;
     modellib_AnimComponentID m_id;
     animgraphlib_AnimNodeNetworkMode m_networkMode;

@@ -10,48 +10,33 @@
 #endif
 
 
-#include <SDK/server/CPointEntity.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include <SDK/server/CPathNode.hpp>
 
 
 
-namespace CS2 {
-	namespace server {
-		class CPathMover;
-	}
-}
 
 
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace server {
-		class CMoverPathNode : public CS2::server::CPointEntity {
+		class CMoverPathNode : public CS2::server::CPathNode {
 		public:
-			GlobalTypes::Vector m_vInTangentLocal; // 0x4f0 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vOutTangentLocal; // 0x4fc | Schema_Atomic | Size: 0xc
-			GlobalTypes::CUtlSymbolLarge m_szParentPathUniqueID; // 0x508 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_szPathNodeParameter; // 0x510 | Schema_Atomic | Size: 0x8
-			entity2::CEntityIOOutput m_OnStartFromOrInSegment; // 0x518 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnStoppedAtOrInSegment; // 0x540 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPassThrough; // 0x568 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPassThroughForward; // 0x590 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnPassThroughReverse; // 0x5b8 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CHandle<server::CPathMover> m_hMover; // 0x5e0 | Schema_Atomic | Size: 0x4
-			// char  m_hMover[0x4]; // 0x5e0 | Schema_Atomic | Size: 0x4
-			S2_PAD(0xc);
-			GlobalTypes::CTransform m_xWSPrevParent; // 0x5f0 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnStartFromOrInSegment; // 0x500 | Schema_Atomic | Size: 0x20
+			// char m_OnStartFromOrInSegment[0x20]; // 0x500 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnStoppedAtOrInSegment; // 0x520 | Schema_Atomic | Size: 0x20
+			// char m_OnStoppedAtOrInSegment[0x20]; // 0x520 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnPassThrough; // 0x540 | Schema_Atomic | Size: 0x20
+			// char m_OnPassThrough[0x20]; // 0x540 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnPassThroughForward; // 0x560 | Schema_Atomic | Size: 0x20
+			// char m_OnPassThroughForward[0x20]; // 0x560 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnPassThroughReverse; // 0x580 | Schema_Atomic | Size: 0x20
+			// char m_OnPassThroughReverse[0x20]; // 0x580 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_vInTangentLocal) == 0x4F0, "m_vInTangentLocal in CMoverPathNode should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_vOutTangentLocal) == 0x4FC, "m_vOutTangentLocal in CMoverPathNode should be at offset 0x4FC");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_szParentPathUniqueID) == 0x508, "m_szParentPathUniqueID in CMoverPathNode should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_szPathNodeParameter) == 0x510, "m_szPathNodeParameter in CMoverPathNode should be at offset 0x510");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnStartFromOrInSegment) == 0x518, "m_OnStartFromOrInSegment in CMoverPathNode should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnStoppedAtOrInSegment) == 0x540, "m_OnStoppedAtOrInSegment in CMoverPathNode should be at offset 0x540");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThrough) == 0x568, "m_OnPassThrough in CMoverPathNode should be at offset 0x568");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThroughForward) == 0x590, "m_OnPassThroughForward in CMoverPathNode should be at offset 0x590");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThroughReverse) == 0x5B8, "m_OnPassThroughReverse in CMoverPathNode should be at offset 0x5B8");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_hMover) == 0x5E0, "m_hMover in CMoverPathNode should be at offset 0x5E0");
-		static_assert(offsetof(CS2::server::CMoverPathNode, m_xWSPrevParent) == 0x5F0, "m_xWSPrevParent in CMoverPathNode should be at offset 0x5F0");
-		static_assert(sizeof(CS2::server::CMoverPathNode) == 0x610, "CMoverPathNode size should be 0x610");
+		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnStartFromOrInSegment) == 0x500, "m_OnStartFromOrInSegment in CMoverPathNode should be at offset 0x500");
+		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnStoppedAtOrInSegment) == 0x520, "m_OnStoppedAtOrInSegment in CMoverPathNode should be at offset 0x520");
+		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThrough) == 0x540, "m_OnPassThrough in CMoverPathNode should be at offset 0x540");
+		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThroughForward) == 0x560, "m_OnPassThroughForward in CMoverPathNode should be at offset 0x560");
+		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThroughReverse) == 0x580, "m_OnPassThroughReverse in CMoverPathNode should be at offset 0x580");
+		static_assert(sizeof(CS2::server::CMoverPathNode) == 0x5A0, "CMoverPathNode size should be 0x5A0");
 	}
 }

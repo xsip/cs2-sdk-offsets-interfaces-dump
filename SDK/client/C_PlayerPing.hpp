@@ -27,20 +27,20 @@ namespace CS2 {
 		class C_PlayerPing : public CS2::client::C_BaseEntity {
 		public:
 			S2_PAD(0x30);
-			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hPlayer; // 0x628 | Schema_Atomic | Size: 0x4
-			// char  m_hPlayer[0x4]; // 0x628 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<client::C_BaseEntity> m_hPingedEntity; // 0x62c | Schema_Atomic | Size: 0x4
-			// char  m_hPingedEntity[0x4]; // 0x62c | Schema_Atomic | Size: 0x4
-			int32_t m_iType; // 0x630 | Schema_Builtin | Size: 0x4
-			bool m_bUrgent; // 0x634 | Schema_Builtin | Size: 0x1
-			char m_szPlaceName[18]; // 0x635 | Schema_FixedArray | Size: 0x12
+			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_hPlayer; // 0x638 | Schema_Atomic | Size: 0x4
+			// char m_hPlayer[0x4]; // 0x638 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<client::C_BaseEntity> m_hPingedEntity; // 0x63c | Schema_Atomic | Size: 0x4
+			// char m_hPingedEntity[0x4]; // 0x63c | Schema_Atomic | Size: 0x4
+			int32_t m_iType; // 0x640 | Schema_Builtin | Size: 0x4
+			bool m_bUrgent; // 0x644 | Schema_Builtin | Size: 0x1
+			char m_szPlaceName[18]; // 0x645 | Schema_FixedArray | Size: 0x12
 			S2_PAD(0x1); // End padding
 		};
-		static_assert(offsetof(CS2::client::C_PlayerPing, m_hPlayer) == 0x628, "m_hPlayer in C_PlayerPing should be at offset 0x628");
-		static_assert(offsetof(CS2::client::C_PlayerPing, m_hPingedEntity) == 0x62C, "m_hPingedEntity in C_PlayerPing should be at offset 0x62C");
-		static_assert(offsetof(CS2::client::C_PlayerPing, m_iType) == 0x630, "m_iType in C_PlayerPing should be at offset 0x630");
-		static_assert(offsetof(CS2::client::C_PlayerPing, m_bUrgent) == 0x634, "m_bUrgent in C_PlayerPing should be at offset 0x634");
-		static_assert(offsetof(CS2::client::C_PlayerPing, m_szPlaceName) == 0x635, "m_szPlaceName in C_PlayerPing should be at offset 0x635");
-		static_assert(sizeof(CS2::client::C_PlayerPing) == 0x648, "C_PlayerPing size should be 0x648");
+		static_assert(offsetof(CS2::client::C_PlayerPing, m_hPlayer) == 0x638, "m_hPlayer in C_PlayerPing should be at offset 0x638");
+		static_assert(offsetof(CS2::client::C_PlayerPing, m_hPingedEntity) == 0x63C, "m_hPingedEntity in C_PlayerPing should be at offset 0x63C");
+		static_assert(offsetof(CS2::client::C_PlayerPing, m_iType) == 0x640, "m_iType in C_PlayerPing should be at offset 0x640");
+		static_assert(offsetof(CS2::client::C_PlayerPing, m_bUrgent) == 0x644, "m_bUrgent in C_PlayerPing should be at offset 0x644");
+		static_assert(offsetof(CS2::client::C_PlayerPing, m_szPlaceName) == 0x645, "m_szPlaceName in C_PlayerPing should be at offset 0x645");
+		static_assert(sizeof(CS2::client::C_PlayerPing) == 0x658, "C_PlayerPing size should be 0x658");
 	}
 }

@@ -6,5 +6,5 @@
 class animationsystem_CAnimUser {
     CBufferString m_name;
     int32_t m_nType;
-    char end_pad_425[0x4];
+    char end_pad_431[0x4];
 };

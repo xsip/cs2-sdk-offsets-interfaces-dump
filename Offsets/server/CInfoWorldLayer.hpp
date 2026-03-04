@@ -8,15 +8,15 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x530
+			// Class size: 0x4D8
 			namespace CInfoWorldLayer /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_pOutputOnEntitiesSpawned = 0x4f0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x28
-				constexpr std::ptrdiff_t m_worldName = 0x518; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_layerName = 0x520; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bWorldLayerVisible = 0x528; // bool m_bWorldLayerVisible; |  0x528 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bEntitiesSpawned = 0x529; // bool m_bEntitiesSpawned; |  0x529 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bCreateAsChildSpawnGroup = 0x52a; // bool m_bCreateAsChildSpawnGroup; |  0x52a | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hLayerSpawnGroup = 0x52c; // uint32_t m_hLayerSpawnGroup; |  0x52c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_pOutputOnEntitiesSpawned = 0x4a8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
+				constexpr std::ptrdiff_t m_worldName = 0x4c0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_layerName = 0x4c8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bWorldLayerVisible = 0x4d0; // bool m_bWorldLayerVisible; |  0x4d0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bEntitiesSpawned = 0x4d1; // bool m_bEntitiesSpawned; |  0x4d1 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bCreateAsChildSpawnGroup = 0x4d2; // bool m_bCreateAsChildSpawnGroup; |  0x4d2 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hLayerSpawnGroup = 0x4d4; // uint32_t m_hLayerSpawnGroup; |  0x4d4 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

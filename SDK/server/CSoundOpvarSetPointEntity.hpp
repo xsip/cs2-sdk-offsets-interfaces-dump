@@ -22,59 +22,59 @@ namespace CS2 {
 	namespace server {
 		class CSoundOpvarSetPointEntity : public CS2::server::CSoundOpvarSetPointBase {
 		public:
-			entity2::CEntityIOOutput m_OnEnter; // 0x598 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_OnExit; // 0x5c0 | Schema_DeclaredClass | Size: 0x28
-			bool m_bAutoDisable; // 0x5e8 | Schema_Builtin | Size: 0x1
+			entity2::CEntityIOOutput m_OnEnter; // 0x550 | Schema_DeclaredClass | Size: 0x18
+			entity2::CEntityIOOutput m_OnExit; // 0x568 | Schema_DeclaredClass | Size: 0x18
+			bool m_bAutoDisable; // 0x580 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x43);
-			float32 m_flDistanceMin; // 0x62c | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceMax; // 0x630 | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceMapMin; // 0x634 | Schema_Builtin | Size: 0x4
-			float32 m_flDistanceMapMax; // 0x638 | Schema_Builtin | Size: 0x4
-			float32 m_flOcclusionRadius; // 0x63c | Schema_Builtin | Size: 0x4
-			float32 m_flOcclusionMin; // 0x640 | Schema_Builtin | Size: 0x4
-			float32 m_flOcclusionMax; // 0x644 | Schema_Builtin | Size: 0x4
-			float32 m_flValSetOnDisable; // 0x648 | Schema_Builtin | Size: 0x4
-			bool m_bSetValueOnDisable; // 0x64c | Schema_Builtin | Size: 0x1
-			bool m_bReloading; // 0x64d | Schema_Builtin | Size: 0x1
+			float32 m_flDistanceMin; // 0x5c4 | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceMax; // 0x5c8 | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceMapMin; // 0x5cc | Schema_Builtin | Size: 0x4
+			float32 m_flDistanceMapMax; // 0x5d0 | Schema_Builtin | Size: 0x4
+			float32 m_flOcclusionRadius; // 0x5d4 | Schema_Builtin | Size: 0x4
+			float32 m_flOcclusionMin; // 0x5d8 | Schema_Builtin | Size: 0x4
+			float32 m_flOcclusionMax; // 0x5dc | Schema_Builtin | Size: 0x4
+			float32 m_flValSetOnDisable; // 0x5e0 | Schema_Builtin | Size: 0x4
+			bool m_bSetValueOnDisable; // 0x5e4 | Schema_Builtin | Size: 0x1
+			bool m_bReloading; // 0x5e5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			int32_t m_nSimulationMode; // 0x650 | Schema_Builtin | Size: 0x4
-			int32_t m_nVisibilitySamples; // 0x654 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vDynamicProxyPoint; // 0x658 | Schema_Atomic | Size: 0xc
-			float32 m_flDynamicMaximumOcclusion; // 0x664 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CEntityHandle m_hDynamicEntity; // 0x668 | Schema_Atomic | Size: 0x4
+			int32_t m_nSimulationMode; // 0x5e8 | Schema_Builtin | Size: 0x4
+			int32_t m_nVisibilitySamples; // 0x5ec | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vDynamicProxyPoint; // 0x5f0 | Schema_Atomic | Size: 0xc
+			float32 m_flDynamicMaximumOcclusion; // 0x5fc | Schema_Builtin | Size: 0x4
+			GlobalTypes::CEntityHandle m_hDynamicEntity; // 0x600 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlSymbolLarge m_iszDynamicEntityName; // 0x670 | Schema_Atomic | Size: 0x8
-			float32 m_flPathingDistanceNormFactor; // 0x678 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_vPathingSourcePos; // 0x67c | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPathingListenerPos; // 0x688 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vPathingDirection; // 0x694 | Schema_Atomic | Size: 0xc
-			int32_t m_nPathingSourceIndex; // 0x6a0 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszDynamicEntityName; // 0x608 | Schema_Atomic | Size: 0x8
+			float32 m_flPathingDistanceNormFactor; // 0x610 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_vPathingSourcePos; // 0x614 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPathingListenerPos; // 0x620 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vPathingDirection; // 0x62c | Schema_Atomic | Size: 0xc
+			int32_t m_nPathingSourceIndex; // 0x638 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_OnEnter) == 0x598, "m_OnEnter in CSoundOpvarSetPointEntity should be at offset 0x598");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_OnExit) == 0x5C0, "m_OnExit in CSoundOpvarSetPointEntity should be at offset 0x5C0");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_bAutoDisable) == 0x5E8, "m_bAutoDisable in CSoundOpvarSetPointEntity should be at offset 0x5E8");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMin) == 0x62C, "m_flDistanceMin in CSoundOpvarSetPointEntity should be at offset 0x62C");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMax) == 0x630, "m_flDistanceMax in CSoundOpvarSetPointEntity should be at offset 0x630");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMapMin) == 0x634, "m_flDistanceMapMin in CSoundOpvarSetPointEntity should be at offset 0x634");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMapMax) == 0x638, "m_flDistanceMapMax in CSoundOpvarSetPointEntity should be at offset 0x638");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flOcclusionRadius) == 0x63C, "m_flOcclusionRadius in CSoundOpvarSetPointEntity should be at offset 0x63C");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flOcclusionMin) == 0x640, "m_flOcclusionMin in CSoundOpvarSetPointEntity should be at offset 0x640");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flOcclusionMax) == 0x644, "m_flOcclusionMax in CSoundOpvarSetPointEntity should be at offset 0x644");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flValSetOnDisable) == 0x648, "m_flValSetOnDisable in CSoundOpvarSetPointEntity should be at offset 0x648");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_bSetValueOnDisable) == 0x64C, "m_bSetValueOnDisable in CSoundOpvarSetPointEntity should be at offset 0x64C");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_bReloading) == 0x64D, "m_bReloading in CSoundOpvarSetPointEntity should be at offset 0x64D");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_nSimulationMode) == 0x650, "m_nSimulationMode in CSoundOpvarSetPointEntity should be at offset 0x650");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_nVisibilitySamples) == 0x654, "m_nVisibilitySamples in CSoundOpvarSetPointEntity should be at offset 0x654");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vDynamicProxyPoint) == 0x658, "m_vDynamicProxyPoint in CSoundOpvarSetPointEntity should be at offset 0x658");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDynamicMaximumOcclusion) == 0x664, "m_flDynamicMaximumOcclusion in CSoundOpvarSetPointEntity should be at offset 0x664");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_hDynamicEntity) == 0x668, "m_hDynamicEntity in CSoundOpvarSetPointEntity should be at offset 0x668");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_iszDynamicEntityName) == 0x670, "m_iszDynamicEntityName in CSoundOpvarSetPointEntity should be at offset 0x670");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flPathingDistanceNormFactor) == 0x678, "m_flPathingDistanceNormFactor in CSoundOpvarSetPointEntity should be at offset 0x678");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vPathingSourcePos) == 0x67C, "m_vPathingSourcePos in CSoundOpvarSetPointEntity should be at offset 0x67C");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vPathingListenerPos) == 0x688, "m_vPathingListenerPos in CSoundOpvarSetPointEntity should be at offset 0x688");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vPathingDirection) == 0x694, "m_vPathingDirection in CSoundOpvarSetPointEntity should be at offset 0x694");
-		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_nPathingSourceIndex) == 0x6A0, "m_nPathingSourceIndex in CSoundOpvarSetPointEntity should be at offset 0x6A0");
-		static_assert(sizeof(CS2::server::CSoundOpvarSetPointEntity) == 0x6A8, "CSoundOpvarSetPointEntity size should be 0x6A8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_OnEnter) == 0x550, "m_OnEnter in CSoundOpvarSetPointEntity should be at offset 0x550");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_OnExit) == 0x568, "m_OnExit in CSoundOpvarSetPointEntity should be at offset 0x568");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_bAutoDisable) == 0x580, "m_bAutoDisable in CSoundOpvarSetPointEntity should be at offset 0x580");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMin) == 0x5C4, "m_flDistanceMin in CSoundOpvarSetPointEntity should be at offset 0x5C4");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMax) == 0x5C8, "m_flDistanceMax in CSoundOpvarSetPointEntity should be at offset 0x5C8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMapMin) == 0x5CC, "m_flDistanceMapMin in CSoundOpvarSetPointEntity should be at offset 0x5CC");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDistanceMapMax) == 0x5D0, "m_flDistanceMapMax in CSoundOpvarSetPointEntity should be at offset 0x5D0");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flOcclusionRadius) == 0x5D4, "m_flOcclusionRadius in CSoundOpvarSetPointEntity should be at offset 0x5D4");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flOcclusionMin) == 0x5D8, "m_flOcclusionMin in CSoundOpvarSetPointEntity should be at offset 0x5D8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flOcclusionMax) == 0x5DC, "m_flOcclusionMax in CSoundOpvarSetPointEntity should be at offset 0x5DC");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flValSetOnDisable) == 0x5E0, "m_flValSetOnDisable in CSoundOpvarSetPointEntity should be at offset 0x5E0");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_bSetValueOnDisable) == 0x5E4, "m_bSetValueOnDisable in CSoundOpvarSetPointEntity should be at offset 0x5E4");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_bReloading) == 0x5E5, "m_bReloading in CSoundOpvarSetPointEntity should be at offset 0x5E5");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_nSimulationMode) == 0x5E8, "m_nSimulationMode in CSoundOpvarSetPointEntity should be at offset 0x5E8");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_nVisibilitySamples) == 0x5EC, "m_nVisibilitySamples in CSoundOpvarSetPointEntity should be at offset 0x5EC");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vDynamicProxyPoint) == 0x5F0, "m_vDynamicProxyPoint in CSoundOpvarSetPointEntity should be at offset 0x5F0");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flDynamicMaximumOcclusion) == 0x5FC, "m_flDynamicMaximumOcclusion in CSoundOpvarSetPointEntity should be at offset 0x5FC");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_hDynamicEntity) == 0x600, "m_hDynamicEntity in CSoundOpvarSetPointEntity should be at offset 0x600");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_iszDynamicEntityName) == 0x608, "m_iszDynamicEntityName in CSoundOpvarSetPointEntity should be at offset 0x608");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_flPathingDistanceNormFactor) == 0x610, "m_flPathingDistanceNormFactor in CSoundOpvarSetPointEntity should be at offset 0x610");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vPathingSourcePos) == 0x614, "m_vPathingSourcePos in CSoundOpvarSetPointEntity should be at offset 0x614");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vPathingListenerPos) == 0x620, "m_vPathingListenerPos in CSoundOpvarSetPointEntity should be at offset 0x620");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vPathingDirection) == 0x62C, "m_vPathingDirection in CSoundOpvarSetPointEntity should be at offset 0x62C");
+		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_nPathingSourceIndex) == 0x638, "m_nPathingSourceIndex in CSoundOpvarSetPointEntity should be at offset 0x638");
+		static_assert(sizeof(CS2::server::CSoundOpvarSetPointEntity) == 0x640, "CSoundOpvarSetPointEntity size should be 0x640");
 	}
 }

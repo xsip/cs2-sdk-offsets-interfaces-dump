@@ -26,23 +26,23 @@ namespace CS2 {
 	namespace server {
 		class CTriggerPush : public CS2::server::CBaseTrigger {
 		public:
-			GlobalTypes::QAngle m_angPushEntitySpace; // 0x9a8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_vecPushDirEntitySpace; // 0x9b4 | Schema_Atomic | Size: 0xc
-			bool m_bTriggerOnStartTouch; // 0x9c0 | Schema_Builtin | Size: 0x1
-			bool m_bUsePathSimple; // 0x9c1 | Schema_Builtin | Size: 0x1
+			GlobalTypes::QAngle m_angPushEntitySpace; // 0x890 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_vecPushDirEntitySpace; // 0x89c | Schema_Atomic | Size: 0xc
+			bool m_bTriggerOnStartTouch; // 0x8a8 | Schema_Builtin | Size: 0x1
+			bool m_bUsePathSimple; // 0x8a9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CUtlSymbolLarge m_iszPathSimpleName; // 0x9c8 | Schema_Atomic | Size: 0x8
-			server::CPathSimple* m_PathSimple; // 0x9d0 | Schema_Ptr | Size: 0x8
-			uint32_t m_splinePushType; // 0x9d8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlSymbolLarge m_iszPathSimpleName; // 0x8b0 | Schema_Atomic | Size: 0x8
+			server::CPathSimple* m_PathSimple; // 0x8b8 | Schema_Ptr | Size: 0x8
+			uint32_t m_splinePushType; // 0x8c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
-		static_assert(offsetof(CS2::server::CTriggerPush, m_angPushEntitySpace) == 0x9A8, "m_angPushEntitySpace in CTriggerPush should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerPush, m_vecPushDirEntitySpace) == 0x9B4, "m_vecPushDirEntitySpace in CTriggerPush should be at offset 0x9B4");
-		static_assert(offsetof(CS2::server::CTriggerPush, m_bTriggerOnStartTouch) == 0x9C0, "m_bTriggerOnStartTouch in CTriggerPush should be at offset 0x9C0");
-		static_assert(offsetof(CS2::server::CTriggerPush, m_bUsePathSimple) == 0x9C1, "m_bUsePathSimple in CTriggerPush should be at offset 0x9C1");
-		static_assert(offsetof(CS2::server::CTriggerPush, m_iszPathSimpleName) == 0x9C8, "m_iszPathSimpleName in CTriggerPush should be at offset 0x9C8");
-		static_assert(offsetof(CS2::server::CTriggerPush, m_PathSimple) == 0x9D0, "m_PathSimple in CTriggerPush should be at offset 0x9D0");
-		static_assert(offsetof(CS2::server::CTriggerPush, m_splinePushType) == 0x9D8, "m_splinePushType in CTriggerPush should be at offset 0x9D8");
-		static_assert(sizeof(CS2::server::CTriggerPush) == 0x9E0, "CTriggerPush size should be 0x9E0");
+		static_assert(offsetof(CS2::server::CTriggerPush, m_angPushEntitySpace) == 0x890, "m_angPushEntitySpace in CTriggerPush should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerPush, m_vecPushDirEntitySpace) == 0x89C, "m_vecPushDirEntitySpace in CTriggerPush should be at offset 0x89C");
+		static_assert(offsetof(CS2::server::CTriggerPush, m_bTriggerOnStartTouch) == 0x8A8, "m_bTriggerOnStartTouch in CTriggerPush should be at offset 0x8A8");
+		static_assert(offsetof(CS2::server::CTriggerPush, m_bUsePathSimple) == 0x8A9, "m_bUsePathSimple in CTriggerPush should be at offset 0x8A9");
+		static_assert(offsetof(CS2::server::CTriggerPush, m_iszPathSimpleName) == 0x8B0, "m_iszPathSimpleName in CTriggerPush should be at offset 0x8B0");
+		static_assert(offsetof(CS2::server::CTriggerPush, m_PathSimple) == 0x8B8, "m_PathSimple in CTriggerPush should be at offset 0x8B8");
+		static_assert(offsetof(CS2::server::CTriggerPush, m_splinePushType) == 0x8C0, "m_splinePushType in CTriggerPush should be at offset 0x8C0");
+		static_assert(sizeof(CS2::server::CTriggerPush) == 0x8C8, "CTriggerPush size should be 0x8C8");
 	}
 }

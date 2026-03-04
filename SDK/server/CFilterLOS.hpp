@@ -22,6 +22,6 @@ namespace CS2 {
 		class CFilterLOS : public CS2::server::CBaseFilter {
 		public:
 		};
-		static_assert(sizeof(CS2::server::CFilterLOS) == 0x548, "CFilterLOS size should be 0x548");
+		static_assert(sizeof(CS2::server::CFilterLOS) == 0x4E0, "CFilterLOS size should be 0x4E0");
 	}
 }

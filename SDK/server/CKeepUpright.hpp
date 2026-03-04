@@ -27,24 +27,24 @@ namespace CS2 {
 		class CKeepUpright : public CS2::server::CPointEntity {
 		public:
 			S2_PAD(0x8);
-			GlobalTypes::Vector m_worldGoalAxis; // 0x4f8 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_localTestAxis; // 0x504 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_worldGoalAxis; // 0x4b0 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_localTestAxis; // 0x4bc | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8);
-			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x518 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CHandle<server::CBaseEntity> m_attachedObject; // 0x520 | Schema_Atomic | Size: 0x4
-			// char  m_attachedObject[0x4]; // 0x520 | Schema_Atomic | Size: 0x4
-			float32 m_angularLimit; // 0x524 | Schema_Builtin | Size: 0x4
-			bool m_bActive; // 0x528 | Schema_Builtin | Size: 0x1
-			bool m_bDampAllRotation; // 0x529 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_nameAttach; // 0x4d0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CHandle<server::CBaseEntity> m_attachedObject; // 0x4d8 | Schema_Atomic | Size: 0x4
+			// char m_attachedObject[0x4]; // 0x4d8 | Schema_Atomic | Size: 0x4
+			float32 m_angularLimit; // 0x4dc | Schema_Builtin | Size: 0x4
+			bool m_bActive; // 0x4e0 | Schema_Builtin | Size: 0x1
+			bool m_bDampAllRotation; // 0x4e1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::server::CKeepUpright, m_worldGoalAxis) == 0x4F8, "m_worldGoalAxis in CKeepUpright should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CKeepUpright, m_localTestAxis) == 0x504, "m_localTestAxis in CKeepUpright should be at offset 0x504");
-		static_assert(offsetof(CS2::server::CKeepUpright, m_nameAttach) == 0x518, "m_nameAttach in CKeepUpright should be at offset 0x518");
-		static_assert(offsetof(CS2::server::CKeepUpright, m_attachedObject) == 0x520, "m_attachedObject in CKeepUpright should be at offset 0x520");
-		static_assert(offsetof(CS2::server::CKeepUpright, m_angularLimit) == 0x524, "m_angularLimit in CKeepUpright should be at offset 0x524");
-		static_assert(offsetof(CS2::server::CKeepUpright, m_bActive) == 0x528, "m_bActive in CKeepUpright should be at offset 0x528");
-		static_assert(offsetof(CS2::server::CKeepUpright, m_bDampAllRotation) == 0x529, "m_bDampAllRotation in CKeepUpright should be at offset 0x529");
-		static_assert(sizeof(CS2::server::CKeepUpright) == 0x530, "CKeepUpright size should be 0x530");
+		static_assert(offsetof(CS2::server::CKeepUpright, m_worldGoalAxis) == 0x4B0, "m_worldGoalAxis in CKeepUpright should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CKeepUpright, m_localTestAxis) == 0x4BC, "m_localTestAxis in CKeepUpright should be at offset 0x4BC");
+		static_assert(offsetof(CS2::server::CKeepUpright, m_nameAttach) == 0x4D0, "m_nameAttach in CKeepUpright should be at offset 0x4D0");
+		static_assert(offsetof(CS2::server::CKeepUpright, m_attachedObject) == 0x4D8, "m_attachedObject in CKeepUpright should be at offset 0x4D8");
+		static_assert(offsetof(CS2::server::CKeepUpright, m_angularLimit) == 0x4DC, "m_angularLimit in CKeepUpright should be at offset 0x4DC");
+		static_assert(offsetof(CS2::server::CKeepUpright, m_bActive) == 0x4E0, "m_bActive in CKeepUpright should be at offset 0x4E0");
+		static_assert(offsetof(CS2::server::CKeepUpright, m_bDampAllRotation) == 0x4E1, "m_bDampAllRotation in CKeepUpright should be at offset 0x4E1");
+		static_assert(sizeof(CS2::server::CKeepUpright) == 0x4E8, "CKeepUpright size should be 0x4E8");
 	}
 }

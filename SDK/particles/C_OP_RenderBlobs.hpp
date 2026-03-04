@@ -12,14 +12,10 @@
 
 #include <SDK/particles/CParticleFunctionRenderer.hpp>
 #include <SDK/particleslib/CParticleCollectionRendererFloatInput.hpp>
+#include <SDK/particles/MaterialVariable_t.hpp>
 
 
 
-namespace CS2 {
-	namespace particles {
-		class MaterialVariable_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -35,10 +31,10 @@ namespace CS2 {
 			int32_t m_nScaleCP; // 0x678 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector<particles::MaterialVariable_t> m_MaterialVars; // 0x680 | Schema_Atomic | Size: 0x18
-			// char  m_MaterialVars[0x18]; // 0x680 | Schema_Atomic | Size: 0x18
+			// char m_MaterialVars[0x18]; // 0x680 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x6b0 | Schema_Atomic | Size: 0x8
-			char  m_hMaterial[0x8]; // 0x6b0 | Schema_Atomic | Size: 0x8
+			char m_hMaterial[0x8]; // 0x6b0 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cubeWidth) == 0x220, "m_cubeWidth in C_OP_RenderBlobs should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cutoffRadius) == 0x390, "m_cutoffRadius in C_OP_RenderBlobs should be at offset 0x390");

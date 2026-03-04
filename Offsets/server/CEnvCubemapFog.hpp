@@ -8,26 +8,26 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x540
+			// Class size: 0x4F8
 			namespace CEnvCubemapFog /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_flEndDistance = 0x4f0; // float32 m_flEndDistance; |  0x4f0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flStartDistance = 0x4f4; // float32 m_flStartDistance; |  0x4f4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogFalloffExponent = 0x4f8; // float32 m_flFogFalloffExponent; |  0x4f8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bHeightFogEnabled = 0x4fc; // bool m_bHeightFogEnabled; |  0x4fc | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flFogHeightWidth = 0x500; // float32 m_flFogHeightWidth; |  0x500 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogHeightEnd = 0x504; // float32 m_flFogHeightEnd; |  0x504 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogHeightStart = 0x508; // float32 m_flFogHeightStart; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flFogHeightExponent = 0x50c; // float32 m_flFogHeightExponent; |  0x50c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flLODBias = 0x510; // float32 m_flLODBias; |  0x510 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_bActive = 0x514; // bool m_bActive; |  0x514 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bStartDisabled = 0x515; // bool m_bStartDisabled; |  0x515 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_flFogMaxOpacity = 0x518; // float32 m_flFogMaxOpacity; |  0x518 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nCubemapSourceType = 0x51c; // int32_t m_nCubemapSourceType; |  0x51c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_hSkyMaterial = 0x520; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_iszSkyEntity = 0x528; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_hFogCubemapTexture = 0x530; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_bHasHeightFogEnd = 0x538; // bool m_bHasHeightFogEnd; |  0x538 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_bFirstTime = 0x539; // bool m_bFirstTime; |  0x539 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flEndDistance = 0x4a8; // float32 m_flEndDistance; |  0x4a8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flStartDistance = 0x4ac; // float32 m_flStartDistance; |  0x4ac | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogFalloffExponent = 0x4b0; // float32 m_flFogFalloffExponent; |  0x4b0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bHeightFogEnabled = 0x4b4; // bool m_bHeightFogEnabled; |  0x4b4 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFogHeightWidth = 0x4b8; // float32 m_flFogHeightWidth; |  0x4b8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogHeightEnd = 0x4bc; // float32 m_flFogHeightEnd; |  0x4bc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogHeightStart = 0x4c0; // float32 m_flFogHeightStart; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flFogHeightExponent = 0x4c4; // float32 m_flFogHeightExponent; |  0x4c4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flLODBias = 0x4c8; // float32 m_flLODBias; |  0x4c8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_bActive = 0x4cc; // bool m_bActive; |  0x4cc | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bStartDisabled = 0x4cd; // bool m_bStartDisabled; |  0x4cd | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_flFogMaxOpacity = 0x4d0; // float32 m_flFogMaxOpacity; |  0x4d0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nCubemapSourceType = 0x4d4; // int32_t m_nCubemapSourceType; |  0x4d4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_hSkyMaterial = 0x4d8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszSkyEntity = 0x4e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_hFogCubemapTexture = 0x4e8; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_bHasHeightFogEnd = 0x4f0; // bool m_bHasHeightFogEnd; |  0x4f0 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_bFirstTime = 0x4f1; // bool m_bFirstTime; |  0x4f1 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

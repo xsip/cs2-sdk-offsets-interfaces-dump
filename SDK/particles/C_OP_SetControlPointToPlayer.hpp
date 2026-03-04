@@ -11,6 +11,7 @@
 
 
 #include <SDK/particles/CParticleFunctionPreEmission.hpp>
+#include <SDK/particles/ParticleEntityPos_t.hpp>
 
 
 
@@ -24,11 +25,13 @@ namespace CS2 {
 			int32_t m_nCP1; // 0x1d8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecCP1Pos; // 0x1dc | Schema_Atomic | Size: 0xc
 			bool m_bOrientToEyes; // 0x1e8 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x7); // End padding
+			S2_PAD(0x3);
+			particles::ParticleEntityPos_t m_nPosition; // 0x1ec | Schema_DeclaredEnum | Size: 0x4
 		};
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToPlayer, m_nCP1) == 0x1D8, "m_nCP1 in C_OP_SetControlPointToPlayer should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToPlayer, m_vecCP1Pos) == 0x1DC, "m_vecCP1Pos in C_OP_SetControlPointToPlayer should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToPlayer, m_bOrientToEyes) == 0x1E8, "m_bOrientToEyes in C_OP_SetControlPointToPlayer should be at offset 0x1E8");
+		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToPlayer, m_nPosition) == 0x1EC, "m_nPosition in C_OP_SetControlPointToPlayer should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToPlayer) == 0x1F0, "C_OP_SetControlPointToPlayer size should be 0x1F0");
 	}
 }

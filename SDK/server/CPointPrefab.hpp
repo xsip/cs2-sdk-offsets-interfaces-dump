@@ -21,22 +21,22 @@ namespace CS2 {
 	namespace server {
 		class CPointPrefab : public CS2::server::CServerOnlyPointEntity {
 		public:
-			GlobalTypes::CUtlSymbolLarge m_targetMapName; // 0x4f0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_forceWorldGroupID; // 0x4f8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_associatedRelayTargetName; // 0x500 | Schema_Atomic | Size: 0x8
-			bool m_fixupNames; // 0x508 | Schema_Builtin | Size: 0x1
-			bool m_bLoadDynamic; // 0x509 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CUtlSymbolLarge m_targetMapName; // 0x4a8 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_forceWorldGroupID; // 0x4b0 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_associatedRelayTargetName; // 0x4b8 | Schema_Atomic | Size: 0x8
+			bool m_fixupNames; // 0x4c0 | Schema_Builtin | Size: 0x1
+			bool m_bLoadDynamic; // 0x4c1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::CHandle<server::CPointPrefab> m_associatedRelayEntity; // 0x50c | Schema_Atomic | Size: 0x4
-			// char  m_associatedRelayEntity[0x4]; // 0x50c | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CPointPrefab> m_associatedRelayEntity; // 0x4c4 | Schema_Atomic | Size: 0x4
+			// char m_associatedRelayEntity[0x4]; // 0x4c4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x48); // End padding
 		};
-		static_assert(offsetof(CS2::server::CPointPrefab, m_targetMapName) == 0x4F0, "m_targetMapName in CPointPrefab should be at offset 0x4F0");
-		static_assert(offsetof(CS2::server::CPointPrefab, m_forceWorldGroupID) == 0x4F8, "m_forceWorldGroupID in CPointPrefab should be at offset 0x4F8");
-		static_assert(offsetof(CS2::server::CPointPrefab, m_associatedRelayTargetName) == 0x500, "m_associatedRelayTargetName in CPointPrefab should be at offset 0x500");
-		static_assert(offsetof(CS2::server::CPointPrefab, m_fixupNames) == 0x508, "m_fixupNames in CPointPrefab should be at offset 0x508");
-		static_assert(offsetof(CS2::server::CPointPrefab, m_bLoadDynamic) == 0x509, "m_bLoadDynamic in CPointPrefab should be at offset 0x509");
-		static_assert(offsetof(CS2::server::CPointPrefab, m_associatedRelayEntity) == 0x50C, "m_associatedRelayEntity in CPointPrefab should be at offset 0x50C");
-		static_assert(sizeof(CS2::server::CPointPrefab) == 0x558, "CPointPrefab size should be 0x558");
+		static_assert(offsetof(CS2::server::CPointPrefab, m_targetMapName) == 0x4A8, "m_targetMapName in CPointPrefab should be at offset 0x4A8");
+		static_assert(offsetof(CS2::server::CPointPrefab, m_forceWorldGroupID) == 0x4B0, "m_forceWorldGroupID in CPointPrefab should be at offset 0x4B0");
+		static_assert(offsetof(CS2::server::CPointPrefab, m_associatedRelayTargetName) == 0x4B8, "m_associatedRelayTargetName in CPointPrefab should be at offset 0x4B8");
+		static_assert(offsetof(CS2::server::CPointPrefab, m_fixupNames) == 0x4C0, "m_fixupNames in CPointPrefab should be at offset 0x4C0");
+		static_assert(offsetof(CS2::server::CPointPrefab, m_bLoadDynamic) == 0x4C1, "m_bLoadDynamic in CPointPrefab should be at offset 0x4C1");
+		static_assert(offsetof(CS2::server::CPointPrefab, m_associatedRelayEntity) == 0x4C4, "m_associatedRelayEntity in CPointPrefab should be at offset 0x4C4");
+		static_assert(sizeof(CS2::server::CPointPrefab) == 0x510, "CPointPrefab size should be 0x510");
 	}
 }

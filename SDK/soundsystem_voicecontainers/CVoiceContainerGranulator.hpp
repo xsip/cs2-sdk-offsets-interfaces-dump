@@ -10,7 +10,7 @@
 #endif
 
 
-#include <SDK/soundsystem_voicecontainers/CVoiceContainerBase.hpp>
+#include <SDK/soundsystem_voicecontainers/CVoiceContainerAsyncGenerator.hpp>
 
 
 
@@ -19,7 +19,7 @@
 using namespace GlobalTypes;
 namespace CS2 {
 	namespace soundsystem_voicecontainers {
-		class CVoiceContainerGranulator : public CS2::soundsystem_voicecontainers::CVoiceContainerBase {
+		class CVoiceContainerGranulator : public CS2::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator {
 		public:
 			float32 m_flGrainLength; // 0xb8 | Schema_Builtin | Size: 0x4
 			float32 m_flGrainCrossfadeAmount; // 0xbc | Schema_Builtin | Size: 0x4
@@ -28,7 +28,7 @@ namespace CS2 {
 			bool m_bShouldWraparound; // 0xc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCVoiceContainerBase> m_sourceAudio; // 0xd0 | Schema_Atomic | Size: 0x8
-			char  m_sourceAudio[0x8]; // 0xd0 | Schema_Atomic | Size: 0x8
+			char m_sourceAudio[0x8]; // 0xd0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0xb8); // End padding
 		};
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerGranulator, m_flGrainLength) == 0xB8, "m_flGrainLength in CVoiceContainerGranulator should be at offset 0xB8");

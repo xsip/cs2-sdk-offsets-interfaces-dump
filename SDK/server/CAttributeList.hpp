@@ -10,6 +10,7 @@
 #endif
 
 
+#include <SDK/server/CEconItemAttribute.hpp>
 
 
 
@@ -27,7 +28,7 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			// server::CUtlVectorEmbeddedNetworkVar<server::CEconItemAttribute> m_Attributes; // 0x8 | Schema_Atomic | Size: 0x68
-			char  m_Attributes[0x68]; // 0x8 | Schema_Atomic | Size: 0x68
+			char m_Attributes[0x68]; // 0x8 | Schema_Atomic | Size: 0x68
 			server::CAttributeManager* m_pManager; // 0x70 | Schema_Ptr | Size: 0x8
 		};
 		static_assert(offsetof(CS2::server::CAttributeList, m_Attributes) == 0x8, "m_Attributes in CAttributeList should be at offset 0x8");

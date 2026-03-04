@@ -4,7 +4,14 @@
 
 
 class animgraphlib_CAnimGraphDebugReplay {
-    char vTable27[0x40];
+    void **__vftable_0;
+    void **__vftable_1;
+    void **__vftable_2;
+    void **__vftable_3;
+    void **__vftable_4;
+    void **__vftable_5;
+    void **__vftable_6;
+    void **__vftable_7;
     CUtlString m_animGraphFileName;
     char m_frameList[0x18];
     int32_t m_startIndex;

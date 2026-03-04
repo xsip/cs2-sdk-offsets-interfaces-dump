@@ -7,5 +7,5 @@
 class animationsystem_FollowAttachmentData {
     int32_t m_boneIndex;
     modellib_AttachmentHandle_t m_attachmentHandle;
-    char end_pad_453[0x3];
+    char end_pad_459[0x3];
 };

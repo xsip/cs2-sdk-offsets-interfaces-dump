@@ -11,11 +11,18 @@
 
 
 #include <SDK/client/CSkeletonAnimationController.hpp>
+#include <SDK/client/AnimationAlgorithm_t.hpp>
 #include <SDK/client/CAnimGraphNetworkedVariables.hpp>
+#include <SDK/animgraphlib/IAnimationGraphInstance.hpp>
+#include <SDK/client/ExternalAnimGraphHandle_t.hpp>
+#include <SDK/client/CBaseAnimGraph.hpp>
 #include <SDK/animationsystem/HSequence.hpp>
 #include <SDK/entity2/GameTime_t.hpp>
 #include <SDK/client/AnimLoopMode_t.hpp>
 #include <SDK/client/SequenceFinishNotifyState_t.hpp>
+#include <SDK/entity2/GameTick_t.hpp>
+#include <SDK/resourcefile/ResourceId_t.hpp>
+#include <SDK/client/ExternalAnimGraph_t.hpp>
 
 
 
@@ -27,62 +34,90 @@ namespace CS2 {
 		class CBaseAnimGraphController : public CS2::client::CSkeletonAnimationController {
 		public:
 			S2_PAD(0x8);
-			client::CAnimGraphNetworkedVariables m_animGraphNetworkedVars; // 0x18 | Schema_DeclaredClass | Size: 0x1490
-			bool m_bSequenceFinished; // 0x14a8 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
-			float32 m_flSoundSyncTime; // 0x14ac | Schema_Builtin | Size: 0x4
-			uint32_t m_nActiveIKChainMask; // 0x14b0 | Schema_Builtin | Size: 0x4
-			animationsystem::HSequence m_hSequence; // 0x14b4 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flSeqStartTime; // 0x14b8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_flSeqFixedCycle; // 0x14bc | Schema_Builtin | Size: 0x4
-			client::AnimLoopMode_t m_nAnimLoopMode; // 0x14c0 | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CNetworkedQuantizedFloat m_flPlaybackRate; // 0x14c4 | Schema_Atomic | Size: 0x8
-			S2_PAD(0x4);
-			client::SequenceFinishNotifyState_t m_nNotifyState; // 0x14d0 | Schema_DeclaredEnum | Size: 0x1
-			S2_PAD(0x1);
-			bool m_bNetworkedAnimationInputsChanged; // 0x14d2 | Schema_Builtin | Size: 0x1
-			bool m_bNetworkedSequenceChanged; // 0x14d3 | Schema_Builtin | Size: 0x1
-			bool m_bLastUpdateSkipped; // 0x14d4 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x3);
-			entity2::GameTime_t m_flPrevAnimUpdateTime; // 0x14d8 | Schema_DeclaredClass | Size: 0x4
-			S2_PAD(0x384);
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmGraphDefinition> m_hGraphDefinitionAG2; // 0x1860 | Schema_Atomic | Size: 0x8
-			char  m_hGraphDefinitionAG2[0x8]; // 0x1860 | Schema_Atomic | Size: 0x8
-			bool m_bIsUsingAG2; // 0x1868 | Schema_Builtin | Size: 0x1
+			client::AnimationAlgorithm_t m_nAnimationAlgorithm; // 0x18 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7);
+			client::CAnimGraphNetworkedVariables m_animGraphNetworkedVars; // 0x20 | Schema_DeclaredClass | Size: 0x1490
+			// GlobalTypes::CSmartPtr<animgraphlib::IAnimationGraphInstance> m_pAnimGraphInstance; // 0x14b0 | Schema_Atomic | Size: 0x8
+			char m_pAnimGraphInstance[0x8]; // 0x14b0 | Schema_Atomic | Size: 0x8
+			S2_PAD(0x58);
+			client::ExternalAnimGraphHandle_t m_nNextExternalGraphHandle; // 0x1510 | Schema_DeclaredClass | Size: 0x4
+			S2_PAD(0x4);
+			GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol> m_vecSecondarySkeletonNames; // 0x1518 | Schema_Atomic | Size: 0x18
+			// char m_vecSecondarySkeletonNames[0x18]; // 0x1518 | Schema_Atomic | Size: 0x18
+			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::CBaseAnimGraph>> m_vecSecondarySkeletons; // 0x1530 | Schema_Atomic | Size: 0x18
+			char m_vecSecondarySkeletons[0x18]; // 0x1530 | Schema_Atomic | Size: 0x18
+			int32_t m_nSecondarySkeletonMasterCount; // 0x1548 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x4);
+			float32 m_flSoundSyncTime; // 0x1550 | Schema_Builtin | Size: 0x4
+			uint32_t m_nActiveIKChainMask; // 0x1554 | Schema_Builtin | Size: 0x4
+			S2_PAD(0x50);
+			animationsystem::HSequence m_hSequence; // 0x15a8 | Schema_DeclaredClass | Size: 0x4
+			entity2::GameTime_t m_flSeqStartTime; // 0x15ac | Schema_DeclaredClass | Size: 0x4
+			float32 m_flSeqFixedCycle; // 0x15b0 | Schema_Builtin | Size: 0x4
+			client::AnimLoopMode_t m_nAnimLoopMode; // 0x15b4 | Schema_DeclaredEnum | Size: 0x4
+			GlobalTypes::CNetworkedQuantizedFloat m_flPlaybackRate; // 0x15b8 | Schema_Atomic | Size: 0x8
+			S2_PAD(0x4);
+			client::SequenceFinishNotifyState_t m_nNotifyState; // 0x15c4 | Schema_DeclaredEnum | Size: 0x1
+			bool m_bNetworkedAnimationInputsChanged; // 0x15c5 | Schema_Builtin | Size: 0x1
+			bool m_bNetworkedSequenceChanged; // 0x15c6 | Schema_Builtin | Size: 0x1
+			bool m_bLastUpdateSkipped; // 0x15c7 | Schema_Builtin | Size: 0x1
+			bool m_bSequenceFinished; // 0x15c8 | Schema_Builtin | Size: 0x1
+			S2_PAD(0x3);
+			entity2::GameTick_t m_nPrevAnimUpdateTick; // 0x15cc | Schema_DeclaredClass | Size: 0x4
+			S2_PAD(0x298);
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmGraphDefinition> m_hGraphDefinitionAG2; // 0x1868 | Schema_Atomic | Size: 0x8
+			char m_hGraphDefinitionAG2[0x8]; // 0x1868 | Schema_Atomic | Size: 0x8
 			// GlobalTypes::C_NetworkUtlVectorBase< uint8 > m_serializedPoseRecipeAG2; // 0x1870 | Schema_Atomic | Size: 0x18
-			char  m_serializedPoseRecipeAG2[0x18]; // 0x1870 | Schema_Atomic | Size: 0x18
+			char m_serializedPoseRecipeAG2[0x18]; // 0x1870 | Schema_Atomic | Size: 0x18
 			int32_t m_nSerializePoseRecipeSizeAG2; // 0x1888 | Schema_Builtin | Size: 0x4
 			int32_t m_nSerializePoseRecipeVersionAG2; // 0x188c | Schema_Builtin | Size: 0x4
-			uint8_t m_nGraphCreationFlagsAG2; // 0x1890 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x1eb);
-			int32_t m_nServerGraphDefReloadCountAG2; // 0x1a7c | Schema_Builtin | Size: 0x4
-			S2_PAD(0x4);
-			int32_t m_nServerSerializationContextIteration; // 0x1a84 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x8); // End padding
+			int32_t m_nServerGraphInstanceIteration; // 0x1890 | Schema_Builtin | Size: 0x4
+			int32_t m_nServerSerializationContextIteration; // 0x1894 | Schema_Builtin | Size: 0x4
+			resourcefile::ResourceId_t m_primaryGraphId; // 0x1898 | Schema_DeclaredClass | Size: 0x8
+			// GlobalTypes::C_NetworkUtlVectorBase<resourcefile::ResourceId_t> m_vecExternalGraphIds; // 0x18a0 | Schema_Atomic | Size: 0x18
+			char m_vecExternalGraphIds[0x18]; // 0x18a0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::C_NetworkUtlVectorBase<resourcefile::ResourceId_t> m_vecExternalClipIds; // 0x18b8 | Schema_Atomic | Size: 0x18
+			char m_vecExternalClipIds[0x18]; // 0x18b8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CGlobalSymbol m_sAnimGraph2Identifier; // 0x18d0 | Schema_Atomic | Size: 0x8
+			S2_PAD(0x220);
+			GlobalTypes::CUtlVector<client::ExternalAnimGraph_t> m_vecExternalGraphs; // 0x1af8 | Schema_Atomic | Size: 0x18
+			// char m_vecExternalGraphs[0x18]; // 0x1af8 | Schema_Atomic | Size: 0x18
+			S2_PAD(0x21);
+			client::AnimationAlgorithm_t m_nPrevAnimationAlgorithm; // 0x1b31 | Schema_DeclaredEnum | Size: 0x1
+			S2_PAD(0x6); // End padding
 		};
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_animGraphNetworkedVars) == 0x18, "m_animGraphNetworkedVars in CBaseAnimGraphController should be at offset 0x18");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bSequenceFinished) == 0x14A8, "m_bSequenceFinished in CBaseAnimGraphController should be at offset 0x14A8");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flSoundSyncTime) == 0x14AC, "m_flSoundSyncTime in CBaseAnimGraphController should be at offset 0x14AC");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nActiveIKChainMask) == 0x14B0, "m_nActiveIKChainMask in CBaseAnimGraphController should be at offset 0x14B0");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_hSequence) == 0x14B4, "m_hSequence in CBaseAnimGraphController should be at offset 0x14B4");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flSeqStartTime) == 0x14B8, "m_flSeqStartTime in CBaseAnimGraphController should be at offset 0x14B8");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flSeqFixedCycle) == 0x14BC, "m_flSeqFixedCycle in CBaseAnimGraphController should be at offset 0x14BC");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nAnimLoopMode) == 0x14C0, "m_nAnimLoopMode in CBaseAnimGraphController should be at offset 0x14C0");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flPlaybackRate) == 0x14C4, "m_flPlaybackRate in CBaseAnimGraphController should be at offset 0x14C4");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nNotifyState) == 0x14D0, "m_nNotifyState in CBaseAnimGraphController should be at offset 0x14D0");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bNetworkedAnimationInputsChanged) == 0x14D2, "m_bNetworkedAnimationInputsChanged in CBaseAnimGraphController should be at offset 0x14D2");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bNetworkedSequenceChanged) == 0x14D3, "m_bNetworkedSequenceChanged in CBaseAnimGraphController should be at offset 0x14D3");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bLastUpdateSkipped) == 0x14D4, "m_bLastUpdateSkipped in CBaseAnimGraphController should be at offset 0x14D4");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flPrevAnimUpdateTime) == 0x14D8, "m_flPrevAnimUpdateTime in CBaseAnimGraphController should be at offset 0x14D8");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_hGraphDefinitionAG2) == 0x1860, "m_hGraphDefinitionAG2 in CBaseAnimGraphController should be at offset 0x1860");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bIsUsingAG2) == 0x1868, "m_bIsUsingAG2 in CBaseAnimGraphController should be at offset 0x1868");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nAnimationAlgorithm) == 0x18, "m_nAnimationAlgorithm in CBaseAnimGraphController should be at offset 0x18");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_animGraphNetworkedVars) == 0x20, "m_animGraphNetworkedVars in CBaseAnimGraphController should be at offset 0x20");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_pAnimGraphInstance) == 0x14B0, "m_pAnimGraphInstance in CBaseAnimGraphController should be at offset 0x14B0");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nNextExternalGraphHandle) == 0x1510, "m_nNextExternalGraphHandle in CBaseAnimGraphController should be at offset 0x1510");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_vecSecondarySkeletonNames) == 0x1518, "m_vecSecondarySkeletonNames in CBaseAnimGraphController should be at offset 0x1518");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_vecSecondarySkeletons) == 0x1530, "m_vecSecondarySkeletons in CBaseAnimGraphController should be at offset 0x1530");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nSecondarySkeletonMasterCount) == 0x1548, "m_nSecondarySkeletonMasterCount in CBaseAnimGraphController should be at offset 0x1548");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flSoundSyncTime) == 0x1550, "m_flSoundSyncTime in CBaseAnimGraphController should be at offset 0x1550");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nActiveIKChainMask) == 0x1554, "m_nActiveIKChainMask in CBaseAnimGraphController should be at offset 0x1554");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_hSequence) == 0x15A8, "m_hSequence in CBaseAnimGraphController should be at offset 0x15A8");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flSeqStartTime) == 0x15AC, "m_flSeqStartTime in CBaseAnimGraphController should be at offset 0x15AC");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flSeqFixedCycle) == 0x15B0, "m_flSeqFixedCycle in CBaseAnimGraphController should be at offset 0x15B0");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nAnimLoopMode) == 0x15B4, "m_nAnimLoopMode in CBaseAnimGraphController should be at offset 0x15B4");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_flPlaybackRate) == 0x15B8, "m_flPlaybackRate in CBaseAnimGraphController should be at offset 0x15B8");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nNotifyState) == 0x15C4, "m_nNotifyState in CBaseAnimGraphController should be at offset 0x15C4");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bNetworkedAnimationInputsChanged) == 0x15C5, "m_bNetworkedAnimationInputsChanged in CBaseAnimGraphController should be at offset 0x15C5");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bNetworkedSequenceChanged) == 0x15C6, "m_bNetworkedSequenceChanged in CBaseAnimGraphController should be at offset 0x15C6");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bLastUpdateSkipped) == 0x15C7, "m_bLastUpdateSkipped in CBaseAnimGraphController should be at offset 0x15C7");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_bSequenceFinished) == 0x15C8, "m_bSequenceFinished in CBaseAnimGraphController should be at offset 0x15C8");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nPrevAnimUpdateTick) == 0x15CC, "m_nPrevAnimUpdateTick in CBaseAnimGraphController should be at offset 0x15CC");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_hGraphDefinitionAG2) == 0x1868, "m_hGraphDefinitionAG2 in CBaseAnimGraphController should be at offset 0x1868");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_serializedPoseRecipeAG2) == 0x1870, "m_serializedPoseRecipeAG2 in CBaseAnimGraphController should be at offset 0x1870");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nSerializePoseRecipeSizeAG2) == 0x1888, "m_nSerializePoseRecipeSizeAG2 in CBaseAnimGraphController should be at offset 0x1888");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nSerializePoseRecipeVersionAG2) == 0x188C, "m_nSerializePoseRecipeVersionAG2 in CBaseAnimGraphController should be at offset 0x188C");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nGraphCreationFlagsAG2) == 0x1890, "m_nGraphCreationFlagsAG2 in CBaseAnimGraphController should be at offset 0x1890");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nServerGraphDefReloadCountAG2) == 0x1A7C, "m_nServerGraphDefReloadCountAG2 in CBaseAnimGraphController should be at offset 0x1A7C");
-		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nServerSerializationContextIteration) == 0x1A84, "m_nServerSerializationContextIteration in CBaseAnimGraphController should be at offset 0x1A84");
-		static_assert(sizeof(CS2::client::CBaseAnimGraphController) == 0x1A90, "CBaseAnimGraphController size should be 0x1A90");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nServerGraphInstanceIteration) == 0x1890, "m_nServerGraphInstanceIteration in CBaseAnimGraphController should be at offset 0x1890");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nServerSerializationContextIteration) == 0x1894, "m_nServerSerializationContextIteration in CBaseAnimGraphController should be at offset 0x1894");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_primaryGraphId) == 0x1898, "m_primaryGraphId in CBaseAnimGraphController should be at offset 0x1898");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_vecExternalGraphIds) == 0x18A0, "m_vecExternalGraphIds in CBaseAnimGraphController should be at offset 0x18A0");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_vecExternalClipIds) == 0x18B8, "m_vecExternalClipIds in CBaseAnimGraphController should be at offset 0x18B8");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_sAnimGraph2Identifier) == 0x18D0, "m_sAnimGraph2Identifier in CBaseAnimGraphController should be at offset 0x18D0");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_vecExternalGraphs) == 0x1AF8, "m_vecExternalGraphs in CBaseAnimGraphController should be at offset 0x1AF8");
+		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nPrevAnimationAlgorithm) == 0x1B31, "m_nPrevAnimationAlgorithm in CBaseAnimGraphController should be at offset 0x1B31");
+		static_assert(sizeof(CS2::client::CBaseAnimGraphController) == 0x1B38, "CBaseAnimGraphController size should be 0x1B38");
 	}
 }

@@ -27,7 +27,7 @@ namespace CS2 {
 			float32 m_flMinimumDistance; // 0x28 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlVector< int32 > m_ChildNodeIndices; // 0x30 | Schema_Atomic | Size: 0x18
-			// char  m_ChildNodeIndices[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
+			// char m_ChildNodeIndices[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_worldNodePrefix; // 0x48 | Schema_Atomic | Size: 0x8
 		};
 		static_assert(offsetof(CS2::worldrenderer::NodeData_t, m_nParent) == 0x0, "m_nParent in NodeData_t should be at offset 0x0");

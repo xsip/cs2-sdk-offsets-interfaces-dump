@@ -24,7 +24,7 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hParticleSystem; // 0x58 | Schema_Atomic | Size: 0x8
-			char  m_hParticleSystem[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
+			char m_hParticleSystem[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_particleSystemName; // 0x60 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_configName; // 0x68 | Schema_Atomic | Size: 0x8
 			bool m_bDetachFromOwner; // 0x70 | Schema_Builtin | Size: 0x1

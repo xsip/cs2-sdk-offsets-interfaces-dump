@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x510
+			// Class size: 0x4C8
 			namespace CBlood /*: public CS2::server::CPointEntity*/ {
-				constexpr std::ptrdiff_t m_vecSprayAngles = 0x4f0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_vecSprayDir = 0x4fc; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_flAmount = 0x508; // float32 m_flAmount; |  0x508 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_Color = 0x50c; // client::BloodType  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_vecSprayAngles = 0x4a8; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_vecSprayDir = 0x4b4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
+				constexpr std::ptrdiff_t m_flAmount = 0x4c0; // float32 m_flAmount; |  0x4c0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_Color = 0x4c4; // client::BloodType  | Schema_DeclaredEnum | Size: 0x4
 			}
 		}
 	}

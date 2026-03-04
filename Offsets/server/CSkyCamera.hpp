@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x590
+			// Class size: 0x548
 			namespace CSkyCamera /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_skyboxData = 0x4f0; // server::sky3dparams_t  | Schema_DeclaredClass | Size: 0x90
-				constexpr std::ptrdiff_t m_skyboxSlotToken = 0x580; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_bUseAngles = 0x584; // bool m_bUseAngles; |  0x584 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_pNext = 0x588; // server::CSkyCamera**  | Schema_Ptr | Size: 0x8
+				constexpr std::ptrdiff_t m_skyboxData = 0x4a8; // server::sky3dparams_t  | Schema_DeclaredClass | Size: 0x90
+				constexpr std::ptrdiff_t m_skyboxSlotToken = 0x538; // GlobalTypes::CUtlStringToken  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_bUseAngles = 0x53c; // bool m_bUseAngles; |  0x53c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_pNext = 0x540; // server::CSkyCamera**  | Schema_Ptr | Size: 0x8
 			}
 		}
 	}

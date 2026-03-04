@@ -4,7 +4,8 @@
 
 
 class modellib_CAnimSkeleton {
-    char vTable310[0x10];
+    void **__vftable_0;
+    void **__vftable_1;
     char m_localSpaceTransforms[0x18];
     char m_modelSpaceTransforms[0x18];
     char m_boneNames[0x18];

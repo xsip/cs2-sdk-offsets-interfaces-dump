@@ -11,7 +11,7 @@ class animationsystem_CSeqPoseSetting {
     bool m_bX;
     bool m_bY;
     bool m_bZ;
-    char pad_443[0x1];
+    char pad_449[0x1];
     int32_t m_eType;
-    char end_pad_444[0x4];
+    char end_pad_450[0x4];
 };

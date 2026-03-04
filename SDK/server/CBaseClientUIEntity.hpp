@@ -11,7 +11,6 @@
 
 
 #include <SDK/server/CBaseModelEntity.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
 
 
 
@@ -22,36 +21,46 @@ namespace CS2 {
 	namespace server {
 		class CBaseClientUIEntity : public CS2::server::CBaseModelEntity {
 		public:
-			bool m_bEnabled; // 0x7d8 | Schema_Builtin | Size: 0x1
+			bool m_bEnabled; // 0x730 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlSymbolLarge m_DialogXMLName; // 0x7e0 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_PanelClassName; // 0x7e8 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlSymbolLarge m_PanelID; // 0x7f0 | Schema_Atomic | Size: 0x8
-			entity2::CEntityIOOutput m_CustomOutput0; // 0x7f8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput1; // 0x820 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput2; // 0x848 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput3; // 0x870 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput4; // 0x898 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput5; // 0x8c0 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput6; // 0x8e8 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput7; // 0x910 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput8; // 0x938 | Schema_DeclaredClass | Size: 0x28
-			entity2::CEntityIOOutput m_CustomOutput9; // 0x960 | Schema_DeclaredClass | Size: 0x28
+			GlobalTypes::CUtlSymbolLarge m_DialogXMLName; // 0x738 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_PanelClassName; // 0x740 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CUtlSymbolLarge m_PanelID; // 0x748 | Schema_Atomic | Size: 0x8
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput0; // 0x750 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput0[0x20]; // 0x750 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput1; // 0x770 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput1[0x20]; // 0x770 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput2; // 0x790 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput2[0x20]; // 0x790 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput3; // 0x7b0 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput3[0x20]; // 0x7b0 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput4; // 0x7d0 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput4[0x20]; // 0x7d0 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput5; // 0x7f0 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput5[0x20]; // 0x7f0 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput6; // 0x810 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput6[0x20]; // 0x810 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput7; // 0x830 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput7[0x20]; // 0x830 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput8; // 0x850 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput8[0x20]; // 0x850 | Schema_Atomic | Size: 0x20
+			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput9; // 0x870 | Schema_Atomic | Size: 0x20
+			// char m_CustomOutput9[0x20]; // 0x870 | Schema_Atomic | Size: 0x20
 		};
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_bEnabled) == 0x7D8, "m_bEnabled in CBaseClientUIEntity should be at offset 0x7D8");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_DialogXMLName) == 0x7E0, "m_DialogXMLName in CBaseClientUIEntity should be at offset 0x7E0");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_PanelClassName) == 0x7E8, "m_PanelClassName in CBaseClientUIEntity should be at offset 0x7E8");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_PanelID) == 0x7F0, "m_PanelID in CBaseClientUIEntity should be at offset 0x7F0");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput0) == 0x7F8, "m_CustomOutput0 in CBaseClientUIEntity should be at offset 0x7F8");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput1) == 0x820, "m_CustomOutput1 in CBaseClientUIEntity should be at offset 0x820");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput2) == 0x848, "m_CustomOutput2 in CBaseClientUIEntity should be at offset 0x848");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput3) == 0x870, "m_CustomOutput3 in CBaseClientUIEntity should be at offset 0x870");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput4) == 0x898, "m_CustomOutput4 in CBaseClientUIEntity should be at offset 0x898");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput5) == 0x8C0, "m_CustomOutput5 in CBaseClientUIEntity should be at offset 0x8C0");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput6) == 0x8E8, "m_CustomOutput6 in CBaseClientUIEntity should be at offset 0x8E8");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput7) == 0x910, "m_CustomOutput7 in CBaseClientUIEntity should be at offset 0x910");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput8) == 0x938, "m_CustomOutput8 in CBaseClientUIEntity should be at offset 0x938");
-		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput9) == 0x960, "m_CustomOutput9 in CBaseClientUIEntity should be at offset 0x960");
-		static_assert(sizeof(CS2::server::CBaseClientUIEntity) == 0x988, "CBaseClientUIEntity size should be 0x988");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_bEnabled) == 0x730, "m_bEnabled in CBaseClientUIEntity should be at offset 0x730");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_DialogXMLName) == 0x738, "m_DialogXMLName in CBaseClientUIEntity should be at offset 0x738");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_PanelClassName) == 0x740, "m_PanelClassName in CBaseClientUIEntity should be at offset 0x740");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_PanelID) == 0x748, "m_PanelID in CBaseClientUIEntity should be at offset 0x748");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput0) == 0x750, "m_CustomOutput0 in CBaseClientUIEntity should be at offset 0x750");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput1) == 0x770, "m_CustomOutput1 in CBaseClientUIEntity should be at offset 0x770");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput2) == 0x790, "m_CustomOutput2 in CBaseClientUIEntity should be at offset 0x790");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput3) == 0x7B0, "m_CustomOutput3 in CBaseClientUIEntity should be at offset 0x7B0");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput4) == 0x7D0, "m_CustomOutput4 in CBaseClientUIEntity should be at offset 0x7D0");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput5) == 0x7F0, "m_CustomOutput5 in CBaseClientUIEntity should be at offset 0x7F0");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput6) == 0x810, "m_CustomOutput6 in CBaseClientUIEntity should be at offset 0x810");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput7) == 0x830, "m_CustomOutput7 in CBaseClientUIEntity should be at offset 0x830");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput8) == 0x850, "m_CustomOutput8 in CBaseClientUIEntity should be at offset 0x850");
+		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput9) == 0x870, "m_CustomOutput9 in CBaseClientUIEntity should be at offset 0x870");
+		static_assert(sizeof(CS2::server::CBaseClientUIEntity) == 0x890, "CBaseClientUIEntity size should be 0x890");
 	}
 }

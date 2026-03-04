@@ -11,17 +11,13 @@
 
 
 #include <SDK/animgraphlib/CUnaryUpdateNode.hpp>
+#include <SDK/animgraphlib/StanceInfo_t.hpp>
 #include <SDK/animgraphlib/CAnimUpdateNodeRef.hpp>
 #include <SDK/animgraphlib/CAnimParamHandle.hpp>
 #include <SDK/animgraphlib/StanceOverrideMode.hpp>
 
 
 
-namespace CS2 {
-	namespace animgraphlib {
-		class StanceInfo_t;
-	}
-}
 
 
 using namespace GlobalTypes;
@@ -30,7 +26,7 @@ namespace CS2 {
 		class CStanceOverrideUpdateNode : public CS2::animgraphlib::CUnaryUpdateNode {
 		public:
 			GlobalTypes::CUtlVector<animgraphlib::StanceInfo_t> m_footStanceInfo; // 0x70 | Schema_Atomic | Size: 0x18
-			// char  m_footStanceInfo[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
+			// char m_footStanceInfo[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 			animgraphlib::CAnimUpdateNodeRef m_pStanceSourceNode; // 0x88 | Schema_DeclaredClass | Size: 0x10
 			animgraphlib::CAnimParamHandle m_hParameter; // 0x98 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x2);

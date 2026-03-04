@@ -8,13 +8,13 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x568
+			// Class size: 0x500
 			namespace CFilterEnemy /*: public CS2::server::CBaseFilter*/ {
-				constexpr std::ptrdiff_t m_iszEnemyName = 0x548; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-				constexpr std::ptrdiff_t m_flRadius = 0x550; // float32 m_flRadius; |  0x550 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flOuterRadius = 0x554; // float32 m_flOuterRadius; |  0x554 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_nMaxSquadmatesPerEnemy = 0x558; // int32_t m_nMaxSquadmatesPerEnemy; |  0x558 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iszPlayerName = 0x560; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_iszEnemyName = 0x4e0; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
+				constexpr std::ptrdiff_t m_flRadius = 0x4e8; // float32 m_flRadius; |  0x4e8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flOuterRadius = 0x4ec; // float32 m_flOuterRadius; |  0x4ec | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_nMaxSquadmatesPerEnemy = 0x4f0; // int32_t m_nMaxSquadmatesPerEnemy; |  0x4f0 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iszPlayerName = 0x4f8; // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 			}
 		}
 	}

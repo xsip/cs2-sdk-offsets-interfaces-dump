@@ -8,10 +8,10 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x4F8
+			// Class size: 0x4B0
 			namespace CEnvBeverage /*: public CS2::server::CBaseEntity*/ {
-				constexpr std::ptrdiff_t m_CanInDispenser = 0x4f0; // bool m_CanInDispenser; |  0x4f0 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_nBeverageType = 0x4f4; // int32_t m_nBeverageType; |  0x4f4 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_CanInDispenser = 0x4a8; // bool m_CanInDispenser; |  0x4a8 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_nBeverageType = 0x4ac; // int32_t m_nBeverageType; |  0x4ac | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

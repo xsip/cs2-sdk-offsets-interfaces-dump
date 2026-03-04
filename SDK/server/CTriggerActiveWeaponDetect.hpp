@@ -22,11 +22,11 @@ namespace CS2 {
 	namespace server {
 		class CTriggerActiveWeaponDetect : public CS2::server::CBaseTrigger {
 		public:
-			entity2::CEntityIOOutput m_OnTouchedActiveWeapon; // 0x9a8 | Schema_DeclaredClass | Size: 0x28
-			GlobalTypes::CUtlSymbolLarge m_iszWeaponClassName; // 0x9d0 | Schema_Atomic | Size: 0x8
+			entity2::CEntityIOOutput m_OnTouchedActiveWeapon; // 0x890 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CUtlSymbolLarge m_iszWeaponClassName; // 0x8a8 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::server::CTriggerActiveWeaponDetect, m_OnTouchedActiveWeapon) == 0x9A8, "m_OnTouchedActiveWeapon in CTriggerActiveWeaponDetect should be at offset 0x9A8");
-		static_assert(offsetof(CS2::server::CTriggerActiveWeaponDetect, m_iszWeaponClassName) == 0x9D0, "m_iszWeaponClassName in CTriggerActiveWeaponDetect should be at offset 0x9D0");
-		static_assert(sizeof(CS2::server::CTriggerActiveWeaponDetect) == 0x9D8, "CTriggerActiveWeaponDetect size should be 0x9D8");
+		static_assert(offsetof(CS2::server::CTriggerActiveWeaponDetect, m_OnTouchedActiveWeapon) == 0x890, "m_OnTouchedActiveWeapon in CTriggerActiveWeaponDetect should be at offset 0x890");
+		static_assert(offsetof(CS2::server::CTriggerActiveWeaponDetect, m_iszWeaponClassName) == 0x8A8, "m_iszWeaponClassName in CTriggerActiveWeaponDetect should be at offset 0x8A8");
+		static_assert(sizeof(CS2::server::CTriggerActiveWeaponDetect) == 0x8B0, "CTriggerActiveWeaponDetect size should be 0x8B0");
 	}
 }

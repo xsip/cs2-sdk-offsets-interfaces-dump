@@ -23,10 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_animEventClassName; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::KeyValues3 m_KV; // 0x28 | Schema_Atomic | Size: 0x10
-			S2_PAD(0x8); // End padding
+			S2_PAD(0x20); // End padding
 		};
 		static_assert(offsetof(CS2::animlib::CNmLegacyEvent, m_animEventClassName) == 0x20, "m_animEventClassName in CNmLegacyEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmLegacyEvent, m_KV) == 0x28, "m_KV in CNmLegacyEvent should be at offset 0x28");
-		static_assert(sizeof(CS2::animlib::CNmLegacyEvent) == 0x40, "CNmLegacyEvent size should be 0x40");
+		static_assert(sizeof(CS2::animlib::CNmLegacyEvent) == 0x58, "CNmLegacyEvent size should be 0x58");
 	}
 }

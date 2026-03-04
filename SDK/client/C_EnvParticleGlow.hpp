@@ -21,18 +21,18 @@ namespace CS2 {
 	namespace client {
 		class C_EnvParticleGlow : public CS2::client::C_ParticleSystem {
 		public:
-			float32 m_flAlphaScale; // 0x1460 | Schema_Builtin | Size: 0x4
-			float32 m_flRadiusScale; // 0x1464 | Schema_Builtin | Size: 0x4
-			float32 m_flSelfIllumScale; // 0x1468 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Color m_ColorTint; // 0x146c | Schema_Atomic | Size: 0x4
-			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hTextureOverride; // 0x1470 | Schema_Atomic | Size: 0x8
-			char  m_hTextureOverride[0x8]; // 0x1470 | Schema_Atomic | Size: 0x8
+			float32 m_flAlphaScale; // 0x1438 | Schema_Builtin | Size: 0x4
+			float32 m_flRadiusScale; // 0x143c | Schema_Builtin | Size: 0x4
+			float32 m_flSelfIllumScale; // 0x1440 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Color m_ColorTint; // 0x1444 | Schema_Atomic | Size: 0x4
+			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hTextureOverride; // 0x1448 | Schema_Atomic | Size: 0x8
+			char m_hTextureOverride[0x8]; // 0x1448 | Schema_Atomic | Size: 0x8
 		};
-		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_flAlphaScale) == 0x1460, "m_flAlphaScale in C_EnvParticleGlow should be at offset 0x1460");
-		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_flRadiusScale) == 0x1464, "m_flRadiusScale in C_EnvParticleGlow should be at offset 0x1464");
-		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_flSelfIllumScale) == 0x1468, "m_flSelfIllumScale in C_EnvParticleGlow should be at offset 0x1468");
-		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_ColorTint) == 0x146C, "m_ColorTint in C_EnvParticleGlow should be at offset 0x146C");
-		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_hTextureOverride) == 0x1470, "m_hTextureOverride in C_EnvParticleGlow should be at offset 0x1470");
-		static_assert(sizeof(CS2::client::C_EnvParticleGlow) == 0x1478, "C_EnvParticleGlow size should be 0x1478");
+		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_flAlphaScale) == 0x1438, "m_flAlphaScale in C_EnvParticleGlow should be at offset 0x1438");
+		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_flRadiusScale) == 0x143C, "m_flRadiusScale in C_EnvParticleGlow should be at offset 0x143C");
+		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_flSelfIllumScale) == 0x1440, "m_flSelfIllumScale in C_EnvParticleGlow should be at offset 0x1440");
+		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_ColorTint) == 0x1444, "m_ColorTint in C_EnvParticleGlow should be at offset 0x1444");
+		static_assert(offsetof(CS2::client::C_EnvParticleGlow, m_hTextureOverride) == 0x1448, "m_hTextureOverride in C_EnvParticleGlow should be at offset 0x1448");
+		static_assert(sizeof(CS2::client::C_EnvParticleGlow) == 0x1450, "C_EnvParticleGlow size should be 0x1450");
 	}
 }

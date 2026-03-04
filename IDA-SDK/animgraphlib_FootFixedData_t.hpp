@@ -15,5 +15,5 @@ class animgraphlib_FootFixedData_t {
     int32_t m_nTagIndex;
     float32 m_flMaxRotationLeft;
     float32 m_flMaxRotationRight;
-    char end_pad_259[0xc];
+    char end_pad_284[0xc];
 };

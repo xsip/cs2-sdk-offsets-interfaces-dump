@@ -8,6 +8,7 @@ namespace CS2 {
 		enum NmFootPhase_t : std::uint8_t {
 			NmFootPhase_t_LeftFootDown = 0x0,
 			NmFootPhase_t_LeftFootPassing = 0x3,
+			NmFootPhase_t_None = 0x4,
 			NmFootPhase_t_RightFootDown = 0x2,
 			NmFootPhase_t_RightFootPassing = 0x1
 		};

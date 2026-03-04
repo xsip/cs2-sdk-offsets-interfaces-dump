@@ -1,10 +1,10 @@
 // generated - do not edit!
 
-import {soundsystem_voicecontainers_CVoiceContainerBase} from './CVoiceContainerBase';
+import {soundsystem_voicecontainers_CVoiceContainerAsyncGenerator} from './CVoiceContainerAsyncGenerator';
 // Class size: 0x1E0
-// BaseClass: : public CS2::soundsystem_voicecontainers::CVoiceContainerBase
+// BaseClass: : public CS2::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator
 export const soundsystem_voicecontainers_CVoiceContainerRandomSampler  = {
-	...soundsystem_voicecontainers_CVoiceContainerBase,
+	...soundsystem_voicecontainers_CVoiceContainerAsyncGenerator,
 	m_flAmplitude: 184n, // float32 m_flAmplitude; |  0xb8 | Schema_Builtin | Size: 0x4
 	m_flAmplitudeJitter: 188n, // float32 m_flAmplitudeJitter; |  0xbc | Schema_Builtin | Size: 0x4
 	m_flTimeJitter: 192n, // float32 m_flTimeJitter; |  0xc0 | Schema_Builtin | Size: 0x4

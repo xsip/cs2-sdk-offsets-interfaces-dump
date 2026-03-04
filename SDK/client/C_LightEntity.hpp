@@ -26,9 +26,9 @@ namespace CS2 {
 	namespace client {
 		class C_LightEntity : public CS2::client::C_BaseModelEntity {
 		public:
-			client::CLightComponent* m_CLightComponent; // 0xeb0 | Schema_Ptr | Size: 0x8
+			client::CLightComponent* m_CLightComponent; // 0xe88 | Schema_Ptr | Size: 0x8
 		};
-		static_assert(offsetof(CS2::client::C_LightEntity, m_CLightComponent) == 0xEB0, "m_CLightComponent in C_LightEntity should be at offset 0xEB0");
-		static_assert(sizeof(CS2::client::C_LightEntity) == 0xEB8, "C_LightEntity size should be 0xEB8");
+		static_assert(offsetof(CS2::client::C_LightEntity, m_CLightComponent) == 0xE88, "m_CLightComponent in C_LightEntity should be at offset 0xE88");
+		static_assert(sizeof(CS2::client::C_LightEntity) == 0xE90, "C_LightEntity size should be 0xE90");
 	}
 }

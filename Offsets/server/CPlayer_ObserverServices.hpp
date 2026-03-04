@@ -8,12 +8,12 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x50
+			// Class size: 0x58
 			namespace CPlayer_ObserverServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_iObserverMode = 0x40; // uint8_t m_iObserverMode; |  0x40 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_hObserverTarget = 0x44; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
-				constexpr std::ptrdiff_t m_iObserverLastMode = 0x48; // client::ObserverMode_t  | Schema_DeclaredEnum | Size: 0x4
-				constexpr std::ptrdiff_t m_bForcedObserverMode = 0x4c; // bool m_bForcedObserverMode; |  0x4c | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_iObserverMode = 0x48; // uint8_t m_iObserverMode; |  0x48 | Schema_Builtin | Size: 0x1
+				constexpr std::ptrdiff_t m_hObserverTarget = 0x4c; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
+				constexpr std::ptrdiff_t m_iObserverLastMode = 0x50; // client::ObserverMode_t  | Schema_DeclaredEnum | Size: 0x4
+				constexpr std::ptrdiff_t m_bForcedObserverMode = 0x54; // bool m_bForcedObserverMode; |  0x54 | Schema_Builtin | Size: 0x1
 			}
 		}
 	}

@@ -11,5 +11,5 @@ class animgraphlib_CMotionGraphGroup {
     char m_motionGraphConfigs[0x18];
     char m_sampleToConfig[0x18];
     modellib_AnimScriptHandle m_hIsActiveScript;
-    char end_pad_176[0x4];
+    char end_pad_177[0x4];
 };

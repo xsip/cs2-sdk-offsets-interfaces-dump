@@ -22,6 +22,6 @@ namespace CS2 {
 		class CPlayer_FlashlightServices : public CS2::client::CPlayerPawnComponent {
 		public:
 		};
-		static_assert(sizeof(CS2::client::CPlayer_FlashlightServices) == 0x40, "CPlayer_FlashlightServices size should be 0x40");
+		static_assert(sizeof(CS2::client::CPlayer_FlashlightServices) == 0x48, "CPlayer_FlashlightServices size should be 0x48");
 	}
 }

@@ -4,6 +4,7 @@
 
 #include "animgraphlib_CAnimInputDamping.hpp"
 #include "animgraphlib_CAnimParamHandle.hpp"
+#include "animgraphlib_CAnimParamHandle.hpp"
 
 class animgraphlib_CDampedValueUpdateItem {
     animgraphlib_CAnimInputDamping m_damping;
