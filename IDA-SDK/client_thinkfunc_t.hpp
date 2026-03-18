@@ -11,5 +11,5 @@ class client_thinkfunc_t {
     CUtlStringToken m_nContext;
     entity2_GameTick_t m_nNextThinkTick;
     entity2_GameTick_t m_nLastThinkTick;
-    char end_pad_2494[0x4];
+    char end_pad_2493[0x4];
 };

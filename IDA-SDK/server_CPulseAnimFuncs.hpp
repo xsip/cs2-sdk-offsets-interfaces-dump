@@ -4,5 +4,5 @@
 
 
 class server_CPulseAnimFuncs {
-    char pad_4086[0x8];
+    char pad_4085[0x8];
 };

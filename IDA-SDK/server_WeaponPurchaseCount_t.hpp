@@ -12,5 +12,5 @@ class server_WeaponPurchaseCount_t {
     void **__vftable_5;
     uint16_t m_nItemDefIndex;
     uint16_t m_nCount;
-    char end_pad_2996[0x4];
+    char end_pad_2995[0x4];
 };

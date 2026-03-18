@@ -5,7 +5,7 @@
 
 class physicslib_FeSimdAnimStrayRadius_t {
     uint16_t nNode[4];
-    char pad_1340[0x10];
+    char pad_1339[0x10];
     fltx4 flMaxDist;
     fltx4 flRelaxationFactor;
 };

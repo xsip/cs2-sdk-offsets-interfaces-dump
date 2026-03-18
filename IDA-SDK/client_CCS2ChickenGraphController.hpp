@@ -9,7 +9,7 @@ class client_CCS2ChickenGraphController {
     void **__vftable_1;
     void **__vftable_2;
     client_ExternalAnimGraphHandle_t m_hExternalGraph;
-    char pad_1400[0x74];
+    char pad_1399[0x74];
     char m_action[0x18];
     char m_actionSubtype[0x18];
     CAnimGraph2ParamAutoResetOptionalRef m_bActionReset;
@@ -20,5 +20,5 @@ class client_CCS2ChickenGraphController {
     char m_bInWater[0x18];
     bool m_bHasActionCompletedEvent;
     bool m_bWaitingForCompletedEvent;
-    char end_pad_1581[0x6];
+    char end_pad_1580[0x6];
 };

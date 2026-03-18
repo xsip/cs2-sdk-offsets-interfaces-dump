@@ -57,169 +57,170 @@ namespace CS2 {
 			server::CountdownTimer m_alertTimer; // 0x1d0 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_sneakTimer; // 0x1e8 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_panicTimer; // 0x200 | Schema_DeclaredClass | Size: 0x18
-			S2_PAD(0x380);
-			float32 m_stateTimestamp; // 0x598 | Schema_Builtin | Size: 0x4
-			bool m_isAttacking; // 0x59c | Schema_Builtin | Size: 0x1
-			bool m_isOpeningDoor; // 0x59d | Schema_Builtin | Size: 0x1
+			S2_PAD(0x390);
+			float32 m_stateTimestamp; // 0x5a8 | Schema_Builtin | Size: 0x4
+			bool m_isAttacking; // 0x5ac | Schema_Builtin | Size: 0x1
+			bool m_isOpeningDoor; // 0x5ad | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			GlobalTypes::CHandle<server::CBaseEntity> m_taskEntity; // 0x5a4 | Schema_Atomic | Size: 0x4
-			// char m_taskEntity[0x4]; // 0x5a4 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_taskEntity; // 0x5b4 | Schema_Atomic | Size: 0x4
+			// char m_taskEntity[0x4]; // 0x5b4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc);
-			GlobalTypes::VectorWS m_goalPosition; // 0x5b4 | Schema_Atomic | Size: 0xc
-			GlobalTypes::CHandle<server::CBaseEntity> m_goalEntity; // 0x5c0 | Schema_Atomic | Size: 0x4
-			// char m_goalEntity[0x4]; // 0x5c0 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CBaseEntity> m_avoid; // 0x5c4 | Schema_Atomic | Size: 0x4
-			// char m_avoid[0x4]; // 0x5c4 | Schema_Atomic | Size: 0x4
-			float32 m_avoidTimestamp; // 0x5c8 | Schema_Builtin | Size: 0x4
-			bool m_isStopping; // 0x5cc | Schema_Builtin | Size: 0x1
-			bool m_hasVisitedEnemySpawn; // 0x5cd | Schema_Builtin | Size: 0x1
+			GlobalTypes::VectorWS m_goalPosition; // 0x5c4 | Schema_Atomic | Size: 0xc
+			GlobalTypes::CHandle<server::CBaseEntity> m_goalEntity; // 0x5d0 | Schema_Atomic | Size: 0x4
+			// char m_goalEntity[0x4]; // 0x5d0 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CBaseEntity> m_avoid; // 0x5d4 | Schema_Atomic | Size: 0x4
+			// char m_avoid[0x4]; // 0x5d4 | Schema_Atomic | Size: 0x4
+			float32 m_avoidTimestamp; // 0x5d8 | Schema_Builtin | Size: 0x4
+			bool m_isStopping; // 0x5dc | Schema_Builtin | Size: 0x1
+			bool m_hasVisitedEnemySpawn; // 0x5dd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			server::IntervalTimer m_stillTimer; // 0x5d0 | Schema_DeclaredClass | Size: 0x10
-			bool m_bEyeAnglesUnderPathFinderControl; // 0x5e0 | Schema_Builtin | Size: 0x1
+			server::IntervalTimer m_stillTimer; // 0x5e0 | Schema_DeclaredClass | Size: 0x10
+			bool m_bEyeAnglesUnderPathFinderControl; // 0x5f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x58ff);
-			int32_t m_pathIndex; // 0x5ee0 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_areaEnteredTimestamp; // 0x5ee4 | Schema_DeclaredClass | Size: 0x4
-			server::CountdownTimer m_repathTimer; // 0x5ee8 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_avoidFriendTimer; // 0x5f00 | Schema_DeclaredClass | Size: 0x18
-			bool m_isFriendInTheWay; // 0x5f18 | Schema_Builtin | Size: 0x1
+			int32_t m_pathIndex; // 0x5ef0 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_areaEnteredTimestamp; // 0x5ef4 | Schema_DeclaredClass | Size: 0x4
+			server::CountdownTimer m_repathTimer; // 0x5ef8 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_avoidFriendTimer; // 0x5f10 | Schema_DeclaredClass | Size: 0x18
+			bool m_isFriendInTheWay; // 0x5f28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			server::CountdownTimer m_politeTimer; // 0x5f20 | Schema_DeclaredClass | Size: 0x18
-			bool m_isWaitingBehindFriend; // 0x5f38 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_politeTimer; // 0x5f30 | Schema_DeclaredClass | Size: 0x18
+			bool m_isWaitingBehindFriend; // 0x5f48 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2b);
-			float32 m_pathLadderEnd; // 0x5f64 | Schema_Builtin | Size: 0x4
+			float32 m_pathLadderEnd; // 0x5f74 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x48);
-			server::CountdownTimer m_mustRunTimer; // 0x5fb0 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_waitTimer; // 0x5fc8 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_updateTravelDistanceTimer; // 0x5fe0 | Schema_DeclaredClass | Size: 0x18
-			float32 m_playerTravelDistance[64]; // 0x5ff8 | Schema_FixedArray | Size: 0x100
-			uint8_t m_travelDistancePhase; // 0x60f8 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_mustRunTimer; // 0x5fc0 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_waitTimer; // 0x5fd8 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_updateTravelDistanceTimer; // 0x5ff0 | Schema_DeclaredClass | Size: 0x18
+			float32 m_playerTravelDistance[64]; // 0x6008 | Schema_FixedArray | Size: 0x100
+			uint8_t m_travelDistancePhase; // 0x6108 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x197);
-			uint8_t m_hostageEscortCount; // 0x6290 | Schema_Builtin | Size: 0x1
+			uint8_t m_hostageEscortCount; // 0x62a0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_hostageEscortCountTimestamp; // 0x6294 | Schema_Builtin | Size: 0x4
-			int32_t m_desiredTeam; // 0x6298 | Schema_Builtin | Size: 0x4
-			bool m_hasJoined; // 0x629c | Schema_Builtin | Size: 0x1
-			bool m_isWaitingForHostage; // 0x629d | Schema_Builtin | Size: 0x1
+			float32 m_hostageEscortCountTimestamp; // 0x62a4 | Schema_Builtin | Size: 0x4
+			int32_t m_desiredTeam; // 0x62a8 | Schema_Builtin | Size: 0x4
+			bool m_hasJoined; // 0x62ac | Schema_Builtin | Size: 0x1
+			bool m_isWaitingForHostage; // 0x62ad | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			server::CountdownTimer m_inhibitWaitingForHostageTimer; // 0x62a0 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_waitForHostageTimer; // 0x62b8 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::Vector m_noisePosition; // 0x62d0 | Schema_Atomic | Size: 0xc
-			float32 m_noiseTravelDistance; // 0x62dc | Schema_Builtin | Size: 0x4
-			float32 m_noiseTimestamp; // 0x62e0 | Schema_Builtin | Size: 0x4
+			server::CountdownTimer m_inhibitWaitingForHostageTimer; // 0x62b0 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_waitForHostageTimer; // 0x62c8 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::Vector m_noisePosition; // 0x62e0 | Schema_Atomic | Size: 0xc
+			float32 m_noiseTravelDistance; // 0x62ec | Schema_Builtin | Size: 0x4
+			float32 m_noiseTimestamp; // 0x62f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::CCSPlayerPawn* m_noiseSource; // 0x62e8 | Schema_Ptr | Size: 0x8
+			server::CCSPlayerPawn* m_noiseSource; // 0x62f8 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x10);
-			server::CountdownTimer m_noiseBendTimer; // 0x6300 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::Vector m_bentNoisePosition; // 0x6318 | Schema_Atomic | Size: 0xc
-			bool m_bendNoisePositionValid; // 0x6324 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_noiseBendTimer; // 0x6310 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::Vector m_bentNoisePosition; // 0x6328 | Schema_Atomic | Size: 0xc
+			bool m_bendNoisePositionValid; // 0x6334 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			float32 m_lookAroundStateTimestamp; // 0x6328 | Schema_Builtin | Size: 0x4
-			float32 m_lookAheadAngle; // 0x632c | Schema_Builtin | Size: 0x4
-			float32 m_forwardAngle; // 0x6330 | Schema_Builtin | Size: 0x4
-			float32 m_inhibitLookAroundTimestamp; // 0x6334 | Schema_Builtin | Size: 0x4
+			float32 m_lookAroundStateTimestamp; // 0x6338 | Schema_Builtin | Size: 0x4
+			float32 m_lookAheadAngle; // 0x633c | Schema_Builtin | Size: 0x4
+			float32 m_lookUpAngle; // 0x6340 | Schema_Builtin | Size: 0x4
+			float32 m_forwardAngle; // 0x6344 | Schema_Builtin | Size: 0x4
+			float32 m_inhibitLookAroundTimestamp; // 0x6348 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::Vector m_lookAtSpot; // 0x633c | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_lookAtSpot; // 0x6350 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			float32 m_lookAtSpotDuration; // 0x634c | Schema_Builtin | Size: 0x4
-			float32 m_lookAtSpotTimestamp; // 0x6350 | Schema_Builtin | Size: 0x4
-			float32 m_lookAtSpotAngleTolerance; // 0x6354 | Schema_Builtin | Size: 0x4
-			bool m_lookAtSpotClearIfClose; // 0x6358 | Schema_Builtin | Size: 0x1
-			bool m_lookAtSpotAttack; // 0x6359 | Schema_Builtin | Size: 0x1
-			S2_PAD(0x6);
-			char* m_lookAtDesc; // 0x6360 | Schema_Ptr | Size: 0x8
-			float32 m_peripheralTimestamp; // 0x6368 | Schema_Builtin | Size: 0x4
+			float32 m_lookAtSpotDuration; // 0x6360 | Schema_Builtin | Size: 0x4
+			float32 m_lookAtSpotTimestamp; // 0x6364 | Schema_Builtin | Size: 0x4
+			float32 m_lookAtSpotAngleTolerance; // 0x6368 | Schema_Builtin | Size: 0x4
+			bool m_lookAtSpotClearIfClose; // 0x636c | Schema_Builtin | Size: 0x1
+			bool m_lookAtSpotAttack; // 0x636d | Schema_Builtin | Size: 0x1
+			S2_PAD(0x2);
+			char* m_lookAtDesc; // 0x6370 | Schema_Ptr | Size: 0x8
+			float32 m_peripheralTimestamp; // 0x6378 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x184);
-			uint8_t m_approachPointCount; // 0x64f0 | Schema_Builtin | Size: 0x1
+			uint8_t m_approachPointCount; // 0x6500 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::Vector m_approachPointViewPosition; // 0x64f4 | Schema_Atomic | Size: 0xc
-			server::IntervalTimer m_viewSteadyTimer; // 0x6500 | Schema_DeclaredClass | Size: 0x10
+			GlobalTypes::Vector m_approachPointViewPosition; // 0x6504 | Schema_Atomic | Size: 0xc
+			server::IntervalTimer m_viewSteadyTimer; // 0x6510 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0x8);
-			server::CountdownTimer m_tossGrenadeTimer; // 0x6518 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_tossGrenadeTimer; // 0x6528 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8);
-			server::CountdownTimer m_isAvoidingGrenade; // 0x6538 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_isAvoidingGrenade; // 0x6548 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8);
-			float32 m_spotCheckTimestamp; // 0x6558 | Schema_Builtin | Size: 0x4
+			float32 m_spotCheckTimestamp; // 0x6568 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x404);
-			int32_t m_checkedHidingSpotCount; // 0x6960 | Schema_Builtin | Size: 0x4
-			float32 m_lookPitch; // 0x6964 | Schema_Builtin | Size: 0x4
-			float32 m_lookPitchVel; // 0x6968 | Schema_Builtin | Size: 0x4
-			float32 m_lookYaw; // 0x696c | Schema_Builtin | Size: 0x4
-			float32 m_lookYawVel; // 0x6970 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_targetSpot; // 0x6974 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_targetSpotVelocity; // 0x6980 | Schema_Atomic | Size: 0xc
-			GlobalTypes::Vector m_targetSpotPredicted; // 0x698c | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_aimError; // 0x6998 | Schema_Atomic | Size: 0xc
-			GlobalTypes::QAngle m_aimGoal; // 0x69a4 | Schema_Atomic | Size: 0xc
-			entity2::GameTime_t m_targetSpotTime; // 0x69b0 | Schema_DeclaredClass | Size: 0x4
-			float32 m_aimFocus; // 0x69b4 | Schema_Builtin | Size: 0x4
-			float32 m_aimFocusInterval; // 0x69b8 | Schema_Builtin | Size: 0x4
-			entity2::GameTime_t m_aimFocusNextUpdate; // 0x69bc | Schema_DeclaredClass | Size: 0x4
+			int32_t m_checkedHidingSpotCount; // 0x6970 | Schema_Builtin | Size: 0x4
+			float32 m_lookPitch; // 0x6974 | Schema_Builtin | Size: 0x4
+			float32 m_lookPitchVel; // 0x6978 | Schema_Builtin | Size: 0x4
+			float32 m_lookYaw; // 0x697c | Schema_Builtin | Size: 0x4
+			float32 m_lookYawVel; // 0x6980 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_targetSpot; // 0x6984 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_targetSpotVelocity; // 0x6990 | Schema_Atomic | Size: 0xc
+			GlobalTypes::Vector m_targetSpotPredicted; // 0x699c | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_aimError; // 0x69a8 | Schema_Atomic | Size: 0xc
+			GlobalTypes::QAngle m_aimGoal; // 0x69b4 | Schema_Atomic | Size: 0xc
+			entity2::GameTime_t m_targetSpotTime; // 0x69c0 | Schema_DeclaredClass | Size: 0x4
+			float32 m_aimFocus; // 0x69c4 | Schema_Builtin | Size: 0x4
+			float32 m_aimFocusInterval; // 0x69c8 | Schema_Builtin | Size: 0x4
+			entity2::GameTime_t m_aimFocusNextUpdate; // 0x69cc | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x8);
-			server::CountdownTimer m_ignoreEnemiesTimer; // 0x69c8 | Schema_DeclaredClass | Size: 0x18
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_enemy; // 0x69e0 | Schema_Atomic | Size: 0x4
-			// char m_enemy[0x4]; // 0x69e0 | Schema_Atomic | Size: 0x4
-			bool m_isEnemyVisible; // 0x69e4 | Schema_Builtin | Size: 0x1
-			uint8_t m_visibleEnemyParts; // 0x69e5 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_ignoreEnemiesTimer; // 0x69d8 | Schema_DeclaredClass | Size: 0x18
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_enemy; // 0x69f0 | Schema_Atomic | Size: 0x4
+			// char m_enemy[0x4]; // 0x69f0 | Schema_Atomic | Size: 0x4
+			bool m_isEnemyVisible; // 0x69f4 | Schema_Builtin | Size: 0x1
+			uint8_t m_visibleEnemyParts; // 0x69f5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			GlobalTypes::Vector m_lastEnemyPosition; // 0x69e8 | Schema_Atomic | Size: 0xc
-			float32 m_lastSawEnemyTimestamp; // 0x69f4 | Schema_Builtin | Size: 0x4
-			float32 m_firstSawEnemyTimestamp; // 0x69f8 | Schema_Builtin | Size: 0x4
-			float32 m_currentEnemyAcquireTimestamp; // 0x69fc | Schema_Builtin | Size: 0x4
-			float32 m_enemyDeathTimestamp; // 0x6a00 | Schema_Builtin | Size: 0x4
-			float32 m_friendDeathTimestamp; // 0x6a04 | Schema_Builtin | Size: 0x4
-			bool m_isLastEnemyDead; // 0x6a08 | Schema_Builtin | Size: 0x1
+			GlobalTypes::Vector m_lastEnemyPosition; // 0x69f8 | Schema_Atomic | Size: 0xc
+			float32 m_lastSawEnemyTimestamp; // 0x6a04 | Schema_Builtin | Size: 0x4
+			float32 m_firstSawEnemyTimestamp; // 0x6a08 | Schema_Builtin | Size: 0x4
+			float32 m_currentEnemyAcquireTimestamp; // 0x6a0c | Schema_Builtin | Size: 0x4
+			float32 m_enemyDeathTimestamp; // 0x6a10 | Schema_Builtin | Size: 0x4
+			float32 m_friendDeathTimestamp; // 0x6a14 | Schema_Builtin | Size: 0x4
+			bool m_isLastEnemyDead; // 0x6a18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			int32_t m_nearbyEnemyCount; // 0x6a0c | Schema_Builtin | Size: 0x4
+			int32_t m_nearbyEnemyCount; // 0x6a1c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x208);
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_bomber; // 0x6c18 | Schema_Atomic | Size: 0x4
-			// char m_bomber[0x4]; // 0x6c18 | Schema_Atomic | Size: 0x4
-			int32_t m_nearbyFriendCount; // 0x6c1c | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_closestVisibleFriend; // 0x6c20 | Schema_Atomic | Size: 0x4
-			// char m_closestVisibleFriend[0x4]; // 0x6c20 | Schema_Atomic | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_closestVisibleHumanFriend; // 0x6c24 | Schema_Atomic | Size: 0x4
-			// char m_closestVisibleHumanFriend[0x4]; // 0x6c24 | Schema_Atomic | Size: 0x4
-			server::IntervalTimer m_attentionInterval; // 0x6c28 | Schema_DeclaredClass | Size: 0x10
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_attacker; // 0x6c38 | Schema_Atomic | Size: 0x4
-			// char m_attacker[0x4]; // 0x6c38 | Schema_Atomic | Size: 0x4
-			float32 m_attackedTimestamp; // 0x6c3c | Schema_Builtin | Size: 0x4
-			server::IntervalTimer m_burnedByFlamesTimer; // 0x6c40 | Schema_DeclaredClass | Size: 0x10
-			int32_t m_lastVictimID; // 0x6c50 | Schema_Builtin | Size: 0x4
-			bool m_isAimingAtEnemy; // 0x6c54 | Schema_Builtin | Size: 0x1
-			bool m_isRapidFiring; // 0x6c55 | Schema_Builtin | Size: 0x1
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_bomber; // 0x6c28 | Schema_Atomic | Size: 0x4
+			// char m_bomber[0x4]; // 0x6c28 | Schema_Atomic | Size: 0x4
+			int32_t m_nearbyFriendCount; // 0x6c2c | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_closestVisibleFriend; // 0x6c30 | Schema_Atomic | Size: 0x4
+			// char m_closestVisibleFriend[0x4]; // 0x6c30 | Schema_Atomic | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_closestVisibleHumanFriend; // 0x6c34 | Schema_Atomic | Size: 0x4
+			// char m_closestVisibleHumanFriend[0x4]; // 0x6c34 | Schema_Atomic | Size: 0x4
+			server::IntervalTimer m_attentionInterval; // 0x6c38 | Schema_DeclaredClass | Size: 0x10
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_attacker; // 0x6c48 | Schema_Atomic | Size: 0x4
+			// char m_attacker[0x4]; // 0x6c48 | Schema_Atomic | Size: 0x4
+			float32 m_attackedTimestamp; // 0x6c4c | Schema_Builtin | Size: 0x4
+			server::IntervalTimer m_burnedByFlamesTimer; // 0x6c50 | Schema_DeclaredClass | Size: 0x10
+			int32_t m_lastVictimID; // 0x6c60 | Schema_Builtin | Size: 0x4
+			bool m_isAimingAtEnemy; // 0x6c64 | Schema_Builtin | Size: 0x1
+			bool m_isRapidFiring; // 0x6c65 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			server::IntervalTimer m_equipTimer; // 0x6c58 | Schema_DeclaredClass | Size: 0x10
-			server::CountdownTimer m_zoomTimer; // 0x6c68 | Schema_DeclaredClass | Size: 0x18
-			entity2::GameTime_t m_fireWeaponTimestamp; // 0x6c80 | Schema_DeclaredClass | Size: 0x4
+			server::IntervalTimer m_equipTimer; // 0x6c68 | Schema_DeclaredClass | Size: 0x10
+			server::CountdownTimer m_zoomTimer; // 0x6c78 | Schema_DeclaredClass | Size: 0x18
+			entity2::GameTime_t m_fireWeaponTimestamp; // 0x6c90 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4);
-			server::CountdownTimer m_lookForWeaponsOnGroundTimer; // 0x6c88 | Schema_DeclaredClass | Size: 0x18
-			bool m_bIsSleeping; // 0x6ca0 | Schema_Builtin | Size: 0x1
-			bool m_isEnemySniperVisible; // 0x6ca1 | Schema_Builtin | Size: 0x1
+			server::CountdownTimer m_lookForWeaponsOnGroundTimer; // 0x6c98 | Schema_DeclaredClass | Size: 0x18
+			bool m_bIsSleeping; // 0x6cb0 | Schema_Builtin | Size: 0x1
+			bool m_isEnemySniperVisible; // 0x6cb1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			server::CountdownTimer m_sawEnemySniperTimer; // 0x6ca8 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_sawEnemySniperTimer; // 0x6cb8 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0xa0);
-			uint8_t m_enemyQueueIndex; // 0x6d60 | Schema_Builtin | Size: 0x1
-			uint8_t m_enemyQueueCount; // 0x6d61 | Schema_Builtin | Size: 0x1
-			uint8_t m_enemyQueueAttendIndex; // 0x6d62 | Schema_Builtin | Size: 0x1
-			bool m_isStuck; // 0x6d63 | Schema_Builtin | Size: 0x1
-			entity2::GameTime_t m_stuckTimestamp; // 0x6d64 | Schema_DeclaredClass | Size: 0x4
-			GlobalTypes::Vector m_stuckSpot; // 0x6d68 | Schema_Atomic | Size: 0xc
+			uint8_t m_enemyQueueIndex; // 0x6d70 | Schema_Builtin | Size: 0x1
+			uint8_t m_enemyQueueCount; // 0x6d71 | Schema_Builtin | Size: 0x1
+			uint8_t m_enemyQueueAttendIndex; // 0x6d72 | Schema_Builtin | Size: 0x1
+			bool m_isStuck; // 0x6d73 | Schema_Builtin | Size: 0x1
+			entity2::GameTime_t m_stuckTimestamp; // 0x6d74 | Schema_DeclaredClass | Size: 0x4
+			GlobalTypes::Vector m_stuckSpot; // 0x6d78 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			server::CountdownTimer m_wiggleTimer; // 0x6d78 | Schema_DeclaredClass | Size: 0x18
-			server::CountdownTimer m_stuckJumpTimer; // 0x6d90 | Schema_DeclaredClass | Size: 0x18
-			entity2::GameTime_t m_nextCleanupCheckTimestamp; // 0x6da8 | Schema_DeclaredClass | Size: 0x4
-			float32 m_avgVel[10]; // 0x6dac | Schema_FixedArray | Size: 0x28
-			int32_t m_avgVelIndex; // 0x6dd4 | Schema_Builtin | Size: 0x4
-			int32_t m_avgVelCount; // 0x6dd8 | Schema_Builtin | Size: 0x4
-			GlobalTypes::Vector m_lastOrigin; // 0x6ddc | Schema_Atomic | Size: 0xc
+			server::CountdownTimer m_wiggleTimer; // 0x6d88 | Schema_DeclaredClass | Size: 0x18
+			server::CountdownTimer m_stuckJumpTimer; // 0x6da0 | Schema_DeclaredClass | Size: 0x18
+			entity2::GameTime_t m_nextCleanupCheckTimestamp; // 0x6db8 | Schema_DeclaredClass | Size: 0x4
+			float32 m_avgVel[10]; // 0x6dbc | Schema_FixedArray | Size: 0x28
+			int32_t m_avgVelIndex; // 0x6de4 | Schema_Builtin | Size: 0x4
+			int32_t m_avgVelCount; // 0x6de8 | Schema_Builtin | Size: 0x4
+			GlobalTypes::Vector m_lastOrigin; // 0x6dec | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			float32 m_lastRadioRecievedTimestamp; // 0x6dec | Schema_Builtin | Size: 0x4
-			float32 m_lastRadioSentTimestamp; // 0x6df0 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CHandle<server::CCSPlayerPawn> m_radioSubject; // 0x6df4 | Schema_Atomic | Size: 0x4
-			// char m_radioSubject[0x4]; // 0x6df4 | Schema_Atomic | Size: 0x4
-			GlobalTypes::Vector m_radioPosition; // 0x6df8 | Schema_Atomic | Size: 0xc
-			float32 m_voiceEndTimestamp; // 0x6e04 | Schema_Builtin | Size: 0x4
+			float32 m_lastRadioRecievedTimestamp; // 0x6dfc | Schema_Builtin | Size: 0x4
+			float32 m_lastRadioSentTimestamp; // 0x6e00 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CHandle<server::CCSPlayerPawn> m_radioSubject; // 0x6e04 | Schema_Atomic | Size: 0x4
+			// char m_radioSubject[0x4]; // 0x6e04 | Schema_Atomic | Size: 0x4
+			GlobalTypes::Vector m_radioPosition; // 0x6e08 | Schema_Atomic | Size: 0xc
+			float32 m_voiceEndTimestamp; // 0x6e14 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8);
-			int32_t m_lastValidReactionQueueFrame; // 0x6e10 | Schema_Builtin | Size: 0x4
+			int32_t m_lastValidReactionQueueFrame; // 0x6e20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSBot, m_eyePosition) == 0x108, "m_eyePosition in CCSBot should be at offset 0x108");
@@ -241,126 +242,127 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSBot, m_alertTimer) == 0x1D0, "m_alertTimer in CCSBot should be at offset 0x1D0");
 		static_assert(offsetof(CS2::server::CCSBot, m_sneakTimer) == 0x1E8, "m_sneakTimer in CCSBot should be at offset 0x1E8");
 		static_assert(offsetof(CS2::server::CCSBot, m_panicTimer) == 0x200, "m_panicTimer in CCSBot should be at offset 0x200");
-		static_assert(offsetof(CS2::server::CCSBot, m_stateTimestamp) == 0x598, "m_stateTimestamp in CCSBot should be at offset 0x598");
-		static_assert(offsetof(CS2::server::CCSBot, m_isAttacking) == 0x59C, "m_isAttacking in CCSBot should be at offset 0x59C");
-		static_assert(offsetof(CS2::server::CCSBot, m_isOpeningDoor) == 0x59D, "m_isOpeningDoor in CCSBot should be at offset 0x59D");
-		static_assert(offsetof(CS2::server::CCSBot, m_taskEntity) == 0x5A4, "m_taskEntity in CCSBot should be at offset 0x5A4");
-		static_assert(offsetof(CS2::server::CCSBot, m_goalPosition) == 0x5B4, "m_goalPosition in CCSBot should be at offset 0x5B4");
-		static_assert(offsetof(CS2::server::CCSBot, m_goalEntity) == 0x5C0, "m_goalEntity in CCSBot should be at offset 0x5C0");
-		static_assert(offsetof(CS2::server::CCSBot, m_avoid) == 0x5C4, "m_avoid in CCSBot should be at offset 0x5C4");
-		static_assert(offsetof(CS2::server::CCSBot, m_avoidTimestamp) == 0x5C8, "m_avoidTimestamp in CCSBot should be at offset 0x5C8");
-		static_assert(offsetof(CS2::server::CCSBot, m_isStopping) == 0x5CC, "m_isStopping in CCSBot should be at offset 0x5CC");
-		static_assert(offsetof(CS2::server::CCSBot, m_hasVisitedEnemySpawn) == 0x5CD, "m_hasVisitedEnemySpawn in CCSBot should be at offset 0x5CD");
-		static_assert(offsetof(CS2::server::CCSBot, m_stillTimer) == 0x5D0, "m_stillTimer in CCSBot should be at offset 0x5D0");
-		static_assert(offsetof(CS2::server::CCSBot, m_bEyeAnglesUnderPathFinderControl) == 0x5E0, "m_bEyeAnglesUnderPathFinderControl in CCSBot should be at offset 0x5E0");
-		static_assert(offsetof(CS2::server::CCSBot, m_pathIndex) == 0x5EE0, "m_pathIndex in CCSBot should be at offset 0x5EE0");
-		static_assert(offsetof(CS2::server::CCSBot, m_areaEnteredTimestamp) == 0x5EE4, "m_areaEnteredTimestamp in CCSBot should be at offset 0x5EE4");
-		static_assert(offsetof(CS2::server::CCSBot, m_repathTimer) == 0x5EE8, "m_repathTimer in CCSBot should be at offset 0x5EE8");
-		static_assert(offsetof(CS2::server::CCSBot, m_avoidFriendTimer) == 0x5F00, "m_avoidFriendTimer in CCSBot should be at offset 0x5F00");
-		static_assert(offsetof(CS2::server::CCSBot, m_isFriendInTheWay) == 0x5F18, "m_isFriendInTheWay in CCSBot should be at offset 0x5F18");
-		static_assert(offsetof(CS2::server::CCSBot, m_politeTimer) == 0x5F20, "m_politeTimer in CCSBot should be at offset 0x5F20");
-		static_assert(offsetof(CS2::server::CCSBot, m_isWaitingBehindFriend) == 0x5F38, "m_isWaitingBehindFriend in CCSBot should be at offset 0x5F38");
-		static_assert(offsetof(CS2::server::CCSBot, m_pathLadderEnd) == 0x5F64, "m_pathLadderEnd in CCSBot should be at offset 0x5F64");
-		static_assert(offsetof(CS2::server::CCSBot, m_mustRunTimer) == 0x5FB0, "m_mustRunTimer in CCSBot should be at offset 0x5FB0");
-		static_assert(offsetof(CS2::server::CCSBot, m_waitTimer) == 0x5FC8, "m_waitTimer in CCSBot should be at offset 0x5FC8");
-		static_assert(offsetof(CS2::server::CCSBot, m_updateTravelDistanceTimer) == 0x5FE0, "m_updateTravelDistanceTimer in CCSBot should be at offset 0x5FE0");
-		static_assert(offsetof(CS2::server::CCSBot, m_playerTravelDistance) == 0x5FF8, "m_playerTravelDistance in CCSBot should be at offset 0x5FF8");
-		static_assert(offsetof(CS2::server::CCSBot, m_travelDistancePhase) == 0x60F8, "m_travelDistancePhase in CCSBot should be at offset 0x60F8");
-		static_assert(offsetof(CS2::server::CCSBot, m_hostageEscortCount) == 0x6290, "m_hostageEscortCount in CCSBot should be at offset 0x6290");
-		static_assert(offsetof(CS2::server::CCSBot, m_hostageEscortCountTimestamp) == 0x6294, "m_hostageEscortCountTimestamp in CCSBot should be at offset 0x6294");
-		static_assert(offsetof(CS2::server::CCSBot, m_desiredTeam) == 0x6298, "m_desiredTeam in CCSBot should be at offset 0x6298");
-		static_assert(offsetof(CS2::server::CCSBot, m_hasJoined) == 0x629C, "m_hasJoined in CCSBot should be at offset 0x629C");
-		static_assert(offsetof(CS2::server::CCSBot, m_isWaitingForHostage) == 0x629D, "m_isWaitingForHostage in CCSBot should be at offset 0x629D");
-		static_assert(offsetof(CS2::server::CCSBot, m_inhibitWaitingForHostageTimer) == 0x62A0, "m_inhibitWaitingForHostageTimer in CCSBot should be at offset 0x62A0");
-		static_assert(offsetof(CS2::server::CCSBot, m_waitForHostageTimer) == 0x62B8, "m_waitForHostageTimer in CCSBot should be at offset 0x62B8");
-		static_assert(offsetof(CS2::server::CCSBot, m_noisePosition) == 0x62D0, "m_noisePosition in CCSBot should be at offset 0x62D0");
-		static_assert(offsetof(CS2::server::CCSBot, m_noiseTravelDistance) == 0x62DC, "m_noiseTravelDistance in CCSBot should be at offset 0x62DC");
-		static_assert(offsetof(CS2::server::CCSBot, m_noiseTimestamp) == 0x62E0, "m_noiseTimestamp in CCSBot should be at offset 0x62E0");
-		static_assert(offsetof(CS2::server::CCSBot, m_noiseSource) == 0x62E8, "m_noiseSource in CCSBot should be at offset 0x62E8");
-		static_assert(offsetof(CS2::server::CCSBot, m_noiseBendTimer) == 0x6300, "m_noiseBendTimer in CCSBot should be at offset 0x6300");
-		static_assert(offsetof(CS2::server::CCSBot, m_bentNoisePosition) == 0x6318, "m_bentNoisePosition in CCSBot should be at offset 0x6318");
-		static_assert(offsetof(CS2::server::CCSBot, m_bendNoisePositionValid) == 0x6324, "m_bendNoisePositionValid in CCSBot should be at offset 0x6324");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAroundStateTimestamp) == 0x6328, "m_lookAroundStateTimestamp in CCSBot should be at offset 0x6328");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAheadAngle) == 0x632C, "m_lookAheadAngle in CCSBot should be at offset 0x632C");
-		static_assert(offsetof(CS2::server::CCSBot, m_forwardAngle) == 0x6330, "m_forwardAngle in CCSBot should be at offset 0x6330");
-		static_assert(offsetof(CS2::server::CCSBot, m_inhibitLookAroundTimestamp) == 0x6334, "m_inhibitLookAroundTimestamp in CCSBot should be at offset 0x6334");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpot) == 0x633C, "m_lookAtSpot in CCSBot should be at offset 0x633C");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotDuration) == 0x634C, "m_lookAtSpotDuration in CCSBot should be at offset 0x634C");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotTimestamp) == 0x6350, "m_lookAtSpotTimestamp in CCSBot should be at offset 0x6350");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotAngleTolerance) == 0x6354, "m_lookAtSpotAngleTolerance in CCSBot should be at offset 0x6354");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotClearIfClose) == 0x6358, "m_lookAtSpotClearIfClose in CCSBot should be at offset 0x6358");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotAttack) == 0x6359, "m_lookAtSpotAttack in CCSBot should be at offset 0x6359");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookAtDesc) == 0x6360, "m_lookAtDesc in CCSBot should be at offset 0x6360");
-		static_assert(offsetof(CS2::server::CCSBot, m_peripheralTimestamp) == 0x6368, "m_peripheralTimestamp in CCSBot should be at offset 0x6368");
-		static_assert(offsetof(CS2::server::CCSBot, m_approachPointCount) == 0x64F0, "m_approachPointCount in CCSBot should be at offset 0x64F0");
-		static_assert(offsetof(CS2::server::CCSBot, m_approachPointViewPosition) == 0x64F4, "m_approachPointViewPosition in CCSBot should be at offset 0x64F4");
-		static_assert(offsetof(CS2::server::CCSBot, m_viewSteadyTimer) == 0x6500, "m_viewSteadyTimer in CCSBot should be at offset 0x6500");
-		static_assert(offsetof(CS2::server::CCSBot, m_tossGrenadeTimer) == 0x6518, "m_tossGrenadeTimer in CCSBot should be at offset 0x6518");
-		static_assert(offsetof(CS2::server::CCSBot, m_isAvoidingGrenade) == 0x6538, "m_isAvoidingGrenade in CCSBot should be at offset 0x6538");
-		static_assert(offsetof(CS2::server::CCSBot, m_spotCheckTimestamp) == 0x6558, "m_spotCheckTimestamp in CCSBot should be at offset 0x6558");
-		static_assert(offsetof(CS2::server::CCSBot, m_checkedHidingSpotCount) == 0x6960, "m_checkedHidingSpotCount in CCSBot should be at offset 0x6960");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookPitch) == 0x6964, "m_lookPitch in CCSBot should be at offset 0x6964");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookPitchVel) == 0x6968, "m_lookPitchVel in CCSBot should be at offset 0x6968");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookYaw) == 0x696C, "m_lookYaw in CCSBot should be at offset 0x696C");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookYawVel) == 0x6970, "m_lookYawVel in CCSBot should be at offset 0x6970");
-		static_assert(offsetof(CS2::server::CCSBot, m_targetSpot) == 0x6974, "m_targetSpot in CCSBot should be at offset 0x6974");
-		static_assert(offsetof(CS2::server::CCSBot, m_targetSpotVelocity) == 0x6980, "m_targetSpotVelocity in CCSBot should be at offset 0x6980");
-		static_assert(offsetof(CS2::server::CCSBot, m_targetSpotPredicted) == 0x698C, "m_targetSpotPredicted in CCSBot should be at offset 0x698C");
-		static_assert(offsetof(CS2::server::CCSBot, m_aimError) == 0x6998, "m_aimError in CCSBot should be at offset 0x6998");
-		static_assert(offsetof(CS2::server::CCSBot, m_aimGoal) == 0x69A4, "m_aimGoal in CCSBot should be at offset 0x69A4");
-		static_assert(offsetof(CS2::server::CCSBot, m_targetSpotTime) == 0x69B0, "m_targetSpotTime in CCSBot should be at offset 0x69B0");
-		static_assert(offsetof(CS2::server::CCSBot, m_aimFocus) == 0x69B4, "m_aimFocus in CCSBot should be at offset 0x69B4");
-		static_assert(offsetof(CS2::server::CCSBot, m_aimFocusInterval) == 0x69B8, "m_aimFocusInterval in CCSBot should be at offset 0x69B8");
-		static_assert(offsetof(CS2::server::CCSBot, m_aimFocusNextUpdate) == 0x69BC, "m_aimFocusNextUpdate in CCSBot should be at offset 0x69BC");
-		static_assert(offsetof(CS2::server::CCSBot, m_ignoreEnemiesTimer) == 0x69C8, "m_ignoreEnemiesTimer in CCSBot should be at offset 0x69C8");
-		static_assert(offsetof(CS2::server::CCSBot, m_enemy) == 0x69E0, "m_enemy in CCSBot should be at offset 0x69E0");
-		static_assert(offsetof(CS2::server::CCSBot, m_isEnemyVisible) == 0x69E4, "m_isEnemyVisible in CCSBot should be at offset 0x69E4");
-		static_assert(offsetof(CS2::server::CCSBot, m_visibleEnemyParts) == 0x69E5, "m_visibleEnemyParts in CCSBot should be at offset 0x69E5");
-		static_assert(offsetof(CS2::server::CCSBot, m_lastEnemyPosition) == 0x69E8, "m_lastEnemyPosition in CCSBot should be at offset 0x69E8");
-		static_assert(offsetof(CS2::server::CCSBot, m_lastSawEnemyTimestamp) == 0x69F4, "m_lastSawEnemyTimestamp in CCSBot should be at offset 0x69F4");
-		static_assert(offsetof(CS2::server::CCSBot, m_firstSawEnemyTimestamp) == 0x69F8, "m_firstSawEnemyTimestamp in CCSBot should be at offset 0x69F8");
-		static_assert(offsetof(CS2::server::CCSBot, m_currentEnemyAcquireTimestamp) == 0x69FC, "m_currentEnemyAcquireTimestamp in CCSBot should be at offset 0x69FC");
-		static_assert(offsetof(CS2::server::CCSBot, m_enemyDeathTimestamp) == 0x6A00, "m_enemyDeathTimestamp in CCSBot should be at offset 0x6A00");
-		static_assert(offsetof(CS2::server::CCSBot, m_friendDeathTimestamp) == 0x6A04, "m_friendDeathTimestamp in CCSBot should be at offset 0x6A04");
-		static_assert(offsetof(CS2::server::CCSBot, m_isLastEnemyDead) == 0x6A08, "m_isLastEnemyDead in CCSBot should be at offset 0x6A08");
-		static_assert(offsetof(CS2::server::CCSBot, m_nearbyEnemyCount) == 0x6A0C, "m_nearbyEnemyCount in CCSBot should be at offset 0x6A0C");
-		static_assert(offsetof(CS2::server::CCSBot, m_bomber) == 0x6C18, "m_bomber in CCSBot should be at offset 0x6C18");
-		static_assert(offsetof(CS2::server::CCSBot, m_nearbyFriendCount) == 0x6C1C, "m_nearbyFriendCount in CCSBot should be at offset 0x6C1C");
-		static_assert(offsetof(CS2::server::CCSBot, m_closestVisibleFriend) == 0x6C20, "m_closestVisibleFriend in CCSBot should be at offset 0x6C20");
-		static_assert(offsetof(CS2::server::CCSBot, m_closestVisibleHumanFriend) == 0x6C24, "m_closestVisibleHumanFriend in CCSBot should be at offset 0x6C24");
-		static_assert(offsetof(CS2::server::CCSBot, m_attentionInterval) == 0x6C28, "m_attentionInterval in CCSBot should be at offset 0x6C28");
-		static_assert(offsetof(CS2::server::CCSBot, m_attacker) == 0x6C38, "m_attacker in CCSBot should be at offset 0x6C38");
-		static_assert(offsetof(CS2::server::CCSBot, m_attackedTimestamp) == 0x6C3C, "m_attackedTimestamp in CCSBot should be at offset 0x6C3C");
-		static_assert(offsetof(CS2::server::CCSBot, m_burnedByFlamesTimer) == 0x6C40, "m_burnedByFlamesTimer in CCSBot should be at offset 0x6C40");
-		static_assert(offsetof(CS2::server::CCSBot, m_lastVictimID) == 0x6C50, "m_lastVictimID in CCSBot should be at offset 0x6C50");
-		static_assert(offsetof(CS2::server::CCSBot, m_isAimingAtEnemy) == 0x6C54, "m_isAimingAtEnemy in CCSBot should be at offset 0x6C54");
-		static_assert(offsetof(CS2::server::CCSBot, m_isRapidFiring) == 0x6C55, "m_isRapidFiring in CCSBot should be at offset 0x6C55");
-		static_assert(offsetof(CS2::server::CCSBot, m_equipTimer) == 0x6C58, "m_equipTimer in CCSBot should be at offset 0x6C58");
-		static_assert(offsetof(CS2::server::CCSBot, m_zoomTimer) == 0x6C68, "m_zoomTimer in CCSBot should be at offset 0x6C68");
-		static_assert(offsetof(CS2::server::CCSBot, m_fireWeaponTimestamp) == 0x6C80, "m_fireWeaponTimestamp in CCSBot should be at offset 0x6C80");
-		static_assert(offsetof(CS2::server::CCSBot, m_lookForWeaponsOnGroundTimer) == 0x6C88, "m_lookForWeaponsOnGroundTimer in CCSBot should be at offset 0x6C88");
-		static_assert(offsetof(CS2::server::CCSBot, m_bIsSleeping) == 0x6CA0, "m_bIsSleeping in CCSBot should be at offset 0x6CA0");
-		static_assert(offsetof(CS2::server::CCSBot, m_isEnemySniperVisible) == 0x6CA1, "m_isEnemySniperVisible in CCSBot should be at offset 0x6CA1");
-		static_assert(offsetof(CS2::server::CCSBot, m_sawEnemySniperTimer) == 0x6CA8, "m_sawEnemySniperTimer in CCSBot should be at offset 0x6CA8");
-		static_assert(offsetof(CS2::server::CCSBot, m_enemyQueueIndex) == 0x6D60, "m_enemyQueueIndex in CCSBot should be at offset 0x6D60");
-		static_assert(offsetof(CS2::server::CCSBot, m_enemyQueueCount) == 0x6D61, "m_enemyQueueCount in CCSBot should be at offset 0x6D61");
-		static_assert(offsetof(CS2::server::CCSBot, m_enemyQueueAttendIndex) == 0x6D62, "m_enemyQueueAttendIndex in CCSBot should be at offset 0x6D62");
-		static_assert(offsetof(CS2::server::CCSBot, m_isStuck) == 0x6D63, "m_isStuck in CCSBot should be at offset 0x6D63");
-		static_assert(offsetof(CS2::server::CCSBot, m_stuckTimestamp) == 0x6D64, "m_stuckTimestamp in CCSBot should be at offset 0x6D64");
-		static_assert(offsetof(CS2::server::CCSBot, m_stuckSpot) == 0x6D68, "m_stuckSpot in CCSBot should be at offset 0x6D68");
-		static_assert(offsetof(CS2::server::CCSBot, m_wiggleTimer) == 0x6D78, "m_wiggleTimer in CCSBot should be at offset 0x6D78");
-		static_assert(offsetof(CS2::server::CCSBot, m_stuckJumpTimer) == 0x6D90, "m_stuckJumpTimer in CCSBot should be at offset 0x6D90");
-		static_assert(offsetof(CS2::server::CCSBot, m_nextCleanupCheckTimestamp) == 0x6DA8, "m_nextCleanupCheckTimestamp in CCSBot should be at offset 0x6DA8");
-		static_assert(offsetof(CS2::server::CCSBot, m_avgVel) == 0x6DAC, "m_avgVel in CCSBot should be at offset 0x6DAC");
-		static_assert(offsetof(CS2::server::CCSBot, m_avgVelIndex) == 0x6DD4, "m_avgVelIndex in CCSBot should be at offset 0x6DD4");
-		static_assert(offsetof(CS2::server::CCSBot, m_avgVelCount) == 0x6DD8, "m_avgVelCount in CCSBot should be at offset 0x6DD8");
-		static_assert(offsetof(CS2::server::CCSBot, m_lastOrigin) == 0x6DDC, "m_lastOrigin in CCSBot should be at offset 0x6DDC");
-		static_assert(offsetof(CS2::server::CCSBot, m_lastRadioRecievedTimestamp) == 0x6DEC, "m_lastRadioRecievedTimestamp in CCSBot should be at offset 0x6DEC");
-		static_assert(offsetof(CS2::server::CCSBot, m_lastRadioSentTimestamp) == 0x6DF0, "m_lastRadioSentTimestamp in CCSBot should be at offset 0x6DF0");
-		static_assert(offsetof(CS2::server::CCSBot, m_radioSubject) == 0x6DF4, "m_radioSubject in CCSBot should be at offset 0x6DF4");
-		static_assert(offsetof(CS2::server::CCSBot, m_radioPosition) == 0x6DF8, "m_radioPosition in CCSBot should be at offset 0x6DF8");
-		static_assert(offsetof(CS2::server::CCSBot, m_voiceEndTimestamp) == 0x6E04, "m_voiceEndTimestamp in CCSBot should be at offset 0x6E04");
-		static_assert(offsetof(CS2::server::CCSBot, m_lastValidReactionQueueFrame) == 0x6E10, "m_lastValidReactionQueueFrame in CCSBot should be at offset 0x6E10");
-		static_assert(sizeof(CS2::server::CCSBot) == 0x6E18, "CCSBot size should be 0x6E18");
+		static_assert(offsetof(CS2::server::CCSBot, m_stateTimestamp) == 0x5A8, "m_stateTimestamp in CCSBot should be at offset 0x5A8");
+		static_assert(offsetof(CS2::server::CCSBot, m_isAttacking) == 0x5AC, "m_isAttacking in CCSBot should be at offset 0x5AC");
+		static_assert(offsetof(CS2::server::CCSBot, m_isOpeningDoor) == 0x5AD, "m_isOpeningDoor in CCSBot should be at offset 0x5AD");
+		static_assert(offsetof(CS2::server::CCSBot, m_taskEntity) == 0x5B4, "m_taskEntity in CCSBot should be at offset 0x5B4");
+		static_assert(offsetof(CS2::server::CCSBot, m_goalPosition) == 0x5C4, "m_goalPosition in CCSBot should be at offset 0x5C4");
+		static_assert(offsetof(CS2::server::CCSBot, m_goalEntity) == 0x5D0, "m_goalEntity in CCSBot should be at offset 0x5D0");
+		static_assert(offsetof(CS2::server::CCSBot, m_avoid) == 0x5D4, "m_avoid in CCSBot should be at offset 0x5D4");
+		static_assert(offsetof(CS2::server::CCSBot, m_avoidTimestamp) == 0x5D8, "m_avoidTimestamp in CCSBot should be at offset 0x5D8");
+		static_assert(offsetof(CS2::server::CCSBot, m_isStopping) == 0x5DC, "m_isStopping in CCSBot should be at offset 0x5DC");
+		static_assert(offsetof(CS2::server::CCSBot, m_hasVisitedEnemySpawn) == 0x5DD, "m_hasVisitedEnemySpawn in CCSBot should be at offset 0x5DD");
+		static_assert(offsetof(CS2::server::CCSBot, m_stillTimer) == 0x5E0, "m_stillTimer in CCSBot should be at offset 0x5E0");
+		static_assert(offsetof(CS2::server::CCSBot, m_bEyeAnglesUnderPathFinderControl) == 0x5F0, "m_bEyeAnglesUnderPathFinderControl in CCSBot should be at offset 0x5F0");
+		static_assert(offsetof(CS2::server::CCSBot, m_pathIndex) == 0x5EF0, "m_pathIndex in CCSBot should be at offset 0x5EF0");
+		static_assert(offsetof(CS2::server::CCSBot, m_areaEnteredTimestamp) == 0x5EF4, "m_areaEnteredTimestamp in CCSBot should be at offset 0x5EF4");
+		static_assert(offsetof(CS2::server::CCSBot, m_repathTimer) == 0x5EF8, "m_repathTimer in CCSBot should be at offset 0x5EF8");
+		static_assert(offsetof(CS2::server::CCSBot, m_avoidFriendTimer) == 0x5F10, "m_avoidFriendTimer in CCSBot should be at offset 0x5F10");
+		static_assert(offsetof(CS2::server::CCSBot, m_isFriendInTheWay) == 0x5F28, "m_isFriendInTheWay in CCSBot should be at offset 0x5F28");
+		static_assert(offsetof(CS2::server::CCSBot, m_politeTimer) == 0x5F30, "m_politeTimer in CCSBot should be at offset 0x5F30");
+		static_assert(offsetof(CS2::server::CCSBot, m_isWaitingBehindFriend) == 0x5F48, "m_isWaitingBehindFriend in CCSBot should be at offset 0x5F48");
+		static_assert(offsetof(CS2::server::CCSBot, m_pathLadderEnd) == 0x5F74, "m_pathLadderEnd in CCSBot should be at offset 0x5F74");
+		static_assert(offsetof(CS2::server::CCSBot, m_mustRunTimer) == 0x5FC0, "m_mustRunTimer in CCSBot should be at offset 0x5FC0");
+		static_assert(offsetof(CS2::server::CCSBot, m_waitTimer) == 0x5FD8, "m_waitTimer in CCSBot should be at offset 0x5FD8");
+		static_assert(offsetof(CS2::server::CCSBot, m_updateTravelDistanceTimer) == 0x5FF0, "m_updateTravelDistanceTimer in CCSBot should be at offset 0x5FF0");
+		static_assert(offsetof(CS2::server::CCSBot, m_playerTravelDistance) == 0x6008, "m_playerTravelDistance in CCSBot should be at offset 0x6008");
+		static_assert(offsetof(CS2::server::CCSBot, m_travelDistancePhase) == 0x6108, "m_travelDistancePhase in CCSBot should be at offset 0x6108");
+		static_assert(offsetof(CS2::server::CCSBot, m_hostageEscortCount) == 0x62A0, "m_hostageEscortCount in CCSBot should be at offset 0x62A0");
+		static_assert(offsetof(CS2::server::CCSBot, m_hostageEscortCountTimestamp) == 0x62A4, "m_hostageEscortCountTimestamp in CCSBot should be at offset 0x62A4");
+		static_assert(offsetof(CS2::server::CCSBot, m_desiredTeam) == 0x62A8, "m_desiredTeam in CCSBot should be at offset 0x62A8");
+		static_assert(offsetof(CS2::server::CCSBot, m_hasJoined) == 0x62AC, "m_hasJoined in CCSBot should be at offset 0x62AC");
+		static_assert(offsetof(CS2::server::CCSBot, m_isWaitingForHostage) == 0x62AD, "m_isWaitingForHostage in CCSBot should be at offset 0x62AD");
+		static_assert(offsetof(CS2::server::CCSBot, m_inhibitWaitingForHostageTimer) == 0x62B0, "m_inhibitWaitingForHostageTimer in CCSBot should be at offset 0x62B0");
+		static_assert(offsetof(CS2::server::CCSBot, m_waitForHostageTimer) == 0x62C8, "m_waitForHostageTimer in CCSBot should be at offset 0x62C8");
+		static_assert(offsetof(CS2::server::CCSBot, m_noisePosition) == 0x62E0, "m_noisePosition in CCSBot should be at offset 0x62E0");
+		static_assert(offsetof(CS2::server::CCSBot, m_noiseTravelDistance) == 0x62EC, "m_noiseTravelDistance in CCSBot should be at offset 0x62EC");
+		static_assert(offsetof(CS2::server::CCSBot, m_noiseTimestamp) == 0x62F0, "m_noiseTimestamp in CCSBot should be at offset 0x62F0");
+		static_assert(offsetof(CS2::server::CCSBot, m_noiseSource) == 0x62F8, "m_noiseSource in CCSBot should be at offset 0x62F8");
+		static_assert(offsetof(CS2::server::CCSBot, m_noiseBendTimer) == 0x6310, "m_noiseBendTimer in CCSBot should be at offset 0x6310");
+		static_assert(offsetof(CS2::server::CCSBot, m_bentNoisePosition) == 0x6328, "m_bentNoisePosition in CCSBot should be at offset 0x6328");
+		static_assert(offsetof(CS2::server::CCSBot, m_bendNoisePositionValid) == 0x6334, "m_bendNoisePositionValid in CCSBot should be at offset 0x6334");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAroundStateTimestamp) == 0x6338, "m_lookAroundStateTimestamp in CCSBot should be at offset 0x6338");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAheadAngle) == 0x633C, "m_lookAheadAngle in CCSBot should be at offset 0x633C");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookUpAngle) == 0x6340, "m_lookUpAngle in CCSBot should be at offset 0x6340");
+		static_assert(offsetof(CS2::server::CCSBot, m_forwardAngle) == 0x6344, "m_forwardAngle in CCSBot should be at offset 0x6344");
+		static_assert(offsetof(CS2::server::CCSBot, m_inhibitLookAroundTimestamp) == 0x6348, "m_inhibitLookAroundTimestamp in CCSBot should be at offset 0x6348");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpot) == 0x6350, "m_lookAtSpot in CCSBot should be at offset 0x6350");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotDuration) == 0x6360, "m_lookAtSpotDuration in CCSBot should be at offset 0x6360");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotTimestamp) == 0x6364, "m_lookAtSpotTimestamp in CCSBot should be at offset 0x6364");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotAngleTolerance) == 0x6368, "m_lookAtSpotAngleTolerance in CCSBot should be at offset 0x6368");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotClearIfClose) == 0x636C, "m_lookAtSpotClearIfClose in CCSBot should be at offset 0x636C");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAtSpotAttack) == 0x636D, "m_lookAtSpotAttack in CCSBot should be at offset 0x636D");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookAtDesc) == 0x6370, "m_lookAtDesc in CCSBot should be at offset 0x6370");
+		static_assert(offsetof(CS2::server::CCSBot, m_peripheralTimestamp) == 0x6378, "m_peripheralTimestamp in CCSBot should be at offset 0x6378");
+		static_assert(offsetof(CS2::server::CCSBot, m_approachPointCount) == 0x6500, "m_approachPointCount in CCSBot should be at offset 0x6500");
+		static_assert(offsetof(CS2::server::CCSBot, m_approachPointViewPosition) == 0x6504, "m_approachPointViewPosition in CCSBot should be at offset 0x6504");
+		static_assert(offsetof(CS2::server::CCSBot, m_viewSteadyTimer) == 0x6510, "m_viewSteadyTimer in CCSBot should be at offset 0x6510");
+		static_assert(offsetof(CS2::server::CCSBot, m_tossGrenadeTimer) == 0x6528, "m_tossGrenadeTimer in CCSBot should be at offset 0x6528");
+		static_assert(offsetof(CS2::server::CCSBot, m_isAvoidingGrenade) == 0x6548, "m_isAvoidingGrenade in CCSBot should be at offset 0x6548");
+		static_assert(offsetof(CS2::server::CCSBot, m_spotCheckTimestamp) == 0x6568, "m_spotCheckTimestamp in CCSBot should be at offset 0x6568");
+		static_assert(offsetof(CS2::server::CCSBot, m_checkedHidingSpotCount) == 0x6970, "m_checkedHidingSpotCount in CCSBot should be at offset 0x6970");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookPitch) == 0x6974, "m_lookPitch in CCSBot should be at offset 0x6974");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookPitchVel) == 0x6978, "m_lookPitchVel in CCSBot should be at offset 0x6978");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookYaw) == 0x697C, "m_lookYaw in CCSBot should be at offset 0x697C");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookYawVel) == 0x6980, "m_lookYawVel in CCSBot should be at offset 0x6980");
+		static_assert(offsetof(CS2::server::CCSBot, m_targetSpot) == 0x6984, "m_targetSpot in CCSBot should be at offset 0x6984");
+		static_assert(offsetof(CS2::server::CCSBot, m_targetSpotVelocity) == 0x6990, "m_targetSpotVelocity in CCSBot should be at offset 0x6990");
+		static_assert(offsetof(CS2::server::CCSBot, m_targetSpotPredicted) == 0x699C, "m_targetSpotPredicted in CCSBot should be at offset 0x699C");
+		static_assert(offsetof(CS2::server::CCSBot, m_aimError) == 0x69A8, "m_aimError in CCSBot should be at offset 0x69A8");
+		static_assert(offsetof(CS2::server::CCSBot, m_aimGoal) == 0x69B4, "m_aimGoal in CCSBot should be at offset 0x69B4");
+		static_assert(offsetof(CS2::server::CCSBot, m_targetSpotTime) == 0x69C0, "m_targetSpotTime in CCSBot should be at offset 0x69C0");
+		static_assert(offsetof(CS2::server::CCSBot, m_aimFocus) == 0x69C4, "m_aimFocus in CCSBot should be at offset 0x69C4");
+		static_assert(offsetof(CS2::server::CCSBot, m_aimFocusInterval) == 0x69C8, "m_aimFocusInterval in CCSBot should be at offset 0x69C8");
+		static_assert(offsetof(CS2::server::CCSBot, m_aimFocusNextUpdate) == 0x69CC, "m_aimFocusNextUpdate in CCSBot should be at offset 0x69CC");
+		static_assert(offsetof(CS2::server::CCSBot, m_ignoreEnemiesTimer) == 0x69D8, "m_ignoreEnemiesTimer in CCSBot should be at offset 0x69D8");
+		static_assert(offsetof(CS2::server::CCSBot, m_enemy) == 0x69F0, "m_enemy in CCSBot should be at offset 0x69F0");
+		static_assert(offsetof(CS2::server::CCSBot, m_isEnemyVisible) == 0x69F4, "m_isEnemyVisible in CCSBot should be at offset 0x69F4");
+		static_assert(offsetof(CS2::server::CCSBot, m_visibleEnemyParts) == 0x69F5, "m_visibleEnemyParts in CCSBot should be at offset 0x69F5");
+		static_assert(offsetof(CS2::server::CCSBot, m_lastEnemyPosition) == 0x69F8, "m_lastEnemyPosition in CCSBot should be at offset 0x69F8");
+		static_assert(offsetof(CS2::server::CCSBot, m_lastSawEnemyTimestamp) == 0x6A04, "m_lastSawEnemyTimestamp in CCSBot should be at offset 0x6A04");
+		static_assert(offsetof(CS2::server::CCSBot, m_firstSawEnemyTimestamp) == 0x6A08, "m_firstSawEnemyTimestamp in CCSBot should be at offset 0x6A08");
+		static_assert(offsetof(CS2::server::CCSBot, m_currentEnemyAcquireTimestamp) == 0x6A0C, "m_currentEnemyAcquireTimestamp in CCSBot should be at offset 0x6A0C");
+		static_assert(offsetof(CS2::server::CCSBot, m_enemyDeathTimestamp) == 0x6A10, "m_enemyDeathTimestamp in CCSBot should be at offset 0x6A10");
+		static_assert(offsetof(CS2::server::CCSBot, m_friendDeathTimestamp) == 0x6A14, "m_friendDeathTimestamp in CCSBot should be at offset 0x6A14");
+		static_assert(offsetof(CS2::server::CCSBot, m_isLastEnemyDead) == 0x6A18, "m_isLastEnemyDead in CCSBot should be at offset 0x6A18");
+		static_assert(offsetof(CS2::server::CCSBot, m_nearbyEnemyCount) == 0x6A1C, "m_nearbyEnemyCount in CCSBot should be at offset 0x6A1C");
+		static_assert(offsetof(CS2::server::CCSBot, m_bomber) == 0x6C28, "m_bomber in CCSBot should be at offset 0x6C28");
+		static_assert(offsetof(CS2::server::CCSBot, m_nearbyFriendCount) == 0x6C2C, "m_nearbyFriendCount in CCSBot should be at offset 0x6C2C");
+		static_assert(offsetof(CS2::server::CCSBot, m_closestVisibleFriend) == 0x6C30, "m_closestVisibleFriend in CCSBot should be at offset 0x6C30");
+		static_assert(offsetof(CS2::server::CCSBot, m_closestVisibleHumanFriend) == 0x6C34, "m_closestVisibleHumanFriend in CCSBot should be at offset 0x6C34");
+		static_assert(offsetof(CS2::server::CCSBot, m_attentionInterval) == 0x6C38, "m_attentionInterval in CCSBot should be at offset 0x6C38");
+		static_assert(offsetof(CS2::server::CCSBot, m_attacker) == 0x6C48, "m_attacker in CCSBot should be at offset 0x6C48");
+		static_assert(offsetof(CS2::server::CCSBot, m_attackedTimestamp) == 0x6C4C, "m_attackedTimestamp in CCSBot should be at offset 0x6C4C");
+		static_assert(offsetof(CS2::server::CCSBot, m_burnedByFlamesTimer) == 0x6C50, "m_burnedByFlamesTimer in CCSBot should be at offset 0x6C50");
+		static_assert(offsetof(CS2::server::CCSBot, m_lastVictimID) == 0x6C60, "m_lastVictimID in CCSBot should be at offset 0x6C60");
+		static_assert(offsetof(CS2::server::CCSBot, m_isAimingAtEnemy) == 0x6C64, "m_isAimingAtEnemy in CCSBot should be at offset 0x6C64");
+		static_assert(offsetof(CS2::server::CCSBot, m_isRapidFiring) == 0x6C65, "m_isRapidFiring in CCSBot should be at offset 0x6C65");
+		static_assert(offsetof(CS2::server::CCSBot, m_equipTimer) == 0x6C68, "m_equipTimer in CCSBot should be at offset 0x6C68");
+		static_assert(offsetof(CS2::server::CCSBot, m_zoomTimer) == 0x6C78, "m_zoomTimer in CCSBot should be at offset 0x6C78");
+		static_assert(offsetof(CS2::server::CCSBot, m_fireWeaponTimestamp) == 0x6C90, "m_fireWeaponTimestamp in CCSBot should be at offset 0x6C90");
+		static_assert(offsetof(CS2::server::CCSBot, m_lookForWeaponsOnGroundTimer) == 0x6C98, "m_lookForWeaponsOnGroundTimer in CCSBot should be at offset 0x6C98");
+		static_assert(offsetof(CS2::server::CCSBot, m_bIsSleeping) == 0x6CB0, "m_bIsSleeping in CCSBot should be at offset 0x6CB0");
+		static_assert(offsetof(CS2::server::CCSBot, m_isEnemySniperVisible) == 0x6CB1, "m_isEnemySniperVisible in CCSBot should be at offset 0x6CB1");
+		static_assert(offsetof(CS2::server::CCSBot, m_sawEnemySniperTimer) == 0x6CB8, "m_sawEnemySniperTimer in CCSBot should be at offset 0x6CB8");
+		static_assert(offsetof(CS2::server::CCSBot, m_enemyQueueIndex) == 0x6D70, "m_enemyQueueIndex in CCSBot should be at offset 0x6D70");
+		static_assert(offsetof(CS2::server::CCSBot, m_enemyQueueCount) == 0x6D71, "m_enemyQueueCount in CCSBot should be at offset 0x6D71");
+		static_assert(offsetof(CS2::server::CCSBot, m_enemyQueueAttendIndex) == 0x6D72, "m_enemyQueueAttendIndex in CCSBot should be at offset 0x6D72");
+		static_assert(offsetof(CS2::server::CCSBot, m_isStuck) == 0x6D73, "m_isStuck in CCSBot should be at offset 0x6D73");
+		static_assert(offsetof(CS2::server::CCSBot, m_stuckTimestamp) == 0x6D74, "m_stuckTimestamp in CCSBot should be at offset 0x6D74");
+		static_assert(offsetof(CS2::server::CCSBot, m_stuckSpot) == 0x6D78, "m_stuckSpot in CCSBot should be at offset 0x6D78");
+		static_assert(offsetof(CS2::server::CCSBot, m_wiggleTimer) == 0x6D88, "m_wiggleTimer in CCSBot should be at offset 0x6D88");
+		static_assert(offsetof(CS2::server::CCSBot, m_stuckJumpTimer) == 0x6DA0, "m_stuckJumpTimer in CCSBot should be at offset 0x6DA0");
+		static_assert(offsetof(CS2::server::CCSBot, m_nextCleanupCheckTimestamp) == 0x6DB8, "m_nextCleanupCheckTimestamp in CCSBot should be at offset 0x6DB8");
+		static_assert(offsetof(CS2::server::CCSBot, m_avgVel) == 0x6DBC, "m_avgVel in CCSBot should be at offset 0x6DBC");
+		static_assert(offsetof(CS2::server::CCSBot, m_avgVelIndex) == 0x6DE4, "m_avgVelIndex in CCSBot should be at offset 0x6DE4");
+		static_assert(offsetof(CS2::server::CCSBot, m_avgVelCount) == 0x6DE8, "m_avgVelCount in CCSBot should be at offset 0x6DE8");
+		static_assert(offsetof(CS2::server::CCSBot, m_lastOrigin) == 0x6DEC, "m_lastOrigin in CCSBot should be at offset 0x6DEC");
+		static_assert(offsetof(CS2::server::CCSBot, m_lastRadioRecievedTimestamp) == 0x6DFC, "m_lastRadioRecievedTimestamp in CCSBot should be at offset 0x6DFC");
+		static_assert(offsetof(CS2::server::CCSBot, m_lastRadioSentTimestamp) == 0x6E00, "m_lastRadioSentTimestamp in CCSBot should be at offset 0x6E00");
+		static_assert(offsetof(CS2::server::CCSBot, m_radioSubject) == 0x6E04, "m_radioSubject in CCSBot should be at offset 0x6E04");
+		static_assert(offsetof(CS2::server::CCSBot, m_radioPosition) == 0x6E08, "m_radioPosition in CCSBot should be at offset 0x6E08");
+		static_assert(offsetof(CS2::server::CCSBot, m_voiceEndTimestamp) == 0x6E14, "m_voiceEndTimestamp in CCSBot should be at offset 0x6E14");
+		static_assert(offsetof(CS2::server::CCSBot, m_lastValidReactionQueueFrame) == 0x6E20, "m_lastValidReactionQueueFrame in CCSBot should be at offset 0x6E20");
+		static_assert(sizeof(CS2::server::CCSBot) == 0x6E28, "CCSBot size should be 0x6E28");
 	}
 }

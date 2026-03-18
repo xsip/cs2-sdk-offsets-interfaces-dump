@@ -21,31 +21,31 @@ namespace CS2 {
 	namespace server {
 		class CSAdditionalMatchStats_t : public CS2::server::CSAdditionalPerRoundStats_t {
 		public:
-			int32_t m_numRoundsSurvivedStreak; // 0xf0 | Schema_Builtin | Size: 0x4
-			int32_t m_maxNumRoundsSurvivedStreak; // 0xf4 | Schema_Builtin | Size: 0x4
-			int32_t m_numRoundsSurvivedTotal; // 0xf8 | Schema_Builtin | Size: 0x4
-			int32_t m_iRoundsWonWithoutPurchase; // 0xfc | Schema_Builtin | Size: 0x4
-			int32_t m_iRoundsWonWithoutPurchaseTotal; // 0x100 | Schema_Builtin | Size: 0x4
-			int32_t m_numFirstKills; // 0x104 | Schema_Builtin | Size: 0x4
-			int32_t m_numClutchKills; // 0x108 | Schema_Builtin | Size: 0x4
-			int32_t m_numPistolKills; // 0x10c | Schema_Builtin | Size: 0x4
-			int32_t m_numSniperKills; // 0x110 | Schema_Builtin | Size: 0x4
-			int32_t m_iNumSuicides; // 0x114 | Schema_Builtin | Size: 0x4
-			int32_t m_iNumTeamKills; // 0x118 | Schema_Builtin | Size: 0x4
-			float32 m_flTeamDamage; // 0x11c | Schema_Builtin | Size: 0x4
+			int32_t m_numRoundsSurvivedStreak; // 0xf8 | Schema_Builtin | Size: 0x4
+			int32_t m_maxNumRoundsSurvivedStreak; // 0xfc | Schema_Builtin | Size: 0x4
+			int32_t m_numRoundsSurvivedTotal; // 0x100 | Schema_Builtin | Size: 0x4
+			int32_t m_iRoundsWonWithoutPurchase; // 0x104 | Schema_Builtin | Size: 0x4
+			int32_t m_iRoundsWonWithoutPurchaseTotal; // 0x108 | Schema_Builtin | Size: 0x4
+			int32_t m_numFirstKills; // 0x10c | Schema_Builtin | Size: 0x4
+			int32_t m_numClutchKills; // 0x110 | Schema_Builtin | Size: 0x4
+			int32_t m_numPistolKills; // 0x114 | Schema_Builtin | Size: 0x4
+			int32_t m_numSniperKills; // 0x118 | Schema_Builtin | Size: 0x4
+			int32_t m_iNumSuicides; // 0x11c | Schema_Builtin | Size: 0x4
+			int32_t m_iNumTeamKills; // 0x120 | Schema_Builtin | Size: 0x4
+			float32 m_flTeamDamage; // 0x124 | Schema_Builtin | Size: 0x4
 		};
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numRoundsSurvivedStreak) == 0xF0, "m_numRoundsSurvivedStreak in CSAdditionalMatchStats_t should be at offset 0xF0");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_maxNumRoundsSurvivedStreak) == 0xF4, "m_maxNumRoundsSurvivedStreak in CSAdditionalMatchStats_t should be at offset 0xF4");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numRoundsSurvivedTotal) == 0xF8, "m_numRoundsSurvivedTotal in CSAdditionalMatchStats_t should be at offset 0xF8");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iRoundsWonWithoutPurchase) == 0xFC, "m_iRoundsWonWithoutPurchase in CSAdditionalMatchStats_t should be at offset 0xFC");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iRoundsWonWithoutPurchaseTotal) == 0x100, "m_iRoundsWonWithoutPurchaseTotal in CSAdditionalMatchStats_t should be at offset 0x100");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numFirstKills) == 0x104, "m_numFirstKills in CSAdditionalMatchStats_t should be at offset 0x104");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numClutchKills) == 0x108, "m_numClutchKills in CSAdditionalMatchStats_t should be at offset 0x108");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numPistolKills) == 0x10C, "m_numPistolKills in CSAdditionalMatchStats_t should be at offset 0x10C");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numSniperKills) == 0x110, "m_numSniperKills in CSAdditionalMatchStats_t should be at offset 0x110");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iNumSuicides) == 0x114, "m_iNumSuicides in CSAdditionalMatchStats_t should be at offset 0x114");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iNumTeamKills) == 0x118, "m_iNumTeamKills in CSAdditionalMatchStats_t should be at offset 0x118");
-		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_flTeamDamage) == 0x11C, "m_flTeamDamage in CSAdditionalMatchStats_t should be at offset 0x11C");
-		static_assert(sizeof(CS2::server::CSAdditionalMatchStats_t) == 0x120, "CSAdditionalMatchStats_t size should be 0x120");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numRoundsSurvivedStreak) == 0xF8, "m_numRoundsSurvivedStreak in CSAdditionalMatchStats_t should be at offset 0xF8");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_maxNumRoundsSurvivedStreak) == 0xFC, "m_maxNumRoundsSurvivedStreak in CSAdditionalMatchStats_t should be at offset 0xFC");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numRoundsSurvivedTotal) == 0x100, "m_numRoundsSurvivedTotal in CSAdditionalMatchStats_t should be at offset 0x100");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iRoundsWonWithoutPurchase) == 0x104, "m_iRoundsWonWithoutPurchase in CSAdditionalMatchStats_t should be at offset 0x104");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iRoundsWonWithoutPurchaseTotal) == 0x108, "m_iRoundsWonWithoutPurchaseTotal in CSAdditionalMatchStats_t should be at offset 0x108");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numFirstKills) == 0x10C, "m_numFirstKills in CSAdditionalMatchStats_t should be at offset 0x10C");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numClutchKills) == 0x110, "m_numClutchKills in CSAdditionalMatchStats_t should be at offset 0x110");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numPistolKills) == 0x114, "m_numPistolKills in CSAdditionalMatchStats_t should be at offset 0x114");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numSniperKills) == 0x118, "m_numSniperKills in CSAdditionalMatchStats_t should be at offset 0x118");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iNumSuicides) == 0x11C, "m_iNumSuicides in CSAdditionalMatchStats_t should be at offset 0x11C");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iNumTeamKills) == 0x120, "m_iNumTeamKills in CSAdditionalMatchStats_t should be at offset 0x120");
+		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_flTeamDamage) == 0x124, "m_flTeamDamage in CSAdditionalMatchStats_t should be at offset 0x124");
+		static_assert(sizeof(CS2::server::CSAdditionalMatchStats_t) == 0x128, "CSAdditionalMatchStats_t size should be 0x128");
 	}
 }

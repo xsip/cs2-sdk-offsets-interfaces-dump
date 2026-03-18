@@ -23,5 +23,5 @@ class client_CSPerRoundStats_t {
     int32_t m_iCashEarned;
     int32_t m_iUtilityDamage;
     int32_t m_iEnemiesFlashed;
-    char end_pad_1890[0x4];
+    char end_pad_1889[0x4];
 };

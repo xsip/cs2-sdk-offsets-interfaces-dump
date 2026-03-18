@@ -23,11 +23,11 @@ class client_CSMatchStats_t {
     int32_t m_iCashEarned;
     int32_t m_iUtilityDamage;
     int32_t m_iEnemiesFlashed;
-    char end_pad_1890[0x4];
+    char end_pad_1889[0x4];
     int32_t m_iEnemy5Ks;
     int32_t m_iEnemy4Ks;
     int32_t m_iEnemy3Ks;
     int32_t m_iEnemyKnifeKills;
     int32_t m_iEnemyTaserKills;
-    char end_pad_1888[0x4];
+    char end_pad_1887[0x4];
 };

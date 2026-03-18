@@ -54,5 +54,5 @@ class client_CNetworkTransmitComponent {
     void **__vftable_47;
     char __vftable_pad[4];
     uint8_t m_nTransmitStateOwnedCounter;
-    char end_pad_1812[0x4b];
+    char end_pad_1811[0x4b];
 };

@@ -10,5 +10,5 @@ class pulse_system_CPulse_ResumePoint {
     pulse_runtime_lib_PulseRuntimeChunkIndex_t m_nDestChunk;
     int32_t m_nInstruction;
     pulse_runtime_lib_PulseRegisterMap_t m_OutflowRegisterMap;
-    char pad_4311[0x48];
+    char pad_4310[0x48];
 };

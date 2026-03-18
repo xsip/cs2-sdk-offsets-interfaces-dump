@@ -10,6 +10,6 @@ class client_C_MultiplayRules {
     int32_t m_nTotalPausedTicks;
     int32_t m_nPauseStartTick;
     bool m_bGamePaused;
-    char pad_2140[0x7];
-    char pad_2138[0x40];
+    char pad_2139[0x7];
+    char pad_2137[0x40];
 };

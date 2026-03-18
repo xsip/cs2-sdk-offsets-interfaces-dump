@@ -4,5 +4,5 @@
 
 
 class particleslib_CParticleProperty {
-    char pad_615[0x28];
+    char pad_614[0x28];
 };

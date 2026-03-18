@@ -4,5 +4,5 @@
 
 
 class client_ISkeletonAnimationController {
-    char pad_1572[0x8];
+    char pad_1571[0x8];
 };

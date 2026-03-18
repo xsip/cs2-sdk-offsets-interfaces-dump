@@ -6,7 +6,7 @@
 class smartprops_Criteria_t {
     float32 m_flLength;
     bool m_bAllowScale;
-    char pad_2645[0x3];
+    char pad_2664[0x3];
     float32 m_flMinLength;
     float32 m_flMaxLength;
 };

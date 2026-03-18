@@ -4,5 +4,5 @@
 
 
 class server_CPulseFuncs_GameParticleManager {
-    char pad_4096[0x1];
+    char pad_4095[0x1];
 };

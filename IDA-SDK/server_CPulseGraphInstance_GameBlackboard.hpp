@@ -4,7 +4,7 @@
 
 
 class server_CPulseGraphInstance_GameBlackboard {
-    char pad_2797[0x118];
+    char pad_2796[0x118];
     void **__vftable_0;
     void **__vftable_1;
     void **__vftable_2;
@@ -22,10 +22,10 @@ class server_CPulseGraphInstance_GameBlackboard {
     void **__vftable_14;
     char m_hOwner[0x4];
     bool m_bActivated;
-    char pad_4100[0x3];
+    char pad_4099[0x3];
     CUtlSymbolLarge m_sNameFixupStaticPrefix;
     CUtlSymbolLarge m_sNameFixupParent;
     CUtlSymbolLarge m_sNameFixupLocal;
     CUtlSymbolLarge m_sProceduralWorldNameForRelays;
-    char pad_4098[0x10];
+    char pad_4097[0x10];
 };

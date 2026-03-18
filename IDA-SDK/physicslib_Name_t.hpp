@@ -5,6 +5,6 @@
 
 class physicslib_Name_t {
     CUtlStringToken m_nNameToken;
-    char pad_1324[0x4];
+    char pad_1323[0x4];
     CUtlString m_sNameString;
 };

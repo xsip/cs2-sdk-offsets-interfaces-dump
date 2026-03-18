@@ -11,7 +11,7 @@ class animlib_CNmFootEvent {
     animlib_NmPercent_t m_flDuration;
     CGlobalSymbol m_syncID;
     bool m_bClientOnly;
-    char end_pad_2498[0x7];
+    char end_pad_2497[0x7];
     animlib_NmFootPhase_t m_phase;
-    char end_pad_2517[0x7];
+    char end_pad_2516[0x7];
 };

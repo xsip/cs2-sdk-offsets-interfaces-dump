@@ -19,15 +19,15 @@ class server_CEffectData {
     char m_nEffectIndex[0x8];
     uint32_t m_nDamageType;
     uint8_t m_nPenetrate;
-    char pad_3620[0x1];
+    char pad_3619[0x1];
     uint16_t m_nMaterial;
     int16_t m_nHitBox;
     uint8_t m_nColor;
     uint8_t m_fFlags;
     modellib_AttachmentHandle_t m_nAttachmentIndex;
-    char pad_3621[0x3];
+    char pad_3620[0x3];
     CUtlStringToken m_nAttachmentName;
     uint16_t m_iEffectName;
     uint8_t m_nExplosionType;
-    char end_pad_3622[0x1];
+    char end_pad_3621[0x1];
 };

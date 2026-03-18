@@ -11,10 +11,10 @@ class animlib_CNmMaterialAttributeEvent {
     animlib_NmPercent_t m_flDuration;
     CGlobalSymbol m_syncID;
     bool m_bClientOnly;
-    char end_pad_2498[0x7];
+    char end_pad_2497[0x7];
     CUtlString m_attributeName;
     CUtlStringToken m_attributeNameToken;
-    char pad_2531[0x4];
+    char pad_2530[0x4];
     CPiecewiseCurve m_x;
     CPiecewiseCurve m_y;
     CPiecewiseCurve m_z;

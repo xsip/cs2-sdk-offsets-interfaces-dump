@@ -7,7 +7,7 @@ class client_C_IronSightController {
     void **__vftable_0;
     void **__vftable_1;
     bool m_bIronSightAvailable;
-    char pad_2255[0x3];
+    char pad_2254[0x3];
     float32 m_flIronSightAmount;
     float32 m_flIronSightAmountGained;
     float32 m_flIronSightAmountBiased;
@@ -20,5 +20,5 @@ class client_C_IronSightController {
     Vector2D m_vecDotCoords;
     float32 m_flFiringInaccuracyExtraWidthMultiplier;
     float32 m_flSpeedRatio;
-    char end_pad_2256[0x4];
+    char end_pad_2255[0x4];
 };

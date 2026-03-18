@@ -9,5 +9,5 @@ class physicslib_FeTaperedCapsuleRigid_t {
     uint16_t nCollisionMask;
     uint16_t nVertexMapIndex;
     uint16_t nFlags;
-    char end_pad_1334[0x8];
+    char end_pad_1333[0x8];
 };

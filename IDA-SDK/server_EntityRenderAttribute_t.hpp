@@ -12,5 +12,5 @@ class server_EntityRenderAttribute_t {
     void **__vftable_5;
     CUtlStringToken m_ID;
     Vector4D m_Values;
-    char end_pad_2984[0x4];
+    char end_pad_2983[0x4];
 };

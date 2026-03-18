@@ -13,7 +13,7 @@ class pulse_runtime_lib_CPulseCell_Timeline {
     char end_pad_512[0x3c];
     char m_TimelineEvents[0x18];
     bool m_bWaitForChildOutflows;
-    char pad_526[0x7];
+    char pad_525[0x7];
     pulse_runtime_lib_CPulse_ResumePoint m_OnFinished;
     pulse_runtime_lib_CPulse_ResumePoint m_OnCanceled;
 };

@@ -16,5 +16,5 @@ class physicslib_FeVertexMapDesc_t {
     float32 flVolumetricSolveStrength;
     int16_t nScaleSourceNode;
     uint16_t nNodeListCount;
-    char end_pad_1348[0x4];
+    char end_pad_1347[0x4];
 };

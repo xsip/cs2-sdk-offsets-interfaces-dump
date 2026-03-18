@@ -6,7 +6,7 @@
 
 class pulse_runtime_lib_CPulse_RegisterInfo {
     pulse_runtime_lib_PulseRuntimeRegisterIndex_t m_nReg;
-    char pad_548[0x6];
+    char pad_547[0x6];
     CPulseValueFullType m_Type;
     CKV3MemberNameWithStorage m_OriginName;
     int32_t m_nWrittenByInstruction;

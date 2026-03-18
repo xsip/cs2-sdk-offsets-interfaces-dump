@@ -17,12 +17,12 @@ class particles_CParticleVisibilityInputs {
     float32 m_flDotInputMax;
     bool m_bDotCPAngles;
     bool m_bDotCameraAngles;
-    char pad_722[0x2];
+    char pad_721[0x2];
     float32 m_flAlphaScaleMin;
     float32 m_flAlphaScaleMax;
     float32 m_flRadiusScaleMin;
     float32 m_flRadiusScaleMax;
     float32 m_flRadiusScaleFOVBase;
     bool m_bRightEye;
-    char end_pad_723[0x3];
+    char end_pad_722[0x3];
 };

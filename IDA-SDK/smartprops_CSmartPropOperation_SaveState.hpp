@@ -6,6 +6,6 @@
 class smartprops_CSmartPropOperation_SaveState {
     void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
-    char end_pad_2635[0x8];
+    char end_pad_2654[0x8];
     CUtlString m_StateName;
 };

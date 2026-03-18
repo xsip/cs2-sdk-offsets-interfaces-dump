@@ -32,6 +32,7 @@ namespace CS2 {
 			int32_t m_nDefuseStarts; // 0x1c | Schema_Builtin | Size: 0x4
 			int32_t m_nHostagePickUps; // 0x20 | Schema_Builtin | Size: 0x4
 			int32_t m_numTeammatesFlashed; // 0x24 | Schema_Builtin | Size: 0x4
+			GlobalTypes::CUtlString m_strAnnotationsWorkshopId; // 0x28 | Schema_Atomic | Size: 0x8
 			S2_PAD(0xc8); // End padding
 		};
 		static_assert(offsetof(CS2::server::CSAdditionalPerRoundStats_t, m_numChickensKilled) == 0x0, "m_numChickensKilled in CSAdditionalPerRoundStats_t should be at offset 0x0");
@@ -45,6 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSAdditionalPerRoundStats_t, m_nDefuseStarts) == 0x1C, "m_nDefuseStarts in CSAdditionalPerRoundStats_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::server::CSAdditionalPerRoundStats_t, m_nHostagePickUps) == 0x20, "m_nHostagePickUps in CSAdditionalPerRoundStats_t should be at offset 0x20");
 		static_assert(offsetof(CS2::server::CSAdditionalPerRoundStats_t, m_numTeammatesFlashed) == 0x24, "m_numTeammatesFlashed in CSAdditionalPerRoundStats_t should be at offset 0x24");
-		static_assert(sizeof(CS2::server::CSAdditionalPerRoundStats_t) == 0xF0, "CSAdditionalPerRoundStats_t size should be 0xF0");
+		static_assert(offsetof(CS2::server::CSAdditionalPerRoundStats_t, m_strAnnotationsWorkshopId) == 0x28, "m_strAnnotationsWorkshopId in CSAdditionalPerRoundStats_t should be at offset 0x28");
+		static_assert(sizeof(CS2::server::CSAdditionalPerRoundStats_t) == 0xF8, "CSAdditionalPerRoundStats_t size should be 0xF8");
 	}
 }

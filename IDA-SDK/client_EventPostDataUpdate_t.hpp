@@ -5,5 +5,5 @@
 
 class client_EventPostDataUpdate_t {
     int32_t m_nCount;
-    char end_pad_2430[0xc];
+    char end_pad_2429[0xc];
 };

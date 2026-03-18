@@ -10,5 +10,5 @@ class server_CConstantForceController {
     RotationVector m_angular;
     Vector m_linearSave;
     RotationVector m_angularSave;
-    char pad_3973[0x4];
+    char pad_3972[0x4];
 };

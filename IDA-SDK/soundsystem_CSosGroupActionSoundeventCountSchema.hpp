@@ -4,8 +4,8 @@
 
 
 class soundsystem_CSosGroupActionSoundeventCountSchema {
-    char pad_556[0x8];
+    char pad_555[0x8];
     bool m_bExcludeStoppedSounds;
-    char pad_561[0x7];
+    char pad_560[0x7];
     CUtlString m_strCountKeyName;
 };

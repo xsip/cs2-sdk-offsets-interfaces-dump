@@ -46,9 +46,9 @@ class server_CRetakeGameRules {
     int32_t m_nMatchSeed;
     bool m_bBlockersPresent;
     bool m_bRoundInProgress;
-    char pad_4127[0x2];
+    char pad_4126[0x2];
     int32_t m_iFirstSecondHalfRound;
     int32_t m_iBombSite;
     char m_hBombPlanter[0x4];
-    char end_pad_4128[0xa4];
+    char end_pad_4127[0xa4];
 };

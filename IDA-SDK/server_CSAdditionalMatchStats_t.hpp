@@ -12,11 +12,12 @@ class server_CSAdditionalMatchStats_t {
     int32_t m_iDinks;
     bool m_bFreshStartThisRound;
     bool m_bBombPlantedAndAlive;
-    char pad_2857[0x2];
+    char pad_2856[0x2];
     int32_t m_nDefuseStarts;
     int32_t m_nHostagePickUps;
     int32_t m_numTeammatesFlashed;
-    char end_pad_2858[0xc8];
+    CUtlString m_strAnnotationsWorkshopId;
+    char end_pad_2857[0xc8];
     int32_t m_numRoundsSurvivedStreak;
     int32_t m_maxNumRoundsSurvivedStreak;
     int32_t m_numRoundsSurvivedTotal;

@@ -4,5 +4,5 @@
 
 
 class client_CFloatExponentialMovingAverage {
-    char pad_1735[0x14];
+    char pad_1734[0x14];
 };

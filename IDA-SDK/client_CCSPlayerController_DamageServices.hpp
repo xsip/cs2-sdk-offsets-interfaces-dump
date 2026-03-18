@@ -7,8 +7,8 @@
 class client_CCSPlayerController_DamageServices {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char end_pad_1644[0x10];
+    char end_pad_1643[0x10];
     int32_t m_nSendUpdate;
-    char pad_1645[0x4];
+    char pad_1644[0x4];
     char m_DamageList[0x68];
 };

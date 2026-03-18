@@ -7,5 +7,5 @@
 class animlib_NmFloatCurveCompressionSettings_t {
     animlib_QuantizationRange_t m_range;
     bool m_bIsStatic;
-    char end_pad_2557[0x3];
+    char end_pad_2556[0x3];
 };

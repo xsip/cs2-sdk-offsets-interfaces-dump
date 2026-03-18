@@ -36,10 +36,10 @@ class physicslib_RnBodyDesc_t {
     bool m_bSleeping;
     bool m_bIsContinuousEnabled;
     bool m_bDragEnabled;
-    char pad_1349[0x1];
+    char pad_1348[0x1];
     Vector m_vGravity;
     bool m_bSpeculativeEnabled;
     bool m_bHasShadowController;
     physicslib_DynamicContinuousContactBehavior_t m_nDynamicContinuousContactBehavior;
-    char end_pad_1350[0x5];
+    char end_pad_1349[0x5];
 };

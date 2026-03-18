@@ -9,9 +9,9 @@ class physicslib_FeBuildSphereRigid_t {
     uint16_t nCollisionMask;
     uint16_t nVertexMapIndex;
     uint16_t nFlags;
-    char end_pad_1332[0x8];
+    char end_pad_1331[0x8];
     int32_t m_nPriority;
     uint32_t m_nVertexMapHash;
     uint32_t m_nAntitunnelGroupBits;
-    char end_pad_1331[0x4];
+    char end_pad_1330[0x4];
 };

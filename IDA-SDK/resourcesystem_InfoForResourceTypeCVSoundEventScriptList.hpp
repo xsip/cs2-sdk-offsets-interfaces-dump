@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCVSoundEventScriptList {
-    char pad_1301[0x1];
+    char pad_1289[0x1];
 };

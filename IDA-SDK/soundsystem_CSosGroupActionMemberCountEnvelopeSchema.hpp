@@ -4,7 +4,7 @@
 
 
 class soundsystem_CSosGroupActionMemberCountEnvelopeSchema {
-    char pad_556[0x8];
+    char pad_555[0x8];
     int32_t m_nBaseCount;
     int32_t m_nTargetCount;
     float32 m_flBaseValue;
@@ -13,5 +13,5 @@ class soundsystem_CSosGroupActionMemberCountEnvelopeSchema {
     float32 m_flDecay;
     CUtlString m_resultVarName;
     bool m_bSaveToGroup;
-    char end_pad_557[0x7];
+    char end_pad_556[0x7];
 };

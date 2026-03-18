@@ -9,8 +9,8 @@ class client_CAttributeManager {
     int32_t m_iReapplyProvisionParity;
     char m_hOuter[0x4];
     bool m_bPreventLoopback;
-    char pad_1374[0x3];
+    char pad_1373[0x3];
     client_attributeprovidertypes_t m_ProviderType;
     char m_CachedResults[0x18];
-    char end_pad_1375[0x8];
+    char end_pad_1374[0x8];
 };

@@ -31,10 +31,10 @@ class server_CMultiplayer_Expresser {
     bool m_bAllowSpeakingInterrupts;
     bool m_bConsiderSceneInvolvementAsSpeech;
     bool m_bSceneEntityDisabled;
-    char pad_2730[0x1];
+    char pad_2729[0x1];
     int32_t m_nLastSpokenPriority;
-    char pad_2731[0x18];
+    char pad_2730[0x18];
     server_CBaseFlex* m_pOuter;
     bool m_bAllowMultipleScenes;
-    char end_pad_2845[0x7];
+    char end_pad_2844[0x7];
 };

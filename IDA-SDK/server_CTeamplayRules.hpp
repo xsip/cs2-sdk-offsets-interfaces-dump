@@ -14,7 +14,7 @@ class server_CTeamplayRules {
     int32_t m_nTotalPausedTicks;
     int32_t m_nPauseStartTick;
     bool m_bGamePaused;
-    char pad_3456[0x7];
-    char pad_3454[0xd0];
+    char pad_3455[0x7];
     char pad_3453[0xd0];
+    char pad_3452[0xd0];
 };

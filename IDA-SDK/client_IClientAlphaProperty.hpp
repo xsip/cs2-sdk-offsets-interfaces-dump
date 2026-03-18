@@ -4,5 +4,5 @@
 
 
 class client_IClientAlphaProperty {
-    char pad_1693[0x8];
+    char pad_1692[0x8];
 };

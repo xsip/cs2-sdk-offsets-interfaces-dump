@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeWorld_t {
-    char pad_1310[0x1];
+    char pad_1298[0x1];
 };

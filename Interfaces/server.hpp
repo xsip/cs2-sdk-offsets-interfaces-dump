@@ -8,16 +8,16 @@
 namespace CS2 {
 	namespace Interfaces {
 		namespace server {
-			constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x1b73bb0; 
-			constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0x1b1f120; 
-			constexpr std::ptrdiff_t NavGameTest001 = 0x1c1d858; 
-			constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x1bceaf8; 
-			constexpr std::ptrdiff_t Source2GameClients001 = 0x1bcbb70; 
-			constexpr std::ptrdiff_t Source2GameDirector001 = 0x1d5da20; 
-			constexpr std::ptrdiff_t Source2GameEntities001 = 0x1bce200; 
-			constexpr std::ptrdiff_t Source2Server001 = 0x1bce060; 
-			constexpr std::ptrdiff_t Source2ServerConfig001 = 0x1e52838; 
-			constexpr std::ptrdiff_t customnavsystem001 = 0x1afdef8; 
+			constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x1b76c10; 
+			constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0x1b22160; 
+			constexpr std::ptrdiff_t NavGameTest001 = 0x1c208f8; 
+			constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x1bd1b88; 
+			constexpr std::ptrdiff_t Source2GameClients001 = 0x1bcec00; 
+			constexpr std::ptrdiff_t Source2GameDirector001 = 0x1d60a90; 
+			constexpr std::ptrdiff_t Source2GameEntities001 = 0x1bd1290; 
+			constexpr std::ptrdiff_t Source2Server001 = 0x1bd10f0; 
+			constexpr std::ptrdiff_t Source2ServerConfig001 = 0x1e55988; 
+			constexpr std::ptrdiff_t customnavsystem001 = 0x1b00f18; 
 		}
 	}
 }

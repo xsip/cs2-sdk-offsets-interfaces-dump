@@ -4,6 +4,6 @@
 
 
 class animlib_CNmAdditiveBlendTask {
-    char pad_1819[0x58];
-    char pad_2495[0x88];
+    char pad_1818[0x58];
+    char pad_2494[0x88];
 };

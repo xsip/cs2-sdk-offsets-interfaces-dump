@@ -20,7 +20,7 @@ class particles_TextureControls_t {
     particleslib_CParticleCollectionRendererFloatInput m_flDistortion;
     bool m_bRandomizeOffsets;
     bool m_bClampUVs;
-    char pad_1263[0x2];
+    char pad_1262[0x2];
     particles_SpriteCardPerParticleScale_t m_nPerParticleBlend;
     particles_SpriteCardPerParticleScale_t m_nPerParticleScale;
     particles_SpriteCardPerParticleScale_t m_nPerParticleOffsetU;

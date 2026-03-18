@@ -4,5 +4,5 @@
 
 
 class pulse_system_CPulseTestFuncs_LibraryA {
-    char pad_4319[0x1];
+    char pad_4318[0x1];
 };

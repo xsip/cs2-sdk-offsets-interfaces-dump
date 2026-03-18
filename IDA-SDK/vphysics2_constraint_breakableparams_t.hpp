@@ -9,5 +9,5 @@ class vphysics2_constraint_breakableparams_t {
     float32 torqueLimit;
     float32 bodyMassScale[2];
     bool isActive;
-    char end_pad_4297[0x3];
+    char end_pad_4296[0x3];
 };

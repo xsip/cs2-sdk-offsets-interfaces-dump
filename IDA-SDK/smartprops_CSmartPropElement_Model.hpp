@@ -6,7 +6,7 @@
 class smartprops_CSmartPropElement_Model {
     void **__vftable_0;
     int32_t m_nElementID;
-    char pad_2621[0x4];
+    char pad_2640[0x4];
     CSmartPropAttributeBool m_bEnabled;
     CUtlString m_sLabel;
     char m_SelectionCriteria[0x18];
@@ -19,7 +19,7 @@ class smartprops_CSmartPropElement_Model {
     CSmartPropAttributeInt m_nLodLevel;
     CSmartPropAttributeSurfaceProperty m_SurfacePropertyOverride;
     smartprops_SmartPropDetailFadeLevel_t m_nDetailObjectFadeLevel;
-    char pad_2627[0x4];
+    char pad_2646[0x4];
     CSmartPropAttributeBool m_bCastShadows;
     CSmartPropAttributeBool m_bRigidDeformation;
     CSmartPropAttributeBool m_bDisableDynamicDeformable;

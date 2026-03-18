@@ -4,5 +4,5 @@
 
 
 class particles_IParticleCollection {
-    char pad_671[0x10];
+    char pad_670[0x10];
 };

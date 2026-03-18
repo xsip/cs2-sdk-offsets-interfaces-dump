@@ -14,7 +14,7 @@ class server_CSingleplayRules {
     int32_t m_nTotalPausedTicks;
     int32_t m_nPauseStartTick;
     bool m_bGamePaused;
-    char pad_3456[0x7];
+    char pad_3455[0x7];
     bool m_bSinglePlayerGameEnding;
-    char end_pad_4165[0x7];
+    char end_pad_4164[0x7];
 };

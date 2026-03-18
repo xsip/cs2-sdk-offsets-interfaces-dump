@@ -11,7 +11,7 @@ class animlib_CNmIDEvent {
     animlib_NmPercent_t m_flDuration;
     CGlobalSymbol m_syncID;
     bool m_bClientOnly;
-    char end_pad_2498[0x7];
+    char end_pad_2497[0x7];
     CGlobalSymbol m_ID;
     CGlobalSymbol m_secondaryID;
 };

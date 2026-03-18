@@ -7,6 +7,6 @@ class client_CCSPlayerLegacyJump {
     void **__vftable_0;
     void **__vftable_1;
     bool m_bOldJumpPressed;
-    char pad_1672[0x3];
+    char pad_1671[0x3];
     float32 m_flJumpPressedTime;
 };

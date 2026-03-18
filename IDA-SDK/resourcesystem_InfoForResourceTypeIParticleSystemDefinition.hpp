@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeIParticleSystemDefinition {
-    char pad_1278[0x1];
+    char pad_1308[0x1];
 };

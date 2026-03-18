@@ -18,5 +18,5 @@ class server_CCSPlayerModernJump {
     float32 m_flLastLandedVelocityX;
     float32 m_flLastLandedVelocityY;
     float32 m_flLastLandedVelocityZ;
-    char pad_3563[0x4];
+    char pad_3562[0x4];
 };

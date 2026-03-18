@@ -1,6 +1,6 @@
 // generated - do not edit!
 
-// Class size: 0xF0
+// Class size: 0xF8
 // BaseClass: NONE
 export const server_CSAdditionalPerRoundStats_t  = {
 	m_numChickensKilled: 0n, // int32_t m_numChickensKilled; |  0x0 | Schema_Builtin | Size: 0x4
@@ -14,4 +14,5 @@ export const server_CSAdditionalPerRoundStats_t  = {
 	m_nDefuseStarts: 28n, // int32_t m_nDefuseStarts; |  0x1c | Schema_Builtin | Size: 0x4
 	m_nHostagePickUps: 32n, // int32_t m_nHostagePickUps; |  0x20 | Schema_Builtin | Size: 0x4
 	m_numTeammatesFlashed: 36n, // int32_t m_numTeammatesFlashed; |  0x24 | Schema_Builtin | Size: 0x4
+	m_strAnnotationsWorkshopId: 40n, // GlobalTypes::CUtlString  | Schema_Atomic | Size: 0x8
 }

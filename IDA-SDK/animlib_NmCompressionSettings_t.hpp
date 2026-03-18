@@ -16,5 +16,5 @@ class animlib_NmCompressionSettings_t {
     bool m_bIsRotationStatic;
     bool m_bIsTranslationStatic;
     bool m_bIsScaleStatic;
-    char end_pad_2556[0xd];
+    char end_pad_2555[0xd];
 };

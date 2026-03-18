@@ -8,7 +8,7 @@
 class smartprops_CSmartPropOperation_SetTintColor {
     void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
-    char end_pad_2635[0x8];
+    char end_pad_2654[0x8];
     smartprops_CSmartPropAttributeChoiceSelectionMode m_SelectionMode;
     CSmartPropAttributeInt m_ColorSelection;
     smartprops_CSmartPropAttributeApplyColorMode m_Mode;

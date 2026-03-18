@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCSmartProp {
-    char pad_1294[0x1];
+    char pad_1282[0x1];
 };

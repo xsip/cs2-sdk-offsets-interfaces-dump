@@ -7,5 +7,5 @@ class pulse_runtime_lib_CPulse_Chunk {
     char m_Instructions[0x10];
     char m_Registers[0x10];
     char m_InstructionDebugInfos[0x10];
-    char end_pad_544[0x28];
+    char end_pad_543[0x28];
 };

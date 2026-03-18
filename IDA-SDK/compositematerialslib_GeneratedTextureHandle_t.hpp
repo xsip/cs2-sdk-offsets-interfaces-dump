@@ -5,5 +5,5 @@
 
 class compositematerialslib_GeneratedTextureHandle_t {
     CUtlString m_strBitmapName;
-    char end_pad_2703[0x58];
+    char end_pad_2722[0x58];
 };

@@ -7,11 +7,11 @@ class client_CGameSceneNode;
 #include "client_CSkeletonInstance.hpp"
 
 class client_CBodyComponentBaseModelEntity {
-    char pad_1557[0x8];
+    char pad_1556[0x8];
     client_CGameSceneNode* m_pSceneNode;
-    char pad_1555[0x38];
+    char pad_1554[0x38];
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char end_pad_1556[0x8];
+    char end_pad_1555[0x8];
     void **__vftable_0;
     client_CSkeletonInstance m_skeletonInstance;
 };

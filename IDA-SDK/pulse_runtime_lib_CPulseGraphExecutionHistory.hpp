@@ -6,7 +6,7 @@
 
 class pulse_runtime_lib_CPulseGraphExecutionHistory {
     pulse_runtime_lib_PulseGraphInstanceID_t m_nInstanceID;
-    char pad_542[0x4];
+    char pad_541[0x4];
     CUtlString m_strFileName;
     char m_vecHistory[0x18];
     char m_mapCellDesc[0x28];

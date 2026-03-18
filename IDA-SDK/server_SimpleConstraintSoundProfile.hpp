@@ -10,5 +10,5 @@ class server_SimpleConstraintSoundProfile {
     float32 m_reversalSoundThresholdSmall;
     float32 m_reversalSoundThresholdMedium;
     float32 m_reversalSoundThresholdLarge;
-    char end_pad_2883[0x4];
+    char end_pad_2882[0x4];
 };

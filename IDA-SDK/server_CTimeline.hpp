@@ -15,5 +15,5 @@ class server_CTimeline {
     float32 m_flFinalValue;
     client_TimelineCompression_t m_nCompressionType;
     bool m_bStopped;
-    char end_pad_4218[0x7];
+    char end_pad_4217[0x7];
 };

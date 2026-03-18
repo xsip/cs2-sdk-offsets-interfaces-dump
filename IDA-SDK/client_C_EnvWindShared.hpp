@@ -21,5 +21,5 @@ class client_C_EnvWindShared {
     float32 m_flInitialWindSpeed;
     Vector m_location;
     char m_hEntOwner[0x4];
-    char end_pad_2217[0xb8];
+    char end_pad_2216[0xb8];
 };

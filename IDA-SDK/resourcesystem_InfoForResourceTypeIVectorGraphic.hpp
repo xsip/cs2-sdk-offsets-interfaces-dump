@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeIVectorGraphic {
-    char pad_1307[0x1];
+    char pad_1295[0x1];
 };

@@ -16,5 +16,5 @@ class server_CPulseCell_LerpCameraSettings {
     float32 m_flSeconds;
     client_PointCameraSettings_t m_Start;
     client_PointCameraSettings_t m_End;
-    char end_pad_4087[0x4];
+    char end_pad_4086[0x4];
 };

@@ -6,5 +6,5 @@
 class materialsystem2_MaterialParamFloat_t {
     CUtlString m_name;
     float32 m_flValue;
-    char end_pad_4298[0x4];
+    char end_pad_4297[0x4];
 };

@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCResponseRulesList {
-    char pad_1293[0x1];
+    char pad_1281[0x1];
 };

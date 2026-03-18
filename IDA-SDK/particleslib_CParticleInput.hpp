@@ -4,5 +4,5 @@
 
 
 class particleslib_CParticleInput {
-    char pad_607[0x10];
+    char pad_606[0x10];
 };

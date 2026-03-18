@@ -15,15 +15,15 @@ class client_CSceneEventInfo {
     CGlobalSymbol m_sAnimClipSlot;
     CGlobalSymbol m_sAnimClipSlotWeight;
     bool m_bHasArrived;
-    char pad_1891[0x3];
+    char pad_1890[0x3];
     int32_t m_nType;
     entity2_GameTime_t m_flNext;
     bool m_bIsGesture;
     bool m_bShouldRemove;
-    char pad_1892[0x26];
+    char pad_1891[0x26];
     char m_hTarget[0x4];
     client_SceneEventId_t m_nSceneEventId;
     bool m_bClientSide;
     bool m_bStarted;
-    char end_pad_1893[0x2];
+    char end_pad_1892[0x2];
 };

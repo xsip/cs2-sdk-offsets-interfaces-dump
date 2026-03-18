@@ -5,9 +5,9 @@
 
 class client_ragdollelement_t {
     Vector originParentSpace;
-    char pad_2479[0x14];
+    char pad_2478[0x14];
     int32_t parentIndex;
     float32 m_flRadius;
     int32_t m_nHeight;
-    char end_pad_2480[0x4];
+    char end_pad_2479[0x4];
 };

@@ -14,6 +14,6 @@ class pulse_runtime_lib_CPulseCell_Step_CallExternalMethod {
     PulseSymbol_t m_GameBlackboard;
     char m_ExpectedArgs[0x10];
     pulse_runtime_lib_PulseMethodCallMode_t m_nAsyncCallMode;
-    char pad_524[0x4];
+    char pad_523[0x4];
     pulse_runtime_lib_CPulse_ResumePoint m_OnFinished;
 };

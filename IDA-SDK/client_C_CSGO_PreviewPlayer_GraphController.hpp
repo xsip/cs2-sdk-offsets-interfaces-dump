@@ -9,7 +9,7 @@ class client_C_CSGO_PreviewPlayer_GraphController {
     void **__vftable_1;
     void **__vftable_2;
     client_ExternalAnimGraphHandle_t m_hExternalGraph;
-    char pad_1400[0x74];
+    char pad_1399[0x74];
     char m_pszCharacterMode[0x30];
     char m_pszTeamPreviewVariant[0x30];
     char m_pszTeamPreviewPosition[0x30];

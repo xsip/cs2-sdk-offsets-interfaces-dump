@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCCSGOEconItem {
-    char pad_1280[0x1];
+    char pad_1268[0x1];
 };

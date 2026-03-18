@@ -9,5 +9,5 @@ class client_CEmptyGraphController {
     void **__vftable_1;
     void **__vftable_2;
     client_ExternalAnimGraphHandle_t m_hExternalGraph;
-    char pad_1400[0x74];
+    char pad_1399[0x74];
 };

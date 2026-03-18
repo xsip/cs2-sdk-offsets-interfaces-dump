@@ -8,7 +8,7 @@ class client_EventAdvanceTick_t {
     client_EngineLoopState_t m_LoopState;
     bool m_bFirstTick;
     bool m_bLastTick;
-    char end_pad_2421[0x6];
+    char end_pad_2420[0x6];
     int32_t m_nCurrentTick;
     int32_t m_nCurrentTickThisFrame;
     int32_t m_nTotalTicksThisFrame;

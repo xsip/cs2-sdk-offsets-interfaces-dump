@@ -5,5 +5,5 @@
 
 class soundsystem_lowlevel_CVMixAdditionalOutput {
     CUtlString m_name;
-    char end_pad_616[0x8];
+    char end_pad_615[0x8];
 };

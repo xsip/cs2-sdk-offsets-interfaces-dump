@@ -4,5 +4,5 @@
 
 
 class client_CAnimEventListenerBase {
-    char pad_1361[0x18];
+    char pad_1360[0x18];
 };

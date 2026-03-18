@@ -9,7 +9,7 @@ class server_CCS2WeaponGraphController {
     void **__vftable_1;
     void **__vftable_2;
     client_ExternalAnimGraphHandle_t m_hExternalGraph;
-    char pad_1400[0x74];
+    char pad_1399[0x74];
     char m_action[0x18];
     char m_bActionReset[0x18];
     char m_flWeaponActionSpeedScale[0x18];
@@ -30,5 +30,5 @@ class server_CCS2WeaponGraphController {
     char m_inspectVariation[0x18];
     char m_inspectExtraInfo[0x18];
     char m_reloadStage[0x18];
-    char end_pad_3303[0x368];
+    char end_pad_3302[0x368];
 };

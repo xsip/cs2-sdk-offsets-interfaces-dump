@@ -8,7 +8,7 @@ class server_hudtextparms_t {
     Color color2;
     uint8_t effect;
     uint8_t channel;
-    char pad_3785[0x2];
+    char pad_3784[0x2];
     float32 x;
     float32 y;
 };

@@ -4,7 +4,7 @@
 
 
 class server_CBtNodeCondition {
-    char pad_2818[0x58];
+    char pad_2817[0x58];
     bool m_bNegated;
-    char end_pad_3293[0x7];
+    char end_pad_3292[0x7];
 };

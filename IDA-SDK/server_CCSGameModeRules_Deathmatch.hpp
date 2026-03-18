@@ -11,5 +11,5 @@ class server_CCSGameModeRules_Deathmatch {
     entity2_GameTime_t m_flDMBonusStartTime;
     float32 m_flDMBonusTimeLength;
     CUtlString m_sDMBonusWeapon;
-    char end_pad_3349[0x48];
+    char end_pad_3348[0x48];
 };

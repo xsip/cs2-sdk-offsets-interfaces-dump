@@ -20,5 +20,5 @@ class worldrenderer_WorldNode_t {
     CUtlString m_grassFileName;
     worldrenderer_BakedLightingInfo_t m_nodeLightingInfo;
     bool m_bHasBakedGeometryFlag;
-    char end_pad_2591[0x7];
+    char end_pad_2590[0x7];
 };

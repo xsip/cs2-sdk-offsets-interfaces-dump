@@ -12,5 +12,5 @@ class client_CResponseCriteriaSet {
     void **__vftable_5;
     int32_t m_nNumPrefixedContexts;
     bool m_bOverrideOnAppend;
-    char end_pad_1886[0x3];
+    char end_pad_1885[0x3];
 };

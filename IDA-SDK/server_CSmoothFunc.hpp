@@ -10,5 +10,5 @@ class server_CSmoothFunc {
     float32 m_flSmoothDuration;
     float32 m_flSmoothRemainingTime;
     int32_t m_nSmoothDir;
-    char end_pad_2868[0x4];
+    char end_pad_2867[0x4];
 };

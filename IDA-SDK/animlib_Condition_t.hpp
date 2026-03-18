@@ -6,5 +6,5 @@
 class animlib_Condition_t {
     CGlobalSymbol m_eventID;
     animlib_NmGraphEventTypeCondition_t m_eventTypeCondition;
-    char end_pad_2525[0x7];
+    char end_pad_2524[0x7];
 };

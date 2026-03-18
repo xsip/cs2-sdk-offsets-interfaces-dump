@@ -16,5 +16,5 @@ class server_CPulseCell_Outflow_ListenForEntityOutput {
     CGlobalSymbol m_strEntityOutput;
     CUtlString m_strEntityOutputParam;
     bool m_bListenUntilCanceled;
-    char end_pad_4089[0x7];
+    char end_pad_4088[0x7];
 };

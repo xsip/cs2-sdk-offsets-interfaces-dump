@@ -6,7 +6,7 @@
 
 class client_CInventoryImageData {
     client_InventoryNodeType_t m_nNodeType;
-    char pad_1786[0x4];
+    char pad_1785[0x4];
     CUtlString name;
     client_inv_image_data_t inventory_image_data;
 };

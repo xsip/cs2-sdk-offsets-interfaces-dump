@@ -7,7 +7,7 @@
 #include "server_CountdownTimer.hpp"
 
 class server_CBtActionMoveTo {
-    char pad_2818[0x58];
+    char pad_2817[0x58];
     void **__vftable_0;
     CUtlString m_szDestinationInputKey;
     CUtlString m_szHidingSpotInputKey;
@@ -15,9 +15,9 @@ class server_CBtActionMoveTo {
     Vector m_vecDestination;
     bool m_bAutoLookAdjust;
     bool m_bComputePath;
-    char pad_3290[0x2];
+    char pad_3289[0x2];
     float32 m_flDamagingAreasPenaltyCost;
-    char pad_3291[0x4];
+    char pad_3290[0x4];
     server_CountdownTimer m_CheckApproximateCornersTimer;
     server_CountdownTimer m_CheckHighPriorityItem;
     server_CountdownTimer m_RepathTimer;

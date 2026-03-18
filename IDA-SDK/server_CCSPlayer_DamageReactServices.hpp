@@ -7,6 +7,6 @@
 class server_CCSPlayer_DamageReactServices {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_2013[0x18];
-    char pad_3546[0x50];
+    char pad_2012[0x18];
+    char pad_3545[0x50];
 };

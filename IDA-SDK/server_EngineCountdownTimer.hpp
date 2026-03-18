@@ -8,5 +8,5 @@ class server_EngineCountdownTimer {
     float32 m_duration;
     float32 m_timestamp;
     float32 m_timescale;
-    char end_pad_4258[0x4];
+    char end_pad_4257[0x4];
 };

@@ -31,5 +31,5 @@ class worldrenderer_CVoxelVisibility {
     worldrenderer_VoxelVisBlockOffset_t m_EnclosedClustersBlock;
     worldrenderer_VoxelVisBlockOffset_t m_MasksBlock;
     worldrenderer_VoxelVisBlockOffset_t m_nVisBlocks;
-    char end_pad_2575[0x4];
+    char end_pad_2570[0x4];
 };

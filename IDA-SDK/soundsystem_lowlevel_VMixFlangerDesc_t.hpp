@@ -5,7 +5,7 @@
 
 class soundsystem_lowlevel_VMixFlangerDesc_t {
     bool m_bPhaseInvert;
-    char pad_662[0x3];
+    char pad_661[0x3];
     float32 m_flGlideTime;
     float32 m_flDelay;
     float32 m_flOutputGain;
@@ -14,5 +14,5 @@ class soundsystem_lowlevel_VMixFlangerDesc_t {
     float32 m_flModRate;
     float32 m_flModDepth;
     bool m_bApplyAntialiasing;
-    char end_pad_663[0x3];
+    char end_pad_662[0x3];
 };

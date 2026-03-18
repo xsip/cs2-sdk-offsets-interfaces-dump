@@ -8,7 +8,7 @@ class client_audioparams_t {
     Vector localSound[8];
     int32_t soundscapeIndex;
     uint8_t localBits;
-    char pad_2474[0x3];
+    char pad_2473[0x3];
     int32_t soundscapeEntityListIndex;
     uint32_t soundEventHash;
 };

@@ -46,9 +46,9 @@ class client_C_RetakeGameRules {
     int32_t m_nMatchSeed;
     bool m_bBlockersPresent;
     bool m_bRoundInProgress;
-    char pad_2344[0x2];
+    char pad_2343[0x2];
     int32_t m_iFirstSecondHalfRound;
     int32_t m_iBombSite;
     char m_hBombPlanter[0x4];
-    char end_pad_2345[0xc];
+    char end_pad_2344[0xc];
 };

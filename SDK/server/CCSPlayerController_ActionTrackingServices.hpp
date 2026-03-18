@@ -29,13 +29,13 @@ namespace CS2 {
 			int32_t m_iNumRoundKills; // 0x188 | Schema_Builtin | Size: 0x4
 			int32_t m_iNumRoundKillsHeadshots; // 0x18c | Schema_Builtin | Size: 0x4
 			float32 m_flTotalRoundDamageDealt; // 0x190 | Schema_Builtin | Size: 0x4
-			S2_PAD(0x28c); // End padding
+			S2_PAD(0x29c); // End padding
 		};
 		static_assert(offsetof(CS2::server::CCSPlayerController_ActionTrackingServices, m_perRoundStats) == 0x40, "m_perRoundStats in CCSPlayerController_ActionTrackingServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCSPlayerController_ActionTrackingServices, m_matchStats) == 0xC8, "m_matchStats in CCSPlayerController_ActionTrackingServices should be at offset 0xC8");
 		static_assert(offsetof(CS2::server::CCSPlayerController_ActionTrackingServices, m_iNumRoundKills) == 0x188, "m_iNumRoundKills in CCSPlayerController_ActionTrackingServices should be at offset 0x188");
 		static_assert(offsetof(CS2::server::CCSPlayerController_ActionTrackingServices, m_iNumRoundKillsHeadshots) == 0x18C, "m_iNumRoundKillsHeadshots in CCSPlayerController_ActionTrackingServices should be at offset 0x18C");
 		static_assert(offsetof(CS2::server::CCSPlayerController_ActionTrackingServices, m_flTotalRoundDamageDealt) == 0x190, "m_flTotalRoundDamageDealt in CCSPlayerController_ActionTrackingServices should be at offset 0x190");
-		static_assert(sizeof(CS2::server::CCSPlayerController_ActionTrackingServices) == 0x420, "CCSPlayerController_ActionTrackingServices size should be 0x420");
+		static_assert(sizeof(CS2::server::CCSPlayerController_ActionTrackingServices) == 0x430, "CCSPlayerController_ActionTrackingServices size should be 0x430");
 	}
 }

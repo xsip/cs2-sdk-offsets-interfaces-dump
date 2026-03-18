@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCCompositeMaterialKit {
-    char pad_1269[0x1];
+    char pad_1299[0x1];
 };

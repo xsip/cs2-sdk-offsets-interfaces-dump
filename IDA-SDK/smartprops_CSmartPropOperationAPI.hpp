@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropOperationAPI {
-    char pad_2637[0x1];
+    char pad_2656[0x1];
 };

@@ -13,7 +13,7 @@ class particleslib_CParticleCollectionVecInput;
 class particles_CReplicationParameters {
     particles_ParticleReplicationMode_t m_nReplicationMode;
     bool m_bScaleChildParticleRadii;
-    char pad_1152[0x3];
+    char pad_1151[0x3];
     particleslib_CParticleCollectionFloatInput m_flMinRandomRadiusScale;
     particleslib_CParticleCollectionFloatInput m_flMaxRandomRadiusScale;
     particleslib_CParticleCollectionVecInput m_vMinRandomDisplacement;

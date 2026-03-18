@@ -14,7 +14,7 @@ class pulse_runtime_lib_CPulseCell_InlineNodeSkipSelector {
     char end_pad_512[0x3c];
     pulse_runtime_lib_PulseDocNodeID_t m_nFlowNodeID;
     bool m_bAnd;
-    char pad_520[0x3];
+    char pad_519[0x3];
     pulse_runtime_lib_PulseSelectorOutflowList_t m_PassOutflow;
     pulse_runtime_lib_CPulse_OutflowConnection m_FailOutflow;
 };

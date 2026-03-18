@@ -9,5 +9,5 @@ class server_locksound_t {
     CUtlSymbolLarge sLockedSound;
     CUtlSymbolLarge sUnlockedSound;
     entity2_GameTime_t flwaitSound;
-    char pad_3047[0x4];
+    char pad_3046[0x4];
 };

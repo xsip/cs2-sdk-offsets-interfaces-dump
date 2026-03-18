@@ -25,5 +25,5 @@ class server_CDamageRecord {
     int32_t m_iLastBulletUpdate;
     bool m_bIsOtherEnemy;
     client_EKillTypes_t m_killType;
-    char end_pad_2976[0x2];
+    char end_pad_2975[0x2];
 };

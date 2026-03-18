@@ -4,5 +4,5 @@
 
 
 class pulse_runtime_lib_CPulseTestScriptLib {
-    char pad_534[0x1];
+    char pad_533[0x1];
 };

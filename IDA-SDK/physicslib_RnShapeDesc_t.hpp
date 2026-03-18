@@ -9,6 +9,6 @@ class physicslib_RnShapeDesc_t {
     CUtlString m_UserFriendlyName;
     bool m_bUserFriendlyNameSealed;
     bool m_bUserFriendlyNameLong;
-    char pad_1313[0x2];
+    char pad_1312[0x2];
     uint32_t m_nToolMaterialHash;
 };

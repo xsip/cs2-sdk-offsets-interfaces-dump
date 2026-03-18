@@ -2342,17 +2342,6 @@ enum mathlib_extended_FuseVariableAccess_t : uint8_t {
 			FuseVariableAccess_t_WRITABLE = 0x0
 		};
 
-enum modellib_MeshDrawPrimitiveFlags_t : uint32_t {
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_CAN_BATCH_WITH_DYNAMIC_SHADER_CONSTANTS = 0x40,
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_DRAW_LAST = 0x80,
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_NONE = 0x0,
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_COMPRESSED_NORMAL_TANGENT = 0x2,
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_COMPRESSED_PER_VERTEX_LIGHTING = 0x10,
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_SHADOW_FAST_PATH = 0x1,
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_UNCOMPRESSED_PER_VERTEX_LIGHTING = 0x20,
-			MeshDrawPrimitiveFlags_t_MESH_DRAW_INPUT_LAYOUT_IS_NOT_MATCHED_TO_MATERIAL = 0x8
-		};
-
 enum worldrenderer_ObjectTypeFlags_t : uint32_t {
 			ObjectTypeFlags_t_OBJECT_TYPE_BAKED_GEOMETRY = 0x20000,
 			ObjectTypeFlags_t_OBJECT_TYPE_BLOCK_LIGHT = 0x10,
@@ -2376,6 +2365,17 @@ enum worldrenderer_AggregateInstanceStream_t : uint8_t {
 			AggregateInstanceStream_t_AGGREGATE_INSTANCE_STREAM_NONE = 0x0,
 			AggregateInstanceStream_t_AGGREGATE_INSTANCE_STREAM_VERTEXBLEND_UNORM8 = 0x4,
 			AggregateInstanceStream_t_AGGREGATE_INSTANCE_STREAM_VERTEXTINT_UNORM8 = 0x2
+		};
+
+enum modellib_MeshDrawPrimitiveFlags_t : uint32_t {
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_CAN_BATCH_WITH_DYNAMIC_SHADER_CONSTANTS = 0x40,
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_DRAW_LAST = 0x80,
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_NONE = 0x0,
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_COMPRESSED_NORMAL_TANGENT = 0x2,
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_COMPRESSED_PER_VERTEX_LIGHTING = 0x10,
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_SHADOW_FAST_PATH = 0x1,
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_FLAGS_USE_UNCOMPRESSED_PER_VERTEX_LIGHTING = 0x20,
+			MeshDrawPrimitiveFlags_t_MESH_DRAW_INPUT_LAYOUT_IS_NOT_MATCHED_TO_MATERIAL = 0x8
 		};
 
 enum worldrenderer_RTProxyInstanceFlags_t : uint8_t {

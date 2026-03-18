@@ -16,14 +16,14 @@ class animlib_CNmClip {
     char m_floatCurveDefs[0x18];
     char m_compressedFloatCurveData[0x18];
     char m_compressedFloatCurveOffsets[0x18];
-    char pad_2508[0x28];
+    char pad_2507[0x28];
     char m_secondaryAnimations[0x20];
     animlib_CNmSyncTrack m_syncTrack;
-    char pad_2509[0x8];
+    char pad_2508[0x8];
     animlib_CNmRootMotionData m_rootMotion;
     bool m_bIsAdditive;
-    char pad_2510[0x7];
+    char pad_2509[0x7];
     char m_modelSpaceSamplingChain[0x18];
     char m_modelSpaceBoneSamplingIndices[0x18];
-    char end_pad_2511[0x8];
+    char end_pad_2510[0x8];
 };

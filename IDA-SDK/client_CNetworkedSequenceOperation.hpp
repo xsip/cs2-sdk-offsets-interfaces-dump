@@ -12,7 +12,7 @@ class client_CNetworkedSequenceOperation {
     CNetworkedQuantizedFloat m_flWeight;
     bool m_bSequenceChangeNetworked;
     bool m_bDiscontinuity;
-    char pad_1816[0x2];
+    char pad_1815[0x2];
     float32 m_flPrevCycleFromDiscontinuity;
     float32 m_flPrevCycleForAnimEventDetection;
 };

@@ -10,6 +10,6 @@ class smartprops_CSmartPropPulse_PickOneSelector {
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
     char end_pad_512[0x3c];
     smartprops_ConfigurationHandleShape_t m_HandleShape;
-    char pad_2646[0x4];
+    char pad_2665[0x4];
     pulse_runtime_lib_PulseSelectorOutflowList_t m_OutflowList;
 };

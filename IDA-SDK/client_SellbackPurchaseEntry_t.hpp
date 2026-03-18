@@ -11,11 +11,11 @@ class client_SellbackPurchaseEntry_t {
     void **__vftable_4;
     void **__vftable_5;
     uint16_t m_unDefIdx;
-    char pad_2456[0x2];
+    char pad_2455[0x2];
     int32_t m_nCost;
     int32_t m_nPrevArmor;
     bool m_bPrevHelmet;
-    char pad_2457[0x3];
+    char pad_2456[0x3];
     CEntityHandle m_hItem;
-    char end_pad_2458[0x4];
+    char end_pad_2457[0x4];
 };

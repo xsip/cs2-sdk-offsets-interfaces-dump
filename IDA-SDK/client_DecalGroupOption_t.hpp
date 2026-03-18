@@ -8,7 +8,7 @@ class client_DecalGroupOption_t {
     CGlobalSymbol m_sSequenceName;
     float32 m_flProbability;
     bool m_bEnableAngleBetweenNormalAndGravityRange;
-    char pad_2412[0x3];
+    char pad_2411[0x3];
     float32 m_flMinAngleBetweenNormalAndGravity;
     float32 m_flMaxAngleBetweenNormalAndGravity;
 };

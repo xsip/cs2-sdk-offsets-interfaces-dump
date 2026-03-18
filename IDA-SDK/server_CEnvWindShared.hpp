@@ -22,9 +22,9 @@ class server_CEnvWindShared {
     uint16_t m_iInitialWindDir;
     float32 m_flInitialWindSpeed;
     Vector m_location;
-    char pad_3688[0x4];
+    char pad_3687[0x4];
     entity2_CEntityIOOutput m_OnGustStart;
     entity2_CEntityIOOutput m_OnGustEnd;
     char m_hEntOwner[0x4];
-    char end_pad_3689[0xbc];
+    char end_pad_3688[0xbc];
 };

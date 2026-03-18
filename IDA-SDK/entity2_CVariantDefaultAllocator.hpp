@@ -4,5 +4,5 @@
 
 
 class entity2_CVariantDefaultAllocator {
-    char pad_2720[0x1];
+    char pad_2608[0x1];
 };

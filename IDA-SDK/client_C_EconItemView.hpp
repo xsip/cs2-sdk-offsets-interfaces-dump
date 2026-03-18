@@ -6,7 +6,7 @@
 #include "client_CAttributeList.hpp"
 
 class client_C_EconItemView {
-    char pad_2175[0x8];
+    char pad_2174[0x8];
     void **__vftable_0;
     void **__vftable_1;
     void **__vftable_2;
@@ -20,23 +20,23 @@ class client_C_EconItemView {
     void **__vftable_10;
     bool m_bInventoryImageRgbaRequested;
     bool m_bInventoryImageTriedCache;
-    char pad_2167[0x1e];
+    char pad_2166[0x1e];
     int32_t m_nInventoryImageRgbaWidth;
     int32_t m_nInventoryImageRgbaHeight;
     char m_szCurrentLoadCachedFileName[260];
-    char pad_2168[0x2c];
+    char pad_2167[0x2c];
     bool m_bRestoreCustomMaterialAfterPrecache;
-    char pad_2169[0x1];
+    char pad_2168[0x1];
     uint16_t m_iItemDefinitionIndex;
     int32_t m_iEntityQuality;
     uint32_t m_iEntityLevel;
-    char pad_2170[0x4];
+    char pad_2169[0x4];
     uint64_t m_iItemID;
     uint32_t m_iItemIDHigh;
     uint32_t m_iItemIDLow;
     uint32_t m_iAccountID;
     uint32_t m_iInventoryPosition;
-    char pad_2171[0x8];
+    char pad_2170[0x8];
     bool m_bInitialized;
     bool m_bDisallowSOC;
     bool m_bIsStoreItem;
@@ -47,12 +47,12 @@ class client_C_EconItemView {
     int32_t m_iOriginOverride;
     uint8_t m_ubStyleOverride;
     uint8_t m_unClientFlags;
-    char pad_2172[0xa];
+    char pad_2171[0xa];
     client_CAttributeList m_AttributeList;
     client_CAttributeList m_NetworkedDynamicAttributes;
     char m_szCustomName[161];
     char m_szCustomNameOverride[161];
-    char pad_2173[0x2e];
+    char pad_2172[0x2e];
     bool m_bInitializedTags;
-    char end_pad_2174[0x7];
+    char end_pad_2173[0x7];
 };

@@ -10,6 +10,6 @@ class physicslib_CastSphereSATParams_t {
     float32 m_flRadius;
     float32 m_flMaxFraction;
     float32 m_flScale;
-    char pad_1321[0x4];
+    char pad_1320[0x4];
     physicslib_RnHull_t* m_pHull;
 };

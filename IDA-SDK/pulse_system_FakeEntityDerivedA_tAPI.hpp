@@ -4,5 +4,5 @@
 
 
 class pulse_system_FakeEntityDerivedA_tAPI {
-    char pad_4321[0x8];
+    char pad_4320[0x8];
 };

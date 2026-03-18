@@ -4,5 +4,5 @@
 
 
 class animlib_CNmGraphVariationUserData {
-    char pad_2522[0x8];
+    char pad_2521[0x8];
 };

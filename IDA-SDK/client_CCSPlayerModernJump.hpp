@@ -18,5 +18,5 @@ class client_CCSPlayerModernJump {
     float32 m_flLastLandedVelocityX;
     float32 m_flLastLandedVelocityY;
     float32 m_flLastLandedVelocityZ;
-    char pad_1674[0x4];
+    char pad_1673[0x4];
 };

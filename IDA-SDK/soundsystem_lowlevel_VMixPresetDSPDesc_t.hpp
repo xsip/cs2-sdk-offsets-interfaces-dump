@@ -5,5 +5,5 @@
 
 class soundsystem_lowlevel_VMixPresetDSPDesc_t {
     CUtlString m_effectName;
-    char end_pad_666[0x8];
+    char end_pad_665[0x8];
 };

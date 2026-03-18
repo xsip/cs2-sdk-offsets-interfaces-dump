@@ -6,5 +6,5 @@
 class physicslib_FeProxyVertexMap_t {
     CUtlString m_Name;
     float32 m_flWeight;
-    char end_pad_1339[0x4];
+    char end_pad_1338[0x4];
 };

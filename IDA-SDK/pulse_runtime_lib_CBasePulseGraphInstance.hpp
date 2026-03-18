@@ -4,5 +4,5 @@
 
 
 class pulse_runtime_lib_CBasePulseGraphInstance {
-    char pad_2797[0x118];
+    char pad_2796[0x118];
 };

@@ -4,5 +4,5 @@
 
 
 class server_CBtNodeDecorator {
-    char pad_2818[0x58];
+    char pad_2817[0x58];
 };

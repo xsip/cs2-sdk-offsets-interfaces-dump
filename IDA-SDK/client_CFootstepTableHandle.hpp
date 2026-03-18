@@ -4,5 +4,5 @@
 
 
 class client_CFootstepTableHandle {
-    char pad_1737[0x8];
+    char pad_1736[0x8];
 };

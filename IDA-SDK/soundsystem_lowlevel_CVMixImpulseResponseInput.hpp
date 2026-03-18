@@ -5,5 +5,5 @@
 
 class soundsystem_lowlevel_CVMixImpulseResponseInput {
     CUtlString m_name;
-    char end_pad_625[0x8];
+    char end_pad_624[0x8];
 };

@@ -4,5 +4,5 @@
 
 
 class server_CTestPulseIOAPI {
-    char pad_4216[0x8];
+    char pad_4215[0x8];
 };

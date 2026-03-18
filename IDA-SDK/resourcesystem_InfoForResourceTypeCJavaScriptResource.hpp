@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCJavaScriptResource {
-    char pad_1287[0x1];
+    char pad_1275[0x1];
 };

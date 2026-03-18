@@ -4,6 +4,6 @@
 
 
 class animlib_CNmCachedPoseReadTask {
-    char pad_1819[0x58];
-    char pad_2499[0x8];
+    char pad_1818[0x58];
+    char pad_2498[0x8];
 };

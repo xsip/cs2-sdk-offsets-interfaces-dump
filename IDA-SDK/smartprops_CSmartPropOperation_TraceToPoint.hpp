@@ -9,7 +9,7 @@
 class smartprops_CSmartPropOperation_TraceToPoint {
     void **__vftable_0;
     CSmartPropAttributeBool m_bEnabled;
-    char end_pad_2635[0x8];
+    char end_pad_2654[0x8];
     CSmartPropAttributeVector m_Origin;
     smartprops_CSmartPropAttributeCoordinateSpace m_OriginSpace;
     CSmartPropAttributeFloat m_flOriginOffset;

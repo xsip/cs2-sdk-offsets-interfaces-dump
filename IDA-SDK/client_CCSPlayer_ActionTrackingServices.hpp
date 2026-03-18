@@ -9,10 +9,10 @@
 class client_CCSPlayer_ActionTrackingServices {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_2013[0x18];
+    char pad_2012[0x18];
     char m_hLastWeaponBeforeC4AutoSwitch[0x4];
     bool m_bIsRescuing;
-    char pad_2088[0x3];
+    char pad_2087[0x3];
     client_WeaponPurchaseTracker_t m_weaponPurchasesThisMatch;
     client_WeaponPurchaseTracker_t m_weaponPurchasesThisRound;
 };

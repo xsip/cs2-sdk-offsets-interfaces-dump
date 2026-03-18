@@ -13,13 +13,13 @@ class entity2_CEntityIdentity {
     int32_t m_nameStringableIndex;
     CUtlSymbolLarge m_name;
     CUtlSymbolLarge m_designerName;
-    char pad_2714[0x8];
+    char pad_2593[0x8];
     uint32_t m_flags;
-    char pad_2715[0x4];
+    char pad_2594[0x4];
     WorldGroupId_t m_worldGroupId;
     uint32_t m_fDataObjectTypes;
     networksystem_ChangeAccessorFieldPathIndex_t m_PathIndex;
-    char pad_2716[0x4];
+    char pad_2595[0x4];
     entity2_CEntityAttributeTable* m_pAttributes;
     entity2_CEntityIdentity* m_pPrev;
     entity2_CEntityIdentity* m_pNext;

@@ -17,7 +17,7 @@ class server_CPulseCell_Outflow_ScriptedSequence {
     bool m_bEnsureOnNavmeshOnFinish;
     bool m_bDontTeleportAtEnd;
     bool m_bDisallowInterrupts;
-    char pad_4092[0x1];
+    char pad_4091[0x1];
     server_PulseScriptedSequenceData_t m_scriptedSequenceDataMain;
     char m_vecAdditionalActors[0x18];
     pulse_runtime_lib_CPulse_ResumePoint m_OnFinished;

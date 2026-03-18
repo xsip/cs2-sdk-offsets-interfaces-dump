@@ -6,5 +6,5 @@
 class client_ragdollhierarchyjoint_t {
     int32_t parentIndex;
     int32_t childIndex;
-    char end_pad_2481[0x8];
+    char end_pad_2480[0x8];
 };

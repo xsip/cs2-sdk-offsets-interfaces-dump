@@ -11,7 +11,7 @@ class animlib_CNmFrameSnapEvent {
     animlib_NmPercent_t m_flDuration;
     CGlobalSymbol m_syncID;
     bool m_bClientOnly;
-    char end_pad_2498[0x7];
+    char end_pad_2497[0x7];
     animlib_NmFrameSnapEventMode_t m_frameSnapMode;
-    char end_pad_2518[0x4];
+    char end_pad_2517[0x4];
 };

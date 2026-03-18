@@ -4,5 +4,5 @@
 
 
 class server_IChoreoServices {
-    char pad_2745[0x8];
+    char pad_2744[0x8];
 };

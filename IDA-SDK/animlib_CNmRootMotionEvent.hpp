@@ -11,7 +11,7 @@ class animlib_CNmRootMotionEvent {
     animlib_NmPercent_t m_flDuration;
     CGlobalSymbol m_syncID;
     bool m_bClientOnly;
-    char end_pad_2498[0x7];
+    char end_pad_2497[0x7];
     float32 m_flBlendTimeSeconds;
-    char end_pad_2536[0x4];
+    char end_pad_2535[0x4];
 };

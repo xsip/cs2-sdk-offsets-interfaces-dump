@@ -10,7 +10,7 @@ class client_CCollisionProperty {
     client_VPhysicsCollisionAttribute_t m_collisionAttribute;
     Vector m_vecMins;
     Vector m_vecMaxs;
-    char pad_1695[0x2];
+    char pad_1694[0x2];
     uint8_t m_usSolidFlags;
     client_SolidType_t m_nSolidType;
     uint8_t m_triggerBloat;

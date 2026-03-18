@@ -13,5 +13,5 @@ class server_ServerAuthoritativeWeaponSlot_t {
     uint16_t unClass;
     uint16_t unSlot;
     uint16_t unItemDefIdx;
-    char end_pad_2991[0x2];
+    char end_pad_2990[0x2];
 };

@@ -7,6 +7,6 @@
 class client_CPlayer_AutoaimServices {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_2013[0x18];
-    char pad_2011[0x48];
+    char pad_2012[0x18];
+    char pad_2010[0x48];
 };

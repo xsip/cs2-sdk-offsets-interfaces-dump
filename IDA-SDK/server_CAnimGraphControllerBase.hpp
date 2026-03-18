@@ -9,5 +9,5 @@ class server_CAnimGraphControllerBase {
     void **__vftable_1;
     void **__vftable_2;
     client_ExternalAnimGraphHandle_t m_hExternalGraph;
-    char pad_2743[0x74];
+    char pad_2742[0x74];
 };

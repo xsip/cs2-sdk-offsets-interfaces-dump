@@ -4,10 +4,10 @@
 
 
 class server_CNavVolumeBreadthFirstSearch {
-    char pad_2849[0x78];
-    char pad_2848[0x28];
+    char pad_2848[0x78];
+    char pad_2847[0x28];
     void **__vftable_0;
     Vector m_vStartPos;
     float32 m_flSearchDist;
-    char end_pad_2847[0x8];
+    char end_pad_2846[0x8];
 };

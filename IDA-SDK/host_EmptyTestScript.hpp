@@ -6,6 +6,6 @@
 class host_EmptyTestScript {
     void **__vftable_0;
     bool m_bIsValid;
-    char end_pad_4284[0x7];
+    char end_pad_4283[0x7];
     char m_hTest[0x10];
 };

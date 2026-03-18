@@ -4,5 +4,5 @@
 
 
 class client_CFilterMultipleAPI {
-    char pad_1726[0x8];
+    char pad_1725[0x8];
 };

@@ -9,6 +9,6 @@ class client_ResponseParams {
     void **__vftable_1;
     int16_t odds;
     int16_t flags;
-    char pad_2454[0x4];
+    char pad_2453[0x4];
     client_ResponseFollowup* m_pFollowup;
 };

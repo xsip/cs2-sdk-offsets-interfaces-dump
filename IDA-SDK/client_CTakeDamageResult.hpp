@@ -15,7 +15,7 @@ class client_CTakeDamageResult {
     float32 m_flTotalledPreModifiedDamage;
     bool m_bWasDamageSuppressed;
     bool m_bSuppressFlinch;
-    char pad_2463[0x2];
+    char pad_2462[0x2];
     client_HitGroup_t m_nOverrideFlinchHitGroup;
-    char pad_2464[0x4];
+    char pad_2463[0x4];
 };

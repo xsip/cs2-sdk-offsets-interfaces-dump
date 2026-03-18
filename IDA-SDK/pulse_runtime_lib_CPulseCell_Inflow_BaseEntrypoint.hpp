@@ -11,6 +11,6 @@ class pulse_runtime_lib_CPulseCell_Inflow_BaseEntrypoint {
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
     char end_pad_512[0x3c];
     pulse_runtime_lib_PulseRuntimeChunkIndex_t m_EntryChunk;
-    char pad_517[0x4];
+    char pad_516[0x4];
     pulse_runtime_lib_PulseRegisterMap_t m_RegisterMap;
 };

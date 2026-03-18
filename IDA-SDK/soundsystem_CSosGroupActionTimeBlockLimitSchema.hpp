@@ -4,7 +4,7 @@
 
 
 class soundsystem_CSosGroupActionTimeBlockLimitSchema {
-    char pad_556[0x8];
+    char pad_555[0x8];
     int32_t m_nMaxCount;
     float32 m_flMaxDuration;
 };

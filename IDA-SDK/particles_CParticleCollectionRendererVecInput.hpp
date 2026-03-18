@@ -10,14 +10,14 @@ class particleslib_CParticleFloatInput;
 #include "particleslib_CParticleFloatInput.hpp"
 
 class particles_CParticleCollectionRendererVecInput {
-    char pad_607[0x10];
+    char pad_606[0x10];
     particleslib_ParticleVecType_t m_nType;
     Vector m_vLiteralValue;
     Color m_LiteralColor;
-    char pad_686[0x4];
+    char pad_685[0x4];
     CParticleNamedValueRef m_NamedValue;
     bool m_bFollowNamedValue;
-    char pad_687[0x3];
+    char pad_686[0x3];
     particles_ParticleAttributeIndex_t m_nVectorAttribute;
     Vector m_vVectorAttributeScale;
     int32_t m_nControlPoint;
@@ -36,6 +36,6 @@ class particles_CParticleCollectionRendererVecInput {
     CColorGradient m_Gradient;
     Vector m_vRandomMin;
     Vector m_vRandomMax;
+    char pad_683[0x6b8];
     char pad_684[0x6b8];
-    char pad_685[0x6b8];
 };

@@ -8,7 +8,7 @@ class particles_ParticleChildrenInfo_t {
     float32 m_flDelay;
     bool m_bEndCap;
     bool m_bDisableChild;
-    char pad_1249[0x2];
+    char pad_1248[0x2];
     particles_ParticleDetailLevel_t m_nDetailLevel;
-    char end_pad_1250[0xc];
+    char end_pad_1249[0xc];
 };

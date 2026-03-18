@@ -4,6 +4,6 @@
 
 
 class server_CNavVolumeCalculatedVector {
-    char pad_2849[0x78];
-    char pad_2848[0x28];
+    char pad_2848[0x78];
+    char pad_2847[0x28];
 };

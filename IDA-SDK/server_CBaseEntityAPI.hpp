@@ -4,5 +4,5 @@
 
 
 class server_CBaseEntityAPI {
-    char pad_3067[0x8];
+    char pad_3066[0x8];
 };

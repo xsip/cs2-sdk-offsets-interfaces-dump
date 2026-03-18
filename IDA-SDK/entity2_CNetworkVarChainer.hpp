@@ -10,5 +10,5 @@ class entity2_CNetworkVarChainer {
     void **__vftable_2;
     void **__vftable_3;
     networksystem_ChangeAccessorFieldPathIndex_t m_PathIndex;
-    char end_pad_2718[0x4];
+    char end_pad_2607[0x4];
 };

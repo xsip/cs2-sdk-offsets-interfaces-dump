@@ -9,5 +9,5 @@ class client_EventClientFrameSimulate_t {
     float32 m_flRealTime;
     float32 m_flFrameTime;
     bool m_bScheduleSendTickPacket;
-    char end_pad_2424[0x7];
+    char end_pad_2423[0x7];
 };

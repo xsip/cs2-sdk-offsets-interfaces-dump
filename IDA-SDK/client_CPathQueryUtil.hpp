@@ -11,5 +11,5 @@ class client_CPathQueryUtil {
     char m_vecPathSampleParameters[0x18];
     char m_vecPathSampleDistances[0x18];
     bool m_bIsClosedLoop;
-    char end_pad_1830[0x7];
+    char end_pad_1829[0x7];
 };

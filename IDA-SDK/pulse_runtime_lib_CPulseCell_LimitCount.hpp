@@ -9,5 +9,5 @@ class pulse_runtime_lib_CPulseCell_LimitCount {
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
     char end_pad_512[0x3c];
     int32_t m_nLimitCount;
-    char end_pad_521[0x4];
+    char end_pad_520[0x4];
 };

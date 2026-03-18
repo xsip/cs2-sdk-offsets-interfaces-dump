@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCVMixListResource {
-    char pad_1299[0x1];
+    char pad_1287[0x1];
 };

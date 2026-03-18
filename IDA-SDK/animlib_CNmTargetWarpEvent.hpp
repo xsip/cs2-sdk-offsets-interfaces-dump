@@ -11,8 +11,8 @@ class animlib_CNmTargetWarpEvent {
     animlib_NmPercent_t m_flDuration;
     CGlobalSymbol m_syncID;
     bool m_bClientOnly;
-    char end_pad_2498[0x7];
+    char end_pad_2497[0x7];
     animlib_NmTargetWarpRule_t m_rule;
     animlib_NmTargetWarpAlgorithm_t m_algorithm;
-    char end_pad_2551[0x6];
+    char end_pad_2550[0x6];
 };

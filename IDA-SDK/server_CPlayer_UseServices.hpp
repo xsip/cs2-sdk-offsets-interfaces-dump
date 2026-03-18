@@ -7,6 +7,6 @@
 class server_CPlayer_UseServices {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_2013[0x18];
-    char pad_3476[0x48];
+    char pad_2012[0x18];
+    char pad_3475[0x48];
 };

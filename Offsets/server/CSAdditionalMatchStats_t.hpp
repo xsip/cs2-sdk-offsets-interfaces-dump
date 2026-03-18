@@ -8,20 +8,20 @@
 namespace CS2 {
 	namespace SchemaOffsets {
 		namespace server {
-			// Class size: 0x120
+			// Class size: 0x128
 			namespace CSAdditionalMatchStats_t /*: public CS2::server::CSAdditionalPerRoundStats_t*/ {
-				constexpr std::ptrdiff_t m_numRoundsSurvivedStreak = 0xf0; // int32_t m_numRoundsSurvivedStreak; |  0xf0 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_maxNumRoundsSurvivedStreak = 0xf4; // int32_t m_maxNumRoundsSurvivedStreak; |  0xf4 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_numRoundsSurvivedTotal = 0xf8; // int32_t m_numRoundsSurvivedTotal; |  0xf8 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iRoundsWonWithoutPurchase = 0xfc; // int32_t m_iRoundsWonWithoutPurchase; |  0xfc | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iRoundsWonWithoutPurchaseTotal = 0x100; // int32_t m_iRoundsWonWithoutPurchaseTotal; |  0x100 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_numFirstKills = 0x104; // int32_t m_numFirstKills; |  0x104 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_numClutchKills = 0x108; // int32_t m_numClutchKills; |  0x108 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_numPistolKills = 0x10c; // int32_t m_numPistolKills; |  0x10c | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_numSniperKills = 0x110; // int32_t m_numSniperKills; |  0x110 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iNumSuicides = 0x114; // int32_t m_iNumSuicides; |  0x114 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_iNumTeamKills = 0x118; // int32_t m_iNumTeamKills; |  0x118 | Schema_Builtin | Size: 0x4
-				constexpr std::ptrdiff_t m_flTeamDamage = 0x11c; // float32 m_flTeamDamage; |  0x11c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_numRoundsSurvivedStreak = 0xf8; // int32_t m_numRoundsSurvivedStreak; |  0xf8 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_maxNumRoundsSurvivedStreak = 0xfc; // int32_t m_maxNumRoundsSurvivedStreak; |  0xfc | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_numRoundsSurvivedTotal = 0x100; // int32_t m_numRoundsSurvivedTotal; |  0x100 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iRoundsWonWithoutPurchase = 0x104; // int32_t m_iRoundsWonWithoutPurchase; |  0x104 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iRoundsWonWithoutPurchaseTotal = 0x108; // int32_t m_iRoundsWonWithoutPurchaseTotal; |  0x108 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_numFirstKills = 0x10c; // int32_t m_numFirstKills; |  0x10c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_numClutchKills = 0x110; // int32_t m_numClutchKills; |  0x110 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_numPistolKills = 0x114; // int32_t m_numPistolKills; |  0x114 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_numSniperKills = 0x118; // int32_t m_numSniperKills; |  0x118 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iNumSuicides = 0x11c; // int32_t m_iNumSuicides; |  0x11c | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_iNumTeamKills = 0x120; // int32_t m_iNumTeamKills; |  0x120 | Schema_Builtin | Size: 0x4
+				constexpr std::ptrdiff_t m_flTeamDamage = 0x124; // float32 m_flTeamDamage; |  0x124 | Schema_Builtin | Size: 0x4
 			}
 		}
 	}

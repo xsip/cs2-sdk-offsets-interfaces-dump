@@ -8,5 +8,5 @@ class server_PhysicsRagdollPose_t {
     char m_Transforms[0x18];
     char m_hOwner[0x4];
     bool m_bSetFromDebugHistory;
-    char end_pad_4266[0x3];
+    char end_pad_4265[0x3];
 };

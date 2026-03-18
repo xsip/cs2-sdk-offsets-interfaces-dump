@@ -7,12 +7,12 @@
 class server_sky3dparams_t {
     void **__vftable_0;
     int16_t scale;
-    char pad_4280[0x2];
+    char pad_4279[0x2];
     Vector origin;
     bool bClip3DSkyBoxNearToWorldFar;
-    char pad_4281[0x3];
+    char pad_4280[0x3];
     float32 flClip3DSkyBoxNearToWorldFarOffset;
     server_fogparams_t fog;
     WorldGroupId_t m_nWorldGroupID;
-    char end_pad_4282[0x4];
+    char end_pad_4281[0x4];
 };

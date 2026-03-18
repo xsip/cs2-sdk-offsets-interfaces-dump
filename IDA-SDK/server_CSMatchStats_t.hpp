@@ -23,7 +23,7 @@ class server_CSMatchStats_t {
     int32_t m_iCashEarned;
     int32_t m_iUtilityDamage;
     int32_t m_iEnemiesFlashed;
-    char pad_3271[0x4];
+    char pad_3270[0x4];
     int32_t m_iEnemy5Ks;
     int32_t m_iEnemy4Ks;
     int32_t m_iEnemy3Ks;
@@ -45,5 +45,5 @@ class server_CSMatchStats_t {
     int32_t m_i1v2Wins;
     int32_t m_iEntryCount;
     int32_t m_iEntryWins;
-    char end_pad_4139[0x4];
+    char end_pad_4138[0x4];
 };

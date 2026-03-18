@@ -6,6 +6,6 @@
 class server_SoundOpvarTraceResult_t {
     Vector vPos;
     bool bDidHit;
-    char pad_2884[0x3];
+    char pad_2883[0x3];
     float32 flDistSqrToCenter;
 };

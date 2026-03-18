@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeGridOriginMode {
-    char pad_2626[0x40];
+    char pad_2645[0x40];
 };

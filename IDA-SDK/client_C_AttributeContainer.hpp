@@ -10,12 +10,12 @@ class client_C_AttributeContainer {
     int32_t m_iReapplyProvisionParity;
     char m_hOuter[0x4];
     bool m_bPreventLoopback;
-    char pad_1374[0x3];
+    char pad_1373[0x3];
     client_attributeprovidertypes_t m_ProviderType;
     char m_CachedResults[0x18];
-    char end_pad_1375[0x8];
+    char end_pad_1374[0x8];
     client_C_EconItemView m_Item;
     int32_t m_iExternalItemProviderRegisteredToken;
-    char pad_1975[0x4];
+    char pad_1974[0x4];
     uint64_t m_ullRegisteredAsItemID;
 };

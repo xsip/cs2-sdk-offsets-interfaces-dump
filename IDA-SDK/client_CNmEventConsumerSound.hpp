@@ -4,6 +4,6 @@
 
 
 class client_CNmEventConsumerSound {
-    char pad_1820[0x10];
-    char pad_1825[0x20];
+    char pad_1819[0x10];
+    char pad_1824[0x20];
 };

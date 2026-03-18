@@ -4,5 +4,5 @@
 
 
 class server_CPointTeleportAPI {
-    char pad_4065[0x8];
+    char pad_4064[0x8];
 };

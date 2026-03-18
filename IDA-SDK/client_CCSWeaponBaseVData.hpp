@@ -21,24 +21,24 @@
 #include "client_CFiringModeInt.hpp"
 
 class client_CCSWeaponBaseVData {
-    char pad_1546[0x28];
+    char pad_1545[0x28];
     char m_szWorldModel[0xe0];
     char m_sToolsOnlyOwnerModelName[0xe0];
     bool m_bBuiltRightHanded;
     bool m_bAllowFlipping;
-    char pad_1547[0x6];
+    char pad_1546[0x6];
     CAttachmentNameSymbolWithStorage m_sMuzzleAttachment;
     char m_szMuzzleFlashParticle[0xe0];
     CUtlString m_szMuzzleFlashParticleConfig;
     char m_szBarrelSmokeParticle[0xe0];
     uint8_t m_nMuzzleSmokeShotThreshold;
-    char pad_1548[0x3];
+    char pad_1547[0x3];
     float32 m_flMuzzleSmokeTimeout;
     float32 m_flMuzzleSmokeDecrementRate;
     bool m_bGenerateMuzzleLight;
     bool m_bLinkedCooldowns;
     client_ItemFlagTypes_t m_iFlags;
-    char pad_1549[0x1];
+    char pad_1548[0x1];
     int32_t m_iWeight;
     bool m_bAutoSwitchTo;
     bool m_bAutoSwitchFrom;
@@ -51,12 +51,12 @@ class client_CCSWeaponBaseVData {
     bool m_bReserveAmmoAsClips;
     bool m_bTreatAsSingleClip;
     bool m_bKeepLoadedAmmo;
-    char pad_1550[0x1];
+    char pad_1549[0x1];
     client_RumbleEffect_t m_iRumbleEffect;
     float32 m_flDropSpeed;
     int32_t m_iSlot;
     int32_t m_iPosition;
-    char pad_1551[0x4];
+    char pad_1550[0x4];
     char m_aShootSounds[0x28];
     client_CSWeaponType m_WeaponType;
     client_CSWeaponCategory m_WeaponCategory;
@@ -80,10 +80,10 @@ class client_CCSWeaponBaseVData {
     int32_t m_nCrosshairMinDistance;
     int32_t m_nCrosshairDeltaDistance;
     bool m_bIsFullAuto;
-    char pad_1682[0x3];
+    char pad_1681[0x3];
     int32_t m_nNumBullets;
     bool m_bReloadsSingleShells;
-    char pad_1683[0x3];
+    char pad_1682[0x3];
     client_CFiringModeFloat m_flCycleTime;
     client_CFiringModeFloat m_flMaxSpeed;
     client_CFiringModeFloat m_flSpread;
@@ -106,7 +106,7 @@ class client_CCSWeaponBaseVData {
     float32 m_flDisallowAttackAfterReloadStartDuration;
     int32_t m_nBurstShotCount;
     bool m_bAllowBurstHolster;
-    char pad_1684[0x3];
+    char pad_1683[0x3];
     int32_t m_nRecoilSeed;
     int32_t m_nSpreadSeed;
     float32 m_flAttackMovespeedFactor;
@@ -115,7 +115,7 @@ class client_CCSWeaponBaseVData {
     CUtlString m_szUseRadioSubtitle;
     bool m_bUnzoomsAfterShot;
     bool m_bHideViewModelWhenZoomed;
-    char pad_1685[0x2];
+    char pad_1684[0x2];
     int32_t m_nZoomLevels;
     int32_t m_nZoomFOV1;
     int32_t m_nZoomFOV2;
@@ -144,5 +144,5 @@ class client_CCSWeaponBaseVData {
     float32 m_flThrowVelocity;
     Vector m_vSmokeColor;
     CGlobalSymbol m_szAnimClass;
-    char end_pad_1686[0x30];
+    char end_pad_1685[0x30];
 };

@@ -6,7 +6,7 @@
 class particles_PointDefinitionWithTimeValues_t {
     int32_t m_nControlPoint;
     bool m_bLocalCoords;
-    char pad_1259[0x3];
+    char pad_1258[0x3];
     Vector m_vOffset;
     float32 m_flTimeDuration;
 };

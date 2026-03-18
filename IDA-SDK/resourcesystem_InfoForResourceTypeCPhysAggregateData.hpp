@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCPhysAggregateData {
-    char pad_1266[0x1];
+    char pad_1265[0x1];
 };

@@ -7,5 +7,5 @@
 class client_CPlayerControllerComponent {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char end_pad_1644[0x10];
+    char end_pad_1643[0x10];
 };

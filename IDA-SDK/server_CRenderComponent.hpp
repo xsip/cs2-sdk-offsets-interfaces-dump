@@ -5,15 +5,15 @@
 #include "entity2_CNetworkVarChainer.hpp"
 
 class server_CRenderComponent {
-    char pad_1557[0x8];
+    char pad_1556[0x8];
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_4122[0x18];
+    char pad_4121[0x18];
     bool m_bIsRenderingWithViewModels;
-    char pad_4123[0x3];
+    char pad_4122[0x3];
     uint32_t m_nSplitscreenFlags;
     bool m_bEnableRendering;
-    char pad_4124[0x4f];
+    char pad_4123[0x4f];
     bool m_bInterpolationReadyToDraw;
-    char end_pad_4125[0x7];
+    char end_pad_4124[0x7];
 };

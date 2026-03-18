@@ -4,5 +4,5 @@
 
 
 class smartprops_CSmartPropAttributeTraceNoHit {
-    char pad_2643[0x40];
+    char pad_2662[0x40];
 };

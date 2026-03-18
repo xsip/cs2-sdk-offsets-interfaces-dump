@@ -8,13 +8,13 @@
 class particles_TextureGroup_t {
     bool m_bEnabled;
     bool m_bReplaceTextureWithGradient;
-    char pad_1261[0x6];
+    char pad_1260[0x6];
     char m_hTexture[0x8];
     CColorGradient m_Gradient;
     particles_SpriteCardTextureType_t m_nTextureType;
     particles_SpriteCardTextureChannel_t m_nTextureChannels;
     particles_ParticleTextureLayerBlendType_t m_nTextureBlendMode;
-    char pad_1262[0x4];
+    char pad_1261[0x4];
     particleslib_CParticleCollectionRendererFloatInput m_flTextureBlend;
     particles_TextureControls_t m_TextureControls;
 };

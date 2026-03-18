@@ -11,8 +11,8 @@ class animlib_CNmTransitionEvent {
     animlib_NmPercent_t m_flDuration;
     CGlobalSymbol m_syncID;
     bool m_bClientOnly;
-    char end_pad_2498[0x7];
+    char end_pad_2497[0x7];
     animlib_NmTransitionRule_t m_rule;
-    char pad_2552[0x7];
+    char pad_2551[0x7];
     CGlobalSymbol m_ID;
 };

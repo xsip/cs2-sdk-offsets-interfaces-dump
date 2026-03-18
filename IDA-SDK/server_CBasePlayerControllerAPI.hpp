@@ -4,5 +4,5 @@
 
 
 class server_CBasePlayerControllerAPI {
-    char pad_3083[0x8];
+    char pad_3082[0x8];
 };

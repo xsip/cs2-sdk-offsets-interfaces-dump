@@ -5,7 +5,7 @@
 
 class soundsystem_lowlevel_CVMixNameInput {
     CUtlString m_name;
-    char end_pad_625[0x8];
+    char end_pad_624[0x8];
     CUtlString m_defaultValue;
-    char end_pad_644[0x8];
+    char end_pad_643[0x8];
 };

@@ -9,9 +9,9 @@ class rendersystemdx11_RsBlendStateDesc_t {
     uint32_t m_srcBlendAlphaBits;
     uint32_t m_destBlendAlphaBits;
     uint32_t m_renderTargetWriteMaskBits;
-    char pad_4305[0x4];
+    char pad_4304[0x4];
     uint32_t m_blendOpAlphaBits;
     uint8_t m_blendEnableBits;
     uint8_t m_srgbWriteEnableBits;
-    char end_pad_4306[0x2];
+    char end_pad_4305[0x2];
 };

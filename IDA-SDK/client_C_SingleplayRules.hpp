@@ -10,5 +10,5 @@ class client_C_SingleplayRules {
     int32_t m_nTotalPausedTicks;
     int32_t m_nPauseStartTick;
     bool m_bGamePaused;
-    char pad_2140[0x7];
+    char pad_2139[0x7];
 };

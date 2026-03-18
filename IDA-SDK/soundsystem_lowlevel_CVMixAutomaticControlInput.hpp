@@ -8,5 +8,5 @@ class soundsystem_lowlevel_CVMixAutomaticControlInput {
     int32_t m_nControlInputIndex;
     bool m_bIsTrackSend;
     bool m_bIsStackVar;
-    char end_pad_622[0x2];
+    char end_pad_621[0x2];
 };

@@ -4,5 +4,5 @@
 
 
 class resourcefile_InfoForResourceTypeCResourceManifestInternal {
-    char pad_2728[0x1];
+    char pad_2727[0x1];
 };

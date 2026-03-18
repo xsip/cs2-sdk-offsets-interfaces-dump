@@ -11,8 +11,8 @@ class client_ViewAngleServerChange_t {
     void **__vftable_4;
     void **__vftable_5;
     client_FixAngleSet_t nType;
-    char pad_2467[0x3];
+    char pad_2466[0x3];
     QAngle qAngle;
     uint32_t nIndex;
-    char end_pad_2468[0x4];
+    char end_pad_2467[0x4];
 };

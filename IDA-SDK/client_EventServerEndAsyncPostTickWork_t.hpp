@@ -4,5 +4,5 @@
 
 
 class client_EventServerEndAsyncPostTickWork_t {
-    char pad_2432[0x1];
+    char pad_2431[0x1];
 };

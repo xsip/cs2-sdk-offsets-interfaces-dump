@@ -6,5 +6,5 @@
 class server_RotatorQueueEntry_t {
     Quaternion qTarget;
     server_RotatorTargetSpace_t eSpace;
-    char end_pad_2881[0xc];
+    char end_pad_2880[0xc];
 };

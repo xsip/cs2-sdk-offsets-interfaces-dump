@@ -4,5 +4,5 @@
 
 
 class animlib_CNmPoseTask {
-    char pad_1819[0x58];
+    char pad_1818[0x58];
 };

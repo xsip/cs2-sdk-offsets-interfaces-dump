@@ -4,5 +4,5 @@
 
 
 class resourcesystem_InfoForResourceTypeCVPhysXSurfacePropertiesList {
-    char pad_1300[0x1];
+    char pad_1288[0x1];
 };

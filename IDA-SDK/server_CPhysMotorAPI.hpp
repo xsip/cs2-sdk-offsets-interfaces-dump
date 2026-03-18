@@ -4,5 +4,5 @@
 
 
 class server_CPhysMotorAPI {
-    char pad_3988[0x8];
+    char pad_3987[0x8];
 };

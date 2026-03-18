@@ -10,6 +10,6 @@ class physicslib_FeAntiTunnelProbeBuild_t {
     float32 flCurvature;
     uint32_t nFlags;
     uint16_t nProbeNode;
-    char pad_1325[0x2];
+    char pad_1324[0x2];
     char targetNodes[0x18];
 };

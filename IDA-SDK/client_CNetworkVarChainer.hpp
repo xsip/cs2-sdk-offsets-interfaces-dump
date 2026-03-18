@@ -10,5 +10,5 @@ class client_CNetworkVarChainer {
     void **__vftable_2;
     void **__vftable_3;
     networksystem_ChangeAccessorFieldPathIndex_t m_PathIndex;
-    char pad_1445[0x4];
+    char pad_1444[0x4];
 };

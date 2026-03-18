@@ -4,11 +4,11 @@
 
 
 class soundsystem_CSosGroupActionLimitSchema {
-    char pad_556[0x8];
+    char pad_555[0x8];
     int32_t m_nMaxCount;
     soundsystem_SosActionStopType_t m_nStopType;
     soundsystem_SosActionLimitSortType_t m_nSortType;
     bool m_bStopImmediate;
     bool m_bCountStopped;
-    char end_pad_555[0x2];
+    char end_pad_554[0x2];
 };

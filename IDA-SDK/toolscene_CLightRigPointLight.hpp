@@ -15,5 +15,5 @@ class toolscene_CLightRigPointLight {
     float32 m_flDistance;
     bool m_bRelativePositioning;
     bool m_bParentToCamera;
-    char end_pad_2594[0x2];
+    char end_pad_2613[0x2];
 };

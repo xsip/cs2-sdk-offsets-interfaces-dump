@@ -4,5 +4,5 @@
 
 
 class entity2_CEntityComponent {
-    char pad_1557[0x8];
+    char pad_1556[0x8];
 };

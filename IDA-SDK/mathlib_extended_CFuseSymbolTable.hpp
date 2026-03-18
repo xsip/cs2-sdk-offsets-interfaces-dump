@@ -10,5 +10,5 @@ class mathlib_extended_CFuseSymbolTable {
     char m_constantMap[0x20];
     char m_variableMap[0x20];
     char m_functionMap[0x20];
-    char end_pad_2559[0x8];
+    char end_pad_2558[0x8];
 };

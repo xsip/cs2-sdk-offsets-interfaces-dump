@@ -7,6 +7,6 @@
 class server_CPlayer_FlashlightServices {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_2013[0x18];
-    char pad_4027[0x48];
+    char pad_2012[0x18];
+    char pad_4026[0x48];
 };

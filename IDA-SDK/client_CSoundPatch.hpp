@@ -10,10 +10,10 @@ class client_CSoundPatch {
     void **__vftable_0;
     client_CSoundEnvelope m_pitch;
     client_CSoundEnvelope m_volume;
-    char pad_2321[0x14];
+    char pad_2320[0x14];
     float32 m_shutdownTime;
     float32 m_flLastTime;
-    char pad_2322[0x4];
+    char pad_2321[0x4];
     CUtlSymbolLarge m_iszSoundScriptName;
     char m_hEnt[0x4];
     CEntityIndex m_soundEntityIndex;
@@ -22,6 +22,6 @@ class client_CSoundPatch {
     client_CCopyRecipientFilter m_Filter;
     float32 m_flCloseCaptionDuration;
     bool m_bUpdatedSoundOrigin;
-    char pad_2323[0x3];
+    char pad_2322[0x3];
     CUtlSymbolLarge m_iszClassName;
 };

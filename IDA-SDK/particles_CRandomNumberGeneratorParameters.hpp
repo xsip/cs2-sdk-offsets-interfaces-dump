@@ -5,6 +5,6 @@
 
 class particles_CRandomNumberGeneratorParameters {
     bool m_bDistributeEvenly;
-    char pad_729[0x3];
+    char pad_728[0x3];
     int32_t m_nSeed;
 };

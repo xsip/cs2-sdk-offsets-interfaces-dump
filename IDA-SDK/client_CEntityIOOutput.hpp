@@ -4,5 +4,5 @@
 
 
 class client_CEntityIOOutput {
-    char pad_1536[0x18];
+    char pad_1535[0x18];
 };

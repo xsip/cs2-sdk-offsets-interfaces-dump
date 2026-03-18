@@ -10,10 +10,10 @@
 class pulse_runtime_lib_CPulse_CallInfo {
     PulseSymbol_t m_PortName;
     pulse_runtime_lib_PulseDocNodeID_t m_nEditorNodeID;
-    char pad_536[0x4];
+    char pad_535[0x4];
     pulse_runtime_lib_PulseRegisterMap_t m_RegisterMap;
     pulse_runtime_lib_PulseDocNodeID_t m_CallMethodID;
     pulse_runtime_lib_PulseRuntimeChunkIndex_t m_nSrcChunk;
     int32_t m_nSrcInstruction;
-    char end_pad_537[0x4];
+    char end_pad_536[0x4];
 };

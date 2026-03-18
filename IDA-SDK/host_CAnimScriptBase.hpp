@@ -6,5 +6,5 @@
 class host_CAnimScriptBase {
     void **__vftable_0;
     bool m_bIsValid;
-    char end_pad_4284[0x7];
+    char end_pad_4283[0x7];
 };

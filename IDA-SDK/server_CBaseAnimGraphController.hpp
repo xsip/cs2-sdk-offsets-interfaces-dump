@@ -11,16 +11,16 @@ class client_CSkeletonInstance;
 #include "resourcefile_ResourceId_t.hpp"
 
 class server_CBaseAnimGraphController {
-    char pad_1572[0x8];
+    char pad_1571[0x8];
     client_CSkeletonInstance* m_pSkeletonInstance;
     void **__vftable_0;
     client_AnimationAlgorithm_t m_nAnimationAlgorithm;
-    char pad_2955[0x7];
+    char pad_2954[0x7];
     server_CAnimGraphNetworkedVariables m_animGraphNetworkedVars;
     char m_pAnimGraphInstance[0x8];
-    char pad_2956[0x58];
+    char pad_2955[0x58];
     client_ExternalAnimGraphHandle_t m_nNextExternalGraphHandle;
-    char pad_2957[0x4];
+    char pad_2956[0x4];
     char m_vecSecondarySkeletonNames[0x18];
     char m_vecSecondarySkeletons[0x18];
     int32_t m_nSecondarySkeletonMasterCount;
@@ -31,15 +31,15 @@ class server_CBaseAnimGraphController {
     float32 m_flSeqFixedCycle;
     client_AnimLoopMode_t m_nAnimLoopMode;
     CNetworkedQuantizedFloat m_flPlaybackRate;
-    char pad_2958[0x4];
+    char pad_2957[0x4];
     client_SequenceFinishNotifyState_t m_nNotifyState;
     bool m_bNetworkedAnimationInputsChanged;
     bool m_bNetworkedSequenceChanged;
     bool m_bLastUpdateSkipped;
     bool m_bSequenceFinished;
-    char pad_2959[0x3];
+    char pad_2958[0x3];
     entity2_GameTick_t m_nPrevAnimUpdateTick;
-    char pad_2960[0x29c];
+    char pad_2959[0x29c];
     char m_hGraphDefinitionAG2[0x8];
     char m_serializedPoseRecipeAG2[0x18];
     int32_t m_nSerializePoseRecipeSizeAG2;
@@ -50,7 +50,7 @@ class server_CBaseAnimGraphController {
     char m_vecExternalGraphIds[0x18];
     char m_vecExternalClipIds[0x18];
     CGlobalSymbol m_sAnimGraph2Identifier;
-    char pad_2961[0x220];
+    char pad_2960[0x220];
     char m_vecExternalGraphs[0x18];
-    char pad_2962[0x20];
+    char pad_2961[0x20];
 };

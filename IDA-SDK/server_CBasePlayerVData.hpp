@@ -9,7 +9,7 @@
 #include "client_CSkillFloat.hpp"
 
 class server_CBasePlayerVData {
-    char pad_1546[0x28];
+    char pad_1545[0x28];
     char m_sModelName[0xe0];
     client_CSkillFloat m_flHeadDamageMultiplier;
     client_CSkillFloat m_flChestDamageMultiplier;

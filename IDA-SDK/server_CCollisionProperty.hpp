@@ -10,7 +10,7 @@ class server_CCollisionProperty {
     server_VPhysicsCollisionAttribute_t m_collisionAttribute;
     Vector m_vecMins;
     Vector m_vecMaxs;
-    char pad_3599[0x2];
+    char pad_3598[0x2];
     uint8_t m_usSolidFlags;
     client_SolidType_t m_nSolidType;
     uint8_t m_triggerBloat;

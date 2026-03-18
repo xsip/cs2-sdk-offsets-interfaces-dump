@@ -4,7 +4,7 @@
 
 
 class server_CPulseGraphInstance_ServerEntity {
-    char pad_2797[0x118];
+    char pad_2796[0x118];
     void **__vftable_0;
     void **__vftable_1;
     void **__vftable_2;
@@ -22,7 +22,7 @@ class server_CPulseGraphInstance_ServerEntity {
     void **__vftable_14;
     char m_hOwner[0x4];
     bool m_bActivated;
-    char pad_4100[0x3];
+    char pad_4099[0x3];
     CUtlSymbolLarge m_sNameFixupStaticPrefix;
     CUtlSymbolLarge m_sNameFixupParent;
     CUtlSymbolLarge m_sNameFixupLocal;

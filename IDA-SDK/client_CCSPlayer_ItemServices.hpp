@@ -7,8 +7,8 @@
 class client_CCSPlayer_ItemServices {
     void **__vftable_0;
     entity2_CNetworkVarChainer __m_pChainEntity;
-    char pad_2013[0x18];
+    char pad_2012[0x18];
     bool m_bHasDefuser;
     bool m_bHasHelmet;
-    char end_pad_1659[0x6];
+    char end_pad_1658[0x6];
 };

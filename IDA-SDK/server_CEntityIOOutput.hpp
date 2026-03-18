@@ -4,5 +4,5 @@
 
 
 class server_CEntityIOOutput {
-    char pad_2763[0x18];
+    char pad_2762[0x18];
 };

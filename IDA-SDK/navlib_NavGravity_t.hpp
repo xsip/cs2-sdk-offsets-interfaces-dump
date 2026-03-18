@@ -6,5 +6,5 @@
 class navlib_NavGravity_t {
     Vector m_vGravity;
     bool m_bDefault;
-    char end_pad_4292[0x3];
+    char end_pad_4291[0x3];
 };

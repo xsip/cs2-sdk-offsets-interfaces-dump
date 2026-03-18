@@ -6,6 +6,6 @@
 class physicslib_FeEdgeDesc_t {
     uint16_t nEdge[2];
     uint16_t nSide[2];
-    char pad_1335[0x8];
+    char pad_1334[0x8];
     uint16_t nVirtElem[2];
 };

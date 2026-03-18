@@ -4,5 +4,5 @@
 
 
 class entity2_CEntityIOOutput {
-    char pad_2712[0x18];
+    char pad_2605[0x18];
 };
