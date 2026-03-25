@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseToggle.hpp>
-#include <SDK/server/locksound_t.hpp>
-#include <SDK/server/FuncDoorSpawnPos_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CBaseToggle.hpp"
+#include "locksound_t.hpp"
+#include "FuncDoorSpawnPos_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 

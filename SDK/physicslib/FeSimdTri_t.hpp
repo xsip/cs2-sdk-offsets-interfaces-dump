@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/physicslib/FourVectors2D.hpp>
+#include "FourVectors2D.hpp"
 
 
 
@@ -21,8 +21,7 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSimdTri_t  {
 		public:
-			uint32_t nNode[4]; // 0x0 | Schema_FixedArray | Size: 0x0
-			S2_PAD(0x30);
+			uint32_t nNode[3][4]; // 0x0 | Schema_FixedArray | Size: 0x30
 			GlobalTypes::fltx4 w1; // 0x30 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 w2; // 0x40 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 v1x; // 0x50 | Schema_Atomic | Size: 0x10

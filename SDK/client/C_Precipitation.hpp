@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseTrigger.hpp>
-#include <SDK/client/TimedEvent.hpp>
+#include "C_BaseTrigger.hpp"
+#include "TimedEvent.hpp"
 
 
 
@@ -28,7 +28,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			char* m_pParticleDef; // 0xf70 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x20);
-			client::TimedEvent m_tParticlePrecipTraceTimer[1]; // 0xf98 | Schema_FixedArray | Size: 0x10
+			client::TimedEvent m_tParticlePrecipTraceTimer[1]; // 0xf98 | Schema_FixedArray | Size: 0x8
 			bool m_bActiveParticlePrecipEmitter[1]; // 0xfa0 | Schema_FixedArray | Size: 0x1
 			bool m_bParticlePrecipInitialized; // 0xfa1 | Schema_Builtin | Size: 0x1
 			bool m_bHasSimulatedSinceLastSceneObjectUpdate; // 0xfa2 | Schema_Builtin | Size: 0x1

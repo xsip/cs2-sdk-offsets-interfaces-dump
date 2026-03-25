@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CLogicalEntity.hpp>
-#include <SDK/server/CLightEntity.hpp>
+#include "CLogicalEntity.hpp"
+#include "CLightEntity.hpp"
 
 
 
@@ -31,7 +31,7 @@ namespace CS2 {
 			float32 m_flTargetBrightnessMultiplier; // 0x4c4 | Schema_Builtin | Size: 0x4
 			float32 m_flCurrentBrightnessMultiplier; // 0x4c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>> m_vecLights; // 0x4d0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>> m_vecLights; // 0x4d0 | Schema_Atomic | Size: 0x18
 			// char m_vecLights[0x18]; // 0x4d0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightNameFilter) == 0x4A8, "m_iszLightNameFilter in CMultiLightProxy should be at offset 0x4A8");

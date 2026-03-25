@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/physicslib/Name_t.hpp>
+#include "CollisionDetailLayerInfo_t_Name_t.hpp"
 
 
 
@@ -26,7 +26,7 @@ namespace CS2 {
 			bool m_bIsQueryOnly; // 0x10 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::CUtlString m_sParentDetailLayer; // 0x18 | Schema_Atomic | Size: 0x8
-			GlobalTypes::CUtlVector<physicslib::Name_t> m_vecSubtreeDetailLayers; // 0x20 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<physicslib::CollisionDetailLayerInfo_t_Name_t> m_vecSubtreeDetailLayers; // 0x20 | Schema_Atomic | Size: 0x18
 			// char m_vecSubtreeDetailLayers[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			bool m_bNotPickable; // 0x38 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding

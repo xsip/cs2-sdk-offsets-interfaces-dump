@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CLogicalEntity.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CLogicalEntity.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -26,7 +26,7 @@ namespace CS2 {
 			int32_t m_nShuffleCases; // 0x5a8 | Schema_Builtin | Size: 0x4
 			int32_t m_nLastShuffleCase; // 0x5ac | Schema_Builtin | Size: 0x4
 			uint8_t m_uchShuffleCaseMap[32]; // 0x5b0 | Schema_FixedArray | Size: 0x20
-			entity2::CEntityIOOutput m_OnCase[32]; // 0x5d0 | Schema_FixedArray | Size: 0x6000
+			entity2::CEntityIOOutput m_OnCase[32]; // 0x5d0 | Schema_FixedArray | Size: 0x300
 			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnDefault; // 0x8d0 | Schema_Atomic | Size: 0x20
 			// char m_OnDefault[0x20]; // 0x8d0 | Schema_Atomic | Size: 0x20
 		};

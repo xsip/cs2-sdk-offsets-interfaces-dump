@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseModelEntity.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
+#include "CBaseModelEntity.hpp"
+#include "../entity2/GameTime_t.hpp"
 
 
 
@@ -37,7 +37,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vServerControlPoints[4]; // 0x950 | Schema_FixedArray | Size: 0x30
 			uint8_t m_iServerControlPointAssignments[4]; // 0x980 | Schema_FixedArray | Size: 0x4
 			// server::CHandle< CBaseEntity > m_hControlPointEnts[64]; // 0x984 | Schema_FixedArray | Size: 0x100
-			char m_hControlPointEnts[0x4]; // 0x984 | Schema_FixedArray | Size: 0x4
+			char m_hControlPointEnts[0x100]; // 0x984 | Schema_FixedArray | Size: 0x4
 			bool m_bNoSave; // 0xa84 | Schema_Builtin | Size: 0x1
 			bool m_bNoFreeze; // 0xa85 | Schema_Builtin | Size: 0x1
 			bool m_bNoRamp; // 0xa86 | Schema_Builtin | Size: 0x1

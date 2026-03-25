@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/pulse_runtime_lib/CPulseCell_WaitForCursorsWithTagBase.hpp>
-#include <SDK/pulse_runtime_lib/PulseCursorCancelPriority_t.hpp>
+#include "CPulseCell_WaitForCursorsWithTagBase.hpp"
+#include "PulseCursorCancelPriority_t.hpp"
 
 
 

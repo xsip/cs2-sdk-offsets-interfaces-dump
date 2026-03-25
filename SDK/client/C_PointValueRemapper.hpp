@@ -4,19 +4,19 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseEntity.hpp>
-#include <SDK/client/ValueRemapperInputType_t.hpp>
-#include <SDK/client/ValueRemapperOutputType_t.hpp>
-#include <SDK/client/ValueRemapperHapticsType_t.hpp>
-#include <SDK/client/ValueRemapperMomentumType_t.hpp>
-#include <SDK/client/ValueRemapperRatchetType_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
+#include "C_BaseEntity.hpp"
+#include "ValueRemapperInputType_t.hpp"
+#include "ValueRemapperOutputType_t.hpp"
+#include "ValueRemapperHapticsType_t.hpp"
+#include "ValueRemapperMomentumType_t.hpp"
+#include "ValueRemapperRatchetType_t.hpp"
+#include "../entity2/GameTime_t.hpp"
 
 
 

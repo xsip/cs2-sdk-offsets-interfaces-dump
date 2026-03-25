@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBasePropDoor.hpp>
-#include <SDK/server/PropDoorRotatingSpawnPos_t.hpp>
-#include <SDK/server/PropDoorRotatingOpenDirection_e.hpp>
-#include <SDK/server/doorCheck_e.hpp>
+#include "CBasePropDoor.hpp"
+#include "PropDoorRotatingSpawnPos_t.hpp"
+#include "PropDoorRotatingOpenDirection_e.hpp"
+#include "doorCheck_e.hpp"
 
 
 

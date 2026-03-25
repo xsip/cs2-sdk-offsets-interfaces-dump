@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CFuncPlatRot.hpp>
-#include <SDK/server/TRAIN_CODE.hpp>
+#include "CFuncPlatRot.hpp"
+#include "TRAIN_CODE.hpp"
 
 
 

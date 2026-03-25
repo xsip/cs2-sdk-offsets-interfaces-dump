@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_ModelPointEntity.hpp>
-#include <SDK/client/PointWorldTextJustifyHorizontal_t.hpp>
-#include <SDK/client/PointWorldTextJustifyVertical_t.hpp>
-#include <SDK/client/PointWorldTextReorientMode_t.hpp>
+#include "C_ModelPointEntity.hpp"
+#include "PointWorldTextJustifyHorizontal_t.hpp"
+#include "PointWorldTextJustifyVertical_t.hpp"
+#include "PointWorldTextReorientMode_t.hpp"
 
 
 

@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CBaseAnimGraph.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/modellib/AttachmentHandle_t.hpp>
+#include "CBaseAnimGraph.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../modellib/AttachmentHandle_t.hpp"
 
 
 
@@ -37,8 +37,8 @@ namespace CS2 {
 			bool m_bFadingOut; // 0x1186 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
 			float32 m_flScaleEnd[10]; // 0x1188 | Schema_FixedArray | Size: 0x28
-			entity2::GameTime_t m_flScaleTimeStart[10]; // 0x11b0 | Schema_FixedArray | Size: 0x190
-			entity2::GameTime_t m_flScaleTimeEnd[10]; // 0x11d8 | Schema_FixedArray | Size: 0x190
+			entity2::GameTime_t m_flScaleTimeStart[10]; // 0x11b0 | Schema_FixedArray | Size: 0x28
+			entity2::GameTime_t m_flScaleTimeEnd[10]; // 0x11d8 | Schema_FixedArray | Size: 0x28
 		};
 		static_assert(offsetof(CS2::client::C_ClientRagdoll, m_bFadeOut) == 0x1168, "m_bFadeOut in C_ClientRagdoll should be at offset 0x1168");
 		static_assert(offsetof(CS2::client::C_ClientRagdoll, m_bImportant) == 0x1169, "m_bImportant in C_ClientRagdoll should be at offset 0x1169");

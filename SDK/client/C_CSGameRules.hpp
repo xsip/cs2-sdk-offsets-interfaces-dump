@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_TeamplayRules.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/C_RetakeGameRules.hpp>
+#include "C_TeamplayRules.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "C_RetakeGameRules.hpp"
 
 
 
@@ -99,7 +99,7 @@ namespace CS2 {
 			int32_t m_iMatchStats_PlayersAlive_CT[30]; // 0xa30 | Schema_FixedArray | Size: 0x78
 			int32_t m_iMatchStats_PlayersAlive_T[30]; // 0xaa8 | Schema_FixedArray | Size: 0x78
 			float32 m_TeamRespawnWaveTimes[32]; // 0xb20 | Schema_FixedArray | Size: 0x80
-			entity2::GameTime_t m_flNextRespawnWave[32]; // 0xba0 | Schema_FixedArray | Size: 0x1000
+			entity2::GameTime_t m_flNextRespawnWave[32]; // 0xba0 | Schema_FixedArray | Size: 0x80
 			GlobalTypes::Vector m_vMinimapMins; // 0xc20 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMinimapMaxs; // 0xc2c | Schema_Atomic | Size: 0xc
 			float32 m_MinimapVerticalSectionHeights[8]; // 0xc38 | Schema_FixedArray | Size: 0x20

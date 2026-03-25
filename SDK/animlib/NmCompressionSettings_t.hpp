@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/QuantizationRange_t.hpp>
+#include "NmCompressionSettings_t_QuantizationRange_t.hpp"
 
 
 
@@ -21,10 +21,10 @@ namespace CS2 {
 	namespace animlib {
 		class NmCompressionSettings_t  {
 		public:
-			animlib::QuantizationRange_t m_translationRangeX; // 0x0 | Schema_DeclaredClass | Size: 0x8
-			animlib::QuantizationRange_t m_translationRangeY; // 0x8 | Schema_DeclaredClass | Size: 0x8
-			animlib::QuantizationRange_t m_translationRangeZ; // 0x10 | Schema_DeclaredClass | Size: 0x8
-			animlib::QuantizationRange_t m_scaleRange; // 0x18 | Schema_DeclaredClass | Size: 0x8
+			animlib::NmCompressionSettings_t_QuantizationRange_t m_translationRangeX; // 0x0 | Schema_DeclaredClass | Size: 0x8
+			animlib::NmCompressionSettings_t_QuantizationRange_t m_translationRangeY; // 0x8 | Schema_DeclaredClass | Size: 0x8
+			animlib::NmCompressionSettings_t_QuantizationRange_t m_translationRangeZ; // 0x10 | Schema_DeclaredClass | Size: 0x8
+			animlib::NmCompressionSettings_t_QuantizationRange_t m_scaleRange; // 0x18 | Schema_DeclaredClass | Size: 0x8
 			GlobalTypes::Quaternion m_constantRotation; // 0x20 | Schema_Atomic | Size: 0x10
 			bool m_bIsRotationStatic; // 0x30 | Schema_Builtin | Size: 0x1
 			bool m_bIsTranslationStatic; // 0x31 | Schema_Builtin | Size: 0x1

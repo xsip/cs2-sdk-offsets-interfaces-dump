@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/DecalFlags_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/DecalRtEncoding_t.hpp>
+#include "DecalFlags_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "DecalRtEncoding_t.hpp"
 
 
 

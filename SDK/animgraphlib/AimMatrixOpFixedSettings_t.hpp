@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/CAnimAttachment.hpp>
-#include <SDK/animgraphlib/CAnimInputDamping.hpp>
-#include <SDK/animgraphlib/CPoseHandle.hpp>
-#include <SDK/animgraphlib/AimMatrixBlendMode.hpp>
-#include <SDK/animgraphlib/CBlendCurve.hpp>
+#include "../modellib/CAnimAttachment.hpp"
+#include "CAnimInputDamping.hpp"
+#include "CPoseHandle.hpp"
+#include "AimMatrixBlendMode.hpp"
+#include "CBlendCurve.hpp"
 
 
 
@@ -27,7 +27,7 @@ namespace CS2 {
 		public:
 			modellib::CAnimAttachment m_attachment; // 0x0 | Schema_DeclaredClass | Size: 0x80
 			animgraphlib::CAnimInputDamping m_damping; // 0x80 | Schema_DeclaredClass | Size: 0x18
-			animgraphlib::CPoseHandle m_poseCacheHandles[10]; // 0x98 | Schema_FixedArray | Size: 0x190
+			animgraphlib::CPoseHandle m_poseCacheHandles[10]; // 0x98 | Schema_FixedArray | Size: 0x28
 			animgraphlib::AimMatrixBlendMode m_eBlendMode; // 0xc0 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flMaxYawAngle; // 0xc4 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxPitchAngle; // 0xc8 | Schema_Builtin | Size: 0x4

@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CLogicalEntity.hpp>
-#include <SDK/server/CBaseEntity.hpp>
-#include <SDK/server/LogicBranchListenerLastState_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CLogicalEntity.hpp"
+#include "CBaseEntity.hpp"
+#include "CLogicBranchList_LogicBranchListenerLastState_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -25,9 +25,9 @@ namespace CS2 {
 		class CLogicBranchList : public CS2::server::CLogicalEntity {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_nLogicBranchNames[16]; // 0x4a8 | Schema_FixedArray | Size: 0x80
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_LogicBranchList; // 0x528 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_LogicBranchList; // 0x528 | Schema_Atomic | Size: 0x18
 			// char m_LogicBranchList[0x18]; // 0x528 | Schema_Atomic | Size: 0x18
-			server::LogicBranchListenerLastState_t m_eLastState; // 0x540 | Schema_DeclaredEnum | Size: 0x4
+			server::CLogicBranchList_LogicBranchListenerLastState_t m_eLastState; // 0x540 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnAllTrue; // 0x548 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnAllFalse; // 0x560 | Schema_DeclaredClass | Size: 0x18

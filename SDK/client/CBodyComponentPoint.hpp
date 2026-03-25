@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CBodyComponent.hpp>
-#include <SDK/client/CGameSceneNode.hpp>
+#include "CBodyComponent.hpp"
+#include "CGameSceneNode.hpp"
 
 
 

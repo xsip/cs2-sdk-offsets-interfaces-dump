@@ -4,23 +4,23 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseEntity.hpp>
-#include <SDK/server/CHitboxComponent.hpp>
-#include <SDK/client/HitGroup_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/client/RenderMode_t.hpp>
-#include <SDK/client/RenderFx_t.hpp>
-#include <SDK/server/EntityRenderAttribute_t.hpp>
-#include <SDK/server/CCollisionProperty.hpp>
-#include <SDK/server/CGlowProperty.hpp>
-#include <SDK/client/CNetworkViewOffsetVector.hpp>
+#include "CBaseEntity.hpp"
+#include "CHitboxComponent.hpp"
+#include "../client/HitGroup_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "../client/RenderMode_t.hpp"
+#include "../client/RenderFx_t.hpp"
+#include "EntityRenderAttribute_t.hpp"
+#include "CCollisionProperty.hpp"
+#include "CGlowProperty.hpp"
+#include "../client/CNetworkViewOffsetVector.hpp"
 
 
 
@@ -59,7 +59,7 @@ namespace CS2 {
 			S2_PAD(0x1d);
 			GlobalTypes::Color m_clrRender; // 0x538 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVectorEmbeddedNetworkVar<server::EntityRenderAttribute_t> m_vecRenderAttributes; // 0x540 | Schema_Atomic | Size: 0x68
+			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::EntityRenderAttribute_t> m_vecRenderAttributes; // 0x540 | Schema_Atomic | Size: 0x68
 			char m_vecRenderAttributes[0x68]; // 0x540 | Schema_Atomic | Size: 0x68
 			bool m_bRenderToCubemaps; // 0x5a8 | Schema_Builtin | Size: 0x1
 			bool m_bNoInterpolate; // 0x5a9 | Schema_Builtin | Size: 0x1

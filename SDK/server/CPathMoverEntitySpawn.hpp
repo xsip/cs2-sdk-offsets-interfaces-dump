@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseEntity.hpp>
+#include "CBaseEntity.hpp"
 
 
 
@@ -29,7 +29,7 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CFuncMover> hMover; // 0x0 | Schema_Atomic | Size: 0x4
 			// char hMover[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> vecOtherEntities; // 0x8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> vecOtherEntities; // 0x8 | Schema_Atomic | Size: 0x18
 			// char vecOtherEntities[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawn, hMover) == 0x0, "hMover in CPathMoverEntitySpawn should be at offset 0x0");

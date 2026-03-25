@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animgraphlib/CLeafUpdateNode.hpp>
-#include <SDK/animationsystem/HSequence.hpp>
-#include <SDK/animgraphlib/CAnimInputDamping.hpp>
-#include <SDK/animgraphlib/AnimValueSource.hpp>
-#include <SDK/animgraphlib/CAnimParamHandle.hpp>
+#include "CLeafUpdateNode.hpp"
+#include "../animationsystem/HSequence.hpp"
+#include "CAnimInputDamping.hpp"
+#include "AnimValueSource.hpp"
+#include "CAnimParamHandle.hpp"
 
 
 
@@ -26,7 +26,8 @@ namespace CS2 {
 		class CDirectionalBlendUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
 			S2_PAD(0x4);
-			animationsystem::HSequence m_hSequences[8]; // 0x5c | Schema_FixedArray | Size: 0x100
+			animationsystem::HSequence m_hSequences[8]; // 0x5c | Schema_FixedArray | Size: 0x20
+			S2_PAD(0x4);
 			animgraphlib::CAnimInputDamping m_damping; // 0x80 | Schema_DeclaredClass | Size: 0x18
 			animgraphlib::AnimValueSource m_blendValueSource; // 0x98 | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::CAnimParamHandle m_paramIndex; // 0x9c | Schema_DeclaredClass | Size: 0x2

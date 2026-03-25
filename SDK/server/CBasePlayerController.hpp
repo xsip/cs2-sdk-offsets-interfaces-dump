@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseEntity.hpp>
-#include <SDK/client/PlayerConnectedState.hpp>
-#include <SDK/client/ChatIgnoreType_t.hpp>
+#include "CBaseEntity.hpp"
+#include "../client/PlayerConnectedState.hpp"
+#include "../client/ChatIgnoreType_t.hpp"
 
 
 
@@ -39,7 +39,7 @@ namespace CS2 {
 			GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; // 0x4e8 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CHandle<server::CBasePlayerController> m_hSplitOwner; // 0x4ec | Schema_Atomic | Size: 0x4
 			// char m_hSplitOwner[0x4]; // 0x4ec | Schema_Atomic | Size: 0x4
-			server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>> m_hSplitScreenPlayers; // 0x4f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>> m_hSplitScreenPlayers; // 0x4f0 | Schema_Atomic | Size: 0x18
 			// char m_hSplitScreenPlayers[0x18]; // 0x4f0 | Schema_Atomic | Size: 0x18
 			bool m_bIsHLTV; // 0x508 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);

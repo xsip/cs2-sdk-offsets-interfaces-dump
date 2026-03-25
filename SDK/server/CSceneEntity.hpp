@@ -4,18 +4,18 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CPointEntity.hpp>
-#include <SDK/server/CBaseEntity.hpp>
-#include <SDK/server/CBaseFlex.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/server/CSceneListManager.hpp>
-#include <SDK/server/SceneOnPlayerDeath_t.hpp>
+#include "CPointEntity.hpp"
+#include "CBaseEntity.hpp"
+#include "CBaseFlex.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "CSceneListManager.hpp"
+#include "SceneOnPlayerDeath_t.hpp"
 
 
 
@@ -79,7 +79,7 @@ namespace CS2 {
 			S2_PAD(0x5);
 			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseFlex>> m_hActorList; // 0x558 | Schema_Atomic | Size: 0x18
 			char m_hActorList[0x18]; // 0x558 | Schema_Atomic | Size: 0x18
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hRemoveActorList; // 0x570 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hRemoveActorList; // 0x570 | Schema_Atomic | Size: 0x18
 			// char m_hRemoveActorList[0x18]; // 0x570 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x30);
 			uint16_t m_nSceneStringIndex; // 0x5b8 | Schema_Builtin | Size: 0x2
@@ -99,9 +99,9 @@ namespace CS2 {
 			bool m_bInterruptSceneFinished; // 0x6d3 | Schema_Builtin | Size: 0x1
 			bool m_bRestoring; // 0x6d4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::CUtlVector<GlobalTypes::CHandle<server::CSceneEntity>> m_hNotifySceneCompletion; // 0x6d8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CSceneEntity>> m_hNotifySceneCompletion; // 0x6d8 | Schema_Atomic | Size: 0x18
 			// char m_hNotifySceneCompletion[0x18]; // 0x6d8 | Schema_Atomic | Size: 0x18
-			server::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>> m_hListManagers; // 0x6f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>> m_hListManagers; // 0x6f0 | Schema_Atomic | Size: 0x18
 			// char m_hListManagers[0x18]; // 0x6f0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszSoundName; // 0x708 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszSequenceName; // 0x710 | Schema_Atomic | Size: 0x8

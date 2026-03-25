@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBreakableProp.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/client/AnimLoopMode_t.hpp>
+#include "CBreakableProp.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "../client/AnimLoopMode_t.hpp"
 
 
 

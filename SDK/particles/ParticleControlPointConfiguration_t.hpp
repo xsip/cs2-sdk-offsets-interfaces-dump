@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/particles/ParticleControlPointDriver_t.hpp>
-#include <SDK/particles/ParticlePreviewState_t.hpp>
+#include "ParticleControlPointDriver_t.hpp"
+#include "ParticlePreviewState_t.hpp"
 
 
 

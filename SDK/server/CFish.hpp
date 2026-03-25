@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseAnimGraph.hpp>
-#include <SDK/server/CountdownTimer.hpp>
+#include "CBaseAnimGraph.hpp"
+#include "CountdownTimer.hpp"
 
 
 
@@ -52,7 +52,7 @@ namespace CS2 {
 			server::CountdownTimer m_panicTimer; // 0xac8 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_disperseTimer; // 0xae0 | Schema_DeclaredClass | Size: 0x18
 			server::CountdownTimer m_proximityTimer; // 0xaf8 | Schema_DeclaredClass | Size: 0x18
-			// server::CUtlVector<server::CFish*> m_visible; // 0xb10 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector<server::CFish*> m_visible; // 0xb10 | Schema_Atomic | Size: 0x18
 			char m_visible[0x18]; // 0xb10 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

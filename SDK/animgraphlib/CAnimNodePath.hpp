@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/AnimNodeID.hpp>
+#include "../modellib/AnimNodeID.hpp"
 
 
 
@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace animgraphlib {
 		class CAnimNodePath  {
 		public:
-			modellib::AnimNodeID m_path[11]; // 0x0 | Schema_FixedArray | Size: 0x1e4
+			modellib::AnimNodeID m_path[11]; // 0x0 | Schema_FixedArray | Size: 0x2c
 			int32_t m_nCount; // 0x2c | Schema_Builtin | Size: 0x4
 		};
 		static_assert(offsetof(CS2::animgraphlib::CAnimNodePath, m_path) == 0x0, "m_path in CAnimNodePath should be at offset 0x0");

@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseModelEntity.hpp>
-#include <SDK/navlib/Extent.hpp>
-#include <SDK/server/CountdownTimer.hpp>
-#include <SDK/server/IntervalTimer.hpp>
+#include "CBaseModelEntity.hpp"
+#include "../navlib/Extent.hpp"
+#include "CountdownTimer.hpp"
+#include "IntervalTimer.hpp"
 
 
 

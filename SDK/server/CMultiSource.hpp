@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CLogicalEntity.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CLogicalEntity.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -23,7 +23,7 @@ namespace CS2 {
 		class CMultiSource : public CS2::server::CLogicalEntity {
 		public:
 			// server::CHandle< CBaseEntity > m_rgEntities[32]; // 0x4a8 | Schema_FixedArray | Size: 0x80
-			char m_rgEntities[0x4]; // 0x4a8 | Schema_FixedArray | Size: 0x4
+			char m_rgEntities[0x80]; // 0x4a8 | Schema_FixedArray | Size: 0x4
 			int32_t m_rgTriggered[32]; // 0x528 | Schema_FixedArray | Size: 0x80
 			entity2::CEntityIOOutput m_OnTrigger; // 0x5a8 | Schema_DeclaredClass | Size: 0x18
 			int32_t m_iTotal; // 0x5c0 | Schema_Builtin | Size: 0x4

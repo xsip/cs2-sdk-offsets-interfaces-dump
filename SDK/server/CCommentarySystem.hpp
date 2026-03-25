@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/server/CPointCommentaryNode.hpp>
+#include "../entity2/GameTime_t.hpp"
+#include "CPointCommentaryNode.hpp"
 
 
 
@@ -38,7 +38,7 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CPointCommentaryNode> m_hLastCommentaryNode; // 0x40 | Schema_Atomic | Size: 0x4
 			// char m_hLastCommentaryNode[0x4]; // 0x40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::CPointCommentaryNode>> m_vecNodes; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CPointCommentaryNode>> m_vecNodes; // 0x48 | Schema_Atomic | Size: 0x18
 			// char m_vecNodes[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CCommentarySystem, m_bCommentaryConvarsChanging) == 0x11, "m_bCommentaryConvarsChanging in CCommentarySystem should be at offset 0x11");

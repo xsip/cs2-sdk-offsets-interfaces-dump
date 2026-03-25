@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayer_MovementServices_Humanoid.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/CCSPlayerLegacyJump.hpp>
-#include <SDK/client/CCSPlayerModernJump.hpp>
-#include <SDK/entity2/GameTick_t.hpp>
+#include "CPlayer_MovementServices_Humanoid.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "CCSPlayerLegacyJump.hpp"
+#include "CCSPlayerModernJump.hpp"
+#include "../entity2/GameTick_t.hpp"
 
 
 

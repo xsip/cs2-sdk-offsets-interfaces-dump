@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayerPawnComponent.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
+#include "../client/CPlayerPawnComponent.hpp"
+#include "../entity2/GameTime_t.hpp"
 
 
 
@@ -27,7 +27,7 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayer_PingServices : public CS2::client::CPlayerPawnComponent {
 		public:
-			entity2::GameTime_t m_flPlayerPingTokens[5]; // 0x48 | Schema_FixedArray | Size: 0x64
+			entity2::GameTime_t m_flPlayerPingTokens[5]; // 0x48 | Schema_FixedArray | Size: 0x14
 			GlobalTypes::CHandle<server::CPlayerPing> m_hPlayerPing; // 0x5c | Schema_Atomic | Size: 0x4
 			// char m_hPlayerPing[0x4]; // 0x5c | Schema_Atomic | Size: 0x4
 		};

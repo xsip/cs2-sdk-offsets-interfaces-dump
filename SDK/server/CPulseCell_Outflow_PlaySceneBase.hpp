@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/pulse_runtime_lib/CPulseCell_BaseYieldingInflow.hpp>
-#include <SDK/pulse_runtime_lib/CPulse_ResumePoint.hpp>
-#include <SDK/pulse_runtime_lib/CPulse_OutflowConnection.hpp>
+#include "../pulse_runtime_lib/CPulseCell_BaseYieldingInflow.hpp"
+#include "../pulse_runtime_lib/CPulse_ResumePoint.hpp"
+#include "../pulse_runtime_lib/CPulse_OutflowConnection.hpp"
 
 
 
@@ -25,7 +25,7 @@ namespace CS2 {
 		public:
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0x90 | Schema_DeclaredClass | Size: 0x48
-			// server::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Triggers; // 0xd8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Triggers; // 0xd8 | Schema_Atomic | Size: 0x18
 			char m_Triggers[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlaySceneBase, m_OnFinished) == 0x48, "m_OnFinished in CPulseCell_Outflow_PlaySceneBase should be at offset 0x48");

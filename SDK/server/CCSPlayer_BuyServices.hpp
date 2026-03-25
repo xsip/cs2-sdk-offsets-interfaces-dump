@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayerPawnComponent.hpp>
-#include <SDK/server/SellbackPurchaseEntry_t.hpp>
+#include "../client/CPlayerPawnComponent.hpp"
+#include "SellbackPurchaseEntry_t.hpp"
 
 
 
@@ -23,7 +23,7 @@ namespace CS2 {
 		class CCSPlayer_BuyServices : public CS2::client::CPlayerPawnComponent {
 		public:
 			S2_PAD(0x88);
-			// server::CUtlVectorEmbeddedNetworkVar<server::SellbackPurchaseEntry_t> m_vecSellbackPurchaseEntries; // 0xd0 | Schema_Atomic | Size: 0x88
+			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::SellbackPurchaseEntry_t> m_vecSellbackPurchaseEntries; // 0xd0 | Schema_Atomic | Size: 0x88
 			char m_vecSellbackPurchaseEntries[0x88]; // 0xd0 | Schema_Atomic | Size: 0x88
 		};
 		static_assert(offsetof(CS2::server::CCSPlayer_BuyServices, m_vecSellbackPurchaseEntries) == 0xD0, "m_vecSellbackPurchaseEntries in CCSPlayer_BuyServices should be at offset 0xD0");

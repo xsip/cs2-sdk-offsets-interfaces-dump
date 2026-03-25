@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CBaseAnimGraph.hpp>
-#include <SDK/client/SceneEventId_t.hpp>
-#include <SDK/modellib/AttachmentHandle_t.hpp>
-#include <SDK/client/Emphasized_Phoneme.hpp>
+#include "CBaseAnimGraph.hpp"
+#include "SceneEventId_t.hpp"
+#include "../modellib/AttachmentHandle_t.hpp"
+#include "C_BaseFlex_Emphasized_Phoneme.hpp"
 
 
 
@@ -40,7 +40,7 @@ namespace CS2 {
 			GlobalTypes::matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0x12a4 | Schema_Atomic | Size: 0x30
 			GlobalTypes::Vector m_vEyeOcclusionRendererHalfExtent; // 0x12d4 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x10);
-			client::Emphasized_Phoneme m_PhonemeClasses[3]; // 0x12f0 | Schema_FixedArray | Size: 0x120
+			client::C_BaseFlex_Emphasized_Phoneme m_PhonemeClasses[3]; // 0x12f0 | Schema_FixedArray | Size: 0x60
 		};
 		static_assert(offsetof(CS2::client::C_BaseFlex, m_flexWeight) == 0x1170, "m_flexWeight in C_BaseFlex should be at offset 0x1170");
 		static_assert(offsetof(CS2::client::C_BaseFlex, m_vLookTargetPosition) == 0x1188, "m_vLookTargetPosition in C_BaseFlex should be at offset 0x1188");

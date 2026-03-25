@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseTrigger.hpp>
-#include <SDK/server/CBasePlayerPawn.hpp>
+#include "CBaseTrigger.hpp"
+#include "CBasePlayerPawn.hpp"
 
 
 
@@ -31,7 +31,7 @@ namespace CS2 {
 			// char m_hSoundscape[0x4]; // 0x890 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_SoundscapeName; // 0x898 | Schema_Atomic | Size: 0x8
-			server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerPawn>> m_spectators; // 0x8a0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerPawn>> m_spectators; // 0x8a0 | Schema_Atomic | Size: 0x18
 			// char m_spectators[0x18]; // 0x8a0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_hSoundscape) == 0x890, "m_hSoundscape in CTriggerSoundscape should be at offset 0x890");

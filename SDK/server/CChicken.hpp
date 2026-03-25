@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CDynamicProp.hpp>
-#include <SDK/server/CAttributeContainer.hpp>
-#include <SDK/server/CountdownTimer.hpp>
-#include <SDK/server/ChickenActivity.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
+#include "CDynamicProp.hpp"
+#include "CAttributeContainer.hpp"
+#include "CountdownTimer.hpp"
+#include "ChickenActivity.hpp"
+#include "../entity2/GameTime_t.hpp"
 
 
 

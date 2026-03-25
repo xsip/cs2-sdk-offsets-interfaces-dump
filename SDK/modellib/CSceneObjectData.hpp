@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/CMaterialDrawDescriptor.hpp>
-#include <SDK/mathlib_extended/AABB_t.hpp>
-#include <SDK/modellib/CMeshletDescriptor.hpp>
-#include <SDK/modellib/RTProxyDrawDescriptor_t.hpp>
+#include "CMaterialDrawDescriptor.hpp"
+#include "../mathlib_extended/AABB_t.hpp"
+#include "CMeshletDescriptor.hpp"
+#include "CSceneObjectData_RTProxyDrawDescriptor_t.hpp"
 
 
 
@@ -32,7 +32,7 @@ namespace CS2 {
 			char m_drawBounds[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
 			// GlobalTypes::CUtlLeanVector<modellib::CMeshletDescriptor> m_meshlets; // 0x38 | Schema_Atomic | Size: 0x10
 			char m_meshlets[0x10]; // 0x38 | Schema_Atomic | Size: 0x10
-			// GlobalTypes::CUtlLeanVector<modellib::RTProxyDrawDescriptor_t> m_rtProxyDrawCalls; // 0x48 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<modellib::CSceneObjectData_RTProxyDrawDescriptor_t> m_rtProxyDrawCalls; // 0x48 | Schema_Atomic | Size: 0x10
 			char m_rtProxyDrawCalls[0x10]; // 0x48 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Vector4D m_vTintColor; // 0x58 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x38); // End padding

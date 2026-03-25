@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CEntitySubclassVDataBase.hpp>
-#include <SDK/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp>
-#include <SDK/animationsystem/ParticleAttachment_t.hpp>
+#include "CEntitySubclassVDataBase.hpp"
+#include "../resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp"
+#include "../animationsystem/ParticleAttachment_t.hpp"
 
 
 

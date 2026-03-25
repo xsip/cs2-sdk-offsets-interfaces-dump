@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/materialsystem2/PostProcessingTonemapParameters_t.hpp>
-#include <SDK/materialsystem2/PostProcessingBloomParameters_t.hpp>
-#include <SDK/materialsystem2/PostProcessingVignetteParameters_t.hpp>
-#include <SDK/materialsystem2/PostProcessingLocalContrastParameters_t.hpp>
-#include <SDK/materialsystem2/PostProcessingFogScatteringParameters_t.hpp>
+#include "PostProcessingTonemapParameters_t.hpp"
+#include "PostProcessingBloomParameters_t.hpp"
+#include "PostProcessingVignetteParameters_t.hpp"
+#include "PostProcessingLocalContrastParameters_t.hpp"
+#include "PostProcessingFogScatteringParameters_t.hpp"
 
 
 

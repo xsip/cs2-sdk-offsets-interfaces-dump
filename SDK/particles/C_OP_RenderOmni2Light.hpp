@@ -4,18 +4,18 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/particles/CParticleFunctionRenderer.hpp>
-#include <SDK/particles/ParticleOmni2LightTypeChoiceList_t.hpp>
-#include <SDK/particleslib/CParticleCollectionVecInput.hpp>
-#include <SDK/particles/ParticleColorBlendType_t.hpp>
-#include <SDK/particles/ParticleLightUnitChoiceList_t.hpp>
-#include <SDK/particleslib/CPerParticleFloatInput.hpp>
+#include "CParticleFunctionRenderer.hpp"
+#include "ParticleOmni2LightTypeChoiceList_t.hpp"
+#include "../particleslib/CParticleCollectionVecInput.hpp"
+#include "ParticleColorBlendType_t.hpp"
+#include "ParticleLightUnitChoiceList_t.hpp"
+#include "../particleslib/CPerParticleFloatInput.hpp"
 
 
 

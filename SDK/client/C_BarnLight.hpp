@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseModelEntity.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "C_BaseModelEntity.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -47,7 +47,7 @@ namespace CS2 {
 			char m_LightStyleEvents[0x18]; // 0xee8 | Schema_Atomic | Size: 0x18
 			// client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>> m_LightStyleTargets; // 0xf00 | Schema_Atomic | Size: 0x18
 			char m_LightStyleTargets[0x18]; // 0xf00 | Schema_Atomic | Size: 0x18
-			entity2::CEntityIOOutput m_StyleEvent[4]; // 0xf18 | Schema_FixedArray | Size: 0x180
+			entity2::CEntityIOOutput m_StyleEvent[4]; // 0xf18 | Schema_FixedArray | Size: 0x60
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hLightCookie; // 0xf78 | Schema_Atomic | Size: 0x8
 			char m_hLightCookie[0x8]; // 0xf78 | Schema_Atomic | Size: 0x8
 			float32 m_flShape; // 0xf80 | Schema_Builtin | Size: 0x4

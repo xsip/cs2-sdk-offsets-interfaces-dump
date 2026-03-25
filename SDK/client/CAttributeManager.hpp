@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseEntity.hpp>
-#include <SDK/client/attributeprovidertypes_t.hpp>
-#include <SDK/client/cached_attribute_float_t.hpp>
+#include "C_BaseEntity.hpp"
+#include "attributeprovidertypes_t.hpp"
+#include "CAttributeManager_cached_attribute_float_t.hpp"
 
 
 
@@ -32,7 +32,7 @@ namespace CS2 {
 			bool m_bPreventLoopback; // 0x28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			client::attributeprovidertypes_t m_ProviderType; // 0x2c | Schema_DeclaredEnum | Size: 0x4
-			GlobalTypes::CUtlVector<client::cached_attribute_float_t> m_CachedResults; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::CAttributeManager_cached_attribute_float_t> m_CachedResults; // 0x30 | Schema_Atomic | Size: 0x18
 			// char m_CachedResults[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};

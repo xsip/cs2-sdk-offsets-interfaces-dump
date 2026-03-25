@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseToggle.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/server/CBaseEntity.hpp>
+#include "CBaseToggle.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "CBaseEntity.hpp"
 
 
 
@@ -35,7 +35,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnTouching; // 0x810 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0x828 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnNotTouching; // 0x840 | Schema_DeclaredClass | Size: 0x18
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTouchingEntities; // 0x858 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTouchingEntities; // 0x858 | Schema_Atomic | Size: 0x18
 			// char m_hTouchingEntities[0x18]; // 0x858 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iFilterName; // 0x870 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CHandle<server::CBaseFilter> m_hFilter; // 0x878 | Schema_Atomic | Size: 0x4

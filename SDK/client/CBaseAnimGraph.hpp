@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseModelEntity.hpp>
-#include <SDK/client/CAnimGraphControllerManager.hpp>
-#include <SDK/client/PhysicsRagdollPose_t.hpp>
+#include "C_BaseModelEntity.hpp"
+#include "CAnimGraphControllerManager.hpp"
+#include "PhysicsRagdollPose_t.hpp"
 
 
 

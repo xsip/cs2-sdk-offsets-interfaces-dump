@@ -4,20 +4,20 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseModelEntity.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/server/Rotate_t.hpp>
-#include <SDK/server/RotatorTargetSpace_t.hpp>
-#include <SDK/server/RotatorHistoryEntry_t.hpp>
-#include <SDK/server/RotatorQueueEntry_t.hpp>
-#include <SDK/client/SolidType_t.hpp>
+#include "CBaseModelEntity.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "CFuncRotator_Rotate_t.hpp"
+#include "RotatorTargetSpace_t.hpp"
+#include "RotatorHistoryEntry_t.hpp"
+#include "RotatorQueueEntry_t.hpp"
+#include "../client/SolidType_t.hpp"
 
 
 
@@ -60,8 +60,8 @@ namespace CS2 {
 			bool m_bOscillateDepart; // 0x848 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			int32_t m_nOscillateCount; // 0x84c | Schema_Builtin | Size: 0x4
-			server::Rotate_t m_eRotateType; // 0x850 | Schema_DeclaredEnum | Size: 0x4
-			server::Rotate_t m_ePrevRotateType; // 0x854 | Schema_DeclaredEnum | Size: 0x4
+			server::CFuncRotator_Rotate_t m_eRotateType; // 0x850 | Schema_DeclaredEnum | Size: 0x4
+			server::CFuncRotator_Rotate_t m_ePrevRotateType; // 0x854 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bHasTargetOverride; // 0x858 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			GlobalTypes::Quaternion m_qOrientationOverride; // 0x860 | Schema_Atomic | Size: 0x10

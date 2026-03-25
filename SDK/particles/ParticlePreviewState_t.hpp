@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/particles/PetGroundType_t.hpp>
-#include <SDK/particles/ParticlePreviewBodyGroup_t.hpp>
+#include "PetGroundType_t.hpp"
+#include "ParticlePreviewBodyGroup_t.hpp"
 
 
 

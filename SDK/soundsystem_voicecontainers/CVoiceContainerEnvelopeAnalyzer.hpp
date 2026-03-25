@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/soundsystem_voicecontainers/CVoiceContainerAnalysisBase.hpp>
-#include <SDK/soundsystem_voicecontainers/EMode_t.hpp>
+#include "CVoiceContainerAnalysisBase.hpp"
+#include "EMode_t.hpp"
 
 
 

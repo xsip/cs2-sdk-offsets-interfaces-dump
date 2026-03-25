@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBreakableProp.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/physicslib/DynamicContinuousContactBehavior_t.hpp>
-#include <SDK/server/CrateType_t.hpp>
+#include "CBreakableProp.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../physicslib/DynamicContinuousContactBehavior_t.hpp"
+#include "CPhysicsProp_CrateType_t.hpp"
 
 
 
@@ -66,7 +66,7 @@ namespace CS2 {
 			bool m_bAcceptDamageFromHeldObjects; // 0xc9f | Schema_Builtin | Size: 0x1
 			bool m_bEnableUseOutput; // 0xca0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::CrateType_t m_CrateType; // 0xca4 | Schema_DeclaredEnum | Size: 0x4
+			server::CPhysicsProp_CrateType_t m_CrateType; // 0xca4 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_strItemClass[4]; // 0xca8 | Schema_FixedArray | Size: 0x20
 			int32_t m_nItemCount[4]; // 0xcc8 | Schema_FixedArray | Size: 0x10
 			bool m_bRemovableForAmmoBalancing; // 0xcd8 | Schema_Builtin | Size: 0x1

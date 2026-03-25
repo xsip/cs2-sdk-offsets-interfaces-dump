@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BreakableProp.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/DamageTypes_t.hpp>
+#include "C_BreakableProp.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "DamageTypes_t.hpp"
 
 
 

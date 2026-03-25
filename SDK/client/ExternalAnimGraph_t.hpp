@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/ExternalAnimGraphHandle_t.hpp>
-#include <SDK/resourcesystem/InfoForResourceTypeCNmGraphDefinition.hpp>
-#include <SDK/client/ExternalAnimGraphInactiveBehavior_t.hpp>
+#include "ExternalAnimGraphHandle_t.hpp"
+#include "../resourcesystem/InfoForResourceTypeCNmGraphDefinition.hpp"
+#include "ExternalAnimGraphInactiveBehavior_t.hpp"
 
 
 

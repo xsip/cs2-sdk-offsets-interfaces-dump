@@ -4,9 +4,9 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
@@ -20,8 +20,7 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSimdQuad_t  {
 		public:
-			uint16_t nNode[4]; // 0x0 | Schema_FixedArray | Size: 0x0
-			S2_PAD(0x20);
+			uint16_t nNode[4][4]; // 0x0 | Schema_FixedArray | Size: 0x20
 			GlobalTypes::fltx4 f4Slack; // 0x20 | Schema_Atomic | Size: 0x10
 			GlobalTypes::FourVectors vShape[4]; // 0x30 | Schema_FixedArray | Size: 0xc0
 			GlobalTypes::fltx4 f4Weights[4]; // 0xf0 | Schema_FixedArray | Size: 0x40

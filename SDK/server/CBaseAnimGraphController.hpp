@@ -4,25 +4,25 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CSkeletonAnimationController.hpp>
-#include <SDK/client/AnimationAlgorithm_t.hpp>
-#include <SDK/server/CAnimGraphNetworkedVariables.hpp>
-#include <SDK/animgraphlib/IAnimationGraphInstance.hpp>
-#include <SDK/client/ExternalAnimGraphHandle_t.hpp>
-#include <SDK/server/CBaseAnimGraph.hpp>
-#include <SDK/animationsystem/HSequence.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/AnimLoopMode_t.hpp>
-#include <SDK/client/SequenceFinishNotifyState_t.hpp>
-#include <SDK/entity2/GameTick_t.hpp>
-#include <SDK/resourcefile/ResourceId_t.hpp>
-#include <SDK/client/ExternalAnimGraph_t.hpp>
+#include "../client/CSkeletonAnimationController.hpp"
+#include "../client/AnimationAlgorithm_t.hpp"
+#include "CAnimGraphNetworkedVariables.hpp"
+#include "../animgraphlib/IAnimationGraphInstance.hpp"
+#include "../client/ExternalAnimGraphHandle_t.hpp"
+#include "CBaseAnimGraph.hpp"
+#include "../animationsystem/HSequence.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../client/AnimLoopMode_t.hpp"
+#include "../client/SequenceFinishNotifyState_t.hpp"
+#include "../entity2/GameTick_t.hpp"
+#include "../resourcefile/ResourceId_t.hpp"
+#include "../client/ExternalAnimGraph_t.hpp"
 
 
 

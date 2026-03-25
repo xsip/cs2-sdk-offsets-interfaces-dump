@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseFilter.hpp>
-#include <SDK/client/filter_t.hpp>
+#include "CBaseFilter.hpp"
+#include "../client/filter_t.hpp"
 
 
 
@@ -26,7 +26,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iFilterName[10]; // 0x4e8 | Schema_FixedArray | Size: 0x50
 			// server::CHandle< CBaseEntity > m_hFilter[10]; // 0x538 | Schema_FixedArray | Size: 0x28
-			char m_hFilter[0x4]; // 0x538 | Schema_FixedArray | Size: 0x4
+			char m_hFilter[0x28]; // 0x538 | Schema_FixedArray | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CFilterMultiple, m_nFilterType) == 0x4E0, "m_nFilterType in CFilterMultiple should be at offset 0x4E0");
 		static_assert(offsetof(CS2::server::CFilterMultiple, m_iFilterName) == 0x4E8, "m_iFilterName in CFilterMultiple should be at offset 0x4E8");

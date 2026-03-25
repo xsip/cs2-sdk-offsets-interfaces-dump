@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/pulse_runtime_lib/CPulse_Variable.hpp>
-#include <SDK/pulse_runtime_lib/CPulse_PublicOutput.hpp>
-#include <SDK/pulse_runtime_lib/CPulse_Constant.hpp>
-#include <SDK/pulse_runtime_lib/CPulse_DomainValue.hpp>
-#include <SDK/pulse_runtime_lib/CPulse_BlackboardReference.hpp>
+#include "CPulse_Variable.hpp"
+#include "CPulse_PublicOutput.hpp"
+#include "CPulse_Constant.hpp"
+#include "CPulse_DomainValue.hpp"
+#include "CPulse_BlackboardReference.hpp"
 
 
 
@@ -38,21 +38,21 @@ namespace CS2 {
 			GlobalTypes::PulseSymbol_t m_ParentXmlName; // 0x40 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_Chunk*> m_Chunks; // 0x50 | Schema_Atomic | Size: 0x18
 			// char m_Chunks[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector<pulse_runtime_lib::CPulseCell_Base*> m_Cells; // 0x68 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulseCell_Base*> m_Cells; // 0x68 | Schema_Atomic | Size: 0x18
 			char m_Cells[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_Variable> m_Vars; // 0x80 | Schema_Atomic | Size: 0x18
 			// char m_Vars[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_PublicOutput> m_PublicOutputs; // 0x98 | Schema_Atomic | Size: 0x18
 			// char m_PublicOutputs[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector<pulse_runtime_lib::CPulse_InvokeBinding*> m_InvokeBindings; // 0xb0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_InvokeBinding*> m_InvokeBindings; // 0xb0 | Schema_Atomic | Size: 0x18
 			char m_InvokeBindings[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector<pulse_runtime_lib::CPulse_CallInfo*> m_CallInfos; // 0xc8 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_CallInfo*> m_CallInfos; // 0xc8 | Schema_Atomic | Size: 0x18
 			char m_CallInfos[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_Constant> m_Constants; // 0xe0 | Schema_Atomic | Size: 0x18
 			// char m_Constants[0x18]; // 0xe0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_DomainValue> m_DomainValues; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char m_DomainValues[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
-			// server::CUtlVector<pulse_runtime_lib::CPulse_BlackboardReference> m_BlackboardReferences; // 0x110 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_BlackboardReference> m_BlackboardReferences; // 0x110 | Schema_Atomic | Size: 0x18
 			char m_BlackboardReferences[0x18]; // 0x110 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_OutputConnection*> m_OutputConnections; // 0x128 | Schema_Atomic | Size: 0x18
 			// char m_OutputConnections[0x18]; // 0x128 | Schema_Atomic | Size: 0x18

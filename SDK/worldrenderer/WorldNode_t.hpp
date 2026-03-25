@@ -4,22 +4,22 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/worldrenderer/SceneObject_t.hpp>
-#include <SDK/worldrenderer/AggregateSceneObject_t.hpp>
-#include <SDK/worldrenderer/ClutterSceneObject_t.hpp>
-#include <SDK/worldrenderer/AggregateRTProxySceneObject_t.hpp>
-#include <SDK/worldrenderer/ExtraVertexStreamOverride_t.hpp>
-#include <SDK/worldrenderer/MaterialOverride_t.hpp>
-#include <SDK/worldrenderer/WorldNodeOnDiskBufferData_t.hpp>
-#include <SDK/worldrenderer/AggregateInstanceStreamOnDiskData_t.hpp>
-#include <SDK/worldrenderer/AggregateVertexAlbedoStreamOnDiskData_t.hpp>
-#include <SDK/worldrenderer/BakedLightingInfo_t.hpp>
+#include "SceneObject_t.hpp"
+#include "AggregateSceneObject_t.hpp"
+#include "ClutterSceneObject_t.hpp"
+#include "AggregateRTProxySceneObject_t.hpp"
+#include "ExtraVertexStreamOverride_t.hpp"
+#include "MaterialOverride_t.hpp"
+#include "WorldNodeOnDiskBufferData_t.hpp"
+#include "AggregateInstanceStreamOnDiskData_t.hpp"
+#include "AggregateVertexAlbedoStreamOnDiskData_t.hpp"
+#include "BakedLightingInfo_t.hpp"
 
 
 

@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayerControllerComponent.hpp>
-#include <SDK/server/CSPerRoundStats_t.hpp>
-#include <SDK/server/CSMatchStats_t.hpp>
+#include "../client/CPlayerControllerComponent.hpp"
+#include "CSPerRoundStats_t.hpp"
+#include "CSMatchStats_t.hpp"
 
 
 
@@ -23,7 +23,7 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayerController_ActionTrackingServices : public CS2::client::CPlayerControllerComponent {
 		public:
-			// server::CUtlVectorEmbeddedNetworkVar<server::CSPerRoundStats_t> m_perRoundStats; // 0x40 | Schema_Atomic | Size: 0x88
+			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::CSPerRoundStats_t> m_perRoundStats; // 0x40 | Schema_Atomic | Size: 0x88
 			char m_perRoundStats[0x88]; // 0x40 | Schema_Atomic | Size: 0x88
 			server::CSMatchStats_t m_matchStats; // 0xc8 | Schema_DeclaredClass | Size: 0xc0
 			int32_t m_iNumRoundKills; // 0x188 | Schema_Builtin | Size: 0x4

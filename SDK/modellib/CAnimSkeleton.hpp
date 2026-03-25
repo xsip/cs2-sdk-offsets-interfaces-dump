@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/CAnimFoot.hpp>
+#include "CAnimFoot.hpp"
 
 
 
@@ -28,7 +28,7 @@ namespace CS2 {
 			// char m_modelSpaceTransforms[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_boneNames; // 0x40 | Schema_Atomic | Size: 0x18
 			// char m_boneNames[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector> m_children; // 0x58 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<uintptr_t>> m_children; // 0x58 | Schema_Atomic | Size: 0x18
 			// char m_children[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_parents; // 0x70 | Schema_Atomic | Size: 0x18
 			// char m_parents[0x18]; // 0x70 | Schema_Atomic | Size: 0x18

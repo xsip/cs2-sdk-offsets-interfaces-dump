@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseFlex.hpp>
-#include <SDK/client/C_AttributeContainer.hpp>
-#include <SDK/client/AttachedModelData_t.hpp>
+#include "C_BaseFlex.hpp"
+#include "C_AttributeContainer.hpp"
+#include "C_EconEntity_AttachedModelData_t.hpp"
 
 
 
@@ -58,7 +58,7 @@ namespace CS2 {
 			GlobalTypes::CHandle<client::C_BaseEntity> m_hOldProvidee; // 0x18a0 | Schema_Atomic | Size: 0x4
 			// char m_hOldProvidee[0x4]; // 0x18a0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			GlobalTypes::CUtlVector<client::AttachedModelData_t> m_vecAttachedModels; // 0x18a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::C_EconEntity_AttachedModelData_t> m_vecAttachedModels; // 0x18a8 | Schema_Atomic | Size: 0x18
 			// char m_vecAttachedModels[0x18]; // 0x18a8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayTime) == 0x1360, "m_flFlexDelayTime in C_EconEntity should be at offset 0x1360");

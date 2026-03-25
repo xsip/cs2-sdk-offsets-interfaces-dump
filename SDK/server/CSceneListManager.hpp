@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CLogicalEntity.hpp>
+#include "CLogicalEntity.hpp"
 
 
 
@@ -21,11 +21,11 @@ namespace CS2 {
 	namespace server {
 		class CSceneListManager : public CS2::server::CLogicalEntity {
 		public:
-			server::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>> m_hListManagers; // 0x4a8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>> m_hListManagers; // 0x4a8 | Schema_Atomic | Size: 0x18
 			// char m_hListManagers[0x18]; // 0x4a8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_iszScenes[16]; // 0x4c0 | Schema_FixedArray | Size: 0x80
 			// server::CHandle< CBaseEntity > m_hScenes[16]; // 0x540 | Schema_FixedArray | Size: 0x40
-			char m_hScenes[0x4]; // 0x540 | Schema_FixedArray | Size: 0x4
+			char m_hScenes[0x40]; // 0x540 | Schema_FixedArray | Size: 0x4
 		};
 		static_assert(offsetof(CS2::server::CSceneListManager, m_hListManagers) == 0x4A8, "m_hListManagers in CSceneListManager should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CSceneListManager, m_iszScenes) == 0x4C0, "m_iszScenes in CSceneListManager should be at offset 0x4C0");

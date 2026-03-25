@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/resourcesystem/InfoForResourceTypeCTextureBase.hpp>
-#include <SDK/worldrenderer/BakedShadowAssignment_t.hpp>
+#include "../resourcesystem/InfoForResourceTypeCTextureBase.hpp"
+#include "BakedLightingInfo_t_BakedShadowAssignment_t.hpp"
 
 
 
@@ -34,7 +34,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>> m_lightMaps; // 0x18 | Schema_Atomic | Size: 0x18
 			// char m_lightMaps[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<worldrenderer::BakedShadowAssignment_t> m_bakedShadows; // 0x30 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<worldrenderer::BakedLightingInfo_t_BakedShadowAssignment_t> m_bakedShadows; // 0x30 | Schema_Atomic | Size: 0x18
 			// char m_bakedShadows[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_nLightmapVersionNumber) == 0x0, "m_nLightmapVersionNumber in BakedLightingInfo_t should be at offset 0x0");

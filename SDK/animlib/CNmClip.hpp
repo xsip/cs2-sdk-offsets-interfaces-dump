@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/NmCompressionSettings_t.hpp>
-#include <SDK/animlib/NmFloatCurveCompressionSettings_t.hpp>
-#include <SDK/animlib/CNmSyncTrack.hpp>
-#include <SDK/animlib/CNmRootMotionData.hpp>
-#include <SDK/animlib/ModelSpaceSamplingChainLink_t.hpp>
+#include "NmCompressionSettings_t.hpp"
+#include "NmFloatCurveCompressionSettings_t.hpp"
+#include "CNmSyncTrack.hpp"
+#include "CNmRootMotionData.hpp"
+#include "CNmClip_ModelSpaceSamplingChainLink_t.hpp"
 
 
 
@@ -43,14 +43,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint32 > m_compressedFloatCurveOffsets; // 0x98 | Schema_Atomic | Size: 0x18
 			// char m_compressedFloatCurveOffsets[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28);
-			GlobalTypes::CUtlVectorFixedGrowable<animlib::CNmClip*> m_secondaryAnimations; // 0xd8 | Schema_Atomic | Size: 0x20
-			// char m_secondaryAnimations[0x20]; // 0xd8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CUtlVectorFixedGrowable<animlib::CNmClip*> m_secondaryAnimations; // 0xd8 | Schema_Atomic | Size: 0x20
+			char m_secondaryAnimations[0x20]; // 0xd8 | Schema_Atomic | Size: 0x20
 			animlib::CNmSyncTrack m_syncTrack; // 0xf8 | Schema_DeclaredClass | Size: 0xb0
 			S2_PAD(0x8);
 			animlib::CNmRootMotionData m_rootMotion; // 0x1b0 | Schema_DeclaredClass | Size: 0x50
 			bool m_bIsAdditive; // 0x200 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			GlobalTypes::CUtlVector<animlib::ModelSpaceSamplingChainLink_t> m_modelSpaceSamplingChain; // 0x208 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::CNmClip_ModelSpaceSamplingChainLink_t> m_modelSpaceSamplingChain; // 0x208 | Schema_Atomic | Size: 0x18
 			// char m_modelSpaceSamplingChain[0x18]; // 0x208 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_modelSpaceBoneSamplingIndices; // 0x220 | Schema_Atomic | Size: 0x18
 			// char m_modelSpaceBoneSamplingIndices[0x18]; // 0x220 | Schema_Atomic | Size: 0x18

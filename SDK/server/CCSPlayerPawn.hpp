@@ -4,21 +4,21 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CCSPlayerPawnBase.hpp>
-#include <SDK/server/CBaseEntity.hpp>
-#include <SDK/client/loadout_slot_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/entity2/GameTick_t.hpp>
-#include <SDK/server/CEconItemView.hpp>
-#include <SDK/server/EntitySpottedState_t.hpp>
-#include <SDK/client/CSPlayerBlockingUseAction_t.hpp>
-#include <SDK/server/PredictedDamageTag_t.hpp>
+#include "CCSPlayerPawnBase.hpp"
+#include "CBaseEntity.hpp"
+#include "../client/loadout_slot_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../entity2/GameTick_t.hpp"
+#include "CEconItemView.hpp"
+#include "EntitySpottedState_t.hpp"
+#include "../client/CSPlayerBlockingUseAction_t.hpp"
+#include "PredictedDamageTag_t.hpp"
 
 
 
@@ -56,7 +56,7 @@ namespace CS2 {
 			bool m_bInHostageResetZone; // 0xfa8 | Schema_Builtin | Size: 0x1
 			bool m_bInBuyZone; // 0xfa9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6);
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_TouchingBuyZones; // 0xfb0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_TouchingBuyZones; // 0xfb0 | Schema_Atomic | Size: 0x18
 			// char m_TouchingBuyZones[0x18]; // 0xfb0 | Schema_Atomic | Size: 0x18
 			bool m_bWasInBuyZone; // 0xfc8 | Schema_Builtin | Size: 0x1
 			bool m_bInHostageRescueZone; // 0xfc9 | Schema_Builtin | Size: 0x1
@@ -180,7 +180,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecThrowPositionHistory[2]; // 0x1b6c | Schema_FixedArray | Size: 0x18
 			GlobalTypes::Vector m_vecVelocityHistory[2]; // 0x1b84 | Schema_FixedArray | Size: 0x18
 			S2_PAD(0x4);
-			// server::CUtlVectorEmbeddedNetworkVar<server::PredictedDamageTag_t> m_PredictedDamageTags; // 0x1ba0 | Schema_Atomic | Size: 0x68
+			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::PredictedDamageTag_t> m_PredictedDamageTags; // 0x1ba0 | Schema_Atomic | Size: 0x68
 			char m_PredictedDamageTags[0x68]; // 0x1ba0 | Schema_Atomic | Size: 0x68
 			int32_t m_nHighestAppliedDamageTagTick; // 0x1c08 | Schema_Builtin | Size: 0x4
 			bool m_bCommittingSuicideOnTeamChange; // 0x1c0c | Schema_Builtin | Size: 0x1

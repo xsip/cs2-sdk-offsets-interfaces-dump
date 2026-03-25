@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/pulse_runtime_lib/DynamicOutflow_t.hpp>
+#include "PulseNodeDynamicOutflows_t_DynamicOutflow_t.hpp"
 
 
 
@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class PulseNodeDynamicOutflows_t  {
 		public:
-			// server::CUtlVector<pulse_runtime_lib::DynamicOutflow_t> m_Outflows; // 0x0 | Schema_Atomic | Size: 0x18
+			// GlobalTypes::CUtlVector<pulse_runtime_lib::PulseNodeDynamicOutflows_t_DynamicOutflow_t> m_Outflows; // 0x0 | Schema_Atomic | Size: 0x18
 			char m_Outflows[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseNodeDynamicOutflows_t, m_Outflows) == 0x0, "m_Outflows in PulseNodeDynamicOutflows_t should be at offset 0x0");

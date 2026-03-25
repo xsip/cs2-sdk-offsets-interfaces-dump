@@ -42,6 +42,15 @@ namespace GlobalTypes {
 	using Color /*Color*/ = char[0x4]; //  Schema_Atomic
 	using Vector /*Vector*/ = char[0xc]; //  Schema_Atomic
 
+
+	using KeyValues = uintptr_t;
+
+	template <typename T, int T2 = 1>
+	using CUtlVectorFixedGrowable = char[0x20];
+	template <typename T, typename T2>
+	using CEntityOutputTemplate = char[0x20];
+
+	template <typename T>
 	using CUtlVector /*CUtlVector< SampleCode >*/ = char[0x18]; //  Schema_Atomic
 	using Quaternion /*Quaternion*/ = char[0x10]; //  Schema_Atomic
 	using CAnimVariant /*CAnimVariant*/ = char[0x11]; //  Schema_Atomic

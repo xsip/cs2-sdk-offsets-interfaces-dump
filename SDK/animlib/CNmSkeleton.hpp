@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/NmBoneMaskSetDefinition_t.hpp>
-#include <SDK/animlib/SecondarySkeleton_t.hpp>
+#include "NmBoneMaskSetDefinition_t.hpp"
+#include "CNmSkeleton_SecondarySkeleton_t.hpp"
 
 
 
@@ -36,7 +36,7 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVector<animlib::NmBoneMaskSetDefinition_t> m_maskDefinitions; // 0x88 | Schema_Atomic | Size: 0x10
 			char m_maskDefinitions[0x10]; // 0x88 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10);
-			// GlobalTypes::CUtlLeanVector<animlib::SecondarySkeleton_t> m_secondarySkeletons; // 0xa8 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<animlib::CNmSkeleton_SecondarySkeleton_t> m_secondarySkeletons; // 0xa8 | Schema_Atomic | Size: 0x10
 			char m_secondarySkeletons[0x10]; // 0xa8 | Schema_Atomic | Size: 0x10
 			bool m_bIsPropSkeleton; // 0xb8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding

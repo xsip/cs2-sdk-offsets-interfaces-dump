@@ -4,22 +4,22 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_CSPlayerPawnBase.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/entity2/GameTick_t.hpp>
-#include <SDK/client/loadout_slot_t.hpp>
-#include <SDK/client/C_EconItemView.hpp>
-#include <SDK/client/EntitySpottedState_t.hpp>
-#include <SDK/client/CSPlayerBlockingUseAction_t.hpp>
-#include <SDK/client/PredictedDamageTag_t.hpp>
-#include <SDK/client/ParticleIndex_t.hpp>
-#include <SDK/client/CountdownTimer.hpp>
+#include "C_CSPlayerPawnBase.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../entity2/GameTick_t.hpp"
+#include "loadout_slot_t.hpp"
+#include "C_EconItemView.hpp"
+#include "EntitySpottedState_t.hpp"
+#include "CSPlayerBlockingUseAction_t.hpp"
+#include "PredictedDamageTag_t.hpp"
+#include "ParticleIndex_t.hpp"
+#include "CountdownTimer.hpp"
 
 
 
@@ -201,7 +201,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::QAngle m_angEyeAngles; // 0x3dd0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84);
-			entity2::GameTime_t m_arrOldEyeAnglesTimes[4]; // 0x3e60 | Schema_FixedArray | Size: 0x40
+			entity2::GameTime_t m_arrOldEyeAnglesTimes[4]; // 0x3e60 | Schema_FixedArray | Size: 0x10
 			GlobalTypes::QAngle m_arrOldEyeAngles[4]; // 0x3e70 | Schema_FixedArray | Size: 0x30
 			GlobalTypes::QAngle m_angEyeAnglesVelocity; // 0x3ea0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::CEntityIndex m_iIDEntIndex; // 0x3eac | Schema_Atomic | Size: 0x4

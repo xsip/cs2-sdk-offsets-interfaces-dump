@@ -4,20 +4,20 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/particles/CParticleFunctionRenderer.hpp>
-#include <SDK/particleslib/CParticleCollectionFloatInput.hpp>
-#include <SDK/particleslib/CParticleCollectionVecInput.hpp>
-#include <SDK/particles/ParticleColorBlendType_t.hpp>
-#include <SDK/particles/TextureRepetitionMode_t.hpp>
-#include <SDK/particleslib/CParticleTransformInput.hpp>
-#include <SDK/particles/FloatInputMaterialVariable_t.hpp>
-#include <SDK/particles/VecInputMaterialVariable_t.hpp>
+#include "CParticleFunctionRenderer.hpp"
+#include "../particleslib/CParticleCollectionFloatInput.hpp"
+#include "../particleslib/CParticleCollectionVecInput.hpp"
+#include "ParticleColorBlendType_t.hpp"
+#include "TextureRepetitionMode_t.hpp"
+#include "../particleslib/CParticleTransformInput.hpp"
+#include "FloatInputMaterialVariable_t.hpp"
+#include "VecInputMaterialVariable_t.hpp"
 
 
 

@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseAnimGraph.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/server/CAttributeContainer.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/server/EntitySpottedState_t.hpp>
+#include "CBaseAnimGraph.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "CAttributeContainer.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "EntitySpottedState_t.hpp"
 
 
 

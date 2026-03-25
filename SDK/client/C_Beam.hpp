@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseModelEntity.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/BeamType_t.hpp>
-#include <SDK/modellib/AttachmentHandle_t.hpp>
-#include <SDK/client/BeamClipStyle_t.hpp>
+#include "C_BaseModelEntity.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "BeamType_t.hpp"
+#include "../modellib/AttachmentHandle_t.hpp"
+#include "BeamClipStyle_t.hpp"
 
 
 
@@ -45,8 +45,9 @@ namespace CS2 {
 			client::BeamType_t m_nBeamType; // 0xed0 | Schema_DeclaredEnum | Size: 0x4
 			uint32_t m_nBeamFlags; // 0xed4 | Schema_Builtin | Size: 0x4
 			// client::CHandle< C_BaseEntity > m_hAttachEntity[10]; // 0xed8 | Schema_FixedArray | Size: 0x28
-			char m_hAttachEntity[0x4]; // 0xed8 | Schema_FixedArray | Size: 0x4
-			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0xf00 | Schema_FixedArray | Size: 0x64
+			char m_hAttachEntity[0x28]; // 0xed8 | Schema_FixedArray | Size: 0x4
+			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0xf00 | Schema_FixedArray | Size: 0xa
+			S2_PAD(0x2);
 			float32 m_fWidth; // 0xf0c | Schema_Builtin | Size: 0x4
 			float32 m_fEndWidth; // 0xf10 | Schema_Builtin | Size: 0x4
 			float32 m_fFadeLength; // 0xf14 | Schema_Builtin | Size: 0x4

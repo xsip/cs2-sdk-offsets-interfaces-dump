@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CPointEntity.hpp>
-#include <SDK/client/soundlevel_t.hpp>
-#include <SDK/server/dynpitchvol_t.hpp>
+#include "CPointEntity.hpp"
+#include "../client/soundlevel_t.hpp"
+#include "dynpitchvol_t.hpp"
 
 
 

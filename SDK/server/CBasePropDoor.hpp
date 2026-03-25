@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CDynamicProp.hpp>
-#include <SDK/client/DoorState_t.hpp>
-#include <SDK/server/locksound_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CDynamicProp.hpp"
+#include "../client/DoorState_t.hpp"
+#include "locksound_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -32,7 +32,7 @@ namespace CS2 {
 			S2_PAD(0x10);
 			float32 m_flAutoReturnDelay; // 0xc60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>> m_hDoorList; // 0xc68 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>> m_hDoorList; // 0xc68 | Schema_Atomic | Size: 0x18
 			// char m_hDoorList[0x18]; // 0xc68 | Schema_Atomic | Size: 0x18
 			int32_t m_nHardwareType; // 0xc80 | Schema_Builtin | Size: 0x4
 			bool m_bNeedsHardware; // 0xc84 | Schema_Builtin | Size: 0x1

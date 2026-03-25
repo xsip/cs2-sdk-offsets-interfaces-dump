@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CLogicalEntity.hpp>
-#include <SDK/server/CBaseEntity.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CLogicalEntity.hpp"
+#include "CBaseEntity.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -25,7 +25,7 @@ namespace CS2 {
 		public:
 			bool m_bInValue; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_Listeners; // 0x4b0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_Listeners; // 0x4b0 | Schema_Atomic | Size: 0x18
 			// char m_Listeners[0x18]; // 0x4b0 | Schema_Atomic | Size: 0x18
 			entity2::CEntityIOOutput m_OnTrue; // 0x4c8 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnFalse; // 0x4e0 | Schema_DeclaredClass | Size: 0x18

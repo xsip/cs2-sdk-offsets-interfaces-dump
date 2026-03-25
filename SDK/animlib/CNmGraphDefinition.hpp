@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/ReferencedGraphSlot_t.hpp>
-#include <SDK/animlib/ExternalGraphSlot_t.hpp>
-#include <SDK/animlib/ExternalPoseSlot_t.hpp>
+#include "CNmGraphDefinition_ReferencedGraphSlot_t.hpp"
+#include "CNmGraphDefinition_ExternalGraphSlot_t.hpp"
+#include "CNmGraphDefinition_ExternalPoseSlot_t.hpp"
 
 
 
@@ -42,11 +42,11 @@ namespace CS2 {
 			// char m_virtualParameterIDs[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int16 > m_virtualParameterNodeIndices; // 0x68 | Schema_Atomic | Size: 0x18
 			// char m_virtualParameterNodeIndices[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<animlib::ReferencedGraphSlot_t> m_referencedGraphSlots; // 0x80 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::CNmGraphDefinition_ReferencedGraphSlot_t> m_referencedGraphSlots; // 0x80 | Schema_Atomic | Size: 0x18
 			// char m_referencedGraphSlots[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<animlib::ExternalGraphSlot_t> m_externalGraphSlots; // 0x98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::CNmGraphDefinition_ExternalGraphSlot_t> m_externalGraphSlots; // 0x98 | Schema_Atomic | Size: 0x18
 			// char m_externalGraphSlots[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<animlib::ExternalPoseSlot_t> m_externalPoseSlots; // 0xb0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<animlib::CNmGraphDefinition_ExternalPoseSlot_t> m_externalPoseSlots; // 0xb0 | Schema_Atomic | Size: 0x18
 			// char m_externalPoseSlots[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x70);
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_nodePaths; // 0x138 | Schema_Atomic | Size: 0x18

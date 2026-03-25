@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_DynamicProp.hpp>
-#include <SDK/client/DoorState_t.hpp>
+#include "C_DynamicProp.hpp"
+#include "DoorState_t.hpp"
 
 
 

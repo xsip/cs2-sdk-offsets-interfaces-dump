@@ -4,18 +4,18 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/CMorphData.hpp>
-#include <SDK/modellib/CFlexDesc.hpp>
-#include <SDK/modellib/CFlexController.hpp>
-#include <SDK/modellib/CFlexRule.hpp>
+#include "CMorphData.hpp"
+#include "CFlexDesc.hpp"
+#include "CFlexController.hpp"
+#include "CFlexRule.hpp"
 
-
+#include "MorphBundleType_t.hpp"
 
 
 

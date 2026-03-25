@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/QuantizationRange_t.hpp>
+#include "NmCompressionSettings_t_QuantizationRange_t.hpp"
 
 
 
@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace animlib {
 		class NmFloatCurveCompressionSettings_t  {
 		public:
-			animlib::QuantizationRange_t m_range; // 0x0 | Schema_DeclaredClass | Size: 0x8
+			animlib::NmCompressionSettings_t_QuantizationRange_t m_range; // 0x0 | Schema_DeclaredClass | Size: 0x8
 			bool m_bIsStatic; // 0x8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};

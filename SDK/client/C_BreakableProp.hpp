@@ -4,19 +4,19 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CBaseProp.hpp>
-#include <SDK/client/CPropDataComponent.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/client/PerformanceMode_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/BreakableContentsType_t.hpp>
-#include <SDK/client/BaseExplosionTypes_t.hpp>
+#include "CBaseProp.hpp"
+#include "CPropDataComponent.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "PerformanceMode_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "BreakableContentsType_t.hpp"
+#include "BaseExplosionTypes_t.hpp"
 
 
 

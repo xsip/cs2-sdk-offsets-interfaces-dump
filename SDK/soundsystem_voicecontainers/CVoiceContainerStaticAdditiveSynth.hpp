@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/soundsystem_voicecontainers/CVoiceContainerAsyncGenerator.hpp>
-#include <SDK/soundsystem_voicecontainers/CTone.hpp>
+#include "CVoiceContainerAsyncGenerator.hpp"
+#include "CVoiceContainerStaticAdditiveSynth_CTone.hpp"
 
 
 
@@ -22,7 +22,7 @@ namespace CS2 {
 	namespace soundsystem_voicecontainers {
 		class CVoiceContainerStaticAdditiveSynth : public CS2::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator {
 		public:
-			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CTone> m_tones; // 0xb8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CTone> m_tones; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char m_tones[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18); // End padding
 		};

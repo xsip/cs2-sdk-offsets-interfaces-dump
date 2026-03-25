@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayerControllerComponent.hpp>
-#include <SDK/client/NetworkedLoadoutSlot_t.hpp>
-#include <SDK/client/MedalRank_t.hpp>
-#include <SDK/client/ServerAuthoritativeWeaponSlot_t.hpp>
+#include "CPlayerControllerComponent.hpp"
+#include "CCSPlayerController_InventoryServices_NetworkedLoadoutSlot_t.hpp"
+#include "MedalRank_t.hpp"
+#include "ServerAuthoritativeWeaponSlot_t.hpp"
 
 
 
@@ -24,11 +24,11 @@ namespace CS2 {
 	namespace client {
 		class CCSPlayerController_InventoryServices : public CS2::client::CPlayerControllerComponent {
 		public:
-			GlobalTypes::CUtlVector<client::NetworkedLoadoutSlot_t> m_vecNetworkableLoadout; // 0x40 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::CCSPlayerController_InventoryServices_NetworkedLoadoutSlot_t> m_vecNetworkableLoadout; // 0x40 | Schema_Atomic | Size: 0x18
 			// char m_vecNetworkableLoadout[0x18]; // 0x40 | Schema_Atomic | Size: 0x18
 			uint16_t m_unMusicID; // 0x58 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
-			client::MedalRank_t m_rank[6]; // 0x5c | Schema_FixedArray | Size: 0x120
+			client::MedalRank_t m_rank[6]; // 0x5c | Schema_FixedArray | Size: 0x30
 			int32_t m_nPersonaDataPublicLevel; // 0x74 | Schema_Builtin | Size: 0x4
 			int32_t m_nPersonaDataPublicCommendsLeader; // 0x78 | Schema_Builtin | Size: 0x4
 			int32_t m_nPersonaDataPublicCommendsTeacher; // 0x7c | Schema_Builtin | Size: 0x4

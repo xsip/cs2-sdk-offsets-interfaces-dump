@@ -4,22 +4,22 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseEntity.hpp>
-#include <SDK/client/CHitboxComponent.hpp>
-#include <SDK/client/HitGroup_t.hpp>
-#include <SDK/client/RenderMode_t.hpp>
-#include <SDK/client/RenderFx_t.hpp>
-#include <SDK/client/EntityRenderAttribute_t.hpp>
-#include <SDK/client/CCollisionProperty.hpp>
-#include <SDK/client/CGlowProperty.hpp>
-#include <SDK/client/DecalRtEncoding_t.hpp>
-#include <SDK/client/CNetworkViewOffsetVector.hpp>
+#include "C_BaseEntity.hpp"
+#include "CHitboxComponent.hpp"
+#include "HitGroup_t.hpp"
+#include "RenderMode_t.hpp"
+#include "RenderFx_t.hpp"
+#include "EntityRenderAttribute_t.hpp"
+#include "CCollisionProperty.hpp"
+#include "CGlowProperty.hpp"
+#include "DecalRtEncoding_t.hpp"
+#include "CNetworkViewOffsetVector.hpp"
 
 
 

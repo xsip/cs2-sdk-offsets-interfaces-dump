@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CRulePointEntity.hpp>
-#include <SDK/client/hudtextparms_t.hpp>
+#include "CRulePointEntity.hpp"
+#include "../client/hudtextparms_t.hpp"
 
 
 

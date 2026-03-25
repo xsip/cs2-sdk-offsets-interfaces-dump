@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CPathWithDynamicNodes.hpp>
-#include <SDK/server/CFuncMover.hpp>
+#include "CPathWithDynamicNodes.hpp"
+#include "CFuncMover.hpp"
 
 
 
@@ -27,7 +27,7 @@ namespace CS2 {
 	namespace server {
 		class CPathMover : public CS2::server::CPathWithDynamicNodes {
 		public:
-			server::CUtlVector<GlobalTypes::CHandle<server::CFuncMover>> m_vecMovers; // 0x5f0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CFuncMover>> m_vecMovers; // 0x5f0 | Schema_Atomic | Size: 0x18
 			// char m_vecMovers[0x18]; // 0x5f0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CHandle<server::CPathMoverEntitySpawner> m_hMoverSpawner; // 0x608 | Schema_Atomic | Size: 0x4
 			// char m_hMoverSpawner[0x4]; // 0x608 | Schema_Atomic | Size: 0x4

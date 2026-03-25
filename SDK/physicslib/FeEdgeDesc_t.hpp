@@ -4,9 +4,9 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
@@ -21,8 +21,7 @@ namespace CS2 {
 		class FeEdgeDesc_t  {
 		public:
 			uint16_t nEdge[2]; // 0x0 | Schema_FixedArray | Size: 0x4
-			uint16_t nSide[2]; // 0x4 | Schema_FixedArray | Size: 0x0
-			S2_PAD(0x8);
+			uint16_t nSide[2][2]; // 0x4 | Schema_FixedArray | Size: 0x8
 			uint16_t nVirtElem[2]; // 0xc | Schema_FixedArray | Size: 0x4
 		};
 		static_assert(offsetof(CS2::physicslib::FeEdgeDesc_t, nEdge) == 0x0, "nEdge in FeEdgeDesc_t should be at offset 0x0");

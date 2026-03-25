@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/rendersystemdx11/RsComparison_t.hpp>
-#include <SDK/rendersystemdx11/RsStencilStateDesc_t.hpp>
+#include "RsComparison_t.hpp"
+#include "RsStencilStateDesc_t.hpp"
 
 
 

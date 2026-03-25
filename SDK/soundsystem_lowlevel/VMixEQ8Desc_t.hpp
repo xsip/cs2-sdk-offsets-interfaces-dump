@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/soundsystem_lowlevel/VMixFilterDesc_t.hpp>
+#include "VMixFilterDesc_t.hpp"
 
 
 
@@ -21,7 +21,7 @@ namespace CS2 {
 	namespace soundsystem_lowlevel {
 		class VMixEQ8Desc_t  {
 		public:
-			soundsystem_lowlevel::VMixFilterDesc_t m_stages[8]; // 0x0 | Schema_FixedArray | Size: 0x400
+			soundsystem_lowlevel::VMixFilterDesc_t m_stages[8]; // 0x0 | Schema_FixedArray | Size: 0x80
 		};
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEQ8Desc_t, m_stages) == 0x0, "m_stages in VMixEQ8Desc_t should be at offset 0x0");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixEQ8Desc_t) == 0x80, "VMixEQ8Desc_t size should be 0x80");

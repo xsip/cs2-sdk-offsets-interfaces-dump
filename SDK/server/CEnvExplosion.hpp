@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CModelPointEntity.hpp>
-#include <SDK/client/DamageTypes_t.hpp>
-#include <SDK/client/Class_T.hpp>
+#include "CModelPointEntity.hpp"
+#include "../client/DamageTypes_t.hpp"
+#include "../client/Class_T.hpp"
 
 
 

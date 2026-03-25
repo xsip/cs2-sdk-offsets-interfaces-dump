@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/particles/CBaseRendererSource2.hpp>
-#include <SDK/particleslib/CParticleCollectionRendererFloatInput.hpp>
-#include <SDK/particles/ParticleAttributeIndex_t.hpp>
-#include <SDK/particles/ParticleOrientationChoiceList_t.hpp>
+#include "CBaseRendererSource2.hpp"
+#include "../particleslib/CParticleCollectionRendererFloatInput.hpp"
+#include "ParticleAttributeIndex_t.hpp"
+#include "ParticleOrientationChoiceList_t.hpp"
 
 
 

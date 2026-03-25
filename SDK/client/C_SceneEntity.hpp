@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_PointEntity.hpp>
-#include <SDK/client/C_BaseFlex.hpp>
-#include <SDK/client/QueuedEvents_t.hpp>
+#include "C_PointEntity.hpp"
+#include "C_BaseFlex.hpp"
+#include "C_SceneEntity_QueuedEvents_t.hpp"
 
 
 
@@ -38,7 +38,7 @@ namespace CS2 {
 			char m_hActorList[0x18]; // 0x620 | Schema_Atomic | Size: 0x18
 			bool m_bWasPlaying; // 0x638 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf);
-			GlobalTypes::CUtlVector<client::QueuedEvents_t> m_QueuedEvents; // 0x648 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::C_SceneEntity_QueuedEvents_t> m_QueuedEvents; // 0x648 | Schema_Atomic | Size: 0x18
 			// char m_QueuedEvents[0x18]; // 0x648 | Schema_Atomic | Size: 0x18
 			float32 m_flCurrentTime; // 0x660 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

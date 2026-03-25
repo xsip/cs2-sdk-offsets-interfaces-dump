@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/CNmPoseTask.hpp>
-#include <SDK/animlib/CNmTarget.hpp>
-#include <SDK/animlib/NmIKBlendMode_t.hpp>
+#include "CNmPoseTask.hpp"
+#include "CNmTarget.hpp"
+#include "NmIKBlendMode_t.hpp"
 
 
 

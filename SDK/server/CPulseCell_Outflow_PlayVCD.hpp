@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CPulseCell_Outflow_PlaySceneBase.hpp>
-#include <SDK/pulse_runtime_lib/CPulse_OutflowConnection.hpp>
+#include "CPulseCell_Outflow_PlaySceneBase.hpp"
+#include "../pulse_runtime_lib/CPulse_OutflowConnection.hpp"
 
 
 

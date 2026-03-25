@@ -4,23 +4,23 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/particles/CParticleFunctionRenderer.hpp>
-#include <SDK/particles/ParticleLightTypeChoiceList_t.hpp>
-#include <SDK/particleslib/CParticleCollectionVecInput.hpp>
-#include <SDK/particles/ParticleColorBlendType_t.hpp>
-#include <SDK/particleslib/CPerParticleFloatInput.hpp>
-#include <SDK/particleslib/CParticleCollectionFloatInput.hpp>
-#include <SDK/particles/StandardLightingAttenuationStyle_t.hpp>
-#include <SDK/particles/ParticleLightFogLightingMode_t.hpp>
-#include <SDK/particleslib/CParticleCollectionRendererFloatInput.hpp>
-#include <SDK/particles/ParticleLightBehaviorChoiceList_t.hpp>
-#include <SDK/particles/ParticleAttributeIndex_t.hpp>
+#include "CParticleFunctionRenderer.hpp"
+#include "ParticleLightTypeChoiceList_t.hpp"
+#include "../particleslib/CParticleCollectionVecInput.hpp"
+#include "ParticleColorBlendType_t.hpp"
+#include "../particleslib/CPerParticleFloatInput.hpp"
+#include "../particleslib/CParticleCollectionFloatInput.hpp"
+#include "StandardLightingAttenuationStyle_t.hpp"
+#include "ParticleLightFogLightingMode_t.hpp"
+#include "../particleslib/CParticleCollectionRendererFloatInput.hpp"
+#include "ParticleLightBehaviorChoiceList_t.hpp"
+#include "ParticleAttributeIndex_t.hpp"
 
 
 

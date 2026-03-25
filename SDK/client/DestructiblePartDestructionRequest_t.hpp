@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/EDestructibleParts_DestroyParameterFlags.hpp>
-#include <SDK/client/DamageTypes_t.hpp>
+#include "EDestructibleParts_DestroyParameterFlags.hpp"
+#include "DamageTypes_t.hpp"
 
 
 

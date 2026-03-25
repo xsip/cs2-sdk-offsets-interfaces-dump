@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_DynamicProp.hpp>
-#include <SDK/client/C_AttributeContainer.hpp>
-#include <SDK/client/ParticleIndex_t.hpp>
+#include "C_DynamicProp.hpp"
+#include "C_AttributeContainer.hpp"
+#include "ParticleIndex_t.hpp"
 
 
 

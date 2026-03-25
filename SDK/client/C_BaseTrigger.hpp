@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseToggle.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/client/C_BaseEntity.hpp>
+#include "C_BaseToggle.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "C_BaseEntity.hpp"
 
 
 

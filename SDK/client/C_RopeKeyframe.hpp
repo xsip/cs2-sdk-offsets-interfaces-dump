@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseModelEntity.hpp>
-#include <SDK/modellib/AttachmentHandle_t.hpp>
-#include <SDK/client/CPhysicsDelegate.hpp>
+#include "C_BaseModelEntity.hpp"
+#include "../modellib/AttachmentHandle_t.hpp"
+#include "C_RopeKeyframe_CPhysicsDelegate.hpp"
 
 
 
@@ -63,7 +63,7 @@ namespace CS2 {
 			uint8_t m_nChangeCount; // 0x1161 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
 			float32 m_Width; // 0x1164 | Schema_Builtin | Size: 0x4
-			client::CPhysicsDelegate m_PhysicsDelegate; // 0x1168 | Schema_DeclaredClass | Size: 0x10
+			client::C_RopeKeyframe_CPhysicsDelegate m_PhysicsDelegate; // 0x1168 | Schema_DeclaredClass | Size: 0x10
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x1178 | Schema_Atomic | Size: 0x8
 			char m_hMaterial[0x8]; // 0x1178 | Schema_Atomic | Size: 0x8
 			int32_t m_TextureHeight; // 0x1180 | Schema_Builtin | Size: 0x4

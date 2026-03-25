@@ -4,9 +4,9 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
@@ -20,8 +20,7 @@ namespace CS2 {
 	namespace physicslib {
 		class FeSimdSpringIntegrator_t  {
 		public:
-			uint16_t nNode[4]; // 0x0 | Schema_FixedArray | Size: 0x0
-			S2_PAD(0x10);
+			uint16_t nNode[2][4]; // 0x0 | Schema_FixedArray | Size: 0x10
 			GlobalTypes::fltx4 flSpringRestLength; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 flSpringConstant; // 0x20 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 flSpringDamping; // 0x30 | Schema_Atomic | Size: 0x10

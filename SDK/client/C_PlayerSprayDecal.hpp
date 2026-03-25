@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_ModelPointEntity.hpp>
-#include <SDK/client/CPlayerSprayDecalRenderHelper.hpp>
+#include "C_ModelPointEntity.hpp"
+#include "CPlayerSprayDecalRenderHelper.hpp"
 
 
 

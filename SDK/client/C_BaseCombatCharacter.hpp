@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseFlex.hpp>
-#include <SDK/client/C_EconWearable.hpp>
-#include <SDK/modellib/AttachmentHandle_t.hpp>
-#include <SDK/client/WaterWakeMode_t.hpp>
+#include "C_BaseFlex.hpp"
+#include "C_EconWearable.hpp"
+#include "../modellib/AttachmentHandle_t.hpp"
+#include "C_BaseCombatCharacter_WaterWakeMode_t.hpp"
 
 
 
@@ -29,7 +29,7 @@ namespace CS2 {
 			modellib::AttachmentHandle_t m_leftFootAttachment; // 0x1368 | Schema_DeclaredClass | Size: 0x1
 			modellib::AttachmentHandle_t m_rightFootAttachment; // 0x1369 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x2);
-			client::WaterWakeMode_t m_nWaterWakeMode; // 0x136c | Schema_DeclaredEnum | Size: 0x4
+			client::C_BaseCombatCharacter_WaterWakeMode_t m_nWaterWakeMode; // 0x136c | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flWaterWorldZ; // 0x1370 | Schema_Builtin | Size: 0x4
 			float32 m_flWaterNextTraceTime; // 0x1374 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x60); // End padding

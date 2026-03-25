@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animgraphlib/CAnimComponentUpdater.hpp>
-#include <SDK/animgraphlib/CAnimMotorUpdaterBase.hpp>
-#include <SDK/animgraphlib/CAnimInputDamping.hpp>
-#include <SDK/animgraphlib/CAnimParamHandle.hpp>
+#include "CAnimComponentUpdater.hpp"
+#include "CAnimMotorUpdaterBase.hpp"
+#include "CAnimInputDamping.hpp"
+#include "CAnimParamHandle.hpp"
 
 
 
@@ -33,7 +33,8 @@ namespace CS2 {
 			bool m_bMoveVarsDisabled; // 0x70 | Schema_Builtin | Size: 0x1
 			bool m_bNetworkPath; // 0x71 | Schema_Builtin | Size: 0x1
 			bool m_bNetworkFacing; // 0x72 | Schema_Builtin | Size: 0x1
-			animgraphlib::CAnimParamHandle m_paramHandles[34]; // 0x73 | Schema_FixedArray | Size: 0x908
+			animgraphlib::CAnimParamHandle m_paramHandles[34]; // 0x73 | Schema_FixedArray | Size: 0x44
+			S2_PAD(0x1); // End padding
 		};
 		static_assert(offsetof(CS2::animgraphlib::CMovementComponentUpdater, m_motors) == 0x30, "m_motors in CMovementComponentUpdater should be at offset 0x30");
 		static_assert(offsetof(CS2::animgraphlib::CMovementComponentUpdater, m_facingDamping) == 0x48, "m_facingDamping in CMovementComponentUpdater should be at offset 0x48");

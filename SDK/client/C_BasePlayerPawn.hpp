@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseCombatCharacter.hpp>
-#include <SDK/client/ViewAngleServerChange_t.hpp>
-#include <SDK/client/sky3dparams_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
+#include "C_BaseCombatCharacter.hpp"
+#include "ViewAngleServerChange_t.hpp"
+#include "sky3dparams_t.hpp"
+#include "../entity2/GameTime_t.hpp"
 
 
 

@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseTrigger.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/DamageTypes_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/server/CBaseEntity.hpp>
+#include "CBaseTrigger.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../client/DamageTypes_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "CBaseEntity.hpp"
 
 
 
@@ -41,7 +41,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnHurt; // 0x8c8 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnHurtPlayer; // 0x8e0 | Schema_DeclaredClass | Size: 0x18
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hurtEntities; // 0x8f8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hurtEntities; // 0x8f8 | Schema_Atomic | Size: 0x18
 			// char m_hurtEntities[0x18]; // 0x8f8 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CTriggerHurt, m_flOriginalDamage) == 0x890, "m_flOriginalDamage in CTriggerHurt should be at offset 0x890");

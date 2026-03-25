@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CEconItemAttribute.hpp>
+#include "CEconItemAttribute.hpp"
 
 
 
@@ -27,7 +27,7 @@ namespace CS2 {
 		class CAttributeList  {
 		public:
 			S2_PAD(0x8);
-			// server::CUtlVectorEmbeddedNetworkVar<server::CEconItemAttribute> m_Attributes; // 0x8 | Schema_Atomic | Size: 0x68
+			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::CEconItemAttribute> m_Attributes; // 0x8 | Schema_Atomic | Size: 0x68
 			char m_Attributes[0x68]; // 0x8 | Schema_Atomic | Size: 0x68
 			server::CAttributeManager* m_pManager; // 0x70 | Schema_Ptr | Size: 0x8
 		};

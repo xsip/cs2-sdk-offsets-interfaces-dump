@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/SceneRequestHandle_t.hpp>
-#include <SDK/server/ESceneRequestState_t.hpp>
+#include "SceneRequestHandle_t.hpp"
+#include "ESceneRequestState_t.hpp"
 
 
 

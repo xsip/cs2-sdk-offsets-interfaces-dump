@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_PhysicsProp.hpp>
-#include <SDK/client/shard_model_desc_t.hpp>
+#include "C_PhysicsProp.hpp"
+#include "shard_model_desc_t.hpp"
 
 
 

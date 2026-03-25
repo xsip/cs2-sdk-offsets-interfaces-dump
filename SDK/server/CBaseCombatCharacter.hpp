@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseFlex.hpp>
-#include <SDK/server/CEconWearable.hpp>
-#include <SDK/client/Hull_t.hpp>
-#include <SDK/server/CMovementStatsProperty.hpp>
+#include "CBaseFlex.hpp"
+#include "CEconWearable.hpp"
+#include "../client/Hull_t.hpp"
+#include "CMovementStatsProperty.hpp"
 
 
 

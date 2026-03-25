@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CMarkupVolumeWithRef.hpp>
-#include <SDK/server/NavScopeFlags_t.hpp>
+#include "CMarkupVolumeWithRef.hpp"
+#include "NavScopeFlags_t.hpp"
 
 
 

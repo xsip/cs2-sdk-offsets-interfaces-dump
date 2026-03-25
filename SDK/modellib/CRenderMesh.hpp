@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/CSceneObjectData.hpp>
-#include <SDK/modellib/CRenderSkeleton.hpp>
-#include <SDK/modellib/DynamicMeshDeformParams_t.hpp>
+#include "CSceneObjectData.hpp"
+#include "CRenderSkeleton.hpp"
+#include "DynamicMeshDeformParams_t.hpp"
 
 
 

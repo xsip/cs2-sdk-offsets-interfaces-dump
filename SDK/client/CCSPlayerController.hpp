@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CBasePlayerController.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/Reason.hpp>
+#include "CBasePlayerController.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "QuestProgress_Reason.hpp"
 
 
 
@@ -69,7 +69,7 @@ namespace CS2 {
 			uint16_t m_unActiveQuestId; // 0x89c | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2);
 			uint32_t m_rtActiveMissionPeriod; // 0x8a0 | Schema_Builtin | Size: 0x4
-			client::Reason m_nQuestProgressReason; // 0x8a4 | Schema_DeclaredEnum | Size: 0x4
+			client::QuestProgress_Reason m_nQuestProgressReason; // 0x8a4 | Schema_DeclaredEnum | Size: 0x4
 			uint32_t m_unPlayerTvControlFlags; // 0x8a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x2c);
 			int32_t m_iDraftIndex; // 0x8d8 | Schema_Builtin | Size: 0x4

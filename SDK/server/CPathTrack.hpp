@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CPointEntity.hpp>
-#include <SDK/server/TrackOrientationType_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CPointEntity.hpp"
+#include "TrackOrientationType_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 

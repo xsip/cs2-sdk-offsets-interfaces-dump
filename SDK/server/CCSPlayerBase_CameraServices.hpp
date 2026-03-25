@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CPlayer_CameraServices.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/server/CBaseEntity.hpp>
+#include "CPlayer_CameraServices.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "CBaseEntity.hpp"
 
 
 
@@ -30,7 +30,7 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CBaseEntity> m_hZoomOwner; // 0x188 | Schema_Atomic | Size: 0x4
 			// char m_hZoomOwner[0x4]; // 0x188 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTriggerFogList; // 0x190 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTriggerFogList; // 0x190 | Schema_Atomic | Size: 0x18
 			// char m_hTriggerFogList[0x18]; // 0x190 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CHandle<server::CBaseEntity> m_hLastFogTrigger; // 0x1a8 | Schema_Atomic | Size: 0x4
 			// char m_hLastFogTrigger[0x4]; // 0x1a8 | Schema_Atomic | Size: 0x4

@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseModelEntity.hpp>
-#include <SDK/server/CInfoLadderDismount.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CBaseModelEntity.hpp"
+#include "CInfoLadderDismount.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -25,7 +25,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector m_vecLadderDir; // 0x730 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::CInfoLadderDismount>> m_Dismounts; // 0x740 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CInfoLadderDismount>> m_Dismounts; // 0x740 | Schema_Atomic | Size: 0x18
 			// char m_Dismounts[0x18]; // 0x740 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector m_vecLocalTop; // 0x758 | Schema_Atomic | Size: 0xc
 			GlobalTypes::VectorWS m_vecPlayerMountPositionTop; // 0x764 | Schema_Atomic | Size: 0xc

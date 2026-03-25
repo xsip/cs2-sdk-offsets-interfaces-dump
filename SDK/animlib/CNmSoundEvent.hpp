@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/CNmEvent.hpp>
-#include <SDK/animlib/CNmEventRelevance_t.hpp>
-#include <SDK/animlib/Position_t.hpp>
+#include "CNmEvent.hpp"
+#include "CNmEventRelevance_t.hpp"
+#include "CNmSoundEvent_Position_t.hpp"
 
 
 
@@ -26,7 +26,7 @@ namespace CS2 {
 			animlib::CNmEventRelevance_t m_relevance; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_name; // 0x28 | Schema_Atomic | Size: 0x8
-			animlib::Position_t m_position; // 0x30 | Schema_DeclaredEnum | Size: 0x4
+			animlib::CNmSoundEvent_Position_t m_position; // 0x30 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_attachmentName; // 0x38 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_tags; // 0x40 | Schema_Atomic | Size: 0x8

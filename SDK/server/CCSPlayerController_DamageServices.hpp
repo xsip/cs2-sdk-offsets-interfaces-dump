@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayerControllerComponent.hpp>
-#include <SDK/server/CDamageRecord.hpp>
+#include "../client/CPlayerControllerComponent.hpp"
+#include "CDamageRecord.hpp"
 
 
 
@@ -24,7 +24,7 @@ namespace CS2 {
 		public:
 			int32_t m_nSendUpdate; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// server::CUtlVectorEmbeddedNetworkVar<server::CDamageRecord> m_DamageList; // 0x48 | Schema_Atomic | Size: 0x88
+			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::CDamageRecord> m_DamageList; // 0x48 | Schema_Atomic | Size: 0x88
 			char m_DamageList[0x88]; // 0x48 | Schema_Atomic | Size: 0x88
 		};
 		static_assert(offsetof(CS2::server::CCSPlayerController_DamageServices, m_nSendUpdate) == 0x40, "m_nSendUpdate in CCSPlayerController_DamageServices should be at offset 0x40");

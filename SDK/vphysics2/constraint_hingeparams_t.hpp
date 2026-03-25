@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/vphysics2/constraint_axislimit_t.hpp>
-#include <SDK/vphysics2/constraint_breakableparams_t.hpp>
+#include "constraint_axislimit_t.hpp"
+#include "constraint_breakableparams_t.hpp"
 
 
 

@@ -4,18 +4,18 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animgraphlib/CLeafUpdateNode.hpp>
-#include <SDK/animgraphlib/CPoseHandle.hpp>
-#include <SDK/animgraphlib/CAnimInputDamping.hpp>
-#include <SDK/animgraphlib/AnimVectorSource.hpp>
-#include <SDK/animgraphlib/CAnimParamHandle.hpp>
-#include <SDK/animationsystem/HSequence.hpp>
+#include "CLeafUpdateNode.hpp"
+#include "CPoseHandle.hpp"
+#include "CAnimInputDamping.hpp"
+#include "AnimVectorSource.hpp"
+#include "CAnimParamHandle.hpp"
+#include "../animationsystem/HSequence.hpp"
 
 
 
@@ -27,9 +27,9 @@ namespace CS2 {
 		class CLeanMatrixUpdateNode : public CS2::animgraphlib::CLeafUpdateNode {
 		public:
 			S2_PAD(0x4);
-			int32_t m_frameCorners[3]; // 0x5c | Schema_FixedArray | Size: 0x0
-			S2_PAD(0x24);
-			animgraphlib::CPoseHandle m_poses[9]; // 0x80 | Schema_FixedArray | Size: 0x144
+			int32_t m_frameCorners[3][3]; // 0x5c | Schema_FixedArray | Size: 0x24
+			animgraphlib::CPoseHandle m_poses[9]; // 0x80 | Schema_FixedArray | Size: 0x24
+			S2_PAD(0x4);
 			animgraphlib::CAnimInputDamping m_damping; // 0xa8 | Schema_DeclaredClass | Size: 0x18
 			animgraphlib::AnimVectorSource m_blendSource; // 0xc0 | Schema_DeclaredEnum | Size: 0x4
 			animgraphlib::CAnimParamHandle m_paramIndex; // 0xc4 | Schema_DeclaredClass | Size: 0x2

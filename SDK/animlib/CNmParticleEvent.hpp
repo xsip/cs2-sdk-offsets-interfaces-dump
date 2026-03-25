@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animlib/CNmEvent.hpp>
-#include <SDK/animlib/CNmEventRelevance_t.hpp>
-#include <SDK/animlib/Type_t.hpp>
-#include <SDK/animationsystem/ParticleAttachment_t.hpp>
+#include "CNmEvent.hpp"
+#include "CNmEventRelevance_t.hpp"
+#include "CNmParticleEvent_Type_t.hpp"
+#include "../animationsystem/ParticleAttachment_t.hpp"
 
 
 
@@ -25,7 +25,7 @@ namespace CS2 {
 		class CNmParticleEvent : public CS2::animlib::CNmEvent {
 		public:
 			animlib::CNmEventRelevance_t m_relevance; // 0x20 | Schema_DeclaredEnum | Size: 0x4
-			animlib::Type_t m_type; // 0x24 | Schema_DeclaredEnum | Size: 0x4
+			animlib::CNmParticleEvent_Type_t m_type; // 0x24 | Schema_DeclaredEnum | Size: 0x4
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_hParticleSystem; // 0x28 | Schema_Atomic | Size: 0x8
 			char m_hParticleSystem[0x8]; // 0x28 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_tags; // 0x30 | Schema_Atomic | Size: 0x8

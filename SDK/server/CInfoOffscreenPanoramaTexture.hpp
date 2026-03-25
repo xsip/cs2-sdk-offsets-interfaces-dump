@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CPointEntity.hpp>
-#include <SDK/server/CBaseModelEntity.hpp>
+#include "CPointEntity.hpp"
+#include "CBaseModelEntity.hpp"
 
 
 
@@ -37,7 +37,7 @@ namespace CS2 {
 			// GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x4f0 | Schema_Atomic | Size: 0x18
 			char m_vecCSSClasses[0x18]; // 0x4f0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_szTargetsName; // 0x508 | Schema_Atomic | Size: 0x8
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>> m_AdditionalTargetEntities; // 0x510 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>> m_AdditionalTargetEntities; // 0x510 | Schema_Atomic | Size: 0x18
 			// char m_AdditionalTargetEntities[0x18]; // 0x510 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_bDisabled) == 0x4A8, "m_bDisabled in CInfoOffscreenPanoramaTexture should be at offset 0x4A8");

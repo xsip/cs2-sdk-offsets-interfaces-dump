@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseTrigger.hpp>
-#include <SDK/server/CBaseEntity.hpp>
+#include "CBaseTrigger.hpp"
+#include "CBaseEntity.hpp"
 
 
 
@@ -22,7 +22,7 @@ namespace CS2 {
 	namespace server {
 		class CTriggerSndSosOpvar : public CS2::server::CBaseTrigger {
 		public:
-			server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTouchingPlayers; // 0x890 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hTouchingPlayers; // 0x890 | Schema_Atomic | Size: 0x18
 			// char m_hTouchingPlayers[0x18]; // 0x890 | Schema_Atomic | Size: 0x18
 			GlobalTypes::Vector m_flPosition; // 0x8a8 | Schema_Atomic | Size: 0xc
 			float32 m_flCenterSize; // 0x8b4 | Schema_Builtin | Size: 0x4

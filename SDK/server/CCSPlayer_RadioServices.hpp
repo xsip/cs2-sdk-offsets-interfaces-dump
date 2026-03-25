@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayerPawnComponent.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
+#include "../client/CPlayerPawnComponent.hpp"
+#include "../entity2/GameTime_t.hpp"
 
 
 
@@ -25,7 +25,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flGotHostageTalkTimer; // 0x48 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flDefusingTalkTimer; // 0x4c | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_flC4PlantTalkTimer; // 0x50 | Schema_DeclaredClass | Size: 0x4
-			entity2::GameTime_t m_flRadioTokenSlots[3]; // 0x54 | Schema_FixedArray | Size: 0x24
+			entity2::GameTime_t m_flRadioTokenSlots[3]; // 0x54 | Schema_FixedArray | Size: 0xc
 			bool m_bIgnoreRadio; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};

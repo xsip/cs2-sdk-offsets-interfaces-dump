@@ -4,14 +4,14 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animgraphlib/CAnimationGraphVisualizerPrimitiveType.hpp>
-#include <SDK/modellib/AnimNodeID.hpp>
+#include "CAnimationGraphVisualizerPrimitiveType.hpp"
+#include "../modellib/AnimNodeID.hpp"
 
 
 
@@ -24,7 +24,7 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 			animgraphlib::CAnimationGraphVisualizerPrimitiveType m_Type; // 0x8 | Schema_DeclaredEnum | Size: 0x4
-			modellib::AnimNodeID m_OwningAnimNodePaths[11]; // 0xc | Schema_FixedArray | Size: 0x1e4
+			modellib::AnimNodeID m_OwningAnimNodePaths[11]; // 0xc | Schema_FixedArray | Size: 0x2c
 			int32_t m_nOwningAnimNodePathCount; // 0x38 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};

@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/animgraphlib/CVectorQuantizer.hpp>
+#include "CVectorQuantizer.hpp"
 
 
 
@@ -24,9 +24,9 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animgraphlib::CMotionSearchNode*> m_children; // 0x0 | Schema_Atomic | Size: 0x18
 			// char m_children[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 			animgraphlib::CVectorQuantizer m_quantizer; // 0x18 | Schema_DeclaredClass | Size: 0x20
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector> m_sampleCodes; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<uintptr_t>> m_sampleCodes; // 0x38 | Schema_Atomic | Size: 0x18
 			// char m_sampleCodes[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector> m_sampleIndices; // 0x50 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<uintptr_t>> m_sampleIndices; // 0x50 | Schema_Atomic | Size: 0x18
 			// char m_sampleIndices[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_selectableSamples; // 0x68 | Schema_Atomic | Size: 0x18
 			// char m_selectableSamples[0x18]; // 0x68 | Schema_Atomic | Size: 0x18

@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/Camera_t.hpp>
+#include "SkeletonAnimCapture_t_Camera_t.hpp"
 
 
 
@@ -28,7 +28,7 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t*> m_AnimCaptures; // 0x0 | Schema_Atomic | Size: 0x18
 			// char m_AnimCaptures[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<modellib::Camera_t> m_CameraTrack; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t_Camera_t> m_CameraTrack; // 0x18 | Schema_Atomic | Size: 0x18
 			// char m_CameraTrack[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			float32 m_flRecordingTime; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding

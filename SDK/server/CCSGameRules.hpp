@@ -4,16 +4,16 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CTeamplayRules.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/server/SpawnPoint.hpp>
-#include <SDK/server/CRetakeGameRules.hpp>
+#include "CTeamplayRules.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "SpawnPoint.hpp"
+#include "CRetakeGameRules.hpp"
 
 
 
@@ -102,7 +102,7 @@ namespace CS2 {
 			int32_t m_iMatchStats_PlayersAlive_CT[30]; // 0xac8 | Schema_FixedArray | Size: 0x78
 			int32_t m_iMatchStats_PlayersAlive_T[30]; // 0xb40 | Schema_FixedArray | Size: 0x78
 			float32 m_TeamRespawnWaveTimes[32]; // 0xbb8 | Schema_FixedArray | Size: 0x80
-			entity2::GameTime_t m_flNextRespawnWave[32]; // 0xc38 | Schema_FixedArray | Size: 0x1000
+			entity2::GameTime_t m_flNextRespawnWave[32]; // 0xc38 | Schema_FixedArray | Size: 0x80
 			GlobalTypes::Vector m_vMinimapMins; // 0xcb8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMinimapMaxs; // 0xcc4 | Schema_Atomic | Size: 0xc
 			float32 m_MinimapVerticalSectionHeights[8]; // 0xcd0 | Schema_FixedArray | Size: 0x20
@@ -202,9 +202,9 @@ namespace CS2 {
 			S2_PAD(0x4d);
 			GlobalTypes::Vector m_vecMainCTSpawnPos; // 0xf50 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_CTSpawnPointsMasterList; // 0xf60 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_CTSpawnPointsMasterList; // 0xf60 | Schema_Atomic | Size: 0x18
 			// char m_CTSpawnPointsMasterList[0x18]; // 0xf60 | Schema_Atomic | Size: 0x18
-			server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_TerroristSpawnPointsMasterList; // 0xf78 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_TerroristSpawnPointsMasterList; // 0xf78 | Schema_Atomic | Size: 0x18
 			// char m_TerroristSpawnPointsMasterList[0x18]; // 0xf78 | Schema_Atomic | Size: 0x18
 			bool m_bRespawningAllRespawnablePlayers; // 0xf90 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -213,9 +213,9 @@ namespace CS2 {
 			int32_t m_iNextTerroristSpawnPoint; // 0xf9c | Schema_Builtin | Size: 0x4
 			float32 m_flTerroristSpawnPointUsedTime; // 0xfa0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_CTSpawnPoints; // 0xfa8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_CTSpawnPoints; // 0xfa8 | Schema_Atomic | Size: 0x18
 			// char m_CTSpawnPoints[0x18]; // 0xfa8 | Schema_Atomic | Size: 0x18
-			server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_TerroristSpawnPoints; // 0xfc0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>> m_TerroristSpawnPoints; // 0xfc0 | Schema_Atomic | Size: 0x18
 			// char m_TerroristSpawnPoints[0x18]; // 0xfc0 | Schema_Atomic | Size: 0x18
 			bool m_bIsUnreservedGameServer; // 0xfd8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -241,8 +241,8 @@ namespace CS2 {
 			// char m_hPlayerResource[0x4]; // 0x1138 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4);
 			server::CRetakeGameRules m_RetakeRules; // 0x1140 | Schema_DeclaredClass | Size: 0x1f0
-			GlobalTypes::CUtlVector< int32 >[4] m_arrTeamUniqueKillWeaponsMatch[4]; // 0x1330 | Schema_FixedArray | Size: 0x60
-			// char m_arrTeamUniqueKillWeaponsMatch[0x18]; // 0x1330 | Schema_FixedArray | Size: 0x18
+			GlobalTypes::CUtlVector< int32 > m_arrTeamUniqueKillWeaponsMatch[4]; // 0x1330 | Schema_FixedArray | Size: 0x60
+			// char m_arrTeamUniqueKillWeaponsMatch[0x60]; // 0x1330 | Schema_FixedArray | Size: 0x18
 			bool m_bTeamLastKillUsedUniqueWeaponMatch[4]; // 0x1390 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x24);
 			uint8_t m_nMatchEndCount; // 0x13b8 | Schema_Builtin | Size: 0x1

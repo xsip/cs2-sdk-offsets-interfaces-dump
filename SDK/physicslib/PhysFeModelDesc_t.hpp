@@ -4,55 +4,55 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/physicslib/FeNodeBase_t.hpp>
-#include <SDK/physicslib/FeSimdNodeBase_t.hpp>
-#include <SDK/physicslib/FeQuad_t.hpp>
-#include <SDK/physicslib/FeSimdQuad_t.hpp>
-#include <SDK/physicslib/FeSimdTri_t.hpp>
-#include <SDK/physicslib/FeSimdRodConstraint_t.hpp>
-#include <SDK/physicslib/FeSimdRodConstraintAnim_t.hpp>
-#include <SDK/physicslib/FeRodConstraint_t.hpp>
-#include <SDK/physicslib/FeTwistConstraint_t.hpp>
-#include <SDK/physicslib/FeHingeLimit_t.hpp>
-#include <SDK/physicslib/FeDynKinLink_t.hpp>
-#include <SDK/physicslib/FeAntiTunnelProbe_t.hpp>
-#include <SDK/physicslib/FeNodeStrayBox_t.hpp>
-#include <SDK/physicslib/FeAxialEdgeBend_t.hpp>
-#include <SDK/physicslib/FeCtrlOffset_t.hpp>
-#include <SDK/physicslib/FeCtrlOsOffset_t.hpp>
-#include <SDK/physicslib/FeFollowNode_t.hpp>
-#include <SDK/physicslib/FeCollisionPlane_t.hpp>
-#include <SDK/physicslib/FeNodeIntegrator_t.hpp>
-#include <SDK/physicslib/FeSpringIntegrator_t.hpp>
-#include <SDK/physicslib/FeSimdSpringIntegrator_t.hpp>
-#include <SDK/physicslib/FeWorldCollisionParams_t.hpp>
-#include <SDK/physicslib/FeTaperedCapsuleStretch_t.hpp>
-#include <SDK/physicslib/FeTaperedCapsuleRigid_t.hpp>
-#include <SDK/physicslib/FeSphereRigid_t.hpp>
-#include <SDK/physicslib/FeTreeChildren_t.hpp>
-#include <SDK/physicslib/FeFitMatrix_t.hpp>
-#include <SDK/physicslib/FeFitWeight_t.hpp>
-#include <SDK/physicslib/FeNodeReverseOffset_t.hpp>
-#include <SDK/physicslib/FeAnimStrayRadius_t.hpp>
-#include <SDK/physicslib/FeSimdAnimStrayRadius_t.hpp>
-#include <SDK/physicslib/FeKelagerBend2_t.hpp>
-#include <SDK/physicslib/FeCtrlSoftOffset_t.hpp>
-#include <SDK/physicslib/CFeIndexedJiggleBone.hpp>
-#include <SDK/physicslib/FeTri_t.hpp>
-#include <SDK/physicslib/FeSDFRigid_t.hpp>
-#include <SDK/physicslib/FeBoxRigid_t.hpp>
-#include <SDK/physicslib/FeRigidColliderIndices_t.hpp>
-#include <SDK/physicslib/FeMorphLayerDepr_t.hpp>
-#include <SDK/physicslib/FeVertexMapDesc_t.hpp>
-#include <SDK/physicslib/FeEffectDesc_t.hpp>
-#include <SDK/physicslib/FeNodeWindBase_t.hpp>
-#include <SDK/physicslib/FeModelSelfCollisionLayer_t.hpp>
+#include "FeNodeBase_t.hpp"
+#include "FeSimdNodeBase_t.hpp"
+#include "FeQuad_t.hpp"
+#include "FeSimdQuad_t.hpp"
+#include "FeSimdTri_t.hpp"
+#include "FeSimdRodConstraint_t.hpp"
+#include "FeSimdRodConstraintAnim_t.hpp"
+#include "FeRodConstraint_t.hpp"
+#include "FeTwistConstraint_t.hpp"
+#include "FeHingeLimit_t.hpp"
+#include "FeDynKinLink_t.hpp"
+#include "FeAntiTunnelProbe_t.hpp"
+#include "FeNodeStrayBox_t.hpp"
+#include "FeAxialEdgeBend_t.hpp"
+#include "FeCtrlOffset_t.hpp"
+#include "FeCtrlOsOffset_t.hpp"
+#include "FeFollowNode_t.hpp"
+#include "FeCollisionPlane_t.hpp"
+#include "FeNodeIntegrator_t.hpp"
+#include "FeSpringIntegrator_t.hpp"
+#include "FeSimdSpringIntegrator_t.hpp"
+#include "FeWorldCollisionParams_t.hpp"
+#include "FeTaperedCapsuleStretch_t.hpp"
+#include "FeTaperedCapsuleRigid_t.hpp"
+#include "FeSphereRigid_t.hpp"
+#include "FeTreeChildren_t.hpp"
+#include "FeFitMatrix_t.hpp"
+#include "FeFitWeight_t.hpp"
+#include "FeNodeReverseOffset_t.hpp"
+#include "FeAnimStrayRadius_t.hpp"
+#include "FeSimdAnimStrayRadius_t.hpp"
+#include "FeKelagerBend2_t.hpp"
+#include "FeCtrlSoftOffset_t.hpp"
+#include "CFeIndexedJiggleBone.hpp"
+#include "FeTri_t.hpp"
+#include "FeSDFRigid_t.hpp"
+#include "FeBoxRigid_t.hpp"
+#include "FeRigidColliderIndices_t.hpp"
+#include "FeMorphLayerDepr_t.hpp"
+#include "FeVertexMapDesc_t.hpp"
+#include "FeEffectDesc_t.hpp"
+#include "FeNodeWindBase_t.hpp"
+#include "FeModelSelfCollisionLayer_t.hpp"
 
 
 

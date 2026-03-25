@@ -4,18 +4,18 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/CPlayerPawnComponent.hpp>
-#include <SDK/entity2/GameTick_t.hpp>
-#include <SDK/server/fogplayerparams_t.hpp>
-#include <SDK/server/audioparams_t.hpp>
-#include <SDK/server/CPostProcessingVolume.hpp>
-#include <SDK/server/CEnvSoundscapeTriggerable.hpp>
+#include "../client/CPlayerPawnComponent.hpp"
+#include "../entity2/GameTick_t.hpp"
+#include "fogplayerparams_t.hpp"
+#include "audioparams_t.hpp"
+#include "CPostProcessingVolume.hpp"
+#include "CEnvSoundscapeTriggerable.hpp"
 
 
 
@@ -51,7 +51,7 @@ namespace CS2 {
 			float32 m_flOldPlayerZ; // 0x140 | Schema_Builtin | Size: 0x4
 			float32 m_flOldPlayerViewOffsetZ; // 0x144 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18);
-			server::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>> m_hTriggerSoundscapeList; // 0x160 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>> m_hTriggerSoundscapeList; // 0x160 | Schema_Atomic | Size: 0x18
 			// char m_hTriggerSoundscapeList[0x18]; // 0x160 | Schema_Atomic | Size: 0x18
 		};
 		static_assert(offsetof(CS2::server::CPlayer_CameraServices, m_vecCsViewPunchAngle) == 0x48, "m_vecCsViewPunchAngle in CPlayer_CameraServices should be at offset 0x48");

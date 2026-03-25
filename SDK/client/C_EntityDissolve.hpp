@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_BaseModelEntity.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/EntityDisolveType_t.hpp>
+#include "C_BaseModelEntity.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "EntityDisolveType_t.hpp"
 
 
 

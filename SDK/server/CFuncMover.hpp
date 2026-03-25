@@ -4,22 +4,22 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseModelEntity.hpp>
-#include <SDK/server/Move_t.hpp>
-#include <SDK/client/SolidType_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/server/OrientationUpdate_t.hpp>
-#include <SDK/server/TransitionToPathNodeAction_t.hpp>
-#include <SDK/server/FollowEntityDirection_t.hpp>
-#include <SDK/server/FollowConstraint_t.hpp>
-#include <SDK/entity2/GameTick_t.hpp>
+#include "CBaseModelEntity.hpp"
+#include "CFuncMover_Move_t.hpp"
+#include "../client/SolidType_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "CFuncMover_OrientationUpdate_t.hpp"
+#include "CFuncMover_TransitionToPathNodeAction_t.hpp"
+#include "CFuncMover_FollowEntityDirection_t.hpp"
+#include "CFuncMover_FollowConstraint_t.hpp"
+#include "../entity2/GameTick_t.hpp"
 
 
 
@@ -44,7 +44,7 @@ namespace CS2 {
 			// char m_hPrevPathMover[0x4]; // 0x73c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszPathNodeStart; // 0x740 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszPathNodeEnd; // 0x748 | Schema_Atomic | Size: 0x8
-			server::Move_t m_eMoveType; // 0x750 | Schema_DeclaredEnum | Size: 0x4
+			server::CFuncMover_Move_t m_eMoveType; // 0x750 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bIsReversing; // 0x754 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
 			float32 m_flStartSpeed; // 0x758 | Schema_Builtin | Size: 0x4
@@ -83,7 +83,7 @@ namespace CS2 {
 			bool m_bStartAtEnd; // 0x811 | Schema_Builtin | Size: 0x1
 			bool m_bStartFollowingClosestMover; // 0x812 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1);
-			server::OrientationUpdate_t m_eOrientationUpdate; // 0x814 | Schema_DeclaredEnum | Size: 0x4
+			server::CFuncMover_OrientationUpdate_t m_eOrientationUpdate; // 0x814 | Schema_DeclaredEnum | Size: 0x4
 			entity2::GameTime_t m_flTimeStartOrientationChange; // 0x818 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flTimeToBlendToNewOrientation; // 0x81c | Schema_Builtin | Size: 0x4
 			float32 m_flDurationBlendToNewOrientationRan; // 0x820 | Schema_Builtin | Size: 0x4
@@ -104,7 +104,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnLerpToPositionComplete; // 0x880 | Schema_DeclaredClass | Size: 0x18
 			bool m_bIsPaused; // 0x898 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::TransitionToPathNodeAction_t m_eTransitionedToPathNodeAction; // 0x89c | Schema_DeclaredEnum | Size: 0x4
+			server::CFuncMover_TransitionToPathNodeAction_t m_eTransitionedToPathNodeAction; // 0x89c | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nDelayedTeleportToNode; // 0x8a0 | Schema_Builtin | Size: 0x4
 			bool m_bIsVerboseLogging; // 0x8a4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
@@ -127,7 +127,7 @@ namespace CS2 {
 			bool m_bNextNodeReturnsCurrent; // 0x948 | Schema_Builtin | Size: 0x1
 			bool m_bStartedMoving; // 0x949 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1e);
-			server::FollowEntityDirection_t m_eFollowEntityDirection; // 0x968 | Schema_DeclaredEnum | Size: 0x4
+			server::CFuncMover_FollowEntityDirection_t m_eFollowEntityDirection; // 0x968 | Schema_DeclaredEnum | Size: 0x4
 			GlobalTypes::CHandle<server::CFuncMover> m_hFollowMover; // 0x96c | Schema_Atomic | Size: 0x4
 			// char m_hFollowMover[0x4]; // 0x96c | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszFollowMoverEntityName; // 0x970 | Schema_Atomic | Size: 0x8
@@ -136,7 +136,7 @@ namespace CS2 {
 			float32 m_flFollowMoverSpringStrength; // 0x980 | Schema_Builtin | Size: 0x4
 			bool m_bFollowConstraintsInitialized; // 0x984 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			server::FollowConstraint_t m_eFollowConstraint; // 0x988 | Schema_DeclaredEnum | Size: 0x4
+			server::CFuncMover_FollowConstraint_t m_eFollowConstraint; // 0x988 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flFollowMoverSpeed; // 0x98c | Schema_Builtin | Size: 0x4
 			float32 m_flFollowMoverVelocity; // 0x990 | Schema_Builtin | Size: 0x4
 			entity2::GameTick_t m_nTickMovementRan; // 0x994 | Schema_DeclaredClass | Size: 0x4

@@ -4,13 +4,13 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/soundsystem_lowlevel/VMixDynamicsBand_t.hpp>
+#include "VMixDynamicsBand_t.hpp"
 
 
 
@@ -31,7 +31,7 @@ namespace CS2 {
 			float32 m_flHighCutoffFreq; // 0x1c | Schema_Builtin | Size: 0x4
 			bool m_bPeakMode; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			soundsystem_lowlevel::VMixDynamicsBand_t m_bandDesc[3]; // 0x24 | Schema_FixedArray | Size: 0x144
+			soundsystem_lowlevel::VMixDynamicsBand_t m_bandDesc[3]; // 0x24 | Schema_FixedArray | Size: 0x6c
 		};
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t, m_fldbGainOutput) == 0x0, "m_fldbGainOutput in VMixDynamics3BandDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t, m_flRMSTimeMS) == 0x4, "m_flRMSTimeMS in VMixDynamics3BandDesc_t should be at offset 0x4");

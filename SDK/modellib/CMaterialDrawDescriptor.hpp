@@ -4,15 +4,15 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/modellib/RigidMeshPart_t.hpp>
-#include <SDK/modellib/RenderPrimitiveType_t.hpp>
-#include <SDK/modellib/CRenderBufferBinding.hpp>
+#include "CMaterialDrawDescriptor_RigidMeshPart_t.hpp"
+#include "RenderPrimitiveType_t.hpp"
+#include "CRenderBufferBinding.hpp"
 
 
 
@@ -34,7 +34,7 @@ namespace CS2 {
 			uint8_t m_nDepthVertexBufferIndex; // 0x24 | Schema_Builtin | Size: 0x1
 			uint8_t m_nMeshletPackedIVBIndex; // 0x25 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2);
-			// GlobalTypes::CUtlLeanVector<modellib::RigidMeshPart_t> m_rigidMeshParts; // 0x28 | Schema_Atomic | Size: 0x10
+			// GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor_RigidMeshPart_t> m_rigidMeshParts; // 0x28 | Schema_Atomic | Size: 0x10
 			char m_rigidMeshParts[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
 			modellib::RenderPrimitiveType_t m_nPrimitiveType; // 0x38 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nBaseVertex; // 0x3c | Schema_Builtin | Size: 0x4

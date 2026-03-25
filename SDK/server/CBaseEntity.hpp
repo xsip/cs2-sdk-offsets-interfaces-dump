@@ -4,25 +4,25 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/entity2/CEntityInstance.hpp>
-#include <SDK/client/CNetworkTransmitComponent.hpp>
-#include <SDK/client/thinkfunc_t.hpp>
-#include <SDK/entity2/GameTick_t.hpp>
-#include <SDK/server/ResponseContext_t.hpp>
-#include <SDK/client/TakeDamageFlags_t.hpp>
-#include <SDK/client/EntityPlatformTypes_t.hpp>
-#include <SDK/client/MoveCollide_t.hpp>
-#include <SDK/client/MoveType_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
-#include <SDK/client/CNetworkVelocityVector.hpp>
-#include <SDK/client/BloodType.hpp>
+#include "../entity2/CEntityInstance.hpp"
+#include "../client/CNetworkTransmitComponent.hpp"
+#include "../client/thinkfunc_t.hpp"
+#include "../entity2/GameTick_t.hpp"
+#include "ResponseContext_t.hpp"
+#include "../client/TakeDamageFlags_t.hpp"
+#include "../client/EntityPlatformTypes_t.hpp"
+#include "../client/MoveCollide_t.hpp"
+#include "../client/MoveType_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
+#include "../client/CNetworkVelocityVector.hpp"
+#include "../client/BloodType.hpp"
 
 
 

@@ -4,17 +4,17 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/client/C_CSWeaponBase.hpp>
-#include <SDK/client/ParticleIndex_t.hpp>
-#include <SDK/client/C4LightEffect_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/EntitySpottedState_t.hpp>
+#include "C_CSWeaponBase.hpp"
+#include "ParticleIndex_t.hpp"
+#include "C4LightEffect_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "EntitySpottedState_t.hpp"
 
 
 

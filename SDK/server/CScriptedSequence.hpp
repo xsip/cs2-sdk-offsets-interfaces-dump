@@ -4,21 +4,21 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
-#include <SDK/server/CBaseEntity.hpp>
-#include <SDK/modellib/ScriptedMoveTo_t.hpp>
-#include <SDK/modellib/SharedMovementGait_t.hpp>
-#include <SDK/modellib/ScriptedHeldWeaponBehavior_t.hpp>
-#include <SDK/client/ForcedCrouchState_t.hpp>
-#include <SDK/entity2/GameTime_t.hpp>
-#include <SDK/client/ScriptedOnDeath_t.hpp>
-#include <SDK/server/ScriptedConflictResponse_t.hpp>
-#include <SDK/entity2/CEntityIOOutput.hpp>
+#include "CBaseEntity.hpp"
+#include "../modellib/ScriptedMoveTo_t.hpp"
+#include "../modellib/SharedMovementGait_t.hpp"
+#include "../modellib/ScriptedHeldWeaponBehavior_t.hpp"
+#include "../client/ForcedCrouchState_t.hpp"
+#include "../entity2/GameTime_t.hpp"
+#include "../client/ScriptedOnDeath_t.hpp"
+#include "ScriptedConflictResponse_t.hpp"
+#include "../entity2/CEntityIOOutput.hpp"
 
 
 
@@ -114,7 +114,8 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnPostIdleEndSequence; // 0x5b0 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnCancelSequence; // 0x5c8 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnCancelFailedSequence; // 0x5e0 | Schema_DeclaredClass | Size: 0x18
-			entity2::CEntityIOOutput m_OnScriptEvent[8]; // 0x5f8 | Schema_FixedArray | Size: 0x600
+			entity2::CEntityIOOutput m_OnScriptEvent[8]; // 0x5f8 | Schema_FixedArray | Size: 0xc0
+			S2_PAD(0x8);
 			GlobalTypes::CTransform m_matOtherToMain; // 0x6c0 | Schema_Atomic | Size: 0x20
 			GlobalTypes::CHandle<server::CBaseEntity> m_hInteractionMainEntity; // 0x6e0 | Schema_Atomic | Size: 0x4
 			// char m_hInteractionMainEntity[0x4]; // 0x6e0 | Schema_Atomic | Size: 0x4

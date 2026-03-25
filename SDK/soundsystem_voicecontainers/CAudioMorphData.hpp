@@ -4,9 +4,9 @@
 #pragma once
 
 #ifndef CUSTOM_GLOBAL_TYPES
-	#include <SDK/GlobalTypes.hpp>
+	#include "../GlobalTypes.hpp"
 #else
-	#include <Custom/GlobalTypes.hpp>
+	#include "../Custom/GlobalTypes.hpp"
 #endif
 
 
@@ -26,7 +26,7 @@ namespace CS2 {
 			// char m_nameHashCodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_nameStrings; // 0x30 | Schema_Atomic | Size: 0x18
 			// char m_nameStrings[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector> m_samples; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<uintptr_t>> m_samples; // 0x48 | Schema_Atomic | Size: 0x18
 			// char m_samples[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			float32 m_flEaseIn; // 0x60 | Schema_Builtin | Size: 0x4
 			float32 m_flEaseOut; // 0x64 | Schema_Builtin | Size: 0x4
