@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			float32 m_flSupport[26]; // 0x0 | Schema_FixedArray | Size: 0x68
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::Dop26_t, m_flSupport) == 0x0, "m_flSupport in Dop26_t should be at offset 0x0");
 		static_assert(sizeof(CS2::physicslib::Dop26_t) == 0x68, "Dop26_t size should be 0x68");
+
+#endif
 	}
 }

@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< int32 > m_segmentIndexArray; // 0x8 | Schema_Atomic | Size: 0x18
 			// char m_segmentIndexArray[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameBlockAnim, m_nStartFrame) == 0x0, "m_nStartFrame in CAnimFrameBlockAnim should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameBlockAnim, m_nEndFrame) == 0x4, "m_nEndFrame in CAnimFrameBlockAnim should be at offset 0x4");
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameBlockAnim, m_segmentIndexArray) == 0x8, "m_segmentIndexArray in CAnimFrameBlockAnim should be at offset 0x8");
 		static_assert(sizeof(CS2::animationsystem::CAnimFrameBlockAnim) == 0x20, "CAnimFrameBlockAnim size should be 0x20");
+
+#endif
 	}
 }

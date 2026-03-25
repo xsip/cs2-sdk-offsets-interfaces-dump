@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bIgnoreDelta; // 0x123d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_bPerParticleCenter) == 0x1D8, "m_bPerParticleCenter in C_INIT_VelocityRadialRandom should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_nControlPointNumber) == 0x1DC, "m_nControlPointNumber in C_INIT_VelocityRadialRandom should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_vecPosition) == 0x1E0, "m_vecPosition in C_INIT_VelocityRadialRandom should be at offset 0x1E0");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_vecLocalCoordinateSystemSpeedScale) == 0x1230, "m_vecLocalCoordinateSystemSpeedScale in C_INIT_VelocityRadialRandom should be at offset 0x1230");
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRadialRandom, m_bIgnoreDelta) == 0x123D, "m_bIgnoreDelta in C_INIT_VelocityRadialRandom should be at offset 0x123D");
 		static_assert(sizeof(CS2::particles::C_INIT_VelocityRadialRandom) == 0x1240, "C_INIT_VelocityRadialRandom size should be 0x1240");
+
+#endif
 	}
 }

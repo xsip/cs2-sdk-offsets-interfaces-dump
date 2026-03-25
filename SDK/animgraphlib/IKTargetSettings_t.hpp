@@ -32,11 +32,14 @@ namespace CS2 {
 			animgraphlib::IKTargetCoordinateSystem m_TargetCoordSystem; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::IKTargetSettings_t, m_TargetSource) == 0x0, "m_TargetSource in IKTargetSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::IKTargetSettings_t, m_Bone) == 0x8, "m_Bone in IKTargetSettings_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::IKTargetSettings_t, m_AnimgraphParameterNamePosition) == 0x18, "m_AnimgraphParameterNamePosition in IKTargetSettings_t should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::IKTargetSettings_t, m_AnimgraphParameterNameOrientation) == 0x1C, "m_AnimgraphParameterNameOrientation in IKTargetSettings_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::animgraphlib::IKTargetSettings_t, m_TargetCoordSystem) == 0x20, "m_TargetCoordSystem in IKTargetSettings_t should be at offset 0x20");
 		static_assert(sizeof(CS2::animgraphlib::IKTargetSettings_t) == 0x28, "IKTargetSettings_t size should be 0x28");
+
+#endif
 	}
 }

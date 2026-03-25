@@ -29,9 +29,12 @@ namespace CS2 {
 			animgraphlib::CAnimParamHandle m_hParameterOrientation; // 0x8a | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFollowTargetUpdateNode, m_opFixedData) == 0x70, "m_opFixedData in CFollowTargetUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CFollowTargetUpdateNode, m_hParameterPosition) == 0x88, "m_hParameterPosition in CFollowTargetUpdateNode should be at offset 0x88");
 		static_assert(offsetof(CS2::animgraphlib::CFollowTargetUpdateNode, m_hParameterOrientation) == 0x8A, "m_hParameterOrientation in CFollowTargetUpdateNode should be at offset 0x8A");
 		static_assert(sizeof(CS2::animgraphlib::CFollowTargetUpdateNode) == 0x90, "CFollowTargetUpdateNode size should be 0x90");
+
+#endif
 	}
 }

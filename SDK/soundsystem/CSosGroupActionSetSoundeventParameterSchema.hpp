@@ -30,11 +30,14 @@ namespace CS2 {
 			soundsystem::SosActionSetParamSortType_t m_nSortType; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_nMaxCount) == 0x8, "m_nMaxCount in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_flMinValue) == 0xC, "m_flMinValue in CSosGroupActionSetSoundeventParameterSchema should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_flMaxValue) == 0x10, "m_flMaxValue in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_opvarName) == 0x18, "m_opvarName in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x18");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema, m_nSortType) == 0x20, "m_nSortType in CSosGroupActionSetSoundeventParameterSchema should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSetSoundeventParameterSchema) == 0x28, "CSosGroupActionSetSoundeventParameterSchema size should be 0x28");
+
+#endif
 	}
 }

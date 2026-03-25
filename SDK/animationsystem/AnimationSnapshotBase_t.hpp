@@ -39,6 +39,7 @@ namespace CS2 {
 			animationsystem::AnimationDecodeDebugDumpElement_t m_DecodeDump; // 0x98 | Schema_DeclaredClass | Size: 0x70
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::AnimationSnapshotBase_t, m_flRealTime) == 0x0, "m_flRealTime in AnimationSnapshotBase_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::AnimationSnapshotBase_t, m_rootToWorld) == 0x10, "m_rootToWorld in AnimationSnapshotBase_t should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::AnimationSnapshotBase_t, m_bBonesInWorldSpace) == 0x40, "m_bBonesInWorldSpace in AnimationSnapshotBase_t should be at offset 0x40");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::AnimationSnapshotBase_t, m_bHasDecodeDump) == 0x94, "m_bHasDecodeDump in AnimationSnapshotBase_t should be at offset 0x94");
 		static_assert(offsetof(CS2::animationsystem::AnimationSnapshotBase_t, m_DecodeDump) == 0x98, "m_DecodeDump in AnimationSnapshotBase_t should be at offset 0x98");
 		static_assert(sizeof(CS2::animationsystem::AnimationSnapshotBase_t) == 0x110, "AnimationSnapshotBase_t size should be 0x110");
+
+#endif
 	}
 }

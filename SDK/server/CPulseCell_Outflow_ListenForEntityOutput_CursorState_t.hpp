@@ -28,7 +28,10 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CBaseEntity> m_entity; // 0x0 | Schema_Atomic | Size: 0x4
 			// char m_entity[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput_CursorState_t, m_entity) == 0x0, "m_entity in CPulseCell_Outflow_ListenForEntityOutput::CursorState_t should be at offset 0x0");
 		static_assert(sizeof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput_CursorState_t) == 0x4, "CPulseCell_Outflow_ListenForEntityOutput::CursorState_t size should be 0x4");
+
+#endif
 	}
 }

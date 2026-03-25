@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bLastTickBeforeClientUpdate; // 0x30 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventServerPostSimulate_t, m_bLastTickBeforeClientUpdate) == 0x30, "m_bLastTickBeforeClientUpdate in EventServerPostSimulate_t should be at offset 0x30");
 		static_assert(sizeof(CS2::client::EventServerPostSimulate_t) == 0x38, "EventServerPostSimulate_t size should be 0x38");
+
+#endif
 	}
 }

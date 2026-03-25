@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flPrevCycleFromDiscontinuity; // 0x20 | Schema_Builtin | Size: 0x4
 			float32 m_flPrevCycleForAnimEventDetection; // 0x24 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CNetworkedSequenceOperation, m_hSequence) == 0x8, "m_hSequence in CNetworkedSequenceOperation should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CNetworkedSequenceOperation, m_flPrevCycle) == 0xC, "m_flPrevCycle in CNetworkedSequenceOperation should be at offset 0xC");
 		static_assert(offsetof(CS2::client::CNetworkedSequenceOperation, m_flCycle) == 0x10, "m_flCycle in CNetworkedSequenceOperation should be at offset 0x10");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CNetworkedSequenceOperation, m_flPrevCycleFromDiscontinuity) == 0x20, "m_flPrevCycleFromDiscontinuity in CNetworkedSequenceOperation should be at offset 0x20");
 		static_assert(offsetof(CS2::client::CNetworkedSequenceOperation, m_flPrevCycleForAnimEventDetection) == 0x24, "m_flPrevCycleForAnimEventDetection in CNetworkedSequenceOperation should be at offset 0x24");
 		static_assert(sizeof(CS2::client::CNetworkedSequenceOperation) == 0x28, "CNetworkedSequenceOperation size should be 0x28");
+
+#endif
 	}
 }

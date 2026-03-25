@@ -26,9 +26,12 @@ namespace CS2 {
 			animlib::CNmStateNode_TimedEvent_t_Comparison_t m_comparisionOperator; // 0xc | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmStateNode_TimedEvent_t, m_ID) == 0x0, "m_ID in CNmStateNode::TimedEvent_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmStateNode_TimedEvent_t, m_flTimeValueSeconds) == 0x8, "m_flTimeValueSeconds in CNmStateNode::TimedEvent_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::CNmStateNode_TimedEvent_t, m_comparisionOperator) == 0xC, "m_comparisionOperator in CNmStateNode::TimedEvent_t should be at offset 0xC");
 		static_assert(sizeof(CS2::animlib::CNmStateNode_TimedEvent_t) == 0x10, "CNmStateNode::TimedEvent_t size should be 0x10");
+
+#endif
 	}
 }

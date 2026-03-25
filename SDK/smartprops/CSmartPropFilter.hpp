@@ -22,6 +22,9 @@ namespace CS2 {
 		class CSmartPropFilter : public CS2::smartprops::CSmartPropModifier {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilter) == 0x50, "CSmartPropFilter size should be 0x50");
+
+#endif
 	}
 }

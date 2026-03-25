@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bIsWorldSpaceTarget; // 0x33 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTargetSelectorNode_CDefinition, m_optionNodeIndices) == 0x10, "m_optionNodeIndices in CNmTargetSelectorNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmTargetSelectorNode_CDefinition, m_flOrientationScoreWeight) == 0x28, "m_flOrientationScoreWeight in CNmTargetSelectorNode::CDefinition should be at offset 0x28");
 		static_assert(offsetof(CS2::animlib::CNmTargetSelectorNode_CDefinition, m_flPositionScoreWeight) == 0x2C, "m_flPositionScoreWeight in CNmTargetSelectorNode::CDefinition should be at offset 0x2C");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmTargetSelectorNode_CDefinition, m_bIgnoreInvalidOptions) == 0x32, "m_bIgnoreInvalidOptions in CNmTargetSelectorNode::CDefinition should be at offset 0x32");
 		static_assert(offsetof(CS2::animlib::CNmTargetSelectorNode_CDefinition, m_bIsWorldSpaceTarget) == 0x33, "m_bIsWorldSpaceTarget in CNmTargetSelectorNode::CDefinition should be at offset 0x33");
 		static_assert(sizeof(CS2::animlib::CNmTargetSelectorNode_CDefinition) == 0x38, "CNmTargetSelectorNode::CDefinition size should be 0x38");
+
+#endif
 	}
 }

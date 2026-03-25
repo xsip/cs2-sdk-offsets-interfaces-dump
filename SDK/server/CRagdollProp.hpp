@@ -71,6 +71,7 @@ namespace CS2 {
 			bool m_bShouldDeleteActivationRecord; // 0xb58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdoll) == 0xA30, "m_ragdoll in CRagdollProp should be at offset 0xA30");
 		static_assert(offsetof(CS2::server::CRagdollProp, m_bStartDisabled) == 0xA80, "m_bStartDisabled in CRagdollProp should be at offset 0xA80");
 		static_assert(offsetof(CS2::server::CRagdollProp, m_ragEnabled) == 0xA88, "m_ragEnabled in CRagdollProp should be at offset 0xA88");
@@ -98,5 +99,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CRagdollProp, m_ragdollMaxs) == 0xB40, "m_ragdollMaxs in CRagdollProp should be at offset 0xB40");
 		static_assert(offsetof(CS2::server::CRagdollProp, m_bShouldDeleteActivationRecord) == 0xB58, "m_bShouldDeleteActivationRecord in CRagdollProp should be at offset 0xB58");
 		static_assert(sizeof(CS2::server::CRagdollProp) == 0xB70, "CRagdollProp size should be 0xB70");
+
+#endif
 	}
 }

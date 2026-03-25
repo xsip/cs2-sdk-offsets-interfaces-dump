@@ -25,9 +25,12 @@ namespace CS2 {
 			bool m_bOffsetInLocalSpace; // 0x10 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::ControlPointReference_t, m_controlPointNameString) == 0x0, "m_controlPointNameString in ControlPointReference_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::ControlPointReference_t, m_vOffsetFromControlPoint) == 0x4, "m_vOffsetFromControlPoint in ControlPointReference_t should be at offset 0x4");
 		static_assert(offsetof(CS2::particles::ControlPointReference_t, m_bOffsetInLocalSpace) == 0x10, "m_bOffsetInLocalSpace in ControlPointReference_t should be at offset 0x10");
 		static_assert(sizeof(CS2::particles::ControlPointReference_t) == 0x14, "ControlPointReference_t size should be 0x14");
+
+#endif
 	}
 }

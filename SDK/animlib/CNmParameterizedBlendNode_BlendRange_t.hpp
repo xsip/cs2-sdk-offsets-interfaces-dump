@@ -24,9 +24,12 @@ namespace CS2 {
 			int16_t m_nInputIdx1; // 0x2 | Schema_Builtin | Size: 0x2
 			GlobalTypes::Range_t m_parameterValueRange; // 0x4 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_BlendRange_t, m_nInputIdx0) == 0x0, "m_nInputIdx0 in CNmParameterizedBlendNode::BlendRange_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_BlendRange_t, m_nInputIdx1) == 0x2, "m_nInputIdx1 in CNmParameterizedBlendNode::BlendRange_t should be at offset 0x2");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_BlendRange_t, m_parameterValueRange) == 0x4, "m_parameterValueRange in CNmParameterizedBlendNode::BlendRange_t should be at offset 0x4");
 		static_assert(sizeof(CS2::animlib::CNmParameterizedBlendNode_BlendRange_t) == 0xC, "CNmParameterizedBlendNode::BlendRange_t size should be 0xC");
+
+#endif
 	}
 }

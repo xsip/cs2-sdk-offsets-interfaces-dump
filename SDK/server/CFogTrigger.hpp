@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			server::fogparams_t m_fog; // 0x890 | Schema_DeclaredClass | Size: 0x68
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFogTrigger, m_fog) == 0x890, "m_fog in CFogTrigger should be at offset 0x890");
 		static_assert(sizeof(CS2::server::CFogTrigger) == 0x8F8, "CFogTrigger size should be 0x8F8");
+
+#endif
 	}
 }

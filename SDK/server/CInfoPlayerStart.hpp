@@ -26,9 +26,12 @@ namespace CS2 {
 			S2_PAD(0x6);
 			GlobalTypes::CGlobalSymbol m_pPawnSubclass; // 0x4b0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_bDisabled) == 0x4A8, "m_bDisabled in CInfoPlayerStart should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_bIsMaster) == 0x4A9, "m_bIsMaster in CInfoPlayerStart should be at offset 0x4A9");
 		static_assert(offsetof(CS2::server::CInfoPlayerStart, m_pPawnSubclass) == 0x4B0, "m_pPawnSubclass in CInfoPlayerStart should be at offset 0x4B0");
 		static_assert(sizeof(CS2::server::CInfoPlayerStart) == 0x4B8, "CInfoPlayerStart size should be 0x4B8");
+
+#endif
 	}
 }

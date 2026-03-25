@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeInt m_nCount; // 0xa0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CUtlString m_Expression; // 0xe0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceMultiple, m_nCount) == 0xA0, "m_nCount in CSmartPropElement_PlaceMultiple should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceMultiple, m_Expression) == 0xE0, "m_Expression in CSmartPropElement_PlaceMultiple should be at offset 0xE0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_PlaceMultiple) == 0xE8, "CSmartPropElement_PlaceMultiple size should be 0xE8");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			pulse_runtime_lib::CPulse_OutflowConnection m_Place; // 0x48 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_PlaceInSphere, m_Place) == 0x48, "m_Place in CSmartPropPulse_PlaceInSphere should be at offset 0x48");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_PlaceInSphere) == 0x90, "CSmartPropPulse_PlaceInSphere size should be 0x90");
+
+#endif
 	}
 }

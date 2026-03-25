@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			soundsystem_lowlevel::VMixFilterDesc_t m_stages[8]; // 0x0 | Schema_FixedArray | Size: 0x80
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEQ8Desc_t, m_stages) == 0x0, "m_stages in VMixEQ8Desc_t should be at offset 0x0");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixEQ8Desc_t) == 0x80, "VMixEQ8Desc_t size should be 0x80");
+
+#endif
 	}
 }

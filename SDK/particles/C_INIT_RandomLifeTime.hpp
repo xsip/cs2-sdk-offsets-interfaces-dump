@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_fLifetimeRandExponent; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomLifeTime, m_fLifetimeMin) == 0x1D8, "m_fLifetimeMin in C_INIT_RandomLifeTime should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomLifeTime, m_fLifetimeMax) == 0x1DC, "m_fLifetimeMax in C_INIT_RandomLifeTime should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomLifeTime, m_fLifetimeRandExponent) == 0x1E0, "m_fLifetimeRandExponent in C_INIT_RandomLifeTime should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomLifeTime) == 0x1E8, "C_INIT_RandomLifeTime size should be 0x1E8");
+
+#endif
 	}
 }

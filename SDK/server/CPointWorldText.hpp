@@ -43,6 +43,7 @@ namespace CS2 {
 			client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0x9d8 | Schema_DeclaredEnum | Size: 0x4
 			client::PointWorldTextReorientMode_t m_nReorientMode; // 0x9dc | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointWorldText, m_messageText) == 0x730, "m_messageText in CPointWorldText should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CPointWorldText, m_FontName) == 0x930, "m_FontName in CPointWorldText should be at offset 0x930");
 		static_assert(offsetof(CS2::server::CPointWorldText, m_BackgroundMaterialName) == 0x970, "m_BackgroundMaterialName in CPointWorldText should be at offset 0x970");
@@ -60,5 +61,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointWorldText, m_nJustifyVertical) == 0x9D8, "m_nJustifyVertical in CPointWorldText should be at offset 0x9D8");
 		static_assert(offsetof(CS2::server::CPointWorldText, m_nReorientMode) == 0x9DC, "m_nReorientMode in CPointWorldText should be at offset 0x9DC");
 		static_assert(sizeof(CS2::server::CPointWorldText) == 0x9E0, "CPointWorldText size should be 0x9E0");
+
+#endif
 	}
 }

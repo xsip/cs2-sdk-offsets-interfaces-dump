@@ -33,6 +33,7 @@ namespace CS2 {
 			smartprops::ConfigurationHandleShape_t m_HandleShape; // 0x228 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PickOne, m_SelectionMode) == 0xA0, "m_SelectionMode in CSmartPropElement_PickOne should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PickOne, m_SpecificChildIndex) == 0xE0, "m_SpecificChildIndex in CSmartPropElement_PickOne should be at offset 0xE0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PickOne, m_OutputChoiceVariableName) == 0x120, "m_OutputChoiceVariableName in CSmartPropElement_PickOne should be at offset 0x120");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PickOne, m_HandleSize) == 0x1E8, "m_HandleSize in CSmartPropElement_PickOne should be at offset 0x1E8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PickOne, m_HandleShape) == 0x228, "m_HandleShape in CSmartPropElement_PickOne should be at offset 0x228");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_PickOne) == 0x230, "CSmartPropElement_PickOne size should be 0x230");
+
+#endif
 	}
 }

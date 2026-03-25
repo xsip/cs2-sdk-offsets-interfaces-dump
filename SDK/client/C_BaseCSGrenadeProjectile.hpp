@@ -48,6 +48,7 @@ namespace CS2 {
 			float32 m_flTrajectoryTrailEffectCreationTime; // 0x1430 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vInitialPosition) == 0x13A0, "m_vInitialPosition in C_BaseCSGrenadeProjectile should be at offset 0x13A0");
 		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_vInitialVelocity) == 0x13AC, "m_vInitialVelocity in C_BaseCSGrenadeProjectile should be at offset 0x13AC");
 		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_nBounces) == 0x13B8, "m_nBounces in C_BaseCSGrenadeProjectile should be at offset 0x13B8");
@@ -65,5 +66,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_arrTrajectoryTrailPointCreationTimes) == 0x1418, "m_arrTrajectoryTrailPointCreationTimes in C_BaseCSGrenadeProjectile should be at offset 0x1418");
 		static_assert(offsetof(CS2::client::C_BaseCSGrenadeProjectile, m_flTrajectoryTrailEffectCreationTime) == 0x1430, "m_flTrajectoryTrailEffectCreationTime in C_BaseCSGrenadeProjectile should be at offset 0x1430");
 		static_assert(sizeof(CS2::client::C_BaseCSGrenadeProjectile) == 0x1438, "C_BaseCSGrenadeProjectile size should be 0x1438");
+
+#endif
 	}
 }

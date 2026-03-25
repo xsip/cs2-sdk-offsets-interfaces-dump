@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bAnimationDriven; // 0xa9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFootAdjustmentUpdateNode, m_clips) == 0x78, "m_clips in CFootAdjustmentUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CFootAdjustmentUpdateNode, m_hBasePoseCacheHandle) == 0x90, "m_hBasePoseCacheHandle in CFootAdjustmentUpdateNode should be at offset 0x90");
 		static_assert(offsetof(CS2::animgraphlib::CFootAdjustmentUpdateNode, m_facingTarget) == 0x94, "m_facingTarget in CFootAdjustmentUpdateNode should be at offset 0x94");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CFootAdjustmentUpdateNode, m_bResetChild) == 0xA8, "m_bResetChild in CFootAdjustmentUpdateNode should be at offset 0xA8");
 		static_assert(offsetof(CS2::animgraphlib::CFootAdjustmentUpdateNode, m_bAnimationDriven) == 0xA9, "m_bAnimationDriven in CFootAdjustmentUpdateNode should be at offset 0xA9");
 		static_assert(sizeof(CS2::animgraphlib::CFootAdjustmentUpdateNode) == 0xB0, "CFootAdjustmentUpdateNode size should be 0xB0");
+
+#endif
 	}
 }

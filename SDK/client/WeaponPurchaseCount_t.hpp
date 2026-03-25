@@ -25,8 +25,11 @@ namespace CS2 {
 			uint16_t m_nCount; // 0x32 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::WeaponPurchaseCount_t, m_nItemDefIndex) == 0x30, "m_nItemDefIndex in WeaponPurchaseCount_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::WeaponPurchaseCount_t, m_nCount) == 0x32, "m_nCount in WeaponPurchaseCount_t should be at offset 0x32");
 		static_assert(sizeof(CS2::client::WeaponPurchaseCount_t) == 0x38, "WeaponPurchaseCount_t size should be 0x38");
+
+#endif
 	}
 }

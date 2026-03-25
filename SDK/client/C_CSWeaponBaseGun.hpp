@@ -32,6 +32,7 @@ namespace CS2 {
 			int32_t m_nRevolverCylinderIdx; // 0x1f60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_zoomLevel) == 0x1F40, "m_zoomLevel in C_CSWeaponBaseGun should be at offset 0x1F40");
 		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_iBurstShotsRemaining) == 0x1F44, "m_iBurstShotsRemaining in C_CSWeaponBaseGun should be at offset 0x1F44");
 		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_iSilencerBodygroup) == 0x1F48, "m_iSilencerBodygroup in C_CSWeaponBaseGun should be at offset 0x1F48");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_bNeedsBoltAction) == 0x1F5D, "m_bNeedsBoltAction in C_CSWeaponBaseGun should be at offset 0x1F5D");
 		static_assert(offsetof(CS2::client::C_CSWeaponBaseGun, m_nRevolverCylinderIdx) == 0x1F60, "m_nRevolverCylinderIdx in C_CSWeaponBaseGun should be at offset 0x1F60");
 		static_assert(sizeof(CS2::client::C_CSWeaponBaseGun) == 0x1F70, "C_CSWeaponBaseGun size should be 0x1F70");
+
+#endif
 	}
 }

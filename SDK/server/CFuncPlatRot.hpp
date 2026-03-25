@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::QAngle m_end; // 0x7e0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle m_start; // 0x7ec | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncPlatRot, m_end) == 0x7E0, "m_end in CFuncPlatRot should be at offset 0x7E0");
 		static_assert(offsetof(CS2::server::CFuncPlatRot, m_start) == 0x7EC, "m_start in CFuncPlatRot should be at offset 0x7EC");
 		static_assert(sizeof(CS2::server::CFuncPlatRot) == 0x7F8, "CFuncPlatRot size should be 0x7F8");
+
+#endif
 	}
 }

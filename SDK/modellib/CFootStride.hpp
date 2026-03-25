@@ -26,8 +26,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			modellib::CFootTrajectories m_trajectories; // 0x40 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFootStride, m_definition) == 0x0, "m_definition in CFootStride should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CFootStride, m_trajectories) == 0x40, "m_trajectories in CFootStride should be at offset 0x40");
 		static_assert(sizeof(CS2::modellib::CFootStride) == 0x58, "CFootStride size should be 0x58");
+
+#endif
 	}
 }

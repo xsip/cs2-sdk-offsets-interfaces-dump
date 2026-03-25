@@ -59,6 +59,7 @@ namespace CS2 {
 			modellib::AttachmentHandle_t m_iEndAttachment; // 0x781 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRopeKeyframe, m_RopeFlags) == 0x738, "m_RopeFlags in CRopeKeyframe should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iNextLinkName) == 0x740, "m_iNextLinkName in CRopeKeyframe should be at offset 0x740");
 		static_assert(offsetof(CS2::server::CRopeKeyframe, m_Slack) == 0x748, "m_Slack in CRopeKeyframe should be at offset 0x748");
@@ -81,5 +82,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iStartAttachment) == 0x780, "m_iStartAttachment in CRopeKeyframe should be at offset 0x780");
 		static_assert(offsetof(CS2::server::CRopeKeyframe, m_iEndAttachment) == 0x781, "m_iEndAttachment in CRopeKeyframe should be at offset 0x781");
 		static_assert(sizeof(CS2::server::CRopeKeyframe) == 0x788, "CRopeKeyframe size should be 0x788");
+
+#endif
 	}
 }

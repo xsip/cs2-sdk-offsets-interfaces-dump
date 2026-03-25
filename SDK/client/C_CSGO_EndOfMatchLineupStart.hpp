@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_CSGO_EndOfMatchLineupStart : public CS2::client::C_CSGO_EndOfMatchLineupEndpoint {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_CSGO_EndOfMatchLineupStart) == 0x608, "C_CSGO_EndOfMatchLineupStart size should be 0x608");
+
+#endif
 	}
 }

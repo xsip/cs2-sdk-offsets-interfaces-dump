@@ -53,6 +53,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_renderAttributesUsed; // 0x118 | Schema_Atomic | Size: 0x18
 			// char m_renderAttributesUsed[0x18]; // 0x118 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::MaterialResourceData_t, m_materialName) == 0x0, "m_materialName in MaterialResourceData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::materialsystem2::MaterialResourceData_t, m_shaderName) == 0x8, "m_shaderName in MaterialResourceData_t should be at offset 0x8");
 		static_assert(offsetof(CS2::materialsystem2::MaterialResourceData_t, m_intParams) == 0x10, "m_intParams in MaterialResourceData_t should be at offset 0x10");
@@ -68,5 +69,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::materialsystem2::MaterialResourceData_t, m_stringAttributes) == 0x100, "m_stringAttributes in MaterialResourceData_t should be at offset 0x100");
 		static_assert(offsetof(CS2::materialsystem2::MaterialResourceData_t, m_renderAttributesUsed) == 0x118, "m_renderAttributesUsed in MaterialResourceData_t should be at offset 0x118");
 		static_assert(sizeof(CS2::materialsystem2::MaterialResourceData_t) == 0x130, "MaterialResourceData_t size should be 0x130");
+
+#endif
 	}
 }

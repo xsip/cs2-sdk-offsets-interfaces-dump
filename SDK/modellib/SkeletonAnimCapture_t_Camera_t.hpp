@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flTime; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Camera_t, m_tmCamera) == 0x0, "m_tmCamera in SkeletonAnimCapture_t::Camera_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Camera_t, m_flTime) == 0x20, "m_flTime in SkeletonAnimCapture_t::Camera_t should be at offset 0x20");
 		static_assert(sizeof(CS2::modellib::SkeletonAnimCapture_t_Camera_t) == 0x30, "SkeletonAnimCapture_t::Camera_t size should be 0x30");
+
+#endif
 	}
 }

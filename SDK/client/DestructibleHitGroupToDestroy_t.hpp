@@ -24,8 +24,11 @@ namespace CS2 {
 			client::HitGroup_t m_nHitGroup; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_nMaxDamageLevel; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::DestructibleHitGroupToDestroy_t, m_nHitGroup) == 0x0, "m_nHitGroup in DestructibleHitGroupToDestroy_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::DestructibleHitGroupToDestroy_t, m_nMaxDamageLevel) == 0x4, "m_nMaxDamageLevel in DestructibleHitGroupToDestroy_t should be at offset 0x4");
 		static_assert(sizeof(CS2::client::DestructibleHitGroupToDestroy_t) == 0x8, "DestructibleHitGroupToDestroy_t size should be 0x8");
+
+#endif
 	}
 }

@@ -26,7 +26,10 @@ namespace CS2 {
 			char m_pMotionGraph[0x8]; // 0x58 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphUpdateNode, m_pMotionGraph) == 0x58, "m_pMotionGraph in CMotionGraphUpdateNode should be at offset 0x58");
 		static_assert(sizeof(CS2::animgraphlib::CMotionGraphUpdateNode) == 0x68, "CMotionGraphUpdateNode size should be 0x68");
+
+#endif
 	}
 }

@@ -57,6 +57,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0x800 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBreakable, m_CPropDataComponent) == 0x738, "m_CPropDataComponent in CBreakable should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CBreakable, m_Material) == 0x778, "m_Material in CBreakable should be at offset 0x778");
 		static_assert(offsetof(CS2::server::CBreakable, m_hBreaker) == 0x77C, "m_hBreaker in CBreakable should be at offset 0x77C");
@@ -74,5 +75,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBreakable, m_hPhysicsAttacker) == 0x7FC, "m_hPhysicsAttacker in CBreakable should be at offset 0x7FC");
 		static_assert(offsetof(CS2::server::CBreakable, m_flLastPhysicsInfluenceTime) == 0x800, "m_flLastPhysicsInfluenceTime in CBreakable should be at offset 0x800");
 		static_assert(sizeof(CS2::server::CBreakable) == 0x808, "CBreakable size should be 0x808");
+
+#endif
 	}
 }

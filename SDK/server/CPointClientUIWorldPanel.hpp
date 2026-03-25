@@ -50,6 +50,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nExplicitImageLayout; // 0x8e4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointClientUIWorldPanel, m_bIgnoreInput) == 0x890, "m_bIgnoreInput in CPointClientUIWorldPanel should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CPointClientUIWorldPanel, m_bLit) == 0x891, "m_bLit in CPointClientUIWorldPanel should be at offset 0x891");
 		static_assert(offsetof(CS2::server::CPointClientUIWorldPanel, m_bFollowPlayerAcrossTeleport) == 0x892, "m_bFollowPlayerAcrossTeleport in CPointClientUIWorldPanel should be at offset 0x892");
@@ -75,5 +76,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointClientUIWorldPanel, m_bDisableMipGen) == 0x8E0, "m_bDisableMipGen in CPointClientUIWorldPanel should be at offset 0x8E0");
 		static_assert(offsetof(CS2::server::CPointClientUIWorldPanel, m_nExplicitImageLayout) == 0x8E4, "m_nExplicitImageLayout in CPointClientUIWorldPanel should be at offset 0x8E4");
 		static_assert(sizeof(CS2::server::CPointClientUIWorldPanel) == 0x8E8, "CPointClientUIWorldPanel size should be 0x8E8");
+
+#endif
 	}
 }

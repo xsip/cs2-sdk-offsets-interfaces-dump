@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flTimeIntoFrame; // 0x538 | Schema_Builtin | Size: 0x4
 			int32_t m_iDirection; // 0x53c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iPositionInterpolator) == 0x500, "m_iPositionInterpolator in CBaseMoveBehavior should be at offset 0x500");
 		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iRotationInterpolator) == 0x504, "m_iRotationInterpolator in CBaseMoveBehavior should be at offset 0x504");
 		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flAnimStartTime) == 0x508, "m_flAnimStartTime in CBaseMoveBehavior should be at offset 0x508");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_flTimeIntoFrame) == 0x538, "m_flTimeIntoFrame in CBaseMoveBehavior should be at offset 0x538");
 		static_assert(offsetof(CS2::server::CBaseMoveBehavior, m_iDirection) == 0x53C, "m_iDirection in CBaseMoveBehavior should be at offset 0x53C");
 		static_assert(sizeof(CS2::server::CBaseMoveBehavior) == 0x540, "CBaseMoveBehavior size should be 0x540");
+
+#endif
 	}
 }

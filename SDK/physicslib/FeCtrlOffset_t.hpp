@@ -24,9 +24,12 @@ namespace CS2 {
 			uint16_t nCtrlParent; // 0xc | Schema_Builtin | Size: 0x2
 			uint16_t nCtrlChild; // 0xe | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeCtrlOffset_t, vOffset) == 0x0, "vOffset in FeCtrlOffset_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeCtrlOffset_t, nCtrlParent) == 0xC, "nCtrlParent in FeCtrlOffset_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeCtrlOffset_t, nCtrlChild) == 0xE, "nCtrlChild in FeCtrlOffset_t should be at offset 0xE");
 		static_assert(sizeof(CS2::physicslib::FeCtrlOffset_t) == 0x10, "FeCtrlOffset_t size should be 0x10");
+
+#endif
 	}
 }

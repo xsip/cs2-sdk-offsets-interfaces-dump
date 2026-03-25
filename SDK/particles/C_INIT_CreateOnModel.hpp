@@ -45,6 +45,7 @@ namespace CS2 {
 			S2_PAD(0x5);
 			particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x1220 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_modelInput) == 0x1D8, "m_modelInput in C_INIT_CreateOnModel should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_transformInput) == 0x238, "m_transformInput in C_INIT_CreateOnModel should be at offset 0x238");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_nForceInModel) == 0x2A0, "m_nForceInModel in C_INIT_CreateOnModel should be at offset 0x2A0");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_bUseMesh) == 0x121A, "m_bUseMesh in C_INIT_CreateOnModel should be at offset 0x121A");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModel, m_flShellSize) == 0x1220, "m_flShellSize in C_INIT_CreateOnModel should be at offset 0x1220");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateOnModel) == 0x1390, "C_INIT_CreateOnModel size should be 0x1390");
+
+#endif
 	}
 }

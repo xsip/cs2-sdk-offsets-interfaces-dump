@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CPiecewiseCurve m_z; // 0xb0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CPiecewiseCurve m_w; // 0xf0 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmMaterialAttributeEvent, m_attributeName) == 0x20, "m_attributeName in CNmMaterialAttributeEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmMaterialAttributeEvent, m_attributeNameToken) == 0x28, "m_attributeNameToken in CNmMaterialAttributeEvent should be at offset 0x28");
 		static_assert(offsetof(CS2::animlib::CNmMaterialAttributeEvent, m_x) == 0x30, "m_x in CNmMaterialAttributeEvent should be at offset 0x30");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmMaterialAttributeEvent, m_z) == 0xB0, "m_z in CNmMaterialAttributeEvent should be at offset 0xB0");
 		static_assert(offsetof(CS2::animlib::CNmMaterialAttributeEvent, m_w) == 0xF0, "m_w in CNmMaterialAttributeEvent should be at offset 0xF0");
 		static_assert(sizeof(CS2::animlib::CNmMaterialAttributeEvent) == 0x130, "CNmMaterialAttributeEvent size should be 0x130");
+
+#endif
 	}
 }

@@ -59,6 +59,7 @@ namespace CS2 {
 			int32_t m_nManagerFanIdx; // 0x944 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerFan, m_vFanOriginOffset) == 0x890, "m_vFanOriginOffset in CTriggerFan should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerFan, m_vDirection) == 0x89C, "m_vDirection in CTriggerFan should be at offset 0x89C");
 		static_assert(offsetof(CS2::server::CTriggerFan, m_bPushTowardsInfoTarget) == 0x8A8, "m_bPushTowardsInfoTarget in CTriggerFan should be at offset 0x8A8");
@@ -85,5 +86,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTriggerFan, m_bRampDown) == 0x941, "m_bRampDown in CTriggerFan should be at offset 0x941");
 		static_assert(offsetof(CS2::server::CTriggerFan, m_nManagerFanIdx) == 0x944, "m_nManagerFanIdx in CTriggerFan should be at offset 0x944");
 		static_assert(sizeof(CS2::server::CTriggerFan) == 0x950, "CTriggerFan size should be 0x950");
+
+#endif
 	}
 }

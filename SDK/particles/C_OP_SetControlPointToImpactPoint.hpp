@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bIncludeWater; // 0x3f2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nCPOut) == 0x1D8, "m_nCPOut in C_OP_SetControlPointToImpactPoint should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_nCPIn) == 0x1DC, "m_nCPIn in C_OP_SetControlPointToImpactPoint should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_flUpdateRate) == 0x1E0, "m_flUpdateRate in C_OP_SetControlPointToImpactPoint should be at offset 0x1E0");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bTraceToClosestSurface) == 0x3F1, "m_bTraceToClosestSurface in C_OP_SetControlPointToImpactPoint should be at offset 0x3F1");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToImpactPoint, m_bIncludeWater) == 0x3F2, "m_bIncludeWater in C_OP_SetControlPointToImpactPoint should be at offset 0x3F2");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToImpactPoint) == 0x3F8, "C_OP_SetControlPointToImpactPoint size should be 0x3F8");
+
+#endif
 	}
 }

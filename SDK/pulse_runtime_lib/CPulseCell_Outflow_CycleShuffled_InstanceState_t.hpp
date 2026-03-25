@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nNextShuffle; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Outflow_CycleShuffled_InstanceState_t, m_Shuffle) == 0x0, "m_Shuffle in CPulseCell_Outflow_CycleShuffled::InstanceState_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Outflow_CycleShuffled_InstanceState_t, m_nNextShuffle) == 0x20, "m_nNextShuffle in CPulseCell_Outflow_CycleShuffled::InstanceState_t should be at offset 0x20");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Outflow_CycleShuffled_InstanceState_t) == 0x28, "CPulseCell_Outflow_CycleShuffled::InstanceState_t size should be 0x28");
+
+#endif
 	}
 }

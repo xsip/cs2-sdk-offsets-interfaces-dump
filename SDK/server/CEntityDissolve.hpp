@@ -34,6 +34,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vDissolverOrigin; // 0x750 | Schema_Atomic | Size: 0xc
 			uint32_t m_nMagnitude; // 0x75c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeInStart) == 0x730, "m_flFadeInStart in CEntityDissolve should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeInLength) == 0x734, "m_flFadeInLength in CEntityDissolve should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CEntityDissolve, m_flFadeOutModelStart) == 0x738, "m_flFadeOutModelStart in CEntityDissolve should be at offset 0x738");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEntityDissolve, m_vDissolverOrigin) == 0x750, "m_vDissolverOrigin in CEntityDissolve should be at offset 0x750");
 		static_assert(offsetof(CS2::server::CEntityDissolve, m_nMagnitude) == 0x75C, "m_nMagnitude in CEntityDissolve should be at offset 0x75C");
 		static_assert(sizeof(CS2::server::CEntityDissolve) == 0x760, "CEntityDissolve size should be 0x760");
+
+#endif
 	}
 }

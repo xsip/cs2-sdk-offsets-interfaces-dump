@@ -30,6 +30,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			GlobalTypes::Vector m_chainForwardDir; // 0x2c | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmChainLookatNode_CDefinition, m_chainEndBoneID) == 0x18, "m_chainEndBoneID in CNmChainLookatNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmChainLookatNode_CDefinition, m_nLookatTargetNodeIdx) == 0x20, "m_nLookatTargetNodeIdx in CNmChainLookatNode::CDefinition should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmChainLookatNode_CDefinition, m_nEnabledNodeIdx) == 0x22, "m_nEnabledNodeIdx in CNmChainLookatNode::CDefinition should be at offset 0x22");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmChainLookatNode_CDefinition, m_bIsTargetInWorldSpace) == 0x29, "m_bIsTargetInWorldSpace in CNmChainLookatNode::CDefinition should be at offset 0x29");
 		static_assert(offsetof(CS2::animlib::CNmChainLookatNode_CDefinition, m_chainForwardDir) == 0x2C, "m_chainForwardDir in CNmChainLookatNode::CDefinition should be at offset 0x2C");
 		static_assert(sizeof(CS2::animlib::CNmChainLookatNode_CDefinition) == 0x38, "CNmChainLookatNode::CDefinition size should be 0x38");
+
+#endif
 	}
 }

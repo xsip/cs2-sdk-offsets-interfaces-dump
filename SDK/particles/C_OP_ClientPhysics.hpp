@@ -42,6 +42,7 @@ namespace CS2 {
 			particles::ParticleAttrBoxFlags_t m_nForcedStatusEffects; // 0x528 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_strPhysicsType) == 0x220, "m_strPhysicsType in C_OP_ClientPhysics should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_bStartAsleep) == 0x228, "m_bStartAsleep in C_OP_ClientPhysics should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_flPlayerWakeRadius) == 0x230, "m_flPlayerWakeRadius in C_OP_ClientPhysics should be at offset 0x230");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nColorBlendType) == 0x524, "m_nColorBlendType in C_OP_ClientPhysics should be at offset 0x524");
 		static_assert(offsetof(CS2::particles::C_OP_ClientPhysics, m_nForcedStatusEffects) == 0x528, "m_nForcedStatusEffects in C_OP_ClientPhysics should be at offset 0x528");
 		static_assert(sizeof(CS2::particles::C_OP_ClientPhysics) == 0x530, "C_OP_ClientPhysics size should be 0x530");
+
+#endif
 	}
 }

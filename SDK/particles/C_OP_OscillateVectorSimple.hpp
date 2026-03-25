@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bOffset; // 0x1f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_Rate) == 0x1D0, "m_Rate in C_OP_OscillateVectorSimple should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_Frequency) == 0x1DC, "m_Frequency in C_OP_OscillateVectorSimple should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_nField) == 0x1E8, "m_nField in C_OP_OscillateVectorSimple should be at offset 0x1E8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_flOscAdd) == 0x1F0, "m_flOscAdd in C_OP_OscillateVectorSimple should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVectorSimple, m_bOffset) == 0x1F4, "m_bOffset in C_OP_OscillateVectorSimple should be at offset 0x1F4");
 		static_assert(sizeof(CS2::particles::C_OP_OscillateVectorSimple) == 0x1F8, "C_OP_OscillateVectorSimple size should be 0x1F8");
+
+#endif
 	}
 }

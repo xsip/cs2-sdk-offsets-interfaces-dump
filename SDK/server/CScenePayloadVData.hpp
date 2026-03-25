@@ -24,7 +24,10 @@ namespace CS2 {
 			// GlobalTypes::CResourceNameTyped<GlobalTypes::CWeakHandle<resourcesystem::InfoForResourceTypeCChoreoSceneResource>> m_sSceneFile; // 0x0 | Schema_Atomic | Size: 0xe0
 			char m_sSceneFile[0xe0]; // 0x0 | Schema_Atomic | Size: 0xe0
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CScenePayloadVData, m_sSceneFile) == 0x0, "m_sSceneFile in CScenePayloadVData should be at offset 0x0");
 		static_assert(sizeof(CS2::server::CScenePayloadVData) == 0xE0, "CScenePayloadVData size should be 0xE0");
+
+#endif
 	}
 }

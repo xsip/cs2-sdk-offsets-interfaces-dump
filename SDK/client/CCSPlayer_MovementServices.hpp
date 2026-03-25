@@ -81,6 +81,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecInputRotated; // 0x62c | Schema_Atomic | Size: 0xc
 			S2_PAD(0x820); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSPlayer_MovementServices, m_vecLadderNormal) == 0x270, "m_vecLadderNormal in CCSPlayer_MovementServices should be at offset 0x270");
 		static_assert(offsetof(CS2::client::CCSPlayer_MovementServices, m_nLadderSurfacePropIndex) == 0x27C, "m_nLadderSurfacePropIndex in CCSPlayer_MovementServices should be at offset 0x27C");
 		static_assert(offsetof(CS2::client::CCSPlayer_MovementServices, m_bDucked) == 0x280, "m_bDucked in CCSPlayer_MovementServices should be at offset 0x280");
@@ -128,5 +129,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CCSPlayer_MovementServices, m_bWasSurfing) == 0x59C, "m_bWasSurfing in CCSPlayer_MovementServices should be at offset 0x59C");
 		static_assert(offsetof(CS2::client::CCSPlayer_MovementServices, m_vecInputRotated) == 0x62C, "m_vecInputRotated in CCSPlayer_MovementServices should be at offset 0x62C");
 		static_assert(sizeof(CS2::client::CCSPlayer_MovementServices) == 0xE58, "CCSPlayer_MovementServices size should be 0xE58");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CUtlString m_strCountKeyName; // 0x10 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventCountSchema, m_bExcludeStoppedSounds) == 0x8, "m_bExcludeStoppedSounds in CSosGroupActionSoundeventCountSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventCountSchema, m_strCountKeyName) == 0x10, "m_strCountKeyName in CSosGroupActionSoundeventCountSchema should be at offset 0x10");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSoundeventCountSchema) == 0x18, "CSosGroupActionSoundeventCountSchema size should be 0x18");
+
+#endif
 	}
 }

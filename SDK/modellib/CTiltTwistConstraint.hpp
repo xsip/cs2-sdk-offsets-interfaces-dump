@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nSlaveAxis; // 0x64 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x28); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CTiltTwistConstraint, m_nTargetAxis) == 0x60, "m_nTargetAxis in CTiltTwistConstraint should be at offset 0x60");
 		static_assert(offsetof(CS2::modellib::CTiltTwistConstraint, m_nSlaveAxis) == 0x64, "m_nSlaveAxis in CTiltTwistConstraint should be at offset 0x64");
 		static_assert(sizeof(CS2::modellib::CTiltTwistConstraint) == 0x90, "CTiltTwistConstraint size should be 0x90");
+
+#endif
 	}
 }

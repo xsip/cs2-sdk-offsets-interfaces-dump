@@ -25,8 +25,11 @@ namespace CS2 {
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48 | Schema_DeclaredClass | Size: 0x18
 			GlobalTypes::CUtlString m_PathName; // 0x60 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_PlaceOnPath, m_OutflowList) == 0x48, "m_OutflowList in CSmartPropPulse_PlaceOnPath should be at offset 0x48");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_PlaceOnPath, m_PathName) == 0x60, "m_PathName in CSmartPropPulse_PlaceOnPath should be at offset 0x60");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_PlaceOnPath) == 0x68, "CSmartPropPulse_PlaceOnPath size should be 0x68");
+
+#endif
 	}
 }

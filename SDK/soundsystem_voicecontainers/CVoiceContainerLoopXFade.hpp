@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bEqualPow; // 0xd2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopXFade, m_sound) == 0xA8, "m_sound in CVoiceContainerLoopXFade should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopXFade, m_flLoopEnd) == 0xC0, "m_flLoopEnd in CVoiceContainerLoopXFade should be at offset 0xC0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopXFade, m_flLoopStart) == 0xC4, "m_flLoopStart in CVoiceContainerLoopXFade should be at offset 0xC4");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopXFade, m_bPlayTail) == 0xD1, "m_bPlayTail in CVoiceContainerLoopXFade should be at offset 0xD1");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopXFade, m_bEqualPow) == 0xD2, "m_bEqualPow in CVoiceContainerLoopXFade should be at offset 0xD2");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopXFade) == 0xD8, "CVoiceContainerLoopXFade size should be 0xD8");
+
+#endif
 	}
 }

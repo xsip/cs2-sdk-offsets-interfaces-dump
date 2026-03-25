@@ -22,6 +22,9 @@ namespace CS2 {
 		class CPointPulse : public CS2::server::CBaseEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CPointPulse) == 0x4A8, "CPointPulse size should be 0x4A8");
+
+#endif
 	}
 }

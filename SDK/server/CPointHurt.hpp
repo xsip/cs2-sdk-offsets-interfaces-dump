@@ -36,6 +36,7 @@ namespace CS2 {
 			// char m_pActivator[0x4]; // 0x4c0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointHurt, m_nDamage) == 0x4A8, "m_nDamage in CPointHurt should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointHurt, m_bitsDamageType) == 0x4AC, "m_bitsDamageType in CPointHurt should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CPointHurt, m_flRadius) == 0x4B0, "m_flRadius in CPointHurt should be at offset 0x4B0");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointHurt, m_strTarget) == 0x4B8, "m_strTarget in CPointHurt should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CPointHurt, m_pActivator) == 0x4C0, "m_pActivator in CPointHurt should be at offset 0x4C0");
 		static_assert(sizeof(CS2::server::CPointHurt) == 0x4C8, "CPointHurt size should be 0x4C8");
+
+#endif
 	}
 }

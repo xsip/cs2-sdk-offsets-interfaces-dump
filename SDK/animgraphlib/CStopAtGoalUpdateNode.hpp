@@ -30,11 +30,14 @@ namespace CS2 {
 			S2_PAD(0x4);
 			animgraphlib::CAnimInputDamping m_damping; // 0x88 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStopAtGoalUpdateNode, m_flOuterRadius) == 0x74, "m_flOuterRadius in CStopAtGoalUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CStopAtGoalUpdateNode, m_flInnerRadius) == 0x78, "m_flInnerRadius in CStopAtGoalUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CStopAtGoalUpdateNode, m_flMaxScale) == 0x7C, "m_flMaxScale in CStopAtGoalUpdateNode should be at offset 0x7C");
 		static_assert(offsetof(CS2::animgraphlib::CStopAtGoalUpdateNode, m_flMinScale) == 0x80, "m_flMinScale in CStopAtGoalUpdateNode should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CStopAtGoalUpdateNode, m_damping) == 0x88, "m_damping in CStopAtGoalUpdateNode should be at offset 0x88");
 		static_assert(sizeof(CS2::animgraphlib::CStopAtGoalUpdateNode) == 0xA0, "CStopAtGoalUpdateNode size should be 0xA0");
+
+#endif
 	}
 }

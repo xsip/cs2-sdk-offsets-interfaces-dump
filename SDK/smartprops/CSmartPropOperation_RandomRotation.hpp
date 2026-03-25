@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeAngles m_vRandomRotationMax; // 0x90 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeAngles m_vSnapIncrement; // 0xd0 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomRotation, m_vRandomRotationMin) == 0x50, "m_vRandomRotationMin in CSmartPropOperation_RandomRotation should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomRotation, m_vRandomRotationMax) == 0x90, "m_vRandomRotationMax in CSmartPropOperation_RandomRotation should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomRotation, m_vSnapIncrement) == 0xD0, "m_vSnapIncrement in CSmartPropOperation_RandomRotation should be at offset 0xD0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RandomRotation) == 0x110, "CSmartPropOperation_RandomRotation size should be 0x110");
+
+#endif
 	}
 }

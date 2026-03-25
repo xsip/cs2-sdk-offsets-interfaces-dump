@@ -28,9 +28,12 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flOutputMin; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flOutputMax; // 0x348 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ClampScalar, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_ClampScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ClampScalar, m_flOutputMin) == 0x1D8, "m_flOutputMin in C_OP_ClampScalar should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ClampScalar, m_flOutputMax) == 0x348, "m_flOutputMax in C_OP_ClampScalar should be at offset 0x348");
 		static_assert(sizeof(CS2::particles::C_OP_ClampScalar) == 0x4B8, "C_OP_ClampScalar size should be 0x4B8");
+
+#endif
 	}
 }

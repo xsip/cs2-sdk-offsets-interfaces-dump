@@ -27,9 +27,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVectorFixedGrowable<animlib::CNmStateMachineNode_TransitionDefinition_t> m_transitionDefinitions; // 0x8 | Schema_Atomic | Size: 0x30
 			char m_transitionDefinitions[0x30]; // 0x8 | Schema_Atomic | Size: 0x30
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_StateDefinition_t, m_nStateNodeIdx) == 0x0, "m_nStateNodeIdx in CNmStateMachineNode::StateDefinition_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_StateDefinition_t, m_nEntryConditionNodeIdx) == 0x2, "m_nEntryConditionNodeIdx in CNmStateMachineNode::StateDefinition_t should be at offset 0x2");
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_StateDefinition_t, m_transitionDefinitions) == 0x8, "m_transitionDefinitions in CNmStateMachineNode::StateDefinition_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::CNmStateMachineNode_StateDefinition_t) == 0x38, "CNmStateMachineNode::StateDefinition_t size should be 0x38");
+
+#endif
 	}
 }

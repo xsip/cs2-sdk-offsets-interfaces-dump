@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flUpdateDistance; // 0x8d8 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxConnectionDistance; // 0x8dc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_iszConnectionTarget) == 0x8A8, "m_iszConnectionTarget in CDynamicNavConnectionsVolume should be at offset 0x8A8");
 		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_vecConnections) == 0x8B0, "m_vecConnections in CDynamicNavConnectionsVolume should be at offset 0x8B0");
 		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_sTransitionType) == 0x8C8, "m_sTransitionType in CDynamicNavConnectionsVolume should be at offset 0x8C8");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flUpdateDistance) == 0x8D8, "m_flUpdateDistance in CDynamicNavConnectionsVolume should be at offset 0x8D8");
 		static_assert(offsetof(CS2::server::CDynamicNavConnectionsVolume, m_flMaxConnectionDistance) == 0x8DC, "m_flMaxConnectionDistance in CDynamicNavConnectionsVolume should be at offset 0x8DC");
 		static_assert(sizeof(CS2::server::CDynamicNavConnectionsVolume) == 0x8E0, "CDynamicNavConnectionsVolume size should be 0x8E0");
+
+#endif
 	}
 }

@@ -29,10 +29,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<smartprops::MaterialGroupChoice_t> m_MaterialGroupChoices; // 0xd8 | Schema_Atomic | Size: 0x18
 			// char m_MaterialGroupChoices[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetMateraialGroupChoice, m_VariableName) == 0x50, "m_VariableName in CSmartPropOperation_SetMateraialGroupChoice should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetMateraialGroupChoice, m_SelectionMode) == 0x58, "m_SelectionMode in CSmartPropOperation_SetMateraialGroupChoice should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetMateraialGroupChoice, m_ChoiceSelection) == 0x98, "m_ChoiceSelection in CSmartPropOperation_SetMateraialGroupChoice should be at offset 0x98");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetMateraialGroupChoice, m_MaterialGroupChoices) == 0xD8, "m_MaterialGroupChoices in CSmartPropOperation_SetMateraialGroupChoice should be at offset 0xD8");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_SetMateraialGroupChoice) == 0xF0, "CSmartPropOperation_SetMateraialGroupChoice size should be 0xF0");
+
+#endif
 	}
 }

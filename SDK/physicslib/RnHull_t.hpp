@@ -52,6 +52,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			physicslib::CRegionSVM* m_pRegionSVM; // 0xf0 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnHull_t, m_vCentroid) == 0x0, "m_vCentroid in RnHull_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnHull_t, m_flMaxAngularRadius) == 0xC, "m_flMaxAngularRadius in RnHull_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::RnHull_t, m_Bounds) == 0x10, "m_Bounds in RnHull_t should be at offset 0x10");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::RnHull_t, m_nFlags) == 0xE8, "m_nFlags in RnHull_t should be at offset 0xE8");
 		static_assert(offsetof(CS2::physicslib::RnHull_t, m_pRegionSVM) == 0xF0, "m_pRegionSVM in RnHull_t should be at offset 0xF0");
 		static_assert(sizeof(CS2::physicslib::RnHull_t) == 0xF8, "RnHull_t size should be 0xF8");
+
+#endif
 	}
 }

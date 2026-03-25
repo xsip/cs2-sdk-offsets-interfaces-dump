@@ -22,6 +22,9 @@ namespace CS2 {
 		class CTaskHandshakeAnimTag : public CS2::animgraphlib::CHandshakeAnimTagBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animgraphlib::CTaskHandshakeAnimTag) == 0x58, "CTaskHandshakeAnimTag size should be 0x58");
+
+#endif
 	}
 }

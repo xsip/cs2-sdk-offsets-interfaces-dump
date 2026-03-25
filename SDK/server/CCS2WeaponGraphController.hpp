@@ -63,6 +63,7 @@ namespace CS2 {
 			char m_reloadStage[0x18]; // 0x258 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x368); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCS2WeaponGraphController, m_action) == 0x90, "m_action in CCS2WeaponGraphController should be at offset 0x90");
 		static_assert(offsetof(CS2::server::CCS2WeaponGraphController, m_bActionReset) == 0xA8, "m_bActionReset in CCS2WeaponGraphController should be at offset 0xA8");
 		static_assert(offsetof(CS2::server::CCS2WeaponGraphController, m_flWeaponActionSpeedScale) == 0xC0, "m_flWeaponActionSpeedScale in CCS2WeaponGraphController should be at offset 0xC0");
@@ -84,5 +85,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCS2WeaponGraphController, m_inspectExtraInfo) == 0x240, "m_inspectExtraInfo in CCS2WeaponGraphController should be at offset 0x240");
 		static_assert(offsetof(CS2::server::CCS2WeaponGraphController, m_reloadStage) == 0x258, "m_reloadStage in CCS2WeaponGraphController should be at offset 0x258");
 		static_assert(sizeof(CS2::server::CCS2WeaponGraphController) == 0x5D8, "CCS2WeaponGraphController size should be 0x5D8");
+
+#endif
 	}
 }

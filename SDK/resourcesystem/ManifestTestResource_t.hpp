@@ -24,8 +24,11 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeManifestTestResource_t> m_child; // 0x8 | Schema_Atomic | Size: 0x8
 			char m_child[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::resourcesystem::ManifestTestResource_t, m_name) == 0x0, "m_name in ManifestTestResource_t should be at offset 0x0");
 		static_assert(offsetof(CS2::resourcesystem::ManifestTestResource_t, m_child) == 0x8, "m_child in ManifestTestResource_t should be at offset 0x8");
 		static_assert(sizeof(CS2::resourcesystem::ManifestTestResource_t) == 0x10, "ManifestTestResource_t size should be 0x10");
+
+#endif
 	}
 }

@@ -69,6 +69,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flLastSpinDetectionTime; // 0xde8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPlantedC4, m_bBombTicking) == 0xA28, "m_bBombTicking in CPlantedC4 should be at offset 0xA28");
 		static_assert(offsetof(CS2::server::CPlantedC4, m_flC4Blow) == 0xA2C, "m_flC4Blow in CPlantedC4 should be at offset 0xA2C");
 		static_assert(offsetof(CS2::server::CPlantedC4, m_nBombSite) == 0xA30, "m_nBombSite in CPlantedC4 should be at offset 0xA30");
@@ -97,5 +98,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPlantedC4, m_angCatchUpToPlayerEye) == 0xDDC, "m_angCatchUpToPlayerEye in CPlantedC4 should be at offset 0xDDC");
 		static_assert(offsetof(CS2::server::CPlantedC4, m_flLastSpinDetectionTime) == 0xDE8, "m_flLastSpinDetectionTime in CPlantedC4 should be at offset 0xDE8");
 		static_assert(sizeof(CS2::server::CPlantedC4) == 0xDF0, "CPlantedC4 size should be 0xDF0");
+
+#endif
 	}
 }

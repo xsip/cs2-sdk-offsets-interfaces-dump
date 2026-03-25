@@ -22,6 +22,9 @@ namespace CS2 {
 		class CVMixSteamAudioPathingProcessorDesc : public CS2::soundsystem_lowlevel::CVMixBaseProcessorDesc {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixSteamAudioPathingProcessorDesc) == 0x20, "CVMixSteamAudioPathingProcessorDesc size should be 0x20");
+
+#endif
 	}
 }

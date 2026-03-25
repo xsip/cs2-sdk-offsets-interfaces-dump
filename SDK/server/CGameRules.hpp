@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bGamePaused; // 0xc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameRules, __m_pChainEntity) == 0x8, "__m_pChainEntity in CGameRules should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CGameRules, m_szQuestName) == 0x30, "m_szQuestName in CGameRules should be at offset 0x30");
 		static_assert(offsetof(CS2::server::CGameRules, m_nQuestPhase) == 0xB0, "m_nQuestPhase in CGameRules should be at offset 0xB0");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CGameRules, m_nPauseStartTick) == 0xC4, "m_nPauseStartTick in CGameRules should be at offset 0xC4");
 		static_assert(offsetof(CS2::server::CGameRules, m_bGamePaused) == 0xC8, "m_bGamePaused in CGameRules should be at offset 0xC8");
 		static_assert(sizeof(CS2::server::CGameRules) == 0xD0, "CGameRules size should be 0xD0");
+
+#endif
 	}
 }

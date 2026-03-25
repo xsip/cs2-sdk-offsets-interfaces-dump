@@ -33,11 +33,14 @@ namespace CS2 {
 			bool m_bInterpolationReadyToDraw; // 0xa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRenderComponent, __m_pChainEntity) == 0x10, "__m_pChainEntity in CRenderComponent should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CRenderComponent, m_bIsRenderingWithViewModels) == 0x50, "m_bIsRenderingWithViewModels in CRenderComponent should be at offset 0x50");
 		static_assert(offsetof(CS2::server::CRenderComponent, m_nSplitscreenFlags) == 0x54, "m_nSplitscreenFlags in CRenderComponent should be at offset 0x54");
 		static_assert(offsetof(CS2::server::CRenderComponent, m_bEnableRendering) == 0x58, "m_bEnableRendering in CRenderComponent should be at offset 0x58");
 		static_assert(offsetof(CS2::server::CRenderComponent, m_bInterpolationReadyToDraw) == 0xA8, "m_bInterpolationReadyToDraw in CRenderComponent should be at offset 0xA8");
 		static_assert(sizeof(CS2::server::CRenderComponent) == 0xB0, "CRenderComponent size should be 0xB0");
+
+#endif
 	}
 }

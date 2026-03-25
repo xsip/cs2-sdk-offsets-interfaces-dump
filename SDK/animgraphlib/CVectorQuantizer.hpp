@@ -25,9 +25,12 @@ namespace CS2 {
 			int32_t m_nCentroids; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nDimensions; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CVectorQuantizer, m_centroidVectors) == 0x0, "m_centroidVectors in CVectorQuantizer should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CVectorQuantizer, m_nCentroids) == 0x18, "m_nCentroids in CVectorQuantizer should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CVectorQuantizer, m_nDimensions) == 0x1C, "m_nDimensions in CVectorQuantizer should be at offset 0x1C");
 		static_assert(sizeof(CS2::animgraphlib::CVectorQuantizer) == 0x20, "CVectorQuantizer size should be 0x20");
+
+#endif
 	}
 }

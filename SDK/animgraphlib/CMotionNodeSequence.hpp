@@ -28,9 +28,12 @@ namespace CS2 {
 			animationsystem::HSequence m_hSequence; // 0x40 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flPlaybackSpeed; // 0x44 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionNodeSequence, m_tags) == 0x28, "m_tags in CMotionNodeSequence should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CMotionNodeSequence, m_hSequence) == 0x40, "m_hSequence in CMotionNodeSequence should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CMotionNodeSequence, m_flPlaybackSpeed) == 0x44, "m_flPlaybackSpeed in CMotionNodeSequence should be at offset 0x44");
 		static_assert(sizeof(CS2::animgraphlib::CMotionNodeSequence) == 0x48, "CMotionNodeSequence size should be 0x48");
+
+#endif
 	}
 }

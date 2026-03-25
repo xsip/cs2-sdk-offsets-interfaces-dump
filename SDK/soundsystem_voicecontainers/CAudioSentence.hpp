@@ -31,10 +31,13 @@ namespace CS2 {
 			// char m_EmphasisSamples[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 			soundsystem_voicecontainers::CAudioMorphData m_morphData; // 0x38 | Schema_DeclaredClass | Size: 0x68
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioSentence, m_bShouldVoiceDuck) == 0x0, "m_bShouldVoiceDuck in CAudioSentence should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioSentence, m_RunTimePhonemes) == 0x8, "m_RunTimePhonemes in CAudioSentence should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioSentence, m_EmphasisSamples) == 0x20, "m_EmphasisSamples in CAudioSentence should be at offset 0x20");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioSentence, m_morphData) == 0x38, "m_morphData in CAudioSentence should be at offset 0x38");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CAudioSentence) == 0xA0, "CAudioSentence size should be 0xA0");
+
+#endif
 	}
 }

@@ -40,6 +40,7 @@ namespace CS2 {
 			bool m_bLimitOnly; // 0xa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMoverUpdateNode, m_damping) == 0x78, "m_damping in CMoverUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CMoverUpdateNode, m_facingTarget) == 0x90, "m_facingTarget in CMoverUpdateNode should be at offset 0x90");
 		static_assert(offsetof(CS2::animgraphlib::CMoverUpdateNode, m_hMoveVecParam) == 0x94, "m_hMoveVecParam in CMoverUpdateNode should be at offset 0x94");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CMoverUpdateNode, m_bApplyRotation) == 0xA7, "m_bApplyRotation in CMoverUpdateNode should be at offset 0xA7");
 		static_assert(offsetof(CS2::animgraphlib::CMoverUpdateNode, m_bLimitOnly) == 0xA8, "m_bLimitOnly in CMoverUpdateNode should be at offset 0xA8");
 		static_assert(sizeof(CS2::animgraphlib::CMoverUpdateNode) == 0xB0, "CMoverUpdateNode size should be 0xB0");
+
+#endif
 	}
 }

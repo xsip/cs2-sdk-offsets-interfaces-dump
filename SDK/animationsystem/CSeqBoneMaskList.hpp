@@ -30,11 +30,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<std::pair< CBufferString, float32 >> m_morphCtrlWeightArray; // 0x48 | Schema_Atomic | Size: 0x18
 			// char m_morphCtrlWeightArray[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqBoneMaskList, m_sName) == 0x0, "m_sName in CSeqBoneMaskList should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqBoneMaskList, m_nLocalBoneArray) == 0x10, "m_nLocalBoneArray in CSeqBoneMaskList should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSeqBoneMaskList, m_flBoneWeightArray) == 0x28, "m_flBoneWeightArray in CSeqBoneMaskList should be at offset 0x28");
 		static_assert(offsetof(CS2::animationsystem::CSeqBoneMaskList, m_flDefaultMorphCtrlWeight) == 0x40, "m_flDefaultMorphCtrlWeight in CSeqBoneMaskList should be at offset 0x40");
 		static_assert(offsetof(CS2::animationsystem::CSeqBoneMaskList, m_morphCtrlWeightArray) == 0x48, "m_morphCtrlWeightArray in CSeqBoneMaskList should be at offset 0x48");
 		static_assert(sizeof(CS2::animationsystem::CSeqBoneMaskList) == 0x60, "CSeqBoneMaskList size should be 0x60");
+
+#endif
 	}
 }

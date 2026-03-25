@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bSetZDown; // 0x351 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetGravityToCP, m_nCPInput) == 0x1D8, "m_nCPInput in C_OP_SetGravityToCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetGravityToCP, m_nCPOutput) == 0x1DC, "m_nCPOutput in C_OP_SetGravityToCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetGravityToCP, m_flScale) == 0x1E0, "m_flScale in C_OP_SetGravityToCP should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_SetGravityToCP, m_bSetOrientation) == 0x350, "m_bSetOrientation in C_OP_SetGravityToCP should be at offset 0x350");
 		static_assert(offsetof(CS2::particles::C_OP_SetGravityToCP, m_bSetZDown) == 0x351, "m_bSetZDown in C_OP_SetGravityToCP should be at offset 0x351");
 		static_assert(sizeof(CS2::particles::C_OP_SetGravityToCP) == 0x358, "C_OP_SetGravityToCP size should be 0x358");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bSaveToGroup; // 0x28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionMemberCountEnvelopeSchema, m_nBaseCount) == 0x8, "m_nBaseCount in CSosGroupActionMemberCountEnvelopeSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionMemberCountEnvelopeSchema, m_nTargetCount) == 0xC, "m_nTargetCount in CSosGroupActionMemberCountEnvelopeSchema should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionMemberCountEnvelopeSchema, m_flBaseValue) == 0x10, "m_flBaseValue in CSosGroupActionMemberCountEnvelopeSchema should be at offset 0x10");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionMemberCountEnvelopeSchema, m_resultVarName) == 0x20, "m_resultVarName in CSosGroupActionMemberCountEnvelopeSchema should be at offset 0x20");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionMemberCountEnvelopeSchema, m_bSaveToGroup) == 0x28, "m_bSaveToGroup in CSosGroupActionMemberCountEnvelopeSchema should be at offset 0x28");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionMemberCountEnvelopeSchema) == 0x30, "CSosGroupActionMemberCountEnvelopeSchema size should be 0x30");
+
+#endif
 	}
 }

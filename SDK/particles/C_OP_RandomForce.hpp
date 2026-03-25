@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_MinForce; // 0x1e0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_MaxForce; // 0x1ec | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RandomForce, m_MinForce) == 0x1E0, "m_MinForce in C_OP_RandomForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_RandomForce, m_MaxForce) == 0x1EC, "m_MaxForce in C_OP_RandomForce should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::C_OP_RandomForce) == 0x1F8, "C_OP_RandomForce size should be 0x1F8");
+
+#endif
 	}
 }

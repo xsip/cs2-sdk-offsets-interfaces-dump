@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CGlobalSymbol m_ID; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmSyncTrack_EventMarker_t, m_startTime) == 0x0, "m_startTime in CNmSyncTrack::EventMarker_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmSyncTrack_EventMarker_t, m_ID) == 0x8, "m_ID in CNmSyncTrack::EventMarker_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::CNmSyncTrack_EventMarker_t) == 0x10, "CNmSyncTrack::EventMarker_t size should be 0x10");
+
+#endif
 	}
 }

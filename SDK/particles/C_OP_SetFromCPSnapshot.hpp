@@ -42,6 +42,7 @@ namespace CS2 {
 			bool m_bPrev; // 0x649 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetFromCPSnapshot, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_SetFromCPSnapshot should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetFromCPSnapshot, m_strSnapshotSubset) == 0x1D8, "m_strSnapshotSubset in C_OP_SetFromCPSnapshot should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetFromCPSnapshot, m_nAttributeToRead) == 0x1E0, "m_nAttributeToRead in C_OP_SetFromCPSnapshot should be at offset 0x1E0");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetFromCPSnapshot, m_bSubSample) == 0x648, "m_bSubSample in C_OP_SetFromCPSnapshot should be at offset 0x648");
 		static_assert(offsetof(CS2::particles::C_OP_SetFromCPSnapshot, m_bPrev) == 0x649, "m_bPrev in C_OP_SetFromCPSnapshot should be at offset 0x649");
 		static_assert(sizeof(CS2::particles::C_OP_SetFromCPSnapshot) == 0x650, "C_OP_SetFromCPSnapshot size should be 0x650");
+
+#endif
 	}
 }

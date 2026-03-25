@@ -26,7 +26,10 @@ namespace CS2 {
 			client::ObserverInterpState_t m_obsInterpState; // 0x64 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x88); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSObserver_ObserverServices, m_obsInterpState) == 0x64, "m_obsInterpState in CCSObserver_ObserverServices should be at offset 0x64");
 		static_assert(sizeof(CS2::client::CCSObserver_ObserverServices) == 0xF0, "CCSObserver_ObserverServices size should be 0xF0");
+
+#endif
 	}
 }

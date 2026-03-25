@@ -28,9 +28,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Triggers; // 0xd8 | Schema_Atomic | Size: 0x18
 			char m_Triggers[0x18]; // 0xd8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlaySceneBase, m_OnFinished) == 0x48, "m_OnFinished in CPulseCell_Outflow_PlaySceneBase should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlaySceneBase, m_OnCanceled) == 0x90, "m_OnCanceled in CPulseCell_Outflow_PlaySceneBase should be at offset 0x90");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlaySceneBase, m_Triggers) == 0xD8, "m_Triggers in CPulseCell_Outflow_PlaySceneBase should be at offset 0xD8");
 		static_assert(sizeof(CS2::server::CPulseCell_Outflow_PlaySceneBase) == 0xF0, "CPulseCell_Outflow_PlaySceneBase size should be 0xF0");
+
+#endif
 	}
 }

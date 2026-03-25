@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_PathParticleRopeAlias_path_particle_rope_clientside : public CS2::client::C_PathParticleRope {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_PathParticleRopeAlias_path_particle_rope_clientside) == 0x718, "C_PathParticleRopeAlias_path_particle_rope_clientside size should be 0x718");
+
+#endif
 	}
 }

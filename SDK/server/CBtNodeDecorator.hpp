@@ -22,6 +22,9 @@ namespace CS2 {
 		class CBtNodeDecorator : public CS2::server::CBtNode {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CBtNodeDecorator) == 0x58, "CBtNodeDecorator size should be 0x58");
+
+#endif
 	}
 }

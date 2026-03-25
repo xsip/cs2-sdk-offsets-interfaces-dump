@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<scenesystem::CSSDSEndFrameViewInfo> m_Views; // 0x0 | Schema_Atomic | Size: 0x18
 			// char m_Views[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_EndFrame, m_Views) == 0x0, "m_Views in CSSDSMsg_EndFrame should be at offset 0x0");
 		static_assert(sizeof(CS2::scenesystem::CSSDSMsg_EndFrame) == 0x18, "CSSDSMsg_EndFrame size should be 0x18");
+
+#endif
 	}
 }

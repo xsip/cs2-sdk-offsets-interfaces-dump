@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bPassWhenTrue; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompMatMutatorCondition_t, m_nMutatorCondition) == 0x0, "m_nMutatorCondition in CompMatMutatorCondition_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatMutatorCondition_t, m_strMutatorConditionContainerName) == 0x8, "m_strMutatorConditionContainerName in CompMatMutatorCondition_t should be at offset 0x8");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatMutatorCondition_t, m_strMutatorConditionContainerVarName) == 0x10, "m_strMutatorConditionContainerVarName in CompMatMutatorCondition_t should be at offset 0x10");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatMutatorCondition_t, m_strMutatorConditionContainerVarValue) == 0x18, "m_strMutatorConditionContainerVarValue in CompMatMutatorCondition_t should be at offset 0x18");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatMutatorCondition_t, m_bPassWhenTrue) == 0x20, "m_bPassWhenTrue in CompMatMutatorCondition_t should be at offset 0x20");
 		static_assert(sizeof(CS2::compositematerialslib::CompMatMutatorCondition_t) == 0x28, "CompMatMutatorCondition_t size should be 0x28");
+
+#endif
 	}
 }

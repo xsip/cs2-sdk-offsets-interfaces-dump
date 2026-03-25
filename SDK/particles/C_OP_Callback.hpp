@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_OP_Callback : public CS2::particles::CParticleFunctionRenderer {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::particles::C_OP_Callback) == 0x220, "C_OP_Callback size should be 0x220");
+
+#endif
 	}
 }

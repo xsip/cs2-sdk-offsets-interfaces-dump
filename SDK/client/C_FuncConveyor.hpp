@@ -35,6 +35,7 @@ namespace CS2 {
 			float32 m_flCurrentConveyorOffset; // 0xec8 | Schema_Builtin | Size: 0x4
 			float32 m_flCurrentConveyorSpeed; // 0xecc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_FuncConveyor, m_vecMoveDirEntitySpace) == 0xE90, "m_vecMoveDirEntitySpace in C_FuncConveyor should be at offset 0xE90");
 		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flTargetSpeed) == 0xE9C, "m_flTargetSpeed in C_FuncConveyor should be at offset 0xE9C");
 		static_assert(offsetof(CS2::client::C_FuncConveyor, m_nTransitionStartTick) == 0xEA0, "m_nTransitionStartTick in C_FuncConveyor should be at offset 0xEA0");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flCurrentConveyorOffset) == 0xEC8, "m_flCurrentConveyorOffset in C_FuncConveyor should be at offset 0xEC8");
 		static_assert(offsetof(CS2::client::C_FuncConveyor, m_flCurrentConveyorSpeed) == 0xECC, "m_flCurrentConveyorSpeed in C_FuncConveyor should be at offset 0xECC");
 		static_assert(sizeof(CS2::client::C_FuncConveyor) == 0xED0, "C_FuncConveyor size should be 0xED0");
+
+#endif
 	}
 }

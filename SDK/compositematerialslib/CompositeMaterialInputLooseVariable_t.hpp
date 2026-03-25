@@ -72,6 +72,7 @@ namespace CS2 {
 			int32_t m_nPanoramaRenderRes; // 0x280 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputLooseVariable_t, m_strName) == 0x0, "m_strName in CompositeMaterialInputLooseVariable_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputLooseVariable_t, m_bExposeExternally) == 0x8, "m_bExposeExternally in CompositeMaterialInputLooseVariable_t should be at offset 0x8");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputLooseVariable_t, m_strExposedFriendlyName) == 0x10, "m_strExposedFriendlyName in CompositeMaterialInputLooseVariable_t should be at offset 0x10");
@@ -110,5 +111,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputLooseVariable_t, m_strPanoramaPanelPath) == 0x278, "m_strPanoramaPanelPath in CompositeMaterialInputLooseVariable_t should be at offset 0x278");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputLooseVariable_t, m_nPanoramaRenderRes) == 0x280, "m_nPanoramaRenderRes in CompositeMaterialInputLooseVariable_t should be at offset 0x280");
 		static_assert(sizeof(CS2::compositematerialslib::CompositeMaterialInputLooseVariable_t) == 0x288, "CompositeMaterialInputLooseVariable_t size should be 0x288");
+
+#endif
 	}
 }

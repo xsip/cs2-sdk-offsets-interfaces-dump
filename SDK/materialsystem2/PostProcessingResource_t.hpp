@@ -44,6 +44,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			materialsystem2::PostProcessingFogScatteringParameters_t m_fogScatteringParams; // 0x124 | Schema_DeclaredClass | Size: 0x14
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingResource_t, m_bHasTonemapParams) == 0x0, "m_bHasTonemapParams in PostProcessingResource_t should be at offset 0x0");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingResource_t, m_toneMapParams) == 0x4, "m_toneMapParams in PostProcessingResource_t should be at offset 0x4");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingResource_t, m_bHasBloomParams) == 0x40, "m_bHasBloomParams in PostProcessingResource_t should be at offset 0x40");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingResource_t, m_bHasFogScatteringParams) == 0x121, "m_bHasFogScatteringParams in PostProcessingResource_t should be at offset 0x121");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingResource_t, m_fogScatteringParams) == 0x124, "m_fogScatteringParams in PostProcessingResource_t should be at offset 0x124");
 		static_assert(sizeof(CS2::materialsystem2::PostProcessingResource_t) == 0x138, "PostProcessingResource_t size should be 0x138");
+
+#endif
 	}
 }

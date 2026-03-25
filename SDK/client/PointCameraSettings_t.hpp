@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 m_flFarCrispDistance; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flFarBlurryDistance; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::PointCameraSettings_t, m_flNearBlurryDistance) == 0x0, "m_flNearBlurryDistance in PointCameraSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::PointCameraSettings_t, m_flNearCrispDistance) == 0x4, "m_flNearCrispDistance in PointCameraSettings_t should be at offset 0x4");
 		static_assert(offsetof(CS2::client::PointCameraSettings_t, m_flFarCrispDistance) == 0x8, "m_flFarCrispDistance in PointCameraSettings_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::PointCameraSettings_t, m_flFarBlurryDistance) == 0xC, "m_flFarBlurryDistance in PointCameraSettings_t should be at offset 0xC");
 		static_assert(sizeof(CS2::client::PointCameraSettings_t) == 0x10, "PointCameraSettings_t size should be 0x10");
+
+#endif
 	}
 }

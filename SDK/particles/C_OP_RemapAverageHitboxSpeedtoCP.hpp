@@ -37,6 +37,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionVecInput m_vecComparisonVelocity; // 0x7b0 | Schema_DeclaredClass | Size: 0x6b8
 			char m_HitboxSetName[128]; // 0xe68 | Schema_FixedArray | Size: 0x80
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapAverageHitboxSpeedtoCP, m_nInControlPointNumber) == 0x1D8, "m_nInControlPointNumber in C_OP_RemapAverageHitboxSpeedtoCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapAverageHitboxSpeedtoCP, m_nOutControlPointNumber) == 0x1DC, "m_nOutControlPointNumber in C_OP_RemapAverageHitboxSpeedtoCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapAverageHitboxSpeedtoCP, m_nField) == 0x1E0, "m_nField in C_OP_RemapAverageHitboxSpeedtoCP should be at offset 0x1E0");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapAverageHitboxSpeedtoCP, m_vecComparisonVelocity) == 0x7B0, "m_vecComparisonVelocity in C_OP_RemapAverageHitboxSpeedtoCP should be at offset 0x7B0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapAverageHitboxSpeedtoCP, m_HitboxSetName) == 0xE68, "m_HitboxSetName in C_OP_RemapAverageHitboxSpeedtoCP should be at offset 0xE68");
 		static_assert(sizeof(CS2::particles::C_OP_RemapAverageHitboxSpeedtoCP) == 0xEE8, "C_OP_RemapAverageHitboxSpeedtoCP size should be 0xEE8");
+
+#endif
 	}
 }

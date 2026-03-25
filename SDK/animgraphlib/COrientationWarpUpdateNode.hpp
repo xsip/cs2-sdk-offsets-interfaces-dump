@@ -46,6 +46,7 @@ namespace CS2 {
 			float32 m_flPreferredRotationThreshold; // 0xb8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::COrientationWarpUpdateNode, m_eMode) == 0x74, "m_eMode in COrientationWarpUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::COrientationWarpUpdateNode, m_hTargetParam) == 0x78, "m_hTargetParam in COrientationWarpUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::COrientationWarpUpdateNode, m_hTargetPositionParam) == 0x7A, "m_hTargetPositionParam in COrientationWarpUpdateNode should be at offset 0x7A");
@@ -60,5 +61,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::COrientationWarpUpdateNode, m_ePreferredRotationDirection) == 0xB4, "m_ePreferredRotationDirection in COrientationWarpUpdateNode should be at offset 0xB4");
 		static_assert(offsetof(CS2::animgraphlib::COrientationWarpUpdateNode, m_flPreferredRotationThreshold) == 0xB8, "m_flPreferredRotationThreshold in COrientationWarpUpdateNode should be at offset 0xB8");
 		static_assert(sizeof(CS2::animgraphlib::COrientationWarpUpdateNode) == 0xC0, "COrientationWarpUpdateNode size should be 0xC0");
+
+#endif
 	}
 }

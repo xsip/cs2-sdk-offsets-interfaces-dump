@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bUseNeighbor; // 0x63c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_flDistance) == 0x1D8, "m_flDistance in C_INIT_DistanceToNeighborCull should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_bIncludeRadii) == 0x348, "m_bIncludeRadii in C_INIT_DistanceToNeighborCull should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_flLifespanOverlap) == 0x350, "m_flLifespanOverlap in C_INIT_DistanceToNeighborCull should be at offset 0x350");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_nSetMethod) == 0x638, "m_nSetMethod in C_INIT_DistanceToNeighborCull should be at offset 0x638");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToNeighborCull, m_bUseNeighbor) == 0x63C, "m_bUseNeighbor in C_INIT_DistanceToNeighborCull should be at offset 0x63C");
 		static_assert(sizeof(CS2::particles::C_INIT_DistanceToNeighborCull) == 0x640, "C_INIT_DistanceToNeighborCull size should be 0x640");
+
+#endif
 	}
 }

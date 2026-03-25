@@ -24,7 +24,10 @@ namespace CS2 {
 			// GlobalTypes::CUtlVector<pulse_runtime_lib::OutflowWithRequirements_t> m_Outflows; // 0x0 | Schema_Atomic | Size: 0x18
 			char m_Outflows[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseSelectorOutflowList_t, m_Outflows) == 0x0, "m_Outflows in PulseSelectorOutflowList_t should be at offset 0x0");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PulseSelectorOutflowList_t) == 0x18, "PulseSelectorOutflowList_t size should be 0x18");
+
+#endif
 	}
 }

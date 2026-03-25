@@ -34,9 +34,12 @@ namespace CS2 {
 			// char m_hOwner[0x4]; // 0x60 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CDestructiblePartsComponent, __m_pChainEntity) == 0x0, "__m_pChainEntity in CDestructiblePartsComponent should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDestructiblePartsComponent, m_vecDamageTakenByHitGroup) == 0x48, "m_vecDamageTakenByHitGroup in CDestructiblePartsComponent should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CDestructiblePartsComponent, m_hOwner) == 0x60, "m_hOwner in CDestructiblePartsComponent should be at offset 0x60");
 		static_assert(sizeof(CS2::client::CDestructiblePartsComponent) == 0x70, "CDestructiblePartsComponent size should be 0x70");
+
+#endif
 	}
 }

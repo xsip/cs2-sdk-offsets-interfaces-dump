@@ -26,9 +26,12 @@ namespace CS2 {
 			GlobalTypes::Color m_Color; // 0x60 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerLine, m_vWsPositionStart) == 0x40, "m_vWsPositionStart in CAnimationGraphVisualizerLine should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerLine, m_vWsPositionEnd) == 0x50, "m_vWsPositionEnd in CAnimationGraphVisualizerLine should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerLine, m_Color) == 0x60, "m_Color in CAnimationGraphVisualizerLine should be at offset 0x60");
 		static_assert(sizeof(CS2::animgraphlib::CAnimationGraphVisualizerLine) == 0x70, "CAnimationGraphVisualizerLine size should be 0x70");
+
+#endif
 	}
 }

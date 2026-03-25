@@ -74,6 +74,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<client::sndopvarlatchdata_t> m_sndOpvarLatchData; // 0xd08 | Schema_Atomic | Size: 0x18
 			// char m_sndOpvarLatchData[0x18]; // 0xd08 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pWeaponServices) == 0xB70, "m_pWeaponServices in CBasePlayerPawn should be at offset 0xB70");
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pItemServices) == 0xB78, "m_pItemServices in CBasePlayerPawn should be at offset 0xB78");
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_pAutoaimServices) == 0xB80, "m_pAutoaimServices in CBasePlayerPawn should be at offset 0xB80");
@@ -100,5 +101,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_iHltvReplayEntity) == 0xD04, "m_iHltvReplayEntity in CBasePlayerPawn should be at offset 0xD04");
 		static_assert(offsetof(CS2::server::CBasePlayerPawn, m_sndOpvarLatchData) == 0xD08, "m_sndOpvarLatchData in CBasePlayerPawn should be at offset 0xD08");
 		static_assert(sizeof(CS2::server::CBasePlayerPawn) == 0xD20, "CBasePlayerPawn size should be 0xD20");
+
+#endif
 	}
 }

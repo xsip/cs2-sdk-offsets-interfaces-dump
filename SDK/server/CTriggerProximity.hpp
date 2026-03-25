@@ -35,11 +35,14 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_NearestEntityDistance; // 0x8a8 | Schema_Atomic | Size: 0x20
 			char m_NearestEntityDistance[0x20]; // 0x8a8 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerProximity, m_hMeasureTarget) == 0x890, "m_hMeasureTarget in CTriggerProximity should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerProximity, m_iszMeasureTarget) == 0x898, "m_iszMeasureTarget in CTriggerProximity should be at offset 0x898");
 		static_assert(offsetof(CS2::server::CTriggerProximity, m_fRadius) == 0x8A0, "m_fRadius in CTriggerProximity should be at offset 0x8A0");
 		static_assert(offsetof(CS2::server::CTriggerProximity, m_nTouchers) == 0x8A4, "m_nTouchers in CTriggerProximity should be at offset 0x8A4");
 		static_assert(offsetof(CS2::server::CTriggerProximity, m_NearestEntityDistance) == 0x8A8, "m_NearestEntityDistance in CTriggerProximity should be at offset 0x8A8");
 		static_assert(sizeof(CS2::server::CTriggerProximity) == 0x8C8, "CTriggerProximity size should be 0x8C8");
+
+#endif
 	}
 }

@@ -24,9 +24,12 @@ namespace CS2 {
 			GlobalTypes::CKV3MemberNameSet m_InparamsWhichCanBeMoved; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::KeyValues3 m_Outparams; // 0x20 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseRegisterMap_t, m_Inparams) == 0x0, "m_Inparams in PulseRegisterMap_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseRegisterMap_t, m_InparamsWhichCanBeMoved) == 0x10, "m_InparamsWhichCanBeMoved in PulseRegisterMap_t should be at offset 0x10");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseRegisterMap_t, m_Outparams) == 0x20, "m_Outparams in PulseRegisterMap_t should be at offset 0x20");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PulseRegisterMap_t) == 0x30, "PulseRegisterMap_t size should be 0x30");
+
+#endif
 	}
 }

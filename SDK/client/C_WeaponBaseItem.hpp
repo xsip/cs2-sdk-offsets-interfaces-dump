@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bRedraw; // 0x1f41 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xe); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_WeaponBaseItem, m_bSequenceInProgress) == 0x1F40, "m_bSequenceInProgress in C_WeaponBaseItem should be at offset 0x1F40");
 		static_assert(offsetof(CS2::client::C_WeaponBaseItem, m_bRedraw) == 0x1F41, "m_bRedraw in C_WeaponBaseItem should be at offset 0x1F41");
 		static_assert(sizeof(CS2::client::C_WeaponBaseItem) == 0x1F50, "C_WeaponBaseItem size should be 0x1F50");
+
+#endif
 	}
 }

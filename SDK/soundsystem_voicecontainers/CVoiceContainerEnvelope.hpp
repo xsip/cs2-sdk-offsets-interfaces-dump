@@ -30,8 +30,11 @@ namespace CS2 {
 			char m_sound[0x8]; // 0xa8 | Schema_Atomic | Size: 0x8
 			soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_analysisContainer; // 0xb0 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnvelope, m_sound) == 0xA8, "m_sound in CVoiceContainerEnvelope should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnvelope, m_analysisContainer) == 0xB0, "m_analysisContainer in CVoiceContainerEnvelope should be at offset 0xB0");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerEnvelope) == 0xB8, "CVoiceContainerEnvelope size should be 0xB8");
+
+#endif
 	}
 }

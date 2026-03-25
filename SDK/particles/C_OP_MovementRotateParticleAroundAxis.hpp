@@ -30,10 +30,13 @@ namespace CS2 {
 			bool m_bLocalSpace; // 0xa60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MovementRotateParticleAroundAxis, m_vecRotAxis) == 0x1D0, "m_vecRotAxis in C_OP_MovementRotateParticleAroundAxis should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MovementRotateParticleAroundAxis, m_flRotRate) == 0x888, "m_flRotRate in C_OP_MovementRotateParticleAroundAxis should be at offset 0x888");
 		static_assert(offsetof(CS2::particles::C_OP_MovementRotateParticleAroundAxis, m_TransformInput) == 0x9F8, "m_TransformInput in C_OP_MovementRotateParticleAroundAxis should be at offset 0x9F8");
 		static_assert(offsetof(CS2::particles::C_OP_MovementRotateParticleAroundAxis, m_bLocalSpace) == 0xA60, "m_bLocalSpace in C_OP_MovementRotateParticleAroundAxis should be at offset 0xA60");
 		static_assert(sizeof(CS2::particles::C_OP_MovementRotateParticleAroundAxis) == 0xA68, "C_OP_MovementRotateParticleAroundAxis size should be 0xA68");
+
+#endif
 	}
 }

@@ -27,8 +27,11 @@ namespace CS2 {
 			// char m_ChoiceWeights[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_RandomPick, m_Choices) == 0x48, "m_Choices in CModelConfigElement_RandomPick should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_RandomPick, m_ChoiceWeights) == 0x60, "m_ChoiceWeights in CModelConfigElement_RandomPick should be at offset 0x60");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_RandomPick) == 0x80, "CModelConfigElement_RandomPick size should be 0x80");
+
+#endif
 	}
 }

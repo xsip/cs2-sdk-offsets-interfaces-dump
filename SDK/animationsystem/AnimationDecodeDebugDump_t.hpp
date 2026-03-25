@@ -27,8 +27,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animationsystem::AnimationDecodeDebugDumpElement_t> m_elems; // 0x8 | Schema_Atomic | Size: 0x18
 			// char m_elems[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDump_t, m_processingType) == 0x0, "m_processingType in AnimationDecodeDebugDump_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDump_t, m_elems) == 0x8, "m_elems in AnimationDecodeDebugDump_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animationsystem::AnimationDecodeDebugDump_t) == 0x20, "AnimationDecodeDebugDump_t size should be 0x20");
+
+#endif
 	}
 }

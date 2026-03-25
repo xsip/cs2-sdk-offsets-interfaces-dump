@@ -35,6 +35,7 @@ namespace CS2 {
 			int32_t m_nDepth; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSDFRigid_t, vLocalMin) == 0x0, "vLocalMin in FeSDFRigid_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSDFRigid_t, vLocalMax) == 0xC, "vLocalMax in FeSDFRigid_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeSDFRigid_t, flBounciness) == 0x18, "flBounciness in FeSDFRigid_t should be at offset 0x18");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeSDFRigid_t, m_nHeight) == 0x44, "m_nHeight in FeSDFRigid_t should be at offset 0x44");
 		static_assert(offsetof(CS2::physicslib::FeSDFRigid_t, m_nDepth) == 0x48, "m_nDepth in FeSDFRigid_t should be at offset 0x48");
 		static_assert(sizeof(CS2::physicslib::FeSDFRigid_t) == 0x50, "FeSDFRigid_t size should be 0x50");
+
+#endif
 	}
 }

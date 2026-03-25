@@ -34,6 +34,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_szModifier; // 0x120 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPrecipitationVData, m_szParticlePrecipitationEffect) == 0x28, "m_szParticlePrecipitationEffect in CPrecipitationVData should be at offset 0x28");
 		static_assert(offsetof(CS2::server::CPrecipitationVData, m_flInnerDistance) == 0x108, "m_flInnerDistance in CPrecipitationVData should be at offset 0x108");
 		static_assert(offsetof(CS2::server::CPrecipitationVData, m_nAttachType) == 0x10C, "m_nAttachType in CPrecipitationVData should be at offset 0x10C");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPrecipitationVData, m_nRTEnvCPComponent) == 0x118, "m_nRTEnvCPComponent in CPrecipitationVData should be at offset 0x118");
 		static_assert(offsetof(CS2::server::CPrecipitationVData, m_szModifier) == 0x120, "m_szModifier in CPrecipitationVData should be at offset 0x120");
 		static_assert(sizeof(CS2::server::CPrecipitationVData) == 0x128, "CPrecipitationVData size should be 0x128");
+
+#endif
 	}
 }

@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			float32 m_flInterval; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CStopwatch, m_flInterval) == 0xC, "m_flInterval in CStopwatch should be at offset 0xC");
 		static_assert(sizeof(CS2::client::CStopwatch) == 0x10, "CStopwatch size should be 0x10");
+
+#endif
 	}
 }

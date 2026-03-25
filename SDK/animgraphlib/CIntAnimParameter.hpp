@@ -26,9 +26,12 @@ namespace CS2 {
 			int32_t m_maxValue; // 0x88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CIntAnimParameter, m_defaultValue) == 0x80, "m_defaultValue in CIntAnimParameter should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CIntAnimParameter, m_minValue) == 0x84, "m_minValue in CIntAnimParameter should be at offset 0x84");
 		static_assert(offsetof(CS2::animgraphlib::CIntAnimParameter, m_maxValue) == 0x88, "m_maxValue in CIntAnimParameter should be at offset 0x88");
 		static_assert(sizeof(CS2::animgraphlib::CIntAnimParameter) == 0x90, "CIntAnimParameter size should be 0x90");
+
+#endif
 	}
 }

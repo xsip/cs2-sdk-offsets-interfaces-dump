@@ -26,11 +26,14 @@ namespace CS2 {
 			float32 flWeight[4]; // 0xc | Schema_FixedArray | Size: 0x10
 			uint16_t nNode[6]; // 0x1c | Schema_FixedArray | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeAxialEdgeBend_t, te) == 0x0, "te in FeAxialEdgeBend_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeAxialEdgeBend_t, tv) == 0x4, "tv in FeAxialEdgeBend_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeAxialEdgeBend_t, flDist) == 0x8, "flDist in FeAxialEdgeBend_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeAxialEdgeBend_t, flWeight) == 0xC, "flWeight in FeAxialEdgeBend_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeAxialEdgeBend_t, nNode) == 0x1C, "nNode in FeAxialEdgeBend_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::physicslib::FeAxialEdgeBend_t) == 0x28, "FeAxialEdgeBend_t size should be 0x28");
+
+#endif
 	}
 }

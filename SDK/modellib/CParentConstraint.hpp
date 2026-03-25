@@ -22,6 +22,9 @@ namespace CS2 {
 		class CParentConstraint : public CS2::modellib::CBaseConstraint {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::modellib::CParentConstraint) == 0x60, "CParentConstraint size should be 0x60");
+
+#endif
 	}
 }

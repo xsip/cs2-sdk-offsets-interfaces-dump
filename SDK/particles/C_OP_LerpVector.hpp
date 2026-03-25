@@ -30,11 +30,14 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x1e8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LerpVector, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_LerpVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_LerpVector, m_vecOutput) == 0x1D4, "m_vecOutput in C_OP_LerpVector should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_LerpVector, m_flStartTime) == 0x1E0, "m_flStartTime in C_OP_LerpVector should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_LerpVector, m_flEndTime) == 0x1E4, "m_flEndTime in C_OP_LerpVector should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_LerpVector, m_nSetMethod) == 0x1E8, "m_nSetMethod in C_OP_LerpVector should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_LerpVector) == 0x1F0, "C_OP_LerpVector size should be 0x1F0");
+
+#endif
 	}
 }

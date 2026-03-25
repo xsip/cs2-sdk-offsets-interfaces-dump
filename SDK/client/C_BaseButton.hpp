@@ -32,9 +32,12 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_szDisplayText; // 0xe90 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseButton, m_glowEntity) == 0xE88, "m_glowEntity in C_BaseButton should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_BaseButton, m_usable) == 0xE8C, "m_usable in C_BaseButton should be at offset 0xE8C");
 		static_assert(offsetof(CS2::client::C_BaseButton, m_szDisplayText) == 0xE90, "m_szDisplayText in C_BaseButton should be at offset 0xE90");
 		static_assert(sizeof(CS2::client::C_BaseButton) == 0xE98, "C_BaseButton size should be 0xE98");
+
+#endif
 	}
 }

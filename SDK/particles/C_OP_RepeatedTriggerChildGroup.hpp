@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bLimitChildCount; // 0x630 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RepeatedTriggerChildGroup, m_nChildGroupID) == 0x1D8, "m_nChildGroupID in C_OP_RepeatedTriggerChildGroup should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RepeatedTriggerChildGroup, m_flClusterRefireTime) == 0x1E0, "m_flClusterRefireTime in C_OP_RepeatedTriggerChildGroup should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_RepeatedTriggerChildGroup, m_flClusterSize) == 0x350, "m_flClusterSize in C_OP_RepeatedTriggerChildGroup should be at offset 0x350");
 		static_assert(offsetof(CS2::particles::C_OP_RepeatedTriggerChildGroup, m_flClusterCooldown) == 0x4C0, "m_flClusterCooldown in C_OP_RepeatedTriggerChildGroup should be at offset 0x4C0");
 		static_assert(offsetof(CS2::particles::C_OP_RepeatedTriggerChildGroup, m_bLimitChildCount) == 0x630, "m_bLimitChildCount in C_OP_RepeatedTriggerChildGroup should be at offset 0x630");
 		static_assert(sizeof(CS2::particles::C_OP_RepeatedTriggerChildGroup) == 0x638, "C_OP_RepeatedTriggerChildGroup size should be 0x638");
+
+#endif
 	}
 }

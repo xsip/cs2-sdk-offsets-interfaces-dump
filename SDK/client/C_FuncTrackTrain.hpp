@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flLineLength; // 0xe90 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_nLongAxis) == 0xE88, "m_nLongAxis in C_FuncTrackTrain should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_flRadius) == 0xE8C, "m_flRadius in C_FuncTrackTrain should be at offset 0xE8C");
 		static_assert(offsetof(CS2::client::C_FuncTrackTrain, m_flLineLength) == 0xE90, "m_flLineLength in C_FuncTrackTrain should be at offset 0xE90");
 		static_assert(sizeof(CS2::client::C_FuncTrackTrain) == 0xE98, "C_FuncTrackTrain size should be 0xE98");
+
+#endif
 	}
 }

@@ -26,10 +26,13 @@ namespace CS2 {
 			int32_t m_nTotalTicksThisFrame; // 0x38 | Schema_Builtin | Size: 0x4
 			int32_t m_nTotalTicks; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventPostAdvanceTick_t, m_nCurrentTick) == 0x30, "m_nCurrentTick in EventPostAdvanceTick_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::EventPostAdvanceTick_t, m_nCurrentTickThisFrame) == 0x34, "m_nCurrentTickThisFrame in EventPostAdvanceTick_t should be at offset 0x34");
 		static_assert(offsetof(CS2::client::EventPostAdvanceTick_t, m_nTotalTicksThisFrame) == 0x38, "m_nTotalTicksThisFrame in EventPostAdvanceTick_t should be at offset 0x38");
 		static_assert(offsetof(CS2::client::EventPostAdvanceTick_t, m_nTotalTicks) == 0x3C, "m_nTotalTicks in EventPostAdvanceTick_t should be at offset 0x3C");
 		static_assert(sizeof(CS2::client::EventPostAdvanceTick_t) == 0x40, "EventPostAdvanceTick_t size should be 0x40");
+
+#endif
 	}
 }

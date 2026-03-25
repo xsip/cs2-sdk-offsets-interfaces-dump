@@ -113,6 +113,7 @@ namespace CS2 {
 			server::SceneOnPlayerDeath_t m_iPlayerDeathBehavior; // 0x724 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSceneEntity, m_iszSceneFile) == 0x4B0, "m_iszSceneFile in CSceneEntity should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CSceneEntity, m_iszTarget1) == 0x4B8, "m_iszTarget1 in CSceneEntity should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CSceneEntity, m_iszTarget2) == 0x4C0, "m_iszTarget2 in CSceneEntity should be at offset 0x4C0");
@@ -176,5 +177,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSceneEntity, m_BusyActor) == 0x720, "m_BusyActor in CSceneEntity should be at offset 0x720");
 		static_assert(offsetof(CS2::server::CSceneEntity, m_iPlayerDeathBehavior) == 0x724, "m_iPlayerDeathBehavior in CSceneEntity should be at offset 0x724");
 		static_assert(sizeof(CS2::server::CSceneEntity) == 0x730, "CSceneEntity size should be 0x730");
+
+#endif
 	}
 }

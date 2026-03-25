@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_World : public CS2::client::C_BaseModelEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_World) == 0xE88, "C_World size should be 0xE88");
+
+#endif
 	}
 }

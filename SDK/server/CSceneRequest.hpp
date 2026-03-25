@@ -27,9 +27,12 @@ namespace CS2 {
 			server::ESceneRequestState_t m_state; // 0xc | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSceneRequest, m_szPayloadTypeName) == 0x0, "m_szPayloadTypeName in CSceneRequest should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CSceneRequest, m_uHandle) == 0x8, "m_uHandle in CSceneRequest should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CSceneRequest, m_state) == 0xC, "m_state in CSceneRequest should be at offset 0xC");
 		static_assert(sizeof(CS2::server::CSceneRequest) == 0x20, "CSceneRequest size should be 0x20");
+
+#endif
 	}
 }

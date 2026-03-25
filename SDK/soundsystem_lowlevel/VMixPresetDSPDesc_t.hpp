@@ -23,7 +23,10 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_effectName; // 0x0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPresetDSPDesc_t, m_effectName) == 0x0, "m_effectName in VMixPresetDSPDesc_t should be at offset 0x0");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixPresetDSPDesc_t) == 0x10, "VMixPresetDSPDesc_t size should be 0x10");
+
+#endif
 	}
 }

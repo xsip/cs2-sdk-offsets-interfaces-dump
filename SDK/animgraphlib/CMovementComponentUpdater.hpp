@@ -36,6 +36,7 @@ namespace CS2 {
 			animgraphlib::CAnimParamHandle m_paramHandles[34]; // 0x73 | Schema_FixedArray | Size: 0x44
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMovementComponentUpdater, m_motors) == 0x30, "m_motors in CMovementComponentUpdater should be at offset 0x30");
 		static_assert(offsetof(CS2::animgraphlib::CMovementComponentUpdater, m_facingDamping) == 0x48, "m_facingDamping in CMovementComponentUpdater should be at offset 0x48");
 		static_assert(offsetof(CS2::animgraphlib::CMovementComponentUpdater, m_nDefaultMotorIndex) == 0x68, "m_nDefaultMotorIndex in CMovementComponentUpdater should be at offset 0x68");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CMovementComponentUpdater, m_bNetworkFacing) == 0x72, "m_bNetworkFacing in CMovementComponentUpdater should be at offset 0x72");
 		static_assert(offsetof(CS2::animgraphlib::CMovementComponentUpdater, m_paramHandles) == 0x73, "m_paramHandles in CMovementComponentUpdater should be at offset 0x73");
 		static_assert(sizeof(CS2::animgraphlib::CMovementComponentUpdater) == 0xB8, "CMovementComponentUpdater size should be 0xB8");
+
+#endif
 	}
 }

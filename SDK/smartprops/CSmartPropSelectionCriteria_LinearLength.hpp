@@ -26,10 +26,13 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeFloat m_flMinLength; // 0xc8 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flMaxLength; // 0x108 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_LinearLength, m_flLength) == 0x48, "m_flLength in CSmartPropSelectionCriteria_LinearLength should be at offset 0x48");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_LinearLength, m_bAllowScale) == 0x88, "m_bAllowScale in CSmartPropSelectionCriteria_LinearLength should be at offset 0x88");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_LinearLength, m_flMinLength) == 0xC8, "m_flMinLength in CSmartPropSelectionCriteria_LinearLength should be at offset 0xC8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_LinearLength, m_flMaxLength) == 0x108, "m_flMaxLength in CSmartPropSelectionCriteria_LinearLength should be at offset 0x108");
 		static_assert(sizeof(CS2::smartprops::CSmartPropSelectionCriteria_LinearLength) == 0x148, "CSmartPropSelectionCriteria_LinearLength size should be 0x148");
+
+#endif
 	}
 }

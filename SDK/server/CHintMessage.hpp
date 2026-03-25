@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_duration; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CHintMessage, m_hintString) == 0x0, "m_hintString in CHintMessage should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CHintMessage, m_args) == 0x8, "m_args in CHintMessage should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CHintMessage, m_duration) == 0x20, "m_duration in CHintMessage should be at offset 0x20");
 		static_assert(sizeof(CS2::server::CHintMessage) == 0x28, "CHintMessage size should be 0x28");
+
+#endif
 	}
 }

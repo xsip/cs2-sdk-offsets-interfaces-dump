@@ -27,8 +27,11 @@ namespace CS2 {
 			bool m_bLocalEvaluationState; // 0x168 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_SmartProp, m_sSmartProp) == 0x88, "m_sSmartProp in CSmartPropElement_SmartProp should be at offset 0x88");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_SmartProp, m_bLocalEvaluationState) == 0x168, "m_bLocalEvaluationState in CSmartPropElement_SmartProp should be at offset 0x168");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_SmartProp) == 0x170, "CSmartPropElement_SmartProp size should be 0x170");
+
+#endif
 	}
 }

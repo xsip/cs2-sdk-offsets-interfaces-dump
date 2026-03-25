@@ -54,6 +54,7 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< int32, int32 > m_OnLevelTransition; // 0xe88 | Schema_Atomic | Size: 0x20
 			char m_OnLevelTransition[0x20]; // 0xe88 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMapVetoPickController, m_bPlayedIntroVcd) == 0x4A8, "m_bPlayedIntroVcd in CMapVetoPickController should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMapVetoPickController, m_bNeedToPlayFiveSecondsRemaining) == 0x4A9, "m_bNeedToPlayFiveSecondsRemaining in CMapVetoPickController should be at offset 0x4A9");
 		static_assert(offsetof(CS2::server::CMapVetoPickController, m_dblPreMatchDraftSequenceTime) == 0x4C8, "m_dblPreMatchDraftSequenceTime in CMapVetoPickController should be at offset 0x4C8");
@@ -79,5 +80,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMapVetoPickController, m_OnNewPhaseStarted) == 0xE68, "m_OnNewPhaseStarted in CMapVetoPickController should be at offset 0xE68");
 		static_assert(offsetof(CS2::server::CMapVetoPickController, m_OnLevelTransition) == 0xE88, "m_OnLevelTransition in CMapVetoPickController should be at offset 0xE88");
 		static_assert(sizeof(CS2::server::CMapVetoPickController) == 0xEA8, "CMapVetoPickController size should be 0xEA8");
+
+#endif
 	}
 }

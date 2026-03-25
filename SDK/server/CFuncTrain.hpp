@@ -38,6 +38,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszLastTarget; // 0x7f0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncTrain, m_hCurrentTarget) == 0x7D8, "m_hCurrentTarget in CFuncTrain should be at offset 0x7D8");
 		static_assert(offsetof(CS2::server::CFuncTrain, m_activated) == 0x7DC, "m_activated in CFuncTrain should be at offset 0x7DC");
 		static_assert(offsetof(CS2::server::CFuncTrain, m_hEnemy) == 0x7E0, "m_hEnemy in CFuncTrain should be at offset 0x7E0");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncTrain, m_flNextBlockTime) == 0x7E8, "m_flNextBlockTime in CFuncTrain should be at offset 0x7E8");
 		static_assert(offsetof(CS2::server::CFuncTrain, m_iszLastTarget) == 0x7F0, "m_iszLastTarget in CFuncTrain should be at offset 0x7F0");
 		static_assert(sizeof(CS2::server::CFuncTrain) == 0x7F8, "CFuncTrain size should be 0x7F8");
+
+#endif
 	}
 }

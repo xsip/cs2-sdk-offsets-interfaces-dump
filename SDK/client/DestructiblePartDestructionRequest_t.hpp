@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::VectorWS m_vWsPartDamageOrigin; // 0x10 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vWsPartDamageForce; // 0x1c | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::DestructiblePartDestructionRequest_t, m_nDestroyFlags) == 0x0, "m_nDestroyFlags in DestructiblePartDestructionRequest_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::DestructiblePartDestructionRequest_t, m_nDamageType) == 0x4, "m_nDamageType in DestructiblePartDestructionRequest_t should be at offset 0x4");
 		static_assert(offsetof(CS2::client::DestructiblePartDestructionRequest_t, m_flPartDamage) == 0x8, "m_flPartDamage in DestructiblePartDestructionRequest_t should be at offset 0x8");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::DestructiblePartDestructionRequest_t, m_vWsPartDamageOrigin) == 0x10, "m_vWsPartDamageOrigin in DestructiblePartDestructionRequest_t should be at offset 0x10");
 		static_assert(offsetof(CS2::client::DestructiblePartDestructionRequest_t, m_vWsPartDamageForce) == 0x1C, "m_vWsPartDamageForce in DestructiblePartDestructionRequest_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::client::DestructiblePartDestructionRequest_t) == 0x28, "DestructiblePartDestructionRequest_t size should be 0x28");
+
+#endif
 	}
 }

@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bSetOnSpawn; // 0x4f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszStackName) == 0x4C0, "m_iszStackName in CSoundOpvarSetEntity should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszOperatorName) == 0x4C8, "m_iszOperatorName in CSoundOpvarSetEntity should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_iszOpvarName) == 0x4D0, "m_iszOpvarName in CSoundOpvarSetEntity should be at offset 0x4D0");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_OpvarValueString) == 0x4E8, "m_OpvarValueString in CSoundOpvarSetEntity should be at offset 0x4E8");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetEntity, m_bSetOnSpawn) == 0x4F0, "m_bSetOnSpawn in CSoundOpvarSetEntity should be at offset 0x4F0");
 		static_assert(sizeof(CS2::server::CSoundOpvarSetEntity) == 0x500, "CSoundOpvarSetEntity size should be 0x500");
+
+#endif
 	}
 }

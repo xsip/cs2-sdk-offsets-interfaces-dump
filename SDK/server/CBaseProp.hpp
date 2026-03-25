@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CTransform m_mPreferredCatchTransform; // 0xa30 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseProp, m_bModelOverrodeBlockLOS) == 0xA20, "m_bModelOverrodeBlockLOS in CBaseProp should be at offset 0xA20");
 		static_assert(offsetof(CS2::server::CBaseProp, m_iShapeType) == 0xA24, "m_iShapeType in CBaseProp should be at offset 0xA24");
 		static_assert(offsetof(CS2::server::CBaseProp, m_bConformToCollisionBounds) == 0xA28, "m_bConformToCollisionBounds in CBaseProp should be at offset 0xA28");
 		static_assert(offsetof(CS2::server::CBaseProp, m_mPreferredCatchTransform) == 0xA30, "m_mPreferredCatchTransform in CBaseProp should be at offset 0xA30");
 		static_assert(sizeof(CS2::server::CBaseProp) == 0xA50, "CBaseProp size should be 0xA50");
+
+#endif
 	}
 }

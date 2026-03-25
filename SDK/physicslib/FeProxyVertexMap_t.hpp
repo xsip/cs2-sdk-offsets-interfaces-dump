@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flWeight; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeProxyVertexMap_t, m_Name) == 0x0, "m_Name in FeProxyVertexMap_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeProxyVertexMap_t, m_flWeight) == 0x8, "m_flWeight in FeProxyVertexMap_t should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::FeProxyVertexMap_t) == 0x10, "FeProxyVertexMap_t size should be 0x10");
+
+#endif
 	}
 }

@@ -27,10 +27,13 @@ namespace CS2 {
 			pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xd8 | Schema_DeclaredClass | Size: 0x48
 			GlobalTypes::CGlobalSymbol m_TagName; // 0x120 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForAnimgraphTag, m_OnStart) == 0x48, "m_OnStart in CPulseCell_Outflow_ListenForAnimgraphTag should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForAnimgraphTag, m_OnEnd) == 0x90, "m_OnEnd in CPulseCell_Outflow_ListenForAnimgraphTag should be at offset 0x90");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForAnimgraphTag, m_OnCanceled) == 0xD8, "m_OnCanceled in CPulseCell_Outflow_ListenForAnimgraphTag should be at offset 0xD8");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForAnimgraphTag, m_TagName) == 0x120, "m_TagName in CPulseCell_Outflow_ListenForAnimgraphTag should be at offset 0x120");
 		static_assert(sizeof(CS2::server::CPulseCell_Outflow_ListenForAnimgraphTag) == 0x128, "CPulseCell_Outflow_ListenForAnimgraphTag size should be 0x128");
+
+#endif
 	}
 }

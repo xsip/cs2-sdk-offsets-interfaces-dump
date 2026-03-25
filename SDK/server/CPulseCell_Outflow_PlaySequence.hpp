@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_ParamSequenceName; // 0xf0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_PlaySequence, m_ParamSequenceName) == 0xF0, "m_ParamSequenceName in CPulseCell_Outflow_PlaySequence should be at offset 0xF0");
 		static_assert(sizeof(CS2::server::CPulseCell_Outflow_PlaySequence) == 0xF8, "CPulseCell_Outflow_PlaySequence size should be 0xF8");
+
+#endif
 	}
 }

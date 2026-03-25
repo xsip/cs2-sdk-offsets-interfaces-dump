@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bNumBasedOnParticleCount; // 0x4c8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPoint, m_nChildGroupID) == 0x1D0, "m_nChildGroupID in C_OP_SetPerChildControlPoint should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPoint, m_nFirstControlPoint) == 0x1D4, "m_nFirstControlPoint in C_OP_SetPerChildControlPoint should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPoint, m_nNumControlPoints) == 0x1D8, "m_nNumControlPoints in C_OP_SetPerChildControlPoint should be at offset 0x1D8");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPoint, m_nOrientationField) == 0x4C4, "m_nOrientationField in C_OP_SetPerChildControlPoint should be at offset 0x4C4");
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPoint, m_bNumBasedOnParticleCount) == 0x4C8, "m_bNumBasedOnParticleCount in C_OP_SetPerChildControlPoint should be at offset 0x4C8");
 		static_assert(sizeof(CS2::particles::C_OP_SetPerChildControlPoint) == 0x4D0, "C_OP_SetPerChildControlPoint size should be 0x4D0");
+
+#endif
 	}
 }

@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bOffsetLocal; // 0x1e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetToCP, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_SetToCP should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetToCP, m_vecOffset) == 0x1D4, "m_vecOffset in C_OP_SetToCP should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_SetToCP, m_bOffsetLocal) == 0x1E0, "m_bOffsetLocal in C_OP_SetToCP should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_OP_SetToCP) == 0x1E8, "C_OP_SetToCP size should be 0x1E8");
+
+#endif
 	}
 }

@@ -36,6 +36,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeFloat m_flMaxAngle; // 0x2d8 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CUtlString m_OutputVariable; // 0x318 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateRotator, m_Name) == 0x50, "m_Name in CSmartPropOperation_CreateRotator should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateRotator, m_vOffset) == 0x58, "m_vOffset in CSmartPropOperation_CreateRotator should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateRotator, m_vRotationAxis) == 0x98, "m_vRotationAxis in CSmartPropOperation_CreateRotator should be at offset 0x98");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateRotator, m_flMaxAngle) == 0x2D8, "m_flMaxAngle in CSmartPropOperation_CreateRotator should be at offset 0x2D8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateRotator, m_OutputVariable) == 0x318, "m_OutputVariable in CSmartPropOperation_CreateRotator should be at offset 0x318");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_CreateRotator) == 0x320, "CSmartPropOperation_CreateRotator size should be 0x320");
+
+#endif
 	}
 }

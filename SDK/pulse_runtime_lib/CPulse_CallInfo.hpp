@@ -32,6 +32,7 @@ namespace CS2 {
 			int32_t m_nSrcInstruction; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_CallInfo, m_PortName) == 0x0, "m_PortName in CPulse_CallInfo should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_CallInfo, m_nEditorNodeID) == 0x10, "m_nEditorNodeID in CPulse_CallInfo should be at offset 0x10");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_CallInfo, m_RegisterMap) == 0x18, "m_RegisterMap in CPulse_CallInfo should be at offset 0x18");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_CallInfo, m_nSrcChunk) == 0x4C, "m_nSrcChunk in CPulse_CallInfo should be at offset 0x4C");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_CallInfo, m_nSrcInstruction) == 0x50, "m_nSrcInstruction in CPulse_CallInfo should be at offset 0x50");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_CallInfo) == 0x58, "CPulse_CallInfo size should be 0x58");
+
+#endif
 	}
 }

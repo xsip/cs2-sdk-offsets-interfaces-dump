@@ -27,9 +27,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<smartprops::CSmartPropChoiceOption> m_Options; // 0x20 | Schema_Atomic | Size: 0x18
 			// char m_Options[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropChoice, m_Name) == 0x10, "m_Name in CSmartPropChoice should be at offset 0x10");
 		static_assert(offsetof(CS2::smartprops::CSmartPropChoice, m_DefaultOption) == 0x18, "m_DefaultOption in CSmartPropChoice should be at offset 0x18");
 		static_assert(offsetof(CS2::smartprops::CSmartPropChoice, m_Options) == 0x20, "m_Options in CSmartPropChoice should be at offset 0x20");
 		static_assert(sizeof(CS2::smartprops::CSmartPropChoice) == 0x38, "CSmartPropChoice size should be 0x38");
+
+#endif
 	}
 }

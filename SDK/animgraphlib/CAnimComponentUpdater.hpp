@@ -29,10 +29,13 @@ namespace CS2 {
 			bool m_bStartEnabled; // 0x28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimComponentUpdater, m_name) == 0x18, "m_name in CAnimComponentUpdater should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CAnimComponentUpdater, m_id) == 0x20, "m_id in CAnimComponentUpdater should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::CAnimComponentUpdater, m_networkMode) == 0x24, "m_networkMode in CAnimComponentUpdater should be at offset 0x24");
 		static_assert(offsetof(CS2::animgraphlib::CAnimComponentUpdater, m_bStartEnabled) == 0x28, "m_bStartEnabled in CAnimComponentUpdater should be at offset 0x28");
 		static_assert(sizeof(CS2::animgraphlib::CAnimComponentUpdater) == 0x30, "CAnimComponentUpdater size should be 0x30");
+
+#endif
 	}
 }

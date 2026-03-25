@@ -28,11 +28,14 @@ namespace CS2 {
 			int32_t m_iInputFilter; // 0x778 | Schema_Builtin | Size: 0x4
 			int32_t m_iDontMessageParent; // 0x77c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnStartTouch) == 0x730, "m_OnStartTouch in CTriggerBrush should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnEndTouch) == 0x748, "m_OnEndTouch in CTriggerBrush should be at offset 0x748");
 		static_assert(offsetof(CS2::server::CTriggerBrush, m_OnUse) == 0x760, "m_OnUse in CTriggerBrush should be at offset 0x760");
 		static_assert(offsetof(CS2::server::CTriggerBrush, m_iInputFilter) == 0x778, "m_iInputFilter in CTriggerBrush should be at offset 0x778");
 		static_assert(offsetof(CS2::server::CTriggerBrush, m_iDontMessageParent) == 0x77C, "m_iDontMessageParent in CTriggerBrush should be at offset 0x77C");
 		static_assert(sizeof(CS2::server::CTriggerBrush) == 0x780, "CTriggerBrush size should be 0x780");
+
+#endif
 	}
 }

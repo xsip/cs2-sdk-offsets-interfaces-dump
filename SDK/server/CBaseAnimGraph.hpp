@@ -51,6 +51,7 @@ namespace CS2 {
 			GlobalTypes::CTransform m_xParentedRagdollRootInEntitySpace; // 0x870 | Schema_Atomic | Size: 0x20
 			S2_PAD(0x190); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_graphControllerManager) == 0x730, "m_graphControllerManager in CBaseAnimGraph should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_pMainGraphController) == 0x7E0, "m_pMainGraphController in CBaseAnimGraph should be at offset 0x7E0");
 		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bInitiallyPopulateInterpHistory) == 0x7E8, "m_bInitiallyPopulateInterpHistory in CBaseAnimGraph should be at offset 0x7E8");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_bRagdollClientSide) == 0x861, "m_bRagdollClientSide in CBaseAnimGraph should be at offset 0x861");
 		static_assert(offsetof(CS2::server::CBaseAnimGraph, m_xParentedRagdollRootInEntitySpace) == 0x870, "m_xParentedRagdollRootInEntitySpace in CBaseAnimGraph should be at offset 0x870");
 		static_assert(sizeof(CS2::server::CBaseAnimGraph) == 0xA20, "CBaseAnimGraph size should be 0xA20");
+
+#endif
 	}
 }

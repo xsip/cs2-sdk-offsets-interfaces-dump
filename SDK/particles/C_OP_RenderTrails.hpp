@@ -48,6 +48,7 @@ namespace CS2 {
 			bool m_bFlipUVBasedOnPitchYaw; // 0x4444 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bEnableFadingAndClamping) == 0x30E0, "m_bEnableFadingAndClamping in C_OP_RenderTrails should be at offset 0x30E0");
 		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flStartFadeDot) == 0x30E4, "m_flStartFadeDot in C_OP_RenderTrails should be at offset 0x30E4");
 		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flEndFadeDot) == 0x30E8, "m_flEndFadeDot in C_OP_RenderTrails should be at offset 0x30E8");
@@ -69,5 +70,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_flForwardShift) == 0x4440, "m_flForwardShift in C_OP_RenderTrails should be at offset 0x4440");
 		static_assert(offsetof(CS2::particles::C_OP_RenderTrails, m_bFlipUVBasedOnPitchYaw) == 0x4444, "m_bFlipUVBasedOnPitchYaw in C_OP_RenderTrails should be at offset 0x4444");
 		static_assert(sizeof(CS2::particles::C_OP_RenderTrails) == 0x4448, "C_OP_RenderTrails size should be 0x4448");
+
+#endif
 	}
 }

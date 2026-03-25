@@ -25,7 +25,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			client::CSkeletonInstance m_skeletonInstance; // 0x80 | Schema_DeclaredClass | Size: 0x4d0
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBodyComponentSkeletonInstance, m_skeletonInstance) == 0x80, "m_skeletonInstance in CBodyComponentSkeletonInstance should be at offset 0x80");
 		static_assert(sizeof(CS2::client::CBodyComponentSkeletonInstance) == 0x550, "CBodyComponentSkeletonInstance size should be 0x550");
+
+#endif
 	}
 }

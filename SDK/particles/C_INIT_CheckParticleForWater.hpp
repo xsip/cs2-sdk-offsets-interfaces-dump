@@ -32,10 +32,13 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x4c0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_flRadius) == 0x1D8, "m_flRadius in C_INIT_CheckParticleForWater should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_nFieldOutput) == 0x348, "m_nFieldOutput in C_INIT_CheckParticleForWater should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_flOutputRemap) == 0x350, "m_flOutputRemap in C_INIT_CheckParticleForWater should be at offset 0x350");
 		static_assert(offsetof(CS2::particles::C_INIT_CheckParticleForWater, m_nSetMethod) == 0x4C0, "m_nSetMethod in C_INIT_CheckParticleForWater should be at offset 0x4C0");
 		static_assert(sizeof(CS2::particles::C_INIT_CheckParticleForWater) == 0x4C8, "C_INIT_CheckParticleForWater size should be 0x4C8");
+
+#endif
 	}
 }

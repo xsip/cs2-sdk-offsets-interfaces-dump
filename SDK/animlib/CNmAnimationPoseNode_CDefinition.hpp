@@ -28,11 +28,14 @@ namespace CS2 {
 			bool m_bUseFramesAsInput; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmAnimationPoseNode_CDefinition, m_nPoseTimeValueNodeIdx) == 0x10, "m_nPoseTimeValueNodeIdx in CNmAnimationPoseNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmAnimationPoseNode_CDefinition, m_nDataSlotIdx) == 0x12, "m_nDataSlotIdx in CNmAnimationPoseNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmAnimationPoseNode_CDefinition, m_inputTimeRemapRange) == 0x14, "m_inputTimeRemapRange in CNmAnimationPoseNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmAnimationPoseNode_CDefinition, m_flUserSpecifiedTime) == 0x1C, "m_flUserSpecifiedTime in CNmAnimationPoseNode::CDefinition should be at offset 0x1C");
 		static_assert(offsetof(CS2::animlib::CNmAnimationPoseNode_CDefinition, m_bUseFramesAsInput) == 0x20, "m_bUseFramesAsInput in CNmAnimationPoseNode::CDefinition should be at offset 0x20");
 		static_assert(sizeof(CS2::animlib::CNmAnimationPoseNode_CDefinition) == 0x28, "CNmAnimationPoseNode::CDefinition size should be 0x28");
+
+#endif
 	}
 }

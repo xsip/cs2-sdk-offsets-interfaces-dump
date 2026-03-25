@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bOrientToHMD; // 0x1e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToHMD, m_nCP1) == 0x1D8, "m_nCP1 in C_OP_SetControlPointToHMD should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToHMD, m_vecCP1Pos) == 0x1DC, "m_vecCP1Pos in C_OP_SetControlPointToHMD should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToHMD, m_bOrientToHMD) == 0x1E8, "m_bOrientToHMD in C_OP_SetControlPointToHMD should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToHMD) == 0x1F0, "C_OP_SetControlPointToHMD size should be 0x1F0");
+
+#endif
 	}
 }

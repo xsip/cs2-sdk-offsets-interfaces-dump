@@ -82,6 +82,7 @@ namespace CS2 {
 			// char m_vecExternalGraphs[0x18]; // 0x820 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x20); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_nAnimationAlgorithm) == 0x18, "m_nAnimationAlgorithm in CBaseAnimGraphController should be at offset 0x18");
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_animGraphNetworkedVars) == 0x20, "m_animGraphNetworkedVars in CBaseAnimGraphController should be at offset 0x20");
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_pAnimGraphInstance) == 0x228, "m_pAnimGraphInstance in CBaseAnimGraphController should be at offset 0x228");
@@ -114,5 +115,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_sAnimGraph2Identifier) == 0x5F8, "m_sAnimGraph2Identifier in CBaseAnimGraphController should be at offset 0x5F8");
 		static_assert(offsetof(CS2::server::CBaseAnimGraphController, m_vecExternalGraphs) == 0x820, "m_vecExternalGraphs in CBaseAnimGraphController should be at offset 0x820");
 		static_assert(sizeof(CS2::server::CBaseAnimGraphController) == 0x858, "CBaseAnimGraphController size should be 0x858");
+
+#endif
 	}
 }

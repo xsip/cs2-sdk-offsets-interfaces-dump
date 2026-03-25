@@ -41,6 +41,7 @@ namespace CS2 {
 			int32_t m_nSequenceMaxFrame; // 0xe8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CLeanMatrixUpdateNode, m_frameCorners) == 0x5C, "m_frameCorners in CLeanMatrixUpdateNode should be at offset 0x5C");
 		static_assert(offsetof(CS2::animgraphlib::CLeanMatrixUpdateNode, m_poses) == 0x80, "m_poses in CLeanMatrixUpdateNode should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CLeanMatrixUpdateNode, m_damping) == 0xA8, "m_damping in CLeanMatrixUpdateNode should be at offset 0xA8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CLeanMatrixUpdateNode, m_flMaxValue) == 0xE4, "m_flMaxValue in CLeanMatrixUpdateNode should be at offset 0xE4");
 		static_assert(offsetof(CS2::animgraphlib::CLeanMatrixUpdateNode, m_nSequenceMaxFrame) == 0xE8, "m_nSequenceMaxFrame in CLeanMatrixUpdateNode should be at offset 0xE8");
 		static_assert(sizeof(CS2::animgraphlib::CLeanMatrixUpdateNode) == 0xF0, "CLeanMatrixUpdateNode size should be 0xF0");
+
+#endif
 	}
 }

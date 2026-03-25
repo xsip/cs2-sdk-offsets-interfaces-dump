@@ -28,11 +28,14 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< Color, Color > m_OutValue; // 0x4b8 | Schema_Atomic | Size: 0x20
 			char m_OutValue[0x20]; // 0x4b8 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMathColorBlend, m_flInMin) == 0x4A8, "m_flInMin in CMathColorBlend should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMathColorBlend, m_flInMax) == 0x4AC, "m_flInMax in CMathColorBlend should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutColor1) == 0x4B0, "m_OutColor1 in CMathColorBlend should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutColor2) == 0x4B4, "m_OutColor2 in CMathColorBlend should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CMathColorBlend, m_OutValue) == 0x4B8, "m_OutValue in CMathColorBlend should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CMathColorBlend) == 0x4D8, "CMathColorBlend size should be 0x4D8");
+
+#endif
 	}
 }

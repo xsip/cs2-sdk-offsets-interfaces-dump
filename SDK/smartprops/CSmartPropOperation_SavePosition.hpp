@@ -25,8 +25,11 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x50 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CUtlString m_VariableName; // 0x90 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SavePosition, m_CoordinateSpace) == 0x50, "m_CoordinateSpace in CSmartPropOperation_SavePosition should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SavePosition, m_VariableName) == 0x90, "m_VariableName in CSmartPropOperation_SavePosition should be at offset 0x90");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_SavePosition) == 0x98, "CSmartPropOperation_SavePosition size should be 0x98");
+
+#endif
 	}
 }

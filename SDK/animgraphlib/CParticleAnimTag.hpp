@@ -39,6 +39,7 @@ namespace CS2 {
 			animationsystem::ParticleAttachment_t m_attachmentCP1Type; // 0x90 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CParticleAnimTag, m_hParticleSystem) == 0x58, "m_hParticleSystem in CParticleAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CParticleAnimTag, m_particleSystemName) == 0x60, "m_particleSystemName in CParticleAnimTag should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CParticleAnimTag, m_configName) == 0x68, "m_configName in CParticleAnimTag should be at offset 0x68");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CParticleAnimTag, m_attachmentCP1Name) == 0x88, "m_attachmentCP1Name in CParticleAnimTag should be at offset 0x88");
 		static_assert(offsetof(CS2::animgraphlib::CParticleAnimTag, m_attachmentCP1Type) == 0x90, "m_attachmentCP1Type in CParticleAnimTag should be at offset 0x90");
 		static_assert(sizeof(CS2::animgraphlib::CParticleAnimTag) == 0x98, "CParticleAnimTag size should be 0x98");
+
+#endif
 	}
 }

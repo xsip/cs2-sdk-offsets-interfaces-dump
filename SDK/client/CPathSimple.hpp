@@ -29,9 +29,12 @@ namespace CS2 {
 			bool m_bClosedLoop; // 0x708 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPathSimple, m_CPathQueryComponent) == 0x610, "m_CPathQueryComponent in CPathSimple should be at offset 0x610");
 		static_assert(offsetof(CS2::client::CPathSimple, m_pathString) == 0x700, "m_pathString in CPathSimple should be at offset 0x700");
 		static_assert(offsetof(CS2::client::CPathSimple, m_bClosedLoop) == 0x708, "m_bClosedLoop in CPathSimple should be at offset 0x708");
 		static_assert(sizeof(CS2::client::CPathSimple) == 0x710, "CPathSimple size should be 0x710");
+
+#endif
 	}
 }

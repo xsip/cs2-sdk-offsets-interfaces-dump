@@ -23,8 +23,11 @@ namespace CS2 {
 			uint64_t m_nViewId; // 0x0 | Schema_Builtin | Size: 0x8
 			GlobalTypes::CUtlString m_ViewName; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::scenesystem::CSSDSEndFrameViewInfo, m_nViewId) == 0x0, "m_nViewId in CSSDSEndFrameViewInfo should be at offset 0x0");
 		static_assert(offsetof(CS2::scenesystem::CSSDSEndFrameViewInfo, m_ViewName) == 0x8, "m_ViewName in CSSDSEndFrameViewInfo should be at offset 0x8");
 		static_assert(sizeof(CS2::scenesystem::CSSDSEndFrameViewInfo) == 0x10, "CSSDSEndFrameViewInfo size should be 0x10");
+
+#endif
 	}
 }

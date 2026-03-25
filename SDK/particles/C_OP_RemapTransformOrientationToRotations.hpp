@@ -28,10 +28,13 @@ namespace CS2 {
 			bool m_bWriteNormal; // 0x245 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_TransformInput) == 0x1D0, "m_TransformInput in C_OP_RemapTransformOrientationToRotations should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_vecRotation) == 0x238, "m_vecRotation in C_OP_RemapTransformOrientationToRotations should be at offset 0x238");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_bUseQuat) == 0x244, "m_bUseQuat in C_OP_RemapTransformOrientationToRotations should be at offset 0x244");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToRotations, m_bWriteNormal) == 0x245, "m_bWriteNormal in C_OP_RemapTransformOrientationToRotations should be at offset 0x245");
 		static_assert(sizeof(CS2::particles::C_OP_RemapTransformOrientationToRotations) == 0x248, "C_OP_RemapTransformOrientationToRotations size should be 0x248");
+
+#endif
 	}
 }

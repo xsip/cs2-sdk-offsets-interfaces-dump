@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bUseHysteresis; // 0xc3 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::LookAtOpFixedSettings_t, m_attachment) == 0x0, "m_attachment in LookAtOpFixedSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::LookAtOpFixedSettings_t, m_damping) == 0x80, "m_damping in LookAtOpFixedSettings_t should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::LookAtOpFixedSettings_t, m_bones) == 0x98, "m_bones in LookAtOpFixedSettings_t should be at offset 0x98");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::LookAtOpFixedSettings_t, m_bTargetIsPosition) == 0xC2, "m_bTargetIsPosition in LookAtOpFixedSettings_t should be at offset 0xC2");
 		static_assert(offsetof(CS2::animgraphlib::LookAtOpFixedSettings_t, m_bUseHysteresis) == 0xC3, "m_bUseHysteresis in LookAtOpFixedSettings_t should be at offset 0xC3");
 		static_assert(sizeof(CS2::animgraphlib::LookAtOpFixedSettings_t) == 0xD0, "LookAtOpFixedSettings_t size should be 0xD0");
+
+#endif
 	}
 }

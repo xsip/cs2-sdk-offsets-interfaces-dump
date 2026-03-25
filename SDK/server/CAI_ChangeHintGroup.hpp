@@ -28,10 +28,13 @@ namespace CS2 {
 			float32 m_flRadius; // 0x4c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_iSearchType) == 0x4A8, "m_iSearchType in CAI_ChangeHintGroup should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_strSearchName) == 0x4B0, "m_strSearchName in CAI_ChangeHintGroup should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_strNewHintGroup) == 0x4B8, "m_strNewHintGroup in CAI_ChangeHintGroup should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CAI_ChangeHintGroup, m_flRadius) == 0x4C0, "m_flRadius in CAI_ChangeHintGroup should be at offset 0x4C0");
 		static_assert(sizeof(CS2::server::CAI_ChangeHintGroup) == 0x4C8, "CAI_ChangeHintGroup size should be 0x4C8");
+
+#endif
 	}
 }

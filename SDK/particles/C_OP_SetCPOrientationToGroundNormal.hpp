@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bIncludeWater; // 0x278 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetCPOrientationToGroundNormal, m_flInterpRate) == 0x1D0, "m_flInterpRate in C_OP_SetCPOrientationToGroundNormal should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetCPOrientationToGroundNormal, m_flMaxTraceLength) == 0x1D4, "m_flMaxTraceLength in C_OP_SetCPOrientationToGroundNormal should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_SetCPOrientationToGroundNormal, m_flTolerance) == 0x1D8, "m_flTolerance in C_OP_SetCPOrientationToGroundNormal should be at offset 0x1D8");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetCPOrientationToGroundNormal, m_nOutputCP) == 0x268, "m_nOutputCP in C_OP_SetCPOrientationToGroundNormal should be at offset 0x268");
 		static_assert(offsetof(CS2::particles::C_OP_SetCPOrientationToGroundNormal, m_bIncludeWater) == 0x278, "m_bIncludeWater in C_OP_SetCPOrientationToGroundNormal should be at offset 0x278");
 		static_assert(sizeof(CS2::particles::C_OP_SetCPOrientationToGroundNormal) == 0x280, "C_OP_SetCPOrientationToGroundNormal size should be 0x280");
+
+#endif
 	}
 }

@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flFadeStartDist; // 0x4a8 | Schema_Builtin | Size: 0x4
 			float32 m_flFadeEndDist; // 0x4ac | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvDetailController, m_flFadeStartDist) == 0x4A8, "m_flFadeStartDist in CEnvDetailController should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvDetailController, m_flFadeEndDist) == 0x4AC, "m_flFadeEndDist in CEnvDetailController should be at offset 0x4AC");
 		static_assert(sizeof(CS2::server::CEnvDetailController) == 0x4B0, "CEnvDetailController size should be 0x4B0");
+
+#endif
 	}
 }

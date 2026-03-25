@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_modelName; // 0x118 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::AnimationSnapshot_t, m_nEntIndex) == 0x110, "m_nEntIndex in AnimationSnapshot_t should be at offset 0x110");
 		static_assert(offsetof(CS2::animationsystem::AnimationSnapshot_t, m_modelName) == 0x118, "m_modelName in AnimationSnapshot_t should be at offset 0x118");
 		static_assert(sizeof(CS2::animationsystem::AnimationSnapshot_t) == 0x120, "AnimationSnapshot_t size should be 0x120");
+
+#endif
 	}
 }

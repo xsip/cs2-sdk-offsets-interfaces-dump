@@ -35,6 +35,7 @@ namespace CS2 {
 			float32 m_flWorldTimeScale; // 0x200 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_INIT_CreationNoise should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_bAbsVal) == 0x1DC, "m_bAbsVal in C_INIT_CreationNoise should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_bAbsValInv) == 0x1DD, "m_bAbsValInv in C_INIT_CreationNoise should be at offset 0x1DD");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_vecOffsetLoc) == 0x1F4, "m_vecOffsetLoc in C_INIT_CreationNoise should be at offset 0x1F4");
 		static_assert(offsetof(CS2::particles::C_INIT_CreationNoise, m_flWorldTimeScale) == 0x200, "m_flWorldTimeScale in C_INIT_CreationNoise should be at offset 0x200");
 		static_assert(sizeof(CS2::particles::C_INIT_CreationNoise) == 0x208, "C_INIT_CreationNoise size should be 0x208");
+
+#endif
 	}
 }

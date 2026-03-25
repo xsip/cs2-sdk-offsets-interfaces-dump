@@ -36,6 +36,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_ParticleBoneName; // 0x78 | Schema_Atomic | Size: 0x18
 			// char m_ParticleBoneName[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::PhysSoftbodyDesc_t, m_ParticleBoneHash) == 0x0, "m_ParticleBoneHash in PhysSoftbodyDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::PhysSoftbodyDesc_t, m_Particles) == 0x18, "m_Particles in PhysSoftbodyDesc_t should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::PhysSoftbodyDesc_t, m_Springs) == 0x30, "m_Springs in PhysSoftbodyDesc_t should be at offset 0x30");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::PhysSoftbodyDesc_t, m_InitPose) == 0x60, "m_InitPose in PhysSoftbodyDesc_t should be at offset 0x60");
 		static_assert(offsetof(CS2::modellib::PhysSoftbodyDesc_t, m_ParticleBoneName) == 0x78, "m_ParticleBoneName in PhysSoftbodyDesc_t should be at offset 0x78");
 		static_assert(sizeof(CS2::modellib::PhysSoftbodyDesc_t) == 0x90, "PhysSoftbodyDesc_t size should be 0x90");
+
+#endif
 	}
 }

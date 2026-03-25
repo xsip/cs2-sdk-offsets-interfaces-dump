@@ -29,6 +29,7 @@ namespace CS2 {
 			uint64_t m_nCompileTimestamp; // 0x50 | Schema_Builtin | Size: 0x8
 			uint64_t m_nCompileFingerprint; // 0x58 | Schema_Builtin | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::WorldBuilderParams_t, m_flMinDrawVolumeSize) == 0x0, "m_flMinDrawVolumeSize in WorldBuilderParams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::WorldBuilderParams_t, m_bBuildBakedLighting) == 0x4, "m_bBuildBakedLighting in WorldBuilderParams_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::WorldBuilderParams_t, m_bAggregateInstanceStreams) == 0x5, "m_bAggregateInstanceStreams in WorldBuilderParams_t should be at offset 0x5");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::WorldBuilderParams_t, m_nCompileTimestamp) == 0x50, "m_nCompileTimestamp in WorldBuilderParams_t should be at offset 0x50");
 		static_assert(offsetof(CS2::worldrenderer::WorldBuilderParams_t, m_nCompileFingerprint) == 0x58, "m_nCompileFingerprint in WorldBuilderParams_t should be at offset 0x58");
 		static_assert(sizeof(CS2::worldrenderer::WorldBuilderParams_t) == 0x60, "WorldBuilderParams_t size should be 0x60");
+
+#endif
 	}
 }

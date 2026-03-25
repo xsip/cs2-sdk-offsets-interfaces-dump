@@ -38,6 +38,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionRendererFloatInput m_flTextureBlend; // 0x38 | Schema_DeclaredClass | Size: 0x170
 			particles::TextureControls_t m_TextureControls; // 0x1a8 | Schema_DeclaredClass | Size: 0xa30
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_bEnabled) == 0x0, "m_bEnabled in TextureGroup_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_bReplaceTextureWithGradient) == 0x1, "m_bReplaceTextureWithGradient in TextureGroup_t should be at offset 0x1");
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_hTexture) == 0x8, "m_hTexture in TextureGroup_t should be at offset 0x8");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_flTextureBlend) == 0x38, "m_flTextureBlend in TextureGroup_t should be at offset 0x38");
 		static_assert(offsetof(CS2::particles::TextureGroup_t, m_TextureControls) == 0x1A8, "m_TextureControls in TextureGroup_t should be at offset 0x1A8");
 		static_assert(sizeof(CS2::particles::TextureGroup_t) == 0xBD8, "TextureGroup_t size should be 0xBD8");
+
+#endif
 	}
 }

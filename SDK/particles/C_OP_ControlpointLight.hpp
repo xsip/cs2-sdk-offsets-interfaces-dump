@@ -57,6 +57,7 @@ namespace CS2 {
 			bool m_bClampLowerRange; // 0x6de | Schema_Builtin | Size: 0x1
 			bool m_bClampUpperRange; // 0x6df | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ControlpointLight, m_flScale) == 0x1D0, "m_flScale in C_OP_ControlpointLight should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ControlpointLight, m_nControlPoint1) == 0x660, "m_nControlPoint1 in C_OP_ControlpointLight should be at offset 0x660");
 		static_assert(offsetof(CS2::particles::C_OP_ControlpointLight, m_nControlPoint2) == 0x664, "m_nControlPoint2 in C_OP_ControlpointLight should be at offset 0x664");
@@ -91,5 +92,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ControlpointLight, m_bClampLowerRange) == 0x6DE, "m_bClampLowerRange in C_OP_ControlpointLight should be at offset 0x6DE");
 		static_assert(offsetof(CS2::particles::C_OP_ControlpointLight, m_bClampUpperRange) == 0x6DF, "m_bClampUpperRange in C_OP_ControlpointLight should be at offset 0x6DF");
 		static_assert(sizeof(CS2::particles::C_OP_ControlpointLight) == 0x6E0, "C_OP_ControlpointLight size should be 0x6E0");
+
+#endif
 	}
 }

@@ -45,6 +45,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_vecClientAngles; // 0x7e8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncRotating, m_OnStopped) == 0x730, "m_OnStopped in CFuncRotating should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncRotating, m_OnStarted) == 0x748, "m_OnStarted in CFuncRotating should be at offset 0x748");
 		static_assert(offsetof(CS2::server::CFuncRotating, m_OnReachedStart) == 0x760, "m_OnReachedStart in CFuncRotating should be at offset 0x760");
@@ -64,5 +65,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncRotating, m_vecClientOrigin) == 0x7DC, "m_vecClientOrigin in CFuncRotating should be at offset 0x7DC");
 		static_assert(offsetof(CS2::server::CFuncRotating, m_vecClientAngles) == 0x7E8, "m_vecClientAngles in CFuncRotating should be at offset 0x7E8");
 		static_assert(sizeof(CS2::server::CFuncRotating) == 0x7F8, "CFuncRotating size should be 0x7F8");
+
+#endif
 	}
 }

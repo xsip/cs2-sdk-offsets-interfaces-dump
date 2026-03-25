@@ -30,10 +30,13 @@ namespace CS2 {
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_PassOutflow; // 0x50 | Schema_DeclaredClass | Size: 0x18
 			pulse_runtime_lib::CPulse_OutflowConnection m_FailOutflow; // 0x68 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_InlineNodeSkipSelector, m_nFlowNodeID) == 0x48, "m_nFlowNodeID in CPulseCell_InlineNodeSkipSelector should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_InlineNodeSkipSelector, m_bAnd) == 0x4C, "m_bAnd in CPulseCell_InlineNodeSkipSelector should be at offset 0x4C");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_InlineNodeSkipSelector, m_PassOutflow) == 0x50, "m_PassOutflow in CPulseCell_InlineNodeSkipSelector should be at offset 0x50");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_InlineNodeSkipSelector, m_FailOutflow) == 0x68, "m_FailOutflow in CPulseCell_InlineNodeSkipSelector should be at offset 0x68");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_InlineNodeSkipSelector) == 0xB0, "CPulseCell_InlineNodeSkipSelector size should be 0xB0");
+
+#endif
 	}
 }

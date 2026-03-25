@@ -24,8 +24,11 @@ namespace CS2 {
 			entity2::GameTime_t m_flNext; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::WorldGroupId_t m_nWorldGroupId; // 0x4 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSimpleSimTimer, m_flNext) == 0x0, "m_flNext in CSimpleSimTimer should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CSimpleSimTimer, m_nWorldGroupId) == 0x4, "m_nWorldGroupId in CSimpleSimTimer should be at offset 0x4");
 		static_assert(sizeof(CS2::client::CSimpleSimTimer) == 0x8, "CSimpleSimTimer size should be 0x8");
+
+#endif
 	}
 }

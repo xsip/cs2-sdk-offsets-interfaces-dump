@@ -25,7 +25,10 @@ namespace CS2 {
 			char m_WeaponSequence[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x40); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSGameModeRules_ArmsRace, m_WeaponSequence) == 0x30, "m_WeaponSequence in CCSGameModeRules_ArmsRace should be at offset 0x30");
 		static_assert(sizeof(CS2::server::CCSGameModeRules_ArmsRace) == 0x88, "CCSGameModeRules_ArmsRace size should be 0x88");
+
+#endif
 	}
 }

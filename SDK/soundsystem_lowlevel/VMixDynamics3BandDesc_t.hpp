@@ -33,6 +33,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			soundsystem_lowlevel::VMixDynamicsBand_t m_bandDesc[3]; // 0x24 | Schema_FixedArray | Size: 0x6c
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t, m_fldbGainOutput) == 0x0, "m_fldbGainOutput in VMixDynamics3BandDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t, m_flRMSTimeMS) == 0x4, "m_flRMSTimeMS in VMixDynamics3BandDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t, m_fldbKneeWidth) == 0x8, "m_fldbKneeWidth in VMixDynamics3BandDesc_t should be at offset 0x8");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t, m_bPeakMode) == 0x20, "m_bPeakMode in VMixDynamics3BandDesc_t should be at offset 0x20");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t, m_bandDesc) == 0x24, "m_bandDesc in VMixDynamics3BandDesc_t should be at offset 0x24");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixDynamics3BandDesc_t) == 0x90, "VMixDynamics3BandDesc_t size should be 0x90");
+
+#endif
 	}
 }

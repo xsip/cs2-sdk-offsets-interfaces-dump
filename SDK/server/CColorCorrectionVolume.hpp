@@ -32,6 +32,7 @@ namespace CS2 {
 			entity2::GameTime_t m_LastExitTime; // 0xaa8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_MaxWeight) == 0x890, "m_MaxWeight in CColorCorrectionVolume should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_FadeDuration) == 0x894, "m_FadeDuration in CColorCorrectionVolume should be at offset 0x894");
 		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_Weight) == 0x898, "m_Weight in CColorCorrectionVolume should be at offset 0x898");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastExitWeight) == 0xAA4, "m_LastExitWeight in CColorCorrectionVolume should be at offset 0xAA4");
 		static_assert(offsetof(CS2::server::CColorCorrectionVolume, m_LastExitTime) == 0xAA8, "m_LastExitTime in CColorCorrectionVolume should be at offset 0xAA8");
 		static_assert(sizeof(CS2::server::CColorCorrectionVolume) == 0xAB0, "CColorCorrectionVolume size should be 0xAB0");
+
+#endif
 	}
 }

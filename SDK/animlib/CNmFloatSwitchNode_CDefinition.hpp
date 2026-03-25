@@ -28,11 +28,14 @@ namespace CS2 {
 			float32 m_flFalseValue; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flTrueValue; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatSwitchNode_CDefinition, m_nSwitchValueNodeIdx) == 0x10, "m_nSwitchValueNodeIdx in CNmFloatSwitchNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatSwitchNode_CDefinition, m_nTrueValueNodeIdx) == 0x12, "m_nTrueValueNodeIdx in CNmFloatSwitchNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmFloatSwitchNode_CDefinition, m_nFalseValueNodeIdx) == 0x14, "m_nFalseValueNodeIdx in CNmFloatSwitchNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmFloatSwitchNode_CDefinition, m_flFalseValue) == 0x18, "m_flFalseValue in CNmFloatSwitchNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmFloatSwitchNode_CDefinition, m_flTrueValue) == 0x1C, "m_flTrueValue in CNmFloatSwitchNode::CDefinition should be at offset 0x1C");
 		static_assert(sizeof(CS2::animlib::CNmFloatSwitchNode_CDefinition) == 0x20, "CNmFloatSwitchNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

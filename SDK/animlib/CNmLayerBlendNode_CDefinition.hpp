@@ -28,9 +28,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVectorFixedGrowable<animlib::CNmLayerBlendNode_LayerDefinition_t> m_layerDefinition; // 0x18 | Schema_Atomic | Size: 0x30
 			char m_layerDefinition[0x30]; // 0x18 | Schema_Atomic | Size: 0x30
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_CDefinition, m_nBaseNodeIdx) == 0x10, "m_nBaseNodeIdx in CNmLayerBlendNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_CDefinition, m_bOnlySampleBaseRootMotion) == 0x12, "m_bOnlySampleBaseRootMotion in CNmLayerBlendNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_CDefinition, m_layerDefinition) == 0x18, "m_layerDefinition in CNmLayerBlendNode::CDefinition should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmLayerBlendNode_CDefinition) == 0x48, "CNmLayerBlendNode::CDefinition size should be 0x48");
+
+#endif
 	}
 }

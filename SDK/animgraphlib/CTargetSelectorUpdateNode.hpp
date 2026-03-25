@@ -41,6 +41,7 @@ namespace CS2 {
 			float32 m_flPhaseMatchingMaxRootMotionSkip; // 0x90 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CTargetSelectorUpdateNode, m_eAngleMode) == 0x60, "m_eAngleMode in CTargetSelectorUpdateNode should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CTargetSelectorUpdateNode, m_children) == 0x68, "m_children in CTargetSelectorUpdateNode should be at offset 0x68");
 		static_assert(offsetof(CS2::animgraphlib::CTargetSelectorUpdateNode, m_hTargetPosition) == 0x84, "m_hTargetPosition in CTargetSelectorUpdateNode should be at offset 0x84");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CTargetSelectorUpdateNode, m_bEnablePhaseMatching) == 0x8E, "m_bEnablePhaseMatching in CTargetSelectorUpdateNode should be at offset 0x8E");
 		static_assert(offsetof(CS2::animgraphlib::CTargetSelectorUpdateNode, m_flPhaseMatchingMaxRootMotionSkip) == 0x90, "m_flPhaseMatchingMaxRootMotionSkip in CTargetSelectorUpdateNode should be at offset 0x90");
 		static_assert(sizeof(CS2::animgraphlib::CTargetSelectorUpdateNode) == 0xA0, "CTargetSelectorUpdateNode size should be 0xA0");
+
+#endif
 	}
 }

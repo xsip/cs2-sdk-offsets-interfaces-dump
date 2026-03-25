@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nBeverageType; // 0x4ac | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvBeverage, m_CanInDispenser) == 0x4A8, "m_CanInDispenser in CEnvBeverage should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvBeverage, m_nBeverageType) == 0x4AC, "m_nBeverageType in CEnvBeverage should be at offset 0x4AC");
 		static_assert(sizeof(CS2::server::CEnvBeverage) == 0x4B0, "CEnvBeverage size should be 0x4B0");
+
+#endif
 	}
 }

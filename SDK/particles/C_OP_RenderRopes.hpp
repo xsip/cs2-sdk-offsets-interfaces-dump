@@ -65,6 +65,7 @@ namespace CS2 {
 			bool m_bGenerateNormals; // 0x32a5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bEnableFadingAndClamping) == 0x2DE8, "m_bEnableFadingAndClamping in C_OP_RenderRopes should be at offset 0x2DE8");
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flMinSize) == 0x2DEC, "m_flMinSize in C_OP_RenderRopes should be at offset 0x2DEC");
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_flMaxSize) == 0x2DF0, "m_flMaxSize in C_OP_RenderRopes should be at offset 0x2DF0");
@@ -98,5 +99,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bDrawAsOpaque) == 0x32A4, "m_bDrawAsOpaque in C_OP_RenderRopes should be at offset 0x32A4");
 		static_assert(offsetof(CS2::particles::C_OP_RenderRopes, m_bGenerateNormals) == 0x32A5, "m_bGenerateNormals in C_OP_RenderRopes should be at offset 0x32A5");
 		static_assert(sizeof(CS2::particles::C_OP_RenderRopes) == 0x32A8, "C_OP_RenderRopes size should be 0x32A8");
+
+#endif
 	}
 }

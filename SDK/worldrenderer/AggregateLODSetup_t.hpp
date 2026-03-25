@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_fSwitchDistances; // 0x10 | Schema_Atomic | Size: 0x18
 			// char m_fSwitchDistances[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::AggregateLODSetup_t, m_vLODOrigin) == 0x0, "m_vLODOrigin in AggregateLODSetup_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::AggregateLODSetup_t, m_fMaxObjectScale) == 0xC, "m_fMaxObjectScale in AggregateLODSetup_t should be at offset 0xC");
 		static_assert(offsetof(CS2::worldrenderer::AggregateLODSetup_t, m_fSwitchDistances) == 0x10, "m_fSwitchDistances in AggregateLODSetup_t should be at offset 0x10");
 		static_assert(sizeof(CS2::worldrenderer::AggregateLODSetup_t) == 0x28, "AggregateLODSetup_t size should be 0x28");
+
+#endif
 	}
 }

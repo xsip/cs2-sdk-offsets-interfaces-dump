@@ -43,6 +43,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0xa90 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldOutputPrev; // 0xa94 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_TransformInput) == 0x1D0, "m_TransformInput in C_OP_PositionLock should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_min) == 0x238, "m_flStartTime_min in C_OP_PositionLock should be at offset 0x238");
 		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_flStartTime_max) == 0x23C, "m_flStartTime_max in C_OP_PositionLock should be at offset 0x23C");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_nFieldOutput) == 0xA90, "m_nFieldOutput in C_OP_PositionLock should be at offset 0xA90");
 		static_assert(offsetof(CS2::particles::C_OP_PositionLock, m_nFieldOutputPrev) == 0xA94, "m_nFieldOutputPrev in C_OP_PositionLock should be at offset 0xA94");
 		static_assert(sizeof(CS2::particles::C_OP_PositionLock) == 0xA98, "C_OP_PositionLock size should be 0xA98");
+
+#endif
 	}
 }

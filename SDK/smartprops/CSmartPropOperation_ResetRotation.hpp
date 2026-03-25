@@ -26,10 +26,13 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bResetYaw; // 0xd0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bResetRoll; // 0x110 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ResetRotation, m_bIgnoreObjectRotation) == 0x50, "m_bIgnoreObjectRotation in CSmartPropOperation_ResetRotation should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ResetRotation, m_bResetPitch) == 0x90, "m_bResetPitch in CSmartPropOperation_ResetRotation should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ResetRotation, m_bResetYaw) == 0xD0, "m_bResetYaw in CSmartPropOperation_ResetRotation should be at offset 0xD0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ResetRotation, m_bResetRoll) == 0x110, "m_bResetRoll in CSmartPropOperation_ResetRotation should be at offset 0x110");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_ResetRotation) == 0x150, "CSmartPropOperation_ResetRotation size should be 0x150");
+
+#endif
 	}
 }

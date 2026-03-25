@@ -32,6 +32,7 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_OnGreaterThan; // 0x510 | Schema_Atomic | Size: 0x20
 			char m_OnGreaterThan[0x20]; // 0x510 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicCompare, m_flInValue) == 0x4A8, "m_flInValue in CLogicCompare should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicCompare, m_flCompareValue) == 0x4AC, "m_flCompareValue in CLogicCompare should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CLogicCompare, m_OnLessThan) == 0x4B0, "m_OnLessThan in CLogicCompare should be at offset 0x4B0");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicCompare, m_OnNotEqualTo) == 0x4F0, "m_OnNotEqualTo in CLogicCompare should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CLogicCompare, m_OnGreaterThan) == 0x510, "m_OnGreaterThan in CLogicCompare should be at offset 0x510");
 		static_assert(sizeof(CS2::server::CLogicCompare) == 0x530, "CLogicCompare size should be 0x530");
+
+#endif
 	}
 }

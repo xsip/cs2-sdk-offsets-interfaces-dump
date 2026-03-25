@@ -27,11 +27,14 @@ namespace CS2 {
 			float32 m_minLength; // 0x530 | Schema_Builtin | Size: 0x4
 			float32 m_totalLength; // 0x534 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysLength, m_offset) == 0x508, "m_offset in CPhysLength should be at offset 0x508");
 		static_assert(offsetof(CS2::server::CPhysLength, m_vecAttach) == 0x520, "m_vecAttach in CPhysLength should be at offset 0x520");
 		static_assert(offsetof(CS2::server::CPhysLength, m_addLength) == 0x52C, "m_addLength in CPhysLength should be at offset 0x52C");
 		static_assert(offsetof(CS2::server::CPhysLength, m_minLength) == 0x530, "m_minLength in CPhysLength should be at offset 0x530");
 		static_assert(offsetof(CS2::server::CPhysLength, m_totalLength) == 0x534, "m_totalLength in CPhysLength should be at offset 0x534");
 		static_assert(sizeof(CS2::server::CPhysLength) == 0x538, "CPhysLength size should be 0x538");
+
+#endif
 	}
 }

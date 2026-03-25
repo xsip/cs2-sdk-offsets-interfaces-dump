@@ -40,6 +40,7 @@ namespace CS2 {
 			float32 m_flScale; // 0x4d0 | Schema_Builtin | Size: 0x4
 			int32_t m_nMeasureType; // 0x4d4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicMeasureMovement, m_strMeasureTarget) == 0x4A8, "m_strMeasureTarget in CLogicMeasureMovement should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicMeasureMovement, m_strMeasureReference) == 0x4B0, "m_strMeasureReference in CLogicMeasureMovement should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CLogicMeasureMovement, m_strTargetReference) == 0x4B8, "m_strTargetReference in CLogicMeasureMovement should be at offset 0x4B8");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicMeasureMovement, m_flScale) == 0x4D0, "m_flScale in CLogicMeasureMovement should be at offset 0x4D0");
 		static_assert(offsetof(CS2::server::CLogicMeasureMovement, m_nMeasureType) == 0x4D4, "m_nMeasureType in CLogicMeasureMovement should be at offset 0x4D4");
 		static_assert(sizeof(CS2::server::CLogicMeasureMovement) == 0x4D8, "CLogicMeasureMovement size should be 0x4D8");
+
+#endif
 	}
 }

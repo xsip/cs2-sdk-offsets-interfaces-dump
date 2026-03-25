@@ -34,6 +34,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			particles::EventTypeSelection_t m_nEventType; // 0x100c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_vecPos) == 0x220, "m_vecPos in C_OP_WaterImpulseRenderer should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flRadius) == 0x8D8, "m_flRadius in C_OP_WaterImpulseRenderer should be at offset 0x8D8");
 		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_flMagnitude) == 0xA48, "m_flMagnitude in C_OP_WaterImpulseRenderer should be at offset 0xA48");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_bIsRadialWind) == 0x1008, "m_bIsRadialWind in C_OP_WaterImpulseRenderer should be at offset 0x1008");
 		static_assert(offsetof(CS2::particles::C_OP_WaterImpulseRenderer, m_nEventType) == 0x100C, "m_nEventType in C_OP_WaterImpulseRenderer should be at offset 0x100C");
 		static_assert(sizeof(CS2::particles::C_OP_WaterImpulseRenderer) == 0x1010, "C_OP_WaterImpulseRenderer size should be 0x1010");
+
+#endif
 	}
 }

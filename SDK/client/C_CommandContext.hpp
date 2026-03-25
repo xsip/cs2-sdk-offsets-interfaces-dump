@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t command_number; // 0xa0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CommandContext, needsprocessing) == 0x0, "needsprocessing in C_CommandContext should be at offset 0x0");
 		static_assert(offsetof(CS2::client::C_CommandContext, command_number) == 0xA0, "command_number in C_CommandContext should be at offset 0xA0");
 		static_assert(sizeof(CS2::client::C_CommandContext) == 0xA8, "C_CommandContext size should be 0xA8");
+
+#endif
 	}
 }

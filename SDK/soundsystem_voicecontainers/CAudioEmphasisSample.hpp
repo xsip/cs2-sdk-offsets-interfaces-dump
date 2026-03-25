@@ -23,8 +23,11 @@ namespace CS2 {
 			float32 m_flTime; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flValue; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioEmphasisSample, m_flTime) == 0x0, "m_flTime in CAudioEmphasisSample should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioEmphasisSample, m_flValue) == 0x4, "m_flValue in CAudioEmphasisSample should be at offset 0x4");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CAudioEmphasisSample) == 0x8, "CAudioEmphasisSample size should be 0x8");
+
+#endif
 	}
 }

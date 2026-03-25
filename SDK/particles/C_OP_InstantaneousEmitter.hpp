@@ -32,6 +32,7 @@ namespace CS2 {
 			int32_t m_nSnapshotControlPoint; // 0x634 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlString m_strSnapshotSubset; // 0x638 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_InstantaneousEmitter, m_nParticlesToEmit) == 0x1D8, "m_nParticlesToEmit in C_OP_InstantaneousEmitter should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_InstantaneousEmitter, m_flStartTime) == 0x348, "m_flStartTime in C_OP_InstantaneousEmitter should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_InstantaneousEmitter, m_flInitFromKilledParentParticles) == 0x4B8, "m_flInitFromKilledParentParticles in C_OP_InstantaneousEmitter should be at offset 0x4B8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_InstantaneousEmitter, m_nSnapshotControlPoint) == 0x634, "m_nSnapshotControlPoint in C_OP_InstantaneousEmitter should be at offset 0x634");
 		static_assert(offsetof(CS2::particles::C_OP_InstantaneousEmitter, m_strSnapshotSubset) == 0x638, "m_strSnapshotSubset in C_OP_InstantaneousEmitter should be at offset 0x638");
 		static_assert(sizeof(CS2::particles::C_OP_InstantaneousEmitter) == 0x640, "C_OP_InstantaneousEmitter size should be 0x640");
+
+#endif
 	}
 }

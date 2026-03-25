@@ -32,6 +32,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			particleslib::CPerParticleFloatInput m_flScale; // 0x1f8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_RotateVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_vecRotAxisMin) == 0x1D4, "m_vecRotAxisMin in C_OP_RotateVector should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_vecRotAxisMax) == 0x1E0, "m_vecRotAxisMax in C_OP_RotateVector should be at offset 0x1E0");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_bNormalize) == 0x1F4, "m_bNormalize in C_OP_RotateVector should be at offset 0x1F4");
 		static_assert(offsetof(CS2::particles::C_OP_RotateVector, m_flScale) == 0x1F8, "m_flScale in C_OP_RotateVector should be at offset 0x1F8");
 		static_assert(sizeof(CS2::particles::C_OP_RotateVector) == 0x368, "C_OP_RotateVector size should be 0x368");
+
+#endif
 	}
 }

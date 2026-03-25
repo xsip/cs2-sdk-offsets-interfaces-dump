@@ -27,10 +27,13 @@ namespace CS2 {
 			vphysics2::constraint_axislimit_t hingeAxis; // 0x18 | Schema_DeclaredClass | Size: 0x10
 			vphysics2::constraint_breakableparams_t constraint; // 0x28 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::vphysics2::constraint_hingeparams_t, worldPosition) == 0x0, "worldPosition in constraint_hingeparams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::vphysics2::constraint_hingeparams_t, worldAxisDirection) == 0xC, "worldAxisDirection in constraint_hingeparams_t should be at offset 0xC");
 		static_assert(offsetof(CS2::vphysics2::constraint_hingeparams_t, hingeAxis) == 0x18, "hingeAxis in constraint_hingeparams_t should be at offset 0x18");
 		static_assert(offsetof(CS2::vphysics2::constraint_hingeparams_t, constraint) == 0x28, "constraint in constraint_hingeparams_t should be at offset 0x28");
 		static_assert(sizeof(CS2::vphysics2::constraint_hingeparams_t) == 0x40, "constraint_hingeparams_t size should be 0x40");
+
+#endif
 	}
 }

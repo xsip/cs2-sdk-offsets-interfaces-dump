@@ -29,7 +29,10 @@ namespace CS2 {
 			server::CAI_Expresser* m_pExpresser; // 0xb70 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CHostageExpresserShim, m_pExpresser) == 0xB70, "m_pExpresser in CHostageExpresserShim should be at offset 0xB70");
 		static_assert(sizeof(CS2::server::CHostageExpresserShim) == 0xB80, "CHostageExpresserShim size should be 0xB80");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bIsValid; // 0x8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::host::CAnimScriptBase, m_bIsValid) == 0x8, "m_bIsValid in CAnimScriptBase should be at offset 0x8");
 		static_assert(sizeof(CS2::host::CAnimScriptBase) == 0x10, "CAnimScriptBase size should be 0x10");
+
+#endif
 	}
 }

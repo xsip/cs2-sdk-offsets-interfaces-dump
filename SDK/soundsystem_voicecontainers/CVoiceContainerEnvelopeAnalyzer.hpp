@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_flThreshold; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnvelopeAnalyzer, m_mode) == 0x50, "m_mode in CVoiceContainerEnvelopeAnalyzer should be at offset 0x50");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnvelopeAnalyzer, m_fAnalysisWindowMs) == 0x54, "m_fAnalysisWindowMs in CVoiceContainerEnvelopeAnalyzer should be at offset 0x54");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnvelopeAnalyzer, m_flThreshold) == 0x58, "m_flThreshold in CVoiceContainerEnvelopeAnalyzer should be at offset 0x58");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerEnvelopeAnalyzer) == 0x60, "CVoiceContainerEnvelopeAnalyzer size should be 0x60");
+
+#endif
 	}
 }

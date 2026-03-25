@@ -22,6 +22,9 @@ namespace CS2 {
 		class CNmSpeedScaleNode_CDefinition : public CS2::animlib::CNmSpeedScaleBaseNode_CDefinition {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animlib::CNmSpeedScaleNode_CDefinition) == 0x20, "CNmSpeedScaleNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

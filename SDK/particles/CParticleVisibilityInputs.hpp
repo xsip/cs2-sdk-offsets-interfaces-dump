@@ -42,6 +42,7 @@ namespace CS2 {
 			bool m_bRightEye; // 0x44 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CParticleVisibilityInputs, m_flCameraBias) == 0x0, "m_flCameraBias in CParticleVisibilityInputs should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::CParticleVisibilityInputs, m_nCPin) == 0x4, "m_nCPin in CParticleVisibilityInputs should be at offset 0x4");
 		static_assert(offsetof(CS2::particles::CParticleVisibilityInputs, m_flProxyRadius) == 0x8, "m_flProxyRadius in CParticleVisibilityInputs should be at offset 0x8");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CParticleVisibilityInputs, m_flRadiusScaleFOVBase) == 0x40, "m_flRadiusScaleFOVBase in CParticleVisibilityInputs should be at offset 0x40");
 		static_assert(offsetof(CS2::particles::CParticleVisibilityInputs, m_bRightEye) == 0x44, "m_bRightEye in CParticleVisibilityInputs should be at offset 0x44");
 		static_assert(sizeof(CS2::particles::CParticleVisibilityInputs) == 0x48, "CParticleVisibilityInputs size should be 0x48");
+
+#endif
 	}
 }

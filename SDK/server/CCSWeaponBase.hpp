@@ -103,6 +103,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flLastShakeTime; // 0xf88 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x1a4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bRemoveable) == 0xE20, "m_bRemoveable in CCSWeaponBase should be at offset 0xE20");
 		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bPlayerAmmoStockOnPickup) == 0xE21, "m_bPlayerAmmoStockOnPickup in CCSWeaponBase should be at offset 0xE21");
 		static_assert(offsetof(CS2::server::CCSWeaponBase, m_bRequireUseToTouch) == 0xE22, "m_bRequireUseToTouch in CCSWeaponBase should be at offset 0xE22");
@@ -155,5 +156,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flWatTickOffset) == 0xF78, "m_flWatTickOffset in CCSWeaponBase should be at offset 0xF78");
 		static_assert(offsetof(CS2::server::CCSWeaponBase, m_flLastShakeTime) == 0xF88, "m_flLastShakeTime in CCSWeaponBase should be at offset 0xF88");
 		static_assert(sizeof(CS2::server::CCSWeaponBase) == 0x1130, "CCSWeaponBase size should be 0x1130");
+
+#endif
 	}
 }

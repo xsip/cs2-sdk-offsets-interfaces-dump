@@ -39,6 +39,7 @@ namespace CS2 {
 			float32 m_returnSpeed; // 0x960 | Schema_Builtin | Size: 0x4
 			float32 m_flStartPosition; // 0x964 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_Position) == 0x8B0, "m_Position in CMomentaryRotButton should be at offset 0x8B0");
 		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnUnpressed) == 0x8D0, "m_OnUnpressed in CMomentaryRotButton should be at offset 0x8D0");
 		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_OnFullyOpen) == 0x8E8, "m_OnFullyOpen in CMomentaryRotButton should be at offset 0x8E8");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_returnSpeed) == 0x960, "m_returnSpeed in CMomentaryRotButton should be at offset 0x960");
 		static_assert(offsetof(CS2::server::CMomentaryRotButton, m_flStartPosition) == 0x964, "m_flStartPosition in CMomentaryRotButton should be at offset 0x964");
 		static_assert(sizeof(CS2::server::CMomentaryRotButton) == 0x968, "CMomentaryRotButton size should be 0x968");
+
+#endif
 	}
 }

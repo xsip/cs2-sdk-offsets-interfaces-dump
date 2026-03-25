@@ -43,6 +43,7 @@ namespace CS2 {
 			float32 m_flFadeDuration[1]; // 0x844 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_ColorCorrection, m_vecOrigin) == 0x608, "m_vecOrigin in C_ColorCorrection should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_ColorCorrection, m_MinFalloff) == 0x614, "m_MinFalloff in C_ColorCorrection should be at offset 0x614");
 		static_assert(offsetof(CS2::client::C_ColorCorrection, m_MaxFalloff) == 0x618, "m_MaxFalloff in C_ColorCorrection should be at offset 0x618");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_ColorCorrection, m_flFadeStartTime) == 0x840, "m_flFadeStartTime in C_ColorCorrection should be at offset 0x840");
 		static_assert(offsetof(CS2::client::C_ColorCorrection, m_flFadeDuration) == 0x844, "m_flFadeDuration in C_ColorCorrection should be at offset 0x844");
 		static_assert(sizeof(CS2::client::C_ColorCorrection) == 0x850, "C_ColorCorrection size should be 0x850");
+
+#endif
 	}
 }

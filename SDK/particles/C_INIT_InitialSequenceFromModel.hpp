@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flOutputMax; // 0x1f0 | Schema_Builtin | Size: 0x4
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x1f4 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitialSequenceFromModel, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_InitialSequenceFromModel should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialSequenceFromModel, m_nFieldOutput) == 0x1DC, "m_nFieldOutput in C_INIT_InitialSequenceFromModel should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialSequenceFromModel, m_nFieldOutputAnim) == 0x1E0, "m_nFieldOutputAnim in C_INIT_InitialSequenceFromModel should be at offset 0x1E0");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_InitialSequenceFromModel, m_flOutputMax) == 0x1F0, "m_flOutputMax in C_INIT_InitialSequenceFromModel should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialSequenceFromModel, m_nSetMethod) == 0x1F4, "m_nSetMethod in C_INIT_InitialSequenceFromModel should be at offset 0x1F4");
 		static_assert(sizeof(CS2::particles::C_INIT_InitialSequenceFromModel) == 0x1F8, "C_INIT_InitialSequenceFromModel size should be 0x1F8");
+
+#endif
 	}
 }

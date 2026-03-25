@@ -28,10 +28,13 @@ namespace CS2 {
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x68 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xb0 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPulseCell_PlaySequence, m_SequenceName) == 0x48, "m_SequenceName in CPulseCell_PlaySequence should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CPulseCell_PlaySequence, m_PulseAnimEvents) == 0x50, "m_PulseAnimEvents in CPulseCell_PlaySequence should be at offset 0x50");
 		static_assert(offsetof(CS2::client::CPulseCell_PlaySequence, m_OnFinished) == 0x68, "m_OnFinished in CPulseCell_PlaySequence should be at offset 0x68");
 		static_assert(offsetof(CS2::client::CPulseCell_PlaySequence, m_OnCanceled) == 0xB0, "m_OnCanceled in CPulseCell_PlaySequence should be at offset 0xB0");
 		static_assert(sizeof(CS2::client::CPulseCell_PlaySequence) == 0xF8, "CPulseCell_PlaySequence size should be 0xF8");
+
+#endif
 	}
 }

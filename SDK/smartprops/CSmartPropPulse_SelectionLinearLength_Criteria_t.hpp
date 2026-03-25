@@ -26,10 +26,13 @@ namespace CS2 {
 			float32 m_flMinLength; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxLength; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SelectionLinearLength_Criteria_t, m_flLength) == 0x0, "m_flLength in CSmartPropPulse_SelectionLinearLength::Criteria_t should be at offset 0x0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SelectionLinearLength_Criteria_t, m_bAllowScale) == 0x4, "m_bAllowScale in CSmartPropPulse_SelectionLinearLength::Criteria_t should be at offset 0x4");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SelectionLinearLength_Criteria_t, m_flMinLength) == 0x8, "m_flMinLength in CSmartPropPulse_SelectionLinearLength::Criteria_t should be at offset 0x8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SelectionLinearLength_Criteria_t, m_flMaxLength) == 0xC, "m_flMaxLength in CSmartPropPulse_SelectionLinearLength::Criteria_t should be at offset 0xC");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_SelectionLinearLength_Criteria_t) == 0x10, "CSmartPropPulse_SelectionLinearLength::Criteria_t size should be 0x10");
+
+#endif
 	}
 }

@@ -28,11 +28,14 @@ namespace CS2 {
 			char m_HitboxSetName[128]; // 0x1d7 | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ModelCull, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_ModelCull should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ModelCull, m_bBoundBox) == 0x1D4, "m_bBoundBox in C_OP_ModelCull should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_ModelCull, m_bCullOutside) == 0x1D5, "m_bCullOutside in C_OP_ModelCull should be at offset 0x1D5");
 		static_assert(offsetof(CS2::particles::C_OP_ModelCull, m_bUseBones) == 0x1D6, "m_bUseBones in C_OP_ModelCull should be at offset 0x1D6");
 		static_assert(offsetof(CS2::particles::C_OP_ModelCull, m_HitboxSetName) == 0x1D7, "m_HitboxSetName in C_OP_ModelCull should be at offset 0x1D7");
 		static_assert(sizeof(CS2::particles::C_OP_ModelCull) == 0x258, "C_OP_ModelCull size should be 0x258");
+
+#endif
 	}
 }

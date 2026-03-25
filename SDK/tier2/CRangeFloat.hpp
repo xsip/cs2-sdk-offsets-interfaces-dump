@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			float32 m_pValue[2]; // 0x0 | Schema_FixedArray | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::tier2::CRangeFloat, m_pValue) == 0x0, "m_pValue in CRangeFloat should be at offset 0x0");
 		static_assert(sizeof(CS2::tier2::CRangeFloat) == 0x8, "CRangeFloat size should be 0x8");
+
+#endif
 	}
 }

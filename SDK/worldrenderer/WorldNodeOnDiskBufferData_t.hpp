@@ -28,10 +28,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint8 > m_pData; // 0x20 | Schema_Atomic | Size: 0x18
 			// char m_pData[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::WorldNodeOnDiskBufferData_t, m_nElementCount) == 0x0, "m_nElementCount in WorldNodeOnDiskBufferData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::WorldNodeOnDiskBufferData_t, m_nElementSizeInBytes) == 0x4, "m_nElementSizeInBytes in WorldNodeOnDiskBufferData_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::WorldNodeOnDiskBufferData_t, m_inputLayoutFields) == 0x8, "m_inputLayoutFields in WorldNodeOnDiskBufferData_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::WorldNodeOnDiskBufferData_t, m_pData) == 0x20, "m_pData in WorldNodeOnDiskBufferData_t should be at offset 0x20");
 		static_assert(sizeof(CS2::worldrenderer::WorldNodeOnDiskBufferData_t) == 0x38, "WorldNodeOnDiskBufferData_t size should be 0x38");
+
+#endif
 	}
 }

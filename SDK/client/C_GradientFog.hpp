@@ -41,6 +41,7 @@ namespace CS2 {
 			bool m_bGradientFogNeedsTextures; // 0x642 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5d); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_GradientFog, m_hGradientFogTexture) == 0x608, "m_hGradientFogTexture in C_GradientFog should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_GradientFog, m_flFogStartDistance) == 0x610, "m_flFogStartDistance in C_GradientFog should be at offset 0x610");
 		static_assert(offsetof(CS2::client::C_GradientFog, m_flFogEndDistance) == 0x614, "m_flFogEndDistance in C_GradientFog should be at offset 0x614");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_GradientFog, m_bIsEnabled) == 0x641, "m_bIsEnabled in C_GradientFog should be at offset 0x641");
 		static_assert(offsetof(CS2::client::C_GradientFog, m_bGradientFogNeedsTextures) == 0x642, "m_bGradientFogNeedsTextures in C_GradientFog should be at offset 0x642");
 		static_assert(sizeof(CS2::client::C_GradientFog) == 0x6A0, "C_GradientFog size should be 0x6A0");
+
+#endif
 	}
 }

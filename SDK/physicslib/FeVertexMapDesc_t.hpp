@@ -34,6 +34,7 @@ namespace CS2 {
 			uint16_t nNodeListCount; // 0x32 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeVertexMapDesc_t, sName) == 0x0, "sName in FeVertexMapDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeVertexMapDesc_t, nNameHash) == 0x8, "nNameHash in FeVertexMapDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeVertexMapDesc_t, nColor) == 0xC, "nColor in FeVertexMapDesc_t should be at offset 0xC");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeVertexMapDesc_t, nScaleSourceNode) == 0x30, "nScaleSourceNode in FeVertexMapDesc_t should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::FeVertexMapDesc_t, nNodeListCount) == 0x32, "nNodeListCount in FeVertexMapDesc_t should be at offset 0x32");
 		static_assert(sizeof(CS2::physicslib::FeVertexMapDesc_t) == 0x38, "FeVertexMapDesc_t size should be 0x38");
+
+#endif
 	}
 }

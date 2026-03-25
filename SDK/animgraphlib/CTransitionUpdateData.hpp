@@ -24,8 +24,11 @@ namespace CS2 {
 			uint8_t m_destStateIndex; // 0x1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CTransitionUpdateData, m_srcStateIndex) == 0x0, "m_srcStateIndex in CTransitionUpdateData should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CTransitionUpdateData, m_destStateIndex) == 0x1, "m_destStateIndex in CTransitionUpdateData should be at offset 0x1");
 		static_assert(sizeof(CS2::animgraphlib::CTransitionUpdateData) == 0x3, "CTransitionUpdateData size should be 0x3");
+
+#endif
 	}
 }

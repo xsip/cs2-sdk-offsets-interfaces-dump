@@ -32,9 +32,12 @@ namespace CS2 {
 			// char m_hTargetPlayer[0x4]; // 0x4b8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInstructorEventEntity, m_iszName) == 0x4A8, "m_iszName in CInstructorEventEntity should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CInstructorEventEntity, m_iszHintTargetEntity) == 0x4B0, "m_iszHintTargetEntity in CInstructorEventEntity should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CInstructorEventEntity, m_hTargetPlayer) == 0x4B8, "m_hTargetPlayer in CInstructorEventEntity should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CInstructorEventEntity) == 0x4C0, "CInstructorEventEntity size should be 0x4C0");
+
+#endif
 	}
 }

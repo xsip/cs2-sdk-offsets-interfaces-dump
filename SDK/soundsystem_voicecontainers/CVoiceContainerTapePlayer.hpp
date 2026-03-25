@@ -29,10 +29,13 @@ namespace CS2 {
 			float32 m_flTapeSpeedReleaseTime; // 0xcc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x28); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerTapePlayer, m_bShouldWraparound) == 0xB8, "m_bShouldWraparound in CVoiceContainerTapePlayer should be at offset 0xB8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerTapePlayer, m_sourceAudio) == 0xC0, "m_sourceAudio in CVoiceContainerTapePlayer should be at offset 0xC0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerTapePlayer, m_flTapeSpeedAttackTime) == 0xC8, "m_flTapeSpeedAttackTime in CVoiceContainerTapePlayer should be at offset 0xC8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerTapePlayer, m_flTapeSpeedReleaseTime) == 0xCC, "m_flTapeSpeedReleaseTime in CVoiceContainerTapePlayer should be at offset 0xCC");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerTapePlayer) == 0xF8, "CVoiceContainerTapePlayer size should be 0xF8");
+
+#endif
 	}
 }

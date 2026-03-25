@@ -25,8 +25,11 @@ namespace CS2 {
 			entity2::GameTime_t m_timestamp; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::WorldGroupId_t m_nWorldGroupId; // 0xc | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::IntervalTimer, m_timestamp) == 0x8, "m_timestamp in IntervalTimer should be at offset 0x8");
 		static_assert(offsetof(CS2::server::IntervalTimer, m_nWorldGroupId) == 0xC, "m_nWorldGroupId in IntervalTimer should be at offset 0xC");
 		static_assert(sizeof(CS2::server::IntervalTimer) == 0x10, "IntervalTimer size should be 0x10");
+
+#endif
 	}
 }

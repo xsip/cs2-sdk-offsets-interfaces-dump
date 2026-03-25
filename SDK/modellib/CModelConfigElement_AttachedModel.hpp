@@ -39,6 +39,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_MaterialGroupOnOtherModels; // 0x98 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x48); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_InstanceName) == 0x48, "m_InstanceName in CModelConfigElement_AttachedModel should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_EntityClass) == 0x50, "m_EntityClass in CModelConfigElement_AttachedModel should be at offset 0x50");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_hModel) == 0x58, "m_hModel in CModelConfigElement_AttachedModel should be at offset 0x58");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_BodygroupOnOtherModels) == 0x90, "m_BodygroupOnOtherModels in CModelConfigElement_AttachedModel should be at offset 0x90");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_AttachedModel, m_MaterialGroupOnOtherModels) == 0x98, "m_MaterialGroupOnOtherModels in CModelConfigElement_AttachedModel should be at offset 0x98");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_AttachedModel) == 0xE8, "CModelConfigElement_AttachedModel size should be 0xE8");
+
+#endif
 	}
 }

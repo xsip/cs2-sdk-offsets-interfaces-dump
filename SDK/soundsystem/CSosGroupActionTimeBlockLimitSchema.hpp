@@ -24,8 +24,11 @@ namespace CS2 {
 			int32_t m_nMaxCount; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxDuration; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionTimeBlockLimitSchema, m_nMaxCount) == 0x8, "m_nMaxCount in CSosGroupActionTimeBlockLimitSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionTimeBlockLimitSchema, m_flMaxDuration) == 0xC, "m_flMaxDuration in CSosGroupActionTimeBlockLimitSchema should be at offset 0xC");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionTimeBlockLimitSchema) == 0x10, "CSosGroupActionTimeBlockLimitSchema size should be 0x10");
+
+#endif
 	}
 }

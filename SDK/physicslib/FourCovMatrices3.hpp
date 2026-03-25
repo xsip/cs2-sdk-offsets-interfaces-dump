@@ -25,10 +25,13 @@ namespace CS2 {
 			GlobalTypes::fltx4 m_flXZ; // 0x40 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 m_flYZ; // 0x50 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FourCovMatrices3, m_vDiag) == 0x0, "m_vDiag in FourCovMatrices3 should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FourCovMatrices3, m_flXY) == 0x30, "m_flXY in FourCovMatrices3 should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::FourCovMatrices3, m_flXZ) == 0x40, "m_flXZ in FourCovMatrices3 should be at offset 0x40");
 		static_assert(offsetof(CS2::physicslib::FourCovMatrices3, m_flYZ) == 0x50, "m_flYZ in FourCovMatrices3 should be at offset 0x50");
 		static_assert(sizeof(CS2::physicslib::FourCovMatrices3) == 0x60, "FourCovMatrices3 size should be 0x60");
+
+#endif
 	}
 }

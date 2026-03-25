@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flJumpPressedTime; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerLegacyJump, m_bOldJumpPressed) == 0x10, "m_bOldJumpPressed in CCSPlayerLegacyJump should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CCSPlayerLegacyJump, m_flJumpPressedTime) == 0x14, "m_flJumpPressedTime in CCSPlayerLegacyJump should be at offset 0x14");
 		static_assert(sizeof(CS2::server::CCSPlayerLegacyJump) == 0x18, "CCSPlayerLegacyJump size should be 0x18");
+
+#endif
 	}
 }

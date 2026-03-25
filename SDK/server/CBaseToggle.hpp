@@ -47,6 +47,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_sMaster; // 0x7a8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseToggle, m_toggle_state) == 0x730, "m_toggle_state in CBaseToggle should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CBaseToggle, m_flMoveDistance) == 0x734, "m_flMoveDistance in CBaseToggle should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CBaseToggle, m_flWait) == 0x738, "m_flWait in CBaseToggle should be at offset 0x738");
@@ -64,5 +65,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseToggle, m_movementType) == 0x7A0, "m_movementType in CBaseToggle should be at offset 0x7A0");
 		static_assert(offsetof(CS2::server::CBaseToggle, m_sMaster) == 0x7A8, "m_sMaster in CBaseToggle should be at offset 0x7A8");
 		static_assert(sizeof(CS2::server::CBaseToggle) == 0x7B0, "CBaseToggle size should be 0x7B0");
+
+#endif
 	}
 }

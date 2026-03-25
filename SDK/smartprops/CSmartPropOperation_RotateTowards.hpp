@@ -30,6 +30,7 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeCoordinateSpace m_TargetSpace; // 0x190 | Schema_DeclaredClass | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_UpSpace; // 0x1d0 | Schema_DeclaredClass | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RotateTowards, m_vOriginPos) == 0x50, "m_vOriginPos in CSmartPropOperation_RotateTowards should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RotateTowards, m_vTargetPos) == 0x90, "m_vTargetPos in CSmartPropOperation_RotateTowards should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RotateTowards, m_vUpPos) == 0xD0, "m_vUpPos in CSmartPropOperation_RotateTowards should be at offset 0xD0");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RotateTowards, m_TargetSpace) == 0x190, "m_TargetSpace in CSmartPropOperation_RotateTowards should be at offset 0x190");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RotateTowards, m_UpSpace) == 0x1D0, "m_UpSpace in CSmartPropOperation_RotateTowards should be at offset 0x1D0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RotateTowards) == 0x210, "CSmartPropOperation_RotateTowards size should be 0x210");
+
+#endif
 	}
 }

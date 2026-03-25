@@ -28,10 +28,13 @@ namespace CS2 {
 			GlobalTypes::Vector m_translationOffset; // 0x30 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTargetOffsetNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmTargetOffsetNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmTargetOffsetNode_CDefinition, m_bIsBoneSpaceOffset) == 0x12, "m_bIsBoneSpaceOffset in CNmTargetOffsetNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmTargetOffsetNode_CDefinition, m_rotationOffset) == 0x20, "m_rotationOffset in CNmTargetOffsetNode::CDefinition should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmTargetOffsetNode_CDefinition, m_translationOffset) == 0x30, "m_translationOffset in CNmTargetOffsetNode::CDefinition should be at offset 0x30");
 		static_assert(sizeof(CS2::animlib::CNmTargetOffsetNode_CDefinition) == 0x40, "CNmTargetOffsetNode::CDefinition size should be 0x40");
+
+#endif
 	}
 }

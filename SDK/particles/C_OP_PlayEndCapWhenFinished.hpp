@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bIncludeChildren; // 0x1d9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_PlayEndCapWhenFinished, m_bFireOnEmissionEnd) == 0x1D8, "m_bFireOnEmissionEnd in C_OP_PlayEndCapWhenFinished should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_PlayEndCapWhenFinished, m_bIncludeChildren) == 0x1D9, "m_bIncludeChildren in C_OP_PlayEndCapWhenFinished should be at offset 0x1D9");
 		static_assert(sizeof(CS2::particles::C_OP_PlayEndCapWhenFinished) == 0x1E0, "C_OP_PlayEndCapWhenFinished size should be 0x1E0");
+
+#endif
 	}
 }

@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bPeakMode; // 0x24 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixVocoderDesc_t, m_nBandCount) == 0x0, "m_nBandCount in VMixVocoderDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixVocoderDesc_t, m_flBandwidth) == 0x4, "m_flBandwidth in VMixVocoderDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixVocoderDesc_t, m_fldBModGain) == 0x8, "m_fldBModGain in VMixVocoderDesc_t should be at offset 0x8");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixVocoderDesc_t, m_nDebugBand) == 0x20, "m_nDebugBand in VMixVocoderDesc_t should be at offset 0x20");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixVocoderDesc_t, m_bPeakMode) == 0x24, "m_bPeakMode in VMixVocoderDesc_t should be at offset 0x24");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixVocoderDesc_t) == 0x28, "VMixVocoderDesc_t size should be 0x28");
+
+#endif
 	}
 }

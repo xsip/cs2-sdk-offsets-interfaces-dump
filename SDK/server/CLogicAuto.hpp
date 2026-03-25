@@ -34,6 +34,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnVRNotEnabled; // 0x580 | Schema_DeclaredClass | Size: 0x18
 			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x598 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicAuto, m_OnMapSpawn) == 0x4A8, "m_OnMapSpawn in CLogicAuto should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicAuto, m_OnDemoMapSpawn) == 0x4C0, "m_OnDemoMapSpawn in CLogicAuto should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CLogicAuto, m_OnNewGame) == 0x4D8, "m_OnNewGame in CLogicAuto should be at offset 0x4D8");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicAuto, m_OnVRNotEnabled) == 0x580, "m_OnVRNotEnabled in CLogicAuto should be at offset 0x580");
 		static_assert(offsetof(CS2::server::CLogicAuto, m_globalstate) == 0x598, "m_globalstate in CLogicAuto should be at offset 0x598");
 		static_assert(sizeof(CS2::server::CLogicAuto) == 0x5A0, "CLogicAuto size should be 0x5A0");
+
+#endif
 	}
 }

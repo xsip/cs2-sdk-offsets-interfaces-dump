@@ -30,10 +30,13 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nBehindFieldOutput; // 0x894 | Schema_DeclaredClass | Size: 0x4
 			particleslib::CParticleRemapFloatInput m_flBehindOutputRemap; // 0x898 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_ScreenSpacePositionOfTarget, m_vecTargetPosition) == 0x1D8, "m_vecTargetPosition in C_INIT_ScreenSpacePositionOfTarget should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_ScreenSpacePositionOfTarget, m_bOututBehindness) == 0x890, "m_bOututBehindness in C_INIT_ScreenSpacePositionOfTarget should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_INIT_ScreenSpacePositionOfTarget, m_nBehindFieldOutput) == 0x894, "m_nBehindFieldOutput in C_INIT_ScreenSpacePositionOfTarget should be at offset 0x894");
 		static_assert(offsetof(CS2::particles::C_INIT_ScreenSpacePositionOfTarget, m_flBehindOutputRemap) == 0x898, "m_flBehindOutputRemap in C_INIT_ScreenSpacePositionOfTarget should be at offset 0x898");
 		static_assert(sizeof(CS2::particles::C_INIT_ScreenSpacePositionOfTarget) == 0xA08, "C_INIT_ScreenSpacePositionOfTarget size should be 0xA08");
+
+#endif
 	}
 }

@@ -28,8 +28,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animgraphlib::CBodyGroupSetting> m_bodyGroupSettings; // 0x60 | Schema_Atomic | Size: 0x18
 			// char m_bodyGroupSettings[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CBodyGroupAnimTag, m_nPriority) == 0x58, "m_nPriority in CBodyGroupAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CBodyGroupAnimTag, m_bodyGroupSettings) == 0x60, "m_bodyGroupSettings in CBodyGroupAnimTag should be at offset 0x60");
 		static_assert(sizeof(CS2::animgraphlib::CBodyGroupAnimTag) == 0x78, "CBodyGroupAnimTag size should be 0x78");
+
+#endif
 	}
 }

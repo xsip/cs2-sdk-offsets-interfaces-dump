@@ -32,11 +32,14 @@ namespace CS2 {
 			S2_PAD(0x4);
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x80 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Step_CallExternalMethod, m_MethodName) == 0x48, "m_MethodName in CPulseCell_Step_CallExternalMethod should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Step_CallExternalMethod, m_GameBlackboard) == 0x58, "m_GameBlackboard in CPulseCell_Step_CallExternalMethod should be at offset 0x58");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Step_CallExternalMethod, m_ExpectedArgs) == 0x68, "m_ExpectedArgs in CPulseCell_Step_CallExternalMethod should be at offset 0x68");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Step_CallExternalMethod, m_nAsyncCallMode) == 0x78, "m_nAsyncCallMode in CPulseCell_Step_CallExternalMethod should be at offset 0x78");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Step_CallExternalMethod, m_OnFinished) == 0x80, "m_OnFinished in CPulseCell_Step_CallExternalMethod should be at offset 0x80");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Step_CallExternalMethod) == 0xC8, "CPulseCell_Step_CallExternalMethod size should be 0xC8");
+
+#endif
 	}
 }

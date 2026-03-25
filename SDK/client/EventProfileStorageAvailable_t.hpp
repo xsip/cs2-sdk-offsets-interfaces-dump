@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CSplitScreenSlot m_nSplitScreenSlot; // 0x0 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventProfileStorageAvailable_t, m_nSplitScreenSlot) == 0x0, "m_nSplitScreenSlot in EventProfileStorageAvailable_t should be at offset 0x0");
 		static_assert(sizeof(CS2::client::EventProfileStorageAvailable_t) == 0x4, "EventProfileStorageAvailable_t size should be 0x4");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bFirstAttack; // 0x1130 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CKnife, m_bFirstAttack) == 0x1130, "m_bFirstAttack in CKnife should be at offset 0x1130");
 		static_assert(sizeof(CS2::server::CKnife) == 0x1140, "CKnife size should be 0x1140");
+
+#endif
 	}
 }

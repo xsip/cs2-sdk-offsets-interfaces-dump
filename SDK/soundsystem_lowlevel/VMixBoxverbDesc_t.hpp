@@ -40,6 +40,7 @@ namespace CS2 {
 			float32 m_flOutputGain; // 0x48 | Schema_Builtin | Size: 0x4
 			float32 m_flTaps; // 0x4c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixBoxverbDesc_t, m_flSizeMax) == 0x0, "m_flSizeMax in VMixBoxverbDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixBoxverbDesc_t, m_flSizeMin) == 0x4, "m_flSizeMin in VMixBoxverbDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixBoxverbDesc_t, m_flComplexity) == 0x8, "m_flComplexity in VMixBoxverbDesc_t should be at offset 0x8");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixBoxverbDesc_t, m_flOutputGain) == 0x48, "m_flOutputGain in VMixBoxverbDesc_t should be at offset 0x48");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixBoxverbDesc_t, m_flTaps) == 0x4C, "m_flTaps in VMixBoxverbDesc_t should be at offset 0x4C");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixBoxverbDesc_t) == 0x50, "VMixBoxverbDesc_t size should be 0x50");
+
+#endif
 	}
 }

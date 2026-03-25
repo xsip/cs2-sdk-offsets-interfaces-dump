@@ -28,9 +28,12 @@ namespace CS2 {
 			bool m_bLockWhenWaning; // 0x76 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CCycleControlUpdateNode, m_valueSource) == 0x70, "m_valueSource in CCycleControlUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CCycleControlUpdateNode, m_paramIndex) == 0x74, "m_paramIndex in CCycleControlUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CCycleControlUpdateNode, m_bLockWhenWaning) == 0x76, "m_bLockWhenWaning in CCycleControlUpdateNode should be at offset 0x76");
 		static_assert(sizeof(CS2::animgraphlib::CCycleControlUpdateNode) == 0x78, "CCycleControlUpdateNode size should be 0x78");
+
+#endif
 	}
 }

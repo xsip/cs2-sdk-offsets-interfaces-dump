@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flProgression; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFootTrajectory, m_vOffset) == 0x8, "m_vOffset in CFootTrajectory should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CFootTrajectory, m_flRotationOffset) == 0x14, "m_flRotationOffset in CFootTrajectory should be at offset 0x14");
 		static_assert(offsetof(CS2::modellib::CFootTrajectory, m_flProgression) == 0x18, "m_flProgression in CFootTrajectory should be at offset 0x18");
 		static_assert(sizeof(CS2::modellib::CFootTrajectory) == 0x20, "CFootTrajectory size should be 0x20");
+
+#endif
 	}
 }

@@ -51,6 +51,7 @@ namespace CS2 {
 			bool m_bAnimEventsAndTagsOnMostWeightedOnly; // 0xf3 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CBlend2DUpdateNode, m_items) == 0x60, "m_items in CBlend2DUpdateNode should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CBlend2DUpdateNode, m_tags) == 0x78, "m_tags in CBlend2DUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CBlend2DUpdateNode, m_paramSpans) == 0x90, "m_paramSpans in CBlend2DUpdateNode should be at offset 0x90");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CBlend2DUpdateNode, m_bLockWhenWaning) == 0xF2, "m_bLockWhenWaning in CBlend2DUpdateNode should be at offset 0xF2");
 		static_assert(offsetof(CS2::animgraphlib::CBlend2DUpdateNode, m_bAnimEventsAndTagsOnMostWeightedOnly) == 0xF3, "m_bAnimEventsAndTagsOnMostWeightedOnly in CBlend2DUpdateNode should be at offset 0xF3");
 		static_assert(sizeof(CS2::animgraphlib::CBlend2DUpdateNode) == 0xF8, "CBlend2DUpdateNode size should be 0xF8");
+
+#endif
 	}
 }

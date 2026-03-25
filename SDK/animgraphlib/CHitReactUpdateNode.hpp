@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bResetChild; // 0xcc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CHitReactUpdateNode, m_opFixedSettings) == 0x70, "m_opFixedSettings in CHitReactUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CHitReactUpdateNode, m_triggerParam) == 0xBC, "m_triggerParam in CHitReactUpdateNode should be at offset 0xBC");
 		static_assert(offsetof(CS2::animgraphlib::CHitReactUpdateNode, m_hitBoneParam) == 0xBE, "m_hitBoneParam in CHitReactUpdateNode should be at offset 0xBE");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CHitReactUpdateNode, m_flMinDelayBetweenHits) == 0xC8, "m_flMinDelayBetweenHits in CHitReactUpdateNode should be at offset 0xC8");
 		static_assert(offsetof(CS2::animgraphlib::CHitReactUpdateNode, m_bResetChild) == 0xCC, "m_bResetChild in CHitReactUpdateNode should be at offset 0xCC");
 		static_assert(sizeof(CS2::animgraphlib::CHitReactUpdateNode) == 0xD0, "CHitReactUpdateNode size should be 0xD0");
+
+#endif
 	}
 }

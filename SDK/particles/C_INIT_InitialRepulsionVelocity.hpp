@@ -39,6 +39,7 @@ namespace CS2 {
 			int32_t m_nChildGroupID; // 0x288 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitialRepulsionVelocity, m_CollisionGroupName) == 0x1D8, "m_CollisionGroupName in C_INIT_InitialRepulsionVelocity should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialRepulsionVelocity, m_nTraceSet) == 0x258, "m_nTraceSet in C_INIT_InitialRepulsionVelocity should be at offset 0x258");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialRepulsionVelocity, m_vecOutputMin) == 0x25C, "m_vecOutputMin in C_INIT_InitialRepulsionVelocity should be at offset 0x25C");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_InitialRepulsionVelocity, m_nChildCP) == 0x284, "m_nChildCP in C_INIT_InitialRepulsionVelocity should be at offset 0x284");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialRepulsionVelocity, m_nChildGroupID) == 0x288, "m_nChildGroupID in C_INIT_InitialRepulsionVelocity should be at offset 0x288");
 		static_assert(sizeof(CS2::particles::C_INIT_InitialRepulsionVelocity) == 0x290, "C_INIT_InitialRepulsionVelocity size should be 0x290");
+
+#endif
 	}
 }

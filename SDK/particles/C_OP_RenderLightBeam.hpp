@@ -34,6 +34,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_flRange; // 0xbc8 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionFloatInput m_flThickness; // 0xd38 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_vColorBlend) == 0x220, "m_vColorBlend in C_OP_RenderLightBeam should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_nColorBlendType) == 0x8D8, "m_nColorBlendType in C_OP_RenderLightBeam should be at offset 0x8D8");
 		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flBrightnessLumensPerMeter) == 0x8E0, "m_flBrightnessLumensPerMeter in C_OP_RenderLightBeam should be at offset 0x8E0");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flRange) == 0xBC8, "m_flRange in C_OP_RenderLightBeam should be at offset 0xBC8");
 		static_assert(offsetof(CS2::particles::C_OP_RenderLightBeam, m_flThickness) == 0xD38, "m_flThickness in C_OP_RenderLightBeam should be at offset 0xD38");
 		static_assert(sizeof(CS2::particles::C_OP_RenderLightBeam) == 0xEA8, "C_OP_RenderLightBeam size should be 0xEA8");
+
+#endif
 	}
 }

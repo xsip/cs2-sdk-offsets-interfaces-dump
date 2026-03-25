@@ -43,6 +43,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flMaxAngle; // 0x94 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CTargetWarpUpdateNode, m_eAngleMode) == 0x74, "m_eAngleMode in CTargetWarpUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CTargetWarpUpdateNode, m_hTargetPositionParameter) == 0x78, "m_hTargetPositionParameter in CTargetWarpUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CTargetWarpUpdateNode, m_hTargetUpVectorParameter) == 0x7A, "m_hTargetUpVectorParameter in CTargetWarpUpdateNode should be at offset 0x7A");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CTargetWarpUpdateNode, m_bWarpAroundCenter) == 0x90, "m_bWarpAroundCenter in CTargetWarpUpdateNode should be at offset 0x90");
 		static_assert(offsetof(CS2::animgraphlib::CTargetWarpUpdateNode, m_flMaxAngle) == 0x94, "m_flMaxAngle in CTargetWarpUpdateNode should be at offset 0x94");
 		static_assert(sizeof(CS2::animgraphlib::CTargetWarpUpdateNode) == 0x98, "CTargetWarpUpdateNode size should be 0x98");
+
+#endif
 	}
 }

@@ -54,6 +54,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animationsystem::CSeqIKLock> m_localIKAutoplayLockArray; // 0x120 | Schema_Atomic | Size: 0x18
 			// char m_localIKAutoplayLockArray[0x18]; // 0x120 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSequenceGroupData, m_sName) == 0x10, "m_sName in CSequenceGroupData should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSequenceGroupData, m_nFlags) == 0x20, "m_nFlags in CSequenceGroupData should be at offset 0x20");
 		static_assert(offsetof(CS2::animationsystem::CSequenceGroupData, m_localSequenceNameArray) == 0x28, "m_localSequenceNameArray in CSequenceGroupData should be at offset 0x28");
@@ -69,5 +70,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSequenceGroupData, m_keyValues) == 0x110, "m_keyValues in CSequenceGroupData should be at offset 0x110");
 		static_assert(offsetof(CS2::animationsystem::CSequenceGroupData, m_localIKAutoplayLockArray) == 0x120, "m_localIKAutoplayLockArray in CSequenceGroupData should be at offset 0x120");
 		static_assert(sizeof(CS2::animationsystem::CSequenceGroupData) == 0x138, "CSequenceGroupData size should be 0x138");
+
+#endif
 	}
 }

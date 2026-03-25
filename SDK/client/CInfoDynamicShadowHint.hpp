@@ -35,11 +35,14 @@ namespace CS2 {
 			// char m_hLight[0x4]; // 0x618 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHint, m_bDisabled) == 0x608, "m_bDisabled in CInfoDynamicShadowHint should be at offset 0x608");
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHint, m_flRange) == 0x60C, "m_flRange in CInfoDynamicShadowHint should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHint, m_nImportance) == 0x610, "m_nImportance in CInfoDynamicShadowHint should be at offset 0x610");
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHint, m_nLightChoice) == 0x614, "m_nLightChoice in CInfoDynamicShadowHint should be at offset 0x614");
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHint, m_hLight) == 0x618, "m_hLight in CInfoDynamicShadowHint should be at offset 0x618");
 		static_assert(sizeof(CS2::client::CInfoDynamicShadowHint) == 0x620, "CInfoDynamicShadowHint size should be 0x620");
+
+#endif
 	}
 }

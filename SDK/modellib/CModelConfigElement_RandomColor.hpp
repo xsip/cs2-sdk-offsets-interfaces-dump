@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CColorGradient m_Gradient; // 0x48 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_RandomColor, m_Gradient) == 0x48, "m_Gradient in CModelConfigElement_RandomColor should be at offset 0x48");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_RandomColor) == 0x60, "CModelConfigElement_RandomColor size should be 0x60");
+
+#endif
 	}
 }

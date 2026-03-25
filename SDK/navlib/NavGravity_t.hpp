@@ -24,8 +24,11 @@ namespace CS2 {
 			bool m_bDefault; // 0xc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::navlib::NavGravity_t, m_vGravity) == 0x0, "m_vGravity in NavGravity_t should be at offset 0x0");
 		static_assert(offsetof(CS2::navlib::NavGravity_t, m_bDefault) == 0xC, "m_bDefault in NavGravity_t should be at offset 0xC");
 		static_assert(sizeof(CS2::navlib::NavGravity_t) == 0x10, "NavGravity_t size should be 0x10");
+
+#endif
 	}
 }

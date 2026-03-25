@@ -25,9 +25,12 @@ namespace CS2 {
 			float32 m_flRealTime; // 0x28 | Schema_Builtin | Size: 0x4
 			float32 m_flFrameTime; // 0x2c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventSimpleLoopFrameUpdate_t, m_LoopState) == 0x0, "m_LoopState in EventSimpleLoopFrameUpdate_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::EventSimpleLoopFrameUpdate_t, m_flRealTime) == 0x28, "m_flRealTime in EventSimpleLoopFrameUpdate_t should be at offset 0x28");
 		static_assert(offsetof(CS2::client::EventSimpleLoopFrameUpdate_t, m_flFrameTime) == 0x2C, "m_flFrameTime in EventSimpleLoopFrameUpdate_t should be at offset 0x2C");
 		static_assert(sizeof(CS2::client::EventSimpleLoopFrameUpdate_t) == 0x30, "EventSimpleLoopFrameUpdate_t size should be 0x30");
+
+#endif
 	}
 }

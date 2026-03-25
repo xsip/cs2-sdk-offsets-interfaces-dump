@@ -30,11 +30,14 @@ namespace CS2 {
 			animlib::CNmTimeConditionNode_Operator_t m_operator; // 0x19 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTimeConditionNode_CDefinition, m_sourceStateNodeIdx) == 0x10, "m_sourceStateNodeIdx in CNmTimeConditionNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmTimeConditionNode_CDefinition, m_nInputValueNodeIdx) == 0x12, "m_nInputValueNodeIdx in CNmTimeConditionNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmTimeConditionNode_CDefinition, m_flComparand) == 0x14, "m_flComparand in CNmTimeConditionNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmTimeConditionNode_CDefinition, m_type) == 0x18, "m_type in CNmTimeConditionNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmTimeConditionNode_CDefinition, m_operator) == 0x19, "m_operator in CNmTimeConditionNode::CDefinition should be at offset 0x19");
 		static_assert(sizeof(CS2::animlib::CNmTimeConditionNode_CDefinition) == 0x20, "CNmTimeConditionNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

@@ -27,10 +27,13 @@ namespace CS2 {
 			int32_t m_nCP; // 0x1d8 | Schema_Builtin | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1dc | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_Orient2DRelToCP, m_flRotOffset) == 0x1D0, "m_flRotOffset in C_OP_Orient2DRelToCP should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_Orient2DRelToCP, m_flSpinStrength) == 0x1D4, "m_flSpinStrength in C_OP_Orient2DRelToCP should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_Orient2DRelToCP, m_nCP) == 0x1D8, "m_nCP in C_OP_Orient2DRelToCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_Orient2DRelToCP, m_nFieldOutput) == 0x1DC, "m_nFieldOutput in C_OP_Orient2DRelToCP should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::C_OP_Orient2DRelToCP) == 0x1E0, "C_OP_Orient2DRelToCP size should be 0x1E0");
+
+#endif
 	}
 }

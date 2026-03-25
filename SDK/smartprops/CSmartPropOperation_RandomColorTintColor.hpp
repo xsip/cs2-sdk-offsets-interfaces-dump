@@ -29,10 +29,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CColorGradient m_Gradient; // 0xd8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomColorTintColor, m_SelectionMode) == 0x50, "m_SelectionMode in CSmartPropOperation_RandomColorTintColor should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomColorTintColor, m_ColorPosition) == 0x90, "m_ColorPosition in CSmartPropOperation_RandomColorTintColor should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomColorTintColor, m_Mode) == 0xD0, "m_Mode in CSmartPropOperation_RandomColorTintColor should be at offset 0xD0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomColorTintColor, m_Gradient) == 0xD8, "m_Gradient in CSmartPropOperation_RandomColorTintColor should be at offset 0xD8");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RandomColorTintColor) == 0xF0, "CSmartPropOperation_RandomColorTintColor size should be 0xF0");
+
+#endif
 	}
 }

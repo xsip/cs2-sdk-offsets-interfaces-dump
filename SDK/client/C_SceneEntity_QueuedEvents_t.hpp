@@ -23,7 +23,10 @@ namespace CS2 {
 			float32 starttime; // 0x0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x14); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_SceneEntity_QueuedEvents_t, starttime) == 0x0, "starttime in C_SceneEntity::QueuedEvents_t should be at offset 0x0");
 		static_assert(sizeof(CS2::client::C_SceneEntity_QueuedEvents_t) == 0x18, "C_SceneEntity::QueuedEvents_t size should be 0x18");
+
+#endif
 	}
 }

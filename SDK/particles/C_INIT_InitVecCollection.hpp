@@ -27,8 +27,11 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nOutputField; // 0x890 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitVecCollection, m_InputValue) == 0x1D8, "m_InputValue in C_INIT_InitVecCollection should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitVecCollection, m_nOutputField) == 0x890, "m_nOutputField in C_INIT_InitVecCollection should be at offset 0x890");
 		static_assert(sizeof(CS2::particles::C_INIT_InitVecCollection) == 0x898, "C_INIT_InitVecCollection size should be 0x898");
+
+#endif
 	}
 }

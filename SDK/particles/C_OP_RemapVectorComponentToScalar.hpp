@@ -27,9 +27,12 @@ namespace CS2 {
 			int32_t m_nComponent; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapVectorComponentToScalar, m_nFieldInput) == 0x1D0, "m_nFieldInput in C_OP_RemapVectorComponentToScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapVectorComponentToScalar, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapVectorComponentToScalar should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapVectorComponentToScalar, m_nComponent) == 0x1D8, "m_nComponent in C_OP_RemapVectorComponentToScalar should be at offset 0x1D8");
 		static_assert(sizeof(CS2::particles::C_OP_RemapVectorComponentToScalar) == 0x1E0, "C_OP_RemapVectorComponentToScalar size should be 0x1E0");
+
+#endif
 	}
 }

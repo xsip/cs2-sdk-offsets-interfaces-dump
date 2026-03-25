@@ -24,7 +24,10 @@ namespace CS2 {
 			int16_t m_nExternalGraphNodeIdx; // 0x10 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIsExternalGraphSlotFilledNode_CDefinition, m_nExternalGraphNodeIdx) == 0x10, "m_nExternalGraphNodeIdx in CNmIsExternalGraphSlotFilledNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmIsExternalGraphSlotFilledNode_CDefinition) == 0x18, "CNmIsExternalGraphSlotFilledNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

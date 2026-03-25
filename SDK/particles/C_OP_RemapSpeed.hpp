@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bIgnoreDelta; // 0x1e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeed, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_RemapSpeed should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeed, m_flInputMin) == 0x1D4, "m_flInputMin in C_OP_RemapSpeed should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeed, m_flInputMax) == 0x1D8, "m_flInputMax in C_OP_RemapSpeed should be at offset 0x1D8");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeed, m_nSetMethod) == 0x1E4, "m_nSetMethod in C_OP_RemapSpeed should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeed, m_bIgnoreDelta) == 0x1E8, "m_bIgnoreDelta in C_OP_RemapSpeed should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_RemapSpeed) == 0x1F0, "C_OP_RemapSpeed size should be 0x1F0");
+
+#endif
 	}
 }

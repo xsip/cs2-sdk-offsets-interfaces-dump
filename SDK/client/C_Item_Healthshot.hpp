@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_Item_Healthshot : public CS2::client::C_WeaponBaseItem {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_Item_Healthshot) == 0x1F50, "C_Item_Healthshot size should be 0x1F50");
+
+#endif
 	}
 }

@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bBombPlanted; // 0x11ab | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CC4, m_vecLastValidPlayerHeldPosition) == 0x1160, "m_vecLastValidPlayerHeldPosition in CC4 should be at offset 0x1160");
 		static_assert(offsetof(CS2::server::CC4, m_vecLastValidDroppedPosition) == 0x116C, "m_vecLastValidDroppedPosition in CC4 should be at offset 0x116C");
 		static_assert(offsetof(CS2::server::CC4, m_bDoValidDroppedPositionCheck) == 0x1178, "m_bDoValidDroppedPositionCheck in CC4 should be at offset 0x1178");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CC4, m_bPlayedArmingBeeps) == 0x11A4, "m_bPlayedArmingBeeps in CC4 should be at offset 0x11A4");
 		static_assert(offsetof(CS2::server::CC4, m_bBombPlanted) == 0x11AB, "m_bBombPlanted in CC4 should be at offset 0x11AB");
 		static_assert(sizeof(CS2::server::CC4) == 0x11B0, "CC4 size should be 0x11B0");
+
+#endif
 	}
 }

@@ -27,8 +27,11 @@ namespace CS2 {
 			particles::ParticleControlPointAxis_t m_nControlPointAxis; // 0x240 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_NormalAlignToCP, m_transformInput) == 0x1D8, "m_transformInput in C_INIT_NormalAlignToCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_NormalAlignToCP, m_nControlPointAxis) == 0x240, "m_nControlPointAxis in C_INIT_NormalAlignToCP should be at offset 0x240");
 		static_assert(sizeof(CS2::particles::C_INIT_NormalAlignToCP) == 0x248, "C_INIT_NormalAlignToCP size should be 0x248");
+
+#endif
 	}
 }

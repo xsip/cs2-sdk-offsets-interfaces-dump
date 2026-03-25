@@ -34,9 +34,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerPawn>> m_spectators; // 0x8a0 | Schema_Atomic | Size: 0x18
 			// char m_spectators[0x18]; // 0x8a0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_hSoundscape) == 0x890, "m_hSoundscape in CTriggerSoundscape should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_SoundscapeName) == 0x898, "m_SoundscapeName in CTriggerSoundscape should be at offset 0x898");
 		static_assert(offsetof(CS2::server::CTriggerSoundscape, m_spectators) == 0x8A0, "m_spectators in CTriggerSoundscape should be at offset 0x8A0");
 		static_assert(sizeof(CS2::server::CTriggerSoundscape) == 0x8B8, "CTriggerSoundscape size should be 0x8B8");
+
+#endif
 	}
 }

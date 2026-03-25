@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_fWindDirectionVariationMultiplier; // 0x638 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EnvWindVolume, m_bActive) == 0x608, "m_bActive in C_EnvWindVolume should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_EnvWindVolume, m_vBoxMins) == 0x60C, "m_vBoxMins in C_EnvWindVolume should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::C_EnvWindVolume, m_vBoxMaxs) == 0x618, "m_vBoxMaxs in C_EnvWindVolume should be at offset 0x618");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EnvWindVolume, m_fWindSpeedVariationMultiplier) == 0x634, "m_fWindSpeedVariationMultiplier in C_EnvWindVolume should be at offset 0x634");
 		static_assert(offsetof(CS2::client::C_EnvWindVolume, m_fWindDirectionVariationMultiplier) == 0x638, "m_fWindDirectionVariationMultiplier in C_EnvWindVolume should be at offset 0x638");
 		static_assert(sizeof(CS2::client::C_EnvWindVolume) == 0x640, "C_EnvWindVolume size should be 0x640");
+
+#endif
 	}
 }

@@ -28,9 +28,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animgraphlib::MotionDBIndex> m_codeIndices; // 0xa0 | Schema_Atomic | Size: 0x18
 			// char m_codeIndices[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionSearchDB, m_rootNode) == 0x0, "m_rootNode in CMotionSearchDB should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CMotionSearchDB, m_residualQuantizer) == 0x80, "m_residualQuantizer in CMotionSearchDB should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CMotionSearchDB, m_codeIndices) == 0xA0, "m_codeIndices in CMotionSearchDB should be at offset 0xA0");
 		static_assert(sizeof(CS2::animgraphlib::CMotionSearchDB) == 0xB8, "CMotionSearchDB size should be 0xB8");
+
+#endif
 	}
 }

@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vBoundsMinLS; // 0x1c | Schema_Atomic | Size: 0xc
 			animgraphlib::JiggleBoneSimSpace m_eSimSpace; // 0x28 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::JiggleBoneSettings_t, m_nBoneIndex) == 0x0, "m_nBoneIndex in JiggleBoneSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::JiggleBoneSettings_t, m_flSpringStrength) == 0x4, "m_flSpringStrength in JiggleBoneSettings_t should be at offset 0x4");
 		static_assert(offsetof(CS2::animgraphlib::JiggleBoneSettings_t, m_flMaxTimeStep) == 0x8, "m_flMaxTimeStep in JiggleBoneSettings_t should be at offset 0x8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::JiggleBoneSettings_t, m_vBoundsMinLS) == 0x1C, "m_vBoundsMinLS in JiggleBoneSettings_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::animgraphlib::JiggleBoneSettings_t, m_eSimSpace) == 0x28, "m_eSimSpace in JiggleBoneSettings_t should be at offset 0x28");
 		static_assert(sizeof(CS2::animgraphlib::JiggleBoneSettings_t) == 0x2C, "JiggleBoneSettings_t size should be 0x2C");
+
+#endif
 	}
 }

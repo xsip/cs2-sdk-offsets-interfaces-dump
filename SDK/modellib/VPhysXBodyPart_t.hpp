@@ -35,6 +35,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::Vector m_vMassCenterOverride; // 0x9c | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysXBodyPart_t, m_nFlags) == 0x0, "m_nFlags in VPhysXBodyPart_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysXBodyPart_t, m_flMass) == 0x4, "m_flMass in VPhysXBodyPart_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::VPhysXBodyPart_t, m_rnShape) == 0x8, "m_rnShape in VPhysXBodyPart_t should be at offset 0x8");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::VPhysXBodyPart_t, m_bOverrideMassCenter) == 0x98, "m_bOverrideMassCenter in VPhysXBodyPart_t should be at offset 0x98");
 		static_assert(offsetof(CS2::modellib::VPhysXBodyPart_t, m_vMassCenterOverride) == 0x9C, "m_vMassCenterOverride in VPhysXBodyPart_t should be at offset 0x9C");
 		static_assert(sizeof(CS2::modellib::VPhysXBodyPart_t) == 0xA8, "VPhysXBodyPart_t size should be 0xA8");
+
+#endif
 	}
 }

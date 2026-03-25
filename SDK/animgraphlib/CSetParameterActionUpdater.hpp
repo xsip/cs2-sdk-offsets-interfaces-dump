@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::CAnimVariant m_value; // 0x1a | Schema_Atomic | Size: 0x11
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSetParameterActionUpdater, m_hParam) == 0x18, "m_hParam in CSetParameterActionUpdater should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CSetParameterActionUpdater, m_value) == 0x1A, "m_value in CSetParameterActionUpdater should be at offset 0x1A");
 		static_assert(sizeof(CS2::animgraphlib::CSetParameterActionUpdater) == 0x30, "CSetParameterActionUpdater size should be 0x30");
+
+#endif
 	}
 }

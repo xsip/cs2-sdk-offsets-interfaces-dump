@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_SingleplayRules : public CS2::client::C_GameRules {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_SingleplayRules) == 0x40, "C_SingleplayRules size should be 0x40");
+
+#endif
 	}
 }

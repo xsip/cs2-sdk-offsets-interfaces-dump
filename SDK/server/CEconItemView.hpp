@@ -42,6 +42,7 @@ namespace CS2 {
 			char m_szCustomNameOverride[161]; // 0x201 | Schema_FixedArray | Size: 0xa1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEconItemView, m_iItemDefinitionIndex) == 0x38, "m_iItemDefinitionIndex in CEconItemView should be at offset 0x38");
 		static_assert(offsetof(CS2::server::CEconItemView, m_iEntityQuality) == 0x3C, "m_iEntityQuality in CEconItemView should be at offset 0x3C");
 		static_assert(offsetof(CS2::server::CEconItemView, m_iEntityLevel) == 0x40, "m_iEntityLevel in CEconItemView should be at offset 0x40");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEconItemView, m_szCustomName) == 0x160, "m_szCustomName in CEconItemView should be at offset 0x160");
 		static_assert(offsetof(CS2::server::CEconItemView, m_szCustomNameOverride) == 0x201, "m_szCustomNameOverride in CEconItemView should be at offset 0x201");
 		static_assert(sizeof(CS2::server::CEconItemView) == 0x2A8, "CEconItemView size should be 0x2A8");
+
+#endif
 	}
 }

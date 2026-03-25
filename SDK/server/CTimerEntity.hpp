@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bPaused; // 0x514 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTimerEntity, m_OnTimer) == 0x4A8, "m_OnTimer in CTimerEntity should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CTimerEntity, m_OnTimerHigh) == 0x4C0, "m_OnTimerHigh in CTimerEntity should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CTimerEntity, m_OnTimerLow) == 0x4D8, "m_OnTimerLow in CTimerEntity should be at offset 0x4D8");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTimerEntity, m_flRemainingTime) == 0x510, "m_flRemainingTime in CTimerEntity should be at offset 0x510");
 		static_assert(offsetof(CS2::server::CTimerEntity, m_bPaused) == 0x514, "m_bPaused in CTimerEntity should be at offset 0x514");
 		static_assert(sizeof(CS2::server::CTimerEntity) == 0x518, "CTimerEntity size should be 0x518");
+
+#endif
 	}
 }

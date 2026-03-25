@@ -22,6 +22,9 @@ namespace CS2 {
 		class EventServerProcessNetworking_t : public CS2::client::EventSimulate_t {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::EventServerProcessNetworking_t) == 0x30, "EventServerProcessNetworking_t size should be 0x30");
+
+#endif
 	}
 }

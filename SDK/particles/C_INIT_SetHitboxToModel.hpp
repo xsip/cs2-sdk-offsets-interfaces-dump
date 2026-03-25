@@ -36,6 +36,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			particleslib::CParticleCollectionFloatInput m_flShellSize; // 0x930 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_SetHitboxToModel should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_nForceInModel) == 0x1DC, "m_nForceInModel in C_INIT_SetHitboxToModel should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_bEvenDistribution) == 0x1E0, "m_bEvenDistribution in C_INIT_SetHitboxToModel should be at offset 0x1E0");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_HitboxSetName) == 0x8AE, "m_HitboxSetName in C_INIT_SetHitboxToModel should be at offset 0x8AE");
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToModel, m_flShellSize) == 0x930, "m_flShellSize in C_INIT_SetHitboxToModel should be at offset 0x930");
 		static_assert(sizeof(CS2::particles::C_INIT_SetHitboxToModel) == 0xAA0, "C_INIT_SetHitboxToModel size should be 0xAA0");
+
+#endif
 	}
 }

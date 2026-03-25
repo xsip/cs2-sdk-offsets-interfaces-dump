@@ -28,9 +28,12 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nAmountAttribute; // 0x500 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_flLiquidContentsField) == 0x220, "m_flLiquidContentsField in C_OP_GameLiquidSpill should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_flExpirationTime) == 0x390, "m_flExpirationTime in C_OP_GameLiquidSpill should be at offset 0x390");
 		static_assert(offsetof(CS2::particles::C_OP_GameLiquidSpill, m_nAmountAttribute) == 0x500, "m_nAmountAttribute in C_OP_GameLiquidSpill should be at offset 0x500");
 		static_assert(sizeof(CS2::particles::C_OP_GameLiquidSpill) == 0x508, "C_OP_GameLiquidSpill size should be 0x508");
+
+#endif
 	}
 }

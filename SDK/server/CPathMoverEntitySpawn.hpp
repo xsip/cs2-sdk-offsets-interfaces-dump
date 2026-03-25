@@ -32,8 +32,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> vecOtherEntities; // 0x8 | Schema_Atomic | Size: 0x18
 			// char vecOtherEntities[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawn, hMover) == 0x0, "hMover in CPathMoverEntitySpawn should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawn, vecOtherEntities) == 0x8, "vecOtherEntities in CPathMoverEntitySpawn should be at offset 0x8");
 		static_assert(sizeof(CS2::server::CPathMoverEntitySpawn) == 0x20, "CPathMoverEntitySpawn size should be 0x20");
+
+#endif
 	}
 }

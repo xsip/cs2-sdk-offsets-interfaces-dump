@@ -40,6 +40,7 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_renderableModel; // 0x70 | Schema_Atomic | Size: 0x8
 			char m_renderableModel[0x8]; // 0x70 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::AggregateSceneObject_t, m_allFlags) == 0x0, "m_allFlags in AggregateSceneObject_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::AggregateSceneObject_t, m_anyFlags) == 0x4, "m_anyFlags in AggregateSceneObject_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::AggregateSceneObject_t, m_nLayer) == 0x8, "m_nLayer in AggregateSceneObject_t should be at offset 0x8");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::AggregateSceneObject_t, m_fragmentTransforms) == 0x58, "m_fragmentTransforms in AggregateSceneObject_t should be at offset 0x58");
 		static_assert(offsetof(CS2::worldrenderer::AggregateSceneObject_t, m_renderableModel) == 0x70, "m_renderableModel in AggregateSceneObject_t should be at offset 0x70");
 		static_assert(sizeof(CS2::worldrenderer::AggregateSceneObject_t) == 0x78, "AggregateSceneObject_t size should be 0x78");
+
+#endif
 	}
 }

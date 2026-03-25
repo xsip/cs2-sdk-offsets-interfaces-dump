@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::Range_t m_clampRange; // 0x14 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatClampNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmFloatClampNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatClampNode_CDefinition, m_clampRange) == 0x14, "m_clampRange in CNmFloatClampNode::CDefinition should be at offset 0x14");
 		static_assert(sizeof(CS2::animlib::CNmFloatClampNode_CDefinition) == 0x20, "CNmFloatClampNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

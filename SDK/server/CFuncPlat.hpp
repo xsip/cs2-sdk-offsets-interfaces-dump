@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_sNoise; // 0x7d8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncPlat, m_sNoise) == 0x7D8, "m_sNoise in CFuncPlat should be at offset 0x7D8");
 		static_assert(sizeof(CS2::server::CFuncPlat) == 0x7E0, "CFuncPlat size should be 0x7E0");
+
+#endif
 	}
 }

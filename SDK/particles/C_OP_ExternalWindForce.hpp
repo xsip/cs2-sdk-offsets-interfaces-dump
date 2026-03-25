@@ -37,6 +37,7 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flLocalBuoyancyScale; // 0x1788 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleVecInput m_vecBuoyancyForce; // 0x18f8 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecSamplePosition) == 0x1E0, "m_vecSamplePosition in C_OP_ExternalWindForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecScale) == 0x898, "m_vecScale in C_OP_ExternalWindForce should be at offset 0x898");
 		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_bSampleWind) == 0xF50, "m_bSampleWind in C_OP_ExternalWindForce should be at offset 0xF50");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_flLocalBuoyancyScale) == 0x1788, "m_flLocalBuoyancyScale in C_OP_ExternalWindForce should be at offset 0x1788");
 		static_assert(offsetof(CS2::particles::C_OP_ExternalWindForce, m_vecBuoyancyForce) == 0x18F8, "m_vecBuoyancyForce in C_OP_ExternalWindForce should be at offset 0x18F8");
 		static_assert(sizeof(CS2::particles::C_OP_ExternalWindForce) == 0x1FB0, "C_OP_ExternalWindForce size should be 0x1FB0");
+
+#endif
 	}
 }

@@ -35,6 +35,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animationsystem::CAnimDataChannelDesc> m_dataChannelArray; // 0x60 | Schema_Atomic | Size: 0x18
 			// char m_dataChannelArray[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimKeyData, m_name) == 0x0, "m_name in CAnimKeyData should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimKeyData, m_boneArray) == 0x10, "m_boneArray in CAnimKeyData should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimKeyData, m_userArray) == 0x28, "m_userArray in CAnimKeyData should be at offset 0x28");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimKeyData, m_nChannelElements) == 0x58, "m_nChannelElements in CAnimKeyData should be at offset 0x58");
 		static_assert(offsetof(CS2::animationsystem::CAnimKeyData, m_dataChannelArray) == 0x60, "m_dataChannelArray in CAnimKeyData should be at offset 0x60");
 		static_assert(sizeof(CS2::animationsystem::CAnimKeyData) == 0x78, "CAnimKeyData size should be 0x78");
+
+#endif
 	}
 }

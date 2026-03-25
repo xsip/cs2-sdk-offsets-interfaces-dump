@@ -40,6 +40,7 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flOscAdd; // 0x388 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flRateScale; // 0x4f8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_RateMin) == 0x1D0, "m_RateMin in C_OP_OscillateVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_RateMax) == 0x1DC, "m_RateMax in C_OP_OscillateVector should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_FrequencyMin) == 0x1E8, "m_FrequencyMin in C_OP_OscillateVector should be at offset 0x1E8");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flOscAdd) == 0x388, "m_flOscAdd in C_OP_OscillateVector should be at offset 0x388");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateVector, m_flRateScale) == 0x4F8, "m_flRateScale in C_OP_OscillateVector should be at offset 0x4F8");
 		static_assert(sizeof(CS2::particles::C_OP_OscillateVector) == 0x668, "C_OP_OscillateVector size should be 0x668");
+
+#endif
 	}
 }

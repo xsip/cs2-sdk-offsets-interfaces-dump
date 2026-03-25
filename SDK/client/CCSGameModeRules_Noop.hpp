@@ -22,6 +22,9 @@ namespace CS2 {
 		class CCSGameModeRules_Noop : public CS2::client::CCSGameModeRules {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::CCSGameModeRules_Noop) == 0x30, "CCSGameModeRules_Noop size should be 0x30");
+
+#endif
 	}
 }

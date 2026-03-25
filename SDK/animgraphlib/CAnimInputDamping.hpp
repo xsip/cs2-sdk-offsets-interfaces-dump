@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_fFallingSpeedScale; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimInputDamping, m_speedFunction) == 0x8, "m_speedFunction in CAnimInputDamping should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CAnimInputDamping, m_fSpeedScale) == 0xC, "m_fSpeedScale in CAnimInputDamping should be at offset 0xC");
 		static_assert(offsetof(CS2::animgraphlib::CAnimInputDamping, m_fFallingSpeedScale) == 0x10, "m_fFallingSpeedScale in CAnimInputDamping should be at offset 0x10");
 		static_assert(sizeof(CS2::animgraphlib::CAnimInputDamping) == 0x18, "CAnimInputDamping size should be 0x18");
+
+#endif
 	}
 }

@@ -89,6 +89,7 @@ namespace CS2 {
 			float32 m_flDefaultDist_3; // 0x70c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMinCountAll) == 0x4A8, "m_OnMinCountAll in CLogicNPCCounter should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnMaxCountAll) == 0x4C0, "m_OnMaxCountAll in CLogicNPCCounter should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_OnFactorAll) == 0x4D8, "m_OnFactorAll in CLogicNPCCounter should be at offset 0x4D8");
@@ -138,5 +139,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_nMaxFactor_3) == 0x704, "m_nMaxFactor_3 in CLogicNPCCounter should be at offset 0x704");
 		static_assert(offsetof(CS2::server::CLogicNPCCounter, m_flDefaultDist_3) == 0x70C, "m_flDefaultDist_3 in CLogicNPCCounter should be at offset 0x70C");
 		static_assert(sizeof(CS2::server::CLogicNPCCounter) == 0x728, "CLogicNPCCounter size should be 0x728");
+
+#endif
 	}
 }

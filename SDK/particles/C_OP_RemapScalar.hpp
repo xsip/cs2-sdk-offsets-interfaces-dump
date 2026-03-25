@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bOldCode; // 0x1e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalar, m_nFieldInput) == 0x1D0, "m_nFieldInput in C_OP_RemapScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalar, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapScalar should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalar, m_flInputMin) == 0x1D8, "m_flInputMin in C_OP_RemapScalar should be at offset 0x1D8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalar, m_flOutputMax) == 0x1E4, "m_flOutputMax in C_OP_RemapScalar should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalar, m_bOldCode) == 0x1E8, "m_bOldCode in C_OP_RemapScalar should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_RemapScalar) == 0x1F0, "C_OP_RemapScalar size should be 0x1F0");
+
+#endif
 	}
 }

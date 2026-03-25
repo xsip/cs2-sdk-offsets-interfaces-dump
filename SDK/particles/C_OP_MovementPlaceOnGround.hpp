@@ -46,6 +46,7 @@ namespace CS2 {
 			int32_t m_nIgnoreCP; // 0x3f8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flOffset) == 0x1D0, "m_flOffset in C_OP_MovementPlaceOnGround should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flMaxTraceLength) == 0x340, "m_flMaxTraceLength in C_OP_MovementPlaceOnGround should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_flTolerance) == 0x344, "m_flTolerance in C_OP_MovementPlaceOnGround should be at offset 0x344");
@@ -64,5 +65,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nPreserveOffsetCP) == 0x3F4, "m_nPreserveOffsetCP in C_OP_MovementPlaceOnGround should be at offset 0x3F4");
 		static_assert(offsetof(CS2::particles::C_OP_MovementPlaceOnGround, m_nIgnoreCP) == 0x3F8, "m_nIgnoreCP in C_OP_MovementPlaceOnGround should be at offset 0x3F8");
 		static_assert(sizeof(CS2::particles::C_OP_MovementPlaceOnGround) == 0x400, "C_OP_MovementPlaceOnGround size should be 0x400");
+
+#endif
 	}
 }

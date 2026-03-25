@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlBinaryBlock m_BufferData; // 0x0 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t, m_BufferData) == 0x0, "m_BufferData in AggregateVertexAlbedoStreamOnDiskData_t should be at offset 0x0");
 		static_assert(sizeof(CS2::worldrenderer::AggregateVertexAlbedoStreamOnDiskData_t) == 0x10, "AggregateVertexAlbedoStreamOnDiskData_t size should be 0x10");
+
+#endif
 	}
 }

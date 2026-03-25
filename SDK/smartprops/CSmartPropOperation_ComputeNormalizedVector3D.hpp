@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_OutputVariableName; // 0x50 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CSmartPropAttributeVector m_InputVector; // 0x58 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeNormalizedVector3D, m_OutputVariableName) == 0x50, "m_OutputVariableName in CSmartPropOperation_ComputeNormalizedVector3D should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeNormalizedVector3D, m_InputVector) == 0x58, "m_InputVector in CSmartPropOperation_ComputeNormalizedVector3D should be at offset 0x58");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_ComputeNormalizedVector3D) == 0x98, "CSmartPropOperation_ComputeNormalizedVector3D size should be 0x98");
+
+#endif
 	}
 }

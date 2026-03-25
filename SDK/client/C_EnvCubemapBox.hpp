@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_EnvCubemapBox : public CS2::client::C_EnvCubemap {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_EnvCubemapBox) == 0x6F0, "C_EnvCubemapBox size should be 0x6F0");
+
+#endif
 	}
 }

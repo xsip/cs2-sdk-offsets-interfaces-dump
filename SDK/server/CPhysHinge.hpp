@@ -47,6 +47,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnStartMoving; // 0x648 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnStopMoving; // 0x660 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysHinge, m_soundInfo) == 0x510, "m_soundInfo in CPhysHinge should be at offset 0x510");
 		static_assert(offsetof(CS2::server::CPhysHinge, m_NotifyMinLimitReached) == 0x5A8, "m_NotifyMinLimitReached in CPhysHinge should be at offset 0x5A8");
 		static_assert(offsetof(CS2::server::CPhysHinge, m_NotifyMaxLimitReached) == 0x5C0, "m_NotifyMaxLimitReached in CPhysHinge should be at offset 0x5C0");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysHinge, m_OnStartMoving) == 0x648, "m_OnStartMoving in CPhysHinge should be at offset 0x648");
 		static_assert(offsetof(CS2::server::CPhysHinge, m_OnStopMoving) == 0x660, "m_OnStopMoving in CPhysHinge should be at offset 0x660");
 		static_assert(sizeof(CS2::server::CPhysHinge) == 0x678, "CPhysHinge size should be 0x678");
+
+#endif
 	}
 }

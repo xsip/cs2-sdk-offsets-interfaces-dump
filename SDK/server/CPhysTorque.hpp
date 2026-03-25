@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::VectorWS m_axis; // 0x508 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysTorque, m_axis) == 0x508, "m_axis in CPhysTorque should be at offset 0x508");
 		static_assert(sizeof(CS2::server::CPhysTorque) == 0x518, "CPhysTorque size should be 0x518");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Vector3D, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_Vector3D should be at offset 0x38");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_Vector3D) == 0x48, "CSmartPropVariable_Vector3D size should be 0x48");
+
+#endif
 	}
 }

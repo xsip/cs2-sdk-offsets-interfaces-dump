@@ -27,6 +27,7 @@ namespace CS2 {
 			float32 flAngleCenter; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 flAngleExtents; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeHingeLimit_t, nNode) == 0x0, "nNode in FeHingeLimit_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeHingeLimit_t, nFlags) == 0xC, "nFlags in FeHingeLimit_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeHingeLimit_t, flWeight4) == 0x10, "flWeight4 in FeHingeLimit_t should be at offset 0x10");
@@ -34,5 +35,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeHingeLimit_t, flAngleCenter) == 0x18, "flAngleCenter in FeHingeLimit_t should be at offset 0x18");
 		static_assert(offsetof(CS2::physicslib::FeHingeLimit_t, flAngleExtents) == 0x1C, "flAngleExtents in FeHingeLimit_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::physicslib::FeHingeLimit_t) == 0x20, "FeHingeLimit_t size should be 0x20");
+
+#endif
 	}
 }

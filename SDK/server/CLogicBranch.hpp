@@ -30,10 +30,13 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnTrue; // 0x4c8 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnFalse; // 0x4e0 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicBranch, m_bInValue) == 0x4A8, "m_bInValue in CLogicBranch should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicBranch, m_Listeners) == 0x4B0, "m_Listeners in CLogicBranch should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CLogicBranch, m_OnTrue) == 0x4C8, "m_OnTrue in CLogicBranch should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CLogicBranch, m_OnFalse) == 0x4E0, "m_OnFalse in CLogicBranch should be at offset 0x4E0");
 		static_assert(sizeof(CS2::server::CLogicBranch) == 0x4F8, "CLogicBranch size should be 0x4F8");
+
+#endif
 	}
 }

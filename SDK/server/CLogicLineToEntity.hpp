@@ -34,10 +34,13 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CBaseEntity> m_EndEntity; // 0x4dc | Schema_Atomic | Size: 0x4
 			// char m_EndEntity[0x4]; // 0x4dc | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicLineToEntity, m_Line) == 0x4A8, "m_Line in CLogicLineToEntity should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicLineToEntity, m_SourceName) == 0x4D0, "m_SourceName in CLogicLineToEntity should be at offset 0x4D0");
 		static_assert(offsetof(CS2::server::CLogicLineToEntity, m_StartEntity) == 0x4D8, "m_StartEntity in CLogicLineToEntity should be at offset 0x4D8");
 		static_assert(offsetof(CS2::server::CLogicLineToEntity, m_EndEntity) == 0x4DC, "m_EndEntity in CLogicLineToEntity should be at offset 0x4DC");
 		static_assert(sizeof(CS2::server::CLogicLineToEntity) == 0x4E0, "CLogicLineToEntity size should be 0x4E0");
+
+#endif
 	}
 }

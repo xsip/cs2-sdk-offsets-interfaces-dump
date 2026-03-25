@@ -27,9 +27,12 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnPass; // 0x610 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnFail; // 0x628 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBaseFilter, m_bNegated) == 0x608, "m_bNegated in CBaseFilter should be at offset 0x608");
 		static_assert(offsetof(CS2::client::CBaseFilter, m_OnPass) == 0x610, "m_OnPass in CBaseFilter should be at offset 0x610");
 		static_assert(offsetof(CS2::client::CBaseFilter, m_OnFail) == 0x628, "m_OnFail in CBaseFilter should be at offset 0x628");
 		static_assert(sizeof(CS2::client::CBaseFilter) == 0x640, "CBaseFilter size should be 0x640");
+
+#endif
 	}
 }

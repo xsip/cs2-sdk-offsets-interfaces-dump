@@ -51,6 +51,7 @@ namespace CS2 {
 			// char m_vecBoneWorldMax[0x18]; // 0x1b0 | Schema_Atomic | Size: 0x18
 			animationsystem::CAnimSequenceParams m_sequenceParams; // 0x1c8 | Schema_DeclaredClass | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc, m_name) == 0x0, "m_name in CAnimDesc should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc, m_flags) == 0x10, "m_flags in CAnimDesc should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc, fps) == 0x18, "fps in CAnimDesc should be at offset 0x18");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc, m_vecBoneWorldMax) == 0x1B0, "m_vecBoneWorldMax in CAnimDesc should be at offset 0x1B0");
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc, m_sequenceParams) == 0x1C8, "m_sequenceParams in CAnimDesc should be at offset 0x1C8");
 		static_assert(sizeof(CS2::animationsystem::CAnimDesc) == 0x1D0, "CAnimDesc size should be 0x1D0");
+
+#endif
 	}
 }

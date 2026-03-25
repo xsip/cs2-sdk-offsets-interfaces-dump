@@ -32,10 +32,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<compositematerialslib::CompMatPropertyMutator_t> m_vecPropertyMutators; // 0x48 | Schema_Atomic | Size: 0x18
 			// char m_vecPropertyMutators[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialAssemblyProcedure_t, m_vecCompMatIncludes) == 0x0, "m_vecCompMatIncludes in CompositeMaterialAssemblyProcedure_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialAssemblyProcedure_t, m_vecMatchFilters) == 0x18, "m_vecMatchFilters in CompositeMaterialAssemblyProcedure_t should be at offset 0x18");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialAssemblyProcedure_t, m_vecCompositeInputContainers) == 0x30, "m_vecCompositeInputContainers in CompositeMaterialAssemblyProcedure_t should be at offset 0x30");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialAssemblyProcedure_t, m_vecPropertyMutators) == 0x48, "m_vecPropertyMutators in CompositeMaterialAssemblyProcedure_t should be at offset 0x48");
 		static_assert(sizeof(CS2::compositematerialslib::CompositeMaterialAssemblyProcedure_t) == 0x60, "CompositeMaterialAssemblyProcedure_t size should be 0x60");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flRadius; // 0x640 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CFilterProximity, m_flRadius) == 0x640, "m_flRadius in CFilterProximity should be at offset 0x640");
 		static_assert(sizeof(CS2::client::CFilterProximity) == 0x648, "CFilterProximity size should be 0x648");
+
+#endif
 	}
 }

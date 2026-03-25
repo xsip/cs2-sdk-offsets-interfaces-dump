@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionFloatInput m_nDynamicCPCount; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nIncrement) == 0x1D8, "m_nIncrement in C_INIT_CreateFromCPs should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nMinCP) == 0x1DC, "m_nMinCP in C_INIT_CreateFromCPs should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nMaxCP) == 0x1E0, "m_nMaxCP in C_INIT_CreateFromCPs should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromCPs, m_nDynamicCPCount) == 0x1E8, "m_nDynamicCPCount in C_INIT_CreateFromCPs should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateFromCPs) == 0x358, "C_INIT_CreateFromCPs size should be 0x358");
+
+#endif
 	}
 }

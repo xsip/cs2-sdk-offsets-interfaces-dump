@@ -24,8 +24,11 @@ namespace CS2 {
 			entity2::GameTime_t m_StartTime; // 0x0 | Schema_DeclaredClass | Size: 0x4
 			entity2::GameTime_t m_EndTime; // 0x4 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_BaseLerp_CursorState_t, m_StartTime) == 0x0, "m_StartTime in CPulseCell_BaseLerp::CursorState_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_BaseLerp_CursorState_t, m_EndTime) == 0x4, "m_EndTime in CPulseCell_BaseLerp::CursorState_t should be at offset 0x4");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_BaseLerp_CursorState_t) == 0x8, "CPulseCell_BaseLerp::CursorState_t size should be 0x8");
+
+#endif
 	}
 }

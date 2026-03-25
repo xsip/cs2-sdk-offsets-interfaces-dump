@@ -38,6 +38,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint8 > m_bHasUserBitArray; // 0x90 | Schema_Atomic | Size: 0x18
 			// char m_bHasUserBitArray[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodeDifference, m_boneArray) == 0x0, "m_boneArray in CAnimEncodeDifference should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodeDifference, m_morphArray) == 0x18, "m_morphArray in CAnimEncodeDifference should be at offset 0x18");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodeDifference, m_userArray) == 0x30, "m_userArray in CAnimEncodeDifference should be at offset 0x30");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodeDifference, m_bHasMorphBitArray) == 0x78, "m_bHasMorphBitArray in CAnimEncodeDifference should be at offset 0x78");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodeDifference, m_bHasUserBitArray) == 0x90, "m_bHasUserBitArray in CAnimEncodeDifference should be at offset 0x90");
 		static_assert(sizeof(CS2::animationsystem::CAnimEncodeDifference) == 0xA8, "CAnimEncodeDifference size should be 0xA8");
+
+#endif
 	}
 }

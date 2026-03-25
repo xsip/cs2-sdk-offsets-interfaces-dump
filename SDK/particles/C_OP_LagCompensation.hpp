@@ -26,10 +26,13 @@ namespace CS2 {
 			int32_t m_nLatencyCPField; // 0x1d8 | Schema_Builtin | Size: 0x4
 			int32_t m_nDesiredVelocityCPField; // 0x1dc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LagCompensation, m_nDesiredVelocityCP) == 0x1D0, "m_nDesiredVelocityCP in C_OP_LagCompensation should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_LagCompensation, m_nLatencyCP) == 0x1D4, "m_nLatencyCP in C_OP_LagCompensation should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_LagCompensation, m_nLatencyCPField) == 0x1D8, "m_nLatencyCPField in C_OP_LagCompensation should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_LagCompensation, m_nDesiredVelocityCPField) == 0x1DC, "m_nDesiredVelocityCPField in C_OP_LagCompensation should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::C_OP_LagCompensation) == 0x1E0, "C_OP_LagCompensation size should be 0x1E0");
+
+#endif
 	}
 }

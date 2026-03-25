@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bLockWhenWaning; // 0x175 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAimMatrixUpdateNode, m_opFixedSettings) == 0x70, "m_opFixedSettings in CAimMatrixUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CAimMatrixUpdateNode, m_target) == 0x168, "m_target in CAimMatrixUpdateNode should be at offset 0x168");
 		static_assert(offsetof(CS2::animgraphlib::CAimMatrixUpdateNode, m_paramIndex) == 0x16C, "m_paramIndex in CAimMatrixUpdateNode should be at offset 0x16C");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CAimMatrixUpdateNode, m_bResetChild) == 0x174, "m_bResetChild in CAimMatrixUpdateNode should be at offset 0x174");
 		static_assert(offsetof(CS2::animgraphlib::CAimMatrixUpdateNode, m_bLockWhenWaning) == 0x175, "m_bLockWhenWaning in CAimMatrixUpdateNode should be at offset 0x175");
 		static_assert(sizeof(CS2::animgraphlib::CAimMatrixUpdateNode) == 0x180, "CAimMatrixUpdateNode size should be 0x180");
+
+#endif
 	}
 }

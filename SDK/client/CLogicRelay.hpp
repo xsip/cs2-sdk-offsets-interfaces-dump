@@ -28,11 +28,14 @@ namespace CS2 {
 			bool m_bPassthoughCaller; // 0x60c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CLogicRelay, m_bDisabled) == 0x608, "m_bDisabled in CLogicRelay should be at offset 0x608");
 		static_assert(offsetof(CS2::client::CLogicRelay, m_bWaitForRefire) == 0x609, "m_bWaitForRefire in CLogicRelay should be at offset 0x609");
 		static_assert(offsetof(CS2::client::CLogicRelay, m_bTriggerOnce) == 0x60A, "m_bTriggerOnce in CLogicRelay should be at offset 0x60A");
 		static_assert(offsetof(CS2::client::CLogicRelay, m_bFastRetrigger) == 0x60B, "m_bFastRetrigger in CLogicRelay should be at offset 0x60B");
 		static_assert(offsetof(CS2::client::CLogicRelay, m_bPassthoughCaller) == 0x60C, "m_bPassthoughCaller in CLogicRelay should be at offset 0x60C");
 		static_assert(sizeof(CS2::client::CLogicRelay) == 0x610, "CLogicRelay size should be 0x610");
+
+#endif
 	}
 }

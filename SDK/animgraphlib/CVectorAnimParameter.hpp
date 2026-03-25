@@ -28,9 +28,12 @@ namespace CS2 {
 			animgraphlib::AnimParamVectorType_t m_vectorType; // 0x90 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CVectorAnimParameter, m_defaultValue) == 0x80, "m_defaultValue in CVectorAnimParameter should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CVectorAnimParameter, m_bInterpolate) == 0x8C, "m_bInterpolate in CVectorAnimParameter should be at offset 0x8C");
 		static_assert(offsetof(CS2::animgraphlib::CVectorAnimParameter, m_vectorType) == 0x90, "m_vectorType in CVectorAnimParameter should be at offset 0x90");
 		static_assert(sizeof(CS2::animgraphlib::CVectorAnimParameter) == 0x98, "CVectorAnimParameter size should be 0x98");
+
+#endif
 	}
 }

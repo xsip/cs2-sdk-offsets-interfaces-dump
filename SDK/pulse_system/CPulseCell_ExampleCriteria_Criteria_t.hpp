@@ -25,9 +25,12 @@ namespace CS2 {
 			bool m_bMyBool; // 0x8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_ExampleCriteria_Criteria_t, m_flFloatValue1) == 0x0, "m_flFloatValue1 in CPulseCell_ExampleCriteria::Criteria_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_ExampleCriteria_Criteria_t, m_flFloatValue2) == 0x4, "m_flFloatValue2 in CPulseCell_ExampleCriteria::Criteria_t should be at offset 0x4");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_ExampleCriteria_Criteria_t, m_bMyBool) == 0x8, "m_bMyBool in CPulseCell_ExampleCriteria::Criteria_t should be at offset 0x8");
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_ExampleCriteria_Criteria_t) == 0xC, "CPulseCell_ExampleCriteria::Criteria_t size should be 0xC");
+
+#endif
 	}
 }

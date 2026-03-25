@@ -30,11 +30,14 @@ namespace CS2 {
 			client::DamageTypes_t m_nDamageType; // 0x12f0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_flTouchDelta) == 0x12D0, "m_flTouchDelta in C_PhysPropClientside should be at offset 0x12D0");
 		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_fDeathTime) == 0x12D4, "m_fDeathTime in C_PhysPropClientside should be at offset 0x12D4");
 		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_vecDamagePosition) == 0x12D8, "m_vecDamagePosition in C_PhysPropClientside should be at offset 0x12D8");
 		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_vecDamageDirection) == 0x12E4, "m_vecDamageDirection in C_PhysPropClientside should be at offset 0x12E4");
 		static_assert(offsetof(CS2::client::C_PhysPropClientside, m_nDamageType) == 0x12F0, "m_nDamageType in C_PhysPropClientside should be at offset 0x12F0");
 		static_assert(sizeof(CS2::client::C_PhysPropClientside) == 0x1300, "C_PhysPropClientside size should be 0x1300");
+
+#endif
 	}
 }

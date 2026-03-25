@@ -30,6 +30,7 @@ namespace CS2 {
 			int32_t m_nTimesToFire; // 0x2c | Schema_Builtin | Size: 0x4
 			GlobalTypes::KeyValues3 m_paramMap; // 0x30 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::EntityIOConnectionData_t, m_outputName) == 0x0, "m_outputName in EntityIOConnectionData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::EntityIOConnectionData_t, m_targetType) == 0x8, "m_targetType in EntityIOConnectionData_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::EntityIOConnectionData_t, m_targetName) == 0x10, "m_targetName in EntityIOConnectionData_t should be at offset 0x10");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::EntityIOConnectionData_t, m_nTimesToFire) == 0x2C, "m_nTimesToFire in EntityIOConnectionData_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::worldrenderer::EntityIOConnectionData_t, m_paramMap) == 0x30, "m_paramMap in EntityIOConnectionData_t should be at offset 0x30");
 		static_assert(sizeof(CS2::worldrenderer::EntityIOConnectionData_t) == 0x40, "EntityIOConnectionData_t size should be 0x40");
+
+#endif
 	}
 }

@@ -28,9 +28,12 @@ namespace CS2 {
 			bool m_bCullInside; // 0x350 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceCull, m_nControlPoint) == 0x1D8, "m_nControlPoint in C_INIT_DistanceCull should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceCull, m_flDistance) == 0x1E0, "m_flDistance in C_INIT_DistanceCull should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceCull, m_bCullInside) == 0x350, "m_bCullInside in C_INIT_DistanceCull should be at offset 0x350");
 		static_assert(sizeof(CS2::particles::C_INIT_DistanceCull) == 0x358, "C_INIT_DistanceCull size should be 0x358");
+
+#endif
 	}
 }

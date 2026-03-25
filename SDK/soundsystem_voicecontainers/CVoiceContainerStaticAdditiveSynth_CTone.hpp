@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bSyncInstances; // 0x58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CTone, m_harmonics) == 0x0, "m_harmonics in CVoiceContainerStaticAdditiveSynth::CTone should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CTone, m_curve) == 0x18, "m_curve in CVoiceContainerStaticAdditiveSynth::CTone should be at offset 0x18");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CTone, m_bSyncInstances) == 0x58, "m_bSyncInstances in CVoiceContainerStaticAdditiveSynth::CTone should be at offset 0x58");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CTone) == 0x60, "CVoiceContainerStaticAdditiveSynth::CTone size should be 0x60");
+
+#endif
 	}
 }

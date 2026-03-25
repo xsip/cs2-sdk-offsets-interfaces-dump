@@ -22,6 +22,9 @@ namespace CS2 {
 		class CFuncTrainControls : public CS2::server::CBaseModelEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CFuncTrainControls) == 0x730, "CFuncTrainControls size should be 0x730");
+
+#endif
 	}
 }

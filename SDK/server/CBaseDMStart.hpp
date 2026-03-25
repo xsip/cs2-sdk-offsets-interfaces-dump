@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_Master; // 0x4a8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseDMStart, m_Master) == 0x4A8, "m_Master in CBaseDMStart should be at offset 0x4A8");
 		static_assert(sizeof(CS2::server::CBaseDMStart) == 0x4B0, "CBaseDMStart size should be 0x4B0");
+
+#endif
 	}
 }

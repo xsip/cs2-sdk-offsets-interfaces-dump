@@ -42,6 +42,7 @@ namespace CS2 {
 			bool m_bOverrideSunLightStrength; // 0x4ee | Schema_Builtin | Size: 0x1
 			bool m_bOverrideNoiseStrength; // 0x4ef | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bActive) == 0x4A8, "m_bActive in CEnvVolumetricFogVolume should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_vBoxMins) == 0x4AC, "m_vBoxMins in CEnvVolumetricFogVolume should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_vBoxMaxs) == 0x4B8, "m_vBoxMaxs in CEnvVolumetricFogVolume should be at offset 0x4B8");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideSunLightStrength) == 0x4EE, "m_bOverrideSunLightStrength in CEnvVolumetricFogVolume should be at offset 0x4EE");
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogVolume, m_bOverrideNoiseStrength) == 0x4EF, "m_bOverrideNoiseStrength in CEnvVolumetricFogVolume should be at offset 0x4EF");
 		static_assert(sizeof(CS2::server::CEnvVolumetricFogVolume) == 0x4F0, "CEnvVolumetricFogVolume size should be 0x4F0");
+
+#endif
 	}
 }

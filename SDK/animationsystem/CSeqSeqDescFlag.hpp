@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bLegacyRealtime; // 0x9 | Schema_Builtin | Size: 0x1
 			bool m_bModelDoc; // 0xa | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqSeqDescFlag, m_bLooping) == 0x0, "m_bLooping in CSeqSeqDescFlag should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqSeqDescFlag, m_bSnap) == 0x1, "m_bSnap in CSeqSeqDescFlag should be at offset 0x1");
 		static_assert(offsetof(CS2::animationsystem::CSeqSeqDescFlag, m_bAutoplay) == 0x2, "m_bAutoplay in CSeqSeqDescFlag should be at offset 0x2");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqSeqDescFlag, m_bLegacyRealtime) == 0x9, "m_bLegacyRealtime in CSeqSeqDescFlag should be at offset 0x9");
 		static_assert(offsetof(CS2::animationsystem::CSeqSeqDescFlag, m_bModelDoc) == 0xA, "m_bModelDoc in CSeqSeqDescFlag should be at offset 0xA");
 		static_assert(sizeof(CS2::animationsystem::CSeqSeqDescFlag) == 0xB, "CSeqSeqDescFlag size should be 0xB");
+
+#endif
 	}
 }

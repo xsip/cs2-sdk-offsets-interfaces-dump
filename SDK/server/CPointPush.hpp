@@ -38,6 +38,7 @@ namespace CS2 {
 			// char m_hFilter[0x4]; // 0x4c8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointPush, m_bEnabled) == 0x4A8, "m_bEnabled in CPointPush should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointPush, m_flMagnitude) == 0x4AC, "m_flMagnitude in CPointPush should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CPointPush, m_flRadius) == 0x4B0, "m_flRadius in CPointPush should be at offset 0x4B0");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointPush, m_iszFilterName) == 0x4C0, "m_iszFilterName in CPointPush should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CPointPush, m_hFilter) == 0x4C8, "m_hFilter in CPointPush should be at offset 0x4C8");
 		static_assert(sizeof(CS2::server::CPointPush) == 0x4D0, "CPointPush size should be 0x4D0");
+
+#endif
 	}
 }

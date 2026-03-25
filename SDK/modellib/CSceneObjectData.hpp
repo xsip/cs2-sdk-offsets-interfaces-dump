@@ -37,6 +37,7 @@ namespace CS2 {
 			GlobalTypes::Vector4D m_vTintColor; // 0x58 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x38); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_vMinBounds) == 0x0, "m_vMinBounds in CSceneObjectData should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_vMaxBounds) == 0xC, "m_vMaxBounds in CSceneObjectData should be at offset 0xC");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_drawCalls) == 0x18, "m_drawCalls in CSceneObjectData should be at offset 0x18");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_rtProxyDrawCalls) == 0x48, "m_rtProxyDrawCalls in CSceneObjectData should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData, m_vTintColor) == 0x58, "m_vTintColor in CSceneObjectData should be at offset 0x58");
 		static_assert(sizeof(CS2::modellib::CSceneObjectData) == 0xA0, "CSceneObjectData size should be 0xA0");
+
+#endif
 	}
 }

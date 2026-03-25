@@ -36,6 +36,7 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x1f0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_CycleScalar, m_nDestField) == 0x1D0, "m_nDestField in C_OP_CycleScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_CycleScalar, m_flStartValue) == 0x1D4, "m_flStartValue in C_OP_CycleScalar should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_CycleScalar, m_flEndValue) == 0x1D8, "m_flEndValue in C_OP_CycleScalar should be at offset 0x1D8");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_CycleScalar, m_nCPFieldMax) == 0x1EC, "m_nCPFieldMax in C_OP_CycleScalar should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_OP_CycleScalar, m_nSetMethod) == 0x1F0, "m_nSetMethod in C_OP_CycleScalar should be at offset 0x1F0");
 		static_assert(sizeof(CS2::particles::C_OP_CycleScalar) == 0x1F8, "C_OP_CycleScalar size should be 0x1F8");
+
+#endif
 	}
 }

@@ -44,6 +44,7 @@ namespace CS2 {
 			S2_PAD(0x10);
 			server::CMotorController m_motor; // 0x4f0 | Schema_DeclaredClass | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysMotor, m_nameAttach) == 0x4A8, "m_nameAttach in CPhysMotor should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPhysMotor, m_nameAnchor) == 0x4B0, "m_nameAnchor in CPhysMotor should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPhysMotor, m_hAttachedObject) == 0x4B8, "m_hAttachedObject in CPhysMotor should be at offset 0x4B8");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysMotor, m_flSpeedWhenSpinUpOrSpinDownStarted) == 0x4DC, "m_flSpeedWhenSpinUpOrSpinDownStarted in CPhysMotor should be at offset 0x4DC");
 		static_assert(offsetof(CS2::server::CPhysMotor, m_motor) == 0x4F0, "m_motor in CPhysMotor should be at offset 0x4F0");
 		static_assert(sizeof(CS2::server::CPhysMotor) == 0x510, "CPhysMotor size should be 0x510");
+
+#endif
 	}
 }

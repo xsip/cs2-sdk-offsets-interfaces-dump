@@ -28,10 +28,13 @@ namespace CS2 {
 			GlobalTypes::VectorWS m_vRefPosWorldSpace; // 0x788 | Schema_Atomic | Size: 0xc
 			float32 m_flRefDot; // 0x794 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_bUseRef) == 0x778, "m_bUseRef in CMarkupVolumeWithRef should be at offset 0x778");
 		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_vRefPosEntitySpace) == 0x77C, "m_vRefPosEntitySpace in CMarkupVolumeWithRef should be at offset 0x77C");
 		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_vRefPosWorldSpace) == 0x788, "m_vRefPosWorldSpace in CMarkupVolumeWithRef should be at offset 0x788");
 		static_assert(offsetof(CS2::server::CMarkupVolumeWithRef, m_flRefDot) == 0x794, "m_flRefDot in CMarkupVolumeWithRef should be at offset 0x794");
 		static_assert(sizeof(CS2::server::CMarkupVolumeWithRef) == 0x798, "CMarkupVolumeWithRef size should be 0x798");
+
+#endif
 	}
 }

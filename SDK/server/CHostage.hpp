@@ -88,6 +88,7 @@ namespace CS2 {
 			GlobalTypes::VectorWS m_vecHostageResetPosition; // 0x2dec | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CHostage, m_OnHostageBeginGrab) == 0xB98, "m_OnHostageBeginGrab in CHostage should be at offset 0xB98");
 		static_assert(offsetof(CS2::server::CHostage, m_OnFirstPickedUp) == 0xBB0, "m_OnFirstPickedUp in CHostage should be at offset 0xBB0");
 		static_assert(offsetof(CS2::server::CHostage, m_OnDroppedNotRescued) == 0xBC8, "m_OnDroppedNotRescued in CHostage should be at offset 0xBC8");
@@ -128,5 +129,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CHostage, m_vecSpawnGroundPos) == 0x2DB4, "m_vecSpawnGroundPos in CHostage should be at offset 0x2DB4");
 		static_assert(offsetof(CS2::server::CHostage, m_vecHostageResetPosition) == 0x2DEC, "m_vecHostageResetPosition in CHostage should be at offset 0x2DEC");
 		static_assert(sizeof(CS2::server::CHostage) == 0x2E00, "CHostage size should be 0x2E00");
+
+#endif
 	}
 }

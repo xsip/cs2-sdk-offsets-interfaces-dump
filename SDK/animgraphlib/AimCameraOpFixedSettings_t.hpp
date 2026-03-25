@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< int32 > m_propJoints; // 0x18 | Schema_Atomic | Size: 0x18
 			// char m_propJoints[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::AimCameraOpFixedSettings_t, m_nChainIndex) == 0x0, "m_nChainIndex in AimCameraOpFixedSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::AimCameraOpFixedSettings_t, m_nCameraJointIndex) == 0x4, "m_nCameraJointIndex in AimCameraOpFixedSettings_t should be at offset 0x4");
 		static_assert(offsetof(CS2::animgraphlib::AimCameraOpFixedSettings_t, m_nPelvisJointIndex) == 0x8, "m_nPelvisJointIndex in AimCameraOpFixedSettings_t should be at offset 0x8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::AimCameraOpFixedSettings_t, m_nDepenetrationJointIndex) == 0x14, "m_nDepenetrationJointIndex in AimCameraOpFixedSettings_t should be at offset 0x14");
 		static_assert(offsetof(CS2::animgraphlib::AimCameraOpFixedSettings_t, m_propJoints) == 0x18, "m_propJoints in AimCameraOpFixedSettings_t should be at offset 0x18");
 		static_assert(sizeof(CS2::animgraphlib::AimCameraOpFixedSettings_t) == 0x30, "AimCameraOpFixedSettings_t size should be 0x30");
+
+#endif
 	}
 }

@@ -26,11 +26,14 @@ namespace CS2 {
 			float32 flWeight0; // 0xc | Schema_Builtin | Size: 0x4
 			float32 flRelaxationFactor; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeRodConstraint_t, nNode) == 0x0, "nNode in FeRodConstraint_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeRodConstraint_t, flMaxDist) == 0x4, "flMaxDist in FeRodConstraint_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeRodConstraint_t, flMinDist) == 0x8, "flMinDist in FeRodConstraint_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeRodConstraint_t, flWeight0) == 0xC, "flWeight0 in FeRodConstraint_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeRodConstraint_t, flRelaxationFactor) == 0x10, "flRelaxationFactor in FeRodConstraint_t should be at offset 0x10");
 		static_assert(sizeof(CS2::physicslib::FeRodConstraint_t) == 0x14, "FeRodConstraint_t size should be 0x14");
+
+#endif
 	}
 }

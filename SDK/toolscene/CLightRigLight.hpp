@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bParentToCamera; // 0x3d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::toolscene::CLightRigLight, m_vPosition) == 0x0, "m_vPosition in CLightRigLight should be at offset 0x0");
 		static_assert(offsetof(CS2::toolscene::CLightRigLight, m_vDirection) == 0xC, "m_vDirection in CLightRigLight should be at offset 0xC");
 		static_assert(offsetof(CS2::toolscene::CLightRigLight, m_vLookAt) == 0x18, "m_vLookAt in CLightRigLight should be at offset 0x18");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::toolscene::CLightRigLight, m_bRelativePositioning) == 0x3C, "m_bRelativePositioning in CLightRigLight should be at offset 0x3C");
 		static_assert(offsetof(CS2::toolscene::CLightRigLight, m_bParentToCamera) == 0x3D, "m_bParentToCamera in CLightRigLight should be at offset 0x3D");
 		static_assert(sizeof(CS2::toolscene::CLightRigLight) == 0x40, "CLightRigLight size should be 0x40");
+
+#endif
 	}
 }

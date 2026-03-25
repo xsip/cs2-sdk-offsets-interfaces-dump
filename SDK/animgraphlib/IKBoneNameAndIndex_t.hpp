@@ -23,7 +23,10 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_Name; // 0x0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::IKBoneNameAndIndex_t, m_Name) == 0x0, "m_Name in IKBoneNameAndIndex_t should be at offset 0x0");
 		static_assert(sizeof(CS2::animgraphlib::IKBoneNameAndIndex_t) == 0x10, "IKBoneNameAndIndex_t size should be 0x10");
+
+#endif
 	}
 }

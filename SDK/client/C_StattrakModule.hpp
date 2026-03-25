@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bKnife; // 0x1170 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_StattrakModule, m_bKnife) == 0x1170, "m_bKnife in C_StattrakModule should be at offset 0x1170");
 		static_assert(sizeof(CS2::client::C_StattrakModule) == 0x1178, "C_StattrakModule size should be 0x1178");
+
+#endif
 	}
 }

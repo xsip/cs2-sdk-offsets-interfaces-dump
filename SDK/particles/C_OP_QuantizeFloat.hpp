@@ -27,8 +27,11 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nOutputField; // 0x340 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x2c); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_QuantizeFloat, m_InputValue) == 0x1D0, "m_InputValue in C_OP_QuantizeFloat should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_QuantizeFloat, m_nOutputField) == 0x340, "m_nOutputField in C_OP_QuantizeFloat should be at offset 0x340");
 		static_assert(sizeof(CS2::particles::C_OP_QuantizeFloat) == 0x370, "C_OP_QuantizeFloat size should be 0x370");
+
+#endif
 	}
 }

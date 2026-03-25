@@ -29,10 +29,13 @@ namespace CS2 {
 			GlobalTypes::Color m_Color; // 0x68 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMaterialAttributeAnimTag, m_AttributeName) == 0x58, "m_AttributeName in CMaterialAttributeAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CMaterialAttributeAnimTag, m_AttributeType) == 0x60, "m_AttributeType in CMaterialAttributeAnimTag should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CMaterialAttributeAnimTag, m_flValue) == 0x64, "m_flValue in CMaterialAttributeAnimTag should be at offset 0x64");
 		static_assert(offsetof(CS2::animgraphlib::CMaterialAttributeAnimTag, m_Color) == 0x68, "m_Color in CMaterialAttributeAnimTag should be at offset 0x68");
 		static_assert(sizeof(CS2::animgraphlib::CMaterialAttributeAnimTag) == 0x70, "CMaterialAttributeAnimTag size should be 0x70");
+
+#endif
 	}
 }

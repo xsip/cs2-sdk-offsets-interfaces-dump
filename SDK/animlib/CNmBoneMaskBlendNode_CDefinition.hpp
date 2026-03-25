@@ -26,9 +26,12 @@ namespace CS2 {
 			int16_t m_nBlendWeightValueNodeIdx; // 0x14 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskBlendNode_CDefinition, m_nSourceMaskNodeIdx) == 0x10, "m_nSourceMaskNodeIdx in CNmBoneMaskBlendNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskBlendNode_CDefinition, m_nTargetMaskNodeIdx) == 0x12, "m_nTargetMaskNodeIdx in CNmBoneMaskBlendNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskBlendNode_CDefinition, m_nBlendWeightValueNodeIdx) == 0x14, "m_nBlendWeightValueNodeIdx in CNmBoneMaskBlendNode::CDefinition should be at offset 0x14");
 		static_assert(sizeof(CS2::animlib::CNmBoneMaskBlendNode_CDefinition) == 0x18, "CNmBoneMaskBlendNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

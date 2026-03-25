@@ -28,11 +28,14 @@ namespace CS2 {
 			float32 m_reversalSoundThresholdLarge; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_flKeyPointMinSoundThreshold) == 0x8, "m_flKeyPointMinSoundThreshold in SimpleConstraintSoundProfile should be at offset 0x8");
 		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_flKeyPointMaxSoundThreshold) == 0xC, "m_flKeyPointMaxSoundThreshold in SimpleConstraintSoundProfile should be at offset 0xC");
 		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_reversalSoundThresholdSmall) == 0x10, "m_reversalSoundThresholdSmall in SimpleConstraintSoundProfile should be at offset 0x10");
 		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_reversalSoundThresholdMedium) == 0x14, "m_reversalSoundThresholdMedium in SimpleConstraintSoundProfile should be at offset 0x14");
 		static_assert(offsetof(CS2::server::SimpleConstraintSoundProfile, m_reversalSoundThresholdLarge) == 0x18, "m_reversalSoundThresholdLarge in SimpleConstraintSoundProfile should be at offset 0x18");
 		static_assert(sizeof(CS2::server::SimpleConstraintSoundProfile) == 0x20, "SimpleConstraintSoundProfile size should be 0x20");
+
+#endif
 	}
 }

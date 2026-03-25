@@ -28,10 +28,13 @@ namespace CS2 {
 			bool m_bModelFromRenderer; // 0x220 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar, m_hModel) == 0x208, "m_hModel in C_INIT_RemapParticleCountToNamedModelElementScalar should be at offset 0x208");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar, m_outputMinName) == 0x210, "m_outputMinName in C_INIT_RemapParticleCountToNamedModelElementScalar should be at offset 0x210");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar, m_outputMaxName) == 0x218, "m_outputMaxName in C_INIT_RemapParticleCountToNamedModelElementScalar should be at offset 0x218");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar, m_bModelFromRenderer) == 0x220, "m_bModelFromRenderer in C_INIT_RemapParticleCountToNamedModelElementScalar should be at offset 0x220");
 		static_assert(sizeof(CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar) == 0x228, "C_INIT_RemapParticleCountToNamedModelElementScalar size should be 0x228");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CNmBoneMaskValueNode_CDefinition : public CS2::animlib::CNmValueNode_CDefinition {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animlib::CNmBoneMaskValueNode_CDefinition) == 0x10, "CNmBoneMaskValueNode::CDefinition size should be 0x10");
+
+#endif
 	}
 }

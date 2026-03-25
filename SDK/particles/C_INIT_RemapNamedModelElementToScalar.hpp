@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bModelFromRenderer; // 0x21c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_hModel) == 0x1D8, "m_hModel in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_names) == 0x1E0, "m_names in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_values) == 0x1F8, "m_values in C_INIT_RemapNamedModelElementToScalar should be at offset 0x1F8");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_nSetMethod) == 0x218, "m_nSetMethod in C_INIT_RemapNamedModelElementToScalar should be at offset 0x218");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapNamedModelElementToScalar, m_bModelFromRenderer) == 0x21C, "m_bModelFromRenderer in C_INIT_RemapNamedModelElementToScalar should be at offset 0x21C");
 		static_assert(sizeof(CS2::particles::C_INIT_RemapNamedModelElementToScalar) == 0x220, "C_INIT_RemapNamedModelElementToScalar size should be 0x220");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			physicslib::RnMesh_t m_Mesh; // 0x18 | Schema_DeclaredClass | Size: 0xc0
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnMeshDesc_t, m_Mesh) == 0x18, "m_Mesh in RnMeshDesc_t should be at offset 0x18");
 		static_assert(sizeof(CS2::physicslib::RnMeshDesc_t) == 0xD8, "RnMeshDesc_t size should be 0xD8");
+
+#endif
 	}
 }

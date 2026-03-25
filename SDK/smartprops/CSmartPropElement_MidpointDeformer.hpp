@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeFloat m_fFalloff; // 0x2a0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CUtlString m_OutputVariable; // 0x2e0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_MidpointDeformer, m_bDeformationEnabled) == 0xA0, "m_bDeformationEnabled in CSmartPropElement_MidpointDeformer should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_MidpointDeformer, m_vStart) == 0xE0, "m_vStart in CSmartPropElement_MidpointDeformer should be at offset 0xE0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_MidpointDeformer, m_vEnd) == 0x120, "m_vEnd in CSmartPropElement_MidpointDeformer should be at offset 0x120");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_MidpointDeformer, m_fFalloff) == 0x2A0, "m_fFalloff in CSmartPropElement_MidpointDeformer should be at offset 0x2A0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_MidpointDeformer, m_OutputVariable) == 0x2E0, "m_OutputVariable in CSmartPropElement_MidpointDeformer should be at offset 0x2E0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_MidpointDeformer) == 0x2E8, "CSmartPropElement_MidpointDeformer size should be 0x2E8");
+
+#endif
 	}
 }

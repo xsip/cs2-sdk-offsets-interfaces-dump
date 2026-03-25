@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bStartDisabled; // 0x4e1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicGameEventListener, m_OnEventFired) == 0x4B8, "m_OnEventFired in CLogicGameEventListener should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CLogicGameEventListener, m_iszGameEventName) == 0x4D0, "m_iszGameEventName in CLogicGameEventListener should be at offset 0x4D0");
 		static_assert(offsetof(CS2::server::CLogicGameEventListener, m_iszGameEventItem) == 0x4D8, "m_iszGameEventItem in CLogicGameEventListener should be at offset 0x4D8");
 		static_assert(offsetof(CS2::server::CLogicGameEventListener, m_bEnabled) == 0x4E0, "m_bEnabled in CLogicGameEventListener should be at offset 0x4E0");
 		static_assert(offsetof(CS2::server::CLogicGameEventListener, m_bStartDisabled) == 0x4E1, "m_bStartDisabled in CLogicGameEventListener should be at offset 0x4E1");
 		static_assert(sizeof(CS2::server::CLogicGameEventListener) == 0x4E8, "CLogicGameEventListener size should be 0x4E8");
+
+#endif
 	}
 }

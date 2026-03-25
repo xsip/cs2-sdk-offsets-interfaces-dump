@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bAttachment; // 0x2dd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_HitboxSetName) == 0x1D0, "m_HitboxSetName in C_OP_SetControlPointsToModelParticles should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_AttachmentName) == 0x250, "m_AttachmentName in C_OP_SetControlPointsToModelParticles should be at offset 0x250");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_nFirstControlPoint) == 0x2D0, "m_nFirstControlPoint in C_OP_SetControlPointsToModelParticles should be at offset 0x2D0");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_bSkin) == 0x2DC, "m_bSkin in C_OP_SetControlPointsToModelParticles should be at offset 0x2DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointsToModelParticles, m_bAttachment) == 0x2DD, "m_bAttachment in C_OP_SetControlPointsToModelParticles should be at offset 0x2DD");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointsToModelParticles) == 0x2E0, "C_OP_SetControlPointsToModelParticles size should be 0x2E0");
+
+#endif
 	}
 }

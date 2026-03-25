@@ -28,10 +28,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlSymbolLarge> m_damageStates; // 0xef8 | Schema_Atomic | Size: 0x18
 			// char m_damageStates[0x18]; // 0xef8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_bBreakable) == 0xEF0, "m_bBreakable in CPropDoorRotatingBreakable should be at offset 0xEF0");
 		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_isAbleToCloseAreaPortals) == 0xEF1, "m_isAbleToCloseAreaPortals in CPropDoorRotatingBreakable should be at offset 0xEF1");
 		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_currentDamageState) == 0xEF4, "m_currentDamageState in CPropDoorRotatingBreakable should be at offset 0xEF4");
 		static_assert(offsetof(CS2::server::CPropDoorRotatingBreakable, m_damageStates) == 0xEF8, "m_damageStates in CPropDoorRotatingBreakable should be at offset 0xEF8");
 		static_assert(sizeof(CS2::server::CPropDoorRotatingBreakable) == 0xF10, "CPropDoorRotatingBreakable size should be 0xF10");
+
+#endif
 	}
 }

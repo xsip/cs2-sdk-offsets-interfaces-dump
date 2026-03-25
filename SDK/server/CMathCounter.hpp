@@ -37,6 +37,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnChangedFromMin; // 0x528 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnChangedFromMax; // 0x540 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMathCounter, m_flMin) == 0x4A8, "m_flMin in CMathCounter should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMathCounter, m_flMax) == 0x4AC, "m_flMax in CMathCounter should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CMathCounter, m_bHitMin) == 0x4B0, "m_bHitMin in CMathCounter should be at offset 0x4B0");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMathCounter, m_OnChangedFromMin) == 0x528, "m_OnChangedFromMin in CMathCounter should be at offset 0x528");
 		static_assert(offsetof(CS2::server::CMathCounter, m_OnChangedFromMax) == 0x540, "m_OnChangedFromMax in CMathCounter should be at offset 0x540");
 		static_assert(sizeof(CS2::server::CMathCounter) == 0x558, "CMathCounter size should be 0x558");
+
+#endif
 	}
 }

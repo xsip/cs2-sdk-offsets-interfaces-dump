@@ -28,9 +28,12 @@ namespace CS2 {
 			animlib::CNmFloatRemapNode_RemapRange_t m_outputRange; // 0x1c | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatRemapNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmFloatRemapNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatRemapNode_CDefinition, m_inputRange) == 0x14, "m_inputRange in CNmFloatRemapNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmFloatRemapNode_CDefinition, m_outputRange) == 0x1C, "m_outputRange in CNmFloatRemapNode::CDefinition should be at offset 0x1C");
 		static_assert(sizeof(CS2::animlib::CNmFloatRemapNode_CDefinition) == 0x28, "CNmFloatRemapNode::CDefinition size should be 0x28");
+
+#endif
 	}
 }

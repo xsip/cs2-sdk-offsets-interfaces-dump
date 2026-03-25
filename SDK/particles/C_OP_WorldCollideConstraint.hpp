@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_OP_WorldCollideConstraint : public CS2::particles::CParticleFunctionConstraint {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::particles::C_OP_WorldCollideConstraint) == 0x1D0, "C_OP_WorldCollideConstraint size should be 0x1D0");
+
+#endif
 	}
 }

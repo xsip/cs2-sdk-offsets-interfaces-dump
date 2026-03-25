@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_DisallowedSurfaceProperties; // 0x68 | Schema_Atomic | Size: 0x18
 			// char m_DisallowedSurfaceProperties[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_SurfaceProperties, m_AllowedSurfaceProperties) == 0x50, "m_AllowedSurfaceProperties in CSmartPropFilter_SurfaceProperties should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_SurfaceProperties, m_DisallowedSurfaceProperties) == 0x68, "m_DisallowedSurfaceProperties in CSmartPropFilter_SurfaceProperties should be at offset 0x68");
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilter_SurfaceProperties) == 0x80, "CSmartPropFilter_SurfaceProperties size should be 0x80");
+
+#endif
 	}
 }

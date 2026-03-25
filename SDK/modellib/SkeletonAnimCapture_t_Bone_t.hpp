@@ -26,9 +26,12 @@ namespace CS2 {
 			int32_t m_nParent; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Bone_t, m_Name) == 0x0, "m_Name in SkeletonAnimCapture_t::Bone_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Bone_t, m_BindPose) == 0x10, "m_BindPose in SkeletonAnimCapture_t::Bone_t should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Bone_t, m_nParent) == 0x30, "m_nParent in SkeletonAnimCapture_t::Bone_t should be at offset 0x30");
 		static_assert(sizeof(CS2::modellib::SkeletonAnimCapture_t_Bone_t) == 0x40, "SkeletonAnimCapture_t::Bone_t size should be 0x40");
+
+#endif
 	}
 }

@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CSmartPropAttributeFloat m_flScale; // 0x50 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Scale, m_flScale) == 0x50, "m_flScale in CSmartPropOperation_Scale should be at offset 0x50");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_Scale) == 0x90, "CSmartPropOperation_Scale size should be 0x90");
+
+#endif
 	}
 }

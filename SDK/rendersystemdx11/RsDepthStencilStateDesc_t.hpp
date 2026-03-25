@@ -26,8 +26,11 @@ namespace CS2 {
 			rendersystemdx11::RsComparison_t m_depthFunc; // 0x1 | Schema_DeclaredEnum | Size: 0x1
 			rendersystemdx11::RsStencilStateDesc_t m_stencilState; // 0x2 | Schema_DeclaredClass | Size: 0x6
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::rendersystemdx11::RsDepthStencilStateDesc_t, m_depthFunc) == 0x1, "m_depthFunc in RsDepthStencilStateDesc_t should be at offset 0x1");
 		static_assert(offsetof(CS2::rendersystemdx11::RsDepthStencilStateDesc_t, m_stencilState) == 0x2, "m_stencilState in RsDepthStencilStateDesc_t should be at offset 0x2");
 		static_assert(sizeof(CS2::rendersystemdx11::RsDepthStencilStateDesc_t) == 0x8, "RsDepthStencilStateDesc_t size should be 0x8");
+
+#endif
 	}
 }

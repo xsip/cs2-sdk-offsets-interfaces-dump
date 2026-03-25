@@ -44,6 +44,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecPreviewGravity; // 0x58 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_previewModel) == 0x0, "m_previewModel in ParticlePreviewState_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_nModSpecificData) == 0x8, "m_nModSpecificData in ParticlePreviewState_t should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_groundType) == 0xC, "m_groundType in ParticlePreviewState_t should be at offset 0xC");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_bSequenceNameIsAnimClipPath) == 0x55, "m_bSequenceNameIsAnimClipPath in ParticlePreviewState_t should be at offset 0x55");
 		static_assert(offsetof(CS2::particles::ParticlePreviewState_t, m_vecPreviewGravity) == 0x58, "m_vecPreviewGravity in ParticlePreviewState_t should be at offset 0x58");
 		static_assert(sizeof(CS2::particles::ParticlePreviewState_t) == 0x68, "ParticlePreviewState_t size should be 0x68");
+
+#endif
 	}
 }

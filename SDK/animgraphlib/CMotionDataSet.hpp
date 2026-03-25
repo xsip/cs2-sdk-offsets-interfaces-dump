@@ -26,8 +26,11 @@ namespace CS2 {
 			int32_t m_nDimensionCount; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionDataSet, m_groups) == 0x0, "m_groups in CMotionDataSet should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CMotionDataSet, m_nDimensionCount) == 0x18, "m_nDimensionCount in CMotionDataSet should be at offset 0x18");
 		static_assert(sizeof(CS2::animgraphlib::CMotionDataSet) == 0x20, "CMotionDataSet size should be 0x20");
+
+#endif
 	}
 }

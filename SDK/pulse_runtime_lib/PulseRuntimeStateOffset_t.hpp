@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			uint16_t m_Value; // 0x0 | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseRuntimeStateOffset_t, m_Value) == 0x0, "m_Value in PulseRuntimeStateOffset_t should be at offset 0x0");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PulseRuntimeStateOffset_t) == 0x2, "PulseRuntimeStateOffset_t size should be 0x2");
+
+#endif
 	}
 }

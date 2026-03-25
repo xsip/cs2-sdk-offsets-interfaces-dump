@@ -32,11 +32,14 @@ namespace CS2 {
 			GlobalTypes::Vector m_firePosition; // 0x7e8 | Schema_Atomic | Size: 0xc
 			float32 m_flStartFrame; // 0x7f4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvLaser, m_iszLaserTarget) == 0x7D0, "m_iszLaserTarget in CEnvLaser should be at offset 0x7D0");
 		static_assert(offsetof(CS2::server::CEnvLaser, m_pSprite) == 0x7D8, "m_pSprite in CEnvLaser should be at offset 0x7D8");
 		static_assert(offsetof(CS2::server::CEnvLaser, m_iszSpriteName) == 0x7E0, "m_iszSpriteName in CEnvLaser should be at offset 0x7E0");
 		static_assert(offsetof(CS2::server::CEnvLaser, m_firePosition) == 0x7E8, "m_firePosition in CEnvLaser should be at offset 0x7E8");
 		static_assert(offsetof(CS2::server::CEnvLaser, m_flStartFrame) == 0x7F4, "m_flStartFrame in CEnvLaser should be at offset 0x7F4");
 		static_assert(sizeof(CS2::server::CEnvLaser) == 0x7F8, "CEnvLaser size should be 0x7F8");
+
+#endif
 	}
 }

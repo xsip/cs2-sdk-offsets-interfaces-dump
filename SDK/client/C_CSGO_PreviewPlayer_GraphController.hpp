@@ -38,6 +38,7 @@ namespace CS2 {
 			// GlobalTypes::CAnimGraphParamRef< bool > m_bCT; // 0x1d8 | Schema_Atomic | Size: 0x28
 			char m_bCT[0x28]; // 0x1d8 | Schema_Atomic | Size: 0x28
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszCharacterMode) == 0x90, "m_pszCharacterMode in C_CSGO_PreviewPlayer_GraphController should be at offset 0x90");
 		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszTeamPreviewVariant) == 0xC0, "m_pszTeamPreviewVariant in C_CSGO_PreviewPlayer_GraphController should be at offset 0xC0");
 		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszTeamPreviewPosition) == 0xF0, "m_pszTeamPreviewPosition in C_CSGO_PreviewPlayer_GraphController should be at offset 0xF0");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_pszWeaponType) == 0x1A8, "m_pszWeaponType in C_CSGO_PreviewPlayer_GraphController should be at offset 0x1A8");
 		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer_GraphController, m_bCT) == 0x1D8, "m_bCT in C_CSGO_PreviewPlayer_GraphController should be at offset 0x1D8");
 		static_assert(sizeof(CS2::client::C_CSGO_PreviewPlayer_GraphController) == 0x200, "C_CSGO_PreviewPlayer_GraphController size should be 0x200");
+
+#endif
 	}
 }

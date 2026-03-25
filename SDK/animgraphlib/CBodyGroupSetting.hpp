@@ -24,8 +24,11 @@ namespace CS2 {
 			int32_t m_nBodyGroupOption; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CBodyGroupSetting, m_BodyGroupName) == 0x0, "m_BodyGroupName in CBodyGroupSetting should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CBodyGroupSetting, m_nBodyGroupOption) == 0x8, "m_nBodyGroupOption in CBodyGroupSetting should be at offset 0x8");
 		static_assert(sizeof(CS2::animgraphlib::CBodyGroupSetting) == 0x10, "CBodyGroupSetting size should be 0x10");
+
+#endif
 	}
 }

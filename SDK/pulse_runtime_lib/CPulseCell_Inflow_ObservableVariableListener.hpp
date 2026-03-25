@@ -26,8 +26,11 @@ namespace CS2 {
 			bool m_bSelfReference; // 0x82 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_ObservableVariableListener, m_nBlackboardReference) == 0x80, "m_nBlackboardReference in CPulseCell_Inflow_ObservableVariableListener should be at offset 0x80");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_ObservableVariableListener, m_bSelfReference) == 0x82, "m_bSelfReference in CPulseCell_Inflow_ObservableVariableListener should be at offset 0x82");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Inflow_ObservableVariableListener) == 0x88, "CPulseCell_Inflow_ObservableVariableListener size should be 0x88");
+
+#endif
 	}
 }

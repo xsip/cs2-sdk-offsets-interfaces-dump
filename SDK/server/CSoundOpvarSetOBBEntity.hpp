@@ -22,6 +22,9 @@ namespace CS2 {
 		class CSoundOpvarSetOBBEntity : public CS2::server::CSoundOpvarSetAABBEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CSoundOpvarSetOBBEntity) == 0x6A8, "CSoundOpvarSetOBBEntity size should be 0x6A8");
+
+#endif
 	}
 }

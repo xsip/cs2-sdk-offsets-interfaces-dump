@@ -31,6 +31,7 @@ namespace CS2 {
 			mathlib_extended::FuseVariableAccess_t m_eAccess; // 0x10 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::mathlib_extended::VariableInfo_t, m_name) == 0x0, "m_name in VariableInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::mathlib_extended::VariableInfo_t, m_nameToken) == 0x8, "m_nameToken in VariableInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::mathlib_extended::VariableInfo_t, m_nIndex) == 0xC, "m_nIndex in VariableInfo_t should be at offset 0xC");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::mathlib_extended::VariableInfo_t, m_eVarType) == 0xF, "m_eVarType in VariableInfo_t should be at offset 0xF");
 		static_assert(offsetof(CS2::mathlib_extended::VariableInfo_t, m_eAccess) == 0x10, "m_eAccess in VariableInfo_t should be at offset 0x10");
 		static_assert(sizeof(CS2::mathlib_extended::VariableInfo_t) == 0x18, "VariableInfo_t size should be 0x18");
+
+#endif
 	}
 }

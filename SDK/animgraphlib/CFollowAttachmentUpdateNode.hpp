@@ -25,7 +25,10 @@ namespace CS2 {
 			animgraphlib::FollowAttachmentSettings_t m_opFixedData; // 0x70 | Schema_DeclaredClass | Size: 0x90
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFollowAttachmentUpdateNode, m_opFixedData) == 0x70, "m_opFixedData in CFollowAttachmentUpdateNode should be at offset 0x70");
 		static_assert(sizeof(CS2::animgraphlib::CFollowAttachmentUpdateNode) == 0x110, "CFollowAttachmentUpdateNode size should be 0x110");
+
+#endif
 	}
 }

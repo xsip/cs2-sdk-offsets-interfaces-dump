@@ -29,9 +29,12 @@ namespace CS2 {
 			bool m_bCheapEffect; // 0x634 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1b); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EntityFlame, m_hEntAttached) == 0x608, "m_hEntAttached in C_EntityFlame should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_EntityFlame, m_hOldAttached) == 0x630, "m_hOldAttached in C_EntityFlame should be at offset 0x630");
 		static_assert(offsetof(CS2::client::C_EntityFlame, m_bCheapEffect) == 0x634, "m_bCheapEffect in C_EntityFlame should be at offset 0x634");
 		static_assert(sizeof(CS2::client::C_EntityFlame) == 0x650, "C_EntityFlame size should be 0x650");
+
+#endif
 	}
 }

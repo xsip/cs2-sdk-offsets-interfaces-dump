@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszParentAttachment; // 0x4b0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvMuzzleFlash, m_flScale) == 0x4A8, "m_flScale in CEnvMuzzleFlash should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvMuzzleFlash, m_iszParentAttachment) == 0x4B0, "m_iszParentAttachment in CEnvMuzzleFlash should be at offset 0x4B0");
 		static_assert(sizeof(CS2::server::CEnvMuzzleFlash) == 0x4B8, "CEnvMuzzleFlash size should be 0x4B8");
+
+#endif
 	}
 }

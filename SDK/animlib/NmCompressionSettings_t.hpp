@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bIsScaleStatic; // 0x32 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xd); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::NmCompressionSettings_t, m_translationRangeX) == 0x0, "m_translationRangeX in NmCompressionSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::NmCompressionSettings_t, m_translationRangeY) == 0x8, "m_translationRangeY in NmCompressionSettings_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::NmCompressionSettings_t, m_translationRangeZ) == 0x10, "m_translationRangeZ in NmCompressionSettings_t should be at offset 0x10");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::NmCompressionSettings_t, m_bIsTranslationStatic) == 0x31, "m_bIsTranslationStatic in NmCompressionSettings_t should be at offset 0x31");
 		static_assert(offsetof(CS2::animlib::NmCompressionSettings_t, m_bIsScaleStatic) == 0x32, "m_bIsScaleStatic in NmCompressionSettings_t should be at offset 0x32");
 		static_assert(sizeof(CS2::animlib::NmCompressionSettings_t) == 0x40, "NmCompressionSettings_t size should be 0x40");
+
+#endif
 	}
 }

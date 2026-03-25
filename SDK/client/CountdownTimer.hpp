@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_timescale; // 0x10 | Schema_Builtin | Size: 0x4
 			GlobalTypes::WorldGroupId_t m_nWorldGroupId; // 0x14 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CountdownTimer, m_duration) == 0x8, "m_duration in CountdownTimer should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CountdownTimer, m_timestamp) == 0xC, "m_timestamp in CountdownTimer should be at offset 0xC");
 		static_assert(offsetof(CS2::client::CountdownTimer, m_timescale) == 0x10, "m_timescale in CountdownTimer should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CountdownTimer, m_nWorldGroupId) == 0x14, "m_nWorldGroupId in CountdownTimer should be at offset 0x14");
 		static_assert(sizeof(CS2::client::CountdownTimer) == 0x18, "CountdownTimer size should be 0x18");
+
+#endif
 	}
 }

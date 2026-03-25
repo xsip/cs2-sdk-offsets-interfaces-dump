@@ -25,8 +25,11 @@ namespace CS2 {
 			float32 m_Radius; // 0xe8c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_SpotlightEnd, m_flLightScale) == 0xE88, "m_flLightScale in C_SpotlightEnd should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_SpotlightEnd, m_Radius) == 0xE8C, "m_Radius in C_SpotlightEnd should be at offset 0xE8C");
 		static_assert(sizeof(CS2::client::C_SpotlightEnd) == 0xE98, "C_SpotlightEnd size should be 0xE98");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeVector m_InputPositionB; // 0x158 | Schema_Atomic | Size: 0x40
 			smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceB; // 0x198 | Schema_DeclaredClass | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeVectorBetweenPoints3D, m_OutputVariableName) == 0x50, "m_OutputVariableName in CSmartPropOperation_ComputeVectorBetweenPoints3D should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeVectorBetweenPoints3D, m_OutputCoordinateSpace) == 0x58, "m_OutputCoordinateSpace in CSmartPropOperation_ComputeVectorBetweenPoints3D should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeVectorBetweenPoints3D, m_bNormalized) == 0x98, "m_bNormalized in CSmartPropOperation_ComputeVectorBetweenPoints3D should be at offset 0x98");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeVectorBetweenPoints3D, m_InputPositionB) == 0x158, "m_InputPositionB in CSmartPropOperation_ComputeVectorBetweenPoints3D should be at offset 0x158");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeVectorBetweenPoints3D, m_CoordinateSpaceB) == 0x198, "m_CoordinateSpaceB in CSmartPropOperation_ComputeVectorBetweenPoints3D should be at offset 0x198");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_ComputeVectorBetweenPoints3D) == 0x1D8, "CSmartPropOperation_ComputeVectorBetweenPoints3D size should be 0x1D8");
+
+#endif
 	}
 }

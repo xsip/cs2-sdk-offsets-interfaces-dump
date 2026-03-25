@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bBombPlanted; // 0x1f7b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_C4, m_activeLightParticleIndex) == 0x1F40, "m_activeLightParticleIndex in C_C4 should be at offset 0x1F40");
 		static_assert(offsetof(CS2::client::C_C4, m_eActiveLightEffect) == 0x1F44, "m_eActiveLightEffect in C_C4 should be at offset 0x1F44");
 		static_assert(offsetof(CS2::client::C_C4, m_bStartedArming) == 0x1F48, "m_bStartedArming in C_C4 should be at offset 0x1F48");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_C4, m_bPlayedArmingBeeps) == 0x1F74, "m_bPlayedArmingBeeps in C_C4 should be at offset 0x1F74");
 		static_assert(offsetof(CS2::client::C_C4, m_bBombPlanted) == 0x1F7B, "m_bBombPlanted in C_C4 should be at offset 0x1F7B");
 		static_assert(sizeof(CS2::client::C_C4) == 0x1F80, "C_C4 size should be 0x1F80");
+
+#endif
 	}
 }

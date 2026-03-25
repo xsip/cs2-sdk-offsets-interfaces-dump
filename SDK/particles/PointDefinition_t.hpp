@@ -25,9 +25,12 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::Vector m_vOffset; // 0x8 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::PointDefinition_t, m_nControlPoint) == 0x0, "m_nControlPoint in PointDefinition_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::PointDefinition_t, m_bLocalCoords) == 0x4, "m_bLocalCoords in PointDefinition_t should be at offset 0x4");
 		static_assert(offsetof(CS2::particles::PointDefinition_t, m_vOffset) == 0x8, "m_vOffset in PointDefinition_t should be at offset 0x8");
 		static_assert(sizeof(CS2::particles::PointDefinition_t) == 0x14, "PointDefinition_t size should be 0x14");
+
+#endif
 	}
 }

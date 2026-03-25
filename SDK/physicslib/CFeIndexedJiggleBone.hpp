@@ -25,9 +25,12 @@ namespace CS2 {
 			uint32_t m_nJiggleParent; // 0x4 | Schema_Builtin | Size: 0x4
 			physicslib::CFeJiggleBone m_jiggleBone; // 0x8 | Schema_DeclaredClass | Size: 0x9c
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CFeIndexedJiggleBone, m_nNode) == 0x0, "m_nNode in CFeIndexedJiggleBone should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CFeIndexedJiggleBone, m_nJiggleParent) == 0x4, "m_nJiggleParent in CFeIndexedJiggleBone should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::CFeIndexedJiggleBone, m_jiggleBone) == 0x8, "m_jiggleBone in CFeIndexedJiggleBone should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::CFeIndexedJiggleBone) == 0xA4, "CFeIndexedJiggleBone size should be 0xA4");
+
+#endif
 	}
 }

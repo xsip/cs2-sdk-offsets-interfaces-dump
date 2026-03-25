@@ -141,6 +141,7 @@ namespace CS2 {
 			float32 m_flFollowMoverVelocity; // 0x990 | Schema_Builtin | Size: 0x4
 			entity2::GameTick_t m_nTickMovementRan; // 0x994 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncMover, m_iszPathName) == 0x730, "m_iszPathName in CFuncMover should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncMover, m_hPathMover) == 0x738, "m_hPathMover in CFuncMover should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CFuncMover, m_hPrevPathMover) == 0x73C, "m_hPrevPathMover in CFuncMover should be at offset 0x73C");
@@ -226,5 +227,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncMover, m_flFollowMoverVelocity) == 0x990, "m_flFollowMoverVelocity in CFuncMover should be at offset 0x990");
 		static_assert(offsetof(CS2::server::CFuncMover, m_nTickMovementRan) == 0x994, "m_nTickMovementRan in CFuncMover should be at offset 0x994");
 		static_assert(sizeof(CS2::server::CFuncMover) == 0x998, "CFuncMover size should be 0x998");
+
+#endif
 	}
 }

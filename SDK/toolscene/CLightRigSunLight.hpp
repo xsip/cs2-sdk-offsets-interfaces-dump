@@ -28,11 +28,14 @@ namespace CS2 {
 			bool m_bCastShadows; // 0x50 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::toolscene::CLightRigSunLight, m_flShadowCascadeDistance0) == 0x40, "m_flShadowCascadeDistance0 in CLightRigSunLight should be at offset 0x40");
 		static_assert(offsetof(CS2::toolscene::CLightRigSunLight, m_flShadowCascadeDistance1) == 0x44, "m_flShadowCascadeDistance1 in CLightRigSunLight should be at offset 0x44");
 		static_assert(offsetof(CS2::toolscene::CLightRigSunLight, m_flShadowCascadeDistance2) == 0x48, "m_flShadowCascadeDistance2 in CLightRigSunLight should be at offset 0x48");
 		static_assert(offsetof(CS2::toolscene::CLightRigSunLight, m_flShadowCascadeDistance3) == 0x4C, "m_flShadowCascadeDistance3 in CLightRigSunLight should be at offset 0x4C");
 		static_assert(offsetof(CS2::toolscene::CLightRigSunLight, m_bCastShadows) == 0x50, "m_bCastShadows in CLightRigSunLight should be at offset 0x50");
 		static_assert(sizeof(CS2::toolscene::CLightRigSunLight) == 0x54, "CLightRigSunLight size should be 0x54");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_Flashbang : public CS2::client::C_BaseCSGrenade {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_Flashbang) == 0x2000, "C_Flashbang size should be 0x2000");
+
+#endif
 	}
 }

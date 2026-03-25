@@ -57,6 +57,7 @@ namespace CS2 {
 			bool m_bIsUsable; // 0x92a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseDoor, m_angMoveEntitySpace) == 0x7C0, "m_angMoveEntitySpace in CBaseDoor should be at offset 0x7C0");
 		static_assert(offsetof(CS2::server::CBaseDoor, m_vecMoveDirParentSpace) == 0x7CC, "m_vecMoveDirParentSpace in CBaseDoor should be at offset 0x7CC");
 		static_assert(offsetof(CS2::server::CBaseDoor, m_ls) == 0x7D8, "m_ls in CBaseDoor should be at offset 0x7D8");
@@ -86,5 +87,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseDoor, m_isChaining) == 0x929, "m_isChaining in CBaseDoor should be at offset 0x929");
 		static_assert(offsetof(CS2::server::CBaseDoor, m_bIsUsable) == 0x92A, "m_bIsUsable in CBaseDoor should be at offset 0x92A");
 		static_assert(sizeof(CS2::server::CBaseDoor) == 0x930, "CBaseDoor size should be 0x930");
+
+#endif
 	}
 }

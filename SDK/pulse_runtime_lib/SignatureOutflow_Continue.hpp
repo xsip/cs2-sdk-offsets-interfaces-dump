@@ -22,6 +22,9 @@ namespace CS2 {
 		class SignatureOutflow_Continue : public CS2::pulse_runtime_lib::CPulse_OutflowConnection {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_runtime_lib::SignatureOutflow_Continue) == 0x48, "SignatureOutflow_Continue size should be 0x48");
+
+#endif
 	}
 }

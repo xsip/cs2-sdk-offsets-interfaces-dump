@@ -129,6 +129,7 @@ namespace CS2 {
 			// char m_controlPointConfigurations[0x18]; // 0x3b8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x70); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_nBehaviorVersion) == 0x8, "m_nBehaviorVersion in CParticleSystemDefinition should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_PreEmissionOperators) == 0x10, "m_PreEmissionOperators in CParticleSystemDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_Emitters) == 0x28, "m_Emitters in CParticleSystemDefinition should be at offset 0x28");
@@ -195,5 +196,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_bShouldSort) == 0x370, "m_bShouldSort in CParticleSystemDefinition should be at offset 0x370");
 		static_assert(offsetof(CS2::particles::CParticleSystemDefinition, m_controlPointConfigurations) == 0x3B8, "m_controlPointConfigurations in CParticleSystemDefinition should be at offset 0x3B8");
 		static_assert(sizeof(CS2::particles::CParticleSystemDefinition) == 0x440, "CParticleSystemDefinition size should be 0x440");
+
+#endif
 	}
 }

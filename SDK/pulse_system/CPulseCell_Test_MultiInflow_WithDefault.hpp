@@ -22,6 +22,9 @@ namespace CS2 {
 		class CPulseCell_Test_MultiInflow_WithDefault : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Test_MultiInflow_WithDefault) == 0x48, "CPulseCell_Test_MultiInflow_WithDefault size should be 0x48");
+
+#endif
 	}
 }

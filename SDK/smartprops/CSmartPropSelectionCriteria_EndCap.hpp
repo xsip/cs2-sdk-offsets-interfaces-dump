@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bStart; // 0x48 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bEnd; // 0x88 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_EndCap, m_bStart) == 0x48, "m_bStart in CSmartPropSelectionCriteria_EndCap should be at offset 0x48");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_EndCap, m_bEnd) == 0x88, "m_bEnd in CSmartPropSelectionCriteria_EndCap should be at offset 0x88");
 		static_assert(sizeof(CS2::smartprops::CSmartPropSelectionCriteria_EndCap) == 0xC8, "CSmartPropSelectionCriteria_EndCap size should be 0xC8");
+
+#endif
 	}
 }

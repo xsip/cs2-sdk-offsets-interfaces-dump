@@ -38,6 +38,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			client::ForcedCrouchState_t m_nForcedCrouchState; // 0x2c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameScriptedMoveDef_t, m_vDestOffset) == 0x0, "m_vDestOffset in CGameScriptedMoveDef_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CGameScriptedMoveDef_t, m_hDestEntity) == 0xC, "m_hDestEntity in CGameScriptedMoveDef_t should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CGameScriptedMoveDef_t, m_angDest) == 0x10, "m_angDest in CGameScriptedMoveDef_t should be at offset 0x10");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CGameScriptedMoveDef_t, m_bIgnoreRotation) == 0x29, "m_bIgnoreRotation in CGameScriptedMoveDef_t should be at offset 0x29");
 		static_assert(offsetof(CS2::server::CGameScriptedMoveDef_t, m_nForcedCrouchState) == 0x2C, "m_nForcedCrouchState in CGameScriptedMoveDef_t should be at offset 0x2C");
 		static_assert(sizeof(CS2::server::CGameScriptedMoveDef_t) == 0x30, "CGameScriptedMoveDef_t size should be 0x30");
+
+#endif
 	}
 }

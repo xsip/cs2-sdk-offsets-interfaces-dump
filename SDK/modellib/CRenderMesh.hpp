@@ -42,6 +42,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			modellib::CRenderGroom* m_pGroomData; // 0x208 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_sceneObjects) == 0x10, "m_sceneObjects in CRenderMesh should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_constraints) == 0xB8, "m_constraints in CRenderMesh should be at offset 0xB8");
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_skeleton) == 0xC8, "m_skeleton in CRenderMesh should be at offset 0xC8");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_meshDeformParams) == 0x1F8, "m_meshDeformParams in CRenderMesh should be at offset 0x1F8");
 		static_assert(offsetof(CS2::modellib::CRenderMesh, m_pGroomData) == 0x208, "m_pGroomData in CRenderMesh should be at offset 0x208");
 		static_assert(sizeof(CS2::modellib::CRenderMesh) == 0x210, "CRenderMesh size should be 0x210");
+
+#endif
 	}
 }

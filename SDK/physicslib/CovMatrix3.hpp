@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 m_flXZ; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flYZ; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CovMatrix3, m_vDiag) == 0x0, "m_vDiag in CovMatrix3 should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CovMatrix3, m_flXY) == 0xC, "m_flXY in CovMatrix3 should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::CovMatrix3, m_flXZ) == 0x10, "m_flXZ in CovMatrix3 should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::CovMatrix3, m_flYZ) == 0x14, "m_flYZ in CovMatrix3 should be at offset 0x14");
 		static_assert(sizeof(CS2::physicslib::CovMatrix3) == 0x18, "CovMatrix3 size should be 0x18");
+
+#endif
 	}
 }

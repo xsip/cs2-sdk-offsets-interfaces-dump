@@ -30,10 +30,13 @@ namespace CS2 {
 			// char m_hLastWeapon[0x4]; // 0x64 | Schema_Atomic | Size: 0x4
 			uint16_t m_iAmmo[32]; // 0x68 | Schema_FixedArray | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPlayer_WeaponServices, m_hMyWeapons) == 0x48, "m_hMyWeapons in CPlayer_WeaponServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CPlayer_WeaponServices, m_hActiveWeapon) == 0x60, "m_hActiveWeapon in CPlayer_WeaponServices should be at offset 0x60");
 		static_assert(offsetof(CS2::client::CPlayer_WeaponServices, m_hLastWeapon) == 0x64, "m_hLastWeapon in CPlayer_WeaponServices should be at offset 0x64");
 		static_assert(offsetof(CS2::client::CPlayer_WeaponServices, m_iAmmo) == 0x68, "m_iAmmo in CPlayer_WeaponServices should be at offset 0x68");
 		static_assert(sizeof(CS2::client::CPlayer_WeaponServices) == 0xA8, "CPlayer_WeaponServices size should be 0xA8");
+
+#endif
 	}
 }

@@ -28,9 +28,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVectorFixedGrowable<GlobalTypes::CGlobalSymbol> m_comparisionIDs; // 0x18 | Schema_Atomic | Size: 0x28
 			char m_comparisionIDs[0x28]; // 0x18 | Schema_Atomic | Size: 0x28
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIDComparisonNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmIDComparisonNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmIDComparisonNode_CDefinition, m_comparison) == 0x12, "m_comparison in CNmIDComparisonNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmIDComparisonNode_CDefinition, m_comparisionIDs) == 0x18, "m_comparisionIDs in CNmIDComparisonNode::CDefinition should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmIDComparisonNode_CDefinition) == 0x40, "CNmIDComparisonNode::CDefinition size should be 0x40");
+
+#endif
 	}
 }

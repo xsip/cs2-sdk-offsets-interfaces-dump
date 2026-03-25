@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bCubeRoot; // 0x1fd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nBBoxType) == 0x1D8, "m_nBBoxType in C_OP_RemapModelVolumetoCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nInControlPointNumber) == 0x1DC, "m_nInControlPointNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_nOutControlPointNumber) == 0x1E0, "m_nOutControlPointNumber in C_OP_RemapModelVolumetoCP should be at offset 0x1E0");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_bBBoxOnly) == 0x1FC, "m_bBBoxOnly in C_OP_RemapModelVolumetoCP should be at offset 0x1FC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapModelVolumetoCP, m_bCubeRoot) == 0x1FD, "m_bCubeRoot in C_OP_RemapModelVolumetoCP should be at offset 0x1FD");
 		static_assert(sizeof(CS2::particles::C_OP_RemapModelVolumetoCP) == 0x200, "C_OP_RemapModelVolumetoCP size should be 0x200");
+
+#endif
 	}
 }

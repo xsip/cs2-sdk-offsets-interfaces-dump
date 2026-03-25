@@ -28,9 +28,12 @@ namespace CS2 {
 			particleslib::CPerParticleVecInput m_vecPoint1; // 0x1d8 | Schema_DeclaredClass | Size: 0x6b8
 			particleslib::CPerParticleVecInput m_vecPoint2; // 0x890 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DirectionBetweenVecsToVec, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_DirectionBetweenVecsToVec should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DirectionBetweenVecsToVec, m_vecPoint1) == 0x1D8, "m_vecPoint1 in C_OP_DirectionBetweenVecsToVec should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_DirectionBetweenVecsToVec, m_vecPoint2) == 0x890, "m_vecPoint2 in C_OP_DirectionBetweenVecsToVec should be at offset 0x890");
 		static_assert(sizeof(CS2::particles::C_OP_DirectionBetweenVecsToVec) == 0xF48, "C_OP_DirectionBetweenVecsToVec size should be 0xF48");
+
+#endif
 	}
 }

@@ -28,11 +28,14 @@ namespace CS2 {
 			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_nOutControlPointNumber) == 0x1D8, "m_nOutControlPointNumber in C_OP_RemapBoundingVolumetoCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flInputMin) == 0x1DC, "m_flInputMin in C_OP_RemapBoundingVolumetoCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flInputMax) == 0x1E0, "m_flInputMax in C_OP_RemapBoundingVolumetoCP should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flOutputMin) == 0x1E4, "m_flOutputMin in C_OP_RemapBoundingVolumetoCP should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapBoundingVolumetoCP, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_OP_RemapBoundingVolumetoCP should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_RemapBoundingVolumetoCP) == 0x1F0, "C_OP_RemapBoundingVolumetoCP size should be 0x1F0");
+
+#endif
 	}
 }

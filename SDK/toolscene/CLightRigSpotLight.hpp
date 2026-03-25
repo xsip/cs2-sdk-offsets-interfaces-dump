@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bCastShadows; // 0x48 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::toolscene::CLightRigSpotLight, m_flOuterConeAngle) == 0x40, "m_flOuterConeAngle in CLightRigSpotLight should be at offset 0x40");
 		static_assert(offsetof(CS2::toolscene::CLightRigSpotLight, m_flInnerConeAngle) == 0x44, "m_flInnerConeAngle in CLightRigSpotLight should be at offset 0x44");
 		static_assert(offsetof(CS2::toolscene::CLightRigSpotLight, m_bCastShadows) == 0x48, "m_bCastShadows in CLightRigSpotLight should be at offset 0x48");
 		static_assert(sizeof(CS2::toolscene::CLightRigSpotLight) == 0x4C, "CLightRigSpotLight size should be 0x4C");
+
+#endif
 	}
 }

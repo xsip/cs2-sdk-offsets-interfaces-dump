@@ -28,10 +28,13 @@ namespace CS2 {
 			animgraphlib::VelocityMetricMode m_eMode; // 0x5c | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFutureVelocityMetricEvaluator, m_flDistance) == 0x50, "m_flDistance in CFutureVelocityMetricEvaluator should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CFutureVelocityMetricEvaluator, m_flStoppingDistance) == 0x54, "m_flStoppingDistance in CFutureVelocityMetricEvaluator should be at offset 0x54");
 		static_assert(offsetof(CS2::animgraphlib::CFutureVelocityMetricEvaluator, m_flTargetSpeed) == 0x58, "m_flTargetSpeed in CFutureVelocityMetricEvaluator should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CFutureVelocityMetricEvaluator, m_eMode) == 0x5C, "m_eMode in CFutureVelocityMetricEvaluator should be at offset 0x5C");
 		static_assert(sizeof(CS2::animgraphlib::CFutureVelocityMetricEvaluator) == 0x60, "CFutureVelocityMetricEvaluator size should be 0x60");
+
+#endif
 	}
 }

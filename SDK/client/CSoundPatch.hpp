@@ -46,6 +46,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_iszClassName; // 0xa8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSoundPatch, m_pitch) == 0x8, "m_pitch in CSoundPatch should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CSoundPatch, m_volume) == 0x18, "m_volume in CSoundPatch should be at offset 0x18");
 		static_assert(offsetof(CS2::client::CSoundPatch, m_shutdownTime) == 0x3C, "m_shutdownTime in CSoundPatch should be at offset 0x3C");
@@ -60,5 +61,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CSoundPatch, m_bUpdatedSoundOrigin) == 0xA4, "m_bUpdatedSoundOrigin in CSoundPatch should be at offset 0xA4");
 		static_assert(offsetof(CS2::client::CSoundPatch, m_iszClassName) == 0xA8, "m_iszClassName in CSoundPatch should be at offset 0xA8");
 		static_assert(sizeof(CS2::client::CSoundPatch) == 0xB0, "CSoundPatch size should be 0xB0");
+
+#endif
 	}
 }

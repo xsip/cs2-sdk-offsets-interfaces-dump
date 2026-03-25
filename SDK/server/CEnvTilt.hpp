@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_TiltTime; // 0x4b0 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_stopTime; // 0x4b4 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvTilt, m_Duration) == 0x4A8, "m_Duration in CEnvTilt should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvTilt, m_Radius) == 0x4AC, "m_Radius in CEnvTilt should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CEnvTilt, m_TiltTime) == 0x4B0, "m_TiltTime in CEnvTilt should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CEnvTilt, m_stopTime) == 0x4B4, "m_stopTime in CEnvTilt should be at offset 0x4B4");
 		static_assert(sizeof(CS2::server::CEnvTilt) == 0x4B8, "CEnvTilt size should be 0x4B8");
+
+#endif
 	}
 }

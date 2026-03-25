@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CSmartPropAttributeAngles m_vRotation; // 0x50 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Rotate, m_vRotation) == 0x50, "m_vRotation in CSmartPropOperation_Rotate should be at offset 0x50");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_Rotate) == 0x90, "CSmartPropOperation_Rotate size should be 0x90");
+
+#endif
 	}
 }

@@ -27,8 +27,11 @@ namespace CS2 {
 			int32_t m_nBlockedTeamNumber; // 0x73c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncNavBlocker, m_bDisabled) == 0x738, "m_bDisabled in CFuncNavBlocker should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CFuncNavBlocker, m_nBlockedTeamNumber) == 0x73C, "m_nBlockedTeamNumber in CFuncNavBlocker should be at offset 0x73C");
 		static_assert(sizeof(CS2::server::CFuncNavBlocker) == 0x748, "CFuncNavBlocker size should be 0x748");
+
+#endif
 	}
 }

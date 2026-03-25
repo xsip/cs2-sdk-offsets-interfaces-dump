@@ -25,8 +25,11 @@ namespace CS2 {
 			animgraphlib::PoseType_t m_eType; // 0x2 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CPoseHandle, m_nIndex) == 0x0, "m_nIndex in CPoseHandle should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CPoseHandle, m_eType) == 0x2, "m_eType in CPoseHandle should be at offset 0x2");
 		static_assert(sizeof(CS2::animgraphlib::CPoseHandle) == 0x4, "CPoseHandle size should be 0x4");
+
+#endif
 	}
 }

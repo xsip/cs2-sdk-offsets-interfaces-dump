@@ -30,10 +30,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<smartprops::ColorChoice_t> m_ColorChoices; // 0x110 | Schema_Atomic | Size: 0x18
 			// char m_ColorChoices[0x18]; // 0x110 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetTintColor, m_SelectionMode) == 0x50, "m_SelectionMode in CSmartPropOperation_SetTintColor should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetTintColor, m_ColorSelection) == 0x90, "m_ColorSelection in CSmartPropOperation_SetTintColor should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetTintColor, m_Mode) == 0xD0, "m_Mode in CSmartPropOperation_SetTintColor should be at offset 0xD0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetTintColor, m_ColorChoices) == 0x110, "m_ColorChoices in CSmartPropOperation_SetTintColor should be at offset 0x110");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_SetTintColor) == 0x128, "CSmartPropOperation_SetTintColor size should be 0x128");
+
+#endif
 	}
 }

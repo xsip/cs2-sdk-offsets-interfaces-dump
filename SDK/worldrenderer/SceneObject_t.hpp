@@ -40,6 +40,7 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCRenderMesh> m_renderable; // 0x80 | Schema_Atomic | Size: 0x8
 			char m_renderable[0x8]; // 0x80 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::SceneObject_t, m_nObjectID) == 0x0, "m_nObjectID in SceneObject_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::SceneObject_t, m_vTransform) == 0x4, "m_vTransform in SceneObject_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::SceneObject_t, m_flFadeStartDistance) == 0x34, "m_flFadeStartDistance in SceneObject_t should be at offset 0x34");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::SceneObject_t, m_renderableModel) == 0x78, "m_renderableModel in SceneObject_t should be at offset 0x78");
 		static_assert(offsetof(CS2::worldrenderer::SceneObject_t, m_renderable) == 0x80, "m_renderable in SceneObject_t should be at offset 0x80");
 		static_assert(sizeof(CS2::worldrenderer::SceneObject_t) == 0x88, "SceneObject_t size should be 0x88");
+
+#endif
 	}
 }

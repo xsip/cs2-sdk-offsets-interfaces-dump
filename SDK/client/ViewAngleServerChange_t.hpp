@@ -28,9 +28,12 @@ namespace CS2 {
 			uint32_t nIndex; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::ViewAngleServerChange_t, nType) == 0x30, "nType in ViewAngleServerChange_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::ViewAngleServerChange_t, qAngle) == 0x34, "qAngle in ViewAngleServerChange_t should be at offset 0x34");
 		static_assert(offsetof(CS2::client::ViewAngleServerChange_t, nIndex) == 0x40, "nIndex in ViewAngleServerChange_t should be at offset 0x40");
 		static_assert(sizeof(CS2::client::ViewAngleServerChange_t) == 0x48, "ViewAngleServerChange_t size should be 0x48");
+
+#endif
 	}
 }

@@ -24,8 +24,11 @@ namespace CS2 {
 			int32_t m_nEventIdx; // 0x0 | Schema_Builtin | Size: 0x4
 			animlib::NmPercent_t m_percentageThrough; // 0x4 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::NmSyncTrackTime_t, m_nEventIdx) == 0x0, "m_nEventIdx in NmSyncTrackTime_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::NmSyncTrackTime_t, m_percentageThrough) == 0x4, "m_percentageThrough in NmSyncTrackTime_t should be at offset 0x4");
 		static_assert(sizeof(CS2::animlib::NmSyncTrackTime_t) == 0x8, "NmSyncTrackTime_t size should be 0x8");
+
+#endif
 	}
 }

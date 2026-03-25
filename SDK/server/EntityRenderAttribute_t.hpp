@@ -25,8 +25,11 @@ namespace CS2 {
 			GlobalTypes::Vector4D m_Values; // 0x34 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::EntityRenderAttribute_t, m_ID) == 0x30, "m_ID in EntityRenderAttribute_t should be at offset 0x30");
 		static_assert(offsetof(CS2::server::EntityRenderAttribute_t, m_Values) == 0x34, "m_Values in EntityRenderAttribute_t should be at offset 0x34");
 		static_assert(sizeof(CS2::server::EntityRenderAttribute_t) == 0x48, "EntityRenderAttribute_t size should be 0x48");
+
+#endif
 	}
 }

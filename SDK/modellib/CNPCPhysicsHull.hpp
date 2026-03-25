@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 m_flGroundBoxWidth; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CNPCPhysicsHull, m_sName) == 0x0, "m_sName in CNPCPhysicsHull should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CNPCPhysicsHull, m_eType) == 0x8, "m_eType in CNPCPhysicsHull should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CNPCPhysicsHull, m_flCapsuleHeight) == 0xC, "m_flCapsuleHeight in CNPCPhysicsHull should be at offset 0xC");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CNPCPhysicsHull, m_flGroundBoxHeight) == 0x2C, "m_flGroundBoxHeight in CNPCPhysicsHull should be at offset 0x2C");
 		static_assert(offsetof(CS2::modellib::CNPCPhysicsHull, m_flGroundBoxWidth) == 0x30, "m_flGroundBoxWidth in CNPCPhysicsHull should be at offset 0x30");
 		static_assert(sizeof(CS2::modellib::CNPCPhysicsHull) == 0x38, "CNPCPhysicsHull size should be 0x38");
+
+#endif
 	}
 }

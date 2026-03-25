@@ -31,6 +31,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_sSurfaceProperty; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_keyValueText; // 0x50 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::PermModelInfo_t, m_nFlags) == 0x0, "m_nFlags in PermModelInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::PermModelInfo_t, m_vHullMin) == 0x4, "m_vHullMin in PermModelInfo_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::PermModelInfo_t, m_vHullMax) == 0x10, "m_vHullMax in PermModelInfo_t should be at offset 0x10");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::PermModelInfo_t, m_sSurfaceProperty) == 0x48, "m_sSurfaceProperty in PermModelInfo_t should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::PermModelInfo_t, m_keyValueText) == 0x50, "m_keyValueText in PermModelInfo_t should be at offset 0x50");
 		static_assert(sizeof(CS2::modellib::PermModelInfo_t) == 0x58, "PermModelInfo_t size should be 0x58");
+
+#endif
 	}
 }

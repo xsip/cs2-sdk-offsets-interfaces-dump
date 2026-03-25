@@ -22,6 +22,9 @@ namespace CS2 {
 		class CBtNodeComposite : public CS2::server::CBtNode {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CBtNodeComposite) == 0x58, "CBtNodeComposite size should be 0x58");
+
+#endif
 	}
 }

@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_Command; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::KeyValues3 m_Args; // 0x50 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_Command, m_Command) == 0x48, "m_Command in CModelConfigElement_Command should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_Command, m_Args) == 0x50, "m_Args in CModelConfigElement_Command should be at offset 0x50");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_Command) == 0x60, "CModelConfigElement_Command size should be 0x60");
+
+#endif
 	}
 }

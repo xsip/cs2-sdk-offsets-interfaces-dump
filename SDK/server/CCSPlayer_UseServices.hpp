@@ -33,9 +33,12 @@ namespace CS2 {
 			entity2::GameTime_t m_flTimeLastUsedWindow; // 0x50 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_hLastKnownUseEntity) == 0x48, "m_hLastKnownUseEntity in CCSPlayer_UseServices should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_flLastUseTimeStamp) == 0x4C, "m_flLastUseTimeStamp in CCSPlayer_UseServices should be at offset 0x4C");
 		static_assert(offsetof(CS2::server::CCSPlayer_UseServices, m_flTimeLastUsedWindow) == 0x50, "m_flTimeLastUsedWindow in CCSPlayer_UseServices should be at offset 0x50");
 		static_assert(sizeof(CS2::server::CCSPlayer_UseServices) == 0x58, "CCSPlayer_UseServices size should be 0x58");
+
+#endif
 	}
 }

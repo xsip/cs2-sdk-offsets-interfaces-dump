@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flOutputMax; // 0x1e8 | Schema_Builtin | Size: 0x4
 			float32 m_flRemapTime; // 0x1ec | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_bProportional) == 0x1D0, "m_bProportional in C_OP_RemapScalarOnceTimed should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_nFieldInput) == 0x1D4, "m_nFieldInput in C_OP_RemapScalarOnceTimed should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_OP_RemapScalarOnceTimed should be at offset 0x1D8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flOutputMax) == 0x1E8, "m_flOutputMax in C_OP_RemapScalarOnceTimed should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapScalarOnceTimed, m_flRemapTime) == 0x1EC, "m_flRemapTime in C_OP_RemapScalarOnceTimed should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::C_OP_RemapScalarOnceTimed) == 0x1F0, "C_OP_RemapScalarOnceTimed size should be 0x1F0");
+
+#endif
 	}
 }

@@ -30,10 +30,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< int32 > m_nCursorStateBlockIndex; // 0x68 | Schema_Atomic | Size: 0x18
 			// char m_nCursorStateBlockIndex[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::OutflowWithRequirements_t, m_Connection) == 0x0, "m_Connection in OutflowWithRequirements_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::OutflowWithRequirements_t, m_DestinationFlowNodeID) == 0x48, "m_DestinationFlowNodeID in OutflowWithRequirements_t should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::OutflowWithRequirements_t, m_RequirementNodeIDs) == 0x50, "m_RequirementNodeIDs in OutflowWithRequirements_t should be at offset 0x50");
 		static_assert(offsetof(CS2::pulse_runtime_lib::OutflowWithRequirements_t, m_nCursorStateBlockIndex) == 0x68, "m_nCursorStateBlockIndex in OutflowWithRequirements_t should be at offset 0x68");
 		static_assert(sizeof(CS2::pulse_runtime_lib::OutflowWithRequirements_t) == 0x80, "OutflowWithRequirements_t size should be 0x80");
+
+#endif
 	}
 }

@@ -26,11 +26,14 @@ namespace CS2 {
 			uint16_t m_nSDFRigidIndex; // 0x6 | Schema_Builtin | Size: 0x2
 			uint16_t m_nCollisionPlaneIndex; // 0x8 | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeRigidColliderIndices_t, m_nTaperedCapsuleRigidIndex) == 0x0, "m_nTaperedCapsuleRigidIndex in FeRigidColliderIndices_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeRigidColliderIndices_t, m_nSphereRigidIndex) == 0x2, "m_nSphereRigidIndex in FeRigidColliderIndices_t should be at offset 0x2");
 		static_assert(offsetof(CS2::physicslib::FeRigidColliderIndices_t, m_nBoxRigidIndex) == 0x4, "m_nBoxRigidIndex in FeRigidColliderIndices_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeRigidColliderIndices_t, m_nSDFRigidIndex) == 0x6, "m_nSDFRigidIndex in FeRigidColliderIndices_t should be at offset 0x6");
 		static_assert(offsetof(CS2::physicslib::FeRigidColliderIndices_t, m_nCollisionPlaneIndex) == 0x8, "m_nCollisionPlaneIndex in FeRigidColliderIndices_t should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::FeRigidColliderIndices_t) == 0xA, "FeRigidColliderIndices_t size should be 0xA");
+
+#endif
 	}
 }

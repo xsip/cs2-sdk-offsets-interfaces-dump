@@ -26,9 +26,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg> m_Args; // 0x18 | Schema_Atomic | Size: 0x10
 			char m_Args[0x10]; // 0x18 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_PublicOutput, m_Name) == 0x0, "m_Name in CPulse_PublicOutput should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_PublicOutput, m_Description) == 0x10, "m_Description in CPulse_PublicOutput should be at offset 0x10");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_PublicOutput, m_Args) == 0x18, "m_Args in CPulse_PublicOutput should be at offset 0x18");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_PublicOutput) == 0x28, "CPulse_PublicOutput size should be 0x28");
+
+#endif
 	}
 }

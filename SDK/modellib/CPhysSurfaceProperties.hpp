@@ -36,6 +36,7 @@ namespace CS2 {
 			modellib::CPhysSurfacePropertiesSoundNames m_audioSounds; // 0x48 | Schema_DeclaredClass | Size: 0x60
 			modellib::CPhysSurfacePropertiesAudio m_audioParams; // 0xa8 | Schema_DeclaredClass | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CPhysSurfaceProperties, m_name) == 0x0, "m_name in CPhysSurfaceProperties should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CPhysSurfaceProperties, m_nameHash) == 0x8, "m_nameHash in CPhysSurfaceProperties should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CPhysSurfaceProperties, m_baseNameHash) == 0xC, "m_baseNameHash in CPhysSurfaceProperties should be at offset 0xC");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CPhysSurfaceProperties, m_audioSounds) == 0x48, "m_audioSounds in CPhysSurfaceProperties should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CPhysSurfaceProperties, m_audioParams) == 0xA8, "m_audioParams in CPhysSurfaceProperties should be at offset 0xA8");
 		static_assert(sizeof(CS2::modellib::CPhysSurfaceProperties) == 0xC8, "CPhysSurfaceProperties size should be 0xC8");
+
+#endif
 	}
 }

@@ -33,6 +33,7 @@ namespace CS2 {
 			float32 m_flLastLandedVelocityZ; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerModernJump, m_nLastActualJumpPressTick) == 0x10, "m_nLastActualJumpPressTick in CCSPlayerModernJump should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CCSPlayerModernJump, m_flLastActualJumpPressFrac) == 0x14, "m_flLastActualJumpPressFrac in CCSPlayerModernJump should be at offset 0x14");
 		static_assert(offsetof(CS2::server::CCSPlayerModernJump, m_nLastUsableJumpPressTick) == 0x18, "m_nLastUsableJumpPressTick in CCSPlayerModernJump should be at offset 0x18");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerModernJump, m_flLastLandedVelocityY) == 0x2C, "m_flLastLandedVelocityY in CCSPlayerModernJump should be at offset 0x2C");
 		static_assert(offsetof(CS2::server::CCSPlayerModernJump, m_flLastLandedVelocityZ) == 0x30, "m_flLastLandedVelocityZ in CCSPlayerModernJump should be at offset 0x30");
 		static_assert(sizeof(CS2::server::CCSPlayerModernJump) == 0x38, "CCSPlayerModernJump size should be 0x38");
+
+#endif
 	}
 }

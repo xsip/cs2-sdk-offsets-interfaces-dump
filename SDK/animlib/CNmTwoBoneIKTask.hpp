@@ -37,6 +37,7 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_debugEffectorBoneID; // 0xc0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKTask, m_nEffectorBoneIdx) == 0x58, "m_nEffectorBoneIdx in CNmTwoBoneIKTask should be at offset 0x58");
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKTask, m_nEffectorTargetBoneIdx) == 0x5C, "m_nEffectorTargetBoneIdx in CNmTwoBoneIKTask should be at offset 0x5C");
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKTask, m_targetTransform) == 0x60, "m_targetTransform in CNmTwoBoneIKTask should be at offset 0x60");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKTask, m_flReferencePoseTwistWeight) == 0xBC, "m_flReferencePoseTwistWeight in CNmTwoBoneIKTask should be at offset 0xBC");
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKTask, m_debugEffectorBoneID) == 0xC0, "m_debugEffectorBoneID in CNmTwoBoneIKTask should be at offset 0xC0");
 		static_assert(sizeof(CS2::animlib::CNmTwoBoneIKTask) == 0xD0, "CNmTwoBoneIKTask size should be 0xD0");
+
+#endif
 	}
 }

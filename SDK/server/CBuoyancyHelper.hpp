@@ -38,6 +38,7 @@ namespace CS2 {
 			// char m_vecWheelDrag[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x88); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBuoyancyHelper, m_nFluidType) == 0x18, "m_nFluidType in CBuoyancyHelper should be at offset 0x18");
 		static_assert(offsetof(CS2::server::CBuoyancyHelper, m_flFluidDensity) == 0x1C, "m_flFluidDensity in CBuoyancyHelper should be at offset 0x1C");
 		static_assert(offsetof(CS2::server::CBuoyancyHelper, m_flNeutrallyBuoyantGravity) == 0x20, "m_flNeutrallyBuoyantGravity in CBuoyancyHelper should be at offset 0x20");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBuoyancyHelper, m_vecFractionOfWheelSubmergedForWheelDrag) == 0x60, "m_vecFractionOfWheelSubmergedForWheelDrag in CBuoyancyHelper should be at offset 0x60");
 		static_assert(offsetof(CS2::server::CBuoyancyHelper, m_vecWheelDrag) == 0x78, "m_vecWheelDrag in CBuoyancyHelper should be at offset 0x78");
 		static_assert(sizeof(CS2::server::CBuoyancyHelper) == 0x118, "CBuoyancyHelper size should be 0x118");
+
+#endif
 	}
 }

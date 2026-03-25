@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_fDrag; // 0x910 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_ModelDampenMovement should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bBoundBox) == 0x1D4, "m_bBoundBox in C_OP_ModelDampenMovement should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_bOutside) == 0x1D5, "m_bOutside in C_OP_ModelDampenMovement should be at offset 0x1D5");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_vecPosOffset) == 0x258, "m_vecPosOffset in C_OP_ModelDampenMovement should be at offset 0x258");
 		static_assert(offsetof(CS2::particles::C_OP_ModelDampenMovement, m_fDrag) == 0x910, "m_fDrag in C_OP_ModelDampenMovement should be at offset 0x910");
 		static_assert(sizeof(CS2::particles::C_OP_ModelDampenMovement) == 0x918, "C_OP_ModelDampenMovement size should be 0x918");
+
+#endif
 	}
 }

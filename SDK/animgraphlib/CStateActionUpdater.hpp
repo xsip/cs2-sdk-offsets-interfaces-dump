@@ -27,8 +27,11 @@ namespace CS2 {
 			animgraphlib::StateActionBehavior m_eBehavior; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStateActionUpdater, m_pAction) == 0x0, "m_pAction in CStateActionUpdater should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CStateActionUpdater, m_eBehavior) == 0x8, "m_eBehavior in CStateActionUpdater should be at offset 0x8");
 		static_assert(sizeof(CS2::animgraphlib::CStateActionUpdater) == 0x10, "CStateActionUpdater size should be 0x10");
+
+#endif
 	}
 }

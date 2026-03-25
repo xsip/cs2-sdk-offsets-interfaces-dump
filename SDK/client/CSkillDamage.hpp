@@ -25,9 +25,12 @@ namespace CS2 {
 			float32 m_flNPCDamageScalarVsNPC; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flPhysicsForceDamage; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSkillDamage, m_flDamage) == 0x0, "m_flDamage in CSkillDamage should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CSkillDamage, m_flNPCDamageScalarVsNPC) == 0x10, "m_flNPCDamageScalarVsNPC in CSkillDamage should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CSkillDamage, m_flPhysicsForceDamage) == 0x14, "m_flPhysicsForceDamage in CSkillDamage should be at offset 0x14");
 		static_assert(sizeof(CS2::client::CSkillDamage) == 0x18, "CSkillDamage size should be 0x18");
+
+#endif
 	}
 }

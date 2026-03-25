@@ -23,7 +23,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_vPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::VertexPositionColor_t, m_vPosition) == 0x0, "m_vPosition in VertexPositionColor_t should be at offset 0x0");
 		static_assert(sizeof(CS2::physicslib::VertexPositionColor_t) == 0x10, "VertexPositionColor_t size should be 0x10");
+
+#endif
 	}
 }

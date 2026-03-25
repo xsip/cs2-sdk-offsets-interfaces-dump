@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CGlobalSymbol m_value; // 0x10 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmConstIDNode_CDefinition, m_value) == 0x10, "m_value in CNmConstIDNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmConstIDNode_CDefinition) == 0x18, "CNmConstIDNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

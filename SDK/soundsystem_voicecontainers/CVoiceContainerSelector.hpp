@@ -30,9 +30,12 @@ namespace CS2 {
 			// char m_fProbabilityWeights[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x20); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_mode) == 0xA8, "m_mode in CVoiceContainerSelector should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_soundsToPlay) == 0xB0, "m_soundsToPlay in CVoiceContainerSelector should be at offset 0xB0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector, m_fProbabilityWeights) == 0xE8, "m_fProbabilityWeights in CVoiceContainerSelector should be at offset 0xE8");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerSelector) == 0x120, "CVoiceContainerSelector size should be 0x120");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			int16_t m_nFallbackNodeIdx; // 0x12 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmReferencedGraphNode_CDefinition, m_nReferencedGraphIdx) == 0x10, "m_nReferencedGraphIdx in CNmReferencedGraphNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmReferencedGraphNode_CDefinition, m_nFallbackNodeIdx) == 0x12, "m_nFallbackNodeIdx in CNmReferencedGraphNode::CDefinition should be at offset 0x12");
 		static_assert(sizeof(CS2::animlib::CNmReferencedGraphNode_CDefinition) == 0x18, "CNmReferencedGraphNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

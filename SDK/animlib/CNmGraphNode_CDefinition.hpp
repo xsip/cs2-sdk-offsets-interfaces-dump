@@ -24,7 +24,10 @@ namespace CS2 {
 			int16_t m_nNodeIdx; // 0x8 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmGraphNode_CDefinition, m_nNodeIdx) == 0x8, "m_nNodeIdx in CNmGraphNode::CDefinition should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::CNmGraphNode_CDefinition) == 0x10, "CNmGraphNode::CDefinition size should be 0x10");
+
+#endif
 	}
 }

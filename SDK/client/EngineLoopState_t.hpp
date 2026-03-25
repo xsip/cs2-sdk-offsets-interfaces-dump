@@ -26,10 +26,13 @@ namespace CS2 {
 			int32_t m_nRenderWidth; // 0x20 | Schema_Builtin | Size: 0x4
 			int32_t m_nRenderHeight; // 0x24 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EngineLoopState_t, m_nPlatWindowWidth) == 0x18, "m_nPlatWindowWidth in EngineLoopState_t should be at offset 0x18");
 		static_assert(offsetof(CS2::client::EngineLoopState_t, m_nPlatWindowHeight) == 0x1C, "m_nPlatWindowHeight in EngineLoopState_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::client::EngineLoopState_t, m_nRenderWidth) == 0x20, "m_nRenderWidth in EngineLoopState_t should be at offset 0x20");
 		static_assert(offsetof(CS2::client::EngineLoopState_t, m_nRenderHeight) == 0x24, "m_nRenderHeight in EngineLoopState_t should be at offset 0x24");
 		static_assert(sizeof(CS2::client::EngineLoopState_t) == 0x28, "EngineLoopState_t size should be 0x28");
+
+#endif
 	}
 }

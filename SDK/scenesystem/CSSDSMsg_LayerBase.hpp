@@ -27,11 +27,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_LayerName; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_displayText; // 0x28 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_LayerBase, m_viewId) == 0x0, "m_viewId in CSSDSMsg_LayerBase should be at offset 0x0");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_LayerBase, m_ViewName) == 0x10, "m_ViewName in CSSDSMsg_LayerBase should be at offset 0x10");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_LayerBase, m_nLayerId) == 0x18, "m_nLayerId in CSSDSMsg_LayerBase should be at offset 0x18");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_LayerBase, m_LayerName) == 0x20, "m_LayerName in CSSDSMsg_LayerBase should be at offset 0x20");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_LayerBase, m_displayText) == 0x28, "m_displayText in CSSDSMsg_LayerBase should be at offset 0x28");
 		static_assert(sizeof(CS2::scenesystem::CSSDSMsg_LayerBase) == 0x30, "CSSDSMsg_LayerBase size should be 0x30");
+
+#endif
 	}
 }

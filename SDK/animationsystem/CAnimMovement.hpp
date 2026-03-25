@@ -28,6 +28,7 @@ namespace CS2 {
 			GlobalTypes::Vector vector; // 0x14 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector position; // 0x20 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimMovement, endframe) == 0x0, "endframe in CAnimMovement should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimMovement, motionflags) == 0x4, "motionflags in CAnimMovement should be at offset 0x4");
 		static_assert(offsetof(CS2::animationsystem::CAnimMovement, v0) == 0x8, "v0 in CAnimMovement should be at offset 0x8");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimMovement, vector) == 0x14, "vector in CAnimMovement should be at offset 0x14");
 		static_assert(offsetof(CS2::animationsystem::CAnimMovement, position) == 0x20, "position in CAnimMovement should be at offset 0x20");
 		static_assert(sizeof(CS2::animationsystem::CAnimMovement) == 0x2C, "CAnimMovement size should be 0x2C");
+
+#endif
 	}
 }

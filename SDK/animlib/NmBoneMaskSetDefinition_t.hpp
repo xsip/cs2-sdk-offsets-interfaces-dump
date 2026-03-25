@@ -26,9 +26,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVector<animlib::CNmBoneWeightList> m_secondaryWeightLists; // 0x118 | Schema_Atomic | Size: 0x10
 			char m_secondaryWeightLists[0x10]; // 0x118 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::NmBoneMaskSetDefinition_t, m_ID) == 0x0, "m_ID in NmBoneMaskSetDefinition_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::NmBoneMaskSetDefinition_t, m_primaryWeightList) == 0x8, "m_primaryWeightList in NmBoneMaskSetDefinition_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::NmBoneMaskSetDefinition_t, m_secondaryWeightLists) == 0x118, "m_secondaryWeightLists in NmBoneMaskSetDefinition_t should be at offset 0x118");
 		static_assert(sizeof(CS2::animlib::NmBoneMaskSetDefinition_t) == 0x128, "NmBoneMaskSetDefinition_t size should be 0x128");
+
+#endif
 	}
 }

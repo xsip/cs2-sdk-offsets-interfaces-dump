@@ -41,6 +41,7 @@ namespace CS2 {
 			float32 m_flDofTiltToGround; // 0x688 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flZFar) == 0x608, "m_flZFar in C_CSGO_MapPreviewCameraPath should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flZNear) == 0x60C, "m_flZNear in C_CSGO_MapPreviewCameraPath should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_bLoop) == 0x610, "m_bLoop in C_CSGO_MapPreviewCameraPath should be at offset 0x610");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofFarBlurry) == 0x684, "m_flDofFarBlurry in C_CSGO_MapPreviewCameraPath should be at offset 0x684");
 		static_assert(offsetof(CS2::client::C_CSGO_MapPreviewCameraPath, m_flDofTiltToGround) == 0x688, "m_flDofTiltToGround in C_CSGO_MapPreviewCameraPath should be at offset 0x688");
 		static_assert(sizeof(CS2::client::C_CSGO_MapPreviewCameraPath) == 0x690, "C_CSGO_MapPreviewCameraPath size should be 0x690");
+
+#endif
 	}
 }

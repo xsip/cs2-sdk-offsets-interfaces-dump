@@ -28,11 +28,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_sName; // 0x28 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x20); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CConstraintSlave, m_qBaseOrientation) == 0x0, "m_qBaseOrientation in CConstraintSlave should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CConstraintSlave, m_vBasePosition) == 0x10, "m_vBasePosition in CConstraintSlave should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CConstraintSlave, m_nBoneHash) == 0x1C, "m_nBoneHash in CConstraintSlave should be at offset 0x1C");
 		static_assert(offsetof(CS2::modellib::CConstraintSlave, m_flWeight) == 0x20, "m_flWeight in CConstraintSlave should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CConstraintSlave, m_sName) == 0x28, "m_sName in CConstraintSlave should be at offset 0x28");
 		static_assert(sizeof(CS2::modellib::CConstraintSlave) == 0x50, "CConstraintSlave size should be 0x50");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flFeedbackGain; // 0x20 | Schema_Builtin | Size: 0x4
 			float32 m_flWidth; // 0x24 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDelayDesc_t, m_feedbackFilter) == 0x0, "m_feedbackFilter in VMixDelayDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDelayDesc_t, m_bEnableFilter) == 0x10, "m_bEnableFilter in VMixDelayDesc_t should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDelayDesc_t, m_flDelay) == 0x14, "m_flDelay in VMixDelayDesc_t should be at offset 0x14");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDelayDesc_t, m_flFeedbackGain) == 0x20, "m_flFeedbackGain in VMixDelayDesc_t should be at offset 0x20");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDelayDesc_t, m_flWidth) == 0x24, "m_flWidth in VMixDelayDesc_t should be at offset 0x24");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixDelayDesc_t) == 0x28, "VMixDelayDesc_t size should be 0x28");
+
+#endif
 	}
 }

@@ -42,6 +42,7 @@ namespace CS2 {
 			float32 m_flSelfIllumBlendToFull; // 0x21c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffect, m_nDetail2Combo) == 0x1D8, "m_nDetail2Combo in C_INIT_StatusEffect should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffect, m_flDetail2Rotation) == 0x1DC, "m_flDetail2Rotation in C_INIT_StatusEffect should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffect, m_flDetail2Scale) == 0x1E0, "m_flDetail2Scale in C_INIT_StatusEffect should be at offset 0x1E0");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffect, m_flMetalnessBlendToFull) == 0x218, "m_flMetalnessBlendToFull in C_INIT_StatusEffect should be at offset 0x218");
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffect, m_flSelfIllumBlendToFull) == 0x21C, "m_flSelfIllumBlendToFull in C_INIT_StatusEffect should be at offset 0x21C");
 		static_assert(sizeof(CS2::particles::C_INIT_StatusEffect) == 0x238, "C_INIT_StatusEffect size should be 0x238");
+
+#endif
 	}
 }

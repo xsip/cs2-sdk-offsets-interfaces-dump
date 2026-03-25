@@ -26,9 +26,12 @@ namespace CS2 {
 			pulse_runtime_lib::CPulse_ResumePoint m_WakeCancel; // 0x90 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_ResumePoint m_WakeFail; // 0xd8 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_TestWaitWithCursorState, m_WakeResume) == 0x48, "m_WakeResume in CPulseCell_TestWaitWithCursorState should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_TestWaitWithCursorState, m_WakeCancel) == 0x90, "m_WakeCancel in CPulseCell_TestWaitWithCursorState should be at offset 0x90");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_TestWaitWithCursorState, m_WakeFail) == 0xD8, "m_WakeFail in CPulseCell_TestWaitWithCursorState should be at offset 0xD8");
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_TestWaitWithCursorState) == 0x120, "CPulseCell_TestWaitWithCursorState size should be 0x120");
+
+#endif
 	}
 }

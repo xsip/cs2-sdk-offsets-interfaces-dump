@@ -41,6 +41,7 @@ namespace CS2 {
 			bool m_bSolidCollisionAtZeroWeight; // 0xcc | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CRagdollComponentUpdater, m_ragdollNodePaths) == 0x30, "m_ragdollNodePaths in CRagdollComponentUpdater should be at offset 0x30");
 		static_assert(offsetof(CS2::animgraphlib::CRagdollComponentUpdater, m_followAttachmentNodePaths) == 0x48, "m_followAttachmentNodePaths in CRagdollComponentUpdater should be at offset 0x48");
 		static_assert(offsetof(CS2::animgraphlib::CRagdollComponentUpdater, m_boneIndices) == 0x60, "m_boneIndices in CRagdollComponentUpdater should be at offset 0x60");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CRagdollComponentUpdater, m_flMaxStretch) == 0xC8, "m_flMaxStretch in CRagdollComponentUpdater should be at offset 0xC8");
 		static_assert(offsetof(CS2::animgraphlib::CRagdollComponentUpdater, m_bSolidCollisionAtZeroWeight) == 0xCC, "m_bSolidCollisionAtZeroWeight in CRagdollComponentUpdater should be at offset 0xCC");
 		static_assert(sizeof(CS2::animgraphlib::CRagdollComponentUpdater) == 0xD8, "CRagdollComponentUpdater size should be 0xD8");
+
+#endif
 	}
 }

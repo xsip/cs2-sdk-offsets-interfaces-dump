@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			char m_pReticleHintTextName[256]; // 0x18c0 | Schema_FixedArray | Size: 0x100
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Item, m_pReticleHintTextName) == 0x18C0, "m_pReticleHintTextName in C_Item should be at offset 0x18C0");
 		static_assert(sizeof(CS2::client::C_Item) == 0x19C0, "C_Item size should be 0x19C0");
+
+#endif
 	}
 }

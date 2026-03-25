@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bSolidBsp; // 0x930 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRotDoor, m_bSolidBsp) == 0x930, "m_bSolidBsp in CRotDoor should be at offset 0x930");
 		static_assert(sizeof(CS2::server::CRotDoor) == 0x938, "CRotDoor size should be 0x938");
+
+#endif
 	}
 }

@@ -35,6 +35,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_boneScaleParent; // 0x90 | Schema_Atomic | Size: 0x18
 			// char m_boneScaleParent[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::ModelSkeletonData_t, m_boneName) == 0x0, "m_boneName in ModelSkeletonData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::ModelSkeletonData_t, m_nParent) == 0x18, "m_nParent in ModelSkeletonData_t should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::ModelSkeletonData_t, m_boneSphere) == 0x30, "m_boneSphere in ModelSkeletonData_t should be at offset 0x30");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::ModelSkeletonData_t, m_boneRotParent) == 0x78, "m_boneRotParent in ModelSkeletonData_t should be at offset 0x78");
 		static_assert(offsetof(CS2::modellib::ModelSkeletonData_t, m_boneScaleParent) == 0x90, "m_boneScaleParent in ModelSkeletonData_t should be at offset 0x90");
 		static_assert(sizeof(CS2::modellib::ModelSkeletonData_t) == 0xA8, "ModelSkeletonData_t size should be 0xA8");
+
+#endif
 	}
 }

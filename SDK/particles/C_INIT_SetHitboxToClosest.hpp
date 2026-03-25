@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bUpdatePosition; // 0xa90 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_SetHitboxToClosest should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_nDesiredHitbox) == 0x1DC, "m_nDesiredHitbox in C_INIT_SetHitboxToClosest should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_vecHitBoxScale) == 0x1E0, "m_vecHitBoxScale in C_INIT_SetHitboxToClosest should be at offset 0x1E0");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_flHybridRatio) == 0x920, "m_flHybridRatio in C_INIT_SetHitboxToClosest should be at offset 0x920");
 		static_assert(offsetof(CS2::particles::C_INIT_SetHitboxToClosest, m_bUpdatePosition) == 0xA90, "m_bUpdatePosition in C_INIT_SetHitboxToClosest should be at offset 0xA90");
 		static_assert(sizeof(CS2::particles::C_INIT_SetHitboxToClosest) == 0xA98, "C_INIT_SetHitboxToClosest size should be 0xA98");
+
+#endif
 	}
 }

@@ -26,9 +26,12 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszInteractsAs; // 0x738 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_iszInteractsWith; // 0x740 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_bDisabled) == 0x730, "m_bDisabled in CFuncInteractionLayerClip should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_iszInteractsAs) == 0x738, "m_iszInteractsAs in CFuncInteractionLayerClip should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CFuncInteractionLayerClip, m_iszInteractsWith) == 0x740, "m_iszInteractsWith in CFuncInteractionLayerClip should be at offset 0x740");
 		static_assert(sizeof(CS2::server::CFuncInteractionLayerClip) == 0x748, "CFuncInteractionLayerClip size should be 0x748");
+
+#endif
 	}
 }

@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bClampV; // 0x30d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_nOrientationType) == 0x2DE8, "m_nOrientationType in CBaseTrailRenderer should be at offset 0x2DE8");
 		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_nOrientationControlPoint) == 0x2DEC, "m_nOrientationControlPoint in CBaseTrailRenderer should be at offset 0x2DEC");
 		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flMinSize) == 0x2DF0, "m_flMinSize in CBaseTrailRenderer should be at offset 0x2DF0");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_flEndFadeSize) == 0x2F68, "m_flEndFadeSize in CBaseTrailRenderer should be at offset 0x2F68");
 		static_assert(offsetof(CS2::particles::CBaseTrailRenderer, m_bClampV) == 0x30D8, "m_bClampV in CBaseTrailRenderer should be at offset 0x30D8");
 		static_assert(sizeof(CS2::particles::CBaseTrailRenderer) == 0x30E0, "CBaseTrailRenderer size should be 0x30E0");
+
+#endif
 	}
 }

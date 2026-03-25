@@ -29,10 +29,13 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flPlaneOffset; // 0x894 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_nPlaneControlPoint) == 0x1D0, "m_nPlaneControlPoint in C_OP_PlaneCull should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_vecPlaneDirection) == 0x1D8, "m_vecPlaneDirection in C_OP_PlaneCull should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_bLocalSpace) == 0x890, "m_bLocalSpace in C_OP_PlaneCull should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_OP_PlaneCull, m_flPlaneOffset) == 0x894, "m_flPlaneOffset in C_OP_PlaneCull should be at offset 0x894");
 		static_assert(sizeof(CS2::particles::C_OP_PlaneCull) == 0x898, "C_OP_PlaneCull size should be 0x898");
+
+#endif
 	}
 }

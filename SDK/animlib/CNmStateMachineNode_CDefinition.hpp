@@ -27,8 +27,11 @@ namespace CS2 {
 			int16_t m_nDefaultStateIndex; // 0x130 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_CDefinition, m_stateDefinitions) == 0x10, "m_stateDefinitions in CNmStateMachineNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_CDefinition, m_nDefaultStateIndex) == 0x130, "m_nDefaultStateIndex in CNmStateMachineNode::CDefinition should be at offset 0x130");
 		static_assert(sizeof(CS2::animlib::CNmStateMachineNode_CDefinition) == 0x138, "CNmStateMachineNode::CDefinition size should be 0x138");
+
+#endif
 	}
 }

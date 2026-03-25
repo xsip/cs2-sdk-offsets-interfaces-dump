@@ -27,11 +27,14 @@ namespace CS2 {
 			bool m_bLooping; // 0x1c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseParamDesc, m_sName) == 0x0, "m_sName in CSeqPoseParamDesc should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseParamDesc, m_flStart) == 0x10, "m_flStart in CSeqPoseParamDesc should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseParamDesc, m_flEnd) == 0x14, "m_flEnd in CSeqPoseParamDesc should be at offset 0x14");
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseParamDesc, m_flLoop) == 0x18, "m_flLoop in CSeqPoseParamDesc should be at offset 0x18");
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseParamDesc, m_bLooping) == 0x1C, "m_bLooping in CSeqPoseParamDesc should be at offset 0x1C");
 		static_assert(sizeof(CS2::animationsystem::CSeqPoseParamDesc) == 0x20, "CSeqPoseParamDesc size should be 0x20");
+
+#endif
 	}
 }

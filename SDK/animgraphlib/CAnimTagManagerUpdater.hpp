@@ -26,7 +26,10 @@ namespace CS2 {
 			// char m_tags[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimTagManagerUpdater, m_tags) == 0x38, "m_tags in CAnimTagManagerUpdater should be at offset 0x38");
 		static_assert(sizeof(CS2::animgraphlib::CAnimTagManagerUpdater) == 0x78, "CAnimTagManagerUpdater size should be 0x78");
+
+#endif
 	}
 }

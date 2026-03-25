@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bAttached; // 0x2c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::DynamicVolumeDef_t, m_source) == 0x0, "m_source in DynamicVolumeDef_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::DynamicVolumeDef_t, m_target) == 0x4, "m_target in DynamicVolumeDef_t should be at offset 0x4");
 		static_assert(offsetof(CS2::server::DynamicVolumeDef_t, m_nHullIdx) == 0x8, "m_nHullIdx in DynamicVolumeDef_t should be at offset 0x8");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::DynamicVolumeDef_t, m_nAreaDst) == 0x28, "m_nAreaDst in DynamicVolumeDef_t should be at offset 0x28");
 		static_assert(offsetof(CS2::server::DynamicVolumeDef_t, m_bAttached) == 0x2C, "m_bAttached in DynamicVolumeDef_t should be at offset 0x2C");
 		static_assert(sizeof(CS2::server::DynamicVolumeDef_t) == 0x30, "DynamicVolumeDef_t size should be 0x30");
+
+#endif
 	}
 }

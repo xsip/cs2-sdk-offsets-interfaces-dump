@@ -28,6 +28,7 @@ namespace CS2 {
 			float32 m_flListenerReverbModifierWhenSourceReverbIsActive; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CDSPMixgroupModifier, m_mixgroup) == 0x0, "m_mixgroup in CDSPMixgroupModifier should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem::CDSPMixgroupModifier, m_flModifier) == 0x8, "m_flModifier in CDSPMixgroupModifier should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CDSPMixgroupModifier, m_flModifierMin) == 0xC, "m_flModifierMin in CDSPMixgroupModifier should be at offset 0xC");
@@ -35,5 +36,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem::CDSPMixgroupModifier, m_flSourceModifierMin) == 0x14, "m_flSourceModifierMin in CDSPMixgroupModifier should be at offset 0x14");
 		static_assert(offsetof(CS2::soundsystem::CDSPMixgroupModifier, m_flListenerReverbModifierWhenSourceReverbIsActive) == 0x18, "m_flListenerReverbModifierWhenSourceReverbIsActive in CDSPMixgroupModifier should be at offset 0x18");
 		static_assert(sizeof(CS2::soundsystem::CDSPMixgroupModifier) == 0x20, "CDSPMixgroupModifier size should be 0x20");
+
+#endif
 	}
 }

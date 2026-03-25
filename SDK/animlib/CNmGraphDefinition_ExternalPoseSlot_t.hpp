@@ -24,8 +24,11 @@ namespace CS2 {
 			S2_PAD(0x6);
 			GlobalTypes::CGlobalSymbol m_slotID; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition_ExternalPoseSlot_t, m_nNodeIdx) == 0x0, "m_nNodeIdx in CNmGraphDefinition::ExternalPoseSlot_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition_ExternalPoseSlot_t, m_slotID) == 0x8, "m_slotID in CNmGraphDefinition::ExternalPoseSlot_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::CNmGraphDefinition_ExternalPoseSlot_t) == 0x10, "CNmGraphDefinition::ExternalPoseSlot_t size should be 0x10");
+
+#endif
 	}
 }

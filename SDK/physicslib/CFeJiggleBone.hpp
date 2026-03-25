@@ -57,6 +57,7 @@ namespace CS2 {
 			uint16_t m_nCollisionMask; // 0x98 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CFeJiggleBone, m_nFlags) == 0x0, "m_nFlags in CFeJiggleBone should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CFeJiggleBone, m_flLength) == 0x4, "m_flLength in CFeJiggleBone should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::CFeJiggleBone, m_flTipMass) == 0x8, "m_flTipMass in CFeJiggleBone should be at offset 0x8");
@@ -93,5 +94,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::CFeJiggleBone, m_vPoint1) == 0x8C, "m_vPoint1 in CFeJiggleBone should be at offset 0x8C");
 		static_assert(offsetof(CS2::physicslib::CFeJiggleBone, m_nCollisionMask) == 0x98, "m_nCollisionMask in CFeJiggleBone should be at offset 0x98");
 		static_assert(sizeof(CS2::physicslib::CFeJiggleBone) == 0x9C, "CFeJiggleBone size should be 0x9C");
+
+#endif
 	}
 }

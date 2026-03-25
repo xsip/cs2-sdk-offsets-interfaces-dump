@@ -29,10 +29,13 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x34c | Schema_DeclaredEnum | Size: 0x4
 			particleslib::CPerParticleFloatInput m_InputStrength; // 0x350 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_InputValue) == 0x1D8, "m_InputValue in C_INIT_InitFloat should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_nOutputField) == 0x348, "m_nOutputField in C_INIT_InitFloat should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_nSetMethod) == 0x34C, "m_nSetMethod in C_INIT_InitFloat should be at offset 0x34C");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFloat, m_InputStrength) == 0x350, "m_InputStrength in C_INIT_InitFloat should be at offset 0x350");
 		static_assert(sizeof(CS2::particles::C_INIT_InitFloat) == 0x4C0, "C_INIT_InitFloat size should be 0x4C0");
+
+#endif
 	}
 }

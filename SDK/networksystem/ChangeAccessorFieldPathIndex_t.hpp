@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			int32_t m_Value; // 0x0 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::networksystem::ChangeAccessorFieldPathIndex_t, m_Value) == 0x0, "m_Value in ChangeAccessorFieldPathIndex_t should be at offset 0x0");
 		static_assert(sizeof(CS2::networksystem::ChangeAccessorFieldPathIndex_t) == 0x4, "ChangeAccessorFieldPathIndex_t size should be 0x4");
+
+#endif
 	}
 }

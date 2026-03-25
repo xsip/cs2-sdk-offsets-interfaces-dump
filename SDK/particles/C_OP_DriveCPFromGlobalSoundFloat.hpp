@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_FieldName; // 0x200 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DriveCPFromGlobalSoundFloat, m_nOutputControlPoint) == 0x1D8, "m_nOutputControlPoint in C_OP_DriveCPFromGlobalSoundFloat should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_DriveCPFromGlobalSoundFloat, m_nOutputField) == 0x1DC, "m_nOutputField in C_OP_DriveCPFromGlobalSoundFloat should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_DriveCPFromGlobalSoundFloat, m_flInputMin) == 0x1E0, "m_flInputMin in C_OP_DriveCPFromGlobalSoundFloat should be at offset 0x1E0");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_DriveCPFromGlobalSoundFloat, m_OperatorName) == 0x1F8, "m_OperatorName in C_OP_DriveCPFromGlobalSoundFloat should be at offset 0x1F8");
 		static_assert(offsetof(CS2::particles::C_OP_DriveCPFromGlobalSoundFloat, m_FieldName) == 0x200, "m_FieldName in C_OP_DriveCPFromGlobalSoundFloat should be at offset 0x200");
 		static_assert(sizeof(CS2::particles::C_OP_DriveCPFromGlobalSoundFloat) == 0x210, "C_OP_DriveCPFromGlobalSoundFloat size should be 0x210");
+
+#endif
 	}
 }

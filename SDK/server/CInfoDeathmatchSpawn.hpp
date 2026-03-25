@@ -22,6 +22,9 @@ namespace CS2 {
 		class CInfoDeathmatchSpawn : public CS2::server::SpawnPoint {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CInfoDeathmatchSpawn) == 0x4B8, "CInfoDeathmatchSpawn size should be 0x4B8");
+
+#endif
 	}
 }

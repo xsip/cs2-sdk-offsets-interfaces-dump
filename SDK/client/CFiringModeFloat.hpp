@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			float32 m_flValues[2]; // 0x0 | Schema_FixedArray | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CFiringModeFloat, m_flValues) == 0x0, "m_flValues in CFiringModeFloat should be at offset 0x0");
 		static_assert(sizeof(CS2::client::CFiringModeFloat) == 0x8, "CFiringModeFloat size should be 0x8");
+
+#endif
 	}
 }

@@ -26,8 +26,11 @@ namespace CS2 {
 			float32 m_flFluidDensity; // 0x1070 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_TriggerBuoyancy, m_BuoyancyHelper) == 0xF58, "m_BuoyancyHelper in C_TriggerBuoyancy should be at offset 0xF58");
 		static_assert(offsetof(CS2::client::C_TriggerBuoyancy, m_flFluidDensity) == 0x1070, "m_flFluidDensity in C_TriggerBuoyancy should be at offset 0x1070");
 		static_assert(sizeof(CS2::client::C_TriggerBuoyancy) == 0x1078, "C_TriggerBuoyancy size should be 0x1078");
+
+#endif
 	}
 }

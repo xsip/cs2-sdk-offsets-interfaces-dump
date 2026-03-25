@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bIsStateMachineLayer; // 0xa | Schema_Builtin | Size: 0x1
 			animlib::NmPoseBlendMode_t m_blendMode; // 0xb | Schema_DeclaredEnum | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_LayerDefinition_t, m_nInputNodeIdx) == 0x0, "m_nInputNodeIdx in CNmLayerBlendNode::LayerDefinition_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_LayerDefinition_t, m_nWeightValueNodeIdx) == 0x2, "m_nWeightValueNodeIdx in CNmLayerBlendNode::LayerDefinition_t should be at offset 0x2");
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_LayerDefinition_t, m_nBoneMaskValueNodeIdx) == 0x4, "m_nBoneMaskValueNodeIdx in CNmLayerBlendNode::LayerDefinition_t should be at offset 0x4");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_LayerDefinition_t, m_bIsStateMachineLayer) == 0xA, "m_bIsStateMachineLayer in CNmLayerBlendNode::LayerDefinition_t should be at offset 0xA");
 		static_assert(offsetof(CS2::animlib::CNmLayerBlendNode_LayerDefinition_t, m_blendMode) == 0xB, "m_blendMode in CNmLayerBlendNode::LayerDefinition_t should be at offset 0xB");
 		static_assert(sizeof(CS2::animlib::CNmLayerBlendNode_LayerDefinition_t) == 0xC, "CNmLayerBlendNode::LayerDefinition_t size should be 0xC");
+
+#endif
 	}
 }

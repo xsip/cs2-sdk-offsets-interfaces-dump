@@ -24,8 +24,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlBinaryBlock m_BufferData; // 0x8 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::AggregateInstanceStreamOnDiskData_t, m_DecodedSize) == 0x0, "m_DecodedSize in AggregateInstanceStreamOnDiskData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::AggregateInstanceStreamOnDiskData_t, m_BufferData) == 0x8, "m_BufferData in AggregateInstanceStreamOnDiskData_t should be at offset 0x8");
 		static_assert(sizeof(CS2::worldrenderer::AggregateInstanceStreamOnDiskData_t) == 0x18, "AggregateInstanceStreamOnDiskData_t size should be 0x18");
+
+#endif
 	}
 }

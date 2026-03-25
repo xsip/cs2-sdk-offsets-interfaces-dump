@@ -36,6 +36,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeFloat m_flAlternateShiftWidth; // 0x320 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flAlternateShiftLength; // 0x360 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Layout2DGrid, m_flWidth) == 0xA0, "m_flWidth in CSmartPropElement_Layout2DGrid should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Layout2DGrid, m_flLength) == 0xE0, "m_flLength in CSmartPropElement_Layout2DGrid should be at offset 0xE0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Layout2DGrid, m_bVerticalLength) == 0x120, "m_bVerticalLength in CSmartPropElement_Layout2DGrid should be at offset 0x120");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Layout2DGrid, m_flAlternateShiftWidth) == 0x320, "m_flAlternateShiftWidth in CSmartPropElement_Layout2DGrid should be at offset 0x320");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Layout2DGrid, m_flAlternateShiftLength) == 0x360, "m_flAlternateShiftLength in CSmartPropElement_Layout2DGrid should be at offset 0x360");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_Layout2DGrid) == 0x3A0, "CSmartPropElement_Layout2DGrid size should be 0x3A0");
+
+#endif
 	}
 }

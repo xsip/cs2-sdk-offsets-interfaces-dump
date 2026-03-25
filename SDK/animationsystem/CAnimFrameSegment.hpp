@@ -26,10 +26,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlBinaryBlock m_container; // 0x10 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameSegment, m_nUniqueFrameIndex) == 0x0, "m_nUniqueFrameIndex in CAnimFrameSegment should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameSegment, m_nLocalElementMasks) == 0x4, "m_nLocalElementMasks in CAnimFrameSegment should be at offset 0x4");
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameSegment, m_nLocalChannel) == 0x8, "m_nLocalChannel in CAnimFrameSegment should be at offset 0x8");
 		static_assert(offsetof(CS2::animationsystem::CAnimFrameSegment, m_container) == 0x10, "m_container in CAnimFrameSegment should be at offset 0x10");
 		static_assert(sizeof(CS2::animationsystem::CAnimFrameSegment) == 0x20, "CAnimFrameSegment size should be 0x20");
+
+#endif
 	}
 }

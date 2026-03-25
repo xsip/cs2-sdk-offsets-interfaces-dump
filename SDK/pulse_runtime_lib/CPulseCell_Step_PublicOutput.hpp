@@ -25,7 +25,10 @@ namespace CS2 {
 			pulse_runtime_lib::PulseRuntimeOutputIndex_t m_OutputIndex; // 0x48 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Step_PublicOutput, m_OutputIndex) == 0x48, "m_OutputIndex in CPulseCell_Step_PublicOutput should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Step_PublicOutput) == 0x50, "CPulseCell_Step_PublicOutput size should be 0x50");
+
+#endif
 	}
 }

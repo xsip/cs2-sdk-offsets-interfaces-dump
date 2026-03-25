@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_vExtent; // 0x8a8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CScriptTriggerOnce, m_vExtent) == 0x8A8, "m_vExtent in CScriptTriggerOnce should be at offset 0x8A8");
 		static_assert(sizeof(CS2::server::CScriptTriggerOnce) == 0x8B8, "CScriptTriggerOnce size should be 0x8B8");
+
+#endif
 	}
 }

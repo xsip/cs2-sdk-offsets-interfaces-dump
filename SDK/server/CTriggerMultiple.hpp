@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			entity2::CEntityIOOutput m_OnTrigger; // 0x890 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerMultiple, m_OnTrigger) == 0x890, "m_OnTrigger in CTriggerMultiple should be at offset 0x890");
 		static_assert(sizeof(CS2::server::CTriggerMultiple) == 0x8A8, "CTriggerMultiple size should be 0x8A8");
+
+#endif
 	}
 }

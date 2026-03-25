@@ -74,6 +74,7 @@ namespace CS2 {
 			bool m_bAttachedToReferenceFrame; // 0xcda | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysicsProp, m_MotionEnabled) == 0xBB0, "m_MotionEnabled in CPhysicsProp should be at offset 0xBB0");
 		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAwakened) == 0xBC8, "m_OnAwakened in CPhysicsProp should be at offset 0xBC8");
 		static_assert(offsetof(CS2::server::CPhysicsProp, m_OnAwake) == 0xBE0, "m_OnAwake in CPhysicsProp should be at offset 0xBE0");
@@ -116,5 +117,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAwake) == 0xCD9, "m_bAwake in CPhysicsProp should be at offset 0xCD9");
 		static_assert(offsetof(CS2::server::CPhysicsProp, m_bAttachedToReferenceFrame) == 0xCDA, "m_bAttachedToReferenceFrame in CPhysicsProp should be at offset 0xCDA");
 		static_assert(sizeof(CS2::server::CPhysicsProp) == 0xCE0, "CPhysicsProp size should be 0xCE0");
+
+#endif
 	}
 }

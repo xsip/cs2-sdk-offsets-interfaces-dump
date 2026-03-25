@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nGroupValue; // 0x28 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBodyGroupEvent, m_groupName) == 0x20, "m_groupName in CNmBodyGroupEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmBodyGroupEvent, m_nGroupValue) == 0x28, "m_nGroupValue in CNmBodyGroupEvent should be at offset 0x28");
 		static_assert(sizeof(CS2::animlib::CNmBodyGroupEvent) == 0x30, "CNmBodyGroupEvent size should be 0x30");
+
+#endif
 	}
 }

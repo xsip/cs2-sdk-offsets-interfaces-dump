@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flJumpThreshold; // 0x1e0 | Schema_Builtin | Size: 0x4
 			float32 m_flPrevPosScale; // 0x1e4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SnapshotSkinToBones, m_bTransformNormals) == 0x1D0, "m_bTransformNormals in C_OP_SnapshotSkinToBones should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SnapshotSkinToBones, m_bTransformRadii) == 0x1D1, "m_bTransformRadii in C_OP_SnapshotSkinToBones should be at offset 0x1D1");
 		static_assert(offsetof(CS2::particles::C_OP_SnapshotSkinToBones, m_nControlPointNumber) == 0x1D4, "m_nControlPointNumber in C_OP_SnapshotSkinToBones should be at offset 0x1D4");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SnapshotSkinToBones, m_flJumpThreshold) == 0x1E0, "m_flJumpThreshold in C_OP_SnapshotSkinToBones should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_SnapshotSkinToBones, m_flPrevPosScale) == 0x1E4, "m_flPrevPosScale in C_OP_SnapshotSkinToBones should be at offset 0x1E4");
 		static_assert(sizeof(CS2::particles::C_OP_SnapshotSkinToBones) == 0x1E8, "C_OP_SnapshotSkinToBones size should be 0x1E8");
+
+#endif
 	}
 }

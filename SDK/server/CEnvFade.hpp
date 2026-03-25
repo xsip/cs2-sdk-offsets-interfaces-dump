@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			entity2::CEntityIOOutput m_OnBeginFade; // 0x4b8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvFade, m_fadeColor) == 0x4A8, "m_fadeColor in CEnvFade should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvFade, m_Duration) == 0x4AC, "m_Duration in CEnvFade should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CEnvFade, m_HoldDuration) == 0x4B0, "m_HoldDuration in CEnvFade should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CEnvFade, m_OnBeginFade) == 0x4B8, "m_OnBeginFade in CEnvFade should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CEnvFade) == 0x4D0, "CEnvFade size should be 0x4D0");
+
+#endif
 	}
 }

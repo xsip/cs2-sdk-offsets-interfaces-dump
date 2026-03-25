@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x48 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_FitOnLine, m_OutflowList) == 0x48, "m_OutflowList in CSmartPropPulse_FitOnLine should be at offset 0x48");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_FitOnLine) == 0x60, "CSmartPropPulse_FitOnLine size should be 0x60");
+
+#endif
 	}
 }

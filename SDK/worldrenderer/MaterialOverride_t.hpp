@@ -29,10 +29,13 @@ namespace CS2 {
 			GlobalTypes::Vector m_vLinearTintColor; // 0x18 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::MaterialOverride_t, m_nSubSceneObject) == 0x4, "m_nSubSceneObject in MaterialOverride_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::MaterialOverride_t, m_nDrawCallIndex) == 0x8, "m_nDrawCallIndex in MaterialOverride_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::MaterialOverride_t, m_pMaterial) == 0x10, "m_pMaterial in MaterialOverride_t should be at offset 0x10");
 		static_assert(offsetof(CS2::worldrenderer::MaterialOverride_t, m_vLinearTintColor) == 0x18, "m_vLinearTintColor in MaterialOverride_t should be at offset 0x18");
 		static_assert(sizeof(CS2::worldrenderer::MaterialOverride_t) == 0x28, "MaterialOverride_t size should be 0x28");
+
+#endif
 	}
 }

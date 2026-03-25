@@ -34,6 +34,7 @@ namespace CS2 {
 			animgraphlib::AimCameraOpFixedSettings_t m_opFixedSettings; // 0x80 | Schema_DeclaredClass | Size: 0x30
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAimCameraUpdateNode, m_hParameterPosition) == 0x70, "m_hParameterPosition in CAimCameraUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CAimCameraUpdateNode, m_hParameterOrientation) == 0x72, "m_hParameterOrientation in CAimCameraUpdateNode should be at offset 0x72");
 		static_assert(offsetof(CS2::animgraphlib::CAimCameraUpdateNode, m_hParameterPelvisOffset) == 0x74, "m_hParameterPelvisOffset in CAimCameraUpdateNode should be at offset 0x74");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CAimCameraUpdateNode, m_hParameterCameraClearanceDistance) == 0x7C, "m_hParameterCameraClearanceDistance in CAimCameraUpdateNode should be at offset 0x7C");
 		static_assert(offsetof(CS2::animgraphlib::CAimCameraUpdateNode, m_opFixedSettings) == 0x80, "m_opFixedSettings in CAimCameraUpdateNode should be at offset 0x80");
 		static_assert(sizeof(CS2::animgraphlib::CAimCameraUpdateNode) == 0xB8, "CAimCameraUpdateNode size should be 0xB8");
+
+#endif
 	}
 }

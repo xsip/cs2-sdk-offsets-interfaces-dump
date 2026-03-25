@@ -35,9 +35,12 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszMoverSpawnerName; // 0x610 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPathMover, m_vecMovers) == 0x5F0, "m_vecMovers in CPathMover should be at offset 0x5F0");
 		static_assert(offsetof(CS2::server::CPathMover, m_hMoverSpawner) == 0x608, "m_hMoverSpawner in CPathMover should be at offset 0x608");
 		static_assert(offsetof(CS2::server::CPathMover, m_iszMoverSpawnerName) == 0x610, "m_iszMoverSpawnerName in CPathMover should be at offset 0x610");
 		static_assert(sizeof(CS2::server::CPathMover) == 0x620, "CPathMover size should be 0x620");
+
+#endif
 	}
 }

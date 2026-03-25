@@ -25,9 +25,12 @@ namespace CS2 {
 			float32 m_flMinEV; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxEV; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::toolscene::CLightRigExposure, m_bEnabled) == 0x0, "m_bEnabled in CLightRigExposure should be at offset 0x0");
 		static_assert(offsetof(CS2::toolscene::CLightRigExposure, m_flMinEV) == 0x4, "m_flMinEV in CLightRigExposure should be at offset 0x4");
 		static_assert(offsetof(CS2::toolscene::CLightRigExposure, m_flMaxEV) == 0x8, "m_flMaxEV in CLightRigExposure should be at offset 0x8");
 		static_assert(sizeof(CS2::toolscene::CLightRigExposure) == 0xC, "CLightRigExposure size should be 0xC");
+
+#endif
 	}
 }

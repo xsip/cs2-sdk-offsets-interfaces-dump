@@ -37,6 +37,7 @@ namespace CS2 {
 			worldrenderer::VoxelVisBlockOffset_t m_nVisBlocks; // 0x94 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::CVoxelVisibility, m_nBaseClusterCount) == 0x40, "m_nBaseClusterCount in CVoxelVisibility should be at offset 0x40");
 		static_assert(offsetof(CS2::worldrenderer::CVoxelVisibility, m_nPVSBytesPerCluster) == 0x44, "m_nPVSBytesPerCluster in CVoxelVisibility should be at offset 0x44");
 		static_assert(offsetof(CS2::worldrenderer::CVoxelVisibility, m_vMinBounds) == 0x48, "m_vMinBounds in CVoxelVisibility should be at offset 0x48");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::CVoxelVisibility, m_MasksBlock) == 0x8C, "m_MasksBlock in CVoxelVisibility should be at offset 0x8C");
 		static_assert(offsetof(CS2::worldrenderer::CVoxelVisibility, m_nVisBlocks) == 0x94, "m_nVisBlocks in CVoxelVisibility should be at offset 0x94");
 		static_assert(sizeof(CS2::worldrenderer::CVoxelVisibility) == 0xA0, "CVoxelVisibility size should be 0xA0");
+
+#endif
 	}
 }

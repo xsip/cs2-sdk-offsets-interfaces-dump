@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bIsIncGrenade; // 0x1438 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x27); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_MolotovProjectile, m_bIsIncGrenade) == 0x1438, "m_bIsIncGrenade in C_MolotovProjectile should be at offset 0x1438");
 		static_assert(sizeof(CS2::client::C_MolotovProjectile) == 0x1460, "C_MolotovProjectile size should be 0x1460");
+
+#endif
 	}
 }

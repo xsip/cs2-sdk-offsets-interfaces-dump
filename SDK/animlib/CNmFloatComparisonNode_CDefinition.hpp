@@ -29,11 +29,14 @@ namespace CS2 {
 			float32 m_flEpsilon; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flComparisonValue; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatComparisonNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmFloatComparisonNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatComparisonNode_CDefinition, m_nComparandValueNodeIdx) == 0x12, "m_nComparandValueNodeIdx in CNmFloatComparisonNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmFloatComparisonNode_CDefinition, m_comparison) == 0x14, "m_comparison in CNmFloatComparisonNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmFloatComparisonNode_CDefinition, m_flEpsilon) == 0x18, "m_flEpsilon in CNmFloatComparisonNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmFloatComparisonNode_CDefinition, m_flComparisonValue) == 0x1C, "m_flComparisonValue in CNmFloatComparisonNode::CDefinition should be at offset 0x1C");
 		static_assert(sizeof(CS2::animlib::CNmFloatComparisonNode_CDefinition) == 0x20, "CNmFloatComparisonNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

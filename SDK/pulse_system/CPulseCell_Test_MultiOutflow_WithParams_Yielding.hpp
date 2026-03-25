@@ -29,11 +29,14 @@ namespace CS2 {
 			pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume1; // 0x120 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume2; // 0x168 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding, m_Out1) == 0x48, "m_Out1 in CPulseCell_Test_MultiOutflow_WithParams_Yielding should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding, m_AsyncChild1) == 0x90, "m_AsyncChild1 in CPulseCell_Test_MultiOutflow_WithParams_Yielding should be at offset 0x90");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding, m_AsyncChild2) == 0xD8, "m_AsyncChild2 in CPulseCell_Test_MultiOutflow_WithParams_Yielding should be at offset 0xD8");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding, m_YieldResume1) == 0x120, "m_YieldResume1 in CPulseCell_Test_MultiOutflow_WithParams_Yielding should be at offset 0x120");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding, m_YieldResume2) == 0x168, "m_YieldResume2 in CPulseCell_Test_MultiOutflow_WithParams_Yielding should be at offset 0x168");
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding) == 0x1B0, "CPulseCell_Test_MultiOutflow_WithParams_Yielding size should be 0x1B0");
+
+#endif
 	}
 }

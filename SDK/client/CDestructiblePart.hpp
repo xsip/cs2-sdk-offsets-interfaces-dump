@@ -34,6 +34,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<client::CDestructiblePart_DamageLevel> m_DamageLevels; // 0x38 | Schema_Atomic | Size: 0x18
 			// char m_DamageLevels[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CDestructiblePart, m_DebugName) == 0x0, "m_DebugName in CDestructiblePart should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDestructiblePart, m_nHitGroup) == 0x8, "m_nHitGroup in CDestructiblePart should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CDestructiblePart, m_bDisableHitGroupWhenDestroyed) == 0xC, "m_bDisableHitGroupWhenDestroyed in CDestructiblePart should be at offset 0xC");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CDestructiblePart, m_sBodyGroupName) == 0x30, "m_sBodyGroupName in CDestructiblePart should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CDestructiblePart, m_DamageLevels) == 0x38, "m_DamageLevels in CDestructiblePart should be at offset 0x38");
 		static_assert(sizeof(CS2::client::CDestructiblePart) == 0x50, "CDestructiblePart size should be 0x50");
+
+#endif
 	}
 }

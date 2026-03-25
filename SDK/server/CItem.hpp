@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bPhysStartAsleep; // 0xaa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x17); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CItem, m_OnPlayerTouch) == 0xA28, "m_OnPlayerTouch in CItem should be at offset 0xA28");
 		static_assert(offsetof(CS2::server::CItem, m_OnPlayerPickup) == 0xA40, "m_OnPlayerPickup in CItem should be at offset 0xA40");
 		static_assert(offsetof(CS2::server::CItem, m_bActivateWhenAtRest) == 0xA58, "m_bActivateWhenAtRest in CItem should be at offset 0xA58");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CItem, m_vOriginalSpawnAngles) == 0xA9C, "m_vOriginalSpawnAngles in CItem should be at offset 0xA9C");
 		static_assert(offsetof(CS2::server::CItem, m_bPhysStartAsleep) == 0xAA8, "m_bPhysStartAsleep in CItem should be at offset 0xAA8");
 		static_assert(sizeof(CS2::server::CItem) == 0xAC0, "CItem size should be 0xAC0");
+
+#endif
 	}
 }

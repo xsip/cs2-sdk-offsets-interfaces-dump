@@ -32,6 +32,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionVecInput m_vMaxRandomDisplacement; // 0x9a0 | Schema_DeclaredClass | Size: 0x6b8
 			particleslib::CParticleCollectionFloatInput m_flModellingScale; // 0x1058 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CReplicationParameters, m_nReplicationMode) == 0x0, "m_nReplicationMode in CReplicationParameters should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::CReplicationParameters, m_bScaleChildParticleRadii) == 0x4, "m_bScaleChildParticleRadii in CReplicationParameters should be at offset 0x4");
 		static_assert(offsetof(CS2::particles::CReplicationParameters, m_flMinRandomRadiusScale) == 0x8, "m_flMinRandomRadiusScale in CReplicationParameters should be at offset 0x8");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CReplicationParameters, m_vMaxRandomDisplacement) == 0x9A0, "m_vMaxRandomDisplacement in CReplicationParameters should be at offset 0x9A0");
 		static_assert(offsetof(CS2::particles::CReplicationParameters, m_flModellingScale) == 0x1058, "m_flModellingScale in CReplicationParameters should be at offset 0x1058");
 		static_assert(sizeof(CS2::particles::CReplicationParameters) == 0x11C8, "CReplicationParameters size should be 0x11C8");
+
+#endif
 	}
 }

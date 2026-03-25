@@ -29,9 +29,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animlib::CNmIKJoint> m_vecJoints; // 0x20 | Schema_Atomic | Size: 0x18
 			// char m_vecJoints[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIKRig, m_skeleton) == 0x0, "m_skeleton in CNmIKRig should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmIKRig, m_vecBodies) == 0x8, "m_vecBodies in CNmIKRig should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::CNmIKRig, m_vecJoints) == 0x20, "m_vecJoints in CNmIKRig should be at offset 0x20");
 		static_assert(sizeof(CS2::animlib::CNmIKRig) == 0x38, "CNmIKRig size should be 0x38");
+
+#endif
 	}
 }

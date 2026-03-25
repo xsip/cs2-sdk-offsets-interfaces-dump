@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nWeightListIndex; // 0x70 | Schema_Builtin | Size: 0x4
 			animgraphlib::RagdollPoseControl m_poseControlMethod; // 0x74 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CRagdollUpdateNode, m_nWeightListIndex) == 0x70, "m_nWeightListIndex in CRagdollUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CRagdollUpdateNode, m_poseControlMethod) == 0x74, "m_poseControlMethod in CRagdollUpdateNode should be at offset 0x74");
 		static_assert(sizeof(CS2::animgraphlib::CRagdollUpdateNode) == 0x78, "CRagdollUpdateNode size should be 0x78");
+
+#endif
 	}
 }

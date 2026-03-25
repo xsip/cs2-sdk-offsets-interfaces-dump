@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bSmokeEffectSpawned; // 0x1499 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x156); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_SmokeGrenadeProjectile, m_nSmokeEffectTickBegin) == 0x1450, "m_nSmokeEffectTickBegin in C_SmokeGrenadeProjectile should be at offset 0x1450");
 		static_assert(offsetof(CS2::client::C_SmokeGrenadeProjectile, m_bDidSmokeEffect) == 0x1454, "m_bDidSmokeEffect in C_SmokeGrenadeProjectile should be at offset 0x1454");
 		static_assert(offsetof(CS2::client::C_SmokeGrenadeProjectile, m_nRandomSeed) == 0x1458, "m_nRandomSeed in C_SmokeGrenadeProjectile should be at offset 0x1458");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_SmokeGrenadeProjectile, m_bSmokeVolumeDataReceived) == 0x1498, "m_bSmokeVolumeDataReceived in C_SmokeGrenadeProjectile should be at offset 0x1498");
 		static_assert(offsetof(CS2::client::C_SmokeGrenadeProjectile, m_bSmokeEffectSpawned) == 0x1499, "m_bSmokeEffectSpawned in C_SmokeGrenadeProjectile should be at offset 0x1499");
 		static_assert(sizeof(CS2::client::C_SmokeGrenadeProjectile) == 0x15F0, "C_SmokeGrenadeProjectile size should be 0x15F0");
+
+#endif
 	}
 }

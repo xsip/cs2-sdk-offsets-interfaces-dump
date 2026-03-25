@@ -31,10 +31,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::CConstraintTarget> m_targets; // 0x48 | Schema_Atomic | Size: 0x18
 			// char m_targets[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_name) == 0x20, "m_name in CBaseConstraint should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_vUpVector) == 0x28, "m_vUpVector in CBaseConstraint should be at offset 0x28");
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_slaves) == 0x38, "m_slaves in CBaseConstraint should be at offset 0x38");
 		static_assert(offsetof(CS2::modellib::CBaseConstraint, m_targets) == 0x48, "m_targets in CBaseConstraint should be at offset 0x48");
 		static_assert(sizeof(CS2::modellib::CBaseConstraint) == 0x60, "CBaseConstraint size should be 0x60");
+
+#endif
 	}
 }

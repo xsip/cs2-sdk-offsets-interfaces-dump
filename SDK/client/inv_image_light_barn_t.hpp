@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 brightness; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 orbit_distance; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::inv_image_light_barn_t, color) == 0x0, "color in inv_image_light_barn_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::inv_image_light_barn_t, angle) == 0xC, "angle in inv_image_light_barn_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::inv_image_light_barn_t, brightness) == 0x18, "brightness in inv_image_light_barn_t should be at offset 0x18");
 		static_assert(offsetof(CS2::client::inv_image_light_barn_t, orbit_distance) == 0x1C, "orbit_distance in inv_image_light_barn_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::client::inv_image_light_barn_t) == 0x20, "inv_image_light_barn_t size should be 0x20");
+
+#endif
 	}
 }

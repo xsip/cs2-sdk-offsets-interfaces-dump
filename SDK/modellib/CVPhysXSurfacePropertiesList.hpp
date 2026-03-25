@@ -28,7 +28,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::CPhysSurfaceProperties*> m_surfacePropertiesList; // 0x0 | Schema_Atomic | Size: 0x18
 			// char m_surfacePropertiesList[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CVPhysXSurfacePropertiesList, m_surfacePropertiesList) == 0x0, "m_surfacePropertiesList in CVPhysXSurfacePropertiesList should be at offset 0x0");
 		static_assert(sizeof(CS2::modellib::CVPhysXSurfacePropertiesList) == 0x18, "CVPhysXSurfacePropertiesList size should be 0x18");
+
+#endif
 	}
 }

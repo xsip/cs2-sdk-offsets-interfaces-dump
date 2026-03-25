@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 m_flInterpolationTime; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_name) == 0x0, "m_name in VMixSubgraphSwitchDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_effectName) == 0x8, "m_effectName in VMixSubgraphSwitchDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_subgraphs) == 0x10, "m_subgraphs in VMixSubgraphSwitchDesc_t should be at offset 0x10");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_bOnlyTailsOnFadeOut) == 0x2C, "m_bOnlyTailsOnFadeOut in VMixSubgraphSwitchDesc_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t, m_flInterpolationTime) == 0x30, "m_flInterpolationTime in VMixSubgraphSwitchDesc_t should be at offset 0x30");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixSubgraphSwitchDesc_t) == 0x38, "VMixSubgraphSwitchDesc_t size should be 0x38");
+
+#endif
 	}
 }

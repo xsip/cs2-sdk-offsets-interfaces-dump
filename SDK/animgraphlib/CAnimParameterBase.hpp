@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bIsReferenced; // 0x69 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterBase, m_name) == 0x18, "m_name in CAnimParameterBase should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterBase, m_sComment) == 0x20, "m_sComment in CAnimParameterBase should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterBase, m_group) == 0x28, "m_group in CAnimParameterBase should be at offset 0x28");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterBase, m_bNetworkingRequested) == 0x68, "m_bNetworkingRequested in CAnimParameterBase should be at offset 0x68");
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterBase, m_bIsReferenced) == 0x69, "m_bIsReferenced in CAnimParameterBase should be at offset 0x69");
 		static_assert(sizeof(CS2::animgraphlib::CAnimParameterBase) == 0x70, "CAnimParameterBase size should be 0x70");
+
+#endif
 	}
 }

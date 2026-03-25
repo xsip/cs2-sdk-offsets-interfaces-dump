@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::CPulseValueFullType m_Type; // 0x40 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x28); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseRuntimeMethodArg, m_Name) == 0x0, "m_Name in CPulseRuntimeMethodArg should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseRuntimeMethodArg, m_Description) == 0x38, "m_Description in CPulseRuntimeMethodArg should be at offset 0x38");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseRuntimeMethodArg, m_Type) == 0x40, "m_Type in CPulseRuntimeMethodArg should be at offset 0x40");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseRuntimeMethodArg) == 0x80, "CPulseRuntimeMethodArg size should be 0x80");
+
+#endif
 	}
 }

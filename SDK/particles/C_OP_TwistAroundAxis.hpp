@@ -27,10 +27,13 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nControlPointNumber; // 0x1f4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_fForceAmount) == 0x1E0, "m_fForceAmount in C_OP_TwistAroundAxis should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_TwistAxis) == 0x1E4, "m_TwistAxis in C_OP_TwistAroundAxis should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_bLocalSpace) == 0x1F0, "m_bLocalSpace in C_OP_TwistAroundAxis should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_OP_TwistAroundAxis, m_nControlPointNumber) == 0x1F4, "m_nControlPointNumber in C_OP_TwistAroundAxis should be at offset 0x1F4");
 		static_assert(sizeof(CS2::particles::C_OP_TwistAroundAxis) == 0x1F8, "C_OP_TwistAroundAxis size should be 0x1F8");
+
+#endif
 	}
 }

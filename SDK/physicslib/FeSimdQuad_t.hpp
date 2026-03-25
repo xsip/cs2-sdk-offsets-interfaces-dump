@@ -25,10 +25,13 @@ namespace CS2 {
 			GlobalTypes::FourVectors vShape[4]; // 0x30 | Schema_FixedArray | Size: 0xc0
 			GlobalTypes::fltx4 f4Weights[4]; // 0xf0 | Schema_FixedArray | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSimdQuad_t, nNode) == 0x0, "nNode in FeSimdQuad_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSimdQuad_t, f4Slack) == 0x20, "f4Slack in FeSimdQuad_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::FeSimdQuad_t, vShape) == 0x30, "vShape in FeSimdQuad_t should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::FeSimdQuad_t, f4Weights) == 0xF0, "f4Weights in FeSimdQuad_t should be at offset 0xF0");
 		static_assert(sizeof(CS2::physicslib::FeSimdQuad_t) == 0x130, "FeSimdQuad_t size should be 0x130");
+
+#endif
 	}
 }

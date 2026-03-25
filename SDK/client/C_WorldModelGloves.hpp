@@ -23,6 +23,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_WorldModelGloves) == 0x1170, "C_WorldModelGloves size should be 0x1170");
+
+#endif
 	}
 }

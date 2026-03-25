@@ -25,10 +25,13 @@ namespace CS2 {
 			int32_t m_nQuality; // 0x8 | Schema_Builtin | Size: 0x4
 			int32_t m_nProcType; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_nGrainSampleCount) == 0x0, "m_nGrainSampleCount in VMixPitchShiftDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_flPitchShift) == 0x4, "m_flPitchShift in VMixPitchShiftDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_nQuality) == 0x8, "m_nQuality in VMixPitchShiftDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPitchShiftDesc_t, m_nProcType) == 0xC, "m_nProcType in VMixPitchShiftDesc_t should be at offset 0xC");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixPitchShiftDesc_t) == 0x10, "VMixPitchShiftDesc_t size should be 0x10");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bHACK_ProvideResultMaxZ; // 0x55 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateSizer, m_Name) == 0x48, "m_Name in CSmartPropPulse_CreateSizer should be at offset 0x48");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateSizer, m_bHACK_ProvideResultMinX) == 0x50, "m_bHACK_ProvideResultMinX in CSmartPropPulse_CreateSizer should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateSizer, m_bHACK_ProvideResultMaxX) == 0x51, "m_bHACK_ProvideResultMaxX in CSmartPropPulse_CreateSizer should be at offset 0x51");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateSizer, m_bHACK_ProvideResultMinZ) == 0x54, "m_bHACK_ProvideResultMinZ in CSmartPropPulse_CreateSizer should be at offset 0x54");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateSizer, m_bHACK_ProvideResultMaxZ) == 0x55, "m_bHACK_ProvideResultMaxZ in CSmartPropPulse_CreateSizer should be at offset 0x55");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_CreateSizer) == 0x58, "CSmartPropPulse_CreateSizer size should be 0x58");
+
+#endif
 	}
 }

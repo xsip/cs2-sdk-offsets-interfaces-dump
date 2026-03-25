@@ -29,6 +29,7 @@ namespace CS2 {
 			uint16_t nDummy[4]; // 0x28 | Schema_FixedArray | Size: 0x8
 			mathlib_extended::FourQuaternions qAdjust; // 0x30 | Schema_DeclaredClass | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSimdNodeBase_t, nNode) == 0x0, "nNode in FeSimdNodeBase_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSimdNodeBase_t, nNodeX0) == 0x8, "nNodeX0 in FeSimdNodeBase_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeSimdNodeBase_t, nNodeX1) == 0x10, "nNodeX1 in FeSimdNodeBase_t should be at offset 0x10");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeSimdNodeBase_t, nDummy) == 0x28, "nDummy in FeSimdNodeBase_t should be at offset 0x28");
 		static_assert(offsetof(CS2::physicslib::FeSimdNodeBase_t, qAdjust) == 0x30, "qAdjust in FeSimdNodeBase_t should be at offset 0x30");
 		static_assert(sizeof(CS2::physicslib::FeSimdNodeBase_t) == 0x70, "FeSimdNodeBase_t size should be 0x70");
+
+#endif
 	}
 }

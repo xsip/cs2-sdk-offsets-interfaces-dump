@@ -25,8 +25,11 @@ namespace CS2 {
 			modellib::AttachmentHandle_t m_attachmentHandle; // 0x4 | Schema_DeclaredClass | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::FollowAttachmentData, m_boneIndex) == 0x0, "m_boneIndex in FollowAttachmentData should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::FollowAttachmentData, m_attachmentHandle) == 0x4, "m_attachmentHandle in FollowAttachmentData should be at offset 0x4");
 		static_assert(sizeof(CS2::animationsystem::FollowAttachmentData) == 0x8, "FollowAttachmentData size should be 0x8");
+
+#endif
 	}
 }

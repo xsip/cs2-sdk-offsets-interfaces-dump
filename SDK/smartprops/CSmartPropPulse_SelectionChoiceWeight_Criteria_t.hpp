@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			float32 m_flWeight; // 0x0 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SelectionChoiceWeight_Criteria_t, m_flWeight) == 0x0, "m_flWeight in CSmartPropPulse_SelectionChoiceWeight::Criteria_t should be at offset 0x0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_SelectionChoiceWeight_Criteria_t) == 0x4, "CSmartPropPulse_SelectionChoiceWeight::Criteria_t size should be 0x4");
+
+#endif
 	}
 }

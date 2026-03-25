@@ -35,6 +35,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_strMaxValueName; // 0x30 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strQueryPublicFieldName) == 0x8, "m_strQueryPublicFieldName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strDelayPublicFieldName) == 0x10, "m_strDelayPublicFieldName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_bExcludeStoppedSounds) == 0x18, "m_bExcludeStoppedSounds in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x18");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strMinValueName) == 0x28, "m_strMinValueName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x28");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema, m_strMaxValueName) == 0x30, "m_strMaxValueName in CSosGroupActionSoundeventMinMaxValuesSchema should be at offset 0x30");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSoundeventMinMaxValuesSchema) == 0x40, "CSosGroupActionSoundeventMinMaxValuesSchema size should be 0x40");
+
+#endif
 	}
 }

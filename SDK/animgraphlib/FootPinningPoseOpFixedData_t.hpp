@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bApplyFootRotationLimits; // 0x29 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::FootPinningPoseOpFixedData_t, m_footInfo) == 0x0, "m_footInfo in FootPinningPoseOpFixedData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::FootPinningPoseOpFixedData_t, m_flBlendTime) == 0x18, "m_flBlendTime in FootPinningPoseOpFixedData_t should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::FootPinningPoseOpFixedData_t, m_flLockBreakDistance) == 0x1C, "m_flLockBreakDistance in FootPinningPoseOpFixedData_t should be at offset 0x1C");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::FootPinningPoseOpFixedData_t, m_bApplyLegTwistLimits) == 0x28, "m_bApplyLegTwistLimits in FootPinningPoseOpFixedData_t should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::FootPinningPoseOpFixedData_t, m_bApplyFootRotationLimits) == 0x29, "m_bApplyFootRotationLimits in FootPinningPoseOpFixedData_t should be at offset 0x29");
 		static_assert(sizeof(CS2::animgraphlib::FootPinningPoseOpFixedData_t) == 0x30, "FootPinningPoseOpFixedData_t size should be 0x30");
+
+#endif
 	}
 }

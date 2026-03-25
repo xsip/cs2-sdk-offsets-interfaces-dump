@@ -22,6 +22,9 @@ namespace CS2 {
 		class CNmVelocityBlendNode_CDefinition : public CS2::animlib::CNmParameterizedBlendNode_CDefinition {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animlib::CNmVelocityBlendNode_CDefinition) == 0x40, "CNmVelocityBlendNode::CDefinition size should be 0x40");
+
+#endif
 	}
 }

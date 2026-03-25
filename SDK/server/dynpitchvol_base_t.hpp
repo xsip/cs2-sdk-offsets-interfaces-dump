@@ -46,6 +46,7 @@ namespace CS2 {
 			int32_t lfofrac; // 0x5c | Schema_Builtin | Size: 0x4
 			int32_t lfomult; // 0x60 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::dynpitchvol_base_t, preset) == 0x0, "preset in dynpitchvol_base_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::dynpitchvol_base_t, pitchrun) == 0x4, "pitchrun in dynpitchvol_base_t should be at offset 0x4");
 		static_assert(offsetof(CS2::server::dynpitchvol_base_t, pitchstart) == 0x8, "pitchstart in dynpitchvol_base_t should be at offset 0x8");
@@ -72,5 +73,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::dynpitchvol_base_t, lfofrac) == 0x5C, "lfofrac in dynpitchvol_base_t should be at offset 0x5C");
 		static_assert(offsetof(CS2::server::dynpitchvol_base_t, lfomult) == 0x60, "lfomult in dynpitchvol_base_t should be at offset 0x60");
 		static_assert(sizeof(CS2::server::dynpitchvol_base_t) == 0x64, "dynpitchvol_base_t size should be 0x64");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CParticleBindingRealPulse : public CS2::particleslib::CParticleCollectionBindingInstance {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::particleslib::CParticleBindingRealPulse) == 0x138, "CParticleBindingRealPulse size should be 0x138");
+
+#endif
 	}
 }

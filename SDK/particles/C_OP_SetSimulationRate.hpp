@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			particleslib::CParticleCollectionFloatInput m_flSimulationScale; // 0x1d8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetSimulationRate, m_flSimulationScale) == 0x1D8, "m_flSimulationScale in C_OP_SetSimulationRate should be at offset 0x1D8");
 		static_assert(sizeof(CS2::particles::C_OP_SetSimulationRate) == 0x348, "C_OP_SetSimulationRate size should be 0x348");
+
+#endif
 	}
 }

@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_ParamName; // 0x48 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_Step_SetAnimGraphParam, m_ParamName) == 0x48, "m_ParamName in CPulseCell_Step_SetAnimGraphParam should be at offset 0x48");
 		static_assert(sizeof(CS2::server::CPulseCell_Step_SetAnimGraphParam) == 0x50, "CPulseCell_Step_SetAnimGraphParam size should be 0x50");
+
+#endif
 	}
 }

@@ -33,10 +33,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			entity2::CEntityComponentHelper* m_pNext; // 0x20 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::entity2::CEntityComponentHelper, m_flags) == 0x8, "m_flags in CEntityComponentHelper should be at offset 0x8");
 		static_assert(offsetof(CS2::entity2::CEntityComponentHelper, m_pInfo) == 0x10, "m_pInfo in CEntityComponentHelper should be at offset 0x10");
 		static_assert(offsetof(CS2::entity2::CEntityComponentHelper, m_nPriority) == 0x18, "m_nPriority in CEntityComponentHelper should be at offset 0x18");
 		static_assert(offsetof(CS2::entity2::CEntityComponentHelper, m_pNext) == 0x20, "m_pNext in CEntityComponentHelper should be at offset 0x20");
 		static_assert(sizeof(CS2::entity2::CEntityComponentHelper) == 0x28, "CEntityComponentHelper size should be 0x28");
+
+#endif
 	}
 }

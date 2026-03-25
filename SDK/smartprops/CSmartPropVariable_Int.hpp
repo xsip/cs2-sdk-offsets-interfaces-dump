@@ -26,9 +26,12 @@ namespace CS2 {
 			int32_t m_nParamaterMaxValue; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Int, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_Int should be at offset 0x38");
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Int, m_nParamaterMinValue) == 0x3C, "m_nParamaterMinValue in CSmartPropVariable_Int should be at offset 0x3C");
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Int, m_nParamaterMaxValue) == 0x40, "m_nParamaterMaxValue in CSmartPropVariable_Int should be at offset 0x40");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_Int) == 0x48, "CSmartPropVariable_Int size should be 0x48");
+
+#endif
 	}
 }

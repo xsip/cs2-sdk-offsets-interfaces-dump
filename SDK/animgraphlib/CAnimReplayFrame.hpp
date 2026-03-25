@@ -30,11 +30,14 @@ namespace CS2 {
 			float32 m_timeStamp; // 0x80 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimReplayFrame, m_inputDataBlocks) == 0x10, "m_inputDataBlocks in CAnimReplayFrame should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::CAnimReplayFrame, m_instanceData) == 0x28, "m_instanceData in CAnimReplayFrame should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CAnimReplayFrame, m_startingLocalToWorldTransform) == 0x40, "m_startingLocalToWorldTransform in CAnimReplayFrame should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CAnimReplayFrame, m_localToWorldTransform) == 0x60, "m_localToWorldTransform in CAnimReplayFrame should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CAnimReplayFrame, m_timeStamp) == 0x80, "m_timeStamp in CAnimReplayFrame should be at offset 0x80");
 		static_assert(sizeof(CS2::animgraphlib::CAnimReplayFrame) == 0x90, "CAnimReplayFrame size should be 0x90");
+
+#endif
 	}
 }

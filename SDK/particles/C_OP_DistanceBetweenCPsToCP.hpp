@@ -41,6 +41,7 @@ namespace CS2 {
 			particles::ParticleTraceSet_t m_nTraceSet; // 0x288 | Schema_DeclaredEnum | Size: 0x4
 			particles::ParticleParentSetMode_t m_nSetParent; // 0x28c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nStartCP) == 0x1D8, "m_nStartCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nEndCP) == 0x1DC, "m_nEndCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nOutputCP) == 0x1E0, "m_nOutputCP in C_OP_DistanceBetweenCPsToCP should be at offset 0x1E0");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nTraceSet) == 0x288, "m_nTraceSet in C_OP_DistanceBetweenCPsToCP should be at offset 0x288");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenCPsToCP, m_nSetParent) == 0x28C, "m_nSetParent in C_OP_DistanceBetweenCPsToCP should be at offset 0x28C");
 		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenCPsToCP) == 0x290, "C_OP_DistanceBetweenCPsToCP size should be 0x290");
+
+#endif
 	}
 }

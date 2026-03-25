@@ -28,9 +28,12 @@ namespace CS2 {
 			bool m_bState; // 0xe98 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_nAmbientEffect) == 0xE88, "m_nAmbientEffect in C_FuncElectrifiedVolume should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_EffectName) == 0xE90, "m_EffectName in C_FuncElectrifiedVolume should be at offset 0xE90");
 		static_assert(offsetof(CS2::client::C_FuncElectrifiedVolume, m_bState) == 0xE98, "m_bState in C_FuncElectrifiedVolume should be at offset 0xE98");
 		static_assert(sizeof(CS2::client::C_FuncElectrifiedVolume) == 0xEA0, "C_FuncElectrifiedVolume size should be 0xEA0");
+
+#endif
 	}
 }

@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector color; // 0x0 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::inv_image_clearcolor_t, color) == 0x0, "color in inv_image_clearcolor_t should be at offset 0x0");
 		static_assert(sizeof(CS2::client::inv_image_clearcolor_t) == 0xC, "inv_image_clearcolor_t size should be 0xC");
+
+#endif
 	}
 }

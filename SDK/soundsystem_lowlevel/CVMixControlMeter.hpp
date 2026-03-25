@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nValueIndex; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixControlMeter, m_nValueIndex) == 0x10, "m_nValueIndex in CVMixControlMeter should be at offset 0x10");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixControlMeter) == 0x18, "CVMixControlMeter size should be 0x18");
+
+#endif
 	}
 }

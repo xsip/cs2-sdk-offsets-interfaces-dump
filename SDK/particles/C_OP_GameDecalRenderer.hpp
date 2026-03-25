@@ -46,6 +46,7 @@ namespace CS2 {
 			bool m_bVisualizeTraces; // 0x1c2c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_sDecalGroupName) == 0x220, "m_sDecalGroupName in C_OP_GameDecalRenderer should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nEventType) == 0x228, "m_nEventType in C_OP_GameDecalRenderer should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_nInteractionMask) == 0x230, "m_nInteractionMask in C_OP_GameDecalRenderer should be at offset 0x230");
@@ -63,5 +64,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bNoDecalsOnOwner) == 0x1C2B, "m_bNoDecalsOnOwner in C_OP_GameDecalRenderer should be at offset 0x1C2B");
 		static_assert(offsetof(CS2::particles::C_OP_GameDecalRenderer, m_bVisualizeTraces) == 0x1C2C, "m_bVisualizeTraces in C_OP_GameDecalRenderer should be at offset 0x1C2C");
 		static_assert(sizeof(CS2::particles::C_OP_GameDecalRenderer) == 0x1C30, "C_OP_GameDecalRenderer size should be 0x1C30");
+
+#endif
 	}
 }

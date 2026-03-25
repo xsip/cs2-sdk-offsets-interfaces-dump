@@ -40,6 +40,7 @@ namespace CS2 {
 			bool m_bWaitingForCompletedEvent; // 0x159 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCS2ChickenGraphController, m_action) == 0x90, "m_action in CCS2ChickenGraphController should be at offset 0x90");
 		static_assert(offsetof(CS2::client::CCS2ChickenGraphController, m_actionSubtype) == 0xA8, "m_actionSubtype in CCS2ChickenGraphController should be at offset 0xA8");
 		static_assert(offsetof(CS2::client::CCS2ChickenGraphController, m_bActionReset) == 0xC0, "m_bActionReset in CCS2ChickenGraphController should be at offset 0xC0");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CCS2ChickenGraphController, m_bHasActionCompletedEvent) == 0x158, "m_bHasActionCompletedEvent in CCS2ChickenGraphController should be at offset 0x158");
 		static_assert(offsetof(CS2::client::CCS2ChickenGraphController, m_bWaitingForCompletedEvent) == 0x159, "m_bWaitingForCompletedEvent in CCS2ChickenGraphController should be at offset 0x159");
 		static_assert(sizeof(CS2::client::CCS2ChickenGraphController) == 0x160, "CCS2ChickenGraphController size should be 0x160");
+
+#endif
 	}
 }

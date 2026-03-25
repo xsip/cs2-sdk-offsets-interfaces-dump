@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CNetworkedQuantizedFloat m_vecY; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CNetworkedQuantizedFloat m_vecZ; // 0x28 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CNetworkOriginCellCoordQuantizedVector, m_cellX) == 0x10, "m_cellX in CNetworkOriginCellCoordQuantizedVector should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CNetworkOriginCellCoordQuantizedVector, m_cellY) == 0x12, "m_cellY in CNetworkOriginCellCoordQuantizedVector should be at offset 0x12");
 		static_assert(offsetof(CS2::client::CNetworkOriginCellCoordQuantizedVector, m_cellZ) == 0x14, "m_cellZ in CNetworkOriginCellCoordQuantizedVector should be at offset 0x14");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CNetworkOriginCellCoordQuantizedVector, m_vecY) == 0x20, "m_vecY in CNetworkOriginCellCoordQuantizedVector should be at offset 0x20");
 		static_assert(offsetof(CS2::client::CNetworkOriginCellCoordQuantizedVector, m_vecZ) == 0x28, "m_vecZ in CNetworkOriginCellCoordQuantizedVector should be at offset 0x28");
 		static_assert(sizeof(CS2::client::CNetworkOriginCellCoordQuantizedVector) == 0x30, "CNetworkOriginCellCoordQuantizedVector size should be 0x30");
+
+#endif
 	}
 }

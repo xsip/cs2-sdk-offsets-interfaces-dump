@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bClampUpperRange; // 0x1d5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_GlobalLight, m_flScale) == 0x1D0, "m_flScale in C_OP_GlobalLight should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_GlobalLight, m_bClampLowerRange) == 0x1D4, "m_bClampLowerRange in C_OP_GlobalLight should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_GlobalLight, m_bClampUpperRange) == 0x1D5, "m_bClampUpperRange in C_OP_GlobalLight should be at offset 0x1D5");
 		static_assert(sizeof(CS2::particles::C_OP_GlobalLight) == 0x1D8, "C_OP_GlobalLight size should be 0x1D8");
+
+#endif
 	}
 }

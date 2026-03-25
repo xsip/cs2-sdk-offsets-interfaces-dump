@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			float32 m_flTimeDuration; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::PointDefinitionWithTimeValues_t, m_flTimeDuration) == 0x14, "m_flTimeDuration in PointDefinitionWithTimeValues_t should be at offset 0x14");
 		static_assert(sizeof(CS2::particles::PointDefinitionWithTimeValues_t) == 0x18, "PointDefinitionWithTimeValues_t size should be 0x18");
+
+#endif
 	}
 }

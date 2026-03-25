@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flMaxTurnRate; // 0x4c0 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flLastGameTime; // 0x4c4 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointOrient, m_iszSpawnTargetName) == 0x4A8, "m_iszSpawnTargetName in CPointOrient should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointOrient, m_hTarget) == 0x4B0, "m_hTarget in CPointOrient should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPointOrient, m_bActive) == 0x4B4, "m_bActive in CPointOrient should be at offset 0x4B4");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointOrient, m_flMaxTurnRate) == 0x4C0, "m_flMaxTurnRate in CPointOrient should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CPointOrient, m_flLastGameTime) == 0x4C4, "m_flLastGameTime in CPointOrient should be at offset 0x4C4");
 		static_assert(sizeof(CS2::server::CPointOrient) == 0x4C8, "CPointOrient size should be 0x4C8");
+
+#endif
 	}
 }

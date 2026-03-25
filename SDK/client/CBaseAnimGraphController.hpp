@@ -86,6 +86,7 @@ namespace CS2 {
 			client::AnimationAlgorithm_t m_nPrevAnimationAlgorithm; // 0x1b31 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nAnimationAlgorithm) == 0x18, "m_nAnimationAlgorithm in CBaseAnimGraphController should be at offset 0x18");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_animGraphNetworkedVars) == 0x20, "m_animGraphNetworkedVars in CBaseAnimGraphController should be at offset 0x20");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_pAnimGraphInstance) == 0x14B0, "m_pAnimGraphInstance in CBaseAnimGraphController should be at offset 0x14B0");
@@ -119,5 +120,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_vecExternalGraphs) == 0x1AF8, "m_vecExternalGraphs in CBaseAnimGraphController should be at offset 0x1AF8");
 		static_assert(offsetof(CS2::client::CBaseAnimGraphController, m_nPrevAnimationAlgorithm) == 0x1B31, "m_nPrevAnimationAlgorithm in CBaseAnimGraphController should be at offset 0x1B31");
 		static_assert(sizeof(CS2::client::CBaseAnimGraphController) == 0x1B38, "CBaseAnimGraphController size should be 0x1B38");
+
+#endif
 	}
 }

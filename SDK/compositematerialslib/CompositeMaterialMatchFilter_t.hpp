@@ -28,10 +28,13 @@ namespace CS2 {
 			bool m_bPassWhenTrue; // 0x18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialMatchFilter_t, m_nCompositeMaterialMatchFilterType) == 0x0, "m_nCompositeMaterialMatchFilterType in CompositeMaterialMatchFilter_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialMatchFilter_t, m_strMatchFilter) == 0x8, "m_strMatchFilter in CompositeMaterialMatchFilter_t should be at offset 0x8");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialMatchFilter_t, m_strMatchValue) == 0x10, "m_strMatchValue in CompositeMaterialMatchFilter_t should be at offset 0x10");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialMatchFilter_t, m_bPassWhenTrue) == 0x18, "m_bPassWhenTrue in CompositeMaterialMatchFilter_t should be at offset 0x18");
 		static_assert(sizeof(CS2::compositematerialslib::CompositeMaterialMatchFilter_t) == 0x20, "CompositeMaterialMatchFilter_t size should be 0x20");
+
+#endif
 	}
 }

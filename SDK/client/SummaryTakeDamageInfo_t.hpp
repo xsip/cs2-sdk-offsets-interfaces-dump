@@ -35,10 +35,13 @@ namespace CS2 {
 			// char hTarget[0x4]; // 0x158 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, nSummarisedCount) == 0x0, "nSummarisedCount in SummaryTakeDamageInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, info) == 0x8, "info in SummaryTakeDamageInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, result) == 0x128, "result in SummaryTakeDamageInfo_t should be at offset 0x128");
 		static_assert(offsetof(CS2::client::SummaryTakeDamageInfo_t, hTarget) == 0x158, "hTarget in SummaryTakeDamageInfo_t should be at offset 0x158");
 		static_assert(sizeof(CS2::client::SummaryTakeDamageInfo_t) == 0x160, "SummaryTakeDamageInfo_t size should be 0x160");
+
+#endif
 	}
 }

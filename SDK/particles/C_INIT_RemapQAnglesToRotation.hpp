@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1d8 | Schema_DeclaredClass | Size: 0x68
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RemapQAnglesToRotation, m_TransformInput) == 0x1D8, "m_TransformInput in C_INIT_RemapQAnglesToRotation should be at offset 0x1D8");
 		static_assert(sizeof(CS2::particles::C_INIT_RemapQAnglesToRotation) == 0x240, "C_INIT_RemapQAnglesToRotation size should be 0x240");
+
+#endif
 	}
 }

@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_LocatorName; // 0x48 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CreateLocator, m_LocatorName) == 0x48, "m_LocatorName in CSmartPropPulse_CreateLocator should be at offset 0x48");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_CreateLocator) == 0x50, "CSmartPropPulse_CreateLocator size should be 0x50");
+
+#endif
 	}
 }

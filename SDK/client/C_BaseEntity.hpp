@@ -149,6 +149,7 @@ namespace CS2 {
 			client::BloodType m_nBloodType; // 0x600 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_CBodyComponent) == 0x38, "m_CBodyComponent in C_BaseEntity should be at offset 0x38");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_NetworkTransmitComponent) == 0x40, "m_NetworkTransmitComponent in C_BaseEntity should be at offset 0x40");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_nLastThinkTick) == 0x330, "m_nLastThinkTick in C_BaseEntity should be at offset 0x330");
@@ -233,5 +234,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_sUniqueHammerID) == 0x5F8, "m_sUniqueHammerID in C_BaseEntity should be at offset 0x5F8");
 		static_assert(offsetof(CS2::client::C_BaseEntity, m_nBloodType) == 0x600, "m_nBloodType in C_BaseEntity should be at offset 0x600");
 		static_assert(sizeof(CS2::client::C_BaseEntity) == 0x608, "C_BaseEntity size should be 0x608");
+
+#endif
 	}
 }

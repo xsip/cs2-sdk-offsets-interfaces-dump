@@ -43,6 +43,7 @@ namespace CS2 {
 			float32 m_flCurrentTime; // 0x660 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_SceneEntity, m_bIsPlayingBack) == 0x610, "m_bIsPlayingBack in C_SceneEntity should be at offset 0x610");
 		static_assert(offsetof(CS2::client::C_SceneEntity, m_bPaused) == 0x611, "m_bPaused in C_SceneEntity should be at offset 0x611");
 		static_assert(offsetof(CS2::client::C_SceneEntity, m_bMultiplayer) == 0x612, "m_bMultiplayer in C_SceneEntity should be at offset 0x612");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_SceneEntity, m_QueuedEvents) == 0x648, "m_QueuedEvents in C_SceneEntity should be at offset 0x648");
 		static_assert(offsetof(CS2::client::C_SceneEntity, m_flCurrentTime) == 0x660, "m_flCurrentTime in C_SceneEntity should be at offset 0x660");
 		static_assert(sizeof(CS2::client::C_SceneEntity) == 0x668, "C_SceneEntity size should be 0x668");
+
+#endif
 	}
 }

@@ -28,9 +28,12 @@ namespace CS2 {
 			char m_resetCycleValue[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStateNodeTransitionData, m_curve) == 0x0, "m_curve in CStateNodeTransitionData should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CStateNodeTransitionData, m_blendDuration) == 0x8, "m_blendDuration in CStateNodeTransitionData should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CStateNodeTransitionData, m_resetCycleValue) == 0x10, "m_resetCycleValue in CStateNodeTransitionData should be at offset 0x10");
 		static_assert(sizeof(CS2::animgraphlib::CStateNodeTransitionData) == 0x1C, "CStateNodeTransitionData size should be 0x1C");
+
+#endif
 	}
 }

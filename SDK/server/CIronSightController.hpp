@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_flIronSightAmountGained; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flIronSightAmountBiased; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CIronSightController, m_bIronSightAvailable) == 0x8, "m_bIronSightAvailable in CIronSightController should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CIronSightController, m_flIronSightAmount) == 0xC, "m_flIronSightAmount in CIronSightController should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CIronSightController, m_flIronSightAmountGained) == 0x10, "m_flIronSightAmountGained in CIronSightController should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CIronSightController, m_flIronSightAmountBiased) == 0x14, "m_flIronSightAmountBiased in CIronSightController should be at offset 0x14");
 		static_assert(sizeof(CS2::server::CIronSightController) == 0x18, "CIronSightController size should be 0x18");
+
+#endif
 	}
 }

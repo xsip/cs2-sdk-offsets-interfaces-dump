@@ -28,11 +28,14 @@ namespace CS2 {
 			int32_t m_nCPSSPosOut; // 0x1f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ControlPointToRadialScreenSpace, m_nCPIn) == 0x1D8, "m_nCPIn in C_OP_ControlPointToRadialScreenSpace should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ControlPointToRadialScreenSpace, m_vecCP1Pos) == 0x1DC, "m_vecCP1Pos in C_OP_ControlPointToRadialScreenSpace should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_ControlPointToRadialScreenSpace, m_nCPOut) == 0x1E8, "m_nCPOut in C_OP_ControlPointToRadialScreenSpace should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_ControlPointToRadialScreenSpace, m_nCPOutField) == 0x1EC, "m_nCPOutField in C_OP_ControlPointToRadialScreenSpace should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_OP_ControlPointToRadialScreenSpace, m_nCPSSPosOut) == 0x1F0, "m_nCPSSPosOut in C_OP_ControlPointToRadialScreenSpace should be at offset 0x1F0");
 		static_assert(sizeof(CS2::particles::C_OP_ControlPointToRadialScreenSpace) == 0x1F8, "C_OP_ControlPointToRadialScreenSpace size should be 0x1F8");
+
+#endif
 	}
 }

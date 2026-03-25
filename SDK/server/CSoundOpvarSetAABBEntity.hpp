@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vOuterMaxs; // 0x698 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceInnerMins) == 0x640, "m_vDistanceInnerMins in CSoundOpvarSetAABBEntity should be at offset 0x640");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceInnerMaxs) == 0x64C, "m_vDistanceInnerMaxs in CSoundOpvarSetAABBEntity should be at offset 0x64C");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vDistanceOuterMins) == 0x658, "m_vDistanceOuterMins in CSoundOpvarSetAABBEntity should be at offset 0x658");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vOuterMins) == 0x68C, "m_vOuterMins in CSoundOpvarSetAABBEntity should be at offset 0x68C");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAABBEntity, m_vOuterMaxs) == 0x698, "m_vOuterMaxs in CSoundOpvarSetAABBEntity should be at offset 0x698");
 		static_assert(sizeof(CS2::server::CSoundOpvarSetAABBEntity) == 0x6A8, "CSoundOpvarSetAABBEntity size should be 0x6A8");
+
+#endif
 	}
 }

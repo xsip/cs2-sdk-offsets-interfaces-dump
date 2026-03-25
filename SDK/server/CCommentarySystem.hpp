@@ -41,6 +41,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CPointCommentaryNode>> m_vecNodes; // 0x48 | Schema_Atomic | Size: 0x18
 			// char m_vecNodes[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCommentarySystem, m_bCommentaryConvarsChanging) == 0x11, "m_bCommentaryConvarsChanging in CCommentarySystem should be at offset 0x11");
 		static_assert(offsetof(CS2::server::CCommentarySystem, m_bCommentaryEnabledMidGame) == 0x12, "m_bCommentaryEnabledMidGame in CCommentarySystem should be at offset 0x12");
 		static_assert(offsetof(CS2::server::CCommentarySystem, m_flNextTeleportTime) == 0x14, "m_flNextTeleportTime in CCommentarySystem should be at offset 0x14");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCommentarySystem, m_hLastCommentaryNode) == 0x40, "m_hLastCommentaryNode in CCommentarySystem should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCommentarySystem, m_vecNodes) == 0x48, "m_vecNodes in CCommentarySystem should be at offset 0x48");
 		static_assert(sizeof(CS2::server::CCommentarySystem) == 0x60, "CCommentarySystem size should be 0x60");
+
+#endif
 	}
 }

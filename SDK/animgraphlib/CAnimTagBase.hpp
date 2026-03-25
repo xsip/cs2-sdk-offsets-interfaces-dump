@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bIsReferenced; // 0x48 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimTagBase, m_name) == 0x18, "m_name in CAnimTagBase should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CAnimTagBase, m_sComment) == 0x20, "m_sComment in CAnimTagBase should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::CAnimTagBase, m_group) == 0x28, "m_group in CAnimTagBase should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CAnimTagBase, m_tagID) == 0x30, "m_tagID in CAnimTagBase should be at offset 0x30");
 		static_assert(offsetof(CS2::animgraphlib::CAnimTagBase, m_bIsReferenced) == 0x48, "m_bIsReferenced in CAnimTagBase should be at offset 0x48");
 		static_assert(sizeof(CS2::animgraphlib::CAnimTagBase) == 0x50, "CAnimTagBase size should be 0x50");
+
+#endif
 	}
 }

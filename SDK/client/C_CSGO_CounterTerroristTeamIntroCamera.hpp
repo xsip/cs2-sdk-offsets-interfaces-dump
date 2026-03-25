@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_CSGO_CounterTerroristTeamIntroCamera : public CS2::client::C_CSGO_TeamPreviewCamera {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_CSGO_CounterTerroristTeamIntroCamera) == 0x698, "C_CSGO_CounterTerroristTeamIntroCamera size should be 0x698");
+
+#endif
 	}
 }

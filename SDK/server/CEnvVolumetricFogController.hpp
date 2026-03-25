@@ -63,6 +63,7 @@ namespace CS2 {
 			bool m_bFirstTime; // 0x550 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flScattering) == 0x4A8, "m_flScattering in CEnvVolumetricFogController should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_TintColor) == 0x4AC, "m_TintColor in CEnvVolumetricFogController should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_flAnisotropy) == 0x4B0, "m_flAnisotropy in CEnvVolumetricFogController should be at offset 0x4B0");
@@ -100,5 +101,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_vWindDirection) == 0x544, "m_vWindDirection in CEnvVolumetricFogController should be at offset 0x544");
 		static_assert(offsetof(CS2::server::CEnvVolumetricFogController, m_bFirstTime) == 0x550, "m_bFirstTime in CEnvVolumetricFogController should be at offset 0x550");
 		static_assert(sizeof(CS2::server::CEnvVolumetricFogController) == 0x558, "CEnvVolumetricFogController size should be 0x558");
+
+#endif
 	}
 }

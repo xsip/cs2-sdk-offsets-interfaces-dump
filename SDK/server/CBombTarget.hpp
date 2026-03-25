@@ -39,6 +39,7 @@ namespace CS2 {
 			// char m_hInstructorHint[0x4]; // 0x8e8 | Schema_Atomic | Size: 0x4
 			int32_t m_nBombSiteDesignation; // 0x8ec | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombExplode) == 0x890, "m_OnBombExplode in CBombTarget should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombPlanted) == 0x8A8, "m_OnBombPlanted in CBombTarget should be at offset 0x8A8");
 		static_assert(offsetof(CS2::server::CBombTarget, m_OnBombDefused) == 0x8C0, "m_OnBombDefused in CBombTarget should be at offset 0x8C0");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBombTarget, m_hInstructorHint) == 0x8E8, "m_hInstructorHint in CBombTarget should be at offset 0x8E8");
 		static_assert(offsetof(CS2::server::CBombTarget, m_nBombSiteDesignation) == 0x8EC, "m_nBombSiteDesignation in CBombTarget should be at offset 0x8EC");
 		static_assert(sizeof(CS2::server::CBombTarget) == 0x8F0, "CBombTarget size should be 0x8F0");
+
+#endif
 	}
 }

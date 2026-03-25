@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vMin; // 0x4c8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMax; // 0x4d4 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundAreaEntityOrientedBox, m_vMin) == 0x4C8, "m_vMin in CSoundAreaEntityOrientedBox should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CSoundAreaEntityOrientedBox, m_vMax) == 0x4D4, "m_vMax in CSoundAreaEntityOrientedBox should be at offset 0x4D4");
 		static_assert(sizeof(CS2::server::CSoundAreaEntityOrientedBox) == 0x4E0, "CSoundAreaEntityOrientedBox size should be 0x4E0");
+
+#endif
 	}
 }

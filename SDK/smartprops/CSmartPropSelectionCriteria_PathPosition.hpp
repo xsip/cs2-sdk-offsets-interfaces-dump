@@ -28,11 +28,14 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bAllowAtStart; // 0x108 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bAllowAtEnd; // 0x148 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_PathPosition, m_PlaceAtPositions) == 0x48, "m_PlaceAtPositions in CSmartPropSelectionCriteria_PathPosition should be at offset 0x48");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_PathPosition, m_nPlaceEveryNthPosition) == 0x88, "m_nPlaceEveryNthPosition in CSmartPropSelectionCriteria_PathPosition should be at offset 0x88");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_PathPosition, m_nNthPositionIndexOffset) == 0xC8, "m_nNthPositionIndexOffset in CSmartPropSelectionCriteria_PathPosition should be at offset 0xC8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_PathPosition, m_bAllowAtStart) == 0x108, "m_bAllowAtStart in CSmartPropSelectionCriteria_PathPosition should be at offset 0x108");
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_PathPosition, m_bAllowAtEnd) == 0x148, "m_bAllowAtEnd in CSmartPropSelectionCriteria_PathPosition should be at offset 0x148");
 		static_assert(sizeof(CS2::smartprops::CSmartPropSelectionCriteria_PathPosition) == 0x188, "CSmartPropSelectionCriteria_PathPosition size should be 0x188");
+
+#endif
 	}
 }

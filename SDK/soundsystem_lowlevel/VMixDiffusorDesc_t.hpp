@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 m_flFeedback; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flOutputGain; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flSize) == 0x0, "m_flSize in VMixDiffusorDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flComplexity) == 0x4, "m_flComplexity in VMixDiffusorDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flFeedback) == 0x8, "m_flFeedback in VMixDiffusorDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDiffusorDesc_t, m_flOutputGain) == 0xC, "m_flOutputGain in VMixDiffusorDesc_t should be at offset 0xC");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixDiffusorDesc_t) == 0x10, "VMixDiffusorDesc_t size should be 0x10");
+
+#endif
 	}
 }

@@ -27,9 +27,12 @@ namespace CS2 {
 			GlobalTypes::CUtlString name; // 0x8 | Schema_Atomic | Size: 0x8
 			client::inv_image_data_t inventory_image_data; // 0x10 | Schema_DeclaredClass | Size: 0xe8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CInventoryImageData, m_nNodeType) == 0x0, "m_nNodeType in CInventoryImageData should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CInventoryImageData, name) == 0x8, "name in CInventoryImageData should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CInventoryImageData, inventory_image_data) == 0x10, "inventory_image_data in CInventoryImageData should be at offset 0x10");
 		static_assert(sizeof(CS2::client::CInventoryImageData) == 0xF8, "CInventoryImageData size should be 0xF8");
+
+#endif
 	}
 }

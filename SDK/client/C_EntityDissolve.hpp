@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bLinkedToServerEnt; // 0xec5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flStartTime) == 0xE90, "m_flStartTime in C_EntityDissolve should be at offset 0xE90");
 		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeInStart) == 0xE94, "m_flFadeInStart in C_EntityDissolve should be at offset 0xE94");
 		static_assert(offsetof(CS2::client::C_EntityDissolve, m_flFadeInLength) == 0xE98, "m_flFadeInLength in C_EntityDissolve should be at offset 0xE98");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EntityDissolve, m_bCoreExplode) == 0xEC4, "m_bCoreExplode in C_EntityDissolve should be at offset 0xEC4");
 		static_assert(offsetof(CS2::client::C_EntityDissolve, m_bLinkedToServerEnt) == 0xEC5, "m_bLinkedToServerEnt in C_EntityDissolve should be at offset 0xEC5");
 		static_assert(sizeof(CS2::client::C_EntityDissolve) == 0xED0, "C_EntityDissolve size should be 0xED0");
+
+#endif
 	}
 }

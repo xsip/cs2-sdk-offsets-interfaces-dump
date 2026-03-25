@@ -33,6 +33,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nManualTField; // 0x228 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_fMinDistance) == 0x1D0, "m_fMinDistance in C_OP_ConstrainDistanceToPath should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistance0) == 0x1D4, "m_flMaxDistance0 in C_OP_ConstrainDistanceToPath should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_flMaxDistanceMid) == 0x1D8, "m_flMaxDistanceMid in C_OP_ConstrainDistanceToPath should be at offset 0x1D8");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_nFieldScale) == 0x224, "m_nFieldScale in C_OP_ConstrainDistanceToPath should be at offset 0x224");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToPath, m_nManualTField) == 0x228, "m_nManualTField in C_OP_ConstrainDistanceToPath should be at offset 0x228");
 		static_assert(sizeof(CS2::particles::C_OP_ConstrainDistanceToPath) == 0x230, "C_OP_ConstrainDistanceToPath size should be 0x230");
+
+#endif
 	}
 }

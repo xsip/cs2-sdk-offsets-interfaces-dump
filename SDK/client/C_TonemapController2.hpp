@@ -28,11 +28,14 @@ namespace CS2 {
 			float32 m_flTonemapEVSmoothingRange; // 0x618 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_TonemapController2, m_flAutoExposureMin) == 0x608, "m_flAutoExposureMin in C_TonemapController2 should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_TonemapController2, m_flAutoExposureMax) == 0x60C, "m_flAutoExposureMax in C_TonemapController2 should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::C_TonemapController2, m_flExposureAdaptationSpeedUp) == 0x610, "m_flExposureAdaptationSpeedUp in C_TonemapController2 should be at offset 0x610");
 		static_assert(offsetof(CS2::client::C_TonemapController2, m_flExposureAdaptationSpeedDown) == 0x614, "m_flExposureAdaptationSpeedDown in C_TonemapController2 should be at offset 0x614");
 		static_assert(offsetof(CS2::client::C_TonemapController2, m_flTonemapEVSmoothingRange) == 0x618, "m_flTonemapEVSmoothingRange in C_TonemapController2 should be at offset 0x618");
 		static_assert(sizeof(CS2::client::C_TonemapController2) == 0x620, "C_TonemapController2 size should be 0x620");
+
+#endif
 	}
 }

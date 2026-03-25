@@ -31,6 +31,7 @@ namespace CS2 {
 			int32_t m_nComponent; // 0x270 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RtEnvCull, m_vecTestDir) == 0x1D0, "m_vecTestDir in C_OP_RtEnvCull should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RtEnvCull, m_vecTestNormal) == 0x1DC, "m_vecTestNormal in C_OP_RtEnvCull should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RtEnvCull, m_bCullOnMiss) == 0x1E8, "m_bCullOnMiss in C_OP_RtEnvCull should be at offset 0x1E8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RtEnvCull, m_nRTEnvCP) == 0x26C, "m_nRTEnvCP in C_OP_RtEnvCull should be at offset 0x26C");
 		static_assert(offsetof(CS2::particles::C_OP_RtEnvCull, m_nComponent) == 0x270, "m_nComponent in C_OP_RtEnvCull should be at offset 0x270");
 		static_assert(sizeof(CS2::particles::C_OP_RtEnvCull) == 0x278, "C_OP_RtEnvCull size should be 0x278");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CSmartPropElement_PropDynamic : public CS2::smartprops::CSmartPropElement_ModelEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_PropDynamic) == 0x190, "CSmartPropElement_PropDynamic size should be 0x190");
+
+#endif
 	}
 }

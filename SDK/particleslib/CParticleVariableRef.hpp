@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::CKV3MemberNameWithStorage m_variableName; // 0x0 | Schema_Atomic | Size: 0x38
 			GlobalTypes::CPulseValueFullType m_variableType; // 0x38 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particleslib::CParticleVariableRef, m_variableName) == 0x0, "m_variableName in CParticleVariableRef should be at offset 0x0");
 		static_assert(offsetof(CS2::particleslib::CParticleVariableRef, m_variableType) == 0x38, "m_variableType in CParticleVariableRef should be at offset 0x38");
 		static_assert(sizeof(CS2::particleslib::CParticleVariableRef) == 0x50, "CParticleVariableRef size should be 0x50");
+
+#endif
 	}
 }

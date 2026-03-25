@@ -33,6 +33,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint32 > m_nElementMaskArray; // 0x78 | Schema_Atomic | Size: 0x18
 			// char m_nElementMaskArray[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimDataChannelDesc, m_szChannelClass) == 0x0, "m_szChannelClass in CAnimDataChannelDesc should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimDataChannelDesc, m_szVariableName) == 0x10, "m_szVariableName in CAnimDataChannelDesc should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimDataChannelDesc, m_nFlags) == 0x20, "m_nFlags in CAnimDataChannelDesc should be at offset 0x20");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimDataChannelDesc, m_nElementIndexArray) == 0x60, "m_nElementIndexArray in CAnimDataChannelDesc should be at offset 0x60");
 		static_assert(offsetof(CS2::animationsystem::CAnimDataChannelDesc, m_nElementMaskArray) == 0x78, "m_nElementMaskArray in CAnimDataChannelDesc should be at offset 0x78");
 		static_assert(sizeof(CS2::animationsystem::CAnimDataChannelDesc) == 0x90, "CAnimDataChannelDesc size should be 0x90");
+
+#endif
 	}
 }

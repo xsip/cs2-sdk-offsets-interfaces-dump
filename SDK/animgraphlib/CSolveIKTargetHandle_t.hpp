@@ -24,8 +24,11 @@ namespace CS2 {
 			animgraphlib::CAnimParamHandle m_positionHandle; // 0x0 | Schema_DeclaredClass | Size: 0x2
 			animgraphlib::CAnimParamHandle m_orientationHandle; // 0x2 | Schema_DeclaredClass | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSolveIKTargetHandle_t, m_positionHandle) == 0x0, "m_positionHandle in CSolveIKTargetHandle_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CSolveIKTargetHandle_t, m_orientationHandle) == 0x2, "m_orientationHandle in CSolveIKTargetHandle_t should be at offset 0x2");
 		static_assert(sizeof(CS2::animgraphlib::CSolveIKTargetHandle_t) == 0x4, "CSolveIKTargetHandle_t size should be 0x4");
+
+#endif
 	}
 }

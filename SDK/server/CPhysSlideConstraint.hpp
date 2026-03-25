@@ -36,6 +36,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			server::ConstraintSoundInfo m_soundInfo; // 0x538 | Schema_DeclaredClass | Size: 0x98
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysSlideConstraint, m_axisEnd) == 0x510, "m_axisEnd in CPhysSlideConstraint should be at offset 0x510");
 		static_assert(offsetof(CS2::server::CPhysSlideConstraint, m_slideFriction) == 0x51C, "m_slideFriction in CPhysSlideConstraint should be at offset 0x51C");
 		static_assert(offsetof(CS2::server::CPhysSlideConstraint, m_systemLoadScale) == 0x520, "m_systemLoadScale in CPhysSlideConstraint should be at offset 0x520");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysSlideConstraint, m_bUseEntityPivot) == 0x534, "m_bUseEntityPivot in CPhysSlideConstraint should be at offset 0x534");
 		static_assert(offsetof(CS2::server::CPhysSlideConstraint, m_soundInfo) == 0x538, "m_soundInfo in CPhysSlideConstraint should be at offset 0x538");
 		static_assert(sizeof(CS2::server::CPhysSlideConstraint) == 0x5D0, "CPhysSlideConstraint size should be 0x5D0");
+
+#endif
 	}
 }

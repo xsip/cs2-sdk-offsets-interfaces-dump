@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bInFogVolumesList; // 0x751 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFogVolume, m_fogName) == 0x730, "m_fogName in CFogVolume should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFogVolume, m_postProcessName) == 0x738, "m_postProcessName in CFogVolume should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CFogVolume, m_colorCorrectionName) == 0x740, "m_colorCorrectionName in CFogVolume should be at offset 0x740");
 		static_assert(offsetof(CS2::server::CFogVolume, m_bDisabled) == 0x750, "m_bDisabled in CFogVolume should be at offset 0x750");
 		static_assert(offsetof(CS2::server::CFogVolume, m_bInFogVolumesList) == 0x751, "m_bInFogVolumesList in CFogVolume should be at offset 0x751");
 		static_assert(sizeof(CS2::server::CFogVolume) == 0x758, "CFogVolume size should be 0x758");
+
+#endif
 	}
 }

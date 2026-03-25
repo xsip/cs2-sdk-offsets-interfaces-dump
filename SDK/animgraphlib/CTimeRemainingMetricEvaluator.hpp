@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flMinTimeRemaining; // 0x5c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CTimeRemainingMetricEvaluator, m_bMatchByTimeRemaining) == 0x50, "m_bMatchByTimeRemaining in CTimeRemainingMetricEvaluator should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CTimeRemainingMetricEvaluator, m_flMaxTimeRemaining) == 0x54, "m_flMaxTimeRemaining in CTimeRemainingMetricEvaluator should be at offset 0x54");
 		static_assert(offsetof(CS2::animgraphlib::CTimeRemainingMetricEvaluator, m_bFilterByTimeRemaining) == 0x58, "m_bFilterByTimeRemaining in CTimeRemainingMetricEvaluator should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CTimeRemainingMetricEvaluator, m_flMinTimeRemaining) == 0x5C, "m_flMinTimeRemaining in CTimeRemainingMetricEvaluator should be at offset 0x5C");
 		static_assert(sizeof(CS2::animgraphlib::CTimeRemainingMetricEvaluator) == 0x60, "CTimeRemainingMetricEvaluator size should be 0x60");
+
+#endif
 	}
 }

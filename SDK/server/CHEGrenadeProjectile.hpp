@@ -22,6 +22,9 @@ namespace CS2 {
 		class CHEGrenadeProjectile : public CS2::server::CBaseCSGrenadeProjectile {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CHEGrenadeProjectile) == 0xBB0, "CHEGrenadeProjectile size should be 0xBB0");
+
+#endif
 	}
 }

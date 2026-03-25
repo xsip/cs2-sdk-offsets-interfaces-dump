@@ -34,6 +34,7 @@ namespace CS2 {
 			S2_PAD(0x6);
 			particleslib::CParticleCollectionFloatInput m_flScale; // 0x4d8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_nParticlesToMaintain) == 0x1D8, "m_nParticlesToMaintain in C_OP_MaintainEmitter should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flStartTime) == 0x348, "m_flStartTime in C_OP_MaintainEmitter should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flEmissionDuration) == 0x350, "m_flEmissionDuration in C_OP_MaintainEmitter should be at offset 0x350");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_bFinalEmitOnStop) == 0x4D1, "m_bFinalEmitOnStop in C_OP_MaintainEmitter should be at offset 0x4D1");
 		static_assert(offsetof(CS2::particles::C_OP_MaintainEmitter, m_flScale) == 0x4D8, "m_flScale in C_OP_MaintainEmitter should be at offset 0x4D8");
 		static_assert(sizeof(CS2::particles::C_OP_MaintainEmitter) == 0x648, "C_OP_MaintainEmitter size should be 0x648");
+
+#endif
 	}
 }

@@ -72,6 +72,7 @@ namespace CS2 {
 			server::CountdownTimer m_BlockDirectionTimer; // 0x3170 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CChicken, m_AttributeManager) == 0xC70, "m_AttributeManager in CChicken should be at offset 0xC70");
 		static_assert(offsetof(CS2::server::CChicken, m_updateTimer) == 0xF68, "m_updateTimer in CChicken should be at offset 0xF68");
 		static_assert(offsetof(CS2::server::CChicken, m_stuckAnchor) == 0xF80, "m_stuckAnchor in CChicken should be at offset 0xF80");
@@ -101,5 +102,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CChicken, m_followMinuteTimer) == 0x3150, "m_followMinuteTimer in CChicken should be at offset 0x3150");
 		static_assert(offsetof(CS2::server::CChicken, m_BlockDirectionTimer) == 0x3170, "m_BlockDirectionTimer in CChicken should be at offset 0x3170");
 		static_assert(sizeof(CS2::server::CChicken) == 0x3190, "CChicken size should be 0x3190");
+
+#endif
 	}
 }

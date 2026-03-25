@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bInterpolate; // 0x90 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CQuaternionAnimParameter, m_defaultValue) == 0x80, "m_defaultValue in CQuaternionAnimParameter should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CQuaternionAnimParameter, m_bInterpolate) == 0x90, "m_bInterpolate in CQuaternionAnimParameter should be at offset 0x90");
 		static_assert(sizeof(CS2::animgraphlib::CQuaternionAnimParameter) == 0xA0, "CQuaternionAnimParameter size should be 0xA0");
+
+#endif
 	}
 }

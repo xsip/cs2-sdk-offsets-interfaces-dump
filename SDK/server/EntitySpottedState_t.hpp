@@ -26,8 +26,11 @@ namespace CS2 {
 			uint32_t m_bSpottedByMask[2]; // 0xc | Schema_FixedArray | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::EntitySpottedState_t, m_bSpotted) == 0x8, "m_bSpotted in EntitySpottedState_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::EntitySpottedState_t, m_bSpottedByMask) == 0xC, "m_bSpottedByMask in EntitySpottedState_t should be at offset 0xC");
 		static_assert(sizeof(CS2::server::EntitySpottedState_t) == 0x18, "EntitySpottedState_t size should be 0x18");
+
+#endif
 	}
 }

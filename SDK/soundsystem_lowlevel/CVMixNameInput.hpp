@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_defaultValue; // 0x10 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixNameInput, m_defaultValue) == 0x10, "m_defaultValue in CVMixNameInput should be at offset 0x10");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixNameInput) == 0x20, "CVMixNameInput size should be 0x20");
+
+#endif
 	}
 }

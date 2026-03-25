@@ -48,6 +48,7 @@ namespace CS2 {
 			int32_t m_errorHistoryCount; // 0x1250 | Schema_Builtin | Size: 0x4
 			float32 m_averageError; // 0x1254 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Fish, m_pos) == 0x1168, "m_pos in C_Fish should be at offset 0x1168");
 		static_assert(offsetof(CS2::client::C_Fish, m_vel) == 0x1174, "m_vel in C_Fish should be at offset 0x1174");
 		static_assert(offsetof(CS2::client::C_Fish, m_angles) == 0x1180, "m_angles in C_Fish should be at offset 0x1180");
@@ -72,5 +73,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_Fish, m_errorHistoryCount) == 0x1250, "m_errorHistoryCount in C_Fish should be at offset 0x1250");
 		static_assert(offsetof(CS2::client::C_Fish, m_averageError) == 0x1254, "m_averageError in C_Fish should be at offset 0x1254");
 		static_assert(sizeof(CS2::client::C_Fish) == 0x1258, "C_Fish size should be 0x1258");
+
+#endif
 	}
 }

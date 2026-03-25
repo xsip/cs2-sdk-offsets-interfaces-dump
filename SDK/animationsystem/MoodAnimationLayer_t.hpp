@@ -39,6 +39,7 @@ namespace CS2 {
 			float32 m_flFadeOut; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::MoodAnimationLayer_t, m_sName) == 0x0, "m_sName in MoodAnimationLayer_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::MoodAnimationLayer_t, m_bActiveListening) == 0x8, "m_bActiveListening in MoodAnimationLayer_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animationsystem::MoodAnimationLayer_t, m_bActiveTalking) == 0x9, "m_bActiveTalking in MoodAnimationLayer_t should be at offset 0x9");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::MoodAnimationLayer_t, m_flFadeIn) == 0x54, "m_flFadeIn in MoodAnimationLayer_t should be at offset 0x54");
 		static_assert(offsetof(CS2::animationsystem::MoodAnimationLayer_t, m_flFadeOut) == 0x58, "m_flFadeOut in MoodAnimationLayer_t should be at offset 0x58");
 		static_assert(sizeof(CS2::animationsystem::MoodAnimationLayer_t) == 0x60, "MoodAnimationLayer_t size should be 0x60");
+
+#endif
 	}
 }

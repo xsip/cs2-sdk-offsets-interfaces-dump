@@ -36,6 +36,7 @@ namespace CS2 {
 			uint32_t m_splinePushType; // 0x8c0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerPush, m_angPushEntitySpace) == 0x890, "m_angPushEntitySpace in CTriggerPush should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerPush, m_vecPushDirEntitySpace) == 0x89C, "m_vecPushDirEntitySpace in CTriggerPush should be at offset 0x89C");
 		static_assert(offsetof(CS2::server::CTriggerPush, m_bTriggerOnStartTouch) == 0x8A8, "m_bTriggerOnStartTouch in CTriggerPush should be at offset 0x8A8");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTriggerPush, m_PathSimple) == 0x8B8, "m_PathSimple in CTriggerPush should be at offset 0x8B8");
 		static_assert(offsetof(CS2::server::CTriggerPush, m_splinePushType) == 0x8C0, "m_splinePushType in CTriggerPush should be at offset 0x8C0");
 		static_assert(sizeof(CS2::server::CTriggerPush) == 0x8C8, "CTriggerPush size should be 0x8C8");
+
+#endif
 	}
 }

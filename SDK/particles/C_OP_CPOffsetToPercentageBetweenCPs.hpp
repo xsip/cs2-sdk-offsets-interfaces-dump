@@ -34,6 +34,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			GlobalTypes::Vector m_vecOffset; // 0x1f4 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputMin) == 0x1D0, "m_flInputMin in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputMax) == 0x1D4, "m_flInputMax in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_flInputBias) == 0x1D8, "m_flInputBias in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1D8");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_bScaleOffset) == 0x1F1, "m_bScaleOffset in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1F1");
 		static_assert(offsetof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs, m_vecOffset) == 0x1F4, "m_vecOffset in C_OP_CPOffsetToPercentageBetweenCPs should be at offset 0x1F4");
 		static_assert(sizeof(CS2::particles::C_OP_CPOffsetToPercentageBetweenCPs) == 0x200, "C_OP_CPOffsetToPercentageBetweenCPs size should be 0x200");
+
+#endif
 	}
 }

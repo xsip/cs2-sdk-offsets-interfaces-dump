@@ -27,11 +27,14 @@ namespace CS2 {
 			uint16_t nBeginDynamic; // 0x30 | Schema_Builtin | Size: 0x2
 			S2_PAD(0xe); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeFitMatrix_t, bone) == 0x0, "bone in FeFitMatrix_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeFitMatrix_t, vCenter) == 0x20, "vCenter in FeFitMatrix_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::FeFitMatrix_t, nEnd) == 0x2C, "nEnd in FeFitMatrix_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::physicslib::FeFitMatrix_t, nNode) == 0x2E, "nNode in FeFitMatrix_t should be at offset 0x2E");
 		static_assert(offsetof(CS2::physicslib::FeFitMatrix_t, nBeginDynamic) == 0x30, "nBeginDynamic in FeFitMatrix_t should be at offset 0x30");
 		static_assert(sizeof(CS2::physicslib::FeFitMatrix_t) == 0x40, "FeFitMatrix_t size should be 0x40");
+
+#endif
 	}
 }

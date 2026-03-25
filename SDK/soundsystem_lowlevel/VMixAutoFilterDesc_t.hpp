@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 m_flPhase; // 0x24 | Schema_Builtin | Size: 0x4
 			soundsystem_lowlevel::VMixLFOShape_t m_nLFOShape; // 0x28 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixAutoFilterDesc_t, m_flEnvelopeAmount) == 0x0, "m_flEnvelopeAmount in VMixAutoFilterDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixAutoFilterDesc_t, m_flAttackTimeMS) == 0x4, "m_flAttackTimeMS in VMixAutoFilterDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixAutoFilterDesc_t, m_flReleaseTimeMS) == 0x8, "m_flReleaseTimeMS in VMixAutoFilterDesc_t should be at offset 0x8");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixAutoFilterDesc_t, m_flPhase) == 0x24, "m_flPhase in VMixAutoFilterDesc_t should be at offset 0x24");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixAutoFilterDesc_t, m_nLFOShape) == 0x28, "m_nLFOShape in VMixAutoFilterDesc_t should be at offset 0x28");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixAutoFilterDesc_t) == 0x2C, "VMixAutoFilterDesc_t size should be 0x2C");
+
+#endif
 	}
 }

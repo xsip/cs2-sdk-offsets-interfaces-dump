@@ -25,8 +25,11 @@ namespace CS2 {
 			char m_blendRanges[0x48]; // 0x0 | Schema_Atomic | Size: 0x48
 			GlobalTypes::Range_t m_parameterRange; // 0x48 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_Parameterization_t, m_blendRanges) == 0x0, "m_blendRanges in CNmParameterizedBlendNode::Parameterization_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_Parameterization_t, m_parameterRange) == 0x48, "m_parameterRange in CNmParameterizedBlendNode::Parameterization_t should be at offset 0x48");
 		static_assert(sizeof(CS2::animlib::CNmParameterizedBlendNode_Parameterization_t) == 0x50, "CNmParameterizedBlendNode::Parameterization_t size should be 0x50");
+
+#endif
 	}
 }

@@ -11,9 +11,9 @@
 
 
 
-
-
 #include "../mathlib_extended/fieldtype_t.hpp"
+
+
 
 using namespace GlobalTypes;
 namespace CS2 {
@@ -56,6 +56,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_vector4DCompressor; // 0x188 | Schema_Atomic | Size: 0x18
 			// char m_vector4DCompressor[0x18]; // 0x188 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CCompressorGroup, m_nTotalElementCount) == 0x0, "m_nTotalElementCount in CCompressorGroup should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CCompressorGroup, m_szChannelClass) == 0x8, "m_szChannelClass in CCompressorGroup should be at offset 0x8");
 		static_assert(offsetof(CS2::animationsystem::CCompressorGroup, m_szVariableName) == 0x20, "m_szVariableName in CCompressorGroup should be at offset 0x20");
@@ -74,5 +75,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CCompressorGroup, m_vector2DCompressor) == 0x170, "m_vector2DCompressor in CCompressorGroup should be at offset 0x170");
 		static_assert(offsetof(CS2::animationsystem::CCompressorGroup, m_vector4DCompressor) == 0x188, "m_vector4DCompressor in CCompressorGroup should be at offset 0x188");
 		static_assert(sizeof(CS2::animationsystem::CCompressorGroup) == 0x1A0, "CCompressorGroup size should be 0x1A0");
+
+#endif
 	}
 }

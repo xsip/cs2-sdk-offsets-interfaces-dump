@@ -31,8 +31,11 @@ namespace CS2 {
 			GlobalTypes::CHandle<client::C_BaseEntity> m_hCarriedHostageProp; // 0x4c | Schema_Atomic | Size: 0x4
 			// char m_hCarriedHostageProp[0x4]; // 0x4c | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSPlayer_HostageServices, m_hCarriedHostage) == 0x48, "m_hCarriedHostage in CCSPlayer_HostageServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CCSPlayer_HostageServices, m_hCarriedHostageProp) == 0x4C, "m_hCarriedHostageProp in CCSPlayer_HostageServices should be at offset 0x4C");
 		static_assert(sizeof(CS2::client::CCSPlayer_HostageServices) == 0x50, "CCSPlayer_HostageServices size should be 0x50");
+
+#endif
 	}
 }

@@ -25,7 +25,10 @@ namespace CS2 {
 			client::CBaseAnimGraphController m_animationController; // 0x550 | Schema_DeclaredClass | Size: 0x1b38
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBodyComponentBaseAnimGraph, m_animationController) == 0x550, "m_animationController in CBodyComponentBaseAnimGraph should be at offset 0x550");
 		static_assert(sizeof(CS2::client::CBodyComponentBaseAnimGraph) == 0x2090, "CBodyComponentBaseAnimGraph size should be 0x2090");
+
+#endif
 	}
 }

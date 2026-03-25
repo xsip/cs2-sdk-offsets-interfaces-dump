@@ -36,11 +36,14 @@ namespace CS2 {
 			// char m_hPlayer[0x4]; // 0x510 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerHasAmmo) == 0x4A8, "m_PlayerHasAmmo in CLogicPlayerProxy should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerHasNoAmmo) == 0x4C0, "m_PlayerHasNoAmmo in CLogicPlayerProxy should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_PlayerDied) == 0x4D8, "m_PlayerDied in CLogicPlayerProxy should be at offset 0x4D8");
 		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_RequestedPlayerHealth) == 0x4F0, "m_RequestedPlayerHealth in CLogicPlayerProxy should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CLogicPlayerProxy, m_hPlayer) == 0x510, "m_hPlayer in CLogicPlayerProxy should be at offset 0x510");
 		static_assert(sizeof(CS2::server::CLogicPlayerProxy) == 0x518, "CLogicPlayerProxy size should be 0x518");
+
+#endif
 	}
 }

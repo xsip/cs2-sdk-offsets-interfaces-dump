@@ -48,6 +48,7 @@ namespace CS2 {
 			uint8_t m_nExplosionType; // 0x6e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x9); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CEffectData, m_vOrigin) == 0x8, "m_vOrigin in CEffectData should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CEffectData, m_vStart) == 0x14, "m_vStart in CEffectData should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CEffectData, m_vNormal) == 0x20, "m_vNormal in CEffectData should be at offset 0x20");
@@ -70,5 +71,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CEffectData, m_iEffectName) == 0x6C, "m_iEffectName in CEffectData should be at offset 0x6C");
 		static_assert(offsetof(CS2::client::CEffectData, m_nExplosionType) == 0x6E, "m_nExplosionType in CEffectData should be at offset 0x6E");
 		static_assert(sizeof(CS2::client::CEffectData) == 0x78, "CEffectData size should be 0x78");
+
+#endif
 	}
 }

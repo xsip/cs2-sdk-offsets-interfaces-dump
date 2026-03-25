@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bRandomlyFlipDirection; // 0x1ec | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CGeneralRandomRotation, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in CGeneralRandomRotation should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::CGeneralRandomRotation, m_flDegrees) == 0x1DC, "m_flDegrees in CGeneralRandomRotation should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::CGeneralRandomRotation, m_flDegreesMin) == 0x1E0, "m_flDegreesMin in CGeneralRandomRotation should be at offset 0x1E0");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CGeneralRandomRotation, m_flRotationRandExponent) == 0x1E8, "m_flRotationRandExponent in CGeneralRandomRotation should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::CGeneralRandomRotation, m_bRandomlyFlipDirection) == 0x1EC, "m_bRandomlyFlipDirection in CGeneralRandomRotation should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::CGeneralRandomRotation) == 0x1F8, "CGeneralRandomRotation size should be 0x1F8");
+
+#endif
 	}
 }

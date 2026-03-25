@@ -30,6 +30,7 @@ namespace CS2 {
 			smartprops::SmartPropDeformableAttachMode_t m_nDeformableAttachmentMode; // 0x188 | Schema_DeclaredEnum | Size: 0x4
 			smartprops::SmartPropDeformableOrientMode_t m_nDeformableOrientationMode; // 0x18c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_ModelEntity, m_sModelName) == 0x88, "m_sModelName in CSmartPropElement_ModelEntity should be at offset 0x88");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_ModelEntity, m_MaterialGroupName) == 0xC8, "m_MaterialGroupName in CSmartPropElement_ModelEntity should be at offset 0xC8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_ModelEntity, m_bCastShadows) == 0x108, "m_bCastShadows in CSmartPropElement_ModelEntity should be at offset 0x108");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_ModelEntity, m_nDeformableAttachmentMode) == 0x188, "m_nDeformableAttachmentMode in CSmartPropElement_ModelEntity should be at offset 0x188");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_ModelEntity, m_nDeformableOrientationMode) == 0x18C, "m_nDeformableOrientationMode in CSmartPropElement_ModelEntity should be at offset 0x18C");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_ModelEntity) == 0x190, "CSmartPropElement_ModelEntity size should be 0x190");
+
+#endif
 	}
 }

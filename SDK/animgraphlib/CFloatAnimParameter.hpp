@@ -27,10 +27,13 @@ namespace CS2 {
 			bool m_bInterpolate; // 0x8c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFloatAnimParameter, m_fDefaultValue) == 0x80, "m_fDefaultValue in CFloatAnimParameter should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CFloatAnimParameter, m_fMinValue) == 0x84, "m_fMinValue in CFloatAnimParameter should be at offset 0x84");
 		static_assert(offsetof(CS2::animgraphlib::CFloatAnimParameter, m_fMaxValue) == 0x88, "m_fMaxValue in CFloatAnimParameter should be at offset 0x88");
 		static_assert(offsetof(CS2::animgraphlib::CFloatAnimParameter, m_bInterpolate) == 0x8C, "m_bInterpolate in CFloatAnimParameter should be at offset 0x8C");
 		static_assert(sizeof(CS2::animgraphlib::CFloatAnimParameter) == 0x90, "CFloatAnimParameter size should be 0x90");
+
+#endif
 	}
 }

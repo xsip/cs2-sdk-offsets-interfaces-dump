@@ -50,6 +50,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vRandomMin; // 0x6a0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vRandomMax; // 0x6ac | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_nType) == 0x10, "m_nType in CParticleVecInput should be at offset 0x10");
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vLiteralValue) == 0x14, "m_vLiteralValue in CParticleVecInput should be at offset 0x14");
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_LiteralColor) == 0x20, "m_LiteralColor in CParticleVecInput should be at offset 0x20");
@@ -74,5 +75,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vRandomMin) == 0x6A0, "m_vRandomMin in CParticleVecInput should be at offset 0x6A0");
 		static_assert(offsetof(CS2::particleslib::CParticleVecInput, m_vRandomMax) == 0x6AC, "m_vRandomMax in CParticleVecInput should be at offset 0x6AC");
 		static_assert(sizeof(CS2::particleslib::CParticleVecInput) == 0x6B8, "CParticleVecInput size should be 0x6B8");
+
+#endif
 	}
 }

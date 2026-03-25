@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_iDamageType; // 0x4e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::FilterDamageType, m_iDamageType) == 0x4E0, "m_iDamageType in FilterDamageType should be at offset 0x4E0");
 		static_assert(sizeof(CS2::server::FilterDamageType) == 0x4E8, "FilterDamageType size should be 0x4E8");
+
+#endif
 	}
 }

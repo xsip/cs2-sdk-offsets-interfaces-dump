@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			uint32_t m_flags; // 0x0 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBitFlags, m_flags) == 0x0, "m_flags in CNmBitFlags should be at offset 0x0");
 		static_assert(sizeof(CS2::animlib::CNmBitFlags) == 0x4, "CNmBitFlags size should be 0x4");
+
+#endif
 	}
 }

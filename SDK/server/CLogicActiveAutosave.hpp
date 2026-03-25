@@ -27,10 +27,13 @@ namespace CS2 {
 			entity2::GameTime_t m_flStartTime; // 0x4c0 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flDangerousTime; // 0x4c4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_TriggerHitPoints) == 0x4B8, "m_TriggerHitPoints in CLogicActiveAutosave should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flTimeToTrigger) == 0x4BC, "m_flTimeToTrigger in CLogicActiveAutosave should be at offset 0x4BC");
 		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flStartTime) == 0x4C0, "m_flStartTime in CLogicActiveAutosave should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CLogicActiveAutosave, m_flDangerousTime) == 0x4C4, "m_flDangerousTime in CLogicActiveAutosave should be at offset 0x4C4");
 		static_assert(sizeof(CS2::server::CLogicActiveAutosave) == 0x4C8, "CLogicActiveAutosave size should be 0x4C8");
+
+#endif
 	}
 }

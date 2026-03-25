@@ -27,9 +27,12 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_iChangedVariables; // 0x674 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_FogController, m_fog) == 0x608, "m_fog in C_FogController should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_FogController, m_bUseAngles) == 0x670, "m_bUseAngles in C_FogController should be at offset 0x670");
 		static_assert(offsetof(CS2::client::C_FogController, m_iChangedVariables) == 0x674, "m_iChangedVariables in C_FogController should be at offset 0x674");
 		static_assert(sizeof(CS2::client::C_FogController) == 0x678, "C_FogController size should be 0x678");
+
+#endif
 	}
 }

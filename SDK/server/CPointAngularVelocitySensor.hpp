@@ -48,6 +48,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnGreaterThanOrEqualTo; // 0x548 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnEqualTo; // 0x560 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_hTargetEntity) == 0x4A8, "m_hTargetEntity in CPointAngularVelocitySensor should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_flThreshold) == 0x4AC, "m_flThreshold in CPointAngularVelocitySensor should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_nLastCompareResult) == 0x4B0, "m_nLastCompareResult in CPointAngularVelocitySensor should be at offset 0x4B0");
@@ -65,5 +66,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnGreaterThanOrEqualTo) == 0x548, "m_OnGreaterThanOrEqualTo in CPointAngularVelocitySensor should be at offset 0x548");
 		static_assert(offsetof(CS2::server::CPointAngularVelocitySensor, m_OnEqualTo) == 0x560, "m_OnEqualTo in CPointAngularVelocitySensor should be at offset 0x560");
 		static_assert(sizeof(CS2::server::CPointAngularVelocitySensor) == 0x578, "CPointAngularVelocitySensor size should be 0x578");
+
+#endif
 	}
 }

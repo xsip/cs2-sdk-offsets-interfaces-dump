@@ -25,7 +25,10 @@ namespace CS2 {
 			bool m_bHasBeenPreFiltered; // 0x80 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::navlib::CNavVolumeVector, m_bHasBeenPreFiltered) == 0x80, "m_bHasBeenPreFiltered in CNavVolumeVector should be at offset 0x80");
 		static_assert(sizeof(CS2::navlib::CNavVolumeVector) == 0xA0, "CNavVolumeVector size should be 0xA0");
+
+#endif
 	}
 }

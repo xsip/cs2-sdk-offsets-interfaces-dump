@@ -64,6 +64,7 @@ namespace CS2 {
 			// char m_hEndEntity[0x4]; // 0xf40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Beam, m_flFrameRate) == 0xE88, "m_flFrameRate in C_Beam should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_Beam, m_flHDRColorScale) == 0xE8C, "m_flHDRColorScale in C_Beam should be at offset 0xE8C");
 		static_assert(offsetof(CS2::client::C_Beam, m_flFireTime) == 0xE90, "m_flFireTime in C_Beam should be at offset 0xE90");
@@ -89,5 +90,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_Beam, m_vecEndPos) == 0xF34, "m_vecEndPos in C_Beam should be at offset 0xF34");
 		static_assert(offsetof(CS2::client::C_Beam, m_hEndEntity) == 0xF40, "m_hEndEntity in C_Beam should be at offset 0xF40");
 		static_assert(sizeof(CS2::client::C_Beam) == 0xF48, "C_Beam size should be 0xF48");
+
+#endif
 	}
 }

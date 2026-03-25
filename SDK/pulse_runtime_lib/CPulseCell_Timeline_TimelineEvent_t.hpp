@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			pulse_runtime_lib::CPulse_OutflowConnection m_EventOutflow; // 0x8 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Timeline_TimelineEvent_t, m_flTimeFromPrevious) == 0x0, "m_flTimeFromPrevious in CPulseCell_Timeline::TimelineEvent_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Timeline_TimelineEvent_t, m_EventOutflow) == 0x8, "m_EventOutflow in CPulseCell_Timeline::TimelineEvent_t should be at offset 0x8");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Timeline_TimelineEvent_t) == 0x50, "CPulseCell_Timeline::TimelineEvent_t size should be 0x50");
+
+#endif
 	}
 }

@@ -58,6 +58,7 @@ namespace CS2 {
 			bool m_Entity_bEnabled; // 0x1531 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_AmbientCube) == 0x14A0, "m_Entity_hLightProbeTexture_AmbientCube in CEnvLightProbeVolume should be at offset 0x14A0");
 		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SDF) == 0x14A8, "m_Entity_hLightProbeTexture_SDF in CEnvLightProbeVolume should be at offset 0x14A8");
 		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_hLightProbeTexture_SH2_DC) == 0x14B0, "m_Entity_hLightProbeTexture_SH2_DC in CEnvLightProbeVolume should be at offset 0x14B0");
@@ -81,5 +82,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_nLightProbeAtlasZ) == 0x1524, "m_Entity_nLightProbeAtlasZ in CEnvLightProbeVolume should be at offset 0x1524");
 		static_assert(offsetof(CS2::server::CEnvLightProbeVolume, m_Entity_bEnabled) == 0x1531, "m_Entity_bEnabled in CEnvLightProbeVolume should be at offset 0x1531");
 		static_assert(sizeof(CS2::server::CEnvLightProbeVolume) == 0x1538, "CEnvLightProbeVolume size should be 0x1538");
+
+#endif
 	}
 }

@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flOutputMax; // 0x250 | Schema_Builtin | Size: 0x4
 			float32 m_flRadius; // 0x254 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToScalar, m_nSetMethod) == 0x1D0, "m_nSetMethod in C_OP_RemapTransformVisibilityToScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToScalar, m_TransformInput) == 0x1D8, "m_TransformInput in C_OP_RemapTransformVisibilityToScalar should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToScalar, m_nFieldOutput) == 0x240, "m_nFieldOutput in C_OP_RemapTransformVisibilityToScalar should be at offset 0x240");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToScalar, m_flOutputMax) == 0x250, "m_flOutputMax in C_OP_RemapTransformVisibilityToScalar should be at offset 0x250");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformVisibilityToScalar, m_flRadius) == 0x254, "m_flRadius in C_OP_RemapTransformVisibilityToScalar should be at offset 0x254");
 		static_assert(sizeof(CS2::particles::C_OP_RemapTransformVisibilityToScalar) == 0x258, "C_OP_RemapTransformVisibilityToScalar size should be 0x258");
+
+#endif
 	}
 }

@@ -27,9 +27,12 @@ namespace CS2 {
 			char m_values[0x40]; // 0x38 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CGlobalSymbol m_defaultValue; // 0x78 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIDSelectorNode_CDefinition, m_conditionNodeIndices) == 0x10, "m_conditionNodeIndices in CNmIDSelectorNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmIDSelectorNode_CDefinition, m_values) == 0x38, "m_values in CNmIDSelectorNode::CDefinition should be at offset 0x38");
 		static_assert(offsetof(CS2::animlib::CNmIDSelectorNode_CDefinition, m_defaultValue) == 0x78, "m_defaultValue in CNmIDSelectorNode::CDefinition should be at offset 0x78");
 		static_assert(sizeof(CS2::animlib::CNmIDSelectorNode_CDefinition) == 0x80, "CNmIDSelectorNode::CDefinition size should be 0x80");
+
+#endif
 	}
 }

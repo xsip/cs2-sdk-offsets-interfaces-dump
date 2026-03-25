@@ -28,9 +28,12 @@ namespace CS2 {
 			// client::CHandle< C_BaseEntity > m_hFilter[10]; // 0x698 | Schema_FixedArray | Size: 0x28
 			char m_hFilter[0x28]; // 0x698 | Schema_FixedArray | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CFilterMultiple, m_nFilterType) == 0x640, "m_nFilterType in CFilterMultiple should be at offset 0x640");
 		static_assert(offsetof(CS2::client::CFilterMultiple, m_iFilterName) == 0x648, "m_iFilterName in CFilterMultiple should be at offset 0x648");
 		static_assert(offsetof(CS2::client::CFilterMultiple, m_hFilter) == 0x698, "m_hFilter in CFilterMultiple should be at offset 0x698");
 		static_assert(sizeof(CS2::client::CFilterMultiple) == 0x6C0, "CFilterMultiple size should be 0x6C0");
+
+#endif
 	}
 }

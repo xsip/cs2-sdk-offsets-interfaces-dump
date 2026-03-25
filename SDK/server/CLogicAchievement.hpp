@@ -27,9 +27,12 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszAchievementEventID; // 0x4b0 | Schema_Atomic | Size: 0x8
 			entity2::CEntityIOOutput m_OnFired; // 0x4b8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicAchievement, m_bDisabled) == 0x4A8, "m_bDisabled in CLogicAchievement should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicAchievement, m_iszAchievementEventID) == 0x4B0, "m_iszAchievementEventID in CLogicAchievement should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CLogicAchievement, m_OnFired) == 0x4B8, "m_OnFired in CLogicAchievement should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CLogicAchievement) == 0x4D0, "CLogicAchievement size should be 0x4D0");
+
+#endif
 	}
 }

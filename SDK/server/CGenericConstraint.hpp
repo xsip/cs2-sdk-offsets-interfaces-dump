@@ -76,6 +76,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_NotifyForceReachedY; // 0x5d8 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_NotifyForceReachedZ; // 0x5f0 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGenericConstraint, m_nLinearMotionX) == 0x510, "m_nLinearMotionX in CGenericConstraint should be at offset 0x510");
 		static_assert(offsetof(CS2::server::CGenericConstraint, m_nLinearMotionY) == 0x514, "m_nLinearMotionY in CGenericConstraint should be at offset 0x514");
 		static_assert(offsetof(CS2::server::CGenericConstraint, m_nLinearMotionZ) == 0x518, "m_nLinearMotionZ in CGenericConstraint should be at offset 0x518");
@@ -125,5 +126,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CGenericConstraint, m_NotifyForceReachedY) == 0x5D8, "m_NotifyForceReachedY in CGenericConstraint should be at offset 0x5D8");
 		static_assert(offsetof(CS2::server::CGenericConstraint, m_NotifyForceReachedZ) == 0x5F0, "m_NotifyForceReachedZ in CGenericConstraint should be at offset 0x5F0");
 		static_assert(sizeof(CS2::server::CGenericConstraint) == 0x608, "CGenericConstraint size should be 0x608");
+
+#endif
 	}
 }

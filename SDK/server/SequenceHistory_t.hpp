@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flPlaybackRate; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_flCyclesPerSecond; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::SequenceHistory_t, m_hSequence) == 0x0, "m_hSequence in SequenceHistory_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::SequenceHistory_t, m_flSeqStartTime) == 0x4, "m_flSeqStartTime in SequenceHistory_t should be at offset 0x4");
 		static_assert(offsetof(CS2::server::SequenceHistory_t, m_flSeqFixedCycle) == 0x8, "m_flSeqFixedCycle in SequenceHistory_t should be at offset 0x8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::SequenceHistory_t, m_flPlaybackRate) == 0x10, "m_flPlaybackRate in SequenceHistory_t should be at offset 0x10");
 		static_assert(offsetof(CS2::server::SequenceHistory_t, m_flCyclesPerSecond) == 0x14, "m_flCyclesPerSecond in SequenceHistory_t should be at offset 0x14");
 		static_assert(sizeof(CS2::server::SequenceHistory_t) == 0x18, "SequenceHistory_t size should be 0x18");
+
+#endif
 	}
 }

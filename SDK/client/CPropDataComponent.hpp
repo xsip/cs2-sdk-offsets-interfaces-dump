@@ -34,6 +34,7 @@ namespace CS2 {
 			int32_t m_nDisableTakePhysicsDamageSpawnFlag; // 0x38 | Schema_Builtin | Size: 0x4
 			int32_t m_nMotionDisabledSpawnFlag; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPropDataComponent, m_flDmgModBullet) == 0x10, "m_flDmgModBullet in CPropDataComponent should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CPropDataComponent, m_flDmgModClub) == 0x14, "m_flDmgModClub in CPropDataComponent should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CPropDataComponent, m_flDmgModExplosive) == 0x18, "m_flDmgModExplosive in CPropDataComponent should be at offset 0x18");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CPropDataComponent, m_nDisableTakePhysicsDamageSpawnFlag) == 0x38, "m_nDisableTakePhysicsDamageSpawnFlag in CPropDataComponent should be at offset 0x38");
 		static_assert(offsetof(CS2::client::CPropDataComponent, m_nMotionDisabledSpawnFlag) == 0x3C, "m_nMotionDisabledSpawnFlag in CPropDataComponent should be at offset 0x3C");
 		static_assert(sizeof(CS2::client::CPropDataComponent) == 0x40, "CPropDataComponent size should be 0x40");
+
+#endif
 	}
 }

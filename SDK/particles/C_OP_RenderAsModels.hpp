@@ -36,6 +36,7 @@ namespace CS2 {
 			int32_t m_nSizeCullBloat; // 0x250 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_ModelList) == 0x220, "m_ModelList in C_OP_RenderAsModels should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_flModelScale) == 0x23C, "m_flModelScale in C_OP_RenderAsModels should be at offset 0x23C");
 		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_bFitToModelSize) == 0x240, "m_bFitToModelSize in C_OP_RenderAsModels should be at offset 0x240");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nZAxisScalingAttribute) == 0x24C, "m_nZAxisScalingAttribute in C_OP_RenderAsModels should be at offset 0x24C");
 		static_assert(offsetof(CS2::particles::C_OP_RenderAsModels, m_nSizeCullBloat) == 0x250, "m_nSizeCullBloat in C_OP_RenderAsModels should be at offset 0x250");
 		static_assert(sizeof(CS2::particles::C_OP_RenderAsModels) == 0x258, "C_OP_RenderAsModels size should be 0x258");
+
+#endif
 	}
 }

@@ -31,8 +31,11 @@ namespace CS2 {
 			GlobalTypes::CHandle<client::C_CSPlayerPawn> m_KillingPlayer; // 0x19c4 | Schema_Atomic | Size: 0x4
 			// char m_KillingPlayer[0x4]; // 0x19c4 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_ItemDogtags, m_OwningPlayer) == 0x19C0, "m_OwningPlayer in C_ItemDogtags should be at offset 0x19C0");
 		static_assert(offsetof(CS2::client::C_ItemDogtags, m_KillingPlayer) == 0x19C4, "m_KillingPlayer in C_ItemDogtags should be at offset 0x19C4");
 		static_assert(sizeof(CS2::client::C_ItemDogtags) == 0x19C8, "C_ItemDogtags size should be 0x19C8");
+
+#endif
 	}
 }

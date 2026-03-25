@@ -28,11 +28,14 @@ namespace CS2 {
 			uint32_t unFlags; // 0xc | Schema_Builtin | Size: 0x4
 			GlobalTypes::PulseSymbol_t tagName; // 0x10 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t, nCursorID) == 0x0, "nCursorID in PulseGraphExecutionHistoryEntry_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t, nEditorID) == 0x4, "nEditorID in PulseGraphExecutionHistoryEntry_t should be at offset 0x4");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t, flExecTime) == 0x8, "flExecTime in PulseGraphExecutionHistoryEntry_t should be at offset 0x8");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t, unFlags) == 0xC, "unFlags in PulseGraphExecutionHistoryEntry_t should be at offset 0xC");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t, tagName) == 0x10, "tagName in PulseGraphExecutionHistoryEntry_t should be at offset 0x10");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryEntry_t) == 0x20, "PulseGraphExecutionHistoryEntry_t size should be 0x20");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionVecInput m_vecComparisonVelocity; // 0x1f0 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToCPVelocity, m_nCPInput) == 0x1D8, "m_nCPInput in C_OP_SetControlPointToCPVelocity should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToCPVelocity, m_nCPOutputVel) == 0x1DC, "m_nCPOutputVel in C_OP_SetControlPointToCPVelocity should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToCPVelocity, m_bNormalize) == 0x1E0, "m_bNormalize in C_OP_SetControlPointToCPVelocity should be at offset 0x1E0");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToCPVelocity, m_nCPField) == 0x1E8, "m_nCPField in C_OP_SetControlPointToCPVelocity should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToCPVelocity, m_vecComparisonVelocity) == 0x1F0, "m_vecComparisonVelocity in C_OP_SetControlPointToCPVelocity should be at offset 0x1F0");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToCPVelocity) == 0x8A8, "C_OP_SetControlPointToCPVelocity size should be 0x8A8");
+
+#endif
 	}
 }

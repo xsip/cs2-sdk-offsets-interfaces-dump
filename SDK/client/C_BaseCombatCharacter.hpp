@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flWaterNextTraceTime; // 0x1374 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x60); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_hMyWearables) == 0x1350, "m_hMyWearables in C_BaseCombatCharacter should be at offset 0x1350");
 		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_leftFootAttachment) == 0x1368, "m_leftFootAttachment in C_BaseCombatCharacter should be at offset 0x1368");
 		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_rightFootAttachment) == 0x1369, "m_rightFootAttachment in C_BaseCombatCharacter should be at offset 0x1369");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_flWaterWorldZ) == 0x1370, "m_flWaterWorldZ in C_BaseCombatCharacter should be at offset 0x1370");
 		static_assert(offsetof(CS2::client::C_BaseCombatCharacter, m_flWaterNextTraceTime) == 0x1374, "m_flWaterNextTraceTime in C_BaseCombatCharacter should be at offset 0x1374");
 		static_assert(sizeof(CS2::client::C_BaseCombatCharacter) == 0x13D8, "C_BaseCombatCharacter size should be 0x13D8");
+
+#endif
 	}
 }

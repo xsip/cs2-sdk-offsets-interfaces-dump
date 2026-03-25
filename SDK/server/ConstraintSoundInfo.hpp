@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bPlayReversalSound; // 0x91 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_vSampler) == 0x8, "m_vSampler in ConstraintSoundInfo should be at offset 0x8");
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_soundProfile) == 0x20, "m_soundProfile in ConstraintSoundInfo should be at offset 0x20");
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_forwardAxis) == 0x40, "m_forwardAxis in ConstraintSoundInfo should be at offset 0x40");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_bPlayTravelSound) == 0x90, "m_bPlayTravelSound in ConstraintSoundInfo should be at offset 0x90");
 		static_assert(offsetof(CS2::server::ConstraintSoundInfo, m_bPlayReversalSound) == 0x91, "m_bPlayReversalSound in ConstraintSoundInfo should be at offset 0x91");
 		static_assert(sizeof(CS2::server::ConstraintSoundInfo) == 0x98, "ConstraintSoundInfo size should be 0x98");
+
+#endif
 	}
 }

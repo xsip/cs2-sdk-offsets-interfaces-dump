@@ -31,10 +31,13 @@ namespace CS2 {
 			char m_szTeamname[129]; // 0x63c | Schema_FixedArray | Size: 0x81
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Team, m_aPlayerControllers) == 0x608, "m_aPlayerControllers in C_Team should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_Team, m_aPlayers) == 0x620, "m_aPlayers in C_Team should be at offset 0x620");
 		static_assert(offsetof(CS2::client::C_Team, m_iScore) == 0x638, "m_iScore in C_Team should be at offset 0x638");
 		static_assert(offsetof(CS2::client::C_Team, m_szTeamname) == 0x63C, "m_szTeamname in C_Team should be at offset 0x63C");
 		static_assert(sizeof(CS2::client::C_Team) == 0x6C0, "C_Team size should be 0x6C0");
+
+#endif
 	}
 }

@@ -48,6 +48,7 @@ namespace CS2 {
 			bool m_bEnableRootHeightDamping; // 0x155 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFootLockUpdateNode, m_opFixedSettings) == 0x70, "m_opFixedSettings in CFootLockUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CFootLockUpdateNode, m_footSettings) == 0xE0, "m_footSettings in CFootLockUpdateNode should be at offset 0xE0");
 		static_assert(offsetof(CS2::animgraphlib::CFootLockUpdateNode, m_hipShiftDamping) == 0xF8, "m_hipShiftDamping in CFootLockUpdateNode should be at offset 0xF8");
@@ -69,5 +70,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CFootLockUpdateNode, m_bEnableVerticalCurvedPaths) == 0x154, "m_bEnableVerticalCurvedPaths in CFootLockUpdateNode should be at offset 0x154");
 		static_assert(offsetof(CS2::animgraphlib::CFootLockUpdateNode, m_bEnableRootHeightDamping) == 0x155, "m_bEnableRootHeightDamping in CFootLockUpdateNode should be at offset 0x155");
 		static_assert(sizeof(CS2::animgraphlib::CFootLockUpdateNode) == 0x158, "CFootLockUpdateNode size should be 0x158");
+
+#endif
 	}
 }

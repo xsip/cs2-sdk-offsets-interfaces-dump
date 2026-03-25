@@ -26,11 +26,14 @@ namespace CS2 {
 			float32 flP1Pct; // 0x1c | Schema_Builtin | Size: 0x4
 			float32 flP2Pct; // 0x20 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::SoundeventPathCornerPairNetworked_t, vP1) == 0x0, "vP1 in SoundeventPathCornerPairNetworked_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::SoundeventPathCornerPairNetworked_t, vP2) == 0xC, "vP2 in SoundeventPathCornerPairNetworked_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::SoundeventPathCornerPairNetworked_t, flPathLengthSqr) == 0x18, "flPathLengthSqr in SoundeventPathCornerPairNetworked_t should be at offset 0x18");
 		static_assert(offsetof(CS2::client::SoundeventPathCornerPairNetworked_t, flP1Pct) == 0x1C, "flP1Pct in SoundeventPathCornerPairNetworked_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::client::SoundeventPathCornerPairNetworked_t, flP2Pct) == 0x20, "flP2Pct in SoundeventPathCornerPairNetworked_t should be at offset 0x20");
 		static_assert(sizeof(CS2::client::SoundeventPathCornerPairNetworked_t) == 0x24, "SoundeventPathCornerPairNetworked_t size should be 0x24");
+
+#endif
 	}
 }

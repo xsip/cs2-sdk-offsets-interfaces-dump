@@ -34,6 +34,7 @@ namespace CS2 {
 			// char m_hMaster[0x4]; // 0x13d0 | Schema_Atomic | Size: 0x4
 			GlobalTypes::Vector m_vWhereToSetLightingOrigin; // 0x13d4 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BasePropDoor, m_eDoorState) == 0x13B0, "m_eDoorState in C_BasePropDoor should be at offset 0x13B0");
 		static_assert(offsetof(CS2::client::C_BasePropDoor, m_modelChanged) == 0x13B4, "m_modelChanged in C_BasePropDoor should be at offset 0x13B4");
 		static_assert(offsetof(CS2::client::C_BasePropDoor, m_bLocked) == 0x13B5, "m_bLocked in C_BasePropDoor should be at offset 0x13B5");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BasePropDoor, m_hMaster) == 0x13D0, "m_hMaster in C_BasePropDoor should be at offset 0x13D0");
 		static_assert(offsetof(CS2::client::C_BasePropDoor, m_vWhereToSetLightingOrigin) == 0x13D4, "m_vWhereToSetLightingOrigin in C_BasePropDoor should be at offset 0x13D4");
 		static_assert(sizeof(CS2::client::C_BasePropDoor) == 0x13E0, "C_BasePropDoor size should be 0x13E0");
+
+#endif
 	}
 }

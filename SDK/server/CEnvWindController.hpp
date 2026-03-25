@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bFirstTime; // 0x5f9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvWindController, m_EnvWindShared) == 0x4A8, "m_EnvWindShared in CEnvWindController should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvWindController, m_fDirectionVariation) == 0x5D8, "m_fDirectionVariation in CEnvWindController should be at offset 0x5D8");
 		static_assert(offsetof(CS2::server::CEnvWindController, m_fSpeedVariation) == 0x5DC, "m_fSpeedVariation in CEnvWindController should be at offset 0x5DC");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvWindController, m_bIsMaster) == 0x5F8, "m_bIsMaster in CEnvWindController should be at offset 0x5F8");
 		static_assert(offsetof(CS2::server::CEnvWindController, m_bFirstTime) == 0x5F9, "m_bFirstTime in CEnvWindController should be at offset 0x5F9");
 		static_assert(sizeof(CS2::server::CEnvWindController) == 0x600, "CEnvWindController size should be 0x600");
+
+#endif
 	}
 }

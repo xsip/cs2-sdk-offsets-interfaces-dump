@@ -36,6 +36,7 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_pTextureEnvMap; // 0x250 | Schema_Atomic | Size: 0x8
 			char m_pTextureEnvMap[0x8]; // 0x250 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureColorWarp) == 0x220, "m_pTextureColorWarp in C_OP_RenderStatusEffect should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureDetail2) == 0x228, "m_pTextureDetail2 in C_OP_RenderStatusEffect should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureDiffuseWarp) == 0x230, "m_pTextureDiffuseWarp in C_OP_RenderStatusEffect should be at offset 0x230");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureSpecularWarp) == 0x248, "m_pTextureSpecularWarp in C_OP_RenderStatusEffect should be at offset 0x248");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffect, m_pTextureEnvMap) == 0x250, "m_pTextureEnvMap in C_OP_RenderStatusEffect should be at offset 0x250");
 		static_assert(sizeof(CS2::particles::C_OP_RenderStatusEffect) == 0x258, "C_OP_RenderStatusEffect size should be 0x258");
+
+#endif
 	}
 }

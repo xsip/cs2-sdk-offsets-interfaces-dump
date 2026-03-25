@@ -33,6 +33,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flInterpRate; // 0x1fc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoCP, m_nInputControlPoint) == 0x1D8, "m_nInputControlPoint in C_OP_RemapCPtoCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoCP, m_nOutputControlPoint) == 0x1DC, "m_nOutputControlPoint in C_OP_RemapCPtoCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoCP, m_nInputField) == 0x1E0, "m_nInputField in C_OP_RemapCPtoCP should be at offset 0x1E0");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoCP, m_bDerivative) == 0x1F8, "m_bDerivative in C_OP_RemapCPtoCP should be at offset 0x1F8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoCP, m_flInterpRate) == 0x1FC, "m_flInterpRate in C_OP_RemapCPtoCP should be at offset 0x1FC");
 		static_assert(sizeof(CS2::particles::C_OP_RemapCPtoCP) == 0x200, "C_OP_RemapCPtoCP size should be 0x200");
+
+#endif
 	}
 }

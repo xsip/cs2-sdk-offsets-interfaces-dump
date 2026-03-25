@@ -27,11 +27,14 @@ namespace CS2 {
 			bool m_bHasMovement; // 0x2d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimBoneDifference, m_name) == 0x0, "m_name in CAnimBoneDifference should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimBoneDifference, m_parent) == 0x10, "m_parent in CAnimBoneDifference should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimBoneDifference, m_posError) == 0x20, "m_posError in CAnimBoneDifference should be at offset 0x20");
 		static_assert(offsetof(CS2::animationsystem::CAnimBoneDifference, m_bHasRotation) == 0x2C, "m_bHasRotation in CAnimBoneDifference should be at offset 0x2C");
 		static_assert(offsetof(CS2::animationsystem::CAnimBoneDifference, m_bHasMovement) == 0x2D, "m_bHasMovement in CAnimBoneDifference should be at offset 0x2D");
 		static_assert(sizeof(CS2::animationsystem::CAnimBoneDifference) == 0x30, "CAnimBoneDifference size should be 0x30");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CPulseGraphInstance_TestDomain_FakeEntityOwner : public CS2::pulse_runtime_lib::CBasePulseGraphInstance {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_system::CPulseGraphInstance_TestDomain_FakeEntityOwner) == 0x118, "CPulseGraphInstance_TestDomain_FakeEntityOwner size should be 0x118");
+
+#endif
 	}
 }

@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bConvertToDebrisWhenPossible; // 0xfa0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_gravityScale) == 0xF58, "m_gravityScale in C_TriggerPhysics should be at offset 0xF58");
 		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearLimit) == 0xF5C, "m_linearLimit in C_TriggerPhysics should be at offset 0xF5C");
 		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_linearDamping) == 0xF60, "m_linearDamping in C_TriggerPhysics should be at offset 0xF60");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_vecLinearForceDirection) == 0xF94, "m_vecLinearForceDirection in C_TriggerPhysics should be at offset 0xF94");
 		static_assert(offsetof(CS2::client::C_TriggerPhysics, m_bConvertToDebrisWhenPossible) == 0xFA0, "m_bConvertToDebrisWhenPossible in C_TriggerPhysics should be at offset 0xFA0");
 		static_assert(sizeof(CS2::client::C_TriggerPhysics) == 0xFA8, "C_TriggerPhysics size should be 0xFA8");
+
+#endif
 	}
 }

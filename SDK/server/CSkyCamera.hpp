@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x3);
 			server::CSkyCamera* m_pNext; // 0x540 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSkyCamera, m_skyboxData) == 0x4A8, "m_skyboxData in CSkyCamera should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CSkyCamera, m_skyboxSlotToken) == 0x538, "m_skyboxSlotToken in CSkyCamera should be at offset 0x538");
 		static_assert(offsetof(CS2::server::CSkyCamera, m_bUseAngles) == 0x53C, "m_bUseAngles in CSkyCamera should be at offset 0x53C");
 		static_assert(offsetof(CS2::server::CSkyCamera, m_pNext) == 0x540, "m_pNext in CSkyCamera should be at offset 0x540");
 		static_assert(sizeof(CS2::server::CSkyCamera) == 0x548, "CSkyCamera size should be 0x548");
+
+#endif
 	}
 }

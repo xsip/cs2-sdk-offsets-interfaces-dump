@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 m_flSpeedMultiplier; // 0x40 | Schema_Builtin | Size: 0x4
 			int32_t m_nStartSyncEventOffset; // 0x44 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmClipNode_CDefinition, m_nPlayInReverseValueNodeIdx) == 0x10, "m_nPlayInReverseValueNodeIdx in CNmClipNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmClipNode_CDefinition, m_nResetTimeValueNodeIdx) == 0x12, "m_nResetTimeValueNodeIdx in CNmClipNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmClipNode_CDefinition, m_bSampleRootMotion) == 0x14, "m_bSampleRootMotion in CNmClipNode::CDefinition should be at offset 0x14");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmClipNode_CDefinition, m_flSpeedMultiplier) == 0x40, "m_flSpeedMultiplier in CNmClipNode::CDefinition should be at offset 0x40");
 		static_assert(offsetof(CS2::animlib::CNmClipNode_CDefinition, m_nStartSyncEventOffset) == 0x44, "m_nStartSyncEventOffset in CNmClipNode::CDefinition should be at offset 0x44");
 		static_assert(sizeof(CS2::animlib::CNmClipNode_CDefinition) == 0x48, "CNmClipNode::CDefinition size should be 0x48");
+
+#endif
 	}
 }

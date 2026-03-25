@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bUseCustomDuration; // 0x38 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::BlendItem_t, m_tags) == 0x0, "m_tags in BlendItem_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::BlendItem_t, m_pChild) == 0x18, "m_pChild in BlendItem_t should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::BlendItem_t, m_hSequence) == 0x28, "m_hSequence in BlendItem_t should be at offset 0x28");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::BlendItem_t, m_flDuration) == 0x34, "m_flDuration in BlendItem_t should be at offset 0x34");
 		static_assert(offsetof(CS2::animgraphlib::BlendItem_t, m_bUseCustomDuration) == 0x38, "m_bUseCustomDuration in BlendItem_t should be at offset 0x38");
 		static_assert(sizeof(CS2::animgraphlib::BlendItem_t) == 0x40, "BlendItem_t size should be 0x40");
+
+#endif
 	}
 }

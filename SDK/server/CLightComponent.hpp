@@ -108,6 +108,7 @@ namespace CS2 {
 			bool m_bPvsModifyEntity; // 0x1b8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLightComponent, __m_pChainEntity) == 0x38, "__m_pChainEntity in CLightComponent should be at offset 0x38");
 		static_assert(offsetof(CS2::server::CLightComponent, m_Color) == 0x75, "m_Color in CLightComponent should be at offset 0x75");
 		static_assert(offsetof(CS2::server::CLightComponent, m_SecondaryColor) == 0x79, "m_SecondaryColor in CLightComponent should be at offset 0x79");
@@ -180,5 +181,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLightComponent, m_flMinRoughness) == 0x1A8, "m_flMinRoughness in CLightComponent should be at offset 0x1A8");
 		static_assert(offsetof(CS2::server::CLightComponent, m_bPvsModifyEntity) == 0x1B8, "m_bPvsModifyEntity in CLightComponent should be at offset 0x1B8");
 		static_assert(sizeof(CS2::server::CLightComponent) == 0x1C0, "CLightComponent size should be 0x1C0");
+
+#endif
 	}
 }

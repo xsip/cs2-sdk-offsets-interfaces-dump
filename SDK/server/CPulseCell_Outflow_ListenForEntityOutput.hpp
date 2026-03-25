@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bListenUntilCanceled; // 0xe8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput, m_OnFired) == 0x48, "m_OnFired in CPulseCell_Outflow_ListenForEntityOutput should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput, m_OnCanceled) == 0x90, "m_OnCanceled in CPulseCell_Outflow_ListenForEntityOutput should be at offset 0x90");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput, m_strEntityOutput) == 0xD8, "m_strEntityOutput in CPulseCell_Outflow_ListenForEntityOutput should be at offset 0xD8");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput, m_strEntityOutputParam) == 0xE0, "m_strEntityOutputParam in CPulseCell_Outflow_ListenForEntityOutput should be at offset 0xE0");
 		static_assert(offsetof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput, m_bListenUntilCanceled) == 0xE8, "m_bListenUntilCanceled in CPulseCell_Outflow_ListenForEntityOutput should be at offset 0xE8");
 		static_assert(sizeof(CS2::server::CPulseCell_Outflow_ListenForEntityOutput) == 0xF0, "CPulseCell_Outflow_ListenForEntityOutput size should be 0xF0");
+
+#endif
 	}
 }

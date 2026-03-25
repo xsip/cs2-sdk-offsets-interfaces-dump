@@ -53,6 +53,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			client::C_PointCamera* m_pNext; // 0x660 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PointCamera, m_FOV) == 0x608, "m_FOV in C_PointCamera should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_PointCamera, m_Resolution) == 0x60C, "m_Resolution in C_PointCamera should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::C_PointCamera, m_bFogEnable) == 0x610, "m_bFogEnable in C_PointCamera should be at offset 0x610");
@@ -80,5 +81,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PointCamera, m_bIsOn) == 0x65C, "m_bIsOn in C_PointCamera should be at offset 0x65C");
 		static_assert(offsetof(CS2::client::C_PointCamera, m_pNext) == 0x660, "m_pNext in C_PointCamera should be at offset 0x660");
 		static_assert(sizeof(CS2::client::C_PointCamera) == 0x668, "C_PointCamera size should be 0x668");
+
+#endif
 	}
 }

@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::CUtlBinaryBlock m_IBData; // 0x48 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlBinaryBlock m_InstanceAlbedoData; // 0x58 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::AggregateRTProxySceneObject_t, m_nLayer) == 0x0, "m_nLayer in AggregateRTProxySceneObject_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::AggregateRTProxySceneObject_t, m_BLASes) == 0x8, "m_BLASes in AggregateRTProxySceneObject_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::AggregateRTProxySceneObject_t, m_Instances) == 0x20, "m_Instances in AggregateRTProxySceneObject_t should be at offset 0x20");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::AggregateRTProxySceneObject_t, m_IBData) == 0x48, "m_IBData in AggregateRTProxySceneObject_t should be at offset 0x48");
 		static_assert(offsetof(CS2::worldrenderer::AggregateRTProxySceneObject_t, m_InstanceAlbedoData) == 0x58, "m_InstanceAlbedoData in AggregateRTProxySceneObject_t should be at offset 0x58");
 		static_assert(sizeof(CS2::worldrenderer::AggregateRTProxySceneObject_t) == 0x68, "AggregateRTProxySceneObject_t size should be 0x68");
+
+#endif
 	}
 }

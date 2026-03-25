@@ -26,9 +26,12 @@ namespace CS2 {
 			entity2::GameTime_t m_fExpirationTime; // 0x10 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::ResponseContext_t, m_iszName) == 0x0, "m_iszName in ResponseContext_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::ResponseContext_t, m_iszValue) == 0x8, "m_iszValue in ResponseContext_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::ResponseContext_t, m_fExpirationTime) == 0x10, "m_fExpirationTime in ResponseContext_t should be at offset 0x10");
 		static_assert(sizeof(CS2::server::ResponseContext_t) == 0x18, "ResponseContext_t size should be 0x18");
+
+#endif
 	}
 }

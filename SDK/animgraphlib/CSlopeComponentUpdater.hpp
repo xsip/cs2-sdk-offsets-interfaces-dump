@@ -32,6 +32,7 @@ namespace CS2 {
 			animgraphlib::CAnimParamHandle m_hSlopeNormal_WorldSpace; // 0x42 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSlopeComponentUpdater, m_flTraceDistance) == 0x34, "m_flTraceDistance in CSlopeComponentUpdater should be at offset 0x34");
 		static_assert(offsetof(CS2::animgraphlib::CSlopeComponentUpdater, m_hSlopeAngle) == 0x38, "m_hSlopeAngle in CSlopeComponentUpdater should be at offset 0x38");
 		static_assert(offsetof(CS2::animgraphlib::CSlopeComponentUpdater, m_hSlopeAngleFront) == 0x3A, "m_hSlopeAngleFront in CSlopeComponentUpdater should be at offset 0x3A");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CSlopeComponentUpdater, m_hSlopeNormal) == 0x40, "m_hSlopeNormal in CSlopeComponentUpdater should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CSlopeComponentUpdater, m_hSlopeNormal_WorldSpace) == 0x42, "m_hSlopeNormal_WorldSpace in CSlopeComponentUpdater should be at offset 0x42");
 		static_assert(sizeof(CS2::animgraphlib::CSlopeComponentUpdater) == 0x48, "CSlopeComponentUpdater size should be 0x48");
+
+#endif
 	}
 }

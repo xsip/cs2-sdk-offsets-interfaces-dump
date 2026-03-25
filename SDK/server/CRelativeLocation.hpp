@@ -34,10 +34,13 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CBaseEntity> m_hEntity; // 0x34 | Schema_Atomic | Size: 0x4
 			// char m_hEntity[0x4]; // 0x34 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRelativeLocation, m_Type) == 0x18, "m_Type in CRelativeLocation should be at offset 0x18");
 		static_assert(offsetof(CS2::server::CRelativeLocation, m_vRelativeOffset) == 0x1C, "m_vRelativeOffset in CRelativeLocation should be at offset 0x1C");
 		static_assert(offsetof(CS2::server::CRelativeLocation, m_vWorldSpacePos) == 0x28, "m_vWorldSpacePos in CRelativeLocation should be at offset 0x28");
 		static_assert(offsetof(CS2::server::CRelativeLocation, m_hEntity) == 0x34, "m_hEntity in CRelativeLocation should be at offset 0x34");
 		static_assert(sizeof(CS2::server::CRelativeLocation) == 0x38, "CRelativeLocation size should be 0x38");
+
+#endif
 	}
 }

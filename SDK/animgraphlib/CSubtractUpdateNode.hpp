@@ -29,10 +29,13 @@ namespace CS2 {
 			bool m_bUseModelSpace; // 0x9a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSubtractUpdateNode, m_footMotionTiming) == 0x94, "m_footMotionTiming in CSubtractUpdateNode should be at offset 0x94");
 		static_assert(offsetof(CS2::animgraphlib::CSubtractUpdateNode, m_bApplyToFootMotion) == 0x98, "m_bApplyToFootMotion in CSubtractUpdateNode should be at offset 0x98");
 		static_assert(offsetof(CS2::animgraphlib::CSubtractUpdateNode, m_bApplyChannelsSeparately) == 0x99, "m_bApplyChannelsSeparately in CSubtractUpdateNode should be at offset 0x99");
 		static_assert(offsetof(CS2::animgraphlib::CSubtractUpdateNode, m_bUseModelSpace) == 0x9A, "m_bUseModelSpace in CSubtractUpdateNode should be at offset 0x9A");
 		static_assert(sizeof(CS2::animgraphlib::CSubtractUpdateNode) == 0xA0, "CSubtractUpdateNode size should be 0xA0");
+
+#endif
 	}
 }

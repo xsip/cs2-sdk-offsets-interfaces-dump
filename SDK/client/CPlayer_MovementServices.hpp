@@ -43,6 +43,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_vecOldViewAngles; // 0x228 | Schema_Atomic | Size: 0xc
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices, m_nImpulse) == 0x48, "m_nImpulse in CPlayer_MovementServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices, m_nButtons) == 0x50, "m_nButtons in CPlayer_MovementServices should be at offset 0x50");
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices, m_nQueuedButtonDownMask) == 0x70, "m_nQueuedButtonDownMask in CPlayer_MovementServices should be at offset 0x70");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices, m_vecLastMovementImpulses) == 0x1C0, "m_vecLastMovementImpulses in CPlayer_MovementServices should be at offset 0x1C0");
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices, m_vecOldViewAngles) == 0x228, "m_vecOldViewAngles in CPlayer_MovementServices should be at offset 0x228");
 		static_assert(sizeof(CS2::client::CPlayer_MovementServices) == 0x240, "CPlayer_MovementServices size should be 0x240");
+
+#endif
 	}
 }

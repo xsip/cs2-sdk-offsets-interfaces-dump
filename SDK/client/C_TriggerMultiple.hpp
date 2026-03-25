@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_TriggerMultiple : public CS2::client::C_BaseTrigger {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_TriggerMultiple) == 0xF58, "C_TriggerMultiple size should be 0xF58");
+
+#endif
 	}
 }

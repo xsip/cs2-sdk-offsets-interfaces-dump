@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bIsWorldSpaceTarget; // 0x12 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTargetPointNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmTargetPointNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmTargetPointNode_CDefinition, m_bIsWorldSpaceTarget) == 0x12, "m_bIsWorldSpaceTarget in CNmTargetPointNode::CDefinition should be at offset 0x12");
 		static_assert(sizeof(CS2::animlib::CNmTargetPointNode_CDefinition) == 0x18, "CNmTargetPointNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

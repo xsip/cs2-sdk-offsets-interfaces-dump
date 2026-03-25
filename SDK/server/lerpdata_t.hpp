@@ -39,6 +39,7 @@ namespace CS2 {
 			client::ParticleIndex_t m_nFXIndex; // 0x30 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::lerpdata_t, m_hEnt) == 0x0, "m_hEnt in lerpdata_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::lerpdata_t, m_MoveType) == 0x4, "m_MoveType in lerpdata_t should be at offset 0x4");
 		static_assert(offsetof(CS2::server::lerpdata_t, m_flStartTime) == 0x8, "m_flStartTime in lerpdata_t should be at offset 0x8");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::lerpdata_t, m_qStartRot) == 0x20, "m_qStartRot in lerpdata_t should be at offset 0x20");
 		static_assert(offsetof(CS2::server::lerpdata_t, m_nFXIndex) == 0x30, "m_nFXIndex in lerpdata_t should be at offset 0x30");
 		static_assert(sizeof(CS2::server::lerpdata_t) == 0x50, "lerpdata_t size should be 0x50");
+
+#endif
 	}
 }

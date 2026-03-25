@@ -25,7 +25,10 @@ namespace CS2 {
 			animgraphlib::CAnimParamHandle m_hParam; // 0x70 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStanceScaleUpdateNode, m_hParam) == 0x70, "m_hParam in CStanceScaleUpdateNode should be at offset 0x70");
 		static_assert(sizeof(CS2::animgraphlib::CStanceScaleUpdateNode) == 0x78, "CStanceScaleUpdateNode size should be 0x78");
+
+#endif
 	}
 }

@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bCapsule; // 0x86e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_CylindricalDistanceToTransform, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_CylindricalDistanceToTransform should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_CylindricalDistanceToTransform, m_flInputMin) == 0x1D8, "m_flInputMin in C_OP_CylindricalDistanceToTransform should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_CylindricalDistanceToTransform, m_flInputMax) == 0x348, "m_flInputMax in C_OP_CylindricalDistanceToTransform should be at offset 0x348");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_CylindricalDistanceToTransform, m_bAdditive) == 0x86D, "m_bAdditive in C_OP_CylindricalDistanceToTransform should be at offset 0x86D");
 		static_assert(offsetof(CS2::particles::C_OP_CylindricalDistanceToTransform, m_bCapsule) == 0x86E, "m_bCapsule in C_OP_CylindricalDistanceToTransform should be at offset 0x86E");
 		static_assert(sizeof(CS2::particles::C_OP_CylindricalDistanceToTransform) == 0x870, "C_OP_CylindricalDistanceToTransform size should be 0x870");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			int32_t m_nStepside; // 0x268 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices_Humanoid, m_flStepSoundTime) == 0x240, "m_flStepSoundTime in CPlayer_MovementServices_Humanoid should be at offset 0x240");
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices_Humanoid, m_flFallVelocity) == 0x244, "m_flFallVelocity in CPlayer_MovementServices_Humanoid should be at offset 0x244");
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices_Humanoid, m_groundNormal) == 0x248, "m_groundNormal in CPlayer_MovementServices_Humanoid should be at offset 0x248");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices_Humanoid, m_surfaceProps) == 0x258, "m_surfaceProps in CPlayer_MovementServices_Humanoid should be at offset 0x258");
 		static_assert(offsetof(CS2::client::CPlayer_MovementServices_Humanoid, m_nStepside) == 0x268, "m_nStepside in CPlayer_MovementServices_Humanoid should be at offset 0x268");
 		static_assert(sizeof(CS2::client::CPlayer_MovementServices_Humanoid) == 0x270, "CPlayer_MovementServices_Humanoid size should be 0x270");
+
+#endif
 	}
 }

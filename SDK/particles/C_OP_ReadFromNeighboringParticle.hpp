@@ -30,11 +30,14 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_DistanceCheck; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x350 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ReadFromNeighboringParticle, m_nFieldInput) == 0x1D0, "m_nFieldInput in C_OP_ReadFromNeighboringParticle should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ReadFromNeighboringParticle, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_ReadFromNeighboringParticle should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_ReadFromNeighboringParticle, m_nIncrement) == 0x1D8, "m_nIncrement in C_OP_ReadFromNeighboringParticle should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ReadFromNeighboringParticle, m_DistanceCheck) == 0x1E0, "m_DistanceCheck in C_OP_ReadFromNeighboringParticle should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_ReadFromNeighboringParticle, m_flInterpolation) == 0x350, "m_flInterpolation in C_OP_ReadFromNeighboringParticle should be at offset 0x350");
 		static_assert(sizeof(CS2::particles::C_OP_ReadFromNeighboringParticle) == 0x4C0, "C_OP_ReadFromNeighboringParticle size should be 0x4C0");
+
+#endif
 	}
 }

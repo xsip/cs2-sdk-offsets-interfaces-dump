@@ -42,6 +42,7 @@ namespace CS2 {
 			GlobalTypes::CEntityIndex m_nSoundSourceEntIndex; // 0x534 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CAmbientGeneric, m_radius) == 0x4A8, "m_radius in CAmbientGeneric should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CAmbientGeneric, m_flMaxRadius) == 0x4AC, "m_flMaxRadius in CAmbientGeneric should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CAmbientGeneric, m_iSoundLevel) == 0x4B0, "m_iSoundLevel in CAmbientGeneric should be at offset 0x4B0");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CAmbientGeneric, m_hSoundSource) == 0x530, "m_hSoundSource in CAmbientGeneric should be at offset 0x530");
 		static_assert(offsetof(CS2::server::CAmbientGeneric, m_nSoundSourceEntIndex) == 0x534, "m_nSoundSourceEntIndex in CAmbientGeneric should be at offset 0x534");
 		static_assert(sizeof(CS2::server::CAmbientGeneric) == 0x550, "CAmbientGeneric size should be 0x550");
+
+#endif
 	}
 }

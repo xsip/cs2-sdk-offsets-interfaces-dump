@@ -30,6 +30,7 @@ namespace CS2 {
 			int32_t m_nControlPointNumber; // 0x368 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarpScalar, m_vecWarpMin) == 0x1D8, "m_vecWarpMin in C_INIT_PositionWarpScalar should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarpScalar, m_vecWarpMax) == 0x1E4, "m_vecWarpMax in C_INIT_PositionWarpScalar should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarpScalar, m_InputValue) == 0x1F0, "m_InputValue in C_INIT_PositionWarpScalar should be at offset 0x1F0");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarpScalar, m_nScaleControlPointNumber) == 0x364, "m_nScaleControlPointNumber in C_INIT_PositionWarpScalar should be at offset 0x364");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarpScalar, m_nControlPointNumber) == 0x368, "m_nControlPointNumber in C_INIT_PositionWarpScalar should be at offset 0x368");
 		static_assert(sizeof(CS2::particles::C_INIT_PositionWarpScalar) == 0x370, "C_INIT_PositionWarpScalar size should be 0x370");
+
+#endif
 	}
 }

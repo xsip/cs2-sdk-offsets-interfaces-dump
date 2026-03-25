@@ -26,11 +26,14 @@ namespace CS2 {
 			GlobalTypes::fltx4 flSpringDamping; // 0x30 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 flNodeWeight0; // 0x40 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSimdSpringIntegrator_t, nNode) == 0x0, "nNode in FeSimdSpringIntegrator_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSimdSpringIntegrator_t, flSpringRestLength) == 0x10, "flSpringRestLength in FeSimdSpringIntegrator_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::FeSimdSpringIntegrator_t, flSpringConstant) == 0x20, "flSpringConstant in FeSimdSpringIntegrator_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::FeSimdSpringIntegrator_t, flSpringDamping) == 0x30, "flSpringDamping in FeSimdSpringIntegrator_t should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::FeSimdSpringIntegrator_t, flNodeWeight0) == 0x40, "flNodeWeight0 in FeSimdSpringIntegrator_t should be at offset 0x40");
 		static_assert(sizeof(CS2::physicslib::FeSimdSpringIntegrator_t) == 0x50, "FeSimdSpringIntegrator_t size should be 0x50");
+
+#endif
 	}
 }

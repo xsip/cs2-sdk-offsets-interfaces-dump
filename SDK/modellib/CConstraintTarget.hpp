@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bIsAttachment; // 0x59 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CConstraintTarget, m_qOffset) == 0x20, "m_qOffset in CConstraintTarget should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CConstraintTarget, m_vOffset) == 0x30, "m_vOffset in CConstraintTarget should be at offset 0x30");
 		static_assert(offsetof(CS2::modellib::CConstraintTarget, m_nBoneHash) == 0x3C, "m_nBoneHash in CConstraintTarget should be at offset 0x3C");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CConstraintTarget, m_flWeight) == 0x48, "m_flWeight in CConstraintTarget should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CConstraintTarget, m_bIsAttachment) == 0x59, "m_bIsAttachment in CConstraintTarget should be at offset 0x59");
 		static_assert(sizeof(CS2::modellib::CConstraintTarget) == 0x60, "CConstraintTarget size should be 0x60");
+
+#endif
 	}
 }

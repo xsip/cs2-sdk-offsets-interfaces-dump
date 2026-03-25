@@ -24,7 +24,10 @@ namespace CS2 {
 			S2_PAD(0x18);
 			GlobalTypes::CUtlSymbolLarge m_name; // 0x748 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlace, m_name) == 0x748, "m_name in CCSPlace should be at offset 0x748");
 		static_assert(sizeof(CS2::server::CCSPlace) == 0x750, "CCSPlace size should be 0x750");
+
+#endif
 	}
 }

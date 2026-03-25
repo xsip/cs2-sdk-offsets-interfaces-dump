@@ -40,6 +40,7 @@ namespace CS2 {
 			S2_PAD(0xb);
 			client::CPlayerSprayDecalRenderHelper m_SprayRenderHelper; // 0xf68 | Schema_DeclaredClass | Size: 0x30
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PlayerSprayDecal, m_nUniqueID) == 0xE88, "m_nUniqueID in C_PlayerSprayDecal should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_PlayerSprayDecal, m_unAccountID) == 0xE8C, "m_unAccountID in C_PlayerSprayDecal should be at offset 0xE8C");
 		static_assert(offsetof(CS2::client::C_PlayerSprayDecal, m_unTraceID) == 0xE90, "m_unTraceID in C_PlayerSprayDecal should be at offset 0xE90");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PlayerSprayDecal, m_ubSignature) == 0xEDD, "m_ubSignature in C_PlayerSprayDecal should be at offset 0xEDD");
 		static_assert(offsetof(CS2::client::C_PlayerSprayDecal, m_SprayRenderHelper) == 0xF68, "m_SprayRenderHelper in C_PlayerSprayDecal should be at offset 0xF68");
 		static_assert(sizeof(CS2::client::C_PlayerSprayDecal) == 0xF98, "C_PlayerSprayDecal size should be 0xF98");
+
+#endif
 	}
 }

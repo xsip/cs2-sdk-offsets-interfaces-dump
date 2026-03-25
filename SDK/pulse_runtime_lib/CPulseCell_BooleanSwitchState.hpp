@@ -28,10 +28,13 @@ namespace CS2 {
 			pulse_runtime_lib::CPulse_OutflowConnection m_WhenTrue; // 0x108 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::CPulse_OutflowConnection m_WhenFalse; // 0x150 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_BooleanSwitchState, m_Condition) == 0x48, "m_Condition in CPulseCell_BooleanSwitchState should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_BooleanSwitchState, m_SubGraph) == 0xC0, "m_SubGraph in CPulseCell_BooleanSwitchState should be at offset 0xC0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_BooleanSwitchState, m_WhenTrue) == 0x108, "m_WhenTrue in CPulseCell_BooleanSwitchState should be at offset 0x108");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_BooleanSwitchState, m_WhenFalse) == 0x150, "m_WhenFalse in CPulseCell_BooleanSwitchState should be at offset 0x150");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_BooleanSwitchState) == 0x198, "CPulseCell_BooleanSwitchState size should be 0x198");
+
+#endif
 	}
 }

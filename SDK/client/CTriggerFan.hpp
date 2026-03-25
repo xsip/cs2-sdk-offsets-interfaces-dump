@@ -41,6 +41,7 @@ namespace CS2 {
 			client::CountdownTimer m_RampTimer; // 0xfa0 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CTriggerFan, m_vFanOriginOffset) == 0xF58, "m_vFanOriginOffset in CTriggerFan should be at offset 0xF58");
 		static_assert(offsetof(CS2::client::CTriggerFan, m_vDirection) == 0xF64, "m_vDirection in CTriggerFan should be at offset 0xF64");
 		static_assert(offsetof(CS2::client::CTriggerFan, m_bPushTowardsInfoTarget) == 0xF70, "m_bPushTowardsInfoTarget in CTriggerFan should be at offset 0xF70");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CTriggerFan, m_bFalloff) == 0xF98, "m_bFalloff in CTriggerFan should be at offset 0xF98");
 		static_assert(offsetof(CS2::client::CTriggerFan, m_RampTimer) == 0xFA0, "m_RampTimer in CTriggerFan should be at offset 0xFA0");
 		static_assert(sizeof(CS2::client::CTriggerFan) == 0xFC0, "CTriggerFan size should be 0xFC0");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bIgnoreRotation; // 0x84 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CAttachment, m_name) == 0x0, "m_name in CAttachment should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CAttachment, m_influenceNames) == 0x8, "m_influenceNames in CAttachment should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CAttachment, m_vInfluenceRotations) == 0x20, "m_vInfluenceRotations in CAttachment should be at offset 0x20");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CAttachment, m_nInfluences) == 0x83, "m_nInfluences in CAttachment should be at offset 0x83");
 		static_assert(offsetof(CS2::modellib::CAttachment, m_bIgnoreRotation) == 0x84, "m_bIgnoreRotation in CAttachment should be at offset 0x84");
 		static_assert(sizeof(CS2::modellib::CAttachment) == 0x90, "CAttachment size should be 0x90");
+
+#endif
 	}
 }

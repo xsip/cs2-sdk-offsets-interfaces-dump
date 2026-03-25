@@ -43,6 +43,7 @@ namespace CS2 {
 			bool m_bDisabled; // 0xf54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnStartTouch) == 0xE88, "m_OnStartTouch in C_BaseTrigger should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnStartTouchAll) == 0xEA0, "m_OnStartTouchAll in C_BaseTrigger should be at offset 0xEA0");
 		static_assert(offsetof(CS2::client::C_BaseTrigger, m_OnEndTouch) == 0xEB8, "m_OnEndTouch in C_BaseTrigger should be at offset 0xEB8");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseTrigger, m_hFilter) == 0xF50, "m_hFilter in C_BaseTrigger should be at offset 0xF50");
 		static_assert(offsetof(CS2::client::C_BaseTrigger, m_bDisabled) == 0xF54, "m_bDisabled in C_BaseTrigger should be at offset 0xF54");
 		static_assert(sizeof(CS2::client::C_BaseTrigger) == 0xF58, "C_BaseTrigger size should be 0xF58");
+
+#endif
 	}
 }

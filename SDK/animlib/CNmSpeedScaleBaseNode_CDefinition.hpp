@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x2);
 			float32 m_flDefaultInputValue; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmSpeedScaleBaseNode_CDefinition, m_nInputValueNodeIdx) == 0x18, "m_nInputValueNodeIdx in CNmSpeedScaleBaseNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmSpeedScaleBaseNode_CDefinition, m_flDefaultInputValue) == 0x1C, "m_flDefaultInputValue in CNmSpeedScaleBaseNode::CDefinition should be at offset 0x1C");
 		static_assert(sizeof(CS2::animlib::CNmSpeedScaleBaseNode_CDefinition) == 0x20, "CNmSpeedScaleBaseNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

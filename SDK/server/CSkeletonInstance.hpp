@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bForceServerConstraintsEnabled; // 0x3f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3b); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSkeletonInstance, m_modelState) == 0x140, "m_modelState in CSkeletonInstance should be at offset 0x140");
 		static_assert(offsetof(CS2::server::CSkeletonInstance, m_bIsAnimationEnabled) == 0x390, "m_bIsAnimationEnabled in CSkeletonInstance should be at offset 0x390");
 		static_assert(offsetof(CS2::server::CSkeletonInstance, m_bUseParentRenderBounds) == 0x391, "m_bUseParentRenderBounds in CSkeletonInstance should be at offset 0x391");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSkeletonInstance, m_nHitboxSet) == 0x398, "m_nHitboxSet in CSkeletonInstance should be at offset 0x398");
 		static_assert(offsetof(CS2::server::CSkeletonInstance, m_bForceServerConstraintsEnabled) == 0x3F4, "m_bForceServerConstraintsEnabled in CSkeletonInstance should be at offset 0x3F4");
 		static_assert(sizeof(CS2::server::CSkeletonInstance) == 0x430, "CSkeletonInstance size should be 0x430");
+
+#endif
 	}
 }

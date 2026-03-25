@@ -29,10 +29,13 @@ namespace CS2 {
 			animlib::CNmBitFlags m_eventConditionRules; // 0x20 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveEventNode_CDefinition, m_eventID) == 0x10, "m_eventID in CNmFloatCurveEventNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveEventNode_CDefinition, m_nDefaultNodeIdx) == 0x18, "m_nDefaultNodeIdx in CNmFloatCurveEventNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveEventNode_CDefinition, m_flDefaultValue) == 0x1C, "m_flDefaultValue in CNmFloatCurveEventNode::CDefinition should be at offset 0x1C");
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveEventNode_CDefinition, m_eventConditionRules) == 0x20, "m_eventConditionRules in CNmFloatCurveEventNode::CDefinition should be at offset 0x20");
 		static_assert(sizeof(CS2::animlib::CNmFloatCurveEventNode_CDefinition) == 0x28, "CNmFloatCurveEventNode::CDefinition size should be 0x28");
+
+#endif
 	}
 }

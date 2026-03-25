@@ -31,10 +31,13 @@ namespace CS2 {
 			float32 m_flCycle; // 0x78 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSingleFrameUpdateNode, m_actions) == 0x58, "m_actions in CSingleFrameUpdateNode should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CSingleFrameUpdateNode, m_hPoseCacheHandle) == 0x70, "m_hPoseCacheHandle in CSingleFrameUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CSingleFrameUpdateNode, m_hSequence) == 0x74, "m_hSequence in CSingleFrameUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CSingleFrameUpdateNode, m_flCycle) == 0x78, "m_flCycle in CSingleFrameUpdateNode should be at offset 0x78");
 		static_assert(sizeof(CS2::animgraphlib::CSingleFrameUpdateNode) == 0x80, "CSingleFrameUpdateNode size should be 0x80");
+
+#endif
 	}
 }

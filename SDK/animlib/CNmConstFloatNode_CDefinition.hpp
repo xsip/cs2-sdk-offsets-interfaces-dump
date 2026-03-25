@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flValue; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmConstFloatNode_CDefinition, m_flValue) == 0x10, "m_flValue in CNmConstFloatNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmConstFloatNode_CDefinition) == 0x18, "CNmConstFloatNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

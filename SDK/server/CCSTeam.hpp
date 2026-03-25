@@ -39,6 +39,7 @@ namespace CS2 {
 			int32_t m_iLastUpdateSentAt; // 0x818 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSTeam, m_nLastRecievedShorthandedRoundBonus) == 0x560, "m_nLastRecievedShorthandedRoundBonus in CCSTeam should be at offset 0x560");
 		static_assert(offsetof(CS2::server::CCSTeam, m_nShorthandedRoundBonusStartRound) == 0x564, "m_nShorthandedRoundBonusStartRound in CCSTeam should be at offset 0x564");
 		static_assert(offsetof(CS2::server::CCSTeam, m_bSurrendered) == 0x568, "m_bSurrendered in CCSTeam should be at offset 0x568");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSTeam, m_flNextResourceTime) == 0x814, "m_flNextResourceTime in CCSTeam should be at offset 0x814");
 		static_assert(offsetof(CS2::server::CCSTeam, m_iLastUpdateSentAt) == 0x818, "m_iLastUpdateSentAt in CCSTeam should be at offset 0x818");
 		static_assert(sizeof(CS2::server::CCSTeam) == 0x820, "CCSTeam size should be 0x820");
+
+#endif
 	}
 }

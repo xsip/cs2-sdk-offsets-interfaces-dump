@@ -24,9 +24,12 @@ namespace CS2 {
 			float32 m_flEndTime; // 0x4 | Schema_Builtin | Size: 0x4
 			int32_t m_nPhonemeCode; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioPhonemeTag, m_flStartTime) == 0x0, "m_flStartTime in CAudioPhonemeTag should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioPhonemeTag, m_flEndTime) == 0x4, "m_flEndTime in CAudioPhonemeTag should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioPhonemeTag, m_nPhonemeCode) == 0x8, "m_nPhonemeCode in CAudioPhonemeTag should be at offset 0x8");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CAudioPhonemeTag) == 0xC, "CAudioPhonemeTag size should be 0xC");
+
+#endif
 	}
 }

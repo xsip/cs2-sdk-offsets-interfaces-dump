@@ -26,8 +26,11 @@ namespace CS2 {
 			modellib::AnimNodeID m_id; // 0x20 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionNode, m_name) == 0x18, "m_name in CMotionNode should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CMotionNode, m_id) == 0x20, "m_id in CMotionNode should be at offset 0x20");
 		static_assert(sizeof(CS2::animgraphlib::CMotionNode) == 0x28, "CMotionNode size should be 0x28");
+
+#endif
 	}
 }

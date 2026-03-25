@@ -30,10 +30,13 @@ namespace CS2 {
 			int32_t m_nMaxTempVarsUsed; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::mathlib_extended::CFuseProgram, m_programBuffer) == 0x0, "m_programBuffer in CFuseProgram should be at offset 0x0");
 		static_assert(offsetof(CS2::mathlib_extended::CFuseProgram, m_variablesRead) == 0x18, "m_variablesRead in CFuseProgram should be at offset 0x18");
 		static_assert(offsetof(CS2::mathlib_extended::CFuseProgram, m_variablesWritten) == 0x30, "m_variablesWritten in CFuseProgram should be at offset 0x30");
 		static_assert(offsetof(CS2::mathlib_extended::CFuseProgram, m_nMaxTempVarsUsed) == 0x48, "m_nMaxTempVarsUsed in CFuseProgram should be at offset 0x48");
 		static_assert(sizeof(CS2::mathlib_extended::CFuseProgram) == 0x50, "CFuseProgram size should be 0x50");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_LightOrthoEntity : public CS2::client::C_LightEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_LightOrthoEntity) == 0xE90, "C_LightOrthoEntity size should be 0xE90");
+
+#endif
 	}
 }

@@ -27,9 +27,12 @@ namespace CS2 {
 			int32_t m_minHitPoints; // 0x898 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerSave, m_bForceNewLevelUnit) == 0x890, "m_bForceNewLevelUnit in CTriggerSave should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerSave, m_fDangerousTimer) == 0x894, "m_fDangerousTimer in CTriggerSave should be at offset 0x894");
 		static_assert(offsetof(CS2::server::CTriggerSave, m_minHitPoints) == 0x898, "m_minHitPoints in CTriggerSave should be at offset 0x898");
 		static_assert(sizeof(CS2::server::CTriggerSave) == 0x8A0, "CTriggerSave size should be 0x8A0");
+
+#endif
 	}
 }

@@ -27,11 +27,14 @@ namespace CS2 {
 			GlobalTypes::fltx4 v1x; // 0x50 | Schema_Atomic | Size: 0x10
 			physicslib::FourVectors2D v2; // 0x60 | Schema_DeclaredClass | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSimdTri_t, nNode) == 0x0, "nNode in FeSimdTri_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSimdTri_t, w1) == 0x30, "w1 in FeSimdTri_t should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::FeSimdTri_t, w2) == 0x40, "w2 in FeSimdTri_t should be at offset 0x40");
 		static_assert(offsetof(CS2::physicslib::FeSimdTri_t, v1x) == 0x50, "v1x in FeSimdTri_t should be at offset 0x50");
 		static_assert(offsetof(CS2::physicslib::FeSimdTri_t, v2) == 0x60, "v2 in FeSimdTri_t should be at offset 0x60");
 		static_assert(sizeof(CS2::physicslib::FeSimdTri_t) == 0x80, "FeSimdTri_t size should be 0x80");
+
+#endif
 	}
 }

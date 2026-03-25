@@ -31,11 +31,14 @@ namespace CS2 {
 			bool m_bClamp; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3f); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceMorph, m_sBoneName) == 0x20, "m_sBoneName in CBoneConstraintPoseSpaceMorph should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceMorph, m_sAttachmentName) == 0x28, "m_sAttachmentName in CBoneConstraintPoseSpaceMorph should be at offset 0x28");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceMorph, m_outputMorph) == 0x30, "m_outputMorph in CBoneConstraintPoseSpaceMorph should be at offset 0x30");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceMorph, m_inputList) == 0x48, "m_inputList in CBoneConstraintPoseSpaceMorph should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceMorph, m_bClamp) == 0x60, "m_bClamp in CBoneConstraintPoseSpaceMorph should be at offset 0x60");
 		static_assert(sizeof(CS2::modellib::CBoneConstraintPoseSpaceMorph) == 0xA0, "CBoneConstraintPoseSpaceMorph size should be 0xA0");
+
+#endif
 	}
 }

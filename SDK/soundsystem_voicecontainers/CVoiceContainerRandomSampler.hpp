@@ -32,6 +32,7 @@ namespace CS2 {
 			// char m_grainResources[0x18]; // 0xd0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0xf8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler, m_flAmplitude) == 0xB8, "m_flAmplitude in CVoiceContainerRandomSampler should be at offset 0xB8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler, m_flAmplitudeJitter) == 0xBC, "m_flAmplitudeJitter in CVoiceContainerRandomSampler should be at offset 0xBC");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler, m_flTimeJitter) == 0xC0, "m_flTimeJitter in CVoiceContainerRandomSampler should be at offset 0xC0");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler, m_nNumDelayVariations) == 0xC8, "m_nNumDelayVariations in CVoiceContainerRandomSampler should be at offset 0xC8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler, m_grainResources) == 0xD0, "m_grainResources in CVoiceContainerRandomSampler should be at offset 0xD0");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerRandomSampler) == 0x1E0, "CVoiceContainerRandomSampler size should be 0x1E0");
+
+#endif
 	}
 }

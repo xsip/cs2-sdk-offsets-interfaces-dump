@@ -30,6 +30,7 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpaceB; // 0x158 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bPlane; // 0x198 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeProjectVector3D, m_OutputVariableName) == 0x50, "m_OutputVariableName in CSmartPropOperation_ComputeProjectVector3D should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeProjectVector3D, m_OutputCoordinateSpace) == 0x58, "m_OutputCoordinateSpace in CSmartPropOperation_ComputeProjectVector3D should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeProjectVector3D, m_InputVectorA) == 0x98, "m_InputVectorA in CSmartPropOperation_ComputeProjectVector3D should be at offset 0x98");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeProjectVector3D, m_CoordinateSpaceB) == 0x158, "m_CoordinateSpaceB in CSmartPropOperation_ComputeProjectVector3D should be at offset 0x158");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeProjectVector3D, m_bPlane) == 0x198, "m_bPlane in CSmartPropOperation_ComputeProjectVector3D should be at offset 0x198");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_ComputeProjectVector3D) == 0x1D8, "CSmartPropOperation_ComputeProjectVector3D size should be 0x1D8");
+
+#endif
 	}
 }

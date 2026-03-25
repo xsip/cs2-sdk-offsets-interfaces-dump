@@ -46,6 +46,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnStartLook; // 0x8e0 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnEndLook; // 0x8f8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerLook, m_hLookTarget) == 0x8A8, "m_hLookTarget in CTriggerLook should be at offset 0x8A8");
 		static_assert(offsetof(CS2::server::CTriggerLook, m_flFieldOfView) == 0x8AC, "m_flFieldOfView in CTriggerLook should be at offset 0x8AC");
 		static_assert(offsetof(CS2::server::CTriggerLook, m_flLookTime) == 0x8B0, "m_flLookTime in CTriggerLook should be at offset 0x8B0");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTriggerLook, m_OnStartLook) == 0x8E0, "m_OnStartLook in CTriggerLook should be at offset 0x8E0");
 		static_assert(offsetof(CS2::server::CTriggerLook, m_OnEndLook) == 0x8F8, "m_OnEndLook in CTriggerLook should be at offset 0x8F8");
 		static_assert(sizeof(CS2::server::CTriggerLook) == 0x910, "CTriggerLook size should be 0x910");
+
+#endif
 	}
 }

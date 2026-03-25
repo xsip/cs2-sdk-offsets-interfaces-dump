@@ -40,6 +40,7 @@ namespace CS2 {
 			float32 m_flNormCenterSize; // 0xbe8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_hTouchingPlayers) == 0x890, "m_hTouchingPlayers in CTriggerSndSosOpvar should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flPosition) == 0x8A8, "m_flPosition in CTriggerSndSosOpvar should be at offset 0x8A8");
 		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flCenterSize) == 0x8B4, "m_flCenterSize in CTriggerSndSosOpvar should be at offset 0x8B4");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_VecNormPos) == 0xBDC, "m_VecNormPos in CTriggerSndSosOpvar should be at offset 0xBDC");
 		static_assert(offsetof(CS2::server::CTriggerSndSosOpvar, m_flNormCenterSize) == 0xBE8, "m_flNormCenterSize in CTriggerSndSosOpvar should be at offset 0xBE8");
 		static_assert(sizeof(CS2::server::CTriggerSndSosOpvar) == 0xBF0, "CTriggerSndSosOpvar size should be 0xBF0");
+
+#endif
 	}
 }

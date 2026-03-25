@@ -25,7 +25,10 @@ namespace CS2 {
 			animlib::NmFrameSnapEventMode_t m_frameSnapMode; // 0x20 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFrameSnapEvent, m_frameSnapMode) == 0x20, "m_frameSnapMode in CNmFrameSnapEvent should be at offset 0x20");
 		static_assert(sizeof(CS2::animlib::CNmFrameSnapEvent) == 0x28, "CNmFrameSnapEvent size should be 0x28");
+
+#endif
 	}
 }

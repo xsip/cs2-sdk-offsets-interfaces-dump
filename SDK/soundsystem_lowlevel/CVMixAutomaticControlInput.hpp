@@ -26,10 +26,13 @@ namespace CS2 {
 			bool m_bIsStackVar; // 0xd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixAutomaticControlInput, m_name) == 0x0, "m_name in CVMixAutomaticControlInput should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixAutomaticControlInput, m_nControlInputIndex) == 0x8, "m_nControlInputIndex in CVMixAutomaticControlInput should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixAutomaticControlInput, m_bIsTrackSend) == 0xC, "m_bIsTrackSend in CVMixAutomaticControlInput should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixAutomaticControlInput, m_bIsStackVar) == 0xD, "m_bIsStackVar in CVMixAutomaticControlInput should be at offset 0xD");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixAutomaticControlInput) == 0x10, "CVMixAutomaticControlInput size should be 0x10");
+
+#endif
 	}
 }

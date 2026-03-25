@@ -23,8 +23,11 @@ namespace CS2 {
 			int8_t m_ConeAxis[3]; // 0x0 | Schema_FixedArray | Size: 0x3
 			int8_t m_ConeCutoff; // 0x3 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CDrawCullingData, m_ConeAxis) == 0x0, "m_ConeAxis in CDrawCullingData should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CDrawCullingData, m_ConeCutoff) == 0x3, "m_ConeCutoff in CDrawCullingData should be at offset 0x3");
 		static_assert(sizeof(CS2::modellib::CDrawCullingData) == 0x4, "CDrawCullingData size should be 0x4");
+
+#endif
 	}
 }

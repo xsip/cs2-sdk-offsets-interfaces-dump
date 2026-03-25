@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bRadiusScale; // 0x1e0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_vecOffset) == 0x1D0, "m_vecOffset in C_OP_MovementMaintainOffset should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_nCP) == 0x1DC, "m_nCP in C_OP_MovementMaintainOffset should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_MovementMaintainOffset, m_bRadiusScale) == 0x1E0, "m_bRadiusScale in C_OP_MovementMaintainOffset should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_OP_MovementMaintainOffset) == 0x1E8, "C_OP_MovementMaintainOffset size should be 0x1E8");
+
+#endif
 	}
 }

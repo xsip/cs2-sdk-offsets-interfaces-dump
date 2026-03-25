@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_TargetBody; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_Tag; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPhysicsBodyGameMarkup, m_TargetBody) == 0x0, "m_TargetBody in CPhysicsBodyGameMarkup should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CPhysicsBodyGameMarkup, m_Tag) == 0x8, "m_Tag in CPhysicsBodyGameMarkup should be at offset 0x8");
 		static_assert(sizeof(CS2::client::CPhysicsBodyGameMarkup) == 0x10, "CPhysicsBodyGameMarkup size should be 0x10");
+
+#endif
 	}
 }

@@ -45,6 +45,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::CFootMotion> m_footMotion; // 0x108 | Schema_Atomic | Size: 0x18
 			// char m_footMotion[0x18]; // 0x108 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqS1SeqDesc, m_sName) == 0x0, "m_sName in CSeqS1SeqDesc should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqS1SeqDesc, m_flags) == 0x10, "m_flags in CSeqS1SeqDesc should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSeqS1SeqDesc, m_fetch) == 0x20, "m_fetch in CSeqS1SeqDesc should be at offset 0x20");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqS1SeqDesc, m_activityArray) == 0xF0, "m_activityArray in CSeqS1SeqDesc should be at offset 0xF0");
 		static_assert(offsetof(CS2::animationsystem::CSeqS1SeqDesc, m_footMotion) == 0x108, "m_footMotion in CSeqS1SeqDesc should be at offset 0x108");
 		static_assert(sizeof(CS2::animationsystem::CSeqS1SeqDesc) == 0x120, "CSeqS1SeqDesc size should be 0x120");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			float64 m_flRenderFrameTimeUnscaled; // 0x50 | Schema_Builtin | Size: 0x8
 			float64 m_flTickRemainder; // 0x58 | Schema_Builtin | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventSetTime_t, m_LoopState) == 0x0, "m_LoopState in EventSetTime_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::EventSetTime_t, m_nClientOutputFrames) == 0x28, "m_nClientOutputFrames in EventSetTime_t should be at offset 0x28");
 		static_assert(offsetof(CS2::client::EventSetTime_t, m_flRealTime) == 0x30, "m_flRealTime in EventSetTime_t should be at offset 0x30");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::EventSetTime_t, m_flRenderFrameTimeUnscaled) == 0x50, "m_flRenderFrameTimeUnscaled in EventSetTime_t should be at offset 0x50");
 		static_assert(offsetof(CS2::client::EventSetTime_t, m_flTickRemainder) == 0x58, "m_flTickRemainder in EventSetTime_t should be at offset 0x58");
 		static_assert(sizeof(CS2::client::EventSetTime_t) == 0x60, "EventSetTime_t size should be 0x60");
+
+#endif
 	}
 }

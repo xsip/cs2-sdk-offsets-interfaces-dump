@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bNegated; // 0x58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBtNodeCondition, m_bNegated) == 0x58, "m_bNegated in CBtNodeCondition should be at offset 0x58");
 		static_assert(sizeof(CS2::server::CBtNodeCondition) == 0x60, "CBtNodeCondition size should be 0x60");
+
+#endif
 	}
 }

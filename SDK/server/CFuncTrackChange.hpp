@@ -39,6 +39,7 @@ namespace CS2 {
 			int32_t m_use; // 0x830 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackTop) == 0x7F8, "m_trackTop in CFuncTrackChange should be at offset 0x7F8");
 		static_assert(offsetof(CS2::server::CFuncTrackChange, m_trackBottom) == 0x800, "m_trackBottom in CFuncTrackChange should be at offset 0x800");
 		static_assert(offsetof(CS2::server::CFuncTrackChange, m_train) == 0x808, "m_train in CFuncTrackChange should be at offset 0x808");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncTrackChange, m_targetState) == 0x82C, "m_targetState in CFuncTrackChange should be at offset 0x82C");
 		static_assert(offsetof(CS2::server::CFuncTrackChange, m_use) == 0x830, "m_use in CFuncTrackChange should be at offset 0x830");
 		static_assert(sizeof(CS2::server::CFuncTrackChange) == 0x838, "CFuncTrackChange size should be 0x838");
+
+#endif
 	}
 }

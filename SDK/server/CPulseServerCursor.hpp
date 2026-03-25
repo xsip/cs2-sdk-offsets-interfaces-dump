@@ -32,8 +32,11 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CBaseEntity> m_hCaller; // 0xdc | Schema_Atomic | Size: 0x4
 			// char m_hCaller[0x4]; // 0xdc | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseServerCursor, m_hActivator) == 0xD8, "m_hActivator in CPulseServerCursor should be at offset 0xD8");
 		static_assert(offsetof(CS2::server::CPulseServerCursor, m_hCaller) == 0xDC, "m_hCaller in CPulseServerCursor should be at offset 0xDC");
 		static_assert(sizeof(CS2::server::CPulseServerCursor) == 0xE0, "CPulseServerCursor size should be 0xE0");
+
+#endif
 	}
 }

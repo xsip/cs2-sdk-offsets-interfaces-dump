@@ -29,11 +29,14 @@ namespace CS2 {
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionFloatInput m_flInitialRestingLength; // 0x628 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flRestLength) == 0x1D0, "m_flRestLength in C_OP_RopeSpringConstraint should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flMinDistance) == 0x340, "m_flMinDistance in C_OP_RopeSpringConstraint should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flMaxDistance) == 0x4B0, "m_flMaxDistance in C_OP_RopeSpringConstraint should be at offset 0x4B0");
 		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flAdjustmentScale) == 0x620, "m_flAdjustmentScale in C_OP_RopeSpringConstraint should be at offset 0x620");
 		static_assert(offsetof(CS2::particles::C_OP_RopeSpringConstraint, m_flInitialRestingLength) == 0x628, "m_flInitialRestingLength in C_OP_RopeSpringConstraint should be at offset 0x628");
 		static_assert(sizeof(CS2::particles::C_OP_RopeSpringConstraint) == 0x798, "C_OP_RopeSpringConstraint size should be 0x798");
+
+#endif
 	}
 }

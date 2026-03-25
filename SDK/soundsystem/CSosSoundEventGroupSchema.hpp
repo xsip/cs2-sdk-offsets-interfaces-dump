@@ -50,6 +50,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<soundsystem::CSosGroupActionSchema*> m_vActions; // 0x58 | Schema_Atomic | Size: 0x18
 			// char m_vActions[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_nGroupType) == 0x8, "m_nGroupType in CSosSoundEventGroupSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_bBlocksEvents) == 0xC, "m_bBlocksEvents in CSosSoundEventGroupSchema should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_nBlockMaxCount) == 0x10, "m_nBlockMaxCount in CSosSoundEventGroupSchema should be at offset 0x10");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_opvarString) == 0x50, "m_opvarString in CSosSoundEventGroupSchema should be at offset 0x50");
 		static_assert(offsetof(CS2::soundsystem::CSosSoundEventGroupSchema, m_vActions) == 0x58, "m_vActions in CSosSoundEventGroupSchema should be at offset 0x58");
 		static_assert(sizeof(CS2::soundsystem::CSosSoundEventGroupSchema) == 0x70, "CSosSoundEventGroupSchema size should be 0x70");
+
+#endif
 	}
 }

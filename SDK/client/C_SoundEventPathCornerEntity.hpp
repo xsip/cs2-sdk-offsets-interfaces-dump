@@ -25,7 +25,10 @@ namespace CS2 {
 			// GlobalTypes::C_NetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t> m_vecCornerPairsNetworked; // 0x6b8 | Schema_Atomic | Size: 0x18
 			char m_vecCornerPairsNetworked[0x18]; // 0x6b8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_SoundEventPathCornerEntity, m_vecCornerPairsNetworked) == 0x6B8, "m_vecCornerPairsNetworked in C_SoundEventPathCornerEntity should be at offset 0x6B8");
 		static_assert(sizeof(CS2::client::C_SoundEventPathCornerEntity) == 0x6D0, "C_SoundEventPathCornerEntity size should be 0x6D0");
+
+#endif
 	}
 }

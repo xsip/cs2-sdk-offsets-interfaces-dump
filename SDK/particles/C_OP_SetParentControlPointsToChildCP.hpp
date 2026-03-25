@@ -28,11 +28,14 @@ namespace CS2 {
 			bool m_bSetOrientation; // 0x1e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetParentControlPointsToChildCP, m_nChildGroupID) == 0x1D8, "m_nChildGroupID in C_OP_SetParentControlPointsToChildCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetParentControlPointsToChildCP, m_nChildControlPoint) == 0x1DC, "m_nChildControlPoint in C_OP_SetParentControlPointsToChildCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetParentControlPointsToChildCP, m_nNumControlPoints) == 0x1E0, "m_nNumControlPoints in C_OP_SetParentControlPointsToChildCP should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_SetParentControlPointsToChildCP, m_nFirstSourcePoint) == 0x1E4, "m_nFirstSourcePoint in C_OP_SetParentControlPointsToChildCP should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_SetParentControlPointsToChildCP, m_bSetOrientation) == 0x1E8, "m_bSetOrientation in C_OP_SetParentControlPointsToChildCP should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_SetParentControlPointsToChildCP) == 0x1F0, "C_OP_SetParentControlPointsToChildCP size should be 0x1F0");
+
+#endif
 	}
 }

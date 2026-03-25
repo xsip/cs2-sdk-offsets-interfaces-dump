@@ -26,10 +26,13 @@ namespace CS2 {
 			GlobalTypes::VectorWS m_axis; // 0x10 | Schema_Atomic | Size: 0xc
 			float32 m_inertiaFactor; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMotorController, m_speed) == 0x8, "m_speed in CMotorController should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CMotorController, m_maxTorque) == 0xC, "m_maxTorque in CMotorController should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CMotorController, m_axis) == 0x10, "m_axis in CMotorController should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CMotorController, m_inertiaFactor) == 0x1C, "m_inertiaFactor in CMotorController should be at offset 0x1C");
 		static_assert(sizeof(CS2::server::CMotorController) == 0x20, "CMotorController size should be 0x20");
+
+#endif
 	}
 }

@@ -43,6 +43,7 @@ namespace CS2 {
 			char m_hPulseGraph[0x8]; // 0xa8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x20); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropRoot, m_nContentVersion) == 0x0, "m_nContentVersion in CSmartPropRoot should be at offset 0x0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropRoot, m_nMaxDepth) == 0x8, "m_nMaxDepth in CSmartPropRoot should be at offset 0x8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropRoot, m_Variables) == 0x48, "m_Variables in CSmartPropRoot should be at offset 0x48");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropRoot, m_Modifiers) == 0x90, "m_Modifiers in CSmartPropRoot should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropRoot, m_hPulseGraph) == 0xA8, "m_hPulseGraph in CSmartPropRoot should be at offset 0xA8");
 		static_assert(sizeof(CS2::smartprops::CSmartPropRoot) == 0xD0, "CSmartPropRoot size should be 0xD0");
+
+#endif
 	}
 }

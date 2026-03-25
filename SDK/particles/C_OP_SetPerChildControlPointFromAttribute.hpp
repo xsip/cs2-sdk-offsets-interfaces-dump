@@ -32,6 +32,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nAttributeToRead; // 0x1e8 | Schema_DeclaredClass | Size: 0x4
 			int32_t m_nCPField; // 0x1ec | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPointFromAttribute, m_nChildGroupID) == 0x1D0, "m_nChildGroupID in C_OP_SetPerChildControlPointFromAttribute should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPointFromAttribute, m_nFirstControlPoint) == 0x1D4, "m_nFirstControlPoint in C_OP_SetPerChildControlPointFromAttribute should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPointFromAttribute, m_nNumControlPoints) == 0x1D8, "m_nNumControlPoints in C_OP_SetPerChildControlPointFromAttribute should be at offset 0x1D8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPointFromAttribute, m_nAttributeToRead) == 0x1E8, "m_nAttributeToRead in C_OP_SetPerChildControlPointFromAttribute should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_SetPerChildControlPointFromAttribute, m_nCPField) == 0x1EC, "m_nCPField in C_OP_SetPerChildControlPointFromAttribute should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::C_OP_SetPerChildControlPointFromAttribute) == 0x1F0, "C_OP_SetPerChildControlPointFromAttribute size should be 0x1F0");
+
+#endif
 	}
 }

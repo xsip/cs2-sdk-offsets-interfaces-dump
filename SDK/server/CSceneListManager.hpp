@@ -27,9 +27,12 @@ namespace CS2 {
 			// server::CHandle< CBaseEntity > m_hScenes[16]; // 0x540 | Schema_FixedArray | Size: 0x40
 			char m_hScenes[0x40]; // 0x540 | Schema_FixedArray | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSceneListManager, m_hListManagers) == 0x4A8, "m_hListManagers in CSceneListManager should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CSceneListManager, m_iszScenes) == 0x4C0, "m_iszScenes in CSceneListManager should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CSceneListManager, m_hScenes) == 0x540, "m_hScenes in CSceneListManager should be at offset 0x540");
 		static_assert(sizeof(CS2::server::CSceneListManager) == 0x580, "CSceneListManager size should be 0x580");
+
+#endif
 	}
 }

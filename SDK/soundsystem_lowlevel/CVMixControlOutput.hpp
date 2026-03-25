@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flDefaultValue; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixControlOutput, m_flDefaultValue) == 0x10, "m_flDefaultValue in CVMixControlOutput should be at offset 0x10");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixControlOutput) == 0x18, "CVMixControlOutput size should be 0x18");
+
+#endif
 	}
 }

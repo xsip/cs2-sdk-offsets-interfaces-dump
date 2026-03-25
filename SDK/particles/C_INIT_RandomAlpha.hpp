@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x8);
 			float32 m_flAlphaRandExponent; // 0x1ec | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomAlpha, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_INIT_RandomAlpha should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomAlpha, m_nAlphaMin) == 0x1DC, "m_nAlphaMin in C_INIT_RandomAlpha should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomAlpha, m_nAlphaMax) == 0x1E0, "m_nAlphaMax in C_INIT_RandomAlpha should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomAlpha, m_flAlphaRandExponent) == 0x1EC, "m_flAlphaRandExponent in C_INIT_RandomAlpha should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomAlpha) == 0x1F0, "C_INIT_RandomAlpha size should be 0x1F0");
+
+#endif
 	}
 }

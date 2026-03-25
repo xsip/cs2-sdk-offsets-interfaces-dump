@@ -22,6 +22,9 @@ namespace CS2 {
 		class CEmptyGraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::CEmptyGraphController) == 0x90, "CEmptyGraphController size should be 0x90");
+
+#endif
 	}
 }

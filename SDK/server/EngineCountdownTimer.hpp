@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_timescale; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::EngineCountdownTimer, m_duration) == 0x8, "m_duration in EngineCountdownTimer should be at offset 0x8");
 		static_assert(offsetof(CS2::server::EngineCountdownTimer, m_timestamp) == 0xC, "m_timestamp in EngineCountdownTimer should be at offset 0xC");
 		static_assert(offsetof(CS2::server::EngineCountdownTimer, m_timescale) == 0x10, "m_timescale in EngineCountdownTimer should be at offset 0x10");
 		static_assert(sizeof(CS2::server::EngineCountdownTimer) == 0x18, "EngineCountdownTimer size should be 0x18");
+
+#endif
 	}
 }

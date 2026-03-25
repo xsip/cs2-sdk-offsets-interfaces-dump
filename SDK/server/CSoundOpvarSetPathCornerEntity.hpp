@@ -29,10 +29,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszPathCornerEntityName; // 0x668 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_bUseParentedPath) == 0x658, "m_bUseParentedPath in CSoundOpvarSetPathCornerEntity should be at offset 0x658");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_flDistMinSqr) == 0x65C, "m_flDistMinSqr in CSoundOpvarSetPathCornerEntity should be at offset 0x65C");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_flDistMaxSqr) == 0x660, "m_flDistMaxSqr in CSoundOpvarSetPathCornerEntity should be at offset 0x660");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPathCornerEntity, m_iszPathCornerEntityName) == 0x668, "m_iszPathCornerEntityName in CSoundOpvarSetPathCornerEntity should be at offset 0x668");
 		static_assert(sizeof(CS2::server::CSoundOpvarSetPathCornerEntity) == 0x670, "CSoundOpvarSetPathCornerEntity size should be 0x670");
+
+#endif
 	}
 }

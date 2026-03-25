@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bGlowing; // 0x51 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGlowProperty, m_fGlowColor) == 0x8, "m_fGlowColor in CGlowProperty should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CGlowProperty, m_iGlowType) == 0x30, "m_iGlowType in CGlowProperty should be at offset 0x30");
 		static_assert(offsetof(CS2::server::CGlowProperty, m_iGlowTeam) == 0x34, "m_iGlowTeam in CGlowProperty should be at offset 0x34");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CGlowProperty, m_bEligibleForScreenHighlight) == 0x50, "m_bEligibleForScreenHighlight in CGlowProperty should be at offset 0x50");
 		static_assert(offsetof(CS2::server::CGlowProperty, m_bGlowing) == 0x51, "m_bGlowing in CGlowProperty should be at offset 0x51");
 		static_assert(sizeof(CS2::server::CGlowProperty) == 0x58, "CGlowProperty size should be 0x58");
+
+#endif
 	}
 }

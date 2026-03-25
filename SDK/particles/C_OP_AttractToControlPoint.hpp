@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bApplyMinForce; // 0x540 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_vecComponentScale) == 0x1E0, "m_vecComponentScale in C_OP_AttractToControlPoint should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fForceAmount) == 0x1F0, "m_fForceAmount in C_OP_AttractToControlPoint should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fFalloffPower) == 0x360, "m_fFalloffPower in C_OP_AttractToControlPoint should be at offset 0x360");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_fForceAmountMin) == 0x3D0, "m_fForceAmountMin in C_OP_AttractToControlPoint should be at offset 0x3D0");
 		static_assert(offsetof(CS2::particles::C_OP_AttractToControlPoint, m_bApplyMinForce) == 0x540, "m_bApplyMinForce in C_OP_AttractToControlPoint should be at offset 0x540");
 		static_assert(sizeof(CS2::particles::C_OP_AttractToControlPoint) == 0x548, "C_OP_AttractToControlPoint size should be 0x548");
+
+#endif
 	}
 }

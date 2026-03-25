@@ -31,6 +31,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			float32 m_flReferencePoseTwistWeight; // 0x2c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKNode_CDefinition, m_effectorBoneID) == 0x18, "m_effectorBoneID in CNmTwoBoneIKNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKNode_CDefinition, m_nEffectorTargetNodeIdx) == 0x20, "m_nEffectorTargetNodeIdx in CNmTwoBoneIKNode::CDefinition should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKNode_CDefinition, m_nEnabledNodeIdx) == 0x22, "m_nEnabledNodeIdx in CNmTwoBoneIKNode::CDefinition should be at offset 0x22");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKNode_CDefinition, m_bIsTargetInWorldSpace) == 0x29, "m_bIsTargetInWorldSpace in CNmTwoBoneIKNode::CDefinition should be at offset 0x29");
 		static_assert(offsetof(CS2::animlib::CNmTwoBoneIKNode_CDefinition, m_flReferencePoseTwistWeight) == 0x2C, "m_flReferencePoseTwistWeight in CNmTwoBoneIKNode::CDefinition should be at offset 0x2C");
 		static_assert(sizeof(CS2::animlib::CNmTwoBoneIKNode_CDefinition) == 0x30, "CNmTwoBoneIKNode::CDefinition size should be 0x30");
+
+#endif
 	}
 }

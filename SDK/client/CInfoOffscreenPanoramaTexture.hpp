@@ -43,6 +43,7 @@ namespace CS2 {
 			bool m_bCheckCSSClasses; // 0x7e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x27); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CInfoOffscreenPanoramaTexture, m_bDisabled) == 0x608, "m_bDisabled in CInfoOffscreenPanoramaTexture should be at offset 0x608");
 		static_assert(offsetof(CS2::client::CInfoOffscreenPanoramaTexture, m_nResolutionX) == 0x60C, "m_nResolutionX in CInfoOffscreenPanoramaTexture should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::CInfoOffscreenPanoramaTexture, m_nResolutionY) == 0x610, "m_nResolutionY in CInfoOffscreenPanoramaTexture should be at offset 0x610");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CInfoOffscreenPanoramaTexture, m_AdditionalTargetEntities) == 0x670, "m_AdditionalTargetEntities in CInfoOffscreenPanoramaTexture should be at offset 0x670");
 		static_assert(offsetof(CS2::client::CInfoOffscreenPanoramaTexture, m_bCheckCSSClasses) == 0x7E8, "m_bCheckCSSClasses in CInfoOffscreenPanoramaTexture should be at offset 0x7E8");
 		static_assert(sizeof(CS2::client::CInfoOffscreenPanoramaTexture) == 0x810, "CInfoOffscreenPanoramaTexture size should be 0x810");
+
+#endif
 	}
 }

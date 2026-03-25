@@ -67,6 +67,7 @@ namespace CS2 {
 			float32 m_flLastTeleportTime; // 0x1f4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CAnimGraphNetworkedVariables, m_PredNetBoolVariables) == 0x8, "m_PredNetBoolVariables in CAnimGraphNetworkedVariables should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CAnimGraphNetworkedVariables, m_PredNetByteVariables) == 0x20, "m_PredNetByteVariables in CAnimGraphNetworkedVariables should be at offset 0x20");
 		static_assert(offsetof(CS2::server::CAnimGraphNetworkedVariables, m_PredNetUInt16Variables) == 0x38, "m_PredNetUInt16Variables in CAnimGraphNetworkedVariables should be at offset 0x38");
@@ -92,5 +93,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CAnimGraphNetworkedVariables, m_nRandomSeedOffset) == 0x1F0, "m_nRandomSeedOffset in CAnimGraphNetworkedVariables should be at offset 0x1F0");
 		static_assert(offsetof(CS2::server::CAnimGraphNetworkedVariables, m_flLastTeleportTime) == 0x1F4, "m_flLastTeleportTime in CAnimGraphNetworkedVariables should be at offset 0x1F4");
 		static_assert(sizeof(CS2::server::CAnimGraphNetworkedVariables) == 0x208, "CAnimGraphNetworkedVariables size should be 0x208");
+
+#endif
 	}
 }

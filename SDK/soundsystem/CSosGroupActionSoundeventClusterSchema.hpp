@@ -30,6 +30,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_groupBoundingBoxMaxsOpvar; // 0x30 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventClusterSchema, m_nMinNearby) == 0x8, "m_nMinNearby in CSosGroupActionSoundeventClusterSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventClusterSchema, m_flClusterEpsilon) == 0xC, "m_flClusterEpsilon in CSosGroupActionSoundeventClusterSchema should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventClusterSchema, m_shouldPlayOpvar) == 0x10, "m_shouldPlayOpvar in CSosGroupActionSoundeventClusterSchema should be at offset 0x10");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventClusterSchema, m_groupBoundingBoxMinsOpvar) == 0x28, "m_groupBoundingBoxMinsOpvar in CSosGroupActionSoundeventClusterSchema should be at offset 0x28");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventClusterSchema, m_groupBoundingBoxMaxsOpvar) == 0x30, "m_groupBoundingBoxMaxsOpvar in CSosGroupActionSoundeventClusterSchema should be at offset 0x30");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSoundeventClusterSchema) == 0x50, "CSosGroupActionSoundeventClusterSchema size should be 0x50");
+
+#endif
 	}
 }

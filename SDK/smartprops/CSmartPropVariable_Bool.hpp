@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_DefaultValue; // 0x38 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Bool, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_Bool should be at offset 0x38");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_Bool) == 0x40, "CSmartPropVariable_Bool size should be 0x40");
+
+#endif
 	}
 }

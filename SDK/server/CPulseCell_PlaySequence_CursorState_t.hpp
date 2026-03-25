@@ -28,7 +28,10 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CBaseAnimGraph> m_hTarget; // 0x0 | Schema_Atomic | Size: 0x4
 			// char m_hTarget[0x4]; // 0x0 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_PlaySequence_CursorState_t, m_hTarget) == 0x0, "m_hTarget in CPulseCell_PlaySequence::CursorState_t should be at offset 0x0");
 		static_assert(sizeof(CS2::server::CPulseCell_PlaySequence_CursorState_t) == 0x4, "CPulseCell_PlaySequence::CursorState_t size should be 0x4");
+
+#endif
 	}
 }

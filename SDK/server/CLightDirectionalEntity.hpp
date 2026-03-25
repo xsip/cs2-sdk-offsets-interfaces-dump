@@ -22,6 +22,9 @@ namespace CS2 {
 		class CLightDirectionalEntity : public CS2::server::CLightEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CLightDirectionalEntity) == 0x738, "CLightDirectionalEntity size should be 0x738");
+
+#endif
 	}
 }

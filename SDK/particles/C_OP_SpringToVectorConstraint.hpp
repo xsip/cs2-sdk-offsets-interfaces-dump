@@ -29,11 +29,14 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flRestingLength; // 0x620 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleVecInput m_vecAnchorVector; // 0x790 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SpringToVectorConstraint, m_flRestLength) == 0x1D0, "m_flRestLength in C_OP_SpringToVectorConstraint should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SpringToVectorConstraint, m_flMinDistance) == 0x340, "m_flMinDistance in C_OP_SpringToVectorConstraint should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_SpringToVectorConstraint, m_flMaxDistance) == 0x4B0, "m_flMaxDistance in C_OP_SpringToVectorConstraint should be at offset 0x4B0");
 		static_assert(offsetof(CS2::particles::C_OP_SpringToVectorConstraint, m_flRestingLength) == 0x620, "m_flRestingLength in C_OP_SpringToVectorConstraint should be at offset 0x620");
 		static_assert(offsetof(CS2::particles::C_OP_SpringToVectorConstraint, m_vecAnchorVector) == 0x790, "m_vecAnchorVector in C_OP_SpringToVectorConstraint should be at offset 0x790");
 		static_assert(sizeof(CS2::particles::C_OP_SpringToVectorConstraint) == 0xE48, "C_OP_SpringToVectorConstraint size should be 0xE48");
+
+#endif
 	}
 }

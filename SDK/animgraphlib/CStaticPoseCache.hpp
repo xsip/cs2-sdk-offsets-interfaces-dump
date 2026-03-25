@@ -27,9 +27,12 @@ namespace CS2 {
 			int32_t m_nBoneCount; // 0x28 | Schema_Builtin | Size: 0x4
 			int32_t m_nMorphCount; // 0x2c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStaticPoseCache, m_poses) == 0x10, "m_poses in CStaticPoseCache should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::CStaticPoseCache, m_nBoneCount) == 0x28, "m_nBoneCount in CStaticPoseCache should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CStaticPoseCache, m_nMorphCount) == 0x2C, "m_nMorphCount in CStaticPoseCache should be at offset 0x2C");
 		static_assert(sizeof(CS2::animgraphlib::CStaticPoseCache) == 0x30, "CStaticPoseCache size should be 0x30");
+
+#endif
 	}
 }

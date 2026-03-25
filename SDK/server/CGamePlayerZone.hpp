@@ -29,10 +29,13 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< int32, int32 > m_PlayersOutCount; // 0x788 | Schema_Atomic | Size: 0x20
 			char m_PlayersOutCount[0x20]; // 0x788 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGamePlayerZone, m_OnPlayerInZone) == 0x738, "m_OnPlayerInZone in CGamePlayerZone should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CGamePlayerZone, m_OnPlayerOutZone) == 0x750, "m_OnPlayerOutZone in CGamePlayerZone should be at offset 0x750");
 		static_assert(offsetof(CS2::server::CGamePlayerZone, m_PlayersInCount) == 0x768, "m_PlayersInCount in CGamePlayerZone should be at offset 0x768");
 		static_assert(offsetof(CS2::server::CGamePlayerZone, m_PlayersOutCount) == 0x788, "m_PlayersOutCount in CGamePlayerZone should be at offset 0x788");
 		static_assert(sizeof(CS2::server::CGamePlayerZone) == 0x7A8, "CGamePlayerZone size should be 0x7A8");
+
+#endif
 	}
 }

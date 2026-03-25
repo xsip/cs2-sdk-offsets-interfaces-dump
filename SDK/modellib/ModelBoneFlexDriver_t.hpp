@@ -27,9 +27,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::ModelBoneFlexDriverControl_t> m_controls; // 0x10 | Schema_Atomic | Size: 0x18
 			// char m_controls[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriver_t, m_boneName) == 0x0, "m_boneName in ModelBoneFlexDriver_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriver_t, m_boneNameToken) == 0x8, "m_boneNameToken in ModelBoneFlexDriver_t should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriver_t, m_controls) == 0x10, "m_controls in ModelBoneFlexDriver_t should be at offset 0x10");
 		static_assert(sizeof(CS2::modellib::ModelBoneFlexDriver_t) == 0x28, "ModelBoneFlexDriver_t size should be 0x28");
+
+#endif
 	}
 }

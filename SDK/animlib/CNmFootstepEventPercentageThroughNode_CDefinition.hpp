@@ -28,9 +28,12 @@ namespace CS2 {
 			S2_PAD(0x1);
 			animlib::CNmBitFlags m_eventConditionRules; // 0x14 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFootstepEventPercentageThroughNode_CDefinition, m_nSourceStateNodeIdx) == 0x10, "m_nSourceStateNodeIdx in CNmFootstepEventPercentageThroughNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFootstepEventPercentageThroughNode_CDefinition, m_phaseCondition) == 0x12, "m_phaseCondition in CNmFootstepEventPercentageThroughNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmFootstepEventPercentageThroughNode_CDefinition, m_eventConditionRules) == 0x14, "m_eventConditionRules in CNmFootstepEventPercentageThroughNode::CDefinition should be at offset 0x14");
 		static_assert(sizeof(CS2::animlib::CNmFootstepEventPercentageThroughNode_CDefinition) == 0x18, "CNmFootstepEventPercentageThroughNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

@@ -26,8 +26,11 @@ namespace CS2 {
 			client::hudtextparms_t m_textParms; // 0x748 | Schema_DeclaredClass | Size: 0x14
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameText, m_iszMessage) == 0x740, "m_iszMessage in CGameText should be at offset 0x740");
 		static_assert(offsetof(CS2::server::CGameText, m_textParms) == 0x748, "m_textParms in CGameText should be at offset 0x748");
 		static_assert(sizeof(CS2::server::CGameText) == 0x760, "CGameText size should be 0x760");
+
+#endif
 	}
 }

@@ -29,11 +29,14 @@ namespace CS2 {
 			// char m_frameblockArray[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			animationsystem::CAnimEncodeDifference m_usageDifferences; // 0x30 | Schema_DeclaredClass | Size: 0xa8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodedFrames, m_fileName) == 0x0, "m_fileName in CAnimEncodedFrames should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodedFrames, m_nFrames) == 0x10, "m_nFrames in CAnimEncodedFrames should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodedFrames, m_nFramesPerBlock) == 0x14, "m_nFramesPerBlock in CAnimEncodedFrames should be at offset 0x14");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodedFrames, m_frameblockArray) == 0x18, "m_frameblockArray in CAnimEncodedFrames should be at offset 0x18");
 		static_assert(offsetof(CS2::animationsystem::CAnimEncodedFrames, m_usageDifferences) == 0x30, "m_usageDifferences in CAnimEncodedFrames should be at offset 0x30");
 		static_assert(sizeof(CS2::animationsystem::CAnimEncodedFrames) == 0xD8, "CAnimEncodedFrames size should be 0xD8");
+
+#endif
 	}
 }

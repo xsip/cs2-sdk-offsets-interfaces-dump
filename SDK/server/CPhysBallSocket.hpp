@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flMinTwistAngle; // 0x518 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxTwistAngle; // 0x51c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flJointFriction) == 0x508, "m_flJointFriction in CPhysBallSocket should be at offset 0x508");
 		static_assert(offsetof(CS2::server::CPhysBallSocket, m_bEnableSwingLimit) == 0x50C, "m_bEnableSwingLimit in CPhysBallSocket should be at offset 0x50C");
 		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flSwingLimit) == 0x510, "m_flSwingLimit in CPhysBallSocket should be at offset 0x510");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flMinTwistAngle) == 0x518, "m_flMinTwistAngle in CPhysBallSocket should be at offset 0x518");
 		static_assert(offsetof(CS2::server::CPhysBallSocket, m_flMaxTwistAngle) == 0x51C, "m_flMaxTwistAngle in CPhysBallSocket should be at offset 0x51C");
 		static_assert(sizeof(CS2::server::CPhysBallSocket) == 0x520, "CPhysBallSocket size should be 0x520");
+
+#endif
 	}
 }

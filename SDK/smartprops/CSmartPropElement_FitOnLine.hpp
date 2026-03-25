@@ -34,6 +34,7 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeScaleMode m_nScaleMode; // 0x260 | Schema_DeclaredClass | Size: 0x40
 			smartprops::CSmartPropAttributePickMode m_nPickMode; // 0x2a0 | Schema_DeclaredClass | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_FitOnLine, m_vStart) == 0xA0, "m_vStart in CSmartPropElement_FitOnLine should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_FitOnLine, m_vEnd) == 0xE0, "m_vEnd in CSmartPropElement_FitOnLine should be at offset 0xE0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_FitOnLine, m_PointSpace) == 0x120, "m_PointSpace in CSmartPropElement_FitOnLine should be at offset 0x120");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_FitOnLine, m_nScaleMode) == 0x260, "m_nScaleMode in CSmartPropElement_FitOnLine should be at offset 0x260");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_FitOnLine, m_nPickMode) == 0x2A0, "m_nPickMode in CSmartPropElement_FitOnLine should be at offset 0x2A0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_FitOnLine) == 0x2E0, "CSmartPropElement_FitOnLine size should be 0x2E0");
+
+#endif
 	}
 }

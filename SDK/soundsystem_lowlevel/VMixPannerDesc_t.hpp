@@ -24,8 +24,11 @@ namespace CS2 {
 			soundsystem_lowlevel::VMixPannerType_t m_type; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			float32 m_flStrength; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPannerDesc_t, m_type) == 0x0, "m_type in VMixPannerDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPannerDesc_t, m_flStrength) == 0x4, "m_flStrength in VMixPannerDesc_t should be at offset 0x4");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixPannerDesc_t) == 0x8, "VMixPannerDesc_t size should be 0x8");
+
+#endif
 	}
 }

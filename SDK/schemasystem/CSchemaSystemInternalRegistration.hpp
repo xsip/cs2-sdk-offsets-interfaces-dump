@@ -48,6 +48,7 @@ namespace CS2 {
 			GlobalTypes::KeyValues3 m_KV3; // 0x168 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_Vector2D) == 0x0, "m_Vector2D in CSchemaSystemInternalRegistration should be at offset 0x0");
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_Vector) == 0x8, "m_Vector in CSchemaSystemInternalRegistration should be at offset 0x8");
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_VectorWS) == 0x14, "m_VectorWS in CSchemaSystemInternalRegistration should be at offset 0x14");
@@ -72,5 +73,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_ResourceTypes) == 0x160, "m_ResourceTypes in CSchemaSystemInternalRegistration should be at offset 0x160");
 		static_assert(offsetof(CS2::schemasystem::CSchemaSystemInternalRegistration, m_KV3) == 0x168, "m_KV3 in CSchemaSystemInternalRegistration should be at offset 0x168");
 		static_assert(sizeof(CS2::schemasystem::CSchemaSystemInternalRegistration) == 0x180, "CSchemaSystemInternalRegistration size should be 0x180");
+
+#endif
 	}
 }

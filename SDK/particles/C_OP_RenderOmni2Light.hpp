@@ -47,6 +47,7 @@ namespace CS2 {
 			bool m_bSphericalCookie; // 0x1478 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nLightType) == 0x220, "m_nLightType in C_OP_RenderOmni2Light should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_vColorBlend) == 0x228, "m_vColorBlend in C_OP_RenderOmni2Light should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_nColorBlendType) == 0x8E0, "m_nColorBlendType in C_OP_RenderOmni2Light should be at offset 0x8E0");
@@ -64,5 +65,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_hLightCookie) == 0x1470, "m_hLightCookie in C_OP_RenderOmni2Light should be at offset 0x1470");
 		static_assert(offsetof(CS2::particles::C_OP_RenderOmni2Light, m_bSphericalCookie) == 0x1478, "m_bSphericalCookie in C_OP_RenderOmni2Light should be at offset 0x1478");
 		static_assert(sizeof(CS2::particles::C_OP_RenderOmni2Light) == 0x1488, "C_OP_RenderOmni2Light size should be 0x1488");
+
+#endif
 	}
 }

@@ -38,6 +38,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecOffsetLoc; // 0x208 | Schema_Atomic | Size: 0xc
 			float32 m_flWorldTimeScale; // 0x214 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_NoiseEmitter, m_flEmissionDuration) == 0x1D8, "m_flEmissionDuration in C_OP_NoiseEmitter should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_NoiseEmitter, m_flStartTime) == 0x1DC, "m_flStartTime in C_OP_NoiseEmitter should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_NoiseEmitter, m_flEmissionScale) == 0x1E0, "m_flEmissionScale in C_OP_NoiseEmitter should be at offset 0x1E0");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_NoiseEmitter, m_vecOffsetLoc) == 0x208, "m_vecOffsetLoc in C_OP_NoiseEmitter should be at offset 0x208");
 		static_assert(offsetof(CS2::particles::C_OP_NoiseEmitter, m_flWorldTimeScale) == 0x214, "m_flWorldTimeScale in C_OP_NoiseEmitter should be at offset 0x214");
 		static_assert(sizeof(CS2::particles::C_OP_NoiseEmitter) == 0x218, "C_OP_NoiseEmitter size should be 0x218");
+
+#endif
 	}
 }

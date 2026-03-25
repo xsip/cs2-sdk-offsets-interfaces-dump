@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::KeyValues3 m_UnknownKeys; // 0x48 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Unknown, m_UnknownKeys) == 0x48, "m_UnknownKeys in CPulseCell_Unknown should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Unknown) == 0x58, "CPulseCell_Unknown size should be 0x58");
+
+#endif
 	}
 }

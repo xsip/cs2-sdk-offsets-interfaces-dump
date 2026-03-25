@@ -22,6 +22,9 @@ namespace CS2 {
 		class CServerOnlyModelEntity : public CS2::client::C_BaseModelEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::CServerOnlyModelEntity) == 0xE88, "CServerOnlyModelEntity size should be 0xE88");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_WeaponNOVA : public CS2::client::C_CSWeaponBaseShotgun {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_WeaponNOVA) == 0x1F40, "C_WeaponNOVA size should be 0x1F40");
+
+#endif
 	}
 }

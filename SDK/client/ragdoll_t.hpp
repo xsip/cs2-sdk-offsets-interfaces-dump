@@ -32,11 +32,14 @@ namespace CS2 {
 			bool unused; // 0x49 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::ragdoll_t, list) == 0x0, "list in ragdoll_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::ragdoll_t, hierarchyJoints) == 0x18, "hierarchyJoints in ragdoll_t should be at offset 0x18");
 		static_assert(offsetof(CS2::client::ragdoll_t, boneIndex) == 0x30, "boneIndex in ragdoll_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::ragdoll_t, allowStretch) == 0x48, "allowStretch in ragdoll_t should be at offset 0x48");
 		static_assert(offsetof(CS2::client::ragdoll_t, unused) == 0x49, "unused in ragdoll_t should be at offset 0x49");
 		static_assert(sizeof(CS2::client::ragdoll_t) == 0x50, "ragdoll_t size should be 0x50");
+
+#endif
 	}
 }

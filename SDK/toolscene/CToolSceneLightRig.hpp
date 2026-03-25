@@ -47,6 +47,7 @@ namespace CS2 {
 			toolscene::CLightRigSky m_Sky; // 0x78 | Schema_DeclaredClass | Size: 0x8
 			toolscene::CLightRigVMap m_BackgroundMap; // 0x80 | Schema_DeclaredClass | Size: 0xe8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::toolscene::CToolSceneLightRig, m_nRigType) == 0x8, "m_nRigType in CToolSceneLightRig should be at offset 0x8");
 		static_assert(offsetof(CS2::toolscene::CToolSceneLightRig, m_Suns) == 0x10, "m_Suns in CToolSceneLightRig should be at offset 0x10");
 		static_assert(offsetof(CS2::toolscene::CToolSceneLightRig, m_PointLights) == 0x28, "m_PointLights in CToolSceneLightRig should be at offset 0x28");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::toolscene::CToolSceneLightRig, m_Sky) == 0x78, "m_Sky in CToolSceneLightRig should be at offset 0x78");
 		static_assert(offsetof(CS2::toolscene::CToolSceneLightRig, m_BackgroundMap) == 0x80, "m_BackgroundMap in CToolSceneLightRig should be at offset 0x80");
 		static_assert(sizeof(CS2::toolscene::CToolSceneLightRig) == 0x168, "CToolSceneLightRig size should be 0x168");
+
+#endif
 	}
 }

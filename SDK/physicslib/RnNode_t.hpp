@@ -25,10 +25,13 @@ namespace CS2 {
 			GlobalTypes::Vector m_vMax; // 0x10 | Schema_Atomic | Size: 0xc
 			uint32_t m_nTriangleOffset; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnNode_t, m_vMin) == 0x0, "m_vMin in RnNode_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnNode_t, m_nChildren) == 0xC, "m_nChildren in RnNode_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::RnNode_t, m_vMax) == 0x10, "m_vMax in RnNode_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::RnNode_t, m_nTriangleOffset) == 0x1C, "m_nTriangleOffset in RnNode_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::physicslib::RnNode_t) == 0x20, "RnNode_t size should be 0x20");
+
+#endif
 	}
 }

@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<smartprops::CSmartPropMaterialReplacement> m_MaterialReplacements; // 0x90 | Schema_Atomic | Size: 0x18
 			// char m_MaterialReplacements[0x18]; // 0x90 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialOverride, m_bClearCurrentOverrides) == 0x50, "m_bClearCurrentOverrides in CSmartPropOperation_MaterialOverride should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialOverride, m_MaterialReplacements) == 0x90, "m_MaterialReplacements in CSmartPropOperation_MaterialOverride should be at offset 0x90");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_MaterialOverride) == 0xA8, "CSmartPropOperation_MaterialOverride size should be 0xA8");
+
+#endif
 	}
 }

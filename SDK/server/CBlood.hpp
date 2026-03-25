@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_flAmount; // 0x4c0 | Schema_Builtin | Size: 0x4
 			client::BloodType m_Color; // 0x4c4 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBlood, m_vecSprayAngles) == 0x4A8, "m_vecSprayAngles in CBlood should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CBlood, m_vecSprayDir) == 0x4B4, "m_vecSprayDir in CBlood should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CBlood, m_flAmount) == 0x4C0, "m_flAmount in CBlood should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CBlood, m_Color) == 0x4C4, "m_Color in CBlood should be at offset 0x4C4");
 		static_assert(sizeof(CS2::server::CBlood) == 0x4C8, "CBlood size should be 0x4C8");
+
+#endif
 	}
 }

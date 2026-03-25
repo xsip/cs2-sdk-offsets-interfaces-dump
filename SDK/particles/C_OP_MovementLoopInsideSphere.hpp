@@ -31,10 +31,13 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nDistSqrAttr; // 0xa00 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_nCP) == 0x1D0, "m_nCP in C_OP_MovementLoopInsideSphere should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_flDistance) == 0x1D8, "m_flDistance in C_OP_MovementLoopInsideSphere should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_vecScale) == 0x348, "m_vecScale in C_OP_MovementLoopInsideSphere should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_MovementLoopInsideSphere, m_nDistSqrAttr) == 0xA00, "m_nDistSqrAttr in C_OP_MovementLoopInsideSphere should be at offset 0xA00");
 		static_assert(sizeof(CS2::particles::C_OP_MovementLoopInsideSphere) == 0xA08, "C_OP_MovementLoopInsideSphere size should be 0xA08");
+
+#endif
 	}
 }

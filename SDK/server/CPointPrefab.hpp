@@ -31,6 +31,7 @@ namespace CS2 {
 			// char m_associatedRelayEntity[0x4]; // 0x4c4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x48); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointPrefab, m_targetMapName) == 0x4A8, "m_targetMapName in CPointPrefab should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointPrefab, m_forceWorldGroupID) == 0x4B0, "m_forceWorldGroupID in CPointPrefab should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPointPrefab, m_associatedRelayTargetName) == 0x4B8, "m_associatedRelayTargetName in CPointPrefab should be at offset 0x4B8");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointPrefab, m_bLoadDynamic) == 0x4C1, "m_bLoadDynamic in CPointPrefab should be at offset 0x4C1");
 		static_assert(offsetof(CS2::server::CPointPrefab, m_associatedRelayEntity) == 0x4C4, "m_associatedRelayEntity in CPointPrefab should be at offset 0x4C4");
 		static_assert(sizeof(CS2::server::CPointPrefab) == 0x510, "CPointPrefab size should be 0x510");
+
+#endif
 	}
 }

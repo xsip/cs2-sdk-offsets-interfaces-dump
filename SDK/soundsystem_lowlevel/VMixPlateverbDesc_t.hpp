@@ -28,6 +28,7 @@ namespace CS2 {
 			float32 m_flFeedbackDiffusion1; // 0x14 | Schema_Builtin | Size: 0x4
 			float32 m_flFeedbackDiffusion2; // 0x18 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flPrefilter) == 0x0, "m_flPrefilter in VMixPlateverbDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flInputDiffusion1) == 0x4, "m_flInputDiffusion1 in VMixPlateverbDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flInputDiffusion2) == 0x8, "m_flInputDiffusion2 in VMixPlateverbDesc_t should be at offset 0x8");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flFeedbackDiffusion1) == 0x14, "m_flFeedbackDiffusion1 in VMixPlateverbDesc_t should be at offset 0x14");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixPlateverbDesc_t, m_flFeedbackDiffusion2) == 0x18, "m_flFeedbackDiffusion2 in VMixPlateverbDesc_t should be at offset 0x18");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixPlateverbDesc_t) == 0x1C, "VMixPlateverbDesc_t size should be 0x1C");
+
+#endif
 	}
 }

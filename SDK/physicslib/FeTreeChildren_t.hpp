@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			uint16_t nChild[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeTreeChildren_t, nChild) == 0x0, "nChild in FeTreeChildren_t should be at offset 0x0");
 		static_assert(sizeof(CS2::physicslib::FeTreeChildren_t) == 0x4, "FeTreeChildren_t size should be 0x4");
+
+#endif
 	}
 }

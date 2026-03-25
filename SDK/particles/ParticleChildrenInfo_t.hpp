@@ -30,11 +30,14 @@ namespace CS2 {
 			particles::ParticleDetailLevel_t m_nDetailLevel; // 0x10 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::ParticleChildrenInfo_t, m_ChildRef) == 0x0, "m_ChildRef in ParticleChildrenInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::ParticleChildrenInfo_t, m_flDelay) == 0x8, "m_flDelay in ParticleChildrenInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::ParticleChildrenInfo_t, m_bEndCap) == 0xC, "m_bEndCap in ParticleChildrenInfo_t should be at offset 0xC");
 		static_assert(offsetof(CS2::particles::ParticleChildrenInfo_t, m_bDisableChild) == 0xD, "m_bDisableChild in ParticleChildrenInfo_t should be at offset 0xD");
 		static_assert(offsetof(CS2::particles::ParticleChildrenInfo_t, m_nDetailLevel) == 0x10, "m_nDetailLevel in ParticleChildrenInfo_t should be at offset 0x10");
 		static_assert(sizeof(CS2::particles::ParticleChildrenInfo_t) == 0x20, "ParticleChildrenInfo_t size should be 0x20");
+
+#endif
 	}
 }

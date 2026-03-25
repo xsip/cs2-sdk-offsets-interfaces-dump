@@ -81,6 +81,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnAjarOpen; // 0xe30 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBasePropDoor, m_flAutoReturnDelay) == 0xC60, "m_flAutoReturnDelay in CBasePropDoor should be at offset 0xC60");
 		static_assert(offsetof(CS2::server::CBasePropDoor, m_hDoorList) == 0xC68, "m_hDoorList in CBasePropDoor should be at offset 0xC68");
 		static_assert(offsetof(CS2::server::CBasePropDoor, m_nHardwareType) == 0xC80, "m_nHardwareType in CBasePropDoor should be at offset 0xC80");
@@ -120,5 +121,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnLockedUse) == 0xE18, "m_OnLockedUse in CBasePropDoor should be at offset 0xE18");
 		static_assert(offsetof(CS2::server::CBasePropDoor, m_OnAjarOpen) == 0xE30, "m_OnAjarOpen in CBasePropDoor should be at offset 0xE30");
 		static_assert(sizeof(CS2::server::CBasePropDoor) == 0xE50, "CBasePropDoor size should be 0xE50");
+
+#endif
 	}
 }

@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bRadialCheck; // 0x2bd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_PercentageBetweenTransforms should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flInputMin) == 0x1D4, "m_flInputMin in C_OP_PercentageBetweenTransforms should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_flInputMax) == 0x1D8, "m_flInputMax in C_OP_PercentageBetweenTransforms should be at offset 0x1D8");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_bActiveRange) == 0x2BC, "m_bActiveRange in C_OP_PercentageBetweenTransforms should be at offset 0x2BC");
 		static_assert(offsetof(CS2::particles::C_OP_PercentageBetweenTransforms, m_bRadialCheck) == 0x2BD, "m_bRadialCheck in C_OP_PercentageBetweenTransforms should be at offset 0x2BD");
 		static_assert(sizeof(CS2::particles::C_OP_PercentageBetweenTransforms) == 0x2C0, "C_OP_PercentageBetweenTransforms size should be 0x2C0");
+
+#endif
 	}
 }

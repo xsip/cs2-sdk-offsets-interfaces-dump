@@ -48,6 +48,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vTangentSpaceAnchorAtTransitionStart; // 0x5a8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_vAnchorOffsetRestore) == 0x558, "m_vAnchorOffsetRestore in CSplineConstraint should be at offset 0x558");
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_hSplineEntity) == 0x564, "m_hSplineEntity in CSplineConstraint should be at offset 0x564");
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_bEnableLateralConstraint) == 0x570, "m_bEnableLateralConstraint in CSplineConstraint should be at offset 0x570");
@@ -63,5 +64,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_StartTransitionTime) == 0x5A4, "m_StartTransitionTime in CSplineConstraint should be at offset 0x5A4");
 		static_assert(offsetof(CS2::server::CSplineConstraint, m_vTangentSpaceAnchorAtTransitionStart) == 0x5A8, "m_vTangentSpaceAnchorAtTransitionStart in CSplineConstraint should be at offset 0x5A8");
 		static_assert(sizeof(CS2::server::CSplineConstraint) == 0x5B8, "CSplineConstraint size should be 0x5B8");
+
+#endif
 	}
 }

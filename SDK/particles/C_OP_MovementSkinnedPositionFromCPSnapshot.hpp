@@ -39,6 +39,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_nSnapShotStartPoint; // 0x638 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x7a8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MovementSkinnedPositionFromCPSnapshot, m_nSnapshotControlPointNumber) == 0x1D0, "m_nSnapshotControlPointNumber in C_OP_MovementSkinnedPositionFromCPSnapshot should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MovementSkinnedPositionFromCPSnapshot, m_nControlPointNumber) == 0x1D4, "m_nControlPointNumber in C_OP_MovementSkinnedPositionFromCPSnapshot should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_MovementSkinnedPositionFromCPSnapshot, m_bRandom) == 0x1D8, "m_bRandom in C_OP_MovementSkinnedPositionFromCPSnapshot should be at offset 0x1D8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_MovementSkinnedPositionFromCPSnapshot, m_nSnapShotStartPoint) == 0x638, "m_nSnapShotStartPoint in C_OP_MovementSkinnedPositionFromCPSnapshot should be at offset 0x638");
 		static_assert(offsetof(CS2::particles::C_OP_MovementSkinnedPositionFromCPSnapshot, m_flInterpolation) == 0x7A8, "m_flInterpolation in C_OP_MovementSkinnedPositionFromCPSnapshot should be at offset 0x7A8");
 		static_assert(sizeof(CS2::particles::C_OP_MovementSkinnedPositionFromCPSnapshot) == 0x918, "C_OP_MovementSkinnedPositionFromCPSnapshot size should be 0x918");
+
+#endif
 	}
 }

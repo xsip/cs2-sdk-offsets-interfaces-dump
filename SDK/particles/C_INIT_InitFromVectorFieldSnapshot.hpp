@@ -29,11 +29,14 @@ namespace CS2 {
 			S2_PAD(0x3);
 			particleslib::CPerParticleVecInput m_vecScale; // 0x1e8 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nLocalSpaceCP) == 0x1DC, "m_nLocalSpaceCP in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_nWeightUpdateCP) == 0x1E0, "m_nWeightUpdateCP in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_bUseVerticalVelocity) == 0x1E4, "m_bUseVerticalVelocity in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot, m_vecScale) == 0x1E8, "m_vecScale in C_INIT_InitFromVectorFieldSnapshot should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_INIT_InitFromVectorFieldSnapshot) == 0x8A0, "C_INIT_InitFromVectorFieldSnapshot size should be 0x8A0");
+
+#endif
 	}
 }

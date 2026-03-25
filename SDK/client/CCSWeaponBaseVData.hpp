@@ -120,6 +120,7 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_szAnimClass; // 0x788 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x30); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSWeaponBaseVData, m_WeaponType) == 0x440, "m_WeaponType in CCSWeaponBaseVData should be at offset 0x440");
 		static_assert(offsetof(CS2::client::CCSWeaponBaseVData, m_WeaponCategory) == 0x444, "m_WeaponCategory in CCSWeaponBaseVData should be at offset 0x444");
 		static_assert(offsetof(CS2::client::CCSWeaponBaseVData, m_szAnimSkeleton) == 0x448, "m_szAnimSkeleton in CCSWeaponBaseVData should be at offset 0x448");
@@ -203,5 +204,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CCSWeaponBaseVData, m_vSmokeColor) == 0x77C, "m_vSmokeColor in CCSWeaponBaseVData should be at offset 0x77C");
 		static_assert(offsetof(CS2::client::CCSWeaponBaseVData, m_szAnimClass) == 0x788, "m_szAnimClass in CCSWeaponBaseVData should be at offset 0x788");
 		static_assert(sizeof(CS2::client::CCSWeaponBaseVData) == 0x7C0, "CCSWeaponBaseVData size should be 0x7C0");
+
+#endif
 	}
 }

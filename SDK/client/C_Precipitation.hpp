@@ -35,6 +35,7 @@ namespace CS2 {
 			S2_PAD(0x1);
 			int32_t m_nAvailableSheetSequencesMaxIndex; // 0xfa4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Precipitation, m_flDensity) == 0xF58, "m_flDensity in C_Precipitation should be at offset 0xF58");
 		static_assert(offsetof(CS2::client::C_Precipitation, m_flParticleInnerDist) == 0xF68, "m_flParticleInnerDist in C_Precipitation should be at offset 0xF68");
 		static_assert(offsetof(CS2::client::C_Precipitation, m_pParticleDef) == 0xF70, "m_pParticleDef in C_Precipitation should be at offset 0xF70");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_Precipitation, m_bHasSimulatedSinceLastSceneObjectUpdate) == 0xFA2, "m_bHasSimulatedSinceLastSceneObjectUpdate in C_Precipitation should be at offset 0xFA2");
 		static_assert(offsetof(CS2::client::C_Precipitation, m_nAvailableSheetSequencesMaxIndex) == 0xFA4, "m_nAvailableSheetSequencesMaxIndex in C_Precipitation should be at offset 0xFA4");
 		static_assert(sizeof(CS2::client::C_Precipitation) == 0xFA8, "C_Precipitation size should be 0xFA8");
+
+#endif
 	}
 }

@@ -42,6 +42,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_config; // 0x60 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_effectForConfig; // 0x68 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmParticleEvent, m_relevance) == 0x20, "m_relevance in CNmParticleEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmParticleEvent, m_type) == 0x24, "m_type in CNmParticleEvent should be at offset 0x24");
 		static_assert(offsetof(CS2::animlib::CNmParticleEvent, m_hParticleSystem) == 0x28, "m_hParticleSystem in CNmParticleEvent should be at offset 0x28");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmParticleEvent, m_config) == 0x60, "m_config in CNmParticleEvent should be at offset 0x60");
 		static_assert(offsetof(CS2::animlib::CNmParticleEvent, m_effectForConfig) == 0x68, "m_effectForConfig in CNmParticleEvent should be at offset 0x68");
 		static_assert(sizeof(CS2::animlib::CNmParticleEvent) == 0x70, "CNmParticleEvent size should be 0x70");
+
+#endif
 	}
 }

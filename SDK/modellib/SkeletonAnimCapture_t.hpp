@@ -38,6 +38,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::SkeletonAnimCapture_t_Frame_t> m_Frames; // 0xa8 | Schema_Atomic | Size: 0x18
 			// char m_Frames[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t, m_nEntIndex) == 0x0, "m_nEntIndex in SkeletonAnimCapture_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t, m_nEntParent) == 0x4, "m_nEntParent in SkeletonAnimCapture_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t, m_ImportedCollision) == 0x8, "m_ImportedCollision in SkeletonAnimCapture_t should be at offset 0x8");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t, m_bPredicted) == 0x64, "m_bPredicted in SkeletonAnimCapture_t should be at offset 0x64");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t, m_Frames) == 0xA8, "m_Frames in SkeletonAnimCapture_t should be at offset 0xA8");
 		static_assert(sizeof(CS2::modellib::SkeletonAnimCapture_t) == 0xC0, "SkeletonAnimCapture_t size should be 0xC0");
+
+#endif
 	}
 }

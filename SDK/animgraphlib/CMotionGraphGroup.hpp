@@ -34,11 +34,14 @@ namespace CS2 {
 			modellib::AnimScriptHandle m_hIsActiveScript; // 0x100 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphGroup, m_searchDB) == 0x0, "m_searchDB in CMotionGraphGroup should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphGroup, m_motionGraphs) == 0xB8, "m_motionGraphs in CMotionGraphGroup should be at offset 0xB8");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphGroup, m_motionGraphConfigs) == 0xD0, "m_motionGraphConfigs in CMotionGraphGroup should be at offset 0xD0");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphGroup, m_sampleToConfig) == 0xE8, "m_sampleToConfig in CMotionGraphGroup should be at offset 0xE8");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphGroup, m_hIsActiveScript) == 0x100, "m_hIsActiveScript in CMotionGraphGroup should be at offset 0x100");
 		static_assert(sizeof(CS2::animgraphlib::CMotionGraphGroup) == 0x108, "CMotionGraphGroup size should be 0x108");
+
+#endif
 	}
 }

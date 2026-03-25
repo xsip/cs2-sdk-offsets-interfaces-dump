@@ -30,11 +30,14 @@ namespace CS2 {
 			entity2::GameTime_t m_flStartTime; // 0x570 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTestEffect, m_iLoop) == 0x4A8, "m_iLoop in CTestEffect should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CTestEffect, m_iBeam) == 0x4AC, "m_iBeam in CTestEffect should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CTestEffect, m_pBeam) == 0x4B0, "m_pBeam in CTestEffect should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CTestEffect, m_flBeamTime) == 0x510, "m_flBeamTime in CTestEffect should be at offset 0x510");
 		static_assert(offsetof(CS2::server::CTestEffect, m_flStartTime) == 0x570, "m_flStartTime in CTestEffect should be at offset 0x570");
 		static_assert(sizeof(CS2::server::CTestEffect) == 0x578, "CTestEffect size should be 0x578");
+
+#endif
 	}
 }

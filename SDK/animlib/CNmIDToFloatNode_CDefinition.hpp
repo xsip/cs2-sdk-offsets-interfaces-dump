@@ -29,10 +29,13 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVectorFixedGrowable< float32, 5 > m_values; // 0x48 | Schema_Atomic | Size: 0x20
 			char m_values[0x20]; // 0x48 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIDToFloatNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmIDToFloatNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmIDToFloatNode_CDefinition, m_defaultValue) == 0x14, "m_defaultValue in CNmIDToFloatNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmIDToFloatNode_CDefinition, m_IDs) == 0x18, "m_IDs in CNmIDToFloatNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmIDToFloatNode_CDefinition, m_values) == 0x48, "m_values in CNmIDToFloatNode::CDefinition should be at offset 0x48");
 		static_assert(sizeof(CS2::animlib::CNmIDToFloatNode_CDefinition) == 0x68, "CNmIDToFloatNode::CDefinition size should be 0x68");
+
+#endif
 	}
 }

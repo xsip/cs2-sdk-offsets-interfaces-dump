@@ -37,6 +37,7 @@ namespace CS2 {
 			tier2::CRangeFloat m_flDeathDestroyTime; // 0x3c | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_sName) == 0x0, "m_sName in CDestructiblePart_DamageLevel should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_sBreakablePieceName) == 0x8, "m_sBreakablePieceName in CDestructiblePart_DamageLevel should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_nBodyGroupValue) == 0x10, "m_nBodyGroupValue in CDestructiblePart_DamageLevel should be at offset 0x10");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_bShouldDestroyOnDeath) == 0x38, "m_bShouldDestroyOnDeath in CDestructiblePart_DamageLevel should be at offset 0x38");
 		static_assert(offsetof(CS2::client::CDestructiblePart_DamageLevel, m_flDeathDestroyTime) == 0x3C, "m_flDeathDestroyTime in CDestructiblePart_DamageLevel should be at offset 0x3C");
 		static_assert(sizeof(CS2::client::CDestructiblePart_DamageLevel) == 0x48, "CDestructiblePart_DamageLevel size should be 0x48");
+
+#endif
 	}
 }

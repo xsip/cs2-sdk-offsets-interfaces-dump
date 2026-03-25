@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bNormalizedOutput; // 0x10c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6f); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nExpression) == 0x1D0, "m_nExpression in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_vInput1) == 0x1D8, "m_vInput1 in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_vInput2) == 0x890, "m_vInput2 in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x890");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_nSetMethod) == 0x10BC, "m_nSetMethod in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x10BC");
 		static_assert(offsetof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression, m_bNormalizedOutput) == 0x10C0, "m_bNormalizedOutput in C_OP_SetVectorAttributeToVectorExpression should be at offset 0x10C0");
 		static_assert(sizeof(CS2::particles::C_OP_SetVectorAttributeToVectorExpression) == 0x1130, "C_OP_SetVectorAttributeToVectorExpression size should be 0x1130");
+
+#endif
 	}
 }

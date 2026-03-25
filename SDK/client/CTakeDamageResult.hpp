@@ -40,6 +40,7 @@ namespace CS2 {
 			client::HitGroup_t m_nOverrideFlinchHitGroup; // 0x28 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_pOriginatingInfo) == 0x0, "m_pOriginatingInfo in CTakeDamageResult should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nHealthLost) == 0x8, "m_nHealthLost in CTakeDamageResult should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nHealthBefore) == 0xC, "m_nHealthBefore in CTakeDamageResult should be at offset 0xC");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_bSuppressFlinch) == 0x25, "m_bSuppressFlinch in CTakeDamageResult should be at offset 0x25");
 		static_assert(offsetof(CS2::client::CTakeDamageResult, m_nOverrideFlinchHitGroup) == 0x28, "m_nOverrideFlinchHitGroup in CTakeDamageResult should be at offset 0x28");
 		static_assert(sizeof(CS2::client::CTakeDamageResult) == 0x30, "CTakeDamageResult size should be 0x30");
+
+#endif
 	}
 }

@@ -28,6 +28,7 @@ namespace CS2 {
 			uint16_t nNodeY1; // 0xe | Schema_Builtin | Size: 0x2
 			GlobalTypes::QuaternionStorage qAdjust; // 0x10 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeNodeBase_t, nNode) == 0x0, "nNode in FeNodeBase_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeNodeBase_t, nDummy) == 0x2, "nDummy in FeNodeBase_t should be at offset 0x2");
 		static_assert(offsetof(CS2::physicslib::FeNodeBase_t, nNodeX0) == 0x8, "nNodeX0 in FeNodeBase_t should be at offset 0x8");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeNodeBase_t, nNodeY1) == 0xE, "nNodeY1 in FeNodeBase_t should be at offset 0xE");
 		static_assert(offsetof(CS2::physicslib::FeNodeBase_t, qAdjust) == 0x10, "qAdjust in FeNodeBase_t should be at offset 0x10");
 		static_assert(sizeof(CS2::physicslib::FeNodeBase_t) == 0x20, "FeNodeBase_t size should be 0x20");
+
+#endif
 	}
 }

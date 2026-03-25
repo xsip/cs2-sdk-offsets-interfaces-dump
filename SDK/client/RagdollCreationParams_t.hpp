@@ -27,11 +27,14 @@ namespace CS2 {
 			S2_PAD(0x2);
 			int32_t m_nHealthToGrant; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::RagdollCreationParams_t, m_vForce) == 0x0, "m_vForce in RagdollCreationParams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::RagdollCreationParams_t, m_nForceBone) == 0xC, "m_nForceBone in RagdollCreationParams_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::RagdollCreationParams_t, m_bForceCurrentWorldTransform) == 0x10, "m_bForceCurrentWorldTransform in RagdollCreationParams_t should be at offset 0x10");
 		static_assert(offsetof(CS2::client::RagdollCreationParams_t, m_bUseLRURetirement) == 0x11, "m_bUseLRURetirement in RagdollCreationParams_t should be at offset 0x11");
 		static_assert(offsetof(CS2::client::RagdollCreationParams_t, m_nHealthToGrant) == 0x14, "m_nHealthToGrant in RagdollCreationParams_t should be at offset 0x14");
 		static_assert(sizeof(CS2::client::RagdollCreationParams_t) == 0x18, "RagdollCreationParams_t size should be 0x18");
+
+#endif
 	}
 }

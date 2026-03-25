@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vNormal; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_flOffset; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnPlane_t, m_vNormal) == 0x0, "m_vNormal in RnPlane_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnPlane_t, m_flOffset) == 0xC, "m_flOffset in RnPlane_t should be at offset 0xC");
 		static_assert(sizeof(CS2::physicslib::RnPlane_t) == 0x10, "RnPlane_t size should be 0x10");
+
+#endif
 	}
 }

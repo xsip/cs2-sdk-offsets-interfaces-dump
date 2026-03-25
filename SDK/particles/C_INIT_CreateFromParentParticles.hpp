@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bSetRopeSegmentID; // 0x1e9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_flVelocityScale) == 0x1D8, "m_flVelocityScale in C_INIT_CreateFromParentParticles should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_flIncrement) == 0x1DC, "m_flIncrement in C_INIT_CreateFromParentParticles should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_bRandomDistribution) == 0x1E0, "m_bRandomDistribution in C_INIT_CreateFromParentParticles should be at offset 0x1E0");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_bSubFrame) == 0x1E8, "m_bSubFrame in C_INIT_CreateFromParentParticles should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromParentParticles, m_bSetRopeSegmentID) == 0x1E9, "m_bSetRopeSegmentID in C_INIT_CreateFromParentParticles should be at offset 0x1E9");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateFromParentParticles) == 0x1F0, "C_INIT_CreateFromParentParticles size should be 0x1F0");
+
+#endif
 	}
 }

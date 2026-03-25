@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nChoice; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_SetBodygroup, m_GroupName) == 0x48, "m_GroupName in CModelConfigElement_SetBodygroup should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_SetBodygroup, m_nChoice) == 0x50, "m_nChoice in CModelConfigElement_SetBodygroup should be at offset 0x50");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_SetBodygroup) == 0x58, "CModelConfigElement_SetBodygroup size should be 0x58");
+
+#endif
 	}
 }

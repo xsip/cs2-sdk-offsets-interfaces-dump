@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vNormal; // 0xc | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::VertexPositionNormal_t, m_vPosition) == 0x0, "m_vPosition in VertexPositionNormal_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::VertexPositionNormal_t, m_vNormal) == 0xC, "m_vNormal in VertexPositionNormal_t should be at offset 0xC");
 		static_assert(sizeof(CS2::physicslib::VertexPositionNormal_t) == 0x18, "VertexPositionNormal_t size should be 0x18");
+
+#endif
 	}
 }

@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flMinInterval; // 0xc | Schema_Builtin | Size: 0x4
 			float32 m_flMaxInterval; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CRandStopwatch, m_flMinInterval) == 0xC, "m_flMinInterval in CRandStopwatch should be at offset 0xC");
 		static_assert(offsetof(CS2::client::CRandStopwatch, m_flMaxInterval) == 0x10, "m_flMaxInterval in CRandStopwatch should be at offset 0x10");
 		static_assert(sizeof(CS2::client::CRandStopwatch) == 0x14, "CRandStopwatch size should be 0x14");
+
+#endif
 	}
 }

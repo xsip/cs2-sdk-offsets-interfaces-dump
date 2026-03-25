@@ -109,6 +109,7 @@ namespace CS2 {
 			bool m_bMaxLuminanceBlendingSequence0; // 0x2b75 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x272); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRadiusScale) == 0x220, "m_flRadiusScale in CBaseRendererSource2 should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flAlphaScale) == 0x390, "m_flAlphaScale in CBaseRendererSource2 should be at offset 0x390");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_flRollScale) == 0x500, "m_flRollScale in CBaseRendererSource2 should be at offset 0x500");
@@ -174,5 +175,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bBlendFramesSeq0) == 0x2B74, "m_bBlendFramesSeq0 in CBaseRendererSource2 should be at offset 0x2B74");
 		static_assert(offsetof(CS2::particles::CBaseRendererSource2, m_bMaxLuminanceBlendingSequence0) == 0x2B75, "m_bMaxLuminanceBlendingSequence0 in CBaseRendererSource2 should be at offset 0x2B75");
 		static_assert(sizeof(CS2::particles::CBaseRendererSource2) == 0x2DE8, "CBaseRendererSource2 size should be 0x2DE8");
+
+#endif
 	}
 }

@@ -27,8 +27,11 @@ namespace CS2 {
 			particles::EventTypeSelection_t m_nEventType; // 0x1dc | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x80); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromParentKilled, m_nAttributeToCopy) == 0x1D8, "m_nAttributeToCopy in C_INIT_InitFromParentKilled should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromParentKilled, m_nEventType) == 0x1DC, "m_nEventType in C_INIT_InitFromParentKilled should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::C_INIT_InitFromParentKilled) == 0x260, "C_INIT_InitFromParentKilled size should be 0x260");
+
+#endif
 	}
 }

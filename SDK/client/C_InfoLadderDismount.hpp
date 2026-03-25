@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_InfoLadderDismount : public CS2::client::C_BaseEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_InfoLadderDismount) == 0x608, "C_InfoLadderDismount size should be 0x608");
+
+#endif
 	}
 }

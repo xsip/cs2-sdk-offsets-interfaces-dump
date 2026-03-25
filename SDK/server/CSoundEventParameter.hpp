@@ -26,8 +26,11 @@ namespace CS2 {
 			float32 m_flFloatValue; // 0x4c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundEventParameter, m_iszParamName) == 0x4C0, "m_iszParamName in CSoundEventParameter should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CSoundEventParameter, m_flFloatValue) == 0x4C8, "m_flFloatValue in CSoundEventParameter should be at offset 0x4C8");
 		static_assert(sizeof(CS2::server::CSoundEventParameter) == 0x4D0, "CSoundEventParameter size should be 0x4D0");
+
+#endif
 	}
 }

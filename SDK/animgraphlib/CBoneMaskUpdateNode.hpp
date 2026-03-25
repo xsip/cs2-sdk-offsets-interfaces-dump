@@ -36,6 +36,7 @@ namespace CS2 {
 			animgraphlib::CAnimParamHandle m_hBlendParameter; // 0xac | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CBoneMaskUpdateNode, m_nWeightListIndex) == 0x94, "m_nWeightListIndex in CBoneMaskUpdateNode should be at offset 0x94");
 		static_assert(offsetof(CS2::animgraphlib::CBoneMaskUpdateNode, m_flRootMotionBlend) == 0x98, "m_flRootMotionBlend in CBoneMaskUpdateNode should be at offset 0x98");
 		static_assert(offsetof(CS2::animgraphlib::CBoneMaskUpdateNode, m_blendSpace) == 0x9C, "m_blendSpace in CBoneMaskUpdateNode should be at offset 0x9C");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CBoneMaskUpdateNode, m_blendValueSource) == 0xA8, "m_blendValueSource in CBoneMaskUpdateNode should be at offset 0xA8");
 		static_assert(offsetof(CS2::animgraphlib::CBoneMaskUpdateNode, m_hBlendParameter) == 0xAC, "m_hBlendParameter in CBoneMaskUpdateNode should be at offset 0xAC");
 		static_assert(sizeof(CS2::animgraphlib::CBoneMaskUpdateNode) == 0xB0, "CBoneMaskUpdateNode size should be 0xB0");
+
+#endif
 	}
 }

@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bNetworkLookTarget; // 0x44 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CLookComponentUpdater, m_hLookHeading) == 0x34, "m_hLookHeading in CLookComponentUpdater should be at offset 0x34");
 		static_assert(offsetof(CS2::animgraphlib::CLookComponentUpdater, m_hLookHeadingNormalized) == 0x36, "m_hLookHeadingNormalized in CLookComponentUpdater should be at offset 0x36");
 		static_assert(offsetof(CS2::animgraphlib::CLookComponentUpdater, m_hLookHeadingVelocity) == 0x38, "m_hLookHeadingVelocity in CLookComponentUpdater should be at offset 0x38");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CLookComponentUpdater, m_hLookTargetWorldSpace) == 0x42, "m_hLookTargetWorldSpace in CLookComponentUpdater should be at offset 0x42");
 		static_assert(offsetof(CS2::animgraphlib::CLookComponentUpdater, m_bNetworkLookTarget) == 0x44, "m_bNetworkLookTarget in CLookComponentUpdater should be at offset 0x44");
 		static_assert(sizeof(CS2::animgraphlib::CLookComponentUpdater) == 0x48, "CLookComponentUpdater size should be 0x48");
+
+#endif
 	}
 }

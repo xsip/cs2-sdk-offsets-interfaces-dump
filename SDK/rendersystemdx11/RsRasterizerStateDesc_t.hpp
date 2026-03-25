@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flDepthBiasClamp; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flSlopeScaledDepthBias; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::rendersystemdx11::RsRasterizerStateDesc_t, m_nFillMode) == 0x0, "m_nFillMode in RsRasterizerStateDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::rendersystemdx11::RsRasterizerStateDesc_t, m_nCullMode) == 0x1, "m_nCullMode in RsRasterizerStateDesc_t should be at offset 0x1");
 		static_assert(offsetof(CS2::rendersystemdx11::RsRasterizerStateDesc_t, m_bDepthClipEnable) == 0x2, "m_bDepthClipEnable in RsRasterizerStateDesc_t should be at offset 0x2");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::rendersystemdx11::RsRasterizerStateDesc_t, m_flDepthBiasClamp) == 0x8, "m_flDepthBiasClamp in RsRasterizerStateDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::rendersystemdx11::RsRasterizerStateDesc_t, m_flSlopeScaledDepthBias) == 0xC, "m_flSlopeScaledDepthBias in RsRasterizerStateDesc_t should be at offset 0xC");
 		static_assert(sizeof(CS2::rendersystemdx11::RsRasterizerStateDesc_t) == 0x10, "RsRasterizerStateDesc_t size should be 0x10");
+
+#endif
 	}
 }

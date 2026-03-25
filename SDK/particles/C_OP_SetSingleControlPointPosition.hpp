@@ -29,10 +29,13 @@ namespace CS2 {
 			particleslib::CParticleCollectionVecInput m_vecCP1Pos; // 0x1e0 | Schema_DeclaredClass | Size: 0x6b8
 			particleslib::CParticleTransformInput m_transformInput; // 0x898 | Schema_DeclaredClass | Size: 0x68
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetSingleControlPointPosition, m_bSetOnce) == 0x1D8, "m_bSetOnce in C_OP_SetSingleControlPointPosition should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetSingleControlPointPosition, m_nCP1) == 0x1DC, "m_nCP1 in C_OP_SetSingleControlPointPosition should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetSingleControlPointPosition, m_vecCP1Pos) == 0x1E0, "m_vecCP1Pos in C_OP_SetSingleControlPointPosition should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_SetSingleControlPointPosition, m_transformInput) == 0x898, "m_transformInput in C_OP_SetSingleControlPointPosition should be at offset 0x898");
 		static_assert(sizeof(CS2::particles::C_OP_SetSingleControlPointPosition) == 0x900, "C_OP_SetSingleControlPointPosition size should be 0x900");
+
+#endif
 	}
 }

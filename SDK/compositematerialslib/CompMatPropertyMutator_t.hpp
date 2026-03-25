@@ -61,6 +61,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<compositematerialslib::CompMatMutatorCondition_t> m_vecConditions; // 0x378 | Schema_Atomic | Size: 0x18
 			// char m_vecConditions[0x18]; // 0x378 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_bEnabled) == 0x0, "m_bEnabled in CompMatPropertyMutator_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_nMutatorCommandType) == 0x4, "m_nMutatorCommandType in CompMatPropertyMutator_t should be at offset 0x4");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strInitWith_Container) == 0x8, "m_strInitWith_Container in CompMatPropertyMutator_t should be at offset 0x8");
@@ -91,5 +92,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_strDrawText_Font) == 0x370, "m_strDrawText_Font in CompMatPropertyMutator_t should be at offset 0x370");
 		static_assert(offsetof(CS2::compositematerialslib::CompMatPropertyMutator_t, m_vecConditions) == 0x378, "m_vecConditions in CompMatPropertyMutator_t should be at offset 0x378");
 		static_assert(sizeof(CS2::compositematerialslib::CompMatPropertyMutator_t) == 0x390, "CompMatPropertyMutator_t size should be 0x390");
+
+#endif
 	}
 }

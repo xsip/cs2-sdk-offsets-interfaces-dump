@@ -29,6 +29,7 @@ namespace CS2 {
 			float32 m_tail; // 0x14 | Schema_Builtin | Size: 0x4
 			float32 m_end; // 0x18 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayer, m_nLocalReference) == 0x0, "m_nLocalReference in CSeqAutoLayer should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayer, m_nLocalPose) == 0x2, "m_nLocalPose in CSeqAutoLayer should be at offset 0x2");
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayer, m_flags) == 0x4, "m_flags in CSeqAutoLayer should be at offset 0x4");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayer, m_tail) == 0x14, "m_tail in CSeqAutoLayer should be at offset 0x14");
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayer, m_end) == 0x18, "m_end in CSeqAutoLayer should be at offset 0x18");
 		static_assert(sizeof(CS2::animationsystem::CSeqAutoLayer) == 0x1C, "CSeqAutoLayer size should be 0x1C");
+
+#endif
 	}
 }

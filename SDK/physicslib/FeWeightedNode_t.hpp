@@ -23,8 +23,11 @@ namespace CS2 {
 			uint16_t nNode; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t nWeight; // 0x2 | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeWeightedNode_t, nNode) == 0x0, "nNode in FeWeightedNode_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeWeightedNode_t, nWeight) == 0x2, "nWeight in FeWeightedNode_t should be at offset 0x2");
 		static_assert(sizeof(CS2::physicslib::FeWeightedNode_t) == 0x4, "FeWeightedNode_t size should be 0x4");
+
+#endif
 	}
 }

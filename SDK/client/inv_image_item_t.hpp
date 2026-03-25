@@ -24,9 +24,12 @@ namespace CS2 {
 			GlobalTypes::QAngle angle; // 0xc | Schema_Atomic | Size: 0xc
 			GlobalTypes::CUtlString pose_sequence; // 0x18 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::inv_image_item_t, position) == 0x0, "position in inv_image_item_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::inv_image_item_t, angle) == 0xC, "angle in inv_image_item_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::inv_image_item_t, pose_sequence) == 0x18, "pose_sequence in inv_image_item_t should be at offset 0x18");
 		static_assert(sizeof(CS2::client::inv_image_item_t) == 0x20, "inv_image_item_t size should be 0x20");
+
+#endif
 	}
 }

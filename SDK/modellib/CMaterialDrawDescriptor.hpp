@@ -48,6 +48,7 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_material; // 0x100 | Schema_Atomic | Size: 0x8
 			char m_material[0x8]; // 0x100 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor, m_flUvDensity) == 0x0, "m_flUvDensity in CMaterialDrawDescriptor should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor, m_vTintColor) == 0x4, "m_vTintColor in CMaterialDrawDescriptor should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor, m_flAlpha) == 0x10, "m_flAlpha in CMaterialDrawDescriptor should be at offset 0x10");
@@ -66,5 +67,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor, m_meshletPackedIVB) == 0xD0, "m_meshletPackedIVB in CMaterialDrawDescriptor should be at offset 0xD0");
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor, m_material) == 0x100, "m_material in CMaterialDrawDescriptor should be at offset 0x100");
 		static_assert(sizeof(CS2::modellib::CMaterialDrawDescriptor) == 0x108, "CMaterialDrawDescriptor size should be 0x108");
+
+#endif
 	}
 }

@@ -62,6 +62,7 @@ namespace CS2 {
 			// char m_debugPartNames[0x18]; // 0x130 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_embeddedKeyvalues; // 0x148 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysXAggregateData_t, m_nFlags) == 0x0, "m_nFlags in VPhysXAggregateData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysXAggregateData_t, m_nRefCounter) == 0x2, "m_nRefCounter in VPhysXAggregateData_t should be at offset 0x2");
 		static_assert(offsetof(CS2::modellib::VPhysXAggregateData_t, m_bonesHash) == 0x8, "m_bonesHash in VPhysXAggregateData_t should be at offset 0x8");
@@ -80,5 +81,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::VPhysXAggregateData_t, m_debugPartNames) == 0x130, "m_debugPartNames in VPhysXAggregateData_t should be at offset 0x130");
 		static_assert(offsetof(CS2::modellib::VPhysXAggregateData_t, m_embeddedKeyvalues) == 0x148, "m_embeddedKeyvalues in VPhysXAggregateData_t should be at offset 0x148");
 		static_assert(sizeof(CS2::modellib::VPhysXAggregateData_t) == 0x150, "VPhysXAggregateData_t size should be 0x150");
+
+#endif
 	}
 }

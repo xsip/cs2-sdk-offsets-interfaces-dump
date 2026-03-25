@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_flRadiusScale; // 0x228 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_flFlattenStrength) == 0x220, "m_flFlattenStrength in C_OP_RenderFlattenGrass should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_nStrengthFieldOverride) == 0x224, "m_nStrengthFieldOverride in C_OP_RenderFlattenGrass should be at offset 0x224");
 		static_assert(offsetof(CS2::particles::C_OP_RenderFlattenGrass, m_flRadiusScale) == 0x228, "m_flRadiusScale in C_OP_RenderFlattenGrass should be at offset 0x228");
 		static_assert(sizeof(CS2::particles::C_OP_RenderFlattenGrass) == 0x230, "C_OP_RenderFlattenGrass size should be 0x230");
+
+#endif
 	}
 }

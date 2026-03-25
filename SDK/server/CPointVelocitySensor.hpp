@@ -37,6 +37,7 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_Velocity; // 0x4c8 | Schema_Atomic | Size: 0x20
 			char m_Velocity[0x20]; // 0x4c8 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointVelocitySensor, m_hTargetEntity) == 0x4A8, "m_hTargetEntity in CPointVelocitySensor should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointVelocitySensor, m_vecAxis) == 0x4AC, "m_vecAxis in CPointVelocitySensor should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CPointVelocitySensor, m_bEnabled) == 0x4B8, "m_bEnabled in CPointVelocitySensor should be at offset 0x4B8");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointVelocitySensor, m_flAvgInterval) == 0x4C0, "m_flAvgInterval in CPointVelocitySensor should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CPointVelocitySensor, m_Velocity) == 0x4C8, "m_Velocity in CPointVelocitySensor should be at offset 0x4C8");
 		static_assert(sizeof(CS2::server::CPointVelocitySensor) == 0x4E8, "CPointVelocitySensor size should be 0x4E8");
+
+#endif
 	}
 }

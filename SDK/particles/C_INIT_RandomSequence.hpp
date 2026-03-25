@@ -31,11 +31,14 @@ namespace CS2 {
 			// char m_WeightedList[0x18]; // 0x1e8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSequence, m_nSequenceMin) == 0x1D8, "m_nSequenceMin in C_INIT_RandomSequence should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSequence, m_nSequenceMax) == 0x1DC, "m_nSequenceMax in C_INIT_RandomSequence should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSequence, m_bShuffle) == 0x1E0, "m_bShuffle in C_INIT_RandomSequence should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSequence, m_bLinear) == 0x1E1, "m_bLinear in C_INIT_RandomSequence should be at offset 0x1E1");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSequence, m_WeightedList) == 0x1E8, "m_WeightedList in C_INIT_RandomSequence should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomSequence) == 0x208, "C_INIT_RandomSequence size should be 0x208");
+
+#endif
 	}
 }

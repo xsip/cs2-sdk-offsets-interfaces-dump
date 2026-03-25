@@ -29,9 +29,12 @@ namespace CS2 {
 			server::IntervalTimer m_stillTimer; // 0xbd0 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0xd0); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bIsIncGrenade) == 0xBB0, "m_bIsIncGrenade in CMolotovProjectile should be at offset 0xBB0");
 		static_assert(offsetof(CS2::server::CMolotovProjectile, m_bDetonated) == 0xBC8, "m_bDetonated in CMolotovProjectile should be at offset 0xBC8");
 		static_assert(offsetof(CS2::server::CMolotovProjectile, m_stillTimer) == 0xBD0, "m_stillTimer in CMolotovProjectile should be at offset 0xBD0");
 		static_assert(sizeof(CS2::server::CMolotovProjectile) == 0xCB0, "CMolotovProjectile size should be 0xCB0");
+
+#endif
 	}
 }

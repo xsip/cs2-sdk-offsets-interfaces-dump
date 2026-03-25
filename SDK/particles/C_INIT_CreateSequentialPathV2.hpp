@@ -33,6 +33,7 @@ namespace CS2 {
 			particles::CPathParameters m_PathParams; // 0x4c0 | Schema_DeclaredClass | Size: 0x40
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSequentialPathV2, m_fMaxDistance) == 0x1D8, "m_fMaxDistance in C_INIT_CreateSequentialPathV2 should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSequentialPathV2, m_flNumToAssign) == 0x348, "m_flNumToAssign in C_INIT_CreateSequentialPathV2 should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSequentialPathV2, m_bLoop) == 0x4B8, "m_bLoop in C_INIT_CreateSequentialPathV2 should be at offset 0x4B8");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSequentialPathV2, m_bSaveOffset) == 0x4BA, "m_bSaveOffset in C_INIT_CreateSequentialPathV2 should be at offset 0x4BA");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSequentialPathV2, m_PathParams) == 0x4C0, "m_PathParams in C_INIT_CreateSequentialPathV2 should be at offset 0x4C0");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateSequentialPathV2) == 0x510, "C_INIT_CreateSequentialPathV2 size should be 0x510");
+
+#endif
 	}
 }

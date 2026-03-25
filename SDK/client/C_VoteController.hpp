@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bIsYesNoVote; // 0x63a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_VoteController, m_iActiveIssueIndex) == 0x618, "m_iActiveIssueIndex in C_VoteController should be at offset 0x618");
 		static_assert(offsetof(CS2::client::C_VoteController, m_iOnlyTeamToVote) == 0x61C, "m_iOnlyTeamToVote in C_VoteController should be at offset 0x61C");
 		static_assert(offsetof(CS2::client::C_VoteController, m_nVoteOptionCount) == 0x620, "m_nVoteOptionCount in C_VoteController should be at offset 0x620");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_VoteController, m_bTypeDirty) == 0x639, "m_bTypeDirty in C_VoteController should be at offset 0x639");
 		static_assert(offsetof(CS2::client::C_VoteController, m_bIsYesNoVote) == 0x63A, "m_bIsYesNoVote in C_VoteController should be at offset 0x63A");
 		static_assert(sizeof(CS2::client::C_VoteController) == 0x640, "C_VoteController size should be 0x640");
+
+#endif
 	}
 }

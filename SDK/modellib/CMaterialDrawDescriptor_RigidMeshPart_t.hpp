@@ -25,10 +25,13 @@ namespace CS2 {
 			uint32_t m_nStartIndexOffset; // 0x4 | Schema_Builtin | Size: 0x4
 			uint32_t m_nPrimitiveCount; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nRigidBLASIndex) == 0x0, "m_nRigidBLASIndex in CMaterialDrawDescriptor::RigidMeshPart_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nBoneIndex) == 0x2, "m_nBoneIndex in CMaterialDrawDescriptor::RigidMeshPart_t should be at offset 0x2");
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nStartIndexOffset) == 0x4, "m_nStartIndexOffset in CMaterialDrawDescriptor::RigidMeshPart_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::CMaterialDrawDescriptor_RigidMeshPart_t, m_nPrimitiveCount) == 0x8, "m_nPrimitiveCount in CMaterialDrawDescriptor::RigidMeshPart_t should be at offset 0x8");
 		static_assert(sizeof(CS2::modellib::CMaterialDrawDescriptor_RigidMeshPart_t) == 0xC, "CMaterialDrawDescriptor::RigidMeshPart_t size should be 0xC");
+
+#endif
 	}
 }

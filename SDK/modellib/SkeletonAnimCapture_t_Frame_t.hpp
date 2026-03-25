@@ -37,6 +37,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_FlexControllerWeights; // 0xa8 | Schema_Atomic | Size: 0x18
 			// char m_FlexControllerWeights[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Frame_t, m_flTime) == 0x0, "m_flTime in SkeletonAnimCapture_t::Frame_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Frame_t, m_Stamp) == 0x4, "m_Stamp in SkeletonAnimCapture_t::Frame_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Frame_t, m_Transform) == 0x20, "m_Transform in SkeletonAnimCapture_t::Frame_t should be at offset 0x20");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Frame_t, m_FeModelPos) == 0x90, "m_FeModelPos in SkeletonAnimCapture_t::Frame_t should be at offset 0x90");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_Frame_t, m_FlexControllerWeights) == 0xA8, "m_FlexControllerWeights in SkeletonAnimCapture_t::Frame_t should be at offset 0xA8");
 		static_assert(sizeof(CS2::modellib::SkeletonAnimCapture_t_Frame_t) == 0xC0, "SkeletonAnimCapture_t::Frame_t size should be 0xC0");
+
+#endif
 	}
 }

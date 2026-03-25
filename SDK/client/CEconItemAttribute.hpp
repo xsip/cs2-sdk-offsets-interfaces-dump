@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bSetBonus; // 0x40 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CEconItemAttribute, m_iAttributeDefinitionIndex) == 0x30, "m_iAttributeDefinitionIndex in CEconItemAttribute should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CEconItemAttribute, m_flValue) == 0x34, "m_flValue in CEconItemAttribute should be at offset 0x34");
 		static_assert(offsetof(CS2::client::CEconItemAttribute, m_flInitialValue) == 0x38, "m_flInitialValue in CEconItemAttribute should be at offset 0x38");
 		static_assert(offsetof(CS2::client::CEconItemAttribute, m_nRefundableCurrency) == 0x3C, "m_nRefundableCurrency in CEconItemAttribute should be at offset 0x3C");
 		static_assert(offsetof(CS2::client::CEconItemAttribute, m_bSetBonus) == 0x40, "m_bSetBonus in CEconItemAttribute should be at offset 0x40");
 		static_assert(sizeof(CS2::client::CEconItemAttribute) == 0x48, "CEconItemAttribute size should be 0x48");
+
+#endif
 	}
 }

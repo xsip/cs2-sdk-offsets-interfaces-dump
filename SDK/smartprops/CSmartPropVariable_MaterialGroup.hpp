@@ -26,8 +26,11 @@ namespace CS2 {
 			char m_sModelName[0xe0]; // 0x38 | Schema_Atomic | Size: 0xe0
 			GlobalTypes::CModelMaterialGroupName m_DefaultValue; // 0x118 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_MaterialGroup, m_sModelName) == 0x38, "m_sModelName in CSmartPropVariable_MaterialGroup should be at offset 0x38");
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_MaterialGroup, m_DefaultValue) == 0x118, "m_DefaultValue in CSmartPropVariable_MaterialGroup should be at offset 0x118");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_MaterialGroup) == 0x120, "CSmartPropVariable_MaterialGroup size should be 0x120");
+
+#endif
 	}
 }

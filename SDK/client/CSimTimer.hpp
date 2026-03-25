@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			float32 m_flInterval; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSimTimer, m_flInterval) == 0x8, "m_flInterval in CSimTimer should be at offset 0x8");
 		static_assert(sizeof(CS2::client::CSimTimer) == 0xC, "CSimTimer size should be 0xC");
+
+#endif
 	}
 }

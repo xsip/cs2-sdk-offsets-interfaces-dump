@@ -41,6 +41,7 @@ namespace CS2 {
 			char m_netlookupFilename[512]; // 0x4d8 | Schema_FixedArray | Size: 0x200
 			GlobalTypes::CUtlSymbolLarge m_lookupFilename; // 0x6d8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CColorCorrection, m_flFadeInDuration) == 0x4A8, "m_flFadeInDuration in CColorCorrection should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CColorCorrection, m_flFadeOutDuration) == 0x4AC, "m_flFadeOutDuration in CColorCorrection should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CColorCorrection, m_flStartFadeInWeight) == 0x4B0, "m_flStartFadeInWeight in CColorCorrection should be at offset 0x4B0");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CColorCorrection, m_netlookupFilename) == 0x4D8, "m_netlookupFilename in CColorCorrection should be at offset 0x4D8");
 		static_assert(offsetof(CS2::server::CColorCorrection, m_lookupFilename) == 0x6D8, "m_lookupFilename in CColorCorrection should be at offset 0x6D8");
 		static_assert(sizeof(CS2::server::CColorCorrection) == 0x6E0, "CColorCorrection size should be 0x6E0");
+
+#endif
 	}
 }

@@ -29,10 +29,13 @@ namespace CS2 {
 			float32 m_flSpinStrength; // 0x240 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToYaw, m_TransformInput) == 0x1D0, "m_TransformInput in C_OP_RemapTransformOrientationToYaw should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToYaw, m_nFieldOutput) == 0x238, "m_nFieldOutput in C_OP_RemapTransformOrientationToYaw should be at offset 0x238");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToYaw, m_flRotOffset) == 0x23C, "m_flRotOffset in C_OP_RemapTransformOrientationToYaw should be at offset 0x23C");
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformOrientationToYaw, m_flSpinStrength) == 0x240, "m_flSpinStrength in C_OP_RemapTransformOrientationToYaw should be at offset 0x240");
 		static_assert(sizeof(CS2::particles::C_OP_RemapTransformOrientationToYaw) == 0x248, "C_OP_RemapTransformOrientationToYaw size should be 0x248");
+
+#endif
 	}
 }

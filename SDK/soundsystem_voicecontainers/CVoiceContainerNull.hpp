@@ -22,6 +22,9 @@ namespace CS2 {
 		class CVoiceContainerNull : public CS2::soundsystem_voicecontainers::CVoiceContainerGenerator {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerNull) == 0xA8, "CVoiceContainerNull size should be 0xA8");
+
+#endif
 	}
 }

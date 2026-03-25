@@ -29,10 +29,13 @@ namespace CS2 {
 			bool m_bNormalize; // 0xf44 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_InputVec1) == 0x1D0, "m_InputVec1 in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_InputVec2) == 0x888, "m_InputVec2 in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0x888");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_nFieldOutput) == 0xF40, "m_nFieldOutput in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0xF40");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector, m_bNormalize) == 0xF44, "m_bNormalize in C_OP_RemapCrossProductOfTwoVectorsToVector should be at offset 0xF44");
 		static_assert(sizeof(CS2::particles::C_OP_RemapCrossProductOfTwoVectorsToVector) == 0xF48, "C_OP_RemapCrossProductOfTwoVectorsToVector size should be 0xF48");
+
+#endif
 	}
 }

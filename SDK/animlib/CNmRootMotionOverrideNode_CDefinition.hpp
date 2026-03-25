@@ -31,6 +31,7 @@ namespace CS2 {
 			animlib::CNmBitFlags m_overrideFlags; // 0x28 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmRootMotionOverrideNode_CDefinition, m_desiredMovingVelocityNodeIdx) == 0x18, "m_desiredMovingVelocityNodeIdx in CNmRootMotionOverrideNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmRootMotionOverrideNode_CDefinition, m_desiredFacingDirectionNodeIdx) == 0x1A, "m_desiredFacingDirectionNodeIdx in CNmRootMotionOverrideNode::CDefinition should be at offset 0x1A");
 		static_assert(offsetof(CS2::animlib::CNmRootMotionOverrideNode_CDefinition, m_linearVelocityLimitNodeIdx) == 0x1C, "m_linearVelocityLimitNodeIdx in CNmRootMotionOverrideNode::CDefinition should be at offset 0x1C");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmRootMotionOverrideNode_CDefinition, m_maxAngularVelocityRadians) == 0x24, "m_maxAngularVelocityRadians in CNmRootMotionOverrideNode::CDefinition should be at offset 0x24");
 		static_assert(offsetof(CS2::animlib::CNmRootMotionOverrideNode_CDefinition, m_overrideFlags) == 0x28, "m_overrideFlags in CNmRootMotionOverrideNode::CDefinition should be at offset 0x28");
 		static_assert(sizeof(CS2::animlib::CNmRootMotionOverrideNode_CDefinition) == 0x30, "CNmRootMotionOverrideNode::CDefinition size should be 0x30");
+
+#endif
 	}
 }

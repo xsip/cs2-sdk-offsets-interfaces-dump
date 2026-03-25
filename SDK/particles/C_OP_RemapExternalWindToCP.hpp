@@ -29,11 +29,14 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nOutVectorField; // 0x89c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nCP) == 0x1D8, "m_nCP in C_OP_RemapExternalWindToCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nCPOutput) == 0x1DC, "m_nCPOutput in C_OP_RemapExternalWindToCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_vecScale) == 0x1E0, "m_vecScale in C_OP_RemapExternalWindToCP should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_bSetMagnitude) == 0x898, "m_bSetMagnitude in C_OP_RemapExternalWindToCP should be at offset 0x898");
 		static_assert(offsetof(CS2::particles::C_OP_RemapExternalWindToCP, m_nOutVectorField) == 0x89C, "m_nOutVectorField in C_OP_RemapExternalWindToCP should be at offset 0x89C");
 		static_assert(sizeof(CS2::particles::C_OP_RemapExternalWindToCP) == 0x8A0, "C_OP_RemapExternalWindToCP size should be 0x8A0");
+
+#endif
 	}
 }

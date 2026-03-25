@@ -50,6 +50,7 @@ namespace CS2 {
 			char m_PathNodes_RadiusScale[0x18]; // 0x6d0 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x30); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PathParticleRope, m_bStartActive) == 0x610, "m_bStartActive in C_PathParticleRope should be at offset 0x610");
 		static_assert(offsetof(CS2::client::C_PathParticleRope, m_flMaxSimulationTime) == 0x614, "m_flMaxSimulationTime in C_PathParticleRope should be at offset 0x614");
 		static_assert(offsetof(CS2::client::C_PathParticleRope, m_iszEffectName) == 0x618, "m_iszEffectName in C_PathParticleRope should be at offset 0x618");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PathParticleRope, m_PathNodes_PinEnabled) == 0x6B8, "m_PathNodes_PinEnabled in C_PathParticleRope should be at offset 0x6B8");
 		static_assert(offsetof(CS2::client::C_PathParticleRope, m_PathNodes_RadiusScale) == 0x6D0, "m_PathNodes_RadiusScale in C_PathParticleRope should be at offset 0x6D0");
 		static_assert(sizeof(CS2::client::C_PathParticleRope) == 0x718, "C_PathParticleRope size should be 0x718");
+
+#endif
 	}
 }

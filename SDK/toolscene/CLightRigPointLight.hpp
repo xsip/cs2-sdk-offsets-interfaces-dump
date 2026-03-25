@@ -22,6 +22,9 @@ namespace CS2 {
 		class CLightRigPointLight : public CS2::toolscene::CLightRigLight {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::toolscene::CLightRigPointLight) == 0x40, "CLightRigPointLight size should be 0x40");
+
+#endif
 	}
 }

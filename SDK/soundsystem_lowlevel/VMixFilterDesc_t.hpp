@@ -29,6 +29,7 @@ namespace CS2 {
 			float32 m_flCutoffFreq; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flQ; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFilterDesc_t, m_nFilterType) == 0x0, "m_nFilterType in VMixFilterDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFilterDesc_t, m_nFilterSlope) == 0x2, "m_nFilterSlope in VMixFilterDesc_t should be at offset 0x2");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFilterDesc_t, m_bEnabled) == 0x3, "m_bEnabled in VMixFilterDesc_t should be at offset 0x3");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFilterDesc_t, m_flCutoffFreq) == 0x8, "m_flCutoffFreq in VMixFilterDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFilterDesc_t, m_flQ) == 0xC, "m_flQ in VMixFilterDesc_t should be at offset 0xC");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixFilterDesc_t) == 0x10, "VMixFilterDesc_t size should be 0x10");
+
+#endif
 	}
 }

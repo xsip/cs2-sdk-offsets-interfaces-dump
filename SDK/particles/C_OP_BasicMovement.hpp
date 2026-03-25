@@ -31,11 +31,14 @@ namespace CS2 {
 			bool m_bUseNewCode; // 0xe54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_BasicMovement, m_Gravity) == 0x1D0, "m_Gravity in C_OP_BasicMovement should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_BasicMovement, m_fDrag) == 0x888, "m_fDrag in C_OP_BasicMovement should be at offset 0x888");
 		static_assert(offsetof(CS2::particles::C_OP_BasicMovement, m_massControls) == 0x9F8, "m_massControls in C_OP_BasicMovement should be at offset 0x9F8");
 		static_assert(offsetof(CS2::particles::C_OP_BasicMovement, m_nMaxConstraintPasses) == 0xE50, "m_nMaxConstraintPasses in C_OP_BasicMovement should be at offset 0xE50");
 		static_assert(offsetof(CS2::particles::C_OP_BasicMovement, m_bUseNewCode) == 0xE54, "m_bUseNewCode in C_OP_BasicMovement should be at offset 0xE54");
 		static_assert(sizeof(CS2::particles::C_OP_BasicMovement) == 0xE58, "C_OP_BasicMovement size should be 0xE58");
+
+#endif
 	}
 }

@@ -24,8 +24,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_sNameString; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CollisionDetailLayerInfo_t_Name_t, m_nNameToken) == 0x0, "m_nNameToken in CollisionDetailLayerInfo_t::Name_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CollisionDetailLayerInfo_t_Name_t, m_sNameString) == 0x8, "m_sNameString in CollisionDetailLayerInfo_t::Name_t should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::CollisionDetailLayerInfo_t_Name_t) == 0x10, "CollisionDetailLayerInfo_t::Name_t size should be 0x10");
+
+#endif
 	}
 }

@@ -67,6 +67,7 @@ namespace CS2 {
 			float32 m_projectionLinearTolerance; // 0xf0 | Schema_Builtin | Size: 0x4
 			float32 m_projectionAngularTolerance; // 0xf4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysXConstraintParams_t, m_nType) == 0x0, "m_nType in VPhysXConstraintParams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysXConstraintParams_t, m_nTranslateMotion) == 0x1, "m_nTranslateMotion in VPhysXConstraintParams_t should be at offset 0x1");
 		static_assert(offsetof(CS2::modellib::VPhysXConstraintParams_t, m_nRotateMotion) == 0x2, "m_nRotateMotion in VPhysXConstraintParams_t should be at offset 0x2");
@@ -114,5 +115,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::VPhysXConstraintParams_t, m_projectionLinearTolerance) == 0xF0, "m_projectionLinearTolerance in VPhysXConstraintParams_t should be at offset 0xF0");
 		static_assert(offsetof(CS2::modellib::VPhysXConstraintParams_t, m_projectionAngularTolerance) == 0xF4, "m_projectionAngularTolerance in VPhysXConstraintParams_t should be at offset 0xF4");
 		static_assert(sizeof(CS2::modellib::VPhysXConstraintParams_t) == 0xF8, "VPhysXConstraintParams_t size should be 0xF8");
+
+#endif
 	}
 }

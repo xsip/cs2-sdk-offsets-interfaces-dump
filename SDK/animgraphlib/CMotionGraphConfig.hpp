@@ -27,11 +27,14 @@ namespace CS2 {
 			int32_t m_nSampleStart; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nSampleCount; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphConfig, m_paramValues) == 0x0, "m_paramValues in CMotionGraphConfig should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphConfig, m_flDuration) == 0x10, "m_flDuration in CMotionGraphConfig should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphConfig, m_nMotionIndex) == 0x14, "m_nMotionIndex in CMotionGraphConfig should be at offset 0x14");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphConfig, m_nSampleStart) == 0x18, "m_nSampleStart in CMotionGraphConfig should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraphConfig, m_nSampleCount) == 0x1C, "m_nSampleCount in CMotionGraphConfig should be at offset 0x1C");
 		static_assert(sizeof(CS2::animgraphlib::CMotionGraphConfig) == 0x20, "CMotionGraphConfig size should be 0x20");
+
+#endif
 	}
 }

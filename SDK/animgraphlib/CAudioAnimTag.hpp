@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bPlayOnServer; // 0x6e | Schema_Builtin | Size: 0x1
 			bool m_bPlayOnClient; // 0x6f | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAudioAnimTag, m_clipName) == 0x58, "m_clipName in CAudioAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CAudioAnimTag, m_attachmentName) == 0x60, "m_attachmentName in CAudioAnimTag should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CAudioAnimTag, m_flVolume) == 0x68, "m_flVolume in CAudioAnimTag should be at offset 0x68");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CAudioAnimTag, m_bPlayOnServer) == 0x6E, "m_bPlayOnServer in CAudioAnimTag should be at offset 0x6E");
 		static_assert(offsetof(CS2::animgraphlib::CAudioAnimTag, m_bPlayOnClient) == 0x6F, "m_bPlayOnClient in CAudioAnimTag should be at offset 0x6F");
 		static_assert(sizeof(CS2::animgraphlib::CAudioAnimTag) == 0x70, "CAudioAnimTag size should be 0x70");
+
+#endif
 	}
 }

@@ -28,6 +28,7 @@ namespace CS2 {
 			GlobalTypes::Vector target_nudge; // 0x24 | Schema_Atomic | Size: 0xc
 			float32 orbit_distance; // 0x30 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::inv_image_camera_t, angle) == 0x0, "angle in inv_image_camera_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::inv_image_camera_t, fov) == 0xC, "fov in inv_image_camera_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::inv_image_camera_t, znear) == 0x10, "znear in inv_image_camera_t should be at offset 0x10");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::inv_image_camera_t, target_nudge) == 0x24, "target_nudge in inv_image_camera_t should be at offset 0x24");
 		static_assert(offsetof(CS2::client::inv_image_camera_t, orbit_distance) == 0x30, "orbit_distance in inv_image_camera_t should be at offset 0x30");
 		static_assert(sizeof(CS2::client::inv_image_camera_t) == 0x34, "inv_image_camera_t size should be 0x34");
+
+#endif
 	}
 }

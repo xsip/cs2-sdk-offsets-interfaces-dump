@@ -34,6 +34,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_GoalDamping; // 0x70 | Schema_Atomic | Size: 0x18
 			// char m_GoalDamping[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CFeMorphLayer, m_Name) == 0x0, "m_Name in CFeMorphLayer should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CFeMorphLayer, m_nNameHash) == 0x8, "m_nNameHash in CFeMorphLayer should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::CFeMorphLayer, m_Nodes) == 0x10, "m_Nodes in CFeMorphLayer should be at offset 0x10");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::CFeMorphLayer, m_GoalStrength) == 0x58, "m_GoalStrength in CFeMorphLayer should be at offset 0x58");
 		static_assert(offsetof(CS2::physicslib::CFeMorphLayer, m_GoalDamping) == 0x70, "m_GoalDamping in CFeMorphLayer should be at offset 0x70");
 		static_assert(sizeof(CS2::physicslib::CFeMorphLayer) == 0x88, "CFeMorphLayer size should be 0x88");
+
+#endif
 	}
 }

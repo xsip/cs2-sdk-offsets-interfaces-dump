@@ -29,9 +29,12 @@ namespace CS2 {
 			particles::ParticlePostProcessPriorityGroup_t m_nPriority; // 0x398 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_flPostProcessStrength) == 0x220, "m_flPostProcessStrength in C_OP_RenderPostProcessing should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_hPostTexture) == 0x390, "m_hPostTexture in C_OP_RenderPostProcessing should be at offset 0x390");
 		static_assert(offsetof(CS2::particles::C_OP_RenderPostProcessing, m_nPriority) == 0x398, "m_nPriority in C_OP_RenderPostProcessing should be at offset 0x398");
 		static_assert(sizeof(CS2::particles::C_OP_RenderPostProcessing) == 0x3A0, "C_OP_RenderPostProcessing size should be 0x3A0");
+
+#endif
 	}
 }

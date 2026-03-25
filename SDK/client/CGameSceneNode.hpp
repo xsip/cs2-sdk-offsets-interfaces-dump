@@ -62,6 +62,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vRenderOrigin; // 0x134 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_nodeToWorld) == 0x10, "m_nodeToWorld in CGameSceneNode should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_pOwner) == 0x30, "m_pOwner in CGameSceneNode should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_pParent) == 0x38, "m_pParent in CGameSceneNode should be at offset 0x38");
@@ -90,5 +91,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_flClientLocalScale) == 0x130, "m_flClientLocalScale in CGameSceneNode should be at offset 0x130");
 		static_assert(offsetof(CS2::client::CGameSceneNode, m_vRenderOrigin) == 0x134, "m_vRenderOrigin in CGameSceneNode should be at offset 0x134");
 		static_assert(sizeof(CS2::client::CGameSceneNode) == 0x150, "CGameSceneNode size should be 0x150");
+
+#endif
 	}
 }

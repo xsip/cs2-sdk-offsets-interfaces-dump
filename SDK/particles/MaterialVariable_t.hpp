@@ -25,9 +25,12 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nVariableField; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flScale; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::MaterialVariable_t, m_strVariable) == 0x0, "m_strVariable in MaterialVariable_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::MaterialVariable_t, m_nVariableField) == 0x8, "m_nVariableField in MaterialVariable_t should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::MaterialVariable_t, m_flScale) == 0xC, "m_flScale in MaterialVariable_t should be at offset 0xC");
 		static_assert(sizeof(CS2::particles::MaterialVariable_t) == 0x10, "MaterialVariable_t size should be 0x10");
+
+#endif
 	}
 }

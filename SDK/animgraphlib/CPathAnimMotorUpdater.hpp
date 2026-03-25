@@ -22,6 +22,9 @@ namespace CS2 {
 		class CPathAnimMotorUpdater : public CS2::animgraphlib::CPathAnimMotorUpdaterBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animgraphlib::CPathAnimMotorUpdater) == 0x28, "CPathAnimMotorUpdater size should be 0x28");
+
+#endif
 	}
 }

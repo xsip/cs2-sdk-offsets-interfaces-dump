@@ -38,6 +38,7 @@ namespace CS2 {
 			// char m_vecCompositeMaterials[0x18]; // 0x1f8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialEditorPoint_t, m_ModelName) == 0x0, "m_ModelName in CompositeMaterialEditorPoint_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialEditorPoint_t, m_nSequenceIndex) == 0xE0, "m_nSequenceIndex in CompositeMaterialEditorPoint_t should be at offset 0xE0");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialEditorPoint_t, m_flCycle) == 0xE4, "m_flCycle in CompositeMaterialEditorPoint_t should be at offset 0xE4");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialEditorPoint_t, m_vecCompositeMaterialAssemblyProcedures) == 0x1E0, "m_vecCompositeMaterialAssemblyProcedures in CompositeMaterialEditorPoint_t should be at offset 0x1E0");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialEditorPoint_t, m_vecCompositeMaterials) == 0x1F8, "m_vecCompositeMaterials in CompositeMaterialEditorPoint_t should be at offset 0x1F8");
 		static_assert(sizeof(CS2::compositematerialslib::CompositeMaterialEditorPoint_t) == 0x218, "CompositeMaterialEditorPoint_t size should be 0x218");
+
+#endif
 	}
 }

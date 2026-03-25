@@ -43,6 +43,7 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x8f8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_DistanceBetweenTransforms should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_TransformStart) == 0x1D8, "m_TransformStart in C_OP_DistanceBetweenTransforms should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_TransformEnd) == 0x240, "m_TransformEnd in C_OP_DistanceBetweenTransforms should be at offset 0x240");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_bLOS) == 0x8F4, "m_bLOS in C_OP_DistanceBetweenTransforms should be at offset 0x8F4");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenTransforms, m_nSetMethod) == 0x8F8, "m_nSetMethod in C_OP_DistanceBetweenTransforms should be at offset 0x8F8");
 		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenTransforms) == 0x900, "C_OP_DistanceBetweenTransforms size should be 0x900");
+
+#endif
 	}
 }

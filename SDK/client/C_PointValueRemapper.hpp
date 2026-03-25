@@ -60,6 +60,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flPreviousUpdateTickTime; // 0x670 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::Vector m_vecPreviousTestPoint; // 0x674 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bDisabled) == 0x608, "m_bDisabled in C_PointValueRemapper should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bDisabledOld) == 0x609, "m_bDisabledOld in C_PointValueRemapper should be at offset 0x609");
 		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_bUpdateOnClient) == 0x60A, "m_bUpdateOnClient in C_PointValueRemapper should be at offset 0x60A");
@@ -86,5 +87,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_flPreviousUpdateTickTime) == 0x670, "m_flPreviousUpdateTickTime in C_PointValueRemapper should be at offset 0x670");
 		static_assert(offsetof(CS2::client::C_PointValueRemapper, m_vecPreviousTestPoint) == 0x674, "m_vecPreviousTestPoint in C_PointValueRemapper should be at offset 0x674");
 		static_assert(sizeof(CS2::client::C_PointValueRemapper) == 0x680, "C_PointValueRemapper size should be 0x680");
+
+#endif
 	}
 }

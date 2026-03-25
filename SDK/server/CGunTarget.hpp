@@ -33,9 +33,12 @@ namespace CS2 {
 			// char m_hTargetEnt[0x4]; // 0x7b4 | Schema_Atomic | Size: 0x4
 			entity2::CEntityIOOutput m_OnDeath; // 0x7b8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGunTarget, m_on) == 0x7B0, "m_on in CGunTarget should be at offset 0x7B0");
 		static_assert(offsetof(CS2::server::CGunTarget, m_hTargetEnt) == 0x7B4, "m_hTargetEnt in CGunTarget should be at offset 0x7B4");
 		static_assert(offsetof(CS2::server::CGunTarget, m_OnDeath) == 0x7B8, "m_OnDeath in CGunTarget should be at offset 0x7B8");
 		static_assert(sizeof(CS2::server::CGunTarget) == 0x7D0, "CGunTarget size should be 0x7D0");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x8c);
 			int32_t m_nInitialSeed; // 0x9c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CScriptUniformRandomStream, m_hScriptScope) == 0x8, "m_hScriptScope in CScriptUniformRandomStream should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CScriptUniformRandomStream, m_nInitialSeed) == 0x9C, "m_nInitialSeed in CScriptUniformRandomStream should be at offset 0x9C");
 		static_assert(sizeof(CS2::client::CScriptUniformRandomStream) == 0xA0, "CScriptUniformRandomStream size should be 0xA0");
+
+#endif
 	}
 }

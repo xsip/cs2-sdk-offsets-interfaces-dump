@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bOffsetExistingPos; // 0x80a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_nComponent1) == 0x1D8, "m_nComponent1 in C_INIT_CreateInEpitrochoid should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_nComponent2) == 0x1DC, "m_nComponent2 in C_INIT_CreateInEpitrochoid should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_TransformInput) == 0x1E0, "m_TransformInput in C_INIT_CreateInEpitrochoid should be at offset 0x1E0");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bUseLocalCoords) == 0x809, "m_bUseLocalCoords in C_INIT_CreateInEpitrochoid should be at offset 0x809");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateInEpitrochoid, m_bOffsetExistingPos) == 0x80A, "m_bOffsetExistingPos in C_INIT_CreateInEpitrochoid should be at offset 0x80A");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateInEpitrochoid) == 0x810, "C_INIT_CreateInEpitrochoid size should be 0x810");
+
+#endif
 	}
 }

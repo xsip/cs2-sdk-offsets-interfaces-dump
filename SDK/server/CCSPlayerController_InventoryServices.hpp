@@ -38,6 +38,7 @@ namespace CS2 {
 			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::ServerAuthoritativeWeaponSlot_t> m_vecServerAuthoritativeWeaponSlots; // 0xf58 | Schema_Atomic | Size: 0x88
 			char m_vecServerAuthoritativeWeaponSlots[0x88]; // 0xf58 | Schema_Atomic | Size: 0x88
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_unMusicID) == 0x40, "m_unMusicID in CCSPlayerController_InventoryServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_rank) == 0x44, "m_rank in CCSPlayerController_InventoryServices should be at offset 0x44");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_nPersonaDataPublicLevel) == 0x5C, "m_nPersonaDataPublicLevel in CCSPlayerController_InventoryServices should be at offset 0x5C");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_unCurrentLoadoutHash) == 0xF50, "m_unCurrentLoadoutHash in CCSPlayerController_InventoryServices should be at offset 0xF50");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices, m_vecServerAuthoritativeWeaponSlots) == 0xF58, "m_vecServerAuthoritativeWeaponSlots in CCSPlayerController_InventoryServices should be at offset 0xF58");
 		static_assert(sizeof(CS2::server::CCSPlayerController_InventoryServices) == 0xFE0, "CCSPlayerController_InventoryServices size should be 0xFE0");
+
+#endif
 	}
 }

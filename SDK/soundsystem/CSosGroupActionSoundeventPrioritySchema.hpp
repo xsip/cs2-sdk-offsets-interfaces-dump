@@ -27,10 +27,13 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_bPriorityReadButDontContribute; // 0x20 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventPrioritySchema, m_priorityValue) == 0x8, "m_priorityValue in CSosGroupActionSoundeventPrioritySchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventPrioritySchema, m_priorityVolumeScalar) == 0x10, "m_priorityVolumeScalar in CSosGroupActionSoundeventPrioritySchema should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventPrioritySchema, m_priorityContributeButDontRead) == 0x18, "m_priorityContributeButDontRead in CSosGroupActionSoundeventPrioritySchema should be at offset 0x18");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionSoundeventPrioritySchema, m_bPriorityReadButDontContribute) == 0x20, "m_bPriorityReadButDontContribute in CSosGroupActionSoundeventPrioritySchema should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionSoundeventPrioritySchema) == 0x38, "CSosGroupActionSoundeventPrioritySchema size should be 0x38");
+
+#endif
 	}
 }

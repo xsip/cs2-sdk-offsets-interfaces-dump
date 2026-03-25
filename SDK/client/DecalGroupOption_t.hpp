@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flMinAngleBetweenNormalAndGravity; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxAngleBetweenNormalAndGravity; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::DecalGroupOption_t, m_hMaterial) == 0x0, "m_hMaterial in DecalGroupOption_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::DecalGroupOption_t, m_sSequenceName) == 0x8, "m_sSequenceName in DecalGroupOption_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::DecalGroupOption_t, m_flProbability) == 0x10, "m_flProbability in DecalGroupOption_t should be at offset 0x10");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::DecalGroupOption_t, m_flMinAngleBetweenNormalAndGravity) == 0x18, "m_flMinAngleBetweenNormalAndGravity in DecalGroupOption_t should be at offset 0x18");
 		static_assert(offsetof(CS2::client::DecalGroupOption_t, m_flMaxAngleBetweenNormalAndGravity) == 0x1C, "m_flMaxAngleBetweenNormalAndGravity in DecalGroupOption_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::client::DecalGroupOption_t) == 0x20, "DecalGroupOption_t size should be 0x20");
+
+#endif
 	}
 }

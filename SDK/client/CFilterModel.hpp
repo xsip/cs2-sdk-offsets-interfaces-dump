@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iFilterModel; // 0x640 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CFilterModel, m_iFilterModel) == 0x640, "m_iFilterModel in CFilterModel should be at offset 0x640");
 		static_assert(sizeof(CS2::client::CFilterModel) == 0x648, "CFilterModel size should be 0x648");
+
+#endif
 	}
 }

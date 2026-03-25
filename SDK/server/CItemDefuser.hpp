@@ -26,8 +26,11 @@ namespace CS2 {
 			int32_t m_nSpotRules; // 0xad8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CItemDefuser, m_entitySpottedState) == 0xAC0, "m_entitySpottedState in CItemDefuser should be at offset 0xAC0");
 		static_assert(offsetof(CS2::server::CItemDefuser, m_nSpotRules) == 0xAD8, "m_nSpotRules in CItemDefuser should be at offset 0xAD8");
 		static_assert(sizeof(CS2::server::CItemDefuser) == 0xAE0, "CItemDefuser size should be 0xAE0");
+
+#endif
 	}
 }

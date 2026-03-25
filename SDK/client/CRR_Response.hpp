@@ -37,6 +37,7 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbol m_recipientFilter; // 0x1ca | Schema_Atomic | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CRR_Response, m_Type) == 0x0, "m_Type in CRR_Response should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CRR_Response, m_szResponseName) == 0x1, "m_szResponseName in CRR_Response should be at offset 0x1");
 		static_assert(offsetof(CS2::client::CRR_Response, m_szMatchingRule) == 0xC1, "m_szMatchingRule in CRR_Response should be at offset 0xC1");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CRR_Response, m_Followup) == 0x198, "m_Followup in CRR_Response should be at offset 0x198");
 		static_assert(offsetof(CS2::client::CRR_Response, m_recipientFilter) == 0x1CA, "m_recipientFilter in CRR_Response should be at offset 0x1CA");
 		static_assert(sizeof(CS2::client::CRR_Response) == 0x1D0, "CRR_Response size should be 0x1D0");
+
+#endif
 	}
 }

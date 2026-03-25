@@ -29,10 +29,13 @@ namespace CS2 {
 			int32_t m_nComponent; // 0x248 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialTransformDirectionToRotation, m_TransformInput) == 0x1D8, "m_TransformInput in C_INIT_RemapInitialTransformDirectionToRotation should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialTransformDirectionToRotation, m_nFieldOutput) == 0x240, "m_nFieldOutput in C_INIT_RemapInitialTransformDirectionToRotation should be at offset 0x240");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialTransformDirectionToRotation, m_flOffsetRot) == 0x244, "m_flOffsetRot in C_INIT_RemapInitialTransformDirectionToRotation should be at offset 0x244");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapInitialTransformDirectionToRotation, m_nComponent) == 0x248, "m_nComponent in C_INIT_RemapInitialTransformDirectionToRotation should be at offset 0x248");
 		static_assert(sizeof(CS2::particles::C_INIT_RemapInitialTransformDirectionToRotation) == 0x250, "C_INIT_RemapInitialTransformDirectionToRotation size should be 0x250");
+
+#endif
 	}
 }

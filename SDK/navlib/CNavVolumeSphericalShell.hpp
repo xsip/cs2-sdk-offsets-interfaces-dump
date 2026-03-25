@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flRadiusInner; // 0x88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::navlib::CNavVolumeSphericalShell, m_flRadiusInner) == 0x88, "m_flRadiusInner in CNavVolumeSphericalShell should be at offset 0x88");
 		static_assert(sizeof(CS2::navlib::CNavVolumeSphericalShell) == 0x90, "CNavVolumeSphericalShell size should be 0x90");
+
+#endif
 	}
 }

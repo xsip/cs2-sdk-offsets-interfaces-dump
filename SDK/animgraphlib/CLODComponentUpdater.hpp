@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nServerLOD; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CLODComponentUpdater, m_nServerLOD) == 0x30, "m_nServerLOD in CLODComponentUpdater should be at offset 0x30");
 		static_assert(sizeof(CS2::animgraphlib::CLODComponentUpdater) == 0x38, "CLODComponentUpdater size should be 0x38");
+
+#endif
 	}
 }

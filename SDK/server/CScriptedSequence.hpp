@@ -123,6 +123,7 @@ namespace CS2 {
 			bool m_bSkipFadeIn; // 0x6e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszEntry) == 0x4A8, "m_iszEntry in CScriptedSequence should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPreIdle) == 0x4B0, "m_iszPreIdle in CScriptedSequence should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CScriptedSequence, m_iszPlay) == 0x4B8, "m_iszPlay in CScriptedSequence should be at offset 0x4B8");
@@ -201,5 +202,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CScriptedSequence, m_iPlayerDeathBehavior) == 0x6E4, "m_iPlayerDeathBehavior in CScriptedSequence should be at offset 0x6E4");
 		static_assert(offsetof(CS2::server::CScriptedSequence, m_bSkipFadeIn) == 0x6E8, "m_bSkipFadeIn in CScriptedSequence should be at offset 0x6E8");
 		static_assert(sizeof(CS2::server::CScriptedSequence) == 0x6F0, "CScriptedSequence size should be 0x6F0");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			pulse_runtime_lib::SignatureOutflow_Continue m_Out1; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::SignatureOutflow_Continue m_Out2; // 0x90 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams, m_Out1) == 0x48, "m_Out1 in CPulseCell_Test_MultiOutflow_WithParams should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams, m_Out2) == 0x90, "m_Out2 in CPulseCell_Test_MultiOutflow_WithParams should be at offset 0x90");
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams) == 0xD8, "CPulseCell_Test_MultiOutflow_WithParams size should be 0xD8");
+
+#endif
 	}
 }

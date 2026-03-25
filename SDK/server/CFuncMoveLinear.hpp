@@ -40,6 +40,7 @@ namespace CS2 {
 			bool m_bCreateNavObstacle; // 0x82a | Schema_Builtin | Size: 0x1
 			S2_PAD(0xd); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_authoredPosition) == 0x7B0, "m_authoredPosition in CFuncMoveLinear should be at offset 0x7B0");
 		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_angMoveEntitySpace) == 0x7B4, "m_angMoveEntitySpace in CFuncMoveLinear should be at offset 0x7B4");
 		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_vecMoveDirParentSpace) == 0x7C0, "m_vecMoveDirParentSpace in CFuncMoveLinear should be at offset 0x7C0");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bAllowMovableNavMeshDockingOnEntireEntity) == 0x829, "m_bAllowMovableNavMeshDockingOnEntireEntity in CFuncMoveLinear should be at offset 0x829");
 		static_assert(offsetof(CS2::server::CFuncMoveLinear, m_bCreateNavObstacle) == 0x82A, "m_bCreateNavObstacle in CFuncMoveLinear should be at offset 0x82A");
 		static_assert(sizeof(CS2::server::CFuncMoveLinear) == 0x838, "CFuncMoveLinear size should be 0x838");
+
+#endif
 	}
 }

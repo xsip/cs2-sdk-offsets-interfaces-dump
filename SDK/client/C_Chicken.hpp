@@ -44,6 +44,7 @@ namespace CS2 {
 			bool m_bIsPreviewModel; // 0x1890 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Chicken, m_hHolidayHatAddon) == 0x13A8, "m_hHolidayHatAddon in C_Chicken should be at offset 0x13A8");
 		static_assert(offsetof(CS2::client::C_Chicken, m_jumpedThisFrame) == 0x13AC, "m_jumpedThisFrame in C_Chicken should be at offset 0x13AC");
 		static_assert(offsetof(CS2::client::C_Chicken, m_leader) == 0x13B0, "m_leader in C_Chicken should be at offset 0x13B0");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_Chicken, m_hWaterWakeParticles) == 0x188C, "m_hWaterWakeParticles in C_Chicken should be at offset 0x188C");
 		static_assert(offsetof(CS2::client::C_Chicken, m_bIsPreviewModel) == 0x1890, "m_bIsPreviewModel in C_Chicken should be at offset 0x1890");
 		static_assert(sizeof(CS2::client::C_Chicken) == 0x18A0, "C_Chicken size should be 0x18A0");
+
+#endif
 	}
 }

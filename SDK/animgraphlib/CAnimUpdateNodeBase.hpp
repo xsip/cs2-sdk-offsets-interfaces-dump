@@ -28,9 +28,12 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_name; // 0x50 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateNodeBase, m_nodePath) == 0x18, "m_nodePath in CAnimUpdateNodeBase should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateNodeBase, m_networkMode) == 0x48, "m_networkMode in CAnimUpdateNodeBase should be at offset 0x48");
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateNodeBase, m_name) == 0x50, "m_name in CAnimUpdateNodeBase should be at offset 0x50");
 		static_assert(sizeof(CS2::animgraphlib::CAnimUpdateNodeBase) == 0x58, "CAnimUpdateNodeBase size should be 0x58");
+
+#endif
 	}
 }

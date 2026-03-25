@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flFrequency; // 0xa8 | Schema_Builtin | Size: 0x4
 			float32 m_flDecayTime; // 0xac | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave, m_flFrequency) == 0xA8, "m_flFrequency in CVoiceContainerDecayingSineWave should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave, m_flDecayTime) == 0xAC, "m_flDecayTime in CVoiceContainerDecayingSineWave should be at offset 0xAC");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerDecayingSineWave) == 0xB0, "CVoiceContainerDecayingSineWave size should be 0xB0");
+
+#endif
 	}
 }

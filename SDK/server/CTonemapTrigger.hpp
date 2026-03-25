@@ -25,8 +25,11 @@ namespace CS2 {
 			GlobalTypes::CEntityHandle m_hTonemapController; // 0x898 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTonemapTrigger, m_tonemapControllerName) == 0x890, "m_tonemapControllerName in CTonemapTrigger should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTonemapTrigger, m_hTonemapController) == 0x898, "m_hTonemapController in CTonemapTrigger should be at offset 0x898");
 		static_assert(sizeof(CS2::server::CTonemapTrigger) == 0x8A0, "CTonemapTrigger size should be 0x8A0");
+
+#endif
 	}
 }

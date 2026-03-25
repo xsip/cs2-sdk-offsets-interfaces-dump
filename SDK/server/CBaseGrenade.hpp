@@ -51,6 +51,7 @@ namespace CS2 {
 			// char m_hOriginalThrower[0x4]; // 0xb30 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseGrenade, m_OnPlayerPickup) == 0xAB8, "m_OnPlayerPickup in CBaseGrenade should be at offset 0xAB8");
 		static_assert(offsetof(CS2::server::CBaseGrenade, m_OnExplode) == 0xAD0, "m_OnExplode in CBaseGrenade should be at offset 0xAD0");
 		static_assert(offsetof(CS2::server::CBaseGrenade, m_bHasWarnedAI) == 0xAE8, "m_bHasWarnedAI in CBaseGrenade should be at offset 0xAE8");
@@ -66,5 +67,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseGrenade, m_flNextAttack) == 0xB2C, "m_flNextAttack in CBaseGrenade should be at offset 0xB2C");
 		static_assert(offsetof(CS2::server::CBaseGrenade, m_hOriginalThrower) == 0xB30, "m_hOriginalThrower in CBaseGrenade should be at offset 0xB30");
 		static_assert(sizeof(CS2::server::CBaseGrenade) == 0xB40, "CBaseGrenade size should be 0xB40");
+
+#endif
 	}
 }

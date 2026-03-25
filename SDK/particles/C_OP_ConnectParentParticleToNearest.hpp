@@ -29,11 +29,14 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_flRadiusScale; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionFloatInput m_flParentRadiusScale; // 0x350 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ConnectParentParticleToNearest, m_nFirstControlPoint) == 0x1D0, "m_nFirstControlPoint in C_OP_ConnectParentParticleToNearest should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ConnectParentParticleToNearest, m_nSecondControlPoint) == 0x1D4, "m_nSecondControlPoint in C_OP_ConnectParentParticleToNearest should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_ConnectParentParticleToNearest, m_bUseRadius) == 0x1D8, "m_bUseRadius in C_OP_ConnectParentParticleToNearest should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ConnectParentParticleToNearest, m_flRadiusScale) == 0x1E0, "m_flRadiusScale in C_OP_ConnectParentParticleToNearest should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_ConnectParentParticleToNearest, m_flParentRadiusScale) == 0x350, "m_flParentRadiusScale in C_OP_ConnectParentParticleToNearest should be at offset 0x350");
 		static_assert(sizeof(CS2::particles::C_OP_ConnectParentParticleToNearest) == 0x4C0, "C_OP_ConnectParentParticleToNearest size should be 0x4C0");
+
+#endif
 	}
 }

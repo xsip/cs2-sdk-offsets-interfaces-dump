@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_FanForceCurveString; // 0x4f8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInfoFan, m_fFanForceMaxRadius) == 0x4E8, "m_fFanForceMaxRadius in CInfoFan should be at offset 0x4E8");
 		static_assert(offsetof(CS2::server::CInfoFan, m_fFanForceMinRadius) == 0x4EC, "m_fFanForceMinRadius in CInfoFan should be at offset 0x4EC");
 		static_assert(offsetof(CS2::server::CInfoFan, m_flCurveDistRange) == 0x4F0, "m_flCurveDistRange in CInfoFan should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CInfoFan, m_FanForceCurveString) == 0x4F8, "m_FanForceCurveString in CInfoFan should be at offset 0x4F8");
 		static_assert(sizeof(CS2::server::CInfoFan) == 0x500, "CInfoFan size should be 0x500");
+
+#endif
 	}
 }

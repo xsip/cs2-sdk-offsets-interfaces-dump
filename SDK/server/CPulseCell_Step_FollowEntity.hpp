@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_ParamBoneOrAttachName; // 0x48 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_ParamBoneOrAttachNameChild; // 0x50 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_Step_FollowEntity, m_ParamBoneOrAttachName) == 0x48, "m_ParamBoneOrAttachName in CPulseCell_Step_FollowEntity should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPulseCell_Step_FollowEntity, m_ParamBoneOrAttachNameChild) == 0x50, "m_ParamBoneOrAttachNameChild in CPulseCell_Step_FollowEntity should be at offset 0x50");
 		static_assert(sizeof(CS2::server::CPulseCell_Step_FollowEntity) == 0x58, "CPulseCell_Step_FollowEntity size should be 0x58");
+
+#endif
 	}
 }

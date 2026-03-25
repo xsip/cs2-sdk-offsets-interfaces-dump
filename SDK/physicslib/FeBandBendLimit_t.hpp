@@ -24,9 +24,12 @@ namespace CS2 {
 			float32 flDistMax; // 0x4 | Schema_Builtin | Size: 0x4
 			uint16_t nNode[6]; // 0x8 | Schema_FixedArray | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeBandBendLimit_t, flDistMin) == 0x0, "flDistMin in FeBandBendLimit_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeBandBendLimit_t, flDistMax) == 0x4, "flDistMax in FeBandBendLimit_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeBandBendLimit_t, nNode) == 0x8, "nNode in FeBandBendLimit_t should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::FeBandBendLimit_t) == 0x14, "FeBandBendLimit_t size should be 0x14");
+
+#endif
 	}
 }

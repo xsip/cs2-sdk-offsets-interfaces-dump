@@ -50,6 +50,7 @@ namespace CS2 {
 			bool m_bStarted; // 0x65 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_iLayer) == 0x0, "m_iLayer in CSceneEventInfo should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_iPriority) == 0x4, "m_iPriority in CSceneEventInfo should be at offset 0x4");
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_hSequence) == 0x8, "m_hSequence in CSceneEventInfo should be at offset 0x8");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bClientSide) == 0x64, "m_bClientSide in CSceneEventInfo should be at offset 0x64");
 		static_assert(offsetof(CS2::client::CSceneEventInfo, m_bStarted) == 0x65, "m_bStarted in CSceneEventInfo should be at offset 0x65");
 		static_assert(sizeof(CS2::client::CSceneEventInfo) == 0x68, "CSceneEventInfo size should be 0x68");
+
+#endif
 	}
 }

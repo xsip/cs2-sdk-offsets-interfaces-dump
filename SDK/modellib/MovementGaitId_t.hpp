@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CGlobalSymbol m_sId; // 0x0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::MovementGaitId_t, m_sId) == 0x0, "m_sId in MovementGaitId_t should be at offset 0x0");
 		static_assert(sizeof(CS2::modellib::MovementGaitId_t) == 0x8, "MovementGaitId_t size should be 0x8");
+
+#endif
 	}
 }

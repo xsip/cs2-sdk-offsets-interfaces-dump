@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			uint8_t m_subCode[8]; // 0x0 | Schema_FixedArray | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::SampleCode, m_subCode) == 0x0, "m_subCode in SampleCode should be at offset 0x0");
 		static_assert(sizeof(CS2::animgraphlib::SampleCode) == 0x8, "SampleCode size should be 0x8");
+
+#endif
 	}
 }

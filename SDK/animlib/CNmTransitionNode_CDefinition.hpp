@@ -38,6 +38,7 @@ namespace CS2 {
 			animlib::NmRootMotionBlendMode_t m_rootMotionBlend; // 0x2b | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTransitionNode_CDefinition, m_nTargetStateNodeIdx) == 0x10, "m_nTargetStateNodeIdx in CNmTransitionNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmTransitionNode_CDefinition, m_nDurationOverrideNodeIdx) == 0x12, "m_nDurationOverrideNodeIdx in CNmTransitionNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmTransitionNode_CDefinition, m_timeOffsetOverrideNodeIdx) == 0x14, "m_timeOffsetOverrideNodeIdx in CNmTransitionNode::CDefinition should be at offset 0x14");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmTransitionNode_CDefinition, m_blendWeightEasing) == 0x2A, "m_blendWeightEasing in CNmTransitionNode::CDefinition should be at offset 0x2A");
 		static_assert(offsetof(CS2::animlib::CNmTransitionNode_CDefinition, m_rootMotionBlend) == 0x2B, "m_rootMotionBlend in CNmTransitionNode::CDefinition should be at offset 0x2B");
 		static_assert(sizeof(CS2::animlib::CNmTransitionNode_CDefinition) == 0x30, "CNmTransitionNode::CDefinition size should be 0x30");
+
+#endif
 	}
 }

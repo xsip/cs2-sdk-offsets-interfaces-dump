@@ -27,11 +27,14 @@ namespace CS2 {
 			bool isActive; // 0x14 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::vphysics2::constraint_breakableparams_t, strength) == 0x0, "strength in constraint_breakableparams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::vphysics2::constraint_breakableparams_t, forceLimit) == 0x4, "forceLimit in constraint_breakableparams_t should be at offset 0x4");
 		static_assert(offsetof(CS2::vphysics2::constraint_breakableparams_t, torqueLimit) == 0x8, "torqueLimit in constraint_breakableparams_t should be at offset 0x8");
 		static_assert(offsetof(CS2::vphysics2::constraint_breakableparams_t, bodyMassScale) == 0xC, "bodyMassScale in constraint_breakableparams_t should be at offset 0xC");
 		static_assert(offsetof(CS2::vphysics2::constraint_breakableparams_t, isActive) == 0x14, "isActive in constraint_breakableparams_t should be at offset 0x14");
 		static_assert(sizeof(CS2::vphysics2::constraint_breakableparams_t) == 0x18, "constraint_breakableparams_t size should be 0x18");
+
+#endif
 	}
 }

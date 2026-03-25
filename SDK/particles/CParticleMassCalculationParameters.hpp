@@ -28,10 +28,13 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flNominalRadius; // 0x178 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flScale; // 0x2e8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_nMassMode) == 0x0, "m_nMassMode in CParticleMassCalculationParameters should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flRadius) == 0x8, "m_flRadius in CParticleMassCalculationParameters should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flNominalRadius) == 0x178, "m_flNominalRadius in CParticleMassCalculationParameters should be at offset 0x178");
 		static_assert(offsetof(CS2::particles::CParticleMassCalculationParameters, m_flScale) == 0x2E8, "m_flScale in CParticleMassCalculationParameters should be at offset 0x2E8");
 		static_assert(sizeof(CS2::particles::CParticleMassCalculationParameters) == 0x458, "CParticleMassCalculationParameters size should be 0x458");
+
+#endif
 	}
 }

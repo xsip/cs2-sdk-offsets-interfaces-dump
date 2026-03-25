@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			particleslib::CParticleCollectionFloatInput m_flOffscreenTime; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DecayOffscreen, m_flOffscreenTime) == 0x1D0, "m_flOffscreenTime in C_OP_DecayOffscreen should be at offset 0x1D0");
 		static_assert(sizeof(CS2::particles::C_OP_DecayOffscreen) == 0x340, "C_OP_DecayOffscreen size should be 0x340");
+
+#endif
 	}
 }

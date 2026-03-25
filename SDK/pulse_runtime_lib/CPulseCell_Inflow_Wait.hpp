@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0x48 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Wait, m_WakeResume) == 0x48, "m_WakeResume in CPulseCell_Inflow_Wait should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Wait) == 0x90, "CPulseCell_Inflow_Wait size should be 0x90");
+
+#endif
 	}
 }

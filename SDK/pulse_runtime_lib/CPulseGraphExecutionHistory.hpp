@@ -36,11 +36,14 @@ namespace CS2 {
 			// GlobalTypes::CUtlOrderedMap< PulseCursorID_t, PulseGraphExecutionHistoryCursorDesc_t > m_mapCursorDesc; // 0x50 | Schema_Atomic | Size: 0x28
 			char m_mapCursorDesc[0x28]; // 0x50 | Schema_Atomic | Size: 0x28
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphExecutionHistory, m_nInstanceID) == 0x0, "m_nInstanceID in CPulseGraphExecutionHistory should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphExecutionHistory, m_strFileName) == 0x8, "m_strFileName in CPulseGraphExecutionHistory should be at offset 0x8");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphExecutionHistory, m_vecHistory) == 0x10, "m_vecHistory in CPulseGraphExecutionHistory should be at offset 0x10");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphExecutionHistory, m_mapCellDesc) == 0x28, "m_mapCellDesc in CPulseGraphExecutionHistory should be at offset 0x28");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphExecutionHistory, m_mapCursorDesc) == 0x50, "m_mapCursorDesc in CPulseGraphExecutionHistory should be at offset 0x50");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseGraphExecutionHistory) == 0x78, "CPulseGraphExecutionHistory size should be 0x78");
+
+#endif
 	}
 }

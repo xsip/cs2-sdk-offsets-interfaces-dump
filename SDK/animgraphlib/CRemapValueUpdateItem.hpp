@@ -28,6 +28,7 @@ namespace CS2 {
 			float32 m_flMinOutputValue; // 0xc | Schema_Builtin | Size: 0x4
 			float32 m_flMaxOutputValue; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CRemapValueUpdateItem, m_hParamIn) == 0x0, "m_hParamIn in CRemapValueUpdateItem should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CRemapValueUpdateItem, m_hParamOut) == 0x2, "m_hParamOut in CRemapValueUpdateItem should be at offset 0x2");
 		static_assert(offsetof(CS2::animgraphlib::CRemapValueUpdateItem, m_flMinInputValue) == 0x4, "m_flMinInputValue in CRemapValueUpdateItem should be at offset 0x4");
@@ -35,5 +36,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CRemapValueUpdateItem, m_flMinOutputValue) == 0xC, "m_flMinOutputValue in CRemapValueUpdateItem should be at offset 0xC");
 		static_assert(offsetof(CS2::animgraphlib::CRemapValueUpdateItem, m_flMaxOutputValue) == 0x10, "m_flMaxOutputValue in CRemapValueUpdateItem should be at offset 0x10");
 		static_assert(sizeof(CS2::animgraphlib::CRemapValueUpdateItem) == 0x14, "CRemapValueUpdateItem size should be 0x14");
+
+#endif
 	}
 }

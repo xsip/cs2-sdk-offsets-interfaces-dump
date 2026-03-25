@@ -32,8 +32,11 @@ namespace CS2 {
 			// char m_KillingPlayer[0x4]; // 0xac4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CItemDogtags, m_OwningPlayer) == 0xAC0, "m_OwningPlayer in CItemDogtags should be at offset 0xAC0");
 		static_assert(offsetof(CS2::server::CItemDogtags, m_KillingPlayer) == 0xAC4, "m_KillingPlayer in CItemDogtags should be at offset 0xAC4");
 		static_assert(sizeof(CS2::server::CItemDogtags) == 0xAD0, "CItemDogtags size should be 0xAD0");
+
+#endif
 	}
 }

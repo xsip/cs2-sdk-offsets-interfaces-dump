@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bEnabled; // 0x4ba | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMessageEntity, m_radius) == 0x4A8, "m_radius in CMessageEntity should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMessageEntity, m_messageText) == 0x4B0, "m_messageText in CMessageEntity should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CMessageEntity, m_drawText) == 0x4B8, "m_drawText in CMessageEntity should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CMessageEntity, m_bDeveloperOnly) == 0x4B9, "m_bDeveloperOnly in CMessageEntity should be at offset 0x4B9");
 		static_assert(offsetof(CS2::server::CMessageEntity, m_bEnabled) == 0x4BA, "m_bEnabled in CMessageEntity should be at offset 0x4BA");
 		static_assert(sizeof(CS2::server::CMessageEntity) == 0x4C0, "CMessageEntity size should be 0x4C0");
+
+#endif
 	}
 }

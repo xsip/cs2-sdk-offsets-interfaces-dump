@@ -39,6 +39,7 @@ namespace CS2 {
 			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xbe0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nMaterialControlPoint) == 0x220, "m_nMaterialControlPoint in C_OP_RenderMaterialProxy should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nProxyType) == 0x224, "m_nProxyType in C_OP_RenderMaterialProxy should be at offset 0x224");
 		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_MaterialVars) == 0x228, "m_MaterialVars in C_OP_RenderMaterialProxy should be at offset 0x228");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_flAlpha) == 0xA70, "m_flAlpha in C_OP_RenderMaterialProxy should be at offset 0xA70");
 		static_assert(offsetof(CS2::particles::C_OP_RenderMaterialProxy, m_nColorBlendType) == 0xBE0, "m_nColorBlendType in C_OP_RenderMaterialProxy should be at offset 0xBE0");
 		static_assert(sizeof(CS2::particles::C_OP_RenderMaterialProxy) == 0xC00, "C_OP_RenderMaterialProxy size should be 0xC00");
+
+#endif
 	}
 }

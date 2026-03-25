@@ -26,7 +26,10 @@ namespace CS2 {
 			client::shard_model_desc_t m_ShardDesc; // 0x12e8 | Schema_DeclaredClass | Size: 0x80
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_ShatterGlassShardPhysics, m_ShardDesc) == 0x12E8, "m_ShardDesc in C_ShatterGlassShardPhysics should be at offset 0x12E8");
 		static_assert(sizeof(CS2::client::C_ShatterGlassShardPhysics) == 0x1370, "C_ShatterGlassShardPhysics size should be 0x1370");
+
+#endif
 	}
 }

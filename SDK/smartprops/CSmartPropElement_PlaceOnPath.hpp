@@ -35,6 +35,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CSmartPropAttributeVector> m_DefaultPath; // 0x2e8 | Schema_Atomic | Size: 0x18
 			// char m_DefaultPath[0x18]; // 0x2e8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_PathName) == 0xA0, "m_PathName in CSmartPropElement_PlaceOnPath should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_flSpacing) == 0xA8, "m_flSpacing in CSmartPropElement_PlaceOnPath should be at offset 0xA8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_flOffsetAlongPath) == 0xE8, "m_flOffsetAlongPath in CSmartPropElement_PlaceOnPath should be at offset 0xE8");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_DefaultPathInWorldSpace) == 0x2A8, "m_DefaultPathInWorldSpace in CSmartPropElement_PlaceOnPath should be at offset 0x2A8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceOnPath, m_DefaultPath) == 0x2E8, "m_DefaultPath in CSmartPropElement_PlaceOnPath should be at offset 0x2E8");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_PlaceOnPath) == 0x300, "CSmartPropElement_PlaceOnPath size should be 0x300");
+
+#endif
 	}
 }

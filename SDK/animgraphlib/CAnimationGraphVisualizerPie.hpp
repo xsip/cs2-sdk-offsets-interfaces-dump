@@ -27,10 +27,13 @@ namespace CS2 {
 			GlobalTypes::Color m_Color; // 0x70 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerPie, m_vWsCenter) == 0x40, "m_vWsCenter in CAnimationGraphVisualizerPie should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerPie, m_vWsStart) == 0x50, "m_vWsStart in CAnimationGraphVisualizerPie should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerPie, m_vWsEnd) == 0x60, "m_vWsEnd in CAnimationGraphVisualizerPie should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerPie, m_Color) == 0x70, "m_Color in CAnimationGraphVisualizerPie should be at offset 0x70");
 		static_assert(sizeof(CS2::animgraphlib::CAnimationGraphVisualizerPie) == 0x80, "CAnimationGraphVisualizerPie size should be 0x80");
+
+#endif
 	}
 }

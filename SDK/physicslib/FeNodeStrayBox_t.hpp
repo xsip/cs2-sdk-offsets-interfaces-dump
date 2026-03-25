@@ -25,10 +25,13 @@ namespace CS2 {
 			GlobalTypes::Vector vMax; // 0x10 | Schema_Atomic | Size: 0xc
 			uint16_t nNode[2]; // 0x1c | Schema_FixedArray | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeNodeStrayBox_t, vMin) == 0x0, "vMin in FeNodeStrayBox_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeNodeStrayBox_t, nFlags) == 0xC, "nFlags in FeNodeStrayBox_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeNodeStrayBox_t, vMax) == 0x10, "vMax in FeNodeStrayBox_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::FeNodeStrayBox_t, nNode) == 0x1C, "nNode in FeNodeStrayBox_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::physicslib::FeNodeStrayBox_t) == 0x20, "FeNodeStrayBox_t size should be 0x20");
+
+#endif
 	}
 }

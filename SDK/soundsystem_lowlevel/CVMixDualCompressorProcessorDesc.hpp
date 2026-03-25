@@ -25,7 +25,10 @@ namespace CS2 {
 			soundsystem_lowlevel::VMixDualCompressorDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x34
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixDualCompressorProcessorDesc, m_desc) == 0x20, "m_desc in CVMixDualCompressorProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixDualCompressorProcessorDesc) == 0x58, "CVMixDualCompressorProcessorDesc size should be 0x58");
+
+#endif
 	}
 }

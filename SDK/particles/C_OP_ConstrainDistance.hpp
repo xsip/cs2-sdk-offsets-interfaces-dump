@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bGlobalCenter; // 0x4c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_fMinDistance) == 0x1D0, "m_fMinDistance in C_OP_ConstrainDistance should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_fMaxDistance) == 0x340, "m_fMaxDistance in C_OP_ConstrainDistance should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_nControlPointNumber) == 0x4B0, "m_nControlPointNumber in C_OP_ConstrainDistance should be at offset 0x4B0");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_CenterOffset) == 0x4B4, "m_CenterOffset in C_OP_ConstrainDistance should be at offset 0x4B4");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistance, m_bGlobalCenter) == 0x4C0, "m_bGlobalCenter in C_OP_ConstrainDistance should be at offset 0x4C0");
 		static_assert(sizeof(CS2::particles::C_OP_ConstrainDistance) == 0x4C8, "C_OP_ConstrainDistance size should be 0x4C8");
+
+#endif
 	}
 }

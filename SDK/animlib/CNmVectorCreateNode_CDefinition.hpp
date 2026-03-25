@@ -26,10 +26,13 @@ namespace CS2 {
 			int16_t m_inputValueYNodeIdx; // 0x14 | Schema_Builtin | Size: 0x2
 			int16_t m_inputValueZNodeIdx; // 0x16 | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmVectorCreateNode_CDefinition, m_inputVectorValueNodeIdx) == 0x10, "m_inputVectorValueNodeIdx in CNmVectorCreateNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmVectorCreateNode_CDefinition, m_inputValueXNodeIdx) == 0x12, "m_inputValueXNodeIdx in CNmVectorCreateNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmVectorCreateNode_CDefinition, m_inputValueYNodeIdx) == 0x14, "m_inputValueYNodeIdx in CNmVectorCreateNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmVectorCreateNode_CDefinition, m_inputValueZNodeIdx) == 0x16, "m_inputValueZNodeIdx in CNmVectorCreateNode::CDefinition should be at offset 0x16");
 		static_assert(sizeof(CS2::animlib::CNmVectorCreateNode_CDefinition) == 0x18, "CNmVectorCreateNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

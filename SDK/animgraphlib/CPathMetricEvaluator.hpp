@@ -29,10 +29,13 @@ namespace CS2 {
 			float32 m_flMinExtrapolationSpeed; // 0x70 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CPathMetricEvaluator, m_pathTimeSamples) == 0x50, "m_pathTimeSamples in CPathMetricEvaluator should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CPathMetricEvaluator, m_flDistance) == 0x68, "m_flDistance in CPathMetricEvaluator should be at offset 0x68");
 		static_assert(offsetof(CS2::animgraphlib::CPathMetricEvaluator, m_bExtrapolateMovement) == 0x6C, "m_bExtrapolateMovement in CPathMetricEvaluator should be at offset 0x6C");
 		static_assert(offsetof(CS2::animgraphlib::CPathMetricEvaluator, m_flMinExtrapolationSpeed) == 0x70, "m_flMinExtrapolationSpeed in CPathMetricEvaluator should be at offset 0x70");
 		static_assert(sizeof(CS2::animgraphlib::CPathMetricEvaluator) == 0x78, "CPathMetricEvaluator size should be 0x78");
+
+#endif
 	}
 }

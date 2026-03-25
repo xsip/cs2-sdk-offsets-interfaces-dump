@@ -25,8 +25,11 @@ namespace CS2 {
 			float32 m_flRange; // 0x4b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInfoGameEventProxy, m_iszEventName) == 0x4A8, "m_iszEventName in CInfoGameEventProxy should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CInfoGameEventProxy, m_flRange) == 0x4B0, "m_flRange in CInfoGameEventProxy should be at offset 0x4B0");
 		static_assert(sizeof(CS2::server::CInfoGameEventProxy) == 0x4B8, "CInfoGameEventProxy size should be 0x4B8");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_attributeName; // 0x20 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmEntityAttributeEventBase, m_attributeName) == 0x20, "m_attributeName in CNmEntityAttributeEventBase should be at offset 0x20");
 		static_assert(sizeof(CS2::animlib::CNmEntityAttributeEventBase) == 0x38, "CNmEntityAttributeEventBase size should be 0x38");
+
+#endif
 	}
 }

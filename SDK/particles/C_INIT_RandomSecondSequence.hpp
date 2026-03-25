@@ -24,8 +24,11 @@ namespace CS2 {
 			int32_t m_nSequenceMin; // 0x1d8 | Schema_Builtin | Size: 0x4
 			int32_t m_nSequenceMax; // 0x1dc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSecondSequence, m_nSequenceMin) == 0x1D8, "m_nSequenceMin in C_INIT_RandomSecondSequence should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomSecondSequence, m_nSequenceMax) == 0x1DC, "m_nSequenceMax in C_INIT_RandomSecondSequence should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomSecondSequence) == 0x1E0, "C_INIT_RandomSecondSequence size should be 0x1E0");
+
+#endif
 	}
 }

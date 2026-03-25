@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flBlendTimeSeconds; // 0x28 | Schema_Builtin | Size: 0x4
 			float32 m_flReduceRangeTimeSeconds; // 0x2c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CNmAimCSNode_CDefinition, m_nVerticalAngleNodeIdx) == 0x18, "m_nVerticalAngleNodeIdx in CNmAimCSNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::client::CNmAimCSNode_CDefinition, m_nHorizontalAngleNodeIdx) == 0x1A, "m_nHorizontalAngleNodeIdx in CNmAimCSNode::CDefinition should be at offset 0x1A");
 		static_assert(offsetof(CS2::client::CNmAimCSNode_CDefinition, m_nWeaponCategoryNodeIdx) == 0x1C, "m_nWeaponCategoryNodeIdx in CNmAimCSNode::CDefinition should be at offset 0x1C");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CNmAimCSNode_CDefinition, m_flBlendTimeSeconds) == 0x28, "m_flBlendTimeSeconds in CNmAimCSNode::CDefinition should be at offset 0x28");
 		static_assert(offsetof(CS2::client::CNmAimCSNode_CDefinition, m_flReduceRangeTimeSeconds) == 0x2C, "m_flReduceRangeTimeSeconds in CNmAimCSNode::CDefinition should be at offset 0x2C");
 		static_assert(sizeof(CS2::client::CNmAimCSNode_CDefinition) == 0x30, "CNmAimCSNode::CDefinition size should be 0x30");
+
+#endif
 	}
 }

@@ -59,6 +59,7 @@ namespace CS2 {
 			bool m_bHasBakedGeometryFlag; // 0x170 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_sceneObjects) == 0x0, "m_sceneObjects in WorldNode_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_visClusterMembership) == 0x18, "m_visClusterMembership in WorldNode_t should be at offset 0x18");
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_aggregateSceneObjects) == 0x30, "m_aggregateSceneObjects in WorldNode_t should be at offset 0x30");
@@ -75,5 +76,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_nodeLightingInfo) == 0x128, "m_nodeLightingInfo in WorldNode_t should be at offset 0x128");
 		static_assert(offsetof(CS2::worldrenderer::WorldNode_t, m_bHasBakedGeometryFlag) == 0x170, "m_bHasBakedGeometryFlag in WorldNode_t should be at offset 0x170");
 		static_assert(sizeof(CS2::worldrenderer::WorldNode_t) == 0x178, "WorldNode_t size should be 0x178");
+
+#endif
 	}
 }

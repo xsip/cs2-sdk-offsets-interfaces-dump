@@ -88,6 +88,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CPiecewiseCurve m_Curve; // 0x130 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nType) == 0x10, "m_nType in CParticleFloatInput should be at offset 0x10");
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_nMapType) == 0x14, "m_nMapType in CParticleFloatInput should be at offset 0x14");
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flLiteralValue) == 0x18, "m_flLiteralValue in CParticleFloatInput should be at offset 0x18");
@@ -138,5 +139,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_flBiasParameter) == 0x128, "m_flBiasParameter in CParticleFloatInput should be at offset 0x128");
 		static_assert(offsetof(CS2::particleslib::CParticleFloatInput, m_Curve) == 0x130, "m_Curve in CParticleFloatInput should be at offset 0x130");
 		static_assert(sizeof(CS2::particleslib::CParticleFloatInput) == 0x170, "CParticleFloatInput size should be 0x170");
+
+#endif
 	}
 }

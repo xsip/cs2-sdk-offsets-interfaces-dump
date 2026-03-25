@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bTraceAway; // 0x450 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flTraceLength; // 0x490 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceToLine, m_EndPointA) == 0x350, "m_EndPointA in CSmartPropOperation_TraceToLine should be at offset 0x350");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceToLine, m_EndPointSpaceA) == 0x390, "m_EndPointSpaceA in CSmartPropOperation_TraceToLine should be at offset 0x390");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceToLine, m_EndPointB) == 0x3D0, "m_EndPointB in CSmartPropOperation_TraceToLine should be at offset 0x3D0");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceToLine, m_bTraceAway) == 0x450, "m_bTraceAway in CSmartPropOperation_TraceToLine should be at offset 0x450");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceToLine, m_flTraceLength) == 0x490, "m_flTraceLength in CSmartPropOperation_TraceToLine should be at offset 0x490");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_TraceToLine) == 0x4D0, "CSmartPropOperation_TraceToLine size should be 0x4D0");
+
+#endif
 	}
 }

@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 flTwistRelax; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flSwingRelax; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeTwistConstraint_t, nNodeOrient) == 0x0, "nNodeOrient in FeTwistConstraint_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeTwistConstraint_t, nNodeEnd) == 0x2, "nNodeEnd in FeTwistConstraint_t should be at offset 0x2");
 		static_assert(offsetof(CS2::physicslib::FeTwistConstraint_t, flTwistRelax) == 0x4, "flTwistRelax in FeTwistConstraint_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeTwistConstraint_t, flSwingRelax) == 0x8, "flSwingRelax in FeTwistConstraint_t should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::FeTwistConstraint_t) == 0xC, "FeTwistConstraint_t size should be 0xC");
+
+#endif
 	}
 }

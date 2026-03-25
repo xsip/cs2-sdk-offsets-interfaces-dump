@@ -25,7 +25,10 @@ namespace CS2 {
 			animlib::NmFootPhase_t m_phase; // 0x20 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFootEvent, m_phase) == 0x20, "m_phase in CNmFootEvent should be at offset 0x20");
 		static_assert(sizeof(CS2::animlib::CNmFootEvent) == 0x28, "CNmFootEvent size should be 0x28");
+
+#endif
 	}
 }

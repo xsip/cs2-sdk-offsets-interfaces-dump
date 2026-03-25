@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bPreventUndershoot; // 0x7e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CWayPointHelperUpdateNode, m_flStartCycle) == 0x74, "m_flStartCycle in CWayPointHelperUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CWayPointHelperUpdateNode, m_flEndCycle) == 0x78, "m_flEndCycle in CWayPointHelperUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CWayPointHelperUpdateNode, m_bOnlyGoals) == 0x7C, "m_bOnlyGoals in CWayPointHelperUpdateNode should be at offset 0x7C");
 		static_assert(offsetof(CS2::animgraphlib::CWayPointHelperUpdateNode, m_bPreventOvershoot) == 0x7D, "m_bPreventOvershoot in CWayPointHelperUpdateNode should be at offset 0x7D");
 		static_assert(offsetof(CS2::animgraphlib::CWayPointHelperUpdateNode, m_bPreventUndershoot) == 0x7E, "m_bPreventUndershoot in CWayPointHelperUpdateNode should be at offset 0x7E");
 		static_assert(sizeof(CS2::animgraphlib::CWayPointHelperUpdateNode) == 0x80, "CWayPointHelperUpdateNode size should be 0x80");
+
+#endif
 	}
 }

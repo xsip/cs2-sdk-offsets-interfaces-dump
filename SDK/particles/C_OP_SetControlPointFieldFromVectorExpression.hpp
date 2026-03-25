@@ -34,6 +34,7 @@ namespace CS2 {
 			int32_t m_nOutputCP; // 0x1230 | Schema_Builtin | Size: 0x4
 			int32_t m_nOutVectorField; // 0x1234 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nExpression) == 0x1D8, "m_nExpression in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_vecInput1) == 0x1E0, "m_vecInput1 in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_vecInput2) == 0x898, "m_vecInput2 in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x898");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nOutputCP) == 0x1230, "m_nOutputCP in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1230");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression, m_nOutVectorField) == 0x1234, "m_nOutVectorField in C_OP_SetControlPointFieldFromVectorExpression should be at offset 0x1234");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointFieldFromVectorExpression) == 0x1238, "C_OP_SetControlPointFieldFromVectorExpression size should be 0x1238");
+
+#endif
 	}
 }

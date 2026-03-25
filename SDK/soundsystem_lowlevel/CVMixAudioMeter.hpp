@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_displayName; // 0x8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixAudioMeter, m_name) == 0x0, "m_name in CVMixAudioMeter should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixAudioMeter, m_displayName) == 0x8, "m_displayName in CVMixAudioMeter should be at offset 0x8");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixAudioMeter) == 0x18, "CVMixAudioMeter size should be 0x18");
+
+#endif
 	}
 }

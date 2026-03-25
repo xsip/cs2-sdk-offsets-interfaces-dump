@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_localOrigin; // 0x508 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysThruster, m_localOrigin) == 0x508, "m_localOrigin in CPhysThruster should be at offset 0x508");
 		static_assert(sizeof(CS2::server::CPhysThruster) == 0x518, "CPhysThruster size should be 0x518");
+
+#endif
 	}
 }

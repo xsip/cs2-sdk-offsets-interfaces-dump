@@ -29,10 +29,13 @@ namespace CS2 {
 			animationsystem::HSequence m_hSequence; // 0x38 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flCycle; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CCachedPose, m_transforms) == 0x8, "m_transforms in CCachedPose should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CCachedPose, m_morphWeights) == 0x20, "m_morphWeights in CCachedPose should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::CCachedPose, m_hSequence) == 0x38, "m_hSequence in CCachedPose should be at offset 0x38");
 		static_assert(offsetof(CS2::animgraphlib::CCachedPose, m_flCycle) == 0x3C, "m_flCycle in CCachedPose should be at offset 0x3C");
 		static_assert(sizeof(CS2::animgraphlib::CCachedPose) == 0x40, "CCachedPose size should be 0x40");
+
+#endif
 	}
 }

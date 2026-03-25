@@ -34,6 +34,7 @@ namespace CS2 {
 			S2_PAD(0x38);
 			entity2::CEntityComponentHelper* m_pBaseClassComponentHelper; // 0x60 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::entity2::EntComponentInfo_t, m_pName) == 0x0, "m_pName in EntComponentInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::entity2::EntComponentInfo_t, m_pCPPClassname) == 0x8, "m_pCPPClassname in EntComponentInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::entity2::EntComponentInfo_t, m_pNetworkDataReferencedDescription) == 0x10, "m_pNetworkDataReferencedDescription in EntComponentInfo_t should be at offset 0x10");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::entity2::EntComponentInfo_t, m_nFlags) == 0x24, "m_nFlags in EntComponentInfo_t should be at offset 0x24");
 		static_assert(offsetof(CS2::entity2::EntComponentInfo_t, m_pBaseClassComponentHelper) == 0x60, "m_pBaseClassComponentHelper in EntComponentInfo_t should be at offset 0x60");
 		static_assert(sizeof(CS2::entity2::EntComponentInfo_t) == 0x68, "EntComponentInfo_t size should be 0x68");
+
+#endif
 	}
 }

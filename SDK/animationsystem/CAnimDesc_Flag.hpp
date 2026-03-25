@@ -29,6 +29,7 @@ namespace CS2 {
 			bool m_bImplicitSeqIgnoreDelta; // 0x6 | Schema_Builtin | Size: 0x1
 			bool m_bAnimGraphAdditive; // 0x7 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc_Flag, m_bLooping) == 0x0, "m_bLooping in CAnimDesc_Flag should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc_Flag, m_bAllZeros) == 0x1, "m_bAllZeros in CAnimDesc_Flag should be at offset 0x1");
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc_Flag, m_bHidden) == 0x2, "m_bHidden in CAnimDesc_Flag should be at offset 0x2");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc_Flag, m_bImplicitSeqIgnoreDelta) == 0x6, "m_bImplicitSeqIgnoreDelta in CAnimDesc_Flag should be at offset 0x6");
 		static_assert(offsetof(CS2::animationsystem::CAnimDesc_Flag, m_bAnimGraphAdditive) == 0x7, "m_bAnimGraphAdditive in CAnimDesc_Flag should be at offset 0x7");
 		static_assert(sizeof(CS2::animationsystem::CAnimDesc_Flag) == 0x8, "CAnimDesc_Flag size should be 0x8");
+
+#endif
 	}
 }

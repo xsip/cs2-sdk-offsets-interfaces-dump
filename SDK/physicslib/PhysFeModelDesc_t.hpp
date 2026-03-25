@@ -243,6 +243,7 @@ namespace CS2 {
 			uint16_t m_nRodVelocitySmoothIterations; // 0x6dc | Schema_Builtin | Size: 0x2
 			uint16_t m_nQuadVelocitySmoothIterations; // 0x6de | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlHash) == 0x0, "m_CtrlHash in PhysFeModelDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_CtrlName) == 0x18, "m_CtrlName in PhysFeModelDesc_t should be at offset 0x18");
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nStaticNodeFlags) == 0x30, "m_nStaticNodeFlags in PhysFeModelDesc_t should be at offset 0x30");
@@ -354,5 +355,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nRodVelocitySmoothIterations) == 0x6DC, "m_nRodVelocitySmoothIterations in PhysFeModelDesc_t should be at offset 0x6DC");
 		static_assert(offsetof(CS2::physicslib::PhysFeModelDesc_t, m_nQuadVelocitySmoothIterations) == 0x6DE, "m_nQuadVelocitySmoothIterations in PhysFeModelDesc_t should be at offset 0x6DE");
 		static_assert(sizeof(CS2::physicslib::PhysFeModelDesc_t) == 0x6E0, "PhysFeModelDesc_t size should be 0x6E0");
+
+#endif
 	}
 }

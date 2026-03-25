@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszMaster; // 0x730 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRuleEntity, m_iszMaster) == 0x730, "m_iszMaster in CRuleEntity should be at offset 0x730");
 		static_assert(sizeof(CS2::server::CRuleEntity) == 0x738, "CRuleEntity size should be 0x738");
+
+#endif
 	}
 }

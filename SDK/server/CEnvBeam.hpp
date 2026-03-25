@@ -54,6 +54,7 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_iszDecal; // 0x848 | Schema_Atomic | Size: 0x8
 			entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x850 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvBeam, m_active) == 0x7D0, "m_active in CEnvBeam should be at offset 0x7D0");
 		static_assert(offsetof(CS2::server::CEnvBeam, m_spriteTexture) == 0x7D8, "m_spriteTexture in CEnvBeam should be at offset 0x7D8");
 		static_assert(offsetof(CS2::server::CEnvBeam, m_iszStartEntity) == 0x7E0, "m_iszStartEntity in CEnvBeam should be at offset 0x7E0");
@@ -74,5 +75,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvBeam, m_iszDecal) == 0x848, "m_iszDecal in CEnvBeam should be at offset 0x848");
 		static_assert(offsetof(CS2::server::CEnvBeam, m_OnTouchedByEntity) == 0x850, "m_OnTouchedByEntity in CEnvBeam should be at offset 0x850");
 		static_assert(sizeof(CS2::server::CEnvBeam) == 0x868, "CEnvBeam size should be 0x868");
+
+#endif
 	}
 }

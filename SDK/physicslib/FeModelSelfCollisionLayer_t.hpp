@@ -27,11 +27,14 @@ namespace CS2 {
 			uint32_t m_nFlags; // 0x24 | Schema_Builtin | Size: 0x4
 			uint32_t m_nEndIdx[4]; // 0x28 | Schema_FixedArray | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeModelSelfCollisionLayer_t, m_Name) == 0x0, "m_Name in FeModelSelfCollisionLayer_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeModelSelfCollisionLayer_t, m_Nodes) == 0x8, "m_Nodes in FeModelSelfCollisionLayer_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeModelSelfCollisionLayer_t, m_flParentReaction) == 0x20, "m_flParentReaction in FeModelSelfCollisionLayer_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::FeModelSelfCollisionLayer_t, m_nFlags) == 0x24, "m_nFlags in FeModelSelfCollisionLayer_t should be at offset 0x24");
 		static_assert(offsetof(CS2::physicslib::FeModelSelfCollisionLayer_t, m_nEndIdx) == 0x28, "m_nEndIdx in FeModelSelfCollisionLayer_t should be at offset 0x28");
 		static_assert(sizeof(CS2::physicslib::FeModelSelfCollisionLayer_t) == 0x38, "FeModelSelfCollisionLayer_t size should be 0x38");
+
+#endif
 	}
 }

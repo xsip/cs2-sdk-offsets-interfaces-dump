@@ -39,6 +39,7 @@ namespace CS2 {
 			float32 m_flUseAngleTolerance; // 0x170 | Schema_Builtin | Size: 0x4
 			float32 m_flCrouchTime; // 0x174 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBasePlayerVData, m_sModelName) == 0x28, "m_sModelName in CBasePlayerVData should be at offset 0x28");
 		static_assert(offsetof(CS2::client::CBasePlayerVData, m_flHeadDamageMultiplier) == 0x108, "m_flHeadDamageMultiplier in CBasePlayerVData should be at offset 0x108");
 		static_assert(offsetof(CS2::client::CBasePlayerVData, m_flChestDamageMultiplier) == 0x118, "m_flChestDamageMultiplier in CBasePlayerVData should be at offset 0x118");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CBasePlayerVData, m_flUseAngleTolerance) == 0x170, "m_flUseAngleTolerance in CBasePlayerVData should be at offset 0x170");
 		static_assert(offsetof(CS2::client::CBasePlayerVData, m_flCrouchTime) == 0x174, "m_flCrouchTime in CBasePlayerVData should be at offset 0x174");
 		static_assert(sizeof(CS2::client::CBasePlayerVData) == 0x178, "CBasePlayerVData size should be 0x178");
+
+#endif
 	}
 }

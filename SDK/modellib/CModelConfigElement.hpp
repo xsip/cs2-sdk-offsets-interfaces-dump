@@ -26,8 +26,11 @@ namespace CS2 {
 			// char m_NestedElements[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x20); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement, m_ElementName) == 0x8, "m_ElementName in CModelConfigElement should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CModelConfigElement, m_NestedElements) == 0x10, "m_NestedElements in CModelConfigElement should be at offset 0x10");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement) == 0x48, "CModelConfigElement size should be 0x48");
+
+#endif
 	}
 }

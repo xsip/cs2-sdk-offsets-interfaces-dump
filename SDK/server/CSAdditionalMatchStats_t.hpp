@@ -34,6 +34,7 @@ namespace CS2 {
 			int32_t m_iNumTeamKills; // 0x120 | Schema_Builtin | Size: 0x4
 			float32 m_flTeamDamage; // 0x124 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numRoundsSurvivedStreak) == 0xF8, "m_numRoundsSurvivedStreak in CSAdditionalMatchStats_t should be at offset 0xF8");
 		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_maxNumRoundsSurvivedStreak) == 0xFC, "m_maxNumRoundsSurvivedStreak in CSAdditionalMatchStats_t should be at offset 0xFC");
 		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_numRoundsSurvivedTotal) == 0x100, "m_numRoundsSurvivedTotal in CSAdditionalMatchStats_t should be at offset 0x100");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_iNumTeamKills) == 0x120, "m_iNumTeamKills in CSAdditionalMatchStats_t should be at offset 0x120");
 		static_assert(offsetof(CS2::server::CSAdditionalMatchStats_t, m_flTeamDamage) == 0x124, "m_flTeamDamage in CSAdditionalMatchStats_t should be at offset 0x124");
 		static_assert(sizeof(CS2::server::CSAdditionalMatchStats_t) == 0x128, "CSAdditionalMatchStats_t size should be 0x128");
+
+#endif
 	}
 }

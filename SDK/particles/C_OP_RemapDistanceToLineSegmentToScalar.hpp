@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_flMaxOutputValue; // 0x1f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentToScalar, m_nFieldOutput) == 0x1E8, "m_nFieldOutput in C_OP_RemapDistanceToLineSegmentToScalar should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentToScalar, m_flMinOutputValue) == 0x1EC, "m_flMinOutputValue in C_OP_RemapDistanceToLineSegmentToScalar should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentToScalar, m_flMaxOutputValue) == 0x1F0, "m_flMaxOutputValue in C_OP_RemapDistanceToLineSegmentToScalar should be at offset 0x1F0");
 		static_assert(sizeof(CS2::particles::C_OP_RemapDistanceToLineSegmentToScalar) == 0x1F8, "C_OP_RemapDistanceToLineSegmentToScalar size should be 0x1F8");
+
+#endif
 	}
 }

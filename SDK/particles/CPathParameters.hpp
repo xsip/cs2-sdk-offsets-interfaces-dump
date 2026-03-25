@@ -30,6 +30,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vEndOffset; // 0x2c | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CPathParameters, m_nStartControlPointNumber) == 0x0, "m_nStartControlPointNumber in CPathParameters should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::CPathParameters, m_nEndControlPointNumber) == 0x4, "m_nEndControlPointNumber in CPathParameters should be at offset 0x4");
 		static_assert(offsetof(CS2::particles::CPathParameters, m_nBulgeControl) == 0x8, "m_nBulgeControl in CPathParameters should be at offset 0x8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CPathParameters, m_vMidPointOffset) == 0x20, "m_vMidPointOffset in CPathParameters should be at offset 0x20");
 		static_assert(offsetof(CS2::particles::CPathParameters, m_vEndOffset) == 0x2C, "m_vEndOffset in CPathParameters should be at offset 0x2C");
 		static_assert(sizeof(CS2::particles::CPathParameters) == 0x40, "CPathParameters size should be 0x40");
+
+#endif
 	}
 }

@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 m_flWidth; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flLateReflections; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFreeverbDesc_t, m_flRoomSize) == 0x0, "m_flRoomSize in VMixFreeverbDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFreeverbDesc_t, m_flDamp) == 0x4, "m_flDamp in VMixFreeverbDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFreeverbDesc_t, m_flWidth) == 0x8, "m_flWidth in VMixFreeverbDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixFreeverbDesc_t, m_flLateReflections) == 0xC, "m_flLateReflections in VMixFreeverbDesc_t should be at offset 0xC");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixFreeverbDesc_t) == 0x10, "VMixFreeverbDesc_t size should be 0x10");
+
+#endif
 	}
 }

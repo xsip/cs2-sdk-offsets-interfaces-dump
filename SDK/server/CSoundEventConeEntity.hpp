@@ -27,11 +27,14 @@ namespace CS2 {
 			float32 m_flAttenMax; // 0x564 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlSymbolLarge m_iszParameterName; // 0x568 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundEventConeEntity, m_flEmitterAngle) == 0x558, "m_flEmitterAngle in CSoundEventConeEntity should be at offset 0x558");
 		static_assert(offsetof(CS2::server::CSoundEventConeEntity, m_flSweetSpotAngle) == 0x55C, "m_flSweetSpotAngle in CSoundEventConeEntity should be at offset 0x55C");
 		static_assert(offsetof(CS2::server::CSoundEventConeEntity, m_flAttenMin) == 0x560, "m_flAttenMin in CSoundEventConeEntity should be at offset 0x560");
 		static_assert(offsetof(CS2::server::CSoundEventConeEntity, m_flAttenMax) == 0x564, "m_flAttenMax in CSoundEventConeEntity should be at offset 0x564");
 		static_assert(offsetof(CS2::server::CSoundEventConeEntity, m_iszParameterName) == 0x568, "m_iszParameterName in CSoundEventConeEntity should be at offset 0x568");
 		static_assert(sizeof(CS2::server::CSoundEventConeEntity) == 0x570, "CSoundEventConeEntity size should be 0x570");
+
+#endif
 	}
 }

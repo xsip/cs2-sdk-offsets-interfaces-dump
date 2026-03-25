@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_vExtent; // 0x748 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CScriptNavBlocker, m_vExtent) == 0x748, "m_vExtent in CScriptNavBlocker should be at offset 0x748");
 		static_assert(sizeof(CS2::server::CScriptNavBlocker) == 0x758, "CScriptNavBlocker size should be 0x758");
+
+#endif
 	}
 }

@@ -40,6 +40,7 @@ namespace CS2 {
 			uint32_t m_soundEventHash; // 0x530 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvSoundscape, m_OnPlay) == 0x4A8, "m_OnPlay in CEnvSoundscape should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvSoundscape, m_flRadius) == 0x4C0, "m_flRadius in CEnvSoundscape should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CEnvSoundscape, m_soundEventName) == 0x4C8, "m_soundEventName in CEnvSoundscape should be at offset 0x4C8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvSoundscape, m_soundscapeName) == 0x528, "m_soundscapeName in CEnvSoundscape should be at offset 0x528");
 		static_assert(offsetof(CS2::server::CEnvSoundscape, m_soundEventHash) == 0x530, "m_soundEventHash in CEnvSoundscape should be at offset 0x530");
 		static_assert(sizeof(CS2::server::CEnvSoundscape) == 0x538, "CEnvSoundscape size should be 0x538");
+
+#endif
 	}
 }

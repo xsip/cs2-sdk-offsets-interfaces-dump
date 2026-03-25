@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bUseStartValue; // 0x1b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatEaseNode_CDefinition, m_flEaseTime) == 0x10, "m_flEaseTime in CNmFloatEaseNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatEaseNode_CDefinition, m_flStartValue) == 0x14, "m_flStartValue in CNmFloatEaseNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmFloatEaseNode_CDefinition, m_nInputValueNodeIdx) == 0x18, "m_nInputValueNodeIdx in CNmFloatEaseNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmFloatEaseNode_CDefinition, m_easingOp) == 0x1A, "m_easingOp in CNmFloatEaseNode::CDefinition should be at offset 0x1A");
 		static_assert(offsetof(CS2::animlib::CNmFloatEaseNode_CDefinition, m_bUseStartValue) == 0x1B, "m_bUseStartValue in CNmFloatEaseNode::CDefinition should be at offset 0x1B");
 		static_assert(sizeof(CS2::animlib::CNmFloatEaseNode_CDefinition) == 0x20, "CNmFloatEaseNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

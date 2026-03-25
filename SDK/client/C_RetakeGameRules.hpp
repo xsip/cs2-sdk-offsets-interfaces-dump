@@ -36,6 +36,7 @@ namespace CS2 {
 			// char m_hBombPlanter[0x4]; // 0x148 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_nMatchSeed) == 0x138, "m_nMatchSeed in C_RetakeGameRules should be at offset 0x138");
 		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_bBlockersPresent) == 0x13C, "m_bBlockersPresent in C_RetakeGameRules should be at offset 0x13C");
 		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_bRoundInProgress) == 0x13D, "m_bRoundInProgress in C_RetakeGameRules should be at offset 0x13D");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_iBombSite) == 0x144, "m_iBombSite in C_RetakeGameRules should be at offset 0x144");
 		static_assert(offsetof(CS2::client::C_RetakeGameRules, m_hBombPlanter) == 0x148, "m_hBombPlanter in C_RetakeGameRules should be at offset 0x148");
 		static_assert(sizeof(CS2::client::C_RetakeGameRules) == 0x158, "C_RetakeGameRules size should be 0x158");
+
+#endif
 	}
 }

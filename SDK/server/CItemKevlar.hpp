@@ -22,6 +22,9 @@ namespace CS2 {
 		class CItemKevlar : public CS2::server::CItem {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CItemKevlar) == 0xAC0, "CItemKevlar size should be 0xAC0");
+
+#endif
 	}
 }

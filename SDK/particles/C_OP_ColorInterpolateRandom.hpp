@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bEaseInOut; // 0x208 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_ColorFadeMin) == 0x1D0, "m_ColorFadeMin in C_OP_ColorInterpolateRandom should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_ColorFadeMax) == 0x1EC, "m_ColorFadeMax in C_OP_ColorInterpolateRandom should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_flFadeStartTime) == 0x1FC, "m_flFadeStartTime in C_OP_ColorInterpolateRandom should be at offset 0x1FC");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_nFieldOutput) == 0x204, "m_nFieldOutput in C_OP_ColorInterpolateRandom should be at offset 0x204");
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolateRandom, m_bEaseInOut) == 0x208, "m_bEaseInOut in C_OP_ColorInterpolateRandom should be at offset 0x208");
 		static_assert(sizeof(CS2::particles::C_OP_ColorInterpolateRandom) == 0x210, "C_OP_ColorInterpolateRandom size should be 0x210");
+
+#endif
 	}
 }

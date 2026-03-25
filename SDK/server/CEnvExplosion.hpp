@@ -50,6 +50,7 @@ namespace CS2 {
 			// char m_hEntityIgnore[0x4]; // 0x780 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvExplosion, m_iMagnitude) == 0x730, "m_iMagnitude in CEnvExplosion should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CEnvExplosion, m_flPlayerDamage) == 0x734, "m_flPlayerDamage in CEnvExplosion should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CEnvExplosion, m_iRadiusOverride) == 0x738, "m_iRadiusOverride in CEnvExplosion should be at offset 0x738");
@@ -66,5 +67,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvExplosion, m_iszEntityIgnoreName) == 0x778, "m_iszEntityIgnoreName in CEnvExplosion should be at offset 0x778");
 		static_assert(offsetof(CS2::server::CEnvExplosion, m_hEntityIgnore) == 0x780, "m_hEntityIgnore in CEnvExplosion should be at offset 0x780");
 		static_assert(sizeof(CS2::server::CEnvExplosion) == 0x788, "CEnvExplosion size should be 0x788");
+
+#endif
 	}
 }

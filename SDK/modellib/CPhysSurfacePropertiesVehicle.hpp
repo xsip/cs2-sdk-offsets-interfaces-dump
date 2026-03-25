@@ -23,8 +23,11 @@ namespace CS2 {
 			float32 m_wheelDrag; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_wheelFrictionScale; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesVehicle, m_wheelDrag) == 0x0, "m_wheelDrag in CPhysSurfacePropertiesVehicle should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesVehicle, m_wheelFrictionScale) == 0x4, "m_wheelFrictionScale in CPhysSurfacePropertiesVehicle should be at offset 0x4");
 		static_assert(sizeof(CS2::modellib::CPhysSurfacePropertiesVehicle) == 0x8, "CPhysSurfacePropertiesVehicle size should be 0x8");
+
+#endif
 	}
 }

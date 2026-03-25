@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nodeIndex; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateNodeRef, m_nodeIndex) == 0x8, "m_nodeIndex in CAnimUpdateNodeRef should be at offset 0x8");
 		static_assert(sizeof(CS2::animgraphlib::CAnimUpdateNodeRef) == 0x10, "CAnimUpdateNodeRef size should be 0x10");
+
+#endif
 	}
 }

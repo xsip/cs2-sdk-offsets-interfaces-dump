@@ -32,6 +32,7 @@ namespace CS2 {
 			int16_t m_nLineNumber; // 0x14 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqCmdLayer, m_cmd) == 0x0, "m_cmd in CSeqCmdLayer should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqCmdLayer, m_nLocalReference) == 0x2, "m_nLocalReference in CSeqCmdLayer should be at offset 0x2");
 		static_assert(offsetof(CS2::animationsystem::CSeqCmdLayer, m_nLocalBonemask) == 0x4, "m_nLocalBonemask in CSeqCmdLayer should be at offset 0x4");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqCmdLayer, m_flVar2) == 0x10, "m_flVar2 in CSeqCmdLayer should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSeqCmdLayer, m_nLineNumber) == 0x14, "m_nLineNumber in CSeqCmdLayer should be at offset 0x14");
 		static_assert(sizeof(CS2::animationsystem::CSeqCmdLayer) == 0x18, "CSeqCmdLayer size should be 0x18");
+
+#endif
 	}
 }

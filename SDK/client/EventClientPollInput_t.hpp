@@ -25,8 +25,11 @@ namespace CS2 {
 			float32 m_flRealTime; // 0x28 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventClientPollInput_t, m_LoopState) == 0x0, "m_LoopState in EventClientPollInput_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::EventClientPollInput_t, m_flRealTime) == 0x28, "m_flRealTime in EventClientPollInput_t should be at offset 0x28");
 		static_assert(sizeof(CS2::client::EventClientPollInput_t) == 0x30, "EventClientPollInput_t size should be 0x30");
+
+#endif
 	}
 }

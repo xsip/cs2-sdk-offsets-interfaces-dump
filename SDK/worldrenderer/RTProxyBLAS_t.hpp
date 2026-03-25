@@ -33,6 +33,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vVertexOriginLs; // 0x2c | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vVertexExtentLs; // 0x38 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::RTProxyBLAS_t, m_nFirstIndex) == 0x0, "m_nFirstIndex in RTProxyBLAS_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::RTProxyBLAS_t, m_nIndexCount) == 0x4, "m_nIndexCount in RTProxyBLAS_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::RTProxyBLAS_t, m_nVBByteOffset) == 0x8, "m_nVBByteOffset in RTProxyBLAS_t should be at offset 0x8");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::RTProxyBLAS_t, m_vVertexOriginLs) == 0x2C, "m_vVertexOriginLs in RTProxyBLAS_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::worldrenderer::RTProxyBLAS_t, m_vVertexExtentLs) == 0x38, "m_vVertexExtentLs in RTProxyBLAS_t should be at offset 0x38");
 		static_assert(sizeof(CS2::worldrenderer::RTProxyBLAS_t) == 0x44, "RTProxyBLAS_t size should be 0x44");
+
+#endif
 	}
 }

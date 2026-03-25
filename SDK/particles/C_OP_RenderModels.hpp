@@ -101,6 +101,7 @@ namespace CS2 {
 			particles::ParticleColorBlendType_t m_nColorBlendType; // 0x2c58 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x44); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffectsBloomPass) == 0x220, "m_bOnlyRenderInEffectsBloomPass in C_OP_RenderModels should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bOnlyRenderInEffectsWaterPass) == 0x221, "m_bOnlyRenderInEffectsWaterPass in C_OP_RenderModels should be at offset 0x221");
 		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_bUseMixedResolutionRendering) == 0x222, "m_bUseMixedResolutionRendering in C_OP_RenderModels should be at offset 0x222");
@@ -157,5 +158,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_vecColorScale) == 0x25A0, "m_vecColorScale in C_OP_RenderModels should be at offset 0x25A0");
 		static_assert(offsetof(CS2::particles::C_OP_RenderModels, m_nColorBlendType) == 0x2C58, "m_nColorBlendType in C_OP_RenderModels should be at offset 0x2C58");
 		static_assert(sizeof(CS2::particles::C_OP_RenderModels) == 0x2CA0, "C_OP_RenderModels size should be 0x2CA0");
+
+#endif
 	}
 }

@@ -25,9 +25,12 @@ namespace CS2 {
 			bool m_bIsMainGraph; // 0xc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixGraphDescData, m_name) == 0x0, "m_name in CVMixGraphDescData should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixGraphDescData, m_nGraphOutputChannels) == 0x8, "m_nGraphOutputChannels in CVMixGraphDescData should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixGraphDescData, m_bIsMainGraph) == 0xC, "m_bIsMainGraph in CVMixGraphDescData should be at offset 0xC");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixGraphDescData) == 0x10, "CVMixGraphDescData size should be 0x10");
+
+#endif
 	}
 }

@@ -26,8 +26,11 @@ namespace CS2 {
 			float32 m_flMinStepsRemaining; // 0x68 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStepsRemainingMetricEvaluator, m_footIndices) == 0x50, "m_footIndices in CStepsRemainingMetricEvaluator should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CStepsRemainingMetricEvaluator, m_flMinStepsRemaining) == 0x68, "m_flMinStepsRemaining in CStepsRemainingMetricEvaluator should be at offset 0x68");
 		static_assert(sizeof(CS2::animgraphlib::CStepsRemainingMetricEvaluator) == 0x70, "CStepsRemainingMetricEvaluator size should be 0x70");
+
+#endif
 	}
 }

@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bSetUV; // 0x803 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ModelSurfaceSnapshotGenerator, m_nCPSnapshot) == 0x1D8, "m_nCPSnapshot in C_OP_ModelSurfaceSnapshotGenerator should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ModelSurfaceSnapshotGenerator, m_modelInput) == 0x1E0, "m_modelInput in C_OP_ModelSurfaceSnapshotGenerator should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_ModelSurfaceSnapshotGenerator, m_flRecalcRate) == 0x240, "m_flRecalcRate in C_OP_ModelSurfaceSnapshotGenerator should be at offset 0x240");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ModelSurfaceSnapshotGenerator, m_bSetGravity) == 0x802, "m_bSetGravity in C_OP_ModelSurfaceSnapshotGenerator should be at offset 0x802");
 		static_assert(offsetof(CS2::particles::C_OP_ModelSurfaceSnapshotGenerator, m_bSetUV) == 0x803, "m_bSetUV in C_OP_ModelSurfaceSnapshotGenerator should be at offset 0x803");
 		static_assert(sizeof(CS2::particles::C_OP_ModelSurfaceSnapshotGenerator) == 0x808, "C_OP_ModelSurfaceSnapshotGenerator size should be 0x808");
+
+#endif
 	}
 }

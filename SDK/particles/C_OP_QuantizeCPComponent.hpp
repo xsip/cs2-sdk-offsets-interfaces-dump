@@ -27,10 +27,13 @@ namespace CS2 {
 			int32_t m_nOutVectorField; // 0x34c | Schema_Builtin | Size: 0x4
 			particleslib::CParticleCollectionFloatInput m_flQuantizeValue; // 0x350 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_flInputValue) == 0x1D8, "m_flInputValue in C_OP_QuantizeCPComponent should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_nCPOutput) == 0x348, "m_nCPOutput in C_OP_QuantizeCPComponent should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_nOutVectorField) == 0x34C, "m_nOutVectorField in C_OP_QuantizeCPComponent should be at offset 0x34C");
 		static_assert(offsetof(CS2::particles::C_OP_QuantizeCPComponent, m_flQuantizeValue) == 0x350, "m_flQuantizeValue in C_OP_QuantizeCPComponent should be at offset 0x350");
 		static_assert(sizeof(CS2::particles::C_OP_QuantizeCPComponent) == 0x4C0, "C_OP_QuantizeCPComponent size should be 0x4C0");
+
+#endif
 	}
 }

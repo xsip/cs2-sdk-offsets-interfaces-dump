@@ -25,9 +25,12 @@ namespace CS2 {
 			int16_t m_nTransitionDurationOverrideNodeIdx; // 0x12 | Schema_Builtin | Size: 0x2
 			float32 m_flTransitionDurationSeconds; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmStateCompletedConditionNode_CDefinition, m_nSourceStateNodeIdx) == 0x10, "m_nSourceStateNodeIdx in CNmStateCompletedConditionNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmStateCompletedConditionNode_CDefinition, m_nTransitionDurationOverrideNodeIdx) == 0x12, "m_nTransitionDurationOverrideNodeIdx in CNmStateCompletedConditionNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmStateCompletedConditionNode_CDefinition, m_flTransitionDurationSeconds) == 0x14, "m_flTransitionDurationSeconds in CNmStateCompletedConditionNode::CDefinition should be at offset 0x14");
 		static_assert(sizeof(CS2::animlib::CNmStateCompletedConditionNode_CDefinition) == 0x18, "CNmStateCompletedConditionNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

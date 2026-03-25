@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_decodedAnims; // 0x58 | Schema_Atomic | Size: 0x18
 			// char m_decodedAnims[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t, m_nEntityIndex) == 0x0, "m_nEntityIndex in AnimationDecodeDebugDumpElement_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t, m_modelName) == 0x8, "m_modelName in AnimationDecodeDebugDumpElement_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t, m_poseParams) == 0x10, "m_poseParams in AnimationDecodeDebugDumpElement_t should be at offset 0x10");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t, m_internalOps) == 0x40, "m_internalOps in AnimationDecodeDebugDumpElement_t should be at offset 0x40");
 		static_assert(offsetof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t, m_decodedAnims) == 0x58, "m_decodedAnims in AnimationDecodeDebugDumpElement_t should be at offset 0x58");
 		static_assert(sizeof(CS2::animationsystem::AnimationDecodeDebugDumpElement_t) == 0x70, "AnimationDecodeDebugDumpElement_t size should be 0x70");
+
+#endif
 	}
 }

@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bKillNewest; // 0x360 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_nParticlesToMaintain) == 0x1D0, "m_nParticlesToMaintain in C_OP_DecayMaintainCount should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_flDecayDelay) == 0x1D4, "m_flDecayDelay in C_OP_DecayMaintainCount should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_nSnapshotControlPoint) == 0x1D8, "m_nSnapshotControlPoint in C_OP_DecayMaintainCount should be at offset 0x1D8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_flScale) == 0x1F0, "m_flScale in C_OP_DecayMaintainCount should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_OP_DecayMaintainCount, m_bKillNewest) == 0x360, "m_bKillNewest in C_OP_DecayMaintainCount should be at offset 0x360");
 		static_assert(sizeof(CS2::particles::C_OP_DecayMaintainCount) == 0x368, "C_OP_DecayMaintainCount size should be 0x368");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flNoiseAnimationTimeScale; // 0x1e4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_Noise, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_Noise should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_Noise, m_flOutputMin) == 0x1D4, "m_flOutputMin in C_OP_Noise should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_Noise, m_flOutputMax) == 0x1D8, "m_flOutputMax in C_OP_Noise should be at offset 0x1D8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_Noise, m_bAdditive) == 0x1E0, "m_bAdditive in C_OP_Noise should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_Noise, m_flNoiseAnimationTimeScale) == 0x1E4, "m_flNoiseAnimationTimeScale in C_OP_Noise should be at offset 0x1E4");
 		static_assert(sizeof(CS2::particles::C_OP_Noise) == 0x1E8, "C_OP_Noise size should be 0x1E8");
+
+#endif
 	}
 }

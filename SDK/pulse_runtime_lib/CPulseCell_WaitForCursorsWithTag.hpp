@@ -26,8 +26,11 @@ namespace CS2 {
 			S2_PAD(0x3);
 			pulse_runtime_lib::PulseCursorCancelPriority_t m_nDesiredKillPriority; // 0x9c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTag, m_bTagSelfWhenComplete) == 0x98, "m_bTagSelfWhenComplete in CPulseCell_WaitForCursorsWithTag should be at offset 0x98");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTag, m_nDesiredKillPriority) == 0x9C, "m_nDesiredKillPriority in CPulseCell_WaitForCursorsWithTag should be at offset 0x9C");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTag) == 0xA0, "CPulseCell_WaitForCursorsWithTag size should be 0xA0");
+
+#endif
 	}
 }

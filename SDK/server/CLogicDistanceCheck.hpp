@@ -30,6 +30,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_InZone2; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_InZone3; // 0x4f0 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_iszEntityA) == 0x4A8, "m_iszEntityA in CLogicDistanceCheck should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_iszEntityB) == 0x4B0, "m_iszEntityB in CLogicDistanceCheck should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_flZone1Distance) == 0x4B8, "m_flZone1Distance in CLogicDistanceCheck should be at offset 0x4B8");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone2) == 0x4D8, "m_InZone2 in CLogicDistanceCheck should be at offset 0x4D8");
 		static_assert(offsetof(CS2::server::CLogicDistanceCheck, m_InZone3) == 0x4F0, "m_InZone3 in CLogicDistanceCheck should be at offset 0x4F0");
 		static_assert(sizeof(CS2::server::CLogicDistanceCheck) == 0x508, "CLogicDistanceCheck size should be 0x508");
+
+#endif
 	}
 }

@@ -37,6 +37,7 @@ namespace CS2 {
 			char m_functionMap[0x20]; // 0x88 | Schema_Atomic | Size: 0x20
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::mathlib_extended::CFuseSymbolTable, m_constants) == 0x0, "m_constants in CFuseSymbolTable should be at offset 0x0");
 		static_assert(offsetof(CS2::mathlib_extended::CFuseSymbolTable, m_variables) == 0x18, "m_variables in CFuseSymbolTable should be at offset 0x18");
 		static_assert(offsetof(CS2::mathlib_extended::CFuseSymbolTable, m_functions) == 0x30, "m_functions in CFuseSymbolTable should be at offset 0x30");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::mathlib_extended::CFuseSymbolTable, m_variableMap) == 0x68, "m_variableMap in CFuseSymbolTable should be at offset 0x68");
 		static_assert(offsetof(CS2::mathlib_extended::CFuseSymbolTable, m_functionMap) == 0x88, "m_functionMap in CFuseSymbolTable should be at offset 0x88");
 		static_assert(sizeof(CS2::mathlib_extended::CFuseSymbolTable) == 0xB0, "CFuseSymbolTable size should be 0xB0");
+
+#endif
 	}
 }

@@ -30,11 +30,14 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_globalstate; // 0x5c8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMultiSource, m_rgEntities) == 0x4A8, "m_rgEntities in CMultiSource should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMultiSource, m_rgTriggered) == 0x528, "m_rgTriggered in CMultiSource should be at offset 0x528");
 		static_assert(offsetof(CS2::server::CMultiSource, m_OnTrigger) == 0x5A8, "m_OnTrigger in CMultiSource should be at offset 0x5A8");
 		static_assert(offsetof(CS2::server::CMultiSource, m_iTotal) == 0x5C0, "m_iTotal in CMultiSource should be at offset 0x5C0");
 		static_assert(offsetof(CS2::server::CMultiSource, m_globalstate) == 0x5C8, "m_globalstate in CMultiSource should be at offset 0x5C8");
 		static_assert(sizeof(CS2::server::CMultiSource) == 0x5D0, "CMultiSource size should be 0x5D0");
+
+#endif
 	}
 }

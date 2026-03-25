@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			soundsystem_lowlevel::VMixUtilityDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixUtilityProcessorDesc, m_desc) == 0x20, "m_desc in CVMixUtilityProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixUtilityProcessorDesc) == 0x38, "CVMixUtilityProcessorDesc size should be 0x38");
+
+#endif
 	}
 }

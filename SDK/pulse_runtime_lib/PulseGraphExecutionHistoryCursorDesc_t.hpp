@@ -29,11 +29,14 @@ namespace CS2 {
 			float32 flLastReferenced; // 0x20 | Schema_Builtin | Size: 0x4
 			int32_t nLastValidEntryIdx; // 0x24 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, vecAncestorCursorIDs) == 0x0, "vecAncestorCursorIDs in PulseGraphExecutionHistoryCursorDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, nSpawnNodeID) == 0x18, "nSpawnNodeID in PulseGraphExecutionHistoryCursorDesc_t should be at offset 0x18");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, nRetiredAtNodeID) == 0x1C, "nRetiredAtNodeID in PulseGraphExecutionHistoryCursorDesc_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, flLastReferenced) == 0x20, "flLastReferenced in PulseGraphExecutionHistoryCursorDesc_t should be at offset 0x20");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t, nLastValidEntryIdx) == 0x24, "nLastValidEntryIdx in PulseGraphExecutionHistoryCursorDesc_t should be at offset 0x24");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PulseGraphExecutionHistoryCursorDesc_t) == 0x28, "PulseGraphExecutionHistoryCursorDesc_t size should be 0x28");
+
+#endif
 	}
 }

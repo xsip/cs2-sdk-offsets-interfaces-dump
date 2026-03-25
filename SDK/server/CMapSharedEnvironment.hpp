@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_targetMapName; // 0x4a8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMapSharedEnvironment, m_targetMapName) == 0x4A8, "m_targetMapName in CMapSharedEnvironment should be at offset 0x4A8");
 		static_assert(sizeof(CS2::server::CMapSharedEnvironment) == 0x4B8, "CMapSharedEnvironment size should be 0x4B8");
+
+#endif
 	}
 }

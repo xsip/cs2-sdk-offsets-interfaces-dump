@@ -28,9 +28,12 @@ namespace CS2 {
 			animgraphlib::CAnimParamHandle m_hParamOut; // 0x22 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CDampedValueUpdateItem, m_damping) == 0x0, "m_damping in CDampedValueUpdateItem should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CDampedValueUpdateItem, m_hParamIn) == 0x20, "m_hParamIn in CDampedValueUpdateItem should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::CDampedValueUpdateItem, m_hParamOut) == 0x22, "m_hParamOut in CDampedValueUpdateItem should be at offset 0x22");
 		static_assert(sizeof(CS2::animgraphlib::CDampedValueUpdateItem) == 0x28, "CDampedValueUpdateItem size should be 0x28");
+
+#endif
 	}
 }

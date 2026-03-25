@@ -49,6 +49,7 @@ namespace CS2 {
 			client::EKillTypes_t m_killType; // 0x75 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CDamageRecord, m_PlayerDamager) == 0x30, "m_PlayerDamager in CDamageRecord should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_PlayerRecipient) == 0x34, "m_PlayerRecipient in CDamageRecord should be at offset 0x34");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_hPlayerControllerDamager) == 0x38, "m_hPlayerControllerDamager in CDamageRecord should be at offset 0x38");
@@ -65,5 +66,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CDamageRecord, m_bIsOtherEnemy) == 0x74, "m_bIsOtherEnemy in CDamageRecord should be at offset 0x74");
 		static_assert(offsetof(CS2::client::CDamageRecord, m_killType) == 0x75, "m_killType in CDamageRecord should be at offset 0x75");
 		static_assert(sizeof(CS2::client::CDamageRecord) == 0x78, "CDamageRecord size should be 0x78");
+
+#endif
 	}
 }

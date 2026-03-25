@@ -31,8 +31,11 @@ namespace CS2 {
 			// char m_hFilter[0x4]; // 0x738 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerVolume, m_iFilterName) == 0x730, "m_iFilterName in CTriggerVolume should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CTriggerVolume, m_hFilter) == 0x738, "m_hFilter in CTriggerVolume should be at offset 0x738");
 		static_assert(sizeof(CS2::server::CTriggerVolume) == 0x740, "CTriggerVolume size should be 0x740");
+
+#endif
 	}
 }

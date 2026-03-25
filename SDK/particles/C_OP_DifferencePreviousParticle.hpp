@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bSetPreviousParticle; // 0x1ed | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DifferencePreviousParticle, m_nFieldInput) == 0x1D0, "m_nFieldInput in C_OP_DifferencePreviousParticle should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DifferencePreviousParticle, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_DifferencePreviousParticle should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_DifferencePreviousParticle, m_flInputMin) == 0x1D8, "m_flInputMin in C_OP_DifferencePreviousParticle should be at offset 0x1D8");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_DifferencePreviousParticle, m_bActiveRange) == 0x1EC, "m_bActiveRange in C_OP_DifferencePreviousParticle should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_OP_DifferencePreviousParticle, m_bSetPreviousParticle) == 0x1ED, "m_bSetPreviousParticle in C_OP_DifferencePreviousParticle should be at offset 0x1ED");
 		static_assert(sizeof(CS2::particles::C_OP_DifferencePreviousParticle) == 0x1F0, "C_OP_DifferencePreviousParticle size should be 0x1F0");
+
+#endif
 	}
 }

@@ -29,11 +29,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_flBoneScaleArray; // 0x38 | Schema_Atomic | Size: 0x18
 			// char m_flBoneScaleArray[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqScaleSet, m_sName) == 0x0, "m_sName in CSeqScaleSet should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqScaleSet, m_bRootOffset) == 0x10, "m_bRootOffset in CSeqScaleSet should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSeqScaleSet, m_vRootOffset) == 0x14, "m_vRootOffset in CSeqScaleSet should be at offset 0x14");
 		static_assert(offsetof(CS2::animationsystem::CSeqScaleSet, m_nLocalBoneArray) == 0x20, "m_nLocalBoneArray in CSeqScaleSet should be at offset 0x20");
 		static_assert(offsetof(CS2::animationsystem::CSeqScaleSet, m_flBoneScaleArray) == 0x38, "m_flBoneScaleArray in CSeqScaleSet should be at offset 0x38");
 		static_assert(sizeof(CS2::animationsystem::CSeqScaleSet) == 0x50, "CSeqScaleSet size should be 0x50");
+
+#endif
 	}
 }

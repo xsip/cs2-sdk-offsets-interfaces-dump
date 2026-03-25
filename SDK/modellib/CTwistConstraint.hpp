@@ -26,9 +26,12 @@ namespace CS2 {
 			GlobalTypes::Quaternion m_qParentBindRotation; // 0x70 | Schema_Atomic | Size: 0x10
 			GlobalTypes::Quaternion m_qChildBindRotation; // 0x80 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CTwistConstraint, m_bInverse) == 0x60, "m_bInverse in CTwistConstraint should be at offset 0x60");
 		static_assert(offsetof(CS2::modellib::CTwistConstraint, m_qParentBindRotation) == 0x70, "m_qParentBindRotation in CTwistConstraint should be at offset 0x70");
 		static_assert(offsetof(CS2::modellib::CTwistConstraint, m_qChildBindRotation) == 0x80, "m_qChildBindRotation in CTwistConstraint should be at offset 0x80");
 		static_assert(sizeof(CS2::modellib::CTwistConstraint) == 0x90, "CTwistConstraint size should be 0x90");
+
+#endif
 	}
 }

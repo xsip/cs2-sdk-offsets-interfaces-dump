@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_flOffsetRot; // 0x1d8 | Schema_Builtin | Size: 0x4
 			int32_t m_nComponent; // 0x1dc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapControlPointOrientationToRotation, m_nCP) == 0x1D0, "m_nCP in C_OP_RemapControlPointOrientationToRotation should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapControlPointOrientationToRotation, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapControlPointOrientationToRotation should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapControlPointOrientationToRotation, m_flOffsetRot) == 0x1D8, "m_flOffsetRot in C_OP_RemapControlPointOrientationToRotation should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapControlPointOrientationToRotation, m_nComponent) == 0x1DC, "m_nComponent in C_OP_RemapControlPointOrientationToRotation should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::C_OP_RemapControlPointOrientationToRotation) == 0x1E0, "C_OP_RemapControlPointOrientationToRotation size should be 0x1E0");
+
+#endif
 	}
 }

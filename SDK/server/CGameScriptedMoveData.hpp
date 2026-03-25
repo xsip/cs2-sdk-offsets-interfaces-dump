@@ -48,6 +48,7 @@ namespace CS2 {
 			GlobalTypes::CHandle<server::CBaseEntity> m_hDestEntity; // 0x70 | Schema_Atomic | Size: 0x4
 			// char m_hDestEntity[0x4]; // 0x70 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameScriptedMoveData, m_vAccumulatedRootMotion) == 0x0, "m_vAccumulatedRootMotion in CGameScriptedMoveData should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CGameScriptedMoveData, m_angAccumulatedRootMotionRotation) == 0xC, "m_angAccumulatedRootMotionRotation in CGameScriptedMoveData should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CGameScriptedMoveData, m_vSrc) == 0x18, "m_vSrc in CGameScriptedMoveData should be at offset 0x18");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CGameScriptedMoveData, m_angDst) == 0x64, "m_angDst in CGameScriptedMoveData should be at offset 0x64");
 		static_assert(offsetof(CS2::server::CGameScriptedMoveData, m_hDestEntity) == 0x70, "m_hDestEntity in CGameScriptedMoveData should be at offset 0x70");
 		static_assert(sizeof(CS2::server::CGameScriptedMoveData) == 0x74, "CGameScriptedMoveData size should be 0x74");
+
+#endif
 	}
 }

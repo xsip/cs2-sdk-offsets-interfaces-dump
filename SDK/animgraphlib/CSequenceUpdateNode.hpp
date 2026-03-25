@@ -30,10 +30,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animgraphlib::TagSpan_t> m_tags; // 0x98 | Schema_Atomic | Size: 0x18
 			// char m_tags[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNode, m_hSequence) == 0x78, "m_hSequence in CSequenceUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNode, m_duration) == 0x7C, "m_duration in CSequenceUpdateNode should be at offset 0x7C");
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNode, m_paramSpans) == 0x80, "m_paramSpans in CSequenceUpdateNode should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNode, m_tags) == 0x98, "m_tags in CSequenceUpdateNode should be at offset 0x98");
 		static_assert(sizeof(CS2::animgraphlib::CSequenceUpdateNode) == 0xB0, "CSequenceUpdateNode size should be 0xB0");
+
+#endif
 	}
 }

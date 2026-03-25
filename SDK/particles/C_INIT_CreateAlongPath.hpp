@@ -31,11 +31,14 @@ namespace CS2 {
 			bool m_bSaveOffset; // 0x230 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_fMaxDistance) == 0x1D8, "m_fMaxDistance in C_INIT_CreateAlongPath should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_PathParams) == 0x1E0, "m_PathParams in C_INIT_CreateAlongPath should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_bUseRandomCPs) == 0x220, "m_bUseRandomCPs in C_INIT_CreateAlongPath should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_vEndOffset) == 0x224, "m_vEndOffset in C_INIT_CreateAlongPath should be at offset 0x224");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateAlongPath, m_bSaveOffset) == 0x230, "m_bSaveOffset in C_INIT_CreateAlongPath should be at offset 0x230");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateAlongPath) == 0x240, "C_INIT_CreateAlongPath size should be 0x240");
+
+#endif
 	}
 }

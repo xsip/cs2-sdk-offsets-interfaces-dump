@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bEnabled; // 0x4bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_nMode) == 0x4AC, "m_nMode in CInfoVisibilityBox should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_vBoxSize) == 0x4B0, "m_vBoxSize in CInfoVisibilityBox should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CInfoVisibilityBox, m_bEnabled) == 0x4BC, "m_bEnabled in CInfoVisibilityBox should be at offset 0x4BC");
 		static_assert(sizeof(CS2::server::CInfoVisibilityBox) == 0x4C0, "CInfoVisibilityBox size should be 0x4C0");
+
+#endif
 	}
 }

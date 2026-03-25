@@ -41,6 +41,7 @@ namespace CS2 {
 			float32 m_flRemapBias; // 0x2f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RemapTransformToVector, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_INIT_RemapTransformToVector should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapTransformToVector, m_vInputMin) == 0x1DC, "m_vInputMin in C_INIT_RemapTransformToVector should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapTransformToVector, m_vInputMax) == 0x1E8, "m_vInputMax in C_INIT_RemapTransformToVector should be at offset 0x1E8");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_RemapTransformToVector, m_bAccelerate) == 0x2ED, "m_bAccelerate in C_INIT_RemapTransformToVector should be at offset 0x2ED");
 		static_assert(offsetof(CS2::particles::C_INIT_RemapTransformToVector, m_flRemapBias) == 0x2F0, "m_flRemapBias in C_INIT_RemapTransformToVector should be at offset 0x2F0");
 		static_assert(sizeof(CS2::particles::C_INIT_RemapTransformToVector) == 0x2F8, "C_INIT_RemapTransformToVector size should be 0x2F8");
+
+#endif
 	}
 }

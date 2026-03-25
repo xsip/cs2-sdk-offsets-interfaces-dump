@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bTrailBias; // 0x90c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flSpeedMin) == 0x1D8, "m_flSpeedMin in C_INIT_MoveBetweenPoints should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flSpeedMax) == 0x348, "m_flSpeedMax in C_INIT_MoveBetweenPoints should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_flEndSpread) == 0x4B8, "m_flEndSpread in C_INIT_MoveBetweenPoints should be at offset 0x4B8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_nEndControlPointNumber) == 0x908, "m_nEndControlPointNumber in C_INIT_MoveBetweenPoints should be at offset 0x908");
 		static_assert(offsetof(CS2::particles::C_INIT_MoveBetweenPoints, m_bTrailBias) == 0x90C, "m_bTrailBias in C_INIT_MoveBetweenPoints should be at offset 0x90C");
 		static_assert(sizeof(CS2::particles::C_INIT_MoveBetweenPoints) == 0x910, "C_INIT_MoveBetweenPoints size should be 0x910");
+
+#endif
 	}
 }

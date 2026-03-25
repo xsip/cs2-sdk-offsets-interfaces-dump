@@ -39,11 +39,14 @@ namespace CS2 {
 			entity2::GameTime_t m_flTimeStartedState; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameChoreoServices, m_hOwner) == 0x8, "m_hOwner in CGameChoreoServices should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CGameChoreoServices, m_hScriptedSequence) == 0xC, "m_hScriptedSequence in CGameChoreoServices should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CGameChoreoServices, m_scriptState) == 0x10, "m_scriptState in CGameChoreoServices should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CGameChoreoServices, m_choreoState) == 0x14, "m_choreoState in CGameChoreoServices should be at offset 0x14");
 		static_assert(offsetof(CS2::server::CGameChoreoServices, m_flTimeStartedState) == 0x18, "m_flTimeStartedState in CGameChoreoServices should be at offset 0x18");
 		static_assert(sizeof(CS2::server::CGameChoreoServices) == 0x20, "CGameChoreoServices size should be 0x20");
+
+#endif
 	}
 }

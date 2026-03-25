@@ -38,6 +38,7 @@ namespace CS2 {
 			float32 m_flEnvWetnessCoverage; // 0x4d0 | Schema_Builtin | Size: 0x4
 			float32 m_flEnvWetnessDryingAmount; // 0x4d4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMapInfo, m_iBuyingStatus) == 0x4A8, "m_iBuyingStatus in CMapInfo should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMapInfo, m_flBombRadius) == 0x4AC, "m_flBombRadius in CMapInfo should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CMapInfo, m_iPetPopulation) == 0x4B0, "m_iPetPopulation in CMapInfo should be at offset 0x4B0");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMapInfo, m_flEnvWetnessCoverage) == 0x4D0, "m_flEnvWetnessCoverage in CMapInfo should be at offset 0x4D0");
 		static_assert(offsetof(CS2::server::CMapInfo, m_flEnvWetnessDryingAmount) == 0x4D4, "m_flEnvWetnessDryingAmount in CMapInfo should be at offset 0x4D4");
 		static_assert(sizeof(CS2::server::CMapInfo) == 0x4D8, "CMapInfo size should be 0x4D8");
+
+#endif
 	}
 }

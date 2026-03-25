@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flHorizontalAngleDegrees; // 0x88 | Schema_Builtin | Size: 0x4
 			float32 m_flVerticalAngleDegrees; // 0x8c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_nChainEndBoneIdx) == 0x58, "m_nChainEndBoneIdx in CNmChainLookatTask should be at offset 0x58");
 		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_nNumBonesInChain) == 0x5C, "m_nNumBonesInChain in CNmChainLookatTask should be at offset 0x5C");
 		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_chainForwardDir) == 0x60, "m_chainForwardDir in CNmChainLookatTask should be at offset 0x60");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flHorizontalAngleDegrees) == 0x88, "m_flHorizontalAngleDegrees in CNmChainLookatTask should be at offset 0x88");
 		static_assert(offsetof(CS2::animlib::CNmChainLookatTask, m_flVerticalAngleDegrees) == 0x8C, "m_flVerticalAngleDegrees in CNmChainLookatTask should be at offset 0x8C");
 		static_assert(sizeof(CS2::animlib::CNmChainLookatTask) == 0x90, "CNmChainLookatTask size should be 0x90");
+
+#endif
 	}
 }

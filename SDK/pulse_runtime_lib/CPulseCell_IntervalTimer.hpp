@@ -26,8 +26,11 @@ namespace CS2 {
 			pulse_runtime_lib::CPulse_ResumePoint m_Completed; // 0x48 | Schema_DeclaredClass | Size: 0x48
 			pulse_runtime_lib::SignatureOutflow_Continue m_OnInterval; // 0x90 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_IntervalTimer, m_Completed) == 0x48, "m_Completed in CPulseCell_IntervalTimer should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_IntervalTimer, m_OnInterval) == 0x90, "m_OnInterval in CPulseCell_IntervalTimer should be at offset 0x90");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_IntervalTimer) == 0xD8, "CPulseCell_IntervalTimer size should be 0xD8");
+
+#endif
 	}
 }

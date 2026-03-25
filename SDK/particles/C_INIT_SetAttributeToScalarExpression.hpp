@@ -35,6 +35,7 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x634 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x28); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nExpression) == 0x1D8, "m_nExpression in C_INIT_SetAttributeToScalarExpression should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flInput1) == 0x1E0, "m_flInput1 in C_INIT_SetAttributeToScalarExpression should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_flInput2) == 0x350, "m_flInput2 in C_INIT_SetAttributeToScalarExpression should be at offset 0x350");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nOutputField) == 0x630, "m_nOutputField in C_INIT_SetAttributeToScalarExpression should be at offset 0x630");
 		static_assert(offsetof(CS2::particles::C_INIT_SetAttributeToScalarExpression, m_nSetMethod) == 0x634, "m_nSetMethod in C_INIT_SetAttributeToScalarExpression should be at offset 0x634");
 		static_assert(sizeof(CS2::particles::C_INIT_SetAttributeToScalarExpression) == 0x660, "C_INIT_SetAttributeToScalarExpression size should be 0x660");
+
+#endif
 	}
 }

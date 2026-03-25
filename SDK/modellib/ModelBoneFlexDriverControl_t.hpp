@@ -29,11 +29,14 @@ namespace CS2 {
 			float32 m_flMax; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriverControl_t, m_nBoneComponent) == 0x0, "m_nBoneComponent in ModelBoneFlexDriverControl_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriverControl_t, m_flexController) == 0x8, "m_flexController in ModelBoneFlexDriverControl_t should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriverControl_t, m_flexControllerToken) == 0x10, "m_flexControllerToken in ModelBoneFlexDriverControl_t should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriverControl_t, m_flMin) == 0x14, "m_flMin in ModelBoneFlexDriverControl_t should be at offset 0x14");
 		static_assert(offsetof(CS2::modellib::ModelBoneFlexDriverControl_t, m_flMax) == 0x18, "m_flMax in ModelBoneFlexDriverControl_t should be at offset 0x18");
 		static_assert(sizeof(CS2::modellib::ModelBoneFlexDriverControl_t) == 0x20, "ModelBoneFlexDriverControl_t size should be 0x20");
+
+#endif
 	}
 }

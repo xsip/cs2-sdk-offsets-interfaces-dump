@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CSmartPropVariableComparison m_VariableComparison; // 0x50 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_VariableValue, m_VariableComparison) == 0x50, "m_VariableComparison in CSmartPropFilter_VariableValue should be at offset 0x50");
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilter_VariableValue) == 0x70, "CSmartPropFilter_VariableValue size should be 0x70");
+
+#endif
 	}
 }

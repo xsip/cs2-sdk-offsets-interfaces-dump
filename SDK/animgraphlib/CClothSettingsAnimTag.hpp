@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_nVertexSet; // 0x68 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CClothSettingsAnimTag, m_flStiffness) == 0x58, "m_flStiffness in CClothSettingsAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CClothSettingsAnimTag, m_flEaseIn) == 0x5C, "m_flEaseIn in CClothSettingsAnimTag should be at offset 0x5C");
 		static_assert(offsetof(CS2::animgraphlib::CClothSettingsAnimTag, m_flEaseOut) == 0x60, "m_flEaseOut in CClothSettingsAnimTag should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CClothSettingsAnimTag, m_nVertexSet) == 0x68, "m_nVertexSet in CClothSettingsAnimTag should be at offset 0x68");
 		static_assert(sizeof(CS2::animgraphlib::CClothSettingsAnimTag) == 0x70, "CClothSettingsAnimTag size should be 0x70");
+
+#endif
 	}
 }

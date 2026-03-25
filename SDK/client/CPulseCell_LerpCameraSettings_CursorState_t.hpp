@@ -32,9 +32,12 @@ namespace CS2 {
 			client::PointCameraSettings_t m_OverlaidStart; // 0xc | Schema_DeclaredClass | Size: 0x10
 			client::PointCameraSettings_t m_OverlaidEnd; // 0x1c | Schema_DeclaredClass | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPulseCell_LerpCameraSettings_CursorState_t, m_hCamera) == 0x8, "m_hCamera in CPulseCell_LerpCameraSettings::CursorState_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CPulseCell_LerpCameraSettings_CursorState_t, m_OverlaidStart) == 0xC, "m_OverlaidStart in CPulseCell_LerpCameraSettings::CursorState_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::CPulseCell_LerpCameraSettings_CursorState_t, m_OverlaidEnd) == 0x1C, "m_OverlaidEnd in CPulseCell_LerpCameraSettings::CursorState_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::client::CPulseCell_LerpCameraSettings_CursorState_t) == 0x2C, "CPulseCell_LerpCameraSettings::CursorState_t size should be 0x2C");
+
+#endif
 	}
 }

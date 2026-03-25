@@ -61,6 +61,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			GlobalTypes::CUtlSymbolLarge m_szDisplayText; // 0x8a8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseButton, m_angMoveEntitySpace) == 0x7B0, "m_angMoveEntitySpace in CBaseButton should be at offset 0x7B0");
 		static_assert(offsetof(CS2::server::CBaseButton, m_fStayPushed) == 0x7BC, "m_fStayPushed in CBaseButton should be at offset 0x7BC");
 		static_assert(offsetof(CS2::server::CBaseButton, m_fRotating) == 0x7BD, "m_fRotating in CBaseButton should be at offset 0x7BD");
@@ -87,5 +88,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseButton, m_usable) == 0x8A4, "m_usable in CBaseButton should be at offset 0x8A4");
 		static_assert(offsetof(CS2::server::CBaseButton, m_szDisplayText) == 0x8A8, "m_szDisplayText in CBaseButton should be at offset 0x8A8");
 		static_assert(sizeof(CS2::server::CBaseButton) == 0x8B0, "CBaseButton size should be 0x8B0");
+
+#endif
 	}
 }

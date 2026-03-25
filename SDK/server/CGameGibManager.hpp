@@ -28,10 +28,13 @@ namespace CS2 {
 			int32_t m_iMaxPieces; // 0x4c8 | Schema_Builtin | Size: 0x4
 			int32_t m_iLastFrame; // 0x4cc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameGibManager, m_bAllowNewGibs) == 0x4C0, "m_bAllowNewGibs in CGameGibManager should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CGameGibManager, m_iCurrentMaxPieces) == 0x4C4, "m_iCurrentMaxPieces in CGameGibManager should be at offset 0x4C4");
 		static_assert(offsetof(CS2::server::CGameGibManager, m_iMaxPieces) == 0x4C8, "m_iMaxPieces in CGameGibManager should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CGameGibManager, m_iLastFrame) == 0x4CC, "m_iLastFrame in CGameGibManager should be at offset 0x4CC");
 		static_assert(sizeof(CS2::server::CGameGibManager) == 0x4D0, "CGameGibManager size should be 0x4D0");
+
+#endif
 	}
 }

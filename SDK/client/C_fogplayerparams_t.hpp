@@ -42,6 +42,7 @@ namespace CS2 {
 			float32 m_flNewHDRColorScale; // 0x38 | Schema_Builtin | Size: 0x4
 			float32 m_flNewFarZ; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_fogplayerparams_t, m_hCtrl) == 0x8, "m_hCtrl in C_fogplayerparams_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::C_fogplayerparams_t, m_flTransitionTime) == 0xC, "m_flTransitionTime in C_fogplayerparams_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::C_fogplayerparams_t, m_OldColor) == 0x10, "m_OldColor in C_fogplayerparams_t should be at offset 0x10");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_fogplayerparams_t, m_flNewHDRColorScale) == 0x38, "m_flNewHDRColorScale in C_fogplayerparams_t should be at offset 0x38");
 		static_assert(offsetof(CS2::client::C_fogplayerparams_t, m_flNewFarZ) == 0x3C, "m_flNewFarZ in C_fogplayerparams_t should be at offset 0x3C");
 		static_assert(sizeof(CS2::client::C_fogplayerparams_t) == 0x40, "C_fogplayerparams_t size should be 0x40");
+
+#endif
 	}
 }

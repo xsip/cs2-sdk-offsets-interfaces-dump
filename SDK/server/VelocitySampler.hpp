@@ -25,9 +25,12 @@ namespace CS2 {
 			entity2::GameTime_t m_fPrevSampleTime; // 0xc | Schema_DeclaredClass | Size: 0x4
 			float32 m_fIdealSampleRate; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::VelocitySampler, m_prevSample) == 0x0, "m_prevSample in VelocitySampler should be at offset 0x0");
 		static_assert(offsetof(CS2::server::VelocitySampler, m_fPrevSampleTime) == 0xC, "m_fPrevSampleTime in VelocitySampler should be at offset 0xC");
 		static_assert(offsetof(CS2::server::VelocitySampler, m_fIdealSampleRate) == 0x10, "m_fIdealSampleRate in VelocitySampler should be at offset 0x10");
 		static_assert(sizeof(CS2::server::VelocitySampler) == 0x14, "VelocitySampler size should be 0x14");
+
+#endif
 	}
 }

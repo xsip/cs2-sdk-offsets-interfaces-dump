@@ -24,9 +24,12 @@ namespace CS2 {
 			GlobalTypes::CUtlStringToken m_nameToken; // 0x8 | Schema_Atomic | Size: 0x4
 			float32 m_flValue; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::mathlib_extended::ConstantInfo_t, m_name) == 0x0, "m_name in ConstantInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::mathlib_extended::ConstantInfo_t, m_nameToken) == 0x8, "m_nameToken in ConstantInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::mathlib_extended::ConstantInfo_t, m_flValue) == 0xC, "m_flValue in ConstantInfo_t should be at offset 0xC");
 		static_assert(sizeof(CS2::mathlib_extended::ConstantInfo_t) == 0x10, "ConstantInfo_t size should be 0x10");
+
+#endif
 	}
 }

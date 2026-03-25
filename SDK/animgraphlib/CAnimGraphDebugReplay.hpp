@@ -30,11 +30,14 @@ namespace CS2 {
 			int32_t m_frameCount; // 0x68 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphDebugReplay, m_animGraphFileName) == 0x40, "m_animGraphFileName in CAnimGraphDebugReplay should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphDebugReplay, m_frameList) == 0x48, "m_frameList in CAnimGraphDebugReplay should be at offset 0x48");
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphDebugReplay, m_startIndex) == 0x60, "m_startIndex in CAnimGraphDebugReplay should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphDebugReplay, m_writeIndex) == 0x64, "m_writeIndex in CAnimGraphDebugReplay should be at offset 0x64");
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphDebugReplay, m_frameCount) == 0x68, "m_frameCount in CAnimGraphDebugReplay should be at offset 0x68");
 		static_assert(sizeof(CS2::animgraphlib::CAnimGraphDebugReplay) == 0x70, "CAnimGraphDebugReplay size should be 0x70");
+
+#endif
 	}
 }

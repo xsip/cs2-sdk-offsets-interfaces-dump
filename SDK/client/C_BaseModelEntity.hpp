@@ -88,6 +88,7 @@ namespace CS2 {
 			uint32_t m_bvDisabledHitGroups[1]; // 0xe80 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_CRenderComponent) == 0xAF0, "m_CRenderComponent in C_BaseModelEntity should be at offset 0xAF0");
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_CHitboxComponent) == 0xAF8, "m_CHitboxComponent in C_BaseModelEntity should be at offset 0xAF8");
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_nDestructiblePartInitialStateDestructed0) == 0xB10, "m_nDestructiblePartInitialStateDestructed0 in C_BaseModelEntity should be at offset 0xB10");
@@ -127,5 +128,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bUseClientOverrideTint) == 0xE44, "m_bUseClientOverrideTint in C_BaseModelEntity should be at offset 0xE44");
 		static_assert(offsetof(CS2::client::C_BaseModelEntity, m_bvDisabledHitGroups) == 0xE80, "m_bvDisabledHitGroups in C_BaseModelEntity should be at offset 0xE80");
 		static_assert(sizeof(CS2::client::C_BaseModelEntity) == 0xE88, "C_BaseModelEntity size should be 0xE88");
+
+#endif
 	}
 }

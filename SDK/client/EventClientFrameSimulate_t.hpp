@@ -27,10 +27,13 @@ namespace CS2 {
 			bool m_bScheduleSendTickPacket; // 0x30 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventClientFrameSimulate_t, m_LoopState) == 0x0, "m_LoopState in EventClientFrameSimulate_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::EventClientFrameSimulate_t, m_flRealTime) == 0x28, "m_flRealTime in EventClientFrameSimulate_t should be at offset 0x28");
 		static_assert(offsetof(CS2::client::EventClientFrameSimulate_t, m_flFrameTime) == 0x2C, "m_flFrameTime in EventClientFrameSimulate_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::client::EventClientFrameSimulate_t, m_bScheduleSendTickPacket) == 0x30, "m_bScheduleSendTickPacket in EventClientFrameSimulate_t should be at offset 0x30");
 		static_assert(sizeof(CS2::client::EventClientFrameSimulate_t) == 0x38, "EventClientFrameSimulate_t size should be 0x38");
+
+#endif
 	}
 }

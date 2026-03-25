@@ -23,8 +23,11 @@ namespace CS2 {
 			float32 m_TimeBetweenEvents; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_fNextEvent; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::TimedEvent, m_TimeBetweenEvents) == 0x0, "m_TimeBetweenEvents in TimedEvent should be at offset 0x0");
 		static_assert(offsetof(CS2::client::TimedEvent, m_fNextEvent) == 0x4, "m_fNextEvent in TimedEvent should be at offset 0x4");
 		static_assert(sizeof(CS2::client::TimedEvent) == 0x8, "TimedEvent size should be 0x8");
+
+#endif
 	}
 }

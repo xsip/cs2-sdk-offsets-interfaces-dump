@@ -33,6 +33,7 @@ namespace CS2 {
 			int32_t m_nControlPointRangeMax; // 0x60 | Schema_Builtin | Size: 0x4
 			float32 m_flEndCPGrowthTime; // 0x64 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particleslib::CParticleTransformInput, m_nType) == 0x10, "m_nType in CParticleTransformInput should be at offset 0x10");
 		static_assert(offsetof(CS2::particleslib::CParticleTransformInput, m_NamedValue) == 0x18, "m_NamedValue in CParticleTransformInput should be at offset 0x18");
 		static_assert(offsetof(CS2::particleslib::CParticleTransformInput, m_bFollowNamedValue) == 0x58, "m_bFollowNamedValue in CParticleTransformInput should be at offset 0x58");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::CParticleTransformInput, m_nControlPointRangeMax) == 0x60, "m_nControlPointRangeMax in CParticleTransformInput should be at offset 0x60");
 		static_assert(offsetof(CS2::particleslib::CParticleTransformInput, m_flEndCPGrowthTime) == 0x64, "m_flEndCPGrowthTime in CParticleTransformInput should be at offset 0x64");
 		static_assert(sizeof(CS2::particleslib::CParticleTransformInput) == 0x68, "CParticleTransformInput size should be 0x68");
+
+#endif
 	}
 }

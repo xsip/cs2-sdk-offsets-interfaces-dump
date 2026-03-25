@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 m_flEaseIn; // 0x60 | Schema_Builtin | Size: 0x4
 			float32 m_flEaseOut; // 0x64 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioMorphData, m_times) == 0x0, "m_times in CAudioMorphData should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioMorphData, m_nameHashCodes) == 0x18, "m_nameHashCodes in CAudioMorphData should be at offset 0x18");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioMorphData, m_nameStrings) == 0x30, "m_nameStrings in CAudioMorphData should be at offset 0x30");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioMorphData, m_flEaseIn) == 0x60, "m_flEaseIn in CAudioMorphData should be at offset 0x60");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CAudioMorphData, m_flEaseOut) == 0x64, "m_flEaseOut in CAudioMorphData should be at offset 0x64");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CAudioMorphData) == 0x68, "CAudioMorphData size should be 0x68");
+
+#endif
 	}
 }

@@ -32,11 +32,14 @@ namespace CS2 {
 			float32 m_flSizeSqr; // 0x678 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_traceResults) == 0x640, "m_traceResults in CSoundOpvarSetAutoRoomEntity should be at offset 0x640");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_doorwayPairs) == 0x658, "m_doorwayPairs in CSoundOpvarSetAutoRoomEntity should be at offset 0x658");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flSize) == 0x670, "m_flSize in CSoundOpvarSetAutoRoomEntity should be at offset 0x670");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flHeightTolerance) == 0x674, "m_flHeightTolerance in CSoundOpvarSetAutoRoomEntity should be at offset 0x674");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetAutoRoomEntity, m_flSizeSqr) == 0x678, "m_flSizeSqr in CSoundOpvarSetAutoRoomEntity should be at offset 0x678");
 		static_assert(sizeof(CS2::server::CSoundOpvarSetAutoRoomEntity) == 0x680, "CSoundOpvarSetAutoRoomEntity size should be 0x680");
+
+#endif
 	}
 }

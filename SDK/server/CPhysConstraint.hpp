@@ -45,6 +45,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			entity2::CEntityIOOutput m_OnBreak; // 0x4f0 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttach1) == 0x4B0, "m_nameAttach1 in CPhysConstraint should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPhysConstraint, m_nameAttach2) == 0x4B8, "m_nameAttach2 in CPhysConstraint should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CPhysConstraint, m_hAttach1) == 0x4C0, "m_hAttach1 in CPhysConstraint should be at offset 0x4C0");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysConstraint, m_bTreatEntity1AsInfiniteMass) == 0x4ED, "m_bTreatEntity1AsInfiniteMass in CPhysConstraint should be at offset 0x4ED");
 		static_assert(offsetof(CS2::server::CPhysConstraint, m_OnBreak) == 0x4F0, "m_OnBreak in CPhysConstraint should be at offset 0x4F0");
 		static_assert(sizeof(CS2::server::CPhysConstraint) == 0x508, "CPhysConstraint size should be 0x508");
+
+#endif
 	}
 }

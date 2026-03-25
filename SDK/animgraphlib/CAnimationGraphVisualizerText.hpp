@@ -26,9 +26,12 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_Text; // 0x58 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerText, m_vWsPosition) == 0x40, "m_vWsPosition in CAnimationGraphVisualizerText should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerText, m_Color) == 0x50, "m_Color in CAnimationGraphVisualizerText should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerText, m_Text) == 0x58, "m_Text in CAnimationGraphVisualizerText should be at offset 0x58");
 		static_assert(sizeof(CS2::animgraphlib::CAnimationGraphVisualizerText) == 0x60, "CAnimationGraphVisualizerText size should be 0x60");
+
+#endif
 	}
 }

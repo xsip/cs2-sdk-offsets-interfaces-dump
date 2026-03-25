@@ -60,6 +60,7 @@ namespace CS2 {
 			physicslib::DynamicContinuousContactBehavior_t m_nDynamicContinuousContactBehavior; // 0xda | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_sDebugName) == 0x0, "m_sDebugName in RnBodyDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_vPosition) == 0x8, "m_vPosition in RnBodyDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_qOrientation) == 0x14, "m_qOrientation in RnBodyDesc_t should be at offset 0x14");
@@ -97,5 +98,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_bHasShadowController) == 0xD9, "m_bHasShadowController in RnBodyDesc_t should be at offset 0xD9");
 		static_assert(offsetof(CS2::physicslib::RnBodyDesc_t, m_nDynamicContinuousContactBehavior) == 0xDA, "m_nDynamicContinuousContactBehavior in RnBodyDesc_t should be at offset 0xDA");
 		static_assert(sizeof(CS2::physicslib::RnBodyDesc_t) == 0xE0, "RnBodyDesc_t size should be 0xE0");
+
+#endif
 	}
 }

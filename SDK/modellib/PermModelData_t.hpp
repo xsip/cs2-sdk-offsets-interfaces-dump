@@ -84,6 +84,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton>> m_vecNmSkeletonRefs; // 0x2e0 | Schema_Atomic | Size: 0x18
 			// char m_vecNmSkeletonRefs[0x18]; // 0x2e0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::PermModelData_t, m_name) == 0x0, "m_name in PermModelData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::PermModelData_t, m_modelInfo) == 0x8, "m_modelInfo in PermModelData_t should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::PermModelData_t, m_ExtParts) == 0x60, "m_ExtParts in PermModelData_t should be at offset 0x60");
@@ -110,5 +111,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::PermModelData_t, m_animGraph2Refs) == 0x2C8, "m_animGraph2Refs in PermModelData_t should be at offset 0x2C8");
 		static_assert(offsetof(CS2::modellib::PermModelData_t, m_vecNmSkeletonRefs) == 0x2E0, "m_vecNmSkeletonRefs in PermModelData_t should be at offset 0x2E0");
 		static_assert(sizeof(CS2::modellib::PermModelData_t) == 0x2F8, "PermModelData_t size should be 0x2F8");
+
+#endif
 	}
 }

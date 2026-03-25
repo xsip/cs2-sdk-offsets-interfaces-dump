@@ -30,6 +30,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint16 > targetNodes; // 0x18 | Schema_Atomic | Size: 0x18
 			// char targetNodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbeBuild_t, flWeight) == 0x0, "flWeight in FeAntiTunnelProbeBuild_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbeBuild_t, flActivationDistance) == 0x4, "flActivationDistance in FeAntiTunnelProbeBuild_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbeBuild_t, flBias) == 0x8, "flBias in FeAntiTunnelProbeBuild_t should be at offset 0x8");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbeBuild_t, nProbeNode) == 0x14, "nProbeNode in FeAntiTunnelProbeBuild_t should be at offset 0x14");
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbeBuild_t, targetNodes) == 0x18, "targetNodes in FeAntiTunnelProbeBuild_t should be at offset 0x18");
 		static_assert(sizeof(CS2::physicslib::FeAntiTunnelProbeBuild_t) == 0x30, "FeAntiTunnelProbeBuild_t size should be 0x30");
+
+#endif
 	}
 }

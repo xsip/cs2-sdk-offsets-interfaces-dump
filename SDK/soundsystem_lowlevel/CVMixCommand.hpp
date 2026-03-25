@@ -30,6 +30,7 @@ namespace CS2 {
 			int32_t m_nInputValue0; // 0x18 | Schema_Builtin | Size: 0x4
 			int32_t m_nInputValue1; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixCommand, m_nCommand) == 0x0, "m_nCommand in CVMixCommand should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixCommand, m_nParameterNameHash) == 0x4, "m_nParameterNameHash in CVMixCommand should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixCommand, m_nOutputSubmix) == 0x8, "m_nOutputSubmix in CVMixCommand should be at offset 0x8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixCommand, m_nInputValue0) == 0x18, "m_nInputValue0 in CVMixCommand should be at offset 0x18");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixCommand, m_nInputValue1) == 0x1C, "m_nInputValue1 in CVMixCommand should be at offset 0x1C");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixCommand) == 0x20, "CVMixCommand size should be 0x20");
+
+#endif
 	}
 }

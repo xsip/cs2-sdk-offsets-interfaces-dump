@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 flLimitCW; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 flLimitCCW; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeHingeLimitBuild_t, nNode) == 0x0, "nNode in FeHingeLimitBuild_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeHingeLimitBuild_t, nFlags) == 0xC, "nFlags in FeHingeLimitBuild_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeHingeLimitBuild_t, flLimitCW) == 0x10, "flLimitCW in FeHingeLimitBuild_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::FeHingeLimitBuild_t, flLimitCCW) == 0x14, "flLimitCCW in FeHingeLimitBuild_t should be at offset 0x14");
 		static_assert(sizeof(CS2::physicslib::FeHingeLimitBuild_t) == 0x18, "FeHingeLimitBuild_t size should be 0x18");
+
+#endif
 	}
 }

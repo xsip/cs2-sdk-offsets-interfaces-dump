@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bForceEmitOnLastUpdate; // 0x64d | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmissionDuration) == 0x1D8, "m_flEmissionDuration in C_OP_ContinuousEmitter should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flStartTime) == 0x348, "m_flStartTime in C_OP_ContinuousEmitter should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_flEmitRate) == 0x4B8, "m_flEmitRate in C_OP_ContinuousEmitter should be at offset 0x4B8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bForceEmitOnFirstUpdate) == 0x64C, "m_bForceEmitOnFirstUpdate in C_OP_ContinuousEmitter should be at offset 0x64C");
 		static_assert(offsetof(CS2::particles::C_OP_ContinuousEmitter, m_bForceEmitOnLastUpdate) == 0x64D, "m_bForceEmitOnLastUpdate in C_OP_ContinuousEmitter should be at offset 0x64D");
 		static_assert(sizeof(CS2::particles::C_OP_ContinuousEmitter) == 0x658, "C_OP_ContinuousEmitter size should be 0x658");
+
+#endif
 	}
 }

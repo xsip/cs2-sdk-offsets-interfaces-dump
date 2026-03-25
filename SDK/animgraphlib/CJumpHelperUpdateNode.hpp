@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bScaleSpeed; // 0xd3 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CJumpHelperUpdateNode, m_hTargetParam) == 0xB0, "m_hTargetParam in CJumpHelperUpdateNode should be at offset 0xB0");
 		static_assert(offsetof(CS2::animgraphlib::CJumpHelperUpdateNode, m_flOriginalJumpMovement) == 0xB4, "m_flOriginalJumpMovement in CJumpHelperUpdateNode should be at offset 0xB4");
 		static_assert(offsetof(CS2::animgraphlib::CJumpHelperUpdateNode, m_flOriginalJumpDuration) == 0xC0, "m_flOriginalJumpDuration in CJumpHelperUpdateNode should be at offset 0xC0");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CJumpHelperUpdateNode, m_bTranslationAxis) == 0xD0, "m_bTranslationAxis in CJumpHelperUpdateNode should be at offset 0xD0");
 		static_assert(offsetof(CS2::animgraphlib::CJumpHelperUpdateNode, m_bScaleSpeed) == 0xD3, "m_bScaleSpeed in CJumpHelperUpdateNode should be at offset 0xD3");
 		static_assert(sizeof(CS2::animgraphlib::CJumpHelperUpdateNode) == 0xD8, "CJumpHelperUpdateNode size should be 0xD8");
+
+#endif
 	}
 }

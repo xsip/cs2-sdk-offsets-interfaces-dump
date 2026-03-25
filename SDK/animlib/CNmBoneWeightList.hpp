@@ -26,9 +26,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_weights; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char m_weights[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBoneWeightList, m_skeletonName) == 0x0, "m_skeletonName in CNmBoneWeightList should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmBoneWeightList, m_boneIDs) == 0xE0, "m_boneIDs in CNmBoneWeightList should be at offset 0xE0");
 		static_assert(offsetof(CS2::animlib::CNmBoneWeightList, m_weights) == 0xF8, "m_weights in CNmBoneWeightList should be at offset 0xF8");
 		static_assert(sizeof(CS2::animlib::CNmBoneWeightList) == 0x110, "CNmBoneWeightList size should be 0x110");
+
+#endif
 	}
 }

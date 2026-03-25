@@ -28,10 +28,13 @@ namespace CS2 {
 			bool m_bClientOnly; // 0x18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmEvent, m_flStartTime) == 0x8, "m_flStartTime in CNmEvent should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::CNmEvent, m_flDuration) == 0xC, "m_flDuration in CNmEvent should be at offset 0xC");
 		static_assert(offsetof(CS2::animlib::CNmEvent, m_syncID) == 0x10, "m_syncID in CNmEvent should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmEvent, m_bClientOnly) == 0x18, "m_bClientOnly in CNmEvent should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmEvent) == 0x20, "CNmEvent size should be 0x20");
+
+#endif
 	}
 }

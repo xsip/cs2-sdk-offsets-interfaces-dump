@@ -24,7 +24,10 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x220 | Schema_Atomic | Size: 0x8
 			char m_hMaterial[0x8]; // 0x220 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderPoints, m_hMaterial) == 0x220, "m_hMaterial in C_OP_RenderPoints should be at offset 0x220");
 		static_assert(sizeof(CS2::particles::C_OP_RenderPoints) == 0x228, "C_OP_RenderPoints size should be 0x228");
+
+#endif
 	}
 }

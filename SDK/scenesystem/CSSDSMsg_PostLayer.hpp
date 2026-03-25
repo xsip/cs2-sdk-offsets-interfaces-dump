@@ -22,6 +22,9 @@ namespace CS2 {
 		class CSSDSMsg_PostLayer : public CS2::scenesystem::CSSDSMsg_LayerBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::scenesystem::CSSDSMsg_PostLayer) == 0x30, "CSSDSMsg_PostLayer size should be 0x30");
+
+#endif
 	}
 }

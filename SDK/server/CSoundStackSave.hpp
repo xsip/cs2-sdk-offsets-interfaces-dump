@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszStackName; // 0x4a8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundStackSave, m_iszStackName) == 0x4A8, "m_iszStackName in CSoundStackSave should be at offset 0x4A8");
 		static_assert(sizeof(CS2::server::CSoundStackSave) == 0x4B0, "CSoundStackSave size should be 0x4B0");
+
+#endif
 	}
 }

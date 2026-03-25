@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::PulseSymbol_t m_EventName; // 0x80 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_EventHandler, m_EventName) == 0x80, "m_EventName in CPulseCell_Inflow_EventHandler should be at offset 0x80");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Inflow_EventHandler) == 0x90, "CPulseCell_Inflow_EventHandler size should be 0x90");
+
+#endif
 	}
 }

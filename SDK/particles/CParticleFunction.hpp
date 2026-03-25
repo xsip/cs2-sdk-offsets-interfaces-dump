@@ -44,6 +44,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_Notes; // 0x1b0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CParticleFunction, m_flOpStrength) == 0x8, "m_flOpStrength in CParticleFunction should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::CParticleFunction, m_nOpEndCapState) == 0x178, "m_nOpEndCapState in CParticleFunction should be at offset 0x178");
 		static_assert(offsetof(CS2::particles::CParticleFunction, m_flOpStartFadeInTime) == 0x17C, "m_flOpStartFadeInTime in CParticleFunction should be at offset 0x17C");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::CParticleFunction, m_bDisableOperator) == 0x1AE, "m_bDisableOperator in CParticleFunction should be at offset 0x1AE");
 		static_assert(offsetof(CS2::particles::CParticleFunction, m_Notes) == 0x1B0, "m_Notes in CParticleFunction should be at offset 0x1B0");
 		static_assert(sizeof(CS2::particles::CParticleFunction) == 0x1D0, "CParticleFunction size should be 0x1D0");
+
+#endif
 	}
 }

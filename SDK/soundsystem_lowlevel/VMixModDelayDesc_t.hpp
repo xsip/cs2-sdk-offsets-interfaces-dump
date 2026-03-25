@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bApplyAntialiasing; // 0x2c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixModDelayDesc_t, m_feedbackFilter) == 0x0, "m_feedbackFilter in VMixModDelayDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixModDelayDesc_t, m_bPhaseInvert) == 0x10, "m_bPhaseInvert in VMixModDelayDesc_t should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixModDelayDesc_t, m_flGlideTime) == 0x14, "m_flGlideTime in VMixModDelayDesc_t should be at offset 0x14");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixModDelayDesc_t, m_flModDepth) == 0x28, "m_flModDepth in VMixModDelayDesc_t should be at offset 0x28");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixModDelayDesc_t, m_bApplyAntialiasing) == 0x2C, "m_bApplyAntialiasing in VMixModDelayDesc_t should be at offset 0x2C");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixModDelayDesc_t) == 0x30, "VMixModDelayDesc_t size should be 0x30");
+
+#endif
 	}
 }

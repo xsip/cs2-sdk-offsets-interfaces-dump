@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::PulseSymbol_t m_HookName; // 0x80 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_GraphHook, m_HookName) == 0x80, "m_HookName in CPulseCell_Inflow_GraphHook should be at offset 0x80");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Inflow_GraphHook) == 0x90, "CPulseCell_Inflow_GraphHook size should be 0x90");
+
+#endif
 	}
 }

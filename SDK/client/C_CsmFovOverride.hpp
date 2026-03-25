@@ -25,8 +25,11 @@ namespace CS2 {
 			float32 m_flCsmFovOverrideValue; // 0x610 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CsmFovOverride, m_cameraName) == 0x608, "m_cameraName in C_CsmFovOverride should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_CsmFovOverride, m_flCsmFovOverrideValue) == 0x610, "m_flCsmFovOverrideValue in C_CsmFovOverride should be at offset 0x610");
 		static_assert(sizeof(CS2::client::C_CsmFovOverride) == 0x618, "C_CsmFovOverride size should be 0x618");
+
+#endif
 	}
 }

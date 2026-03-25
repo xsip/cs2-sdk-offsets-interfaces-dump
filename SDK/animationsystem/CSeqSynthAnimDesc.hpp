@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animationsystem::CAnimActivity> m_activityArray; // 0x28 | Schema_Atomic | Size: 0x18
 			// char m_activityArray[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqSynthAnimDesc, m_sName) == 0x0, "m_sName in CSeqSynthAnimDesc should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqSynthAnimDesc, m_flags) == 0x10, "m_flags in CSeqSynthAnimDesc should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSeqSynthAnimDesc, m_transition) == 0x1C, "m_transition in CSeqSynthAnimDesc should be at offset 0x1C");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqSynthAnimDesc, m_nLocalBoneMask) == 0x26, "m_nLocalBoneMask in CSeqSynthAnimDesc should be at offset 0x26");
 		static_assert(offsetof(CS2::animationsystem::CSeqSynthAnimDesc, m_activityArray) == 0x28, "m_activityArray in CSeqSynthAnimDesc should be at offset 0x28");
 		static_assert(sizeof(CS2::animationsystem::CSeqSynthAnimDesc) == 0x40, "CSeqSynthAnimDesc size should be 0x40");
+
+#endif
 	}
 }

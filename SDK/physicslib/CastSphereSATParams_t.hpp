@@ -33,6 +33,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			physicslib::RnHull_t* m_pHull; // 0x28 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CastSphereSATParams_t, m_vRayStart) == 0x0, "m_vRayStart in CastSphereSATParams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CastSphereSATParams_t, m_vRayDelta) == 0xC, "m_vRayDelta in CastSphereSATParams_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::CastSphereSATParams_t, m_flRadius) == 0x18, "m_flRadius in CastSphereSATParams_t should be at offset 0x18");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::CastSphereSATParams_t, m_flScale) == 0x20, "m_flScale in CastSphereSATParams_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::CastSphereSATParams_t, m_pHull) == 0x28, "m_pHull in CastSphereSATParams_t should be at offset 0x28");
 		static_assert(sizeof(CS2::physicslib::CastSphereSATParams_t) == 0x30, "CastSphereSATParams_t size should be 0x30");
+
+#endif
 	}
 }

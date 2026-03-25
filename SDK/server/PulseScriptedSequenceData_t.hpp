@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bLoopPostIdleSequence; // 0x36 | Schema_Builtin | Size: 0x1
 			bool m_bIgnoreLookAt; // 0x37 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::PulseScriptedSequenceData_t, m_nActorID) == 0x0, "m_nActorID in PulseScriptedSequenceData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::PulseScriptedSequenceData_t, m_szPreIdleSequence) == 0x8, "m_szPreIdleSequence in PulseScriptedSequenceData_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::PulseScriptedSequenceData_t, m_szEntrySequence) == 0x10, "m_szEntrySequence in PulseScriptedSequenceData_t should be at offset 0x10");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::PulseScriptedSequenceData_t, m_bLoopPostIdleSequence) == 0x36, "m_bLoopPostIdleSequence in PulseScriptedSequenceData_t should be at offset 0x36");
 		static_assert(offsetof(CS2::server::PulseScriptedSequenceData_t, m_bIgnoreLookAt) == 0x37, "m_bIgnoreLookAt in PulseScriptedSequenceData_t should be at offset 0x37");
 		static_assert(sizeof(CS2::server::PulseScriptedSequenceData_t) == 0x38, "PulseScriptedSequenceData_t size should be 0x38");
+
+#endif
 	}
 }

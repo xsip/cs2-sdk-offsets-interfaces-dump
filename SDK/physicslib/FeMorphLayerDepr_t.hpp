@@ -36,6 +36,7 @@ namespace CS2 {
 			uint32_t m_nFlags; // 0x88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeMorphLayerDepr_t, m_Name) == 0x0, "m_Name in FeMorphLayerDepr_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeMorphLayerDepr_t, m_nNameHash) == 0x8, "m_nNameHash in FeMorphLayerDepr_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeMorphLayerDepr_t, m_Nodes) == 0x10, "m_Nodes in FeMorphLayerDepr_t should be at offset 0x10");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeMorphLayerDepr_t, m_GoalDamping) == 0x70, "m_GoalDamping in FeMorphLayerDepr_t should be at offset 0x70");
 		static_assert(offsetof(CS2::physicslib::FeMorphLayerDepr_t, m_nFlags) == 0x88, "m_nFlags in FeMorphLayerDepr_t should be at offset 0x88");
 		static_assert(sizeof(CS2::physicslib::FeMorphLayerDepr_t) == 0x90, "FeMorphLayerDepr_t size should be 0x90");
+
+#endif
 	}
 }

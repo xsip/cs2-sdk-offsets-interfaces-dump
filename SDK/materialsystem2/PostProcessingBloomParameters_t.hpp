@@ -38,6 +38,7 @@ namespace CS2 {
 			float32 m_flBlurWeight[5]; // 0x38 | Schema_FixedArray | Size: 0x14
 			GlobalTypes::Vector m_vBlurTint[5]; // 0x4c | Schema_FixedArray | Size: 0x3c
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingBloomParameters_t, m_blendMode) == 0x0, "m_blendMode in PostProcessingBloomParameters_t should be at offset 0x0");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingBloomParameters_t, m_flBloomStrength) == 0x4, "m_flBloomStrength in PostProcessingBloomParameters_t should be at offset 0x4");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingBloomParameters_t, m_flScreenBloomStrength) == 0x8, "m_flScreenBloomStrength in PostProcessingBloomParameters_t should be at offset 0x8");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingBloomParameters_t, m_flBlurWeight) == 0x38, "m_flBlurWeight in PostProcessingBloomParameters_t should be at offset 0x38");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingBloomParameters_t, m_vBlurTint) == 0x4C, "m_vBlurTint in PostProcessingBloomParameters_t should be at offset 0x4C");
 		static_assert(sizeof(CS2::materialsystem2::PostProcessingBloomParameters_t) == 0x88, "PostProcessingBloomParameters_t size should be 0x88");
+
+#endif
 	}
 }

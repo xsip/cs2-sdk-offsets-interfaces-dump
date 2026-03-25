@@ -72,6 +72,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint32 > m_vecNeighbors; // 0xa0 | Schema_Atomic | Size: 0x18
 			// char m_vecNeighbors[0x18]; // 0xa0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CShatterGlassShard, m_hShardHandle) == 0x8, "m_hShardHandle in CShatterGlassShard should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CShatterGlassShard, m_vecPanelVertices) == 0x10, "m_vecPanelVertices in CShatterGlassShard should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CShatterGlassShard, m_vLocalPanelSpaceOrigin) == 0x28, "m_vLocalPanelSpaceOrigin in CShatterGlassShard should be at offset 0x28");
@@ -101,5 +102,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CShatterGlassShard, m_hEntityHittingMe) == 0x9C, "m_hEntityHittingMe in CShatterGlassShard should be at offset 0x9C");
 		static_assert(offsetof(CS2::server::CShatterGlassShard, m_vecNeighbors) == 0xA0, "m_vecNeighbors in CShatterGlassShard should be at offset 0xA0");
 		static_assert(sizeof(CS2::server::CShatterGlassShard) == 0xB8, "CShatterGlassShard size should be 0xB8");
+
+#endif
 	}
 }

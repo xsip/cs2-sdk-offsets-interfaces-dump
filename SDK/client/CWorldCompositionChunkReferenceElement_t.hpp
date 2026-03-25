@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_strMapToLoad; // 0x0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strLandmarkName; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CWorldCompositionChunkReferenceElement_t, m_strMapToLoad) == 0x0, "m_strMapToLoad in CWorldCompositionChunkReferenceElement_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CWorldCompositionChunkReferenceElement_t, m_strLandmarkName) == 0x8, "m_strLandmarkName in CWorldCompositionChunkReferenceElement_t should be at offset 0x8");
 		static_assert(sizeof(CS2::client::CWorldCompositionChunkReferenceElement_t) == 0x10, "CWorldCompositionChunkReferenceElement_t size should be 0x10");
+
+#endif
 	}
 }

@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bAllowLooping; // 0x108 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBlend2DNode_CDefinition, m_sourceNodeIndices) == 0x10, "m_sourceNodeIndices in CNmBlend2DNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmBlend2DNode_CDefinition, m_nInputParameterNodeIdx0) == 0x38, "m_nInputParameterNodeIdx0 in CNmBlend2DNode::CDefinition should be at offset 0x38");
 		static_assert(offsetof(CS2::animlib::CNmBlend2DNode_CDefinition, m_nInputParameterNodeIdx1) == 0x3A, "m_nInputParameterNodeIdx1 in CNmBlend2DNode::CDefinition should be at offset 0x3A");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmBlend2DNode_CDefinition, m_hullIndices) == 0xE0, "m_hullIndices in CNmBlend2DNode::CDefinition should be at offset 0xE0");
 		static_assert(offsetof(CS2::animlib::CNmBlend2DNode_CDefinition, m_bAllowLooping) == 0x108, "m_bAllowLooping in CNmBlend2DNode::CDefinition should be at offset 0x108");
 		static_assert(sizeof(CS2::animlib::CNmBlend2DNode_CDefinition) == 0x110, "CNmBlend2DNode::CDefinition size should be 0x110");
+
+#endif
 	}
 }

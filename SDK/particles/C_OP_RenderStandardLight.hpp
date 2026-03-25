@@ -69,6 +69,7 @@ namespace CS2 {
 			float32 m_flLengthFadeInTime; // 0x14b4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nLightType) == 0x220, "m_nLightType in C_OP_RenderStandardLight should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_vecColorScale) == 0x228, "m_vecColorScale in C_OP_RenderStandardLight should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_nColorBlendType) == 0x8E0, "m_nColorBlendType in C_OP_RenderStandardLight should be at offset 0x8E0");
@@ -99,5 +100,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flLengthScale) == 0x14B0, "m_flLengthScale in C_OP_RenderStandardLight should be at offset 0x14B0");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStandardLight, m_flLengthFadeInTime) == 0x14B4, "m_flLengthFadeInTime in C_OP_RenderStandardLight should be at offset 0x14B4");
 		static_assert(sizeof(CS2::particles::C_OP_RenderStandardLight) == 0x14C0, "C_OP_RenderStandardLight size should be 0x14C0");
+
+#endif
 	}
 }

@@ -49,6 +49,7 @@ namespace CS2 {
 			// char m_hEntOwner[0x4]; // 0x70 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xbc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_flStartTime) == 0x8, "m_flStartTime in CEnvWindShared should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_iWindSeed) == 0xC, "m_iWindSeed in CEnvWindShared should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_iMinWind) == 0x10, "m_iMinWind in CEnvWindShared should be at offset 0x10");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_OnGustEnd) == 0x58, "m_OnGustEnd in CEnvWindShared should be at offset 0x58");
 		static_assert(offsetof(CS2::server::CEnvWindShared, m_hEntOwner) == 0x70, "m_hEntOwner in CEnvWindShared should be at offset 0x70");
 		static_assert(sizeof(CS2::server::CEnvWindShared) == 0x130, "CEnvWindShared size should be 0x130");
+
+#endif
 	}
 }

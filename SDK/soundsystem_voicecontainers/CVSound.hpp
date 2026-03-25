@@ -40,6 +40,7 @@ namespace CS2 {
 			GlobalTypes::CUtlBinaryBlock m_encodedHeader; // 0x58 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVSound, m_nRate) == 0x0, "m_nRate in CVSound should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVSound, m_nFormat) == 0x4, "m_nFormat in CVSound should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVSound, m_nChannels) == 0x8, "m_nChannels in CVSound should be at offset 0x8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVSound, m_nLoopEnd) == 0x50, "m_nLoopEnd in CVSound should be at offset 0x50");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVSound, m_encodedHeader) == 0x58, "m_encodedHeader in CVSound should be at offset 0x58");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVSound) == 0x78, "CVSound size should be 0x78");
+
+#endif
 	}
 }

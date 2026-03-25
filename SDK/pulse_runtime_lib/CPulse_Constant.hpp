@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::KeyValues3 m_Value; // 0x18 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Constant, m_Type) == 0x0, "m_Type in CPulse_Constant should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Constant, m_Value) == 0x18, "m_Value in CPulse_Constant should be at offset 0x18");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_Constant) == 0x30, "CPulse_Constant size should be 0x30");
+
+#endif
 	}
 }

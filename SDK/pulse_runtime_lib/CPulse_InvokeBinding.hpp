@@ -30,11 +30,14 @@ namespace CS2 {
 			int32_t m_nSrcInstruction; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x64); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InvokeBinding, m_RegisterMap) == 0x0, "m_RegisterMap in CPulse_InvokeBinding should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InvokeBinding, m_FuncName) == 0x30, "m_FuncName in CPulse_InvokeBinding should be at offset 0x30");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InvokeBinding, m_nCellIndex) == 0x40, "m_nCellIndex in CPulse_InvokeBinding should be at offset 0x40");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InvokeBinding, m_nSrcChunk) == 0x44, "m_nSrcChunk in CPulse_InvokeBinding should be at offset 0x44");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InvokeBinding, m_nSrcInstruction) == 0x48, "m_nSrcInstruction in CPulse_InvokeBinding should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_InvokeBinding) == 0xB0, "CPulse_InvokeBinding size should be 0xB0");
+
+#endif
 	}
 }

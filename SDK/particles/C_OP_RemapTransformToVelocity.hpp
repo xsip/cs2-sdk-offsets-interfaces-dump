@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			particleslib::CParticleTransformInput m_TransformInput; // 0x1d0 | Schema_DeclaredClass | Size: 0x68
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapTransformToVelocity, m_TransformInput) == 0x1D0, "m_TransformInput in C_OP_RemapTransformToVelocity should be at offset 0x1D0");
 		static_assert(sizeof(CS2::particles::C_OP_RemapTransformToVelocity) == 0x238, "C_OP_RemapTransformToVelocity size should be 0x238");
+
+#endif
 	}
 }

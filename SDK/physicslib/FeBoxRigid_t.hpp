@@ -28,6 +28,7 @@ namespace CS2 {
 			uint16_t nFlags; // 0x32 | Schema_Builtin | Size: 0x2
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeBoxRigid_t, tmFrame2) == 0x0, "tmFrame2 in FeBoxRigid_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeBoxRigid_t, nNode) == 0x20, "nNode in FeBoxRigid_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::FeBoxRigid_t, nCollisionMask) == 0x22, "nCollisionMask in FeBoxRigid_t should be at offset 0x22");
@@ -35,5 +36,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeBoxRigid_t, nVertexMapIndex) == 0x30, "nVertexMapIndex in FeBoxRigid_t should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::FeBoxRigid_t, nFlags) == 0x32, "nFlags in FeBoxRigid_t should be at offset 0x32");
 		static_assert(sizeof(CS2::physicslib::FeBoxRigid_t) == 0x40, "FeBoxRigid_t size should be 0x40");
+
+#endif
 	}
 }

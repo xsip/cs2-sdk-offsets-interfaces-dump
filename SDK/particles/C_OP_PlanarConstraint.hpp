@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bUseOldCode; // 0x4d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_PlanarConstraint, m_PointOnPlane) == 0x1D0, "m_PointOnPlane in C_OP_PlanarConstraint should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_PlanarConstraint, m_PlaneNormal) == 0x1DC, "m_PlaneNormal in C_OP_PlanarConstraint should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_PlanarConstraint, m_nControlPointNumber) == 0x1E8, "m_nControlPointNumber in C_OP_PlanarConstraint should be at offset 0x1E8");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_PlanarConstraint, m_flMaximumDistanceToCP) == 0x360, "m_flMaximumDistanceToCP in C_OP_PlanarConstraint should be at offset 0x360");
 		static_assert(offsetof(CS2::particles::C_OP_PlanarConstraint, m_bUseOldCode) == 0x4D0, "m_bUseOldCode in C_OP_PlanarConstraint should be at offset 0x4D0");
 		static_assert(sizeof(CS2::particles::C_OP_PlanarConstraint) == 0x4D8, "C_OP_PlanarConstraint size should be 0x4D8");
+
+#endif
 	}
 }

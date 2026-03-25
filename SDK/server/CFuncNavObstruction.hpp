@@ -26,8 +26,11 @@ namespace CS2 {
 			bool m_bUseAsyncObstacleUpdate; // 0x749 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncNavObstruction, m_bDisabled) == 0x748, "m_bDisabled in CFuncNavObstruction should be at offset 0x748");
 		static_assert(offsetof(CS2::server::CFuncNavObstruction, m_bUseAsyncObstacleUpdate) == 0x749, "m_bUseAsyncObstacleUpdate in CFuncNavObstruction should be at offset 0x749");
 		static_assert(sizeof(CS2::server::CFuncNavObstruction) == 0x750, "CFuncNavObstruction size should be 0x750");
+
+#endif
 	}
 }

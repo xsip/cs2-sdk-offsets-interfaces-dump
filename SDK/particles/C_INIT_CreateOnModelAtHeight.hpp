@@ -42,6 +42,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_flHitboxVelocityScale; // 0x1150 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionFloatInput m_flMaxBoneVelocity; // 0x12c0 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bUseBones) == 0x1D8, "m_bUseBones in C_INIT_CreateOnModelAtHeight should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_bForceZ) == 0x1D9, "m_bForceZ in C_INIT_CreateOnModelAtHeight should be at offset 0x1D9");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_nControlPointNumber) == 0x1DC, "m_nControlPointNumber in C_INIT_CreateOnModelAtHeight should be at offset 0x1DC");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flHitboxVelocityScale) == 0x1150, "m_flHitboxVelocityScale in C_INIT_CreateOnModelAtHeight should be at offset 0x1150");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnModelAtHeight, m_flMaxBoneVelocity) == 0x12C0, "m_flMaxBoneVelocity in C_INIT_CreateOnModelAtHeight should be at offset 0x12C0");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateOnModelAtHeight) == 0x1430, "C_INIT_CreateOnModelAtHeight size should be 0x1430");
+
+#endif
 	}
 }

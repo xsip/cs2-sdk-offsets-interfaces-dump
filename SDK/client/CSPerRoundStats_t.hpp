@@ -36,6 +36,7 @@ namespace CS2 {
 			int32_t m_iEnemiesFlashed; // 0x60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSPerRoundStats_t, m_iKills) == 0x30, "m_iKills in CSPerRoundStats_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CSPerRoundStats_t, m_iDeaths) == 0x34, "m_iDeaths in CSPerRoundStats_t should be at offset 0x34");
 		static_assert(offsetof(CS2::client::CSPerRoundStats_t, m_iAssists) == 0x38, "m_iAssists in CSPerRoundStats_t should be at offset 0x38");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CSPerRoundStats_t, m_iUtilityDamage) == 0x5C, "m_iUtilityDamage in CSPerRoundStats_t should be at offset 0x5C");
 		static_assert(offsetof(CS2::client::CSPerRoundStats_t, m_iEnemiesFlashed) == 0x60, "m_iEnemiesFlashed in CSPerRoundStats_t should be at offset 0x60");
 		static_assert(sizeof(CS2::client::CSPerRoundStats_t) == 0x68, "CSPerRoundStats_t size should be 0x68");
+
+#endif
 	}
 }

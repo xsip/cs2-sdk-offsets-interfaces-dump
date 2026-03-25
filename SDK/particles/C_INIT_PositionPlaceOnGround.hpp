@@ -46,6 +46,7 @@ namespace CS2 {
 			int32_t m_nIgnoreCP; // 0x568 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flOffset) == 0x1D8, "m_flOffset in C_INIT_PositionPlaceOnGround should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_flMaxTraceLength) == 0x348, "m_flMaxTraceLength in C_INIT_PositionPlaceOnGround should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_CollisionGroupName) == 0x4B8, "m_CollisionGroupName in C_INIT_PositionPlaceOnGround should be at offset 0x4B8");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nPreserveOffsetCP) == 0x564, "m_nPreserveOffsetCP in C_INIT_PositionPlaceOnGround should be at offset 0x564");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionPlaceOnGround, m_nIgnoreCP) == 0x568, "m_nIgnoreCP in C_INIT_PositionPlaceOnGround should be at offset 0x568");
 		static_assert(sizeof(CS2::particles::C_INIT_PositionPlaceOnGround) == 0x570, "C_INIT_PositionPlaceOnGround size should be 0x570");
+
+#endif
 	}
 }

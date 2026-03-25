@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_INIT_RandomNamedModelSequence : public CS2::particles::C_INIT_RandomNamedModelElement {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::particles::C_INIT_RandomNamedModelSequence) == 0x200, "C_INIT_RandomNamedModelSequence size should be 0x200");
+
+#endif
 	}
 }

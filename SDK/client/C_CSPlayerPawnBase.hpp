@@ -64,6 +64,7 @@ namespace CS2 {
 			// char m_hOriginalController[0x4]; // 0x1648 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSPlayerPawnBase, m_pPingServices) == 0x15C0, "m_pPingServices in C_CSPlayerPawnBase should be at offset 0x15C0");
 		static_assert(offsetof(CS2::client::C_CSPlayerPawnBase, m_previousPlayerState) == 0x15C8, "m_previousPlayerState in C_CSPlayerPawnBase should be at offset 0x15C8");
 		static_assert(offsetof(CS2::client::C_CSPlayerPawnBase, m_iPlayerState) == 0x15CC, "m_iPlayerState in C_CSPlayerPawnBase should be at offset 0x15CC");
@@ -91,5 +92,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSPlayerPawnBase, m_vLastSmokeOverlayColor) == 0x1620, "m_vLastSmokeOverlayColor in C_CSPlayerPawnBase should be at offset 0x1620");
 		static_assert(offsetof(CS2::client::C_CSPlayerPawnBase, m_hOriginalController) == 0x1648, "m_hOriginalController in C_CSPlayerPawnBase should be at offset 0x1648");
 		static_assert(sizeof(CS2::client::C_CSPlayerPawnBase) == 0x1650, "C_CSPlayerPawnBase size should be 0x1650");
+
+#endif
 	}
 }

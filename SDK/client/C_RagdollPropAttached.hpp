@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bHasParent; // 0x1228 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_boneIndexAttached) == 0x11F8, "m_boneIndexAttached in C_RagdollPropAttached should be at offset 0x11F8");
 		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_ragdollAttachedObjectIndex) == 0x11FC, "m_ragdollAttachedObjectIndex in C_RagdollPropAttached should be at offset 0x11FC");
 		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_attachmentPointBoneSpace) == 0x1200, "m_attachmentPointBoneSpace in C_RagdollPropAttached should be at offset 0x1200");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_parentTime) == 0x1224, "m_parentTime in C_RagdollPropAttached should be at offset 0x1224");
 		static_assert(offsetof(CS2::client::C_RagdollPropAttached, m_bHasParent) == 0x1228, "m_bHasParent in C_RagdollPropAttached should be at offset 0x1228");
 		static_assert(sizeof(CS2::client::C_RagdollPropAttached) == 0x1230, "C_RagdollPropAttached size should be 0x1230");
+
+#endif
 	}
 }

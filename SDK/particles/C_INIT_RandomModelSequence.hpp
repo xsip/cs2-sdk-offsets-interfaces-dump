@@ -26,9 +26,12 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0x3d8 | Schema_Atomic | Size: 0x8
 			char m_hModel[0x8]; // 0x3d8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_ActivityName) == 0x1D8, "m_ActivityName in C_INIT_RandomModelSequence should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_SequenceName) == 0x2D8, "m_SequenceName in C_INIT_RandomModelSequence should be at offset 0x2D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomModelSequence, m_hModel) == 0x3D8, "m_hModel in C_INIT_RandomModelSequence should be at offset 0x3D8");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomModelSequence) == 0x3E0, "C_INIT_RandomModelSequence size should be 0x3E0");
+
+#endif
 	}
 }

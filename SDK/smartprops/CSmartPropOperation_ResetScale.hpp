@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CSmartPropAttributeBool m_bIgnoreObjectScale; // 0x50 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ResetScale, m_bIgnoreObjectScale) == 0x50, "m_bIgnoreObjectScale in CSmartPropOperation_ResetScale should be at offset 0x50");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_ResetScale) == 0x90, "CSmartPropOperation_ResetScale size should be 0x90");
+
+#endif
 	}
 }

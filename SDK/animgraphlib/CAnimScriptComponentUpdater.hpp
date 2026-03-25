@@ -25,7 +25,10 @@ namespace CS2 {
 			modellib::AnimScriptHandle m_hScript; // 0x30 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimScriptComponentUpdater, m_hScript) == 0x30, "m_hScript in CAnimScriptComponentUpdater should be at offset 0x30");
 		static_assert(sizeof(CS2::animgraphlib::CAnimScriptComponentUpdater) == 0x38, "CAnimScriptComponentUpdater size should be 0x38");
+
+#endif
 	}
 }

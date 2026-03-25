@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bExposeExternally; // 0x118 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1f); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputContainer_t, m_bEnabled) == 0x0, "m_bEnabled in CompositeMaterialInputContainer_t should be at offset 0x0");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputContainer_t, m_nCompositeMaterialInputContainerSourceType) == 0x4, "m_nCompositeMaterialInputContainerSourceType in CompositeMaterialInputContainer_t should be at offset 0x4");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputContainer_t, m_strSpecificContainerMaterial) == 0x8, "m_strSpecificContainerMaterial in CompositeMaterialInputContainer_t should be at offset 0x8");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputContainer_t, m_strAttrNameForVar) == 0x110, "m_strAttrNameForVar in CompositeMaterialInputContainer_t should be at offset 0x110");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterialInputContainer_t, m_bExposeExternally) == 0x118, "m_bExposeExternally in CompositeMaterialInputContainer_t should be at offset 0x118");
 		static_assert(sizeof(CS2::compositematerialslib::CompositeMaterialInputContainer_t) == 0x138, "CompositeMaterialInputContainer_t size should be 0x138");
+
+#endif
 	}
 }

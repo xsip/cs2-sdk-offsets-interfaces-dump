@@ -27,11 +27,14 @@ namespace CS2 {
 			float32 v1x; // 0x10 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector2D v2; // 0x14 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeTri_t, nNode) == 0x0, "nNode in FeTri_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeTri_t, w1) == 0x8, "w1 in FeTri_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeTri_t, w2) == 0xC, "w2 in FeTri_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeTri_t, v1x) == 0x10, "v1x in FeTri_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::FeTri_t, v2) == 0x14, "v2 in FeTri_t should be at offset 0x14");
 		static_assert(sizeof(CS2::physicslib::FeTri_t) == 0x1C, "FeTri_t size should be 0x1C");
+
+#endif
 	}
 }

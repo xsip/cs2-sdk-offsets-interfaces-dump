@@ -25,8 +25,11 @@ namespace CS2 {
 			animlib::NmGraphEventTypeCondition_t m_eventTypeCondition; // 0x8 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmGraphEventConditionNode_Condition_t, m_eventID) == 0x0, "m_eventID in CNmGraphEventConditionNode::Condition_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmGraphEventConditionNode_Condition_t, m_eventTypeCondition) == 0x8, "m_eventTypeCondition in CNmGraphEventConditionNode::Condition_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::CNmGraphEventConditionNode_Condition_t) == 0x10, "CNmGraphEventConditionNode::Condition_t size should be 0x10");
+
+#endif
 	}
 }

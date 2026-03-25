@@ -27,9 +27,12 @@ namespace CS2 {
 			client::PointCameraSettings_t m_End; // 0xa4 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_LerpCameraSettings, m_flSeconds) == 0x90, "m_flSeconds in CPulseCell_LerpCameraSettings should be at offset 0x90");
 		static_assert(offsetof(CS2::server::CPulseCell_LerpCameraSettings, m_Start) == 0x94, "m_Start in CPulseCell_LerpCameraSettings should be at offset 0x94");
 		static_assert(offsetof(CS2::server::CPulseCell_LerpCameraSettings, m_End) == 0xA4, "m_End in CPulseCell_LerpCameraSettings should be at offset 0xA4");
 		static_assert(sizeof(CS2::server::CPulseCell_LerpCameraSettings) == 0xB8, "CPulseCell_LerpCameraSettings size should be 0xB8");
+
+#endif
 	}
 }

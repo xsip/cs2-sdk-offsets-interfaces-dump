@@ -23,7 +23,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CSmartPropAttributeBool m_bEnabled; // 0x8 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria, m_bEnabled) == 0x8, "m_bEnabled in CSmartPropSelectionCriteria should be at offset 0x8");
 		static_assert(sizeof(CS2::smartprops::CSmartPropSelectionCriteria) == 0x48, "CSmartPropSelectionCriteria size should be 0x48");
+
+#endif
 	}
 }

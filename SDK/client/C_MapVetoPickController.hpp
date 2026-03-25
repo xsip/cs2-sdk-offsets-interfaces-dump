@@ -41,6 +41,7 @@ namespace CS2 {
 			bool m_bDisabledHud; // 0xf4c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nDraftType) == 0x618, "m_nDraftType in C_MapVetoPickController should be at offset 0x618");
 		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nTeamWinningCoinToss) == 0x61C, "m_nTeamWinningCoinToss in C_MapVetoPickController should be at offset 0x61C");
 		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nTeamWithFirstChoice) == 0x620, "m_nTeamWithFirstChoice in C_MapVetoPickController should be at offset 0x620");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_nPostDataUpdateTick) == 0xF48, "m_nPostDataUpdateTick in C_MapVetoPickController should be at offset 0xF48");
 		static_assert(offsetof(CS2::client::C_MapVetoPickController, m_bDisabledHud) == 0xF4C, "m_bDisabledHud in C_MapVetoPickController should be at offset 0xF4C");
 		static_assert(sizeof(CS2::client::C_MapVetoPickController) == 0xF50, "C_MapVetoPickController size should be 0xF50");
+
+#endif
 	}
 }

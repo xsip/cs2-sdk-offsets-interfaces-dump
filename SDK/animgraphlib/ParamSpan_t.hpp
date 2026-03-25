@@ -32,11 +32,14 @@ namespace CS2 {
 			float32 m_flEndCycle; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::ParamSpan_t, m_samples) == 0x0, "m_samples in ParamSpan_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::ParamSpan_t, m_hParam) == 0x18, "m_hParam in ParamSpan_t should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::ParamSpan_t, m_eParamType) == 0x1A, "m_eParamType in ParamSpan_t should be at offset 0x1A");
 		static_assert(offsetof(CS2::animgraphlib::ParamSpan_t, m_flStartCycle) == 0x1C, "m_flStartCycle in ParamSpan_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::animgraphlib::ParamSpan_t, m_flEndCycle) == 0x20, "m_flEndCycle in ParamSpan_t should be at offset 0x20");
 		static_assert(sizeof(CS2::animgraphlib::ParamSpan_t) == 0x28, "ParamSpan_t size should be 0x28");
+
+#endif
 	}
 }

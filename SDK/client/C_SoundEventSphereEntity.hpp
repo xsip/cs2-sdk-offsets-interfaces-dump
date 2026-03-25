@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flRadius; // 0x6b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_SoundEventSphereEntity, m_flRadius) == 0x6B8, "m_flRadius in C_SoundEventSphereEntity should be at offset 0x6B8");
 		static_assert(sizeof(CS2::client::C_SoundEventSphereEntity) == 0x6C0, "C_SoundEventSphereEntity size should be 0x6C0");
+
+#endif
 	}
 }

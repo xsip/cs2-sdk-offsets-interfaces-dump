@@ -51,6 +51,7 @@ namespace CS2 {
 			int32_t m_nPathingSourceIndex; // 0x638 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_OnEnter) == 0x550, "m_OnEnter in CSoundOpvarSetPointEntity should be at offset 0x550");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_OnExit) == 0x568, "m_OnExit in CSoundOpvarSetPointEntity should be at offset 0x568");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_bAutoDisable) == 0x580, "m_bAutoDisable in CSoundOpvarSetPointEntity should be at offset 0x580");
@@ -76,5 +77,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_vPathingDirection) == 0x62C, "m_vPathingDirection in CSoundOpvarSetPointEntity should be at offset 0x62C");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointEntity, m_nPathingSourceIndex) == 0x638, "m_nPathingSourceIndex in CSoundOpvarSetPointEntity should be at offset 0x638");
 		static_assert(sizeof(CS2::server::CSoundOpvarSetPointEntity) == 0x640, "CSoundOpvarSetPointEntity size should be 0x640");
+
+#endif
 	}
 }

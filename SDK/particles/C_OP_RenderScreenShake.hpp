@@ -33,6 +33,7 @@ namespace CS2 {
 			int32_t m_nFilterCP; // 0x240 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flDurationScale) == 0x220, "m_flDurationScale in C_OP_RenderScreenShake should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flRadiusScale) == 0x224, "m_flRadiusScale in C_OP_RenderScreenShake should be at offset 0x224");
 		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_flFrequencyScale) == 0x228, "m_flFrequencyScale in C_OP_RenderScreenShake should be at offset 0x228");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nAmplitudeField) == 0x23C, "m_nAmplitudeField in C_OP_RenderScreenShake should be at offset 0x23C");
 		static_assert(offsetof(CS2::particles::C_OP_RenderScreenShake, m_nFilterCP) == 0x240, "m_nFilterCP in C_OP_RenderScreenShake should be at offset 0x240");
 		static_assert(sizeof(CS2::particles::C_OP_RenderScreenShake) == 0x248, "C_OP_RenderScreenShake size should be 0x248");
+
+#endif
 	}
 }

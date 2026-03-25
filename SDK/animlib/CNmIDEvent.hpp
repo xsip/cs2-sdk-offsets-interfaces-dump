@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_ID; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_secondaryID; // 0x28 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIDEvent, m_ID) == 0x20, "m_ID in CNmIDEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmIDEvent, m_secondaryID) == 0x28, "m_secondaryID in CNmIDEvent should be at offset 0x28");
 		static_assert(sizeof(CS2::animlib::CNmIDEvent) == 0x30, "CNmIDEvent size should be 0x30");
+
+#endif
 	}
 }

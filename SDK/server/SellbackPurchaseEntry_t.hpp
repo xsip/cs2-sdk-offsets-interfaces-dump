@@ -30,11 +30,14 @@ namespace CS2 {
 			GlobalTypes::CEntityHandle m_hItem; // 0x40 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::SellbackPurchaseEntry_t, m_unDefIdx) == 0x30, "m_unDefIdx in SellbackPurchaseEntry_t should be at offset 0x30");
 		static_assert(offsetof(CS2::server::SellbackPurchaseEntry_t, m_nCost) == 0x34, "m_nCost in SellbackPurchaseEntry_t should be at offset 0x34");
 		static_assert(offsetof(CS2::server::SellbackPurchaseEntry_t, m_nPrevArmor) == 0x38, "m_nPrevArmor in SellbackPurchaseEntry_t should be at offset 0x38");
 		static_assert(offsetof(CS2::server::SellbackPurchaseEntry_t, m_bPrevHelmet) == 0x3C, "m_bPrevHelmet in SellbackPurchaseEntry_t should be at offset 0x3C");
 		static_assert(offsetof(CS2::server::SellbackPurchaseEntry_t, m_hItem) == 0x40, "m_hItem in SellbackPurchaseEntry_t should be at offset 0x40");
 		static_assert(sizeof(CS2::server::SellbackPurchaseEntry_t) == 0x48, "SellbackPurchaseEntry_t size should be 0x48");
+
+#endif
 	}
 }

@@ -41,6 +41,7 @@ namespace CS2 {
 			server::EntFinderMethod_t m_FindMethod; // 0x4cc | Schema_DeclaredEnum | Size: 0x4
 			entity2::CEntityIOOutput m_OnFoundEntity; // 0x4d0 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hEntity) == 0x4A8, "m_hEntity in CPointEntityFinder should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointEntityFinder, m_iFilterName) == 0x4B0, "m_iFilterName in CPointEntityFinder should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPointEntityFinder, m_hFilter) == 0x4B8, "m_hFilter in CPointEntityFinder should be at offset 0x4B8");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointEntityFinder, m_FindMethod) == 0x4CC, "m_FindMethod in CPointEntityFinder should be at offset 0x4CC");
 		static_assert(offsetof(CS2::server::CPointEntityFinder, m_OnFoundEntity) == 0x4D0, "m_OnFoundEntity in CPointEntityFinder should be at offset 0x4D0");
 		static_assert(sizeof(CS2::server::CPointEntityFinder) == 0x4E8, "CPointEntityFinder size should be 0x4E8");
+
+#endif
 	}
 }

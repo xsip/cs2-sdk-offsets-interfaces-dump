@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bParticlesTraceAgainstMap; // 0xe1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::toolscene::CLightRigVMap, m_MapName) == 0x0, "m_MapName in CLightRigVMap should be at offset 0x0");
 		static_assert(offsetof(CS2::toolscene::CLightRigVMap, m_bRender3DSkybox) == 0xE0, "m_bRender3DSkybox in CLightRigVMap should be at offset 0xE0");
 		static_assert(offsetof(CS2::toolscene::CLightRigVMap, m_bParticlesTraceAgainstMap) == 0xE1, "m_bParticlesTraceAgainstMap in CLightRigVMap should be at offset 0xE1");
 		static_assert(sizeof(CS2::toolscene::CLightRigVMap) == 0xE8, "CLightRigVMap size should be 0xE8");
+
+#endif
 	}
 }

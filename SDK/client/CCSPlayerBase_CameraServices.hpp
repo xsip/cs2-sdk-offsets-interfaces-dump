@@ -35,6 +35,7 @@ namespace CS2 {
 			// char m_hZoomOwner[0x4]; // 0x2a0 | Schema_Atomic | Size: 0x4
 			float32 m_flLastShotFOV; // 0x2a4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSPlayerBase_CameraServices, m_iFOV) == 0x290, "m_iFOV in CCSPlayerBase_CameraServices should be at offset 0x290");
 		static_assert(offsetof(CS2::client::CCSPlayerBase_CameraServices, m_iFOVStart) == 0x294, "m_iFOVStart in CCSPlayerBase_CameraServices should be at offset 0x294");
 		static_assert(offsetof(CS2::client::CCSPlayerBase_CameraServices, m_flFOVTime) == 0x298, "m_flFOVTime in CCSPlayerBase_CameraServices should be at offset 0x298");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CCSPlayerBase_CameraServices, m_hZoomOwner) == 0x2A0, "m_hZoomOwner in CCSPlayerBase_CameraServices should be at offset 0x2A0");
 		static_assert(offsetof(CS2::client::CCSPlayerBase_CameraServices, m_flLastShotFOV) == 0x2A4, "m_flLastShotFOV in CCSPlayerBase_CameraServices should be at offset 0x2A4");
 		static_assert(sizeof(CS2::client::CCSPlayerBase_CameraServices) == 0x2A8, "CCSPlayerBase_CameraServices size should be 0x2A8");
+
+#endif
 	}
 }

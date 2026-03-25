@@ -34,6 +34,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x79c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountToScalar, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_RemapParticleCountToScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountToScalar, m_nInputMin) == 0x1D8, "m_nInputMin in C_OP_RemapParticleCountToScalar should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountToScalar, m_nInputMax) == 0x348, "m_nInputMax in C_OP_RemapParticleCountToScalar should be at offset 0x348");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountToScalar, m_bActiveRange) == 0x798, "m_bActiveRange in C_OP_RemapParticleCountToScalar should be at offset 0x798");
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountToScalar, m_nSetMethod) == 0x79C, "m_nSetMethod in C_OP_RemapParticleCountToScalar should be at offset 0x79C");
 		static_assert(sizeof(CS2::particles::C_OP_RemapParticleCountToScalar) == 0x7A0, "C_OP_RemapParticleCountToScalar size should be 0x7A0");
+
+#endif
 	}
 }

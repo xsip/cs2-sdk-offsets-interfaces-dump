@@ -34,6 +34,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bAlignOrientation; // 0x2a0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_vAlignDirection; // 0x2e0 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceInSphere, m_PlacementMode) == 0xA0, "m_PlacementMode in CSmartPropElement_PlaceInSphere should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceInSphere, m_DistributionMode) == 0xE0, "m_DistributionMode in CSmartPropElement_PlaceInSphere should be at offset 0xE0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceInSphere, m_flRandomness) == 0x120, "m_flRandomness in CSmartPropElement_PlaceInSphere should be at offset 0x120");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceInSphere, m_bAlignOrientation) == 0x2A0, "m_bAlignOrientation in CSmartPropElement_PlaceInSphere should be at offset 0x2A0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_PlaceInSphere, m_vAlignDirection) == 0x2E0, "m_vAlignDirection in CSmartPropElement_PlaceInSphere should be at offset 0x2E0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_PlaceInSphere) == 0x320, "CSmartPropElement_PlaceInSphere size should be 0x320");
+
+#endif
 	}
 }

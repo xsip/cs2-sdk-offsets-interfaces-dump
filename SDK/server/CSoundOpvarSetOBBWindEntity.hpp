@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flWindMapMin; // 0x588 | Schema_Builtin | Size: 0x4
 			float32 m_flWindMapMax; // 0x58c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vMins) == 0x550, "m_vMins in CSoundOpvarSetOBBWindEntity should be at offset 0x550");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vMaxs) == 0x55C, "m_vMaxs in CSoundOpvarSetOBBWindEntity should be at offset 0x55C");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_vDistanceMins) == 0x568, "m_vDistanceMins in CSoundOpvarSetOBBWindEntity should be at offset 0x568");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMapMin) == 0x588, "m_flWindMapMin in CSoundOpvarSetOBBWindEntity should be at offset 0x588");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetOBBWindEntity, m_flWindMapMax) == 0x58C, "m_flWindMapMax in CSoundOpvarSetOBBWindEntity should be at offset 0x58C");
 		static_assert(sizeof(CS2::server::CSoundOpvarSetOBBWindEntity) == 0x590, "CSoundOpvarSetOBBWindEntity size should be 0x590");
+
+#endif
 	}
 }

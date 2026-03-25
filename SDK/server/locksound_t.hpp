@@ -27,9 +27,12 @@ namespace CS2 {
 			entity2::GameTime_t flwaitSound; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::locksound_t, sLockedSound) == 0x8, "sLockedSound in locksound_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::locksound_t, sUnlockedSound) == 0x10, "sUnlockedSound in locksound_t should be at offset 0x10");
 		static_assert(offsetof(CS2::server::locksound_t, flwaitSound) == 0x18, "flwaitSound in locksound_t should be at offset 0x18");
 		static_assert(sizeof(CS2::server::locksound_t) == 0x20, "locksound_t size should be 0x20");
+
+#endif
 	}
 }

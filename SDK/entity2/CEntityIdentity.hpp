@@ -43,6 +43,7 @@ namespace CS2 {
 			entity2::CEntityIdentity* m_pPrevByClass; // 0x60 | Schema_Ptr | Size: 0x8
 			entity2::CEntityIdentity* m_pNextByClass; // 0x68 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_nameStringableIndex) == 0x14, "m_nameStringableIndex in CEntityIdentity should be at offset 0x14");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_name) == 0x18, "m_name in CEntityIdentity should be at offset 0x18");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_designerName) == 0x20, "m_designerName in CEntityIdentity should be at offset 0x20");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pPrevByClass) == 0x60, "m_pPrevByClass in CEntityIdentity should be at offset 0x60");
 		static_assert(offsetof(CS2::entity2::CEntityIdentity, m_pNextByClass) == 0x68, "m_pNextByClass in CEntityIdentity should be at offset 0x68");
 		static_assert(sizeof(CS2::entity2::CEntityIdentity) == 0x70, "CEntityIdentity size should be 0x70");
+
+#endif
 	}
 }

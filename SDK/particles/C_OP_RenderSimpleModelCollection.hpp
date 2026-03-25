@@ -39,6 +39,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nAngularVelocityField; // 0x578 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x14); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_bCenterOffset) == 0x220, "m_bCenterOffset in C_OP_RenderSimpleModelCollection should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_hModel) == 0x228, "m_hModel in C_OP_RenderSimpleModelCollection should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_modelInput) == 0x230, "m_modelInput in C_OP_RenderSimpleModelCollection should be at offset 0x230");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_fDrawFilter) == 0x408, "m_fDrawFilter in C_OP_RenderSimpleModelCollection should be at offset 0x408");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSimpleModelCollection, m_nAngularVelocityField) == 0x578, "m_nAngularVelocityField in C_OP_RenderSimpleModelCollection should be at offset 0x578");
 		static_assert(sizeof(CS2::particles::C_OP_RenderSimpleModelCollection) == 0x590, "C_OP_RenderSimpleModelCollection size should be 0x590");
+
+#endif
 	}
 }

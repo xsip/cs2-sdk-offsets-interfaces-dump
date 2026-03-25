@@ -22,6 +22,9 @@ namespace CS2 {
 		class CNmAdditiveBlendTask : public CS2::animlib::CNmBlendTaskBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animlib::CNmAdditiveBlendTask) == 0xE0, "CNmAdditiveBlendTask size should be 0xE0");
+
+#endif
 	}
 }

@@ -24,8 +24,11 @@ namespace CS2 {
 			modellib::FlexOpCode_t m_OpCode; // 0x0 | Schema_DeclaredEnum | Size: 0x4
 			int32_t m_Data; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFlexOp, m_OpCode) == 0x0, "m_OpCode in CFlexOp should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CFlexOp, m_Data) == 0x4, "m_Data in CFlexOp should be at offset 0x4");
 		static_assert(sizeof(CS2::modellib::CFlexOp) == 0x8, "CFlexOp size should be 0x8");
+
+#endif
 	}
 }

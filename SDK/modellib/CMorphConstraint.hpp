@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_flMax; // 0x70 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CMorphConstraint, m_sTargetMorph) == 0x60, "m_sTargetMorph in CMorphConstraint should be at offset 0x60");
 		static_assert(offsetof(CS2::modellib::CMorphConstraint, m_nSlaveChannel) == 0x68, "m_nSlaveChannel in CMorphConstraint should be at offset 0x68");
 		static_assert(offsetof(CS2::modellib::CMorphConstraint, m_flMin) == 0x6C, "m_flMin in CMorphConstraint should be at offset 0x6C");
 		static_assert(offsetof(CS2::modellib::CMorphConstraint, m_flMax) == 0x70, "m_flMax in CMorphConstraint should be at offset 0x70");
 		static_assert(sizeof(CS2::modellib::CMorphConstraint) == 0x80, "CMorphConstraint size should be 0x80");
+
+#endif
 	}
 }

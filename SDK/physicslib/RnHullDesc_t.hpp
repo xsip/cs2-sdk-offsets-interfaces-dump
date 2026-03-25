@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			physicslib::RnHull_t m_Hull; // 0x18 | Schema_DeclaredClass | Size: 0xf8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnHullDesc_t, m_Hull) == 0x18, "m_Hull in RnHullDesc_t should be at offset 0x18");
 		static_assert(sizeof(CS2::physicslib::RnHullDesc_t) == 0x110, "RnHullDesc_t size should be 0x110");
+
+#endif
 	}
 }

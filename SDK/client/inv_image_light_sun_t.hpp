@@ -24,9 +24,12 @@ namespace CS2 {
 			GlobalTypes::QAngle angle; // 0xc | Schema_Atomic | Size: 0xc
 			float32 brightness; // 0x18 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::inv_image_light_sun_t, color) == 0x0, "color in inv_image_light_sun_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::inv_image_light_sun_t, angle) == 0xC, "angle in inv_image_light_sun_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::inv_image_light_sun_t, brightness) == 0x18, "brightness in inv_image_light_sun_t should be at offset 0x18");
 		static_assert(sizeof(CS2::client::inv_image_light_sun_t) == 0x1C, "inv_image_light_sun_t size should be 0x1C");
+
+#endif
 	}
 }

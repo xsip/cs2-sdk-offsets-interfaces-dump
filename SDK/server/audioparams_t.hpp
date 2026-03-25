@@ -28,11 +28,14 @@ namespace CS2 {
 			int32_t soundscapeEntityListIndex; // 0x70 | Schema_Builtin | Size: 0x4
 			uint32_t soundEventHash; // 0x74 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::audioparams_t, localSound) == 0x8, "localSound in audioparams_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::audioparams_t, soundscapeIndex) == 0x68, "soundscapeIndex in audioparams_t should be at offset 0x68");
 		static_assert(offsetof(CS2::server::audioparams_t, localBits) == 0x6C, "localBits in audioparams_t should be at offset 0x6C");
 		static_assert(offsetof(CS2::server::audioparams_t, soundscapeEntityListIndex) == 0x70, "soundscapeEntityListIndex in audioparams_t should be at offset 0x70");
 		static_assert(offsetof(CS2::server::audioparams_t, soundEventHash) == 0x74, "soundEventHash in audioparams_t should be at offset 0x74");
 		static_assert(sizeof(CS2::server::audioparams_t) == 0x78, "audioparams_t size should be 0x78");
+
+#endif
 	}
 }

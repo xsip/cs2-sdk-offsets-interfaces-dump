@@ -26,8 +26,11 @@ namespace CS2 {
 			float32 m_flKeyValue; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::MotionBlendItem, m_pChild) == 0x0, "m_pChild in MotionBlendItem should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::MotionBlendItem, m_flKeyValue) == 0x8, "m_flKeyValue in MotionBlendItem should be at offset 0x8");
 		static_assert(sizeof(CS2::animgraphlib::MotionBlendItem) == 0x10, "MotionBlendItem size should be 0x10");
+
+#endif
 	}
 }

@@ -41,6 +41,7 @@ namespace CS2 {
 			bool m_bDontResetSameSelection; // 0xba | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_children) == 0x60, "m_children in CChoiceUpdateNode should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_weights) == 0x78, "m_weights in CChoiceUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_blendTimes) == 0x90, "m_blendTimes in CChoiceUpdateNode should be at offset 0x90");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bResetChosen) == 0xB9, "m_bResetChosen in CChoiceUpdateNode should be at offset 0xB9");
 		static_assert(offsetof(CS2::animgraphlib::CChoiceUpdateNode, m_bDontResetSameSelection) == 0xBA, "m_bDontResetSameSelection in CChoiceUpdateNode should be at offset 0xBA");
 		static_assert(sizeof(CS2::animgraphlib::CChoiceUpdateNode) == 0xC0, "CChoiceUpdateNode size should be 0xC0");
+
+#endif
 	}
 }

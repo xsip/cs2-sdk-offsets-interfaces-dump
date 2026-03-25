@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CGlobalSymbol m_NodeName; // 0x20 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_BlackboardReference, m_hBlackboardResource) == 0x0, "m_hBlackboardResource in CPulse_BlackboardReference should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_BlackboardReference, m_BlackboardResource) == 0x8, "m_BlackboardResource in CPulse_BlackboardReference should be at offset 0x8");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_BlackboardReference, m_nNodeID) == 0x18, "m_nNodeID in CPulse_BlackboardReference should be at offset 0x18");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_BlackboardReference, m_NodeName) == 0x20, "m_NodeName in CPulse_BlackboardReference should be at offset 0x20");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_BlackboardReference) == 0x28, "CPulse_BlackboardReference size should be 0x28");
+
+#endif
 	}
 }

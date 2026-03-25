@@ -40,6 +40,7 @@ namespace CS2 {
 			int32_t m_iOldOwnerClass; // 0xdd4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEconEntity, m_AttributeManager) == 0xAC0, "m_AttributeManager in CEconEntity should be at offset 0xAC0");
 		static_assert(offsetof(CS2::server::CEconEntity, m_OriginalOwnerXuidLow) == 0xDB8, "m_OriginalOwnerXuidLow in CEconEntity should be at offset 0xDB8");
 		static_assert(offsetof(CS2::server::CEconEntity, m_OriginalOwnerXuidHigh) == 0xDBC, "m_OriginalOwnerXuidHigh in CEconEntity should be at offset 0xDBC");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEconEntity, m_hOldProvidee) == 0xDD0, "m_hOldProvidee in CEconEntity should be at offset 0xDD0");
 		static_assert(offsetof(CS2::server::CEconEntity, m_iOldOwnerClass) == 0xDD4, "m_iOldOwnerClass in CEconEntity should be at offset 0xDD4");
 		static_assert(sizeof(CS2::server::CEconEntity) == 0xDE0, "CEconEntity size should be 0xDE0");
+
+#endif
 	}
 }

@@ -58,6 +58,7 @@ namespace CS2 {
 			float32 m_flLastGrassBurnThink; // 0x847c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Inferno, m_nfxFireDamageEffect) == 0xEC8, "m_nfxFireDamageEffect in C_Inferno should be at offset 0xEC8");
 		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoPointsSnapshot) == 0xED0, "m_hInfernoPointsSnapshot in C_Inferno should be at offset 0xED0");
 		static_assert(offsetof(CS2::client::C_Inferno, m_hInfernoFillerPointsSnapshot) == 0xED8, "m_hInfernoFillerPointsSnapshot in C_Inferno should be at offset 0xED8");
@@ -83,5 +84,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_Inferno, m_maxBounds) == 0x8470, "m_maxBounds in C_Inferno should be at offset 0x8470");
 		static_assert(offsetof(CS2::client::C_Inferno, m_flLastGrassBurnThink) == 0x847C, "m_flLastGrassBurnThink in C_Inferno should be at offset 0x847C");
 		static_assert(sizeof(CS2::client::C_Inferno) == 0x8490, "C_Inferno size should be 0x8490");
+
+#endif
 	}
 }

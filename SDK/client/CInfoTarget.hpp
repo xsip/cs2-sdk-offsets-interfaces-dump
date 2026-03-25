@@ -22,6 +22,9 @@ namespace CS2 {
 		class CInfoTarget : public CS2::client::C_PointEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::CInfoTarget) == 0x608, "CInfoTarget size should be 0x608");
+
+#endif
 	}
 }

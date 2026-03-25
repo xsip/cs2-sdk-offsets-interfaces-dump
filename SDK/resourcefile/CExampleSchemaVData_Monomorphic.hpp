@@ -23,8 +23,11 @@ namespace CS2 {
 			int32_t m_nExample1; // 0x0 | Schema_Builtin | Size: 0x4
 			int32_t m_nExample2; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::resourcefile::CExampleSchemaVData_Monomorphic, m_nExample1) == 0x0, "m_nExample1 in CExampleSchemaVData_Monomorphic should be at offset 0x0");
 		static_assert(offsetof(CS2::resourcefile::CExampleSchemaVData_Monomorphic, m_nExample2) == 0x4, "m_nExample2 in CExampleSchemaVData_Monomorphic should be at offset 0x4");
 		static_assert(sizeof(CS2::resourcefile::CExampleSchemaVData_Monomorphic) == 0x8, "CExampleSchemaVData_Monomorphic size should be 0x8");
+
+#endif
 	}
 }

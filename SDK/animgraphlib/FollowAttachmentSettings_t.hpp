@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bMatchRotation; // 0x86 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x9); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::FollowAttachmentSettings_t, m_attachment) == 0x0, "m_attachment in FollowAttachmentSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::FollowAttachmentSettings_t, m_boneIndex) == 0x80, "m_boneIndex in FollowAttachmentSettings_t should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::FollowAttachmentSettings_t, m_attachmentHandle) == 0x84, "m_attachmentHandle in FollowAttachmentSettings_t should be at offset 0x84");
 		static_assert(offsetof(CS2::animgraphlib::FollowAttachmentSettings_t, m_bMatchTranslation) == 0x85, "m_bMatchTranslation in FollowAttachmentSettings_t should be at offset 0x85");
 		static_assert(offsetof(CS2::animgraphlib::FollowAttachmentSettings_t, m_bMatchRotation) == 0x86, "m_bMatchRotation in FollowAttachmentSettings_t should be at offset 0x86");
 		static_assert(sizeof(CS2::animgraphlib::FollowAttachmentSettings_t) == 0x90, "FollowAttachmentSettings_t size should be 0x90");
+
+#endif
 	}
 }

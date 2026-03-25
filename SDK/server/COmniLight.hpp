@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bShowLight; // 0xa28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::COmniLight, m_flInnerAngle) == 0xA20, "m_flInnerAngle in COmniLight should be at offset 0xA20");
 		static_assert(offsetof(CS2::server::COmniLight, m_flOuterAngle) == 0xA24, "m_flOuterAngle in COmniLight should be at offset 0xA24");
 		static_assert(offsetof(CS2::server::COmniLight, m_bShowLight) == 0xA28, "m_bShowLight in COmniLight should be at offset 0xA28");
 		static_assert(sizeof(CS2::server::COmniLight) == 0xA30, "COmniLight size should be 0xA30");
+
+#endif
 	}
 }

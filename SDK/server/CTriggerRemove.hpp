@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			entity2::CEntityIOOutput m_OnRemove; // 0x890 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerRemove, m_OnRemove) == 0x890, "m_OnRemove in CTriggerRemove should be at offset 0x890");
 		static_assert(sizeof(CS2::server::CTriggerRemove) == 0x8A8, "CTriggerRemove size should be 0x8A8");
+
+#endif
 	}
 }

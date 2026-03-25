@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bUseNormal; // 0x1f1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromPlaneCache, m_vecOffsetMin) == 0x1D8, "m_vecOffsetMin in C_INIT_CreateFromPlaneCache should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromPlaneCache, m_vecOffsetMax) == 0x1E4, "m_vecOffsetMax in C_INIT_CreateFromPlaneCache should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateFromPlaneCache, m_bUseNormal) == 0x1F1, "m_bUseNormal in C_INIT_CreateFromPlaneCache should be at offset 0x1F1");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateFromPlaneCache) == 0x1F8, "C_INIT_CreateFromPlaneCache size should be 0x1F8");
+
+#endif
 	}
 }

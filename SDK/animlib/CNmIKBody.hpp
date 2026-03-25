@@ -25,10 +25,13 @@ namespace CS2 {
 			GlobalTypes::Vector m_vRadius; // 0x10 | Schema_Atomic | Size: 0xc
 			float32 m_flResistance; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIKBody, m_flMass) == 0x0, "m_flMass in CNmIKBody should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmIKBody, m_vLocalMassCenter) == 0x4, "m_vLocalMassCenter in CNmIKBody should be at offset 0x4");
 		static_assert(offsetof(CS2::animlib::CNmIKBody, m_vRadius) == 0x10, "m_vRadius in CNmIKBody should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmIKBody, m_flResistance) == 0x1C, "m_flResistance in CNmIKBody should be at offset 0x1C");
 		static_assert(sizeof(CS2::animlib::CNmIKBody) == 0x20, "CNmIKBody size should be 0x20");
+
+#endif
 	}
 }

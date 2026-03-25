@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flExponent; // 0x210 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flMinDist) == 0x1E0, "m_flMinDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_vecForceAtMinDist) == 0x1E4, "m_vecForceAtMinDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flMaxDist) == 0x1F0, "m_flMaxDist in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x1F0");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_nControlPointNumber) == 0x20C, "m_nControlPointNumber in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x20C");
 		static_assert(offsetof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane, m_flExponent) == 0x210, "m_flExponent in C_OP_ForceBasedOnDistanceToPlane should be at offset 0x210");
 		static_assert(sizeof(CS2::particles::C_OP_ForceBasedOnDistanceToPlane) == 0x218, "C_OP_ForceBasedOnDistanceToPlane size should be 0x218");
+
+#endif
 	}
 }

@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bStartEnabled; // 0x76e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncMonitor, m_targetCamera) == 0x750, "m_targetCamera in CFuncMonitor should be at offset 0x750");
 		static_assert(offsetof(CS2::server::CFuncMonitor, m_nResolutionEnum) == 0x758, "m_nResolutionEnum in CFuncMonitor should be at offset 0x758");
 		static_assert(offsetof(CS2::server::CFuncMonitor, m_bRenderShadows) == 0x75C, "m_bRenderShadows in CFuncMonitor should be at offset 0x75C");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncMonitor, m_bDraw3DSkybox) == 0x76D, "m_bDraw3DSkybox in CFuncMonitor should be at offset 0x76D");
 		static_assert(offsetof(CS2::server::CFuncMonitor, m_bStartEnabled) == 0x76E, "m_bStartEnabled in CFuncMonitor should be at offset 0x76E");
 		static_assert(sizeof(CS2::server::CFuncMonitor) == 0x770, "CFuncMonitor size should be 0x770");
+
+#endif
 	}
 }

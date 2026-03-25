@@ -45,6 +45,7 @@ namespace CS2 {
 			float32 m_flMaxTwist; // 0x150 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::TwoBoneIKSettings_t, m_endEffectorType) == 0x0, "m_endEffectorType in TwoBoneIKSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::TwoBoneIKSettings_t, m_endEffectorAttachment) == 0x10, "m_endEffectorAttachment in TwoBoneIKSettings_t should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::TwoBoneIKSettings_t, m_targetType) == 0x90, "m_targetType in TwoBoneIKSettings_t should be at offset 0x90");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::TwoBoneIKSettings_t, m_bConstrainTwist) == 0x14D, "m_bConstrainTwist in TwoBoneIKSettings_t should be at offset 0x14D");
 		static_assert(offsetof(CS2::animgraphlib::TwoBoneIKSettings_t, m_flMaxTwist) == 0x150, "m_flMaxTwist in TwoBoneIKSettings_t should be at offset 0x150");
 		static_assert(sizeof(CS2::animgraphlib::TwoBoneIKSettings_t) == 0x160, "TwoBoneIKSettings_t size should be 0x160");
+
+#endif
 	}
 }

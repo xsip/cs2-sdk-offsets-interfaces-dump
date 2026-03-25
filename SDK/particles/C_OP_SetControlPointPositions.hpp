@@ -35,6 +35,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecCP4Pos; // 0x210 | Schema_Atomic | Size: 0xc
 			int32_t m_nHeadLocation; // 0x21c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositions, m_bUseWorldLocation) == 0x1D8, "m_bUseWorldLocation in C_OP_SetControlPointPositions should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositions, m_bOrient) == 0x1D9, "m_bOrient in C_OP_SetControlPointPositions should be at offset 0x1D9");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositions, m_bSetOnce) == 0x1DA, "m_bSetOnce in C_OP_SetControlPointPositions should be at offset 0x1DA");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositions, m_vecCP4Pos) == 0x210, "m_vecCP4Pos in C_OP_SetControlPointPositions should be at offset 0x210");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositions, m_nHeadLocation) == 0x21C, "m_nHeadLocation in C_OP_SetControlPointPositions should be at offset 0x21C");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointPositions) == 0x220, "C_OP_SetControlPointPositions size should be 0x220");
+
+#endif
 	}
 }

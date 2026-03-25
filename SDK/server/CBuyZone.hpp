@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_LegacyTeamNum; // 0x890 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBuyZone, m_LegacyTeamNum) == 0x890, "m_LegacyTeamNum in CBuyZone should be at offset 0x890");
 		static_assert(sizeof(CS2::server::CBuyZone) == 0x898, "CBuyZone size should be 0x898");
+
+#endif
 	}
 }

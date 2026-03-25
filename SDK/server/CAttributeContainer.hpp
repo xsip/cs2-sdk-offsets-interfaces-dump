@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			server::CEconItemView m_Item; // 0x50 | Schema_DeclaredClass | Size: 0x2a8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CAttributeContainer, m_Item) == 0x50, "m_Item in CAttributeContainer should be at offset 0x50");
 		static_assert(sizeof(CS2::server::CAttributeContainer) == 0x2F8, "CAttributeContainer size should be 0x2F8");
+
+#endif
 	}
 }

@@ -54,6 +54,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>> m_hTriggerSoundscapeList; // 0x160 | Schema_Atomic | Size: 0x18
 			// char m_hTriggerSoundscapeList[0x18]; // 0x160 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPlayer_CameraServices, m_vecCsViewPunchAngle) == 0x48, "m_vecCsViewPunchAngle in CPlayer_CameraServices should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPlayer_CameraServices, m_nCsViewPunchAngleTick) == 0x54, "m_nCsViewPunchAngleTick in CPlayer_CameraServices should be at offset 0x54");
 		static_assert(offsetof(CS2::server::CPlayer_CameraServices, m_flCsViewPunchAngleTickRatio) == 0x58, "m_flCsViewPunchAngleTickRatio in CPlayer_CameraServices should be at offset 0x58");
@@ -67,5 +68,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPlayer_CameraServices, m_flOldPlayerViewOffsetZ) == 0x144, "m_flOldPlayerViewOffsetZ in CPlayer_CameraServices should be at offset 0x144");
 		static_assert(offsetof(CS2::server::CPlayer_CameraServices, m_hTriggerSoundscapeList) == 0x160, "m_hTriggerSoundscapeList in CPlayer_CameraServices should be at offset 0x160");
 		static_assert(sizeof(CS2::server::CPlayer_CameraServices) == 0x178, "CPlayer_CameraServices size should be 0x178");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			// GlobalTypes::CAnimScriptParam< float32 > m_hTest; // 0x10 | Schema_Atomic | Size: 0x10
 			char m_hTest[0x10]; // 0x10 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::host::EmptyTestScript, m_hTest) == 0x10, "m_hTest in EmptyTestScript should be at offset 0x10");
 		static_assert(sizeof(CS2::host::EmptyTestScript) == 0x20, "EmptyTestScript size should be 0x20");
+
+#endif
 	}
 }

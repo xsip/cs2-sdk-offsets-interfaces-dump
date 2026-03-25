@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bUseParticleNormal; // 0x1f5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToScalar, m_nInputCP1) == 0x1D0, "m_nInputCP1 in C_OP_RemapDotProductToScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToScalar, m_nInputCP2) == 0x1D4, "m_nInputCP2 in C_OP_RemapDotProductToScalar should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToScalar, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_OP_RemapDotProductToScalar should be at offset 0x1D8");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToScalar, m_bActiveRange) == 0x1F4, "m_bActiveRange in C_OP_RemapDotProductToScalar should be at offset 0x1F4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToScalar, m_bUseParticleNormal) == 0x1F5, "m_bUseParticleNormal in C_OP_RemapDotProductToScalar should be at offset 0x1F5");
 		static_assert(sizeof(CS2::particles::C_OP_RemapDotProductToScalar) == 0x1F8, "C_OP_RemapDotProductToScalar size should be 0x1F8");
+
+#endif
 	}
 }

@@ -32,11 +32,14 @@ namespace CS2 {
 			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnPassThroughReverse; // 0x580 | Schema_Atomic | Size: 0x20
 			// char m_OnPassThroughReverse[0x20]; // 0x580 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnStartFromOrInSegment) == 0x500, "m_OnStartFromOrInSegment in CMoverPathNode should be at offset 0x500");
 		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnStoppedAtOrInSegment) == 0x520, "m_OnStoppedAtOrInSegment in CMoverPathNode should be at offset 0x520");
 		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThrough) == 0x540, "m_OnPassThrough in CMoverPathNode should be at offset 0x540");
 		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThroughForward) == 0x560, "m_OnPassThroughForward in CMoverPathNode should be at offset 0x560");
 		static_assert(offsetof(CS2::server::CMoverPathNode, m_OnPassThroughReverse) == 0x580, "m_OnPassThroughReverse in CMoverPathNode should be at offset 0x580");
 		static_assert(sizeof(CS2::server::CMoverPathNode) == 0x5A0, "CMoverPathNode size should be 0x5A0");
+
+#endif
 	}
 }

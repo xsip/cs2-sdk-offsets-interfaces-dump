@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bUseNewCode; // 0xf58 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_vecMin) == 0x1D8, "m_vecMin in C_INIT_CreateWithinBox should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_vecMax) == 0x890, "m_vecMax in C_INIT_CreateWithinBox should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_nControlPointNumber) == 0xF48, "m_nControlPointNumber in C_INIT_CreateWithinBox should be at offset 0xF48");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_randomnessParameters) == 0xF50, "m_randomnessParameters in C_INIT_CreateWithinBox should be at offset 0xF50");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateWithinBox, m_bUseNewCode) == 0xF58, "m_bUseNewCode in C_INIT_CreateWithinBox should be at offset 0xF58");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateWithinBox) == 0xF60, "C_INIT_CreateWithinBox size should be 0xF60");
+
+#endif
 	}
 }

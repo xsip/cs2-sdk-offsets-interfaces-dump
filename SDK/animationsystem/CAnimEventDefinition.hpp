@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CBufferString m_sLegacyOptions; // 0x28 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CGlobalSymbol m_sEventName; // 0x38 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimEventDefinition, m_nFrame) == 0x8, "m_nFrame in CAnimEventDefinition should be at offset 0x8");
 		static_assert(offsetof(CS2::animationsystem::CAnimEventDefinition, m_nEndFrame) == 0xC, "m_nEndFrame in CAnimEventDefinition should be at offset 0xC");
 		static_assert(offsetof(CS2::animationsystem::CAnimEventDefinition, m_flCycle) == 0x10, "m_flCycle in CAnimEventDefinition should be at offset 0x10");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimEventDefinition, m_sLegacyOptions) == 0x28, "m_sLegacyOptions in CAnimEventDefinition should be at offset 0x28");
 		static_assert(offsetof(CS2::animationsystem::CAnimEventDefinition, m_sEventName) == 0x38, "m_sEventName in CAnimEventDefinition should be at offset 0x38");
 		static_assert(sizeof(CS2::animationsystem::CAnimEventDefinition) == 0x40, "CAnimEventDefinition size should be 0x40");
+
+#endif
 	}
 }

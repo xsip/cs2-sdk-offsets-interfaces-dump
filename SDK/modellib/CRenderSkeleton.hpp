@@ -29,9 +29,12 @@ namespace CS2 {
 			int32_t m_nBoneWeightCount; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CRenderSkeleton, m_bones) == 0x0, "m_bones in CRenderSkeleton should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CRenderSkeleton, m_boneParents) == 0x30, "m_boneParents in CRenderSkeleton should be at offset 0x30");
 		static_assert(offsetof(CS2::modellib::CRenderSkeleton, m_nBoneWeightCount) == 0x48, "m_nBoneWeightCount in CRenderSkeleton should be at offset 0x48");
 		static_assert(sizeof(CS2::modellib::CRenderSkeleton) == 0x50, "CRenderSkeleton size should be 0x50");
+
+#endif
 	}
 }

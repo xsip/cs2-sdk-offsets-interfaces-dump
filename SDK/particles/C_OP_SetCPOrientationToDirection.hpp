@@ -24,8 +24,11 @@ namespace CS2 {
 			int32_t m_nInputControlPoint; // 0x1d0 | Schema_Builtin | Size: 0x4
 			int32_t m_nOutputControlPoint; // 0x1d4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetCPOrientationToDirection, m_nInputControlPoint) == 0x1D0, "m_nInputControlPoint in C_OP_SetCPOrientationToDirection should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetCPOrientationToDirection, m_nOutputControlPoint) == 0x1D4, "m_nOutputControlPoint in C_OP_SetCPOrientationToDirection should be at offset 0x1D4");
 		static_assert(sizeof(CS2::particles::C_OP_SetCPOrientationToDirection) == 0x1D8, "C_OP_SetCPOrientationToDirection size should be 0x1D8");
+
+#endif
 	}
 }

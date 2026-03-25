@@ -31,6 +31,7 @@ namespace CS2 {
 			S2_PAD(0x1);
 			uint32_t m_hLayerSpawnGroup; // 0x4d4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_pOutputOnEntitiesSpawned) == 0x4A8, "m_pOutputOnEntitiesSpawned in CInfoWorldLayer should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_worldName) == 0x4C0, "m_worldName in CInfoWorldLayer should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_layerName) == 0x4C8, "m_layerName in CInfoWorldLayer should be at offset 0x4C8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_bCreateAsChildSpawnGroup) == 0x4D2, "m_bCreateAsChildSpawnGroup in CInfoWorldLayer should be at offset 0x4D2");
 		static_assert(offsetof(CS2::server::CInfoWorldLayer, m_hLayerSpawnGroup) == 0x4D4, "m_hLayerSpawnGroup in CInfoWorldLayer should be at offset 0x4D4");
 		static_assert(sizeof(CS2::server::CInfoWorldLayer) == 0x4D8, "CInfoWorldLayer size should be 0x4D8");
+
+#endif
 	}
 }

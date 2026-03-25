@@ -30,8 +30,11 @@ namespace CS2 {
 			GlobalTypes::CHandle<client::C_SkyCamera> m_hSkyCamera; // 0x60c | Schema_Atomic | Size: 0x4
 			// char m_hSkyCamera[0x4]; // 0x60c | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSkyboxReference, m_worldGroupId) == 0x608, "m_worldGroupId in CSkyboxReference should be at offset 0x608");
 		static_assert(offsetof(CS2::client::CSkyboxReference, m_hSkyCamera) == 0x60C, "m_hSkyCamera in CSkyboxReference should be at offset 0x60C");
 		static_assert(sizeof(CS2::client::CSkyboxReference) == 0x610, "CSkyboxReference size should be 0x610");
+
+#endif
 	}
 }

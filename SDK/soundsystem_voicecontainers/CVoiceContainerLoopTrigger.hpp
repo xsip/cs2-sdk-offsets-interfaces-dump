@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bCrossFade; // 0xcc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopTrigger, m_sound) == 0xA8, "m_sound in CVoiceContainerLoopTrigger should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopTrigger, m_flRetriggerTimeMin) == 0xC0, "m_flRetriggerTimeMin in CVoiceContainerLoopTrigger should be at offset 0xC0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopTrigger, m_flRetriggerTimeMax) == 0xC4, "m_flRetriggerTimeMax in CVoiceContainerLoopTrigger should be at offset 0xC4");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopTrigger, m_flFadeTime) == 0xC8, "m_flFadeTime in CVoiceContainerLoopTrigger should be at offset 0xC8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopTrigger, m_bCrossFade) == 0xCC, "m_bCrossFade in CVoiceContainerLoopTrigger should be at offset 0xCC");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerLoopTrigger) == 0xD0, "CVoiceContainerLoopTrigger size should be 0xD0");
+
+#endif
 	}
 }

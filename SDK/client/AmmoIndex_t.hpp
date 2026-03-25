@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			int8_t m_Value; // 0x0 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::AmmoIndex_t, m_Value) == 0x0, "m_Value in AmmoIndex_t should be at offset 0x0");
 		static_assert(sizeof(CS2::client::AmmoIndex_t) == 0x1, "AmmoIndex_t size should be 0x1");
+
+#endif
 	}
 }

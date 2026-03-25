@@ -40,6 +40,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flScaleTimeStart[10]; // 0x11b0 | Schema_FixedArray | Size: 0x28
 			entity2::GameTime_t m_flScaleTimeEnd[10]; // 0x11d8 | Schema_FixedArray | Size: 0x28
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_ClientRagdoll, m_bFadeOut) == 0x1168, "m_bFadeOut in C_ClientRagdoll should be at offset 0x1168");
 		static_assert(offsetof(CS2::client::C_ClientRagdoll, m_bImportant) == 0x1169, "m_bImportant in C_ClientRagdoll should be at offset 0x1169");
 		static_assert(offsetof(CS2::client::C_ClientRagdoll, m_flEffectTime) == 0x116C, "m_flEffectTime in C_ClientRagdoll should be at offset 0x116C");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_ClientRagdoll, m_flScaleTimeStart) == 0x11B0, "m_flScaleTimeStart in C_ClientRagdoll should be at offset 0x11B0");
 		static_assert(offsetof(CS2::client::C_ClientRagdoll, m_flScaleTimeEnd) == 0x11D8, "m_flScaleTimeEnd in C_ClientRagdoll should be at offset 0x11D8");
 		static_assert(sizeof(CS2::client::C_ClientRagdoll) == 0x1200, "C_ClientRagdoll size should be 0x1200");
+
+#endif
 	}
 }

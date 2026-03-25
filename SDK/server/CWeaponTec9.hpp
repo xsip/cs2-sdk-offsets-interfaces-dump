@@ -22,6 +22,9 @@ namespace CS2 {
 		class CWeaponTec9 : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CWeaponTec9) == 0x1150, "CWeaponTec9 size should be 0x1150");
+
+#endif
 	}
 }

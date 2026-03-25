@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CPiecewiseCurve m_Curve; // 0x48 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Value_Curve, m_Curve) == 0x48, "m_Curve in CPulseCell_Value_Curve should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Value_Curve) == 0x88, "CPulseCell_Value_Curve size should be 0x88");
+
+#endif
 	}
 }

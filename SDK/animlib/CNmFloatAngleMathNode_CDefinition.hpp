@@ -26,8 +26,11 @@ namespace CS2 {
 			animlib::CNmFloatAngleMathNode_Operation_t m_operation; // 0x12 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatAngleMathNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmFloatAngleMathNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatAngleMathNode_CDefinition, m_operation) == 0x12, "m_operation in CNmFloatAngleMathNode::CDefinition should be at offset 0x12");
 		static_assert(sizeof(CS2::animlib::CNmFloatAngleMathNode_CDefinition) == 0x18, "CNmFloatAngleMathNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

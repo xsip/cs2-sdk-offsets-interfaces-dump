@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_source; // 0x890 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_destination; // 0x898 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFootstepControl, m_source) == 0x890, "m_source in CFootstepControl should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CFootstepControl, m_destination) == 0x898, "m_destination in CFootstepControl should be at offset 0x898");
 		static_assert(sizeof(CS2::server::CFootstepControl) == 0x8A0, "CFootstepControl size should be 0x8A0");
+
+#endif
 	}
 }

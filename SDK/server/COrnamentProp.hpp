@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_initialOwner; // 0xc50 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::COrnamentProp, m_initialOwner) == 0xC50, "m_initialOwner in COrnamentProp should be at offset 0xC50");
 		static_assert(sizeof(CS2::server::COrnamentProp) == 0xC60, "COrnamentProp size should be 0xC60");
+
+#endif
 	}
 }

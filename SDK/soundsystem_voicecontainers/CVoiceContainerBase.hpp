@@ -30,8 +30,11 @@ namespace CS2 {
 			soundsystem_voicecontainers::CVSound m_vSound; // 0x28 | Schema_DeclaredClass | Size: 0x78
 			soundsystem_voicecontainers::CVoiceContainerAnalysisBase* m_pEnvelopeAnalyzer; // 0xa0 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerBase, m_vSound) == 0x28, "m_vSound in CVoiceContainerBase should be at offset 0x28");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerBase, m_pEnvelopeAnalyzer) == 0xA0, "m_pEnvelopeAnalyzer in CVoiceContainerBase should be at offset 0xA0");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerBase) == 0xA8, "CVoiceContainerBase size should be 0xA8");
+
+#endif
 	}
 }

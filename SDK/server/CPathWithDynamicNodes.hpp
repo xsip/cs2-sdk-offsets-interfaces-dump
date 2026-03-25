@@ -27,8 +27,11 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CTransform m_xInitialPathWorldToLocal; // 0x5d0 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPathWithDynamicNodes, m_vecPathNodes) == 0x5B0, "m_vecPathNodes in CPathWithDynamicNodes should be at offset 0x5B0");
 		static_assert(offsetof(CS2::server::CPathWithDynamicNodes, m_xInitialPathWorldToLocal) == 0x5D0, "m_xInitialPathWorldToLocal in CPathWithDynamicNodes should be at offset 0x5D0");
 		static_assert(sizeof(CS2::server::CPathWithDynamicNodes) == 0x5F0, "CPathWithDynamicNodes size should be 0x5F0");
+
+#endif
 	}
 }

@@ -29,10 +29,13 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_PanelID; // 0xea8 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_bEnabled) == 0xE90, "m_bEnabled in C_BaseClientUIEntity should be at offset 0xE90");
 		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_DialogXMLName) == 0xE98, "m_DialogXMLName in C_BaseClientUIEntity should be at offset 0xE98");
 		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_PanelClassName) == 0xEA0, "m_PanelClassName in C_BaseClientUIEntity should be at offset 0xEA0");
 		static_assert(offsetof(CS2::client::C_BaseClientUIEntity, m_PanelID) == 0xEA8, "m_PanelID in C_BaseClientUIEntity should be at offset 0xEA8");
 		static_assert(sizeof(CS2::client::C_BaseClientUIEntity) == 0xEB8, "C_BaseClientUIEntity size should be 0xEB8");
+
+#endif
 	}
 }

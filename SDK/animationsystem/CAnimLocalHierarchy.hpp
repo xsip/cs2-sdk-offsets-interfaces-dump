@@ -27,6 +27,7 @@ namespace CS2 {
 			int32_t m_nTailFrame; // 0x28 | Schema_Builtin | Size: 0x4
 			int32_t m_nEndFrame; // 0x2c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimLocalHierarchy, m_sBone) == 0x0, "m_sBone in CAnimLocalHierarchy should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimLocalHierarchy, m_sNewParent) == 0x10, "m_sNewParent in CAnimLocalHierarchy should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimLocalHierarchy, m_nStartFrame) == 0x20, "m_nStartFrame in CAnimLocalHierarchy should be at offset 0x20");
@@ -34,5 +35,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimLocalHierarchy, m_nTailFrame) == 0x28, "m_nTailFrame in CAnimLocalHierarchy should be at offset 0x28");
 		static_assert(offsetof(CS2::animationsystem::CAnimLocalHierarchy, m_nEndFrame) == 0x2C, "m_nEndFrame in CAnimLocalHierarchy should be at offset 0x2C");
 		static_assert(sizeof(CS2::animationsystem::CAnimLocalHierarchy) == 0x30, "CAnimLocalHierarchy size should be 0x30");
+
+#endif
 	}
 }

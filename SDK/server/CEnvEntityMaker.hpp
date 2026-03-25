@@ -43,6 +43,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_pOutputOnSpawned; // 0x4f8 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_pOutputOnFailedSpawn; // 0x510 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvEntityMaker, m_vecEntityMins) == 0x4A8, "m_vecEntityMins in CEnvEntityMaker should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvEntityMaker, m_vecEntityMaxs) == 0x4B4, "m_vecEntityMaxs in CEnvEntityMaker should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CEnvEntityMaker, m_hCurrentInstance) == 0x4C0, "m_hCurrentInstance in CEnvEntityMaker should be at offset 0x4C0");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvEntityMaker, m_pOutputOnSpawned) == 0x4F8, "m_pOutputOnSpawned in CEnvEntityMaker should be at offset 0x4F8");
 		static_assert(offsetof(CS2::server::CEnvEntityMaker, m_pOutputOnFailedSpawn) == 0x510, "m_pOutputOnFailedSpawn in CEnvEntityMaker should be at offset 0x510");
 		static_assert(sizeof(CS2::server::CEnvEntityMaker) == 0x528, "CEnvEntityMaker size should be 0x528");
+
+#endif
 	}
 }

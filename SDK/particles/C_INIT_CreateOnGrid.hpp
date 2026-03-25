@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bHollow; // 0xa7e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnGrid, m_nXCount) == 0x1D8, "m_nXCount in C_INIT_CreateOnGrid should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnGrid, m_nYCount) == 0x348, "m_nYCount in C_INIT_CreateOnGrid should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnGrid, m_nZCount) == 0x4B8, "m_nZCount in C_INIT_CreateOnGrid should be at offset 0x4B8");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnGrid, m_bCenter) == 0xA7D, "m_bCenter in C_INIT_CreateOnGrid should be at offset 0xA7D");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateOnGrid, m_bHollow) == 0xA7E, "m_bHollow in C_INIT_CreateOnGrid should be at offset 0xA7E");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateOnGrid) == 0xA80, "C_INIT_CreateOnGrid size should be 0xA80");
+
+#endif
 	}
 }

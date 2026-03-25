@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			bool m_bLimitCountPasses; // 0x0 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_LimitCount_Criteria_t, m_bLimitCountPasses) == 0x0, "m_bLimitCountPasses in CPulseCell_LimitCount::Criteria_t should be at offset 0x0");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_LimitCount_Criteria_t) == 0x1, "CPulseCell_LimitCount::Criteria_t size should be 0x1");
+
+#endif
 	}
 }

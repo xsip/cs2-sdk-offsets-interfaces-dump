@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bUseOrigRadius; // 0x206 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreatePhyllotaxis, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_CreatePhyllotaxis should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreatePhyllotaxis, m_nScaleCP) == 0x1DC, "m_nScaleCP in C_INIT_CreatePhyllotaxis should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreatePhyllotaxis, m_nComponent) == 0x1E0, "m_nComponent in C_INIT_CreatePhyllotaxis should be at offset 0x1E0");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreatePhyllotaxis, m_bUseWithContEmit) == 0x205, "m_bUseWithContEmit in C_INIT_CreatePhyllotaxis should be at offset 0x205");
 		static_assert(offsetof(CS2::particles::C_INIT_CreatePhyllotaxis, m_bUseOrigRadius) == 0x206, "m_bUseOrigRadius in C_INIT_CreatePhyllotaxis should be at offset 0x206");
 		static_assert(sizeof(CS2::particles::C_INIT_CreatePhyllotaxis) == 0x208, "C_INIT_CreatePhyllotaxis size should be 0x208");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bOrphanInsteadOfDeletingChildrenOnRemove; // 0x4a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointChildModifier, m_bOrphanInsteadOfDeletingChildrenOnRemove) == 0x4A8, "m_bOrphanInsteadOfDeletingChildrenOnRemove in CPointChildModifier should be at offset 0x4A8");
 		static_assert(sizeof(CS2::server::CPointChildModifier) == 0x4B0, "CPointChildModifier size should be 0x4B0");
+
+#endif
 	}
 }

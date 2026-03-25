@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flDepthSortBias; // 0xea4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EnvDecal, m_hDecalMaterial) == 0xE88, "m_hDecalMaterial in C_EnvDecal should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_EnvDecal, m_flWidth) == 0xE90, "m_flWidth in C_EnvDecal should be at offset 0xE90");
 		static_assert(offsetof(CS2::client::C_EnvDecal, m_flHeight) == 0xE94, "m_flHeight in C_EnvDecal should be at offset 0xE94");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EnvDecal, m_bProjectOnWater) == 0xEA2, "m_bProjectOnWater in C_EnvDecal should be at offset 0xEA2");
 		static_assert(offsetof(CS2::client::C_EnvDecal, m_flDepthSortBias) == 0xEA4, "m_flDepthSortBias in C_EnvDecal should be at offset 0xEA4");
 		static_assert(sizeof(CS2::client::C_EnvDecal) == 0xEC0, "C_EnvDecal size should be 0xEC0");
+
+#endif
 	}
 }

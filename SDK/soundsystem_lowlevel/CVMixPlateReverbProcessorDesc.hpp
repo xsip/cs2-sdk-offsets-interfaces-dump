@@ -25,7 +25,10 @@ namespace CS2 {
 			soundsystem_lowlevel::VMixPlateverbDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x1c
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixPlateReverbProcessorDesc, m_desc) == 0x20, "m_desc in CVMixPlateReverbProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixPlateReverbProcessorDesc) == 0x40, "CVMixPlateReverbProcessorDesc size should be 0x40");
+
+#endif
 	}
 }

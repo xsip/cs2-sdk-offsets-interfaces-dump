@@ -31,10 +31,13 @@ namespace CS2 {
 			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_AssociatedEntityNames; // 0x58 | Schema_Atomic | Size: 0x18
 			char m_AssociatedEntityNames[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::ActiveModelConfig_t, m_Handle) == 0x30, "m_Handle in ActiveModelConfig_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::ActiveModelConfig_t, m_Name) == 0x38, "m_Name in ActiveModelConfig_t should be at offset 0x38");
 		static_assert(offsetof(CS2::client::ActiveModelConfig_t, m_AssociatedEntities) == 0x40, "m_AssociatedEntities in ActiveModelConfig_t should be at offset 0x40");
 		static_assert(offsetof(CS2::client::ActiveModelConfig_t, m_AssociatedEntityNames) == 0x58, "m_AssociatedEntityNames in ActiveModelConfig_t should be at offset 0x58");
 		static_assert(sizeof(CS2::client::ActiveModelConfig_t) == 0x70, "ActiveModelConfig_t size should be 0x70");
+
+#endif
 	}
 }

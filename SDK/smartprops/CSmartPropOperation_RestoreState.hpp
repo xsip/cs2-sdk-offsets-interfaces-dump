@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeStateName m_StateName; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bDiscardIfUknown; // 0x90 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RestoreState, m_StateName) == 0x50, "m_StateName in CSmartPropOperation_RestoreState should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RestoreState, m_bDiscardIfUknown) == 0x90, "m_bDiscardIfUknown in CSmartPropOperation_RestoreState should be at offset 0x90");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RestoreState) == 0xD0, "CSmartPropOperation_RestoreState size should be 0xD0");
+
+#endif
 	}
 }

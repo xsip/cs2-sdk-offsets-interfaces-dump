@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bStopped; // 0x220 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTimeline, m_flValues) == 0x10, "m_flValues in CTimeline should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CTimeline, m_nValueCounts) == 0x110, "m_nValueCounts in CTimeline should be at offset 0x110");
 		static_assert(offsetof(CS2::server::CTimeline, m_nBucketCount) == 0x210, "m_nBucketCount in CTimeline should be at offset 0x210");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTimeline, m_nCompressionType) == 0x21C, "m_nCompressionType in CTimeline should be at offset 0x21C");
 		static_assert(offsetof(CS2::server::CTimeline, m_bStopped) == 0x220, "m_bStopped in CTimeline should be at offset 0x220");
 		static_assert(sizeof(CS2::server::CTimeline) == 0x228, "CTimeline size should be 0x228");
+
+#endif
 	}
 }

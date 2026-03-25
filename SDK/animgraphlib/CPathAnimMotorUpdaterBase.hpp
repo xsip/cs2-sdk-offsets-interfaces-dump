@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bLockToPath; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CPathAnimMotorUpdaterBase, m_bLockToPath) == 0x20, "m_bLockToPath in CPathAnimMotorUpdaterBase should be at offset 0x20");
 		static_assert(sizeof(CS2::animgraphlib::CPathAnimMotorUpdaterBase) == 0x28, "CPathAnimMotorUpdaterBase size should be 0x28");
+
+#endif
 	}
 }

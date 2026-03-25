@@ -23,7 +23,10 @@ namespace CS2 {
 			GlobalTypes::PulseSymbol_t m_TagName; // 0x0 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x20); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase_CursorState_t, m_TagName) == 0x0, "m_TagName in CPulseCell_WaitForCursorsWithTagBase::CursorState_t should be at offset 0x0");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase_CursorState_t) == 0x30, "CPulseCell_WaitForCursorsWithTagBase::CursorState_t size should be 0x30");
+
+#endif
 	}
 }

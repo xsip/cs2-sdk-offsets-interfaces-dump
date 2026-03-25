@@ -28,11 +28,14 @@ namespace CS2 {
 			bool m_bAllowAtEnd; // 0xd | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CriteriaPathPosition_Criteria_t, m_PlaceAtPositions) == 0x0, "m_PlaceAtPositions in CSmartPropPulse_CriteriaPathPosition::Criteria_t should be at offset 0x0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CriteriaPathPosition_Criteria_t, m_nPlaceEveryNthPosition) == 0x4, "m_nPlaceEveryNthPosition in CSmartPropPulse_CriteriaPathPosition::Criteria_t should be at offset 0x4");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CriteriaPathPosition_Criteria_t, m_nNthPositionIndexOffset) == 0x8, "m_nNthPositionIndexOffset in CSmartPropPulse_CriteriaPathPosition::Criteria_t should be at offset 0x8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CriteriaPathPosition_Criteria_t, m_bAllowAtStart) == 0xC, "m_bAllowAtStart in CSmartPropPulse_CriteriaPathPosition::Criteria_t should be at offset 0xC");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_CriteriaPathPosition_Criteria_t, m_bAllowAtEnd) == 0xD, "m_bAllowAtEnd in CSmartPropPulse_CriteriaPathPosition::Criteria_t should be at offset 0xD");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_CriteriaPathPosition_Criteria_t) == 0x10, "CSmartPropPulse_CriteriaPathPosition::Criteria_t size should be 0x10");
+
+#endif
 	}
 }

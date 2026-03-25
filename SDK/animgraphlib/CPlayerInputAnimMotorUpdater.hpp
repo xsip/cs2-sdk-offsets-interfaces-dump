@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bUseAcceleration; // 0x48 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CPlayerInputAnimMotorUpdater, m_sampleTimes) == 0x20, "m_sampleTimes in CPlayerInputAnimMotorUpdater should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::CPlayerInputAnimMotorUpdater, m_flSpringConstant) == 0x3C, "m_flSpringConstant in CPlayerInputAnimMotorUpdater should be at offset 0x3C");
 		static_assert(offsetof(CS2::animgraphlib::CPlayerInputAnimMotorUpdater, m_flAnticipationDistance) == 0x40, "m_flAnticipationDistance in CPlayerInputAnimMotorUpdater should be at offset 0x40");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CPlayerInputAnimMotorUpdater, m_hAnticipationHeadingParam) == 0x46, "m_hAnticipationHeadingParam in CPlayerInputAnimMotorUpdater should be at offset 0x46");
 		static_assert(offsetof(CS2::animgraphlib::CPlayerInputAnimMotorUpdater, m_bUseAcceleration) == 0x48, "m_bUseAcceleration in CPlayerInputAnimMotorUpdater should be at offset 0x48");
 		static_assert(sizeof(CS2::animgraphlib::CPlayerInputAnimMotorUpdater) == 0x50, "CPlayerInputAnimMotorUpdater size should be 0x50");
+
+#endif
 	}
 }

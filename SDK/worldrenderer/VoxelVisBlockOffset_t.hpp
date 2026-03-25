@@ -23,8 +23,11 @@ namespace CS2 {
 			uint32_t m_nOffset; // 0x0 | Schema_Builtin | Size: 0x4
 			uint32_t m_nElementCount; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::VoxelVisBlockOffset_t, m_nOffset) == 0x0, "m_nOffset in VoxelVisBlockOffset_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::VoxelVisBlockOffset_t, m_nElementCount) == 0x4, "m_nElementCount in VoxelVisBlockOffset_t should be at offset 0x4");
 		static_assert(sizeof(CS2::worldrenderer::VoxelVisBlockOffset_t) == 0x8, "VoxelVisBlockOffset_t size should be 0x8");
+
+#endif
 	}
 }

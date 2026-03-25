@@ -22,6 +22,9 @@ namespace CS2 {
 		class CPulseCell_Val_TestDomainFindEntityByName : public CS2::pulse_runtime_lib::CPulseCell_BaseValue {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Val_TestDomainFindEntityByName) == 0x48, "CPulseCell_Val_TestDomainFindEntityByName size should be 0x48");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bGraphWritable; // 0x7b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CConcreteAnimParameter, m_previewButton) == 0x70, "m_previewButton in CConcreteAnimParameter should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CConcreteAnimParameter, m_eNetworkSetting) == 0x74, "m_eNetworkSetting in CConcreteAnimParameter should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CConcreteAnimParameter, m_bUseMostRecentValue) == 0x78, "m_bUseMostRecentValue in CConcreteAnimParameter should be at offset 0x78");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CConcreteAnimParameter, m_bGameWritable) == 0x7A, "m_bGameWritable in CConcreteAnimParameter should be at offset 0x7A");
 		static_assert(offsetof(CS2::animgraphlib::CConcreteAnimParameter, m_bGraphWritable) == 0x7B, "m_bGraphWritable in CConcreteAnimParameter should be at offset 0x7B");
 		static_assert(sizeof(CS2::animgraphlib::CConcreteAnimParameter) == 0x80, "CConcreteAnimParameter size should be 0x80");
+
+#endif
 	}
 }

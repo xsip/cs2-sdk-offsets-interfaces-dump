@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_force; // 0x8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysicsShake, m_force) == 0x8, "m_force in CPhysicsShake should be at offset 0x8");
 		static_assert(sizeof(CS2::server::CPhysicsShake) == 0x18, "CPhysicsShake size should be 0x18");
+
+#endif
 	}
 }

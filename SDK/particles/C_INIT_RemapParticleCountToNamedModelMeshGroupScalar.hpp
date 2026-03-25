@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_INIT_RemapParticleCountToNamedModelMeshGroupScalar : public CS2::particles::C_INIT_RemapParticleCountToNamedModelElementScalar {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::particles::C_INIT_RemapParticleCountToNamedModelMeshGroupScalar) == 0x228, "C_INIT_RemapParticleCountToNamedModelMeshGroupScalar size should be 0x228");
+
+#endif
 	}
 }

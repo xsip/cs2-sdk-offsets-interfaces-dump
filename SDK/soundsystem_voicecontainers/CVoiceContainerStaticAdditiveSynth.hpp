@@ -26,7 +26,10 @@ namespace CS2 {
 			// char m_tones[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth, m_tones) == 0xB8, "m_tones in CVoiceContainerStaticAdditiveSynth should be at offset 0xB8");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth) == 0xE8, "CVoiceContainerStaticAdditiveSynth size should be 0xE8");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			GlobalTypes::CUtlString m_sequenceName; // 0x58 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSequenceFinishedAnimTag, m_sequenceName) == 0x58, "m_sequenceName in CSequenceFinishedAnimTag should be at offset 0x58");
 		static_assert(sizeof(CS2::animgraphlib::CSequenceFinishedAnimTag) == 0x60, "CSequenceFinishedAnimTag size should be 0x60");
+
+#endif
 	}
 }

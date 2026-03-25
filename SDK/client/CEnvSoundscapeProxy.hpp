@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_MainSoundscapeName; // 0x698 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CEnvSoundscapeProxy, m_MainSoundscapeName) == 0x698, "m_MainSoundscapeName in CEnvSoundscapeProxy should be at offset 0x698");
 		static_assert(sizeof(CS2::client::CEnvSoundscapeProxy) == 0x6A0, "CEnvSoundscapeProxy size should be 0x6A0");
+
+#endif
 	}
 }

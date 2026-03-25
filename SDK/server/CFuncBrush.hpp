@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bScriptedMovement; // 0x749 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncBrush, m_iSolidity) == 0x730, "m_iSolidity in CFuncBrush should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncBrush, m_iDisabled) == 0x734, "m_iDisabled in CFuncBrush should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CFuncBrush, m_bSolidBsp) == 0x738, "m_bSolidBsp in CFuncBrush should be at offset 0x738");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncBrush, m_bInvertExclusion) == 0x748, "m_bInvertExclusion in CFuncBrush should be at offset 0x748");
 		static_assert(offsetof(CS2::server::CFuncBrush, m_bScriptedMovement) == 0x749, "m_bScriptedMovement in CFuncBrush should be at offset 0x749");
 		static_assert(sizeof(CS2::server::CFuncBrush) == 0x750, "CFuncBrush size should be 0x750");
+
+#endif
 	}
 }

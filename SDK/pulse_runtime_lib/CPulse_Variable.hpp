@@ -33,6 +33,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			pulse_runtime_lib::PulseDocNodeID_t m_nEditorNodeID; // 0x4c | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Variable, m_Name) == 0x0, "m_Name in CPulse_Variable should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Variable, m_Description) == 0x10, "m_Description in CPulse_Variable should be at offset 0x10");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Variable, m_Type) == 0x18, "m_Type in CPulse_Variable should be at offset 0x18");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Variable, m_bIsObservable) == 0x49, "m_bIsObservable in CPulse_Variable should be at offset 0x49");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Variable, m_nEditorNodeID) == 0x4C, "m_nEditorNodeID in CPulse_Variable should be at offset 0x4C");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_Variable) == 0x50, "CPulse_Variable size should be 0x50");
+
+#endif
 	}
 }

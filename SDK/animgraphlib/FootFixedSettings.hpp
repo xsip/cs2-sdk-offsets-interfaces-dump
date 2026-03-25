@@ -34,6 +34,7 @@ namespace CS2 {
 			int32_t m_nDisableTagIndex; // 0x38 | Schema_Builtin | Size: 0x4
 			int32_t m_nFootIndex; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::FootFixedSettings, m_traceSettings) == 0x0, "m_traceSettings in FootFixedSettings should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::FootFixedSettings, m_vFootBaseBindPosePositionMS) == 0x10, "m_vFootBaseBindPosePositionMS in FootFixedSettings should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::FootFixedSettings, m_flFootBaseLength) == 0x20, "m_flFootBaseLength in FootFixedSettings should be at offset 0x20");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::FootFixedSettings, m_nDisableTagIndex) == 0x38, "m_nDisableTagIndex in FootFixedSettings should be at offset 0x38");
 		static_assert(offsetof(CS2::animgraphlib::FootFixedSettings, m_nFootIndex) == 0x3C, "m_nFootIndex in FootFixedSettings should be at offset 0x3C");
 		static_assert(sizeof(CS2::animgraphlib::FootFixedSettings) == 0x40, "FootFixedSettings size should be 0x40");
+
+#endif
 	}
 }

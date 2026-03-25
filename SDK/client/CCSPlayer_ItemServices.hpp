@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bHasHelmet; // 0x49 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSPlayer_ItemServices, m_bHasDefuser) == 0x48, "m_bHasDefuser in CCSPlayer_ItemServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CCSPlayer_ItemServices, m_bHasHelmet) == 0x49, "m_bHasHelmet in CCSPlayer_ItemServices should be at offset 0x49");
 		static_assert(sizeof(CS2::client::CCSPlayer_ItemServices) == 0x50, "CCSPlayer_ItemServices size should be 0x50");
+
+#endif
 	}
 }

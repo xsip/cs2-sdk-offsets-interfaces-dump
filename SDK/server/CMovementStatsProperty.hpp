@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nUseCounter; // 0x10 | Schema_Builtin | Size: 0x4
 			client::CVectorExponentialMovingAverage m_emaMovementDirection; // 0x14 | Schema_DeclaredClass | Size: 0x2c
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMovementStatsProperty, m_nUseCounter) == 0x10, "m_nUseCounter in CMovementStatsProperty should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CMovementStatsProperty, m_emaMovementDirection) == 0x14, "m_emaMovementDirection in CMovementStatsProperty should be at offset 0x14");
 		static_assert(sizeof(CS2::server::CMovementStatsProperty) == 0x40, "CMovementStatsProperty size should be 0x40");
+
+#endif
 	}
 }

@@ -36,6 +36,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bIgnoreEntities; // 0x2d0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bIgnoreCables; // 0x310 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Trace, m_Origin) == 0x50, "m_Origin in CSmartPropOperation_Trace should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Trace, m_OriginSpace) == 0x90, "m_OriginSpace in CSmartPropOperation_Trace should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Trace, m_flOriginOffset) == 0xD0, "m_flOriginOffset in CSmartPropOperation_Trace should be at offset 0xD0");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Trace, m_bIgnoreEntities) == 0x2D0, "m_bIgnoreEntities in CSmartPropOperation_Trace should be at offset 0x2D0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_Trace, m_bIgnoreCables) == 0x310, "m_bIgnoreCables in CSmartPropOperation_Trace should be at offset 0x310");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_Trace) == 0x350, "CSmartPropOperation_Trace size should be 0x350");
+
+#endif
 	}
 }

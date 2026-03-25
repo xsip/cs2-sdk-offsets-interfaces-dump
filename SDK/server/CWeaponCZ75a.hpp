@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bMagazineRemoved; // 0x1150 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CWeaponCZ75a, m_bMagazineRemoved) == 0x1150, "m_bMagazineRemoved in CWeaponCZ75a should be at offset 0x1150");
 		static_assert(sizeof(CS2::server::CWeaponCZ75a) == 0x1160, "CWeaponCZ75a size should be 0x1160");
+
+#endif
 	}
 }

@@ -89,6 +89,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnEngage; // 0x620 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnDisengage; // 0x638 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointValueRemapper, m_bDisabled) == 0x4A8, "m_bDisabled in CPointValueRemapper should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointValueRemapper, m_bUpdateOnClient) == 0x4A9, "m_bUpdateOnClient in CPointValueRemapper should be at offset 0x4A9");
 		static_assert(offsetof(CS2::server::CPointValueRemapper, m_nInputType) == 0x4AC, "m_nInputType in CPointValueRemapper should be at offset 0x4AC");
@@ -134,5 +135,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointValueRemapper, m_OnEngage) == 0x620, "m_OnEngage in CPointValueRemapper should be at offset 0x620");
 		static_assert(offsetof(CS2::server::CPointValueRemapper, m_OnDisengage) == 0x638, "m_OnDisengage in CPointValueRemapper should be at offset 0x638");
 		static_assert(sizeof(CS2::server::CPointValueRemapper) == 0x650, "CPointValueRemapper size should be 0x650");
+
+#endif
 	}
 }

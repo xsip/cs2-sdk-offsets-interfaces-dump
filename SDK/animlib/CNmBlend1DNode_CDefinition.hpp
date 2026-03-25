@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			animlib::CNmParameterizedBlendNode_Parameterization_t m_parameterization; // 0x40 | Schema_DeclaredClass | Size: 0x50
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBlend1DNode_CDefinition, m_parameterization) == 0x40, "m_parameterization in CNmBlend1DNode::CDefinition should be at offset 0x40");
 		static_assert(sizeof(CS2::animlib::CNmBlend1DNode_CDefinition) == 0x90, "CNmBlend1DNode::CDefinition size should be 0x90");
+
+#endif
 	}
 }

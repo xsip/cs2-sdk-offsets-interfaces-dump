@@ -50,6 +50,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecPrevAbsOrigin; // 0x11f8 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecTempEntAcceleration; // 0x1204 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_LocalTempEntity, flags) == 0x1168, "flags in C_LocalTempEntity should be at offset 0x1168");
 		static_assert(offsetof(CS2::client::C_LocalTempEntity, die) == 0x116C, "die in C_LocalTempEntity should be at offset 0x116C");
 		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_flFrameMax) == 0x1170, "m_flFrameMax in C_LocalTempEntity should be at offset 0x1170");
@@ -76,5 +77,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecPrevAbsOrigin) == 0x11F8, "m_vecPrevAbsOrigin in C_LocalTempEntity should be at offset 0x11F8");
 		static_assert(offsetof(CS2::client::C_LocalTempEntity, m_vecTempEntAcceleration) == 0x1204, "m_vecTempEntAcceleration in C_LocalTempEntity should be at offset 0x1204");
 		static_assert(sizeof(CS2::client::C_LocalTempEntity) == 0x1210, "C_LocalTempEntity size should be 0x1210");
+
+#endif
 	}
 }

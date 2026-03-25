@@ -27,8 +27,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			float32 m_flTolerance; // 0x8c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFootStepTriggerUpdateNode, m_triggers) == 0x70, "m_triggers in CFootStepTriggerUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CFootStepTriggerUpdateNode, m_flTolerance) == 0x8C, "m_flTolerance in CFootStepTriggerUpdateNode should be at offset 0x8C");
 		static_assert(sizeof(CS2::animgraphlib::CFootStepTriggerUpdateNode) == 0x90, "CFootStepTriggerUpdateNode size should be 0x90");
+
+#endif
 	}
 }

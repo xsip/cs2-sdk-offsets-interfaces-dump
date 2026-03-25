@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nDerivedB; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::resourcefile::CExampleSchemaVData_PolymorphicDerivedB, m_nDerivedB) == 0x10, "m_nDerivedB in CExampleSchemaVData_PolymorphicDerivedB should be at offset 0x10");
 		static_assert(sizeof(CS2::resourcefile::CExampleSchemaVData_PolymorphicDerivedB) == 0x18, "CExampleSchemaVData_PolymorphicDerivedB size should be 0x18");
+
+#endif
 	}
 }

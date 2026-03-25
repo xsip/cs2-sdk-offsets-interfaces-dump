@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flMinInterval; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxInterval; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CRandSimTimer, m_flMinInterval) == 0x8, "m_flMinInterval in CRandSimTimer should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CRandSimTimer, m_flMaxInterval) == 0xC, "m_flMaxInterval in CRandSimTimer should be at offset 0xC");
 		static_assert(sizeof(CS2::client::CRandSimTimer) == 0x10, "CRandSimTimer size should be 0x10");
+
+#endif
 	}
 }

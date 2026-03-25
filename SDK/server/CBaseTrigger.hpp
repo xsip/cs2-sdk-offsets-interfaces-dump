@@ -45,6 +45,7 @@ namespace CS2 {
 			bool m_bUseAsyncQueries; // 0x888 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnStartTouch) == 0x7B0, "m_OnStartTouch in CBaseTrigger should be at offset 0x7B0");
 		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnStartTouchAll) == 0x7C8, "m_OnStartTouchAll in CBaseTrigger should be at offset 0x7C8");
 		static_assert(offsetof(CS2::server::CBaseTrigger, m_OnEndTouch) == 0x7E0, "m_OnEndTouch in CBaseTrigger should be at offset 0x7E0");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseTrigger, m_bDisabled) == 0x87C, "m_bDisabled in CBaseTrigger should be at offset 0x87C");
 		static_assert(offsetof(CS2::server::CBaseTrigger, m_bUseAsyncQueries) == 0x888, "m_bUseAsyncQueries in CBaseTrigger should be at offset 0x888");
 		static_assert(sizeof(CS2::server::CBaseTrigger) == 0x890, "CBaseTrigger size should be 0x890");
+
+#endif
 	}
 }

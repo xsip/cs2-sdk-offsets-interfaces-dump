@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeFloat m_flRandomScaleMax; // 0x90 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flSnapIncrement; // 0xd0 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomScale, m_flRandomScaleMin) == 0x50, "m_flRandomScaleMin in CSmartPropOperation_RandomScale should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomScale, m_flRandomScaleMax) == 0x90, "m_flRandomScaleMax in CSmartPropOperation_RandomScale should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_RandomScale, m_flSnapIncrement) == 0xD0, "m_flSnapIncrement in CSmartPropOperation_RandomScale should be at offset 0xD0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RandomScale) == 0x110, "CSmartPropOperation_RandomScale size should be 0x110");
+
+#endif
 	}
 }

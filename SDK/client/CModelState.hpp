@@ -37,6 +37,7 @@ namespace CS2 {
 			int8_t m_nClothUpdateFlags; // 0x2bc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x13); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CModelState, m_hModel) == 0xA0, "m_hModel in CModelState should be at offset 0xA0");
 		static_assert(offsetof(CS2::client::CModelState, m_ModelName) == 0xA8, "m_ModelName in CModelState should be at offset 0xA8");
 		static_assert(offsetof(CS2::client::CModelState, m_bClientClothCreationSuppressed) == 0x179, "m_bClientClothCreationSuppressed in CModelState should be at offset 0x179");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CModelState, m_nForceLOD) == 0x2BB, "m_nForceLOD in CModelState should be at offset 0x2BB");
 		static_assert(offsetof(CS2::client::CModelState, m_nClothUpdateFlags) == 0x2BC, "m_nClothUpdateFlags in CModelState should be at offset 0x2BC");
 		static_assert(sizeof(CS2::client::CModelState) == 0x2D0, "CModelState size should be 0x2D0");
+
+#endif
 	}
 }

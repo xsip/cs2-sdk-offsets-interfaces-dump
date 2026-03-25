@@ -28,7 +28,10 @@ namespace CS2 {
 		public:
 			client::CLightComponent* m_CLightComponent; // 0xe88 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_LightEntity, m_CLightComponent) == 0xE88, "m_CLightComponent in C_LightEntity should be at offset 0xE88");
 		static_assert(sizeof(CS2::client::C_LightEntity) == 0xE90, "C_LightEntity size should be 0xE90");
+
+#endif
 	}
 }

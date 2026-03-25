@@ -31,6 +31,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_flOutputMin; // 0x4c8 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionFloatInput m_flOutputMax; // 0x638 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nInputCP1) == 0x1D8, "m_nInputCP1 in C_OP_RemapDotProductToCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nInputCP2) == 0x1DC, "m_nInputCP2 in C_OP_RemapDotProductToCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_nOutputCP) == 0x1E0, "m_nOutputCP in C_OP_RemapDotProductToCP should be at offset 0x1E0");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flOutputMin) == 0x4C8, "m_flOutputMin in C_OP_RemapDotProductToCP should be at offset 0x4C8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDotProductToCP, m_flOutputMax) == 0x638, "m_flOutputMax in C_OP_RemapDotProductToCP should be at offset 0x638");
 		static_assert(sizeof(CS2::particles::C_OP_RemapDotProductToCP) == 0x7A8, "C_OP_RemapDotProductToCP size should be 0x7A8");
+
+#endif
 	}
 }

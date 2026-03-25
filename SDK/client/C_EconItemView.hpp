@@ -61,6 +61,7 @@ namespace CS2 {
 			bool m_bInitializedTags; // 0x468 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EconItemView, m_bInventoryImageRgbaRequested) == 0x60, "m_bInventoryImageRgbaRequested in C_EconItemView should be at offset 0x60");
 		static_assert(offsetof(CS2::client::C_EconItemView, m_bInventoryImageTriedCache) == 0x61, "m_bInventoryImageTriedCache in C_EconItemView should be at offset 0x61");
 		static_assert(offsetof(CS2::client::C_EconItemView, m_nInventoryImageRgbaWidth) == 0x80, "m_nInventoryImageRgbaWidth in C_EconItemView should be at offset 0x80");
@@ -91,5 +92,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EconItemView, m_szCustomNameOverride) == 0x399, "m_szCustomNameOverride in C_EconItemView should be at offset 0x399");
 		static_assert(offsetof(CS2::client::C_EconItemView, m_bInitializedTags) == 0x468, "m_bInitializedTags in C_EconItemView should be at offset 0x468");
 		static_assert(sizeof(CS2::client::C_EconItemView) == 0x470, "C_EconItemView size should be 0x470");
+
+#endif
 	}
 }

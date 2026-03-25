@@ -28,6 +28,7 @@ namespace CS2 {
 			bool m_bIsSet; // 0x2b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTarget, m_transform) == 0x0, "m_transform in CNmTarget should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmTarget, m_boneID) == 0x20, "m_boneID in CNmTarget should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmTarget, m_bIsBoneTarget) == 0x28, "m_bIsBoneTarget in CNmTarget should be at offset 0x28");
@@ -35,5 +36,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmTarget, m_bHasOffsets) == 0x2A, "m_bHasOffsets in CNmTarget should be at offset 0x2A");
 		static_assert(offsetof(CS2::animlib::CNmTarget, m_bIsSet) == 0x2B, "m_bIsSet in CNmTarget should be at offset 0x2B");
 		static_assert(sizeof(CS2::animlib::CNmTarget) == 0x30, "CNmTarget size should be 0x30");
+
+#endif
 	}
 }

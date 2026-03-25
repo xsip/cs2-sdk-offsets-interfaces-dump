@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CPiecewiseCurve m_FloatValue; // 0x38 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmEntityAttributeFloatEvent, m_FloatValue) == 0x38, "m_FloatValue in CNmEntityAttributeFloatEvent should be at offset 0x38");
 		static_assert(sizeof(CS2::animlib::CNmEntityAttributeFloatEvent) == 0x78, "CNmEntityAttributeFloatEvent size should be 0x78");
+
+#endif
 	}
 }

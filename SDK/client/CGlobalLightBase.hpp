@@ -78,6 +78,7 @@ namespace CS2 {
 			GlobalTypes::CHandle<client::C_BaseEntity> m_hEnvSky; // 0x4bc | Schema_Atomic | Size: 0x4
 			// char m_hEnvSky[0x4]; // 0x4bc | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CGlobalLightBase, m_bSpotLight) == 0x10, "m_bSpotLight in CGlobalLightBase should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CGlobalLightBase, m_SpotLightOrigin) == 0x14, "m_SpotLightOrigin in CGlobalLightBase should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CGlobalLightBase, m_SpotLightAngles) == 0x20, "m_SpotLightAngles in CGlobalLightBase should be at offset 0x20");
@@ -122,5 +123,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CGlobalLightBase, m_hEnvWind) == 0x4B8, "m_hEnvWind in CGlobalLightBase should be at offset 0x4B8");
 		static_assert(offsetof(CS2::client::CGlobalLightBase, m_hEnvSky) == 0x4BC, "m_hEnvSky in CGlobalLightBase should be at offset 0x4BC");
 		static_assert(sizeof(CS2::client::CGlobalLightBase) == 0x4C0, "CGlobalLightBase size should be 0x4C0");
+
+#endif
 	}
 }

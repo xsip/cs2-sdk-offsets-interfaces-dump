@@ -34,6 +34,7 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_pTextureDetail; // 0x248 | Schema_Atomic | Size: 0x8
 			char m_pTextureDetail[0x8]; // 0x248 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureColorWarp) == 0x220, "m_pTextureColorWarp in C_OP_RenderStatusEffectCitadel should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureNormal) == 0x228, "m_pTextureNormal in C_OP_RenderStatusEffectCitadel should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureMetalness) == 0x230, "m_pTextureMetalness in C_OP_RenderStatusEffectCitadel should be at offset 0x230");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureSelfIllum) == 0x240, "m_pTextureSelfIllum in C_OP_RenderStatusEffectCitadel should be at offset 0x240");
 		static_assert(offsetof(CS2::particles::C_OP_RenderStatusEffectCitadel, m_pTextureDetail) == 0x248, "m_pTextureDetail in C_OP_RenderStatusEffectCitadel should be at offset 0x248");
 		static_assert(sizeof(CS2::particles::C_OP_RenderStatusEffectCitadel) == 0x250, "C_OP_RenderStatusEffectCitadel size should be 0x250");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CCSGO_TeamIntroCharacterPosition : public CS2::server::CCSGO_TeamPreviewCharacterPosition {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CCSGO_TeamIntroCharacterPosition) == 0xCC0, "CCSGO_TeamIntroCharacterPosition size should be 0xCC0");
+
+#endif
 	}
 }

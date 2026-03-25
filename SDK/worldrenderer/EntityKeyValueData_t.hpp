@@ -27,8 +27,11 @@ namespace CS2 {
 			GlobalTypes::CUtlBinaryBlock m_keyValuesData; // 0x20 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::EntityKeyValueData_t, m_connections) == 0x8, "m_connections in EntityKeyValueData_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::EntityKeyValueData_t, m_keyValuesData) == 0x20, "m_keyValuesData in EntityKeyValueData_t should be at offset 0x20");
 		static_assert(sizeof(CS2::worldrenderer::EntityKeyValueData_t) == 0x38, "EntityKeyValueData_t size should be 0x38");
+
+#endif
 	}
 }

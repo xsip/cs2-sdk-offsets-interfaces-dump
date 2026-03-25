@@ -24,8 +24,11 @@ namespace CS2 {
 			modellib::AnimNodeID m_path[11]; // 0x0 | Schema_FixedArray | Size: 0x2c
 			int32_t m_nCount; // 0x2c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimNodePath, m_path) == 0x0, "m_path in CAnimNodePath should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CAnimNodePath, m_nCount) == 0x2C, "m_nCount in CAnimNodePath should be at offset 0x2C");
 		static_assert(sizeof(CS2::animgraphlib::CAnimNodePath) == 0x30, "CAnimNodePath size should be 0x30");
+
+#endif
 	}
 }

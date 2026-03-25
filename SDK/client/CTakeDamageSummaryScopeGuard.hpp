@@ -29,7 +29,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<client::SummaryTakeDamageInfo_t*> m_vecSummaries; // 0x8 | Schema_Atomic | Size: 0x18
 			// char m_vecSummaries[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CTakeDamageSummaryScopeGuard, m_vecSummaries) == 0x8, "m_vecSummaries in CTakeDamageSummaryScopeGuard should be at offset 0x8");
 		static_assert(sizeof(CS2::client::CTakeDamageSummaryScopeGuard) == 0x20, "CTakeDamageSummaryScopeGuard size should be 0x20");
+
+#endif
 	}
 }

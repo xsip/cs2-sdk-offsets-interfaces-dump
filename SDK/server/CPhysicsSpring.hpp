@@ -33,6 +33,7 @@ namespace CS2 {
 			uint32_t m_teleportTick; // 0x4e8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flFrequency) == 0x4B0, "m_flFrequency in CPhysicsSpring should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flDampingRatio) == 0x4B4, "m_flDampingRatio in CPhysicsSpring should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CPhysicsSpring, m_flRestLength) == 0x4B8, "m_flRestLength in CPhysicsSpring should be at offset 0x4B8");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysicsSpring, m_end) == 0x4DC, "m_end in CPhysicsSpring should be at offset 0x4DC");
 		static_assert(offsetof(CS2::server::CPhysicsSpring, m_teleportTick) == 0x4E8, "m_teleportTick in CPhysicsSpring should be at offset 0x4E8");
 		static_assert(sizeof(CS2::server::CPhysicsSpring) == 0x4F0, "CPhysicsSpring size should be 0x4F0");
+
+#endif
 	}
 }

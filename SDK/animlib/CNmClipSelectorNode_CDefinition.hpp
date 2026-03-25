@@ -26,8 +26,11 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVectorFixedGrowable< int16, 5 > m_conditionNodeIndices; // 0x28 | Schema_Atomic | Size: 0x18
 			char m_conditionNodeIndices[0x18]; // 0x28 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmClipSelectorNode_CDefinition, m_optionNodeIndices) == 0x10, "m_optionNodeIndices in CNmClipSelectorNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmClipSelectorNode_CDefinition, m_conditionNodeIndices) == 0x28, "m_conditionNodeIndices in CNmClipSelectorNode::CDefinition should be at offset 0x28");
 		static_assert(sizeof(CS2::animlib::CNmClipSelectorNode_CDefinition) == 0x40, "CNmClipSelectorNode::CDefinition size should be 0x40");
+
+#endif
 	}
 }

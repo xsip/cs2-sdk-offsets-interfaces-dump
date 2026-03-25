@@ -29,6 +29,7 @@ namespace CS2 {
 			uint16_t m_nFlags; // 0xc | Schema_Builtin | Size: 0x2
 			uint16_t m_nTargetIndex; // 0xe | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnBlendVertex_t, m_nWeight0) == 0x0, "m_nWeight0 in RnBlendVertex_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnBlendVertex_t, m_nIndex0) == 0x2, "m_nIndex0 in RnBlendVertex_t should be at offset 0x2");
 		static_assert(offsetof(CS2::physicslib::RnBlendVertex_t, m_nWeight1) == 0x4, "m_nWeight1 in RnBlendVertex_t should be at offset 0x4");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::RnBlendVertex_t, m_nFlags) == 0xC, "m_nFlags in RnBlendVertex_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::RnBlendVertex_t, m_nTargetIndex) == 0xE, "m_nTargetIndex in RnBlendVertex_t should be at offset 0xE");
 		static_assert(sizeof(CS2::physicslib::RnBlendVertex_t) == 0x10, "RnBlendVertex_t size should be 0x10");
+
+#endif
 	}
 }

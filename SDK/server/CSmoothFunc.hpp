@@ -28,11 +28,14 @@ namespace CS2 {
 			int32_t m_nSmoothDir; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSmoothFunc, m_flSmoothAmplitude) == 0x8, "m_flSmoothAmplitude in CSmoothFunc should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CSmoothFunc, m_flSmoothBias) == 0xC, "m_flSmoothBias in CSmoothFunc should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CSmoothFunc, m_flSmoothDuration) == 0x10, "m_flSmoothDuration in CSmoothFunc should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CSmoothFunc, m_flSmoothRemainingTime) == 0x14, "m_flSmoothRemainingTime in CSmoothFunc should be at offset 0x14");
 		static_assert(offsetof(CS2::server::CSmoothFunc, m_nSmoothDir) == 0x18, "m_nSmoothDir in CSmoothFunc should be at offset 0x18");
 		static_assert(sizeof(CS2::server::CSmoothFunc) == 0x20, "CSmoothFunc size should be 0x20");
+
+#endif
 	}
 }

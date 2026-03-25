@@ -32,11 +32,14 @@ namespace CS2 {
 			tier2::CRangeFloat m_flSpeed; // 0x2c | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::AmmoTypeInfo_t, m_nMaxCarry) == 0x10, "m_nMaxCarry in AmmoTypeInfo_t should be at offset 0x10");
 		static_assert(offsetof(CS2::client::AmmoTypeInfo_t, m_nSplashSize) == 0x1C, "m_nSplashSize in AmmoTypeInfo_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::client::AmmoTypeInfo_t, m_nFlags) == 0x24, "m_nFlags in AmmoTypeInfo_t should be at offset 0x24");
 		static_assert(offsetof(CS2::client::AmmoTypeInfo_t, m_flMass) == 0x28, "m_flMass in AmmoTypeInfo_t should be at offset 0x28");
 		static_assert(offsetof(CS2::client::AmmoTypeInfo_t, m_flSpeed) == 0x2C, "m_flSpeed in AmmoTypeInfo_t should be at offset 0x2C");
 		static_assert(sizeof(CS2::client::AmmoTypeInfo_t) == 0x38, "AmmoTypeInfo_t size should be 0x38");
+
+#endif
 	}
 }

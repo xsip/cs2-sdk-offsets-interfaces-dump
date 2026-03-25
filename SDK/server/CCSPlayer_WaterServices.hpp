@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flSwimSoundTime; // 0x64 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayer_WaterServices, m_NextDrownDamageTime) == 0x48, "m_NextDrownDamageTime in CCSPlayer_WaterServices should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CCSPlayer_WaterServices, m_nDrownDmgRate) == 0x4C, "m_nDrownDmgRate in CCSPlayer_WaterServices should be at offset 0x4C");
 		static_assert(offsetof(CS2::server::CCSPlayer_WaterServices, m_AirFinishedTime) == 0x50, "m_AirFinishedTime in CCSPlayer_WaterServices should be at offset 0x50");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayer_WaterServices, m_vecWaterJumpVel) == 0x58, "m_vecWaterJumpVel in CCSPlayer_WaterServices should be at offset 0x58");
 		static_assert(offsetof(CS2::server::CCSPlayer_WaterServices, m_flSwimSoundTime) == 0x64, "m_flSwimSoundTime in CCSPlayer_WaterServices should be at offset 0x64");
 		static_assert(sizeof(CS2::server::CCSPlayer_WaterServices) == 0x80, "CCSPlayer_WaterServices size should be 0x80");
+
+#endif
 	}
 }

@@ -29,11 +29,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::CMorphBundleData> m_bundleDatas; // 0x10 | Schema_Atomic | Size: 0x18
 			// char m_bundleDatas[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CMorphRectData, m_nXLeftDst) == 0x0, "m_nXLeftDst in CMorphRectData should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMorphRectData, m_nYTopDst) == 0x2, "m_nYTopDst in CMorphRectData should be at offset 0x2");
 		static_assert(offsetof(CS2::modellib::CMorphRectData, m_flUWidthSrc) == 0x4, "m_flUWidthSrc in CMorphRectData should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::CMorphRectData, m_flVHeightSrc) == 0x8, "m_flVHeightSrc in CMorphRectData should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CMorphRectData, m_bundleDatas) == 0x10, "m_bundleDatas in CMorphRectData should be at offset 0x10");
 		static_assert(sizeof(CS2::modellib::CMorphRectData) == 0x28, "CMorphRectData size should be 0x28");
+
+#endif
 	}
 }

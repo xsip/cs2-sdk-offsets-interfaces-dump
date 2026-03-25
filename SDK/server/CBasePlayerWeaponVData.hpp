@@ -68,6 +68,7 @@ namespace CS2 {
 			// GlobalTypes::CUtlOrderedMap< WeaponSound_t, CSoundEventName > m_aShootSounds; // 0x418 | Schema_Atomic | Size: 0x28
 			char m_aShootSounds[0x28]; // 0x418 | Schema_Atomic | Size: 0x28
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBasePlayerWeaponVData, m_szWorldModel) == 0x28, "m_szWorldModel in CBasePlayerWeaponVData should be at offset 0x28");
 		static_assert(offsetof(CS2::server::CBasePlayerWeaponVData, m_sToolsOnlyOwnerModelName) == 0x108, "m_sToolsOnlyOwnerModelName in CBasePlayerWeaponVData should be at offset 0x108");
 		static_assert(offsetof(CS2::server::CBasePlayerWeaponVData, m_bBuiltRightHanded) == 0x1E8, "m_bBuiltRightHanded in CBasePlayerWeaponVData should be at offset 0x1E8");
@@ -100,5 +101,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBasePlayerWeaponVData, m_iPosition) == 0x410, "m_iPosition in CBasePlayerWeaponVData should be at offset 0x410");
 		static_assert(offsetof(CS2::server::CBasePlayerWeaponVData, m_aShootSounds) == 0x418, "m_aShootSounds in CBasePlayerWeaponVData should be at offset 0x418");
 		static_assert(sizeof(CS2::server::CBasePlayerWeaponVData) == 0x440, "CBasePlayerWeaponVData size should be 0x440");
+
+#endif
 	}
 }

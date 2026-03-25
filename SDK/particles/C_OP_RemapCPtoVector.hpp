@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bAccelerate; // 0x21d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nCPInput) == 0x1D0, "m_nCPInput in C_OP_RemapCPtoVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapCPtoVector should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_nLocalSpaceCP) == 0x1D8, "m_nLocalSpaceCP in C_OP_RemapCPtoVector should be at offset 0x1D8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_bOffset) == 0x21C, "m_bOffset in C_OP_RemapCPtoVector should be at offset 0x21C");
 		static_assert(offsetof(CS2::particles::C_OP_RemapCPtoVector, m_bAccelerate) == 0x21D, "m_bAccelerate in C_OP_RemapCPtoVector should be at offset 0x21D");
 		static_assert(sizeof(CS2::particles::C_OP_RemapCPtoVector) == 0x220, "C_OP_RemapCPtoVector size should be 0x220");
+
+#endif
 	}
 }

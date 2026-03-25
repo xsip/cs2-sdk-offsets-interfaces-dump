@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_INIT_RandomYaw : public CS2::particles::CGeneralRandomRotation {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::particles::C_INIT_RandomYaw) == 0x1F8, "C_INIT_RandomYaw size should be 0x1F8");
+
+#endif
 	}
 }

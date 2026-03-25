@@ -28,9 +28,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlVectorFixedGrowable<GlobalTypes::CGlobalSymbol> m_eventIDs; // 0x18 | Schema_Atomic | Size: 0x40
 			char m_eventIDs[0x40]; // 0x18 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIDEventConditionNode_CDefinition, m_nSourceStateNodeIdx) == 0x10, "m_nSourceStateNodeIdx in CNmIDEventConditionNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmIDEventConditionNode_CDefinition, m_eventConditionRules) == 0x14, "m_eventConditionRules in CNmIDEventConditionNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmIDEventConditionNode_CDefinition, m_eventIDs) == 0x18, "m_eventIDs in CNmIDEventConditionNode::CDefinition should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmIDEventConditionNode_CDefinition) == 0x58, "CNmIDEventConditionNode::CDefinition size should be 0x58");
+
+#endif
 	}
 }

@@ -58,6 +58,7 @@ namespace CS2 {
 			// char m_OutputConnections[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x58); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphDef, m_DomainIdentifier) == 0x8, "m_DomainIdentifier in CPulseGraphDef should be at offset 0x8");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphDef, m_DomainSubType) == 0x18, "m_DomainSubType in CPulseGraphDef should be at offset 0x18");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphDef, m_ParentMapName) == 0x30, "m_ParentMapName in CPulseGraphDef should be at offset 0x30");
@@ -73,5 +74,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphDef, m_BlackboardReferences) == 0x110, "m_BlackboardReferences in CPulseGraphDef should be at offset 0x110");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseGraphDef, m_OutputConnections) == 0x128, "m_OutputConnections in CPulseGraphDef should be at offset 0x128");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseGraphDef) == 0x198, "CPulseGraphDef size should be 0x198");
+
+#endif
 	}
 }

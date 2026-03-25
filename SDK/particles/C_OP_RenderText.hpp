@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_DefaultText; // 0x228 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderText, m_OutlineColor) == 0x220, "m_OutlineColor in C_OP_RenderText should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderText, m_DefaultText) == 0x228, "m_DefaultText in C_OP_RenderText should be at offset 0x228");
 		static_assert(sizeof(CS2::particles::C_OP_RenderText) == 0x230, "C_OP_RenderText size should be 0x230");
+
+#endif
 	}
 }

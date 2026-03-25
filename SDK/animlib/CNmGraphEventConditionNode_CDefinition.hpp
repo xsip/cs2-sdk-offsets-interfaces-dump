@@ -29,9 +29,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlVectorFixedGrowable<animlib::CNmGraphEventConditionNode_Condition_t> m_conditions; // 0x18 | Schema_Atomic | Size: 0x68
 			char m_conditions[0x68]; // 0x18 | Schema_Atomic | Size: 0x68
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmGraphEventConditionNode_CDefinition, m_nSourceStateNodeIdx) == 0x10, "m_nSourceStateNodeIdx in CNmGraphEventConditionNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmGraphEventConditionNode_CDefinition, m_eventConditionRules) == 0x14, "m_eventConditionRules in CNmGraphEventConditionNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmGraphEventConditionNode_CDefinition, m_conditions) == 0x18, "m_conditions in CNmGraphEventConditionNode::CDefinition should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmGraphEventConditionNode_CDefinition) == 0x80, "CNmGraphEventConditionNode::CDefinition size should be 0x80");
+
+#endif
 	}
 }

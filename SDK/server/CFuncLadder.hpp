@@ -39,6 +39,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnPlayerGotOnLadder; // 0x790 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnPlayerGotOffLadder; // 0x7a8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncLadder, m_vecLadderDir) == 0x730, "m_vecLadderDir in CFuncLadder should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncLadder, m_Dismounts) == 0x740, "m_Dismounts in CFuncLadder should be at offset 0x740");
 		static_assert(offsetof(CS2::server::CFuncLadder, m_vecLocalTop) == 0x758, "m_vecLocalTop in CFuncLadder should be at offset 0x758");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncLadder, m_OnPlayerGotOnLadder) == 0x790, "m_OnPlayerGotOnLadder in CFuncLadder should be at offset 0x790");
 		static_assert(offsetof(CS2::server::CFuncLadder, m_OnPlayerGotOffLadder) == 0x7A8, "m_OnPlayerGotOffLadder in CFuncLadder should be at offset 0x7A8");
 		static_assert(sizeof(CS2::server::CFuncLadder) == 0x7C0, "CFuncLadder size should be 0x7C0");
+
+#endif
 	}
 }

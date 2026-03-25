@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bDefault; // 0x18 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimMotorUpdaterBase, m_name) == 0x10, "m_name in CAnimMotorUpdaterBase should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::CAnimMotorUpdaterBase, m_bDefault) == 0x18, "m_bDefault in CAnimMotorUpdaterBase should be at offset 0x18");
 		static_assert(sizeof(CS2::animgraphlib::CAnimMotorUpdaterBase) == 0x20, "CAnimMotorUpdaterBase size should be 0x20");
+
+#endif
 	}
 }

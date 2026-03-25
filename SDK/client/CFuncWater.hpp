@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			client::CBuoyancyHelper m_BuoyancyHelper; // 0xe88 | Schema_DeclaredClass | Size: 0x118
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CFuncWater, m_BuoyancyHelper) == 0xE88, "m_BuoyancyHelper in CFuncWater should be at offset 0xE88");
 		static_assert(sizeof(CS2::client::CFuncWater) == 0xFA0, "CFuncWater size should be 0xFA0");
+
+#endif
 	}
 }

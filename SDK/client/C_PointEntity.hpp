@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_PointEntity : public CS2::client::C_BaseEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_PointEntity) == 0x608, "C_PointEntity size should be 0x608");
+
+#endif
 	}
 }

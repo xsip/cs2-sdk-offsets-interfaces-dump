@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_angOffset; // 0x2c | Schema_Atomic | Size: 0xc
 			GlobalTypes::CUtlString m_entityName; // 0x38 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_iControlPoint) == 0x0, "m_iControlPoint in ParticleControlPointDriver_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_iAttachType) == 0x10, "m_iAttachType in ParticleControlPointDriver_t should be at offset 0x10");
 		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_attachmentName) == 0x18, "m_attachmentName in ParticleControlPointDriver_t should be at offset 0x18");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_angOffset) == 0x2C, "m_angOffset in ParticleControlPointDriver_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::particles::ParticleControlPointDriver_t, m_entityName) == 0x38, "m_entityName in ParticleControlPointDriver_t should be at offset 0x38");
 		static_assert(sizeof(CS2::particles::ParticleControlPointDriver_t) == 0x40, "ParticleControlPointDriver_t size should be 0x40");
+
+#endif
 	}
 }

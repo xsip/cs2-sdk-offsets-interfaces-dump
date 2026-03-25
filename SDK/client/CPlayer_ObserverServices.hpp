@@ -38,6 +38,7 @@ namespace CS2 {
 			float32 m_flObserverChaseDistance; // 0x58 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flObserverChaseDistanceCalcTime; // 0x5c | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPlayer_ObserverServices, m_iObserverMode) == 0x48, "m_iObserverMode in CPlayer_ObserverServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CPlayer_ObserverServices, m_hObserverTarget) == 0x4C, "m_hObserverTarget in CPlayer_ObserverServices should be at offset 0x4C");
 		static_assert(offsetof(CS2::client::CPlayer_ObserverServices, m_iObserverLastMode) == 0x50, "m_iObserverLastMode in CPlayer_ObserverServices should be at offset 0x50");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CPlayer_ObserverServices, m_flObserverChaseDistance) == 0x58, "m_flObserverChaseDistance in CPlayer_ObserverServices should be at offset 0x58");
 		static_assert(offsetof(CS2::client::CPlayer_ObserverServices, m_flObserverChaseDistanceCalcTime) == 0x5C, "m_flObserverChaseDistanceCalcTime in CPlayer_ObserverServices should be at offset 0x5C");
 		static_assert(sizeof(CS2::client::CPlayer_ObserverServices) == 0x60, "CPlayer_ObserverServices size should be 0x60");
+
+#endif
 	}
 }

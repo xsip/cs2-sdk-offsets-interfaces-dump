@@ -31,10 +31,13 @@ namespace CS2 {
 			// char m_vecGeneratedTextures[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterial_t, m_TargetKVs) == 0x8, "m_TargetKVs in CompositeMaterial_t should be at offset 0x8");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterial_t, m_PreGenerationKVs) == 0x18, "m_PreGenerationKVs in CompositeMaterial_t should be at offset 0x18");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterial_t, m_FinalKVs) == 0x58, "m_FinalKVs in CompositeMaterial_t should be at offset 0x58");
 		static_assert(offsetof(CS2::compositematerialslib::CompositeMaterial_t, m_vecGeneratedTextures) == 0x80, "m_vecGeneratedTextures in CompositeMaterial_t should be at offset 0x80");
 		static_assert(sizeof(CS2::compositematerialslib::CompositeMaterial_t) == 0xA0, "CompositeMaterial_t size should be 0xA0");
+
+#endif
 	}
 }

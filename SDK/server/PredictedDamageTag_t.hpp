@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 flFlinchModLarge; // 0x38 | Schema_Builtin | Size: 0x4
 			float32 flFriendlyFireDamageReductionRatio; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::PredictedDamageTag_t, nTagTick) == 0x30, "nTagTick in PredictedDamageTag_t should be at offset 0x30");
 		static_assert(offsetof(CS2::server::PredictedDamageTag_t, flFlinchModSmall) == 0x34, "flFlinchModSmall in PredictedDamageTag_t should be at offset 0x34");
 		static_assert(offsetof(CS2::server::PredictedDamageTag_t, flFlinchModLarge) == 0x38, "flFlinchModLarge in PredictedDamageTag_t should be at offset 0x38");
 		static_assert(offsetof(CS2::server::PredictedDamageTag_t, flFriendlyFireDamageReductionRatio) == 0x3C, "flFriendlyFireDamageReductionRatio in PredictedDamageTag_t should be at offset 0x3C");
 		static_assert(sizeof(CS2::server::PredictedDamageTag_t) == 0x40, "PredictedDamageTag_t size should be 0x40");
+
+#endif
 	}
 }

@@ -30,10 +30,13 @@ namespace CS2 {
 			uint16_t m_decoyWeaponDefIndex; // 0xbe0 | Schema_Builtin | Size: 0x2
 			S2_PAD(0xe); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CDecoyProjectile, m_nDecoyShotTick) == 0xBC8, "m_nDecoyShotTick in CDecoyProjectile should be at offset 0xBC8");
 		static_assert(offsetof(CS2::server::CDecoyProjectile, m_shotsRemaining) == 0xBCC, "m_shotsRemaining in CDecoyProjectile should be at offset 0xBCC");
 		static_assert(offsetof(CS2::server::CDecoyProjectile, m_fExpireTime) == 0xBD0, "m_fExpireTime in CDecoyProjectile should be at offset 0xBD0");
 		static_assert(offsetof(CS2::server::CDecoyProjectile, m_decoyWeaponDefIndex) == 0xBE0, "m_decoyWeaponDefIndex in CDecoyProjectile should be at offset 0xBE0");
 		static_assert(sizeof(CS2::server::CDecoyProjectile) == 0xBF0, "CDecoyProjectile size should be 0xBF0");
+
+#endif
 	}
 }

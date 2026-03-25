@@ -41,6 +41,7 @@ namespace CS2 {
 			bool m_bIsPropSkeleton; // 0xb8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_ID) == 0x0, "m_ID in CNmSkeleton should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_boneIDs) == 0x8, "m_boneIDs in CNmSkeleton should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_parentIndices) == 0x18, "m_parentIndices in CNmSkeleton should be at offset 0x18");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_secondarySkeletons) == 0xA8, "m_secondarySkeletons in CNmSkeleton should be at offset 0xA8");
 		static_assert(offsetof(CS2::animlib::CNmSkeleton, m_bIsPropSkeleton) == 0xB8, "m_bIsPropSkeleton in CNmSkeleton should be at offset 0xB8");
 		static_assert(sizeof(CS2::animlib::CNmSkeleton) == 0xC0, "CNmSkeleton size should be 0xC0");
+
+#endif
 	}
 }

@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bLastTick; // 0x29 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventSimulate_t, m_LoopState) == 0x0, "m_LoopState in EventSimulate_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::EventSimulate_t, m_bFirstTick) == 0x28, "m_bFirstTick in EventSimulate_t should be at offset 0x28");
 		static_assert(offsetof(CS2::client::EventSimulate_t, m_bLastTick) == 0x29, "m_bLastTick in EventSimulate_t should be at offset 0x29");
 		static_assert(sizeof(CS2::client::EventSimulate_t) == 0x30, "EventSimulate_t size should be 0x30");
+
+#endif
 	}
 }

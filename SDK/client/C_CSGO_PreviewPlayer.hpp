@@ -25,8 +25,11 @@ namespace CS2 {
 			float32 m_flInitialModelScale; // 0x3ef8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xa4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer, m_animgraphCharacterModeString) == 0x3EF0, "m_animgraphCharacterModeString in C_CSGO_PreviewPlayer should be at offset 0x3EF0");
 		static_assert(offsetof(CS2::client::C_CSGO_PreviewPlayer, m_flInitialModelScale) == 0x3EF8, "m_flInitialModelScale in C_CSGO_PreviewPlayer should be at offset 0x3EF8");
 		static_assert(sizeof(CS2::client::C_CSGO_PreviewPlayer) == 0x3FA0, "C_CSGO_PreviewPlayer size should be 0x3FA0");
+
+#endif
 	}
 }

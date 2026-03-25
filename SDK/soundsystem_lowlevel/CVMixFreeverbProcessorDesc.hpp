@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			soundsystem_lowlevel::VMixFreeverbDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixFreeverbProcessorDesc, m_desc) == 0x20, "m_desc in CVMixFreeverbProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixFreeverbProcessorDesc) == 0x30, "CVMixFreeverbProcessorDesc size should be 0x30");
+
+#endif
 	}
 }

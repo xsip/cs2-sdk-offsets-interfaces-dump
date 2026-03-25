@@ -28,11 +28,14 @@ namespace CS2 {
 			GlobalTypes::CColorGradient m_Gradient; // 0x110 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CSmartPropAttributeFloat m_ColorPosition; // 0x128 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialTint, m_Material) == 0x50, "m_Material in CSmartPropOperation_MaterialTint should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialTint, m_SelectionMode) == 0x90, "m_SelectionMode in CSmartPropOperation_MaterialTint should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialTint, m_Color) == 0xD0, "m_Color in CSmartPropOperation_MaterialTint should be at offset 0xD0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialTint, m_Gradient) == 0x110, "m_Gradient in CSmartPropOperation_MaterialTint should be at offset 0x110");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_MaterialTint, m_ColorPosition) == 0x128, "m_ColorPosition in CSmartPropOperation_MaterialTint should be at offset 0x128");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_MaterialTint) == 0x168, "CSmartPropOperation_MaterialTint size should be 0x168");
+
+#endif
 	}
 }

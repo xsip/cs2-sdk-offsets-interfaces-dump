@@ -79,6 +79,7 @@ namespace CS2 {
 			bool m_bConstrainBetweenEndpoints; // 0x11f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_LinksTouchingSomething) == 0xE90, "m_LinksTouchingSomething in C_RopeKeyframe should be at offset 0xE90");
 		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_nLinksTouchingSomething) == 0xE94, "m_nLinksTouchingSomething in C_RopeKeyframe should be at offset 0xE94");
 		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bApplyWind) == 0xE98, "m_bApplyWind in C_RopeKeyframe should be at offset 0xE98");
@@ -116,5 +117,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_vCachedEndPointAttachmentAngle) == 0x11D8, "m_vCachedEndPointAttachmentAngle in C_RopeKeyframe should be at offset 0x11D8");
 		static_assert(offsetof(CS2::client::C_RopeKeyframe, m_bConstrainBetweenEndpoints) == 0x11F0, "m_bConstrainBetweenEndpoints in C_RopeKeyframe should be at offset 0x11F0");
 		static_assert(sizeof(CS2::client::C_RopeKeyframe) == 0x11F8, "C_RopeKeyframe size should be 0x11F8");
+
+#endif
 	}
 }

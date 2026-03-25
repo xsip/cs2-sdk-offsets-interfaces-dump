@@ -22,6 +22,9 @@ namespace CS2 {
 		class CEntityBlocker : public CS2::server::CBaseModelEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CEntityBlocker) == 0x730, "CEntityBlocker size should be 0x730");
+
+#endif
 	}
 }

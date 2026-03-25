@@ -27,8 +27,11 @@ namespace CS2 {
 			animlib::NmTargetWarpAlgorithm_t m_algorithm; // 0x21 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTargetWarpEvent, m_rule) == 0x20, "m_rule in CNmTargetWarpEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmTargetWarpEvent, m_algorithm) == 0x21, "m_algorithm in CNmTargetWarpEvent should be at offset 0x21");
 		static_assert(sizeof(CS2::animlib::CNmTargetWarpEvent) == 0x28, "CNmTargetWarpEvent size should be 0x28");
+
+#endif
 	}
 }

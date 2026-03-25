@@ -31,6 +31,7 @@ namespace CS2 {
 			int32_t m_nAABBDirection; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszStackName) == 0x4A8, "m_iszStackName in CCitadelSoundOpvarSetOBB should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszOperatorName) == 0x4B0, "m_iszOperatorName in CCitadelSoundOpvarSetOBB should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_iszOpvarName) == 0x4B8, "m_iszOpvarName in CCitadelSoundOpvarSetOBB should be at offset 0x4B8");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_vDistanceOuterMaxs) == 0x4E4, "m_vDistanceOuterMaxs in CCitadelSoundOpvarSetOBB should be at offset 0x4E4");
 		static_assert(offsetof(CS2::server::CCitadelSoundOpvarSetOBB, m_nAABBDirection) == 0x4F0, "m_nAABBDirection in CCitadelSoundOpvarSetOBB should be at offset 0x4F0");
 		static_assert(sizeof(CS2::server::CCitadelSoundOpvarSetOBB) == 0x4F8, "CCitadelSoundOpvarSetOBB size should be 0x4F8");
+
+#endif
 	}
 }

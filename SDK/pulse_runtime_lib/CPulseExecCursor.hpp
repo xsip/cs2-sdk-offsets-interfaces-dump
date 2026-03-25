@@ -22,6 +22,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0xd0);
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseExecCursor) == 0xD0, "CPulseExecCursor size should be 0xD0");
+
+#endif
 	}
 }

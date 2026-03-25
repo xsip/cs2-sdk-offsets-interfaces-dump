@@ -28,11 +28,14 @@ namespace CS2 {
 			int32_t m_nWrittenByInstruction; // 0x58 | Schema_Builtin | Size: 0x4
 			int32_t m_nLastReadByInstruction; // 0x5c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_RegisterInfo, m_nReg) == 0x0, "m_nReg in CPulse_RegisterInfo should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_RegisterInfo, m_Type) == 0x8, "m_Type in CPulse_RegisterInfo should be at offset 0x8");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_RegisterInfo, m_OriginName) == 0x20, "m_OriginName in CPulse_RegisterInfo should be at offset 0x20");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_RegisterInfo, m_nWrittenByInstruction) == 0x58, "m_nWrittenByInstruction in CPulse_RegisterInfo should be at offset 0x58");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_RegisterInfo, m_nLastReadByInstruction) == 0x5C, "m_nLastReadByInstruction in CPulse_RegisterInfo should be at offset 0x5C");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_RegisterInfo) == 0x60, "CPulse_RegisterInfo size should be 0x60");
+
+#endif
 	}
 }

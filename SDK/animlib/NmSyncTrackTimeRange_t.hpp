@@ -24,8 +24,11 @@ namespace CS2 {
 			animlib::NmSyncTrackTime_t m_startTime; // 0x0 | Schema_DeclaredClass | Size: 0x8
 			animlib::NmSyncTrackTime_t m_endTime; // 0x8 | Schema_DeclaredClass | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::NmSyncTrackTimeRange_t, m_startTime) == 0x0, "m_startTime in NmSyncTrackTimeRange_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::NmSyncTrackTimeRange_t, m_endTime) == 0x8, "m_endTime in NmSyncTrackTimeRange_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::NmSyncTrackTimeRange_t) == 0x10, "NmSyncTrackTimeRange_t size should be 0x10");
+
+#endif
 	}
 }

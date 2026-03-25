@@ -29,11 +29,14 @@ namespace CS2 {
 			float32 m_flTLength; // 0x7d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBasePlatTrain, m_NoiseMoving) == 0x7B0, "m_NoiseMoving in CBasePlatTrain should be at offset 0x7B0");
 		static_assert(offsetof(CS2::server::CBasePlatTrain, m_NoiseArrived) == 0x7B8, "m_NoiseArrived in CBasePlatTrain should be at offset 0x7B8");
 		static_assert(offsetof(CS2::server::CBasePlatTrain, m_volume) == 0x7C8, "m_volume in CBasePlatTrain should be at offset 0x7C8");
 		static_assert(offsetof(CS2::server::CBasePlatTrain, m_flTWidth) == 0x7CC, "m_flTWidth in CBasePlatTrain should be at offset 0x7CC");
 		static_assert(offsetof(CS2::server::CBasePlatTrain, m_flTLength) == 0x7D0, "m_flTLength in CBasePlatTrain should be at offset 0x7D0");
 		static_assert(sizeof(CS2::server::CBasePlatTrain) == 0x7D8, "CBasePlatTrain size should be 0x7D8");
+
+#endif
 	}
 }

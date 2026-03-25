@@ -43,6 +43,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vCapsuleCenter2; // 0xa0 | Schema_Atomic | Size: 0xc
 			float32 m_flCapsuleRadius; // 0xac | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCollisionProperty, m_collisionAttribute) == 0x10, "m_collisionAttribute in CCollisionProperty should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CCollisionProperty, m_vecMins) == 0x40, "m_vecMins in CCollisionProperty should be at offset 0x40");
 		static_assert(offsetof(CS2::client::CCollisionProperty, m_vecMaxs) == 0x4C, "m_vecMaxs in CCollisionProperty should be at offset 0x4C");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CCollisionProperty, m_vCapsuleCenter2) == 0xA0, "m_vCapsuleCenter2 in CCollisionProperty should be at offset 0xA0");
 		static_assert(offsetof(CS2::client::CCollisionProperty, m_flCapsuleRadius) == 0xAC, "m_flCapsuleRadius in CCollisionProperty should be at offset 0xAC");
 		static_assert(sizeof(CS2::client::CCollisionProperty) == 0xB0, "CCollisionProperty size should be 0xB0");
+
+#endif
 	}
 }

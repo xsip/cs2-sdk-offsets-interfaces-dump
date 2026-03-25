@@ -29,11 +29,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString itemKVString; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::Vector2D itemPos; // 0x28 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::SosEditItemInfo_t, itemType) == 0x0, "itemType in SosEditItemInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem::SosEditItemInfo_t, itemName) == 0x8, "itemName in SosEditItemInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::SosEditItemInfo_t, itemTypeName) == 0x10, "itemTypeName in SosEditItemInfo_t should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem::SosEditItemInfo_t, itemKVString) == 0x20, "itemKVString in SosEditItemInfo_t should be at offset 0x20");
 		static_assert(offsetof(CS2::soundsystem::SosEditItemInfo_t, itemPos) == 0x28, "itemPos in SosEditItemInfo_t should be at offset 0x28");
 		static_assert(sizeof(CS2::soundsystem::SosEditItemInfo_t) == 0x30, "SosEditItemInfo_t size should be 0x30");
+
+#endif
 	}
 }

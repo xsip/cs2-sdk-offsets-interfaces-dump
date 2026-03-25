@@ -32,11 +32,14 @@ namespace CS2 {
 			S2_PAD(0x2);
 			int32_t m_nNumPointsAlongPath; // 0x1fc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_PointList, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_INIT_PointList should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_PointList, m_pointList) == 0x1E0, "m_pointList in C_INIT_PointList should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_PointList, m_bPlaceAlongPath) == 0x1F8, "m_bPlaceAlongPath in C_INIT_PointList should be at offset 0x1F8");
 		static_assert(offsetof(CS2::particles::C_INIT_PointList, m_bClosedLoop) == 0x1F9, "m_bClosedLoop in C_INIT_PointList should be at offset 0x1F9");
 		static_assert(offsetof(CS2::particles::C_INIT_PointList, m_nNumPointsAlongPath) == 0x1FC, "m_nNumPointsAlongPath in C_INIT_PointList should be at offset 0x1FC");
 		static_assert(sizeof(CS2::particles::C_INIT_PointList) == 0x200, "C_INIT_PointList size should be 0x200");
+
+#endif
 	}
 }

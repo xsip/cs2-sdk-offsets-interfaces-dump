@@ -39,6 +39,7 @@ namespace CS2 {
 			bool m_bLocalSpaceAngles; // 0x4dc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_InitFromCPSnapshot should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_strSnapshotSubset) == 0x1E0, "m_strSnapshotSubset in C_INIT_InitFromCPSnapshot should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nAttributeToRead) == 0x1E8, "m_nAttributeToRead in C_INIT_InitFromCPSnapshot should be at offset 0x1E8");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_nRandomSeed) == 0x4D8, "m_nRandomSeed in C_INIT_InitFromCPSnapshot should be at offset 0x4D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitFromCPSnapshot, m_bLocalSpaceAngles) == 0x4DC, "m_bLocalSpaceAngles in C_INIT_InitFromCPSnapshot should be at offset 0x4DC");
 		static_assert(sizeof(CS2::particles::C_INIT_InitFromCPSnapshot) == 0x4E0, "C_INIT_InitFromCPSnapshot size should be 0x4E0");
+
+#endif
 	}
 }

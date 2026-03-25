@@ -26,8 +26,11 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CGlobalSymbol m_ID; // 0x28 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTransitionEvent, m_rule) == 0x20, "m_rule in CNmTransitionEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmTransitionEvent, m_ID) == 0x28, "m_ID in CNmTransitionEvent should be at offset 0x28");
 		static_assert(sizeof(CS2::animlib::CNmTransitionEvent) == 0x30, "CNmTransitionEvent size should be 0x30");
+
+#endif
 	}
 }

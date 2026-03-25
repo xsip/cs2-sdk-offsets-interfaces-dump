@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nIntValue; // 0x38 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmEntityAttributeIntEvent, m_nIntValue) == 0x38, "m_nIntValue in CNmEntityAttributeIntEvent should be at offset 0x38");
 		static_assert(sizeof(CS2::animlib::CNmEntityAttributeIntEvent) == 0x40, "CNmEntityAttributeIntEvent size should be 0x40");
+
+#endif
 	}
 }

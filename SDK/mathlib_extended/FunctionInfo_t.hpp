@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bIsPure; // 0x1a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::mathlib_extended::FunctionInfo_t, m_name) == 0x8, "m_name in FunctionInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::mathlib_extended::FunctionInfo_t, m_nameToken) == 0x10, "m_nameToken in FunctionInfo_t should be at offset 0x10");
 		static_assert(offsetof(CS2::mathlib_extended::FunctionInfo_t, m_nParamCount) == 0x14, "m_nParamCount in FunctionInfo_t should be at offset 0x14");
 		static_assert(offsetof(CS2::mathlib_extended::FunctionInfo_t, m_nIndex) == 0x18, "m_nIndex in FunctionInfo_t should be at offset 0x18");
 		static_assert(offsetof(CS2::mathlib_extended::FunctionInfo_t, m_bIsPure) == 0x1A, "m_bIsPure in FunctionInfo_t should be at offset 0x1A");
 		static_assert(sizeof(CS2::mathlib_extended::FunctionInfo_t) == 0x20, "FunctionInfo_t size should be 0x20");
+
+#endif
 	}
 }

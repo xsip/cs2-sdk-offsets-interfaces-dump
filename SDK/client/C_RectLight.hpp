@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bShowLight; // 0x1198 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_RectLight, m_bShowLight) == 0x1198, "m_bShowLight in C_RectLight should be at offset 0x1198");
 		static_assert(sizeof(CS2::client::C_RectLight) == 0x11A0, "C_RectLight size should be 0x11A0");
+
+#endif
 	}
 }

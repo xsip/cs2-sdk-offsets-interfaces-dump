@@ -26,10 +26,13 @@ namespace CS2 {
 			uint16_t m_nChild; // 0x6 | Schema_Builtin | Size: 0x2
 			modellib::VPhysXConstraintParams_t m_params; // 0x8 | Schema_DeclaredClass | Size: 0xf8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysXConstraint2_t, m_nFlags) == 0x0, "m_nFlags in VPhysXConstraint2_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysXConstraint2_t, m_nParent) == 0x4, "m_nParent in VPhysXConstraint2_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::VPhysXConstraint2_t, m_nChild) == 0x6, "m_nChild in VPhysXConstraint2_t should be at offset 0x6");
 		static_assert(offsetof(CS2::modellib::VPhysXConstraint2_t, m_params) == 0x8, "m_params in VPhysXConstraint2_t should be at offset 0x8");
 		static_assert(sizeof(CS2::modellib::VPhysXConstraint2_t) == 0x100, "VPhysXConstraint2_t size should be 0x100");
+
+#endif
 	}
 }

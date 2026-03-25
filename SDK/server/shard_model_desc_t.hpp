@@ -45,6 +45,7 @@ namespace CS2 {
 			GlobalTypes::CUtlStringToken m_SurfacePropStringToken; // 0x78 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::shard_model_desc_t, m_nModelID) == 0x8, "m_nModelID in shard_model_desc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::shard_model_desc_t, m_hMaterialBase) == 0x10, "m_hMaterialBase in shard_model_desc_t should be at offset 0x10");
 		static_assert(offsetof(CS2::server::shard_model_desc_t, m_hMaterialDamageOverlay) == 0x18, "m_hMaterialDamageOverlay in shard_model_desc_t should be at offset 0x18");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::shard_model_desc_t, m_bParentFrozen) == 0x75, "m_bParentFrozen in shard_model_desc_t should be at offset 0x75");
 		static_assert(offsetof(CS2::server::shard_model_desc_t, m_SurfacePropStringToken) == 0x78, "m_SurfacePropStringToken in shard_model_desc_t should be at offset 0x78");
 		static_assert(sizeof(CS2::server::shard_model_desc_t) == 0x80, "shard_model_desc_t size should be 0x80");
+
+#endif
 	}
 }

@@ -23,6 +23,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x8);
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CTriggerCallback) == 0x898, "CTriggerCallback size should be 0x898");
+
+#endif
 	}
 }

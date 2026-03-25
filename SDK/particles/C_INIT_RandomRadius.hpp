@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flRadiusRandExponent; // 0x1e0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusMin) == 0x1D8, "m_flRadiusMin in C_INIT_RandomRadius should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusMax) == 0x1DC, "m_flRadiusMax in C_INIT_RandomRadius should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomRadius, m_flRadiusRandExponent) == 0x1E0, "m_flRadiusRandExponent in C_INIT_RandomRadius should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomRadius) == 0x1E8, "C_INIT_RandomRadius size should be 0x1E8");
+
+#endif
 	}
 }

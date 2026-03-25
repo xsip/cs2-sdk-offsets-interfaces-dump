@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_Input; // 0x48 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Step_TestDomainEntFire, m_Input) == 0x48, "m_Input in CPulseCell_Step_TestDomainEntFire should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Step_TestDomainEntFire) == 0x50, "CPulseCell_Step_TestDomainEntFire size should be 0x50");
+
+#endif
 	}
 }

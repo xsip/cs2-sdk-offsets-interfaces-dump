@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 m_flValueB; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatMathNode_CDefinition, m_nInputValueNodeIdxA) == 0x10, "m_nInputValueNodeIdxA in CNmFloatMathNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatMathNode_CDefinition, m_nInputValueNodeIdxB) == 0x12, "m_nInputValueNodeIdxB in CNmFloatMathNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmFloatMathNode_CDefinition, m_bReturnAbsoluteResult) == 0x14, "m_bReturnAbsoluteResult in CNmFloatMathNode::CDefinition should be at offset 0x14");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmFloatMathNode_CDefinition, m_operator) == 0x16, "m_operator in CNmFloatMathNode::CDefinition should be at offset 0x16");
 		static_assert(offsetof(CS2::animlib::CNmFloatMathNode_CDefinition, m_flValueB) == 0x18, "m_flValueB in CNmFloatMathNode::CDefinition should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmFloatMathNode_CDefinition) == 0x20, "CNmFloatMathNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

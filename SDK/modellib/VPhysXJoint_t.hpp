@@ -59,6 +59,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_Tag; // 0xc0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysXJoint_t, m_nType) == 0x0, "m_nType in VPhysXJoint_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysXJoint_t, m_nBody1) == 0x2, "m_nBody1 in VPhysXJoint_t should be at offset 0x2");
 		static_assert(offsetof(CS2::modellib::VPhysXJoint_t, m_nBody2) == 0x4, "m_nBody2 in VPhysXJoint_t should be at offset 0x4");
@@ -90,5 +91,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::VPhysXJoint_t, m_flPlasticity) == 0xB8, "m_flPlasticity in VPhysXJoint_t should be at offset 0xB8");
 		static_assert(offsetof(CS2::modellib::VPhysXJoint_t, m_Tag) == 0xC0, "m_Tag in VPhysXJoint_t should be at offset 0xC0");
 		static_assert(sizeof(CS2::modellib::VPhysXJoint_t) == 0xD0, "VPhysXJoint_t size should be 0xD0");
+
+#endif
 	}
 }

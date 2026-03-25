@@ -25,8 +25,11 @@ namespace CS2 {
 			uint32_t m_nBindOffsetBytes; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CRenderBufferBinding, m_hBuffer) == 0x0, "m_hBuffer in CRenderBufferBinding should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CRenderBufferBinding, m_nBindOffsetBytes) == 0x10, "m_nBindOffsetBytes in CRenderBufferBinding should be at offset 0x10");
 		static_assert(sizeof(CS2::modellib::CRenderBufferBinding) == 0x20, "CRenderBufferBinding size should be 0x20");
+
+#endif
 	}
 }

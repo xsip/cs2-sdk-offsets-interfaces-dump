@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			uint8_t m_Value; // 0x0 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::AttachmentHandle_t, m_Value) == 0x0, "m_Value in AttachmentHandle_t should be at offset 0x0");
 		static_assert(sizeof(CS2::modellib::AttachmentHandle_t) == 0x1, "AttachmentHandle_t size should be 0x1");
+
+#endif
 	}
 }

@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bAllowRotation; // 0x158 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bAllowScale; // 0x198 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateLocator, m_LocatorName) == 0x50, "m_LocatorName in CSmartPropOperation_CreateLocator should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateLocator, m_vOffset) == 0x58, "m_vOffset in CSmartPropOperation_CreateLocator should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateLocator, m_flDisplayScale) == 0x98, "m_flDisplayScale in CSmartPropOperation_CreateLocator should be at offset 0x98");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateLocator, m_bAllowRotation) == 0x158, "m_bAllowRotation in CSmartPropOperation_CreateLocator should be at offset 0x158");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateLocator, m_bAllowScale) == 0x198, "m_bAllowScale in CSmartPropOperation_CreateLocator should be at offset 0x198");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_CreateLocator) == 0x1D8, "CSmartPropOperation_CreateLocator size should be 0x1D8");
+
+#endif
 	}
 }

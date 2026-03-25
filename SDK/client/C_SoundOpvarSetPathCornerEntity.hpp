@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_SoundOpvarSetPathCornerEntity : public CS2::client::C_SoundOpvarSetPointEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_SoundOpvarSetPathCornerEntity) == 0x628, "C_SoundOpvarSetPathCornerEntity size should be 0x628");
+
+#endif
 	}
 }

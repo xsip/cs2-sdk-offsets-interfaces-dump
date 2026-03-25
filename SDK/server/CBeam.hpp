@@ -62,6 +62,7 @@ namespace CS2 {
 			// char m_hEndEntity[0x4]; // 0x7c8 | Schema_Atomic | Size: 0x4
 			int32_t m_nDissolveType; // 0x7cc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBeam, m_flFrameRate) == 0x730, "m_flFrameRate in CBeam should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CBeam, m_flHDRColorScale) == 0x734, "m_flHDRColorScale in CBeam should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CBeam, m_flFireTime) == 0x738, "m_flFireTime in CBeam should be at offset 0x738");
@@ -87,5 +88,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBeam, m_hEndEntity) == 0x7C8, "m_hEndEntity in CBeam should be at offset 0x7C8");
 		static_assert(offsetof(CS2::server::CBeam, m_nDissolveType) == 0x7CC, "m_nDissolveType in CBeam should be at offset 0x7CC");
 		static_assert(sizeof(CS2::server::CBeam) == 0x7D0, "CBeam size should be 0x7D0");
+
+#endif
 	}
 }

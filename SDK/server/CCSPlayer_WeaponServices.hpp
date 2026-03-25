@@ -49,6 +49,7 @@ namespace CS2 {
 			bool m_bBlockInspectUntilNextGraphUpdate; // 0x18d0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_flNextAttack) == 0xC0, "m_flNextAttack in CCSPlayer_WeaponServices should be at offset 0xC0");
 		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsLookingAtWeapon) == 0xC4, "m_bIsLookingAtWeapon in CCSPlayer_WeaponServices should be at offset 0xC4");
 		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bIsHoldingLookAtWeapon) == 0xC5, "m_bIsHoldingLookAtWeapon in CCSPlayer_WeaponServices should be at offset 0xC5");
@@ -65,5 +66,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_networkAnimTiming) == 0x18B8, "m_networkAnimTiming in CCSPlayer_WeaponServices should be at offset 0x18B8");
 		static_assert(offsetof(CS2::server::CCSPlayer_WeaponServices, m_bBlockInspectUntilNextGraphUpdate) == 0x18D0, "m_bBlockInspectUntilNextGraphUpdate in CCSPlayer_WeaponServices should be at offset 0x18D0");
 		static_assert(sizeof(CS2::server::CCSPlayer_WeaponServices) == 0x18D8, "CCSPlayer_WeaponServices size should be 0x18D8");
+
+#endif
 	}
 }

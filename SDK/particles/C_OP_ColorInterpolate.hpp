@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bEaseInOut; // 0x1ec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_ColorFade) == 0x1D0, "m_ColorFade in C_OP_ColorInterpolate should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_flFadeStartTime) == 0x1E0, "m_flFadeStartTime in C_OP_ColorInterpolate should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_flFadeEndTime) == 0x1E4, "m_flFadeEndTime in C_OP_ColorInterpolate should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_nFieldOutput) == 0x1E8, "m_nFieldOutput in C_OP_ColorInterpolate should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_ColorInterpolate, m_bEaseInOut) == 0x1EC, "m_bEaseInOut in C_OP_ColorInterpolate should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::C_OP_ColorInterpolate) == 0x1F0, "C_OP_ColorInterpolate size should be 0x1F0");
+
+#endif
 	}
 }

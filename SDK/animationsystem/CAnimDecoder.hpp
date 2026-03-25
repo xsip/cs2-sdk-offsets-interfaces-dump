@@ -24,9 +24,12 @@ namespace CS2 {
 			int32_t m_nVersion; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nType; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimDecoder, m_szName) == 0x0, "m_szName in CAnimDecoder should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimDecoder, m_nVersion) == 0x10, "m_nVersion in CAnimDecoder should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimDecoder, m_nType) == 0x14, "m_nType in CAnimDecoder should be at offset 0x14");
 		static_assert(sizeof(CS2::animationsystem::CAnimDecoder) == 0x18, "CAnimDecoder size should be 0x18");
+
+#endif
 	}
 }

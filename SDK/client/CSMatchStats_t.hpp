@@ -28,11 +28,14 @@ namespace CS2 {
 			int32_t m_iEnemyTaserKills; // 0x78 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSMatchStats_t, m_iEnemy5Ks) == 0x68, "m_iEnemy5Ks in CSMatchStats_t should be at offset 0x68");
 		static_assert(offsetof(CS2::client::CSMatchStats_t, m_iEnemy4Ks) == 0x6C, "m_iEnemy4Ks in CSMatchStats_t should be at offset 0x6C");
 		static_assert(offsetof(CS2::client::CSMatchStats_t, m_iEnemy3Ks) == 0x70, "m_iEnemy3Ks in CSMatchStats_t should be at offset 0x70");
 		static_assert(offsetof(CS2::client::CSMatchStats_t, m_iEnemyKnifeKills) == 0x74, "m_iEnemyKnifeKills in CSMatchStats_t should be at offset 0x74");
 		static_assert(offsetof(CS2::client::CSMatchStats_t, m_iEnemyTaserKills) == 0x78, "m_iEnemyTaserKills in CSMatchStats_t should be at offset 0x78");
 		static_assert(sizeof(CS2::client::CSMatchStats_t) == 0x80, "CSMatchStats_t size should be 0x80");
+
+#endif
 	}
 }

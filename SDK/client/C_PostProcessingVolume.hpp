@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bExposureControl; // 0xf95 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PostProcessingVolume, m_hPostSettings) == 0xF68, "m_hPostSettings in C_PostProcessingVolume should be at offset 0xF68");
 		static_assert(offsetof(CS2::client::C_PostProcessingVolume, m_flFadeDuration) == 0xF70, "m_flFadeDuration in C_PostProcessingVolume should be at offset 0xF70");
 		static_assert(offsetof(CS2::client::C_PostProcessingVolume, m_flMinLogExposure) == 0xF74, "m_flMinLogExposure in C_PostProcessingVolume should be at offset 0xF74");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PostProcessingVolume, m_bMaster) == 0xF94, "m_bMaster in C_PostProcessingVolume should be at offset 0xF94");
 		static_assert(offsetof(CS2::client::C_PostProcessingVolume, m_bExposureControl) == 0xF95, "m_bExposureControl in C_PostProcessingVolume should be at offset 0xF95");
 		static_assert(sizeof(CS2::client::C_PostProcessingVolume) == 0xF98, "C_PostProcessingVolume size should be 0xF98");
+
+#endif
 	}
 }

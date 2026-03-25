@@ -33,6 +33,7 @@ namespace CS2 {
 			float32 flAxialModelWeights[4]; // 0x30 | Schema_FixedArray | Size: 0x10
 			uint16_t m_nNode[4]; // 0x40 | Schema_FixedArray | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::OldFeEdge_t, m_flK) == 0x0, "m_flK in OldFeEdge_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::OldFeEdge_t, invA) == 0xC, "invA in OldFeEdge_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::OldFeEdge_t, t) == 0x10, "t in OldFeEdge_t should be at offset 0x10");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::OldFeEdge_t, flAxialModelWeights) == 0x30, "flAxialModelWeights in OldFeEdge_t should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::OldFeEdge_t, m_nNode) == 0x40, "m_nNode in OldFeEdge_t should be at offset 0x40");
 		static_assert(sizeof(CS2::physicslib::OldFeEdge_t) == 0x48, "OldFeEdge_t size should be 0x48");
+
+#endif
 	}
 }

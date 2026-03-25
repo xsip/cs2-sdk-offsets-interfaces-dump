@@ -26,8 +26,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionFloatInput m_flNumberOfChildren; // 0x1e0 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ChooseRandomChildrenInGroup, m_nChildGroupID) == 0x1D8, "m_nChildGroupID in C_OP_ChooseRandomChildrenInGroup should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ChooseRandomChildrenInGroup, m_flNumberOfChildren) == 0x1E0, "m_flNumberOfChildren in C_OP_ChooseRandomChildrenInGroup should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_OP_ChooseRandomChildrenInGroup) == 0x350, "C_OP_ChooseRandomChildrenInGroup size should be 0x350");
+
+#endif
 	}
 }

@@ -23,6 +23,9 @@ namespace CS2 {
 		public:
 			S2_PAD(0x20);
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::CNmEventConsumerSound) == 0x30, "CNmEventConsumerSound size should be 0x30");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_sPairedSequenceRole; // 0x78 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CPairedSequenceUpdateNode, m_sPairedSequenceRole) == 0x78, "m_sPairedSequenceRole in CPairedSequenceUpdateNode should be at offset 0x78");
 		static_assert(sizeof(CS2::animgraphlib::CPairedSequenceUpdateNode) == 0x88, "CPairedSequenceUpdateNode size should be 0x88");
+
+#endif
 	}
 }

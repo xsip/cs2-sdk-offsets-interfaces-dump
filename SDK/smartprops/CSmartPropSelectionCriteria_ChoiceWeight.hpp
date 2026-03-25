@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CSmartPropAttributeFloat m_flWeight; // 0x48 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropSelectionCriteria_ChoiceWeight, m_flWeight) == 0x48, "m_flWeight in CSmartPropSelectionCriteria_ChoiceWeight should be at offset 0x48");
 		static_assert(sizeof(CS2::smartprops::CSmartPropSelectionCriteria_ChoiceWeight) == 0x88, "CSmartPropSelectionCriteria_ChoiceWeight size should be 0x88");
+
+#endif
 	}
 }

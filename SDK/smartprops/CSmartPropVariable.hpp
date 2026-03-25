@@ -28,11 +28,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_HideExpression; // 0x28 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_ReadOnlyExpression; // 0x30 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable, m_VariableName) == 0x10, "m_VariableName in CSmartPropVariable should be at offset 0x10");
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable, m_bExposeAsParameter) == 0x18, "m_bExposeAsParameter in CSmartPropVariable should be at offset 0x18");
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable, m_DisplayName) == 0x20, "m_DisplayName in CSmartPropVariable should be at offset 0x20");
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable, m_HideExpression) == 0x28, "m_HideExpression in CSmartPropVariable should be at offset 0x28");
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable, m_ReadOnlyExpression) == 0x30, "m_ReadOnlyExpression in CSmartPropVariable should be at offset 0x30");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable) == 0x38, "CSmartPropVariable size should be 0x38");
+
+#endif
 	}
 }

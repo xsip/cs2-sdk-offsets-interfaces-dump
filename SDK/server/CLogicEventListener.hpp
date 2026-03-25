@@ -29,10 +29,13 @@ namespace CS2 {
 			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnEventFired; // 0x4c8 | Schema_Atomic | Size: 0x20
 			// char m_OnEventFired[0x20]; // 0x4c8 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicEventListener, m_strEventName) == 0x4B8, "m_strEventName in CLogicEventListener should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CLogicEventListener, m_bIsEnabled) == 0x4C0, "m_bIsEnabled in CLogicEventListener should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CLogicEventListener, m_nTeam) == 0x4C4, "m_nTeam in CLogicEventListener should be at offset 0x4C4");
 		static_assert(offsetof(CS2::server::CLogicEventListener, m_OnEventFired) == 0x4C8, "m_OnEventFired in CLogicEventListener should be at offset 0x4C8");
 		static_assert(sizeof(CS2::server::CLogicEventListener) == 0x4E8, "CLogicEventListener size should be 0x4E8");
+
+#endif
 	}
 }

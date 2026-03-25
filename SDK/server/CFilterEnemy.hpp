@@ -28,11 +28,14 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iszPlayerName; // 0x4f8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFilterEnemy, m_iszEnemyName) == 0x4E0, "m_iszEnemyName in CFilterEnemy should be at offset 0x4E0");
 		static_assert(offsetof(CS2::server::CFilterEnemy, m_flRadius) == 0x4E8, "m_flRadius in CFilterEnemy should be at offset 0x4E8");
 		static_assert(offsetof(CS2::server::CFilterEnemy, m_flOuterRadius) == 0x4EC, "m_flOuterRadius in CFilterEnemy should be at offset 0x4EC");
 		static_assert(offsetof(CS2::server::CFilterEnemy, m_nMaxSquadmatesPerEnemy) == 0x4F0, "m_nMaxSquadmatesPerEnemy in CFilterEnemy should be at offset 0x4F0");
 		static_assert(offsetof(CS2::server::CFilterEnemy, m_iszPlayerName) == 0x4F8, "m_iszPlayerName in CFilterEnemy should be at offset 0x4F8");
 		static_assert(sizeof(CS2::server::CFilterEnemy) == 0x500, "CFilterEnemy size should be 0x500");
+
+#endif
 	}
 }

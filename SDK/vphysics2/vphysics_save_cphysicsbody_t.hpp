@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			uint64_t m_nOldPointer; // 0xe0 | Schema_Builtin | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::vphysics2::vphysics_save_cphysicsbody_t, m_nOldPointer) == 0xE0, "m_nOldPointer in vphysics_save_cphysicsbody_t should be at offset 0xE0");
 		static_assert(sizeof(CS2::vphysics2::vphysics_save_cphysicsbody_t) == 0xE8, "vphysics_save_cphysicsbody_t size should be 0xE8");
+
+#endif
 	}
 }

@@ -28,10 +28,13 @@ namespace CS2 {
 			animlib::NmFollowBoneMode_t m_mode; // 0x2a | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFollowBoneNode_CDefinition, m_bone) == 0x18, "m_bone in CNmFollowBoneNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmFollowBoneNode_CDefinition, m_followTargetBone) == 0x20, "m_followTargetBone in CNmFollowBoneNode::CDefinition should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmFollowBoneNode_CDefinition, m_nEnabledNodeIdx) == 0x28, "m_nEnabledNodeIdx in CNmFollowBoneNode::CDefinition should be at offset 0x28");
 		static_assert(offsetof(CS2::animlib::CNmFollowBoneNode_CDefinition, m_mode) == 0x2A, "m_mode in CNmFollowBoneNode::CDefinition should be at offset 0x2A");
 		static_assert(sizeof(CS2::animlib::CNmFollowBoneNode_CDefinition) == 0x30, "CNmFollowBoneNode::CDefinition size should be 0x30");
+
+#endif
 	}
 }

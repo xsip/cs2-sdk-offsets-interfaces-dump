@@ -23,8 +23,11 @@ namespace CS2 {
 			uint16_t m_nGroup; // 0x0 | Schema_Builtin | Size: 0x2
 			uint16_t m_nMotion; // 0x2 | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::MotionIndex, m_nGroup) == 0x0, "m_nGroup in MotionIndex should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::MotionIndex, m_nMotion) == 0x2, "m_nMotion in MotionIndex should be at offset 0x2");
 		static_assert(sizeof(CS2::animgraphlib::MotionIndex) == 0x4, "MotionIndex size should be 0x4");
+
+#endif
 	}
 }

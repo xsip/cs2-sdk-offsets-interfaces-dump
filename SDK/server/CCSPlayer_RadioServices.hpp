@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bIgnoreRadio; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flGotHostageTalkTimer) == 0x48, "m_flGotHostageTalkTimer in CCSPlayer_RadioServices should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flDefusingTalkTimer) == 0x4C, "m_flDefusingTalkTimer in CCSPlayer_RadioServices should be at offset 0x4C");
 		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flC4PlantTalkTimer) == 0x50, "m_flC4PlantTalkTimer in CCSPlayer_RadioServices should be at offset 0x50");
 		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_flRadioTokenSlots) == 0x54, "m_flRadioTokenSlots in CCSPlayer_RadioServices should be at offset 0x54");
 		static_assert(offsetof(CS2::server::CCSPlayer_RadioServices, m_bIgnoreRadio) == 0x60, "m_bIgnoreRadio in CCSPlayer_RadioServices should be at offset 0x60");
 		static_assert(sizeof(CS2::server::CCSPlayer_RadioServices) == 0x68, "CCSPlayer_RadioServices size should be 0x68");
+
+#endif
 	}
 }

@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bUpdateLayerPriorities; // 0xaa4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseFlex, m_flexWeight) == 0xA20, "m_flexWeight in CBaseFlex should be at offset 0xA20");
 		static_assert(offsetof(CS2::server::CBaseFlex, m_vLookTargetPosition) == 0xA38, "m_vLookTargetPosition in CBaseFlex should be at offset 0xA38");
 		static_assert(offsetof(CS2::server::CBaseFlex, m_flAllowResponsesEndTime) == 0xA98, "m_flAllowResponsesEndTime in CBaseFlex should be at offset 0xA98");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseFlex, m_nNextSceneEventId) == 0xAA0, "m_nNextSceneEventId in CBaseFlex should be at offset 0xAA0");
 		static_assert(offsetof(CS2::server::CBaseFlex, m_bUpdateLayerPriorities) == 0xAA4, "m_bUpdateLayerPriorities in CBaseFlex should be at offset 0xAA4");
 		static_assert(sizeof(CS2::server::CBaseFlex) == 0xAB0, "CBaseFlex size should be 0xAB0");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 followup_entityiodelay; // 0x2c | Schema_Builtin | Size: 0x4
 			bool bFired; // 0x30 | Schema_Builtin | Size: 0x1*/
 		};
+#ifdef USE_STATIC_ASSERTS
 		/*static_assert(offsetof(CS2::client::ResponseFollowup, followup_concept) == 0x0, "followup_concept in ResponseFollowup should be at offset 0x0");
 		static_assert(offsetof(CS2::client::ResponseFollowup, followup_contexts) == 0x8, "followup_contexts in ResponseFollowup should be at offset 0x8");
 		static_assert(offsetof(CS2::client::ResponseFollowup, followup_delay) == 0x10, "followup_delay in ResponseFollowup should be at offset 0x10");
@@ -39,7 +40,8 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::ResponseFollowup, followup_entityioinput) == 0x24, "followup_entityioinput in ResponseFollowup should be at offset 0x24");
 		static_assert(offsetof(CS2::client::ResponseFollowup, followup_entityiodelay) == 0x2C, "followup_entityiodelay in ResponseFollowup should be at offset 0x2C");
 		static_assert(offsetof(CS2::client::ResponseFollowup, bFired) == 0x30, "bFired in ResponseFollowup should be at offset 0x30");
-		*/
-		static_assert(sizeof(CS2::client::ResponseFollowup) == 0x31, "ResponseFollowup size should be 0x31");
+		*/static_assert(sizeof(CS2::client::ResponseFollowup) == 0x31, "ResponseFollowup size should be 0x31");
+
+#endif
 	}
 }

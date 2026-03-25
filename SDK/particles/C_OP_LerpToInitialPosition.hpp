@@ -33,11 +33,14 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_flScale; // 0x350 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionVecInput m_vecScale; // 0x4c0 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_LerpToInitialPosition should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_flInterpolation) == 0x1D8, "m_flInterpolation in C_OP_LerpToInitialPosition should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_nCacheField) == 0x348, "m_nCacheField in C_OP_LerpToInitialPosition should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_flScale) == 0x350, "m_flScale in C_OP_LerpToInitialPosition should be at offset 0x350");
 		static_assert(offsetof(CS2::particles::C_OP_LerpToInitialPosition, m_vecScale) == 0x4C0, "m_vecScale in C_OP_LerpToInitialPosition should be at offset 0x4C0");
 		static_assert(sizeof(CS2::particles::C_OP_LerpToInitialPosition) == 0xB78, "C_OP_LerpToInitialPosition size should be 0xB78");
+
+#endif
 	}
 }

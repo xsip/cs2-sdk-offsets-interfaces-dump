@@ -26,9 +26,12 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeCoordinateSpace m_DirectionSpace; // 0x390 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flTraceLength; // 0x3d0 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceInDirection, m_vTraceDirection) == 0x350, "m_vTraceDirection in CSmartPropOperation_TraceInDirection should be at offset 0x350");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceInDirection, m_DirectionSpace) == 0x390, "m_DirectionSpace in CSmartPropOperation_TraceInDirection should be at offset 0x390");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_TraceInDirection, m_flTraceLength) == 0x3D0, "m_flTraceLength in CSmartPropOperation_TraceInDirection should be at offset 0x3D0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_TraceInDirection) == 0x410, "CSmartPropOperation_TraceInDirection size should be 0x410");
+
+#endif
 	}
 }

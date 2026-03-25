@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			int32_t nTestStep; // 0x0 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding_CursorState_t, nTestStep) == 0x0, "nTestStep in CPulseCell_Test_MultiOutflow_WithParams_Yielding::CursorState_t should be at offset 0x0");
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Test_MultiOutflow_WithParams_Yielding_CursorState_t) == 0x4, "CPulseCell_Test_MultiOutflow_WithParams_Yielding::CursorState_t size should be 0x4");
+
+#endif
 	}
 }

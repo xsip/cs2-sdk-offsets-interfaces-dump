@@ -25,9 +25,12 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 flDistSqrToCenter; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::SoundOpvarTraceResult_t, vPos) == 0x0, "vPos in SoundOpvarTraceResult_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::SoundOpvarTraceResult_t, bDidHit) == 0xC, "bDidHit in SoundOpvarTraceResult_t should be at offset 0xC");
 		static_assert(offsetof(CS2::server::SoundOpvarTraceResult_t, flDistSqrToCenter) == 0x10, "flDistSqrToCenter in SoundOpvarTraceResult_t should be at offset 0x10");
 		static_assert(sizeof(CS2::server::SoundOpvarTraceResult_t) == 0x14, "SoundOpvarTraceResult_t size should be 0x14");
+
+#endif
 	}
 }

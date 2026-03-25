@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeFloat m_flBendPoint; // 0x1e0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flBendRadius; // 0x220 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_BendDeformer, m_bDeformationEnabled) == 0xA0, "m_bDeformationEnabled in CSmartPropElement_BendDeformer should be at offset 0xA0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_BendDeformer, m_vOrigin) == 0xE0, "m_vOrigin in CSmartPropElement_BendDeformer should be at offset 0xE0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_BendDeformer, m_vAngles) == 0x120, "m_vAngles in CSmartPropElement_BendDeformer should be at offset 0x120");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_BendDeformer, m_flBendPoint) == 0x1E0, "m_flBendPoint in CSmartPropElement_BendDeformer should be at offset 0x1E0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_BendDeformer, m_flBendRadius) == 0x220, "m_flBendRadius in CSmartPropElement_BendDeformer should be at offset 0x220");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_BendDeformer) == 0x260, "CSmartPropElement_BendDeformer size should be 0x260");
+
+#endif
 	}
 }

@@ -26,11 +26,14 @@ namespace CS2 {
 			float32 flSpringDamping; // 0xc | Schema_Builtin | Size: 0x4
 			float32 flNodeWeight0; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSpringIntegrator_t, nNode) == 0x0, "nNode in FeSpringIntegrator_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSpringIntegrator_t, flSpringRestLength) == 0x4, "flSpringRestLength in FeSpringIntegrator_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeSpringIntegrator_t, flSpringConstant) == 0x8, "flSpringConstant in FeSpringIntegrator_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeSpringIntegrator_t, flSpringDamping) == 0xC, "flSpringDamping in FeSpringIntegrator_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeSpringIntegrator_t, flNodeWeight0) == 0x10, "flNodeWeight0 in FeSpringIntegrator_t should be at offset 0x10");
 		static_assert(sizeof(CS2::physicslib::FeSpringIntegrator_t) == 0x14, "FeSpringIntegrator_t size should be 0x14");
+
+#endif
 	}
 }

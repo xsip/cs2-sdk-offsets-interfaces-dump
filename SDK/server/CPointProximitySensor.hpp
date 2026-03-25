@@ -33,9 +33,12 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_Distance; // 0x4b0 | Schema_Atomic | Size: 0x20
 			char m_Distance[0x20]; // 0x4b0 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointProximitySensor, m_bDisabled) == 0x4A8, "m_bDisabled in CPointProximitySensor should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointProximitySensor, m_hTargetEntity) == 0x4AC, "m_hTargetEntity in CPointProximitySensor should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CPointProximitySensor, m_Distance) == 0x4B0, "m_Distance in CPointProximitySensor should be at offset 0x4B0");
 		static_assert(sizeof(CS2::server::CPointProximitySensor) == 0x4D0, "CPointProximitySensor size should be 0x4D0");
+
+#endif
 	}
 }

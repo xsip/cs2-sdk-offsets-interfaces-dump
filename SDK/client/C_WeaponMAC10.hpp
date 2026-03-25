@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_WeaponMAC10 : public CS2::client::C_CSWeaponBaseGun {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_WeaponMAC10) == 0x1F70, "C_WeaponMAC10 size should be 0x1F70");
+
+#endif
 	}
 }

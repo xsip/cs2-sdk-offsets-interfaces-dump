@@ -30,11 +30,14 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg> m_Args; // 0xb8 | Schema_Atomic | Size: 0x10
 			char m_Args[0x10]; // 0xb8 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method, m_MethodName) == 0x80, "m_MethodName in CPulseCell_Inflow_Method should be at offset 0x80");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method, m_Description) == 0x90, "m_Description in CPulseCell_Inflow_Method should be at offset 0x90");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method, m_bIsPublic) == 0x98, "m_bIsPublic in CPulseCell_Inflow_Method should be at offset 0x98");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method, m_ReturnType) == 0xA0, "m_ReturnType in CPulseCell_Inflow_Method should be at offset 0xA0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method, m_Args) == 0xB8, "m_Args in CPulseCell_Inflow_Method should be at offset 0xB8");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Inflow_Method) == 0xC8, "CPulseCell_Inflow_Method size should be 0xC8");
+
+#endif
 	}
 }

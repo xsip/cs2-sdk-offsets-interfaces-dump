@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_flSeenTargetTime; // 0x10e4 | Schema_Builtin | Size: 0x4
 			client::C_PointClientUIWorldPanel* m_pTargetPanel; // 0x10e8 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_bBeenEnabled) == 0x10E0, "m_bBeenEnabled in CPointOffScreenIndicatorUi should be at offset 0x10E0");
 		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_bHide) == 0x10E1, "m_bHide in CPointOffScreenIndicatorUi should be at offset 0x10E1");
 		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_flSeenTargetTime) == 0x10E4, "m_flSeenTargetTime in CPointOffScreenIndicatorUi should be at offset 0x10E4");
 		static_assert(offsetof(CS2::client::CPointOffScreenIndicatorUi, m_pTargetPanel) == 0x10E8, "m_pTargetPanel in CPointOffScreenIndicatorUi should be at offset 0x10E8");
 		static_assert(sizeof(CS2::client::CPointOffScreenIndicatorUi) == 0x10F0, "CPointOffScreenIndicatorUi size should be 0x10F0");
+
+#endif
 	}
 }

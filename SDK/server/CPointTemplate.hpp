@@ -38,6 +38,7 @@ namespace CS2 {
 			GlobalTypes::HSCRIPT m_ScriptSpawnCallback; // 0x500 | Schema_Atomic | Size: 0x8
 			GlobalTypes::HSCRIPT m_ScriptCallbackScope; // 0x508 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointTemplate, m_iszWorldName) == 0x4A8, "m_iszWorldName in CPointTemplate should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointTemplate, m_iszSource2EntityLumpName) == 0x4B0, "m_iszSource2EntityLumpName in CPointTemplate should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPointTemplate, m_iszEntityFilterName) == 0x4B8, "m_iszEntityFilterName in CPointTemplate should be at offset 0x4B8");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointTemplate, m_ScriptSpawnCallback) == 0x500, "m_ScriptSpawnCallback in CPointTemplate should be at offset 0x500");
 		static_assert(offsetof(CS2::server::CPointTemplate, m_ScriptCallbackScope) == 0x508, "m_ScriptCallbackScope in CPointTemplate should be at offset 0x508");
 		static_assert(sizeof(CS2::server::CPointTemplate) == 0x510, "CPointTemplate size should be 0x510");
+
+#endif
 	}
 }

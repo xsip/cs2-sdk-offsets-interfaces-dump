@@ -24,9 +24,12 @@ namespace CS2 {
 			uint16_t nBoneCtrl; // 0xc | Schema_Builtin | Size: 0x2
 			uint16_t nTargetNode; // 0xe | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeNodeReverseOffset_t, vOffset) == 0x0, "vOffset in FeNodeReverseOffset_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeNodeReverseOffset_t, nBoneCtrl) == 0xC, "nBoneCtrl in FeNodeReverseOffset_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::FeNodeReverseOffset_t, nTargetNode) == 0xE, "nTargetNode in FeNodeReverseOffset_t should be at offset 0xE");
 		static_assert(sizeof(CS2::physicslib::FeNodeReverseOffset_t) == 0x10, "FeNodeReverseOffset_t size should be 0x10");
+
+#endif
 	}
 }

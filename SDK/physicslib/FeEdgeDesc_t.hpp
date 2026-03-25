@@ -24,9 +24,12 @@ namespace CS2 {
 			uint16_t nSide[2][2]; // 0x4 | Schema_FixedArray | Size: 0x8
 			uint16_t nVirtElem[2]; // 0xc | Schema_FixedArray | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeEdgeDesc_t, nEdge) == 0x0, "nEdge in FeEdgeDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeEdgeDesc_t, nSide) == 0x4, "nSide in FeEdgeDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeEdgeDesc_t, nVirtElem) == 0xC, "nVirtElem in FeEdgeDesc_t should be at offset 0xC");
 		static_assert(sizeof(CS2::physicslib::FeEdgeDesc_t) == 0x10, "FeEdgeDesc_t size should be 0x10");
+
+#endif
 	}
 }

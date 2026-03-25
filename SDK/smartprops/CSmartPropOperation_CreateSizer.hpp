@@ -42,6 +42,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_OutputVariableMinZ; // 0x3b8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_OutputVariableMaxZ; // 0x3c0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateSizer, m_Name) == 0x50, "m_Name in CSmartPropOperation_CreateSizer should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateSizer, m_bDisplayModel) == 0x58, "m_bDisplayModel in CSmartPropOperation_CreateSizer should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateSizer, m_flInitialMinX) == 0x98, "m_flInitialMinX in CSmartPropOperation_CreateSizer should be at offset 0x98");
@@ -63,5 +64,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateSizer, m_OutputVariableMinZ) == 0x3B8, "m_OutputVariableMinZ in CSmartPropOperation_CreateSizer should be at offset 0x3B8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_CreateSizer, m_OutputVariableMaxZ) == 0x3C0, "m_OutputVariableMaxZ in CSmartPropOperation_CreateSizer should be at offset 0x3C0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_CreateSizer) == 0x3C8, "CSmartPropOperation_CreateSizer size should be 0x3C8");
+
+#endif
 	}
 }

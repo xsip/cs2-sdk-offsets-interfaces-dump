@@ -25,9 +25,12 @@ namespace CS2 {
 			pulse_runtime_lib::PulseDocNodeID_t m_nValueNodeID; // 0x4 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::CGlobalSymbol m_SequencePointName; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InstructionDebug, m_nFlowNodeID) == 0x0, "m_nFlowNodeID in CPulse_InstructionDebug should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InstructionDebug, m_nValueNodeID) == 0x4, "m_nValueNodeID in CPulse_InstructionDebug should be at offset 0x4");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_InstructionDebug, m_SequencePointName) == 0x8, "m_SequencePointName in CPulse_InstructionDebug should be at offset 0x8");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_InstructionDebug) == 0x10, "CPulse_InstructionDebug size should be 0x10");
+
+#endif
 	}
 }

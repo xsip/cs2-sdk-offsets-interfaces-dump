@@ -29,6 +29,7 @@ namespace CS2 {
 			modellib::RenderSlotType_t m_nSlotType; // 0x2b | Schema_DeclaredEnum | Size: 0x1
 			char m_szShaderSemantic[32]; // 0x2c | Schema_FixedArray | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::RenderInputLayoutField_t, m_pSemanticName) == 0x0, "m_pSemanticName in RenderInputLayoutField_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::RenderInputLayoutField_t, m_nSemanticIndex) == 0x20, "m_nSemanticIndex in RenderInputLayoutField_t should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::RenderInputLayoutField_t, m_nOffset) == 0x28, "m_nOffset in RenderInputLayoutField_t should be at offset 0x28");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::RenderInputLayoutField_t, m_nSlotType) == 0x2B, "m_nSlotType in RenderInputLayoutField_t should be at offset 0x2B");
 		static_assert(offsetof(CS2::modellib::RenderInputLayoutField_t, m_szShaderSemantic) == 0x2C, "m_szShaderSemantic in RenderInputLayoutField_t should be at offset 0x2C");
 		static_assert(sizeof(CS2::modellib::RenderInputLayoutField_t) == 0x4C, "RenderInputLayoutField_t size should be 0x4C");
+
+#endif
 	}
 }

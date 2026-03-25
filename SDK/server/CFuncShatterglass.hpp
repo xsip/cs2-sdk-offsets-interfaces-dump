@@ -57,6 +57,7 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterialDamageBase; // 0x858 | Schema_Atomic | Size: 0x8
 			char m_hMaterialDamageBase[0x8]; // 0x858 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncShatterglass, m_matPanelTransform) == 0x730, "m_matPanelTransform in CFuncShatterglass should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncShatterglass, m_matPanelTransformWsTemp) == 0x760, "m_matPanelTransformWsTemp in CFuncShatterglass should be at offset 0x760");
 		static_assert(offsetof(CS2::server::CFuncShatterglass, m_vecShatterGlassShards) == 0x790, "m_vecShatterGlassShards in CFuncShatterglass should be at offset 0x790");
@@ -84,5 +85,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncShatterglass, m_iSurfaceType) == 0x850, "m_iSurfaceType in CFuncShatterglass should be at offset 0x850");
 		static_assert(offsetof(CS2::server::CFuncShatterglass, m_hMaterialDamageBase) == 0x858, "m_hMaterialDamageBase in CFuncShatterglass should be at offset 0x858");
 		static_assert(sizeof(CS2::server::CFuncShatterglass) == 0x860, "CFuncShatterglass size should be 0x860");
+
+#endif
 	}
 }

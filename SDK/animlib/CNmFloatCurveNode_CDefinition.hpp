@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x6);
 			GlobalTypes::CPiecewiseCurve m_curve; // 0x18 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmFloatCurveNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveNode_CDefinition, m_curve) == 0x18, "m_curve in CNmFloatCurveNode::CDefinition should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmFloatCurveNode_CDefinition) == 0x58, "CNmFloatCurveNode::CDefinition size should be 0x58");
+
+#endif
 	}
 }

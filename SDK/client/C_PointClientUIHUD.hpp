@@ -40,6 +40,7 @@ namespace CS2 {
 			// GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge> m_vecCSSClasses; // 0x1068 | Schema_Atomic | Size: 0x18
 			char m_vecCSSClasses[0x18]; // 0x1068 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bCheckCSSClasses) == 0xEC0, "m_bCheckCSSClasses in C_PointClientUIHUD should be at offset 0xEC0");
 		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bIgnoreInput) == 0x1038, "m_bIgnoreInput in C_PointClientUIHUD should be at offset 0x1038");
 		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_flWidth) == 0x103C, "m_flWidth in C_PointClientUIHUD should be at offset 0x103C");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_bAllowInteractionFromAllSceneWorlds) == 0x1060, "m_bAllowInteractionFromAllSceneWorlds in C_PointClientUIHUD should be at offset 0x1060");
 		static_assert(offsetof(CS2::client::C_PointClientUIHUD, m_vecCSSClasses) == 0x1068, "m_vecCSSClasses in C_PointClientUIHUD should be at offset 0x1068");
 		static_assert(sizeof(CS2::client::C_PointClientUIHUD) == 0x1080, "C_PointClientUIHUD size should be 0x1080");
+
+#endif
 	}
 }

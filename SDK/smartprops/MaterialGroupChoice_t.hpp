@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeMaterialGroup m_MaterialGroupName; // 0x0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flWeight; // 0x40 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::MaterialGroupChoice_t, m_MaterialGroupName) == 0x0, "m_MaterialGroupName in MaterialGroupChoice_t should be at offset 0x0");
 		static_assert(offsetof(CS2::smartprops::MaterialGroupChoice_t, m_flWeight) == 0x40, "m_flWeight in MaterialGroupChoice_t should be at offset 0x40");
 		static_assert(sizeof(CS2::smartprops::MaterialGroupChoice_t) == 0x80, "MaterialGroupChoice_t size should be 0x80");
+
+#endif
 	}
 }

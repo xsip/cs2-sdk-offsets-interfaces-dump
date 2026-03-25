@@ -27,9 +27,12 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeCoordinateSpace m_CoordinateSpace; // 0x90 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CUtlString m_VariableName; // 0xd0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SaveDirection, m_DirectionVector) == 0x50, "m_DirectionVector in CSmartPropOperation_SaveDirection should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SaveDirection, m_CoordinateSpace) == 0x90, "m_CoordinateSpace in CSmartPropOperation_SaveDirection should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SaveDirection, m_VariableName) == 0xD0, "m_VariableName in CSmartPropOperation_SaveDirection should be at offset 0xD0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_SaveDirection) == 0xD8, "CSmartPropOperation_SaveDirection size should be 0xD8");
+
+#endif
 	}
 }

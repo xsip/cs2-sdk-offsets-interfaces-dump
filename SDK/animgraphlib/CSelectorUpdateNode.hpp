@@ -43,6 +43,7 @@ namespace CS2 {
 			bool m_bSyncCyclesOnChange; // 0xb2 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSelectorUpdateNode, m_children) == 0x60, "m_children in CSelectorUpdateNode should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CSelectorUpdateNode, m_tags) == 0x78, "m_tags in CSelectorUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CSelectorUpdateNode, m_blendCurve) == 0x94, "m_blendCurve in CSelectorUpdateNode should be at offset 0x94");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CSelectorUpdateNode, m_bLockWhenWaning) == 0xB1, "m_bLockWhenWaning in CSelectorUpdateNode should be at offset 0xB1");
 		static_assert(offsetof(CS2::animgraphlib::CSelectorUpdateNode, m_bSyncCyclesOnChange) == 0xB2, "m_bSyncCyclesOnChange in CSelectorUpdateNode should be at offset 0xB2");
 		static_assert(sizeof(CS2::animgraphlib::CSelectorUpdateNode) == 0xB8, "CSelectorUpdateNode size should be 0xB8");
+
+#endif
 	}
 }

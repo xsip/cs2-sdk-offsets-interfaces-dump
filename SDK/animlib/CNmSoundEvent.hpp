@@ -34,6 +34,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flDurationInterruptionThreshold; // 0x4c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_relevance) == 0x20, "m_relevance in CNmSoundEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_name) == 0x28, "m_name in CNmSoundEvent should be at offset 0x28");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_position) == 0x30, "m_position in CNmSoundEvent should be at offset 0x30");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_bContinuePlayingSoundAtDurationEnd) == 0x48, "m_bContinuePlayingSoundAtDurationEnd in CNmSoundEvent should be at offset 0x48");
 		static_assert(offsetof(CS2::animlib::CNmSoundEvent, m_flDurationInterruptionThreshold) == 0x4C, "m_flDurationInterruptionThreshold in CNmSoundEvent should be at offset 0x4C");
 		static_assert(sizeof(CS2::animlib::CNmSoundEvent) == 0x50, "CNmSoundEvent size should be 0x50");
+
+#endif
 	}
 }

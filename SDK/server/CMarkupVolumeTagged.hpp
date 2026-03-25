@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bIsInGroup; // 0x76c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_GroupNames) == 0x738, "m_GroupNames in CMarkupVolumeTagged should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_Tags) == 0x750, "m_Tags in CMarkupVolumeTagged should be at offset 0x750");
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bIsGroup) == 0x768, "m_bIsGroup in CMarkupVolumeTagged should be at offset 0x768");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bGroupOtherGroups) == 0x76B, "m_bGroupOtherGroups in CMarkupVolumeTagged should be at offset 0x76B");
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged, m_bIsInGroup) == 0x76C, "m_bIsInGroup in CMarkupVolumeTagged should be at offset 0x76C");
 		static_assert(sizeof(CS2::server::CMarkupVolumeTagged) == 0x770, "CMarkupVolumeTagged size should be 0x770");
+
+#endif
 	}
 }

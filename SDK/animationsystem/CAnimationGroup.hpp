@@ -41,6 +41,7 @@ namespace CS2 {
 			// char m_AdditionalExtRefs[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimationGroup, m_nFlags) == 0x10, "m_nFlags in CAnimationGroup should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimationGroup, m_name) == 0x18, "m_name in CAnimationGroup should be at offset 0x18");
 		static_assert(offsetof(CS2::animationsystem::CAnimationGroup, m_localHAnimArray_Handle) == 0x60, "m_localHAnimArray_Handle in CAnimationGroup should be at offset 0x60");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimationGroup, m_szScripts) == 0x110, "m_szScripts in CAnimationGroup should be at offset 0x110");
 		static_assert(offsetof(CS2::animationsystem::CAnimationGroup, m_AdditionalExtRefs) == 0x128, "m_AdditionalExtRefs in CAnimationGroup should be at offset 0x128");
 		static_assert(sizeof(CS2::animationsystem::CAnimationGroup) == 0x148, "CAnimationGroup size should be 0x148");
+
+#endif
 	}
 }

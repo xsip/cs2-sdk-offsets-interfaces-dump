@@ -49,6 +49,7 @@ namespace CS2 {
 			int32_t m_nTintCP; // 0xca0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Color m_clrTint; // 0xca4 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CParticleSystem, m_szSnapshotFileName) == 0x730, "m_szSnapshotFileName in CParticleSystem should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CParticleSystem, m_bActive) == 0x930, "m_bActive in CParticleSystem should be at offset 0x930");
 		static_assert(offsetof(CS2::server::CParticleSystem, m_bFrozen) == 0x931, "m_bFrozen in CParticleSystem should be at offset 0x931");
@@ -72,5 +73,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CParticleSystem, m_nTintCP) == 0xCA0, "m_nTintCP in CParticleSystem should be at offset 0xCA0");
 		static_assert(offsetof(CS2::server::CParticleSystem, m_clrTint) == 0xCA4, "m_clrTint in CParticleSystem should be at offset 0xCA4");
 		static_assert(sizeof(CS2::server::CParticleSystem) == 0xCA8, "CParticleSystem size should be 0xCA8");
+
+#endif
 	}
 }

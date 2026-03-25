@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bOverrideOnAppend; // 0x34 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CResponseCriteriaSet, m_nNumPrefixedContexts) == 0x30, "m_nNumPrefixedContexts in CResponseCriteriaSet should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CResponseCriteriaSet, m_bOverrideOnAppend) == 0x34, "m_bOverrideOnAppend in CResponseCriteriaSet should be at offset 0x34");
 		static_assert(sizeof(CS2::client::CResponseCriteriaSet) == 0x38, "CResponseCriteriaSet size should be 0x38");
+
+#endif
 	}
 }

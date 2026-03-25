@@ -37,6 +37,7 @@ namespace CS2 {
 			float32 m_flGridSpacing; // 0xa10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_VectorFieldSnapshot should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nAttributeToWrite) == 0x1D4, "m_nAttributeToWrite in C_OP_VectorFieldSnapshot should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_nLocalSpaceCP) == 0x1D8, "m_nLocalSpaceCP in C_OP_VectorFieldSnapshot should be at offset 0x1D8");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_bLockToSurface) == 0xA0D, "m_bLockToSurface in C_OP_VectorFieldSnapshot should be at offset 0xA0D");
 		static_assert(offsetof(CS2::particles::C_OP_VectorFieldSnapshot, m_flGridSpacing) == 0xA10, "m_flGridSpacing in C_OP_VectorFieldSnapshot should be at offset 0xA10");
 		static_assert(sizeof(CS2::particles::C_OP_VectorFieldSnapshot) == 0xA18, "C_OP_VectorFieldSnapshot size should be 0xA18");
+
+#endif
 	}
 }

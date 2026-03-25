@@ -29,9 +29,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animgraphlib::CDirectPlaybackTagData> m_allTags; // 0x78 | Schema_Atomic | Size: 0x18
 			// char m_allTags[0x18]; // 0x78 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CDirectPlaybackUpdateNode, m_bFinishEarly) == 0x74, "m_bFinishEarly in CDirectPlaybackUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CDirectPlaybackUpdateNode, m_bResetOnFinish) == 0x75, "m_bResetOnFinish in CDirectPlaybackUpdateNode should be at offset 0x75");
 		static_assert(offsetof(CS2::animgraphlib::CDirectPlaybackUpdateNode, m_allTags) == 0x78, "m_allTags in CDirectPlaybackUpdateNode should be at offset 0x78");
 		static_assert(sizeof(CS2::animgraphlib::CDirectPlaybackUpdateNode) == 0x90, "CDirectPlaybackUpdateNode size should be 0x90");
+
+#endif
 	}
 }

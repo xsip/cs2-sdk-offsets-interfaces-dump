@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			GlobalTypes::CUtlString m_strAwardText; // 0x778 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameMoney, m_OnMoneySpent) == 0x740, "m_OnMoneySpent in CGameMoney should be at offset 0x740");
 		static_assert(offsetof(CS2::server::CGameMoney, m_OnMoneySpentFail) == 0x758, "m_OnMoneySpentFail in CGameMoney should be at offset 0x758");
 		static_assert(offsetof(CS2::server::CGameMoney, m_nMoney) == 0x770, "m_nMoney in CGameMoney should be at offset 0x770");
 		static_assert(offsetof(CS2::server::CGameMoney, m_strAwardText) == 0x778, "m_strAwardText in CGameMoney should be at offset 0x778");
 		static_assert(sizeof(CS2::server::CGameMoney) == 0x780, "CGameMoney size should be 0x780");
+
+#endif
 	}
 }

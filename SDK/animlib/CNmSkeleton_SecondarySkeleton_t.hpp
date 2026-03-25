@@ -24,8 +24,11 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCNmSkeleton> m_skeleton; // 0x8 | Schema_Atomic | Size: 0x8
 			char m_skeleton[0x8]; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmSkeleton_SecondarySkeleton_t, m_attachToBoneID) == 0x0, "m_attachToBoneID in CNmSkeleton::SecondarySkeleton_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmSkeleton_SecondarySkeleton_t, m_skeleton) == 0x8, "m_skeleton in CNmSkeleton::SecondarySkeleton_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::CNmSkeleton_SecondarySkeleton_t) == 0x10, "CNmSkeleton::SecondarySkeleton_t size should be 0x10");
+
+#endif
 	}
 }

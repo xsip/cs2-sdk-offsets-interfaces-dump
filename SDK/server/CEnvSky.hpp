@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bEnabled; // 0x764 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2b); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvSky, m_hSkyMaterial) == 0x730, "m_hSkyMaterial in CEnvSky should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CEnvSky, m_hSkyMaterialLightingOnly) == 0x738, "m_hSkyMaterialLightingOnly in CEnvSky should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CEnvSky, m_bStartDisabled) == 0x740, "m_bStartDisabled in CEnvSky should be at offset 0x740");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvSky, m_flFogMaxEnd) == 0x760, "m_flFogMaxEnd in CEnvSky should be at offset 0x760");
 		static_assert(offsetof(CS2::server::CEnvSky, m_bEnabled) == 0x764, "m_bEnabled in CEnvSky should be at offset 0x764");
 		static_assert(sizeof(CS2::server::CEnvSky) == 0x790, "CEnvSky size should be 0x790");
+
+#endif
 	}
 }

@@ -36,6 +36,7 @@ namespace CS2 {
 			int32_t m_nVBIBBlock; // 0x68 | Schema_Builtin | Size: 0x4
 			int32_t m_nToolsVBBlock; // 0x6c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::ModelEmbeddedMesh_t, m_Name) == 0x0, "m_Name in ModelEmbeddedMesh_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::ModelEmbeddedMesh_t, m_nMeshIndex) == 0x10, "m_nMeshIndex in ModelEmbeddedMesh_t should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::ModelEmbeddedMesh_t, m_nDataBlock) == 0x14, "m_nDataBlock in ModelEmbeddedMesh_t should be at offset 0x14");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::ModelEmbeddedMesh_t, m_nVBIBBlock) == 0x68, "m_nVBIBBlock in ModelEmbeddedMesh_t should be at offset 0x68");
 		static_assert(offsetof(CS2::modellib::ModelEmbeddedMesh_t, m_nToolsVBBlock) == 0x6C, "m_nToolsVBBlock in ModelEmbeddedMesh_t should be at offset 0x6C");
 		static_assert(sizeof(CS2::modellib::ModelEmbeddedMesh_t) == 0x70, "ModelEmbeddedMesh_t size should be 0x70");
+
+#endif
 	}
 }

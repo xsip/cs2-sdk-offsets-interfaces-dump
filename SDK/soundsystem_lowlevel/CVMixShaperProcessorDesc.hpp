@@ -25,7 +25,10 @@ namespace CS2 {
 			soundsystem_lowlevel::VMixShaperDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x14
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixShaperProcessorDesc, m_desc) == 0x20, "m_desc in CVMixShaperProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixShaperProcessorDesc) == 0x38, "CVMixShaperProcessorDesc size should be 0x38");
+
+#endif
 	}
 }

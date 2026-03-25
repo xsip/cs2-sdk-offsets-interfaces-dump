@@ -68,6 +68,7 @@ namespace CS2 {
 			bool m_bListenedTo; // 0xaf0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszPreCommands) == 0xA20, "m_iszPreCommands in CPointCommentaryNode should be at offset 0xA20");
 		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszPostCommands) == 0xA28, "m_iszPostCommands in CPointCommentaryNode should be at offset 0xA28");
 		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iszCommentaryFile) == 0xA30, "m_iszCommentaryFile in CPointCommentaryNode should be at offset 0xA30");
@@ -99,5 +100,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_iNodeNumberMax) == 0xAEC, "m_iNodeNumberMax in CPointCommentaryNode should be at offset 0xAEC");
 		static_assert(offsetof(CS2::server::CPointCommentaryNode, m_bListenedTo) == 0xAF0, "m_bListenedTo in CPointCommentaryNode should be at offset 0xAF0");
 		static_assert(sizeof(CS2::server::CPointCommentaryNode) == 0xB00, "CPointCommentaryNode size should be 0xB00");
+
+#endif
 	}
 }

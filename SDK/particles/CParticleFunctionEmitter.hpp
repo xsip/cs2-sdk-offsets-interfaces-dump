@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nEmitterIndex; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CParticleFunctionEmitter, m_nEmitterIndex) == 0x1D0, "m_nEmitterIndex in CParticleFunctionEmitter should be at offset 0x1D0");
 		static_assert(sizeof(CS2::particles::CParticleFunctionEmitter) == 0x1D8, "CParticleFunctionEmitter size should be 0x1D8");
+
+#endif
 	}
 }

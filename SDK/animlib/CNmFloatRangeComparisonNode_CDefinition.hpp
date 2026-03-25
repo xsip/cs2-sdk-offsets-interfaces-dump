@@ -26,9 +26,12 @@ namespace CS2 {
 			bool m_bIsInclusiveCheck; // 0x1a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatRangeComparisonNode_CDefinition, m_range) == 0x10, "m_range in CNmFloatRangeComparisonNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatRangeComparisonNode_CDefinition, m_nInputValueNodeIdx) == 0x18, "m_nInputValueNodeIdx in CNmFloatRangeComparisonNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmFloatRangeComparisonNode_CDefinition, m_bIsInclusiveCheck) == 0x1A, "m_bIsInclusiveCheck in CNmFloatRangeComparisonNode::CDefinition should be at offset 0x1A");
 		static_assert(sizeof(CS2::animlib::CNmFloatRangeComparisonNode_CDefinition) == 0x20, "CNmFloatRangeComparisonNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

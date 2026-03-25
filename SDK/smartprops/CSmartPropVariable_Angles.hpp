@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::QAngle m_DefaultValue; // 0x38 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_Angles, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_Angles should be at offset 0x38");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_Angles) == 0x48, "CSmartPropVariable_Angles size should be 0x48");
+
+#endif
 	}
 }

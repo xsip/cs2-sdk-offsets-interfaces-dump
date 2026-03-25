@@ -28,10 +28,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionFloatInput m_flResetRate; // 0x1e8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToRandomActiveCP, m_nCP1) == 0x1D8, "m_nCP1 in C_OP_SetControlPointPositionToRandomActiveCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToRandomActiveCP, m_nHeadLocationMin) == 0x1DC, "m_nHeadLocationMin in C_OP_SetControlPointPositionToRandomActiveCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToRandomActiveCP, m_nHeadLocationMax) == 0x1E0, "m_nHeadLocationMax in C_OP_SetControlPointPositionToRandomActiveCP should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToRandomActiveCP, m_flResetRate) == 0x1E8, "m_flResetRate in C_OP_SetControlPointPositionToRandomActiveCP should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointPositionToRandomActiveCP) == 0x358, "C_OP_SetControlPointPositionToRandomActiveCP size should be 0x358");
+
+#endif
 	}
 }

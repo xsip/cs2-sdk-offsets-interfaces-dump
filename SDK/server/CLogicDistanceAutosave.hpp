@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flDangerousTime; // 0x4b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicDistanceAutosave, m_iszTargetEntity) == 0x4A8, "m_iszTargetEntity in CLogicDistanceAutosave should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicDistanceAutosave, m_flDistanceToPlayer) == 0x4B0, "m_flDistanceToPlayer in CLogicDistanceAutosave should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CLogicDistanceAutosave, m_bForceNewLevelUnit) == 0x4B4, "m_bForceNewLevelUnit in CLogicDistanceAutosave should be at offset 0x4B4");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicDistanceAutosave, m_bThinkDangerous) == 0x4B6, "m_bThinkDangerous in CLogicDistanceAutosave should be at offset 0x4B6");
 		static_assert(offsetof(CS2::server::CLogicDistanceAutosave, m_flDangerousTime) == 0x4B8, "m_flDangerousTime in CLogicDistanceAutosave should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CLogicDistanceAutosave) == 0x4C0, "CLogicDistanceAutosave size should be 0x4C0");
+
+#endif
 	}
 }

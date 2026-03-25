@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bTestYesOrNoPath; // 0x158 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseGraphInstance_TestDomain, m_bIsRunningUnitTests) == 0x130, "m_bIsRunningUnitTests in CPulseGraphInstance_TestDomain should be at offset 0x130");
 		static_assert(offsetof(CS2::pulse_system::CPulseGraphInstance_TestDomain, m_bExplicitTimeStepping) == 0x131, "m_bExplicitTimeStepping in CPulseGraphInstance_TestDomain should be at offset 0x131");
 		static_assert(offsetof(CS2::pulse_system::CPulseGraphInstance_TestDomain, m_bExpectingToDestroyWithYieldedCursors) == 0x132, "m_bExpectingToDestroyWithYieldedCursors in CPulseGraphInstance_TestDomain should be at offset 0x132");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::pulse_system::CPulseGraphInstance_TestDomain, m_Tracepoints) == 0x140, "m_Tracepoints in CPulseGraphInstance_TestDomain should be at offset 0x140");
 		static_assert(offsetof(CS2::pulse_system::CPulseGraphInstance_TestDomain, m_bTestYesOrNoPath) == 0x158, "m_bTestYesOrNoPath in CPulseGraphInstance_TestDomain should be at offset 0x158");
 		static_assert(sizeof(CS2::pulse_system::CPulseGraphInstance_TestDomain) == 0x160, "CPulseGraphInstance_TestDomain size should be 0x160");
+
+#endif
 	}
 }

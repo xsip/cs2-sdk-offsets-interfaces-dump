@@ -33,10 +33,13 @@ namespace CS2 {
 			bool m_bResetChild; // 0xc8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFootPinningUpdateNode, m_poseOpFixedData) == 0x78, "m_poseOpFixedData in CFootPinningUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CFootPinningUpdateNode, m_eTimingSource) == 0xA8, "m_eTimingSource in CFootPinningUpdateNode should be at offset 0xA8");
 		static_assert(offsetof(CS2::animgraphlib::CFootPinningUpdateNode, m_params) == 0xB0, "m_params in CFootPinningUpdateNode should be at offset 0xB0");
 		static_assert(offsetof(CS2::animgraphlib::CFootPinningUpdateNode, m_bResetChild) == 0xC8, "m_bResetChild in CFootPinningUpdateNode should be at offset 0xC8");
 		static_assert(sizeof(CS2::animgraphlib::CFootPinningUpdateNode) == 0xD0, "CFootPinningUpdateNode size should be 0xD0");
+
+#endif
 	}
 }

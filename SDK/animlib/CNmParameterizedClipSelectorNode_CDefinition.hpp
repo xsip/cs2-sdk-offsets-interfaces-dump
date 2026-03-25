@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bHasWeightsSet; // 0x3b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmParameterizedClipSelectorNode_CDefinition, m_optionNodeIndices) == 0x10, "m_optionNodeIndices in CNmParameterizedClipSelectorNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedClipSelectorNode_CDefinition, m_optionWeights) == 0x28, "m_optionWeights in CNmParameterizedClipSelectorNode::CDefinition should be at offset 0x28");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedClipSelectorNode_CDefinition, m_parameterNodeIdx) == 0x38, "m_parameterNodeIdx in CNmParameterizedClipSelectorNode::CDefinition should be at offset 0x38");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedClipSelectorNode_CDefinition, m_bIgnoreInvalidOptions) == 0x3A, "m_bIgnoreInvalidOptions in CNmParameterizedClipSelectorNode::CDefinition should be at offset 0x3A");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedClipSelectorNode_CDefinition, m_bHasWeightsSet) == 0x3B, "m_bHasWeightsSet in CNmParameterizedClipSelectorNode::CDefinition should be at offset 0x3B");
 		static_assert(sizeof(CS2::animlib::CNmParameterizedClipSelectorNode_CDefinition) == 0x40, "CNmParameterizedClipSelectorNode::CDefinition size should be 0x40");
+
+#endif
 	}
 }

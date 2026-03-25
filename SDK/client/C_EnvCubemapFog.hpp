@@ -45,6 +45,7 @@ namespace CS2 {
 			bool m_bFirstTime; // 0x651 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EnvCubemapFog, m_flEndDistance) == 0x608, "m_flEndDistance in C_EnvCubemapFog should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_EnvCubemapFog, m_flStartDistance) == 0x60C, "m_flStartDistance in C_EnvCubemapFog should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::C_EnvCubemapFog, m_flFogFalloffExponent) == 0x610, "m_flFogFalloffExponent in C_EnvCubemapFog should be at offset 0x610");
@@ -64,5 +65,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EnvCubemapFog, m_bHasHeightFogEnd) == 0x650, "m_bHasHeightFogEnd in C_EnvCubemapFog should be at offset 0x650");
 		static_assert(offsetof(CS2::client::C_EnvCubemapFog, m_bFirstTime) == 0x651, "m_bFirstTime in C_EnvCubemapFog should be at offset 0x651");
 		static_assert(sizeof(CS2::client::C_EnvCubemapFog) == 0x658, "C_EnvCubemapFog size should be 0x658");
+
+#endif
 	}
 }

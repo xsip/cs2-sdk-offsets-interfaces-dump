@@ -152,6 +152,7 @@ namespace CS2 {
 			bool m_bFireBulletsSeedSynchronized; // 0xa21 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7e); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerController, m_pInGameMoneyServices) == 0x7D8, "m_pInGameMoneyServices in CCSPlayerController should be at offset 0x7D8");
 		static_assert(offsetof(CS2::server::CCSPlayerController, m_pInventoryServices) == 0x7E0, "m_pInventoryServices in CCSPlayerController should be at offset 0x7E0");
 		static_assert(offsetof(CS2::server::CCSPlayerController, m_pActionTrackingServices) == 0x7E8, "m_pActionTrackingServices in CCSPlayerController should be at offset 0x7E8");
@@ -245,5 +246,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerController, m_nNonSuspiciousHitStreak) == 0x97C, "m_nNonSuspiciousHitStreak in CCSPlayerController should be at offset 0x97C");
 		static_assert(offsetof(CS2::server::CCSPlayerController, m_bFireBulletsSeedSynchronized) == 0xA21, "m_bFireBulletsSeedSynchronized in CCSPlayerController should be at offset 0xA21");
 		static_assert(sizeof(CS2::server::CCSPlayerController) == 0xAA0, "CCSPlayerController size should be 0xAA0");
+
+#endif
 	}
 }

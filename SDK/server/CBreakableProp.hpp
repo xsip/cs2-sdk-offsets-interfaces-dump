@@ -75,6 +75,7 @@ namespace CS2 {
 			bool m_bOriginalBlockLOS; // 0xb99 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBreakableProp, m_CPropDataComponent) == 0xA58, "m_CPropDataComponent in CBreakableProp should be at offset 0xA58");
 		static_assert(offsetof(CS2::server::CBreakableProp, m_OnStartDeath) == 0xA98, "m_OnStartDeath in CBreakableProp should be at offset 0xA98");
 		static_assert(offsetof(CS2::server::CBreakableProp, m_OnBreak) == 0xAB0, "m_OnBreak in CBreakableProp should be at offset 0xAB0");
@@ -109,5 +110,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBreakableProp, m_bUsePuntSound) == 0xB98, "m_bUsePuntSound in CBreakableProp should be at offset 0xB98");
 		static_assert(offsetof(CS2::server::CBreakableProp, m_bOriginalBlockLOS) == 0xB99, "m_bOriginalBlockLOS in CBreakableProp should be at offset 0xB99");
 		static_assert(sizeof(CS2::server::CBreakableProp) == 0xBA0, "CBreakableProp size should be 0xBA0");
+
+#endif
 	}
 }

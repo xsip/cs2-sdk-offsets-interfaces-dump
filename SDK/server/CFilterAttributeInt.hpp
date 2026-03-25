@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_sAttributeName; // 0x4e0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFilterAttributeInt, m_sAttributeName) == 0x4E0, "m_sAttributeName in CFilterAttributeInt should be at offset 0x4E0");
 		static_assert(sizeof(CS2::server::CFilterAttributeInt) == 0x4E8, "CFilterAttributeInt size should be 0x4E8");
+
+#endif
 	}
 }

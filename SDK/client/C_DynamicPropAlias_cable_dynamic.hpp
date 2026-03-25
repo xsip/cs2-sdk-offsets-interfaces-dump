@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_DynamicPropAlias_cable_dynamic : public CS2::client::C_DynamicProp {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_DynamicPropAlias_cable_dynamic) == 0x13A0, "C_DynamicPropAlias_cable_dynamic size should be 0x13A0");
+
+#endif
 	}
 }

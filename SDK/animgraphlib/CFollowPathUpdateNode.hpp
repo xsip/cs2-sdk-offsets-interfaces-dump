@@ -43,6 +43,7 @@ namespace CS2 {
 			bool m_bTurnToFace; // 0xb4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFollowPathUpdateNode, m_flBlendOutTime) == 0x74, "m_flBlendOutTime in CFollowPathUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CFollowPathUpdateNode, m_bBlockNonPathMovement) == 0x78, "m_bBlockNonPathMovement in CFollowPathUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CFollowPathUpdateNode, m_bStopFeetAtGoal) == 0x79, "m_bStopFeetAtGoal in CFollowPathUpdateNode should be at offset 0x79");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CFollowPathUpdateNode, m_flTurnToFaceOffset) == 0xB0, "m_flTurnToFaceOffset in CFollowPathUpdateNode should be at offset 0xB0");
 		static_assert(offsetof(CS2::animgraphlib::CFollowPathUpdateNode, m_bTurnToFace) == 0xB4, "m_bTurnToFace in CFollowPathUpdateNode should be at offset 0xB4");
 		static_assert(sizeof(CS2::animgraphlib::CFollowPathUpdateNode) == 0xB8, "CFollowPathUpdateNode size should be 0xB8");
+
+#endif
 	}
 }

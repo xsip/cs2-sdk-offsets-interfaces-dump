@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bLoop; // 0x54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraph, m_paramSpans) == 0x10, "m_paramSpans in CMotionGraph should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraph, m_tags) == 0x28, "m_tags in CMotionGraph should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraph, m_pRootNode) == 0x40, "m_pRootNode in CMotionGraph should be at offset 0x40");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraph, m_nConfigCount) == 0x50, "m_nConfigCount in CMotionGraph should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CMotionGraph, m_bLoop) == 0x54, "m_bLoop in CMotionGraph should be at offset 0x54");
 		static_assert(sizeof(CS2::animgraphlib::CMotionGraph) == 0x58, "CMotionGraph size should be 0x58");
+
+#endif
 	}
 }

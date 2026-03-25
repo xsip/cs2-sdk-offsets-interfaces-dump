@@ -32,9 +32,12 @@ namespace CS2 {
 			S2_PAD(0x18);
 			entity2::CScriptComponent* m_CScriptComponent; // 0x30 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::entity2::CEntityInstance, m_iszPrivateVScripts) == 0x8, "m_iszPrivateVScripts in CEntityInstance should be at offset 0x8");
 		static_assert(offsetof(CS2::entity2::CEntityInstance, m_pEntity) == 0x10, "m_pEntity in CEntityInstance should be at offset 0x10");
 		static_assert(offsetof(CS2::entity2::CEntityInstance, m_CScriptComponent) == 0x30, "m_CScriptComponent in CEntityInstance should be at offset 0x30");
 		static_assert(sizeof(CS2::entity2::CEntityInstance) == 0x38, "CEntityInstance size should be 0x38");
+
+#endif
 	}
 }

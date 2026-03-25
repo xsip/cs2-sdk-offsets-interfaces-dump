@@ -56,6 +56,7 @@ namespace CS2 {
 			// char m_modelSpaceBoneSamplingIndices[0x18]; // 0x220 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmClip, m_skeleton) == 0x0, "m_skeleton in CNmClip should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmClip, m_nNumFrames) == 0x8, "m_nNumFrames in CNmClip should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::CNmClip, m_flDuration) == 0xC, "m_flDuration in CNmClip should be at offset 0xC");
@@ -73,5 +74,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmClip, m_modelSpaceSamplingChain) == 0x208, "m_modelSpaceSamplingChain in CNmClip should be at offset 0x208");
 		static_assert(offsetof(CS2::animlib::CNmClip, m_modelSpaceBoneSamplingIndices) == 0x220, "m_modelSpaceBoneSamplingIndices in CNmClip should be at offset 0x220");
 		static_assert(sizeof(CS2::animlib::CNmClip) == 0x240, "CNmClip size should be 0x240");
+
+#endif
 	}
 }

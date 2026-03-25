@@ -29,10 +29,13 @@ namespace CS2 {
 			animlib::NmTransitionRuleCondition_t m_ruleCondition; // 0x1e | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTransitionEventConditionNode_CDefinition, m_requireRuleID) == 0x10, "m_requireRuleID in CNmTransitionEventConditionNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmTransitionEventConditionNode_CDefinition, m_eventConditionRules) == 0x18, "m_eventConditionRules in CNmTransitionEventConditionNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmTransitionEventConditionNode_CDefinition, m_nSourceStateNodeIdx) == 0x1C, "m_nSourceStateNodeIdx in CNmTransitionEventConditionNode::CDefinition should be at offset 0x1C");
 		static_assert(offsetof(CS2::animlib::CNmTransitionEventConditionNode_CDefinition, m_ruleCondition) == 0x1E, "m_ruleCondition in CNmTransitionEventConditionNode::CDefinition should be at offset 0x1E");
 		static_assert(sizeof(CS2::animlib::CNmTransitionEventConditionNode_CDefinition) == 0x20, "CNmTransitionEventConditionNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

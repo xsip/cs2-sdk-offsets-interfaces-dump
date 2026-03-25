@@ -37,6 +37,7 @@ namespace CS2 {
 			char m_autoResetMap[0x20]; // 0xa0 | Schema_Atomic | Size: 0x20
 			S2_PAD(0x40); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterManagerUpdater, m_parameters) == 0x18, "m_parameters in CAnimParameterManagerUpdater should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterManagerUpdater, m_idToIndexMap) == 0x30, "m_idToIndexMap in CAnimParameterManagerUpdater should be at offset 0x30");
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterManagerUpdater, m_nameToIndexMap) == 0x50, "m_nameToIndexMap in CAnimParameterManagerUpdater should be at offset 0x50");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterManagerUpdater, m_autoResetParams) == 0x88, "m_autoResetParams in CAnimParameterManagerUpdater should be at offset 0x88");
 		static_assert(offsetof(CS2::animgraphlib::CAnimParameterManagerUpdater, m_autoResetMap) == 0xA0, "m_autoResetMap in CAnimParameterManagerUpdater should be at offset 0xA0");
 		static_assert(sizeof(CS2::animgraphlib::CAnimParameterManagerUpdater) == 0x100, "CAnimParameterManagerUpdater size should be 0x100");
+
+#endif
 	}
 }

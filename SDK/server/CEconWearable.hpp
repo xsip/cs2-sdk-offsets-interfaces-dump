@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bAlwaysAllow; // 0xde4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEconWearable, m_nForceSkin) == 0xDE0, "m_nForceSkin in CEconWearable should be at offset 0xDE0");
 		static_assert(offsetof(CS2::server::CEconWearable, m_bAlwaysAllow) == 0xDE4, "m_bAlwaysAllow in CEconWearable should be at offset 0xDE4");
 		static_assert(sizeof(CS2::server::CEconWearable) == 0xDF0, "CEconWearable size should be 0xDF0");
+
+#endif
 	}
 }

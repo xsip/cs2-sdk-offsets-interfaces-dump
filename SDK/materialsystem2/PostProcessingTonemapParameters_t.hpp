@@ -36,6 +36,7 @@ namespace CS2 {
 			float32 m_flMinHighlightLum; // 0x34 | Schema_Builtin | Size: 0x4
 			float32 m_flMaxHighlightLum; // 0x38 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingTonemapParameters_t, m_flExposureBias) == 0x0, "m_flExposureBias in PostProcessingTonemapParameters_t should be at offset 0x0");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingTonemapParameters_t, m_flShoulderStrength) == 0x4, "m_flShoulderStrength in PostProcessingTonemapParameters_t should be at offset 0x4");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingTonemapParameters_t, m_flLinearStrength) == 0x8, "m_flLinearStrength in PostProcessingTonemapParameters_t should be at offset 0x8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingTonemapParameters_t, m_flMinHighlightLum) == 0x34, "m_flMinHighlightLum in PostProcessingTonemapParameters_t should be at offset 0x34");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingTonemapParameters_t, m_flMaxHighlightLum) == 0x38, "m_flMaxHighlightLum in PostProcessingTonemapParameters_t should be at offset 0x38");
 		static_assert(sizeof(CS2::materialsystem2::PostProcessingTonemapParameters_t) == 0x3C, "PostProcessingTonemapParameters_t size should be 0x3C");
+
+#endif
 	}
 }

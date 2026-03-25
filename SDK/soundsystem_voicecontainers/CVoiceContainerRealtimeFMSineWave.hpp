@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flModulatorAmount; // 0xb0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flCarrierFrequency) == 0xA8, "m_flCarrierFrequency in CVoiceContainerRealtimeFMSineWave should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flModulatorFrequency) == 0xAC, "m_flModulatorFrequency in CVoiceContainerRealtimeFMSineWave should be at offset 0xAC");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave, m_flModulatorAmount) == 0xB0, "m_flModulatorAmount in CVoiceContainerRealtimeFMSineWave should be at offset 0xB0");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerRealtimeFMSineWave) == 0xB8, "CVoiceContainerRealtimeFMSineWave size should be 0xB8");
+
+#endif
 	}
 }

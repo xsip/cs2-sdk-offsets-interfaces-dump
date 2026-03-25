@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flBias; // 0x1e4 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x38); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_InterpolateRadius, m_flStartTime) == 0x1D0, "m_flStartTime in C_OP_InterpolateRadius should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_InterpolateRadius, m_flEndTime) == 0x1D4, "m_flEndTime in C_OP_InterpolateRadius should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_InterpolateRadius, m_flStartScale) == 0x1D8, "m_flStartScale in C_OP_InterpolateRadius should be at offset 0x1D8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_InterpolateRadius, m_bEaseInAndOut) == 0x1E0, "m_bEaseInAndOut in C_OP_InterpolateRadius should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_InterpolateRadius, m_flBias) == 0x1E4, "m_flBias in C_OP_InterpolateRadius should be at offset 0x1E4");
 		static_assert(sizeof(CS2::particles::C_OP_InterpolateRadius) == 0x220, "C_OP_InterpolateRadius size should be 0x220");
+
+#endif
 	}
 }

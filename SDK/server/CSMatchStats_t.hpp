@@ -44,6 +44,7 @@ namespace CS2 {
 			int32_t m_iEntryWins; // 0xb8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iEnemy5Ks) == 0x68, "m_iEnemy5Ks in CSMatchStats_t should be at offset 0x68");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iEnemy4Ks) == 0x6C, "m_iEnemy4Ks in CSMatchStats_t should be at offset 0x6C");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iEnemy3Ks) == 0x70, "m_iEnemy3Ks in CSMatchStats_t should be at offset 0x70");
@@ -66,5 +67,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iEntryCount) == 0xB4, "m_iEntryCount in CSMatchStats_t should be at offset 0xB4");
 		static_assert(offsetof(CS2::server::CSMatchStats_t, m_iEntryWins) == 0xB8, "m_iEntryWins in CSMatchStats_t should be at offset 0xB8");
 		static_assert(sizeof(CS2::server::CSMatchStats_t) == 0xC0, "CSMatchStats_t size should be 0xC0");
+
+#endif
 	}
 }

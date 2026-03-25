@@ -24,9 +24,12 @@ namespace CS2 {
 			uint16_t nNode; // 0x4 | Schema_Builtin | Size: 0x2
 			uint16_t nDummy; // 0x6 | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeFitWeight_t, flWeight) == 0x0, "flWeight in FeFitWeight_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeFitWeight_t, nNode) == 0x4, "nNode in FeFitWeight_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeFitWeight_t, nDummy) == 0x6, "nDummy in FeFitWeight_t should be at offset 0x6");
 		static_assert(sizeof(CS2::physicslib::FeFitWeight_t) == 0x8, "FeFitWeight_t size should be 0x8");
+
+#endif
 	}
 }

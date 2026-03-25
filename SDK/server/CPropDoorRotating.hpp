@@ -51,6 +51,7 @@ namespace CS2 {
 			// char m_hEntityBlocker[0x4]; // 0xee4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPropDoorRotating, m_vecAxis) == 0xE50, "m_vecAxis in CPropDoorRotating should be at offset 0xE50");
 		static_assert(offsetof(CS2::server::CPropDoorRotating, m_flDistance) == 0xE5C, "m_flDistance in CPropDoorRotating should be at offset 0xE5C");
 		static_assert(offsetof(CS2::server::CPropDoorRotating, m_eSpawnPosition) == 0xE60, "m_eSpawnPosition in CPropDoorRotating should be at offset 0xE60");
@@ -70,5 +71,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPropDoorRotating, m_bAjarDoorShouldntAlwaysOpen) == 0xEE0, "m_bAjarDoorShouldntAlwaysOpen in CPropDoorRotating should be at offset 0xEE0");
 		static_assert(offsetof(CS2::server::CPropDoorRotating, m_hEntityBlocker) == 0xEE4, "m_hEntityBlocker in CPropDoorRotating should be at offset 0xEE4");
 		static_assert(sizeof(CS2::server::CPropDoorRotating) == 0xEF0, "CPropDoorRotating size should be 0xEF0");
+
+#endif
 	}
 }

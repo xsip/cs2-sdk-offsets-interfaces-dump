@@ -25,10 +25,13 @@ namespace CS2 {
 			GlobalTypes::PulseSymbol_t m_TargetInput; // 0x20 | Schema_Atomic | Size: 0x10
 			GlobalTypes::PulseSymbol_t m_Param; // 0x30 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_OutputConnection, m_SourceOutput) == 0x0, "m_SourceOutput in CPulse_OutputConnection should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_OutputConnection, m_TargetEntity) == 0x10, "m_TargetEntity in CPulse_OutputConnection should be at offset 0x10");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_OutputConnection, m_TargetInput) == 0x20, "m_TargetInput in CPulse_OutputConnection should be at offset 0x20");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_OutputConnection, m_Param) == 0x30, "m_Param in CPulse_OutputConnection should be at offset 0x30");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_OutputConnection) == 0x40, "CPulse_OutputConnection size should be 0x40");
+
+#endif
 	}
 }

@@ -25,7 +25,10 @@ namespace CS2 {
 			client::ExternalAnimGraphHandle_t m_hExternalGraph; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x74); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CAnimGraphControllerBase, m_hExternalGraph) == 0x18, "m_hExternalGraph in CAnimGraphControllerBase should be at offset 0x18");
 		static_assert(sizeof(CS2::client::CAnimGraphControllerBase) == 0x90, "CAnimGraphControllerBase size should be 0x90");
+
+#endif
 	}
 }

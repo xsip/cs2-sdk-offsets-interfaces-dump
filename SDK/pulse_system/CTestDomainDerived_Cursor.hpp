@@ -24,8 +24,11 @@ namespace CS2 {
 			int32_t m_nCursorValueA; // 0xd0 | Schema_Builtin | Size: 0x4
 			int32_t m_nCursorValueB; // 0xd4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CTestDomainDerived_Cursor, m_nCursorValueA) == 0xD0, "m_nCursorValueA in CTestDomainDerived_Cursor should be at offset 0xD0");
 		static_assert(offsetof(CS2::pulse_system::CTestDomainDerived_Cursor, m_nCursorValueB) == 0xD4, "m_nCursorValueB in CTestDomainDerived_Cursor should be at offset 0xD4");
 		static_assert(sizeof(CS2::pulse_system::CTestDomainDerived_Cursor) == 0xD8, "CTestDomainDerived_Cursor size should be 0xD8");
+
+#endif
 	}
 }

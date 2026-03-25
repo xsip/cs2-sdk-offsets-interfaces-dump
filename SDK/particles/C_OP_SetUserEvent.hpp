@@ -31,11 +31,14 @@ namespace CS2 {
 			particles::EventTypeSelection_t m_nFallingEventType; // 0x628 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flInput) == 0x1D0, "m_flInput in C_OP_SetUserEvent should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flRisingEdge) == 0x340, "m_flRisingEdge in C_OP_SetUserEvent should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_nRisingEventType) == 0x4B0, "m_nRisingEventType in C_OP_SetUserEvent should be at offset 0x4B0");
 		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_flFallingEdge) == 0x4B8, "m_flFallingEdge in C_OP_SetUserEvent should be at offset 0x4B8");
 		static_assert(offsetof(CS2::particles::C_OP_SetUserEvent, m_nFallingEventType) == 0x628, "m_nFallingEventType in C_OP_SetUserEvent should be at offset 0x628");
 		static_assert(sizeof(CS2::particles::C_OP_SetUserEvent) == 0x630, "C_OP_SetUserEvent size should be 0x630");
+
+#endif
 	}
 }

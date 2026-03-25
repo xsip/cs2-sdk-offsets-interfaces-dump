@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nInstanceValueX; // 0x160 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseGraphInstance_TestDomain_Derived, m_nInstanceValueX) == 0x160, "m_nInstanceValueX in CPulseGraphInstance_TestDomain_Derived should be at offset 0x160");
 		static_assert(sizeof(CS2::pulse_system::CPulseGraphInstance_TestDomain_Derived) == 0x168, "CPulseGraphInstance_TestDomain_Derived size should be 0x168");
+
+#endif
 	}
 }

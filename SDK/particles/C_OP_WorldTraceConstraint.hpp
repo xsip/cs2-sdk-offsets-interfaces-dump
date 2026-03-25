@@ -56,6 +56,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nEntityStickDataField; // 0x9c8 | Schema_DeclaredClass | Size: 0x4
 			particles::ParticleAttributeIndex_t m_nEntityStickNormalField; // 0x9cc | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_WorldTraceConstraint, m_nCP) == 0x1D0, "m_nCP in C_OP_WorldTraceConstraint should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_WorldTraceConstraint, m_vecCpOffset) == 0x1D4, "m_vecCpOffset in C_OP_WorldTraceConstraint should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_WorldTraceConstraint, m_nCollisionMode) == 0x1E0, "m_nCollisionMode in C_OP_WorldTraceConstraint should be at offset 0x1E0");
@@ -84,5 +85,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_WorldTraceConstraint, m_nEntityStickDataField) == 0x9C8, "m_nEntityStickDataField in C_OP_WorldTraceConstraint should be at offset 0x9C8");
 		static_assert(offsetof(CS2::particles::C_OP_WorldTraceConstraint, m_nEntityStickNormalField) == 0x9CC, "m_nEntityStickNormalField in C_OP_WorldTraceConstraint should be at offset 0x9CC");
 		static_assert(sizeof(CS2::particles::C_OP_WorldTraceConstraint) == 0x9D0, "C_OP_WorldTraceConstraint size should be 0x9D0");
+
+#endif
 	}
 }

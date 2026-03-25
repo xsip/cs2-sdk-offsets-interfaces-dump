@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bDestroyImmediately; // 0x629 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nChildGroupID) == 0x1D8, "m_nChildGroupID in C_OP_SelectivelyEnableChildren should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nFirstChild) == 0x348, "m_nFirstChild in C_OP_SelectivelyEnableChildren should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_nNumChildrenToEnable) == 0x4B8, "m_nNumChildrenToEnable in C_OP_SelectivelyEnableChildren should be at offset 0x4B8");
 		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_bPlayEndcapOnStop) == 0x628, "m_bPlayEndcapOnStop in C_OP_SelectivelyEnableChildren should be at offset 0x628");
 		static_assert(offsetof(CS2::particles::C_OP_SelectivelyEnableChildren, m_bDestroyImmediately) == 0x629, "m_bDestroyImmediately in C_OP_SelectivelyEnableChildren should be at offset 0x629");
 		static_assert(sizeof(CS2::particles::C_OP_SelectivelyEnableChildren) == 0x630, "C_OP_SelectivelyEnableChildren size should be 0x630");
+
+#endif
 	}
 }

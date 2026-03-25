@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bIsDisableTag; // 0x50 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CHandshakeAnimTagBase, m_bIsDisableTag) == 0x50, "m_bIsDisableTag in CHandshakeAnimTagBase should be at offset 0x50");
 		static_assert(sizeof(CS2::animgraphlib::CHandshakeAnimTagBase) == 0x58, "CHandshakeAnimTagBase size should be 0x58");
+
+#endif
 	}
 }

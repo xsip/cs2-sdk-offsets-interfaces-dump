@@ -25,7 +25,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animgraphlib::CRemapValueUpdateItem> m_items; // 0x30 | Schema_Atomic | Size: 0x18
 			// char m_items[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CRemapValueComponentUpdater, m_items) == 0x30, "m_items in CRemapValueComponentUpdater should be at offset 0x30");
 		static_assert(sizeof(CS2::animgraphlib::CRemapValueComponentUpdater) == 0x48, "CRemapValueComponentUpdater size should be 0x48");
+
+#endif
 	}
 }

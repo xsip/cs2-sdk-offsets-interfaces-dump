@@ -27,9 +27,12 @@ namespace CS2 {
 			int32_t m_nType; // 0x4b0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::SpawnPoint, m_iPriority) == 0x4A8, "m_iPriority in SpawnPoint should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::SpawnPoint, m_bEnabled) == 0x4AC, "m_bEnabled in SpawnPoint should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::SpawnPoint, m_nType) == 0x4B0, "m_nType in SpawnPoint should be at offset 0x4B0");
 		static_assert(sizeof(CS2::server::SpawnPoint) == 0x4B8, "SpawnPoint size should be 0x4B8");
+
+#endif
 	}
 }

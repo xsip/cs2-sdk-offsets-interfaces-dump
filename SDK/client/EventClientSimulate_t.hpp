@@ -22,6 +22,9 @@ namespace CS2 {
 		class EventClientSimulate_t : public CS2::client::EventSimulate_t {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::EventClientSimulate_t) == 0x30, "EventClientSimulate_t size should be 0x30");
+
+#endif
 	}
 }

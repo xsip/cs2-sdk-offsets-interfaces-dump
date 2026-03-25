@@ -29,6 +29,7 @@ namespace CS2 {
 			bool m_bOnlyChildren; // 0x1e4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RestartAfterDuration, m_flDurationMin) == 0x1D0, "m_flDurationMin in C_OP_RestartAfterDuration should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RestartAfterDuration, m_flDurationMax) == 0x1D4, "m_flDurationMax in C_OP_RestartAfterDuration should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RestartAfterDuration, m_nCP) == 0x1D8, "m_nCP in C_OP_RestartAfterDuration should be at offset 0x1D8");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RestartAfterDuration, m_nChildGroupID) == 0x1E0, "m_nChildGroupID in C_OP_RestartAfterDuration should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_RestartAfterDuration, m_bOnlyChildren) == 0x1E4, "m_bOnlyChildren in C_OP_RestartAfterDuration should be at offset 0x1E4");
 		static_assert(sizeof(CS2::particles::C_OP_RestartAfterDuration) == 0x1E8, "C_OP_RestartAfterDuration size should be 0x1E8");
+
+#endif
 	}
 }

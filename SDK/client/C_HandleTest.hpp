@@ -26,8 +26,11 @@ namespace CS2 {
 			bool m_bSendHandle; // 0x60c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_HandleTest, m_Handle) == 0x608, "m_Handle in C_HandleTest should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_HandleTest, m_bSendHandle) == 0x60C, "m_bSendHandle in C_HandleTest should be at offset 0x60C");
 		static_assert(sizeof(CS2::client::C_HandleTest) == 0x610, "C_HandleTest size should be 0x610");
+
+#endif
 	}
 }

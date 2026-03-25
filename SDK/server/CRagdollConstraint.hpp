@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_zfriction; // 0x528 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xmin) == 0x508, "m_xmin in CRagdollConstraint should be at offset 0x508");
 		static_assert(offsetof(CS2::server::CRagdollConstraint, m_xmax) == 0x50C, "m_xmax in CRagdollConstraint should be at offset 0x50C");
 		static_assert(offsetof(CS2::server::CRagdollConstraint, m_ymin) == 0x510, "m_ymin in CRagdollConstraint should be at offset 0x510");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CRagdollConstraint, m_yfriction) == 0x524, "m_yfriction in CRagdollConstraint should be at offset 0x524");
 		static_assert(offsetof(CS2::server::CRagdollConstraint, m_zfriction) == 0x528, "m_zfriction in CRagdollConstraint should be at offset 0x528");
 		static_assert(sizeof(CS2::server::CRagdollConstraint) == 0x530, "CRagdollConstraint size should be 0x530");
+
+#endif
 	}
 }

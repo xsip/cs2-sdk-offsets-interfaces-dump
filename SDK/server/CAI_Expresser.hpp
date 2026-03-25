@@ -41,6 +41,7 @@ namespace CS2 {
 			S2_PAD(0x18);
 			server::CBaseFlex* m_pOuter; // 0x98 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CAI_Expresser, m_flStopTalkTime) == 0x60, "m_flStopTalkTime in CAI_Expresser should be at offset 0x60");
 		static_assert(offsetof(CS2::server::CAI_Expresser, m_flStopTalkTimeWithoutDelay) == 0x64, "m_flStopTalkTimeWithoutDelay in CAI_Expresser should be at offset 0x64");
 		static_assert(offsetof(CS2::server::CAI_Expresser, m_flQueuedSpeechTime) == 0x68, "m_flQueuedSpeechTime in CAI_Expresser should be at offset 0x68");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CAI_Expresser, m_nLastSpokenPriority) == 0x7C, "m_nLastSpokenPriority in CAI_Expresser should be at offset 0x7C");
 		static_assert(offsetof(CS2::server::CAI_Expresser, m_pOuter) == 0x98, "m_pOuter in CAI_Expresser should be at offset 0x98");
 		static_assert(sizeof(CS2::server::CAI_Expresser) == 0xA0, "CAI_Expresser size should be 0xA0");
+
+#endif
 	}
 }

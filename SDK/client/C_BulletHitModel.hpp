@@ -36,6 +36,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecStartPos; // 0x11a8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BulletHitModel, m_matLocal) == 0x1168, "m_matLocal in C_BulletHitModel should be at offset 0x1168");
 		static_assert(offsetof(CS2::client::C_BulletHitModel, m_iBoneIndex) == 0x1198, "m_iBoneIndex in C_BulletHitModel should be at offset 0x1198");
 		static_assert(offsetof(CS2::client::C_BulletHitModel, m_hPlayerParent) == 0x119C, "m_hPlayerParent in C_BulletHitModel should be at offset 0x119C");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BulletHitModel, m_flTimeCreated) == 0x11A4, "m_flTimeCreated in C_BulletHitModel should be at offset 0x11A4");
 		static_assert(offsetof(CS2::client::C_BulletHitModel, m_vecStartPos) == 0x11A8, "m_vecStartPos in C_BulletHitModel should be at offset 0x11A8");
 		static_assert(sizeof(CS2::client::C_BulletHitModel) == 0x11B8, "C_BulletHitModel size should be 0x11B8");
+
+#endif
 	}
 }

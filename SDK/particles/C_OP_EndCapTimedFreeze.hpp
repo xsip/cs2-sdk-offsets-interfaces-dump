@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			particleslib::CParticleCollectionFloatInput m_flFreezeTime; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_EndCapTimedFreeze, m_flFreezeTime) == 0x1D0, "m_flFreezeTime in C_OP_EndCapTimedFreeze should be at offset 0x1D0");
 		static_assert(sizeof(CS2::particles::C_OP_EndCapTimedFreeze) == 0x340, "C_OP_EndCapTimedFreeze size should be 0x340");
+
+#endif
 	}
 }

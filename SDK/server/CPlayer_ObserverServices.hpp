@@ -35,10 +35,13 @@ namespace CS2 {
 			bool m_bForcedObserverMode; // 0x54 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_iObserverMode) == 0x48, "m_iObserverMode in CPlayer_ObserverServices should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_hObserverTarget) == 0x4C, "m_hObserverTarget in CPlayer_ObserverServices should be at offset 0x4C");
 		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_iObserverLastMode) == 0x50, "m_iObserverLastMode in CPlayer_ObserverServices should be at offset 0x50");
 		static_assert(offsetof(CS2::server::CPlayer_ObserverServices, m_bForcedObserverMode) == 0x54, "m_bForcedObserverMode in CPlayer_ObserverServices should be at offset 0x54");
 		static_assert(sizeof(CS2::server::CPlayer_ObserverServices) == 0x58, "CPlayer_ObserverServices size should be 0x58");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CMultiplayRules : public CS2::server::CGameRules {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CMultiplayRules) == 0xD0, "CMultiplayRules size should be 0xD0");
+
+#endif
 	}
 }

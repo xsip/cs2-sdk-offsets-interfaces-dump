@@ -28,11 +28,14 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_falseValue; // 0x18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CGlobalSymbol m_trueValue; // 0x20 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIDSwitchNode_CDefinition, m_nSwitchValueNodeIdx) == 0x10, "m_nSwitchValueNodeIdx in CNmIDSwitchNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmIDSwitchNode_CDefinition, m_nTrueValueNodeIdx) == 0x12, "m_nTrueValueNodeIdx in CNmIDSwitchNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmIDSwitchNode_CDefinition, m_nFalseValueNodeIdx) == 0x14, "m_nFalseValueNodeIdx in CNmIDSwitchNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmIDSwitchNode_CDefinition, m_falseValue) == 0x18, "m_falseValue in CNmIDSwitchNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmIDSwitchNode_CDefinition, m_trueValue) == 0x20, "m_trueValue in CNmIDSwitchNode::CDefinition should be at offset 0x20");
 		static_assert(sizeof(CS2::animlib::CNmIDSwitchNode_CDefinition) == 0x28, "CNmIDSwitchNode::CDefinition size should be 0x28");
+
+#endif
 	}
 }

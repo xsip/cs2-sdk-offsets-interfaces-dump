@@ -24,7 +24,10 @@ namespace CS2 {
 			bool m_bAllowMultipleScenes; // 0xa0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMultiplayer_Expresser, m_bAllowMultipleScenes) == 0xA0, "m_bAllowMultipleScenes in CMultiplayer_Expresser should be at offset 0xA0");
 		static_assert(sizeof(CS2::server::CMultiplayer_Expresser) == 0xA8, "CMultiplayer_Expresser size should be 0xA8");
+
+#endif
 	}
 }

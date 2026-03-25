@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_foundGoalPositions; // 0x539 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerResource, m_bHostageAlive) == 0x4A8, "m_bHostageAlive in CCSPlayerResource should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CCSPlayerResource, m_isHostageFollowingSomeone) == 0x4B4, "m_isHostageFollowingSomeone in CCSPlayerResource should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CCSPlayerResource, m_iHostageEntityIDs) == 0x4C0, "m_iHostageEntityIDs in CCSPlayerResource should be at offset 0x4C0");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerResource, m_bEndMatchNextMapAllVoted) == 0x538, "m_bEndMatchNextMapAllVoted in CCSPlayerResource should be at offset 0x538");
 		static_assert(offsetof(CS2::server::CCSPlayerResource, m_foundGoalPositions) == 0x539, "m_foundGoalPositions in CCSPlayerResource should be at offset 0x539");
 		static_assert(sizeof(CS2::server::CCSPlayerResource) == 0x540, "CCSPlayerResource size should be 0x540");
+
+#endif
 	}
 }

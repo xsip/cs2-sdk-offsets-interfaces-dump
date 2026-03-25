@@ -29,6 +29,7 @@ namespace CS2 {
 			float32 m_flStaticImpactVolume; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flOcclusionFactor; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesAudio, m_reflectivity) == 0x0, "m_reflectivity in CPhysSurfacePropertiesAudio should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesAudio, m_hardnessFactor) == 0x4, "m_hardnessFactor in CPhysSurfacePropertiesAudio should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesAudio, m_roughnessFactor) == 0x8, "m_roughnessFactor in CPhysSurfacePropertiesAudio should be at offset 0x8");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesAudio, m_flStaticImpactVolume) == 0x18, "m_flStaticImpactVolume in CPhysSurfacePropertiesAudio should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesAudio, m_flOcclusionFactor) == 0x1C, "m_flOcclusionFactor in CPhysSurfacePropertiesAudio should be at offset 0x1C");
 		static_assert(sizeof(CS2::modellib::CPhysSurfacePropertiesAudio) == 0x20, "CPhysSurfacePropertiesAudio size should be 0x20");
+
+#endif
 	}
 }

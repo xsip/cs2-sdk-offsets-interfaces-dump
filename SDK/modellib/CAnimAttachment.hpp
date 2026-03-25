@@ -27,11 +27,14 @@ namespace CS2 {
 			uint8_t m_numInfluences; // 0x78 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CAnimAttachment, m_influenceRotations) == 0x0, "m_influenceRotations in CAnimAttachment should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CAnimAttachment, m_influenceOffsets) == 0x30, "m_influenceOffsets in CAnimAttachment should be at offset 0x30");
 		static_assert(offsetof(CS2::modellib::CAnimAttachment, m_influenceIndices) == 0x60, "m_influenceIndices in CAnimAttachment should be at offset 0x60");
 		static_assert(offsetof(CS2::modellib::CAnimAttachment, m_influenceWeights) == 0x6C, "m_influenceWeights in CAnimAttachment should be at offset 0x6C");
 		static_assert(offsetof(CS2::modellib::CAnimAttachment, m_numInfluences) == 0x78, "m_numInfluences in CAnimAttachment should be at offset 0x78");
 		static_assert(sizeof(CS2::modellib::CAnimAttachment) == 0x80, "CAnimAttachment size should be 0x80");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bEaseInAndOut; // 0x211 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xe); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeMin) == 0x1D0, "m_flFadeOutTimeMin in C_OP_FadeOut should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeMax) == 0x1D4, "m_flFadeOutTimeMax in C_OP_FadeOut should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_flFadeOutTimeExp) == 0x1D8, "m_flFadeOutTimeExp in C_OP_FadeOut should be at offset 0x1D8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_bProportional) == 0x210, "m_bProportional in C_OP_FadeOut should be at offset 0x210");
 		static_assert(offsetof(CS2::particles::C_OP_FadeOut, m_bEaseInAndOut) == 0x211, "m_bEaseInAndOut in C_OP_FadeOut should be at offset 0x211");
 		static_assert(sizeof(CS2::particles::C_OP_FadeOut) == 0x220, "C_OP_FadeOut size should be 0x220");
+
+#endif
 	}
 }

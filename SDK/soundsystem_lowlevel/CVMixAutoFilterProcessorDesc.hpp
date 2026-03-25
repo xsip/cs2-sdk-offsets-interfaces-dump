@@ -25,7 +25,10 @@ namespace CS2 {
 			soundsystem_lowlevel::VMixAutoFilterDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x2c
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixAutoFilterProcessorDesc, m_desc) == 0x20, "m_desc in CVMixAutoFilterProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixAutoFilterProcessorDesc) == 0x50, "CVMixAutoFilterProcessorDesc size should be 0x50");
+
+#endif
 	}
 }

@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bHasSlack; // 0xeda | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecLadderDir) == 0xE88, "m_vecLadderDir in C_FuncLadder should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_FuncLadder, m_Dismounts) == 0xE98, "m_Dismounts in C_FuncLadder should be at offset 0xE98");
 		static_assert(offsetof(CS2::client::C_FuncLadder, m_vecLocalTop) == 0xEB0, "m_vecLocalTop in C_FuncLadder should be at offset 0xEB0");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_FuncLadder, m_bFakeLadder) == 0xED9, "m_bFakeLadder in C_FuncLadder should be at offset 0xED9");
 		static_assert(offsetof(CS2::client::C_FuncLadder, m_bHasSlack) == 0xEDA, "m_bHasSlack in C_FuncLadder should be at offset 0xEDA");
 		static_assert(sizeof(CS2::client::C_FuncLadder) == 0xEE0, "C_FuncLadder size should be 0xEE0");
+
+#endif
 	}
 }

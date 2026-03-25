@@ -30,11 +30,14 @@ namespace CS2 {
 			S2_PAD(0x3);
 			particles::ParticleAttributeIndex_t m_nAttribute; // 0x354 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_nControlPoint) == 0x1D0, "m_nControlPoint in C_OP_DistanceCull should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_vecPointOffset) == 0x1D4, "m_vecPointOffset in C_OP_DistanceCull should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_flDistance) == 0x1E0, "m_flDistance in C_OP_DistanceCull should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_bCullInside) == 0x350, "m_bCullInside in C_OP_DistanceCull should be at offset 0x350");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceCull, m_nAttribute) == 0x354, "m_nAttribute in C_OP_DistanceCull should be at offset 0x354");
 		static_assert(sizeof(CS2::particles::C_OP_DistanceCull) == 0x358, "C_OP_DistanceCull size should be 0x358");
+
+#endif
 	}
 }

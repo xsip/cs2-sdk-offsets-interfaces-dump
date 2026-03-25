@@ -22,6 +22,9 @@ namespace CS2 {
 		class CCSPetPlacement : public CS2::server::CBaseEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CCSPetPlacement) == 0x4A8, "CCSPetPlacement size should be 0x4A8");
+
+#endif
 	}
 }

@@ -28,10 +28,13 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecOffset; // 0x1e0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_SequenceFromCP, m_bKillUnused) == 0x1D8, "m_bKillUnused in C_INIT_SequenceFromCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_SequenceFromCP, m_bRadiusScale) == 0x1D9, "m_bRadiusScale in C_INIT_SequenceFromCP should be at offset 0x1D9");
 		static_assert(offsetof(CS2::particles::C_INIT_SequenceFromCP, m_nCP) == 0x1DC, "m_nCP in C_INIT_SequenceFromCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_SequenceFromCP, m_vecOffset) == 0x1E0, "m_vecOffset in C_INIT_SequenceFromCP should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_INIT_SequenceFromCP) == 0x1F0, "C_INIT_SequenceFromCP size should be 0x1F0");
+
+#endif
 	}
 }

@@ -35,6 +35,7 @@ namespace CS2 {
 			float32 m_flTargetUpdateAngleThresholdRadians; // 0x28 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmTargetWarpNode_CDefinition, m_nClipReferenceNodeIdx) == 0x10, "m_nClipReferenceNodeIdx in CNmTargetWarpNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmTargetWarpNode_CDefinition, m_nTargetValueNodeIdx) == 0x12, "m_nTargetValueNodeIdx in CNmTargetWarpNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmTargetWarpNode_CDefinition, m_samplingMode) == 0x14, "m_samplingMode in CNmTargetWarpNode::CDefinition should be at offset 0x14");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmTargetWarpNode_CDefinition, m_flTargetUpdateDistanceThreshold) == 0x24, "m_flTargetUpdateDistanceThreshold in CNmTargetWarpNode::CDefinition should be at offset 0x24");
 		static_assert(offsetof(CS2::animlib::CNmTargetWarpNode_CDefinition, m_flTargetUpdateAngleThresholdRadians) == 0x28, "m_flTargetUpdateAngleThresholdRadians in CNmTargetWarpNode::CDefinition should be at offset 0x28");
 		static_assert(sizeof(CS2::animlib::CNmTargetWarpNode_CDefinition) == 0x30, "CNmTargetWarpNode::CDefinition size should be 0x30");
+
+#endif
 	}
 }

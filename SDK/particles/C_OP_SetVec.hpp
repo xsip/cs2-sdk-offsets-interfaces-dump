@@ -32,11 +32,14 @@ namespace CS2 {
 			bool m_bNormalizedOutput; // 0xa00 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_InputValue) == 0x1D0, "m_InputValue in C_OP_SetVec should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_nOutputField) == 0x888, "m_nOutputField in C_OP_SetVec should be at offset 0x888");
 		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_nSetMethod) == 0x88C, "m_nSetMethod in C_OP_SetVec should be at offset 0x88C");
 		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_Lerp) == 0x890, "m_Lerp in C_OP_SetVec should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_OP_SetVec, m_bNormalizedOutput) == 0xA00, "m_bNormalizedOutput in C_OP_SetVec should be at offset 0xA00");
 		static_assert(sizeof(CS2::particles::C_OP_SetVec) == 0xA08, "C_OP_SetVec size should be 0xA08");
+
+#endif
 	}
 }

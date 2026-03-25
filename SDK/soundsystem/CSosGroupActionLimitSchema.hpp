@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bCountStopped; // 0x15 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nMaxCount) == 0x8, "m_nMaxCount in CSosGroupActionLimitSchema should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nStopType) == 0xC, "m_nStopType in CSosGroupActionLimitSchema should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_nSortType) == 0x10, "m_nSortType in CSosGroupActionLimitSchema should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_bStopImmediate) == 0x14, "m_bStopImmediate in CSosGroupActionLimitSchema should be at offset 0x14");
 		static_assert(offsetof(CS2::soundsystem::CSosGroupActionLimitSchema, m_bCountStopped) == 0x15, "m_bCountStopped in CSosGroupActionLimitSchema should be at offset 0x15");
 		static_assert(sizeof(CS2::soundsystem::CSosGroupActionLimitSchema) == 0x18, "CSosGroupActionLimitSchema size should be 0x18");
+
+#endif
 	}
 }

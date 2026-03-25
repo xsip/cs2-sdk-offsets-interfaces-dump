@@ -48,6 +48,7 @@ namespace CS2 {
 			bool m_bRestartAfterRestore; // 0x11c4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PointCommentaryNode, m_bActive) == 0x1180, "m_bActive in C_PointCommentaryNode should be at offset 0x1180");
 		static_assert(offsetof(CS2::client::C_PointCommentaryNode, m_bWasActive) == 0x1181, "m_bWasActive in C_PointCommentaryNode should be at offset 0x1181");
 		static_assert(offsetof(CS2::client::C_PointCommentaryNode, m_flEndTime) == 0x1184, "m_flEndTime in C_PointCommentaryNode should be at offset 0x1184");
@@ -63,5 +64,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PointCommentaryNode, m_hViewPosition) == 0x11C0, "m_hViewPosition in C_PointCommentaryNode should be at offset 0x11C0");
 		static_assert(offsetof(CS2::client::C_PointCommentaryNode, m_bRestartAfterRestore) == 0x11C4, "m_bRestartAfterRestore in C_PointCommentaryNode should be at offset 0x11C4");
 		static_assert(sizeof(CS2::client::C_PointCommentaryNode) == 0x11C8, "C_PointCommentaryNode size should be 0x11C8");
+
+#endif
 	}
 }

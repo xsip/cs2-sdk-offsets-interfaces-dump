@@ -30,6 +30,7 @@ namespace CS2 {
 			uint16_t m_nVertexAlbedoStride; // 0x13c | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CSceneObjectData_RTProxyDrawDescriptor_t, m_drawDesc) == 0x0, "m_drawDesc in CSceneObjectData::RTProxyDrawDescriptor_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData_RTProxyDrawDescriptor_t, m_mWorldFromLocal) == 0x108, "m_mWorldFromLocal in CSceneObjectData::RTProxyDrawDescriptor_t should be at offset 0x108");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData_RTProxyDrawDescriptor_t, m_nVertexAlbedoFormat) == 0x138, "m_nVertexAlbedoFormat in CSceneObjectData::RTProxyDrawDescriptor_t should be at offset 0x138");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CSceneObjectData_RTProxyDrawDescriptor_t, m_nVertexAlbedoOffset) == 0x13A, "m_nVertexAlbedoOffset in CSceneObjectData::RTProxyDrawDescriptor_t should be at offset 0x13A");
 		static_assert(offsetof(CS2::modellib::CSceneObjectData_RTProxyDrawDescriptor_t, m_nVertexAlbedoStride) == 0x13C, "m_nVertexAlbedoStride in CSceneObjectData::RTProxyDrawDescriptor_t should be at offset 0x13C");
 		static_assert(sizeof(CS2::modellib::CSceneObjectData_RTProxyDrawDescriptor_t) == 0x140, "CSceneObjectData::RTProxyDrawDescriptor_t size should be 0x140");
+
+#endif
 	}
 }

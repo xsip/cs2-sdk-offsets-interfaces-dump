@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bSkillBoltInterruptAvailable; // 0x114e | Schema_Builtin | Size: 0x1
 			bool m_bSkillBoltLiftedFireKey; // 0x114f | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_zoomLevel) == 0x1130, "m_zoomLevel in CCSWeaponBaseGun should be at offset 0x1130");
 		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_iBurstShotsRemaining) == 0x1134, "m_iBurstShotsRemaining in CCSWeaponBaseGun should be at offset 0x1134");
 		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_silencedModelIndex) == 0x1140, "m_silencedModelIndex in CCSWeaponBaseGun should be at offset 0x1140");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillBoltInterruptAvailable) == 0x114E, "m_bSkillBoltInterruptAvailable in CCSWeaponBaseGun should be at offset 0x114E");
 		static_assert(offsetof(CS2::server::CCSWeaponBaseGun, m_bSkillBoltLiftedFireKey) == 0x114F, "m_bSkillBoltLiftedFireKey in CCSWeaponBaseGun should be at offset 0x114F");
 		static_assert(sizeof(CS2::server::CCSWeaponBaseGun) == 0x1150, "CCSWeaponBaseGun size should be 0x1150");
+
+#endif
 	}
 }

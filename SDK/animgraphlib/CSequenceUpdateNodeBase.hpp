@@ -26,8 +26,11 @@ namespace CS2 {
 			bool m_bLoop; // 0x70 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNodeBase, m_playbackSpeed) == 0x6C, "m_playbackSpeed in CSequenceUpdateNodeBase should be at offset 0x6C");
 		static_assert(offsetof(CS2::animgraphlib::CSequenceUpdateNodeBase, m_bLoop) == 0x70, "m_bLoop in CSequenceUpdateNodeBase should be at offset 0x70");
 		static_assert(sizeof(CS2::animgraphlib::CSequenceUpdateNodeBase) == 0x78, "CSequenceUpdateNodeBase size should be 0x78");
+
+#endif
 	}
 }

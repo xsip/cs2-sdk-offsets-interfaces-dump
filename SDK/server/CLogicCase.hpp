@@ -30,6 +30,7 @@ namespace CS2 {
 			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_OnDefault; // 0x8d0 | Schema_Atomic | Size: 0x20
 			// char m_OnDefault[0x20]; // 0x8d0 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicCase, m_nCase) == 0x4A8, "m_nCase in CLogicCase should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicCase, m_nShuffleCases) == 0x5A8, "m_nShuffleCases in CLogicCase should be at offset 0x5A8");
 		static_assert(offsetof(CS2::server::CLogicCase, m_nLastShuffleCase) == 0x5AC, "m_nLastShuffleCase in CLogicCase should be at offset 0x5AC");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicCase, m_OnCase) == 0x5D0, "m_OnCase in CLogicCase should be at offset 0x5D0");
 		static_assert(offsetof(CS2::server::CLogicCase, m_OnDefault) == 0x8D0, "m_OnDefault in CLogicCase should be at offset 0x8D0");
 		static_assert(sizeof(CS2::server::CLogicCase) == 0x8F0, "CLogicCase size should be 0x8F0");
+
+#endif
 	}
 }

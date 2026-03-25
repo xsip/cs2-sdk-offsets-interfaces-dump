@@ -26,10 +26,13 @@ namespace CS2 {
 			bool m_bCanBeForced; // 0x6 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_TransitionDefinition_t, m_nTargetStateIdx) == 0x0, "m_nTargetStateIdx in CNmStateMachineNode::TransitionDefinition_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_TransitionDefinition_t, m_nConditionNodeIdx) == 0x2, "m_nConditionNodeIdx in CNmStateMachineNode::TransitionDefinition_t should be at offset 0x2");
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_TransitionDefinition_t, m_nTransitionNodeIdx) == 0x4, "m_nTransitionNodeIdx in CNmStateMachineNode::TransitionDefinition_t should be at offset 0x4");
 		static_assert(offsetof(CS2::animlib::CNmStateMachineNode_TransitionDefinition_t, m_bCanBeForced) == 0x6, "m_bCanBeForced in CNmStateMachineNode::TransitionDefinition_t should be at offset 0x6");
 		static_assert(sizeof(CS2::animlib::CNmStateMachineNode_TransitionDefinition_t) == 0x8, "CNmStateMachineNode::TransitionDefinition_t size should be 0x8");
+
+#endif
 	}
 }

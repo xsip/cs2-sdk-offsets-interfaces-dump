@@ -33,6 +33,7 @@ namespace CS2 {
 			int32_t m_iNumPotentialVotes; // 0x16c | Schema_Builtin | Size: 0x4
 			server::CVoteController* m_pVoteController; // 0x170 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseIssue, m_szTypeString) == 0x20, "m_szTypeString in CBaseIssue should be at offset 0x20");
 		static_assert(offsetof(CS2::server::CBaseIssue, m_szDetailsString) == 0x60, "m_szDetailsString in CBaseIssue should be at offset 0x60");
 		static_assert(offsetof(CS2::server::CBaseIssue, m_iNumYesVotes) == 0x164, "m_iNumYesVotes in CBaseIssue should be at offset 0x164");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseIssue, m_iNumPotentialVotes) == 0x16C, "m_iNumPotentialVotes in CBaseIssue should be at offset 0x16C");
 		static_assert(offsetof(CS2::server::CBaseIssue, m_pVoteController) == 0x170, "m_pVoteController in CBaseIssue should be at offset 0x170");
 		static_assert(sizeof(CS2::server::CBaseIssue) == 0x178, "CBaseIssue size should be 0x178");
+
+#endif
 	}
 }

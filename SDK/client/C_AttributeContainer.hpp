@@ -27,9 +27,12 @@ namespace CS2 {
 			S2_PAD(0x4);
 			uint64_t m_ullRegisteredAsItemID; // 0x4c8 | Schema_Builtin | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_AttributeContainer, m_Item) == 0x50, "m_Item in C_AttributeContainer should be at offset 0x50");
 		static_assert(offsetof(CS2::client::C_AttributeContainer, m_iExternalItemProviderRegisteredToken) == 0x4C0, "m_iExternalItemProviderRegisteredToken in C_AttributeContainer should be at offset 0x4C0");
 		static_assert(offsetof(CS2::client::C_AttributeContainer, m_ullRegisteredAsItemID) == 0x4C8, "m_ullRegisteredAsItemID in C_AttributeContainer should be at offset 0x4C8");
 		static_assert(sizeof(CS2::client::C_AttributeContainer) == 0x4D0, "C_AttributeContainer size should be 0x4D0");
+
+#endif
 	}
 }

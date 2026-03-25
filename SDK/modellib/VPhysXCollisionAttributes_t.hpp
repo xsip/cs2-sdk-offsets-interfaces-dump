@@ -40,6 +40,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_DetailLayerStrings; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char m_DetailLayerStrings[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysXCollisionAttributes_t, m_nIncludeDetailLayerCount) == 0x0, "m_nIncludeDetailLayerCount in VPhysXCollisionAttributes_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysXCollisionAttributes_t, m_CollisionGroup) == 0x4, "m_CollisionGroup in VPhysXCollisionAttributes_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::VPhysXCollisionAttributes_t, m_InteractAs) == 0x8, "m_InteractAs in VPhysXCollisionAttributes_t should be at offset 0x8");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::VPhysXCollisionAttributes_t, m_InteractExcludeStrings) == 0xA0, "m_InteractExcludeStrings in VPhysXCollisionAttributes_t should be at offset 0xA0");
 		static_assert(offsetof(CS2::modellib::VPhysXCollisionAttributes_t, m_DetailLayerStrings) == 0xB8, "m_DetailLayerStrings in VPhysXCollisionAttributes_t should be at offset 0xB8");
 		static_assert(sizeof(CS2::modellib::VPhysXCollisionAttributes_t) == 0xD0, "VPhysXCollisionAttributes_t size should be 0xD0");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_strGraphName; // 0x4b0 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strStateBlob; // 0x4b8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseGameBlackboard, m_strGraphName) == 0x4B0, "m_strGraphName in CPulseGameBlackboard should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPulseGameBlackboard, m_strStateBlob) == 0x4B8, "m_strStateBlob in CPulseGameBlackboard should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CPulseGameBlackboard) == 0x4C0, "CPulseGameBlackboard size should be 0x4C0");
+
+#endif
 	}
 }

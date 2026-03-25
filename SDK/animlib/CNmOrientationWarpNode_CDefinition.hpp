@@ -29,6 +29,7 @@ namespace CS2 {
 			bool m_bWarpTranslation; // 0x16 | Schema_Builtin | Size: 0x1
 			animlib::CNmRootMotionData_SamplingMode_t m_samplingMode; // 0x17 | Schema_DeclaredEnum | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmOrientationWarpNode_CDefinition, m_nClipReferenceNodeIdx) == 0x10, "m_nClipReferenceNodeIdx in CNmOrientationWarpNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmOrientationWarpNode_CDefinition, m_nTargetValueNodeIdx) == 0x12, "m_nTargetValueNodeIdx in CNmOrientationWarpNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmOrientationWarpNode_CDefinition, m_bIsOffsetNode) == 0x14, "m_bIsOffsetNode in CNmOrientationWarpNode::CDefinition should be at offset 0x14");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmOrientationWarpNode_CDefinition, m_bWarpTranslation) == 0x16, "m_bWarpTranslation in CNmOrientationWarpNode::CDefinition should be at offset 0x16");
 		static_assert(offsetof(CS2::animlib::CNmOrientationWarpNode_CDefinition, m_samplingMode) == 0x17, "m_samplingMode in CNmOrientationWarpNode::CDefinition should be at offset 0x17");
 		static_assert(sizeof(CS2::animlib::CNmOrientationWarpNode_CDefinition) == 0x18, "CNmOrientationWarpNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

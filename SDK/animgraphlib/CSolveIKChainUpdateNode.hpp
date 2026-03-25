@@ -28,8 +28,11 @@ namespace CS2 {
 			animgraphlib::SolveIKChainPoseOpFixedSettings_t m_opFixedData; // 0x88 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSolveIKChainUpdateNode, m_targetHandles) == 0x70, "m_targetHandles in CSolveIKChainUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CSolveIKChainUpdateNode, m_opFixedData) == 0x88, "m_opFixedData in CSolveIKChainUpdateNode should be at offset 0x88");
 		static_assert(sizeof(CS2::animgraphlib::CSolveIKChainUpdateNode) == 0xA8, "CSolveIKChainUpdateNode size should be 0xA8");
+
+#endif
 	}
 }

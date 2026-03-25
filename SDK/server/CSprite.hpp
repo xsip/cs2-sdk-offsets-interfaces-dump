@@ -58,6 +58,7 @@ namespace CS2 {
 			int32_t m_nSpriteHeight; // 0x798 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSprite, m_hSpriteMaterial) == 0x730, "m_hSpriteMaterial in CSprite should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CSprite, m_hAttachedToEntity) == 0x738, "m_hAttachedToEntity in CSprite should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CSprite, m_nAttachment) == 0x73C, "m_nAttachment in CSprite should be at offset 0x73C");
@@ -82,5 +83,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSprite, m_nSpriteWidth) == 0x794, "m_nSpriteWidth in CSprite should be at offset 0x794");
 		static_assert(offsetof(CS2::server::CSprite, m_nSpriteHeight) == 0x798, "m_nSpriteHeight in CSprite should be at offset 0x798");
 		static_assert(sizeof(CS2::server::CSprite) == 0x7A0, "CSprite size should be 0x7A0");
+
+#endif
 	}
 }

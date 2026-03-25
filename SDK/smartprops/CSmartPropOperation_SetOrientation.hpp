@@ -28,11 +28,14 @@ namespace CS2 {
 			smartprops::CSmartPropAttributeCoordinateSpace m_UpDirectionSpace; // 0x110 | Schema_DeclaredClass | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bPrioritizeUp; // 0x150 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetOrientation, m_vForwardVector) == 0x50, "m_vForwardVector in CSmartPropOperation_SetOrientation should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetOrientation, m_ForwardDirectionSpace) == 0x90, "m_ForwardDirectionSpace in CSmartPropOperation_SetOrientation should be at offset 0x90");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetOrientation, m_vUpVector) == 0xD0, "m_vUpVector in CSmartPropOperation_SetOrientation should be at offset 0xD0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetOrientation, m_UpDirectionSpace) == 0x110, "m_UpDirectionSpace in CSmartPropOperation_SetOrientation should be at offset 0x110");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SetOrientation, m_bPrioritizeUp) == 0x150, "m_bPrioritizeUp in CSmartPropOperation_SetOrientation should be at offset 0x150");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_SetOrientation) == 0x190, "CSmartPropOperation_SetOrientation size should be 0x190");
+
+#endif
 	}
 }

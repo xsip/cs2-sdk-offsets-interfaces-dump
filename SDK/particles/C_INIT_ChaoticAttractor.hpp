@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bUniformSpeed; // 0x1f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_ChaoticAttractor, m_flAParm) == 0x1D8, "m_flAParm in C_INIT_ChaoticAttractor should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_ChaoticAttractor, m_flBParm) == 0x1DC, "m_flBParm in C_INIT_ChaoticAttractor should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_ChaoticAttractor, m_flCParm) == 0x1E0, "m_flCParm in C_INIT_ChaoticAttractor should be at offset 0x1E0");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_ChaoticAttractor, m_nBaseCP) == 0x1F4, "m_nBaseCP in C_INIT_ChaoticAttractor should be at offset 0x1F4");
 		static_assert(offsetof(CS2::particles::C_INIT_ChaoticAttractor, m_bUniformSpeed) == 0x1F8, "m_bUniformSpeed in C_INIT_ChaoticAttractor should be at offset 0x1F8");
 		static_assert(sizeof(CS2::particles::C_INIT_ChaoticAttractor) == 0x200, "C_INIT_ChaoticAttractor size should be 0x200");
+
+#endif
 	}
 }

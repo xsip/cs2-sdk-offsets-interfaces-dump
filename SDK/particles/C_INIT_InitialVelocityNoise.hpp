@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bIgnoreDt; // 0x1ad0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityNoise, m_vecAbsVal) == 0x1D8, "m_vecAbsVal in C_INIT_InitialVelocityNoise should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityNoise, m_vecAbsValInv) == 0x1E4, "m_vecAbsValInv in C_INIT_InitialVelocityNoise should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityNoise, m_vecOffsetLoc) == 0x1F0, "m_vecOffsetLoc in C_INIT_InitialVelocityNoise should be at offset 0x1F0");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityNoise, m_TransformInput) == 0x1A68, "m_TransformInput in C_INIT_InitialVelocityNoise should be at offset 0x1A68");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityNoise, m_bIgnoreDt) == 0x1AD0, "m_bIgnoreDt in C_INIT_InitialVelocityNoise should be at offset 0x1AD0");
 		static_assert(sizeof(CS2::particles::C_INIT_InitialVelocityNoise) == 0x1AD8, "C_INIT_InitialVelocityNoise size should be 0x1AD8");
+
+#endif
 	}
 }

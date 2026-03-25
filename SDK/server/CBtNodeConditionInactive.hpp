@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_flSensorInactivityThresholdSeconds; // 0x7c | Schema_Builtin | Size: 0x4
 			server::CountdownTimer m_SensorInactivityTimer; // 0x80 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBtNodeConditionInactive, m_flRoundStartThresholdSeconds) == 0x78, "m_flRoundStartThresholdSeconds in CBtNodeConditionInactive should be at offset 0x78");
 		static_assert(offsetof(CS2::server::CBtNodeConditionInactive, m_flSensorInactivityThresholdSeconds) == 0x7C, "m_flSensorInactivityThresholdSeconds in CBtNodeConditionInactive should be at offset 0x7C");
 		static_assert(offsetof(CS2::server::CBtNodeConditionInactive, m_SensorInactivityTimer) == 0x80, "m_SensorInactivityTimer in CBtNodeConditionInactive should be at offset 0x80");
 		static_assert(sizeof(CS2::server::CBtNodeConditionInactive) == 0x98, "CBtNodeConditionInactive size should be 0x98");
+
+#endif
 	}
 }

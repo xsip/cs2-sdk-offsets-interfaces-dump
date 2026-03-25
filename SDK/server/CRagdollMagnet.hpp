@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_force; // 0x4b0 | Schema_Builtin | Size: 0x4
 			GlobalTypes::VectorWS m_axis; // 0x4b4 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRagdollMagnet, m_bDisabled) == 0x4A8, "m_bDisabled in CRagdollMagnet should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CRagdollMagnet, m_radius) == 0x4AC, "m_radius in CRagdollMagnet should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CRagdollMagnet, m_force) == 0x4B0, "m_force in CRagdollMagnet should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CRagdollMagnet, m_axis) == 0x4B4, "m_axis in CRagdollMagnet should be at offset 0x4B4");
 		static_assert(sizeof(CS2::server::CRagdollMagnet) == 0x4C0, "CRagdollMagnet size should be 0x4C0");
+
+#endif
 	}
 }

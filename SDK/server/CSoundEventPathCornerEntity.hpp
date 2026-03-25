@@ -32,6 +32,7 @@ namespace CS2 {
 			// GlobalTypes::CNetworkUtlVectorBase<client::SoundeventPathCornerPairNetworked_t> m_vecCornerPairsNetworked; // 0x598 | Schema_Atomic | Size: 0x60
 			char m_vecCornerPairsNetworked[0x60]; // 0x598 | Schema_Atomic | Size: 0x60
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_iszPathCorner) == 0x558, "m_iszPathCorner in CSoundEventPathCornerEntity should be at offset 0x558");
 		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_iCountMax) == 0x560, "m_iCountMax in CSoundEventPathCornerEntity should be at offset 0x560");
 		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_flDistanceMax) == 0x564, "m_flDistanceMax in CSoundEventPathCornerEntity should be at offset 0x564");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_bPlaying) == 0x570, "m_bPlaying in CSoundEventPathCornerEntity should be at offset 0x570");
 		static_assert(offsetof(CS2::server::CSoundEventPathCornerEntity, m_vecCornerPairsNetworked) == 0x598, "m_vecCornerPairsNetworked in CSoundEventPathCornerEntity should be at offset 0x598");
 		static_assert(sizeof(CS2::server::CSoundEventPathCornerEntity) == 0x5F8, "CSoundEventPathCornerEntity size should be 0x5F8");
+
+#endif
 	}
 }

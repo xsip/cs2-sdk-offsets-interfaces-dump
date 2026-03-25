@@ -40,6 +40,7 @@ namespace CS2 {
 			bool m_bEnabled; // 0x500 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawner, m_szSpawnTemplates) == 0x4A8, "m_szSpawnTemplates in CPathMoverEntitySpawner should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawner, m_nSpawnIndex) == 0x4C8, "m_nSpawnIndex in CPathMoverEntitySpawner should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawner, m_hPathMover) == 0x4CC, "m_hPathMover in CPathMoverEntitySpawner should be at offset 0x4CC");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawner, m_flLastSpawnTime) == 0x4FC, "m_flLastSpawnTime in CPathMoverEntitySpawner should be at offset 0x4FC");
 		static_assert(offsetof(CS2::server::CPathMoverEntitySpawner, m_bEnabled) == 0x500, "m_bEnabled in CPathMoverEntitySpawner should be at offset 0x500");
 		static_assert(sizeof(CS2::server::CPathMoverEntitySpawner) == 0x508, "CPathMoverEntitySpawner size should be 0x508");
+
+#endif
 	}
 }

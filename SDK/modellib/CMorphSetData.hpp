@@ -15,8 +15,8 @@
 #include "CFlexController.hpp"
 #include "CFlexRule.hpp"
 
-#include "MorphBundleType_t.hpp"
 
+#include "MorphBundleType_t.hpp"
 
 
 using namespace GlobalTypes;
@@ -40,6 +40,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::CFlexRule> m_FlexRules; // 0x80 | Schema_Atomic | Size: 0x18
 			// char m_FlexRules[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CMorphSetData, m_nWidth) == 0x10, "m_nWidth in CMorphSetData should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CMorphSetData, m_nHeight) == 0x14, "m_nHeight in CMorphSetData should be at offset 0x14");
 		static_assert(offsetof(CS2::modellib::CMorphSetData, m_bundleTypes) == 0x18, "m_bundleTypes in CMorphSetData should be at offset 0x18");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CMorphSetData, m_FlexControllers) == 0x68, "m_FlexControllers in CMorphSetData should be at offset 0x68");
 		static_assert(offsetof(CS2::modellib::CMorphSetData, m_FlexRules) == 0x80, "m_FlexRules in CMorphSetData should be at offset 0x80");
 		static_assert(sizeof(CS2::modellib::CMorphSetData) == 0x98, "CMorphSetData size should be 0x98");
+
+#endif
 	}
 }

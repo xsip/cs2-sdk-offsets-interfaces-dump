@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_szFacs; // 0x0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFlexDesc, m_szFacs) == 0x0, "m_szFacs in CFlexDesc should be at offset 0x0");
 		static_assert(sizeof(CS2::modellib::CFlexDesc) == 0x8, "CFlexDesc size should be 0x8");
+
+#endif
 	}
 }

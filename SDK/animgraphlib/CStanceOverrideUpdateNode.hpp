@@ -32,10 +32,13 @@ namespace CS2 {
 			S2_PAD(0x2);
 			animgraphlib::StanceOverrideMode m_eMode; // 0x9c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStanceOverrideUpdateNode, m_footStanceInfo) == 0x70, "m_footStanceInfo in CStanceOverrideUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CStanceOverrideUpdateNode, m_pStanceSourceNode) == 0x88, "m_pStanceSourceNode in CStanceOverrideUpdateNode should be at offset 0x88");
 		static_assert(offsetof(CS2::animgraphlib::CStanceOverrideUpdateNode, m_hParameter) == 0x98, "m_hParameter in CStanceOverrideUpdateNode should be at offset 0x98");
 		static_assert(offsetof(CS2::animgraphlib::CStanceOverrideUpdateNode, m_eMode) == 0x9C, "m_eMode in CStanceOverrideUpdateNode should be at offset 0x9C");
 		static_assert(sizeof(CS2::animgraphlib::CStanceOverrideUpdateNode) == 0xA0, "CStanceOverrideUpdateNode size should be 0xA0");
+
+#endif
 	}
 }

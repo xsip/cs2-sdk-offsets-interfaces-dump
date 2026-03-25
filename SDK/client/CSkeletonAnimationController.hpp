@@ -28,7 +28,10 @@ namespace CS2 {
 		public:
 			client::CSkeletonInstance* m_pSkeletonInstance; // 0x8 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSkeletonAnimationController, m_pSkeletonInstance) == 0x8, "m_pSkeletonInstance in CSkeletonAnimationController should be at offset 0x8");
 		static_assert(sizeof(CS2::client::CSkeletonAnimationController) == 0x10, "CSkeletonAnimationController size should be 0x10");
+
+#endif
 	}
 }

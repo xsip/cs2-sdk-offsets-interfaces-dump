@@ -25,8 +25,11 @@ namespace CS2 {
 			S2_PAD(0x7);
 			GlobalTypes::CPiecewiseCurve m_curve; // 0x10 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerAnalysisBase, m_bRegenerateCurveOnCompile) == 0x8, "m_bRegenerateCurveOnCompile in CVoiceContainerAnalysisBase should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerAnalysisBase, m_curve) == 0x10, "m_curve in CVoiceContainerAnalysisBase should be at offset 0x10");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerAnalysisBase) == 0x50, "CVoiceContainerAnalysisBase size should be 0x50");
+
+#endif
 	}
 }

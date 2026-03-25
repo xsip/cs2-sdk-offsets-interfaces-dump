@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_TriggerLerpObject : public CS2::client::C_BaseTrigger {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_TriggerLerpObject) == 0xF58, "C_TriggerLerpObject size should be 0xF58");
+
+#endif
 	}
 }

@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bXYVelocityOnly; // 0xdc1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_TransformInput) == 0x1D8, "m_TransformInput in C_INIT_RingWave should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flParticlesPerOrbit) == 0x240, "m_flParticlesPerOrbit in C_INIT_RingWave should be at offset 0x240");
 		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_flInitialRadius) == 0x3B0, "m_flInitialRadius in C_INIT_RingWave should be at offset 0x3B0");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_bEvenDistribution) == 0xDC0, "m_bEvenDistribution in C_INIT_RingWave should be at offset 0xDC0");
 		static_assert(offsetof(CS2::particles::C_INIT_RingWave, m_bXYVelocityOnly) == 0xDC1, "m_bXYVelocityOnly in C_INIT_RingWave should be at offset 0xDC1");
 		static_assert(sizeof(CS2::particles::C_INIT_RingWave) == 0xDC8, "C_INIT_RingWave size should be 0xDC8");
+
+#endif
 	}
 }

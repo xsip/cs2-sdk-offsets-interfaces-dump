@@ -26,10 +26,13 @@ namespace CS2 {
 			float32 m_flTickInterval; // 0x2c | Schema_Builtin | Size: 0x4
 			float64 m_flTickStartTime; // 0x30 | Schema_Builtin | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventClientProcessInput_t, m_LoopState) == 0x0, "m_LoopState in EventClientProcessInput_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::EventClientProcessInput_t, m_flRealTime) == 0x28, "m_flRealTime in EventClientProcessInput_t should be at offset 0x28");
 		static_assert(offsetof(CS2::client::EventClientProcessInput_t, m_flTickInterval) == 0x2C, "m_flTickInterval in EventClientProcessInput_t should be at offset 0x2C");
 		static_assert(offsetof(CS2::client::EventClientProcessInput_t, m_flTickStartTime) == 0x30, "m_flTickStartTime in EventClientProcessInput_t should be at offset 0x30");
 		static_assert(sizeof(CS2::client::EventClientProcessInput_t) == 0x38, "EventClientProcessInput_t size should be 0x38");
+
+#endif
 	}
 }

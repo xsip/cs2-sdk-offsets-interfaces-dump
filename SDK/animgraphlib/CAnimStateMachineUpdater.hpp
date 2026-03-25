@@ -31,9 +31,12 @@ namespace CS2 {
 			int32_t m_startStateIndex; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimStateMachineUpdater, m_states) == 0x8, "m_states in CAnimStateMachineUpdater should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CAnimStateMachineUpdater, m_transitions) == 0x20, "m_transitions in CAnimStateMachineUpdater should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::CAnimStateMachineUpdater, m_startStateIndex) == 0x50, "m_startStateIndex in CAnimStateMachineUpdater should be at offset 0x50");
 		static_assert(sizeof(CS2::animgraphlib::CAnimStateMachineUpdater) == 0x58, "CAnimStateMachineUpdater size should be 0x58");
+
+#endif
 	}
 }

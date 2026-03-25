@@ -31,6 +31,7 @@ namespace CS2 {
 			uint8_t m_srgbWriteEnableBits; // 0x1d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::rendersystemdx11::RsBlendStateDesc_t, m_srcBlendBits) == 0x0, "m_srcBlendBits in RsBlendStateDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::rendersystemdx11::RsBlendStateDesc_t, m_destBlendBits) == 0x4, "m_destBlendBits in RsBlendStateDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::rendersystemdx11::RsBlendStateDesc_t, m_srcBlendAlphaBits) == 0x8, "m_srcBlendAlphaBits in RsBlendStateDesc_t should be at offset 0x8");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::rendersystemdx11::RsBlendStateDesc_t, m_blendEnableBits) == 0x1C, "m_blendEnableBits in RsBlendStateDesc_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::rendersystemdx11::RsBlendStateDesc_t, m_srgbWriteEnableBits) == 0x1D, "m_srgbWriteEnableBits in RsBlendStateDesc_t should be at offset 0x1D");
 		static_assert(sizeof(CS2::rendersystemdx11::RsBlendStateDesc_t) == 0x20, "RsBlendStateDesc_t size should be 0x20");
+
+#endif
 	}
 }

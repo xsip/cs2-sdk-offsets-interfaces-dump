@@ -24,7 +24,10 @@ namespace CS2 {
 			int16_t m_nExternalPoseNodeIdx; // 0x10 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIsExternalPoseSetNode_CDefinition, m_nExternalPoseNodeIdx) == 0x10, "m_nExternalPoseNodeIdx in CNmIsExternalPoseSetNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmIsExternalPoseSetNode_CDefinition) == 0x18, "CNmIsExternalPoseSetNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

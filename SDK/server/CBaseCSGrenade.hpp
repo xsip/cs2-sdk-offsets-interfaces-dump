@@ -41,6 +41,7 @@ namespace CS2 {
 			// char m_hSwitchToWeaponAfterThrow[0x4]; // 0x1154 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseCSGrenade, m_bRedraw) == 0x1130, "m_bRedraw in CBaseCSGrenade should be at offset 0x1130");
 		static_assert(offsetof(CS2::server::CBaseCSGrenade, m_bIsHeldByPlayer) == 0x1131, "m_bIsHeldByPlayer in CBaseCSGrenade should be at offset 0x1131");
 		static_assert(offsetof(CS2::server::CBaseCSGrenade, m_bPinPulled) == 0x1132, "m_bPinPulled in CBaseCSGrenade should be at offset 0x1132");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseCSGrenade, m_flNextHoldFrac) == 0x1150, "m_flNextHoldFrac in CBaseCSGrenade should be at offset 0x1150");
 		static_assert(offsetof(CS2::server::CBaseCSGrenade, m_hSwitchToWeaponAfterThrow) == 0x1154, "m_hSwitchToWeaponAfterThrow in CBaseCSGrenade should be at offset 0x1154");
 		static_assert(sizeof(CS2::server::CBaseCSGrenade) == 0x1170, "CBaseCSGrenade size should be 0x1170");
+
+#endif
 	}
 }

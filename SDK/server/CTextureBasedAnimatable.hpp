@@ -33,6 +33,7 @@ namespace CS2 {
 			float32 m_flStartTime; // 0x760 | Schema_Builtin | Size: 0x4
 			float32 m_flStartFrame; // 0x764 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTextureBasedAnimatable, m_bLoop) == 0x730, "m_bLoop in CTextureBasedAnimatable should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CTextureBasedAnimatable, m_flFPS) == 0x734, "m_flFPS in CTextureBasedAnimatable should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CTextureBasedAnimatable, m_hPositionKeys) == 0x738, "m_hPositionKeys in CTextureBasedAnimatable should be at offset 0x738");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTextureBasedAnimatable, m_flStartTime) == 0x760, "m_flStartTime in CTextureBasedAnimatable should be at offset 0x760");
 		static_assert(offsetof(CS2::server::CTextureBasedAnimatable, m_flStartFrame) == 0x764, "m_flStartFrame in CTextureBasedAnimatable should be at offset 0x764");
 		static_assert(sizeof(CS2::server::CTextureBasedAnimatable) == 0x768, "CTextureBasedAnimatable size should be 0x768");
+
+#endif
 	}
 }

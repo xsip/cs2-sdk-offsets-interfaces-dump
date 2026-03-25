@@ -29,6 +29,7 @@ namespace CS2 {
 			float32 m_flMaxTwistLimit; // 0x38 | Schema_Builtin | Size: 0x4
 			float32 m_flWeight; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIKJoint, m_nParentIndex) == 0x0, "m_nParentIndex in CNmIKJoint should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmIKJoint, m_nBodyIndex) == 0x4, "m_nBodyIndex in CNmIKJoint should be at offset 0x4");
 		static_assert(offsetof(CS2::animlib::CNmIKJoint, m_xLocalFrame) == 0x10, "m_xLocalFrame in CNmIKJoint should be at offset 0x10");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmIKJoint, m_flMaxTwistLimit) == 0x38, "m_flMaxTwistLimit in CNmIKJoint should be at offset 0x38");
 		static_assert(offsetof(CS2::animlib::CNmIKJoint, m_flWeight) == 0x3C, "m_flWeight in CNmIKJoint should be at offset 0x3C");
 		static_assert(sizeof(CS2::animlib::CNmIKJoint) == 0x40, "CNmIKJoint size should be 0x40");
+
+#endif
 	}
 }

@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flAlpha; // 0x200 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_TeleportBeam, m_nCPPosition) == 0x1D0, "m_nCPPosition in C_OP_TeleportBeam should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_TeleportBeam, m_nCPVelocity) == 0x1D4, "m_nCPVelocity in C_OP_TeleportBeam should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_TeleportBeam, m_nCPMisc) == 0x1D8, "m_nCPMisc in C_OP_TeleportBeam should be at offset 0x1D8");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_TeleportBeam, m_flArcSpeed) == 0x1FC, "m_flArcSpeed in C_OP_TeleportBeam should be at offset 0x1FC");
 		static_assert(offsetof(CS2::particles::C_OP_TeleportBeam, m_flAlpha) == 0x200, "m_flAlpha in C_OP_TeleportBeam should be at offset 0x200");
 		static_assert(sizeof(CS2::particles::C_OP_TeleportBeam) == 0x208, "C_OP_TeleportBeam size should be 0x208");
+
+#endif
 	}
 }

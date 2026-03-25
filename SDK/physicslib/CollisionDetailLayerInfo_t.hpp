@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bNotPickable; // 0x38 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CollisionDetailLayerInfo_t, m_sDescription) == 0x0, "m_sDescription in CollisionDetailLayerInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CollisionDetailLayerInfo_t, m_sFriendlyName) == 0x8, "m_sFriendlyName in CollisionDetailLayerInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::CollisionDetailLayerInfo_t, m_bIsQueryOnly) == 0x10, "m_bIsQueryOnly in CollisionDetailLayerInfo_t should be at offset 0x10");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::CollisionDetailLayerInfo_t, m_vecSubtreeDetailLayers) == 0x20, "m_vecSubtreeDetailLayers in CollisionDetailLayerInfo_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::CollisionDetailLayerInfo_t, m_bNotPickable) == 0x38, "m_bNotPickable in CollisionDetailLayerInfo_t should be at offset 0x38");
 		static_assert(sizeof(CS2::physicslib::CollisionDetailLayerInfo_t) == 0x40, "CollisionDetailLayerInfo_t size should be 0x40");
+
+#endif
 	}
 }

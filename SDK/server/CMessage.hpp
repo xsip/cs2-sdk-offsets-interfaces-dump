@@ -30,6 +30,7 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_sNoise; // 0x4c0 | Schema_Atomic | Size: 0x8
 			entity2::CEntityIOOutput m_OnShowMessage; // 0x4c8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMessage, m_iszMessage) == 0x4A8, "m_iszMessage in CMessage should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMessage, m_MessageVolume) == 0x4B0, "m_MessageVolume in CMessage should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CMessage, m_MessageAttenuation) == 0x4B4, "m_MessageAttenuation in CMessage should be at offset 0x4B4");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMessage, m_sNoise) == 0x4C0, "m_sNoise in CMessage should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CMessage, m_OnShowMessage) == 0x4C8, "m_OnShowMessage in CMessage should be at offset 0x4C8");
 		static_assert(sizeof(CS2::server::CMessage) == 0x4E0, "CMessage size should be 0x4E0");
+
+#endif
 	}
 }

@@ -30,6 +30,7 @@ namespace CS2 {
 			uint8_t m_nTriangleCount; // 0x15 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CMeshletDescriptor, m_PackedAABB) == 0x0, "m_PackedAABB in CMeshletDescriptor should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMeshletDescriptor, m_CullingData) == 0x8, "m_CullingData in CMeshletDescriptor should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CMeshletDescriptor, m_nVertexOffset) == 0xC, "m_nVertexOffset in CMeshletDescriptor should be at offset 0xC");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CMeshletDescriptor, m_nVertexCount) == 0x14, "m_nVertexCount in CMeshletDescriptor should be at offset 0x14");
 		static_assert(offsetof(CS2::modellib::CMeshletDescriptor, m_nTriangleCount) == 0x15, "m_nTriangleCount in CMeshletDescriptor should be at offset 0x15");
 		static_assert(sizeof(CS2::modellib::CMeshletDescriptor) == 0x18, "CMeshletDescriptor size should be 0x18");
+
+#endif
 	}
 }

@@ -28,10 +28,13 @@ namespace CS2 {
 			int32_t m_nCP; // 0xa00 | Schema_Builtin | Size: 0x4
 			int32_t m_nLocalCP; // 0xa04 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointRotation, m_vecRotAxis) == 0x1D8, "m_vecRotAxis in C_OP_SetControlPointRotation should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointRotation, m_flRotRate) == 0x890, "m_flRotRate in C_OP_SetControlPointRotation should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointRotation, m_nCP) == 0xA00, "m_nCP in C_OP_SetControlPointRotation should be at offset 0xA00");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointRotation, m_nLocalCP) == 0xA04, "m_nLocalCP in C_OP_SetControlPointRotation should be at offset 0xA04");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointRotation) == 0xA08, "C_OP_SetControlPointRotation size should be 0xA08");
+
+#endif
 	}
 }

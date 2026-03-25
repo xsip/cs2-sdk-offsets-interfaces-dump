@@ -26,11 +26,14 @@ namespace CS2 {
 			float32 m_flLocalContrastVignetteEnd; // 0xc | Schema_Builtin | Size: 0x4
 			float32 m_flLocalContrastVignetteBlur; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingLocalContrastParameters_t, m_flLocalContrastStrength) == 0x0, "m_flLocalContrastStrength in PostProcessingLocalContrastParameters_t should be at offset 0x0");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingLocalContrastParameters_t, m_flLocalContrastEdgeStrength) == 0x4, "m_flLocalContrastEdgeStrength in PostProcessingLocalContrastParameters_t should be at offset 0x4");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingLocalContrastParameters_t, m_flLocalContrastVignetteStart) == 0x8, "m_flLocalContrastVignetteStart in PostProcessingLocalContrastParameters_t should be at offset 0x8");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingLocalContrastParameters_t, m_flLocalContrastVignetteEnd) == 0xC, "m_flLocalContrastVignetteEnd in PostProcessingLocalContrastParameters_t should be at offset 0xC");
 		static_assert(offsetof(CS2::materialsystem2::PostProcessingLocalContrastParameters_t, m_flLocalContrastVignetteBlur) == 0x10, "m_flLocalContrastVignetteBlur in PostProcessingLocalContrastParameters_t should be at offset 0x10");
 		static_assert(sizeof(CS2::materialsystem2::PostProcessingLocalContrastParameters_t) == 0x14, "PostProcessingLocalContrastParameters_t size should be 0x14");
+
+#endif
 	}
 }

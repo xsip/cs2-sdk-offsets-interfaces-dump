@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 flMotorTargetAngSpeed; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 flMotorMaxTorque; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::vphysics2::constraint_axislimit_t, flMinRotation) == 0x0, "flMinRotation in constraint_axislimit_t should be at offset 0x0");
 		static_assert(offsetof(CS2::vphysics2::constraint_axislimit_t, flMaxRotation) == 0x4, "flMaxRotation in constraint_axislimit_t should be at offset 0x4");
 		static_assert(offsetof(CS2::vphysics2::constraint_axislimit_t, flMotorTargetAngSpeed) == 0x8, "flMotorTargetAngSpeed in constraint_axislimit_t should be at offset 0x8");
 		static_assert(offsetof(CS2::vphysics2::constraint_axislimit_t, flMotorMaxTorque) == 0xC, "flMotorMaxTorque in constraint_axislimit_t should be at offset 0xC");
 		static_assert(sizeof(CS2::vphysics2::constraint_axislimit_t) == 0x10, "constraint_axislimit_t size should be 0x10");
+
+#endif
 	}
 }

@@ -32,6 +32,7 @@ namespace CS2 {
 			int32_t m_nComponent; // 0x278 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_vecTestDir) == 0x1D8, "m_vecTestDir in C_INIT_RtEnvCull should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_vecTestNormal) == 0x1E4, "m_vecTestNormal in C_INIT_RtEnvCull should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_bUseVelocity) == 0x1F0, "m_bUseVelocity in C_INIT_RtEnvCull should be at offset 0x1F0");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_nRTEnvCP) == 0x274, "m_nRTEnvCP in C_INIT_RtEnvCull should be at offset 0x274");
 		static_assert(offsetof(CS2::particles::C_INIT_RtEnvCull, m_nComponent) == 0x278, "m_nComponent in C_INIT_RtEnvCull should be at offset 0x278");
 		static_assert(sizeof(CS2::particles::C_INIT_RtEnvCull) == 0x280, "C_INIT_RtEnvCull size should be 0x280");
+
+#endif
 	}
 }

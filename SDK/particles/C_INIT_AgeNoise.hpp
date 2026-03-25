@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecOffsetLoc; // 0x1f0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_bAbsVal) == 0x1D8, "m_bAbsVal in C_INIT_AgeNoise should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_bAbsValInv) == 0x1D9, "m_bAbsValInv in C_INIT_AgeNoise should be at offset 0x1D9");
 		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flOffset) == 0x1DC, "m_flOffset in C_INIT_AgeNoise should be at offset 0x1DC");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_flNoiseScaleLoc) == 0x1EC, "m_flNoiseScaleLoc in C_INIT_AgeNoise should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_INIT_AgeNoise, m_vecOffsetLoc) == 0x1F0, "m_vecOffsetLoc in C_INIT_AgeNoise should be at offset 0x1F0");
 		static_assert(sizeof(CS2::particles::C_INIT_AgeNoise) == 0x200, "C_INIT_AgeNoise size should be 0x200");
+
+#endif
 	}
 }

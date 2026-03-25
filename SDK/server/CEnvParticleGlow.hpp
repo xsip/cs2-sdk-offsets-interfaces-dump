@@ -28,11 +28,14 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hTextureOverride; // 0xcb8 | Schema_Atomic | Size: 0x8
 			char m_hTextureOverride[0x8]; // 0xcb8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvParticleGlow, m_flAlphaScale) == 0xCA8, "m_flAlphaScale in CEnvParticleGlow should be at offset 0xCA8");
 		static_assert(offsetof(CS2::server::CEnvParticleGlow, m_flRadiusScale) == 0xCAC, "m_flRadiusScale in CEnvParticleGlow should be at offset 0xCAC");
 		static_assert(offsetof(CS2::server::CEnvParticleGlow, m_flSelfIllumScale) == 0xCB0, "m_flSelfIllumScale in CEnvParticleGlow should be at offset 0xCB0");
 		static_assert(offsetof(CS2::server::CEnvParticleGlow, m_ColorTint) == 0xCB4, "m_ColorTint in CEnvParticleGlow should be at offset 0xCB4");
 		static_assert(offsetof(CS2::server::CEnvParticleGlow, m_hTextureOverride) == 0xCB8, "m_hTextureOverride in CEnvParticleGlow should be at offset 0xCB8");
 		static_assert(sizeof(CS2::server::CEnvParticleGlow) == 0xCC0, "CEnvParticleGlow size should be 0xCC0");
+
+#endif
 	}
 }

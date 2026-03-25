@@ -26,8 +26,11 @@ namespace CS2 {
 			animlib::CNmCurrentSyncEventNode_InfoType_t m_infoType; // 0x12 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmCurrentSyncEventNode_CDefinition, m_nSourceStateNodeIdx) == 0x10, "m_nSourceStateNodeIdx in CNmCurrentSyncEventNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmCurrentSyncEventNode_CDefinition, m_infoType) == 0x12, "m_infoType in CNmCurrentSyncEventNode::CDefinition should be at offset 0x12");
 		static_assert(sizeof(CS2::animlib::CNmCurrentSyncEventNode_CDefinition) == 0x18, "CNmCurrentSyncEventNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

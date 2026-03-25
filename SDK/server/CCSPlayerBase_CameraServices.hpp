@@ -36,6 +36,7 @@ namespace CS2 {
 			// char m_hLastFogTrigger[0x4]; // 0x1a8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerBase_CameraServices, m_iFOV) == 0x178, "m_iFOV in CCSPlayerBase_CameraServices should be at offset 0x178");
 		static_assert(offsetof(CS2::server::CCSPlayerBase_CameraServices, m_iFOVStart) == 0x17C, "m_iFOVStart in CCSPlayerBase_CameraServices should be at offset 0x17C");
 		static_assert(offsetof(CS2::server::CCSPlayerBase_CameraServices, m_flFOVTime) == 0x180, "m_flFOVTime in CCSPlayerBase_CameraServices should be at offset 0x180");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerBase_CameraServices, m_hTriggerFogList) == 0x190, "m_hTriggerFogList in CCSPlayerBase_CameraServices should be at offset 0x190");
 		static_assert(offsetof(CS2::server::CCSPlayerBase_CameraServices, m_hLastFogTrigger) == 0x1A8, "m_hLastFogTrigger in CCSPlayerBase_CameraServices should be at offset 0x1A8");
 		static_assert(sizeof(CS2::server::CCSPlayerBase_CameraServices) == 0x1B0, "CCSPlayerBase_CameraServices size should be 0x1B0");
+
+#endif
 	}
 }

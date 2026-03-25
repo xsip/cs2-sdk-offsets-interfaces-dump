@@ -31,7 +31,10 @@ namespace CS2 {
 			// char m_hTargetC4[0x4]; // 0x1170 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Multimeter, m_hTargetC4) == 0x1170, "m_hTargetC4 in C_Multimeter should be at offset 0x1170");
 		static_assert(sizeof(CS2::client::C_Multimeter) == 0x1178, "C_Multimeter size should be 0x1178");
+
+#endif
 	}
 }

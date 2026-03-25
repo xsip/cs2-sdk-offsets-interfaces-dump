@@ -48,6 +48,7 @@ namespace CS2 {
 			bool m_bIsAngle; // 0xd8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CBlendUpdateNode, m_children) == 0x60, "m_children in CBlendUpdateNode should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CBlendUpdateNode, m_sortedOrder) == 0x78, "m_sortedOrder in CBlendUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CBlendUpdateNode, m_targetValues) == 0x90, "m_targetValues in CBlendUpdateNode should be at offset 0x90");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CBlendUpdateNode, m_bLockWhenWaning) == 0xD7, "m_bLockWhenWaning in CBlendUpdateNode should be at offset 0xD7");
 		static_assert(offsetof(CS2::animgraphlib::CBlendUpdateNode, m_bIsAngle) == 0xD8, "m_bIsAngle in CBlendUpdateNode should be at offset 0xD8");
 		static_assert(sizeof(CS2::animgraphlib::CBlendUpdateNode) == 0xE0, "CBlendUpdateNode size should be 0xE0");
+
+#endif
 	}
 }

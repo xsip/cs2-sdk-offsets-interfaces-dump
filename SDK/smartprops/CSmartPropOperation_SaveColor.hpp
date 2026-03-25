@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_VariableName; // 0x50 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_SaveColor, m_VariableName) == 0x50, "m_VariableName in CSmartPropOperation_SaveColor should be at offset 0x50");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_SaveColor) == 0x58, "CSmartPropOperation_SaveColor size should be 0x58");
+
+#endif
 	}
 }

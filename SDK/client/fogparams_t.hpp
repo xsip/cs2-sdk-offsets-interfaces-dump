@@ -48,6 +48,7 @@ namespace CS2 {
 			bool m_bPadding2; // 0x66 | Schema_Builtin | Size: 0x1
 			bool m_bPadding; // 0x67 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::fogparams_t, dirPrimary) == 0x8, "dirPrimary in fogparams_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::fogparams_t, colorPrimary) == 0x14, "colorPrimary in fogparams_t should be at offset 0x14");
 		static_assert(offsetof(CS2::client::fogparams_t, colorSecondary) == 0x18, "colorSecondary in fogparams_t should be at offset 0x18");
@@ -74,5 +75,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::fogparams_t, m_bPadding2) == 0x66, "m_bPadding2 in fogparams_t should be at offset 0x66");
 		static_assert(offsetof(CS2::client::fogparams_t, m_bPadding) == 0x67, "m_bPadding in fogparams_t should be at offset 0x67");
 		static_assert(sizeof(CS2::client::fogparams_t) == 0x68, "fogparams_t size should be 0x68");
+
+#endif
 	}
 }

@@ -27,9 +27,12 @@ namespace CS2 {
 			animlib::CNmBitFlags m_eventConditionRules; // 0x14 | Schema_DeclaredClass | Size: 0x4
 			GlobalTypes::CGlobalSymbol m_defaultValue; // 0x18 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIDEventNode_CDefinition, m_nSourceStateNodeIdx) == 0x10, "m_nSourceStateNodeIdx in CNmIDEventNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmIDEventNode_CDefinition, m_eventConditionRules) == 0x14, "m_eventConditionRules in CNmIDEventNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmIDEventNode_CDefinition, m_defaultValue) == 0x18, "m_defaultValue in CNmIDEventNode::CDefinition should be at offset 0x18");
 		static_assert(sizeof(CS2::animlib::CNmIDEventNode_CDefinition) == 0x20, "CNmIDEventNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

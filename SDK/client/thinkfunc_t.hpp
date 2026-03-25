@@ -28,10 +28,13 @@ namespace CS2 {
 			entity2::GameTick_t m_nLastThinkTick; // 0x18 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::thinkfunc_t, m_hFn) == 0x8, "m_hFn in thinkfunc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::thinkfunc_t, m_nContext) == 0x10, "m_nContext in thinkfunc_t should be at offset 0x10");
 		static_assert(offsetof(CS2::client::thinkfunc_t, m_nNextThinkTick) == 0x14, "m_nNextThinkTick in thinkfunc_t should be at offset 0x14");
 		static_assert(offsetof(CS2::client::thinkfunc_t, m_nLastThinkTick) == 0x18, "m_nLastThinkTick in thinkfunc_t should be at offset 0x18");
 		static_assert(sizeof(CS2::client::thinkfunc_t) == 0x20, "thinkfunc_t size should be 0x20");
+
+#endif
 	}
 }

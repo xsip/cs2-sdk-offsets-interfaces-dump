@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_ID; // 0x20 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CPiecewiseCurve m_curve; // 0x28 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveEvent, m_ID) == 0x20, "m_ID in CNmFloatCurveEvent should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmFloatCurveEvent, m_curve) == 0x28, "m_curve in CNmFloatCurveEvent should be at offset 0x28");
 		static_assert(sizeof(CS2::animlib::CNmFloatCurveEvent) == 0x68, "CNmFloatCurveEvent size should be 0x68");
+
+#endif
 	}
 }

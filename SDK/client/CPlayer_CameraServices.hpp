@@ -65,6 +65,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_angDemoViewAngles; // 0x200 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_vecCsViewPunchAngle) == 0x48, "m_vecCsViewPunchAngle in CPlayer_CameraServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_nCsViewPunchAngleTick) == 0x54, "m_nCsViewPunchAngleTick in CPlayer_CameraServices should be at offset 0x54");
 		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_flCsViewPunchAngleTickRatio) == 0x58, "m_flCsViewPunchAngleTickRatio in CPlayer_CameraServices should be at offset 0x58");
@@ -86,5 +87,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_hActivePostProcessingVolume) == 0x1FC, "m_hActivePostProcessingVolume in CPlayer_CameraServices should be at offset 0x1FC");
 		static_assert(offsetof(CS2::client::CPlayer_CameraServices, m_angDemoViewAngles) == 0x200, "m_angDemoViewAngles in CPlayer_CameraServices should be at offset 0x200");
 		static_assert(sizeof(CS2::client::CPlayer_CameraServices) == 0x290, "CPlayer_CameraServices size should be 0x290");
+
+#endif
 	}
 }

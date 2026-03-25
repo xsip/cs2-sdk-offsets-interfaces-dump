@@ -33,9 +33,12 @@ namespace CS2 {
 			bool m_bSetFromDebugHistory; // 0x24 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::PhysicsRagdollPose_t, m_Transforms) == 0x8, "m_Transforms in PhysicsRagdollPose_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::PhysicsRagdollPose_t, m_hOwner) == 0x20, "m_hOwner in PhysicsRagdollPose_t should be at offset 0x20");
 		static_assert(offsetof(CS2::server::PhysicsRagdollPose_t, m_bSetFromDebugHistory) == 0x24, "m_bSetFromDebugHistory in PhysicsRagdollPose_t should be at offset 0x24");
 		static_assert(sizeof(CS2::server::PhysicsRagdollPose_t) == 0x28, "PhysicsRagdollPose_t size should be 0x28");
+
+#endif
 	}
 }

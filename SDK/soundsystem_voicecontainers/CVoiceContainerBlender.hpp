@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_flBlendFactor; // 0xd8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerBlender, m_firstSound) == 0xA8, "m_firstSound in CVoiceContainerBlender should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerBlender, m_secondSound) == 0xC0, "m_secondSound in CVoiceContainerBlender should be at offset 0xC0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerBlender, m_flBlendFactor) == 0xD8, "m_flBlendFactor in CVoiceContainerBlender should be at offset 0xD8");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerBlender) == 0xE0, "CVoiceContainerBlender size should be 0xE0");
+
+#endif
 	}
 }

@@ -46,6 +46,7 @@ namespace CS2 {
 			bool m_Entity_bEnabled; // 0x6e8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EnvCubemap, m_Entity_hCubemapTexture) == 0x688, "m_Entity_hCubemapTexture in C_EnvCubemap should be at offset 0x688");
 		static_assert(offsetof(CS2::client::C_EnvCubemap, m_Entity_bCustomCubemapTexture) == 0x690, "m_Entity_bCustomCubemapTexture in C_EnvCubemap should be at offset 0x690");
 		static_assert(offsetof(CS2::client::C_EnvCubemap, m_Entity_flInfluenceRadius) == 0x694, "m_Entity_flInfluenceRadius in C_EnvCubemap should be at offset 0x694");
@@ -65,5 +66,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EnvCubemap, m_Entity_bCopyDiffuseFromDefaultCubemap) == 0x6D8, "m_Entity_bCopyDiffuseFromDefaultCubemap in C_EnvCubemap should be at offset 0x6D8");
 		static_assert(offsetof(CS2::client::C_EnvCubemap, m_Entity_bEnabled) == 0x6E8, "m_Entity_bEnabled in C_EnvCubemap should be at offset 0x6E8");
 		static_assert(sizeof(CS2::client::C_EnvCubemap) == 0x6F0, "C_EnvCubemap size should be 0x6F0");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CNmControlParameterIDNode_CDefinition : public CS2::animlib::CNmIDValueNode_CDefinition {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animlib::CNmControlParameterIDNode_CDefinition) == 0x10, "CNmControlParameterIDNode::CDefinition size should be 0x10");
+
+#endif
 	}
 }

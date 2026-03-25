@@ -31,8 +31,11 @@ namespace CS2 {
 			bool m_bStartEnabled; // 0x894 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointClientUIDialog, m_hActivator) == 0x890, "m_hActivator in CPointClientUIDialog should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CPointClientUIDialog, m_bStartEnabled) == 0x894, "m_bStartEnabled in CPointClientUIDialog should be at offset 0x894");
 		static_assert(sizeof(CS2::server::CPointClientUIDialog) == 0x898, "CPointClientUIDialog size should be 0x898");
+
+#endif
 	}
 }

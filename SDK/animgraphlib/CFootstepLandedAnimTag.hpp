@@ -32,11 +32,14 @@ namespace CS2 {
 			animgraphlib::FootstepJumpPhase_t m_footstepJumpPhase; // 0x78 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_FootstepType) == 0x58, "m_FootstepType in CFootstepLandedAnimTag should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_OverrideSoundName) == 0x60, "m_OverrideSoundName in CFootstepLandedAnimTag should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_DebugAnimSourceString) == 0x68, "m_DebugAnimSourceString in CFootstepLandedAnimTag should be at offset 0x68");
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_BoneName) == 0x70, "m_BoneName in CFootstepLandedAnimTag should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CFootstepLandedAnimTag, m_footstepJumpPhase) == 0x78, "m_footstepJumpPhase in CFootstepLandedAnimTag should be at offset 0x78");
 		static_assert(sizeof(CS2::animgraphlib::CFootstepLandedAnimTag) == 0x80, "CFootstepLandedAnimTag size should be 0x80");
+
+#endif
 	}
 }

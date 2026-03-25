@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_totalHitsOnServer; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x24); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayer_BulletServices, m_totalHitsOnServer) == 0x48, "m_totalHitsOnServer in CCSPlayer_BulletServices should be at offset 0x48");
 		static_assert(sizeof(CS2::server::CCSPlayer_BulletServices) == 0x70, "CCSPlayer_BulletServices size should be 0x70");
+
+#endif
 	}
 }

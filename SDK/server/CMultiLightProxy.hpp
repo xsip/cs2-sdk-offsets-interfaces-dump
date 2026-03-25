@@ -34,6 +34,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CLightEntity>> m_vecLights; // 0x4d0 | Schema_Atomic | Size: 0x18
 			// char m_vecLights[0x18]; // 0x4d0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightNameFilter) == 0x4A8, "m_iszLightNameFilter in CMultiLightProxy should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMultiLightProxy, m_iszLightClassFilter) == 0x4B0, "m_iszLightClassFilter in CMultiLightProxy should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flLightRadiusFilter) == 0x4B8, "m_flLightRadiusFilter in CMultiLightProxy should be at offset 0x4B8");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMultiLightProxy, m_flCurrentBrightnessMultiplier) == 0x4C8, "m_flCurrentBrightnessMultiplier in CMultiLightProxy should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CMultiLightProxy, m_vecLights) == 0x4D0, "m_vecLights in CMultiLightProxy should be at offset 0x4D0");
 		static_assert(sizeof(CS2::server::CMultiLightProxy) == 0x4E8, "CMultiLightProxy size should be 0x4E8");
+
+#endif
 	}
 }

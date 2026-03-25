@@ -26,7 +26,10 @@ namespace CS2 {
 			animgraphlib::FootFallTagFoot_t m_foot; // 0x58 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CFootFallAnimTag, m_foot) == 0x58, "m_foot in CFootFallAnimTag should be at offset 0x58");
 		static_assert(sizeof(CS2::animgraphlib::CFootFallAnimTag) == 0x60, "CFootFallAnimTag size should be 0x60");
+
+#endif
 	}
 }

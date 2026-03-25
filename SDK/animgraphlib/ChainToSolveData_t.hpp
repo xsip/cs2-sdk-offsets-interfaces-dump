@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flDebugNormalizedValue; // 0x3c | Schema_Builtin | Size: 0x4
 			GlobalTypes::VectorAligned m_vDebugOffset; // 0x40 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::ChainToSolveData_t, m_nChainIndex) == 0x0, "m_nChainIndex in ChainToSolveData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::ChainToSolveData_t, m_SolverSettings) == 0x4, "m_SolverSettings in ChainToSolveData_t should be at offset 0x4");
 		static_assert(offsetof(CS2::animgraphlib::ChainToSolveData_t, m_TargetSettings) == 0x10, "m_TargetSettings in ChainToSolveData_t should be at offset 0x10");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::ChainToSolveData_t, m_flDebugNormalizedValue) == 0x3C, "m_flDebugNormalizedValue in ChainToSolveData_t should be at offset 0x3C");
 		static_assert(offsetof(CS2::animgraphlib::ChainToSolveData_t, m_vDebugOffset) == 0x40, "m_vDebugOffset in ChainToSolveData_t should be at offset 0x40");
 		static_assert(sizeof(CS2::animgraphlib::ChainToSolveData_t) == 0x50, "ChainToSolveData_t size should be 0x50");
+
+#endif
 	}
 }

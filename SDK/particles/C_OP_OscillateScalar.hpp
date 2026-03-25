@@ -37,6 +37,7 @@ namespace CS2 {
 			float32 m_flOscMult; // 0x1f8 | Schema_Builtin | Size: 0x4
 			float32 m_flOscAdd; // 0x1fc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_RateMin) == 0x1D0, "m_RateMin in C_OP_OscillateScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_RateMax) == 0x1D4, "m_RateMax in C_OP_OscillateScalar should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_FrequencyMin) == 0x1D8, "m_FrequencyMin in C_OP_OscillateScalar should be at offset 0x1D8");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flOscMult) == 0x1F8, "m_flOscMult in C_OP_OscillateScalar should be at offset 0x1F8");
 		static_assert(offsetof(CS2::particles::C_OP_OscillateScalar, m_flOscAdd) == 0x1FC, "m_flOscAdd in C_OP_OscillateScalar should be at offset 0x1FC");
 		static_assert(sizeof(CS2::particles::C_OP_OscillateScalar) == 0x200, "C_OP_OscillateScalar size should be 0x200");
+
+#endif
 	}
 }

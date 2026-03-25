@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 m_flMaxVolume; // 0x8 | Schema_Builtin | Size: 0x4
 			int32_t m_nInstancesAtMaxVolume; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CGainScalePerInstance, m_flMinVolume) == 0x0, "m_flMinVolume in CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CGainScalePerInstance, m_nInstancesAtMinVolume) == 0x4, "m_nInstancesAtMinVolume in CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CGainScalePerInstance, m_flMaxVolume) == 0x8, "m_flMaxVolume in CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CGainScalePerInstance, m_nInstancesAtMaxVolume) == 0xC, "m_nInstancesAtMaxVolume in CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance should be at offset 0xC");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CGainScalePerInstance) == 0x10, "CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance size should be 0x10");
+
+#endif
 	}
 }

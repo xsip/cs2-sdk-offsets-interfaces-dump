@@ -28,10 +28,13 @@ namespace CS2 {
 			bool m_bGamePaused; // 0x38 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_GameRules, __m_pChainEntity) == 0x8, "__m_pChainEntity in C_GameRules should be at offset 0x8");
 		static_assert(offsetof(CS2::client::C_GameRules, m_nTotalPausedTicks) == 0x30, "m_nTotalPausedTicks in C_GameRules should be at offset 0x30");
 		static_assert(offsetof(CS2::client::C_GameRules, m_nPauseStartTick) == 0x34, "m_nPauseStartTick in C_GameRules should be at offset 0x34");
 		static_assert(offsetof(CS2::client::C_GameRules, m_bGamePaused) == 0x38, "m_bGamePaused in C_GameRules should be at offset 0x38");
 		static_assert(sizeof(CS2::client::C_GameRules) == 0x40, "C_GameRules size should be 0x40");
+
+#endif
 	}
 }

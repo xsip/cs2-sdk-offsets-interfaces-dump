@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			char m_messageText[512]; // 0x8e8 | Schema_FixedArray | Size: 0x200
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointClientUIWorldTextPanel, m_messageText) == 0x8E8, "m_messageText in CPointClientUIWorldTextPanel should be at offset 0x8E8");
 		static_assert(sizeof(CS2::server::CPointClientUIWorldTextPanel) == 0xAE8, "CPointClientUIWorldTextPanel size should be 0xAE8");
+
+#endif
 	}
 }

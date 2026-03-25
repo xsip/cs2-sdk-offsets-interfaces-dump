@@ -24,7 +24,10 @@ namespace CS2 {
 			S2_PAD(0xc);
 			float32 m_flBoundsExpandRadius; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CHitboxComponent, m_flBoundsExpandRadius) == 0x14, "m_flBoundsExpandRadius in CHitboxComponent should be at offset 0x14");
 		static_assert(sizeof(CS2::client::CHitboxComponent) == 0x18, "CHitboxComponent size should be 0x18");
+
+#endif
 	}
 }

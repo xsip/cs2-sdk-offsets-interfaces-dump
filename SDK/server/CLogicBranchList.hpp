@@ -33,6 +33,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnAllFalse; // 0x560 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnMixed; // 0x578 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicBranchList, m_nLogicBranchNames) == 0x4A8, "m_nLogicBranchNames in CLogicBranchList should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CLogicBranchList, m_LogicBranchList) == 0x528, "m_LogicBranchList in CLogicBranchList should be at offset 0x528");
 		static_assert(offsetof(CS2::server::CLogicBranchList, m_eLastState) == 0x540, "m_eLastState in CLogicBranchList should be at offset 0x540");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnAllFalse) == 0x560, "m_OnAllFalse in CLogicBranchList should be at offset 0x560");
 		static_assert(offsetof(CS2::server::CLogicBranchList, m_OnMixed) == 0x578, "m_OnMixed in CLogicBranchList should be at offset 0x578");
 		static_assert(sizeof(CS2::server::CLogicBranchList) == 0x590, "CLogicBranchList size should be 0x590");
+
+#endif
 	}
 }

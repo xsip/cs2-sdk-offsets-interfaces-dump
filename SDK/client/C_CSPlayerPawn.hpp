@@ -211,6 +211,7 @@ namespace CS2 {
 			client::CountdownTimer m_holdTargetIDTimer; // 0x3ed0 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pBulletServices) == 0x1660, "m_pBulletServices in C_CSPlayerPawn should be at offset 0x1660");
 		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pHostageServices) == 0x1668, "m_pHostageServices in C_CSPlayerPawn should be at offset 0x1668");
 		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_pBuyServices) == 0x1670, "m_pBuyServices in C_CSPlayerPawn should be at offset 0x1670");
@@ -338,5 +339,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_iOldIDEntIndex) == 0x3ECC, "m_iOldIDEntIndex in C_CSPlayerPawn should be at offset 0x3ECC");
 		static_assert(offsetof(CS2::client::C_CSPlayerPawn, m_holdTargetIDTimer) == 0x3ED0, "m_holdTargetIDTimer in C_CSPlayerPawn should be at offset 0x3ED0");
 		static_assert(sizeof(CS2::client::C_CSPlayerPawn) == 0x3EF0, "C_CSPlayerPawn size should be 0x3EF0");
+
+#endif
 	}
 }

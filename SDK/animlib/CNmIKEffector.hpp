@@ -29,11 +29,14 @@ namespace CS2 {
 			float32 m_flWeight; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmIKEffector, m_nBodyIndex) == 0x0, "m_nBodyIndex in CNmIKEffector should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmIKEffector, m_bEnabled) == 0x4, "m_bEnabled in CNmIKEffector should be at offset 0x4");
 		static_assert(offsetof(CS2::animlib::CNmIKEffector, m_vTargetPosition) == 0x8, "m_vTargetPosition in CNmIKEffector should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::CNmIKEffector, m_qTargetOrientation) == 0x20, "m_qTargetOrientation in CNmIKEffector should be at offset 0x20");
 		static_assert(offsetof(CS2::animlib::CNmIKEffector, m_flWeight) == 0x30, "m_flWeight in CNmIKEffector should be at offset 0x30");
 		static_assert(sizeof(CS2::animlib::CNmIKEffector) == 0x40, "CNmIKEffector size should be 0x40");
+
+#endif
 	}
 }

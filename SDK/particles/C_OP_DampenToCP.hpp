@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flScale; // 0x1d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DampenToCP, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_DampenToCP should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DampenToCP, m_flRange) == 0x1D4, "m_flRange in C_OP_DampenToCP should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_DampenToCP, m_flScale) == 0x1D8, "m_flScale in C_OP_DampenToCP should be at offset 0x1D8");
 		static_assert(sizeof(CS2::particles::C_OP_DampenToCP) == 0x1E0, "C_OP_DampenToCP size should be 0x1E0");
+
+#endif
 	}
 }

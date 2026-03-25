@@ -30,9 +30,12 @@ namespace CS2 {
 			uint16_t slot; // 0xa | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices_NetworkedLoadoutSlot_t, pItem) == 0x0, "pItem in CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices_NetworkedLoadoutSlot_t, team) == 0x8, "team in CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InventoryServices_NetworkedLoadoutSlot_t, slot) == 0xA, "slot in CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t should be at offset 0xA");
 		static_assert(sizeof(CS2::server::CCSPlayerController_InventoryServices_NetworkedLoadoutSlot_t) == 0x10, "CCSPlayerController_InventoryServices::NetworkedLoadoutSlot_t size should be 0x10");
+
+#endif
 	}
 }

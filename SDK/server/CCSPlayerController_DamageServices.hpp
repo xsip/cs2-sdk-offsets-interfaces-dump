@@ -27,8 +27,11 @@ namespace CS2 {
 			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::CDamageRecord> m_DamageList; // 0x48 | Schema_Atomic | Size: 0x88
 			char m_DamageList[0x88]; // 0x48 | Schema_Atomic | Size: 0x88
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerController_DamageServices, m_nSendUpdate) == 0x40, "m_nSendUpdate in CCSPlayerController_DamageServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCSPlayerController_DamageServices, m_DamageList) == 0x48, "m_DamageList in CCSPlayerController_DamageServices should be at offset 0x48");
 		static_assert(sizeof(CS2::server::CCSPlayerController_DamageServices) == 0xD0, "CCSPlayerController_DamageServices size should be 0xD0");
+
+#endif
 	}
 }

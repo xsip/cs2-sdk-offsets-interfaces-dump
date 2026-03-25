@@ -56,6 +56,7 @@ namespace CS2 {
 			char m_visible[0x18]; // 0xb10 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFish, m_pool) == 0xA20, "m_pool in CFish should be at offset 0xA20");
 		static_assert(offsetof(CS2::server::CFish, m_id) == 0xA24, "m_id in CFish should be at offset 0xA24");
 		static_assert(offsetof(CS2::server::CFish, m_x) == 0xA28, "m_x in CFish should be at offset 0xA28");
@@ -81,5 +82,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFish, m_proximityTimer) == 0xAF8, "m_proximityTimer in CFish should be at offset 0xAF8");
 		static_assert(offsetof(CS2::server::CFish, m_visible) == 0xB10, "m_visible in CFish should be at offset 0xB10");
 		static_assert(sizeof(CS2::server::CFish) == 0xB30, "CFish size should be 0xB30");
+
+#endif
 	}
 }

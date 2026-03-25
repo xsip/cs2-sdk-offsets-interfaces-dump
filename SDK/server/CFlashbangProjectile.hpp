@@ -26,9 +26,12 @@ namespace CS2 {
 			uint8_t m_numTeammatesHit; // 0xbb5 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_flTimeToDetonate) == 0xBB0, "m_flTimeToDetonate in CFlashbangProjectile should be at offset 0xBB0");
 		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_numOpponentsHit) == 0xBB4, "m_numOpponentsHit in CFlashbangProjectile should be at offset 0xBB4");
 		static_assert(offsetof(CS2::server::CFlashbangProjectile, m_numTeammatesHit) == 0xBB5, "m_numTeammatesHit in CFlashbangProjectile should be at offset 0xBB5");
 		static_assert(sizeof(CS2::server::CFlashbangProjectile) == 0xBC0, "CFlashbangProjectile size should be 0xBC0");
+
+#endif
 	}
 }

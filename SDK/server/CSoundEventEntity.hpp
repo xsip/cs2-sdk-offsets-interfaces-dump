@@ -43,6 +43,7 @@ namespace CS2 {
 			int32_t m_nEntityIndexSelection; // 0x550 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundEventEntity, m_bStartOnSpawn) == 0x4A8, "m_bStartOnSpawn in CSoundEventEntity should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CSoundEventEntity, m_bToLocalPlayer) == 0x4A9, "m_bToLocalPlayer in CSoundEventEntity should be at offset 0x4A9");
 		static_assert(offsetof(CS2::server::CSoundEventEntity, m_bStopOnNew) == 0x4AA, "m_bStopOnNew in CSoundEventEntity should be at offset 0x4AA");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSoundEventEntity, m_hSource) == 0x54C, "m_hSource in CSoundEventEntity should be at offset 0x54C");
 		static_assert(offsetof(CS2::server::CSoundEventEntity, m_nEntityIndexSelection) == 0x550, "m_nEntityIndexSelection in CSoundEventEntity should be at offset 0x550");
 		static_assert(sizeof(CS2::server::CSoundEventEntity) == 0x558, "CSoundEventEntity size should be 0x558");
+
+#endif
 	}
 }

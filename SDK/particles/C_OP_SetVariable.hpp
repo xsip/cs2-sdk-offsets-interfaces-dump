@@ -32,6 +32,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionVecInput m_vecInput; // 0x2a8 | Schema_DeclaredClass | Size: 0x6b8
 			particleslib::CParticleCollectionFloatInput m_floatInput; // 0x960 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_variableReference) == 0x1D8, "m_variableReference in C_OP_SetVariable should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_transformInput) == 0x228, "m_transformInput in C_OP_SetVariable should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_positionOffset) == 0x290, "m_positionOffset in C_OP_SetVariable should be at offset 0x290");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_vecInput) == 0x2A8, "m_vecInput in C_OP_SetVariable should be at offset 0x2A8");
 		static_assert(offsetof(CS2::particles::C_OP_SetVariable, m_floatInput) == 0x960, "m_floatInput in C_OP_SetVariable should be at offset 0x960");
 		static_assert(sizeof(CS2::particles::C_OP_SetVariable) == 0xAD0, "C_OP_SetVariable size should be 0xAD0");
+
+#endif
 	}
 }

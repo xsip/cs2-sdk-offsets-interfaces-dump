@@ -26,10 +26,13 @@ namespace CS2 {
 			int32_t m_nWeight; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimActivity, m_name) == 0x0, "m_name in CAnimActivity should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimActivity, m_nActivity) == 0x10, "m_nActivity in CAnimActivity should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimActivity, m_nFlags) == 0x14, "m_nFlags in CAnimActivity should be at offset 0x14");
 		static_assert(offsetof(CS2::animationsystem::CAnimActivity, m_nWeight) == 0x18, "m_nWeight in CAnimActivity should be at offset 0x18");
 		static_assert(sizeof(CS2::animationsystem::CAnimActivity) == 0x20, "CAnimActivity size should be 0x20");
+
+#endif
 	}
 }

@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bLockBlendOnReset; // 0xa9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CDirectionalBlendUpdateNode, m_hSequences) == 0x5C, "m_hSequences in CDirectionalBlendUpdateNode should be at offset 0x5C");
 		static_assert(offsetof(CS2::animgraphlib::CDirectionalBlendUpdateNode, m_damping) == 0x80, "m_damping in CDirectionalBlendUpdateNode should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::CDirectionalBlendUpdateNode, m_blendValueSource) == 0x98, "m_blendValueSource in CDirectionalBlendUpdateNode should be at offset 0x98");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CDirectionalBlendUpdateNode, m_bLoop) == 0xA8, "m_bLoop in CDirectionalBlendUpdateNode should be at offset 0xA8");
 		static_assert(offsetof(CS2::animgraphlib::CDirectionalBlendUpdateNode, m_bLockBlendOnReset) == 0xA9, "m_bLockBlendOnReset in CDirectionalBlendUpdateNode should be at offset 0xA9");
 		static_assert(sizeof(CS2::animgraphlib::CDirectionalBlendUpdateNode) == 0xB0, "CDirectionalBlendUpdateNode size should be 0xB0");
+
+#endif
 	}
 }

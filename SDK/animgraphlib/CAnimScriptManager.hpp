@@ -26,7 +26,10 @@ namespace CS2 {
 			// char m_scriptInfo[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x178); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimScriptManager, m_scriptInfo) == 0x10, "m_scriptInfo in CAnimScriptManager should be at offset 0x10");
 		static_assert(sizeof(CS2::animgraphlib::CAnimScriptManager) == 0x1A0, "CAnimScriptManager size should be 0x1A0");
+
+#endif
 	}
 }

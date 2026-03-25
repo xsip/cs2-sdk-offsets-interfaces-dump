@@ -23,8 +23,11 @@ namespace CS2 {
 			float32 m_flMin; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flMax; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysXRange_t, m_flMin) == 0x0, "m_flMin in VPhysXRange_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysXRange_t, m_flMax) == 0x4, "m_flMax in VPhysXRange_t should be at offset 0x4");
 		static_assert(sizeof(CS2::modellib::VPhysXRange_t) == 0x8, "VPhysXRange_t size should be 0x8");
+
+#endif
 	}
 }

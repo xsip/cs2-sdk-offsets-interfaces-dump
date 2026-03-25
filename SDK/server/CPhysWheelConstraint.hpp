@@ -43,6 +43,7 @@ namespace CS2 {
 			// char m_hSteeringMimicsEntity[0x4]; // 0x534 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionFrequency) == 0x508, "m_flSuspensionFrequency in CPhysWheelConstraint should be at offset 0x508");
 		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionDampingRatio) == 0x50C, "m_flSuspensionDampingRatio in CPhysWheelConstraint should be at offset 0x50C");
 		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSuspensionHeightOffset) == 0x510, "m_flSuspensionHeightOffset in CPhysWheelConstraint should be at offset 0x510");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_flSpinAxisFriction) == 0x530, "m_flSpinAxisFriction in CPhysWheelConstraint should be at offset 0x530");
 		static_assert(offsetof(CS2::server::CPhysWheelConstraint, m_hSteeringMimicsEntity) == 0x534, "m_hSteeringMimicsEntity in CPhysWheelConstraint should be at offset 0x534");
 		static_assert(sizeof(CS2::server::CPhysWheelConstraint) == 0x540, "CPhysWheelConstraint size should be 0x540");
+
+#endif
 	}
 }

@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nLimitCount; // 0x48 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_LimitCount, m_nLimitCount) == 0x48, "m_nLimitCount in CPulseCell_LimitCount should be at offset 0x48");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_LimitCount) == 0x50, "CPulseCell_LimitCount size should be 0x50");
+
+#endif
 	}
 }

@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flEndFadeSize; // 0x240 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderLights, m_flAnimationRate) == 0x228, "m_flAnimationRate in C_OP_RenderLights should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_RenderLights, m_nAnimationType) == 0x22C, "m_nAnimationType in C_OP_RenderLights should be at offset 0x22C");
 		static_assert(offsetof(CS2::particles::C_OP_RenderLights, m_bAnimateInFPS) == 0x230, "m_bAnimateInFPS in C_OP_RenderLights should be at offset 0x230");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderLights, m_flStartFadeSize) == 0x23C, "m_flStartFadeSize in C_OP_RenderLights should be at offset 0x23C");
 		static_assert(offsetof(CS2::particles::C_OP_RenderLights, m_flEndFadeSize) == 0x240, "m_flEndFadeSize in C_OP_RenderLights should be at offset 0x240");
 		static_assert(sizeof(CS2::particles::C_OP_RenderLights) == 0x248, "C_OP_RenderLights size should be 0x248");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bDisabled; // 0x4b0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointGamestatsCounter, m_strStatisticName) == 0x4A8, "m_strStatisticName in CPointGamestatsCounter should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointGamestatsCounter, m_bDisabled) == 0x4B0, "m_bDisabled in CPointGamestatsCounter should be at offset 0x4B0");
 		static_assert(sizeof(CS2::server::CPointGamestatsCounter) == 0x4B8, "CPointGamestatsCounter size should be 0x4B8");
+
+#endif
 	}
 }

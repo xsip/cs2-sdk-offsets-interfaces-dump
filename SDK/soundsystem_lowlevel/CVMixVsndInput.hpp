@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nProcessor; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixVsndInput, m_defaultValue) == 0x10, "m_defaultValue in CVMixVsndInput should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixVsndInput, m_nProcessor) == 0x18, "m_nProcessor in CVMixVsndInput should be at offset 0x18");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixVsndInput) == 0x20, "CVMixVsndInput size should be 0x20");
+
+#endif
 	}
 }

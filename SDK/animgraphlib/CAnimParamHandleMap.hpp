@@ -23,7 +23,10 @@ namespace CS2 {
 			// GlobalTypes::CUtlHashtable< uint16, int16 > m_list; // 0x0 | Schema_Atomic | Size: 0x20
 			char m_list[0x20]; // 0x0 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimParamHandleMap, m_list) == 0x0, "m_list in CAnimParamHandleMap should be at offset 0x0");
 		static_assert(sizeof(CS2::animgraphlib::CAnimParamHandleMap) == 0x20, "CAnimParamHandleMap size should be 0x20");
+
+#endif
 	}
 }

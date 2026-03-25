@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_gearRatio; // 0x530 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysPulley, m_position2) == 0x508, "m_position2 in CPhysPulley should be at offset 0x508");
 		static_assert(offsetof(CS2::server::CPhysPulley, m_offset) == 0x514, "m_offset in CPhysPulley should be at offset 0x514");
 		static_assert(offsetof(CS2::server::CPhysPulley, m_addLength) == 0x52C, "m_addLength in CPhysPulley should be at offset 0x52C");
 		static_assert(offsetof(CS2::server::CPhysPulley, m_gearRatio) == 0x530, "m_gearRatio in CPhysPulley should be at offset 0x530");
 		static_assert(sizeof(CS2::server::CPhysPulley) == 0x538, "CPhysPulley size should be 0x538");
+
+#endif
 	}
 }

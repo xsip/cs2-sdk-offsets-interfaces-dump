@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bHull_MediumTall; // 0x8 | Schema_Builtin | Size: 0x1
 			bool m_bHull_Small; // 0x9 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::HullFlags_t, m_bHull_Human) == 0x0, "m_bHull_Human in HullFlags_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::HullFlags_t, m_bHull_SmallCentered) == 0x1, "m_bHull_SmallCentered in HullFlags_t should be at offset 0x1");
 		static_assert(offsetof(CS2::client::HullFlags_t, m_bHull_WideHuman) == 0x2, "m_bHull_WideHuman in HullFlags_t should be at offset 0x2");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::HullFlags_t, m_bHull_MediumTall) == 0x8, "m_bHull_MediumTall in HullFlags_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::HullFlags_t, m_bHull_Small) == 0x9, "m_bHull_Small in HullFlags_t should be at offset 0x9");
 		static_assert(sizeof(CS2::client::HullFlags_t) == 0xA, "HullFlags_t size should be 0xA");
+
+#endif
 	}
 }

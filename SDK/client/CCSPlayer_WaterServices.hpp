@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flSwimSoundTime; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x14); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_flWaterJumpTime) == 0x48, "m_flWaterJumpTime in CCSPlayer_WaterServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_vecWaterJumpVel) == 0x4C, "m_vecWaterJumpVel in CCSPlayer_WaterServices should be at offset 0x4C");
 		static_assert(offsetof(CS2::client::CCSPlayer_WaterServices, m_flSwimSoundTime) == 0x58, "m_flSwimSoundTime in CCSPlayer_WaterServices should be at offset 0x58");
 		static_assert(sizeof(CS2::client::CCSPlayer_WaterServices) == 0x70, "CCSPlayer_WaterServices size should be 0x70");
+
+#endif
 	}
 }

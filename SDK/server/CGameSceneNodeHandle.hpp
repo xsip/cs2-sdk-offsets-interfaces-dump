@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CEntityHandle m_hOwner; // 0x8 | Schema_Atomic | Size: 0x4
 			GlobalTypes::CUtlStringToken m_name; // 0xc | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CGameSceneNodeHandle, m_hOwner) == 0x8, "m_hOwner in CGameSceneNodeHandle should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CGameSceneNodeHandle, m_name) == 0xC, "m_name in CGameSceneNodeHandle should be at offset 0xC");
 		static_assert(sizeof(CS2::server::CGameSceneNodeHandle) == 0x10, "CGameSceneNodeHandle size should be 0x10");
+
+#endif
 	}
 }

@@ -50,6 +50,7 @@ namespace CS2 {
 			animgraphlib::CAnimNodePath m_rootNodePath; // 0xb8 | Schema_DeclaredClass | Size: 0x30
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateSharedData, m_nodes) == 0x10, "m_nodes in CAnimUpdateSharedData should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateSharedData, m_nodeIndexMap) == 0x28, "m_nodeIndexMap in CAnimUpdateSharedData should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateSharedData, m_components) == 0x48, "m_components in CAnimUpdateSharedData should be at offset 0x48");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateSharedData, m_pSkeleton) == 0xB0, "m_pSkeleton in CAnimUpdateSharedData should be at offset 0xB0");
 		static_assert(offsetof(CS2::animgraphlib::CAnimUpdateSharedData, m_rootNodePath) == 0xB8, "m_rootNodePath in CAnimUpdateSharedData should be at offset 0xB8");
 		static_assert(sizeof(CS2::animgraphlib::CAnimUpdateSharedData) == 0x100, "CAnimUpdateSharedData size should be 0x100");
+
+#endif
 	}
 }

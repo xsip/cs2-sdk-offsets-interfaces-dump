@@ -26,7 +26,10 @@ namespace CS2 {
 			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::SellbackPurchaseEntry_t> m_vecSellbackPurchaseEntries; // 0xd0 | Schema_Atomic | Size: 0x88
 			char m_vecSellbackPurchaseEntries[0x88]; // 0xd0 | Schema_Atomic | Size: 0x88
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayer_BuyServices, m_vecSellbackPurchaseEntries) == 0xD0, "m_vecSellbackPurchaseEntries in CCSPlayer_BuyServices should be at offset 0xD0");
 		static_assert(sizeof(CS2::server::CCSPlayer_BuyServices) == 0x158, "CCSPlayer_BuyServices size should be 0x158");
+
+#endif
 	}
 }

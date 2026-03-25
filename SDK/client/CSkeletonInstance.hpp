@@ -32,6 +32,7 @@ namespace CS2 {
 			uint8_t m_nHitboxSet; // 0x438 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x97); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSkeletonInstance, m_modelState) == 0x160, "m_modelState in CSkeletonInstance should be at offset 0x160");
 		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bIsAnimationEnabled) == 0x430, "m_bIsAnimationEnabled in CSkeletonInstance should be at offset 0x430");
 		static_assert(offsetof(CS2::client::CSkeletonInstance, m_bUseParentRenderBounds) == 0x431, "m_bUseParentRenderBounds in CSkeletonInstance should be at offset 0x431");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CSkeletonInstance, m_materialGroup) == 0x434, "m_materialGroup in CSkeletonInstance should be at offset 0x434");
 		static_assert(offsetof(CS2::client::CSkeletonInstance, m_nHitboxSet) == 0x438, "m_nHitboxSet in CSkeletonInstance should be at offset 0x438");
 		static_assert(sizeof(CS2::client::CSkeletonInstance) == 0x4D0, "CSkeletonInstance size should be 0x4D0");
+
+#endif
 	}
 }

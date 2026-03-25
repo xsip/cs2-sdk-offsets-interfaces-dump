@@ -24,7 +24,10 @@ namespace CS2 {
 			uint8_t m_nTransmitStateOwnedCounter; // 0x184 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4b); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CNetworkTransmitComponent, m_nTransmitStateOwnedCounter) == 0x184, "m_nTransmitStateOwnedCounter in CNetworkTransmitComponent should be at offset 0x184");
 		static_assert(sizeof(CS2::client::CNetworkTransmitComponent) == 0x1D0, "CNetworkTransmitComponent size should be 0x1D0");
+
+#endif
 	}
 }

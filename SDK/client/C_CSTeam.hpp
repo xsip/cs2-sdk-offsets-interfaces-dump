@@ -35,6 +35,7 @@ namespace CS2 {
 			char m_szTeamLogoImage[8]; // 0x964 | Schema_FixedArray | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSTeam, m_szTeamMatchStat) == 0x6C0, "m_szTeamMatchStat in C_CSTeam should be at offset 0x6C0");
 		static_assert(offsetof(CS2::client::C_CSTeam, m_numMapVictories) == 0x8C0, "m_numMapVictories in C_CSTeam should be at offset 0x8C0");
 		static_assert(offsetof(CS2::client::C_CSTeam, m_bSurrendered) == 0x8C4, "m_bSurrendered in C_CSTeam should be at offset 0x8C4");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSTeam, m_szTeamFlagImage) == 0x95C, "m_szTeamFlagImage in C_CSTeam should be at offset 0x95C");
 		static_assert(offsetof(CS2::client::C_CSTeam, m_szTeamLogoImage) == 0x964, "m_szTeamLogoImage in C_CSTeam should be at offset 0x964");
 		static_assert(sizeof(CS2::client::C_CSTeam) == 0x970, "C_CSTeam size should be 0x970");
+
+#endif
 	}
 }

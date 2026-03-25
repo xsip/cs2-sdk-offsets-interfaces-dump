@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bAdaptiveThreshold; // 0x360 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToWaterSurface, m_nSourceCP) == 0x1D8, "m_nSourceCP in C_OP_SetControlPointToWaterSurface should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToWaterSurface, m_nDestCP) == 0x1DC, "m_nDestCP in C_OP_SetControlPointToWaterSurface should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToWaterSurface, m_nFlowCP) == 0x1E0, "m_nFlowCP in C_OP_SetControlPointToWaterSurface should be at offset 0x1E0");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToWaterSurface, m_flRetestRate) == 0x1F0, "m_flRetestRate in C_OP_SetControlPointToWaterSurface should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToWaterSurface, m_bAdaptiveThreshold) == 0x360, "m_bAdaptiveThreshold in C_OP_SetControlPointToWaterSurface should be at offset 0x360");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToWaterSurface) == 0x368, "C_OP_SetControlPointToWaterSurface size should be 0x368");
+
+#endif
 	}
 }

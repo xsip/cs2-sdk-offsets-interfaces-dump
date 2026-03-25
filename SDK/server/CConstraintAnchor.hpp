@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_massScale; // 0xa20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CConstraintAnchor, m_massScale) == 0xA20, "m_massScale in CConstraintAnchor should be at offset 0xA20");
 		static_assert(sizeof(CS2::server::CConstraintAnchor) == 0xA30, "CConstraintAnchor size should be 0xA30");
+
+#endif
 	}
 }

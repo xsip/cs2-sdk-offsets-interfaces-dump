@@ -39,6 +39,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< int32 > m_lodBoneCounts; // 0xb8 | Schema_Atomic | Size: 0x18
 			// char m_lodBoneCounts[0x18]; // 0xb8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CAnimSkeleton, m_localSpaceTransforms) == 0x10, "m_localSpaceTransforms in CAnimSkeleton should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CAnimSkeleton, m_modelSpaceTransforms) == 0x28, "m_modelSpaceTransforms in CAnimSkeleton should be at offset 0x28");
 		static_assert(offsetof(CS2::modellib::CAnimSkeleton, m_boneNames) == 0x40, "m_boneNames in CAnimSkeleton should be at offset 0x40");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CAnimSkeleton, m_morphNames) == 0xA0, "m_morphNames in CAnimSkeleton should be at offset 0xA0");
 		static_assert(offsetof(CS2::modellib::CAnimSkeleton, m_lodBoneCounts) == 0xB8, "m_lodBoneCounts in CAnimSkeleton should be at offset 0xB8");
 		static_assert(sizeof(CS2::modellib::CAnimSkeleton) == 0xD0, "CAnimSkeleton size should be 0xD0");
+
+#endif
 	}
 }

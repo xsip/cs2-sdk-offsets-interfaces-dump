@@ -46,6 +46,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<char*> m_VoteOptions; // 0x640 | Schema_Atomic | Size: 0x18
 			// char m_VoteOptions[0x18]; // 0x640 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CVoteController, m_iActiveIssueIndex) == 0x4A8, "m_iActiveIssueIndex in CVoteController should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CVoteController, m_iOnlyTeamToVote) == 0x4AC, "m_iOnlyTeamToVote in CVoteController should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CVoteController, m_nVoteOptionCount) == 0x4B0, "m_nVoteOptionCount in CVoteController should be at offset 0x4B0");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CVoteController, m_potentialIssues) == 0x628, "m_potentialIssues in CVoteController should be at offset 0x628");
 		static_assert(offsetof(CS2::server::CVoteController, m_VoteOptions) == 0x640, "m_VoteOptions in CVoteController should be at offset 0x640");
 		static_assert(sizeof(CS2::server::CVoteController) == 0x658, "CVoteController size should be 0x658");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bPeakMode; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t, m_fldbOutputGain) == 0x0, "m_fldbOutputGain in VMixDynamicsCompressorDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t, m_fldbCompressionThreshold) == 0x4, "m_fldbCompressionThreshold in VMixDynamicsCompressorDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t, m_fldbKneeWidth) == 0x8, "m_fldbKneeWidth in VMixDynamicsCompressorDesc_t should be at offset 0x8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t, m_flWetMix) == 0x1C, "m_flWetMix in VMixDynamicsCompressorDesc_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t, m_bPeakMode) == 0x20, "m_bPeakMode in VMixDynamicsCompressorDesc_t should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixDynamicsCompressorDesc_t) == 0x24, "VMixDynamicsCompressorDesc_t size should be 0x24");
+
+#endif
 	}
 }

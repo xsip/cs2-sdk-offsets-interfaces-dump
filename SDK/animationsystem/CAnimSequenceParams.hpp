@@ -23,8 +23,11 @@ namespace CS2 {
 			float32 m_flFadeInTime; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flFadeOutTime; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimSequenceParams, m_flFadeInTime) == 0x0, "m_flFadeInTime in CAnimSequenceParams should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimSequenceParams, m_flFadeOutTime) == 0x4, "m_flFadeOutTime in CAnimSequenceParams should be at offset 0x4");
 		static_assert(sizeof(CS2::animationsystem::CAnimSequenceParams) == 0x8, "CAnimSequenceParams size should be 0x8");
+
+#endif
 	}
 }

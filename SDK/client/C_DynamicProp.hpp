@@ -50,6 +50,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecCachedRenderMaxs; // 0x1388 | Schema_Atomic | Size: 0xc
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_DynamicProp, m_bUseHitboxesForRenderBox) == 0x12D0, "m_bUseHitboxesForRenderBox in C_DynamicProp should be at offset 0x12D0");
 		static_assert(offsetof(CS2::client::C_DynamicProp, m_bUseAnimGraph) == 0x12D1, "m_bUseAnimGraph in C_DynamicProp should be at offset 0x12D1");
 		static_assert(offsetof(CS2::client::C_DynamicProp, m_pOutputAnimBegun) == 0x12D8, "m_pOutputAnimBegun in C_DynamicProp should be at offset 0x12D8");
@@ -74,5 +75,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_DynamicProp, m_vecCachedRenderMins) == 0x137C, "m_vecCachedRenderMins in C_DynamicProp should be at offset 0x137C");
 		static_assert(offsetof(CS2::client::C_DynamicProp, m_vecCachedRenderMaxs) == 0x1388, "m_vecCachedRenderMaxs in C_DynamicProp should be at offset 0x1388");
 		static_assert(sizeof(CS2::client::C_DynamicProp) == 0x13A0, "C_DynamicProp size should be 0x13A0");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bWarpOrientation; // 0x51 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CWarpSectionAnimTag, m_bWarpPosition) == 0x50, "m_bWarpPosition in CWarpSectionAnimTag should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CWarpSectionAnimTag, m_bWarpOrientation) == 0x51, "m_bWarpOrientation in CWarpSectionAnimTag should be at offset 0x51");
 		static_assert(sizeof(CS2::animgraphlib::CWarpSectionAnimTag) == 0x58, "CWarpSectionAnimTag size should be 0x58");
+
+#endif
 	}
 }

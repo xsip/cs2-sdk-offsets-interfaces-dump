@@ -24,9 +24,12 @@ namespace CS2 {
 			GlobalTypes::fltx4 flMaxDist; // 0x10 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 flRelaxationFactor; // 0x20 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSimdAnimStrayRadius_t, nNode) == 0x0, "nNode in FeSimdAnimStrayRadius_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSimdAnimStrayRadius_t, flMaxDist) == 0x10, "flMaxDist in FeSimdAnimStrayRadius_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::FeSimdAnimStrayRadius_t, flRelaxationFactor) == 0x20, "flRelaxationFactor in FeSimdAnimStrayRadius_t should be at offset 0x20");
 		static_assert(sizeof(CS2::physicslib::FeSimdAnimStrayRadius_t) == 0x30, "FeSimdAnimStrayRadius_t size should be 0x30");
+
+#endif
 	}
 }

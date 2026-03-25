@@ -30,11 +30,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<particles::PointDefinitionWithTimeValues_t> m_pointList; // 0x1e0 | Schema_Atomic | Size: 0x18
 			// char m_pointList[0x18]; // 0x1e0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_fMinDistance) == 0x1D0, "m_fMinDistance in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_flMaxDistance) == 0x1D4, "m_flMaxDistance in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_flTimeScale) == 0x1D8, "m_flTimeScale in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_bLoopedPath) == 0x1DC, "m_bLoopedPath in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath, m_pointList) == 0x1E0, "m_pointList in C_OP_ConstrainDistanceToUserSpecifiedPath should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_OP_ConstrainDistanceToUserSpecifiedPath) == 0x1F8, "C_OP_ConstrainDistanceToUserSpecifiedPath size should be 0x1F8");
+
+#endif
 	}
 }

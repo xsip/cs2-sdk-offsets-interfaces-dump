@@ -27,8 +27,11 @@ namespace CS2 {
 			char m_pSharedData[0x8]; // 0x10 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphModelBinding, m_modelName) == 0x8, "m_modelName in CAnimGraphModelBinding should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CAnimGraphModelBinding, m_pSharedData) == 0x10, "m_pSharedData in CAnimGraphModelBinding should be at offset 0x10");
 		static_assert(sizeof(CS2::animgraphlib::CAnimGraphModelBinding) == 0x28, "CAnimGraphModelBinding size should be 0x28");
+
+#endif
 	}
 }

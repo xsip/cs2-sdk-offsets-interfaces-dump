@@ -40,6 +40,7 @@ namespace CS2 {
 			particles::SpriteCardPerParticleScale_t m_nPerParticleZoom; // 0xa28 | Schema_DeclaredEnum | Size: 0x4
 			particles::SpriteCardPerParticleScale_t m_nPerParticleDistortion; // 0xa2c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureScaleU) == 0x0, "m_flFinalTextureScaleU in TextureControls_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureScaleV) == 0x170, "m_flFinalTextureScaleV in TextureControls_t should be at offset 0x170");
 		static_assert(offsetof(CS2::particles::TextureControls_t, m_flFinalTextureOffsetU) == 0x2E0, "m_flFinalTextureOffsetU in TextureControls_t should be at offset 0x2E0");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleZoom) == 0xA28, "m_nPerParticleZoom in TextureControls_t should be at offset 0xA28");
 		static_assert(offsetof(CS2::particles::TextureControls_t, m_nPerParticleDistortion) == 0xA2C, "m_nPerParticleDistortion in TextureControls_t should be at offset 0xA2C");
 		static_assert(sizeof(CS2::particles::TextureControls_t) == 0xA30, "TextureControls_t size should be 0xA30");
+
+#endif
 	}
 }

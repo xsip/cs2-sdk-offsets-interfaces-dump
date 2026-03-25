@@ -34,6 +34,7 @@ namespace CS2 {
 			float32 m_flGainInDecibels; // 0x13c | Schema_Builtin | Size: 0x4
 			GlobalTypes::CPiecewiseCurve m_gainSweep; // 0x140 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_bUseCurveForFrequency) == 0xA8, "m_bUseCurveForFrequency in CVoiceContainerShapedNoise should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flFrequency) == 0xAC, "m_flFrequency in CVoiceContainerShapedNoise should be at offset 0xAC");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_frequencySweep) == 0xB0, "m_frequencySweep in CVoiceContainerShapedNoise should be at offset 0xB0");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_flGainInDecibels) == 0x13C, "m_flGainInDecibels in CVoiceContainerShapedNoise should be at offset 0x13C");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise, m_gainSweep) == 0x140, "m_gainSweep in CVoiceContainerShapedNoise should be at offset 0x140");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerShapedNoise) == 0x180, "CVoiceContainerShapedNoise size should be 0x180");
+
+#endif
 	}
 }

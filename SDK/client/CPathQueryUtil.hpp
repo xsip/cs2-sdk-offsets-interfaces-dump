@@ -31,11 +31,14 @@ namespace CS2 {
 			bool m_bIsClosedLoop; // 0x78 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPathQueryUtil, m_PathToEntityTransform) == 0x10, "m_PathToEntityTransform in CPathQueryUtil should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CPathQueryUtil, m_vecPathSamplePositions) == 0x30, "m_vecPathSamplePositions in CPathQueryUtil should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CPathQueryUtil, m_vecPathSampleParameters) == 0x48, "m_vecPathSampleParameters in CPathQueryUtil should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CPathQueryUtil, m_vecPathSampleDistances) == 0x60, "m_vecPathSampleDistances in CPathQueryUtil should be at offset 0x60");
 		static_assert(offsetof(CS2::client::CPathQueryUtil, m_bIsClosedLoop) == 0x78, "m_bIsClosedLoop in CPathQueryUtil should be at offset 0x78");
 		static_assert(sizeof(CS2::client::CPathQueryUtil) == 0x80, "CPathQueryUtil size should be 0x80");
+
+#endif
 	}
 }

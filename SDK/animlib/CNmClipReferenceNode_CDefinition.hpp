@@ -22,6 +22,9 @@ namespace CS2 {
 		class CNmClipReferenceNode_CDefinition : public CS2::animlib::CNmPoseNode_CDefinition {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animlib::CNmClipReferenceNode_CDefinition) == 0x10, "CNmClipReferenceNode::CDefinition size should be 0x10");
+
+#endif
 	}
 }

@@ -26,9 +26,12 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecDefaultValue; // 0x25c | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_pszTimeOfDayParameter) == 0x1DC, "m_pszTimeOfDayParameter in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue, m_vecDefaultValue) == 0x25C, "m_vecDefaultValue in C_OP_SetControlPointPositionToTimeOfDayValue should be at offset 0x25C");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointPositionToTimeOfDayValue) == 0x270, "C_OP_SetControlPointPositionToTimeOfDayValue size should be 0x270");
+
+#endif
 	}
 }

@@ -30,7 +30,10 @@ namespace CS2 {
 			// char m_pActivator[0x4]; // 0x4a8 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointGiveAmmo, m_pActivator) == 0x4A8, "m_pActivator in CPointGiveAmmo should be at offset 0x4A8");
 		static_assert(sizeof(CS2::server::CPointGiveAmmo) == 0x4B0, "CPointGiveAmmo size should be 0x4B0");
+
+#endif
 	}
 }

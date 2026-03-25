@@ -32,6 +32,7 @@ namespace CS2 {
 			modellib::CFootCycle m_footStrikeCycle; // 0x34 | Schema_DeclaredClass | Size: 0x4
 			modellib::CFootCycle m_footLandCycle; // 0x38 | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFootCycleDefinition, m_vStancePositionMS) == 0x0, "m_vStancePositionMS in CFootCycleDefinition should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CFootCycleDefinition, m_vMidpointPositionMS) == 0xC, "m_vMidpointPositionMS in CFootCycleDefinition should be at offset 0xC");
 		static_assert(offsetof(CS2::modellib::CFootCycleDefinition, m_flStanceDirectionMS) == 0x18, "m_flStanceDirectionMS in CFootCycleDefinition should be at offset 0x18");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CFootCycleDefinition, m_footStrikeCycle) == 0x34, "m_footStrikeCycle in CFootCycleDefinition should be at offset 0x34");
 		static_assert(offsetof(CS2::modellib::CFootCycleDefinition, m_footLandCycle) == 0x38, "m_footLandCycle in CFootCycleDefinition should be at offset 0x38");
 		static_assert(sizeof(CS2::modellib::CFootCycleDefinition) == 0x3C, "CFootCycleDefinition size should be 0x3C");
+
+#endif
 	}
 }

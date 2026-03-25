@@ -33,9 +33,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerBase*> m_pSounds; // 0x20 | Schema_Atomic | Size: 0x18
 			// char m_pSounds[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CSoundContainerReferenceArray, m_bUseReference) == 0x0, "m_bUseReference in CSoundContainerReferenceArray should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CSoundContainerReferenceArray, m_sounds) == 0x8, "m_sounds in CSoundContainerReferenceArray should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CSoundContainerReferenceArray, m_pSounds) == 0x20, "m_pSounds in CSoundContainerReferenceArray should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CSoundContainerReferenceArray) == 0x38, "CSoundContainerReferenceArray size should be 0x38");
+
+#endif
 	}
 }

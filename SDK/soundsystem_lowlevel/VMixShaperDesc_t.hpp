@@ -26,11 +26,14 @@ namespace CS2 {
 			float32 m_flWetMix; // 0xc | Schema_Builtin | Size: 0x4
 			int32_t m_nOversampleFactor; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixShaperDesc_t, m_nShape) == 0x0, "m_nShape in VMixShaperDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixShaperDesc_t, m_fldbDrive) == 0x4, "m_fldbDrive in VMixShaperDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixShaperDesc_t, m_fldbOutputGain) == 0x8, "m_fldbOutputGain in VMixShaperDesc_t should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixShaperDesc_t, m_flWetMix) == 0xC, "m_flWetMix in VMixShaperDesc_t should be at offset 0xC");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixShaperDesc_t, m_nOversampleFactor) == 0x10, "m_nOversampleFactor in VMixShaperDesc_t should be at offset 0x10");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixShaperDesc_t) == 0x14, "VMixShaperDesc_t size should be 0x14");
+
+#endif
 	}
 }

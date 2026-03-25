@@ -25,7 +25,10 @@ namespace CS2 {
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x8 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CPlayerPawnComponent, __m_pChainEntity) == 0x8, "__m_pChainEntity in CPlayerPawnComponent should be at offset 0x8");
 		static_assert(sizeof(CS2::client::CPlayerPawnComponent) == 0x48, "CPlayerPawnComponent size should be 0x48");
+
+#endif
 	}
 }

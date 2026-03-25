@@ -25,9 +25,12 @@ namespace CS2 {
 			int16_t m_nLockLeftHandNodeIdx; // 0x1a | Schema_Builtin | Size: 0x2
 			float32 m_flBlendTimeSeconds; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CNmSnapWeaponNode_CDefinition, m_nEnabledNodeIdx) == 0x18, "m_nEnabledNodeIdx in CNmSnapWeaponNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::client::CNmSnapWeaponNode_CDefinition, m_nLockLeftHandNodeIdx) == 0x1A, "m_nLockLeftHandNodeIdx in CNmSnapWeaponNode::CDefinition should be at offset 0x1A");
 		static_assert(offsetof(CS2::client::CNmSnapWeaponNode_CDefinition, m_flBlendTimeSeconds) == 0x1C, "m_flBlendTimeSeconds in CNmSnapWeaponNode::CDefinition should be at offset 0x1C");
 		static_assert(sizeof(CS2::client::CNmSnapWeaponNode_CDefinition) == 0x20, "CNmSnapWeaponNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

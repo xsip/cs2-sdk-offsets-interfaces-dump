@@ -27,8 +27,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			pulse_runtime_lib::PulseRegisterMap_t m_RegisterMap; // 0x50 | Schema_DeclaredClass | Size: 0x30
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint, m_EntryChunk) == 0x48, "m_EntryChunk in CPulseCell_Inflow_BaseEntrypoint should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint, m_RegisterMap) == 0x50, "m_RegisterMap in CPulseCell_Inflow_BaseEntrypoint should be at offset 0x50");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint) == 0x80, "CPulseCell_Inflow_BaseEntrypoint size should be 0x80");
+
+#endif
 	}
 }

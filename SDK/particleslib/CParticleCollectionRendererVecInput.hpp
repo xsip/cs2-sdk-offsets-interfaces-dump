@@ -22,6 +22,9 @@ namespace CS2 {
 		class CParticleCollectionRendererVecInput : public CS2::particleslib::CParticleCollectionVecInput {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::particleslib::CParticleCollectionRendererVecInput) == 0x6B8, "CParticleCollectionRendererVecInput size should be 0x6B8");
+
+#endif
 	}
 }

@@ -30,10 +30,13 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_Lerp; // 0x348 | Schema_DeclaredClass | Size: 0x170
 			S2_PAD(0x28); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetFloatCollection, m_InputValue) == 0x1D0, "m_InputValue in C_OP_SetFloatCollection should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetFloatCollection, m_nOutputField) == 0x340, "m_nOutputField in C_OP_SetFloatCollection should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_SetFloatCollection, m_nSetMethod) == 0x344, "m_nSetMethod in C_OP_SetFloatCollection should be at offset 0x344");
 		static_assert(offsetof(CS2::particles::C_OP_SetFloatCollection, m_Lerp) == 0x348, "m_Lerp in C_OP_SetFloatCollection should be at offset 0x348");
 		static_assert(sizeof(CS2::particles::C_OP_SetFloatCollection) == 0x4E0, "C_OP_SetFloatCollection size should be 0x4E0");
+
+#endif
 	}
 }

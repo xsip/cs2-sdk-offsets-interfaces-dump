@@ -26,8 +26,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			pulse_runtime_lib::CPulse_ResumePoint m_WaitComplete; // 0x50 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase, m_nCursorsAllowedToWait) == 0x48, "m_nCursorsAllowedToWait in CPulseCell_WaitForCursorsWithTagBase should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase, m_WaitComplete) == 0x50, "m_WaitComplete in CPulseCell_WaitForCursorsWithTagBase should be at offset 0x50");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_WaitForCursorsWithTagBase) == 0x98, "CPulseCell_WaitForCursorsWithTagBase size should be 0x98");
+
+#endif
 	}
 }

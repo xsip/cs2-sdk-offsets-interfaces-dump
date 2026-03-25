@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bFilterGoalOvershoot; // 0x62 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CDistanceRemainingMetricEvaluator, m_flMaxDistance) == 0x50, "m_flMaxDistance in CDistanceRemainingMetricEvaluator should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CDistanceRemainingMetricEvaluator, m_flMinDistance) == 0x54, "m_flMinDistance in CDistanceRemainingMetricEvaluator should be at offset 0x54");
 		static_assert(offsetof(CS2::animgraphlib::CDistanceRemainingMetricEvaluator, m_flStartGoalFilterDistance) == 0x58, "m_flStartGoalFilterDistance in CDistanceRemainingMetricEvaluator should be at offset 0x58");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CDistanceRemainingMetricEvaluator, m_bFilterGoalDistance) == 0x61, "m_bFilterGoalDistance in CDistanceRemainingMetricEvaluator should be at offset 0x61");
 		static_assert(offsetof(CS2::animgraphlib::CDistanceRemainingMetricEvaluator, m_bFilterGoalOvershoot) == 0x62, "m_bFilterGoalOvershoot in CDistanceRemainingMetricEvaluator should be at offset 0x62");
 		static_assert(sizeof(CS2::animgraphlib::CDistanceRemainingMetricEvaluator) == 0x68, "CDistanceRemainingMetricEvaluator size should be 0x68");
+
+#endif
 	}
 }

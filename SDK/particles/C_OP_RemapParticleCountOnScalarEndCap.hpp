@@ -33,6 +33,7 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nSetMethod; // 0x1e8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountOnScalarEndCap, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_RemapParticleCountOnScalarEndCap should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountOnScalarEndCap, m_nInputMin) == 0x1D4, "m_nInputMin in C_OP_RemapParticleCountOnScalarEndCap should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountOnScalarEndCap, m_nInputMax) == 0x1D8, "m_nInputMax in C_OP_RemapParticleCountOnScalarEndCap should be at offset 0x1D8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountOnScalarEndCap, m_bBackwards) == 0x1E4, "m_bBackwards in C_OP_RemapParticleCountOnScalarEndCap should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapParticleCountOnScalarEndCap, m_nSetMethod) == 0x1E8, "m_nSetMethod in C_OP_RemapParticleCountOnScalarEndCap should be at offset 0x1E8");
 		static_assert(sizeof(CS2::particles::C_OP_RemapParticleCountOnScalarEndCap) == 0x1F0, "C_OP_RemapParticleCountOnScalarEndCap size should be 0x1F0");
+
+#endif
 	}
 }

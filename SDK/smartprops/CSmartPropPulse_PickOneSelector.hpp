@@ -27,8 +27,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x50 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_PickOneSelector, m_HandleShape) == 0x48, "m_HandleShape in CSmartPropPulse_PickOneSelector should be at offset 0x48");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_PickOneSelector, m_OutflowList) == 0x50, "m_OutflowList in CSmartPropPulse_PickOneSelector should be at offset 0x50");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_PickOneSelector) == 0x68, "CSmartPropPulse_PickOneSelector size should be 0x68");
+
+#endif
 	}
 }

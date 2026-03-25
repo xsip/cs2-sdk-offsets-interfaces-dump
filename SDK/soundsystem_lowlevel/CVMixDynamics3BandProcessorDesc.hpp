@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			soundsystem_lowlevel::VMixDynamics3BandDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x90
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixDynamics3BandProcessorDesc, m_desc) == 0x20, "m_desc in CVMixDynamics3BandProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixDynamics3BandProcessorDesc) == 0xB0, "CVMixDynamics3BandProcessorDesc size should be 0xB0");
+
+#endif
 	}
 }

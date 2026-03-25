@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeFloat m_flSurfaceSlopeMin; // 0x50 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeFloat m_flSurfaceSlopeMax; // 0x90 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_SurfaceAngle, m_flSurfaceSlopeMin) == 0x50, "m_flSurfaceSlopeMin in CSmartPropFilter_SurfaceAngle should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_SurfaceAngle, m_flSurfaceSlopeMax) == 0x90, "m_flSurfaceSlopeMax in CSmartPropFilter_SurfaceAngle should be at offset 0x90");
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilter_SurfaceAngle) == 0xD0, "CSmartPropFilter_SurfaceAngle size should be 0xD0");
+
+#endif
 	}
 }

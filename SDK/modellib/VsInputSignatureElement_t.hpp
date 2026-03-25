@@ -25,10 +25,13 @@ namespace CS2 {
 			char m_pD3DSemanticName[64]; // 0x80 | Schema_FixedArray | Size: 0x40
 			int32_t m_nD3DSemanticIndex; // 0xc0 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VsInputSignatureElement_t, m_pName) == 0x0, "m_pName in VsInputSignatureElement_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VsInputSignatureElement_t, m_pSemantic) == 0x40, "m_pSemantic in VsInputSignatureElement_t should be at offset 0x40");
 		static_assert(offsetof(CS2::modellib::VsInputSignatureElement_t, m_pD3DSemanticName) == 0x80, "m_pD3DSemanticName in VsInputSignatureElement_t should be at offset 0x80");
 		static_assert(offsetof(CS2::modellib::VsInputSignatureElement_t, m_nD3DSemanticIndex) == 0xC0, "m_nD3DSemanticIndex in VsInputSignatureElement_t should be at offset 0xC0");
 		static_assert(sizeof(CS2::modellib::VsInputSignatureElement_t) == 0xC4, "VsInputSignatureElement_t size should be 0xC4");
+
+#endif
 	}
 }

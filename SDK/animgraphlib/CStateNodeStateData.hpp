@@ -24,7 +24,10 @@ namespace CS2 {
 			animgraphlib::CAnimUpdateNodeRef m_pChild; // 0x0 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStateNodeStateData, m_pChild) == 0x0, "m_pChild in CStateNodeStateData should be at offset 0x0");
 		static_assert(sizeof(CS2::animgraphlib::CStateNodeStateData) == 0x18, "CStateNodeStateData size should be 0x18");
+
+#endif
 	}
 }

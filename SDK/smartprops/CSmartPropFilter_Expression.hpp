@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_Expression; // 0x50 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_Expression, m_Expression) == 0x50, "m_Expression in CSmartPropFilter_Expression should be at offset 0x50");
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilter_Expression) == 0x58, "CSmartPropFilter_Expression size should be 0x58");
+
+#endif
 	}
 }

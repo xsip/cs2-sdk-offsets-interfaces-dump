@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bQueueFinishLoading; // 0x52f | Schema_Builtin | Size: 0x1
 			S2_PAD(0x50); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupLoadStarted) == 0x4A8, "m_OnSpawnGroupLoadStarted in CInfoSpawnGroupLoadUnload should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupLoadFinished) == 0x4C0, "m_OnSpawnGroupLoadFinished in CInfoSpawnGroupLoadUnload should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_OnSpawnGroupUnloadStarted) == 0x4D8, "m_OnSpawnGroupUnloadStarted in CInfoSpawnGroupLoadUnload should be at offset 0x4D8");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bQueueActiveSpawnGroupChange) == 0x52E, "m_bQueueActiveSpawnGroupChange in CInfoSpawnGroupLoadUnload should be at offset 0x52E");
 		static_assert(offsetof(CS2::server::CInfoSpawnGroupLoadUnload, m_bQueueFinishLoading) == 0x52F, "m_bQueueFinishLoading in CInfoSpawnGroupLoadUnload should be at offset 0x52F");
 		static_assert(sizeof(CS2::server::CInfoSpawnGroupLoadUnload) == 0x580, "CInfoSpawnGroupLoadUnload size should be 0x580");
+
+#endif
 	}
 }

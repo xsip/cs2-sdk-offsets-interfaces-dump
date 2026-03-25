@@ -36,6 +36,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnFellBelowMin; // 0x510 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnFellBelowMax; // 0x528 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMathRemap, m_flInMin) == 0x4A8, "m_flInMin in CMathRemap should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CMathRemap, m_flInMax) == 0x4AC, "m_flInMax in CMathRemap should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CMathRemap, m_flOut1) == 0x4B0, "m_flOut1 in CMathRemap should be at offset 0x4B0");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CMathRemap, m_OnFellBelowMin) == 0x510, "m_OnFellBelowMin in CMathRemap should be at offset 0x510");
 		static_assert(offsetof(CS2::server::CMathRemap, m_OnFellBelowMax) == 0x528, "m_OnFellBelowMax in CMathRemap should be at offset 0x528");
 		static_assert(sizeof(CS2::server::CMathRemap) == 0x540, "CMathRemap size should be 0x540");
+
+#endif
 	}
 }

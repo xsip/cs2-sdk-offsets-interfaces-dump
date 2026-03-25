@@ -27,8 +27,11 @@ namespace CS2 {
 			S2_PAD(0x4);
 			pulse_runtime_lib::PulseSelectorOutflowList_t m_OutflowList; // 0x50 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_PickBestOutflowSelector, m_nCheckType) == 0x48, "m_nCheckType in CPulseCell_PickBestOutflowSelector should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_PickBestOutflowSelector, m_OutflowList) == 0x50, "m_OutflowList in CPulseCell_PickBestOutflowSelector should be at offset 0x50");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_PickBestOutflowSelector) == 0x68, "CPulseCell_PickBestOutflowSelector size should be 0x68");
+
+#endif
 	}
 }

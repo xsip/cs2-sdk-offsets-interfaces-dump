@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nCost; // 0x3c | Schema_Builtin | Size: 0x4
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::GameAmmoTypeInfo_t, m_nBuySize) == 0x38, "m_nBuySize in GameAmmoTypeInfo_t should be at offset 0x38");
 		static_assert(offsetof(CS2::client::GameAmmoTypeInfo_t, m_nCost) == 0x3C, "m_nCost in GameAmmoTypeInfo_t should be at offset 0x3C");
 		static_assert(sizeof(CS2::client::GameAmmoTypeInfo_t) == 0x50, "GameAmmoTypeInfo_t size should be 0x50");
+
+#endif
 	}
 }

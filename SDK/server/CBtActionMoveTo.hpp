@@ -40,6 +40,7 @@ namespace CS2 {
 			float32 m_flHidingSpotCheckDistanceThreshold; // 0xe0 | Schema_Builtin | Size: 0x4
 			float32 m_flNearestAreaDistanceThreshold; // 0xe4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBtActionMoveTo, m_szDestinationInputKey) == 0x60, "m_szDestinationInputKey in CBtActionMoveTo should be at offset 0x60");
 		static_assert(offsetof(CS2::server::CBtActionMoveTo, m_szHidingSpotInputKey) == 0x68, "m_szHidingSpotInputKey in CBtActionMoveTo should be at offset 0x68");
 		static_assert(offsetof(CS2::server::CBtActionMoveTo, m_szThreatInputKey) == 0x70, "m_szThreatInputKey in CBtActionMoveTo should be at offset 0x70");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBtActionMoveTo, m_flHidingSpotCheckDistanceThreshold) == 0xE0, "m_flHidingSpotCheckDistanceThreshold in CBtActionMoveTo should be at offset 0xE0");
 		static_assert(offsetof(CS2::server::CBtActionMoveTo, m_flNearestAreaDistanceThreshold) == 0xE4, "m_flNearestAreaDistanceThreshold in CBtActionMoveTo should be at offset 0xE4");
 		static_assert(sizeof(CS2::server::CBtActionMoveTo) == 0xE8, "CBtActionMoveTo size should be 0xE8");
+
+#endif
 	}
 }

@@ -43,6 +43,7 @@ namespace CS2 {
 			float32 m_flSFXSUseModelUVs; // 0x220 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXColorWarpAmount) == 0x1D8, "m_flSFXColorWarpAmount in C_INIT_StatusEffectCitadel should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXNormalAmount) == 0x1DC, "m_flSFXNormalAmount in C_INIT_StatusEffectCitadel should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXMetalnessAmount) == 0x1E0, "m_flSFXMetalnessAmount in C_INIT_StatusEffectCitadel should be at offset 0x1E0");
@@ -63,5 +64,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSDetailScrollZ) == 0x21C, "m_flSFXSDetailScrollZ in C_INIT_StatusEffectCitadel should be at offset 0x21C");
 		static_assert(offsetof(CS2::particles::C_INIT_StatusEffectCitadel, m_flSFXSUseModelUVs) == 0x220, "m_flSFXSUseModelUVs in C_INIT_StatusEffectCitadel should be at offset 0x220");
 		static_assert(sizeof(CS2::particles::C_INIT_StatusEffectCitadel) == 0x228, "C_INIT_StatusEffectCitadel size should be 0x228");
+
+#endif
 	}
 }

@@ -35,10 +35,13 @@ namespace CS2 {
 			float32 m_separationDuration; // 0x4c8 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_cancelTime; // 0x4cc | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_hMovingEntity) == 0x4C0, "m_hMovingEntity in CPhysicsEntitySolver should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_hPhysicsBlocker) == 0x4C4, "m_hPhysicsBlocker in CPhysicsEntitySolver should be at offset 0x4C4");
 		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_separationDuration) == 0x4C8, "m_separationDuration in CPhysicsEntitySolver should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CPhysicsEntitySolver, m_cancelTime) == 0x4CC, "m_cancelTime in CPhysicsEntitySolver should be at offset 0x4CC");
 		static_assert(sizeof(CS2::server::CPhysicsEntitySolver) == 0x4D0, "CPhysicsEntitySolver size should be 0x4D0");
+
+#endif
 	}
 }

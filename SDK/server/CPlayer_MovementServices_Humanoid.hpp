@@ -30,6 +30,7 @@ namespace CS2 {
 			int32_t m_nStepside; // 0x268 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector m_vecSmoothedVelocity; // 0x26c | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flStepSoundTime) == 0x240, "m_flStepSoundTime in CPlayer_MovementServices_Humanoid should be at offset 0x240");
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_flFallVelocity) == 0x244, "m_flFallVelocity in CPlayer_MovementServices_Humanoid should be at offset 0x244");
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_groundNormal) == 0x248, "m_groundNormal in CPlayer_MovementServices_Humanoid should be at offset 0x248");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_nStepside) == 0x268, "m_nStepside in CPlayer_MovementServices_Humanoid should be at offset 0x268");
 		static_assert(offsetof(CS2::server::CPlayer_MovementServices_Humanoid, m_vecSmoothedVelocity) == 0x26C, "m_vecSmoothedVelocity in CPlayer_MovementServices_Humanoid should be at offset 0x26C");
 		static_assert(sizeof(CS2::server::CPlayer_MovementServices_Humanoid) == 0x278, "CPlayer_MovementServices_Humanoid size should be 0x278");
+
+#endif
 	}
 }

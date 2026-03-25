@@ -39,11 +39,14 @@ namespace CS2 {
 			client::ExternalAnimGraphInactiveBehavior_t m_nInactiveBehavior; // 0x30 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::ExternalAnimGraph_t, m_hExtGraphHandle) == 0x0, "m_hExtGraphHandle in ExternalAnimGraph_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::ExternalAnimGraph_t, m_sExternalGraphSlotID) == 0x8, "m_sExternalGraphSlotID in ExternalAnimGraph_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::ExternalAnimGraph_t, m_hGraphDefinition) == 0x10, "m_hGraphDefinition in ExternalAnimGraph_t should be at offset 0x10");
 		static_assert(offsetof(CS2::client::ExternalAnimGraph_t, m_hExternalGraphOwner) == 0x18, "m_hExternalGraphOwner in ExternalAnimGraph_t should be at offset 0x18");
 		static_assert(offsetof(CS2::client::ExternalAnimGraph_t, m_nInactiveBehavior) == 0x30, "m_nInactiveBehavior in ExternalAnimGraph_t should be at offset 0x30");
 		static_assert(sizeof(CS2::client::ExternalAnimGraph_t) == 0x38, "ExternalAnimGraph_t size should be 0x38");
+
+#endif
 	}
 }

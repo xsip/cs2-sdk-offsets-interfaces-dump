@@ -32,8 +32,11 @@ namespace CS2 {
 			entity2::CNetworkVarChainer __m_pChainEntity; // 0x48 | Schema_DeclaredClass | Size: 0x28
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBodyComponent, m_pSceneNode) == 0x8, "m_pSceneNode in CBodyComponent should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CBodyComponent, __m_pChainEntity) == 0x48, "__m_pChainEntity in CBodyComponent should be at offset 0x48");
 		static_assert(sizeof(CS2::client::CBodyComponent) == 0x78, "CBodyComponent size should be 0x78");
+
+#endif
 	}
 }

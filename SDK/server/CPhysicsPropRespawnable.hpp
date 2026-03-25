@@ -28,11 +28,14 @@ namespace CS2 {
 			float32 m_flRespawnDuration; // 0xd10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalSpawnOrigin) == 0xCE0, "m_vOriginalSpawnOrigin in CPhysicsPropRespawnable should be at offset 0xCE0");
 		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalSpawnAngles) == 0xCEC, "m_vOriginalSpawnAngles in CPhysicsPropRespawnable should be at offset 0xCEC");
 		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalMins) == 0xCF8, "m_vOriginalMins in CPhysicsPropRespawnable should be at offset 0xCF8");
 		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_vOriginalMaxs) == 0xD04, "m_vOriginalMaxs in CPhysicsPropRespawnable should be at offset 0xD04");
 		static_assert(offsetof(CS2::server::CPhysicsPropRespawnable, m_flRespawnDuration) == 0xD10, "m_flRespawnDuration in CPhysicsPropRespawnable should be at offset 0xD10");
 		static_assert(sizeof(CS2::server::CPhysicsPropRespawnable) == 0xD20, "CPhysicsPropRespawnable size should be 0xD20");
+
+#endif
 	}
 }

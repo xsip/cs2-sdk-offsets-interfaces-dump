@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bSolo; // 0x21 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsBand_t, m_fldbGainInput) == 0x0, "m_fldbGainInput in VMixDynamicsBand_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsBand_t, m_fldbGainOutput) == 0x4, "m_fldbGainOutput in VMixDynamicsBand_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsBand_t, m_fldbThresholdBelow) == 0x8, "m_fldbThresholdBelow in VMixDynamicsBand_t should be at offset 0x8");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsBand_t, m_bEnable) == 0x20, "m_bEnable in VMixDynamicsBand_t should be at offset 0x20");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixDynamicsBand_t, m_bSolo) == 0x21, "m_bSolo in VMixDynamicsBand_t should be at offset 0x21");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixDynamicsBand_t) == 0x24, "VMixDynamicsBand_t size should be 0x24");
+
+#endif
 	}
 }

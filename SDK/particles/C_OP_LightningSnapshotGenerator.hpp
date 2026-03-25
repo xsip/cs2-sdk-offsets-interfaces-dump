@@ -41,6 +41,7 @@ namespace CS2 {
 			particleslib::CParticleCollectionFloatInput m_flRadiusEnd; // 0xee0 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CParticleCollectionFloatInput m_flDedicatedPool; // 0x1050 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPSnapshot) == 0x1D8, "m_nCPSnapshot in C_OP_LightningSnapshotGenerator should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPStartPnt) == 0x1DC, "m_nCPStartPnt in C_OP_LightningSnapshotGenerator should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_nCPEndPnt) == 0x1E0, "m_nCPEndPnt in C_OP_LightningSnapshotGenerator should be at offset 0x1E0");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flRadiusEnd) == 0xEE0, "m_flRadiusEnd in C_OP_LightningSnapshotGenerator should be at offset 0xEE0");
 		static_assert(offsetof(CS2::particles::C_OP_LightningSnapshotGenerator, m_flDedicatedPool) == 0x1050, "m_flDedicatedPool in C_OP_LightningSnapshotGenerator should be at offset 0x1050");
 		static_assert(sizeof(CS2::particles::C_OP_LightningSnapshotGenerator) == 0x11C0, "C_OP_LightningSnapshotGenerator size should be 0x11C0");
+
+#endif
 	}
 }

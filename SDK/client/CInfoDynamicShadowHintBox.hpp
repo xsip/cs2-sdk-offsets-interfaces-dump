@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vBoxMins; // 0x620 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vBoxMaxs; // 0x62c | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHintBox, m_vBoxMins) == 0x620, "m_vBoxMins in CInfoDynamicShadowHintBox should be at offset 0x620");
 		static_assert(offsetof(CS2::client::CInfoDynamicShadowHintBox, m_vBoxMaxs) == 0x62C, "m_vBoxMaxs in CInfoDynamicShadowHintBox should be at offset 0x62C");
 		static_assert(sizeof(CS2::client::CInfoDynamicShadowHintBox) == 0x638, "CInfoDynamicShadowHintBox size should be 0x638");
+
+#endif
 	}
 }

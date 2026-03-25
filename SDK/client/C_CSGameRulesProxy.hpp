@@ -28,7 +28,10 @@ namespace CS2 {
 		public:
 			client::C_CSGameRules* m_pGameRules; // 0x608 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSGameRulesProxy, m_pGameRules) == 0x608, "m_pGameRules in C_CSGameRulesProxy should be at offset 0x608");
 		static_assert(sizeof(CS2::client::C_CSGameRulesProxy) == 0x610, "C_CSGameRulesProxy size should be 0x610");
+
+#endif
 	}
 }

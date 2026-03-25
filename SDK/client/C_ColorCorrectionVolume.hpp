@@ -34,6 +34,7 @@ namespace CS2 {
 			char m_lookupFilename[512]; // 0xf78 | Schema_FixedArray | Size: 0x200
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastEnterWeight) == 0xF58, "m_LastEnterWeight in C_ColorCorrectionVolume should be at offset 0xF58");
 		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastEnterTime) == 0xF5C, "m_LastEnterTime in C_ColorCorrectionVolume should be at offset 0xF5C");
 		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_LastExitWeight) == 0xF60, "m_LastExitWeight in C_ColorCorrectionVolume should be at offset 0xF60");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_Weight) == 0xF74, "m_Weight in C_ColorCorrectionVolume should be at offset 0xF74");
 		static_assert(offsetof(CS2::client::C_ColorCorrectionVolume, m_lookupFilename) == 0xF78, "m_lookupFilename in C_ColorCorrectionVolume should be at offset 0xF78");
 		static_assert(sizeof(CS2::client::C_ColorCorrectionVolume) == 0x1180, "C_ColorCorrectionVolume size should be 0x1180");
+
+#endif
 	}
 }

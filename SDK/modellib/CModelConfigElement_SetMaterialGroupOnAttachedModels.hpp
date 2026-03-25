@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_MaterialGroupName; // 0x48 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_SetMaterialGroupOnAttachedModels, m_MaterialGroupName) == 0x48, "m_MaterialGroupName in CModelConfigElement_SetMaterialGroupOnAttachedModels should be at offset 0x48");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_SetMaterialGroupOnAttachedModels) == 0x50, "CModelConfigElement_SetMaterialGroupOnAttachedModels size should be 0x50");
+
+#endif
 	}
 }

@@ -61,6 +61,7 @@ namespace CS2 {
 			char m_MaterialVecVars[0x10]; // 0x1518 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderCables, m_flRadiusScale) == 0x220, "m_flRadiusScale in C_OP_RenderCables should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderCables, m_flAlphaScale) == 0x390, "m_flAlphaScale in C_OP_RenderCables should be at offset 0x390");
 		static_assert(offsetof(CS2::particles::C_OP_RenderCables, m_vecColorScale) == 0x500, "m_vecColorScale in C_OP_RenderCables should be at offset 0x500");
@@ -85,5 +86,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderCables, m_MaterialFloatVars) == 0x14F8, "m_MaterialFloatVars in C_OP_RenderCables should be at offset 0x14F8");
 		static_assert(offsetof(CS2::particles::C_OP_RenderCables, m_MaterialVecVars) == 0x1518, "m_MaterialVecVars in C_OP_RenderCables should be at offset 0x1518");
 		static_assert(sizeof(CS2::particles::C_OP_RenderCables) == 0x1538, "C_OP_RenderCables size should be 0x1538");
+
+#endif
 	}
 }

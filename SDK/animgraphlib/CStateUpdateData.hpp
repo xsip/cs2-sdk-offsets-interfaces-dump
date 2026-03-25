@@ -33,11 +33,14 @@ namespace CS2 {
 			modellib::AnimStateID m_stateID; // 0x40 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStateUpdateData, m_name) == 0x0, "m_name in CStateUpdateData should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CStateUpdateData, m_hScript) == 0x8, "m_hScript in CStateUpdateData should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CStateUpdateData, m_transitionIndices) == 0x10, "m_transitionIndices in CStateUpdateData should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::CStateUpdateData, m_actions) == 0x28, "m_actions in CStateUpdateData should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CStateUpdateData, m_stateID) == 0x40, "m_stateID in CStateUpdateData should be at offset 0x40");
 		static_assert(sizeof(CS2::animgraphlib::CStateUpdateData) == 0x48, "CStateUpdateData size should be 0x48");
+
+#endif
 	}
 }

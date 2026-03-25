@@ -32,11 +32,14 @@ namespace CS2 {
 			animgraphlib::AnimScriptType m_eScriptType; // 0x50 | Schema_DeclaredEnum | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::ScriptInfo_t, m_code) == 0x0, "m_code in ScriptInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::ScriptInfo_t, m_paramsModified) == 0x8, "m_paramsModified in ScriptInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::ScriptInfo_t, m_proxyReadParams) == 0x20, "m_proxyReadParams in ScriptInfo_t should be at offset 0x20");
 		static_assert(offsetof(CS2::animgraphlib::ScriptInfo_t, m_proxyWriteParams) == 0x38, "m_proxyWriteParams in ScriptInfo_t should be at offset 0x38");
 		static_assert(offsetof(CS2::animgraphlib::ScriptInfo_t, m_eScriptType) == 0x50, "m_eScriptType in ScriptInfo_t should be at offset 0x50");
 		static_assert(sizeof(CS2::animgraphlib::ScriptInfo_t) == 0x58, "ScriptInfo_t size should be 0x58");
+
+#endif
 	}
 }

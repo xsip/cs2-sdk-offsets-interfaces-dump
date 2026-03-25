@@ -61,6 +61,7 @@ namespace CS2 {
 			bool m_bProjectToBackfaces; // 0xa9 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CDecalInstance, m_sDecalGroup) == 0x0, "m_sDecalGroup in CDecalInstance should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_hMaterial) == 0x8, "m_hMaterial in CDecalInstance should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_sSequenceName) == 0x10, "m_sSequenceName in CDecalInstance should be at offset 0x10");
@@ -89,5 +90,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CDecalInstance, m_nDecalRtEncoding) == 0xA8, "m_nDecalRtEncoding in CDecalInstance should be at offset 0xA8");
 		static_assert(offsetof(CS2::client::CDecalInstance, m_bProjectToBackfaces) == 0xA9, "m_bProjectToBackfaces in CDecalInstance should be at offset 0xA9");
 		static_assert(sizeof(CS2::client::CDecalInstance) == 0xB0, "CDecalInstance size should be 0xB0");
+
+#endif
 	}
 }

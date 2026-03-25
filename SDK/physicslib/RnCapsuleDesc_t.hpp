@@ -25,7 +25,10 @@ namespace CS2 {
 			physicslib::RnCapsule_t m_Capsule; // 0x18 | Schema_DeclaredClass | Size: 0x1c
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnCapsuleDesc_t, m_Capsule) == 0x18, "m_Capsule in RnCapsuleDesc_t should be at offset 0x18");
 		static_assert(sizeof(CS2::physicslib::RnCapsuleDesc_t) == 0x38, "RnCapsuleDesc_t size should be 0x38");
+
+#endif
 	}
 }

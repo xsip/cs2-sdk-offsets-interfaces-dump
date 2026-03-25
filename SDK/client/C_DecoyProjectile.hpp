@@ -28,9 +28,12 @@ namespace CS2 {
 			entity2::GameTime_t m_flTimeParticleEffectSpawn; // 0x1460 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_nDecoyShotTick) == 0x1438, "m_nDecoyShotTick in C_DecoyProjectile should be at offset 0x1438");
 		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_nClientLastKnownDecoyShotTick) == 0x143C, "m_nClientLastKnownDecoyShotTick in C_DecoyProjectile should be at offset 0x143C");
 		static_assert(offsetof(CS2::client::C_DecoyProjectile, m_flTimeParticleEffectSpawn) == 0x1460, "m_flTimeParticleEffectSpawn in C_DecoyProjectile should be at offset 0x1460");
 		static_assert(sizeof(CS2::client::C_DecoyProjectile) == 0x1468, "C_DecoyProjectile size should be 0x1468");
+
+#endif
 	}
 }

@@ -54,6 +54,7 @@ namespace CS2 {
 			bool m_bHasAnimatedMaterialAttributes; // 0xff8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x16f); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBaseAnimGraph, m_graphControllerManager) == 0xE88, "m_graphControllerManager in CBaseAnimGraph should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::CBaseAnimGraph, m_pMainGraphController) == 0xF38, "m_pMainGraphController in CBaseAnimGraph should be at offset 0xF38");
 		static_assert(offsetof(CS2::client::CBaseAnimGraph, m_bInitiallyPopulateInterpHistory) == 0xF40, "m_bInitiallyPopulateInterpHistory in CBaseAnimGraph should be at offset 0xF40");
@@ -72,5 +73,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CBaseAnimGraph, m_bRagdollClientSide) == 0xFE9, "m_bRagdollClientSide in CBaseAnimGraph should be at offset 0xFE9");
 		static_assert(offsetof(CS2::client::CBaseAnimGraph, m_bHasAnimatedMaterialAttributes) == 0xFF8, "m_bHasAnimatedMaterialAttributes in CBaseAnimGraph should be at offset 0xFF8");
 		static_assert(sizeof(CS2::client::CBaseAnimGraph) == 0x1168, "CBaseAnimGraph size should be 0x1168");
+
+#endif
 	}
 }

@@ -23,7 +23,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			uint64_t m_pButtonStates[3]; // 0x8 | Schema_FixedArray | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CInButtonState, m_pButtonStates) == 0x8, "m_pButtonStates in CInButtonState should be at offset 0x8");
 		static_assert(sizeof(CS2::client::CInButtonState) == 0x20, "CInButtonState size should be 0x20");
+
+#endif
 	}
 }

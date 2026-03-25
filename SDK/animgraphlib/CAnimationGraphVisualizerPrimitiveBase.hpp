@@ -28,9 +28,12 @@ namespace CS2 {
 			int32_t m_nOwningAnimNodePathCount; // 0x38 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase, m_Type) == 0x8, "m_Type in CAnimationGraphVisualizerPrimitiveBase should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase, m_OwningAnimNodePaths) == 0xC, "m_OwningAnimNodePaths in CAnimationGraphVisualizerPrimitiveBase should be at offset 0xC");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase, m_nOwningAnimNodePathCount) == 0x38, "m_nOwningAnimNodePathCount in CAnimationGraphVisualizerPrimitiveBase should be at offset 0x38");
 		static_assert(sizeof(CS2::animgraphlib::CAnimationGraphVisualizerPrimitiveBase) == 0x40, "CAnimationGraphVisualizerPrimitiveBase size should be 0x40");
+
+#endif
 	}
 }

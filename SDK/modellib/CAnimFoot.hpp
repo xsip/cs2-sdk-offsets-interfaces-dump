@@ -26,11 +26,14 @@ namespace CS2 {
 			int32_t m_ankleBoneIndex; // 0x20 | Schema_Builtin | Size: 0x4
 			int32_t m_toeBoneIndex; // 0x24 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CAnimFoot, m_name) == 0x0, "m_name in CAnimFoot should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CAnimFoot, m_vBallOffset) == 0x8, "m_vBallOffset in CAnimFoot should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CAnimFoot, m_vHeelOffset) == 0x14, "m_vHeelOffset in CAnimFoot should be at offset 0x14");
 		static_assert(offsetof(CS2::modellib::CAnimFoot, m_ankleBoneIndex) == 0x20, "m_ankleBoneIndex in CAnimFoot should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CAnimFoot, m_toeBoneIndex) == 0x24, "m_toeBoneIndex in CAnimFoot should be at offset 0x24");
 		static_assert(sizeof(CS2::modellib::CAnimFoot) == 0x28, "CAnimFoot size should be 0x28");
+
+#endif
 	}
 }

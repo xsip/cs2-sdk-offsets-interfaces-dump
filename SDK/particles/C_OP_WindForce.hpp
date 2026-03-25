@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_vForce; // 0x1e0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_WindForce, m_vForce) == 0x1E0, "m_vForce in C_OP_WindForce should be at offset 0x1E0");
 		static_assert(sizeof(CS2::particles::C_OP_WindForce) == 0x1F0, "C_OP_WindForce size should be 0x1F0");
+
+#endif
 	}
 }

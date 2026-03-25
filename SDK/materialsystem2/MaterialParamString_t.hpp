@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlString m_value; // 0x8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::MaterialParamString_t, m_value) == 0x8, "m_value in MaterialParamString_t should be at offset 0x8");
 		static_assert(sizeof(CS2::materialsystem2::MaterialParamString_t) == 0x10, "MaterialParamString_t size should be 0x10");
+
+#endif
 	}
 }

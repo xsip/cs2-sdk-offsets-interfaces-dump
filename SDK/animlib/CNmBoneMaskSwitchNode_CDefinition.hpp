@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bSwitchDynamically; // 0x1c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskSwitchNode_CDefinition, m_nSwitchValueNodeIdx) == 0x10, "m_nSwitchValueNodeIdx in CNmBoneMaskSwitchNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskSwitchNode_CDefinition, m_nTrueValueNodeIdx) == 0x12, "m_nTrueValueNodeIdx in CNmBoneMaskSwitchNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskSwitchNode_CDefinition, m_nFalseValueNodeIdx) == 0x14, "m_nFalseValueNodeIdx in CNmBoneMaskSwitchNode::CDefinition should be at offset 0x14");
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskSwitchNode_CDefinition, m_flBlendTimeSeconds) == 0x18, "m_flBlendTimeSeconds in CNmBoneMaskSwitchNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskSwitchNode_CDefinition, m_bSwitchDynamically) == 0x1C, "m_bSwitchDynamically in CNmBoneMaskSwitchNode::CDefinition should be at offset 0x1C");
 		static_assert(sizeof(CS2::animlib::CNmBoneMaskSwitchNode_CDefinition) == 0x20, "CNmBoneMaskSwitchNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

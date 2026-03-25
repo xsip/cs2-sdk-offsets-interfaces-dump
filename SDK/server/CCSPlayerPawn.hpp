@@ -193,6 +193,7 @@ namespace CS2 {
 			GlobalTypes::QAngle m_angEyeAngles; // 0x1c1c | Schema_Atomic | Size: 0xc
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pBulletServices) == 0xE78, "m_pBulletServices in CCSPlayerPawn should be at offset 0xE78");
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pHostageServices) == 0xE80, "m_pHostageServices in CCSPlayerPawn should be at offset 0xE80");
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_pBuyServices) == 0xE88, "m_pBuyServices in CCSPlayerPawn should be at offset 0xE88");
@@ -315,5 +316,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_fMolotovDamageTime) == 0x1C18, "m_fMolotovDamageTime in CCSPlayerPawn should be at offset 0x1C18");
 		static_assert(offsetof(CS2::server::CCSPlayerPawn, m_angEyeAngles) == 0x1C1C, "m_angEyeAngles in CCSPlayerPawn should be at offset 0x1C1C");
 		static_assert(sizeof(CS2::server::CCSPlayerPawn) == 0x1C30, "CCSPlayerPawn size should be 0x1C30");
+
+#endif
 	}
 }

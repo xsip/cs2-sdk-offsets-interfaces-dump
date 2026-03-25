@@ -46,6 +46,7 @@ namespace CS2 {
 			bool m_bSetRadius; // 0x37e | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitSkinnedPositionFromCPSnapshot, m_nSnapshotControlPointNumber) == 0x1D8, "m_nSnapshotControlPointNumber in C_INIT_InitSkinnedPositionFromCPSnapshot should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitSkinnedPositionFromCPSnapshot, m_nControlPointNumber) == 0x1DC, "m_nControlPointNumber in C_INIT_InitSkinnedPositionFromCPSnapshot should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_InitSkinnedPositionFromCPSnapshot, m_bRandom) == 0x1E0, "m_bRandom in C_INIT_InitSkinnedPositionFromCPSnapshot should be at offset 0x1E0");
@@ -66,5 +67,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_InitSkinnedPositionFromCPSnapshot, m_bCopyAlpha) == 0x37D, "m_bCopyAlpha in C_INIT_InitSkinnedPositionFromCPSnapshot should be at offset 0x37D");
 		static_assert(offsetof(CS2::particles::C_INIT_InitSkinnedPositionFromCPSnapshot, m_bSetRadius) == 0x37E, "m_bSetRadius in C_INIT_InitSkinnedPositionFromCPSnapshot should be at offset 0x37E");
 		static_assert(sizeof(CS2::particles::C_INIT_InitSkinnedPositionFromCPSnapshot) == 0x380, "C_INIT_InitSkinnedPositionFromCPSnapshot size should be 0x380");
+
+#endif
 	}
 }

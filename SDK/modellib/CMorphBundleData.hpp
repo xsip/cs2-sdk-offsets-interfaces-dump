@@ -27,10 +27,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_ranges; // 0x20 | Schema_Atomic | Size: 0x18
 			// char m_ranges[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CMorphBundleData, m_flULeftSrc) == 0x0, "m_flULeftSrc in CMorphBundleData should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CMorphBundleData, m_flVTopSrc) == 0x4, "m_flVTopSrc in CMorphBundleData should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::CMorphBundleData, m_offsets) == 0x8, "m_offsets in CMorphBundleData should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CMorphBundleData, m_ranges) == 0x20, "m_ranges in CMorphBundleData should be at offset 0x20");
 		static_assert(sizeof(CS2::modellib::CMorphBundleData) == 0x38, "CMorphBundleData size should be 0x38");
+
+#endif
 	}
 }

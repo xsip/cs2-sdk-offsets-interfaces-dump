@@ -27,11 +27,14 @@ namespace CS2 {
 			uint16_t nFlags; // 0x16 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSphereRigid_t, vSphere) == 0x0, "vSphere in FeSphereRigid_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSphereRigid_t, nNode) == 0x10, "nNode in FeSphereRigid_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::FeSphereRigid_t, nCollisionMask) == 0x12, "nCollisionMask in FeSphereRigid_t should be at offset 0x12");
 		static_assert(offsetof(CS2::physicslib::FeSphereRigid_t, nVertexMapIndex) == 0x14, "nVertexMapIndex in FeSphereRigid_t should be at offset 0x14");
 		static_assert(offsetof(CS2::physicslib::FeSphereRigid_t, nFlags) == 0x16, "nFlags in FeSphereRigid_t should be at offset 0x16");
 		static_assert(sizeof(CS2::physicslib::FeSphereRigid_t) == 0x20, "FeSphereRigid_t size should be 0x20");
+
+#endif
 	}
 }

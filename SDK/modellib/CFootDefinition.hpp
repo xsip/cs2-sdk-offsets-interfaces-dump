@@ -30,6 +30,7 @@ namespace CS2 {
 			float32 m_flTraceHeight; // 0x38 | Schema_Builtin | Size: 0x4
 			float32 m_flTraceRadius; // 0x3c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFootDefinition, m_name) == 0x0, "m_name in CFootDefinition should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CFootDefinition, m_ankleBoneName) == 0x8, "m_ankleBoneName in CFootDefinition should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CFootDefinition, m_toeBoneName) == 0x10, "m_toeBoneName in CFootDefinition should be at offset 0x10");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CFootDefinition, m_flTraceHeight) == 0x38, "m_flTraceHeight in CFootDefinition should be at offset 0x38");
 		static_assert(offsetof(CS2::modellib::CFootDefinition, m_flTraceRadius) == 0x3C, "m_flTraceRadius in CFootDefinition should be at offset 0x3C");
 		static_assert(sizeof(CS2::modellib::CFootDefinition) == 0x40, "CFootDefinition size should be 0x40");
+
+#endif
 	}
 }

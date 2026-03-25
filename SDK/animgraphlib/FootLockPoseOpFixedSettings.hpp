@@ -47,6 +47,7 @@ namespace CS2 {
 			float32 m_flStretchExtensionScale; // 0x60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::FootLockPoseOpFixedSettings, m_footInfo) == 0x0, "m_footInfo in FootLockPoseOpFixedSettings should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::FootLockPoseOpFixedSettings, m_hipDampingSettings) == 0x18, "m_hipDampingSettings in FootLockPoseOpFixedSettings should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::FootLockPoseOpFixedSettings, m_nHipBoneIndex) == 0x30, "m_nHipBoneIndex in FootLockPoseOpFixedSettings should be at offset 0x30");
@@ -66,5 +67,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::FootLockPoseOpFixedSettings, m_flMaxStretchAmount) == 0x5C, "m_flMaxStretchAmount in FootLockPoseOpFixedSettings should be at offset 0x5C");
 		static_assert(offsetof(CS2::animgraphlib::FootLockPoseOpFixedSettings, m_flStretchExtensionScale) == 0x60, "m_flStretchExtensionScale in FootLockPoseOpFixedSettings should be at offset 0x60");
 		static_assert(sizeof(CS2::animgraphlib::FootLockPoseOpFixedSettings) == 0x68, "FootLockPoseOpFixedSettings size should be 0x68");
+
+#endif
 	}
 }

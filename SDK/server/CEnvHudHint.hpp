@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CUtlSymbolLarge m_iszMessage; // 0x4a8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvHudHint, m_iszMessage) == 0x4A8, "m_iszMessage in CEnvHudHint should be at offset 0x4A8");
 		static_assert(sizeof(CS2::server::CEnvHudHint) == 0x4B0, "CEnvHudHint size should be 0x4B0");
+
+#endif
 	}
 }

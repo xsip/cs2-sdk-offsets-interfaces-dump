@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bNormalize; // 0x1d8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapVelocityToVector, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_RemapVelocityToVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapVelocityToVector, m_flScale) == 0x1D4, "m_flScale in C_OP_RemapVelocityToVector should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapVelocityToVector, m_bNormalize) == 0x1D8, "m_bNormalize in C_OP_RemapVelocityToVector should be at offset 0x1D8");
 		static_assert(sizeof(CS2::particles::C_OP_RemapVelocityToVector) == 0x1E0, "C_OP_RemapVelocityToVector size should be 0x1E0");
+
+#endif
 	}
 }

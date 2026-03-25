@@ -28,6 +28,7 @@ namespace CS2 {
 			GlobalTypes::QuaternionStorage m_qAlignment; // 0x34 | Schema_Atomic | Size: 0x10
 			int32_t m_flags; // 0x44 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimBone, m_name) == 0x0, "m_name in CAnimBone should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimBone, m_parent) == 0x10, "m_parent in CAnimBone should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimBone, m_pos) == 0x14, "m_pos in CAnimBone should be at offset 0x14");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CAnimBone, m_qAlignment) == 0x34, "m_qAlignment in CAnimBone should be at offset 0x34");
 		static_assert(offsetof(CS2::animationsystem::CAnimBone, m_flags) == 0x44, "m_flags in CAnimBone should be at offset 0x44");
 		static_assert(sizeof(CS2::animationsystem::CAnimBone) == 0x48, "CAnimBone size should be 0x48");
+
+#endif
 	}
 }

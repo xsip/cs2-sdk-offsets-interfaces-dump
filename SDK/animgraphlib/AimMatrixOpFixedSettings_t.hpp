@@ -41,6 +41,7 @@ namespace CS2 {
 			animgraphlib::CBlendCurve m_biasAndClampBlendCurve; // 0xe0 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::AimMatrixOpFixedSettings_t, m_attachment) == 0x0, "m_attachment in AimMatrixOpFixedSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::AimMatrixOpFixedSettings_t, m_damping) == 0x80, "m_damping in AimMatrixOpFixedSettings_t should be at offset 0x80");
 		static_assert(offsetof(CS2::animgraphlib::AimMatrixOpFixedSettings_t, m_poseCacheHandles) == 0x98, "m_poseCacheHandles in AimMatrixOpFixedSettings_t should be at offset 0x98");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::AimMatrixOpFixedSettings_t, m_flBiasAndClampPitchOffset) == 0xDC, "m_flBiasAndClampPitchOffset in AimMatrixOpFixedSettings_t should be at offset 0xDC");
 		static_assert(offsetof(CS2::animgraphlib::AimMatrixOpFixedSettings_t, m_biasAndClampBlendCurve) == 0xE0, "m_biasAndClampBlendCurve in AimMatrixOpFixedSettings_t should be at offset 0xE0");
 		static_assert(sizeof(CS2::animgraphlib::AimMatrixOpFixedSettings_t) == 0xF0, "AimMatrixOpFixedSettings_t size should be 0xF0");
+
+#endif
 	}
 }

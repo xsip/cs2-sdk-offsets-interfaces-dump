@@ -37,6 +37,7 @@ namespace CS2 {
 			particles::HitboxLerpType_t m_nLerpType; // 0x32c | Schema_DeclaredEnum | Size: 0x4
 			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x330 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MoveToHitbox, m_modelInput) == 0x1D0, "m_modelInput in C_OP_MoveToHitbox should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MoveToHitbox, m_transformInput) == 0x230, "m_transformInput in C_OP_MoveToHitbox should be at offset 0x230");
 		static_assert(offsetof(CS2::particles::C_OP_MoveToHitbox, m_flLifeTimeLerpStart) == 0x29C, "m_flLifeTimeLerpStart in C_OP_MoveToHitbox should be at offset 0x29C");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_MoveToHitbox, m_nLerpType) == 0x32C, "m_nLerpType in C_OP_MoveToHitbox should be at offset 0x32C");
 		static_assert(offsetof(CS2::particles::C_OP_MoveToHitbox, m_flInterpolation) == 0x330, "m_flInterpolation in C_OP_MoveToHitbox should be at offset 0x330");
 		static_assert(sizeof(CS2::particles::C_OP_MoveToHitbox) == 0x4A0, "C_OP_MoveToHitbox size should be 0x4A0");
+
+#endif
 	}
 }

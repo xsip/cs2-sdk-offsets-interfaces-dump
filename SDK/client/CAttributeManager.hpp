@@ -36,6 +36,7 @@ namespace CS2 {
 			// char m_CachedResults[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CAttributeManager, m_Providers) == 0x8, "m_Providers in CAttributeManager should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CAttributeManager, m_iReapplyProvisionParity) == 0x20, "m_iReapplyProvisionParity in CAttributeManager should be at offset 0x20");
 		static_assert(offsetof(CS2::client::CAttributeManager, m_hOuter) == 0x24, "m_hOuter in CAttributeManager should be at offset 0x24");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CAttributeManager, m_ProviderType) == 0x2C, "m_ProviderType in CAttributeManager should be at offset 0x2C");
 		static_assert(offsetof(CS2::client::CAttributeManager, m_CachedResults) == 0x30, "m_CachedResults in CAttributeManager should be at offset 0x30");
 		static_assert(sizeof(CS2::client::CAttributeManager) == 0x50, "CAttributeManager size should be 0x50");
+
+#endif
 	}
 }

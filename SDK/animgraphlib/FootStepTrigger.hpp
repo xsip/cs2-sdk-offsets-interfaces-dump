@@ -26,9 +26,12 @@ namespace CS2 {
 			int32_t m_nFootIndex; // 0x18 | Schema_Builtin | Size: 0x4
 			animgraphlib::StepPhase m_triggerPhase; // 0x1c | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::FootStepTrigger, m_tags) == 0x0, "m_tags in FootStepTrigger should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::FootStepTrigger, m_nFootIndex) == 0x18, "m_nFootIndex in FootStepTrigger should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::FootStepTrigger, m_triggerPhase) == 0x1C, "m_triggerPhase in FootStepTrigger should be at offset 0x1C");
 		static_assert(sizeof(CS2::animgraphlib::FootStepTrigger) == 0x20, "FootStepTrigger size should be 0x20");
+
+#endif
 	}
 }

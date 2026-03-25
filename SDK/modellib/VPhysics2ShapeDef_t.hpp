@@ -35,11 +35,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint16 > m_CollisionAttributeIndices; // 0x60 | Schema_Atomic | Size: 0x18
 			// char m_CollisionAttributeIndices[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::VPhysics2ShapeDef_t, m_spheres) == 0x0, "m_spheres in VPhysics2ShapeDef_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::VPhysics2ShapeDef_t, m_capsules) == 0x18, "m_capsules in VPhysics2ShapeDef_t should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::VPhysics2ShapeDef_t, m_hulls) == 0x30, "m_hulls in VPhysics2ShapeDef_t should be at offset 0x30");
 		static_assert(offsetof(CS2::modellib::VPhysics2ShapeDef_t, m_meshes) == 0x48, "m_meshes in VPhysics2ShapeDef_t should be at offset 0x48");
 		static_assert(offsetof(CS2::modellib::VPhysics2ShapeDef_t, m_CollisionAttributeIndices) == 0x60, "m_CollisionAttributeIndices in VPhysics2ShapeDef_t should be at offset 0x60");
 		static_assert(sizeof(CS2::modellib::VPhysics2ShapeDef_t) == 0x78, "VPhysics2ShapeDef_t size should be 0x78");
+
+#endif
 	}
 }

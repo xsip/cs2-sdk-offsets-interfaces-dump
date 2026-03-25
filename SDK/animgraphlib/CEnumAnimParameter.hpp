@@ -30,9 +30,12 @@ namespace CS2 {
 			// char m_vecEnumReferenced[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CEnumAnimParameter, m_defaultValue) == 0x88, "m_defaultValue in CEnumAnimParameter should be at offset 0x88");
 		static_assert(offsetof(CS2::animgraphlib::CEnumAnimParameter, m_enumOptions) == 0x90, "m_enumOptions in CEnumAnimParameter should be at offset 0x90");
 		static_assert(offsetof(CS2::animgraphlib::CEnumAnimParameter, m_vecEnumReferenced) == 0xA8, "m_vecEnumReferenced in CEnumAnimParameter should be at offset 0xA8");
 		static_assert(sizeof(CS2::animgraphlib::CEnumAnimParameter) == 0xD8, "CEnumAnimParameter size should be 0xD8");
+
+#endif
 	}
 }

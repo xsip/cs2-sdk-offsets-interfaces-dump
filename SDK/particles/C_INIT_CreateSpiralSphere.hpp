@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bUseParticleCount; // 0x1f0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSpiralSphere, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_CreateSpiralSphere should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSpiralSphere, m_nOverrideCP) == 0x1DC, "m_nOverrideCP in C_INIT_CreateSpiralSphere should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSpiralSphere, m_nDensity) == 0x1E0, "m_nDensity in C_INIT_CreateSpiralSphere should be at offset 0x1E0");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSpiralSphere, m_flInitialSpeedMax) == 0x1EC, "m_flInitialSpeedMax in C_INIT_CreateSpiralSphere should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateSpiralSphere, m_bUseParticleCount) == 0x1F0, "m_bUseParticleCount in C_INIT_CreateSpiralSphere should be at offset 0x1F0");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateSpiralSphere) == 0x1F8, "C_INIT_CreateSpiralSphere size should be 0x1F8");
+
+#endif
 	}
 }

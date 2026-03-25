@@ -28,10 +28,13 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< Vector, Vector > m_pOutputForce; // 0x8b8 | Schema_Atomic | Size: 0x28
 			char m_pOutputForce[0x28]; // 0x8b8 | Schema_Atomic | Size: 0x28
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerImpact, m_flMagnitude) == 0x8A8, "m_flMagnitude in CTriggerImpact should be at offset 0x8A8");
 		static_assert(offsetof(CS2::server::CTriggerImpact, m_flNoise) == 0x8AC, "m_flNoise in CTriggerImpact should be at offset 0x8AC");
 		static_assert(offsetof(CS2::server::CTriggerImpact, m_flViewkick) == 0x8B0, "m_flViewkick in CTriggerImpact should be at offset 0x8B0");
 		static_assert(offsetof(CS2::server::CTriggerImpact, m_pOutputForce) == 0x8B8, "m_pOutputForce in CTriggerImpact should be at offset 0x8B8");
 		static_assert(sizeof(CS2::server::CTriggerImpact) == 0x8E0, "CTriggerImpact size should be 0x8E0");
+
+#endif
 	}
 }

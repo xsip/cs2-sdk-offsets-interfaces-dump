@@ -25,8 +25,11 @@ namespace CS2 {
 			float32 m_flRelativeProbabilityOfSpawn; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::ModelReference_t, m_model) == 0x0, "m_model in ModelReference_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::ModelReference_t, m_flRelativeProbabilityOfSpawn) == 0x8, "m_flRelativeProbabilityOfSpawn in ModelReference_t should be at offset 0x8");
 		static_assert(sizeof(CS2::particles::ModelReference_t) == 0x10, "ModelReference_t size should be 0x10");
+
+#endif
 	}
 }

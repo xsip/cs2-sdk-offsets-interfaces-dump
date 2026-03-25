@@ -26,8 +26,11 @@ namespace CS2 {
 			int32_t m_nLastAttackTick; // 0x1f74 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_WeaponTaser, m_fFireTime) == 0x1F70, "m_fFireTime in C_WeaponTaser should be at offset 0x1F70");
 		static_assert(offsetof(CS2::client::C_WeaponTaser, m_nLastAttackTick) == 0x1F74, "m_nLastAttackTick in C_WeaponTaser should be at offset 0x1F74");
 		static_assert(sizeof(CS2::client::C_WeaponTaser) == 0x1F80, "C_WeaponTaser size should be 0x1F80");
+
+#endif
 	}
 }

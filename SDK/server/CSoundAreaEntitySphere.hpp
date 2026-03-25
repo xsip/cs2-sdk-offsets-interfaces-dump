@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flRadius; // 0x4c8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundAreaEntitySphere, m_flRadius) == 0x4C8, "m_flRadius in CSoundAreaEntitySphere should be at offset 0x4C8");
 		static_assert(sizeof(CS2::server::CSoundAreaEntitySphere) == 0x4D0, "CSoundAreaEntitySphere size should be 0x4D0");
+
+#endif
 	}
 }

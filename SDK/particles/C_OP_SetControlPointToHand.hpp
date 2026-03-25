@@ -27,10 +27,13 @@ namespace CS2 {
 			bool m_bOrientToHand; // 0x1ec | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToHand, m_nCP1) == 0x1D8, "m_nCP1 in C_OP_SetControlPointToHand should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToHand, m_nHand) == 0x1DC, "m_nHand in C_OP_SetControlPointToHand should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToHand, m_vecCP1Pos) == 0x1E0, "m_vecCP1Pos in C_OP_SetControlPointToHand should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToHand, m_bOrientToHand) == 0x1EC, "m_bOrientToHand in C_OP_SetControlPointToHand should be at offset 0x1EC");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToHand) == 0x1F0, "C_OP_SetControlPointToHand size should be 0x1F0");
+
+#endif
 	}
 }

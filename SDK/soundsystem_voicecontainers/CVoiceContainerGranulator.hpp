@@ -31,6 +31,7 @@ namespace CS2 {
 			char m_sourceAudio[0x8]; // 0xd0 | Schema_Atomic | Size: 0x8
 			S2_PAD(0xb8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerGranulator, m_flGrainLength) == 0xB8, "m_flGrainLength in CVoiceContainerGranulator should be at offset 0xB8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerGranulator, m_flGrainCrossfadeAmount) == 0xBC, "m_flGrainCrossfadeAmount in CVoiceContainerGranulator should be at offset 0xBC");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerGranulator, m_flStartJitter) == 0xC0, "m_flStartJitter in CVoiceContainerGranulator should be at offset 0xC0");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerGranulator, m_bShouldWraparound) == 0xC8, "m_bShouldWraparound in CVoiceContainerGranulator should be at offset 0xC8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerGranulator, m_sourceAudio) == 0xD0, "m_sourceAudio in CVoiceContainerGranulator should be at offset 0xD0");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerGranulator) == 0x190, "CVoiceContainerGranulator size should be 0x190");
+
+#endif
 	}
 }

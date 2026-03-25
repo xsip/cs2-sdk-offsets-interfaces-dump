@@ -33,11 +33,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_szParticleConfig; // 0x240 | Schema_Atomic | Size: 0x8
 			particleslib::CPerParticleVecInput m_AggregationPos; // 0x248 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_CreateParticleSystemRenderer, m_hEffect) == 0x220, "m_hEffect in C_OP_CreateParticleSystemRenderer should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_CreateParticleSystemRenderer, m_nEventType) == 0x228, "m_nEventType in C_OP_CreateParticleSystemRenderer should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_CreateParticleSystemRenderer, m_vecCPs) == 0x230, "m_vecCPs in C_OP_CreateParticleSystemRenderer should be at offset 0x230");
 		static_assert(offsetof(CS2::particles::C_OP_CreateParticleSystemRenderer, m_szParticleConfig) == 0x240, "m_szParticleConfig in C_OP_CreateParticleSystemRenderer should be at offset 0x240");
 		static_assert(offsetof(CS2::particles::C_OP_CreateParticleSystemRenderer, m_AggregationPos) == 0x248, "m_AggregationPos in C_OP_CreateParticleSystemRenderer should be at offset 0x248");
 		static_assert(sizeof(CS2::particles::C_OP_CreateParticleSystemRenderer) == 0x900, "C_OP_CreateParticleSystemRenderer size should be 0x900");
+
+#endif
 	}
 }

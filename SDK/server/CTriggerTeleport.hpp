@@ -27,10 +27,13 @@ namespace CS2 {
 			bool m_bCheckDestIfClearForPlayer; // 0x89a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerTeleport, m_iLandmark) == 0x890, "m_iLandmark in CTriggerTeleport should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bUseLandmarkAngles) == 0x898, "m_bUseLandmarkAngles in CTriggerTeleport should be at offset 0x898");
 		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bMirrorPlayer) == 0x899, "m_bMirrorPlayer in CTriggerTeleport should be at offset 0x899");
 		static_assert(offsetof(CS2::server::CTriggerTeleport, m_bCheckDestIfClearForPlayer) == 0x89A, "m_bCheckDestIfClearForPlayer in CTriggerTeleport should be at offset 0x89A");
 		static_assert(sizeof(CS2::server::CTriggerTeleport) == 0x8A0, "CTriggerTeleport size should be 0x8A0");
+
+#endif
 	}
 }

@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vPosition; // 0x0 | Schema_Atomic | Size: 0xc
 			float32 m_flDirection; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::StanceInfo_t, m_vPosition) == 0x0, "m_vPosition in StanceInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::StanceInfo_t, m_flDirection) == 0xC, "m_flDirection in StanceInfo_t should be at offset 0xC");
 		static_assert(sizeof(CS2::animgraphlib::StanceInfo_t) == 0x10, "StanceInfo_t size should be 0x10");
+
+#endif
 	}
 }

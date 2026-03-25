@@ -24,9 +24,12 @@ namespace CS2 {
 			float32 m_flHoldTimeMS; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_flReleaseTimeMS; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEnvelopeDesc_t, m_flAttackTimeMS) == 0x0, "m_flAttackTimeMS in VMixEnvelopeDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEnvelopeDesc_t, m_flHoldTimeMS) == 0x4, "m_flHoldTimeMS in VMixEnvelopeDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixEnvelopeDesc_t, m_flReleaseTimeMS) == 0x8, "m_flReleaseTimeMS in VMixEnvelopeDesc_t should be at offset 0x8");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixEnvelopeDesc_t) == 0xC, "VMixEnvelopeDesc_t size should be 0xC");
+
+#endif
 	}
 }

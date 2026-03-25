@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flMaxSpringTension; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CDampedPathAnimMotorUpdater, m_flAnticipationTime) == 0x2C, "m_flAnticipationTime in CDampedPathAnimMotorUpdater should be at offset 0x2C");
 		static_assert(offsetof(CS2::animgraphlib::CDampedPathAnimMotorUpdater, m_flMinSpeedScale) == 0x30, "m_flMinSpeedScale in CDampedPathAnimMotorUpdater should be at offset 0x30");
 		static_assert(offsetof(CS2::animgraphlib::CDampedPathAnimMotorUpdater, m_hAnticipationPosParam) == 0x34, "m_hAnticipationPosParam in CDampedPathAnimMotorUpdater should be at offset 0x34");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CDampedPathAnimMotorUpdater, m_flMinSpringTension) == 0x3C, "m_flMinSpringTension in CDampedPathAnimMotorUpdater should be at offset 0x3C");
 		static_assert(offsetof(CS2::animgraphlib::CDampedPathAnimMotorUpdater, m_flMaxSpringTension) == 0x40, "m_flMaxSpringTension in CDampedPathAnimMotorUpdater should be at offset 0x40");
 		static_assert(sizeof(CS2::animgraphlib::CDampedPathAnimMotorUpdater) == 0x48, "CDampedPathAnimMotorUpdater size should be 0x48");
+
+#endif
 	}
 }

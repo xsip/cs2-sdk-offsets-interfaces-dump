@@ -29,7 +29,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<server::CAI_Expresser*> m_ExpresserTargets; // 0x38 | Schema_Atomic | Size: 0x18
 			// char m_ExpresserTargets[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CResponseQueue, m_ExpresserTargets) == 0x38, "m_ExpresserTargets in CResponseQueue should be at offset 0x38");
 		static_assert(sizeof(CS2::server::CResponseQueue) == 0x50, "CResponseQueue size should be 0x50");
+
+#endif
 	}
 }

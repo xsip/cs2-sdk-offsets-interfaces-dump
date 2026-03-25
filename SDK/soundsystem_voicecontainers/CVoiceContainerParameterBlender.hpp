@@ -33,6 +33,7 @@ namespace CS2 {
 			GlobalTypes::CPiecewiseCurve m_curve3; // 0x168 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CPiecewiseCurve m_curve4; // 0x1a8 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerParameterBlender, m_firstSound) == 0xA8, "m_firstSound in CVoiceContainerParameterBlender should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerParameterBlender, m_secondSound) == 0xC0, "m_secondSound in CVoiceContainerParameterBlender should be at offset 0xC0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerParameterBlender, m_bEnableOcclusionBlend) == 0xD8, "m_bEnableOcclusionBlend in CVoiceContainerParameterBlender should be at offset 0xD8");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerParameterBlender, m_curve3) == 0x168, "m_curve3 in CVoiceContainerParameterBlender should be at offset 0x168");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerParameterBlender, m_curve4) == 0x1A8, "m_curve4 in CVoiceContainerParameterBlender should be at offset 0x1A8");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerParameterBlender) == 0x1E8, "CVoiceContainerParameterBlender size should be 0x1E8");
+
+#endif
 	}
 }

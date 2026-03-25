@@ -53,6 +53,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnLerpFinished; // 0x900 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnDetached; // 0x918 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpTarget) == 0x890, "m_iszLerpTarget in CTriggerLerpObject should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_hLerpTarget) == 0x898, "m_hLerpTarget in CTriggerLerpObject should be at offset 0x898");
 		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_iszLerpTargetAttachment) == 0x8A0, "m_iszLerpTargetAttachment in CTriggerLerpObject should be at offset 0x8A0");
@@ -70,5 +71,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnLerpFinished) == 0x900, "m_OnLerpFinished in CTriggerLerpObject should be at offset 0x900");
 		static_assert(offsetof(CS2::server::CTriggerLerpObject, m_OnDetached) == 0x918, "m_OnDetached in CTriggerLerpObject should be at offset 0x918");
 		static_assert(sizeof(CS2::server::CTriggerLerpObject) == 0x930, "CTriggerLerpObject size should be 0x930");
+
+#endif
 	}
 }

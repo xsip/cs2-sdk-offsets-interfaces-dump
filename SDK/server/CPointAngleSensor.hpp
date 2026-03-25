@@ -47,6 +47,7 @@ namespace CS2 {
 			// GlobalTypes::CEntityOutputTemplate< float32, float32 > m_FacingPercentage; // 0x528 | Schema_Atomic | Size: 0x20
 			char m_FacingPercentage[0x20]; // 0x528 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointAngleSensor, m_bDisabled) == 0x4A8, "m_bDisabled in CPointAngleSensor should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointAngleSensor, m_nLookAtName) == 0x4B0, "m_nLookAtName in CPointAngleSensor should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPointAngleSensor, m_hTargetEntity) == 0x4B8, "m_hTargetEntity in CPointAngleSensor should be at offset 0x4B8");
@@ -60,5 +61,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPointAngleSensor, m_TargetDir) == 0x500, "m_TargetDir in CPointAngleSensor should be at offset 0x500");
 		static_assert(offsetof(CS2::server::CPointAngleSensor, m_FacingPercentage) == 0x528, "m_FacingPercentage in CPointAngleSensor should be at offset 0x528");
 		static_assert(sizeof(CS2::server::CPointAngleSensor) == 0x548, "CPointAngleSensor size should be 0x548");
+
+#endif
 	}
 }

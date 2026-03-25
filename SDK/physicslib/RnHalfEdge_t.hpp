@@ -25,10 +25,13 @@ namespace CS2 {
 			uint8_t m_nOrigin; // 0x2 | Schema_Builtin | Size: 0x1
 			uint8_t m_nFace; // 0x3 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnHalfEdge_t, m_nNext) == 0x0, "m_nNext in RnHalfEdge_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnHalfEdge_t, m_nTwin) == 0x1, "m_nTwin in RnHalfEdge_t should be at offset 0x1");
 		static_assert(offsetof(CS2::physicslib::RnHalfEdge_t, m_nOrigin) == 0x2, "m_nOrigin in RnHalfEdge_t should be at offset 0x2");
 		static_assert(offsetof(CS2::physicslib::RnHalfEdge_t, m_nFace) == 0x3, "m_nFace in RnHalfEdge_t should be at offset 0x3");
 		static_assert(sizeof(CS2::physicslib::RnHalfEdge_t) == 0x4, "RnHalfEdge_t size should be 0x4");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CTransform> m_outputTransformList; // 0x10 | Schema_Atomic | Size: 0x18
 			// char m_outputTransformList[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceBone_Input_t, m_inputValue) == 0x0, "m_inputValue in CBoneConstraintPoseSpaceBone::Input_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceBone_Input_t, m_outputTransformList) == 0x10, "m_outputTransformList in CBoneConstraintPoseSpaceBone::Input_t should be at offset 0x10");
 		static_assert(sizeof(CS2::modellib::CBoneConstraintPoseSpaceBone_Input_t) == 0x28, "CBoneConstraintPoseSpaceBone::Input_t size should be 0x28");
+
+#endif
 	}
 }

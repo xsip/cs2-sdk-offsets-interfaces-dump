@@ -24,8 +24,11 @@ namespace CS2 {
 			uint8_t m_nStencilReadMask; // 0x4 | Schema_Builtin | Size: 0x1
 			uint8_t m_nStencilWriteMask; // 0x5 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::rendersystemdx11::RsStencilStateDesc_t, m_nStencilReadMask) == 0x4, "m_nStencilReadMask in RsStencilStateDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::rendersystemdx11::RsStencilStateDesc_t, m_nStencilWriteMask) == 0x5, "m_nStencilWriteMask in RsStencilStateDesc_t should be at offset 0x5");
 		static_assert(sizeof(CS2::rendersystemdx11::RsStencilStateDesc_t) == 0x6, "RsStencilStateDesc_t size should be 0x6");
+
+#endif
 	}
 }

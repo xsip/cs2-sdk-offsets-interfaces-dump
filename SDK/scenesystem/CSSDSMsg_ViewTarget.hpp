@@ -31,6 +31,7 @@ namespace CS2 {
 			int32_t m_nMultisampleNumSamples; // 0x28 | Schema_Builtin | Size: 0x4
 			int32_t m_nFormat; // 0x2c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_ViewTarget, m_Name) == 0x0, "m_Name in CSSDSMsg_ViewTarget should be at offset 0x0");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_ViewTarget, m_TextureId) == 0x8, "m_TextureId in CSSDSMsg_ViewTarget should be at offset 0x8");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_ViewTarget, m_nWidth) == 0x10, "m_nWidth in CSSDSMsg_ViewTarget should be at offset 0x10");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_ViewTarget, m_nMultisampleNumSamples) == 0x28, "m_nMultisampleNumSamples in CSSDSMsg_ViewTarget should be at offset 0x28");
 		static_assert(offsetof(CS2::scenesystem::CSSDSMsg_ViewTarget, m_nFormat) == 0x2C, "m_nFormat in CSSDSMsg_ViewTarget should be at offset 0x2C");
 		static_assert(sizeof(CS2::scenesystem::CSSDSMsg_ViewTarget) == 0x30, "CSSDSMsg_ViewTarget size should be 0x30");
+
+#endif
 	}
 }

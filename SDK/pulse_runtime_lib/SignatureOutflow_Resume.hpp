@@ -22,6 +22,9 @@ namespace CS2 {
 		class SignatureOutflow_Resume : public CS2::pulse_runtime_lib::CPulse_ResumePoint {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_runtime_lib::SignatureOutflow_Resume) == 0x48, "SignatureOutflow_Resume size should be 0x48");
+
+#endif
 	}
 }

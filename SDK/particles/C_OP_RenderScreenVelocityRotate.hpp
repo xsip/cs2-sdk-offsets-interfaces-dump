@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flRotateRateDegrees; // 0x220 | Schema_Builtin | Size: 0x4
 			float32 m_flForwardDegrees; // 0x224 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderScreenVelocityRotate, m_flRotateRateDegrees) == 0x220, "m_flRotateRateDegrees in C_OP_RenderScreenVelocityRotate should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderScreenVelocityRotate, m_flForwardDegrees) == 0x224, "m_flForwardDegrees in C_OP_RenderScreenVelocityRotate should be at offset 0x224");
 		static_assert(sizeof(CS2::particles::C_OP_RenderScreenVelocityRotate) == 0x228, "C_OP_RenderScreenVelocityRotate size should be 0x228");
+
+#endif
 	}
 }

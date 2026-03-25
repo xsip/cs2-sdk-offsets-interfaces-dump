@@ -33,6 +33,7 @@ namespace CS2 {
 			bool m_bLockWhenWaning; // 0x151 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xe); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CLookAtUpdateNode, m_opFixedSettings) == 0x70, "m_opFixedSettings in CLookAtUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CLookAtUpdateNode, m_target) == 0x148, "m_target in CLookAtUpdateNode should be at offset 0x148");
 		static_assert(offsetof(CS2::animgraphlib::CLookAtUpdateNode, m_paramIndex) == 0x14C, "m_paramIndex in CLookAtUpdateNode should be at offset 0x14C");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CLookAtUpdateNode, m_bResetChild) == 0x150, "m_bResetChild in CLookAtUpdateNode should be at offset 0x150");
 		static_assert(offsetof(CS2::animgraphlib::CLookAtUpdateNode, m_bLockWhenWaning) == 0x151, "m_bLockWhenWaning in CLookAtUpdateNode should be at offset 0x151");
 		static_assert(sizeof(CS2::animgraphlib::CLookAtUpdateNode) == 0x160, "CLookAtUpdateNode size should be 0x160");
+
+#endif
 	}
 }

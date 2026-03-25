@@ -25,7 +25,10 @@ namespace CS2 {
 			pulse_runtime_lib::PulseDocNodeID_t m_nEditorNodeID; // 0x8 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x3c); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Base, m_nEditorNodeID) == 0x8, "m_nEditorNodeID in CPulseCell_Base should be at offset 0x8");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Base) == 0x48, "CPulseCell_Base size should be 0x48");
+
+#endif
 	}
 }

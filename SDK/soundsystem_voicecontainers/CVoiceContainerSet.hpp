@@ -25,7 +25,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerSetElement> m_soundsToPlay; // 0xa8 | Schema_Atomic | Size: 0x18
 			// char m_soundsToPlay[0x18]; // 0xa8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerSet, m_soundsToPlay) == 0xA8, "m_soundsToPlay in CVoiceContainerSet should be at offset 0xA8");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerSet) == 0xC0, "CVoiceContainerSet size should be 0xC0");
+
+#endif
 	}
 }

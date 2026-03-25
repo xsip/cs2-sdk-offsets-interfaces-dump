@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CEntityHandle m_hDetectParentChange; // 0x1650 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSObserverPawn, m_hDetectParentChange) == 0x1650, "m_hDetectParentChange in C_CSObserverPawn should be at offset 0x1650");
 		static_assert(sizeof(CS2::client::C_CSObserverPawn) == 0x1658, "C_CSObserverPawn size should be 0x1658");
+
+#endif
 	}
 }

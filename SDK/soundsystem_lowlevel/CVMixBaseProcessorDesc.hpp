@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_flxfade; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixBaseProcessorDesc, m_name) == 0x8, "m_name in CVMixBaseProcessorDesc should be at offset 0x8");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixBaseProcessorDesc, m_nChannels) == 0x14, "m_nChannels in CVMixBaseProcessorDesc should be at offset 0x14");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixBaseProcessorDesc, m_flxfade) == 0x18, "m_flxfade in CVMixBaseProcessorDesc should be at offset 0x18");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixBaseProcessorDesc) == 0x20, "CVMixBaseProcessorDesc size should be 0x20");
+
+#endif
 	}
 }

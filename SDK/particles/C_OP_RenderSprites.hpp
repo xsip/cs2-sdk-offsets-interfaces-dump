@@ -64,6 +64,7 @@ namespace CS2 {
 			particles::CReplicationParameters m_replicationParameters; // 0x4070 | Schema_DeclaredClass | Size: 0x11c8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nSequenceOverride) == 0x2DE8, "m_nSequenceOverride in C_OP_RenderSprites should be at offset 0x2DE8");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_bSequenceNumbersAreRawSequenceIndices) == 0x2F58, "m_bSequenceNumbersAreRawSequenceIndices in C_OP_RenderSprites should be at offset 0x2F58");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_nOrientationType) == 0x2F5C, "m_nOrientationType in C_OP_RenderSprites should be at offset 0x2F5C");
@@ -95,5 +96,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_flShadowDensity) == 0x406C, "m_flShadowDensity in C_OP_RenderSprites should be at offset 0x406C");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSprites, m_replicationParameters) == 0x4070, "m_replicationParameters in C_OP_RenderSprites should be at offset 0x4070");
 		static_assert(sizeof(CS2::particles::C_OP_RenderSprites) == 0x5240, "C_OP_RenderSprites size should be 0x5240");
+
+#endif
 	}
 }

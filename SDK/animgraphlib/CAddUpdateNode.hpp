@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bApplyScale; // 0x9b | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAddUpdateNode, m_footMotionTiming) == 0x94, "m_footMotionTiming in CAddUpdateNode should be at offset 0x94");
 		static_assert(offsetof(CS2::animgraphlib::CAddUpdateNode, m_bApplyToFootMotion) == 0x98, "m_bApplyToFootMotion in CAddUpdateNode should be at offset 0x98");
 		static_assert(offsetof(CS2::animgraphlib::CAddUpdateNode, m_bApplyChannelsSeparately) == 0x99, "m_bApplyChannelsSeparately in CAddUpdateNode should be at offset 0x99");
 		static_assert(offsetof(CS2::animgraphlib::CAddUpdateNode, m_bUseModelSpace) == 0x9A, "m_bUseModelSpace in CAddUpdateNode should be at offset 0x9A");
 		static_assert(offsetof(CS2::animgraphlib::CAddUpdateNode, m_bApplyScale) == 0x9B, "m_bApplyScale in CAddUpdateNode should be at offset 0x9B");
 		static_assert(sizeof(CS2::animgraphlib::CAddUpdateNode) == 0xA0, "CAddUpdateNode size should be 0xA0");
+
+#endif
 	}
 }

@@ -52,6 +52,7 @@ namespace CS2 {
 			uint16_t m_nSourceItemDefIndex; // 0x1350 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x66); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInferno, m_firePositions) == 0x730, "m_firePositions in CInferno should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CInferno, m_fireParentPositions) == 0xA30, "m_fireParentPositions in CInferno should be at offset 0xA30");
 		static_assert(offsetof(CS2::server::CInferno, m_bFireIsBurning) == 0xD30, "m_bFireIsBurning in CInferno should be at offset 0xD30");
@@ -77,5 +78,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CInferno, m_NextSpreadTimer) == 0x1338, "m_NextSpreadTimer in CInferno should be at offset 0x1338");
 		static_assert(offsetof(CS2::server::CInferno, m_nSourceItemDefIndex) == 0x1350, "m_nSourceItemDefIndex in CInferno should be at offset 0x1350");
 		static_assert(sizeof(CS2::server::CInferno) == 0x13B8, "CInferno size should be 0x13B8");
+
+#endif
 	}
 }

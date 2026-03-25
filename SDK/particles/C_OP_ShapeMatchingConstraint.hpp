@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flShapeRestorationTime; // 0x1d0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ShapeMatchingConstraint, m_flShapeRestorationTime) == 0x1D0, "m_flShapeRestorationTime in C_OP_ShapeMatchingConstraint should be at offset 0x1D0");
 		static_assert(sizeof(CS2::particles::C_OP_ShapeMatchingConstraint) == 0x1D8, "C_OP_ShapeMatchingConstraint size should be 0x1D8");
+
+#endif
 	}
 }

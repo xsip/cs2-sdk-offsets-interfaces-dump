@@ -23,8 +23,11 @@ namespace CS2 {
 			bool m_bEnabled; // 0x0 | Schema_Builtin | Size: 0x1
 			GlobalTypes::Color m_Color; // 0x1 | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::toolscene::CLightRigBackground, m_bEnabled) == 0x0, "m_bEnabled in CLightRigBackground should be at offset 0x0");
 		static_assert(offsetof(CS2::toolscene::CLightRigBackground, m_Color) == 0x1, "m_Color in CLightRigBackground should be at offset 0x1");
 		static_assert(sizeof(CS2::toolscene::CLightRigBackground) == 0x5, "CLightRigBackground size should be 0x5");
+
+#endif
 	}
 }

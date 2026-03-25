@@ -26,10 +26,13 @@ namespace CS2 {
 			float32 m_flCullEnd; // 0x1d8 | Schema_Builtin | Size: 0x4
 			float32 m_flCullExp; // 0x1dc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullPerc) == 0x1D0, "m_flCullPerc in C_OP_Cull should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullStart) == 0x1D4, "m_flCullStart in C_OP_Cull should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullEnd) == 0x1D8, "m_flCullEnd in C_OP_Cull should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_Cull, m_flCullExp) == 0x1DC, "m_flCullExp in C_OP_Cull should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::C_OP_Cull) == 0x1E0, "C_OP_Cull size should be 0x1E0");
+
+#endif
 	}
 }

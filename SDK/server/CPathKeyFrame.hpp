@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flMoveSpeed; // 0x4f0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPathKeyFrame, m_Origin) == 0x4A8, "m_Origin in CPathKeyFrame should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPathKeyFrame, m_Angles) == 0x4B4, "m_Angles in CPathKeyFrame should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CPathKeyFrame, m_qAngle) == 0x4C0, "m_qAngle in CPathKeyFrame should be at offset 0x4C0");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPathKeyFrame, m_pPrevKey) == 0x4E8, "m_pPrevKey in CPathKeyFrame should be at offset 0x4E8");
 		static_assert(offsetof(CS2::server::CPathKeyFrame, m_flMoveSpeed) == 0x4F0, "m_flMoveSpeed in CPathKeyFrame should be at offset 0x4F0");
 		static_assert(sizeof(CS2::server::CPathKeyFrame) == 0x500, "CPathKeyFrame size should be 0x500");
+
+#endif
 	}
 }

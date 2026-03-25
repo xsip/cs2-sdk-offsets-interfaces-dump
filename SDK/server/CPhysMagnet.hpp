@@ -41,6 +41,7 @@ namespace CS2 {
 			int32_t m_iMaxObjectsAttached; // 0xa88 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysMagnet, m_OnMagnetAttach) == 0xA20, "m_OnMagnetAttach in CPhysMagnet should be at offset 0xA20");
 		static_assert(offsetof(CS2::server::CPhysMagnet, m_OnMagnetDetach) == 0xA38, "m_OnMagnetDetach in CPhysMagnet should be at offset 0xA38");
 		static_assert(offsetof(CS2::server::CPhysMagnet, m_massScale) == 0xA50, "m_massScale in CPhysMagnet should be at offset 0xA50");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysMagnet, m_flNextSuckTime) == 0xA84, "m_flNextSuckTime in CPhysMagnet should be at offset 0xA84");
 		static_assert(offsetof(CS2::server::CPhysMagnet, m_iMaxObjectsAttached) == 0xA88, "m_iMaxObjectsAttached in CPhysMagnet should be at offset 0xA88");
 		static_assert(sizeof(CS2::server::CPhysMagnet) == 0xA90, "CPhysMagnet size should be 0xA90");
+
+#endif
 	}
 }

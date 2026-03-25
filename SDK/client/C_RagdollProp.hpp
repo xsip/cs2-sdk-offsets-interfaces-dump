@@ -45,6 +45,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< int32 > m_worldSpaceBoneComputationOrder; // 0x11e0 | Schema_Atomic | Size: 0x18
 			// char m_worldSpaceBoneComputationOrder[0x18]; // 0x11e0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragEnabled) == 0x1170, "m_ragEnabled in C_RagdollProp should be at offset 0x1170");
 		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragPos) == 0x1188, "m_ragPos in C_RagdollProp should be at offset 0x1188");
 		static_assert(offsetof(CS2::client::C_RagdollProp, m_ragAngles) == 0x11A0, "m_ragAngles in C_RagdollProp should be at offset 0x11A0");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_RagdollProp, m_parentPhysicsBoneIndices) == 0x11C8, "m_parentPhysicsBoneIndices in C_RagdollProp should be at offset 0x11C8");
 		static_assert(offsetof(CS2::client::C_RagdollProp, m_worldSpaceBoneComputationOrder) == 0x11E0, "m_worldSpaceBoneComputationOrder in C_RagdollProp should be at offset 0x11E0");
 		static_assert(sizeof(CS2::client::C_RagdollProp) == 0x11F8, "C_RagdollProp size should be 0x11F8");
+
+#endif
 	}
 }

@@ -25,8 +25,11 @@ namespace CS2 {
 			int32_t m_nStageCount; // 0xc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CBreakableStageHelper, m_nCurrentStage) == 0x8, "m_nCurrentStage in CBreakableStageHelper should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CBreakableStageHelper, m_nStageCount) == 0xC, "m_nStageCount in CBreakableStageHelper should be at offset 0xC");
 		static_assert(sizeof(CS2::client::CBreakableStageHelper) == 0x18, "CBreakableStageHelper size should be 0x18");
+
+#endif
 	}
 }

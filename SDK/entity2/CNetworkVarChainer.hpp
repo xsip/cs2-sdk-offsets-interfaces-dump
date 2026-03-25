@@ -25,7 +25,10 @@ namespace CS2 {
 			networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x20 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::entity2::CNetworkVarChainer, m_PathIndex) == 0x20, "m_PathIndex in CNetworkVarChainer should be at offset 0x20");
 		static_assert(sizeof(CS2::entity2::CNetworkVarChainer) == 0x28, "CNetworkVarChainer size should be 0x28");
+
+#endif
 	}
 }

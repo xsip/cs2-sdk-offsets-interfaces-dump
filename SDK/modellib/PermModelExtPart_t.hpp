@@ -28,10 +28,13 @@ namespace CS2 {
 			char m_refModel[0x8]; // 0x30 | Schema_Atomic | Size: 0x8
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::PermModelExtPart_t, m_Transform) == 0x0, "m_Transform in PermModelExtPart_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::PermModelExtPart_t, m_Name) == 0x20, "m_Name in PermModelExtPart_t should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::PermModelExtPart_t, m_nParent) == 0x28, "m_nParent in PermModelExtPart_t should be at offset 0x28");
 		static_assert(offsetof(CS2::modellib::PermModelExtPart_t, m_refModel) == 0x30, "m_refModel in PermModelExtPart_t should be at offset 0x30");
 		static_assert(sizeof(CS2::modellib::PermModelExtPart_t) == 0x40, "PermModelExtPart_t size should be 0x40");
+
+#endif
 	}
 }

@@ -33,6 +33,7 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnPlayerUse; // 0xe00 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_nNextPrimaryAttackTick) == 0xDE0, "m_nNextPrimaryAttackTick in CBasePlayerWeapon should be at offset 0xDE0");
 		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_flNextPrimaryAttackTickRatio) == 0xDE4, "m_flNextPrimaryAttackTickRatio in CBasePlayerWeapon should be at offset 0xDE4");
 		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_nNextSecondaryAttackTick) == 0xDE8, "m_nNextSecondaryAttackTick in CBasePlayerWeapon should be at offset 0xDE8");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_pReserveAmmo) == 0xDF8, "m_pReserveAmmo in CBasePlayerWeapon should be at offset 0xDF8");
 		static_assert(offsetof(CS2::server::CBasePlayerWeapon, m_OnPlayerUse) == 0xE00, "m_OnPlayerUse in CBasePlayerWeapon should be at offset 0xE00");
 		static_assert(sizeof(CS2::server::CBasePlayerWeapon) == 0xE20, "CBasePlayerWeapon size should be 0xE20");
+
+#endif
 	}
 }

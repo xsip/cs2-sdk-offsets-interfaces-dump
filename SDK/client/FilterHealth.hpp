@@ -27,9 +27,12 @@ namespace CS2 {
 			int32_t m_iHealthMax; // 0x648 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::FilterHealth, m_bAdrenalineActive) == 0x640, "m_bAdrenalineActive in FilterHealth should be at offset 0x640");
 		static_assert(offsetof(CS2::client::FilterHealth, m_iHealthMin) == 0x644, "m_iHealthMin in FilterHealth should be at offset 0x644");
 		static_assert(offsetof(CS2::client::FilterHealth, m_iHealthMax) == 0x648, "m_iHealthMax in FilterHealth should be at offset 0x648");
 		static_assert(sizeof(CS2::client::FilterHealth) == 0x650, "FilterHealth size should be 0x650");
+
+#endif
 	}
 }

@@ -42,6 +42,7 @@ namespace CS2 {
 			S2_PAD(0x10);
 			client::C_BaseFlex_Emphasized_Phoneme m_PhonemeClasses[3]; // 0x12f0 | Schema_FixedArray | Size: 0x60
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BaseFlex, m_flexWeight) == 0x1170, "m_flexWeight in C_BaseFlex should be at offset 0x1170");
 		static_assert(offsetof(CS2::client::C_BaseFlex, m_vLookTargetPosition) == 0x1188, "m_vLookTargetPosition in C_BaseFlex should be at offset 0x1188");
 		static_assert(offsetof(CS2::client::C_BaseFlex, m_nLastFlexUpdateFrameCount) == 0x1270, "m_nLastFlexUpdateFrameCount in C_BaseFlex should be at offset 0x1270");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BaseFlex, m_vEyeOcclusionRendererHalfExtent) == 0x12D4, "m_vEyeOcclusionRendererHalfExtent in C_BaseFlex should be at offset 0x12D4");
 		static_assert(offsetof(CS2::client::C_BaseFlex, m_PhonemeClasses) == 0x12F0, "m_PhonemeClasses in C_BaseFlex should be at offset 0x12F0");
 		static_assert(sizeof(CS2::client::C_BaseFlex) == 0x1350, "C_BaseFlex size should be 0x1350");
+
+#endif
 	}
 }

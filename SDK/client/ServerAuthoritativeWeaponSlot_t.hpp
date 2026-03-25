@@ -26,9 +26,12 @@ namespace CS2 {
 			uint16_t unItemDefIdx; // 0x34 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::ServerAuthoritativeWeaponSlot_t, unClass) == 0x30, "unClass in ServerAuthoritativeWeaponSlot_t should be at offset 0x30");
 		static_assert(offsetof(CS2::client::ServerAuthoritativeWeaponSlot_t, unSlot) == 0x32, "unSlot in ServerAuthoritativeWeaponSlot_t should be at offset 0x32");
 		static_assert(offsetof(CS2::client::ServerAuthoritativeWeaponSlot_t, unItemDefIdx) == 0x34, "unItemDefIdx in ServerAuthoritativeWeaponSlot_t should be at offset 0x34");
 		static_assert(sizeof(CS2::client::ServerAuthoritativeWeaponSlot_t) == 0x38, "ServerAuthoritativeWeaponSlot_t size should be 0x38");
+
+#endif
 	}
 }

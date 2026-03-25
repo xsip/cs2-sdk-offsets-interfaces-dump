@@ -58,6 +58,7 @@ namespace CS2 {
 			bool m_bEnableDistanceScaling; // 0x140 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionMatchingUpdateNode, m_dataSet) == 0x58, "m_dataSet in CMotionMatchingUpdateNode should be at offset 0x58");
 		static_assert(offsetof(CS2::animgraphlib::CMotionMatchingUpdateNode, m_metrics) == 0x78, "m_metrics in CMotionMatchingUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CMotionMatchingUpdateNode, m_weights) == 0x90, "m_weights in CMotionMatchingUpdateNode should be at offset 0x90");
@@ -82,5 +83,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CMotionMatchingUpdateNode, m_flDistanceScale_MinScale) == 0x13C, "m_flDistanceScale_MinScale in CMotionMatchingUpdateNode should be at offset 0x13C");
 		static_assert(offsetof(CS2::animgraphlib::CMotionMatchingUpdateNode, m_bEnableDistanceScaling) == 0x140, "m_bEnableDistanceScaling in CMotionMatchingUpdateNode should be at offset 0x140");
 		static_assert(sizeof(CS2::animgraphlib::CMotionMatchingUpdateNode) == 0x148, "CMotionMatchingUpdateNode size should be 0x148");
+
+#endif
 	}
 }

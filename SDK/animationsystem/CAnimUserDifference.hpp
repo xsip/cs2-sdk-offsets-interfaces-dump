@@ -24,8 +24,11 @@ namespace CS2 {
 			int32_t m_nType; // 0x10 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimUserDifference, m_name) == 0x0, "m_name in CAnimUserDifference should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CAnimUserDifference, m_nType) == 0x10, "m_nType in CAnimUserDifference should be at offset 0x10");
 		static_assert(sizeof(CS2::animationsystem::CAnimUserDifference) == 0x18, "CAnimUserDifference size should be 0x18");
+
+#endif
 	}
 }

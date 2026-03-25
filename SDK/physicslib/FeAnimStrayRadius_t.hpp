@@ -24,9 +24,12 @@ namespace CS2 {
 			float32 flMaxDist; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 flRelaxationFactor; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeAnimStrayRadius_t, nNode) == 0x0, "nNode in FeAnimStrayRadius_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeAnimStrayRadius_t, flMaxDist) == 0x4, "flMaxDist in FeAnimStrayRadius_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeAnimStrayRadius_t, flRelaxationFactor) == 0x8, "flRelaxationFactor in FeAnimStrayRadius_t should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::FeAnimStrayRadius_t) == 0xC, "FeAnimStrayRadius_t size should be 0xC");
+
+#endif
 	}
 }

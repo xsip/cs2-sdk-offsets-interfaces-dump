@@ -36,6 +36,7 @@ namespace CS2 {
 			float32 m_flLightAmplification; // 0x218 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomColor, m_ColorMin) == 0x1F4, "m_ColorMin in C_INIT_RandomColor should be at offset 0x1F4");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomColor, m_ColorMax) == 0x1F8, "m_ColorMax in C_INIT_RandomColor should be at offset 0x1F8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomColor, m_TintMin) == 0x1FC, "m_TintMin in C_INIT_RandomColor should be at offset 0x1FC");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_RandomColor, m_nTintBlendMode) == 0x214, "m_nTintBlendMode in C_INIT_RandomColor should be at offset 0x214");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomColor, m_flLightAmplification) == 0x218, "m_flLightAmplification in C_INIT_RandomColor should be at offset 0x218");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomColor) == 0x220, "C_INIT_RandomColor size should be 0x220");
+
+#endif
 	}
 }

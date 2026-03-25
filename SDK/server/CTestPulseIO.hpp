@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bAllowEmptyInputs; // 0x588 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantVoid) == 0x4A8, "m_OnVariantVoid in CTestPulseIO should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantBool) == 0x4C0, "m_OnVariantBool in CTestPulseIO should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantInt) == 0x4E0, "m_OnVariantInt in CTestPulseIO should be at offset 0x4E0");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTestPulseIO, m_OnVariantVector) == 0x560, "m_OnVariantVector in CTestPulseIO should be at offset 0x560");
 		static_assert(offsetof(CS2::server::CTestPulseIO, m_bAllowEmptyInputs) == 0x588, "m_bAllowEmptyInputs in CTestPulseIO should be at offset 0x588");
 		static_assert(sizeof(CS2::server::CTestPulseIO) == 0x590, "CTestPulseIO size should be 0x590");
+
+#endif
 	}
 }

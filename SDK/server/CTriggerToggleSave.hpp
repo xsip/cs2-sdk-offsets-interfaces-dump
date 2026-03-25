@@ -22,6 +22,9 @@ namespace CS2 {
 		class CTriggerToggleSave : public CS2::server::CBaseTrigger {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CTriggerToggleSave) == 0x890, "CTriggerToggleSave size should be 0x890");
+
+#endif
 	}
 }

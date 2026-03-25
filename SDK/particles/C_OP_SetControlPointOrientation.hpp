@@ -33,6 +33,7 @@ namespace CS2 {
 			S2_PAD(0x4);
 			particleslib::CParticleCollectionFloatInput m_flInterpolation; // 0x200 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bUseWorldLocation) == 0x1D8, "m_bUseWorldLocation in C_OP_SetControlPointOrientation should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bRandomize) == 0x1DA, "m_bRandomize in C_OP_SetControlPointOrientation should be at offset 0x1DA");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_bSetOnce) == 0x1DB, "m_bSetOnce in C_OP_SetControlPointOrientation should be at offset 0x1DB");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_vecRotationB) == 0x1F0, "m_vecRotationB in C_OP_SetControlPointOrientation should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointOrientation, m_flInterpolation) == 0x200, "m_flInterpolation in C_OP_SetControlPointOrientation should be at offset 0x200");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointOrientation) == 0x370, "C_OP_SetControlPointOrientation size should be 0x370");
+
+#endif
 	}
 }

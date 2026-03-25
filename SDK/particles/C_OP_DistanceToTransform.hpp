@@ -46,6 +46,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			particleslib::CPerParticleVecInput m_vecComponentScale; // 0x898 | Schema_DeclaredClass | Size: 0x6b8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_DistanceToTransform should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flInputMin) == 0x1D8, "m_flInputMin in C_OP_DistanceToTransform should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_flInputMax) == 0x348, "m_flInputMax in C_OP_DistanceToTransform should be at offset 0x348");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_bAdditive) == 0x895, "m_bAdditive in C_OP_DistanceToTransform should be at offset 0x895");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceToTransform, m_vecComponentScale) == 0x898, "m_vecComponentScale in C_OP_DistanceToTransform should be at offset 0x898");
 		static_assert(sizeof(CS2::particles::C_OP_DistanceToTransform) == 0xF50, "C_OP_DistanceToTransform size should be 0xF50");
+
+#endif
 	}
 }

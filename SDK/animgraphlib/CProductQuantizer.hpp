@@ -26,8 +26,11 @@ namespace CS2 {
 			int32_t m_nDimensions; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CProductQuantizer, m_subQuantizers) == 0x0, "m_subQuantizers in CProductQuantizer should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CProductQuantizer, m_nDimensions) == 0x18, "m_nDimensions in CProductQuantizer should be at offset 0x18");
 		static_assert(sizeof(CS2::animgraphlib::CProductQuantizer) == 0x20, "CProductQuantizer size should be 0x20");
+
+#endif
 	}
 }

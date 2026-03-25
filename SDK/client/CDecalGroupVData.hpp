@@ -26,8 +26,11 @@ namespace CS2 {
 			float32 m_flTotalProbability; // 0x18 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CDecalGroupVData, m_vecOptions) == 0x0, "m_vecOptions in CDecalGroupVData should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDecalGroupVData, m_flTotalProbability) == 0x18, "m_flTotalProbability in CDecalGroupVData should be at offset 0x18");
 		static_assert(sizeof(CS2::client::CDecalGroupVData) == 0x20, "CDecalGroupVData size should be 0x20");
+
+#endif
 	}
 }

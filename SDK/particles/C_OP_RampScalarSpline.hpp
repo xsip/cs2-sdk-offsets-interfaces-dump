@@ -35,6 +35,7 @@ namespace CS2 {
 			bool m_bEaseOut; // 0x215 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xa); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_RateMin) == 0x1D0, "m_RateMin in C_OP_RampScalarSpline should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_RateMax) == 0x1D4, "m_RateMax in C_OP_RampScalarSpline should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_flStartTime_min) == 0x1D8, "m_flStartTime_min in C_OP_RampScalarSpline should be at offset 0x1D8");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_bProportionalOp) == 0x214, "m_bProportionalOp in C_OP_RampScalarSpline should be at offset 0x214");
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSpline, m_bEaseOut) == 0x215, "m_bEaseOut in C_OP_RampScalarSpline should be at offset 0x215");
 		static_assert(sizeof(CS2::particles::C_OP_RampScalarSpline) == 0x220, "C_OP_RampScalarSpline size should be 0x220");
+
+#endif
 	}
 }

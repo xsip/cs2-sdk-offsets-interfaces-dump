@@ -28,10 +28,13 @@ namespace CS2 {
 			float32 m_flWeight; // 0x48 | Schema_Builtin | Size: 0x4
 			int32_t m_nDimensionStartIndex; // 0x4c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionMetricEvaluator, m_means) == 0x18, "m_means in CMotionMetricEvaluator should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CMotionMetricEvaluator, m_standardDeviations) == 0x30, "m_standardDeviations in CMotionMetricEvaluator should be at offset 0x30");
 		static_assert(offsetof(CS2::animgraphlib::CMotionMetricEvaluator, m_flWeight) == 0x48, "m_flWeight in CMotionMetricEvaluator should be at offset 0x48");
 		static_assert(offsetof(CS2::animgraphlib::CMotionMetricEvaluator, m_nDimensionStartIndex) == 0x4C, "m_nDimensionStartIndex in CMotionMetricEvaluator should be at offset 0x4C");
 		static_assert(sizeof(CS2::animgraphlib::CMotionMetricEvaluator) == 0x50, "CMotionMetricEvaluator size should be 0x50");
+
+#endif
 	}
 }

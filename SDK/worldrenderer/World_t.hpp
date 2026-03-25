@@ -31,10 +31,13 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CStrongHandleCopyable<resourcesystem::InfoForResourceTypeCEntityLump>> m_entityLumps; // 0xc0 | Schema_Atomic | Size: 0x18
 			// char m_entityLumps[0x18]; // 0xc0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::World_t, m_builderParams) == 0x0, "m_builderParams in World_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::World_t, m_worldNodes) == 0x60, "m_worldNodes in World_t should be at offset 0x60");
 		static_assert(offsetof(CS2::worldrenderer::World_t, m_worldLightingInfo) == 0x78, "m_worldLightingInfo in World_t should be at offset 0x78");
 		static_assert(offsetof(CS2::worldrenderer::World_t, m_entityLumps) == 0xC0, "m_entityLumps in World_t should be at offset 0xC0");
 		static_assert(sizeof(CS2::worldrenderer::World_t) == 0xD8, "World_t size should be 0xD8");
+
+#endif
 	}
 }

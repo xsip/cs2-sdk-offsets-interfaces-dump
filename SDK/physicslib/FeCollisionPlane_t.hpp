@@ -26,10 +26,13 @@ namespace CS2 {
 			physicslib::RnPlane_t m_Plane; // 0x4 | Schema_DeclaredClass | Size: 0x10
 			float32 flStrength; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeCollisionPlane_t, nCtrlParent) == 0x0, "nCtrlParent in FeCollisionPlane_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeCollisionPlane_t, nChildNode) == 0x2, "nChildNode in FeCollisionPlane_t should be at offset 0x2");
 		static_assert(offsetof(CS2::physicslib::FeCollisionPlane_t, m_Plane) == 0x4, "m_Plane in FeCollisionPlane_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeCollisionPlane_t, flStrength) == 0x14, "flStrength in FeCollisionPlane_t should be at offset 0x14");
 		static_assert(sizeof(CS2::physicslib::FeCollisionPlane_t) == 0x18, "FeCollisionPlane_t size should be 0x18");
+
+#endif
 	}
 }

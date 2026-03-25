@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CGlobalSymbol m_boneMaskID; // 0x10 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmBoneMaskNode_CDefinition, m_boneMaskID) == 0x10, "m_boneMaskID in CNmBoneMaskNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmBoneMaskNode_CDefinition) == 0x18, "CNmBoneMaskNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

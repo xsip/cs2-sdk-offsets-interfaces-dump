@@ -29,6 +29,7 @@ namespace CS2 {
 			uint32_t m_nVertexAlbedoByteOffset; // 0x8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::matrix3x4_t m_mWorldFromLocal; // 0xc | Schema_Atomic | Size: 0x30
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::RTProxyInstanceInfo_t, m_nFlags) == 0x0, "m_nFlags in RTProxyInstanceInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::RTProxyInstanceInfo_t, m_albedoFormat) == 0x1, "m_albedoFormat in RTProxyInstanceInfo_t should be at offset 0x1");
 		static_assert(offsetof(CS2::worldrenderer::RTProxyInstanceInfo_t, m_nBLASCount) == 0x2, "m_nBLASCount in RTProxyInstanceInfo_t should be at offset 0x2");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::RTProxyInstanceInfo_t, m_nVertexAlbedoByteOffset) == 0x8, "m_nVertexAlbedoByteOffset in RTProxyInstanceInfo_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::RTProxyInstanceInfo_t, m_mWorldFromLocal) == 0xC, "m_mWorldFromLocal in RTProxyInstanceInfo_t should be at offset 0xC");
 		static_assert(sizeof(CS2::worldrenderer::RTProxyInstanceInfo_t) == 0x3C, "RTProxyInstanceInfo_t size should be 0x3C");
+
+#endif
 	}
 }

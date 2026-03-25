@@ -32,11 +32,14 @@ namespace CS2 {
 			particles::ParticleImpulseType_t m_nImpulseType; // 0x630 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputRadius) == 0x1D8, "m_InputRadius in C_INIT_CreateParticleImpulse should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputMagnitude) == 0x348, "m_InputMagnitude in C_INIT_CreateParticleImpulse should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_nFalloffFunction) == 0x4B8, "m_nFalloffFunction in C_INIT_CreateParticleImpulse should be at offset 0x4B8");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_InputFalloffExp) == 0x4C0, "m_InputFalloffExp in C_INIT_CreateParticleImpulse should be at offset 0x4C0");
 		static_assert(offsetof(CS2::particles::C_INIT_CreateParticleImpulse, m_nImpulseType) == 0x630, "m_nImpulseType in C_INIT_CreateParticleImpulse should be at offset 0x630");
 		static_assert(sizeof(CS2::particles::C_INIT_CreateParticleImpulse) == 0x638, "C_INIT_CreateParticleImpulse size should be 0x638");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bUseDeltaV; // 0x1f4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeedtoCP, m_nInControlPointNumber) == 0x1D8, "m_nInControlPointNumber in C_OP_RemapSpeedtoCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeedtoCP, m_nOutControlPointNumber) == 0x1DC, "m_nOutControlPointNumber in C_OP_RemapSpeedtoCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeedtoCP, m_nField) == 0x1E0, "m_nField in C_OP_RemapSpeedtoCP should be at offset 0x1E0");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeedtoCP, m_flOutputMax) == 0x1F0, "m_flOutputMax in C_OP_RemapSpeedtoCP should be at offset 0x1F0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapSpeedtoCP, m_bUseDeltaV) == 0x1F4, "m_bUseDeltaV in C_OP_RemapSpeedtoCP should be at offset 0x1F4");
 		static_assert(sizeof(CS2::particles::C_OP_RemapSpeedtoCP) == 0x1F8, "C_OP_RemapSpeedtoCP size should be 0x1F8");
+
+#endif
 	}
 }

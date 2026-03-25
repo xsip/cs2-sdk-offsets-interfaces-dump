@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CBufferString m_name; // 0x0 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimMorphDifference, m_name) == 0x0, "m_name in CAnimMorphDifference should be at offset 0x0");
 		static_assert(sizeof(CS2::animationsystem::CAnimMorphDifference) == 0x10, "CAnimMorphDifference size should be 0x10");
+
+#endif
 	}
 }

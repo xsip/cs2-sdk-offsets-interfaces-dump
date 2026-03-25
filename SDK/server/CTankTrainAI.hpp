@@ -38,6 +38,7 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_movementSoundName; // 0x4d8 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_targetEntityName; // 0x4e0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTankTrainAI, m_hTrain) == 0x4A8, "m_hTrain in CTankTrainAI should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CTankTrainAI, m_hTargetEntity) == 0x4AC, "m_hTargetEntity in CTankTrainAI should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CTankTrainAI, m_soundPlaying) == 0x4B0, "m_soundPlaying in CTankTrainAI should be at offset 0x4B0");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTankTrainAI, m_movementSoundName) == 0x4D8, "m_movementSoundName in CTankTrainAI should be at offset 0x4D8");
 		static_assert(offsetof(CS2::server::CTankTrainAI, m_targetEntityName) == 0x4E0, "m_targetEntityName in CTankTrainAI should be at offset 0x4E0");
 		static_assert(sizeof(CS2::server::CTankTrainAI) == 0x4E8, "CTankTrainAI size should be 0x4E8");
+
+#endif
 	}
 }

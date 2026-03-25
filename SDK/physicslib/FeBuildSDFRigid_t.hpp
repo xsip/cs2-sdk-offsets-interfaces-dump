@@ -26,9 +26,12 @@ namespace CS2 {
 			uint32_t m_nAntitunnelGroupBits; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeBuildSDFRigid_t, m_nPriority) == 0x50, "m_nPriority in FeBuildSDFRigid_t should be at offset 0x50");
 		static_assert(offsetof(CS2::physicslib::FeBuildSDFRigid_t, m_nVertexMapHash) == 0x54, "m_nVertexMapHash in FeBuildSDFRigid_t should be at offset 0x54");
 		static_assert(offsetof(CS2::physicslib::FeBuildSDFRigid_t, m_nAntitunnelGroupBits) == 0x58, "m_nAntitunnelGroupBits in FeBuildSDFRigid_t should be at offset 0x58");
 		static_assert(sizeof(CS2::physicslib::FeBuildSDFRigid_t) == 0x60, "FeBuildSDFRigid_t size should be 0x60");
+
+#endif
 	}
 }

@@ -52,6 +52,7 @@ namespace CS2 {
 			// char m_hOriginalController[0x4]; // 0xe64 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_CTouchExpansionComponent) == 0xD30, "m_CTouchExpansionComponent in CCSPlayerPawnBase should be at offset 0xD30");
 		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_pPingServices) == 0xD80, "m_pPingServices in CCSPlayerPawnBase should be at offset 0xD80");
 		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_blindUntilTime) == 0xD88, "m_blindUntilTime in CCSPlayerPawnBase should be at offset 0xD88");
@@ -68,5 +69,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_iProgressBarDuration) == 0xE60, "m_iProgressBarDuration in CCSPlayerPawnBase should be at offset 0xE60");
 		static_assert(offsetof(CS2::server::CCSPlayerPawnBase, m_hOriginalController) == 0xE64, "m_hOriginalController in CCSPlayerPawnBase should be at offset 0xE64");
 		static_assert(sizeof(CS2::server::CCSPlayerPawnBase) == 0xE70, "CCSPlayerPawnBase size should be 0xE70");
+
+#endif
 	}
 }

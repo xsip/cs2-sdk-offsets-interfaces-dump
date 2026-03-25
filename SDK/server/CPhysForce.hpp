@@ -37,6 +37,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			server::CConstantForceController m_integrator; // 0x4c8 | Schema_DeclaredClass | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysForce, m_nameAttach) == 0x4B0, "m_nameAttach in CPhysForce should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CPhysForce, m_force) == 0x4B8, "m_force in CPhysForce should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CPhysForce, m_forceTime) == 0x4BC, "m_forceTime in CPhysForce should be at offset 0x4BC");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysForce, m_wasRestored) == 0x4C4, "m_wasRestored in CPhysForce should be at offset 0x4C4");
 		static_assert(offsetof(CS2::server::CPhysForce, m_integrator) == 0x4C8, "m_integrator in CPhysForce should be at offset 0x4C8");
 		static_assert(sizeof(CS2::server::CPhysForce) == 0x508, "CPhysForce size should be 0x508");
+
+#endif
 	}
 }

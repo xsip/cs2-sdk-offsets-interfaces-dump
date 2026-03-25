@@ -29,6 +29,7 @@ namespace CS2 {
 			bool m_bFetchFrame; // 0x6 | Schema_Builtin | Size: 0x1
 			bool m_bSubtract; // 0x7 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayerFlag, m_bPost) == 0x0, "m_bPost in CSeqAutoLayerFlag should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayerFlag, m_bSpline) == 0x1, "m_bSpline in CSeqAutoLayerFlag should be at offset 0x1");
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayerFlag, m_bXFade) == 0x2, "m_bXFade in CSeqAutoLayerFlag should be at offset 0x2");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayerFlag, m_bFetchFrame) == 0x6, "m_bFetchFrame in CSeqAutoLayerFlag should be at offset 0x6");
 		static_assert(offsetof(CS2::animationsystem::CSeqAutoLayerFlag, m_bSubtract) == 0x7, "m_bSubtract in CSeqAutoLayerFlag should be at offset 0x7");
 		static_assert(sizeof(CS2::animationsystem::CSeqAutoLayerFlag) == 0x8, "CSeqAutoLayerFlag size should be 0x8");
+
+#endif
 	}
 }

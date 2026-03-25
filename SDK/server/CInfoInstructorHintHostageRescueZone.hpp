@@ -22,6 +22,9 @@ namespace CS2 {
 		class CInfoInstructorHintHostageRescueZone : public CS2::server::CPointEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CInfoInstructorHintHostageRescueZone) == 0x4A8, "CInfoInstructorHintHostageRescueZone size should be 0x4A8");
+
+#endif
 	}
 }

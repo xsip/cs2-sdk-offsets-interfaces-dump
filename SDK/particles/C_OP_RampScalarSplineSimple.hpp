@@ -30,11 +30,14 @@ namespace CS2 {
 			bool m_bEaseOut; // 0x204 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xb); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_Rate) == 0x1D0, "m_Rate in C_OP_RampScalarSplineSimple should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_flStartTime) == 0x1D4, "m_flStartTime in C_OP_RampScalarSplineSimple should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_flEndTime) == 0x1D8, "m_flEndTime in C_OP_RampScalarSplineSimple should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_nField) == 0x200, "m_nField in C_OP_RampScalarSplineSimple should be at offset 0x200");
 		static_assert(offsetof(CS2::particles::C_OP_RampScalarSplineSimple, m_bEaseOut) == 0x204, "m_bEaseOut in C_OP_RampScalarSplineSimple should be at offset 0x204");
 		static_assert(sizeof(CS2::particles::C_OP_RampScalarSplineSimple) == 0x210, "C_OP_RampScalarSplineSimple size should be 0x210");
+
+#endif
 	}
 }

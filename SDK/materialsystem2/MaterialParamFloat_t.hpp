@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flValue; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::MaterialParamFloat_t, m_flValue) == 0x8, "m_flValue in MaterialParamFloat_t should be at offset 0x8");
 		static_assert(sizeof(CS2::materialsystem2::MaterialParamFloat_t) == 0x10, "MaterialParamFloat_t size should be 0x10");
+
+#endif
 	}
 }

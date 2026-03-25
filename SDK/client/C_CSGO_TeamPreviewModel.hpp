@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_CSGO_TeamPreviewModel : public CS2::client::C_CSGO_PreviewPlayer {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_CSGO_TeamPreviewModel) == 0x3FA0, "C_CSGO_TeamPreviewModel size should be 0x3FA0");
+
+#endif
 	}
 }

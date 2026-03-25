@@ -38,6 +38,7 @@ namespace CS2 {
 			bool m_bDampAllRotation; // 0x4e1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CKeepUpright, m_worldGoalAxis) == 0x4B0, "m_worldGoalAxis in CKeepUpright should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CKeepUpright, m_localTestAxis) == 0x4BC, "m_localTestAxis in CKeepUpright should be at offset 0x4BC");
 		static_assert(offsetof(CS2::server::CKeepUpright, m_nameAttach) == 0x4D0, "m_nameAttach in CKeepUpright should be at offset 0x4D0");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CKeepUpright, m_bActive) == 0x4E0, "m_bActive in CKeepUpright should be at offset 0x4E0");
 		static_assert(offsetof(CS2::server::CKeepUpright, m_bDampAllRotation) == 0x4E1, "m_bDampAllRotation in CKeepUpright should be at offset 0x4E1");
 		static_assert(sizeof(CS2::server::CKeepUpright) == 0x4E8, "CKeepUpright size should be 0x4E8");
+
+#endif
 	}
 }

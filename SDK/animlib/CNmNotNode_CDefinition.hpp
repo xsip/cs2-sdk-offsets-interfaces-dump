@@ -24,7 +24,10 @@ namespace CS2 {
 			int16_t m_nInputValueNodeIdx; // 0x10 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmNotNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmNotNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmNotNode_CDefinition) == 0x18, "CNmNotNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

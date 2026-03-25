@@ -25,8 +25,11 @@ namespace CS2 {
 			uint32_t m_nUpType; // 0x70 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CAimConstraint, m_qAimOffset) == 0x60, "m_qAimOffset in CAimConstraint should be at offset 0x60");
 		static_assert(offsetof(CS2::modellib::CAimConstraint, m_nUpType) == 0x70, "m_nUpType in CAimConstraint should be at offset 0x70");
 		static_assert(sizeof(CS2::modellib::CAimConstraint) == 0x80, "CAimConstraint size should be 0x80");
+
+#endif
 	}
 }

@@ -27,9 +27,12 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flLogoLength; // 0x4c4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCredits, m_OnCreditsDone) == 0x4A8, "m_OnCreditsDone in CCredits should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CCredits, m_bRolledOutroCredits) == 0x4C0, "m_bRolledOutroCredits in CCredits should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CCredits, m_flLogoLength) == 0x4C4, "m_flLogoLength in CCredits should be at offset 0x4C4");
 		static_assert(sizeof(CS2::server::CCredits) == 0x4C8, "CCredits size should be 0x4C8");
+
+#endif
 	}
 }

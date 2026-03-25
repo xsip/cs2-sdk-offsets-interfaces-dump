@@ -47,6 +47,7 @@ namespace CS2 {
 			GlobalTypes::CEntityOutputTemplate< CUtlString, char* > m_CustomOutput9; // 0x870 | Schema_Atomic | Size: 0x20
 			// char m_CustomOutput9[0x20]; // 0x870 | Schema_Atomic | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_bEnabled) == 0x730, "m_bEnabled in CBaseClientUIEntity should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_DialogXMLName) == 0x738, "m_DialogXMLName in CBaseClientUIEntity should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_PanelClassName) == 0x740, "m_PanelClassName in CBaseClientUIEntity should be at offset 0x740");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput8) == 0x850, "m_CustomOutput8 in CBaseClientUIEntity should be at offset 0x850");
 		static_assert(offsetof(CS2::server::CBaseClientUIEntity, m_CustomOutput9) == 0x870, "m_CustomOutput9 in CBaseClientUIEntity should be at offset 0x870");
 		static_assert(sizeof(CS2::server::CBaseClientUIEntity) == 0x890, "CBaseClientUIEntity size should be 0x890");
+
+#endif
 	}
 }

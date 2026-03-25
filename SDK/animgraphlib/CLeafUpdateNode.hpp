@@ -22,6 +22,9 @@ namespace CS2 {
 		class CLeafUpdateNode : public CS2::animgraphlib::CAnimUpdateNodeBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::animgraphlib::CLeafUpdateNode) == 0x58, "CLeafUpdateNode size should be 0x58");
+
+#endif
 	}
 }

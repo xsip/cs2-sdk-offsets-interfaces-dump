@@ -35,6 +35,7 @@ namespace CS2 {
 			// char m_hPath[0x4]; // 0x4f0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPathNode, m_vInTangentLocal) == 0x4A8, "m_vInTangentLocal in CPathNode should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPathNode, m_vOutTangentLocal) == 0x4B4, "m_vOutTangentLocal in CPathNode should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CPathNode, m_strParentPathUniqueID) == 0x4C0, "m_strParentPathUniqueID in CPathNode should be at offset 0x4C0");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPathNode, m_xWSPrevParent) == 0x4D0, "m_xWSPrevParent in CPathNode should be at offset 0x4D0");
 		static_assert(offsetof(CS2::server::CPathNode, m_hPath) == 0x4F0, "m_hPath in CPathNode should be at offset 0x4F0");
 		static_assert(sizeof(CS2::server::CPathNode) == 0x500, "CPathNode size should be 0x500");
+
+#endif
 	}
 }

@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bSuppressStopSoundEvent; // 0x348 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderSound, m_flDurationScale) == 0x220, "m_flDurationScale in C_OP_RenderSound should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSound, m_flSndLvlScale) == 0x224, "m_flSndLvlScale in C_OP_RenderSound should be at offset 0x224");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSound, m_flPitchScale) == 0x228, "m_flPitchScale in C_OP_RenderSound should be at offset 0x228");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderSound, m_pszSoundName) == 0x248, "m_pszSoundName in C_OP_RenderSound should be at offset 0x248");
 		static_assert(offsetof(CS2::particles::C_OP_RenderSound, m_bSuppressStopSoundEvent) == 0x348, "m_bSuppressStopSoundEvent in C_OP_RenderSound should be at offset 0x348");
 		static_assert(sizeof(CS2::particles::C_OP_RenderSound) == 0x350, "C_OP_RenderSound size should be 0x350");
+
+#endif
 	}
 }

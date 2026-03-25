@@ -26,10 +26,13 @@ namespace CS2 {
 			uint16_t nNode[3]; // 0x14 | Schema_FixedArray | Size: 0x6
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeStiffHingeBuild_t, flMaxAngle) == 0x0, "flMaxAngle in FeStiffHingeBuild_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeStiffHingeBuild_t, flStrength) == 0x4, "flStrength in FeStiffHingeBuild_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeStiffHingeBuild_t, flMotionBias) == 0x8, "flMotionBias in FeStiffHingeBuild_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeStiffHingeBuild_t, nNode) == 0x14, "nNode in FeStiffHingeBuild_t should be at offset 0x14");
 		static_assert(sizeof(CS2::physicslib::FeStiffHingeBuild_t) == 0x1C, "FeStiffHingeBuild_t size should be 0x1C");
+
+#endif
 	}
 }

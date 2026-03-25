@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::Vector m_value; // 0x10 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmConstVectorNode_CDefinition, m_value) == 0x10, "m_value in CNmConstVectorNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmConstVectorNode_CDefinition) == 0x20, "CNmConstVectorNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

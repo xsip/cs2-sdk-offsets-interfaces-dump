@@ -28,9 +28,12 @@ namespace CS2 {
 			particles::ParticleOrientationSetMode_t m_nOrientationMode; // 0x6c0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CPAssignment_t, m_nCPNumber) == 0x0, "m_nCPNumber in CPAssignment_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particles::CPAssignment_t, m_Pos) == 0x8, "m_Pos in CPAssignment_t should be at offset 0x8");
 		static_assert(offsetof(CS2::particles::CPAssignment_t, m_nOrientationMode) == 0x6C0, "m_nOrientationMode in CPAssignment_t should be at offset 0x6C0");
 		static_assert(sizeof(CS2::particles::CPAssignment_t) == 0x6C8, "CPAssignment_t size should be 0x6C8");
+
+#endif
 	}
 }

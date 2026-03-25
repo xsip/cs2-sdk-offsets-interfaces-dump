@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bUseAABB; // 0x1f8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_IntraParticleForce, m_flAttractionMinDistance) == 0x1E0, "m_flAttractionMinDistance in C_OP_IntraParticleForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_IntraParticleForce, m_flAttractionMaxDistance) == 0x1E4, "m_flAttractionMaxDistance in C_OP_IntraParticleForce should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_IntraParticleForce, m_flAttractionMaxStrength) == 0x1E8, "m_flAttractionMaxStrength in C_OP_IntraParticleForce should be at offset 0x1E8");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_IntraParticleForce, m_flRepulsionMaxStrength) == 0x1F4, "m_flRepulsionMaxStrength in C_OP_IntraParticleForce should be at offset 0x1F4");
 		static_assert(offsetof(CS2::particles::C_OP_IntraParticleForce, m_bUseAABB) == 0x1F8, "m_bUseAABB in C_OP_IntraParticleForce should be at offset 0x1F8");
 		static_assert(sizeof(CS2::particles::C_OP_IntraParticleForce) == 0x200, "C_OP_IntraParticleForce size should be 0x200");
+
+#endif
 	}
 }

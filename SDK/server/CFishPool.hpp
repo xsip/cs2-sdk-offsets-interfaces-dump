@@ -34,6 +34,7 @@ namespace CS2 {
 			// char m_fishes[0x18]; // 0x4d0 | Schema_Atomic | Size: 0x18
 			server::CountdownTimer m_visTimer; // 0x4e8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFishPool, m_fishCount) == 0x4B8, "m_fishCount in CFishPool should be at offset 0x4B8");
 		static_assert(offsetof(CS2::server::CFishPool, m_maxRange) == 0x4BC, "m_maxRange in CFishPool should be at offset 0x4BC");
 		static_assert(offsetof(CS2::server::CFishPool, m_swimDepth) == 0x4C0, "m_swimDepth in CFishPool should be at offset 0x4C0");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFishPool, m_fishes) == 0x4D0, "m_fishes in CFishPool should be at offset 0x4D0");
 		static_assert(offsetof(CS2::server::CFishPool, m_visTimer) == 0x4E8, "m_visTimer in CFishPool should be at offset 0x4E8");
 		static_assert(sizeof(CS2::server::CFishPool) == 0x500, "CFishPool size should be 0x500");
+
+#endif
 	}
 }

@@ -28,10 +28,13 @@ namespace CS2 {
 			// char m_HitBoxes[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_SourceFilename; // 0x28 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CHitBoxSet, m_name) == 0x0, "m_name in CHitBoxSet should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CHitBoxSet, m_nNameHash) == 0x8, "m_nNameHash in CHitBoxSet should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CHitBoxSet, m_HitBoxes) == 0x10, "m_HitBoxes in CHitBoxSet should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CHitBoxSet, m_SourceFilename) == 0x28, "m_SourceFilename in CHitBoxSet should be at offset 0x28");
 		static_assert(sizeof(CS2::modellib::CHitBoxSet) == 0x30, "CHitBoxSet size should be 0x30");
+
+#endif
 	}
 }

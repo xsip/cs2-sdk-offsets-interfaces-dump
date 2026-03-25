@@ -31,9 +31,12 @@ namespace CS2 {
 			char m_InstructionDebugInfos[0x10]; // 0x20 | Schema_Atomic | Size: 0x10
 			S2_PAD(0x28); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Chunk, m_Instructions) == 0x0, "m_Instructions in CPulse_Chunk should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Chunk, m_Registers) == 0x10, "m_Registers in CPulse_Chunk should be at offset 0x10");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulse_Chunk, m_InstructionDebugInfos) == 0x20, "m_InstructionDebugInfos in CPulse_Chunk should be at offset 0x20");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulse_Chunk) == 0x58, "CPulse_Chunk size should be 0x58");
+
+#endif
 	}
 }

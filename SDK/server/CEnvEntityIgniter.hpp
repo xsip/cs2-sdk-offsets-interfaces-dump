@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flLifetime; // 0x4a8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvEntityIgniter, m_flLifetime) == 0x4A8, "m_flLifetime in CEnvEntityIgniter should be at offset 0x4A8");
 		static_assert(sizeof(CS2::server::CEnvEntityIgniter) == 0x4B0, "CEnvEntityIgniter size should be 0x4B0");
+
+#endif
 	}
 }

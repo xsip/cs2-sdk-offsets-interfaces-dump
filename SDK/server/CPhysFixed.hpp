@@ -31,6 +31,7 @@ namespace CS2 {
 			GlobalTypes::CUtlSymbolLarge m_sBoneName1; // 0x520 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlSymbolLarge m_sBoneName2; // 0x528 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysFixed, m_flLinearFrequency) == 0x508, "m_flLinearFrequency in CPhysFixed should be at offset 0x508");
 		static_assert(offsetof(CS2::server::CPhysFixed, m_flLinearDampingRatio) == 0x50C, "m_flLinearDampingRatio in CPhysFixed should be at offset 0x50C");
 		static_assert(offsetof(CS2::server::CPhysFixed, m_flAngularFrequency) == 0x510, "m_flAngularFrequency in CPhysFixed should be at offset 0x510");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysFixed, m_sBoneName1) == 0x520, "m_sBoneName1 in CPhysFixed should be at offset 0x520");
 		static_assert(offsetof(CS2::server::CPhysFixed, m_sBoneName2) == 0x528, "m_sBoneName2 in CPhysFixed should be at offset 0x528");
 		static_assert(sizeof(CS2::server::CPhysFixed) == 0x530, "CPhysFixed size should be 0x530");
+
+#endif
 	}
 }

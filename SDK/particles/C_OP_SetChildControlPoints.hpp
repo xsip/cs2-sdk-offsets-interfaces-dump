@@ -33,6 +33,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			particles::ParticleOrientationType_t m_nOrientation; // 0x354 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetChildControlPoints, m_nChildGroupID) == 0x1D0, "m_nChildGroupID in C_OP_SetChildControlPoints should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_SetChildControlPoints, m_nFirstControlPoint) == 0x1D4, "m_nFirstControlPoint in C_OP_SetChildControlPoints should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_SetChildControlPoints, m_nNumControlPoints) == 0x1D8, "m_nNumControlPoints in C_OP_SetChildControlPoints should be at offset 0x1D8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetChildControlPoints, m_bSetOrientation) == 0x351, "m_bSetOrientation in C_OP_SetChildControlPoints should be at offset 0x351");
 		static_assert(offsetof(CS2::particles::C_OP_SetChildControlPoints, m_nOrientation) == 0x354, "m_nOrientation in C_OP_SetChildControlPoints should be at offset 0x354");
 		static_assert(sizeof(CS2::particles::C_OP_SetChildControlPoints) == 0x358, "C_OP_SetChildControlPoints size should be 0x358");
+
+#endif
 	}
 }

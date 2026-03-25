@@ -25,7 +25,10 @@ namespace CS2 {
 			server::CountdownTimer m_ActionTimer; // 0x58 | Schema_DeclaredClass | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBtActionParachutePositioning, m_ActionTimer) == 0x58, "m_ActionTimer in CBtActionParachutePositioning should be at offset 0x58");
 		static_assert(sizeof(CS2::server::CBtActionParachutePositioning) == 0x78, "CBtActionParachutePositioning size should be 0x78");
+
+#endif
 	}
 }

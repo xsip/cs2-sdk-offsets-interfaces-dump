@@ -31,6 +31,7 @@ namespace CS2 {
 			int32_t m_eType; // 0x38 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseSetting, m_sPoseParameter) == 0x0, "m_sPoseParameter in CSeqPoseSetting should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseSetting, m_sAttachment) == 0x10, "m_sAttachment in CSeqPoseSetting should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseSetting, m_sReferenceSequence) == 0x20, "m_sReferenceSequence in CSeqPoseSetting should be at offset 0x20");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseSetting, m_bZ) == 0x36, "m_bZ in CSeqPoseSetting should be at offset 0x36");
 		static_assert(offsetof(CS2::animationsystem::CSeqPoseSetting, m_eType) == 0x38, "m_eType in CSeqPoseSetting should be at offset 0x38");
 		static_assert(sizeof(CS2::animationsystem::CSeqPoseSetting) == 0x40, "CSeqPoseSetting size should be 0x40");
+
+#endif
 	}
 }

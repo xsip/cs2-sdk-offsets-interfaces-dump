@@ -33,6 +33,7 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flWorleySeed; // 0x1cc8 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flWorleyJitter; // 0x1e38 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_nNoiseType) == 0x1E0, "m_nNoiseType in C_OP_CurlNoiseForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecNoiseFreq) == 0x1E8, "m_vecNoiseFreq in C_OP_CurlNoiseForce should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_vecNoiseScale) == 0x8A0, "m_vecNoiseScale in C_OP_CurlNoiseForce should be at offset 0x8A0");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_flWorleySeed) == 0x1CC8, "m_flWorleySeed in C_OP_CurlNoiseForce should be at offset 0x1CC8");
 		static_assert(offsetof(CS2::particles::C_OP_CurlNoiseForce, m_flWorleyJitter) == 0x1E38, "m_flWorleyJitter in C_OP_CurlNoiseForce should be at offset 0x1E38");
 		static_assert(sizeof(CS2::particles::C_OP_CurlNoiseForce) == 0x1FA8, "C_OP_CurlNoiseForce size should be 0x1FA8");
+
+#endif
 	}
 }

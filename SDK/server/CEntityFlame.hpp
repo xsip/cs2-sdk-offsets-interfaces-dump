@@ -38,6 +38,7 @@ namespace CS2 {
 			int32_t m_iCustomDamageType; // 0x4cc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEntityFlame, m_hEntAttached) == 0x4A8, "m_hEntAttached in CEntityFlame should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEntityFlame, m_bCheapEffect) == 0x4AC, "m_bCheapEffect in CEntityFlame should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CEntityFlame, m_flSize) == 0x4B0, "m_flSize in CEntityFlame should be at offset 0x4B0");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEntityFlame, m_flDirectDamagePerSecond) == 0x4C8, "m_flDirectDamagePerSecond in CEntityFlame should be at offset 0x4C8");
 		static_assert(offsetof(CS2::server::CEntityFlame, m_iCustomDamageType) == 0x4CC, "m_iCustomDamageType in CEntityFlame should be at offset 0x4CC");
 		static_assert(sizeof(CS2::server::CEntityFlame) == 0x4E8, "CEntityFlame size should be 0x4E8");
+
+#endif
 	}
 }

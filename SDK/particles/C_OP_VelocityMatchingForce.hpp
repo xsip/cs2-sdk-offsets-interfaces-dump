@@ -29,6 +29,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nCPBroadcast; // 0x1e4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_VelocityMatchingForce, m_flDirScale) == 0x1D0, "m_flDirScale in C_OP_VelocityMatchingForce should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_VelocityMatchingForce, m_flSpdScale) == 0x1D4, "m_flSpdScale in C_OP_VelocityMatchingForce should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_VelocityMatchingForce, m_flNeighborDistance) == 0x1D8, "m_flNeighborDistance in C_OP_VelocityMatchingForce should be at offset 0x1D8");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_VelocityMatchingForce, m_bUseAABB) == 0x1E0, "m_bUseAABB in C_OP_VelocityMatchingForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_VelocityMatchingForce, m_nCPBroadcast) == 0x1E4, "m_nCPBroadcast in C_OP_VelocityMatchingForce should be at offset 0x1E4");
 		static_assert(sizeof(CS2::particles::C_OP_VelocityMatchingForce) == 0x1E8, "C_OP_VelocityMatchingForce size should be 0x1E8");
+
+#endif
 	}
 }

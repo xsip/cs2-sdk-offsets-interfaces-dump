@@ -41,6 +41,7 @@ namespace CS2 {
 			uint32_t m_nDebugFlags; // 0xb8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnMesh_t, m_vMin) == 0x0, "m_vMin in RnMesh_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnMesh_t, m_vMax) == 0xC, "m_vMax in RnMesh_t should be at offset 0xC");
 		static_assert(offsetof(CS2::physicslib::RnMesh_t, m_Nodes) == 0x18, "m_Nodes in RnMesh_t should be at offset 0x18");
@@ -53,5 +54,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::RnMesh_t, m_nFlags) == 0xB4, "m_nFlags in RnMesh_t should be at offset 0xB4");
 		static_assert(offsetof(CS2::physicslib::RnMesh_t, m_nDebugFlags) == 0xB8, "m_nDebugFlags in RnMesh_t should be at offset 0xB8");
 		static_assert(sizeof(CS2::physicslib::RnMesh_t) == 0xC0, "RnMesh_t size should be 0xC0");
+
+#endif
 	}
 }

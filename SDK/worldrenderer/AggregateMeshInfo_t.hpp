@@ -37,6 +37,7 @@ namespace CS2 {
 			worldrenderer::AggregateInstanceStream_t m_instanceStreams; // 0x20 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::AggregateMeshInfo_t, m_nVisClusterMemberOffset) == 0x0, "m_nVisClusterMemberOffset in AggregateMeshInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::AggregateMeshInfo_t, m_nVisClusterMemberCount) == 0x4, "m_nVisClusterMemberCount in AggregateMeshInfo_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::AggregateMeshInfo_t, m_bHasTransform) == 0x5, "m_bHasTransform in AggregateMeshInfo_t should be at offset 0x5");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::AggregateMeshInfo_t, m_nVertexAlbedoStreamOffset) == 0x1C, "m_nVertexAlbedoStreamOffset in AggregateMeshInfo_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::worldrenderer::AggregateMeshInfo_t, m_instanceStreams) == 0x20, "m_instanceStreams in AggregateMeshInfo_t should be at offset 0x20");
 		static_assert(sizeof(CS2::worldrenderer::AggregateMeshInfo_t) == 0x24, "AggregateMeshInfo_t size should be 0x24");
+
+#endif
 	}
 }

@@ -27,10 +27,13 @@ namespace CS2 {
 			bool m_bPenUp; // 0xe0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_system::CPulseTurtleGraphicsCursor, m_Color) == 0xD0, "m_Color in CPulseTurtleGraphicsCursor should be at offset 0xD0");
 		static_assert(offsetof(CS2::pulse_system::CPulseTurtleGraphicsCursor, m_vPos) == 0xD4, "m_vPos in CPulseTurtleGraphicsCursor should be at offset 0xD4");
 		static_assert(offsetof(CS2::pulse_system::CPulseTurtleGraphicsCursor, m_flHeadingDeg) == 0xDC, "m_flHeadingDeg in CPulseTurtleGraphicsCursor should be at offset 0xDC");
 		static_assert(offsetof(CS2::pulse_system::CPulseTurtleGraphicsCursor, m_bPenUp) == 0xE0, "m_bPenUp in CPulseTurtleGraphicsCursor should be at offset 0xE0");
 		static_assert(sizeof(CS2::pulse_system::CPulseTurtleGraphicsCursor) == 0xE8, "CPulseTurtleGraphicsCursor size should be 0xE8");
+
+#endif
 	}
 }

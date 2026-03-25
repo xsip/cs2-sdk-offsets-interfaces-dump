@@ -30,6 +30,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecNoiseAmount2; // 0x208 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecNoiseAmount3; // 0x214 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_TurbulenceForce, m_flNoiseCoordScale0) == 0x1E0, "m_flNoiseCoordScale0 in C_OP_TurbulenceForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_TurbulenceForce, m_flNoiseCoordScale1) == 0x1E4, "m_flNoiseCoordScale1 in C_OP_TurbulenceForce should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_OP_TurbulenceForce, m_flNoiseCoordScale2) == 0x1E8, "m_flNoiseCoordScale2 in C_OP_TurbulenceForce should be at offset 0x1E8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_TurbulenceForce, m_vecNoiseAmount2) == 0x208, "m_vecNoiseAmount2 in C_OP_TurbulenceForce should be at offset 0x208");
 		static_assert(offsetof(CS2::particles::C_OP_TurbulenceForce, m_vecNoiseAmount3) == 0x214, "m_vecNoiseAmount3 in C_OP_TurbulenceForce should be at offset 0x214");
 		static_assert(sizeof(CS2::particles::C_OP_TurbulenceForce) == 0x220, "C_OP_TurbulenceForce size should be 0x220");
+
+#endif
 	}
 }

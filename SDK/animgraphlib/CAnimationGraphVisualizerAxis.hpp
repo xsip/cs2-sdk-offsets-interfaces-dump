@@ -25,8 +25,11 @@ namespace CS2 {
 			float32 m_flAxisSize; // 0x60 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerAxis, m_xWsTransform) == 0x40, "m_xWsTransform in CAnimationGraphVisualizerAxis should be at offset 0x40");
 		static_assert(offsetof(CS2::animgraphlib::CAnimationGraphVisualizerAxis, m_flAxisSize) == 0x60, "m_flAxisSize in CAnimationGraphVisualizerAxis should be at offset 0x60");
 		static_assert(sizeof(CS2::animgraphlib::CAnimationGraphVisualizerAxis) == 0x70, "CAnimationGraphVisualizerAxis size should be 0x70");
+
+#endif
 	}
 }

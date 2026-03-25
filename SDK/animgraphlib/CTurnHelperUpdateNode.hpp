@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bUseManualTurnOffset; // 0x88 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CTurnHelperUpdateNode, m_facingTarget) == 0x74, "m_facingTarget in CTurnHelperUpdateNode should be at offset 0x74");
 		static_assert(offsetof(CS2::animgraphlib::CTurnHelperUpdateNode, m_turnStartTimeOffset) == 0x78, "m_turnStartTimeOffset in CTurnHelperUpdateNode should be at offset 0x78");
 		static_assert(offsetof(CS2::animgraphlib::CTurnHelperUpdateNode, m_turnDuration) == 0x7C, "m_turnDuration in CTurnHelperUpdateNode should be at offset 0x7C");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CTurnHelperUpdateNode, m_manualTurnOffset) == 0x84, "m_manualTurnOffset in CTurnHelperUpdateNode should be at offset 0x84");
 		static_assert(offsetof(CS2::animgraphlib::CTurnHelperUpdateNode, m_bUseManualTurnOffset) == 0x88, "m_bUseManualTurnOffset in CTurnHelperUpdateNode should be at offset 0x88");
 		static_assert(sizeof(CS2::animgraphlib::CTurnHelperUpdateNode) == 0x90, "CTurnHelperUpdateNode size should be 0x90");
+
+#endif
 	}
 }

@@ -40,6 +40,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flowMapNodeMaxRadius; // 0x38 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::navlib::CNavHullVData, m_bAgentEnabled) == 0x0, "m_bAgentEnabled in CNavHullVData should be at offset 0x0");
 		static_assert(offsetof(CS2::navlib::CNavHullVData, m_agentRadius) == 0x4, "m_agentRadius in CNavHullVData should be at offset 0x4");
 		static_assert(offsetof(CS2::navlib::CNavHullVData, m_agentHeight) == 0x8, "m_agentHeight in CNavHullVData should be at offset 0x8");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::navlib::CNavHullVData, m_flowMapGenerationEnabled) == 0x34, "m_flowMapGenerationEnabled in CNavHullVData should be at offset 0x34");
 		static_assert(offsetof(CS2::navlib::CNavHullVData, m_flowMapNodeMaxRadius) == 0x38, "m_flowMapNodeMaxRadius in CNavHullVData should be at offset 0x38");
 		static_assert(sizeof(CS2::navlib::CNavHullVData) == 0x3C, "CNavHullVData size should be 0x3C");
+
+#endif
 	}
 }

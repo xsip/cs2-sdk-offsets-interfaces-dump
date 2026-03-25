@@ -36,6 +36,7 @@ namespace CS2 {
 			bool m_bResetWhenActivated; // 0xfe | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStateMachineUpdateNode, m_stateMachine) == 0x70, "m_stateMachine in CStateMachineUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CStateMachineUpdateNode, m_stateData) == 0xC8, "m_stateData in CStateMachineUpdateNode should be at offset 0xC8");
 		static_assert(offsetof(CS2::animgraphlib::CStateMachineUpdateNode, m_transitionData) == 0xE0, "m_transitionData in CStateMachineUpdateNode should be at offset 0xE0");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CStateMachineUpdateNode, m_bLockStateWhenWaning) == 0xFD, "m_bLockStateWhenWaning in CStateMachineUpdateNode should be at offset 0xFD");
 		static_assert(offsetof(CS2::animgraphlib::CStateMachineUpdateNode, m_bResetWhenActivated) == 0xFE, "m_bResetWhenActivated in CStateMachineUpdateNode should be at offset 0xFE");
 		static_assert(sizeof(CS2::animgraphlib::CStateMachineUpdateNode) == 0x100, "CStateMachineUpdateNode size should be 0x100");
+
+#endif
 	}
 }

@@ -46,6 +46,7 @@ namespace CS2 {
 			float32 m_flRemapBias; // 0x9b8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToCPInit, m_nFieldOutput) == 0x1D8, "m_nFieldOutput in C_INIT_DistanceToCPInit should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToCPInit, m_flInputMin) == 0x1E0, "m_flInputMin in C_INIT_DistanceToCPInit should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToCPInit, m_flInputMax) == 0x350, "m_flInputMax in C_INIT_DistanceToCPInit should be at offset 0x350");
@@ -62,5 +63,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToCPInit, m_vecDistanceScale) == 0x9AC, "m_vecDistanceScale in C_INIT_DistanceToCPInit should be at offset 0x9AC");
 		static_assert(offsetof(CS2::particles::C_INIT_DistanceToCPInit, m_flRemapBias) == 0x9B8, "m_flRemapBias in C_INIT_DistanceToCPInit should be at offset 0x9B8");
 		static_assert(sizeof(CS2::particles::C_INIT_DistanceToCPInit) == 0x9C0, "C_INIT_DistanceToCPInit size should be 0x9C0");
+
+#endif
 	}
 }

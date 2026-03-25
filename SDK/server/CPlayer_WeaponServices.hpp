@@ -32,11 +32,14 @@ namespace CS2 {
 			bool m_bPreventWeaponPickup; // 0xa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hMyWeapons) == 0x48, "m_hMyWeapons in CPlayer_WeaponServices should be at offset 0x48");
 		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hActiveWeapon) == 0x60, "m_hActiveWeapon in CPlayer_WeaponServices should be at offset 0x60");
 		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_hLastWeapon) == 0x64, "m_hLastWeapon in CPlayer_WeaponServices should be at offset 0x64");
 		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_iAmmo) == 0x68, "m_iAmmo in CPlayer_WeaponServices should be at offset 0x68");
 		static_assert(offsetof(CS2::server::CPlayer_WeaponServices, m_bPreventWeaponPickup) == 0xA8, "m_bPreventWeaponPickup in CPlayer_WeaponServices should be at offset 0xA8");
 		static_assert(sizeof(CS2::server::CPlayer_WeaponServices) == 0xB0, "CPlayer_WeaponServices size should be 0xB0");
+
+#endif
 	}
 }

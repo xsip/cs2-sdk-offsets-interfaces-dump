@@ -31,11 +31,14 @@ namespace CS2 {
 			animlib::NmEasingOperation_t m_easingOp; // 0x70 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmFloatSelectorNode_CDefinition, m_conditionNodeIndices) == 0x10, "m_conditionNodeIndices in CNmFloatSelectorNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmFloatSelectorNode_CDefinition, m_values) == 0x38, "m_values in CNmFloatSelectorNode::CDefinition should be at offset 0x38");
 		static_assert(offsetof(CS2::animlib::CNmFloatSelectorNode_CDefinition, m_flDefaultValue) == 0x68, "m_flDefaultValue in CNmFloatSelectorNode::CDefinition should be at offset 0x68");
 		static_assert(offsetof(CS2::animlib::CNmFloatSelectorNode_CDefinition, m_flEaseTime) == 0x6C, "m_flEaseTime in CNmFloatSelectorNode::CDefinition should be at offset 0x6C");
 		static_assert(offsetof(CS2::animlib::CNmFloatSelectorNode_CDefinition, m_easingOp) == 0x70, "m_easingOp in CNmFloatSelectorNode::CDefinition should be at offset 0x70");
 		static_assert(sizeof(CS2::animlib::CNmFloatSelectorNode_CDefinition) == 0x78, "CNmFloatSelectorNode::CDefinition size should be 0x78");
+
+#endif
 	}
 }

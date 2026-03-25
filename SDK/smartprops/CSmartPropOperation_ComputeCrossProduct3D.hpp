@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeVector m_InputVectorA; // 0x58 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeVector m_InputVectorB; // 0x98 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeCrossProduct3D, m_OutputVariableName) == 0x50, "m_OutputVariableName in CSmartPropOperation_ComputeCrossProduct3D should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeCrossProduct3D, m_InputVectorA) == 0x58, "m_InputVectorA in CSmartPropOperation_ComputeCrossProduct3D should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropOperation_ComputeCrossProduct3D, m_InputVectorB) == 0x98, "m_InputVectorB in CSmartPropOperation_ComputeCrossProduct3D should be at offset 0x98");
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_ComputeCrossProduct3D) == 0xD8, "CSmartPropOperation_ComputeCrossProduct3D size should be 0xD8");
+
+#endif
 	}
 }

@@ -44,6 +44,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>> m_hurtEntities; // 0x8f8 | Schema_Atomic | Size: 0x18
 			// char m_hurtEntities[0x18]; // 0x8f8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTriggerHurt, m_flOriginalDamage) == 0x890, "m_flOriginalDamage in CTriggerHurt should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CTriggerHurt, m_flDamage) == 0x894, "m_flDamage in CTriggerHurt should be at offset 0x894");
 		static_assert(offsetof(CS2::server::CTriggerHurt, m_flDamageCap) == 0x898, "m_flDamageCap in CTriggerHurt should be at offset 0x898");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CTriggerHurt, m_OnHurtPlayer) == 0x8E0, "m_OnHurtPlayer in CTriggerHurt should be at offset 0x8E0");
 		static_assert(offsetof(CS2::server::CTriggerHurt, m_hurtEntities) == 0x8F8, "m_hurtEntities in CTriggerHurt should be at offset 0x8F8");
 		static_assert(sizeof(CS2::server::CTriggerHurt) == 0x910, "CTriggerHurt size should be 0x910");
+
+#endif
 	}
 }

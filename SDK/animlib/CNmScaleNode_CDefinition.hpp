@@ -25,8 +25,11 @@ namespace CS2 {
 			int16_t m_nEnableNodeIdx; // 0x1a | Schema_Builtin | Size: 0x2
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmScaleNode_CDefinition, m_nMaskNodeIdx) == 0x18, "m_nMaskNodeIdx in CNmScaleNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmScaleNode_CDefinition, m_nEnableNodeIdx) == 0x1A, "m_nEnableNodeIdx in CNmScaleNode::CDefinition should be at offset 0x1A");
 		static_assert(sizeof(CS2::animlib::CNmScaleNode_CDefinition) == 0x20, "CNmScaleNode::CDefinition size should be 0x20");
+
+#endif
 	}
 }

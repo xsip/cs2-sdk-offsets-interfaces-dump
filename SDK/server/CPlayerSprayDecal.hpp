@@ -38,6 +38,7 @@ namespace CS2 {
 			uint8_t m_ubSignature[128]; // 0x785 | Schema_FixedArray | Size: 0x80
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nUniqueID) == 0x730, "m_nUniqueID in CPlayerSprayDecal should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_unAccountID) == 0x734, "m_unAccountID in CPlayerSprayDecal should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_unTraceID) == 0x738, "m_unTraceID in CPlayerSprayDecal should be at offset 0x738");
@@ -54,5 +55,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_nVersion) == 0x784, "m_nVersion in CPlayerSprayDecal should be at offset 0x784");
 		static_assert(offsetof(CS2::server::CPlayerSprayDecal, m_ubSignature) == 0x785, "m_ubSignature in CPlayerSprayDecal should be at offset 0x785");
 		static_assert(sizeof(CS2::server::CPlayerSprayDecal) == 0x808, "CPlayerSprayDecal size should be 0x808");
+
+#endif
 	}
 }

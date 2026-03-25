@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_iFilterTeam; // 0x640 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CFilterTeam, m_iFilterTeam) == 0x640, "m_iFilterTeam in CFilterTeam should be at offset 0x640");
 		static_assert(sizeof(CS2::client::CFilterTeam) == 0x648, "CFilterTeam size should be 0x648");
+
+#endif
 	}
 }

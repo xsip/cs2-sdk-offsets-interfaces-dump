@@ -35,6 +35,7 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeBool m_bRigidDeformation; // 0x290 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeBool m_bDisableDynamicDeformable; // 0x2d0 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_sModelName) == 0x88, "m_sModelName in CSmartPropElement_Model should be at offset 0x88");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_MaterialGroupName) == 0xC8, "m_MaterialGroupName in CSmartPropElement_Model should be at offset 0xC8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bDetailObject) == 0x108, "m_bDetailObject in CSmartPropElement_Model should be at offset 0x108");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bRigidDeformation) == 0x290, "m_bRigidDeformation in CSmartPropElement_Model should be at offset 0x290");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement_Model, m_bDisableDynamicDeformable) == 0x2D0, "m_bDisableDynamicDeformable in CSmartPropElement_Model should be at offset 0x2D0");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement_Model) == 0x310, "CSmartPropElement_Model size should be 0x310");
+
+#endif
 	}
 }

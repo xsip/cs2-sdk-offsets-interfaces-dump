@@ -27,6 +27,7 @@ namespace CS2 {
 			float32 m_softContactFrequency; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 m_softContactDampingRatio; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesPhysics, m_friction) == 0x0, "m_friction in CPhysSurfacePropertiesPhysics should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesPhysics, m_elasticity) == 0x4, "m_elasticity in CPhysSurfacePropertiesPhysics should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesPhysics, m_density) == 0x8, "m_density in CPhysSurfacePropertiesPhysics should be at offset 0x8");
@@ -34,5 +35,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesPhysics, m_softContactFrequency) == 0x10, "m_softContactFrequency in CPhysSurfacePropertiesPhysics should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesPhysics, m_softContactDampingRatio) == 0x14, "m_softContactDampingRatio in CPhysSurfacePropertiesPhysics should be at offset 0x14");
 		static_assert(sizeof(CS2::modellib::CPhysSurfacePropertiesPhysics) == 0x18, "CPhysSurfacePropertiesPhysics size should be 0x18");
+
+#endif
 	}
 }

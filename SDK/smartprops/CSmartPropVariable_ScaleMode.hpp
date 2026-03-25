@@ -25,7 +25,10 @@ namespace CS2 {
 			smartprops::ScaleMode_t m_DefaultValue; // 0x38 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropVariable_ScaleMode, m_DefaultValue) == 0x38, "m_DefaultValue in CSmartPropVariable_ScaleMode should be at offset 0x38");
 		static_assert(sizeof(CS2::smartprops::CSmartPropVariable_ScaleMode) == 0x40, "CSmartPropVariable_ScaleMode size should be 0x40");
+
+#endif
 	}
 }

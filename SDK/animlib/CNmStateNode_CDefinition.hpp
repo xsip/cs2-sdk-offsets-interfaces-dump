@@ -40,6 +40,7 @@ namespace CS2 {
 			bool m_bIsOffState; // 0xae | Schema_Builtin | Size: 0x1
 			bool m_bUseActualElapsedTimeInStateForTimedEvents; // 0xaf | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmStateNode_CDefinition, m_nChildNodeIdx) == 0x10, "m_nChildNodeIdx in CNmStateNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmStateNode_CDefinition, m_entryEvents) == 0x18, "m_entryEvents in CNmStateNode::CDefinition should be at offset 0x18");
 		static_assert(offsetof(CS2::animlib::CNmStateNode_CDefinition, m_executeEvents) == 0x38, "m_executeEvents in CNmStateNode::CDefinition should be at offset 0x38");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmStateNode_CDefinition, m_bIsOffState) == 0xAE, "m_bIsOffState in CNmStateNode::CDefinition should be at offset 0xAE");
 		static_assert(offsetof(CS2::animlib::CNmStateNode_CDefinition, m_bUseActualElapsedTimeInStateForTimedEvents) == 0xAF, "m_bUseActualElapsedTimeInStateForTimedEvents in CNmStateNode::CDefinition should be at offset 0xAF");
 		static_assert(sizeof(CS2::animlib::CNmStateNode_CDefinition) == 0xB0, "CNmStateNode::CDefinition size should be 0xB0");
+
+#endif
 	}
 }

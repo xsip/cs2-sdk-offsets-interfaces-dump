@@ -24,9 +24,12 @@ namespace CS2 {
 			float32 m_startCycle; // 0x4 | Schema_Builtin | Size: 0x4
 			float32 m_endCycle; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::TagSpan_t, m_tagIndex) == 0x0, "m_tagIndex in TagSpan_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::TagSpan_t, m_startCycle) == 0x4, "m_startCycle in TagSpan_t should be at offset 0x4");
 		static_assert(offsetof(CS2::animgraphlib::TagSpan_t, m_endCycle) == 0x8, "m_endCycle in TagSpan_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animgraphlib::TagSpan_t) == 0xC, "TagSpan_t size should be 0xC");
+
+#endif
 	}
 }

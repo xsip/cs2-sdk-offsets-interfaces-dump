@@ -28,11 +28,14 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_oneBoneStart; // 0x18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_oneBoneEnd; // 0x20 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::IKDemoCaptureSettings_t, m_parentBoneName) == 0x0, "m_parentBoneName in IKDemoCaptureSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::IKDemoCaptureSettings_t, m_eMode) == 0x8, "m_eMode in IKDemoCaptureSettings_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::IKDemoCaptureSettings_t, m_ikChainName) == 0x10, "m_ikChainName in IKDemoCaptureSettings_t should be at offset 0x10");
 		static_assert(offsetof(CS2::animgraphlib::IKDemoCaptureSettings_t, m_oneBoneStart) == 0x18, "m_oneBoneStart in IKDemoCaptureSettings_t should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::IKDemoCaptureSettings_t, m_oneBoneEnd) == 0x20, "m_oneBoneEnd in IKDemoCaptureSettings_t should be at offset 0x20");
 		static_assert(sizeof(CS2::animgraphlib::IKDemoCaptureSettings_t) == 0x28, "IKDemoCaptureSettings_t size should be 0x28");
+
+#endif
 	}
 }

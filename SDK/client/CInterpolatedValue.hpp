@@ -26,11 +26,14 @@ namespace CS2 {
 			float32 m_flEndValue; // 0xc | Schema_Builtin | Size: 0x4
 			int32_t m_nInterpType; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CInterpolatedValue, m_flStartTime) == 0x0, "m_flStartTime in CInterpolatedValue should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CInterpolatedValue, m_flEndTime) == 0x4, "m_flEndTime in CInterpolatedValue should be at offset 0x4");
 		static_assert(offsetof(CS2::client::CInterpolatedValue, m_flStartValue) == 0x8, "m_flStartValue in CInterpolatedValue should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CInterpolatedValue, m_flEndValue) == 0xC, "m_flEndValue in CInterpolatedValue should be at offset 0xC");
 		static_assert(offsetof(CS2::client::CInterpolatedValue, m_nInterpType) == 0x10, "m_nInterpType in CInterpolatedValue should be at offset 0x10");
 		static_assert(sizeof(CS2::client::CInterpolatedValue) == 0x14, "CInterpolatedValue size should be 0x14");
+
+#endif
 	}
 }

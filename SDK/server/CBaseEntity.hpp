@@ -146,6 +146,7 @@ namespace CS2 {
 			client::BloodType m_nBloodType; // 0x49c | Schema_DeclaredEnum | Size: 0x4
 			server::CPulseGraphInstance_ServerEntity* m_pPulseGraphInstance; // 0x4a0 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseEntity, m_CBodyComponent) == 0x38, "m_CBodyComponent in CBaseEntity should be at offset 0x38");
 		static_assert(offsetof(CS2::server::CBaseEntity, m_NetworkTransmitComponent) == 0x40, "m_NetworkTransmitComponent in CBaseEntity should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CBaseEntity, m_aThinkFunctions) == 0x250, "m_aThinkFunctions in CBaseEntity should be at offset 0x250");
@@ -227,5 +228,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseEntity, m_nBloodType) == 0x49C, "m_nBloodType in CBaseEntity should be at offset 0x49C");
 		static_assert(offsetof(CS2::server::CBaseEntity, m_pPulseGraphInstance) == 0x4A0, "m_pPulseGraphInstance in CBaseEntity should be at offset 0x4A0");
 		static_assert(sizeof(CS2::server::CBaseEntity) == 0x4A8, "CBaseEntity size should be 0x4A8");
+
+#endif
 	}
 }

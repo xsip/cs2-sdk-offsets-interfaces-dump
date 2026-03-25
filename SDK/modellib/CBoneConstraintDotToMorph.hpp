@@ -27,10 +27,13 @@ namespace CS2 {
 			float32 m_flRemap[4]; // 0x38 | Schema_FixedArray | Size: 0x10
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CBoneConstraintDotToMorph, m_sBoneName) == 0x20, "m_sBoneName in CBoneConstraintDotToMorph should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintDotToMorph, m_sTargetBoneName) == 0x28, "m_sTargetBoneName in CBoneConstraintDotToMorph should be at offset 0x28");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintDotToMorph, m_sMorphChannelName) == 0x30, "m_sMorphChannelName in CBoneConstraintDotToMorph should be at offset 0x30");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintDotToMorph, m_flRemap) == 0x38, "m_flRemap in CBoneConstraintDotToMorph should be at offset 0x38");
 		static_assert(sizeof(CS2::modellib::CBoneConstraintDotToMorph) == 0x58, "CBoneConstraintDotToMorph size should be 0x58");
+
+#endif
 	}
 }

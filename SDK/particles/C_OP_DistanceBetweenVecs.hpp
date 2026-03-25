@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bDeltaTime; // 0x150c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_DistanceBetweenVecs should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_vecPoint1) == 0x1D8, "m_vecPoint1 in C_OP_DistanceBetweenVecs should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_vecPoint2) == 0x890, "m_vecPoint2 in C_OP_DistanceBetweenVecs should be at offset 0x890");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_nSetMethod) == 0x1508, "m_nSetMethod in C_OP_DistanceBetweenVecs should be at offset 0x1508");
 		static_assert(offsetof(CS2::particles::C_OP_DistanceBetweenVecs, m_bDeltaTime) == 0x150C, "m_bDeltaTime in C_OP_DistanceBetweenVecs should be at offset 0x150C");
 		static_assert(sizeof(CS2::particles::C_OP_DistanceBetweenVecs) == 0x1510, "C_OP_DistanceBetweenVecs size should be 0x1510");
+
+#endif
 	}
 }

@@ -36,11 +36,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<smartprops::CSmartPropModifier*> m_Modifiers; // 0x70 | Schema_Atomic | Size: 0x18
 			// char m_Modifiers[0x18]; // 0x70 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement, m_nElementID) == 0x8, "m_nElementID in CSmartPropElement should be at offset 0x8");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement, m_bEnabled) == 0x10, "m_bEnabled in CSmartPropElement should be at offset 0x10");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement, m_sLabel) == 0x50, "m_sLabel in CSmartPropElement should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement, m_SelectionCriteria) == 0x58, "m_SelectionCriteria in CSmartPropElement should be at offset 0x58");
 		static_assert(offsetof(CS2::smartprops::CSmartPropElement, m_Modifiers) == 0x70, "m_Modifiers in CSmartPropElement should be at offset 0x70");
 		static_assert(sizeof(CS2::smartprops::CSmartPropElement) == 0x88, "CSmartPropElement size should be 0x88");
+
+#endif
 	}
 }

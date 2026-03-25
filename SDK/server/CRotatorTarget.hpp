@@ -27,8 +27,11 @@ namespace CS2 {
 			server::RotatorTargetSpace_t m_eSpace; // 0x4c0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRotatorTarget, m_OnArrivedAt) == 0x4A8, "m_OnArrivedAt in CRotatorTarget should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CRotatorTarget, m_eSpace) == 0x4C0, "m_eSpace in CRotatorTarget should be at offset 0x4C0");
 		static_assert(sizeof(CS2::server::CRotatorTarget) == 0x4C8, "CRotatorTarget size should be 0x4C8");
+
+#endif
 	}
 }

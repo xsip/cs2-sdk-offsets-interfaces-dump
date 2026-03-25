@@ -27,10 +27,13 @@ namespace CS2 {
 			GlobalTypes::Color m_DefaultHSVColor; // 0x1e4 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_HSVShiftToCP, m_nColorCP) == 0x1D8, "m_nColorCP in C_OP_HSVShiftToCP should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_HSVShiftToCP, m_nColorGemEnableCP) == 0x1DC, "m_nColorGemEnableCP in C_OP_HSVShiftToCP should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_HSVShiftToCP, m_nOutputCP) == 0x1E0, "m_nOutputCP in C_OP_HSVShiftToCP should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_HSVShiftToCP, m_DefaultHSVColor) == 0x1E4, "m_DefaultHSVColor in C_OP_HSVShiftToCP should be at offset 0x1E4");
 		static_assert(sizeof(CS2::particles::C_OP_HSVShiftToCP) == 0x1F8, "C_OP_HSVShiftToCP size should be 0x1F8");
+
+#endif
 	}
 }

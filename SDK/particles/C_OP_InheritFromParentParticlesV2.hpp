@@ -34,6 +34,7 @@ namespace CS2 {
 			particles::MissingParentInheritBehavior_t m_nMissingParentBehavior; // 0x4bc | Schema_DeclaredEnum | Size: 0x4
 			particleslib::CPerParticleFloatInput m_flInterpolation; // 0x4c0 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticlesV2, m_flScale) == 0x1D0, "m_flScale in C_OP_InheritFromParentParticlesV2 should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticlesV2, m_nFieldOutput) == 0x340, "m_nFieldOutput in C_OP_InheritFromParentParticlesV2 should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticlesV2, m_nIncrement) == 0x348, "m_nIncrement in C_OP_InheritFromParentParticlesV2 should be at offset 0x348");
@@ -42,5 +43,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticlesV2, m_nMissingParentBehavior) == 0x4BC, "m_nMissingParentBehavior in C_OP_InheritFromParentParticlesV2 should be at offset 0x4BC");
 		static_assert(offsetof(CS2::particles::C_OP_InheritFromParentParticlesV2, m_flInterpolation) == 0x4C0, "m_flInterpolation in C_OP_InheritFromParentParticlesV2 should be at offset 0x4C0");
 		static_assert(sizeof(CS2::particles::C_OP_InheritFromParentParticlesV2) == 0x630, "C_OP_InheritFromParentParticlesV2 size should be 0x630");
+
+#endif
 	}
 }

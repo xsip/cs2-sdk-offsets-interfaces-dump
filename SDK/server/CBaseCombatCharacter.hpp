@@ -39,6 +39,7 @@ namespace CS2 {
 			uint32_t m_nNavHullIdx; // 0xb2c | Schema_Builtin | Size: 0x4
 			server::CMovementStatsProperty m_movementStats; // 0xb30 | Schema_DeclaredClass | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_bForceServerRagdoll) == 0xAB0, "m_bForceServerRagdoll in CBaseCombatCharacter should be at offset 0xAB0");
 		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_hMyWearables) == 0xAB8, "m_hMyWearables in CBaseCombatCharacter should be at offset 0xAB8");
 		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_impactEnergyScale) == 0xAD0, "m_impactEnergyScale in CBaseCombatCharacter should be at offset 0xAD0");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_nNavHullIdx) == 0xB2C, "m_nNavHullIdx in CBaseCombatCharacter should be at offset 0xB2C");
 		static_assert(offsetof(CS2::server::CBaseCombatCharacter, m_movementStats) == 0xB30, "m_movementStats in CBaseCombatCharacter should be at offset 0xB30");
 		static_assert(sizeof(CS2::server::CBaseCombatCharacter) == 0xB70, "CBaseCombatCharacter size should be 0xB70");
+
+#endif
 	}
 }

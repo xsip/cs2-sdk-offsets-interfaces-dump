@@ -27,8 +27,11 @@ namespace CS2 {
 			client::GrenadeType_t m_nType; // 0xea4 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x478); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CGrenadeTracer, m_flTracerDuration) == 0xEA0, "m_flTracerDuration in CGrenadeTracer should be at offset 0xEA0");
 		static_assert(offsetof(CS2::client::CGrenadeTracer, m_nType) == 0xEA4, "m_nType in CGrenadeTracer should be at offset 0xEA4");
 		static_assert(sizeof(CS2::client::CGrenadeTracer) == 0x1320, "CGrenadeTracer size should be 0x1320");
+
+#endif
 	}
 }

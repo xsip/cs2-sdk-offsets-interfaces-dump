@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 map_rotation; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::inv_image_map_t, map_name) == 0x0, "map_name in inv_image_map_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::inv_image_map_t, map_rotation) == 0x8, "map_rotation in inv_image_map_t should be at offset 0x8");
 		static_assert(sizeof(CS2::client::inv_image_map_t) == 0x10, "inv_image_map_t size should be 0x10");
+
+#endif
 	}
 }

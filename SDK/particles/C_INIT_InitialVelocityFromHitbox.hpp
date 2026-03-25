@@ -28,11 +28,14 @@ namespace CS2 {
 			bool m_bUseBones; // 0x264 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityFromHitbox, m_flVelocityMin) == 0x1D8, "m_flVelocityMin in C_INIT_InitialVelocityFromHitbox should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityFromHitbox, m_flVelocityMax) == 0x1DC, "m_flVelocityMax in C_INIT_InitialVelocityFromHitbox should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityFromHitbox, m_nControlPointNumber) == 0x1E0, "m_nControlPointNumber in C_INIT_InitialVelocityFromHitbox should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityFromHitbox, m_HitboxSetName) == 0x1E4, "m_HitboxSetName in C_INIT_InitialVelocityFromHitbox should be at offset 0x1E4");
 		static_assert(offsetof(CS2::particles::C_INIT_InitialVelocityFromHitbox, m_bUseBones) == 0x264, "m_bUseBones in C_INIT_InitialVelocityFromHitbox should be at offset 0x264");
 		static_assert(sizeof(CS2::particles::C_INIT_InitialVelocityFromHitbox) == 0x268, "C_INIT_InitialVelocityFromHitbox size should be 0x268");
+
+#endif
 	}
 }

@@ -31,8 +31,11 @@ namespace CS2 {
 			// char entity[0x4]; // 0x8 | Schema_Atomic | Size: 0x4
 			client::Class_T classType; // 0xc | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::RelationshipOverride_t, entity) == 0x8, "entity in RelationshipOverride_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::RelationshipOverride_t, classType) == 0xC, "classType in RelationshipOverride_t should be at offset 0xC");
 		static_assert(sizeof(CS2::server::RelationshipOverride_t) == 0x10, "RelationshipOverride_t size should be 0x10");
+
+#endif
 	}
 }

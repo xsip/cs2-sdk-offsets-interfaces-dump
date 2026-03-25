@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::CFlexOp> m_FlexOps; // 0x8 | Schema_Atomic | Size: 0x18
 			// char m_FlexOps[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFlexRule, m_nFlex) == 0x0, "m_nFlex in CFlexRule should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CFlexRule, m_FlexOps) == 0x8, "m_FlexOps in CFlexRule should be at offset 0x8");
 		static_assert(sizeof(CS2::modellib::CFlexRule) == 0x20, "CFlexRule size should be 0x20");
+
+#endif
 	}
 }

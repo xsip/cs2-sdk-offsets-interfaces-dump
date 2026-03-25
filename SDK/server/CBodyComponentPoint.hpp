@@ -25,7 +25,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			server::CGameSceneNode m_sceneNode; // 0x80 | Schema_DeclaredClass | Size: 0x130
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBodyComponentPoint, m_sceneNode) == 0x80, "m_sceneNode in CBodyComponentPoint should be at offset 0x80");
 		static_assert(sizeof(CS2::server::CBodyComponentPoint) == 0x1B0, "CBodyComponentPoint size should be 0x1B0");
+
+#endif
 	}
 }

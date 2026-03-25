@@ -33,6 +33,7 @@ namespace CS2 {
 			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0xfb4 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_OffsetMin) == 0x1D8, "m_OffsetMin in C_INIT_PositionOffset should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_OffsetMax) == 0x890, "m_OffsetMax in C_INIT_PositionOffset should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_TransformInput) == 0xF48, "m_TransformInput in C_INIT_PositionOffset should be at offset 0xF48");
@@ -40,5 +41,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_bProportional) == 0xFB1, "m_bProportional in C_INIT_PositionOffset should be at offset 0xFB1");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionOffset, m_randomnessParameters) == 0xFB4, "m_randomnessParameters in C_INIT_PositionOffset should be at offset 0xFB4");
 		static_assert(sizeof(CS2::particles::C_INIT_PositionOffset) == 0xFC0, "C_INIT_PositionOffset size should be 0xFC0");
+
+#endif
 	}
 }

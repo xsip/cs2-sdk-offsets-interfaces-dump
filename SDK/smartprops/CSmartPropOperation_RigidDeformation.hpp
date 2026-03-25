@@ -22,6 +22,9 @@ namespace CS2 {
 		class CSmartPropOperation_RigidDeformation : public CS2::smartprops::CSmartPropTransformOperation {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::smartprops::CSmartPropOperation_RigidDeformation) == 0x50, "CSmartPropOperation_RigidDeformation size should be 0x50");
+
+#endif
 	}
 }

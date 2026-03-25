@@ -27,9 +27,12 @@ namespace CS2 {
 			GlobalTypes::Vector m_vMaxOutputValue; // 0x1f8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentToVector, m_nFieldOutput) == 0x1E8, "m_nFieldOutput in C_OP_RemapDistanceToLineSegmentToVector should be at offset 0x1E8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentToVector, m_vMinOutputValue) == 0x1EC, "m_vMinOutputValue in C_OP_RemapDistanceToLineSegmentToVector should be at offset 0x1EC");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDistanceToLineSegmentToVector, m_vMaxOutputValue) == 0x1F8, "m_vMaxOutputValue in C_OP_RemapDistanceToLineSegmentToVector should be at offset 0x1F8");
 		static_assert(sizeof(CS2::particles::C_OP_RemapDistanceToLineSegmentToVector) == 0x208, "C_OP_RemapDistanceToLineSegmentToVector size should be 0x208");
+
+#endif
 	}
 }

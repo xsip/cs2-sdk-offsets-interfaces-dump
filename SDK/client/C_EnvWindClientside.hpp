@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			client::C_EnvWindShared m_EnvWindShared; // 0x608 | Schema_DeclaredClass | Size: 0xf8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EnvWindClientside, m_EnvWindShared) == 0x608, "m_EnvWindShared in C_EnvWindClientside should be at offset 0x608");
 		static_assert(sizeof(CS2::client::C_EnvWindClientside) == 0x700, "C_EnvWindClientside size should be 0x700");
+
+#endif
 	}
 }

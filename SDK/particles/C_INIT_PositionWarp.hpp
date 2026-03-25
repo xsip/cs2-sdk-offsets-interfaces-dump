@@ -34,6 +34,7 @@ namespace CS2 {
 			bool m_bUseCount; // 0xf61 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_vecWarpMin) == 0x1D8, "m_vecWarpMin in C_INIT_PositionWarp should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_vecWarpMax) == 0x890, "m_vecWarpMax in C_INIT_PositionWarp should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_nScaleControlPointNumber) == 0xF48, "m_nScaleControlPointNumber in C_INIT_PositionWarp should be at offset 0xF48");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_bInvertWarp) == 0xF60, "m_bInvertWarp in C_INIT_PositionWarp should be at offset 0xF60");
 		static_assert(offsetof(CS2::particles::C_INIT_PositionWarp, m_bUseCount) == 0xF61, "m_bUseCount in C_INIT_PositionWarp should be at offset 0xF61");
 		static_assert(sizeof(CS2::particles::C_INIT_PositionWarp) == 0xF68, "C_INIT_PositionWarp size should be 0xF68");
+
+#endif
 	}
 }

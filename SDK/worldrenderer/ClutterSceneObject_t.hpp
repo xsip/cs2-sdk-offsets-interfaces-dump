@@ -43,6 +43,7 @@ namespace CS2 {
 			float32 m_flEndCullSize; // 0xa8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::ClutterSceneObject_t, m_Bounds) == 0x0, "m_Bounds in ClutterSceneObject_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::ClutterSceneObject_t, m_flags) == 0x18, "m_flags in ClutterSceneObject_t should be at offset 0x18");
 		static_assert(offsetof(CS2::worldrenderer::ClutterSceneObject_t, m_nLayer) == 0x1C, "m_nLayer in ClutterSceneObject_t should be at offset 0x1C");
@@ -55,5 +56,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::ClutterSceneObject_t, m_flBeginCullSize) == 0xA4, "m_flBeginCullSize in ClutterSceneObject_t should be at offset 0xA4");
 		static_assert(offsetof(CS2::worldrenderer::ClutterSceneObject_t, m_flEndCullSize) == 0xA8, "m_flEndCullSize in ClutterSceneObject_t should be at offset 0xA8");
 		static_assert(sizeof(CS2::worldrenderer::ClutterSceneObject_t) == 0xB0, "ClutterSceneObject_t size should be 0xB0");
+
+#endif
 	}
 }

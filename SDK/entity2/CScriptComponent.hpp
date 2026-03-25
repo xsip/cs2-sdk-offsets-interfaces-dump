@@ -24,7 +24,10 @@ namespace CS2 {
 			S2_PAD(0x28);
 			GlobalTypes::CUtlSymbolLarge m_scriptClassName; // 0x30 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::entity2::CScriptComponent, m_scriptClassName) == 0x30, "m_scriptClassName in CScriptComponent should be at offset 0x30");
 		static_assert(sizeof(CS2::entity2::CScriptComponent) == 0x38, "CScriptComponent size should be 0x38");
+
+#endif
 	}
 }

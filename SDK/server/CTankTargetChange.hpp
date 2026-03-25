@@ -26,8 +26,11 @@ namespace CS2 {
 			char m_newTarget[0x10]; // 0x4a8 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CUtlSymbolLarge m_newTargetName; // 0x4b8 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CTankTargetChange, m_newTarget) == 0x4A8, "m_newTarget in CTankTargetChange should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CTankTargetChange, m_newTargetName) == 0x4B8, "m_newTargetName in CTankTargetChange should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CTankTargetChange) == 0x4C0, "CTankTargetChange size should be 0x4C0");
+
+#endif
 	}
 }

@@ -32,6 +32,7 @@ namespace CS2 {
 			GlobalTypes::WorldGroupId_t m_nWorldGroupID; // 0x88 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::sky3dparams_t, scale) == 0x8, "scale in sky3dparams_t should be at offset 0x8");
 		static_assert(offsetof(CS2::client::sky3dparams_t, origin) == 0xC, "origin in sky3dparams_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::sky3dparams_t, bClip3DSkyBoxNearToWorldFar) == 0x18, "bClip3DSkyBoxNearToWorldFar in sky3dparams_t should be at offset 0x18");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::sky3dparams_t, fog) == 0x20, "fog in sky3dparams_t should be at offset 0x20");
 		static_assert(offsetof(CS2::client::sky3dparams_t, m_nWorldGroupID) == 0x88, "m_nWorldGroupID in sky3dparams_t should be at offset 0x88");
 		static_assert(sizeof(CS2::client::sky3dparams_t) == 0x90, "sky3dparams_t size should be 0x90");
+
+#endif
 	}
 }

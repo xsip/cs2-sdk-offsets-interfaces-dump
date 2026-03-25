@@ -27,10 +27,13 @@ namespace CS2 {
 			bool m_bTeleportUseCurrentAngle; // 0x4c1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointTeleport, m_vSaveOrigin) == 0x4A8, "m_vSaveOrigin in CPointTeleport should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CPointTeleport, m_vSaveAngles) == 0x4B4, "m_vSaveAngles in CPointTeleport should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CPointTeleport, m_bTeleportParentedEntities) == 0x4C0, "m_bTeleportParentedEntities in CPointTeleport should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CPointTeleport, m_bTeleportUseCurrentAngle) == 0x4C1, "m_bTeleportUseCurrentAngle in CPointTeleport should be at offset 0x4C1");
 		static_assert(sizeof(CS2::server::CPointTeleport) == 0x4C8, "CPointTeleport size should be 0x4C8");
+
+#endif
 	}
 }

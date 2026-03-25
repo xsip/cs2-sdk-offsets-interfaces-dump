@@ -37,6 +37,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x228 | Schema_DeclaredClass | Size: 0x4
 			float32 m_flRemapTime; // 0x22c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_hModel) == 0x1D0, "m_hModel in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_inNames) == 0x1D8, "m_inNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_outNames) == 0x1F0, "m_outNames in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x1F0");
@@ -47,5 +48,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_nFieldOutput) == 0x228, "m_nFieldOutput in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x228");
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed, m_flRemapTime) == 0x22C, "m_flRemapTime in C_OP_RemapNamedModelElementOnceTimed should be at offset 0x22C");
 		static_assert(sizeof(CS2::particles::C_OP_RemapNamedModelElementOnceTimed) == 0x230, "C_OP_RemapNamedModelElementOnceTimed size should be 0x230");
+
+#endif
 	}
 }

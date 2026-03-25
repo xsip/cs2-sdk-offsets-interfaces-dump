@@ -27,8 +27,11 @@ namespace CS2 {
 			// char m_outputBones[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x78); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CBoneConstraintRbf, m_inputBones) == 0x20, "m_inputBones in CBoneConstraintRbf should be at offset 0x20");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintRbf, m_outputBones) == 0x38, "m_outputBones in CBoneConstraintRbf should be at offset 0x38");
 		static_assert(sizeof(CS2::modellib::CBoneConstraintRbf) == 0xC8, "CBoneConstraintRbf size should be 0xC8");
+
+#endif
 	}
 }

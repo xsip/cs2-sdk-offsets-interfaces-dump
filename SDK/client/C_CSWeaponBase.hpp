@@ -105,6 +105,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flLastShakeTime; // 0x1d8c | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x1b0); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSWeaponBase, m_iWeaponGameplayAnimState) == 0x1948, "m_iWeaponGameplayAnimState in C_CSWeaponBase should be at offset 0x1948");
 		static_assert(offsetof(CS2::client::C_CSWeaponBase, m_flWeaponGameplayAnimStateTimestamp) == 0x194C, "m_flWeaponGameplayAnimStateTimestamp in C_CSWeaponBase should be at offset 0x194C");
 		static_assert(offsetof(CS2::client::C_CSWeaponBase, m_flInspectCancelCompleteTime) == 0x1950, "m_flInspectCancelCompleteTime in C_CSWeaponBase should be at offset 0x1950");
@@ -158,5 +159,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_CSWeaponBase, m_flWatTickOffset) == 0x1D78, "m_flWatTickOffset in C_CSWeaponBase should be at offset 0x1D78");
 		static_assert(offsetof(CS2::client::C_CSWeaponBase, m_flLastShakeTime) == 0x1D8C, "m_flLastShakeTime in C_CSWeaponBase should be at offset 0x1D8C");
 		static_assert(sizeof(CS2::client::C_CSWeaponBase) == 0x1F40, "C_CSWeaponBase size should be 0x1F40");
+
+#endif
 	}
 }

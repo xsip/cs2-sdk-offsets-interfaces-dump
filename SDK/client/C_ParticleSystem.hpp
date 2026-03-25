@@ -53,6 +53,7 @@ namespace CS2 {
 			bool m_bOldFrozen; // 0x1421 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x16); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_ParticleSystem, m_szSnapshotFileName) == 0xE88, "m_szSnapshotFileName in C_ParticleSystem should be at offset 0xE88");
 		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bActive) == 0x1088, "m_bActive in C_ParticleSystem should be at offset 0x1088");
 		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bFrozen) == 0x1089, "m_bFrozen in C_ParticleSystem should be at offset 0x1089");
@@ -78,5 +79,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bOldActive) == 0x1420, "m_bOldActive in C_ParticleSystem should be at offset 0x1420");
 		static_assert(offsetof(CS2::client::C_ParticleSystem, m_bOldFrozen) == 0x1421, "m_bOldFrozen in C_ParticleSystem should be at offset 0x1421");
 		static_assert(sizeof(CS2::client::C_ParticleSystem) == 0x1438, "C_ParticleSystem size should be 0x1438");
+
+#endif
 	}
 }

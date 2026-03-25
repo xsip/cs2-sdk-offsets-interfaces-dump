@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::CSmartPropAttributeMaterialName m_OriginalMaterial; // 0x0 | Schema_Atomic | Size: 0x40
 			GlobalTypes::CSmartPropAttributeMaterialName m_ReplacementMaterial; // 0x40 | Schema_Atomic | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropMaterialReplacement, m_OriginalMaterial) == 0x0, "m_OriginalMaterial in CSmartPropMaterialReplacement should be at offset 0x0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropMaterialReplacement, m_ReplacementMaterial) == 0x40, "m_ReplacementMaterial in CSmartPropMaterialReplacement should be at offset 0x40");
 		static_assert(sizeof(CS2::smartprops::CSmartPropMaterialReplacement) == 0x80, "CSmartPropMaterialReplacement size should be 0x80");
+
+#endif
 	}
 }

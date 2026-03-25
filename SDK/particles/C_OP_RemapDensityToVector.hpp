@@ -32,6 +32,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			int32_t m_nVoxelGridResolution; // 0x1fc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapDensityToVector, m_flRadiusScale) == 0x1D0, "m_flRadiusScale in C_OP_RemapDensityToVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDensityToVector, m_nFieldOutput) == 0x1D4, "m_nFieldOutput in C_OP_RemapDensityToVector should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDensityToVector, m_flDensityMin) == 0x1D8, "m_flDensityMin in C_OP_RemapDensityToVector should be at offset 0x1D8");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapDensityToVector, m_bUseParentDensity) == 0x1F8, "m_bUseParentDensity in C_OP_RemapDensityToVector should be at offset 0x1F8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapDensityToVector, m_nVoxelGridResolution) == 0x1FC, "m_nVoxelGridResolution in C_OP_RemapDensityToVector should be at offset 0x1FC");
 		static_assert(sizeof(CS2::particles::C_OP_RemapDensityToVector) == 0x200, "C_OP_RemapDensityToVector size should be 0x200");
+
+#endif
 	}
 }

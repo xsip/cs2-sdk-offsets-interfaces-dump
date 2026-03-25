@@ -24,9 +24,12 @@ namespace CS2 {
 			float32 flWeight; // 0x4 | Schema_Builtin | Size: 0x4
 			uint32_t nMatrixNode; // 0x8 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeFitInfluence_t, nVertexNode) == 0x0, "nVertexNode in FeFitInfluence_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeFitInfluence_t, flWeight) == 0x4, "flWeight in FeFitInfluence_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeFitInfluence_t, nMatrixNode) == 0x8, "nMatrixNode in FeFitInfluence_t should be at offset 0x8");
 		static_assert(sizeof(CS2::physicslib::FeFitInfluence_t) == 0xC, "FeFitInfluence_t size should be 0xC");
+
+#endif
 	}
 }

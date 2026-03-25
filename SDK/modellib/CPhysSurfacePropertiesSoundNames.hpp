@@ -33,6 +33,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_skidStop; // 0x50 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_resonant; // 0x58 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesSoundNames, m_impactSoft) == 0x0, "m_impactSoft in CPhysSurfacePropertiesSoundNames should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesSoundNames, m_impactHard) == 0x8, "m_impactHard in CPhysSurfacePropertiesSoundNames should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesSoundNames, m_scrapeSmooth) == 0x10, "m_scrapeSmooth in CPhysSurfacePropertiesSoundNames should be at offset 0x10");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesSoundNames, m_skidStop) == 0x50, "m_skidStop in CPhysSurfacePropertiesSoundNames should be at offset 0x50");
 		static_assert(offsetof(CS2::modellib::CPhysSurfacePropertiesSoundNames, m_resonant) == 0x58, "m_resonant in CPhysSurfacePropertiesSoundNames should be at offset 0x58");
 		static_assert(sizeof(CS2::modellib::CPhysSurfacePropertiesSoundNames) == 0x60, "CPhysSurfacePropertiesSoundNames size should be 0x60");
+
+#endif
 	}
 }

@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::CNetworkedQuantizedFloat m_vecY; // 0x18 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CNetworkedQuantizedFloat m_vecZ; // 0x20 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CNetworkVelocityVector, m_vecX) == 0x10, "m_vecX in CNetworkVelocityVector should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CNetworkVelocityVector, m_vecY) == 0x18, "m_vecY in CNetworkVelocityVector should be at offset 0x18");
 		static_assert(offsetof(CS2::client::CNetworkVelocityVector, m_vecZ) == 0x20, "m_vecZ in CNetworkVelocityVector should be at offset 0x20");
 		static_assert(sizeof(CS2::client::CNetworkVelocityVector) == 0x28, "CNetworkVelocityVector size should be 0x28");
+
+#endif
 	}
 }

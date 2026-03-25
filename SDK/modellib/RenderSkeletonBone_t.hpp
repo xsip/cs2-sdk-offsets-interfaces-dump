@@ -28,11 +28,14 @@ namespace CS2 {
 			float32 m_flSphereRadius; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::RenderSkeletonBone_t, m_boneName) == 0x0, "m_boneName in RenderSkeletonBone_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::RenderSkeletonBone_t, m_parentName) == 0x8, "m_parentName in RenderSkeletonBone_t should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::RenderSkeletonBone_t, m_invBindPose) == 0x10, "m_invBindPose in RenderSkeletonBone_t should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::RenderSkeletonBone_t, m_bbox) == 0x40, "m_bbox in RenderSkeletonBone_t should be at offset 0x40");
 		static_assert(offsetof(CS2::modellib::RenderSkeletonBone_t, m_flSphereRadius) == 0x58, "m_flSphereRadius in RenderSkeletonBone_t should be at offset 0x58");
 		static_assert(sizeof(CS2::modellib::RenderSkeletonBone_t) == 0x60, "RenderSkeletonBone_t size should be 0x60");
+
+#endif
 	}
 }

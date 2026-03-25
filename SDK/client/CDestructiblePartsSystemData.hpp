@@ -25,8 +25,11 @@ namespace CS2 {
 			char m_PartsDataByHitGroup[0x28]; // 0x0 | Schema_Atomic | Size: 0x28
 			tier2::CRangeInt m_nMinMaxNumberHitGroupsToDestroyWhenGibbing; // 0x28 | Schema_DeclaredClass | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CDestructiblePartsSystemData, m_PartsDataByHitGroup) == 0x0, "m_PartsDataByHitGroup in CDestructiblePartsSystemData should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CDestructiblePartsSystemData, m_nMinMaxNumberHitGroupsToDestroyWhenGibbing) == 0x28, "m_nMinMaxNumberHitGroupsToDestroyWhenGibbing in CDestructiblePartsSystemData should be at offset 0x28");
 		static_assert(sizeof(CS2::client::CDestructiblePartsSystemData) == 0x30, "CDestructiblePartsSystemData size should be 0x30");
+
+#endif
 	}
 }

@@ -23,8 +23,11 @@ namespace CS2 {
 			uint16_t m_nParticle[2]; // 0x0 | Schema_FixedArray | Size: 0x4
 			float32 m_flLength; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::RnSoftbodySpring_t, m_nParticle) == 0x0, "m_nParticle in RnSoftbodySpring_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::RnSoftbodySpring_t, m_flLength) == 0x4, "m_flLength in RnSoftbodySpring_t should be at offset 0x4");
 		static_assert(sizeof(CS2::physicslib::RnSoftbodySpring_t) == 0x8, "RnSoftbodySpring_t size should be 0x8");
+
+#endif
 	}
 }

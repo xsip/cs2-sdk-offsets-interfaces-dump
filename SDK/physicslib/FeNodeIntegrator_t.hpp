@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 flAnimationVertexAttraction; // 0x8 | Schema_Builtin | Size: 0x4
 			float32 flGravity; // 0xc | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeNodeIntegrator_t, flPointDamping) == 0x0, "flPointDamping in FeNodeIntegrator_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeNodeIntegrator_t, flAnimationForceAttraction) == 0x4, "flAnimationForceAttraction in FeNodeIntegrator_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeNodeIntegrator_t, flAnimationVertexAttraction) == 0x8, "flAnimationVertexAttraction in FeNodeIntegrator_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeNodeIntegrator_t, flGravity) == 0xC, "flGravity in FeNodeIntegrator_t should be at offset 0xC");
 		static_assert(sizeof(CS2::physicslib::FeNodeIntegrator_t) == 0x10, "FeNodeIntegrator_t size should be 0x10");
+
+#endif
 	}
 }

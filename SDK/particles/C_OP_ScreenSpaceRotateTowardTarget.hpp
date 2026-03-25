@@ -31,10 +31,13 @@ namespace CS2 {
 			S2_PAD(0x4);
 			particleslib::CPerParticleFloatInput m_flScreenEdgeAlignmentDistance; // 0xa00 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_vecTargetPosition) == 0x1D0, "m_vecTargetPosition in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_flOutputRemap) == 0x888, "m_flOutputRemap in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x888");
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_nSetMethod) == 0x9F8, "m_nSetMethod in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0x9F8");
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget, m_flScreenEdgeAlignmentDistance) == 0xA00, "m_flScreenEdgeAlignmentDistance in C_OP_ScreenSpaceRotateTowardTarget should be at offset 0xA00");
 		static_assert(sizeof(CS2::particles::C_OP_ScreenSpaceRotateTowardTarget) == 0xB70, "C_OP_ScreenSpaceRotateTowardTarget size should be 0xB70");
+
+#endif
 	}
 }

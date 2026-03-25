@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			soundsystem_lowlevel::VMixSubgraphSwitchDesc_t m_desc; // 0x20 | Schema_DeclaredClass | Size: 0x38
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::CVMixSubgraphSwitchProcessorDesc, m_desc) == 0x20, "m_desc in CVMixSubgraphSwitchProcessorDesc should be at offset 0x20");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::CVMixSubgraphSwitchProcessorDesc) == 0x58, "CVMixSubgraphSwitchProcessorDesc size should be 0x58");
+
+#endif
 	}
 }

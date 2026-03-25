@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flStoppingRadius; // 0x70 | Schema_Builtin | Size: 0x4
 			float32 m_flStoppingSpeedScale; // 0x74 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CPathHelperUpdateNode, m_flStoppingRadius) == 0x70, "m_flStoppingRadius in CPathHelperUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CPathHelperUpdateNode, m_flStoppingSpeedScale) == 0x74, "m_flStoppingSpeedScale in CPathHelperUpdateNode should be at offset 0x74");
 		static_assert(sizeof(CS2::animgraphlib::CPathHelperUpdateNode) == 0x78, "CPathHelperUpdateNode size should be 0x78");
+
+#endif
 	}
 }

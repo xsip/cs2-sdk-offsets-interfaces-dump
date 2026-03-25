@@ -45,6 +45,7 @@ namespace CS2 {
 			particleslib::CPerParticleVecInput m_vecRotation; // 0x340 | Schema_DeclaredClass | Size: 0x6b8
 			particleslib::CPerParticleFloatInput m_flRotLerp; // 0x9f8 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_modelInput) == 0x1D0, "m_modelInput in C_OP_LockToBone should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_transformInput) == 0x230, "m_transformInput in C_OP_LockToBone should be at offset 0x230");
 		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flLifeTimeFadeStart) == 0x298, "m_flLifeTimeFadeStart in C_OP_LockToBone should be at offset 0x298");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_vecRotation) == 0x340, "m_vecRotation in C_OP_LockToBone should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_LockToBone, m_flRotLerp) == 0x9F8, "m_flRotLerp in C_OP_LockToBone should be at offset 0x9F8");
 		static_assert(sizeof(CS2::particles::C_OP_LockToBone) == 0xB68, "C_OP_LockToBone size should be 0xB68");
+
+#endif
 	}
 }

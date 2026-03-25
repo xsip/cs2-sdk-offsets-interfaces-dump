@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			animlib::CNmTarget m_value; // 0x10 | Schema_DeclaredClass | Size: 0x30
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmConstTargetNode_CDefinition, m_value) == 0x10, "m_value in CNmConstTargetNode::CDefinition should be at offset 0x10");
 		static_assert(sizeof(CS2::animlib::CNmConstTargetNode_CDefinition) == 0x40, "CNmConstTargetNode::CDefinition size should be 0x40");
+
+#endif
 	}
 }

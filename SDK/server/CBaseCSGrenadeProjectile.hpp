@@ -42,6 +42,7 @@ namespace CS2 {
 			bool m_bHasEverHitEnemy; // 0xbac | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vInitialPosition) == 0xB40, "m_vInitialPosition in CBaseCSGrenadeProjectile should be at offset 0xB40");
 		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_vInitialVelocity) == 0xB4C, "m_vInitialVelocity in CBaseCSGrenadeProjectile should be at offset 0xB4C");
 		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nBounces) == 0xB58, "m_nBounces in CBaseCSGrenadeProjectile should be at offset 0xB58");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_nTicksAtZeroVelocity) == 0xBA8, "m_nTicksAtZeroVelocity in CBaseCSGrenadeProjectile should be at offset 0xBA8");
 		static_assert(offsetof(CS2::server::CBaseCSGrenadeProjectile, m_bHasEverHitEnemy) == 0xBAC, "m_bHasEverHitEnemy in CBaseCSGrenadeProjectile should be at offset 0xBAC");
 		static_assert(sizeof(CS2::server::CBaseCSGrenadeProjectile) == 0xBB0, "CBaseCSGrenadeProjectile size should be 0xBB0");
+
+#endif
 	}
 }

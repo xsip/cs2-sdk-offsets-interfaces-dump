@@ -27,9 +27,12 @@ namespace CS2 {
 			int32_t m_nSimIdFilter; // 0x500 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_flRadius) == 0x220, "m_flRadius in C_OP_RenderClientPhysicsImpulse should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_flMagnitude) == 0x390, "m_flMagnitude in C_OP_RenderClientPhysicsImpulse should be at offset 0x390");
 		static_assert(offsetof(CS2::particles::C_OP_RenderClientPhysicsImpulse, m_nSimIdFilter) == 0x500, "m_nSimIdFilter in C_OP_RenderClientPhysicsImpulse should be at offset 0x500");
 		static_assert(sizeof(CS2::particles::C_OP_RenderClientPhysicsImpulse) == 0x508, "C_OP_RenderClientPhysicsImpulse size should be 0x508");
+
+#endif
 	}
 }

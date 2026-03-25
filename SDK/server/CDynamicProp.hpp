@@ -49,6 +49,7 @@ namespace CS2 {
 			GlobalTypes::Color m_glowColor; // 0xc48 | Schema_Atomic | Size: 0x4
 			int32_t m_nGlowTeam; // 0xc4c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CDynamicProp, m_bCreateNavObstacle) == 0xBA8, "m_bCreateNavObstacle in CDynamicProp should be at offset 0xBA8");
 		static_assert(offsetof(CS2::server::CDynamicProp, m_bNavObstacleUpdatesOverridden) == 0xBA9, "m_bNavObstacleUpdatesOverridden in CDynamicProp should be at offset 0xBA9");
 		static_assert(offsetof(CS2::server::CDynamicProp, m_bUseHitboxesForRenderBox) == 0xBAA, "m_bUseHitboxesForRenderBox in CDynamicProp should be at offset 0xBAA");
@@ -72,5 +73,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CDynamicProp, m_glowColor) == 0xC48, "m_glowColor in CDynamicProp should be at offset 0xC48");
 		static_assert(offsetof(CS2::server::CDynamicProp, m_nGlowTeam) == 0xC4C, "m_nGlowTeam in CDynamicProp should be at offset 0xC4C");
 		static_assert(sizeof(CS2::server::CDynamicProp) == 0xC50, "CDynamicProp size should be 0xC50");
+
+#endif
 	}
 }

@@ -25,10 +25,13 @@ namespace CS2 {
 			GlobalTypes::fltx4 z; // 0x20 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 w; // 0x30 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::mathlib_extended::FourQuaternions, x) == 0x0, "x in FourQuaternions should be at offset 0x0");
 		static_assert(offsetof(CS2::mathlib_extended::FourQuaternions, y) == 0x10, "y in FourQuaternions should be at offset 0x10");
 		static_assert(offsetof(CS2::mathlib_extended::FourQuaternions, z) == 0x20, "z in FourQuaternions should be at offset 0x20");
 		static_assert(offsetof(CS2::mathlib_extended::FourQuaternions, w) == 0x30, "w in FourQuaternions should be at offset 0x30");
 		static_assert(sizeof(CS2::mathlib_extended::FourQuaternions) == 0x40, "FourQuaternions size should be 0x40");
+
+#endif
 	}
 }

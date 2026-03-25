@@ -23,7 +23,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_vecNavHulls; // 0x0 | Schema_Atomic | Size: 0x18
 			// char m_vecNavHulls[0x18]; // 0x0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::navlib::CNavHullPresetVData, m_vecNavHulls) == 0x0, "m_vecNavHulls in CNavHullPresetVData should be at offset 0x0");
 		static_assert(sizeof(CS2::navlib::CNavHullPresetVData) == 0x18, "CNavHullPresetVData size should be 0x18");
+
+#endif
 	}
 }

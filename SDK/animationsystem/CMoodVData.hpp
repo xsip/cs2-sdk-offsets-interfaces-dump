@@ -30,9 +30,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animationsystem::MoodAnimationLayer_t> m_animationLayers; // 0xe8 | Schema_Atomic | Size: 0x18
 			// char m_animationLayers[0x18]; // 0xe8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CMoodVData, m_sModelName) == 0x0, "m_sModelName in CMoodVData should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CMoodVData, m_nMoodType) == 0xE0, "m_nMoodType in CMoodVData should be at offset 0xE0");
 		static_assert(offsetof(CS2::animationsystem::CMoodVData, m_animationLayers) == 0xE8, "m_animationLayers in CMoodVData should be at offset 0xE8");
 		static_assert(sizeof(CS2::animationsystem::CMoodVData) == 0x100, "CMoodVData size should be 0x100");
+
+#endif
 	}
 }

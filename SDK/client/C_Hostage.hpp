@@ -65,6 +65,7 @@ namespace CS2 {
 			entity2::GameTime_t m_fNewestAlphaThinkTime; // 0x14a0 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_Hostage, m_entitySpottedState) == 0x13D8, "m_entitySpottedState in C_Hostage should be at offset 0x13D8");
 		static_assert(offsetof(CS2::client::C_Hostage, m_leader) == 0x13F0, "m_leader in C_Hostage should be at offset 0x13F0");
 		static_assert(offsetof(CS2::client::C_Hostage, m_reuseTimer) == 0x13F8, "m_reuseTimer in C_Hostage should be at offset 0x13F8");
@@ -89,5 +90,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_Hostage, m_pPredictionOwner) == 0x1498, "m_pPredictionOwner in C_Hostage should be at offset 0x1498");
 		static_assert(offsetof(CS2::client::C_Hostage, m_fNewestAlphaThinkTime) == 0x14A0, "m_fNewestAlphaThinkTime in C_Hostage should be at offset 0x14A0");
 		static_assert(sizeof(CS2::client::C_Hostage) == 0x14A8, "C_Hostage size should be 0x14A8");
+
+#endif
 	}
 }

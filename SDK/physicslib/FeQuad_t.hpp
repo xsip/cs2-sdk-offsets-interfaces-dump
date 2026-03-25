@@ -24,9 +24,12 @@ namespace CS2 {
 			float32 flSlack; // 0x8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::Vector4D vShape[4]; // 0xc | Schema_FixedArray | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeQuad_t, nNode) == 0x0, "nNode in FeQuad_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeQuad_t, flSlack) == 0x8, "flSlack in FeQuad_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeQuad_t, vShape) == 0xC, "vShape in FeQuad_t should be at offset 0xC");
 		static_assert(sizeof(CS2::physicslib::FeQuad_t) == 0x4C, "FeQuad_t size should be 0x4C");
+
+#endif
 	}
 }

@@ -36,6 +36,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<modellib::RenderInputLayoutField_t> m_inputLayoutFields; // 0x18 | Schema_Atomic | Size: 0x18
 			// char m_inputLayoutFields[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nBlockIndex) == 0x0, "m_nBlockIndex in ModelMeshBufferData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nElementCount) == 0x4, "m_nElementCount in ModelMeshBufferData_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nElementSizeInBytes) == 0x8, "m_nElementSizeInBytes in ModelMeshBufferData_t should be at offset 0x8");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_nBufferUsage) == 0x13, "m_nBufferUsage in ModelMeshBufferData_t should be at offset 0x13");
 		static_assert(offsetof(CS2::modellib::ModelMeshBufferData_t, m_inputLayoutFields) == 0x18, "m_inputLayoutFields in ModelMeshBufferData_t should be at offset 0x18");
 		static_assert(sizeof(CS2::modellib::ModelMeshBufferData_t) == 0x30, "ModelMeshBufferData_t size should be 0x30");
+
+#endif
 	}
 }

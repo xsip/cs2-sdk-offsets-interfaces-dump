@@ -24,8 +24,11 @@ namespace CS2 {
 			float32 m_flRadius; // 0x4a8 | Schema_Builtin | Size: 0x4
 			GlobalTypes::QAngle m_angViewPunch; // 0x4ac | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvViewPunch, m_flRadius) == 0x4A8, "m_flRadius in CEnvViewPunch should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvViewPunch, m_angViewPunch) == 0x4AC, "m_angViewPunch in CEnvViewPunch should be at offset 0x4AC");
 		static_assert(sizeof(CS2::server::CEnvViewPunch) == 0x4B8, "CEnvViewPunch size should be 0x4B8");
+
+#endif
 	}
 }

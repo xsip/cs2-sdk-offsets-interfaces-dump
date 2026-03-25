@@ -28,6 +28,7 @@ namespace CS2 {
 			float32 m_flErrorQuantizationTranslationMax; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flErrorQuantizationScaleMax; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::BoneDemoCaptureSettings_t, m_boneName) == 0x0, "m_boneName in BoneDemoCaptureSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::BoneDemoCaptureSettings_t, m_flErrorSplineRotationMax) == 0x8, "m_flErrorSplineRotationMax in BoneDemoCaptureSettings_t should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::BoneDemoCaptureSettings_t, m_flErrorSplineTranslationMax) == 0xC, "m_flErrorSplineTranslationMax in BoneDemoCaptureSettings_t should be at offset 0xC");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::BoneDemoCaptureSettings_t, m_flErrorQuantizationTranslationMax) == 0x18, "m_flErrorQuantizationTranslationMax in BoneDemoCaptureSettings_t should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::BoneDemoCaptureSettings_t, m_flErrorQuantizationScaleMax) == 0x1C, "m_flErrorQuantizationScaleMax in BoneDemoCaptureSettings_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::animgraphlib::BoneDemoCaptureSettings_t) == 0x20, "BoneDemoCaptureSettings_t size should be 0x20");
+
+#endif
 	}
 }

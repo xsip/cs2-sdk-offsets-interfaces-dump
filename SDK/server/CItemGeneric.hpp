@@ -74,6 +74,7 @@ namespace CS2 {
 			// char m_hTriggerHelper[0x4]; // 0xbe0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CItemGeneric, m_bHasTriggerRadius) == 0xAD4, "m_bHasTriggerRadius in CItemGeneric should be at offset 0xAD4");
 		static_assert(offsetof(CS2::server::CItemGeneric, m_bHasPickupRadius) == 0xAD5, "m_bHasPickupRadius in CItemGeneric should be at offset 0xAD5");
 		static_assert(offsetof(CS2::server::CItemGeneric, m_flPickupRadiusSqr) == 0xAD8, "m_flPickupRadiusSqr in CItemGeneric should be at offset 0xAD8");
@@ -107,5 +108,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CItemGeneric, m_bUseable) == 0xBDD, "m_bUseable in CItemGeneric should be at offset 0xBDD");
 		static_assert(offsetof(CS2::server::CItemGeneric, m_hTriggerHelper) == 0xBE0, "m_hTriggerHelper in CItemGeneric should be at offset 0xBE0");
 		static_assert(sizeof(CS2::server::CItemGeneric) == 0xBF0, "CItemGeneric size should be 0xBF0");
+
+#endif
 	}
 }

@@ -36,6 +36,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vFinalOutputScale; // 0x220 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_vStartValue) == 0x1D0, "m_vStartValue in C_OP_CalculateVectorAttribute should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldInput1) == 0x1DC, "m_nFieldInput1 in C_OP_CalculateVectorAttribute should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_flInputScale1) == 0x1E0, "m_flInputScale1 in C_OP_CalculateVectorAttribute should be at offset 0x1E0");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_nFieldOutput) == 0x21C, "m_nFieldOutput in C_OP_CalculateVectorAttribute should be at offset 0x21C");
 		static_assert(offsetof(CS2::particles::C_OP_CalculateVectorAttribute, m_vFinalOutputScale) == 0x220, "m_vFinalOutputScale in C_OP_CalculateVectorAttribute should be at offset 0x220");
 		static_assert(sizeof(CS2::particles::C_OP_CalculateVectorAttribute) == 0x230, "C_OP_CalculateVectorAttribute size should be 0x230");
+
+#endif
 	}
 }

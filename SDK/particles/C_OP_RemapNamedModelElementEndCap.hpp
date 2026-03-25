@@ -36,6 +36,7 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x228 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementEndCap, m_hModel) == 0x1D0, "m_hModel in C_OP_RemapNamedModelElementEndCap should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementEndCap, m_inNames) == 0x1D8, "m_inNames in C_OP_RemapNamedModelElementEndCap should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementEndCap, m_outNames) == 0x1F0, "m_outNames in C_OP_RemapNamedModelElementEndCap should be at offset 0x1F0");
@@ -44,5 +45,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementEndCap, m_nFieldInput) == 0x224, "m_nFieldInput in C_OP_RemapNamedModelElementEndCap should be at offset 0x224");
 		static_assert(offsetof(CS2::particles::C_OP_RemapNamedModelElementEndCap, m_nFieldOutput) == 0x228, "m_nFieldOutput in C_OP_RemapNamedModelElementEndCap should be at offset 0x228");
 		static_assert(sizeof(CS2::particles::C_OP_RemapNamedModelElementEndCap) == 0x230, "C_OP_RemapNamedModelElementEndCap size should be 0x230");
+
+#endif
 	}
 }

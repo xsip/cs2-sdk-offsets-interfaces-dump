@@ -27,9 +27,12 @@ namespace CS2 {
 			GlobalTypes::Vector m_vPos; // 0x4b8 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_bDisabled) == 0x4A8, "m_bDisabled in CSoundAreaEntityBase should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_iszSoundAreaType) == 0x4B0, "m_iszSoundAreaType in CSoundAreaEntityBase should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CSoundAreaEntityBase, m_vPos) == 0x4B8, "m_vPos in CSoundAreaEntityBase should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CSoundAreaEntityBase) == 0x4C8, "CSoundAreaEntityBase size should be 0x4C8");
+
+#endif
 	}
 }

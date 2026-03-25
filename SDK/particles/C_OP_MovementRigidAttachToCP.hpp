@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bOffsetLocal; // 0x1e4 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nControlPointNumber) == 0x1D0, "m_nControlPointNumber in C_OP_MovementRigidAttachToCP should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nScaleControlPoint) == 0x1D4, "m_nScaleControlPoint in C_OP_MovementRigidAttachToCP should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nScaleCPField) == 0x1D8, "m_nScaleCPField in C_OP_MovementRigidAttachToCP should be at offset 0x1D8");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_nFieldOutput) == 0x1E0, "m_nFieldOutput in C_OP_MovementRigidAttachToCP should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_MovementRigidAttachToCP, m_bOffsetLocal) == 0x1E4, "m_bOffsetLocal in C_OP_MovementRigidAttachToCP should be at offset 0x1E4");
 		static_assert(sizeof(CS2::particles::C_OP_MovementRigidAttachToCP) == 0x1E8, "C_OP_MovementRigidAttachToCP size should be 0x1E8");
+
+#endif
 	}
 }

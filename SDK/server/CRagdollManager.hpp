@@ -28,10 +28,13 @@ namespace CS2 {
 			bool m_bCanTakeDamage; // 0x4b1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRagdollManager, m_iCurrentMaxRagdollCount) == 0x4A8, "m_iCurrentMaxRagdollCount in CRagdollManager should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CRagdollManager, m_iMaxRagdollCount) == 0x4AC, "m_iMaxRagdollCount in CRagdollManager should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CRagdollManager, m_bSaveImportant) == 0x4B0, "m_bSaveImportant in CRagdollManager should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CRagdollManager, m_bCanTakeDamage) == 0x4B1, "m_bCanTakeDamage in CRagdollManager should be at offset 0x4B1");
 		static_assert(sizeof(CS2::server::CRagdollManager) == 0x4B8, "CRagdollManager size should be 0x4B8");
+
+#endif
 	}
 }

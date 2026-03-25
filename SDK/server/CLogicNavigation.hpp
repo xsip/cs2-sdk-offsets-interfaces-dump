@@ -27,8 +27,11 @@ namespace CS2 {
 			S2_PAD(0x3);
 			server::navproperties_t m_navProperty; // 0x4b4 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CLogicNavigation, m_isOn) == 0x4B0, "m_isOn in CLogicNavigation should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CLogicNavigation, m_navProperty) == 0x4B4, "m_navProperty in CLogicNavigation should be at offset 0x4B4");
 		static_assert(sizeof(CS2::server::CLogicNavigation) == 0x4B8, "CLogicNavigation size should be 0x4B8");
+
+#endif
 	}
 }

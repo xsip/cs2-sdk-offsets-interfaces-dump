@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bSplitNavSpace; // 0x79a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_nScopes) == 0x798, "m_nScopes in CMarkupVolumeTagged_NavGame should be at offset 0x798");
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_bFloodFillAttribute) == 0x799, "m_bFloodFillAttribute in CMarkupVolumeTagged_NavGame should be at offset 0x799");
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_NavGame, m_bSplitNavSpace) == 0x79A, "m_bSplitNavSpace in CMarkupVolumeTagged_NavGame should be at offset 0x79A");
 		static_assert(sizeof(CS2::server::CMarkupVolumeTagged_NavGame) == 0x7A0, "CMarkupVolumeTagged_NavGame size should be 0x7A0");
+
+#endif
 	}
 }

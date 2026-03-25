@@ -35,6 +35,7 @@ namespace CS2 {
 			// server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseEntity>> m_hConveyorModels; // 0x768 | Schema_Atomic | Size: 0x18
 			char m_hConveyorModels[0x18]; // 0x768 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncConveyor, m_szConveyorModels) == 0x730, "m_szConveyorModels in CFuncConveyor should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncConveyor, m_flTransitionDurationSeconds) == 0x738, "m_flTransitionDurationSeconds in CFuncConveyor should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CFuncConveyor, m_angMoveEntitySpace) == 0x73C, "m_angMoveEntitySpace in CFuncConveyor should be at offset 0x73C");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncConveyor, m_flTransitionStartSpeed) == 0x760, "m_flTransitionStartSpeed in CFuncConveyor should be at offset 0x760");
 		static_assert(offsetof(CS2::server::CFuncConveyor, m_hConveyorModels) == 0x768, "m_hConveyorModels in CFuncConveyor should be at offset 0x768");
 		static_assert(sizeof(CS2::server::CFuncConveyor) == 0x780, "CFuncConveyor size should be 0x780");
+
+#endif
 	}
 }

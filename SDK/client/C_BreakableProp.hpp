@@ -70,6 +70,7 @@ namespace CS2 {
 			GlobalTypes::CHandle<client::C_BaseEntity> m_hLastAttacker; // 0x12cc | Schema_Atomic | Size: 0x4
 			// char m_hLastAttacker[0x4]; // 0x12cc | Schema_Atomic | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BreakableProp, m_CPropDataComponent) == 0x11A0, "m_CPropDataComponent in C_BreakableProp should be at offset 0x11A0");
 		static_assert(offsetof(CS2::client::C_BreakableProp, m_OnStartDeath) == 0x11E0, "m_OnStartDeath in C_BreakableProp should be at offset 0x11E0");
 		static_assert(offsetof(CS2::client::C_BreakableProp, m_OnBreak) == 0x11F8, "m_OnBreak in C_BreakableProp should be at offset 0x11F8");
@@ -100,5 +101,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BreakableProp, m_flDefaultFadeScale) == 0x12C8, "m_flDefaultFadeScale in C_BreakableProp should be at offset 0x12C8");
 		static_assert(offsetof(CS2::client::C_BreakableProp, m_hLastAttacker) == 0x12CC, "m_hLastAttacker in C_BreakableProp should be at offset 0x12CC");
 		static_assert(sizeof(CS2::client::C_BreakableProp) == 0x12D0, "C_BreakableProp size should be 0x12D0");
+
+#endif
 	}
 }

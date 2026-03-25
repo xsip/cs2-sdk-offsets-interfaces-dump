@@ -23,8 +23,11 @@ namespace CS2 {
 			float32 m_flRangeStart; // 0x0 | Schema_Builtin | Size: 0x4
 			float32 m_flRangeLength; // 0x4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::NmCompressionSettings_t_QuantizationRange_t, m_flRangeStart) == 0x0, "m_flRangeStart in NmCompressionSettings_t::QuantizationRange_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::NmCompressionSettings_t_QuantizationRange_t, m_flRangeLength) == 0x4, "m_flRangeLength in NmCompressionSettings_t::QuantizationRange_t should be at offset 0x4");
 		static_assert(sizeof(CS2::animlib::NmCompressionSettings_t_QuantizationRange_t) == 0x8, "NmCompressionSettings_t::QuantizationRange_t size should be 0x8");
+
+#endif
 	}
 }

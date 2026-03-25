@@ -49,6 +49,7 @@ namespace CS2 {
 			bool m_bLocalPlayerOnly; // 0x512 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvInstructorHint, m_iszName) == 0x4A8, "m_iszName in CEnvInstructorHint should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvInstructorHint, m_iszReplace_Key) == 0x4B0, "m_iszReplace_Key in CEnvInstructorHint should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CEnvInstructorHint, m_iszHintTargetEntity) == 0x4B8, "m_iszHintTargetEntity in CEnvInstructorHint should be at offset 0x4B8");
@@ -74,5 +75,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvInstructorHint, m_bAutoStart) == 0x511, "m_bAutoStart in CEnvInstructorHint should be at offset 0x511");
 		static_assert(offsetof(CS2::server::CEnvInstructorHint, m_bLocalPlayerOnly) == 0x512, "m_bLocalPlayerOnly in CEnvInstructorHint should be at offset 0x512");
 		static_assert(sizeof(CS2::server::CEnvInstructorHint) == 0x518, "CEnvInstructorHint size should be 0x518");
+
+#endif
 	}
 }

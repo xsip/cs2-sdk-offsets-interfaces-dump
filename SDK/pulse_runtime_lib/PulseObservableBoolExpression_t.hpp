@@ -29,9 +29,12 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t> m_DependentObservableBlackboardReferences; // 0x60 | Schema_Atomic | Size: 0x18
 			// char m_DependentObservableBlackboardReferences[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseObservableBoolExpression_t, m_EvaluateConnection) == 0x0, "m_EvaluateConnection in PulseObservableBoolExpression_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseObservableBoolExpression_t, m_DependentObservableVars) == 0x48, "m_DependentObservableVars in PulseObservableBoolExpression_t should be at offset 0x48");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseObservableBoolExpression_t, m_DependentObservableBlackboardReferences) == 0x60, "m_DependentObservableBlackboardReferences in PulseObservableBoolExpression_t should be at offset 0x60");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PulseObservableBoolExpression_t) == 0x78, "PulseObservableBoolExpression_t size should be 0x78");
+
+#endif
 	}
 }

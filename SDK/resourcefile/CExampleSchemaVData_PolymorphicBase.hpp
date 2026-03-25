@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nBase; // 0x8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::resourcefile::CExampleSchemaVData_PolymorphicBase, m_nBase) == 0x8, "m_nBase in CExampleSchemaVData_PolymorphicBase should be at offset 0x8");
 		static_assert(sizeof(CS2::resourcefile::CExampleSchemaVData_PolymorphicBase) == 0x10, "CExampleSchemaVData_PolymorphicBase size should be 0x10");
+
+#endif
 	}
 }

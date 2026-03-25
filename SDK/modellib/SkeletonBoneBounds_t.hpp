@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecCenter; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vecSize; // 0xc | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::SkeletonBoneBounds_t, m_vecCenter) == 0x0, "m_vecCenter in SkeletonBoneBounds_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::SkeletonBoneBounds_t, m_vecSize) == 0xC, "m_vecSize in SkeletonBoneBounds_t should be at offset 0xC");
 		static_assert(sizeof(CS2::modellib::SkeletonBoneBounds_t) == 0x18, "SkeletonBoneBounds_t size should be 0x18");
+
+#endif
 	}
 }

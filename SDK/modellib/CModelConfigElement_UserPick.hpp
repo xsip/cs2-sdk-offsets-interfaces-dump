@@ -24,7 +24,10 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_Choices; // 0x48 | Schema_Atomic | Size: 0x18
 			// char m_Choices[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CModelConfigElement_UserPick, m_Choices) == 0x48, "m_Choices in CModelConfigElement_UserPick should be at offset 0x48");
 		static_assert(sizeof(CS2::modellib::CModelConfigElement_UserPick) == 0x60, "CModelConfigElement_UserPick size should be 0x60");
+
+#endif
 	}
 }

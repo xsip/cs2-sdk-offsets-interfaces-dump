@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::CGlobalSymbol m_defaultValue; // 0x80 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CSymbolAnimParameter, m_defaultValue) == 0x80, "m_defaultValue in CSymbolAnimParameter should be at offset 0x80");
 		static_assert(sizeof(CS2::animgraphlib::CSymbolAnimParameter) == 0x88, "CSymbolAnimParameter size should be 0x88");
+
+#endif
 	}
 }

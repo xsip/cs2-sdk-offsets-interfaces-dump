@@ -28,9 +28,12 @@ namespace CS2 {
 			// char m_Points[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			GlobalTypes::KeyValues3 m_KVthumbnail; // 0x28 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::compositematerialslib::CCompositeMaterialEditorDoc, m_nVersion) == 0x8, "m_nVersion in CCompositeMaterialEditorDoc should be at offset 0x8");
 		static_assert(offsetof(CS2::compositematerialslib::CCompositeMaterialEditorDoc, m_Points) == 0x10, "m_Points in CCompositeMaterialEditorDoc should be at offset 0x10");
 		static_assert(offsetof(CS2::compositematerialslib::CCompositeMaterialEditorDoc, m_KVthumbnail) == 0x28, "m_KVthumbnail in CCompositeMaterialEditorDoc should be at offset 0x28");
 		static_assert(sizeof(CS2::compositematerialslib::CCompositeMaterialEditorDoc) == 0x38, "CCompositeMaterialEditorDoc size should be 0x38");
+
+#endif
 	}
 }

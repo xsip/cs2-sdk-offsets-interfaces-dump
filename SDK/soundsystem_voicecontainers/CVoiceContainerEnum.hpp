@@ -26,9 +26,12 @@ namespace CS2 {
 			int32_t m_iSelection; // 0xe0 | Schema_Builtin | Size: 0x4
 			float32 m_flCrossfadeTime; // 0xe4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnum, m_soundsToPlay) == 0xA8, "m_soundsToPlay in CVoiceContainerEnum should be at offset 0xA8");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnum, m_iSelection) == 0xE0, "m_iSelection in CVoiceContainerEnum should be at offset 0xE0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerEnum, m_flCrossfadeTime) == 0xE4, "m_flCrossfadeTime in CVoiceContainerEnum should be at offset 0xE4");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerEnum) == 0xE8, "CVoiceContainerEnum size should be 0xE8");
+
+#endif
 	}
 }

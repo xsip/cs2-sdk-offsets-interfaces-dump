@@ -31,6 +31,7 @@ namespace CS2 {
 			S2_PAD(0xe);
 			particles::CPathParameters m_PathParams; // 0x1f0 | Schema_DeclaredClass | Size: 0x40
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_MaintainSequentialPath, m_fMaxDistance) == 0x1D0, "m_fMaxDistance in C_OP_MaintainSequentialPath should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_MaintainSequentialPath, m_flNumToAssign) == 0x1D4, "m_flNumToAssign in C_OP_MaintainSequentialPath should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_MaintainSequentialPath, m_flCohesionStrength) == 0x1D8, "m_flCohesionStrength in C_OP_MaintainSequentialPath should be at offset 0x1D8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_MaintainSequentialPath, m_bUseParticleCount) == 0x1E1, "m_bUseParticleCount in C_OP_MaintainSequentialPath should be at offset 0x1E1");
 		static_assert(offsetof(CS2::particles::C_OP_MaintainSequentialPath, m_PathParams) == 0x1F0, "m_PathParams in C_OP_MaintainSequentialPath should be at offset 0x1F0");
 		static_assert(sizeof(CS2::particles::C_OP_MaintainSequentialPath) == 0x230, "C_OP_MaintainSequentialPath size should be 0x230");
+
+#endif
 	}
 }

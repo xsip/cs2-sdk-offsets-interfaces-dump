@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bSkipRenderingOnMobile; // 0x219 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, VisibilityInputs) == 0x1D0, "VisibilityInputs in CParticleFunctionRenderer should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, m_bCannotBeRefracted) == 0x218, "m_bCannotBeRefracted in CParticleFunctionRenderer should be at offset 0x218");
 		static_assert(offsetof(CS2::particles::CParticleFunctionRenderer, m_bSkipRenderingOnMobile) == 0x219, "m_bSkipRenderingOnMobile in CParticleFunctionRenderer should be at offset 0x219");
 		static_assert(sizeof(CS2::particles::CParticleFunctionRenderer) == 0x220, "CParticleFunctionRenderer size should be 0x220");
+
+#endif
 	}
 }

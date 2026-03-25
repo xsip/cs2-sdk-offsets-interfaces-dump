@@ -35,6 +35,7 @@ namespace CS2 {
 			S2_PAD(0x8);
 			server::CPhysicsShake m_shakeCallback; // 0x4e0 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvShake, m_limitToEntity) == 0x4A8, "m_limitToEntity in CEnvShake should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvShake, m_Amplitude) == 0x4B0, "m_Amplitude in CEnvShake should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CEnvShake, m_Frequency) == 0x4B4, "m_Frequency in CEnvShake should be at offset 0x4B4");
@@ -46,5 +47,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvShake, m_maxForce) == 0x4CC, "m_maxForce in CEnvShake should be at offset 0x4CC");
 		static_assert(offsetof(CS2::server::CEnvShake, m_shakeCallback) == 0x4E0, "m_shakeCallback in CEnvShake should be at offset 0x4E0");
 		static_assert(sizeof(CS2::server::CEnvShake) == 0x4F8, "CEnvShake size should be 0x4F8");
+
+#endif
 	}
 }

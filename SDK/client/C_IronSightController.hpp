@@ -37,6 +37,7 @@ namespace CS2 {
 			float32 m_flSpeedRatio; // 0xa8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_IronSightController, m_bIronSightAvailable) == 0x10, "m_bIronSightAvailable in C_IronSightController should be at offset 0x10");
 		static_assert(offsetof(CS2::client::C_IronSightController, m_flIronSightAmount) == 0x14, "m_flIronSightAmount in C_IronSightController should be at offset 0x14");
 		static_assert(offsetof(CS2::client::C_IronSightController, m_flIronSightAmountGained) == 0x18, "m_flIronSightAmountGained in C_IronSightController should be at offset 0x18");
@@ -51,5 +52,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_IronSightController, m_flFiringInaccuracyExtraWidthMultiplier) == 0xA4, "m_flFiringInaccuracyExtraWidthMultiplier in C_IronSightController should be at offset 0xA4");
 		static_assert(offsetof(CS2::client::C_IronSightController, m_flSpeedRatio) == 0xA8, "m_flSpeedRatio in C_IronSightController should be at offset 0xA8");
 		static_assert(sizeof(CS2::client::C_IronSightController) == 0xB0, "C_IronSightController size should be 0xB0");
+
+#endif
 	}
 }

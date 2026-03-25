@@ -29,11 +29,14 @@ namespace CS2 {
 			bool m_bParticles; // 0x353 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ExternalGameImpulseForce, m_flForceScale) == 0x1E0, "m_flForceScale in C_OP_ExternalGameImpulseForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_ExternalGameImpulseForce, m_bRopes) == 0x350, "m_bRopes in C_OP_ExternalGameImpulseForce should be at offset 0x350");
 		static_assert(offsetof(CS2::particles::C_OP_ExternalGameImpulseForce, m_bRopesZOnly) == 0x351, "m_bRopesZOnly in C_OP_ExternalGameImpulseForce should be at offset 0x351");
 		static_assert(offsetof(CS2::particles::C_OP_ExternalGameImpulseForce, m_bExplosions) == 0x352, "m_bExplosions in C_OP_ExternalGameImpulseForce should be at offset 0x352");
 		static_assert(offsetof(CS2::particles::C_OP_ExternalGameImpulseForce, m_bParticles) == 0x353, "m_bParticles in C_OP_ExternalGameImpulseForce should be at offset 0x353");
 		static_assert(sizeof(CS2::particles::C_OP_ExternalGameImpulseForce) == 0x358, "C_OP_ExternalGameImpulseForce size should be 0x358");
+
+#endif
 	}
 }

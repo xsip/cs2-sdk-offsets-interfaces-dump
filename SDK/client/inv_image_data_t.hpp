@@ -36,6 +36,7 @@ namespace CS2 {
 			client::inv_image_light_barn_t light1; // 0xbc | Schema_DeclaredClass | Size: 0x20
 			client::inv_image_clearcolor_t clearcolor; // 0xdc | Schema_DeclaredClass | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::inv_image_data_t, map) == 0x0, "map in inv_image_data_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::inv_image_data_t, item) == 0x10, "item in inv_image_data_t should be at offset 0x10");
 		static_assert(offsetof(CS2::client::inv_image_data_t, camera) == 0x30, "camera in inv_image_data_t should be at offset 0x30");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::inv_image_data_t, light1) == 0xBC, "light1 in inv_image_data_t should be at offset 0xBC");
 		static_assert(offsetof(CS2::client::inv_image_data_t, clearcolor) == 0xDC, "clearcolor in inv_image_data_t should be at offset 0xDC");
 		static_assert(sizeof(CS2::client::inv_image_data_t) == 0xE8, "inv_image_data_t size should be 0xE8");
+
+#endif
 	}
 }

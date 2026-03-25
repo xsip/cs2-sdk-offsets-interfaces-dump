@@ -26,8 +26,11 @@ namespace CS2 {
 			int32_t m_nStartEventOffset; // 0xa8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmSyncTrack, m_syncEvents) == 0x0, "m_syncEvents in CNmSyncTrack should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmSyncTrack, m_nStartEventOffset) == 0xA8, "m_nStartEventOffset in CNmSyncTrack should be at offset 0xA8");
 		static_assert(sizeof(CS2::animlib::CNmSyncTrack) == 0xB0, "CNmSyncTrack size should be 0xB0");
+
+#endif
 	}
 }

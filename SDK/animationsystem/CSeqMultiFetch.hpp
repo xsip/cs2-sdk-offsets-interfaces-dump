@@ -37,6 +37,7 @@ namespace CS2 {
 			S2_PAD(0x2);
 			float32 m_flFixedBlendWeightVals[2]; // 0x68 | Schema_FixedArray | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetch, m_flags) == 0x0, "m_flags in CSeqMultiFetch should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetch, m_localReferenceArray) == 0x8, "m_localReferenceArray in CSeqMultiFetch should be at offset 0x8");
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetch, m_nGroupSize) == 0x20, "m_nGroupSize in CSeqMultiFetch should be at offset 0x20");
@@ -48,5 +49,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetch, m_bFixedBlendWeight) == 0x65, "m_bFixedBlendWeight in CSeqMultiFetch should be at offset 0x65");
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetch, m_flFixedBlendWeightVals) == 0x68, "m_flFixedBlendWeightVals in CSeqMultiFetch should be at offset 0x68");
 		static_assert(sizeof(CS2::animationsystem::CSeqMultiFetch) == 0x70, "CSeqMultiFetch size should be 0x70");
+
+#endif
 	}
 }

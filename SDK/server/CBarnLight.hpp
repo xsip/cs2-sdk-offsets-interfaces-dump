@@ -116,6 +116,7 @@ namespace CS2 {
 			char m_VisClusters[0x18]; // 0xa00 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBarnLight, m_bEnabled) == 0x730, "m_bEnabled in CBarnLight should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CBarnLight, m_nColorMode) == 0x734, "m_nColorMode in CBarnLight should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CBarnLight, m_Color) == 0x738, "m_Color in CBarnLight should be at offset 0x738");
@@ -194,5 +195,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBarnLight, m_bPvsModifyEntity) == 0x9F8, "m_bPvsModifyEntity in CBarnLight should be at offset 0x9F8");
 		static_assert(offsetof(CS2::server::CBarnLight, m_VisClusters) == 0xA00, "m_VisClusters in CBarnLight should be at offset 0xA00");
 		static_assert(sizeof(CS2::server::CBarnLight) == 0xA20, "CBarnLight size should be 0xA20");
+
+#endif
 	}
 }

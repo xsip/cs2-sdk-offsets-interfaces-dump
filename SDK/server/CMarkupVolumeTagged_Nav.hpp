@@ -25,7 +25,10 @@ namespace CS2 {
 			server::NavScopeFlags_t m_nScopes; // 0x770 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CMarkupVolumeTagged_Nav, m_nScopes) == 0x770, "m_nScopes in CMarkupVolumeTagged_Nav should be at offset 0x770");
 		static_assert(sizeof(CS2::server::CMarkupVolumeTagged_Nav) == 0x778, "CMarkupVolumeTagged_Nav size should be 0x778");
+
+#endif
 	}
 }

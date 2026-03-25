@@ -31,6 +31,7 @@ namespace CS2 {
 			int32_t m_pReserveAmmo[2]; // 0x18d8 | Schema_FixedArray | Size: 0x8
 			S2_PAD(0x18); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_nNextPrimaryAttackTick) == 0x18C0, "m_nNextPrimaryAttackTick in C_BasePlayerWeapon should be at offset 0x18C0");
 		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_flNextPrimaryAttackTickRatio) == 0x18C4, "m_flNextPrimaryAttackTickRatio in C_BasePlayerWeapon should be at offset 0x18C4");
 		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_nNextSecondaryAttackTick) == 0x18C8, "m_nNextSecondaryAttackTick in C_BasePlayerWeapon should be at offset 0x18C8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_iClip2) == 0x18D4, "m_iClip2 in C_BasePlayerWeapon should be at offset 0x18D4");
 		static_assert(offsetof(CS2::client::C_BasePlayerWeapon, m_pReserveAmmo) == 0x18D8, "m_pReserveAmmo in C_BasePlayerWeapon should be at offset 0x18D8");
 		static_assert(sizeof(CS2::client::C_BasePlayerWeapon) == 0x18F8, "C_BasePlayerWeapon size should be 0x18F8");
+
+#endif
 	}
 }

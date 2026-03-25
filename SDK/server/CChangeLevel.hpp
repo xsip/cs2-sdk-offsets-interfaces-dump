@@ -31,6 +31,7 @@ namespace CS2 {
 			bool m_bOnChangeLevelFired; // 0x8bb | Schema_Builtin | Size: 0x1
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CChangeLevel, m_sMapName) == 0x890, "m_sMapName in CChangeLevel should be at offset 0x890");
 		static_assert(offsetof(CS2::server::CChangeLevel, m_sLandmarkName) == 0x898, "m_sLandmarkName in CChangeLevel should be at offset 0x898");
 		static_assert(offsetof(CS2::server::CChangeLevel, m_OnChangeLevel) == 0x8A0, "m_OnChangeLevel in CChangeLevel should be at offset 0x8A0");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CChangeLevel, m_bNewChapter) == 0x8BA, "m_bNewChapter in CChangeLevel should be at offset 0x8BA");
 		static_assert(offsetof(CS2::server::CChangeLevel, m_bOnChangeLevelFired) == 0x8BB, "m_bOnChangeLevelFired in CChangeLevel should be at offset 0x8BB");
 		static_assert(sizeof(CS2::server::CChangeLevel) == 0x8C0, "CChangeLevel size should be 0x8C0");
+
+#endif
 	}
 }

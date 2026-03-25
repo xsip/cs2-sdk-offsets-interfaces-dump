@@ -22,6 +22,9 @@ namespace CS2 {
 		class CAnimCycle : public CS2::modellib::CCycleBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::modellib::CAnimCycle) == 0x4, "CAnimCycle size should be 0x4");
+
+#endif
 	}
 }

@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bFastRefresh; // 0x54d | Schema_Builtin | Size: 0x1
 			S2_PAD(0x2); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointBase, m_bDisabled) == 0x4A8, "m_bDisabled in CSoundOpvarSetPointBase should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointBase, m_hSource) == 0x4AC, "m_hSource in CSoundOpvarSetPointBase should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointBase, m_iszSourceEntityName) == 0x4C8, "m_iszSourceEntityName in CSoundOpvarSetPointBase should be at offset 0x4C8");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointBase, m_bUseAutoCompare) == 0x54C, "m_bUseAutoCompare in CSoundOpvarSetPointBase should be at offset 0x54C");
 		static_assert(offsetof(CS2::server::CSoundOpvarSetPointBase, m_bFastRefresh) == 0x54D, "m_bFastRefresh in CSoundOpvarSetPointBase should be at offset 0x54D");
 		static_assert(sizeof(CS2::server::CSoundOpvarSetPointBase) == 0x550, "CSoundOpvarSetPointBase size should be 0x550");
+
+#endif
 	}
 }

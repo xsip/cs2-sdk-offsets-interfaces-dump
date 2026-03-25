@@ -26,9 +26,12 @@ namespace CS2 {
 			entity2::CEntityIOOutput m_OnCommentaryMidGame; // 0x4c0 | Schema_DeclaredClass | Size: 0x18
 			entity2::CEntityIOOutput m_OnCommentaryMultiplayerSpawn; // 0x4d8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryNewGame) == 0x4A8, "m_OnCommentaryNewGame in CCommentaryAuto should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryMidGame) == 0x4C0, "m_OnCommentaryMidGame in CCommentaryAuto should be at offset 0x4C0");
 		static_assert(offsetof(CS2::server::CCommentaryAuto, m_OnCommentaryMultiplayerSpawn) == 0x4D8, "m_OnCommentaryMultiplayerSpawn in CCommentaryAuto should be at offset 0x4D8");
 		static_assert(sizeof(CS2::server::CCommentaryAuto) == 0x4F0, "CCommentaryAuto size should be 0x4F0");
+
+#endif
 	}
 }

@@ -27,8 +27,11 @@ namespace CS2 {
 			int32_t m_nParamIndex; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CMotionNodeBlend1D, m_blendItems) == 0x28, "m_blendItems in CMotionNodeBlend1D should be at offset 0x28");
 		static_assert(offsetof(CS2::animgraphlib::CMotionNodeBlend1D, m_nParamIndex) == 0x40, "m_nParamIndex in CMotionNodeBlend1D should be at offset 0x40");
 		static_assert(sizeof(CS2::animgraphlib::CMotionNodeBlend1D) == 0x48, "CMotionNodeBlend1D size should be 0x48");
+
+#endif
 	}
 }

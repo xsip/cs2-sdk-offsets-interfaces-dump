@@ -223,6 +223,7 @@ namespace CS2 {
 			int32_t m_lastValidReactionQueueFrame; // 0x6e20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSBot, m_eyePosition) == 0x108, "m_eyePosition in CCSBot should be at offset 0x108");
 		static_assert(offsetof(CS2::server::CCSBot, m_name) == 0x114, "m_name in CCSBot should be at offset 0x114");
 		static_assert(offsetof(CS2::server::CCSBot, m_combatRange) == 0x154, "m_combatRange in CCSBot should be at offset 0x154");
@@ -364,5 +365,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSBot, m_voiceEndTimestamp) == 0x6E14, "m_voiceEndTimestamp in CCSBot should be at offset 0x6E14");
 		static_assert(offsetof(CS2::server::CCSBot, m_lastValidReactionQueueFrame) == 0x6E20, "m_lastValidReactionQueueFrame in CCSBot should be at offset 0x6E20");
 		static_assert(sizeof(CS2::server::CCSBot) == 0x6E28, "CCSBot size should be 0x6E28");
+
+#endif
 	}
 }

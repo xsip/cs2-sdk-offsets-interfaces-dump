@@ -24,8 +24,11 @@ namespace CS2 {
 			GlobalTypes::CGlobalSymbol m_OutflowID; // 0x0 | Schema_Atomic | Size: 0x8
 			pulse_runtime_lib::CPulse_OutflowConnection m_Connection; // 0x8 | Schema_DeclaredClass | Size: 0x48
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseNodeDynamicOutflows_t_DynamicOutflow_t, m_OutflowID) == 0x0, "m_OutflowID in PulseNodeDynamicOutflows_t::DynamicOutflow_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PulseNodeDynamicOutflows_t_DynamicOutflow_t, m_Connection) == 0x8, "m_Connection in PulseNodeDynamicOutflows_t::DynamicOutflow_t should be at offset 0x8");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PulseNodeDynamicOutflows_t_DynamicOutflow_t) == 0x50, "PulseNodeDynamicOutflows_t::DynamicOutflow_t size should be 0x50");
+
+#endif
 	}
 }

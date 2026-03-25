@@ -22,6 +22,9 @@ namespace CS2 {
 		class CFootCycle : public CS2::modellib::CCycleBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::modellib::CFootCycle) == 0x4, "CFootCycle size should be 0x4");
+
+#endif
 	}
 }

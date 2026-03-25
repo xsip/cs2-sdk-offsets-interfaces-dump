@@ -27,10 +27,13 @@ namespace CS2 {
 			bool m_bProportional; // 0x1dc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_FadeIn, m_flFadeInTimeMin) == 0x1D0, "m_flFadeInTimeMin in C_OP_FadeIn should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_FadeIn, m_flFadeInTimeMax) == 0x1D4, "m_flFadeInTimeMax in C_OP_FadeIn should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::C_OP_FadeIn, m_flFadeInTimeExp) == 0x1D8, "m_flFadeInTimeExp in C_OP_FadeIn should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_FadeIn, m_bProportional) == 0x1DC, "m_bProportional in C_OP_FadeIn should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::C_OP_FadeIn) == 0x1E0, "C_OP_FadeIn size should be 0x1E0");
+
+#endif
 	}
 }

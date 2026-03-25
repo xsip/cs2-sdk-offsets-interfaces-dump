@@ -42,6 +42,7 @@ namespace CS2 {
 			char m_textureName[64]; // 0x70 | Schema_FixedArray | Size: 0x40
 			S2_PAD(0x230); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CFlashlightEffect, m_bIsOn) == 0x10, "m_bIsOn in CFlashlightEffect should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CFlashlightEffect, m_bMuzzleFlashEnabled) == 0x20, "m_bMuzzleFlashEnabled in CFlashlightEffect should be at offset 0x20");
 		static_assert(offsetof(CS2::client::CFlashlightEffect, m_flMuzzleFlashBrightness) == 0x24, "m_flMuzzleFlashBrightness in CFlashlightEffect should be at offset 0x24");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CFlashlightEffect, m_MuzzleFlashTexture) == 0x68, "m_MuzzleFlashTexture in CFlashlightEffect should be at offset 0x68");
 		static_assert(offsetof(CS2::client::CFlashlightEffect, m_textureName) == 0x70, "m_textureName in CFlashlightEffect should be at offset 0x70");
 		static_assert(sizeof(CS2::client::CFlashlightEffect) == 0x2E0, "CFlashlightEffect size should be 0x2E0");
+
+#endif
 	}
 }

@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vClientScopeInaccuracy; // 0x2b0 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x84); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSPlayer_CameraServices, m_flDeathCamTilt) == 0x2A8, "m_flDeathCamTilt in CCSPlayer_CameraServices should be at offset 0x2A8");
 		static_assert(offsetof(CS2::client::CCSPlayer_CameraServices, m_vClientScopeInaccuracy) == 0x2B0, "m_vClientScopeInaccuracy in CCSPlayer_CameraServices should be at offset 0x2B0");
 		static_assert(sizeof(CS2::client::CCSPlayer_CameraServices) == 0x340, "CCSPlayer_CameraServices size should be 0x340");
+
+#endif
 	}
 }

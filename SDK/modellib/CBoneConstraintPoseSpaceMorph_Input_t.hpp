@@ -25,8 +25,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< float32 > m_outputWeightList; // 0x10 | Schema_Atomic | Size: 0x18
 			// char m_outputWeightList[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceMorph_Input_t, m_inputValue) == 0x0, "m_inputValue in CBoneConstraintPoseSpaceMorph::Input_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceMorph_Input_t, m_outputWeightList) == 0x10, "m_outputWeightList in CBoneConstraintPoseSpaceMorph::Input_t should be at offset 0x10");
 		static_assert(sizeof(CS2::modellib::CBoneConstraintPoseSpaceMorph_Input_t) == 0x28, "CBoneConstraintPoseSpaceMorph::Input_t size should be 0x28");
+
+#endif
 	}
 }

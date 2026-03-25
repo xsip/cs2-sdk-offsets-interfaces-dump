@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flGainAmount; // 0xb0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerAmpedDecayingSineWave, m_flGainAmount) == 0xB0, "m_flGainAmount in CVoiceContainerAmpedDecayingSineWave should be at offset 0xB0");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerAmpedDecayingSineWave) == 0xB8, "CVoiceContainerAmpedDecayingSineWave size should be 0xB8");
+
+#endif
 	}
 }

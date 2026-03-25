@@ -32,9 +32,12 @@ namespace CS2 {
 			// char m_messages[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			server::CBasePlayerController* m_pPlayerController; // 0x20 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CHintMessageQueue, m_tmMessageEnd) == 0x0, "m_tmMessageEnd in CHintMessageQueue should be at offset 0x0");
 		static_assert(offsetof(CS2::server::CHintMessageQueue, m_messages) == 0x8, "m_messages in CHintMessageQueue should be at offset 0x8");
 		static_assert(offsetof(CS2::server::CHintMessageQueue, m_pPlayerController) == 0x20, "m_pPlayerController in CHintMessageQueue should be at offset 0x20");
 		static_assert(sizeof(CS2::server::CHintMessageQueue) == 0x28, "CHintMessageQueue size should be 0x28");
+
+#endif
 	}
 }

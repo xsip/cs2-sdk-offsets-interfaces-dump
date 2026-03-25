@@ -25,10 +25,13 @@ namespace CS2 {
 			uint16_t nListBegin; // 0x8 | Schema_Builtin | Size: 0x2
 			uint16_t nListEnd; // 0xa | Schema_Builtin | Size: 0x2
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeWorldCollisionParams_t, flWorldFriction) == 0x0, "flWorldFriction in FeWorldCollisionParams_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeWorldCollisionParams_t, flGroundFriction) == 0x4, "flGroundFriction in FeWorldCollisionParams_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeWorldCollisionParams_t, nListBegin) == 0x8, "nListBegin in FeWorldCollisionParams_t should be at offset 0x8");
 		static_assert(offsetof(CS2::physicslib::FeWorldCollisionParams_t, nListEnd) == 0xA, "nListEnd in FeWorldCollisionParams_t should be at offset 0xA");
 		static_assert(sizeof(CS2::physicslib::FeWorldCollisionParams_t) == 0xC, "FeWorldCollisionParams_t size should be 0xC");
+
+#endif
 	}
 }

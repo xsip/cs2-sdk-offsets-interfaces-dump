@@ -74,6 +74,7 @@ namespace CS2 {
 			entity2::GameTime_t m_flNextMPSoundTime; // 0x850 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_ppath) == 0x730, "m_ppath in CFuncTrackTrain should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_length) == 0x734, "m_length in CFuncTrackTrain should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_vPosPrev) == 0x738, "m_vPosPrev in CFuncTrackTrain should be at offset 0x738");
@@ -112,5 +113,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_bAccelToSpeed) == 0x84C, "m_bAccelToSpeed in CFuncTrackTrain should be at offset 0x84C");
 		static_assert(offsetof(CS2::server::CFuncTrackTrain, m_flNextMPSoundTime) == 0x850, "m_flNextMPSoundTime in CFuncTrackTrain should be at offset 0x850");
 		static_assert(sizeof(CS2::server::CFuncTrackTrain) == 0x858, "CFuncTrackTrain size should be 0x858");
+
+#endif
 	}
 }

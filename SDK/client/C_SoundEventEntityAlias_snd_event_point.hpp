@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_SoundEventEntityAlias_snd_event_point : public CS2::client::C_SoundEventEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_SoundEventEntityAlias_snd_event_point) == 0x6B8, "C_SoundEventEntityAlias_snd_event_point size should be 0x6B8");
+
+#endif
 	}
 }

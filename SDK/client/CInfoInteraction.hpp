@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flInteractRadius; // 0x650 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CInfoInteraction, m_strSlotEntityName) == 0x608, "m_strSlotEntityName in CInfoInteraction should be at offset 0x608");
 		static_assert(offsetof(CS2::client::CInfoInteraction, m_strInteractVData) == 0x648, "m_strInteractVData in CInfoInteraction should be at offset 0x648");
 		static_assert(offsetof(CS2::client::CInfoInteraction, m_flInteractRadius) == 0x650, "m_flInteractRadius in CInfoInteraction should be at offset 0x650");
 		static_assert(sizeof(CS2::client::CInfoInteraction) == 0x658, "CInfoInteraction size should be 0x658");
+
+#endif
 	}
 }

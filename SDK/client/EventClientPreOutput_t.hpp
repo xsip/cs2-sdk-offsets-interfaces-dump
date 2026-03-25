@@ -29,6 +29,7 @@ namespace CS2 {
 			bool m_bRenderOnly; // 0x44 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventClientPreOutput_t, m_LoopState) == 0x0, "m_LoopState in EventClientPreOutput_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::EventClientPreOutput_t, m_flRenderTime) == 0x28, "m_flRenderTime in EventClientPreOutput_t should be at offset 0x28");
 		static_assert(offsetof(CS2::client::EventClientPreOutput_t, m_flRenderFrameTime) == 0x30, "m_flRenderFrameTime in EventClientPreOutput_t should be at offset 0x30");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::EventClientPreOutput_t, m_flRealTime) == 0x40, "m_flRealTime in EventClientPreOutput_t should be at offset 0x40");
 		static_assert(offsetof(CS2::client::EventClientPreOutput_t, m_bRenderOnly) == 0x44, "m_bRenderOnly in EventClientPreOutput_t should be at offset 0x44");
 		static_assert(sizeof(CS2::client::EventClientPreOutput_t) == 0x48, "EventClientPreOutput_t size should be 0x48");
+
+#endif
 	}
 }

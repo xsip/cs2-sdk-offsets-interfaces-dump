@@ -32,6 +32,7 @@ namespace CS2 {
 			S2_PAD(0x1);
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x1fc | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_RandomNamedModelElement, m_hModel) == 0x1D8, "m_hModel in C_INIT_RandomNamedModelElement should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomNamedModelElement, m_names) == 0x1E0, "m_names in C_INIT_RandomNamedModelElement should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomNamedModelElement, m_bShuffle) == 0x1F8, "m_bShuffle in C_INIT_RandomNamedModelElement should be at offset 0x1F8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_RandomNamedModelElement, m_bModelFromRenderer) == 0x1FA, "m_bModelFromRenderer in C_INIT_RandomNamedModelElement should be at offset 0x1FA");
 		static_assert(offsetof(CS2::particles::C_INIT_RandomNamedModelElement, m_nFieldOutput) == 0x1FC, "m_nFieldOutput in C_INIT_RandomNamedModelElement should be at offset 0x1FC");
 		static_assert(sizeof(CS2::particles::C_INIT_RandomNamedModelElement) == 0x200, "C_INIT_RandomNamedModelElement size should be 0x200");
+
+#endif
 	}
 }

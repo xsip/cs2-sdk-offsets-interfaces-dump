@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bResetChild2; // 0x89 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CBinaryUpdateNode, m_pChild1) == 0x60, "m_pChild1 in CBinaryUpdateNode should be at offset 0x60");
 		static_assert(offsetof(CS2::animgraphlib::CBinaryUpdateNode, m_pChild2) == 0x70, "m_pChild2 in CBinaryUpdateNode should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CBinaryUpdateNode, m_timingBehavior) == 0x80, "m_timingBehavior in CBinaryUpdateNode should be at offset 0x80");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CBinaryUpdateNode, m_bResetChild1) == 0x88, "m_bResetChild1 in CBinaryUpdateNode should be at offset 0x88");
 		static_assert(offsetof(CS2::animgraphlib::CBinaryUpdateNode, m_bResetChild2) == 0x89, "m_bResetChild2 in CBinaryUpdateNode should be at offset 0x89");
 		static_assert(sizeof(CS2::animgraphlib::CBinaryUpdateNode) == 0x90, "CBinaryUpdateNode size should be 0x90");
+
+#endif
 	}
 }

@@ -27,9 +27,12 @@ namespace CS2 {
 			S2_PAD(0x1);
 			int32_t m_syncEventIdx; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmSyncEventIndexConditionNode_CDefinition, m_nSourceStateNodeIdx) == 0x10, "m_nSourceStateNodeIdx in CNmSyncEventIndexConditionNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmSyncEventIndexConditionNode_CDefinition, m_triggerMode) == 0x12, "m_triggerMode in CNmSyncEventIndexConditionNode::CDefinition should be at offset 0x12");
 		static_assert(offsetof(CS2::animlib::CNmSyncEventIndexConditionNode_CDefinition, m_syncEventIdx) == 0x14, "m_syncEventIdx in CNmSyncEventIndexConditionNode::CDefinition should be at offset 0x14");
 		static_assert(sizeof(CS2::animlib::CNmSyncEventIndexConditionNode_CDefinition) == 0x18, "CNmSyncEventIndexConditionNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

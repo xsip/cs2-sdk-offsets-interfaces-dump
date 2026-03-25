@@ -22,6 +22,9 @@ namespace CS2 {
 		class CChoreoInfoTarget : public CS2::server::CPointEntity {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CChoreoInfoTarget) == 0x4A8, "CChoreoInfoTarget size should be 0x4A8");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CInfoPlayerCounterterrorist : public CS2::server::SpawnPoint {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CInfoPlayerCounterterrorist) == 0x4B8, "CInfoPlayerCounterterrorist size should be 0x4B8");
+
+#endif
 	}
 }

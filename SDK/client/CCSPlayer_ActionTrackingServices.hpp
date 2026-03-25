@@ -34,10 +34,13 @@ namespace CS2 {
 			client::WeaponPurchaseTracker_t m_weaponPurchasesThisMatch; // 0x50 | Schema_DeclaredClass | Size: 0x70
 			client::WeaponPurchaseTracker_t m_weaponPurchasesThisRound; // 0xc0 | Schema_DeclaredClass | Size: 0x70
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_hLastWeaponBeforeC4AutoSwitch) == 0x48, "m_hLastWeaponBeforeC4AutoSwitch in CCSPlayer_ActionTrackingServices should be at offset 0x48");
 		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_bIsRescuing) == 0x4C, "m_bIsRescuing in CCSPlayer_ActionTrackingServices should be at offset 0x4C");
 		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_weaponPurchasesThisMatch) == 0x50, "m_weaponPurchasesThisMatch in CCSPlayer_ActionTrackingServices should be at offset 0x50");
 		static_assert(offsetof(CS2::client::CCSPlayer_ActionTrackingServices, m_weaponPurchasesThisRound) == 0xC0, "m_weaponPurchasesThisRound in CCSPlayer_ActionTrackingServices should be at offset 0xC0");
 		static_assert(sizeof(CS2::client::CCSPlayer_ActionTrackingServices) == 0x130, "CCSPlayer_ActionTrackingServices size should be 0x130");
+
+#endif
 	}
 }

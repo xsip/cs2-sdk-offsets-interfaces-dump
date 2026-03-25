@@ -32,6 +32,7 @@ namespace CS2 {
 			float32 m_flRenderFxDuration; // 0x20 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CClientAlphaProperty, m_nDistFadeStart) == 0x10, "m_nDistFadeStart in CClientAlphaProperty should be at offset 0x10");
 		static_assert(offsetof(CS2::client::CClientAlphaProperty, m_nDistFadeEnd) == 0x12, "m_nDistFadeEnd in CClientAlphaProperty should be at offset 0x12");
 		static_assert(offsetof(CS2::client::CClientAlphaProperty, m_nAlpha) == 0x17, "m_nAlpha in CClientAlphaProperty should be at offset 0x17");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CClientAlphaProperty, m_flRenderFxStartTime) == 0x1C, "m_flRenderFxStartTime in CClientAlphaProperty should be at offset 0x1C");
 		static_assert(offsetof(CS2::client::CClientAlphaProperty, m_flRenderFxDuration) == 0x20, "m_flRenderFxDuration in CClientAlphaProperty should be at offset 0x20");
 		static_assert(sizeof(CS2::client::CClientAlphaProperty) == 0x30, "CClientAlphaProperty size should be 0x30");
+
+#endif
 	}
 }

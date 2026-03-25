@@ -28,10 +28,13 @@ namespace CS2 {
 			modellib::MeshDrawPrimitiveFlags_t m_nAdditionalMeshDrawPrimitiveFlags; // 0xc | Schema_DeclaredEnum | Size: 0x4
 			modellib::CRenderBufferBinding m_extraBufferBinding; // 0x10 | Schema_DeclaredClass | Size: 0x20
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::ExtraVertexStreamOverride_t, m_nSubSceneObject) == 0x4, "m_nSubSceneObject in ExtraVertexStreamOverride_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::ExtraVertexStreamOverride_t, m_nDrawCallIndex) == 0x8, "m_nDrawCallIndex in ExtraVertexStreamOverride_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::ExtraVertexStreamOverride_t, m_nAdditionalMeshDrawPrimitiveFlags) == 0xC, "m_nAdditionalMeshDrawPrimitiveFlags in ExtraVertexStreamOverride_t should be at offset 0xC");
 		static_assert(offsetof(CS2::worldrenderer::ExtraVertexStreamOverride_t, m_extraBufferBinding) == 0x10, "m_extraBufferBinding in ExtraVertexStreamOverride_t should be at offset 0x10");
 		static_assert(sizeof(CS2::worldrenderer::ExtraVertexStreamOverride_t) == 0x30, "ExtraVertexStreamOverride_t size should be 0x30");
+
+#endif
 	}
 }

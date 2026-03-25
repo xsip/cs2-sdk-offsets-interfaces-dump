@@ -29,6 +29,7 @@ namespace CS2 {
 			bool m_bIsEnabled; // 0x619 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1e); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flVisibilityStrength) == 0x608, "m_flVisibilityStrength in C_PlayerVisibility should be at offset 0x608");
 		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFogDistanceMultiplier) == 0x60C, "m_flFogDistanceMultiplier in C_PlayerVisibility should be at offset 0x60C");
 		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_flFogMaxDensityMultiplier) == 0x610, "m_flFogMaxDensityMultiplier in C_PlayerVisibility should be at offset 0x610");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_bStartDisabled) == 0x618, "m_bStartDisabled in C_PlayerVisibility should be at offset 0x618");
 		static_assert(offsetof(CS2::client::C_PlayerVisibility, m_bIsEnabled) == 0x619, "m_bIsEnabled in C_PlayerVisibility should be at offset 0x619");
 		static_assert(sizeof(CS2::client::C_PlayerVisibility) == 0x638, "C_PlayerVisibility size should be 0x638");
+
+#endif
 	}
 }

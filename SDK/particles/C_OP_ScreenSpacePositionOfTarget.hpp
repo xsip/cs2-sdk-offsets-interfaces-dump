@@ -33,11 +33,14 @@ namespace CS2 {
 			particles::ParticleSetMethod_t m_nBehindSetMethod; // 0xa00 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpacePositionOfTarget, m_vecTargetPosition) == 0x1D0, "m_vecTargetPosition in C_OP_ScreenSpacePositionOfTarget should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpacePositionOfTarget, m_bOututBehindness) == 0x888, "m_bOututBehindness in C_OP_ScreenSpacePositionOfTarget should be at offset 0x888");
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpacePositionOfTarget, m_nBehindFieldOutput) == 0x88C, "m_nBehindFieldOutput in C_OP_ScreenSpacePositionOfTarget should be at offset 0x88C");
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpacePositionOfTarget, m_flBehindOutputRemap) == 0x890, "m_flBehindOutputRemap in C_OP_ScreenSpacePositionOfTarget should be at offset 0x890");
 		static_assert(offsetof(CS2::particles::C_OP_ScreenSpacePositionOfTarget, m_nBehindSetMethod) == 0xA00, "m_nBehindSetMethod in C_OP_ScreenSpacePositionOfTarget should be at offset 0xA00");
 		static_assert(sizeof(CS2::particles::C_OP_ScreenSpacePositionOfTarget) == 0xA08, "C_OP_ScreenSpacePositionOfTarget size should be 0xA08");
+
+#endif
 	}
 }

@@ -26,8 +26,11 @@ namespace CS2 {
 			S2_PAD(0x2);
 			animlib::NmCachedValueMode_t m_mode; // 0x14 | Schema_DeclaredEnum | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmCachedIDNode_CDefinition, m_nInputValueNodeIdx) == 0x10, "m_nInputValueNodeIdx in CNmCachedIDNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmCachedIDNode_CDefinition, m_mode) == 0x14, "m_mode in CNmCachedIDNode::CDefinition should be at offset 0x14");
 		static_assert(sizeof(CS2::animlib::CNmCachedIDNode_CDefinition) == 0x18, "CNmCachedIDNode::CDefinition size should be 0x18");
+
+#endif
 	}
 }

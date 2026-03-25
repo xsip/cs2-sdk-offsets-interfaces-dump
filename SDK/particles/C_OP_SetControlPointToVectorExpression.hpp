@@ -32,6 +32,7 @@ namespace CS2 {
 			bool m_bNormalizedOutput; // 0x10c0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToVectorExpression, m_nExpression) == 0x1D8, "m_nExpression in C_OP_SetControlPointToVectorExpression should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToVectorExpression, m_nOutputCP) == 0x1DC, "m_nOutputCP in C_OP_SetControlPointToVectorExpression should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToVectorExpression, m_vInput1) == 0x1E0, "m_vInput1 in C_OP_SetControlPointToVectorExpression should be at offset 0x1E0");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToVectorExpression, m_flLerp) == 0xF50, "m_flLerp in C_OP_SetControlPointToVectorExpression should be at offset 0xF50");
 		static_assert(offsetof(CS2::particles::C_OP_SetControlPointToVectorExpression, m_bNormalizedOutput) == 0x10C0, "m_bNormalizedOutput in C_OP_SetControlPointToVectorExpression should be at offset 0x10C0");
 		static_assert(sizeof(CS2::particles::C_OP_SetControlPointToVectorExpression) == 0x10C8, "C_OP_SetControlPointToVectorExpression size should be 0x10C8");
+
+#endif
 	}
 }

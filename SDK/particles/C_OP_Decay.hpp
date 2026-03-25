@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bForcePreserveParticleOrder; // 0x1d1 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_Decay, m_bRopeDecay) == 0x1D0, "m_bRopeDecay in C_OP_Decay should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_Decay, m_bForcePreserveParticleOrder) == 0x1D1, "m_bForcePreserveParticleOrder in C_OP_Decay should be at offset 0x1D1");
 		static_assert(sizeof(CS2::particles::C_OP_Decay) == 0x1D8, "C_OP_Decay size should be 0x1D8");
+
+#endif
 	}
 }

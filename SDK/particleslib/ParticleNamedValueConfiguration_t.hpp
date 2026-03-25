@@ -29,6 +29,7 @@ namespace CS2 {
 			GlobalTypes::CUtlString m_strEntityScope; // 0x28 | Schema_Atomic | Size: 0x8
 			GlobalTypes::CUtlString m_strAttachmentName; // 0x30 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_ConfigName) == 0x0, "m_ConfigName in ParticleNamedValueConfiguration_t should be at offset 0x0");
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_ConfigValue) == 0x8, "m_ConfigValue in ParticleNamedValueConfiguration_t should be at offset 0x8");
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_BoundValuePath) == 0x18, "m_BoundValuePath in ParticleNamedValueConfiguration_t should be at offset 0x18");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_strEntityScope) == 0x28, "m_strEntityScope in ParticleNamedValueConfiguration_t should be at offset 0x28");
 		static_assert(offsetof(CS2::particleslib::ParticleNamedValueConfiguration_t, m_strAttachmentName) == 0x30, "m_strAttachmentName in ParticleNamedValueConfiguration_t should be at offset 0x30");
 		static_assert(sizeof(CS2::particleslib::ParticleNamedValueConfiguration_t) == 0x38, "ParticleNamedValueConfiguration_t size should be 0x38");
+
+#endif
 	}
 }

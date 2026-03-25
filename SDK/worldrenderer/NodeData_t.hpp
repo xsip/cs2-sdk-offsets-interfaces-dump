@@ -30,6 +30,7 @@ namespace CS2 {
 			// char m_ChildNodeIndices[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlString m_worldNodePrefix; // 0x48 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::NodeData_t, m_nParent) == 0x0, "m_nParent in NodeData_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::NodeData_t, m_vOrigin) == 0x4, "m_vOrigin in NodeData_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::NodeData_t, m_vMinBounds) == 0x10, "m_vMinBounds in NodeData_t should be at offset 0x10");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::NodeData_t, m_ChildNodeIndices) == 0x30, "m_ChildNodeIndices in NodeData_t should be at offset 0x30");
 		static_assert(offsetof(CS2::worldrenderer::NodeData_t, m_worldNodePrefix) == 0x48, "m_worldNodePrefix in NodeData_t should be at offset 0x48");
 		static_assert(sizeof(CS2::worldrenderer::NodeData_t) == 0x50, "NodeData_t size should be 0x50");
+
+#endif
 	}
 }

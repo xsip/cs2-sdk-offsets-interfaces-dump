@@ -24,7 +24,10 @@ namespace CS2 {
 		public:
 			animgraphlib::CAnimStateMachineUpdater m_stateMachine; // 0x30 | Schema_DeclaredClass | Size: 0x58
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CStateMachineComponentUpdater, m_stateMachine) == 0x30, "m_stateMachine in CStateMachineComponentUpdater should be at offset 0x30");
 		static_assert(sizeof(CS2::animgraphlib::CStateMachineComponentUpdater) == 0x88, "CStateMachineComponentUpdater size should be 0x88");
+
+#endif
 	}
 }

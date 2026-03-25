@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bAllowLooping; // 0x3a | Schema_Builtin | Size: 0x1
 			S2_PAD(0x5); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_CDefinition, m_sourceNodeIndices) == 0x10, "m_sourceNodeIndices in CNmParameterizedBlendNode::CDefinition should be at offset 0x10");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_CDefinition, m_nInputParameterValueNodeIdx) == 0x38, "m_nInputParameterValueNodeIdx in CNmParameterizedBlendNode::CDefinition should be at offset 0x38");
 		static_assert(offsetof(CS2::animlib::CNmParameterizedBlendNode_CDefinition, m_bAllowLooping) == 0x3A, "m_bAllowLooping in CNmParameterizedBlendNode::CDefinition should be at offset 0x3A");
 		static_assert(sizeof(CS2::animlib::CNmParameterizedBlendNode_CDefinition) == 0x40, "CNmParameterizedBlendNode::CDefinition size should be 0x40");
+
+#endif
 	}
 }

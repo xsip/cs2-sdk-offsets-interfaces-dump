@@ -22,6 +22,9 @@ namespace CS2 {
 		class CWeaponGalilAR : public CS2::server::CCSWeaponBaseGun {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::server::CWeaponGalilAR) == 0x1150, "CWeaponGalilAR size should be 0x1150");
+
+#endif
 	}
 }

@@ -40,6 +40,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>> m_AdditionalTargetEntities; // 0x510 | Schema_Atomic | Size: 0x18
 			// char m_AdditionalTargetEntities[0x18]; // 0x510 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_bDisabled) == 0x4A8, "m_bDisabled in CInfoOffscreenPanoramaTexture should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nResolutionX) == 0x4AC, "m_nResolutionX in CInfoOffscreenPanoramaTexture should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_nResolutionY) == 0x4B0, "m_nResolutionY in CInfoOffscreenPanoramaTexture should be at offset 0x4B0");
@@ -52,5 +53,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_szTargetsName) == 0x508, "m_szTargetsName in CInfoOffscreenPanoramaTexture should be at offset 0x508");
 		static_assert(offsetof(CS2::server::CInfoOffscreenPanoramaTexture, m_AdditionalTargetEntities) == 0x510, "m_AdditionalTargetEntities in CInfoOffscreenPanoramaTexture should be at offset 0x510");
 		static_assert(sizeof(CS2::server::CInfoOffscreenPanoramaTexture) == 0x528, "CInfoOffscreenPanoramaTexture size should be 0x528");
+
+#endif
 	}
 }

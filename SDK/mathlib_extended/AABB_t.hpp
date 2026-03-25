@@ -23,8 +23,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vMinBounds; // 0x0 | Schema_Atomic | Size: 0xc
 			GlobalTypes::Vector m_vMaxBounds; // 0xc | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::mathlib_extended::AABB_t, m_vMinBounds) == 0x0, "m_vMinBounds in AABB_t should be at offset 0x0");
 		static_assert(offsetof(CS2::mathlib_extended::AABB_t, m_vMaxBounds) == 0xC, "m_vMaxBounds in AABB_t should be at offset 0xC");
 		static_assert(sizeof(CS2::mathlib_extended::AABB_t) == 0x18, "AABB_t size should be 0x18");
+
+#endif
 	}
 }

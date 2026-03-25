@@ -25,8 +25,11 @@ namespace CS2 {
 			GlobalTypes::Vector m_vMaxs; // 0x564 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSoundEventOBBEntity, m_vMins) == 0x558, "m_vMins in CSoundEventOBBEntity should be at offset 0x558");
 		static_assert(offsetof(CS2::server::CSoundEventOBBEntity, m_vMaxs) == 0x564, "m_vMaxs in CSoundEventOBBEntity should be at offset 0x564");
 		static_assert(sizeof(CS2::server::CSoundEventOBBEntity) == 0x580, "CSoundEventOBBEntity size should be 0x580");
+
+#endif
 	}
 }

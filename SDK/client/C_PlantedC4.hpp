@@ -75,6 +75,7 @@ namespace CS2 {
 			float32 m_flC4ExplodeSpectateDuration; // 0x16d8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PlantedC4, m_bBombTicking) == 0x1170, "m_bBombTicking in C_PlantedC4 should be at offset 0x1170");
 		static_assert(offsetof(CS2::client::C_PlantedC4, m_nBombSite) == 0x1174, "m_nBombSite in C_PlantedC4 should be at offset 0x1174");
 		static_assert(offsetof(CS2::client::C_PlantedC4, m_nSourceSoundscapeHash) == 0x1178, "m_nSourceSoundscapeHash in C_PlantedC4 should be at offset 0x1178");
@@ -105,5 +106,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_PlantedC4, m_vecC4ExplodeSpectateAng) == 0x16CC, "m_vecC4ExplodeSpectateAng in C_PlantedC4 should be at offset 0x16CC");
 		static_assert(offsetof(CS2::client::C_PlantedC4, m_flC4ExplodeSpectateDuration) == 0x16D8, "m_flC4ExplodeSpectateDuration in C_PlantedC4 should be at offset 0x16D8");
 		static_assert(sizeof(CS2::client::C_PlantedC4) == 0x16E0, "C_PlantedC4 size should be 0x16E0");
+
+#endif
 	}
 }

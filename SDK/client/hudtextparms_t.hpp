@@ -28,6 +28,7 @@ namespace CS2 {
 			float32 x; // 0xc | Schema_Builtin | Size: 0x4
 			float32 y; // 0x10 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::hudtextparms_t, color1) == 0x0, "color1 in hudtextparms_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::hudtextparms_t, color2) == 0x4, "color2 in hudtextparms_t should be at offset 0x4");
 		static_assert(offsetof(CS2::client::hudtextparms_t, effect) == 0x8, "effect in hudtextparms_t should be at offset 0x8");
@@ -35,5 +36,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::hudtextparms_t, x) == 0xC, "x in hudtextparms_t should be at offset 0xC");
 		static_assert(offsetof(CS2::client::hudtextparms_t, y) == 0x10, "y in hudtextparms_t should be at offset 0x10");
 		static_assert(sizeof(CS2::client::hudtextparms_t) == 0x14, "hudtextparms_t size should be 0x14");
+
+#endif
 	}
 }

@@ -42,6 +42,7 @@ namespace CS2 {
 			float32 m_debugTotalChainLength; // 0x120 | Schema_Builtin | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_nEffectorBoneIdx) == 0x58, "m_nEffectorBoneIdx in CNmChainSolverTask should be at offset 0x58");
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_nEffectorTargetBoneIdx) == 0x5C, "m_nEffectorTargetBoneIdx in CNmChainSolverTask should be at offset 0x5C");
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_targetTransform) == 0x60, "m_targetTransform in CNmChainSolverTask should be at offset 0x60");
@@ -56,5 +57,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_debugRequestedTargetTransformMS) == 0x100, "m_debugRequestedTargetTransformMS in CNmChainSolverTask should be at offset 0x100");
 		static_assert(offsetof(CS2::animlib::CNmChainSolverTask, m_debugTotalChainLength) == 0x120, "m_debugTotalChainLength in CNmChainSolverTask should be at offset 0x120");
 		static_assert(sizeof(CS2::animlib::CNmChainSolverTask) == 0x130, "CNmChainSolverTask size should be 0x130");
+
+#endif
 	}
 }

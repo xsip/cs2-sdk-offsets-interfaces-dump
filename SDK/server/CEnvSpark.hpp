@@ -28,11 +28,14 @@ namespace CS2 {
 			int32_t m_nType; // 0x4b4 | Schema_Builtin | Size: 0x4
 			entity2::CEntityIOOutput m_OnSpark; // 0x4b8 | Schema_DeclaredClass | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvSpark, m_flDelay) == 0x4A8, "m_flDelay in CEnvSpark should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvSpark, m_nMagnitude) == 0x4AC, "m_nMagnitude in CEnvSpark should be at offset 0x4AC");
 		static_assert(offsetof(CS2::server::CEnvSpark, m_nTrailLength) == 0x4B0, "m_nTrailLength in CEnvSpark should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CEnvSpark, m_nType) == 0x4B4, "m_nType in CEnvSpark should be at offset 0x4B4");
 		static_assert(offsetof(CS2::server::CEnvSpark, m_OnSpark) == 0x4B8, "m_OnSpark in CEnvSpark should be at offset 0x4B8");
 		static_assert(sizeof(CS2::server::CEnvSpark) == 0x4D0, "CEnvSpark size should be 0x4D0");
+
+#endif
 	}
 }

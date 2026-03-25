@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bAdditive; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFootMotion, m_strides) == 0x0, "m_strides in CFootMotion should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CFootMotion, m_name) == 0x18, "m_name in CFootMotion should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::CFootMotion, m_bAdditive) == 0x20, "m_bAdditive in CFootMotion should be at offset 0x20");
 		static_assert(sizeof(CS2::modellib::CFootMotion) == 0x28, "CFootMotion size should be 0x28");
+
+#endif
 	}
 }

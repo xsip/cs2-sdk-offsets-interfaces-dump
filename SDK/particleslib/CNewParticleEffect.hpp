@@ -52,6 +52,7 @@ namespace CS2 {
 			int32_t m_RefCount; // 0xd0 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_pNext) == 0x10, "m_pNext in CNewParticleEffect should be at offset 0x10");
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_pPrev) == 0x18, "m_pPrev in CNewParticleEffect should be at offset 0x18");
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_pParticles) == 0x20, "m_pParticles in CNewParticleEffect should be at offset 0x20");
@@ -69,5 +70,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_vecAggregationCenter) == 0x98, "m_vecAggregationCenter in CNewParticleEffect should be at offset 0x98");
 		static_assert(offsetof(CS2::particleslib::CNewParticleEffect, m_RefCount) == 0xD0, "m_RefCount in CNewParticleEffect should be at offset 0xD0");
 		static_assert(sizeof(CS2::particleslib::CNewParticleEffect) == 0xD8, "CNewParticleEffect size should be 0xD8");
+
+#endif
 	}
 }

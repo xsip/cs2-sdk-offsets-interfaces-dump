@@ -22,6 +22,9 @@ namespace CS2 {
 		class CBaseAnimGraphDestructibleParts_GraphController : public CS2::client::CAnimGraphControllerBase {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::CBaseAnimGraphDestructibleParts_GraphController) == 0x90, "CBaseAnimGraphDestructibleParts_GraphController size should be 0x90");
+
+#endif
 	}
 }

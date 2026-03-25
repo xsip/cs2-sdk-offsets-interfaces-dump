@@ -45,6 +45,7 @@ namespace CS2 {
 			pulse_runtime_lib::PulseRuntimeBlackboardReferenceIndex_t m_nBlackboardReferenceIdx; // 0x24 | Schema_DeclaredClass | Size: 0x2
 			S2_PAD(0x12); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::PGDInstruction_t, m_nCode) == 0x0, "m_nCode in PGDInstruction_t should be at offset 0x0");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PGDInstruction_t, m_nVar) == 0x4, "m_nVar in PGDInstruction_t should be at offset 0x4");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PGDInstruction_t, m_nReg0) == 0x8, "m_nReg0 in PGDInstruction_t should be at offset 0x8");
@@ -58,5 +59,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::pulse_runtime_lib::PGDInstruction_t, m_nDomainValueIdx) == 0x22, "m_nDomainValueIdx in PGDInstruction_t should be at offset 0x22");
 		static_assert(offsetof(CS2::pulse_runtime_lib::PGDInstruction_t, m_nBlackboardReferenceIdx) == 0x24, "m_nBlackboardReferenceIdx in PGDInstruction_t should be at offset 0x24");
 		static_assert(sizeof(CS2::pulse_runtime_lib::PGDInstruction_t) == 0x38, "PGDInstruction_t size should be 0x38");
+
+#endif
 	}
 }

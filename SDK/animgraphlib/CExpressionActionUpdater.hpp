@@ -29,9 +29,12 @@ namespace CS2 {
 			S2_PAD(0x1);
 			modellib::AnimScriptHandle m_hScript; // 0x1c | Schema_DeclaredClass | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CExpressionActionUpdater, m_hParam) == 0x18, "m_hParam in CExpressionActionUpdater should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CExpressionActionUpdater, m_eParamType) == 0x1A, "m_eParamType in CExpressionActionUpdater should be at offset 0x1A");
 		static_assert(offsetof(CS2::animgraphlib::CExpressionActionUpdater, m_hScript) == 0x1C, "m_hScript in CExpressionActionUpdater should be at offset 0x1C");
 		static_assert(sizeof(CS2::animgraphlib::CExpressionActionUpdater) == 0x20, "CExpressionActionUpdater size should be 0x20");
+
+#endif
 	}
 }

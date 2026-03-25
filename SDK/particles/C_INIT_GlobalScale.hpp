@@ -29,6 +29,7 @@ namespace CS2 {
 			bool m_bScaleVelocity; // 0x1e6 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_flScale) == 0x1D8, "m_flScale in C_INIT_GlobalScale should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_nScaleControlPointNumber) == 0x1DC, "m_nScaleControlPointNumber in C_INIT_GlobalScale should be at offset 0x1DC");
 		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_nControlPointNumber) == 0x1E0, "m_nControlPointNumber in C_INIT_GlobalScale should be at offset 0x1E0");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScalePosition) == 0x1E5, "m_bScalePosition in C_INIT_GlobalScale should be at offset 0x1E5");
 		static_assert(offsetof(CS2::particles::C_INIT_GlobalScale, m_bScaleVelocity) == 0x1E6, "m_bScaleVelocity in C_INIT_GlobalScale should be at offset 0x1E6");
 		static_assert(sizeof(CS2::particles::C_INIT_GlobalScale) == 0x1E8, "C_INIT_GlobalScale size should be 0x1E8");
+
+#endif
 	}
 }

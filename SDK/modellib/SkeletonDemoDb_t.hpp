@@ -33,9 +33,12 @@ namespace CS2 {
 			float32 m_flRecordingTime; // 0x30 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::SkeletonDemoDb_t, m_AnimCaptures) == 0x0, "m_AnimCaptures in SkeletonDemoDb_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::SkeletonDemoDb_t, m_CameraTrack) == 0x18, "m_CameraTrack in SkeletonDemoDb_t should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::SkeletonDemoDb_t, m_flRecordingTime) == 0x30, "m_flRecordingTime in SkeletonDemoDb_t should be at offset 0x30");
 		static_assert(sizeof(CS2::modellib::SkeletonDemoDb_t) == 0x38, "SkeletonDemoDb_t size should be 0x38");
+
+#endif
 	}
 }

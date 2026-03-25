@@ -29,10 +29,13 @@ namespace CS2 {
 			float32 m_flStartTime; // 0x348 | Schema_Builtin | Size: 0x4
 			float32 m_flEndTime; // 0x34c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_nFieldOutput) == 0x1D0, "m_nFieldOutput in C_OP_LerpScalar should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flOutput) == 0x1D8, "m_flOutput in C_OP_LerpScalar should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flStartTime) == 0x348, "m_flStartTime in C_OP_LerpScalar should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_LerpScalar, m_flEndTime) == 0x34C, "m_flEndTime in C_OP_LerpScalar should be at offset 0x34C");
 		static_assert(sizeof(CS2::particles::C_OP_LerpScalar) == 0x350, "C_OP_LerpScalar size should be 0x350");
+
+#endif
 	}
 }

@@ -33,6 +33,7 @@ namespace CS2 {
 			int32_t m_iAttachType; // 0x4e0 | Schema_Builtin | Size: 0x4
 			float32 m_flHeightOffset; // 0x4e4 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszName) == 0x4A8, "m_iszName in CEnvInstructorVRHint should be at offset 0x4A8");
 		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iszHintTargetEntity) == 0x4B0, "m_iszHintTargetEntity in CEnvInstructorVRHint should be at offset 0x4B0");
 		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iTimeout) == 0x4B8, "m_iTimeout in CEnvInstructorVRHint should be at offset 0x4B8");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_iAttachType) == 0x4E0, "m_iAttachType in CEnvInstructorVRHint should be at offset 0x4E0");
 		static_assert(offsetof(CS2::server::CEnvInstructorVRHint, m_flHeightOffset) == 0x4E4, "m_flHeightOffset in CEnvInstructorVRHint should be at offset 0x4E4");
 		static_assert(sizeof(CS2::server::CEnvInstructorVRHint) == 0x4E8, "CEnvInstructorVRHint size should be 0x4E8");
+
+#endif
 	}
 }

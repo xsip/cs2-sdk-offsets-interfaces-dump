@@ -46,6 +46,7 @@ namespace CS2 {
 			int32_t m_postureStackIndex; // 0xf8 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CBot, m_pController) == 0x10, "m_pController in CBot should be at offset 0x10");
 		static_assert(offsetof(CS2::server::CBot, m_pPlayer) == 0x18, "m_pPlayer in CBot should be at offset 0x18");
 		static_assert(offsetof(CS2::server::CBot, m_bHasSpawned) == 0x20, "m_bHasSpawned in CBot should be at offset 0x20");
@@ -60,5 +61,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CBot, m_viewForward) == 0xDC, "m_viewForward in CBot should be at offset 0xDC");
 		static_assert(offsetof(CS2::server::CBot, m_postureStackIndex) == 0xF8, "m_postureStackIndex in CBot should be at offset 0xF8");
 		static_assert(sizeof(CS2::server::CBot) == 0x100, "CBot size should be 0x100");
+
+#endif
 	}
 }

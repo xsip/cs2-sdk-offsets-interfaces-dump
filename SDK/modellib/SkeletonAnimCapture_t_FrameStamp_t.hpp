@@ -30,6 +30,7 @@ namespace CS2 {
 			int32_t m_nFrameCount; // 0x14 | Schema_Builtin | Size: 0x4
 			int32_t m_nTickCount; // 0x18 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_FrameStamp_t, m_flTime) == 0x0, "m_flTime in SkeletonAnimCapture_t::FrameStamp_t should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_FrameStamp_t, m_flEntitySimTime) == 0x4, "m_flEntitySimTime in SkeletonAnimCapture_t::FrameStamp_t should be at offset 0x4");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_FrameStamp_t, m_bTeleportTick) == 0x8, "m_bTeleportTick in SkeletonAnimCapture_t::FrameStamp_t should be at offset 0x8");
@@ -39,5 +40,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_FrameStamp_t, m_nFrameCount) == 0x14, "m_nFrameCount in SkeletonAnimCapture_t::FrameStamp_t should be at offset 0x14");
 		static_assert(offsetof(CS2::modellib::SkeletonAnimCapture_t_FrameStamp_t, m_nTickCount) == 0x18, "m_nTickCount in SkeletonAnimCapture_t::FrameStamp_t should be at offset 0x18");
 		static_assert(sizeof(CS2::modellib::SkeletonAnimCapture_t_FrameStamp_t) == 0x1C, "SkeletonAnimCapture_t::FrameStamp_t size should be 0x1C");
+
+#endif
 	}
 }

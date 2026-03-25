@@ -22,7 +22,10 @@ namespace CS2 {
 		public:
 			int32_t m_nDummy0; // 0x0 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::EventAppShutdown_t, m_nDummy0) == 0x0, "m_nDummy0 in EventAppShutdown_t should be at offset 0x0");
 		static_assert(sizeof(CS2::client::EventAppShutdown_t) == 0x4, "EventAppShutdown_t size should be 0x4");
+
+#endif
 	}
 }

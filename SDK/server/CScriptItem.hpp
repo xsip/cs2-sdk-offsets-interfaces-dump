@@ -25,7 +25,10 @@ namespace CS2 {
 			client::MoveType_t m_MoveTypeOverride; // 0xac0 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CScriptItem, m_MoveTypeOverride) == 0xAC0, "m_MoveTypeOverride in CScriptItem should be at offset 0xAC0");
 		static_assert(sizeof(CS2::server::CScriptItem) == 0xAD0, "CScriptItem size should be 0xAD0");
+
+#endif
 	}
 }

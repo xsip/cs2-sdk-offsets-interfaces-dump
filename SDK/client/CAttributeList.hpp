@@ -31,8 +31,11 @@ namespace CS2 {
 			char m_Attributes[0x68]; // 0x8 | Schema_Atomic | Size: 0x68
 			client::CAttributeManager* m_pManager; // 0x70 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CAttributeList, m_Attributes) == 0x8, "m_Attributes in CAttributeList should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CAttributeList, m_pManager) == 0x70, "m_pManager in CAttributeList should be at offset 0x70");
 		static_assert(sizeof(CS2::client::CAttributeList) == 0x78, "CAttributeList size should be 0x78");
+
+#endif
 	}
 }

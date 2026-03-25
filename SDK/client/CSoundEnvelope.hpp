@@ -26,10 +26,13 @@ namespace CS2 {
 			bool m_forceupdate; // 0xc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CSoundEnvelope, m_current) == 0x0, "m_current in CSoundEnvelope should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CSoundEnvelope, m_target) == 0x4, "m_target in CSoundEnvelope should be at offset 0x4");
 		static_assert(offsetof(CS2::client::CSoundEnvelope, m_rate) == 0x8, "m_rate in CSoundEnvelope should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CSoundEnvelope, m_forceupdate) == 0xC, "m_forceupdate in CSoundEnvelope should be at offset 0xC");
 		static_assert(sizeof(CS2::client::CSoundEnvelope) == 0x10, "CSoundEnvelope size should be 0x10");
+
+#endif
 	}
 }

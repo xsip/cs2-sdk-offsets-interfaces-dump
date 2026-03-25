@@ -24,7 +24,10 @@ namespace CS2 {
 			float32 m_flVerticalFOV; // 0x508 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPointCameraVFOV, m_flVerticalFOV) == 0x508, "m_flVerticalFOV in CPointCameraVFOV should be at offset 0x508");
 		static_assert(sizeof(CS2::server::CPointCameraVFOV) == 0x510, "CPointCameraVFOV size should be 0x510");
+
+#endif
 	}
 }

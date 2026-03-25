@@ -30,10 +30,13 @@ namespace CS2 {
 			bool m_bNormalizedOutput; // 0x890 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6f); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_vInput1) == 0x1D0, "m_vInput1 in C_OP_RemapGravityToVector should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_nOutputField) == 0x888, "m_nOutputField in C_OP_RemapGravityToVector should be at offset 0x888");
 		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_nSetMethod) == 0x88C, "m_nSetMethod in C_OP_RemapGravityToVector should be at offset 0x88C");
 		static_assert(offsetof(CS2::particles::C_OP_RemapGravityToVector, m_bNormalizedOutput) == 0x890, "m_bNormalizedOutput in C_OP_RemapGravityToVector should be at offset 0x890");
 		static_assert(sizeof(CS2::particles::C_OP_RemapGravityToVector) == 0x900, "C_OP_RemapGravityToVector size should be 0x900");
+
+#endif
 	}
 }

@@ -25,7 +25,10 @@ namespace CS2 {
 			animgraphlib::TwoBoneIKSettings_t m_opFixedData; // 0x70 | Schema_DeclaredClass | Size: 0x160
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CTwoBoneIKUpdateNode, m_opFixedData) == 0x70, "m_opFixedData in CTwoBoneIKUpdateNode should be at offset 0x70");
 		static_assert(sizeof(CS2::animgraphlib::CTwoBoneIKUpdateNode) == 0x1E0, "CTwoBoneIKUpdateNode size should be 0x1E0");
+
+#endif
 	}
 }

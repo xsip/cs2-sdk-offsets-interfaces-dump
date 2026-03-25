@@ -25,8 +25,11 @@ namespace CS2 {
 			entity2::GameTime_t flTimeRotationStart; // 0x10 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0xc); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::RotatorHistoryEntry_t, qInvChange) == 0x0, "qInvChange in RotatorHistoryEntry_t should be at offset 0x0");
 		static_assert(offsetof(CS2::server::RotatorHistoryEntry_t, flTimeRotationStart) == 0x10, "flTimeRotationStart in RotatorHistoryEntry_t should be at offset 0x10");
 		static_assert(sizeof(CS2::server::RotatorHistoryEntry_t) == 0x20, "RotatorHistoryEntry_t size should be 0x20");
+
+#endif
 	}
 }

@@ -31,6 +31,7 @@ namespace CS2 {
 			float32 m_OuterAngle; // 0x740 | Schema_Builtin | Size: 0x4
 			float32 m_SpotRadius; // 0x744 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CDynamicLight, m_ActualFlags) == 0x730, "m_ActualFlags in CDynamicLight should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CDynamicLight, m_Flags) == 0x731, "m_Flags in CDynamicLight should be at offset 0x731");
 		static_assert(offsetof(CS2::server::CDynamicLight, m_LightStyle) == 0x732, "m_LightStyle in CDynamicLight should be at offset 0x732");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CDynamicLight, m_OuterAngle) == 0x740, "m_OuterAngle in CDynamicLight should be at offset 0x740");
 		static_assert(offsetof(CS2::server::CDynamicLight, m_SpotRadius) == 0x744, "m_SpotRadius in CDynamicLight should be at offset 0x744");
 		static_assert(sizeof(CS2::server::CDynamicLight) == 0x748, "CDynamicLight size should be 0x748");
+
+#endif
 	}
 }

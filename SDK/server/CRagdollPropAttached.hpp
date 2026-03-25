@@ -30,6 +30,7 @@ namespace CS2 {
 			bool m_bShouldDeleteAttachedActivationRecord; // 0xba0 | Schema_Builtin | Size: 0x1
 			S2_PAD(0xf); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_boneIndexAttached) == 0xB70, "m_boneIndexAttached in CRagdollPropAttached should be at offset 0xB70");
 		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_ragdollAttachedObjectIndex) == 0xB74, "m_ragdollAttachedObjectIndex in CRagdollPropAttached should be at offset 0xB74");
 		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_attachmentPointBoneSpace) == 0xB78, "m_attachmentPointBoneSpace in CRagdollPropAttached should be at offset 0xB78");
@@ -37,5 +38,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_bShouldDetach) == 0xB90, "m_bShouldDetach in CRagdollPropAttached should be at offset 0xB90");
 		static_assert(offsetof(CS2::server::CRagdollPropAttached, m_bShouldDeleteAttachedActivationRecord) == 0xBA0, "m_bShouldDeleteAttachedActivationRecord in CRagdollPropAttached should be at offset 0xBA0");
 		static_assert(sizeof(CS2::server::CRagdollPropAttached) == 0xBB0, "CRagdollPropAttached size should be 0xBB0");
+
+#endif
 	}
 }

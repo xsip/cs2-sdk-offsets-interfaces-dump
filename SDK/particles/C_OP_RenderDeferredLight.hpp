@@ -44,6 +44,7 @@ namespace CS2 {
 			int32_t m_nHSVShiftControlPoint; // 0x910 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_bUseAlphaTestWindow) == 0x220, "m_bUseAlphaTestWindow in C_OP_RenderDeferredLight should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_bUseTexture) == 0x221, "m_bUseTexture in C_OP_RenderDeferredLight should be at offset 0x221");
 		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_flRadiusScale) == 0x224, "m_flRadiusScale in C_OP_RenderDeferredLight should be at offset 0x224");
@@ -61,5 +62,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_hTexture) == 0x908, "m_hTexture in C_OP_RenderDeferredLight should be at offset 0x908");
 		static_assert(offsetof(CS2::particles::C_OP_RenderDeferredLight, m_nHSVShiftControlPoint) == 0x910, "m_nHSVShiftControlPoint in C_OP_RenderDeferredLight should be at offset 0x910");
 		static_assert(sizeof(CS2::particles::C_OP_RenderDeferredLight) == 0x918, "C_OP_RenderDeferredLight size should be 0x918");
+
+#endif
 	}
 }

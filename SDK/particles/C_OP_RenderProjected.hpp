@@ -53,6 +53,7 @@ namespace CS2 {
 			particles::ParticleColorBlendType_t m_nColorBlendType; // 0xee8 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectCharacter) == 0x220, "m_bProjectCharacter in C_OP_RenderProjected should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectWorld) == 0x221, "m_bProjectWorld in C_OP_RenderProjected should be at offset 0x221");
 		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_bProjectWater) == 0x222, "m_bProjectWater in C_OP_RenderProjected should be at offset 0x222");
@@ -72,5 +73,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_vecColorScale) == 0x830, "m_vecColorScale in C_OP_RenderProjected should be at offset 0x830");
 		static_assert(offsetof(CS2::particles::C_OP_RenderProjected, m_nColorBlendType) == 0xEE8, "m_nColorBlendType in C_OP_RenderProjected should be at offset 0xEE8");
 		static_assert(sizeof(CS2::particles::C_OP_RenderProjected) == 0xF08, "C_OP_RenderProjected size should be 0xF08");
+
+#endif
 	}
 }

@@ -35,6 +35,7 @@ namespace CS2 {
 			particles::CRandomNumberGeneratorParameters m_randomnessParameters; // 0x1234 | Schema_DeclaredClass | Size: 0x8
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_nControlPointNumber) == 0x1D8, "m_nControlPointNumber in C_INIT_VelocityRandom should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_fSpeedMin) == 0x1E0, "m_fSpeedMin in C_INIT_VelocityRandom should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_fSpeedMax) == 0x350, "m_fSpeedMax in C_INIT_VelocityRandom should be at offset 0x350");
@@ -43,5 +44,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_bIgnoreDT) == 0x1230, "m_bIgnoreDT in C_INIT_VelocityRandom should be at offset 0x1230");
 		static_assert(offsetof(CS2::particles::C_INIT_VelocityRandom, m_randomnessParameters) == 0x1234, "m_randomnessParameters in C_INIT_VelocityRandom should be at offset 0x1234");
 		static_assert(sizeof(CS2::particles::C_INIT_VelocityRandom) == 0x1240, "C_INIT_VelocityRandom size should be 0x1240");
+
+#endif
 	}
 }

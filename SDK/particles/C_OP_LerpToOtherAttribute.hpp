@@ -29,10 +29,13 @@ namespace CS2 {
 			particles::ParticleAttributeIndex_t m_nFieldOutput; // 0x348 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x24); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LerpToOtherAttribute, m_flInterpolation) == 0x1D0, "m_flInterpolation in C_OP_LerpToOtherAttribute should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_LerpToOtherAttribute, m_nFieldInputFrom) == 0x340, "m_nFieldInputFrom in C_OP_LerpToOtherAttribute should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_LerpToOtherAttribute, m_nFieldInput) == 0x344, "m_nFieldInput in C_OP_LerpToOtherAttribute should be at offset 0x344");
 		static_assert(offsetof(CS2::particles::C_OP_LerpToOtherAttribute, m_nFieldOutput) == 0x348, "m_nFieldOutput in C_OP_LerpToOtherAttribute should be at offset 0x348");
 		static_assert(sizeof(CS2::particles::C_OP_LerpToOtherAttribute) == 0x370, "C_OP_LerpToOtherAttribute size should be 0x370");
+
+#endif
 	}
 }

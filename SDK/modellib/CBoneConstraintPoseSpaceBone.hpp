@@ -26,7 +26,10 @@ namespace CS2 {
 			// char m_inputList[0x18]; // 0x60 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x10); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CBoneConstraintPoseSpaceBone, m_inputList) == 0x60, "m_inputList in CBoneConstraintPoseSpaceBone should be at offset 0x60");
 		static_assert(sizeof(CS2::modellib::CBoneConstraintPoseSpaceBone) == 0x88, "CBoneConstraintPoseSpaceBone size should be 0x88");
+
+#endif
 	}
 }

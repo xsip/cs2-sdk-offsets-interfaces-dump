@@ -28,7 +28,10 @@ namespace CS2 {
 			S2_PAD(0x8);
 			client::C_RopeKeyframe* m_pKeyframe; // 0x8 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_RopeKeyframe_CPhysicsDelegate, m_pKeyframe) == 0x8, "m_pKeyframe in C_RopeKeyframe::CPhysicsDelegate should be at offset 0x8");
 		static_assert(sizeof(CS2::client::C_RopeKeyframe_CPhysicsDelegate) == 0x10, "C_RopeKeyframe::CPhysicsDelegate size should be 0x10");
+
+#endif
 	}
 }

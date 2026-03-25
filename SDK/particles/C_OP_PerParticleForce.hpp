@@ -28,9 +28,12 @@ namespace CS2 {
 			int32_t m_nCP; // 0xa08 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_PerParticleForce, m_flForceScale) == 0x1E0, "m_flForceScale in C_OP_PerParticleForce should be at offset 0x1E0");
 		static_assert(offsetof(CS2::particles::C_OP_PerParticleForce, m_vForce) == 0x350, "m_vForce in C_OP_PerParticleForce should be at offset 0x350");
 		static_assert(offsetof(CS2::particles::C_OP_PerParticleForce, m_nCP) == 0xA08, "m_nCP in C_OP_PerParticleForce should be at offset 0xA08");
 		static_assert(sizeof(CS2::particles::C_OP_PerParticleForce) == 0xA10, "C_OP_PerParticleForce size should be 0xA10");
+
+#endif
 	}
 }

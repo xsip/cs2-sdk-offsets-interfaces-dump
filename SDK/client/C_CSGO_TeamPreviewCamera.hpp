@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nVariant; // 0x690 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_CSGO_TeamPreviewCamera, m_nVariant) == 0x690, "m_nVariant in C_CSGO_TeamPreviewCamera should be at offset 0x690");
 		static_assert(sizeof(CS2::client::C_CSGO_TeamPreviewCamera) == 0x698, "C_CSGO_TeamPreviewCamera size should be 0x698");
+
+#endif
 	}
 }

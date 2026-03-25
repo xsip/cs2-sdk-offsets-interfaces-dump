@@ -33,6 +33,7 @@ namespace CS2 {
 			soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CGainScalePerInstance m_volumeScaling; // 0x50 | Schema_DeclaredClass | Size: 0x10
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CHarmonic, m_nWaveform) == 0x0, "m_nWaveform in CVoiceContainerStaticAdditiveSynth::CHarmonic should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CHarmonic, m_nFundamental) == 0x1, "m_nFundamental in CVoiceContainerStaticAdditiveSynth::CHarmonic should be at offset 0x1");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CHarmonic, m_nOctave) == 0x4, "m_nOctave in CVoiceContainerStaticAdditiveSynth::CHarmonic should be at offset 0x4");
@@ -41,5 +42,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CHarmonic, m_curve) == 0x10, "m_curve in CVoiceContainerStaticAdditiveSynth::CHarmonic should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CHarmonic, m_volumeScaling) == 0x50, "m_volumeScaling in CVoiceContainerStaticAdditiveSynth::CHarmonic should be at offset 0x50");
 		static_assert(sizeof(CS2::soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CHarmonic) == 0x68, "CVoiceContainerStaticAdditiveSynth::CHarmonic size should be 0x68");
+
+#endif
 	}
 }

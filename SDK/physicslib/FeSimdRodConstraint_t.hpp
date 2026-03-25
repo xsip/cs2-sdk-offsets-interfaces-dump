@@ -26,11 +26,14 @@ namespace CS2 {
 			GlobalTypes::fltx4 f4Weight0; // 0x30 | Schema_Atomic | Size: 0x10
 			GlobalTypes::fltx4 f4RelaxationFactor; // 0x40 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeSimdRodConstraint_t, nNode) == 0x0, "nNode in FeSimdRodConstraint_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeSimdRodConstraint_t, f4MaxDist) == 0x10, "f4MaxDist in FeSimdRodConstraint_t should be at offset 0x10");
 		static_assert(offsetof(CS2::physicslib::FeSimdRodConstraint_t, f4MinDist) == 0x20, "f4MinDist in FeSimdRodConstraint_t should be at offset 0x20");
 		static_assert(offsetof(CS2::physicslib::FeSimdRodConstraint_t, f4Weight0) == 0x30, "f4Weight0 in FeSimdRodConstraint_t should be at offset 0x30");
 		static_assert(offsetof(CS2::physicslib::FeSimdRodConstraint_t, f4RelaxationFactor) == 0x40, "f4RelaxationFactor in FeSimdRodConstraint_t should be at offset 0x40");
 		static_assert(sizeof(CS2::physicslib::FeSimdRodConstraint_t) == 0x50, "FeSimdRodConstraint_t size should be 0x50");
+
+#endif
 	}
 }

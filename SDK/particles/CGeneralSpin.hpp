@@ -27,9 +27,12 @@ namespace CS2 {
 			float32 m_fSpinRateStopTime; // 0x1dc | Schema_Builtin | Size: 0x4
 			S2_PAD(0x8); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::CGeneralSpin, m_nSpinRateDegrees) == 0x1D0, "m_nSpinRateDegrees in CGeneralSpin should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::CGeneralSpin, m_nSpinRateMinDegrees) == 0x1D4, "m_nSpinRateMinDegrees in CGeneralSpin should be at offset 0x1D4");
 		static_assert(offsetof(CS2::particles::CGeneralSpin, m_fSpinRateStopTime) == 0x1DC, "m_fSpinRateStopTime in CGeneralSpin should be at offset 0x1DC");
 		static_assert(sizeof(CS2::particles::CGeneralSpin) == 0x1E8, "CGeneralSpin size should be 0x1E8");
+
+#endif
 	}
 }

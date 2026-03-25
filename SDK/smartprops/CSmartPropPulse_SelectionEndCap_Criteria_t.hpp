@@ -23,8 +23,11 @@ namespace CS2 {
 			bool m_bStart; // 0x0 | Schema_Builtin | Size: 0x1
 			bool m_bEnd; // 0x1 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SelectionEndCap_Criteria_t, m_bStart) == 0x0, "m_bStart in CSmartPropPulse_SelectionEndCap::Criteria_t should be at offset 0x0");
 		static_assert(offsetof(CS2::smartprops::CSmartPropPulse_SelectionEndCap_Criteria_t, m_bEnd) == 0x1, "m_bEnd in CSmartPropPulse_SelectionEndCap::Criteria_t should be at offset 0x1");
 		static_assert(sizeof(CS2::smartprops::CSmartPropPulse_SelectionEndCap_Criteria_t) == 0x2, "CSmartPropPulse_SelectionEndCap::Criteria_t size should be 0x2");
+
+#endif
 	}
 }

@@ -41,6 +41,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animgraphlib::IKDemoCaptureSettings_t> m_ikChains; // 0x68 | Schema_Atomic | Size: 0x18
 			// char m_ikChains[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CAnimDemoCaptureSettings, m_vecErrorRangeSplineRotation) == 0x0, "m_vecErrorRangeSplineRotation in CAnimDemoCaptureSettings should be at offset 0x0");
 		static_assert(offsetof(CS2::animgraphlib::CAnimDemoCaptureSettings, m_vecErrorRangeSplineTranslation) == 0x8, "m_vecErrorRangeSplineTranslation in CAnimDemoCaptureSettings should be at offset 0x8");
 		static_assert(offsetof(CS2::animgraphlib::CAnimDemoCaptureSettings, m_vecErrorRangeSplineScale) == 0x10, "m_vecErrorRangeSplineScale in CAnimDemoCaptureSettings should be at offset 0x10");
@@ -57,5 +58,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animgraphlib::CAnimDemoCaptureSettings, m_bones) == 0x50, "m_bones in CAnimDemoCaptureSettings should be at offset 0x50");
 		static_assert(offsetof(CS2::animgraphlib::CAnimDemoCaptureSettings, m_ikChains) == 0x68, "m_ikChains in CAnimDemoCaptureSettings should be at offset 0x68");
 		static_assert(sizeof(CS2::animgraphlib::CAnimDemoCaptureSettings) == 0x80, "CAnimDemoCaptureSettings size should be 0x80");
+
+#endif
 	}
 }

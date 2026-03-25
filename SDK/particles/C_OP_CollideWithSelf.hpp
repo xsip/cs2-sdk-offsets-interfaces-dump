@@ -25,8 +25,11 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flRadiusScale; // 0x1d0 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flMinimumSpeed; // 0x340 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_CollideWithSelf, m_flRadiusScale) == 0x1D0, "m_flRadiusScale in C_OP_CollideWithSelf should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_CollideWithSelf, m_flMinimumSpeed) == 0x340, "m_flMinimumSpeed in C_OP_CollideWithSelf should be at offset 0x340");
 		static_assert(sizeof(CS2::particles::C_OP_CollideWithSelf) == 0x4B0, "C_OP_CollideWithSelf size should be 0x4B0");
+
+#endif
 	}
 }

@@ -37,6 +37,7 @@ namespace CS2 {
 			bool m_bMarkedForDelete; // 0x20 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::ParticleNode_t, m_hEntity) == 0x0, "m_hEntity in ParticleNode_t should be at offset 0x0");
 		static_assert(offsetof(CS2::client::ParticleNode_t, m_iIndex) == 0x4, "m_iIndex in ParticleNode_t should be at offset 0x4");
 		static_assert(offsetof(CS2::client::ParticleNode_t, m_flStartTime) == 0x8, "m_flStartTime in ParticleNode_t should be at offset 0x8");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::ParticleNode_t, m_flEndcapTime) == 0x1C, "m_flEndcapTime in ParticleNode_t should be at offset 0x1C");
 		static_assert(offsetof(CS2::client::ParticleNode_t, m_bMarkedForDelete) == 0x20, "m_bMarkedForDelete in ParticleNode_t should be at offset 0x20");
 		static_assert(sizeof(CS2::client::ParticleNode_t) == 0x24, "ParticleNode_t size should be 0x24");
+
+#endif
 	}
 }

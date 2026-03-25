@@ -29,9 +29,12 @@ namespace CS2 {
 			// GlobalTypes::CUtlLeanVector<worldrenderer::EntityKeyValueData_t> m_entityKeyValues; // 0x28 | Schema_Atomic | Size: 0x10
 			char m_entityKeyValues[0x10]; // 0x28 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::PermEntityLumpData_t, m_name) == 0x8, "m_name in PermEntityLumpData_t should be at offset 0x8");
 		static_assert(offsetof(CS2::worldrenderer::PermEntityLumpData_t, m_childLumps) == 0x10, "m_childLumps in PermEntityLumpData_t should be at offset 0x10");
 		static_assert(offsetof(CS2::worldrenderer::PermEntityLumpData_t, m_entityKeyValues) == 0x28, "m_entityKeyValues in PermEntityLumpData_t should be at offset 0x28");
 		static_assert(sizeof(CS2::worldrenderer::PermEntityLumpData_t) == 0x38, "PermEntityLumpData_t size should be 0x38");
+
+#endif
 	}
 }

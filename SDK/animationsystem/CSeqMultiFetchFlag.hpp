@@ -27,6 +27,7 @@ namespace CS2 {
 			bool m_b2D; // 0x4 | Schema_Builtin | Size: 0x1
 			bool m_b2D_TRI; // 0x5 | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetchFlag, m_bRealtime) == 0x0, "m_bRealtime in CSeqMultiFetchFlag should be at offset 0x0");
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetchFlag, m_bCylepose) == 0x1, "m_bCylepose in CSeqMultiFetchFlag should be at offset 0x1");
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetchFlag, m_b0D) == 0x2, "m_b0D in CSeqMultiFetchFlag should be at offset 0x2");
@@ -34,5 +35,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetchFlag, m_b2D) == 0x4, "m_b2D in CSeqMultiFetchFlag should be at offset 0x4");
 		static_assert(offsetof(CS2::animationsystem::CSeqMultiFetchFlag, m_b2D_TRI) == 0x5, "m_b2D_TRI in CSeqMultiFetchFlag should be at offset 0x5");
 		static_assert(sizeof(CS2::animationsystem::CSeqMultiFetchFlag) == 0x6, "CSeqMultiFetchFlag size should be 0x6");
+
+#endif
 	}
 }

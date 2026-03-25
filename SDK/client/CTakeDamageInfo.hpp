@@ -62,6 +62,7 @@ namespace CS2 {
 			bool m_bInTakeDamageFlow; // 0x118 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_vecDamageForce) == 0x8, "m_vecDamageForce in CTakeDamageInfo should be at offset 0x8");
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_vecDamagePosition) == 0x14, "m_vecDamagePosition in CTakeDamageInfo should be at offset 0x14");
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_vecReportedPosition) == 0x20, "m_vecReportedPosition in CTakeDamageInfo should be at offset 0x20");
@@ -85,5 +86,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_nDestructibleHitGroupsToForceDestroy) == 0x100, "m_nDestructibleHitGroupsToForceDestroy in CTakeDamageInfo should be at offset 0x100");
 		static_assert(offsetof(CS2::client::CTakeDamageInfo, m_bInTakeDamageFlow) == 0x118, "m_bInTakeDamageFlow in CTakeDamageInfo should be at offset 0x118");
 		static_assert(sizeof(CS2::client::CTakeDamageInfo) == 0x120, "CTakeDamageInfo size should be 0x120");
+
+#endif
 	}
 }

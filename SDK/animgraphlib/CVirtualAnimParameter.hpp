@@ -26,8 +26,11 @@ namespace CS2 {
 			animgraphlib::AnimParamType_t m_eParamType; // 0x78 | Schema_DeclaredEnum | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CVirtualAnimParameter, m_expressionString) == 0x70, "m_expressionString in CVirtualAnimParameter should be at offset 0x70");
 		static_assert(offsetof(CS2::animgraphlib::CVirtualAnimParameter, m_eParamType) == 0x78, "m_eParamType in CVirtualAnimParameter should be at offset 0x78");
 		static_assert(sizeof(CS2::animgraphlib::CVirtualAnimParameter) == 0x80, "CVirtualAnimParameter size should be 0x80");
+
+#endif
 	}
 }

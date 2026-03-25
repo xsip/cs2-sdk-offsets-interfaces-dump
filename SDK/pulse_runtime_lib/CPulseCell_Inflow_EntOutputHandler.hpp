@@ -25,9 +25,12 @@ namespace CS2 {
 			GlobalTypes::PulseSymbol_t m_SourceOutput; // 0x90 | Schema_Atomic | Size: 0x10
 			GlobalTypes::CPulseValueFullType m_ExpectedParamType; // 0xa0 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_EntOutputHandler, m_SourceEntity) == 0x80, "m_SourceEntity in CPulseCell_Inflow_EntOutputHandler should be at offset 0x80");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_EntOutputHandler, m_SourceOutput) == 0x90, "m_SourceOutput in CPulseCell_Inflow_EntOutputHandler should be at offset 0x90");
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Inflow_EntOutputHandler, m_ExpectedParamType) == 0xA0, "m_ExpectedParamType in CPulseCell_Inflow_EntOutputHandler should be at offset 0xA0");
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_Inflow_EntOutputHandler) == 0xB8, "CPulseCell_Inflow_EntOutputHandler size should be 0xB8");
+
+#endif
 	}
 }

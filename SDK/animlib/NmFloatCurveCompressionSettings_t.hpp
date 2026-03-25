@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bIsStatic; // 0x8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::NmFloatCurveCompressionSettings_t, m_range) == 0x0, "m_range in NmFloatCurveCompressionSettings_t should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::NmFloatCurveCompressionSettings_t, m_bIsStatic) == 0x8, "m_bIsStatic in NmFloatCurveCompressionSettings_t should be at offset 0x8");
 		static_assert(sizeof(CS2::animlib::NmFloatCurveCompressionSettings_t) == 0xC, "NmFloatCurveCompressionSettings_t size should be 0xC");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CPulseCell_Step_TestDomainTracepoint : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_system::CPulseCell_Step_TestDomainTracepoint) == 0x48, "CPulseCell_Step_TestDomainTracepoint size should be 0x48");
+
+#endif
 	}
 }

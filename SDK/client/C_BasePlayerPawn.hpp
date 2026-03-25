@@ -74,6 +74,7 @@ namespace CS2 {
 			bool m_bIsSwappingToPredictableController; // 0x15a8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pWeaponServices) == 0x13D8, "m_pWeaponServices in C_BasePlayerPawn should be at offset 0x13D8");
 		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pItemServices) == 0x13E0, "m_pItemServices in C_BasePlayerPawn should be at offset 0x13E0");
 		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_pAutoaimServices) == 0x13E8, "m_pAutoaimServices in C_BasePlayerPawn should be at offset 0x13E8");
@@ -103,5 +104,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_hDefaultController) == 0x15A4, "m_hDefaultController in C_BasePlayerPawn should be at offset 0x15A4");
 		static_assert(offsetof(CS2::client::C_BasePlayerPawn, m_bIsSwappingToPredictableController) == 0x15A8, "m_bIsSwappingToPredictableController in C_BasePlayerPawn should be at offset 0x15A8");
 		static_assert(sizeof(CS2::client::C_BasePlayerPawn) == 0x15B0, "C_BasePlayerPawn size should be 0x15B0");
+
+#endif
 	}
 }

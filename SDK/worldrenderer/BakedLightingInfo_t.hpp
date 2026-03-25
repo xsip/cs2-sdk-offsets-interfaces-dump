@@ -37,6 +37,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<worldrenderer::BakedLightingInfo_t_BakedShadowAssignment_t> m_bakedShadows; // 0x30 | Schema_Atomic | Size: 0x18
 			// char m_bakedShadows[0x18]; // 0x30 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_nLightmapVersionNumber) == 0x0, "m_nLightmapVersionNumber in BakedLightingInfo_t should be at offset 0x0");
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_nLightmapGameVersionNumber) == 0x4, "m_nLightmapGameVersionNumber in BakedLightingInfo_t should be at offset 0x4");
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_vLightmapUvScale) == 0x8, "m_vLightmapUvScale in BakedLightingInfo_t should be at offset 0x8");
@@ -49,5 +50,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_lightMaps) == 0x18, "m_lightMaps in BakedLightingInfo_t should be at offset 0x18");
 		static_assert(offsetof(CS2::worldrenderer::BakedLightingInfo_t, m_bakedShadows) == 0x30, "m_bakedShadows in BakedLightingInfo_t should be at offset 0x30");
 		static_assert(sizeof(CS2::worldrenderer::BakedLightingInfo_t) == 0x48, "BakedLightingInfo_t size should be 0x48");
+
+#endif
 	}
 }

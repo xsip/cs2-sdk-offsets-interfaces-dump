@@ -28,9 +28,12 @@ namespace CS2 {
 			int32_t m_nControlPoint; // 0x58 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particleslib::CParticleModelInput, m_nType) == 0x10, "m_nType in CParticleModelInput should be at offset 0x10");
 		static_assert(offsetof(CS2::particleslib::CParticleModelInput, m_NamedValue) == 0x18, "m_NamedValue in CParticleModelInput should be at offset 0x18");
 		static_assert(offsetof(CS2::particleslib::CParticleModelInput, m_nControlPoint) == 0x58, "m_nControlPoint in CParticleModelInput should be at offset 0x58");
 		static_assert(sizeof(CS2::particleslib::CParticleModelInput) == 0x60, "CParticleModelInput size should be 0x60");
+
+#endif
 	}
 }

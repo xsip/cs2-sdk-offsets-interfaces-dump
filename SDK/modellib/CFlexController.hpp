@@ -25,10 +25,13 @@ namespace CS2 {
 			float32 min; // 0x10 | Schema_Builtin | Size: 0x4
 			float32 max; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CFlexController, m_szName) == 0x0, "m_szName in CFlexController should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CFlexController, m_szType) == 0x8, "m_szType in CFlexController should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CFlexController, min) == 0x10, "min in CFlexController should be at offset 0x10");
 		static_assert(offsetof(CS2::modellib::CFlexController, max) == 0x14, "max in CFlexController should be at offset 0x14");
 		static_assert(sizeof(CS2::modellib::CFlexController) == 0x18, "CFlexController size should be 0x18");
+
+#endif
 	}
 }

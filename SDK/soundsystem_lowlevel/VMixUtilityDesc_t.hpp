@@ -29,6 +29,7 @@ namespace CS2 {
 			S2_PAD(0x3);
 			float32 m_flBassFreq; // 0x14 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixUtilityDesc_t, m_nOp) == 0x0, "m_nOp in VMixUtilityDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixUtilityDesc_t, m_flInputPan) == 0x4, "m_flInputPan in VMixUtilityDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixUtilityDesc_t, m_flOutputBalance) == 0x8, "m_flOutputBalance in VMixUtilityDesc_t should be at offset 0x8");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixUtilityDesc_t, m_bBassMono) == 0x10, "m_bBassMono in VMixUtilityDesc_t should be at offset 0x10");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixUtilityDesc_t, m_flBassFreq) == 0x14, "m_flBassFreq in VMixUtilityDesc_t should be at offset 0x14");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixUtilityDesc_t) == 0x18, "VMixUtilityDesc_t size should be 0x18");
+
+#endif
 	}
 }

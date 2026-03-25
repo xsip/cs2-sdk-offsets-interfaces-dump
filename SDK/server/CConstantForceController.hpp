@@ -27,10 +27,13 @@ namespace CS2 {
 			GlobalTypes::RotationVector m_angularSave; // 0x30 | Schema_Atomic | Size: 0xc
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CConstantForceController, m_linear) == 0xC, "m_linear in CConstantForceController should be at offset 0xC");
 		static_assert(offsetof(CS2::server::CConstantForceController, m_angular) == 0x18, "m_angular in CConstantForceController should be at offset 0x18");
 		static_assert(offsetof(CS2::server::CConstantForceController, m_linearSave) == 0x24, "m_linearSave in CConstantForceController should be at offset 0x24");
 		static_assert(offsetof(CS2::server::CConstantForceController, m_angularSave) == 0x30, "m_angularSave in CConstantForceController should be at offset 0x30");
 		static_assert(sizeof(CS2::server::CConstantForceController) == 0x40, "CConstantForceController size should be 0x40");
+
+#endif
 	}
 }

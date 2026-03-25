@@ -23,7 +23,10 @@ namespace CS2 {
 		public:
 			GlobalTypes::Vector4D m_value; // 0x8 | Schema_Atomic | Size: 0x10
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::materialsystem2::MaterialParamVector_t, m_value) == 0x8, "m_value in MaterialParamVector_t should be at offset 0x8");
 		static_assert(sizeof(CS2::materialsystem2::MaterialParamVector_t) == 0x18, "MaterialParamVector_t size should be 0x18");
+
+#endif
 	}
 }

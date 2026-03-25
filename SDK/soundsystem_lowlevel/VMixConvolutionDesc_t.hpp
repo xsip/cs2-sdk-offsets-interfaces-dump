@@ -29,6 +29,7 @@ namespace CS2 {
 			float32 m_flLowCutoffFreq; // 0x18 | Schema_Builtin | Size: 0x4
 			float32 m_flHighCutoffFreq; // 0x1c | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixConvolutionDesc_t, m_fldbGain) == 0x0, "m_fldbGain in VMixConvolutionDesc_t should be at offset 0x0");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixConvolutionDesc_t, m_flPreDelayMS) == 0x4, "m_flPreDelayMS in VMixConvolutionDesc_t should be at offset 0x4");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixConvolutionDesc_t, m_flWetMix) == 0x8, "m_flWetMix in VMixConvolutionDesc_t should be at offset 0x8");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixConvolutionDesc_t, m_flLowCutoffFreq) == 0x18, "m_flLowCutoffFreq in VMixConvolutionDesc_t should be at offset 0x18");
 		static_assert(offsetof(CS2::soundsystem_lowlevel::VMixConvolutionDesc_t, m_flHighCutoffFreq) == 0x1C, "m_flHighCutoffFreq in VMixConvolutionDesc_t should be at offset 0x1C");
 		static_assert(sizeof(CS2::soundsystem_lowlevel::VMixConvolutionDesc_t) == 0x20, "VMixConvolutionDesc_t size should be 0x20");
+
+#endif
 	}
 }

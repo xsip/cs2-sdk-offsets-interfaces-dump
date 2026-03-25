@@ -48,6 +48,7 @@ namespace CS2 {
 			// char m_hCarryingPlayer[0x4]; // 0x8b0 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x1c); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPhysBox, m_damageType) == 0x808, "m_damageType in CPhysBox should be at offset 0x808");
 		static_assert(offsetof(CS2::server::CPhysBox, m_damageToEnableMotion) == 0x80C, "m_damageToEnableMotion in CPhysBox should be at offset 0x80C");
 		static_assert(offsetof(CS2::server::CPhysBox, m_flForceToEnableMotion) == 0x810, "m_flForceToEnableMotion in CPhysBox should be at offset 0x810");
@@ -64,5 +65,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CPhysBox, m_OnStartTouch) == 0x898, "m_OnStartTouch in CPhysBox should be at offset 0x898");
 		static_assert(offsetof(CS2::server::CPhysBox, m_hCarryingPlayer) == 0x8B0, "m_hCarryingPlayer in CPhysBox should be at offset 0x8B0");
 		static_assert(sizeof(CS2::server::CPhysBox) == 0x8D0, "CPhysBox size should be 0x8D0");
+
+#endif
 	}
 }

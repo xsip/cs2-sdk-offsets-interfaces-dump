@@ -31,9 +31,12 @@ namespace CS2 {
 			S2_PAD(0x4);
 			client::ResponseFollowup* m_pFollowup; // 0x18 | Schema_Ptr | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::ResponseParams, odds) == 0x10, "odds in ResponseParams should be at offset 0x10");
 		static_assert(offsetof(CS2::client::ResponseParams, flags) == 0x12, "flags in ResponseParams should be at offset 0x12");
 		static_assert(offsetof(CS2::client::ResponseParams, m_pFollowup) == 0x18, "m_pFollowup in ResponseParams should be at offset 0x18");
 		static_assert(sizeof(CS2::client::ResponseParams) == 0x20, "ResponseParams size should be 0x20");
+
+#endif
 	}
 }

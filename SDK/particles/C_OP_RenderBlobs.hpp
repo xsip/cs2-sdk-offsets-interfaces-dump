@@ -36,6 +36,7 @@ namespace CS2 {
 			// GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hMaterial; // 0x6b0 | Schema_Atomic | Size: 0x8
 			char m_hMaterial[0x8]; // 0x6b0 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cubeWidth) == 0x220, "m_cubeWidth in C_OP_RenderBlobs should be at offset 0x220");
 		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_cutoffRadius) == 0x390, "m_cutoffRadius in C_OP_RenderBlobs should be at offset 0x390");
 		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_renderRadius) == 0x500, "m_renderRadius in C_OP_RenderBlobs should be at offset 0x500");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_MaterialVars) == 0x680, "m_MaterialVars in C_OP_RenderBlobs should be at offset 0x680");
 		static_assert(offsetof(CS2::particles::C_OP_RenderBlobs, m_hMaterial) == 0x6B0, "m_hMaterial in C_OP_RenderBlobs should be at offset 0x6B0");
 		static_assert(sizeof(CS2::particles::C_OP_RenderBlobs) == 0x6B8, "C_OP_RenderBlobs size should be 0x6B8");
+
+#endif
 	}
 }

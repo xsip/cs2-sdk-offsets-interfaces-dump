@@ -25,8 +25,11 @@ namespace CS2 {
 			bool m_bIsZeroDuration; // 0x1c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CEmitTagActionUpdater, m_nTagIndex) == 0x18, "m_nTagIndex in CEmitTagActionUpdater should be at offset 0x18");
 		static_assert(offsetof(CS2::animgraphlib::CEmitTagActionUpdater, m_bIsZeroDuration) == 0x1C, "m_bIsZeroDuration in CEmitTagActionUpdater should be at offset 0x1C");
 		static_assert(sizeof(CS2::animgraphlib::CEmitTagActionUpdater) == 0x20, "CEmitTagActionUpdater size should be 0x20");
+
+#endif
 	}
 }

@@ -44,6 +44,7 @@ namespace CS2 {
 			bool m_bEnableSimulation; // 0x9c | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CRenderGroom, m_hairs) == 0x0, "m_hairs in CRenderGroom should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CRenderGroom, m_hairPositionOffsets) == 0x18, "m_hairPositionOffsets in CRenderGroom should be at offset 0x18");
 		static_assert(offsetof(CS2::modellib::CRenderGroom, m_hSimParamsMat) == 0x40, "m_hSimParamsMat in CRenderGroom should be at offset 0x40");
@@ -59,5 +60,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CRenderGroom, m_nAttachMeshDrawCallIdx) == 0x98, "m_nAttachMeshDrawCallIdx in CRenderGroom should be at offset 0x98");
 		static_assert(offsetof(CS2::modellib::CRenderGroom, m_bEnableSimulation) == 0x9C, "m_bEnableSimulation in CRenderGroom should be at offset 0x9C");
 		static_assert(sizeof(CS2::modellib::CRenderGroom) == 0xA0, "CRenderGroom size should be 0xA0");
+
+#endif
 	}
 }

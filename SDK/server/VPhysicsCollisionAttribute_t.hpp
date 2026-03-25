@@ -33,6 +33,7 @@ namespace CS2 {
 			uint8_t m_nCollisionGroup; // 0x2e | Schema_Builtin | Size: 0x1
 			uint8_t m_nCollisionFunctionMask; // 0x2f | Schema_Builtin | Size: 0x1
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nInteractsAs) == 0x8, "m_nInteractsAs in VPhysicsCollisionAttribute_t should be at offset 0x8");
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nInteractsWith) == 0x10, "m_nInteractsWith in VPhysicsCollisionAttribute_t should be at offset 0x10");
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nInteractsExclude) == 0x18, "m_nInteractsExclude in VPhysicsCollisionAttribute_t should be at offset 0x18");
@@ -45,5 +46,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nCollisionGroup) == 0x2E, "m_nCollisionGroup in VPhysicsCollisionAttribute_t should be at offset 0x2E");
 		static_assert(offsetof(CS2::server::VPhysicsCollisionAttribute_t, m_nCollisionFunctionMask) == 0x2F, "m_nCollisionFunctionMask in VPhysicsCollisionAttribute_t should be at offset 0x2F");
 		static_assert(sizeof(CS2::server::VPhysicsCollisionAttribute_t) == 0x30, "VPhysicsCollisionAttribute_t size should be 0x30");
+
+#endif
 	}
 }

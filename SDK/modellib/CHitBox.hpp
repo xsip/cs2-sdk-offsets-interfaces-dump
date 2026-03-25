@@ -36,6 +36,7 @@ namespace CS2 {
 			uint16_t m_nHitBoxIndex; // 0x48 | Schema_Builtin | Size: 0x2
 			S2_PAD(0x26); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::modellib::CHitBox, m_name) == 0x0, "m_name in CHitBox should be at offset 0x0");
 		static_assert(offsetof(CS2::modellib::CHitBox, m_sSurfaceProperty) == 0x8, "m_sSurfaceProperty in CHitBox should be at offset 0x8");
 		static_assert(offsetof(CS2::modellib::CHitBox, m_sBoneName) == 0x10, "m_sBoneName in CHitBox should be at offset 0x10");
@@ -50,5 +51,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::modellib::CHitBox, m_cRenderColor) == 0x44, "m_cRenderColor in CHitBox should be at offset 0x44");
 		static_assert(offsetof(CS2::modellib::CHitBox, m_nHitBoxIndex) == 0x48, "m_nHitBoxIndex in CHitBox should be at offset 0x48");
 		static_assert(sizeof(CS2::modellib::CHitBox) == 0x70, "CHitBox size should be 0x70");
+
+#endif
 	}
 }

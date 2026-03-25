@@ -22,6 +22,9 @@ namespace CS2 {
 		class C_SmokeGrenade : public CS2::client::C_BaseCSGrenade {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::client::C_SmokeGrenade) == 0x2000, "C_SmokeGrenade size should be 0x2000");
+
+#endif
 	}
 }

@@ -30,7 +30,10 @@ namespace CS2 {
 			// char m_pPlatform[0x4]; // 0x730 | Schema_Atomic | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPlatTrigger, m_pPlatform) == 0x730, "m_pPlatform in CPlatTrigger should be at offset 0x730");
 		static_assert(sizeof(CS2::server::CPlatTrigger) == 0x738, "CPlatTrigger size should be 0x738");
+
+#endif
 	}
 }

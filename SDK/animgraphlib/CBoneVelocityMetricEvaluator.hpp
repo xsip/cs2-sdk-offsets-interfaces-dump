@@ -24,7 +24,10 @@ namespace CS2 {
 			int32_t m_nBoneIndex; // 0x50 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animgraphlib::CBoneVelocityMetricEvaluator, m_nBoneIndex) == 0x50, "m_nBoneIndex in CBoneVelocityMetricEvaluator should be at offset 0x50");
 		static_assert(sizeof(CS2::animgraphlib::CBoneVelocityMetricEvaluator) == 0x58, "CBoneVelocityMetricEvaluator size should be 0x58");
+
+#endif
 	}
 }

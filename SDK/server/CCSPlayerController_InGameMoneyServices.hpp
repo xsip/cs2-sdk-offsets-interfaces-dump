@@ -29,6 +29,7 @@ namespace CS2 {
 			int32_t m_iTotalCashSpent; // 0x50 | Schema_Builtin | Size: 0x4
 			int32_t m_iCashSpentThisRound; // 0x54 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CCSPlayerController_InGameMoneyServices, m_bReceivesMoneyNextRound) == 0x40, "m_bReceivesMoneyNextRound in CCSPlayerController_InGameMoneyServices should be at offset 0x40");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InGameMoneyServices, m_iMoneyEarnedForNextRound) == 0x44, "m_iMoneyEarnedForNextRound in CCSPlayerController_InGameMoneyServices should be at offset 0x44");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InGameMoneyServices, m_iAccount) == 0x48, "m_iAccount in CCSPlayerController_InGameMoneyServices should be at offset 0x48");
@@ -36,5 +37,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CCSPlayerController_InGameMoneyServices, m_iTotalCashSpent) == 0x50, "m_iTotalCashSpent in CCSPlayerController_InGameMoneyServices should be at offset 0x50");
 		static_assert(offsetof(CS2::server::CCSPlayerController_InGameMoneyServices, m_iCashSpentThisRound) == 0x54, "m_iCashSpentThisRound in CCSPlayerController_InGameMoneyServices should be at offset 0x54");
 		static_assert(sizeof(CS2::server::CCSPlayerController_InGameMoneyServices) == 0x58, "CCSPlayerController_InGameMoneyServices size should be 0x58");
+
+#endif
 	}
 }

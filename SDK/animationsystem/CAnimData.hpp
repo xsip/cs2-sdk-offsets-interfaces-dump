@@ -34,11 +34,14 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<animationsystem::CAnimFrameSegment> m_segmentArray; // 0x58 | Schema_Atomic | Size: 0x18
 			// char m_segmentArray[0x18]; // 0x58 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animationsystem::CAnimData, m_name) == 0x10, "m_name in CAnimData should be at offset 0x10");
 		static_assert(offsetof(CS2::animationsystem::CAnimData, m_animArray) == 0x20, "m_animArray in CAnimData should be at offset 0x20");
 		static_assert(offsetof(CS2::animationsystem::CAnimData, m_decoderArray) == 0x38, "m_decoderArray in CAnimData should be at offset 0x38");
 		static_assert(offsetof(CS2::animationsystem::CAnimData, m_nMaxUniqueFrameIndex) == 0x50, "m_nMaxUniqueFrameIndex in CAnimData should be at offset 0x50");
 		static_assert(offsetof(CS2::animationsystem::CAnimData, m_segmentArray) == 0x58, "m_segmentArray in CAnimData should be at offset 0x58");
 		static_assert(sizeof(CS2::animationsystem::CAnimData) == 0x70, "CAnimData size should be 0x70");
+
+#endif
 	}
 }

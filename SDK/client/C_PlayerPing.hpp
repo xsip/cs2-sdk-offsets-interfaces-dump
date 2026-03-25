@@ -36,11 +36,14 @@ namespace CS2 {
 			char m_szPlaceName[18]; // 0x645 | Schema_FixedArray | Size: 0x12
 			S2_PAD(0x1); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_PlayerPing, m_hPlayer) == 0x638, "m_hPlayer in C_PlayerPing should be at offset 0x638");
 		static_assert(offsetof(CS2::client::C_PlayerPing, m_hPingedEntity) == 0x63C, "m_hPingedEntity in C_PlayerPing should be at offset 0x63C");
 		static_assert(offsetof(CS2::client::C_PlayerPing, m_iType) == 0x640, "m_iType in C_PlayerPing should be at offset 0x640");
 		static_assert(offsetof(CS2::client::C_PlayerPing, m_bUrgent) == 0x644, "m_bUrgent in C_PlayerPing should be at offset 0x644");
 		static_assert(offsetof(CS2::client::C_PlayerPing, m_szPlaceName) == 0x645, "m_szPlaceName in C_PlayerPing should be at offset 0x645");
 		static_assert(sizeof(CS2::client::C_PlayerPing) == 0x658, "C_PlayerPing size should be 0x658");
+
+#endif
 	}
 }

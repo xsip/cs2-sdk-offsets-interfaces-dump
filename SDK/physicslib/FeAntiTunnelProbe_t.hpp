@@ -29,6 +29,7 @@ namespace CS2 {
 			float32 flCurvatureRadius; // 0x14 | Schema_Builtin | Size: 0x4
 			float32 flBias; // 0x18 | Schema_Builtin | Size: 0x4
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbe_t, flWeight) == 0x0, "flWeight in FeAntiTunnelProbe_t should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbe_t, nFlags) == 0x4, "nFlags in FeAntiTunnelProbe_t should be at offset 0x4");
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbe_t, nProbeNode) == 0x8, "nProbeNode in FeAntiTunnelProbe_t should be at offset 0x8");
@@ -38,5 +39,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbe_t, flCurvatureRadius) == 0x14, "flCurvatureRadius in FeAntiTunnelProbe_t should be at offset 0x14");
 		static_assert(offsetof(CS2::physicslib::FeAntiTunnelProbe_t, flBias) == 0x18, "flBias in FeAntiTunnelProbe_t should be at offset 0x18");
 		static_assert(sizeof(CS2::physicslib::FeAntiTunnelProbe_t) == 0x1C, "FeAntiTunnelProbe_t size should be 0x1C");
+
+#endif
 	}
 }

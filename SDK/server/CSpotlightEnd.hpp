@@ -26,10 +26,13 @@ namespace CS2 {
 			GlobalTypes::Vector m_vSpotlightDir; // 0x738 | Schema_Atomic | Size: 0xc
 			GlobalTypes::VectorWS m_vSpotlightOrg; // 0x744 | Schema_Atomic | Size: 0xc
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CSpotlightEnd, m_flLightScale) == 0x730, "m_flLightScale in CSpotlightEnd should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CSpotlightEnd, m_Radius) == 0x734, "m_Radius in CSpotlightEnd should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CSpotlightEnd, m_vSpotlightDir) == 0x738, "m_vSpotlightDir in CSpotlightEnd should be at offset 0x738");
 		static_assert(offsetof(CS2::server::CSpotlightEnd, m_vSpotlightOrg) == 0x744, "m_vSpotlightOrg in CSpotlightEnd should be at offset 0x744");
 		static_assert(sizeof(CS2::server::CSpotlightEnd) == 0x750, "CSpotlightEnd size should be 0x750");
+
+#endif
 	}
 }

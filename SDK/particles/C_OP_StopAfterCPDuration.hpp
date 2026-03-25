@@ -27,9 +27,12 @@ namespace CS2 {
 			bool m_bPlayEndCap; // 0x349 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x6); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_flDuration) == 0x1D8, "m_flDuration in C_OP_StopAfterCPDuration should be at offset 0x1D8");
 		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_bDestroyImmediately) == 0x348, "m_bDestroyImmediately in C_OP_StopAfterCPDuration should be at offset 0x348");
 		static_assert(offsetof(CS2::particles::C_OP_StopAfterCPDuration, m_bPlayEndCap) == 0x349, "m_bPlayEndCap in C_OP_StopAfterCPDuration should be at offset 0x349");
 		static_assert(sizeof(CS2::particles::C_OP_StopAfterCPDuration) == 0x350, "C_OP_StopAfterCPDuration size should be 0x350");
+
+#endif
 	}
 }

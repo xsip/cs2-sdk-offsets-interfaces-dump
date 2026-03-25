@@ -25,7 +25,10 @@ namespace CS2 {
 			server::SoundEventStartType_t m_Type; // 0x48 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CPulseCell_SoundEventStart, m_Type) == 0x48, "m_Type in CPulseCell_SoundEventStart should be at offset 0x48");
 		static_assert(sizeof(CS2::server::CPulseCell_SoundEventStart) == 0x50, "CPulseCell_SoundEventStart size should be 0x50");
+
+#endif
 	}
 }

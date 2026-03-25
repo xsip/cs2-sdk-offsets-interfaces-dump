@@ -55,6 +55,7 @@ namespace CS2 {
 			// char m_resources[0x18]; // 0x150 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x38); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_variationID) == 0x0, "m_variationID in CNmGraphDefinition should be at offset 0x0");
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_skeleton) == 0x8, "m_skeleton in CNmGraphDefinition should be at offset 0x8");
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_pUserData) == 0x10, "m_pUserData in CNmGraphDefinition should be at offset 0x10");
@@ -69,5 +70,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_nodePaths) == 0x138, "m_nodePaths in CNmGraphDefinition should be at offset 0x138");
 		static_assert(offsetof(CS2::animlib::CNmGraphDefinition, m_resources) == 0x150, "m_resources in CNmGraphDefinition should be at offset 0x150");
 		static_assert(sizeof(CS2::animlib::CNmGraphDefinition) == 0x1A0, "CNmGraphDefinition size should be 0x1A0");
+
+#endif
 	}
 }

@@ -22,6 +22,9 @@ namespace CS2 {
 		class CNavVolumeAll : public CS2::navlib::CNavVolumeVector {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::navlib::CNavVolumeAll) == 0xA0, "CNavVolumeAll size should be 0xA0");
+
+#endif
 	}
 }

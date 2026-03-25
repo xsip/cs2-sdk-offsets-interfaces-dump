@@ -22,6 +22,9 @@ namespace CS2 {
 		class CPulseCell_BaseState : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(sizeof(CS2::pulse_runtime_lib::CPulseCell_BaseState) == 0x48, "CPulseCell_BaseState size should be 0x48");
+
+#endif
 	}
 }

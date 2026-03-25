@@ -61,6 +61,7 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<client::C_EconEntity_AttachedModelData_t> m_vecAttachedModels; // 0x18a8 | Schema_Atomic | Size: 0x18
 			// char m_vecAttachedModels[0x18]; // 0x18a8 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayTime) == 0x1360, "m_flFlexDelayTime in C_EconEntity should be at offset 0x1360");
 		static_assert(offsetof(CS2::client::C_EconEntity, m_flFlexDelayedWeight) == 0x1368, "m_flFlexDelayedWeight in C_EconEntity should be at offset 0x1368");
 		static_assert(offsetof(CS2::client::C_EconEntity, m_bAttributesInitialized) == 0x1370, "m_bAttributesInitialized in C_EconEntity should be at offset 0x1370");
@@ -82,5 +83,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::client::C_EconEntity, m_hOldProvidee) == 0x18A0, "m_hOldProvidee in C_EconEntity should be at offset 0x18A0");
 		static_assert(offsetof(CS2::client::C_EconEntity, m_vecAttachedModels) == 0x18A8, "m_vecAttachedModels in C_EconEntity should be at offset 0x18A8");
 		static_assert(sizeof(CS2::client::C_EconEntity) == 0x18C0, "C_EconEntity size should be 0x18C0");
+
+#endif
 	}
 }

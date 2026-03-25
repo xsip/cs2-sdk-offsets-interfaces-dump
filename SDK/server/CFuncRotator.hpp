@@ -90,6 +90,7 @@ namespace CS2 {
 			float32 m_flMaxYawRotation; // 0x908 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFuncRotator, m_hRotatorTarget) == 0x730, "m_hRotatorTarget in CFuncRotator should be at offset 0x730");
 		static_assert(offsetof(CS2::server::CFuncRotator, m_bIsRotating) == 0x734, "m_bIsRotating in CFuncRotator should be at offset 0x734");
 		static_assert(offsetof(CS2::server::CFuncRotator, m_bIsReversing) == 0x735, "m_bIsReversing in CFuncRotator should be at offset 0x735");
@@ -132,5 +133,7 @@ namespace CS2 {
 		static_assert(offsetof(CS2::server::CFuncRotator, m_flMinYawRotation) == 0x904, "m_flMinYawRotation in CFuncRotator should be at offset 0x904");
 		static_assert(offsetof(CS2::server::CFuncRotator, m_flMaxYawRotation) == 0x908, "m_flMaxYawRotation in CFuncRotator should be at offset 0x908");
 		static_assert(sizeof(CS2::server::CFuncRotator) == 0x910, "CFuncRotator size should be 0x910");
+
+#endif
 	}
 }

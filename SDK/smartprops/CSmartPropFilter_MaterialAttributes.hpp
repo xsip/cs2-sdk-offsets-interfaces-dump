@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector<GlobalTypes::CUtlString> m_DisallowedMaterialAttributes; // 0x68 | Schema_Atomic | Size: 0x18
 			// char m_DisallowedMaterialAttributes[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_MaterialAttributes, m_AllowedMaterialAttributes) == 0x50, "m_AllowedMaterialAttributes in CSmartPropFilter_MaterialAttributes should be at offset 0x50");
 		static_assert(offsetof(CS2::smartprops::CSmartPropFilter_MaterialAttributes, m_DisallowedMaterialAttributes) == 0x68, "m_DisallowedMaterialAttributes in CSmartPropFilter_MaterialAttributes should be at offset 0x68");
 		static_assert(sizeof(CS2::smartprops::CSmartPropFilter_MaterialAttributes) == 0x80, "CSmartPropFilter_MaterialAttributes size should be 0x80");
+
+#endif
 	}
 }

@@ -26,8 +26,11 @@ namespace CS2 {
 			GlobalTypes::CUtlVector< uint32 > m_Nodes; // 0x18 | Schema_Atomic | Size: 0x18
 			// char m_Nodes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::physicslib::CRegionSVM, m_Planes) == 0x0, "m_Planes in CRegionSVM should be at offset 0x0");
 		static_assert(offsetof(CS2::physicslib::CRegionSVM, m_Nodes) == 0x18, "m_Nodes in CRegionSVM should be at offset 0x18");
 		static_assert(sizeof(CS2::physicslib::CRegionSVM) == 0x30, "CRegionSVM size should be 0x30");
+
+#endif
 	}
 }

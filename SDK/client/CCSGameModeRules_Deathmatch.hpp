@@ -26,9 +26,12 @@ namespace CS2 {
 			float32 m_flDMBonusTimeLength; // 0x34 | Schema_Builtin | Size: 0x4
 			GlobalTypes::CUtlString m_sDMBonusWeapon; // 0x38 | Schema_Atomic | Size: 0x8
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CCSGameModeRules_Deathmatch, m_flDMBonusStartTime) == 0x30, "m_flDMBonusStartTime in CCSGameModeRules_Deathmatch should be at offset 0x30");
 		static_assert(offsetof(CS2::client::CCSGameModeRules_Deathmatch, m_flDMBonusTimeLength) == 0x34, "m_flDMBonusTimeLength in CCSGameModeRules_Deathmatch should be at offset 0x34");
 		static_assert(offsetof(CS2::client::CCSGameModeRules_Deathmatch, m_sDMBonusWeapon) == 0x38, "m_sDMBonusWeapon in CCSGameModeRules_Deathmatch should be at offset 0x38");
 		static_assert(sizeof(CS2::client::CCSGameModeRules_Deathmatch) == 0x40, "CCSGameModeRules_Deathmatch size should be 0x40");
+
+#endif
 	}
 }

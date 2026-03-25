@@ -31,8 +31,11 @@ namespace CS2 {
 			bool m_bGraphBindingsCreated; // 0xa8 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7); // End padding
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::client::CAnimGraphControllerManager, m_controllers) == 0x0, "m_controllers in CAnimGraphControllerManager should be at offset 0x0");
 		static_assert(offsetof(CS2::client::CAnimGraphControllerManager, m_bGraphBindingsCreated) == 0xA8, "m_bGraphBindingsCreated in CAnimGraphControllerManager should be at offset 0xA8");
 		static_assert(sizeof(CS2::client::CAnimGraphControllerManager) == 0xB0, "CAnimGraphControllerManager size should be 0xB0");
+
+#endif
 	}
 }

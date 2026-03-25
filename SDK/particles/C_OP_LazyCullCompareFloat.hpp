@@ -26,9 +26,12 @@ namespace CS2 {
 			particleslib::CPerParticleFloatInput m_flComparsion2; // 0x340 | Schema_DeclaredClass | Size: 0x170
 			particleslib::CPerParticleFloatInput m_flCullTime; // 0x4b0 | Schema_DeclaredClass | Size: 0x170
 		};
+#ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::particles::C_OP_LazyCullCompareFloat, m_flComparsion1) == 0x1D0, "m_flComparsion1 in C_OP_LazyCullCompareFloat should be at offset 0x1D0");
 		static_assert(offsetof(CS2::particles::C_OP_LazyCullCompareFloat, m_flComparsion2) == 0x340, "m_flComparsion2 in C_OP_LazyCullCompareFloat should be at offset 0x340");
 		static_assert(offsetof(CS2::particles::C_OP_LazyCullCompareFloat, m_flCullTime) == 0x4B0, "m_flCullTime in C_OP_LazyCullCompareFloat should be at offset 0x4B0");
 		static_assert(sizeof(CS2::particles::C_OP_LazyCullCompareFloat) == 0x620, "C_OP_LazyCullCompareFloat size should be 0x620");
+
+#endif
 	}
 }
